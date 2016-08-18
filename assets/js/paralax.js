@@ -20,7 +20,7 @@ $(window).on('mousemove', function(e) {
 						transformLayer = 'translateX(' + offsetX * (offsetLayer / 40)+ 'px) translateY(' + offsetY * (offsetLayer / 40) + 'px) rotateY('+ (offsetX * offsetLayer) +'deg) rotateX('+ (offsetY * 10) +'deg)' ;
 				$this.css('transform', transformLayer);
 				$('#hand').css({
-						'transition-duration': '.2s'
+						'transition-duration': '.0s'
 				});
 		});
 });
