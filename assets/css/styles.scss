@@ -1,0 +1,58 @@
+@import "reset";
+
+body, html {
+  height: 100%;
+  min-height: 100%;
+}
+body {
+  background: #000;
+}
+.poster {
+  height: 90%;
+  display: flex;
+}
+.layer-1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 166px;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+}
+.email {
+  position: absolute;
+  right:0;
+  left: 0;
+  bottom: 80px;
+
+  a{
+    color: #ff0000;
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+#red {
+  transform-origin: 50%;
+  transition-duration: 2s;
+}
+
+#hand {
+  transform-origin: 50%;
+  transition-duration: .3s;
+}
+.myclass{
+  width: 228px;
+  height: 220px;
+  margin-left: -31px;
+}
+footer{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
