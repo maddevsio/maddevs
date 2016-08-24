@@ -21,10 +21,10 @@ body {
 .layer-1 {
   display: flex;
   flex-direction: column;
-  max-width: 140px;
+  max-width: 145px;
   justify-content: center;
   margin: auto;
-  height: 100%;
+  //height: 100%;
 }
 .cb-intro{
   position: absolute;
@@ -41,79 +41,41 @@ body {
 }
 .path {
   stroke-dasharray: 3345;
-  stroke-dashoffset: -3345;
+  stroke-dashoffset: 3345;
   fill-opacity: 0;
-  //animation: dash 2.5s ease-in both;
 }
 .word_drow{
   fill-opacity: 0;
   fill: #ffffff;
 }
-//@keyframes dash {
-//  from {
-//    stroke-dashoffset: 3345;
-//    fill-opacity: 0;
-//  }
-//  99%{
-//    fill-opacity: 0.3;
-//  }
-//  to {
-//    fill-opacity: 1;
-//    stroke-dashoffset: 0;
-//  }
-//}
-//.fade_out{
-//  animation: fadeOut .5s linear both;
-//}
-//@keyframes fadeOut {
-//  from{
-//    fill-opacity: 0;
-//  }
-//  to{
-//    fill-opacity: 1;
-//  }
-//}
+
 #m{
   stroke-dasharray: 1140;
   stroke-dashoffset: -1140;
-  //fill-opacity: 0;
-  //animation: dash 2s linear both;
 }
 #a{
   stroke-dasharray: 963;
   stroke-dashoffset: -963;
-  //fill-opacity: 0;
-  //animation: dash 2s linear both;
 }
 #d{
   stroke-dasharray: 1005;
   stroke-dashoffset: -1005;
-  //fill-opacity: 0;
-  //animation: dash 2s linear both;
 }
 #d_2{
   stroke-dasharray: 784;
   stroke-dashoffset: -784;
-  //fill-opacity: 0;
-  //animation: dash 2s linear both;
 }
 #e{
   stroke-dasharray: 827;
   stroke-dashoffset: -827;
-  //fill-opacity: 0;
-  //animation: dash 2s linear both;
 }
 #v{
   stroke-dasharray: 746;
   stroke-dashoffset: -746;
-  //fill-opacity: 0;
-  //animation: dash 2s linear both;
 }
 #s{
   stroke-dasharray: 874;
   stroke-dashoffset: -874;
-  //fill-opacity: 0;
-  //animation: dash 2s linear both;
 }
 
 #hand {
@@ -123,8 +85,10 @@ body {
 .myclass{
   //width: 194px;
   //height: 160px;
-  width: 145px;
+  //width: 145px;
   //margin-left: -27px;
+  width: 144px;
+  margin-left: -4px;
 }
 .mouse_out{
   transform: rotateY(0deg) rotateX(0deg);

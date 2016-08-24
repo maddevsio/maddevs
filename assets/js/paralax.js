@@ -85,16 +85,14 @@ var tmax_options = {
 };
 
 var tl = new TimelineMax(tmax_options),
-		path = document.getElementById("han_d"),
-		sky = document.getElementsByClassName('cb-intro');
+		path = document.getElementById("han_d");
 
 tl.to(path, 2, {css:{'stroke-dashoffset': 0},	ease: Power2.easeInOut})
 	.to(path, 1, {css:{'fill-opacity': 1}});
-// 	.to(sky, .9, {css:{'opacity': '0.5'}});
 
 
 var drow_words = new TimelineMax(tmax_options);
 
-drow_words.staggerTo(".word_drow", 2, {css:{'stroke-dashoffset': 0},	ease: Power2.easeInOut})
+drow_words.staggerTo(".word_drow", 2, {css:{'stroke-dashoffset': 0}, ease: Power2.easeInOut})
 					.staggerTo(".word_drow", 1 ,{css:{'fill-opacity': 1}});
 
