@@ -1,8 +1,7 @@
 @import "reset";
 
 body, html {
-  height: 100%;
-  min-height: 100%;
+  height: 90%;
 }
 body {
   background: #000;
@@ -11,12 +10,12 @@ body {
   align-items: center;
 }
 .poster {
-  width: 600px;
-  height: 600px;
+  //width: 600px;
+  //height: 600px;
   display: flex;
   margin: auto;
   //background-color: rgba(255,255,255,0.1);
-  border-radius: 50%;
+  //border-radius: 50%;
 }
 .layer-1 {
   display: flex;
@@ -24,7 +23,7 @@ body {
   max-width: 145px;
   justify-content: center;
   margin: auto;
-  //height: 100%;
+  height: 100%;
 }
 .cb-intro{
   position: absolute;
@@ -51,31 +50,31 @@ body {
 
 #m{
   stroke-dasharray: 1140;
-  stroke-dashoffset: -1140;
+  stroke-dashoffset: 1140;
 }
 #a{
   stroke-dasharray: 963;
-  stroke-dashoffset: -963;
+  stroke-dashoffset: 963;
 }
 #d{
   stroke-dasharray: 1005;
-  stroke-dashoffset: -1005;
+  stroke-dashoffset: 1005;
 }
 #d_2{
   stroke-dasharray: 784;
-  stroke-dashoffset: -784;
+  stroke-dashoffset: 784;
 }
 #e{
   stroke-dasharray: 827;
-  stroke-dashoffset: -827;
+  stroke-dashoffset: 827;
 }
 #v{
   stroke-dasharray: 746;
-  stroke-dashoffset: -746;
+  stroke-dashoffset: 746;
 }
 #s{
   stroke-dasharray: 874;
-  stroke-dashoffset: -874;
+  stroke-dashoffset: 874;
 }
 
 #hand {
