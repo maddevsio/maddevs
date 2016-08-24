@@ -6,48 +6,129 @@ body, html {
 }
 body {
   background: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .poster {
-  height: 90%;
+  width: 600px;
+  height: 600px;
   display: flex;
+  margin: auto;
+  //background-color: rgba(255,255,255,0.1);
+  border-radius: 50%;
 }
 .layer-1 {
   display: flex;
   flex-direction: column;
-  max-width: 166px;
+  max-width: 140px;
   justify-content: center;
   margin: auto;
   height: 100%;
 }
-.email {
+.cb-intro{
   position: absolute;
-  right:0;
-  left: 0;
-  bottom: 80px;
-
-  a{
-    color: #ff0000;
-    font-family: Tahoma, sans-serif;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
+  z-index: -1;
 }
 #red {
-  transform-origin: 50%;
-  transition-duration: 2s;
+  transform-origin: 50% bottom;
+  perspective-origin: center;
+}
+.move_hand{
+  width: 199px;
+  margin-left: -27px;
+  position: absolute;
+}
+.path {
+  stroke-dasharray: 3345;
+  stroke-dashoffset: -3345;
+  fill-opacity: 0;
+  //animation: dash 2.5s ease-in both;
+}
+.word_drow{
+  fill-opacity: 0;
+  fill: #ffffff;
+}
+//@keyframes dash {
+//  from {
+//    stroke-dashoffset: 3345;
+//    fill-opacity: 0;
+//  }
+//  99%{
+//    fill-opacity: 0.3;
+//  }
+//  to {
+//    fill-opacity: 1;
+//    stroke-dashoffset: 0;
+//  }
+//}
+//.fade_out{
+//  animation: fadeOut .5s linear both;
+//}
+//@keyframes fadeOut {
+//  from{
+//    fill-opacity: 0;
+//  }
+//  to{
+//    fill-opacity: 1;
+//  }
+//}
+#m{
+  stroke-dasharray: 1140;
+  stroke-dashoffset: -1140;
+  //fill-opacity: 0;
+  //animation: dash 2s linear both;
+}
+#a{
+  stroke-dasharray: 963;
+  stroke-dashoffset: -963;
+  //fill-opacity: 0;
+  //animation: dash 2s linear both;
+}
+#d{
+  stroke-dasharray: 1005;
+  stroke-dashoffset: -1005;
+  //fill-opacity: 0;
+  //animation: dash 2s linear both;
+}
+#d_2{
+  stroke-dasharray: 784;
+  stroke-dashoffset: -784;
+  //fill-opacity: 0;
+  //animation: dash 2s linear both;
+}
+#e{
+  stroke-dasharray: 827;
+  stroke-dashoffset: -827;
+  //fill-opacity: 0;
+  //animation: dash 2s linear both;
+}
+#v{
+  stroke-dasharray: 746;
+  stroke-dashoffset: -746;
+  //fill-opacity: 0;
+  //animation: dash 2s linear both;
+}
+#s{
+  stroke-dasharray: 874;
+  stroke-dashoffset: -874;
+  //fill-opacity: 0;
+  //animation: dash 2s linear both;
 }
 
 #hand {
-  transform-origin: 50%;
-  transition-duration: .3s;
+  transform-origin: 50% bottom;
+  perspective-origin: center;
 }
 .myclass{
-  width: 228px;
-  height: 220px;
-  margin-left: -31px;
+  //width: 194px;
+  //height: 160px;
+  width: 145px;
+  //margin-left: -27px;
+}
+.mouse_out{
+  transform: rotateY(0deg) rotateX(0deg);
+  transition-duration: .9s
 }
 footer{
   position: absolute;

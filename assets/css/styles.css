@@ -31,46 +31,86 @@ body, html {
   min-height: 100%; }
 
 body {
-  background: #000; }
+  background: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
 
 .poster {
-  height: 90%;
-  display: flex; }
+  width: 600px;
+  height: 600px;
+  display: flex;
+  margin: auto;
+  border-radius: 50%; }
 
 .layer-1 {
   display: flex;
   flex-direction: column;
-  max-width: 166px;
+  max-width: 140px;
   justify-content: center;
   margin: auto;
   height: 100%; }
 
-.email {
+.cb-intro {
   position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 80px; }
-  .email a {
-    color: #ff0000;
-    font-family: Tahoma, sans-serif;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase; }
+  z-index: -1; }
 
 #red {
-  transform-origin: 50%;
-  transition-duration: 2s; }
+  transform-origin: 50% bottom;
+  perspective-origin: center; }
+
+.move_hand {
+  width: 199px;
+  margin-left: -27px;
+  position: absolute; }
+
+.path {
+  stroke-dasharray: 3345;
+  stroke-dashoffset: -3345;
+  fill-opacity: 0; }
+
+.word_drow {
+  fill-opacity: 0;
+  fill: #ffffff; }
+
+#m {
+  stroke-dasharray: 1140;
+  stroke-dashoffset: -1140; }
+
+#a {
+  stroke-dasharray: 963;
+  stroke-dashoffset: -963; }
+
+#d {
+  stroke-dasharray: 1005;
+  stroke-dashoffset: -1005; }
+
+#d_2 {
+  stroke-dasharray: 784;
+  stroke-dashoffset: -784; }
+
+#e {
+  stroke-dasharray: 827;
+  stroke-dashoffset: -827; }
+
+#v {
+  stroke-dasharray: 746;
+  stroke-dashoffset: -746; }
+
+#s {
+  stroke-dasharray: 874;
+  stroke-dashoffset: -874; }
 
 #hand {
-  transform-origin: 50%;
-  transition-duration: .3s; }
+  transform-origin: 50% bottom;
+  perspective-origin: center; }
 
 .myclass {
-  width: 228px;
-  height: 220px;
-  margin-left: -31px; }
+  width: 145px; }
+
+.mouse_out {
+  transform: rotateY(0deg) rotateX(0deg);
+  transition-duration: 0.9s; }
 
 footer {
   position: absolute;
