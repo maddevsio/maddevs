@@ -84,15 +84,23 @@ var tmax_options = {
 		onRepeatParams: []
 };
 
+
+
 var tl = new TimelineMax(tmax_options),
-		path = document.getElementById("han_d");
+		drow_words = new TimelineMax(tmax_options),
+		path = document.getElementById("han_d"),
+		insta = document.getElementById("instagram_stroke"),
+		git = document.getElementById("git_stroke");
 
 tl.to(path, 2, {css:{'stroke-dashoffset': 0},	ease: Power2.easeInOut})
+	.to(git, .5, {css:{'fill-opacity': 1}})
 	.to(path, 1, {css:{'fill-opacity': 1}});
 
 
-var drow_words = new TimelineMax(tmax_options);
+
 
 drow_words.staggerTo(".word_drow", 2, {css:{'stroke-dashoffset': 0}, ease: Power2.easeInOut})
+					.to(insta, .5, {css:{'fill-opacity': 1}})
 					.staggerTo(".word_drow", 1 ,{css:{'fill-opacity': 1}});
+
 

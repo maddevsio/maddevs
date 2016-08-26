@@ -1,21 +1,19 @@
 @import "reset";
 
 body, html {
-  height: 90%;
+  height: 100%;
 }
 body {
   background: #000;
   display: flex;
+  position: relative;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
 }
 .poster {
-  //width: 600px;
-  //height: 600px;
   display: flex;
   margin: auto;
-  //background-color: rgba(255,255,255,0.1);
-  //border-radius: 50%;
 }
 .layer-1 {
   display: flex;
@@ -82,10 +80,6 @@ body {
   perspective-origin: center;
 }
 .myclass{
-  //width: 194px;
-  //height: 160px;
-  //width: 145px;
-  //margin-left: -27px;
   width: 144px;
   margin-left: -4px;
 }
@@ -93,10 +87,33 @@ body {
   transform: rotateY(0deg) rotateX(0deg);
   transition-duration: .9s
 }
+.social_links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg{
+    width: 23px;
+    margin: 10px;
+    fill: #fff;
+  }
+  #github{
+    height: 23px;
+  }
+  #instagram{
+    height: 23px;
+  }
+  a svg:hover #git_stroke,
+  a svg:hover #instagram_stroke {
+    fill: #ff0000;
+  }
+  a svg #git_stroke,
+  a svg #instagram_stroke {
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+  }
+}
 footer{
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0 auto;
+  height:10%;
 }

@@ -27,13 +27,15 @@ table {
   border-spacing: 0; }
 
 body, html {
-  height: 90%; }
+  height: 100%; }
 
 body {
   background: #000;
   display: flex;
+  position: relative;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
 
 .poster {
   display: flex;
@@ -109,11 +111,29 @@ body {
   transform: rotateY(0deg) rotateX(0deg);
   transition-duration: 0.9s; }
 
+.social_links {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .social_links svg {
+    width: 23px;
+    margin: 10px;
+    fill: #fff; }
+  .social_links #github {
+    height: 23px; }
+  .social_links #instagram {
+    height: 23px; }
+  .social_links a svg:hover #git_stroke,
+  .social_links a svg:hover #instagram_stroke {
+    fill: #ff0000; }
+  .social_links a svg #git_stroke,
+  .social_links a svg #instagram_stroke {
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out; }
+
 footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0 auto; }
+  height: 10%; }
 
 /*# sourceMappingURL=styles.css.map */
