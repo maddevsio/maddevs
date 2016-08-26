@@ -99,17 +99,9 @@ body {
   stroke-dasharray: 874;
   stroke-dashoffset: 874; }
 
-#hand {
-  transform-origin: 50% bottom;
-  perspective-origin: center; }
-
 .myclass {
   width: 144px;
   margin-left: -4px; }
-
-.mouse_out {
-  transform: rotateY(0deg) rotateX(0deg);
-  transition-duration: 0.9s; }
 
 .social_links {
   display: flex;
