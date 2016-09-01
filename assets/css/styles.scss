@@ -4,7 +4,7 @@ body, html {
   height: 100%;
 }
 body {
-  background: #000;
+  background: #231f20;
   display: flex;
   position: relative;
   justify-content: space-around;
@@ -85,7 +85,7 @@ body {
   svg{
     width: 23px;
     margin: 10px;
-    fill: #fff;
+    fill: #ffffff;
   }
   #github{
     height: 23px;
@@ -95,7 +95,7 @@ body {
   }
   a svg:hover #git_stroke,
   a svg:hover #instagram_stroke {
-    fill: #ff0000;
+    fill: #f01716;
   }
   a svg #git_stroke,
   a svg #instagram_stroke {
