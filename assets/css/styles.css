@@ -105,8 +105,9 @@ body {
 
 .social_links {
   display: flex;
+  width: 130px;
   align-items: center;
-  justify-content: center; }
+  justify-content: space-around; }
   .social_links svg {
     width: 23px;
     margin: 10px;
@@ -115,11 +116,16 @@ body {
     height: 23px; }
   .social_links #instagram {
     height: 23px; }
+  .social_links #twitter {
+    width: 26px;
+    height: 26px; }
   .social_links a svg:hover #git_stroke,
-  .social_links a svg:hover #instagram_stroke {
+  .social_links a svg:hover #instagram_stroke,
+  .social_links a svg:hover #twitter_stroke {
     fill: #f01716; }
   .social_links a svg #git_stroke,
-  .social_links a svg #instagram_stroke {
+  .social_links a svg #instagram_stroke,
+  .social_links a svg #twitter_stroke {
     transition: 200ms;
     transition-timing-function: ease-in-out;
     -webkit-transition: 200ms;

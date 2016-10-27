@@ -80,8 +80,9 @@ body {
 }
 .social_links{
   display: flex;
+  width: 130px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   svg{
     width: 23px;
     margin: 10px;
@@ -93,12 +94,18 @@ body {
   #instagram{
     height: 23px;
   }
+  #twitter{
+    width: 26px;
+    height: 26px;
+  }
   a svg:hover #git_stroke,
-  a svg:hover #instagram_stroke {
+  a svg:hover #instagram_stroke,
+  a svg:hover #twitter_stroke{
     fill: #f01716;
   }
   a svg #git_stroke,
-  a svg #instagram_stroke {
+  a svg #instagram_stroke,
+  a svg #twitter_stroke{
     transition: 200ms;
     transition-timing-function: ease-in-out;
     -webkit-transition: 200ms;
