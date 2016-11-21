@@ -98,13 +98,18 @@ body {
     width: 26px;
     height: 26px;
   }
+  #medium{
+    width: 24px;
+  }
   a svg:hover #git_stroke,
   a svg:hover #instagram_stroke,
+  a svg:hover #medium_stroke,
   a svg:hover #twitter_stroke{
     fill: #f01716;
   }
   a svg #git_stroke,
   a svg #instagram_stroke,
+  a svg #medium_stroke,
   a svg #twitter_stroke{
     transition: 200ms;
     transition-timing-function: ease-in-out;
