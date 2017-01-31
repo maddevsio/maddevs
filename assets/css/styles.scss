@@ -6,7 +6,6 @@
   font-family: ApercuPro-Mono;
   src: url(../fonts/ApercuPro-Mono.otf);
 }
-
 /* Main styles for all containers */
 html {
   height: 100%;
@@ -155,7 +154,6 @@ body {
     -webkit-transition-timing-function: ease-in-out;
   }
 }
-
 /* Sections styles */
 section{
   max-width: 960px;
@@ -182,6 +180,7 @@ section{
     }
     .section_text{
       color: #545454;
+      line-height: 1.4;
     }
     .section_wrap{
       text-decoration: none;
@@ -190,7 +189,8 @@ section{
       flex-direction:column;
       min-width: 300px;
       max-width: 300px;
-      margin: 0 0 5%;
+      margin: 30px 0 35px;
+
       &:hover{
         .section_text{
           color: #FFFFFF;
@@ -378,8 +378,12 @@ section{
       }
     }
     .section_wrap{
-      min-width: 170px;
+      min-width: 160px;
       height: 90px;
+      order: 1;
+      &.django{
+        order: 2;
+      }
       .section_icon{
         padding-bottom: 25px;
         align-items: initial;
@@ -404,13 +408,14 @@ section{
   &.contacts{
     .section_content{
       align-items: center;
-      margin: 5% 0 15%;
+      margin: 5% 0 15px;
     }
     .phone, .email{
       color: #918f90;
       text-decoration: none;
       transition: all .5s;
       padding: 20px 0;
+      width: 170px;
       @include for-size(phone-only){
         width: 100%;
         text-align: center;
@@ -425,8 +430,12 @@ section{
         outline: none;
       }
     }
+    .email{
+      text-align: center;
+    }
     .social_links{
       margin: 0;
+      width: 170px;
       opacity: 1 !important;
     }
   }

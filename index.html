@@ -10,7 +10,6 @@
 </head>
 <body id="main_body">
 <main>
-
     <section class="header">
         <div class="header_logotype">
             <div class="logo_header" id="logo_header">
@@ -157,7 +156,7 @@
         </section>
         <div class="section_title" id="first_title">projects</div>
     </section>
-    <section class="projects">
+    <section id="trigger" class="projects">
         <div class="section_content">
             <a href="#" class="section_wrap">
                 <div class="section_icon">
@@ -470,7 +469,7 @@
             </a>
         </div>
     </section>
-    <section class="using">
+    <section id="animate" class="using">
         <div class="section_title">using</div>
         <div class="section_content">
             <a href="#" class="section_wrap">
@@ -551,7 +550,7 @@
                 </div>
                 <div class="section_text">React</div>
             </a>
-            <a href="#" class="section_wrap">
+            <a href="#" class="section_wrap django">
                 <div class="section_icon">
                     <svg version="1.1" id="django" width="115" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 436.5 152.5" style="enable-background:new 0 0 436.5 152.5;" xml:space="preserve">
@@ -807,31 +806,9 @@
     </section>
 </main>
     <footer>
-        <script src="assets/js/jquery-3.1.0.min.js"></script>
-        <script src="assets/js/TimelineMax.min.js"></script>
-        <script src="assets/js/twin_conf.js"></script>
+        <script src="assets/prod/scripts.js"></script>
+        <script src="assets/js/plugins/debug.addIndicators.min.js"></script>
     </footer>
-    <script>
-
-        var mainLogoBlock = $(".logo, .social_links"),
-            logo_header = document.getElementById("logo_header");
-
-        $(window).scroll(function(){
-            mainLogoBlock.css("opacity", 1 - $(window).scrollTop() / (window.innerHeight - 310) );
-            console.log(window.innerHeight);
-            if (mainLogoBlock.css('opacity') <= 0.1){
-                $(logo_header).fadeIn("slow");
-            }else{
-                $(logo_header).fadeOut("slow");
-            }
-        });
-
-        $('#logo_header').click(function(){
-                $('html, body').animate({scrollTop : 0},800);
-                return false;
-        });
-
-    </script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
