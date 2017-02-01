@@ -24,8 +24,10 @@ gulp.task('css', function () {
 gulp.task('scripts', function() {
 		var scripts = [
 				'js/jquery-3.1.0.min.js',
-				'js/TimelineMax.min.js',
 				'js/ScrollMagic.min.js',
+				'js/TimelineMax.min.js',
+				'js/plugins/debug.addIndicators.min.js',
+				'js/plugins/jquery.ScrollMagic.min.js',
 				'js/scripts.js'
 		];
 		return gulp.src(scripts)

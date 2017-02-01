@@ -77,17 +77,17 @@ title_animate
 		.to(first_title, .8, {css:{'opacity': 1}});
 
 
-var mainLogoBlock = $(".logo, .social_links"),
-		logo_header = document.getElementById("logo_header");
-
-$(window).scroll(function(){
-		mainLogoBlock.css("opacity", 1 - $(window).scrollTop() / (window.innerHeight - 310) );
-		if (mainLogoBlock.css('opacity') <= 0.1){
-				$(logo_header).fadeIn("slow");
-		}else{
-				$(logo_header).fadeOut("slow");
-		}
-});
+// var mainLogoBlock = $(".logo, .social_links"),
+// 		logo_header = document.getElementById("logo_header");
+//
+// $(window).scroll(function(){
+// 		mainLogoBlock.css("opacity", 1 - $(window).scrollTop() / (window.innerHeight - 310) );
+// 		if (mainLogoBlock.css('opacity') <= 0.1){
+// 				$(logo_header).fadeIn("slow");
+// 		}else{
+// 				$(logo_header).fadeOut("slow");
+// 		}
+// });
 
 $('#logo_header').click(function(){
 		$('html, body').animate({scrollTop : 0},800);
@@ -95,15 +95,45 @@ $('#logo_header').click(function(){
 });
 
 var controller = new ScrollMagic.Controller();
-var animateElem = document.getElementById("animate");
+
+var tween_projects = TweenMax.to(".animate_project", .6, {paddingTop: 0, autoAlpha: 1, scale: 1});
+var tween_using = TweenMax.to(".animate_using", .6, {paddingTop: 0, autoAlpha: 1, scale: 1});
+var tween_participate = TweenMax.to(".animate_participate", .6, {paddingTop: 0, autoAlpha: 1, scale: 1});
+var tween_logo = TweenMax.to("#logo_header", .6, { autoAlpha: 1});
+
+
 var scene = new ScrollMagic.Scene({
-		triggerElement: "#trigger",
+		triggerElement: ".projects",
 		triggerHook: "onEnter",
-		offset: 100
+		offset: 120
 		})
-		.on("enter", function () {
-		})
-		.on("leave", function () {
-		})
-		.addIndicators()
+		.setTween(tween_projects)
+		.addTo(controller);
+
+var scene2 = new ScrollMagic.Scene({
+		triggerElement: ".using",
+		triggerHook: "onEnter",
+		offset: 120
+})
+		.setTween(tween_using)
+		.addTo(controller);
+
+var scene3 = new ScrollMagic.Scene({
+		triggerElement: ".participate",
+		triggerHook: "onEnter",
+		offset: 120
+})
+		.setTween(tween_participate)
+		.addTo(controller);
+
+controller.scrollTo(function (newpos) {
+		TweenMax.to(window, 0.5, {scrollTo: {y: newpos}});
+});
+
+
+var scene4 = new ScrollMagic.Scene({
+		triggerElement: ".social_links",
+		triggerHook: "onLeave"
+})
+		.setTween(tween_logo)
 		.addTo(controller);
