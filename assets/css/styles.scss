@@ -1,7 +1,6 @@
 /* Import default styles for all browsers */
 @import "reset";
 @import "mixins-media";
-/* Import fonts */
 @font-face {
   font-family: ApercuPro-Mono;
   src: url(../fonts/ApercuPro-Mono.otf);
@@ -18,6 +17,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  font-size: 16px;
 }
 /* Logo styles & animation */
 .header{
@@ -219,9 +219,27 @@ section{
           path{fill: #fff;}
         }
         #yourcast{
-          path{
-            fill: #FF1F4F;
-          }
+          path{fill: #FF1F4F;}
+        }
+        #scento{
+          .scento-1{fill: #e35e6e;}
+        }
+        #zentist{
+          .cls-2{fill:#5ec9dc;}.cls-1{fill:#fff;}
+        }
+        #kaf{
+          .cls-1{fill:url(#linear-gradient);}
+        }
+        #php{
+          .cls-1{fill:#6a83b5;fill-rule:evenodd;}
+        }
+        #docker{
+          .cls-1{fill:#394d54;}.cls-1,.cls-6,.cls-7,.cls-8{fill-rule:evenodd;}.cls-2{fill:#00aada;}.cls-3{fill:#24b8eb;}
+          .cls-4{fill:#008bb8;}.cls-5{fill:#039bc6;}.cls-6{fill:#00acd3;}.cls-7{fill:#20c2ef;}.cls-10,.cls-8{fill:#d4edf1;}
+          .cls-9{fill:#bfdbe0;}
+        }
+        #js{
+          .cls-1{fill:#f7df1e;}.cls-2{fill:#fff;}
         }
         #gopher{
           .l-h{
@@ -260,6 +278,12 @@ section{
         }
         #swift{
           .sw{fill:#F05138;}
+        }
+        #debian{
+          .cls-1{fill:#a80030;}
+        }
+        #opencv{
+          .cls-1{fill:#ff0101;}.cls-2{fill:#0101ff;}.cls-3{fill:#01ff01;}
         }
         #android{
           .an{fill:#a4c639;}
@@ -328,6 +352,14 @@ section{
         path, ellipse{
           transition: all .5s;
           fill: #918f90;
+        }
+        &#docker{
+          .cls-1{fill:#757374;}
+          .cls-9{fill: #b1afb0;}
+          .cls-10,.cls-8{fill: #bfbdbe;}
+        }
+        &#js{
+          .cls-2{fill: #b4b4b4;}
         }
       }
       #partic_open{
