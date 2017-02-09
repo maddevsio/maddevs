@@ -266,7 +266,7 @@ section{
         }
         #highload{
           .hgl{fill:red;}
-          .hgl_black{fill:#444;}
+          .hgl_black{fill:#fff;}
         }
         #DevFestSiberia{
           .dfs0{fill:#FCC300;}
@@ -287,11 +287,15 @@ section{
           .cls-6{fill:#0084c8;}
           .cls-7{fill:#0073b8;}
           .cls-8{fill:#f5a803;}
-          .cls-9{fill:#3d3d3f;}
+          .cls-9{fill:#ffffff;}
         }
         #mobi{
           .cls-1{fill:#e3202a;}
           .cls-2{fill:#125f73;}
+        }
+        #fosdem-logo{
+          .fosdem-1{fill:#ae3292;}
+          .fosdem-2{fill:#ffffff;}
         }
         #devcon{
           path{fill: #ffffff;}
