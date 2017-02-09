@@ -76,19 +76,6 @@ icons_animate_medium
 title_animate
 		.to(first_title, .8, {css:{'opacity': 1}});
 
-
-// var mainLogoBlock = $(".logo, .social_links"),
-// 		logo_header = document.getElementById("logo_header");
-//
-// $(window).scroll(function(){
-// 		mainLogoBlock.css("opacity", 1 - $(window).scrollTop() / (window.innerHeight - 310) );
-// 		if (mainLogoBlock.css('opacity') <= 0.1){
-// 				$(logo_header).fadeIn("slow");
-// 		}else{
-// 				$(logo_header).fadeOut("slow");
-// 		}
-// });
-
 $('#logo_header').click(function(){
 		$('html, body').animate({scrollTop : 0},800);
 		return false;
