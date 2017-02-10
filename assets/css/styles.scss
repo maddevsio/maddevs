@@ -407,6 +407,9 @@ section{
         width: 140px;
       }
     }
+    .section_text{
+      display: none;
+    }
   }
   &.using{
     @include for-size(tablet-portrait-up){
