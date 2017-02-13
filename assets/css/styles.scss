@@ -191,6 +191,8 @@ section{
       min-width: 300px;
       max-width: 300px;
       margin: 30px 0 35px;
+      padding-top: 80px;
+      opacity: 0;
       &:hover{
         .section_text{
           color: #FFFFFF;
