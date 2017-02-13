@@ -191,7 +191,6 @@ section{
       min-width: 300px;
       max-width: 300px;
       margin: 30px 0 35px;
-
       &:hover{
         .section_text{
           color: #FFFFFF;
@@ -406,9 +405,6 @@ section{
       img {
         width: 140px;
       }
-    }
-    .section_text{
-      display: none;
     }
   }
   &.using{
