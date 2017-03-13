@@ -120,6 +120,10 @@ body {
         fill: #fff;
       }
     }
+    @media screen and (max-width: 768px){
+      left: 5px;
+      transform: scale(.6);
+    }
   }
 }
 /* Styles for social icons */
