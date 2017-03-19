@@ -1,0 +1,4 @@
+.git
+*.yml
+CNAME
+Jenkinsfile
