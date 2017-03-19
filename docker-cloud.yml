@@ -5,7 +5,7 @@ nginx-proxy:
     - 80:80
     - 443:443
   environment:
-    - DEVAULT_HOST=maddevs.io
+    - DEFAULT_HOST=maddevs.io
   volumes:
     - /var/run/docker.sock:/tmp/docker.sock:ro
     - /etc/nginx/vhost.d
