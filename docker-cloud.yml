@@ -1,0 +1,32 @@
+nginx-proxy:
+  restart: always
+  image: jwilder/nginx-proxy
+  ports:
+    - 80:80
+    - 443:443
+  environment:
+    - DEVAULT_HOST=maddevs.io
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock:ro
+    - /etc/nginx/vhost.d
+    - /usr/share/nginx/html
+    - /data//certs/:/etc/nginx/certs:ro
+
+le-companion:
+  restart: always
+  image: jrcs/letsencrypt-nginx-proxy-companion
+  volumes_from:
+    - nginx-proxy
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock:ro
+    - /data/certs/:/etc/nginx/certs:rw
+
+maddevsio:
+  restart: always
+  image: maddevsio/maddevsio
+  autoredeploy: true
+  environment:
+    - VIRTUAL_HOST=maddevs.io
+    - VIRTUAL_PORT=80
+    - LETSENCRYPT_HOST=maddevs.io
+    - LETSENCRYPT_EMAIL=rock@maddevs.io
