@@ -10,7 +10,7 @@ nginx-proxy:
     - /var/run/docker.sock:/tmp/docker.sock:ro
     - /etc/nginx/vhost.d
     - /usr/share/nginx/html
-    - /data//certs/:/etc/nginx/certs:ro
+    - /data/certs/:/etc/nginx/certs:ro
 
 le-companion:
   restart: always
