@@ -155,11 +155,31 @@ body {
   #medium {
     width: 24px;
   }
+  a:hover{
+    animation: zoomitbig 300ms ease-out;
+  }
   a svg:hover #git_stroke,
   a svg:hover #instagram_stroke,
   a svg:hover #medium_stroke,
   a svg:hover #twitter_stroke {
     fill: #f01716;
+  }
+  @keyframes zoomitbig {
+    15%, 40%, 75%, 100% {
+      -webkit-transform-origin: center center
+    }
+    15% {
+      -webkit-transform: scale(1.4, 1.2)
+    }
+    40% {
+      -webkit-transform: scale(0.9, 0.9)
+    }
+    75% {
+      -webkit-transform: scale(1.08, 1)
+    }
+    100% {
+      -webkit-transform: scale(1, 1)
+    }
   }
   a svg #git_stroke,
   a svg #instagram_stroke,
