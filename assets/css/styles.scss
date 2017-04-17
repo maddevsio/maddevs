@@ -157,12 +157,16 @@ body {
   }
   a:hover{
     animation: zoomitbig 300ms ease-out;
+    transition: all .3s;
+    svg{
+      fill: #f01716;
+    }
   }
   a svg:hover #git_stroke,
   a svg:hover #instagram_stroke,
   a svg:hover #medium_stroke,
   a svg:hover #twitter_stroke {
-    fill: #f01716;
+
   }
   @keyframes zoomitbig {
     15%, 40%, 75%, 100% {
