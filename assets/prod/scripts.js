@@ -62,6 +62,7 @@ var tl = new TimelineMax(tmax_options),
 		icons_animate_twitter = new TimelineMax (tmax_options_icons),
 		icons_animate_inst = new TimelineMax (tmax_options_icons),
 		icons_animate_medium = new TimelineMax (tmax_options_icons),
+		icons_animate_linkidin = new TimelineMax (tmax_options_icons),
 		title_animate = new TimelineMax(tmax_options_icons),
 
 		path = document.getElementById("han_d"),
@@ -69,7 +70,8 @@ var tl = new TimelineMax(tmax_options),
 		insta = document.getElementById("instagram_stroke"),
 		git = document.getElementById("git_stroke"),
 		twitter = document.getElementById("twitter_stroke"),
-		medium = document.getElementById("medium_stroke");
+		medium = document.getElementById("medium_stroke"),
+		linkidin = document.getElementById("linkidin-icon");
 
 tl
 		.to(path, 1, {css:{'stroke-dashoffset': 0},	ease: Power2.easeInOut})
@@ -91,6 +93,9 @@ icons_animate_twitter
 
 icons_animate_medium
 		.to(medium, .5, {css:{'fill-opacity': 1}});
+
+icons_animate_linkidin
+		.to(linkidin, .5, {css:{'fill-opacity': 1}});
 
 title_animate
 		.to(first_title, .8, {css:{'opacity': 1}});
