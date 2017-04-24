@@ -155,8 +155,10 @@ body {
   #medium {
     width: 24px;
   }
+  #youtube-stroke{
+    height: 26px;
+  }
   a:hover{
-    //animation: zoomitbig 300ms ease-out;
     transition: all .3s;
     svg{
       fill: #f01716;
@@ -165,7 +167,8 @@ body {
   a svg #git_stroke,
   a svg #instagram_stroke,
   a svg #medium_stroke,
-  a svg #linkidin-icon,
+  a svg #slideshare,
+  a svg #youtube-stroke,
   a svg #twitter_stroke {
     transition: all .3s;
     transition-timing-function: ease-in-out;
