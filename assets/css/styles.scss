@@ -155,12 +155,12 @@ body {
   #medium {
     width: 24px;
   }
-  #youtube-stroke{
+  #youtube-stroke {
     height: 26px;
   }
-  a:hover{
+  a:hover {
     transition: all .3s;
-    svg{
+    svg {
       fill: #f01716;
     }
   }
@@ -555,6 +555,89 @@ section {
             fill: #FFFFFF;
           }
         }
+        #kit {
+          #kit--1, #kit--2, #kit--3 {
+            stroke: #020302;
+            fill: #fff;
+          }
+          #kit--4 {
+            fill: #000;
+          }
+          #kit--5 {
+            fill: url(#kit--linear);
+          }
+        }
+        #techwomen {
+          .tw-1 {
+            fill: #00467e;
+          }
+
+          .tw-2 {
+            fill: #f68e1e;
+          }
+
+          .tw-3 {
+            fill: #231f20;
+          }
+        }
+        #bit {
+          .bit-1 {
+            fill: #1c75bc;
+          }
+          .bit-2 {
+            fill: #db5740;
+          }
+        }
+        #stachka {
+          .st-1 {
+            fill: #ff4c53;
+          }
+          .st-2 {
+            fill: #fff;
+            stroke: #fff;
+          }
+          .st-3 {
+            fill: #e42c31;
+            stroke: #e42c31;
+          }
+          .st-4 {
+            fill: #fff;
+          }
+        }
+        #rit {
+          .rit-0 {
+            fill: #fff;
+          }
+          .rit-1 {
+            fill: #51BAFF;
+          }
+          .rit-2 {
+            fill: #FFFFFF;
+          }
+        }
+        #gdg-bishkek {
+          .gdg-1 {
+            fill: #e74b42;
+          }
+          .gdg-2 {
+            fill: #fff;
+          }
+          .gdg-3 {
+            fill: #407eb9;
+          }
+          .gdg-4 {
+            fill: #00965c;
+          }
+          .gdg-5 {
+            fill: #fec641;
+          }
+          .gdg-6 {
+            fill: #787878;
+          }
+          .gdg-7{
+            fill: #4b4b4b;
+          }
+        }
       }
     }
     .section_icon {
@@ -572,11 +655,11 @@ section {
             fill: #bfbdbe;
           }
         }
-        &#nambafood{
-          .nf-2{
+        &#nambafood {
+          .nf-2 {
             fill: #757374;
           }
-          .nf-3{
+          .nf-3 {
             fill: #757374;
           }
         }
@@ -600,6 +683,15 @@ section {
       #partic_open {
         .cls-2 {
           fill: #ddd;
+        }
+      }
+      #kit {
+        #kit--1, #kit--2, #kit--3 {
+          stroke: #020302;
+          fill: #bfbdbe;
+        }
+        #kit--4 {
+          fill: #000;
         }
       }
       #gopher {
@@ -627,6 +719,54 @@ section {
         }
         .g-b {
           stroke: #231F20;
+        }
+      }
+      #techwomen {
+        .tw-3 {
+          fill: #231f20;
+        }
+      }
+      #stachka {
+        .st-2 {
+          fill: #ddd;
+          stroke: #ddd;
+        }
+        .st-3 {
+          stroke: #918f90;
+        }
+        .st-1 {
+          fill: #bfbdbe;
+        }
+      }
+      #rit {
+        .rit-0 {
+          fill: #918f90;
+        }
+        .rit-1 {
+          fill: #918f90;
+        }
+        .rit-2 {
+          fill: #bfbdbe;
+        }
+      }
+      #gdg-bishkek {
+        .gdg-1 {
+          fill: #bfbdbe;
+        }
+        .gdg-2 {
+          fill: #918f90;
+        }
+        .gdg-3 {
+          fill: #bfbdbe;
+        }
+        .gdg-4 {
+          fill: #918f90;
+        }
+        .gdg-5 {
+          fill: #777;
+        }
+        .gdg-6 {
+          fill: #918f90;
         }
       }
     }
