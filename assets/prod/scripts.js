@@ -65,6 +65,7 @@ var tl = new TimelineMax(tmax_options),
 		icons_animate_linkidin = new TimelineMax (tmax_options_icons),
 		icons_animate_youtube = new TimelineMax (tmax_options_icons),
 		icons_animate_telegram = new TimelineMax (tmax_options_icons),
+		icons_animate_behance = new TimelineMax (tmax_options_icons),
 		title_animate = new TimelineMax(tmax_options_icons),
 
 		path = document.getElementById("han_d"),
@@ -75,6 +76,7 @@ var tl = new TimelineMax(tmax_options),
 		medium = document.getElementById("medium_stroke"),
 		slideshare = document.getElementById("slideshare"),
 		telegram = document.getElementById("telegram"),
+		behance = document.getElementById("behance"),
 		youtube = document.getElementById("youtube-stroke");
 tl
 		.to(path, 1, {css:{'stroke-dashoffset': 0},	ease: Power2.easeInOut})
@@ -105,6 +107,9 @@ icons_animate_youtube
 
 icons_animate_telegram
 		.to(telegram, .5, {css:{'fill-opacity': 1}});
+
+icons_animate_behance
+		.to(behance, .5, {css:{'fill-opacity': 1}});
 
 title_animate
 		.to(first_title, .8, {css:{'opacity': 1}});

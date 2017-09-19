@@ -170,11 +170,16 @@ body {
   a svg #slideshare,
   a svg #youtube-stroke,
   a svg #twitter_stroke,
-  a svg #telegram
+  a svg #telegram,
+  a svg #behance
   {
     transition: all .3s;
     transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
+  }
+  @media screen and (max-width: 450px){
+    flex-wrap: wrap;
+    width: 200px;
   }
 }
 
@@ -404,15 +409,12 @@ section {
             fill: #a80030;
           }
         }
-        #opencv {
-          .cls-1 {
-            fill: #ff0101;
+        #python {
+          .py-1 {
+            fill: #32709a;
           }
-          .cls-2 {
-            fill: #0101ff;
-          }
-          .cls-3 {
-            fill: #01ff01;
+          .py-2 {
+            fill: #ffd058;
           }
         }
         #android {
@@ -851,7 +853,7 @@ section {
     }
     .social_links {
       margin: 0;
-      width: 170px;
+      width: 200px;
       opacity: 1 !important;
     }
   }
