@@ -1,3 +1,3 @@
-FROM nginx:1.11-alpine
-MAINTAINER Andrew S, <halfb00t@gmail.com>
+FROM nginx:alpine
+LABEL maintainer="Andrew S, <halfb00t@gmail.com>"
 COPY . /usr/share/nginx/html
