@@ -171,13 +171,12 @@ body {
   a svg #youtube-stroke,
   a svg #twitter_stroke,
   a svg #telegram,
-  a svg #behance
-  {
+  a svg #behance {
     transition: all .3s;
     transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
   }
-  @media screen and (max-width: 450px){
+  @media screen and (max-width: 450px) {
     flex-wrap: wrap;
     width: 200px;
   }
@@ -294,6 +293,39 @@ section {
         #yourcast {
           path {
             fill: #FF1F4F;
+          }
+        }
+        #veeqoo {
+          path {
+            &.vq-1 {
+              fill: #3494d1;
+            }
+            &.vq-2 {
+              fill: #ef7e6e;
+            }
+            &.vq-3 {
+              fill: #fff;
+            }
+          }
+        }
+        #iotsploit {
+          path {
+            &.iot-1 {
+              fill: #fff;
+            }
+            &.iot-2 {
+              fill: red;
+            }
+          }
+        }
+        #eatigo {
+          path {
+            &.eg-1 {
+              fill: #bb2025;
+            }
+            &.eg-2 {
+              fill: #eb9322;
+            }
           }
         }
         #scento {
@@ -638,7 +670,7 @@ section {
           .gdg-6 {
             fill: #787878;
           }
-          .gdg-7{
+          .gdg-7 {
             fill: #4b4b4b;
           }
         }
