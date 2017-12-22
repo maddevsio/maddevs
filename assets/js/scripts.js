@@ -46,6 +46,7 @@ var tl = new TimelineMax(tmax_options),
 		icons_animate_linkidin = new TimelineMax (tmax_options_icons),
 		icons_animate_youtube = new TimelineMax (tmax_options_icons),
 		icons_animate_telegram = new TimelineMax (tmax_options_icons),
+		icons_animate_facebook = new TimelineMax (tmax_options_icons),
 		icons_animate_behance = new TimelineMax (tmax_options_icons),
 		title_animate = new TimelineMax(tmax_options_icons),
 
@@ -59,6 +60,7 @@ var tl = new TimelineMax(tmax_options),
 		telegram = document.getElementById("telegram"),
 		behance = document.getElementById("behance"),
 		youtube = document.getElementById("youtube-stroke");
+		facebook = document.getElementById("facebook");
 tl
 		.to(path, 1, {css:{'stroke-dashoffset': 0},	ease: Power2.easeInOut})
 		.to(path, 1, {css:{'fill-opacity': 1}});
@@ -85,6 +87,9 @@ icons_animate_linkidin
 
 icons_animate_youtube
 		.to(youtube, .5, {css:{'fill-opacity': 1}});
+
+icons_animate_facebook
+		.to(facebook, .5, {css:{'fill-opacity': 1}});
 
 icons_animate_telegram
 		.to(telegram, .5, {css:{'fill-opacity': 1}});
