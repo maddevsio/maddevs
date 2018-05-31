@@ -11,7 +11,143 @@
           <h1>Формируем удаленные технические команды из профессионалов для ваших стартапов</h1>
         </div>
         <div class="banner-slack">
-          <img src="../../assets/img/slack.png" alt="Slack">
+          <div class="banner-slack_sidebar">
+            <div class="banner-slack_sidebar-panel">
+              <div class="panel-item"></div>
+              <div class="panel-item"></div>
+            </div>
+            <div class="banner-slack_sidebar-content">
+              <div class="sidebar-content-item1"></div>
+              <div class="sidebar-content-item2"></div>
+              <!-- Sidebar content -->
+              <div class="sidebar-content-list">
+                <div class="sidebar-content-list_items">
+                  <div class="sidebar-content-list_item1 sidebar-content-list_item--active"></div>
+                </div>
+                <div class="sidebar-content-list_items">
+                  <div class="sidebar-content-list_item2 sidebar-content-list_item--active"></div>
+                </div>
+                <div class="sidebar-content-list_items">
+                  <div class="sidebar-content-list_item3 sidebar-content-list_item--active"></div>
+                </div>
+                <div class="sidebar-content-list_items">
+                  <div class="sidebar-content-list_item4 sidebar-content-list_item--active"></div>
+                </div>
+              </div>
+              <!-- End sidebar content -->
+              <!-- Sidebar content -->
+              <div class="sidebar-content-list">
+                <div class="sidebar-content-list_items">
+                  <div class="sidebar-content-list_item2 sidebar-content-list_item--active"></div>
+                </div>
+                <div class="sidebar-content-list_items">
+                  <div class="sidebar-content-list_item1 sidebar-content-list_item--active"></div>
+                </div>
+                <div class="sidebar-content-list_items">
+                  <div class="sidebar-content-list_item4 sidebar-content-list_item--active"></div>
+                </div>
+                <div class="sidebar-content-list_items">
+                  <div class="sidebar-content-list_item3 sidebar-content-list_item--active"></div>
+                </div>
+              </div>
+              <!-- End sidebar content -->
+            </div>
+          </div>
+          <div class="banner-slack_content">
+            <div class="banner-slack_content-title">
+              <h5>#какую проблему это решает?</h5>
+            </div>
+
+            <!-- Item -->
+            <div class="banner-slack_content-item">
+              <div class="banner-slack_content-item_group">
+                <img src="" alt="Group icon">
+                <h5>Mad Devs</h5>
+                <div class="timestemp">
+                  9:25 AM
+                </div>
+              </div>
+              <p class="banner-slack_content-item-text">
+                <span>@here</span> Наша цель позволить <span>@основателям</span> технических стартапов сосредоточиться на главном: на развитии продукта, привлечении клиентов, продажах, стратегии и сплочении команды, привлечении инвестиций и прибыли
+              </p>
+              <div class="banner-slack_content-item-status">
+                <div class="banner-slack_content-item-status-item">
+                  <img src="" alt="">
+                  0
+                </div>
+                <div class="banner-slack_content-item-status-item">
+                  <img src="" alt="">
+                  0
+                </div>
+                <div class="banner-slack_content-item-status-item">
+                  <img src="" alt="">
+                  0
+                </div>
+                <div class="banner-slack_content-item-status-item">
+                  <img src="" alt="">
+                  0
+                </div>
+                <div class="banner-slack_content-item-status-item">
+                  <img src="" alt="">
+                  0
+                </div>
+                <div class="banner-slack_content-item-status-item">
+                  <img src="" alt="">
+                  0
+                </div>
+                <div class="banner-slack_content-item-status-item">
+                  <img src="" alt="">
+                  0
+                </div>
+              </div>
+            </div>
+            <!-- End Item -->
+
+            <!-- Item -->
+            <div class="banner-slack_content-item">
+              <div class="banner-slack_content-item_group">
+                <img src="" alt="Group icon">
+                <h5>Mad Devs</h5>
+                <div class="timestemp">
+                  9:25 AM
+                </div>
+              </div>
+              <p class="banner-slack_content-item-text">
+                <span>@here</span> Наша цель позволить <span>@основателям</span> технических стартапов сосредоточиться на главном: на развитии продукта, привлечении клиентов, продажах, стратегии и сплочении команды, привлечении инвестиций и прибыли
+              </p>
+              <div class="banner-slack_content-item-status">
+                <div class="banner-slack_content-item-status-item">
+                  <img src="" alt="">
+                  0
+                </div>
+                <div class="banner-slack_content-item-status-item">
+                  <img src="" alt="">
+                  0
+                </div>
+                <div class="banner-slack_content-item-status-item">
+                  <img src="" alt="">
+                  0
+                </div>
+                <div class="banner-slack_content-item-status-item">
+                  <img src="" alt="">
+                  0
+                </div>
+                <div class="banner-slack_content-item-status-item">
+                  <img src="" alt="">
+                  0
+                </div>
+                <div class="banner-slack_content-item-status-item">
+                  <img src="" alt="">
+                  0
+                </div>
+                <div class="banner-slack_content-item-status-item">
+                  <img src="" alt="">
+                  0
+                </div>
+              </div>
+            </div>
+            <!-- End Item -->
+          </div>
         </div>
       </div>
     </div>
@@ -19,13 +155,26 @@
 </template>
 
 <script>
+const Datastore = require('nedb')
+const db = new Datastore({filename: 'users'})
+db.loadDatabase()
+
 export default {
   name: 'banner',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  }
+  },
+  methods: {
+    addData() {
+      db.insert({name : "Boris the Blade", year: 1946});
+      console.log('!!!!!!!!');
+    }
+  },
+  mounted() {
+    this.addData();
+  },
 }
 </script>
 
