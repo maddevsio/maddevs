@@ -248,7 +248,6 @@
 ////////////// How it work //////////////
 .how-it-work {
     padding-top: 280px;
-    padding-bottom: 100px;
     &_wrap {
         h2 {
             width: 100%;
@@ -323,6 +322,70 @@
                         background-color: #34c749;
                         border-radius: 100%;
                     }
+                }
+            }
+        }
+    }
+}
+
+//////////////// Best Practices ////////////
+.best-practices {
+    background-color: #1e1e1e;
+    padding: 120px 0;
+    &_wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-preview {
+            width: 605px;
+            height: 370px;
+            background-image: linear-gradient(to bottom, #1a1a1a, #151515);
+            box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+            background-color: #1e1e1e;
+            &_header {
+                width: 100%;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 0 10px;
+                box-sizing: border-box;
+                .p-close {
+                  width: 8px;
+                  height: 8px;
+                  background-color: #fc605c;
+                  border-radius: 100%;
+                  margin-right: 5px;
+                }
+
+                .p-hide {
+                  width: 8px;
+                  height: 8px;
+                  background-color: #fdbc40;
+                  border-radius: 100%;
+                  margin-right: 5px;
+                }
+
+                .p-full {
+                  width: 8px;
+                  height: 8px;
+                  background-color: #34c749;
+                  border-radius: 100%;
+                }
+            }
+        }
+        &-title {
+            width: 525px;
+            h3 {
+                font-size: 32px;
+                line-height: 1.38;
+                font-family: 'MADEEvolveSans-regular', sans-serif;
+                font-weight: normal;
+                color: #fff;
+                span {
+                    font-family: 'MADEEvolveSans-medium', sans-serif;
+                    border-radius: 3px;
+                    color: #fff9dd;
                 }
             }
         }

@@ -2,12 +2,14 @@
   <main class="main">
     <Banner />
     <HowItWork />
+    <BestPractices />
   </main>
 </template>
 
 <script>
 import Banner from './Banner'
 import HowItWork from './HowItWork'
+import BestPractices from './bestPractices'
 
 export default {
   name: 'HelloWorld',
@@ -18,7 +20,8 @@ export default {
   },
   components: {
     'Banner': Banner,
-    'HowItWork': HowItWork
+    'HowItWork': HowItWork,
+    'BestPractices': BestPractices
   }
 }
 </script>
