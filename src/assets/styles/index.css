@@ -23,6 +23,9 @@ p {
   font-family: 'MADEEvolveSans-regular';
   src: url("../fonts/MADEEvolveSans-regular.otf") format("truetype"); }
 @font-face {
+  font-family: 'MADEEvolveSans-medium';
+  src: url("../fonts/MADEEvolveSans-medium.otf") format("truetype"); }
+@font-face {
   font-family: 'OpenSans-Bold';
   src: url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype"); }
 @font-face {
@@ -62,7 +65,7 @@ p {
     top: 0;
     left: 0;
     background-color: #000;
-    opacity: .4;
+    opacity: .5;
     z-index: -1; }
 
 #bgVideo {
@@ -74,10 +77,12 @@ p {
   height: 100%;
   overflow: hidden;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   z-index: -2; }
+  .bgVideo-wrap video {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -2; }
 
 .banner-wrap {
   display: flex;
@@ -153,7 +158,7 @@ p {
           cursor: pointer;
           position: relative; }
           .banner-slack_sidebar-content .sidebar-content-list .sidebar-content-list_items:hover {
-            background-color: #2a9889; }
+            background-color: rgba(40, 27, 38, 0.4); }
             .banner-slack_sidebar-content .sidebar-content-list .sidebar-content-list_items:hover .sidebar-content-list_item--active {
               opacity: 0.65; }
             .banner-slack_sidebar-content .sidebar-content-list .sidebar-content-list_items:hover::before {
@@ -169,6 +174,10 @@ p {
             background-color: #fff;
             opacity: 0.45;
             border-radius: 5px; }
+        .banner-slack_sidebar-content .sidebar-content-list .slack-selected {
+          background-color: #2a9889; }
+          .banner-slack_sidebar-content .sidebar-content-list .slack-selected:hover {
+            background-color: #2a9889; }
         .banner-slack_sidebar-content .sidebar-content-list .sidebar-content-list_item1 {
           width: 68px;
           height: 5px;
@@ -268,5 +277,55 @@ p {
     margin: 0 auto;
     margin-top: 30px;
     font-family: 'MADEEvolveSans-regular'; }
+  .how-it-work_wrap-content {
+    background-color: #fffdf9;
+    padding: 120px 0;
+    margin-top: 160px; }
+    .how-it-work_wrap-content .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .how-it-work_wrap-content-title {
+      width: 525px;
+      font-size: 32px;
+      line-height: 1.38;
+      font-family: 'MADEEvolveSans-regular', sans-serif;
+      font-weight: normal; }
+      .how-it-work_wrap-content-title span {
+        font-family: 'MADEEvolveSans-medium', sans-serif;
+        border-radius: 3px;
+        background-color: #fff9dd;
+        border: solid 1px #fff1b1;
+        padding: 0 5px;
+        padding-bottom: 3px; }
+    .how-it-work_wrap-content-slider {
+      width: 640px;
+      height: 370px;
+      box-shadow: 0 10px 20px 0 rgba(20, 44, 56, 0.27), 0 3px 10px 0 rgba(20, 44, 56, 0.08); }
+      .how-it-work_wrap-content-slider_header {
+        width: 100%;
+        height: 30px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        box-sizing: border-box; }
+        .how-it-work_wrap-content-slider_header .s-close {
+          width: 8px;
+          height: 8px;
+          background-color: #fc605c;
+          border-radius: 100%;
+          margin-right: 5px; }
+        .how-it-work_wrap-content-slider_header .s-hide {
+          width: 8px;
+          height: 8px;
+          background-color: #fdbc40;
+          border-radius: 100%;
+          margin-right: 5px; }
+        .how-it-work_wrap-content-slider_header .s-full {
+          width: 8px;
+          height: 8px;
+          background-color: #34c749;
+          border-radius: 100%; }
 
 /*# sourceMappingURL=index.css.map */

@@ -21,32 +21,32 @@
               <div class="sidebar-content-item2"></div>
               <!-- Sidebar content -->
               <div class="sidebar-content-list">
-                <div class="sidebar-content-list_items">
+                <div class="sidebar-content-list_items" @click="slackSelected = 0" v-bind:class="{ 'slack-selected': slackSelected == 0 }">
                   <div class="sidebar-content-list_item1 sidebar-content-list_item--active"></div>
                 </div>
-                <div class="sidebar-content-list_items">
+                <div class="sidebar-content-list_items" @click="slackSelected = 1" v-bind:class="{ 'slack-selected': slackSelected == 1 }">
                   <div class="sidebar-content-list_item2 sidebar-content-list_item--active"></div>
                 </div>
-                <div class="sidebar-content-list_items">
+                <div class="sidebar-content-list_items" @click="slackSelected = 2" v-bind:class="{ 'slack-selected': slackSelected == 2 }">
                   <div class="sidebar-content-list_item3 sidebar-content-list_item--active"></div>
                 </div>
-                <div class="sidebar-content-list_items">
+                <div class="sidebar-content-list_items" @click="slackSelected = 3" v-bind:class="{ 'slack-selected': slackSelected == 3 }">
                   <div class="sidebar-content-list_item4 sidebar-content-list_item--active"></div>
                 </div>
               </div>
               <!-- End sidebar content -->
               <!-- Sidebar content -->
               <div class="sidebar-content-list">
-                <div class="sidebar-content-list_items">
+                <div class="sidebar-content-list_items" @click="slackSelected = 4" v-bind:class="{ 'slack-selected': slackSelected == 4 }">
                   <div class="sidebar-content-list_item2 sidebar-content-list_item--active"></div>
                 </div>
-                <div class="sidebar-content-list_items">
+                <div class="sidebar-content-list_items" @click="slackSelected = 5" v-bind:class="{ 'slack-selected': slackSelected == 5 }">
                   <div class="sidebar-content-list_item1 sidebar-content-list_item--active"></div>
                 </div>
-                <div class="sidebar-content-list_items">
+                <div class="sidebar-content-list_items" @click="slackSelected = 6" v-bind:class="{ 'slack-selected': slackSelected == 6 }">
                   <div class="sidebar-content-list_item4 sidebar-content-list_item--active"></div>
                 </div>
-                <div class="sidebar-content-list_items">
+                <div class="sidebar-content-list_items" @click="slackSelected = 7" v-bind:class="{ 'slack-selected': slackSelected == 7 }">
                   <div class="sidebar-content-list_item3 sidebar-content-list_item--active"></div>
                 </div>
               </div>
@@ -140,7 +140,7 @@
                   <img src="" alt="">
                   0
                 </div>
-                <div class="banner-slack_content-item-status-item">
+                <div class="banner-slack_content-item-status-item" @click="insert">
                   <img src="" alt="">
                   0
                 </div>
@@ -156,25 +156,31 @@
 
 <script>
 const Datastore = require('nedb')
-const db = new Datastore({filename: 'users'})
-db.loadDatabase()
+const db = new Datastore({filename: './slack.db'})
 
 export default {
   name: 'banner',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      slackSelected: 1,
     }
   },
   methods: {
-    addData() {
-      db.insert({name : "Boris the Blade", year: 1946});
-      console.log('!!!!!!!!');
-    }
+    insert () {
+      db.insert({name:"admin", password:"123"}, function(err, res) {
+        console.log(res)
+      })
+      console.log(__dirname + '../../assets/slack.db');
+    },
+    find () {
+      db.find({}, function(err, res) {
+        console.log(res)
+      })
+    },
   },
-  mounted() {
-    this.addData();
-  },
+  mounted () {
+    db.loadDatabase()
+  }
 }
 </script>
 
