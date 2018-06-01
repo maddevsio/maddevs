@@ -34,6 +34,12 @@ p {
 @font-face {
   font-family: 'OpenSans-SemiBold';
   src: url("../fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Monaco';
+  src: url("../fonts/Monaco/Monaco.ttf") format("truetype"); }
+@font-face {
+  font-family: 'FiraMono';
+  src: url("../fonts/FiraMono/FiraMono-Regular.ttf") format("truetype"); }
 .header {
   width: 100%;
   height: 100%;
@@ -72,13 +78,13 @@ p {
   width: 100%;
   min-height: 100%; }
 
-.bgVideo-wrap {
+.video-background {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: absolute;
   z-index: -2; }
-  .bgVideo-wrap video {
+  .video-background video {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -367,15 +373,48 @@ p {
           border-radius: 100%; }
     .best-practices_wrap-title {
       width: 525px; }
-      .best-practices_wrap-title h3 {
-        font-size: 32px;
-        line-height: 1.38;
-        font-family: 'MADEEvolveSans-regular', sans-serif;
-        font-weight: normal;
-        color: #fff; }
-        .best-practices_wrap-title h3 span {
-          font-family: 'MADEEvolveSans-medium', sans-serif;
-          border-radius: 3px;
-          color: #fff9dd; }
+      .best-practices_wrap-title p {
+        color: #3b3b3b;
+        font-size: 14px;
+        letter-spacing: normal;
+        font-family: 'FiraMono', sans-serif;
+        margin-bottom: 10px; }
+      .best-practices_wrap-title .line-number_text {
+        display: flex; }
+        .best-practices_wrap-title .line-number_text .line-number {
+          display: flex;
+          flex-direction: column;
+          margin-right: 38px;
+          position: relative;
+          margin-top: -12px; }
+          .best-practices_wrap-title .line-number_text .line-number::before {
+            content: '';
+            width: 1px;
+            height: 85%;
+            position: absolute;
+            top: 10px;
+            right: -12px;
+            background-color: #3b3b3b; }
+          .best-practices_wrap-title .line-number_text .line-number span {
+            color: #3b3b3b;
+            font-size: 14px;
+            margin-top: 30px;
+            font-family: 'FiraMono', sans-serif; }
+          .best-practices_wrap-title .line-number_text .line-number .last-child {
+            position: relative; }
+            .best-practices_wrap-title .line-number_text .line-number .last-child::after {
+              content: '}';
+              position: absolute;
+              right: -15px; }
+        .best-practices_wrap-title .line-number_text h3 {
+          font-size: 32px;
+          line-height: 1.38;
+          font-family: 'MADEEvolveSans-regular', sans-serif;
+          font-weight: normal;
+          color: #fff; }
+          .best-practices_wrap-title .line-number_text h3 span {
+            font-family: 'Monaco', sans-serif;
+            border-radius: 3px;
+            color: #fff9dd; }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,9 +1,13 @@
 <template>
   <section id="banner" class="banner">
-    <div class="bgVideo-wrap">
-      <video id="bgVideo" poster="" muted loop autoplay>
-        <source src="../../assets/video/bgvideo.mp4" type="video/mp4">
-      </video>
+    <div class="video-background">
+      <iframe id="bgVideo"
+        src="https://www.youtube.com/embed/lmGJTVyOfYM?loop=1&autoplay=1&mute=1&enablejsapi=1&controls=0&showinfo=0"
+        frameborder="0"
+        allowfullscreen="true"
+        webkitallowfullscreen="true"
+        mozallowfullscreen="true"
+      ></iframe>
     </div>
     <div class="container">
       <div class="banner-wrap">
