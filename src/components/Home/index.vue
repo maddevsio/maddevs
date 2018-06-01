@@ -3,16 +3,18 @@
     <Banner />
     <HowItWork />
     <BestPractices />
+    <WeUse />
   </main>
 </template>
 
 <script>
 import Banner from './Banner'
 import HowItWork from './HowItWork'
-import BestPractices from './bestPractices'
+import BestPractices from './BestPractices'
+import WeUse from './WeUse'
 
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -21,7 +23,8 @@ export default {
   components: {
     'Banner': Banner,
     'HowItWork': HowItWork,
-    'BestPractices': BestPractices
+    'BestPractices': BestPractices,
+    'WeUse': WeUse,
   }
 }
 </script>
