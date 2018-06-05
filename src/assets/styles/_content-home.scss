@@ -20,6 +20,31 @@
     min-height: 100%;
 }
 
+.tv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .screen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin: auto;
+    opacity: 0;
+    transition: opacity .5s;
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+
+
 .video-background {
     width: 100%;
     height: 100%;
