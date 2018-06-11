@@ -20,7 +20,7 @@
     min-height: 100%;
 }
 
-.tv {
+.v-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -489,6 +489,77 @@
                     line-height: 1.7;
                     span {
                         font-family: 'MADEEvolveSans-bold', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
+/////////////////// Carousel reviews /////////////////
+.reviews {
+    width: 100%;
+    background-image: linear-gradient(112deg, #f34f53, #fc944e);
+    padding: 120px 0 45px;
+    &_wrap {
+        background-image: url('../../assets/img/svg/reviews-bg.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        h2 {
+            color: #fff;
+        }
+        &-carousel {
+            &-slide {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                &_desc {
+                    max-width: 870px;
+                    font-size: 24px;
+                    font-family: 'MADEEvolveSans-regular';
+                    line-height: 1.5;
+                    padding: 70px 0 63px;
+                    color: #fff;
+                }
+                .sender {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 42px;
+                        height: 42px;
+                        border-radius: 100%;
+                        margin-right: 15px;
+                        background-color: #fff;
+                    }
+                    p {
+                        font-size: 16px;
+                        font-family: 'MADEEvolveSans-regular';
+                        line-height: 1;
+                        color: #fff;
+                        span {
+                            font-family: 'MADEEvolveSans-bold';
+                        }
+                    }
+                }
+            }
+            .VueCarousel-pagination {
+                margin-top: 87px;
+                .VueCarousel-dot-container {
+                    .VueCarousel-dot--active {
+                        button {
+                            background: #fff !important;
+                            outline: none;
+                        }
+                    }
+                    li {
+                        button {
+                            width: 36px !important;
+                            height: 3px !important;
+                            border-radius: 3px;
+                            background-color: rgba(255, 255, 255, 0.2) !important;
+                        }
                     }
                 }
             }
