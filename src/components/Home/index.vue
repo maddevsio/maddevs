@@ -4,6 +4,7 @@
     <HowItWork />
     <BestPractices />
     <WeUse />
+    <Reviews />
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import Banner from './Banner'
 import HowItWork from './HowItWork'
 import BestPractices from './BestPractices'
 import WeUse from './WeUse'
+import Reviews from './Reviews'
 
 export default {
   name: 'Home',
@@ -25,6 +27,7 @@ export default {
     'HowItWork': HowItWork,
     'BestPractices': BestPractices,
     'WeUse': WeUse,
+    'Reviews': Reviews,
   }
 }
 </script>

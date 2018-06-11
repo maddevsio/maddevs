@@ -13,9 +13,17 @@ p {
     padding: 0;
 }
 
+//----------- Base classes ------------ //
 .container {
-    margin: 0 60px;
+  margin: 0 60px;
 }
+.sec-title {
+  width: 100%;
+  font-family: 'MADEEvolveSans-bold';
+  font-size: 44px;
+  text-align: center;
+}
+//----------- End Base classes ------------ //
 
 // #region Fonts
 @font-face {
