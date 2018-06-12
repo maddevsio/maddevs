@@ -525,4 +525,27 @@ p {
         border-radius: 3px;
         background-color: rgba(255, 255, 255, 0.2) !important; }
 
+.partners {
+  background-color: #1e1e1e;
+  padding: 120px 0; }
+  .partners_wrap h2 {
+    color: #fff; }
+  .partners_wrap-icons {
+    margin-top: 80px; }
+    .partners_wrap-icons_row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .partners_wrap-icons_row-item-center {
+        margin: 0 180px; }
+    .partners_wrap-icons .row-center {
+      margin: 100px 0; }
+    .partners_wrap-icons .row-bottom {
+      justify-content: center; }
+    .partners_wrap-icons .item-left {
+      text-align: left; }
+    .partners_wrap-icons .item-right {
+      text-align: right; }
+
 /*# sourceMappingURL=index.css.map */

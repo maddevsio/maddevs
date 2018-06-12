@@ -566,3 +566,38 @@
         }
     }
 }
+
+// ------------------- Partners --------------//
+.partners {
+    background-color: #1e1e1e;
+    padding: 120px 0;
+    &_wrap {
+        h2 {
+            color: #fff;
+        }
+        &-icons {
+            margin-top: 80px;
+            &_row {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &-item-center {
+                    margin: 0 180px;
+                }
+            }
+            .row-center {
+                margin: 100px 0;
+            }
+            .row-bottom {
+                justify-content: center;
+            }
+            .item-left {
+                text-align: left;
+            }
+            .item-right {
+                text-align: right;
+            }
+        }
+    }
+}
