@@ -601,3 +601,131 @@
         }
     }
 }
+
+// ------------------ OpenSource --------------------//
+.open-source {
+    padding: 160px 0;
+    &_wrap {
+        h2 {
+            color: #2c1c1c;
+        }
+        &-github {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 120px;
+            margin-bottom: 148px;
+            .github-link {
+                display: flex;
+                img {
+                    margin-right: 12px;
+                }
+                &_desc {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    h5 {
+                        font-family: 'MADEEvolveSans-regular', sans-serif;
+                        font-size: 32px;
+                        line-height: 0.69;
+                        color: #000;
+                        font-weight: 300;
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        font-family: 'MADEEvolveSans-regular', sans-serif;
+                        font-size: 20px;
+                        color: #ec2227;
+                        line-height: 0.9;
+                        letter-spacing: 0.2px;
+                        font-weight: lighter;
+                        text-decoration: none;
+                        img {
+                            min-height: 24px;
+                            max-height: 24px;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+            .github-info {
+                display: flex;
+                align-items: center;
+                margin: 24px 0;
+                img {
+                    height: 24px;
+                    margin-right: 8px;
+                }
+                p {
+                    font-size: 20px;
+                    font-family: 'MADEEvolveSans-regular', sans-serif;
+                    line-height: 0.9;
+                    letter-spacing: 0.2px;
+                    color: #000000;
+                }
+            }
+        }
+        &-projects {
+            h3 {
+                width: 100%;
+                text-align: center;
+                color: #000000;
+                font-size: 24px;
+                line-height: 1.5;
+                font-weight: 500;
+                font-family: 'MADEEvolveSans-medium', sans-serif;
+            }
+            &_list {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 40px;
+                border-top: 2px solid #e8e8e8;
+                border-bottom: 2px solid #e8e8e8;
+                &-item {
+                    width: 25%;
+                    height: 450px;
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    justify-content: center;
+                    border-left: 0.5px solid #e8e8e8;
+                    border-right: 0.5px solid #e8e8e8;
+                    padding: 0 42px;
+                    &:hover {
+                        .projects-desc_wrap h4 {
+                            color: #ec2227;
+                        }
+                    }
+                    .projects-img_wrap {
+                        height: 110px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin-bottom: 60px;
+                    }
+                    .projects-desc_wrap {
+                        min-height: 130px;
+                        height: 4px;
+                        h4 {
+                            font-size: 22px;
+                            color: #2c1c1c;
+                            font-family: 'MADEEvolveSans-bold', sans-serif;
+                            line-height: 1.55;
+                            margin-bottom: 10px;
+                        }
+                        p {
+                            font-size: 20px;
+                            line-height: 1.4;
+                            letter-spacing: 0.2px;
+                            color: #595959;
+                            font-family: 'MADEEvolveSans-regular', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
