@@ -6,6 +6,7 @@
     <WeUse />
     <Reviews />
     <Partners />
+    <OpenSource />
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import BestPractices from './BestPractices'
 import WeUse from './WeUse'
 import Reviews from './Reviews'
 import Partners from './Partners'
+import OpenSource from './OpenSource'
 
 export default {
   name: 'Home',
@@ -31,6 +33,7 @@ export default {
     'WeUse': WeUse,
     'Reviews': Reviews,
     'Partners': Partners,
+    'OpenSource': OpenSource,
   }
 }
 </script>
