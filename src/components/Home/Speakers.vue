@@ -23,7 +23,7 @@
                 <img src="../../assets/img/svg/speakers/iprof.svg" alt="Places">
             </div>
             <div class="speakers_wrap-places-item">
-                <!-- <img src="../../assets/img/svg/speakers/" alt="Places"> -->
+                <img src="../../assets/img/svg/speakers/go.png" alt="Places">
             </div>
             <div class="speakers_wrap-places-item">
                 <img src="../../assets/img/svg/speakers/gdg-bishkek.svg" alt="Places">

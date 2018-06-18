@@ -1,7 +1,7 @@
 <template>
   <section id="how-it-work" class="how-it-work">
     <div class="how-it-work_wrap">
-      <h2>Как мы это делаем?</h2>
+      <h2 class="sec-title">Как мы это делаем?</h2>
       <p>Мы верим в полную прозрачность работы, профессионализм и в наличие четких процессов</p>
       <div class="how-it-work_wrap-content">
         <div class="container">
