@@ -800,3 +800,55 @@
         }
     }
 }
+// ------------------ Contacts ------------------- //
+.contacts {
+    background-color: #242424;
+    padding: 120px 0 60px;
+    &-wrap {
+        h2 {
+            color: #fff;
+        }
+        &_list {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 75px;
+            &-item {
+                h5 {
+                    line-height: 2;
+                    letter-spacing: 0.1px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-family: 'MADEEvolveSans-bold', sans-serif;
+                    color: rgba(255, 255, 255, 0.6);
+                    margin-bottom: 18px;
+                }
+                p {
+                    font-size: 20px;
+                    font-family: 'MADEEvolveSans-regular', sans-serif;
+                    line-height: 1.35;
+                    letter-spacing: normal;
+                    color: #ffffff;
+                }
+                a {
+                    font-size: 20px;
+                    font-family: 'MADEEvolveSans-regular', sans-serif;
+                    line-height: 1.35;
+                    letter-spacing: -0.4px;
+                    text-align: left;
+                    color: #ffffff;
+                    text-decoration: none;
+                }
+            }
+            .phone-mail {
+                a {
+                    margin-right: 80px;
+                }
+            }
+            .social-icons {
+                a {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}

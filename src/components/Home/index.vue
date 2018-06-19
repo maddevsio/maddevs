@@ -8,6 +8,7 @@
     <Partners />
     <OpenSource />
     <Speakers />
+    <Contacts />
   </main>
 </template>
 
@@ -20,6 +21,7 @@ import Reviews from './Reviews'
 import Partners from './Partners'
 import OpenSource from './OpenSource'
 import Speakers from './Speakers'
+import Contacts from './Contacts'
 
 export default {
   name: 'Home',
@@ -37,6 +39,7 @@ export default {
     'Partners': Partners,
     'OpenSource': OpenSource,
     'Speakers': Speakers,
+    'Contacts': Contacts,
   }
 }
 </script>

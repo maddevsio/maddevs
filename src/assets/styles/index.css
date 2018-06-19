@@ -704,6 +704,42 @@ p {
     text-decoration: none;
     padding: 10px 0; }
 
+.contacts {
+  background-color: #242424;
+  padding: 120px 0 60px; }
+  .contacts-wrap h2 {
+    color: #fff; }
+  .contacts-wrap_list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px; }
+    .contacts-wrap_list-item h5 {
+      line-height: 2;
+      letter-spacing: 0.1px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: 'MADEEvolveSans-bold', sans-serif;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 18px; }
+    .contacts-wrap_list-item p {
+      font-size: 20px;
+      font-family: 'MADEEvolveSans-regular', sans-serif;
+      line-height: 1.35;
+      letter-spacing: normal;
+      color: #ffffff; }
+    .contacts-wrap_list-item a {
+      font-size: 20px;
+      font-family: 'MADEEvolveSans-regular', sans-serif;
+      line-height: 1.35;
+      letter-spacing: -0.4px;
+      text-align: left;
+      color: #ffffff;
+      text-decoration: none; }
+    .contacts-wrap_list .phone-mail a {
+      margin-right: 80px; }
+    .contacts-wrap_list .social-icons a {
+      margin-right: 12px; }
+
 .footer {
   background-color: #242424; }
   .footer-wrap {
