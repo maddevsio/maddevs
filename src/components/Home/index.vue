@@ -8,6 +8,8 @@
     <Partners />
     <OpenSource />
     <Speakers />
+    <Press />
+    <Associations />
     <Contacts />
   </main>
 </template>
@@ -22,6 +24,8 @@ import Partners from './Partners'
 import OpenSource from './OpenSource'
 import Speakers from './Speakers'
 import Contacts from './Contacts'
+import Press from './Press'
+import Associations from './Associations'
 
 export default {
   name: 'Home',
@@ -40,6 +44,8 @@ export default {
     'OpenSource': OpenSource,
     'Speakers': Speakers,
     'Contacts': Contacts,
+    'Press': Press,
+    'Associations': Associations,
   }
 }
 </script>

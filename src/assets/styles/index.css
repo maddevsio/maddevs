@@ -653,56 +653,104 @@ p {
           color: #595959;
           font-family: 'MADEEvolveSans-regular', sans-serif; }
 
-.speakers_wrap {
-  text-align: center; }
-  .speakers_wrap h2 {
-    max-width: 490px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 24px;
-    font-family: 'MADEEvolveSans-medium', sans-serif;
-    font-weight: normal;
-    line-height: 1.42; }
-  .speakers_wrap-places {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .speakers_wrap-places-item {
-      width: 16%;
+.speakers {
+  padding-bottom: 160px; }
+  .speakers_wrap {
+    text-align: center; }
+    .speakers_wrap h2 {
+      max-width: 490px;
+      margin: 0 auto;
       text-align: center;
-      margin: 60px 0; }
-  .speakers_wrap-people {
+      font-size: 24px;
+      font-family: 'MADEEvolveSans-medium', sans-serif;
+      font-weight: normal;
+      line-height: 1.42; }
+    .speakers_wrap-places {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .speakers_wrap-places-item {
+        width: 16%;
+        text-align: center;
+        margin: 60px 0; }
+    .speakers_wrap-people {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 30px; }
+      .speakers_wrap-people-item {
+        width: 19.3%;
+        position: relative;
+        margin: 5px; }
+        .speakers_wrap-people-item img {
+          width: 100%;
+          object-fit: cover; }
+        .speakers_wrap-people-item::before {
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: all .2s ease; }
+        .speakers_wrap-people-item:hover::before {
+          content: '';
+          background-color: rgba(0, 0, 0, 0.5); }
+    .speakers_wrap a {
+      font-size: 13px;
+      font-family: 'MADEEvolveSans-bold', sans-serif;
+      color: #ec2227;
+      line-height: 1.85;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px 0; }
+
+.press {
+  background-color: #fffdf9;
+  padding: 120px 0 80px; }
+  .press-wrap {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 30px; }
-    .speakers_wrap-people-item {
-      width: 19.3%;
-      position: relative;
-      margin: 5px; }
-      .speakers_wrap-people-item img {
-        width: 100%;
-        object-fit: cover; }
-      .speakers_wrap-people-item::before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: all .2s ease; }
-      .speakers_wrap-people-item:hover::before {
-        content: '';
-        background-color: rgba(0, 0, 0, 0.5); }
-  .speakers_wrap a {
-    font-size: 13px;
-    font-family: 'MADEEvolveSans-bold', sans-serif;
-    color: #ec2227;
-    line-height: 1.85;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 0; }
+    flex-direction: column;
+    align-items: center; }
+    .press-wrap h2 {
+      margin-bottom: 60px; }
+    .press-wrap a {
+      font-size: 14px;
+      font-family: 'MADEEvolveSans-regular', sans-serif;
+      line-height: 1;
+      color: #ec2227;
+      margin: 40px 0 18px; }
+    .press-wrap p {
+      max-width: 410px;
+      text-align: center;
+      font-size: 16px;
+      font-family: 'MADEEvolveSans-regular', sans-serif;
+      color: #000;
+      color: #000;
+      line-height: 1.5; }
+      .press-wrap p span {
+        font-family: 'MADEEvolveSans-medium', sans-serif; }
+
+.associations {
+  padding: 160px 0 170px; }
+  .associations-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .associations-wrap h3 {
+      line-height: 1.42;
+      font-size: 24px;
+      font-family: 'MADEEvolveSans-medium', sans-serif;
+      font-weight: normal;
+      color: #2c1c1c; }
+    .associations-wrap_list {
+      width: 100%;
+      max-width: 870px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 75px; }
 
 .contacts {
   background-color: #242424;
