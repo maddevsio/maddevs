@@ -721,7 +721,8 @@ p {
           height: 100%;
           position: absolute;
           top: 0;
-          left: 0; }
+          left: 0;
+          transition: all .3s ease; }
         .speakers_wrap-people-item:hover::before {
           content: '';
           background-color: rgba(0, 0, 0, 0.7); }
