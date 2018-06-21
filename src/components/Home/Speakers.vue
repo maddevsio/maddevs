@@ -44,48 +44,123 @@
         <div class="speakers_wrap-people">
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/1.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/2.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/3.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/4.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/5.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/6.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/7.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/8.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/9.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/10.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/11.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/12.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/13.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/14.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/15.jpg" alt="People">
+                <!-- Hover info block -->
+                <div class="people-info-block">
+                    <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
+                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                </div>
             </div>
         </div>
         <a href="#">

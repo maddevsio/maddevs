@@ -765,9 +765,42 @@
             justify-content: center;
             margin-bottom: 30px;
             &-item {
-                width: 19.3%;
+                width: 256px;
+                height: 192px;
                 position: relative;
                 margin: 5px;
+                overflow: hidden;
+                .people-info-block {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    opacity: 0;
+                    transition: all .8s ease;
+                    visibility: hidden;
+                    img {
+                        width: 110px;
+                        height: auto;
+                        transform: translate(50px, 50px);
+                        transition: all .4s ease;
+                        opacity: 0;
+                    }
+                    p {
+                        color: #fff;
+                        line-height: 1.3;
+                        letter-spacing: 0.2px;
+                        font-family: 'MADEEvolveSans-regular', sans-serif;
+                        font-size: 20px;
+                        text-align: left;
+                        margin-top: 10px;
+                        transition: all .3s ease;
+                        transform: translate(50px, 50px);
+                        opacity: 0;
+                    }
+                }
                 img {
                     width: 100%;
                     object-fit: cover;
@@ -779,12 +812,23 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    transition: all .2s ease;
                 }
                 &:hover {
                     &::before {
                         content: '';
-                        background-color: rgba(0, 0, 0, 0.5);
+                        background-color: rgba(0, 0, 0, 0.7);
+                    }
+                    .people-info-block {
+                        opacity: 1;
+                        visibility: visible;
+                        img {
+                            transform: translate(0, 0);
+                            opacity: 1;
+                        }
+                        p {
+                            transform: translate(0, 0);
+                            opacity: 1;
+                        }
                     }
                 }
             }
