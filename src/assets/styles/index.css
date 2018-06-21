@@ -679,9 +679,39 @@ p {
       justify-content: center;
       margin-bottom: 30px; }
       .speakers_wrap-people-item {
-        width: 19.3%;
+        width: 256px;
+        height: 192px;
         position: relative;
-        margin: 5px; }
+        margin: 5px;
+        overflow: hidden; }
+        .speakers_wrap-people-item .people-info-block {
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          box-sizing: border-box;
+          opacity: 0;
+          transition: all .8s ease;
+          visibility: hidden; }
+          .speakers_wrap-people-item .people-info-block img {
+            width: 110px;
+            height: auto;
+            transform: translate(50px, 50px);
+            transition: all .4s ease;
+            opacity: 0; }
+          .speakers_wrap-people-item .people-info-block p {
+            color: #fff;
+            line-height: 1.3;
+            letter-spacing: 0.2px;
+            font-family: 'MADEEvolveSans-regular', sans-serif;
+            font-size: 20px;
+            text-align: left;
+            margin-top: 10px;
+            transition: all .3s ease;
+            transform: translate(50px, 50px);
+            opacity: 0; }
         .speakers_wrap-people-item img {
           width: 100%;
           object-fit: cover; }
@@ -691,11 +721,19 @@ p {
           height: 100%;
           position: absolute;
           top: 0;
-          left: 0;
-          transition: all .2s ease; }
+          left: 0; }
         .speakers_wrap-people-item:hover::before {
           content: '';
-          background-color: rgba(0, 0, 0, 0.5); }
+          background-color: rgba(0, 0, 0, 0.7); }
+        .speakers_wrap-people-item:hover .people-info-block {
+          opacity: 1;
+          visibility: visible; }
+          .speakers_wrap-people-item:hover .people-info-block img {
+            transform: translate(0, 0);
+            opacity: 1; }
+          .speakers_wrap-people-item:hover .people-info-block p {
+            transform: translate(0, 0);
+            opacity: 1; }
     .speakers_wrap a {
       font-size: 13px;
       font-family: 'MADEEvolveSans-bold', sans-serif;
