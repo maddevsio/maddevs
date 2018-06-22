@@ -7,10 +7,20 @@
             justify-content: space-between;
             align-items: flex-start;
             padding: 60px 0 50px;
-            &-links {
+            &-row {
+                width: 50%;
                 display: flex;
-                flex-direction: column;
-                align-items: flex-start;
+                justify-content: space-between;
+            }
+            &-links {
+                width: 33%;
+                padding: 0 10px;
+                box-sizing: border-box;
+                .footer-links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
                 h5 {
                     text-transform: uppercase;
                     line-height: 1.6;
@@ -40,6 +50,61 @@
             font-size: 14px;
             font-family: 'MADEEvolveSans-regular', sans-serif;
             color: #ffffff;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        &-wrap {
+            &_list {
+                flex-direction: column;
+                &-row {
+                    width: 100%;
+                    justify-content: space-between;
+                    &:first-child {
+                        margin-bottom: 50px;
+                    }
+                }
+                &-links {
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .footer {
+        &-wrap {
+            &_list {
+                flex-direction: column;
+                &-row {
+                    width: 100%;
+                    flex-direction: column;
+                    &:first-child {
+                        margin-bottom: 50px;
+                    }
+                }
+                &-links {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 40px;
+                    .footer-links {
+                        display: block;
+                    }
+                    h5 {
+                        width: 100%;
+                        font-size: 14px;
+                    }
+                    a {
+                        padding: 0 12px;
+                        white-space: nowrap;                    
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
         }
     }
 }
