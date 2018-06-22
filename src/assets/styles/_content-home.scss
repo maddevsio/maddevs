@@ -941,16 +941,29 @@
                     text-decoration: none;
                 }
             }
+            .address {
+                width: 275px;
+            }
             .phone-mail {
+                padding: 0 15px;
+                box-sizing: border-box;
                 a {
                     margin-right: 80px;
                 }
             }
             .social-icons {
+                white-space: nowrap;
                 a {
                     margin-right: 12px;
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
                 }
             }
         }
     }
 }
+
+// Media query for this page
+@import 'media-home';
