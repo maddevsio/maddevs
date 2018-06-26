@@ -863,6 +863,14 @@ p {
     .contacts-wrap_list .phone-mail_wrap a:first-child {
       margin-bottom: 16px; } }
 @media only screen and (max-width: 768px) {
+  .weUse {
+    padding: 160px 0; }
+    .weUse_wrap-list {
+      flex-direction: column; }
+      .weUse_wrap-list-item {
+        width: 100%;
+        margin-top: 60px; }
+
   .contacts-wrap_list {
     flex-wrap: wrap; }
     .contacts-wrap_list-item p {

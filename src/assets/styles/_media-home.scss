@@ -56,6 +56,18 @@
 
 }
 @media only screen and (max-width: 768px) {
+    .weUse {
+      padding: 160px 0;
+      &_wrap {
+        &-list {
+          flex-direction: column;
+          &-item {
+              width: 100%;
+              margin-top: 60px;
+          }
+        }
+      }
+    }
     .contacts {
         &-wrap {
             &_list {
