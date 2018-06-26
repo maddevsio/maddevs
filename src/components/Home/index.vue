@@ -1,16 +1,16 @@
 <template>
   <main class="main">
-    <!-- <Banner />
+    <Banner />
     <HowItWork />
-    <BestPractices /> -->
+    <BestPractices />
     <WeUse />
-    <!-- <Reviews />
-    <Partners /> -->
-    <!-- <OpenSource />
+    <Reviews />
+    <Partners />
+    <OpenSource />
     <Speakers />
     <Press />
     <Associations />
-    <Contacts /> -->
+    <Contacts />
   </main>
 </template>
 
