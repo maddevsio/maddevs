@@ -165,7 +165,7 @@
         </div>
         <a href="#">
             полный список конференций
-            <img src="" alt="Go">
+            <img src="../../assets/img/svg/right.svg" alt="Go">
         </a>
       </div>
     </div>

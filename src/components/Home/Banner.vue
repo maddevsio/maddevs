@@ -61,7 +61,7 @@
             <!-- Item -->
             <div class="banner-slack_content-item">
               <div class="banner-slack_content-item_group">
-                <img src="" alt="Group icon">
+                <img src="../../assets/img/svg/openSource/avatar-md.svg" alt="Group icon">
                 <h5>Mad Devs</h5>
                 <div class="timestemp">
                   9:25 AM
@@ -72,31 +72,31 @@
               </p>
               <div class="banner-slack_content-item-status">
                 <div class="banner-slack_content-item-status-item">
-                  <img src="" alt="">
+                  <img src="../../assets/img/png/banner/briefcase_1f4bc.png" alt="">
                   0
                 </div>
                 <div class="banner-slack_content-item-status-item">
-                  <img src="" alt="">
+                  <img src="../../assets/img/png/banner/chart-with-upwards-trend_1f4c8.png" alt="">
                   0
                 </div>
                 <div class="banner-slack_content-item-status-item">
-                  <img src="" alt="">
+                  <img src="../../assets/img/png/banner/money-bag_1f4b0.png" alt="">
                   0
                 </div>
                 <div class="banner-slack_content-item-status-item">
-                  <img src="" alt="">
+                  <img src="../../assets/img/png/banner/banknote-with-dollar-sign_1f4b5.png" alt="">
                   0
                 </div>
                 <div class="banner-slack_content-item-status-item">
-                  <img src="" alt="">
+                  <img src="../../assets/img/png/banner/public-address-loudspeaker_1f4e2.png" alt="">
                   0
                 </div>
                 <div class="banner-slack_content-item-status-item">
-                  <img src="" alt="">
+                  <img src="../../assets/img/png/banner/rocket_1f680.png" alt="">
                   0
                 </div>
                 <div class="banner-slack_content-item-status-item">
-                  <img src="" alt="">
+                  <img src="../../assets/img/png/banner/gem-stone_1f48e.png" alt="">
                   0
                 </div>
               </div>
@@ -106,7 +106,7 @@
             <!-- Item -->
             <div class="banner-slack_content-item">
               <div class="banner-slack_content-item_group">
-                <img src="" alt="Group icon">
+                <img src="../../assets/img/svg/openSource/avatar-md.svg" alt="Group icon">
                 <h5>Mad Devs</h5>
                 <div class="timestemp">
                   9:25 AM
@@ -117,31 +117,27 @@
               </p>
               <div class="banner-slack_content-item-status">
                 <div class="banner-slack_content-item-status-item">
-                  <img src="" alt="">
+                  <img src="../../assets/img/png/banner/i-love-you-hand-sign_1f91f.png" alt="">
                   0
                 </div>
                 <div class="banner-slack_content-item-status-item">
-                  <img src="" alt="">
+                  <img src="../../assets/img/png/banner/ok-hand-sign_1f44c.png" alt="">
                   0
                 </div>
                 <div class="banner-slack_content-item-status-item">
-                  <img src="" alt="">
+                  <img src="../../assets/img/png/banner/flexed-biceps_1f4aa.png" alt="">
                   0
                 </div>
                 <div class="banner-slack_content-item-status-item">
-                  <img src="" alt="">
+                  <img src="../../assets/img/png/banner/robot-face_1f916.png" alt="">
                   0
                 </div>
                 <div class="banner-slack_content-item-status-item">
-                  <img src="" alt="">
+                  <img src="../../assets/img/png/banner/nerd-face_1f913.png" alt="">
                   0
                 </div>
                 <div class="banner-slack_content-item-status-item">
-                  <img src="" alt="">
-                  0
-                </div>
-                <div class="banner-slack_content-item-status-item">
-                  <img src="" alt="">
+                  <img src="../../assets/img/png/banner/first-place-medal_1f947.png" alt="">
                   0
                 </div>
               </div>
@@ -151,6 +147,9 @@
         </div>
       </div>
     </div>
+    <button id="go-down">
+      <img src="../../assets/img/svg/down.svg" alt="Go down">
+    </button>
   </section>
 </template>
 
