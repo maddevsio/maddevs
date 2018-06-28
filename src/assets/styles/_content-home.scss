@@ -60,7 +60,18 @@
     }
 }
 
+#go-down {
+    position: absolute;
+    bottom: -130px;
+    left: 60px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
 .banner {
+    position: relative;
     &-wrap {
         display: flex;
         justify-content: space-between;
@@ -228,6 +239,10 @@
                 &_group {
                     display: flex;
                     justify-content: flex-start;
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
                     h5 {
                         font-size: 14px;
                         font-family: 'OpenSans-Bold', sans-serif;
@@ -248,6 +263,7 @@
                     font-family: 'OpenSans-Regular', sans-serif;
                     line-height: 1.59;
                     margin: 4px 0 15px;
+                    padding-left: 35px;
                     span {
                         font-family: 'OpenSans-SemiBold', sans-serif;
                         background-color: #fff6cd;
@@ -257,12 +273,22 @@
                 }
                 &-status {
                     display: flex;
+                    padding-left: 35px;
                     &-item {
+                        display: flex;
+                        align-items: center;
                         margin-right: 8px;
                         padding: 4px;
                         border-radius: 5px;
                         border: solid 1px #e8e8e8;
+                        color: #717274;
+                        font-size: 13px;
                         cursor: pointer;
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 5px;
+                        }
                     }
                 }
             }
@@ -842,6 +868,10 @@
             text-transform: uppercase;
             text-decoration: none;
             padding: 10px 0;
+            img {
+                width: 12px;
+                margin-left: 5px;
+            }
         }
     }
 }
