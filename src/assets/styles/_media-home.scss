@@ -1,4 +1,71 @@
+@media only screen and (max-width: 1200px) {
+    .open-source {
+        &_wrap {
+            &-projects {
+                &_list {
+                    &-item {
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 1024px) {
+    .open-source {
+        &_wrap {
+            &-github {
+                .github-link {
+                    width: 100%;
+                    margin-bottom: 60px;
+                    &_desc {
+                        a {
+                            font-size: 18px;
+                            margin: 0;
+                        }
+                    }
+                }
+                .github-info {
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+            &-projects {
+                &_list {
+                    margin-left: 60px;
+                    margin-right: 60px;
+                    &-item {
+                        height: 350px;
+                        .projects-img_wrap {
+                            height: 80px;
+                            margin-bottom: 50px;
+                            .op-img-opensourse {
+                                height: 78px;
+                            }
+                            .op-img-madpwa {
+                                height: 27px;
+                            }
+                            .op-img-mlm {
+                                height: 79px;
+                            }
+                            .op-img-sf {
+                                height: 92px;
+                            }
+                        }
+                        .projects-desc_wrap {
+                          h4 {
+                            font-size: 20px;
+                          }
+                          p {
+                            font-size: 16px;
+                          }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .contacts {
         &-wrap {
             &_list {
@@ -36,6 +103,58 @@
     }
 }
 @media only screen and (max-width: 992px) {
+    .open-source {
+        &_wrap {
+            &-projects {
+                &_list {
+                    flex-wrap: wrap;
+                    margin-left: 0;
+                    margin-right: 0;
+                    border: 0;
+                    .op-proj-2 {
+                        border-bottom-width: 0;
+                    }
+                    .op-proj-3 {
+                        border-right-width: 0;
+                    }
+                    &-item {
+                        width: 50%;
+                        height: 450px;
+                        padding: 0 72px;
+                        box-sizing: border-box;
+                        border: 1px solid #e8e8e8;
+                        &:first-child {
+                            border-right-width: 0;
+                        }
+                        .projects-img_wrap {
+                            height: 100px;
+                            margin-bottom: 60px;
+                            .op-img-opensourse {
+                                height: 100px;
+                            }
+                            .op-img-madpwa {
+                                height: 36px;
+                            }
+                            .op-img-mlm {
+                                height: 100px;
+                            }
+                            .op-img-sf {
+                                height: 100px;
+                            }
+                        }
+                        .projects-desc_wrap {
+                          h4 {
+                            font-size: 22px;
+                          }
+                          p {
+                            font-size: 20px;
+                          }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .partners {
         &_wrap {
             &-icons {
@@ -142,7 +261,22 @@
 @media only screen and (max-width: 680px) {
     .sec-title {
         font-size: 28px;
-    }  
+    } 
+    .open-source {
+        &_wrap {
+            &-github {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            &-projects {
+                &_list {
+                    &-item {
+                        padding: 0 30px;
+                    }
+                }
+            }
+        }
+    }
     .partners {
         &_wrap {
             &-icons {
@@ -203,6 +337,63 @@
 @media only screen and (max-width: 480px) {
     .container {
         margin: 0 16px;
+    }
+    .open-source {
+        &_wrap {
+            &-github {
+                margin-bottom: 60px;
+                h3 {
+                    font-size: 20px;
+                }
+                .github-link {
+                    margin-bottom: 20px;
+                    img {
+                        width: 56px;
+                        max-width: 56px;
+                        height: 56px;
+                        max-height: 56px;
+                    }
+                    &_desc {
+                        h5 {
+                            font-size: 24px;
+                        }
+                        a {
+                            font-size: 14px;
+                            img {
+                                max-width: 24px;
+                                min-height: 24px;
+                                max-height: 24px;
+                            }
+                        }
+                    }
+                }
+                .github-info {
+                    margin: 0;
+                    margin-top: 30px;
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+            &-projects {
+                &_list {
+                    &-item {
+                        width: 100%;
+                        height: 380px;
+                        box-sizing: border-box;
+                        padding: 0 17px;
+                    }
+                    .projects-desc_wrap {
+                        h4 {
+                            font-size: 22px;
+                        }
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
     }
     .contacts {
         padding: 60px 0 40px;

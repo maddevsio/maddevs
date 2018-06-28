@@ -50,36 +50,36 @@
     <div class="open-source_wrap-projects">
       <h3>Проекты</h3>
       <div class="open-source_wrap-projects_list">
-        <div class="open-source_wrap-projects_list-item">
+        <div class="open-source_wrap-projects_list-item op-proj-1">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/id.svg" alt="IDmatch">
+            <img src="../../assets/img/svg/openSource/id.svg" class="op-img-opensourse" alt="IDmatch">
           </div>
           <div class="projects-desc_wrap">
             <h4>IDmatch</h4>
             <p>Искусственный интеллект идентификации личности</p>
           </div>
         </div>
-        <div class="open-source_wrap-projects_list-item">
+        <div class="open-source_wrap-projects_list-item op-proj-2">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/madpwa.svg" alt="MadPwa">
+            <img src="../../assets/img/svg/openSource/madpwa.svg" class="op-img-madpwa" alt="MadPwa">
           </div>
           <div class="projects-desc_wrap">
             <h4>MADPWA</h4>
             <p>Быстрый, удобный и простой способ создания PWA</p>
           </div>
         </div>
-        <div class="open-source_wrap-projects_list-item">
+        <div class="open-source_wrap-projects_list-item op-proj-3">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/mlm.svg" alt="Mad Location Manager">
+            <img src="../../assets/img/svg/openSource/mlm.svg" class="op-img-mlm" alt="Mad Location Manager">
           </div>
           <div class="projects-desc_wrap">
             <h4>Mad Location Manager</h4>
             <p>Точные и «чистые» данные с GPS-приемников</p>
           </div>
         </div>
-        <div class="open-source_wrap-projects_list-item">
+        <div class="open-source_wrap-projects_list-item op-proj-4">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/sf.svg" alt="Sensor fusion">
+            <img src="../../assets/img/svg/openSource/sf.svg" class="op-img-sf" alt="Sensor fusion">
           </div>
           <div class="projects-desc_wrap">
             <h4>Sensor fusion</h4>
