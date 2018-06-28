@@ -581,24 +581,23 @@
             color: #fff;
         }
         &-icons {
-            margin-top: 80px;
             &_row {
                 width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                &-item-center {
-                    margin: 0 180px;
+                flex-wrap: wrap;
+                a {
+                    width: 20%;
+                    margin-top: 100px;
+                    text-align: center;
                 }
-            }
-            .row-center {
-                margin: 100px 0;
-            }
-            .row-bottom {
-                justify-content: center;
             }
             .item-left {
                 text-align: left;
+            }
+            .item-center {
+                text-align: center;
             }
             .item-right {
                 text-align: right;
