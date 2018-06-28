@@ -535,23 +535,22 @@ p {
   padding: 120px 0; }
   .partners_wrap h2 {
     color: #fff; }
-  .partners_wrap-icons {
-    margin-top: 80px; }
-    .partners_wrap-icons_row {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between; }
-      .partners_wrap-icons_row-item-center {
-        margin: 0 180px; }
-    .partners_wrap-icons .row-center {
-      margin: 100px 0; }
-    .partners_wrap-icons .row-bottom {
-      justify-content: center; }
-    .partners_wrap-icons .item-left {
-      text-align: left; }
-    .partners_wrap-icons .item-right {
-      text-align: right; }
+  .partners_wrap-icons_row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .partners_wrap-icons_row a {
+      width: 20%;
+      margin-top: 100px;
+      text-align: center; }
+  .partners_wrap-icons .item-left {
+    text-align: left; }
+  .partners_wrap-icons .item-center {
+    text-align: center; }
+  .partners_wrap-icons .item-right {
+    text-align: right; }
 
 .open-source {
   padding: 160px 0; }
@@ -857,6 +856,14 @@ p {
       width: 24px;
       height: 24px; } }
 @media only screen and (max-width: 992px) {
+  .partners_wrap-icons_row a {
+    width: 33%;
+    text-align: center !important; }
+  .partners_wrap-icons_row .last-icon {
+    width: 100%; }
+  .partners_wrap-icons_row .partner-icon-fake {
+    display: none; }
+
   .contacts-wrap_list .phone-mail_wrap {
     display: flex;
     flex-direction: column; }
@@ -902,6 +909,23 @@ p {
         .contacts-wrap_list .social-icons_list a img {
           width: 36px;
           height: 36px; } }
+@media only screen and (max-width: 680px) {
+  .sec-title {
+    font-size: 28px; }
+
+  .partners_wrap-icons_row a {
+    width: 50%;
+    margin-top: 80px;
+    text-align: center !important; }
+    .partners_wrap-icons_row a img {
+      height: 24px; }
+  .partners_wrap-icons_row .scentomania {
+    width: 100%;
+    order: 1; }
+    .partners_wrap-icons_row .scentomania img {
+      height: 15px; }
+  .partners_wrap-icons_row .last-icon {
+    width: 50%; } }
 @media only screen and (max-width: 630px) {
   .contacts-wrap_list .address {
     width: 50%; }

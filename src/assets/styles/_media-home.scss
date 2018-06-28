@@ -36,6 +36,24 @@
     }
 }
 @media only screen and (max-width: 992px) {
+    .partners {
+        &_wrap {
+            &-icons {
+                &_row {
+                    a {
+                        width: 33%;
+                        text-align: center !important;
+                    }
+                    .last-icon {
+                        width: 100%;
+                    }
+                    .partner-icon-fake {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
     .contacts {
         &-wrap {
             &_list {
@@ -119,6 +137,38 @@
         }
     }
 
+}
+
+@media only screen and (max-width: 680px) {
+    .sec-title {
+        font-size: 28px;
+    }  
+    .partners {
+        &_wrap {
+            &-icons {
+                &_row {
+                    a {
+                        width: 50%;
+                        margin-top: 80px;
+                        text-align: center !important;
+                        img {
+                            height: 24px;
+                        }
+                    }
+                    .scentomania {
+                        width: 100%;
+                        order: 1;
+                        img {
+                            height: 15px;
+                        }
+                    }
+                    .last-icon {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width: 630px) {
     .contacts {
