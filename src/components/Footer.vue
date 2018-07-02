@@ -1,10 +1,8 @@
 <template>
   <footer id="footer" class="footer">
     <div class="container">
-
       <div class="footer-wrap">
         <div class="footer-wrap_list">
-          <div class="footer-wrap_list-row">
             <div class="footer-wrap_list-links">
               <h5>Услуги</h5>
               <div class="footer-links">
@@ -13,43 +11,30 @@
                 <a href="#">Мобильные приложения</a>
                 <a href="#">UI/UX дизайн</a>
                 <a href="#">Управление проектами</a>
-                <a href="#">ИТ консалтинг</a>
               </div>
             </div>
             <div class="footer-wrap_list-links">
               <h5>Портфолио</h5>
               <div class="footer-links">
-                <a href="#">Проекты</a>
-                <a href="#">Партнеры</a>
                 <a href="#">Success stores</a>
-                <a href="#">Домашние проекты Open source</a>
+                <a href="#">Партнеры</a>
+                <a href="#">Open source проекты</a>
               </div>
             </div>
-            <div class="footer-wrap_list-links">
-              <h5>Блог</h5>
-              <div class="footer-links">
-                <a href="#">Publications</a>
-                <a href="#">Projects</a>
-                <a href="#">Dev Tips & Tricks</a>
-                <a href="#">Events</a>
-                <a href="#">Career</a>
-              </div>
-            </div>
-          </div>
-          <div class="footer-wrap_list-row">
             <div class="footer-wrap_list-links">
               <h5>о нас</h5>
               <div class="footer-links">
-                <a href="#">Ценности</a>
-                <a href="#">Видение</a>
-                <a href="#">Миссия</a>
-                <a href="#">Процессы</a>
-                <a href="#">Команда</a>
+                <a href="#">Кто мы</a>
+                <a href="#">Пресса</a>
+                <a href="#">Конференции</a>
+                <a href="#">Ассоциации</a>
+                <a href="#">Блог</a>
               </div>
             </div>
             <div class="footer-wrap_list-links">
               <h5>как работаем</h5>
               <div class="footer-links">
+                <a href="#">Процессы работы</a>
                 <a href="#">Менеджмент команд</a>
                 <a href="#">Коммуникация</a>
                 <a href="#">Практики разработки</a>
@@ -62,12 +47,13 @@
 
                 <a href="#">Открытые вакансии</a>
                 <a href="#">Стажировка</a>
-                <a href="#">Ищем таланты</a>
               </div>
+            </div>
+            <div class="footer-wrap_list-links footer-wrap_list-links--fake">
+              <!-- Fake -->
             </div>
           </div>
         </div>
-      </div>
       <div class="footer-copyright">
         <p>© Mad Devs 🤘 2018</p>
       </div>
