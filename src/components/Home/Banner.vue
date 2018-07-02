@@ -55,7 +55,11 @@
           </div>
           <div class="banner-slack_content">
             <div class="banner-slack_content-title">
+              <img src="../../assets/img/svg/slack.svg" alt="Slack">
               <h5>#какую проблему это решает?</h5>
+              <button class="open-slack-menu">
+                <span></span>
+              </button>
             </div>
 
             <!-- Item -->
