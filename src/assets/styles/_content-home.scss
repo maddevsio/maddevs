@@ -1,12 +1,12 @@
 //---------------- Banner -----------------//
 #banner {
   width: 100%;
-  height: 610px;
+  min-height: 610px;
   position: relative;
   &::before {
     content: '';
     width: 100%;
-    height: 100%;
+    height: 610px;
     position: absolute;
     top: 0;
     left: 0;
@@ -47,27 +47,24 @@
 
 .video-background {
   width: 100%;
-  height: 100%;
+  height: 610px;
   overflow: hidden;
   position: absolute;
   z-index: -2;
   video {
     position: absolute;
     left: 0;
-    bottom: 0;
-    // transform: translate(-50%, -50%);
+    bottom: 0; // transform: translate(-50%, -50%);
     z-index: -2;
   }
 }
 
 #go-down {
-  position: absolute;
-  bottom: -130px;
-  left: 60px;
+  margin-left: 65px;
   background-color: transparent;
   border: 0;
-  cursor: pointer;
   z-index: 2;
+  margin-top: -65px;
 }
 
 .banner {
@@ -331,7 +328,6 @@
             color: #717274;
             font-size: 13px;
             cursor: pointer;
-            font-family: 'OpenSans-Regular', sans-serif;
             img {
               width: 20px;
               height: 20px;
@@ -369,17 +365,16 @@
       background-color: #fffdf9;
       padding: 120px 0;
       margin-top: 160px;
-      .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       &-title {
         width: 525px;
         font-size: 32px;
         line-height: 1.38;
         font-family: 'MADEEvolveSans-regular', sans-serif;
         font-weight: normal;
+        margin-right: 30px;
         span {
           font-family: 'MADEEvolveSans-medium', sans-serif;
           border-radius: 3px;
@@ -456,7 +451,6 @@
           border-radius: 100%;
           margin-right: 5px;
         }
-
         .p-hide {
           width: 8px;
           height: 8px;
@@ -464,7 +458,6 @@
           border-radius: 100%;
           margin-right: 5px;
         }
-
         .p-full {
           width: 8px;
           height: 8px;
@@ -475,6 +468,7 @@
     }
     &-title {
       width: 525px;
+      margin-left: 30px;
       p {
         color: #3b3b3b;
         font-size: 14px;
@@ -813,6 +807,9 @@
 // ----------------- Speakers ------------------ //
 .speakers {
   padding-bottom: 160px;
+  .container {
+      padding: 0;
+  }
   &_wrap {
     text-align: center;
     h2 {
@@ -857,7 +854,7 @@
         @media screen and (max-width: 819px) {
           display: block;
         }
-        @media screen and (max-width: 540px){
+        @media screen and (max-width: 540px) {
           display: none;
           &:nth-child(-n+6) {
             display: block;

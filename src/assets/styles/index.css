@@ -11,11 +11,15 @@ p {
   margin: 0;
   padding: 0; }
 
+main {
+  overflow: hidden; }
+
 * {
   outline: none !important; }
 
 .container {
-  margin: 0 60px; }
+  max-width: 1320px;
+  margin: auto; }
 
 .sec-title {
   width: 100%;
@@ -356,7 +360,8 @@ p {
             border: solid 1px #e8e8e8;
             color: #717274;
             font-size: 13px;
-            cursor: pointer; }
+            cursor: pointer;
+            font-family: 'OpenSans-Regular', sans-serif; }
             .banner-slack_content-item-status-item img {
               width: 20px;
               height: 20px;
@@ -737,19 +742,46 @@ p {
     .speakers_wrap-places {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between; }
+      justify-content: space-between;
+      overflow: hidden;
+      height: auto;
+      transition: all .4s; }
       .speakers_wrap-places-item {
         width: 16%;
+        min-width: 140px;
         text-align: center;
-        margin: 60px 0; }
+        margin: 60px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .speakers_wrap-places-item img {
+          max-width: 100%;
+          height: 100%;
+          object-fit: contain; }
+        @media screen and (max-width: 992px) and (min-width: 540px) {
+          .speakers_wrap-places-item {
+            display: none;
+            width: 20%; }
+            .speakers_wrap-places-item img {
+              max-width: 115px; }
+            .speakers_wrap-places-item:nth-child(-n+10) {
+              display: block; } }
+        @media screen and (max-width: 819px) {
+          .speakers_wrap-places-item {
+            display: block; } }
+        @media screen and (max-width: 540px) {
+          .speakers_wrap-places-item {
+            display: none; }
+            .speakers_wrap-places-item:nth-child(-n+6) {
+              display: block; } }
     .speakers_wrap-people {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin-bottom: 30px; }
+      margin: 0 -10px 30px; }
       .speakers_wrap-people-item {
-        width: 256px;
-        height: 192px;
+        max-width: 256px;
+        max-height: 192px;
         position: relative;
         margin: 5px;
         overflow: hidden; }
@@ -804,6 +836,28 @@ p {
           .speakers_wrap-people-item:hover .people-info-block p {
             transform: translate(0, 0);
             opacity: 1; }
+        @media screen and (max-width: 1340px) {
+          .speakers_wrap-people-item {
+            width: 218px;
+            height: auto; } }
+        @media screen and (max-width: 1120px) and (min-width: 680px) {
+          .speakers_wrap-people-item {
+            display: none; }
+            .speakers_wrap-people-item:nth-child(-n+12) {
+              display: block; } }
+        @media screen and (max-width: 680px) {
+          .speakers_wrap-people-item {
+            display: none;
+            width: 50%;
+            height: auto; }
+            .speakers_wrap-people-item:nth-child(-n+6) {
+              display: block; } }
+        @media screen and (max-width: 520px) {
+          .speakers_wrap-people-item {
+            display: none;
+            width: calc(50% - 10px); }
+            .speakers_wrap-people-item:nth-child(-n+8) {
+              display: block; } }
     .speakers_wrap a {
       font-size: 13px;
       font-family: 'MADEEvolveSans-bold', sans-serif;
