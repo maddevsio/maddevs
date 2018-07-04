@@ -1,32 +1,40 @@
 body {
-    margin: 0;
-    padding: 0;
-    min-width: 320px;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
 }
 
 h1, h2, h3, h4, h5, h5 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
+main {
+  overflow: hidden;
+}
+
 * {
   outline: none !important;
 }
 
 //----------- Base classes ------------ //
 .container {
-  margin: 0 60px;
+  max-width: 1320px;
+  margin: auto;
 }
+
 .sec-title {
   width: 100%;
   font-family: 'MADEEvolveSans-bold';
   font-size: 44px;
   text-align: center;
 }
+
 //----------- End Base classes ------------ //
 
 // #region Fonts
@@ -34,14 +42,17 @@ p {
   font-family: 'MADEEvolveSans-light';
   src: url('../fonts/MADEEvolveSans-light.otf') format('truetype');
 }
+
 @font-face {
   font-family: 'MADEEvolveSans-bold';
   src: url('../fonts/MADEEvolveSans-bold.otf') format('truetype');
 }
+
 @font-face {
   font-family: 'MADEEvolveSans-regular';
   src: url('../fonts/MADEEvolveSans-regular.otf') format('truetype');
 }
+
 @font-face {
   font-family: 'MADEEvolveSans-medium';
   src: url('../fonts/MADEEvolveSans-medium.otf') format('truetype');
@@ -51,10 +62,12 @@ p {
   font-family: 'OpenSans-Bold';
   src: url('../fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'OpenSans-Regular';
   src: url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'OpenSans-SemiBold';
   src: url('../fonts/OpenSans/OpenSans-SemiBold.ttf') format('truetype');
