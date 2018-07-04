@@ -43,6 +43,25 @@
             }
         }
     }
+    .how-it-work {
+        padding: 160px 0 0; 
+        &_wrap {
+            &-content {
+                &-slider {
+                    min-width: 437px;
+                    height: 264px;
+                }   
+            }
+        }
+    }
+    .best-practices {
+        &_wrap {
+            &-preview {
+                min-width: 437px;
+                height: 264px;
+            }
+        }
+    }
     .open-source {
         &_wrap {
             &-github {
@@ -224,7 +243,9 @@
 }
 @media only screen and (max-width: 830px) {
     #go-down {
-      display: none;
+      width: 100%;
+      margin: 0;
+      margin-top: 30px;
     }
     .banner {
         &-wrap {
@@ -246,8 +267,48 @@
             }
         }
     }
+    .how-it-work {
+        &_wrap {
+            &-content {
+                flex-direction: column;
+                &-slider {
+                    width: 100%;
+                    height: 400px;
+                    order: 0;
+                }
+                &-title {
+                    width: 100%;
+                    margin: 0;
+                    order: 1;
+                    margin-top: 80px;
+                }
+            }
+        }
+    }
+    .best-practices {
+        &_wrap {
+            flex-direction: column;
+            &-preview {
+                width: 100%;
+                height: 400px; 
+            }
+            &-title {
+                width: 100%;
+                margin: 0;
+                margin-top: 60px;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 768px) {
+    .how-it-work {
+      padding: 80px 0 0;
+      &_wrap {
+            &-content {
+                margin-top: 80px;
+            }
+        }
+    }
     .weUse {
       padding: 160px 0;
       &_wrap {
@@ -423,6 +484,7 @@
 @media only screen and (max-width: 480px) {
     .container {
         margin: 0 16px;
+        padding: 0;
     }
     .banner {
         &-title {
