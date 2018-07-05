@@ -466,6 +466,33 @@
             }
         }
     }
+    .how-it-work {
+        &_wrap {
+            &-content {
+                flex-direction: column;
+                &-slider {
+                    width: 100%;
+                    height: 288px;
+                    order: 0;
+                }
+                &-title {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    .best-practices {
+        &_wrap {
+            flex-direction: column;
+            &-preview {
+                width: 100%;
+                height: 288px; 
+            }
+            &-title {
+                font-size: 26px;
+            }
+        }
+    }
     .contacts {
         &-wrap {
             &_list {
@@ -549,6 +576,34 @@
                 }
             }
         }
+    }
+    .associations {
+        padding: 35px 0 80px;
+        &-wrap {
+            h3 {
+                width: 200px;
+                font-size: 20px;
+                text-align: center;
+            }
+            &_list {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 40px;
+                &-item {
+                    width: 50%;
+                    text-align: center;
+                    &:first-child {
+                        text-align: left;
+                    }
+                    &:nth-child(2) {
+                        text-align: right;
+                    }
+                    &:last-child {
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }   
     }
     .contacts {
         padding: 60px 0 40px;
