@@ -365,9 +365,11 @@
       background-color: #fffdf9;
       padding: 120px 0;
       margin-top: 160px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
       &-title {
         width: 525px;
         font-size: 32px;
@@ -611,8 +613,9 @@
           p {
             font-size: 16px;
             font-family: 'MADEEvolveSans-regular';
-            line-height: 1;
             color: #fff;
+            line-height: 1.43;
+            text-align: left;
             span {
               font-family: 'MADEEvolveSans-bold';
             }
