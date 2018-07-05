@@ -4,9 +4,15 @@
       <div class="associations-wrap">
         <h3>Ассоциации в которых мы состоим</h3>
         <div class="associations-wrap_list">
-          <img src="../../assets/img/svg/associations/pht.svg" alt="">
-          <img src="../../assets/img/svg/associations/kssda.svg" alt="">
-          <img src="../../assets/img/svg/associations/amcham.png" alt="">
+          <div class="associations-wrap_list-item">
+            <img src="../../assets/img/svg/associations/pht.svg" alt="">
+          </div>
+          <div class="associations-wrap_list-item">
+            <img src="../../assets/img/svg/associations/kssda.svg" alt="">
+          </div>
+          <div class="associations-wrap_list-item">
+            <img src="../../assets/img/svg/associations/amcham.png" alt="">
+          </div>
         </div>
       </div>
     </div>
