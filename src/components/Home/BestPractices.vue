@@ -39,9 +39,10 @@ export default {
   },
   methods: {
     calcLineNumber() {
+        let lineHeight = 38;
         function calcLine() {
             const text = document.getElementById('text'),
-                lineCounts = parseInt(text.offsetHeight / 42),
+                lineCounts = parseInt(text.offsetHeight / lineHeight),
                 con = document.getElementById('line-number');
                 con.innerHTML = '';
 
@@ -52,9 +53,22 @@ export default {
             }
         }
         window.addEventListener('resize', function() {
-            calcLine();
+            if (window.innerWidth <= 480) {
+                lineHeight = 28;
+                calcLine();
+            } else {
+                lineHeight = 38;
+                calcLine();
+            }
         });
-        calcLine();
+
+        if (window.innerWidth <= 480) {
+            lineHeight = 28;
+            calcLine();
+        } else {
+            lineHeight = 38;
+            calcLine();
+        }
     },
   },
   mounted() {
