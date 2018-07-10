@@ -175,6 +175,7 @@
                         border: 1px solid #e8e8e8;
                         &:first-child {
                             border-right-width: 0;
+                            border-bottom-width: 0;
                         }
                         .projects-img_wrap {
                             height: 100px;
@@ -576,7 +577,13 @@
             }
         }
     }
+    .open-source_wrap-projects_list-item {
+        border-right-width: 0;
+        border-left-width: 0;
+    }
     .open-source {
+        padding-top: 40px;
+        padding-bottom: 80px;
         &_wrap {
             &-github {
                 margin-bottom: 60px;
@@ -660,6 +667,12 @@
                 }
             }
         }   
+    }
+    .speakers {
+        padding-bottom: 60px;
+    }
+    .press {
+        padding-top: 80px;
     }
     .contacts {
         padding: 60px 0 40px;
