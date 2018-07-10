@@ -43,13 +43,13 @@ export default {
         function calcLine() {
             const text = document.getElementById('text'),
                 lineCounts = parseInt(text.offsetHeight / lineHeight),
-                con = document.getElementById('line-number');
-                con.innerHTML = '';
+                container = document.getElementById('line-number');
+                container.innerHTML = '';
 
             for (var i = 1; i <= lineCounts; i++) {
                 var elem = document.createElement('span');
                 elem.innerHTML = i;
-                con.appendChild(elem);
+                container.appendChild(elem);
             }
         }
         window.addEventListener('resize', function() {
@@ -64,6 +64,9 @@ export default {
 
         if (window.innerWidth <= 480) {
             lineHeight = 28;
+            calcLine();
+        } if (window.innerWidth > 1024) {
+            lineHeight = 45;
             calcLine();
         } else {
             lineHeight = 38;

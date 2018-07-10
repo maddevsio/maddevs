@@ -190,6 +190,8 @@ export default {
         vidRescale();
       };
 
+      vidRescale();
+
       function onPlayerReady(){
         tv.loadVideoById(vid[currVid]);
         tv.mute();
