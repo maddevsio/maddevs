@@ -1,13 +1,17 @@
 <template>
   <section id="banner" class="banner">
     <div class="video-background">
-      <div class="video">
-          <div class="screen mute" id="video"></div>
-      </div>
+      <!--<div class="video">-->
+          <!--<div class="screen mute" id="video"></div>-->
+      <!--</div>-->
+      <video autoplay muted loop id="myVideo">
+        <source src="../../assets/media/Mad Devs Working Process.mp4" type="video/mp4">
+        <!--<source src="../../assets/media/videoplayback.webm" type='video/webm; codecs="vp8, vorbis"' />-->
+      </video>
     </div>
     <div class="container">
       <div class="banner-wrap">
-        <div class="banner-title">
+        <div class="banner-title">`
           <h1>Формируем удаленные технические команды из профессионалов для ваших стартапов</h1>
         </div>
         <div class="banner-slack">
@@ -170,7 +174,7 @@ export default {
       let tv, playerDefaults = {autoplay: 1, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 0, iv_load_policy: 3};
       // var tv, playerDefaults = {autoplay: 1, loop: 1};
       tv = new YT.Player('video', {events: {'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange}, playerVars: playerDefaults});
-      
+
       function vidRescale(){
         var w = window.innerWidth + 200,
             h = window.innerHeight + 200;
@@ -205,7 +209,7 @@ export default {
           if(currVid === vid.length - 1){
             currVid = 0;
           } else {
-            currVid++;  
+            currVid++;
           }
           tv.loadVideoById(vid[currVid]);
           tv.seekTo(vid[currVid].startSeconds);

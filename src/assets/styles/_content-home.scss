@@ -52,9 +52,13 @@
   position: absolute;
   z-index: -2;
   video {
+    width: 100%;
     position: absolute;
     left: 0;
-    bottom: 0; // transform: translate(-50%, -50%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     z-index: -2;
   }
 }
