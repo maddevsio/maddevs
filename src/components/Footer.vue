@@ -55,7 +55,7 @@
           </div>
         </div>
       <div class="footer-copyright">
-        <p>© Mad Devs 🤘 2018</p>
+        <p>© Mad Devs <img src="../assets/img/png/banner/i-love-you-hand-sign_1f91f.png" alt=""> 2018</p>
       </div>
     </div>
   </footer>
