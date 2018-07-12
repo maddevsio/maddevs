@@ -888,10 +888,9 @@
           transition: all .8s ease;
           visibility: hidden;
           img {
-            width: 110px;
+            width: 100px;
             height: auto;
-            transform: translate(50px, 50px);
-            transition: all .4s ease;
+            transition: all .1s ease;
             opacity: 0;
           }
           p {
@@ -899,16 +898,16 @@
             line-height: 1.3;
             letter-spacing: 0.2px;
             font-family: 'MADEEvolveSans-regular', sans-serif;
-            font-size: 20px;
+            font-size: 18px;
             text-align: left;
             margin-top: 10px;
-            transition: all .3s ease;
-            transform: translate(50px, 50px);
+            transition: all .1s ease;
             opacity: 0;
           }
         }
         img {
-          width: 100%;
+          width: auto;
+          min-height: 100%;
           object-fit: cover;
         }
         &::before {
@@ -918,7 +917,7 @@
           position: absolute;
           top: 0;
           left: 0;
-          transition: all .3s ease;
+          transition: all .1s ease;
         }
         &:hover {
           &::before {
@@ -929,11 +928,9 @@
             opacity: 1;
             visibility: visible;
             img {
-              transform: translate(0, 0);
               opacity: 1;
             }
             p {
-              transform: translate(0, 0);
               opacity: 1;
             }
           }
