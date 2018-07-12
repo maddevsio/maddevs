@@ -1,13 +1,17 @@
 <template>
   <section id="banner" class="banner">
     <div class="video-background">
-      <div class="video">
-          <div class="screen mute" id="video"></div>
-      </div>
+      <!--<div class="video">-->
+          <!--<div class="screen mute" id="video"></div>-->
+      <!--</div>-->
+      <video autoplay muted loop id="myVideo">
+        <source src="../../assets/media/Mad Devs Working Process.mp4" type="video/mp4">
+        <!--<source src="../../assets/media/videoplayback.webm" type='video/webm; codecs="vp8, vorbis"' />-->
+      </video>
     </div>
     <div class="container">
       <div class="banner-wrap">
-        <div class="banner-title">
+        <div class="banner-title">`
           <h1>Формируем удаленные технические команды из профессионалов для ваших стартапов</h1>
         </div>
         <div class="banner-slack">
@@ -151,7 +155,7 @@
         </div>
       </div>
     </div>
-    <button id="go-down">
+    <button id="go-down" v-scroll-to="'#how-it-work'">
       <img src="../../assets/img/svg/down.svg" alt="Go down">
     </button>
   </section>
@@ -165,64 +169,6 @@ export default {
       slackSelected: 1,
     }
   },
-  methods: {
-    setBgVideo() {
-      let tv, playerDefaults = {autoplay: 1, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 0, iv_load_policy: 3};
-      // var tv, playerDefaults = {autoplay: 1, loop: 1};
-      tv = new YT.Player('video', {events: {'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange}, playerVars: playerDefaults});
-      
-      function vidRescale(){
-        var w = window.innerWidth + 200,
-            h = window.innerHeight + 200;
-
-        if (w/h > 16/9){
-          tv.setSize(w, w/16*9);
-          document.querySelector('.video').style.left = '0px';
-          document.querySelector('.screen').style.left = '0px';
-        } else {
-          tv.setSize(h/9*16, h);
-          document.querySelector('.video').style.left = document.querySelector('.video').style.left - (document.querySelector('.video').innerWidth - w)/2;
-          document.querySelector('.screen').style.left = document.querySelector('.screen').style.left - (document.querySelector('.screen').innerWidth - w)/2;
-        }
-      }
-
-      window.onload = function(){
-        vidRescale();
-      };
-
-      function onPlayerReady(){
-        tv.loadVideoById(vid[currVid]);
-        tv.mute();
-      }
-
-      function onPlayerStateChange(e) {
-        if (e.data === 1){
-          document.getElementById('video').classList.add('active');
-        } else if (e.data === 2){
-          document.getElementById('video').classList.remove('active');
-          if(currVid === vid.length - 1){
-            currVid = 0;
-          } else {
-            currVid++;  
-          }
-          tv.loadVideoById(vid[currVid]);
-          tv.seekTo(vid[currVid].startSeconds);
-        }
-      }
-      var vid = [
-        {'videoId': 'lmGJTVyOfYM', 'startSeconds': 0, 'suggestedQuality': 'hd720'},
-       /*  {'videoId': 'lmGJTVyOfYM', 'startSeconds': 465, 'endSeconds': 657, 'suggestedQuality': 'hd720'},
-        {'videoId': 'lmGJTVyOfYM', 'startSeconds': 0, 'endSeconds': 240, 'suggestedQuality': 'hd720'},
-        {'videoId': 'lmGJTVyOfYM', 'startSeconds': 19, 'endSeconds': 241, 'suggestedQuality': 'hd720'} */
-      ],
-      randomVid = Math.floor(Math.random() * vid.length),
-      currVid = randomVid;
-
-    }
-  },
-  mounted () {
-    this.setBgVideo();
-  }
 }
 </script>
 
