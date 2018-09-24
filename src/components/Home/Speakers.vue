@@ -174,14 +174,6 @@
 
 <script>
 export default {
-  name: 'speakers',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
+  name: 'speakers'
+};
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style></style>

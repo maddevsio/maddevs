@@ -79,33 +79,33 @@
                 <span>@here</span> Наша цель позволить <span>@основателям</span> технических стартапов сосредоточиться на главном: на развитии продукта, привлечении клиентов, продажах, стратегии и сплочении команды, привлечении инвестиций и прибыли
               </p>
               <div class="banner-slack_content-item-status">
-                <div class="banner-slack_content-item-status-item">
+                <div class="banner-slack_content-item-status-item" @click="slack++">
                   <img src="../../assets/img/png/banner/briefcase_1f4bc.png" alt="">
-                  0
+                  {{ slack > 99 ? '99+' : slack}}
                 </div>
-                <div class="banner-slack_content-item-status-item">
+                <div class="banner-slack_content-item-status-item" @click="slack1++">
                   <img src="../../assets/img/png/banner/chart-with-upwards-trend_1f4c8.png" alt="">
-                  0
+                  {{ slack1 > 99 ? '99+' : slack1 }}
                 </div>
-                <div class="banner-slack_content-item-status-item">
+                <div class="banner-slack_content-item-status-item" @click="slack2++">
                   <img src="../../assets/img/png/banner/money-bag_1f4b0.png" alt="">
-                  0
+                  {{ slack2 > 99 ? '99+' : slack2 }}
                 </div>
-                <div class="banner-slack_content-item-status-item">
+                <div class="banner-slack_content-item-status-item" @click="slack3++">
                   <img src="../../assets/img/png/banner/banknote-with-dollar-sign_1f4b5.png" alt="">
-                  0
+                  {{ slack3 > 99 ? '99+' : slack3 }}
                 </div>
-                <div class="banner-slack_content-item-status-item">
+                <div class="banner-slack_content-item-status-item" @click="slack4++">
                   <img src="../../assets/img/png/banner/public-address-loudspeaker_1f4e2.png" alt="">
-                  0
+                  {{ slack4 > 99 ? '99+' : slack4 }}
                 </div>
-                <div class="banner-slack_content-item-status-item">
+                <div class="banner-slack_content-item-status-item" @click="slack5++">
                   <img src="../../assets/img/png/banner/rocket_1f680.png" alt="">
-                  0
+                  {{ slack5 > 99 ? '99+' : slack5}}
                 </div>
-                <div class="banner-slack_content-item-status-item">
+                <div class="banner-slack_content-item-status-item" @click="slack6++">
                   <img src="../../assets/img/png/banner/gem-stone_1f48e.png" alt="">
-                  0
+                  {{ slack6 > 99 ? '99+' : slack6 }}
                 </div>
               </div>
             </div>
@@ -124,29 +124,29 @@
                 <span>@here</span> Наша цель позволить <span>@основателям</span> технических стартапов сосредоточиться на главном: на развитии продукта, привлечении клиентов, продажах, стратегии и сплочении команды, привлечении инвестиций и прибыли
               </p>
               <div class="banner-slack_content-item-status">
-                <div class="banner-slack_content-item-status-item">
+                <div class="banner-slack_content-item-status-item" @click="slack7++">
                   <img src="../../assets/img/png/banner/i-love-you-hand-sign_1f91f.png" alt="">
-                  0
+                  {{slack7 > 99 ? '99+' : slack7}}
                 </div>
-                <div class="banner-slack_content-item-status-item">
+                <div class="banner-slack_content-item-status-item" @click="slack8++">
                   <img src="../../assets/img/png/banner/ok-hand-sign_1f44c.png" alt="">
-                  0
+                  {{ slack8 > 99 ? '99+' : slack8 }}
                 </div>
-                <div class="banner-slack_content-item-status-item">
+                <div class="banner-slack_content-item-status-item" @click="slack9++">
                   <img src="../../assets/img/png/banner/flexed-biceps_1f4aa.png" alt="">
-                  0
+                  {{ slack9 > 99 ? '99+' : slack9 }}
                 </div>
-                <div class="banner-slack_content-item-status-item">
+                <div class="banner-slack_content-item-status-item" @click="slack10++">
                   <img src="../../assets/img/png/banner/robot-face_1f916.png" alt="">
-                  0
+                  {{ slack10 > 99 ? '99+' : slack10 }}
                 </div>
-                <div class="banner-slack_content-item-status-item">
+                <div class="banner-slack_content-item-status-item" @click="slack11++">
                   <img src="../../assets/img/png/banner/nerd-face_1f913.png" alt="">
-                  0
+                  {{ slack11 > 99 ? '99+' : slack11 }}
                 </div>
-                <div class="banner-slack_content-item-status-item">
+                <div class="banner-slack_content-item-status-item" @click="slack12++">
                   <img src="../../assets/img/png/banner/first-place-medal_1f947.png" alt="">
-                  0
+                  {{ slack12 > 99 ? '99+' : slack12 }}
                 </div>
               </div>
             </div>
@@ -164,13 +164,23 @@
 <script>
 export default {
   name: 'banner',
-  data () {
+  data() {
     return {
       slackSelected: 1,
-    }
+      slack: 3,
+      slack1: 8,
+      slack2: 7,
+      slack3: 2,
+      slack4: 1,
+      slack5: 11,
+      slack6: 5,
+      slack7: 13,
+      slack8: 4,
+      slack9: 6,
+      slack10: 10,
+      slack11: 12,
+      slack12: 2
+    };
   },
-}
+};
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style></style>
