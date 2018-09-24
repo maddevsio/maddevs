@@ -13,14 +13,6 @@
 
 <script>
 export default {
-  name: 'press',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
+  name: 'press'
+};
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style></style>
