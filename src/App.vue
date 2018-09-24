@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <Header/>
-    <router-view/>
-    <Footer/>
+    <Header />
+    <router-view />
+    <Footer />
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'App'
-  }
-</script>
+import Header from './components/Header';
+import Footer from './components/Footer';
+import './assets/styles/index.scss';
 
-<style lang="scss" src="./assets/styles/index.scss">
-</style>
+export default {
+  name: 'App',
+  components: {Header, Footer}
+};
+</script>

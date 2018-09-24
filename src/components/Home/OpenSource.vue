@@ -96,33 +96,27 @@ import axios from 'axios';
 
 export default {
   name: 'open-source',
-  data () {
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App',
       githubData: {
         repos: 0,
         commits: 0,
         stars: 0,
         forks: 0,
         updated_at: 0,
-        tasks: 0,
+        tasks: 0
       }
-    }
+    };
   },
   methods: {
     getGithubData() {
-        // axios.get('https://api.github.com/users/maddevsio/repos?per_page=100000&type=owner')
-        axios.get('https://api.github.com/users/maddevsio')
-            .then((res) => {
-                this.githubData.repos = res.data.public_repos;
-            });
+      axios.get('https://api.github.com/users/maddevsio').then(res => {
+        this.githubData.repos = res.data.public_repos;
+      });
     }
   },
   mounted() {
-      this.getGithubData();
-  },
-}
+    this.getGithubData();
+  }
+};
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style></style>

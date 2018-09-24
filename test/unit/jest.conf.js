@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   rootDir: path.resolve(__dirname, '../../'),
@@ -27,4 +27,4 @@ module.exports = {
     '!src/router/index.js',
     '!**/node_modules/**'
   ]
-}
+};
