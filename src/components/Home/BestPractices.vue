@@ -32,53 +32,46 @@
 <script>
 export default {
   name: 'best-practices',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  },
   methods: {
     calcLineNumber() {
-        let lineHeight = 38;
-        function calcLine() {
-            const text = document.getElementById('text'),
-                lineCounts = parseInt(text.offsetHeight / lineHeight),
-                container = document.getElementById('line-number');
-                container.innerHTML = '';
+      let lineHeight = 38;
+      function calcLine() {
+        const text = document.getElementById('text');
+        const lineCounts = parseInt(text.offsetHeight / lineHeight);
+        const container = document.getElementById('line-number');
+        container.innerHTML = '';
 
-            for (var i = 1; i <= lineCounts; i++) {
-                var elem = document.createElement('span');
-                elem.innerHTML = i;
-                container.appendChild(elem);
-            }
+        for (var i = 1; i <= lineCounts; i++) {
+          var elem = document.createElement('span');
+          elem.innerHTML = i;
+          container.appendChild(elem);
         }
-        window.addEventListener('resize', function() {
-            if (window.innerWidth <= 480) {
-                lineHeight = 28;
-                calcLine();
-            } else {
-                lineHeight = 38;
-                calcLine();
-            }
-        });
-
+      }
+      window.addEventListener('resize', function() {
         if (window.innerWidth <= 480) {
-            lineHeight = 28;
-            calcLine();
-        } if (window.innerWidth > 1024) {
-            lineHeight = 45;
-            calcLine();
+          lineHeight = 28;
+          calcLine();
         } else {
-            lineHeight = 38;
-            calcLine();
+          lineHeight = 38;
+          calcLine();
         }
-    },
+      });
+
+      if (window.innerWidth <= 480) {
+        lineHeight = 28;
+        calcLine();
+      }
+      if (window.innerWidth > 1024) {
+        lineHeight = 45;
+        calcLine();
+      } else {
+        lineHeight = 38;
+        calcLine();
+      }
+    }
   },
   mounted() {
     this.calcLineNumber();
-  },
-}
+  }
+};
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style></style>

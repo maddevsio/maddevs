@@ -3,7 +3,7 @@
     <div class="container">
       <div class="reviews_wrap" >
         <h2 class="sec-title">Отзывы клиентов</h2>
-         <carousel :per-page="1" :navigate-to="someLocalProperty" mouse-drag="false" class="reviews_wrap-carousel">
+         <carousel :per-page="1" :navigate-to="someLocalProperty" mouse-drag:false class="reviews_wrap-carousel">
             <slide class="reviews_wrap-carousel-slide">
                 <p class="reviews_wrap-carousel-slide_desc">I have not had an issue with any of MadDevs team.  I have had a couple of project managers already, and various dev. teams.  The team are so knowledgeable, I feel very safe and secure these days as I spec. in my next bit of work.</p>
                 <div class="sender">
@@ -50,17 +50,14 @@ import { Carousel, Slide } from 'vue-carousel';
 
 export default {
   name: 'reviews',
-  data () {
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+      someLocalProperty: 1
+    };
   },
   components: {
     Carousel,
-    Slide,
-  },
-}
+    Slide
+  }
+};
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style></style>
