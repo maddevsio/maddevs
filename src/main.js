@@ -3,6 +3,7 @@ import VueScrollTo from 'vue-scrollto';
 import App from './App';
 import store from './store';
 import router from './router';
+import i18n from './utils/i18n';
 
 Vue.config.productionTip = false;
 
@@ -22,6 +23,7 @@ Vue.use(VueScrollTo, {
 new Vue({
   el: '#app',
   router,
+  i18n,
   store,
   render: h => h(App)
 });
