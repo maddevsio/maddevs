@@ -121,7 +121,10 @@
                 </div>
               </div>
               <p class="banner-slack_content-item-text">
-                <span>@here</span> Наша цель позволить <span>@основателям</span> технических стартапов сосредоточиться на главном: на развитии продукта, привлечении клиентов, продажах, стратегии и сплочении команды, привлечении инвестиций и прибыли
+                <span>@here</span>
+                {{ $t('Our goal is to allow') }}
+                <span>@{{ $t('the founders') }}</span>
+                {{ $t('technical start-ups focus on the main on product development, customer acquisition, sales, strategy and team building, attracting investments and profits')}}
               </p>
               <div class="banner-slack_content-item-status">
                 <div class="banner-slack_content-item-status-item" @click="slack7++">
