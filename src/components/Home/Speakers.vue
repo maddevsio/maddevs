@@ -2,7 +2,7 @@
   <section id="speakers" class="speakers">
     <div class="container">
       <div class="speakers_wrap">
-        <h2>Мы развиваемся, получаем опыт и делимся им, выступая докладчиками на конференциях</h2>
+        <h2>{{$t('We develop, gain experience and share it by speaking at conferences.')}}</h2>
         <div class="speakers_wrap-places">
             <div class="speakers_wrap-places-item">
                 <img src="../../assets/img/svg/speakers/hl.svg" alt="Places">
@@ -47,7 +47,7 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
@@ -55,7 +55,7 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
@@ -63,7 +63,7 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
@@ -71,7 +71,7 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
@@ -79,7 +79,7 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
@@ -87,7 +87,7 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
@@ -95,7 +95,7 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
@@ -103,7 +103,7 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
@@ -111,7 +111,7 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
@@ -119,7 +119,7 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
@@ -127,7 +127,7 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
@@ -135,7 +135,7 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
@@ -143,7 +143,7 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
@@ -151,7 +151,7 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
@@ -159,12 +159,12 @@
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="">
-                    <p>Серия IT-конференций для разработчиков, проводимая по всему миру</p>
+                    <p>{{$t('A series of IT conferences for developers around the world')}}</p>
                 </div>
             </div>
         </div>
         <a href="#">
-            полный список конференций
+            {{$t('full list of conferences')}}
             <img src="../../assets/img/svg/right.svg" alt="Go">
         </a>
       </div>

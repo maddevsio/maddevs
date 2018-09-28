@@ -12,7 +12,7 @@
     <div class="container">
       <div class="banner-wrap">
         <div class="banner-title">`
-          <h1>Формируем удаленные технические команды из профессионалов для ваших стартапов</h1>
+          <h1>{{ $t('We form remote technical teams of professionals for you startups')}}.</h1>
         </div>
         <div class="banner-slack">
           <div class="banner-slack_sidebar">
@@ -60,7 +60,7 @@
           <div class="banner-slack_content">
             <div class="banner-slack_content-title">
               <img src="../../assets/img/svg/slack.svg" alt="Slack">
-              <h5>#какую проблему это решает?</h5>
+              <h5>#{{ $t('What problem does it solve?') }}</h5>
               <button class="open-slack-menu">
                 <span></span>
               </button>
@@ -76,7 +76,7 @@
                 </div>
               </div>
               <p class="banner-slack_content-item-text">
-                <span>@here</span> Наша цель позволить <span>@основателям</span> технических стартапов сосредоточиться на главном: на развитии продукта, привлечении клиентов, продажах, стратегии и сплочении команды, привлечении инвестиций и прибыли
+                <span>@here</span> {{$t('Our goal is to allow ')}} <span>{{ $t('founders') }}</span> {{$t('of technical startups to focus on the main things product and customer development, strategy and team building, fundraising and revenue')}}
               </p>
               <div class="banner-slack_content-item-status">
                 <div class="banner-slack_content-item-status-item" @click="slack++">
@@ -122,9 +122,7 @@
               </div>
               <p class="banner-slack_content-item-text">
                 <span>@here</span>
-                {{ $t('Our goal is to allow') }}
-                <span>@{{ $t('the founders') }}</span>
-                {{ $t('technical start-ups focus on the main on product development, customer acquisition, sales, strategy and team building, attracting investments and profits')}}
+                {{ $t('We achieve it by doing what we are best at technical execution and consultations, qualified software development, support and team monitoring') }}
               </p>
               <div class="banner-slack_content-item-status">
                 <div class="banner-slack_content-item-status-item" @click="slack7++">

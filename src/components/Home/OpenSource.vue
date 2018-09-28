@@ -2,7 +2,7 @@
   <section id="open-source" class="open-source">
     <div class="container">
       <div class="open-source_wrap">
-        <h2 class="sec-title">Мы постоянно занимаемся развитием команды <br> через опен-сорс проекты</h2>
+        <h2 class="sec-title">{{$t('We are constantly developing the team')}} <br> {{$t('through open-source projects')}}</h2>
         <div class="open-source_wrap-github">
           <div class="open-source_wrap-github-item github-link">
             <img src="../../assets/img/svg/openSource/avatar-md.svg" alt="Mad Devs logotype">
@@ -17,38 +17,38 @@
           <div class="open-source_wrap-github-item">
             <div class="github-info">
               <img src="../../assets/img/svg/openSource/calendar.svg" alt="Calendar">
-              <p>Обновлено 3ч назад</p>
+              <p>{{$t('Updated')}} 3{{$t('h ago')}} </p>
             </div>
             <div class="github-info">
               <img src="../../assets/img/svg/openSource/stars.svg" alt="Stars">
-              <p>3863 звезд</p>
+              <p>3863 {{$t('stars')}}</p>
             </div>
           </div>
           <div class="open-source_wrap-github-item">
             <div class="github-info">
               <img src="../../assets/img/svg/openSource/repo.svg" alt="Repos">
-              <p>{{ this.githubData.repos }} проектов</p>
+              <p>{{ this.githubData.repos, $t('projects')}}</p>
             </div>
             <div class="github-info">
               <img src="../../assets/img/svg/openSource/commit.svg" alt="Commits">
-              <p>16883 комитов</p>
+              <p>16883 {{ $t('commits')}}</p>
             </div>
           </div>
           <div class="open-source_wrap-github-item">
             <div class="github-info">
               <img src="../../assets/img/svg/openSource/branch.svg" alt="Branch">
-              <p>1327 форков</p>
+              <p>1327 {{$t('forks')}}</p>
             </div>
             <div class="github-info">
               <img src="../../assets/img/svg/openSource/issues.svg" alt="Issues">
-              <p>72 задачи</p>
+              <p>72 {{$t('tasks')}}</p>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="open-source_wrap-projects">
-      <h3>Проекты</h3>
+      <h3>{{$t('Projects')}}</h3>
       <div class="open-source_wrap-projects_list">
         <div class="open-source_wrap-projects_list-item op-proj-1">
           <div class="projects-img_wrap">
@@ -56,7 +56,7 @@
           </div>
           <div class="projects-desc_wrap">
             <h4>IDmatch</h4>
-            <p>Искусственный интеллект идентификации личности</p>
+            <p>{{$t('Artificial Intelligence Identification')}}</p>
           </div>
         </div>
         <div class="open-source_wrap-projects_list-item op-proj-2">
@@ -65,7 +65,7 @@
           </div>
           <div class="projects-desc_wrap">
             <h4>MADPWA</h4>
-            <p>Быстрый, удобный и простой способ создания PWA</p>
+            <p>{{$t('Quick, convenient and easy way to create PWA')}}</p>
           </div>
         </div>
         <div class="open-source_wrap-projects_list-item op-proj-3">
@@ -74,7 +74,7 @@
           </div>
           <div class="projects-desc_wrap">
             <h4>Mad Location Manager</h4>
-            <p>Точные и «чистые» данные с GPS-приемников</p>
+            <p>{{$t('Accurate and “clean” data from GPS receivers')}}</p>
           </div>
         </div>
         <div class="open-source_wrap-projects_list-item op-proj-4">
@@ -83,7 +83,7 @@
           </div>
           <div class="projects-desc_wrap">
             <h4>Sensor fusion</h4>
-            <p>This application demonstrates the capabilities of various</p>
+            <p>{{$t('This application demonstrates the capabilities of various')}}</p>
           </div>
         </div>
       </div>
