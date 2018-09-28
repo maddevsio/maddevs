@@ -14,9 +14,11 @@
               <div class="s-hide"></div>
               <div class="s-full"></div>
             </div>
-            <div class="how-it-work_wrap-content-slides">
-
-            </div>
+            <carousel :per-page="1" :paginationEnabled="false" mouse-drag:false class="how-it-work_wrap-content-slides">
+              <slide class="how-it-work_wrap-content-slide">Hello 1</slide>
+              <slide class="how-it-work_wrap-content-slide">Hello 2</slide>
+              <slide class="how-it-work_wrap-content-slide">Hello 3</slide>
+            </carousel>
           </div>
         </div>
       </div>
@@ -25,7 +27,13 @@
 </template>
 
 <script>
+import { Carousel, Slide } from 'vue-carousel';
+
 export default {
-  name: 'banner'
+  name: 'banner',
+  components: {
+    Carousel,
+    Slide
+  }
 };
 </script>

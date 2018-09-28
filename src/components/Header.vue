@@ -26,7 +26,7 @@ export default {
     switchLanguage() {
       const curLang = i18next.language === 'en' ? 'ru' : 'en';
       i18next.changeLanguage(curLang, () => {
-        this.lang = curLang
+        this.lang = curLang;
       });
     }
   }
