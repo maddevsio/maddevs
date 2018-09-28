@@ -16,7 +16,7 @@
 <script>
 import i18next from 'i18next';
 export default {
-  name: 'header',
+  name: 'main-header',
   data() {
     return {
       lang: 'en'
