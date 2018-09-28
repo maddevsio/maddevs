@@ -8,6 +8,11 @@
                     <div class="p-hide"></div>
                     <div class="p-full"></div>
                 </div>
+                <carousel :per-page="1" :paginationEnabled="false" mouse-drag:false class="best-practices_wrap-preview-slides">
+                  <slide class="best-practices_wrap-preview-slide">Hello 1</slide>
+                  <slide class="best-practices_wrap-preview-slide">Hello 2</slide>
+                  <slide class="best-practices_wrap-preview-slide">Hello 3</slide>
+                </carousel>
             </div>
             <div class="best-practices_wrap-title">
                 <p>0 func (r *REST) addCommand (c echo.Context,) {</p>
@@ -30,8 +35,14 @@
 </template>
 
 <script>
+import { Carousel, Slide } from 'vue-carousel';
+
 export default {
   name: 'best-practices',
+  components: {
+    Carousel,
+    Slide
+  },
   methods: {
     calcLineNumber() {
       let lineHeight = 38;
