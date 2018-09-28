@@ -4,9 +4,27 @@
         <div class="best-practices_wrap">
             <div class="best-practices_wrap-preview">
                 <carousel :per-page="1" :paginationEnabled="false" mouse-drag:false class="best-practices_wrap-preview-slides">
-                  <slide class="best-practices_wrap-preview-slide">Hello 1</slide>
-                  <slide class="best-practices_wrap-preview-slide">Hello 2</slide>
-                  <slide class="best-practices_wrap-preview-slide">Hello 3</slide>
+                  <slide class="best-practices_wrap-preview-slide">
+                    <picture>
+                        <source srcset="../../assets/img/png/best-practices/bp1.png"
+                                media="(max-width: 992px)">
+                        <img src="../../assets/img/png/best-practices/bp1@2x.png">
+                    </picture>
+                  </slide>
+                  <slide class="best-practices_wrap-preview-slide">
+                    <picture>
+                        <source srcset="../../assets/img/png/best-practices/bp2.png"
+                                media="(max-width: 992px)">
+                        <img src="../../assets/img/png/best-practices/bp2@2x.png">
+                    </picture>
+                  </slide>
+                  <slide class="best-practices_wrap-preview-slide">
+                    <picture>
+                        <source srcset="../../assets/img/png/best-practices/bp3.png"
+                                media="(max-width: 992px)">
+                        <img src="../../assets/img/png/best-practices/bp3@2x.png">
+                    </picture>
+                  </slide>
                 </carousel>
             </div>
             <div class="best-practices_wrap-title">
