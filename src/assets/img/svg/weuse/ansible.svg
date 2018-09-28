@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="200.000000pt"
+   height="200.000000pt"
+   viewBox="0 0 200.000000 200.000000"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg2"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="ansible_circleA_black_small.svg">
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="845"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="1.888"
+     inkscape:cx="129.92045"
+     inkscape:cy="136.80595"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata4">
+Created by potrace 1.11, written by Peter Selinger 2001-2013
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)"
+     fill="#000000"
+     stroke="none"
+     id="g6">
+    <path
+       d="M805 1853 c-314 -67 -579 -328 -655 -645 -25 -104 -27 -276 -4 -386 64 -312 312 -569 634 -658 93 -26 328 -26 425 0 408 108 678 479 652 895 -8 121 -29 203 -78 309 -116 250 -341 431 -609 487 -90 19 -272 18 -365 -2z m249 -345 c14 -23 348 -823 361 -865 8 -27 -33 -73 -65 -73 -11 0 -118 78 -248 183 -125 101 -232 186 -239 190 -7 5 -35 -54 -85 -178 l-73 -185 -68 0 -67 0 16 37 c8 21 94 228 191 461 97 233 182 430 190 438 23 22 70 18 87 -8z"
+       id="path10" />
+    <path
+       d="M952 1200 c-29 -72 -52 -134 -52 -139 0 -10 310 -255 316 -249 4 5 -193 498 -205 511 -4 4 -31 -51 -59 -123z"
+       id="path12" />
+  </g>
+</svg>
