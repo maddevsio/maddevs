@@ -3,7 +3,7 @@
     <div class="container">
         <div class="best-practices_wrap">
             <div class="best-practices_wrap-preview">
-                <carousel v-on:pageChange="onPageChange" :loop=true :autoplayLoop="true" :autoplay="true" :autoplayTimeout="3000" :per-page="1" :navigate-to="activeSlide" :paginationEnabled="false" mouse-drag:false class="best-practices_wrap-preview-slides">
+                <carousel v-on:pageChange="onPageChange" :loop=true :autoplayLoop="true" :autoplay="true" :autoplayTimeout="3000" :per-page="1" :navigate-to="activeSlide" :paginationEnabled="false" mouse-drag:true class="best-practices_wrap-preview-slides">
                   <slide class="best-practices_wrap-preview-slide">
                     <picture>
                         <source srcset="../../assets/img/png/best-practices/bp1.png"
