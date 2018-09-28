@@ -12,14 +12,29 @@
             Посмотрите как мы подходим к работе с <span>командами</span>, как мы занимается их <span>менеджментом</span>, и как <span>коммуницируем</span> внутри и с клиентами.
           </h3>
           <div class="how-it-work_wrap-content-slider">
-            <div class="how-it-work_wrap-content-slider_header">
-              <div class="s-close"></div>
-              <div class="s-hide"></div>
-              <div class="s-full"></div>
-            </div>
-            <div class="how-it-work_wrap-content-slides">
-
-            </div>
+            <carousel :per-page="1" :paginationEnabled="false" mouse-drag:false class="how-it-work_wrap-content-slides">
+              <slide class="how-it-work_wrap-content-slide">
+                <picture>
+                    <source srcset="../../assets/img/png/how-it-work/hiw1.png"
+                            media="(max-width: 992px)">
+                    <img src="../../assets/img/png/how-it-work/hiw1@2x.png">
+                </picture>
+              </slide>
+              <slide class="how-it-work_wrap-content-slide">
+                <picture>
+                    <source srcset="../../assets/img/png/how-it-work/hiw2.png"
+                            media="(max-width: 992px)">
+                    <img src="../../assets/img/png/how-it-work/hiw2@2x.png">
+                </picture>
+              </slide>
+              <slide class="how-it-work_wrap-content-slide">
+                <picture>
+                    <source srcset="../../assets/img/png/how-it-work/hiw3.png"
+                            media="(max-width: 992px)">
+                    <img src="../../assets/img/png/how-it-work/hiw3@2x.png">
+                </picture>
+              </slide>
+            </carousel>
           </div>
         </div>
       </div>
@@ -29,8 +44,13 @@
 
 <script>
 import i18n from 'i18next';
+import { Carousel, Slide } from 'vue-carousel';
 export default {
   name: 'banner',
+  components: {
+    Carousel,
+    Slide
+  },
   data() {
     return {
       lang: i18n.language
@@ -39,5 +59,5 @@ export default {
   updated() {
     this.lang = i18n.language;
   },
-};
+}
 </script>
