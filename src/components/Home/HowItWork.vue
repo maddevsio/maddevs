@@ -59,5 +59,5 @@ export default {
   updated() {
     this.lang = i18n.language;
   },
-}
+};
 </script>
