@@ -9,7 +9,7 @@
             Посмотрите как мы подходим к работе с  <span>командами</span> , как мы занимается их <span>менеджментом</span> , и как <span>коммуницируем</span> внутри и с клиентами
           </h3>
           <div class="how-it-work_wrap-content-slider">
-            <carousel :per-page="1" :paginationEnabled="false" mouse-drag:false class="how-it-work_wrap-content-slides">
+            <carousel :per-page="1" :paginationEnabled="false" loop:true mouse-drag:false class="how-it-work_wrap-content-slides">
               <slide class="how-it-work_wrap-content-slide">
                 <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw1.png"
