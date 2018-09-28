@@ -49,7 +49,6 @@
             &-content {
                 &-slider {
                     min-width: 437px;
-                    height: 264px;
                 }   
             }
         }
@@ -58,7 +57,6 @@
         &_wrap {
             &-preview {
                 min-width: 437px;
-                height: 264px;
             }
         }
     }
@@ -276,7 +274,6 @@
                 }
                 &-slider {
                     width: 100%;
-                    height: 400px;
                     order: 0;
                 }
                 &-title {
@@ -293,7 +290,6 @@
             flex-direction: column;
             &-preview {
                 width: 100%;
-                height: 400px; 
             }
             &-title {
                 width: 100%;
@@ -477,7 +473,6 @@
                 flex-direction: column;
                 &-slider {
                     width: 100%;
-                    height: 288px;
                     order: 0;
                 }
                 &-title {
@@ -491,7 +486,6 @@
             flex-direction: column;
             &-preview {
                 width: 100%;
-                height: 288px; 
             }
             &-title {
                 font-size: 26px;
@@ -535,7 +529,6 @@
                 &-slider {
                     width: 100%;
                     min-width: auto;
-                    height: 188px;
                 }
                 &-title {
                     font-size: 24px;
@@ -551,7 +544,6 @@
             &-preview {
                 width: 100%;
                 min-width: auto;
-                height: 188px;
             }
             &-title {
                 margin-top: 40px;
@@ -694,12 +686,6 @@
                     padding: 0;
                     margin-top: 40px;
                     text-align: center;
-                    // white-space: nowrap;
-                    // a {
-                    //     white-space: nowrap;
-                    //     margin-right: 0;
-                    //     font-size: 20px;
-                    // }
                     &_wrap {
                        flex-direction: column;
                        align-items: center;
@@ -709,17 +695,6 @@
                     width: 100%;
                     margin-top: 40px;
                     text-align: center;
-                    // &_list {
-                    //     display: flex;
-                    //     align-items: center;
-                    //     justify-content: space-between;
-                    //     a {
-                    //         img {
-                    //             width: 36px;
-                    //             height: 36px;
-                    //         }
-                    //     }
-                    // }
                 }
             }
         }
@@ -755,6 +730,3 @@
         }
     }
 }
-// @media only screen and (max-width: 768px) {
-
-// }

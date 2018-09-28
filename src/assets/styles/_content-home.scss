@@ -370,7 +370,8 @@
       }
       &-slider {
         width: 660px;
-        height: 380px;
+        height: auto;
+        max-height: 380px;
         overflow: hidden;
         border-radius: 5px;
         box-shadow: 0 10px 20px 0 rgba(20, 44, 56, 0.27), 0 3px 10px 0 rgba(20, 44, 56, 0.08);
