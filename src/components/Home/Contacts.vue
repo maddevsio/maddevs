@@ -2,21 +2,21 @@
   <section id="contacts" class="contacts">
     <div class="container">
       <div class="contacts-wrap">
-        <h2 class="sec-title">Контакты</h2>
+        <h2 class="sec-title">{{$t('Contacts')}}</h2>
         <div class="contacts-wrap_list">
             <div class="contacts-wrap_list-item address">
-                <h5>адрес</h5>
+                <h5>{{$t('address')}}</h5>
                 <p>Bishkek, Ibraimova, 103, Business center Victory, 5th floor</p>
             </div>
             <div class="contacts-wrap_list-item phone-mail">
-                <h5>Связаться</h5>
+                <h5>{{$t('Contact')}}</h5>
                 <div class="phone-mail_wrap">
                     <a href="tel:+996 555 429 055">+996 555 429 055</a>
                     <a href="mailto:rock@maddevs.io">rock@maddevs.io</a>
                 </div>
             </div>
             <div class="contacts-wrap_list-item social-icons">
-                <h5>Соц. Сети</h5>
+                <h5>{{$t('Social network')}}</h5>
                 <div class="social-icons_list">
                     <a href="https://github.com/maddevsio">
                         <img src="../../assets/img/svg/footer/git-copy.svg" alt="Github">

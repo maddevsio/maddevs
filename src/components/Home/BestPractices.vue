@@ -20,7 +20,7 @@
                         <span>5</span>
                     </div>
                     <h3 id="text">
-                        Мы применяем лучшие <span>практики разработки</span>, а также несем ответственность за <span style="color: #a1d9ff;">качество</span> и <span style="color: #e8b8ff;">стабильность</span> работы продукта
+                      {{ $t('We use the best') }} <span>{{ $t('development practices') }}</span> {{ $t('and we are responsible for') }} <span style="color: #a1d9ff;">{{ $t('the quality') }}</span> {{ $t('and') }} <span style="color: #e8b8ff;">{{ $t('stability') }}</span> {{ $t('of the product') }}.
                     </h3>
                 </div>
             </div>
