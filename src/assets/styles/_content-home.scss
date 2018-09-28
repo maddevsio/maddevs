@@ -366,36 +366,15 @@
       }
       &-slider {
         width: 640px;
-        height: 370px;
+        height: 345px;
         box-shadow: 0 10px 20px 0 rgba(20, 44, 56, 0.27), 0 3px 10px 0 rgba(20, 44, 56, 0.08);
-        &_header {
+      }
+      &-slide {
+        width: 100%;
+        height: 100%;
+        img {
           width: 100%;
-          height: 30px;
-          background-color: #fff;
-          display: flex;
-          align-items: center;
-          padding: 0 10px;
-          box-sizing: border-box;
-          .s-close {
-            width: 8px;
-            height: 8px;
-            background-color: #fc605c;
-            border-radius: 100%;
-            margin-right: 5px;
-          }
-          .s-hide {
-            width: 8px;
-            height: 8px;
-            background-color: #fdbc40;
-            border-radius: 100%;
-            margin-right: 5px;
-          }
-          .s-full {
-            width: 8px;
-            height: 8px;
-            background-color: #34c749;
-            border-radius: 100%;
-          }
+          height: 100%;
         }
       }
     }
@@ -412,37 +391,19 @@
     align-items: center;
     &-preview {
       width: 605px;
-      height: 370px;
+      height: 345px;
       background-image: linear-gradient(to bottom, #1a1a1a, #151515);
       box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
       background-color: #1e1e1e;
-      &_header {
+      &-slides {
+        height: 100%;
+      }
+      &-slide {
         width: 100%;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 0 10px;
-        box-sizing: border-box;
-        .p-close {
-          width: 8px;
-          height: 8px;
-          background-color: #fc605c;
-          border-radius: 100%;
-          margin-right: 5px;
-        }
-        .p-hide {
-          width: 8px;
-          height: 8px;
-          background-color: #fdbc40;
-          border-radius: 100%;
-          margin-right: 5px;
-        }
-        .p-full {
-          width: 8px;
-          height: 8px;
-          background-color: #34c749;
-          border-radius: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
         }
       }
     }
