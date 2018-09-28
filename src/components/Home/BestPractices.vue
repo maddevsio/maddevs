@@ -3,11 +3,6 @@
     <div class="container">
         <div class="best-practices_wrap">
             <div class="best-practices_wrap-preview">
-                <div class="best-practices_wrap-preview_header">
-                    <div class="p-close"></div>
-                    <div class="p-hide"></div>
-                    <div class="p-full"></div>
-                </div>
                 <carousel :per-page="1" :paginationEnabled="false" mouse-drag:false class="best-practices_wrap-preview-slides">
                   <slide class="best-practices_wrap-preview-slide">Hello 1</slide>
                   <slide class="best-practices_wrap-preview-slide">Hello 2</slide>
