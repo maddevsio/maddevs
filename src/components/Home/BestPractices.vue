@@ -3,7 +3,7 @@
     <div class="container">
         <div class="best-practices_wrap">
             <div class="best-practices_wrap-preview">
-                <carousel :per-page="1" :paginationEnabled="false" mouse-drag:false class="best-practices_wrap-preview-slides">
+                <carousel v-on:pageChange="onPageChange" :loop=true :autoplayLoop="true" :autoplay="true" :autoplayTimeout="3000" :per-page="1" :navigate-to="activeSlide" :paginationEnabled="false" mouse-drag:false class="best-practices_wrap-preview-slides">
                   <slide class="best-practices_wrap-preview-slide">
                     <picture>
                         <source srcset="../../assets/img/png/best-practices/bp1.png"
@@ -38,7 +38,10 @@
                         <span>5</span>
                     </div>
                     <h3 id="text">
-                      {{ $t('We use the best') }} <span>{{ $t('development practices') }}</span> {{ $t('and we are responsible for') }} <span style="color: #a1d9ff;">{{ $t('the quality') }}</span> {{ $t('and') }} <span style="color: #e8b8ff;">{{ $t('stability') }}</span> {{ $t('of the product') }}.
+                      {{ $t('We use the best') }} <span @click="setAtiveSlide(0)" :style="activeSlide == 0 && 'color: #fff9dd;'">{{ $t('development practices') }}</span>
+                      {{ $t('and we are responsible for') }} <span @click="setAtiveSlide(1)" :style="activeSlide == 1 && 'color: #a1d9ff;'">{{ $t('the quality') }}</span>
+                      {{ $t('and') }} <span @click="setAtiveSlide(2)" :style="activeSlide == 2 && 'color: #e8b8ff;'">{{ $t('stability') }}</span>
+                      {{ $t('of the product') }}.
                     </h3>
                 </div>
             </div>
@@ -52,9 +55,14 @@ import { Carousel, Slide } from 'vue-carousel';
 
 export default {
   name: 'best-practices',
+  data() {
+    return {
+      activeSlide: 0,
+    };
+  },
   components: {
     Carousel,
-    Slide
+    Slide,
   },
   methods: {
     calcLineNumber() {
@@ -84,18 +92,24 @@ export default {
       if (window.innerWidth <= 480) {
         lineHeight = 28;
         calcLine();
-      }
+      };
       if (window.innerWidth > 1024) {
         lineHeight = 45;
         calcLine();
       } else {
         lineHeight = 38;
         calcLine();
-      }
+      };
+    },
+    setAtiveSlide(index) {
+      this.activeSlide = index;
+    },
+    onPageChange: function(index) {
+      this.setAtiveSlide(index);
     }
   },
   mounted() {
     this.calcLineNumber();
-  }
+  },
 };
 </script>
