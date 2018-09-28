@@ -6,31 +6,39 @@
       <div class="how-it-work_wrap-content">
         <div class="container">
           <h3 v-if="lang === 'en'" class="how-it-work_wrap-content-title">
-            We assemble and <span>manage</span> technical <span>team</span> for you and closely <span>communicate</span> with our clients and inside the team.
+            We assemble and
+            <span @click="setAtiveSlide(0)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 0 }">manage</span>
+            technical <span @click="setAtiveSlide(1)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 1 }">team</span>
+            for you and closely <span @click="setAtiveSlide(2)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 2 }">communicate</span>
+            with our clients and inside the team.
           </h3>
           <h3 v-else class="how-it-work_wrap-content-title">
-            Посмотрите как мы подходим к работе с <span>командами</span>, как мы занимается их <span>менеджментом</span>, и как <span>коммуницируем</span> внутри и с клиентами.
+            Посмотрите как мы подходим к работе с
+            <span @click="setAtiveSlide(0)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 0 }">командами</span>,
+            как мы занимается их <span @click="setAtiveSlide(1)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 1 }">менеджментом</span>,
+            и как <span @click="setAtiveSlide(2)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 2 }">коммуницируем</span>
+            внутри и с клиентами.
           </h3>
           <div class="how-it-work_wrap-content-slider">
-            <carousel :per-page="1" :paginationEnabled="false" loop:true mouse-drag:false class="how-it-work_wrap-content-slides">
+            <carousel v-on:pageChange="onPageChange" :loop=true :autoplayLoop="true" :autoplay="true" :autoplayTimeout="3000" :per-page="1" :navigate-to="activeSlide" :paginationEnabled="false" loop:true mouse-drag:false class="how-it-work_wrap-content-slides">
               <slide class="how-it-work_wrap-content-slide">
                 <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw1.png"
-                            media="(max-width: 992px)">
+                      media="(max-width: 992px)">
                     <img src="../../assets/img/png/how-it-work/hiw1@2x.png">
                 </picture>
               </slide>
               <slide class="how-it-work_wrap-content-slide">
                 <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw2.png"
-                            media="(max-width: 992px)">
+                      media="(max-width: 992px)">
                     <img src="../../assets/img/png/how-it-work/hiw2@2x.png">
                 </picture>
               </slide>
               <slide class="how-it-work_wrap-content-slide">
                 <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw3.png"
-                            media="(max-width: 992px)">
+                      media="(max-width: 992px)">
                     <img src="../../assets/img/png/how-it-work/hiw3@2x.png">
                 </picture>
               </slide>
@@ -47,17 +55,26 @@ import i18n from 'i18next';
 import { Carousel, Slide } from 'vue-carousel';
 export default {
   name: 'banner',
-  components: {
-    Carousel,
-    Slide
-  },
   data() {
     return {
-      lang: i18n.language
+      lang: i18n.language,
+      activeSlide: 0,
     };
   },
   updated() {
     this.lang = i18n.language;
   },
-}
+  components: {
+    Carousel,
+    Slide
+  },
+  methods: {
+    setAtiveSlide(index) {
+      this.activeSlide = index;
+    },
+    onPageChange: function(index) {
+      this.setAtiveSlide(index);
+    }
+  },
+};
 </script>
