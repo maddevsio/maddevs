@@ -5,7 +5,7 @@
       <p>{{ $t('Since we are working remotely we strongly believe in the transparency of work, pay special attention to communication and keep strict compliance to working processes') }}</p>
       <div class="how-it-work_wrap-content">
         <div class="container">
-          <h3 v-if="lang === 'en'" class="how-it-work_wrap-content-title">
+          <h3 v-if="lang === 'en'" class="how-it-work_wrap-content-title" @click="setSlideHeight">
             We assemble and
             <span @click="setAtiveSlide(0)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 0 }">manage</span>
             technical <span @click="setAtiveSlide(1)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 1 }">team</span>
@@ -19,13 +19,13 @@
             и как <span @click="setAtiveSlide(2)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 2 }">коммуницируем</span>
             внутри и с клиентами.
           </h3>
-          <div class="how-it-work_wrap-content-slider">
+          <div class="how-it-work_wrap-content-slider" :style="{ 'height': slideHeight + 'px' }">
             <carousel v-on:pageChange="onPageChange" :loop=true :autoplayLoop="true" :autoplay="true" :autoplayTimeout="3000" :per-page="1" :navigate-to="activeSlide" :paginationEnabled="false" loop:true mouse-drag:false class="how-it-work_wrap-content-slides">
               <slide class="how-it-work_wrap-content-slide">
                 <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw1.png"
                       media="(max-width: 992px)">
-                    <img src="../../assets/img/png/how-it-work/hiw1@2x.png">
+                    <img ref="image" src="../../assets/img/png/how-it-work/hiw1@2x.png">
                 </picture>
               </slide>
               <slide class="how-it-work_wrap-content-slide">
@@ -53,12 +53,14 @@
 <script>
 import i18n from 'i18next';
 import { Carousel, Slide } from 'vue-carousel';
+
 export default {
   name: 'banner',
   data() {
     return {
       lang: i18n.language,
       activeSlide: 0,
+      slideHeight: 0
     };
   },
   updated() {
@@ -74,7 +76,26 @@ export default {
     },
     onPageChange: function(index) {
       this.setAtiveSlide(index);
+    },
+    getWindowWidth() {
+      window.addEventListener('resize', () => {
+        this.setSlideHeight();
+      });
+    },
+    getImageHeight() {
+      document.onreadystatechange = () => {
+        if (document.readyState === 'complete') {
+          this.setSlideHeight();
+        }
+      };
+    },
+    setSlideHeight() {
+      this.slideHeight = this.$refs.image.clientHeight;
     }
   },
+  mounted() {
+    this.getImageHeight();
+    this.getWindowWidth();
+  }
 };
 </script>
