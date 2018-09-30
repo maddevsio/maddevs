@@ -67,7 +67,7 @@ export default {
     };
   },
   mounted() {
-    this.year = (new Date).getFullYear();
+    this.year = new Date().getFullYear();
   }
 };
 </script>
