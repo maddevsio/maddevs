@@ -2,7 +2,7 @@
   <section id="partners" class="partners">
     <div class="container">
       <div class="partners_wrap">
-        <h2 class="sec-title">{{$t('With us already working')}}</h2>
+        <h2 class="sec-title">{{$t('Our partners')}}</h2>
         <div class="partners_wrap-icons">
           <!-- Row -->
           <div class="partners_wrap-icons_row">
