@@ -4,25 +4,27 @@
       <div class="weUse_wrap">
         <h2>{{ $t('Technical Expertise') }}</h2>
         <div class="weUse_wrap-list">
-            <div class="weUse_wrap-list-wrap">
-              <div class="weUse_wrap-list-item">
-              <h3>{{ $t('Frontend') }}</h3>
-              <p v-if="lang === 'en'">
-                For frontend we use with <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>,
-                and its frameworks  <span> <img src="../../assets/img/svg/weuse/react-js.svg" alt=""> React</span>
-                and <span> <img src="../../assets/img/svg/weuse/vue.svg" alt=""> Vue</span>.
-                We also use <span> <img src="../../assets/img/svg/weuse/es-6.svg" alt=""> ES6</span>
-                and make bundles with <span><img src="../../assets/img/svg/weuse/webpack.svg" alt=""> Webpack</span>
-                and <span><img src="../../assets/img/svg/weuse/babel.png" alt=""> Babel</span>
-              </p>
-              <p v-else>
-                На фронтенде мы работаем <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>,
-                сочетая его с фреймворками <span> <img src="../../assets/img/svg/weuse/react-js.svg" alt=""> React</span>
-                и <span> <img src="../../assets/img/svg/weuse/vue.svg" alt=""> Vue</span>.
-                Мы также используем <span><img src="../../assets/img/svg/weuse/es-6.svg" alt=""> ES6</span>
-                и разрабатываем фронтенд с помощью  <span><img src="../../assets/img/svg/weuse/webpack.svg" alt=""> Webpack</span>
-                и <span><img src="../../assets/img/svg/weuse/babel.png" alt=""> Babel</span>
-              </p>
+
+          <!-- Left column -->
+          <div class="weUse_wrap-list_column">
+            <div class="weUse_wrap-list-item">
+                <h3>{{ $t('Frontend') }}</h3>
+                <p v-if="lang === 'en'">
+                  For frontend we use with <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>,
+                  and its frameworks  <span> <img src="../../assets/img/svg/weuse/react-js.svg" alt=""> React</span>
+                  and <span> <img src="../../assets/img/svg/weuse/vue.svg" alt=""> Vue</span>.
+                  We also use <span> <img src="../../assets/img/svg/weuse/es-6.svg" alt=""> ES6</span>
+                  and make bundles with <span><img src="../../assets/img/svg/weuse/webpack.svg" alt=""> Webpack</span>
+                  and <span><img src="../../assets/img/svg/weuse/babel.png" alt=""> Babel</span>
+                </p>
+                <p v-else>
+                  На фронтенде мы работаем <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>,
+                  сочетая его с фреймворками <span> <img src="../../assets/img/svg/weuse/react-js.svg" alt=""> React</span>
+                  и <span> <img src="../../assets/img/svg/weuse/vue.svg" alt=""> Vue</span>.
+                  Мы также используем <span><img src="../../assets/img/svg/weuse/es-6.svg" alt=""> ES6</span>
+                  и разрабатываем фронтенд с помощью  <span><img src="../../assets/img/svg/weuse/webpack.svg" alt=""> Webpack</span>
+                  и <span><img src="../../assets/img/svg/weuse/babel.png" alt=""> Babel</span>
+                </p>
             </div>
             <div class="weUse_wrap-list-item">
               <h3>{{$t('Mobile development')}}</h3>
@@ -43,50 +45,52 @@
               </p>
             </div>
             <div class="weUse_wrap-list-item">
-              <h3>{{$t('Project management')}}</h3>
-              <p v-if="lang === 'en'">
-                Planning and tasks monitoring is done with
-                <span><img src="../../assets/img/svg/weuse/jira.svg" alt=""> JIRA</span>,
-                main communication goes through <span><img src="../../assets/img/svg/weuse/slack.svg" alt=""> Slack</span>
-                and calls via<span><img src="../../assets/img/svg/weuse/hangouts.svg" alt=""> Hangouts</span>,
-                <span><img src="../../assets/img/svg/weuse/zoom.svg" alt=""> Zoom</span>,
-                <span><img src="../../assets/img/svg/weuse/skype.svg" alt=""> Skype</span>.
-              </p>
-              <p v-else>
-                Планирование и отслеживание задач осуществляется с помощью
-                <span><img src="../../assets/img/svg/weuse/jira.svg" alt=""> JIRA</span>,
-                а коммуникация ведется в <span><img src="../../assets/img/svg/weuse/slack.svg" alt=""> Slack</span>
-                и через созваны в <span><img src="../../assets/img/svg/weuse/hangouts.svg" alt=""> Hangouts</span>,
-                <span><img src="../../assets/img/svg/weuse/zoom.svg" alt=""> Zoom</span>,
-                <span><img src="../../assets/img/svg/weuse/skype.svg" alt=""> Skype</span>.
-              </p>
+                <h3>{{$t('Project management')}}</h3>
+                <p v-if="lang === 'en'">
+                  Planning and tasks monitoring is done with
+                  <span><img src="../../assets/img/svg/weuse/jira.svg" alt=""> JIRA</span>,
+                  main communication goes through <span><img src="../../assets/img/svg/weuse/slack.svg" alt=""> Slack</span>
+                  and calls via<span><img src="../../assets/img/svg/weuse/hangouts.svg" alt=""> Hangouts</span>,
+                  <span><img src="../../assets/img/svg/weuse/zoom.svg" alt=""> Zoom</span>,
+                  <span><img src="../../assets/img/svg/weuse/skype.svg" alt=""> Skype</span>.
+                </p>
+                <p v-else>
+                  Планирование и отслеживание задач осуществляется с помощью
+                  <span><img src="../../assets/img/svg/weuse/jira.svg" alt=""> JIRA</span>,
+                  а коммуникация ведется в <span><img src="../../assets/img/svg/weuse/slack.svg" alt=""> Slack</span>
+                  и через созваны в <span><img src="../../assets/img/svg/weuse/hangouts.svg" alt=""> Hangouts</span>,
+                  <span><img src="../../assets/img/svg/weuse/zoom.svg" alt=""> Zoom</span>,
+                  <span><img src="../../assets/img/svg/weuse/skype.svg" alt=""> Skype</span>.
+                </p>
             </div>
-            </div>
-            <div class="weUse_wrap-list-wrap">
-              <div class="weUse_wrap-list-item">
-              <h3>{{$t('Backend')}}</h3>
-              <p v-if="lang === 'en'">
-                We use <span><img src="../../assets/img/svg/weuse/pyton.svg" alt=""> Python</span>
-                with <span><img src="../../assets/img/svg/weuse/django.svg" alt=""> Django</span>
-                and <span><img src="../../assets/img/svg/weuse/flask.svg" alt=""> Flask</span> frameworks for backend in most of the projects.
-                Sometimes we code on <span><img src="../../assets/img/svg/weuse/php.svg" alt=""> PHP</span>
-                with <span><img src="../../assets/img/svg/weuse/symfony.svg" alt=""> Symfony</span>
-                and <span><img src="../../assets/img/svg/weuse/yii.svg" alt=""> Yii</span>.
-                We use <span> <img src="../../assets/img/svg/weuse/golang.svg" alt=""> Go</span>
-                if the project is highload. Some tasks can not be solved without <span><img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>
-                and <span> <img src="../../assets/img/svg/weuse/node-js.svg" alt=""> Node.js</span>.
-              </p>
-              <p v-else>
-                Для большинства проектов на бекенде мы используем <span> <img src="../../assets/img/svg/weuse/pyton.svg" alt=""> Python</span>
-                с фреймворками <span> <img src="../../assets/img/svg/weuse/django.svg" alt=""> Django</span>
-                и <span> <img src="../../assets/img/svg/weuse/flask.svg" alt=""> Flask</span>.
-                Иногда пишем на <span> <img src="../../assets/img/svg/weuse/php.svg" alt=""> PHP</span>
-                с <span> <img src="../../assets/img/svg/weuse/symfony.svg" alt=""> Symfony</span>
-                и <span> <img src="../../assets/img/svg/weuse/yii.svg" alt=""> Yii</span>.
-                Там, где есть высокая нагрузка, мы используем <span> <img src="../../assets/img/svg/weuse/golang.svg" alt=""> Go</span>.
-                Есть задачи, которые не решить без помощи <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>
-                и <span> <img src="../../assets/img/svg/weuse/node-js.svg" alt=""> Node.js</span>.
-              </p>
+          </div>
+
+          <!-- Right column -->
+          <div class="weUse_wrap-list_column">
+            <div class="weUse_wrap-list-item">
+                <h3>{{$t('Backend')}}</h3>
+                <p v-if="lang === 'en'">
+                  We use <span><img src="../../assets/img/svg/weuse/pyton.svg" alt=""> Python</span>
+                  with <span><img src="../../assets/img/svg/weuse/django.svg" alt=""> Django</span>
+                  and <span><img src="../../assets/img/svg/weuse/flask.svg" alt=""> Flask</span> frameworks for backend in most of the projects.
+                  Sometimes we code on <span><img src="../../assets/img/svg/weuse/php.svg" alt=""> PHP</span>
+                  with <span><img src="../../assets/img/svg/weuse/symfony.svg" alt=""> Symfony</span>
+                  and <span><img src="../../assets/img/svg/weuse/yii.svg" alt=""> Yii</span>.
+                  We use <span> <img src="../../assets/img/svg/weuse/golang.svg" alt=""> Go</span>
+                  if the project is highload. Some tasks can not be solved without <span><img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>
+                  and <span> <img src="../../assets/img/svg/weuse/node-js.svg" alt=""> Node.js</span>.
+                </p>
+                <p v-else>
+                  Для большинства проектов на бекенде мы используем <span> <img src="../../assets/img/svg/weuse/pyton.svg" alt=""> Python</span>
+                  с фреймворками <span> <img src="../../assets/img/svg/weuse/django.svg" alt=""> Django</span>
+                  и <span> <img src="../../assets/img/svg/weuse/flask.svg" alt=""> Flask</span>.
+                  Иногда пишем на <span> <img src="../../assets/img/svg/weuse/php.svg" alt=""> PHP</span>
+                  с <span> <img src="../../assets/img/svg/weuse/symfony.svg" alt=""> Symfony</span>
+                  и <span> <img src="../../assets/img/svg/weuse/yii.svg" alt=""> Yii</span>.
+                  Там, где есть высокая нагрузка, мы используем <span> <img src="../../assets/img/svg/weuse/golang.svg" alt=""> Go</span>.
+                  Есть задачи, которые не решить без помощи <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>
+                  и <span> <img src="../../assets/img/svg/weuse/node-js.svg" alt=""> Node.js</span>.
+                </p>
             </div>
             <div class="weUse_wrap-list-item">
                 <h3>{{$t('Infrastructure')}}</h3>
@@ -135,7 +139,8 @@
                   <span><img src="../../assets/img/svg/weuse/elk.svg" alt=""> ELK</span> и другие.
                 </p>
             </div>
-            </div>
+          </div>
+
         </div>
       </div>
     </div>

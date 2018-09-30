@@ -5,45 +5,42 @@
         <h2 class="sec-title">{{$t('Contacts')}}</h2>
         <div class="contacts-wrap_list">
             <div class="contacts-wrap_list-item address">
-                <h5>{{$t('address')}}</h5>
                 <p>Bishkek, Ibraimova, 103, Business center Victory, 5th floor</p>
             </div>
             <div class="contacts-wrap_list-item phone-mail">
-                <h5>{{$t('Contact')}}</h5>
                 <div class="phone-mail_wrap">
                     <a href="tel:+996 555 429 055">+996 555 429 055</a>
                     <a href="mailto:rock@maddevs.io">rock@maddevs.io</a>
                 </div>
             </div>
             <div class="contacts-wrap_list-item social-icons">
-                <h5>{{$t('Social network')}}</h5>
                 <div class="social-icons_list">
-                    <a href="https://github.com/maddevsio">
-                        <img src="../../assets/img/svg/footer/git-copy.svg" alt="Github">
+                    <a href="https://github.com/maddevsio" target="_blank">
+                        <img src="../../assets/img/svg/footer/git.svg" alt="Github">
                     </a>
-                    <a href="https://www.facebook.com/maddevsio">
-                        <img src="../../assets/img/svg/footer/fb-copy.svg" alt="Facebook">
+                    <a href="https://www.facebook.com/maddevsio" target="_blank">
+                        <img src="../../assets/img/svg/footer/fb.svg" alt="Facebook">
                     </a>
-                    <a href="https://www.instagram.com/maddevsio/">
-                        <img src="../../assets/img/svg/footer/insta-copy.svg" alt="Instagram">
+                    <a href="https://www.instagram.com/maddevsio/" target="_blank">
+                        <img src="../../assets/img/svg/footer/insta.svg" alt="Instagram">
                     </a>
-                    <a href="https://blog.maddevs.io/">
-                        <img src="../../assets/img/svg/footer/medium-copy.svg" alt="Medium">
+                    <a href="https://blog.maddevs.io/" target="_blank">
+                        <img src="../../assets/img/svg/footer/medium.svg" alt="Medium">
                     </a>
-                    <a href="https://twitter.com/MadDevsIO">
-                        <img src="../../assets/img/svg/footer/tw-copy.svg" alt="Twitter">
+                    <a href="https://twitter.com/MadDevsIO" target="_blank">
+                        <img src="../../assets/img/svg/footer/tw.svg" alt="Twitter">
                     </a>
-                    <a href="https://www.slideshare.net/maddevs/presentations">
-                        <img src="../../assets/img/svg/footer/slide-copy.svg" alt="Slideshare">
+                    <a href="https://www.slideshare.net/maddevs/presentations" target="_blank">
+                        <img src="../../assets/img/svg/footer/slide.svg" alt="Slideshare">
                     </a>
-                    <a href="https://www.youtube.com/playlist?list=PLsmdb5W8ytypyXt1ut3lfBOnOZnDNqYIN">
-                        <img src="../../assets/img/svg/footer/yt-copy-8.svg" alt="Youtube">
+                    <a href="https://www.youtube.com/playlist?list=PLsmdb5W8ytypyXt1ut3lfBOnOZnDNqYIN" target="_blank">
+                        <img src="../../assets/img/svg/footer/yt.svg" alt="Youtube">
                     </a>
-                    <a href="https://www.behance.net/maddevs">
-                        <img src="../../assets/img/svg/footer/beh-copy.svg" alt="Behance">
+                    <a href="https://www.behance.net/maddevs" target="_blank">
+                        <img src="../../assets/img/svg/footer/beh.svg" alt="Behance">
                     </a>
-                    <a href="https://t.me/maddevsio">
-                        <img src="../../assets/img/svg/footer/tel-copy.svg" alt="Telegram">
+                    <a href="https://t.me/maddevsio" target="_blank">
+                        <img src="../../assets/img/svg/footer/tel.svg" alt="Telegram">
                     </a>
                 </div>
             </div>
