@@ -52,7 +52,7 @@
           </div>
         </div> -->
       <div class="footer-copyright">
-        <p>© Mad Devs <img src="../assets/img/png/banner/i-love-you-hand-sign_1f91f.png" alt=""> 2018</p>
+        <p>© Mad Devs <img src="../assets/img/png/banner/i-love-you-hand-sign_1f91f.png" alt=""> {{ this.year }}</p>
       </div>
     </div>
   </footer>
@@ -60,6 +60,14 @@
 
 <script>
 export default {
-  name: 'main-footer'
+  name: 'main-footer',
+  data() {
+    return {
+      year: 0
+    };
+  },
+  mounted() {
+    this.year = (new Date).getFullYear();
+  }
 };
 </script>
