@@ -435,6 +435,7 @@
         }
     }
     .partners {
+        padding: 80px 0;
         &_wrap {
             &-icons {
                 &_row {
@@ -447,10 +448,18 @@
                         }
                     }
                     .scentomania {
-                        width: 100%;
-                        order: 1;
                         img {
                             height: 15px;
+                        }
+                    }
+                    .photobook {
+                        img {
+                            height: 18px;
+                        }
+                    }
+                    .tengri {
+                        img {
+                            height: 18px;
                         }
                     }
                     .last-icon {
