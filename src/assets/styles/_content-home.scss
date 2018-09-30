@@ -532,13 +532,14 @@
 .reviews {
   width: 100%;
   background-image: linear-gradient(112deg, #f34f53, #fc944e);
-  padding: 120px 0 45px;
+  padding: 120px 0 80px;
   &_wrap {
     background-image: url('../../assets/img/svg/reviews-bg.svg');
     background-position: center;
     background-repeat: no-repeat;
     h2 {
       color: #fff;
+      font-size: 40px;
     }
     &-carousel {
       &-slide {
@@ -550,10 +551,10 @@
         width: 100%;
         &_desc {
           max-width: 870px;
-          font-size: 24px;
+          font-size: 28px;
           font-family: 'MADEEvolveSans-regular';
           line-height: 1.5;
-          padding: 70px 0 63px;
+          padding: 70px 0 43px;
           color: #fff;
         }
         .sender {
@@ -567,7 +568,7 @@
             background-color: #fff;
           }
           p {
-            font-size: 16px;
+            font-size: 18px;
             font-family: 'MADEEvolveSans-regular';
             color: #fff;
             line-height: 1.43;

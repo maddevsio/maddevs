@@ -5,38 +5,39 @@
         <h2 class="sec-title">{{$t('Сlient feedback ')}}</h2>
          <carousel :per-page="1" :navigate-to="someLocalProperty" mouse-drag:false class="reviews_wrap-carousel">
             <slide class="reviews_wrap-carousel-slide">
-                <p class="reviews_wrap-carousel-slide_desc">I have not had an issue with any of MadDevs team.  I have had a couple of project managers already, and various dev. teams.  The team are so knowledgeable, I feel very safe and secure these days as I spec. in my next bit of work.</p>
+                <p class="reviews_wrap-carousel-slide_desc">{{$t('Review-1 text')}}</p>
                 <div class="sender">
-                    <img src="" alt="Sender">
-                    <p><span>Mr. Kirk Duncan,</span> CEO of The Mobile App Man, Sydney, Australia</p>
+                    <p>{{$t('Review-1 name')}}</p>
                 </div>
             </slide>
             <slide class="reviews_wrap-carousel-slide">
-                <p class="reviews_wrap-carousel-slide_desc">I have not had an issue with any of MadDevs team.  I have had a couple of project managers already, and various dev. teams.  The team are so knowledgeable, I feel very safe and secure these days as I spec. in my next bit of work.</p>
+                <p class="reviews_wrap-carousel-slide_desc">{{$t('Review-2 text')}}</p>
                 <div class="sender">
-                    <img src="" alt="Sender">
-                    <p><span>Mr. Kirk Duncan,</span> CEO of The Mobile App Man, Sydney, Australia</p>
+                    <p>{{$t('Review-2 name')}}</p>
                 </div>
             </slide>
             <slide class="reviews_wrap-carousel-slide">
-                <p class="reviews_wrap-carousel-slide_desc">I have not had an issue with any of MadDevs team.  I have had a couple of project managers already, and various dev. teams.  The team are so knowledgeable, I feel very safe and secure these days as I spec. in my next bit of work.</p>
+                <p class="reviews_wrap-carousel-slide_desc">{{$t('Review-3 text')}}</p>
                 <div class="sender">
-                    <img src="" alt="Sender">
-                    <p><span>Mr. Kirk Duncan,</span> CEO of The Mobile App Man, Sydney, Australia</p>
+                    <p>{{$t('Review-3 name')}}</p>
                 </div>
             </slide>
             <slide class="reviews_wrap-carousel-slide">
-                <p class="reviews_wrap-carousel-slide_desc">I have not had an issue with any of MadDevs team.  I have had a couple of project managers already, and various dev. teams.  The team are so knowledgeable, I feel very safe and secure these days as I spec. in my next bit of work.</p>
+                <p class="reviews_wrap-carousel-slide_desc">{{$t('Review-4 text')}}</p>
                 <div class="sender">
-                    <img src="" alt="Sender">
-                    <p><span>Mr. Kirk Duncan,</span> CEO of The Mobile App Man, Sydney, Australia</p>
+                    <p>{{$t('Review-4 name')}}</p>
                 </div>
             </slide>
             <slide class="reviews_wrap-carousel-slide">
-                <p class="reviews_wrap-carousel-slide_desc">I have not had an issue with any of MadDevs team.  I have had a couple of project managers already, and various dev. teams.  The team are so knowledgeable, I feel very safe and secure these days as I spec. in my next bit of work.</p>
+                <p class="reviews_wrap-carousel-slide_desc">{{$t('Review-5 text')}}</p>
                 <div class="sender">
-                    <img src="" alt="Sender">
-                    <p><span>Mr. Kirk Duncan,</span> CEO of The Mobile App Man, Sydney, Australia</p>
+                    <p>{{$t('Review-5 name')}}</p>
+                </div>
+            </slide>
+            <slide class="reviews_wrap-carousel-slide">
+                <p class="reviews_wrap-carousel-slide_desc">{{$t('Review-6 text')}}</p>
+                <div class="sender">
+                    <p>{{$t('Review-6 name')}}</p>
                 </div>
             </slide>
         </carousel>
