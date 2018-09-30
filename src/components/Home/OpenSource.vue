@@ -79,10 +79,19 @@
         </div>
         <div class="open-source_wrap-projects_list-item op-proj-4">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/sf.svg" class="op-img-sf" alt="Sensor fusion">
+            <img src="../../assets/img/svg/openSource/PKL.svg" class="op-img-sf" alt="Sensor fusion">
           </div>
           <div class="projects-desc_wrap">
-            <h4>Sensor fusion</h4>
+            <h4>Peklo Tool</h4>
+            <p>{{$t('This application demonstrates the capabilities of various')}}</p>
+          </div>
+        </div>
+        <div class="open-source_wrap-projects_list-item op-proj-5">
+          <div class="projects-img_wrap">
+            <img src="../../assets/img/svg/openSource/Heimdall.svg" class="op-img-sf" alt="Heimdall">
+          </div>
+          <div class="projects-desc_wrap">
+            <h4>Heimdall</h4>
             <p>{{$t('This application demonstrates the capabilities of various')}}</p>
           </div>
         </div>
