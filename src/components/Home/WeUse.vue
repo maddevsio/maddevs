@@ -4,6 +4,9 @@
       <div class="weUse_wrap">
         <h2>{{ $t('In the work most often we apply') }}</h2>
         <div class="weUse_wrap-list">
+
+          <!-- Left column -->
+          <div class="weUse_wrap-list_column">
             <div class="weUse_wrap-list-item">
                 <h3>{{ $t('Frontend') }}</h3>
                 <p v-if="lang === 'en'">
@@ -41,6 +44,29 @@
                   и <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span>
                 </p>
             </div>
+            <div class="weUse_wrap-list-item">
+                <h3>{{$t('Project management')}}</h3>
+                <p v-if="lang === 'en'">
+                  Planning and tasks monitoring is done with
+                  <span><img src="../../assets/img/svg/weuse/jira.svg" alt=""> JIRA</span>,
+                  main communication goes through <span><img src="../../assets/img/svg/weuse/slack.svg" alt=""> Slack</span>
+                  and calls via<span><img src="../../assets/img/svg/weuse/hangouts.svg" alt=""> Hangouts</span>,
+                  <span><img src="../../assets/img/svg/weuse/zoom.svg" alt=""> Zoom</span>,
+                  <span><img src="../../assets/img/svg/weuse/skype.svg" alt=""> Skype</span>.
+                </p>
+                <p v-else>
+                  Планирование и отслеживание задач осуществляется с помощью
+                  <span><img src="../../assets/img/svg/weuse/jira.svg" alt=""> JIRA</span>,
+                  а коммуникация ведется в <span><img src="../../assets/img/svg/weuse/slack.svg" alt=""> Slack</span>
+                  и через созваны в <span><img src="../../assets/img/svg/weuse/hangouts.svg" alt=""> Hangouts</span>,
+                  <span><img src="../../assets/img/svg/weuse/zoom.svg" alt=""> Zoom</span>,
+                  <span><img src="../../assets/img/svg/weuse/skype.svg" alt=""> Skype</span>.
+                </p>
+            </div>
+          </div>
+
+          <!-- Right column -->
+          <div class="weUse_wrap-list_column">
             <div class="weUse_wrap-list-item">
                 <h3>{{$t('Backend')}}</h3>
                 <p v-if="lang === 'en'">
@@ -113,25 +139,8 @@
                   <span><img src="../../assets/img/svg/weuse/elk.svg" alt=""> ELK</span> и другие.
                 </p>
             </div>
-            <div class="weUse_wrap-list-item">
-                <h3>{{$t('Project management')}}</h3>
-                <p v-if="lang === 'en'">
-                  Planning and tasks monitoring is done with
-                  <span><img src="../../assets/img/svg/weuse/jira.svg" alt=""> JIRA</span>,
-                  main communication goes through <span><img src="../../assets/img/svg/weuse/slack.svg" alt=""> Slack</span>
-                  and calls via<span><img src="../../assets/img/svg/weuse/hangouts.svg" alt=""> Hangouts</span>,
-                  <span><img src="../../assets/img/svg/weuse/zoom.svg" alt=""> Zoom</span>,
-                  <span><img src="../../assets/img/svg/weuse/skype.svg" alt=""> Skype</span>.
-                </p>
-                <p v-else>
-                  Планирование и отслеживание задач осуществляется с помощью
-                  <span><img src="../../assets/img/svg/weuse/jira.svg" alt=""> JIRA</span>,
-                  а коммуникация ведется в <span><img src="../../assets/img/svg/weuse/slack.svg" alt=""> Slack</span>
-                  и через созваны в <span><img src="../../assets/img/svg/weuse/hangouts.svg" alt=""> Hangouts</span>,
-                  <span><img src="../../assets/img/svg/weuse/zoom.svg" alt=""> Zoom</span>,
-                  <span><img src="../../assets/img/svg/weuse/skype.svg" alt=""> Skype</span>.
-                </p>
-            </div>
+          </div>
+
         </div>
       </div>
     </div>
