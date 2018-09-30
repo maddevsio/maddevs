@@ -1,7 +1,7 @@
 <template>
   <footer id="footer" class="footer">
     <div class="container">
-      <div class="footer-wrap">
+      <!-- <div class="footer-wrap">
         <div class="footer-wrap_list">
             <div class="footer-wrap_list-links">
               <h5>Услуги</h5>
@@ -49,11 +49,8 @@
                 <a href="#">Стажировка</a>
               </div>
             </div>
-            <div class="footer-wrap_list-links footer-wrap_list-links--fake">
-              <!-- Fake -->
-            </div>
           </div>
-        </div>
+        </div> -->
       <div class="footer-copyright">
         <p>© Mad Devs <img src="../assets/img/png/banner/i-love-you-hand-sign_1f91f.png" alt=""> 2018</p>
       </div>
@@ -63,6 +60,6 @@
 
 <script>
 export default {
-  name: 'footer'
+  name: 'main-footer'
 };
 </script>
