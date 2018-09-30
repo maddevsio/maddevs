@@ -970,14 +970,14 @@
 
 // --------------- Associations --------------- //
 .associations {
-  padding: 160px 0 170px;
+  padding: 120px 0 140px;
   &-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     h3 {
-      line-height: 1.42;
-      font-size: 24px;
+      font-size: 40px;
+      line-height: 55px;
       font-family: 'MADEEvolveSans-medium', sans-serif;
       font-weight: normal;
       color: #2c1c1c;
@@ -988,7 +988,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 75px;
+      margin-top: 65px;
     }
   }
 }
