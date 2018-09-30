@@ -239,6 +239,19 @@
             }
         }
     }
+    .press {
+        &-wrap {
+            flex-direction: column;
+            align-items: center;
+            &_item {
+                width: 430px;
+                max-width: 430px;
+                &:first-child {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width: 830px) {
     #go-down {
