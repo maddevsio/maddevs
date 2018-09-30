@@ -860,9 +860,25 @@
             transition: all .1s ease;
             opacity: 0;
           }
+          &__header {
+            display: flex;
+            justify-content: flex-start;
+            p {
+              margin: auto 5px;
+            }
+            &-line {
+              border-left: 3px solid rgba(203, 201, 201, 0.877);
+              margin-left: -8px;
+            }
+            img {
+              margin: 0;
+              width: 20px;
+              height: 20px;
+            }
+          }
         }
         img {
-          width: auto;
+          width: 100%;
           min-height: 100%;
           object-fit: cover;
         }
@@ -921,16 +937,10 @@
     a {
       font-size: 13px;
       font-family: 'MADEEvolveSans-bold', sans-serif;
-      color: #ec2227;
       line-height: 1.85;
       letter-spacing: 0.2px;
-      text-transform: uppercase;
       text-decoration: none;
       padding: 10px 0;
-      img {
-        width: 12px;
-        margin-left: 5px;
-      }
     }
   }
 }

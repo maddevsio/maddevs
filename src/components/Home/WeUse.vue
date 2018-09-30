@@ -2,7 +2,7 @@
   <section id="weUse" class="weUse">
     <div class="container">
       <div class="weUse_wrap">
-        <h2>{{ $t('In the work most often we apply') }}</h2>
+        <h2>{{ $t('Technical Expertise') }}</h2>
         <div class="weUse_wrap-list">
 
           <!-- Left column -->
@@ -27,22 +27,22 @@
                 </p>
             </div>
             <div class="weUse_wrap-list-item">
-                <h3>{{$t('Mobile development')}}</h3>
-                <p v-if="lang === 'en'">
-                  We develop mobile applications for both <span>iOS</span> and <span>Android</span>.
-                  For the development of <span>iOS</span>
-                  We use <img src="../../assets/img/svg/weuse/swift.svg" alt="">
-                  and <span> <img src="../../assets/img/svg/weuse/objective.svg" alt=""> Objective-C</span>.
-                  <span> <img src="../../assets/img/svg/weuse/java.svg" alt=""> Java</span>
-                  and <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span> - For <span>Android</span>
-                </p>
-                <p v-else>
-                  Мы занимаемся мобильной разработкой под <span>iOS</span> и <span>Android</span>.
-                  Для разработки <span>iOS</span> приложений <span>Mad Devs</span> использует <img src="../../assets/img/svg/weuse/swift.svg" alt="">
-                  и <span> <img src="../../assets/img/svg/weuse/objective.svg" alt=""> Objective-C</span>.
-                  Для <span>Android</span> <span><img src="../../assets/img/svg/weuse/java.svg" alt=""> Java</span>
-                  и <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span>
-                </p>
+              <h3>{{$t('Mobile development')}}</h3>
+              <p v-if="lang === 'en'">
+                We develop mobile applications for both <span>iOS</span> and <span>Android</span>.
+                For the development of <span>iOS</span>
+                We use <img src="../../assets/img/svg/weuse/swift.svg" alt="">
+                and <span> <img src="../../assets/img/svg/weuse/objective.svg" alt=""> Objective-C</span>.
+                <span> <img src="../../assets/img/svg/weuse/java.svg" alt=""> Java</span>
+                and <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span> - For <span>Android</span>
+              </p>
+              <p v-else>
+                Мы занимаемся мобильной разработкой под <span>iOS</span> и <span>Android</span>.
+                Для разработки <span>iOS</span> приложений <span>Mad Devs</span> использует <img src="../../assets/img/svg/weuse/swift.svg" alt="">
+                и <span> <img src="../../assets/img/svg/weuse/objective.svg" alt=""> Objective-C</span>.
+                Для <span>Android</span> <span><img src="../../assets/img/svg/weuse/java.svg" alt=""> Java</span>
+                и <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span>
+              </p>
             </div>
             <div class="weUse_wrap-list-item">
                 <h3>{{$t('Project management')}}</h3>
