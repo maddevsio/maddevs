@@ -24,7 +24,7 @@
   "for you and closely": "для вас и",
   "communicate": "комуникация",
   "with our clients and inside the team": "с клиентами внутри команды",
-  "In the work most often we apply": "В работе чаще всего мы используем",
+  "Technical Expertise": "В работе чаще всего мы применяем",
   "Frontend": "Фронтенд",
   "On the frontend we work with": "На фронтенде мы работаем с ",
   "combining it with frameworks as": "сочетая его",
@@ -36,9 +36,9 @@
   "Backend": "Бекенд",
   "We also use": "Так же мы используем",
   "and build a front-end using": "и для сборки фронтенда используем",
-  "We are constantly developing the team": "Мы постоянно занимаемся развитием команды",
+  "Besides the main work, our teams contribute to open source": "Мы постоянно занимаемся развитием команды",
   "through open-source projects": "через опен-сорс проекты",
-  "With us already working": "С нами уже работают",
+  "Our partners": "С нами уже работают",
   "Сlient feedback ": "Отзывы клиентов",
   "Infrastructure": "Инфраструктура",
   "Project management": "Управление проектами",
@@ -77,5 +77,7 @@
   "The most often issues of the increasing load and project scaling and solutions to them": "Самые частые проблемы и пути решения при росте нагрузки и масштабировании проекта",
   "Agile vulnarabilites and solutions to them": "Технарь не сапожник, Agile не подорожник",
   "Project Management Tools": "ПМские тулзы",
-  "PM Digital Nomad (or How to Manage a Totally Remote Team)": "PM Digital Nomad (or How to Manage a Totally Remote Team)"
+  "PM Digital Nomad (or How to Manage a Totally Remote Team)": "PM Digital Nomad (or How to Manage a Totally Remote Team)",
+  "We are hungry not only to gain new knowledge but also share it, and we are regular speakers on the conferences": "__STRING_NOT_TRANSLATED__",
+  "Chat bot for automatization of remote standups": "Чат бот для автоматизации удаленных стендапов"
 }
