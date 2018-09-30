@@ -331,6 +331,9 @@
       &_wrap {
         &-list {
           flex-direction: column;
+          &_column {
+              width: 100%;
+          }
           &-item {
               width: 100%;
               margin-top: 60px;
@@ -678,6 +681,11 @@
     }
     .press {
         padding-top: 80px;
+        &-wrap {
+            &_item {
+                width: 100%;
+            }
+        }
     }
     .contacts {
         padding: 60px 0 40px;
