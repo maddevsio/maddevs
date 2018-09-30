@@ -2,7 +2,7 @@
   <section id="open-source" class="open-source">
     <div class="container">
       <div class="open-source_wrap">
-        <h2 class="sec-title">{{$t('We are constantly developing the team')}} <br> {{$t('through open-source projects')}}</h2>
+        <h2 class="sec-title">{{$t('Besides the main work, our teams contribute to open source')}} <br> {{$t('through open-source projects')}}</h2>
         <div class="open-source_wrap-github">
           <div class="open-source_wrap-github-item github-link">
             <img src="../../assets/img/svg/openSource/avatar-md.svg" alt="Mad Devs logotype">
@@ -27,7 +27,7 @@
           <div class="open-source_wrap-github-item">
             <div class="github-info">
               <img src="../../assets/img/svg/openSource/repo.svg" alt="Repos">
-              <p>{{ this.githubData.repos, $t('projects')}}</p>
+              <p>{{ this.githubData.repos}} {{$t('projects')}}</p>
             </div>
             <div class="github-info">
               <img src="../../assets/img/svg/openSource/commit.svg" alt="Commits">
@@ -79,10 +79,19 @@
         </div>
         <div class="open-source_wrap-projects_list-item op-proj-4">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/sf.svg" class="op-img-sf" alt="Sensor fusion">
+            <img src="../../assets/img/svg/openSource/PKL.svg" class="op-img-sf" alt="Sensor fusion">
           </div>
           <div class="projects-desc_wrap">
-            <h4>Sensor fusion</h4>
+            <h4>Peklo Tool</h4>
+            <p>{{$t('This application demonstrates the capabilities of various')}}</p>
+          </div>
+        </div>
+        <div class="open-source_wrap-projects_list-item op-proj-5">
+          <div class="projects-img_wrap">
+            <img src="../../assets/img/svg/openSource/Heimdall.svg" class="op-img-sf" alt="Heimdall">
+          </div>
+          <div class="projects-desc_wrap">
+            <h4>Heimdall</h4>
             <p>{{$t('This application demonstrates the capabilities of various')}}</p>
           </div>
         </div>
