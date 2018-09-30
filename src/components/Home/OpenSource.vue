@@ -45,7 +45,7 @@
           </div>
           <div class="projects-desc_wrap">
             <h4>Peklo Tool</h4>
-            <p>{{$t('This application demonstrates the capabilities of various')}}</p>
+            <p>{{$t('Tool for automatization of contextual advertising creation')}}</p>
           </div>
         </div>
         <div class="open-source_wrap-projects_list-item op-proj-5">
@@ -54,7 +54,7 @@
           </div>
           <div class="projects-desc_wrap">
             <h4>Heimdall</h4>
-            <p>{{$t('This application demonstrates the capabilities of various')}}</p>
+            <p>{{$t('Tool for analyzing smart contracts using mythril')}}</p>
           </div>
         </div>
       </div>
