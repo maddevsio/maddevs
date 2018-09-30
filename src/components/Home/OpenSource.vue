@@ -2,7 +2,7 @@
   <section id="open-source" class="open-source">
     <div class="container">
       <div class="open-source_wrap">
-        <h2 class="sec-title">{{$t('We are constantly developing the team')}} <br> {{$t('through open-source projects')}}</h2>
+        <h2 class="sec-title">{{$t('Besides the main work, our teams contribute to open source')}} <br> {{$t('through open-source projects')}}</h2>
         <div class="open-source_wrap-github">
           <div class="open-source_wrap-github-item github-link">
             <img src="../../assets/img/svg/openSource/avatar-md.svg" alt="Mad Devs logotype">
@@ -27,7 +27,7 @@
           <div class="open-source_wrap-github-item">
             <div class="github-info">
               <img src="../../assets/img/svg/openSource/repo.svg" alt="Repos">
-              <p>{{ this.githubData.repos, $t('projects')}}</p>
+              <p>{{ this.githubData.repos}} {{$t('projects')}}</p>
             </div>
             <div class="github-info">
               <img src="../../assets/img/svg/openSource/commit.svg" alt="Commits">
