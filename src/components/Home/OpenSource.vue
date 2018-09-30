@@ -1,50 +1,12 @@
 <template>
   <section id="open-source" class="open-source">
-    <div class="container">
-      <div class="open-source_wrap">
+    <div class="open-source_wrap">
+      <div class="container">
         <h2 class="sec-title">{{$t('Besides the main work, our teams contribute to open source')}} <br> {{$t('through open-source projects')}}</h2>
-        <div class="open-source_wrap-github">
-          <div class="open-source_wrap-github-item github-link">
-            <img src="../../assets/img/svg/openSource/avatar-md.svg" alt="Mad Devs logotype">
-            <div class="github-link_desc">
-              <h5>Mad Devs</h5>
-              <a class="github-link" href="https://github.com/maddevsio">
-                <img src="../../assets/img/svg/openSource/link.svg" alt="Link">
-                https://github.com/maddevsio
-              </a>
-            </div>
-          </div>
-          <div class="open-source_wrap-github-item">
-            <div class="github-info">
-              <img src="../../assets/img/svg/openSource/calendar.svg" alt="Calendar">
-              <p>{{$t('Updated')}} 3{{$t('h ago')}} </p>
-            </div>
-            <div class="github-info">
-              <img src="../../assets/img/svg/openSource/stars.svg" alt="Stars">
-              <p>3863 {{$t('stars')}}</p>
-            </div>
-          </div>
-          <div class="open-source_wrap-github-item">
-            <div class="github-info">
-              <img src="../../assets/img/svg/openSource/repo.svg" alt="Repos">
-              <p>{{ this.githubData.repos}} {{$t('projects')}}</p>
-            </div>
-            <div class="github-info">
-              <img src="../../assets/img/svg/openSource/commit.svg" alt="Commits">
-              <p>16883 {{ $t('commits')}}</p>
-            </div>
-          </div>
-          <div class="open-source_wrap-github-item">
-            <div class="github-info">
-              <img src="../../assets/img/svg/openSource/branch.svg" alt="Branch">
-              <p>1327 {{$t('forks')}}</p>
-            </div>
-            <div class="github-info">
-              <img src="../../assets/img/svg/openSource/issues.svg" alt="Issues">
-              <p>72 {{$t('tasks')}}</p>
-            </div>
-          </div>
-        </div>
+        <a class="open-source_wrap_btn" href="https://github.com/maddevsio" target="_blank">
+          <img src="../../assets/img/svg/openSource/github-light.svg" alt="Github">
+          Mad Devs on GitHub
+        </a>
       </div>
     </div>
     <div class="open-source_wrap-projects">

@@ -637,76 +637,48 @@
 
 // ------------------ OpenSource --------------------//
 .open-source {
-  padding: 160px 0;
+  padding-bottom: 80px;
   &_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+    background-color: #fff8e9;
     h2 {
       color: #2c1c1c;
+      font-size: 40px;
+      font-family: 'MADEEvolveSans-medium', sans-serif;
+      line-height: 55px;
+      font-weight: normal;
     }
-    &-github {
+    &_btn {
+      max-width: 340px;
+      max-height: 70px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
-      margin-top: 120px;
-      margin-bottom: 148px;
-      .github-link {
-        display: flex;
-        img {
-          margin-right: 12px;
-        }
-        &_desc {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          h5 {
-            font-family: 'MADEEvolveSans-regular', sans-serif;
-            font-size: 32px;
-            line-height: 0.69;
-            color: #000;
-            font-weight: 300;
-          }
-          a {
-            display: flex;
-            align-items: center;
-            font-family: 'MADEEvolveSans-regular', sans-serif;
-            font-size: 20px;
-            color: #ec2227;
-            line-height: 0.9;
-            letter-spacing: 0.2px;
-            font-weight: lighter;
-            text-decoration: none;
-            img {
-              min-height: 24px;
-              max-height: 24px;
-              margin-right: 8px;
-            }
-          }
-        }
-      }
-      .github-info {
-        display: flex;
-        align-items: center;
-        margin: 24px 0;
-        img {
-          height: 24px;
-          margin-right: 8px;
-        }
-        p {
-          font-size: 20px;
-          font-family: 'MADEEvolveSans-regular', sans-serif;
-          line-height: 0.9;
-          letter-spacing: 0.2px;
-          color: #000000;
-        }
+      justify-content: center;
+      padding: 20px 40px;
+      border-radius: 5px;
+      background-color: #1e1e1e;
+      font-size: 24px;
+      font-family: 'MADEEvolveSans-medium', sans-serif;
+      color: #fff;
+      text-decoration: none;
+      box-sizing: border-box;
+      margin: 0 auto;
+      margin-top: 40px;
+      img {
+        margin-right: 15px;
       }
     }
     &-projects {
+      margin-top: 120px;
       h3 {
         width: 100%;
         text-align: center;
         color: #000000;
-        font-size: 24px;
-        line-height: 1.5;
+        font-size: 40px;
+        line-height: 54px;
         font-weight: 500;
         font-family: 'MADEEvolveSans-medium', sans-serif;
       }
