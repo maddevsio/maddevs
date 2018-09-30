@@ -320,29 +320,30 @@
 
 //---------------------- How it work ----------------//
 .how-it-work {
-  padding-top: 280px;
+  padding-top: 190px;
   &_wrap {
     h2 {
       width: 100%;
       text-align: center;
       color: #2c1c1c;
-      font-size: 44px;
-      line-height: 1;
-      font-family: 'MADEEvolveSans-bold', sans-serif;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 53px;
+      font-family: 'MADEEvolveSans-medium', sans-serif;
     }
     p {
       text-align: center;
-      font-size: 24px;
-      line-height: 1.46;
+      font-size: 28px;
+      line-height: 42px;
       max-width: 635px;
       margin: 0 auto;
       margin-top: 30px;
       font-family: 'MADEEvolveSans-regular';
     }
     &-content {
-      background-color: #fffdf9;
-      padding: 120px 0;
-      margin-top: 160px;
+      background-color: #fff8e9;
+      padding: 80px 0;
+      margin-top: 120px;
       .container {
         display: flex;
         justify-content: space-between;
@@ -350,8 +351,8 @@
       }
       &-title {
         width: 525px;
-        font-size: 32px;
-        line-height: 1.38;
+        font-size: 28px;
+        line-height: 42px;
         font-family: 'MADEEvolveSans-regular', sans-serif;
         font-weight: normal;
         margin-right: 30px;
@@ -391,7 +392,7 @@
 //------------------ Best Practices ------------------//
 .best-practices {
   background-color: #1e1e1e;
-  padding: 120px 0;
+  padding: 80px 0;
   &_wrap {
     display: flex;
     justify-content: space-between;
@@ -447,7 +448,7 @@
           span {
             color: #3b3b3b;
             font-size: 14px;
-            margin-top: 30px;
+            margin-top: 27px;
             font-family: 'FiraMono', sans-serif;
             @media only screen and (max-width: 480px) {
               margin-top: 19px;
@@ -463,8 +464,8 @@
           }
         }
         h3 {
-          font-size: 32px;
-          line-height: 1.45;
+          font-size: 28px;
+          line-height: 42px;
           font-family: 'MADEEvolveSans-regular', sans-serif;
           font-weight: normal;
           color: #fff;
@@ -481,24 +482,27 @@
 
 //------------------ weUse ----------------//
 .weUse {
-  padding: 160px 0;
+  padding: 120px 0;
   &_wrap {
     h2 {
       width: 100%;
       text-align: center;
-      font-size: 32px;
-      font-family: 'MADEEvolveSans-regular', sans-serif;
-      line-height: 1.38;
+      font-size: 40px;
+      font-family: 'MADEEvolveSans-medium', sans-serif;
+      line-height: 54px;
       font-weight: normal;
       color: #2c1c1c;
     }
     &-list {
       display: flex;
+      align-items: flex-start;
       justify-content: space-between;
       flex-wrap: wrap;
-      &-item {
+      &_column {
         width: 48%;
-        margin-top: 80px;
+      }
+      &-item {
+        margin-top: 65px;
         h3 {
           margin-bottom: 16px;
           font-size: 22px;
