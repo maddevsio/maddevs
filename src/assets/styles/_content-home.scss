@@ -378,7 +378,7 @@
       &-slider {
         width: 660px;
         height: auto;
-        max-height: 380px;
+        max-height: 375px;
         overflow: hidden;
         border-radius: 5px;
         box-shadow: 0 10px 20px 0 rgba(20, 44, 56, 0.27), 0 3px 10px 0 rgba(20, 44, 56, 0.08);
@@ -405,7 +405,8 @@
     align-items: center;
     &-preview {
       width: 660px;
-      height: 380px;
+      height: auto;
+      max-height: 375px;
       box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15);
       background-color: #1e1e1e;
       &-slides {
@@ -548,6 +549,9 @@
       color: #fff;
       font-size: 40px;
     }
+    .VueCarousel-dot-container .VueCarousel-dot:last-child {
+      margin-top: 0 !important;
+    }
     &-carousel {
       &-slide {
         display: flex;
@@ -588,6 +592,7 @@
             color: #fff;
             line-height: 1.43;
             text-align: left;
+            white-space: nowrap;
             span {
               font-family: 'MADEEvolveSans-bold';
             }

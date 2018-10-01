@@ -5,7 +5,7 @@
       <p>{{ $t('Since we are working remotely we strongly believe in the transparency of work, pay special attention to communication and keep strict compliance to working processes') }}</p>
       <div class="how-it-work_wrap-content">
         <div class="container">
-          <h3 v-if="lang === 'en'" class="how-it-work_wrap-content-title" @click="setSlideHeight">
+          <h3 v-if="lang === 'en'" class="how-it-work_wrap-content-title">
             We assemble technical <span @click="setAtiveSlide(1)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 1 }">team</span>,
             <span @click="setAtiveSlide(0)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 0 }">manage</span> it for you and closely
             <span @click="setAtiveSlide(2)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 2 }">communicate</span>
@@ -18,7 +18,7 @@
             и как <span @click="setAtiveSlide(2)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 2 }">коммуницируем</span>
             внутри и с клиентами.
           </h3>
-          <div class="how-it-work_wrap-content-slider" :style="{ 'height': slideHeight + 'px' }">
+          <div class="how-it-work_wrap-content-slider">
             <carousel v-on:pageChange="onPageChange" :loop=true :autoplayLoop="true" :autoplay="true" :autoplayTimeout="5000" :per-page="1" :navigate-to="activeSlide" :paginationEnabled="false" loop:true mouse-drag:false class="how-it-work_wrap-content-slides">
               <slide class="how-it-work_wrap-content-slide">
                 <picture>
