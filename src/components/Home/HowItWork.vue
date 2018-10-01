@@ -6,11 +6,10 @@
       <div class="how-it-work_wrap-content">
         <div class="container">
           <h3 v-if="lang === 'en'" class="how-it-work_wrap-content-title" @click="setSlideHeight">
-            We assemble and
-            <span @click="setAtiveSlide(0)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 0 }">manage</span>
-            technical <span @click="setAtiveSlide(1)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 1 }">team</span>
-            for you and closely <span @click="setAtiveSlide(2)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 2 }">communicate</span>
-            with our clients and inside the team.
+            We assemble technical <span @click="setAtiveSlide(1)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 1 }">team</span>,
+            <span @click="setAtiveSlide(0)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 0 }">manage</span> it for you and closely
+            <span @click="setAtiveSlide(2)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 2 }">communicate</span>
+            with our clients and inside the team. 
           </h3>
           <h3 v-else class="how-it-work_wrap-content-title">
             Посмотрите как мы подходим к работе с
