@@ -33,18 +33,18 @@
               autoplayHoverPause
               class="how-it-work_wrap-content-slides"
             >
+            <slide class="how-it-work_wrap-content-slide">
+                <picture>
+                    <source srcset="../../assets/img/png/how-it-work/hiw2.png"
+                      media="(max-width: 992px)">
+                    <img src="../../assets/img/png/how-it-work/hiw2@2x.png">
+                </picture>
+              </slide>
               <slide class="how-it-work_wrap-content-slide">
                 <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw1.png"
                       media="(max-width: 992px)">
                     <img ref="image" src="../../assets/img/png/how-it-work/hiw1@2x.png">
-                </picture>
-              </slide>
-              <slide class="how-it-work_wrap-content-slide">
-                <picture>
-                    <source srcset="../../assets/img/png/how-it-work/hiw2.png"
-                      media="(max-width: 992px)">
-                    <img src="../../assets/img/png/how-it-work/hiw2@2x.png">
                 </picture>
               </slide>
               <slide class="how-it-work_wrap-content-slide">
