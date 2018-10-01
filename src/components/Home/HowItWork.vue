@@ -6,8 +6,8 @@
       <div class="how-it-work_wrap-content">
         <div class="container">
           <h3 v-if="lang === 'en'" class="how-it-work_wrap-content-title">
-            We assemble technical <span @click="setAtiveSlide(1)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 1 }">team</span>,
-            <span @click="setAtiveSlide(0)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 0 }">manage</span> it for you and closely
+            We assemble technical <span @click="setAtiveSlide(0)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 0 }">team</span>,
+            <span @click="setAtiveSlide(1)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 1 }">manage</span> it for you and closely
             <span @click="setAtiveSlide(2)" :class="{ 'how-it-work_wrap-content-slide_active': activeSlide == 2 }">communicate</span>
             with our clients and inside the team.
           </h3>
@@ -19,7 +19,20 @@
             внутри и с клиентами.
           </h3>
           <div class="how-it-work_wrap-content-slider">
-            <carousel v-on:pageChange="onPageChange" :loop=true :autoplayLoop="true" :autoplay="true" :autoplayTimeout="5000" :per-page="1" :navigate-to="activeSlide" :paginationEnabled="false" loop:true mouse-drag:false class="how-it-work_wrap-content-slides">
+            <carousel
+              v-on:pageChange="onPageChange"
+              :loop=true
+              :autoplayLoop="true"
+              :autoplay="true"
+              :autoplayTimeout="5000"
+              :per-page="1"
+              :navigate-to="activeSlide"
+              :paginationEnabled="false"
+              loop:true
+              mouse-drag:false
+              autoplayHoverPause
+              class="how-it-work_wrap-content-slides"
+            >
               <slide class="how-it-work_wrap-content-slide">
                 <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw1.png"
