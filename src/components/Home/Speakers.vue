@@ -92,7 +92,7 @@
                         </div>
                     </div>
                      <a target="_blank" href="https://www.slideshare.net/maddevs/ss-116840322">
-                        <p>{{$t('Applied Hardware Programming. The case of water ordering automatization')}}</p>
+                        <p>{{$t('Applied Hardware Programming The case of water ordering automatization')}}</p>
                     </a>
                 </div>
             </div>
@@ -118,7 +118,7 @@
                         </div>
                     </div>
                     <a target="_blank" href="https://www.slideshare.net/maddevs/kotlin-116845515">
-                        <p>{{$t('Kotlin. Introduction. ')}}</p>
+                        <p>{{$t('Kotlin Introduction')}}</p>
                     </a>
                 </div>
             </div>
@@ -158,7 +158,7 @@
                         </div>
                     </div>
                     <a href="https://www.slideshare.net/maddevs/project-management-central-asia-vs-united-states" target="_blank">
-                        <p>{{$t('Project Management. Central Asia vs. the US')}}</p>
+                        <p>{{$t('Project Management Central Asia vs the US')}}</p>
                     </a>
                 </div>
             </div>
