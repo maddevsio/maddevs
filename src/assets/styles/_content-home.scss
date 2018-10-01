@@ -476,9 +476,10 @@
           font-weight: normal;
           color: #fff;
           span {
-            font-family: 'Monaco', sans-serif;
-            border-radius: 3px;
+            font-family: 'MADEEvolveSans-medium', sans-serif;
             cursor: pointer;
+            padding: 0 5px;
+            transition: all .2s ease;
           }
         }
       }
