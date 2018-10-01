@@ -122,7 +122,7 @@
               </div>
               <p class="banner-slack_content-item-text">
                 <span>@here</span>
-                {{ $t('We achieve it by doing what we are best at technical execution and consultations, qualified software development, support and team monitoring') }}
+                {{ $t('We achieve it by doing what we are best at technical execution and consultations')}}, <span class="banner-slack_content-item-text-red-span">{{$t('qualified software development')}}</span>, {{$t('support and team monitoring') }}
               </p>
               <div class="banner-slack_content-item-status">
                 <div class="banner-slack_content-item-status-item" @click="slack7++">

@@ -285,6 +285,12 @@
           line-height: 1.59;
           margin: 4px 0 15px;
           padding-left: 35px;
+          &-red-span {
+            color: #b30606;
+            border-radius: 4px;
+            background-color: #f9f9f9 !important;
+            border: solid 1px #e8e8e8;
+          }
           span {
             font-family: 'OpenSans-SemiBold', sans-serif;
             background-color: #fff6cd;
