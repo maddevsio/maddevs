@@ -878,6 +878,9 @@
             @media screen and (max-width: 480px){
               font-size: 14px;
             }
+            @media screen and (max-width: 1200px){
+              font-size: 16px;
+            }
           }
           &__header {
             display: flex;
@@ -891,6 +894,11 @@
               @media screen and (max-width: 480px){
                 p {
                   font-size: 14px;
+                }
+              }
+              @media screen and (max-width: 1200px){
+                p {
+                  font-size: 16px;
                 }
               }
             }
