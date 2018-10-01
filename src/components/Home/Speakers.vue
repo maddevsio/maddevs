@@ -193,7 +193,7 @@
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
-                            <p>Стачка 2017</p>
+                            <p>{{$t('Stachka 2017')}}</p>
                         </div>
                     </div>
                     <a href="https://www.slideshare.net/maddevs/agile-116851299" target="_blank">
