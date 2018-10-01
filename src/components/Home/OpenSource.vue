@@ -2,7 +2,7 @@
   <section id="open-source" class="open-source">
     <div class="open-source_wrap">
       <div class="container">
-        <h2 class="sec-title">{{$t('Besides the main work, our teams contribute to open source')}} <br> {{$t('through open-source projects')}}</h2>
+        <h2 class="sec-title">{{$t('Besides the main work, our teams contribute to open source')}}</h2>
         <a class="open-source_wrap_btn" href="https://github.com/maddevsio" target="_blank">
           <img src="../../assets/img/svg/openSource/github-light.svg" alt="Github">
           Mad Devs on GitHub
