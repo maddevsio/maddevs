@@ -568,11 +568,19 @@
           display: flex;
           align-items: center;
           img {
-            width: 42px;
-            height: 42px;
-            border-radius: 100%;
+            height: 28px;
             margin-right: 15px;
-            background-color: #fff;
+          }
+          &-name {
+            display: flex;
+          }
+          span {
+            color: #fff;
+            font-family: 'MADEEvolveSans-bold';
+            font-size: 18px;
+            line-height: 1.43;
+            margin-right: 5px;
+            margin-top: -2px;
           }
           p {
             font-size: 18px;
