@@ -872,6 +872,9 @@
             margin-top: 10px;
             transition: all .1s ease;
             opacity: 0;
+            @media screen and (max-width: 480px){
+              font-size: 14px;
+            }
           }
           &__header {
             display: flex;
@@ -882,6 +885,11 @@
             &-line {
               border-left: 3px solid rgba(203, 201, 201, 0.877);
               margin-left: -8px;
+              @media screen and (max-width: 480px){
+                p {
+                  font-size: 14px;
+                }
+              }
             }
             img {
               margin: 0;
