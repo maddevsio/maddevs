@@ -5,11 +5,14 @@ import Home from '@/components/Home/index';
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
+  hash: false,
   routes: [
+    { path: '/', redirect: '/en' },
     {
-      path: '/',
+      path: '/:lang',
       name: 'Home',
       component: Home
     }
-  ]
+  ],
 });
