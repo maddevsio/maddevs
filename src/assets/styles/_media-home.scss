@@ -590,6 +590,16 @@
                         font-size: 20px;
                         padding: 30px 0;
                     }
+                    .sender {
+                        flex-direction: column;
+                        img {
+                            margin: 0 !important;
+                            margin-bottom: 10px !important;
+                        }
+                        &-name {
+                            margin: 0;
+                        }
+                    }
                 }
             }
         }
