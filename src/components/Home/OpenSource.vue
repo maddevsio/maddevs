@@ -12,7 +12,7 @@
     <div class="open-source_wrap-projects">
       <h3>{{$t('Projects')}}</h3>
       <div class="open-source_wrap-projects_list">
-        <div class="open-source_wrap-projects_list-item op-proj-1">
+        <a href="https://github.com/maddevsio/idmatch" target="_blank" class="open-source_wrap-projects_list-item op-proj-1">
           <div class="projects-img_wrap">
             <img src="../../assets/img/svg/openSource/id.svg" class="op-img-opensourse" alt="IDmatch">
           </div>
@@ -20,8 +20,8 @@
             <h4>IDmatch</h4>
             <p>{{$t('Artificial Intelligence Identification')}}</p>
           </div>
-        </div>
-        <div class="open-source_wrap-projects_list-item op-proj-2">
+        </a>
+        <a href="https://gitlab.com/maddevs/madpwa" target="_blank" class="open-source_wrap-projects_list-item op-proj-2">
           <div class="projects-img_wrap">
             <img src="../../assets/img/svg/openSource/madpwa.svg" class="op-img-madpwa" alt="MadPwa">
           </div>
@@ -29,8 +29,8 @@
             <h4>MADPWA</h4>
             <p>{{$t('Quick, convenient and easy way to create PWA')}}</p>
           </div>
-        </div>
-        <div class="open-source_wrap-projects_list-item op-proj-3">
+        </a>
+        <a href="https://gitlab.com/maddevs/mad-locations-manager" target="_blank" class="open-source_wrap-projects_list-item op-proj-3">
           <div class="projects-img_wrap">
             <img src="../../assets/img/svg/openSource/mlm.svg" class="op-img-mlm" alt="Mad Location Manager">
           </div>
@@ -38,8 +38,8 @@
             <h4>Mad Location Manager</h4>
             <p>{{$t('Accurate and “clean” data from GPS receivers')}}</p>
           </div>
-        </div>
-        <div class="open-source_wrap-projects_list-item op-proj-4">
+        </a>
+        <a href="https://gitlab.com/peklostudio/peklo" target="_blank" class="open-source_wrap-projects_list-item op-proj-4">
           <div class="projects-img_wrap">
             <img src="../../assets/img/svg/openSource/PKL.svg" class="op-img-sf" alt="Sensor fusion">
           </div>
@@ -47,8 +47,8 @@
             <h4>Peklo Tool</h4>
             <p>{{$t('Tool for automatization of contextual advertising creation')}}</p>
           </div>
-        </div>
-        <div class="open-source_wrap-projects_list-item op-proj-5">
+        </a>
+        <a href="https://github.com/maddevsio/heimdall" target="_blank" class="open-source_wrap-projects_list-item op-proj-5">
           <div class="projects-img_wrap">
             <img src="../../assets/img/svg/openSource/Heimdall.svg" class="op-img-sf" alt="Heimdall">
           </div>
@@ -56,7 +56,7 @@
             <h4>Heimdall</h4>
             <p>{{$t('Tool for analyzing smart contracts using mythril')}}</p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
