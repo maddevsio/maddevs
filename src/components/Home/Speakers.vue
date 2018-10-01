@@ -47,7 +47,7 @@
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
-                            <p>{{$t('Report with gophercon russia')}}</p>
+                            <p>GopherCon Russia 2018</p>
                         </div>
                     </div>
                     <a target="_blank" href="https://www.slideshare.net/maddevs/grpc-91167163">
@@ -114,7 +114,7 @@
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
-                            <p>Almaty GDG 2017, Bishkek TechWomen 2017, Neobis Mob Dev meetup Fall 2017</p>
+                            <p>GDG Almaty 2017</p>
                         </div>
                     </div>
                     <a target="_blank" href="https://www.slideshare.net/maddevs/kotlin-116845515">
@@ -167,10 +167,7 @@
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
-                            <p>
-                                Outsource People 2017 in Krakow
-                                Стачка 2017, Ульяновск
-                            </p>
+                            <p>Outsource People 2017</p>
                         </div>
                     </div>
                     <a target="_blank" href="https://www.slideshare.net/maddevs/pm-digital-nomad-or-how-to-manage-a-totally-remote-team ">
@@ -194,11 +191,10 @@
             <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/12.jpg" alt="People">
                 <div class="people-info-block">
-                    <div class="people-info-block__header-line">
-                        <p>
-                            Outsource People 2017 in Krakow
-                            Стачка 2017, Ульяновск
-                        </p>
+                    <div class="people-info-block__header">
+                        <div class="people-info-block__header-line">
+                            <p>Стачка 2017</p>
+                        </div>
                     </div>
                     <a href="https://www.slideshare.net/maddevs/agile-116851299" target="_blank">
                         <p>{{$t('PM Digital Nomad (or How to Manage a Totally Remote Team)')}}</p>
@@ -223,7 +219,7 @@
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
-                            <p>{{$t('Presentation for BIT 2017 in Bishkek on April 6')}}</p>
+                            <p>BIT 2017</p>
                         </div>
                     </div>
                      <a href="https://www.slideshare.net/maddevs/iotsploit-iotsploit-keeping-your-iot-perimeter-safe" target="_blank">
