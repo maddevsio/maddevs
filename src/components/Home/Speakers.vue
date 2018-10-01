@@ -47,7 +47,7 @@
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
-                            <p>Доклад с gophercon russia 2018</p>
+                            <p>{{$t('Report with gophercon russia')}}</p>
                         </div>
                     </div>
                     <a target="_blank" href="https://www.slideshare.net/maddevs/grpc-91167163">
@@ -223,7 +223,7 @@
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
-                            <p>Презентация для БИТ 2017 в Бишкеке 6 апреля</p>
+                            <p>{{$t('Presentation for BIT 2017 in Bishkek on April 6')}}</p>
                         </div>
                     </div>
                      <a href="https://www.slideshare.net/maddevs/iotsploit-iotsploit-keeping-your-iot-perimeter-safe" target="_blank">

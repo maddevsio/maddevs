@@ -34,11 +34,12 @@
   "We use": "We use",
   "For": "For",
   "Backend": "Backend",
-  "We achieve it by doing what we are best at technical execution and consultations, qualified software development, support and team monitoring": "We achieve it by doing what we are best at technical execution and consultations, qualified software development, support and team monitoring",
+  "We achieve it by doing what we are best at technical execution and consultations": "We achieve it by doing what we are best at technical execution and consultations",
+  "qualified software development": "qualified software development",
+  "support and team monitoring": "support and team monitoring",
   "We also use": "We also use",
   "and build a front-end using": "and build a front-end using",
   "Besides the main work, our teams contribute to open source": "Besides the main work, our teams contribute to open source",
-  "through open-source projects": "through open-source projects",
   "Our partners": "Our partners",
   "Сlient feedback ": "Сlient feedback ",
   "Infrastructure": "Infrastructure",
@@ -59,7 +60,7 @@
   "We develop, gain experience and share it by speaking at conferences.": "We develop, gain experience and share it by speaking at conferences.",
   "A series of IT conferences for developers around the world": "A series of IT conferences for developers around the world",
   "full list of conferences": "full list of conferences",
-  "Associations in which we belong": "Associations in which we belong",
+  "Membership in associations ": "Membership in associations ",
   "Contacts": "Contacts",
   "address": "address",
   "Press about us": "Press about us",
@@ -94,5 +95,7 @@
   "PM Digital Nomad (or How to Manage a Totally Remote Team)": "PM Digital Nomad (or How to Manage a Totally Remote Team)",
   "We are hungry not only to gain new knowledge but also share it, and we are regular speakers on the conferences": "We are hungry not only to gain new knowledge but also share it, and we are regular speakers on the conferences",
   "Chat bot for automatization of remote standups": "Chat bot for automatization of remote standups",
-  "The ways to grow developers from the scratch": "The ways to grow developers from the scratch"
+  "The ways to grow developers from the scratch": "The ways to grow developers from the scratch",
+  "Report with gophercon russia": "Report with gophercon russia",
+  "Presentation for BIT 2017 in Bishkek on April 6": "Presentation for BIT 2017 in Bishkek on April 6"
 }
