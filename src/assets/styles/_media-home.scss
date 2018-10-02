@@ -591,6 +591,7 @@
                         padding: 30px 0;
                     }
                     .sender {
+                        height: auto;
                         flex-direction: column;
                         img {
                             margin: 0 !important;
@@ -630,6 +631,9 @@
                         p {
                             font-size: 16px;
                         }
+                    }
+                    .op-proj-4 {
+                        border-top: 0; 
                     }
                 }
             }

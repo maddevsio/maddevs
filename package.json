@@ -12,7 +12,8 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "i18scan": "i18next-scanner --config src/utils/i18next-scanner.config.js --output . 'src/**/*.{js,vue}' && node src/scripts/translation.js",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@panter/vue-i18next": "^0.13.0",

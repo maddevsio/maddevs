@@ -1,7 +1,7 @@
 <template>
   <section id="reviews" class="reviews">
     <div class="container">
-      <div class="reviews_wrap" >
+      <div class="reviews_wrap">
         <h2 class="sec-title">{{$t('Сlient feedback ')}}</h2>
          <carousel
             :per-page="1"
@@ -75,13 +75,22 @@
 </template>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel';
+import {
+  Carousel,
+  Slide
+} from 'vue-carousel';
 
 export default {
   name: 'reviews',
   components: {
     Carousel,
     Slide
+  },
+  methods: {
+    nextSlide() {
+      this.$refs.carousel.goToPage(this.$refs.carousel.getNextPage());
+    }
   }
 };
+
 </script>
