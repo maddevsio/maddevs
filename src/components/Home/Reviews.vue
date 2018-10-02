@@ -5,6 +5,13 @@
         <h2 class="sec-title">{{$t('Сlient feedback ')}}</h2>
          <carousel
             :per-page="1"
+            :loop=true
+            :autoplayLoop="true"
+            :autoplay="true"
+            :autoplayTimeout="5000"
+            loop:true
+            mouse-drag:false
+            autoplayHoverPause
             class="reviews_wrap-carousel"
         >
             <slide class="reviews_wrap-carousel-slide">
