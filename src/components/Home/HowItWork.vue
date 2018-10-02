@@ -32,26 +32,27 @@
               mouse-drag:false
               autoplayHoverPause
               class="how-it-work_wrap-content-slides"
+              ref="carousel"
             >
-            <slide class="how-it-work_wrap-content-slide">
+              <slide class="how-it-work_wrap-content-slide">
                 <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw2.png"
                       media="(max-width: 992px)">
-                    <img src="../../assets/img/png/how-it-work/hiw2@2x.png">
+                    <img @click.prevent="nextSlide" src="../../assets/img/png/how-it-work/hiw2@2x.png">
                 </picture>
               </slide>
               <slide class="how-it-work_wrap-content-slide">
                 <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw1.png"
                       media="(max-width: 992px)">
-                    <img ref="image" src="../../assets/img/png/how-it-work/hiw1@2x.png">
+                    <img @click.prevent="nextSlide" ref="image" src="../../assets/img/png/how-it-work/hiw1@2x.png">
                 </picture>
               </slide>
               <slide class="how-it-work_wrap-content-slide">
                 <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw3.png"
                       media="(max-width: 992px)">
-                    <img src="../../assets/img/png/how-it-work/hiw3@2x.png">
+                    <img @click.prevent="nextSlide" src="../../assets/img/png/how-it-work/hiw3@2x.png">
                 </picture>
               </slide>
             </carousel>
@@ -83,6 +84,9 @@ export default {
     Slide
   },
   methods: {
+    nextSlide() {
+      this.$refs.carousel.goToPage(this.$refs.carousel.getNextPage());
+    },
     setAtiveSlide(index) {
       this.activeSlide = index;
     },

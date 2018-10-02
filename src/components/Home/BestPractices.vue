@@ -15,26 +15,27 @@
                   mouse-drag:true
                   autoplayHoverPause
                   class="best-practices_wrap-preview-slides"
+                  ref="carousel"
                 >
                   <slide class="best-practices_wrap-preview-slide">
                     <picture>
                         <source srcset="../../assets/img/png/best-practices/bp1.png"
                                 media="(max-width: 992px)">
-                        <img src="../../assets/img/png/best-practices/bp1@2x.png">
+                        <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp1@2x.png">
                     </picture>
                   </slide>
                   <slide class="best-practices_wrap-preview-slide">
                     <picture>
                         <source srcset="../../assets/img/png/best-practices/bp2.png"
                                 media="(max-width: 992px)">
-                        <img src="../../assets/img/png/best-practices/bp2@2x.png">
+                        <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp2@2x.png">
                     </picture>
                   </slide>
                   <slide class="best-practices_wrap-preview-slide">
                     <picture>
                         <source srcset="../../assets/img/png/best-practices/bp3.png"
                                 media="(max-width: 992px)">
-                        <img src="../../assets/img/png/best-practices/bp3@2x.png">
+                        <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp3@2x.png">
                     </picture>
                   </slide>
                 </carousel>
@@ -50,9 +51,9 @@
                         <span>5</span>
                     </div>
                     <h3 id="text">
-                      {{ $t('We use the best') }} <span @click="setAtiveSlide(0)" :style="activeSlide == 0 && 'color: #fff9dd;'">{{ $t('development practices') }}</span>
-                      {{ $t('and we are responsible for') }} <span @click="setAtiveSlide(1)" :style="activeSlide == 1 && 'color: #a1d9ff;'">{{ $t('the quality') }}</span>
-                      {{ $t('and') }} <span @click="setAtiveSlide(2)" :style="activeSlide == 2 && 'color: #e8b8ff;'">{{ $t('stability') }}</span>
+                      {{ $t('We use the best') }} <span @click="setAtiveSlide(0)" :style="activeSlide == 0 && 'color: #D4FEA4;'">{{ $t('development practices') }}</span>
+                      {{ $t('and we are responsible for') }} <span @click="setAtiveSlide(1)" :style="activeSlide == 1 && 'color: #A1D9FF;'">{{ $t('the quality') }}</span>
+                      {{ $t('and') }} <span @click="setAtiveSlide(2)" :style="activeSlide == 2 && 'color: #E8B8FF;'">{{ $t('stability') }}</span>
                       {{ $t('of the product') }}.
                     </h3>
                 </div>
@@ -118,7 +119,10 @@ export default {
     },
     onPageChange: function(index) {
       this.setAtiveSlide(index);
-    }
+    },
+    nextSlide() {
+      this.$refs.carousel.goToPage(this.$refs.carousel.getNextPage());
+    },
   },
   mounted() {
     this.calcLineNumber();
