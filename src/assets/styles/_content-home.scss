@@ -36,11 +36,12 @@
 }
 
 #go-down {
-  margin-left: 65px;
+  margin-left: 45px;
   background-color: transparent;
   border: 0;
-  z-index: 2;
-  margin-top: -65px;
+  z-index: 10;
+  padding: 0 20px;
+  transform: translateY(-50px);
   cursor: pointer;
 }
 
@@ -570,6 +571,7 @@
           color: #fff;
         }
         .sender {
+          height: 30px;
           display: flex;
           align-items: center;
           img {
