@@ -12,7 +12,7 @@
     <div class="container">
       <div class="banner-wrap">
         <div class="banner-title">`
-          <h1>{{ $t('We form remote technical teams of professionals for you startups')}}.</h1>
+          <h1>{{ $t('We form remote technical teams of professionals for your startups')}}.</h1>
         </div>
         <div class="banner-slack">
           <div class="banner-slack_sidebar">
