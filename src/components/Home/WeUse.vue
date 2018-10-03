@@ -18,7 +18,7 @@
                   and <span><img src="../../assets/img/svg/weuse/babel.png" alt=""> Babel</span>
                 </p>
                 <p v-else>
-                  На фронтенде мы работаем <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>,
+                  На фронтенде мы работаем с <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>,
                   сочетая его с фреймворками <span> <img src="../../assets/img/svg/weuse/react-js.svg" alt=""> React</span>
                   и <span> <img src="../../assets/img/svg/weuse/vue.svg" alt=""> Vue</span>.
                   Мы также используем <span><img src="../../assets/img/svg/weuse/es-6.svg" alt=""> ES6</span>
@@ -31,14 +31,14 @@
               <p v-if="lang === 'en'">
                 We develop mobile applications for both <span>iOS</span> and <span>Android</span>.
                 For the development of <span>iOS</span>
-                We use <img src="../../assets/img/svg/weuse/swift.svg" alt="">
+                <span><img src="../../assets/img/svg/weuse/md.svg" alt=""> Mad Devs</span> uses <img src="../../assets/img/svg/weuse/swift.svg" alt="">
                 and <span> <img src="../../assets/img/svg/weuse/objective.svg" alt=""> Objective-C</span>.
                 <span> <img src="../../assets/img/svg/weuse/java.svg" alt=""> Java</span>
                 and <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span> - For <span>Android</span>
               </p>
               <p v-else>
                 Мы занимаемся мобильной разработкой под <span>iOS</span> и <span>Android</span>.
-                Для разработки <span>iOS</span> приложений <span>Mad Devs</span> использует <img src="../../assets/img/svg/weuse/swift.svg" alt="">
+                Для разработки <span>iOS</span> приложений <span><img src="../../assets/img/svg/weuse/md.svg" alt=""> Mad Devs</span> использует <img src="../../assets/img/svg/weuse/swift.svg" alt="">
                 и <span> <img src="../../assets/img/svg/weuse/objective.svg" alt=""> Objective-C</span>.
                 Для <span>Android</span> <span><img src="../../assets/img/svg/weuse/java.svg" alt=""> Java</span>
                 и <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span>
@@ -58,7 +58,7 @@
                   Планирование и отслеживание задач осуществляется с помощью
                   <span><img src="../../assets/img/svg/weuse/jira.svg" alt=""> JIRA</span>,
                   а коммуникация ведется в <span><img src="../../assets/img/svg/weuse/slack.svg" alt=""> Slack</span>
-                  и через созваны в <span><img src="../../assets/img/svg/weuse/hangouts.svg" alt=""> Hangouts</span>,
+                  и через созвоны в <span><img src="../../assets/img/svg/weuse/hangouts.svg" alt=""> Hangouts</span>,
                   <span><img src="../../assets/img/svg/weuse/zoom.svg" alt=""> Zoom</span>,
                   <span><img src="../../assets/img/svg/weuse/skype.svg" alt=""> Skype</span>.
                 </p>
@@ -95,7 +95,7 @@
             <div class="weUse_wrap-list-item">
                 <h3>{{$t('Infrastructure')}}</h3>
                 <p v-if="lang === 'en'">
-                  Our <span>DevOps</span> engineers <span><img src="../../assets/img/svg/weuse/terraform.png" alt=""> Terraform</span>,
+                  Our <span>DevOps</span> engineers <span><img src="../../assets/img/svg/weuse/terraform.svg" alt=""> Terraform</span>,
                   <span><img src="../../assets/img/svg/weuse/cloudformation.png" alt=""> CloudFormation</span>
                   and <span><img src="../../assets/img/svg/weuse/ansible.svg" alt=""> Ansible</span>.
                   <span> <img src="../../assets/img/svg/weuse/jenkins.svg" alt=""> Jenkins</span>,
@@ -112,12 +112,13 @@
                   <span><img src="../../assets/img/svg/weuse/azure.svg" alt=""> Azure</span>
                   and we operate with the following tools to collect application and system indicators:
                   <span><img src="../../assets/img/svg/weuse/senrty.svg" alt=""> Sentry</span>,
-                  <span><img src="../../assets/img/svg/weuse/prometheus.png" alt=""> Prometheus</span>,
-                  <span><img src="../../assets/img/svg/weuse/aws-cloudwatch.svg" alt=""> CloudWatch</span>,
+                  <span><img src="../../assets/img/svg/weuse/prometheus.svg" alt=""> Prometheus</span>,
+                  <span><img src="../../assets/img/svg/weuse/aws-cloudwatch.svg" alt=""> Amazon CloudWatch</span>,
                   <span><img src="../../assets/img/svg/weuse/elk.svg" alt=""> ELK</span>.
                 </p>
                 <p v-else>
                   При создании систем высокой доступности, девопсы Mad Devs используют
+                  <span><img src="../../assets/img/svg/weuse/terraform.svg" alt=""> Terraform</span>,
                   <span><img src="../../assets/img/svg/weuse/cloudformation.png" alt=""> CloudFormation</span>
                   и <span><img src="../../assets/img/svg/weuse/ansible.svg" alt=""> Ansible</span>.
                   <span> <img src="../../assets/img/svg/weuse/jenkins.svg" alt=""> Jenkins</span>,
@@ -134,8 +135,8 @@
                   <span><img src="../../assets/img/svg/weuse/azure.svg" alt=""> Azure</span>
                   а также стек технологий для мониторинга и сбора системных метрик:
                   <span><img src="../../assets/img/svg/weuse/senrty.svg" alt=""> Sentry</span>,
-                  <span><img src="../../assets/img/svg/weuse/prometheus.png" alt=""> Prometheus</span>,
-                  <span><img src="../../assets/img/svg/weuse/aws-cloudwatch.svg" alt=""> CloudWatch</span>,
+                  <span><img src="../../assets/img/svg/weuse/prometheus.svg" alt=""> Prometheus</span>,
+                  <span><img src="../../assets/img/svg/weuse/aws-cloudwatch.svg" alt=""> Amazon CloudWatch</span>,
                   <span><img src="../../assets/img/svg/weuse/elk.svg" alt=""> ELK</span> и другие.
                 </p>
             </div>

@@ -2,7 +2,7 @@
   <section id="speakers" class="speakers">
     <div class="container">
       <div class="speakers_wrap">
-        <h2>{{$t('We are hungry not only to gain new knowledge but also share it, and we are regular speakers on the conferences')}}.</h2>
+        <h2 class="sec-title">{{$t('We are hungry not only to gain new knowledge but also share it, and we are regular speakers on the conferences')}}.</h2>
         <div class="speakers_wrap-places">
             <div class="speakers_wrap-places-item">
                 <img src="../../assets/img/svg/speakers/hl.svg" alt="Places">
