@@ -695,6 +695,10 @@
       box-sizing: border-box;
       margin: 0 auto;
       margin-top: 40px;
+      transition: all .2s ease;
+      &:hover {
+        background-color: #000;
+      }
       img {
         margin-right: 15px;
       }
