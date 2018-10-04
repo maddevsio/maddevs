@@ -50,6 +50,7 @@
   &-wrap {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
   &-title {
     width: 50%;
@@ -224,7 +225,7 @@
             width: 3px;
             height: 3px;
             display: block;
-            background-color: #000;
+            background-color: #ccc;
             border-radius: 100%;
             position: relative;
             &::before {
@@ -232,7 +233,7 @@
               width: 3px;
               height: 3px;
               display: block;
-              background-color: #000;
+              background-color: #ccc;
               border-radius: 100%;
               position: absolute;
               left: 0;
@@ -243,7 +244,7 @@
               width: 3px;
               height: 3px;
               display: block;
-              background-color: #000;
+              background-color: #ccc;
               border-radius: 100%;
               position: absolute;
               left: 0;
@@ -295,8 +296,9 @@
           span {
             font-family: 'OpenSans-SemiBold', sans-serif;
             background-color: #fff6cd;
-            padding: 2px 3px;
+            padding: 0px 5px 2px;
             border-radius: 3px;
+            white-space: nowrap;
           }
         }
         &-status {
@@ -313,6 +315,7 @@
             font-size: 13px;
             cursor: pointer;
             font-family: 'OpenSans-Regular';
+            user-select: none;
             img {
               width: 20px;
               height: 20px;
