@@ -721,12 +721,16 @@
         &-slack {
             &_content {
                 &-title {
+                    padding: 0 10px;
                     img {
                         margin-right: 4px;
                     }
                     h5 {
                         font-size: 11px;
                     }
+                }
+                &-item {
+                    padding: 0 10px;
                 }
                 &-item-text {
                     font-size: 14px;
