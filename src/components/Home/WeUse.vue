@@ -31,14 +31,14 @@
               <p v-if="lang === 'en'">
                 We develop mobile applications for both <span>iOS</span> and <span>Android</span>.
                 For the development of <span>iOS</span>
-                <span><img src="../../assets/img/svg/weuse/md.svg" alt=""> Mad Devs</span> uses <img src="../../assets/img/svg/weuse/swift.svg" alt="">
+                <span><img src="../../assets/img/svg/weuse/md.svg" alt=""> Mad Devs</span> uses <span><img src="../../assets/img/svg/weuse/swift.svg" alt=""> Swift</span>
                 and <span> <img src="../../assets/img/svg/weuse/objective.svg" alt=""> Objective-C</span>.
                 <span> <img src="../../assets/img/svg/weuse/java.svg" alt=""> Java</span>
                 and <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span> - For <span>Android</span>
               </p>
               <p v-else>
                 Мы занимаемся мобильной разработкой под <span>iOS</span> и <span>Android</span>.
-                Для разработки <span>iOS</span> приложений <span><img src="../../assets/img/svg/weuse/md.svg" alt=""> Mad Devs</span> использует <img src="../../assets/img/svg/weuse/swift.svg" alt="">
+                Для разработки <span>iOS</span> приложений <span><img src="../../assets/img/svg/weuse/md.svg" alt=""> Mad Devs</span> использует <span><img src="../../assets/img/svg/weuse/swift.svg" alt=""> Swift</span>
                 и <span> <img src="../../assets/img/svg/weuse/objective.svg" alt=""> Objective-C</span>.
                 Для <span>Android</span> <span><img src="../../assets/img/svg/weuse/java.svg" alt=""> Java</span>
                 и <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span>
