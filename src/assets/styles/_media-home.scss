@@ -311,6 +311,9 @@
     }
 }
 @media only screen and (max-width: 768px) {
+    .sec-title {
+        font-size: 32px;
+    }
     .how-it-work {
       padding: 80px 0 0;
       &_wrap {
@@ -532,10 +535,6 @@
     }
 }
 @media only screen and (max-width: 480px) {
-    .sec-title {
-        font-size: 28px !important;
-        line-height: 1.5 !important;
-    }
     .container {
         margin: 0 16px;
         padding: 0;

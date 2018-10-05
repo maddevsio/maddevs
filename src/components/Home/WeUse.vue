@@ -2,7 +2,7 @@
   <section id="weUse" class="weUse">
     <div class="container">
       <div class="weUse_wrap">
-        <h2>{{ $t('Technical Expertise') }}</h2>
+        <h2 class="sec-title">{{ $t('Technical Expertise') }}</h2>
         <div class="weUse_wrap-list">
 
           <!-- Left column -->
