@@ -59,11 +59,11 @@
     margin-right: 60px;
     h1 {
       color: #fff;
-      font-size: 49px;
-      line-height: 1.22;
+      font-size: 52px;
+      line-height: 1.33;
       letter-spacing: -0.4px;
-      font-weight: 300;
-      font-family: 'MADEEvolveSans-light';
+      font-weight: normal;
+      font-family: 'MADEEvolveSans-regular';
     }
   }
   &-slack {
@@ -332,23 +332,11 @@
 .how-it-work {
   padding-top: 190px;
   &_wrap {
-    h2 {
-      width: 100%;
-      text-align: center;
-      color: #2c1c1c;
-      font-size: 40px;
-      font-weight: 500;
-      line-height: 53px;
-      font-family: 'MADEEvolveSans-medium', sans-serif;
-    }
     p {
       text-align: center;
-      font-size: 28px;
-      line-height: 42px;
       max-width: 635px;
       margin: 0 auto;
       margin-top: 30px;
-      font-family: 'MADEEvolveSans-regular';
     }
     &-content {
       background-color: #fff8e9;
@@ -361,10 +349,6 @@
       }
       &-title {
         width: 525px;
-        font-size: 28px;
-        line-height: 42px;
-        font-family: 'MADEEvolveSans-regular', sans-serif;
-        font-weight: normal;
         margin-right: 30px;
         span {
           font-family: 'MADEEvolveSans-medium', sans-serif;
@@ -475,10 +459,6 @@
           }
         }
         h3 {
-          font-size: 28px;
-          line-height: 42px;
-          font-family: 'MADEEvolveSans-regular', sans-serif;
-          font-weight: normal;
           color: #fff;
           span {
             font-family: 'MADEEvolveSans-medium', sans-serif;
@@ -497,15 +477,6 @@
 .weUse {
   padding: 120px 0;
   &_wrap {
-    h2 {
-      width: 100%;
-      text-align: center;
-      font-size: 40px;
-      font-family: 'MADEEvolveSans-medium', sans-serif;
-      line-height: 54px;
-      font-weight: normal;
-      color: #2c1c1c;
-    }
     &-list {
       display: flex;
       align-items: flex-start;
@@ -518,8 +489,10 @@
         margin-top: 65px;
         h3 {
           margin-bottom: 16px;
-          font-size: 22px;
-          font-family: 'MADEEvolveSans-bold', sans-serif;
+          font-size: 28px;
+          line-height: 0.79;
+          font-family: 'MADEEvolveSans-medium', sans-serif;
+          font-weight: normal;
           color: #000;
         }
         p {
@@ -553,7 +526,6 @@
     background-repeat: no-repeat;
     h2 {
       color: #fff;
-      font-size: 40px;
     }
     .VueCarousel-dot-container .VueCarousel-dot:last-child {
       margin-top: 0 !important;
@@ -570,7 +542,7 @@
           max-width: 870px;
           font-size: 28px;
           font-family: 'MADEEvolveSans-regular';
-          line-height: 1.5;
+          line-height: 1.6;
           padding: 70px 0 43px;
           color: #fff;
         }
@@ -673,11 +645,9 @@
     padding: 80px 0;
     background-color: #fff8e9;
     h2 {
-      color: #2c1c1c;
-      font-size: 40px;
-      font-family: 'MADEEvolveSans-medium', sans-serif;
-      line-height: 55px;
-      font-weight: normal;
+      max-width: 830px;
+      margin-left: auto;
+      margin-right: auto;
     }
     &_btn {
       max-width: 340px;
@@ -705,15 +675,6 @@
     }
     &-projects {
       margin-top: 120px;
-      h3 {
-        width: 100%;
-        text-align: center;
-        color: #000000;
-        font-size: 40px;
-        line-height: 54px;
-        font-weight: 500;
-        font-family: 'MADEEvolveSans-medium', sans-serif;
-      }
       &_list {
         display: flex;
         align-items: center;
@@ -751,6 +712,7 @@
               font-size: 24px;
               color: #2c1c1c;
               font-family: 'MADEEvolveSans-bold', sans-serif;
+              line-height: 1.17;
               line-height: 30px;
               margin-bottom: 10px;
             }
@@ -758,7 +720,8 @@
               font-size: 18px;
               line-height: 24px;
               letter-spacing: 0.2px;
-              color: #595959;
+              color: #000;
+              line-height: 1.33;
               font-family: 'MADEEvolveSans-regular', sans-serif;
             }
           }
@@ -802,14 +765,10 @@
   &_wrap {
     text-align: center;
     h2 {
+      margin-left: auto;
+      margin-right: auto;
       max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-      font-size: 40px;
-      font-family: 'MADEEvolveSans-medium', sans-serif;
-      font-weight: normal;
-      line-height: 55px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     &-places {
       display: flex;
@@ -996,13 +955,6 @@
 .press {
   background-color: #fff;
   padding: 120px 0 0;
-  h2 {
-    font-size: 40px;
-    line-height: 54px;
-    margin-bottom: 60px;
-    font-family: 'MADEEvolveSans-medium', sans-serif;
-    font-weight: normal;
-  }
   &-wrap {
     display: flex;
     flex-direction: row;
@@ -1036,9 +988,9 @@
         text-align: center;
       }
       p {
-        max-width: 410px;
+        max-width: 430px;
         text-align: center;
-        font-size: 16px;
+        font-size: 18px;
         font-family: 'MADEEvolveSans-regular', sans-serif;
         color: #000;
         color: #000;
@@ -1058,13 +1010,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    h3 {
-      font-size: 40px;
-      line-height: 55px;
-      font-family: 'MADEEvolveSans-medium', sans-serif;
-      font-weight: normal;
-      color: #2c1c1c;
-    }
     &_list {
       width: 100%;
       max-width: 870px;
@@ -1083,7 +1028,6 @@
   &-wrap {
     h2 {
       color: #fff;
-      line-height: 53px;
     }
     &_list {
       display: flex;
@@ -1095,14 +1039,14 @@
         p {
           font-size: 18px;
           font-family: 'MADEEvolveSans-regular', sans-serif;
-          line-height: 27px;
+          line-height: 1.5;
           letter-spacing: normal;
           color: #ffffff;
         }
         a {
           font-size: 18px;
           font-family: 'MADEEvolveSans-regular', sans-serif;
-          line-height: 27px;
+          line-height: 1.5;
           letter-spacing: -0.4px;
           text-align: left;
           color: #ffffff;

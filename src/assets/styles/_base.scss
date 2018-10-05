@@ -31,11 +31,19 @@ main {
 
 .sec-title {
   width: 100%;
-  font-family: 'MADEEvolveSans-bold';
-  font-size: 44px;
+  font-family: 'MADEEvolveSans-medium', sans-serif;
+  font-size: 40px;
+  line-height: 1.38;
   text-align: center;
+  font-weight: 500;
+  color: #2c1c1c;
 }
-
+.sec-desc {
+  font-size: 28px;
+  line-height: 1.5;
+  font-family: 'MADEEvolveSans-regular', sans-serif;
+  font-weight: normal;
+}
 //----------- End Base classes ------------ //
 
 // #region Fonts

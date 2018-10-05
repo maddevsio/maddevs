@@ -2,7 +2,7 @@
   <section id="associations" class="associations">
     <div class="container">
       <div class="associations-wrap">
-        <h3>{{$t('Membership in associations')}}</h3>
+        <h2 class="sec-title">{{$t('Membership in associations')}}</h2>
         <div class="associations-wrap_list">
           <div class="associations-wrap_list-item">
             <img src="../../assets/img/svg/associations/pht.svg" alt="">
