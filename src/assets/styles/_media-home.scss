@@ -547,9 +547,11 @@
         }
     }
     .how-it-work {
+        padding: 60px 0 0;
         &_wrap {
             &-content {
                 padding: 60px 0;
+                margin-top: 60px;
                 &-slider {
                     width: 100%;
                     min-width: auto;
@@ -576,6 +578,9 @@
                 }
             }
         }
+    }
+    .weUse {
+        padding: 60px 0;
     }
     .reviews {
         padding: 60px 0;
@@ -604,18 +609,23 @@
             }
         }
     }
+    .partners {
+        padding: 60px 0;
+    }
     .open-source_wrap-projects_list-item {
         border-right-width: 0;
         border-left-width: 0;
     }
     .open-source {
-        padding-bottom: 80px;
+        padding-bottom: 60px;
         &_wrap {
+            padding: 60px 0;
             &_btn {
                 font-size: 18px;
                 max-width: 280px;
             }
             &-projects {
+                margin-top: 60px;
                 &_list {
                     &-item {
                         width: 100%;
@@ -639,7 +649,7 @@
         }
     }
     .associations {
-        padding: 35px 0 80px;
+        padding: 60px 0;
         &-wrap {
             h3 {
                 width: 200px;
@@ -670,7 +680,7 @@
         padding-bottom: 60px;
     }
     .press {
-        padding-top: 80px;
+        padding-top: 60px;
         &-wrap {
             &_item {
                 width: 100%;
