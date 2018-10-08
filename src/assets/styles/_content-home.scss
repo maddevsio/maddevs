@@ -556,24 +556,12 @@
           }
           &-name {
             display: flex;
-          }
-          span {
-            color: #fff;
-            font-family: 'MADEEvolveSans-bold';
-            font-size: 18px;
-            line-height: 1.43;
-            margin-right: 5px;
-            margin-top: -2px;
-          }
-          p {
-            font-size: 18px;
-            font-family: 'MADEEvolveSans-regular';
-            color: #fff;
-            line-height: 1.43;
-            text-align: left;
-            white-space: nowrap;
-            span {
+            p {
+              color: #fff;
               font-family: 'MADEEvolveSans-bold';
+              font-size: 18px;
+              line-height: 1.43;
+              margin-top: -2px;
             }
           }
         }
@@ -683,7 +671,7 @@
       .our-pets {
         font-size: 26px;
         white-space: nowrap;
-        margin-left: 6px;
+        margin-left: 10px;
       }
       &_list {
         display: flex;
