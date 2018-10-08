@@ -675,9 +675,15 @@
     }
     &-projects {
       margin-top: 120px;
+      h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       .our-pets {
-        font-size: 24px;
+        font-size: 26px;
         white-space: nowrap;
+        margin-left: 6px;
       }
       &_list {
         display: flex;

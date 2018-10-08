@@ -588,6 +588,13 @@
             &-carousel {
                 .VueCarousel-pagination {
                     margin-top: 30px;
+                    .VueCarousel-dot-container {
+                        li {
+                            button {
+                                width: 28px !important;
+                            }
+                        }
+                    }
                 }
                 &-slide {
                     &_desc {

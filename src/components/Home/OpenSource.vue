@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="open-source_wrap-projects">
-      <h2 class="sec-title">{{$t('Projects')}} <span class="our-pets">🐶 🐱</span></h2>
+      <h2 class="sec-title">{{$t('Projects')}}<span class="our-pets">🐶 🐱</span></h2>
       <div class="open-source_wrap-projects_list">
         <a href="https://github.com/maddevsio/go-idmatch" target="_blank" class="open-source_wrap-projects_list-item op-proj-1">
           <div class="projects-img_wrap">
