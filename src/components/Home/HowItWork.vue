@@ -1,8 +1,10 @@
 <template>
   <section id="how-it-work" class="how-it-work">
     <div class="how-it-work_wrap">
-      <h2 class="sec-title">{{ $t('How do we work?') }}</h2>
-      <p class="sec-desc">{{ $t('Since we are working remotely we strongly believe in the transparency of work, pay special attention to communication and keep strict compliance to working processes') }}</p>
+      <div class="container">
+        <h2 class="sec-title">{{ $t('How do we work?') }}</h2>
+        <p class="sec-desc">{{ $t('Since we are working remotely we strongly believe in the transparency of work, pay special attention to communication and keep strict compliance to working processes') }}</p>
+      </div>
       <div class="how-it-work_wrap-content">
         <div class="container">
           <h3 v-if="lang === 'en'" class="how-it-work_wrap-content-title sec-desc">
