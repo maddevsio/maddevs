@@ -74,8 +74,7 @@ export default {
   data() {
     return {
       lang: i18n.language,
-      activeSlide: 0,
-      slideHeight: 0
+      activeSlide: 0
     };
   },
   updated() {
@@ -94,26 +93,7 @@ export default {
     },
     onPageChange: function(index) {
       this.setAtiveSlide(index);
-    },
-    getWindowWidth() {
-      window.addEventListener('resize', () => {
-        this.setSlideHeight();
-      });
-    },
-    getImageHeight() {
-      document.onreadystatechange = () => {
-        if (document.readyState === 'complete') {
-          this.setSlideHeight();
-        }
-      };
-    },
-    setSlideHeight() {
-      this.slideHeight = this.$refs.image.clientHeight;
     }
-  },
-  mounted() {
-    this.getImageHeight();
-    this.getWindowWidth();
   }
 };
 </script>
