@@ -151,6 +151,13 @@
     }
 }
 @media only screen and (max-width: 992px) {
+    // .weUse {
+    //     &_wrap {
+    //         &-list {
+    //             align-items: flex-start;
+    //         }
+    //     }
+    // }
     .open-source {
         &_wrap {
             &-projects {
@@ -253,6 +260,23 @@
         }
     }
 }
+@media only screen and (max-width: 953px) {
+    .weUse {
+      padding: 160px 0;
+      &_wrap {
+        &-list {
+          flex-direction: column;
+          &_column {
+              width: 100%;
+          }
+          &-item {
+              width: 100%;
+              margin-top: 60px;
+          }
+        }
+      }
+    }
+}
 @media only screen and (max-width: 830px) {
     #go-down {
       display: none;
@@ -329,21 +353,6 @@
                 margin-top: 10px;
             }
         }
-    }
-    .weUse {
-      padding: 160px 0;
-      &_wrap {
-        &-list {
-          flex-direction: column;
-          &_column {
-              width: 100%;
-          }
-          &-item {
-              width: 100%;
-              margin-top: 60px;
-          }
-        }
-      }
     }
     .contacts {
         &-wrap {
