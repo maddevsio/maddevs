@@ -8,6 +8,7 @@
     <Partners />
     <OpenSource />
     <Speakers />
+    <OurBlog />
     <Press />
     <Associations />
     <Contacts />
@@ -23,8 +24,9 @@ import Reviews from './Reviews';
 import Partners from './Partners';
 import OpenSource from './OpenSource';
 import Speakers from './Speakers';
-import Contacts from './Contacts';
+import OurBlog from './OurBlog';
 import Press from './Press';
+import Contacts from './Contacts';
 import Associations from './Associations';
 
 export default {
@@ -38,9 +40,10 @@ export default {
     Partners,
     OpenSource,
     Speakers,
-    Contacts,
+    OurBlog,
     Press,
-    Associations
+    Associations,
+    Contacts
   }
 };
 </script>

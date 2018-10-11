@@ -944,6 +944,59 @@
   }
 }
 
+// --------------- Our Blog --------------- //
+.our-blog {
+  background-color: #fff8e9;
+  padding: 120px 0;
+  &-wrap {
+    &_list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 60px;
+      &-item {
+        width: 31%;
+        img {
+          width: 100%;
+        }
+        .our-blog_sender {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          margin-top: 15px;
+          &-img {
+            width: 34px;
+            max-width: 34px;
+            height: 34px;
+            max-height: 34px;
+            border-radius: 100%;
+            overflow: hidden;
+            margin-right: 10px;
+          }
+          &-name, &-meta {
+            color: #000;
+            font-family: 'MADEEvolveSans-regular', sans-serif;
+            line-height: 1.08;
+            letter-spacing: 0.1px;
+            font-size: 13px;
+          }
+          &-meta {
+            color: #8e8e8e;
+          }
+          h5 {
+            width: 100%;
+            color: #000;
+            font-size: 24px;
+            line-height: 1.25;
+            font-family: 'MADEEvolveSans-bold', sans-serif;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
 // --------------- Press --------------- //
 .press {
   background-color: #fff;
