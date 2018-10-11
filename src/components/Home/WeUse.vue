@@ -15,7 +15,7 @@
                   and <span> <img src="../../assets/img/svg/weuse/vue.svg" alt=""> Vue</span>.
                   We also use <span> <img src="../../assets/img/svg/weuse/es-6.svg" alt=""> ES6</span>
                   and make bundles with <span><img src="../../assets/img/svg/weuse/webpack.svg" alt=""> Webpack</span>
-                  and <span><img src="../../assets/img/svg/weuse/babel.png" alt=""> Babel</span>
+                  and <span><img src="../../assets/img/svg/weuse/Babel.svg" alt=""> Babel</span>
                 </p>
                 <p v-else>
                   На фронтенде мы работаем с <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>,
@@ -23,7 +23,7 @@
                   и <span> <img src="../../assets/img/svg/weuse/vue.svg" alt=""> Vue</span>.
                   Мы также используем <span><img src="../../assets/img/svg/weuse/es-6.svg" alt=""> ES6</span>
                   и разрабатываем фронтенд с помощью  <span><img src="../../assets/img/svg/weuse/webpack.svg" alt=""> Webpack</span>
-                  и <span><img src="../../assets/img/svg/weuse/babel.png" alt=""> Babel</span>
+                  и <span><img src="../../assets/img/svg/weuse/Babel.svg" alt=""> Babel</span>
                 </p>
             </div>
             <div class="weUse_wrap-list-item">
@@ -103,7 +103,7 @@
                   <span><img src="../../assets/img/svg/weuse/team-city.svg" alt=""> TeamCity</span>,
                   <span><img src="../../assets/img/svg/weuse/travis.svg" alt=""> Travis CI</span>,
                   <span><img src="../../assets/img/svg/weuse/circle.svg" alt=""> Circle CI</span> and
-                  <span><img src="../../assets/img/svg/weuse/aswcp.png" alt=""> AWS CodePipeline</span>
+                  <span><img srcset="../../assets/img/png/we-use/aswcp@2x.png 2x" src="../../assets/img/png/we-use/aswcp.png" alt=""> AWS CodePipeline</span>
                   to set up <span>CI/CD</span> and guarantee the <span>HA</span> of the product
                   We have experience of setting up infrastructure in cloud services:
                   <span><img src="../../assets/img/svg/weuse/asw.svg" alt=""> AWS</span>,
@@ -126,7 +126,7 @@
                   <span><img src="../../assets/img/svg/weuse/team-city.svg" alt=""> TeamCity</span>,
                   <span><img src="../../assets/img/svg/weuse/travis.svg" alt=""> Travis CI</span>,
                   <span><img src="../../assets/img/svg/weuse/circle.svg" alt=""> Circle CI</span> и
-                  <span><img src="../../assets/img/svg/weuse/aswcp.png" alt=""> AWS CodePipeline</span>
+                  <span><img srcset="../../assets/img/png/we-use/aswcp@2x.png 2x" src="../../assets/img/png/we-use/aswcp.png" alt=""> AWS CodePipeline</span>
                   для непрерывного тестирования и непрерывной поставки.
                   У нас есть опыт организации инфраструктуры в облачных сервисах:
                   <span><img src="../../assets/img/svg/weuse/asw.svg" alt=""> AWS</span>,

@@ -11,7 +11,7 @@
             <img src="../../assets/img/svg/associations/kssda.svg" alt="">
           </div>
           <div class="associations-wrap_list-item">
-            <img src="../../assets/img/svg/associations/amcham.png" alt="">
+            <img src="../../assets/img/svg/associations/amcham.svg" alt="">
           </div>
         </div>
       </div>
