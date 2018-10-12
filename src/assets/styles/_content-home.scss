@@ -985,8 +985,19 @@
             font-size: 13px;
           }
           &-meta {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;;
             color: #8e8e8e;
             margin-top: 6px;
+            span {
+              width: 2px;
+              height: 2px;
+              background-color: #8e8e8e;
+              display: inline-block;
+              margin: 0 4px;
+              border-radius: 100%;
+            }
           }
           h5 {
             width: 100%;

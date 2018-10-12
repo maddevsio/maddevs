@@ -63,11 +63,11 @@
           <!-- Item 5 -->
           <a :href="$t('blog5-link')" target="_blank" class="our-blog-wrap_list-item">
             <img v-if="lang === 'ru'" src="../../assets/img/png/our-blog/5.png" srcset="../../assets/img/png/our-blog/5@2x.png 2x" alt="">
-            <img v-else src="../../assets/img/png/our-blog/5.png" srcset="../../assets/img/png/our-blog/5@2x.png 2x" alt="">
+            <img v-else src="../../assets/img/png/our-blog/7.png" srcset="../../assets/img/png/our-blog/7@2x.png 2x" alt="">
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
                 <img v-if="lang === 'ru'" src="../../assets/img/png/our-blog/TimurZ.png" srcset="../../assets/img/png/our-blog/TimurZ@2x.png 2x" alt="">
-                <img v-else src="../../assets/img/png/our-blog/TimurZ.png" srcset="../../assets/img/png/our-blog/TimurZ@2x.png 2x" alt="">
+                <img v-else src="../../assets/img/png/our-blog/AlexeyM.png" srcset="../../assets/img/png/our-blog/AlexeyM.png 2x" alt="">
               </div>
               <div class="our-blog_sender-info">
                 <p class="our-blog_sender-name">{{$t('blog5-sender-name')}}</p>
@@ -79,11 +79,11 @@
           <!-- Item 6 -->
           <a :href="$t('blog6-link')" target="_blank" class="our-blog-wrap_list-item">
             <img v-if="lang === 'ru'" src="../../assets/img/png/our-blog/6.png" srcset="../../assets/img/png/our-blog/6@2x.png 2x" alt="">
-            <img v-else src="../../assets/img/png/our-blog/6.png" srcset="../../assets/img/png/our-blog/6@2x.png 2x" alt="">
+            <img v-else src="../../assets/img/png/our-blog/8.png" srcset="../../assets/img/png/our-blog/8@2x.png 2x" alt="">
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
                 <img v-if="lang === 'ru'" src="../../assets/img/png/our-blog/AndrewS.png" srcset="../../assets/img/png/our-blog/AndrewS@2x.png 2x" alt="">
-                <img v-else src="../../assets/img/png/our-blog/AndrewS.png" srcset="../../assets/img/png/our-blog/AndrewS@2x.png 2x" alt="">
+                <img v-else src="../../assets/img/png/our-blog/AndrewM.png" srcset="../../assets/img/png/our-blog/AndrewM@2x.png 2x" alt="">
               </div>
               <div class="our-blog_sender-info">
                 <p class="our-blog_sender-name">{{$t('blog6-sender-name')}}</p>
