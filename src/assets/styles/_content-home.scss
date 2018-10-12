@@ -755,6 +755,7 @@
 
 // ----------------- Speakers ------------------ //
 .speakers {
+  padding-bottom: 90px;
   &_wrap {
     text-align: center;
     h2 {
@@ -947,7 +948,7 @@
 // --------------- Our Blog --------------- //
 .our-blog {
   background-color: #fff8e9;
-  padding: 120px 0;
+  padding: 80px 0;
   &-wrap {
     &_list {
       display: flex;
@@ -956,6 +957,8 @@
       margin-top: 60px;
       &-item {
         width: 31%;
+        text-decoration: none;
+        margin-bottom: 48px;
         img {
           width: 100%;
         }
@@ -963,7 +966,7 @@
           display: flex;
           flex-wrap: wrap;
           align-items: center;
-          margin-top: 15px;
+          margin-top: 24px;
           &-img {
             width: 34px;
             max-width: 34px;
@@ -971,7 +974,7 @@
             max-height: 34px;
             border-radius: 100%;
             overflow: hidden;
-            margin-right: 10px;
+            margin-right: 8px;
           }
           &-name, &-meta {
             color: #000;
@@ -982,6 +985,7 @@
           }
           &-meta {
             color: #8e8e8e;
+            margin-top: 6px;
           }
           h5 {
             width: 100%;
@@ -989,7 +993,7 @@
             font-size: 24px;
             line-height: 1.25;
             font-family: 'MADEEvolveSans-bold', sans-serif;
-            margin-top: 15px;
+            margin-top: 12px;
           }
         }
       }
