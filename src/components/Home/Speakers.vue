@@ -43,7 +43,7 @@
         </div>
         <div class="speakers_wrap-people">
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/1.jpg" alt="People">
+                <img src="../../assets/img/jpg/speakers/1.jpg" srcset="../../assets/img/jpg/speakers/1@2x.jpg 2x, ../../assets/img/jpg/speakers/1@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/2.jpg" alt="People">
+                <img src="../../assets/img/jpg/speakers/2.jpg" srcset="../../assets/img/jpg/speakers/2@2x.jpg 2x, ../../assets/img/jpg/speakers/2@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/3.jpg" alt="People">
+                <img src="../../assets/img/jpg/speakers/3.jpg" srcset="../../assets/img/jpg/speakers/3@2x.jpg 2x, ../../assets/img/jpg/speakers/3@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
@@ -84,7 +84,7 @@
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/4.jpg" alt="People">
+                <img src="../../assets/img/jpg/speakers/4.jpg" srcset="../../assets/img/jpg/speakers/4@2x.jpg 2x, ../../assets/img/jpg/speakers/4@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
@@ -97,7 +97,7 @@
                 </div>
             </div>
              <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/5.jpg" alt="People">
+                <img src="../../assets/img/jpg/speakers/5.jpg" srcset="../../assets/img/jpg/speakers/5@2x.jpg 2x, ../../assets/img/jpg/speakers/5@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
@@ -110,7 +110,7 @@
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/6.jpg" alt="People">
+                <img src="../../assets/img/jpg/speakers/6.jpg" srcset="../../assets/img/jpg/speakers/6@2x.jpg 2x, ../../assets/img/jpg/speakers/6@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
@@ -123,7 +123,7 @@
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/7.jpg" alt="People">
+                <img src="../../assets/img/jpg/speakers/7.jpg" srcset="../../assets/img/jpg/speakers/7@2x.jpg 2x, ../../assets/img/jpg/speakers/7@3x.jpg 3x" alt="People">
                 <!-- Hover info block -->
                 <div class="people-info-block">
                     <div class="people-info-block__header">
@@ -137,7 +137,7 @@
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/8.jpg" alt="People">
+                <img src="../../assets/img/jpg/speakers/8.jpg" srcset="../../assets/img/jpg/speakers/8@2x.jpg 2x, ../../assets/img/jpg/speakers/8@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
@@ -150,7 +150,7 @@
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/9.jpg" alt="People">
+                <img src="../../assets/img/jpg/speakers/9.jpg" srcset="../../assets/img/jpg/speakers/9@2x.jpg 2x, ../../assets/img/jpg/speakers/9@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
@@ -163,7 +163,7 @@
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/10.png" alt="People">
+                <img src="../../assets/img/jpg/speakers/10.jpg" srcset="../../assets/img/jpg/speakers/10@2x.jpg 2x, ../../assets/img/jpg/speakers/10@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
@@ -176,7 +176,7 @@
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/11.jpg" alt="People">
+                <img src="../../assets/img/jpg/speakers/11.jpg" srcset="../../assets/img/jpg/speakers/11@2x.jpg 2x, ../../assets/img/jpg/speakers/11@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
@@ -189,7 +189,7 @@
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/12.jpg" alt="People">
+                <img src="../../assets/img/jpg/speakers/12.jpg" srcset="../../assets/img/jpg/speakers/12@2x.jpg 2x, ../../assets/img/jpg/speakers/12@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
@@ -202,7 +202,7 @@
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/13.jpg" alt="People">
+                <img src="../../assets/img/jpg/speakers/13.jpg" srcset="../../assets/img/jpg/speakers/13@2x.jpg 2x, ../../assets/img/jpg/speakers/13@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
@@ -215,7 +215,7 @@
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/14.jpg" alt="People">
+                <img src="../../assets/img/jpg/speakers/14.jpg" srcset="../../assets/img/jpg/speakers/14@2x.jpg 2x, ../../assets/img/jpg/speakers/14@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
@@ -228,7 +228,7 @@
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/15.jpg" alt="People">
+                <img src="../../assets/img/jpg/speakers/15.jpg" srcset="../../assets/img/jpg/speakers/15@2x.jpg 2x, ../../assets/img/jpg/speakers/15@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
