@@ -106,7 +106,7 @@ export default {
   data() {
     return {
       lang: i18n.language,
-    }
+    };
   }
 };
 </script>
