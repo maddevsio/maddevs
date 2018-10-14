@@ -8,7 +8,7 @@
     <Partners />
     <OpenSource />
     <Speakers />
-    <OurBlog />
+    <OurBlog :language="language"/>
     <Press />
     <Associations />
     <Contacts />
@@ -31,6 +31,7 @@ import Associations from './Associations';
 
 export default {
   name: 'Home',
+  props: ['language'],
   components: {
     Banner,
     HowItWork,

@@ -6,7 +6,10 @@
         <div class="our-blog-wrap_list">
           <!-- Item 1 -->
           <a :href="$t('blog1-link')" target="_blank" class="our-blog-wrap_list-item">
-            <img src="../../assets/img/png/our-blog/1.png" srcset="../../assets/img/png/our-blog/1@2x.png 2x" alt="">
+            <picture>
+              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/1@2x.png">
+              <img src="../../assets/img/png/our-blog/1.png" srcset="../../assets/img/png/our-blog/1@2x.png 2x" alt="">
+            </picture>
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
                 <img src="../../assets/img/png/our-blog/AndrewM.png" srcset="../../assets/img/png/our-blog/AndrewM@2x.png 2x" alt="">
@@ -20,7 +23,10 @@
           </a>
           <!-- Item 2 -->
           <a :href="$t('blog2-link')" target="_blank" class="our-blog-wrap_list-item">
-            <img src="../../assets/img/png/our-blog/2.png" srcset="../../assets/img/png/our-blog/2@2x.png 2x" alt="">
+            <picture>
+              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/2@2x.png">
+              <img src="../../assets/img/png/our-blog/2.png" srcset="../../assets/img/png/our-blog/2@2x.png 2x" alt="">
+            </picture>
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
                 <img src="../../assets/img/png/our-blog/OlegK.png" srcset="../../assets/img/png/our-blog/OlegK@2x.png 2x" alt="">
@@ -34,7 +40,10 @@
           </a>
           <!-- Item 3 -->
           <a :href="$t('blog3-link')" target="_blank" class="our-blog-wrap_list-item">
-            <img src="../../assets/img/png/our-blog/3.png" srcset="../../assets/img/png/our-blog/3@2x.png 2x" alt="">
+            <picture>
+              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/3@2x.png">
+              <img src="../../assets/img/png/our-blog/3.png" srcset="../../assets/img/png/our-blog/3@2x.png 2x" alt="">
+            </picture>
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
                 <img src="../../assets/img/png/our-blog/AlexV.png" srcset="../../assets/img/png/our-blog/AlexV@2x.png 2x" alt="">
@@ -48,7 +57,10 @@
           </a>
           <!-- Item 4 -->
           <a :href="$t('blog4-link')" target="_blank" class="our-blog-wrap_list-item">
-            <img src="../../assets/img/png/our-blog/4.png" srcset="../../assets/img/png/our-blog/4@2x.png 2x" alt="">
+            <picture>
+              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/4@2x.png">
+              <img src="../../assets/img/png/our-blog/4.png" srcset="../../assets/img/png/our-blog/4@2x.png 2x" alt="">
+            </picture>
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
                 <img src="../../assets/img/png/our-blog/AllaK.png" srcset="../../assets/img/png/our-blog/AllaK@2x.png 2x" alt="">
@@ -62,11 +74,15 @@
           </a>
           <!-- Item 5 -->
           <a :href="$t('blog5-link')" target="_blank" class="our-blog-wrap_list-item">
-            <img v-if="lang === 'ru'" src="../../assets/img/png/our-blog/5.png" srcset="../../assets/img/png/our-blog/5@2x.png 2x" alt="">
-            <img v-else src="../../assets/img/png/our-blog/7.png" srcset="../../assets/img/png/our-blog/7@2x.png 2x" alt="">
+            <picture>
+              <source v-if="language === 'ru'" media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/5@2x.png">
+              <source v-else media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/7@2x.png">
+              <img v-if="language === 'ru'" src="../../assets/img/png/our-blog/5.png" srcset="../../assets/img/png/our-blog/5@2x.png 2x" alt="">
+              <img v-else src="../../assets/img/png/our-blog/7.png" srcset="../../assets/img/png/our-blog/7@2x.png 2x" alt="">
+            </picture>
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
-                <img v-if="lang === 'ru'" src="../../assets/img/png/our-blog/TimurZ.png" srcset="../../assets/img/png/our-blog/TimurZ@2x.png 2x" alt="">
+                <img v-if="language === 'ru'" src="../../assets/img/png/our-blog/TimurZ.png" srcset="../../assets/img/png/our-blog/TimurZ@2x.png 2x" alt="">
                 <img v-else src="../../assets/img/png/our-blog/AlexeyM.png" srcset="../../assets/img/png/our-blog/AlexeyM.png 2x" alt="">
               </div>
               <div class="our-blog_sender-info">
@@ -76,14 +92,18 @@
               <h5>{{$t('blog5-title')}}</h5>
             </div>
           </a>
-          <!-- Item 6 -->
+          <!-- Item 5 -->
           <a :href="$t('blog6-link')" target="_blank" class="our-blog-wrap_list-item">
-            <img v-if="lang === 'ru'" src="../../assets/img/png/our-blog/6.png" srcset="../../assets/img/png/our-blog/6@2x.png 2x" alt="">
-            <img v-else src="../../assets/img/png/our-blog/8.png" srcset="../../assets/img/png/our-blog/8@2x.png 2x" alt="">
+            <picture>
+              <source v-if="language === 'ru'" media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/6@2x.png">
+              <source v-else media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/8@2x.png">
+              <img v-if="language === 'ru'" src="../../assets/img/png/our-blog/6.png" srcset="../../assets/img/png/our-blog/6@2x.png 2x" alt="">
+              <img v-else src="../../assets/img/png/our-blog/8.png" srcset="../../assets/img/png/our-blog/8@2x.png 2x" alt="">
+            </picture>
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
-                <img v-if="lang === 'ru'" src="../../assets/img/png/our-blog/AndrewS.png" srcset="../../assets/img/png/our-blog/AndrewS@2x.png 2x" alt="">
-                <img v-else src="../../assets/img/png/our-blog/AndrewM.png" srcset="../../assets/img/png/our-blog/AndrewM@2x.png 2x" alt="">
+                <img v-if="language === 'ru'" src="../../assets/img/png/our-blog/AndrewS.png" srcset="../../assets/img/png/our-blog/AndrewS@2x.png 2x" alt="">
+                <img v-else src="../../assets/img/png/our-blog/AndrewM.png" srcset="../../assets/img/png/our-blog/AndrewM.png 2x" alt="">
               </div>
               <div class="our-blog_sender-info">
                 <p class="our-blog_sender-name">{{$t('blog6-sender-name')}}</p>
@@ -103,6 +123,7 @@ import i18n from 'i18next';
 
 export default {
   name: 'our-blog',
+  props: ['language'],
   data() {
     return {
       lang: i18n.language,
