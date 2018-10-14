@@ -5,7 +5,7 @@
     <BestPractices />
     <WeUse />
     <Reviews />
-    <Partners />
+    <Clients />
     <OpenSource />
     <Speakers />
     <OurBlog :language="language"/>
@@ -21,7 +21,7 @@ import HowItWork from './HowItWork';
 import BestPractices from './BestPractices';
 import WeUse from './WeUse';
 import Reviews from './Reviews';
-import Partners from './Partners';
+import Clients from './Clients';
 import OpenSource from './OpenSource';
 import Speakers from './Speakers';
 import OurBlog from './OurBlog';
@@ -38,7 +38,7 @@ export default {
     BestPractices,
     WeUse,
     Reviews,
-    Partners,
+    Clients,
     OpenSource,
     Speakers,
     OurBlog,
