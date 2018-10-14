@@ -21,21 +21,21 @@
                     <picture>
                         <source srcset="../../assets/img/png/best-practices/bp1.png"
                                 media="(max-width: 992px)">
-                        <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp1@2x.png">
+                        <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp1@2x.png" srcset="../../assets/img/png/best-practices/bp1.png 2x">
                     </picture>
                   </slide>
                   <slide class="best-practices_wrap-preview-slide">
                     <picture>
                         <source srcset="../../assets/img/png/best-practices/bp2.png"
                                 media="(max-width: 992px)">
-                        <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp2@2x.png">
+                        <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp2@2x.png" srcset="../../assets/img/png/best-practices/bp2.png 2x">
                     </picture>
                   </slide>
                   <slide class="best-practices_wrap-preview-slide">
                     <picture>
                         <source srcset="../../assets/img/png/best-practices/bp3.png"
                                 media="(max-width: 992px)">
-                        <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp3@2x.png">
+                        <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp3@2x.png" srcset="../../assets/img/png/best-practices/bp3.png 2x">
                     </picture>
                   </slide>
                 </carousel>
