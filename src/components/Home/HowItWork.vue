@@ -40,21 +40,21 @@
                 <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw2.png"
                       media="(max-width: 992px)">
-                    <img @click.prevent="nextSlide" src="../../assets/img/png/how-it-work/hiw2@2x.png">
+                    <img @click.prevent="nextSlide" src="../../assets/img/png/how-it-work/hiw2@2x.png" srcset="../../assets/img/png/how-it-work/hiw2.png 2x">
                 </picture>
               </slide>
               <slide class="how-it-work_wrap-content-slide">
                 <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw1.png"
                       media="(max-width: 992px)">
-                    <img @click.prevent="nextSlide" ref="image" src="../../assets/img/png/how-it-work/hiw1@2x.png">
+                    <img @click.prevent="nextSlide" ref="image" src="../../assets/img/png/how-it-work/hiw1@2x.png" srcset="../../assets/img/png/how-it-work/hiw1.png 2x">
                 </picture>
               </slide>
               <slide class="how-it-work_wrap-content-slide">
                 <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw3.png"
                       media="(max-width: 992px)">
-                    <img @click.prevent="nextSlide" src="../../assets/img/png/how-it-work/hiw3@2x.png">
+                    <img @click.prevent="nextSlide" src="../../assets/img/png/how-it-work/hiw3@2x.png" srcset="../../assets/img/png/how-it-work/hiw3.png 2x">
                 </picture>
               </slide>
             </carousel>
