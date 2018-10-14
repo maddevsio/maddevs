@@ -36,7 +36,8 @@ export default {
         this.lang = curLang;
       });
       history.pushState('', curLang, curLang);
-    }
+      this.$emit('EventLanguage', this.lang);
+    },
   }
 };
 </script>
