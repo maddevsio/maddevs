@@ -220,6 +220,19 @@
             }
         }
     }
+    .partners {
+        &-wrap {
+            flex-direction: column;
+            align-items: center;
+            &_item {
+                width: 430px;
+                max-width: 430px;
+                &:first-child {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
     .our-blog {
         &-wrap_list-item {
             .our-blog_sender h5 {
@@ -641,6 +654,14 @@
     }
     .clients {
         padding: 60px 0;
+    }
+    .partners {
+        padding-top: 60px;
+        &-wrap {
+            &_item {
+                width: 100%;
+            }
+        }
     }
     .open-source_wrap-projects_list-item {
         border-right-width: 0;

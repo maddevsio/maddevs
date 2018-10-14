@@ -6,6 +6,7 @@
     <WeUse />
     <Reviews />
     <Clients />
+    <Partners />
     <OpenSource />
     <Speakers />
     <OurBlog :language="language"/>
@@ -22,6 +23,7 @@ import BestPractices from './BestPractices';
 import WeUse from './WeUse';
 import Reviews from './Reviews';
 import Clients from './Clients';
+import Partners from './Partners';
 import OpenSource from './OpenSource';
 import Speakers from './Speakers';
 import OurBlog from './OurBlog';
@@ -39,6 +41,7 @@ export default {
     WeUse,
     Reviews,
     Clients,
+    Partners,
     OpenSource,
     Speakers,
     OurBlog,
