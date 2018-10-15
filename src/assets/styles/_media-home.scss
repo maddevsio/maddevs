@@ -225,8 +225,8 @@
             flex-direction: column;
             align-items: center;
             &_item {
-                width: 430px;
-                max-width: 430px;
+                width: 100%;
+                max-width: 100%;
                 &:first-child {
                     margin-bottom: 30px;
                 }
@@ -245,8 +245,8 @@
             flex-direction: column;
             align-items: center;
             &_item {
-                width: 430px;
-                max-width: 430px;
+                width: 100%;
+                max-width: 100%;
                 &:first-child {
                     margin-bottom: 30px;
                 }
