@@ -21,25 +21,16 @@
             <p>{{$t('Artificial Intelligence Identification')}}</p>
           </div>
         </a>
-        <a href="https://blog.maddevs.io/tagged/pwa" target="_blank" class="open-source_wrap-projects_list-item op-proj-2">
+        <a href="https://github.com/maddevsio/heimdall" target="_blank" class="open-source_wrap-projects_list-item op-proj-2">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/madpwa.svg" class="op-img-madpwa" alt="MadPwa">
+            <img src="../../assets/img/svg/openSource/Heimdall.svg" class="op-img-sf" alt="Heimdall">
           </div>
           <div class="projects-desc_wrap">
-            <h4>MADPWA</h4>
-            <p>{{$t('Quick, convenient and easy way to create PWA')}}</p>
+            <h4>Heimdall</h4>
+            <p>{{$t('Tool for analyzing smart contracts using mythril')}}</p>
           </div>
         </a>
-        <a href="https://gps.maddevs.io/ru/" target="_blank" class="open-source_wrap-projects_list-item op-proj-3">
-          <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/mlm.svg" class="op-img-mlm" alt="Mad Location Manager">
-          </div>
-          <div class="projects-desc_wrap">
-            <h4>Mad Location Manager</h4>
-            <p>{{$t('Accurate and “clean” data from GPS receivers')}}</p>
-          </div>
-        </a>
-        <a href="https://tool.peklo.studio/" target="_blank" class="open-source_wrap-projects_list-item op-proj-4">
+        <a href="https://tool.peklo.studio/" target="_blank" class="open-source_wrap-projects_list-item op-proj-3">
           <div class="projects-img_wrap">
             <img src="../../assets/img/svg/openSource/PKL.svg" class="op-img-sf" alt="Sensor fusion">
           </div>
@@ -48,13 +39,40 @@
             <p>{{$t('Tool for automatization of contextual advertising creation')}}</p>
           </div>
         </a>
-        <a href="https://github.com/maddevsio/heimdall" target="_blank" class="open-source_wrap-projects_list-item op-proj-5">
+        <a href="https://blog.maddevs.io/https-blog-maddevs-io-yourcast-tv-32915159be1c" target="_blank" class="open-source_wrap-projects_list-item op-proj-4">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/Heimdall.svg" class="op-img-sf" alt="Heimdall">
+            <img src="../../assets/img/svg/openSource/yourcast.svg" class="op-img-madpwa" alt="MadPwa">
           </div>
           <div class="projects-desc_wrap">
-            <h4>Heimdall</h4>
-            <p>{{$t('Tool for analyzing smart contracts using mythril')}}</p>
+            <h4>Yourcast</h4>
+            <p>{{$t('Bot that forms the playlist of technical videos')}}</p>
+          </div>
+        </a>
+        <a href="https://blog.maddevs.io/tagged/pwa" target="_blank" class="open-source_wrap-projects_list-item op-proj-5">
+          <div class="projects-img_wrap">
+            <img src="../../assets/img/svg/openSource/madpwa.svg" class="op-img-madpwa" alt="MadPwa">
+          </div>
+          <div class="projects-desc_wrap">
+            <h4>MADPWA</h4>
+            <p>{{$t('Quick, convenient and easy way to create PWA')}}</p>
+          </div>
+        </a>
+        <a href="https://gps.maddevs.io/ru/" target="_blank" class="open-source_wrap-projects_list-item op-proj-6">
+          <div class="projects-img_wrap">
+            <img src="../../assets/img/svg/openSource/mlm.svg" class="op-img-mlm" alt="Mad Location Manager">
+          </div>
+          <div class="projects-desc_wrap">
+            <h4>Mad Location Manager</h4>
+            <p>{{$t('Accurate and “clean” data from GPS receivers')}}</p>
+          </div>
+        </a>
+        <a href="https://github.com/maddevsio/ariadna" target="_blank" class="open-source_wrap-projects_list-item op-proj-7">
+          <div class="projects-img_wrap">
+            <img src="../../assets/img/svg/openSource/ariadna.svg" class="op-img-mlm" alt="Mad Location Manager">
+          </div>
+          <div class="projects-desc_wrap">
+            <h4>Ariadna</h4>
+            <p>{{$t('The open-source geocoder built on top of ElasticSearch for fast geocoding')}}</p>
           </div>
         </a>
       </div>
