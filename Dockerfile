@@ -1,10 +1,11 @@
-FROM node:8-alpine as build
+FROM node:8-alpine
 WORKDIR /app
 COPY package.json /app
 RUN npm install
 COPY . /app
 RUN npm run build
 
-FROM nginx:alpine
-LABEL maintainer="Andrew S <halfb00t@gmail.com>"
-COPY --from=build /app/dist /usr/share/nginx/html
+ENV PORT 3000
+EXPOSE 3000
+
+CMD ["node", "server.js"]
