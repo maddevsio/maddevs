@@ -156,38 +156,13 @@
                     flex-wrap: wrap;
                     margin-left: 0;
                     margin-right: 0;
-                    border: 0;
-                    .op-proj-2 {
-                        border-bottom-width: 0;
-                    }
-                    .op-proj-3 {
-                        border-right-width: 0;
-                    }
                     &-item {
-                        width: 50%;
+                        width: 50% !important;
                         height: 450px;
-                        padding: 0 72px;
                         box-sizing: border-box;
-                        border: 1px solid #e8e8e8;
-                        &:first-child {
-                            border-right-width: 0;
-                            border-bottom-width: 0;
-                        }
                         .projects-img_wrap {
                             height: 100px;
                             margin-bottom: 60px;
-                            // .op-img-opensourse {
-                            //     height: 100px;
-                            // }
-                            // .op-img-madpwa {
-                            //     height: 36px;
-                            // }
-                            // .op-img-mlm {
-                            //     height: 100px;
-                            // }
-                            // .op-img-sf {
-                            //     height: 100px;
-                            // }
                         }
                         .projects-desc_wrap {
                           h4 {
@@ -197,6 +172,15 @@
                             font-size: 20px;
                           }
                         }
+                    }
+                    .op-proj-4 {
+                        border-bottom: 1px solid #e8e8e8;
+                    }
+                    .op-proj-5 {
+                        border-bottom: 1px solid #e8e8e8;
+                    }
+                    .op-proj-6 {
+                        border-bottom: 1px solid #e8e8e8;
                     }
                 }
             }
@@ -679,7 +663,7 @@
                 margin-top: 60px;
                 &_list {
                     &-item {
-                        width: 100%;
+                        width: 100% !important;
                         height: 380px;
                         box-sizing: border-box;
                         padding: 0 17px;
