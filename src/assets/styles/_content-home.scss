@@ -734,8 +734,8 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 40px;
-        border-top: 2px solid #e8e8e8;
-        border-bottom: 2px solid #e8e8e8;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
         &-item {
           width: 20%;
           height: 450px;
@@ -743,7 +743,6 @@
           align-items: flex-start;
           flex-direction: column;
           justify-content: center;
-          border-left: 0.5px solid #e8e8e8;
           border-right: 0.5px solid #e8e8e8;
           padding: 0 50px;
           text-decoration: none;
@@ -783,20 +782,20 @@
         }
         .op-proj-1 {
           width: 33%;
-          border-bottom: 2px solid #e8e8e8;
+          border-bottom: 1px solid #e8e8e8;
           img {
             height: 61px;
           }
         } 
         .op-proj-2 {
-          border-bottom: 2px solid #e8e8e8;
+          border-bottom: 1px solid #e8e8e8;
           width: 34%;
           img {
             height: 90px;
           }
         } 
         .op-proj-3 {
-          border-bottom: 2px solid #e8e8e8;
+          border-bottom: 1px solid #e8e8e8;
           width: 33%;
           img {
             height: 73px;
