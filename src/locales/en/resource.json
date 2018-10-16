@@ -54,11 +54,13 @@
   "forks": "forks",
   "tasks": "tasks",
   "Projects": "Pet Projects",
-  "Artificial Intelligence Identification": "Artificial Intelligence Identification",
-  "Quick, convenient and easy way to create PWA": "Quick, convenient and easy way to create PWA",
-  "Accurate and “clean” data from GPS receivers": "Accurate and “clean” data from GPS receivers",
-  "Tool for automatization of contextual advertising creation": "Tool for automatization of contextual advertising creation",
-  "Tool for analyzing smart contracts using mythril": "Tool for analyzing smart contracts using mythril",
+  "Artifical Intelligence and machine learning for personal identification": "Artifical Intelligence and machine learning for personal identification",
+  "Set of libraries for the quick, convinient and easy way creation of PWA": "Set of libraries for the quick, convinient and easy way creation of PWA",
+  "Accurate and ”pure” data from GPS-recivers proceeded with Kalman's filter": "Accurate and ”pure” data from GPS-recivers proceeded with Kalman's filter",
+  "Tool for automating the process of contextual advirtisement creation": "Tool for automating the process of contextual advirtisement creation",
+  "Tool for monitoring the security of Ethereum smart contracts as a badge in the repository": "Tool for monitoring the security of Ethereum smart contracts as a badge in the repository",
+  "Bot that forms the playlist of technical videos": "Bot that forms the playlist of technical videos",
+  "The open-source geocoder built on top of ElasticSearch for fast geocoding": "The open-source geocoder built on top of ElasticSearch for fast geocoding",
   "We develop, gain experience and share it by speaking at conferences.": "We develop, gain experience and share it by speaking at conferences.",
   "A series of IT conferences for developers around the world": "A series of IT conferences for developers around the world",
   "full list of conferences": "full list of conferences",
@@ -134,7 +136,5 @@
   "blog6-sender-meta_views": "4 300 views",
   "Partners": "Partners",
   "Partners-block1": "Artificial intelligence + blockchain. A limitless ability to forecast the future",
-  "Partners-block2": "Mythril Platform enables a secure and thriving ecosystem of Ethereum dapps & smarts contracts",
-  "Bot that forms the playlist of technical videos": "Bot that forms the playlist of technical videos",
-  "The open-source geocoder built on top of ElasticSearch for fast geocoding": "The open-source geocoder built on top of ElasticSearch for fast geocoding"
+  "Partners-block2": "Mythril Platform enables a secure and thriving ecosystem of Ethereum dapps & smarts contracts"
 }

@@ -52,11 +52,13 @@
   "forks": "форки",
   "tasks": "задачи",
   "Projects": "Внутрение проекты компании",
-  "Artificial Intelligence Identification": "Искусственный интеллект идентификации личности",
-  "Quick, convenient and easy way to create PWA": "Быстрый, удобный и простой способ создания PWA",
-  "Accurate and “clean” data from GPS receivers": "Точные и «чистые» данные с GPS-приемников",
-  "Tool for automatization of contextual advertising creation": "Упрости создание контекстной рекламы",
-  "Tool for analyzing smart contracts using mythril": "Инструмент для мониторинга безопасности смарт-контрактов Эфириума",
+  "Bot that forms the playlist of technical videos": "Бот для формирования плейлистов из видео и онлайн-стриминга",
+  "The open-source geocoder built on top of ElasticSearch for fast geocoding": "Быстрый геокодер, построенный на основе ElasticSearch",
+  "Artifical Intelligence and machine learning for personal identification": "Искусственный интеллект для идентификации личности",
+  "Set of libraries for the quick, convinient and easy way creation of PWA": "Набор библиотек для быстрого и удобного создания PWA",
+  "Accurate and ”pure” data from GPS-recivers proceeded with Kalman's filter": "Точные и ”чистые” данные с GPS-приемников на основе фильтра Калмана",
+  "Tool for automating the process of contextual advirtisement creation": "Инструмент для автоматизации процесса создания контекстной рекламы",
+  "Tool for monitoring the security of Ethereum smart contracts as a badge in the repository": "Инструмент для мониторинга безопасности смарт-контрактов Эфириума",
   "We develop, gain experience and share it by speaking at conferences.": "Мы развиваемся, получаем опыт и делимся им, выступая докладчиками на конференциях",
   "A series of IT conferences for developers around the world": "Серия IT-конференций для разработчиков, проводимая по всему миру",
   "full list of conferences": "полный список конференций",
@@ -133,7 +135,5 @@
   "blog6-sender-meta_views": "571 просмотров",
   "Partners": "Партнеры",
   "Partners-block1": "Безграничные возможности для прогнозирования будущего с помощью искусственного интеллекта и блокчейна.",
-  "Partners-block2": "Платформа для создания безопасной экосистемы смарт-контрактов и децентрализованных приложений.",
-  "Bot that forms the playlist of technical videos": "Бот для формирования плейлистов из видео и онлайн-стриминга",
-  "The open-source geocoder built on top of ElasticSearch for fast geocoding": "Быстрый геокодер, построенный на основе ElasticSearch"
+  "Partners-block2": "Платформа для создания безопасной экосистемы смарт-контрактов и децентрализованных приложений."
 }
