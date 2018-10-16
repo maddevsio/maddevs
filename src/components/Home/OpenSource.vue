@@ -18,7 +18,7 @@
           </div>
           <div class="projects-desc_wrap">
             <h4>IDmatch</h4>
-            <p>{{$t('Artificial Intelligence Identification')}}</p>
+            <p>{{$t('Artifical Intelligence and machine learning for personal identification')}}</p>
           </div>
         </a>
         <a href="https://github.com/maddevsio/heimdall" target="_blank" class="open-source_wrap-projects_list-item op-proj-2">
@@ -27,7 +27,7 @@
           </div>
           <div class="projects-desc_wrap">
             <h4>Heimdall</h4>
-            <p>{{$t('Tool for analyzing smart contracts using mythril')}}</p>
+            <p>{{$t('Tool for monitoring the security of Ethereum smart contracts as a badge in the repository')}}</p>
           </div>
         </a>
         <a href="https://tool.peklo.studio/" target="_blank" class="open-source_wrap-projects_list-item op-proj-3">
@@ -36,7 +36,7 @@
           </div>
           <div class="projects-desc_wrap">
             <h4>Peklo Tool</h4>
-            <p>{{$t('Tool for automatization of contextual advertising creation')}}</p>
+            <p>{{$t('Tool for automating the process of contextual advirtisement creation')}}</p>
           </div>
         </a>
         <a href="https://blog.maddevs.io/https-blog-maddevs-io-yourcast-tv-32915159be1c" target="_blank" class="open-source_wrap-projects_list-item op-proj-4">
@@ -54,7 +54,7 @@
           </div>
           <div class="projects-desc_wrap">
             <h4>MADPWA</h4>
-            <p>{{$t('Quick, convenient and easy way to create PWA')}}</p>
+            <p>{{$t('Set of libraries for the quick, convinient and easy way creation of PWA')}}</p>
           </div>
         </a>
         <a href="https://gps.maddevs.io/ru/" target="_blank" class="open-source_wrap-projects_list-item op-proj-6">
@@ -63,7 +63,7 @@
           </div>
           <div class="projects-desc_wrap">
             <h4>Mad Location Manager</h4>
-            <p>{{$t('Accurate and “clean” data from GPS receivers')}}</p>
+            <p>{{$t("Accurate and ”pure” data from GPS-recivers proceeded with Kalman's filter")}}</p>
           </div>
         </a>
         <a href="https://github.com/maddevsio/ariadna" target="_blank" class="open-source_wrap-projects_list-item op-proj-7">
