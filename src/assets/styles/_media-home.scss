@@ -162,7 +162,7 @@
                         box-sizing: border-box;
                         .projects-img_wrap {
                             height: 100px;
-                            margin-bottom: 60px;
+                            margin-bottom: 30px;
                         }
                         .projects-desc_wrap {
                           h4 {
@@ -664,11 +664,15 @@
                 &_list {
                     &-item {
                         width: 100% !important;
-                        height: 380px;
+                        height: auto;
                         box-sizing: border-box;
-                        padding: 0 17px;
+                        padding: 60px 16px;
+                    }
+                    .projects-img_wrap {
+                        height: auto;
                     }
                     .projects-desc_wrap {
+                        min-height: auto;
                         h4 {
                             font-size: 22px;
                         }

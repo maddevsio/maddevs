@@ -29,7 +29,7 @@
             </picture>
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
-                <img src="../../assets/img/png/our-blog/OlegK.png" srcset="../../assets/img/png/our-blog/OlegK@2x.png 2x" alt="">
+                <img src="../../assets/img/jpg/our-blog/OlegK.jpg" srcset="../../assets/img/jpg/our-blog/OlegK.jpg 2x" alt="">
               </div>
               <div class="our-blog_sender-info">
                 <p class="our-blog_sender-name">{{$t('blog2-sender-name')}}</p>
@@ -83,7 +83,7 @@
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
                 <img v-if="language === 'ru'" src="../../assets/img/png/our-blog/TimurZ.png" srcset="../../assets/img/png/our-blog/TimurZ@2x.png 2x" alt="">
-                <img v-else src="../../assets/img/png/our-blog/AlexeyM.png" srcset="../../assets/img/png/our-blog/AlexeyM.png 2x" alt="">
+                <img v-else src="../../assets/img/jpg/our-blog/AlexeyM.jpg" srcset="../../assets/img/jpg/our-blog/AlexeyM.jpg 2x" alt="">
               </div>
               <div class="our-blog_sender-info">
                 <p class="our-blog_sender-name">{{$t('blog5-sender-name')}}</p>
@@ -103,7 +103,7 @@
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
                 <img v-if="language === 'ru'" src="../../assets/img/png/our-blog/AndrewS.png" srcset="../../assets/img/png/our-blog/AndrewS@2x.png 2x" alt="">
-                <img v-else src="../../assets/img/png/our-blog/AndrewM.png" srcset="../../assets/img/png/our-blog/AndrewM.png 2x" alt="">
+                <img src="../../assets/img/png/our-blog/AndrewM.png" srcset="../../assets/img/png/our-blog/AndrewM@2x.png 2x" alt="">
               </div>
               <div class="our-blog_sender-info">
                 <p class="our-blog_sender-name">{{$t('blog6-sender-name')}}</p>
