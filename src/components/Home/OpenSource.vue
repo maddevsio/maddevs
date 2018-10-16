@@ -57,7 +57,7 @@
             <p>{{$t('Set of libraries for the quick, convinient and easy way creation of PWA')}}</p>
           </div>
         </a>
-        <a href="https://github.com/maddevsio/ariadna" target="_blank" class="open-source_wrap-projects_list-item op-proj-7">
+        <a href="https://github.com/maddevsio/ariadna" target="_blank" class="open-source_wrap-projects_list-item op-proj-6">
           <div class="projects-img_wrap">
             <img src="../../assets/img/svg/openSource/ariadna.svg" alt="Mad Location Manager">
           </div>
@@ -66,7 +66,7 @@
             <p>{{$t('The open-source geocoder built on top of ElasticSearch for fast geocoding')}}</p>
           </div>
         </a>
-        <a href="https://gps.maddevs.io/ru/" target="_blank" class="open-source_wrap-projects_list-item op-proj-6">
+        <a href="https://gps.maddevs.io/ru/" target="_blank" class="open-source_wrap-projects_list-item op-proj-7">
           <div class="projects-img_wrap">
             <img src="../../assets/img/svg/openSource/mlm.svg" alt="Mad Location Manager">
           </div>

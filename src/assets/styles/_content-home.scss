@@ -330,7 +330,7 @@
 
 //---------------------- How it work ----------------//
 .how-it-work {
-  padding-top: 190px;
+  padding-top: 60px;
   &_wrap {
     p {
       text-align: center;
@@ -764,7 +764,6 @@
           }
           .projects-desc_wrap {
             min-height: 130px;
-            height: 4px;
             h4 {
               font-size: 24px;
               color: #2c1c1c;
@@ -820,13 +819,13 @@
         .op-proj-6 {
           width: 25%;
           img {
-            height: 58px;
+            height: 41px;
           }
         } 
         .op-proj-7 {
           width: 25%;
           img {
-            height: 41px;
+            height: 58px;
           }
         } 
       }
@@ -1062,6 +1061,10 @@
             border-radius: 100%;
             overflow: hidden;
             margin-right: 8px;
+            img {
+              height: 100%;
+              object-fit: cover;
+            }
           }
           &-name, &-meta {
             color: #000;
