@@ -41,7 +41,7 @@
         </a>
         <a href="https://blog.maddevs.io/https-blog-maddevs-io-yourcast-tv-32915159be1c" target="_blank" class="open-source_wrap-projects_list-item op-proj-4">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/yourcast.svg" class="op-img-madpwa" alt="MadPwa">
+            <img src="../../assets/img/svg/openSource/yourcast.svg" alt="MadPwa">
           </div>
           <div class="projects-desc_wrap">
             <h4>Yourcast</h4>
@@ -59,7 +59,7 @@
         </a>
         <a href="https://gps.maddevs.io/ru/" target="_blank" class="open-source_wrap-projects_list-item op-proj-6">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/mlm.svg" class="op-img-mlm" alt="Mad Location Manager">
+            <img src="../../assets/img/svg/openSource/mlm.svg" alt="Mad Location Manager">
           </div>
           <div class="projects-desc_wrap">
             <h4>Mad Location Manager</h4>
@@ -68,7 +68,7 @@
         </a>
         <a href="https://github.com/maddevsio/ariadna" target="_blank" class="open-source_wrap-projects_list-item op-proj-7">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/ariadna.svg" class="op-img-mlm" alt="Mad Location Manager">
+            <img src="../../assets/img/svg/openSource/ariadna.svg" alt="Mad Location Manager">
           </div>
           <div class="projects-desc_wrap">
             <h4>Ariadna</h4>
