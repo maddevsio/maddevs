@@ -91,7 +91,7 @@
           height: 24px;
           opacity: 0.6;
           border-radius: 4px;
-          background-color: #ffffff;
+          background-color: #fff;
           margin-top: 15px;
           cursor: pointer;
         }
@@ -106,7 +106,7 @@
           height: 7px;
           opacity: 0.8;
           border-radius: 5px;
-          background-color: #ffffff;
+          background-color: #fff;
           margin-bottom: 6px;
           margin-left: 10px;
         }
@@ -115,7 +115,7 @@
           height: 5px;
           opacity: 0.45;
           border-radius: 5px;
-          background-color: #ffffff;
+          background-color: #fff;
           margin-left: 10px;
         }
         .sidebar-content-list {
@@ -159,28 +159,28 @@
           .sidebar-content-list_item1 {
             width: 68px;
             height: 5px;
-            background-color: #ffffff;
+            background-color: #fff;
             border-radius: 5px;
             opacity: 0.45;
           }
           .sidebar-content-list_item2 {
             width: 50px;
             height: 5px;
-            background-color: #ffffff;
+            background-color: #fff;
             border-radius: 5px;
             opacity: 0.45;
           }
           .sidebar-content-list_item3 {
             width: 63px;
             height: 5px;
-            background-color: #ffffff;
+            background-color: #fff;
             border-radius: 5px;
             opacity: 0.45;
           }
           .sidebar-content-list_item4 {
             width: 31px;
             height: 5px;
-            background-color: #ffffff;
+            background-color: #fff;
             border-radius: 5px;
             opacity: 0.45;
           }
@@ -208,9 +208,9 @@
         }
         h5 {
           font-size: 14px;
-          font-family: 'OpenSans-Bold', sans-serif;
+          font-family: 'OpenSans-Medium', sans-serif;
           line-height: 1.21;
-          letter-spacing: -0.2px;
+          letter-spacing: .2px;
           color: #000;
         }
         .open-slack-menu {
@@ -268,7 +268,7 @@
           }
           h5 {
             font-size: 14px;
-            font-family: 'OpenSans-Bold', sans-serif;
+            font-family: 'OpenSans-Medium', sans-serif;
             color: #000;
             line-height: 1.21;
             margin: 0 10px;
@@ -639,7 +639,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 5px;
-      background-color: #ffffff;
+      background-color: #fff;
       box-shadow: 0 6px 22px 0 rgba(38, 36, 32, .08);
       padding: 60px 10px;
       box-sizing: border-box;
@@ -725,6 +725,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0 15px;
       }
       .our-pets {
         font-size: 26px;
@@ -1073,6 +1074,9 @@
             letter-spacing: 0.1px;
             font-size: 13px;
           }
+          &-name {
+            letter-spacing: .4;
+          }
           &-meta {
             display: flex;
             align-items: center;
@@ -1093,7 +1097,8 @@
             color: #000;
             font-size: 24px;
             line-height: 1.25;
-            font-family: 'MADEEvolveSans-bold', sans-serif;
+            font-family: 'MADEEvolveSans-medium', sans-serif;
+            font-weight: normal;
             margin-top: 12px;
             transition: all .2s ease;
           }
@@ -1120,7 +1125,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 5px;
-      background-color: #ffffff;
+      background-color: #fff;
       box-shadow: 0 6px 22px 0 rgba(38, 36, 32, .08);
       padding: 60px 10px;
       box-sizing: border-box;
@@ -1197,7 +1202,7 @@
           font-family: 'MADEEvolveSans-regular', sans-serif;
           line-height: 1.5;
           letter-spacing: normal;
-          color: #ffffff;
+          color: #fff;
         }
         a {
           font-size: 18px;
@@ -1205,7 +1210,7 @@
           line-height: 1.5;
           letter-spacing: -0.4px;
           text-align: left;
-          color: #ffffff;
+          color: #fff;
           text-decoration: none;
         }
       }
