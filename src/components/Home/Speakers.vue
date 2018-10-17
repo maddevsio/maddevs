@@ -110,19 +110,6 @@
                 </div>
             </div>
             <div class="speakers_wrap-people-item">
-                <img src="../../assets/img/jpg/speakers/6.jpg" srcset="../../assets/img/jpg/speakers/6@2x.jpg 2x, ../../assets/img/jpg/speakers/6@3x.jpg 3x" alt="People">
-                <div class="people-info-block">
-                    <div class="people-info-block__header">
-                        <div class="people-info-block__header-line">
-                            <p>GDG Almaty 2017</p>
-                        </div>
-                    </div>
-                    <a target="_blank" href="https://www.slideshare.net/maddevs/kotlin-116845515">
-                        <p>{{$t('Kotlin Introduction')}}</p>
-                    </a>
-                </div>
-            </div>
-            <div class="speakers_wrap-people-item">
                 <img src="../../assets/img/jpg/speakers/7.jpg" srcset="../../assets/img/jpg/speakers/7@2x.jpg 2x, ../../assets/img/jpg/speakers/7@3x.jpg 3x" alt="People">
                 <!-- Hover info block -->
                 <div class="people-info-block">
@@ -133,6 +120,19 @@
                     </div>
                     <a target="_blank" href="https://www.slideshare.net/maddevs/grpc-75458612">
                         <p>{{$t('Introduction to gRPC')}}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="speakers_wrap-people-item">
+                <img src="../../assets/img/jpg/speakers/6.jpg" srcset="../../assets/img/jpg/speakers/6@2x.jpg 2x, ../../assets/img/jpg/speakers/6@3x.jpg 3x" alt="People">
+                <div class="people-info-block">
+                    <div class="people-info-block__header">
+                        <div class="people-info-block__header-line">
+                            <p>GDG Almaty 2017</p>
+                        </div>
+                    </div>
+                    <a target="_blank" href="https://www.slideshare.net/maddevs/kotlin-116845515">
+                        <p>{{$t('Kotlin Introduction')}}</p>
                     </a>
                 </div>
             </div>

@@ -45,7 +45,7 @@
           </div>
           <div class="projects-desc_wrap">
             <h4>Yourcast</h4>
-            <p>{{$t('Bot that forms the playlist of technical videos')}}</p>
+            <p>{{$t('Bot that forms the video playlist and transfers the data to HLS stream in browser')}}</p>
           </div>
         </a>
         <a href="https://blog.maddevs.io/tagged/pwa" target="_blank" class="open-source_wrap-projects_list-item op-proj-5">

@@ -52,7 +52,7 @@
   "forks": "форки",
   "tasks": "задачи",
   "Projects": "Внутрение проекты компании",
-  "Bot that forms the playlist of technical videos": "Бот для формирования плейлистов из видео и онлайн-стриминга",
+  "Bot that forms the video playlist and transfers the data to HLS stream in browser": "Бот для формирования плейлистов из видео и онлайн-стриминга",
   "The open-source geocoder built on top of ElasticSearch for fast geocoding": "Быстрый геокодер, построенный на основе ElasticSearch",
   "Artifical Intelligence and machine learning for personal identification": "Искусственный интеллект для идентификации личности",
   "Set of libraries for the quick, convinient and easy way creation of PWA": "Набор библиотек для быстрого и удобного создания PWA",
