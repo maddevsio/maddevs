@@ -5,40 +5,44 @@
         <h2 class="sec-title">{{$t('We constantly learn, gain experience and share it by speaking at the conferences')}}</h2>
         <div class="speakers_wrap-places">
             <div class="speakers_wrap-places-item">
-                <img src="../../assets/img/svg/speakers/hl.svg" alt="Places">
+                <img src="../../assets/img/svg/speakers/hl.svg" alt="hl">
             </div>
             <div class="speakers_wrap-places-item">
-                <img src="../../assets/img/svg/speakers/tl-copy.svg" alt="Places">
+                <img src="../../assets/img/svg/speakers/tl.svg" alt="tl">
             </div>
             <div class="speakers_wrap-places-item">
-                <img src="../../assets/img/svg/speakers/stachka.svg" alt="Places">
+                <img src="../../assets/img/svg/speakers/stachka.svg" alt="stachka">
             </div>
             <div class="speakers_wrap-places-item">
-                <img src="../../assets/img/svg/speakers/rit.svg" alt="Places">
+                <img src="../../assets/img/svg/speakers/rit.svg" alt="rit">
             </div>
             <div class="speakers_wrap-places-item">
-                <img src="../../assets/img/svg/speakers/dev-fest-siberia-copy.svg" alt="Places">
+                <img src="../../assets/img/svg/speakers/dev-fest-siberia.svg" alt="dev-fest-siberia">
             </div>
             <div class="speakers_wrap-places-item">
-                <img src="../../assets/img/svg/speakers/iprof.svg" alt="Places">
+                <img src="../../assets/img/svg/speakers/iprof.svg" alt="iprof">
             </div>
             <div class="speakers_wrap-places-item">
-                <img src="../../assets/img/svg/speakers/go.png" alt="Places">
+                <picture>
+                <source media="(min-width: 465px)" srcset="../../assets/img/svg/speakers/go.png">
+                <source media="(min-width: 465px)" srcset="../../assets/img/svg/speakers/go@2x.png 2x">
+                <img src="../../assets/img/svg/speakers/go.png" alt="golang" />
+              </picture>
             </div>
             <div class="speakers_wrap-places-item">
-                <img src="../../assets/img/svg/speakers/gdg-bishkek.svg" alt="Places">
+                <img src="../../assets/img/svg/speakers/gdg-bishkek.svg" alt="gdg-bishkek">
             </div>
             <div class="speakers_wrap-places-item">
-                <img src="../../assets/img/svg/speakers/bit.svg" alt="Places">
+                <img src="../../assets/img/svg/speakers/bit.svg" alt="bit">
             </div>
             <div class="speakers_wrap-places-item">
-                <img src="../../assets/img/svg/speakers/fosdem-logo.svg" alt="Places">
+                <img src="../../assets/img/svg/speakers/fosdem.svg" alt="fosdem">
             </div>
             <div class="speakers_wrap-places-item">
-                <img src="../../assets/img/svg/speakers/vi-kit.svg" alt="Places">
+                <img src="../../assets/img/svg/speakers/vi-kit.svg" alt="vi-kit">
             </div>
             <div class="speakers_wrap-places-item">
-                <img src="../../assets/img/svg/speakers/techwomen.svg" alt="Places">
+                <img src="../../assets/img/svg/speakers/techwomen.svg" alt="techwomen">
             </div>
         </div>
         <div class="speakers_wrap-people">
