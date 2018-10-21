@@ -67,7 +67,7 @@
             <p>{{$t('The open-source geocoder built on top of ElasticSearch for fast geocoding')}}</p>
           </div>
         </a>
-        <a href="https://github.com/maddevsio/go-idmatch" target="_blank" class="open-source_wrap-projects_list-item op-proj-7">
+        <a href="https://idmatch.co/" target="_blank" class="open-source_wrap-projects_list-item op-proj-7">
           <div class="projects-img_wrap">
             <img src="../../assets/img/svg/openSource/id.svg" class="op-img-opensourse" alt="IDmatch">
           </div>

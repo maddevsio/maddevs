@@ -248,9 +248,7 @@
                         display: flex;
                         flex-direction: column;
                         a {
-                            &:first-child {
-                                margin-bottom: 16px;
-                            }
+                            margin: 8px 0 !important;
                         }
                     }
                 }
@@ -500,6 +498,9 @@
                 }
                 .phone-mail {
                     width: 50%;
+                    &_wrap {
+                        justify-content: center;
+                    }
                 }
             }
         }
@@ -811,6 +812,21 @@
                     h5 {
                         font-size: 12px;
                     }
+                }
+            }
+        }
+    }
+}
+        
+@media only screen and (max-width: 380px) {
+    .speakers {
+        &_wrap {
+            &-people {
+                margin-left: 0;
+                margin-right: 0;
+                &-item {
+                    width: 100%;
+                    max-width: 100%;
                 }
             }
         }
