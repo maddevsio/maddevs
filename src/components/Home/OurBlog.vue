@@ -24,8 +24,8 @@
           <!-- Item 2 -->
           <a :href="$t('blog2-link')" target="_blank" class="our-blog-wrap_list-item">
             <picture>
-              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/2@2x.png">
-              <img src="../../assets/img/png/our-blog/2.png" srcset="../../assets/img/png/our-blog/2@2x.png 2x" alt="">
+              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/docker@2x.png">
+              <img src="../../assets/img/png/our-blog/docker.png" srcset="../../assets/img/png/our-blog/docker@2x.png 2x" alt="">
             </picture>
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
@@ -41,8 +41,8 @@
           <!-- Item 3 -->
           <a :href="$t('blog3-link')" target="_blank" class="our-blog-wrap_list-item">
             <picture>
-              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/3@2x.png">
-              <img src="../../assets/img/png/our-blog/3.png" srcset="../../assets/img/png/our-blog/3@2x.png 2x" alt="">
+              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/mlm@2x.png">
+              <img src="../../assets/img/png/our-blog/mlm.png" srcset="../../assets/img/png/our-blog/mlm@2x.png 2x" alt="">
             </picture>
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
@@ -58,8 +58,8 @@
           <!-- Item 4 -->
           <a :href="$t('blog4-link')" target="_blank" class="our-blog-wrap_list-item">
             <picture>
-              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/4@2x.png">
-              <img src="../../assets/img/png/our-blog/4.png" srcset="../../assets/img/png/our-blog/4@2x.png 2x" alt="">
+              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/gprc@2x.png">
+              <img src="../../assets/img/png/our-blog/gprc.png" srcset="../../assets/img/png/our-blog/gprc@2x.png 2x" alt="">
             </picture>
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
@@ -75,8 +75,8 @@
           <!-- Item 5 -->
           <a :href="$t('blog5-link')" target="_blank" class="our-blog-wrap_list-item">
             <picture>
-              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/5@2x.png">
-              <img src="../../assets/img/png/our-blog/7.png" srcset="../../assets/img/png/our-blog/7@2x.png 2x" alt="">
+              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/docker-wp@2x.png">
+              <img src="../../assets/img/png/our-blog/docker-wp.png" srcset="../../assets/img/png/our-blog/docker-wp@2x.png 2x" alt="">
             </picture>
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
@@ -92,8 +92,8 @@
           <!-- Item 5 -->
           <a :href="$t('blog6-link')" target="_blank" class="our-blog-wrap_list-item">
             <picture>
-              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/6@2x.png">
-              <img src="../../assets/img/png/our-blog/8.png" srcset="../../assets/img/png/our-blog/8@2x.png 2x" alt="">
+              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/mysql-go@2x.png">
+              <img src="../../assets/img/png/our-blog/mysql-go.png" srcset="../../assets/img/png/our-blog/mysql-go@2x.png 2x" alt="">
             </picture>
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">
