@@ -76,7 +76,7 @@
                 </div>
               </div>
               <p class="banner-slack_content-item-text">
-                <span>@here</span> {{$t('Our goal is to allow technology startup ')}} <span>{{ $t('founders') }}</span> {{$t('to focus on the product and customer development, strategy and team building, fundraising and revenue')}}
+                <span>@here</span> {{$t('Our goal is to allow technology startup')}} <span>{{ $t('founders') }}</span> {{$t('to focus on the product and customer development, strategy and team building, fundraising and revenue')}}
               </p>
               <div class="banner-slack_content-item-status">
                 <div class="banner-slack_content-item-status-item" @click="slack++">

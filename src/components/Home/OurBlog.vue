@@ -89,7 +89,7 @@
               <h5>{{$t('blog5-title')}}</h5>
             </div>
           </a>
-          <!-- Item 5 -->
+          <!-- Item 6 -->
           <a :href="$t('blog6-link')" target="_blank" class="our-blog-wrap_list-item">
             <picture>
               <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/mysql-go@2x.png">
