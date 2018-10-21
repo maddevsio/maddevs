@@ -57,8 +57,8 @@
                         <span>5</span>
                     </div>
                     <h3 id="text" class="sec-desc">
-                      {{ $t('We use the best') }} <span @click="setAtiveSlide(0)" :style="activeSlide == 0 && 'color: #D4FEA4;'">{{ $t('development practices') }}</span>
-                      {{ $t('and we are responsible for') }} <span @click="setAtiveSlide(1)" :style="activeSlide == 1 && 'color: #A1D9FF;'">{{ $t('the quality') }}</span>
+                      {{ $t('Using the') }} <span @click="setAtiveSlide(0)" :style="activeSlide == 0 && 'color: #D4FEA4;'">{{ $t('best development practices') }}</span>,
+                      {{ $t('we take responsibility for') }} <span @click="setAtiveSlide(1)" :style="activeSlide == 1 && 'color: #A1D9FF;'">{{ $t('the quality') }}</span>
                       {{ $t('and') }} <span @click="setAtiveSlide(2)" :style="activeSlide == 2 && 'color: #E8B8FF;'">{{ $t('stability') }}</span>
                       {{ $t('of the product') }}.
                     </h3>

@@ -55,11 +55,7 @@
               <img src="../../assets/img/svg/clients/terbine.svg" alt="terbine">
             </a>
             <a class="lakediamond">
-              <picture>
-                <source media="(min-width: 465px)" srcset="../../assets/img/png/clients/lakediamond.png">
-                <source media="(min-width: 465px)" srcset="../../assets/img/png/clients/lakediamond@2x.png 2x">
-                <img src="../../assets/img/png/clients/lakediamond.png" alt="lakediamond" />
-              </picture>
+              <img src="../../assets/img/png/clients/lakediamond@2x.png" alt="lakediamond" />
             </a>
             <a>
               <img src="../../assets/img/svg/clients/idmatch.svg" alt="">

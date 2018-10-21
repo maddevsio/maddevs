@@ -5,7 +5,7 @@
         <h2 class="sec-title">{{$t('Contacts')}}</h2>
         <div class="contacts-wrap_list">
             <div class="contacts-wrap_list-item address">
-                <p>Bishkek, Ibraimova, 103, Business center Victory, 5th floor</p>
+                <p>{{$t('address-footer')}}</p>
             </div>
             <div class="contacts-wrap_list-item phone-mail">
                 <div class="phone-mail_wrap">
