@@ -11,9 +11,9 @@
   "qualified software development": "качественной разработкой",
   "software development": " программного обеспечения",
   "support and team monitoring": "поддержкой и мониторингом команды",
-  "We use the best": "Мы применяем лучшие",
-  "development practices": "практики разработки",
-  "and we are responsible for": "а также несем ответственность за",
+  "Using the": "Мы применяем лучшие",
+  "best development practices": "практики разработки",
+  "we take responsibility for": "а также несем ответственность за",
   "the quality": "качество",
   "and": "и",
   "stability": "стабильность",
@@ -39,7 +39,7 @@
   "Backend": "Бекенд",
   "We also use": "Так же мы используем",
   "and build a front-end using": "и для сборки фронтенда используем",
-  "Besides the main work, our teams contribute to open source": "Мы постоянно занимаемся развитием команды, через опен-сорс проекты",
+  "Besides the main work, our teams contribute to open source": "Мы постоянно занимаемся развитием команды через опен-сорс проекты",
   "Our clients": "Наши клиенты",
   "Сlient feedback ": "Отзывы клиентов",
   "Infrastructure": "Инфраструктура",
@@ -59,7 +59,7 @@
   "Accurate and ”pure” data from GPS-recivers proceeded with Kalman's filter": "Точные и ”чистые” данные с GPS-приемников на основе фильтра Калмана",
   "Tool for automating the process of contextual advirtisement creation": "Инструмент для автоматизации процесса создания контекстной рекламы",
   "Tool for monitoring the security of Ethereum smart contracts as a badge in the repository": "Инструмент для мониторинга безопасности смарт-контрактов Эфириума",
-  "We develop, gain experience and share it by speaking at conferences.": "Мы развиваемся, получаем опыт и делимся им, выступая докладчиками на конференциях",
+  "We develop, gain experience and share it by speaking at conferences.": "Мы развиваемся, получаем опыт, делимся им, выступая на конференциях",
   "A series of IT conferences for developers around the world": "Серия IT-конференций для разработчиков, проводимая по всему миру",
   "full list of conferences": "полный список конференций",
   "Membership in associations ": "Ассоциации в которых мы состоим",
@@ -73,7 +73,7 @@
   "Review-2 name": "Атиф Махмуд",
   "Review-2 text": "Будучи маленькой командой без проектного менеджера, мы ни разу не пожалели о сотрудничестве с Mad Devs. Команда полностью взяла на себя ответственность за проект и его развитие.",
   "Review-3 name": "Даниил Вартанов",
-  "Review-3 text": "Сотрудничество с Mad Devs стало нашем лучшим решением на рынке труда. Mad Devs позволил нам сотрудничать с первоклассным DevOps инженером, который обеспечил стабильность нашего сервиса.",
+  "Review-3 text": "Сотрудничество с Mad Devs стало нашим лучшим решением на рынке труда. Mad Devs позволил нам сотрудничать с первоклассным DevOps инженером, который обеспечил стабильность нашего сервиса.",
   "Review-4 name": "Азиза Анарбекова",
   "Review-4 text": "Команда Maddevs это не просто техническая поддержка и компания по разработке, а скопление профессионалов, которые изучают полностью бизнес модель партнеров и максимально учитывают все мелкие детали при реализации новых услуг и направлений. Команда умеет нестандартно мыслить и всегда находит нестандартные решения в сложных ситуациях.",
   "Review-5 name": "Малик Абдугалиев",
@@ -142,5 +142,6 @@
 
   "Partners": "Партнеры",
   "Partners-block1": "Безграничные возможности для прогнозирования будущего с помощью искусственного интеллекта и блокчейна.",
-  "Partners-block2": "Платформа для создания безопасной экосистемы смарт-контрактов и децентрализованных приложений."
+  "Partners-block2": "Платформа для создания безопасной экосистемы смарт-контрактов и децентрализованных приложений.",
+  "address-footer": "БЦ ”Victory”, Ибрагимова 103, Бишкек, Кыргызстан"
 }
