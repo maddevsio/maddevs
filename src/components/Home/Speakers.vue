@@ -22,12 +22,8 @@
             <div class="speakers_wrap-places-item">
                 <img src="../../assets/img/svg/speakers/iprof.svg" alt="iprof">
             </div>
-            <div class="speakers_wrap-places-item">
-                <picture>
-                <source media="(min-width: 465px)" srcset="../../assets/img/svg/speakers/go.png">
-                <source media="(min-width: 465px)" srcset="../../assets/img/svg/speakers/go@2x.png 2x">
-                <img src="../../assets/img/svg/speakers/go.png" alt="golang" />
-              </picture>
+            <div class="speakers_wrap-places-item golang-img">
+                <img src="../../assets/img/svg/speakers/go@2x.png" alt="golang" />
             </div>
             <div class="speakers_wrap-places-item">
                 <img src="../../assets/img/svg/speakers/gdg-bishkek.svg" alt="gdg-bishkek">
@@ -46,7 +42,7 @@
             </div>
         </div>
         <div class="speakers_wrap-people">
-            <div class="speakers_wrap-people-item">
+            <div class="speakers_wrap-people-item" @click="aaa">
                 <img src="../../assets/img/jpg/speakers/1.jpg" srcset="../../assets/img/jpg/speakers/1@2x.jpg 2x, ../../assets/img/jpg/speakers/1@3x.jpg 3x" alt="People">
                 <div class="people-info-block">
                     <div class="people-info-block__header">
@@ -64,7 +60,7 @@
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
-                            <p>Mad Talk</p>
+                            <p>Mad Talks</p>
                         </div>
                     </div>
                      <a target="_blank" href="https://www.slideshare.net/maddevs/ss-102761804">
@@ -79,7 +75,7 @@
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
-                            <p>Mad Talk</p>
+                            <p>PyCon Kyrgyzstan 2018</p>
                         </div>
                     </div>
                     <a target="_blank" href="https://www.slideshare.net/maddevs/ss-116842780">
@@ -92,7 +88,7 @@
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
-                            <p>Mad Talk</p>
+                            <p>Mad Talks</p>
                         </div>
                     </div>
                      <a target="_blank" href="https://www.slideshare.net/maddevs/ss-116840322">
@@ -236,7 +232,7 @@
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
-                            <p>Mad Talk</p>
+                            <p>Mad Talks</p>
                         </div>
                     </div>
                      <a href="https://www.slideshare.net/maddevs/comedian-chat-bot-for-automatization-of-remote-standups" target="_blank">
@@ -252,6 +248,11 @@
 
 <script>
 export default {
-  name: 'speakers'
+  name: 'speakers',
+  methods: {
+      aaa() {
+          alert('!!!!!!!!!');
+      }
+  }
 };
 </script>

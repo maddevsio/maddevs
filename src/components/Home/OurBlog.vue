@@ -7,8 +7,8 @@
           <!-- Item 1 -->
           <a :href="$t('blog1-link')" target="_blank" class="our-blog-wrap_list-item">
             <picture>
-              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/1@2x.png">
-              <img src="../../assets/img/png/our-blog/1.png" srcset="../../assets/img/png/our-blog/1@2x.png 2x" alt="">
+              <source media="(max-width: 576px)" srcset="../../assets/img/png/our-blog/Uber@2x.png">
+              <img src="../../assets/img/png/our-blog/Uber.png" srcset="../../assets/img/png/our-blog/Uber@2x.png 2x" alt="">
             </picture>
             <div class="our-blog_sender">
               <div class="our-blog_sender-img">

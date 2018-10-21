@@ -21,8 +21,8 @@
                   На фронтенде мы работаем с <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>,
                   сочетая его с фреймворками <span> <img src="../../assets/img/svg/weuse/react-js.svg" alt=""> React</span>
                   и <span> <img src="../../assets/img/svg/weuse/vue.svg" alt=""> Vue</span>.
-                  Мы также используем <span><img src="../../assets/img/svg/weuse/es-6.svg" alt=""> ES6</span>
-                  и разрабатываем фронтенд с помощью  <span><img src="../../assets/img/svg/weuse/webpack.svg" alt=""> Webpack</span>
+                  Мы используем <span><img src="../../assets/img/svg/weuse/es-6.svg" alt=""> ES6</span>
+                  и делаем сборку с помощью <span><img src="../../assets/img/svg/weuse/webpack.svg" alt=""> Webpack</span>
                   и <span><img src="../../assets/img/svg/weuse/Babel.svg" alt=""> Babel</span>
                 </p>
             </div>
@@ -117,7 +117,7 @@
                   <span><img src="../../assets/img/svg/weuse/elk.svg" alt=""> ELK</span>.
                 </p>
                 <p v-else>
-                  При создании систем высокой доступности, девопсы Mad Devs используют
+                  При создании систем высокой доступности девопсы Mad Devs используют
                   <span><img src="../../assets/img/svg/weuse/terraform.svg" alt=""> Terraform</span>,
                   <span><img src="../../assets/img/svg/weuse/cloudformation.png" alt=""> CloudFormation</span>
                   и <span><img src="../../assets/img/svg/weuse/ansible.svg" alt=""> Ansible</span>.
