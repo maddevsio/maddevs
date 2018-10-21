@@ -82,7 +82,7 @@
             &-projects {
                 &_list {
                     &-item {
-                        height: 350px;
+                        // height: 350px;
                         .projects-img_wrap {
                             height: 80px;
                             margin-bottom: 50px;
@@ -182,11 +182,8 @@
                     .op-proj-4 {
                         border-bottom: 1px solid #e8e8e8;
                     }
-                    .op-proj-5 {
-                        border-bottom: 1px solid #e8e8e8;
-                    }
                     .op-proj-6 {
-                        border-bottom: 1px solid #e8e8e8;
+                        display: none;
                     }
                 }
             }
@@ -704,6 +701,9 @@
                     }
                     .op-proj-4 {
                         border-top: 0; 
+                    }
+                    .op-proj-5 {
+                      border-bottom: 1px solid #e8e8e8;
                     }
                 }
             }
