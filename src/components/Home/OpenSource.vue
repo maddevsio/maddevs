@@ -12,15 +12,16 @@
     <div class="open-source_wrap-projects">
       <h2 class="sec-title">{{$t('Projects')}}<span class="our-pets">🐶 🐱</span></h2>
       <div class="open-source_wrap-projects_list">
-        <a href="https://github.com/maddevsio/go-idmatch" target="_blank" class="open-source_wrap-projects_list-item op-proj-1">
+        <a href="https://gps.maddevs.io/ru/" target="_blank" class="open-source_wrap-projects_list-item op-proj-1">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/id.svg" class="op-img-opensourse" alt="IDmatch">
+            <img src="../../assets/img/svg/openSource/mlm.svg" alt="Mad Location Manager">
           </div>
           <div class="projects-desc_wrap">
-            <h4>IDmatch</h4>
-            <p>{{$t('Artifical Intelligence and machine learning for personal identification')}}</p>
+            <h4>Mad Location Manager</h4>
+            <p>{{$t("Accurate and ”pure” data from GPS-recivers proceeded with Kalman's filter")}}</p>
           </div>
         </a>
+        
         <a href="https://github.com/maddevsio/heimdall" target="_blank" class="open-source_wrap-projects_list-item op-proj-2">
           <div class="projects-img_wrap">
             <img src="../../assets/img/svg/openSource/Heimdall.svg" class="op-img-sf" alt="Heimdall">
@@ -48,7 +49,7 @@
             <p>{{$t('Bot that forms the video playlist and transfers the data to HLS stream in browser')}}</p>
           </div>
         </a>
-        <a href="https://blog.maddevs.io/tagged/pwa" target="_blank" class="open-source_wrap-projects_list-item op-proj-5">
+        <a href="https://github.com/maddevsio/madpwa" target="_blank" class="open-source_wrap-projects_list-item op-proj-5">
           <div class="projects-img_wrap">
             <img src="../../assets/img/svg/openSource/madpwa.svg" class="op-img-madpwa" alt="MadPwa">
           </div>
@@ -66,13 +67,13 @@
             <p>{{$t('The open-source geocoder built on top of ElasticSearch for fast geocoding')}}</p>
           </div>
         </a>
-        <a href="https://gps.maddevs.io/ru/" target="_blank" class="open-source_wrap-projects_list-item op-proj-7">
+        <a href="https://github.com/maddevsio/go-idmatch" target="_blank" class="open-source_wrap-projects_list-item op-proj-7">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/mlm.svg" alt="Mad Location Manager">
+            <img src="../../assets/img/svg/openSource/id.svg" class="op-img-opensourse" alt="IDmatch">
           </div>
           <div class="projects-desc_wrap">
-            <h4>Mad Location Manager</h4>
-            <p>{{$t("Accurate and ”pure” data from GPS-recivers proceeded with Kalman's filter")}}</p>
+            <h4>IDmatch</h4>
+            <p>{{$t('Artifical Intelligence and machine learning for personal identification')}}</p>
           </div>
         </a>
       </div>
