@@ -902,6 +902,8 @@
         margin: 5px;
         overflow: hidden;
         .people-info-block {
+          width: 100%;
+          height: 100%;
           position: absolute;
           left: 0;
           top: 0;
@@ -927,12 +929,11 @@
             text-align: left;
             margin-top: 10px;
             transition: all .1s ease;
-            opacity: 0;
-            @media screen and (max-width: 480px){
-              font-size: 14px;
-            }
             @media screen and (max-width: 1200px){
               font-size: 16px;
+            }
+            @media screen and (max-width: 440px){
+              font-size: 14px;
             }
           }
           &__header {
@@ -942,13 +943,9 @@
               margin: auto 5px;
             }
             &-line {
+              min-height: 20px;
               border-left: 3px solid rgba(203, 201, 201, 0.877);
               margin-left: -8px;
-              @media screen and (max-width: 480px){
-                p {
-                  font-size: 14px;
-                }
-              }
               @media screen and (max-width: 1200px){
                 p {
                   font-size: 16px;
