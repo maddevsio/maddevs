@@ -548,6 +548,7 @@
           padding: 70px 0 43px;
           color: #fff;
           user-select: none;
+          -webkit-touch-callout: none;
         }
         .sender {
           height: 30px;
@@ -642,7 +643,7 @@
       border-radius: 5px;
       background-color: #fff;
       box-shadow: 0 6px 22px 0 rgba(38, 36, 32, .08);
-      padding: 60px 10px;
+      padding: 60px 30px;
       box-sizing: border-box;
       text-decoration: none;
       transition: all .4s ease;
@@ -912,7 +913,7 @@
           padding: 20px;
           box-sizing: border-box;
           opacity: 0;
-          transition: all .8s ease;
+          transition: all .5s ease;
           visibility: hidden;
           img {
             width: 100px;
@@ -977,7 +978,7 @@
           position: absolute;
           top: 0;
           left: 0;
-          transition: all .1s ease;
+          transition: all .2s ease;
         }
         &:hover {
           &::before {
@@ -1136,7 +1137,7 @@
       border-radius: 5px;
       background-color: #fff;
       box-shadow: 0 6px 22px 0 rgba(38, 36, 32, .08);
-      padding: 60px 10px;
+      padding: 60px 30px;
       box-sizing: border-box;
       text-decoration: none;
       transition: all .4s ease;
