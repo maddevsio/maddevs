@@ -1238,8 +1238,11 @@
       }
       .social-icons {
         white-space: nowrap;
+        &_list {
+          display: flex;
+        }
         a {
-          margin-right: 12px;
+          margin: 0 6px;
           img {
             width: 32px;
             height: 32px;
