@@ -713,6 +713,7 @@
       margin: 0 auto;
       margin-top: 40px;
       transition: all .2s ease;
+      white-space: nowrap;
       &:hover {
         background-color: #000;
       }
