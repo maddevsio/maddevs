@@ -11,7 +11,8 @@
             &-projects {
                 &_list {
                     &-item {
-                        padding: 0 60px;
+                        padding-left: 60px;
+                        padding-right: 60px;
                     }
                 }
             }
@@ -84,18 +85,18 @@
                         .projects-img_wrap {
                             height: 80px;
                             margin-bottom: 50px;
-                            .op-img-opensourse {
-                                height: 78px;
-                            }
-                            .op-img-madpwa {
-                                height: 27px;
-                            }
-                            .op-img-mlm {
-                                height: 79px;
-                            }
-                            .op-img-sf {
-                                height: 92px;
-                            }
+                            // .op-img-opensourse {
+                            //     height: 78px;
+                            // }
+                            // .op-img-madpwa {
+                            //     height: 27px;
+                            // }
+                            // .op-img-mlm {
+                            //     height: 79px;
+                            // }
+                            // .op-img-sf {
+                            //     height: 92px;
+                            // }
                         }
                         .projects-desc_wrap {
                           h4 {
@@ -475,7 +476,8 @@
             &-projects {
                 &_list {
                     &-item {
-                        padding: 0 30px;
+                        padding-left: 30px;
+                        padding-right: 30px;
                     }
                 }
             }
@@ -575,19 +577,6 @@
             }
             &-title {
                 font-size: 26px;
-            }
-        }
-    }
-    .open-source {
-        &_wrap {
-            &-projects {
-                h2 {
-                    flex-direction: column;
-                }
-                .our-pets {
-                    margin-left: 0;
-                    margin-top: 15px;
-                }
             }
         }
     }
@@ -736,6 +725,7 @@
                     }
                     .projects-img_wrap {
                         height: auto;
+                        margin-top: 0;
                     }
                     .projects-desc_wrap {
                         min-height: auto;
