@@ -111,6 +111,18 @@
             }
         }
     }
+    .speakers {
+        &_wrap {
+            &-people {
+                &-item {
+                    &::before {
+                        content: '';
+                        transition: none;
+                    }
+                } 
+            }
+        }
+    }
     .contacts {
         &-wrap {
             &_list {
@@ -873,6 +885,19 @@
                 &-item {
                     width: 100%;
                     max-width: 100%;
+                }
+                .people-info-block {
+                    padding: 15px 25px;
+                    &__header {
+                        p {
+                            font-size: 22px;
+                        }
+                    }
+                    a {
+                        p {
+                            font-size: 18px;
+                        }
+                    }
                 }
             }
         }
