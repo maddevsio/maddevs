@@ -445,10 +445,10 @@
           span {
             color: #3b3b3b;
             font-size: 14px;
-            margin-top: 27px;
+            margin-top: 26px;
             font-family: 'FiraMono', sans-serif;
             @media only screen and (max-width: 480px) {
-              margin-top: 19px;
+              margin-top: 21px;
             }
             &:last-child {
               position: relative;
@@ -725,9 +725,6 @@
     &-projects {
       margin-top: 120px;
       h2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 0 15px;
       }
       .our-pets {
@@ -749,9 +746,9 @@
           display: flex;
           align-items: flex-start;
           flex-direction: column;
-          justify-content: center;
+          justify-content: flex-start;
           border-right: 0.5px solid #e8e8e8;
-          padding: 0 50px;
+          padding: 50px;
           text-decoration: none;
           box-sizing: border-box;
           &:hover {
@@ -764,7 +761,7 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            margin-bottom: 60px;
+            margin: 40px 0 60px;
           }
           .projects-desc_wrap {
             min-height: 130px;
@@ -823,7 +820,7 @@
         .op-proj-6 {
           width: 25%;
           img {
-            height: 41px;
+            height: 35px;
           }
         } 
         .op-proj-7 {
