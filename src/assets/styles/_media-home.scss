@@ -11,7 +11,7 @@
             &-projects {
                 &_list {
                     &-item {
-                        padding: 0 20px;
+                        padding: 0 60px;
                     }
                 }
             }
@@ -44,7 +44,6 @@
         }
     }
     .how-it-work {
-        padding: 160px 0 0; 
         &_wrap {
             &-content {
                 &-slider {
@@ -82,7 +81,6 @@
             &-projects {
                 &_list {
                     &-item {
-                        // height: 350px;
                         .projects-img_wrap {
                             height: 80px;
                             margin-bottom: 50px;
@@ -220,6 +218,21 @@
             }
         }
     }
+    .speakers {
+        &_wrap {
+            &-places {
+                &-item {
+                    width: 25%;
+                } 
+            }
+            &-people {
+                &-item {
+                    width: 32%;
+                    max-width: 100%;
+                } 
+            }
+        }
+    }
     .our-blog {
         &-wrap_list-item {
             .our-blog_sender h5 {
@@ -258,7 +271,6 @@
 }
 @media only screen and (max-width: 953px) {
     .weUse {
-      padding: 160px 0;
       &_wrap {
         &-list {
           flex-direction: column;
@@ -271,6 +283,17 @@
           }
         }
       }
+    }
+}
+@media only screen and (max-width: 850px) {
+    .speakers {
+        &_wrap {
+            &-people {
+                &-item {
+                    width: 30%;
+                } 
+            }
+        }
     }
 }
 @media only screen and (max-width: 830px) {
@@ -352,6 +375,16 @@
                 font-size: 24px;
                 line-height: 1.5;
                 margin-top: 10px;
+            }
+        }
+    }
+    .speakers {
+        &_wrap {
+            &-people {
+                &-item {
+                    width: 47%;
+                    max-height: 210px;
+                } 
             }
         }
     }
@@ -578,6 +611,19 @@
         }
     }
 }
+@media only screen and (max-width: 540px) {
+    .speakers {
+        &_wrap {
+            &-places {
+                &-item {
+                    img {
+                        width: 100px;
+                    }
+                } 
+            }
+        }
+    }
+}
 @media only screen and (max-width: 480px) {
     .banner {
         &-title {
@@ -740,6 +786,13 @@
     }
     .speakers {
         padding-bottom: 60px;
+        &_wrap {
+            &-places {
+                &-item {
+                    width: 50%;
+                } 
+            }
+        }
     }
     .speakers_wrap-people-item .people-info-block {
         padding: 10px 15px;
