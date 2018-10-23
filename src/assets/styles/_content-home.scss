@@ -22,9 +22,10 @@
   overflow: hidden;
   position: absolute;
   z-index: -2;
-  background-image: url('../../assets/img/jpg/posters/cover_video_1366x610@2x.jpg');
+  background-image: url('../../assets/img/jpg/posters/cover_video_1366x610.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  background-repeat: no-repeat;
   video {
     width: auto;
     min-width: 100%;
