@@ -316,6 +316,9 @@
             cursor: pointer;
             font-family: 'OpenSans-Regular';
             user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
             img {
               width: 20px;
               height: 20px;
@@ -549,6 +552,8 @@
           color: #fff;
           user-select: none;
           -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
         .sender {
           height: 30px;
