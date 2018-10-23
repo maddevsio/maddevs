@@ -29,7 +29,7 @@
                             <img src="../../assets/img/svg/footer/medium.svg" alt="Medium">
                         </a>
                     </div>
-                    <div class="social-icons_list-row">    
+                    <div class="social-icons_list-row">
                         <a href="https://twitter.com/MadDevsIO" target="_blank">
                             <img src="../../assets/img/svg/footer/tw.svg" alt="Twitter">
                         </a>

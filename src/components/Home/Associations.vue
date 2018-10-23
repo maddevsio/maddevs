@@ -7,10 +7,10 @@
           <div class="associations-wrap_list-item">
             <img src="../../assets/img/svg/associations/pht.svg" alt="">
           </div>
-          <div class="associations-wrap_list-item">
+          <div class="associations-wrap_list-item kssda">
             <img src="../../assets/img/svg/associations/kssda.svg" alt="">
           </div>
-          <div class="associations-wrap_list-item">
+          <div class="associations-wrap_list-item amcham">
             <img src="../../assets/img/svg/associations/amcham.svg" alt="">
           </div>
         </div>
