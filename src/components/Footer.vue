@@ -51,7 +51,7 @@
             </div>
           </div>
         </div> -->
-      <div class="footer-copyright">
+      <div class="footer-copyright" @click="showSurprise()">
         <p>© Mad Devs <img src="../assets/img/png/banner/i-love-you-hand-sign_1f91f.png" alt=""> {{ this.year }}</p>
       </div>
     </div>
@@ -63,8 +63,19 @@ export default {
   name: 'main-footer',
   data() {
     return {
-      year: 0
+      year: 0,
+      clickCount: 0,
     };
+  },
+  methods: {
+    showSurprise() {
+      if (this.clickCount === 1) {
+        alert('!!!!!!!!!');
+        this.clickCount = 0;
+      } else {
+        this.clickCount += 1;
+      }
+    }
   },
   mounted() {
     this.year = new Date().getFullYear();

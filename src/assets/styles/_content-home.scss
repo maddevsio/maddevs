@@ -22,6 +22,9 @@
   overflow: hidden;
   position: absolute;
   z-index: -2;
+  background-image: url('../../assets/img/jpg/posters/cover_video_1366x610@2x.jpg');
+  background-size: cover;
+  background-position: center;
   video {
     width: auto;
     min-width: 100%;
@@ -63,7 +66,7 @@
       line-height: 1.33;
       letter-spacing: -0.4px;
       font-weight: normal;
-      font-family: 'MADEEvolveSans-regular';
+      font-family: 'MADEEvolveSans-regular', sans-serif;
     }
   }
   &-slack {
@@ -314,7 +317,7 @@
             color: #717274;
             font-size: 13px;
             cursor: pointer;
-            font-family: 'OpenSans-Regular';
+            font-family: 'OpenSans-Regular', sans-serif;
             user-select: none;
             -webkit-touch-callout: none;
             -webkit-user-select: none;
@@ -546,7 +549,7 @@
         &_desc {
           max-width: 870px;
           font-size: 28px;
-          font-family: 'MADEEvolveSans-regular';
+          font-family: 'MADEEvolveSans-regular', sans-serif;
           line-height: 1.6;
           padding: 70px 0 43px;
           color: #fff;
@@ -567,7 +570,7 @@
             display: flex;
             p {
               color: #fff;
-              font-family: 'MADEEvolveSans-bold';
+              font-family: 'MADEEvolveSans-bold', sans-serif;
               font-size: 18px;
               line-height: 1.43;
               margin-top: -2px;
