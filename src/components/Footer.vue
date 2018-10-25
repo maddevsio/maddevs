@@ -65,16 +65,33 @@ export default {
     return {
       year: 0,
       clickCount: 0,
+      runnigSurprise: false,
     };
   },
   methods: {
-    showSurprise() {
-      if (this.clickCount === 1) {
-        alert('!!!!!!!!!');
+    showSurprise(e) {
+      setTimeout(() => {
         this.clickCount = 0;
-      } else {
-        this.clickCount += 1;
+      }, 700);
+      if (this.runnigSurprise === false) {
+        if (this.clickCount === 1) {
+          this.runnigSurprise = true;
+          let block = document.getElementById('contacts-wrap');
+          block.classList.toggle('rotate_contacts-wrap');
+          setTimeout(() => {
+            block.classList.toggle('rotate_contacts-wrap');
+            this.repeatSurprise();
+          }, 1000);
+        } else {
+          this.clickCount += 1;
+        }
       }
+    },
+    repeatSurprise() {
+      setTimeout(() => {
+        this.clickCount = 0;
+        this.runnigSurprise = false;
+      }, 1000);
     }
   },
   mounted() {

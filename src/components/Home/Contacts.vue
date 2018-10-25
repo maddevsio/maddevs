@@ -1,7 +1,8 @@
 <template>
   <section id="contacts" class="contacts">
     <div class="container">
-      <div class="contacts-wrap">
+      <div class="contacts-wrap" id="contacts-wrap">
+        <div class="contacts-wrap_back"></div>
         <h2 class="sec-title">{{$t('Contacts')}}</h2>
         <div class="contacts-wrap_list">
             <div class="contacts-wrap_list-item address">
