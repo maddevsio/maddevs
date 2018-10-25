@@ -404,9 +404,6 @@
                         font-size: initial;
                     }
                 }
-                .address {
-                    width: 33%;
-                }
                 .phone-mail {
                     width: 66%;
                     white-space: nowrap;
@@ -417,7 +414,7 @@
                     }
                     &_wrap {
                         flex-direction: row;
-                        justify-content: space-between;
+                        justify-content: center;
                         flex-wrap: wrap;
                         a {
                             padding: 0 5px;
@@ -426,17 +423,10 @@
                 }
                 .social-icons {
                     width: 100%;
-                    margin-top: 60px;
                     &_list {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        a {
-                            img {
-                                width: 36px;
-                                height: 36px;
-                            }
-                        }
                     }
                 }
             }
@@ -525,23 +515,6 @@
     }
     .our-blog {
       padding: 60px 0;
-    }
-}
-@media only screen and (max-width: 630px) {
-    .contacts {
-        &-wrap {
-            &_list {
-                .address {
-                    width: 50%;
-                }
-                .phone-mail {
-                    width: 50%;
-                    &_wrap {
-                        justify-content: center;
-                    }
-                }
-            }
-        }
     }
 }
 @media only screen and (max-width: 576px) {
@@ -800,6 +773,7 @@
     .contacts {
         padding: 60px 0 40px;
         &-wrap {
+            width: 100%;
             &_list {
                 flex-direction: column;
                 margin-top: 40px;
@@ -824,7 +798,7 @@
                 }
                 .social-icons {
                     width: 100%;
-                    margin-top: 40px;
+                    margin-top: 0;
                     text-align: center;
                 }
             }
@@ -837,10 +811,10 @@
         margin-bottom: 20px;
     }
     .contacts-wrap_list .social-icons a {
-        margin: 10px;
+        margin: 0 10px;
         img {
-            width: 36px;
-            height: 36px;
+            width: 30px;
+            height: 30px;
         }
     }
 }

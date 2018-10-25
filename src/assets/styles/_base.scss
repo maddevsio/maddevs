@@ -45,6 +45,9 @@ main {
   font-family: 'MADEEvolveSans-regular', sans-serif;
   font-weight: normal;
 }
+.rotate_contacts-wrap {
+  transform: rotateY(180deg);
+}
 //----------- End Base classes ------------ //
 
 // #region Fonts

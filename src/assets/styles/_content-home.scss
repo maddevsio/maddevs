@@ -326,6 +326,11 @@
             -webkit-touch-callout: none;
             -webkit-user-select: none;
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            touch-action: manipulation;
+            &:hover {
+              border: solid 1px #2d9ee0;
+              background-color: #ecf2f6;
+            }
             img {
               width: 20px;
               height: 20px;
@@ -1202,7 +1207,35 @@
 .contacts {
   background-color: #242424;
   padding: 80px 0 50px;
+  perspective: 600;
+  overflow: hidden;
   &-wrap {
+    width: 480px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transition: all .4s ease-in-out;
+    position: relative;
+    h2 {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+    .contacts-wrap_back {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden; 
+      transform: rotateY(180deg);
+      background-image: url('../../assets/img/jpg/contacts/eeeeerock.jpg');
+      background-size: 99%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
     h2 {
       color: #fff;
     }
@@ -1212,6 +1245,8 @@
       justify-content: center;
       align-items: center;
       margin-top: 30px;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
       &-item {
         p {
           font-size: 18px;
@@ -1254,6 +1289,7 @@
           display: flex;
         }
         a {
+          display: inline-block;
           margin: 0 6px;
           img {
             width: 32px;
