@@ -19,27 +19,21 @@
                 >
                   <slide class="best-practices_wrap-preview-slide">
                     <picture>
-                        <source srcset="../../assets/img/png/best-practices/bp1.png"
-                                media="(max-width: 992px)">
-                        <source srcset="../../assets/img/png/best-practices/bp1@2x.png 2x"
+                        <source srcset="../../assets/img/png/best-practices/bp1.png, ../../assets/img/png/best-practices/bp1@2x.png 2x"
                                 media="(max-width: 992px)">
                         <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp1.png" srcset="../../assets/img/png/best-practices/bp1@2x.png 2x">
                     </picture>
                   </slide>
                   <slide class="best-practices_wrap-preview-slide">
                     <picture>
-                        <source srcset="../../assets/img/png/best-practices/bp2.png"
-                                media="(max-width: 992px)">
-                        <source srcset="../../assets/img/png/best-practices/bp2@2x.png 2x"
+                        <source srcset="../../assets/img/png/best-practices/bp2.png, ../../assets/img/png/best-practices/bp2@2x.png 2x"
                                 media="(max-width: 992px)">
                         <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp2.png" srcset="../../assets/img/png/best-practices/bp2@2x.png 2x">
                     </picture>
                   </slide>
                   <slide class="best-practices_wrap-preview-slide">
                     <picture>
-                        <source srcset="../../assets/img/png/best-practices/bp3.png"
-                                media="(max-width: 992px)">
-                        <source srcset="../../assets/img/png/best-practices/bp3@2x.png 2x"
+                        <source srcset="../../assets/img/png/best-practices/bp3.png, ../../assets/img/png/best-practices/bp3@2x.png 2x"
                                 media="(max-width: 992px)">
                         <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp3.png" srcset="../../assets/img/png/best-practices/bp3@2x.png 2x">
                     </picture>
