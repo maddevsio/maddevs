@@ -1,3 +1,11 @@
-FROM nginx:alpine
-LABEL maintainer="Andrew S, <halfb00t@gmail.com>"
-COPY . /usr/share/nginx/html
+FROM node:8-alpine
+WORKDIR /app
+COPY package.json /app
+RUN npm install
+COPY . /app
+RUN npm run build
+
+ENV PORT 3000
+EXPOSE 3000
+
+CMD ["node", "server.js"]
