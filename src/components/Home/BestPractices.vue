@@ -68,6 +68,7 @@ import { Carousel, Slide } from 'vue-carousel';
 
 export default {
   name: 'best-practices',
+  props: ['language'],
   data() {
     return {
       activeSlide: 0,
@@ -79,13 +80,12 @@ export default {
   },
   methods: {
     calcLineNumber() {
-      let lineHeight = 38;
+      let lineHeight = 34;
       function calcLine() {
         const text = document.getElementById('text');
         const lineCounts = parseInt(text.offsetHeight / lineHeight);
         const container = document.getElementById('line-number');
         container.innerHTML = '';
-
         for (var i = 1; i <= lineCounts; i++) {
           var elem = document.createElement('span');
           elem.innerHTML = i;
@@ -94,7 +94,7 @@ export default {
       }
       window.addEventListener('resize', function() {
         if (window.innerWidth <= 480) {
-          lineHeight = 28;
+          lineHeight = 35;
           calcLine();
         } else {
           lineHeight = 38;
@@ -103,11 +103,12 @@ export default {
       });
 
       if (window.innerWidth <= 480) {
-        lineHeight = 28;
+        lineHeight = 35;
         calcLine();
+        return false;
       };
       if (window.innerWidth > 1024) {
-        lineHeight = 45;
+        lineHeight = 39;
         calcLine();
       } else {
         lineHeight = 38;
