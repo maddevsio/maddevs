@@ -104,7 +104,7 @@
                   <span><img src="../../assets/img/svg/weuse/travis.svg" alt=""> Travis CI</span>,
                   <span><img src="../../assets/img/svg/weuse/circle.svg" alt=""> Circle CI</span> and
                   <span><img srcset="../../assets/img/png/we-use/aswcp@2x.png 2x" src="../../assets/img/png/we-use/aswcp.png" alt=""> AWS CodePipeline</span>
-                  to set up <span>CI/CD</span> and guarantee the HA of the product
+                  to set up <span>CI/CD</span> and guarantee the HA of the product.
                   We have experience of setting up infrastructure in cloud services:
                   <span><img src="../../assets/img/svg/weuse/asw.svg" alt=""> AWS</span>,
                   <span><img src="../../assets/img/svg/weuse/digital-ocean.svg" alt=""> Digital Ocean</span>,
