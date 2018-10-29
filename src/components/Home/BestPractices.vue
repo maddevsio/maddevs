@@ -86,7 +86,6 @@ export default {
         const lineCounts = parseInt(text.offsetHeight / lineHeight);
         const container = document.getElementById('line-number');
         container.innerHTML = '';
-        
         for (var i = 1; i <= lineCounts; i++) {
           var elem = document.createElement('span');
           elem.innerHTML = i;
