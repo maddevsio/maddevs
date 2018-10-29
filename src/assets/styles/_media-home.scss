@@ -561,6 +561,11 @@
         width: 100%;
       }
     }
+    .contacts {
+        &-wrap {
+            width: 100%;
+        }
+    }
 }
 @media only screen and (max-width: 540px) {
     .speakers {
@@ -773,7 +778,6 @@
     .contacts {
         padding: 60px 0 40px;
         &-wrap {
-            width: 100%;
             &_list {
                 flex-direction: column;
                 margin-top: 40px;
