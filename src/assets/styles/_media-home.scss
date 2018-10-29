@@ -432,7 +432,11 @@
             }
         }
     }
-
+    .contacts {
+         &-wrap {
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width: 710px) {
@@ -560,11 +564,6 @@
       &-wrap_list-item {
         width: 100%;
       }
-    }
-    .contacts {
-        &-wrap {
-            width: 100%;
-        }
     }
 }
 @media only screen and (max-width: 540px) {
