@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  padding-top: 30px;
+  &-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &-logo {
+    width: 40px;
+  }
+  .mobile-menu_btn {
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'MADEEvolveSans-regular', sans-serif;
+    border: none;
+    padding: 24px 0;
+    cursor: pointer;
+  }
+}
