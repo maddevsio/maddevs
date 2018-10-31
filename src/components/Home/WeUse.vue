@@ -35,13 +35,13 @@
                 {{ $t('uses') }} <span><img src="../../assets/img/svg/weuse/swift.svg" alt=""> Swift</span>
                 {{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/objective.svg" alt=""> Objective-C</span>.
                 <span> <img src="../../assets/img/svg/weuse/java.svg" alt=""> Java</span>
-                {{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span> - 
+                {{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span> -
                 {{ $t('For') }} <span>Android</span>
               </p>
               <p v-else>
-                {{ $t('We develop mobile applications for both') }} <span>iOS</span> и <span>Android</span>.
-                {{ $t('For the development of') }} <span>iOS</span> 
-                {{ $t('applications') }} <span><img src="../../assets/img/svg/weuse/md.svg" alt=""> Mad Devs</span> 
+                {{ $t('We develop mobile applications for both') }} <span>iOS</span> {{ $t('and') }} <span>Android</span>.
+                {{ $t('For the development of') }} <span>iOS</span>
+                {{ $t('applications') }} <span><img src="../../assets/img/svg/weuse/md.svg" alt=""> Mad Devs</span>
                 {{ $t('uses') }} <span><img src="../../assets/img/svg/weuse/swift.svg" alt=""> Swift</span>
                 {{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/objective.svg" alt=""> Objective-C</span>.
                 {{ $t('For') }} <span>Android</span> <span><img src="../../assets/img/svg/weuse/java.svg" alt=""> Java</span>
@@ -76,7 +76,7 @@
                 <p v-if="lang === 'en'">
                   {{ $t('We use') }} <span><img src="../../assets/img/svg/weuse/pyton.svg" alt=""> Python</span>
                   {{ $t('with') }} <span><img src="../../assets/img/svg/weuse/django.svg" alt=""> Django</span>
-                  {{ $t('and') }} <span><img src="../../assets/img/svg/weuse/flask.svg" alt=""> Flask</span> 
+                  {{ $t('and') }} <span><img src="../../assets/img/svg/weuse/flask.svg" alt=""> Flask</span>
                   {{ $t('frameworks for backend in most of the projects. Sometimes we code on') }} <span><img src="../../assets/img/svg/weuse/php.svg" alt=""> PHP</span>
                   {{ $t('with') }} <span><img src="../../assets/img/svg/weuse/symfony.svg" alt=""> Symfony</span>
                   {{ $t('and') }} <span><img src="../../assets/img/svg/weuse/yii.svg" alt=""> Yii</span>.
@@ -99,7 +99,7 @@
             <div class="weUse_wrap-list-item">
                 <h3>{{$t('Infrastructure')}}</h3>
                 <p v-if="lang === 'en'">
-                  {{ $t('Our') }} <span>DevOps</span> 
+                  {{ $t('Our') }} <span>DevOps</span>
                   {{ $t('engineers use') }} <span><img src="../../assets/img/svg/weuse/terraform.svg" alt=""> Terraform</span>,
                   <span><img src="../../assets/img/svg/weuse/cloudformation.png" alt=""> CloudFormation</span>
                   {{ $t('and') }} <span><img src="../../assets/img/svg/weuse/ansible.svg" alt=""> Ansible</span>.
@@ -107,7 +107,7 @@
                   <span><img src="../../assets/img/svg/weuse/bamboo.svg" alt=""> Bamboo</span>,
                   <span><img src="../../assets/img/svg/weuse/team-city.svg" alt=""> TeamCity</span>,
                   <span><img src="../../assets/img/svg/weuse/travis.svg" alt=""> Travis CI</span>,
-                  <span><img src="../../assets/img/svg/weuse/circle.svg" alt=""> Circle CI</span> 
+                  <span><img src="../../assets/img/svg/weuse/circle.svg" alt=""> Circle CI</span>
                   {{ $t('and') }} <span><img srcset="../../assets/img/png/we-use/aswcp@2x.png 2x" src="../../assets/img/png/we-use/aswcp.png" alt=""> AWS CodePipeline</span>
                   {{ $t('to set up') }} <span>CI/CD</span>
                   {{ $t('and guarantee the HA of the product') }}:
