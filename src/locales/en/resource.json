@@ -14,7 +14,6 @@
   "and": "and",
   "stability": "stability",
   "of the product": "of the product",
-
   "Working processes": "Working processes",
   "Since we are working remotely we strongly believe in the transparency of work, pay special attention to communication and keep strict compliance to working processes": "Since we are working remotely we strongly believe in the transparency of work, pay special attention to communication and keep strict compliance to working processes",
   "We": "We",
@@ -25,7 +24,6 @@
   "it and closely": "it and closely",
   "communicate": "communicate",
   "with you and inside the team": "with you and inside the team",
-
   "Technical Expertise": "Technical Expertise",
   "Frontend": "Frontend",
   "For frontend we use": "For frontend we use",
@@ -34,33 +32,28 @@
   "and make bundles with": "and make bundles with",
   "On the frontend we work with": "On the frontend we work with",
   "combining it with frameworks as": "combining it with frameworks as",
-  
   "Mobile development": "Mobile development",
   "We develop mobile applications for both": "We develop mobile applications for both",
   "applications": "applications",
   "For the development of": "For the development of",
   "uses": "uses",
   "For": "For",
-
   "Project management": "Project management",
   "Planning and tasks monitoring is done with": "Planning and tasks monitoring is done with",
   "main communication goes through": "main communication goes through",
   "and calls via": "and calls via",
-
   "Backend": "Backend",
   "We use": "We use",
   "with frameworks": "with",
   "with": "with",
   "frameworks for backend": "frameworks for backend in most of the projects. Sometimes we code on",
   "if the project is highload. Some tasks can not be solved without": "if the project is highload. Some tasks can not be solved without",
-  
   "Infrastructure": "Infrastructure",
   "Our": "Our",
   "engineers use": "engineers use",
   "to set up": "to set up",
   "and guarantee the HA of the product": "and guarantee the HA of the product. We have experience of setting up infrastructure in cloud services",
   "and we operate with the following": "and we operate with the following tools to collect application and system indicators",
-
   "We achieve it by doing what we are best at technical execution and consultations": "We achieve it by doing what we are best at: technical execution and consultations",
   "qualified software development": "qualified software development",
   "software development": "",
@@ -71,7 +64,6 @@
   "through open-source projects": "",
   "Our clients": "Clients",
   "Сlient feedback ": "Сlient feedback ",
-
   "Updated": "Updated",
   "h ago": "h ago",
   "stars": "stars",
@@ -135,37 +127,31 @@
   "blog1-sender-name": "Andrew Minkin",
   "blog1-sender-meta_date": "Feb 14",
   "blog1-sender-meta_views": "55K views",
-
   "blog2-link": "https://blog.maddevs.io/docker-for-beginners-a2c9c73e7d3d",
   "blog2-title": "Docker for Junior developer",
   "blog2-sender-name": "Andrey Sapozhnikov",
   "blog2-sender-meta_date": "May 8",
   "blog2-sender-meta_views": "46K views",
-
   "blog3-link": "https://blog.maddevs.io/reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer-43594faed19c",
   "blog3-title": "Reduce GPS data error on Android with Kalman filter and accelerometer",
   "blog3-sender-name": "Oleg Katkov",
   "blog3-sender-meta_date": "Mar 19",
   "blog3-sender-meta_views": "15.6K views",
-
   "blog4-link": "https://blog.maddevs.io/introduction-to-grpc-6de0d9c0fe61",
   "blog4-title": "Intoduction to GRPC",
   "blog4-sender-name": "Gennady Karev",
   "blog4-sender-meta_date": "Mar 30",
   "blog4-sender-meta_views": "8.4K views",
-
   "blog5-link": "https://blog.maddevs.io/deploy-and-scale-wordpress-with-docker-cloud-swarm-mode-f780d4e735cb",
   "blog5-title": "Deploy and Scale WordPress with Docker Cloud Swarm Mode",
   "blog5-sender-name": "Andrey Sapozhnikov",
   "blog5-sender-meta_date": "Apr 10",
   "blog5-sender-meta_views": "7.2K views",
-
   "blog6-link": "https://blog.maddevs.io/golang-mysql-9aa09cdbb666",
   "blog6-title": "Work with MySQL in Go",
   "blog6-sender-name": "Andrew Minkin",
   "blog6-sender-meta_date": "May 30",
   "blog6-sender-meta_views": "6.7K views",
-
   "Partners": "Partners",
   "Partners-block1": "Artificial intelligence + Blockchain. A limitless ability to forecast the future",
   "Partners-block2": "Mythril Platform enables a secure and thriving ecosystem of Ethereum dapps & smarts contracts",
