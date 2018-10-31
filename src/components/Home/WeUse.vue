@@ -10,55 +10,59 @@
             <div class="weUse_wrap-list-item">
                 <h3>{{ $t('Frontend') }}</h3>
                 <p v-if="lang === 'en'">
-                  For frontend we use <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>,
-                  and its frameworks  <span> <img src="../../assets/img/svg/weuse/react-js.svg" alt=""> React</span>
-                  and <span> <img src="../../assets/img/svg/weuse/vue.svg" alt=""> Vue</span>.
-                  We also use <span> <img src="../../assets/img/svg/weuse/es-6.svg" alt=""> ES6</span>
-                  and make bundles with <span><img src="../../assets/img/svg/weuse/webpack.svg" alt=""> Webpack</span>
-                  and <span><img src="../../assets/img/svg/weuse/Babel.svg" alt=""> Babel</span>
+                  {{ $t('For frontend we use') }} <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>,
+                  {{ $t('and its frameworks') }}  <span> <img src="../../assets/img/svg/weuse/react-js.svg" alt=""> React</span>
+                  {{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/vue.svg" alt=""> Vue</span>.
+                  {{ $t('We also use') }} <span> <img src="../../assets/img/svg/weuse/es-6.svg" alt=""> ES6</span>
+                  {{ $t('and make bundles with') }} <span><img src="../../assets/img/svg/weuse/webpack.svg" alt=""> Webpack</span>
+                  {{ $t('and') }} <span><img src="../../assets/img/svg/weuse/Babel.svg" alt=""> Babel</span>
                 </p>
                 <p v-else>
-                  На фронтенде мы работаем с <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>,
-                  сочетая его с фреймворками <span> <img src="../../assets/img/svg/weuse/react-js.svg" alt=""> React</span>
-                  и <span> <img src="../../assets/img/svg/weuse/vue.svg" alt=""> Vue</span>.
-                  Мы используем <span><img src="../../assets/img/svg/weuse/es-6.svg" alt=""> ES6</span>
-                  и делаем сборку с помощью <span><img src="../../assets/img/svg/weuse/webpack.svg" alt=""> Webpack</span>
-                  и <span><img src="../../assets/img/svg/weuse/Babel.svg" alt=""> Babel</span>
+                  {{ $t('For frontend we use') }} <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>,
+                  {{ $t('and its frameworks') }} <span> <img src="../../assets/img/svg/weuse/react-js.svg" alt=""> React</span>
+                  {{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/vue.svg" alt=""> Vue</span>.
+                  {{ $t('We also use') }} <span><img src="../../assets/img/svg/weuse/es-6.svg" alt=""> ES6</span>
+                  {{ $t('and make bundles with') }} <span><img src="../../assets/img/svg/weuse/webpack.svg" alt=""> Webpack</span>
+                  {{ $t('and') }} <span><img src="../../assets/img/svg/weuse/Babel.svg" alt=""> Babel</span>
                 </p>
             </div>
             <div class="weUse_wrap-list-item">
               <h3>{{$t('Mobile development')}}</h3>
               <p v-if="lang === 'en'">
-                We develop mobile applications for both <span>iOS</span> and <span>Android</span>.
-                For the development of <span>iOS</span>
-                <span><img src="../../assets/img/svg/weuse/md.svg" alt=""> Mad Devs</span> uses <span><img src="../../assets/img/svg/weuse/swift.svg" alt=""> Swift</span>
-                and <span> <img src="../../assets/img/svg/weuse/objective.svg" alt=""> Objective-C</span>.
+                {{ $t('We develop mobile applications for both') }} <span>iOS</span>
+                {{ $t('and') }} <span>Android</span>.
+                {{ $t('For the development of') }} <span>iOS</span> <span><img src="../../assets/img/svg/weuse/md.svg" alt=""> Mad Devs</span>
+                {{ $t('uses') }} <span><img src="../../assets/img/svg/weuse/swift.svg" alt=""> Swift</span>
+                {{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/objective.svg" alt=""> Objective-C</span>.
                 <span> <img src="../../assets/img/svg/weuse/java.svg" alt=""> Java</span>
-                and <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span> - For <span>Android</span>
+                {{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span> - 
+                {{ $t('For') }} <span>Android</span>
               </p>
               <p v-else>
-                Мы занимаемся мобильной разработкой под <span>iOS</span> и <span>Android</span>.
-                Для разработки <span>iOS</span> приложений <span><img src="../../assets/img/svg/weuse/md.svg" alt=""> Mad Devs</span> использует <span><img src="../../assets/img/svg/weuse/swift.svg" alt=""> Swift</span>
-                и <span> <img src="../../assets/img/svg/weuse/objective.svg" alt=""> Objective-C</span>.
-                Для <span>Android</span> <span><img src="../../assets/img/svg/weuse/java.svg" alt=""> Java</span>
-                и <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span>
+                {{ $t('We develop mobile applications for both') }} <span>iOS</span> и <span>Android</span>.
+                {{ $t('For the development of') }} <span>iOS</span> 
+                {{ $t('applications') }} <span><img src="../../assets/img/svg/weuse/md.svg" alt=""> Mad Devs</span> 
+                {{ $t('uses') }} <span><img src="../../assets/img/svg/weuse/swift.svg" alt=""> Swift</span>
+                {{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/objective.svg" alt=""> Objective-C</span>.
+                {{ $t('For') }} <span>Android</span> <span><img src="../../assets/img/svg/weuse/java.svg" alt=""> Java</span>
+                {{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/kotlin.svg" alt=""> Kotlin</span>
               </p>
             </div>
             <div class="weUse_wrap-list-item">
                 <h3>{{$t('Project management')}}</h3>
                 <p v-if="lang === 'en'">
-                  Planning and tasks monitoring is done with
+                  {{ $t('Planning and tasks monitoring is done with') }}
                   <span><img src="../../assets/img/svg/weuse/jira.svg" alt=""> JIRA</span>,
-                  main communication goes through <span><img src="../../assets/img/svg/weuse/slack.svg" alt=""> Slack</span>
-                  and calls via<span><img src="../../assets/img/svg/weuse/hangouts.svg" alt=""> Hangouts</span>,
+                  {{ $t("main communication goes through") }} <span><img src="../../assets/img/svg/weuse/slack.svg" alt=""> Slack</span>
+                  {{ $t('and calls via') }}<span><img src="../../assets/img/svg/weuse/hangouts.svg" alt=""> Hangouts</span>,
                   <span><img src="../../assets/img/svg/weuse/zoom.svg" alt=""> Zoom</span>,
                   <span><img src="../../assets/img/svg/weuse/skype.svg" alt=""> Skype</span>.
                 </p>
                 <p v-else>
-                  Планирование и отслеживание задач осуществляется с помощью
+                  {{ $t('Planning and tasks monitoring is done with') }}
                   <span><img src="../../assets/img/svg/weuse/jira.svg" alt=""> JIRA</span>,
-                  а коммуникация ведется в <span><img src="../../assets/img/svg/weuse/slack.svg" alt=""> Slack</span>
-                  и через созвоны в <span><img src="../../assets/img/svg/weuse/hangouts.svg" alt=""> Hangouts</span>,
+                  {{ $t("main communication goes through") }} <span><img src="../../assets/img/svg/weuse/slack.svg" alt=""> Slack</span>
+                  {{ $t('and calls via') }} <span><img src="../../assets/img/svg/weuse/hangouts.svg" alt=""> Hangouts</span>,
                   <span><img src="../../assets/img/svg/weuse/zoom.svg" alt=""> Zoom</span>,
                   <span><img src="../../assets/img/svg/weuse/skype.svg" alt=""> Skype</span>.
                 </p>
@@ -70,74 +74,75 @@
             <div class="weUse_wrap-list-item">
                 <h3>{{$t('Backend')}}</h3>
                 <p v-if="lang === 'en'">
-                  We use <span><img src="../../assets/img/svg/weuse/pyton.svg" alt=""> Python</span>
-                  with <span><img src="../../assets/img/svg/weuse/django.svg" alt=""> Django</span>
-                  and <span><img src="../../assets/img/svg/weuse/flask.svg" alt=""> Flask</span> frameworks for backend in most of the projects.
-                  Sometimes we code on <span><img src="../../assets/img/svg/weuse/php.svg" alt=""> PHP</span>
-                  with <span><img src="../../assets/img/svg/weuse/symfony.svg" alt=""> Symfony</span>
-                  and <span><img src="../../assets/img/svg/weuse/yii.svg" alt=""> Yii</span>.
-                  We use <span> <img src="../../assets/img/svg/weuse/golang.svg" alt=""> Go</span>
-                  if the project is highload. Some tasks can not be solved without <span><img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>
-                  and <span> <img src="../../assets/img/svg/weuse/node-js.svg" alt=""> Node.js</span>.
+                  {{ $t('We use') }} <span><img src="../../assets/img/svg/weuse/pyton.svg" alt=""> Python</span>
+                  {{ $t('with') }} <span><img src="../../assets/img/svg/weuse/django.svg" alt=""> Django</span>
+                  {{ $t('and') }} <span><img src="../../assets/img/svg/weuse/flask.svg" alt=""> Flask</span> 
+                  {{ $t('frameworks for backend in most of the projects. Sometimes we code on') }} <span><img src="../../assets/img/svg/weuse/php.svg" alt=""> PHP</span>
+                  {{ $t('with') }} <span><img src="../../assets/img/svg/weuse/symfony.svg" alt=""> Symfony</span>
+                  {{ $t('and') }} <span><img src="../../assets/img/svg/weuse/yii.svg" alt=""> Yii</span>.
+                  {{ $t('We use') }} <span> <img src="../../assets/img/svg/weuse/golang.svg" alt=""> Go</span>
+                  {{ $t('if the project is highload. Some tasks can not be solved without') }} <span><img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>
+                  {{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/node-js.svg" alt=""> Node.js</span>.
                 </p>
                 <p v-else>
-                  Для большинства проектов на бекенде мы используем <span> <img src="../../assets/img/svg/weuse/pyton.svg" alt=""> Python</span>
-                  с фреймворками <span> <img src="../../assets/img/svg/weuse/django.svg" alt=""> Django</span>
-                  и <span> <img src="../../assets/img/svg/weuse/flask.svg" alt=""> Flask</span>.
-                  Иногда пишем на <span> <img src="../../assets/img/svg/weuse/php.svg" alt=""> PHP</span>
-                  с <span> <img src="../../assets/img/svg/weuse/symfony.svg" alt=""> Symfony</span>
-                  и <span> <img src="../../assets/img/svg/weuse/yii.svg" alt=""> Yii</span>.
-                  Там, где есть высокая нагрузка, мы используем <span> <img src="../../assets/img/svg/weuse/golang.svg" alt=""> Go</span>.
-                  Есть задачи, которые не решить без помощи <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>
-                  и <span> <img src="../../assets/img/svg/weuse/node-js.svg" alt=""> Node.js</span>.
+                  {{ $t('We use') }} <span> <img src="../../assets/img/svg/weuse/pyton.svg" alt=""> Python</span>
+                  {{ $t('with frameworks') }} <span> <img src="../../assets/img/svg/weuse/django.svg" alt=""> Django</span>
+                  {{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/flask.svg" alt=""> Flask</span>.
+                  {{ $t('Sometimes we write on') }} <span> <img src="../../assets/img/svg/weuse/php.svg" alt=""> PHP</span>
+                  {{ $t('with') }} <span> <img src="../../assets/img/svg/weuse/symfony.svg" alt=""> Symfony</span>
+                  {{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/yii.svg" alt=""> Yii</span>.
+                  {{ $t('frameworks for backend') }} <span> <img src="../../assets/img/svg/weuse/golang.svg" alt=""> Go</span>.
+                  Есть задачи, которые не решить без помощи{{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>
+                  {{ $t('and') }} <span> <img src="../../assets/img/svg/weuse/node-js.svg" alt=""> Node.js</span>.
                 </p>
             </div>
             <div class="weUse_wrap-list-item">
                 <h3>{{$t('Infrastructure')}}</h3>
                 <p v-if="lang === 'en'">
-                  Our <span>DevOps</span> engineers use <span><img src="../../assets/img/svg/weuse/terraform.svg" alt=""> Terraform</span>,
+                  {{ $t('Our') }} <span>DevOps</span> 
+                  {{ $t('engineers use') }} <span><img src="../../assets/img/svg/weuse/terraform.svg" alt=""> Terraform</span>,
                   <span><img src="../../assets/img/svg/weuse/cloudformation.png" alt=""> CloudFormation</span>
-                  and <span><img src="../../assets/img/svg/weuse/ansible.svg" alt=""> Ansible</span>.
+                  {{ $t('and') }} <span><img src="../../assets/img/svg/weuse/ansible.svg" alt=""> Ansible</span>.
                   <span> <img src="../../assets/img/svg/weuse/jenkins.svg" alt=""> Jenkins</span>,
                   <span><img src="../../assets/img/svg/weuse/bamboo.svg" alt=""> Bamboo</span>,
                   <span><img src="../../assets/img/svg/weuse/team-city.svg" alt=""> TeamCity</span>,
                   <span><img src="../../assets/img/svg/weuse/travis.svg" alt=""> Travis CI</span>,
-                  <span><img src="../../assets/img/svg/weuse/circle.svg" alt=""> Circle CI</span> and
-                  <span><img srcset="../../assets/img/png/we-use/aswcp@2x.png 2x" src="../../assets/img/png/we-use/aswcp.png" alt=""> AWS CodePipeline</span>
-                  to set up <span>CI/CD</span> and guarantee the HA of the product.
-                  We have experience of setting up infrastructure in cloud services:
+                  <span><img src="../../assets/img/svg/weuse/circle.svg" alt=""> Circle CI</span> 
+                  {{ $t('and') }} <span><img srcset="../../assets/img/png/we-use/aswcp@2x.png 2x" src="../../assets/img/png/we-use/aswcp.png" alt=""> AWS CodePipeline</span>
+                  {{ $t('to set up') }} <span>CI/CD</span>
+                  {{ $t('and guarantee the HA of the product') }}:
                   <span><img src="../../assets/img/svg/weuse/asw.svg" alt=""> AWS</span>,
                   <span><img src="../../assets/img/svg/weuse/digital-ocean.svg" alt=""> Digital Ocean</span>,
                   <span><img src="../../assets/img/svg/weuse/heroku.svg" alt=""> Heroku</span>,
                   <span><img src="../../assets/img/svg/weuse/azure.svg" alt=""> Azure</span>
-                  and we operate with the following tools to collect application and system indicators:
+                  {{ $t('and we operate with the following tools to collect application and system indicators') }}:
                   <span><img src="../../assets/img/svg/weuse/senrty.svg" alt=""> Sentry</span>,
                   <span><img src="../../assets/img/svg/weuse/prometheus.svg" alt=""> Prometheus</span>,
                   <span><img src="../../assets/img/svg/weuse/aws-cloudwatch.svg" alt=""> Amazon CloudWatch</span>,
                   <span><img src="../../assets/img/svg/weuse/elk.svg" alt=""> ELK</span>.
                 </p>
                 <p v-else>
-                  При создании систем высокой доступности девопсы Mad Devs используют
+                  {{ $t('engineers use') }}
                   <span><img src="../../assets/img/svg/weuse/terraform.svg" alt=""> Terraform</span>,
                   <span><img src="../../assets/img/svg/weuse/cloudformation.png" alt=""> CloudFormation</span>
-                  и <span><img src="../../assets/img/svg/weuse/ansible.svg" alt=""> Ansible</span>.
+                  {{ $t('and') }} <span><img src="../../assets/img/svg/weuse/ansible.svg" alt=""> Ansible</span>.
                   <span> <img src="../../assets/img/svg/weuse/jenkins.svg" alt=""> Jenkins</span>,
                   <span><img src="../../assets/img/svg/weuse/bamboo.svg" alt=""> Bamboo</span>,
                   <span><img src="../../assets/img/svg/weuse/team-city.svg" alt=""> TeamCity</span>,
                   <span><img src="../../assets/img/svg/weuse/travis.svg" alt=""> Travis CI</span>,
                   <span><img src="../../assets/img/svg/weuse/circle.svg" alt=""> Circle CI</span> и
                   <span><img srcset="../../assets/img/png/we-use/aswcp@2x.png 2x" src="../../assets/img/png/we-use/aswcp.png" alt=""> AWS CodePipeline</span>
-                  для непрерывного тестирования и непрерывной поставки.
-                  У нас есть опыт организации инфраструктуры в облачных сервисах:
+                  {{ $t('and guarantee the HA of the product') }}:
                   <span><img src="../../assets/img/svg/weuse/asw.svg" alt=""> AWS</span>,
                   <span><img src="../../assets/img/svg/weuse/digital-ocean.svg" alt=""> Digital Ocean</span>,
                   <span><img src="../../assets/img/svg/weuse/heroku.svg" alt=""> Heroku</span>,
                   <span><img src="../../assets/img/svg/weuse/azure.svg" alt=""> Azure</span>
-                  а также стек технологий для мониторинга и сбора системных метрик:
+                  {{ $t('and we operate with the following') }}:
                   <span><img src="../../assets/img/svg/weuse/senrty.svg" alt=""> Sentry</span>,
                   <span><img src="../../assets/img/svg/weuse/prometheus.svg" alt=""> Prometheus</span>,
                   <span><img src="../../assets/img/svg/weuse/aws-cloudwatch.svg" alt=""> Amazon CloudWatch</span>,
-                  <span><img src="../../assets/img/svg/weuse/elk.svg" alt=""> ELK</span> и другие.
+                  <span><img src="../../assets/img/svg/weuse/elk.svg" alt=""> ELK</span>
+                  {{ $t('and more') }}.
                 </p>
             </div>
           </div>
