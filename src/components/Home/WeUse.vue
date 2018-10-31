@@ -10,7 +10,7 @@
             <div class="weUse_wrap-list-item">
                 <h3>{{ $t('Frontend') }}</h3>
                 <p v-if="lang === 'en'">
-                  For frontend we use with <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>,
+                  For frontend we use <span> <img src="../../assets/img/svg/weuse/javascript.svg" alt=""> Javascript</span>,
                   and its frameworks  <span> <img src="../../assets/img/svg/weuse/react-js.svg" alt=""> React</span>
                   and <span> <img src="../../assets/img/svg/weuse/vue.svg" alt=""> Vue</span>.
                   We also use <span> <img src="../../assets/img/svg/weuse/es-6.svg" alt=""> ES6</span>
@@ -95,7 +95,7 @@
             <div class="weUse_wrap-list-item">
                 <h3>{{$t('Infrastructure')}}</h3>
                 <p v-if="lang === 'en'">
-                  Our <span>DevOps</span> engineers <span><img src="../../assets/img/svg/weuse/terraform.svg" alt=""> Terraform</span>,
+                  Our <span>DevOps</span> engineers use <span><img src="../../assets/img/svg/weuse/terraform.svg" alt=""> Terraform</span>,
                   <span><img src="../../assets/img/svg/weuse/cloudformation.png" alt=""> CloudFormation</span>
                   and <span><img src="../../assets/img/svg/weuse/ansible.svg" alt=""> Ansible</span>.
                   <span> <img src="../../assets/img/svg/weuse/jenkins.svg" alt=""> Jenkins</span>,
