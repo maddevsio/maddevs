@@ -17,6 +17,8 @@
   "dependencies": {
     "@panter/vue-i18next": "^0.13.0",
     "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "es6-promise": "^4.2.5",
     "express": "^4.16.3",
     "i18next": "^11.9.0",
     "nedb": "^1.8.0",
