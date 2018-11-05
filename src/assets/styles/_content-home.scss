@@ -1,3 +1,27 @@
+// -------------- Cookie ----------------- //
+.Cookie--blood-orange {
+  padding: 20px;
+  background-color: #1e1e1e !important;
+  .Cookie__button {
+    border-radius: 5px !important;
+    background-color: #ec2227 !important;
+    color: #fff;
+    font-family: 'MADEEvolveSans-regular', sans-serif;
+    transition: all .1s ease;
+    white-space: nowrap;
+    margin: 0;
+    margin-left: 20px;
+    &:hover {
+      background-color: #ff6165 !important;
+    }
+  }
+  .Cookie__content {
+    max-width: 75%;
+    color: #fff;
+    font-family: 'MADEEvolveSans-regular', sans-serif;
+    font-size: 18px;
+  }
+}
 //---------------- Banner -----------------//
 #banner {
   width: 100%;
