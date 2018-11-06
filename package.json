@@ -23,7 +23,7 @@
     "i18next": "^11.9.0",
     "nedb": "^1.8.0",
     "style-loader": "^0.21.0",
-    "vue": "^2.5.2",
+    "vue": "^2.5.17",
     "vue-analytics": "^5.16.0",
     "vue-carousel": "^0.8.1",
     "vue-cookie-law": "^1.8.0",
