@@ -21,6 +21,7 @@
     "es6-promise": "^4.2.5",
     "express": "^4.16.3",
     "i18next": "^11.9.0",
+    "jquery": "^3.3.1",
     "nedb": "^1.8.0",
     "style-loader": "^0.21.0",
     "vue": "^2.5.17",
@@ -29,6 +30,7 @@
     "vue-cookie-law": "^1.8.0",
     "vue-router": "^3.0.1",
     "vue-scrollto": "^2.11.0",
+    "vue-slick": "^1.1.15",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
