@@ -21,43 +21,33 @@
             {{ $t('with you and inside the team') }}.
           </h3>
           <div class="how-it-work_wrap-content-slider">
-            <carousel
-              v-on:pageChange="onPageChange"
-              :loop=true
-              :autoplayLoop="true"
-              :autoplay="true"
-              :autoplayTimeout="5000"
-              :per-page="1"
-              :navigate-to="activeSlide"
-              :paginationEnabled="false"
-              loop:true
-              mouse-drag:false
-              autoplayHoverPause
-              class="how-it-work_wrap-content-slides"
-              ref="carousel"
-            >
-              <slide class="how-it-work_wrap-content-slide">
-                <picture>
+            <slick
+                class="how-it-work_wrap-content-slides"
+                ref="slick"
+                @afterChange="handleAfterChange"
+                :options="slickOptions">
+                <div class="how-it-work_wrap-content-slide">
+                  <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw2.png, ../../assets/img/png/how-it-work/hiw2@2x.png 2x"
                       media="(max-width: 992px)">
                     <img @click.prevent="nextSlide" src="../../assets/img/png/how-it-work/hiw2.png" srcset="../../assets/img/png/how-it-work/hiw2@2x.png 2x">
-                </picture>
-              </slide>
-              <slide class="how-it-work_wrap-content-slide">
-                <picture>
+                  </picture>
+                </div>
+                <div class="how-it-work_wrap-content-slide">
+                  <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw1.png, ../../assets/img/png/how-it-work/hiw1@2x.png 2x"
                       media="(max-width: 992px)">
                     <img @click.prevent="nextSlide" ref="image" src="../../assets/img/png/how-it-work/hiw1.png" srcset="../../assets/img/png/how-it-work/hiw1@2x.png 2x">
-                </picture>
-              </slide>
-              <slide class="how-it-work_wrap-content-slide">
-                <picture>
+                  </picture>
+                </div>
+                <div class="how-it-work_wrap-content-slide">
+                  <picture>
                     <source srcset="../../assets/img/png/how-it-work/hiw3.png, ../../assets/img/png/how-it-work/hiw3@2x.png 2x"
                       media="(max-width: 992px)">
                     <img @click.prevent="nextSlide" src="../../assets/img/png/how-it-work/hiw3.png" srcset="../../assets/img/png/how-it-work/hiw3@2x.png 2x">
-                </picture>
-              </slide>
-            </carousel>
+                  </picture>
+                </div>
+              </slick>
           </div>
         </div>
       </div>
@@ -67,33 +57,39 @@
 
 <script>
 import i18n from 'i18next';
-import { Carousel, Slide } from 'vue-carousel';
+import Slick from 'vue-slick';
+import 'slick-carousel/slick/slick.css';
 
 export default {
   name: 'banner',
   data() {
     return {
       lang: i18n.language,
-      activeSlide: 0
+      activeSlide: 0,
+      slickOptions: {
+        slidesToShow: 1,
+        autoplay: false,
+        arrows: false
+      },
     };
   },
   updated() {
     this.lang = i18n.language;
   },
   components: {
-    Carousel,
-    Slide
+    Slick
   },
   methods: {
     nextSlide() {
-      this.$refs.carousel.goToPage(this.$refs.carousel.getNextPage());
+      this.$refs.slick.next();
     },
     setAtiveSlide(index) {
       this.activeSlide = index;
+      this.$refs.slick.goTo(index);
     },
-    onPageChange: function(index) {
-      this.setAtiveSlide(index);
-    }
+    handleAfterChange(event, slick, currentSlide) {
+      this.setAtiveSlide(currentSlide);
+    },
   }
 };
 </script>

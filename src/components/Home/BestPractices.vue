@@ -6,6 +6,7 @@
               <slick
                 class="best-practices_wrap-preview-slides"
                 ref="slick"
+                @afterChange="handleAfterChange"
                 :options="slickOptions">
                 <div class="best-practices_wrap-preview-slide">
                   <picture>
@@ -114,8 +115,8 @@ export default {
       this.activeSlide = index;
       this.$refs.slick.goTo(index);
     },
-    onPageChange: function(index) {
-      this.setAtiveSlide(index);
+    handleAfterChange(event, slick, currentSlide) {
+      this.setAtiveSlide(currentSlide);
     },
     nextSlide() {
       this.$refs.slick.next();
