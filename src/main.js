@@ -1,4 +1,4 @@
-import Es6Promise from 'es6-promise';
+// import Es6Promise from 'es6-promise';
 import Vue from 'vue';
 import VueScrollTo from 'vue-scrollto';
 import VueAnalytics from 'vue-analytics';
@@ -6,7 +6,7 @@ import App from './App';
 import store from './store';
 import router from './router';
 import i18n from './utils/i18n';
-Es6Promise.polyfill();
+// Es6Promise.polyfill();
 
 Vue.config.productionTip = false;
 
