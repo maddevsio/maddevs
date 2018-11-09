@@ -4,6 +4,8 @@
       theme="blood-orange"
       :message="$t('cookie-message')"
       :buttonText="$t('cookie-button')"
+      position="top"
+      transitionName="slideFromTop"
     ></cookie-law>
     <Header @EventLanguage="getLanguage"/>
     <router-view :language="this.lang"/>
