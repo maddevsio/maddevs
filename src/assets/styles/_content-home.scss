@@ -980,7 +980,7 @@
             text-align: left;
             margin-top: 10px;
             transition: all .1s ease;
-            @media screen and (max-width: 1200px){
+            @media screen and (max-width: 1376px){
               font-size: 16px;
             }
             @media screen and (max-width: 440px){
@@ -991,6 +991,7 @@
             display: flex;
             justify-content: flex-start;
             p {
+              white-space: nowrap;
               margin: auto 5px;
             }
             &-line {
