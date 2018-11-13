@@ -24,7 +24,7 @@
             <slick
                 class="how-it-work_wrap-content-slides"
                 ref="slick"
-                @afterChange="handleAfterChange"
+                @beforeChange="handleBeforeChange"
                 :options="slickOptions">
                 <div class="how-it-work_wrap-content-slide">
                   <picture>
@@ -87,8 +87,8 @@ export default {
       this.activeSlide = index;
       this.$refs.slick.goTo(index);
     },
-    handleAfterChange(event, slick, currentSlide) {
-      this.setAtiveSlide(currentSlide);
+    handleBeforeChange(event, slick, currentSlide, nextSlide) {
+      this.setAtiveSlide(nextSlide);
     },
   }
 };

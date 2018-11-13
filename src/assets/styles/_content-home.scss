@@ -57,6 +57,7 @@
     z-index: -2;
   }
   video[poster] {
+    width: 100%;
     min-height: 100%;
     object-fit: cover;
     top:0 !important;
