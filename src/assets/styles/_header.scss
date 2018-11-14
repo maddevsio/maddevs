@@ -7,6 +7,20 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    &_right-block {
+      display: flex;
+      align-items: center;
+      padding: 24px 0;
+      .header_soc-icons {
+        a {
+          display: inline-block;
+          margin-right: 18px;
+          img {
+            display: block;
+          }
+        }
+      }
+    }
   }
   &-logo {
     width: 40px;
@@ -18,7 +32,7 @@
     font-size: 14px;
     font-family: 'MADEEvolveSans-regular', sans-serif;
     border: none;
-    padding: 24px 0;
     cursor: pointer;
+    padding: 0 0 6px;
   }
 }
