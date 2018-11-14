@@ -10,7 +10,7 @@
             </div>
             <div class="contacts-wrap_list-item phone-mail">
                 <div class="phone-mail_wrap">
-                    <a href="tel:+996 555 429 055">+996 555 429 055</a>
+                    <a href="tel:+996 555 429 055">+996 555 761 939</a>
                     <a href="mailto:rock@maddevs.io">rock@maddevs.io</a>
                 </div>
             </div>

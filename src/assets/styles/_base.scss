@@ -47,6 +47,7 @@ main {
 }
 .rotate_contacts-wrap {
   transform: rotateY(180deg);
+  z-index: 110;
 }
 //----------- End Base classes ------------ //
 

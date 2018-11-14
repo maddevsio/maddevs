@@ -75,11 +75,11 @@
                 <div class="people-info-block">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
-                            <p>PyCon Kyrgyzstan 2018</p>
+                            <p>South Dev Fest 2018</p>
                         </div>
                     </div>
-                    <a target="_blank" href="https://www.slideshare.net/maddevs/ss-116842780">
-                        <p>{{$t('The role of bots in automatization of food ordering process')}}</p>
+                    <a target="_blank" href="https://www.slideshare.net/maddevs/triggermesh-faas-kubernetes">
+                        <p>{{$t('Triggermesh - Faas platform on Kubernetes')}}</p>
                     </a>
                 </div>
             </div>
