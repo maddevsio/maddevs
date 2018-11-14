@@ -5,9 +5,22 @@
         <a href="/">
           <img src="../assets/img/svg/logo.svg" alt="Logotype" class="header-logo">
         </a>
-        <button class="mobile-menu_btn" v-on:click.prevent="switchLanguage">
-          {{ lang === 'en' ? 'Русский' : 'English' }}
-        </button>
+        <div class="header-wrap_right-block">
+          <div class="header_soc-icons">
+            <a href="https://github.com/maddevsio" target="_blank">
+              <img src="../assets/img/svg/header/git-header.svg" alt="Github">
+            </a>
+            <a href="https://ru.linkedin.com/company/mad-devs" target="_blank">
+              <img src="../assets/img/svg/header/in-header.svg" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/maddevsio" target="_blank">
+              <img src="../assets/img/svg/header/fb-header.svg" alt="Facebook">
+            </a>
+          </div>
+          <button class="mobile-menu_btn" v-on:click.prevent="switchLanguage">
+            {{ lang === 'en' ? 'Русский' : 'English' }}
+          </button>
+        </div>
       </div>
     </div>
   </header>
