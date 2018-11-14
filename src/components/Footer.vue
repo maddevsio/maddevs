@@ -70,20 +70,26 @@ export default {
   },
   methods: {
     showSurprise(e) {
-      setTimeout(() => {
-        this.clickCount = 0;
-      }, 700);
-      if (this.runnigSurprise === false) {
-        if (this.clickCount === 1) {
-          this.runnigSurprise = true;
-          let block = document.getElementById('contacts-wrap');
-          block.classList.toggle('rotate_contacts-wrap');
-          setTimeout(() => {
+      const ua = window.navigator.userAgent;
+      const isIE = /MSIE|Trident/.test(ua);
+      if (isIE) {
+        return false;
+      } else {
+        setTimeout(() => {
+          this.clickCount = 0;
+        }, 700);
+        if (this.runnigSurprise === false) {
+          if (this.clickCount === 1) {
+            this.runnigSurprise = true;
+            let block = document.getElementById('contacts-wrap');
             block.classList.toggle('rotate_contacts-wrap');
-            this.repeatSurprise();
-          }, 1000);
-        } else {
-          this.clickCount += 1;
+            setTimeout(() => {
+              block.classList.toggle('rotate_contacts-wrap');
+              this.repeatSurprise();
+            }, 1000);
+          } else {
+            this.clickCount += 1;
+          }
         }
       }
     },

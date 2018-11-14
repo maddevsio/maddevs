@@ -3,42 +3,33 @@
     <div class="container">
         <div class="best-practices_wrap">
             <div class="best-practices_wrap-preview">
-                <carousel
-                  v-on:pageChange="onPageChange"
-                  :loop=true
-                  :autoplayLoop="true"
-                  :autoplay="true"
-                  :autoplayTimeout="5000"
-                  :per-page="1"
-                  :navigate-to="activeSlide"
-                  :paginationEnabled="false"
-                  mouse-drag:true
-                  autoplayHoverPause
-                  class="best-practices_wrap-preview-slides"
-                  ref="carousel"
-                >
-                  <slide class="best-practices_wrap-preview-slide">
-                    <picture>
-                        <source srcset="../../assets/img/png/best-practices/bp1.png, ../../assets/img/png/best-practices/bp1@2x.png 2x"
-                                media="(max-width: 992px)">
-                        <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp1.png" srcset="../../assets/img/png/best-practices/bp1@2x.png 2x">
-                    </picture>
-                  </slide>
-                  <slide class="best-practices_wrap-preview-slide">
-                    <picture>
-                        <source srcset="../../assets/img/png/best-practices/bp2.png, ../../assets/img/png/best-practices/bp2@2x.png 2x"
-                                media="(max-width: 992px)">
-                        <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp2.png" srcset="../../assets/img/png/best-practices/bp2@2x.png 2x">
-                    </picture>
-                  </slide>
-                  <slide class="best-practices_wrap-preview-slide">
-                    <picture>
-                        <source srcset="../../assets/img/png/best-practices/bp3.png, ../../assets/img/png/best-practices/bp3@2x.png 2x"
-                                media="(max-width: 992px)">
-                        <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp3.png" srcset="../../assets/img/png/best-practices/bp3@2x.png 2x">
-                    </picture>
-                  </slide>
-                </carousel>
+              <slick
+                class="best-practices_wrap-preview-slides"
+                ref="slick"
+                @beforeChange="handleBeforeChange"
+                :options="slickOptions">
+                <div class="best-practices_wrap-preview-slide">
+                  <picture>
+                      <source srcset="../../assets/img/png/best-practices/bp1.png, ../../assets/img/png/best-practices/bp1@2x.png 2x"
+                              media="(max-width: 992px)">
+                      <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp1.png" srcset="../../assets/img/png/best-practices/bp1@2x.png 2x">
+                  </picture>
+                </div>
+                <div class="best-practices_wrap-preview-slide">
+                  <picture>
+                      <source srcset="../../assets/img/png/best-practices/bp2.png, ../../assets/img/png/best-practices/bp2@2x.png 2x"
+                              media="(max-width: 992px)">
+                      <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp2.png" srcset="../../assets/img/png/best-practices/bp2@2x.png 2x">
+                  </picture>
+                </div>
+                <div class="best-practices_wrap-preview-slide">
+                  <picture>
+                      <source srcset="../../assets/img/png/best-practices/bp3.png, ../../assets/img/png/best-practices/bp3@2x.png 2x"
+                              media="(max-width: 992px)">
+                      <img @click.prevent="nextSlide" src="../../assets/img/png/best-practices/bp3.png" srcset="../../assets/img/png/best-practices/bp3@2x.png 2x">
+                  </picture>
+                </div>
+              </slick>
             </div>
             <div class="best-practices_wrap-title">
                 <p>0 func (r *REST) addCommand (c echo.Context,) {</p>
@@ -64,7 +55,8 @@
 </template>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel';
+import Slick from 'vue-slick';
+import 'slick-carousel/slick/slick.css';
 
 export default {
   name: 'best-practices',
@@ -72,11 +64,15 @@ export default {
   data() {
     return {
       activeSlide: 0,
+      slickOptions: {
+        slidesToShow: 1,
+        autoplay: false,
+        arrows: false
+      },
     };
   },
   components: {
-    Carousel,
-    Slide,
+    Slick,
   },
   methods: {
     calcLineNumber() {
@@ -117,12 +113,13 @@ export default {
     },
     setAtiveSlide(index) {
       this.activeSlide = index;
+      this.$refs.slick.goTo(index);
     },
-    onPageChange: function(index) {
-      this.setAtiveSlide(index);
+    handleBeforeChange(event, slick, currentSlide, nextSlide) {
+      this.setAtiveSlide(nextSlide);
     },
     nextSlide() {
-      this.$refs.carousel.goToPage(this.$refs.carousel.getNextPage());
+      this.$refs.slick.next();
     },
   },
   mounted() {
