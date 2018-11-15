@@ -3,6 +3,7 @@
     <Banner />
     <HowItWork />
     <BestPractices />
+    <Services />
     <WeUse />
     <Reviews />
     <Clients />
@@ -20,6 +21,7 @@
 import Banner from './Banner';
 import HowItWork from './HowItWork';
 import BestPractices from './BestPractices';
+import Services from './Services';
 import WeUse from './WeUse';
 import Reviews from './Reviews';
 import Clients from './Clients';
@@ -38,6 +40,7 @@ export default {
     Banner,
     HowItWork,
     BestPractices,
+    Services,
     WeUse,
     Reviews,
     Clients,
