@@ -517,7 +517,29 @@
     }
   }
 }
-
+//------------------ Services ----------------//
+.services {
+  padding: 60px 0;
+  h2 {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  &-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    &_right-block {
+      display: flex;
+      .right-block_images {
+        display: flex;
+        &-list {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
 //------------------ weUse ----------------//
 .weUse {
   padding: 120px 0;
