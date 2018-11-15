@@ -11,7 +11,7 @@
                 <div class="right-block_images-arrow">
                     <img src="../../assets/img/svg/services/arrow_graph.svg" alt="Arrow graph">
                 </div>
-                <div class="right-block_images-list">
+                <div id="service-block-anim" class="right-block_images-list">
                     <img src="../../assets/img/svg/services/block-1.svg" alt="Block 1">
                     <img src="../../assets/img/svg/services/block-2.svg" alt="Block 2">
                     <img src="../../assets/img/svg/services/block-3.svg" alt="Block 3">
@@ -19,15 +19,13 @@
                     <img src="../../assets/img/svg/services/block-5.svg" alt="Block 5">
                 </div>
             </div>
-            <div class="right-block_desc">
-                <ul>
-                    <li>Direct daily or weekly hiring of specialists</li>
-                    <li>Advice from our experts</li>
-                    <li>Independent audit and optimization</li>
-                    <li>Software and Infrastructure Development</li>
-                    <li>Full outsourced IT team, with a resource management system</li>
-                </ul>
-            </div>
+            <ul class="right-block_desc">
+                <li>Direct daily or weekly hiring of specialists</li>
+                <li>Advice from our experts</li>
+                <li>Independent audit and optimization</li>
+                <li>Software and Infrastructure Development</li>
+                <li>Full outsourced IT team, with a resource management system</li>
+            </ul>
         </div>
       </div>
     </div>
@@ -36,6 +34,15 @@
 
 <script>
 export default {
-  name: 'services'
+  name: 'services',
+  mounted() {
+    const el = document.getElementById('service-block-anim');
+    window.addEventListener('scroll', function(event) {
+      var top = this.scrollY;
+      if (top + 350 >= el.offsetTop) {
+        el.classList.add('anim-open');
+      }
+    }, false);
+  }
 };
 </script>
