@@ -8,7 +8,7 @@
         </div>
         <div class="services-wrap_right-block">
             <div class="right-block_images">
-                <div class="right-block_images-arrow">
+                <div id="service-arrow-anim" class="right-block_images-arrow">
                     <img src="../../assets/img/svg/services/arrow_graph.svg" alt="Arrow graph">
                 </div>
                 <div id="service-block-anim" class="right-block_images-list">
@@ -36,11 +36,13 @@
 export default {
   name: 'services',
   mounted() {
-    const el = document.getElementById('service-block-anim');
+    const blocks = document.getElementById('service-block-anim');
+    const arrow = document.getElementById('service-arrow-anim');
     window.addEventListener('scroll', function(event) {
       var top = this.scrollY;
-      if (top + 350 >= el.offsetTop) {
-        el.classList.add('anim-open');
+      if (top + 350 >= blocks.offsetTop) {
+        arrow.classList.add('anim-arrow');
+        blocks.classList.add('anim-open');
       }
     }, false);
   }
