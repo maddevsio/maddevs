@@ -5,6 +5,7 @@ import VueAnalytics from 'vue-analytics';
 import App from './App';
 import store from './store';
 import router from './router';
+import VueHead from 'vue-head';
 import i18n from './utils/i18n';
 Es6Promise.polyfill();
 
@@ -14,6 +15,8 @@ Vue.use(VueAnalytics, {
   id: 'UA-83208754-1',
   router
 });
+
+Vue.use(VueHead);
 
 Vue.use(VueScrollTo, {
   container: 'body',
