@@ -48,6 +48,18 @@ export default {
     Press,
     Associations,
     Contacts
+  },
+  head: {
+    meta: [
+      {name: 'description', content: 'Mad Devs is a full stack team for development and administration of IT projects. We specialize in projects requiring the individual technical solutions.'},
+      // Facebook / Open Graph
+      {property: 'fb:app_id', content: '123456789'},
+      {property: 'og:url', content: 'https://maddevs.io'},
+      {property: 'og:type', content: 'website'},
+      {property: 'og:title', content: 'Mad Devs'},
+      {property: 'og:description', content: 'Mad Devs is a full stack team for development and administration of IT projects. We specialize in projects requiring the individual technical solutions.'},
+      {property: 'og:image', content: 'https://maddevs.io/static/Open-Graph.jpg'},
+    ],
   }
 };
 </script>
