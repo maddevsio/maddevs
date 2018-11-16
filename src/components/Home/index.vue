@@ -5,8 +5,8 @@
     <BestPractices />
     <Services />
     <WeUse />
-    <Reviews />
     <Clients />
+    <Reviews />
     <Partners />
     <OpenSource />
     <Speakers />

@@ -1,22 +1,39 @@
 <template>
   <section id="clients" class="clients">
     <div class="container">
-      <div class="clients_wrap">
+      <div class="clients_wrap" :class="{ open_wrap: OpenWrap }">
         <h2 class="sec-title">{{$t('Our clients')}}</h2>
         <div class="clients_wrap-icons">
-          <!-- Row -->
           <div class="clients_wrap-icons_row">
             <a class="small-image">
               <img src="../../assets/img/svg/clients/veeqo.svg" alt="veeqo">
             </a>
+            <a class="small-image">
+              <img src="../../assets/img/svg/clients/nappy.svg" alt="nappy">
+            </a>
             <a>
-              <img src="../../assets/img/svg/clients/zentist.svg" alt="zentist">
+              <img src="../../assets/img/svg/clients/eatigo.svg" alt="eatigo">
+            </a>
+            <a class="small-image">
+              <img src="../../assets/img/svg/clients/triggermesh.svg" alt="triggermesh">
+            </a>
+            <a>
+              <img src="../../assets/img/svg/clients/kickico.svg" alt="kickico">
+            </a>
+            <a class="small-image">
+              <img src="../../assets/img/svg/clients/teacherly.svg" alt="teacherly">
             </a>
             <a>
               <img src="../../assets/img/svg/clients/localize.svg" alt="localize">
             </a>
             <a>
-              <img src="../../assets/img/svg/clients/eatigo.svg" alt="eatigo">
+              <img src="../../assets/img/svg/clients/terbine.svg" alt="terbine">
+            </a>
+            <a>
+              <img src="../../assets/img/svg/clients/zentist.svg" alt="zentist">
+            </a>
+            <a>
+              <img src="../../assets/img/svg/clients/admitad.svg" alt="admitad">
             </a>
             <a class="scentomania">
               <img src="../../assets/img/svg/clients/scento.svg" alt="scento">
@@ -37,9 +54,6 @@
               <img src="../../assets/img/svg/clients/namba-taxi.svg" alt="namba-taxi">
             </a>
             <a class="small-image">
-              <img src="../../assets/img/svg/clients/teacherly.svg" alt="teacherly">
-            </a>
-            <a class="small-image">
               <img src="../../assets/img/svg/clients/nambafood.svg" alt="nambafood">
             </a>
             <a class="small-image">
@@ -47,12 +61,6 @@
             </a>
             <a>
               <img src="../../assets/img/svg/clients/besmart.svg" alt="besmart">
-            </a>
-            <a>
-              <img src="../../assets/img/svg/clients/kickico.svg" alt="kickico">
-            </a>
-            <a>
-              <img src="../../assets/img/svg/clients/terbine.svg" alt="terbine">
             </a>
             <a class="lakediamond">
               <img src="../../assets/img/png/clients/lakediamond@2x.png" alt="lakediamond" />
@@ -68,12 +76,6 @@
             </a>
             <a class="tengri">
               <img src="../../assets/img/svg/clients/tengri.svg" alt="tengri">
-            </a>
-            <a class="small-image">
-              <img src="../../assets/img/svg/clients/nappy.svg" alt="nappy">
-            </a>
-            <a>
-              <img src="../../assets/img/svg/clients/admitad.svg" alt="admitad">
             </a>
             <a class="photobook">
               <img src="../../assets/img/svg/clients/photobook.svg" alt="photobook">
@@ -91,9 +93,6 @@
               <img src="../../assets/img/svg/clients/diesel.svg" alt="diesel">
             </a>
             <a class="small-image">
-              <img src="../../assets/img/svg/clients/triggermesh.svg" alt="triggermesh">
-            </a>
-            <a class="small-image">
               <img src="../../assets/img/svg/clients/elcart.svg" alt="elcart">
             </a>
             <a class="small-image">
@@ -103,11 +102,25 @@
         </div>
       </div>
     </div>
+    <button class="clients_btn" @click="toggleLogoWrap()">
+      All our customers
+      <img src="../../assets/img/svg/clients/btn-icon.svg" alt="Open hide icons">
+    </button>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'clients'
+  name: 'clients',
+  data() {
+    return {
+      OpenWrap: false
+    };
+  },
+  methods: {
+    toggleLogoWrap() {
+      this.OpenWrap = !this.OpenWrap;
+    }
+  }
 };
 </script>
