@@ -753,9 +753,36 @@
 
 // ------------------- clients --------------//
 .clients {
+  position: relative;
   background-color: #1e1e1e;
   padding: 60px 0;
+  .clients_btn {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'MADEEvolveSans-bold', sans-serif;
+    background-color: #1e1e1e;
+    line-height: 1.85;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    img {
+      height: 9px;
+      margin-left: 5px;
+    }
+  }
   &_wrap {
+    height: 450px;
+    overflow: hidden;
+    padding-bottom: 110px;
+    box-sizing: border-box;
     h2 {
       color: #fff;
     }
@@ -778,6 +805,9 @@
         }
       }
     }
+  }
+  .open_wrap {
+    height: auto;
   }
 }
 
