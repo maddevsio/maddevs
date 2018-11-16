@@ -231,12 +231,12 @@
         &-wrap {
             flex-direction: column;
             align-items: center;
+            margin-top: 0;
             &_item {
                 width: 100%;
                 max-width: 100%;
-                &:first-child {
-                    margin-bottom: 30px;
-                }
+                padding-top: 30px;
+                padding-bottom: 30px;
             }
         }
     }

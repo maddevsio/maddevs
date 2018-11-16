@@ -10,7 +10,7 @@
     <Partners />
     <OpenSource />
     <Speakers />
-    <OurBlog :language="language"/>
+    <!-- <OurBlog :language="language"/> -->
     <Press />
     <Associations />
     <Contacts />
