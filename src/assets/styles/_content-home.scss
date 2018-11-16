@@ -696,7 +696,7 @@
           font-size: 28px;
           font-family: 'MADEEvolveSans-regular', sans-serif;
           line-height: 1.6;
-          padding: 70px 0 43px;
+          padding: 40px 0 43px;
           margin: 0 auto;
           color: #fff;
           user-select: none;
@@ -727,10 +727,11 @@
         }
       }
       .slick-dots {
-        margin-top: 87px;
         display: flex;
         padding-left: 0;
         justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 0;
         button {
           display: none;
         }
@@ -873,7 +874,7 @@
     flex-direction: column;
     align-items: center;
     padding: 60px 0;
-    background-color: #fff8e9;
+    background-color: #e8e8e8;
     h2 {
       max-width: 830px;
       margin-left: auto;
