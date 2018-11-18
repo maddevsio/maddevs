@@ -1319,19 +1319,20 @@
       align-items: center;
       border-radius: 5px;
       background-color: #fff;
-      box-shadow: 0 6px 22px 0 rgba(38, 36, 32, .08);
-      padding: 60px 30px;
+      padding: 0 30px;
       box-sizing: border-box;
       text-decoration: none;
-      transition: all .4s ease;
-      &:hover {
-        box-shadow: 0 2px 10px 0 rgba(38, 36, 32, 0.1);
-      }
       &_img {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 120px;
+        .press-cnbc {
+          height: 88px;
+        }
+        .press-ozy {
+          height: 54px;
+        }
       }
       a {
         font-size: 14px;
@@ -1359,7 +1360,7 @@
 
 // --------------- Associations --------------- //
 .associations {
-  padding: 60px 0 150px;
+  padding: 60px 0 120px;
   &-wrap {
     display: flex;
     flex-direction: column;

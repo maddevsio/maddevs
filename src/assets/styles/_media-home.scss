@@ -268,8 +268,14 @@
             &_item {
                 width: 100%;
                 max-width: 100%;
+                &_img {
+                    height: auto;
+                }
+                p {
+                    margin-top: 50px;
+                }
                 &:first-child {
-                    margin-bottom: 30px;
+                    margin-bottom: 60px;
                 }
             }
         }
