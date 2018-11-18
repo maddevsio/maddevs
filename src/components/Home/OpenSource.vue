@@ -11,7 +11,7 @@
     </div>
     <div class="open-source_wrap-projects">
       <h2 class="sec-title">{{$t('Projects')}}<span class="our-pets">🐶 🐱</span></h2>
-      <div class="open-source_wrap-projects_list">
+      <div class="open-source_wrap-projects_list" :class="{ all_proj: AllProj }">
         <a href="https://gps.maddevs.io/ru/" target="_blank" class="open-source_wrap-projects_list-item op-proj-1">
           <div class="projects-img_wrap">
             <img src="../../assets/img/svg/openSource/mlm.svg" alt="Mad Location Manager">
@@ -39,13 +39,13 @@
             <p>{{$t('Tool for automating the process of contextual advirtisement creation')}}</p>
           </div>
         </a>
-        <a href="https://blog.maddevs.io/https-blog-maddevs-io-yourcast-tv-32915159be1c" target="_blank" class="open-source_wrap-projects_list-item op-proj-4">
+        <a href="https://idmatch.co/" target="_blank" class="open-source_wrap-projects_list-item op-proj-4">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/yourcast.svg" alt="MadPwa">
+            <img src="../../assets/img/svg/openSource/id.svg" class="op-img-opensourse" alt="IDmatch">
           </div>
           <div class="projects-desc_wrap">
-            <h4>Yourcast</h4>
-            <p>{{$t('Bot that forms the video playlist and transfers the data to HLS stream in browser')}}</p>
+            <h4>IDmatch</h4>
+            <p>{{$t('Artifical Intelligence and machine learning for personal identification')}}</p>
           </div>
         </a>
         <a href="https://github.com/maddevsio/madpwa" target="_blank" class="open-source_wrap-projects_list-item op-proj-5">
@@ -66,16 +66,20 @@
             <p>{{$t('The open-source geocoder built on top of ElasticSearch for fast geocoding')}}</p>
           </div>
         </a>
-        <a href="https://idmatch.co/" target="_blank" class="open-source_wrap-projects_list-item op-proj-7">
+        <a href="https://blog.maddevs.io/https-blog-maddevs-io-yourcast-tv-32915159be1c" target="_blank" class="open-source_wrap-projects_list-item op-proj-7">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/id.svg" class="op-img-opensourse" alt="IDmatch">
+            <img src="../../assets/img/svg/openSource/yourcast.svg" alt="MadPwa">
           </div>
           <div class="projects-desc_wrap">
-            <h4>IDmatch</h4>
-            <p>{{$t('Artifical Intelligence and machine learning for personal identification')}}</p>
+            <h4>Yourcast</h4>
+            <p>{{$t('Bot that forms the video playlist and transfers the data to HLS stream in browser')}}</p>
           </div>
         </a>
       </div>
+    </div>
+    <div class="open-source_btn" @click="toggleAllProj()">
+      I want more open source projects
+      <img src="../../assets/img/svg/openSource/right.svg" alt="Show more">
     </div>
   </section>
 </template>
@@ -87,6 +91,7 @@ export default {
   name: 'open-source',
   data() {
     return {
+      AllProj: false,
       githubData: {
         repos: 0,
         commits: 0,
@@ -102,6 +107,9 @@ export default {
       axios.get('https://api.github.com/users/maddevsio').then(res => {
         this.githubData.repos = res.data.public_repos;
       });
+    },
+    toggleAllProj() {
+      this.AllProj = !this.AllProj;
     }
   },
   mounted() {
