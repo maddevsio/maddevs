@@ -4,7 +4,7 @@
       <h2 class="sec-title">{{$t('We solve the full range of IT services with different levels of customer involvement - from direct FTE hiring and outstuff to full IT outsourced software development')}}</h2>
       <div class="services-wrap">
         <div class="services-wrap_left-block">
-            <p>Level of Trust and Increasing Customer Involvement</p>
+            <p>{{ $t('Level of Trust and Increasing Customer Involvement') }}</p>
         </div>
         <div class="services-wrap_right-block">
             <div class="right-block_images">
@@ -35,11 +35,11 @@
                 </div>
             </div>
             <ul class="right-block_desc">
-                <li>Direct daily or weekly hiring of specialists</li>
-                <li>Advice from our experts</li>
-                <li>Independent audit and optimization</li>
-                <li>Software and Infrastructure Development</li>
-                <li>Full outsourced IT team, with a resource management system</li>
+                <li>{{ $t('Direct daily or weekly hiring of specialists') }}</li>
+                <li>{{ $t('Advice from our experts') }}</li>
+                <li>{{ $t('Independent audit and optimization') }}</li>
+                <li>{{ $t('Software and Infrastructure Development') }}</li>
+                <li>{{ $t('Full outsourced IT team, with a resource management system') }}</li>
             </ul>
         </div>
       </div>
@@ -55,7 +55,7 @@ export default {
     const arrow = document.getElementById('service-arrow-anim');
     window.addEventListener('scroll', function(event) {
       var top = this.scrollY;
-      if (top + 800 >= blocks.offsetTop) {
+      if (top + 700 >= blocks.offsetTop) {
         arrow.classList.add('anim-arrow');
         blocks.classList.add('anim-open');
       }
