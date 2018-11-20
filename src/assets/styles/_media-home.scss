@@ -255,7 +255,10 @@
                           }
                         }
                     }
-                    .op-proj-4 {
+                    .op-proj-1 {
+                        border-bottom: 1px solid #e8e8e8;
+                    }
+                    .op-proj-2 {
                         border-bottom: 1px solid #e8e8e8;
                     }
                     .op-proj-6 {
@@ -837,6 +840,9 @@
             &-projects {
                 margin-top: 60px;
                 &_list {
+                    &-hidden_blocks {
+                        flex-direction: column;
+                    }
                     &-item {
                         width: 100% !important;
                         height: auto;
@@ -856,11 +862,11 @@
                             font-size: 16px;
                         }
                     }
+                    .op-proj-3 {
+                      border-bottom: 1px solid #e8e8e8;
+                    }
                     .op-proj-4 {
                         border-top: 0; 
-                    }
-                    .op-proj-5 {
-                      border-bottom: 1px solid #e8e8e8;
                     }
                 }
             }
