@@ -35,8 +35,8 @@
             <a>
               <img src="../../assets/img/svg/clients/admitad.svg" alt="admitad">
             </a>
-            <a class="scentomania">
-              <img src="../../assets/img/svg/clients/scento.svg" alt="scento">
+            <a class="small-image">
+              <img src="../../assets/img/svg/clients/nuntiux.svg" alt="nuntiux">
             </a>
             <a>
               <img src="../../assets/img/svg/clients/namba.svg" alt="namba">
@@ -89,14 +89,14 @@
              <a class="small-image">
               <img src="../../assets/img/svg/clients/smb.svg" alt="smb">
             </a>
-             <a class="small-image">
-              <img src="../../assets/img/svg/clients/diesel.svg" alt="diesel">
-            </a>
             <a class="small-image">
               <img src="../../assets/img/svg/clients/elcart.svg" alt="elcart">
             </a>
-            <a class="small-image">
-              <img src="../../assets/img/svg/clients/nuntiux.svg" alt="nuntiux">
+             <a class="small-image">
+              <img src="../../assets/img/svg/clients/diesel.svg" alt="diesel">
+            </a>
+            <a class="scentomania">
+              <img src="../../assets/img/svg/clients/scento.svg" alt="scento">
             </a>
           </div>
         </div>
