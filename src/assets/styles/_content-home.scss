@@ -831,6 +831,7 @@
     overflow: hidden;
     padding-bottom: 110px;
     box-sizing: border-box;
+    transition: all .3s ease;
     h2 {
       color: #fff;
     }
@@ -855,7 +856,7 @@
     }
   }
   .open_wrap {
-    height: auto;
+    height: 1161px;
   }
 }
 
