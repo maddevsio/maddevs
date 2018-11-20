@@ -67,7 +67,7 @@ export default {
         {property: 'og:title', content: 'Mad Devs'},
         {property: 'og:description', content: this.description},
         {property: 'og:image', content: 'https://maddevs.io/static/Open-Graph.jpg'},
-      ]
+      ];
     }
   },
 };
