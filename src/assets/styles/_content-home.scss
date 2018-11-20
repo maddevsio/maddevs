@@ -827,7 +827,7 @@
     }
   }
   &_wrap {
-    height: 450px;
+    height: 460px;
     overflow: hidden;
     padding-bottom: 110px;
     box-sizing: border-box;
@@ -1000,7 +1000,7 @@
           justify-content: space-between;
           transform: scaleY(0);
           transform-origin: left top;
-          transition: all .2s ease;
+          transition: all .3s ease;
         }
         &-item {
           width: 20%;
