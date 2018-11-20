@@ -925,6 +925,10 @@
     line-height: 1.85;
     text-transform: uppercase;
     color: #ec2227;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     img {
       width: 12px;
       height: 10px;
@@ -978,24 +982,34 @@
         margin-left: 10px;
       }
       &_list {
-        height: 449px;
+        height: auto;
         overflow: hidden;
         display: flex;
-        align-items: flex-start;
+        align-items: stretch;
         justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 40px;
         border-top: 1px solid #e8e8e8;
         border-bottom: 1px solid #e8e8e8;
+        &-hidden_blocks {
+          width: 100%;
+          height: 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          transform: scaleY(0);
+          transform-origin: left top;
+          transition: all .2s ease;
+        }
         &-item {
           width: 20%;
-          height: 450px;
+          height: auto;
           display: flex;
           align-items: flex-start;
           flex-direction: column;
           justify-content: flex-start;
           border-right: 0.5px solid #e8e8e8;
-          padding: 50px;
+          padding: 40px 50px;
           text-decoration: none;
           box-sizing: border-box;
           &:hover {
@@ -1034,53 +1048,53 @@
         }
         .op-proj-1 {
           width: 25%;
-          border-bottom: 1px solid #e8e8e8;
           img {
             height: 61px;
           }
         } 
         .op-proj-2 {
           width: 25%;
-          border-bottom: 1px solid #e8e8e8;
           img {
             height: 90px;
           }
         } 
         .op-proj-3 {
           width: 25%;
-          border-bottom: 1px solid #e8e8e8;
           img {
             height: 73px;
           }
         } 
         .op-proj-4 {
           width: 25%;
-          border-bottom: 1px solid #e8e8e8;
           img {
             height: 58px;
           }
         } 
         .op-proj-5 {
           width: 33%;
+          border-top: 1px solid #e8e8e8;
           img {
             height: 25px;
           }
         } 
         .op-proj-6 {
           width: 34%;
+          border-top: 1px solid #e8e8e8;
           img {
             height: 35px;
           }
         } 
         .op-proj-7 {
           width: 33%;
+          border-top: 1px solid #e8e8e8;
           img {
             height: 37px;
           }
         } 
       }
-      .all_proj {
+      .show_proj {
         height: auto;
+        transform: scaleY(1);
       }
     }
   }
