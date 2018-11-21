@@ -61,12 +61,6 @@ export default {
     meta: function () {
       return [
         {name: 'description', content: this.description},
-        // Facebook / Open Graph
-        {property: 'og:url', content: 'https://maddevs.io'},
-        {property: 'og:type', content: 'website'},
-        {property: 'og:title', content: 'Mad Devs'},
-        {property: 'og:description', content: this.description},
-        {property: 'og:image', content: 'https://maddevs.io/static/Open-Graph.jpg'},
       ];
     }
   },
