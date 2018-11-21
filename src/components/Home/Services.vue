@@ -1,7 +1,7 @@
 <template>
   <section id="services" class="services">
     <div class="container">
-      <h2 class="sec-title">{{$t('We solve the full range of IT services with different levels of customer involvement - from direct FTE hiring and outstuff to full IT outsourced software development')}}</h2>
+      <h2 class="sec-title">{{$t('We solve the full range of IT services with different levels of customer involvement')}}</h2>
       <div class="services-wrap">
         <div class="services-wrap_left-block">
             <p>{{ $t('Level of Trust and Increasing Customer Involvement') }}</p>
