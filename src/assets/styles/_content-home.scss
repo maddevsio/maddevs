@@ -86,7 +86,7 @@
   &-title {
     width: 50%;
     z-index: 2;
-    margin-top: 141px;
+    margin-top: 145px;
     margin-right: 60px;
     h1 {
       color: #fff;
@@ -519,7 +519,7 @@
 }
 //------------------ Services ----------------//
 .services {
-  padding: 60px 0;
+  padding: 120px 0 60px;
   h2 {
     max-width: 900px;
     margin: 0 auto;
@@ -864,7 +864,7 @@
 // --------------- partners --------------- //
 .partners {
   background-color: #fff;
-  padding: 60px 0;
+  padding: 120px 0 60px;
   &-wrap {
     display: flex;
     flex-direction: row;
