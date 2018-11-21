@@ -80,8 +80,14 @@
       </div>
     </div>
     <div class="open-source_btn" @click="toggleAllProj()">
-      I want more open source projects
-      <img src="../../assets/img/svg/openSource/right.svg" alt="Show more">
+      <span v-if="!showProj">
+        {{ $t('I want more open source projects') }}
+        <img src="../../assets/img/svg/openSource/right.svg" alt="Show more">
+      </span>
+      <a href="https://github.com/maddevsio" target="_blank" v-else>
+        {{ $t('View all projects on GitHub') }}
+        <img src="../../assets/img/svg/openSource/right.svg" alt="Show more">
+      </a>
     </div>
   </section>
 </template>
@@ -111,7 +117,7 @@ export default {
       });
     },
     toggleAllProj() {
-      this.showProj = !this.showProj;
+      this.showProj = true;
     }
   },
   mounted() {

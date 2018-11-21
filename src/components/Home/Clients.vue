@@ -103,8 +103,14 @@
       </div>
     </div>
     <button class="clients_btn" @click="toggleLogoWrap()">
-      All our customers
-      <img src="../../assets/img/svg/clients/btn-icon.svg" alt="Open hide icons">
+      <span v-if="!OpenWrap">
+        {{ $t('All our customers') }}
+        <img src="../../assets/img/svg/clients/btn-icon.svg" alt="Open hide icons">
+      </span>
+      <span v-else>
+        {{ $t('Hide') }}
+        <img src="../../assets/img/svg/clients/btn-icon.svg" alt="Open hide icons">
+      </span>
     </button>
   </section>
 </template>
