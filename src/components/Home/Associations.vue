@@ -4,7 +4,7 @@
       <div class="associations-wrap">
         <h2 class="sec-title">{{$t('Membership in associations')}}</h2>
         <div class="associations-wrap_list">
-          <div class="associations-wrap_list-item">
+          <div class="associations-wrap_list-item htp">
             <img src="../../assets/img/svg/associations/pht.svg" alt="">
           </div>
           <div class="associations-wrap_list-item kssda">

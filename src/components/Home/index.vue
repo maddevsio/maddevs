@@ -3,13 +3,14 @@
     <Banner />
     <HowItWork />
     <BestPractices />
+    <Services />
     <WeUse />
-    <Reviews />
     <Clients />
+    <Reviews />
     <Partners />
     <OpenSource />
     <Speakers />
-    <OurBlog :language="language"/>
+    <!-- <OurBlog :language="language"/> -->
     <Press />
     <Associations />
     <Contacts />
@@ -20,6 +21,7 @@
 import Banner from './Banner';
 import HowItWork from './HowItWork';
 import BestPractices from './BestPractices';
+import Services from './Services';
 import WeUse from './WeUse';
 import Reviews from './Reviews';
 import Clients from './Clients';
@@ -34,10 +36,16 @@ import Associations from './Associations';
 export default {
   name: 'Home',
   props: ['language'],
+  data() {
+    return {
+      description: this.$t('meta-desc'),
+    };
+  },
   components: {
     Banner,
     HowItWork,
     BestPractices,
+    Services,
     WeUse,
     Reviews,
     Clients,
@@ -48,6 +56,19 @@ export default {
     Press,
     Associations,
     Contacts
-  }
+  },
+  head: {
+    meta: function () {
+      return [
+        {name: 'description', content: this.description},
+        // Facebook / Open Graph
+        {property: 'og:url', content: 'https://maddevs.io'},
+        {property: 'og:type', content: 'website'},
+        {property: 'og:title', content: 'Mad Devs'},
+        {property: 'og:description', content: this.description},
+        {property: 'og:image', content: 'https://maddevs.io/static/Open-Graph.jpg'},
+      ];
+    }
+  },
 };
 </script>

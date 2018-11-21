@@ -1,8 +1,48 @@
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1368px) {
     .banner {
         &-title {
             h1 {
+                font-size: 52px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .banner {
+        &-title {
+            margin-top: 150px;
+            h1 {
                 font-size: 36px;
+            }
+        }
+    }
+    .services {
+        &-wrap {
+            &_left-block {
+                width: 100%;
+                max-width: 200px;
+                min-width: auto;
+                p {
+                    padding-right: 20px;
+                }
+            }
+            &_right-block {
+                .right-block_desc {
+                    margin-top: 22px;
+                    li {
+                        font-size: 19px;
+                        padding: 11px 0;
+                    }
+                }
+                .right-block_images .anim-arrow img {
+                    transform: scaleY(.9);
+                    margin-top: 12px;
+                }
+                .right-block_images-list {
+                    img {
+                        height: 50px;
+                    }
+                }
             }
         }
     }
@@ -22,7 +62,7 @@
 @media only screen and (max-width: 1024px) {
     .banner {
         &-title {
-            margin-top: 200px;
+            margin-top: 170px;
             margin-right: 30px;
         }
         &-slack {
@@ -60,6 +100,30 @@
             }
         }
     }
+    .services {
+        padding-bottom: 0;
+        &-wrap {
+            flex-direction: column;
+            &_left-block {
+                width: 100%;
+                max-width: 100%;
+                min-width: auto;
+                p {
+                    text-align: center;
+                    padding-right: 0;
+                    margin-bottom: 40px;
+                }
+            }
+            &_right-block {
+                .right-block_images-arrow {
+                    display: none;
+                }
+                .right-block_desc {
+                    margin-top: -12px;
+                }
+            }
+        }
+    }
     .open-source {
         &_wrap {
             &-github {
@@ -85,18 +149,6 @@
                         .projects-img_wrap {
                             height: 80px;
                             margin-bottom: 50px;
-                            // .op-img-opensourse {
-                            //     height: 78px;
-                            // }
-                            // .op-img-madpwa {
-                            //     height: 27px;
-                            // }
-                            // .op-img-mlm {
-                            //     height: 79px;
-                            // }
-                            // .op-img-sf {
-                            //     height: 92px;
-                            // }
                         }
                         .projects-desc_wrap {
                           h4 {
@@ -189,7 +241,10 @@
                           }
                         }
                     }
-                    .op-proj-4 {
+                    .op-proj-1 {
+                        border-bottom: 1px solid #e8e8e8;
+                    }
+                    .op-proj-2 {
                         border-bottom: 1px solid #e8e8e8;
                     }
                     .op-proj-6 {
@@ -217,6 +272,9 @@
             }
         }
     }
+    .clients .open_wrap {
+        height: 1720px;
+    }
     .partners {
         &-wrap {
             flex-direction: column;
@@ -224,9 +282,8 @@
             &_item {
                 width: 100%;
                 max-width: 100%;
-                &:first-child {
-                    margin-bottom: 30px;
-                }
+                padding-top: 30px;
+                padding-bottom: 30px;
             }
         }
     }
@@ -259,8 +316,14 @@
             &_item {
                 width: 100%;
                 max-width: 100%;
+                &_img {
+                    height: auto;
+                }
+                p {
+                    margin-top: 50px;
+                }
                 &:first-child {
-                    margin-bottom: 30px;
+                    margin-bottom: 60px;
                 }
             }
         }
@@ -376,7 +439,6 @@
             margin-bottom: 0;
             .Cookie__button {
                 padding: 0.425em 2.025em !important;
-                // margin-left: 0;
             }
         }
         .Cookie__content {
@@ -401,6 +463,35 @@
                 font-size: 24px;
                 line-height: 1.5;
                 margin-top: 10px;
+            }
+        }
+    }
+    .services {
+        &-wrap {
+            .services-wrap_left-block p {
+                font-family: 'MADEEvolveSans-regular', sans-serif;
+                font-size: 22px;
+                color: #2c1c1c;
+                font-weight: bold;
+            }
+            .right-block_images {
+                display: none;
+            }
+            .right-block_desc {
+                padding-left: 50px;
+                li {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        width: 32px;
+                        height: 1px;
+                        position: absolute;
+                        left: -50px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-color: #ec2227 !important;
+                    }
+                }
             }
         }
     }
@@ -514,6 +605,7 @@
     .clients {
         padding: 80px 0;
         &_wrap {
+            height: 485px;
             &-icons {
                 &_row {
                     a {
@@ -547,6 +639,9 @@
                 }
             }
         }
+    }
+    .clients .open_wrap {
+      height: 1960px;
     }
     .our-blog {
       padding: 60px 0;
@@ -609,8 +704,20 @@
             }
         }
     }
-    .associations-wrap_list-item img {
-        height: 40px;
+    .associations-wrap_list .htp {
+        img {
+            height: 45px;
+        }
+    }
+    .associations-wrap_list .kssda {
+        img {
+            height: 35px;
+        }
+    }
+    .associations-wrap_list .amcham {
+        img {
+            height: 40px;
+        }
     }
 }
 @media only screen and (max-width: 480px) {
@@ -651,6 +758,17 @@
                 .line-number_text h3 {
                     font-size: 24px;
                 }
+            }
+        }
+    }
+    .services {
+        padding-bottom: 20px;
+        h2 {
+            font-size: 28px;
+        }
+        &-wrap {
+            .right-block_desc li {
+                font-size: 18px;
             }
         }
     }
@@ -717,6 +835,9 @@
             &-projects {
                 margin-top: 60px;
                 &_list {
+                    &-hidden_blocks {
+                        flex-direction: column;
+                    }
                     &-item {
                         width: 100% !important;
                         height: auto;
@@ -736,11 +857,11 @@
                             font-size: 16px;
                         }
                     }
+                    .op-proj-3 {
+                      border-bottom: 1px solid #e8e8e8;
+                    }
                     .op-proj-4 {
                         border-top: 0; 
-                    }
-                    .op-proj-5 {
-                      border-bottom: 1px solid #e8e8e8;
                     }
                 }
             }

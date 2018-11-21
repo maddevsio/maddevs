@@ -20,6 +20,11 @@ main {
 
 * {
   outline: none !important;
+  &::-moz-focus-outer,
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
 }
 
 //----------- Base classes ------------ //
