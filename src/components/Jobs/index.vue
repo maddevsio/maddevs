@@ -3,6 +3,7 @@
     <Banner />
     <Advantages />
     <Employer />
+    <Jobs />
     <Team />
     <Contacts />
   </main>
@@ -12,11 +13,12 @@
 import Banner from './Banner';
 import Advantages from './Advantages';
 import Employer from './Employer';
+import Jobs from './Jobs';
 import Team from './Team';
 import Contacts from '../Contacts';
 
 export default {
-  name: 'Jobs',
+  name: 'main-jobs',
   props: ['language'],
   data() {
     return {
@@ -27,6 +29,7 @@ export default {
     Banner,
     Advantages,
     Employer,
+    Jobs,
     Team,
     Contacts
   },
