@@ -1,11 +1,15 @@
 <template>
   <main class="main">
     <Banner />
+    <Employer />
+    <Contacts />
   </main>
 </template>
 
 <script>
 import Banner from './Banner';
+import Employer from './Employer';
+import Contacts from '../Contacts';
 
 export default {
   name: 'Jobs',
@@ -17,6 +21,8 @@ export default {
   },
   components: {
     Banner,
+    Employer,
+    Contacts
   },
   head: {
     meta: function () {
