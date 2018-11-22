@@ -50,16 +50,30 @@
 <script>
 export default {
   name: 'services',
+  methods: {
+    aaa() {
+      console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!');
+    }
+  },
   mounted() {
-    const blocks = document.getElementById('service-block-anim');
-    const arrow = document.getElementById('service-arrow-anim');
-    window.addEventListener('scroll', function(event) {
-      var top = this.scrollY;
-      if (top + 700 >= blocks.offsetTop) {
-        arrow.classList.add('anim-arrow');
-        blocks.classList.add('anim-open');
-      }
-    }, false);
+    this.aaa();
+    // const blocks = document.getElementById('service-block-anim');
+    // const arrow = document.getElementById('service-arrow-anim');
+    // const ua = window.navigator.userAgent;
+    // const isIE = /MSIE|Trident/.test(ua);
+    // if (isIE) {
+    //   arrow.classList.add('anim-arrow');
+    //   blocks.classList.add('anim-open');
+    //   return false;
+    // } else {
+    //   window.addEventListener('scroll', function(event) {
+    //     var top = this.scrollY;
+    //     if (top + 700 >= blocks.offsetTop) {
+    //       arrow.classList.add('anim-arrow');
+    //       blocks.classList.add('anim-open');
+    //     }
+    //   }, false);
+    // }
   }
 };
 </script>
