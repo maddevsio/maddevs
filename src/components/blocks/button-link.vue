@@ -3,7 +3,6 @@
     {{ this.data.text }}
   </a>
 </template>
-
 <script>
 
 export default {
