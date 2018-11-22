@@ -113,6 +113,60 @@
         margin: 0 auto;
     }
 }
+// ------------- Jobs ---------------- //
+.jobs {
+    padding: 60px 0;
+    background-image: linear-gradient(112deg, #f34f53, #fc944e);
+    h2 {
+        color: #fff;
+    }
+    &_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-top: 40px;
+        margin-left: -15px;
+        margin-right: -15px;
+        &-item {
+            max-width: 410px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.14);
+            background-color: #fff;
+            padding: 20px;
+            h4 {
+                line-height: 1.42;
+                font-size: 24px;
+                font-family: 'MADEEvolveSans-bold',
+                sans-serif;
+                color: #000;
+            }
+            p {
+                margin-top: 8px;
+                line-height: 1.33;
+                font-size: 18px;
+                font-family: 'MADEEvolveSans-regular',
+                sans-serif;
+                letter-spacing: 0.2px;
+                color: #000;
+                margin-bottom: 15px;
+            }
+            h6 {
+                font-family: 'MADEEvolveSans-regular',
+                sans-serif;
+                margin-top: auto;
+                margin-bottom: 0;
+                line-height: 1.5;
+                letter-spacing: 0.1px;
+                font-size: 14px;
+                color: #8e8e8e;
+            }
+        }
+    }
+}
 
 // ---------------- Team ------------------- //
 .team {
