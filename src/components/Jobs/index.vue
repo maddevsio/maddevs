@@ -1,6 +1,7 @@
 <template>
   <main class="main">
     <Banner />
+    <Advantages />
     <Employer />
     <Team />
     <Contacts />
@@ -9,6 +10,7 @@
 
 <script>
 import Banner from './Banner';
+import Advantages from './Advantages';
 import Employer from './Employer';
 import Team from './Team';
 import Contacts from '../Contacts';
@@ -23,6 +25,7 @@ export default {
   },
   components: {
     Banner,
+    Advantages,
     Employer,
     Team,
     Contacts
