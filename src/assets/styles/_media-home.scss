@@ -10,9 +10,9 @@
 @media only screen and (max-width: 1200px) {
     .banner {
         &-title {
-            margin-top: 150px;
+            margin-top: 148px;
             h1 {
-                font-size: 36px;
+                font-size: 42px;
             }
         }
     }
@@ -62,7 +62,7 @@
 @media only screen and (max-width: 1024px) {
     .banner {
         &-title {
-            margin-top: 170px;
+            margin-top: 168px;
             margin-right: 30px;
         }
         &-slack {
@@ -115,11 +115,18 @@
                 }
             }
             &_right-block {
+                position: relative;
                 .right-block_images-arrow {
                     display: none;
                 }
                 .right-block_desc {
                     margin-top: -12px;
+                    padding-left: 300px;
+                }
+                .right-block_images-list {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
                 }
             }
         }
@@ -487,8 +494,7 @@
                         height: 1px;
                         position: absolute;
                         left: -50px;
-                        top: 50%;
-                        transform: translateY(-50%);
+                        top: 21px;
                         background-color: #ec2227 !important;
                     }
                 }
@@ -729,7 +735,7 @@
         }
     }
     .how-it-work {
-        padding: 60px 0 0;
+        padding: 80px 0 0;
         &_wrap {
             &-content {
                 padding: 60px 0;
@@ -762,7 +768,7 @@
         }
     }
     .services {
-        padding-bottom: 20px;
+        padding-top: 80px;
         h2 {
             font-size: 28px;
         }
@@ -773,7 +779,7 @@
         }
     }
     .weUse {
-        padding: 60px 0;
+        padding: 80px 0;
     }
     .reviews {
         padding: 60px 0;
@@ -813,7 +819,8 @@
         padding: 60px 0;
     }
     .partners {
-        padding-top: 60px;
+        padding-top: 80px;
+        padding-bottom: 80px;
         &-wrap {
             &_item {
                 width: 100%;
@@ -825,7 +832,7 @@
         border-left-width: 0;
     }
     .open-source {
-        padding-bottom: 60px;
+        padding-bottom: 80px;
         &_wrap {
             padding: 60px 0;
             &_btn {
@@ -833,7 +840,7 @@
                 max-width: 280px;
             }
             &-projects {
-                margin-top: 60px;
+                margin-top: 80px;
                 &_list {
                     &-hidden_blocks {
                         flex-direction: column;
@@ -868,7 +875,7 @@
         }
     }
     .associations {
-        padding: 60px 0;
+        padding: 80px 0;
         &-wrap {
             h3 {
                 width: 200px;
@@ -878,7 +885,7 @@
             &_list {
                 flex-wrap: wrap;
                 justify-content: center;
-                margin-top: 40px;
+                margin-top: 50px;
                 &-item {
                     width: 50%;
                     text-align: center;
@@ -906,7 +913,7 @@
         }   
     }
     .speakers {
-        padding-bottom: 60px;
+        padding-bottom: 0;
         &_wrap {
             &-places {
                 &-item {
@@ -919,7 +926,8 @@
         padding: 10px 15px;
     }
     .press {
-        padding-top: 60px;
+        padding-top: 80px;
+        padding-bottom: 0;
         &-wrap {
             &_item {
                 width: 100%;
