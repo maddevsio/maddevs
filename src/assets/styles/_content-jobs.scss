@@ -129,7 +129,7 @@
 
 // -------------- Employer --------------- //
 .employer {
-    padding: 120px 0 60px;
+    padding: 120px 0 0;
     &_list {
         display: flex;
         flex-wrap: wrap;
@@ -179,8 +179,24 @@
         margin: 0 auto;
     }
 }
+// ------------- intern ------------- //
+.intern {
+    margin-top: 120px;
+    background-color: #e8e8e8;
+    padding: 60px 0;
+    p {
+        max-width: 710px;
+        font-size: 28px;
+        color: #000;
+        font-family: 'MADEEvolveSans-regular', sans-serif;
+        line-height: 1.5;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+}
 // ------------- Employees ------------- //
 .employees {
+    padding: 120px 0 0;
     p {
         max-width: 710px;
         font-size: 28px;
@@ -199,6 +215,8 @@
             width: 50%;
             outline: 1px solid #fff !important;
             img {
+                width: 100%;
+                height: auto;
                 display: block;
             }
         }
