@@ -3,10 +3,7 @@
     <div class="open-source_wrap">
       <div class="container">
         <h2 class="sec-title">{{$t('Besides the main work, our teams contribute to open source')}}</h2>
-        <a class="open-source_wrap_btn" href="https://github.com/maddevsio" target="_blank">
-          <img src="../../assets/img/Home/svg/openSource/github-light.svg" alt="Github">
-          Mad Devs on GitHub
-        </a>
+        <ButtonLinkBlack :data="this.button" />
       </div>
     </div>
     <div class="open-source_wrap-projects">
@@ -94,6 +91,7 @@
 
 <script>
 import axios from 'axios';
+import ButtonLinkBlack from '../blocks/button-link--black';
 
 export default {
   name: 'open-source',
@@ -107,8 +105,16 @@ export default {
         forks: 0,
         updated_at: 0,
         tasks: 0
+      },
+      button: {
+        link: 'https://github.com/maddevsio',
+        text: 'Mad Devs on GitHub',
+        icon: 'github-light.svg'
       }
     };
+  },
+  components: {
+    ButtonLinkBlack
   },
   methods: {
     getGithubData() {

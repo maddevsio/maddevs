@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       button: {
-        link: '#',
+        link: 'https://github.com/maddevsio',
         text: 'Mad Devs on GitHub',
         icon: 'github-light.svg'
       }
