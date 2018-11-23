@@ -61,6 +61,72 @@
     }
 }
 
+// --------------- Growth -------------- //
+.growth {
+    padding: 120px 0 0;
+    &_content {
+        display: flex;
+        &-info {
+            width: 50%;
+            h2 {
+                text-align: left;
+            }
+            ul {
+                margin: 20px 0;
+                padding-left: 60px;
+                li {
+                    font-size: 20px;
+                    line-height: 1.2;
+                    font-family: 'MADEEvolveSans-regular', sans-serif;
+                    color: #000;
+                    list-style: none;
+                    padding: 8px 0;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        width: 42px;
+                        height: 1px;
+                        position: absolute;
+                        left: -60px;
+                        top: 20px;
+                        background-color: #ec2227 !important;
+                    }
+                }
+            }
+            a {
+                color: #ec2227;
+                line-height: 1.85;
+                letter-spacing: 0.2px;
+                font-family: 'MADEEvolveSans-bold', sans-serif;
+                font-weight: bold;
+                text-decoration: none;
+                margin-top: 30px;
+                img {
+                    width: 10px;
+                    height: 10px;
+                    display: inline-block;
+                    margin-left: 2px;
+                }
+            }
+        }
+        &-carousel {
+            width: 50%;
+            max-height: 410px;
+            height: auto;
+            &_slide {
+                width: 100%;
+                height: 100%;
+                display: block !important;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
 // -------------- Employer --------------- //
 .employer {
     padding: 120px 0 60px;

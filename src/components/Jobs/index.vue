@@ -2,6 +2,7 @@
   <main class="main">
     <Banner />
     <Advantages />
+    <Growth />
     <Employer />
     <Jobs />
     <Team />
@@ -12,6 +13,7 @@
 <script>
 import Banner from './Banner';
 import Advantages from './Advantages';
+import Growth from './Growth';
 import Employer from './Employer';
 import Jobs from './Jobs';
 import Team from './Team';
@@ -28,6 +30,7 @@ export default {
   components: {
     Banner,
     Advantages,
+    Growth,
     Employer,
     Jobs,
     Team,
