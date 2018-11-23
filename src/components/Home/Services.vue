@@ -9,27 +9,27 @@
         <div class="services-wrap_right-block">
             <div class="right-block_images">
                 <div id="service-arrow-anim" class="right-block_images-arrow">
-                    <img src="../../assets/img/svg/services/arrow_graph.svg" alt="Arrow graph">
+                    <img src="../../assets/img/Home/svg/services/arrow_graph.svg" alt="Arrow graph">
                 </div>
                 <div id="service-block-anim" class="right-block_images-list">
                     <div class="right-block_images-list-item">
-                      <img src="../../assets/img/svg/services/block-1.svg" alt="Block 1">
+                      <img src="../../assets/img/Home/svg/services/block-1.svg" alt="Block 1">
                       <div class="block-line"></div>
                     </div>
                     <div class="right-block_images-list-item">
-                      <img src="../../assets/img/svg/services/block-2.svg" alt="Block 2">
+                      <img src="../../assets/img/Home/svg/services/block-2.svg" alt="Block 2">
                       <div class="block-line"></div>
                     </div>
                     <div class="right-block_images-list-item">
-                      <img src="../../assets/img/svg/services/block-3.svg" alt="Block 3">
+                      <img src="../../assets/img/Home/svg/services/block-3.svg" alt="Block 3">
                       <div class="block-line"></div>
                     </div>
                     <div class="right-block_images-list-item">
-                      <img src="../../assets/img/svg/services/block-4.svg" alt="Block 4">
+                      <img src="../../assets/img/Home/svg/services/block-4.svg" alt="Block 4">
                       <div class="block-line"></div>
                     </div>
                     <div class="right-block_images-list-item">
-                      <img src="../../assets/img/svg/services/block-5.svg" alt="Block 5">
+                      <img src="../../assets/img/Home/svg/services/block-5.svg" alt="Block 5">
                       <div class="block-line"></div>
                     </div>
                 </div>
