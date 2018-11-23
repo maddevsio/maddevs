@@ -179,8 +179,34 @@
         margin: 0 auto;
     }
 }
+// ------------- Employees ------------- //
+.employees {
+    p {
+        max-width: 710px;
+        font-size: 28px;
+        color: #000;
+        font-family: 'MADEEvolveSans-regular',
+        sans-serif;
+        line-height: 1.5;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+    &_content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        &-item {
+            width: 50%;
+            outline: 1px solid #fff !important;
+            img {
+                display: block;
+            }
+        }
+    }
+}
 // ------------- Jobs ---------------- //
 .jobs {
+    margin-top: 120px;
     padding: 60px 0;
     background-image: linear-gradient(112deg, #f34f53, #fc944e);
     h2 {

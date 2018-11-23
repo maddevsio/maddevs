@@ -43,7 +43,7 @@ import Slick from 'vue-slick';
 import 'slick-carousel/slick/slick.css';
 
 export default {
-  name: 'Banner',
+  name: 'Growth',
   data() {
     return {
       lang: i18n.language,
