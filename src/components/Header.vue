@@ -3,18 +3,18 @@
     <div class="container">
       <div class="header-wrap">
         <a href="/">
-          <img src="../assets/img/svg/logo.svg" alt="Logotype" class="header-logo">
+          <img src="../assets/img/common/logo.svg" alt="Logotype" class="header-logo">
         </a>
         <div class="header-wrap_right-block">
           <div class="header_soc-icons">
             <a href="https://github.com/maddevsio" target="_blank">
-              <img src="../assets/img/svg/header/git-header.svg" alt="Github">
+              <img src="../assets/img/common/header/git-header.svg" alt="Github">
             </a>
             <a href="https://ru.linkedin.com/company/mad-devs" target="_blank">
-              <img src="../assets/img/svg/header/in-header.svg" alt="LinkedIn">
+              <img src="../assets/img/common/header/in-header.svg" alt="LinkedIn">
             </a>
             <a href="https://www.facebook.com/maddevsio" target="_blank">
-              <img src="../assets/img/svg/header/fb-header.svg" alt="Facebook">
+              <img src="../assets/img/common/header/fb-header.svg" alt="Facebook">
             </a>
           </div>
           <button class="mobile-menu_btn" v-on:click.prevent="switchLanguage">
