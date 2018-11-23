@@ -4,6 +4,7 @@
     <Advantages />
     <Growth />
     <Employer />
+    <Intern />
     <Employees />
     <Jobs />
     <Team />
@@ -16,6 +17,7 @@ import Banner from './Banner';
 import Advantages from './Advantages';
 import Growth from './Growth';
 import Employer from './Employer';
+import Intern from './Intern';
 import Employees from './Employees';
 import Jobs from './Jobs';
 import Team from './Team';
@@ -34,6 +36,7 @@ export default {
     Advantages,
     Growth,
     Employer,
+    Intern,
     Employees,
     Jobs,
     Team,
