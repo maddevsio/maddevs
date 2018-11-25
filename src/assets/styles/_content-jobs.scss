@@ -47,6 +47,7 @@
         align-items: flex-start;
         flex-wrap: wrap;
         margin-top: 40px;
+        margin-bottom: -40px;
         &-item {
             max-width: 200px;
             display: flex;
@@ -103,13 +104,14 @@
                 }
             }
             a {
+                display: block;
+                text-align: left;
                 color: #ec2227;
                 line-height: 1.85;
                 letter-spacing: 0.2px;
                 font-family: 'MADEEvolveSans-bold', sans-serif;
                 font-weight: bold;
                 text-decoration: none;
-                margin-top: 30px;
                 img {
                     width: 10px;
                     height: 10px;
