@@ -117,7 +117,9 @@
     }
     .employees {
         position: relative;
-        &_content {
+        &_content-slider {
+            display: block !important;
+            margin-top: 40px;
             .slick-arrow {
                 width: 28px;
                 height: 28px;
@@ -134,11 +136,18 @@
                 background-size: 14px;
                 background-repeat: no-repeat;
                 background-image: url(../img/Jobs/svg/Employees/arrow.svg);
+                cursor: pointer;
             }
             .slick-prev {
                 right: 80px;
                 transform: scale(-1);
             }
+            &-item {
+                outline: none;
+            }
+        }
+        &_content {
+            display: none;
         }
     }
     .jobs {
@@ -150,17 +159,25 @@
             }
         }
     }
+    .team {
+        padding: 80px 0;
+        p {
+            font-size: 24px;
+            margin: 30px 0;
+        }
+    }
 }
 @media only screen and (max-width: 480px) {
+    // Block buttom
+    .mnd-button-link {
+        width: 290px;
+        font-size: 24px;
+    }
     .jobs-banner {
         height: 580px;
         min-height: 580px;
         h1 {
             font-size: 34px;
-        }
-        a {
-            width: 290px;
-            font-size: 24px;
         }
     }
     .advantages {
@@ -190,6 +207,12 @@
     }
     .employer {
         padding-top: 80px;
+    }
+    .intern {
+        margin-top: 80px;
+        p {
+            font-size: 24px;
+        }
     }
     .employees {
         padding-top: 80px;

@@ -51,7 +51,9 @@ export default {
       slickOptions: {
         slidesToShow: 1,
         autoplay: false,
-        arrows: false
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>'
       },
     };
   },
