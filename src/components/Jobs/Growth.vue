@@ -12,7 +12,7 @@
                         <li>Team of 60+ specialists</li>
                         <li>5 of our interns turned into team leads and seniors</li>
                     </ul>
-                    <a href="#">
+                    <a href="https://blog.maddevs.io/vacancy/home" target="_blank">
                         View all open vacancies
                         <img src="../../assets/img/Jobs/svg/Growth/go-to.svg" alt="Go to">
                     </a>
