@@ -228,6 +228,9 @@
         display: flex;
         flex-wrap: wrap;
         margin-top: 40px;
+        .slick-arrow {
+            display: none;
+        }
         &-item {
             width: 50%;
             outline: 1px solid #fff !important;
