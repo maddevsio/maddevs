@@ -23,6 +23,8 @@
                   <h4>Free lunches</h4>
                   <p>We provide free lunches from the NambaFood cafes. Besides, we always have tea, coffee, cookies</p>
               </div>
+              <!-- fake -->
+              <div class="employer_list-item__fake"></div>
               <div class="employer_list-item">
                   <img src="../../assets/img/Jobs/svg/Employer/frendly.svg" alt="Frendly">
                   <h4>Friendly environment</h4>
@@ -33,6 +35,8 @@
                   <h4>Developers female-to-male rate is 20%</h4>
                   <p>20% of our team are girls, and they are not only the beautiful part but they are top-nocht specialists as well.</p>
               </div>
+              <!-- fake -->
+              <div class="employer_list-item__fake"></div>
           </div>
           <ButtonLink :data="this.button" />
       </div>
