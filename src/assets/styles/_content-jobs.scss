@@ -161,6 +161,12 @@
             border-radius: 5px;
             box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.14);
             margin: 20px;
+            &__fake {
+                width: 300px;
+                min-width: 300px;
+                max-height: 320px;
+                margin: 20px;
+            }
             img {
                 margin-bottom: 25px;
             }
