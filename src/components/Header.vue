@@ -7,9 +7,6 @@
         </a>
         <div class="header-wrap_right-block">
           <div class="header_soc-icons">
-            <a href="https://github.com/maddevsio" target="_blank">
-              <img src="../assets/img/common/header/git-header.svg" alt="Github">
-            </a>
             <a href="https://ru.linkedin.com/company/mad-devs" target="_blank">
               <img src="../assets/img/common/header/in-header.svg" alt="LinkedIn">
             </a>
