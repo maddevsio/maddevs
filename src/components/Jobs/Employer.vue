@@ -52,7 +52,7 @@ export default {
     return {
       button: {
         text: 'Send Your CV',
-        link: '#'
+        link: 'mailto:hr@maddevs.io'
       }
     };
   },
