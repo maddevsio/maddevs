@@ -294,6 +294,11 @@
             box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.14);
             background-color: #fff;
             padding: 20px;
+            transition: all .2s ease;
+            text-decoration: none;
+            &:hover {
+                box-shadow: 0 8px 16px 0 rgba(38, 36, 32, .2);
+            }
             h4 {
                 line-height: 1.42;
                 font-size: 24px;
