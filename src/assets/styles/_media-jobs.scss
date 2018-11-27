@@ -168,11 +168,6 @@
     }
 }
 @media only screen and (max-width: 480px) {
-    // Block buttom
-    .mnd-button-link {
-        width: 290px;
-        font-size: 24px;
-    }
     .employees_content-slider .slick-prev {
         right: 60px;
         bottom: 20px;
@@ -182,7 +177,7 @@
         bottom: 20px;
     }
     .jobs-banner {
-        height: 580px;
+        height: auto;
         min-height: 580px;
         h1 {
             font-size: 34px;

@@ -112,7 +112,7 @@
                 line-height: 1.85;
                 letter-spacing: 0.2px;
                 font-family: 'MADEEvolveSans-bold', sans-serif;
-                font-weight: bold;
+                font-weight: normal;
                 text-decoration: none;
                 img {
                     width: 10px;
@@ -144,6 +144,10 @@
                 background-repeat: no-repeat;
                 background-image: url(../img/Jobs/svg/Employees/arrow.svg);
                 cursor: pointer;
+                transition: all .2s ease;
+                &:hover {
+                    box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.30);
+                }
             }
             .slick-prev {
                 right: 80px;
@@ -258,6 +262,10 @@
         }
         .slick-arrow {
             display: none;
+            transition: all .2s ease;
+            &:hover {
+              box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.30);
+            }
         }
         &-item {
             width: 50%;
