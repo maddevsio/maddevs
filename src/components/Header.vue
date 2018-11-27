@@ -42,10 +42,12 @@ export default {
     switchLanguage(event) {
       event.preventDefault();
       const curLang = i18next.language === 'en' ? 'ru' : 'en';
+      const route = Object.assign({}, this.$route);
       i18next.changeLanguage(curLang, () => {
         this.lang = curLang;
       });
-      history.pushState('', curLang, curLang);
+      route.params.lang = curLang;
+      this.$router.push(route);
       this.$emit('EventLanguage', this.lang);
     },
   }
