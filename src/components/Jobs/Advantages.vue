@@ -1,32 +1,32 @@
 <template>
    <section id="advantages" class="advantages">
          <div class="container">
-            <h2 class="sec-title">Our advantages</h2>
-            <p>Mad Devs is one of the largest companies in Central Asia. We are rapidly growing and developing. We offer:</p>
+            <h2 class="sec-title">{{ $t('advantages-title') }}</h2>
+            <p>{{ $t('advantages-desc') }}</p>
             <div class="advantages_list">
                <div class="advantages_list-item">
                   <img src="../../assets/img/Jobs/svg/Advantages/cash.svg" alt="Cash">
-                  <h4>Competitive<br>salary</h4>
+                  <h4>{{ $t('advantages-subtitle1') }}</h4>
                </div>
                <div class="advantages_list-item">
                   <img src="../../assets/img/Jobs/svg/Advantages/rocket.svg" alt="Rocket">
-                  <h4>Projects with AI/<br>ML/Blockchain</h4>
+                  <h4>{{ $t('advantages-subtitle2') }}</h4>
                </div>
                <div class="advantages_list-item">
                   <img src="../../assets/img/Jobs/svg/Advantages/pet.svg" alt="Pet">
-                  <h4>69+ open source<br>projects</h4>
+                  <h4>{{ $t('advantages-subtitle3') }}</h4>
                </div>
                <div class="advantages_list-item">
                   <img src="../../assets/img/Jobs/svg/Advantages/remote.svg" alt="Remote">
-                  <h4>Remote<br>work</h4>
+                  <h4>{{ $t('advantages-subtitle4') }}</h4>
                </div>
                <div class="advantages_list-item">
                   <img src="../../assets/img/Jobs/svg/Advantages/commu.svg" alt="Communication">
-                  <h4>Well-established<br>working processes </h4>
+                  <h4>{{ $t('advantages-subtitle5') }}</h4>
                </div>
                <div class="advantages_list-item">
                   <img src="../../assets/img/Jobs/svg/Advantages/schedule.svg" alt="Schedule">
-                  <h4>Flexible<br>schedule</h4>
+                  <h4>{{ $t('advantages-subtitle6') }}</h4>
                </div>
             </div>
          </div>

@@ -1,8 +1,8 @@
 <template>
   <section id="employees" class="employees">
       <div class="container">
-          <h2 class="sec-title">We care about employees</h2>
-          <p>In our team we have flat management system and pay special attention to each employee. We support the initiatives and help to grow through mentorship.</p>
+          <h2 class="sec-title">{{ $t('employees-title') }}</h2>
+          <p>{{ $t('employees-desc') }}</p>
           <div class="employees_content">
               <div @click.prevent="nextSlide" class="employees_content-item">
                   <img src="../../assets/img/Jobs/jpg/Employees/employees-1.jpg" srcset="

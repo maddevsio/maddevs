@@ -1,7 +1,7 @@
 <template>
     <section id="jobs" class="jobs">
         <div class="container">
-            <h2 class="sec-title">Now we are looking for</h2>
+            <h2 class="sec-title">{{ $t('jobs-title') }}</h2>
             <div class="jobs_list">
                 <a href="https://blog.maddevs.io/middle-senior-backend-developer-e5bf0d97c037" class="jobs_list-item" target="_blank">
                     <h4>Middle/Senior Backend Developer</h4>

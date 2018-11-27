@@ -1,7 +1,7 @@
 <template>
   <section id="jobs-banner" class="jobs-banner">
     <div class="container jobs-banner_wrap">
-      <h1>Our team always need experienced and cool specialists as well as budding juniors and interns</h1>
+      <h1>{{ $t('jobs-banner-title') }}</h1>
       <ButtonLink :data="this.button" />
     </div>
   </section>
