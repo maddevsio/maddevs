@@ -17,3 +17,10 @@
         background-color: rgb(202, 34, 40);
     }
 }
+
+@media only screen and (max-width: 480px) {
+  .mnd-button-link {
+    width: 288px;
+    height: 70px;
+  }
+}
