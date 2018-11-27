@@ -1,9 +1,9 @@
 <template>
   <section id="team" class="team">
       <div class="container">
-          <h2 class="sec-title">Do you want to be a part of our team? </h2>
+          <h2 class="sec-title">{{ $t('team-title') }}</h2>
           <p>
-            If you just like us are passinoate about what you are doing and believe that working hard is the only way to get better and gain relevant experince, write to
+            {{ $t('team-desc') }}
             <a href="mailto:hr@maddevs.io">hr@maddevs.io</a>
           </p>
           <ButtonLink :data="this.button" />

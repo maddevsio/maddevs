@@ -3,17 +3,17 @@
         <div class="container">
             <div class="growth_content">
                 <div class="growth_content-info">
-                    <h2 class="sec-title">We strive for the growth</h2>
+                    <h2 class="sec-title">{{ $t('growth-title') }}</h2>
                     <ul>
-                        <li>Support in development and training</li>
-                        <li>Peer mentorship</li>
-                        <li>Speak at big international conferences 6+ times per year</li>
-                        <li>Office library with 150+ books</li>
-                        <li>Team of 60+ specialists</li>
-                        <li>5 of our interns turned into team leads and seniors</li>
+                        <li @mouseover="hoverActiveSlide(0)">{{ $t('growth-listitem1') }}</li>
+                        <li @mouseover="hoverActiveSlide(1)">{{ $t('growth-listitem2') }}</li>
+                        <li @mouseover="hoverActiveSlide(2)">{{ $t('growth-listitem3') }}</li>
+                        <li @mouseover="hoverActiveSlide(3)">{{ $t('growth-listitem4') }}</li>
+                        <li @mouseover="hoverActiveSlide(4)">{{ $t('growth-listitem5') }}</li>
+                        <li @mouseover="hoverActiveSlide(5)">{{ $t('growth-listitem6') }}</li>
                     </ul>
                     <a href="https://blog.maddevs.io/vacancy/home" target="_blank">
-                        View all open vacancies
+                        {{ $t('growth-all-vacancies') }}
                         <img src="../../assets/img/Jobs/svg/Growth/go-to.svg" alt="Go to">
                     </a>
                 </div>
@@ -22,6 +22,15 @@
                     ref="slick"
                     @beforeChange="handleBeforeChange"
                     :options="slickOptions">
+                    <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
+                        <img src="../../assets/img/Jobs/jpg/Growth/growth-slide@2x.jpg" alt="Our achievements">
+                    </div>
+                    <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
+                        <img src="../../assets/img/Jobs/jpg/Growth/growth-slide@2x.jpg" alt="Our achievements">
+                    </div>
+                    <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
+                        <img src="../../assets/img/Jobs/jpg/Growth/growth-slide@2x.jpg" alt="Our achievements">
+                    </div>
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
                         <img src="../../assets/img/Jobs/jpg/Growth/growth-slide@2x.jpg" alt="Our achievements">
                     </div>
@@ -68,6 +77,10 @@ export default {
       this.$refs.slick.next();
     },
     setAtiveSlide(index) {
+      this.activeSlide = index;
+      this.$refs.slick.goTo(index);
+    },
+    hoverActiveSlide(index) {
       this.activeSlide = index;
       this.$refs.slick.goTo(index);
     },
