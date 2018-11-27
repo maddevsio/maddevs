@@ -101,7 +101,6 @@
         }
     }
     .services {
-        padding-bottom: 0;
         &-wrap {
             flex-direction: column;
             &_left-block {
@@ -474,6 +473,7 @@
         }
     }
     .services {
+        padding-bottom: 0;
         &-wrap {
             .services-wrap_left-block p {
                 font-family: 'MADEEvolveSans-regular', sans-serif;
