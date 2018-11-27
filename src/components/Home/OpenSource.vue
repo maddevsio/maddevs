@@ -3,7 +3,7 @@
     <div class="open-source_wrap">
       <div class="container">
         <h2 class="sec-title">{{$t('Besides the main work, our teams contribute to open source')}}</h2>
-        <ButtonLinkBlack :data="this.button" />
+        <ButtonLinkBlack :data="{text: $t('btn-link--black'), icon: 'github-light.svg', link: 'https://github.com/maddevsio'}" />
       </div>
     </div>
     <div class="open-source_wrap-projects">
@@ -106,11 +106,6 @@ export default {
         updated_at: 0,
         tasks: 0
       },
-      button: {
-        link: 'https://github.com/maddevsio',
-        text: 'Mad Devs on GitHub',
-        icon: 'github-light.svg'
-      }
     };
   },
   components: {
