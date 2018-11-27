@@ -6,7 +6,7 @@
             {{ $t('team-desc') }}
             <a href="mailto:hr@maddevs.io">hr@maddevs.io</a>
           </p>
-          <ButtonLink :data="this.button" />
+          <ButtonLink :data="{text: $t('btn-link--red'), link: 'mailto:hr@maddevs.io'}" />
       </div>
   </section>
 </template>
@@ -16,14 +16,6 @@ import ButtonLink from '../blocks/button-link';
 
 export default {
   name: 'Team',
-  data() {
-    return {
-      button: {
-        text: 'Send Your CV',
-        link: 'mailto:hr@maddevs.io'
-      }
-    };
-  },
   components: {
     ButtonLink
   }
