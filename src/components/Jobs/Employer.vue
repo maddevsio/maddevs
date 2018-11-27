@@ -38,7 +38,7 @@
               <!-- fake -->
               <div class="employer_list-item__fake"></div>
           </div>
-          <ButtonLink :data="this.button" />
+          <ButtonLink :data="{text: $t('btn-link--red'), link: 'mailto:hr@maddevs.io'}" />
       </div>
   </section>
 </template>
@@ -48,14 +48,6 @@ import ButtonLink from '../blocks/button-link';
 
 export default {
   name: 'Employer',
-  data() {
-    return {
-      button: {
-        text: 'Send Your CV',
-        link: 'mailto:hr@maddevs.io'
-      }
-    };
-  },
   components: {
     ButtonLink
   }
