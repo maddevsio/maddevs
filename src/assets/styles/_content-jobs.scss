@@ -90,7 +90,7 @@
                     font-size: 20px;
                     line-height: 1.2;
                     font-family: 'MADEEvolveSans-regular', sans-serif;
-                    color: #000;
+                    color: #656565;
                     list-style: none;
                     padding: 8px 0;
                     position: relative;
@@ -103,6 +103,9 @@
                         top: 20px;
                         background-color: #ec2227 !important;
                     }
+                }
+                .growth-slide_active {
+                    color: #000;
                 }
             }
             a {
