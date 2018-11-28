@@ -59,7 +59,7 @@
                 height: 62px;
             }
             h4 {
-                font-size: 24px;
+                font-size: 22px;
                 font-family: 'MADEEvolveSans-bold',
                 sans-serif;
                 line-height: 1.33;
@@ -77,7 +77,7 @@
     padding: 120px 0 0;
     &_content {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         &-info {
             width: 50%;
             h2 {
@@ -127,6 +127,7 @@
             max-height: 410px;
             height: auto;
             position: relative;
+            margin-left: 15px;
             .slick-arrow {
                 width: 28px;
                 height: 28px;
