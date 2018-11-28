@@ -5,12 +5,12 @@
                 <div class="growth_content-info">
                     <h2 class="sec-title">{{ $t('growth-title') }}</h2>
                     <ul>
-                        <li @mouseover="hoverActiveSlide(0)">{{ $t('growth-listitem1') }}</li>
-                        <li @mouseover="hoverActiveSlide(1)">{{ $t('growth-listitem2') }}</li>
-                        <li @mouseover="hoverActiveSlide(2)">{{ $t('growth-listitem3') }}</li>
-                        <li @mouseover="hoverActiveSlide(3)">{{ $t('growth-listitem4') }}</li>
-                        <li @mouseover="hoverActiveSlide(4)">{{ $t('growth-listitem5') }}</li>
-                        <li @mouseover="hoverActiveSlide(5)">{{ $t('growth-listitem6') }}</li>
+                        <li :class="{ 'growth-slide_active': activeSlide == 0 }">{{ $t('growth-listitem1') }}</li>
+                        <li :class="{ 'growth-slide_active': activeSlide == 1 }">{{ $t('growth-listitem2') }}</li>
+                        <li :class="{ 'growth-slide_active': activeSlide == 2 }">{{ $t('growth-listitem3') }}</li>
+                        <li :class="{ 'growth-slide_active': activeSlide == 3 }">{{ $t('growth-listitem4') }}</li>
+                        <li :class="{ 'growth-slide_active': activeSlide == 4 }">{{ $t('growth-listitem5') }}</li>
+                        <li :class="{ 'growth-slide_active': activeSlide == 5 }">{{ $t('growth-listitem6') }}</li>
                     </ul>
                     <a href="https://blog.maddevs.io/vacancy/home" target="_blank">
                         {{ $t('growth-all-vacancies') }}
@@ -23,22 +23,22 @@
                     @beforeChange="handleBeforeChange"
                     :options="slickOptions">
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
-                        <img src="../../assets/img/Jobs/jpg/Growth/growth-slide@2x.jpg" alt="Our achievements">
+                        <img src="../../assets/img/Jobs/png/Growth/Support.png" srcset="../../assets/img/Jobs/png/Growth/Support@2x.png 2x" alt="Support in development and training">
                     </div>
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
-                        <img src="../../assets/img/Jobs/jpg/Growth/growth-slide@2x.jpg" alt="Our achievements">
+                        <img src="../../assets/img/Jobs/png/Growth/mentorship.png" srcset="../../assets/img/Jobs/png/Growth/mentorship@2x.png 2x" alt="Peer mentorship">
                     </div>
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
-                        <img src="../../assets/img/Jobs/jpg/Growth/growth-slide@2x.jpg" alt="Our achievements">
+                        <img src="../../assets/img/Jobs/jpg/Growth/growth-slide@2x.jpg" alt="Speak at big international conferences 6+ times per year">
                     </div>
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
-                        <img src="../../assets/img/Jobs/jpg/Growth/growth-slide@2x.jpg" alt="Our achievements">
+                        <img src="../../assets/img/Jobs/png/Growth/books.png" srcset="../../assets/img/Jobs/png/Growth/books@2x.png 2x" alt="Office library with 150+ books">
                     </div>
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
-                        <img src="../../assets/img/Jobs/jpg/Growth/growth-slide@2x.jpg" alt="Our achievements">
+                        <img src="../../assets/img/Jobs/png/Growth/Team.png" srcset="../../assets/img/Jobs/png/Growth/Team@2x.png 2x" alt="Team of 60+ specialists">
                     </div>
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
-                        <img src="../../assets/img/Jobs/jpg/Growth/growth-slide@2x.jpg" alt="Our achievements">
+                        <img src="../../assets/img/Jobs/png/Growth/5-interns.png" srcset="../../assets/img/Jobs/png/Growth/5-interns@2x.png 2x"  alt="5 of our interns turned into team leads and seniors">
                     </div>
                 </slick>
             </div>
