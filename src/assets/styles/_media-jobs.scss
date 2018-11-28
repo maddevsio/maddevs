@@ -16,7 +16,7 @@
         }
     }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1366px) {
     .employer {
         &_list-item {
             width: calc(33% - 40px);
@@ -34,6 +34,16 @@
                 width: 33%;
                 max-width: 33%;
             }
+        }
+    }
+    .employer {
+        &_list-item {
+            width: calc(50% - 40px);
+            min-width: calc(50% - 40px);
+            &__fake {
+                width: calc(50% - 40px);
+                min-width: calc(50% - 40px);
+            } 
         }
     }
     .jobs {
@@ -64,16 +74,6 @@
                 max-height: none;
                 margin-bottom: 30px;
             }
-        }
-    }
-    .employer {
-        &_list-item {
-            width: calc(50% - 40px);
-            min-width: calc(50% - 40px);
-            &__fake {
-                width: calc(50% - 40px);
-                min-width: calc(50% - 40px);
-            } 
         }
     }
 }
