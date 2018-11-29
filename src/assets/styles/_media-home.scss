@@ -101,7 +101,6 @@
         }
     }
     .services {
-        padding-bottom: 0;
         &-wrap {
             flex-direction: column;
             &_left-block {
@@ -474,6 +473,7 @@
         }
     }
     .services {
+        padding-bottom: 0;
         &-wrap {
             .services-wrap_left-block p {
                 font-family: 'MADEEvolveSans-regular', sans-serif;
@@ -979,6 +979,9 @@
             width: 30px;
             height: 30px;
         }
+    }
+    .sec-title {
+        font-size: 28px;
     }
 }
 @media only screen and (max-width: 420px) {

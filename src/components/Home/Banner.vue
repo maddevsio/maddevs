@@ -1,7 +1,7 @@
 <template>
   <section id="banner" class="banner">
     <div class="video-background">
-      <video autoplay muted loop id="BgVideo" poster="../../assets/img/jpg/posters/cover_video_1366x610.jpg">
+      <video autoplay muted loop id="BgVideo" poster="../../assets/img/Home/jpg/posters/cover_video_1366x610.jpg">
         <source src="../../assets/media/Mad Devs Working Process.mp4" type="video/mp4">
         <source src="../../assets/media/videoplayback.webm" type='video/webm; codecs="vp8, vorbis"' />
       </video>
@@ -56,7 +56,7 @@
           </div>
           <div class="banner-slack_content">
             <div class="banner-slack_content-title">
-              <img src="../../assets/img/svg/slack.svg" alt="Slack">
+              <img src="../../assets/img/Home/svg/slack.svg" alt="Slack">
               <h5>#{{ $t('What problem does it solve?') }}</h5>
               <button class="open-slack-menu">
                 <span></span>
@@ -66,7 +66,7 @@
             <!-- Item -->
             <div class="banner-slack_content-item">
               <div class="banner-slack_content-item_group">
-                <img src="../../assets/img/svg/openSource/avatar-md.svg" alt="Group icon">
+                <img src="../../assets/img/Home/svg/openSource/avatar-md.svg" alt="Group icon">
                 <h5>Mad Devs</h5>
                 <div class="timestemp">
                   9:25 AM
@@ -77,31 +77,31 @@
               </p>
               <div class="banner-slack_content-item-status">
                 <div class="banner-slack_content-item-status-item" @click="slack++">
-                  <img src="../../assets/img/png/banner/briefcase_1f4bc.png" alt="">
+                  <img src="../../assets/img/Home/png/banner/briefcase_1f4bc.png" alt="">
                   {{ slack > 99 ? '99+' : slack}}
                 </div>
                 <div class="banner-slack_content-item-status-item" @click="slack1++">
-                  <img src="../../assets/img/png/banner/chart-with-upwards-trend_1f4c8.png" alt="">
+                  <img src="../../assets/img/Home/png/banner/chart-with-upwards-trend_1f4c8.png" alt="">
                   {{ slack1 > 99 ? '99+' : slack1 }}
                 </div>
                 <div class="banner-slack_content-item-status-item" @click="slack2++">
-                  <img src="../../assets/img/png/banner/money-bag_1f4b0.png" alt="">
+                  <img src="../../assets/img/Home/png/banner/money-bag_1f4b0.png" alt="">
                   {{ slack2 > 99 ? '99+' : slack2 }}
                 </div>
                 <div class="banner-slack_content-item-status-item" @click="slack3++">
-                  <img src="../../assets/img/png/banner/banknote-with-dollar-sign_1f4b5.png" alt="">
+                  <img src="../../assets/img/Home/png/banner/banknote-with-dollar-sign_1f4b5.png" alt="">
                   {{ slack3 > 99 ? '99+' : slack3 }}
                 </div>
                 <div class="banner-slack_content-item-status-item" @click="slack4++">
-                  <img src="../../assets/img/png/banner/public-address-loudspeaker_1f4e2.png" alt="">
+                  <img src="../../assets/img/Home/png/banner/public-address-loudspeaker_1f4e2.png" alt="">
                   {{ slack4 > 99 ? '99+' : slack4 }}
                 </div>
                 <div class="banner-slack_content-item-status-item" @click="slack5++">
-                  <img src="../../assets/img/png/banner/rocket_1f680.png" alt="">
+                  <img src="../../assets/img/Home/png/banner/rocket_1f680.png" alt="">
                   {{ slack5 > 99 ? '99+' : slack5}}
                 </div>
                 <div class="banner-slack_content-item-status-item" @click="slack6++">
-                  <img src="../../assets/img/png/banner/gem-stone_1f48e.png" alt="">
+                  <img src="../../assets/img/Home/png/banner/gem-stone_1f48e.png" alt="">
                   {{ slack6 > 99 ? '99+' : slack6 }}
                 </div>
               </div>
@@ -111,7 +111,7 @@
             <!-- Item -->
             <div class="banner-slack_content-item">
               <div class="banner-slack_content-item_group">
-                <img src="../../assets/img/svg/openSource/avatar-md.svg" alt="Group icon">
+                <img src="../../assets/img/Home/svg/openSource/avatar-md.svg" alt="Group icon">
                 <h5>Mad Devs</h5>
                 <div class="timestemp">
                   9:25 AM
@@ -123,27 +123,27 @@
               </p>
               <div class="banner-slack_content-item-status">
                 <div class="banner-slack_content-item-status-item" @click="slack7++">
-                  <img src="../../assets/img/png/banner/i-love-you-hand-sign_1f91f.png" alt="">
+                  <img src="../../assets/img/Home/png/banner/i-love-you-hand-sign_1f91f.png" alt="">
                   {{slack7 > 99 ? '99+' : slack7}}
                 </div>
                 <div class="banner-slack_content-item-status-item" @click="slack8++">
-                  <img src="../../assets/img/png/banner/ok-hand-sign_1f44c.png" alt="">
+                  <img src="../../assets/img/Home/png/banner/ok-hand-sign_1f44c.png" alt="">
                   {{ slack8 > 99 ? '99+' : slack8 }}
                 </div>
                 <div class="banner-slack_content-item-status-item" @click="slack9++">
-                  <img src="../../assets/img/png/banner/flexed-biceps_1f4aa.png" alt="">
+                  <img src="../../assets/img/Home/png/banner/flexed-biceps_1f4aa.png" alt="">
                   {{ slack9 > 99 ? '99+' : slack9 }}
                 </div>
                 <div class="banner-slack_content-item-status-item" @click="slack10++">
-                  <img src="../../assets/img/png/banner/robot-face_1f916.png" alt="">
+                  <img src="../../assets/img/Home/png/banner/robot-face_1f916.png" alt="">
                   {{ slack10 > 99 ? '99+' : slack10 }}
                 </div>
                 <div class="banner-slack_content-item-status-item" @click="slack11++">
-                  <img src="../../assets/img/png/banner/nerd-face_1f913.png" alt="">
+                  <img src="../../assets/img/Home/png/banner/nerd-face_1f913.png" alt="">
                   {{ slack11 > 99 ? '99+' : slack11 }}
                 </div>
                 <div class="banner-slack_content-item-status-item" @click="slack12++">
-                  <img src="../../assets/img/png/banner/first-place-medal_1f947.png" alt="">
+                  <img src="../../assets/img/Home/png/banner/first-place-medal_1f947.png" alt="">
                   {{ slack12 > 99 ? '99+' : slack12 }}
                 </div>
               </div>
@@ -154,7 +154,7 @@
       </div>
     </div>
     <button id="go-down" v-scroll-to="'#how-it-work'">
-      <img src="../../assets/img/svg/down.svg" alt="Go down">
+      <img src="../../assets/img/Home/svg/down.svg" alt="Go down">
     </button>
   </section>
 </template>

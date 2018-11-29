@@ -9,27 +9,27 @@
         <div class="services-wrap_right-block">
             <div class="right-block_images">
                 <div id="service-arrow-anim" class="right-block_images-arrow">
-                    <img src="../../assets/img/svg/services/arrow_graph.svg" alt="Arrow graph">
+                    <img src="../../assets/img/Home/svg/services/arrow_graph.svg" alt="Arrow graph">
                 </div>
                 <div id="service-block-anim" class="right-block_images-list">
                     <div class="right-block_images-list-item">
-                      <img src="../../assets/img/svg/services/block-1.svg" alt="Block 1">
+                      <img src="../../assets/img/Home/svg/services/block-1.svg" alt="Block 1">
                       <div class="block-line"></div>
                     </div>
                     <div class="right-block_images-list-item">
-                      <img src="../../assets/img/svg/services/block-2.svg" alt="Block 2">
+                      <img src="../../assets/img/Home/svg/services/block-2.svg" alt="Block 2">
                       <div class="block-line"></div>
                     </div>
                     <div class="right-block_images-list-item">
-                      <img src="../../assets/img/svg/services/block-3.svg" alt="Block 3">
+                      <img src="../../assets/img/Home/svg/services/block-3.svg" alt="Block 3">
                       <div class="block-line"></div>
                     </div>
                     <div class="right-block_images-list-item">
-                      <img src="../../assets/img/svg/services/block-4.svg" alt="Block 4">
+                      <img src="../../assets/img/Home/svg/services/block-4.svg" alt="Block 4">
                       <div class="block-line"></div>
                     </div>
                     <div class="right-block_images-list-item">
-                      <img src="../../assets/img/svg/services/block-5.svg" alt="Block 5">
+                      <img src="../../assets/img/Home/svg/services/block-5.svg" alt="Block 5">
                       <div class="block-line"></div>
                     </div>
                 </div>
@@ -53,13 +53,21 @@ export default {
   mounted() {
     const blocks = document.getElementById('service-block-anim');
     const arrow = document.getElementById('service-arrow-anim');
-    window.addEventListener('scroll', function(event) {
-      var top = this.scrollY;
-      if (top + 700 >= blocks.offsetTop) {
-        arrow.classList.add('anim-arrow');
-        blocks.classList.add('anim-open');
-      }
-    }, false);
+    const ua = window.navigator.userAgent;
+    const isIE = /MSIE|Trident/.test(ua);
+    if (isIE) {
+      arrow.classList.add('anim-arrow');
+      blocks.classList.add('anim-open');
+      return false;
+    } else {
+      window.addEventListener('scroll', function(event) {
+        var top = this.scrollY;
+        if (top + 700 >= blocks.offsetTop) {
+          arrow.classList.add('anim-arrow');
+          blocks.classList.add('anim-open');
+        }
+      }, false);
+    }
   }
 };
 </script>

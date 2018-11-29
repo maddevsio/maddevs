@@ -15,7 +15,9 @@ p {
 }
 
 main {
+  position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 * {
@@ -26,7 +28,10 @@ main {
     padding: 0;
   }
 }
-
+.scrollDisabled {
+  position: fixed;
+  top: 0;
+}
 //----------- Base classes ------------ //
 .container {
   max-width: 1320px;

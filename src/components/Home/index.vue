@@ -30,7 +30,7 @@ import OpenSource from './OpenSource';
 import Speakers from './Speakers';
 import OurBlog from './OurBlog';
 import Press from './Press';
-import Contacts from './Contacts';
+import Contacts from '../Contacts';
 import Associations from './Associations';
 
 export default {

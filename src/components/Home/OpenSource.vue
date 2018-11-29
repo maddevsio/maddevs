@@ -3,10 +3,7 @@
     <div class="open-source_wrap">
       <div class="container">
         <h2 class="sec-title">{{$t('Besides the main work, our teams contribute to open source')}}</h2>
-        <a class="open-source_wrap_btn" href="https://github.com/maddevsio" target="_blank">
-          <img src="../../assets/img/svg/openSource/github-light.svg" alt="Github">
-          Mad Devs on GitHub
-        </a>
+        <ButtonLinkBlack :data="{text: $t('btn-link--black'), icon: 'github-light.svg', link: 'https://github.com/maddevsio'}" />
       </div>
     </div>
     <div class="open-source_wrap-projects">
@@ -14,7 +11,7 @@
       <div class="open-source_wrap-projects_list">
         <a href="https://gps.maddevs.io/ru/" target="_blank" class="open-source_wrap-projects_list-item op-proj-1">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/mlm.svg" alt="Mad Location Manager">
+            <img src="../../assets/img/Home/svg/openSource/mlm.svg" alt="Mad Location Manager">
           </div>
           <div class="projects-desc_wrap">
             <h4>Mad Location Manager</h4>
@@ -23,7 +20,7 @@
         </a>
         <a href="https://github.com/maddevsio/heimdall" target="_blank" class="open-source_wrap-projects_list-item op-proj-2">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/Heimdall.svg" class="op-img-sf" alt="Heimdall">
+            <img src="../../assets/img/Home/svg/openSource/Heimdall.svg" class="op-img-sf" alt="Heimdall">
           </div>
           <div class="projects-desc_wrap">
             <h4>Heimdall</h4>
@@ -32,7 +29,7 @@
         </a>
         <a href="https://tool.peklo.studio/" target="_blank" class="open-source_wrap-projects_list-item op-proj-3">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/PKL.svg" class="op-img-sf" alt="Sensor fusion">
+            <img src="../../assets/img/Home/svg/openSource/PKL.svg" class="op-img-sf" alt="Sensor fusion">
           </div>
           <div class="projects-desc_wrap">
             <h4>Peklo Tool</h4>
@@ -41,7 +38,7 @@
         </a>
         <a href="https://idmatch.co/" target="_blank" class="open-source_wrap-projects_list-item op-proj-4">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/svg/openSource/id.svg" class="op-img-opensourse" alt="IDmatch">
+            <img src="../../assets/img/Home/svg/openSource/id.svg" class="op-img-opensourse" alt="IDmatch">
           </div>
           <div class="projects-desc_wrap">
             <h4>IDmatch</h4>
@@ -51,7 +48,7 @@
         <div class="open-source_wrap-projects_list-hidden_blocks" :class="{ show_proj: showProj }">
           <a href="https://github.com/maddevsio/madpwa" target="_blank" class="open-source_wrap-projects_list-item op-proj-5">
             <div class="projects-img_wrap">
-              <img src="../../assets/img/svg/openSource/madpwa.svg" class="op-img-madpwa" alt="MadPwa">
+              <img src="../../assets/img/Home/svg/openSource/madpwa.svg" class="op-img-madpwa" alt="MadPwa">
             </div>
             <div class="projects-desc_wrap">
               <h4>MADPWA</h4>
@@ -60,7 +57,7 @@
           </a>
           <a href="https://github.com/maddevsio/ariadna" target="_blank" class="open-source_wrap-projects_list-item op-proj-6">
             <div class="projects-img_wrap">
-              <img src="../../assets/img/svg/openSource/ariadna.svg" alt="Mad Location Manager">
+              <img src="../../assets/img/Home/svg/openSource/ariadna.svg" alt="Mad Location Manager">
             </div>
             <div class="projects-desc_wrap">
               <h4>Ariadna</h4>
@@ -69,7 +66,7 @@
           </a>
           <a href="https://blog.maddevs.io/https-blog-maddevs-io-yourcast-tv-32915159be1c" target="_blank" class="open-source_wrap-projects_list-item op-proj-7">
             <div class="projects-img_wrap">
-              <img src="../../assets/img/svg/openSource/yourcast.svg" alt="MadPwa">
+              <img src="../../assets/img/Home/svg/openSource/yourcast.svg" alt="MadPwa">
             </div>
             <div class="projects-desc_wrap">
               <h4>Yourcast</h4>
@@ -82,11 +79,11 @@
     <div class="open-source_btn" @click="toggleAllProj()">
       <span v-if="!showProj">
         {{ $t('I want more open source projects') }}
-        <img src="../../assets/img/svg/openSource/right.svg" alt="Show more">
+        <img src="../../assets/img/Home/svg/openSource/right.svg" alt="Show more">
       </span>
       <a href="https://github.com/maddevsio" target="_blank" v-else>
         {{ $t('View all projects on GitHub') }}
-        <img src="../../assets/img/svg/openSource/right.svg" alt="Show more">
+        <img src="../../assets/img/Home/svg/openSource/right.svg" alt="Show more">
       </a>
     </div>
   </section>
@@ -94,6 +91,7 @@
 
 <script>
 import axios from 'axios';
+import ButtonLinkBlack from '../blocks/button-link--black';
 
 export default {
   name: 'open-source',
@@ -107,8 +105,11 @@ export default {
         forks: 0,
         updated_at: 0,
         tasks: 0
-      }
+      },
     };
+  },
+  components: {
+    ButtonLinkBlack
   },
   methods: {
     getGithubData() {
