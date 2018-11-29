@@ -29,7 +29,7 @@
                         <img src="../../assets/img/Jobs/png/Growth/mentorship.png" srcset="../../assets/img/Jobs/png/Growth/mentorship@2x.png 2x" alt="Peer mentorship">
                     </div>
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
-                        <img src="../../assets/img/Jobs/jpg/Growth/growth-slide@2x.jpg" alt="Speak at big international conferences 6+ times per year">
+                        <img src="../../assets/img/Jobs/png/Growth/Speak@2x.png" srcset="../../assets/img/Jobs/png/Growth/Speak@2x.png" alt="Speak at big international conferences 6+ times per year">
                     </div>
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
                         <img src="../../assets/img/Jobs/png/Growth/books.png" srcset="../../assets/img/Jobs/png/Growth/books@2x.png 2x" alt="Office library with 150+ books">
