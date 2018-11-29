@@ -8,7 +8,7 @@
         <div class="header-wrap_right-block">
           <nav class="header_links">
             <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank">{{ $t('header-link_blog') }}</a>
-            <a :href="this.links.careers">{{ $t('header-link_careers') }}</a>
+            <router-link :to="`/${this.lang}/jobs`">{{ $t('header-link_careers') }}</router-link>
           </nav>
           <div class="header_soc-icons">
             <a href="https://ru.linkedin.com/company/mad-devs" target="_blank">
@@ -34,9 +34,6 @@ export default {
   data() {
     return {
       lang: 'en',
-      links: {
-        careers: 'jobs',
-      }
     };
   },
   created() {
