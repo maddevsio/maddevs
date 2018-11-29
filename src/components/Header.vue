@@ -6,6 +6,10 @@
           <img src="../assets/img/common/logo.svg" alt="Logotype" class="header-logo">
         </a>
         <div class="header-wrap_right-block">
+          <nav class="header_links">
+            <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank">{{ $t('header-link_blog') }}</a>
+            <a :href="this.links.careers">{{ $t('header-link_careers') }}</a>
+          </nav>
           <div class="header_soc-icons">
             <a href="https://ru.linkedin.com/company/mad-devs" target="_blank">
               <img src="../assets/img/common/header/in-header.svg" alt="LinkedIn">
@@ -29,7 +33,10 @@ export default {
   name: 'main-header',
   data() {
     return {
-      lang: 'en'
+      lang: 'en',
+      links: {
+        careers: 'jobs',
+      }
     };
   },
   created() {

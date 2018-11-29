@@ -3,6 +3,28 @@
   position: absolute;
   z-index: 2;
   padding-top: 30px;
+  &_links {
+    margin-right: 24px;
+    position: relative;
+    a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 24px;
+      font-size: 16px;
+      font-family: 'MADEEvolveSans-regular',
+      sans-serif;
+    }
+    &::before {
+      content: '';
+      width: 1px;
+      height: 25px;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: -5px;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
   &-wrap {
     display: flex;
     align-items: flex-start;
