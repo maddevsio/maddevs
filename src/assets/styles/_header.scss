@@ -164,11 +164,17 @@
     }
   }
   .header-wrap_right-block {
-    display: none;
-  }
-  .header .mobile-menu_btn {
-    font-size: 12px;
-    padding: 0;
+    margin-left: auto;
+    padding: 25px;
+    .header_links {
+      display: none;
+    }
+    .header_soc-icons {
+      display: none;
+    }
+    .mobile-menu_btn {
+      font-size: 14px;
+    }
   }
   .header-wrap_right-block .header_soc-icons {
     height: 18px;
@@ -180,9 +186,6 @@
         height: 18px;
       }
     }
-  }
-  .header-wrap_right-block {
-    padding: 12px 0;
   }
   .header-mobile-menu_open {
     display: block;

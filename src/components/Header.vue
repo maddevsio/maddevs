@@ -33,7 +33,7 @@
           <img src="../assets/img/common/header/close-menu.svg" alt="Close mobile menu">
         </button>
         <div class="header-mobile-menu_list">
-          <a href="/">Home</a>
+          <a href="/">{{ $t('header-link_home') }}</a>
           <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank">
             <span @click="toggleMoobileMenu()">
               {{ $t('header-link_blog') }}
