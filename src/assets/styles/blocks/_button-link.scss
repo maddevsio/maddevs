@@ -12,6 +12,8 @@
     font-family: 'MADEEvolveSans-medium', sans-serif;
     font-weight: normal;
     text-decoration: none;
+    padding: 20px 40px;
+    box-sizing: border-box;
     transition: all .2s ease;
     &:hover {
         background-color: rgb(202, 34, 40);
