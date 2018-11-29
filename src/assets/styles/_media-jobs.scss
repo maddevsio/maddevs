@@ -116,6 +116,9 @@
         &_list-item {
             width: 100%;
             max-width: 100%;
+            h4 {
+                min-height: auto;
+            }
         }
     }
     .employees {
