@@ -194,6 +194,10 @@
             border-radius: 5px;
             box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.14);
             margin: 20px;
+            transition: all .2s ease;
+            &:hover {
+                box-shadow: 0 4px 5px 0 rgba(38, 36, 32, 0.08);
+            }
             &__fake {
                 width: 300px;
                 min-width: 300px;
