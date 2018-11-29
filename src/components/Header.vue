@@ -22,6 +22,69 @@
             {{ lang === 'en' ? 'Русский' : 'English' }}
           </button>
         </div>
+        <button @click="toggleMoobileMenu()" class="header-mobile-menu_open">
+          <img src="../assets/img/common/header/open-menu.svg" alt="Close mobile menu">
+        </button>
+      </div>
+    </div>
+    <div v-if="this.mobileMenu" class="header-mobile-menu">
+      <div class="header-mobile-menu_wrap">
+        <button @click="toggleMoobileMenu()" class="header-mobile-menu_close">
+          <img src="../assets/img/common/header/close-menu.svg" alt="Close mobile menu">
+        </button>
+        <div class="header-mobile-menu_list">
+          <a href="/">Home</a>
+          <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank">
+            <span @click="toggleMoobileMenu()">
+              {{ $t('header-link_blog') }}
+            </span>
+          </a>
+          <router-link :to="`/${this.lang}/jobs`">
+            <span @click="toggleMoobileMenu()">
+              {{ $t('header-link_careers') }}
+            </span>
+          </router-link>
+        </div>
+        <div class="header-mobile-menu_address">
+          <p>{{$t('address-footer')}}</p>
+          <div class="header-mobile-menu_address-phonemail">
+            <a href="tel:+996 555 429 055">+996 555 761 939</a>
+            <a href="mailto:rock@maddevs.io">rock@maddevs.io</a>
+          </div>
+        </div>
+        <div class="header-mobile-menu_soc-icons">
+          <div class="social-icons_list-row">
+              <a href="https://github.com/maddevsio" target="_blank">
+                  <img src="../assets/img/common/header/git.svg" fill="red" alt="Github">
+              </a>
+              <a href="https://www.facebook.com/maddevsio" target="_blank">
+                  <img src="../assets/img/common/header/fb.svg" alt="Facebook">
+              </a>
+              <a href="https://www.instagram.com/maddevsio/" target="_blank">
+                  <img src="../assets/img/common/header/insta.svg" alt="Instagram">
+              </a>
+              <a href="https://blog.maddevs.io/" target="_blank">
+                  <img src="../assets/img/common/header/medium.svg" alt="Medium">
+              </a>
+          </div>
+          <div class="social-icons_list-row">
+              <a href="https://twitter.com/MadDevsIO" target="_blank">
+                  <img src="../assets/img/common/header/tw.svg" alt="Twitter">
+              </a>
+              <a href="https://www.slideshare.net/maddevs/presentations" target="_blank">
+                  <img src="../assets/img/common/header/slide.svg" alt="Slideshare">
+              </a>
+              <a href="https://www.youtube.com/playlist?list=PLsmdb5W8ytypyXt1ut3lfBOnOZnDNqYIN" target="_blank">
+                  <img src="../assets/img/common/header/yt.svg" alt="Youtube">
+              </a>
+              <a href="https://www.behance.net/maddevs" target="_blank">
+                  <img src="../assets/img/common/header/beh.svg" alt="Behance">
+              </a>
+              <a href="https://t.me/maddevsio" target="_blank">
+                  <img src="../assets/img/common/header/tel.svg" alt="Telegram">
+              </a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -34,6 +97,7 @@ export default {
   data() {
     return {
       lang: 'en',
+      mobileMenu: false,
     };
   },
   created() {
@@ -54,6 +118,9 @@ export default {
       this.$router.push(route);
       this.$emit('EventLanguage', this.lang);
     },
+    toggleMoobileMenu() {
+      this.mobileMenu = !this.mobileMenu;
+    }
   }
 };
 </script>
