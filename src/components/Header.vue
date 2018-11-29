@@ -119,7 +119,19 @@ export default {
       this.$emit('EventLanguage', this.lang);
     },
     toggleMoobileMenu() {
-      this.mobileMenu = !this.mobileMenu;
+      if (this.mobileMenu === false) {
+        this.mobileMenu = true;
+        this.disableScrollOnBody();
+      } else {
+        this.mobileMenu = false;
+        this.enableScrollOnBody();
+      }
+    },
+    disableScrollOnBody() {
+      document.body.classList.add('scrollDisabled');
+    },
+    enableScrollOnBody() {
+      document.body.classList.remove('scrollDisabled');
     }
   }
 };
