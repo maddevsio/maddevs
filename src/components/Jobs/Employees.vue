@@ -5,24 +5,20 @@
           <p>{{ $t('employees-desc') }}</p>
           <div class="employees_content">
               <div @click.prevent="nextSlide" class="employees_content-item">
-                  <img src="../../assets/img/Jobs/jpg/Employees/employees-1.jpg" srcset="
-                    ../../assets/img/Jobs/jpg/Employees/employees-1@2x.jpg 2x,
-                    ../../assets/img/Jobs/jpg/Employees/employees-1@3x.jpg 3x" alt="Our employees">
+                  <img src="../../assets/img/Jobs/png/Employees/photo_1.png" srcset="
+                    ../../assets/img/Jobs/png/Employees/photo_1@2x.png 2x" alt="Our employees">
               </div>
               <div @click.prevent="nextSlide" class="employees_content-item">
-                  <img src="../../assets/img/Jobs/jpg/Employees/employees-2.jpg" srcset="
-                    ../../assets/img/Jobs/jpg/Employees/employees-2@2x.jpg 2x,
-                    ../../assets/img/Jobs/jpg/Employees/employees-2@3x.jpg 3x" alt="Our employees">
+                  <img src="../../assets/img/Jobs/png/Employees/photo_2.png" srcset="
+                    ../../assets/img/Jobs/png/Employees/photo_2@2x.png 2x" alt="Our employees">
               </div>
               <div @click.prevent="nextSlide" class="employees_content-item">
-                  <img src="../../assets/img/Jobs/jpg/Employees/employees-3.jpg" srcset="
-                    ../../assets/img/Jobs/jpg/Employees/employees-3@2x.jpg 2x,
-                    ../../assets/img/Jobs/jpg/Employees/employees-3@3x.jpg 3x" alt="Our employees">
+                  <img src="../../assets/img/Jobs/png/Employees/photo_3.png" srcset="
+                    ../../assets/img/Jobs/png/Employees/photo_3@2x.png 2x" alt="Our employees">
               </div>
               <div @click.prevent="nextSlide" class="employees_content-item">
-                  <img src="../../assets/img/Jobs/jpg/Employees/employees-4.jpg" srcset="
-                    ../../assets/img/Jobs/jpg/Employees/employees-4@2x.jpg 2x,
-                    ../../assets/img/Jobs/jpg/Employees/employees-4@3x.jpg 3x" alt="Our employees">
+                  <img src="../../assets/img/Jobs/png/Employees/photo_4.png" srcset="
+                    ../../assets/img/Jobs/png/Employees/photo_4@2x.png 2x" alt="Our employees">
               </div>
           </div>
           <slick
@@ -31,24 +27,20 @@
               @beforeChange="handleBeforeChange"
               :options="slickOptions">
               <div @click.prevent="nextSlide" class="employees_content-item">
-                  <img src="../../assets/img/Jobs/jpg/Employees/employees-1.jpg" srcset="
-                    ../../assets/img/Jobs/jpg/Employees/employees-1@2x.jpg 2x,
-                    ../../assets/img/Jobs/jpg/Employees/employees-1@3x.jpg 3x" alt="Our employees">
+                  <img src="../../assets/img/Jobs/png/Employees/photo_1.png" srcset="
+                    ../../assets/img/Jobs/png/Employees/photo_1@2x.png 2x" alt="Our employees">
               </div>
               <div @click.prevent="nextSlide" class="employees_content-item">
-                  <img src="../../assets/img/Jobs/jpg/Employees/employees-2.jpg" srcset="
-                    ../../assets/img/Jobs/jpg/Employees/employees-2@2x.jpg 2x,
-                    ../../assets/img/Jobs/jpg/Employees/employees-2@3x.jpg 3x" alt="Our employees">
+                  <img src="../../assets/img/Jobs/png/Employees/photo_2.png" srcset="
+                    ../../assets/img/Jobs/png/Employees/photo_2@2x.png 2x" alt="Our employees">
               </div>
               <div @click.prevent="nextSlide" class="employees_content-item">
-                  <img src="../../assets/img/Jobs/jpg/Employees/employees-3.jpg" srcset="
-                    ../../assets/img/Jobs/jpg/Employees/employees-3@2x.jpg 2x,
-                    ../../assets/img/Jobs/jpg/Employees/employees-3@3x.jpg 3x" alt="Our employees">
+                  <img src="../../assets/img/Jobs/png/Employees/photo_3.png" srcset="
+                    ../../assets/img/Jobs/png/Employees/photo_3@2x.png 2x" alt="Our employees">
               </div>
               <div @click.prevent="nextSlide" class="employees_content-item">
-                  <img src="../../assets/img/Jobs/jpg/Employees/employees-4.jpg" srcset="
-                    ../../assets/img/Jobs/jpg/Employees/employees-4@2x.jpg 2x,
-                    ../../assets/img/Jobs/jpg/Employees/employees-4@3x.jpg 3x" alt="Our employees">
+                  <img src="../../assets/img/Jobs/png/Employees/photo_4.png" srcset="
+                    ../../assets/img/Jobs/png/Employees/photo_4@2x.png 2x" alt="Our employees">
               </div>
           </slick>
       </div>
