@@ -19,6 +19,8 @@ export default new Router({
       path: '/:lang/jobs',
       name: 'Jobs',
       component: Jobs
-    }
+    },
+    // ------ 404 ------- //
+    { path: '*', component: Home }
   ],
 });
