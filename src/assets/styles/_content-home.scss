@@ -672,6 +672,23 @@
     }
   }
 }
+//------------------ QuickProjectStart ----------------//
+.quick {
+  padding: 60px 0;
+  &-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    &_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
 //------------------ weUse ----------------//
 .weUse {
   padding: 60px 0 120px;
