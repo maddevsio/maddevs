@@ -187,6 +187,18 @@
       }
     }
   }
+  .header-mobile-menu_soc-icons .social-icons_list-row {
+    &:first-child {
+      margin-bottom: 10px;
+    }
+    a {
+      margin: 0 8px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
   .header-mobile-menu_open {
     display: block;
     background-color: transparent;

@@ -121,10 +121,10 @@ export default {
     toggleMoobileMenu() {
       if (this.mobileMenu === false) {
         this.mobileMenu = true;
-        // this.disableScrollOnBody();
+        this.disableScrollOnBody();
       } else {
         this.mobileMenu = false;
-        // this.enableScrollOnBody();
+        this.enableScrollOnBody();
       }
     },
     disableScrollOnBody() {
