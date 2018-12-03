@@ -1,7 +1,7 @@
 // --------------- Jobs Banner ------------- //
 .jobs-banner {
     width: 100%;
-    min-height: 640px;
+    min-height: 610px;
     background-image: url(../img/Jobs/jpg/Banner/banner@2x.jpg);
     background-size: cover;
     background-position: center;
@@ -375,4 +375,4 @@
 }
 
 // Media query for this page
-@import 'media-jobs';
+@import '../media/media-jobs';
