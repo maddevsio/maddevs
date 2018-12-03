@@ -4,6 +4,7 @@
     <HowItWork />
     <BestPractices />
     <Services />
+    <QuickProjectStart />
     <WeUse />
     <Clients />
     <Reviews />
@@ -22,6 +23,7 @@ import Banner from './Banner';
 import HowItWork from './HowItWork';
 import BestPractices from './BestPractices';
 import Services from './Services';
+import QuickProjectStart from './QuickProjectStart';
 import WeUse from './WeUse';
 import Reviews from './Reviews';
 import Clients from './Clients';
@@ -48,6 +50,7 @@ export default {
     HowItWork,
     BestPractices,
     Services,
+    QuickProjectStart,
     WeUse,
     Reviews,
     Clients,
