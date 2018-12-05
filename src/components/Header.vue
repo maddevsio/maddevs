@@ -22,25 +22,25 @@
             {{ lang === 'en' ? 'Русский' : 'English' }}
           </button>
         </div>
-        <button @click="toggleMoobileMenu()" class="header-mobile-menu_open">
-          <img src="../assets/img/common/header/open-menu.svg" alt="Close mobile menu">
+        <button @click="toggleMobileMenu()" class="header-mobile-menu_open">
+          <img src="../assets/img/common/header/open-menu.svg" alt="Open mobile menu">
         </button>
       </div>
     </div>
     <div v-if="this.mobileMenu" class="header-mobile-menu">
       <div class="header-mobile-menu_wrap">
-        <button @click="toggleMoobileMenu()" class="header-mobile-menu_close">
+        <button @click="toggleMobileMenu()" class="header-mobile-menu_close">
           <img src="../assets/img/common/header/close-menu.svg" alt="Close mobile menu">
         </button>
         <div class="header-mobile-menu_list">
           <a href="/">{{ $t('header-link_home') }}</a>
           <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank">
-            <span @click="toggleMoobileMenu()">
+            <span @click="toggleMobileMenu()">
               {{ $t('header-link_blog') }}
             </span>
           </a>
           <router-link :to="`/${this.lang}/jobs`">
-            <span @click="toggleMoobileMenu()">
+            <span @click="toggleMobileMenu()">
               {{ $t('header-link_careers') }}
             </span>
           </router-link>
@@ -118,11 +118,14 @@ export default {
       this.$router.push(route);
       this.$emit('EventLanguage', this.lang);
     },
-    toggleMoobileMenu() {
+    toggleMobileMenu() {
+      const chat = document.getElementById('tidio-chat');
       if (this.mobileMenu === false) {
         this.mobileMenu = true;
         this.disableScrollOnBody();
+        chat.style.display = 'none';
       } else {
+        chat.style.display = 'block';
         this.mobileMenu = false;
         this.enableScrollOnBody();
       }
