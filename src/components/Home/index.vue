@@ -4,6 +4,7 @@
     <HowItWork />
     <BestPractices />
     <Services />
+    <!-- <QuickProjectStart /> -->
     <WeUse />
     <Clients />
     <Reviews />
@@ -22,6 +23,7 @@ import Banner from './Banner';
 import HowItWork from './HowItWork';
 import BestPractices from './BestPractices';
 import Services from './Services';
+import QuickProjectStart from './QuickProjectStart';
 import WeUse from './WeUse';
 import Reviews from './Reviews';
 import Clients from './Clients';
@@ -38,7 +40,9 @@ export default {
   props: ['language'],
   data() {
     return {
-      description: this.$t('meta-desc'),
+      title: this.$t('title-home'),
+      description: this.$t('meta-desc_home'),
+      ogUrl: this.$t('og_meta-url_home'),
     };
   },
   components: {
@@ -46,6 +50,7 @@ export default {
     HowItWork,
     BestPractices,
     Services,
+    QuickProjectStart,
     WeUse,
     Reviews,
     Clients,
@@ -58,9 +63,23 @@ export default {
     Contacts
   },
   head: {
+    title: function() {
+      return {
+        inner: this.title,
+        separator: ' ', // Leave empty separator
+        complement: ' ', // Leave empty complement
+      };
+    },
     meta: function () {
       return [
         {name: 'description', content: this.description},
+        {name: 'description', content: this.description},
+        // Facebook / Open Graph
+        {property: 'og:url', content: this.ogUrl},
+        {property: 'og:type', content: 'website'},
+        {property: 'og:title', content: this.title},
+        {property: 'og:description', content: this.description},
+        {property: 'og:image', content: 'https://maddevs.io/static/Open-Graph.png'},
       ];
     }
   },

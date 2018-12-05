@@ -1,0 +1,378 @@
+// --------------- Jobs Banner ------------- //
+.jobs-banner {
+    width: 100%;
+    min-height: 610px;
+    background-image: url(../img/Jobs/jpg/Banner/banner@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    &_wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        padding-top: 160px;
+        padding-bottom: 60px;
+        h1 {
+            max-width: 795px;
+            font-size: 52px;
+            font-family: 'MADEEvolveSans-regular', sans-serif;
+            font-weight: normal;
+            line-height: 1.33;
+            letter-spacing: -0.4px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+// --------------- Advantages ------------- //
+.advantages {
+    padding: 120px 0 0;
+    p {
+        max-width: 710px;
+        font-size: 28px;
+        color: #000;
+        font-family: 'MADEEvolveSans-regular', sans-serif;
+        line-height: 1.5;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+    &_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        margin-bottom: -40px;
+        &-item {
+            max-width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+            img {
+                width: 62px;
+                height: 62px;
+            }
+            h4 {
+                font-size: 22px;
+                font-family: 'MADEEvolveSans-bold',
+                sans-serif;
+                line-height: 1.33;
+                text-align: center;
+                color: #000;
+                margin-top: 18px;
+                white-space: pre;
+            }
+        }
+    }
+}
+
+// --------------- Growth -------------- //
+.growth {
+    padding: 120px 0 0;
+    &_content {
+        display: flex;
+        align-items: center;
+        &-info {
+            width: 50%;
+            h2 {
+                text-align: left;
+            }
+            ul {
+                margin: 20px 0;
+                padding-left: 60px;
+                li {
+                    font-size: 20px;
+                    line-height: 1.2;
+                    font-family: 'MADEEvolveSans-regular', sans-serif;
+                    color: #595959;
+                    list-style: none;
+                    padding: 8px 0;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        width: 42px;
+                        height: 1px;
+                        position: absolute;
+                        left: -60px;
+                        top: 20px;
+                        background-color: #ec2227 !important;
+                    }
+                }
+                .growth-slide_active {
+                    color: #000;
+                }
+            }
+            a {
+                display: block;
+                text-align: left;
+                color: #ec2227;
+                line-height: 1.85;
+                letter-spacing: 0.2px;
+                font-family: 'MADEEvolveSans-bold', sans-serif;
+                font-weight: normal;
+                text-decoration: none;
+                img {
+                    width: 10px;
+                    height: 10px;
+                    display: inline-block;
+                    margin-left: 2px;
+                }
+            }
+        }
+        &-carousel {
+            width: 50%;
+            max-height: 410px;
+            height: auto;
+            position: relative;
+            margin-left: 15px;
+            .slick-arrow {
+                width: 28px;
+                height: 28px;
+                display: block;
+                position: absolute;
+                right: 40px;
+                bottom: 30px;
+                z-index: 1;
+                border-radius: 100%;
+                box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.14);
+                background-color: #ffffff;
+                border: none;
+                background-position: center;
+                background-size: 14px;
+                background-repeat: no-repeat;
+                background-image: url(../img/Jobs/svg/Employees/arrow.svg);
+                cursor: pointer;
+                transition: all .2s ease;
+                &:hover {
+                    box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.30);
+                }
+            }
+            .slick-prev {
+                right: 80px;
+                transform: scale(-1);
+            }
+            &_slide {
+                width: 100%;
+                height: 100%;
+                display: block !important;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+// -------------- Employer --------------- //
+.employer {
+    padding: 120px 0 0;
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: -20px;
+        margin-top: 40px;
+        margin-bottom: 80px;
+        &-item {
+            width: 300px;
+            min-width: 300px;
+            max-height: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 30px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.14);
+            margin: 20px;
+            transition: all .2s ease;
+            &:hover {
+                box-shadow: 0 4px 5px 0 rgba(38, 36, 32, 0.08);
+            }
+            &__fake {
+                width: 300px;
+                min-width: 300px;
+                max-height: 320px;
+                margin: 20px;
+            }
+            img {
+                margin-bottom: 25px;
+            }
+            h4 {
+                max-width: 240px;
+                text-align: center;
+                min-height: 65px;
+                margin-bottom: 8px;
+                color: #2c1c1c;
+                font-size: 24px;
+                font-family: 'MADEEvolveSans-bold', sans-serif;
+                line-height: 1.38;
+            }
+            p {
+                width: 100%;
+                text-align: center;
+                line-height: 1.33;
+                letter-spacing: 0.2px;
+                font-size: 18px;
+                font-family: 'MADEEvolveSans-regular',
+                sans-serif;
+                font-weight: normal;
+                color: #595959;
+            }
+        }
+    }
+    .mnd-button-link {
+        margin: 0 auto;
+    }
+}
+// ------------- intern ------------- //
+.intern {
+    margin-top: 120px;
+    background-color: #e8e8e8;
+    padding: 60px 0;
+    p {
+        max-width: 710px;
+        font-size: 28px;
+        color: #000;
+        font-family: 'MADEEvolveSans-regular', sans-serif;
+        line-height: 1.5;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+}
+// ------------- Employees ------------- //
+.employees {
+    padding: 120px 0 0;
+    p {
+        max-width: 710px;
+        font-size: 28px;
+        color: #000;
+        font-family: 'MADEEvolveSans-regular',
+        sans-serif;
+        line-height: 1.5;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+    &_content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        &-slider {
+            display: none !important;
+        }
+        .slick-arrow {
+            display: none;
+            transition: all .2s ease;
+            &:hover {
+              box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.30);
+            }
+        }
+        &-item {
+            width: 50%;
+            outline: 1px solid #fff !important;
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+    }
+}
+// ------------- Jobs ---------------- //
+.jobs {
+    margin-top: 120px;
+    padding: 60px 0;
+    background-image: linear-gradient(112deg, #f34f53, #fc944e);
+    h2 {
+        color: #fff;
+    }
+    &_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-top: 40px;
+        margin-left: -15px;
+        margin-right: -15px;
+        &-item {
+            width: 100%;
+            max-width: 410px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.14);
+            background-color: #fff;
+            padding: 20px;
+            transition: all .2s ease;
+            text-decoration: none;
+            &:hover {
+                box-shadow: 0 8px 16px 0 rgba(38, 36, 32, .2);
+            }
+            h4 {
+                width: 100%;
+                line-height: 1.42;
+                font-size: 24px;
+                font-family: 'MADEEvolveSans-bold',
+                sans-serif;
+                color: #000;
+            }
+            p {
+                width: 100%;
+                margin-top: 8px;
+                line-height: 1.33;
+                font-size: 18px;
+                font-family: 'MADEEvolveSans-regular',
+                sans-serif;
+                letter-spacing: 0.2px;
+                color: #000;
+                margin-bottom: 15px;
+            }
+            h6 {
+                font-family: 'MADEEvolveSans-regular',
+                sans-serif;
+                margin-top: auto;
+                margin-bottom: 0;
+                line-height: 1.5;
+                letter-spacing: 0.1px;
+                font-size: 14px;
+                color: #8e8e8e;
+            }
+        }
+    }
+}
+
+// ---------------- Team ------------------- //
+.team {
+    padding: 120px 0;
+    p {
+        max-width: 700px;
+        margin: 30px auto 40px;
+        font-size: 28px;
+        color: #000000;
+        line-height: 1.5;
+        font-family: 'MADEEvolveSans-regular',
+        sans-serif;
+        font-weight: normal;
+        text-align: center;
+        a {
+            color: #ec2227;
+            text-decoration: none;
+        }
+    }
+    .mnd-button-link {
+        margin: 0 auto;
+    }
+}
+
+// Media query for this page
+@import '../media/media-jobs';
