@@ -22,6 +22,7 @@ main {
 
 * {
   outline: none !important;
+  -webkit-text-size-adjust: 100%;
   &::-moz-focus-outer,
   &::-moz-focus-inner {
     border: 0;
