@@ -967,17 +967,20 @@
             }
         }
     }
-    .contacts-wrap_list .social-icons_list {
-        flex-direction: column;
-    }
-    .contacts-wrap_list .social-icons_list-row:first-child {
-        margin-bottom: 20px;
-    }
-    .contacts-wrap_list .social-icons a {
-        margin: 0 10px;
-        img {
-            width: 30px;
-            height: 30px;
+    .contacts-wrap_list {
+        margin-bottom: 30px;
+        .social-icons_list {
+            flex-direction: column;
+        }
+        .social-icons_list-row:first-child {
+            margin-bottom: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            img {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
     .sec-title {
