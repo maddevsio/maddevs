@@ -1,6 +1,6 @@
-# maddevs
+# Mad Devs
 
-> A Vue.js project
+> Mad Devs is a full stack team for development and administration of IT projects. We specialize in projects requiring the individual technical solutions.
 
 ## Build Setup
 
@@ -8,7 +8,7 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:3000
 npm run dev
 
 # build for production with minification
