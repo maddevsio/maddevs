@@ -4,7 +4,7 @@
     <HowItWork />
     <BestPractices />
     <Services />
-    <!-- <QuickProjectStart /> -->
+    <QuickProjectStart />
     <WeUse />
     <Clients />
     <Reviews />

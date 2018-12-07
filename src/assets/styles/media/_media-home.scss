@@ -46,6 +46,9 @@
             }
         }
     }
+    .quick-list_item {
+        margin: 0 5px;
+    }
     .open-source {
         &_wrap {
             &-projects {
@@ -129,6 +132,18 @@
                 }
             }
         }
+    }
+    .quick-list {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0;
+      &_item {
+        width: 32%;
+        margin-top: 84px;
+        p {
+            width: 160px;
+        }
+      }
     }
     .open-source {
         &_wrap {
@@ -433,6 +448,12 @@
             }
         }
     }
+    .quick-list_item {
+        width: 48%;
+        p {
+            width: 230px;
+        }
+    }
     .our-blog {
       &-wrap_list-item {
         width: 49%;
@@ -699,6 +720,9 @@
     }
 }
 @media only screen and (max-width: 540px) {
+    .quick-list_item {
+        width: 46%;
+    }
     .speakers {
         &_wrap {
             &-places {
@@ -776,6 +800,14 @@
             .right-block_desc li {
                 font-size: 18px;
             }
+        }
+    }
+    .quick {
+        padding-bottom: 0;
+        &-list_item {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
         }
     }
     .weUse {
