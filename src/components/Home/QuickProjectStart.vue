@@ -59,6 +59,18 @@
 
 <script>
 export default {
-  name: 'quick-project-start'
+  name: 'quick-project-start',
+  mounted() {
+    const quick = document.getElementById('quick');
+    const steps = document.getElementsByClassName('quick-line_white');
+    window.addEventListener('scroll', function(event) {
+      var top = this.scrollY;
+      if (top + 700 >= quick.offsetTop) {
+        for (let i = 0; i < steps.length; i++) {
+          steps[i].classList.add('quick-line_white_run');
+        }
+      }
+    }, false);
+  }
 };
 </script>

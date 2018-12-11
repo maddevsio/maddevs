@@ -715,18 +715,21 @@
         stroke-dasharray: 5;
         z-index: 0;
       }
-      .quick-line_white {
+      .quick-line_dashed {
+        opacity: .2;
+      }
+      .quick-line_white_run {
         stroke-dasharray: 300;
         animation: dash 1s ease forwards;
       }
       .quick-line_white2 {
-        animation-delay: .9s;
+        animation-delay: .8s;
       }
       .quick-line_white3 {
-        animation-delay: 1.7s;
+        animation-delay: 1.6s;
       }
       .quick-line_white4 {
-        animation-delay: 2.6s;
+        animation-delay: 2.5s;
       }
 
       img {
