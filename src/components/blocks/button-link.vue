@@ -1,5 +1,5 @@
 <template>
-  <a :href="this.data.link" class="mnd-button-link" target="_blank">
+  <a :href="this.data.link" class="mnd-button-link" target="_blank" rel="noreferrer">
     {{ this.data.text }}
   </a>
 </template>
