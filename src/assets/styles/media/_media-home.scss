@@ -46,9 +46,6 @@
             }
         }
     }
-    .quick-list_item {
-        margin: 0 5px;
-    }
     .open-source {
         &_wrap {
             &-projects {
@@ -140,8 +137,22 @@
       &_item {
         width: 32%;
         margin-top: 84px;
+        margin-left: 0;
+        margin-right: 0;
+        &:nth-child(3) {
+          .quick-line {
+            visibility: hidden;
+          }
+        }
+        .quick-line_white4 {
+          animation-delay: 1.6s;
+        }
         p {
-            width: 160px;
+          width: 200px;
+        }
+        .quick-line {
+          left: calc(50% + 21px);
+          transform: rotate(1deg) scaleX(1.03);
         }
       }
     }
@@ -382,6 +393,10 @@
     }
 }
 @media only screen and (max-width: 850px) {
+  .quick-list_item .quick-line {
+    transform: rotate(1deg) scaleX(1.01);
+    top: -45px;
+  }
     .speakers {
         &_wrap {
             &-people {
@@ -450,8 +465,8 @@
     }
     .quick-list_item {
         width: 48%;
-        p {
-            width: 230px;
+        .quick-line {
+          display: none;
         }
     }
     .our-blog {
@@ -808,10 +823,16 @@
             margin-left: 0;
             margin-right: 0;
             width: 100%;
+            p {
+              width: 250px;
+            }
         }
     }
     .weUse {
         padding: 80px 0;
+        &_wrap-list-item h3 {
+            font-size: 22px;
+        }
     }
     .reviews {
         padding: 60px 0;
