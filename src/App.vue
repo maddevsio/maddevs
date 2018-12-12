@@ -33,7 +33,7 @@ export default {
       this.lang = lang;
     },
   },
-  mounted() {
+  updated() {
     const cookie = document.getElementsByClassName('Cookie');
     const main = document.getElementsByClassName('main')[0];
     const button = document.getElementsByClassName('Cookie__button')[0];
@@ -52,6 +52,6 @@ export default {
         }
       });
     }
-  }
+  },
 };
 </script>
