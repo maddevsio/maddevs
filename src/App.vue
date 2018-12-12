@@ -1,12 +1,11 @@
 <template>
   <div id="app">
-    <!-- <cookie-law
+    <cookie-law
       theme="blood-orange"
       :message="$t('cookie-message')"
-      :buttonText="$t('cookie-button')"
-      position="top"
-      transitionName="slideFromTop"
-    ></cookie-law> -->
+      position="bottom"
+      transitionName="slideFromBottom"
+    ></cookie-law>
     <Header @EventLanguage="getLanguage"/>
     <router-view :language="this.lang"/>
     <Footer />
