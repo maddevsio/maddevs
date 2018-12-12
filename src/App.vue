@@ -3,8 +3,8 @@
     <cookie-law
       theme="blood-orange"
       :message="$t('cookie-message')"
-      position="bottom"
-      transitionName="slideFromBottom"
+      position="top"
+      transitionName="slideFromTop"
     ></cookie-law>
     <Header @EventLanguage="getLanguage"/>
     <router-view :language="this.lang"/>
@@ -24,12 +24,33 @@ export default {
   data() {
     return {
       lang: i18n.language,
+      cookieHeight: 0
     };
   },
   components: { Header, Footer, CookieLaw },
   methods: {
     getLanguage(lang) {
       this.lang = lang;
+    },
+  },
+  mounted() {
+    const cookie = document.getElementsByClassName('Cookie');
+    const main = document.getElementsByClassName('main')[0];
+    const button = document.getElementsByClassName('Cookie__button')[0];
+    if (cookie.length > 0) {
+      this.cookieHeight = (cookie[0].clientHeight - 10) + 'px';
+      main.style.marginTop = this.cookieHeight;
+      button.addEventListener('click', () => {
+        main.style.marginTop = '0';
+      });
+      window.addEventListener('resize', () => {
+        try {
+          this.cookieHeight = (cookie[0].clientHeight - 10) + 'px';
+          main.style.marginTop = this.cookieHeight;
+        } catch (error) {
+          return true;
+        }
+      });
     }
   }
 };
