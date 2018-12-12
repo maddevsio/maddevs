@@ -18,7 +18,7 @@
             <p>{{$t("Accurate and ”pure” data from GPS-recivers proceeded with Kalman's filter")}}</p>
           </div>
         </a>
-        <a href="https://github.com/maddevsio/heimdall" target="_blank" rel="noreferrer" class="open-source_wrap-projects_list-item op-proj-2">
+        <a href="https://heimdall.maddevs.io" target="_blank" rel="noreferrer" class="open-source_wrap-projects_list-item op-proj-2">
           <div class="projects-img_wrap">
             <img src="../../assets/img/Home/svg/openSource/Heimdall.svg" class="op-img-sf" alt="Heimdall">
           </div>
