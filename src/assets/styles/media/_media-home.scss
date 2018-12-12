@@ -241,14 +241,6 @@
     }
 }
 @media only screen and (max-width: 992px) {
-    .Cookie--blood-orange {
-        .Cookie__button {
-            padding: 0.525em 3.025em;
-        }
-        .Cookie__content {
-            font-size: 16px;
-        }
-    }
     .open-source {
         &_wrap {
             &-projects {
@@ -476,19 +468,6 @@
     }
 }
 @media only screen and (max-width: 768px) {
-    .Cookie--blood-orange {
-        .Cookie__buttons {
-            margin-bottom: 0;
-            .Cookie__button {
-                padding: 0.425em 2.025em !important;
-            }
-        }
-        .Cookie__content {
-            max-width: 90%;
-            margin: 0;
-            font-size: 15px;
-        }
-    }
     .container {
         padding: 0 54px;
     }
@@ -766,6 +745,11 @@
     }
 }
 @media only screen and (max-width: 480px) {
+    .Cookie--blood-orange {
+        width: 300px !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
     .banner {
         &-title {
             h1 {
