@@ -15,9 +15,9 @@
 <script>
 import Header from './components/Header';
 import Footer from './components/Footer';
-import './assets/styles/index.scss';
 import i18n from 'i18next';
 import CookieLaw from 'vue-cookie-law';
+import './assets/styles/index.scss';
 
 export default {
   name: 'App',
@@ -33,7 +33,7 @@ export default {
       this.lang = lang;
     },
   },
-  updated() {
+  mounted() {
     const cookie = document.getElementsByClassName('Cookie');
     const main = document.getElementsByClassName('main')[0];
     const button = document.getElementsByClassName('Cookie__button')[0];
