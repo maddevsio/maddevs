@@ -33,20 +33,20 @@ export default {
       this.lang = lang;
     },
   },
-  mounted() {
+  updated() {
     const cookie = document.getElementsByClassName('Cookie');
-    const main = document.getElementsByClassName('main')[0];
+    const body = document.getElementsByTagName('body')[0];
     const button = document.getElementsByClassName('Cookie__button')[0];
     if (cookie.length > 0) {
       this.cookieHeight = (cookie[0].clientHeight - 10) + 'px';
-      main.style.marginTop = this.cookieHeight;
+      body.style.marginTop = this.cookieHeight;
       button.addEventListener('click', () => {
-        main.style.marginTop = '0';
+        body.style.marginTop = '0';
       });
       window.addEventListener('resize', () => {
         try {
           this.cookieHeight = (cookie[0].clientHeight - 10) + 'px';
-          main.style.marginTop = this.cookieHeight;
+          body.style.marginTop = this.cookieHeight;
         } catch (error) {
           return true;
         }
