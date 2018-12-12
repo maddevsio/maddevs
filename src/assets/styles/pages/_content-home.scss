@@ -1,28 +1,21 @@
 // -------------- Cookie ----------------- //
 .Cookie--blood-orange {
-  width: 330px !important;
-  left: 60px !important;
-  bottom: 10px !important;
-  padding: 12px !important;
-  padding-right: 20px !important;
-  border-radius: 5px;
+  padding: 10px 60px !important;
   background-color: #fff !important;
-  box-shadow: 0 2px 15px 0 rgba(38, 36, 32, 0.34);
-  z-index: 9999999999 !important;
+  box-shadow: 0 0 15px 0 rgba(38, 36, 32, 0.24);
   .Cookie__buttons {
     width: 30px !important;
     height: 30px !important;
-    position: absolute;
-    right: 0;
-    top: 0;
     margin: 0 !important;
+    margin-left: 20px !important;
+    margin-right: -10px !important;
   }
   .Cookie__button {
     margin: 0 !important;
     padding: 0 !important;
     background-image: url(../img/common/header/close-menu.svg) !important;
     background-repeat: no-repeat !important;
-    background-size: 8px !important;
+    background-size: 10px !important;
     background-position: center !important;
     background-color: transparent !important;
     color: transparent !important;
