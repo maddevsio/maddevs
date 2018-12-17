@@ -241,6 +241,12 @@
     }
 }
 @media only screen and (max-width: 992px) {
+    .metrics-wrap {
+        justify-content: center;
+        &_item {
+            width: 33%;
+        }
+    }
     .open-source {
         &_wrap {
             &-projects {
@@ -605,6 +611,11 @@
 }
 
 @media only screen and (max-width: 680px) {
+    .metrics-wrap {
+        &_item {
+            width: 50%;
+        }
+    }
     .open-source {
         &_wrap {
             &-github {
@@ -806,6 +817,17 @@
             width: 100%;
             p {
               width: 250px;
+            }
+        }
+    }
+    .metrics-wrap {
+        &_item {
+            width: 100%;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            h4 {
+                font-size: 22px;
             }
         }
     }
