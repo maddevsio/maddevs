@@ -5,6 +5,7 @@
     <BestPractices />
     <Services />
     <QuickProjectStart />
+    <Metrics />
     <WeUse />
     <Clients />
     <Reviews />
@@ -24,6 +25,7 @@ import HowItWork from './HowItWork';
 import BestPractices from './BestPractices';
 import Services from './Services';
 import QuickProjectStart from './QuickProjectStart';
+import Metrics from './Metrics';
 import WeUse from './WeUse';
 import Reviews from './Reviews';
 import Clients from './Clients';
@@ -51,6 +53,7 @@ export default {
     BestPractices,
     Services,
     QuickProjectStart,
+    Metrics,
     WeUse,
     Reviews,
     Clients,
