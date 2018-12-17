@@ -775,6 +775,46 @@
     stroke-dashoffset: 290;
   }
 }
+//------------------ Metrics ----------------//
+.metrics {
+  padding: 60px 0 0;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    &_item {
+      width: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px;
+      img {
+        width: 62px;
+        height: 62px;
+      }
+      span {
+        font-size: 62px;
+        color: #2c1c1c;
+        font-family: 'MADEEvolveSans-bold',
+        sans-serif;
+        font-weight: normal;
+        line-height: 1;
+        margin: 24px 0 12px;
+      }
+      h4 {
+        width: 100%;
+        text-align: center;
+        font-family: 'MADEEvolveSans-regular',
+        sans-serif;
+        font-weight: normal;
+        font-size: 24px;
+        color: #2c1c1c;
+        line-height: 1.33;
+      }
+    }
+  }
+}
 //------------------ weUse ----------------//
 .weUse {
   padding: 60px 0 120px;
