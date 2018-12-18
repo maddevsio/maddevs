@@ -90,7 +90,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 import ButtonLinkBlack from '../blocks/button-link--black';
 
 export default {
@@ -112,17 +111,9 @@ export default {
     ButtonLinkBlack
   },
   methods: {
-    getGithubData() {
-      axios.get('https://api.github.com/users/maddevsio').then(res => {
-        this.githubData.repos = res.data.public_repos;
-      });
-    },
     toggleAllProj() {
       this.showProj = true;
     }
   },
-  mounted() {
-    this.getGithubData();
-  }
 };
 </script>
