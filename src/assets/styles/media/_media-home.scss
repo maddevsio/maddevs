@@ -156,6 +156,12 @@
         }
       }
     }
+    .metrics-wrap {
+        justify-content: center;
+        &_item {
+            width: 33%;
+        }
+    }
     .open-source {
         &_wrap {
             &-github {
@@ -241,12 +247,6 @@
     }
 }
 @media only screen and (max-width: 992px) {
-    .metrics-wrap {
-        justify-content: center;
-        &_item {
-            width: 33%;
-        }
-    }
     .open-source {
         &_wrap {
             &-projects {
@@ -467,6 +467,11 @@
           display: none;
         }
     }
+    .metrics-wrap {
+        &_item {
+            width: 50%;
+        }
+    }
     .our-blog {
       &-wrap_list-item {
         width: 49%;
@@ -611,11 +616,6 @@
 }
 
 @media only screen and (max-width: 680px) {
-    .metrics-wrap {
-        &_item {
-            width: 50%;
-        }
-    }
     .open-source {
         &_wrap {
             &-github {
