@@ -5,47 +5,62 @@
       <div class="metrics-wrap">
         <div class="metrics-wrap_item">
           <img src="../../assets/img/Home/svg/metrics/user-empl.svg" alt="User">
-          <animated-number
-            :value="employees"
-            :formatValue="formatWithPlus"
-            :duration="1000"
-          />
+          <number
+            animationPaused
+            ref="number1"
+            :from="0"
+            :to="65"
+            :format="formatWithPlus"
+            :duration="2"
+            easing="Power1.easeOut"/>
           <h4>{{$t('metrics-item1')}}</h4>
         </div>
         <div class="metrics-wrap_item">
           <img src="../../assets/img/Home/svg/metrics/participants.svg" alt="Participants">
-          <animated-number
-            :value="participants"
-            :formatValue="formatSimple"
-            :duration="1000"
-          />
+          <number
+            animationPaused
+            ref="number2"
+            :from="0"
+            :to="5"
+            :format="formatWithPlus"
+            :duration="2"
+            easing="Power1.easeOut"/>
           <h4>{{$t('metrics-item2')}}</h4>
         </div>
         <div class="metrics-wrap_item">
           <img src="../../assets/img/Home/svg/metrics/duration.svg" alt="Duration">
-          <animated-number
-            :value="duration"
-            :formatValue="formatSimple"
-            :duration="1000"
-          />
+          <number
+            animationPaused
+            ref="number3"
+            :from="0"
+            :to="730"
+            :format="formatSimple"
+            :duration="2"
+            easing="Power1.easeOut"/>
           <h4>{{$t('metrics-item3')}}</h4>
         </div>
         <div class="metrics-wrap_item">
           <img src="../../assets/img/Home/svg/metrics/globe.svg" alt="Globe">
-          <animated-number
-            :value="countries"
-            :formatValue="formatWithPlus"
-            :duration="1000"
-          />
+          <number
+            animationPaused
+            ref="number4"
+            :from="0"
+            :to="10"
+            :format="formatWithPlus"
+            :duration="2"
+            easing="Power1.easeOut"/>
           <h4>{{$t('metrics-item4')}}</h4>
         </div>
         <div class="metrics-wrap_item">
           <img src="../../assets/img/Home/svg/metrics/projects.svg" alt="Projects">
-          <animated-number
-            :value="successfulProj"
-            :formatValue="formatSimple"
-            :duration="1000"
-          />
+          <number
+            animationPaused
+            ref="number5"
+            :from="0"
+            :to="19"
+            :format="formatSimple"
+            :duration="2"
+            easing="Power1.easeOut"/>
           <h4>{{$t('metrics-item5')}}</h4>
         </div>
       </div>
@@ -54,17 +69,10 @@
 </template>
 
 <script>
-import AnimatedNumber from 'animated-number-vue';
-
 export default {
   name: 'metrics',
   data() {
     return {
-      employees: 0,
-      countries: 0,
-      duration: 0,
-      participants: 0,
-      successfulProj: 0,
       complate: false
     };
   },
@@ -75,17 +83,17 @@ export default {
     formatSimple(value) {
       return `${value.toFixed(0)}`;
     },
-    increase() {
-      this.employees = 65;
-      this.countries = 10;
-      this.duration = 730;
-      this.participants = 5;
-      this.successfulProj = 19;
-    },
+    playAnimation() {
+      this.$refs.number1.play();
+      this.$refs.number2.play();
+      this.$refs.number3.play();
+      this.$refs.number4.play();
+      this.$refs.number5.play();
+    }
   },
   mounted() {
     const metricsSec = document.getElementById('metrics');
-    const runAminNumber = this.increase;
+    const runAminNumber = this.playAnimation;
     if (this.complate === false) {
       this.complate = true;
       window.addEventListener('scroll', function(event) {
@@ -95,9 +103,6 @@ export default {
         }
       }, false);
     }
-  },
-  components: {
-    AnimatedNumber
-  },
+  }
 };
 </script>
