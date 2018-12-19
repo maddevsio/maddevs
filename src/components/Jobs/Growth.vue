@@ -12,7 +12,7 @@
                         <li :class="{ 'growth-slide_active': activeSlide == 4 }">{{ $t('growth-listitem5') }}</li>
                         <li :class="{ 'growth-slide_active': activeSlide == 5 }">{{ $t('growth-listitem6') }}</li>
                     </ul>
-                    <a href="https://blog.maddevs.io/vacancy/home" target="_blank">
+                    <a href="https://blog.maddevs.io/vacancy/home" target="_blank" rel="noreferrer">
                         {{ $t('growth-all-vacancies') }}
                         <img src="../../assets/img/Jobs/svg/Growth/go-to.svg" alt="Go to">
                     </a>

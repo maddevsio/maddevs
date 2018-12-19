@@ -7,14 +7,14 @@
         </a>
         <div class="header-wrap_right-block">
           <nav class="header_links">
-            <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank">{{ $t('header-link_blog') }}</a>
+            <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank" rel="noreferrer">{{ $t('header-link_blog') }}</a>
             <router-link :to="`/${this.lang}/jobs`">{{ $t('header-link_careers') }}</router-link>
           </nav>
           <div class="header_soc-icons">
-            <a href="https://ru.linkedin.com/company/mad-devs" target="_blank">
+            <a href="https://ru.linkedin.com/company/mad-devs" target="_blank" rel="noreferrer">
               <img src="../assets/img/common/header/in-header.svg" alt="LinkedIn">
             </a>
-            <a href="https://www.facebook.com/maddevsio" target="_blank">
+            <a href="https://www.facebook.com/maddevsio" target="_blank" rel="noreferrer">
               <img src="../assets/img/common/header/fb-header.svg" alt="Facebook">
             </a>
           </div>
@@ -34,7 +34,7 @@
         </button>
         <div class="header-mobile-menu_list">
           <a href="/">{{ $t('header-link_home') }}</a>
-          <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank">
+          <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank" rel="noreferrer">
             <span @click="toggleMobileMenu()">
               {{ $t('header-link_blog') }}
             </span>
@@ -54,33 +54,33 @@
         </div>
         <div class="header-mobile-menu_soc-icons">
           <div class="social-icons_list-row">
-              <a href="https://github.com/maddevsio" target="_blank">
+              <a href="https://github.com/maddevsio" target="_blank" rel="noreferrer">
                   <img src="../assets/img/common/header/git.svg" fill="red" alt="Github">
               </a>
-              <a href="https://www.facebook.com/maddevsio" target="_blank">
+              <a href="https://www.facebook.com/maddevsio" target="_blank" rel="noreferrer">
                   <img src="../assets/img/common/header/fb.svg" alt="Facebook">
               </a>
-              <a href="https://www.instagram.com/maddevsio/" target="_blank">
+              <a href="https://www.instagram.com/maddevsio/" target="_blank" rel="noreferrer">
                   <img src="../assets/img/common/header/insta.svg" alt="Instagram">
               </a>
-              <a href="https://blog.maddevs.io/" target="_blank">
+              <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">
                   <img src="../assets/img/common/header/medium.svg" alt="Medium">
               </a>
           </div>
           <div class="social-icons_list-row">
-              <a href="https://twitter.com/MadDevsIO" target="_blank">
+              <a href="https://twitter.com/MadDevsIO" target="_blank" rel="noreferrer">
                   <img src="../assets/img/common/header/tw.svg" alt="Twitter">
               </a>
-              <a href="https://www.slideshare.net/maddevs/presentations" target="_blank">
+              <a href="https://www.slideshare.net/maddevs/presentations" target="_blank" rel="noreferrer">
                   <img src="../assets/img/common/header/slide.svg" alt="Slideshare">
               </a>
-              <a href="https://www.youtube.com/playlist?list=PLsmdb5W8ytypyXt1ut3lfBOnOZnDNqYIN" target="_blank">
+              <a href="https://www.youtube.com/playlist?list=PLsmdb5W8ytypyXt1ut3lfBOnOZnDNqYIN" target="_blank" rel="noreferrer">
                   <img src="../assets/img/common/header/yt.svg" alt="Youtube">
               </a>
-              <a href="https://www.behance.net/maddevs" target="_blank">
+              <a href="https://www.behance.net/maddevs" target="_blank" rel="noreferrer">
                   <img src="../assets/img/common/header/beh.svg" alt="Behance">
               </a>
-              <a href="https://t.me/maddevsio" target="_blank">
+              <a href="https://t.me/maddevsio" target="_blank" rel="noreferrer">
                   <img src="../assets/img/common/header/tel.svg" alt="Telegram">
               </a>
           </div>

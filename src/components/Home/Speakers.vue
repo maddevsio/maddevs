@@ -44,7 +44,7 @@
         <div class="speakers_wrap-people">
             <div onclick="void(0)" class="speakers_wrap-people-item">
                 <img src="../../assets/img/Home/jpg/speakers/1.jpg" srcset="../../assets/img/Home/jpg/speakers/1@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/1@3x.jpg 3x" alt="People">
-                <a class="people-info-block" target="_blank" href="https://www.slideshare.net/maddevs/grpc-91167163">
+                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/grpc-91167163">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>GopherCon Russia 2018</p>
@@ -55,7 +55,7 @@
             </div>
             <div onclick="void(0)" class="speakers_wrap-people-item">
                 <img src="../../assets/img/Home/jpg/speakers/2.jpg" srcset="../../assets/img/Home/jpg/speakers/2@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/2@3x.jpg 3x" alt="People">
-                <a class="people-info-block" target="_blank" href="https://www.slideshare.net/maddevs/ss-102761804">
+                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/ss-102761804">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>Mad Talks</p>
@@ -66,7 +66,7 @@
             </div>
             <div onclick="void(0)" class="speakers_wrap-people-item">
                 <img src="../../assets/img/Home/jpg/speakers/3.jpg" srcset="../../assets/img/Home/jpg/speakers/3@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/3@3x.jpg 3x" alt="People">
-                <a class="people-info-block" target="_blank" href="https://www.slideshare.net/maddevs/triggermesh-faas-kubernetes">
+                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/triggermesh-faas-kubernetes">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>South Dev Fest 2018</p>
@@ -77,7 +77,7 @@
             </div>
             <div onclick="void(0)" class="speakers_wrap-people-item">
                 <img src="../../assets/img/Home/jpg/speakers/4.jpg" srcset="../../assets/img/Home/jpg/speakers/4@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/4@3x.jpg 3x" alt="People">
-                <a class="people-info-block" target="_blank" href="https://www.slideshare.net/maddevs/ss-116840322">
+                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/ss-116840322">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>Mad Talks</p>
@@ -88,7 +88,7 @@
             </div>
              <div onclick="void(0)" class="speakers_wrap-people-item">
                 <img src="../../assets/img/Home/jpg/speakers/5.jpg" srcset="../../assets/img/Home/jpg/speakers/5@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/5@3x.jpg 3x" alt="People">
-                <a class="people-info-block" href="https://www.slideshare.net/maddevs/telegram-google-creating-a-telegram-bot-with-google-services-free" target="_blank">
+                <a class="people-info-block" href="https://www.slideshare.net/maddevs/telegram-google-creating-a-telegram-bot-with-google-services-free" target="_blank" rel="noreferrer">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>GDG Almaty 2016</p>
@@ -99,7 +99,7 @@
             </div>
             <div onclick="void(0)" class="speakers_wrap-people-item">
                 <img src="../../assets/img/Home/jpg/speakers/7.jpg" srcset="../../assets/img/Home/jpg/speakers/7@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/7@3x.jpg 3x" alt="People">
-                <a class="people-info-block" target="_blank" href="https://www.slideshare.net/maddevs/grpc-75458612">
+                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/grpc-75458612">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>Kolesa/web</p>
@@ -110,7 +110,7 @@
             </div>
             <div onclick="void(0)" class="speakers_wrap-people-item">
                 <img src="../../assets/img/Home/jpg/speakers/6.jpg" srcset="../../assets/img/Home/jpg/speakers/6@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/6@3x.jpg 3x" alt="People">
-                <a class="people-info-block" target="_blank" href="https://www.slideshare.net/maddevs/kotlin-116845515">
+                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/kotlin-116845515">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>GDG Almaty 2017</p>
@@ -121,7 +121,7 @@
             </div>
             <div onclick="void(0)" class="speakers_wrap-people-item">
                 <img src="../../assets/img/Home/jpg/speakers/8.jpg" srcset="../../assets/img/Home/jpg/speakers/8@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/8@3x.jpg 3x" alt="People">
-                <a class="people-info-block" href="https://www.slideshare.net/maddevs/the-project-adventure-from-developer-computer-to-serious-loads" target="_blank">
+                <a class="people-info-block" href="https://www.slideshare.net/maddevs/the-project-adventure-from-developer-computer-to-serious-loads" target="_blank" rel="noreferrer">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>HighLoad Junior 2017</p>
@@ -132,7 +132,7 @@
             </div>
             <div onclick="void(0)" class="speakers_wrap-people-item">
                 <img src="../../assets/img/Home/jpg/speakers/9.jpg" srcset="../../assets/img/Home/jpg/speakers/9@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/9@3x.jpg 3x" alt="People">
-                <a class="people-info-block" href="https://www.slideshare.net/maddevs/project-management-central-asia-vs-united-states" target="_blank">
+                <a class="people-info-block" href="https://www.slideshare.net/maddevs/project-management-central-asia-vs-united-states" target="_blank" rel="noreferrer">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>GDG Almaty 2017</p>
@@ -143,7 +143,7 @@
             </div>
             <div onclick="void(0)" class="speakers_wrap-people-item">
                 <img src="../../assets/img/Home/jpg/speakers/10.jpg" srcset="../../assets/img/Home/jpg/speakers/10@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/10@3x.jpg 3x" alt="People">
-                <a class="people-info-block" target="_blank" href="https://www.slideshare.net/maddevs/pm-digital-nomad-or-how-to-manage-a-totally-remote-team">
+                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/pm-digital-nomad-or-how-to-manage-a-totally-remote-team">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>Outsource People 2017</p>

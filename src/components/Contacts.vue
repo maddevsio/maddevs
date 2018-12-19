@@ -17,33 +17,33 @@
             <div class="contacts-wrap_list-item social-icons">
                 <div class="social-icons_list">
                     <div class="social-icons_list-row">
-                        <a href="https://github.com/maddevsio" target="_blank">
+                        <a href="https://github.com/maddevsio" target="_blank" rel="noreferrer">
                             <img src="../assets/img/common/git.svg" alt="Github">
                         </a>
-                        <a href="https://www.facebook.com/maddevsio" target="_blank">
+                        <a href="https://www.facebook.com/maddevsio" target="_blank" rel="noreferrer">
                             <img src="../assets/img/common/fb.svg" alt="Facebook">
                         </a>
-                        <a href="https://www.instagram.com/maddevsio/" target="_blank">
+                        <a href="https://www.instagram.com/maddevsio/" target="_blank" rel="noreferrer">
                             <img src="../assets/img/common/insta.svg" alt="Instagram">
                         </a>
-                        <a href="https://blog.maddevs.io/" target="_blank">
+                        <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">
                             <img src="../assets/img/common/medium.svg" alt="Medium">
                         </a>
                     </div>
                     <div class="social-icons_list-row">
-                        <a href="https://twitter.com/MadDevsIO" target="_blank">
+                        <a href="https://twitter.com/MadDevsIO" target="_blank" rel="noreferrer">
                             <img src="../assets/img/common/tw.svg" alt="Twitter">
                         </a>
-                        <a href="https://www.slideshare.net/maddevs/presentations" target="_blank">
+                        <a href="https://www.slideshare.net/maddevs/presentations" target="_blank" rel="noreferrer">
                             <img src="../assets/img/common/slide.svg" alt="Slideshare">
                         </a>
-                        <a href="https://www.youtube.com/playlist?list=PLsmdb5W8ytypyXt1ut3lfBOnOZnDNqYIN" target="_blank">
+                        <a href="https://www.youtube.com/playlist?list=PLsmdb5W8ytypyXt1ut3lfBOnOZnDNqYIN" target="_blank" rel="noreferrer">
                             <img src="../assets/img/common/yt.svg" alt="Youtube">
                         </a>
-                        <a href="https://www.behance.net/maddevs" target="_blank">
+                        <a href="https://www.behance.net/maddevs" target="_blank" rel="noreferrer">
                             <img src="../assets/img/common/beh.svg" alt="Behance">
                         </a>
-                        <a href="https://t.me/maddevsio" target="_blank">
+                        <a href="https://t.me/maddevsio" target="_blank" rel="noreferrer">
                             <img src="../assets/img/common/tel.svg" alt="Telegram">
                         </a>
                     </div>
