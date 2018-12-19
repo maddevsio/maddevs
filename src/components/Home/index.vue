@@ -5,7 +5,7 @@
     <BestPractices />
     <Services />
     <QuickProjectStart />
-    <Metrics />
+    <!-- <Metrics /> -->
     <WeUse />
     <Clients />
     <Reviews />
