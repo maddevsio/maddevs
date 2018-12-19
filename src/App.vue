@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <!-- <cookie-law
+    <cookie-law
       theme="blood-orange"
       :message="$t('cookie-message')"
       position="top"
       transitionName="slideFromTop"
-    ></cookie-law> -->
+    ></cookie-law>
     <Header @EventLanguage="getLanguage"/>
     <router-view :language="this.lang"/>
     <Footer />
@@ -33,25 +33,25 @@ export default {
       this.lang = lang;
     },
   },
-  // updated() {
-  //   const cookie = document.getElementsByClassName('Cookie');
-  //   const body = document.getElementsByTagName('body')[0];
-  //   const button = document.getElementsByClassName('Cookie__button')[0];
-  //   if (cookie.length > 0) {
-  //     this.cookieHeight = (cookie[0].clientHeight - 10) + 'px';
-  //     body.style.marginTop = this.cookieHeight;
-  //     button.addEventListener('click', () => {
-  //       body.style.marginTop = '0';
-  //     });
-  //     window.addEventListener('resize', () => {
-  //       try {
-  //         this.cookieHeight = (cookie[0].clientHeight - 10) + 'px';
-  //         body.style.marginTop = this.cookieHeight;
-  //       } catch (error) {
-  //         return true;
-  //       }
-  //     });
-  //   }
-  // },
+  updated() {
+    const cookie = document.getElementsByClassName('Cookie');
+    const body = document.getElementsByTagName('body')[0];
+    const button = document.getElementsByClassName('Cookie__button')[0];
+    if (cookie.length > 0) {
+      this.cookieHeight = (cookie[0].clientHeight - 10) + 'px';
+      body.style.marginTop = this.cookieHeight;
+      button.addEventListener('click', () => {
+        body.style.marginTop = '0';
+      });
+      window.addEventListener('resize', () => {
+        try {
+          this.cookieHeight = (cookie[0].clientHeight - 10) + 'px';
+          body.style.marginTop = this.cookieHeight;
+        } catch (error) {
+          return true;
+        }
+      });
+    }
+  },
 };
 </script>
