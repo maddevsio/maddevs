@@ -5,7 +5,7 @@
         <h2 class="sec-title">{{$t('Our blog')}}</h2>
         <div class="our-blog-wrap_list">
           <!-- Item 1 -->
-          <a :href="$t('blog1-link')" target="_blank" class="our-blog-wrap_list-item">
+          <a :href="$t('blog1-link')" target="_blank" rel="noreferrer" class="our-blog-wrap_list-item">
             <picture>
               <source media="(max-width: 576px)" srcset="../../assets/img/Home/png/our-blog/Uber@2x.png">
               <img src="../../assets/img/Home/png/our-blog/Uber.png" srcset="../../assets/img/Home/png/our-blog/Uber@2x.png 2x" alt="">
@@ -22,7 +22,7 @@
             </div>
           </a>
           <!-- Item 2 -->
-          <a :href="$t('blog2-link')" target="_blank" class="our-blog-wrap_list-item">
+          <a :href="$t('blog2-link')" target="_blank" rel="noreferrer" class="our-blog-wrap_list-item">
             <picture>
               <source media="(max-width: 576px)" srcset="../../assets/img/Home/png/our-blog/docker@2x.png">
               <img src="../../assets/img/Home/png/our-blog/docker.png" srcset="../../assets/img/Home/png/our-blog/docker@2x.png 2x" alt="">
@@ -39,7 +39,7 @@
             </div>
           </a>
           <!-- Item 3 -->
-          <a :href="$t('blog3-link')" target="_blank" class="our-blog-wrap_list-item">
+          <a :href="$t('blog3-link')" target="_blank" rel="noreferrer" class="our-blog-wrap_list-item">
             <picture>
               <source media="(max-width: 576px)" srcset="../../assets/img/Home/png/our-blog/mlm@2x.png">
               <img src="../../assets/img/Home/png/our-blog/mlm.png" srcset="../../assets/img/Home/png/our-blog/mlm@2x.png 2x" alt="">
@@ -56,7 +56,7 @@
             </div>
           </a>
           <!-- Item 4 -->
-          <a :href="$t('blog4-link')" target="_blank" class="our-blog-wrap_list-item">
+          <a :href="$t('blog4-link')" target="_blank" rel="noreferrer" class="our-blog-wrap_list-item">
             <picture>
               <source media="(max-width: 576px)" srcset="../../assets/img/Home/png/our-blog/gprc@2x.png">
               <img src="../../assets/img/Home/png/our-blog/gprc.png" srcset="../../assets/img/Home/png/our-blog/gprc@2x.png 2x" alt="">
@@ -73,7 +73,7 @@
             </div>
           </a>
           <!-- Item 5 -->
-          <a :href="$t('blog5-link')" target="_blank" class="our-blog-wrap_list-item">
+          <a :href="$t('blog5-link')" target="_blank" rel="noreferrer" class="our-blog-wrap_list-item">
             <picture>
               <source media="(max-width: 576px)" srcset="../../assets/img/Home/png/our-blog/docker-wp@2x.png">
               <img src="../../assets/img/Home/png/our-blog/docker-wp.png" srcset="../../assets/img/Home/png/our-blog/docker-wp@2x.png 2x" alt="">
@@ -90,7 +90,7 @@
             </div>
           </a>
           <!-- Item 6 -->
-          <a :href="$t('blog6-link')" target="_blank" class="our-blog-wrap_list-item">
+          <a :href="$t('blog6-link')" target="_blank" rel="noreferrer" class="our-blog-wrap_list-item">
             <picture>
               <source media="(max-width: 576px)" srcset="../../assets/img/Home/png/our-blog/mysql-go@2x.png">
               <img src="../../assets/img/Home/png/our-blog/mysql-go.png" srcset="../../assets/img/Home/png/our-blog/mysql-go@2x.png 2x" alt="">

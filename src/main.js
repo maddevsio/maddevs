@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Es6Promise from 'es6-promise';
 import VueScrollTo from 'vue-scrollto';
 import VueAnalytics from 'vue-analytics';
+import VueNumber from 'vue-number-animation';
 import App from './App';
 import store from './store';
 import router from './router';
@@ -17,6 +18,7 @@ Vue.use(VueAnalytics, {
 });
 
 Vue.use(VueHead);
+Vue.use(VueNumber);
 
 Vue.use(VueScrollTo, {
   container: 'body',

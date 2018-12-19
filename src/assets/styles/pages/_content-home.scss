@@ -1,25 +1,31 @@
 // -------------- Cookie ----------------- //
 .Cookie--blood-orange {
-  padding: 20px;
-  background-color: #1e1e1e !important;
+  padding: 10px 60px !important;
+  background-color: #fff !important;
+  box-shadow: 0 0 15px 0 rgba(38, 36, 32, 0.24);
+  .Cookie__buttons {
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0 !important;
+    margin-left: 20px !important;
+    margin-right: -10px !important;
+  }
   .Cookie__button {
-    border-radius: 5px !important;
-    background-color: #ec2227 !important;
-    color: #fff;
-    font-family: 'MADEEvolveSans-regular', sans-serif;
-    transition: all .1s ease;
-    white-space: nowrap;
-    margin: 0;
-    margin-left: 20px;
-    &:hover {
-      background-color: #ff6165 !important;
-    }
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url(../img/common/header/close-menu.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 10px !important;
+    background-position: center !important;
+    background-color: transparent !important;
+    color: transparent !important;
   }
   .Cookie__content {
-    max-width: 75%;
-    color: #fff;
+    color: #000;
     font-family: 'MADEEvolveSans-regular', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 !important; 
   }
 }
 //---------------- Banner -----------------//
@@ -679,12 +685,133 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin: 80px -20px 0;
     &_item {
+      width: 20%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      p {
+      position: relative;
+      margin: 0 20px;
+      &::before {
+        content: attr(data-text);
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -24px;
+        left: 50%;
+        transform: translateX(100%);
+        background-color: #ec2227;
+        color: #fff;
+        font-size: 15px;
+        font-family: 'MADEEvolveSans-bold', sans-serif;
+        font-weight: normal;
+        border-radius: 100%;
+        line-height: 0;
+        z-index: 1;
+      }
+      .quick-line {
+        width: calc(100% + 40px);
+        position: absolute;
+        left: calc(50% + 36px);
+        top: -50px;
+        stroke-dasharray: 5;
+        z-index: 0;
+      }
+      .quick-line_dashed {
+        opacity: .2;
+      }
+      .quick-line_white_run {
+        stroke-dasharray: 300;
+        animation: dash 1s ease forwards;
+      }
+      .quick-line_white2 {
+        animation-delay: .8s;
+      }
+      .quick-line_white3 {
+        animation-delay: 1.6s;
+      }
+      .quick-line_white4 {
+        animation-delay: 2.5s;
+      }
+
+      img {
+        width: 62px;
+        height: 62px;
+        max-width: 62px;
+        max-height: 62px;
+      }
+      h4 {
+        margin-top: 32px;
+        font-size: 24px;
+        font-family: 'MADEEvolveSans-bold',
+        sans-serif;
+        font-weight: normal;
+        color: #2c1c1c;
         text-align: center;
+        white-space: pre;
+      }
+      p {
+        width: 100%;
+        margin-top: 8px;
+        font-size: 18px;
+        line-height: 1.33;
+        font-family: 'MADEEvolveSans-regular',
+        sans-serif;
+        font-weight: normal;
+        text-align: center;
+      }
+    }
+  }
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 290;
+  }
+}
+//------------------ Metrics ----------------//
+.metrics {
+  padding: 60px 0 0;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    &_item {
+      width: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px;
+      img {
+        width: 62px;
+        height: 62px;
+      }
+      span {
+        font-size: 62px;
+        color: #2c1c1c;
+        font-family: 'MADEEvolveSans-bold',
+        sans-serif;
+        font-weight: normal;
+        line-height: 1;
+        margin: 24px 0 12px;
+      }
+      h4 {
+        width: 100%;
+        text-align: center;
+        font-family: 'MADEEvolveSans-regular',
+        sans-serif;
+        font-weight: normal;
+        font-size: 24px;
+        color: #2c1c1c;
+        line-height: 1.33;
+        white-space: pre;
       }
     }
   }
