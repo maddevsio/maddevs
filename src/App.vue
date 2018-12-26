@@ -1,11 +1,6 @@
 <template>
   <div id="app">
-    <!-- <cookie-law
-      theme="blood-orange"
-      :message="$t('cookie-message')"
-      position="top"
-      transitionName="slideFromTop"
-    ></cookie-law> -->
+    <Cookie />
     <Header @EventLanguage="getLanguage"/>
     <router-view :language="this.lang"/>
     <Footer />
@@ -15,43 +10,22 @@
 <script>
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Cookie from './components/blocks/cookie';
 import i18n from 'i18next';
-import CookieLaw from 'vue-cookie-law';
 import './assets/styles/index.scss';
 
 export default {
   name: 'App',
   data() {
     return {
-      lang: i18n.language,
-      cookieHeight: 0
+      lang: i18n.language
     };
   },
-  components: { Header, Footer, CookieLaw },
+  components: { Header, Footer, Cookie },
   methods: {
     getLanguage(lang) {
       this.lang = lang;
     },
-  },
-  // updated() {
-  //   const cookie = document.getElementsByClassName('Cookie');
-  //   const body = document.getElementsByTagName('body')[0];
-  //   const button = document.getElementsByClassName('Cookie__button')[0];
-  //   if (cookie.length > 0) {
-  //     this.cookieHeight = (cookie[0].clientHeight - 10) + 'px';
-  //     body.style.marginTop = this.cookieHeight;
-  //     button.addEventListener('click', () => {
-  //       body.style.marginTop = '0';
-  //     });
-  //     window.addEventListener('resize', () => {
-  //       try {
-  //         this.cookieHeight = (cookie[0].clientHeight - 10) + 'px';
-  //         body.style.marginTop = this.cookieHeight;
-  //       } catch (error) {
-  //         return true;
-  //       }
-  //     });
-  //   }
-  // },
+  }
 };
 </script>
