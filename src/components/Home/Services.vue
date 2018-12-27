@@ -68,6 +68,10 @@ export default {
         }
       }, false);
     }
+    if (window.scrollY + 700 >= blocks.offsetTop) {
+      arrow.classList.add('anim-arrow');
+      blocks.classList.add('anim-open');
+    }
   }
 };
 </script>
