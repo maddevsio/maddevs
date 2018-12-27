@@ -18,7 +18,7 @@
               <img src="../assets/img/common/header/fb-header.svg" alt="Facebook">
             </a>
           </div>
-          <button class="mobile-menu_btn" v-on:click.prevent="switchLanguage">
+          <button class="switch-lang" v-on:click.prevent="switchLanguage">
             {{ lang === 'en' ? 'Русский' : 'English' }}
           </button>
         </div>
