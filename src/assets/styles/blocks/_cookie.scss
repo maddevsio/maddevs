@@ -28,7 +28,7 @@
     font-family: 'MADEEvolveSans-regular', sans-serif;
     font-size: 14px;
     line-height: 1.4;
-    margin: 0 !important;
+    margin-right: 20px;
   }
 }
 
@@ -41,5 +41,23 @@
   }
   button {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cookie-notif {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .cookie-notif {
+    padding-left: 16px;
+    padding-right: 16px;
+    &_button {
+      min-width: 40px;
+      min-height: 40px;
+    }
   }
 }
