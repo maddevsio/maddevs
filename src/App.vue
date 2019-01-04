@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <Cookie /> -->
+    <Cookie />
     <Header @EventLanguage="getLanguage"/>
     <router-view :language="this.lang"/>
     <Footer />
