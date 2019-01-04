@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 60px;
+  padding-right: 50px;
   box-sizing: border-box;
   background-color: #fff;
   box-shadow: 0 0 15px 0 rgba(38, 36, 32, 0.24);
@@ -47,14 +48,14 @@
 @media only screen and (max-width: 768px) {
   .cookie-notif {
     padding-left: 54px;
-    padding-right: 54px;
+    padding-right: 46px;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .cookie-notif {
     padding-left: 16px;
-    padding-right: 16px;
+    padding-right: 0;
     &_button {
       min-width: 40px;
       min-height: 40px;
