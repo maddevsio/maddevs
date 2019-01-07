@@ -136,6 +136,18 @@ export default {
     enableScrollOnBody() {
       document.body.classList.remove('scrollDisabled');
     }
+  },
+  mounted() {
+    var self = this;
+    window.addEventListener('resize', function(e) {
+      if (window.innerWidth >= 480) {
+        document.body.classList.remove('scrollDisabled');
+      } else if (window.innerWidth < 480) {
+        if (self.mobileMenu === true) {
+          document.body.classList.add('scrollDisabled');
+        }
+      }
+    });
   }
 };
 </script>
