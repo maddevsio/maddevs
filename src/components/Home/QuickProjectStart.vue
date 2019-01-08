@@ -71,6 +71,11 @@ export default {
         }
       }
     }, false);
+    if (window.scrollY + 700 >= quick.offsetTop) {
+      for (let i = 0; i < steps.length; i++) {
+        steps[i].classList.add('quick-line_white_run');
+      }
+    }
   }
 };
 </script>

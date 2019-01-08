@@ -43,113 +43,113 @@
         </div>
         <div class="speakers_wrap-people">
             <div onclick="void(0)" class="speakers_wrap-people-item">
-                <img src="../../assets/img/Home/jpg/speakers/1.jpg" srcset="../../assets/img/Home/jpg/speakers/1@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/1@3x.jpg 3x" alt="People">
+                <img src="../../assets/img/Home/jpg/speakers/1@2x.jpg" alt="People">
+                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/ss-126686017">
+                    <div class="people-info-block__header">
+                        <div class="people-info-block__header-line">
+                            <p>GDG Bishkek 2018</p>
+                        </div>
+                    </div>
+                    <p>{{$t('speaker1')}}</p>
+                </a>
+            </div>
+            <div onclick="void(0)" class="speakers_wrap-people-item">
+                <img src="../../assets/img/Home/jpg/speakers/2@2x.jpg" alt="People">
                 <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/grpc-91167163">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>GopherCon Russia 2018</p>
                         </div>
                     </div>
-                    <p>{{$t('gRPC for mobile applications in production')}}</p>
+                    <p>{{$t('speaker2')}}</p>
                 </a>
             </div>
             <div onclick="void(0)" class="speakers_wrap-people-item">
-                <img src="../../assets/img/Home/jpg/speakers/2.jpg" srcset="../../assets/img/Home/jpg/speakers/2@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/2@3x.jpg 3x" alt="People">
-                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/ss-102761804">
+                <img src="../../assets/img/Home/jpg/speakers/3@2x.jpg" alt="People">
+                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/ss-126685237">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
-                            <p>Mad Talks</p>
+                            <p>GDG Tashkent 2018</p>
                         </div>
                     </div>
-                    <p>{{$t('The basics of IP-telephony')}}</p>
+                    <p>{{$t('speaker3')}}</p>
                 </a>
             </div>
             <div onclick="void(0)" class="speakers_wrap-people-item">
-                <img src="../../assets/img/Home/jpg/speakers/3.jpg" srcset="../../assets/img/Home/jpg/speakers/3@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/3@3x.jpg 3x" alt="People">
-                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/triggermesh-faas-kubernetes">
+                <img src="../../assets/img/Home/jpg/speakers/4@2x.jpg" alt="People">
+                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/triggermesh-faas-kubernetes?qid=29086399-ad2d-4d0e-b8ee-4c2537ca274a&v=&b=&from_search=4">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>South Dev Fest 2018</p>
                         </div>
                     </div>
-                    <p>{{$t('Triggermesh - Faas platform on Kubernetes')}}</p>
-                </a>
-            </div>
-            <div onclick="void(0)" class="speakers_wrap-people-item">
-                <img src="../../assets/img/Home/jpg/speakers/4.jpg" srcset="../../assets/img/Home/jpg/speakers/4@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/4@3x.jpg 3x" alt="People">
-                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/ss-116840322">
-                    <div class="people-info-block__header">
-                        <div class="people-info-block__header-line">
-                            <p>Mad Talks</p>
-                        </div>
-                    </div>
-                    <p>{{$t('Applied Hardware Programming The case of water ordering automatization')}}</p>
+                    <p>{{$t('speaker4')}}</p>
                 </a>
             </div>
              <div onclick="void(0)" class="speakers_wrap-people-item">
-                <img src="../../assets/img/Home/jpg/speakers/5.jpg" srcset="../../assets/img/Home/jpg/speakers/5@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/5@3x.jpg 3x" alt="People">
-                <a class="people-info-block" href="https://www.slideshare.net/maddevs/telegram-google-creating-a-telegram-bot-with-google-services-free" target="_blank" rel="noreferrer">
+                <img src="../../assets/img/Home/jpg/speakers/5@2x.jpg" alt="People">
+                <a class="people-info-block" href="https://www.slideshare.net/maddevs/tensorflow-126685365" target="_blank" rel="noreferrer">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
-                            <p>GDG Almaty 2016</p>
+                            <p>GDG Tashkent 2018</p>
                         </div>
                     </div>
-                    <p>{{$t('Creation of Telegram-bot with the help of Google services for free')}}</p>
+                    <p>{{$t('speaker5')}}</p>
                 </a>
             </div>
             <div onclick="void(0)" class="speakers_wrap-people-item">
-                <img src="../../assets/img/Home/jpg/speakers/7.jpg" srcset="../../assets/img/Home/jpg/speakers/7@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/7@3x.jpg 3x" alt="People">
-                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/grpc-75458612">
-                    <div class="people-info-block__header">
-                        <div class="people-info-block__header-line">
-                            <p>Kolesa/web</p>
-                        </div>
-                    </div>
-                    <p>{{$t('Introduction to gRPC')}}</p>
-                </a>
-            </div>
-            <div onclick="void(0)" class="speakers_wrap-people-item">
-                <img src="../../assets/img/Home/jpg/speakers/6.jpg" srcset="../../assets/img/Home/jpg/speakers/6@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/6@3x.jpg 3x" alt="People">
+                <img src="../../assets/img/Home/jpg/speakers/6@2x.jpg" alt="People">
                 <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/kotlin-116845515">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>GDG Almaty 2017</p>
                         </div>
                     </div>
-                    <p>{{$t('Kotlin Introduction')}}</p>
+                    <p>{{$t('speaker6')}}</p>
                 </a>
             </div>
             <div onclick="void(0)" class="speakers_wrap-people-item">
-                <img src="../../assets/img/Home/jpg/speakers/8.jpg" srcset="../../assets/img/Home/jpg/speakers/8@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/8@3x.jpg 3x" alt="People">
-                <a class="people-info-block" href="https://www.slideshare.net/maddevs/the-project-adventure-from-developer-computer-to-serious-loads" target="_blank" rel="noreferrer">
+                <img src="../../assets/img/Home/jpg/speakers/7@2x.jpg" alt="People">
+                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/ss-126685278">
+                    <div class="people-info-block__header">
+                        <div class="people-info-block__header-line">
+                            <p>GDG Tashkent 2018</p>
+                        </div>
+                    </div>
+                    <p>{{$t('speaker7')}}</p>
+                </a>
+            </div>
+            <div onclick="void(0)" class="speakers_wrap-people-item">
+                <img src="../../assets/img/Home/jpg/speakers/8@2x.jpg" alt="People">
+                <a class="people-info-block" href="https://www.slideshare.net/maddevs/grpc-75458612" target="_blank" rel="noreferrer">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>HighLoad Junior 2017</p>
                         </div>
                     </div>
-                    <p>{{$t("The project adventures from developer's computer to high load")}}</p>
+                    <p>{{$t('speaker8')}}</p>
                 </a>
             </div>
             <div onclick="void(0)" class="speakers_wrap-people-item">
-                <img src="../../assets/img/Home/jpg/speakers/9.jpg" srcset="../../assets/img/Home/jpg/speakers/9@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/9@3x.jpg 3x" alt="People">
-                <a class="people-info-block" href="https://www.slideshare.net/maddevs/project-management-central-asia-vs-united-states" target="_blank" rel="noreferrer">
-                    <div class="people-info-block__header">
-                        <div class="people-info-block__header-line">
-                            <p>GDG Almaty 2017</p>
-                        </div>
-                    </div>
-                    <p>{{$t('Project Management Central Asia vs the US')}}</p>
-                </a>
-            </div>
-            <div onclick="void(0)" class="speakers_wrap-people-item">
-                <img src="../../assets/img/Home/jpg/speakers/10.jpg" srcset="../../assets/img/Home/jpg/speakers/10@2x.jpg 2x, ../../assets/img/Home/jpg/speakers/10@3x.jpg 3x" alt="People">
-                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/pm-digital-nomad-or-how-to-manage-a-totally-remote-team">
+                <img src="../../assets/img/Home/jpg/speakers/9@2x.jpg" alt="People">
+                <a class="people-info-block" href="https://www.slideshare.net/maddevs/pm-digital-nomad-or-how-to-manage-a-totally-remote-team" target="_blank" rel="noreferrer">
                     <div class="people-info-block__header">
                         <div class="people-info-block__header-line">
                             <p>Outsource People 2017</p>
                         </div>
                     </div>
-                    <p>{{$t('PM Digital Nomad (or How to Manage a Totally Remote Team)')}}</p>
+                    <p>{{$t('speaker9')}}</p>
+                </a>
+            </div>
+            <div onclick="void(0)" class="speakers_wrap-people-item">
+                <img src="../../assets/img/Home/jpg/speakers/10@2x.jpg" alt="People">
+                <a class="people-info-block" target="_blank" rel="noreferrer" href="https://www.slideshare.net/maddevs/comedian-126685429">
+                    <div class="people-info-block__header">
+                        <div class="people-info-block__header-line">
+                            <p>GDG Bishkek 2018</p>
+                        </div>
+                    </div>
+                    <p>{{$t('speaker10')}}</p>
                 </a>
             </div>
         </div>
