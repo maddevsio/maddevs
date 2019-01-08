@@ -2,8 +2,8 @@
   <section id="banner" class="banner">
     <div class="video-background">
       <video autoplay muted loop id="BgVideo" poster="../../assets/img/Home/jpg/posters/cover_video_1366x610.jpg">
-        <source src="../../assets/media/Mad Devs Working Process.mp4" type="video/mp4">
-        <source src="../../assets/media/videoplayback.webm" type='video/webm; codecs="vp8, vorbis"' />
+        <source src="../../assets/media/MadDevsWorkingProcess.mp4" type="video/mp4">
+        <source src="../../assets/media/MadDevsWorkingProcess.webm" type='video/webm; codecs="vp8, vorbis"' />
       </video>
     </div>
     <div class="container">

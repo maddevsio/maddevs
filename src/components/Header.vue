@@ -18,7 +18,7 @@
               <img src="../assets/img/common/header/fb-header.svg" alt="Facebook">
             </a>
           </div>
-          <button class="mobile-menu_btn" v-on:click.prevent="switchLanguage">
+          <button class="switch-lang" v-on:click.prevent="switchLanguage">
             {{ lang === 'en' ? 'Русский' : 'English' }}
           </button>
         </div>
@@ -136,6 +136,18 @@ export default {
     enableScrollOnBody() {
       document.body.classList.remove('scrollDisabled');
     }
+  },
+  mounted() {
+    var self = this;
+    window.addEventListener('resize', function(e) {
+      if (window.innerWidth >= 480) {
+        document.body.classList.remove('scrollDisabled');
+      } else if (window.innerWidth < 480) {
+        if (self.mobileMenu === true) {
+          document.body.classList.add('scrollDisabled');
+        }
+      }
+    });
   }
 };
 </script>

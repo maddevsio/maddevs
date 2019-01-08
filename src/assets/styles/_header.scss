@@ -52,13 +52,14 @@
     width: 40px;
     height: 70px;
   }
-  .mobile-menu_btn {
+  .switch-lang {
     background-color: transparent;
     color: #fff;
     font-size: 14px;
     font-family: 'MADEEvolveSans-regular', sans-serif;
     border: none;
     cursor: pointer;
+    padding-right: 0;
   }
   &-mobile-menu {
     width: 100%;
@@ -172,7 +173,7 @@
     .header_soc-icons {
       display: none;
     }
-    .mobile-menu_btn {
+    .switch-lang {
       font-size: 14px;
     }
   }
