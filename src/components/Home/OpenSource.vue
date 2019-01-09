@@ -27,16 +27,16 @@
             <p>{{$t('Tool for monitoring the security of Ethereum smart contracts as a badge in the repository')}}</p>
           </div>
         </a>
-        <a href="https://tool.peklo.studio/" target="_blank" rel="noreferrer" class="open-source_wrap-projects_list-item op-proj-3">
+        <a href="https://comedian-bot.maddevs.io" target="_blank" rel="noreferrer" class="open-source_wrap-projects_list-item op-proj-3">
           <div class="projects-img_wrap">
-            <img src="../../assets/img/Home/svg/openSource/PKL.svg" class="op-img-sf" alt="Sensor fusion">
+            <img src="../../assets/img/Home/svg/openSource/comedian.svg" class="op-img-sf" alt="Comedian">
           </div>
           <div class="projects-desc_wrap">
-            <h4>Peklo Tool</h4>
-            <p>{{$t('Tool for automating the process of contextual advirtisement creation')}}</p>
+            <h4>Comedian</h4>
+            <p>{{$t('pet-projects_item-desc-3')}}</p>
           </div>
         </a>
-        <a href="https://idmatch.co/" target="_blank" rel="noreferrer" class="open-source_wrap-projects_list-item op-proj-4">
+        <a href="https://idmatch.co" target="_blank" rel="noreferrer" class="open-source_wrap-projects_list-item op-proj-4">
           <div class="projects-img_wrap">
             <img src="../../assets/img/Home/svg/openSource/id.svg" class="op-img-opensourse" alt="IDmatch">
           </div>
