@@ -27,7 +27,7 @@
             <p>{{$t('Tool for monitoring the security of Ethereum smart contracts as a badge in the repository')}}</p>
           </div>
         </a>
-        <a href="https://comedian-bot.maddevs.io" target="_blank" rel="noreferrer" class="open-source_wrap-projects_list-item op-proj-3">
+        <a href="https://comedian.maddevs.io" target="_blank" rel="noreferrer" class="open-source_wrap-projects_list-item op-proj-3">
           <div class="projects-img_wrap">
             <img src="../../assets/img/Home/svg/openSource/comedian.svg" class="op-img-sf" alt="Comedian">
           </div>
