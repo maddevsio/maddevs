@@ -2,7 +2,7 @@
   <section id="speakers" class="speakers">
     <div class="container">
       <div class="speakers_wrap">
-        <h2 class="sec-title">{{$t('We constantly learn, gain experience and share it by speaking at the conferences')}}</h2>
+        <h2 class="sec-title">{{$t('We develop, gain experience and share it by speaking at conferences')}}</h2>
         <div class="speakers_wrap-places">
             <div class="speakers_wrap-places-item">
                 <img src="../../assets/img/Home/svg/speakers/hl.svg" alt="hl">
