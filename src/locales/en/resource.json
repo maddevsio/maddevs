@@ -177,7 +177,6 @@
   "Partners-block1": "Artificial intelligence + Blockchain. A limitless ability to forecast the future",
   "Partners-block2": "Teacherly enables the quality of lesson planning through online collaboration",
   "Partners-block3": "Platform enables a secure ecosystem of Ethereum dapps & smarts contracts",
-  "address-footer": "Business Center ”Victory”, 103 Ibraimov St., Bishkek, the Kyrgyz Republic",
   "I want more open source projects": "I want more open source projects",
   "View all projects on GitHub": "View all projects on GitHub",
   "All our customers": "All our customers",
@@ -235,5 +234,10 @@
   "metrics-item2": "Average\nteam size",
   "metrics-item3": "Average\nproject length",
   "metrics-item4": "Сlient's\nlocations",
-  "metrics-item5": "Successful\nprojects"
+  "metrics-item5": "Successful\nprojects",
+  "address-footer-uk-title": "Headquarters",
+  "address-footer-uk": "Station Road, Cambridge CB12LA, United Kingdom",
+  "address-footer-kg-title": "Office",
+  "address-footer-kg": "103 Ibraimov St., Bishkek, the Kyrgyz Republic",
+  "address-footer-email-title": "Contact us"
 }
