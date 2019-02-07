@@ -95,7 +95,7 @@
   "Accurate and ”pure” data from GPS-recivers proceeded with Kalman's filter": "Точные и ”чистые” данные с GPS-приемников на основе фильтра Калмана",
   "pet-projects_item-desc-3": "Чат бот для автоматизации приемки удаленных стендапов.",
   "Tool for monitoring the security of Ethereum smart contracts as a badge in the repository": "Инструмент для мониторинга безопасности смарт-контрактов Эфириума",
-  "We develop, gain experience and share it by speaking at conferences.": "Мы развиваемся, получаем опыт, делимся им, выступая на конференциях",
+  "We develop, gain experience and share it by speaking at conferences": "Мы развиваемся, получаем опыт, делимся им, выступая на конференциях",
   "A series of IT conferences for developers around the world": "Серия IT-конференций для разработчиков, проводимая по всему миру",
   "full list of conferences": "полный список конференций",
   "Membership in associations ": "Ассоциации в которых мы состоим",
@@ -176,7 +176,6 @@
   "Partners-block1": "Безграничные возможности для прогнозирования будущего с помощью искусственного интеллекта и блокчейна.",
   "Partners-block2": "Онлайн платформа для планирования занятий и совместной работы преподавателей.",
   "Partners-block3": "Платформа для создания безопасной экосистемы смарт-контрактов и децентрализованных приложений.",
-  "address-footer": "БЦ ”Victory”, Ибрагимова 103, Бишкек, Кыргызская Республика",
   "I want more open source projects": "Показать больше проектов",
   "View all projects on GitHub": "Посмотреть все проекты на GitHub",
   "All our customers": "Все наши клиенты",
@@ -234,5 +233,10 @@
   "metrics-item2": "разработчиков\nв команде",
   "metrics-item3": "дней работы\nнад проектом",
   "metrics-item4": "стран\nнаши клиенты",
-  "metrics-item5": "успешных\nпроектов"
+  "metrics-item5": "успешных\nпроектов",
+  "address-footer-uk-title": "Головной офис",
+  "address-footer-uk": "Station Road, Cambridge CB12LA, United Kingdom",
+  "address-footer-kg-title": "Офис",
+  "address-footer-kg": "Ибраимова 103, Бишкек, Кыргызская Республика",
+  "address-footer-email-title": "Напишите нам"
 }
