@@ -13,7 +13,7 @@
                     <p>{{ $t('jobs2-desc') }}</p>
                     <h6>{{ $t('jobs2-date') }}</h6>
                 </a> -->
-                <a href="https://blog.maddevs.io/static-code-analysis-developer-34dde50cdbff" class="jobs_list-item" target="_blank" rel="noreferrer">
+                <a href="https://blog.maddevs.io/middle-php-developer-91074783ac13" class="jobs_list-item" target="_blank" rel="noreferrer">
                     <h4>{{ $t('jobs3-subtitle') }}</h4>
                     <p>{{ $t('jobs3-desc') }}</p>
                     <h6>{{ $t('jobs3-date') }}</h6>
