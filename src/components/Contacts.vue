@@ -211,7 +211,7 @@ export default {
   }
 }
 
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 768px) {
   .contacts-wrap {
     width: 100%;
   }
