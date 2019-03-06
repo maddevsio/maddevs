@@ -19,7 +19,7 @@
         </a>
         <a href="https://mythril.ai" target="_blank" rel="noreferrer" class="partners-wrap_item">
           <div class="partners-wrap_item_img">
-            <img src="../../assets/img/Home/svg/partners/mythril.svg" alt="">
+            <img src="../../assets/img/Home/svg/partners/MythX.svg" alt="MythX">
           </div>
           <p>{{ $t('Partners-block3') }}</p>
           <a>https://mythril.ai</a>
