@@ -643,6 +643,9 @@
                             height: 15px;
                         }
                     }
+                    .namba-taxi img {
+                        height: 20px;
+                    }
                     .photobook {
                         img {
                             height: 18px;
@@ -1062,6 +1065,12 @@
                     }
                 }
             }
+        }
+    }
+
+    .clients {
+        .namba-taxi img {
+            height: 15px;
         }
     }
 }

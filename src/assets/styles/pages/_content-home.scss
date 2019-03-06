@@ -967,6 +967,9 @@
             max-width: 150px;
           }
         }
+        .GuardRails img {
+          height: 36px;
+        }
       }
     }
   }
@@ -1000,8 +1003,16 @@
         align-items: center;
         justify-content: center;
         height: 120px;
+        img {
+          width: 150px;
+        }
       }
-
+      
+      &:last-child {
+        img {
+          width: 80px;
+        }
+      }
       a {
         font-size: 14px;
         font-family: 'MADEEvolveSans-regular', sans-serif;
