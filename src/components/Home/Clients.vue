@@ -51,7 +51,7 @@
               <img src="../../assets/img/Home/svg/clients/kaf.svg" alt="kaf">
             </a>
             <a>
-              <img src="../../assets/img/Home/svg/clients/namba-taxi.svg" alt="namba-taxi">
+              <img src="../../assets/img/Home/svg/clients/socialshopwave.svg" alt="socialshopwave">
             </a>
             <a class="small-image">
               <img src="../../assets/img/Home/svg/clients/nambafood.svg" alt="nambafood">
@@ -59,20 +59,20 @@
             <a class="small-image">
               <img src="../../assets/img/Home/svg/clients/silkroadexplore.svg" alt="silkroadexplore">
             </a>
-            <a>
-              <img src="../../assets/img/Home/svg/clients/besmart.svg" alt="besmart">
-            </a>
             <a class="lakediamond">
               <img src="../../assets/img/Home/png/clients/lakediamond@2x.png" alt="lakediamond" />
             </a>
             <a>
-              <img src="../../assets/img/Home/svg/clients/idmatch.svg" alt="">
+              <img src="../../assets/img/Home/svg/clients/idmatch.svg" alt="IdMatch">
+            </a>
+            <a>
+              <img src="../../assets/img/Home/svg/clients/besmart.svg" alt="besmart">
             </a>
             <a>
               <img src="../../assets/img/Home/svg/clients/inn-4-pet.svg" alt="inn-4-pet">
             </a>
-            <a>
-              <img src="../../assets/img/Home/svg/clients/socialshopwave.svg" alt="socialshopwave">
+            <a class="GuardRails">
+              <img src="../../assets/img/Home/svg/clients/GuardRails.svg" alt="GuardRails">
             </a>
             <a class="tengri">
               <img src="../../assets/img/Home/svg/clients/tengri.svg" alt="tengri">
@@ -94,6 +94,9 @@
             </a>
              <a class="small-image">
               <img src="../../assets/img/Home/svg/clients/diesel.svg" alt="diesel">
+            </a>
+            <a class="namba-taxi">
+              <img src="../../assets/img/Home/svg/clients/namba-taxi.svg" alt="namba-taxi">
             </a>
             <a class="scentomania">
               <img src="../../assets/img/Home/svg/clients/scento.svg" alt="scento">
