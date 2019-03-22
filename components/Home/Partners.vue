@@ -1,0 +1,99 @@
+<template>
+  <section id="partners" class="partners">
+    <div class="container">
+      <h2 class="sec-title">{{$t('Partners')}}</h2>
+      <div class="partners-wrap">
+        <a href="https://neureal.net" target="_blank" rel="noreferrer" class="partners-wrap_item">
+          <div class="partners-wrap_item_img">
+            <img src="../../assets/img/Home/svg/partners/neureal.svg" alt="">
+          </div>
+          <p>{{ $t('Partners-block1') }}</p>
+          <a>https://neureal.net/</a>
+        </a>
+        <a href="https://teacherly.io/" target="_blank" rel="noreferrer" class="partners-wrap_item">
+          <div class="partners-wrap_item_img">
+            <img src="../../assets/img/Home/svg/partners/teacherly.svg" alt="">
+          </div>
+          <p>{{ $t('Partners-block2') }}</p>
+          <a>https://teacherly.io/</a>
+        </a>
+        <a href="https://mythril.ai" target="_blank" rel="noreferrer" class="partners-wrap_item">
+          <div class="partners-wrap_item_img">
+            <img src="../../assets/img/Home/svg/partners/MythX.svg" alt="MythX">
+          </div>
+          <p>{{ $t('Partners-block3') }}</p>
+          <a>https://mythril.ai</a>
+        </a>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: 'partners'
+};
+</script>
+
+<style lang="scss" scoped>
+.partners {
+  background-color: #fff;
+  padding: 120px 0 60px;
+  &-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    &_item {
+      width: 370px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: 5px;
+      background-color: #fff;
+      padding: 60px 30px;
+      box-sizing: border-box;
+      text-decoration: none;
+      &_img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        img {
+          width: 150px;
+        }
+      }
+      
+      &:last-child {
+        img {
+          width: 80px;
+        }
+      }
+      a {
+        font-size: 14px;
+        font-family: 'MADEEvolveSans-regular', sans-serif;
+        line-height: 1;
+        color: #ec2227;
+        text-align: center;
+        margin-top: auto;
+      }
+
+      p {
+        max-width: 430px;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'MADEEvolveSans-regular', sans-serif;
+        color: #000;
+        color: #000;
+        line-height: 1.5;
+        margin: 18px 0;
+        span {
+          font-family: 'MADEEvolveSans-medium', sans-serif;
+        }
+      }
+    }
+  }
+}
+</style>
+
