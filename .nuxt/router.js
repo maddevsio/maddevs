@@ -2,10 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _2ac887c0 = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
+const _6add4473 = () => interopDefault(import('../pages/jobs.vue' /* webpackChunkName: "pages/jobs" */))
 const _4a806285 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 const _6cd05583 = () => interopDefault(import('../pages/_lang/index.vue' /* webpackChunkName: "pages/_lang/index" */))
-const _4d187abe = () => interopDefault(import('../pages/_lang/about.vue' /* webpackChunkName: "pages/_lang/about" */))
+const _1963f9b5 = () => interopDefault(import('../pages/_lang/jobs.vue' /* webpackChunkName: "pages/_lang/jobs" */))
 
 Vue.use(Router)
 
@@ -82,9 +82,9 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
-      path: "/about",
-      component: _2ac887c0,
-      name: "about"
+      path: "/jobs",
+      component: _6add4473,
+      name: "jobs"
     }, {
       path: "/",
       component: _4a806285,
@@ -94,9 +94,9 @@ export function createRouter() {
       component: _6cd05583,
       name: "lang"
     }, {
-      path: "/:lang/about",
-      component: _4d187abe,
-      name: "lang-about"
+      path: "/:lang/jobs",
+      component: _1963f9b5,
+      name: "lang-jobs"
     }],
 
     fallback: false
