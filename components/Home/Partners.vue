@@ -95,5 +95,31 @@ export default {
     }
   }
 }
-</style>
+@media only screen and (max-width: 992px) {
+  .partners {
+    &-wrap {
+      flex-direction: column;
+      align-items: center;
 
+      &_item {
+        width: 100%;
+        max-width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .partners {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &-wrap {
+      &_item {
+        width: 100%;
+      }
+    }
+  }
+}
+</style>

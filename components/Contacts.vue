@@ -216,4 +216,168 @@ export default {
     width: 100%;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .contacts {
+    &-wrap {
+      &_list {
+        &-item {
+          p {
+            font-size: 18px;
+          }
+
+          a {
+            font-size: 18px;
+          }
+        }
+
+        .phone-mail {
+          width: 33%;
+
+          a {
+            margin-right: 0;
+
+            &:last-child {
+              float: right;
+            }
+          }
+
+          &_wrap {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .contacts {
+    &-wrap {
+      &_list {
+        .phone-mail {
+          &_wrap {
+            display: flex;
+            flex-direction: column;
+
+            a {
+              margin: 8px 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contacts {
+    &-wrap {
+      width: 100%;
+      &_list {
+        flex-wrap: wrap;
+
+        &-item {
+          p {
+            font-size: inherit;
+          }
+
+          a {
+            font-size: initial;
+          }
+        }
+
+        .phone-mail {
+          width: 66%;
+          white-space: nowrap;
+
+          a {
+            white-space: nowrap;
+            margin-right: 0;
+            font-size: 20px;
+          }
+
+          &_wrap {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            a {
+              padding: 0 5px;
+            }
+          }
+        }
+
+        .social-icons {
+          width: 100%;
+
+          &_list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contacts {
+    padding: 60px 0 40px;
+
+    &-wrap {
+      &_list {
+        flex-direction: column;
+        margin-top: 40px;
+
+        .address {
+          width: 100%;
+          text-align: center;
+
+          p {
+            width: 260px;
+            font-size: 18px;
+            margin: 0 auto;
+          }
+        }
+
+        .phone-mail {
+          width: 100%;
+          padding: 0;
+          margin-top: 40px;
+          text-align: center;
+
+          &_wrap {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+
+        .social-icons {
+          width: 100%;
+          margin-top: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .contacts-wrap_list {
+    margin-bottom: 30px;
+
+    .social-icons_list {
+      flex-direction: column;
+    }
+
+    .social-icons_list-row:first-child {
+      margin-bottom: 20px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
 </style>

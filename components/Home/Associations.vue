@@ -42,5 +42,72 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 540px) {
+  .associations-wrap_list .htp {
+    img {
+      height: 45px;
+    }
+  }
+
+  .associations-wrap_list .kssda {
+    img {
+      height: 35px;
+    }
+  }
+
+  .associations-wrap_list .amcham {
+    img {
+      height: 40px;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .associations {
+    padding: 80px 0;
+
+    &-wrap {
+      h3 {
+        width: 200px;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      &_list {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+
+        &-item {
+          width: 50%;
+          text-align: center;
+
+          &:first-child {
+            text-align: left;
+          }
+
+          &:nth-child(2) {
+            text-align: right;
+          }
+
+          &:last-child {
+            margin-top: 40px;
+          }
+        }
+
+        .kssda {
+          img {
+            height: 35px;
+          }
+        }
+
+        .amcham {
+          img {
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
 </style>
 

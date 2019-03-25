@@ -177,4 +177,72 @@ export default {
     stroke-dashoffset: 290;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .quick-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+
+    &_item {
+      width: 32%;
+      margin-top: 84px;
+      margin-left: 0;
+      margin-right: 0;
+
+      &:nth-child(3) {
+        .quick-line {
+          visibility: hidden;
+        }
+      }
+
+      .quick-line_white4 {
+        animation-delay: 1.6s;
+      }
+
+      p {
+        width: 200px;
+      }
+
+      .quick-line {
+        left: calc(50% + 21px);
+        transform: rotate(1deg) scaleX(1.03);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  .quick-list_item .quick-line {
+    transform: rotate(1deg) scaleX(1.01);
+    top: -45px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .quick-list_item {
+    width: 48%;
+
+    .quick-line {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 540px) {
+  .quick-list_item {
+    width: 46%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .quick {
+    padding-bottom: 0;
+
+    &-list_item {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+
+      p {
+        width: 250px;
+      }
+    }
+  }
+}
 </style>

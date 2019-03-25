@@ -204,5 +204,33 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 992px) {
+  .our-blog {
+    &-wrap_list-item {
+      .our-blog_sender h5 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 830px) {
+  .our-blog {
+    &-wrap_list-item {
+      width: 49%;
+    }
+  }
+}
+@media only screen and (max-width: 680px) {
+  .our-blog {
+    padding: 60px 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .our-blog {
+    &-wrap_list-item {
+      width: 100%;
+    }
+  }
+}
 </style>
 
