@@ -67,3 +67,32 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 54px;
+  }
+
+  .sec-title {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .sec-title {
+    line-height: 1.2;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sec-title {
+    font-size: 28px;
+  }
+}
+</style>
+
