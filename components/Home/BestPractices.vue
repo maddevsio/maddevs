@@ -34,19 +34,19 @@
             <div class="best-practices_wrap-title">
                 <p>0 func (r *REST) addCommand (c echo.Context,) {</p>
                 <div class="line-number_text">
-                    <div id="line-number" class="line-number">
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                        <span>4</span>
-                        <span>5</span>
-                    </div>
-                    <h3 id="text" class="sec-desc">
-                      {{ $t('Using the') }} <span @click="setAtiveSlide(0)" :style="activeSlide == 0 && 'color: #D4FEA4;'">{{ $t('best development practices') }}</span>,
-                      {{ $t('we take responsibility for') }} <span @click="setAtiveSlide(1)" :style="activeSlide == 1 && 'color: #A1D9FF;'">{{ $t('the quality') }}</span>
-                      {{ $t('and') }} <span @click="setAtiveSlide(2)" :style="activeSlide == 2 && 'color: #E8B8FF;'">{{ $t('stability') }}</span>
-                      {{ $t('of the product') }}.
-                    </h3>
+                  <div id="line-number" class="line-number">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                  </div>
+                  <h3 id="text" class="sec-desc">
+                    {{ $t('Using the') }} <span @click="setAtiveSlide(0)" :style="activeSlide == 0 && 'color: #D4FEA4;'">{{ $t('best development practices') }}</span>,
+                    {{ $t('we take responsibility for') }} <span @click="setAtiveSlide(1)" :style="activeSlide == 1 && 'color: #A1D9FF;'">{{ $t('the quality') }}</span>
+                    {{ $t('and') }} <span @click="setAtiveSlide(2)" :style="activeSlide == 2 && 'color: #E8B8FF;'">{{ $t('stability') }}</span>
+                    {{ $t('of the product') }}.
+                  </h3>
                 </div>
             </div>
         </div>
@@ -55,9 +55,6 @@
 </template>
 
 <script>
-const Slick = process.BROWSER_BUILD ? require('vue-slick') : null;
-import 'slick-carousel/slick/slick.css';
-
 export default {
   name: 'best-practices',
   props: ['language'],
@@ -70,9 +67,6 @@ export default {
         arrows: false
       },
     };
-  },
-  components: {
-    Slick,
   },
   methods: {
     calcLineNumber() {
@@ -124,7 +118,7 @@ export default {
   },
   mounted() {
     this.calcLineNumber();
-  },
+  }
 };
 </script>
 

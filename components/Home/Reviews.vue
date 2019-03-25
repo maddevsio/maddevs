@@ -41,9 +41,6 @@
 </template>
 
 <script>
-const Slick = process.BROWSER_BUILD ? require('vue-slick') : null;
-import 'slick-carousel/slick/slick.css';
-
 export default {
   name: 'reviews',
   data() {
@@ -55,9 +52,6 @@ export default {
         dots: true
       },
     };
-  },
-  components: {
-    Slick,
   },
   methods: {
     nextSlide() {

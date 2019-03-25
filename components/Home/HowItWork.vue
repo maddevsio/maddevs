@@ -56,9 +56,6 @@
 </template>
 
 <script>
-const Slick = process.BROWSER_BUILD ? require('vue-slick') : null
-import 'slick-carousel/slick/slick.css';
-
 export default {
   name: 'banner',
   data() {
@@ -74,9 +71,6 @@ export default {
   },
   updated() {
     this.lang = 'en';
-  },
-  components: {
-    Slick
   },
   methods: {
     nextSlide() {
