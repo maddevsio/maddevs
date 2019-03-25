@@ -1,18 +1,18 @@
 <template>
   <main class="main">
     <Banner />
-    <!-- <HowItWork /> -->
-    <!-- <BestPractices /> -->
+    <HowItWork />
+    <BestPractices />
     <Services />
     <QuickProjectStart />
     <!-- <Metrics /> -->
     <WeUse />
     <Clients />
-    <!-- <Reviews /> -->
+    <Reviews />
     <Partners />
     <OpenSource />
     <Speakers />
-    <!-- <OurBlog :language="language"/> -->
+    <!-- <OurBlog :languageeeeee="language"/> -->
     <Press />
     <Associations />
     <Contacts />
@@ -41,13 +41,13 @@ export default {
   name: 'Home',
   components: {
     Banner,
-    // HowItWork,
-    // BestPractices,
+    HowItWork,
+    BestPractices,
     Services,
     QuickProjectStart,
     Metrics,
     WeUse,
-    // Reviews,
+    Reviews,
     Clients,
     Partners,
     OpenSource,
