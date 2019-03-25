@@ -211,5 +211,32 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 953px) {
+  .weUse {
+    &_wrap {
+      &-list {
+        flex-direction: column;
+
+        &_column {
+          width: 100%;
+        }
+
+        &-item {
+          width: 100%;
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .weUse {
+    padding: 80px 0;
+
+    &_wrap-list-item h3 {
+      font-size: 22px;
+    }
+  }
+}
 </style>
 

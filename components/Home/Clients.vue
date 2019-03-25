@@ -199,5 +199,98 @@ export default {
     height: 1161px;
   }
 }
+@media only screen and (max-width: 992px) {
+  .clients {
+    &_wrap {
+      &-icons {
+        &_row {
+          a {
+            width: 33%;
+            text-align: center !important;
+          }
+
+          .last-icon {
+            width: 100%;
+          }
+
+          .partner-icon-fake {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .clients .open_wrap {
+    height: 1720px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .clients {
+    padding: 80px 0;
+
+    &_wrap {
+      height: 485px;
+
+      &-icons {
+        &_row {
+          a {
+            width: 50%;
+            margin-top: 80px;
+            text-align: center !important;
+
+            img {
+              height: 24px;
+            }
+          }
+
+          .scentomania {
+            img {
+              height: 15px;
+            }
+          }
+
+          .namba-taxi img {
+            height: 20px;
+          }
+
+          .photobook {
+            img {
+              height: 18px;
+            }
+          }
+
+          .tengri {
+            img {
+              height: 18px;
+            }
+          }
+
+          .small-image {
+            img {
+              height: 36px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .clients .open_wrap {
+    height: 1960px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .clients {
+    padding: 60px 0;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .clients {
+    .namba-taxi img {
+      height: 15px;
+    }
+  }
+}
 </style>
 

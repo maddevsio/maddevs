@@ -528,5 +528,165 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 1368px) {
+  .banner {
+    &-title {
+      h1 {
+        font-size: 52px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .banner {
+    &-title {
+      margin-top: 148px;
+      h1 {
+        font-size: 42px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .banner {
+    &-title {
+      margin-top: 168px;
+      margin-right: 30px;
+    }
+    &-slack {
+      width: 516px;
+      margin-top: 200px;
+      &_sidebar {
+        display: none;
+      }
+      &_content {
+        &-title {
+          height: 30px;
+          img {
+            display: block;
+          }
+          .open-slack-menu {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 830px) {
+  #go-down {
+    display: none;
+  }
+
+  .banner {
+    &-wrap {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-title {
+      width: 100%;
+      margin: 133px 0 40px;
+
+      h1 {
+        font-size: 49px;
+      }
+    }
+
+    &-slack {
+      width: 100%;
+      margin: 0;
+
+      &_sidebar {
+        display: flex;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 710px) {
+  .banner {
+    &-title {
+      h1 {
+        font-size: 42px;
+      }
+    }
+
+    &-slack {
+      &_sidebar {
+        display: none;
+      }
+
+      &_content {
+        &-item-status {
+          flex-wrap: wrap;
+
+          &-item {
+            margin-top: 4px;
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .banner {
+    &-title {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .banner {
+    &-title {
+      h1 {
+        font-size: 28px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 420px) {
+  .banner {
+    &-title {
+      margin: 140px 0 35px;
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+
+    &-slack {
+      &_content {
+        &-title {
+          padding: 0 10px;
+
+          img {
+            margin-right: 4px;
+          }
+
+          h5 {
+            font-size: 11px;
+          }
+        }
+
+        &-item {
+          padding: 0 10px;
+        }
+
+        &-item-text {
+          font-size: 14px;
+        }
+
+        &-item_group {
+          h5 {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
 </style>
 

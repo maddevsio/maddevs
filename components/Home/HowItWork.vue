@@ -150,5 +150,96 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 1024px) {
+  .how-it-work {
+    &_wrap {
+      &-content {
+        &-slider {
+          min-width: 437px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 830px) {
+  .how-it-work {
+    &_wrap {
+      &-content {
+        .container {
+          flex-direction: column;
+        }
+
+        &-slider {
+          width: 100%;
+          order: 0;
+        }
+
+        &-title {
+          width: 100%;
+          margin: 0;
+          order: 1;
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .how-it-work {
+    padding: 80px 0 0;
+
+    &_wrap {
+      &-content {
+        margin-top: 80px;
+      }
+
+      p {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .how-it-work {
+    &_wrap {
+      &-content {
+        flex-direction: column;
+
+        &-slider {
+          width: 100%;
+          order: 0;
+        }
+
+        &-title {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .how-it-work {
+    padding: 80px 0 0;
+
+    &_wrap {
+      &-content {
+        padding: 60px 0;
+        margin-top: 60px;
+
+        &-slider {
+          width: 100%;
+          min-width: auto;
+        }
+
+        &-title {
+          font-size: 24px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
 </style>
 

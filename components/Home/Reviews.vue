@@ -148,5 +148,47 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 480px) {
+  .reviews {
+    padding: 60px 0;
+
+    &_wrap {
+      &-carousel {
+        .VueCarousel-pagination {
+          margin-top: 30px;
+
+          .VueCarousel-dot-container {
+            li {
+              button {
+                width: 28px !important;
+              }
+            }
+          }
+        }
+
+        &-slide {
+          &_desc {
+            font-size: 20px;
+            padding: 30px 0;
+          }
+
+          .sender {
+            height: auto;
+            flex-direction: column;
+
+            img {
+              margin: 0 !important;
+              margin-bottom: 10px !important;
+            }
+
+            &-name {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 </style>
 

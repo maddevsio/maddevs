@@ -84,4 +84,41 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 992px) {
+  .press {
+    &-wrap {
+      flex-direction: column;
+      align-items: center;
+
+      &_item {
+        width: 100%;
+        max-width: 100%;
+
+        &_img {
+          height: auto;
+        }
+
+        p {
+          margin-top: 50px;
+        }
+
+        &:first-child {
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .press {
+    padding-top: 80px;
+    padding-bottom: 0;
+
+    &-wrap {
+      &_item {
+        width: 100%;
+      }
+    }
+  }
+}
 </style>

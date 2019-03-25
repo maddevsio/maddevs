@@ -231,5 +231,131 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 1200px) {
+  .services {
+    &-wrap {
+      &_left-block {
+        width: 100%;
+        max-width: 200px;
+        min-width: auto;
+
+        p {
+          padding-right: 20px;
+        }
+      }
+
+      &_right-block {
+        .right-block_desc {
+          margin-top: 22px;
+
+          li {
+            font-size: 19px;
+            padding: 11px 0;
+          }
+        }
+
+        .right-block_images .anim-arrow img {
+          transform: scaleY(.9);
+          margin-top: 12px;
+        }
+
+        .right-block_images-list {
+          img {
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .services {
+    &-wrap {
+      flex-direction: column;
+
+      &_left-block {
+        width: 100%;
+        max-width: 100%;
+        min-width: auto;
+
+        p {
+          text-align: center;
+          padding-right: 0;
+          margin-bottom: 40px;
+        }
+      }
+
+      &_right-block {
+        position: relative;
+
+        .right-block_images-arrow {
+          display: none;
+        }
+
+        .right-block_desc {
+          margin-top: -12px;
+          padding-left: 300px;
+        }
+
+        .right-block_images-list {
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .services {
+    padding-bottom: 0;
+
+    &-wrap {
+      .services-wrap_left-block p {
+        font-family: 'MADEEvolveSans-regular', sans-serif;
+        font-size: 22px;
+        color: #2c1c1c;
+        font-weight: bold;
+      }
+
+      .right-block_images {
+        display: none;
+      }
+
+      .right-block_desc {
+        padding-left: 50px;
+
+        li {
+          position: relative;
+
+          &::before {
+            content: '';
+            width: 32px;
+            height: 1px;
+            position: absolute;
+            left: -50px;
+            top: 21px;
+            background-color: #ec2227 !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .services {
+    padding-top: 80px;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    &-wrap {
+      .right-block_desc li {
+        font-size: 18px;
+      }
+    }
+  }
+}
 </style>
 

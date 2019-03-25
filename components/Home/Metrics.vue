@@ -148,4 +148,35 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 1024px) {
+  .metrics-wrap {
+    justify-content: center;
+
+    &_item {
+      width: 33%;
+    }
+  }
+}
+@media only screen and (max-width: 830px) {
+  .metrics-wrap {
+    &_item {
+      width: 50%;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .metrics-wrap {
+    &_item {
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      h4 {
+        font-size: 22px;
+      }
+    }
+  }
+}
 </style>
