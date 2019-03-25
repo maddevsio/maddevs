@@ -136,3 +136,215 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+  .header {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  padding-top: 30px;
+  &_links {
+    margin-right: 24px;
+    position: relative;
+    a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 24px;
+      font-size: 16px;
+      font-family: 'MADEEvolveSans-regular',
+      sans-serif;
+    }
+    .router-link-active {
+      color: #ec2227;
+    }
+    &::before {
+      content: '';
+      width: 1px;
+      height: 25px;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: -3px;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+  &-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    &_right-block {
+      display: flex;
+      align-items: center;
+      padding: 24px 0;
+      .header_soc-icons {
+        height: 22px;
+        a {
+          display: inline-block;
+          margin-right: 18px;
+          img {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  &-logo {
+    width: 40px;
+    height: 70px;
+  }
+  .switch-lang {
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'MADEEvolveSans-regular', sans-serif;
+    border: none;
+    cursor: pointer;
+    padding-right: 0;
+  }
+  &-mobile-menu {
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 999;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &_close {
+      position: fixed;
+      top: 20px;
+      right: 6px;
+      border: none;
+      background-color: transparent;
+      padding: 10px;
+      box-sizing: border-box;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    &_list {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      a {
+        display: block;
+        font-size: 28px;
+        color: #2c1c1c;
+        font-family: 'MADEEvolveSans-bold',
+        sans-serif;
+        font-weight: normal;
+        text-align: center;
+        text-decoration: none;
+        padding: 12px 0;
+      }
+      .router-link-active {
+        color: #ec2227;
+      }
+    }
+    &_address {
+      width: 100%;
+      text-align: center;
+      padding: 32px 0 18px;
+      border-top: 1px solid #e8e8e8;
+      p, a {
+        max-width: 290px;
+        font-size: 16px;
+        color: #000;
+        font-family: 'MADEEvolveSans-regular',
+        sans-serif;
+        margin: 0 auto;
+        text-decoration: none;
+      }
+      p {
+        margin-bottom: 16px;
+      }
+      &-phonemail {
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          &:last-child {
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+    &_soc-icons {
+      .social-icons_list-row {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .header-mobile-menu {
+    display: none;
+  }
+  .header-mobile-menu_open {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header_links {
+    margin-right: 14px;
+    white-space: nowrap;
+    a {
+      font-size: 14px;
+      margin-right: 14px;
+    }
+  }
+  .header-wrap_right-block {
+    margin-left: auto;
+    padding: 25px;
+    .header_links {
+      display: none;
+    }
+    .header_soc-icons {
+      display: none;
+    }
+    .switch-lang {
+      font-size: 14px;
+    }
+  }
+  .header-wrap_right-block .header_soc-icons {
+    height: 18px;
+    white-space: nowrap;
+    a {
+      margin-right: 12px;
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+  .header-mobile-menu_soc-icons .social-icons_list-row {
+    &:first-child {
+      margin-bottom: 10px;
+    }
+    a {
+      margin: 0 8px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .header-mobile-menu_open {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 24px 0;
+  }
+}
+</style>
