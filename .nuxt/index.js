@@ -12,6 +12,7 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_i18n_1fba523a from 'nuxt_plugin_i18n_1fba523a' // Source: ../plugins/i18n.js (mode: 'all')
+import nuxt_plugin_vuescrollto_44ce9a1c from 'nuxt_plugin_vuescrollto_44ce9a1c' // Source: ../plugins/vue-scrollto.js (mode: 'all')
 import nuxt_plugin_slick_b0295394 from 'nuxt_plugin_slick_b0295394' // Source: ../plugins/slick.js (mode: 'client')
 
 // Component: <NoSsr>
@@ -154,6 +155,10 @@ async function createApp(ssrContext) {
 
   if (typeof nuxt_plugin_i18n_1fba523a === 'function') {
     await nuxt_plugin_i18n_1fba523a(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_vuescrollto_44ce9a1c === 'function') {
+    await nuxt_plugin_vuescrollto_44ce9a1c(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_slick_b0295394 === 'function') {
