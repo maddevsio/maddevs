@@ -8,6 +8,7 @@ import store from './store';
 import router from './router';
 import VueHead from 'vue-head';
 import i18n from './utils/i18n';
+import VueYandexMetrika from 'vue-yandex-metrika';
 Es6Promise.polyfill();
 
 Vue.config.productionTip = false;
@@ -15,6 +16,16 @@ Vue.config.productionTip = false;
 Vue.use(VueAnalytics, {
   id: 'UA-83208754-1',
   router
+});
+
+Vue.use(VueYandexMetrika, {
+  id: 52976554,
+  router: router,
+  env: process.env.NODE_ENV,
+  clickmap: true,
+  trackLinks: true,
+  accurateTrackBounce: true,
+  webvisor: true
 });
 
 Vue.use(VueHead);
