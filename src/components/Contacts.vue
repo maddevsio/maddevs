@@ -17,7 +17,7 @@
           </div>
           <div class="contacts-wrap_list-item">
             <h6>{{$t('address-footer-email-title')}}</h6>
-            <a href="mailto:rock@maddevs.io">rock@maddevs.io</a>
+            <a href="mailto:team@maddevs.io">team@maddevs.io</a>
           </div>
           <div class="contacts-wrap_list-item social-icons">
             <div class="social-icons_list">

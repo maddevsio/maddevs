@@ -49,7 +49,7 @@
           <p>{{$t('address-footer')}}</p>
           <div class="header-mobile-menu_address-phonemail">
             <a href="tel:+996 555 429 055">+996 555 761 939</a>
-            <a href="mailto:rock@maddevs.io">rock@maddevs.io</a>
+            <a href="mailto:team@maddevs.io">team@maddevs.io</a>
           </div>
         </div>
         <div class="header-mobile-menu_soc-icons">
