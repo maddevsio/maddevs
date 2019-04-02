@@ -12,9 +12,9 @@ export default {
   props: ['language'],
   data() {
     return {
-      title: this.$t('title-jobs'),
-      description: this.$t('meta-desc_jobs'),
-      ogUrl: this.$t('og_meta-url_jobs'),
+      title: this.$t('title-quality'),
+      description: this.$t('meta-desc_quality'),
+      ogUrl: this.$t('og_meta-url_quality'),
     };
   },
   components: {
