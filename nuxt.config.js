@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'mnd',
+    title: 'Mad Devs',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -11,7 +11,10 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [{
+      src: 'https://code.tidio.co/kuhpv1cxwof3di7of0qiwbfmvggsdeav.js'
+    }]
   },
   /*
   ** Customize the progress bar color
