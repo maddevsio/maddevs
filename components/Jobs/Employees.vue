@@ -47,9 +47,6 @@
   </section>
 </template>
 <script>
-import Slick from 'vue-slick';
-import 'slick-carousel/slick/slick.css';
-
 export default {
   name: 'Employees',
   data() {
@@ -63,9 +60,6 @@ export default {
         nextArrow: '<button type="button" class="slick-next"></button>'
       },
     };
-  },
-  components: {
-    Slick
   },
   methods: {
     nextSlide() {
