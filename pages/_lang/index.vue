@@ -39,6 +39,14 @@ import Associations from '@/components/Home/Associations';
 
 export default {
   name: 'Home',
+  props: ['language'],
+  data() {
+    return {
+      title: this.$t('title-home'),
+      description: this.$t('meta-desc_home'),
+      ogUrl: this.$t('og_meta-url_home'),
+    };
+  },
   components: {
     Banner,
     HowItWork,
@@ -59,9 +67,16 @@ export default {
   },
   head () {
     return {
-      title: 'Index - Nuxt.js',
+      title: this.title,
       meta: [
-        { hid: 'description', name: 'description', content: 'Home page Nuxt.js ' }
+        { name: 'description', content: this.description },
+        { name: 'description', content: this.description },
+        // Facebook / Open Graph
+        { property: 'og:url', content: this.ogUrl },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: this.title },
+        { property: 'og:description', content: this.description },
+        { property: 'og:image', content: 'https://maddevs.io/static/Open-Graph.png' }
       ]
     }
   }

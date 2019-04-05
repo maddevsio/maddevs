@@ -48,13 +48,13 @@ export default {
     return {
       title: this.title,
       meta: [
-        {name: 'description', content: this.description},
+        { name: 'description', content: this.description },
         // Facebook / Open Graph
-        {property: 'og:url', content: this.ogUrl},
-        {property: 'og:type', content: 'website'},
-        {property: 'og:title', content: this.title},
-        {property: 'og:description', content: this.description},
-        {property: 'og:image', content: 'https://maddevs.io/static/Open-Graph.png'}
+        { property: 'og:url', content: this.ogUrl },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: this.title },
+        { property: 'og:description', content: this.description },
+        { property: 'og:image', content: 'https://maddevs.io/static/Open-Graph.png' }
       ]
     }
   }
