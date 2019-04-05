@@ -81,3 +81,51 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.employees {
+  padding: 120px 0 0;
+
+  p {
+    max-width: 710px;
+    font-size: 28px;
+    color: #000;
+    font-family: 'MADEEvolveSans-regular',
+      sans-serif;
+    line-height: 1.5;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+
+  &_content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    &-slider {
+      display: none !important;
+    }
+
+    .slick-arrow {
+      display: none;
+      transition: all .2s ease;
+
+      &:hover {
+        box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.30);
+      }
+    }
+
+    &-item {
+      width: 50%;
+      outline: 1px solid #fff !important;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}
+</style>
+

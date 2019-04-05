@@ -18,3 +18,22 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.intern {
+  margin-top: 120px;
+  background-color: #e8e8e8;
+  padding: 60px 0;
+
+  p {
+    max-width: 710px;
+    font-size: 28px;
+    color: #000;
+    font-family: 'MADEEvolveSans-regular', sans-serif;
+    line-height: 1.5;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+}
+</style>
+

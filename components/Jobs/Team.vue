@@ -21,3 +21,30 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.team {
+  padding: 120px 0;
+
+  p {
+    max-width: 700px;
+    margin: 30px auto 40px;
+    font-size: 28px;
+    color: #000000;
+    line-height: 1.5;
+    font-family: 'MADEEvolveSans-regular',
+      sans-serif;
+    font-weight: normal;
+    text-align: center;
+
+    a {
+      color: #ec2227;
+      text-decoration: none;
+    }
+  }
+
+  .mnd-button-link {
+    margin: 0 auto;
+  }
+}
+</style>

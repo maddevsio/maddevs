@@ -53,3 +53,77 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.employer {
+  padding: 120px 0 0;
+
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    &-item {
+      width: 300px;
+      min-width: 300px;
+      max-height: 320px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 30px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.14);
+      margin: 20px;
+      transition: all .2s ease;
+
+      &:hover {
+        box-shadow: 0 4px 5px 0 rgba(38, 36, 32, 0.08);
+      }
+
+      &__fake {
+        width: 300px;
+        min-width: 300px;
+        max-height: 320px;
+        margin: 20px;
+      }
+
+      img {
+        margin-bottom: 25px;
+      }
+
+      h4 {
+        max-width: 240px;
+        text-align: center;
+        min-height: 65px;
+        margin-bottom: 8px;
+        color: #2c1c1c;
+        font-size: 24px;
+        font-family: 'MADEEvolveSans-bold', sans-serif;
+        line-height: 1.38;
+      }
+
+      p {
+        width: 100%;
+        text-align: center;
+        line-height: 1.33;
+        letter-spacing: 0.2px;
+        font-size: 18px;
+        font-family: 'MADEEvolveSans-regular',
+          sans-serif;
+        font-weight: normal;
+        color: #595959;
+      }
+    }
+  }
+
+  .mnd-button-link {
+    margin: 0 auto;
+  }
+}
+</style>
+

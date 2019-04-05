@@ -38,3 +38,48 @@ export default {
   name: 'Advantages',
 };
 </script>
+
+<style lang="scss" scoped>
+.advantages {
+  padding: 120px 0 0;
+  p {
+    max-width: 710px;
+    font-size: 28px;
+    color: #000;
+    font-family: 'MADEEvolveSans-regular', sans-serif;
+    line-height: 1.5;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+  &_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: -40px;
+    &-item {
+      max-width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+      img {
+        width: 62px;
+        height: 62px;
+      }
+      h4 {
+        font-size: 22px;
+        font-family: 'MADEEvolveSans-bold',
+        sans-serif;
+        line-height: 1.33;
+        text-align: center;
+        color: #000;
+        margin-top: 18px;
+        white-space: pre;
+      }
+    }
+  }
+}
+</style>
+
