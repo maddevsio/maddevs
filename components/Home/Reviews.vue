@@ -117,28 +117,6 @@ export default {
           }
         }
       }
-      .slick-dots {
-        display: flex;
-        padding-left: 0;
-        justify-content: center;
-        margin-top: 30px;
-        margin-bottom: 0;
-        button {
-          display: none;
-        }
-        li {
-          width: 36px !important;
-          height: 3px !important;
-          border-radius: 3px;
-          background-color: rgba(255, 255, 255, 0.2) !important;
-          overflow: hidden;
-          margin: 10px;
-        }
-        .slick-active {
-          background: #fff !important;
-          outline: none;
-        }
-      }
     }
   }
 }
