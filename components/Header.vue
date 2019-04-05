@@ -18,9 +18,8 @@
               <img src="../assets/img/common/header/fb-header.svg" alt="Facebook">
             </a>
           </div>
-          <button class="switch-lang" v-on:click.prevent="switchLanguage">
-            {{ lang === 'en' ? 'Русский' : 'English' }}
-          </button>
+          <button v-if="lang == 'en'" class="switch-lang" v-on:click.prevent="switchLanguage('ru')">Русский</button>
+          <button v-else class="switch-lang" v-on:click.prevent="switchLanguage('en')">English</button>
         </div>
         <button @click="toggleMobileMenu()" class="header-mobile-menu_open">
           <img src="../assets/img/common/header/open-menu.svg" alt="Open mobile menu">
@@ -100,8 +99,26 @@ export default {
     };
   },
   methods: {
-    switchLanguage(event) {
-      this.$emit('EventLanguage', this.lang);
+    switchLanguage(locale) {
+      // -- Getting the path before starting
+      const beforePath = this.$nuxt.$router.history.current.path;
+      this.lang = locale;
+
+      // -- Removing the previous locale from the url
+      let result = '';
+      result = beforePath.replace( "/en", "" );
+      result = result.replace( "/ru", "" );
+
+      // -- Redirecting to the same page but in the desired language
+      if ( locale == 'ru' || locale == 'en' ) {
+        this.$nuxt.$router.replace({ path: '/' + locale + result });
+      } else {
+        if ( result == '/' ) {
+          this.$nuxt.$router.replace({ path: '/' + locale });
+        } else {
+          this.$nuxt.$router.replace({ path: '/' + locale + result });
+        }
+      }
     },
     toggleMobileMenu() {
       const chat = document.getElementById('tidio-chat');
@@ -123,7 +140,7 @@ export default {
     }
   },
   mounted() {
-    var self = this;
+    const self = this;
     window.addEventListener('resize', function(e) {
       if (window.innerWidth >= 480) {
         document.body.classList.remove('scrollDisabled');

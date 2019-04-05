@@ -22,11 +22,11 @@ export default function ({
   store.commit('SET_LANG', locale)
   app.i18n.locale = store.state.locale
   // If route is /<defaultLocale>/... -> redirect to /...
-  if (locale === defaultLocale && route.fullPath.indexOf('/' + defaultLocale) === 0) {
-    const toReplace = '^/' + defaultLocale + (route.fullPath.indexOf('/' + defaultLocale + '/') === 0 ? '/' : '')
-    const re = new RegExp(toReplace)
-    return redirect(
-      route.fullPath.replace(re, '/')
-    )
-  }
+  // if (locale === defaultLocale && route.fullPath.indexOf('/' + defaultLocale) === 0) {
+  //   const toReplace = '^/' + defaultLocale + (route.fullPath.indexOf('/' + defaultLocale + '/') === 0 ? '/' : '')
+  //   const re = new RegExp(toReplace)
+  //   return redirect(
+  //     route.fullPath.replace(re, '/')
+  //   )
+  // }
 }
