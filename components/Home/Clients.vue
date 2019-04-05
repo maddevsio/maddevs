@@ -290,6 +290,9 @@ export default {
     .namba-taxi img {
       height: 15px;
     }
+    .GuardRails img {
+      height: 24px;
+    }
   }
 }
 </style>
