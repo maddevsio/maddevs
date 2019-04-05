@@ -45,7 +45,7 @@
           </router-link>
         </div>
         <div class="header-mobile-menu_address">
-          <p>{{$t('address-footer')}}</p>
+          <p>{{$t('address-footer-kg')}}</p>
           <div class="header-mobile-menu_address-phonemail">
             <a href="tel:+996 555 429 055">+996 555 761 939</a>
             <a href="mailto:rock@maddevs.io">rock@maddevs.io</a>
