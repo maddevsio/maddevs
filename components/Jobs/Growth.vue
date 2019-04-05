@@ -47,9 +47,6 @@
 </template>
 
 <script>
-import Slick from 'vue-slick';
-import 'slick-carousel/slick/slick.css';
-
 export default {
   name: 'Growth',
   data() {
@@ -67,9 +64,6 @@ export default {
   },
   updated() {
     this.lang = 'en';
-  },
-  components: {
-    Slick
   },
   methods: {
     nextSlide() {
@@ -164,7 +158,7 @@ export default {
         background-position: center;
         background-size: 14px;
         background-repeat: no-repeat;
-        background-image: url(../img/Jobs/svg/Employees/arrow.svg);
+        background-image: url(../../assets/img/Jobs/svg/Employees/arrow.svg);
         cursor: pointer;
         transition: all .2s ease;
         &:hover {
