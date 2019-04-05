@@ -28,7 +28,7 @@
           <div class="reviews_wrap-carousel-slide">
             <p @click.prevent="nextSlide" class="reviews_wrap-carousel-slide_desc">{{$t('Review-7 text')}}</p>
             <div class="sender">
-                <img style="margin-top: -2px" src="../../assets/img/Home/svg/reviews/GuardRails.svg" alt="GuardRails">
+                <img src="../../assets/img/Home/svg/reviews/GuardRails.svg" alt="GuardRails">
                 <div class="sender-name">
                     <p>{{$t('Review-7 name')}}</p>
                 </div>
