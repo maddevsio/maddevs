@@ -182,23 +182,6 @@ export default {
             right: -12px;
             background-color: #3b3b3b;
           }
-          span {
-            color: #3b3b3b;
-            font-size: 14px;
-            margin-top: 26px;
-            font-family: 'FiraMono', sans-serif;
-            @media only screen and (max-width: 480px) {
-              margin-top: 21px;
-            }
-            &:last-child {
-              position: relative;
-              &::after {
-                content: '}';
-                position: absolute;
-                right: -15px;
-              }
-            }
-          }
         }
         h3 {
           color: #fff;
