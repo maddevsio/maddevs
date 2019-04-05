@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import ButtonLinkBlack from '../blocks/button-link--black';
+import ButtonLinkBlack from '@/components/ui/button-link--black';
 
 export default {
   name: 'Intern',

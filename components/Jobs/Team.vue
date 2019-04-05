@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import ButtonLink from '../blocks/button-link';
+import ButtonLink from '@/components/ui/button-link';
 
 export default {
   name: 'Team',
