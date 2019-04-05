@@ -1,7 +1,7 @@
 <template>
-  <div ref="Cookie" id="cookie-notif" style="display: none;" class="cookie-notif hide_cookie">
+  <div v-if="cookieActive" ref="Cookie" class="cookie-notif">
     <p>{{ $t('cookie-message') }}</p>
-    <button ref="CookieButton" class="cookie-notif_button"></button>
+    <button @click="hideCookieNotif" class="cookie-notif_button"></button>
   </div>
 </template>
 
@@ -9,24 +9,23 @@
 export default {
   name: 'cookie',
   props: ['data'],
+  data() {
+    return {
+      cookieActive: false
+    };
+  },
   mounted() {
-    const cookie = this.$refs.Cookie;
-    const button = this.$refs.CookieButton;
-    if (cookie !== undefined && window.localStorage.getItem('cookie') !== 'false') {
-      cookie.classList.remove('hide_cookie');
-      button.addEventListener('click', () => {
-        localStorage.setItem('cookie', 'false');
-        cookie.classList.add('hide_cookie');
-      });
+    if (process.browser && window.localStorage.getItem('cookie') === null) {
+      this.cookieActive = true;
     }
   },
+  methods: {
+    hideCookieNotif() {
+      this.cookieActive = false;
+      localStorage.setItem('cookie', 'true');
+    }
+  }
 };
-document.addEventListener('DOMContentLoaded', () => {
-  const Cookie = document.getElementById('cookie-notif');
-  setTimeout(() => {
-    Cookie.removeAttribute('style');
-  }, 2000);
-});
 </script>
 
 <style lang="scss" scoped>
@@ -50,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .cookie-notif_button {
       width: 40px;
       height: 24px;
-      background-image: url(../img/common/header/close-menu.svg);
+      background-image: url(../../assets/img/common/header/close-menu.svg);
       background-repeat: no-repeat;
       background-size: 10px;
       background-position: center;
