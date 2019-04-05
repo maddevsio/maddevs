@@ -99,5 +99,39 @@ export default {
     }
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .jobs {
+    &_list {
+      flex-wrap: wrap;
+
+      &-item {
+        width: calc(50% - 30px);
+        max-width: calc(50% - 30px);
+        box-sizing: border-box;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .jobs {
+    &_list {
+      &-item {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .jobs {
+    margin-top: 80px;
+  }
+}
 </style>
 

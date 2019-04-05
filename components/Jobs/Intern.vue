@@ -35,5 +35,15 @@ export default {
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .intern {
+    margin-top: 80px;
+
+    p {
+      font-size: 24px;
+    }
+  }  
+}
 </style>
 

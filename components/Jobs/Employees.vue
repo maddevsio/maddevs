@@ -121,5 +121,65 @@ export default {
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .employees {
+    position: relative;
+
+    &_content-slider {
+      display: block !important;
+      margin-top: 40px;
+
+      .slick-arrow {
+        width: 28px;
+        height: 28px;
+        display: block;
+        position: absolute;
+        right: 40px;
+        bottom: 30px;
+        z-index: 1;
+        border-radius: 100%;
+        box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.14);
+        background-color: #ffffff;
+        border: none;
+        background-position: center;
+        background-size: 14px;
+        background-repeat: no-repeat;
+        background-image: url(../img/Jobs/svg/Employees/arrow.svg);
+        cursor: pointer;
+      }
+
+      .slick-prev {
+        right: 80px;
+        transform: scale(-1);
+      }
+
+      &-item {
+        outline: none;
+      }
+    }
+
+    &_content {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .employees_content-slider .slick-prev {
+    right: 60px;
+    bottom: 20px;
+  }
+  .employees_content-slider .slick-next {
+    right: 20px;
+    bottom: 20px;
+  }
+  .employees {
+    padding-top: 80px;
+
+    p {
+      font-size: 24px;
+    }
+  }
+}
 </style>
 

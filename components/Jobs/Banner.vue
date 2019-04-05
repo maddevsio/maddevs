@@ -48,5 +48,21 @@ export default {
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .jobs-banner {
+    background-image: url(../../assets/img/Jobs/jpg/Banner/banner.jpg)
+  }
+}
+@media only screen and (max-width: 480px) {
+  .jobs-banner {
+    height: auto;
+    min-height: 580px;
+
+    h1 {
+      font-size: 34px;
+    }
+  }
+}
 </style>
 

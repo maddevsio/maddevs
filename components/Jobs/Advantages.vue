@@ -81,5 +81,47 @@ export default {
     }
   }
 }
+@media only screen and (max-width: 1024px) {
+  .advantages {
+    &_list {
+      &-item {
+        width: 33%;
+        max-width: 33%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .advantages {
+    p {
+      font-size: 28px;
+      margin-top: 12px;
+    }
+
+    &_list {
+      &-item {
+        h4 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .advantages {
+    padding: 80px 0 0;
+
+    p {
+      font-size: 24px;
+    }
+
+    &_list {
+      &-item {
+        width: 50%;
+        max-width: 50%;
+      }
+    }
+  }
+}
 </style>
 

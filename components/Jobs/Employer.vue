@@ -125,5 +125,66 @@ export default {
     margin: 0 auto;
   }
 }
+
+@media only screen and (max-width: 1440px) {
+  .employer {
+    &_list-item {
+        width: calc(25% - 40px);
+        min-width: calc(25% - 40px);
+        max-width: 100%;
+        max-height: none;
+        height: auto;
+        &__fake {
+          width: calc(25% - 40px);
+          min-width: calc(25% - 40px);
+          max-width: 100%;
+          max-height: none;
+          height: auto;
+        } 
+    }
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .employer {
+    &_list-item {
+      width: calc(33% - 40px);
+      min-width: calc(33% - 40px);
+
+      &__fake {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .employer {
+    &_list-item {
+      width: calc(50% - 40px);
+      min-width: calc(50% - 40px);
+
+      &__fake {
+        width: calc(50% - 40px);
+        min-width: calc(50% - 40px);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .employer {
+    &_list-item {
+      width: 100%;
+      max-width: 100%;
+
+      h4 {
+        min-height: auto;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .employer {
+    padding-top: 80px;
+  }
+}
 </style>
 
