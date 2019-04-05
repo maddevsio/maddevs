@@ -54,3 +54,15 @@
     }
   }
 }
+
+// Media
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 54px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    padding: 0 16px;
+  }
+}
