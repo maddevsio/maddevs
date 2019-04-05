@@ -1,7 +1,7 @@
 <template>
   <section id="press" class="press">
     <div class="container">
-      <h2 class="sec-title">{{$t('Press about us')}}</h2>
+      <h2 class="sec-title">{{$t('Press-about-us')}}</h2>
       <div class="press-wrap">
         <a href="https://www.google.com/amp/s/www.cnbc.com/amp/2018/01/29/belt-and-road-tech-entrepreneurship-in-kyrgyzstan.html" target="_blank" rel="noreferrer" class="press-wrap_item">
           <div class="press-wrap_item_img">

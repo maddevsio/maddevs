@@ -36,7 +36,7 @@
             </div>
             <ul class="right-block_desc">
                 <li>{{ $t('Direct daily or weekly hiring of specialists') }}</li>
-                <li>{{ $t('Advice from our experts') }}</li>
+                <li>{{ $t('Advice-from-our-experts') }}</li>
                 <li>{{ $t('Independent audit and optimization') }}</li>
                 <li>{{ $t('Software and Infrastructure Development') }}</li>
                 <li>{{ $t('Full outsourced IT team, with a resource management system') }}</li>

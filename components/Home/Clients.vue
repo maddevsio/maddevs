@@ -2,7 +2,7 @@
   <section id="clients" class="clients">
     <div class="container">
       <div class="clients_wrap" :class="{ open_wrap: OpenWrap }">
-        <h2 class="sec-title">{{$t('Our clients')}}</h2>
+        <h2 class="sec-title">{{$t('Our-clients')}}</h2>
         <div class="clients_wrap-icons">
           <div class="clients_wrap-icons_row">
             <a class="small-image">
