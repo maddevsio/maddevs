@@ -145,7 +145,7 @@ export default {
         background-position: center;
         background-size: 14px;
         background-repeat: no-repeat;
-        background-image: url(../img/Jobs/svg/Employees/arrow.svg);
+        background-image: url(../../assets/img/Jobs/svg/Employees/arrow.svg);
         cursor: pointer;
       }
 
