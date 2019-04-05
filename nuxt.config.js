@@ -33,7 +33,7 @@ module.exports = {
     }
   ],
   generate: {
-    routes: ['/', '/en', '/en/about', '/ru', '/ru/about']
+    routes: ['/', '/en', '/en/jobs', '/ru', '/ru/jobs']
   },
   css: [
     {
