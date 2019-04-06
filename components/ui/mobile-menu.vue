@@ -78,116 +78,118 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.header-mobile-menu {
-  width: 100%;
-  height: 100%;
-  min-width: 320px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  padding: 16px;
-  box-sizing: border-box;
-  z-index: 999;
-  overflow-y: scroll;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  &_close {
-    position: fixed;
-    top: 20px;
-    right: 6px;
-    border: none;
-    background-color: transparent;
-    padding: 10px;
-    box-sizing: border-box;
-    img {
-      width: 25px;
-      height: 25px;
-    }
-  }
-  &_list {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    a {
-      display: block;
-      font-size: 28px;
-      color: #2c1c1c;
-      font-family: 'MADEEvolveSans-bold',
-      sans-serif;
-      font-weight: normal;
-      text-align: center;
-      text-decoration: none;
-      padding: 12px 0;
-    }
-    .router-link-active {
-      color: #ec2227;
-    }
-  }
-  &_address {
+  @import '../../assets/styles/variables';
+
+  .header-mobile-menu {
     width: 100%;
-    text-align: center;
-    padding: 32px 0 18px;
-    border-top: 1px solid #e8e8e8;
-    p, a {
-      max-width: 290px;
-      font-size: 16px;
-      color: #000;
-      font-family: 'MADEEvolveSans-regular',
-      sans-serif;
-      margin: 0 auto;
-      text-decoration: none;
+    height: 100%;
+    min-width: 320px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 999;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
     }
-    p {
-      margin-bottom: 16px;
+    &_close {
+      position: fixed;
+      top: 20px;
+      right: 6px;
+      border: none;
+      background-color: transparent;
+      padding: 10px;
+      box-sizing: border-box;
+      img {
+        width: 25px;
+        height: 25px;
+      }
     }
-    &-phonemail {
+    &_list {
+      margin-top: 40px;
+      margin-bottom: 20px;
       a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &:last-child {
-          margin-top: 8px;
+        display: block;
+        font-size: 28px;
+        color: #2c1c1c;
+        font-family: 'MADEEvolveSans-bold',
+        sans-serif;
+        font-weight: normal;
+        text-align: center;
+        text-decoration: none;
+        padding: 12px 0;
+      }
+      .router-link-active {
+        color: $accent-color--red;
+      }
+    }
+    &_address {
+      width: 100%;
+      text-align: center;
+      padding: 32px 0 18px;
+      border-top: 1px solid #e8e8e8;
+      p, a {
+        max-width: 290px;
+        font-size: 16px;
+        color: #000;
+        font-family: 'MADEEvolveSans-regular',
+        sans-serif;
+        margin: 0 auto;
+        text-decoration: none;
+      }
+      p {
+        margin-bottom: 16px;
+      }
+      &-phonemail {
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          &:last-child {
+            margin-top: 8px;
+          }
         }
       }
     }
-  }
-  &_soc-icons {
-    .social-icons_list-row {
-      text-align: center;
-    }
-  }
-}
-@media only screen and (min-width: 480px) {
-  .header-mobile-menu {
-    display: none;
-  }
-  .header-mobile-menu_open {
-    display: none;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .header-mobile-menu_soc-icons .social-icons_list-row {
-    &:first-child {
-      margin-bottom: 10px;
-    }
-    a {
-      margin: 0 8px;
-      img {
-        width: 30px;
-        height: 30px;
+    &_soc-icons {
+      .social-icons_list-row {
+        text-align: center;
       }
     }
   }
-  .header-mobile-menu_open {
-    display: block;
-    background-color: transparent;
-    border: none;
-    padding: 24px 0;
+  @media only screen and (min-width: 480px) {
+    .header-mobile-menu {
+      display: none;
+    }
+    .header-mobile-menu_open {
+      display: none;
+    }
   }
-}
+  @media only screen and (max-width: 480px) {
+    .header-mobile-menu_soc-icons .social-icons_list-row {
+      &:first-child {
+        margin-bottom: 10px;
+      }
+      a {
+        margin: 0 8px;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    .header-mobile-menu_open {
+      display: block;
+      background-color: transparent;
+      border: none;
+      padding: 24px 0;
+    }
+  }
 </style>

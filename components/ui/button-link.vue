@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/vars';
+  @import '../../assets/styles/variables';
 
   .mnd-button-link {
     width: 340px;
@@ -21,7 +21,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ec2227;
+    background-color: $accent-color--red;
     border-radius: 5px;
     color: #fff;
     font-size: 24px;

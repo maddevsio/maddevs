@@ -56,16 +56,11 @@ export default {
   },
   methods: {
     switchLanguage(locale) {
-      // -- Getting the path before starting
       const beforePath = this.$nuxt.$router.history.current.path;
       this.lang = locale;
-
-      // -- Removing the previous locale from the url
       let result = '';
       result = beforePath.replace('/en', '');
       result = result.replace('/ru', '');
-
-      // -- Redirecting to the same page but in the desired language
       if ( locale == 'ru' || locale == 'en' ) {
         this.$nuxt.$router.replace({ path: '/' + locale + result });
       } else {
@@ -108,114 +103,116 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../assets/styles/variables';
+
   .header {
-  width: 100%;
-  position: absolute;
-  z-index: 2;
-  padding-top: 30px;
-  &_links {
-    margin-right: 24px;
-    position: relative;
-    a {
-      color: #fff;
-      text-decoration: none;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    padding-top: 30px;
+    &_links {
       margin-right: 24px;
-      font-size: 16px;
-      font-family: 'MADEEvolveSans-regular',
-      sans-serif;
+      position: relative;
+      a {
+        color: $text-color--white;
+        text-decoration: none;
+        margin-right: 24px;
+        font-size: 16px;
+        font-family: 'MADEEvolveSans-regular',
+        sans-serif;
+      }
+      .router-link-active {
+        color: $accent-color--red;
+      }
+      &::before {
+        content: '';
+        width: 1px;
+        height: 25px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -3px;
+        background-color: rgba($bgcolor--white, 0.3);
+      }
     }
-    .router-link-active {
-      color: #ec2227;
-    }
-    &::before {
-      content: '';
-      width: 1px;
-      height: 25px;
-      display: block;
-      position: absolute;
-      right: 0;
-      top: -3px;
-      background-color: rgba(255, 255, 255, 0.3);
-    }
-  }
-  &-wrap {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    &_right-block {
+    &-wrap {
       display: flex;
-      align-items: center;
-      padding: 24px 0;
-      .header_soc-icons {
-        height: 22px;
-        a {
-          display: inline-block;
-          margin-right: 18px;
-          img {
-            display: block;
+      align-items: flex-start;
+      justify-content: space-between;
+      &_right-block {
+        display: flex;
+        align-items: center;
+        padding: 24px 0;
+        .header_soc-icons {
+          height: 22px;
+          a {
+            display: inline-block;
+            margin-right: 18px;
+            img {
+              display: block;
+            }
           }
         }
       }
     }
-  }
-  &-logo {
-    width: 40px;
-    height: 70px;
-  }
-  .switch-lang {
-    background-color: transparent;
-    color: #fff;
-    font-size: 14px;
-    font-family: 'MADEEvolveSans-regular', sans-serif;
-    border: none;
-    cursor: pointer;
-    padding-right: 0;
-  }
-}
-
-@media only screen and (min-width: 480px) {
-  .header-mobile-menu_open {
-    display: none;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .header_links {
-    margin-right: 14px;
-    white-space: nowrap;
-    a {
-      font-size: 14px;
-      margin-right: 14px;
-    }
-  }
-  .header-wrap_right-block {
-    margin-left: auto;
-    padding: 25px;
-    .header_links {
-      display: none;
-    }
-    .header_soc-icons {
-      display: none;
+    &-logo {
+      width: 40px;
+      height: 70px;
     }
     .switch-lang {
+      background-color: transparent;
+      color: $text-color--white;
       font-size: 14px;
+      font-family: 'MADEEvolveSans-regular', sans-serif;
+      border: none;
+      cursor: pointer;
+      padding-right: 0;
     }
   }
-  .header-wrap_right-block .header_soc-icons {
-    height: 18px;
-    white-space: nowrap;
-    a {
-      margin-right: 12px;
-      img {
-        width: 18px;
-        height: 18px;
+
+  @media only screen and (min-width: 480px) {
+    .header-mobile-menu_open {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .header_links {
+      margin-right: 14px;
+      white-space: nowrap;
+      a {
+        font-size: 14px;
+        margin-right: 14px;
       }
     }
+    .header-wrap_right-block {
+      margin-left: auto;
+      padding: 25px;
+      .header_links {
+        display: none;
+      }
+      .header_soc-icons {
+        display: none;
+      }
+      .switch-lang {
+        font-size: 14px;
+      }
+    }
+    .header-wrap_right-block .header_soc-icons {
+      height: 18px;
+      white-space: nowrap;
+      a {
+        margin-right: 12px;
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+    .header-mobile-menu_open {
+      display: block;
+      background-color: transparent;
+      border: none;
+      padding: 24px 0;
+    }
   }
-  .header-mobile-menu_open {
-    display: block;
-    background-color: transparent;
-    border: none;
-    padding: 24px 0;
-  }
-}
 </style>
