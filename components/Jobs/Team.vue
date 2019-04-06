@@ -23,39 +23,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.team {
-  padding: 120px 0;
+  @import '../../assets/styles/vars';
 
-  p {
-    max-width: 700px;
-    margin: 30px auto 40px;
-    font-size: 28px;
-    color: #000000;
-    line-height: 1.5;
-    font-family: 'MADEEvolveSans-regular',
-      sans-serif;
-    font-weight: normal;
-    text-align: center;
-
-    a {
-      color: #ec2227;
-      text-decoration: none;
-    }
-  }
-
-  .mnd-button-link {
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (max-width: 768px) {  
   .team {
-    padding: 80px 0;
+    padding: 120px 0;
 
     p {
-      font-size: 24px;
-      margin: 30px 0;
+      max-width: 700px;
+      margin: 30px auto 40px;
+      font-size: 28px;
+      color: #000000;
+      line-height: 1.5;
+      font-family: 'MADEEvolveSans-regular',
+        sans-serif;
+      font-weight: normal;
+      text-align: center;
+
+      a {
+        color: $accent-color--red;
+        text-decoration: none;
+      }
+    }
+
+    .mnd-button-link {
+      margin: 0 auto;
     }
   }
-}
+
+  @media only screen and (max-width: 768px) {  
+    .team {
+      padding: 80px 0;
+
+      p {
+        font-size: 24px;
+        margin: 30px 0;
+      }
+    }
+  }
 </style>

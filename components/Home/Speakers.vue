@@ -165,320 +165,322 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.speakers {
-  padding-bottom: 60px;
-  &_wrap {
-    text-align: center;
-    h2 {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 900px;
-      margin-bottom: 30px;
-    }
-    &-places {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      overflow: hidden;
-      height: auto;
-      transition: all .4s;
-      &-item {
-        width: 16%;
-        min-width: 140px;
-        height: 43px;
-        text-align: center;
-        margin: 30px 0;
+  @import '../../assets/styles/vars';
+
+  .speakers {
+    padding-bottom: 60px;
+    &_wrap {
+      text-align: center;
+      h2 {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 900px;
+        margin-bottom: 30px;
+      }
+      &-places {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
-        img {
-          width: 100%;
-          height: 100%;
-          display: inline-block;
-        }
-        @media screen and (max-width: 820px) and (min-width: 540px) {
-          display: none;
-          width: 25%;
-          img {
-            max-width: 115px;
-          }
-          &:nth-child(-n+10) {
-            display: block;
-          }
-        }
-        @media screen and (max-width: 819px) {
-          display: block;
-        }
-        @media screen and (max-width: 539px) {
-          display: none;
-          &:nth-child(-n+6) {
-            display: block;
-          }
-        }
-      }
-      .golang-img {
-        height: 55px;
-        img {
-          width: auto;
-        }
-      }
-    }
-    &-people {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 40px -10px 0;
-      &-item {
-        max-width: 256px;
-        max-height: 192px;
-        position: relative;
-        margin: 5px;
         overflow: hidden;
-        .people-info-block {
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          left: 0;
-          top: 0;
+        height: auto;
+        transition: all .4s;
+        &-item {
+          width: 16%;
+          min-width: 140px;
+          height: 43px;
+          text-align: center;
+          margin: 30px 0;
           display: flex;
-          flex-direction: column;
-          padding: 20px;
-          box-sizing: border-box;
-          opacity: 0;
-          transition: all .5s ease;
-          visibility: hidden;
+          align-items: center;
+          justify-content: center;
           img {
-            width: 100px;
-            height: auto;
-            transition: all .1s ease;
-            opacity: 0;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
           }
-          p {
-            color: #fff;
-            line-height: 1.3;
-            letter-spacing: 0.2px;
-            font-family: 'MADEEvolveSans-regular', sans-serif;
-            font-size: 18px;
-            text-align: left;
-            margin-top: 10px;
-            transition: all .1s ease;
-            @media screen and (max-width: 1376px){
-              font-size: 16px;
+          @media screen and (max-width: 820px) and (min-width: 540px) {
+            display: none;
+            width: 25%;
+            img {
+              max-width: 115px;
             }
-            @media screen and (max-width: 440px){
-              font-size: 14px;
+            &:nth-child(-n+10) {
+              display: block;
             }
           }
-          &__header {
+          @media screen and (max-width: 819px) {
+            display: block;
+          }
+          @media screen and (max-width: 539px) {
+            display: none;
+            &:nth-child(-n+6) {
+              display: block;
+            }
+          }
+        }
+        .golang-img {
+          height: 55px;
+          img {
+            width: auto;
+          }
+        }
+      }
+      &-people {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px -10px 0;
+        &-item {
+          max-width: 256px;
+          max-height: 192px;
+          position: relative;
+          margin: 5px;
+          overflow: hidden;
+          .people-info-block {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
             display: flex;
-            justify-content: flex-start;
-            p {
-              white-space: nowrap;
-              margin: auto 5px;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: all .5s ease;
+            visibility: hidden;
+            img {
+              width: 100px;
+              height: auto;
+              transition: all .1s ease;
+              opacity: 0;
             }
-            &-line {
-              min-height: 20px;
-              border-left: 3px solid rgba(203, 201, 201, 0.877);
-              margin-left: -8px;
-              @media screen and (max-width: 1200px){
-                p {
-                  font-size: 16px;
-                }
+            p {
+              color: $text-color--white;
+              line-height: 1.3;
+              letter-spacing: 0.2px;
+              font-family: 'MADEEvolveSans-regular', sans-serif;
+              font-size: 18px;
+              text-align: left;
+              margin-top: 10px;
+              transition: all .1s ease;
+              @media screen and (max-width: 1376px){
+                font-size: 16px;
+              }
+              @media screen and (max-width: 440px){
+                font-size: 14px;
               }
             }
-            img {
-              margin: 0;
-              width: 20px;
-              height: 20px;
+            &__header {
+              display: flex;
+              justify-content: flex-start;
+              p {
+                white-space: nowrap;
+                margin: auto 5px;
+              }
+              &-line {
+                min-height: 20px;
+                border-left: 3px solid rgba(203, 201, 201, 0.877);
+                margin-left: -8px;
+                @media screen and (max-width: 1200px){
+                  p {
+                    font-size: 16px;
+                  }
+                }
+              }
+              img {
+                margin: 0;
+                width: 20px;
+                height: 20px;
+              }
             }
           }
-        }
-        img {
-          width: 100%;
-          min-height: 100%;
-          display: block;
-          object-fit: cover;
-        }
-        &::before {
-          content: '';
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          transition: all .2s ease;
-        }
-        &:hover {
-          &::before {
-            content: '';
-            background-color: rgba(0, 0, 0, 0.7);
-          }
-          .people-info-block {
-            opacity: 1;
-            visibility: visible;
-            img {
-              opacity: 1;
-            }
-            p {
-              opacity: 1;
-            }
-          }
-        }
-        @media screen and (max-width: 1340px) {
-          width: 218px;
-          height: auto;
-        }
-        @media screen and (max-width: 783px) {
-          width: 185px;
-        }
-        @media screen and (max-width: 1120px) and (min-width: 680px) {
-          display: none;
-          &:nth-child(-n+12) {
-            display: block;
-          }
-        }
-        @media screen and (max-width: 680px) {
-          display: none;
-          width: 45%;
-          height: auto;
-          &:nth-child(-n+6) {
-            display: block;
-          }
-        }
-        @media screen and (max-width: 520px) {
-          display: none;
-          width: calc(50% - 10px);
-          &:nth-child(-n+8) {
-            display: block;
-          }
-        }
-      }
-    }
-    a {
-      font-size: 13px;
-      font-family: 'MADEEvolveSans-bold', sans-serif;
-      line-height: 1.85;
-      letter-spacing: 0.2px;
-      text-decoration: none;
-      padding: 10px 0;
-    }
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .speakers {
-    &_wrap {
-      &-people {
-        &-item {
-          &::before {
-            content: '';
-            transition: none;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 992px) {
-  .speakers {
-    &_wrap {
-      &-places {
-        &-item {
-          width: 25%;
-        }
-      }
-
-      &-people {
-        &-item {
-          width: 32%;
-          max-width: 100%;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 850px) {
-  .speakers {
-    &_wrap {
-      &-people {
-        &-item {
-          width: 30%;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 768px) {
-  .speakers {
-    &_wrap {
-      &-people {
-        &-item {
-          width: 47%;
-          max-height: 210px;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 540px) {
-  .speakers {
-    &_wrap {
-      &-places {
-        &-item {
           img {
-            width: 100px;
+            width: 100%;
+            min-height: 100%;
+            display: block;
+            object-fit: cover;
           }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 480px) {
-  .speakers {
-    padding-bottom: 0;
-
-    &_wrap {
-      &-places {
-        &-item {
-          width: 50%;
-        }
-      }
-    }
-  }
-
-  .speakers_wrap-people-item .people-info-block {
-    padding: 10px 15px;
-  }
-}
-@media only screen and (max-width: 380px) {
-  .speakers {
-    &_wrap {
-      &-people {
-        margin-left: 0;
-        margin-right: 0;
-
-        &-item {
-          width: 100%;
-          max-width: 100%;
-        }
-
-        .people-info-block {
-          padding: 15px 25px;
-
-          &__header {
-            p {
-              font-size: 22px;
+          &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .2s ease;
+          }
+          &:hover {
+            &::before {
+              content: '';
+              background-color: rgba(0, 0, 0, 0.7);
+            }
+            .people-info-block {
+              opacity: 1;
+              visibility: visible;
+              img {
+                opacity: 1;
+              }
+              p {
+                opacity: 1;
+              }
             }
           }
-
-          a {
-            p {
-              font-size: 18px;
+          @media screen and (max-width: 1340px) {
+            width: 218px;
+            height: auto;
+          }
+          @media screen and (max-width: 783px) {
+            width: 185px;
+          }
+          @media screen and (max-width: 1120px) and (min-width: 680px) {
+            display: none;
+            &:nth-child(-n+12) {
+              display: block;
+            }
+          }
+          @media screen and (max-width: 680px) {
+            display: none;
+            width: 45%;
+            height: auto;
+            &:nth-child(-n+6) {
+              display: block;
+            }
+          }
+          @media screen and (max-width: 520px) {
+            display: none;
+            width: calc(50% - 10px);
+            &:nth-child(-n+8) {
+              display: block;
+            }
+          }
+        }
+      }
+      a {
+        font-size: 13px;
+        font-family: 'MADEEvolveSans-bold', sans-serif;
+        line-height: 1.85;
+        letter-spacing: 0.2px;
+        text-decoration: none;
+        padding: 10px 0;
+      }
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .speakers {
+      &_wrap {
+        &-people {
+          &-item {
+            &::before {
+              content: '';
+              transition: none;
             }
           }
         }
       }
     }
   }
-}
+  @media only screen and (max-width: 992px) {
+    .speakers {
+      &_wrap {
+        &-places {
+          &-item {
+            width: 25%;
+          }
+        }
+
+        &-people {
+          &-item {
+            width: 32%;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .speakers {
+      &_wrap {
+        &-people {
+          &-item {
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .speakers {
+      &_wrap {
+        &-people {
+          &-item {
+            width: 47%;
+            max-height: 210px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 540px) {
+    .speakers {
+      &_wrap {
+        &-places {
+          &-item {
+            img {
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .speakers {
+      padding-bottom: 0;
+
+      &_wrap {
+        &-places {
+          &-item {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    .speakers_wrap-people-item .people-info-block {
+      padding: 10px 15px;
+    }
+  }
+  @media only screen and (max-width: 380px) {
+    .speakers {
+      &_wrap {
+        &-people {
+          margin-left: 0;
+          margin-right: 0;
+
+          &-item {
+            width: 100%;
+            max-width: 100%;
+          }
+
+          .people-info-block {
+            padding: 15px 25px;
+
+            &__header {
+              p {
+                font-size: 22px;
+              }
+            }
+
+            a {
+              p {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 </style>

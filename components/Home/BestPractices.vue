@@ -123,140 +123,142 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.best-practices {
-  background-color: #1e1e1e;
-  padding: 60px 0;
-  &_wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &-preview {
-      width: 660px;
-      min-width: 300px;
-      height: auto;
-      max-height: 375px;
-      box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15);
-      background-color: #1e1e1e;
-      &-slides {
-        height: 100%;
-        overflow: hidden;
-        border-radius: 5px;
-      }
-      &-slide {
-        width: 100%;
-        height: 100%;
-        display: block !important;
-        img {
-          display: block;
+  @import '../../assets/styles/vars';
+
+  .best-practices {
+    background-color: #1e1e1e;
+    padding: 60px 0;
+    &_wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-preview {
+        width: 660px;
+        min-width: 300px;
+        height: auto;
+        max-height: 375px;
+        box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15);
+        background-color: #1e1e1e;
+        &-slides {
+          height: 100%;
+          overflow: hidden;
+          border-radius: 5px;
+        }
+        &-slide {
           width: 100%;
           height: 100%;
+          display: block !important;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
         }
       }
-    }
-    &-title {
-      width: 525px;
-      margin-left: 30px;
-      p {
-        color: #3b3b3b;
-        font-size: 14px;
-        letter-spacing: normal;
-        font-family: 'FiraMono', sans-serif;
-        margin-bottom: 10px;
-      }
-      .line-number_text {
-        display: flex;
-        align-items: flex-start;
-        overflow: hidden;
-        .line-number {
+      &-title {
+        width: 525px;
+        margin-left: 30px;
+        p {
+          color: #3b3b3b;
+          font-size: 14px;
+          letter-spacing: normal;
+          font-family: 'FiraMono', sans-serif;
+          margin-bottom: 10px;
+        }
+        .line-number_text {
           display: flex;
-          flex-direction: column;
-          margin-right: 38px;
-          position: relative;
-          margin-top: -12px;
-          &::before {
-            content: '';
-            width: 1px;
-            height: 85%;
-            position: absolute;
-            bottom: 25px;
-            right: -12px;
-            background-color: #3b3b3b;
+          align-items: flex-start;
+          overflow: hidden;
+          .line-number {
+            display: flex;
+            flex-direction: column;
+            margin-right: 38px;
+            position: relative;
+            margin-top: -12px;
+            &::before {
+              content: '';
+              width: 1px;
+              height: 85%;
+              position: absolute;
+              bottom: 25px;
+              right: -12px;
+              background-color: #3b3b3b;
+            }
+          }
+          h3 {
+            color: $text-color--white;
+            span {
+              font-family: 'MADEEvolveSans-medium', sans-serif;
+              cursor: pointer;
+              transition: all .2s ease;
+              color: #fff9dd;
+            }
           }
         }
-        h3 {
-          color: #fff;
-          span {
-            font-family: 'MADEEvolveSans-medium', sans-serif;
-            cursor: pointer;
-            transition: all .2s ease;
-            color: #fff9dd;
+      }
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .best-practices {
+      &_wrap {
+        &-preview {
+          min-width: 437px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 830px) {
+    .best-practices {
+      &_wrap {
+        flex-direction: column;
+
+        &-preview {
+          width: 100%;
+        }
+
+        &-title {
+          width: 100%;
+          margin: 0;
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .best-practices {
+      &_wrap {
+        flex-direction: column;
+
+        &-preview {
+          width: 100%;
+        }
+
+        &-title {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .best-practices {
+      padding: 60px 0;
+
+      &_wrap {
+        flex-direction: column;
+
+        &-preview {
+          width: 100%;
+          min-width: auto;
+        }
+
+        &-title {
+          margin-top: 40px;
+
+          .line-number_text h3 {
+            font-size: 24px;
           }
         }
       }
     }
   }
-}
-@media only screen and (max-width: 1024px) {
-  .best-practices {
-    &_wrap {
-      &-preview {
-        min-width: 437px;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 830px) {
-  .best-practices {
-    &_wrap {
-      flex-direction: column;
-
-      &-preview {
-        width: 100%;
-      }
-
-      &-title {
-        width: 100%;
-        margin: 0;
-        margin-top: 60px;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 576px) {
-  .best-practices {
-    &_wrap {
-      flex-direction: column;
-
-      &-preview {
-        width: 100%;
-      }
-
-      &-title {
-        font-size: 26px;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 480px) {
-  .best-practices {
-    padding: 60px 0;
-
-    &_wrap {
-      flex-direction: column;
-
-      &-preview {
-        width: 100%;
-        min-width: auto;
-      }
-
-      &-title {
-        margin-top: 40px;
-
-        .line-number_text h3 {
-          font-size: 24px;
-        }
-      }
-    }
-  }
-}
 </style>

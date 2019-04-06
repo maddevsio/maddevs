@@ -20,30 +20,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.intern {
-  margin-top: 120px;
-  background-color: #e8e8e8;
-  padding: 60px 0;
+  @import '../../assets/styles/vars';
 
-  p {
-    max-width: 710px;
-    font-size: 28px;
-    color: #000;
-    font-family: 'MADEEvolveSans-regular', sans-serif;
-    line-height: 1.5;
-    margin: 30px auto 0;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 480px) {
   .intern {
-    margin-top: 80px;
+    margin-top: 120px;
+    background-color: $bgcolor--grey;
+    padding: 60px 0;
 
     p {
-      font-size: 24px;
+      max-width: 710px;
+      font-size: 28px;
+      color: $text-color--black;
+      font-family: 'MADEEvolveSans-regular', sans-serif;
+      line-height: 1.5;
+      margin: 30px auto 0;
+      text-align: center;
     }
-  }  
-}
+  }
+
+  @media only screen and (max-width: 480px) {
+    .intern {
+      margin-top: 80px;
+
+      p {
+        font-size: 24px;
+      }
+    }  
+  }
 </style>
 
