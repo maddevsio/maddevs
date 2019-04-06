@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/variables';
+  @import '../../assets/styles/vars';
 
   .quality-banner {
     width: 100%;

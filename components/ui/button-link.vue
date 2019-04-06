@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/variables';
+  @import '../../assets/styles/vars';
 
   .mnd-button-link {
     width: 340px;
