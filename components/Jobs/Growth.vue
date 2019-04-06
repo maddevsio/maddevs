@@ -119,7 +119,7 @@ export default {
             }
           }
           .growth-slide_active {
-            color: #000;
+            color: $text-color--black;
           }
         }
         a {
@@ -218,7 +218,7 @@ export default {
           margin: 40px 0;
 
           li {
-            color: #000;
+            color: $text-color--black;
           }
         }
 

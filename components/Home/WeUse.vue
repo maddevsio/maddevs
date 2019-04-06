@@ -168,75 +168,77 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.weUse {
-  padding: 60px 0 120px;
-  &_wrap {
-    &-list {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      &_column {
-        width: 48%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-      }
-      &-item {
-        width: 100%;
-        margin-top: 65px;
-        h3 {
-          margin-bottom: 16px;
-          font-size: 28px;
-          line-height: 0.79;
-          font-family: 'MADEEvolveSans-medium', sans-serif;
-          font-weight: normal;
-          color: #000;
-        }
-        p {
-          font-size: 20px;
-          font-family: 'MADEEvolveSans-regular', sans-serif;
-          color: #000;
-          line-height: 1.7;
-          span {
-            font-family: 'MADEEvolveSans-bold', sans-serif;
-            white-space: nowrap;
-          }
-          img {
-            height: 24px;
-            margin-bottom: -5px;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 953px) {
+  @import '../../assets/styles/vars';
+
   .weUse {
+    padding: 60px 0 120px;
     &_wrap {
       &-list {
-        flex-direction: column;
-
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         &_column {
-          width: 100%;
+          width: 48%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
         }
-
         &-item {
           width: 100%;
-          margin-top: 60px;
+          margin-top: 65px;
+          h3 {
+            margin-bottom: 16px;
+            font-size: 28px;
+            line-height: 0.79;
+            font-family: 'MADEEvolveSans-medium', sans-serif;
+            font-weight: normal;
+            color: $text-color--black;
+          }
+          p {
+            font-size: 20px;
+            font-family: 'MADEEvolveSans-regular', sans-serif;
+            color: $text-color--black;
+            line-height: 1.7;
+            span {
+              font-family: 'MADEEvolveSans-bold', sans-serif;
+              white-space: nowrap;
+            }
+            img {
+              height: 24px;
+              margin-bottom: -5px;
+            }
+          }
         }
       }
     }
   }
-}
-@media only screen and (max-width: 480px) {
-  .weUse {
-    padding: 80px 0;
+  @media only screen and (max-width: 953px) {
+    .weUse {
+      &_wrap {
+        &-list {
+          flex-direction: column;
 
-    &_wrap-list-item h3 {
-      font-size: 22px;
+          &_column {
+            width: 100%;
+          }
+
+          &-item {
+            width: 100%;
+            margin-top: 60px;
+          }
+        }
+      }
     }
   }
-}
+  @media only screen and (max-width: 480px) {
+    .weUse {
+      padding: 80px 0;
+
+      &_wrap-list-item h3 {
+        font-size: 22px;
+      }
+    }
+  }
 </style>
 

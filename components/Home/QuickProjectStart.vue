@@ -109,7 +109,7 @@ export default {
           left: 50%;
           transform: translateX(100%);
           background-color: $accent-color--red;
-          color: #fff;
+          color: $text-color--white;
           font-size: 15px;
           font-family: 'MADEEvolveSans-bold', sans-serif;
           font-weight: normal;

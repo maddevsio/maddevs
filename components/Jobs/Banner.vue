@@ -19,50 +19,52 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.jobs-banner {
-  width: 100%;
-  min-height: 610px;
-  background-image: url(../../assets/img/Jobs/jpg/Banner/banner@2x.jpg);
-  background-size: cover;
-  background-position: center;
-  &_wrap {
+  @import '../../assets/styles/vars';
+
+  .jobs-banner {
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    padding-top: 160px;
-    padding-bottom: 60px;
-    h1 {
-      max-width: 795px;
-      font-size: 52px;
-      font-family: 'MADEEvolveSans-regular', sans-serif;
-      font-weight: normal;
-      line-height: 1.33;
-      letter-spacing: -0.4px;
-      color: #fff;
-      text-align: center;
-      margin-bottom: 60px;
+    min-height: 610px;
+    background-image: url(../../assets/img/Jobs/jpg/Banner/banner@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    &_wrap {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      box-sizing: border-box;
+      padding-top: 160px;
+      padding-bottom: 60px;
+      h1 {
+        max-width: 795px;
+        font-size: 52px;
+        font-family: 'MADEEvolveSans-regular', sans-serif;
+        font-weight: normal;
+        line-height: 1.33;
+        letter-spacing: -0.4px;
+        color: $text-color--white;
+        text-align: center;
+        margin-bottom: 60px;
+      }
     }
   }
-}
 
-@media only screen and (max-width: 768px) {
-  .jobs-banner {
-    background-image: url(../../assets/img/Jobs/jpg/Banner/banner.jpg)
-  }
-}
-@media only screen and (max-width: 480px) {
-  .jobs-banner {
-    height: auto;
-    min-height: 580px;
-
-    h1 {
-      font-size: 34px;
+  @media only screen and (max-width: 768px) {
+    .jobs-banner {
+      background-image: url(../../assets/img/Jobs/jpg/Banner/banner.jpg)
     }
   }
-}
+  @media only screen and (max-width: 480px) {
+    .jobs-banner {
+      height: auto;
+      min-height: 580px;
+
+      h1 {
+        font-size: 34px;
+      }
+    }
+  }
 </style>
 

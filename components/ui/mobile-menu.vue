@@ -91,7 +91,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: $text-color--white;
     padding: 16px;
     box-sizing: border-box;
     z-index: 999;
@@ -134,11 +134,11 @@ export default {
       width: 100%;
       text-align: center;
       padding: 32px 0 18px;
-      border-top: 1px solid #e8e8e8;
+      border-top: 1px solid $border-color--grey;
       p, a {
         max-width: 290px;
         font-size: 16px;
-        color: #000;
+        color: $text-color--black;
         font-family: 'MADEEvolveSans-regular',
         sans-serif;
         margin: 0 auto;
