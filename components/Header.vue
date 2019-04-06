@@ -44,6 +44,7 @@ export default {
   },
   created() {
     this.lang = this.$nuxt.$router.history.current.params.lang || this.$store.state.locale;
+    console.log(this.$nuxt.$router.history.current.params.lang);
     this.$store.commit('SET_LANG', this.lang);
     if (process.browser) {
       window.addEventListener('resize', this.toggleScrollOnBody);
