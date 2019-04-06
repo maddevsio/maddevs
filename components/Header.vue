@@ -43,7 +43,7 @@ export default {
     };
   },
   created() {
-    this.lang = this.$nuxt.$router.history.current;
+    this.lang = this.$nuxt.$router.history.current.params.lang || this.$store.state.locale;
     this.$store.commit('SET_LANG', this.lang);
     if (process.browser) {
       window.addEventListener('resize', this.toggleScrollOnBody);
@@ -57,7 +57,8 @@ export default {
   methods: {
     switchLanguage(locale) {
       const beforePath = this.$nuxt.$router.history.current.path;
-      this.lang = locale;
+      this.$store.commit('SET_LANG', locale);
+      this.lang = this.$store.state.locale;
       let result = '';
       result = beforePath.replace('/en', '');
       result = result.replace('/ru', '');
