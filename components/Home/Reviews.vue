@@ -63,104 +63,106 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.reviews {
-  width: 100%;
-  background-image: linear-gradient(112deg, #f34f53, #fc944e);
-  padding: 60px 0;
-  &_wrap {
-    h2 {
-      color: #fff;
-    }
-    .VueCarousel-dot-container .VueCarousel-dot:last-child {
-      margin-top: 0 !important;
-    }
-    &-carousel {
-      &-slide {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        &_desc {
-          max-width: 870px;
-          font-size: 28px;
-          font-family: 'MADEEvolveSans-regular', sans-serif;
-          line-height: 1.6;
-          padding: 40px 0 43px;
-          margin: 0 auto;
-          color: #fff;
-          user-select: none;
-          -webkit-touch-callout: none;
-          -webkit-user-select: none;
-          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        }
-        .sender {
-          height: 30px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          img {
-            height: 28px;
-            margin-right: 15px;
-          }
-          &-name {
-            display: flex;
-            p {
-              color: #fff;
-              font-family: 'MADEEvolveSans-bold', sans-serif;
-              font-size: 18px;
-              line-height: 1.43;
-              margin-top: -2px;
-              white-space: nowrap;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 480px) {
+  @import '../../assets/styles/vars';
+
   .reviews {
+    width: 100%;
+    background-image: $gradient--red-orange;
     padding: 60px 0;
-
     &_wrap {
+      h2 {
+        color: $text-color--white;
+      }
+      .VueCarousel-dot-container .VueCarousel-dot:last-child {
+        margin-top: 0 !important;
+      }
       &-carousel {
-        .VueCarousel-pagination {
-          margin-top: 30px;
-
-          .VueCarousel-dot-container {
-            li {
-              button {
-                width: 28px !important;
+        &-slide {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 100%;
+          &_desc {
+            max-width: 870px;
+            font-size: 28px;
+            font-family: 'MADEEvolveSans-regular', sans-serif;
+            line-height: 1.6;
+            padding: 40px 0 43px;
+            margin: 0 auto;
+            color: $text-color--white;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          }
+          .sender {
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              height: 28px;
+              margin-right: 15px;
+            }
+            &-name {
+              display: flex;
+              p {
+                color: $text-color--white;
+                font-family: 'MADEEvolveSans-bold', sans-serif;
+                font-size: 18px;
+                line-height: 1.43;
+                margin-top: -2px;
+                white-space: nowrap;
               }
             }
           }
         }
+      }
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .reviews {
+      padding: 60px 0;
 
-        &-slide {
-          &_desc {
-            font-size: 20px;
-            padding: 30px 0;
+      &_wrap {
+        &-carousel {
+          .VueCarousel-pagination {
+            margin-top: 30px;
+
+            .VueCarousel-dot-container {
+              li {
+                button {
+                  width: 28px !important;
+                }
+              }
+            }
           }
 
-          .sender {
-            height: auto;
-            flex-direction: column;
-
-            img {
-              margin: 0 !important;
-              margin-bottom: 10px !important;
+          &-slide {
+            &_desc {
+              font-size: 20px;
+              padding: 30px 0;
             }
 
-            &-name {
-              margin: 0;
+            .sender {
+              height: auto;
+              flex-direction: column;
+
+              img {
+                margin: 0 !important;
+                margin-bottom: 10px !important;
+              }
+
+              &-name {
+                margin: 0;
+              }
             }
           }
         }
       }
     }
   }
-}
 </style>
 

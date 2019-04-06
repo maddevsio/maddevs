@@ -167,7 +167,7 @@ export default {
               }
             }
             &-name, &-meta {
-              color: #000;
+              color: $text-color--black;
               font-family: 'MADEEvolveSans-regular', sans-serif;
               line-height: 1.08;
               letter-spacing: 0.1px;
@@ -193,7 +193,7 @@ export default {
             }
             h5 {
               width: 100%;
-              color: #000;
+              color: $text-color--black;
               font-size: 24px;
               line-height: 1.25;
               font-family: 'MADEEvolveSans-medium', sans-serif;

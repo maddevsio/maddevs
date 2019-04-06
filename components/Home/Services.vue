@@ -97,7 +97,7 @@ export default {
           font-size: 18px;
           line-height: 1.39;
           font-family: 'MADEEvolveSans-regular', sans-serif;
-          color: #000;
+          color: $text-color--black;
           text-align: right;
         }
       }
@@ -225,7 +225,7 @@ export default {
             font-size: 20px;
             line-height: 1.2;
             font-family: 'MADEEvolveSans-regular', sans-serif;
-            color: #000;
+            color: $text-color--black;
             list-style: none;
             padding: 12.5px 0;
           }

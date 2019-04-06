@@ -23,7 +23,7 @@ export default {
     justify-content: center;
     background-color: $accent-color--red;
     border-radius: 5px;
-    color: #fff;
+    color: $text-color--white;
     font-size: 24px;
     font-family: 'MADEEvolveSans-medium', sans-serif;
     font-weight: normal;

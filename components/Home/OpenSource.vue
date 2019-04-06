@@ -152,7 +152,7 @@ export default {
       flex-direction: column;
       align-items: center;
       padding: 60px 0;
-      background-color: #e8e8e8;
+      background-color: $bgcolor--grey;
       h2 {
         max-width: 830px;
         margin-left: auto;
@@ -169,7 +169,7 @@ export default {
         background-color: #1e1e1e;
         font-size: 24px;
         font-family: 'MADEEvolveSans-medium', sans-serif;
-        color: #fff;
+        color: $text-color--white;
         text-decoration: none;
         box-sizing: border-box;
         margin: 0 auto;
@@ -177,7 +177,7 @@ export default {
         transition: all .2s ease;
         white-space: nowrap;
         &:hover {
-          background-color: #000;
+          background-color: $text-color--black;
         }
         img {
           margin-right: 15px;
@@ -201,8 +201,8 @@ export default {
           justify-content: space-between;
           flex-wrap: wrap;
           margin-top: 40px;
-          border-top: 1px solid #e8e8e8;
-          border-bottom: 1px solid #e8e8e8;
+          border-top: 1px solid $border-color--grey;
+          border-bottom: 1px solid $border-color--grey;
           &-hidden_blocks {
             width: 100%;
             height: 0;
@@ -220,7 +220,7 @@ export default {
             align-items: flex-start;
             flex-direction: column;
             justify-content: flex-start;
-            border-right: 0.5px solid #e8e8e8;
+            border-right: 0.5px solid $border-color--grey;
             padding: 40px 50px;
             text-decoration: none;
             box-sizing: border-box;
@@ -252,7 +252,7 @@ export default {
                 font-size: 18px;
                 line-height: 24px;
                 letter-spacing: 0.2px;
-                color: #000;
+                color: $text-color--black;
                 line-height: 1.33;
                 font-family: 'MADEEvolveSans-regular', sans-serif;
               }
@@ -286,21 +286,21 @@ export default {
           } 
           .op-proj-5 {
             width: 33%;
-            border-top: 1px solid #e8e8e8;
+            border-top: 1px solid $border-color--grey;
             img {
               height: 25px;
             }
           } 
           .op-proj-6 {
             width: 34%;
-            border-top: 1px solid #e8e8e8;
+            border-top: 1px solid $border-color--grey;
             img {
               height: 35px;
             }
           } 
           .op-proj-7 {
             width: 33%;
-            border-top: 1px solid #e8e8e8;
+            border-top: 1px solid $border-color--grey;
             img {
               height: 37px;
             }
@@ -410,11 +410,11 @@ export default {
             }
 
             .op-proj-1 {
-              border-bottom: 1px solid #e8e8e8;
+              border-bottom: 1px solid $border-color--grey;
             }
 
             .op-proj-2 {
-              border-bottom: 1px solid #e8e8e8;
+              border-bottom: 1px solid $border-color--grey;
             }
 
             .op-proj-6 {
@@ -494,7 +494,7 @@ export default {
             }
 
             .op-proj-3 {
-              border-bottom: 1px solid #e8e8e8;
+              border-bottom: 1px solid $border-color--grey;
             }
 
             .op-proj-4 {

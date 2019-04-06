@@ -39,7 +39,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .partners {
-    background-color: #fff;
+    background-color: $text-color--white;
     padding: 120px 0 60px;
     &-wrap {
       display: flex;
@@ -53,7 +53,7 @@ export default {
         justify-content: flex-start;
         align-items: center;
         border-radius: 5px;
-        background-color: #fff;
+        background-color: $text-color--white;
         padding: 60px 30px;
         box-sizing: border-box;
         text-decoration: none;
@@ -86,8 +86,8 @@ export default {
           text-align: center;
           font-size: 18px;
           font-family: 'MADEEvolveSans-regular', sans-serif;
-          color: #000;
-          color: #000;
+          color: $text-color--black;
+          color: $text-color--black;
           line-height: 1.5;
           margin: 18px 0;
           span {

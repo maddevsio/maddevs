@@ -32,7 +32,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .press {
-    background-color: #fff;
+    background-color: $text-color--white;
     padding: 60px 0;
     &-wrap {
       display: flex;
@@ -47,7 +47,7 @@ export default {
         justify-content: center;
         align-items: center;
         border-radius: 5px;
-        background-color: #fff;
+        background-color: $text-color--white;
         padding: 0 30px;
         box-sizing: border-box;
         text-decoration: none;
@@ -75,8 +75,8 @@ export default {
           text-align: center;
           font-size: 18px;
           font-family: 'MADEEvolveSans-regular', sans-serif;
-          color: #000;
-          color: #000;
+          color: $text-color--black;
+          color: $text-color--black;
           line-height: 1.5;
           margin: 40px 0 18px;
           span {

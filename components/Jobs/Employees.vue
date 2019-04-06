@@ -77,85 +77,87 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.employees {
-  padding: 120px 0 0;
+  @import '../../assets/styles/vars';
 
-  p {
-    max-width: 710px;
-    font-size: 28px;
-    color: #000;
-    font-family: 'MADEEvolveSans-regular',
-      sans-serif;
-    line-height: 1.5;
-    margin: 30px auto 0;
-    text-align: center;
-  }
-
-  &_content {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
-
-    &-slider {
-      display: none !important;
-    }
-
-    .slick-arrow {
-      display: none;
-      transition: all .2s ease;
-
-      &:hover {
-        box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.30);
-      }
-    }
-
-    &-item {
-      width: 50%;
-      outline: 1px solid #fff !important;
-
-      img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) {
   .employees {
-    position: relative;
+    padding: 120px 0 0;
 
-    &_content-slider {
-      display: block !important;
-      margin-top: 40px;
-
-      &-item {
-        outline: none;
-      }
+    p {
+      max-width: 710px;
+      font-size: 28px;
+      color: $text-color--black;
+      font-family: 'MADEEvolveSans-regular',
+        sans-serif;
+      line-height: 1.5;
+      margin: 30px auto 0;
+      text-align: center;
     }
 
     &_content {
-      display: none;
-    }
-  }
-}
-@media only screen and (max-width: 480px) {
-  .employees_content-slider .slick-prev {
-    right: 60px;
-    bottom: 20px;
-  }
-  .employees_content-slider .slick-next {
-    right: 20px;
-    bottom: 20px;
-  }
-  .employees {
-    padding-top: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 40px;
 
-    p {
-      font-size: 24px;
+      &-slider {
+        display: none !important;
+      }
+
+      .slick-arrow {
+        display: none;
+        transition: all .2s ease;
+
+        &:hover {
+          box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.30);
+        }
+      }
+
+      &-item {
+        width: 50%;
+        outline: 1px solid #fff !important;
+
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
     }
   }
-}
+
+  @media only screen and (max-width: 768px) {
+    .employees {
+      position: relative;
+
+      &_content-slider {
+        display: block !important;
+        margin-top: 40px;
+
+        &-item {
+          outline: none;
+        }
+      }
+
+      &_content {
+        display: none;
+      }
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .employees_content-slider .slick-prev {
+      right: 60px;
+      bottom: 20px;
+    }
+    .employees_content-slider .slick-next {
+      right: 20px;
+      bottom: 20px;
+    }
+    .employees {
+      padding-top: 80px;
+
+      p {
+        font-size: 24px;
+      }
+    }
+  }
 </style>
 
