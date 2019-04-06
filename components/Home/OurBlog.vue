@@ -125,7 +125,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/variables';
+  @import '../../assets/styles/vars';
 
   .our-blog {
     background-color: #fff8e9;

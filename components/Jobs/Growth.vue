@@ -85,7 +85,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/variables';
+  @import '../../assets/styles/vars';
 
   .growth {
     padding: 120px 0 0;
@@ -155,6 +155,33 @@ export default {
               height: 100%;
           }
         }
+      }
+      :global(.slick-arrow) {
+        width: 28px;
+        height: 28px;
+        display: block;
+        position: absolute;
+        right: 40px;
+        bottom: 30px;
+        z-index: 1;
+        border-radius: 100%;
+        box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.14);
+        background-color: #ffffff;
+        border: none;
+        background-position: center;
+        background-size: 14px;
+        background-repeat: no-repeat;
+        // background-image: url(../../img/Jobs/svg/Employees/arrow.svg);
+        cursor: pointer;
+        transition: all .2s ease;
+      
+        &:hover {
+          box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.30);
+        }
+      }
+      .slick-prev {
+        right: 80px;
+        transform: scale(-1);
       }
     }
   }

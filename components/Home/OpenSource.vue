@@ -119,7 +119,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/variables';
+  @import '../../assets/styles/vars';
 
   .open-source {
     padding-bottom: 120px;
