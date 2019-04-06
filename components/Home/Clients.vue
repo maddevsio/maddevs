@@ -135,165 +135,167 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.clients {
-  position: relative;
-  background-color: #1e1e1e;
-  padding: 60px 0;
-  .clients_btn {
-    position: absolute;
-    bottom: 60px;
-    left: 0;
-    width: 100%;
-    color: #fff;
-    font-size: 13px;
-    font-family: 'MADEEvolveSans-bold', sans-serif;
+  @import '../../assets/styles/vars';
+
+  .clients {
+    position: relative;
     background-color: #1e1e1e;
-    padding: 10px 0 20px;
-    margin-bottom: -10px;
-    line-height: 1.85;
-    cursor: pointer;
-    text-transform: uppercase;
-    border: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    img {
-      height: 9px;
-      margin-left: 5px;
-    }
-  }
-  &_wrap {
-    height: 460px;
-    overflow: hidden;
-    padding-bottom: 110px;
-    box-sizing: border-box;
-    transition: all .3s ease;
-    h2 {
-      color: #fff;
-    }
-    &-icons {
-      &_row {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        a {
-          width: 20%;
-          margin-top: 100px;
-          text-align: center;
-        }
-        .lakediamond {
-          img {
-            max-width: 150px;
-          }
-        }
-        .GuardRails img {
-          height: 36px;
-        }
-      }
-    }
-  }
-  .open_wrap {
-    height: 1161px;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .clients {
-    &_wrap {
-      &-icons {
-        &_row {
-          a {
-            width: 33%;
-            text-align: center !important;
-          }
-
-          .last-icon {
-            width: 100%;
-          }
-
-          .partner-icon-fake {
-            display: none;
-          }
-        }
-      }
-    }
-  }
-
-  .clients .open_wrap {
-    height: 1720px;
-  }
-}
-@media only screen and (max-width: 680px) {
-  .clients {
-    padding: 80px 0;
-
-    &_wrap {
-      height: 485px;
-
-      &-icons {
-        &_row {
-          a {
-            width: 50%;
-            margin-top: 80px;
-            text-align: center !important;
-
-            img {
-              height: 24px;
-            }
-          }
-
-          .scentomania {
-            img {
-              height: 15px;
-            }
-          }
-
-          .namba-taxi img {
-            height: 20px;
-          }
-
-          .photobook {
-            img {
-              height: 18px;
-            }
-          }
-
-          .tengri {
-            img {
-              height: 18px;
-            }
-          }
-
-          .small-image {
-            img {
-              height: 36px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .clients .open_wrap {
-    height: 1960px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .clients {
     padding: 60px 0;
-  }
-}
-@media only screen and (max-width: 420px) {
-  .clients {
-    .namba-taxi img {
-      height: 15px;
+    .clients_btn {
+      position: absolute;
+      bottom: 60px;
+      left: 0;
+      width: 100%;
+      color: $text-color--white;
+      font-size: 13px;
+      font-family: 'MADEEvolveSans-bold', sans-serif;
+      background-color: #1e1e1e;
+      padding: 10px 0 20px;
+      margin-bottom: -10px;
+      line-height: 1.85;
+      cursor: pointer;
+      text-transform: uppercase;
+      border: none;
+      user-select: none;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      img {
+        height: 9px;
+        margin-left: 5px;
+      }
     }
-    .GuardRails img {
-      height: 24px;
+    &_wrap {
+      height: 460px;
+      overflow: hidden;
+      padding-bottom: 110px;
+      box-sizing: border-box;
+      transition: all .3s ease;
+      h2 {
+        color: $text-color--white;
+      }
+      &-icons {
+        &_row {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          a {
+            width: 20%;
+            margin-top: 100px;
+            text-align: center;
+          }
+          .lakediamond {
+            img {
+              max-width: 150px;
+            }
+          }
+          .GuardRails img {
+            height: 36px;
+          }
+        }
+      }
+    }
+    .open_wrap {
+      height: 1161px;
     }
   }
-}
+  @media only screen and (max-width: 992px) {
+    .clients {
+      &_wrap {
+        &-icons {
+          &_row {
+            a {
+              width: 33%;
+              text-align: center !important;
+            }
+
+            .last-icon {
+              width: 100%;
+            }
+
+            .partner-icon-fake {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .clients .open_wrap {
+      height: 1720px;
+    }
+  }
+  @media only screen and (max-width: 680px) {
+    .clients {
+      padding: 80px 0;
+
+      &_wrap {
+        height: 485px;
+
+        &-icons {
+          &_row {
+            a {
+              width: 50%;
+              margin-top: 80px;
+              text-align: center !important;
+
+              img {
+                height: 24px;
+              }
+            }
+
+            .scentomania {
+              img {
+                height: 15px;
+              }
+            }
+
+            .namba-taxi img {
+              height: 20px;
+            }
+
+            .photobook {
+              img {
+                height: 18px;
+              }
+            }
+
+            .tengri {
+              img {
+                height: 18px;
+              }
+            }
+
+            .small-image {
+              img {
+                height: 36px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .clients .open_wrap {
+      height: 1960px;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .clients {
+      padding: 60px 0;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    .clients {
+      .namba-taxi img {
+        height: 15px;
+      }
+      .GuardRails img {
+        height: 24px;
+      }
+    }
+  }
 </style>
 

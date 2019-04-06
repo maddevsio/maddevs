@@ -21,9 +21,9 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ec2227;
+    background-color: $accent-color--red;
     border-radius: 5px;
-    color: #fff;
+    color: $text-color--white;
     font-size: 24px;
     font-family: 'MADEEvolveSans-medium', sans-serif;
     font-weight: normal;

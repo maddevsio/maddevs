@@ -29,96 +29,98 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.press {
-  background-color: #fff;
-  padding: 60px 0;
-  &-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    margin-top: 60px;
-    &_item {
-      width: 49%;
+  @import '../../assets/styles/vars';
+
+  .press {
+    background-color: $text-color--white;
+    padding: 60px 0;
+    &-wrap {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border-radius: 5px;
-      background-color: #fff;
-      padding: 0 30px;
-      box-sizing: border-box;
-      text-decoration: none;
-      &_img {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      margin-top: 60px;
+      &_item {
+        width: 49%;
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
-        height: 120px;
-        .press-cnbc {
-          height: 88px;
-        }
-        .press-ozy {
-          height: 54px;
-        }
-      }
-      a {
-        font-size: 14px;
-        font-family: 'MADEEvolveSans-regular', sans-serif;
-        line-height: 1;
-        color: #ec2227;
-        text-align: center;
-      }
-      p {
-        max-width: 430px;
-        text-align: center;
-        font-size: 18px;
-        font-family: 'MADEEvolveSans-regular', sans-serif;
-        color: #000;
-        color: #000;
-        line-height: 1.5;
-        margin: 40px 0 18px;
-        span {
-          font-family: 'MADEEvolveSans-medium', sans-serif;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 992px) {
-  .press {
-    &-wrap {
-      flex-direction: column;
-      align-items: center;
-
-      &_item {
-        width: 100%;
-        max-width: 100%;
-
+        align-items: center;
+        border-radius: 5px;
+        background-color: $text-color--white;
+        padding: 0 30px;
+        box-sizing: border-box;
+        text-decoration: none;
         &_img {
-          height: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 120px;
+          .press-cnbc {
+            height: 88px;
+          }
+          .press-ozy {
+            height: 54px;
+          }
         }
-
+        a {
+          font-size: 14px;
+          font-family: 'MADEEvolveSans-regular', sans-serif;
+          line-height: 1;
+          color: $accent-color--red;
+          text-align: center;
+        }
         p {
-          margin-top: 50px;
-        }
-
-        &:first-child {
-          margin-bottom: 60px;
+          max-width: 430px;
+          text-align: center;
+          font-size: 18px;
+          font-family: 'MADEEvolveSans-regular', sans-serif;
+          color: $text-color--black;
+          color: $text-color--black;
+          line-height: 1.5;
+          margin: 40px 0 18px;
+          span {
+            font-family: 'MADEEvolveSans-medium', sans-serif;
+          }
         }
       }
     }
   }
-}
-@media only screen and (max-width: 480px) {
-  .press {
-    padding-top: 80px;
-    padding-bottom: 0;
+  @media only screen and (max-width: 992px) {
+    .press {
+      &-wrap {
+        flex-direction: column;
+        align-items: center;
 
-    &-wrap {
-      &_item {
-        width: 100%;
+        &_item {
+          width: 100%;
+          max-width: 100%;
+
+          &_img {
+            height: auto;
+          }
+
+          p {
+            margin-top: 50px;
+          }
+
+          &:first-child {
+            margin-bottom: 60px;
+          }
+        }
       }
     }
   }
-}
+  @media only screen and (max-width: 480px) {
+    .press {
+      padding-top: 80px;
+      padding-bottom: 0;
+
+      &-wrap {
+        &_item {
+          width: 100%;
+        }
+      }
+    }
+  }
 </style>
