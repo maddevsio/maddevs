@@ -98,6 +98,21 @@ export default {
       mobileMenu: false,
     };
   },
+  created() {
+    this.lang = this.$nuxt.$router.history.current;
+  },
+  mounted() {
+    const self = this;
+    window.addEventListener('resize', function(e) {
+      if (window.innerWidth >= 480) {
+        document.body.classList.remove('scrollDisabled');
+      } else if (window.innerWidth < 480) {
+        if (self.mobileMenu === true) {
+          document.body.classList.add('scrollDisabled');
+        }
+      }
+    });
+  },
   methods: {
     switchLanguage(locale) {
       // -- Getting the path before starting
@@ -106,8 +121,8 @@ export default {
 
       // -- Removing the previous locale from the url
       let result = '';
-      result = beforePath.replace( "/en", "" );
-      result = result.replace( "/ru", "" );
+      result = beforePath.replace('/en', '');
+      result = result.replace('/ru', '');
 
       // -- Redirecting to the same page but in the desired language
       if ( locale == 'ru' || locale == 'en' ) {
@@ -138,18 +153,6 @@ export default {
     enableScrollOnBody() {
       document.body.classList.remove('scrollDisabled');
     }
-  },
-  mounted() {
-    const self = this;
-    window.addEventListener('resize', function(e) {
-      if (window.innerWidth >= 480) {
-        document.body.classList.remove('scrollDisabled');
-      } else if (window.innerWidth < 480) {
-        if (self.mobileMenu === true) {
-          document.body.classList.add('scrollDisabled');
-        }
-      }
-    });
   }
 };
 </script>
