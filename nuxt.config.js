@@ -27,6 +27,7 @@ module.exports = {
   plugins: [
     '~/plugins/i18n.js',
     '~/plugins/vue-scrollto.js',
+    '~/plugins/yandex-metrics.js',
     {
       src: '~plugins/slick.js',
       ssr: false
