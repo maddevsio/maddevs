@@ -34,14 +34,14 @@
             <div class="best-practices_wrap-title">
                 <p>0 func (r *REST) addCommand (c echo.Context,) {</p>
                 <div class="line-number_text">
-                  <div id="line-number" class="line-number">
+                  <div ref="lineNumbers" id="line-number" class="line-number">
                     <span>1</span>
                     <span>2</span>
                     <span>3</span>
                     <span>4</span>
                     <span>5</span>
                   </div>
-                  <h3 id="text" class="sec-desc">
+                  <h3 ref="text" id="text" class="sec-desc">
                     {{ $t('Using the') }} <span @click="setAtiveSlide(0)" :style="activeSlide == 0 && 'color: #D4FEA4;'">{{ $t('best development practices') }}</span>,
                     {{ $t('we take responsibility for') }} <span @click="setAtiveSlide(1)" :style="activeSlide == 1 && 'color: #A1D9FF;'">{{ $t('the quality') }}</span>
                     {{ $t('and') }} <span @click="setAtiveSlide(2)" :style="activeSlide == 2 && 'color: #E8B8FF;'">{{ $t('stability') }}</span>
@@ -61,6 +61,7 @@ export default {
   data() {
     return {
       activeSlide: 0,
+      lineHeight: 34,
       slickOptions: {
         slidesToShow: 1,
         autoplay: false,
@@ -68,42 +69,53 @@ export default {
       },
     };
   },
+  created() {
+    if (process.browser) {
+      window.addEventListener('resize', this.calcLineNumbersOnResize);
+    }
+  },
+  beforeDestroy() {
+    if (process.browser) {
+      window.removeEventListener('resize', this.calcLineNumbersOnResize);
+    }
+  },
+  mounted() {
+    if (process.browser) {
+      this.initLineNumbers();
+    }
+  },
   methods: {
-    calcLineNumber() {
-      let lineHeight = 34;
-      function calcLine() {
-        const text = document.getElementById('text');
-        const lineCounts = parseInt(text.offsetHeight / lineHeight);
-        const container = document.getElementById('line-number');
-        container.innerHTML = '';
-        for (var i = 1; i <= lineCounts; i++) {
-          var elem = document.createElement('span');
-          elem.innerHTML = i;
-          container.appendChild(elem);
-        }
-      }
-      window.addEventListener('resize', function() {
-        if (window.innerWidth <= 480) {
-          lineHeight = 35;
-          calcLine();
-        } else {
-          lineHeight = 38;
-          calcLine();
-        }
-      });
-
+    calcLineNumbersOnResize() {
       if (window.innerWidth <= 480) {
-        lineHeight = 35;
-        calcLine();
+        this.lineHeight = 35;
+        this.calcLine();
+      } else {
+        this.lineHeight = 38;
+        this.calcLine();
+      }
+    },
+    initLineNumbers() {
+      if (window.innerWidth <= 480) {
+        this.lineHeight = 35;
+        this.calcLine();
         return false;
       };
       if (window.innerWidth > 1024) {
-        lineHeight = 39;
-        calcLine();
+        this.lineHeight = 39;
+        this.calcLine();
       } else {
-        lineHeight = 38;
-        calcLine();
+        this.lineHeight = 38;
+        this.calcLine();
       };
+    },
+    calcLine() {
+      const lineCounts = parseInt(this.$refs.text.offsetHeight / this.lineHeight);
+      this.$refs.lineNumbers.innerHTML = '';
+      for (var i = 1; i <= lineCounts; i++) {
+        var elem = document.createElement('span');
+        elem.innerHTML = i;
+        this.$refs.lineNumbers.appendChild(elem);
+      }
     },
     setAtiveSlide(index) {
       this.activeSlide = index;
@@ -115,9 +127,6 @@ export default {
     nextSlide() {
       this.$refs.slick.next();
     },
-  },
-  mounted() {
-    this.calcLineNumber();
   }
 };
 </script>
