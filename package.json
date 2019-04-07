@@ -19,7 +19,9 @@
     "serve-static": "^1.13.2",
     "vue-i18n": "^8.9.0",
     "vue-scrollto": "^2.15.0",
-    "vue-slick": "^1.1.15"
+    "vue-slick": "^1.1.15",
+    "vue-yandex-metrika": "^1.7.3",
+    "vue-analytics": "^5.16.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
