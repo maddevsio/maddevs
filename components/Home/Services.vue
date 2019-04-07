@@ -8,10 +8,10 @@
         </div>
         <div class="services-wrap_right-block">
             <div class="right-block_images">
-                <div id="service-arrow-anim" class="right-block_images-arrow">
+                <div :class="{ 'anim-arrow': animated }" class="right-block_images-arrow">
                     <img src="../../assets/img/Home/svg/services/arrow_graph.svg" alt="Arrow graph">
                 </div>
-                <div id="service-block-anim" class="right-block_images-list">
+                <div ref="serviceBlockAnim" :class="{ 'anim-open': animated }" class="right-block_images-list">
                     <div class="right-block_images-list-item">
                       <img src="../../assets/img/Home/svg/services/block-1.svg" alt="Block 1">
                       <div class="block-line"></div>
@@ -50,27 +50,37 @@
 <script>
 export default {
   name: 'services',
+  data() {
+    return {
+      animated: false
+    };
+  },
+  created() {
+    if (process.browser) {
+      window.addEventListener('scroll', this.getAminBlockPorition);
+    }
+  },
+  beforeDestroy() {
+    if (process.browser) {
+      window.removeEventListener('scroll', this.getAminBlockPorition);
+    }
+  },
   mounted() {
-    const blocks = document.getElementById('service-block-anim');
-    const arrow = document.getElementById('service-arrow-anim');
     const ua = window.navigator.userAgent;
     const isIE = /MSIE|Trident/.test(ua);
     if (isIE) {
-      arrow.classList.add('anim-arrow');
-      blocks.classList.add('anim-open');
-      return false;
+      this.animated = true;
     } else {
-      window.addEventListener('scroll', function(event) {
-        var top = this.scrollY;
-        if (top + 700 >= blocks.offsetTop) {
-          arrow.classList.add('anim-arrow');
-          blocks.classList.add('anim-open');
-        }
-      }, false);
+      if (process.browser) {
+        this.getAminBlockPorition();
+      }
     }
-    if (window.scrollY + 700 >= blocks.offsetTop) {
-      arrow.classList.add('anim-arrow');
-      blocks.classList.add('anim-open');
+  },
+  methods: {
+    getAminBlockPorition() {
+      if (window.scrollY + 700 >= this.$refs.serviceBlockAnim.offsetTop) {
+        this.animated = true;
+      }
     }
   }
 };
