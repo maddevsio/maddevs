@@ -12,7 +12,7 @@
     <Partners />
     <OpenSource />
     <Speakers />
-    <!-- <OurBlog :languageeeeee="language"/> -->
+    <!-- <OurBlog /> -->
     <Press />
     <Associations />
     <Contacts />
