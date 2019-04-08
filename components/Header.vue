@@ -122,6 +122,9 @@ export default {
         font-family: 'MADEEvolveSans-regular',
         sans-serif;
       }
+      .nuxt-link-active {
+        color: $accent-color--red;
+      }
       .router-link-active {
         color: $accent-color--red;
       }
