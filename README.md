@@ -1,6 +1,6 @@
-# mnd
+# Mad Devs
 
-> Nuxt.js project
+> Mad Devs is a full stack team for development and administration of IT projects. We specialize in projects requiring the individual technical solutions.
 
 ## Build Setup
 
