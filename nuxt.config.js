@@ -27,7 +27,6 @@ module.exports = {
   plugins: [
     '~/plugins/i18n.js',
     '~/plugins/vue-scrollto.js',
-    '~/plugins/yandex-metrics.js',
     '~/plugins/google-analytics.js',
     {
       src: '~plugins/slick.js',
@@ -70,6 +69,19 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  modules: [
+    [
+      '@nuxtjs/yandex-metrika',
+      {
+        id: '52976554',
+        webvisor: true,
+        clickmap: true,
+        useCDN: false,
+        trackLinks: true,
+        accurateTrackBounce: true
+      }
+    ],
+  ]
 }
 
