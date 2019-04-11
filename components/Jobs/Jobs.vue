@@ -18,6 +18,16 @@
           <p>{{ $t('jobs3-desc') }}</p>
           <h6>{{ $t('jobs3-date') }}</h6>
         </a>
+        <a href="https://blog.maddevs.io/middle-frontend-developer-d24b76aab500" class="jobs_list-item" target="_blank" rel="noreferrer">
+          <h4>{{ $t('jobs4-subtitle') }}</h4>
+          <p>{{ $t('jobs4-desc') }}</p>
+          <h6>{{ $t('jobs4-date') }}</h6>
+        </a>
+        <a href="https://blog.maddevs.io/junior-devops-c51434e6024d" class="jobs_list-item" target="_blank" rel="noreferrer">
+          <h4>{{ $t('jobs5-subtitle') }}</h4>
+          <p>{{ $t('jobs5-desc') }}</p>
+          <h6>{{ $t('jobs5-date') }}</h6>
+        </a>
       </div>
     </div>
   </section>
@@ -45,17 +55,19 @@ export default {
       display: flex;
       justify-content: center;
       align-items: stretch;
-      margin-top: 40px;
+      flex-wrap: wrap;
+      margin-top: 10px;
       margin-left: -15px;
       margin-right: -15px;
 
       &-item {
-        width: 100%;
+        width: 25%;
         max-width: 410px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         margin: 0 15px;
+        margin-top: 30px;
         border-radius: 5px;
         box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.14);
         background-color: $text-color--white;
@@ -111,10 +123,6 @@ export default {
           width: calc(50% - 30px);
           max-width: calc(50% - 30px);
           box-sizing: border-box;
-
-          &:last-child {
-            margin-top: 30px;
-          }
         }
       }
     }
@@ -125,10 +133,6 @@ export default {
         &-item {
           width: 100%;
           max-width: 100%;
-          margin-bottom: 40px;
-          &:last-child {
-            margin-top: 0px;
-          }
         }
       }
     }
@@ -136,6 +140,9 @@ export default {
   @media only screen and (max-width: 480px) {
     .jobs {
       margin-top: 80px;
+      &_list {
+        margin-top: 20px;
+      }
     }
   }
 </style>
