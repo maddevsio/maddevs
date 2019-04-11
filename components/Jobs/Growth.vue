@@ -23,22 +23,22 @@
                     @beforeChange="handleBeforeChange"
                     :options="slickOptions">
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
-                        <img src="../../assets/img/Jobs/png/Growth/Support.png" srcset="../../assets/img/Jobs/png/Growth/Support@2x.png 2x" alt="Support in development and training">
+                        <img src="../../assets/img/Jobs/jpg/Growth/Support.jpg" srcset="../../assets/img/Jobs/jpg/Growth/Support@2x.jpg 2x" alt="Support in development and training">
                     </div>
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
-                        <img src="../../assets/img/Jobs/png/Growth/mentorship.png" srcset="../../assets/img/Jobs/png/Growth/mentorship@2x.png 2x" alt="Peer mentorship">
+                        <img src="../../assets/img/Jobs/jpg/Growth/mentorship.jpg" srcset="../../assets/img/Jobs/jpg/Growth/mentorship@2x.jpg 2x" alt="Peer mentorship">
                     </div>
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
-                        <img src="../../assets/img/Jobs/png/Growth/Speak@2x.png" srcset="../../assets/img/Jobs/png/Growth/Speak@2x.png" alt="Speak at big international conferences 6+ times per year">
+                        <img src="../../assets/img/Jobs/jpg/Growth/Speak@2x.jpg" srcset="../../assets/img/Jobs/jpg/Growth/Speak@2x.jpg" alt="Speak at big international conferences 6+ times per year">
                     </div>
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
-                        <img src="../../assets/img/Jobs/png/Growth/books.png" srcset="../../assets/img/Jobs/png/Growth/books@2x.png 2x" alt="Office library with 150+ books">
+                        <img src="../../assets/img/Jobs/jpg/Growth/books.jpg" srcset="../../assets/img/Jobs/jpg/Growth/books@2x.jpg 2x" alt="Office library with 150+ books">
                     </div>
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
-                        <img src="../../assets/img/Jobs/png/Growth/Team.png" srcset="../../assets/img/Jobs/png/Growth/Team@2x.png 2x" alt="Team of 60+ specialists">
+                        <img src="../../assets/img/Jobs/jpg/Growth/Team.jpg" srcset="../../assets/img/Jobs/jpg/Growth/Team@2x.jpg 2x" alt="Team of 60+ specialists">
                     </div>
                     <div @click.prevent="nextSlide" class="growth_content-carousel_slide">
-                        <img src="../../assets/img/Jobs/png/Growth/5-interns.png" srcset="../../assets/img/Jobs/png/Growth/5-interns@2x.png 2x"  alt="5 of our interns turned into team leads and seniors">
+                        <img src="../../assets/img/Jobs/jpg/Growth/5-interns.jpg" srcset="../../assets/img/Jobs/jpg/Growth/5-interns@2x.jpg 2x"  alt="5 of our interns turned into team leads and seniors">
                     </div>
                 </slick>
             </div>
