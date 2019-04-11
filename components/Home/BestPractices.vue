@@ -10,23 +10,23 @@
                 :options="slickOptions">
                 <div class="best-practices_wrap-preview-slide">
                   <picture>
-                      <source srcset="../../assets/img/Home/png/best-practices/bp1.png, ../../assets/img/Home/png/best-practices/bp1@2x.png 2x"
+                      <source srcset="../../assets/img/Home/jpg/best-practices/bp1.jpg, ../../assets/img/Home/jpg/best-practices/bp1@2x.jpg 2x"
                               media="(max-width: 992px)">
-                      <img @click.prevent="nextSlide" src="../../assets/img/Home/png/best-practices/bp1.png" srcset="../../assets/img/Home/png/best-practices/bp1@2x.png 2x">
+                      <img @click.prevent="nextSlide" src="../../assets/img/Home/jpg/best-practices/bp1.jpg" srcset="../../assets/img/Home/jpg/best-practices/bp1@2x.jpg 2x">
                   </picture>
                 </div>
                 <div class="best-practices_wrap-preview-slide">
                   <picture>
-                      <source srcset="../../assets/img/Home/png/best-practices/bp2.png, ../../assets/img/Home/png/best-practices/bp2@2x.png 2x"
+                      <source srcset="../../assets/img/Home/jpg/best-practices/bp2.jpg, ../../assets/img/Home/jpg/best-practices/bp2@2x.jpg 2x"
                               media="(max-width: 992px)">
-                      <img @click.prevent="nextSlide" src="../../assets/img/Home/png/best-practices/bp2.png" srcset="../../assets/img/Home/png/best-practices/bp2@2x.png 2x">
+                      <img @click.prevent="nextSlide" src="../../assets/img/Home/jpg/best-practices/bp2.jpg" srcset="../../assets/img/Home/jpg/best-practices/bp2@2x.jpg 2x">
                   </picture>
                 </div>
                 <div class="best-practices_wrap-preview-slide">
                   <picture>
-                      <source srcset="../../assets/img/Home/png/best-practices/bp3.png, ../../assets/img/Home/png/best-practices/bp3@2x.png 2x"
+                      <source srcset="../../assets/img/Home/jpg/best-practices/bp3.jpg, ../../assets/img/Home/jpg/best-practices/bp3@2x.jpg 2x"
                               media="(max-width: 992px)">
-                      <img @click.prevent="nextSlide" src="../../assets/img/Home/png/best-practices/bp3.png" srcset="../../assets/img/Home/png/best-practices/bp3@2x.png 2x">
+                      <img @click.prevent="nextSlide" src="../../assets/img/Home/jpg/best-practices/bp3.jpg" srcset="../../assets/img/Home/jpg/best-practices/bp3@2x.jpg 2x">
                   </picture>
                 </div>
               </slick>
