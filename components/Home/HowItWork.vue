@@ -28,23 +28,23 @@
                 :options="slickOptions">
                 <div class="how-it-work_wrap-content-slide">
                   <picture>
-                    <source srcset="../../assets/img/Home/png/how-it-work/hiw2.png, ../../assets/img/Home/png/how-it-work/hiw2@2x.png 2x"
+                    <source srcset="../../assets/img/Home/jpg/how-it-work/hiw2.jpg, ../../assets/img/Home/jpg/how-it-work/hiw2@2x.jpg 2x"
                       media="(max-width: 992px)">
-                    <img @click.prevent="nextSlide" src="../../assets/img/Home/png/how-it-work/hiw2.png" srcset="../../assets/img/Home/png/how-it-work/hiw2@2x.png 2x" alt="Slide 1">
+                    <img @click.prevent="nextSlide" src="../../assets/img/Home/jpg/how-it-work/hiw2.jpg" srcset="../../assets/img/Home/jpg/how-it-work/hiw2@2x.jpg 2x" alt="Slide 1">
                   </picture>
                 </div>
                 <div class="how-it-work_wrap-content-slide">
                   <picture>
-                    <source srcset="../../assets/img/Home/png/how-it-work/hiw1.png, ../../assets/img/Home/png/how-it-work/hiw1@2x.png 2x"
+                    <source srcset="../../assets/img/Home/jpg/how-it-work/hiw1.jpg, ../../assets/img/Home/jpg/how-it-work/hiw1@2x.jpg 2x"
                       media="(max-width: 992px)">
-                    <img @click.prevent="nextSlide" ref="image" src="../../assets/img/Home/png/how-it-work/hiw1.png" srcset="../../assets/img/Home/png/how-it-work/hiw1@2x.png 2x" alt="Slide 2">
+                    <img @click.prevent="nextSlide" ref="image" src="../../assets/img/Home/jpg/how-it-work/hiw1.jpg" srcset="../../assets/img/Home/jpg/how-it-work/hiw1@2x.jpg 2x" alt="Slide 2">
                   </picture>
                 </div>
                 <div class="how-it-work_wrap-content-slide">
                   <picture>
-                    <source srcset="../../assets/img/Home/png/how-it-work/hiw3.png, ../../assets/img/Home/png/how-it-work/hiw3@2x.png 2x"
+                    <source srcset="../../assets/img/Home/jpg/how-it-work/hiw3.jpg, ../../assets/img/Home/jpg/how-it-work/hiw3@2x.jpg 2x"
                       media="(max-width: 992px)">
-                    <img @click.prevent="nextSlide" src="../../assets/img/Home/png/how-it-work/hiw3.png" srcset="../../assets/img/Home/png/how-it-work/hiw3@2x.png 2x" alt="Slide 3">
+                    <img @click.prevent="nextSlide" src="../../assets/img/Home/jpg/how-it-work/hiw3.jpg" srcset="../../assets/img/Home/jpg/how-it-work/hiw3@2x.jpg 2x" alt="Slide 3">
                   </picture>
                 </div>
               </slick>
