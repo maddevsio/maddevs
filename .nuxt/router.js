@@ -2,10 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _6add4473 = () => interopDefault(import('../pages/jobs.vue' /* webpackChunkName: "pages/jobs" */))
-const _4a806285 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
-const _6cd05583 = () => interopDefault(import('../pages/_lang/index.vue' /* webpackChunkName: "pages/_lang/index" */))
-const _1963f9b5 = () => interopDefault(import('../pages/_lang/jobs.vue' /* webpackChunkName: "pages/_lang/jobs" */))
+const _9553cca4 = () => interopDefault(import('../pages/jobs.vue' /* webpackChunkName: "pages/jobs" */))
+const _4f2234aa = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _369337e8 = () => interopDefault(import('../pages/_lang/index.vue' /* webpackChunkName: "pages/_lang/index" */))
+const _6a38b6b0 = () => interopDefault(import('../pages/_lang/jobs.vue' /* webpackChunkName: "pages/_lang/jobs" */))
 
 Vue.use(Router)
 
@@ -83,19 +83,19 @@ export function createRouter() {
 
     routes: [{
       path: "/jobs",
-      component: _6add4473,
+      component: _9553cca4,
       name: "jobs"
     }, {
       path: "/",
-      component: _4a806285,
+      component: _4f2234aa,
       name: "index"
     }, {
       path: "/:lang",
-      component: _6cd05583,
+      component: _369337e8,
       name: "lang"
     }, {
       path: "/:lang/jobs",
-      component: _1963f9b5,
+      component: _6a38b6b0,
       name: "lang-jobs"
     }],
 
