@@ -3,7 +3,7 @@
     <div class="container">
       <h2 class="sec-title">{{ $t('jobs-title') }}</h2>
       <div class="jobs_list">
-        <a href="https://blog.maddevs.io/junior-ios-developer-bce2961a89f8" class="jobs_list-item" target="_blank" rel="noreferrer">
+        <a href="https://blog.maddevs.io/senior-ios-developer-2adfb6a057fd" class="jobs_list-item" target="_blank" rel="noreferrer">
           <h4>{{ $t('jobs1-subtitle') }}</h4>
           <p>{{ $t('jobs1-desc') }}</p>
           <h6>{{ $t('jobs1-date') }}</h6>
@@ -13,7 +13,7 @@
           <p>{{ $t('jobs2-desc') }}</p>
           <h6>{{ $t('jobs2-date') }}</h6>
         </a>
-        <a href="https://blog.maddevs.io/middle-php-developer-91074783ac13" class="jobs_list-item" target="_blank" rel="noreferrer">
+        <a href="https://blog.maddevs.io/middle-ios-developer-c689a3bde141" class="jobs_list-item" target="_blank" rel="noreferrer">
           <h4>{{ $t('jobs3-subtitle') }}</h4>
           <p>{{ $t('jobs3-desc') }}</p>
           <h6>{{ $t('jobs3-date') }}</h6>
@@ -23,10 +23,15 @@
           <p>{{ $t('jobs4-desc') }}</p>
           <h6>{{ $t('jobs4-date') }}</h6>
         </a>
-        <a href="https://blog.maddevs.io/junior-devops-c51434e6024d" class="jobs_list-item" target="_blank" rel="noreferrer">
+        <a href="https://blog.maddevs.io/senior-android-developer-eafb19632a0e" class="jobs_list-item" target="_blank" rel="noreferrer">
           <h4>{{ $t('jobs5-subtitle') }}</h4>
           <p>{{ $t('jobs5-desc') }}</p>
           <h6>{{ $t('jobs5-date') }}</h6>
+        </a>
+        <a href="https://blog.maddevs.io/ios-internship-304e61968e8" class="jobs_list-item" target="_blank" rel="noreferrer">
+          <h4>{{ $t('jobs6-subtitle') }}</h4>
+          <p>{{ $t('jobs6-desc') }}</p>
+          <h6>{{ $t('jobs6-date') }}</h6>
         </a>
       </div>
     </div>
@@ -35,7 +40,7 @@
 
 <script>
 export default {
-  name: 'Jobs',
+  name: 'Jobs'
 };
 </script>
 

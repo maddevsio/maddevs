@@ -137,7 +137,7 @@
                   <span><img src="../../assets/img/Home/svg/weuse/digital-ocean.svg" alt=""> Digital Ocean</span>,
                   <span><img src="../../assets/img/Home/svg/weuse/heroku.svg" alt=""> Heroku</span>,
                   <span><img src="../../assets/img/Home/svg/weuse/azure.svg" alt=""> Azure</span>
-                  {{ $t('and we operate with the following') }}:
+                  {{ $t('and we operate with the following tools to collect application and system indicators') }}:
                   <span><img src="../../assets/img/Home/svg/weuse/senrty.svg" alt=""> Sentry</span>,
                   <span><img src="../../assets/img/Home/svg/weuse/prometheus.svg" alt=""> Prometheus</span>,
                   <span><img src="../../assets/img/Home/svg/weuse/aws-cloudwatch.svg" alt=""> Amazon CloudWatch</span>,
@@ -161,8 +161,8 @@ export default {
       lang: 'en'
     };
   },
-  updated() {
-    this.lang = 'en';
+  created() {
+    this.lang = this.$store.state.locale;
   },
 };
 </script>
