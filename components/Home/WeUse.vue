@@ -84,7 +84,7 @@
                   {{ $t('if the project is highload. Some tasks can not be solved without') }} <span><img src="../../assets/img/Home/svg/weuse/javascript.svg" alt=""> Javascript</span>
                   {{ $t('and') }} <span> <img src="../../assets/img/Home/svg/weuse/node-js.svg" alt=""> Node.js</span>.
                   {{ $t('We also love') }} <span><img src="../../assets/img/Home/svg/weuse/ruby.svg" alt=""> Ruby</span>
-                  on <span><img src="../../assets/img/Home/svg/weuse/rails.png" alt=""> Rails</span>.
+                  {{ $t('and') }} <span><img src="../../assets/img/Home/svg/weuse/rails.png" alt=""> Rails</span>.
                 </p>
                 <p v-else>
                   {{ $t('We use') }} <span> <img src="../../assets/img/Home/svg/weuse/pyton.svg" alt=""> Python</span>
@@ -97,7 +97,7 @@
                   Есть задачи, которые не решить без помощи{{ $t('and') }} <span> <img src="../../assets/img/Home/svg/weuse/javascript.svg" alt=""> Javascript</span>
                   {{ $t('and') }} <span> <img src="../../assets/img/Home/svg/weuse/node-js.svg" alt=""> Node.js</span>.
                   {{ $t('We also love') }} <span><img src="../../assets/img/Home/svg/weuse/ruby.svg" alt=""> Ruby</span>
-                  on <span><img src="../../assets/img/Home/svg/weuse/rails.png" alt=""> Rails</span>.
+                  {{ $t('and') }} <span><img src="../../assets/img/Home/svg/weuse/rails.png" alt=""> Rails</span>.
                 </p>
             </div>
             <div class="weUse_wrap-list-item">
