@@ -69,7 +69,7 @@
   "Sometimes we write on": "Иногда пишем на",
   "frameworks for backend": "Там, где есть высокая нагрузка, мы используем",
   "if the project is highload. Some tasks can not be solved without": "Есть задачи, которые не решить без помощи",  
-  "Also, we love": "Ещё мы любим",
+  "We also love": "Ещё мы любим",
   "Infrastructure": "Инфраструктура",
   "engineers use": "При создании систем высокой доступности девопсы Mad Devs используют",
   "and guarantee the HA of the product": "для непрерывного тестирования и непрерывной поставки. У нас есть опыт организации инфраструктуры в облачных сервисах",
