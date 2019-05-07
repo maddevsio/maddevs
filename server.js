@@ -9,8 +9,8 @@ const port = process.env.PORT || 5000;
 app.enable('trust proxy');
 
 app.use(function applyXFrame(req, res, next) {
-    res.set('X-Frame-Options', 'DENY');
-    next(); 
+  res.set('X-Frame-Options', 'DENY');
+  next(); 
 });
 
 app.use((req, res, next) => {
