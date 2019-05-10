@@ -5,7 +5,7 @@
         <div class="contacts-wrap_back"></div>
         <h2 class="sec-title">{{$t('Contacts')}}</h2>
         <div class="contacts-wrap_list">
-          <div class="contacts-wrap_list-item">
+          <div class="contacts-wrap_list-item headquarters">
             <h6>{{$t('address-footer-uk-title')}}</h6>
             <p>{{$t('address-footer-uk')}}</p>
             <a href="tel:+44 20 3984 8555">+44 20 3984 8555</a>
@@ -168,6 +168,10 @@ export default {
           &:last-child {
             margin-bottom: 0;
           }
+        }
+
+        .headquarters {
+          max-width: 380px;
         }
 
         .address {
