@@ -8,7 +8,7 @@
           <p>{{ $t('jobs1-desc') }}</p>
           <h6>{{ $t('jobs1-date') }}</h6>
         </a>
-        <a href="https://blog.maddevs.io/middle-android-developer-b75f1e919c5f" class="jobs_list-item" target="_blank" rel="noreferrer">
+        <a href="https://blog.maddevs.io/middle-php-developer-at-mad-devs-42d000bd0768" class="jobs_list-item" target="_blank" rel="noreferrer">
           <h4>{{ $t('jobs2-subtitle') }}</h4>
           <p>{{ $t('jobs2-desc') }}</p>
           <h6>{{ $t('jobs2-date') }}</h6>
