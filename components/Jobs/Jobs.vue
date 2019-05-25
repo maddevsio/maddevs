@@ -18,7 +18,7 @@
           <p>{{ $t('jobs3-desc') }}</p>
           <h6>{{ $t('jobs3-date') }}</h6>
         </a>
-        <a href="https://blog.maddevs.io/middle-frontend-developer-d24b76aab500" class="jobs_list-item" target="_blank" rel="noreferrer">
+        <a href="https://blog.maddevs.io/junior-ios-developer-ba6b9d2bf10c" class="jobs_list-item" target="_blank" rel="noreferrer">
           <h4>{{ $t('jobs4-subtitle') }}</h4>
           <p>{{ $t('jobs4-desc') }}</p>
           <h6>{{ $t('jobs4-date') }}</h6>
@@ -28,7 +28,7 @@
           <p>{{ $t('jobs5-desc') }}</p>
           <h6>{{ $t('jobs5-date') }}</h6>
         </a>
-        <a href="https://blog.maddevs.io/ios-internship-304e61968e8" class="jobs_list-item" target="_blank" rel="noreferrer">
+        <a href="https://blog.maddevs.io/junior-android-developer-we-need-you-3068c1c58c03" class="jobs_list-item" target="_blank" rel="noreferrer">
           <h4>{{ $t('jobs6-subtitle') }}</h4>
           <p>{{ $t('jobs6-desc') }}</p>
           <h6>{{ $t('jobs6-date') }}</h6>
