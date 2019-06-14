@@ -52,7 +52,7 @@
           </div>
         </div> -->
       <div class="footer-copyright" @click="showSurprise()">
-        <p>© Mad Devs <img src="../assets/img/common/i-love-you-hand-sign.png" alt=""> {{ this.year }}</p>
+        <p>© Mad Devs <img src="../assets/img/common/horns.png" alt=""> {{ this.year }}</p>
       </div>
     </div>
   </footer>
