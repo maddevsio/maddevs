@@ -5,14 +5,14 @@
       <div class="partners-wrap">
         <a href="https://neureal.net" target="_blank" rel="noreferrer" class="partners-wrap_item">
           <div class="partners-wrap_item_img">
-            <img src="../../assets/img/Home/svg/partners/neureal.svg" alt="">
+            <img src="../../assets/img/Home/svg/partners/neureal.svg" alt="Neureal">
           </div>
           <p>{{ $t('Partners-block1') }}</p>
           <a>https://neureal.net</a>
         </a>
         <a href="https://teacherly.io/" target="_blank" rel="noreferrer" class="partners-wrap_item">
           <div class="partners-wrap_item_img">
-            <img src="../../assets/img/Home/svg/partners/teacherly.svg" alt="">
+            <img src="../../assets/img/Home/svg/partners/teacherly.svg" alt="Teacherly">
           </div>
           <p>{{ $t('Partners-block2') }}</p>
           <a>https://teacherly.io</a>
@@ -24,6 +24,13 @@
           <p>{{ $t('Partners-block3') }}</p>
           <a>https://mythx.io</a>
         </a>
+        <a :href="$t('Partners-block4_link')" target="_blank" rel="noreferrer" class="partners-wrap_item">
+          <div class="partners-wrap_item_img">
+            <img :src="require('../../assets/img/Home/svg/partners/yandex_cloud_'+ lang +'.svg')" alt="Yandex">
+          </div>
+          <p>{{ $t('Partners-block4') }}</p>
+          <a>{{ $t('Partners-block4_link') }}</a>
+        </a>
       </div>
     </div>
   </section>
@@ -31,7 +38,15 @@
 
 <script>
 export default {
-  name: 'partners'
+  name: 'partners',
+  data() {
+    return {
+      lang: 'en'
+    };
+  },
+  created() {
+    this.lang = this.$store.state.locale;
+  }
 };
 </script>
 
@@ -67,7 +82,7 @@ export default {
           }
         }
         
-        &:last-child {
+        &:nth-child(3) {
           img {
             width: 80px;
           }
@@ -97,6 +112,16 @@ export default {
       }
     }
   }
+  @media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .partners-wrap {
+      flex-wrap: wrap;
+
+      a {
+        width: 40%;
+      }
+    }
+  }
+
   @media only screen and (max-width: 992px) {
     .partners {
       &-wrap {
