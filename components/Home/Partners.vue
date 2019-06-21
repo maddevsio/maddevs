@@ -87,6 +87,12 @@ export default {
             width: 80px;
           }
         }
+
+        &:nth-child(4) {
+          img {
+            width: 220px;
+          }
+        }
         a {
           font-size: 14px;
           font-family: 'MADEEvolveSans-regular', sans-serif;
