@@ -47,8 +47,14 @@
             <li class="banner_content-list_block-item">Sprint:</li>
           </ul>
           <ul class="banner_content-list_block">
-            <li class="banner_content-list_block-item">Task</li>
-            <li class="banner_content-list_block-item">Higest</li>
+            <li class="banner_content-list_block-item">
+              <task />
+              Task
+            </li>
+            <li class="banner_content-list_block-item">
+              <jiraArrow />
+              Higest
+            </li>
             <li class="banner_content-list_block-item">Team Management</li>
             <li class="banner_content-list_block-item">DM #1 — Mad Devs Team</li>
           </ul>
@@ -59,7 +65,7 @@
             <li class="banner_content-list_block-item">Resolution:</li>
           </ul>
           <ul class="banner_content-list_block">
-            <li class="banner_content-list_block-item">In Progress</li>
+            <li class="banner_content-list_block-item banner_content-list_block-item--status">In Progress</li>
             <li class="banner_content-list_block-item">You Need This Team ;)</li>
           </ul>
         </div>
@@ -71,10 +77,12 @@
 
 <script>
 import userAvatar from '@/components/svg/userAvatar';
+import task from '@/components/svg/task';
+import jiraArrow from '@/components/svg/jiraArrow';
 
 export default {
   name: 'Banner',
-  components: { userAvatar }
+  components: { userAvatar, task, jiraArrow }
 };
 </script>
 
@@ -87,6 +95,7 @@ export default {
 
     &_menu {
       width: 160px;
+      min-width: 160px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -115,9 +124,10 @@ export default {
     }
 
     &_sidebar {
+      min-width: 310px;
       display: flex;
       flex-direction: column;
-      padding: 25px 30px;
+      padding: 47px 30px 25px;
       box-sizing: border-box;
       background-color: $bgcolor--grey-dark;
 
@@ -166,6 +176,85 @@ export default {
             border-radius: $border-radius-100;
             margin-right: 8px;
           }
+        }
+      }
+    }
+
+    &_content {
+      padding: 59px 60px 25px 40px;
+
+      &-task {
+        width: 100%;
+        color: $text-color--dark;
+        font-family: 'MADEEvolveSans-regular', sans-serif;
+        font-size: 12px;
+        line-height: 1.25;
+        margin-bottom: 35px;
+      }
+
+      &-list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        &_wrapper {
+          display: flex;
+          margin-right: 70px;
+        }
+
+        &_block {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+
+          &:first-child {
+            margin-right: 110px;
+          }
+
+          &-item {
+            width: auto;
+            display: flex;
+            align-items: center;
+            color: $text-color--dark;
+            font-family: 'MADEEvolveSans-regular', sans-serif;
+            font-size: 12px;
+            line-height: 2.67;
+
+            svg {
+              min-width: 15px;
+              margin-right: 10px;
+            }
+
+            &--status {
+              background-color: $jira-inprogress;
+              border-radius: $default-border-radius;
+              color: $text-color--white;
+              text-transform: uppercase;
+              line-height: normal;
+              letter-spacing: -0.1px;
+              padding: 3px 8px;
+              font-family: 'MADEEvolveSans-bold', sans-serif;
+              margin-top: 5px;
+              margin-bottom: 6px;
+            }
+          }
+        }
+      }
+
+      h1 {
+        margin-top: 50px;
+        font-size: 49px;
+        line-height: 1.22;
+        font-weight: 300;
+        font-family: 'MADEEvolveSans-light', sans-serif;
+
+        span {
+          font-family: 'MADEEvolveSans-medium', sans-serif;
+          background-color: #fff6cd;
+          padding: 0px 5px 5px;
+          border-radius: 3px;
+          border-radius: $default-border-radius;
         }
       }
     }
