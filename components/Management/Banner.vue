@@ -113,5 +113,61 @@ export default {
         }
       }
     }
+
+    &_sidebar {
+      display: flex;
+      flex-direction: column;
+      padding: 25px 30px;
+      box-sizing: border-box;
+      background-color: $bgcolor--grey-dark;
+
+      &-head {
+        display: flex;
+        align-items: center;
+
+        &_img {
+          width: 40px;
+          min-width: 40px;
+          height: 40px;
+          background-color: $bgcolor--grey-light;
+          border-radius: $default-border-radius;
+          margin-right: 15px;
+        }
+
+        &_title {
+          width: 100%;
+          height: 10px;
+          background-color: $bgcolor--grey-light;
+          border-radius: $border-radius-10;
+        }
+      }
+
+      &-list {
+        margin-top: 25px;
+        margin-left: 8px;
+
+        li {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+          color: $dark-04;
+          line-height: 1.07;
+          font-size: 14px;
+          font-family: 'MADEEvolveSans-regular', sans-serif;
+
+          &::before {
+            content: '';
+            width: 24px;
+            min-width: 24px;
+            height: 24px;
+            min-height: 24px;
+            display: block;
+            background-color: $bgcolor--grey-light;
+            border-radius: $border-radius-100;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
   }
 </style>
