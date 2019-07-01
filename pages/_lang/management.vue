@@ -1,16 +1,19 @@
 <template>
   <main class="main">
     <Banner />
+    <Contacts />
   </main>
 </template>
 
 <script>
 import Banner from '@/components/Management/Banner';
+import Contacts from '@/components/Contacts';
 
 export default {
   name: 'Management',
   components: {
-    Banner
+    Banner,
+    Contacts
   },
   data() {
     return {
