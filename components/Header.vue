@@ -9,13 +9,14 @@
           <nav class="header_links">
             <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank" rel="noreferrer">{{ $t('header-link_blog') }}</a>
             <router-link :to="`/${this.lang}/jobs`">{{ $t('header-link_careers') }}</router-link>
+            <router-link :to="`/${this.lang}/management`">{{ $t('header-link_management') }}</router-link>
           </nav>
           <div class="header_soc-icons">
             <a href="https://ru.linkedin.com/company/mad-devs" target="_blank" rel="noreferrer">
-              <img src="../assets/img/common/header/in-header.svg" alt="LinkedIn">
+              <inBgWhite />
             </a>
             <a href="https://www.facebook.com/maddevsio" target="_blank" rel="noreferrer">
-              <img src="../assets/img/common/header/fb-header.svg" alt="Facebook">
+              <fbBgWhite />
             </a>
           </div>
           <button v-if="lang == 'en'" class="switch-lang" v-on:click.prevent="switchLanguage('ru')">Русский</button>
@@ -32,10 +33,12 @@
 
 <script>
 import MobMenu from '@/components/ui/mobile-menu';
+import inBgWhite from '@/components/svg/in-bgwhite';
+import fbBgWhite from '@/components/svg/fb-bgwhite';
 
 export default {
   name: 'main-header',
-  components: { MobMenu },
+  components: { MobMenu, fbBgWhite, inBgWhite },
   data() {
     return {
       lang: 'en',

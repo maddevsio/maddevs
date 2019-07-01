@@ -54,6 +54,14 @@ export default {
           color: $text-color--black;
         }
       }
+
+      .header_soc-icons {
+        a {
+          svg path {
+            fill: $bgcolor--black;
+          }
+        } 
+      }
     }
 
     .switch-lang {
