@@ -6,7 +6,9 @@
       <div class="banner_menu-item"></div>
       <div class="banner_menu-item"></div>
       <div class="banner_menu-item"></div>
-      <div class="banner_menu-item banner_menu-item_auth"></div>
+      <div class="banner_menu-item banner_menu-item_auth">
+        <userAvatar />
+      </div>
     </div>
     <div class="banner_sidebar">
       <div class="banner_sidebar-head">
@@ -68,11 +70,48 @@
 </template>
 
 <script>
+import userAvatar from '@/components/svg/userAvatar';
+
 export default {
-  name: 'Banner'
+  name: 'Banner',
+  components: { userAvatar }
 };
 </script>
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+
+  .banner {
+    display: flex;
+    height: 610px;
+
+    &_menu {
+      width: 160px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color:$bgcolor--brown;
+      padding-top: 120px;
+
+      &-item {
+        width: 24px;
+        height: 24px;
+        border-radius: $default-border-radius;
+        background-color: $white-016;
+        margin-bottom: 15px;
+
+        &:nth-child(3) {
+          margin-top: auto;
+        }
+
+        &:last-child {
+          width: auto;
+          height: auto;
+          border-radius: $border-radius-100;
+          background-color: transparent;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
 </style>
