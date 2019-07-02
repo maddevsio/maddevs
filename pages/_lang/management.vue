@@ -39,10 +39,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-
-</style>
-
 <style lang="scss">
   @import '../../assets/styles/vars';
 
@@ -64,6 +60,14 @@ export default {
             fill: $bgcolor--black;
           }
         } 
+      }
+    }
+
+    &-mobile-menu_open {
+      svg {
+        g {
+          fill: $bgcolor--black;
+        }
       }
     }
 

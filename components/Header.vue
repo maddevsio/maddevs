@@ -23,7 +23,7 @@
           <button v-else class="switch-lang" v-on:click.prevent="switchLanguage('en')">English</button>
         </div>
         <button @click="toggleMobileMenu()" class="header-mobile-menu_open">
-          <img src="../assets/img/common/header/open-menu.svg" alt="Open mobile menu">
+          <Hamburger />
         </button>
       </div>
     </div>
@@ -35,10 +35,16 @@
 import MobMenu from '@/components/ui/mobile-menu';
 import inBgWhite from '@/components/svg/in-bgwhite';
 import fbBgWhite from '@/components/svg/fb-bgwhite';
+import Hamburger from '@/components/svg/hamburger';
 
 export default {
   name: 'main-header',
-  components: { MobMenu, fbBgWhite, inBgWhite },
+  components: {
+    MobMenu,
+    fbBgWhite,
+    inBgWhite,
+    Hamburger
+  },
   data() {
     return {
       lang: 'en',
@@ -115,12 +121,11 @@ export default {
     z-index: 2;
     padding-top: 30px;
     &_links {
-      margin-right: 24px;
       position: relative;
       a {
         color: $text-color--white;
         text-decoration: none;
-        margin-right: 24px;
+        margin-right: 15px;
         font-size: 16px;
         font-family: 'MADEEvolveSans-regular',
         sans-serif;

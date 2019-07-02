@@ -16,6 +16,11 @@
             {{ $t('header-link_careers') }}
           </span>
         </router-link>
+        <router-link :to="`/${this.lang}/management`">
+          <span @click="closeMobileMenu()">
+            {{ $t('header-link_management') }}
+          </span>
+        </router-link>
       </div>
       <div class="header-mobile-menu_address">
         <p>{{$t('address-footer-kg')}}</p>

@@ -220,6 +220,7 @@ export default {
             font-family: 'MADEEvolveSans-regular', sans-serif;
             font-size: 12px;
             line-height: 2.67;
+            white-space: nowrap;
 
             svg {
               min-width: 15px;
@@ -255,6 +256,148 @@ export default {
           padding: 0px 5px 5px;
           border-radius: 3px;
           border-radius: $default-border-radius;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1366px) {
+    .banner_sidebar {
+      min-width: 210px;
+    }
+  }
+
+  @media only screen and (max-width: 1150px) {
+    .banner {
+      &_content {
+        &-list_wrapper {
+          margin-right: 40px;
+        }
+        &-list_block:first-child {
+          margin-right: 60px;
+        }
+        h1 {
+          font-size: 42px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .banner {
+      &_sidebar {
+        display: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .banner {
+      &_menu {
+        width: 148px;
+        min-width: 148px;
+      }
+
+      &_content {
+        &-task {
+          display: none;
+        }
+
+        &-list {
+          margin-top: 50px;
+        }
+
+        &-list_wrapper {
+          margin-right: 20px;
+        }
+
+        &-list_block:first-child {
+          margin-right: 30px;
+        }
+
+        h1 {
+          font-size: 38px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 630px) {
+    .banner {
+      
+      &_content-list {
+        &_wrapper {
+          margin-right: 30px;
+        }
+
+        &_block-item {
+          &:nth-child(3) {
+            display: none;
+          }
+
+          &:nth-child(4) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .banner {
+      &_menu {
+        width: 72px;
+        min-width: 72px;
+      }
+
+      &_content {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .banner {
+      height: 400px;
+
+      &_content-list {
+        &_wrapper {
+          margin-right: 10px;
+        }
+
+        &_block:first-child {
+          margin-right: 10px;
+        }
+      }
+
+      &_content {
+        h1 {
+          font-size: 28px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .banner {
+      &_menu {
+        &-item {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &_content {
+        &-list {
+          display: none;
+        }
+
+        h1 {
+          margin-top: 70px;
+          font-size: 24px;
         }
       }
     }
