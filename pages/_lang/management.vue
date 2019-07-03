@@ -2,6 +2,7 @@
   <main class="main">
     <Banner />
     <Transparency />
+    <Motivation />
     <Contacts />
   </main>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import Banner from '@/components/Management/Banner';
 import Transparency from '@/components/Management/Transparency';
+import Motivation from '@/components/Management/Motivation';
 import Contacts from '@/components/Contacts';
 
 export default {
@@ -16,6 +18,7 @@ export default {
   components: {
     Banner,
     Transparency,
+    Motivation,
     Contacts
   },
   data() {
