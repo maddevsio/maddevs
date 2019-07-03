@@ -5,6 +5,7 @@
     <Motivation />
     <Risks />
     <ProcessTimeTracking />
+    <Reports />
     <Contacts />
   </main>
 </template>
@@ -15,6 +16,7 @@ import Transparency from '@/components/Management/Transparency';
 import Motivation from '@/components/Management/Motivation';
 import Risks from '@/components/Management/Risks';
 import ProcessTimeTracking from '@/components/Management/ProcessTimeTracking';
+import Reports from '@/components/Management/Reports';
 import Contacts from '@/components/Contacts';
 
 export default {
@@ -25,6 +27,7 @@ export default {
     Motivation,
     Risks,
     ProcessTimeTracking,
+    Reports,
     Contacts
   },
   data() {
