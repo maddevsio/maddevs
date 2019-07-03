@@ -1,18 +1,21 @@
 <template>
   <main class="main">
     <Banner />
+    <Transparency />
     <Contacts />
   </main>
 </template>
 
 <script>
 import Banner from '@/components/Management/Banner';
+import Transparency from '@/components/Management/Transparency';
 import Contacts from '@/components/Contacts';
 
 export default {
   name: 'Management',
   components: {
     Banner,
+    Transparency,
     Contacts
   },
   data() {
