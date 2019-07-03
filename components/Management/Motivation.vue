@@ -3,9 +3,10 @@
     <div class="container">
       <div class="motivation_wrap">
         <div class="motivation_wrap-title">
-          <p>Мы отвечаем за мотивацию, комфорт и развитие команды, работающей над проектом. Так, вы можете быть уверены, что навыки и знания команды всегда актуальны и соответствуют текущим трендам в сфере разработки. Вам также не надо тратить ресурсы на организацию рабочего пространства сотрудников и платить им за неэффективные часы, проведенные в офисе.</p>
+          <p>Мы отвечаем за мотивацию, комфорт и развитие команды, работающей над проектом. Так, вы можете быть уверены, что навыки и знания команды всегда актуальны и соответствуют текущим трендам в сфере разработки. <span>Вам</span> также <span>не надо тратить ресурсы на организацию рабочего пространства</span> сотрудников <span>и платить им за неэффективные часы</span>, проведенные в офисе.</p>
         </div>
         <div class="motivation_wrap-preview">
+          <div class="motivation_wrap-preview_head"><span></span></div>
           <slick class="motivation_wrap-preview-slides" ref="slick" @beforeChange="handleBeforeChange"
             :options="slickOptions">
             <div class="motivation_wrap-preview-slide">
@@ -87,9 +88,52 @@
         width: 660px;
         min-width: 300px;
         height: auto;
-        max-height: 375px;
+        max-height: 410px;
         box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15);
         background-color: #1e1e1e;
+
+        &_head {
+          width: 100%;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          background-color: $bgcolor--white;
+
+          span {
+            position: relative;
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: $border-radius-100;
+            background-color: #fdbc40;
+            margin-left: 24px;
+
+            &::before {
+              content: '';
+              display: block;
+              width: 8px;
+              height: 8px;
+              position: absolute;
+              top: 0;
+              left: -14px;
+              border-radius: $border-radius-100;
+              background-color: #fc605c;
+            }
+
+            &::after {
+              content: '';
+              display: block;
+              width: 8px;
+              height: 8px;
+              position: absolute;
+              top: 0;
+              right: -14px;
+              border-radius: $border-radius-100;
+              background-color: #34c749;
+            }
+          }
+        }
 
         &-slides {
           height: 100%;
