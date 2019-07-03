@@ -70,7 +70,7 @@ export default {
   @import '../assets/styles/vars';
 
   .contacts {
-    background-color: #242424;
+    background-color: $bgcolor--section-bg;
     padding: 40px 0 20px;
     overflow: hidden;
     perspective: 600px;
