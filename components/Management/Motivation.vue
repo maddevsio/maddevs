@@ -91,6 +91,7 @@
         max-height: 410px;
         box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15);
         background-color: #1e1e1e;
+        border-radius: 5px;
 
         &_head {
           width: 100%;
@@ -182,13 +183,14 @@
     }
   }
 
-  @media only screen and (max-width: 830px) {
+  @media only screen and (max-width: 992px) {
     .motivation {
       &_wrap {
         flex-direction: column;
 
         &-preview {
           width: 100%;
+          max-height: 100%;
         }
 
         &-title {
@@ -210,7 +212,9 @@
         }
 
         &-title {
-          font-size: 26px;
+          p {
+            font-size: 22px;
+          }
         }
       }
     }
@@ -230,6 +234,10 @@
 
         &-title {
           margin-bottom: 40px;
+
+          p {
+            font-size: 18px;
+          }
         }
       }
     }
