@@ -66,11 +66,11 @@ export default {
       .container {
         .process {
           margin-bottom: 40px;
-
-          p {
-            font-size: 18px;
-          }
         }
+      }
+
+      p {
+        font-size: 18px;
       }
     }
   }
