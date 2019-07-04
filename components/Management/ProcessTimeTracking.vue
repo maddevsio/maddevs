@@ -47,4 +47,31 @@ export default {
       font-family: 'MADEEvolveSans-regular', sans-serif;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    section {
+      .container {
+        flex-direction: column;
+
+        .process {
+          margin-right: 0;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    section {
+      .container {
+        .process {
+          margin-bottom: 40px;
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
 </style>
