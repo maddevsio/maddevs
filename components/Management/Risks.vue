@@ -112,7 +112,7 @@
 
       &-title {
         width: 525px;
-        margin-right: 30px;
+        margin-left: 30px;
 
         p {
           text-align: left;
@@ -139,19 +139,20 @@
     }
   }
 
-  @media only screen and (max-width: 830px) {
+  @media only screen and (max-width: 992px) {
     .risks {
       &_wrap {
         flex-direction: column;
 
         &-preview {
           width: 100%;
+          max-height: 100%;
         }
 
         &-title {
           width: 100%;
           margin: 0;
-          margin-bottom: 60px;
+          margin-top: 60px;
         }
       }
     }
@@ -167,7 +168,9 @@
         }
 
         &-title {
-          font-size: 26px;
+          p {
+            font-size: 22px;
+          }
         }
       }
     }
@@ -186,7 +189,11 @@
         }
 
         &-title {
-          margin-bottom: 40px;
+          margin-top: 40px;
+
+          p {
+            font-size: 18px;
+          }
         }
       }
     }
