@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header" :class="{ 'header--dark': headerDark }">
     <div class="container">
       <div class="header-wrap">
         <a href="/">
@@ -13,10 +13,10 @@
           </nav>
           <div class="header_soc-icons">
             <a href="https://ru.linkedin.com/company/mad-devs" target="_blank" rel="noreferrer">
-              <inBgWhite />
+              <linkedin />
             </a>
             <a href="https://www.facebook.com/maddevsio" target="_blank" rel="noreferrer">
-              <fbBgWhite />
+              <facebook />
             </a>
           </div>
           <button v-if="lang == 'en'" class="switch-lang" v-on:click.prevent="switchLanguage('ru')">Русский</button>
@@ -33,22 +33,23 @@
 
 <script>
 import MobMenu from '@/components/ui/mobile-menu';
-import inBgWhite from '@/components/svg/in-bgwhite';
-import fbBgWhite from '@/components/svg/fb-bgwhite';
+import linkedin from '@/components/svg/linkedin-icon';
+import facebook from '@/components/svg/facebook-icon';
 import Hamburger from '@/components/svg/hamburger';
 
 export default {
   name: 'main-header',
   components: {
     MobMenu,
-    fbBgWhite,
-    inBgWhite,
+    linkedin,
+    facebook,
     Hamburger
   },
   data() {
     return {
       lang: 'en',
-      mobileMenuActive: false
+      mobileMenuActive: false,
+      headerDark: false
     };
   },
   created() {
@@ -57,6 +58,12 @@ export default {
     if (process.browser) {
       window.addEventListener('resize', this.toggleScrollOnBody);
     }
+    this.changeColorHeader();
+  },
+  watch: {
+    '$route' (to, from) {
+      this.changeColorHeader();
+    }
   },
   beforeDestroy() {
     if (process.browser) {
@@ -64,6 +71,13 @@ export default {
     }
   },
   methods: {
+    changeColorHeader() {
+      if (this.$nuxt.$router.history.current.path.includes('management')) {
+        this.headerDark = true;
+      } else {
+        this.headerDark = false;
+      }
+    },
     switchLanguage(locale) {
       const beforePath = this.$nuxt.$router.history.current.path;
       this.$store.commit('SET_LANG', locale);
@@ -159,7 +173,12 @@ export default {
           height: 22px;
           a {
             display: inline-block;
-            margin-right: 18px;
+            margin-right: 10px;
+
+            &:last-child {
+              margin-right: 6px;
+            }
+
             img {
               display: block;
             }
@@ -179,6 +198,39 @@ export default {
       border: none;
       cursor: pointer;
       padding-right: 0;
+    }
+  }
+
+  .header--dark {
+    .container {
+      max-width: 100%;
+
+      .header-wrap_right-block {
+        .header_links {
+          a {
+            color: $text-color--black;
+          }
+        }
+        .header_soc-icons {
+          a {
+            :global(.facebook-icon path) {
+              fill: $bgcolor--black !important;
+            }
+          }
+        }
+      }
+    }
+
+    .header-mobile-menu_open {
+      svg {
+        g {
+          fill: $bgcolor--black !important;
+        }
+      }
+    }
+
+    .switch-lang {
+      color: $text-color--black !important;
     }
   }
 
