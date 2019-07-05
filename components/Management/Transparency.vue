@@ -2,27 +2,14 @@
   <section>
     <div class="container">
       <h2 class="sec-title">{{ $t('management.transparency.title') }}</h2>
-      <p>{{ $t('management.transparency.desc1') }} <span><slack /> Slack</span> {{ $t('management.transparency.desc2') }} <span><jira /> JIRA,</span> <span><asana /> Asana,</span> <span><basecamp /> BaseCamp,</span> <span><trello /> Trello.</span> </p>
+      <p>{{ $t('management.transparency.desc1') }} <span><img src="../../assets/img/common/slack.svg" alt="Slack"> Slack</span> {{ $t('management.transparency.desc2') }} <span><img src="../../assets/img/common/jira.svg" alt="Jira"> JIRA,</span> <span><img src="../../assets/img/common/asana.svg" alt="Asana"> Asana,</span> <span><img src="../../assets/img/common/basecamp.svg" alt="Basecamp"> BaseCamp,</span> <span><img src="../../assets/img/common/trello.svg" alt="Trello"> Trello.</span> </p>
     </div>
   </section>
 </template>
 
 <script>
-import slack from '@/components/svg/slack';
-import jira from '@/components/svg/jira';
-import asana from '@/components/svg/asana';
-import basecamp from '@/components/svg/basecamp';
-import trello from '@/components/svg/trello';
-
 export default {
-  name: 'Transparency',
-  components: {
-    slack,
-    jira,
-    asana,
-    basecamp,
-    trello
-  }
+  name: 'Transparency'
 };
 </script>
 
@@ -43,12 +30,13 @@ export default {
       margin-top: 30px;
 
       span {
-        display: inline-flex;
-        align-items: center;
         white-space: nowrap;
         font-family: 'MADEEvolveSans-bold', sans-serif;
         
-        svg {
+        img {
+          width: 22px;
+          height: 22px;
+          margin-bottom: -3px;
           margin-right: 4px;
         }
       }
