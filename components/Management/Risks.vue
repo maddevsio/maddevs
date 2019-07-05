@@ -35,7 +35,8 @@
           </slick>
         </div>
         <div class="risks_wrap-title">
-          <p>Мы <span>берем на себя все риски</span>, связанные с организацией процесса, <span>разработки и поставки конечного решения в срок</span>. А значит мы следим за тем, чтобы каждый участник проекта следовал процессам, разработанным и задокументированным нами в соответствии с <span>Agile</span> и <span>Scrum</span> методологиями.</p>
+          <p v-if="lang === 'en'"><span>We take all the risks</span> for organization of the working process, <span>development and continuous delivery</span>. That means, we look after each and every team member and make sure, that he or she is following the rules and processes described by us with respect to <span>Agile</span> or <span>Scrum</span> methodology.</p>
+          <p v-else>Мы <span>берем на себя все риски</span>, связанные с организацией процесса, <span>разработки и поставки конечного решения в срок</span>. А значит мы следим за тем, чтобы каждый участник проекта следовал процессам, разработанным и задокументированным нами в соответствии с <span>Agile</span> и <span>Scrum</span> методологиями.</p>
         </div>
       </div>
     </div>
@@ -48,12 +49,16 @@
     data() {
       return {
         activeSlide: 0,
+        lang: 'en',
         slickOptions: {
           slidesToShow: 1,
           autoplay: false,
           arrows: false
         },
       };
+    },
+    created() {
+      this.lang = this.$store.state.locale;
     },
     methods: {
       setAtiveSlide(index) {

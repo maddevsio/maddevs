@@ -3,7 +3,8 @@
     <div class="container">
       <div class="motivation_wrap">
         <div class="motivation_wrap-title">
-          <p>Мы отвечаем за мотивацию, комфорт и развитие команды, работающей над проектом. Так, вы можете быть уверены, что навыки и знания команды всегда актуальны и соответствуют текущим трендам в сфере разработки. <span>Вам</span> также <span>не надо тратить ресурсы на организацию рабочего пространства</span> сотрудников <span>и платить им за неэффективные часы</span>, проведенные в офисе.</p>
+          <p v-if="lang === 'en'">We are responsible for motivation, comfort and growth of the team which is working on a project. Be sure that our skills and knowledge are always relevant and correspond to modern trends in software development. <span>You do not have to spend resources on the organization of working space. Only working hours developers spend on actual work are to be paid.</span></p>
+          <p v-else>Мы отвечаем за мотивацию, комфорт и развитие команды, работающей над проектом. Так, вы можете быть уверены, что навыки и знания команды всегда актуальны и соответствуют текущим трендам в сфере разработки. <span>Вам</span> также <span>не надо тратить ресурсы на организацию рабочего пространства</span> сотрудников <span>и платить им за неэффективные часы</span>, проведенные в офисе.</p>
         </div>
         <div class="motivation_wrap-preview">
           <div class="motivation_wrap-preview_head"><span></span></div>
@@ -49,12 +50,16 @@
     data() {
       return {
         activeSlide: 0,
+        lang: 'en',
         slickOptions: {
           slidesToShow: 1,
           autoplay: false,
           arrows: false
         },
       };
+    },
+    created() {
+      this.lang = this.$store.state.locale;
     },
     methods: {
       setAtiveSlide(index) {

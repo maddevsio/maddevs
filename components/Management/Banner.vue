@@ -70,7 +70,7 @@
           </ul>
         </div>
       </div>
-      <h1>Работая с нами, у вас появится возможность <span>уделять больше времени на развитие вашего продукта</span> и поиск инвестиций</h1>
+      <h1>{{ $t('management.title1') }} <span>{{ $t('management.title2') }}</span> {{ $t('management.title3') }}</h1>
     </div>
   </section>
 </template>

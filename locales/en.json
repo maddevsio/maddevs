@@ -259,5 +259,27 @@
     "title-quality": "Mad Devs Quality",
     "meta-desc-quality": "",
     "og_meta-url_quality": "https://maddevs.io/en/quality"
-  } 
+  },
+  "management": {
+    "title1": "Working with us",
+    "title2": "allows you to focus on your product and investments attraction.",
+    "title3": "",
+    "transparency": {
+      "title": "We guarantee transparency of all our processes",
+      "desc1": "We create and set up an environment for teams to communicate, including",
+      "desc2": "channels and task-tracking tools such as:"
+    },
+    "process": {
+      "title": "Working process",
+      "desc": "We use task-tracking instruments which allow us to handle different tasks, meeting notes, project documentation. All the important project-related information is being stored in a digital form so it can be easily obtained and used."
+    },
+    "traking": {
+      "title": "Time tracking",
+      "desc": "Developers meticulously describe how many hours they spend on each and every task and what they do. This information is used in reports, thus our customers always know exactly for what they pay."
+    },
+    "reports": {
+      "title": "Reports",
+      "desc": "Hourly reports are used for analysis and resolving controversies. In addition to hourly reports, you will also receive progress reports which can be provided as frequently as needed."
+    }
+  }
 }

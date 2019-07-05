@@ -1,8 +1,8 @@
 <template>
   <section>
     <div class="container">
-      <h2 class="sec-title">Мы гарантируем прозрачность процессов</h2>
-      <p>Для этого мы создаем и настраиваем команде окружение для коммуникации, включая рабочие комнаты в <span><slack /> Slack</span> и системы для планирования задач, такие как <span><jira /> JIRA,</span> <span><asana /> Asana,</span> <span><basecamp /> BaseCamp,</span> <span><trello /> Trello.</span> </p>
+      <h2 class="sec-title">{{ $t('management.transparency.title') }}</h2>
+      <p>{{ $t('management.transparency.desc1') }} <span><slack /> Slack</span> {{ $t('management.transparency.desc2') }} <span><jira /> JIRA,</span> <span><asana /> Asana,</span> <span><basecamp /> BaseCamp,</span> <span><trello /> Trello.</span> </p>
     </div>
   </section>
 </template>
