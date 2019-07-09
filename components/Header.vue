@@ -2,9 +2,9 @@
   <header class="header" :class="{ 'header--dark': headerDark }">
     <div class="container">
       <div class="header-wrap">
-        <a href="/">
+        <router-link :to="`/${this.lang}`">
           <img src="../assets/img/common/logo.svg" alt="Logotype" class="header-logo">
-        </a>
+        </router-link>
         <div class="header-wrap_right-block">
           <nav class="header_links">
             <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank" rel="noreferrer">{{ $t('header-link_blog') }}</a>

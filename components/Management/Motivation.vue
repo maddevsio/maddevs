@@ -99,12 +99,13 @@
         height: auto;
         max-height: 410px;
         box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15);
-        background-color: #1e1e1e;
+        background-color: $bgcolor--white;
         border-radius: 5px;
         background-image: url(../../assets/img/Management/insta-bg.png);
         background-repeat: no-repeat;
         background-position: center 30px;
         background-size: cover;
+        overflow: hidden;
 
         &_head {
           width: 100%;
@@ -152,7 +153,6 @@
         &-slides {
           height: 100%;
           overflow: hidden;
-          border-radius: 5px;
         }
 
         &-slide {
