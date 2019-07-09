@@ -8,28 +8,10 @@
             <div class="risks_wrap-preview-slide">
               <picture>
                 <source
-                  srcset="../../assets/img/Home/jpg/best-practices/bp1.jpg, ../../assets/img/Home/jpg/best-practices/bp1@2x.jpg 2x"
+                  srcset="../../assets/img/Management/risks.png, ../../assets/img/Management/risks@2x.png 2x"
                   media="(max-width: 992px)">
-                <img @click.prevent="nextSlide" src="../../assets/img/Home/jpg/best-practices/bp1.jpg"
-                  srcset="../../assets/img/Home/jpg/best-practices/bp1@2x.jpg 2x">
-              </picture>
-            </div>
-            <div class="risks_wrap-preview-slide">
-              <picture>
-                <source
-                  srcset="../../assets/img/Home/jpg/best-practices/bp2.jpg, ../../assets/img/Home/jpg/best-practices/bp2@2x.jpg 2x"
-                  media="(max-width: 992px)">
-                <img @click.prevent="nextSlide" src="../../assets/img/Home/jpg/best-practices/bp2.jpg"
-                  srcset="../../assets/img/Home/jpg/best-practices/bp2@2x.jpg 2x">
-              </picture>
-            </div>
-            <div class="risks_wrap-preview-slide">
-              <picture>
-                <source
-                  srcset="../../assets/img/Home/jpg/best-practices/bp3.jpg, ../../assets/img/Home/jpg/best-practices/bp3@2x.jpg 2x"
-                  media="(max-width: 992px)">
-                <img @click.prevent="nextSlide" src="../../assets/img/Home/jpg/best-practices/bp3.jpg"
-                  srcset="../../assets/img/Home/jpg/best-practices/bp3@2x.jpg 2x">
+                <img @click.prevent="nextSlide" src="../../assets/img/Management/risks.png"
+                  srcset="../../assets/img/Management/risks@2x.png 2x">
               </picture>
             </div>
           </slick>
@@ -93,8 +75,6 @@
         min-width: 300px;
         height: auto;
         max-height: 375px;
-        box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15);
-        background-color: #1e1e1e;
 
         &-slides {
           height: 100%;
@@ -111,6 +91,7 @@
             display: block;
             width: 100%;
             height: 100%;
+            margin-top: 30px;
           }
         }
       }

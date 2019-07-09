@@ -13,17 +13,17 @@
           </nav>
           <div class="header_soc-icons">
             <a href="https://ru.linkedin.com/company/mad-devs" target="_blank" rel="noreferrer">
-              <linkedin />
+              <linkedin :isDark="headerDark" />
             </a>
             <a href="https://www.facebook.com/maddevsio" target="_blank" rel="noreferrer">
-              <facebook />
+              <facebook :isDark="headerDark" />
             </a>
           </div>
           <button v-if="lang == 'en'" class="switch-lang" v-on:click.prevent="switchLanguage('ru')">Русский</button>
           <button v-else class="switch-lang" v-on:click.prevent="switchLanguage('en')">English</button>
         </div>
         <button @click="toggleMobileMenu()" class="header-mobile-menu_open">
-          <Hamburger />
+          <Hamburger :isDark="headerDark" />
         </button>
       </div>
     </div>
@@ -150,16 +150,6 @@ export default {
       .router-link-active {
         color: $accent-color--red;
       }
-      &::before {
-        content: '';
-        width: 1px;
-        height: 25px;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: -3px;
-        background-color: rgba($bgcolor--white, 0.3);
-      }
     }
     &-wrap {
       display: flex;
@@ -209,13 +199,6 @@ export default {
         .header_links {
           a {
             color: $text-color--black;
-          }
-        }
-        .header_soc-icons {
-          a {
-            :global(.facebook-icon path) {
-              fill: $bgcolor--black !important;
-            }
           }
         }
       }

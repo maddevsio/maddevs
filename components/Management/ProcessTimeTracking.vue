@@ -31,7 +31,7 @@ export default {
     }
 
     .process {
-      margin-right: 30px;
+      margin-right: 50px;
     }
 
     h3 {

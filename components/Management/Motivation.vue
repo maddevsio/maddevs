@@ -12,29 +12,32 @@
             :options="slickOptions">
             <div class="motivation_wrap-preview-slide">
               <picture>
-                <source
-                  srcset="../../assets/img/Home/jpg/best-practices/bp1.jpg, ../../assets/img/Home/jpg/best-practices/bp1@2x.jpg 2x"
-                  media="(max-width: 992px)">
-                <img @click.prevent="nextSlide" src="../../assets/img/Home/jpg/best-practices/bp1.jpg"
-                  srcset="../../assets/img/Home/jpg/best-practices/bp1@2x.jpg 2x">
+                <source>
+                <img @click.prevent="nextSlide" src="../../assets/img/Management/motivation1.jpg">
               </picture>
             </div>
             <div class="motivation_wrap-preview-slide">
               <picture>
-                <source
-                  srcset="../../assets/img/Home/jpg/best-practices/bp2.jpg, ../../assets/img/Home/jpg/best-practices/bp2@2x.jpg 2x"
-                  media="(max-width: 992px)">
-                <img @click.prevent="nextSlide" src="../../assets/img/Home/jpg/best-practices/bp2.jpg"
-                  srcset="../../assets/img/Home/jpg/best-practices/bp2@2x.jpg 2x">
+                <source>
+                <img @click.prevent="nextSlide" src="../../assets/img/Management/motivation2.jpg">
               </picture>
             </div>
             <div class="motivation_wrap-preview-slide">
               <picture>
-                <source
-                  srcset="../../assets/img/Home/jpg/best-practices/bp3.jpg, ../../assets/img/Home/jpg/best-practices/bp3@2x.jpg 2x"
-                  media="(max-width: 992px)">
-                <img @click.prevent="nextSlide" src="../../assets/img/Home/jpg/best-practices/bp3.jpg"
-                  srcset="../../assets/img/Home/jpg/best-practices/bp3@2x.jpg 2x">
+                <source>
+                <img @click.prevent="nextSlide" src="../../assets/img/Management/motivation3.jpg">
+              </picture>
+            </div>
+            <div class="motivation_wrap-preview-slide">
+              <picture>
+                <source>
+                <img @click.prevent="nextSlide" src="../../assets/img/Management/motivation4.jpg">
+              </picture>
+            </div>
+            <div class="motivation_wrap-preview-slide">
+              <picture>
+                <source>
+                <img @click.prevent="nextSlide" src="../../assets/img/Management/motivation5.jpg">
               </picture>
             </div>
           </slick>
@@ -54,7 +57,8 @@
         slickOptions: {
           slidesToShow: 1,
           autoplay: false,
-          arrows: false
+          arrows: false,
+          dots: true
         },
       };
     },
@@ -97,6 +101,10 @@
         box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15);
         background-color: #1e1e1e;
         border-radius: 5px;
+        background-image: url(../../assets/img/Management/insta-bg.png);
+        background-repeat: no-repeat;
+        background-position: center 30px;
+        background-size: cover;
 
         &_head {
           width: 100%;
@@ -148,14 +156,18 @@
         }
 
         &-slide {
-          width: 100%;
-          height: 100%;
+          max-width: 100%;
+          max-height: 60%;
           display: block !important;
+          margin: 70px auto;
 
           img {
             display: block;
-            width: 100%;
+            width: auto;
             height: 100%;
+            max-height: 240px;
+            margin: 0 auto;
+            box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15);
           }
         }
       }
@@ -235,6 +247,14 @@
         &-preview {
           width: 100%;
           min-width: auto;
+
+          &-slide {
+            margin: 40px 0;
+          }
+
+          img {
+            max-height: 200px;
+          }
         }
 
         &-title {
@@ -242,6 +262,18 @@
 
           p {
             font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    .motivation {
+      &_wrap {
+        &-preview {
+          img {
+            max-height: 180px;
           }
         }
       }
