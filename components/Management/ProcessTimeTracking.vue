@@ -43,7 +43,7 @@ export default {
 
     p {
       font-size: 20px;
-      line-height: 1.7;
+      line-height: 1.5;
       font-family: 'MADEEvolveSans-regular', sans-serif;
     }
   }
