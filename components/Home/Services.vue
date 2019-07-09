@@ -231,6 +231,7 @@ export default {
         }
         .right-block_desc {
           margin: 0;
+          padding-left: 40px;
           li {
             font-size: 20px;
             line-height: 1.2;
