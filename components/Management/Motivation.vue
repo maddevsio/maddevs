@@ -1,0 +1,283 @@
+<template>
+  <section id="motivation" class="motivation">
+    <div class="container">
+      <div class="motivation_wrap">
+        <div class="motivation_wrap-title">
+          <p v-if="lang === 'en'">We are responsible for motivation, comfort and growth of the team which is working on a project. Be sure that our skills and knowledge are always relevant and correspond to modern trends in software development. <span>You do not have to spend resources on the organization of working space. Only working hours developers spend on actual work are to be paid.</span></p>
+          <p v-else>Мы отвечаем за мотивацию, комфорт и развитие команды, работающей над проектом. Так, вы можете быть уверены, что навыки и знания команды всегда актуальны и соответствуют текущим трендам в сфере разработки. <span>Вам</span> также <span>не надо тратить ресурсы на организацию рабочего пространства</span> сотрудников <span>и платить им за неэффективные часы</span>, проведенные в офисе.</p>
+        </div>
+        <div class="motivation_wrap-preview">
+          <div class="motivation_wrap-preview_head"><span></span></div>
+          <slick class="motivation_wrap-preview-slides" ref="slick" @beforeChange="handleBeforeChange"
+            :options="slickOptions">
+            <div class="motivation_wrap-preview-slide">
+              <picture>
+                <source>
+                <img @click.prevent="nextSlide" src="../../assets/img/Management/motivation1.jpg">
+              </picture>
+            </div>
+            <div class="motivation_wrap-preview-slide">
+              <picture>
+                <source>
+                <img @click.prevent="nextSlide" src="../../assets/img/Management/motivation2.jpg">
+              </picture>
+            </div>
+            <div class="motivation_wrap-preview-slide">
+              <picture>
+                <source>
+                <img @click.prevent="nextSlide" src="../../assets/img/Management/motivation3.jpg">
+              </picture>
+            </div>
+            <div class="motivation_wrap-preview-slide">
+              <picture>
+                <source>
+                <img @click.prevent="nextSlide" src="../../assets/img/Management/motivation4.jpg">
+              </picture>
+            </div>
+            <div class="motivation_wrap-preview-slide">
+              <picture>
+                <source>
+                <img @click.prevent="nextSlide" src="../../assets/img/Management/motivation5.jpg">
+              </picture>
+            </div>
+          </slick>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+  export default {
+    name: 'Motivation',
+    data() {
+      return {
+        activeSlide: 0,
+        lang: 'en',
+        slickOptions: {
+          slidesToShow: 1,
+          autoplay: false,
+          arrows: false,
+          dots: true
+        },
+      };
+    },
+    created() {
+      this.lang = this.$store.state.locale;
+    },
+    methods: {
+      setAtiveSlide(index) {
+        this.activeSlide = index;
+        this.$refs.slick.goTo(index);
+      },
+      handleBeforeChange(event, slick, currentSlide, nextSlide) {
+        this.setAtiveSlide(nextSlide);
+      },
+      nextSlide() {
+        this.$refs.slick.next();
+      },
+    }
+  };
+
+</script>
+
+<style lang="scss" scoped>
+  @import '../../assets/styles/vars';
+
+  .motivation {
+    background-color: $bgcolor--yellow-light;
+    padding: 60px 0;
+
+    &_wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-preview {
+        width: 660px;
+        min-width: 300px;
+        height: auto;
+        max-height: 410px;
+        box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15);
+        background-color: $bgcolor--white;
+        border-radius: 5px;
+        background-image: url(../../assets/img/Management/insta-bg.png);
+        background-repeat: no-repeat;
+        background-position: center 30px;
+        background-size: cover;
+        overflow: hidden;
+
+        &_head {
+          width: 100%;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          background-color: $bgcolor--white;
+
+          span {
+            position: relative;
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: $border-radius-100;
+            background-color: #fdbc40;
+            margin-left: 24px;
+
+            &::before {
+              content: '';
+              display: block;
+              width: 8px;
+              height: 8px;
+              position: absolute;
+              top: 0;
+              left: -14px;
+              border-radius: $border-radius-100;
+              background-color: #fc605c;
+            }
+
+            &::after {
+              content: '';
+              display: block;
+              width: 8px;
+              height: 8px;
+              position: absolute;
+              top: 0;
+              right: -14px;
+              border-radius: $border-radius-100;
+              background-color: #34c749;
+            }
+          }
+        }
+
+        &-slides {
+          height: 100%;
+          overflow: hidden;
+        }
+
+        &-slide {
+          max-width: 100%;
+          max-height: 60%;
+          display: block !important;
+          margin: 70px auto;
+
+          img {
+            display: block;
+            width: auto;
+            height: 100%;
+            max-height: 240px;
+            margin: 0 auto;
+            box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15);
+          }
+        }
+      }
+
+      &-title {
+        width: 525px;
+        margin-right: 30px;
+
+        p {
+          text-align: left;
+          font-size: 24px;
+          line-height: 1.46;
+          font-family: 'MADEEvolveSans-regular', sans-serif;
+
+          span {
+            font-family: 'MADEEvolveSans-bold', sans-serif;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .motivation {
+      &_wrap {
+        &-preview {
+          min-width: 437px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .motivation {
+      &_wrap {
+        flex-direction: column;
+
+        &-preview {
+          width: 100%;
+          max-height: 100%;
+        }
+
+        &-title {
+          width: 100%;
+          margin: 0;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .motivation {
+      &_wrap {
+        flex-direction: column;
+
+        &-preview {
+          width: 100%;
+        }
+
+        &-title {
+          p {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .motivation {
+      padding: 60px 0;
+
+      &_wrap {
+        flex-direction: column;
+
+        &-preview {
+          width: 100%;
+          min-width: auto;
+
+          &-slide {
+            margin: 40px 0;
+          }
+
+          img {
+            max-height: 200px;
+          }
+        }
+
+        &-title {
+          margin-bottom: 40px;
+
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    .motivation {
+      &_wrap {
+        &-preview {
+          img {
+            max-height: 180px;
+          }
+        }
+      }
+    }
+  }
+
+</style>

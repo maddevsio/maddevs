@@ -2,12 +2,16 @@
   "header-link_home": "Home",
   "header-link_blog": "Blog",
   "header-link_careers": "Careers",
+  "header-link_management": "Management",
   "title-home": "Mad Devs",
   "title-jobs": "Mad Devs Jobs",
+  "title-management": "Mad Devs Management",
   "og_meta-url_home": "https://maddevs.io/en",
   "og_meta-url_jobs": "https://maddevs.io/en/jobs",
+  "og_meta-url_management": "https://maddevs.io/en/management",
   "meta-desc_home": "Mad Devs is a full stack team for development and administration of IT projects. We specialize in projects requiring the individual technical solutions.",
   "meta-desc_jobs": "Mad Devs is always looking for the experienced and cool specialists as well as budding juniors and interns.",
+  "meta-desc_management": "Mad Devs is always looking for the experienced and cool specialists as well as budding juniors and interns.",
   "cookie-button": "Got it!",
   "cookie-message": "We use cookies on our website for its technical functioning and for gathering statistics. A cookie is a small piece of data that a website stores on the visitor’s computer or mobile device.",
   "Our goal is to allow": "Our goal is to allow",
@@ -255,5 +259,35 @@
     "title-quality": "Mad Devs Quality",
     "meta-desc-quality": "",
     "og_meta-url_quality": "https://maddevs.io/en/quality"
-  } 
+  },
+  "management": {
+    "title1": "Working with us",
+    "title2": "allows you to focus on your product and investments attraction.",
+    "title3": "",
+    "banner": {
+      "p1": "Process transparency",
+      "p2": "Motivation and comfort",
+      "p3": "Risks",
+      "p4": "Processes",
+      "p5": "Time tracking",
+      "p6": "Reports"
+    },
+    "transparency": {
+      "title": "We guarantee transparency of all our processes",
+      "desc1": "We create and set up an environment for teams to communicate, including",
+      "desc2": "channels and task-tracking tools such as:"
+    },
+    "process": {
+      "title": "Working process",
+      "desc": "We use task-tracking instruments which allow us to handle different tasks, meeting notes, project documentation. All the important project-related information is being stored in a digital form so it can be easily obtained and used."
+    },
+    "traking": {
+      "title": "Time tracking",
+      "desc": "Developers meticulously describe how many hours they spend on each and every task and what they do. This information is used in reports, thus our customers always know exactly for what they pay."
+    },
+    "reports": {
+      "title": "Reports",
+      "desc": "Hourly reports are used for analysis and resolving controversies. In addition to hourly reports, you will also receive progress reports which can be provided as frequently as needed."
+    }
+  }
 }

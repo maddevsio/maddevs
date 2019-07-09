@@ -143,3 +143,44 @@
     font-size: 28px;
   }
 }
+
+.motivation {
+  position: relative;
+
+  .slick-dots {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    padding-left: 0;
+    justify-content: center;
+    margin-bottom: 0;
+    z-index: 1;
+  
+    button {
+      width: 36px;
+      height: 10px;
+      margin-top: -5px;
+      opacity: 0;
+      background-color: transparent;
+      color: transparent;
+      border: 0;
+      cursor: pointer;
+    }
+  
+    li {
+      width: 36px;
+      height: 3px;
+      border-radius: 3px;
+      background-color: rgba($bgcolor--white, 0.2);
+      margin: 10px;
+      list-style: none;
+    }
+  
+    .slick-active {
+      background: $bgcolor--white;
+      outline: none;
+    }
+  }
+}

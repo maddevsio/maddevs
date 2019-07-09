@@ -167,7 +167,7 @@ export default {
   },
   created() {
     this.lang = this.$store.state.locale;
-  },
+  }
 };
 </script>
 
