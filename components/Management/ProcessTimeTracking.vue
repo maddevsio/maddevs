@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="processTimeTraking">
     <div class="container">
       <div class="process">
         <h3>{{ $t('management.process.title') }}</h3>

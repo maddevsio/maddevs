@@ -1,5 +1,5 @@
 <template>
-  <section class="risks">
+  <section id="risks" class="risks">
     <div class="container">
       <div class="risks_wrap">
         <div class="risks_wrap-preview">
@@ -133,12 +133,15 @@
         &-preview {
           width: 100%;
           max-height: 100%;
+
+          img {
+            margin-top: 0;
+          }
         }
 
         &-title {
           width: 100%;
           margin: 0;
-          margin-top: 60px;
         }
       }
     }
@@ -175,8 +178,6 @@
         }
 
         &-title {
-          margin-top: 40px;
-
           p {
             font-size: 18px;
           }

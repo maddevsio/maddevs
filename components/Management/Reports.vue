@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="reports">
     <div class="container">
       <h2 class="sec-title">{{ $t('management.reports.title') }}</h2>
       <p>{{ $t('management.reports.desc') }}</p>

@@ -15,26 +15,14 @@
         <div class="banner_sidebar-head_img"></div>
         <div class="banner_sidebar-head_title"></div>
       </div>
-      <ul class="banner_sidebar-list">
-        <li class="banner_sidebar-list_item">
-          <p>{{ $t('management.banner.p1') }}</p>
-        </li>
-        <li class="banner_sidebar-list_item">
-          <p>{{ $t('management.banner.p2') }}</p>
-        </li>
-        <li class="banner_sidebar-list_item">
-          <p>{{ $t('management.banner.p3') }}</p>
-        </li>
-        <li class="banner_sidebar-list_item">
-          <p>{{ $t('management.banner.p4') }}</p>
-        </li>
-        <li class="banner_sidebar-list_item">
-          <p>{{ $t('management.banner.p5') }}</p>
-        </li>
-        <li class="banner_sidebar-list_item">
-          <p>{{ $t('management.banner.p6') }}</p>
-        </li>
-      </ul>
+      <div class="banner_sidebar-list">
+        <a v-scroll-to="'#transparency'">{{ $t('management.banner.p1') }}</a>
+        <a v-scroll-to="'#motivation'">{{ $t('management.banner.p2') }}</a>
+        <a v-scroll-to="'#risks'">{{ $t('management.banner.p3') }}</a>
+        <a v-scroll-to="'#processTimeTraking'">{{ $t('management.banner.p4') }}</a>
+        <a v-scroll-to="'#processTimeTraking'">{{ $t('management.banner.p5') }}</a>
+        <a v-scroll-to="'#reports'">{{ $t('management.banner.p6') }}</a>
+      </div>
     </div>
     <div class="banner_content">
       <p class="banner_content-task">MD — 1</p>
@@ -156,7 +144,7 @@ export default {
         margin-top: 25px;
         margin-left: 8px;
 
-        li {
+        a {
           display: flex;
           align-items: center;
           margin-bottom: 20px;
@@ -164,6 +152,8 @@ export default {
           line-height: 1.07;
           font-size: 14px;
           font-family: 'MADEEvolveSans-regular', sans-serif;
+          text-decoration: none;
+          cursor: pointer;
 
           &::before {
             content: '';

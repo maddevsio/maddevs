@@ -1,5 +1,5 @@
 <template>
-  <section class="motivation">
+  <section id="motivation" class="motivation">
     <div class="container">
       <div class="motivation_wrap">
         <div class="motivation_wrap-title">

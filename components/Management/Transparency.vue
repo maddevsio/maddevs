@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="transparency">
     <div class="container">
       <h2 class="sec-title">{{ $t('management.transparency.title') }}</h2>
       <p>{{ $t('management.transparency.desc1') }} <span><img src="../../assets/img/common/slack.svg" alt="Slack"> Slack</span> {{ $t('management.transparency.desc2') }} <span><img src="../../assets/img/common/jira.svg" alt="Jira"> JIRA,</span> <span><img src="../../assets/img/common/asana.svg" alt="Asana"> Asana,</span> <span><img src="../../assets/img/common/basecamp.svg" alt="Basecamp"> BaseCamp,</span> <span><img src="../../assets/img/common/trello.svg" alt="Trello"> Trello.</span> </p>
