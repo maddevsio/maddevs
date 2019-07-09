@@ -44,6 +44,7 @@ export default {
     }
 
     svg {
+      height: 80%;
       position: absolute;
       left: 50%;
       top: 50%;
