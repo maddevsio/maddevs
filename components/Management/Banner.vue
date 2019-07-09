@@ -17,22 +17,22 @@
       </div>
       <ul class="banner_sidebar-list">
         <li class="banner_sidebar-list_item">
-          <p>Прозрачность процессов</p>
+          <p>{{ $t('management.banner.p1') }}</p>
         </li>
         <li class="banner_sidebar-list_item">
-          <p>Мотивация и комфорт</p>
+          <p>{{ $t('management.banner.p2') }}</p>
         </li>
         <li class="banner_sidebar-list_item">
-          <p>Риски</p>
+          <p>{{ $t('management.banner.p3') }}</p>
         </li>
         <li class="banner_sidebar-list_item">
-          <p>Процессы</p>
+          <p>{{ $t('management.banner.p4') }}</p>
         </li>
         <li class="banner_sidebar-list_item">
-          <p>Тайм трекинг</p>
+          <p>{{ $t('management.banner.p5') }}</p>
         </li>
         <li class="banner_sidebar-list_item">
-          <p>Отчеты</p>
+          <p>{{ $t('management.banner.p6') }}</p>
         </li>
       </ul>
     </div>

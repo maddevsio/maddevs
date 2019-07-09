@@ -145,10 +145,10 @@ export default {
         sans-serif;
       }
       .nuxt-link-active {
-        color: $accent-color--red;
+        color: $accent-color--red !important;
       }
       .router-link-active {
-        color: $accent-color--red;
+        color: $accent-color--red !important;
       }
     }
     &-wrap {

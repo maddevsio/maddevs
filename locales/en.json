@@ -264,6 +264,14 @@
     "title1": "Working with us",
     "title2": "allows you to focus on your product and investments attraction.",
     "title3": "",
+    "banner": {
+      "p1": "Process transparency",
+      "p2": "Motivation and comfort",
+      "p3": "Risks",
+      "p4": "Processes",
+      "p5": "Time tracking",
+      "p6": "Reports"
+    },
     "transparency": {
       "title": "We guarantee transparency of all our processes",
       "desc1": "We create and set up an environment for teams to communicate, including",
