@@ -234,7 +234,7 @@ export default {
       }
 
       h1 {
-        margin-top: 50px;
+        margin-top: 80px;
         font-size: 49px;
         line-height: 1.22;
         font-weight: 300;
@@ -307,7 +307,7 @@ export default {
 
         h1 {
           font-size: 38px;
-          margin-top: 30px;
+          margin-top: 40px;
         }
       }
     }
@@ -365,7 +365,7 @@ export default {
       &_content {
         h1 {
           font-size: 28px;
-          margin-top: 10px;
+          margin-top: 24px;
         }
       }
     }
@@ -386,7 +386,7 @@ export default {
         }
 
         h1 {
-          margin-top: 70px;
+          margin-top: 90px;
           font-size: 24px;
         }
       }

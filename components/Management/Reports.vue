@@ -38,7 +38,7 @@ export default {
       margin-top: 70px;
       text-align: center;
       font-size: 24px;
-      line-height: 1.7;
+      line-height: 1.5;
       font-family: 'MADEEvolveSans-regular', sans-serif;
       z-index: 1;
     }
