@@ -25,7 +25,7 @@
       <div class="header-mobile-menu_address">
         <p>{{$t('address-footer-kg')}}</p>
         <div class="header-mobile-menu_address-phonemail">
-          <a href="tel:+996 555 429 055">+996 555 761 939</a>
+          <a href="tel:+996 703 31 06 61">+996 703 31 06 61</a>
           <a href="mailto:team@maddevs.io">team@maddevs.io</a>
         </div>
       </div>
