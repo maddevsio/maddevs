@@ -36,3 +36,21 @@ patch:
         patched: '2019-07-03T23:27:56.959Z'
     - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
         patched: '2019-07-03T23:27:56.959Z'
+    - snyk > lodash:
+        patched: '2019-07-11T14:07:39.772Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2019-07-11T14:07:39.772Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2019-07-11T14:07:39.772Z'
+    - snyk > snyk-config > lodash:
+        patched: '2019-07-11T14:07:39.772Z'
+    - snyk > inquirer > lodash:
+        patched: '2019-07-11T14:07:39.772Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2019-07-11T14:07:39.772Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-07-11T14:07:39.772Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2019-07-11T14:07:39.772Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2019-07-11T14:07:39.772Z'
