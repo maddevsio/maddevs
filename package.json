@@ -11,7 +11,9 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "heroku-postbuild": "npm run generate"
+    "heroku-postbuild": "npm run generate",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@nuxtjs/yandex-metrika": "^0.1.1",
@@ -22,7 +24,8 @@
     "vue-analytics": "^5.16.0",
     "vue-i18n": "^8.9.0",
     "vue-scrollto": "^2.15.0",
-    "vue-slick": "^1.1.15"
+    "vue-slick": "^1.1.15",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -32,5 +35,6 @@
     "eslint-plugin-vue": "^4.0.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0"
-  }
+  },
+  "snyk": true
 }
