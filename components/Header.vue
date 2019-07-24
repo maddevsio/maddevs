@@ -9,7 +9,6 @@
           <nav class="header_links">
             <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank" rel="noreferrer">{{ $t('header-link_blog') }}</a>
             <router-link :to="`/${this.lang}/jobs`">{{ $t('header-link_careers') }}</router-link>
-            <router-link :to="`/${this.lang}/management`">{{ $t('header-link_management') }}</router-link>
           </nav>
           <div class="header_soc-icons">
             <a href="https://ru.linkedin.com/company/mad-devs" target="_blank" rel="noreferrer">

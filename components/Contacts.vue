@@ -8,7 +8,7 @@
           <div class="contacts-wrap_list-item headquarters">
             <h6>{{$t('address-footer-uk-title')}}</h6>
             <p>{{$t('address-footer-uk')}}</p>
-            <a href="tel:+447555738938">+44 75 5573 8938</a>
+            <a href="tel:+442039848555">+44 20 3984 8555</a>
           </div>
           <div class="contacts-wrap_list-item">
             <h6>{{$t('address-footer-kg-title')}}</h6>
