@@ -14,6 +14,12 @@
   "meta-desc_management": "Working with us allows you to focus on your product and investments attraction.",
   "cookie-button": "Got it!",
   "cookie-message": "We use cookies on our website for its technical functioning and for gathering statistics. A cookie is a small piece of data that a website stores on the visitor’s computer or mobile device.",
+  "home": {
+    "slack": {
+      "desc1": "<span>@here</span> We develop tailored software solutions for corporations using the present-day developer tools and technology stack. Mad Devs acts as a part of your extended team, and you get your systems properly administered and monitored",
+      "desc2": "<span>@here</span> We achieve exceptional results thanks to our proven expertise in full-stack software development,  remote maintenance of customer systems and technical consulting. Just like our <span>@customers</span>, we love transparency and provide modern tools for task tracking"
+    }
+  },
   "Our goal is to allow": "Our goal is to allow",
   "founders": "founders",
   "to focus on the product and customer development, strategy and team building, fundraising and revenue": "to focus on the product and customer development, strategy and team building, fundraising and revenue",
