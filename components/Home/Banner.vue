@@ -72,9 +72,7 @@
                   9:25 AM
                 </div>
               </div>
-              <p class="banner-slack_content-item-text">
-                <span>@here</span> {{$t('Our goal is to allow technology startup')}} <span>{{ $t('founders') }}</span> {{$t('to focus on the product and customer development, strategy and team building, fundraising and revenue')}}
-              </p>
+              <p class="banner-slack_content-item-text" v-html="$t('home.slack.desc1')"></p>
               <div class="banner-slack_content-item-status">
                 <div class="banner-slack_content-item-status-item" @click="slack++">
                   <img src="../../assets/img/Home/png/banner/briefcase_1f4bc.png" alt="">
@@ -117,10 +115,7 @@
                   9:25 AM
                 </div>
               </div>
-              <p class="banner-slack_content-item-text">
-                <span>@here</span>
-                {{ $t('We achieve it by doing what we are best at technical execution and consultations')}}, <span class="banner-slack_content-item-text-red-span">{{$t('qualified software development')}}</span>{{$t('software development')}}, {{$t('support and team monitoring') }}
-              </p>
+              <p class="banner-slack_content-item-text" v-html="$t('home.slack.desc2')"></p>
               <div class="banner-slack_content-item-status">
                 <div class="banner-slack_content-item-status-item" @click="slack7++">
                   <img src="../../assets/img/Home/png/banner/i-love-you-hand-sign_1f91f.png" alt="">
@@ -488,7 +483,7 @@ export default {
               background-color: #f9f9f9 !important;
               border: solid 1px $border-color--grey;
             }
-            span {
+            /deep/ span {
               font-family: 'OpenSans-SemiBold', sans-serif;
               background-color: #fff6cd;
               padding: 0px 5px 2px;

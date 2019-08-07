@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 
 const _9553cca4 = () => interopDefault(import('../pages/jobs.vue' /* webpackChunkName: "pages/jobs" */))
-const _4a84b1ca = () => interopDefault(import('../pages/management.vue' /* webpackChunkName: "pages/management" */))
 const _4f2234aa = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 const _369337e8 = () => interopDefault(import('../pages/_lang/index.vue' /* webpackChunkName: "pages/_lang/index" */))
 const _6a38b6b0 = () => interopDefault(import('../pages/_lang/jobs.vue' /* webpackChunkName: "pages/_lang/jobs" */))
@@ -87,10 +86,6 @@ export function createRouter() {
       path: "/jobs",
       component: _9553cca4,
       name: "jobs"
-    }, {
-      path: "/management",
-      component: _4a84b1ca,
-      name: "management"
     }, {
       path: "/",
       component: _4f2234aa,
