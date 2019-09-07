@@ -98,6 +98,9 @@
             <a class="namba-taxi">
               <img src="../../assets/img/Home/svg/clients/namba-taxi.svg" alt="namba-taxi">
             </a>
+            <a class="clutch">
+              <img src="../../assets/img/Home/svg/clients/clutch.svg" alt="clutch">
+            </a>
             <a class="scentomania">
               <img src="../../assets/img/Home/svg/clients/scento.svg" alt="scento">
             </a>
@@ -273,13 +276,19 @@ export default {
                 height: 36px;
               }
             }
+
+            .clutch {
+              img {
+                height: 20px;
+              }
+            }
           }
         }
       }
     }
 
     .clients .open_wrap {
-      height: 1960px;
+      height: 2060px;
     }
   }
   @media only screen and (max-width: 480px) {
