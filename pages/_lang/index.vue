@@ -1,6 +1,7 @@
 <template>
   <main class="main">
     <Banner />
+    <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="3" data-height="350" data-clutchcompany-id="258762"></div>
     <HowItWork />
     <BestPractices />
     <Services />

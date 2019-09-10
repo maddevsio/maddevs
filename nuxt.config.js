@@ -11,9 +11,14 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    script: [{
-      src: 'https://code.tidio.co/kuhpv1cxwof3di7of0qiwbfmvggsdeav.js'
-    }]
+    script: [
+      {
+        src: 'https://code.tidio.co/kuhpv1cxwof3di7of0qiwbfmvggsdeav.js'
+      },
+      {
+        src: 'https://widget.clutch.co/static/js/widget.js'
+      }
+    ]
   },
   /*
   ** Customize the progress bar color
