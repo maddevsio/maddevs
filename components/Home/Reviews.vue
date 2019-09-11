@@ -126,14 +126,10 @@ export default {
         width: 240px;
         background-color: rgba(255, 255, 255, 0.2);
         padding: 23px 0px 15px 55px;
-        border-radius: 5px;
-        margin-top: 40px;
+        border-radius: 5px;        
+        margin: 0 auto;
+        margin-top: 50px;
       }
-  }
-  @media only screen and (max-width: 800px) {
-    .clutch-widget {
-      margin: 0 auto;
-    }
   }
   @media only screen and (max-width: 480px) {
     .reviews {
