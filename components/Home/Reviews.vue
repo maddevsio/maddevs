@@ -35,7 +35,7 @@
             </div>
           </div>
         </slick>
-        </div>
+      </div>
       <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="50" data-darkbg="1" data-clutchcompany-id="258762"></div>
     </div>
   </section>
