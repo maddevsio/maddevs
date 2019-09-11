@@ -2,11 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _9553cca4 = () => interopDefault(import('../pages/jobs.vue' /* webpackChunkName: "pages/jobs" */))
-const _4f2234aa = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
-const _369337e8 = () => interopDefault(import('../pages/_lang/index.vue' /* webpackChunkName: "pages/_lang/index" */))
-const _6a38b6b0 = () => interopDefault(import('../pages/_lang/jobs.vue' /* webpackChunkName: "pages/_lang/jobs" */))
-const _7a42fa9d = () => interopDefault(import('../pages/_lang/management.vue' /* webpackChunkName: "pages/_lang/management" */))
+const _3c6c0737 = () => interopDefault(import('../pages/jobs.vue' /* webpackChunkName: "pages/jobs" */))
+const _aa6c0f7e = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _e82ca382 = () => interopDefault(import('../pages/_lang/index.vue' /* webpackChunkName: "pages/_lang/index" */))
+const _019e9979 = () => interopDefault(import('../pages/_lang/jobs.vue' /* webpackChunkName: "pages/_lang/jobs" */))
+const _0a083ab4 = () => interopDefault(import('../pages/_lang/management.vue' /* webpackChunkName: "pages/_lang/management" */))
 
 Vue.use(Router)
 
@@ -84,23 +84,23 @@ export function createRouter() {
 
     routes: [{
       path: "/jobs",
-      component: _9553cca4,
+      component: _3c6c0737,
       name: "jobs"
     }, {
       path: "/",
-      component: _4f2234aa,
+      component: _aa6c0f7e,
       name: "index"
     }, {
       path: "/:lang",
-      component: _369337e8,
+      component: _e82ca382,
       name: "lang"
     }, {
       path: "/:lang/jobs",
-      component: _6a38b6b0,
+      component: _019e9979,
       name: "lang-jobs"
     }, {
       path: "/:lang/management",
-      component: _7a42fa9d,
+      component: _0a083ab4,
       name: "lang-management"
     }],
 

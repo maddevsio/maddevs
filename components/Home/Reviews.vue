@@ -2,7 +2,7 @@
   <section id="reviews" class="reviews">
     <div class="container">
       <div class="reviews_wrap">
-        <h2 class="sec-title">{{$t('Сlient feedback ')}}</h2>
+        <h2 class="sec-title">{{$t('Сlient feedback ')}}</h2>   
         <slick
           class="reviews_wrap-carousel"
           ref="slick"
@@ -34,8 +34,9 @@
                 </div>
             </div>
           </div>
-        </slick>
+        </slick>        
       </div>
+      <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="50" data-darkbg="1" data-clutchcompany-id="258762"></div>
     </div>
   </section>
 </template>
@@ -119,7 +120,19 @@ export default {
             }
           }
         }
+      }      
+    }
+    .clutch-widget {
+        width: 240px;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 23px 0px 15px 55px;
+        border-radius: 5px;
+        margin-top: 40px;
       }
+  }
+  @media only screen and (max-width: 800px) {
+    .clutch-widget {
+      margin: 0 auto;
     }
   }
   @media only screen and (max-width: 480px) {
