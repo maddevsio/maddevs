@@ -123,9 +123,9 @@ export default {
       }
     }
     .clutch-widget {
-        width: 240px;
-        background-color: rgba(255, 255, 255, 0.2);
-        padding: 23px 0px 15px 55px;
+        width: 200px;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 23px 0px 15px 20px;
         border-radius: 5px;        
         margin: 50px auto 0;
         margin-top: 50px;
