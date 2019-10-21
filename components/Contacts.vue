@@ -13,7 +13,7 @@
           <div class="contacts-wrap_list-item">
             <h6>{{$t('address-footer-kg-title')}}</h6>
             <p>{{$t('address-footer-kg')}}</p>
-            <a href="tel:+996 703 31 06 61">+996 703 31 06 61</a>
+            <a href="tel:+996551752797">+996 551 75 27 97</a>
           </div>
           <div class="contacts-wrap_list-item">
             <h6>{{$t('address-footer-email-title')}}</h6>
