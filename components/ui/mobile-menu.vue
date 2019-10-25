@@ -18,10 +18,9 @@
         </router-link>
       </div>
       <div class="header-mobile-menu_address">
-        <p>{{$t('address-footer-kg')}}</p>
         <div class="header-mobile-menu_address-phonemail">
-          <a href="tel:+996551752797">+996 551 75 27 97</a>
-          <a href="mailto:team@maddevs.io">team@maddevs.io</a>
+          <p>{{$t('address-footer-uk')}}</p>
+          <a href="tel:+442039848555">+44 20 3984 8555</a>
         </div>
       </div>
       <div class="header-mobile-menu_soc-icons">
