@@ -1,6 +1,7 @@
 <template>
   <main class="main">
     <Banner />
+    <ListVacansies />
     <Contacts />
     <modal name="resume-form"></modal>
   </main>
@@ -8,6 +9,7 @@
 
 <script>
 import Banner from '@/components/Vacancies/Banner';
+import ListVacansies from '@/components/Vacancies/ListVacansies';
 import Contacts from '@/components/Contacts';
 
 export default {
@@ -15,6 +17,7 @@ export default {
   props: ['language'],
   components: {
     Banner,
+    ListVacansies,
     Contacts
   },
   data() {
