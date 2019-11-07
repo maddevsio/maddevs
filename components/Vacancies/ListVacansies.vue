@@ -6,7 +6,7 @@
         <div class="vacancies_list-item">
           <img src="" alt="">
           <h4></h4>
-          <p></p>
+          <p>{{ vacancies }}</p>
         </div>
       </div>
     </div>
@@ -19,7 +19,14 @@ export default {
   data() {
     return {};
   },
-  methods: {}
+  computed: {
+    vacancies() {
+      return this.$store.getters.vacancies;
+    }
+  },
+  mounted() {
+    this.$store.dispatch('FETCH_VACANCIES');
+  }
 };
 </script>
 
