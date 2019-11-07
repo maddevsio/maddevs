@@ -19,9 +19,9 @@ export default {
   },
   data() {
     return {
-      title: this.$t('title-jobs'),
-      description: this.$t('meta-desc_jobs'),
-      ogUrl: this.$t('og_meta-url_jobs'),
+      title: this.$t('title-vacancies'),
+      description: this.$t('meta-desc_vacancies'),
+      ogUrl: this.$t('og_meta-url_vacancies'),
     };
   },
   head() {
