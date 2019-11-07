@@ -3,10 +3,12 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 
 const _9553cca4 = () => interopDefault(import('../pages/jobs.vue' /* webpackChunkName: "pages/jobs" */))
+const _13aaaab1 = () => interopDefault(import('../pages/vacancies.vue' /* webpackChunkName: "pages/vacancies" */))
 const _4f2234aa = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 const _369337e8 = () => interopDefault(import('../pages/_lang/index.vue' /* webpackChunkName: "pages/_lang/index" */))
 const _6a38b6b0 = () => interopDefault(import('../pages/_lang/jobs.vue' /* webpackChunkName: "pages/_lang/jobs" */))
 const _7a42fa9d = () => interopDefault(import('../pages/_lang/management.vue' /* webpackChunkName: "pages/_lang/management" */))
+const _084bdeef = () => interopDefault(import('../pages/_lang/vacancies.vue' /* webpackChunkName: "pages/_lang/vacancies" */))
 
 Vue.use(Router)
 
@@ -87,6 +89,10 @@ export function createRouter() {
       component: _9553cca4,
       name: "jobs"
     }, {
+      path: "/vacancies",
+      component: _13aaaab1,
+      name: "vacancies"
+    }, {
       path: "/",
       component: _4f2234aa,
       name: "index"
@@ -102,6 +108,10 @@ export function createRouter() {
       path: "/:lang/management",
       component: _7a42fa9d,
       name: "lang-management"
+    }, {
+      path: "/:lang/vacancies",
+      component: _084bdeef,
+      name: "lang-vacancies"
     }],
 
     fallback: false
