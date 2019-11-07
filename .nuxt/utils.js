@@ -138,7 +138,7 @@ export async function setContext(app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {}
+      env: {"API_URL":"https://api.huntflow.ru","API_TOKEN":"ead5c768bae89256b1a4cbb955d3b3273980bca65997e32982e852f46dc11c73","API_ACCOUNT_ID":"36479"}
     }
     // Only set once
     if (context.req) {
