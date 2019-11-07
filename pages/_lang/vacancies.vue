@@ -2,6 +2,7 @@
   <main class="main">
     <Banner />
     <Contacts />
+    <modal name="resume-form"></modal>
   </main>
 </template>
 

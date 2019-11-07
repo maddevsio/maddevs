@@ -36,7 +36,9 @@ export default {
     }
   },
   methods: {
-    openForm() {},
+    openForm() {
+      this.$modal.show('resume-form');
+    },
     selectType(type) {
       this.$store.dispatch('SET_VACANCIES_TYPE', type);
     }
