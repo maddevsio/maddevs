@@ -3,7 +3,6 @@
     <Banner />
     <ListVacansies />
     <Contacts />
-    <modal name="resume-form"></modal>
   </main>
 </template>
 
