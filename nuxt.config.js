@@ -1,18 +1,26 @@
+require("dotenv").config();
+
 module.exports = {
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: 'Mad Devs',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
-    script: [
       {
+        charset: 'utf-8'
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      }
+    ],
+    link: [{
+      rel: 'icon',
+      type: 'image/x-icon',
+      href: '/favicon.ico'
+    }],
+    script: [{
         src: 'https://code.tidio.co/kuhpv1cxwof3di7of0qiwbfmvggsdeav.js'
       },
       {
@@ -21,9 +29,11 @@ module.exports = {
     ]
   },
   /*
-  ** Customize the progress bar color
-  */
-  loading: { color: '#3B8070' },
+   ** Customize the progress bar color
+   */
+  loading: {
+    color: '#3B8070'
+  },
 
   router: {
     middleware: 'i18n'
@@ -32,29 +42,32 @@ module.exports = {
     '~/plugins/i18n.js',
     '~/plugins/vue-scrollto.js',
     '~/plugins/google-analytics.js',
+    '~plugins/vue-js-modal',
     {
       src: '~plugins/slick.js',
       ssr: false
     }
   ],
   generate: {
-    routes: ['/', '/en', '/en/jobs', '/ru', '/ru/jobs']
+    routes: ['/', '/en', '/en/jobs', '/en/vacancies', '/ru', '/ru/jobs', '/ru/vacancies']
   },
-  css: [
-    {
-      src: '~/assets/styles/index.scss',
-      lang: 'scss'
-    }
-  ],
+  css: [{
+    src: '~/assets/styles/index.scss',
+    lang: 'scss'
+  }],
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** Run ESLint on save
-    */
+     ** Run ESLint on save
+     */
     vendor: ['vue-slick'],
-    extend (config, { isDev, isClient, isServer }) {
+    extend(config, {
+      isDev,
+      isClient,
+      isServer
+    }) {
       if (isServer) {
         config.externals += [
           require('webpack-node-externals')({
@@ -63,7 +76,10 @@ module.exports = {
         ]
       }
     },
-    extend (config, { isDev, isClient }) {
+    extend(config, {
+      isDev,
+      isClient
+    }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -86,6 +102,20 @@ module.exports = {
         accurateTrackBounce: true
       }
     ],
-  ]
-}
-
+    "@nuxtjs/axios",
+    "@nuxtjs/proxy",
+    "@nuxtjs/dotenv"
+  ],
+  axios: {
+    proxy: true
+  },
+  proxy: {
+    "/api/": {
+      target: process.env.API_URL,
+      pathRewrite: {
+        "^/api/": ""
+      },
+      changeOrigin: true
+    }
+  }
+};

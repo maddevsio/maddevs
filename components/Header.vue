@@ -3,7 +3,7 @@
     <div class="container">
       <div class="header-wrap">
         <router-link :to="`/${this.lang}`">
-          <img src="../assets/img/common/logo.svg" alt="Logotype" class="header-logo">
+          <SvgLogo class="header-logo"  :isDark="headerDark"/>
         </router-link>
         <div class="header-wrap_right-block">
           <nav class="header_links">
@@ -35,6 +35,7 @@ import MobMenu from '@/components/ui/mobile-menu';
 import linkedin from '@/components/svg/linkedin-icon';
 import facebook from '@/components/svg/facebook-icon';
 import Hamburger from '@/components/svg/hamburger';
+import SvgLogo from '@/components/svg/SvgLogo';
 
 export default {
   name: 'main-header',
@@ -42,13 +43,15 @@ export default {
     MobMenu,
     linkedin,
     facebook,
-    Hamburger
+    Hamburger,
+    SvgLogo
   },
   data() {
     return {
       lang: 'en',
       mobileMenuActive: false,
-      headerDark: false
+      headerDark: false,
+      pagesWithDarkHeader: ['/management', '/vacancies']
     };
   },
   created() {
@@ -71,7 +74,7 @@ export default {
   },
   methods: {
     changeColorHeader() {
-      if (this.$nuxt.$router.history.current.path.includes('management')) {
+      if (this.pagesWithDarkHeader.includes(this.$nuxt.$router.history.current.path)) {
         this.headerDark = true;
       } else {
         this.headerDark = false;
