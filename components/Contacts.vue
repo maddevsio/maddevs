@@ -11,11 +11,6 @@
             <a href="tel:+442039848555">+44 20 3984 8555</a>
           </div>
           <div class="contacts-wrap_list-item">
-            <h6>{{$t('address-footer-kg-title')}}</h6>
-            <p>{{$t('address-footer-kg')}}</p>
-            <a href="tel:+996 703 31 06 61">+996 703 31 06 61</a>
-          </div>
-          <div class="contacts-wrap_list-item">
             <h6>{{$t('address-footer-email-title')}}</h6>
             <a href="mailto:team@maddevs.io">team@maddevs.io</a>
           </div>
