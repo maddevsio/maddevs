@@ -25,7 +25,7 @@
     "vue-i18n": "^8.9.0",
     "vue-scrollto": "^2.15.0",
     "vue-slick": "^1.1.15",
-    "snyk": "^1.271.0"
+    "snyk": "^1.278.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
