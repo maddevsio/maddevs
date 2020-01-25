@@ -123,13 +123,13 @@ export default {
       }
     }
     .clutch-widget {
-        width: 200px;
-        background-color: rgba(255, 255, 255, 0.1);
-        padding: 12px 0px 7px 20px;
-        border-radius: 5px;        
-        margin: 50px auto 0;
-        margin-top: 50px;
-      }
+      width: 200px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 12px 0px 7px 20px;
+      border-radius: 5px;        
+      margin: 50px auto 0;
+      margin-top: 50px;
+    }
   }
   @media only screen and (max-width: 480px) {
     .reviews {
