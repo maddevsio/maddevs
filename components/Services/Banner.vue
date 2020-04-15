@@ -3,8 +3,15 @@
     <div class="container">
       <div class="services-banner__container">
         <div class="services-banner__text-content_wrapper">
-          <div class="services-banner__text-item services-banner__first-child">Your Trusted</div>
-          <div class="services-banner__text-item services-banner__last-child">IT Outsourcing Partner</div>
+          <div class="services-banner__text-flex-item">
+            <div class="services-banner__text-item services-banner__first-child">Your Trusted</div>
+            <div class="services-banner__text-item services-banner__last-child">
+              <span class="services-banner__media-item">IT</span> Outsourcing Partner
+            </div>
+          </div>
+          <div class="services-banner__icon-flex-item">
+            <img src="../../assets/img/Services/svg/make-partner.svg" alt="make-partner">
+          </div>
         </div>
         <nav class="services-banner__navigation-list">
           <a href="" class="services-banner__navigation-item">IT Outsourcing</a>
@@ -38,6 +45,7 @@ export default {
     }
 
     &__text-content_wrapper {
+      display: flex;
       padding-bottom: 130px;
     }
 
@@ -65,6 +73,67 @@ export default {
       font-family: 'Hoves';
       background: url('../../assets/img/Services/svg/link-arrow.svg') no-repeat;
       background-position-y: 7px;
+    }
+
+    &__icon-flex-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      img {
+        margin-bottom: -180px;
+        margin-right: -110px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1620px) {
+    .services-banner {
+      &__icon-flex-item {
+        img {
+          margin-bottom: -200px;
+          margin-right: 40px;
+        }        
+      }
+
+      &__text-item {
+        font-size: 135px;
+      }
+
+      &__navigation-item {
+        font-size: 15px;
+      }
+
+      &__navigation-item {
+        background-position-y: 3px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .services-banner {
+      &__icon-flex-item {
+        img {
+          width: 311px;
+          margin-bottom: -179px;
+          margin-right: 64px;
+        }        
+      }
+
+      &__text-item {
+        font-size: 120px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1270px) {
+    .services-banner {
+      &__media-item {
+        display: none;
+      }
+
+      &__navigation-item {
+        padding-right: 30px; 
+      }
     }
   }
 </style>
