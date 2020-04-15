@@ -14,10 +14,10 @@
           </div>
         </div>
         <nav class="services-banner__navigation-list">
-          <a href="" class="services-banner__navigation-item">IT Outsourcing</a>
-          <a href="" class="services-banner__navigation-item">Software Development</a>
-          <a href="" class="services-banner__navigation-item">Infrastructure Optimization</a>
-          <a href="" class="services-banner__navigation-item">IT Consulting</a>
+          <a href="#it-outsourcing" class="services-banner__navigation-item">IT Outsourcing</a>
+          <a href="#software-development" class="services-banner__navigation-item">Software Development</a>
+          <a href="#infrastructure-optimization" class="services-banner__navigation-item">Infrastructure Optimization</a>
+          <a href="#it-consulting" class="services-banner__navigation-item">IT Consulting</a>
         </nav>
       </div>
     </div>
