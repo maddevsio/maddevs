@@ -100,7 +100,7 @@ export default {
       }
 
       &__navigation-item {
-        font-size: 15px;
+        font-size: 17px;
       }
 
       &__navigation-item {
@@ -125,6 +125,20 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1366px) {
+    .services-banner {
+      &__navigation-item {
+        padding-right: 50px; 
+      }
+
+      &__icon-flex-item {
+        img {
+          margin-right: 50px;
+        }        
+      }
+    }
+  }
+
   @media only screen and (max-width: 1270px) {
     .services-banner {
       &__media-item {
@@ -133,6 +147,45 @@ export default {
 
       &__navigation-item {
         padding-right: 30px; 
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1220px) {
+    .services-banner {
+      &__navigation-item {
+        padding-right: 20px; 
+        font-size: 15px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .services-banner {
+      // &__icon-flex-item {
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 50%;
+      //   img {
+      //     width: 230px;
+      //   }        
+      // }
+
+      &__navigation-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: -60px;
+      }
+
+      &__navigation-item {
+        padding-bottom: 27px;
+        font-size: 31px;
+        background-size: 12px;
+        background-position-y: 9px
+      }
+
+      &__text-item {
+        font-size: 100px;
       }
     }
   }
