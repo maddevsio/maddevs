@@ -31,8 +31,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/vars';
-
   .services-banner {
     height: 100%;
     width: 100%;
