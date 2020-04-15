@@ -4,10 +4,10 @@
       <div class="services-banner__container">
         <div class="services-banner__text-content_wrapper">
           <div class="services-banner__text-flex-item">
-            <div class="services-banner__text-item services-banner__first-child">Your Trusted</div>
-            <div class="services-banner__text-item services-banner__last-child">
+            <h1 class="services-banner__text-item services-banner__first-child">Your Trusted</h1>
+            <h1 class="services-banner__text-item services-banner__last-child">
               <span class="services-banner__media-item">IT</span> Outsourcing Partner
-            </div>
+            </h1>
           </div>
           <div class="services-banner__icon-flex-item">
             <img src="../../assets/img/Services/svg/make-partner.svg" alt="make-partner">
