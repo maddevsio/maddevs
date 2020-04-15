@@ -50,10 +50,11 @@ export default {
     }
 
     &__text-item {
-      font-family: 'Hoves';
+      font-family: 'Hoves-Bold';
       font-style: normal;
       font-weight: bold;
       font-size: 150px;
+      letter-spacing: -3px;
     }
 
     &__first-child {
@@ -70,7 +71,7 @@ export default {
       padding-left: 20px;
       color: #f2f2f2;
       font-size: 22px;
-      font-family: 'Hoves';
+      font-family: 'Hoves-Regular';
       background: url('../../assets/img/Services/svg/link-arrow.svg') no-repeat;
       background-position-y: 7px;
     }
@@ -96,7 +97,7 @@ export default {
       }
 
       &__text-item {
-        font-size: 135px;
+        font-size: 125px;
       }
 
       &__navigation-item {
@@ -113,14 +114,14 @@ export default {
     .services-banner {
       &__icon-flex-item {
         img {
-          width: 311px;
+          width: 320px;
           margin-bottom: -179px;
           margin-right: 64px;
         }        
       }
 
       &__text-item {
-        font-size: 120px;
+        font-size: 125px;
       }
     }
   }
@@ -129,12 +130,17 @@ export default {
     .services-banner {
       &__navigation-item {
         padding-right: 50px; 
+        font-size: 17px;
       }
 
       &__icon-flex-item {
         img {
           margin-right: 50px;
         }        
+      }
+
+      &__text-item {
+        font-size: 115px;
       }
     }
   }
@@ -147,6 +153,7 @@ export default {
 
       &__navigation-item {
         padding-right: 30px; 
+        font-size: 16px;
       }
     }
   }
