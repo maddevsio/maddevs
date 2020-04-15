@@ -162,14 +162,15 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .services-banner {
-      // &__icon-flex-item {
-      //   position: absolute;
-      //   top: 50%;
-      //   left: 50%;
-      //   img {
-      //     width: 230px;
-      //   }        
-      // }
+      &__icon-flex-item {
+        min-width: 375px;
+        img {
+          width: 235px;
+          position: absolute;
+          top: 55%;
+          left: 41%;
+        }        
+      }
 
       &__navigation-list {
         display: flex;
@@ -186,6 +187,80 @@ export default {
 
       &__text-item {
         font-size: 100px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .services-banner {
+      &__icon-flex-item {
+        img {
+          left: 55%;
+        }        
+      }
+    }
+  }
+
+  @media only screen and (max-width: 610px) {
+    .services-banner {
+      &__icon-flex-item {
+        img {
+          width: 185px;
+          left: 54%;
+          top: 54%;
+        }        
+      }
+
+      &__navigation-item {
+        font-size: 23px;
+        background-size: 11px;
+        background-position-y: 6px
+      }
+
+      &__text-item {
+        font-size: 73px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    .services-banner {
+      &__icon-flex-item {
+        img {
+          width: 150px;
+          top: 54%;
+        }        
+      }
+
+      &__navigation-item {
+        font-size: 18px;
+        background-size: 9px;
+        background-position-y: 4px
+      }
+
+      &__text-item {
+        font-size: 56px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 370px) {
+    .services-banner {
+      &__icon-flex-item {
+        img {
+          width: 130px;
+          left: 53%;
+        }        
+      }
+
+      &__navigation-item {
+        font-size: 15px;
+        background-size: 8px;
+        background-position-y: 3px
+      }
+
+      &__text-item {
+        font-size: 46px;
       }
     }
   }
