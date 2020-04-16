@@ -66,7 +66,7 @@ export default {
     &__main-title {
       padding-bottom: 65px;
       font-family: 'Hoves-Bold';
-      font-size: 130px;
+      font-size: 120px;
       color: #ec1c24;
     }
   }
