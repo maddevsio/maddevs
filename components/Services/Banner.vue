@@ -14,7 +14,7 @@
           </div>
         </div>
         <nav class="services-banner__navigation-list">
-          <a href="#it-outsourcing" class="services-banner__navigation-item">IT Outsourcing</a>
+          <a href="#it-outsourcing-content_items" class="services-banner__navigation-item">IT Outsourcing</a>
           <a href="#software-development" class="services-banner__navigation-item">Software Development</a>
           <a href="#infrastructure-optimization" class="services-banner__navigation-item">Infrastructure Optimization</a>
           <a href="#it-consulting" class="services-banner__navigation-item">IT Consulting</a>
@@ -34,6 +34,7 @@ export default {
   .services-banner {
     height: 100%;
     width: 100%;
+    position: relative;
     background-color: #000;
     &__container {
       width: 100%;
@@ -80,7 +81,7 @@ export default {
       justify-content: flex-end;
       img {
         margin-bottom: -180px;
-        margin-right: -110px;
+        margin-right: 20px;
       }
     }
   }
@@ -90,7 +91,7 @@ export default {
       &__icon-flex-item {
         img {
           margin-bottom: -200px;
-          margin-right: 40px;
+          margin-right: 55px;
         }        
       }
 

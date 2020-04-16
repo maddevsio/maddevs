@@ -2,8 +2,8 @@
   <section id="it-outsourcing" class="it-outsourcing">
     <div class="container">
       <div class="it-outsourcing__content-wrapper">
-        <h1 class="it-outsourcing__title">IT Outsourcing</h1>
-        <div class="it-outsourcing__flex-wrapper">
+        <h1 class="it-outsourcing__main-title">IT Outsourcing</h1>
+        <div class="it-outsourcing__flex-wrapper" id="it-outsourcing-content_items">
           <OutsourcingContent 
             :title="teams.title" 
             :subTitle="teams.subTitle" 
@@ -35,9 +35,9 @@ export default {
   data() {
     return {
       teams: {
-        title: "Tea  s",
+        title: "Teams",
         subTitle: "Tired of 20 or 30 people not delivering you any features?",
-        paragraph: "How about only dealing with smart heads and capable hands? Enjoy our proactive rockets who will ask you to get them more work.",
+        paragraph: 'How about only dealing with smart heads and capable hands? Enjoy our proactive rockets who will ask you to get them more work.',
         buttonInnerText: 'Get a team of ultra-fast coders',
         className: 'teams' 
       },
@@ -57,9 +57,43 @@ export default {
   .it-outsourcing {
     height: 100%;
     width: 100%;
+    padding-top: 240px;
     background-color: #000;
     &__flex-wrapper {
       display: flex;
     }
+
+    &__main-title {
+      padding-bottom: 65px;
+      font-family: 'Hoves-Bold';
+      font-size: 130px;
+      color: #ec1c24;
+    }
+  }
+
+  @media only screen and (max-width: 1390px) {
+    .it-outsourcing {
+      &__main-title {
+        font-size: 115px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1220px) {
+  }
+
+  @media only screen and (max-width: 1024px) {
+  }
+
+  @media only screen and (max-width: 768px) {
+  }
+
+  @media only screen and (max-width: 610px) {
+  }
+
+  @media only screen and (max-width: 440px) {
+  }
+
+  @media only screen and (max-width: 370px) {
   }
 </style>

@@ -20,6 +20,7 @@ export default {
     box-shadow: none;
     background-color: transparent;
     font-size: 18px;
+    font-family: 'Hoves-Regular';
     cursor: pointer;
   }
 </style>
