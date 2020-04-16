@@ -17,3 +17,6 @@ selenium-debug.log
 *.sln
 assets/img/Home/png/copyright/mad_copy--dont_touche_big.png
 assets/img/Home/png/copyright/mad_copy--dont_touche.png
+
+# Nuxt build
+.nuxt

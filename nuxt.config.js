@@ -13,9 +13,6 @@ module.exports = {
     ],
     script: [
       {
-        src: 'https://code.tidio.co/kuhpv1cxwof3di7of0qiwbfmvggsdeav.js'
-      },
-      {
         src: 'https://widget.clutch.co/static/js/widget.js'
       }
     ]
@@ -38,7 +35,7 @@ module.exports = {
     }
   ],
   generate: {
-    routes: ['/', '/en', '/en/jobs', '/ru', '/ru/jobs']
+    routes: ['/', '/en', '/en/jobs', '/ru', '/ru/jobs', '/services']
   },
   css: [
     {
