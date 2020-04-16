@@ -9,12 +9,14 @@
             :subTitle="teams.subTitle" 
             :paragraph="teams.paragraph"
             :buttonInnerText="teams.buttonInnerText"
+            :className="teams.className"
           />
           <OutsourcingContent 
             :title="individuals.title" 
             :subTitle="individuals.subTitle" 
             :paragraph="individuals.paragraph"
             :buttonInnerText="individuals.buttonInnerText"
+            :className="individuals.className"
           />
         </div>
       </div>
@@ -36,13 +38,15 @@ export default {
         title: "Tea  s",
         subTitle: "Tired of 20 or 30 people not delivering you any features?",
         paragraph: "How about only dealing with smart heads and capable hands? Enjoy our proactive rockets who will ask you to get them more work.",
-        buttonInnerText: 'Get a team of ultra-fast coders'
+        buttonInnerText: 'Get a team of ultra-fast coders',
+        className: 'teams' 
       },
       individuals: {
         title: "Individuals",
         subTitle: "Seeing one, two, five guys working on a minor thing? Ha!",
         paragraph: "We are NOT going to bring you more people than you actually need. We'll just send one or two of our rangers to your frontier, and you'll enjoy peace of mind about IT.",
-        buttonInnerText: 'Get individual proactive rockets'
+        buttonInnerText: 'Get individual proactive rockets',
+        className: 'individuals' 
       }
     };
   },
@@ -50,5 +54,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  
+  .it-outsourcing {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    &__flex-wrapper {
+      display: flex;
+    }
+  }
 </style>
