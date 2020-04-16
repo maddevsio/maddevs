@@ -1,0 +1,125 @@
+<template>
+  <section id="software-development" class="software-development">
+    <div class="container">
+        <h1 class="software-development__main-title">
+            <span>Software</span><br>Development
+        </h1>
+        <div class="software-development__flex-wrapper">
+         <SoftwareDevelopContent 
+            :title="backend.title" 
+            :subTitle="backend.subTitle" 
+            :firstParagraph="backend.firstParagraph"
+            :secondParagraph="backend.secondParagraph"
+            :thidrParagraph="backend.thidrParagraph"
+            :buttonInnerText="backend.buttonInnerText"
+          />
+          <SoftwareDevelopContent 
+            :title="frontend.title" 
+            :subTitle="frontend.subTitle" 
+            :firstParagraph="backend.firstParagraph"
+            :secondParagraph="backend.secondParagraph"
+            :buttonInnerText="frontend.buttonInnerText"
+          />
+          <SoftwareDevelopContent 
+            :title="mobile.title" 
+            :subTitle="mobile.subTitle" 
+            :firstParagraph="backend.firstParagraph"
+            :secondParagraph="backend.secondParagraph"
+            :buttonInnerText="mobile.buttonInnerText"
+          />
+        </div>
+    </div>
+  </section>
+</template>
+
+<script>
+import SoftwareDevelopContent from './SoftwareDevelopContent';
+
+export default {
+  name: 'SoftwareDevelopment',
+  components: {
+    SoftwareDevelopContent
+  },
+  data() {
+    return {
+      backend: {
+        title: "Backend",
+        subTitle: "Your MVP doesn't work as expected after launch?",
+        firstParagraph: "Let our positively mad team rescue you and create sensible server logic for your project.",
+        secondParagraph: "We'll cure your growth pains like good doctors – just tell us about them and focus on your business.",
+        thidrParagraph: "At Mad Devs we know everything about:",
+        buttonInnerText: "Get server help"
+      },
+      frontend: {
+        title: "Frontend",
+        subTitle: "Your users get lost in lousy interfaces?",
+        firstParagraph: "Our wizards will take your UX magic to the next level where everything is intuitive and user-friendly. Mad Devs strive to get involved with well-polished projects that will live a long life.",
+        secondParagraph: "We work with the best present-day frontend stack:",
+        buttonInnerText: "Get UX help"
+      },
+      mobile: {
+        title: "Mobile",
+        subTitle: "Seeing one, two, five guys working on a minor thing? Ha!",
+        firstParagraph: "We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you'll be ecstatic to use yourself.",
+        secondParagraph: "We do both iOS and Android development using the following languages and frameworks:",
+        buttonInnerText: "Get mobile help"
+      }
+    };
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+  .software-development {
+    height: 100%;
+    width: 100%;
+    padding-top: 204px;
+    background-color: #000;
+    &__flex-wrapper {
+        display: flex;
+    }
+
+    &__main-title {
+        padding-bottom: 65px;
+        font-family: 'Hoves-Bold';
+        font-size: 120px;
+        color: #ec1c24;
+        span {
+            color: #000;
+            text-shadow: -1px 0 #ec1c24, 0 1px #ec1c24, 1px 0 #ec1c24, 0 -1px #ec1c24;
+        }
+    }   
+  }
+
+  @media only screen and (max-width: 870px) {
+    .software-development {
+      &__main-title {
+        font-size: 95px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .software-development {
+      &__main-title {
+        font-size: 80px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 520px) {
+    .software-development {
+      &__main-title {
+        font-size: 53px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .software-development {
+      &__main-title {
+        font-size: 49px;
+      }
+    }
+  }
+</style>
