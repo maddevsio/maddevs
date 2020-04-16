@@ -71,29 +71,43 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1390px) {
+   @media only screen and (max-width: 1024px) {
     .it-outsourcing {
-      &__main-title {
-        font-size: 115px;
+      &__flex-wrapper {
+        flex-direction: column;
       }
     }
   }
 
-  @media only screen and (max-width: 1220px) {
+  @media only screen and (max-width: 870px) {
+    .it-outsourcing {
+      &__main-title {
+        font-size: 95px;
+      }
+    }
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 640px) {
+    .it-outsourcing {
+      &__main-title {
+        font-size: 80px;
+      }
+    }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 520px) {
+    .it-outsourcing {
+      &__main-title {
+        font-size: 53px;
+      }
+    }
   }
 
-  @media only screen and (max-width: 610px) {
-  }
-
-  @media only screen and (max-width: 440px) {
-  }
-
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 320px) {
+    .it-outsourcing {
+      &__main-title {
+        font-size: 49px;
+      }
+    }
   }
 </style>
