@@ -22,6 +22,7 @@
 import buttonTrigger from '@/components/ui/button-trigger';
 
 export default {
+  name: 'OutsourcingContent',
   props: {
     title: {
       type: String,
@@ -40,10 +41,9 @@ export default {
       default: 'Button Inner Text'
     }
   },
-  name: 'OutsourcingContent',
   components: {
     buttonTrigger
-  },
+  }
 };
 </script>
 

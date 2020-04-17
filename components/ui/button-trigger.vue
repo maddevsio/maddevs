@@ -6,13 +6,13 @@
 
 <script>
 export default {
+  name: 'buttonTrigger',
   props: {
     buttonInnerText: {
       type: String,
       default: 'Button Inner Text'
     }
-  },
-  name: 'buttonTrigger',
+  }
 };
 </script>
 
