@@ -16,7 +16,6 @@
             :subTitle="individuals.subTitle" 
             :paragraph="individuals.paragraph"
             :buttonInnerText="individuals.buttonInnerText"
-            :className="individuals.className"
             class="individuals"
           />
         </div>
