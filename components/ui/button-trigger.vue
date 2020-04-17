@@ -1,5 +1,5 @@
 <template>
-  <button class="show-button">
+  <button class="show-popup_button">
     {{ buttonInnerText }}
   </button>
 </template>
@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .show-button {
+  .show-popup_button {
     width: 450px;
     height: 65px;
     border: 1px solid #96969C;
