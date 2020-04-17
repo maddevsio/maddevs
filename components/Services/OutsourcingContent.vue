@@ -1,5 +1,5 @@
 <template>
-  <div class="it-outsourcing__outsourcing-content" :class="className">
+  <div class="it-outsourcing__outsourcing-content">
     <div class="it-outsourcing__content_wrapper">
       <h1 class="it-outsourcing__title" v-if="title === 'Teams'">
         <span>Tea</span>
@@ -19,10 +19,27 @@
 </template>
 
 <script>
-import buttonTrigger from '../ui/button-trigger';
+import buttonTrigger from '@/components/ui/button-trigger';
 
 export default {
-  props: ['title', 'subTitle', 'paragraph', 'buttonInnerText', 'className'],
+  props: {
+    title: {
+      type: String,
+      default: 'Title'
+    },
+    subTitle: {
+      type: String,
+      default: 'Sub Title'
+    },
+    paragraph: {
+      type: String,
+      default: 'Paragraph'
+    },
+    buttonInnerText: {
+      type: String,
+      default: 'Button Inner Text'
+    }
+  },
   name: 'OutsourcingContent',
   components: {
     buttonTrigger

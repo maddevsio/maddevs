@@ -6,7 +6,12 @@
 
 <script>
 export default {
-  props: ['buttonInnerText'],
+  props: {
+    buttonInnerText: {
+      type: String,
+      default: 'Button Inner Text'
+    }
+  },
   name: 'buttonTrigger',
 };
 </script>
