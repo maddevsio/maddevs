@@ -16,15 +16,15 @@
           <SoftwareDevelopContent 
             :title="frontend.title" 
             :subTitle="frontend.subTitle" 
-            :firstParagraph="backend.firstParagraph"
-            :secondParagraph="backend.secondParagraph"
+            :firstParagraph="frontend.firstParagraph"
+            :secondParagraph="frontend.secondParagraph"
             :buttonInnerText="frontend.buttonInnerText"
           />
           <SoftwareDevelopContent 
             :title="mobile.title" 
             :subTitle="mobile.subTitle" 
-            :firstParagraph="backend.firstParagraph"
-            :secondParagraph="backend.secondParagraph"
+            :firstParagraph="mobile.firstParagraph"
+            :secondParagraph="mobile.secondParagraph"
             :buttonInnerText="mobile.buttonInnerText"
           />
         </div>
@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import SoftwareDevelopContent from './SoftwareDevelopContent';
+import SoftwareDevelopContent from '@/components/Services/SoftwareDevelopContent';
 
 export default {
   name: 'SoftwareDevelopment',
@@ -76,19 +76,19 @@ export default {
     padding-top: 204px;
     background-color: #000;
     &__flex-wrapper {
-        display: flex;
+      display: flex;
     }
 
     &__main-title {
-        padding-bottom: 65px;
-        font-family: 'Hoves-Bold';
-        font-size: 120px;
-        color: #ec1c24;
-        span {
-            color: #000;
-            text-shadow: -1px 0 #ec1c24, 0 1px #ec1c24, 1px 0 #ec1c24, 0 -1px #ec1c24;
-        }
-    }   
+      padding-bottom: 65px;
+      font-family: 'Hoves-Bold';
+      font-size: 120px;
+      color: #ec1c24;
+      span {
+        color: #000;
+        text-shadow: -1px 0 #ec1c24, 0 1px #ec1c24, 1px 0 #ec1c24, 0 -1px #ec1c24;
+      }
+    }
   }
 
   @media only screen and (max-width: 870px) {

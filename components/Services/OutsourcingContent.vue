@@ -49,6 +49,10 @@ export default {
 
 <style lang="scss" scoped>
   .it-outsourcing {
+    button {
+      width: 450px;
+    }
+    
     &__outsourcing-content {
       display: flex;
       flex-direction: column;
@@ -61,7 +65,6 @@ export default {
 
     &__title {
       height: 100px;
-      padding-bottom: 34px;
       font-size: 90px;
       :last-child {
         margin-left: -33px;
@@ -69,7 +72,6 @@ export default {
     }
 
     &__sub-title  {
-      padding-bottom: 16px;
       font-size: 50px;
     }
 
@@ -144,7 +146,6 @@ export default {
 
       &__title {
         font-size: 70px;
-        padding-bottom: 0;
       }
 
       &__sub-title  {
