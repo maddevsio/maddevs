@@ -64,16 +64,17 @@ export default {
       color: #96969c;
     }
 
-
 		&__content-item_wrapper {
 			color: #96969c;
     }
     
     &__content-item {
+      max-width: 440px;
+      min-width: calc(1em + 4vw);
       display: flex;
       flex-direction: column;
+      padding-right: 30px;
       justify-content: space-between;
-      max-width: 440px;
     }
 
     &__title, &__sub-title {
@@ -94,6 +95,63 @@ export default {
       padding-bottom: 20px;
       font-size: 18px;
       font-family: 'Hoves-Regular';
+    }
+  }
+
+  @media only screen and (max-width: 1560px) {
+    .software-development {
+      &__title {
+        font-size: 80px;
+      }
+
+      &__sub-title  {
+        font-size: 44px;
+      }
+
+      &__teams-title-icon {
+        height: 77px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1390px) {
+    .software-development {
+      &__title {
+        font-size: 75px;
+      }
+
+      &__sub-title  {
+        font-size: 40px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1270px) {
+    .software-development {
+      &__title {
+        font-size: 70px;
+      }
+
+      &__sub-title  {
+        font-size: 35px;
+      }
+
+      &__teams-title-icon {
+        height: 67px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1180px) {
+    .software-development {
+      &__title {
+        font-size: 65px;
+      }
+
+      &__sub-title  {
+        width: 465px;
+        font-size: 30px;
+      }
     }
   }
 </style>
