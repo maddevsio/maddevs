@@ -19,6 +19,7 @@
             :firstParagraph="frontend.firstParagraph"
             :secondParagraph="frontend.secondParagraph"
             :buttonInnerText="frontend.buttonInnerText"
+            class="frontend-item"
           />
           <SoftwareDevelopContent 
             :title="mobile.title" 
@@ -78,16 +79,24 @@ export default {
     &__flex-wrapper {
       display: flex;
       justify-content: space-between;
+      margin-top: -40px;
     }
 
     &__main-title {
-      padding-bottom: 65px;
       font-family: 'Hoves-Bold';
       font-size: 130px;
       color: #ec1c24;
       span {
         color: #000;
         text-shadow: -1px 0 #ec1c24, 0 1px #ec1c24, 1px 0 #ec1c24, 0 -1px #ec1c24;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .software-development {
+      &__flex-wrapper {
+        flex-wrap: wrap;
       }
     }
   }

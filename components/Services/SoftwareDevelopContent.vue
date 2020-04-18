@@ -73,8 +73,12 @@ export default {
       min-width: calc(1em + 4vw);
       display: flex;
       flex-direction: column;
-      padding-right: 30px;
       justify-content: space-between;
+      padding-top: 120px;
+      padding-right: 30px;
+      &:last-child {
+        padding-right: 0;
+      }
     }
 
     &__title, &__sub-title {
@@ -107,9 +111,11 @@ export default {
       &__sub-title  {
         font-size: 44px;
       }
+    }
 
-      &__teams-title-icon {
-        height: 77px;
+    .frontend-item {
+      .software-development__sub-title {
+        max-width: 390px;
       }
     }
   }
@@ -124,6 +130,12 @@ export default {
         font-size: 40px;
       }
     }
+
+    .frontend-item {
+      .software-development__sub-title {
+        max-width: 370px;
+      }
+    }
   }
 
   @media only screen and (max-width: 1270px) {
@@ -135,10 +147,6 @@ export default {
       &__sub-title  {
         font-size: 35px;
       }
-
-      &__teams-title-icon {
-        height: 67px;
-      }
     }
   }
 
@@ -149,8 +157,71 @@ export default {
       }
 
       &__sub-title  {
-        width: 465px;
+        width: 270px;
         font-size: 30px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .software-development {
+      &__content-item {
+        max-width: initial;
+        padding-right: 0;
+      }
+
+      &__title {
+        max-width: initial;
+        font-size: 80px;
+      }
+
+      &__sub-title  {
+        width: initial;
+        font-size: 50px;
+      }
+
+      &__paragraph {
+        max-width: initial;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .software-development {
+      &__title {
+        font-size: 65px;
+      }
+
+      &__sub-title  {
+        font-size: 40px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .software-development {
+      &__title {
+        font-size: 60px;
+      }
+
+      &__sub-title  {
+        font-size: 35px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 520px) {
+    .software-development {
+      &__title {
+        font-size: 41px;
+      }
+
+      &__sub-title  {
+        font-size: 27px;
+      }
+
+      &__paragraph {
+        font-size: 17px;
       }
     }
   }

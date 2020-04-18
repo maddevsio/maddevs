@@ -184,3 +184,39 @@
     }
   }
 }
+
+// ----------- Services page ----------- //
+.icons-list {
+  display: flex;
+  padding-top: 18px;
+  padding-bottom: 46px;
+}
+
+.icon-flex_item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  padding-right: 40px;
+  span {
+    padding-left: 7px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .icon-flex_item {
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .icons-list {
+    max-width: 300px;
+    flex-wrap: wrap;
+  }
+
+  .icon-flex_group {
+    &:nth-child(3) {
+      display: flex;
+    }
+  }
+}
