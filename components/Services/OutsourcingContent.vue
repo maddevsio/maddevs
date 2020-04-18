@@ -244,7 +244,7 @@ export default {
       &__title {
         font-size: 41px;
         :last-child {
-          margin-left: -21px;
+          margin-left: -18px;
         }
       }
 

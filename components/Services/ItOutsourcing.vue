@@ -102,10 +102,10 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 360px) {
     .it-outsourcing {
       &__main-title {
-        font-size: 49px;
+        font-size: 46px;
       }
     }
   }

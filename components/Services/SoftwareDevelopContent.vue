@@ -1,7 +1,16 @@
 <template>
   <div class="software-development__content-item">
     <div class="software-development__content-item_wrapper">
-      <h1 class="software-development__title">{{ title }}</h1>
+      <h1 class="software-development__title" v-if="title === 'Mobile'">
+        <span>Mobi</span>
+        <img 
+          class="software-development__mobile-title-icon" 
+          src="../../assets/img/Services/svg/phone-title-symbol.svg" 
+          alt="phone-title-symbol"
+        />
+        <span>e</span>
+      </h1>
+      <h1 class="software-development__title" v-else>{{ title }}</h1>
       <h2 class="software-development__sub-title">{{ subTitle }}</h2>
       <p class="software-development__paragraph">{{ firstParagraph }}</p>
       <p class="software-development__paragraph">{{ secondParagraph }}</p>
@@ -87,6 +96,9 @@ export default {
 
     &__title {
       font-size: 90px;
+      :last-child {
+        margin-left: -33px;
+      }
     }
 
     &__sub-title {
@@ -100,6 +112,12 @@ export default {
       font-size: 18px;
       font-family: 'Hoves-Regular';
     }
+
+    &__mobile-title-icon {
+      margin-left: -24px;
+      margin-bottom: -10px;
+      padding: 0 5px;
+    }
   }
 
   @media only screen and (max-width: 1560px) {
@@ -110,6 +128,10 @@ export default {
 
       &__sub-title  {
         font-size: 44px;
+      }
+
+      &__mobile-title-icon {
+        height: 77px;
       }
     }
 
@@ -142,10 +164,17 @@ export default {
     .software-development {
       &__title {
         font-size: 70px;
+        :last-child {
+          margin-left: -26px;
+        }
       }
 
       &__sub-title  {
         font-size: 35px;
+      }
+
+      &__mobile-title-icon {
+        height: 67px;
       }
     }
   }
@@ -214,6 +243,9 @@ export default {
     .software-development {
       &__title {
         font-size: 41px;
+        :last-child {
+          margin-left: -21px;
+        }
       }
 
       &__sub-title  {
@@ -222,6 +254,11 @@ export default {
 
       &__paragraph {
         font-size: 17px;
+      }
+
+      &__mobile-title-icon {
+        height: 45px;
+        padding-left: 13px;
       }
     }
   }
