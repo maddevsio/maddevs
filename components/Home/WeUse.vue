@@ -176,6 +176,7 @@ export default {
 
   .weUse {
     padding: 60px 0 120px;
+
     &_wrap {
       &-list {
         display: flex;
