@@ -38,7 +38,7 @@ main {
 }
 //----------- Base classes ------------ //
 .container {
-  max-width: 1450px;
+  max-width: 1570px;
   margin: auto;
   padding: 0 60px;
 }
@@ -63,6 +63,25 @@ main {
   transform: rotateY(180deg);
   z-index: 110;
 }
+
+// ----------- Services page ----------- //
+.icons-list {
+  display: flex;
+  padding-top: 18px;
+  padding-bottom: 46px;
+}
+
+.icon-flex_item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  padding-right: 45px;
+  span {
+    padding-left: 7px;
+  }
+}
+
+
 //----------- End Base classes ------------ //
 
 // #region Fonts

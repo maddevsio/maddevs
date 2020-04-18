@@ -59,12 +59,13 @@ export default {
     background-color: #000;
     &__flex-wrapper {
       display: flex;
+      justify-content: space-between;
     }
 
     &__main-title {
       padding-bottom: 65px;
       font-family: 'Hoves-Bold';
-      font-size: 120px;
+      font-size: 130px;
       color: #ec1c24;
     }
   }

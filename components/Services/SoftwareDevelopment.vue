@@ -10,7 +10,7 @@
             :subTitle="backend.subTitle" 
             :firstParagraph="backend.firstParagraph"
             :secondParagraph="backend.secondParagraph"
-            :thidrParagraph="backend.thidrParagraph"
+            :thirdParagraph="backend.thirdParagraph"
             :buttonInnerText="backend.buttonInnerText"
           />
           <SoftwareDevelopContent 
@@ -47,7 +47,7 @@ export default {
         subTitle: "Your MVP doesn't work as expected after launch?",
         firstParagraph: "Let our positively mad team rescue you and create sensible server logic for your project.",
         secondParagraph: "We'll cure your growth pains like good doctors – just tell us about them and focus on your business.",
-        thidrParagraph: "At Mad Devs we know everything about:",
+        thirdParagraph: "At Mad Devs we know everything about:",
         buttonInnerText: "Get server help"
       },
       frontend: {
@@ -59,7 +59,7 @@ export default {
       },
       mobile: {
         title: "Mobile",
-        subTitle: "Seeing one, two, five guys working on a minor thing? Ha!",
+        subTitle: "Your app is slow and unable to survive a demo?",
         firstParagraph: "We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you'll be ecstatic to use yourself.",
         secondParagraph: "We do both iOS and Android development using the following languages and frameworks:",
         buttonInnerText: "Get mobile help"
@@ -77,12 +77,13 @@ export default {
     background-color: #000;
     &__flex-wrapper {
       display: flex;
+      justify-content: space-between;
     }
 
     &__main-title {
       padding-bottom: 65px;
       font-family: 'Hoves-Bold';
-      font-size: 120px;
+      font-size: 130px;
       color: #ec1c24;
       span {
         color: #000;

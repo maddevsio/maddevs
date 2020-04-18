@@ -52,7 +52,7 @@ export default {
       font-family: 'Hoves-Bold';
       font-style: normal;
       font-weight: bold;
-      font-size: 150px;
+      font-size: 165px;
       letter-spacing: -3px;
     }
 

@@ -73,6 +73,7 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      max-width: 440px;
     }
 
     &__title, &__sub-title {
@@ -85,12 +86,14 @@ export default {
 
     &__sub-title {
       font-size: 50px;
+      padding-bottom: 10px;
     }
 
     &__paragraph {
+      max-width: 360px;
+      padding-bottom: 20px;
       font-size: 18px;
       font-family: 'Hoves-Regular';
-
     }
-	}
+  }
 </style>

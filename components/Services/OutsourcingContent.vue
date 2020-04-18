@@ -57,6 +57,7 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      max-width: 725px;
     }
     
     &__title, &__sub-title {
