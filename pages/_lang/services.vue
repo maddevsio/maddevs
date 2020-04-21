@@ -3,6 +3,7 @@
     <Banner />
     <ItOutsourcing />
     <SoftwareDevelopment />
+    <InfrastructureOptimisation />
   </main>
 </template>
 
@@ -10,13 +11,15 @@
 import Banner from '@/components/Services/Banner';
 import ItOutsourcing from '@/components/Services/ItOutsourcing';
 import SoftwareDevelopment from '@/components/Services/SoftwareDevelopment';
+import InfrastructureOptimisation from '@/components/Services/InfrastructureOptimisation';
 
 export default {
   name: 'main-services',
   components: {
     Banner,
     ItOutsourcing,
-    SoftwareDevelopment
+    SoftwareDevelopment,
+    InfrastructureOptimisation
   },
   data() {
     return {
