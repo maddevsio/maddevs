@@ -19,27 +19,27 @@
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "@nuxtjs/yandex-metrika": "^0.1.1",
-    "express": "^4.16.4",
-    "jquery": "^3.4.0",
-    "nuxt": "^2.10.0",
-    "serve-static": "^1.13.2",
-    "vue-analytics": "^5.16.0",
-    "vue-i18n": "^8.9.0",
-    "vue-scrollto": "^2.15.0",
-    "vue-slick": "^1.1.15",
-    "snyk": "^1.290.1"
+    "@nuxtjs/yandex-metrika": "^0.1.2",
+    "express": "^4.17.1",
+    "jquery": "^3.5.0",
+    "nuxt": "^2.12.2",
+    "serve-static": "^1.14.1",
+    "snyk": "^1.307.0",
+    "vue-analytics": "^5.22.1",
+    "vue-i18n": "^8.17.3",
+    "vue-scrollto": "^2.18.1",
+    "vue-slick": "^1.1.15"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.1.0",
     "eslint": "^4.19.1",
     "eslint-friendly-formatter": "^4.0.1",
-    "eslint-loader": "^2.1.1",
+    "eslint-loader": "^2.2.1",
     "eslint-plugin-vue": "^4.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "sass-lint": "^1.13.1",
     "sass-lint-vue": "^0.4.0",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.3.1"
   },
   "snyk": true
 }
