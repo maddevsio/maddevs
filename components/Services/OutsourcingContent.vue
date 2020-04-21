@@ -49,6 +49,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../assets/styles/vars';
+
   .it-outsourcing {
     button {
       width: 450px;
@@ -76,7 +78,7 @@ export default {
   }
 
   .teams * {
-    color: #f2f2f2;
+    color: $text-color--grey-light;
 
     .it-outsourcing__paragraph {
       width: 535px;
@@ -84,7 +86,7 @@ export default {
   }
 
   .individuals * {
-    color: #96969c;
+    color: $text-color--grey;
 
     .it-outsourcing__paragraph {
       width: 575px;

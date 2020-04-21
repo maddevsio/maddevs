@@ -67,14 +67,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+   @import '../../assets/styles/vars';
+
    .software-development {
     button {
       width: 100%;
-      color: #96969c;
+      color: $text-color--grey;
     }
 
 		&__content-item_wrapper {
-			color: #96969c;
+			color: $text-color--grey;
     }
 
     &__content-item {

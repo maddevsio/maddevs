@@ -52,13 +52,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../assets/styles/vars';
+
   .it-outsourcing {
     padding-top: 240px;
-    background-color: #000;
+    background-color: $bgcolor--black;
 
     &__main-title {
       padding-bottom: 65px;
-      color: #ec1c24;
+      color: $text-color--red;
     }
   }
 

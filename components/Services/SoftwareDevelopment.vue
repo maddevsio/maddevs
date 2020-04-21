@@ -71,20 +71,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../assets/styles/vars';
+
   .software-development {
     padding-top: 204px;
-    background-color: #000;
+    background-color: $bgcolor--black;
 
     &__flex-wrapper {
       margin-top: -40px;
     }
 
     &__main-title {
-      color: #ec1c24;
+      color: $text-color--red;
 
       span {
-        color: #000;
-        text-shadow: -1px 0 #ec1c24, 0 1px #ec1c24, 1px 0 #ec1c24, 0 -1px #ec1c24;
+        color: $text-color--black;
+        text-shadow: $text-shadow--red;
       }
     }
   }

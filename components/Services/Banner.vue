@@ -31,9 +31,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../assets/styles/vars';
+
   .services-banner {
     position: relative;
-    background-color: #000;
+    background-color: $bgcolor--black;
 
     &__container {
       width: 100%;
@@ -56,18 +58,18 @@ export default {
     }
 
     &__first-child {
-      color: #000;
-      text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+      color: $text-color--black;
+      text-shadow: $text-shadow--white;
     }
 
     &__last-child {
-      color: #fff;
+      color: $text-color--white;
     }
 
     &__navigation-item {
       padding-right: 71px;
       padding-left: 20px;
-      color: #f2f2f2;
+      color: $text-color--grey-light;
       font-size: 22px;
       font-family: 'Hoves-Regular';
       background: url('../../assets/img/Services/svg/link-arrow.svg') no-repeat;
