@@ -1,20 +1,20 @@
 <template>
   <div class="software-development__content-item">
     <div class="software-development__content-item_wrapper">
-      <h1 class="software-development__title" v-if="title === 'Mobile'">
+      <h1 class="software-development__title title" v-if="title === 'Mobile'">
         <span>Mobi</span>
         <img 
-          class="software-development__mobile-title-icon" 
+          class="software-development__mobile-title-icon title-icon" 
           src="../../assets/img/Services/svg/phone-title-symbol.svg" 
           alt="phone-title-symbol"
         />
-        <span>e</span>
+        <span class="software-development__last-character last-character">e</span>
       </h1>
-      <h1 class="software-development__title" v-else>{{ title }}</h1>
-      <h2 class="software-development__sub-title">{{ subTitle }}</h2>
-      <p class="software-development__paragraph">{{ firstParagraph }}</p>
-      <p class="software-development__paragraph">{{ secondParagraph }}</p>
-      <p class="software-development__paragraph" v-if="title === 'Backend'">{{ thirdParagraph }}</p>
+      <h1 class="software-development__title title" v-else>{{ title }}</h1>
+      <h2 class="software-development__sub-title sub-title">{{ subTitle }}</h2>
+      <p class="software-development__paragraph paragraph">{{ firstParagraph }}</p>
+      <p class="software-development__paragraph paragraph">{{ secondParagraph }}</p>
+      <p class="software-development__paragraph paragraph" v-if="title === 'Backend'">{{ thirdParagraph }}</p>
       <SoftwareBackendIcons v-if="title === 'Backend'"/>
       <SoftwareFrontendIcons v-if="title === 'Frontend'"/>
       <SoftwareMobileIcons v-if="title === 'Mobile'"/>
@@ -85,57 +85,30 @@ export default {
       justify-content: space-between;
       padding-top: 120px;
       padding-right: 30px;
+
       &:last-child {
         padding-right: 0;
       }
     }
 
-    &__title, &__sub-title {
-      font-family: 'Hoves-Bold';
-    }
-
-    &__title {
-      font-size: 90px;
-      :last-child {
-        margin-left: -33px;
-      }
-    }
-
     &__sub-title {
-      font-size: 50px;
       padding-bottom: 10px;
     }
 
     &__paragraph {
       max-width: 360px;
       padding-bottom: 20px;
-      font-size: 18px;
-      font-family: 'Hoves-Regular';
     }
 
     &__mobile-title-icon {
       margin-left: -24px;
       margin-bottom: -10px;
-      padding: 0 5px;
     }
   }
 
   @media only screen and (max-width: 1560px) {
-    .software-development {
-      &__title {
-        font-size: 80px;
-      }
-
-      &__sub-title  {
-        font-size: 44px;
-      }
-
-      &__mobile-title-icon {
-        height: 77px;
-      }
-    }
-
     .frontend-item {
+
       .software-development__sub-title {
         max-width: 390px;
       }
@@ -143,17 +116,8 @@ export default {
   }
 
   @media only screen and (max-width: 1390px) {
-    .software-development {
-      &__title {
-        font-size: 75px;
-      }
-
-      &__sub-title  {
-        font-size: 40px;
-      }
-    }
-
     .frontend-item {
+
       .software-development__sub-title {
         max-width: 370px;
       }
@@ -162,32 +126,17 @@ export default {
 
   @media only screen and (max-width: 1270px) {
     .software-development {
-      &__title {
-        font-size: 70px;
-        :last-child {
-          margin-left: -26px;
-        }
-      }
-
-      &__sub-title  {
-        font-size: 35px;
-      }
-
-      &__mobile-title-icon {
-        height: 67px;
+      &__last-character {
+        margin-left: -26px;
       }
     }
   }
 
   @media only screen and (max-width: 1180px) {
     .software-development {
-      &__title {
-        font-size: 65px;
-      }
 
       &__sub-title  {
         width: 270px;
-        font-size: 30px;
       }
     }
   }
@@ -199,66 +148,28 @@ export default {
         padding-right: 0;
       }
 
-      &__title {
+      &__title,
+      &__paragraph {
         max-width: initial;
-        font-size: 80px;
       }
 
       &__sub-title  {
         width: initial;
-        font-size: 50px;
       }
+    }
 
-      &__paragraph {
+    .frontend-item {
+
+      .software-development__sub-title {
         max-width: initial;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .software-development {
-      &__title {
-        font-size: 65px;
-      }
-
-      &__sub-title  {
-        font-size: 40px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 640px) {
-    .software-development {
-      &__title {
-        font-size: 60px;
-      }
-
-      &__sub-title  {
-        font-size: 35px;
       }
     }
   }
 
   @media only screen and (max-width: 520px) {
     .software-development {
-      &__title {
-        font-size: 41px;
-        :last-child {
-          margin-left: -21px;
-        }
-      }
-
-      &__sub-title  {
-        font-size: 27px;
-      }
-
-      &__paragraph {
-        font-size: 17px;
-      }
-
-      &__mobile-title-icon {
-        height: 45px;
-        padding-left: 13px;
+      &__last-character {
+        margin-left: -21px;
       }
     }
   }

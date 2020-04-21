@@ -74,13 +74,14 @@ export default {
   .software-development {
     padding-top: 204px;
     background-color: #000;
-    
+
     &__flex-wrapper {
       margin-top: -40px;
     }
 
     &__main-title {
       color: #ec1c24;
+
       span {
         color: #000;
         text-shadow: -1px 0 #ec1c24, 0 1px #ec1c24, 1px 0 #ec1c24, 0 -1px #ec1c24;
@@ -90,6 +91,7 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .software-development {
+      
       &__flex-wrapper {
         flex-wrap: wrap;
       }
