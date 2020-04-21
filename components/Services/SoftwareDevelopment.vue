@@ -1,10 +1,10 @@
 <template>
-  <section id="software-development" class="software-development">
+  <section id="software-development" class="software-development main-parent-item">
     <div class="container">
-        <h1 class="software-development__main-title">
+        <h1 class="software-development__main-title main-title">
             <span>Software</span><br>Development
         </h1>
-        <div class="software-development__flex-wrapper">
+        <div class="software-development__flex-wrapper flex-wrapper">
          <SoftwareDevelopContent 
             :title="backend.title" 
             :subTitle="backend.subTitle" 
@@ -72,19 +72,14 @@ export default {
 
 <style lang="scss" scoped>
   .software-development {
-    height: 100%;
-    width: 100%;
     padding-top: 204px;
     background-color: #000;
+    
     &__flex-wrapper {
-      display: flex;
-      justify-content: space-between;
       margin-top: -40px;
     }
 
     &__main-title {
-      font-family: 'Hoves-Bold';
-      font-size: 130px;
       color: #ec1c24;
       span {
         color: #000;
@@ -97,38 +92,6 @@ export default {
     .software-development {
       &__flex-wrapper {
         flex-wrap: wrap;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 870px) {
-    .software-development {
-      &__main-title {
-        font-size: 95px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 640px) {
-    .software-development {
-      &__main-title {
-        font-size: 80px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 520px) {
-    .software-development {
-      &__main-title {
-        font-size: 53px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 360px) {
-    .software-development {
-      &__main-title {
-        font-size: 46px;
       }
     }
   }

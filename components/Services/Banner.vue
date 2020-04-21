@@ -1,5 +1,5 @@
 <template>
-  <section id="services-banner" class="services-banner">
+  <section id="services-banner" class="services-banner main-parent-item">
     <div class="container">
       <div class="services-banner__container">
         <div class="services-banner__text-content_wrapper">
@@ -32,8 +32,6 @@ export default {
 
 <style lang="scss" scoped>
   .services-banner {
-    height: 100%;
-    width: 100%;
     position: relative;
     background-color: #000;
     &__container {

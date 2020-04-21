@@ -1,9 +1,9 @@
 <template>
-  <section id="it-outsourcing" class="it-outsourcing">
+  <section id="it-outsourcing" class="it-outsourcing main-parent-item">
     <div class="container">
       <div class="it-outsourcing__content-wrapper">
-        <h1 class="it-outsourcing__main-title">IT Outsourcing</h1>
-        <div class="it-outsourcing__flex-wrapper" id="it-outsourcing-content_items">
+        <h1 class="it-outsourcing__main-title main-title">IT Outsourcing</h1>
+        <div class="it-outsourcing__flex-wrapper flex-wrapper" id="it-outsourcing-content_items">
           <OutsourcingContent 
             :title="teams.title" 
             :subTitle="teams.subTitle" 
@@ -53,59 +53,19 @@ export default {
 
 <style lang="scss" scoped>
   .it-outsourcing {
-    height: 100%;
-    width: 100%;
     padding-top: 240px;
     background-color: #000;
-    &__flex-wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
-
+    
     &__main-title {
       padding-bottom: 65px;
-      font-family: 'Hoves-Bold';
-      font-size: 130px;
       color: #ec1c24;
     }
   }
 
-   @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1024px) {
     .it-outsourcing {
       &__flex-wrapper {
         flex-direction: column;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 870px) {
-    .it-outsourcing {
-      &__main-title {
-        font-size: 95px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 640px) {
-    .it-outsourcing {
-      &__main-title {
-        font-size: 80px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 520px) {
-    .it-outsourcing {
-      &__main-title {
-        font-size: 53px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 360px) {
-    .it-outsourcing {
-      &__main-title {
-        font-size: 46px;
       }
     }
   }
