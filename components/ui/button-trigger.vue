@@ -19,7 +19,7 @@ export default {
 <style lang="scss" scoped>
   .show-popup_button {
     height: 65px;
-    border: 1px solid #96969C;
+    border: 1px solid #96969c;
     border-radius: 2px;
     box-shadow: none;
     background-color: transparent;

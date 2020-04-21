@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  name: 'Banner',
+  name: 'Banner'
 };
 </script>
 
@@ -34,6 +34,7 @@ export default {
   .services-banner {
     position: relative;
     background-color: #000;
+
     &__container {
       width: 100%;
       height: 100%;
@@ -77,6 +78,7 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+
       img {
         margin-bottom: -180px;
         margin-right: 20px;
@@ -90,7 +92,7 @@ export default {
         img {
           margin-bottom: -200px;
           margin-right: 55px;
-        }        
+        }
       }
 
       &__text-item {
@@ -99,9 +101,6 @@ export default {
 
       &__navigation-item {
         font-size: 17px;
-      }
-
-      &__navigation-item {
         background-position-y: 3px;
       }
     }
@@ -114,7 +113,7 @@ export default {
           width: 320px;
           margin-bottom: -179px;
           margin-right: 64px;
-        }        
+        }
       }
 
       &__text-item {
@@ -126,14 +125,14 @@ export default {
   @media only screen and (max-width: 1366px) {
     .services-banner {
       &__navigation-item {
-        padding-right: 50px; 
+        padding-right: 50px;
         font-size: 17px;
       }
 
       &__icon-flex-item {
         img {
           margin-right: 50px;
-        }        
+        }
       }
 
       &__text-item {
@@ -149,7 +148,7 @@ export default {
       }
 
       &__navigation-item {
-        padding-right: 30px; 
+        padding-right: 30px;
         font-size: 16px;
       }
     }
@@ -158,7 +157,7 @@ export default {
   @media only screen and (max-width: 1220px) {
     .services-banner {
       &__navigation-item {
-        padding-right: 20px; 
+        padding-right: 20px;
         font-size: 15px;
       }
     }
@@ -167,13 +166,14 @@ export default {
   @media only screen and (max-width: 1024px) {
     .services-banner {
       &__icon-flex-item {
-        min-width: 375px;
-        img {
-          width: 235px;
-          position: absolute;
-          top: 55%;
-          left: 41%;
-        }        
+       min-width: 375px;
+
+       img {
+         width: 235px;
+         position: absolute;
+         top: 55%;
+         left: 41%;
+        }
       }
 
       &__navigation-list {
@@ -186,7 +186,7 @@ export default {
         padding-bottom: 27px;
         font-size: 31px;
         background-size: 12px;
-        background-position-y: 9px
+        background-position-y: 9px;
       }
 
       &__text-item {
@@ -200,7 +200,7 @@ export default {
       &__icon-flex-item {
         img {
           left: 55%;
-        }        
+        }
       }
     }
   }
@@ -212,13 +212,13 @@ export default {
           width: 185px;
           left: 54%;
           top: 54%;
-        }        
+        }
       }
 
       &__navigation-item {
         font-size: 23px;
         background-size: 11px;
-        background-position-y: 6px
+        background-position-y: 6px;
       }
 
       &__text-item {
@@ -233,13 +233,13 @@ export default {
         img {
           width: 150px;
           top: 54%;
-        }        
+        }
       }
 
       &__navigation-item {
         font-size: 18px;
         background-size: 9px;
-        background-position-y: 4px
+        background-position-y: 4px;
       }
 
       &__text-item {
@@ -254,13 +254,13 @@ export default {
         img {
           width: 130px;
           left: 53%;
-        }        
+        }
       }
 
       &__navigation-item {
         font-size: 15px;
         background-size: 8px;
-        background-position-y: 3px
+        background-position-y: 3px;
       }
 
       &__text-item {

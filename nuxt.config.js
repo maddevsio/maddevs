@@ -57,7 +57,7 @@ module.exports = {
           require('webpack-node-externals')({
             whitelist: [/^vue-slick/]
           })
-        ]
+        ];
       }
     },
     extend (config, { isDev, isClient }) {
@@ -67,7 +67,7 @@ module.exports = {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
-        })
+        });
       }
     }
   },
@@ -82,7 +82,7 @@ module.exports = {
         trackLinks: true,
         accurateTrackBounce: true
       }
-    ],
+    ]
   ]
-}
+};
 
