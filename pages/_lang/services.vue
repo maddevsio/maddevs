@@ -19,7 +19,7 @@ export default {
     return {
       title: 'Mad Devs Services',
       description: 'Example',
-      ogUrl: 'https://maddevs.io/en/services',
+      ogUrl: 'https://maddevs.io/en/services'
     };
   },
   head() {
@@ -33,7 +33,7 @@ export default {
         { property: 'og:description', content: this.description },
         { property: 'og:image', content: 'https://maddevs.io/static/Open-Graph.png' }
       ]
-    }
+    };
   }
 };
 </script>

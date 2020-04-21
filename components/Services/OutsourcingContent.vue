@@ -45,6 +45,7 @@ export default {
     buttonTrigger
   }
 };
+
 </script>
 
 <style lang="scss" scoped>
@@ -54,8 +55,9 @@ export default {
       flex-direction: column;
       justify-content: space-between;
     }
-    
-    &__title, &__sub-title {
+
+    &__title,
+    &__sub-title {
       font-family: 'Hoves-Bold';
     }
 
@@ -63,6 +65,7 @@ export default {
       height: 100px;
       padding-bottom: 34px;
       font-size: 90px;
+
       :last-child {
         margin-left: -33px;
       }
@@ -88,13 +91,15 @@ export default {
 
   .teams * {
     color: #f2f2f2;
+
     .it-outsourcing__paragraph {
       width: 535px;
     }
   }
 
   .individuals * {
-    color: #96969C;
+    color: #96969c;
+
     .it-outsourcing__paragraph {
       width: 575px;
     }
@@ -156,7 +161,8 @@ export default {
       }
     }
 
-    .teams, .individuals * {
+    .teams,
+    .individuals * {
       .it-outsourcing__paragraph {
         width: 435px;
       }
@@ -179,7 +185,8 @@ export default {
       }
     }
 
-    .teams, .individuals * {
+    .teams,
+    .individuals * {
       .it-outsourcing__paragraph {
         width: 300px;
       }
@@ -202,7 +209,8 @@ export default {
       }
     }
 
-    .teams, .individuals * {
+    .teams,
+    .individuals * {
       .it-outsourcing__paragraph {
         width: initial;
       }
@@ -241,6 +249,7 @@ export default {
     .it-outsourcing {
       &__title {
         font-size: 41px;
+
         :last-child {
           margin-left: -21px;
         }
