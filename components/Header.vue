@@ -7,44 +7,17 @@
         </router-link>
         <div class="header-wrap_right-block">
           <nav class="header_links">
-            <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank" rel="noreferrer">{{ $t('header-link_blog') }}</a>
-            <router-link :to="`/${this.lang}/jobs`">{{ $t('header-link_careers') }}</router-link>
             <router-link :to="`/${this.lang}/services`">Services</router-link>
           </nav>
-          <div class="header_soc-icons">
-            <a href="https://ru.linkedin.com/company/mad-devs" target="_blank" rel="noreferrer">
-              <linkedin :isDark="headerDark" />
-            </a>
-            <a href="https://www.facebook.com/maddevsio" target="_blank" rel="noreferrer">
-              <facebook :isDark="headerDark" />
-            </a>
-          </div>
-          <button v-if="lang == 'en'" class="switch-lang" v-on:click.prevent="switchLanguage('ru')">Русский</button>
-          <button v-else class="switch-lang" v-on:click.prevent="switchLanguage('en')">English</button>
         </div>
-        <button @click="toggleMobileMenu()" class="header-mobile-menu_open">
-          <Hamburger :isDark="headerDark" />
-        </button>
       </div>
     </div>
-    <MobMenu v-if="mobileMenuActive" @CloseMobileMenu="toggleMobileMenu"/>
   </header>
 </template>
 
 <script>
-import MobMenu from '@/components/ui/mobile-menu';
-import linkedin from '@/components/svg/linkedin-icon';
-import facebook from '@/components/svg/facebook-icon';
-import Hamburger from '@/components/svg/hamburger';
-
 export default {
   name: 'main-header',
-  components: {
-    MobMenu,
-    linkedin,
-    facebook,
-    Hamburger
-  },
   data() {
     return {
       lang: 'en',
@@ -134,60 +107,36 @@ export default {
     position: absolute;
     z-index: 2;
     padding-top: 30px;
+
     &_links {
       position: relative;
+
       a {
-        color: $text-color--white;
+        color: #ff0000;
         text-decoration: none;
         margin-right: 15px;
         font-size: 16px;
         font-family: 'MADEEvolveSans-regular',
         sans-serif;
       }
-      .nuxt-link-active {
-        color: $accent-color--red !important;
-      }
-      .router-link-active {
-        color: $accent-color--red !important;
-      }
+
     }
+
     &-wrap {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+
       &_right-block {
         display: flex;
         align-items: center;
         padding: 24px 0;
-        .header_soc-icons {
-          height: 22px;
-          a {
-            display: inline-block;
-            margin-right: 10px;
-
-            &:last-child {
-              margin-right: 6px;
-            }
-
-            img {
-              display: block;
-            }
-          }
-        }
       }
     }
+
     &-logo {
       width: 40px;
       height: 70px;
-    }
-    .switch-lang {
-      background-color: transparent;
-      color: $text-color--white;
-      font-size: 14px;
-      font-family: 'MADEEvolveSans-regular', sans-serif;
-      border: none;
-      cursor: pointer;
-      padding-right: 0;
     }
   }
 
@@ -202,64 +151,6 @@ export default {
           }
         }
       }
-    }
-
-    .header-mobile-menu_open {
-      svg {
-        g {
-          fill: $bgcolor--black !important;
-        }
-      }
-    }
-
-    .switch-lang {
-      color: $text-color--black !important;
-    }
-  }
-
-  @media only screen and (min-width: 480px) {
-    .header-mobile-menu_open {
-      display: none;
-    }
-  }
-  @media only screen and (max-width: 480px) {
-    .header_links {
-      margin-right: 14px;
-      white-space: nowrap;
-      a {
-        font-size: 14px;
-        margin-right: 14px;
-      }
-    }
-    .header-wrap_right-block {
-      margin-left: auto;
-      padding: 25px;
-      .header_links {
-        display: none;
-      }
-      .header_soc-icons {
-        display: none;
-      }
-      .switch-lang {
-        font-size: 14px;
-      }
-    }
-    .header-wrap_right-block .header_soc-icons {
-      height: 18px;
-      white-space: nowrap;
-      a {
-        margin-right: 12px;
-        img {
-          width: 18px;
-          height: 18px;
-        }
-      }
-    }
-    .header-mobile-menu_open {
-      display: block;
-      background-color: transparent;
-      border: none;
-      padding: 24px 0;
     }
   }
 </style>

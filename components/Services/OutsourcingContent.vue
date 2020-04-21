@@ -45,6 +45,7 @@ export default {
     buttonTrigger
   }
 };
+
 </script>
 
 <style lang="scss" scoped>
@@ -55,7 +56,8 @@ export default {
       justify-content: space-between;
     }
     
-    &__title, &__sub-title {
+    &__title,
+    &__sub-title {
       font-family: 'Hoves-Bold';
     }
 
@@ -156,7 +158,8 @@ export default {
       }
     }
 
-    .teams, .individuals * {
+    .teams,
+    .individuals * {
       .it-outsourcing__paragraph {
         width: 435px;
       }
@@ -179,7 +182,8 @@ export default {
       }
     }
 
-    .teams, .individuals * {
+    .teams,
+    .individuals * {
       .it-outsourcing__paragraph {
         width: 300px;
       }
@@ -202,7 +206,8 @@ export default {
       }
     }
 
-    .teams, .individuals * {
+    .teams,
+    .individuals * {
       .it-outsourcing__paragraph {
         width: initial;
       }
