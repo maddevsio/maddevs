@@ -32,10 +32,7 @@ module.exports = {
     'max-len': 'off',
     'no-plusplus': 'off',
     'prefer-destructuring': 'off',
-    'import/extensions': ['error', 'never', {
-      'packages': 'never',
-      'json': 'always'
-    }],
+    'import/extensions': 'off',
     'no-floating-decimal': 'off',
     'no-underscore-dangle': 'off',
     'import/no-extraneous-dependencies': 'off',

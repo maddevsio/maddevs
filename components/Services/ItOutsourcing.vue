@@ -57,6 +57,7 @@ export default {
     width: 100%;
     padding-top: 240px;
     background-color: #000;
+
     &__flex-wrapper {
       display: flex;
     }

@@ -20,7 +20,7 @@ export default {
   .show-popup_button {
     width: 450px;
     height: 65px;
-    border: 1px solid #96969C;
+    border: 1px solid #96969c;
     border-radius: 2px;
     box-shadow: none;
     background-color: transparent;

@@ -112,7 +112,7 @@ export default {
       position: relative;
 
       a {
-        color: #ff0000;
+        color: $accent-color--red;
         text-decoration: none;
         margin-right: 15px;
         font-size: 16px;
