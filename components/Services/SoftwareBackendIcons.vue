@@ -35,6 +35,6 @@
 
 <script>
 export default {
-	name: 'SoftwareBackendIcons'
+  name: 'SoftwareBackendIcons'
 };
 </script>

@@ -30,7 +30,7 @@ import SoftwareFrontendIcons from '@/components/Services/SoftwareFrontendIcons';
 import SoftwareMobileIcons from '@/components/Services/SoftwareMobileIcons';
 
 export default {
-	name: 'SoftwareDevelopment',
+  name: 'SoftwareDevelopment',
   props: {
     title: {
       type: String,
@@ -57,17 +57,17 @@ export default {
       default: 'Button Inner Text'
     }
   },
-	components: {
+  components: {
     buttonTrigger,
     SoftwareBackendIcons,
     SoftwareFrontendIcons,
     SoftwareMobileIcons
-	}
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-  .software-development {
+   .software-development {
     button {
       width: 100%;
       color: #96969c;
@@ -76,7 +76,7 @@ export default {
 		&__content-item_wrapper {
 			color: #96969c;
     }
-    
+
     &__content-item {
       max-width: 440px;
       min-width: calc(1em + 4vw);
@@ -108,7 +108,6 @@ export default {
 
   @media only screen and (max-width: 1560px) {
     .frontend-item {
-
       .software-development__sub-title {
         max-width: 390px;
       }
@@ -117,7 +116,6 @@ export default {
 
   @media only screen and (max-width: 1390px) {
     .frontend-item {
-
       .software-development__sub-title {
         max-width: 370px;
       }
@@ -134,8 +132,7 @@ export default {
 
   @media only screen and (max-width: 1180px) {
     .software-development {
-
-      &__sub-title  {
+      &__sub-title {
         width: 270px;
       }
     }
@@ -159,7 +156,6 @@ export default {
     }
 
     .frontend-item {
-
       .software-development__sub-title {
         max-width: initial;
       }

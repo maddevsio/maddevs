@@ -25,6 +25,6 @@
 
 <script>
 export default {
-	name: 'SoftwareMobileIcons'
+  name: 'SoftwareMobileIcons'
 };
 </script>

@@ -53,7 +53,7 @@ export default {
     button {
       width: 450px;
     }
-    
+
     &__outsourcing-content {
       display: flex;
       flex-direction: column;
@@ -109,7 +109,6 @@ export default {
 
   @media only screen and (max-width: 1270px) {
     .it-outsourcing {
-
       button {
         width: 360px;
       }
@@ -126,7 +125,6 @@ export default {
 
   @media only screen and (max-width: 1180px) {
     .it-outsourcing {
-
       button {
         width: 340px;
       }
@@ -147,7 +145,6 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .it-outsourcing {
-
       button {
         width: initial;
       }
@@ -159,7 +156,6 @@ export default {
 
     .teams,
     .individuals * {
-
       .it-outsourcing__paragraph {
         width: initial;
       }
