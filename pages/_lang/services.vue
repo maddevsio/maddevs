@@ -2,18 +2,21 @@
   <main class="main">
     <Banner />
     <ItOutsourcing />
+    <SoftwareDevelopment />
   </main>
 </template>
 
 <script>
 import Banner from '@/components/Services/Banner';
 import ItOutsourcing from '@/components/Services/ItOutsourcing';
+import SoftwareDevelopment from '@/components/Services/SoftwareDevelopment';
 
 export default {
   name: 'main-services',
   components: {
     Banner,
-    ItOutsourcing
+    ItOutsourcing,
+    SoftwareDevelopment
   },
   data() {
     return {

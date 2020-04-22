@@ -17,10 +17,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../assets/styles/vars';
+
   .show-popup_button {
-    width: 450px;
     height: 65px;
-    border: 1px solid #96969c;
+    border: 1px solid $border-color--grey;
     border-radius: 2px;
     box-shadow: none;
     background-color: transparent;

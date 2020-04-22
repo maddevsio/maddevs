@@ -1,18 +1,18 @@
 <template>
   <div class="it-outsourcing__outsourcing-content">
     <div class="it-outsourcing__content_wrapper">
-      <h1 class="it-outsourcing__title" v-if="title === 'Teams'">
+      <h1 class="it-outsourcing__title title" v-if="title === 'Teams'">
         <span>Tea</span>
         <img 
-          class="it-outsourcing__teams-title-icon" 
+          class="it-outsourcing__teams-title-icon title-icon" 
           src="../../assets/img/Services/svg/teams-sub-title-symbol.svg" 
           alt="teams-sub-title-symbol"
         />
-        <span>s</span>
+        <span class="it-outsourcing__last-character last-character">s</span>
       </h1>
-      <h1 class="it-outsourcing__title" v-else>{{ title }}</h1>
-      <h2 class="it-outsourcing__sub-title">{{ subTitle }}</h2>
-      <p class="it-outsourcing__paragraph">{{ paragraph }}</p>
+      <h1 class="it-outsourcing__title title" v-else>{{ title }}</h1>
+      <h2 class="it-outsourcing__sub-title sub-title">{{ subTitle }}</h2>
+      <p class="it-outsourcing__paragraph paragraph">{{ paragraph }}</p>
     </div>
     <buttonTrigger :buttonInnerText="buttonInnerText"/>
   </div>
@@ -49,48 +49,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../assets/styles/vars';
+
   .it-outsourcing {
+    button {
+      width: 450px;
+    }
+
     &__outsourcing-content {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-    }
-
-    &__title,
-    &__sub-title {
-      font-family: 'Hoves-Bold';
+      max-width: 725px;
     }
 
     &__title {
       height: 100px;
-      padding-bottom: 34px;
-      font-size: 90px;
-
-      :last-child {
-        margin-left: -33px;
-      }
-    }
-
-    &__sub-title  {
-      padding-bottom: 16px;
-      font-size: 50px;
     }
 
     &__paragraph {
       width: 535px;
       padding-bottom: 46px;
-      font-size: 18px;
-      font-family: 'Hoves-Regular';
     }
 
     &__teams-title-icon {
       margin-left: -24px;
-      padding: 0 5px;
     }
   }
 
   .teams * {
-    color: #f2f2f2;
+    color: $text-color--grey-light;
 
     .it-outsourcing__paragraph {
       width: 535px;
@@ -98,7 +86,7 @@ export default {
   }
 
   .individuals * {
-    color: #96969c;
+    color: $text-color--grey;
 
     .it-outsourcing__paragraph {
       width: 575px;
@@ -110,18 +98,6 @@ export default {
       button {
         width: 400px;
       }
-
-      &__title {
-        font-size: 80px;
-      }
-
-      &__sub-title  {
-        font-size: 44px;
-      }
-
-      &__teams-title-icon {
-        height: 77px;
-      }
     }
   }
 
@@ -129,14 +105,6 @@ export default {
     .it-outsourcing {
       button {
         width: 380px;
-      }
-
-      &__title {
-        font-size: 75px;
-      }
-
-      &__sub-title  {
-        font-size: 40px;
       }
     }
   }
@@ -146,23 +114,11 @@ export default {
       button {
         width: 360px;
       }
-
-      &__title {
-        font-size: 70px;
-        padding-bottom: 0;
-      }
-
-      &__sub-title  {
-        font-size: 35px;
-      }
-
-      &__teams-title-icon {
-        height: 67px;
-      }
     }
 
     .teams,
     .individuals * {
+
       .it-outsourcing__paragraph {
         width: 435px;
       }
@@ -175,18 +131,14 @@ export default {
         width: 340px;
       }
 
-      &__title {
-        font-size: 65px;
-      }
-
       &__sub-title  {
         width: 465px;
-        font-size: 30px;
       }
     }
 
     .teams,
     .individuals * {
+
       .it-outsourcing__paragraph {
         width: 300px;
       }
@@ -199,13 +151,8 @@ export default {
         width: initial;
       }
 
-      &__title {
-        font-size: 80px;
-      }
-
       &__sub-title  {
         width: initial;
-        font-size: 50px;
       }
     }
 
@@ -221,51 +168,10 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    .it-outsourcing {
-      &__title {
-        font-size: 65px;
-      }
-
-      &__sub-title  {
-        font-size: 40px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 640px) {
-    .it-outsourcing {
-      &__title {
-        font-size: 60px;
-      }
-
-      &__sub-title  {
-        font-size: 35px;
-      }
-    }
-  }
-
   @media only screen and (max-width: 520px) {
     .it-outsourcing {
-      &__title {
-        font-size: 41px;
-
-        :last-child {
-          margin-left: -21px;
-        }
-      }
-
-      &__sub-title  {
-        font-size: 27px;
-      }
-
-      &__paragraph {
-        font-size: 17px;
-      }
-
-      &__teams-title-icon {
-        height: 45px;
-        padding-left: 13px;
+      &__last-character {
+        margin-left: -18px;
       }
     }
   }

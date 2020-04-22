@@ -1,5 +1,5 @@
 <template>
-  <section id="services-banner" class="services-banner">
+  <section id="services-banner" class="services-banner main-parent-item">
     <div class="container">
       <div class="services-banner__container">
         <div class="services-banner__text-content_wrapper">
@@ -31,11 +31,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../assets/styles/vars';
+
   .services-banner {
-    height: 100%;
-    width: 100%;
     position: relative;
-    background-color: #000;
+    background-color: $bgcolor--black;
 
     &__container {
       width: 100%;
@@ -53,23 +53,23 @@ export default {
       font-family: 'Hoves-Bold';
       font-style: normal;
       font-weight: bold;
-      font-size: 150px;
+      font-size: 165px;
       letter-spacing: -3px;
     }
 
     &__first-child {
-      color: #000;
-      text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+      color: $text-color--black;
+      text-shadow: $text-shadow--white;
     }
 
     &__last-child {
-      color: #fff;
+      color: $text-color--white;
     }
 
     &__navigation-item {
       padding-right: 71px;
       padding-left: 20px;
-      color: #f2f2f2;
+      color: $text-color--grey-light;
       font-size: 22px;
       font-family: 'Hoves-Regular';
       background: url('../../assets/img/Services/svg/link-arrow.svg') no-repeat;
