@@ -167,7 +167,7 @@ export default {
   @media only screen and (max-width: 520px) {
     .software-development {
       &__last-character {
-        margin-left: -21px;
+        margin-left: -18px;
       }
     }
   }

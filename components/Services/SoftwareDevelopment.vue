@@ -74,7 +74,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .software-development {
-    padding-top: 204px;
+    padding-bottom: 204px;
     background-color: $bgcolor--black;
 
     &__flex-wrapper {

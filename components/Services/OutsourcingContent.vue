@@ -171,7 +171,7 @@ export default {
   @media only screen and (max-width: 520px) {
     .it-outsourcing {
       &__last-character {
-        margin-left: -18px;
+        margin-left: -21px;
       }
     }
   }

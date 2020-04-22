@@ -3,7 +3,7 @@
     <div class="container">
       <div class="it-outsourcing__content-wrapper">
         <h1 class="it-outsourcing__main-title main-title">IT Outsourcing</h1>
-        <div class="it-outsourcing__flex-wrapper flex-wrapper" id="it-outsourcing-content_items">
+        <div class="it-outsourcing__flex-wrapper flex-wrapper">
           <OutsourcingContent 
             :title="teams.title" 
             :subTitle="teams.subTitle" 
@@ -55,7 +55,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .it-outsourcing {
-    padding-top: 240px;
+    padding: 240px 0;
     background-color: $bgcolor--black;
 
     &__main-title {

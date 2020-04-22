@@ -54,6 +54,7 @@ export default {
 
   .infrastructure-optimisation {
     padding-top: 117px;
+    padding-bottom: 154px;
     background-color: $bgcolor--grey-light;
 
     button {
@@ -65,11 +66,38 @@ export default {
     }
 
     &__main-title {
+      padding-bottom: 20px;
       color: $text-color--black;
 
       span {
         color: $text-color--grey-light;
         text-shadow: $text-shadow--black;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .infrastructure-optimisation {
+      &__flex-wrapper  {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 520px) {
+    .infrastructure-optimisation {
+      padding: 60px 0;
+      &__flex-wrapper  {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 340px) {
+    .infrastructure-optimisation {
+      &__main-title {
+        font-size: 42px;
       }
     }
   }
