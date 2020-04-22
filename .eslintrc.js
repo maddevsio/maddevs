@@ -21,6 +21,7 @@ module.exports = {
     'no-console': 'off',
     'no-debugger': 'off',
     'no-new': 0,
+    'eol-last': 2,
     'linebreak-style': 0,
     'no-bitwise': 0,
     'indent': ['error', 2],
