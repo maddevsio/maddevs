@@ -2,7 +2,7 @@
   <section id="it-outsourcing" class="it-outsourcing main-parent-item">
     <div class="container">
       <div class="it-outsourcing__content-wrapper">
-        <h1 class="it-outsourcing__main-title main-title">IT Outsourcing</h1>
+        <h2 class="it-outsourcing__main-title main-title">IT Outsourcing</h2>
         <div class="it-outsourcing__flex-wrapper flex-wrapper">
           <OutsourcingContent 
             :title="teams.title" 

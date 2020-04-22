@@ -1,6 +1,6 @@
 <template>
   <div class="infrastructure-optimisation__content-item">
-    <h1 class="infrastructure-optimisation__title title" v-if="title === 'Up to savings on infrastructure'">
+    <h3 class="infrastructure-optimisation__title title" v-if="title === 'Up to savings on infrastructure'">
       <span class="infrastructure-optimisation__title-image-wrapp">
         Up to
         <img 
@@ -10,9 +10,9 @@
         >
       </span>
       <br> savings on <br> infrastructure
-    </h1>
-    <h1 class="infrastructure-optimisation__title title" v-else>{{ title }}</h1>
-    <h2 class="infrastructure-optimisation__sub-title sub-title">{{ subTitle }}</h2>
+    </h3>
+    <h3 class="infrastructure-optimisation__title title" v-else>{{ title }}</h3>
+    <h4 class="infrastructure-optimisation__sub-title sub-title">{{ subTitle }}</h4>
     <p class="infrastructure-optimisation__paragraph paragraph">{{ paragraph }}</p>
   </div>
 </template>

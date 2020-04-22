@@ -1,7 +1,7 @@
 <template>
   <div class="software-development__content-item">
     <div class="software-development__content-item_wrapper">
-      <h1 class="software-development__title title" v-if="title === 'Mobile'">
+      <h3 class="software-development__title title" v-if="title === 'Mobile'">
         <span>Mobi</span>
         <img 
           class="software-development__mobile-title-icon title-icon" 
@@ -9,9 +9,9 @@
           alt="phone-title-symbol"
         />
         <span class="software-development__last-character last-character">e</span>
-      </h1>
-      <h1 class="software-development__title title" v-else>{{ title }}</h1>
-      <h2 class="software-development__sub-title sub-title">{{ subTitle }}</h2>
+      </h3>
+      <h3 class="software-development__title title" v-else>{{ title }}</h3>
+      <h4 class="software-development__sub-title sub-title">{{ subTitle }}</h4>
       <p class="software-development__paragraph paragraph">{{ firstParagraph }}</p>
       <p class="software-development__paragraph paragraph">{{ secondParagraph }}</p>
       <p class="software-development__paragraph paragraph" v-if="title === 'Backend'">{{ thirdParagraph }}</p>

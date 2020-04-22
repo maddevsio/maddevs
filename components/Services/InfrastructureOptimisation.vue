@@ -1,9 +1,9 @@
 <template>
   <section id="infrastructure-optimisation" class="infrastructure-optimisation main-parent-item">
     <div class="container">
-        <h1 class="infrastructure-optimisation__main-title main-title">
+        <h2 class="infrastructure-optimisation__main-title main-title">
             <span>Infrastructure</span><br>Optimisation
-        </h1>
+        </h2>
         <div class="infrastructure-optimisation__flex-wrapper flex-wrapper">
          <InfrastructureContent 
             :title="whatMakes.title" 
