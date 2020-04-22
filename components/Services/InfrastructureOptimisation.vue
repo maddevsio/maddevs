@@ -88,6 +88,7 @@ export default {
   @media only screen and (max-width: 520px) {
     .infrastructure-optimisation {
       padding: 60px 0;
+
       &__flex-wrapper  {
         margin-top: 20px;
       }
