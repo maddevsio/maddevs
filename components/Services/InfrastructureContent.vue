@@ -64,8 +64,6 @@ export default {
     }
 
     &__fifty-percent-icon {
-      min-width: 80px;
-      min-height: 80px;
       position: absolute;
       top: -34px;
       left: 205px;
