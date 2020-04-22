@@ -16,6 +16,7 @@ rules:
 
   indentation: 0
   leading-zero: 0
+  final-newline: 2
   nesting-depth:
     - 2
     -
