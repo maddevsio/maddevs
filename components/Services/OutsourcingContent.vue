@@ -1,7 +1,7 @@
 <template>
   <div class="it-outsourcing__outsourcing-content">
     <div class="it-outsourcing__content_wrapper">
-      <h1 class="it-outsourcing__title title" v-if="title === 'Teams'">
+      <h3 class="it-outsourcing__title title" v-if="title === 'Teams'">
         <span>Tea</span>
         <img 
           class="it-outsourcing__teams-title-icon title-icon" 
@@ -9,9 +9,9 @@
           alt="teams-sub-title-symbol"
         />
         <span class="it-outsourcing__last-character last-character">s</span>
-      </h1>
-      <h1 class="it-outsourcing__title title" v-else>{{ title }}</h1>
-      <h2 class="it-outsourcing__sub-title sub-title">{{ subTitle }}</h2>
+      </h3>
+      <h3 class="it-outsourcing__title title" v-else>{{ title }}</h3>
+      <h4 class="it-outsourcing__sub-title sub-title">{{ subTitle }}</h4>
       <p class="it-outsourcing__paragraph paragraph">{{ paragraph }}</p>
     </div>
     <buttonTrigger :buttonInnerText="buttonInnerText"/>
@@ -171,7 +171,7 @@ export default {
   @media only screen and (max-width: 520px) {
     .it-outsourcing {
       &__last-character {
-        margin-left: -18px;
+        margin-left: -21px;
       }
     }
   }

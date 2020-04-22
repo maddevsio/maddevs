@@ -1,9 +1,9 @@
 <template>
   <section id="software-development" class="software-development main-parent-item">
     <div class="container">
-        <h1 class="software-development__main-title main-title">
+        <h2 class="software-development__main-title main-title">
             <span>Software</span><br>Development
-        </h1>
+        </h2>
         <div class="software-development__flex-wrapper flex-wrapper">
          <SoftwareDevelopContent 
             :title="backend.title" 
@@ -74,7 +74,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .software-development {
-    padding-top: 204px;
+    padding-bottom: 204px;
     background-color: $bgcolor--black;
 
     &__flex-wrapper {

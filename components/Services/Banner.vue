@@ -4,9 +4,9 @@
       <div class="services-banner__container">
         <div class="services-banner__text-content_wrapper">
           <div class="services-banner__text-flex-item">
-            <h1 class="services-banner__text-item services-banner__first-child">Your Trusted</h1>
-            <h1 class="services-banner__text-item services-banner__last-child">
-              <span class="services-banner__media-item">IT</span> Outsourcing Partner
+            <h1 class="services-banner__text-item">
+              Your Trusted <br> <span class="services-banner__media-item">IT</span> 
+              <span class="services-banner__white">Outsourcing Partner</span>
             </h1>
           </div>
           <div class="services-banner__icon-flex-item">
@@ -14,9 +14,9 @@
           </div>
         </div>
         <nav class="services-banner__navigation-list">
-          <a href="#it-outsourcing-content_items" class="services-banner__navigation-item">IT Outsourcing</a>
+          <a href="#it-outsourcing" class="services-banner__navigation-item">IT Outsourcing</a>
           <a href="#software-development" class="services-banner__navigation-item">Software Development</a>
-          <a href="#infrastructure-optimization" class="services-banner__navigation-item">Infrastructure Optimization</a>
+          <a href="#infrastructure-optimisation" class="services-banner__navigation-item">Infrastructure Optimization</a>
           <a href="#it-consulting" class="services-banner__navigation-item">IT Consulting</a>
         </nav>
       </div>
@@ -41,7 +41,6 @@ export default {
       width: 100%;
       height: 100%;
       padding-top: 150px;
-      padding-bottom: 60px;
     }
 
     &__text-content_wrapper {
@@ -55,15 +54,14 @@ export default {
       font-weight: bold;
       font-size: 165px;
       letter-spacing: -3px;
-    }
-
-    &__first-child {
       color: $text-color--black;
       text-shadow: $text-shadow--white;
     }
 
-    &__last-child {
+    &__white,
+    &__media-item {
       color: $text-color--white;
+      text-shadow: none;
     }
 
     &__navigation-item {
