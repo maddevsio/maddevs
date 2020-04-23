@@ -7,10 +7,11 @@
             <img src="../assets/img/common/logo.svg" alt="Logotype" class="header__header-logo">
           </router-link>
           <nav class="header__header-routes_links">
-            <router-link :to="`/`">About</router-link>
-            <router-link :to="`/services`">Services</router-link>
-            <router-link :to="`/projects`">Projects</router-link>
-            <router-link :to="`/careers`">Careers</router-link>
+            <router-link to="/">About</router-link>
+            <router-link to="/services">Services</router-link>
+            <router-link to="/projects">Projects</router-link>
+            <router-link to="/careers">Careers</router-link>
+            <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
           </nav>
         </div>
         <div class="header__right-content">
@@ -91,9 +92,27 @@ export default {
       a {
         color: $text-color--grey;
         text-decoration: none;
-        margin-right: 26px;
+        margin-right: 16px;
         font-size: 18px;
         font-family: 'Hoves-Regular';
+
+        &::after {
+          content: '↓';
+          color: transparent;
+        }
+
+        &:focus {
+          color: $text-color--red;
+          &::after {
+            color: $text-color--red;
+          }
+        }
+
+        &:last-child {
+          &::after {
+            content: '';
+          }
+        }
       }
     }
 
@@ -122,6 +141,14 @@ export default {
       color: $text-color--grey;
       font-size: 18px;
       font-family: 'Hoves-Regular';
+    }
+
+    &__selected-phone {
+      padding-right: 40px;
+      background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
+      background-position-y: 8px;
+      background-position-x: 149px;
+      cursor: pointer;
     }
   }
 </style>
