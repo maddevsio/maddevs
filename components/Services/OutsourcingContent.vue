@@ -151,6 +151,10 @@ export default {
         width: initial;
       }
 
+      &__outsourcing-content {
+        max-width: 100%;
+      }
+
       &__sub-title  {
         width: initial;
       }

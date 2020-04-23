@@ -29,4 +29,11 @@ export default {
     font-family: 'Hoves-Regular';
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 520px) {
+    .show-popup_button {
+      height: 50px;
+      font-size: 17px;
+    }
+  }
 </style>

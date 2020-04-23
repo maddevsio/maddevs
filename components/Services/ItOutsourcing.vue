@@ -71,4 +71,10 @@ export default {
       }
     }
   }
+
+  @media only screen and (max-width: 520px) {
+    .it-outsourcing {
+      padding: 144px 0;
+    }
+  }
 </style>

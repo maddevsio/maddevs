@@ -98,4 +98,10 @@ export default {
       }
     }
   }
+
+  @media only screen and (max-width: 520px) {
+    .software-development {
+      padding-bottom: 143px;
+    }
+  }
 </style>
