@@ -42,14 +42,14 @@ export default {
       this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
 
       // Hide page main content 
-      let main = document.getElementsByClassName('main');
+      const main = document.getElementsByClassName('main');
       main[0].style.display = 'none';
     },
 		
     hideMobileMenu() {
       this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
 
-      let main = document.getElementsByClassName('main');
+      const main = document.getElementsByClassName('main');
       main[0].style.display = 'block';
     }
   }
