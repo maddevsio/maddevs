@@ -192,6 +192,7 @@ export default {
 
     &__phones-list {
       display: none;
+      position: absolute;
     }
 
     &__mailto-link,
@@ -212,6 +213,89 @@ export default {
 
     &__phone-item {
       padding-top: 17px;
+    }
+  }
+
+  @media only screen and (max-width: 1320px) {
+    .header {
+      &__header-routes_links {
+        padding-left: 25px;
+      }
+
+      &__mailto-link,
+      &__selected-phone,
+      &__phone-item,
+      &__soc-links_wrap {
+        padding-right: 15px;
+      }
+
+      &__phones-dropdown_wrap {
+        min-width: 170px;
+      }
+
+      &__routes_links {
+        a {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1220px) {
+    .header {
+      button,
+      &__mailto-link,
+      &__selected-phone,
+      &__phone-item,
+      &__routes_links,
+      &__header-routes_links a {
+        font-size: 16px;
+      }
+
+      &__header-routes_links {
+        padding-top: 10px;
+      }
+
+      &__header-routes_links a {
+        margin-right: 5px;
+      }
+
+      &__phones-dropdown_wrap {
+        min-width: 156px;
+        padding-top: 1px;
+        background-position-x: 133px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1220px) {
+    .header {
+      button {
+        width: 120px;
+      }
+
+      button,
+      &__mailto-link,
+      &__selected-phone,
+      &__phone-item,
+      &__routes_links,
+      &__header-routes_links a {
+        font-size: 15px;
+      }
+
+      &__header-routes_links {
+        padding-top: 11px;
+      }
+
+      &__header-routes_links a {
+        margin-right: 0;
+      }
+
+      &__phones-dropdown_wrap {
+        min-width: 140px;
+        padding-top: 1px;
+        background-position-x: 123px;
+      }
     }
   }
 </style>
