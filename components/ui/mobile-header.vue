@@ -5,8 +5,8 @@
 						<img src="../../assets/img/common/logo.svg" alt="Logotype">
 				</div>
 				<div class="mobile-header__button">
-						<img src="../../assets/img/Header/mobile-menu-hamburger.svg" alt="Open" class="mobile-header__open" v-if="!mobileMenuIsOpen" @click="showMobileMenu()">
-						<img src="../../assets/img/Header/mobile-menu-close.svg" alt="Close" class="mobile-header__close" v-else @click="hideMobileMenu()">
+						<img src="../../assets/img/Header/mobile-menu-hamburger.svg" alt="Open" class="mobile-header__open" v-if="!mobileMenuIsOpen" @click="toggleMobileMenu('none')">
+						<img src="../../assets/img/Header/mobile-menu-close.svg" alt="Close" class="mobile-header__close" v-else @click="toggleMobileMenu('block')">
 				</div>
 		</div>
 		<div class="mobile-header__content-wrap" v-show="mobileMenuIsOpen">
@@ -38,19 +38,12 @@ export default {
     };
   },
   methods: {
-    showMobileMenu() {
+    toggleMobileMenu(displayState) {
       this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
 
       // Hide page main content 
       const main = document.getElementsByClassName('main');
-      main[0].style.display = 'none';
-    },
-		
-    hideMobileMenu() {
-      this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
-
-      const main = document.getElementsByClassName('main');
-      main[0].style.display = 'block';
+      main[0].style.display = displayState;
     }
   }
 };
