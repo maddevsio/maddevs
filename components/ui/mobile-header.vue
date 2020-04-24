@@ -6,7 +6,7 @@
 				</div>
 				<div class="mobile-header__button">
 						<img src="../../assets/img/Header/mobile-menu-hamburger.svg" alt="Open" class="mobile-header__open" v-if="!mobileMenuIsOpen" @click="showMobileMenu()">
-						<img src="../../assets/img/Header/mobile-menu-close.svg" alt="Close" class="mobile-header__close" v-else @click="mobileMenuIsOpen = !mobileMenuIsOpen">
+						<img src="../../assets/img/Header/mobile-menu-close.svg" alt="Close" class="mobile-header__close" v-else @click="hideMobileMenu()">
 				</div>
 		</div>
 		<div class="mobile-header__content-wrap" v-show="mobileMenuIsOpen">
@@ -40,6 +40,17 @@ export default {
   methods: {
     showMobileMenu() {
       this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
+
+      // Hide page main content 
+      let main = document.getElementsByClassName('main');
+      main[0].style.display = 'none';
+    },
+		
+    hideMobileMenu() {
+      this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
+
+      let main = document.getElementsByClassName('main');
+      main[0].style.display = 'block';
     }
   }
 };
@@ -89,6 +100,11 @@ export default {
 				padding-bottom: 54px;
 				border-bottom: none;
 			}
+		}
+
+		&__close,
+		&__open {
+			cursor: pointer;
 		}
 	}
 
