@@ -40,7 +40,7 @@ export default {
     &__container {
       width: 100%;
       height: 100%;
-      padding-top: 150px;
+      padding-top: 240px;
     }
 
     &__text-content_wrapper {
@@ -165,6 +165,10 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .services-banner {
+      &__container {
+        padding-top: 63px;
+      }
+
       &__icon-flex-item {
        min-width: 375px;
 

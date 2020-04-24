@@ -38,28 +38,31 @@
                   :key="i" 
                   :id="phone.country"
                   :href="`tel:${phone.phoneNumber}`"
-                  @click="selectPhone(phone)"
+                  @click="selectedPhone = phone;"
                 >
                   {{ phone.phoneNumber }}
                 </a>
               </div>
             </div>
-            <a href="#" class="header__mailto-link">team@maddevs.io</a>
+            <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
           </div>
           <buttonTrigger :buttonInnerText="buttonInnerText"/>
         </div>
       </div>
+      <mobileHeader />
     </div>
   </header>
 </template>
 
 <script>
 import buttonTrigger from '@/components/ui/button-trigger';
+import mobileHeader from '@/components/ui/mobile-header';
 
 export default {
   name: 'main-header',
   components: {
-    buttonTrigger
+    buttonTrigger,
+    mobileHeader
   },
   data() {
     return {
@@ -87,11 +90,6 @@ export default {
         country: 'england'
       }
     };
-  },
-  methods: {
-    selectPhone(phone) {
-      this.selectedPhone = phone;
-    }
   }
 };
 </script>
@@ -113,15 +111,15 @@ export default {
       border-color: $border-color--red;
     }
 
+    &__header-logo {
+      width: 40px;
+      height: 70px;
+    }
+
     &__header-content_wrap {
       display: flex;
       justify-content: space-between;
       margin-top: -120px;
-    }
-
-    &__header-logo {
-      width: 40px;
-      height: 70px;
     }
 
     &__header-routes_links {
@@ -202,12 +200,12 @@ export default {
       color: $text-color--grey;
       font-size: 18px;
       font-family: 'Hoves-Regular';
+      text-decoration: none;
     }
 
     &__selected-phone,
     &__phone-item {
       padding-right: 40px;
-      text-decoration: none;
       cursor: pointer;
     }
 
@@ -272,6 +270,7 @@ export default {
     .header {
       button {
         width: 120px;
+        height: 35px;
       }
 
       button,
@@ -293,8 +292,26 @@ export default {
 
       &__phones-dropdown_wrap {
         min-width: 140px;
-        padding-top: 1px;
+        padding-top: 2px;
         background-position-x: 123px;
+      }
+
+      &__mailto-link, {
+        padding-top: 1px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .header {
+      position: initial;
+      background-color: $bgcolor--black;
+      &__header-content_wrap {
+        display: none;
+      }
+
+      .mobile-header {
+        display: block;
       }
     }
   }
