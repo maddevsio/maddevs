@@ -27,10 +27,23 @@
                 <img src="../assets/img/Header/facebook-icon.svg" alt="Facebook">
               </a>
             </div>
-            <div class="header__selected-phone">+44 20 3984 8555</div>
-            <ul class="header__phones-list">
-              <li class="header__phone-item"></li>
-            </ul>
+            <div class="header__phones-dropdown_wrap">
+              <a class="header__selected-phone" :id="selectedPhone.country" :href="`tel:${selectedPhone.phoneNumber}`">
+                {{ selectedPhone.phoneNumber }}
+              </a>
+              <div class="header__phones-list">
+                <a 
+                  class="header__phone-item"
+                  v-for="(phone, i) in phones" 
+                  :key="i" 
+                  :id="phone.country"
+                  :href="`tel:${phone.phoneNumber}`"
+                  @click="selectPhone(phone)"
+                >
+                  {{ phone.phoneNumber }}
+                </a>
+              </div>
+            </div>
             <a href="#" class="header__mailto-link">team@maddevs.io</a>
           </div>
           <buttonTrigger :buttonInnerText="buttonInnerText"/>
@@ -50,8 +63,35 @@ export default {
   },
   data() {
     return {
-      buttonInnerText: 'Contact me'
+      buttonInnerText: 'Contact me',
+      phones: [
+        {
+          phoneNumber: '+44 20 3984 8555',
+          country: 'england' 
+        },
+        {
+          phoneNumber: '+24 50 2344 7666',
+          country: 'poland' 
+        },
+        {
+          phoneNumber: '+88 40 6666 9888',
+          country: 'russia' 
+        },
+        {
+          phoneNumber: '+44 34 4456 7654',
+          country: 'belarus' 
+        }
+      ],
+      selectedPhone: {
+        phoneNumber: '+44 20 3984 8555',
+        country: 'england'
+      }
     };
+  },
+  methods: {
+    selectPhone(phone) {
+      this.selectedPhone = phone;
+    }
   }
 };
 </script>
@@ -135,20 +175,43 @@ export default {
       padding-right: 5px;
     }
 
+    &__phones-dropdown_wrap {
+      height: max-content;
+      min-width: 185px;
+      background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
+      background-position-y: 8px;
+      background-position-x: 149px;
+
+      &:hover {
+        .header__phones-list {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+
+    &__phones-list {
+      display: none;
+    }
+
     &__mailto-link,
-    &__selected-phone {
+    &__selected-phone,
+    &__phone-item {
       padding-right: 26px;
       color: $text-color--grey;
       font-size: 18px;
       font-family: 'Hoves-Regular';
     }
 
-    &__selected-phone {
+    &__selected-phone,
+    &__phone-item {
       padding-right: 40px;
-      background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
-      background-position-y: 8px;
-      background-position-x: 149px;
+      text-decoration: none;
       cursor: pointer;
+    }
+
+    &__phone-item {
+      padding-top: 17px;
     }
   }
 </style>
