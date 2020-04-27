@@ -244,7 +244,12 @@ export default {
     width: 100%;
     height: 100%;
     position: fixed !important;
+    padding: initial;
     z-index: 999;
+
+    .container {
+      overflow: scroll;
+    }
   }
  
   @media only screen and (max-width: 1320px) {
@@ -349,6 +354,14 @@ export default {
 
       .mobile-header {
         display: block;
+      }
+    }
+
+    .mobile-menu_is-open {
+      .mobile-header {
+        height: 100vh;
+        margin-top: 0;
+        padding: 22px 0;
       }
     }
   }

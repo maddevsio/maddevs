@@ -41,6 +41,18 @@ export default {
     toggleMobileMenu() {
       this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
       this.$emit('getMobileMenuState', this.mobileMenuIsOpen);
+
+      if (this.mobileMenuIsOpen) {
+        this.disableScrollOnBody();
+      } else {
+        this.enableScrollOnBody();
+      }
+    },
+    disableScrollOnBody() {
+      document.body.classList.add('scrollDisabled');
+    },
+    enableScrollOnBody() {
+      document.body.classList.remove('scrollDisabled');
     }
   }
 };
@@ -70,7 +82,11 @@ export default {
 		&__header-logo {
       width: 35px;
       height: 60px;
-    }
+		}
+		
+		&__content-wrap {
+			height: 100%;
+		}
 
     &__header-routes_links {
 			width: 100%;
@@ -96,6 +112,23 @@ export default {
 		&__close,
 		&__open {
 			cursor: pointer;
+		}
+	}
+
+	@media only screen and (max-width: 360px) {
+		.mobile-header {
+			&__header-routes_links {
+				padding-top: 20px;
+
+				a {
+					padding: 10px 0;
+					font-size: 29px;
+
+					&:last-child {
+						padding-bottom: 25px;
+					}
+				}
+			}
 		}
 	}
 </style>
