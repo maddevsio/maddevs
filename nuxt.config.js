@@ -35,7 +35,7 @@ module.exports = {
     }
   ],
   generate: {
-    routes: ['/', '/en', '/en/jobs', '/ru', '/ru/jobs', '/services']
+    routes: ['/', '/services', '/projects', '/careers']
   },
   css: [
     {
