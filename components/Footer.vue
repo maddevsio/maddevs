@@ -7,6 +7,7 @@
 						<h2 class="footer__title title">Get In Touch</h2>
 						<a class="footer__mailto-link" href="mailto:team@maddevs.io">team@maddevs.io</a>
 					</div>
+          <footerContacts />
 				</div>
 				<div class="footer__form-wrap">
 					<footerForm />
@@ -26,11 +27,13 @@
 
 <script>
 import footerForm from '@/components/ui/footer-form';
+import footerContacts from '@/components/ui/footer-contacts';
 
 export default {
   name: 'Footer',
   components: {
-    footerForm
+    footerForm,
+    footerContacts
   }
 };
 </script>
