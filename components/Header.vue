@@ -243,7 +243,7 @@ export default {
   .mobile-menu_is-open {
     width: 100%;
     height: 100%;
-    position: fixed !important;
+    position: fixed;
     padding: initial;
     z-index: 999;
 
