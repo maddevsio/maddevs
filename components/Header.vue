@@ -28,18 +28,11 @@
               </a>
             </div>
             <div class="header__phones-dropdown_wrap">
-              <a class="header__selected-phone" :id="selectedPhone.country" :href="`tel:${selectedPhone.phoneNumber}`">
+              <a :class="`header__selected-phone header__${selectedPhone.country}`" :href="`tel:${selectedPhone.phoneNumber}`">
                 {{ selectedPhone.phoneNumber }}
               </a>
               <div class="header__phones-list">
-                <a 
-                  class="header__phone-item"
-                  v-for="(phone, i) in phones" 
-                  :key="i" 
-                  :id="phone.country"
-                  :href="`tel:${phone.phoneNumber}`"
-                  @click="selectedPhone = phone;"
-                >
+                <a v-for="(phone, i) in phones" :key="i" :class="`header__phone-item header__${phone.country}`" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone">
                   {{ phone.phoneNumber }}
                 </a>
               </div>
@@ -70,19 +63,19 @@ export default {
       phones: [
         {
           phoneNumber: '+44 20 3984 8555',
-          country: 'england' 
+          country: 'england'
         },
         {
-          phoneNumber: '+24 50 2344 7666',
-          country: 'poland' 
+          phoneNumber: '+44 20 3984 8555',
+          country: 'poland'
         },
         {
-          phoneNumber: '+88 40 6666 9888',
-          country: 'russia' 
+          phoneNumber: '+44 20 3984 8555',
+          country: 'russia'
         },
         {
-          phoneNumber: '+44 34 4456 7654',
-          country: 'belarus' 
+          phoneNumber: '+44 20 3984 8555',
+          country: 'belarus'
         }
       ],
       selectedPhone: {
@@ -175,10 +168,15 @@ export default {
 
     &__phones-dropdown_wrap {
       height: max-content;
-      min-width: 185px;
+      min-width: 200px;
+      padding-top: 1px;
       background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
-      background-position-y: 8px;
-      background-position-x: 149px;
+      background-position-y: 9px;
+      background-position-x: 174px;
+
+      a {
+        background-position-y: 3px;
+      }
 
       &:hover {
         .header__phones-list {
@@ -191,6 +189,10 @@ export default {
     &__phones-list {
       display: none;
       position: absolute;
+
+      a {
+        background-position-y: 21px;
+      }
     }
 
     &__mailto-link,
@@ -205,12 +207,29 @@ export default {
 
     &__selected-phone,
     &__phone-item {
+      padding-left: 25px;
       padding-right: 40px;
       cursor: pointer;
     }
 
     &__phone-item {
       padding-top: 17px;
+    }
+
+    &__england {
+      background: url('../assets/img/Header/england.svg') no-repeat;
+    }
+
+    &__belarus {
+      background: url('../assets/img/Header/belarus.svg') no-repeat;    
+    }
+
+    &__poland {
+      background: url('../assets/img/Header/poland.svg') no-repeat;
+    }
+
+    &__russia {
+      background: url('../assets/img/Header/russia.svg') no-repeat;
     }
   }
 
@@ -227,10 +246,6 @@ export default {
         padding-right: 15px;
       }
 
-      &__phones-dropdown_wrap {
-        min-width: 170px;
-      }
-
       &__routes_links {
         a {
           margin-right: 0;
@@ -239,7 +254,7 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1220px) {
+  @media only screen and (max-width: 1240px) {
     .header {
       button,
       &__mailto-link,
@@ -259,14 +274,14 @@ export default {
       }
 
       &__phones-dropdown_wrap {
-        min-width: 156px;
+        min-width: 183px;
         padding-top: 1px;
-        background-position-x: 133px;
+        background-position-x: 158px;
       }
     }
   }
 
-  @media only screen and (max-width: 1220px) {
+  @media only screen and (max-width: 1120px) {
     .header {
       button {
         width: 120px;
@@ -282,6 +297,13 @@ export default {
         font-size: 15px;
       }
 
+      &__mailto-link,
+      &__selected-phone,
+      &__phone-item,
+      &__soc-links_wrap {
+        padding-right: 10px;
+      }
+
       &__header-routes_links {
         padding-top: 11px;
       }
@@ -291,9 +313,9 @@ export default {
       }
 
       &__phones-dropdown_wrap {
-        min-width: 140px;
+        min-width: 170px;
         padding-top: 2px;
-        background-position-x: 123px;
+        background-position-x: 150px;
       }
 
       &__mailto-link, {

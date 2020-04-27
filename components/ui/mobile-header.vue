@@ -41,7 +41,7 @@ export default {
     toggleMobileMenu(displayState) {
       this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
 
-      // Hide page main content 
+      // Hide main content on page 
       const main = document.getElementsByClassName('main');
       main[0].style.display = displayState;
     }
