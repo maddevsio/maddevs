@@ -268,10 +268,10 @@ export default {
 
       &__header-routes_links {
         padding-top: 10px;
-      }
 
-      &__header-routes_links a {
-        margin-right: 5px;
+        a {
+          margin-right: 5px;
+        }
       }
 
       &__phones-dropdown_wrap {
@@ -307,10 +307,10 @@ export default {
 
       &__header-routes_links {
         padding-top: 11px;
-      }
 
-      &__header-routes_links a {
-        margin-right: 0;
+        a {
+          margin-right: 0;
+        }
       }
 
       &__phones-dropdown_wrap {
