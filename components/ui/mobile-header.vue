@@ -41,7 +41,7 @@ export default {
     toggleMobileMenu(displayState) {
       this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
 
-      // Toggle display state for main content on page when mobile menu is open or close
+      // Toggle display state of main content on page when mobile menu is open or close
       const main = document.getElementsByClassName('main');
       main[0].style.display = displayState;
     }
