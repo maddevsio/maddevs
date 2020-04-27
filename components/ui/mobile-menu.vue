@@ -1,16 +1,16 @@
 <template>
-  <div class="mobile-header">
-		<div class="mobile-header__top-line">
-				<div class="mobile-header__header-logo">
+  <div class="mobile-menu">
+		<div class="mobile-menu__top-line">
+				<div class="mobile-menu__header-logo">
 						<img src="../../assets/img/common/logo.svg" alt="Logotype">
 				</div>
-				<div class="mobile-header__button">
-						<img src="../../assets/img/Header/mobile-menu-hamburger.svg" alt="Open" class="mobile-header__open" v-if="!mobileMenuIsOpen" @click="toggleMobileMenu()">
-						<img src="../../assets/img/Header/mobile-menu-close.svg" alt="Close" class="mobile-header__close" v-else @click="toggleMobileMenu()">
+				<div class="mobile-menu__button">
+						<img src="../../assets/img/Header/mobile-menu-hamburger.svg" alt="Open" class="mobile-menu__open" v-if="!mobileMenuIsOpen" @click="toggleMobileMenu()">
+						<img src="../../assets/img/Header/mobile-menu-close.svg" alt="Close" class="mobile-menu__close" v-else @click="toggleMobileMenu()">
 				</div>
 		</div>
-		<div class="mobile-header__content-wrap" v-show="mobileMenuIsOpen">
-			<nav class="mobile-header__header-routes_links">
+		<div class="mobile-menu__content-wrap" v-show="mobileMenuIsOpen">
+			<nav class="mobile-menu__header-routes_links">
 				<router-link to="/">About</router-link>
 				<router-link to="/services">Services</router-link>
 				<router-link to="/projects">Projects</router-link>
@@ -26,7 +26,7 @@
 import buttonTrigger from '@/components/ui/button-trigger';
 
 export default {
-  name: 'mobile-header',
+  name: 'mobile-menu',
   components: {
     buttonTrigger
   },
@@ -61,7 +61,7 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
 
-	.mobile-header {
+	.mobile-menu {
 		display: none;
 		margin-top: -120px;
 
@@ -82,9 +82,9 @@ export default {
 		&__header-logo {
       width: 35px;
       height: 60px;
-		}
-		
-		&__content-wrap {
+    }
+
+    &__content-wrap {
 			height: 100%;
 		}
 
@@ -116,7 +116,7 @@ export default {
 	}
 
 	@media only screen and (max-width: 360px) {
-		.mobile-header {
+		.mobile-menu {
 			&__header-routes_links {
 				padding-top: 20px;
 

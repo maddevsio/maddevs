@@ -42,20 +42,20 @@
           <buttonTrigger :buttonInnerText="buttonInnerText"/>
         </div>
       </div>
-      <mobileHeader v-on:getMobileMenuState="getMobileMenuState($event)"/>
+      <mobileMenu v-on:getMobileMenuState="getMobileMenuState($event)"/>
     </div>
   </header>
 </template>
 
 <script>
 import buttonTrigger from '@/components/ui/button-trigger';
-import mobileHeader from '@/components/ui/mobile-header';
+import mobileMenu from '@/components/ui/mobile-menu';
 
 export default {
   name: 'main-header',
   components: {
     buttonTrigger,
-    mobileHeader
+    mobileMenu
   },
   data() {
     return {
@@ -251,7 +251,7 @@ export default {
       overflow: scroll;
     }
   }
- 
+
   @media only screen and (max-width: 1320px) {
     .header {
       &__header-routes_links {
@@ -352,13 +352,13 @@ export default {
         display: none;
       }
 
-      .mobile-header {
+      .mobile-menu {
         display: block;
       }
     }
 
     .mobile-menu_is-open {
-      .mobile-header {
+      .mobile-menu {
         height: 100vh;
         margin-top: 0;
         padding: 22px 0;
