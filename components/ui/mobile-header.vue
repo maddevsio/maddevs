@@ -5,8 +5,8 @@
 						<img src="../../assets/img/common/logo.svg" alt="Logotype">
 				</div>
 				<div class="mobile-header__button">
-						<img src="../../assets/img/Header/mobile-menu-hamburger.svg" alt="Open" class="mobile-header__open" v-if="!mobileMenuIsOpen" @click="toggleMobileMenu('none')">
-						<img src="../../assets/img/Header/mobile-menu-close.svg" alt="Close" class="mobile-header__close" v-else @click="toggleMobileMenu('block')">
+						<img src="../../assets/img/Header/mobile-menu-hamburger.svg" alt="Open" class="mobile-header__open" v-if="!mobileMenuIsOpen" @click="toggleMobileMenu()">
+						<img src="../../assets/img/Header/mobile-menu-close.svg" alt="Close" class="mobile-header__close" v-else @click="toggleMobileMenu()">
 				</div>
 		</div>
 		<div class="mobile-header__content-wrap" v-show="mobileMenuIsOpen">
@@ -38,12 +38,9 @@ export default {
     };
   },
   methods: {
-    toggleMobileMenu(displayState) {
+    toggleMobileMenu() {
       this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
-
-      // Toggle display state of main content on page when mobile menu is open or close
-      const main = document.getElementsByClassName('main');
-      main[0].style.display = displayState;
+      this.$emit('getMobileMenuState', this.mobileMenuIsOpen);
     }
   }
 };

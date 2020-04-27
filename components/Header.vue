@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header" :class="{'mobile-menu_is-open': mobileMenuIsOpen }">
     <div class="container">
       <div class="header__header-content_wrap">
         <div class="header__left-nav_bar">
@@ -42,7 +42,7 @@
           <buttonTrigger :buttonInnerText="buttonInnerText"/>
         </div>
       </div>
-      <mobileHeader />
+      <mobileHeader v-on:getMobileMenuState="getMobileMenuState($event)"/>
     </div>
   </header>
 </template>
@@ -81,8 +81,14 @@ export default {
       selectedPhone: {
         phoneNumber: '+44 20 3984 8555',
         country: 'england'
-      }
+      },
+      mobileMenuIsOpen: false
     };
+  },
+  methods: {
+    getMobileMenuState(mobileMenuDisplayState) {
+      this.mobileMenuIsOpen = mobileMenuDisplayState;
+    }
   }
 };
 </script>
@@ -234,6 +240,13 @@ export default {
     }
   }
 
+  .mobile-menu_is-open {
+    width: 100%;
+    height: 100%;
+    position: fixed !important;
+    z-index: 999;
+  }
+ 
   @media only screen and (max-width: 1320px) {
     .header {
       &__header-routes_links {
