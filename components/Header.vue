@@ -134,6 +134,7 @@ export default {
 
         &:focus {
           color: $text-color--red;
+
           &::after {
             color: $text-color--red;
           }
@@ -221,7 +222,7 @@ export default {
     }
 
     &__belarus {
-      background: url('../assets/img/Header/belarus.svg') no-repeat;    
+      background: url('../assets/img/Header/belarus.svg') no-repeat;
     }
 
     &__poland {
@@ -318,7 +319,7 @@ export default {
         background-position-x: 150px;
       }
 
-      &__mailto-link, {
+      &__mailto-link {
         padding-top: 1px;
       }
     }
@@ -328,6 +329,7 @@ export default {
     .header {
       position: initial;
       background-color: $bgcolor--black;
+
       &__header-content_wrap {
         display: none;
       }

@@ -58,6 +58,7 @@ export default {
 
 		button {
 			width: 100%;
+      height: 65px;
 			font-family: 'Hoves-Bold';
 			font-size: 27px;
       color: $text-color--red;
@@ -72,9 +73,9 @@ export default {
 		&__header-logo {
       width: 35px;
       height: 60px;
-		}
-		
-		&__header-routes_links {
+    }
+
+    &__header-routes_links {
 			width: 100%;
 			display: flex;
 			flex-direction: column;
@@ -91,19 +92,13 @@ export default {
 
 			&:last-child {
 				padding-bottom: 54px;
-				border-bottom: none;
+				border-bottom: 0;
 			}
 		}
 
 		&__close,
 		&__open {
 			cursor: pointer;
-		}
-	}
-
-	.mobile-header {
-		button {
-			height: 65px;
 		}
 	}
 </style>
