@@ -28,11 +28,11 @@
               </a>
             </div>
             <div class="header__phones-dropdown_wrap">
-              <a :class="`header__selected-phone header__${selectedPhone.country}`" :href="`tel:${selectedPhone.phoneNumber}`">
+              <a :class="`header__selected-phone ${selectedPhone.country}`" :href="`tel:${selectedPhone.phoneNumber}`">
                 {{ selectedPhone.phoneNumber }}
               </a>
               <div class="header__phones-list">
-                <a v-for="(phone, i) in phones" :key="i" :class="`header__phone-item header__${phone.country}`" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone">
+                <a v-for="(phone, i) in phones" :key="i" :class="`header__phone-item ${phone.country}`" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone">
                   {{ phone.phoneNumber }}
                 </a>
               </div>
@@ -221,22 +221,6 @@ export default {
 
     &__phone-item {
       padding-top: 17px;
-    }
-
-    &__england {
-      background: url('../assets/img/Header/england.svg') no-repeat;
-    }
-
-    &__belarus {
-      background: url('../assets/img/Header/belarus.svg') no-repeat;
-    }
-
-    &__poland {
-      background: url('../assets/img/Header/poland.svg') no-repeat;
-    }
-
-    &__russia {
-      background: url('../assets/img/Header/russia.svg') no-repeat;
     }
   }
 

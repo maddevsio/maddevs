@@ -4,7 +4,7 @@
 			<div class="footer__content">
 				<div class="footer__text-content">
 					<div class="footer__title-wrap">
-						<h2 class="footer__title title">Get In Touch</h2>
+						<h2 class="footer__main-title main-title">Get In Touch</h2>
 						<a class="footer__mailto-link" href="mailto:team@maddevs.io">team@maddevs.io</a>
 					</div>
           <footerContacts />
@@ -39,4 +39,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../assets/styles/vars';
+
+	.footer {
+		padding-top: 129px;
+		padding-bottom: 87px;
+
+		&__main-title {
+			text-shadow: $text-shadow--white;
+		}
+
+		&__mailto-link {
+			color: $text-color--red;
+			font-size: 70px;
+			font-family: 'Hoves-Bold';
+			text-decoration: none;
+			border-bottom: 1px solid;
+		}
+	}
 </style>
