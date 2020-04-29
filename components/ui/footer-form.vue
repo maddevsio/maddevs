@@ -6,7 +6,7 @@
 				<input type="text" class="entry-field" placeholder="John Smith">
 			</div>
 			<div class="field-item">
-				<p class="field-name required-field">Work email</p>
+				<p class="field-name required">Work email</p>
 				<input type="email" required class="entry-field" placeholder="your@company.co|">
 			</div>
 			<div class="field-item">
@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<div class="form-checkboxes">
-			<label class="form-checkbox-label required-field" for="privacy-policy">I confirm that I have read and accepted Mad Devs’ <br> Privacy Policy
+			<label class="form-checkbox-label required" for="privacy-policy">I confirm that I have read and accepted Mad Devs’ <br> Privacy Policy
 				<input class="form-checkbox-input" id="privacy-policy" type="checkbox" name="Privacy policy">
 				<span class="checkmark"></span>
 			</label>
