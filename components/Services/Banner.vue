@@ -1,23 +1,23 @@
 <template>
-  <section id="services-banner" class="services-banner main-parent-item">
+  <section id="services-banner" class="services-banner banner main-parent-item">
     <div class="container">
-      <div class="services-banner__container">
-        <div class="services-banner__text-content_wrapper">
-          <div class="services-banner__text-flex-item">
-            <h1 class="services-banner__text-item">
-              Your Trusted <br> <span class="services-banner__media-item">IT</span> 
-              <span class="services-banner__white">Outsourcing Partner</span>
+      <div class="services-banner__banner-content-container banner-content-container">
+        <div class="services-banner__text-content_wrapper text-content_wrapper">
+          <div class="services-banner__main-title-wrapper">
+            <h1 class="services-banner__banner-main_title banner-main_title">
+              Your Trusted <br> <span class="services-banner__media-item">IT</span>
+              <span class="services-banner__main-title-white_part main-title-white_part">Outsourcing Partner</span>
             </h1>
           </div>
-          <div class="services-banner__icon-flex-item">
+          <div class="services-banner__icon-item">
             <img src="../../assets/img/Services/svg/make-partner.svg" alt="make-partner">
           </div>
         </div>
-        <nav class="services-banner__navigation-list">
-          <a href="#it-outsourcing" class="services-banner__navigation-item">IT Outsourcing</a>
-          <a href="#software-development" class="services-banner__navigation-item">Software Development</a>
-          <a href="#infrastructure-optimisation" class="services-banner__navigation-item">Infrastructure Optimization</a>
-          <a href="#it-consulting" class="services-banner__navigation-item">IT Consulting</a>
+        <nav class="services-banner__navigation-list navigation-list">
+          <a href="#it-outsourcing" class="services-banner__navigation-item navigation-item">IT Outsourcing</a>
+          <a href="#software-development" class="services-banner__navigation-item navigation-item">Software Development</a>
+          <a href="#infrastructure-optimisation" class="services-banner__navigation-item navigation-item">Infrastructure Optimization</a>
+          <a href="#it-consulting" class="services-banner__navigation-item navigation-item">IT Consulting</a>
         </nav>
       </div>
     </div>
@@ -34,47 +34,12 @@ export default {
   @import '../../assets/styles/vars';
 
   .services-banner {
-    position: relative;
-    background-color: $bgcolor--black;
-
-    &__container {
-      width: 100%;
-      height: 100%;
-      padding-top: 240px;
-    }
-
-    &__text-content_wrapper {
-      display: flex;
-      padding-bottom: 130px;
-    }
-
-    &__text-item {
-      font-family: 'Hoves-Bold';
-      font-style: normal;
-      font-weight: bold;
-      font-size: 165px;
-      letter-spacing: -3px;
-      color: $text-color--black;
-      text-shadow: $text-shadow--white;
-    }
-
-    &__white,
     &__media-item {
       color: $text-color--white;
       text-shadow: none;
     }
 
-    &__navigation-item {
-      padding-right: 71px;
-      padding-left: 20px;
-      color: $text-color--grey-light;
-      font-size: 22px;
-      font-family: 'Hoves-Regular';
-      background: url('../../assets/img/Services/svg/link-arrow.svg') no-repeat;
-      background-position-y: 7px;
-    }
-
-    &__icon-flex-item {
+    &__icon-item {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -88,55 +53,33 @@ export default {
 
   @media only screen and (max-width: 1620px) {
     .services-banner {
-      &__icon-flex-item {
+      &__icon-item {
         img {
           margin-bottom: -200px;
           margin-right: 55px;
         }
-      }
-
-      &__text-item {
-        font-size: 125px;
-      }
-
-      &__navigation-item {
-        font-size: 17px;
-        background-position-y: 3px;
       }
     }
   }
 
   @media only screen and (max-width: 1440px) {
     .services-banner {
-      &__icon-flex-item {
+      &__icon-item {
         img {
           width: 320px;
           margin-bottom: -179px;
           margin-right: 64px;
         }
       }
-
-      &__text-item {
-        font-size: 125px;
-      }
     }
   }
 
   @media only screen and (max-width: 1366px) {
     .services-banner {
-      &__navigation-item {
-        padding-right: 50px;
-        font-size: 17px;
-      }
-
-      &__icon-flex-item {
+      &__icon-item {
         img {
           margin-right: 50px;
         }
-      }
-
-      &__text-item {
-        font-size: 115px;
       }
     }
   }
@@ -146,30 +89,12 @@ export default {
       &__media-item {
         display: none;
       }
-
-      &__navigation-item {
-        padding-right: 30px;
-        font-size: 16px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1220px) {
-    .services-banner {
-      &__navigation-item {
-        padding-right: 20px;
-        font-size: 15px;
-      }
     }
   }
 
   @media only screen and (max-width: 1024px) {
     .services-banner {
-      &__container {
-        padding-top: 63px;
-      }
-
-      &__icon-flex-item {
+      &__icon-item {
        min-width: 375px;
 
        img {
@@ -179,29 +104,12 @@ export default {
          left: 41%;
         }
       }
-
-      &__navigation-list {
-        display: flex;
-        flex-direction: column;
-        margin-top: -60px;
-      }
-
-      &__navigation-item {
-        padding-bottom: 27px;
-        font-size: 31px;
-        background-size: 12px;
-        background-position-y: 9px;
-      }
-
-      &__text-item {
-        font-size: 100px;
-      }
     }
   }
 
   @media only screen and (max-width: 768px) {
     .services-banner {
-      &__icon-flex-item {
+      &__icon-item {
         img {
           left: 55%;
         }
@@ -211,64 +119,34 @@ export default {
 
   @media only screen and (max-width: 610px) {
     .services-banner {
-      &__icon-flex-item {
+      &__icon-item {
         img {
           width: 185px;
           left: 54%;
           top: 54%;
         }
       }
-
-      &__navigation-item {
-        font-size: 23px;
-        background-size: 11px;
-        background-position-y: 6px;
-      }
-
-      &__text-item {
-        font-size: 73px;
-      }
     }
   }
 
   @media only screen and (max-width: 440px) {
     .services-banner {
-      &__icon-flex-item {
+      &__icon-item {
         img {
           width: 150px;
           top: 54%;
         }
-      }
-
-      &__navigation-item {
-        font-size: 18px;
-        background-size: 9px;
-        background-position-y: 4px;
-      }
-
-      &__text-item {
-        font-size: 56px;
       }
     }
   }
 
   @media only screen and (max-width: 370px) {
     .services-banner {
-      &__icon-flex-item {
+      &__icon-item {
         img {
           width: 130px;
           left: 53%;
         }
-      }
-
-      &__navigation-item {
-        font-size: 15px;
-        background-size: 8px;
-        background-position-y: 3px;
-      }
-
-      &__text-item {
-        font-size: 46px;
       }
     }
   }
