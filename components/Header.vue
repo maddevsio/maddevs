@@ -232,6 +232,7 @@ export default {
     z-index: 999;
 
     .container {
+      height: 100vh;
       overflow: scroll;
     }
   }
@@ -343,9 +344,10 @@ export default {
 
     .mobile-menu_is-open {
       .mobile-menu {
-        height: 100vh;
+        height: 100%;
         margin-top: 0;
         padding: 22px 0;
+        box-sizing: border-box;
       }
     }
   }

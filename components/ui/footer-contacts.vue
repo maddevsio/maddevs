@@ -21,13 +21,13 @@
 			<div class="footer-contacts__title">Message us:</div>
 			<ul class="footer-contacts__messengers-list">
 				<li>
-					<a href="#" class="footer-contacts__messenger-item footer-contacts__telegram">Telegram</a>
+					<a href="https://t.me/mun_tamara/" class="footer-contacts__messenger-item footer-contacts__telegram" target="_blank">Telegram</a>
 				</li>
 				<li>
-					<a href="#" class="footer-contacts__messenger-item footer-contacts__whatsapp">Whatsapp</a>
+					<a href="http://wa.me/996555771481" class="footer-contacts__messenger-item footer-contacts__whatsapp" target="_blank">Whatsapp</a>
 				</li>
 				<li>
-					<a href="#" class="footer-contacts__messenger-item footer-contacts__skype">Skype</a>
+					<a href="#" class="footer-contacts__messenger-item footer-contacts__signal">Signal</a>
 				</li>
 				<li>
 					<a href="#" class="footer-contacts__messenger-item footer-contacts__we-chat">WeChat</a>
@@ -100,8 +100,8 @@ export default {
 			background: url('../../assets/img/Footer/telegram.svg') no-repeat;
 		}
 
-		&__skype {
-			background: url('../../assets/img/Footer/skype.svg') no-repeat;
+		&__signal {
+			background: url('../../assets/img/Footer/signal.svg') no-repeat;
 		}
 
 		&__whatsapp {
