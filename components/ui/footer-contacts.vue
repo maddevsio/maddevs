@@ -60,8 +60,15 @@ export default {
 		&__phones-list,
 		&__messengers-list {
 			display: grid;
-			grid-template-columns: 175px 175px;
 			grid-gap: 10px;
+		}
+
+		&__phones-list {
+			grid-template-columns: repeat(2, 180px);
+		}
+
+		&__messengers-list {
+			grid-template-columns: repeat(2, 130px);
 		}
 
 		&__phone-item,
@@ -103,6 +110,81 @@ export default {
 
 		&__we-chat {
 			background: url('../../assets/img/Footer/wechat.svg') no-repeat;
+		}
+	}
+
+	@media only screen and (max-width: 1390px) {
+		.footer-contacts {
+			&__message-us {
+				padding-left: 60px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 1180px) {
+		.footer-contacts {
+			&__phones-list,
+			&__messengers-list {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 1024px) {
+		.footer-contacts {
+			&__phones-list {
+				grid-template-columns: repeat(2, 175px);
+			}
+
+			&__messengers-list {
+				grid-template-columns: repeat(2, 130px);
+			}
+
+			&__phone-item {
+				font-size: 18px;
+				background-position-y: 4px;
+			}
+
+			&__messenger-item,
+			&__title {
+				font-size: 17px;
+			}
+
+			&__messengers-list {
+				a {
+					background-position-y: 3px;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 920px) {
+		.footer-contacts {
+			&__phones-list,
+			&__messengers-list {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 370px) {
+		.footer-contacts {
+			&__phone-item,
+			&__messenger-item {
+				font-size: 16px;
+			}
+
+			&__phone-item {
+				background-position-y: 2px
+			}
+
+			&__messenger-item {
+				background-position-y: 3px
+			}
+
+			&__message-us {
+				padding-left: 40px;
+			}
 		}
 	}
 </style>
