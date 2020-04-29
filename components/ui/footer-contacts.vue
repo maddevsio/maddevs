@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/_vars';
+  @import '../../assets/styles/vars';
 
 	.footer-contacts {
 		display: flex;
@@ -69,6 +69,10 @@ export default {
 
 		&__messengers-list {
 			grid-template-columns: repeat(2, 130px);
+
+			a {
+				background-position-y: 4px;
+			}
 		}
 
 		&__phone-item,
@@ -86,14 +90,6 @@ export default {
 
 		&__message-us {
 			padding-left: 111px;
-		}
-
-		&__messengers-list {
-			font-size: 18px;
-
-			a {
-				background-position-y: 4px;
-			}
 		}
 
 		&__telegram {
@@ -138,6 +134,10 @@ export default {
 
 			&__messengers-list {
 				grid-template-columns: repeat(2, 130px);
+
+				a {
+					background-position-y: 3px;
+				}
 			}
 
 			&__phone-item {
@@ -148,12 +148,6 @@ export default {
 			&__messenger-item,
 			&__title {
 				font-size: 17px;
-			}
-
-			&__messengers-list {
-				a {
-					background-position-y: 3px;
-				}
 			}
 		}
 	}
@@ -175,11 +169,11 @@ export default {
 			}
 
 			&__phone-item {
-				background-position-y: 2px
+				background-position-y: 2px;
 			}
 
 			&__messenger-item {
-				background-position-y: 3px
+				background-position-y: 3px;
 			}
 
 			&__message-us {

@@ -34,9 +34,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-	@import '../../assets/styles/_vars';
-	
-	.footer-social-network {
+  @import '../../assets/styles/vars';
+
+  .footer-social-network {
 		display: flex;
 		align-items: center;
 

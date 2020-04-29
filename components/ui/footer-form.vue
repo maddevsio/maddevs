@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/_vars';
+  @import '../../assets/styles/vars';
 
 	.footer-form {
 		width: 450px;
@@ -81,9 +81,9 @@ export default {
 				font-size: 17px;
 			}
 
-			.entry-field {
-				font-size: 17px;	
-			}
+      .entry-field {
+        font-size: 17px;
+      }
 		}
 	}
 

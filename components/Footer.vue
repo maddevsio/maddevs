@@ -126,21 +126,17 @@ export default {
 
 	@media only screen and (max-width: 1024px) {
 		.footer {
+			&__content {
+				flex-direction: column;
+			}
+
 			&__bottom-links-line {
-				flex-direction: column-reverse;;
+				flex-direction: column-reverse;
 				padding-left: 0;
 			}
 
 			&__left-bottom_links {
 				padding-top: 20px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 1024px) {
-		.footer {
-			&__content {
-				flex-direction: column;
 			}
 		}
 	}
