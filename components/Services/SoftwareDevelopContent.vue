@@ -155,6 +155,10 @@ export default {
       &__sub-title  {
         width: initial;
       }
+
+      &__title {
+        padding-bottom: 17px;
+      }
     }
 
     .frontend-item {
@@ -168,6 +172,10 @@ export default {
     .software-development {
       &__last-character {
         margin-left: -18px;
+      }
+
+      &__title {
+        padding-bottom: 13px;
       }
     }
   }

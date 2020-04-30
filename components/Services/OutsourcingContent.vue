@@ -65,6 +65,7 @@ export default {
 
     &__title {
       height: 100px;
+      padding-bottom: 20px;
     }
 
     &__paragraph {
@@ -98,6 +99,10 @@ export default {
       button {
         width: 400px;
       }
+
+      &__title {
+        padding-bottom: 10px;
+      }
     }
   }
 
@@ -113,6 +118,10 @@ export default {
     .it-outsourcing {
       button {
         width: 360px;
+      }
+
+      &__title {
+        padding-bottom: 0;
       }
     }
 
@@ -176,6 +185,10 @@ export default {
     .it-outsourcing {
       &__last-character {
         margin-left: -21px;
+      }
+
+      &__title {
+        height: 60px;
       }
     }
   }
