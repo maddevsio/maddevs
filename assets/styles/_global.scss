@@ -209,6 +209,7 @@
 
 .title {
   font-size: 90px;
+  padding-bottom: 15px;
 }
 
 .last-character {
@@ -512,6 +513,10 @@
     font-size: 125px;
   }
 
+  .main-title {
+    font-size: 120px;
+  }
+
   .navigation-item {
     font-size: 17px;
     background-position-y: 3px;
@@ -532,6 +537,10 @@
 
   .banner-main_title  {
     font-size: 115px;
+  }
+
+  .main-title {
+    font-size: 110px;
   }
 }
 
@@ -568,6 +577,10 @@
   .banner-main_title {
     font-size: 100px;
   }
+
+  .main-title {
+    font-size: 105px;
+  }
 }
 
 @media only screen and (max-width: 610px) {
@@ -579,6 +592,16 @@
 
   .banner-main_title {
     font-size: 73px;
+  }
+
+  .main-title {
+    font-size: 71px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .main-title {
+    font-size: 68px;
   }
 }
 
@@ -592,6 +615,10 @@
   .banner-main_title {
     font-size: 56px;
   }
+
+  .main-title {
+    font-size: 53px;
+  }
 }
 
 @media only screen and (max-width: 370px) {
@@ -603,5 +630,9 @@
 
   .banner-main_title {
     font-size: 46px;
+  }
+
+  .main-title {
+    font-size: 43px;
   }
 }
