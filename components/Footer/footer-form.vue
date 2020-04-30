@@ -3,11 +3,11 @@
 		<div class="fields-list">
 			<div class="field-item">
 				<p class="field-name">First name and surname</p>
-				<input type="text" class="entry-field" placeholder="John Smith">
+				<input type="text" class="entry-field">
 			</div>
 			<div class="field-item">
 				<p class="field-name required">Work email</p>
-				<input type="email" required class="entry-field" placeholder="your@company.co|">
+				<input type="email" required class="entry-field">
 			</div>
 			<div class="field-item">
 				<p class="field-name">Project Info</p>
