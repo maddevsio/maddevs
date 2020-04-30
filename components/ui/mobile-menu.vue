@@ -18,17 +18,27 @@
 				<a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
 			</nav>
 			<buttonTrigger :buttonInnerText="buttonInnerText"/>
+			<div class="mobile-menu__contacts">
+				<footerContacts />
+			</div>
+			<div class="mobile-menu__social-network_links">
+				<footerSocialNetworkBar />
+			</div>
 		</div>
   </div>
 </template>
 
 <script>
 import buttonTrigger from '@/components/ui/button-trigger';
+import footerContacts from '@/components/Footer/footer-contacts';
+import footerSocialNetworkBar from '@/components/Footer/footer-social-network';
 
 export default {
   name: 'mobile-menu',
   components: {
-    buttonTrigger
+    buttonTrigger,
+    footerContacts,
+    footerSocialNetworkBar
   },
 
   data() {
@@ -112,6 +122,19 @@ export default {
 		&__close,
 		&__open {
 			cursor: pointer;
+		}
+
+		&__social-network_links {
+			padding: 32px 0;
+			border-top: 1px solid $footer--border-color--grey-light;
+		}
+
+		&__contacts {
+			padding-bottom: 42px;
+		}
+
+		.footer-contacts {
+			padding-top: 41px;
 		}
 	}
 
