@@ -160,7 +160,7 @@ export default {
 				font-size: 17px;
 			}
 
-			&__phone-item, 
+			&__phone-item,
 			&__messenger-item {
 				img {
 					top: 4px;

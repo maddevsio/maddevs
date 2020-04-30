@@ -30,8 +30,8 @@
 
 <script>
 import buttonTrigger from '@/components/ui/button-trigger';
-import footerContacts from '@/components/ui/footer-contacts';
-import footerSocialNetworkBar from '@/components/ui/footer-social-network';
+import footerContacts from '@/components/Footer/footer-contacts';
+import footerSocialNetworkBar from '@/components/Footer/footer-social-network';
 
 export default {
   name: 'mobile-menu',

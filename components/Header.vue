@@ -28,11 +28,13 @@
               </a>
             </div>
             <div class="header__phones-dropdown_wrap">
-              <a :class="`header__selected-phone ${selectedPhone.country}`" :href="`tel:${selectedPhone.phoneNumber}`">
+              <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
+                <img :src="require(`@/assets/img/Flags/${selectedPhone.country}.svg`)" :alt="`${selectedPhone.country}`" />
                 {{ selectedPhone.phoneNumber }}
               </a>
               <div class="header__phones-list">
-                <a v-for="(phone, i) in phones" :key="i" :class="`header__phone-item ${phone.country}`" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone">
+                <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone">
+                  <img :src="require(`@/assets/img/Flags/${phone.country}.svg`)" :alt="`${phone.country}`" />
                   {{ phone.phoneNumber }}
                 </a>
               </div>
@@ -181,10 +183,6 @@ export default {
       background-position-y: 9px;
       background-position-x: 174px;
 
-      a {
-        background-position-y: 3px;
-      }
-
       &:hover {
         .header__phones-list {
           display: flex;
@@ -196,10 +194,6 @@ export default {
     &__phones-list {
       display: none;
       position: absolute;
-
-      a {
-        background-position-y: 21px;
-      }
     }
 
     &__mailto-link,
@@ -214,13 +208,29 @@ export default {
 
     &__selected-phone,
     &__phone-item {
+      position: relative;
       padding-left: 25px;
       padding-right: 40px;
       cursor: pointer;
+
+      img {
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    &__selected-phone {
+      img {
+        top: 4px;
+      }
     }
 
     &__phone-item {
       padding-top: 17px;
+
+      img {
+        top: 20px;
+      }
     }
   }
 
@@ -281,6 +291,18 @@ export default {
         min-width: 183px;
         padding-top: 1px;
         background-position-x: 158px;
+      }
+
+       &__selected-phone {
+        img {
+          top: 2px;
+        }
+      }
+
+      &__phone-item {
+        img {
+          top: 19px;
+        }
       }
     }
   }

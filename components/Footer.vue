@@ -27,9 +27,9 @@
 </template>
 
 <script>
-import footerForm from '@/components/ui/footer-form';
-import footerContacts from '@/components/ui/footer-contacts';
-import footerSocialNetworkBar from '@/components/ui/footer-social-network';
+import footerForm from '@/components/Footer/footer-form';
+import footerContacts from '@/components/Footer/footer-contacts';
+import footerSocialNetworkBar from '@/components/Footer/footer-social-network';
 
 export default {
   name: 'Footer',
