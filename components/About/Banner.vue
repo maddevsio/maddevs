@@ -10,7 +10,7 @@
             </h1>
           </div>
           <div class="about-banner__icon-item">
-            <!-- <img src="../../assets/img/about/svg/make-partner.svg" alt="Banner Logotype"> -->
+            <img src="../../assets/img/Home/svg/Banner-icon.svg" alt="Banner Logotype">
           </div>
         </div>
         <nav class="about-banner__navigation-list navigation-list">
@@ -33,23 +33,40 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
 
-  @media only screen and (max-width: 1620px) {
-    .about-banner {
-      &__icon-item {
-      }
+  .about-banner {
+    &__text-content_wrapper {
+      justify-content: space-between;
     }
-  }
 
-  @media only screen and (max-width: 1440px) {
-    .about-banner {
-      &__icon-item {
-      }
+    &__main-title-wrapper {
+      padding-right: 60px;
+    }
+
+    &__icon-item {
+      display: flex;
+      align-items: flex-end;
     }
   }
 
   @media only screen and (max-width: 1366px) {
     .about-banner {
       &__icon-item {
+        margin-top: -50px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1270px) {
+    .about-banner {
+      &__main-title-wrapper {
+        padding-right: 0;
+      }
+
+      &__icon-item {
+        margin-top: 0;
+        img {
+          height: 340px;
+        }
       }
     }
   }
@@ -57,34 +74,7 @@ export default {
   @media only screen and (max-width: 1024px) {
     .about-banner {
       &__icon-item {
-      }
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .about-banner {
-      &__icon-item {
-      }
-    }
-  }
-
-  @media only screen and (max-width: 610px) {
-    .about-banner {
-      &__icon-item {
-      }
-    }
-  }
-
-  @media only screen and (max-width: 440px) {
-    .about-banner {
-      &__icon-item {
-      }
-    }
-  }
-
-  @media only screen and (max-width: 370px) {
-    .about-banner {
-      &__icon-item {
+        display: none;
       }
     }
   }
