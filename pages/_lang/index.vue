@@ -1,16 +1,19 @@
 <template>
   <main class="main">
     <Banner />
+    <WeCreateItProjectFor />
   </main>
 </template>
 
 <script>
 import Banner from '@/components/About/Banner';
+import WeCreateItProjectFor from '@/components/About/WeCreateItProjectFor';
 
 export default {
   name: 'About',
   components: {
-    Banner
+    Banner,
+    WeCreateItProjectFor
   },
   data() {
     return {
