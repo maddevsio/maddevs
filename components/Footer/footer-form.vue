@@ -3,11 +3,11 @@
 		<div class="fields-list">
 			<div class="field-item">
 				<p class="field-name">First name and surname</p>
-				<input type="text" class="entry-field" placeholder="John Smith">
+				<input type="text" class="entry-field">
 			</div>
 			<div class="field-item">
-				<p class="field-name required-field">Work email</p>
-				<input type="email" required class="entry-field" placeholder="your@company.co|">
+				<p class="field-name required">Work email</p>
+				<input type="email" required class="entry-field">
 			</div>
 			<div class="field-item">
 				<p class="field-name">Project Info</p>
@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<div class="form-checkboxes">
-			<label class="form-checkbox-label required-field" for="privacy-policy">I confirm that I have read and accepted Mad Devs’ <br> Privacy Policy
+			<label class="form-checkbox-label required" for="privacy-policy">I confirm that I have read and accepted Mad Devs’ <br> Privacy Policy
 				<input class="form-checkbox-input" id="privacy-policy" type="checkbox" name="Privacy policy">
 				<span class="checkmark"></span>
 			</label>
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/_vars';
+  @import '../../assets/styles/vars';
 
 	.footer-form {
 		width: 450px;
@@ -81,9 +81,9 @@ export default {
 				font-size: 17px;
 			}
 
-			.entry-field {
-				font-size: 17px;	
-			}
+      .entry-field {
+        font-size: 17px;
+      }
 		}
 	}
 

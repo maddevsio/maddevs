@@ -1,36 +1,60 @@
 <template>
 	<div class="footer-contacts">
 		<div class="footer-contacts__call-us">
-			<div class="footer-contacts__title">Call us:</div>
+			<h4 class="footer-contacts__title">Call us:</h4>
 			<ul class="footer-contacts__phones-list">
 				<li>
-					<a href="tel:+1 888 401 3401" class="footer-contacts__phone-item united-states">+1 888 401 3401</a>
+					<a href="tel:+1 888 401 3401" class="footer-contacts__phone-item">
+						<img src="../../assets/img/Flags/united-states.svg" alt="United States">
+						+1 888 401 3401
+					</a>
 				</li>
 				<li>
-					<a href="tel:+1 208 473 2904" class="footer-contacts__phone-item united-states">+1 208 473 2904</a>
+					<a href="tel:+1 208 473 2904" class="footer-contacts__phone-item">
+						<img src="../../assets/img/Flags/united-states.svg" alt="United States">
+						+1 208 473 2904
+					</a>
 				</li>
 				<li>
-					<a href="tel:+1 888 401 3401" class="footer-contacts__phone-item england">+1 888 401 3401</a>
+					<a href="tel:+1 888 401 3401" class="footer-contacts__phone-item">
+						<img src="../../assets/img/Flags/england.svg" alt="England">
+						+1 888 401 3401
+					</a>
 				</li>
 				<li>
-					<a href="tel:+1 208 473 2904" class="footer-contacts__phone-item england">+1 208 473 2904</a>
+					<a href="tel:+1 208 473 2904" class="footer-contacts__phone-item">
+						<img src="../../assets/img/Flags/england.svg" alt="England">
+						+1 208 473 2904
+					</a>
 				</li>
 			</ul>
 		</div>
 		<div class="footer-contacts__message-us">
-			<div class="footer-contacts__title">Message us:</div>
+			<h4 class="footer-contacts__title">Message us:</h4>
 			<ul class="footer-contacts__messengers-list">
 				<li>
-					<a href="#" class="footer-contacts__messenger-item footer-contacts__telegram">Telegram</a>
+					<a href="https://t.me/mun_tamara/" class="footer-contacts__messenger-item" target="_blank">
+						<img src="../../assets/img/Footer/telegram.svg" alt="Telegram">
+						Telegram
+					</a>
 				</li>
 				<li>
-					<a href="#" class="footer-contacts__messenger-item footer-contacts__whatsapp">Whatsapp</a>
+					<a href="http://wa.me/996555771481" class="footer-contacts__messenger-item" target="_blank">
+						<img src="../../assets/img/Footer/whatsapp.svg" alt="Whatsapp">
+						Whatsapp
+					</a>
 				</li>
 				<li>
-					<a href="#" class="footer-contacts__messenger-item footer-contacts__skype">Skype</a>
+					<a href="#" class="footer-contacts__messenger-item">
+						<img src="../../assets/img/Footer/signal.svg" alt="Signal">
+						Signal
+					</a>
 				</li>
 				<li>
-					<a href="#" class="footer-contacts__messenger-item footer-contacts__we-chat">WeChat</a>
+					<a href="#" class="footer-contacts__messenger-item">
+						<img src="../../assets/img/Footer/wechat.svg" alt="WeChat">
+						WeChat
+					</a>
 				</li>
 			</ul>
 		</div>
@@ -44,7 +68,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/_vars';
+  @import '../../assets/styles/vars';
 
 	.footer-contacts {
 		display: flex;
@@ -55,6 +79,7 @@ export default {
 			color: $text-color--grey-light;
 			font-family: 'Hoves-Regular';
 			font-size: 18px;
+			font-weight: 500;
 		}
 
 		&__phones-list,
@@ -73,43 +98,29 @@ export default {
 
 		&__phone-item,
 		&__messenger-item {
+			position: relative;
 			padding-left: 26px;
 			color: $text-color--grey;
 			font-family: 'Hoves-Regular';
 			text-decoration: none;
+
+			img {
+				position: absolute;
+				top: 5px;
+				left: 0;
+			}
 		}
 
 		&__phone-item {
 			font-size: 20px;
-			background-position-y: 5px;
+		}
+
+		&__messenger-item {
+			font-size: 18px;
 		}
 
 		&__message-us {
 			padding-left: 111px;
-		}
-
-		&__messengers-list {
-			font-size: 18px;
-
-			a {
-				background-position-y: 4px;
-			}
-		}
-
-		&__telegram {
-			background: url('../../assets/img/Footer/telegram.svg') no-repeat;
-		}
-
-		&__skype {
-			background: url('../../assets/img/Footer/skype.svg') no-repeat;
-		}
-
-		&__whatsapp {
-			background: url('../../assets/img/Footer/whatsapp.svg') no-repeat;
-		}
-
-		&__we-chat {
-			background: url('../../assets/img/Footer/wechat.svg') no-repeat;
 		}
 	}
 
@@ -142,7 +153,6 @@ export default {
 
 			&__phone-item {
 				font-size: 18px;
-				background-position-y: 4px;
 			}
 
 			&__messenger-item,
@@ -150,9 +160,10 @@ export default {
 				font-size: 17px;
 			}
 
-			&__messengers-list {
-				a {
-					background-position-y: 3px;
+			&__phone-item,
+			&__messenger-item {
+				img {
+					top: 4px;
 				}
 			}
 		}
@@ -171,15 +182,8 @@ export default {
 		.footer-contacts {
 			&__phone-item,
 			&__messenger-item {
+				top: 3px;
 				font-size: 16px;
-			}
-
-			&__phone-item {
-				background-position-y: 2px
-			}
-
-			&__messenger-item {
-				background-position-y: 3px
 			}
 
 			&__message-us {

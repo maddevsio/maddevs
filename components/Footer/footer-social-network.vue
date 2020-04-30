@@ -1,28 +1,28 @@
 <template>
 	<div class="footer-social-network">
 		<a href="https://github.com/maddevsio" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/github.svg" class="footer-social-network__github" alt="Maddevs GitHub">
+			<img src="../../assets/img/Footer/github.svg" class="footer-social-network__github" alt="Mad Devs GitHub">
 		</a>
 		<a href="https://www.facebook.com/maddevsio" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/facebook.svg" class="footer-social-network__facebook" alt="Maddevs Facebook">
+			<img src="../../assets/img/Footer/facebook.svg" class="footer-social-network__facebook" alt="Mad Devs Facebook">
 		</a>
 		<a href="https://www.instagram.com/maddevsio/" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/instagram.svg" class="footer-social-network__instagram" alt="Maddevs Instagram">
+			<img src="../../assets/img/Footer/instagram.svg" class="footer-social-network__instagram" alt="Mad Devs Instagram">
 		</a>
 		<a href="https://blog.maddevs.io/" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/medium.svg" class="footer-social-network__medium" alt="Maddevs Medium">
+			<img src="../../assets/img/Footer/medium.svg" class="footer-social-network__medium" alt="Mad Devs Medium">
 		</a>
 		<a href="https://twitter.com/MadDevsIO" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/twitter.svg" class="footer-social-network__twitter" alt="Maddevs Twitter">
+			<img src="../../assets/img/Footer/twitter.svg" class="footer-social-network__twitter" alt="Mad Devs Twitter">
 		</a>
 		<a href="https://www.slideshare.net/maddevs/presentations" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/slideshare.svg" class="footer-social-network__slideshare" alt="Maddevs Slideshare">
+			<img src="../../assets/img/Footer/slideshare.svg" class="footer-social-network__slideshare" alt="Mad Devs Slideshare">
 		</a>
 		<a href="https://www.youtube.com/channel/UCF6liiudpZq6AQe6hXVEW7w" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/youtube.svg" class="footer-social-network__youtube" alt="Maddevs YouTube">
+			<img src="../../assets/img/Footer/youtube.svg" class="footer-social-network__youtube" alt="Mad Devs YouTube">
 		</a>
 		<a href="https://www.behance.net/maddevs" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/behance.svg" class="footer-social-network__behance" alt="Maddevs Behance">
+			<img src="../../assets/img/Footer/behance.svg" class="footer-social-network__behance" alt="Mad Devs Behance">
 		</a>
 	</div>
 </template>
@@ -34,9 +34,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-	@import '../../assets/styles/_vars';
-	
-	.footer-social-network {
+  @import '../../assets/styles/vars';
+
+  .footer-social-network {
 		display: flex;
 		align-items: center;
 

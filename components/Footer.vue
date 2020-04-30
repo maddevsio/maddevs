@@ -16,9 +16,9 @@
 			<div class="footer__bottom-links-line">
 				<div class="footer__left-bottom_links">
 					<p class="footer__company-name">© MadDevs - 2020</p>
-					<a href="#" class="footer__bottom-link">GDPR Compliance Commitment</a>
+					<a href="https://maddevs.io/gdpr/" class="footer__bottom-link">GDPR Compliance Commitment</a>
 					<a href="#" class="footer__bottom-link">Privacy Policy</a>
-					<a href="#" class="footer__bottom-link">Non-Disclosure Agreement (NDA)</a>
+					<a href="https://maddevs.io/nda/" class="footer__bottom-link">Non-Disclosure Agreement (NDA)</a>
 				</div>
 				<footerSocialNetworkBar />
 			</div>
@@ -27,9 +27,9 @@
 </template>
 
 <script>
-import footerForm from '@/components/ui/footer-form';
-import footerContacts from '@/components/ui/footer-contacts';
-import footerSocialNetworkBar from '@/components/ui/footer-social-network';
+import footerForm from '@/components/Footer/footer-form';
+import footerContacts from '@/components/Footer/footer-contacts';
+import footerSocialNetworkBar from '@/components/Footer/footer-social-network';
 
 export default {
   name: 'Footer',
@@ -126,21 +126,17 @@ export default {
 
 	@media only screen and (max-width: 1024px) {
 		.footer {
+			&__content {
+				flex-direction: column;
+			}
+
 			&__bottom-links-line {
-				flex-direction: column-reverse;;
+				flex-direction: column-reverse;
 				padding-left: 0;
 			}
 
 			&__left-bottom_links {
 				padding-top: 20px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 1024px) {
-		.footer {
-			&__content {
-				flex-direction: column;
 			}
 		}
 	}
