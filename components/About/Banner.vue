@@ -56,6 +56,7 @@ export default {
     .about-banner {
       &__icon-item {
         margin-top: 0;
+
         img {
           height: 340px;
         }
