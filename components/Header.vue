@@ -65,7 +65,7 @@ export default {
       phones: [
         {
           phoneNumber: '+44 20 3984 8555',
-          country: 'england'
+          country: 'united-kingdom'
         },
         {
           phoneNumber: '+44 20 3984 8555',
@@ -82,7 +82,7 @@ export default {
       ],
       selectedPhone: {
         phoneNumber: '+44 20 3984 8555',
-        country: 'england'
+        country: 'united-kingdom'
       },
       mobileMenuIsOpen: false
     };

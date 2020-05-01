@@ -17,13 +17,13 @@
 				</li>
 				<li>
 					<a href="tel:+1 888 401 3401" class="footer-contacts__phone-item">
-						<img src="../../assets/img/Flags/england.svg" alt="England">
+						<img src="../../assets/img/Flags/united-kingdom.svg" alt="United Kingdom">
 						+1 888 401 3401
 					</a>
 				</li>
 				<li>
 					<a href="tel:+1 208 473 2904" class="footer-contacts__phone-item">
-						<img src="../../assets/img/Flags/england.svg" alt="England">
+						<img src="../../assets/img/Flags/united-kingdom.svg" alt="United Kingdom">
 						+1 208 473 2904
 					</a>
 				</li>
