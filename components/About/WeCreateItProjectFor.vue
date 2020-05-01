@@ -317,11 +317,11 @@ export default {
         &:nth-child(4) {
           grid-row-start: 2;
         }
-        
+
         &:nth-child(2) {
 					grid-row-start: 3;
         }
-        
+
         &:nth-child(3) {
           grid-row-start: 4;
         }

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Banner from '@/components/About/Banner';
+import Banner from '@/components/Banner';
 import WeCreateItProjectFor from '@/components/About/WeCreateItProjectFor';
 
 export default {
