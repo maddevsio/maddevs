@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Banner from '@/components/Services/Banner';
+import Banner from '@/components/Banner';
 import ItOutsourcing from '@/components/Services/ItOutsourcing';
 import SoftwareDevelopment from '@/components/Services/SoftwareDevelopment';
 import InfrastructureOptimisation from '@/components/Services/InfrastructureOptimisation';
