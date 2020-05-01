@@ -79,6 +79,7 @@ export default {
    @media only screen and (max-width: 1024px) {
     .navigation-list {
       flex-direction: column;
+
       .navigation-item {
         padding-bottom: 27px;
         font-size: 31px;
