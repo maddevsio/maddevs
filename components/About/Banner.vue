@@ -34,12 +34,8 @@ export default {
   @import '../../assets/styles/vars';
 
   .about-banner {
-    &__text-content_wrapper {
-      justify-content: space-between;
-    }
-
     &__main-title-wrapper {
-      padding-right: 60px;
+      padding-right: 40px;
     }
 
     &__icon-item {
@@ -58,10 +54,6 @@ export default {
 
   @media only screen and (max-width: 1270px) {
     .about-banner {
-      &__main-title-wrapper {
-        padding-right: 0;
-      }
-
       &__icon-item {
         margin-top: 0;
         img {
@@ -73,6 +65,10 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .about-banner {
+      &__main-title-wrapper {
+        padding-right: 0;
+      }
+
       &__icon-item {
         display: none;
       }
