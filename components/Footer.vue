@@ -15,7 +15,7 @@
 			</div>
 			<div class="footer__bottom-links-line">
 				<div class="footer__left-bottom_links">
-					<p class="footer__company-name">© MadDevs - 2020</p>
+					<p class="footer__company-name">© Mad Devs - {{ currentYear }}</p>
 					<a href="https://maddevs.io/gdpr/" class="footer__bottom-link">GDPR Compliance Commitment</a>
 					<a href="#" class="footer__bottom-link">Privacy Policy</a>
 					<a href="https://maddevs.io/nda/" class="footer__bottom-link">Non-Disclosure Agreement (NDA)</a>
@@ -37,6 +37,11 @@ export default {
     footerForm,
     footerContacts,
     footerSocialNetworkBar
+  },
+  data() {
+    return {
+      currentYear: new Date().getFullYear()
+    };
   }
 };
 </script>

@@ -1,12 +1,17 @@
 <template>
   <main class="main">
+    <Banner />
   </main>
 </template>
 
 <script>
+import Banner from '@/components/Banner';
 
 export default {
-  name: 'Home',
+  name: 'About',
+  components: {
+    Banner
+  },
   data() {
     return {
       title: this.$t('title-home'),
