@@ -28,3 +28,12 @@ export default {
   name: 'ProjectManagement'
 };
 </script>
+
+<style lang="scss" scoped>
+
+  @media only screen and (max-width: 520px) {
+    .icons-list {
+      max-width: 310px;
+    }
+  }
+</style>

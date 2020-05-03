@@ -296,6 +296,8 @@ export default {
 
   @media only screen and (max-width: 520px) {
     .we-create-it-project {
+      padding-bottom: 105px;
+
       &__main-title {
         font-size: 80px;
       }

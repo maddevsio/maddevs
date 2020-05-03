@@ -28,3 +28,31 @@ export default {
   name: 'InfrastructureFirstIconsGroup'
 };
 </script>
+
+<style lang="scss" scoped>
+
+  @media only screen and (max-width: 520px) {
+    .icons-list {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .icon-flex_group {
+      &:first-child {
+        .icon-item {
+          &:first-child {
+            padding-right: 95px;
+          }
+        }
+      }
+
+      &:last-child {
+        .icon-item {
+          &:first-child {
+            padding-right: 80px;
+          }
+        }
+      }
+    }
+  }
+</style>

@@ -66,4 +66,57 @@ export default {
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media only screen and (max-width: 520px) {
+    .icons-list {
+      max-width: 325px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .icon-item {
+      padding-right: 0;
+      &:nth-child(3) {
+        grid-column-start: 2;
+        grid-row-start: 2;
+      }
+
+      &:nth-child(6) {
+        grid-column-start: 1;
+        grid-row-start: 3;
+      }
+
+      &:nth-child(7) {
+        grid-column-start: 1;
+        grid-row-start: 4;
+      }
+
+      &:nth-child(8) {
+        grid-row-start: 3;
+      }
+
+      &:nth-child(9) {
+        grid-row-start: 6;
+      }
+
+      &:nth-child(10) {
+        grid-column-start: 2;
+        grid-row-start: 6;
+      }
+
+      &:nth-child(11) {
+        grid-row-start: 5;
+      }
+
+      &:nth-child(12) {
+        grid-column-start: 2;
+        grid-row-start: 5;
+      }
+
+      &:nth-child(13) {
+        grid-column-start: 2;
+        grid-row-start: 4;
+      }
+    }
+  }
 </style>

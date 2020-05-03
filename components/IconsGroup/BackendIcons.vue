@@ -1,5 +1,5 @@
 <template>
-  <div class="icons-list" :class="className">
+  <div class="icons-list">
     <div class="icon-flex_group">
       <div class="icon-item">
         <img src="../../assets/img/Technologies/svg/pyton.svg" alt="Python">
@@ -35,20 +35,33 @@
 
 <script>
 export default {
-  name: 'BackendIcons',
-  props: {
-    className: {
-      type: String,
-      default: 'class name'
-    }
-  }
+  name: 'BackendIcons'
 };
 </script>
 
 <style lang="scss" scoped>
-  .Backend {
-    .icon-flex_group {
-      display: none;
+
+  @media only screen and (max-width: 520px) {
+    .technologies-backend {
+      .icons-list {
+        display: grid;
+        grid-template-columns: repeat(2, 160px);
+      }
+
+      .icon-flex_group {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        &:last-child {
+          flex-direction: row;
+
+          .icon-item {
+            &:last-child {
+              padding-left: 63px;
+            }
+          }
+        } 
+      }
     }
   }
 </style>

@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <div class="technologies-item" :class="className">
-      <h4 class="technologies-item__title sub-title">{{ title }}</h4>
-      <p class="technologies-item__paragraph paragraph">{{ paragraph }}</p>
-      <FrontendIcons v-if="title === 'Frontend'" />
-      <BackendIcons v-if="title === 'Backend'" />
-      <MobileIcons v-if="title === 'Mobile'" />
-      <ProjectManagement v-if="title === 'Project Management'"/>
-    </div>
+  <div class="technologies-item" :class="className">
+    <h4 class="technologies-item__title sub-title">{{ title }}</h4>
+    <p class="technologies-item__paragraph paragraph">{{ paragraph }}</p>
+    <FrontendIcons v-if="title === 'Frontend'" />
+    <BackendIcons v-if="title === 'Backend'" />
+    <MobileIcons v-if="title === 'Mobile'" />
+    <ProjectManagement v-if="title === 'Project Management'"/>
   </div>
 </template>
 
@@ -56,5 +54,11 @@ export default {
 
   .backend {
     padding-bottom: 13px;
+  }
+
+  @media only screen and (max-width: 520px) {
+    .technologies-item {
+      padding-bottom: 25px;
+    }
   }
 </style>
