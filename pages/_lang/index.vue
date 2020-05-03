@@ -2,18 +2,21 @@
   <main class="main">
     <Banner />
     <WeCreateItProjectFor />
+    <TechnologiesAndTools />
   </main>
 </template>
 
 <script>
 import Banner from '@/components/Banner';
 import WeCreateItProjectFor from '@/components/About/WeCreateItProjectFor';
+import TechnologiesAndTools from '@/components/About/TechnologiesAndTools';
 
 export default {
   name: 'About',
   components: {
     Banner,
-    WeCreateItProjectFor
+    WeCreateItProjectFor,
+    TechnologiesAndTools
   },
   data() {
     return {

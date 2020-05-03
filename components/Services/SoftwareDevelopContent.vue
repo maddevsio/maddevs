@@ -15,9 +15,9 @@
       <p class="software-development__paragraph paragraph">{{ firstParagraph }}</p>
       <p class="software-development__paragraph paragraph">{{ secondParagraph }}</p>
       <p class="software-development__paragraph paragraph" v-if="title === 'Backend'">{{ thirdParagraph }}</p>
-      <SoftwareBackendIcons v-if="title === 'Backend'"/>
-      <SoftwareFrontendIcons v-if="title === 'Frontend'"/>
-      <SoftwareMobileIcons v-if="title === 'Mobile'"/>
+      <BackendIcons v-if="title === 'Backend'"/>
+      <FrontendIcons v-if="title === 'Frontend'"/>
+      <MobileIcons v-if="title === 'Mobile'"/>
     </div>
     <buttonTrigger :buttonInnerText="buttonInnerText"/>
   </div>
@@ -25,9 +25,9 @@
 
 <script>
 import buttonTrigger from '@/components/ui/button-trigger';
-import SoftwareBackendIcons from '@/components/Services/SoftwareBackendIcons';
-import SoftwareFrontendIcons from '@/components/Services/SoftwareFrontendIcons';
-import SoftwareMobileIcons from '@/components/Services/SoftwareMobileIcons';
+import BackendIcons from '@/components/IconsGroup/BackendIcons';
+import FrontendIcons from '@/components/IconsGroup/FrontendIcons';
+import MobileIcons from '@/components/IconsGroup/MobileIcons';
 
 export default {
   name: 'SoftwareDevelopment',
@@ -59,9 +59,9 @@ export default {
   },
   components: {
     buttonTrigger,
-    SoftwareBackendIcons,
-    SoftwareFrontendIcons,
-    SoftwareMobileIcons
+    BackendIcons,
+    FrontendIcons,
+    MobileIcons
   }
 };
 </script>

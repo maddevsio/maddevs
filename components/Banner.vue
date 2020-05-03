@@ -4,18 +4,18 @@
       <div class="banner-content">
         <div class="text-content_wrapper">
           <div class="main-title-wrapper">
-            <h1 class="banner-main_title" v-if="$nuxt.$route.path === '/services'">
+            <h1 class="banner-main_title" v-show="$nuxt.$route.path === '/services'">
               Your Trusted <br> <span class="media-item">IT</span>
               <span class="main-title-white_part">Outsourcing Partner</span>
             </h1>
-            <h1 class="banner-main_title" v-if="$nuxt.$route.path === '/'">
+            <h1 class="banner-main_title" v-show="$nuxt.$route.path === '/'">
               Mad Devs
               <span class="main-title-white_part"><br>Engineering<br>Your Growth</span>
             </h1>
           </div>
           <div class="icon-item">
-            <img src="../assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" v-if="$nuxt.$route.path === '/'">
-            <img src="../assets/img/Services/svg/make-partner.svg" alt="Make Partner Logotype" v-if="$nuxt.$route.path === '/services'">
+            <img src="../assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" v-show="$nuxt.$route.path === '/'">
+            <img src="../assets/img/Services/svg/make-partner.svg" alt="Make Partner Logotype" v-show="$nuxt.$route.path === '/services'">
           </div>
         </div>
         <navigationList />
