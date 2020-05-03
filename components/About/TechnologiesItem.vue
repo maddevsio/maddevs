@@ -1,18 +1,13 @@
 <template>
-  <div class="technologiesItem">
-    <h4 class="technologiesItem__title sub-title">{{ title }}</h4>
-    <p class="technologiesItem__paragraph paragraph">{{ paragraph }}</p>
-    <div class="infrastructure-content" v-if="title === 'Infrastructure'">
+  <div>
+    <div class="technologiesItem">
       <h4 class="technologiesItem__title sub-title">{{ title }}</h4>
-      <p class="technologiesItem__paragraph paragraph">{{ firstParagraph }}</p>
-      <InfrastructureFirstIconsGroup />
-      <p class="technologiesItem__paragraph paragraph">{{ secondParagraph }}</p>
-      <InfrastructureSecondIconsGroup />
+      <p class="technologiesItem__paragraph paragraph">{{ paragraph }}</p>
+      <BackendIcons v-if="title === 'Backend'"/>
+      <FrontendIcons v-if="title === 'Frontend'"/>
+      <MobileIcons v-if="title === 'Mobile'"/>
+      <ProjectManagement v-if="title === 'Project management'"/>
     </div>
-    <BackendIcons v-if="title === 'Backend'"/>
-    <FrontendIcons v-if="title === 'Frontend'"/>
-    <MobileIcons v-if="title === 'Mobile'"/>
-    <ProjectManagement v-if="title === 'Project management'"/>
   </div>
 </template>
 
@@ -20,12 +15,10 @@
 import BackendIcons from '@/components/IconsGroup/BackendIcons';
 import FrontendIcons from '@/components/IconsGroup/FrontendIcons';
 import MobileIcons from '@/components/IconsGroup/MobileIcons';
-import InfrastructureFirstIconsGroup from '@/components/IconsGroup/InfrastructureFirstIconsGroup';
-import InfrastructureSecondIconsGroup from '@/components/IconsGroup/MobileIcons';
 import ProjectManagement from '@/components/IconsGroup/ProjectManagement';
 
 export default {
-  name: 'TechnologiesAndTools',
+  name: 'TechnologiesItem',
   props: {
     title: {
       type: String,
@@ -34,20 +27,13 @@ export default {
     paragraph: {
       type: String,
       default: 'Paragraph'
-    },
-    firstParagraph: {
-      type: String,
-      default: 'Paragraph'
-    },
-    secondParagraph: {
-      type: String,
-      default: 'Paragraph'
     }
   },
   components: {
     BackendIcons,
     FrontendIcons,
-    MobileIcons
+    MobileIcons,
+    ProjectManagement
   }
 };
 </script>

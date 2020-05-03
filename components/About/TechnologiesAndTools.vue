@@ -2,7 +2,7 @@
   <section id="technologies-and-tools" class="TechnologiesAndTools">
     <div class="container">
       <div class="technologiesAndTools__content-wrap">
-        <h2 class="we-create-it-project__main-title main-title">
+        <h2 class="technologiesAndTools__main-title main-title">
             Technologies <br> & Tools
         </h2>
         <div class="technologiesAndTools__technologies-list">
@@ -22,11 +22,7 @@
             :title="projectManagement.title"
             :paragraph="projectManagement.paragraph" 
           />
-          <TechnologiesItem
-            :title="infrastructure.title"
-            :firstParagraph="infrastructure.firstParagraph" 
-            :secondParagraph="infrastructure.secondParagraph"
-          />
+          <InfrastructureTechnologiesItem />
         </div>
       </div>
     </div>
@@ -35,11 +31,13 @@
 
 <script>
 import TechnologiesItem from '@/components/About/TechnologiesItem';
+import InfrastructureTechnologiesItem from '@/components/About/InfrastructureTechnologiesItem';
 
 export default {
   name: 'TechnologiesAndTools',
   components: {
-    TechnologiesItem
+    TechnologiesItem,
+    InfrastructureTechnologiesItem
   },
   data() {
     return {
@@ -58,11 +56,6 @@ export default {
       projectManagement: {
         title: 'Project Management',
         paragraph: 'Our project managers can provide you with a detailed report on the workload of every team member. We use modern tools and solutions for task tracking, team sync-ups and our daily communication process:'
-      },
-      infrastructure: {
-        title: 'Infrastructure',
-        firstParagraph: 'We have helped our customers save up to 50% on infrastructure by optimising their cloud-resource consumption. We know how to get the best value for money, whichever cloud service provider you choose:',
-        secondParagraph: 'Mad Devs infrastructure leads also have expertise with a with a wide range of tools for tools сonfiguration, СI/CD and monitoring:'
       }
     };
   }
@@ -71,4 +64,10 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+
+  .technologiesAndTools {
+    &__main-title {
+      color: $text-color--white;
+    }
+  }
 </style>
