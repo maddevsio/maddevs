@@ -5,13 +5,14 @@
     <div class="infrastructure-content" v-if="title === 'Infrastructure'">
       <h4 class="technologiesItem__title sub-title">{{ title }}</h4>
       <p class="technologiesItem__paragraph paragraph">{{ firstParagraph }}</p>
-      <div></div>
+      <InfrastructureFirstIconsGroup />
       <p class="technologiesItem__paragraph paragraph">{{ secondParagraph }}</p>
-      <div></div>
+      <InfrastructureSecondIconsGroup />
     </div>
     <BackendIcons v-if="title === 'Backend'"/>
     <FrontendIcons v-if="title === 'Frontend'"/>
     <MobileIcons v-if="title === 'Mobile'"/>
+    <ProjectManagement v-if="title === 'Project management'"/>
   </div>
 </template>
 
@@ -19,6 +20,9 @@
 import BackendIcons from '@/components/IconsGroup/BackendIcons';
 import FrontendIcons from '@/components/IconsGroup/FrontendIcons';
 import MobileIcons from '@/components/IconsGroup/MobileIcons';
+import InfrastructureFirstIconsGroup from '@/components/IconsGroup/InfrastructureFirstIconsGroup';
+import InfrastructureSecondIconsGroup from '@/components/IconsGroup/MobileIcons';
+import ProjectManagement from '@/components/IconsGroup/ProjectManagement';
 
 export default {
   name: 'TechnologiesAndTools',
