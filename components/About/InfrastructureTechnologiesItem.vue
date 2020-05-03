@@ -27,4 +27,13 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+
+  .infrastructure-content {
+    padding-bottom: 40px;
+    
+    &__title,
+    &__paragraph {
+      color: $text-color--grey;
+    }
+  }
 </style>

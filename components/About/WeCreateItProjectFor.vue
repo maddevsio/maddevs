@@ -101,6 +101,7 @@ export default {
 
   .we-create-it-project {
     padding-top: 105px;
+    padding-bottom: 295px;
 
     &__content-wrap {
       display: flex;
