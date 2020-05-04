@@ -1,21 +1,21 @@
 <template>
-  <section id="banner" :class="`banner ${currentPage.name}`">
+  <section id="banner" :class="`banner ${currentPageName}`">
     <div class="container">
       <div class="banner-content">
         <div class="text-content_wrapper">
           <div class="main-title-wrapper">
-            <h1 class="banner-main_title" v-if="currentPage.path === '/services'">
+            <h1 class="banner-main_title" v-if="currentPageName === 'services'">
               Your Trusted <br> <span class="media-item">IT</span>
               <span class="main-title-white_part">Outsourcing Partner</span>
             </h1>
-            <h1 class="banner-main_title" v-if="currentPage.path === '/'">
+            <h1 class="banner-main_title" v-if="currentPageName === 'index'">
               Mad Devs
               <span class="main-title-white_part"><br>Engineering<br>Your Growth</span>
             </h1>
           </div>
           <div class="icon-item">
-            <img src="../assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" v-if="currentPage.path === '/'">
-            <img src="../assets/img/Services/svg/make-partner.svg" alt="Make Partner Logotype" v-if="currentPage.path === '/services'">
+            <img src="../assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" v-if="currentPageName === 'index'">
+            <img src="../assets/img/Services/svg/make-partner.svg" alt="Make Partner Logotype" v-if="currentPageName === 'services'">
           </div>
         </div>
         <navigationList />
@@ -34,16 +34,12 @@ export default {
   },
   mounted() {
     if ($nuxt.$route) {
-      this.currentPage.path = $nuxt.$route.path;
-      this.currentPage.name = $nuxt.$route.name;
+      this.currentPageName = $nuxt.$route.name;
     }
   },
   data() {
     return {
-      currentPage: {
-        path: '/',
-        name: ''
-      }
+      currentPageName: ''
     };
   }
 };
