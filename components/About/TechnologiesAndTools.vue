@@ -23,7 +23,6 @@
               <TechnologiesItem
                 :title="mobile.title"
                 :paragraph="mobile.paragraph"
-                :className="mobile.className"
                 class="technologies-mobile"
               />
               <TechnologiesItem
