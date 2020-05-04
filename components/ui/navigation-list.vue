@@ -1,6 +1,6 @@
 <template>
   <div class="navigation-wrap">
-    <nav class="navigation-list" v-if="$nuxt.$route.name === 'services'">
+    <nav class="navigation-list" v-if="currentPageName === 'services'">
       <a href="#it-outsourcing" class="navigation-item">IT Outsourcing</a>
       <a href="#software-development" class="navigation-item">Software Development</a>
       <a href="#infrastructure-optimisation" class="navigation-item">Infrastructure Optimization</a>
@@ -17,7 +17,17 @@
 
 <script>
 export default {
-  name: 'navigationList'
+  name: 'navigationList',
+  mounted() {
+    if ($nuxt.$route) {
+      this.currentPageName = $nuxt.$route.name;
+    }
+  },
+  data() {
+    return {
+      currentPageName: ''
+    };
+  }
 };
 </script>
 

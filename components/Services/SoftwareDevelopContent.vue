@@ -69,14 +69,14 @@ export default {
 <style lang="scss" scoped>
    @import '../../assets/styles/vars';
 
-   .software-development {
+  .software-development {
     button {
       width: 100%;
       color: $text-color--grey;
     }
 
 		&__content-item_wrapper {
-			color: $text-color--grey;
+      color: $text-color--grey;
     }
 
     &__content-item {
@@ -105,6 +105,12 @@ export default {
     &__mobile-title-icon {
       margin-left: -24px;
       margin-bottom: -10px;
+    }
+  }
+
+  .frontend-item {
+    .icon-list {
+      display: none;
     }
   }
 
