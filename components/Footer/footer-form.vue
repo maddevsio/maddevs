@@ -24,7 +24,7 @@
 				<span class="checkmark"></span>
 			</label>
 		</div>
-		<buttonTrigger :buttonInnerText="buttonInnerText" />
+		<buttonTrigger :buttonInnerText="buttonInnerText" class="red"/>
 	</form>
 </template>
 
@@ -49,11 +49,6 @@ export default {
 
 	.footer-form {
 		width: 450px;
-
-		button {
-			color: $text-color--red;
-			border-color: $border-color--red;
-		}
 	}
 
 	@media only screen and (max-width: 1420px) {

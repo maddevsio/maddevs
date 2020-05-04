@@ -23,7 +23,7 @@
               {{ country.countryName }}
             </li>
           </ul>
-          <buttonTrigger :buttonInnerText="buttonInnerText" />
+          <buttonTrigger :buttonInnerText="buttonInnerText" class="red"/>
         </div>
       </div>
     </div>
@@ -124,8 +124,6 @@ export default {
       button {
         width: 100%;
         margin-bottom: 15px;
-        color: $text-color--red;
-        border: 1px solid $border-color--red;
       }
     }
 
