@@ -50,10 +50,9 @@ export default {
 
       .icon-flex_group {
         flex-direction: column;
-        flex-wrap: nowrap;
-
         &:last-child {
           flex-direction: row;
+          flex-wrap: nowrap;
 
           .icon-item {
             &:last-child {
