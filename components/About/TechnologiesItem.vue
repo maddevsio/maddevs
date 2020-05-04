@@ -1,5 +1,5 @@
 <template>
-  <div class="technologies-item" :class="className">
+  <div class="technologies-item">
     <h4 class="technologies-item__title sub-title">{{ title }}</h4>
     <p class="technologies-item__paragraph paragraph">{{ paragraph }}</p>
     <FrontendIcons v-if="title === 'Frontend'" />
