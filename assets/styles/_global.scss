@@ -289,12 +289,6 @@
 }
 
 @media only screen and (max-width: 1180px) {
-  .software-development {
-    .icon-item {
-      padding-right: 20px;
-    }
-  }
-
   .title {
     font-size: 65px;
   }
@@ -305,21 +299,6 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .software-development {
-    .icons-list {
-      max-width: 300px;
-      flex-wrap: wrap;
-    }
-  }
-
-  .software-development {
-    .icon-flex_group {
-      &:nth-child(3) {
-        display: flex;
-      }
-    }
-  }
-
   .title {
     font-size: 80px;
   }
@@ -476,35 +455,4 @@
   left: 0;
   border-radius: 2px;
   background-color: $input-bgcolor--grey-dark;
-}
-
-// --------- About ----------//
-.technologies-item,
-.infrastructure-content {
-  .icon-flex_group {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .icon-item {
-    padding-bottom: 15px;
-    padding-right: 15px;
-  }
-
-  .icons-list {
-    padding: 13px 0;
-  }
-}
-
-// --------- Services ----------//
-.software-development {
-  .icon-item {
-    padding-bottom: 15px;
-    padding-right: 40px;
-  }
-
-  .icons-list {
-    padding-top: 18px;
-    padding-bottom: 46px;
-  }
 }

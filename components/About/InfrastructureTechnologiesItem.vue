@@ -33,5 +33,19 @@ export default {
     &__paragraph {
       color: $text-color--grey;
     }
+
+    /deep/.icon-flex_group {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /deep/.icon-item {
+      padding-bottom: 15px;
+      padding-right: 15px;
+    }
+
+    /deep/.icons-list {
+      padding: 13px 0;
+    }
   }
 </style>

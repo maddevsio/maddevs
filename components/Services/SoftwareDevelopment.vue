@@ -89,8 +89,9 @@ export default {
         text-shadow: $text-shadow--red;
       }
     }
-  }
 
+  }
+  
   @media only screen and (max-width: 1024px) {
     .software-development {
       &__flex-wrapper {
