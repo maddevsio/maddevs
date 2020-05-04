@@ -45,7 +45,7 @@ export default {
 
   .technologies-item {
     padding-bottom: 40px;
-    
+
     &__title,
     &__paragraph {
       color: $text-color--grey;

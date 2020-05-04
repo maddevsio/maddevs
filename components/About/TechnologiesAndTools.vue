@@ -104,7 +104,7 @@ export default {
       display: none;
     }
   }
-  
+
   @media only screen and (max-width: 1420px) {
     .technologies-and_tools {
       &__flex-group {

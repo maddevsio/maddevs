@@ -76,6 +76,7 @@ export default {
 
     .icon-item {
       padding-right: 0;
+
       &:nth-child(3) {
         grid-column-start: 2;
         grid-row-start: 2;

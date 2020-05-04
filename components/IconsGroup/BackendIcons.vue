@@ -50,6 +50,7 @@ export default {
 
       .icon-flex_group {
         flex-direction: column;
+
         &:last-child {
           flex-direction: row;
           flex-wrap: nowrap;
@@ -59,7 +60,7 @@ export default {
               padding-left: 63px;
             }
           }
-        } 
+        }
       }
     }
   }

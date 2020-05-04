@@ -87,7 +87,7 @@ export default {
       color: $text-color--grey;
     }
 
-		&__content-item_wrapper {
+    &__content-item_wrapper {
       color: $text-color--grey;
     }
 
