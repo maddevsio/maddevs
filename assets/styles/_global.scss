@@ -225,18 +225,16 @@
 
 .icons-list {
   display: flex;
-  padding-top: 18px;
-  padding-bottom: 46px;
 }
 
-.icon-flex_item {
+.icon-item {
   display: flex;
   align-items: center;
-  padding-bottom: 15px;
-  padding-right: 40px;
 
   span {
     padding-left: 7px;
+    color: $text-color--grey;
+    font-family: 'Hoves-Regular';
   }
 }
 
@@ -291,10 +289,6 @@
 }
 
 @media only screen and (max-width: 1180px) {
-  .icon-flex_item {
-    padding-right: 20px;
-  }
-
   .title {
     font-size: 65px;
   }
@@ -305,18 +299,6 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .icons-list {
-    max-width: 300px;
-    flex-wrap: wrap;
-  }
-
-  .icon-flex_group {
-
-    &:nth-child(3) {
-      display: flex;
-    }
-  }
-
   .title {
     font-size: 80px;
   }
