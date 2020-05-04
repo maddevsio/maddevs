@@ -18,6 +18,16 @@ describe('Banner', () => {
     });
   });
 
+  // ------ IMPORTANT ----- //
+  test('is a Vue instance', () => {
+    expect(wrapper.isVueInstance()).toBeTruthy();
+  });
+  
+  test('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot();
+  });
+  // --------------------- //
+
   it('has a mounted hook', () => {
     expect(typeof Banner.mounted).toBe('function');
   });
@@ -31,14 +41,4 @@ describe('Banner', () => {
   it('correctly sets the message when mounted', () => {
     expect(wrapper.vm.$data.currentPageName).toBe('/');
   });
-
-  // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBeTruthy();
-  });
-  
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-  // --------------------- //
 });
