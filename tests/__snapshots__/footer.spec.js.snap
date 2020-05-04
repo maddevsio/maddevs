@@ -1,0 +1,438 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<footer
+  class="footer"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="footer__content"
+    >
+      <div
+        class="footer__text-content"
+      >
+        <div
+          class="footer__title-wrap"
+        >
+          <h2
+            class="footer__main-title main-title"
+          >
+            Get In Touch
+          </h2>
+           
+          <a
+            class="footer__mailto-link"
+            href="mailto:team@maddevs.io"
+          >
+            team@maddevs.io
+          </a>
+        </div>
+         
+        <div
+          class="footer-contacts"
+        >
+          <div
+            class="footer-contacts__call-us"
+          >
+            <h4
+              class="footer-contacts__title"
+            >
+              Call us:
+            </h4>
+             
+            <ul
+              class="footer-contacts__phones-list"
+            >
+              <li>
+                <a
+                  class="footer-contacts__phone-item"
+                  href="tel:+1 888 401 3401"
+                >
+                  <img
+                    alt="United States"
+                    src="../../assets/img/Flags/united-states.svg"
+                  />
+                  
+					+1 888 401 3401
+				
+                </a>
+              </li>
+               
+              <li>
+                <a
+                  class="footer-contacts__phone-item"
+                  href="tel:+1 208 473 2904"
+                >
+                  <img
+                    alt="United States"
+                    src="../../assets/img/Flags/united-states.svg"
+                  />
+                  
+					+1 208 473 2904
+				
+                </a>
+              </li>
+               
+              <li>
+                <a
+                  class="footer-contacts__phone-item"
+                  href="tel:+1 888 401 3401"
+                >
+                  <img
+                    alt="United Kingdom"
+                    src="../../assets/img/Flags/united-kingdom.svg"
+                  />
+                  
+					+1 888 401 3401
+				
+                </a>
+              </li>
+               
+              <li>
+                <a
+                  class="footer-contacts__phone-item"
+                  href="tel:+1 208 473 2904"
+                >
+                  <img
+                    alt="United Kingdom"
+                    src="../../assets/img/Flags/united-kingdom.svg"
+                  />
+                  
+					+1 208 473 2904
+				
+                </a>
+              </li>
+            </ul>
+          </div>
+           
+          <div
+            class="footer-contacts__message-us"
+          >
+            <h4
+              class="footer-contacts__title"
+            >
+              Message us:
+            </h4>
+             
+            <ul
+              class="footer-contacts__messengers-list"
+            >
+              <li>
+                <a
+                  class="footer-contacts__messenger-item"
+                  href="https://t.me/mun_tamara/"
+                  target="_blank"
+                >
+                  <img
+                    alt="Telegram"
+                    src="../../assets/img/Footer/telegram.svg"
+                  />
+                  
+					Telegram
+				
+                </a>
+              </li>
+               
+              <li>
+                <a
+                  class="footer-contacts__messenger-item"
+                  href="http://wa.me/996555771481"
+                  target="_blank"
+                >
+                  <img
+                    alt="Whatsapp"
+                    src="../../assets/img/Footer/whatsapp.svg"
+                  />
+                  
+					Whatsapp
+				
+                </a>
+              </li>
+               
+              <li>
+                <a
+                  class="footer-contacts__messenger-item"
+                  href="#"
+                >
+                  <img
+                    alt="Signal"
+                    src="../../assets/img/Footer/signal.svg"
+                  />
+                  
+					Signal
+				
+                </a>
+              </li>
+               
+              <li>
+                <a
+                  class="footer-contacts__messenger-item"
+                  href="#"
+                >
+                  <img
+                    alt="WeChat"
+                    src="../../assets/img/Footer/wechat.svg"
+                  />
+                  
+					WeChat
+				
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+       
+      <div
+        class="footer__form-wrap"
+      >
+        <form
+          class="footer-form form"
+        >
+          <div
+            class="fields-list"
+          >
+            <div
+              class="field-item"
+            >
+              <p
+                class="field-name"
+              >
+                First name and surname
+              </p>
+               
+              <input
+                class="entry-field"
+                placeholder="John Smith"
+                type="text"
+              />
+            </div>
+             
+            <div
+              class="field-item"
+            >
+              <p
+                class="field-name required"
+              >
+                Work email
+              </p>
+               
+              <input
+                class="entry-field"
+                placeholder="your@company.co|"
+                required="required"
+                type="email"
+              />
+            </div>
+             
+            <div
+              class="field-item"
+            >
+              <p
+                class="field-name"
+              >
+                Project Info
+              </p>
+               
+              <input
+                class="entry-field"
+                placeholder="Describe your project..."
+                type="text"
+              />
+            </div>
+          </div>
+           
+          <div
+            class="form-checkboxes"
+          >
+            <label
+              class="form-checkbox-label required"
+              for="privacy-policy"
+            >
+              I confirm that I have read and accepted Mad Devs’ 
+              <br />
+               Privacy Policy
+			
+              <input
+                class="form-checkbox-input"
+                id="privacy-policy"
+                name="Privacy policy"
+                type="checkbox"
+              />
+               
+              <span
+                class="checkmark"
+              />
+            </label>
+             
+            <label
+              class="form-checkbox-label"
+              for="marketing-communications"
+            >
+              I agree to get Mad Devs’ discount offers and other 
+              <br />
+               marketing communications
+			
+              <input
+                class="form-checkbox-input"
+                id="marketing-communications"
+                name="Marketing communications"
+                type="checkbox"
+              />
+               
+              <span
+                class="checkmark"
+              />
+            </label>
+          </div>
+           
+          <button
+            class="show-popup_button"
+          >
+            
+  Order a project now
+
+          </button>
+        </form>
+      </div>
+    </div>
+     
+    <div
+      class="footer__bottom-links-line"
+    >
+      <div
+        class="footer__left-bottom_links"
+      >
+        <p
+          class="footer__company-name"
+        >
+          © Mad Devs - 2020
+        </p>
+         
+        <a
+          class="footer__bottom-link"
+          href="https://maddevs.io/gdpr/"
+        >
+          GDPR Compliance Commitment
+        </a>
+         
+        <a
+          class="footer__bottom-link"
+          href="#"
+        >
+          Privacy Policy
+        </a>
+         
+        <a
+          class="footer__bottom-link"
+          href="https://maddevs.io/nda/"
+        >
+          Non-Disclosure Agreement (NDA)
+        </a>
+      </div>
+       
+      <div
+        class="footer-social-network"
+      >
+        <a
+          class="footer-social-network__social-newtork_link"
+          href="https://github.com/maddevsio"
+          target="_blank"
+        >
+          <img
+            alt="Mad Devs GitHub"
+            class="footer-social-network__github"
+            src="../../assets/img/Footer/github.svg"
+          />
+        </a>
+         
+        <a
+          class="footer-social-network__social-newtork_link"
+          href="https://www.facebook.com/maddevsio"
+          target="_blank"
+        >
+          <img
+            alt="Mad Devs Facebook"
+            class="footer-social-network__facebook"
+            src="../../assets/img/Footer/facebook.svg"
+          />
+        </a>
+         
+        <a
+          class="footer-social-network__social-newtork_link"
+          href="https://www.instagram.com/maddevsio/"
+          target="_blank"
+        >
+          <img
+            alt="Mad Devs Instagram"
+            class="footer-social-network__instagram"
+            src="../../assets/img/Footer/instagram.svg"
+          />
+        </a>
+         
+        <a
+          class="footer-social-network__social-newtork_link"
+          href="https://blog.maddevs.io/"
+          target="_blank"
+        >
+          <img
+            alt="Mad Devs Medium"
+            class="footer-social-network__medium"
+            src="../../assets/img/Footer/medium.svg"
+          />
+        </a>
+         
+        <a
+          class="footer-social-network__social-newtork_link"
+          href="https://twitter.com/MadDevsIO"
+          target="_blank"
+        >
+          <img
+            alt="Mad Devs Twitter"
+            class="footer-social-network__twitter"
+            src="../../assets/img/Footer/twitter.svg"
+          />
+        </a>
+         
+        <a
+          class="footer-social-network__social-newtork_link"
+          href="https://www.slideshare.net/maddevs/presentations"
+          target="_blank"
+        >
+          <img
+            alt="Mad Devs Slideshare"
+            class="footer-social-network__slideshare"
+            src="../../assets/img/Footer/slideshare.svg"
+          />
+        </a>
+         
+        <a
+          class="footer-social-network__social-newtork_link"
+          href="https://www.youtube.com/channel/UCF6liiudpZq6AQe6hXVEW7w"
+          target="_blank"
+        >
+          <img
+            alt="Mad Devs YouTube"
+            class="footer-social-network__youtube"
+            src="../../assets/img/Footer/youtube.svg"
+          />
+        </a>
+         
+        <a
+          class="footer-social-network__social-newtork_link"
+          href="https://www.behance.net/maddevs"
+          target="_blank"
+        >
+          <img
+            alt="Mad Devs Behance"
+            class="footer-social-network__behance"
+            src="../../assets/img/Footer/behance.svg"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+`;
