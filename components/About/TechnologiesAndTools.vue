@@ -99,10 +99,6 @@ export default {
         max-width: 650px;
       }
     }
-
-    .icons-list {
-      display: none;
-    }
   }
 
   @media only screen and (max-width: 1420px) {
