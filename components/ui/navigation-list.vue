@@ -19,7 +19,7 @@
 export default {
   name: 'navigationList',
   mounted() {
-    if ($nuxt.$route) {
+    if ($nuxt.$route.name) {
       this.currentPageName = $nuxt.$route.name;
     }
   },

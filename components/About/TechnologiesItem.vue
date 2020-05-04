@@ -25,10 +25,6 @@ export default {
     paragraph: {
       type: String,
       default: 'Paragraph'
-    },
-    className: {
-      type: String,
-      default: 'class name'
     }
   },
   components: {
