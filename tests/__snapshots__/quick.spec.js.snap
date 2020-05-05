@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quick Project Start renders correctly 1`] = `
+<div
+  class="quick-project_start"
+  id="quick-project-start"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="quick-project_start__title-wrap"
+    >
+      <h2
+        class="quick-project_start__main-title main-title"
+      >
+        Quick 
+        <br />
+         Project Start
+      </h2>
+    </div>
+     
+    <div
+      class="quick-project_start__content-wrap"
+    >
+      <div
+        class="quick-project_start__content-items_list"
+      >
+        <div
+          class="quick-project_start__content-item"
+        >
+          <div
+            class="quick-project_start__icon-item contact"
+          >
+            <img
+              alt="contact"
+              class="quick-project_start__image-item"
+              src="[object Object]"
+            />
+          </div>
+           
+          <div
+            class="quick-project_start__text-item"
+          >
+            <h4
+              class="quick-project_start__title sub-title"
+            >
+              contact
+            </h4>
+             
+            <p
+              class="quick-project_start__paragraph paragraph"
+            >
+              Submit your project requestor project idea to us.
+            </p>
+          </div>
+        </div>
+        <div
+          class="quick-project_start__content-item"
+        >
+          <div
+            class="quick-project_start__icon-item analysis"
+          >
+            <img
+              alt="analysis"
+              class="quick-project_start__image-item"
+              src="[object Object]"
+            />
+          </div>
+           
+          <div
+            class="quick-project_start__text-item"
+          >
+            <h4
+              class="quick-project_start__title sub-title"
+            >
+              analysis
+            </h4>
+             
+            <p
+              class="quick-project_start__paragraph paragraph"
+            >
+              We will contact you to clarify your project requirements.
+            </p>
+          </div>
+        </div>
+        <div
+          class="quick-project_start__content-item"
+        >
+          <div
+            class="quick-project_start__icon-item proposal"
+          >
+            <img
+              alt="proposal"
+              class="quick-project_start__image-item"
+              src="[object Object]"
+            />
+          </div>
+           
+          <div
+            class="quick-project_start__text-item"
+          >
+            <h4
+              class="quick-project_start__title sub-title"
+            >
+              proposal
+            </h4>
+             
+            <p
+              class="quick-project_start__paragraph paragraph"
+            >
+              We will provide you with our free, non-binding bid or a tailored proposal.
+            </p>
+          </div>
+        </div>
+        <div
+          class="quick-project_start__content-item"
+        >
+          <div
+            class="quick-project_start__icon-item team"
+          >
+            <img
+              alt="team"
+              class="quick-project_start__image-item"
+              src="[object Object]"
+            />
+          </div>
+           
+          <div
+            class="quick-project_start__text-item"
+          >
+            <h4
+              class="quick-project_start__title sub-title"
+            >
+              team
+            </h4>
+             
+            <p
+              class="quick-project_start__paragraph paragraph"
+            >
+              We will assemble and prepare a team for your project.
+            </p>
+          </div>
+        </div>
+        <div
+          class="quick-project_start__content-item"
+        >
+          <div
+            class="quick-project_start__icon-item start"
+          >
+            <img
+              alt="start"
+              class="quick-project_start__image-item"
+              src="[object Object]"
+            />
+          </div>
+           
+          <div
+            class="quick-project_start__text-item"
+          >
+            <h4
+              class="quick-project_start__title sub-title"
+            >
+              start
+            </h4>
+             
+            <p
+              class="quick-project_start__paragraph paragraph"
+            >
+              You will get to know our team and we will organise the process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <div
+      class="quick-project_start__button-wrap"
+    >
+      <button
+        class="show-popup_button red"
+      >
+        
+  Order a project from us
+
+      </button>
+    </div>
+  </div>
+</div>
+`;
