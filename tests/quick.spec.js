@@ -7,7 +7,7 @@ describe('Quick Project Start', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(QuickProjectStart)
+    wrapper = mount(QuickProjectStart);
   });
 
   // ------ IMPORTANT ----- //

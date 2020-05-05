@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header renders correctly 1`] = `
+exports[`We Create It Project For renders correctly 1`] = `
 <section
   class="we-create-it-project"
   id="we-create-it-project"
