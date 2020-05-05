@@ -25,7 +25,9 @@
     "nuxt": "^2.12.2",
     "serve-static": "^1.14.1",
     "snyk": "^1.307.0",
+    "swiper": "^5.3.8",
     "vue-analytics": "^5.22.1",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-i18n": "^8.17.3",
     "vue-scrollto": "^2.18.1",
     "vue-slick": "^1.1.15"
