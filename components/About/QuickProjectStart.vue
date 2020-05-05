@@ -242,7 +242,7 @@ export default {
   @media only screen and (max-width: 1024px) {
     .quick-project_start {
       text-align: initial;
-      
+
       &__main-title {
         padding-bottom: 51px;
 
