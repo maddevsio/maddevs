@@ -3,6 +3,7 @@
     <Banner />
     <WeCreateItProjectFor />
     <TechnologiesAndTools />
+    <QuickProjectStart />
   </main>
 </template>
 
@@ -10,13 +11,15 @@
 import Banner from '@/components/Banner';
 import WeCreateItProjectFor from '@/components/About/WeCreateItProjectFor';
 import TechnologiesAndTools from '@/components/About/TechnologiesAndTools';
+import QuickProjectStart from '@/components/About/QuickProjectStart';
 
 export default {
   name: 'About',
   components: {
     Banner,
     WeCreateItProjectFor,
-    TechnologiesAndTools
+    TechnologiesAndTools,
+    QuickProjectStart
   },
   data() {
     return {

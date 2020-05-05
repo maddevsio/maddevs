@@ -30,6 +30,18 @@ export default {
     cursor: pointer;
   }
 
+  .red-text-and-border {
+    color: $text-color--red;
+    border: 1px solid $border-color--red;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .show-popup_button {
+      height: 54px;
+      font-size: 17px;
+    }
+  }
+
   @media only screen and (max-width: 520px) {
     .show-popup_button {
       height: 50px;
