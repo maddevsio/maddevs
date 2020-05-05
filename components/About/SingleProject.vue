@@ -9,14 +9,12 @@
         work as a seamless system, ensuring a smooth delivery process for
         food and other goods.
       </p> 
-      <div class="single-project__contribution-vidget">
+      <div class="contribution-vidget">
         <img :src="require(`../../assets/img/Home/svg/${contributionVidgetImg}.svg`)" alt="Mad Devs">
-        <span>contribution: backend, infrastructure, frontend</span>
+        <span class="contribution-vidget__content">contribution: backend, infrastructure, frontend</span>
       </div>
     </div>
-    <div class="single-project__background-wrap">
-      <div class="single-project__background"></div>
-    </div>
+    <div class="single-project__background"></div>
   </div>
 </template>
 
@@ -57,7 +55,7 @@ export default {
     margin-top: 33px;
   }
 
-  &__contribution-vidget {
+  .contribution-vidget {
     display: flex;
     align-items: center;
     color: $text-color--grey;
@@ -69,18 +67,18 @@ export default {
     img {
       margin-right: 6px;
     }
-  }
 
-  &__background-wrap {
-    width: 100%;
-    height: 227px;
-    padding: 0;
-    margin: 0;
+    &__content {
+      margin-left: 6px;
+    }
   }
 
   &__background {
-    height: 100%;
-    background-image: url('../../assets/img/Studies/svg/nambafoodBackground.svg');
+    width: 100%;
+    height: 246px;
+    background-image: url('../../assets/img/Studies/png/nambafoodBackground.png');
+    vertical-align: middle;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
