@@ -23,7 +23,7 @@
               {{ country.countryName }}
             </li>
           </ul>
-          <buttonTrigger :buttonInnerText="buttonInnerText" class="red"/>
+          <buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
         </div>
       </div>
     </div>

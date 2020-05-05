@@ -24,7 +24,7 @@
 				<span class="checkmark"></span>
 			</label>
 		</div>
-		<buttonTrigger :buttonInnerText="buttonInnerText" class="red"/>
+		<buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
 	</form>
 </template>
 

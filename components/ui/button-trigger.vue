@@ -30,7 +30,7 @@ export default {
     cursor: pointer;
   }
 
-  .red {
+  .red-text-and-border {
     color: $text-color--red;
     border: 1px solid $border-color--red;
   }

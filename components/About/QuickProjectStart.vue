@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="quick-project_start__button-wrap">
-        <buttonTrigger :buttonInnerText="buttonInnerText" class="red"/>
+        <buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
       </div>
     </div>
   </div>

@@ -289,7 +289,7 @@ exports[`Footer renders correctly 1`] = `
           </div>
            
           <button
-            class="show-popup_button red"
+            class="show-popup_button red-text-and-border"
           >
             
   Order a project now

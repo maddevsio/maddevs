@@ -41,7 +41,7 @@
             </div>
             <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
           </div>
-          <buttonTrigger :buttonInnerText="buttonInnerText" class="red"/>
+          <buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
         </div>
       </div>
       <mobileMenu v-on:getMobileMenuState="getMobileMenuState($event)"/>
