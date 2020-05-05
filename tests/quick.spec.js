@@ -10,6 +10,22 @@ describe('Quick Project Start', () => {
     wrapper = mount(QuickProjectStart);
   });
 
+  test('itemsTextContent must contain five elements', () => {
+    expect(wrapper.vm.$data.itemsTextContent).toHaveLength(5);
+  });
+
+  test('correctly length of elements in DOM', () => {
+    let contentItems = wrapper.findAll('.quick-project_start__content-item');
+    expect(contentItems).toHaveLength(5);
+  });
+
+  it('correctly sets inner text in button', () => {
+    expect(wrapper.vm.$data.buttonInnerText).toBe('Order a project from us');
+
+    let button = wrapper.find('.show-popup_button');
+    expect(button.text()).toBe('Order a project from us');
+  });
+
   // ------ IMPORTANT ----- //
   test('is a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBeTruthy();
