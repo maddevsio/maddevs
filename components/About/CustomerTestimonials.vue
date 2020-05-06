@@ -6,7 +6,7 @@
       </h1>
       <div class="customer-testimonials__content-wrap">
         <div class="customer-testimonials__widget-wrap">
-          <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="4" data-expandifr="true" data-height="auto" data-snippets="true" data-clutchcompany-id="258762"></div>
+          <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="4" data-expandifr="true" data-height="auto" data-clutchcompany-id="258762" v-if="loaded"></div>
         </div>
         <div class="customer-testimonials__testimonials-list">
           <div class="customer-testimonials__testimonials-item" v-for="(testimonial, i) in testimonials" :key="i">
@@ -17,7 +17,7 @@
               <div class="customer-testimonials__profile">
                 <img :src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)" class="customer-testimonials__customer-image" :alt="testimonial.customerName">
                 <p class="customer-testimonials__customer-name">
-                  {{ testimonial.customerName }}, <br> {{ testimonial.customerCountry }}
+                  {{ testimonial.customerName }} <br> {{ testimonial.customerCountry }}
                 </p>
               </div>
               <div class="customer-testimonials__project">
@@ -52,14 +52,18 @@ export default {
           testimonialText: 'We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.'
         },
         {
-          customerName: 'Stefan Streichsbier',
+          customerName: 'Stefan Streichsbier,',
           customerCountry: 'Singapore',
           customerProject: 'guardrails',
           customerImageName: 'stefan',
           testimonialText: 'I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.'
         }
-      ]
+      ],
+      loaded: false
     };
+  },
+  mounted() {
+    this.loaded = true;
   }
 };
 </script>
