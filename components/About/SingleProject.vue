@@ -1,7 +1,7 @@
 <template>
   <div class="single-project">
     <div class="single-project__content-wrap">
-      <img :src="require(`../../assets/img/Home/svg/clients/${logoImg}.svg`)" class="single-project__logo" alt="Namba Food" />
+      <img :src="require(`@/assets/img/Home/svg/clients/${logoImg}.svg`)" class="single-project__logo" alt="Namba Food" />
       <h4 class="single-project__sub-title sub-title">Contactless delivery service</h4>
       <p class="single-project__paragraph paragraph">
         Mad Devs created the Namba Food delivery service from scratch. The
@@ -10,7 +10,7 @@
         food and other goods.
       </p> 
       <div class="contribution-vidget">
-        <img :src="require(`../../assets/img/Home/svg/${contributionVidgetImg}.svg`)" alt="Mad Devs">
+        <img :src="require(`@/assets/img/Home/svg/${contributionVidgetImg}.svg`)" alt="Mad Devs">
         <span class="contribution-vidget__content">contribution: backend, infrastructure, frontend</span>
       </div>
     </div>
