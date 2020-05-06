@@ -9,10 +9,37 @@
         <SingleProject
           logoImg="nambafoodColored"
           contributionVidgetImg="maddevsLogoWithoutText"
+          projectBackground="nambafoodBackground"
+          projectColor="#f8f7f6"
+          projectTitle="Contactless delivery service"
+          projectDescription="Mad Devs created the Namba Food delivery service from scratch. The
+        apps for couriers, end users placing orders and business owners
+        work as a seamless system, ensuring a smooth delivery process for
+        food and other goods."
         />
         <SingleProject
-          logoImg="nambafoodColored"
+          logoImg="teacherlyColored"
           contributionVidgetImg="maddevsLogoWithoutText"
+          projectBackground="teacherlyBackground"
+          projectColor="#56448E"
+          projectTitle="EdTech collaboration platform"
+          projectDescription="Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform."
+        />
+        <SingleProject
+          logoImg="guardrailsColored"
+          contributionVidgetImg="maddevsLogoWithoutText"
+          projectBackground="guardrailsBackground"
+          projectColor="#0E1B27"
+          projectTitle="Cloud cybersecurity service"
+          projectDescription="Mad Devs was involved with Guardrails' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes."
+        />
+        <SingleProject
+          logoImg="godeeColored"
+          contributionVidgetImg="maddevsLogoWithoutText"
+          projectBackground="godeeBackground"
+          projectColor="#FF6A01"
+          projectTitle="Mass transportation company"
+          projectDescription="Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers."
         />
       </div>
     </div>
@@ -22,12 +49,23 @@
           <SingleProject
             logoImg="nambafoodColored"
             contributionVidgetImg="maddevsLogoWithoutText"
-          />
+            projectBackground="nambafoodBackground"
+            projectColor="#f8f7f6"
+            projectTitle="Contactless delivery service"
+            projectDescription="Mad Devs created the Namba Food delivery service from scratch. The
+          apps for couriers, end users placing orders and business owners
+          work as a seamless system, ensuring a smooth delivery process for
+          food and other goods."
+        />
         </swiper-slide>
         <swiper-slide>
           <SingleProject
-            logoImg="nambafoodColored"
+            logoImg="teacherlyColored"
             contributionVidgetImg="maddevsLogoWithoutText"
+            projectBackground="teacherlyBackground"
+            projectColor="#56448E"
+            projectTitle="EdTech collaboration platform"
+            projectDescription="Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform."
           />
         </swiper-slide>
       </swiper>
@@ -100,10 +138,6 @@ export default {
 
     .projects-mobile-slider {
       display: block;
-    }
-
-    .single-project {
-      width: 100%;
     }
 
     .swiper-slide {

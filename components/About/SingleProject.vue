@@ -1,20 +1,15 @@
 <template>
-  <div class="single-project">
+  <div class="single-project" :style="computedProjectColor">
     <div class="single-project__content-wrap">
       <img :src="require(`@/assets/img/Home/svg/clients/${logoImg}.svg`)" class="single-project__logo" alt="Namba Food" />
-      <h4 class="single-project__sub-title sub-title">Contactless delivery service</h4>
-      <p class="single-project__paragraph paragraph">
-        Mad Devs created the Namba Food delivery service from scratch. The
-        apps for couriers, end users placing orders and business owners
-        work as a seamless system, ensuring a smooth delivery process for
-        food and other goods.
-      </p> 
+      <h4 class="single-project__sub-title sub-title">{{projectTitle}}</h4>
+      <p class="single-project__paragraph paragraph">{{projectDescription}}</p> 
       <div class="contribution-vidget">
         <img :src="require(`@/assets/img/Home/svg/${contributionVidgetImg}.svg`)" alt="Mad Devs">
         <span class="contribution-vidget__content">contribution: backend, infrastructure, frontend</span>
       </div>
     </div>
-    <div class="single-project__background"></div>
+    <div class="single-project__background" :style="{'background-image': 'url(' + require(`@/assets/img/Studies/png/${setProjectBackground(projectBackground)}.png`) + ')'}"></div>
   </div>
 </template>
 
@@ -22,16 +17,52 @@
 
 export default {
   name: 'SingleProject',
+  data() {
+    return {
+      bgStyleObject: {
+        background: '#56448E'
+      }
+    };
+  },
+  methods: {
+    setProjectBackground(projectBackground) {
+      return projectBackground;
+    }
+  },
+  computed: {
+    computedProjectColor: function() {
+      console.log(this.projectColor);
+      return {
+        background: this.projectColor 
+      };
+    }
+  },
   props: {
     logoImg: {
       type: String,
-      required: true,
+      required: false,
       default: '@/assets/img/Home/svg/clients/logoImg.svg'
     },
     contributionVidgetImg: {
       type: String,
-      required: true,
+      required: false,
       default: '@/assets/img/Home/svg/contributionVidgetImg.svg'
+    },
+    projectTitle: {
+      type: String,
+      required: false
+    },
+    projectDescription: {
+      type: String,
+      required: false
+    },
+    projectBackground: {
+      type: String,
+      required: false
+    },
+    projectColor: {
+      type: String,
+      required: false
     }
   }
 };
@@ -49,7 +80,15 @@ export default {
 
 .single-project {
   width: 50%;
-  background: $bgcolor--project-white;
+  min-width: 400px;
+
+  @media only screen and (max-width: 1020px) {
+    width: 100%;
+
+    &__content-wrap {
+      margin:  68px 30px 0;
+    }
+  }
 
   &__content-wrap {
     margin:  74px 70px 0;
@@ -86,7 +125,7 @@ export default {
   }
 
   &__background {
-    background: url('../../assets/img/Studies/png/nambafoodBackground.png') no-repeat;
+    background-repeat: no-repeat;
     @include responsive-bg-image(394, 232); // sass-lint:disable-line mixins-before-declarations
     position: relative;
     bottom: 79px;
