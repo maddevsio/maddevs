@@ -41,7 +41,7 @@
             </div>
             <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
           </div>
-          <buttonTrigger :buttonInnerText="buttonInnerText"/>
+          <buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
         </div>
       </div>
       <mobileMenu v-on:getMobileMenuState="getMobileMenuState($event)"/>
@@ -108,8 +108,6 @@ export default {
     button {
       width: 135px;
       height: 40px;
-      color: $text-color--red;
-      border-color: $border-color--red;
     }
 
     &__header-logo {
