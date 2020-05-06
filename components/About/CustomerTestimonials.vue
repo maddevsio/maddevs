@@ -7,12 +7,12 @@
       <div class="customer-testimonials__content-wrap">
         <div class="customer-testimonials__widget-wrap">
           <div 
-            class="clutch-widget" 
-            data-url="https://widget.clutch.co" 
-            data-widget-type="4" 
-            data-expandifr="true" 
-            data-height="auto" 
-            data-clutchcompany-id="258762" 
+            class="clutch-widget"
+            data-url="https://widget.clutch.co"
+            data-widget-type="4"
+            data-expandifr="true"
+            data-height="auto"
+            data-clutchcompany-id="258762"
             v-if="pageWasLoaded">
           </div>
         </div>
