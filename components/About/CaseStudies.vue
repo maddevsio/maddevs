@@ -65,8 +65,7 @@ export default {
 
     span {
       color: $text-color--black;
-      text-shadow: -1px 0 $text-color--red, 0 1px $text-color--red,
-        1px 0 $text-color--red, 0 -1px $text-color--red;
+      text-shadow: $text-shadow--red;
     }
   }
 

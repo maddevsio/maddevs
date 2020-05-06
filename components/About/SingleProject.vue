@@ -25,11 +25,13 @@ export default {
   props: {
     logoImg: {
       type: String,
-      required: true
+      required: true,
+      default: '@/assets/img/Home/svg/clients/logoImg.svg'
     },
     contributionVidgetImg: {
       type: String,
-      required: true
+      required: true,
+      default: '@/assets/img/Home/svg/contributionVidgetImg.svg'
     }
   }
 };
@@ -71,10 +73,6 @@ export default {
     margin-top: 36px;
     font-size: 16px;
     line-height: 23px;
-
-    img {
-      margin-right: 6px;
-    }
 
     &__content {
       margin-left: 6px;
