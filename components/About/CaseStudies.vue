@@ -90,6 +90,7 @@ export default {
 
 @media only screen and (max-width: 768px) {
   .case-studies {
+
     &__main-title {
       padding-bottom: 31px;
     }
@@ -101,7 +102,7 @@ export default {
     .projects-mobile-slider {
       display: block;
     }
-        
+
     .single-project {
       width: 100%;
     }

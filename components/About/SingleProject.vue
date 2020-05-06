@@ -70,7 +70,7 @@ export default {
     font-family: 'Hoves-Regular';
     margin-top: 36px;
     font-size: 16px;
-    line-height: 23px
+    line-height: 23px;
 
     img {
       margin-right: 6px;
@@ -102,7 +102,7 @@ export default {
   @media only screen and (max-width: 576px) {
     .single-project {
       width: 100%;
-      
+
       &__content-wrap {
         margin:  40px 34px 0;
       }
