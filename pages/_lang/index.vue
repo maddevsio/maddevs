@@ -3,6 +3,7 @@
     <Banner />
     <WeCreateItProjectFor />
     <TechnologiesAndTools />
+    <CaseStudies />
     <QuickProjectStart />
     <CustomerTestimonials />
   </main>
@@ -12,6 +13,7 @@
 import Banner from '@/components/Banner';
 import WeCreateItProjectFor from '@/components/About/WeCreateItProjectFor';
 import TechnologiesAndTools from '@/components/About/TechnologiesAndTools';
+import CaseStudies from '@/components/About/CaseStudies';
 import QuickProjectStart from '@/components/About/QuickProjectStart';
 import CustomerTestimonials from '@/components/About/CustomerTestimonials';
 
@@ -21,8 +23,9 @@ export default {
     Banner,
     WeCreateItProjectFor,
     TechnologiesAndTools,
-    QuickProjectStart,
-    CustomerTestimonials
+    CustomerTestimonials,
+    CaseStudies,
+    QuickProjectStart
   },
   data() {
     return {
