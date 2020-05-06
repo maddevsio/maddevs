@@ -79,14 +79,20 @@ export default {
     &__content {
       margin-left: 6px;
     }
+
+    @media only screen and (max-width: 576px) {
+        &__content {
+          color: $text-color--black;
+        }
+    }
   }
 
   &__background {
     background: url('../../assets/img/Studies/png/nambafoodBackground.png') no-repeat;
-    @include responsive-bg-image(394, 232);
+    @include responsive-bg-image(394, 232); // sass-lint:disable-line mixins-before-declarations
     position: relative;
     bottom: 79px;
-    margin-bottom: -79px;
+    margin-bottom: -80px;
   }
 
   @media only screen and (max-width: 768px) {
@@ -109,13 +115,7 @@ export default {
 
       &__background {
         bottom: 104px;
-        margin-bottom: -104px;
-      }
-
-      .contribution-vidget {
-        &__content {
-          color: $text-color--black;
-        }
+        margin-bottom: -105px;
       }
     }
   }
