@@ -4,56 +4,24 @@
       <h1 class="customer-testimonials__main-title main-title">
         <span>Customer</span> Testimonials
       </h1>
-      <div class="customer-testimonials___content-wrap">
+      <div class="customer-testimonials__content-wrap">
         <div class="customer-testimonials__widget-wrap">
-          <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script> <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="5" data-expandifr="true" data-height="auto" data-clutchcompany-id="258762"></div>
+          <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="4" data-expandifr="true" data-height="auto" data-snippets="true" data-clutchcompany-id="258762"></div>
         </div>
         <div class="customer-testimonials__testimonials-list">
-          <div class="customer-testimonials__testimonials-item">
+          <div class="customer-testimonials__testimonials-item" v-for="(testimonial, i) in testimonials" :key="i">
             <div class="customer-testimonials__testimonials-text paragraph">
-              Being a small team without a project manager we have <br> never regretted of the collaboration with Mad Devs. <br> The team shared the product ownership and <br> responsibility for its development.
+              {{ testimonial.testimonialText }}
             </div>
             <div class="customer-testimonials__customer-info">
               <div class="customer-testimonials__profile">
-                <img src="../../assets/img/Home/png/customers/atif.png" class="customer-testimonials__customer-image" alt="Atif Mahmud">
+                <img :src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)" class="customer-testimonials__customer-image" :alt="testimonial.customerName">
                 <p class="customer-testimonials__customer-name">
-                  Atif Mahmud, <br> The UK
+                  {{ testimonial.customerName }}, <br> {{ testimonial.customerCountry }}
                 </p>
               </div>
               <div class="customer-testimonials__project">
-                <img src="../../assets/img/Home/svg/customerTestimonials/teacherly.svg" class="customer-testimonials__project-image" alt="Teacherly">
-              </div>
-            </div>
-          </div>
-          <div class="customer-testimonials__testimonials-item">
-            <div class="customer-testimonials__testimonials-text paragraph">
-              We would never had a better deal on the labour market <br> on our own. Buying from Mad Devs was our best way of <br> finding a top-notch DevOps engineer.
-            </div>
-            <div class="customer-testimonials__customer-info">
-              <div class="customer-testimonials__profile">
-                <img src="../../assets/img/Home/png/customers/daniel.png" class="customer-testimonials__customer-image" alt="Daniel Vartanov">
-                <p class="customer-testimonials__customer-name">
-                  Daniel Vartanov, <br> The UK
-                </p>
-              </div>
-              <div class="customer-testimonials__project">
-                <img src="../../assets/img/Home/svg/customerTestimonials/veeqo.svg" class="customer-testimonials__project-image" alt="Veeqo">
-              </div>
-            </div>
-          </div>
-          <div class="customer-testimonials__testimonials-item">
-            <div class="customer-testimonials__testimonials-text paragraph">
-              I am very happy with Mad Devs services so far. <br> Looking forward to a long and fruitful partnership.
-            </div>
-            <div class="customer-testimonials__customer-info">
-              <div class="customer-testimonials__profile">
-                <img src="../../assets/img/Home/png/customers/stefan.png" class="customer-testimonials__customer-image" alt="Stefan Streichsbier">
-                <p class="customer-testimonials__customer-name">
-                  Stefan Streichsbier, <br> Singapore
-                </p>
-              </div>
-              <div class="customer-testimonials__project">
-                <img src="../../assets/img/Home/svg/customerTestimonials/guardrails.svg" class="customer-testimonials__project-image" alt="Guardrails">
+                <img :src="require(`@/assets/img/Home/svg/customerTestimonials/${testimonial.customerProject}.svg`)" class="customer-testimonials__project-image" :alt="testimonial.customerProject">
               </div>
             </div>
           </div>
@@ -65,24 +33,47 @@
 
 <script>
 export default {
-  name: 'CustomerTestimonials'
+  name: 'CustomerTestimonials',
+  data() {
+    return {
+      testimonials: [
+        {
+          customerName: 'Atif Mahmud,',
+          customerCountry: 'The UK',
+          customerProject: 'teacherly',
+          customerImageName: 'atif',
+          testimonialText: 'Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.'
+        },
+        {
+          customerName: 'Daniel Vartanov,',
+          customerCountry: 'The UK',
+          customerProject: 'veeqo',
+          customerImageName: 'daniel',
+          testimonialText: 'We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.'
+        },
+        {
+          customerName: 'Stefan Streichsbier',
+          customerCountry: 'Singapore',
+          customerProject: 'guardrails',
+          customerImageName: 'stefan',
+          testimonialText: 'I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.'
+        }
+      ]
+    };
+  }
 };
 </script>
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
 
-  .clutch-widget {
-    iframe {
-      width: 300px !important;
-      height: 300px !important;
-    }
-  }
-
   .customer-testimonials {
+    padding: 144px 0;
     background-color: $bgcolor--grey-light;
 
     &__main-title {
+      padding-bottom: 59px;
+
       span {
         color: $text-color--grey-light;
         text-shadow: $text-shadow--black;
@@ -90,17 +81,51 @@ export default {
     }
 
     &__testimonials-list {
-      display: grid;
-      grid-row-gap: 49px;
+      max-height: 785px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 50px;
     }
 
-     &__testimonials-item {
+    &__content-wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__testimonials-item {
       max-width: 445px;
-     }
+      padding-top: 54px;
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        div {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    &__testimonials-text {
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 18px;
+        height: 12px;
+        position: absolute;
+        top: 5px;
+        left: -23px;
+        background: url('../../assets/img/Home/svg/customerTestimonials/quotes.svg') no-repeat center; 
+      }
+    }
 
     &__customer-info {
+      justify-content: space-between;
       padding-top: 15px;
-      padding-bottom: 60px;
+      padding-bottom: 54px;
+      border-bottom: 1px solid $input-bgcolor--grey-dark;
     }
 
     &__customer-info,
@@ -110,14 +135,35 @@ export default {
     }
 
     &__customer-image {
-      padding-right: 14px;
       border-radius: 100%;
     }
 
     &__customer-name {
+      padding-left: 14px;
       color: $text-color--grey;
       font-family: 'Hoves-Regular';
       font-size: 16px;
     }
+
+    &__widget-wrap {
+      width: 813px;
+      height: 100%;
+      overflow: hidden;
+
+      .clutch-widget {
+        margin: 0 -30px;
+      }
+    }
   }
+
+   @media only screen and (max-width: 1310px) {
+    .customer-testimonials {
+      &__widget-wrap {
+        .clutch-widget {
+          margin: initial;
+        }
+      }
+    }
+  }
+  
 </style>

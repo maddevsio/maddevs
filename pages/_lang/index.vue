@@ -4,6 +4,7 @@
     <WeCreateItProjectFor />
     <TechnologiesAndTools />
     <QuickProjectStart />
+    <CustomerTestimonials />
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import Banner from '@/components/Banner';
 import WeCreateItProjectFor from '@/components/About/WeCreateItProjectFor';
 import TechnologiesAndTools from '@/components/About/TechnologiesAndTools';
 import QuickProjectStart from '@/components/About/QuickProjectStart';
+import CustomerTestimonials from '@/components/About/CustomerTestimonials';
 
 export default {
   name: 'About',
@@ -19,7 +21,8 @@ export default {
     Banner,
     WeCreateItProjectFor,
     TechnologiesAndTools,
-    QuickProjectStart
+    QuickProjectStart,
+    CustomerTestimonials
   },
   data() {
     return {
