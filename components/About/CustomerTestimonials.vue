@@ -6,7 +6,15 @@
       </h1>
       <div class="customer-testimonials__content-wrap">
         <div class="customer-testimonials__widget-wrap">
-          <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="4" data-expandifr="true" data-height="auto" data-clutchcompany-id="258762" v-if="loaded"></div>
+          <div 
+            class="clutch-widget" 
+            data-url="https://widget.clutch.co" 
+            data-widget-type="4" 
+            data-expandifr="true" 
+            data-height="auto" 
+            data-clutchcompany-id="258762" 
+            v-if="pageWasLoaded">
+          </div>
         </div>
         <div class="customer-testimonials__testimonials-list">
           <div class="customer-testimonials__testimonials-item" v-for="(testimonial, i) in testimonials" :key="i">
@@ -59,11 +67,11 @@ export default {
           testimonialText: 'I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.'
         }
       ],
-      loaded: false
+      pageWasLoaded: false
     };
   },
   mounted() {
-    this.loaded = true;
+    this.pageWasLoaded = true;
   }
 };
 </script>
