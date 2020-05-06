@@ -38,13 +38,19 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
 
+@mixin responsive-bg-image($image-width, $image-height) {
+  background-size: 100%;
+  height: 0;
+  padding-bottom: percentage($image-height / $image-width);
+  display: block;
+}
+
 .single-project {
   width: 50%;
   background: $bgcolor--project-white;
-  padding-top: 74px;
 
   &__content-wrap {
-    margin: 0 70px;
+    margin:  74px 70px 0;
   }
 
   &__sub-title {
@@ -58,6 +64,8 @@ export default {
   .contribution-vidget {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1;
     color: $text-color--grey;
     font-family: 'Hoves-Regular';
     margin-top: 36px;
@@ -74,19 +82,43 @@ export default {
   }
 
   &__background {
-    width: 100%;
-    height: 246px;
-    background-image: url('../../assets/img/Studies/png/nambafoodBackground.png');
-    vertical-align: middle;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url('../../assets/img/Studies/png/nambafoodBackground.png') no-repeat;
+    @include responsive-bg-image(394, 232);
+    position: relative;
+    bottom: 79px;
+    margin-bottom: -79px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .single-project {
+      width: 100%;
+
+      &__content-wrap {
+        margin:  68px 30px 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .single-project {
+      width: 100%;
+      
+      &__content-wrap {
+        margin:  40px 34px 0;
+      }
+
+      &__background {
+        bottom: 104px;
+        margin-bottom: -104px;
+      }
+
+      .contribution-vidget {
+        &__content {
+          color: $text-color--black;
+        }
+      }
+    }
   }
 }
 
-@media only screen and (max-width: 768px) {
-    .single-project {
-      width: 100%;
-    }
-}
 </style>
