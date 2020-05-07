@@ -8,7 +8,7 @@
         <div class="mobile-profile">
           <img :src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)" class="mobile-customer_image" :alt="testimonial.customerName">
           <p class="mobile-customer_name">
-            {{ testimonial.customerName }} {{ testimonial.customerCountry }}
+            {{ testimonial.customerName }} <br> {{ testimonial.customerCountry }}
           </p>
         </div>
         <div class="mobile-project">
@@ -53,6 +53,7 @@ export default {
     .mobile-info {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       padding-top: 15px;
       padding-bottom: 54px;
     }
@@ -60,5 +61,31 @@ export default {
 
   .swiper-slide {
     width: 80%;
+  }
+
+  @media only screen and (max-width: 620px) {
+    .swiper {
+      .veeqo,
+      .teacherly {
+        width: 95px;
+      }
+
+      .guardrails {
+        width: 156px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    .swiper {
+      .veeqo,
+      .teacherly {
+        width: 75px;
+      }
+
+      .guardrails {
+        width: 126px;
+      }
+    }
   }
 </style>

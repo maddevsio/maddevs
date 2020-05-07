@@ -205,8 +205,21 @@ export default {
         display: none;
       }
 
+      &__widget-wrap {
+        width: initial;
+      }
+
       .mobile-slider {
         display: block;
+        padding-top: 35px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    .customer-testimonials {
+      /deep/.mobile-customer_name {
+        font-size: 14px;
       }
     }
   }
