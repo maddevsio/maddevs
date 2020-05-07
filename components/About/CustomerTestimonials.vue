@@ -197,6 +197,10 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .customer-testimonials {
+      &__main-title {
+        text-align: center;
+      }
+
       &__content-wrap {
         flex-direction: column;
       }
@@ -213,6 +217,13 @@ export default {
         display: block;
         padding-top: 35px;
       }
+    }
+  }
+
+  @media only screen and (max-width: 520px) {
+    .customer-testimonials {
+      padding-top: 45px;
+      padding-bottom: 27px;
     }
   }
 
