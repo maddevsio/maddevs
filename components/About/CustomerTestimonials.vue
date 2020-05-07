@@ -6,7 +6,7 @@
       </h1>
       <div class="customer-testimonials__content-wrap">
         <div class="customer-testimonials__widget-wrap">
-          <!-- <div 
+          <div 
             class="clutch-widget"
             data-url="https://widget.clutch.co"
             data-widget-type="4"
@@ -14,7 +14,7 @@
             data-height="auto"
             data-clutchcompany-id="258762"
             v-if="pageWasLoaded">
-          </div> -->
+          </div>
         </div>
         <div class="customer-testimonials__testimonials-list">
           <div class="customer-testimonials__testimonials-item" v-for="(testimonial, i) in testimonials" :key="i">
