@@ -23,8 +23,7 @@
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
 export default {
-  name: 'swiper-example-carousel-mode',
-  title: 'Auto slides per view / Carousel mode',
+  name: 'CustomerTestimonialsMobileSlider',
   components: {
     Swiper,
     SwiperSlide
