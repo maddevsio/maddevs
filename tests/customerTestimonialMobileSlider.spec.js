@@ -24,7 +24,7 @@ describe('Customer Testimonials Mobile Slider', () => {
           }
         ] 
       }
-    })
+    });
   });
 
   // ------ IMPORTANT ----- //
