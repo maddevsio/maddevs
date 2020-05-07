@@ -6,7 +6,7 @@
       </h1>
       <div class="customer-testimonials__content-wrap">
         <div class="customer-testimonials__widget-wrap">
-          <div 
+          <!-- <div 
             class="clutch-widget"
             data-url="https://widget.clutch.co"
             data-widget-type="4"
@@ -14,7 +14,7 @@
             data-height="auto"
             data-clutchcompany-id="258762"
             v-if="pageWasLoaded">
-          </div>
+          </div> -->
         </div>
         <div class="customer-testimonials__testimonials-list">
           <div class="customer-testimonials__testimonials-item" v-for="(testimonial, i) in testimonials" :key="i">
@@ -29,19 +29,25 @@
                 </p>
               </div>
               <div class="customer-testimonials__project">
-                <img :src="require(`@/assets/img/Home/svg/customerTestimonials/${testimonial.customerProject}.svg`)" class="customer-testimonials__project-image" :alt="testimonial.customerProject">
+                <img :src="require(`@/assets/img/Home/svg/customerTestimonials/${testimonial.customerProject}.svg`)" class="customer-testimonials__project-image" :class="testimonial.customerProject" :alt="testimonial.customerProject">
               </div>
             </div>
           </div>
         </div>
+        <CustomerTestimonialMobileSlider :testimonials="testimonials" class="mobile-slider" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import CustomerTestimonialMobileSlider from '@/components/About/CustomerTestimonialMobileSlider';
+
 export default {
   name: 'CustomerTestimonials',
+  components: {
+    CustomerTestimonialMobileSlider
+  },
   data() {
     return {
       testimonials: [
@@ -141,16 +147,19 @@ export default {
     }
 
     &__customer-info,
-    &__profile {
+    &__profile,
+    /deep/.mobile-profile {
       display: flex;
       align-items: center;
     }
 
-    &__customer-image {
+    &__customer-image,
+    /deep/.mobile-customer_image {
       border-radius: 100%;
     }
 
-    &__customer-name {
+    &__customer-name,
+    /deep/.mobile-customer_name {
       padding-left: 14px;
       color: $text-color--grey;
       font-family: 'Hoves-Regular';
@@ -166,6 +175,14 @@ export default {
         margin: 0 -30px;
       }
     }
+
+    &__project {
+      width: 156px;
+    }
+
+    .mobile-slider {
+      display: none;
+    }
   }
 
    @media only screen and (max-width: 1310px) {
@@ -177,5 +194,21 @@ export default {
       }
     }
   }
+
   
+  @media only screen and (max-width: 1024px) {
+    .customer-testimonials {
+      &__content-wrap {
+        flex-direction: column;
+      }
+
+      &__testimonials-list {
+        display: none;
+      }
+
+      .mobile-slider {
+        display: block;
+      }
+    }
+  }
 </style>
