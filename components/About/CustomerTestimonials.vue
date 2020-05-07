@@ -135,7 +135,7 @@ export default {
         position: absolute;
         top: 5px;
         left: -23px;
-        background: url('../../assets/img/Home/svg/customerTestimonials/quotes.svg') no-repeat center; 
+        background: url('../../assets/img/Home/svg/customerTestimonials/quotes.svg') no-repeat center;
       }
     }
 
@@ -185,7 +185,7 @@ export default {
     }
   }
 
-   @media only screen and (max-width: 1310px) {
+  @media only screen and (max-width: 1310px) {
     .customer-testimonials {
       &__widget-wrap {
         .clutch-widget {
@@ -195,7 +195,6 @@ export default {
     }
   }
 
-  
   @media only screen and (max-width: 1024px) {
     .customer-testimonials {
       &__content-wrap {

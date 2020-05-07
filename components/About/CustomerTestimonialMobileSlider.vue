@@ -49,7 +49,7 @@ export default {
 <style lang="scss" scoped>
   .swiper {
     width: 100%;
-    
+
     .mobile-info {
       display: flex;
       align-items: center;
