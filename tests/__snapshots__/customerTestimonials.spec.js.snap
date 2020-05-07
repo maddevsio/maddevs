@@ -54,6 +54,12 @@ exports[`Customer Testimonials renders correctly 1`] = `
             <div
               class="customer-testimonials__profile"
             >
+              <img
+                alt="Atif Mahmud,"
+                class="customer-testimonials__customer-image"
+                src="[object Object]"
+              />
+               
               <p
                 class="customer-testimonials__customer-name"
               >
@@ -93,6 +99,12 @@ exports[`Customer Testimonials renders correctly 1`] = `
             <div
               class="customer-testimonials__profile"
             >
+              <img
+                alt="Daniel Vartanov,"
+                class="customer-testimonials__customer-image"
+                src="[object Object]"
+              />
+               
               <p
                 class="customer-testimonials__customer-name"
               >
@@ -132,6 +144,12 @@ exports[`Customer Testimonials renders correctly 1`] = `
             <div
               class="customer-testimonials__profile"
             >
+              <img
+                alt="Stefan Streichsbier,"
+                class="customer-testimonials__customer-image"
+                src="[object Object]"
+              />
+               
               <p
                 class="customer-testimonials__customer-name"
               >
@@ -180,6 +198,12 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <div
                 class="mobile-profile"
               >
+                <img
+                  alt="Atif Mahmud,"
+                  class="mobile-customer_image"
+                  src="[object Object]"
+                />
+                 
                 <p
                   class="mobile-customer_name"
                 >
@@ -193,7 +217,13 @@ exports[`Customer Testimonials renders correctly 1`] = `
                
               <div
                 class="mobile-project"
-              />
+              >
+                <img
+                  alt="teacherly"
+                  class="mobile-project_image teacherly"
+                  src="[object Object]"
+                />
+              </div>
             </div>
           </div>
           <div
@@ -213,6 +243,12 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <div
                 class="mobile-profile"
               >
+                <img
+                  alt="Daniel Vartanov,"
+                  class="mobile-customer_image"
+                  src="[object Object]"
+                />
+                 
                 <p
                   class="mobile-customer_name"
                 >
@@ -226,7 +262,13 @@ exports[`Customer Testimonials renders correctly 1`] = `
                
               <div
                 class="mobile-project"
-              />
+              >
+                <img
+                  alt="veeqo"
+                  class="mobile-project_image veeqo"
+                  src="[object Object]"
+                />
+              </div>
             </div>
           </div>
           <div
@@ -246,6 +288,12 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <div
                 class="mobile-profile"
               >
+                <img
+                  alt="Stefan Streichsbier,"
+                  class="mobile-customer_image"
+                  src="[object Object]"
+                />
+                 
                 <p
                   class="mobile-customer_name"
                 >
@@ -259,7 +307,13 @@ exports[`Customer Testimonials renders correctly 1`] = `
                
               <div
                 class="mobile-project"
-              />
+              >
+                <img
+                  alt="guardrails"
+                  class="mobile-project_image guardrails"
+                  src="[object Object]"
+                />
+              </div>
             </div>
           </div>
         </div>

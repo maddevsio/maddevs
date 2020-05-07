@@ -9,7 +9,20 @@ describe('Customer Testimonials Mobile Slider', () => {
   beforeEach(() => {
     wrapper = mount(CustomerTestimonialMobileSlider, {
       propsData: {
-        testimonials: [{}, {}, {}] 
+        testimonials: [
+          {
+            customerProject: 'teacherly',
+            customerImageName: 'atif'
+          },
+          {
+            customerProject: 'veeqo',
+            customerImageName: 'daniel'
+          },
+          {
+            customerProject: 'guardrails',
+            customerImageName: 'stefan'
+          }
+        ] 
       }
     })
   });
@@ -25,7 +38,31 @@ describe('Customer Testimonials Mobile Slider', () => {
   // --------------------- //
 
   it('sets the correct data in props', () => {
-    expect(wrapper.props().testimonials).toStrictEqual([{}, {}, {}]);
-    expect(wrapper.props().testimonials.length).toBeTruthy();
+    expect(wrapper.props().testimonials).toStrictEqual(
+      [
+        {
+          customerProject: 'teacherly',
+          customerImageName: 'atif'
+        },
+        {
+          customerProject: 'veeqo',
+          customerImageName: 'daniel'
+        },
+        {
+          customerProject: 'guardrails',
+          customerImageName: 'stefan'
+        }
+      ]  
+    );
+  });
+
+  it('check swiper option', () => {
+    expect(wrapper.vm.$data.swiperOption.slidesPerView).toBe('auto');
+    expect(wrapper.vm.$data.swiperOption.spaceBetween).toBe(30);
+  });
+
+  test('correctly length of slider items', () => {
+    let swiperSlide = wrapper.findAll('.swiper-slide');
+    expect(swiperSlide).toHaveLength(3);
   });
 });
