@@ -7,6 +7,7 @@
       </h2>
       <div class="projects">
         <SingleProject
+          projectName="nambafood"
           logoImg="nambafoodColored"
           contributionVidgetImg="maddevsLogoWithoutText"
           projectBackground="nambafoodBackground"
@@ -18,6 +19,7 @@
         food and other goods."
         />
         <SingleProject
+          projectName="teacherly"
           logoImg="teacherlyColored"
           contributionVidgetImg="maddevsLogoWithoutText"
           projectBackground="teacherlyBackground"
@@ -26,6 +28,7 @@
           projectDescription="Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform."
         />
         <SingleProject
+          projectName="guardrails"
           logoImg="guardrailsColored"
           contributionVidgetImg="maddevsLogoWithoutText"
           projectBackground="guardrailsBackground"
@@ -34,6 +37,7 @@
           projectDescription="Mad Devs was involved with Guardrails' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes."
         />
         <SingleProject
+          projectName="godee"
           logoImg="godeeColored"
           contributionVidgetImg="maddevsLogoWithoutText"
           projectBackground="godeeBackground"
@@ -47,6 +51,7 @@
       <swiper class="swiper">
         <swiper-slide>
           <SingleProject
+            projectName="nambafood"
             logoImg="nambafoodColored"
             contributionVidgetImg="maddevsLogoWithoutText"
             projectBackground="nambafoodBackground"
@@ -60,12 +65,35 @@
         </swiper-slide>
         <swiper-slide>
           <SingleProject
+            projectName="teacherly"
             logoImg="teacherlyColored"
             contributionVidgetImg="maddevsLogoWithoutText"
             projectBackground="teacherlyBackground"
             projectColor="#56448E"
             projectTitle="EdTech collaboration platform"
             projectDescription="Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform."
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <SingleProject
+            projectName="guardrails"
+            logoImg="guardrailsColored"
+            contributionVidgetImg="maddevsLogoWithoutText"
+            projectBackground="guardrailsBackground"
+            projectColor="#0E1B27"
+            projectTitle="Cloud cybersecurity service"
+            projectDescription="Mad Devs was involved with Guardrails' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes."
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <SingleProject
+            projectName="godee"
+            logoImg="godeeColored"
+            contributionVidgetImg="maddevsLogoWithoutText"
+            projectBackground="godeeBackground"
+            projectColor="#FF6A01"
+            projectTitle="Mass transportation company"
+            projectDescription="Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers."
           />
         </swiper-slide>
       </swiper>
@@ -107,9 +135,48 @@ export default {
     }
   }
 
+  @mixin responsive-bg-image($image-width, $image-height) {
+    background-size: 100%;
+    height: 0;
+    padding-bottom: percentage($image-height / $image-width);
+    display: block;
+  }
+
   .projects {
     display: flex;
     flex-wrap: wrap;
+
+    .single-project {
+      &:nth-child(3) {
+        &::before {
+          content: '';
+          position: absolute;
+          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg') no-repeat right 50%;;
+          width: 100%;
+          height: 430px;
+          background-size: contain;
+          z-index: -44;
+          top: 0;
+          right: 0;
+          opacity: 0.68;
+        }
+      }
+
+      &:last-child {
+        &::after {
+          content: '';
+          position: absolute;
+          background-image: url('../../assets/img/Studies/svg/godeeSecondaryBg.svg');
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          background-size: contain;
+          z-index: -44;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
   }
 
   @media only screen and (max-width: 520px) {
