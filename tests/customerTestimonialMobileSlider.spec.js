@@ -5,25 +5,26 @@ import CustomerTestimonialMobileSlider from '@/components/About/CustomerTestimon
 
 describe('Customer Testimonials Mobile Slider', () => {
   let wrapper;
+  const props = {
+    testimonials: [
+      {
+        customerProject: 'teacherly',
+        customerImageName: 'atif'
+      },
+      {
+        customerProject: 'veeqo',
+        customerImageName: 'daniel'
+      },
+      {
+        customerProject: 'guardrails',
+        customerImageName: 'stefan'
+      }
+    ]
+  };
 
   beforeEach(() => {
     wrapper = mount(CustomerTestimonialMobileSlider, {
-      propsData: {
-        testimonials: [
-          {
-            customerProject: 'teacherly',
-            customerImageName: 'atif'
-          },
-          {
-            customerProject: 'veeqo',
-            customerImageName: 'daniel'
-          },
-          {
-            customerProject: 'guardrails',
-            customerImageName: 'stefan'
-          }
-        ] 
-      }
+      propsData: props
     });
   });
 
@@ -38,22 +39,7 @@ describe('Customer Testimonials Mobile Slider', () => {
   // --------------------- //
 
   it('sets the correct data in props', () => {
-    expect(wrapper.props().testimonials).toStrictEqual(
-      [
-        {
-          customerProject: 'teacherly',
-          customerImageName: 'atif'
-        },
-        {
-          customerProject: 'veeqo',
-          customerImageName: 'daniel'
-        },
-        {
-          customerProject: 'guardrails',
-          customerImageName: 'stefan'
-        }
-      ]  
-    );
+    expect(wrapper.props().testimonials).toStrictEqual(props.testimonials);
   });
 
   it('check swiper option', () => {
