@@ -2,7 +2,7 @@
   <div class="single-project" :style="{ background: project.projectColor }">
     <div class="single-project__container">
       <div class="single-project__content-wrap">
-        <img :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)" class="single-project__logo" alt="Namba Food" />
+        <img :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)" class="single-project__logo" :alt="project.projectName" />
         <h4 class="single-project__sub-title sub-title">{{project.projectTitle}}</h4>
         <p class="single-project__paragraph paragraph">{{project.projectDescription}}</p> 
         <div class="contribution-vidget">
