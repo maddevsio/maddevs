@@ -10,7 +10,7 @@
           <span class="contribution-vidget__content">contribution: backend, infrastructure</span>
         </div>
       </div>
-      <div class="single-project__background" :style="{'background-image': 'url(' + require(`@/assets/img/Studies/png/${setProjectBackground(projectBackground)}.png`) + ')'}"></div>
+      <div class="single-project__background" :style="{'background-image': 'url(' + require(`@/assets/img/Studies/png/${projectBackground}.png`) + ')'}"></div>
     </div>
   </div>
 </template>
@@ -25,11 +25,6 @@ export default {
         background: '#56448E'
       }
     };
-  },
-  methods: {
-    setProjectBackground(projectBackground) {
-      return projectBackground;
-    }
   },
   computed: {
     computedProjectColor: function() {
