@@ -5,6 +5,7 @@
     <TechnologiesAndTools />
     <CaseStudies />
     <QuickProjectStart />
+    <CustomerTestimonials />
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import WeCreateItProjectFor from '@/components/About/WeCreateItProjectFor';
 import TechnologiesAndTools from '@/components/About/TechnologiesAndTools';
 import CaseStudies from '@/components/About/CaseStudies';
 import QuickProjectStart from '@/components/About/QuickProjectStart';
+import CustomerTestimonials from '@/components/About/CustomerTestimonials';
 
 export default {
   name: 'About',
@@ -21,6 +23,7 @@ export default {
     Banner,
     WeCreateItProjectFor,
     TechnologiesAndTools,
+    CustomerTestimonials,
     CaseStudies,
     QuickProjectStart
   },
