@@ -5,14 +5,16 @@
         <h2 class="why-us__main-title">Why us?</h2>
       </div>
       <div class="why-us__statistics-wrap">
-        <div class="why-us-customer-rates">
-          <div class="why-us__statistics-title">Fantastic customer satisfaction rates:</div>
+        <div class="why-us__customer-rates">
+          <div class="why-us__rates-title">Fantastic customer satisfaction rates:</div>
           <div class="why-us__rates-list">
-            <div class="why-us__rates-item">
-              <div class="why-us__rates-percnet">92%</div>
-              <div class="why-us__rates-item_description">
-                recommend us to others.
+            <div class="why-us__rates-item" v-for="(rate, i) in customerRates" :key="i">
+              <div class="why-us__rates-number">
+                {{ rate.number }}<span>%</span>
               </div>
+              <p class="why-us__rates-item_description paragraph">
+                {{ rate.description }}
+              </p>
             </div>
           </div>
         </div>
@@ -31,38 +33,80 @@ export default {
   },
   data() {
     return {
-      testimonials: [
+      customerRates: [
         {
-          customerName: 'Atif Mahmud,',
-          customerCountry: 'The UK',
-          customerProject: 'teacherly',
-          customerImageName: 'atif',
-          testimonialText: 'Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.'
+          number: '92',
+          description: 'recommend us to others.'
         },
         {
-          customerName: 'Daniel Vartanov,',
-          customerCountry: 'The UK',
-          customerProject: 'veeqo',
-          customerImageName: 'daniel',
-          testimonialText: 'We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.'
+          number: '87',
+          description: 'stay with us for more than 2 years.'
         },
         {
-          customerName: 'Stefan Streichsbier,',
-          customerCountry: 'Singapore',
-          customerProject: 'guardrails',
-          customerImageName: 'stefan',
-          testimonialText: 'I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.'
+          number: '98',
+          description: 'are satisfied with our pricing.'
         }
       ],
-      pageWasLoaded: false
+      metrics: ['50+', '100+', '10+ million', '75%', '70+', '30+']
     };
-  },
-  mounted() {
-    this.pageWasLoaded = true;
   }
 };
 </script>
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+
+  .why-us {
+    background-color: $bgcolor--white;
+
+    &__main-title {
+      padding-bottom: 120px;
+      font-size: 340px;
+      font-family: 'Hoves-Bold';
+      color: $text-color--grey-light;
+      line-height: 200px;
+    }
+
+    &__customer-rates,
+    &__rates-list {
+      display: flex;
+    }
+
+    &__customer-rates {
+      justify-content: space-around;
+    }
+
+    &__rates-item {
+      &:first-child {
+        p {
+          max-width: 120px;
+        }
+      }
+    }
+
+    &__rates-title {
+      max-width: 475px;
+      font-size: 50px;
+      font-family: 'Hoves-Bold';
+      color: $text-color--black;
+    }
+
+    &__rates-number {
+      display: flex;
+      font-size: 130px;
+      font-family: 'Hoves-Bold';
+      color: $text-color--red;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 70px;
+      }
+    }
+
+    &__rates-item_description {
+      max-width: 150px;
+      color: $text-color--black;
+    }
+  }
 </style>
