@@ -75,7 +75,7 @@ describe('CaseStudies component', () => {
     expect(sliderSingleProjects).toHaveLength(8);
   });
 
-  test("check that the specific images exists", () => {
+  test('check that the specific images exists', () => {
     const img = wrapper.findAll('.single-project__logo');
     expect(img.length).toBe(8);
   });

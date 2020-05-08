@@ -111,7 +111,7 @@ export default {
         &::before {
           content: '';
           position: absolute;
-          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg') no-repeat right 50%;;
+          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg') no-repeat right 50%;
           width: 100%;
           height: 430px;
           background-size: contain;
