@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Customer Testimonials Mobile Slider renders correctly 1`] = `
+<div
+  class="swiper-container swiper swiper-container-initialized swiper-container-horizontal"
+>
+  <div
+    class="swiper-wrapper"
+    style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+  >
+    <div
+      class="swiper-slide"
+    >
+      <div
+        class="mobile-text paragraph"
+      >
+        
+      
+    
+      </div>
+       
+      <div
+        class="mobile-info"
+      >
+        <div
+          class="mobile-profile"
+        >
+          <img
+            class="mobile-customer_image"
+            src="[object Object]"
+          />
+           
+          <p
+            class="mobile-customer_name"
+          >
+            
+           
+            <br />
+             
+        
+          </p>
+        </div>
+         
+        <div
+          class="mobile-project"
+        >
+          <img
+            alt="teacherly"
+            class="mobile-project_image teacherly"
+            src="[object Object]"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="swiper-slide"
+    >
+      <div
+        class="mobile-text paragraph"
+      >
+        
+      
+    
+      </div>
+       
+      <div
+        class="mobile-info"
+      >
+        <div
+          class="mobile-profile"
+        >
+          <img
+            class="mobile-customer_image"
+            src="[object Object]"
+          />
+           
+          <p
+            class="mobile-customer_name"
+          >
+            
+           
+            <br />
+             
+        
+          </p>
+        </div>
+         
+        <div
+          class="mobile-project"
+        >
+          <img
+            alt="veeqo"
+            class="mobile-project_image veeqo"
+            src="[object Object]"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="swiper-slide"
+    >
+      <div
+        class="mobile-text paragraph"
+      >
+        
+      
+    
+      </div>
+       
+      <div
+        class="mobile-info"
+      >
+        <div
+          class="mobile-profile"
+        >
+          <img
+            class="mobile-customer_image"
+            src="[object Object]"
+          />
+           
+          <p
+            class="mobile-customer_name"
+          >
+            
+           
+            <br />
+             
+        
+          </p>
+        </div>
+         
+        <div
+          class="mobile-project"
+        >
+          <img
+            alt="guardrails"
+            class="mobile-project_image guardrails"
+            src="[object Object]"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <span
+    aria-atomic="true"
+    aria-live="assertive"
+    class="swiper-notification"
+  />
+</div>
+`;

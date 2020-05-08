@@ -1,0 +1,329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Customer Testimonials renders correctly 1`] = `
+<section
+  class="customer-testimonials"
+  id="customer-testimonials"
+>
+  <div
+    class="container"
+  >
+    <h1
+      class="customer-testimonials__main-title main-title"
+    >
+      <span>
+        Customer
+      </span>
+       Testimonials
+    
+    </h1>
+     
+    <div
+      class="customer-testimonials__content-wrap"
+    >
+      <div
+        class="customer-testimonials__widget-wrap"
+      >
+        <div
+          class="clutch-widget"
+          data-clutchcompany-id="258762"
+          data-expandifr="true"
+          data-height="auto"
+          data-url="https://widget.clutch.co"
+          data-widget-type="4"
+        />
+      </div>
+       
+      <div
+        class="customer-testimonials__testimonials-list"
+      >
+        <div
+          class="customer-testimonials__testimonials-item"
+        >
+          <div
+            class="customer-testimonials__testimonials-text paragraph"
+          >
+            
+            Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.
+          
+          </div>
+           
+          <div
+            class="customer-testimonials__customer-info"
+          >
+            <div
+              class="customer-testimonials__profile"
+            >
+              <img
+                alt="Atif Mahmud,"
+                class="customer-testimonials__customer-image"
+                src="[object Object]"
+              />
+               
+              <p
+                class="customer-testimonials__customer-name"
+              >
+                
+                Atif Mahmud, 
+                <br />
+                 The UK
+              
+              </p>
+            </div>
+             
+            <div
+              class="customer-testimonials__project"
+            >
+              <img
+                alt="teacherly"
+                class="customer-testimonials__project-image teacherly"
+                src="[object Object]"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="customer-testimonials__testimonials-item"
+        >
+          <div
+            class="customer-testimonials__testimonials-text paragraph"
+          >
+            
+            We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.
+          
+          </div>
+           
+          <div
+            class="customer-testimonials__customer-info"
+          >
+            <div
+              class="customer-testimonials__profile"
+            >
+              <img
+                alt="Daniel Vartanov,"
+                class="customer-testimonials__customer-image"
+                src="[object Object]"
+              />
+               
+              <p
+                class="customer-testimonials__customer-name"
+              >
+                
+                Daniel Vartanov, 
+                <br />
+                 The UK
+              
+              </p>
+            </div>
+             
+            <div
+              class="customer-testimonials__project"
+            >
+              <img
+                alt="veeqo"
+                class="customer-testimonials__project-image veeqo"
+                src="[object Object]"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="customer-testimonials__testimonials-item"
+        >
+          <div
+            class="customer-testimonials__testimonials-text paragraph"
+          >
+            
+            I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.
+          
+          </div>
+           
+          <div
+            class="customer-testimonials__customer-info"
+          >
+            <div
+              class="customer-testimonials__profile"
+            >
+              <img
+                alt="Stefan Streichsbier,"
+                class="customer-testimonials__customer-image"
+                src="[object Object]"
+              />
+               
+              <p
+                class="customer-testimonials__customer-name"
+              >
+                
+                Stefan Streichsbier, 
+                <br />
+                 Singapore
+              
+              </p>
+            </div>
+             
+            <div
+              class="customer-testimonials__project"
+            >
+              <img
+                alt="guardrails"
+                class="customer-testimonials__project-image guardrails"
+                src="[object Object]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+       
+      <div
+        class="swiper-container swiper mobile-slider swiper-container-initialized swiper-container-horizontal"
+      >
+        <div
+          class="swiper-wrapper"
+          style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+        >
+          <div
+            class="swiper-slide"
+          >
+            <div
+              class="mobile-text paragraph"
+            >
+              
+      Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.
+    
+            </div>
+             
+            <div
+              class="mobile-info"
+            >
+              <div
+                class="mobile-profile"
+              >
+                <img
+                  alt="Atif Mahmud,"
+                  class="mobile-customer_image"
+                  src="[object Object]"
+                />
+                 
+                <p
+                  class="mobile-customer_name"
+                >
+                  
+          Atif Mahmud, 
+                  <br />
+                   The UK
+        
+                </p>
+              </div>
+               
+              <div
+                class="mobile-project"
+              >
+                <img
+                  alt="teacherly"
+                  class="mobile-project_image teacherly"
+                  src="[object Object]"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+          >
+            <div
+              class="mobile-text paragraph"
+            >
+              
+      We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.
+    
+            </div>
+             
+            <div
+              class="mobile-info"
+            >
+              <div
+                class="mobile-profile"
+              >
+                <img
+                  alt="Daniel Vartanov,"
+                  class="mobile-customer_image"
+                  src="[object Object]"
+                />
+                 
+                <p
+                  class="mobile-customer_name"
+                >
+                  
+          Daniel Vartanov, 
+                  <br />
+                   The UK
+        
+                </p>
+              </div>
+               
+              <div
+                class="mobile-project"
+              >
+                <img
+                  alt="veeqo"
+                  class="mobile-project_image veeqo"
+                  src="[object Object]"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+          >
+            <div
+              class="mobile-text paragraph"
+            >
+              
+      I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.
+    
+            </div>
+             
+            <div
+              class="mobile-info"
+            >
+              <div
+                class="mobile-profile"
+              >
+                <img
+                  alt="Stefan Streichsbier,"
+                  class="mobile-customer_image"
+                  src="[object Object]"
+                />
+                 
+                <p
+                  class="mobile-customer_name"
+                >
+                  
+          Stefan Streichsbier, 
+                  <br />
+                   Singapore
+        
+                </p>
+              </div>
+               
+              <div
+                class="mobile-project"
+              >
+                <img
+                  alt="guardrails"
+                  class="mobile-project_image guardrails"
+                  src="[object Object]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <span
+          aria-atomic="true"
+          aria-live="assertive"
+          class="swiper-notification"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;

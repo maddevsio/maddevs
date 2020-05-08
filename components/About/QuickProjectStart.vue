@@ -1,5 +1,5 @@
 <template>
-  <div id="quick-project-start" class="quick-project_start">
+  <section id="quick-project-start" class="quick-project_start">
     <div class="container">
       <div class="quick-project_start__title-wrap">
         <h2 class="quick-project_start__main-title main-title">Quick <br> Project Start</h2>
@@ -21,7 +21,7 @@
         <buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -66,6 +66,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .quick-project_start {
+    padding-bottom: 195px;
     text-align: center;
 
     &__main-title {
