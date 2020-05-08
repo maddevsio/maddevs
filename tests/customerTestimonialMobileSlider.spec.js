@@ -19,8 +19,8 @@ describe('Customer Testimonials Mobile Slider', () => {
         customerProject: 'guardrails',
         customerImageName: 'stefan'
       }
-    ] 
-  }
+    ]
+  };
 
   beforeEach(() => {
     wrapper = mount(CustomerTestimonialMobileSlider, {
