@@ -1,16 +1,16 @@
 <template>
-  <div class="single-project" :style="computedProjectColor">
+  <div class="single-project" :style="{ background: project.projectColor }">
     <div class="single-project__container">
       <div class="single-project__content-wrap">
-        <img :src="require(`@/assets/img/Home/svg/clients/${logoImg}.svg`)" class="single-project__logo" alt="Namba Food" />
-        <h4 class="single-project__sub-title sub-title">{{projectTitle}}</h4>
-        <p class="single-project__paragraph paragraph">{{projectDescription}}</p> 
+        <img :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)" class="single-project__logo" alt="Namba Food" />
+        <h4 class="single-project__sub-title sub-title">{{project.projectTitle}}</h4>
+        <p class="single-project__paragraph paragraph">{{project.projectDescription}}</p> 
         <div class="contribution-vidget">
-          <img :src="require(`@/assets/img/Home/svg/${contributionVidgetImg}.svg`)" alt="Mad Devs">
+          <img :src="require(`@/assets/img/Home/svg/${project.contributionVidgetImg}.svg`)" alt="Mad Devs">
           <span class="contribution-vidget__content">contribution: backend, infrastructure</span>
         </div>
       </div>
-      <div class="single-project__background" :style="{'background-image': 'url(' + require(`@/assets/img/Studies/png/${projectBackground}.png`) + ')'}"></div>
+      <div class="single-project__background" :style="{'background-image': 'url(' + require(`@/assets/img/Studies/png/${project.projectBackground}.png`) + ')'}"></div>
     </div>
   </div>
 </template>
@@ -19,50 +19,10 @@
 
 export default {
   name: 'SingleProject',
-  data() {
-    return {
-      bgStyleObject: {
-        background: '#56448E'
-      }
-    };
-  },
-  computed: {
-    computedProjectColor: function() {
-      return {
-        background: this.projectColor 
-      };
-    }
-  },
   props: {
-    logoImg: {
-      type: String,
-      required: false,
-      default: '@/assets/img/Home/svg/clients/logoImg.svg'
-    },
-    projectName: {
-      type: String,
-      required: false
-    },
-    contributionVidgetImg: {
-      type: String,
-      required: false,
-      default: '@/assets/img/Home/svg/contributionVidgetImg.svg'
-    },
-    projectTitle: {
-      type: String,
-      required: false
-    },
-    projectDescription: {
-      type: String,
-      required: false
-    },
-    projectBackground: {
-      type: String,
-      required: false
-    },
-    projectColor: {
-      type: String,
-      required: false
+    project: {
+      type: Object,
+      default: Object
     }
   }
 };

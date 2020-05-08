@@ -6,95 +6,13 @@
         <span>Studies</span>
       </h2>
       <div class="projects">
-        <SingleProject
-          projectName="nambafood"
-          logoImg="nambafoodColored"
-          contributionVidgetImg="maddevsLogoWithoutText"
-          projectBackground="nambafoodBackground"
-          projectColor="#f8f7f6"
-          projectTitle="Contactless delivery service"
-          projectDescription="Mad Devs created the Namba Food delivery service from scratch. The
-        apps for couriers, end users placing orders and business owners
-        work as a seamless system, ensuring a smooth delivery process for
-        food and other goods."
-        />
-        <SingleProject
-          projectName="teacherly"
-          logoImg="teacherlyColored"
-          contributionVidgetImg="maddevsLogoWithoutText"
-          projectBackground="teacherlyBackground"
-          projectColor="#56448E"
-          projectTitle="EdTech collaboration platform"
-          projectDescription="Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform."
-        />
-        <SingleProject
-          projectName="guardrails"
-          logoImg="guardrailsColored"
-          contributionVidgetImg="maddevsLogoWithoutText"
-          projectBackground="guardrailsBackground"
-          projectColor="#0E1B27"
-          projectTitle="Cloud cybersecurity service"
-          projectDescription="Mad Devs was involved with Guardrails' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes."
-        />
-        <SingleProject
-          projectName="godee"
-          logoImg="godeeColored"
-          contributionVidgetImg="maddevsLogoWithoutText"
-          projectBackground="godeeBackground"
-          projectColor="#FF6A01"
-          projectTitle="Mass transportation company"
-          projectDescription="Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers."
-        />
+        <SingleProject v-for="(project, i) in projects" :key="i" :project="project"/>
       </div>
     </div>
     <div class="projects-mobile-slider">
       <swiper class="swiper">
-        <swiper-slide>
-          <SingleProject
-            projectName="nambafood"
-            logoImg="nambafoodColored"
-            contributionVidgetImg="maddevsLogoWithoutText"
-            projectBackground="nambafoodBackground"
-            projectColor="#f8f7f6"
-            projectTitle="Contactless delivery service"
-            projectDescription="Mad Devs created the Namba Food delivery service from scratch. The
-          apps for couriers, end users placing orders and business owners
-          work as a seamless system, ensuring a smooth delivery process for
-          food and other goods."
-        />
-        </swiper-slide>
-        <swiper-slide>
-          <SingleProject
-            projectName="teacherly"
-            logoImg="teacherlyColored"
-            contributionVidgetImg="maddevsLogoWithoutText"
-            projectBackground="teacherlyBackground"
-            projectColor="#56448E"
-            projectTitle="EdTech collaboration platform"
-            projectDescription="Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform."
-          />
-        </swiper-slide>
-        <swiper-slide>
-          <SingleProject
-            projectName="guardrails"
-            logoImg="guardrailsColored"
-            contributionVidgetImg="maddevsLogoWithoutText"
-            projectBackground="guardrailsBackground"
-            projectColor="#0E1B27"
-            projectTitle="Cloud cybersecurity service"
-            projectDescription="Mad Devs was involved with Guardrails' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes."
-          />
-        </swiper-slide>
-        <swiper-slide>
-          <SingleProject
-            projectName="godee"
-            logoImg="godeeColored"
-            contributionVidgetImg="maddevsLogoWithoutText"
-            projectBackground="godeeBackground"
-            projectColor="#FF6A01"
-            projectTitle="Mass transportation company"
-            projectDescription="Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers."
-          />
+        <swiper-slide v-for="(project, i) in projects" :key="i">
+          <SingleProject :project="project" />
         </swiper-slide>
       </swiper>
     </div>
@@ -112,6 +30,48 @@ export default {
     Swiper,
     SwiperSlide,
     SingleProject
+  },
+  data() {
+    return {
+      projects: [
+        {
+          projectName: 'nambafood',
+          logoImg: 'nambafoodColored',
+          contributionVidgetImg: 'maddevsLogoWithoutText',
+          projectBackground: 'nambafoodBackground',
+          projectColor: '#f8f7f6',
+          projectTitle: 'Contactless delivery service',
+          projectDescription: 'Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.'
+        },
+        {
+          projectName: 'teacherly',
+          logoImg: 'teacherlyColored',
+          contributionVidgetImg: 'maddevsLogoWithoutText',
+          projectBackground: 'teacherlyBackground',
+          projectColor: '#56448E',
+          projectTitle: 'EdTech collaboration platform',
+          projectDescription: 'Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform.'
+        },
+        {
+          projectName: 'guardrails',
+          logoImg: 'guardrailsColored',
+          contributionVidgetImg: 'maddevsLogoWithoutText',
+          projectBackground: 'guardrailsBackground',
+          projectColor: '#0E1B27',
+          projectTitle: 'Cloud cybersecurity service',
+          projectDescription: 'Mad Devs was involved with Guardrails\' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.'
+        },
+        {
+          projectName: 'godee',
+          logoImg: 'godeeColored',
+          contributionVidgetImg: 'maddevsLogoWithoutText',
+          projectBackground: 'godeeBackground',
+          projectColor: '#FF6A01',
+          projectTitle: 'Mass transportation company',
+          projectDescription: 'Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.'
+        }
+      ]
+    };
   }
 };
 </script>
