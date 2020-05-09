@@ -1,20 +1,17 @@
 <template>
-  <div class="single-project">
-    <div class="single-project__content-wrap">
-      <img :src="require(`@/assets/img/Home/svg/clients/${logoImg}.svg`)" class="single-project__logo" alt="Namba Food" />
-      <h4 class="single-project__sub-title sub-title">Contactless delivery service</h4>
-      <p class="single-project__paragraph paragraph">
-        Mad Devs created the Namba Food delivery service from scratch. The
-        apps for couriers, end users placing orders and business owners
-        work as a seamless system, ensuring a smooth delivery process for
-        food and other goods.
-      </p> 
-      <div class="contribution-vidget">
-        <img :src="require(`@/assets/img/Home/svg/${contributionVidgetImg}.svg`)" alt="Mad Devs">
-        <span class="contribution-vidget__content">contribution: backend, infrastructure, frontend</span>
+  <div class="single-project" :style="{ background: project.projectColor }">
+    <div class="single-project__container">
+      <div class="single-project__content-wrap">
+        <img :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)" class="single-project__logo" :alt="project.projectName" />
+        <h4 class="single-project__sub-title sub-title">{{project.projectTitle}}</h4>
+        <p class="single-project__paragraph paragraph">{{project.projectDescription}}</p> 
+        <div class="contribution-vidget">
+          <img :src="require(`@/assets/img/Home/svg/${project.contributionVidgetImg}.svg`)" alt="Mad Devs">
+          <span class="contribution-vidget__content">contribution: backend, infrastructure</span>
+        </div>
       </div>
+      <div class="single-project__background" :style="{'background-image': 'url(' + require(`@/assets/img/Studies/png/${project.projectBackground}.png`) + ')'}"></div>
     </div>
-    <div class="single-project__background"></div>
   </div>
 </template>
 
@@ -23,15 +20,9 @@
 export default {
   name: 'SingleProject',
   props: {
-    logoImg: {
-      type: String,
-      required: true,
-      default: '@/assets/img/Home/svg/clients/logoImg.svg'
-    },
-    contributionVidgetImg: {
-      type: String,
-      required: true,
-      default: '@/assets/img/Home/svg/contributionVidgetImg.svg'
+    project: {
+      type: Object,
+      default: Object
     }
   }
 };
@@ -49,10 +40,21 @@ export default {
 
 .single-project {
   width: 50%;
-  background: $bgcolor--project-white;
+  min-width: 400px;
+  position: relative;
+  z-index: 99;
+
+  @media only screen and (max-width: 1020px) {
+    width: 100%;
+
+    &__content-wrap {
+      margin:  68px 30px 0;
+    }
+  }
 
   &__content-wrap {
     margin:  74px 70px 0;
+    height: 305px;
   }
 
   &__sub-title {
@@ -86,19 +88,24 @@ export default {
   }
 
   &__background {
-    background: url('../../assets/img/Studies/png/nambafoodBackground.png') no-repeat;
-    @include responsive-bg-image(394, 232); // sass-lint:disable-line mixins-before-declarations
-    position: relative;
-    bottom: 79px;
-    margin-bottom: -80px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    height: 400px;
+    width: 100%;
   }
 
   @media only screen and (max-width: 768px) {
     .single-project {
       width: 100%;
 
+      &__container {
+        padding-top: 1px;
+      }
+
       &__content-wrap {
         margin:  68px 30px 0;
+        height: 270px;
       }
     }
   }
@@ -109,11 +116,31 @@ export default {
 
       &__content-wrap {
         margin:  40px 34px 0;
+        height: 68px;
+
+        .contribution-vidget {
+          margin-top: 26px;
+        }
       }
 
+      &__paragraph {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 679px) {
+    .single-project {
       &__background {
-        bottom: 104px;
-        margin-bottom: -105px;
+        background-size: cover;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1020px) and (min-width: 798px) {
+    .single-project {
+      &__background {
+        background-size: cover;
       }
     }
   }
