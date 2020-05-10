@@ -1,6 +1,6 @@
 <template>
   <div class="single-project" :style="{ background: project.projectColor }">
-    <div class="single-project__container">
+    <div class="single-project__container" :class="{ 'single-project__container_white-letters-theme': isWhiteColored}">
       <div class="single-project__content-wrap">
         <img :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)" class="single-project__logo" :alt="project.projectName" />
         <h4 class="single-project__sub-title sub-title">{{project.projectTitle}}</h4>
@@ -23,6 +23,14 @@ export default {
     project: {
       type: Object,
       default: Object
+    }
+  }, 
+  computed: {
+    isWhiteColored: function() {
+      if(this.project.projectName === 'teacherly' || this.project.projectName === 'guardrails') {
+        return true;
+      }
+      return false;
     }
   }
 };
@@ -49,6 +57,12 @@ export default {
 
     &__content-wrap {
       margin:  68px 30px 0;
+    }
+  }
+
+  &__container {
+    &_white-letters-theme {
+      color: $text-color--white;
     }
   }
 
