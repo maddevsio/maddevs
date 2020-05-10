@@ -37,7 +37,7 @@ export default {
         {
           projectName: 'nambafood',
           logoImg: 'nambafoodColored',
-          contributionVidgetColor: '#ec1c24',
+          contributionVidgetColors: ['#ec1c24', '#96969c'],
           projectBackground: 'nambafoodBackground',
           projectColor: '#f8f7f6',
           projectTitle: 'Contactless delivery service',
@@ -46,7 +46,7 @@ export default {
         {
           projectName: 'teacherly',
           logoImg: 'teacherlyColored',
-          contributionVidgetColor: '#ec1c24',
+          contributionVidgetColors: ['#ec1c24', '#fff'],
           projectBackground: 'teacherlyBackground',
           projectColor: '#56448e',
           projectTitle: 'EdTech collaboration platform',
@@ -55,7 +55,7 @@ export default {
         {
           projectName: 'guardrails',
           logoImg: 'guardrailsColored',
-          contributionVidgetColor: '#96969c',
+          contributionVidgetColors: ['#96969c', '#96969c'],
           projectBackground: 'guardrailsBackground',
           projectColor: '#0e1b27',
           projectTitle: 'Cloud cybersecurity service',
@@ -64,7 +64,7 @@ export default {
         {
           projectName: 'godee',
           logoImg: 'godeeColored',
-          contributionVidgetColor: '#000000',
+          contributionVidgetColors: ['#000', '#000'],
           projectBackground: 'godeeBackground',
           projectColor: '#ff6A01',
           projectTitle: 'Mass transportation company',
