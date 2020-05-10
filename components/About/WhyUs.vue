@@ -74,7 +74,7 @@
                 70+
               </div>
               <p class="why-us__item_description paragraph">
-                open-source projects <br> on <a href="#">GitHub.</a>
+                open-source projects <br> on <a href="https://github.com/maddevsio" target="blank">GitHub.</a>
               </p>
             </div>
             <div class="why-us__metric-item">
@@ -107,6 +107,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .why-us {
+    padding-bottom: 212px;
     background-color: $bgcolor--white;
 
     &__main-title {
@@ -186,9 +187,10 @@ export default {
       }
     }
 
-    &__rates-item_description {
-      max-width: 150px;
-      color: $text-color--black;
+    &__item_description {
+      a {
+        color: $text-color--black;
+      }
     }
   }
 
@@ -332,11 +334,186 @@ export default {
       &__main-title {
         font-size: 205px;
         line-height: 117px;
-      } 
+      }
 
       &__sub-title {
         font-size: 37px;
       }
     }
   }
+
+  @media only screen and (max-width: 1024px) {
+    .why-us {
+      padding-bottom: 140px;
+
+      &__main-title {
+        font-size: 170px;
+        line-height: 105px;
+      }
+
+      &__customer-rates,
+      &__rates-list,
+      &__mad-devs_metrics {
+        flex-direction: column;
+      }
+
+      &__rates-list {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
+
+      &__metrics-list {
+        grid-template-columns: repeat(2, 170px);
+        grid-column-gap: 50px;
+      }
+
+      &__sub-title {
+        padding-bottom: 32px;
+      }
+
+      &__rates-item {
+        display: flex;
+
+        p {
+          max-width: 165px;
+          padding-top: 25px;
+          padding-left: 18px;
+
+          br {
+            display: none;
+          }
+        }
+
+        &:first-child {
+          p {
+            max-width: 120px;
+          }
+        }
+      }
+
+      &__metric-item {
+        &:nth-child(2) {
+          grid-column-start: 2;
+          grid-row-start: 1;
+        }
+
+        &:nth-child(3) {
+          grid-row-start: 1;
+        }
+
+        &:nth-child(6) {
+          grid-column-start: 1;
+          grid-row-start: 3;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 820px) {
+    .why-us {
+      &__main-title {
+        font-size: 155px;
+        line-height: 95px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 740px) {
+    .why-us {
+      &__main-title {
+        font-size: 125px;
+        line-height: 80px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 620px) {
+    .why-us {
+      &__main-title {
+        font-size: 115px;
+        line-height: 72px
+      }
+    }
+  }
+
+  @media only screen and (max-width: 520px) {
+    .why-us {
+      padding-bottom: 84px;
+
+      &__main-title {
+        padding-bottom: 94px;
+        font-size: 91px;
+        line-height: 54px;
+      }
+
+      &__sub-title {
+        font-size: 39px;
+      }
+
+      &__mad-devs_metrics {
+        padding-top: 61px;
+      }
+
+      &__rates-item {
+        p {
+          padding-top: 15px;
+        }
+      }
+
+      &__rates-number {
+        font-size: 57px;
+
+        span {
+          font-size: 41px;
+        }
+      }
+
+      &__metric-number {
+        font-size: 28px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .why-us {
+      &__main-title {
+        font-size: 83px;
+        line-height: 51px;
+      }
+
+      &__metrics-list {
+        grid-template-columns: repeat(2, 150px);
+        grid-column-gap: 40px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 370px) {
+    .why-us {
+      &__main-title {
+        font-size: 79px;
+        line-height: 48px;
+      }
+
+      &__metrics-list {
+        grid-template-columns: repeat(2, 140px);
+        grid-column-gap: 30px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .why-us {
+
+      &__main-title {
+        font-size: 70px;
+        line-height: 43px;
+      }
+
+      &__sub-title {
+        font-size: 35px;
+      }
+    }
+  }
+
 </style>
