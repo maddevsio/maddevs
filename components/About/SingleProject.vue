@@ -102,7 +102,8 @@ export default {
 
   &__content-wrap {
     margin:  74px 70px 0;
-    height: 305px;
+    height: 230px;
+    z-index: 1;
   }
 
   &__sub-title {
@@ -178,9 +179,13 @@ export default {
   @media only screen and (max-width: 768px) {
     .single-project {
       width: 100%;
+      min-width: 320px;
 
       &__container {
         padding-top: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       &__content-wrap {
@@ -194,9 +199,20 @@ export default {
     .single-project {
       width: 100%;
 
+      &__background {
+        width: 90%;
+      }
+      
+      &__sub-title {
+        font-weight: bold;
+        font-size: 41px;
+        line-height: 40px;
+      }
+
       &__content-wrap {
-        margin:  40px 34px 0;
-        height: 68px;
+        margin: 40px 77px 0 34px;
+        height: 65px;
+        word-wrap: break-word;
 
         .contribution-vidget {
           margin-top: 26px;

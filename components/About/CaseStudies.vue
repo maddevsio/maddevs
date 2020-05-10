@@ -118,6 +118,7 @@ export default {
           z-index: -44;
           top: 0;
           right: 0;
+          mix-blend-mode: overlay;
           opacity: 0.68;
         }
       }
@@ -139,6 +140,10 @@ export default {
     }
   }
 
+  .swiper-container[data-v-6af638ea] {
+    background: $bgcolor--black;
+  }
+
   .swiper-slide {
     &:nth-child(3) {
       .single-project {
@@ -147,11 +152,12 @@ export default {
           position: absolute;
           background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg') no-repeat right 50%;
           width: 100%;
-          height: 430px;
+          height: 310px;
           background-size: contain;
           z-index: -44;
           top: 0;
           right: 0;
+          mix-blend-mode: overlay;
           opacity: 0.68;
         }
       }
