@@ -139,6 +139,42 @@ export default {
     }
   }
 
+  .swiper-slide {
+    &:nth-child(3) {
+      .single-project {
+        &::before {
+          content: '';
+          position: absolute;
+          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg') no-repeat right 50%;
+          width: 100%;
+          height: 430px;
+          background-size: contain;
+          z-index: -44;
+          top: 0;
+          right: 0;
+          opacity: 0.68;
+        }
+      }
+    }
+
+    &:last-child {
+      .single-project {
+        &::after {
+          content: '';
+          position: absolute;
+          background-image: url('../../assets/img/Studies/svg/godeeSecondaryBg.svg');
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          background-size: contain;
+          z-index: -44;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 520px) {
     .case-studies {
       &__main-title {
