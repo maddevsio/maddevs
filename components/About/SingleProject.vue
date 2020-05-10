@@ -29,7 +29,7 @@
             />
           </svg>
           <span
-            class="contribution-vidget__content"
+            class="contribution-vidget__content-mobile"
             :class="[
               project.projectName === 'guardrails'
                 ? 'contribution-vidget__content_mobile-white'
@@ -41,6 +41,20 @@
                 : 'contribution-vidget__content_gray'
             ]"
             >contribution: backend, infrastructure</span
+          >
+          <span
+            class="contribution-vidget__content"
+            :class="[
+              project.projectName === 'guardrails'
+                ? 'contribution-vidget__content_mobile-white'
+                : '',
+              project.contributionVidgetColors[1] === '#fff'
+                ? 'contribution-vidget__content_white'
+                : project.contributionVidgetColors[1] === '#000'
+                ? 'contribution-vidget__content_black'
+                : 'contribution-vidget__content_gray'
+            ]"
+            >contribution: backend, infrastructure, frontend</span
           >
         </div>
       </div>
@@ -142,6 +156,10 @@ export default {
     &__content {
       margin-left: 6px;
 
+      &-mobile {
+        display: none;
+      }
+
       &_black {
         color: $text-color--black;
       }
@@ -157,12 +175,17 @@ export default {
 
     @media only screen and (max-width: 576px) {
       &__content {
-        &_gray {
-          color: $text-color--black;
-        }
+        display: none;
 
-        &_mobile-white {
-          color: $text-color--grey;
+        &-mobile {
+          display: block;
+          &_gray {
+            color: $text-color--black;
+          }
+
+          &_mobile-white {
+            color: $text-color--grey;
+          }
         }
       }
     }
