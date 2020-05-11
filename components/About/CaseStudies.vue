@@ -95,13 +95,6 @@ export default {
     }
   }
 
-  @mixin responsive-bg-image($image-width, $image-height) {
-    background-size: 100%;
-    height: 0;
-    padding-bottom: percentage($image-height / $image-width);
-    display: block;
-  }
-
   .projects {
     display: flex;
     flex-wrap: wrap;

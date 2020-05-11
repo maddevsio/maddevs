@@ -58,7 +58,7 @@
           >
         </div>
       </div>
-      <div class="single-project__background" :style="{'background-image': 'url(' + require(`@/assets/img/Studies/png/${project.projectBackground}.png`) + ')'}"></div>
+      <div class="single-project__background" :style="{'background-image': 'url(' + require(`@/assets/img/Studies/png/${project.projectBackground}.png`) + ')'}" :class="{ 'single-project__background_first-project': isFirstProject}"></div>
     </div>
   </div>
 </template>
@@ -79,6 +79,12 @@ export default {
         return true;
       }
       return false;
+    },
+    isFirstProject: function() {
+      if(this.project.projectName === 'nambafood') {
+        return true;
+      }
+      return false;
     }
   }
 };
@@ -86,13 +92,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
-
-@mixin responsive-bg-image($image-width, $image-height) {
-  background-size: 100%;
-  height: 0;
-  padding-bottom: percentage($image-height / $image-width);
-  display: block;
-}
 
 .single-project {
   width: 50%;
@@ -195,7 +194,7 @@ export default {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
-    height: 400px;
+    height: 413px;
     width: 100%;
   }
 
@@ -222,10 +221,6 @@ export default {
     .single-project {
       width: 100%;
 
-      &__background {
-        width: 90%;
-      }
-      
       &__sub-title {
         font-weight: bold;
         font-size: 41px;
@@ -248,10 +243,21 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 380px) {
+    .single-project {
+      &__background {
+        width: 90%;
+      }
+    }
+  }
+
   @media screen and (max-width: 768px) and (min-width: 679px) {
     .single-project {
       &__background {
-        background-size: cover;
+        &_first-project {
+          background-size: cover;
+        }
+        background-size: contain;
       }
     }
   }
@@ -259,7 +265,10 @@ export default {
   @media screen and (max-width: 1020px) and (min-width: 798px) {
     .single-project {
       &__background {
-        background-size: cover;
+        &_first-project {
+          background-size: cover;
+        }
+        background-size: contain;
       }
     }
   }
