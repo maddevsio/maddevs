@@ -133,7 +133,7 @@ export default {
     }
   }
 
-  .swiper-container[data-v-6af638ea] {
+  .swiper-container {
     background: $bgcolor--black;
   }
 

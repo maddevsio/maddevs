@@ -178,6 +178,7 @@ export default {
 
         &-mobile {
           display: block;
+
           &_gray {
             color: $text-color--black;
           }
@@ -254,10 +255,11 @@ export default {
   @media screen and (max-width: 768px) and (min-width: 679px) {
     .single-project {
       &__background {
+        background-size: contain;
+
         &_first-project {
           background-size: cover;
         }
-        background-size: contain;
       }
     }
   }
@@ -265,10 +267,11 @@ export default {
   @media screen and (max-width: 1020px) and (min-width: 798px) {
     .single-project {
       &__background {
+        background-size: contain;
+
         &_first-project {
           background-size: cover;
         }
-        background-size: contain;
       }
     }
   }
