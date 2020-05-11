@@ -27,7 +27,7 @@ Vue.component(NoSsr.name, {
     if (process.client && !NoSsr._warned) {
       NoSsr._warned = true
 
-      console.warn(`<no-ssr> has been deprecated and will be removed in Nuxt 3, please use <client-only> instead`)
+      console.warn('<no-ssr> has been deprecated and will be removed in Nuxt 3, please use <client-only> instead')
     }
     return NoSsr.render(h, ctx)
   }
@@ -39,7 +39,7 @@ Vue.component('NChild', NuxtChild)
 
 // Component NuxtLink is imported in server.js or client.js
 
-// Component: <Nuxt>`
+// Component: <Nuxt>
 Vue.component(Nuxt.name, Nuxt)
 
 Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n-head-ssr","tagIDKeyName":"hid"})
@@ -62,14 +62,16 @@ async function createApp (ssrContext) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
+    head: {"title":"Mad Devs","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"script":[{"src":"https:\u002F\u002Fwidget.clutch.co\u002Fstatic\u002Fjs\u002Fwidget.js"}],"style":[]},
+
     store,
     router,
     nuxt: {
       defaultTransition,
-      transitions: [ defaultTransition ],
+      transitions: [defaultTransition],
       setTransitions (transitions) {
         if (!Array.isArray(transitions)) {
-          transitions = [ transitions ]
+          transitions = [transitions]
         }
         transitions = transitions.map((transition) => {
           if (!transition) {
@@ -91,7 +93,10 @@ async function createApp (ssrContext) {
         err = err || null
         app.context._errored = Boolean(err)
         err = err ? normalizeError(err) : null
-        const nuxt = this.nuxt || this.$options.nuxt
+        let nuxt = app.nuxt // to work with @vue/composition-api, see https://github.com/nuxt/nuxt.js/issues/6517#issuecomment-573280207
+        if (this) {
+          nuxt = this.nuxt || this.$options.nuxt
+        }
         nuxt.dateErr = Date.now()
         nuxt.err = err
         // Used in src/server.js
@@ -113,7 +118,7 @@ async function createApp (ssrContext) {
   if (ssrContext) {
     route = router.resolve(ssrContext.url).route
   } else {
-    const path = getLocation(router.options.base)
+    const path = getLocation(router.options.base, router.options.mode)
     route = router.resolve(path).route
   }
 
@@ -135,7 +140,7 @@ async function createApp (ssrContext) {
       throw new Error('inject(key, value) has no key provided')
     }
     if (value === undefined) {
-      throw new Error('inject(key, value) has no value provided')
+      throw new Error(`inject('${key}', value) has no value provided`)
     }
 
     key = '$' + key
@@ -153,7 +158,7 @@ async function createApp (ssrContext) {
     Vue[installKey] = true
     // Call Vue.use() to install the plugin into vm
     Vue.use(() => {
-      if (!Vue.prototype.hasOwnProperty(key)) {
+      if (!Object.prototype.hasOwnProperty.call(Vue, key)) {
         Object.defineProperty(Vue.prototype, key, {
           get () {
             return this.$root.$options[key]
