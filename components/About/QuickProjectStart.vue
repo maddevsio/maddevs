@@ -254,7 +254,7 @@ export default {
 
        &__button-wrap {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         margin-top: 38px;
         margin-left: 58px;
 

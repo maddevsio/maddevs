@@ -6,7 +6,8 @@
       </h1>
       <div class="customer-testimonials__content-wrap">
         <div class="customer-testimonials__widget-wrap">
-          <div 
+          <div
+            ref="clutch"
             class="clutch-widget"
             data-url="https://widget.clutch.co"
             data-widget-type="4"
@@ -77,6 +78,9 @@ export default {
     };
   },
   mounted() {
+    setTimeout(() => {
+      CLUTCHCO.Init();
+    }, 0);
     this.pageWasLoaded = true;
   }
 };
