@@ -6,6 +6,7 @@
     <CaseStudies />
     <QuickProjectStart />
     <CustomerTestimonials />
+    <WhyUs />
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import TechnologiesAndTools from '@/components/About/TechnologiesAndTools';
 import CaseStudies from '@/components/About/CaseStudies';
 import QuickProjectStart from '@/components/About/QuickProjectStart';
 import CustomerTestimonials from '@/components/About/CustomerTestimonials';
+import WhyUs from '@/components/About/WhyUs';
 
 export default {
   name: 'About',
@@ -25,7 +27,8 @@ export default {
     TechnologiesAndTools,
     CustomerTestimonials,
     CaseStudies,
-    QuickProjectStart
+    QuickProjectStart,
+    WhyUs
   },
   data() {
     return {
