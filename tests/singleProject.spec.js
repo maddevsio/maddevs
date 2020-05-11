@@ -103,6 +103,7 @@ describe('CaseStudies component', () => {
     wrapper = mount(SingleProject, {
       propsData: props
     });
+    
     const container = wrapper.findAll('.single-project__container').at(0);
     expect(container.classes()).not.toContain('single-project__container_white-letters-theme');
   });
@@ -155,10 +156,12 @@ describe('CaseStudies component', () => {
         ...props.project,
         projectName: 'guardrails'
       }
-    }
+    };
+
     wrapper = mount(SingleProject, {
       propsData: props
     });
+
     const background = wrapper.findAll('.single-project__background').at(0);
     expect(background.classes()).not.toContain('single-project__background_first-project');
   });
