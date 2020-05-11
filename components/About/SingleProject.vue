@@ -69,8 +69,34 @@ export default {
   name: 'SingleProject',
   props: {
     project: {
-      type: Object,
-      default: Object
+      projectColor: {
+        type: String,
+        required: true
+      },
+      projectName: {
+        type: String, 
+        required: true
+      },
+      logoImg: {
+        type: String,
+        required: true
+      },
+      contributionVidgetColors: {
+        type: Array,
+        required: true
+      },
+      projectBackground: {
+        type: String,
+        required: true
+      },
+      projectColor: {
+        type: String,
+        required: true
+      },
+      projectTitle: {
+        type: String,
+        required: true
+      }
     }
   }, 
   computed: {
