@@ -268,7 +268,7 @@ export default {
       &__main-title {
         font-size: 250px;
         line-height: 145px;
-      } 
+      }
 
       &__sub-title,
       &__metric-number {
@@ -294,7 +294,7 @@ export default {
       &__main-title {
         font-size: 235px;
         line-height: 135px;
-      } 
+      }
 
       &__rates-item {
         &:nth-child(1) {
@@ -431,7 +431,7 @@ export default {
     .why-us {
       &__main-title {
         font-size: 115px;
-        line-height: 72px
+        line-height: 72px;
       }
     }
   }
