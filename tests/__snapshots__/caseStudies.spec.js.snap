@@ -50,10 +50,10 @@ exports[`CaseStudies component renders correctly 1`] = `
             </p>
              
             <div
-              class="contribution-vidget"
+              class="contribution-widget"
             >
               <svg
-                class="contribution-vidget__img contribution-vidget__img_red"
+                class="contribution-widget__img contribution-widget__img_red"
                 fill="none"
                 height="18"
                 viewBox="0 0 20 18"
@@ -69,13 +69,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               </svg>
                
               <span
-                class="contribution-vidget__content-mobile contribution-vidget__content_gray"
+                class="contribution-widget__content-mobile contribution-widget__content_gray"
               >
                 contribution: backend, infrastructure
               </span>
                
               <span
-                class="contribution-vidget__content contribution-vidget__content_gray"
+                class="contribution-widget__content contribution-widget__content_gray"
               >
                 contribution: backend, infrastructure, frontend
               </span>
@@ -116,10 +116,10 @@ exports[`CaseStudies component renders correctly 1`] = `
             </p>
              
             <div
-              class="contribution-vidget"
+              class="contribution-widget"
             >
               <svg
-                class="contribution-vidget__img contribution-vidget__img_red"
+                class="contribution-widget__img contribution-widget__img_red"
                 fill="none"
                 height="18"
                 viewBox="0 0 20 18"
@@ -135,13 +135,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               </svg>
                
               <span
-                class="contribution-vidget__content-mobile contribution-vidget__content_white"
+                class="contribution-widget__content-mobile contribution-widget__content_white"
               >
                 contribution: backend, infrastructure
               </span>
                
               <span
-                class="contribution-vidget__content contribution-vidget__content_white"
+                class="contribution-widget__content contribution-widget__content_white"
               >
                 contribution: backend, infrastructure, frontend
               </span>
@@ -182,10 +182,10 @@ exports[`CaseStudies component renders correctly 1`] = `
             </p>
              
             <div
-              class="contribution-vidget"
+              class="contribution-widget"
             >
               <svg
-                class="contribution-vidget__img contribution-vidget__img_gray"
+                class="contribution-widget__img contribution-widget__img_gray"
                 fill="none"
                 height="18"
                 viewBox="0 0 20 18"
@@ -201,13 +201,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               </svg>
                
               <span
-                class="contribution-vidget__content-mobile contribution-vidget__content_mobile-white contribution-vidget__content_gray"
+                class="contribution-widget__content-mobile contribution-widget__content_mobile-white contribution-widget__content_gray"
               >
                 contribution: backend, infrastructure
               </span>
                
               <span
-                class="contribution-vidget__content contribution-vidget__content_mobile-white contribution-vidget__content_gray"
+                class="contribution-widget__content contribution-widget__content_mobile-white contribution-widget__content_gray"
               >
                 contribution: backend, infrastructure, frontend
               </span>
@@ -248,10 +248,10 @@ exports[`CaseStudies component renders correctly 1`] = `
             </p>
              
             <div
-              class="contribution-vidget"
+              class="contribution-widget"
             >
               <svg
-                class="contribution-vidget__img contribution-vidget__img_black"
+                class="contribution-widget__img contribution-widget__img_black"
                 fill="none"
                 height="18"
                 viewBox="0 0 20 18"
@@ -267,13 +267,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               </svg>
                
               <span
-                class="contribution-vidget__content-mobile contribution-vidget__content_black"
+                class="contribution-widget__content-mobile contribution-widget__content_black"
               >
                 contribution: backend, infrastructure
               </span>
                
               <span
-                class="contribution-vidget__content contribution-vidget__content_black"
+                class="contribution-widget__content contribution-widget__content_black"
               >
                 contribution: backend, infrastructure, frontend
               </span>
@@ -330,10 +330,10 @@ exports[`CaseStudies component renders correctly 1`] = `
                 </p>
                  
                 <div
-                  class="contribution-vidget"
+                  class="contribution-widget"
                 >
                   <svg
-                    class="contribution-vidget__img contribution-vidget__img_red"
+                    class="contribution-widget__img contribution-widget__img_red"
                     fill="none"
                     height="18"
                     viewBox="0 0 20 18"
@@ -349,13 +349,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   </svg>
                    
                   <span
-                    class="contribution-vidget__content-mobile contribution-vidget__content_gray"
+                    class="contribution-widget__content-mobile contribution-widget__content_gray"
                   >
                     contribution: backend, infrastructure
                   </span>
                    
                   <span
-                    class="contribution-vidget__content contribution-vidget__content_gray"
+                    class="contribution-widget__content contribution-widget__content_gray"
                   >
                     contribution: backend, infrastructure, frontend
                   </span>
@@ -400,10 +400,10 @@ exports[`CaseStudies component renders correctly 1`] = `
                 </p>
                  
                 <div
-                  class="contribution-vidget"
+                  class="contribution-widget"
                 >
                   <svg
-                    class="contribution-vidget__img contribution-vidget__img_red"
+                    class="contribution-widget__img contribution-widget__img_red"
                     fill="none"
                     height="18"
                     viewBox="0 0 20 18"
@@ -419,13 +419,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   </svg>
                    
                   <span
-                    class="contribution-vidget__content-mobile contribution-vidget__content_white"
+                    class="contribution-widget__content-mobile contribution-widget__content_white"
                   >
                     contribution: backend, infrastructure
                   </span>
                    
                   <span
-                    class="contribution-vidget__content contribution-vidget__content_white"
+                    class="contribution-widget__content contribution-widget__content_white"
                   >
                     contribution: backend, infrastructure, frontend
                   </span>
@@ -470,10 +470,10 @@ exports[`CaseStudies component renders correctly 1`] = `
                 </p>
                  
                 <div
-                  class="contribution-vidget"
+                  class="contribution-widget"
                 >
                   <svg
-                    class="contribution-vidget__img contribution-vidget__img_gray"
+                    class="contribution-widget__img contribution-widget__img_gray"
                     fill="none"
                     height="18"
                     viewBox="0 0 20 18"
@@ -489,13 +489,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   </svg>
                    
                   <span
-                    class="contribution-vidget__content-mobile contribution-vidget__content_mobile-white contribution-vidget__content_gray"
+                    class="contribution-widget__content-mobile contribution-widget__content_mobile-white contribution-widget__content_gray"
                   >
                     contribution: backend, infrastructure
                   </span>
                    
                   <span
-                    class="contribution-vidget__content contribution-vidget__content_mobile-white contribution-vidget__content_gray"
+                    class="contribution-widget__content contribution-widget__content_mobile-white contribution-widget__content_gray"
                   >
                     contribution: backend, infrastructure, frontend
                   </span>
@@ -540,10 +540,10 @@ exports[`CaseStudies component renders correctly 1`] = `
                 </p>
                  
                 <div
-                  class="contribution-vidget"
+                  class="contribution-widget"
                 >
                   <svg
-                    class="contribution-vidget__img contribution-vidget__img_black"
+                    class="contribution-widget__img contribution-widget__img_black"
                     fill="none"
                     height="18"
                     viewBox="0 0 20 18"
@@ -559,13 +559,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   </svg>
                    
                   <span
-                    class="contribution-vidget__content-mobile contribution-vidget__content_black"
+                    class="contribution-widget__content-mobile contribution-widget__content_black"
                   >
                     contribution: backend, infrastructure
                   </span>
                    
                   <span
-                    class="contribution-vidget__content contribution-vidget__content_black"
+                    class="contribution-widget__content contribution-widget__content_black"
                   >
                     contribution: backend, infrastructure, frontend
                   </span>

@@ -9,7 +9,7 @@ describe('CaseStudies component', () => {
     {
       projectName: 'nambafood',
       logoImg: 'nambafoodColored',
-      contributionVidgetColors: ['#ec1c24', '#96969c'],
+      contributionWidgetColors: ['#ec1c24', '#96969c'],
       projectBackground: 'nambafoodBackground',
       projectColor: '#f8f7f6',
       projectTitle: 'Contactless delivery service',
@@ -18,7 +18,7 @@ describe('CaseStudies component', () => {
     {
       projectName: 'teacherly',
       logoImg: 'teacherlyColored',
-      contributionVidgetColors: ['#ec1c24', '#fff'],
+      contributionWidgetColors: ['#ec1c24', '#fff'],
       projectBackground: 'teacherlyBackground',
       projectColor: '#56448e',
       projectTitle: 'EdTech collaboration platform',
@@ -27,7 +27,7 @@ describe('CaseStudies component', () => {
     {
       projectName: 'guardrails',
       logoImg: 'guardrailsColored',
-      contributionVidgetColors: ['#96969c', '#96969c'],
+      contributionWidgetColors: ['#96969c', '#96969c'],
       projectBackground: 'guardrailsBackground',
       projectColor: '#0e1b27',
       projectTitle: 'Cloud cybersecurity service',
@@ -36,7 +36,7 @@ describe('CaseStudies component', () => {
     {
       projectName: 'godee',
       logoImg: 'godeeColored',
-      contributionVidgetColors: ['#000', '#000'],
+      contributionWidgetColors: ['#000', '#000'],
       projectBackground: 'godeeBackground',
       projectColor: '#ff6A01',
       projectTitle: 'Mass transportation company',

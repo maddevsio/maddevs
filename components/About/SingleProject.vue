@@ -5,15 +5,15 @@
         <img :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)" class="single-project__logo" :alt="project.projectName" />
         <h4 class="single-project__sub-title sub-title">{{project.projectTitle}}</h4>
         <p class="single-project__paragraph paragraph">{{project.projectDescription}}</p> 
-        <div class="contribution-vidget">
+        <div class="contribution-widget">
           <svg
-            class="contribution-vidget__img"
+            class="contribution-widget__img"
             :class="[
-              project.contributionVidgetColors[0] === '#ec1c24'
-                ? 'contribution-vidget__img_red'
-                : project.contributionVidgetColors[0] === '#000'
-                ? 'contribution-vidget__img_black'
-                : 'contribution-vidget__img_gray'
+              project.contributionWidgetColors[0] === '#ec1c24'
+                ? 'contribution-widget__img_red'
+                : project.contributionWidgetColors[0] === '#000'
+                ? 'contribution-widget__img_black'
+                : 'contribution-widget__img_gray'
             ]"
             width="20"
             height="18"
@@ -29,30 +29,30 @@
             />
           </svg>
           <span
-            class="contribution-vidget__content-mobile"
+            class="contribution-widget__content-mobile"
             :class="[
               project.projectName === 'guardrails'
-                ? 'contribution-vidget__content_mobile-white'
+                ? 'contribution-widget__content_mobile-white'
                 : '',
-              project.contributionVidgetColors[1] === '#fff'
-                ? 'contribution-vidget__content_white'
-                : project.contributionVidgetColors[1] === '#000'
-                ? 'contribution-vidget__content_black'
-                : 'contribution-vidget__content_gray'
+              project.contributionWidgetColors[1] === '#fff'
+                ? 'contribution-widget__content_white'
+                : project.contributionWidgetColors[1] === '#000'
+                ? 'contribution-widget__content_black'
+                : 'contribution-widget__content_gray'
             ]"
             >contribution: backend, infrastructure</span
           >
           <span
-            class="contribution-vidget__content"
+            class="contribution-widget__content"
             :class="[
               project.projectName === 'guardrails'
-                ? 'contribution-vidget__content_mobile-white'
+                ? 'contribution-widget__content_mobile-white'
                 : '',
-              project.contributionVidgetColors[1] === '#fff'
-                ? 'contribution-vidget__content_white'
-                : project.contributionVidgetColors[1] === '#000'
-                ? 'contribution-vidget__content_black'
-                : 'contribution-vidget__content_gray'
+              project.contributionWidgetColors[1] === '#fff'
+                ? 'contribution-widget__content_white'
+                : project.contributionWidgetColors[1] === '#000'
+                ? 'contribution-widget__content_black'
+                : 'contribution-widget__content_gray'
             ]"
             >contribution: backend, infrastructure, frontend</span
           >
@@ -81,7 +81,7 @@ export default {
         type: String,
         required: true
       },
-      contributionVidgetColors: {
+      contributionWidgetColors: {
         type: Array,
         required: true
       },
@@ -100,13 +100,13 @@ export default {
     }
   }, 
   computed: {
-    isWhiteColored: function() {
+    isWhiteColored() {
       if(this.project.projectName === 'teacherly' || this.project.projectName === 'guardrails') {
         return true;
       }
       return false;
     },
-    isFirstProject: function() {
+    isFirstProject() {
       if(this.project.projectName === 'nambafood') {
         return true;
       }
@@ -153,7 +153,7 @@ export default {
     margin-top: 33px;
   }
 
-  .contribution-vidget {
+  .contribution-widget {
     display: flex;
     align-items: center;
     position: relative;
@@ -204,6 +204,7 @@ export default {
 
         &-mobile {
           display: block;
+          margin-left: 6px;
 
           &_gray {
             color: $text-color--black;
@@ -259,7 +260,7 @@ export default {
         height: 65px;
         word-wrap: break-word;
 
-        .contribution-vidget {
+        .contribution-widget {
           margin-top: 26px;
         }
       }

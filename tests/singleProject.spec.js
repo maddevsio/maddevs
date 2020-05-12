@@ -11,7 +11,7 @@ describe('CaseStudies component', () => {
     project: {
       projectName: 'nambafood',
       logoImg: 'nambafoodColored',
-      contributionVidgetColors: ['#ec1c24', '#96969c'],
+      contributionWidgetColors: ['#ec1c24', '#96969c'],
       projectBackground: 'nambafoodBackground',
       projectColor: '#f8f7f6',
       projectTitle: 'Contactless delivery service',
@@ -33,7 +33,7 @@ describe('CaseStudies component', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
 
-  test('shoud add contribution-vidget__content_mobile-white class if projectName prop equals to guardrails', () => {
+  test('shoud add contribution-widget__content_mobile-white class if projectName prop equals to guardrails', () => {
     props = {
       project: {
         ...props.project,
@@ -45,11 +45,11 @@ describe('CaseStudies component', () => {
       propsData: props
     });
 
-    const widget = wrapper.findAll('.contribution-vidget__content-mobile').at(0);
-    expect(widget.classes()).toContain('contribution-vidget__content_mobile-white');
+    const widget = wrapper.findAll('.contribution-widget__content-mobile').at(0);
+    expect(widget.classes()).toContain('contribution-widget__content_mobile-white');
   });
 
-  test('shoud not add contribution-vidget__content_mobile-white class if projectName prop notnequals to guardrails', () => {
+  test('shoud not add contribution-widget__content_mobile-white class if projectName prop notnequals to guardrails', () => {
     props = {
       project: {
         ...props.project,
@@ -61,8 +61,8 @@ describe('CaseStudies component', () => {
       propsData: props
     });
 
-    const widget = wrapper.findAll('.contribution-vidget__content-mobile').at(0);
-    expect(widget.classes()).not.toContain('contribution-vidget__content_mobile-white');
+    const widget = wrapper.findAll('.contribution-widget__content-mobile').at(0);
+    expect(widget.classes()).not.toContain('contribution-widget__content_mobile-white');
   });
 
   test('.single-project__container shoud contain single-project__container_white-letters-theme class if isWhiteColored computed value will be true', () => {
@@ -112,17 +112,17 @@ describe('CaseStudies component', () => {
     expect(wrapper.props().project).toStrictEqual(props.project);
   });
 
-  test('shoud contain contribution-vidget__img_red class if color will be #ec1c24', () => {
-    const widget = wrapper.findAll('.contribution-vidget__img').at(0);
-    expect(widget.classes()).toContain('contribution-vidget__img_red');
-    expect(widget.classes()).not.toContain('contribution-vidget__img_black');
+  test('shoud contain contribution-widget__img_red class if color will be #ec1c24', () => {
+    const widget = wrapper.findAll('.contribution-widget__img').at(0);
+    expect(widget.classes()).toContain('contribution-widget__img_red');
+    expect(widget.classes()).not.toContain('contribution-widget__img_black');
   });
 
-  test('shoud contain contribution-vidget__img_black class if color will be #000', () => {
+  test('shoud contain contribution-widget__img_black class if color will be #000', () => {
     props = {
       project: {
         ...props.project,
-        contributionVidgetColors: ['#000', '#000']
+        contributionWidgetColors: ['#000', '#000']
       }
     };
 
@@ -130,9 +130,9 @@ describe('CaseStudies component', () => {
       propsData: props
     });
 
-    const widget = wrapper.findAll('.contribution-vidget__img').at(0);
-    expect(widget.classes()).not.toContain('contribution-vidget__img_red');
-    expect(widget.classes()).toContain('contribution-vidget__img_black');
+    const widget = wrapper.findAll('.contribution-widget__img').at(0);
+    expect(widget.classes()).not.toContain('contribution-widget__img_red');
+    expect(widget.classes()).toContain('contribution-widget__img_black');
   });
 
   test('shoud add single-project__background_first-project class to .single-project__background if projectName will be nambafood', () => {
@@ -166,11 +166,11 @@ describe('CaseStudies component', () => {
     expect(background.classes()).not.toContain('single-project__background_first-project');
   });
 
-  test('shoud contain contribution-vidget__img_gray class if color will not be #000 or #ec1c24', () => {
+  test('shoud contain contribution-widget__img_gray class if color will not be #000 or #ec1c24', () => {
     props = {
       project: {
         ...props.project,
-        contributionVidgetColors: ['#fff', '#ccc']
+        contributionWidgetColors: ['#fff', '#ccc']
       }
     };
 
@@ -178,9 +178,9 @@ describe('CaseStudies component', () => {
       propsData: props
     });
 
-    const widget = wrapper.findAll('.contribution-vidget__img').at(0);
-    expect(widget.classes()).not.toContain('contribution-vidget__img_red');
-    expect(widget.classes()).not.toContain('contribution-vidget__img_black');
-    expect(widget.classes()).toContain('contribution-vidget__img_gray');
+    const widget = wrapper.findAll('.contribution-widget__img').at(0);
+    expect(widget.classes()).not.toContain('contribution-widget__img_red');
+    expect(widget.classes()).not.toContain('contribution-widget__img_black');
+    expect(widget.classes()).toContain('contribution-widget__img_gray');
   });
 });
