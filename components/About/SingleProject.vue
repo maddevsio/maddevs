@@ -75,7 +75,7 @@ export default {
     backgroundModifierClasses() {
       return {
         'single-project__background_first-project':
-          this.project.projectName === 'nambafood',
+          this.project.projectName === 'nambafood' || this.project.projectName === 'teacherly',
         'single-project__background_guardrails':
           this.project.projectName === 'guardrails'
       };
@@ -197,6 +197,10 @@ export default {
       position: relative;
       left: 3.1px;
     }
+
+    &_first-project {
+      width: 100%;
+    }
   }
 
   @media screen and (max-width: 1020px) and (min-width: 798px) {
@@ -210,6 +214,7 @@ export default {
 
         &_first-project {
           background-size: cover;
+          width: 100%;
         }
       }
     }
@@ -223,6 +228,10 @@ export default {
       &__background {
         width: 85%;
         margin-left: 1.188em;
+
+        &_first-project {
+          width: 100%;
+        }
       }
 
       &__container {
@@ -247,6 +256,7 @@ export default {
 
         &_first-project {
           background-size: cover;
+          width: 100%;
         }
       }
     }
@@ -283,6 +293,11 @@ export default {
       &__background {
         width: 80%;
         margin-left: -2.4em;
+
+        &_first-project {
+          background-size: contain;
+          width: 100%;
+        }
       }
     }
   }
