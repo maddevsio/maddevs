@@ -10,7 +10,16 @@
           :projectName="project.projectName"
         />
       </div>
-      <div class="single-project__background" :style="{'background-image': 'url(' + require(`@/assets/img/Studies/png/${project.projectBackground}.png`) + ')'}" :class="{ 'single-project__background_first-project': isFirstProject}"></div>
+      <div
+        class="single-project__background"
+        :style="{
+          'background-image':
+            'url(' +
+            require(`@/assets/img/Studies/png/${project.projectBackground}.png`) +
+            ')'
+        }"
+        :class="backgroundModifierClasses"
+      ></div>
     </div>
   </div>
 </template>
@@ -63,11 +72,13 @@ export default {
       }
       return false;
     },
-    isFirstProject() {
-      if(this.project.projectName === 'nambafood') {
-        return true;
-      }
-      return false;
+    backgroundModifierClasses() {
+      return {
+        'single-project__background_first-project':
+          this.project.projectName === 'nambafood',
+        'single-project__background_guardrails':
+          this.project.projectName === 'guardrails'
+      };
     }
   }
 };
@@ -181,12 +192,21 @@ export default {
     background-size: contain;
     height: 413px;
     width: 100%;
+
+    &_guardrails {
+      position: relative;
+      left: 3.1px;
+    }
   }
 
   @media screen and (max-width: 1020px) and (min-width: 798px) {
     .single-project {
       &__background {
         background-size: contain;
+
+        &_guardrails {
+          left: 4.1px;
+        }
 
         &_first-project {
           background-size: cover;

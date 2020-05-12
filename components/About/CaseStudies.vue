@@ -141,7 +141,7 @@ export default {
     @media only screen and (max-width: 410px) {
       .single-project {
         min-width: 100%;
-        padding-left: 28px; 
+        padding-left: 28px;
       }
     }
 

@@ -215,7 +215,7 @@ exports[`CaseStudies component renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background"
+            class="single-project__background single-project__background_guardrails"
           />
         </div>
       </div>
@@ -503,7 +503,7 @@ exports[`CaseStudies component renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background"
+                class="single-project__background single-project__background_guardrails"
               />
             </div>
           </div>
