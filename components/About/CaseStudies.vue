@@ -138,6 +138,13 @@ export default {
   }
 
   .swiper-slide {
+    @media only screen and (max-width: 410px) {
+      .single-project {
+        min-width: 100%;
+        padding-left: 28px; 
+      }
+    }
+
     &:nth-child(3) {
       .single-project {
         &::before {
@@ -176,6 +183,8 @@ export default {
 
   @media only screen and (max-width: 520px) {
     .case-studies {
+      min-width: 100%;
+
       &__main-title {
         padding-bottom: 31px;
       }

@@ -183,10 +183,27 @@ export default {
     width: 100%;
   }
 
+  @media screen and (max-width: 1020px) and (min-width: 798px) {
+    .single-project {
+      &__background {
+        background-size: contain;
+
+        &_first-project {
+          background-size: cover;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     .single-project {
       width: 100%;
       min-width: 320px;
+
+      &__background {
+        width: 85%;
+        margin-left: 1.188em;
+      }
 
       &__container {
         padding-top: 1px;
@@ -202,9 +219,22 @@ export default {
     }
   }
 
+  @media screen and (max-width: 768px) and (min-width: 679px) {
+    .single-project {
+      &__background {
+        background-size: contain;
+        height: 378px;
+
+        &_first-project {
+          background-size: cover;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 576px) {
     .single-project {
-      width: 100%;
+      min-width: 100%;
 
       &__sub-title {
         font-weight: bold;
@@ -228,34 +258,11 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 380px) {
+  @media only screen and (max-width: 410px) {
     .single-project {
       &__background {
-        width: 90%;
-      }
-    }
-  }
-
-  @media screen and (max-width: 768px) and (min-width: 679px) {
-    .single-project {
-      &__background {
-        background-size: contain;
-
-        &_first-project {
-          background-size: cover;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 1020px) and (min-width: 798px) {
-    .single-project {
-      &__background {
-        background-size: contain;
-
-        &_first-project {
-          background-size: cover;
-        }
+        width: 80%;
+        margin-left: -2.4em;
       }
     }
   }
