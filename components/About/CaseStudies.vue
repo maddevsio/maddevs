@@ -37,7 +37,7 @@ export default {
         {
           projectName: 'nambafood',
           logoImg: 'nambafoodColored',
-          contributionVidgetImg: 'maddevsLogoWithoutText',
+          contributionWidgetColors: ['#ec1c24', '#96969c'],
           projectBackground: 'nambafoodBackground',
           projectColor: '#f8f7f6',
           projectTitle: 'Contactless delivery service',
@@ -46,27 +46,27 @@ export default {
         {
           projectName: 'teacherly',
           logoImg: 'teacherlyColored',
-          contributionVidgetImg: 'maddevsLogoWithoutText',
+          contributionWidgetColors: ['#ec1c24', '#fff'],
           projectBackground: 'teacherlyBackground',
-          projectColor: '#56448E',
+          projectColor: '#56448e',
           projectTitle: 'EdTech collaboration platform',
           projectDescription: 'Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform.'
         },
         {
           projectName: 'guardrails',
           logoImg: 'guardrailsColored',
-          contributionVidgetImg: 'maddevsLogoWithoutText',
+          contributionWidgetColors: ['#96969c', '#96969c'],
           projectBackground: 'guardrailsBackground',
-          projectColor: '#0E1B27',
+          projectColor: '#0e1b27',
           projectTitle: 'Cloud cybersecurity service',
           projectDescription: 'Mad Devs was involved with Guardrails\' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.'
         },
         {
           projectName: 'godee',
           logoImg: 'godeeColored',
-          contributionVidgetImg: 'maddevsLogoWithoutText',
+          contributionWidgetColors: ['#000', '#000'],
           projectBackground: 'godeeBackground',
-          projectColor: '#FF6A01',
+          projectColor: '#ff6A01',
           projectTitle: 'Mass transportation company',
           projectDescription: 'Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.'
         }
@@ -95,13 +95,6 @@ export default {
     }
   }
 
-  @mixin responsive-bg-image($image-width, $image-height) {
-    background-size: 100%;
-    height: 0;
-    padding-bottom: percentage($image-height / $image-width);
-    display: block;
-  }
-
   .projects {
     display: flex;
     flex-wrap: wrap;
@@ -118,11 +111,53 @@ export default {
           z-index: -44;
           top: 0;
           right: 0;
+          mix-blend-mode: overlay;
           opacity: 0.68;
         }
       }
 
       &:last-child {
+        &::after {
+          content: '';
+          position: absolute;
+          background-image: url('../../assets/img/Studies/svg/godeeSecondaryBg.svg');
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          background-size: contain;
+          z-index: -44;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .swiper-container {
+    background: $bgcolor--black;
+  }
+
+  .swiper-slide {
+    &:nth-child(3) {
+      .single-project {
+        &::before {
+          content: '';
+          position: absolute;
+          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg') no-repeat right 50%;
+          width: 100%;
+          height: 310px;
+          background-size: contain;
+          z-index: -44;
+          top: 0;
+          right: 0;
+          mix-blend-mode: overlay;
+          opacity: 0.68;
+        }
+      }
+    }
+
+    &:last-child {
+      .single-project {
         &::after {
           content: '';
           position: absolute;

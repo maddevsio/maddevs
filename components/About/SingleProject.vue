@@ -1,28 +1,73 @@
 <template>
   <div class="single-project" :style="{ background: project.projectColor }">
-    <div class="single-project__container">
+    <div class="single-project__container" :class="{ 'single-project__container_white-letters-theme': isWhiteColored}">
       <div class="single-project__content-wrap">
         <img :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)" class="single-project__logo" :alt="project.projectName" />
         <h4 class="single-project__sub-title sub-title">{{project.projectTitle}}</h4>
         <p class="single-project__paragraph paragraph">{{project.projectDescription}}</p> 
-        <div class="contribution-vidget">
-          <img :src="require(`@/assets/img/Home/svg/${project.contributionVidgetImg}.svg`)" alt="Mad Devs">
-          <span class="contribution-vidget__content">contribution: backend, infrastructure</span>
-        </div>
+        <ContributionWidget
+          :contributionWidgetColors="project.contributionWidgetColors"
+          :projectName="project.projectName"
+        />
       </div>
-      <div class="single-project__background" :style="{'background-image': 'url(' + require(`@/assets/img/Studies/png/${project.projectBackground}.png`) + ')'}"></div>
+      <div class="single-project__background" :style="{'background-image': 'url(' + require(`@/assets/img/Studies/png/${project.projectBackground}.png`) + ')'}" :class="{ 'single-project__background_first-project': isFirstProject}"></div>
     </div>
   </div>
 </template>
 
 <script>
 
+import ContributionWidget from '@/components/About/ContributionWidget';
+
 export default {
   name: 'SingleProject',
+  components: {
+    ContributionWidget
+  },
   props: {
     project: {
-      type: Object,
-      default: Object
+      projectColor: {
+        type: String,
+        required: true
+      },
+      projectName: {
+        type: String, 
+        required: true
+      },
+      logoImg: {
+        type: String,
+        required: true
+      },
+      contributionWidgetColors: {
+        type: Array,
+        required: true
+      },
+      projectBackground: {
+        type: String,
+        required: true
+      },
+      projectColor: {
+        type: String,
+        required: true
+      },
+      projectTitle: {
+        type: String,
+        required: true
+      }
+    }
+  }, 
+  computed: {
+    isWhiteColored() {
+      if(this.project.projectName === 'teacherly' || this.project.projectName === 'guardrails') {
+        return true;
+      }
+      return false;
+    },
+    isFirstProject() {
+      if(this.project.projectName === 'nambafood') {
+        return true;
+      }
+      return false;
     }
   }
 };
@@ -30,13 +75,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
-
-@mixin responsive-bg-image($image-width, $image-height) {
-  background-size: 100%;
-  height: 0;
-  padding-bottom: percentage($image-height / $image-width);
-  display: block;
-}
 
 .single-project {
   width: 50%;
@@ -52,9 +90,16 @@ export default {
     }
   }
 
+  &__container {
+    &_white-letters-theme {
+      color: $text-color--white;
+    }
+  }
+
   &__content-wrap {
     margin:  74px 70px 0;
-    height: 305px;
+    height: 230px;
+    z-index: 1;
   }
 
   &__sub-title {
@@ -65,7 +110,7 @@ export default {
     margin-top: 33px;
   }
 
-  .contribution-vidget {
+  .contribution-widget {
     display: flex;
     align-items: center;
     position: relative;
@@ -76,14 +121,57 @@ export default {
     font-size: 16px;
     line-height: 23px;
 
+    &__img {
+      &_black {
+        fill: $text-color--black;
+      }
+
+      &_red {
+        fill: $text-color--red;
+      }
+
+      &_gray {
+        fill: $text-color--grey;
+      }
+    }
+
     &__content {
       margin-left: 6px;
+
+      &-mobile {
+        display: none;
+      }
+
+      &_black {
+        color: $text-color--black;
+      }
+
+      &_white {
+        color: $text-color--white;
+      }
+
+      &_gray {
+        color: $text-color--grey;
+      }
     }
 
     @media only screen and (max-width: 576px) {
-        &__content {
-          color: $text-color--black;
+      &__content {
+        display: none;
+
+        &-mobile {
+          display: block;
+          margin-left: 6px;
+
+          &_gray {
+            color: $text-color--black;
+          }
+
+          &_mobile-white {
+            color: $text-color--grey;
+          }
         }
+      }
     }
   }
 
@@ -91,16 +179,20 @@ export default {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
-    height: 400px;
+    height: 413px;
     width: 100%;
   }
 
   @media only screen and (max-width: 768px) {
     .single-project {
       width: 100%;
+      min-width: 320px;
 
       &__container {
         padding-top: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       &__content-wrap {
@@ -114,11 +206,18 @@ export default {
     .single-project {
       width: 100%;
 
-      &__content-wrap {
-        margin:  40px 34px 0;
-        height: 68px;
+      &__sub-title {
+        font-weight: bold;
+        font-size: 41px;
+        line-height: 40px;
+      }
 
-        .contribution-vidget {
+      &__content-wrap {
+        margin: 40px 77px 0 34px;
+        height: 65px;
+        word-wrap: break-word;
+
+        .contribution-widget {
           margin-top: 26px;
         }
       }
@@ -129,10 +228,22 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 380px) {
+    .single-project {
+      &__background {
+        width: 90%;
+      }
+    }
+  }
+
   @media screen and (max-width: 768px) and (min-width: 679px) {
     .single-project {
       &__background {
-        background-size: cover;
+        background-size: contain;
+
+        &_first-project {
+          background-size: cover;
+        }
       }
     }
   }
@@ -140,7 +251,11 @@ export default {
   @media screen and (max-width: 1020px) and (min-width: 798px) {
     .single-project {
       &__background {
-        background-size: cover;
+        background-size: contain;
+
+        &_first-project {
+          background-size: cover;
+        }
       }
     }
   }
