@@ -30,6 +30,7 @@ module.exports = {
     '~/plugins/i18n.js',
     '~/plugins/vue-scrollto.js',
     '~/plugins/google-analytics.js',
+    '~/plugins/vue-js-modal.js',
     {
       src: '~plugins/slick.js',
       ssr: false
