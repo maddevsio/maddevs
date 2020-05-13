@@ -8,17 +8,23 @@
               Your Trusted <br> <span class="media-item">IT</span>
               <span class="main-title-white_part">Outsourcing Partner</span>
             </h1>
+            <h1 class="banner-main_title" v-if="currentPageName === 'projects'">
+              Check out our
+              <span class="main-title-white_part">50+ implemented projects!</span>
+            </h1>
             <h1 class="banner-main_title" v-if="currentPageName === 'index'">
               Mad Devs
               <span class="main-title-white_part"><br>Engineering<br>Your Growth</span>
             </h1>
+            <navigationList v-if="currentPageName === 'projects'" />
           </div>
           <div class="icon-item">
             <img src="../assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" v-if="currentPageName === 'index'">
             <img src="../assets/img/Services/svg/make-partner.svg" alt="Make Partner Logotype" v-if="currentPageName === 'services'">
+            <img src="../assets/img/Projects/png/projects-flame-bg.png" alt="Make Partner Logotype" v-if="currentPageName === 'projects'">
           </div>
         </div>
-        <navigationList />
+        <navigationList v-if="currentPageName !== 'projects'" />
       </div>
     </div>
   </section>
@@ -78,6 +84,28 @@ export default {
         color: $text-color--white;
         text-shadow: none;
       }
+    }
+  }
+
+  .projects {
+    .container {
+      position: relative;
+
+      .main-title-wrapper {
+        max-width: 1400px;
+      }
+    }
+
+    .icon-item {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top: 40em;
+    }
+
+    .navigation-wrap {
+      margin-top: 170px;
     }
   }
 
