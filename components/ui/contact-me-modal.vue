@@ -1,6 +1,6 @@
 <template>
-  <modal name="contact-me">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal">
+  <modal name="contact-me" :clickToClose="false">
+    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('contact-me')">
     <form class="footer-form form"> 
       <div class="fields-list">
         <div class="field-item">

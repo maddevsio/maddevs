@@ -492,7 +492,6 @@
 // Modal window 
 
 .vm--modal {
-
   // change initial modal window styles
   width: 570px !important;
   height: max-content !important;
@@ -514,4 +513,5 @@
   position: absolute;
   top: 30px;
   right: 30px;
+  cursor: pointer;
 }
