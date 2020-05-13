@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://maddevs.io/</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/en/</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/en/jobs/</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/ru/</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/ru/jobs/</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/introduction-to-prototyping-with-easyeda-part-ii-simple-schematic-fecafe9839c7</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81-easyeda-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%B0%D1%8F-%D1%81%D1%85%D0%B5%D0%BC%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-8fa3f8ac3c5</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-to-start-with-logging-in-go-projects-part-2-1e57cc58f329</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-good-engineering-culture-is-in-your-team-1ecd6f16da69</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/introduction-to-pcb-prototyping-with-easyeda-part-i-project-creation-143563311253</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81-easyeda-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-e569350588ef</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/digital-marketing-manager-9f85c900cf28</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/project-manager-58dbe9aec708</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/go-rest-or-grpc-5eace88499bd</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-to-start-with-logging-in-golang-projects-part-1-3e3a708b75be</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/a-bit-about-event-delegation-in-react-3b92fb0a978b</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/guaranteed-delivery-with-grpc-streams-dc847ead7e6e</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/underestimating-go-c3b5eb497f9d</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-to-stop-worrying-and-start-developing-for-raspberry-pi-with-qt-8df032f8a534</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/search?q=Terraform%20%2B%20Hetzner</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/the-difference-in-work-for-beginner-and-professional-developers-e45ddd5e5bfe</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/mad-fake-slack-945ea810a778</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/testing-django-on-steroids-with-pytest-38fe11a3538c</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/the-nuances-of-testing-in-pair-cucumber-js-puppeteer-49c3ff2da44c</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/code-climate-code-analysis-locally-using-vscode-remote-containers-b4efaf6bf26e</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/web-app-deploy-to-glitch-com-b43470c32a2f</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/top-3-best-ci-for-your-js-projects-with-puppeteer-tests-9395ff31d134</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/a-bit-about-event-delegation-in-pure-js-56f8356463ca</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci-9805042bc0c</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-to-build-a-startup-with-an-outsource-team-a3b584c80bf8</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/mad-devs-climbs-clutchs-ranks-of-leading-web-developers-cloud-consultants-in-the-uk-950926f32252</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/meet-glitch-com-429c423cf8e1</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/internship-program-automation-wip-f1d5d976ea21</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/daas-devops-as-a-service-wut-6e34ceb865ca</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/view-colleagues-from-another-office-through-always-on-video-window-71b4cf6efbbe</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0-%D0%B8-%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B2-golangconf-team-lead-meetup-south-devfest-4d93865a9440</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/vscode-remote-containers-codeclimate-72526938352f</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/micronavigator-based-on-stm32f100-3cebc718f638</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/golang-after-ruby-b515a43912ad</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/go-rest-%D0%B8%D0%BB%D0%B8-grpc-f5d52d7ffff6</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/math-big-problems-in-go-28aa9f10958b</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/investment-plan-for-developers-20bc784b3b72</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%B2%D1%80%D0%B5%D0%BC%D1%8F-%D0%B4%D0%BB%D1%8F-graphql-%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-2a31a6ac667c</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/golang-logging-7fdd3da5152f</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/programmers-oath-646e6d3f2136</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/being-professional-at-work-455e21d6bf66</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/go-ruby-js-vs-i-8b1346615a43</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/vscode-remote-containers-a6c5672eb5e9</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/crm-like-a-god-aab144aada34</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/professional-way-6bb28956f564</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/secrets-513d41eaaf43</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/why-most-beginners-projects-are-shit-f47d381649c2</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/micronavigator-based-on-stm32f100-8eec4ba6049d</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/terrafom-hetzner-a2f22534514b</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/event-delegation-with-react-44a2029f23e2</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/grpc-streaming-delivery-2f5c86160705</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/internship-program-automation-53cbd8b0e0f8</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/devs-and-business-5573ee07e756</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D1%81%D0%BA%D0%B0%D0%B6%D0%B8-%D0%BD%D0%B5%D1%82-%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B5-this-parent-parent-parent-%D0%B2-vue-js-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%B0%D1%85-96f230cb5758</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/qt-development-for-raspberry-pi-715cc76b6753</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/software-development-hack-4e76e6634d29</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/svg-css-variables-5cc7b53d0ebf</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/introduction-to-glitch-7e286f1df1c6</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/standup-bots-for-slack-d514ca0296b2</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/event-delegation-in-javascript-616289317850</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/devops-as-a-sevice-b41e53ffe8e1</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4-%D0%BD%D0%B0-slackclient-2-0-%D0%B8-%D1%84%D0%B5%D0%B9%D0%BA-%D1%81%D0%BB%D0%B0%D0%BA-%D0%B4%D0%BB%D1%8F-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2-%D0%B1%D0%BE%D1%82%D0%B0-bd04861d6e33</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci-d06f6c2f96dc</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/node-js-apps-deploy-to-glitch-fa00598c219</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-to-connect-remote-offices-e80d1b5e2cd9</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/acceptance-testing-on-cucumber-js-and-puppeteer-b3660401fdf0</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-5f670ca81046</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/top-3-ci-for-js-19bc55b2c5af</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/cucumber-js-puppeteer-testing-in-pair-31d559b7b8bf-31d559b7b8bf</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-to-make-github-badges-c2fecf753613</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/yandex-partnership-3e6857a332dd</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/mad-fake-slack-alpha-9ea22989958c</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/project-manager-wanted-b5741ebcdb69</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/qa-specialist-ef1814ad3b0d</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/hr-wanted-a70716a9a8a8</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/senior-full-stack-js-developer-65eb42d065b1</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/middle-senior-mobile-developer-android-ios-1672d32ed83f</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/junior-intern-php-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA-103fc305e544</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-junior-devops-specialist-e60b5806bb7</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/junior-qa-tester-manual-6f478d3e08c</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/designer-wanted-a82cbed193e</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/ruby-rails-developer-df6450a48904</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer-43594faed19c</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/best-architecture-for-the-react-project-149b377b379d</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/i-built-my-own-self-driving-car-part-2-e3894ce4eb42</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/native-apps-vs-pwa-2da08fb923cb</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/i-built-my-own-self-driving-car-part-3-1ca1d85e9d59</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/i-built-my-own-self-driving-car-part-1-4478551ee205</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/linuxkit-as-a-ecs-instance-with-terraform-31a33116dbe2</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-can-programmer-grow-faster-d8fccdb5eb2c</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/connection-pooling-for-rds-postgresql-with-terraform-cc530cf51af0</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-we-built-a-failover-architecture-for-a-taxi-service-part-3-the-end-78b2215caa08</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/positive-and-negative-reinforcement-in-teaching-programming-b5dc1fcb042a</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/namba-food-bot-61b5be6acfec</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/you-want-to-develop-a-mobile-application-are-you-sure-9f274977c615</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/comedian-17b0bb0ae8c7</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/mad-devs-icpc-northern-eurasia-the-2018-kyrgyzstan-subregional-contest-427be193ff5b</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/gophercon-russia-a-lot-of-warm-in-18-68747e8bff97</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/mad-devs-is-a-main-sponsor-of-google-developers-group-gdg-devfest-bishkek-2018-83d7f2abc19f</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/heimdall-monitor-the-security-of-your-ethereum-smart-contracts-as-a-badge-in-the-repository-a720f1865094</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%BB%D1%83%D1%87%D1%88%D0%B0%D1%8F-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%BB%D1%8F-react-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-2f6f1feedc13</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/vscode-django-pylint-17a4c0ae12c1</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/ru-reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer-b81f1026e06c</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%D1%83-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%B5%D0%B5-efddc74643ce</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/juniour-communication-6fa9f22d88fa</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/passing-aws-csa-exam-49561d816f9a</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/golang-error-handling-18cf16758f81</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/django-postgresql-search-68274ef48801</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/goidmatch-internals-e75378cee35a</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/k6-4e8768723c41</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%B8%D1%81%D1%82%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D1%82%D0%BE%D0%BA%D0%B5%D0%BD%D0%B0-%D0%B2-firebase-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-%D0%BF%D1%80%D0%BE%D1%8F%D1%81%D0%BD%D1%8F%D0%B5%D0%BC-%D0%BD%D0%B5%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%BC%D0%BE%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-9e30efa03f8a</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/namba-food-bot-bf7a15a871be</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%BD%D0%B5-%D0%BF%D0%B8%D1%88%D0%B8-%D0%BA%D0%BE%D0%B4-67830e4db38c</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/gophercon-russia-%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D1%82%D0%B5%D0%BF%D0%BB%D0%B0-%D0%B2-18-9ab050d5cdee</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/vscode-remote-python-interpreter-b05078cfae09</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/design-for-elcard-mobile-9c83e17727a3</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/we-hire-python-developers-fc6e3312d8b3</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/negative-motivation-for-interns-94871b8823e0</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/devops-%D1%8B-%D0%B2-mad-devs-b88e7495e40c</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/oshibki-pma-db8ee5ec362</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/customer-onboarding-67fe7999ce31</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/comedian-624add6ae0e6</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/pm-concentration-f472a2c280a5</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/heimdall-79b68d1bc8a5</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/mad-devs-google-developers-group-gdg-devfest-bishkek-2018-2006acbe94a4</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/the-evolution-of-internship-721303ca6361</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/mad-talks-ip-from-aza-4da85618211e</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/mad-devs-icpc-northern-eurasia-the-2018-kyrgyzstan-subregional-contest-89523d73b4ab</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-we-built-a-backend-system-for-uber-like-map-with-animated-cars-on-it-using-go-29d5dcd517a</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/deploy-and-scale-wordpress-with-docker-cloud-swarm-mode-f780d4e735cb</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/got-an-error-reading-communication-packets-here-is-how-to-solve-this-partially-a7334b6f686a</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-we-made-restreaming-from-youtube-using-go-dbe6eb1f1e0a</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/react-js-%D0%BA%D0%B0%D0%BA-%D0%BD%D0%B0%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C-material-ui-sortable-table-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%BE%D0%B9-drag-n-drop-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D0%BE-a77d521d1695</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/working-with-the-mysql-in-go-58fcc951b41f</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/media-storage-on-multiple-django-924ba8282b79</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/time-to-graphqlize-f61034d86e35</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/idmatch-is-open-source-and-free-60f96dc34ed0</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-we-built-failover-architecture-for-a-taxi-service-part-1-intro-e611eb33c115</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/learn-go-with-our-codelab-e635ba705af6</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/hey-full-snack-developer-1eec707693fd</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/google-analytics-for-livestreams-b726275752e</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/namba-food-startup-e6564e66806d</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/the-namba-project-1adea593dc83</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/ariadna-opensource-geocoder-832f149f2981</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-we-built-failover-architecture-for-a-taxi-service-part-2-continued-ae1caf740e68</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/computer-science-students-986396201919</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/kit-forum-2017-f75c0df5f44a</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/op-2017-krakow-5f12d782f22c</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/silkroadexplore-cbdc1c5f157f</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/kolesa-web-conference-from-our-friends-in-almaty-62083fd36d75</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/addled-deploy-13d728bd4a63</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/namba-taxi-development-and-integration-28b25cd0012a</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/a-glance-at-devfest-siberia-2017-161c678de0f6</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/iotsploit-wins-she-loves-tech-pitching-competition-in-singapore-3c3b53078f49</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/women-tech-makers-bishkek-c6e87c8e7001</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/developer-education-experience-11494843a68d</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/nastachku-2017-bdbdf83efb15</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/bit-2017-bishkek-5509aeade425</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/introduction-to-grpc-6de0d9c0fe61</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/docker-for-beginners-a2c9c73e7d3d</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/golang-mysql-9aa09cdbb666</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/go-web-api-c949bd1362b0</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/golang-beginners-8233f691f25a</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/intern-motivation-bc5ca51edd7b</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/golang-codelab-d508bb671f40</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/internship-revolution-b9b3aa1c22ed</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/yandex-taxi-vs-namba-taxi-274d7174187f</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/things-i-learned-managing-site-reliability-9795383795df</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/us-vs-ca-6133e9dea998</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/continuous-deployment-with-docker-cloud-1f19ac454781</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/ariadna-85ed0495e12b</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/developer-burnout-ead63b949fca</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/remote-standup-afe649702171</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/money-in-open-source-64fa61e92237</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/developer-sysadmin-c7e828c25d99</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/programmer-education-7e4634eaad87</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/highload-2015-1b1486e84920</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/silkroadexplore-387cba95cfbc</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%BF%D0%BB%D0%B0%D0%B3%D0%B8%D0%BD-%D0%B4%D0%BB%D1%8F-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8-%D0%B2%D0%B5%D0%B1-%D0%BC%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D0%B3%D0%B0-must-have-%D0%B2-2017-18%D0%B3%D0%B3-4a4064ffb66</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/venture-features-81275bf5a622</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/design-in-1x-ccdb2df249b0</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/bitcoin-96376777823b</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/addled-deploy-52d88d907cde</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D1%81%D0%B0%D0%BC%D1%8B%D0%B9-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-%D0%B4%D0%B5%D0%BF%D0%BB%D0%BE%D0%B8%D1%82%D1%8C-%D0%B3%D0%BE%D1%88%D0%BD%D1%8B%D0%B5-%D0%B1%D0%B8%D0%BD%D0%B0%D1%80%D0%BD%D0%B8%D0%BA%D0%B8-4e2f31f5947e</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/mahach-892d2a259b1b</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/what-i-want-other-parents-to-know-about-women-in-tech-df09b0d9eda</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/fosdem-2017-log-b5fa129bc044</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/stackoverflow-dns-1db680f2032e</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/digital-nomad-is-normal-db43b463a855</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/securing-future-iots-5aa52764ab7f</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/inspire-developers-2017-c4d3d161ce00</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/highload-2016-72cca9611c77</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/rit-2017-f214aad7370c</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/gdg-almaty-26404184a9ff</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/the-calm-company-52b43ba86431</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%B4%D0%B5%D0%BB%D0%B0%D0%B5%D0%BC-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D1%81-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-go-ecf4b82c7625</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%BD%D0%B0%D0%BC%D0%B1%D0%B0-%D1%82%D0%B0%D0%BA%D1%81%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%B8-%D0%B2%D0%BD%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-f869bd100772</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-namba-%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-82a66d9b584e</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D1%8B-%D0%B2-%D0%B8%D1%82-%D0%BA%D0%BE%D0%B3%D0%BE-%D1%82%D1%83%D1%82-%D0%B1%D0%BE%D0%BC%D0%B1%D0%B0%D0%BD%D1%83%D0%BB%D0%BE-cdc606872143</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D1%85%D0%B0%D0%BA%D0%B0%D1%82%D0%BE%D0%BD%D1%8B-%D0%B2-%D0%BA%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D1%82%D0%B0%D0%BD%D0%B5-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-957517947418</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D1%82%D0%B5%D0%BA%D0%B2%D0%B8%D0%BC%D0%B5%D0%BD-164c29a222c3</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/https-blog-maddevs-io-yourcast-tv-32915159be1c</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/kyrgyzstan-vector-maps-ec906ff40335</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D1%82-full-snack-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA-315a8fdb13c2</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/inversion-of-control-2cfbf0a494a0</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%B2%D0%BD%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-ci-cd-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-screen-monitoring-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-http-travis-ci-org-14979e97bb91</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D1%8B%D0%B9-%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%BC%D0%B5%D0%BD%D1%82-%D1%81%D0%B2%D0%BE%D0%B9-%D1%87%D1%83%D0%B6%D0%BE%D0%B9-%D1%81%D0%B2%D0%BE%D0%B9-917781fbb83d</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/outsource-people-2016-a14b9c1f1c46</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/gdg-devfest-novosibirsk-cfb47b36baba</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-nambataxi-%D0%BF%D0%BE-%D1%8E%D0%B7%D0%B5%D1%80%D0%B0%D0%BC-%D0%B8-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D1%8B%D0%BC-%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC-2016-473da4c54136</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/fosdem-22c2f71302a</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/bullet-issues-336bb43e57e</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/highload-2015-%D0%BA%D0%B0%D0%BA-%D1%8D%D1%82%D0%BE-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%B8-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-5e1b539233b5</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/%D0%B8%D0%BD%D0%B2%D0%B5%D1%81%D1%82%D0%BE%D1%80-%D0%B8%D0%BB%D0%B8-%D1%85%D0%BE%D0%B7%D1%8F%D0%B8%D0%BD-2050271173dc</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+
+</urlset>
