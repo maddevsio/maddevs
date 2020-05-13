@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`We Create It Project For renders correctly 1`] = `
+<section
+  class="we-create-it-project"
+  id="we-create-it-project"
+>
+  <div
+    class="container"
+  >
+    <h2
+      class="we-create-it-project__main-title main-title"
+    >
+      
+      We create 
+      <br />
+       IT projects for:
+    
+    </h2>
+     
+    <div
+      class="we-create-it-project__content-wrap"
+    >
+      <ul
+        class="we-create-it-project__projects-type_list"
+      >
+        <li
+          class="we-create-it-project__project-item"
+        >
+          E-learning
+        </li>
+         
+        <li
+          class="we-create-it-project__project-item"
+        >
+          FinTech
+        </li>
+         
+        <li
+          class="we-create-it-project__project-item"
+        >
+          HealthTech
+        </li>
+         
+        <li
+          class="we-create-it-project__project-item"
+        >
+          E-commerce
+        </li>
+         
+        <li
+          class="we-create-it-project__project-item"
+        >
+          AdTech
+        </li>
+         
+        <li
+          class="we-create-it-project__project-item"
+        >
+          Transportation
+        </li>
+      </ul>
+       
+      <div
+        class="we-create-it-project__country-list_wrap"
+      >
+        <div
+          class="we-create-it-project__country-list_title"
+        >
+          We work with 
+          
+          <br />
+           customers in:
+        
+        </div>
+         
+        <ul
+          class="we-create-it-project__country-list"
+        >
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="USA"
+              src="[object Object]"
+            />
+            
+            USA
+          
+          </li>
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="Australia"
+              src="[object Object]"
+            />
+            
+            Australia
+          
+          </li>
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="Vietnam"
+              src="[object Object]"
+            />
+            
+            Vietnam
+          
+          </li>
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="UK"
+              src="[object Object]"
+            />
+            
+            UK
+          
+          </li>
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="Poland"
+              src="[object Object]"
+            />
+            
+            Poland
+          
+          </li>
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="Russia"
+              src="[object Object]"
+            />
+            
+            Russia
+          
+          </li>
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="Austria"
+              src="[object Object]"
+            />
+            
+            Austria
+          
+          </li>
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="France"
+              src="[object Object]"
+            />
+            
+            France
+          
+          </li>
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="Belarus"
+              src="[object Object]"
+            />
+            
+            Belarus
+          
+          </li>
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="Switzerland"
+              src="[object Object]"
+            />
+            
+            Switzerland
+          
+          </li>
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="Singapore"
+              src="[object Object]"
+            />
+            
+            Singapore
+          
+          </li>
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="Kazakhstan"
+              src="[object Object]"
+            />
+            
+            Kazakhstan
+          
+          </li>
+        </ul>
+         
+        <button
+          class="show-popup_button red-text-and-border"
+        >
+          
+  Get case studies
+
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+`;

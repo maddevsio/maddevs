@@ -1,125 +1,95 @@
 <template>
-  <header class="header" :class="{ 'header--dark': headerDark }">
+  <header class="header" :class="{'mobile-menu_is-open': mobileMenuIsOpen }">
     <div class="container">
-      <div class="header-wrap">
-        <router-link :to="`/${this.lang}`">
-          <img src="../assets/img/common/logo.svg" alt="Logotype" class="header-logo">
-        </router-link>
-        <div class="header-wrap_right-block">
-          <nav class="header_links">
-            <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank" rel="noreferrer">{{ $t('header-link_blog') }}</a>
-            <router-link :to="`/${this.lang}/jobs`">{{ $t('header-link_careers') }}</router-link>
+      <div class="header__header-content_wrap">
+        <div class="header__left-nav_bar">
+          <router-link :to="`/`">
+            <img src="../assets/img/common/logo.svg" alt="Logotype" class="header__header-logo">
+          </router-link>
+          <nav class="header__header-routes_links">
+            <router-link to="/">About</router-link>
+            <router-link to="/services">Services</router-link>
+            <router-link to="/projects">Projects</router-link>
+            <router-link to="/careers">Careers</router-link>
+            <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
           </nav>
-          <div class="header_soc-icons">
-            <a href="https://ru.linkedin.com/company/mad-devs" target="_blank" rel="noreferrer">
-              <linkedin :isDark="headerDark" />
-            </a>
-            <a href="https://www.facebook.com/maddevsio" target="_blank" rel="noreferrer">
-              <facebook :isDark="headerDark" />
-            </a>
-          </div>
-          <button v-if="lang == 'en'" class="switch-lang" v-on:click.prevent="switchLanguage('ru')">Русский</button>
-          <button v-else class="switch-lang" v-on:click.prevent="switchLanguage('en')">English</button>
         </div>
-        <button @click="toggleMobileMenu()" class="header-mobile-menu_open">
-          <Hamburger :isDark="headerDark" />
-        </button>
+        <div class="header__right-content">
+          <div class="header__right-text_content">
+            <div class="header__soc-links_wrap">
+              <a href="https://twitter.com/maddevsio" target="_blank" class="header__twitter-link header__soc-link">
+                <img src="../assets/img/Header/twitter-icon.svg" alt="Twitter">
+              </a>
+              <a href="https://ru.linkedin.com/company/mad-devs" target="_blank" class="header__lindekin-link header__soc-link">
+                <img src="../assets/img/Header/lindekin-icon.svg" alt="Lindekin">
+              </a>
+              <a href="https://www.facebook.com/maddevsio" target="_blank" class="header__facebook-link header__soc-link">
+                <img src="../assets/img/Header/facebook-icon.svg" alt="Facebook">
+              </a>
+            </div>
+            <div class="header__phones-dropdown_wrap">
+              <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
+                <img :src="require(`@/assets/img/Flags/${selectedPhone.country}.svg`)" :alt="`${selectedPhone.country}`" />
+                {{ selectedPhone.phoneNumber }}
+              </a>
+              <div class="header__phones-list">
+                <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone">
+                  <img :src="require(`@/assets/img/Flags/${phone.country}.svg`)" :alt="`${phone.country}`" />
+                  {{ phone.phoneNumber }}
+                </a>
+              </div>
+            </div>
+            <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
+          </div>
+          <buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
+        </div>
       </div>
+      <mobileMenu v-on:getMobileMenuState="getMobileMenuState($event)"/>
     </div>
-    <MobMenu v-if="mobileMenuActive" @CloseMobileMenu="toggleMobileMenu"/>
   </header>
 </template>
 
 <script>
-import MobMenu from '@/components/ui/mobile-menu';
-import linkedin from '@/components/svg/linkedin-icon';
-import facebook from '@/components/svg/facebook-icon';
-import Hamburger from '@/components/svg/hamburger';
+import buttonTrigger from '@/components/ui/button-trigger';
+import mobileMenu from '@/components/ui/mobile-menu';
 
 export default {
   name: 'main-header',
   components: {
-    MobMenu,
-    linkedin,
-    facebook,
-    Hamburger
+    buttonTrigger,
+    mobileMenu
   },
   data() {
     return {
-      lang: 'en',
-      mobileMenuActive: false,
-      headerDark: false
+      buttonInnerText: 'Contact me',
+      phones: [
+        {
+          phoneNumber: '+44 20 3984 8555',
+          country: 'united-kingdom'
+        },
+        {
+          phoneNumber: '+44 20 3984 8555',
+          country: 'poland'
+        },
+        {
+          phoneNumber: '+44 20 3984 8555',
+          country: 'russia'
+        },
+        {
+          phoneNumber: '+44 20 3984 8555',
+          country: 'belarus'
+        }
+      ],
+      selectedPhone: {
+        phoneNumber: '+44 20 3984 8555',
+        country: 'united-kingdom'
+      },
+      mobileMenuIsOpen: false
     };
   },
-  created() {
-    this.lang = this.$nuxt.$router.history.current.params.lang === undefined ? 'en' : this.$store.state.locale;
-    this.$store.commit('SET_LANG', this.lang);
-    if (process.browser) {
-      window.addEventListener('resize', this.toggleScrollOnBody);
-    }
-    this.changeColorHeader();
-  },
-  watch: {
-    '$route' (to, from) {
-      this.changeColorHeader();
-    }
-  },
-  beforeDestroy() {
-    if (process.browser) {
-      window.removeEventListener('resize', this.toggleScrollOnBody);
-    }
-  },
   methods: {
-    changeColorHeader() {
-      if (this.$nuxt.$router.history.current.path.includes('management')) {
-        this.headerDark = true;
-      } else {
-        this.headerDark = false;
-      }
-    },
-    switchLanguage(locale) {
-      const beforePath = this.$nuxt.$router.history.current.path;
-      this.$store.commit('SET_LANG', locale);
-      this.lang = this.$store.state.locale;
-      let result = '';
-      result = beforePath.replace('/en', '');
-      result = result.replace('/ru', '');
-      if ( locale == 'ru' || locale == 'en' ) {
-        this.$nuxt.$router.replace({ path: '/' + locale + result });
-      } else {
-        if ( result == '/' ) {
-          this.$nuxt.$router.replace({ path: '/' + locale });
-        } else {
-          this.$nuxt.$router.replace({ path: '/' + locale + result });
-        }
-      }
-    },
-    toggleMobileMenu(bool) {
-      const chat = document.getElementById('tidio-chat');
-      if (this.mobileMenuActive === false) {
-        this.mobileMenuActive = true;
-        this.disableScrollOnBody();
-        chat.style.display = 'none';
-      } else {
-        chat.style.display = 'block';
-        this.mobileMenuActive = false;
-        this.enableScrollOnBody();
-      }
-    },
-    toggleScrollOnBody() {
-      if (window.innerWidth >= 480) {
-        this.enableScrollOnBody();
-      } else if (window.innerWidth < 480) {
-        if (self.mobileMenuActive === true) {
-          this.disableScrollOnBody();
-        }
-      }
-    },
-    disableScrollOnBody() {
-      document.body.classList.add('scrollDisabled');
-    },
-    enableScrollOnBody() {
-      document.body.classList.remove('scrollDisabled');
+    getMobileMenuState(mobileMenuDisplayState) {
+      this.mobileMenuIsOpen = mobileMenuDisplayState;
     }
   }
 };
@@ -130,135 +100,275 @@ export default {
 
   .header {
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 2;
-    padding-top: 30px;
-    &_links {
-      position: relative;
-      a {
-        color: $text-color--white;
-        text-decoration: none;
-        margin-right: 15px;
-        font-size: 16px;
-        font-family: 'MADEEvolveSans-regular',
-        sans-serif;
-      }
-      .nuxt-link-active {
-        color: $accent-color--red !important;
-      }
-      .router-link-active {
-        color: $accent-color--red !important;
-      }
-    }
-    &-wrap {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      &_right-block {
-        display: flex;
-        align-items: center;
-        padding: 24px 0;
-        .header_soc-icons {
-          height: 22px;
-          a {
-            display: inline-block;
-            margin-right: 10px;
+    padding-top: 155px;
+    background: $header-gradient--black-transparent;
 
-            &:last-child {
-              margin-right: 6px;
-            }
-
-            img {
-              display: block;
-            }
-          }
-        }
-      }
+    button {
+      width: 135px;
+      height: 40px;
     }
-    &-logo {
+
+    &__header-logo {
       width: 40px;
       height: 70px;
     }
-    .switch-lang {
-      background-color: transparent;
-      color: $text-color--white;
-      font-size: 14px;
-      font-family: 'MADEEvolveSans-regular', sans-serif;
-      border: none;
-      cursor: pointer;
-      padding-right: 0;
+
+    &__header-content_wrap {
+      display: flex;
+      justify-content: space-between;
+      margin-top: -120px;
     }
-  }
 
-  .header--dark {
-    .container {
-      max-width: 100%;
+    &__header-routes_links {
+      position: relative;
+      padding-top: 9px;
+      padding-left: 55px;
 
-      .header-wrap_right-block {
-        .header_links {
-          a {
-            color: $text-color--black;
+      a {
+        color: $text-color--grey;
+        text-decoration: none;
+        margin-right: 16px;
+        font-size: 18px;
+        font-family: 'Hoves-Regular';
+
+        &::after {
+          content: '↓';
+          color: transparent;
+        }
+
+        &:focus {
+          color: $text-color--red;
+
+          &::after {
+            color: $text-color--red;
+          }
+        }
+
+        &:last-child {
+          &::after {
+            content: '';
           }
         }
       }
     }
 
-    .header-mobile-menu_open {
-      svg {
-        g {
-          fill: $bgcolor--black !important;
+    &__left-nav_bar,
+    &__right-content,
+    &__right-text_content {
+      display: flex;
+    }
+
+    &__right-text_content {
+      display: flex;
+      padding-top: 9px;
+    }
+
+    &__soc-links_wrap {
+      padding-right: 26px;
+    }
+
+    &__soc-link {
+      padding-right: 5px;
+    }
+
+    &__phones-dropdown_wrap {
+      height: max-content;
+      min-width: 200px;
+      padding-top: 1px;
+      background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
+      background-position-y: 9px;
+      background-position-x: 174px;
+
+      &:hover {
+        .header__phones-list {
+          display: flex;
+          flex-direction: column;
         }
       }
     }
 
-    .switch-lang {
-      color: $text-color--black !important;
-    }
-  }
-
-  @media only screen and (min-width: 480px) {
-    .header-mobile-menu_open {
+    &__phones-list {
       display: none;
+      position: absolute;
+    }
+
+    &__mailto-link,
+    &__selected-phone,
+    &__phone-item {
+      padding-right: 26px;
+      color: $text-color--grey;
+      font-size: 18px;
+      font-family: 'Hoves-Regular';
+      text-decoration: none;
+    }
+
+    &__selected-phone,
+    &__phone-item {
+      position: relative;
+      padding-left: 25px;
+      padding-right: 40px;
+      cursor: pointer;
+
+      img {
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    &__selected-phone {
+      img {
+        top: 4px;
+      }
+    }
+
+    &__phone-item {
+      padding-top: 17px;
+
+      img {
+        top: 20px;
+      }
     }
   }
-  @media only screen and (max-width: 480px) {
-    .header_links {
-      margin-right: 14px;
-      white-space: nowrap;
-      a {
-        font-size: 14px;
-        margin-right: 14px;
-      }
+
+  .mobile-menu_is-open {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: initial;
+    z-index: 999;
+
+    .container {
+      height: 100vh;
+      overflow: scroll;
     }
-    .header-wrap_right-block {
-      margin-left: auto;
-      padding: 25px;
-      .header_links {
-        display: none;
+  }
+
+  @media only screen and (max-width: 1320px) {
+    .header {
+      &__header-routes_links {
+        padding-left: 25px;
       }
-      .header_soc-icons {
-        display: none;
+
+      &__mailto-link,
+      &__selected-phone,
+      &__phone-item,
+      &__soc-links_wrap {
+        padding-right: 15px;
       }
-      .switch-lang {
-        font-size: 14px;
-      }
-    }
-    .header-wrap_right-block .header_soc-icons {
-      height: 18px;
-      white-space: nowrap;
-      a {
-        margin-right: 12px;
-        img {
-          width: 18px;
-          height: 18px;
+
+      &__routes_links {
+        a {
+          margin-right: 0;
         }
       }
     }
-    .header-mobile-menu_open {
-      display: block;
-      background-color: transparent;
-      border: none;
-      padding: 24px 0;
+  }
+
+  @media only screen and (max-width: 1240px) {
+    .header {
+      button,
+      &__mailto-link,
+      &__selected-phone,
+      &__phone-item,
+      &__routes_links,
+      &__header-routes_links a {
+        font-size: 16px;
+      }
+
+      &__header-routes_links {
+        padding-top: 10px;
+
+        a {
+          margin-right: 5px;
+        }
+      }
+
+      &__phones-dropdown_wrap {
+        min-width: 183px;
+        padding-top: 1px;
+        background-position-x: 158px;
+      }
+
+       &__selected-phone {
+        img {
+          top: 2px;
+        }
+      }
+
+      &__phone-item {
+        img {
+          top: 19px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1120px) {
+    .header {
+      button {
+        width: 120px;
+        height: 35px;
+      }
+
+      button,
+      &__mailto-link,
+      &__selected-phone,
+      &__phone-item,
+      &__routes_links,
+      &__header-routes_links a {
+        font-size: 15px;
+      }
+
+      &__mailto-link,
+      &__selected-phone,
+      &__phone-item,
+      &__soc-links_wrap {
+        padding-right: 10px;
+      }
+
+      &__header-routes_links {
+        padding-top: 11px;
+
+        a {
+          margin-right: 0;
+        }
+      }
+
+      &__phones-dropdown_wrap {
+        min-width: 170px;
+        padding-top: 2px;
+        background-position-x: 150px;
+      }
+
+      &__mailto-link {
+        padding-top: 1px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .header {
+      position: initial;
+      background-color: $bgcolor--black;
+
+      &__header-content_wrap {
+        display: none;
+      }
+
+      .mobile-menu {
+        display: block;
+      }
+    }
+
+    .mobile-menu_is-open {
+      .mobile-menu {
+        height: 100%;
+        margin-top: 0;
+        padding: 22px 0;
+        box-sizing: border-box;
+      }
     }
   }
 </style>

@@ -14,9 +14,6 @@ module.exports = {
     ],
     script: [
       {
-        src: 'https://code.tidio.co/kuhpv1cxwof3di7of0qiwbfmvggsdeav.js'
-      },
-      {
         src: 'https://widget.clutch.co/static/js/widget.js'
       }
     ]
@@ -39,7 +36,7 @@ module.exports = {
     }
   ],
   generate: {
-    routes: ['/', '/en', '/en/jobs', '/ru', '/ru/jobs']
+    routes: ['/', '/services', '/projects', '/careers']
   },
   css: [
     {
@@ -61,7 +58,7 @@ module.exports = {
           require('webpack-node-externals')({
             whitelist: [/^vue-slick/]
           })
-        ]
+        ];
       }
     },
     extend (config, { isDev, isClient }) {
@@ -71,7 +68,7 @@ module.exports = {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
-        })
+        });
       }
     }
   },
@@ -86,7 +83,7 @@ module.exports = {
         trackLinks: true,
         accurateTrackBounce: true
       }
-    ],
+    ]
   ]
-}
+};
 

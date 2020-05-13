@@ -3,11 +3,10 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _9553cca4 = () => interopDefault(import('../pages/jobs.vue' /* webpackChunkName: "pages/jobs" */))
+const _3971ac94 = () => interopDefault(import('../pages/services.vue' /* webpackChunkName: "pages/services" */))
 const _4f2234aa = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 const _369337e8 = () => interopDefault(import('../pages/_lang/index.vue' /* webpackChunkName: "pages/_lang/index" */))
-const _6a38b6b0 = () => interopDefault(import('../pages/_lang/jobs.vue' /* webpackChunkName: "pages/_lang/jobs" */))
-const _7a42fa9d = () => interopDefault(import('../pages/_lang/management.vue' /* webpackChunkName: "pages/_lang/management" */))
+const _08a11490 = () => interopDefault(import('../pages/_lang/services.vue' /* webpackChunkName: "pages/_lang/services" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -26,9 +25,9 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
-    path: "/jobs",
-    component: _9553cca4,
-    name: "jobs"
+    path: "/services",
+    component: _3971ac94,
+    name: "services"
   }, {
     path: "/",
     component: _4f2234aa,
@@ -38,13 +37,9 @@ export const routerOptions = {
     component: _369337e8,
     name: "lang"
   }, {
-    path: "/:lang/jobs",
-    component: _6a38b6b0,
-    name: "lang-jobs"
-  }, {
-    path: "/:lang/management",
-    component: _7a42fa9d,
-    name: "lang-management"
+    path: "/:lang/services",
+    component: _08a11490,
+    name: "lang-services"
   }],
 
   fallback: false

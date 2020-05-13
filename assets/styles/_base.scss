@@ -3,9 +3,16 @@ body {
   padding: 0;
   min-width: 320px;
   transition: all .4s ease;
+  background-color: #000;
 }
 
-h1, h2, h3, h4, h5, h6, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -25,20 +32,23 @@ main {
 * {
   outline: none !important;
   -webkit-text-size-adjust: 100%;
+
   &::-moz-focus-outer,
   &::-moz-focus-inner {
     border: 0;
     padding: 0;
   }
 }
+
 .scrollDisabled {
   width: 100%;
   position: fixed;
   top: 0;
 }
+
 //----------- Base classes ------------ //
 .container {
-  max-width: 1320px;
+  max-width: 1570px;
   margin: auto;
   padding: 0 60px;
 }
@@ -53,19 +63,22 @@ main {
   color: #2c1c1c;
   box-sizing: border-box;
 }
+
 .sec-desc {
   font-size: 28px;
   line-height: 1.5;
   font-family: 'MADEEvolveSans-regular', sans-serif;
   font-weight: normal;
 }
+
 .rotate_contacts-wrap {
   transform: rotateY(180deg);
   z-index: 110;
 }
-//----------- End Base classes ------------ //
+//----------- End Base classes ------------//
 
 // #region Fonts
+
 @font-face {
   font-family: 'MADEEvolveSans-light';
   src: url('../fonts/MADEEvolveSans-light.otf') format('truetype');
@@ -109,4 +122,14 @@ main {
 @font-face {
   font-family: 'FiraMono';
   src: url('../fonts/FiraMono/FiraMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Hoves-Bold';
+  src: url('../fonts/Hoves/TT-Hoves-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Hoves-Regular';
+  src: url('../fonts/Hoves/TT-Hoves-Regular.woff') format('woff');
 }

@@ -67,19 +67,20 @@
     z-index: 1;
     border-radius: 100%;
     box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.14);
-    background-color: #ffffff;
-    border: none;
+    background-color: #fff;
+    border: 0;
     background-position: center;
     background-size: 14px;
     background-repeat: no-repeat;
-    background-image: url(../img/Jobs/svg/Employees/arrow.svg);
+    background-image: url('../img/Jobs/svg/Employees/arrow.svg');
     cursor: pointer;
     transition: all .2s ease;
-  
+
     &:hover {
-      box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.30);
+      box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.3);
     }
   }
+
   .slick-prev {
     right: 80px;
     transform: scale(-1);
@@ -107,17 +108,17 @@
       z-index: 1;
       border-radius: 100%;
       box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.14);
-      background-color: #ffffff;
-      border: none;
+      background-color: #fff;
+      border: 0;
       background-position: center;
       background-size: 14px;
       background-repeat: no-repeat;
-      background-image: url(../img/Jobs/svg/Employees/arrow.svg);
+      background-image: url('../img/Jobs/svg/Employees/arrow.svg');
       cursor: pointer;
       transition: all .2s ease;
 
       &:hover {
-        box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.30);
+        box-shadow: 0 4px 10px 0 rgba(38, 36, 32, 0.3);
       }
     }
 
@@ -157,7 +158,7 @@
     justify-content: center;
     margin-bottom: 0;
     z-index: 1;
-  
+
     button {
       width: 36px;
       height: 10px;
@@ -168,7 +169,7 @@
       border: 0;
       cursor: pointer;
     }
-  
+
     li {
       width: 36px;
       height: 3px;
@@ -177,10 +178,281 @@
       margin: 10px;
       list-style: none;
     }
-  
+
     .slick-active {
       background: $bgcolor--white;
       outline: none;
     }
   }
+}
+
+.main-title {
+  font-family: 'Hoves-Bold';
+  font-size: 130px;
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title,
+.sub-title {
+  font-family: 'Hoves-Bold';
+}
+
+.title {
+  font-size: 90px;
+  padding-bottom: 15px;
+}
+
+.last-character {
+  margin-left: -33px;
+}
+
+.sub-title {
+  font-size: 50px;
+}
+
+.paragraph {
+  font-size: 18px;
+  font-family: 'Hoves-Regular';
+}
+
+.title-icon {
+  padding: 0 5px;
+}
+
+.icons-list {
+  display: flex;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+
+  span {
+    padding-left: 7px;
+    color: $text-color--grey;
+    font-family: 'Hoves-Regular';
+  }
+}
+
+@media only screen and (max-width: 1620px) {
+  .main-title {
+    font-size: 120px;
+  }
+}
+
+@media only screen and (max-width: 1560px) {
+  .title {
+    font-size: 80px;
+  }
+
+  .sub-title  {
+    font-size: 44px;
+  }
+
+  .title-icon {
+    height: 77px;
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .title {
+    font-size: 75px;
+  }
+
+  .sub-title  {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .main-title {
+    font-size: 110px;
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+  .title {
+    font-size: 70px;
+  }
+
+  .sub-title  {
+    font-size: 35px;
+  }
+
+  .title-icon {
+    height: 67px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .title {
+    font-size: 65px;
+  }
+
+  .sub-title  {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .title {
+    font-size: 80px;
+  }
+
+  .sub-title  {
+    font-size: 50px;
+  }
+
+  .main-title {
+    font-size: 105px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .main-title {
+    font-size: 95px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 65px;
+  }
+
+  .sub-title  {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main-title {
+    font-size: 80px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .sub-title  {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .main-title {
+    font-size: 71px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .main-title {
+    font-size: 51px;
+  }
+
+  .title {
+    font-size: 41px;
+  }
+
+  .sub-title  {
+    font-size: 27px;
+  }
+
+  .paragraph {
+    font-size: 17px;
+  }
+
+  .title-icon {
+    height: 43px;
+    padding-left: 13px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .main-title {
+    font-size: 43px;
+  }
+}
+
+// ----------- Form styles ----------- //
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-name {
+  width: max-content;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  color: $text-color--grey;
+  font-size: 16px;
+  font-family: 'Hoves-Regular';
+}
+
+.entry-field {
+  width: 100%;
+  padding: 17px 10px;
+  border: 0;
+  border-radius: 2px;
+  background-color: $input-bgcolor--grey-dark;
+  color: $text-color--grey;
+  font-size: 18px;
+  font-family: 'Hoves-Regular';
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $input-placeholder-text--grey-dark;
+  }
+}
+
+.required {
+  &::after {
+    content: '*';
+    padding-left: 3px;
+    color: $text-color--red;
+  }
+}
+
+.form-checkboxes {
+  display: flex;
+  flex-direction: column;
+  padding-top: 36px;
+  padding-bottom: 26px;
+}
+
+.form-checkbox-label {
+  position: relative;
+  padding-left: 33px;
+  color: $label-text--grey-dark;
+  font-size: 16px;
+  font-family: 'Hoves-Regular';
+  user-select: none;
+  cursor: pointer;
+
+  &:first-child {
+    padding-bottom: 30px;
+  }
+
+  input:checked ~ .checkmark {
+    background: url('../img/common/checkmark.svg') no-repeat center;
+    background-color: $input-bgcolor--grey-dark;
+  }
+}
+
+.form-checkbox-input {
+  display: none;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  border-radius: 2px;
+  background-color: $input-bgcolor--grey-dark;
 }

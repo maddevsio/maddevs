@@ -1,76 +1,68 @@
 <template>
-  <section class="header-mobile-menu">
-    <div class="header-mobile-menu_wrap">
-      <button @click="closeMobileMenu()" class="header-mobile-menu_close">
-        <img src="../../assets/img/common/header/close-menu.svg" alt="Close mobile menu">
-      </button>
-      <div class="header-mobile-menu_list">
-        <a href="/">{{ $t('header-link_home') }}</a>
-        <a :href="`https://blog.maddevs.io/${this.lang === 'ru' ? 'ru' : ''}`" target="_blank" rel="noreferrer">
-          <span @click="closeMobileMenu()">
-            {{ $t('header-link_blog') }}
-          </span>
-        </a>
-        <router-link :to="`/${this.lang}/jobs`">
-          <span @click="closeMobileMenu()">
-            {{ $t('header-link_careers') }}
-          </span>
-        </router-link>
-      </div>
-      <div class="header-mobile-menu_address">
-        <div class="header-mobile-menu_address-phonemail">
-          <p>{{$t('address-footer-uk')}}</p>
-          <a href="tel:+442039848555">+44 20 3984 8555</a>
-        </div>
-      </div>
-      <div class="header-mobile-menu_soc-icons">
-        <div class="social-icons_list-row">
-            <a href="https://github.com/maddevsio" target="_blank" rel="noreferrer">
-                <img src="../../assets/img/common/header/git.svg" fill="red" alt="Github">
-            </a>
-            <a href="https://www.facebook.com/maddevsio" target="_blank" rel="noreferrer">
-                <img src="../../assets/img/common/header/fb.svg" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com/maddevsio/" target="_blank" rel="noreferrer">
-                <img src="../../assets/img/common/header/insta.svg" alt="Instagram">
-            </a>
-            <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">
-                <img src="../../assets/img/common/header/medium.svg" alt="Medium">
-            </a>
-        </div>
-        <div class="social-icons_list-row">
-            <a href="https://twitter.com/MadDevsIO" target="_blank" rel="noreferrer">
-                <img src="../../assets/img/common/header/tw.svg" alt="Twitter">
-            </a>
-            <a href="https://www.slideshare.net/maddevs/presentations" target="_blank" rel="noreferrer">
-                <img src="../../assets/img/common/header/slide.svg" alt="Slideshare">
-            </a>
-            <a href="https://www.youtube.com/playlist?list=PLsmdb5W8ytypyXt1ut3lfBOnOZnDNqYIN" target="_blank" rel="noreferrer">
-                <img src="../../assets/img/common/header/yt.svg" alt="Youtube">
-            </a>
-            <a href="https://www.behance.net/maddevs" target="_blank" rel="noreferrer">
-                <img src="../../assets/img/common/header/beh.svg" alt="Behance">
-            </a>
-            <a href="https://t.me/maddevsio" target="_blank" rel="noreferrer">
-                <img src="../../assets/img/common/header/tel.svg" alt="Telegram">
-            </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div class="mobile-menu">
+		<div class="mobile-menu__top-line">
+				<div class="mobile-menu__header-logo">
+						<img src="../../assets/img/common/logo.svg" alt="Logotype">
+				</div>
+				<div class="mobile-menu__button">
+						<img src="../../assets/img/Header/mobile-menu-hamburger.svg" alt="Open" class="mobile-menu__open" v-if="!mobileMenuIsOpen" @click="toggleMobileMenu()">
+						<img src="../../assets/img/Header/mobile-menu-close.svg" alt="Close" class="mobile-menu__close" v-else @click="toggleMobileMenu()">
+				</div>
+		</div>
+		<div class="mobile-menu__content-wrap" v-show="mobileMenuIsOpen">
+			<nav class="mobile-menu__header-routes_links">
+				<router-link to="/">About</router-link>
+				<router-link to="/services">Services</router-link>
+				<router-link to="/projects">Projects</router-link>
+				<router-link to="/careers">Careers</router-link>
+				<a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
+			</nav>
+			<buttonTrigger :buttonInnerText="buttonInnerText"/>
+			<div class="mobile-menu__contacts">
+				<footerContacts />
+			</div>
+			<div class="mobile-menu__social-network_links">
+				<footerSocialNetworkBar />
+			</div>
+		</div>
+  </div>
 </template>
 
 <script>
+import buttonTrigger from '@/components/ui/button-trigger';
+import footerContacts from '@/components/Footer/footer-contacts';
+import footerSocialNetworkBar from '@/components/Footer/footer-social-network';
+
 export default {
   name: 'mobile-menu',
+  components: {
+    buttonTrigger,
+    footerContacts,
+    footerSocialNetworkBar
+  },
+
   data() {
     return {
-      lang: this.$store.state.locale
+      buttonInnerText: 'Contact me',
+      mobileMenuIsOpen: false
     };
   },
   methods: {
-    closeMobileMenu() {
-      this.$emit('CloseMobileMenu', false);
+    toggleMobileMenu() {
+      this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
+      this.$emit('getMobileMenuState', this.mobileMenuIsOpen);
+
+      if (this.mobileMenuIsOpen) {
+        this.disableScrollOnBody();
+      } else {
+        this.enableScrollOnBody();
+      }
+    },
+    disableScrollOnBody() {
+      document.body.classList.add('scrollDisabled');
+    },
+    enableScrollOnBody() {
+      document.body.classList.remove('scrollDisabled');
     }
   }
 };
@@ -79,116 +71,87 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
 
-  .header-mobile-menu {
-    width: 100%;
-    height: 100%;
-    min-width: 320px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: $text-color--white;
-    padding: 16px;
-    box-sizing: border-box;
-    z-index: 999;
-    overflow-y: scroll;
-    &::-webkit-scrollbar {
-      display: none;
+	.mobile-menu {
+		display: none;
+		margin-top: -120px;
+
+		button {
+			width: 100%;
+      height: 65px;
+			font-family: 'Hoves-Bold';
+			font-size: 27px;
+      color: $text-color--red;
+    	border-color: $border-color--red;
     }
-    &_close {
-      position: fixed;
-      top: 20px;
-      right: 6px;
-      border: none;
-      background-color: transparent;
-      padding: 10px;
-      box-sizing: border-box;
-      img {
-        width: 25px;
-        height: 25px;
-      }
+
+		&__top-line {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__header-logo {
+      width: 35px;
+      height: 60px;
     }
-    &_list {
-      margin-top: 40px;
-      margin-bottom: 20px;
-      a {
-        display: block;
-        font-size: 28px;
-        color: #2c1c1c;
-        font-family: 'MADEEvolveSans-bold',
-        sans-serif;
-        font-weight: normal;
-        text-align: center;
-        text-decoration: none;
-        padding: 12px 0;
-      }
-      .router-link-active {
-        color: $accent-color--red;
-      }
-    }
-    &_address {
-      width: 100%;
-      text-align: center;
-      padding: 32px 0 18px;
-      border-top: 1px solid $border-color--grey;
-      p, a {
-        max-width: 290px;
-        font-size: 16px;
-        color: $text-color--black;
-        font-family: 'MADEEvolveSans-regular',
-        sans-serif;
-        margin: 0 auto;
-        text-decoration: none;
-      }
-      p {
-        margin-bottom: 16px;
-      }
-      &-phonemail {
-        a {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          &:last-child {
-            margin-top: 8px;
-          }
-        }
-      }
-    }
-    &_soc-icons {
-      .social-icons_list-row {
-        text-align: center;
-      }
-    }
-  }
-  @media only screen and (min-width: 480px) {
-    .header-mobile-menu {
-      display: none;
-    }
-    .header-mobile-menu_open {
-      display: none;
-    }
-  }
-  @media only screen and (max-width: 480px) {
-    .header-mobile-menu_soc-icons .social-icons_list-row {
-      &:first-child {
-        margin-bottom: 10px;
-      }
-      a {
-        margin: 0 8px;
-        img {
-          width: 30px;
-          height: 30px;
-        }
-      }
-    }
-    .header-mobile-menu_open {
-      display: block;
-      background-color: transparent;
-      border: none;
-      padding: 24px 0;
-    }
-  }
+
+    &__content-wrap {
+			height: 100%;
+		}
+
+    &__header-routes_links {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			padding-top: 32px;
+		}
+
+		&__header-routes_links a {
+			padding: 14px 0;
+			font-size: 36px;
+			font-family: 'Hoves-Bold';
+			text-decoration: none;
+			color: $text-color--white;
+			border-bottom: 1px solid $border-color--grey;
+
+			&:last-child {
+				padding-bottom: 54px;
+				border-bottom: 0;
+			}
+		}
+
+		&__close,
+		&__open {
+			cursor: pointer;
+		}
+
+		&__social-network_links {
+			padding: 32px 0;
+			border-top: 1px solid $footer--border-color--grey-light;
+		}
+
+		&__contacts {
+			padding-bottom: 42px;
+		}
+
+		.footer-contacts {
+			padding-top: 41px;
+		}
+	}
+
+	@media only screen and (max-width: 360px) {
+		.mobile-menu {
+			&__header-routes_links {
+				padding-top: 20px;
+
+				a {
+					padding: 10px 0;
+					font-size: 29px;
+
+					&:last-child {
+						padding-bottom: 25px;
+					}
+				}
+			}
+		}
+	}
 </style>
