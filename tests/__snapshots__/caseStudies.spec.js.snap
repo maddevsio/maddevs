@@ -3,6 +3,7 @@
 exports[`CaseStudies component renders correctly 1`] = `
 <section
   class="case-studies"
+  id="case-studies"
 >
   <div
     class="container"

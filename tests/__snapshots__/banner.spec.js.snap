@@ -20,11 +20,17 @@ exports[`Banner renders correctly 1`] = `
           <!---->
            
           <!---->
+           
+          <!---->
+           
+          <!---->
         </div>
          
         <div
           class="icon-item"
         >
+          <!---->
+           
           <!---->
            
           <!---->

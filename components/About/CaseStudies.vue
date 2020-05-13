@@ -1,5 +1,5 @@
 <template>
-  <section class="case-studies">
+  <section id="case-studies" class="case-studies">
     <div class="container">
       <h2 class="case-studies__main-title main-title">
         Case
