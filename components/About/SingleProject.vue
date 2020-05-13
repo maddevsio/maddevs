@@ -77,7 +77,9 @@ export default {
         'single-project__background_first-project':
           this.project.projectName === 'nambafood' || this.project.projectName === 'teacherly',
         'single-project__background_guardrails':
-          this.project.projectName === 'guardrails'
+          this.project.projectName === 'guardrails',
+        'single-project__background_godee':
+          this.project.projectName === 'godee'
       };
     }
   }
@@ -227,10 +229,11 @@ export default {
 
       &__background {
         width: 85%;
-        margin-left: 1.188em;
+        margin-left: 0.88em;
 
         &_first-project {
           width: 100%;
+          transform: translateY(6%);
         }
       }
 
@@ -248,7 +251,7 @@ export default {
     }
   }
 
-  @media screen and (max-width: 768px) and (min-width: 679px) {
+  @media screen and (max-width: 768px) and (min-width: 580px) {
     .single-project {
       &__background {
         background-size: contain;
@@ -291,12 +294,16 @@ export default {
   @media only screen and (max-width: 410px) {
     .single-project {
       &__background {
-        width: 80%;
-        margin-left: -2.4em;
+        width: 85%;
+        margin-left: -2.8em;
 
         &_first-project {
           background-size: contain;
           width: 100%;
+        }
+
+        &_godee {
+          margin-left: -1.5em;
         }
       }
     }

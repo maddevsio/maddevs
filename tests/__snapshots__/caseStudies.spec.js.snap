@@ -149,7 +149,7 @@ exports[`CaseStudies component renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background"
+            class="single-project__background single-project__background_first-project"
           />
         </div>
       </div>
@@ -281,7 +281,7 @@ exports[`CaseStudies component renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background"
+            class="single-project__background single-project__background_godee"
           />
         </div>
       </div>
@@ -433,7 +433,7 @@ exports[`CaseStudies component renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background"
+                class="single-project__background single-project__background_first-project"
               />
             </div>
           </div>
@@ -573,7 +573,7 @@ exports[`CaseStudies component renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background"
+                class="single-project__background single-project__background_godee"
               />
             </div>
           </div>
