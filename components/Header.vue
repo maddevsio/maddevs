@@ -1,5 +1,11 @@
 <template>
   <header class="header" :class="{'mobile-menu_is-open': mobileMenuIsOpen }">
+
+    <modal name="hello-world">
+      hello, world!
+    </modal>
+    <button @click="$modal.show('hello-world')">MODAL</button>
+
     <div class="container">
       <div class="header__header-content_wrap">
         <div class="header__left-nav_bar">
