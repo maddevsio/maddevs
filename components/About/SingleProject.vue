@@ -10,7 +10,16 @@
           :projectName="project.projectName"
         />
       </div>
-      <div class="single-project__background" :style="{'background-image': 'url(' + require(`@/assets/img/Studies/png/${project.projectBackground}.png`) + ')'}" :class="{ 'single-project__background_first-project': isFirstProject}"></div>
+      <div
+        class="single-project__background"
+        :style="{
+          'background-image':
+            'url(' +
+            require(`@/assets/img/Studies/png/${project.projectBackground}.png`) +
+            ')'
+        }"
+        :class="backgroundModifierClasses"
+      ></div>
     </div>
   </div>
 </template>
@@ -63,11 +72,15 @@ export default {
       }
       return false;
     },
-    isFirstProject() {
-      if(this.project.projectName === 'nambafood') {
-        return true;
-      }
-      return false;
+    backgroundModifierClasses() {
+      return {
+        'single-project__background_first-project':
+          this.project.projectName === 'nambafood' || this.project.projectName === 'teacherly',
+        'single-project__background_guardrails':
+          this.project.projectName === 'guardrails',
+        'single-project__background_godee':
+          this.project.projectName === 'godee'
+      };
     }
   }
 };
@@ -181,12 +194,48 @@ export default {
     background-size: contain;
     height: 413px;
     width: 100%;
+
+    &_guardrails {
+      position: relative;
+      left: 3.1px;
+    }
+
+    &_first-project {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1020px) and (min-width: 798px) {
+    .single-project {
+      &__background {
+        background-size: contain;
+
+        &_guardrails {
+          left: 4.1px;
+        }
+
+        &_first-project {
+          background-size: cover;
+          width: 100%;
+        }
+      }
+    }
   }
 
   @media only screen and (max-width: 768px) {
     .single-project {
       width: 100%;
       min-width: 320px;
+
+      &__background {
+        width: 85%;
+        margin-left: 0.88em;
+
+        &_first-project {
+          width: 100%;
+          transform: translateY(6%);
+        }
+      }
 
       &__container {
         padding-top: 1px;
@@ -202,9 +251,23 @@ export default {
     }
   }
 
+  @media screen and (max-width: 768px) and (min-width: 580px) {
+    .single-project {
+      &__background {
+        background-size: contain;
+        height: 378px;
+
+        &_first-project {
+          background-size: cover;
+          width: 100%;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 576px) {
     .single-project {
-      width: 100%;
+      min-width: 100%;
 
       &__sub-title {
         font-weight: bold;
@@ -228,33 +291,19 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 380px) {
+  @media only screen and (max-width: 410px) {
     .single-project {
       &__background {
-        width: 90%;
-      }
-    }
-  }
-
-  @media screen and (max-width: 768px) and (min-width: 679px) {
-    .single-project {
-      &__background {
-        background-size: contain;
+        width: 85%;
+        margin-left: -2.8em;
 
         &_first-project {
-          background-size: cover;
+          background-size: contain;
+          width: 100%;
         }
-      }
-    }
-  }
 
-  @media screen and (max-width: 1020px) and (min-width: 798px) {
-    .single-project {
-      &__background {
-        background-size: contain;
-
-        &_first-project {
-          background-size: cover;
+        &_godee {
+          margin-left: -1.5em;
         }
       }
     }
