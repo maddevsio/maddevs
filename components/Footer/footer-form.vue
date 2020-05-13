@@ -7,7 +7,7 @@
 			</div>
 			<div class="field-item">
 				<p class="field-name required">Work email</p>
-				<input type="email" required class="entry-field" placeholder="your@company.co|">
+				<input type="email" required class="entry-field" placeholder="your@company.com">
 			</div>
 			<div class="field-item">
 				<p class="field-name">Project Info</p>
@@ -24,23 +24,14 @@
 				<span class="checkmark"></span>
 			</label>
 		</div>
-		<buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
+		<button class="button-default red-text-and-border">Order a project now</button>
 	</form>
 </template>
 
 <script>
-import buttonTrigger from '@/components/ui/button-trigger';
 
 export default {
-  name: 'footer-form',
-  components: {
-    buttonTrigger
-  },
-  data() {
-    return {
-      buttonInnerText: 'Order a project now'
-    };
-  }
+  name: 'footer-form'
 };
 </script>
 
