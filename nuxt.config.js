@@ -3,13 +3,14 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Mad Devs',
+    title: 'Mad Devs - IT Outsourcing Company in UK',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'sitemap', type: 'application/xml', href: 'https://maddevs.io/sitemap.xml' }
     ],
     script: [
       {
