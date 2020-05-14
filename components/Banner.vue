@@ -21,7 +21,6 @@
           <div class="icon-item">
             <img src="../assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" v-if="currentPageName === 'index'">
             <img src="../assets/img/Services/svg/make-partner.svg" alt="Make Partner Logotype" v-if="currentPageName === 'services'">
-            <img src="../assets/img/Projects/png/projects-flame-bg.png" alt="Make Partner Logotype" v-if="currentPageName === 'projects'">
           </div>
         </div>
         <navigationList v-if="currentPageName !== 'projects'" />
@@ -92,16 +91,8 @@ export default {
       position: relative;
 
       .main-title-wrapper {
-        max-width: 1400px;
+        max-width: 90%;
       }
-    }
-
-    .icon-item {
-      display: flex;
-      align-items: center;
-      position: absolute;
-      right: 0;
-      top: 40em;
     }
 
     .navigation-wrap {

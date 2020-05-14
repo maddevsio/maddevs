@@ -1,10 +1,13 @@
 <template>
   <section id="case-studies" class="case-studies">
     <div class="container">
+      <div>
       <h2 class="case-studies__main-title main-title">
         Case
         <span>Studies</span>
       </h2>
+      <img src="@/assets/img/Projects/png/projects-flame-bg.png" alt="Projects Flame Image">
+      </div>
       <div class="projects">
         <SingleProject v-for="(project, i) in projects" :key="i" :project="project"/>
       </div>
@@ -84,6 +87,17 @@ export default {
 }
 
 .case-studies {
+
+  .container {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -37em;
+      right: 60px;
+    }
+  }
+
   &__main-title {
     padding-bottom: 41px;
     display: inline-block;

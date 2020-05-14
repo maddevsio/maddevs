@@ -8,16 +8,23 @@ exports[`CaseStudies component renders correctly 1`] = `
   <div
     class="container"
   >
-    <h2
-      class="case-studies__main-title main-title"
-    >
-      
+    <div>
+      <h2
+        class="case-studies__main-title main-title"
+      >
+        
       Case
       
-      <span>
-        Studies
-      </span>
-    </h2>
+        <span>
+          Studies
+        </span>
+      </h2>
+       
+      <img
+        alt="Projects Flame Image"
+        src="@/assets/img/Projects/png/projects-flame-bg.png"
+      />
+    </div>
      
     <div
       class="projects"
