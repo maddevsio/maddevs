@@ -129,18 +129,12 @@ export default {
   }
 
   @media only screen and (min-width: 1620px) {
-    .projects {
+    .projects,
+    .banner {
       .banner-main_title {
         font-size: 125px;
       }
 
-      .text-content_wrapper {
-        display: flex;
-        padding-bottom: 130px;
-      }
-    }
-
-    .banner {
       .text-content_wrapper {
         display: flex;
         padding-bottom: 130px;
