@@ -66,7 +66,6 @@ export default {
 
       .text-content_wrapper {
         display: flex;
-        padding-bottom: 130px;
       }
     }
 
@@ -129,10 +128,35 @@ export default {
     }
   }
 
+  @media only screen and (min-width: 1620px) {
+    .projects {
+      .banner-main_title {
+        font-size: 125px;
+      }
+
+      .text-content_wrapper {
+        display: flex;
+        padding-bottom: 130px;
+      }
+    }
+
+    .banner {
+      .text-content_wrapper {
+        display: flex;
+        padding-bottom: 130px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1620px) {
     .banner {
       .banner-main_title {
         font-size: 125px;
+      }
+
+      .text-content_wrapper {
+        display: flex;
+        padding-bottom: 130px;
       }
     }
 
@@ -141,6 +165,14 @@ export default {
         img {
           margin-right: 55px;
         }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1670px) and (min-width: 1565px) {
+    .projects {
+      .banner-main_title {
+        width: 80%;
       }
     }
   }
@@ -264,6 +296,12 @@ export default {
         }
       }
     }
+
+    .projects {
+      .text-content_wrapper {
+        padding-bottom: 40px;
+      }
+    }
   }
 
   @media only screen and (max-width: 670px) {
@@ -272,6 +310,12 @@ export default {
        img {
          left: 59%;
         }
+      }
+    }
+
+    .projects {
+      .banner-main_title {
+        font-size: 85px;
       }
     }
   }
@@ -294,7 +338,7 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 440px) {
+  @media only screen and (max-width: 455px) {
     .banner {
       .banner-main_title {
         font-size: 56px;
