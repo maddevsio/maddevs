@@ -515,3 +515,11 @@
   right: 30px;
   cursor: pointer;
 }
+
+.error-text {
+  display: block;
+  margin-top: 14px;
+  color: $text-color--red-opacity;
+  font-size: 16px;
+  font-family: 'Hoves-Regular';
+}

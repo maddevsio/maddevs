@@ -3,18 +3,21 @@
     <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('contact-me')">
     <form class="footer-form form"> 
       <div class="fields-list">
-        <div class="field-item">
+        <ValidationProvider class="field-item" rules="required" v-slot="{ errors }">
           <p class="field-name required">Full Name</p>
-          <input type="text" class="entry-field" placeholder="John Smith">
-        </div>
-        <div class="field-item">
+          <input type="text" class="entry-field" placeholder="John Smith" v-model="fullName">
+          <span class="error-text">{{ errors[0] }}</span>
+        </ValidationProvider>
+        <ValidationProvider class="field-item" rules="email|required" v-slot="{ errors }">
           <p class="field-name required">Work email</p>
-          <input type="email" class="entry-field" placeholder="your@company.com">
-        </div>
-        <div class="field-item">
+          <input type="text" class="entry-field" placeholder="your@mail.com" v-model="email">
+          <span class="error-text">{{ errors[0] }}</span>
+        </ValidationProvider>
+        <ValidationProvider class="field-item" rules="integer" v-slot="{ errors }">
           <p class="field-name">Phone number</p>
-          <input type="text" class="entry-field" placeholder="Enter phone number">
-        </div>
+          <input type="text" class="entry-field" placeholder="Enter phone number" v-model="phoneNumber">
+          <span class="error-text">{{ errors[0] }}</span>
+        </ValidationProvider>
       </div>
       <div class="form-checkboxes">
         <label class="form-checkbox-label required" for="privacy-policy">I confirm that I have read and accepted Mad Devs’ <br> Privacy Policy
@@ -32,7 +35,17 @@
 </template>
 
 <script>
+import { ValidationProvider } from 'vee-validate';
+
 export default {
-  name: 'ContactMe'
+  name: 'ContactMe',
+  components: {
+    ValidationProvider
+  },
+  data: () => ({
+    fullName: '',
+    email: '',
+    phoneNumber: ''
+  })
 };
 </script>
