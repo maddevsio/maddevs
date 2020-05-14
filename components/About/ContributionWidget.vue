@@ -89,7 +89,7 @@ export default {
     height: 18px;
 
     &_teacherly,
-    &_nambafood    {
+    &_nambafood {
       fill: $text-color--red;
     }
 
@@ -127,7 +127,7 @@ export default {
     &__img {
       height: 13px;
       width: 15px;
-      
+
       &_teacherly {
         fill: $text-color--red;
       }

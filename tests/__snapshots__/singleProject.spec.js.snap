@@ -33,7 +33,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         class="contribution-widget"
       >
         <svg
-          class="contribution-widget__img contribution-widget__img_red"
+          class="contribution-widget__img contribution-widget__img_nambafood"
           fill="none"
           viewBox="0 0 20 18"
           xmlns="http://www.w3.org/2000/svg"
@@ -47,13 +47,13 @@ exports[`CaseStudies component renders correctly 1`] = `
         </svg>
          
         <span
-          class="contribution-widget__content-mobile contribution-widget__content_gray"
+          class="contribution-widget__content-mobile contribution-widget__content-mobile_nambafood"
         >
           contribution: backend, infrastructure
         </span>
          
         <span
-          class="contribution-widget__content contribution-widget__content_gray"
+          class="contribution-widget__content contribution-widget__content_nambafood"
         >
           contribution: backend, infrastructure, frontend
         </span>
