@@ -75,7 +75,7 @@ export default {
     backgroundModifierClasses() {
       return {
         'single-project__background_first-project':
-          this.project.projectName === 'nambafood' || this.project.projectName === 'teacherly',
+          this.project.projectName === 'nambafood',
         'single-project__background_guardrails':
           this.project.projectName === 'guardrails',
         'single-project__background_godee':
@@ -95,11 +95,22 @@ export default {
   position: relative;
   z-index: 99;
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1220px) {
+    .single-project {
+      &__content-wrap {
+        height: 14em;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1030px) {
     width: 100%;
 
-    &__content-wrap {
-      margin:  68px 30px 0;
+    .single-project {
+      &__content-wrap {
+        margin:  68px 30px 0;
+        height: 270px;
+      }
     }
   }
 
@@ -111,7 +122,7 @@ export default {
 
   &__content-wrap {
     margin:  74px 70px 0;
-    height: 230px;
+    height: 270px;
     z-index: 1;
   }
 
@@ -205,7 +216,7 @@ export default {
     }
   }
 
-  @media screen and (max-width: 1020px) and (min-width: 798px) {
+  @media screen and (max-width: 1030px) and (min-width: 798px) {
     .single-project {
       &__background {
         background-size: contain;
@@ -233,7 +244,6 @@ export default {
 
         &_first-project {
           width: 100%;
-          transform: translateY(6%);
         }
       }
 
@@ -246,7 +256,7 @@ export default {
 
       &__content-wrap {
         margin:  68px 30px 0;
-        height: 270px;
+        height: 14em;
       }
     }
   }
@@ -269,6 +279,10 @@ export default {
     .single-project {
       min-width: 100%;
 
+      &__logo {
+        height: 40px;
+      }
+
       &__sub-title {
         font-weight: bold;
         font-size: 41px;
@@ -277,7 +291,7 @@ export default {
 
       &__content-wrap {
         margin: 40px 77px 0 34px;
-        height: 65px;
+        height: 120px;
         word-wrap: break-word;
 
         .contribution-widget {

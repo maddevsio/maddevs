@@ -7,9 +7,7 @@ exports[`ContributionWidget component renders correctly 1`] = `
   <svg
     class="contribution-widget__img contribution-widget__img_red"
     fill="none"
-    height="18"
     viewBox="0 0 20 18"
-    width="20"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path

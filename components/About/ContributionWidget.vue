@@ -9,8 +9,6 @@
           ? 'contribution-widget__img_black'
           : 'contribution-widget__img_gray'
       ]"
-      width="20"
-      height="18"
       viewBox="0 0 20 18"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -85,6 +83,9 @@ export default {
   line-height: 23px;
 
   &__img {
+    width: 20px;
+    height: 18px;
+
     &_black {
       fill: $text-color--black;
     }
@@ -119,6 +120,11 @@ export default {
   }
 
   @media only screen and (max-width: 576px) {
+    &__img {
+      height: 13px;
+      width: 15px;
+    }
+
     &__content {
       display: none;
 
