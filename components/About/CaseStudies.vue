@@ -6,7 +6,7 @@
         Case
         <span>Studies</span>
       </h2>
-      <img src="@/assets/img/Projects/png/projects-flame-bg.png" alt="Projects Flame Image">
+      <img class="projects-flame-background" src="@/assets/img/Projects/png/projects-flame-bg.png" alt="Projects Flame Image">
       </div>
       <div class="projects">
         <SingleProject v-for="(project, i) in projects" :key="i" :project="project"/>
@@ -87,14 +87,11 @@ export default {
 }
 
 .case-studies {
-
   .container {
     position: relative;
 
-    img {
+    .projects-flame-background {
       position: absolute;
-      top: -37em;
-      right: 60px;
     }
   }
 
@@ -227,6 +224,108 @@ export default {
 
     .swiper-slide {
       left: -16px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1230px) {
+  .case-studies {
+    .projects-flame-background {
+      top: -481px;
+      height: 800px;
+      right: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .case-studies {
+
+    &__main-title {
+      width: 50%;
+    }
+
+    .projects-flame-background {
+      top: -364px;
+      height: 800px;
+      right: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 845px) {
+  .case-studies {
+    .projects-flame-background {
+      top: -233px;
+      height: 600px;
+      right: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .case-studies {
+    .projects-flame-background {
+      top: -77px;
+      height: 400px;
+      right: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .case-studies {
+    .projects-flame-background {
+      top: -97px;
+      height: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .case-studies {
+    .projects-flame-background {
+      top: -132px;
+      height: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .case-studies {
+    .projects-flame-background {
+      top: -180px;
+      height: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .case-studies {
+    .projects-flame-background {
+      top: -97px;
+      height: 300px;
+      right: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .case-studies {
+    .projects-flame-background {
+      top: -117px;
+      height: 300px;
+      right: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .case-studies {
+    .projects-flame-background {
+      top: -79px;
+      height: 254px;
+      right: 15px;
     }
   }
 }
