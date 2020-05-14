@@ -48,7 +48,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             <h4
               class="single-project__sub-title sub-title"
             >
-              Contactless delivery service
+              Contactless Delivery Service
             </h4>
              
             <p
@@ -61,11 +61,9 @@ exports[`CaseStudies component renders correctly 1`] = `
               class="contribution-widget"
             >
               <svg
-                class="contribution-widget__img contribution-widget__img_red"
+                class="contribution-widget__img contribution-widget__img_nambafood"
                 fill="none"
-                height="18"
                 viewBox="0 0 20 18"
-                width="20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -77,13 +75,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               </svg>
                
               <span
-                class="contribution-widget__content-mobile contribution-widget__content_gray"
+                class="contribution-widget__content-mobile contribution-widget__content-mobile_nambafood"
               >
                 contribution: backend, infrastructure
               </span>
                
               <span
-                class="contribution-widget__content contribution-widget__content_gray"
+                class="contribution-widget__content contribution-widget__content_nambafood"
               >
                 contribution: backend, infrastructure, frontend
               </span>
@@ -127,11 +125,9 @@ exports[`CaseStudies component renders correctly 1`] = `
               class="contribution-widget"
             >
               <svg
-                class="contribution-widget__img contribution-widget__img_red"
+                class="contribution-widget__img contribution-widget__img_teacherly"
                 fill="none"
-                height="18"
                 viewBox="0 0 20 18"
-                width="20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -143,13 +139,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               </svg>
                
               <span
-                class="contribution-widget__content-mobile contribution-widget__content_white"
+                class="contribution-widget__content-mobile contribution-widget__content-mobile_teacherly"
               >
                 contribution: backend, infrastructure
               </span>
                
               <span
-                class="contribution-widget__content contribution-widget__content_white"
+                class="contribution-widget__content contribution-widget__content_teacherly"
               >
                 contribution: backend, infrastructure, frontend
               </span>
@@ -157,7 +153,7 @@ exports[`CaseStudies component renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background single-project__background_first-project"
+            class="single-project__background"
           />
         </div>
       </div>
@@ -193,11 +189,9 @@ exports[`CaseStudies component renders correctly 1`] = `
               class="contribution-widget"
             >
               <svg
-                class="contribution-widget__img contribution-widget__img_gray"
+                class="contribution-widget__img contribution-widget__img_guardrails"
                 fill="none"
-                height="18"
                 viewBox="0 0 20 18"
-                width="20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -209,13 +203,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               </svg>
                
               <span
-                class="contribution-widget__content-mobile contribution-widget__content_mobile-white contribution-widget__content_gray"
+                class="contribution-widget__content-mobile contribution-widget__content-mobile_guardrails contribution-widget__content-mobile_nambafood"
               >
                 contribution: backend, infrastructure
               </span>
                
               <span
-                class="contribution-widget__content contribution-widget__content_mobile-white contribution-widget__content_gray"
+                class="contribution-widget__content contribution-widget__content_guardrails contribution-widget__content_nambafood"
               >
                 contribution: backend, infrastructure, frontend
               </span>
@@ -259,11 +253,9 @@ exports[`CaseStudies component renders correctly 1`] = `
               class="contribution-widget"
             >
               <svg
-                class="contribution-widget__img contribution-widget__img_black"
+                class="contribution-widget__img contribution-widget__img_godee"
                 fill="none"
-                height="18"
                 viewBox="0 0 20 18"
-                width="20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -275,13 +267,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               </svg>
                
               <span
-                class="contribution-widget__content-mobile contribution-widget__content_black"
+                class="contribution-widget__content-mobile contribution-widget__content-mobile_godee"
               >
                 contribution: backend, infrastructure
               </span>
                
               <span
-                class="contribution-widget__content contribution-widget__content_black"
+                class="contribution-widget__content contribution-widget__content_godee"
               >
                 contribution: backend, infrastructure, frontend
               </span>
@@ -328,7 +320,7 @@ exports[`CaseStudies component renders correctly 1`] = `
                 <h4
                   class="single-project__sub-title sub-title"
                 >
-                  Contactless delivery service
+                  Contactless Delivery Service
                 </h4>
                  
                 <p
@@ -341,11 +333,9 @@ exports[`CaseStudies component renders correctly 1`] = `
                   class="contribution-widget"
                 >
                   <svg
-                    class="contribution-widget__img contribution-widget__img_red"
+                    class="contribution-widget__img contribution-widget__img_nambafood"
                     fill="none"
-                    height="18"
                     viewBox="0 0 20 18"
-                    width="20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -357,13 +347,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   </svg>
                    
                   <span
-                    class="contribution-widget__content-mobile contribution-widget__content_gray"
+                    class="contribution-widget__content-mobile contribution-widget__content-mobile_nambafood"
                   >
                     contribution: backend, infrastructure
                   </span>
                    
                   <span
-                    class="contribution-widget__content contribution-widget__content_gray"
+                    class="contribution-widget__content contribution-widget__content_nambafood"
                   >
                     contribution: backend, infrastructure, frontend
                   </span>
@@ -411,11 +401,9 @@ exports[`CaseStudies component renders correctly 1`] = `
                   class="contribution-widget"
                 >
                   <svg
-                    class="contribution-widget__img contribution-widget__img_red"
+                    class="contribution-widget__img contribution-widget__img_teacherly"
                     fill="none"
-                    height="18"
                     viewBox="0 0 20 18"
-                    width="20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -427,13 +415,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   </svg>
                    
                   <span
-                    class="contribution-widget__content-mobile contribution-widget__content_white"
+                    class="contribution-widget__content-mobile contribution-widget__content-mobile_teacherly"
                   >
                     contribution: backend, infrastructure
                   </span>
                    
                   <span
-                    class="contribution-widget__content contribution-widget__content_white"
+                    class="contribution-widget__content contribution-widget__content_teacherly"
                   >
                     contribution: backend, infrastructure, frontend
                   </span>
@@ -441,7 +429,7 @@ exports[`CaseStudies component renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background single-project__background_first-project"
+                class="single-project__background"
               />
             </div>
           </div>
@@ -481,11 +469,9 @@ exports[`CaseStudies component renders correctly 1`] = `
                   class="contribution-widget"
                 >
                   <svg
-                    class="contribution-widget__img contribution-widget__img_gray"
+                    class="contribution-widget__img contribution-widget__img_guardrails"
                     fill="none"
-                    height="18"
                     viewBox="0 0 20 18"
-                    width="20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -497,13 +483,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   </svg>
                    
                   <span
-                    class="contribution-widget__content-mobile contribution-widget__content_mobile-white contribution-widget__content_gray"
+                    class="contribution-widget__content-mobile contribution-widget__content-mobile_guardrails contribution-widget__content-mobile_nambafood"
                   >
                     contribution: backend, infrastructure
                   </span>
                    
                   <span
-                    class="contribution-widget__content contribution-widget__content_mobile-white contribution-widget__content_gray"
+                    class="contribution-widget__content contribution-widget__content_guardrails contribution-widget__content_nambafood"
                   >
                     contribution: backend, infrastructure, frontend
                   </span>
@@ -551,11 +537,9 @@ exports[`CaseStudies component renders correctly 1`] = `
                   class="contribution-widget"
                 >
                   <svg
-                    class="contribution-widget__img contribution-widget__img_black"
+                    class="contribution-widget__img contribution-widget__img_godee"
                     fill="none"
-                    height="18"
                     viewBox="0 0 20 18"
-                    width="20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -567,13 +551,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   </svg>
                    
                   <span
-                    class="contribution-widget__content-mobile contribution-widget__content_black"
+                    class="contribution-widget__content-mobile contribution-widget__content-mobile_godee"
                   >
                     contribution: backend, infrastructure
                   </span>
                    
                   <span
-                    class="contribution-widget__content contribution-widget__content_black"
+                    class="contribution-widget__content contribution-widget__content_godee"
                   >
                     contribution: backend, infrastructure, frontend
                   </span>

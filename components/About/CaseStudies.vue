@@ -43,7 +43,7 @@ export default {
           contributionWidgetColors: ['#ec1c24', '#96969c'],
           projectBackground: 'nambafoodBackground',
           projectColor: '#f8f7f6',
-          projectTitle: 'Contactless delivery service',
+          projectTitle: 'Contactless Delivery Service',
           projectDescription: 'Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.'
         },
         {
