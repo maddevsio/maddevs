@@ -3,14 +3,14 @@
     <svg
       class="contribution-widget__img"
       :class="[
-        contributionWidgetColors[0] === '#ec1c24'
-          ? 'contribution-widget__img_red'
-          : contributionWidgetColors[0] === '#000'
-          ? 'contribution-widget__img_black'
-          : 'contribution-widget__img_gray'
+        projectName === 'guardrails'
+          ? 'contribution-widget__img_guardrails'
+          : projectName === 'teacherly'
+          ? 'contribution-widget__img_teacherly'
+          : projectName === 'nambafood'
+          ? 'contribution-widget__img_nambafood'
+          : 'contribution-widget__img_godee'
       ]"
-      width="20"
-      height="18"
       viewBox="0 0 20 18"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -26,13 +26,13 @@
       class="contribution-widget__content-mobile"
       :class="[
         projectName === 'guardrails'
-          ? 'contribution-widget__content_mobile-white'
+          ? 'contribution-widget__content-mobile_guardrails'
           : '',
-        contributionWidgetColors[1] === '#fff'
-          ? 'contribution-widget__content_white'
-          : contributionWidgetColors[1] === '#000'
-          ? 'contribution-widget__content_black'
-          : 'contribution-widget__content_gray'
+        projectName === 'godee'
+          ? 'contribution-widget__content-mobile_godee'
+          : projectName === 'teacherly'
+          ? 'contribution-widget__content-mobile_teacherly'
+          : 'contribution-widget__content-mobile_nambafood'
       ]"
       >contribution: backend, infrastructure</span
     >
@@ -40,13 +40,13 @@
       class="contribution-widget__content"
       :class="[
         projectName === 'guardrails'
-          ? 'contribution-widget__content_mobile-white'
+          ? 'contribution-widget__content_guardrails'
           : '',
-        contributionWidgetColors[1] === '#fff'
-          ? 'contribution-widget__content_white'
-          : contributionWidgetColors[1] === '#000'
-          ? 'contribution-widget__content_black'
-          : 'contribution-widget__content_gray'
+        projectName === 'godee'
+          ? 'contribution-widget__content_godee'
+          : projectName === 'teacherly'
+          ? 'contribution-widget__content_teacherly'
+          : 'contribution-widget__content_nambafood'
       ]"
       >contribution: backend, infrastructure, frontend</span
     >
@@ -85,16 +85,20 @@ export default {
   line-height: 23px;
 
   &__img {
-    &_black {
-      fill: $text-color--black;
-    }
+    width: 20px;
+    height: 18px;
 
-    &_red {
+    &_teacherly,
+    &_nambafood {
       fill: $text-color--red;
     }
 
-    &_gray {
+    &_guardrails {
       fill: $text-color--grey;
+    }
+
+    &_godee {
+      fill: $text-color--black;
     }
   }
 
@@ -105,20 +109,39 @@ export default {
       display: none;
     }
 
-    &_black {
-      color: $text-color--black;
+    &_nambafood,
+    &_guardrails {
+      color: $text-color--grey;
     }
 
-    &_white {
+    &_teacherly {
       color: $text-color--white;
     }
 
-    &_gray {
-      color: $text-color--grey;
+    &_godee {
+      color: $text-color--black;
     }
   }
 
   @media only screen and (max-width: 576px) {
+    &__img {
+      height: 13px;
+      width: 15px;
+
+      &_teacherly {
+        fill: $text-color--red;
+      }
+
+      &_guardrails {
+        fill: $text-color--white;
+      }
+
+      &_nambafood,
+      &_godee {
+        fill: $text-color--black;
+      }
+    }
+
     &__content {
       display: none;
 
@@ -126,12 +149,17 @@ export default {
         display: block;
         margin-left: 6px;
 
-        &_gray {
+        &_nambafood {
           color: $text-color--black;
         }
 
-        &_mobile-white {
-          color: $text-color--grey;
+        &_teacherly,
+        &_guardrails {
+          color: $text-color--white;
+        }
+
+        &_godee {
+          color: $text-color--black;
         }
       }
     }
