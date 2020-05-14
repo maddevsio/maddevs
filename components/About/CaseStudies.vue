@@ -1,12 +1,16 @@
 <template>
-  <section id="case-studies" class="case-studies">
+  <section id="case-studies" class="case-studies" :class="{ 'case-studies--projects': currentPageName === 'projects' }">
     <div class="container">
       <div>
-      <h2 class="case-studies__main-title main-title">
+      <h2 class="case-studies__main-title main-title" :class="{ 'case-studies--projects__main-title': currentPageName === 'projects' }">
         Case
         <span>Studies</span>
       </h2>
-      <img class="projects-flame-background" src="@/assets/img/Projects/png/projects-flame-bg.png" alt="Projects Flame Image">
+      <img class="projects-flame-background" 
+        src="@/assets/img/Projects/png/projects-flame-bg.png"
+        alt="Projects Flame Image"
+        v-if="currentPageName === 'projects'"
+      >
       </div>
       <div class="projects">
         <SingleProject v-for="(project, i) in projects" :key="i" :project="project"/>
@@ -34,8 +38,14 @@ export default {
     SwiperSlide,
     SingleProject
   },
+  mounted() {
+    if ($nuxt.$route.name) {
+      this.currentPageName = $nuxt.$route.name;
+    }
+  },
   data() {
     return {
+      currentPageName: '',
       projects: [
         {
           projectName: 'nambafood',
@@ -87,12 +97,14 @@ export default {
 }
 
 .case-studies {
-  .container {
-    position: relative;
-
+  &--projects {
     .projects-flame-background {
       position: absolute;
     }
+  }
+
+  .container {
+    position: relative;
   }
 
   &__main-title {
@@ -209,7 +221,6 @@ export default {
 
 @media only screen and (max-width: 768px) {
   .case-studies {
-
     &__main-title {
       padding-bottom: 31px;
     }
@@ -229,7 +240,7 @@ export default {
 }
 
 @media only screen and (min-width: 1230px) {
-  .case-studies {
+  .case-studies--projects {
     .projects-flame-background {
       top: -481px;
       height: 800px;
@@ -240,21 +251,22 @@ export default {
 
 @media only screen and (max-width: 1230px) {
   .case-studies {
+    &--projects {
+      &__main-title {
+          width: 50%;
+      }
 
-    &__main-title {
-      width: 50%;
-    }
-
-    .projects-flame-background {
-      top: -364px;
-      height: 800px;
-      right: 60px;
+      .projects-flame-background {
+        top: -364px;
+        height: 800px;
+        right: 60px;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 845px) {
-  .case-studies {
+  .case-studies--projects {
     .projects-flame-background {
       top: -233px;
       height: 600px;
@@ -264,7 +276,7 @@ export default {
 }
 
 @media only screen and (max-width: 740px) {
-  .case-studies {
+  .case-studies--projects {
     .projects-flame-background {
       top: -77px;
       height: 400px;
@@ -274,7 +286,7 @@ export default {
 }
 
 @media only screen and (max-width: 640px) {
-  .case-studies {
+  .case-studies--projects {
     .projects-flame-background {
       top: -97px;
       height: 400px;
@@ -283,7 +295,7 @@ export default {
 }
 
 @media only screen and (max-width: 610px) {
-  .case-studies {
+  .case-studies--projects {
     .projects-flame-background {
       top: -132px;
       height: 400px;
@@ -292,7 +304,7 @@ export default {
 }
 
 @media only screen and (max-width: 520px) {
-  .case-studies {
+  .case-studies--projects {
     .projects-flame-background {
       top: -180px;
       height: 400px;
@@ -301,7 +313,7 @@ export default {
 }
 
 @media only screen and (max-width: 465px) {
-  .case-studies {
+  .case-studies--projects {
     .projects-flame-background {
       top: -97px;
       height: 300px;
@@ -311,7 +323,7 @@ export default {
 }
 
 @media only screen and (max-width: 370px) {
-  .case-studies {
+  .case-studies--projects {
     .projects-flame-background {
       top: -117px;
       height: 300px;
@@ -321,7 +333,7 @@ export default {
 }
 
 @media only screen and (max-width: 335px) {
-  .case-studies {
+  .case-studies--projects {
     .projects-flame-background {
       top: -79px;
       height: 254px;
