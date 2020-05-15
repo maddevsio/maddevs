@@ -31,7 +31,7 @@ export default {
       this.$emit('getPrivacyCheckboxState', e.target.checked);
     },
     discountOffersCheckboxChangeState(e) {
-      this.$emit('getDiscountOffersCheckboxState', );
+      this.$emit('getDiscountOffersCheckboxState', e.target.checked);
     }
   }
 };
