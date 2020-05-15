@@ -3,20 +3,25 @@
 exports[`CaseStudies component renders correctly 1`] = `
 <section
   class="case-studies"
+  id="case-studies"
 >
   <div
     class="container"
   >
-    <h2
-      class="case-studies__main-title main-title"
-    >
-      
+    <div>
+      <h2
+        class="case-studies__main-title main-title"
+      >
+        
       Case
       
-      <span>
-        Studies
-      </span>
-    </h2>
+        <span>
+          Studies
+        </span>
+      </h2>
+       
+      <!---->
+    </div>
      
     <div
       class="projects"
