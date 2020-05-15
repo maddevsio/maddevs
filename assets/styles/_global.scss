@@ -501,12 +501,12 @@
   box-shadow: none !important;
 
   // Custom styles
-  padding: 30px 60px 60px 60px;
+  padding: 30px 60px 60px;
   transform: translateX(-50%) translateY(-50%);
 }
 
 .vm--overlay {
-  background: #0d0d0dc7 !important;
+  background: $modal-overlay-bg-color !important;
 }
 
 .close-modal {
@@ -554,7 +554,7 @@
 
 @media only screen and (max-height: 700px) {
   .vm--modal {
-    padding: 30px 40px 40px 40px;
+    padding: 30px 40px 40px;
   }
 
   .modal-field-item {

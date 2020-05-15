@@ -38,7 +38,7 @@ module.exports = {
     {
       src: '~plugins/slick.js',
       ssr: false
-    },
+    }
   ],
   generate: {
     routes: ['/', '/services', '/projects', '/careers']
