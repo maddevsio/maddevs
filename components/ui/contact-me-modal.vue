@@ -19,7 +19,7 @@
           <span class="modal-error-text error-text">{{ errors[0] }}</span>
         </ValidationProvider>
       </div>
-      <formCheckboxes 
+      <formCheckboxes
         v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
         v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
       />
