@@ -19,33 +19,40 @@
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
       </div>
-      <div class="form-checkboxes">
-        <label class="form-checkbox-label required" for="privacy-policy">I confirm that I have read and accepted Mad Devs’ <br> Privacy Policy
-          <input class="form-checkbox-input" id="privacy-policy" type="checkbox" name="Privacy policy">
-          <span class="checkmark"></span>
-        </label>
-        <label class="form-checkbox-label" for="marketing-communications">I agree to get Mad Devs’ discount offers and other <br> marketing communications
-          <input class="form-checkbox-input" id="marketing-communications" type="checkbox" name="Marketing communications">
-          <span class="checkmark"></span>
-        </label>
-      </div>
-      <button class="button-default red-text-and-border">Сontact Me</button>
+      <formCheckboxes 
+        v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
+        v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
+      />
+      <button :class="`button-default red-text-and-border ${agreeWithPrivacyPolicy ? '' : 'disabled'}`">Сontact Me</button>
     </form>
   </modal>
 </template>
 
 <script>
 import { ValidationProvider } from 'vee-validate';
+import formCheckboxes from '@/components/ui/form-checkboxes';
 
 export default {
   name: 'ContactMe',
   components: {
-    ValidationProvider
+    ValidationProvider,
+    formCheckboxes
   },
   data: () => ({
     fullName: '',
     email: '',
-    phoneNumber: ''
-  })
+    phoneNumber: '',
+    agreeWithPrivacyPolicy: false,
+    agreeToGetMadDevsDiscountOffers: false
+  }),
+  methods: {
+    getPrivacyCheckboxState(privacyState) {
+      this.agreeWithPrivacyPolicy = privacyState;
+    },
+
+    getDiscountOffersCheckboxState(discountOffersState) {
+      this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+    }
+  }
 };
 </script>

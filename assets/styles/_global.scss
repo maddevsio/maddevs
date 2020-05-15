@@ -523,3 +523,8 @@
   font-size: 16px;
   font-family: 'Hoves-Regular';
 }
+
+.disabled {
+  pointer-events: none;
+  user-select: none;
+}
