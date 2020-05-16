@@ -85,6 +85,7 @@
           <span class="valued-customers__industry">AdTech</span>
         </div>
       </div>
+      <buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
     </div>
   </section>
 </template>
@@ -92,10 +93,13 @@
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
-import SingleProject from '@/components/About/SingleProject';
+import buttonTrigger from '@/components/ui/button-trigger';
 
 export default {
   name: 'Customers',
+  components: {
+    buttonTrigger
+  },
   mounted() {
     if ($nuxt.$route.name) {
       this.currentPageName = $nuxt.$route.name;
@@ -103,7 +107,8 @@ export default {
   },
   data() {
     return {
-      currentPageName: ''
+      currentPageName: '',
+      buttonInnerText: 'Order a project from us'
     };
   }
 };
@@ -157,7 +162,6 @@ export default {
       color: #ccc;
       align-items: center;
       justify-self: center;
-      display: inline-grid;
       position: absolute;
       bottom: -6px;
       left: 50%;
