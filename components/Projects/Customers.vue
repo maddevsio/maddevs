@@ -129,6 +129,7 @@ export default {
   &__main-title {
     color: $text-color--red;
     max-width: 700px;
+    min-width: 575px;
     margin-right: 58px;
   }
 
@@ -136,7 +137,8 @@ export default {
     color: $text-color--grey;
     line-height: 25px;
     letter-spacing: -0.03em;
-    max-width: 740px;
+    max-width: 575px;
+    padding-bottom: 19px;
   }
 
   .valued-customers {
@@ -170,4 +172,25 @@ export default {
     }
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .customers {
+    &__title-wrap {
+      flex-wrap: wrap;
+    }
+
+    &__main-description {
+      padding-top: 17px;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .customers {
+    &__main-title {
+      min-width: 0;
+    }
+  }
+}
+
 </style>
