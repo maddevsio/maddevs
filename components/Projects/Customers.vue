@@ -12,78 +12,7 @@
         </p>
       </div>
       <div class="valued-customers">
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/godee.svg" alt="admitad">
-          <span class="valued-customers__industry">Transportation</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/guardrails.svg" alt="admitad">
-          <span class="valued-customers__industry">Security</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/teacherly.svg" alt="admitad">
-          <span class="valued-customers__industry">EdTech</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/triggermesh.svg" alt="admitad">
-          <span class="valued-customers__industry">CloudTech</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/clutch.svg" alt="admitad">
-          <span class="valued-customers__industry">AdTech</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/eatigo.svg" alt="admitad">
-          <span class="valued-customers__industry">Logistics</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/veeqo.svg" alt="admitad">
-          <span class="valued-customers__industry">Ecommerce</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/admitad.svg" alt="admitad">
-          <span class="valued-customers__industry">AdTech</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/iotsploit.svg" alt="admitad">
-          <span class="valued-customers__industry">IoT</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/sir_jonas.svg" alt="admitad">
-          <span class="valued-customers__industry">Tourism</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/progressay.svg" alt="admitad">
-          <span class="valued-customers__industry">EdTech</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/kickoico.svg" alt="admitad">
-          <span class="valued-customers__industry">Blockchain</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/namba_food.svg" alt="admitad">
-          <span class="valued-customers__industry">Logistics</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/showmebishkek.svg" alt="admitad">
-          <span class="valued-customers__industry">Tourism</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/mythril.svg" alt="admitad">
-          <span class="valued-customers__industry">Blockchain</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/seso.svg" alt="admitad">
-          <span class="valued-customers__industry">Entertainment</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/tengri.svg" alt="admitad">
-          <span class="valued-customers__industry">FinTech</span>
-        </div>
-        <div class="valued-customers__wrapper">
-          <img class="valued-customers__logo" src="../../assets/img/Projects/svg/peklo.svg" alt="admitad">
-          <span class="valued-customers__industry">AdTech</span>
-        </div>
+        <Customer v-for="(customer, i) in customers" :key="i" :customer="customer" />
       </div>
       <buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
     </div>
@@ -94,11 +23,13 @@
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
 import buttonTrigger from '@/components/ui/button-trigger';
+import Customer from '@/components/Projects/Customer';
 
 export default {
   name: 'Customers',
   components: {
-    buttonTrigger
+    buttonTrigger,
+    Customer
   },
   mounted() {
     if ($nuxt.$route.name) {
@@ -108,7 +39,81 @@ export default {
   data() {
     return {
       currentPageName: '',
-      buttonInnerText: 'Order a project from us'
+      buttonInnerText: 'Order a project from us',
+      customers: [
+        {
+          imgName: 'godee',
+          industry: 'Transportation'
+        },
+        {
+          imgName: 'guardrails',
+          industry: 'Security'
+        },
+        {
+          imgName: 'teacherly',
+          industry: 'EdTech'
+        },
+        {
+          imgName: 'triggermesh',
+          industry: 'CloudTech'
+        },
+        {
+          imgName: 'clutch',
+          industry: 'AdTech'
+        },
+        {
+          imgName: 'eatigo',
+          industry: 'Logistics'
+        },
+        {
+          imgName: 'veeqo',
+          industry: 'Ecommerce'
+        },
+        {
+          imgName: 'admitad',
+          industry: 'AdTech'
+        },
+        {
+          imgName: 'iotsploit',
+          industry: 'IoT'
+        },
+        {
+          imgName: 'sir_jonas',
+          industry: 'Tourism'
+        },
+        {
+          imgName: 'progressay',
+          industry: 'EdTech'
+        },
+        {
+          imgName: 'kickoico',
+          industry: 'Blockchain'
+        },
+        {
+          imgName: 'namba_food',
+          industry: 'Logistics'
+        },
+        {
+          imgName: 'showmebishkek',
+          industry: 'Tourism'
+        },
+        {
+          imgName: 'mythril',
+          industry: 'Blockchain'
+        },
+        {
+          imgName: 'seso',
+          industry: 'Entertainment'
+        },
+        {
+          imgName: 'tengri',
+          industry: 'FinTech'
+        },
+        {
+          imgName: 'peklo',
+          industry: 'AdTech'
+        }
+      ]
     };
   }
 };
@@ -148,27 +153,6 @@ export default {
     margin: 80px 0 40px;
     grid-row-gap: 100px;
     grid-column-gap: 80px;
-
-    &__wrapper {
-      justify-self: center;
-      align-self: center;
-      position: relative;
-    }
-
-    &__wrapper:hover .valued-customers__industry {
-      display: block;
-    }
-
-    &__industry {
-      font-size: 12px;
-      color: #ccc;
-      align-items: center;
-      justify-self: center;
-      position: absolute;
-      bottom: -24%;
-      text-align: center;
-      display: none;
-    }
   }
 }
 
@@ -184,16 +168,6 @@ export default {
 
     .valued-customers {
       grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
-
-      &__wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      &__logo {
-        width: 90%;
-      }
     }
   }
 }
@@ -202,14 +176,6 @@ export default {
   .customers {
     .valued-customers {
       grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
-
-      &__logo {
-        width: 80%;
-      }
-
-      &__industry {
-        font-size: 10px;
-      }
     }
   }
 }
@@ -225,14 +191,6 @@ export default {
       grid-row-gap: 50px;
       grid-column-gap: 0;
       margin-top: 47px;
-
-      &__logo {
-        width: 80%;
-      }
-
-      &__industry {
-        font-size: 8px;
-      }
     }
   }
 }
@@ -241,10 +199,6 @@ export default {
   .customers {
     .valued-customers {
       grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-
-      &__logo {
-        width: 70%;
-      }
     }
   }
 }
