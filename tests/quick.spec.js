@@ -22,7 +22,7 @@ describe('Quick Project Start', () => {
   it('correctly sets inner text in button', () => {
     expect(wrapper.vm.$data.buttonInnerText).toBe('Order a project from us');
 
-    let button = wrapper.find('.show-popup_button');
+    let button = wrapper.find('.button-default');
     expect(button.text()).toBe('Order a project from us');
   });
 

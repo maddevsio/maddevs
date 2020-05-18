@@ -182,7 +182,7 @@ exports[`Header renders correctly 1`] = `
         </div>
          
         <button
-          class="show-popup_button red-text-and-border"
+          class="button-default red-text-and-border"
         >
           
   Contact me
@@ -258,7 +258,7 @@ exports[`Header renders correctly 1`] = `
         </nav>
          
         <button
-          class="show-popup_button"
+          class="button-default"
         >
           
   Contact me
@@ -528,6 +528,140 @@ exports[`Header renders correctly 1`] = `
         </div>
       </div>
     </div>
+     
+    <modal-stub
+      name="contact-me"
+    >
+      <img
+        alt="Close modal"
+        class="close-modal"
+        src="../../assets/img/common/close-icon.svg"
+      />
+       
+      <form
+        class="form"
+      >
+        <div
+          class="fields-list"
+        >
+          <span
+            class="modal-field-item field-item"
+          >
+            <p
+              class="modal-field-name field-name required"
+            >
+              Full Name
+            </p>
+             
+            <input
+              class="modal-entry-field entry-field"
+              placeholder="John Smith"
+              type="text"
+            />
+             
+            <span
+              class="modal-error-text error-text"
+            >
+              
+            </span>
+          </span>
+           
+          <span
+            class="modal-field-item field-item"
+          >
+            <p
+              class="modal-field-name field-name required"
+            >
+              Work email
+            </p>
+             
+            <input
+              class="modal-entry-field entry-field"
+              placeholder="your@mail.com"
+              type="text"
+            />
+             
+            <span
+              class="modal-error-text error-text"
+            >
+              
+            </span>
+          </span>
+           
+          <span
+            class="modal-field-item field-item"
+          >
+            <p
+              class="modal-field-name field-name"
+            >
+              Phone number
+            </p>
+             
+            <input
+              class="modal-entry-field entry-field"
+              placeholder="Enter phone number"
+              type="text"
+            />
+             
+            <span
+              class="modal-error-text error-text"
+            >
+              
+            </span>
+          </span>
+        </div>
+         
+        <div
+          class="form-checkboxes"
+        >
+          <label
+            class="form-checkbox-label required"
+            for="privacy-policy"
+          >
+            I confirm that I have read and accepted Mad Devs’ 
+            <br />
+             Privacy Policy
+    
+            <input
+              class="form-checkbox-input"
+              id="privacy-policy"
+              name="Privacy policy"
+              type="checkbox"
+            />
+             
+            <span
+              class="checkmark"
+            />
+          </label>
+           
+          <label
+            class="form-checkbox-label"
+            for="marketing-communications"
+          >
+            I agree to get Mad Devs’ discount offers and other 
+            <br />
+             marketing communications
+    
+            <input
+              class="form-checkbox-input"
+              id="marketing-communications"
+              name="Marketing communications"
+              type="checkbox"
+            />
+             
+            <span
+              class="checkmark"
+            />
+          </label>
+        </div>
+         
+        <button
+          class="modal-button-default button-default red-text-and-border disabled"
+        >
+          Сontact Me
+        </button>
+      </form>
+    </modal-stub>
   </div>
 </header>
 `;

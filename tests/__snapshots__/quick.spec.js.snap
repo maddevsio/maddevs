@@ -178,7 +178,7 @@ exports[`Quick Project Start renders correctly 1`] = `
       class="quick-project_start__button-wrap"
     >
       <button
-        class="show-popup_button red-text-and-border"
+        class="button-default red-text-and-border"
       >
         
   Order a project from us

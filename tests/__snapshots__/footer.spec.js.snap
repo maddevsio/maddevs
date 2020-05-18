@@ -221,7 +221,7 @@ exports[`Footer renders correctly 1`] = `
                
               <input
                 class="entry-field"
-                placeholder="your@company.co|"
+                placeholder="your@company.com"
                 required="required"
                 type="email"
               />
@@ -289,11 +289,9 @@ exports[`Footer renders correctly 1`] = `
           </div>
            
           <button
-            class="show-popup_button red-text-and-border"
+            class="button-default red-text-and-border"
           >
-            
-  Order a project now
-
+            Order a project now
           </button>
         </form>
       </div>
