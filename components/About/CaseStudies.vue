@@ -1,10 +1,17 @@
 <template>
-  <section class="case-studies">
+  <section id="case-studies" class="case-studies" :class="{ 'case-studies--projects': currentPageName === 'projects' }">
     <div class="container">
-      <h2 class="case-studies__main-title main-title">
+      <div>
+      <h2 class="case-studies__main-title main-title" :class="{ 'case-studies--projects__main-title': currentPageName === 'projects' }">
         Case
         <span>Studies</span>
       </h2>
+      <img class="projects-flame-background" 
+        src="@/assets/img/Projects/png/projects-flame-bg.png"
+        alt="Projects Flame Image"
+        v-if="currentPageName === 'projects'"
+      >
+      </div>
       <div class="projects">
         <SingleProject v-for="(project, i) in projects" :key="i" :project="project"/>
       </div>
@@ -31,8 +38,14 @@ export default {
     SwiperSlide,
     SingleProject
   },
+  mounted() {
+    if ($nuxt.$route.name) {
+      this.currentPageName = $nuxt.$route.name;
+    }
+  },
   data() {
     return {
+      currentPageName: '',
       projects: [
         {
           projectName: 'nambafood',
@@ -40,7 +53,7 @@ export default {
           contributionWidgetColors: ['#ec1c24', '#96969c'],
           projectBackground: 'nambafoodBackground',
           projectColor: '#f8f7f6',
-          projectTitle: 'Contactless delivery service',
+          projectTitle: 'Contactless Delivery Service',
           projectDescription: 'Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.'
         },
         {
@@ -84,6 +97,16 @@ export default {
 }
 
 .case-studies {
+  &--projects {
+    .projects-flame-background {
+      position: absolute;
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+
   &__main-title {
     padding-bottom: 41px;
     display: inline-block;
@@ -138,6 +161,13 @@ export default {
   }
 
   .swiper-slide {
+    @media only screen and (max-width: 410px) {
+      .single-project {
+        min-width: 100%;
+        padding-left: 28px;
+      }
+    }
+
     &:nth-child(3) {
       .single-project {
         &::before {
@@ -176,6 +206,8 @@ export default {
 
   @media only screen and (max-width: 520px) {
     .case-studies {
+      min-width: 100%;
+
       &__main-title {
         padding-bottom: 31px;
       }
@@ -189,7 +221,6 @@ export default {
 
 @media only screen and (max-width: 768px) {
   .case-studies {
-
     &__main-title {
       padding-bottom: 31px;
     }
@@ -204,6 +235,109 @@ export default {
 
     .swiper-slide {
       left: -16px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1230px) {
+  .case-studies--projects {
+    .projects-flame-background {
+      top: -481px;
+      height: 800px;
+      right: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .case-studies {
+    &--projects {
+      &__main-title {
+          width: 50%;
+      }
+
+      .projects-flame-background {
+        top: -364px;
+        height: 800px;
+        right: 60px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 845px) {
+  .case-studies--projects {
+    .projects-flame-background {
+      top: -233px;
+      height: 600px;
+      right: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .case-studies--projects {
+    .projects-flame-background {
+      top: -77px;
+      height: 400px;
+      right: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .case-studies--projects {
+    .projects-flame-background {
+      top: -97px;
+      height: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .case-studies--projects {
+    .projects-flame-background {
+      top: -132px;
+      height: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .case-studies--projects {
+    .projects-flame-background {
+      top: -180px;
+      height: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .case-studies--projects {
+    .projects-flame-background {
+      top: -97px;
+      height: 300px;
+      right: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .case-studies--projects {
+    .projects-flame-background {
+      top: -117px;
+      height: 300px;
+      right: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .case-studies--projects {
+    .projects-flame-background {
+      top: -79px;
+      height: 254px;
+      right: 15px;
     }
   }
 }

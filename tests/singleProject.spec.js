@@ -14,7 +14,7 @@ describe('CaseStudies component', () => {
       contributionWidgetColors: ['#ec1c24', '#96969c'],
       projectBackground: 'nambafoodBackground',
       projectColor: '#f8f7f6',
-      projectTitle: 'Contactless delivery service',
+      projectTitle: 'Contactless Delivery Service',
       projectDescription: 'Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.'
     }
   };
@@ -93,6 +93,36 @@ describe('CaseStudies component', () => {
     });
     const background = wrapper.findAll('.single-project__background').at(0);
     expect(background.classes()).toContain('single-project__background_first-project');
+  });
+
+  test('shoud add single-project__background_guardrails class to .single-project__background if projectName will be guardrails', () => {
+    props = {
+      project: {
+        ...props.project,
+        projectName: 'guardrails'
+      }
+    };
+
+    wrapper = mount(SingleProject, {
+      propsData: props
+    });
+    const background = wrapper.findAll('.single-project__background').at(0);
+    expect(background.classes()).toContain('single-project__background_guardrails');
+  });
+
+  test('shoud add single-project__background_godee class to .single-project__background if projectName will be godee', () => {
+    props = {
+      project: {
+        ...props.project,
+        projectName: 'godee'
+      }
+    };
+
+    wrapper = mount(SingleProject, {
+      propsData: props
+    });
+    const background = wrapper.findAll('.single-project__background').at(0);
+    expect(background.classes()).toContain('single-project__background_godee');
   });
 
   test('shoud not add single-project__background_first-project class to .single-project__background if projectName will be nambafood', () => {

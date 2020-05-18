@@ -2,6 +2,7 @@ import {
   mount
 } from '@vue/test-utils';
 import CaseStudies from '@/components/About/CaseStudies';
+import Banner from '@/components/Banner';
 
 describe('CaseStudies component', () => {
   let wrapper;
@@ -12,7 +13,7 @@ describe('CaseStudies component', () => {
       contributionWidgetColors: ['#ec1c24', '#96969c'],
       projectBackground: 'nambafoodBackground',
       projectColor: '#f8f7f6',
-      projectTitle: 'Contactless delivery service',
+      projectTitle: 'Contactless Delivery Service',
       projectDescription: 'Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.'
     },
     {
@@ -45,7 +46,21 @@ describe('CaseStudies component', () => {
   ];
 
   beforeEach(() => {
-    wrapper = mount(CaseStudies);
+    const $route = {
+      path: '/'
+    };
+
+    global.$nuxt = {
+      $route: {
+        name: '/'
+      }
+    };
+
+    wrapper = mount(CaseStudies, {
+      mocks: {
+        $route
+      }
+    });
   });
 
   test('is Vue\'s instance', () => {
@@ -54,6 +69,41 @@ describe('CaseStudies component', () => {
   
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
+  });
+
+  test('correctly sets the current page\'s default name', () => {
+    expect(wrapper.vm.$data.currentPageName).toBe('/');
+  });
+
+  test('correctly sets the current page\'s name', () => {
+    const $route = {
+      path: '/projects'
+    };
+
+    wrapper = mount(CaseStudies, {
+      mocks: {
+        $route
+      }
+    });
+
+    wrapper.vm.$data.currentPageName = 'projects';
+    expect(wrapper.vm.$route.path).toBe('/projects');
+    expect(wrapper.vm.$data.currentPageName).toBe('projects');
+  });
+
+  test('should have Banner parent component ', () => {
+    const $route = {
+      path: '/projects'
+    };
+
+    wrapper = mount(CaseStudies, {
+      mocks: {
+        $route
+      },
+      parentComponent: Banner
+    });
+
+    expect(wrapper.vm.$parent.$options.name).toBe('Banner');
   });
 
   test('should check existence of data', () => {
