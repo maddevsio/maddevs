@@ -165,15 +165,14 @@ export default {
       align-items: center;
       justify-self: center;
       position: absolute;
-      bottom: -6px;
-      left: 50%;
-      margin-left: -20px;
+      bottom: -24%;
+      text-align: center;
       display: none;
     }
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px), only screen and (min-width: 1024px) {
   .customers {
     &__title-wrap {
       flex-wrap: wrap;
@@ -207,6 +206,10 @@ export default {
       &__logo {
         width: 80%;
       }
+
+      &__industry {
+        font-size: 10px;
+      }
     }
   }
 }
@@ -225,6 +228,10 @@ export default {
 
       &__logo {
         width: 80%;
+      }
+
+      &__industry {
+        font-size: 8px;
       }
     }
   }
