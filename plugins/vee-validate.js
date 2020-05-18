@@ -17,7 +17,7 @@ extend('max', {
   message: 'Sorry, the number of characters in this field should not exceed 300'
 });
 
-const phone = {
+const phoneNumber = {
   validate (value) {
     return new Promise(resolve => {
       let phone = new PhoneNumber(value);
@@ -27,6 +27,6 @@ const phone = {
 };
 
 extend('phone', {
-  ...phone,
+  ...phoneNumber,
   message: 'Sorry, this field can only contain numbers and characters specific for phone numbers.'
 });
