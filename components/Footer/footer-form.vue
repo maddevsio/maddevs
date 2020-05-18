@@ -14,24 +14,34 @@
 				<input type="text" class="entry-field" placeholder="Describe your project...">
 			</div>
 		</div>
-		<div class="form-checkboxes">
-			<label class="form-checkbox-label required" for="privacy-policy">I confirm that I have read and accepted Mad Devs’ <br> Privacy Policy
-				<input class="form-checkbox-input" id="privacy-policy" type="checkbox" name="Privacy policy">
-				<span class="checkmark"></span>
-			</label>
-			<label class="form-checkbox-label" for="marketing-communications">I agree to get Mad Devs’ discount offers and other <br> marketing communications
-				<input class="form-checkbox-input" id="marketing-communications" type="checkbox" name="Marketing communications">
-				<span class="checkmark"></span>
-			</label>
-		</div>
-		<button class="button-default red-text-and-border">Order a project now</button>
+		<formCheckboxes
+			v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
+			v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
+		/>
+		<button :class="`button-default red-text-and-border ${agreeWithPrivacyPolicy ? '' : 'disabled'}`">Order a project now</button>
 	</form>
 </template>
 
 <script>
+import formCheckboxes from '@/components/ui/form-checkboxes';
 
 export default {
-  name: 'footer-form'
+  name: 'footer-form',
+  components: {
+    formCheckboxes
+  },
+  data: () => ({
+    agreeWithPrivacyPolicy: false,
+    agreeToGetMadDevsDiscountOffers: false
+  }),
+  methods: {
+    getPrivacyCheckboxState(privacyState) {
+      this.agreeWithPrivacyPolicy = privacyState;
+    },
+    getDiscountOffersCheckboxState(discountOffersState) {
+      this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+    }
+  }
 };
 </script>
 
@@ -53,7 +63,7 @@ export default {
 			width: 320px;
 
 			.field-name,
-			.form-checkbox-label {
+			/deep/.form-checkbox-label {
 				font-size: 13px;
 			}
 		}
@@ -78,7 +88,7 @@ export default {
 			width: 100%;
 
 			.field-name,
-			.form-checkbox-label {
+			/deep/.form-checkbox-label {
 				font-size: 16px;
 			}
 		}
