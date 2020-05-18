@@ -20,8 +20,6 @@
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
-import 'swiper/css/swiper.css';
 import buttonTrigger from '@/components/ui/button-trigger';
 import Customer from '@/components/Projects/Customer';
 
@@ -31,14 +29,8 @@ export default {
     buttonTrigger,
     Customer
   },
-  mounted() {
-    if ($nuxt.$route.name) {
-      this.currentPageName = $nuxt.$route.name;
-    }
-  },
   data() {
     return {
-      currentPageName: '',
       buttonInnerText: 'Order a project from us',
       customers: [
         {
