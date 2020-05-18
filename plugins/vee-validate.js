@@ -1,5 +1,6 @@
 import { extend } from 'vee-validate';
-import { required, email, integer, max } from 'vee-validate/dist/rules';
+import { required, email, max } from 'vee-validate/dist/rules';
+import PhoneNumber from 'awesome-phonenumber';
 
 extend('required', {
   ...required,
@@ -11,13 +12,21 @@ extend('email', {
   message: 'Invalid email address. Please use your work email.'
 });
 
-extend('integer', {
-  ...integer,
-  message: 'Sorry, this field can only contain numbers and characters specific for phone numbers.'
-});
-
 extend('max', {
   ...max,
   message: 'Sorry, the number of characters in this field should not exceed 300'
 });
 
+const phone = {
+  validate (value) {
+    return new Promise(resolve => {
+      let phone = new PhoneNumber(value);
+      resolve({ valid: phone.isValid() });
+    });
+  }
+};
+
+extend('phone', {
+  ...phone,
+  message: 'Sorry, this field can only contain numbers and characters specific for phone numbers.'
+});
