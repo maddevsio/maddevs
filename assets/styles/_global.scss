@@ -191,13 +191,19 @@
   font-size: 130px;
 }
 
+.section-title {
+  font-family: 'Hoves-Bold';
+  font-size: 87px;
+}
+
 .flex-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
 .title,
-.sub-title {
+.sub-title,
+.section-title {
   font-family: 'Hoves-Bold';
 }
 
@@ -212,6 +218,10 @@
 
 .sub-title {
   font-size: 50px;
+}
+
+.section-title {
+  font-size: 87px;
 }
 
 .paragraph {
@@ -253,6 +263,10 @@
     font-size: 44px;
   }
 
+  .section-title {
+    font-size: 77px;
+  }
+
   .title-icon {
     height: 77px;
   }
@@ -265,6 +279,10 @@
 
   .sub-title  {
     font-size: 40px;
+  }
+
+  .section-title {
+    font-size: 72px;
   }
 }
 
@@ -283,6 +301,10 @@
     font-size: 35px;
   }
 
+  .section-title {
+    font-size: 67px;
+  }
+
   .title-icon {
     height: 67px;
   }
@@ -296,6 +318,10 @@
   .sub-title  {
     font-size: 30px;
   }
+
+  .section-title {
+    font-size: 62px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -305,6 +331,10 @@
 
   .sub-title  {
     font-size: 50px;
+  }
+
+  .section-title {
+    font-size: 77px;
   }
 
   .main-title {
@@ -326,6 +356,10 @@
   .sub-title  {
     font-size: 40px;
   }
+
+  .section-title {
+    font-size: 62px;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -339,6 +373,10 @@
 
   .sub-title  {
     font-size: 35px;
+  }
+
+  .section-title {
+    font-size: 57px;
   }
 }
 
@@ -359,6 +397,10 @@
 
   .sub-title  {
     font-size: 27px;
+  }
+
+  .section-title {
+    font-size: 36px;
   }
 
   .paragraph {

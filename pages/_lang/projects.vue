@@ -3,6 +3,7 @@
     <Banner />
     <CaseStudies />
     <Customers />
+    <OpenSource />
   </main>
 </template>
 
@@ -10,13 +11,15 @@
 import Banner from '@/components/Banner';
 import CaseStudies from '@/components/About/CaseStudies';
 import Customers from '@/components/Projects/Customers';
+import OpenSource from '@/components/Projects/OpenSource';
 
 export default {
   name: 'main-projects',
   components: {
     Banner,
     CaseStudies,
-    Customers
+    Customers,
+    OpenSource
   },
   data() {
     return {
