@@ -117,6 +117,10 @@ export default {
 .customers {
   margin-top: 170px;
 
+  button {
+    width: 100%;
+  }
+
   &__title-wrap {
     display: flex;
     align-items: flex-end;
