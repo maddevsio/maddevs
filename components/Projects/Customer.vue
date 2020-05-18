@@ -46,7 +46,8 @@ export default {
   }
 
   &__wrapper:hover .valued-customers__industry {
-    display: block;
+    opacity: 1;
+    height: auto;
   }
 
   &__industry {
@@ -57,7 +58,10 @@ export default {
     position: absolute;
     bottom: -14%;
     text-align: center;
-    display: none;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
   }
 }
 
