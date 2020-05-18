@@ -554,7 +554,7 @@
 
 @media only screen and (max-height: 700px) {
   .vm--modal {
-    padding: 30px 40px 30px;
+    padding: 30px 40px;
   }
 
   .modal-field-item {
@@ -566,8 +566,8 @@
   }
 
   .close-modal {
-    top: 20px;
-    right: 20px;
+    top: 16px;
+    right: 16px;
   }
 
   .form-checkbox-label {

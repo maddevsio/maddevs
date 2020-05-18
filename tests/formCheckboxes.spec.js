@@ -32,13 +32,13 @@ describe('Form checkboxes', () => {
       target: {
         checked: true
       }
-    }
+    };
 
     const secondCheckbox = {
       target: {
         checked: false
       }
-    }
+    };
 
     wrapper.vm.privacyCheckboxChangeState(firstCheckbox);
     wrapper.vm.discountOffersCheckboxChangeState(secondCheckbox);
@@ -46,5 +46,5 @@ describe('Form checkboxes', () => {
     expect(wrapper.emitted()).toBeTruthy();
     expect(wrapper.emitted().getPrivacyCheckboxState).toEqual([[true]]);
     expect(wrapper.emitted().getDiscountOffersCheckboxState).toEqual([[false]]);
-  })
+  });
 });
