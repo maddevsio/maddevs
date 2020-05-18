@@ -55,13 +55,23 @@ export default {
     align-items: center;
     justify-self: center;
     position: absolute;
-    bottom: -24%;
+    bottom: -14%;
     text-align: center;
     display: none;
   }
 }
 
-@media only screen and (max-width: 1024px), only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
+  .valued-customers {
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   .valued-customers {
     &__wrapper {
       display: flex;
