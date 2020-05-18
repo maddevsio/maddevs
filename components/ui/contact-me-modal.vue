@@ -28,7 +28,7 @@
         v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
         v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
       />
-      <button :class="`modal-button-default button-default red-text-and-border ${agreeWithPrivacyPolicy ? '' : 'disabled'}`">Сontact Me</button>
+      <button class="modal-button-default button-default red-text-and-border" :class="{'disabled': !agreeWithPrivacyPolicy}">Сontact Me</button>
     </form>
   </modal>
 </template>

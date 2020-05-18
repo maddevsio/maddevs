@@ -18,7 +18,7 @@
 			v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
 			v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
 		/>
-		<button :class="`button-default red-text-and-border ${agreeWithPrivacyPolicy ? '' : 'disabled'}`">Order a project now</button>
+		<button class="button-default red-text-and-border" :class="{'disabled': !agreeWithPrivacyPolicy}">Order a project now</button>
 	</form>
 </template>
 
