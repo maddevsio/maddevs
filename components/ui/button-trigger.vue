@@ -33,6 +33,7 @@ export default {
   .red-text-and-border {
     color: $text-color--red;
     border: 1px solid $border-color--red;
+    width: 100%;
   }
 
   @media only screen and (max-width: 1024px) {
