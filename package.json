@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@nuxtjs/yandex-metrika": "^0.1.2",
+    "awesome-phonenumber": "^2.32.0",
     "express": "^4.17.1",
     "jquery": "^3.5.0",
     "nuxt": "^2.12.2",

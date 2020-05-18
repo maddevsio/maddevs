@@ -570,6 +570,28 @@ exports[`Header renders correctly 1`] = `
             class="modal-field-item field-item"
           >
             <p
+              class="modal-field-name field-name"
+            >
+              Company
+            </p>
+             
+            <input
+              class="modal-entry-field entry-field"
+              placeholder="MyAwesomeCompany, Inc."
+              type="text"
+            />
+             
+            <span
+              class="modal-error-text error-text"
+            >
+              
+            </span>
+          </span>
+           
+          <span
+            class="modal-field-item field-item"
+          >
+            <p
               class="modal-field-name field-name required"
             >
               Work email
@@ -599,7 +621,7 @@ exports[`Header renders correctly 1`] = `
              
             <input
               class="modal-entry-field entry-field"
-              placeholder="Enter phone number"
+              placeholder="+1 (23X) XXX-XXXX"
               type="text"
             />
              
