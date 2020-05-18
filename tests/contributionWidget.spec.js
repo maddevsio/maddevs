@@ -7,7 +7,8 @@ import ContributionWidget from '@/components/About/ContributionWidget';
 describe('ContributionWidget component', () => {
   let wrapper;
   let props = {
-    projectName: 'nambafood'
+    projectName: 'nambafood',
+    contributionWidgetColors: []
   };
 
   beforeEach(() => {

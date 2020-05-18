@@ -41,10 +41,11 @@
             </div>
             <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
           </div>
-          <buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
+          <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="red-text-and-border" />
         </div>
       </div>
       <mobileMenu v-on:getMobileMenuState="getMobileMenuState($event)"/>
+      <contactMeModal v-if="pageWasLoaded"/>
     </div>
   </header>
 </template>
@@ -52,12 +53,14 @@
 <script>
 import buttonTrigger from '@/components/ui/button-trigger';
 import mobileMenu from '@/components/ui/mobile-menu';
+import contactMeModal from '@/components/ui/contact-me-modal';
 
 export default {
   name: 'main-header',
   components: {
     buttonTrigger,
-    mobileMenu
+    mobileMenu,
+    contactMeModal
   },
   data() {
     return {
@@ -84,8 +87,13 @@ export default {
         phoneNumber: '+44 20 3984 8555',
         country: 'united-kingdom'
       },
-      mobileMenuIsOpen: false
+      modalWindowName: 'contact-me',
+      mobileMenuIsOpen: false,
+      pageWasLoaded: false
     };
+  },
+  mounted() {
+    this.pageWasLoaded = true;
   },
   methods: {
     getMobileMenuState(mobileMenuDisplayState) {

@@ -456,3 +456,129 @@
   border-radius: 2px;
   background-color: $input-bgcolor--grey-dark;
 }
+
+// ----------- Button styles ----------- //
+
+.button-default {
+  height: 65px;
+  border: 1px solid $border-color--grey;
+  border-radius: 2px;
+  box-shadow: none;
+  background-color: transparent;
+  font-size: 18px;
+  font-family: 'Hoves-Regular';
+  cursor: pointer;
+}
+
+.red-text-and-border {
+  color: $text-color--red;
+  border: 1px solid $border-color--red;
+}
+
+@media only screen and (max-width: 1024px) {
+  .button-default {
+    height: 54px;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .button-default {
+    height: 50px;
+    font-size: 17px;
+  }
+}
+
+// ----------- Modal window ----------- //
+
+.vm--modal {
+  // change initial vue-js-modal styles
+  width: 570px !important;
+  height: max-content !important;
+  top: 50% !important;
+  left: 50% !important;
+  background-color: $bgcolor--black !important;
+  box-shadow: none !important;
+
+  // Custom styles
+  padding: 30px 60px 60px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.vm--overlay {
+  background: $modal-overlay-bg-color !important;
+}
+
+.close-modal {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.error-text {
+  display: block;
+  margin-top: 14px;
+  color: $text-color--red-opacity;
+  font-size: 16px;
+  font-family: 'Hoves-Regular';
+}
+
+.disabled {
+  pointer-events: none;
+  user-select: none;
+}
+
+// ----------- Modal window media styles ----------- //
+
+@media only screen and (max-height: 900px) {
+  .modal-entry-field {
+    padding: 12px 10px;
+    font-size: 17px;
+  }
+
+  .modal-field-name {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 15px;
+  }
+
+  .modal-button-default {
+    height: 55px;
+  }
+
+  .modal-error-text {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .vm--modal {
+    padding: 30px 40px;
+  }
+
+  .modal-field-item {
+    &:first-child {
+      .modal-field-name {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .close-modal {
+    top: 16px;
+    right: 16px;
+  }
+
+  .form-checkbox-label {
+    &:first-child {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .modal-field-name {
+    padding-top: 15px;
+  }
+}

@@ -212,7 +212,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         </ul>
          
         <button
-          class="show-popup_button red-text-and-border"
+          class="button-default red-text-and-border"
         >
           
   Get case studies

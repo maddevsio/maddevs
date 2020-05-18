@@ -30,6 +30,11 @@ module.exports = {
     '~/plugins/i18n.js',
     '~/plugins/vue-scrollto.js',
     '~/plugins/google-analytics.js',
+    '~/plugins/vee-validate.js',
+    {
+      src: '~/plugins/vue-js-modal.js',
+      ssr: false
+    },
     {
       src: '~plugins/slick.js',
       ssr: false
@@ -51,6 +56,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+    transpile: ['vee-validate/dist/rules'],
     vendor: ['vue-slick'],
     extend (config, { isDev, isClient, isServer }) {
       if (isServer) {

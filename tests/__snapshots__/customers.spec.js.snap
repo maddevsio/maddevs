@@ -306,7 +306,7 @@ exports[`Customers component renders correctly 1`] = `
     </div>
      
     <button
-      class="show-popup_button red-text-and-border"
+      class="button-default red-text-and-border"
     >
       
   Order a project from us

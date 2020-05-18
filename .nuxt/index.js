@@ -15,6 +15,8 @@ import { createStore } from './store.js'
 import nuxt_plugin_i18n_1fba523a from 'nuxt_plugin_i18n_1fba523a' // Source: ../plugins/i18n.js (mode: 'all')
 import nuxt_plugin_vuescrollto_44ce9a1c from 'nuxt_plugin_vuescrollto_44ce9a1c' // Source: ../plugins/vue-scrollto.js (mode: 'all')
 import nuxt_plugin_googleanalytics_2bcb2ee2 from 'nuxt_plugin_googleanalytics_2bcb2ee2' // Source: ../plugins/google-analytics.js (mode: 'all')
+import nuxt_plugin_veevalidate_1a0c1998 from 'nuxt_plugin_veevalidate_1a0c1998' // Source: ../plugins/vee-validate.js (mode: 'all')
+import nuxt_plugin_vuejsmodal_a01fef9e from 'nuxt_plugin_vuejsmodal_a01fef9e' // Source: ../plugins/vue-js-modal.js (mode: 'client')
 import nuxt_plugin_slick_b0295394 from 'nuxt_plugin_slick_b0295394' // Source: ../plugins/slick.js (mode: 'client')
 
 // Component: <ClientOnly>
@@ -187,6 +189,14 @@ async function createApp (ssrContext) {
 
   if (typeof nuxt_plugin_googleanalytics_2bcb2ee2 === 'function') {
     await nuxt_plugin_googleanalytics_2bcb2ee2(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_veevalidate_1a0c1998 === 'function') {
+    await nuxt_plugin_veevalidate_1a0c1998(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vuejsmodal_a01fef9e === 'function') {
+    await nuxt_plugin_vuejsmodal_a01fef9e(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_slick_b0295394 === 'function') {

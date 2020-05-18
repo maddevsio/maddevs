@@ -221,7 +221,7 @@ exports[`Footer renders correctly 1`] = `
                
               <input
                 class="entry-field"
-                placeholder="your@company.co|"
+                placeholder="your@company.com"
                 required="required"
                 type="email"
               />
@@ -254,7 +254,7 @@ exports[`Footer renders correctly 1`] = `
               I confirm that I have read and accepted Mad Devs’ 
               <br />
                Privacy Policy
-			
+    
               <input
                 class="form-checkbox-input"
                 id="privacy-policy"
@@ -274,7 +274,7 @@ exports[`Footer renders correctly 1`] = `
               I agree to get Mad Devs’ discount offers and other 
               <br />
                marketing communications
-			
+    
               <input
                 class="form-checkbox-input"
                 id="marketing-communications"
@@ -289,11 +289,9 @@ exports[`Footer renders correctly 1`] = `
           </div>
            
           <button
-            class="show-popup_button red-text-and-border"
+            class="button-default red-text-and-border disabled"
           >
-            
-  Order a project now
-
+            Order a project now
           </button>
         </form>
       </div>

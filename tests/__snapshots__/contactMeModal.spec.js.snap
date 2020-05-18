@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact me modal renders correctly 1`] = `
+<modal-stub
+  name="contact-me"
+>
+  <img
+    alt="Close modal"
+    class="close-modal"
+    src="../../assets/img/common/close-icon.svg"
+  />
+   
+  <form
+    class="form"
+  >
+    <div
+      class="fields-list"
+    >
+      <validationprovider-stub
+        bails="true"
+        class="modal-field-item field-item"
+        custommessages="[object Object]"
+        debounce="0"
+        mode="aggressive"
+        rules="required"
+        skipifempty="true"
+        tag="span"
+        vid=""
+      />
+       
+      <validationprovider-stub
+        bails="true"
+        class="modal-field-item field-item"
+        custommessages="[object Object]"
+        debounce="0"
+        mode="aggressive"
+        rules="max:300"
+        skipifempty="true"
+        tag="span"
+        vid=""
+      />
+       
+      <validationprovider-stub
+        bails="true"
+        class="modal-field-item field-item"
+        custommessages="[object Object]"
+        debounce="0"
+        mode="aggressive"
+        rules="email|required"
+        skipifempty="true"
+        tag="span"
+        vid=""
+      />
+       
+      <validationprovider-stub
+        bails="true"
+        class="modal-field-item field-item"
+        custommessages="[object Object]"
+        debounce="0"
+        mode="aggressive"
+        rules="phone"
+        skipifempty="true"
+        tag="span"
+        vid=""
+      />
+    </div>
+     
+    <div
+      class="form-checkboxes"
+    >
+      <label
+        class="form-checkbox-label required"
+        for="privacy-policy"
+      >
+        I confirm that I have read and accepted Mad Devs’ 
+        <br />
+         Privacy Policy
+    
+        <input
+          class="form-checkbox-input"
+          id="privacy-policy"
+          name="Privacy policy"
+          type="checkbox"
+        />
+         
+        <span
+          class="checkmark"
+        />
+      </label>
+       
+      <label
+        class="form-checkbox-label"
+        for="marketing-communications"
+      >
+        I agree to get Mad Devs’ discount offers and other 
+        <br />
+         marketing communications
+    
+        <input
+          class="form-checkbox-input"
+          id="marketing-communications"
+          name="Marketing communications"
+          type="checkbox"
+        />
+         
+        <span
+          class="checkmark"
+        />
+      </label>
+    </div>
+     
+    <button
+      class="modal-button-default button-default red-text-and-border disabled"
+    >
+      Сontact Me
+    </button>
+  </form>
+</modal-stub>
+`;
