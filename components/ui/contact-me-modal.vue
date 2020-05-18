@@ -8,6 +8,11 @@
           <input type="text" class="modal-entry-field entry-field" placeholder="John Smith" v-model="fullName">
           <span class="modal-error-text error-text">{{ errors[0] }}</span>
         </ValidationProvider>
+        <ValidationProvider class="modal-field-item field-item" rules="max:300" v-slot="{ errors }">
+          <p class="modal-field-name field-name">Company</p>
+          <input type="text" class="modal-entry-field entry-field" placeholder="MyAwesomeCompany, Inc." v-model="company">
+          <span class="modal-error-text error-text">{{ errors[0] }}</span>
+        </ValidationProvider>
         <ValidationProvider class="modal-field-item field-item" rules="email|required" v-slot="{ errors }">
           <p class="modal-field-name field-name required">Work email</p>
           <input type="text" class="modal-entry-field entry-field" placeholder="your@mail.com" v-model="email">
@@ -15,7 +20,7 @@
         </ValidationProvider>
         <ValidationProvider class="modal-field-item field-item" rules="integer" v-slot="{ errors }">
           <p class="modal-field-name field-name">Phone number</p>
-          <input type="text" class="modal-entry-field entry-field" placeholder="Enter phone number" v-model="phoneNumber">
+          <input type="text" class="modal-entry-field entry-field" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
           <span class="modal-error-text error-text">{{ errors[0] }}</span>
         </ValidationProvider>
       </div>
@@ -42,6 +47,7 @@ export default {
     fullName: '',
     email: '',
     phoneNumber: '',
+    company: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false
   }),

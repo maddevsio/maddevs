@@ -1,5 +1,5 @@
 import { extend } from 'vee-validate';
-import { required, email, integer } from 'vee-validate/dist/rules';
+import { required, email, integer, max } from 'vee-validate/dist/rules';
 
 extend('required', {
   ...required,
@@ -13,5 +13,11 @@ extend('email', {
 
 extend('integer', {
   ...integer,
-  message: 'The number field must be a valid number'
+  message: 'Sorry, this field can only contain numbers and characters specific for phone numbers.'
 });
+
+extend('max', {
+  ...max,
+  message: 'Sorry, the number of characters in this field should not exceed 300'
+});
+
