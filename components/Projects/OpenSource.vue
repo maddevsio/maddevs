@@ -116,6 +116,48 @@ export default {
     padding: 43px 30px 64px 43px;
     border-right: 2px solid $border-color--grey-light;
     border-bottom: 2px solid $border-color--grey-light;
+
+    &:first-child {
+      &:hover {
+        background: $project-hover-bg-color--blue;
+        color: $bgcolor--white;
+      }
+    }
+
+    &:nth-child(2) {
+      &:hover {
+        background: $project-hover-bg-color--blue-dimmed;
+        color: $bgcolor--white;
+      }
+    }
+
+    &:nth-child(3) {
+      &:hover {
+        background: $project-hover-bg-color--blue-light;
+        color: $bgcolor--white;
+      }
+    }
+
+    &:nth-child(4) {
+      &:hover {
+        background: $project-hover-bg-color--black;
+        color: $bgcolor--white;
+      }
+    }
+
+    &:nth-child(5) {
+      &:hover {
+        background: $project-hover-bg-color--pink;
+        color: $bgcolor--white;
+      }
+    }
+
+    &:last-child {
+      &:hover {
+        background: $project-hover-bg-color--violet;
+        color: $bgcolor--white;
+      }
+    }
   }
 }
 </style>
