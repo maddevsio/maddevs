@@ -300,7 +300,7 @@ export default {
     .quick-project_start {
       padding-top: 100px;
       padding-bottom: 100px;
-      
+
       &__button-wrap {
         margin-left: 52px;
 
