@@ -376,6 +376,14 @@
   user-select: none;
 }
 
+.invalid {
+  background-color: $input-invalid--bg;
+  color: $text-color--grey-light;
+  &::placeholder {
+    color: $text-color--grey-light;
+  }
+}
+
 // --------------- Global media styles ---------------- //
 
 @media only screen and (max-height: 900px) {

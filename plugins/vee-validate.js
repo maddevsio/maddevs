@@ -1,4 +1,4 @@
-import { extend } from 'vee-validate';
+import { extend, configure } from 'vee-validate';
 import { required, email, max } from 'vee-validate/dist/rules';
 import PhoneNumber from 'awesome-phonenumber';
 
@@ -29,4 +29,10 @@ const phoneNumber = {
 extend('phone', {
   ...phoneNumber,
   message: 'Sorry, this field can only contain numbers and characters specific for phone numbers.'
+});
+
+configure({
+  classes: {
+    invalid: 'invalid'
+  }
 });
