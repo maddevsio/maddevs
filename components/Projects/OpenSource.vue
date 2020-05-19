@@ -11,11 +11,25 @@
         </h4>
       </div>
       <div class="open-source__projects">
-        <OpenSourceProject
+        <div
+          class="open-source__project"
           v-for="(openSource, i) in openSources"
-          :openSource="openSource"
           :key="i"
-        />
+        >
+          <div class="open-source__content-wrap">
+            <img
+              class="open-source__logo"
+              :src="
+                require(`@/assets/img/Projects/svg/OpenSource/${openSource.imgName}.svg`)
+              "
+              :alt="openSource.imgName"
+            />
+            <span class="open-source__industry">{{ openSource.industry }}</span>
+          </div>
+          <p class="open-source__paragraph paragraph">
+            {{ openSource.description }}
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -105,6 +119,24 @@ export default {
     margin-top: 76px;
   }
 
+  &__content-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+
+  &__logo {
+  }
+
+  &__industry {
+    display: none;
+  }
+
+  &__paragraph {
+    padding-right: 61px;
+  }
+
   &__project {
     display: flex;
     flex-direction: column;
@@ -117,45 +149,47 @@ export default {
     border-right: 2px solid $border-color--grey-light;
     border-bottom: 2px solid $border-color--grey-light;
 
+    &:hover {
+      color: $bgcolor--white;
+    }
+
+    &:hover .open-source__industry {
+      display: block;
+    }
+
     &:first-child {
       &:hover {
         background: $project-hover-bg-color--blue;
-        color: $bgcolor--white;
       }
     }
 
     &:nth-child(2) {
       &:hover {
         background: $project-hover-bg-color--blue-dimmed;
-        color: $bgcolor--white;
       }
     }
 
     &:nth-child(3) {
       &:hover {
         background: $project-hover-bg-color--blue-light;
-        color: $bgcolor--white;
       }
     }
 
     &:nth-child(4) {
       &:hover {
         background: $project-hover-bg-color--black;
-        color: $bgcolor--white;
       }
     }
 
     &:nth-child(5) {
       &:hover {
         background: $project-hover-bg-color--pink;
-        color: $bgcolor--white;
       }
     }
 
     &:last-child {
       &:hover {
         background: $project-hover-bg-color--violet;
-        color: $bgcolor--white;
       }
     }
   }
