@@ -379,6 +379,7 @@
 .invalid {
   background-color: $input-invalid--bg;
   color: $text-color--grey-light;
+
   &::placeholder {
     color: $text-color--grey-light;
   }
