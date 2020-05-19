@@ -11,85 +11,66 @@
         </h4>
       </div>
       <div class="open-source__projects">
-        <div class="open-source__project">
-          <div class="open-source__content-wrap">
-            <img
-              class="open-source__logo"
-              src="../../assets/img/Projects/svg/OpenSource/mad_location.svg"
-              alt="img"
-            />
-            <span class="open-source__industry">Logistics</span>
-          </div>
-          <p class="open-source__paragraph paragraph">
-            А library for GPS and accelerometer data "fusion" with a Kalman
-            filter.
-          </p>
-        </div>
-
-        <div class="open-source__project">
-          <div class="open-source__content-wrap">
-            <img
-              class="open-source__logo"
-              src="../../assets/img/Projects/svg/OpenSource/mad_location.svg"
-              alt="img"
-            />
-            <span class="open-source__industry">Logistics</span>
-          </div>
-          <p class="open-source__paragraph paragraph">
-            А library for GPS and accelerometer data "fusion" with a Kalman
-            filter.
-          </p>
-        </div>
-        <div class="open-source__project">
-          <div class="open-source__content-wrap">
-            <img
-              class="open-source__logo"
-              src="../../assets/img/Projects/svg/OpenSource/mad_location.svg"
-              alt="img"
-            />
-            <span class="open-source__industry">Logistics</span>
-          </div>
-          <p class="open-source__paragraph paragraph">
-            А library for GPS and accelerometer data "fusion" with a Kalman
-            filter.
-          </p>
-        </div>
-        <div class="open-source__project">
-          <div class="open-source__content-wrap">
-            <img
-              class="open-source__logo"
-              src="../../assets/img/Projects/svg/OpenSource/mad_location.svg"
-              alt="img"
-            />
-            <span class="open-source__industry">Logistics</span>
-          </div>
-          <p class="open-source__paragraph paragraph">
-            А library for GPS and accelerometer data "fusion" with a Kalman
-            filter.
-          </p>
-        </div>
-        <div class="open-source__project">
-          <div class="open-source__content-wrap">
-            <img
-              class="open-source__logo"
-              src="../../assets/img/Projects/svg/OpenSource/mad_location.svg"
-              alt="img"
-            />
-            <span class="open-source__industry">Logistics</span>
-          </div>
-          <p class="open-source__paragraph paragraph">
-            А library for GPS and accelerometer data "fusion" with a Kalman
-            filter.
-          </p>
-        </div>
+        <OpenSourceProject
+          v-for="(openSource, i) in openSources"
+          :openSource="openSource"
+          :key="i"
+        />
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import OpenSourceProject from '@/components/Projects/OpenSourceProject';
+
 export default {
-  name: 'OpenSource'
+  name: 'OpenSource',
+  components: {
+    OpenSourceProject
+  },
+  data() {
+    return {
+      openSources: [
+        {
+          imgName: 'mad_location',
+          industry: 'Logistics',
+          description:
+            'А library for GPS and accelerometer data "fusion" with a Kalman filter.'
+        },
+        {
+          imgName: 'comedian',
+          industry: 'Team Management',
+          description:
+            'A team-management system leveraging Slack and Telegram bot functionalities to enable remote standups and track daily performance.'
+        },
+        {
+          imgName: 'ariadna',
+          industry: 'Logistics',
+          description:
+            'An open-source geocoder, built on top of ElasticSearch, for fast geocoding and better search for CIS countries.'
+        },
+        {
+          imgName: 'id_match',
+          industry: 'Security',
+          description:
+            'An open source tool enabling ID cards recognition to ensure security on your premises.'
+        },
+        {
+          imgName: 'your_cast',
+          industry: 'Entertainment',
+          description:
+            'A solution to create lists of YouTube videos and stream them online in just a few seconds.'
+        },
+        {
+          imgName: 'heimdal',
+          industry: 'Security',
+          description:
+            'A security-monitoring solution for Ethereum smart contracts.'
+        }
+      ]
+    };
+  }
 };
 </script>
 
@@ -135,23 +116,6 @@ export default {
     padding: 43px 30px 64px 43px;
     border-right: 2px solid $border-color--grey-light;
     border-bottom: 2px solid $border-color--grey-light;
-  }
-
-  &__content-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 36px;
-  }
-
-  &__logo {
-  }
-
-  &__industry {
-  }
-
-  &__paragraph {
-    padding-right: 61px;
   }
 }
 </style>
