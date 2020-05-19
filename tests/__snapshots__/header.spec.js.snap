@@ -258,7 +258,7 @@ exports[`Header renders correctly 1`] = `
         </nav>
          
         <button
-          class="button-default"
+          class="button-default red-text-and-border"
         >
           
   Contact me
@@ -554,7 +554,7 @@ exports[`Header renders correctly 1`] = `
             </p>
              
             <input
-              class="modal-entry-field entry-field"
+              class="modal-entry-field entry-field untouched pristine pending"
               placeholder="John Smith"
               type="text"
             />
@@ -576,7 +576,7 @@ exports[`Header renders correctly 1`] = `
             </p>
              
             <input
-              class="modal-entry-field entry-field"
+              class="modal-entry-field entry-field untouched pristine pending"
               placeholder="MyAwesomeCompany, Inc."
               type="text"
             />
@@ -598,7 +598,7 @@ exports[`Header renders correctly 1`] = `
             </p>
              
             <input
-              class="modal-entry-field entry-field"
+              class="modal-entry-field entry-field untouched pristine pending"
               placeholder="your@mail.com"
               type="text"
             />
@@ -620,7 +620,7 @@ exports[`Header renders correctly 1`] = `
             </p>
              
             <input
-              class="modal-entry-field entry-field"
+              class="modal-entry-field entry-field untouched pristine pending"
               placeholder="+1 (23X) XXX-XXXX"
               type="text"
             />

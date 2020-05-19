@@ -506,8 +506,8 @@ export default {
     .why-us {
 
       &__main-title {
-        font-size: 70px;
-        line-height: 43px;
+        font-size: 65px;
+        line-height: 40px;
       }
 
       &__sub-title {

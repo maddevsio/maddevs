@@ -238,145 +238,6 @@
   }
 }
 
-@media only screen and (max-width: 1620px) {
-  .main-title {
-    font-size: 120px;
-  }
-}
-
-@media only screen and (max-width: 1560px) {
-  .title {
-    font-size: 80px;
-  }
-
-  .sub-title  {
-    font-size: 44px;
-  }
-
-  .title-icon {
-    height: 77px;
-  }
-}
-
-@media only screen and (max-width: 1390px) {
-  .title {
-    font-size: 75px;
-  }
-
-  .sub-title  {
-    font-size: 40px;
-  }
-}
-
-@media only screen and (max-width: 1366px) {
-  .main-title {
-    font-size: 110px;
-  }
-}
-
-@media only screen and (max-width: 1270px) {
-  .title {
-    font-size: 70px;
-  }
-
-  .sub-title  {
-    font-size: 35px;
-  }
-
-  .title-icon {
-    height: 67px;
-  }
-}
-
-@media only screen and (max-width: 1180px) {
-  .title {
-    font-size: 65px;
-  }
-
-  .sub-title  {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .title {
-    font-size: 80px;
-  }
-
-  .sub-title  {
-    font-size: 50px;
-  }
-
-  .main-title {
-    font-size: 105px;
-  }
-}
-
-@media only screen and (max-width: 870px) {
-  .main-title {
-    font-size: 95px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .title {
-    font-size: 65px;
-  }
-
-  .sub-title  {
-    font-size: 40px;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .main-title {
-    font-size: 80px;
-  }
-
-  .title {
-    font-size: 60px;
-  }
-
-  .sub-title  {
-    font-size: 35px;
-  }
-}
-
-@media only screen and (max-width: 610px) {
-  .main-title {
-    font-size: 71px;
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  .main-title {
-    font-size: 51px;
-  }
-
-  .title {
-    font-size: 41px;
-  }
-
-  .sub-title  {
-    font-size: 27px;
-  }
-
-  .paragraph {
-    font-size: 17px;
-  }
-
-  .title-icon {
-    height: 43px;
-    padding-left: 13px;
-  }
-}
-
-@media only screen and (max-width: 370px) {
-  .main-title {
-    font-size: 43px;
-  }
-}
-
 // ----------- Form styles ----------- //
 
 .form {
@@ -475,20 +336,6 @@
   border: 1px solid $border-color--red;
 }
 
-@media only screen and (max-width: 1024px) {
-  .button-default {
-    height: 54px;
-    font-size: 17px;
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  .button-default {
-    height: 50px;
-    font-size: 17px;
-  }
-}
-
 // ----------- Modal window ----------- //
 
 .vm--modal {
@@ -529,7 +376,16 @@
   user-select: none;
 }
 
-// ----------- Modal window media styles ----------- //
+.invalid {
+  background-color: $input-invalid--bg;
+  color: $text-color--grey-light;
+
+  &::placeholder {
+    color: $text-color--grey-light;
+  }
+}
+
+// --------------- Global media styles ---------------- //
 
 @media only screen and (max-height: 900px) {
   .modal-entry-field {
@@ -580,5 +436,208 @@
 @media only screen and (max-height: 640px) {
   .modal-field-name {
     padding-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 1620px) {
+  .main-title {
+    font-size: 120px;
+  }
+}
+
+@media only screen and (max-width: 1560px) {
+  .title {
+    font-size: 80px;
+  }
+
+  .sub-title  {
+    font-size: 44px;
+  }
+
+  .title-icon {
+    height: 77px;
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .title {
+    font-size: 75px;
+  }
+
+  .sub-title  {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .main-title {
+    font-size: 110px;
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+  .title {
+    font-size: 70px;
+  }
+
+  .sub-title  {
+    font-size: 35px;
+  }
+
+  .title-icon {
+    height: 67px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .title {
+    font-size: 65px;
+  }
+
+  .sub-title  {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .title {
+    font-size: 80px;
+  }
+
+  .sub-title  {
+    font-size: 50px;
+  }
+
+  .main-title {
+    font-size: 105px;
+  }
+
+  .button-default {
+    height: 54px;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .main-title {
+    font-size: 95px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 65px;
+  }
+
+  .sub-title  {
+    font-size: 40px;
+  }
+
+  .vm--modal {
+    width: 100% !important;
+    height: 100% !important;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+  }
+
+  .modal-entry-field {
+    padding: 20px 10px;
+    font-size: 17px;
+  }
+
+  .modal-field-name {
+    padding-top: 10px;
+    padding-bottom: 9px;
+    font-size: 16px;
+  }
+
+  .modal-button-default {
+    height: 60px;
+  }
+
+  .modal-error-text {
+    margin-top: 0;
+    padding-bottom: 13px;
+  }
+
+  .close-modal {
+    right: 16px;
+  }
+
+  .form-checkboxes {
+    padding-top: 23px;
+    padding-bottom: 33px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main-title {
+    font-size: 80px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .sub-title  {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .main-title {
+    font-size: 71px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .main-title {
+    font-size: 51px;
+  }
+
+  .title {
+    font-size: 41px;
+  }
+
+  .sub-title  {
+    font-size: 27px;
+  }
+
+  .paragraph {
+    font-size: 17px;
+  }
+
+  .title-icon {
+    height: 43px;
+    padding-left: 13px;
+  }
+
+  .form-checkboxes {
+    br {
+      display: none;
+    }
+  }
+
+  .button-default {
+    height: 54px;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .main-title {
+    font-size: 40px;
+  }
+
+  .form-checkbox-label  {
+    padding-left: 29px;
+  }
+
+  .required {
+    &::after {
+      padding-left: 0;
+    }
   }
 }

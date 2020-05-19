@@ -62,9 +62,10 @@ export default {
 		.footer-form {
 			width: 320px;
 
-			.field-name,
 			/deep/.form-checkbox-label {
-				font-size: 13px;
+				br {
+					display: none;
+				}
 			}
 		}
 	}
@@ -86,11 +87,6 @@ export default {
 	@media only screen and (max-width: 1024px) {
 		.footer-form {
 			width: 100%;
-
-			.field-name,
-			/deep/.form-checkbox-label {
-				font-size: 16px;
-			}
 		}
 	}
 </style>
