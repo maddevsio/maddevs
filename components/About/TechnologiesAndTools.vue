@@ -75,6 +75,8 @@ export default {
   @import '../../assets/styles/vars';
 
   .technologies-and_tools {
+    padding-bottom: 183px;
+
     &__main-title {
       padding-bottom: 41px;
       color: $text-color--white;
@@ -134,6 +136,7 @@ export default {
 
   @media only screen and (max-width: 520px) {
     .technologies-and_tools {
+      padding-bottom: 75px;
       &__main-title {
         padding-bottom: 31px;
       }
