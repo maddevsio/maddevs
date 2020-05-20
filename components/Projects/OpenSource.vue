@@ -16,18 +16,22 @@
           v-for="(openSource, i) in openSources"
           :key="i"
         >
-          <div class="open-source__content-wrap">
-            <MadLocationLogo v-if="openSource.imgName === 'mad_location'" />
-            <AriadnaLogo v-else-if="openSource.imgName === 'ariadna'" />
-            <HeimdailLogo v-else-if="openSource.imgName === 'heimdail'" />
-            <ComedianLogo v-else-if="openSource.imgName === 'comedian'" />
-            <IdMatchLogo v-else-if="openSource.imgName === 'id_match'" />
-            <YourCastLogo v-else />
-            <span class="open-source__industry">{{ openSource.industry }}</span>
-          </div>
-          <p class="open-source__paragraph paragraph">
-            {{ openSource.description }}
-          </p>
+          <a class="open-source__project-link" :href="openSource.link" target="_blank" >
+            <div class="open-source__content-wrap">
+              <MadLocationLogo v-if="openSource.imgName === 'mad_location'" />
+              <AriadnaLogo v-else-if="openSource.imgName === 'ariadna'" />
+              <HeimdailLogo v-else-if="openSource.imgName === 'heimdail'" />
+              <ComedianLogo v-else-if="openSource.imgName === 'comedian'" />
+              <IdMatchLogo v-else-if="openSource.imgName === 'id_match'" />
+              <YourCastLogo v-else />
+              <span class="open-source__industry">{{
+                openSource.industry
+              }}</span>
+            </div>
+            <p class="open-source__paragraph paragraph">
+              {{ openSource.description }}
+            </p>
+          </a>
         </div>
       </div>
     </div>
@@ -58,36 +62,42 @@ export default {
         {
           imgName: 'mad_location',
           industry: 'Logistics',
+          link: 'https://github.com/maddevsio/mad-location-manager',
           description:
             'А library for GPS and accelerometer data "fusion" with a Kalman filter.'
         },
         {
           imgName: 'comedian',
           industry: 'Team Management',
+          link: 'https://github.com/maddevsio/comedian',
           description:
             'A team-management system leveraging Slack and Telegram bot functionalities to enable remote standups and track daily performance.'
         },
         {
           imgName: 'ariadna',
           industry: 'Logistics',
+          link: 'https://github.com/maddevsio/ariadna',
           description:
             'An open-source geocoder, built on top of ElasticSearch, for fast geocoding and better search for CIS countries.'
         },
         {
           imgName: 'id_match',
           industry: 'Security',
+          link: 'https://github.com/maddevsio/idmatch',
           description:
             'An open source tool enabling ID cards recognition to ensure security on your premises.'
         },
         {
           imgName: 'your_cast',
           industry: 'Entertainment',
+          link: 'https://github.com/maddevsio/yourcast.tv',
           description:
             'A solution to create lists of YouTube videos and stream them online in just a few seconds.'
         },
         {
           imgName: 'heimdail',
           industry: 'Security',
+          link: 'https://github.com/maddevsio/heimdall',
           description:
             'A security-monitoring solution for Ethereum smart contracts.'
         }
@@ -147,13 +157,20 @@ export default {
     padding-right: 61px;
   }
 
+  &__project-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    padding: 52px 30px 100px 43px;
+  }
+
   &__project {
     display: flex;
     flex-direction: column;
     background: $bgcolor--white;
     width: 33%;
     box-sizing: border-box;
-    padding: 52px 30px 100px 43px;
     border-right: 2px solid $border-color--grey-light;
     border-bottom: 2px solid $border-color--grey-light;
 
