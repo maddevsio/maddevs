@@ -19,7 +19,7 @@
       <FrontendIcons v-if="title === 'Frontend'"/>
       <MobileIcons v-if="title === 'Mobile'"/>
     </div>
-    <buttonTrigger :buttonInnerText="buttonInnerText"/>
+    <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName"/>
   </div>
 </template>
 
@@ -55,6 +55,10 @@ export default {
     buttonInnerText: {
       type: String,
       default: 'Button Inner Text'
+    },
+    modalWindowName: {
+      type: String,
+      modalWindowName: 'Modal Window Name'
     }
   },
   components: {

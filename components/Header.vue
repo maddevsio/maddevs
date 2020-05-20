@@ -45,7 +45,6 @@
         </div>
       </div>
       <mobileMenu v-on:getMobileMenuState="getMobileMenuState($event)"/>
-      <contactMeModal v-if="pageWasLoaded"/>
     </div>
   </header>
 </template>
@@ -53,14 +52,12 @@
 <script>
 import buttonTrigger from '@/components/ui/button-trigger';
 import mobileMenu from '@/components/ui/mobile-menu';
-import contactMeModal from '@/components/ui/contact-me-modal';
 
 export default {
   name: 'main-header',
   components: {
     buttonTrigger,
-    mobileMenu,
-    contactMeModal
+    mobileMenu
   },
   data() {
     return {
@@ -88,12 +85,8 @@ export default {
         country: 'united-kingdom'
       },
       modalWindowName: 'contact-me',
-      mobileMenuIsOpen: false,
-      pageWasLoaded: false
+      mobileMenuIsOpen: false
     };
-  },
-  mounted() {
-    this.pageWasLoaded = true;
   },
   methods: {
     getMobileMenuState(mobileMenuDisplayState) {

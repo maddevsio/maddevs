@@ -1,16 +1,11 @@
 <template>
-  <modal name="contact-me" :clickToClose="false">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('contact-me')">
+  <modal name="frontend" :clickToClose="false">
+    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('frontend')">
     <form class="form"> 
       <div class="fields-list">
         <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
           <p class="modal-field-name field-name required">Full Name</p>
           <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
-          <span class="modal-error-text error-text">{{ errors[0] }}</span>
-        </ValidationProvider>
-        <ValidationProvider class="modal-field-item field-item" rules="max:300" v-slot="{ classes, errors }">
-          <p class="modal-field-name field-name">Company</p>
-          <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="MyAwesomeCompany, Inc." v-model="company">
           <span class="modal-error-text error-text">{{ errors[0] }}</span>
         </ValidationProvider>
         <ValidationProvider class="modal-field-item field-item" rules="email|required" v-slot="{ classes, errors }">
@@ -23,12 +18,17 @@
           <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
           <span class="modal-error-text error-text">{{ errors[0] }}</span>
         </ValidationProvider>
+        <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
+          <p class="modal-field-name field-name">Frontend expertise you are interested in</p>
+          <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need assistance with JS development and UI/UX design" v-model="interesteFrontendExpertise"/>
+          <span class="modal-error-text error-text">{{ errors[0] }}</span>
+        </ValidationProvider>
       </div>
       <formCheckboxes
         v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
         v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
       />
-      <button class="modal-button-default button-default red-text-and-border" :class="{'disabled': !agreeWithPrivacyPolicy}">Сontact Me</button>
+      <button class="modal-button-default button-default red-text-and-border" :class="{'disabled': !agreeWithPrivacyPolicy}">Get UX help</button>
     </form>
   </modal>
 </template>
@@ -37,7 +37,7 @@
 import formCheckboxes from '@/components/ui/form-checkboxes';
 
 export default {
-  name: 'ContactMe',
+  name: 'frontend-modal',
   components: {
     formCheckboxes
   },
@@ -45,7 +45,7 @@ export default {
     fullName: '',
     email: '',
     phoneNumber: '',
-    company: '',
+    interesteFrontendExpertise: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false
   }),
