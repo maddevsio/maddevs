@@ -36,12 +36,12 @@
 
 <script>
 import OpenSourceProject from '@/components/Projects/OpenSourceProject';
-import MadLocationLogo from '@/components/Projects/logos/MadLocationLogo';
-import AriadnaLogo from '@/components/Projects/logos/AriadnaLogo';
-import HeimdailLogo from '@/components/Projects/logos/HeimdailLogo';
-import ComedianLogo from '@/components/Projects/logos/ComedianLogo';
-import IdMatchLogo from '@/components/Projects/logos/IdMatchLogo';
-import YourCastLogo from '@/components/Projects/logos/YourCastLogo';
+import MadLocationLogo from '@/components/Projects/MadLocationLogo';
+import AriadnaLogo from '@/components/Projects/AriadnaLogo';
+import HeimdailLogo from '@/components/Projects/HeimdailLogo';
+import ComedianLogo from '@/components/Projects/ComedianLogo';
+import IdMatchLogo from '@/components/Projects/IdMatchLogo';
+import YourCastLogo from '@/components/Projects/YourCastLogo';
 
 export default {
   name: 'OpenSource',
@@ -176,7 +176,7 @@ export default {
     }
 
     &:hover /deep/ #fill4 {
-      stop-color: #ffadca;
+      stop-color: $project-hover-bg-color--pink-soft;
     }
 
     &:first-child {

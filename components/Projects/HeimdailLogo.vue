@@ -28,12 +28,11 @@ export default {
 };
 </script>
 
-<style scoped>
-.fill1 {
-  fill: #6d4be5;
-}
+<style lang="scss" scoped>
+@import '../../assets/styles/vars';
 
+.fill1,
 .fill2 {
-  fill: #6d4be5;
+  fill: $project-hover-bg-color--violet;
 }
 </style>

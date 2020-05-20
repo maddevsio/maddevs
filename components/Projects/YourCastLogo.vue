@@ -37,13 +37,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '../../assets/styles/vars';
 
 #fill4 {
-  stop-color: #ff005b;
+  stop-color: $project-hover-bg-color--pink-dimmed;
 }
 
 #fill5 {
-  stop-color: #2b2527;
+  stop-color: $project-hover-bg-color--dark;
 }
 </style>
