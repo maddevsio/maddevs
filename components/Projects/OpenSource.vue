@@ -18,6 +18,11 @@
         >
           <div class="open-source__content-wrap">
             <MadLocationLogo v-if="openSource.imgName === 'mad_location'" />
+            <AriadnaLogo v-else-if="openSource.imgName === 'ariadna'" />
+            <HeimdailLogo v-else-if="openSource.imgName === 'heimdail'" />
+            <ComedianLogo v-else-if="openSource.imgName === 'comedian'" />
+            <IdMatchLogo v-else-if="openSource.imgName === 'id_match'" />
+            <YourCastLogo v-else />
             <span class="open-source__industry">{{ openSource.industry }}</span>
           </div>
           <p class="open-source__paragraph paragraph">
@@ -32,12 +37,22 @@
 <script>
 import OpenSourceProject from '@/components/Projects/OpenSourceProject';
 import MadLocationLogo from '@/components/Projects/logos/MadLocationLogo';
+import AriadnaLogo from '@/components/Projects/logos/AriadnaLogo';
+import HeimdailLogo from '@/components/Projects/logos/HeimdailLogo';
+import ComedianLogo from '@/components/Projects/logos/ComedianLogo';
+import IdMatchLogo from '@/components/Projects/logos/IdMatchLogo';
+import YourCastLogo from '@/components/Projects/logos/YourCastLogo';
 
 export default {
   name: 'OpenSource',
   components: {
     OpenSourceProject,
-    MadLocationLogo
+    MadLocationLogo,
+    AriadnaLogo,
+    HeimdailLogo,
+    ComedianLogo,
+    IdMatchLogo,
+    YourCastLogo
   },
   data() {
     return {
@@ -73,7 +88,7 @@ export default {
             'A solution to create lists of YouTube videos and stream them online in just a few seconds.'
         },
         {
-          imgName: 'heimdal',
+          imgName: 'heimdail',
           industry: 'Security',
           description:
             'A security-monitoring solution for Ethereum smart contracts.'
@@ -123,6 +138,7 @@ export default {
   }
 
   &__industry {
+    color: $text-color--grey-light;
     display: none;
   }
 
@@ -153,6 +169,14 @@ export default {
     &:hover /deep/ .fill1,
     &:hover /deep/ .fill2 {
       fill: $project-hover-bg-color--white;
+    }
+
+    &:hover /deep/ #fill5 {
+      stop-color: $project-hover-bg-color--white;
+    }
+
+    &:hover /deep/ #fill4 {
+      stop-color: #ffadca;
     }
 
     &:first-child {
