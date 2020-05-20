@@ -31,7 +31,7 @@
           :firstCheckboxId="firstCheckboxId"
           :secondCheckboxId="secondCheckboxId"
         />
-        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid">Get mobile help</button>
+        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Get mobile help</button>
       </form>
     </modal>
   </ValidationObserver>
