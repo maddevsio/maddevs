@@ -35,7 +35,6 @@
 </template>
 
 <script>
-import OpenSourceProject from '@/components/Projects/OpenSourceProject';
 import MadLocationLogo from '@/components/Projects/MadLocationLogo';
 import AriadnaLogo from '@/components/Projects/AriadnaLogo';
 import HeimdailLogo from '@/components/Projects/HeimdailLogo';
@@ -46,7 +45,6 @@ import YourCastLogo from '@/components/Projects/YourCastLogo';
 export default {
   name: 'OpenSource',
   components: {
-    OpenSourceProject,
     MadLocationLogo,
     AriadnaLogo,
     HeimdailLogo,
