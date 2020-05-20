@@ -154,7 +154,7 @@ export default {
     height: 270px;
     width: 33%;
     box-sizing: border-box;
-    padding: 43px 30px 64px 43px;
+    padding: 52px 30px 100px 43px;
     border-right: 2px solid $border-color--grey-light;
     border-bottom: 2px solid $border-color--grey-light;
 
