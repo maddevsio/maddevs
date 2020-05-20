@@ -27,6 +27,8 @@
       <formCheckboxes
         v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
         v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
+        :firstCheckboxId="firstCheckboxId"
+        :secondCheckboxId="secondCheckboxId"
       />
       <button class="modal-button-default button-default red-text-and-border" :class="{'disabled': !agreeWithPrivacyPolicy}">Get UX help</button>
     </form>
@@ -47,7 +49,9 @@ export default {
     phoneNumber: '',
     interesteFrontendExpertise: '',
     agreeWithPrivacyPolicy: false,
-    agreeToGetMadDevsDiscountOffers: false
+    agreeToGetMadDevsDiscountOffers: false,
+    firstCheckboxId: 'privacy-policy-contact-frontend',
+    secondCheckboxId: 'marketing-communications-frontend'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
