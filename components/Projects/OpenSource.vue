@@ -17,13 +17,7 @@
           :key="i"
         >
           <div class="open-source__content-wrap">
-            <img
-              class="open-source__logo"
-              :src="
-                require(`@/assets/img/Projects/svg/OpenSource/${openSource.imgName}.svg`)
-              "
-              :alt="openSource.imgName"
-            />
+            <MadLocationLogo v-if="openSource.imgName === 'mad_location'" />
             <span class="open-source__industry">{{ openSource.industry }}</span>
           </div>
           <p class="open-source__paragraph paragraph">
@@ -37,11 +31,13 @@
 
 <script>
 import OpenSourceProject from '@/components/Projects/OpenSourceProject';
+import MadLocationLogo from '@/components/Projects/logos/MadLocationLogo';
 
 export default {
   name: 'OpenSource',
   components: {
-    OpenSourceProject
+    OpenSourceProject,
+    MadLocationLogo
   },
   data() {
     return {
@@ -126,9 +122,6 @@ export default {
     margin-bottom: 36px;
   }
 
-  &__logo {
-  }
-
   &__industry {
     display: none;
   }
@@ -155,6 +148,11 @@ export default {
 
     &:hover .open-source__industry {
       display: block;
+    }
+
+    &:hover /deep/ .fill1,
+    &:hover /deep/ .fill2 {
+      fill: $project-hover-bg-color--white;
     }
 
     &:first-child {
