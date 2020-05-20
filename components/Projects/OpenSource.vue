@@ -136,7 +136,10 @@ export default {
   }
 
   &__industry {
+    font-family: 'Hoves-Regular';
     color: $text-color--grey-light;
+    font-size: 13px;
+    font-weight: 300;
     display: none;
   }
 
@@ -147,9 +150,7 @@ export default {
   &__project {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     background: $bgcolor--white;
-    height: 270px;
     width: 33%;
     box-sizing: border-box;
     padding: 52px 30px 100px 43px;
