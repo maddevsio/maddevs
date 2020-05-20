@@ -20,7 +20,7 @@
             <div class="open-source__content-wrap">
               <MadLocationLogo v-if="openSource.imgName === 'mad_location'" />
               <AriadnaLogo v-else-if="openSource.imgName === 'ariadna'" />
-              <HeimdailLogo v-else-if="openSource.imgName === 'heimdail'" />
+              <HeimdallLogo v-else-if="openSource.imgName === 'heimdall'" />
               <ComedianLogo v-else-if="openSource.imgName === 'comedian'" />
               <IdMatchLogo v-else-if="openSource.imgName === 'id_match'" />
               <YourCastLogo v-else />
@@ -41,7 +41,7 @@
 <script>
 import MadLocationLogo from '@/components/Projects/MadLocationLogo';
 import AriadnaLogo from '@/components/Projects/AriadnaLogo';
-import HeimdailLogo from '@/components/Projects/HeimdailLogo';
+import HeimdallLogo from '@/components/Projects/HeimdallLogo';
 import ComedianLogo from '@/components/Projects/ComedianLogo';
 import IdMatchLogo from '@/components/Projects/IdMatchLogo';
 import YourCastLogo from '@/components/Projects/YourCastLogo';
@@ -51,7 +51,7 @@ export default {
   components: {
     MadLocationLogo,
     AriadnaLogo,
-    HeimdailLogo,
+    HeimdallLogo,
     ComedianLogo,
     IdMatchLogo,
     YourCastLogo
@@ -95,7 +95,7 @@ export default {
             'A solution to create lists of YouTube videos and stream them online in just a few seconds.'
         },
         {
-          imgName: 'heimdail',
+          imgName: 'heimdall',
           industry: 'Security',
           link: 'https://github.com/maddevsio/heimdall',
           description:
