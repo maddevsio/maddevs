@@ -48,4 +48,26 @@ export default {
       padding: 13px 0;
     }
   }
+
+  @media only screen and (max-width: 520px) {
+    .infrastructure-content {
+      /deep/.icons-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      /deep/.aws {
+        padding-right: 86px;
+      }
+
+      /deep/.heroku {
+        padding-right: 77px;
+        margin-left: -4px;
+      }
+
+      /deep/.digital-ocean {
+        padding-right: 0;
+      }
+    }
+  }
 </style>

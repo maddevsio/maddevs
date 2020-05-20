@@ -66,6 +66,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .quick-project_start {
+    padding-top: 230px;
     padding-bottom: 195px;
     text-align: center;
 
@@ -297,16 +298,32 @@ export default {
 
   @media only screen and (max-width: 520px) {
     .quick-project_start {
+      padding-top: 100px;
+      padding-bottom: 100px;
+
       &__button-wrap {
         margin-left: 52px;
 
         button {
-          width: calc(100% - 30%);
+          width: calc(100% - 28%);
         }
       }
 
       &__image-item {
         width: 33px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 370px) {
+    .quick-project_start {
+      &__button-wrap {
+        margin-left: 52px;
+
+        button {
+          width: calc(100% - 28%);
+          font-size: 15px;
+        }
       }
     }
   }

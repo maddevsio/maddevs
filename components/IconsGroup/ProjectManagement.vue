@@ -1,7 +1,7 @@
 <template>
   <div class="icons-list">
     <div class="icon-flex_group">
-      <div class="icon-item">
+      <div class="icon-item jira">
         <img src="../../assets/img/Technologies/svg/jira.svg" alt="Atlassian Jira">
         <span>Atlassian Jira</span>
       </div>
@@ -34,6 +34,10 @@ export default {
   @media only screen and (max-width: 520px) {
     .icons-list {
       max-width: 310px;
+    }
+
+    .jira {
+      margin-left: -4px;
     }
   }
 </style>
