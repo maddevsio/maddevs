@@ -257,7 +257,7 @@ export default {
       }
     }
 
-    &:last-child {
+    &:nth-child(6) {
       &:hover {
         background: $project-hover-bg-color--violet;
       }
