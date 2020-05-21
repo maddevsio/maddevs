@@ -40,6 +40,13 @@
             </p>
           </a>
         </div>
+        <a
+          class="open-source__github-link"
+          href="https://github.com/maddevsio"
+          target="_blank"
+        >
+          View more on GitHub
+        </a>
       </div>
     </div>
   </section>
@@ -256,6 +263,21 @@ export default {
       }
     }
   }
+
+  &__github-link {
+    text-align: center;
+    letter-spacing: -0.02em;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 99%;
+    margin: 0 auto;
+    font-family: 'Hoves-Bold';
+    color: $text-color--red;
+    margin-top: 32px;
+    border-bottom: 1px solid $border-color--red;
+    cursor: pointer;
+    text-decoration: none;
+  }
 }
 
 @media only screen and (max-width: 1180px) {
@@ -268,11 +290,17 @@ export default {
         left: 0;
       }
     }
+
+    &__github-link {
+      font-size: 33px;
+    }
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .open-source {
+    padding-bottom: 150px;
+
     &__paragraph {
       padding-right: 21px;
     }
@@ -280,11 +308,17 @@ export default {
     &__industry {
       font-size: 14px;
     }
+
+    &__github-link {
+      font-size: 30px;
+    }
   }
 }
 
 @media only screen and (max-width: 920px) {
   .open-source {
+    padding-bottom: 100px;
+
     &__paragraph {
       padding-right: 11px;
     }
@@ -313,6 +347,8 @@ export default {
 
 @media only screen and (max-width: 624px) {
   .open-source {
+    padding-bottom: 50px;
+
     &__paragraph {
       padding-right: 31px;
     }
@@ -339,6 +375,10 @@ export default {
       visibility: visible;
       font-size: 16px;
     }
+
+    &__github-link {
+      font-size: 20px;
+    }
   }
 }
 
@@ -350,6 +390,10 @@ export default {
 
     &__project-link {
       padding: 36px 25px 49px 22px;
+    }
+
+    &__github-link {
+      font-size: 17px;
     }
   }
 }
