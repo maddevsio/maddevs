@@ -384,6 +384,9 @@ export default {
 
 @media only screen and (max-width: 520px) {
   .open-source {
+    padding-top: 35px;
+    margin-top: 35px;
+
     &__paragraph {
       padding-right: 0;
     }

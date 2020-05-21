@@ -190,6 +190,8 @@ export default {
 
 @media only screen and (max-width: 615px) {
   .customers {
+    margin-top: 80px;
+
     &__main-title {
       min-width: 0;
     }
