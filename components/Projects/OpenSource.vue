@@ -16,7 +16,11 @@
           v-for="(openSource, i) in openSources"
           :key="i"
         >
-          <a class="open-source__project-link" :href="openSource.link" target="_blank" >
+          <a
+            class="open-source__project-link"
+            :href="openSource.link"
+            target="_blank"
+          >
             <div class="open-source__content-wrap">
               <MadLocationLogo v-if="openSource.imgName === 'mad_location'" />
               <AriadnaLogo v-else-if="openSource.imgName === 'ariadna'" />
@@ -147,14 +151,18 @@ export default {
 
   &__industry {
     font-family: 'Hoves-Regular';
-    color: $text-color--grey-light;
-    font-size: 13px;
-    font-weight: 300;
-    display: none;
+    color: $text-color--black;
+    opacity: 0.5;
+    visibility: hidden;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
   }
 
   &__paragraph {
-    padding-right: 61px;
+    padding-right: 31px;
   }
 
   &__project-link {
@@ -179,7 +187,9 @@ export default {
     }
 
     &:hover .open-source__industry {
-      display: block;
+      visibility: visible;
+      color: $text-color--grey-light;
+      opacity: 1;
     }
 
     &:hover /deep/ .fill1,
@@ -229,6 +239,85 @@ export default {
       &:hover {
         background: $project-hover-bg-color--violet;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .open-source {
+    &__paragraph {
+      padding-right: 21px;
+    }
+
+    &__industry {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .open-source {
+    &__paragraph {
+      padding-right: 11px;
+    }
+
+    &__industry {
+      font-size: 16px;
+    }
+
+    &__project {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .open-source {
+    &__industry {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 624px) {
+  .open-source {
+    &__paragraph {
+      padding-right: 31px;
+    }
+
+    &__projects {
+      margin-bottom: 31px;
+    }
+
+    &__project {
+      width: 100%;
+      border-right: 0;
+    }
+
+    &__industry {
+      opacity: 1;
+      visibility: visible;
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .open-source {
+    &__paragraph {
+      padding-right: 0;
+    }
+
+    &__project-link {
+      padding: 36px 25px 49px 22px;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .open-source {
+    &__industry {
+      font-size: 13px;
     }
   }
 }
