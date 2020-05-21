@@ -5,10 +5,13 @@
         <h3 class="open-source__section-title section-title">
           Our code - available in open source - is used by many other companies.
         </h3>
-        <h4 class="open-source__sub-title sub-title">
-          70+ of Mad Devs' pet projects have been shared with the community via
-          GitHub.
-        </h4>
+        <div class="open-source__github-wrap">
+          <h4 class="open-source__sub-title sub-title">
+            70+ of Mad Devs' pet projects have been shared with the community
+            via GitHub.
+          </h4>
+          <span class="open-source__github-icon"></span>
+        </div>
       </div>
       <div class="open-source__projects">
         <div
@@ -124,14 +127,26 @@ export default {
     position: relative;
   }
 
+  &__github-wrap {
+    max-width: 68%;
+    min-width: 60%;
+  }
+
   &__sub-title {
     color: $text-color--grey;
+    display: inline;
+  }
+
+  &__github-icon {
+    position: relative;
 
     &::after {
       content: url('../../assets/img/Projects/svg/github.svg');
-      position: relative;
-      right: 10px;
-      top: 25px;
+      position: absolute;
+      width: 128px;
+      height: 121px;
+      left: 0;
+      bottom: -73px;
     }
   }
 
@@ -243,6 +258,19 @@ export default {
   }
 }
 
+@media only screen and (max-width: 1180px) {
+  .open-source {
+    &__github-icon {
+      &::after {
+        width: 80px;
+        height: 74px;
+        bottom: -39px;
+        left: 0;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .open-source {
     &__paragraph {
@@ -268,6 +296,10 @@ export default {
     &__project {
       width: 50%;
     }
+
+    &__github-wrap {
+      max-width: 100%;
+    }
   }
 }
 
@@ -292,6 +324,14 @@ export default {
     &__project {
       width: 100%;
       border-right: 0;
+    }
+
+    &__github-icon {
+      &::after {
+        width: 63px;
+        height: 59px;
+        bottom: -29px;
+      }
     }
 
     &__industry {

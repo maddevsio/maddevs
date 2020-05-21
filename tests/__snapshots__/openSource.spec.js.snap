@@ -17,14 +17,22 @@ exports[`CaseStudies component renders correctly 1`] = `
       
       </h3>
        
-      <h4
-        class="open-source__sub-title sub-title"
+      <div
+        class="open-source__github-wrap"
       >
+        <h4
+          class="open-source__sub-title sub-title"
+        >
+          
+          70+ of Mad Devs' pet projects have been shared with the community
+          via GitHub.
         
-        70+ of Mad Devs' pet projects have been shared with the community via
-        GitHub.
-      
-      </h4>
+        </h4>
+         
+        <span
+          class="open-source__github-icon"
+        />
+      </div>
     </div>
      
     <div
