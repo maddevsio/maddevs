@@ -361,6 +361,16 @@ exports[`CaseStudies component renders correctly 1`] = `
           </p>
         </a>
       </div>
+       
+      <a
+        class="open-source__github-link"
+        href="https://github.com/maddevsio"
+        target="_blank"
+      >
+        
+        View more on GitHub
+      
+      </a>
     </div>
   </div>
 </section>
