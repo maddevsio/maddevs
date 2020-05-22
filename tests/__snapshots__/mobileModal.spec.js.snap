@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Contact me modal renders correctly 1`] = `
+exports[`Frontend modal renders correctly 1`] = `
 <modal-stub
-  name="contact-me"
+  name="mobile"
 >
   <img
     alt="Close modal"

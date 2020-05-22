@@ -1,7 +1,7 @@
 <template>
-  <ValidationObserver v-slot="{ invalid }">
-    <modal name="contact-me" :clickToClose="false">
-      <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('contact-me')">
+  <modal name="contact-me" :clickToClose="false">
+    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('contact-me')">
+    <ValidationObserver v-slot="{ invalid }">
       <form class="form"> 
         <div class="fields-list">
           <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
@@ -33,8 +33,8 @@
         />
         <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Сontact Me</button>
       </form>
-    </modal>
-  </ValidationObserver>
+    </ValidationObserver>
+  </modal>
 </template>
 
 <script>

@@ -382,12 +382,12 @@
   overflow: hidden;
 }
 
-// button {
-//   &:disabled {
-//     pointer-events: none;
-//     user-select: none;
-//   }
-// }
+button {
+  &:disabled {
+    pointer-events: none;
+    user-select: none;
+  }
+}
 
 .invalid {
   background-color: $input-invalid--bg;

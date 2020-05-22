@@ -24,14 +24,16 @@ exports[`Customer Testimonials renders correctly 1`] = `
       <div
         class="customer-testimonials__widget-wrap"
       >
-        <div
-          class="clutch-widget"
-          data-clutchcompany-id="258762"
-          data-expandifr="true"
-          data-height="auto"
-          data-url="https://widget.clutch.co"
-          data-widget-type="4"
-        />
+        <no-ssr-stub>
+          <div
+            class="clutch-widget"
+            data-clutchcompany-id="258762"
+            data-expandifr="true"
+            data-height="auto"
+            data-url="https://widget.clutch.co"
+            data-widget-type="4"
+          />
+        </no-ssr-stub>
       </div>
        
       <div

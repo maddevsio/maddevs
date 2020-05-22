@@ -7,7 +7,9 @@ describe('Customer Testimonials', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(CustomerTestimonials);
+    wrapper = mount(CustomerTestimonials, {
+      stubs: ['no-ssr']
+    });
   });
 
   // ------ IMPORTANT ----- //
@@ -26,8 +28,6 @@ describe('Customer Testimonials', () => {
 
   it('sets the correct default data', () => {
     expect(typeof CustomerTestimonials.data).toBe('function');
-    const defaultData = CustomerTestimonials.data();
-    expect(defaultData.pageWasLoaded).toBe(false);
   });
 
   it('Widget show in DOM when page load', () => {
@@ -42,9 +42,5 @@ describe('Customer Testimonials', () => {
   test('correctly length of elements in DOM', () => {
     let contentItems = wrapper.findAll('.customer-testimonials__testimonials-item');
     expect(contentItems).toHaveLength(3);
-  });
-
-  it('correctly sets value when mounted', () => {
-    expect(wrapper.vm.$data.pageWasLoaded).toBe(true);
   });
 });

@@ -3,10 +3,12 @@
     <Header/>
     <nuxt/>
     <Footer />
-    <ContactMeModal v-if="pageWasLoaded" />
-    <BackendModal v-if="pageWasLoaded" />
-    <FrontendModal v-if="pageWasLoaded" />
-    <MobileModal v-if="pageWasLoaded" />
+    <no-ssr>
+      <ContactMeModal />
+      <BackendModal />
+      <FrontendModal />
+      <MobileModal />
+    </no-ssr>
   </div>
 </template>
 
@@ -27,14 +29,6 @@ export default {
     BackendModal,
     FrontendModal,
     MobileModal
-  },
-  data() {
-    return {
-      pageWasLoaded: false
-    };
-  },
-  mounted() {
-    this.pageWasLoaded = true;
   }
 };
 </script>
