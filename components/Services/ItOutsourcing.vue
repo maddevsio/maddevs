@@ -42,7 +42,6 @@ export default {
         paragraph: 'How about only dealing with smart heads and capable hands? Enjoy our proactive rockets who will ask you to get them more work.',
         buttonInnerText: 'Get a team of ultra-fast coders',
         modalWindowName: 'teams'
-        
       },
       individuals: {
         title: 'Individuals',

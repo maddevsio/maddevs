@@ -19,7 +19,9 @@
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
-          <ExpectedTeamSize />
+          <ExpectedTeamSize 
+            :inputId="inputId"
+          />
           <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name">Project description</p>
             <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescription"/>
@@ -29,8 +31,7 @@
         <FormCheckboxes
           v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
           v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
-          :firstCheckboxId="firstCheckboxId"
-          :secondCheckboxId="secondCheckboxId"
+          :inputId="inputId"
         />
         <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Get a team of ultra fast coders</button>
       </form>
@@ -55,8 +56,7 @@ export default {
     projectDescription: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    firstCheckboxId: 'privacy-policy-teams',
-    secondCheckboxId: 'marketing-communications-teams'
+    inputId: 'teams'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {

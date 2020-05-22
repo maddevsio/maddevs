@@ -28,8 +28,7 @@
         <FormCheckboxes
           v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
           v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
-          :firstCheckboxId="firstCheckboxId"
-          :secondCheckboxId="secondCheckboxId"
+          :inputId="inputId"
         />
         <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Сontact Me</button>
       </form>
@@ -52,8 +51,7 @@ export default {
     company: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    firstCheckboxId: 'privacy-policy-contact-me',
-    secondCheckboxId: 'marketing-communications-contact-me'
+    inputId: 'contact-me'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {

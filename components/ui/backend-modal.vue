@@ -28,8 +28,7 @@
         <FormCheckboxes
           v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
           v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
-          :firstCheckboxId="firstCheckboxId"
-          :secondCheckboxId="secondCheckboxId"
+          :inputId="inputId"
         />
         <button class="modal-button-default button-default red-text-and-border" :disabled="invalid">Get server help</button>
       </form>
@@ -52,8 +51,7 @@ export default {
     interesteBackendExpertise: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    firstCheckboxId: 'privacy-policy-backend',
-    secondCheckboxId: 'marketing-communications-backend'
+    inputId: 'backend'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {

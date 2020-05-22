@@ -28,8 +28,7 @@
         <FormCheckboxes
           v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
           v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
-          :firstCheckboxId="firstCheckboxId"
-          :secondCheckboxId="secondCheckboxId"
+          :inputId="inputId"
         />
         <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Get mobile help</button>
       </form>
@@ -52,8 +51,7 @@ export default {
     interesteMobileExpertise: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    firstCheckboxId: 'privacy-policy-mobile',
-    secondCheckboxId: 'marketing-communications-mobile'
+    inputId: 'mobile'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
