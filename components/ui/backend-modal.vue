@@ -25,7 +25,7 @@
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
-        <formCheckboxes
+        <FormCheckboxes
           v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
           v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
           :firstCheckboxId="firstCheckboxId"
@@ -38,12 +38,12 @@
 </template>
 
 <script>
-import formCheckboxes from '@/components/ui/form-checkboxes';
+import FormCheckboxes from '@/components/ui/form-checkboxes';
 
 export default {
   name: 'backend-modal',
   components: {
-    formCheckboxes
+    FormCheckboxes
   },
   data: () => ({
     fullName: '',

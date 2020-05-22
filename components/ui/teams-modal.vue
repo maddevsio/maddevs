@@ -1,17 +1,12 @@
 <template>
-  <modal name="contact-me" :clickToClose="false">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('contact-me')">
+  <modal name="teams" :clickToClose="false">
+    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('teams')">
     <ValidationObserver v-slot="{ invalid }">
       <form class="form"> 
         <div class="fields-list">
           <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Full Name</p>
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
-            <span class="modal-error-text error-text">{{ errors[0] }}</span>
-          </ValidationProvider>
-          <ValidationProvider class="modal-field-item field-item" rules="max:300" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name">Company</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="MyAwesomeCompany, Inc." v-model="company">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="email|required" v-slot="{ classes, errors }">
@@ -24,6 +19,12 @@
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
+          <ExpectedTeamSize />
+          <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
+            <p class="modal-field-name field-name">Project description</p>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescription"/>
+            <span class="modal-error-text error-text">{{ errors[0] }}</span>
+          </ValidationProvider>
         </div>
         <FormCheckboxes
           v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
@@ -31,7 +32,7 @@
           :firstCheckboxId="firstCheckboxId"
           :secondCheckboxId="secondCheckboxId"
         />
-        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Сontact Me</button>
+        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Get a team of ultra fast coders</button>
       </form>
     </ValidationObserver>
   </modal>
@@ -39,21 +40,23 @@
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
+import ExpectedTeamSize from '@/components/ui/expected-team-size';
 
 export default {
-  name: 'ContactMe',
+  name: 'frontend-modal',
   components: {
-    FormCheckboxes
+    FormCheckboxes,
+    ExpectedTeamSize
   },
   data: () => ({
     fullName: '',
     email: '',
     phoneNumber: '',
-    company: '',
+    projectDescription: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    firstCheckboxId: 'privacy-policy-contact-me',
-    secondCheckboxId: 'marketing-communications-contact-me'
+    firstCheckboxId: 'privacy-policy-teams',
+    secondCheckboxId: 'marketing-communications-teams'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {

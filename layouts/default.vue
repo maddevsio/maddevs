@@ -8,6 +8,7 @@
       <BackendModal />
       <FrontendModal />
       <MobileModal />
+      <TeamsModal />
     </no-ssr>
   </div>
 </template>
@@ -19,6 +20,7 @@ import ContactMeModal from '@/components/ui/contact-me-modal';
 import BackendModal from '@/components/ui/backend-modal';
 import FrontendModal from '@/components/ui/frontend-modal';
 import MobileModal from '@/components/ui/mobile-modal';
+import TeamsModal from '@/components/ui/teams-modal';
 
 export default {
   name: 'Default',
@@ -28,7 +30,8 @@ export default {
     ContactMeModal,
     BackendModal,
     FrontendModal,
-    MobileModal
+    MobileModal,
+    TeamsModal
   }
 };
 </script>
