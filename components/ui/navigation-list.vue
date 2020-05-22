@@ -8,7 +8,7 @@
     </nav>
     <nav class="navigation-list" v-else-if="currentPageName === 'projects'">
       <a href="#case-studies" class="navigation-item">Case studies</a>
-      <a href="#our-customers" class="navigation-item">Our customers</a>
+      <a href="#customers" class="navigation-item">Our customers</a>
       <a href="#open-source" class="navigation-item">Open-source pet projects</a>
     </nav>
     <nav class="navigation-list" v-else>
