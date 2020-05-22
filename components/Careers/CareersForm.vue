@@ -28,7 +28,7 @@ export default {
   padding: 63px 102px 102px 92px;
   background: $bgcolor--grey-light;
 
-  &__wrapper {
+  .container {
     position: relative;
   }
 
@@ -36,6 +36,44 @@ export default {
     position: absolute;
     bottom: 0;
     right: 0;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .careers {
+    &__background-logo {
+      height: 250px;
+      bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .careers {
+    &__background-logo {
+      height: 220px;
+      bottom: 20px;
+      right: -70px;
+    }
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .careers {
+    &__background-logo {
+      height: 180px;
+      bottom: 28px;
+    }
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .careers {
+    &__background-logo {
+      height: 108px;
+      bottom: 42px;
+    }
   }
 }
 </style>
