@@ -12,6 +12,9 @@
               Check out our <br>
               <span class="main-title-white_part">50+ implemented projects!</span>
             </h1>
+            <h1 class="banner-main_title" v-if="currentPageName === 'careers'">
+              <span class="main-title-white_part">Look! A new Mad Devs' ranger is here!</span>
+            </h1>
             <h1 class="banner-main_title" v-if="currentPageName === 'index'">
               Mad Devs
               <span class="main-title-white_part"><br>Engineering<br>Your Growth</span>
