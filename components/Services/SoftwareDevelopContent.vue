@@ -58,7 +58,7 @@ export default {
     },
     modalWindowName: {
       type: String,
-      modalWindowName: 'Modal Window Name'
+      default: 'Modal Window Name'
     }
   },
   components: {
