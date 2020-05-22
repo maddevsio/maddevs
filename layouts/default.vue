@@ -3,12 +3,12 @@
     <Header/>
     <nuxt/>
     <Footer />
-    <no-ssr>
+    <client-only>
       <ContactMeModal />
       <BackendModal />
       <FrontendModal />
       <MobileModal />
-    </no-ssr>
+    </client-only>
   </div>
 </template>
 
