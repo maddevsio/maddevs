@@ -1,36 +1,16 @@
 <template>
   <div class="expected-team_size">
-    <div class="expected-team_size__field-name field-name">Expected team size​</div>
+    <div class="expected-team_size__field-name field-name required">Expected team size​</div>
     <div class="expected-team_size__radio-list">
-      <label class="expected-team_size__radio-label" :for="`less-five-${inputId}`">
+      <label class="expected-team_size__radio-label"  v-for="(item, i) in teamSizeItems" :key="i" :for="`${item.id}-${inputId}`">
         <input 
           class="expected-team_size__radio-input"
-          :id="`less-five-${inputId}`"
+          :id="`${item.id}-${inputId}`"
           type="radio"
           name="expected team size"
         >
         <span class="expected-team_size__checkmark-radio"></span>
-        <p class="expected-team_size__radio-text_item">Less than 5</p>
-      </label>
-      <label class="expected-team_size__radio-label" :for="`from-five-to-ten-${inputId}`">
-        <input 
-          class="expected-team_size__radio-input"
-          :id="`from-five-to-ten-${inputId}`"
-          type="radio"
-          name="expected team size"
-        >
-        <span class="expected-team_size__checkmark-radio"></span>
-        <p class="expected-team_size__radio-text_item">From 5 to 10</p>
-      </label>
-      <label class="expected-team_size__radio-label" :for="`more-than-ten-${inputId}`">
-        <input 
-          class="expected-team_size__radio-input"
-          :id="`more-than-ten-${inputId}`"
-          type="radio"
-          name="expected team size"
-        >
-        <span class="expected-team_size__checkmark-radio"></span>
-        <p class="expected-team_size__radio-text_item">More than 10</p>
+        <p class="expected-team_size__radio-text_item">{{ item.text }}</p>
       </label>
     </div>
   </div>
@@ -44,6 +24,24 @@ export default {
       type: String,
       default: 'input-id'
     }
+  },
+  data() {
+    return {
+      teamSizeItems: [
+        {
+          id: 'less-five',
+          text: 'Less than 5'
+        },
+        {
+          id: 'from-five-to-ten',
+          text: 'From 5 to 10'
+        },
+        {
+          id: 'more-than-ten',
+          text: 'More than 10'
+        }
+      ]
+    };
   }
 };
 </script>
