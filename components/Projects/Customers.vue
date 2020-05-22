@@ -12,9 +12,16 @@
         </p>
       </div>
       <div class="valued-customers">
-        <Customer v-for="(customer, i) in customers" :key="i" :customer="customer" />
+        <Customer
+          v-for="(customer, i) in customers"
+          :key="i"
+          :customer="customer"
+        />
       </div>
-      <buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
+      <buttonTrigger
+        :buttonInnerText="buttonInnerText"
+        class="red-text-and-border"
+      />
     </div>
   </section>
 </template>
@@ -152,18 +159,23 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1024px), only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px),
+  only screen and (min-width: 1024px) {
   .customers {
-    &__title-wrap {
-      flex-wrap: wrap;
-    }
-
     &__main-description {
       padding-top: 17px;
     }
 
     .valued-customers {
       grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .customers {
+    &__title-wrap {
+      flex-wrap: wrap;
     }
   }
 }
@@ -178,6 +190,8 @@ export default {
 
 @media only screen and (max-width: 615px) {
   .customers {
+    margin-top: 80px;
+
     &__main-title {
       min-width: 0;
     }
@@ -198,5 +212,4 @@ export default {
     }
   }
 }
-
 </style>

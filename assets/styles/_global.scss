@@ -197,7 +197,8 @@
 }
 
 .title,
-.sub-title {
+.sub-title,
+.section-title {
   font-family: 'Hoves-Bold';
 }
 
@@ -212,6 +213,10 @@
 
 .sub-title {
   font-size: 50px;
+}
+
+.section-title {
+  font-size: 87px;
 }
 
 .paragraph {
@@ -235,6 +240,135 @@
     padding-left: 7px;
     color: $text-color--grey;
     font-family: 'Hoves-Regular';
+  }
+}
+
+@media only screen and (max-width: 1620px) {
+  .main-title {
+    font-size: 120px;
+  }
+}
+
+@media only screen and (max-width: 1560px) {
+  .title {
+    font-size: 80px;
+  }
+
+  .sub-title  {
+    font-size: 44px;
+  }
+
+  .section-title {
+    font-size: 77px;
+  }
+
+  .title-icon {
+    height: 77px;
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .title {
+    font-size: 75px;
+  }
+
+  .sub-title  {
+    font-size: 40px;
+  }
+
+  .section-title {
+    font-size: 72px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .main-title {
+    font-size: 110px;
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+  .title {
+    font-size: 70px;
+  }
+
+  .sub-title  {
+    font-size: 35px;
+  }
+
+  .section-title {
+    font-size: 67px;
+  }
+
+  .title-icon {
+    height: 67px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .title {
+    font-size: 65px;
+  }
+
+  .sub-title  {
+    font-size: 30px;
+  }
+
+  .section-title {
+    font-size: 62px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .title {
+    font-size: 80px;
+  }
+
+  .sub-title  {
+    font-size: 50px;
+  }
+
+  .section-title {
+    font-size: 77px;
+  }
+
+  .main-title {
+    font-size: 105px;
+  }
+
+  .button-default {
+    height: 54px;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .main-title {
+    font-size: 95px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main-title {
+    font-size: 80px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .sub-title  {
+    font-size: 35px;
+  }
+
+  .section-title {
+    font-size: 57px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .main-title {
+    font-size: 71px;
   }
 }
 
@@ -555,6 +689,10 @@ button {
     font-size: 40px;
   }
 
+  .section-title {
+    font-size: 62px;
+  }
+
   .vm--modal {
     width: 100% !important;
     height: 100% !important;
@@ -598,26 +736,6 @@ button {
   }
 }
 
-@media only screen and (max-width: 640px) {
-  .main-title {
-    font-size: 80px;
-  }
-
-  .title {
-    font-size: 60px;
-  }
-
-  .sub-title  {
-    font-size: 35px;
-  }
-}
-
-@media only screen and (max-width: 610px) {
-  .main-title {
-    font-size: 71px;
-  }
-}
-
 @media only screen and (max-width: 520px) {
   .main-title {
     font-size: 51px;
@@ -629,6 +747,10 @@ button {
 
   .sub-title  {
     font-size: 27px;
+  }
+
+  .section-title {
+    font-size: 36px;
   }
 
   .paragraph {

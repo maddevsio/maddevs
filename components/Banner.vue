@@ -9,7 +9,7 @@
               <span class="main-title-white_part">Outsourcing Partner</span>
             </h1>
             <h1 class="banner-main_title" v-if="currentPageName === 'projects'">
-              Check out our
+              Check out our <br>
               <span class="main-title-white_part">50+ implemented projects!</span>
             </h1>
             <h1 class="banner-main_title" v-if="currentPageName === 'index'">
