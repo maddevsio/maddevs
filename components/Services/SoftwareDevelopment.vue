@@ -12,6 +12,7 @@
             :secondParagraph="backend.secondParagraph"
             :thirdParagraph="backend.thirdParagraph"
             :buttonInnerText="backend.buttonInnerText"
+            :modalWindowName="backend.modalWindowName"
           />
           <SoftwareDevelopContent 
             :title="frontend.title" 
@@ -19,6 +20,7 @@
             :firstParagraph="frontend.firstParagraph"
             :secondParagraph="frontend.secondParagraph"
             :buttonInnerText="frontend.buttonInnerText"
+            :modalWindowName="frontend.modalWindowName"
             class="frontend-item"
           />
           <SoftwareDevelopContent 
@@ -27,6 +29,7 @@
             :firstParagraph="mobile.firstParagraph"
             :secondParagraph="mobile.secondParagraph"
             :buttonInnerText="mobile.buttonInnerText"
+            :modalWindowName="mobile.modalWindowName"
           />
         </div>
     </div>
@@ -35,11 +38,13 @@
 
 <script>
 import SoftwareDevelopContent from '@/components/Services/SoftwareDevelopContent';
+import BackendModal from '@/components/ui/backend-modal';
 
 export default {
   name: 'SoftwareDevelopment',
   components: {
-    SoftwareDevelopContent
+    SoftwareDevelopContent,
+    BackendModal
   },
   data() {
     return {
@@ -49,21 +54,24 @@ export default {
         firstParagraph: 'Let our positively mad team rescue you and create sensible server logic for your project.',
         secondParagraph: 'We\'ll cure your growth pains like good doctors – just tell us about them and focus on your business.',
         thirdParagraph: 'At Mad Devs we know everything about:',
-        buttonInnerText: 'Get server help'
+        buttonInnerText: 'Get server help',
+        modalWindowName: 'backend'
       },
       frontend: {
         title: 'Frontend',
         subTitle: 'Your users get lost in lousy interfaces?',
         firstParagraph: 'Our wizards will take your UX magic to the next level where everything is intuitive and user-friendly. Mad Devs strive to get involved with well-polished projects that will live a long life.',
         secondParagraph: 'We work with the best present-day frontend stack:',
-        buttonInnerText: 'Get UX help'
+        buttonInnerText: 'Get UX help',
+        modalWindowName: 'frontend'
       },
       mobile: {
         title: 'Mobile',
         subTitle: 'Your app is slow and unable to survive a demo?',
         firstParagraph: 'We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you\'ll be ecstatic to use yourself.',
         secondParagraph: 'We do both iOS and Android development using the following languages and frameworks:',
-        buttonInnerText: 'Get mobile help'
+        buttonInnerText: 'Get mobile help',
+        modalWindowName: 'mobile'
       }
     };
   }

@@ -1,13 +1,13 @@
 import {
   mount
 } from '@vue/test-utils';
-import contactMeModal from '@/components/ui/contact-me-modal';
+import mobileModal from '@/components/ui/mobile-modal';
 
-describe('Contact me modal', () => {
+describe('Frontend modal', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(contactMeModal, {
+    wrapper = mount(mobileModal, {
       stubs: ['ValidationProvider', 'ValidationObserver', 'modal']
     });
   });
@@ -23,20 +23,20 @@ describe('Contact me modal', () => {
   // --------------------- //
 
   test('sets the correct default data', () => {
-    expect(typeof contactMeModal.data).toBe('function');
-    const defaultData = contactMeModal.data();
+    expect(typeof mobileModal.data).toBe('function');
+    const defaultData = mobileModal.data();
     expect(
       defaultData.agreeWithPrivacyPolicy &&
       defaultData.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
-    expect(defaultData.firstCheckboxId).toEqual('privacy-policy-contact-me');
-    expect(defaultData.secondCheckboxId).toEqual('marketing-communications-contact-me');
+    expect(defaultData.firstCheckboxId).toEqual('privacy-policy-mobile');
+    expect(defaultData.secondCheckboxId).toEqual('marketing-communications-mobile');
   });
 
   test('has a functions', () => {
     expect(
-      typeof contactMeModal.methods.getPrivacyCheckboxState && 
-      typeof contactMeModal.methods.getDiscountOffersCheckboxState
+      typeof mobileModal.methods.getPrivacyCheckboxState && 
+      typeof mobileModal.methods.getDiscountOffersCheckboxState
     ).toBe('function');
   });
 

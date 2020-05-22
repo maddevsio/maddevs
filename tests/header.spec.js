@@ -22,18 +22,9 @@ describe('Header', () => {
   });
   // --------------------- //
 
-  it('has a mounted hook', () => {
-    expect(typeof Header.mounted).toBe('function');
-  });
-
   it('sets the correct default data', () => {
     expect(typeof Header.data).toBe('function');
     const defaultData = Header.data();
-    expect(defaultData.pageWasLoaded).toBe(false);
     expect(defaultData.modalWindowName).toBe('contact-me');
-  });
-
-  it('correctly sets value when mounted', () => {
-    expect(wrapper.vm.$data.pageWasLoaded).toBe(true);
   });
 });

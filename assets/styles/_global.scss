@@ -243,135 +243,6 @@
   }
 }
 
-@media only screen and (max-width: 1620px) {
-  .main-title {
-    font-size: 120px;
-  }
-}
-
-@media only screen and (max-width: 1560px) {
-  .title {
-    font-size: 80px;
-  }
-
-  .sub-title  {
-    font-size: 44px;
-  }
-
-  .section-title {
-    font-size: 77px;
-  }
-
-  .title-icon {
-    height: 77px;
-  }
-}
-
-@media only screen and (max-width: 1390px) {
-  .title {
-    font-size: 75px;
-  }
-
-  .sub-title  {
-    font-size: 40px;
-  }
-
-  .section-title {
-    font-size: 72px;
-  }
-}
-
-@media only screen and (max-width: 1366px) {
-  .main-title {
-    font-size: 110px;
-  }
-}
-
-@media only screen and (max-width: 1270px) {
-  .title {
-    font-size: 70px;
-  }
-
-  .sub-title  {
-    font-size: 35px;
-  }
-
-  .section-title {
-    font-size: 67px;
-  }
-
-  .title-icon {
-    height: 67px;
-  }
-}
-
-@media only screen and (max-width: 1180px) {
-  .title {
-    font-size: 65px;
-  }
-
-  .sub-title  {
-    font-size: 30px;
-  }
-
-  .section-title {
-    font-size: 62px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .title {
-    font-size: 80px;
-  }
-
-  .sub-title  {
-    font-size: 50px;
-  }
-
-  .section-title {
-    font-size: 77px;
-  }
-
-  .main-title {
-    font-size: 105px;
-  }
-
-  .button-default {
-    height: 54px;
-    font-size: 17px;
-  }
-}
-
-@media only screen and (max-width: 870px) {
-  .main-title {
-    font-size: 95px;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .main-title {
-    font-size: 80px;
-  }
-
-  .title {
-    font-size: 60px;
-  }
-
-  .sub-title  {
-    font-size: 35px;
-  }
-
-  .section-title {
-    font-size: 57px;
-  }
-}
-
-@media only screen and (max-width: 610px) {
-  .main-title {
-    font-size: 71px;
-  }
-}
-
 // ----------- Form styles ----------- //
 
 .form {
@@ -476,10 +347,12 @@
   // change initial vue-js-modal styles
   width: 570px !important;
   height: max-content !important;
+  max-height: 100vh;
   top: 50% !important;
   left: 50% !important;
   background-color: $bgcolor--black !important;
   box-shadow: none !important;
+  overflow: auto !important;
 
   // Custom styles
   padding: 30px 60px 60px;
@@ -505,9 +378,20 @@
   font-family: 'Hoves-Regular';
 }
 
-.disabled {
-  pointer-events: none;
-  user-select: none;
+.textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 145px;
+  min-height: 54px;
+  height: 54px;
+  overflow: hidden;
+}
+
+button {
+  &:disabled {
+    pointer-events: none;
+    user-select: none;
+  }
 }
 
 .invalid {
@@ -525,6 +409,11 @@
   .modal-entry-field {
     padding: 12px 10px;
     font-size: 17px;
+  }
+
+  .textarea {
+    height: 44px;
+    min-height: 44px;
   }
 
   .modal-field-name {
@@ -573,6 +462,115 @@
   }
 }
 
+@media only screen and (max-width: 1620px) {
+  .main-title {
+    font-size: 120px;
+  }
+}
+
+@media only screen and (max-width: 1560px) {
+  .title {
+    font-size: 80px;
+  }
+
+  .sub-title  {
+    font-size: 44px;
+  }
+
+  .section-title {
+    font-size: 77px;
+  }
+
+  .title-icon {
+    height: 77px;
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .title {
+    font-size: 75px;
+  }
+
+  .sub-title  {
+    font-size: 40px;
+  }
+
+  .section-title {
+    font-size: 72px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .main-title {
+    font-size: 110px;
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+  .title {
+    font-size: 70px;
+  }
+
+  .sub-title  {
+    font-size: 35px;
+  }
+
+  .section-title {
+    font-size: 67px;
+  }
+
+  .title-icon {
+    height: 67px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .title {
+    font-size: 65px;
+  }
+
+  .sub-title  {
+    font-size: 30px;
+  }
+
+  .section-title {
+    font-size: 62px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .textarea {
+    height: 60px;
+  }
+
+  .title {
+    font-size: 80px;
+  }
+
+  .sub-title  {
+    font-size: 50px;
+  }
+
+  .section-title {
+    font-size: 77px;
+  }
+
+  .main-title {
+    font-size: 105px;
+  }
+
+  .button-default {
+    height: 54px;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .main-title {
+    font-size: 95px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .title {
     font-size: 65px;
@@ -591,13 +589,17 @@
     height: 100% !important;
     padding-left: 16px;
     padding-right: 16px;
-    overflow-y: scroll !important;
     overflow-x: hidden;
   }
 
   .modal-entry-field {
     padding: 20px 10px;
     font-size: 17px;
+  }
+
+  .textarea {
+    height: 60px;
+    min-height: 60px;
   }
 
   .modal-field-name {
@@ -622,6 +624,30 @@
   .form-checkboxes {
     padding-top: 23px;
     padding-bottom: 33px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main-title {
+    font-size: 80px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .sub-title  {
+    font-size: 35px;
+  }
+
+  .section-title {
+    font-size: 57px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .main-title {
+    font-size: 71px;
   }
 }
 

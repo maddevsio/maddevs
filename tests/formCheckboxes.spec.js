@@ -7,7 +7,12 @@ describe('Form checkboxes', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(formCheckboxes);
+    wrapper = mount(formCheckboxes, {
+      propsData: {
+        firstCheckboxId: 'First checkbox id',
+        secondCheckboxId: 'Second checkbox id'
+      }
+    });
   });
 
   // ------ IMPORTANT ----- //
@@ -46,5 +51,10 @@ describe('Form checkboxes', () => {
     expect(wrapper.emitted()).toBeTruthy();
     expect(wrapper.emitted().getPrivacyCheckboxState).toEqual([[true]]);
     expect(wrapper.emitted().getDiscountOffersCheckboxState).toEqual([[false]]);
+  });
+
+  test('correctly props data', () => {
+    expect(wrapper.props().firstCheckboxId).toBe('First checkbox id');
+    expect(wrapper.props().secondCheckboxId).toBe('Second checkbox id');
   });
 });

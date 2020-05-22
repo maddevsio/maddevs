@@ -1,6 +1,19 @@
-import { extend, configure } from 'vee-validate';
+import Vue from 'vue';
+import { ValidationObserver, ValidationProvider, extend, configure } from 'vee-validate';
 import { required, email, max } from 'vee-validate/dist/rules';
 import PhoneNumber from 'awesome-phonenumber';
+
+Vue.component('ValidationObserver', ValidationObserver);
+Vue.component('ValidationProvider', ValidationProvider);
+
+const phoneNumber = {
+  validate (value) {
+    return new Promise(resolve => {
+      let phone = new PhoneNumber(value);
+      resolve({ valid: phone.isValid() });
+    });
+  }
+};
 
 extend('required', {
   ...required,
@@ -14,17 +27,9 @@ extend('email', {
 
 extend('max', {
   ...max,
-  message: 'Sorry, the number of characters in this field should not exceed 300'
+  params: ['length'],
+  message: 'Sorry, the number of characters in this field should not exceed {length}'
 });
-
-const phoneNumber = {
-  validate (value) {
-    return new Promise(resolve => {
-      let phone = new PhoneNumber(value);
-      resolve({ valid: phone.isValid() });
-    });
-  }
-};
 
 extend('phone', {
   ...phoneNumber,

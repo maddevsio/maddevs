@@ -62,7 +62,7 @@ exports[`Footer form renders correctly 1`] = `
   >
     <label
       class="form-checkbox-label required"
-      for="privacy-policy"
+      for="Checkbox Id"
     >
       I confirm that I have read and accepted Mad Devs’ 
       <br />
@@ -70,7 +70,7 @@ exports[`Footer form renders correctly 1`] = `
     
       <input
         class="form-checkbox-input"
-        id="privacy-policy"
+        id="Checkbox Id"
         name="Privacy policy"
         type="checkbox"
       />
@@ -82,7 +82,7 @@ exports[`Footer form renders correctly 1`] = `
      
     <label
       class="form-checkbox-label"
-      for="marketing-communications"
+      for="Checkbox Id"
     >
       I agree to get Mad Devs’ discount offers and other 
       <br />
@@ -90,7 +90,7 @@ exports[`Footer form renders correctly 1`] = `
     
       <input
         class="form-checkbox-input"
-        id="marketing-communications"
+        id="Checkbox Id"
         name="Marketing communications"
         type="checkbox"
       />
