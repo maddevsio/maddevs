@@ -24,7 +24,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
       <div
         class="customer-testimonials__widget-wrap"
       >
-        <no-ssr-stub>
+        <client-only-stub>
           <div
             class="clutch-widget"
             data-clutchcompany-id="258762"
@@ -33,7 +33,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
             data-url="https://widget.clutch.co"
             data-widget-type="4"
           />
-        </no-ssr-stub>
+        </client-only-stub>
       </div>
        
       <div

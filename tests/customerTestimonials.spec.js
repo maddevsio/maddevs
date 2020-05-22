@@ -8,7 +8,7 @@ describe('Customer Testimonials', () => {
 
   beforeEach(() => {
     wrapper = mount(CustomerTestimonials, {
-      stubs: ['no-ssr']
+      stubs: ['client-only']
     });
   });
 
