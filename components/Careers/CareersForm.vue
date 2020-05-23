@@ -84,7 +84,13 @@
                 <div class="careers__position-check-inside"></div>
               </div>
             </li>
+            <li class="careers__position-item">
+              <span class="careers__form-description form-text">
+                roles.
+              </span>
+            </li>
           </ul>
+
           <h4 class="careers__form-description form-text email-title">
             Please reply to
             <input
