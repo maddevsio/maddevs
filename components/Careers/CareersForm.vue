@@ -18,13 +18,73 @@
           />
           <h4 class="careers__form-description form-text">
             I want to work for you as a
-            <span class="careers__form-description--grey"
-              >desired position.</span
-            >
+            <input
+              class="careers__form-position-input form-text"
+              type="text"
+              placeholder="desired position."
+            />
           </h4>
           <h4 class="careers__form-description form-text">
             You can also consider me for your other
           </h4>
+          <ul class="careers__position-list">
+            <li class="careers__position-item">
+              <input
+                class="careers__position-input"
+                name="position"
+                id="senior"
+                type="radio"
+              />
+              <label class="careers__position-label form-text" for="senior"
+                >Senior,</label
+              >
+              <div class="careers__position-check">
+                <div class="careers__position-check-inside"></div>
+              </div>
+            </li>
+            <li class="careers__position-item">
+              <input
+                class="careers__position-input"
+                name="position"
+                id="middle"
+                type="radio"
+              />
+              <label class="careers__position-label form-text" for="middle"
+                >Middle,</label
+              >
+              <div class="careers__position-check">
+                <div class="careers__position-check-inside"></div>
+              </div>
+            </li>
+            <li class="careers__position-item">
+              <input
+                class="careers__position-input"
+                name="position"
+                id="junior"
+                type="radio"
+              />
+              <label class="careers__position-label form-text" for="junior"
+                >Junior,</label
+              >
+              <div class="careers__position-check">
+                <div class="careers__position-check-inside"></div>
+              </div>
+            </li>
+            <li class="careers__position-item">
+              <input
+                class="careers__position-input"
+                name="position"
+                id="intern"
+                type="radio"
+              />
+              <label class="careers__position-label form-text" for="intern"
+                >Intern</label
+              >
+              <div class="careers__position-check">
+                <div class="careers__position-check-inside"></div>
+              </div>
+            </li>
+          </ul>
           <h4 class="careers__form-description form-text email-title">
             Please reply to
             <input
@@ -89,12 +149,83 @@ export default {
   }
 
   &__form-name-input,
-  &__form-email-input {
+  &__form-email-input,
+  &__form-position-input {
     background-color: transparent;
     border: 0px solid;
     height: 65px;
     width: 310px;
     color: $text-color--grey;
+  }
+
+  &__position-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+  }
+
+  &__position-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 18px;
+  }
+
+  &__position-check {
+    box-sizing: border-box;
+    position: absolute;
+    border: 2px solid $text-color--grey;
+    border-radius: 100%;
+    height: 26px;
+    width: 26px;
+    z-index: 5;
+    transition: border 0.15s linear;
+    -webkit-transition: border 0.15s linear;
+  }
+
+  &__position-input:checked ~ &__position-check {
+    border-color: $text-color--red;
+    border: 0;
+  }
+
+  &__position-input:checked ~ &__position-label {
+    color: $text-color--red;
+  }
+
+  &__position-input:hover &__position-check {
+    border: 2px solid $text-color--red;
+  }
+
+  &__position-check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 26px;
+    width: 26px;
+    margin: auto;
+    transition: background 0.15s linear;
+    -webkit-transition: background 0.15s linear;
+  }
+
+  &__position-input {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  &__position-label {
+    position: relative;
+    color: $text-color--grey;
+    margin: 0 0 0 35px;
+    z-index: 9;
+    transition: all 0.15s linear;
+  }
+
+  &__position-input:checked ~ &__position-check::before {
+    background: $text-color--red;
   }
 
   &__form-description {
@@ -110,9 +241,6 @@ export default {
 
   &__linkedin-link {
     text-decoration: none;
-  }
-
-  &__cv {
   }
 }
 
