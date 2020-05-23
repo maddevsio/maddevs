@@ -38,9 +38,7 @@
               <label class="careers__position-label form-text" for="senior"
                 >Senior,</label
               >
-              <div class="careers__position-check">
-                <div class="careers__position-check-inside"></div>
-              </div>
+              <div class="careers__position-check"></div>
             </li>
             <li class="careers__position-item">
               <input
@@ -52,9 +50,7 @@
               <label class="careers__position-label form-text" for="middle"
                 >Middle,</label
               >
-              <div class="careers__position-check">
-                <div class="careers__position-check-inside"></div>
-              </div>
+              <div class="careers__position-check"></div>
             </li>
             <li class="careers__position-item">
               <input
@@ -66,9 +62,7 @@
               <label class="careers__position-label form-text" for="junior"
                 >Junior,</label
               >
-              <div class="careers__position-check">
-                <div class="careers__position-check-inside"></div>
-              </div>
+              <div class="careers__position-check"></div>
             </li>
             <li class="careers__position-item">
               <input
@@ -80,9 +74,7 @@
               <label class="careers__position-label form-text" for="intern"
                 >Intern</label
               >
-              <div class="careers__position-check">
-                <div class="careers__position-check-inside"></div>
-              </div>
+              <div class="careers__position-check"></div>
             </li>
             <li class="careers__position-item">
               <span class="careers__form-description form-text">
@@ -90,7 +82,6 @@
               </span>
             </li>
           </ul>
-
           <h4 class="careers__form-description form-text email-title">
             Please reply to
             <input
@@ -190,6 +181,7 @@ export default {
     z-index: 5;
     transition: border 0.15s linear;
     -webkit-transition: border 0.15s linear;
+    cursor: pointer;
   }
 
   &__position-input:checked ~ &__position-check {
@@ -225,9 +217,10 @@ export default {
   &__position-label {
     position: relative;
     color: $text-color--grey;
-    margin: 0 0 0 35px;
+    padding: 0 0 0 35px;
     z-index: 9;
     transition: all 0.15s linear;
+    cursor: pointer;
   }
 
   &__position-input:checked ~ &__position-check::before {
