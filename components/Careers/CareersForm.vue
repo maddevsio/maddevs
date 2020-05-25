@@ -176,8 +176,8 @@ export default {
 
   &__background-logo {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: -260px;
+    right: 60px;
     height: auto;
   }
 
@@ -325,7 +325,7 @@ export default {
   .careers {
     &__background-logo {
       height: 250px;
-      bottom: 10px;
+      top: -204px;
     }
   }
 }
@@ -343,8 +343,7 @@ export default {
   .careers {
     &__background-logo {
       height: 220px;
-      bottom: 20px;
-      right: -70px;
+      top: -179px;
     }
 
     &__wrapper {
@@ -382,11 +381,19 @@ export default {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .careers {
+    &__background-logo {
+      right: 54px;
+    }
+  }
+}
+
 @media only screen and (max-width: 670px) {
   .careers {
     &__background-logo {
       height: 180px;
-      bottom: 28px;
+      top: -146px;
     }
 
     &__wrapper {
@@ -395,6 +402,14 @@ export default {
 
     .email-title {
       margin: 65px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .careers {
+    &__background-logo {
+      right: 16px;
     }
   }
 }
@@ -445,7 +460,7 @@ export default {
   .careers {
     &__background-logo {
       height: 108px;
-      bottom: 42px;
+      top: -87px;
     }
 
     &__position-label {
