@@ -25,11 +25,10 @@
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
-        <formCheckboxes
+        <FormCheckboxes
           v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
           v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
-          :firstCheckboxId="firstCheckboxId"
-          :secondCheckboxId="secondCheckboxId"
+          :inputId="inputId"
         />
         <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Сontact Me</button>
       </form>
@@ -38,12 +37,12 @@
 </template>
 
 <script>
-import formCheckboxes from '@/components/ui/form-checkboxes';
+import FormCheckboxes from '@/components/ui/form-checkboxes';
 
 export default {
   name: 'ContactMe',
   components: {
-    formCheckboxes
+    FormCheckboxes
   },
   data: () => ({
     fullName: '',
@@ -52,8 +51,7 @@ export default {
     company: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    firstCheckboxId: 'privacy-policy-contact-me',
-    secondCheckboxId: 'marketing-communications-contact-me'
+    inputId: 'contact-me'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {

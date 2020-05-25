@@ -29,8 +29,7 @@ describe('Backend modal', () => {
       defaultData.agreeWithPrivacyPolicy &&
       defaultData.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
-    expect(defaultData.firstCheckboxId).toEqual('privacy-policy-backend');
-    expect(defaultData.secondCheckboxId).toEqual('marketing-communications-backend');
+    expect(defaultData.inputId).toEqual('backend');
   });
 
   test('has a functions', () => {

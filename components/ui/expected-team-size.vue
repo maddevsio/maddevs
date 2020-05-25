@@ -1,0 +1,137 @@
+<template>
+  <div class="expected-team_size">
+    <div class="expected-team_size__field-name field-name required">Expected team size​</div>
+    <div class="expected-team_size__radio-list">
+      <label class="expected-team_size__radio-label"  v-for="(item, i) in teamSizeItems" :key="i" :for="`${item.id}-${inputId}`">
+        <input 
+          class="expected-team_size__radio-input"
+          :id="`${item.id}-${inputId}`"
+          type="radio"
+          name="expected team size"
+          @click="sendSelectedTeamSize(item.text)"
+        >
+        <span class="expected-team_size__checkmark-radio"></span>
+        <p class="expected-team_size__radio-text_item">{{ item.text }}</p>
+      </label>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'ExpectedTeamSize',
+  props: {
+    inputId: {
+      type: String,
+      default: 'input-id'
+    }
+  },
+  data() {
+    return {
+      teamSizeItems: [
+        {
+          id: 'less-five',
+          text: 'Less than 5'
+        },
+        {
+          id: 'from-five-to-ten',
+          text: 'From 5 to 10'
+        },
+        {
+          id: 'more-than-ten',
+          text: 'More than 10'
+        }
+      ]
+    };
+  },
+  methods: {
+    sendSelectedTeamSize(teamSize) {
+      this.$emit('getTeamSize', teamSize);
+    }
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+  @import '../../assets/styles/vars';
+
+  .expected-team_size {
+    padding-bottom: 16px;
+
+    &__field-name {
+      padding-bottom: 16px;
+    }
+
+    &__radio-list,
+    &__radio-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__radio-label {
+      padding-left: 25px;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        span {
+          background-color: $bgcolor--grey;
+        }
+      }
+
+      input {
+        &:checked ~ {
+          span {
+            background-color: $bgcolor--red;
+          }
+
+          p {
+            color: $text-color--red;
+          }
+        }
+      }
+    }
+
+    &__radio-text_item {
+      color: $text-color--grey;
+      font-family: 'Hoves-Regular';
+      font-size: 18px;
+      letter-spacing: -0.03em;
+    }
+
+    &__radio-input {
+      display: none;
+    }
+
+    &__checkmark-radio {
+      width: 18px;
+      height: 18px;
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 0;
+      border-radius: 100%;
+      background-color: $input-checkmark-bg;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .expected-team_size {
+      padding-bottom: 0;
+
+      &__radio-list {
+        flex-direction: column;
+        align-items: flex-start;
+
+        label {
+          padding-bottom: 20px;
+        }
+      }
+
+      &__field-name {
+        padding-top: 20px;
+      }
+    }
+  }
+</style>
