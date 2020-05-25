@@ -10,6 +10,6 @@ exports[`Teams Modal renders correctly 1`] = `
     src="../../assets/img/common/close-icon.svg"
   />
    
-  <validationobserver />
+  <validationobserver-stub />
 </modal-stub>
 `;

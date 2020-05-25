@@ -8,7 +8,7 @@ describe('Teams Modal', () => {
 
   beforeEach(() => {
     wrapper = mount(TeamsModal, {
-      stubs: ['modal']
+      stubs: ['modal', 'ValidationObserver']
     });
   });
 
