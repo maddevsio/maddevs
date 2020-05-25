@@ -30,7 +30,7 @@ describe('Teams Modal', () => {
       defaultData.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
     expect(defaultData.inputId).toEqual('teams');
-    expect(defaultData.selectedTeamSize).toEqual('');
+    expect(defaultData.selectedTeamSize).toEqual(null);
   });
 
   test('has a functions', () => {

@@ -62,7 +62,7 @@ export default {
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
     inputId: 'teams',
-    selectedTeamSize: ''
+    selectedTeamSize: null
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
