@@ -50,7 +50,7 @@ export default {
   @import '../../assets/styles/_vars';
 
   .expected-team_size {
-    padding-bottom: 28px;
+    padding-bottom: 16px;
 
     &__field-name {
       padding-bottom: 16px;
