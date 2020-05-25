@@ -87,11 +87,6 @@ export default {
       }
     }
 
-    &__radio-text_item, 
-    &__checkmark-radio {
-      transition: 0.1s;
-    }
-
     &__radio-text_item {
       color: $text-color--grey;
       font-family: 'Hoves-Regular';
