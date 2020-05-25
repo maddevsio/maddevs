@@ -103,8 +103,28 @@
               />
               OR
             </li>
-            <li class="careers__form-list-item">
-              – <a href="#" class="careers__cv">find attached my CV.</a>
+            <li class="careers__form-list-item file-attach">
+              <input
+                class="careers__file-input"
+                type="file"
+                @change="onFileChanged"
+                name="myFile"
+                id="myFile"
+              />
+              <span class="none-decorated-dash" v-if="selectedFile">–</span>
+              <label
+                class="careers__cv"
+                :class="{ 'careers__cv--selected': selectedFile }"
+                for="myFile"
+              >
+                <img
+                  class="careers__cv-icon"
+                  src="@/assets/img/Careers/svg/attach_file.svg"
+                  alt="attach file icon"
+                  v-if="!selectedFile"
+                />
+                {{ selectedFile ? selectedFileName : 'Attach your CV' }}</label
+              >
             </li>
           </ul>
         </form>
@@ -117,7 +137,25 @@
 export default {
   name: 'CareersForm',
   data() {
-    return {};
+    return { selectedFile: null };
+  },
+  methods: {
+    onFileChanged(event) {
+      this.selectedFile = event.target.files[0] && event.target.files[0].name;
+    }
+  },
+  computed: {
+    selectedFileName() {
+      let ending = '...';
+      let fileName = this.selectedFile;
+      if (fileName) {
+        if (fileName.length > 25) {
+          return fileName.substring(0, 25) + ending;
+        }
+        return fileName;
+      }
+      return '';
+    }
   }
 };
 </script>
@@ -143,7 +181,16 @@ export default {
     height: auto;
   }
 
-  &__form-name-label {
+  .none-decorated-dash {
+    margin-right: 5px;
+  }
+
+  .file-attach {
+    display: flex;
+  }
+
+  &__file-input {
+    display: none;
   }
 
   .email-title {
@@ -249,7 +296,24 @@ export default {
 
   &__linkedin-link,
   &__cv {
-    color: $text-color--grey;
+    color: $text-color--black;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    display: flex;
+    align-items: center;
+
+    &--selected {
+      color: $text-color--grey;
+      font-size: inherit;
+    }
+
+    &-icon {
+      margin-right: 25px;
+    }
   }
 
   &__linkedin-link {
