@@ -408,8 +408,16 @@ export default {
 
 @media only screen and (max-width: 576px) {
   .careers {
+    .container {
+      padding: 0;
+    }
+
+    &__wrapper {
+      border-radius: 0;
+    }
+
     &__background-logo {
-      right: 16px;
+      right: 30px;
     }
   }
 }
