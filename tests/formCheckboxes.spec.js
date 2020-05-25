@@ -1,16 +1,15 @@
 import {
   mount
 } from '@vue/test-utils';
-import formCheckboxes from '@/components/ui/form-checkboxes';
+import FormCheckboxes from '@/components/ui/form-checkboxes';
 
 describe('Form checkboxes', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(formCheckboxes, {
+    wrapper = mount(FormCheckboxes, {
       propsData: {
-        firstCheckboxId: 'First checkbox id',
-        secondCheckboxId: 'Second checkbox id'
+        inputId: 'input id'
       }
     });
   });
@@ -27,8 +26,8 @@ describe('Form checkboxes', () => {
 
   it('has a functions', () => {
     expect(
-      typeof formCheckboxes.methods.privacyCheckboxChangeState && 
-      typeof formCheckboxes.methods.discountOffersCheckboxChangeState
+      typeof FormCheckboxes.methods.privacyCheckboxChangeState && 
+      typeof FormCheckboxes.methods.discountOffersCheckboxChangeState
     ).toBe('function');
   });
 
@@ -54,7 +53,6 @@ describe('Form checkboxes', () => {
   });
 
   test('correctly props data', () => {
-    expect(wrapper.props().firstCheckboxId).toBe('First checkbox id');
-    expect(wrapper.props().secondCheckboxId).toBe('Second checkbox id');
+    expect(wrapper.props().inputId).toBe('input id');
   });
 });

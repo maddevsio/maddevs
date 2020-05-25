@@ -14,7 +14,7 @@
 				<input type="text" class="entry-field" placeholder="Describe your project...">
 			</div>
 		</div>
-		<formCheckboxes
+		<FormCheckboxes
 			v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
 			v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
 		/>
@@ -23,12 +23,12 @@
 </template>
 
 <script>
-import formCheckboxes from '@/components/ui/form-checkboxes';
+import FormCheckboxes from '@/components/ui/form-checkboxes';
 
 export default {
   name: 'footer-form',
   components: {
-    formCheckboxes
+    FormCheckboxes
   },
   data: () => ({
     agreeWithPrivacyPolicy: false,

@@ -1,6 +1,6 @@
 <template>
-  <modal name="frontend" :clickToClose="false">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('frontend')">
+  <modal name="teams" :clickToClose="false">
+    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('teams')">
     <ValidationObserver v-slot="{ invalid }">
       <form class="form"> 
         <div class="fields-list">
@@ -19,9 +19,13 @@
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
+          <ExpectedTeamSize 
+            v-on:getTeamSize="getTeamSize($event)"
+            :inputId="inputId"
+          />
           <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name">Frontend expertise you are interested in</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need assistance with JS development and UI/UX design" v-model="interesteFrontendExpertise"/>
+            <p class="modal-field-name field-name">Project description</p>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescription"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
@@ -30,7 +34,11 @@
           v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
           :inputId="inputId"
         />
-        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Get UX help</button>
+        <button 
+          class="modal-button-default button-default red-text-and-border" 
+          :disabled="invalid || !agreeWithPrivacyPolicy || selectedTeamSize">
+          Get a team of ultra fast coders
+        </button>
       </form>
     </ValidationObserver>
   </modal>
@@ -38,20 +46,23 @@
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
+import ExpectedTeamSize from '@/components/ui/expected-team-size';
 
 export default {
   name: 'frontend-modal',
   components: {
-    FormCheckboxes
+    FormCheckboxes,
+    ExpectedTeamSize
   },
   data: () => ({
     fullName: '',
     email: '',
     phoneNumber: '',
-    interesteFrontendExpertise: '',
+    projectDescription: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'frontend'
+    inputId: 'teams',
+    selectedTeamSize: false
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -59,6 +70,9 @@ export default {
     },
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+    },
+    getTeamSize(teamSize) {
+      this.selectedTeamSize = teamSize;
     }
   }
 };

@@ -29,8 +29,7 @@ describe('Frontend modal', () => {
       defaultData.agreeWithPrivacyPolicy &&
       defaultData.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
-    expect(defaultData.firstCheckboxId).toEqual('privacy-policy-mobile');
-    expect(defaultData.secondCheckboxId).toEqual('marketing-communications-mobile');
+    expect(defaultData.inputId).toEqual('mobile');
   });
 
   test('has a functions', () => {
