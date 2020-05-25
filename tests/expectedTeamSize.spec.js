@@ -41,4 +41,13 @@ describe('Expected team size', () => {
     let contentItems = wrapper.findAll('.expected-team_size__radio-label');
     expect(contentItems).toHaveLength(3);
   });
+
+  test('emits called with arguments', () => {
+    const selectedValue = 'Less than 5'
+
+    wrapper.vm.sendSelectedTeamSize(selectedValue);
+
+    expect(wrapper.emitted()).toBeTruthy();
+    expect(wrapper.emitted().getTeamSize).toEqual([[selectedValue]]);
+  });
 });
