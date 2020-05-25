@@ -162,7 +162,7 @@ export default {
   }
 
   &__form-linkedin-input {
-    width: 270px;
+    width: 6.69em;
   }
 
   &__position-list {
@@ -227,7 +227,7 @@ export default {
   &__position-label {
     position: relative;
     color: $text-color--grey;
-    padding: 0 0 0 35px;
+    padding: 0 0 0 29px;
     z-index: 9;
     transition: all 0.15s linear;
     cursor: pointer;
@@ -269,6 +269,35 @@ export default {
       bottom: 20px;
       right: -70px;
     }
+
+    &__wrapper {
+      padding: 53px 92px 92px 82px;
+    }
+
+    .email-title {
+      margin: 70px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .careers {
+    &__form-name-input,
+    &__form-email-input,
+    &__form-position-input,
+    &__form-linkedin-input {
+      height: 35px;
+    }
+
+    &__position-check {
+      height: 24px;
+      width: 24px;
+    }
+
+    &__position-check::before {
+      height: 24px;
+      width: 24px;
+    }
   }
 }
 
@@ -278,6 +307,52 @@ export default {
       height: 180px;
       bottom: 28px;
     }
+
+    &__wrapper {
+      padding: 53px 72px 92px 62px;
+    }
+
+    .email-title {
+      margin: 65px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .careers {
+    &__wrapper {
+      padding: 45px 11px 44px 17px;
+    }
+
+    .email-title {
+      margin: 20px 0 40px 0;
+    }
+
+    &__form-name-input,
+    &__form-email-input,
+    &__form-position-input,
+    &__form-linkedin-input {
+      height: 34px;
+      width: 260px;
+    }
+
+    &__form-linkedin-input {
+      width: 6.69em;
+    }
+
+    &__position-check {
+      height: 20px;
+      width: 20px;
+    }
+
+    &__position-check::before {
+      height: 20px;
+      width: 20px;
+    }
+
+    &__position-label {
+      padding: 0 0 0 26px;
+    }
   }
 }
 
@@ -286,6 +361,10 @@ export default {
     &__background-logo {
       height: 108px;
       bottom: 42px;
+    }
+
+    &__position-label {
+      padding: 0 0 0 25px;
     }
   }
 }
