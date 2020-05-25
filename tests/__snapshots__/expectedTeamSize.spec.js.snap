@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Expected team size renders correctly 1`] = `
+<div
+  class="expected-team_size"
+>
+  <div
+    class="expected-team_size__field-name field-name required"
+  >
+    Expected team size​
+  </div>
+   
+  <div
+    class="expected-team_size__radio-list"
+  >
+    <label
+      class="expected-team_size__radio-label"
+      for="less-five-input-id"
+    >
+      <input
+        class="expected-team_size__radio-input"
+        id="less-five-input-id"
+        name="expected team size"
+        type="radio"
+      />
+       
+      <span
+        class="expected-team_size__checkmark-radio"
+      />
+       
+      <p
+        class="expected-team_size__radio-text_item"
+      >
+        Less than 5
+      </p>
+    </label>
+    <label
+      class="expected-team_size__radio-label"
+      for="from-five-to-ten-input-id"
+    >
+      <input
+        class="expected-team_size__radio-input"
+        id="from-five-to-ten-input-id"
+        name="expected team size"
+        type="radio"
+      />
+       
+      <span
+        class="expected-team_size__checkmark-radio"
+      />
+       
+      <p
+        class="expected-team_size__radio-text_item"
+      >
+        From 5 to 10
+      </p>
+    </label>
+    <label
+      class="expected-team_size__radio-label"
+      for="more-than-ten-input-id"
+    >
+      <input
+        class="expected-team_size__radio-input"
+        id="more-than-ten-input-id"
+        name="expected team size"
+        type="radio"
+      />
+       
+      <span
+        class="expected-team_size__checkmark-radio"
+      />
+       
+      <p
+        class="expected-team_size__radio-text_item"
+      >
+        More than 10
+      </p>
+    </label>
+  </div>
+</div>
+`;

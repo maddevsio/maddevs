@@ -54,7 +54,6 @@ describe('Form checkboxes', () => {
   });
 
   test('correctly props data', () => {
-    expect(wrapper.props().firstCheckboxId).toBe('First checkbox id');
-    expect(wrapper.props().secondCheckboxId).toBe('Second checkbox id');
+    expect(wrapper.props().inputId).toBe('input-id');
   });
 });

@@ -29,8 +29,7 @@ describe('Contact me modal', () => {
       defaultData.agreeWithPrivacyPolicy &&
       defaultData.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
-    expect(defaultData.firstCheckboxId).toEqual('privacy-policy-contact-me');
-    expect(defaultData.secondCheckboxId).toEqual('marketing-communications-contact-me');
+    expect(defaultData.inputId).toEqual('contact-me');
   });
 
   test('has a functions', () => {
