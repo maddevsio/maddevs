@@ -7,39 +7,40 @@
 			</div>
 			<div class="field-item">
 				<p class="field-name required">Work email</p>
-				<input type="email" required class="entry-field" placeholder="your@company.co|">
+				<input type="email" required class="entry-field" placeholder="your@company.com">
 			</div>
 			<div class="field-item">
 				<p class="field-name">Project Info</p>
 				<input type="text" class="entry-field" placeholder="Describe your project...">
 			</div>
 		</div>
-		<div class="form-checkboxes">
-			<label class="form-checkbox-label required" for="privacy-policy">I confirm that I have read and accepted Mad Devs’ <br> Privacy Policy
-				<input class="form-checkbox-input" id="privacy-policy" type="checkbox" name="Privacy policy">
-				<span class="checkmark"></span>
-			</label>
-			<label class="form-checkbox-label" for="marketing-communications">I agree to get Mad Devs’ discount offers and other <br> marketing communications
-				<input class="form-checkbox-input" id="marketing-communications" type="checkbox" name="Marketing communications">
-				<span class="checkmark"></span>
-			</label>
-		</div>
-		<buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
+		<FormCheckboxes
+			v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
+			v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
+		/>
+		<button class="button-default red-text-and-border" :class="{'disabled': !agreeWithPrivacyPolicy}">Order a project now</button>
 	</form>
 </template>
 
 <script>
-import buttonTrigger from '@/components/ui/button-trigger';
+import FormCheckboxes from '@/components/ui/form-checkboxes';
 
 export default {
   name: 'footer-form',
   components: {
-    buttonTrigger
+    FormCheckboxes
   },
-  data() {
-    return {
-      buttonInnerText: 'Order a project now'
-    };
+  data: () => ({
+    agreeWithPrivacyPolicy: false,
+    agreeToGetMadDevsDiscountOffers: false
+  }),
+  methods: {
+    getPrivacyCheckboxState(privacyState) {
+      this.agreeWithPrivacyPolicy = privacyState;
+    },
+    getDiscountOffersCheckboxState(discountOffersState) {
+      this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+    }
   }
 };
 </script>
@@ -61,9 +62,10 @@ export default {
 		.footer-form {
 			width: 320px;
 
-			.field-name,
-			.form-checkbox-label {
-				font-size: 13px;
+			/deep/.form-checkbox-label {
+				br {
+					display: none;
+				}
 			}
 		}
 	}
@@ -85,11 +87,6 @@ export default {
 	@media only screen and (max-width: 1024px) {
 		.footer-form {
 			width: 100%;
-
-			.field-name,
-			.form-checkbox-label {
-				font-size: 16px;
-			}
 		}
 	}
 </style>

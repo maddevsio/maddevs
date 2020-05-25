@@ -3,13 +3,14 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Mad Devs',
+    title: 'Mad Devs - IT Outsourcing Company in UK',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'sitemap', type: 'application/xml', href: 'https://maddevs.io/sitemap.xml' }
     ],
     script: [
       {
@@ -29,6 +30,11 @@ module.exports = {
     '~/plugins/i18n.js',
     '~/plugins/vue-scrollto.js',
     '~/plugins/google-analytics.js',
+    '~/plugins/vee-validate.js',
+    {
+      src: '~/plugins/vue-js-modal.js',
+      ssr: false
+    },
     {
       src: '~plugins/slick.js',
       ssr: false
@@ -50,6 +56,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+    transpile: ['vee-validate/dist/rules'],
     vendor: ['vue-slick'],
     extend (config, { isDev, isClient, isServer }) {
       if (isServer) {

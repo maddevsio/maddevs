@@ -8,7 +8,7 @@ describe('Header', () => {
 
   beforeEach(() => {
     wrapper = mount(Header, {
-      stubs: ['router-link']
+      stubs: ['router-link', 'modal']
     });
   });
 
@@ -21,4 +21,10 @@ describe('Header', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
   // --------------------- //
+
+  it('sets the correct default data', () => {
+    expect(typeof Header.data).toBe('function');
+    const defaultData = Header.data();
+    expect(defaultData.modalWindowName).toBe('contact-me');
+  });
 });

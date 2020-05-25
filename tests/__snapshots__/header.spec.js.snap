@@ -182,7 +182,7 @@ exports[`Header renders correctly 1`] = `
         </div>
          
         <button
-          class="show-popup_button red-text-and-border"
+          class="button-default red-text-and-border"
         >
           
   Contact me
@@ -258,7 +258,7 @@ exports[`Header renders correctly 1`] = `
         </nav>
          
         <button
-          class="show-popup_button"
+          class="button-default red-text-and-border"
         >
           
   Contact me

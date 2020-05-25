@@ -2,6 +2,7 @@ import {
   mount
 } from '@vue/test-utils';
 import CaseStudies from '@/components/About/CaseStudies';
+import Banner from '@/components/Banner';
 
 describe('CaseStudies component', () => {
   let wrapper;
@@ -9,43 +10,57 @@ describe('CaseStudies component', () => {
     {
       projectName: 'nambafood',
       logoImg: 'nambafoodColored',
-      contributionVidgetImg: 'maddevsLogoWithoutText',
+      contributionWidgetColors: ['#ec1c24', '#96969c'],
       projectBackground: 'nambafoodBackground',
       projectColor: '#f8f7f6',
-      projectTitle: 'Contactless delivery service',
+      projectTitle: 'Contactless Delivery Service',
       projectDescription: 'Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.'
     },
     {
       projectName: 'teacherly',
       logoImg: 'teacherlyColored',
-      contributionVidgetImg: 'maddevsLogoWithoutText',
+      contributionWidgetColors: ['#ec1c24', '#fff'],
       projectBackground: 'teacherlyBackground',
-      projectColor: '#56448E',
+      projectColor: '#56448e',
       projectTitle: 'EdTech collaboration platform',
       projectDescription: 'Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform.'
     },
     {
       projectName: 'guardrails',
       logoImg: 'guardrailsColored',
-      contributionVidgetImg: 'maddevsLogoWithoutText',
+      contributionWidgetColors: ['#96969c', '#96969c'],
       projectBackground: 'guardrailsBackground',
-      projectColor: '#0E1B27',
+      projectColor: '#0e1b27',
       projectTitle: 'Cloud cybersecurity service',
       projectDescription: 'Mad Devs was involved with Guardrails\' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.'
     },
     {
       projectName: 'godee',
       logoImg: 'godeeColored',
-      contributionVidgetImg: 'maddevsLogoWithoutText',
+      contributionWidgetColors: ['#000', '#000'],
       projectBackground: 'godeeBackground',
-      projectColor: '#FF6A01',
+      projectColor: '#ff6A01',
       projectTitle: 'Mass transportation company',
       projectDescription: 'Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.'
     }
   ];
 
   beforeEach(() => {
-    wrapper = mount(CaseStudies);
+    const $route = {
+      path: '/'
+    };
+
+    global.$nuxt = {
+      $route: {
+        name: '/'
+      }
+    };
+
+    wrapper = mount(CaseStudies, {
+      mocks: {
+        $route
+      }
+    });
   });
 
   test('is Vue\'s instance', () => {
@@ -54,6 +69,41 @@ describe('CaseStudies component', () => {
   
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
+  });
+
+  test('correctly sets the current page\'s default name', () => {
+    expect(wrapper.vm.$data.currentPageName).toBe('/');
+  });
+
+  test('correctly sets the current page\'s name', () => {
+    const $route = {
+      path: '/projects'
+    };
+
+    wrapper = mount(CaseStudies, {
+      mocks: {
+        $route
+      }
+    });
+
+    wrapper.vm.$data.currentPageName = 'projects';
+    expect(wrapper.vm.$route.path).toBe('/projects');
+    expect(wrapper.vm.$data.currentPageName).toBe('projects');
+  });
+
+  test('should have Banner parent component ', () => {
+    const $route = {
+      path: '/projects'
+    };
+
+    wrapper = mount(CaseStudies, {
+      mocks: {
+        $route
+      },
+      parentComponent: Banner
+    });
+
+    expect(wrapper.vm.$parent.$options.name).toBe('Banner');
   });
 
   test('should check existence of data', () => {

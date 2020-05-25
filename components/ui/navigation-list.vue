@@ -6,6 +6,11 @@
       <a href="#infrastructure-optimisation" class="navigation-item">Infrastructure Optimization</a>
       <a href="#it-consulting" class="navigation-item">IT Consulting</a>
     </nav>
+    <nav class="navigation-list" v-else-if="currentPageName === 'projects'">
+      <a href="#case-studies" class="navigation-item">Case studies</a>
+      <a href="#customers" class="navigation-item">Our customers</a>
+      <a href="#open-source" class="navigation-item">Open-source pet projects</a>
+    </nav>
     <nav class="navigation-list" v-else>
       <router-link to="services/#it-outsourcing" class="navigation-item">IT Outsourcing</router-link>
       <router-link to="services/#software-development" class="navigation-item">Software Development</router-link>

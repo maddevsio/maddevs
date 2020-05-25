@@ -17,7 +17,7 @@
 				<router-link to="/careers">Careers</router-link>
 				<a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
 			</nav>
-			<buttonTrigger :buttonInnerText="buttonInnerText"/>
+			<buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="red-text-and-border" />
 			<div class="mobile-menu__contacts">
 				<footerContacts />
 			</div>
@@ -44,7 +44,8 @@ export default {
   data() {
     return {
       buttonInnerText: 'Contact me',
-      mobileMenuIsOpen: false
+      mobileMenuIsOpen: false,
+      modalWindowName: 'contact-me'
     };
   },
   methods: {

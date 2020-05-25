@@ -8,17 +8,22 @@
               Your Trusted <br> <span class="media-item">IT</span>
               <span class="main-title-white_part">Outsourcing Partner</span>
             </h1>
+            <h1 class="banner-main_title" v-if="currentPageName === 'projects'">
+              Check out our <br>
+              <span class="main-title-white_part">50+ implemented projects!</span>
+            </h1>
             <h1 class="banner-main_title" v-if="currentPageName === 'index'">
               Mad Devs
               <span class="main-title-white_part"><br>Engineering<br>Your Growth</span>
             </h1>
+            <navigationList v-if="currentPageName === 'projects'" />
           </div>
           <div class="icon-item">
             <img src="../assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" v-if="currentPageName === 'index'">
             <img src="../assets/img/Services/svg/make-partner.svg" alt="Make Partner Logotype" v-if="currentPageName === 'services'">
           </div>
         </div>
-        <navigationList />
+        <navigationList v-if="currentPageName !== 'projects'" />
       </div>
     </div>
   </section>
@@ -61,7 +66,6 @@ export default {
 
       .text-content_wrapper {
         display: flex;
-        padding-bottom: 130px;
       }
     }
 
@@ -78,6 +82,20 @@ export default {
         color: $text-color--white;
         text-shadow: none;
       }
+    }
+  }
+
+  .projects {
+    .container {
+      position: relative;
+
+      .main-title-wrapper {
+        max-width: 90%;
+      }
+    }
+
+    .navigation-wrap {
+      margin-top: 170px;
     }
   }
 
@@ -110,10 +128,29 @@ export default {
     }
   }
 
+  @media only screen and (min-width: 1620px) {
+    .projects,
+    .banner {
+      .banner-main_title {
+        font-size: 125px;
+      }
+
+      .text-content_wrapper {
+        display: flex;
+        padding-bottom: 130px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1620px) {
     .banner {
       .banner-main_title {
         font-size: 125px;
+      }
+
+      .text-content_wrapper {
+        display: flex;
+        padding-bottom: 130px;
       }
     }
 
@@ -122,6 +159,14 @@ export default {
         img {
           margin-right: 55px;
         }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1670px) and (min-width: 1565px) {
+    .projects {
+      .banner-main_title {
+        width: 80%;
       }
     }
   }
@@ -245,6 +290,12 @@ export default {
         }
       }
     }
+
+    .projects {
+      .text-content_wrapper {
+        padding-bottom: 40px;
+      }
+    }
   }
 
   @media only screen and (max-width: 670px) {
@@ -253,6 +304,12 @@ export default {
        img {
          left: 59%;
         }
+      }
+    }
+
+    .projects {
+      .banner-main_title {
+        font-size: 85px;
       }
     }
   }
@@ -275,7 +332,7 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 440px) {
+  @media only screen and (max-width: 455px) {
     .banner {
       .banner-main_title {
         font-size: 56px;

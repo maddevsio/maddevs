@@ -41,7 +41,7 @@
             </div>
             <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
           </div>
-          <buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
+          <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="red-text-and-border" />
         </div>
       </div>
       <mobileMenu v-on:getMobileMenuState="getMobileMenuState($event)"/>
@@ -84,6 +84,7 @@ export default {
         phoneNumber: '+44 20 3984 8555',
         country: 'united-kingdom'
       },
+      modalWindowName: 'contact-me',
       mobileMenuIsOpen: false
     };
   },
