@@ -75,9 +75,9 @@
                 >Intern</label
               >
               <div class="careers__position-check"></div>
-            </li>
-            <li class="careers__position-item">
-              <span class="careers__form-description form-text">
+              <span
+                class="careers__form-description last-additional-description form-text"
+              >
                 roles.
               </span>
             </li>
@@ -243,6 +243,10 @@ export default {
     font-weight: 500;
   }
 
+  .last-additional-description {
+    margin-left: 11px;
+  }
+
   &__linkedin-link,
   &__cv {
     color: $text-color--grey;
@@ -258,6 +262,15 @@ export default {
     &__background-logo {
       height: 250px;
       bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 936px) {
+  .careers {
+    &__position-item {
+      width: 100%;
+      margin-bottom: 15px;
     }
   }
 }
@@ -297,6 +310,10 @@ export default {
     &__position-check::before {
       height: 24px;
       width: 24px;
+    }
+
+    &__position-item {
+      margin-bottom: 10px;
     }
   }
 }
@@ -352,6 +369,10 @@ export default {
 
     &__position-label {
       padding: 0 0 0 26px;
+    }
+
+    &__position-item {
+      margin-bottom: 5px;
     }
   }
 }
