@@ -50,7 +50,7 @@ export default {
   @import '../../assets/styles/_vars';
 
   .expected-team_size {
-    padding-bottom: 35px;
+    padding-bottom: 28px;
 
     &__field-name {
       padding-bottom: 16px;
@@ -107,6 +107,26 @@ export default {
       left: 0;
       border-radius: 100%;
       background-color: $input-checkmark-bg;
+    }
+  }
+
+
+  @media only screen and (max-width: 420px) {
+    .expected-team_size {
+      padding-bottom: 0;
+
+      &__radio-list {
+        flex-direction: column;
+        align-items: flex-start;
+
+        label {
+          padding-bottom: 20px;
+        }
+      }
+
+      &__field-name {
+        padding-top: 20px;
+      } 
     }
   }
 </style>
