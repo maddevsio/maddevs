@@ -36,7 +36,7 @@
         />
         <button 
           class="modal-button-default button-default red-text-and-border" 
-          :disabled="invalid || !agreeWithPrivacyPolicy || selectedTeamSize">
+          :disabled="invalid || !agreeWithPrivacyPolicy || !selectedTeamSize">
           Get a team of ultra fast coders
         </button>
       </form>
@@ -62,7 +62,7 @@ export default {
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
     inputId: 'teams',
-    selectedTeamSize: false
+    selectedTeamSize: ''
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
