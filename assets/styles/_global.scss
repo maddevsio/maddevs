@@ -347,7 +347,7 @@
   // change initial vue-js-modal styles
   width: 570px !important;
   height: max-content !important;
-  max-height: 100vh;
+  max-height: 95vh;
   top: 50% !important;
   left: 50% !important;
   background-color: $bgcolor--black !important;
@@ -540,7 +540,7 @@ button {
 
 @media only screen and (max-width: 1024px) {
   .textarea {
-    height: 60px;
+    height: 44px;
   }
 
   .title {
@@ -587,6 +587,7 @@ button {
   .vm--modal {
     width: 100% !important;
     height: 100% !important;
+    max-height: 100vh;
     padding-left: 16px;
     padding-right: 16px;
     overflow-x: hidden;
