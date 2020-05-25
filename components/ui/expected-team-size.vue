@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/_vars';
+  @import '../../assets/styles/vars';
 
   .expected-team_size {
     padding-bottom: 16px;
@@ -116,7 +116,6 @@ export default {
     }
   }
 
-
   @media only screen and (max-width: 420px) {
     .expected-team_size {
       padding-bottom: 0;
@@ -132,7 +131,7 @@ export default {
 
       &__field-name {
         padding-top: 20px;
-      } 
+      }
     }
   }
 </style>

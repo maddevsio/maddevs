@@ -43,7 +43,7 @@ describe('Expected team size', () => {
   });
 
   test('emits called with arguments', () => {
-    const selectedValue = 'Less than 5'
+    const selectedValue = 'Less than 5';
 
     wrapper.vm.sendSelectedTeamSize(selectedValue);
 

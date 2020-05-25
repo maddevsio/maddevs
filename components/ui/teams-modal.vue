@@ -34,7 +34,11 @@
           v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
           :inputId="inputId"
         />
-        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Get a team of ultra fast coders</button>
+        <button 
+          class="modal-button-default button-default red-text-and-border" 
+          :disabled="invalid || !agreeWithPrivacyPolicy || selectedTeamSize">
+          Get a team of ultra fast coders
+        </button>
       </form>
     </ValidationObserver>
   </modal>
@@ -58,7 +62,7 @@ export default {
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
     inputId: 'teams',
-    selectedTeamSize: ''
+    selectedTeamSize: false
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
