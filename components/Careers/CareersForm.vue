@@ -96,7 +96,12 @@
           <ul class="careers__form-list form-text">
             <li class="careers__form-list-item">
               – check out my
-              <a href="#" class="careers__linkedin-link">LinkedIn profile</a> OR
+              <input
+                class="careers__form-linkedin-input form-text"
+                type="text"
+                placeholder="LinkedIn profile"
+              />
+              OR
             </li>
             <li class="careers__form-list-item">
               – <a href="#" class="careers__cv">find attached my CV.</a>
@@ -147,12 +152,17 @@ export default {
 
   &__form-name-input,
   &__form-email-input,
-  &__form-position-input {
+  &__form-position-input,
+  &__form-linkedin-input {
     background-color: transparent;
     border: 0px solid;
     height: 65px;
     width: 310px;
     color: $text-color--grey;
+  }
+
+  &__form-linkedin-input {
+    width: 270px;
   }
 
   &__position-list {
