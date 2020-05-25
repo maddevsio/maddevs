@@ -114,7 +114,10 @@
               <span class="none-decorated-dash" v-if="selectedFile">–</span>
               <label
                 class="careers__cv"
-                :class="{ 'careers__cv--selected': selectedFile }"
+                :class="{
+                  'careers__cv--selected': selectedFile,
+                  'careers__cv--attachable': !selectedFile
+                }"
                 for="myFile"
               >
                 <img
@@ -378,6 +381,13 @@ export default {
     &__position-item {
       margin-bottom: 10px;
     }
+
+    &__cv {
+      &-icon {
+        height: 38px;
+        margin-right: 20px;
+      }
+    }
   }
 }
 
@@ -410,6 +420,17 @@ export default {
   .careers {
     .container {
       padding: 0;
+    }
+
+    &__cv {
+      &--attachable {
+        font-size: 17px;
+      }
+
+      &-icon {
+        height: 28px;
+        margin-right: 10px;
+      }
     }
 
     &__wrapper {
