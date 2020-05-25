@@ -20,6 +20,7 @@
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
           <ExpectedTeamSize 
+            v-on:getTeamSize="getTeamSize($event)"
             :inputId="inputId"
           />
           <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
@@ -56,7 +57,8 @@ export default {
     projectDescription: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'teams'
+    inputId: 'teams',
+    selectedTeamSize: ''
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -64,6 +66,9 @@ export default {
     },
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+    },
+    getTeamSize(teamSize) {
+      this.selectedTeamSize = teamSize;
     }
   }
 };

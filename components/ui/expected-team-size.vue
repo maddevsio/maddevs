@@ -8,6 +8,7 @@
           :id="`${item.id}-${inputId}`"
           type="radio"
           name="expected team size"
+          @click="sendSelectedTeamSize(item.text)"
         >
         <span class="expected-team_size__checkmark-radio"></span>
         <p class="expected-team_size__radio-text_item">{{ item.text }}</p>
@@ -42,6 +43,11 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    sendSelectedTeamSize(teamSize) {
+      this.$emit('getTeamSize', teamSize);
+    }
   }
 };
 </script>

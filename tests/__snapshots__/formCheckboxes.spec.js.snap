@@ -3,12 +3,10 @@
 exports[`Form checkboxes renders correctly 1`] = `
 <div
   class="form-checkboxes"
-  firstcheckboxid="First checkbox id"
-  secondcheckboxid="Second checkbox id"
 >
   <label
     class="form-checkbox-label required"
-    for="privacy-policy-input-id"
+    for="privacy-policy-input id"
   >
     I confirm that I have read and accepted Mad Devs’ 
     <br />
@@ -16,7 +14,7 @@ exports[`Form checkboxes renders correctly 1`] = `
     
     <input
       class="form-checkbox-input"
-      id="privacy-policy-input-id"
+      id="privacy-policy-input id"
       name="Privacy policy"
       type="checkbox"
     />
@@ -28,7 +26,7 @@ exports[`Form checkboxes renders correctly 1`] = `
    
   <label
     class="form-checkbox-label"
-    for="marketing-communications-input-id"
+    for="marketing-communications-input id"
   >
     I agree to get Mad Devs’ discount offers and other 
     <br />
@@ -36,7 +34,7 @@ exports[`Form checkboxes renders correctly 1`] = `
     
     <input
       class="form-checkbox-input"
-      id="marketing-communications-input-id"
+      id="marketing-communications-input id"
       name="Marketing communications"
       type="checkbox"
     />

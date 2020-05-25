@@ -9,8 +9,7 @@ describe('Form checkboxes', () => {
   beforeEach(() => {
     wrapper = mount(FormCheckboxes, {
       propsData: {
-        firstCheckboxId: 'First checkbox id',
-        secondCheckboxId: 'Second checkbox id'
+        inputId: 'input id'
       }
     });
   });
@@ -54,6 +53,6 @@ describe('Form checkboxes', () => {
   });
 
   test('correctly props data', () => {
-    expect(wrapper.props().inputId).toBe('input-id');
+    expect(wrapper.props().inputId).toBe('input id');
   });
 });

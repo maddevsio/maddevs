@@ -15,11 +15,11 @@ exports[`Expected team size renders correctly 1`] = `
   >
     <label
       class="expected-team_size__radio-label"
-      for="less-five-input-id"
+      for="less-five-input id"
     >
       <input
         class="expected-team_size__radio-input"
-        id="less-five-input-id"
+        id="less-five-input id"
         name="expected team size"
         type="radio"
       />
@@ -36,11 +36,11 @@ exports[`Expected team size renders correctly 1`] = `
     </label>
     <label
       class="expected-team_size__radio-label"
-      for="from-five-to-ten-input-id"
+      for="from-five-to-ten-input id"
     >
       <input
         class="expected-team_size__radio-input"
-        id="from-five-to-ten-input-id"
+        id="from-five-to-ten-input id"
         name="expected team size"
         type="radio"
       />
@@ -57,11 +57,11 @@ exports[`Expected team size renders correctly 1`] = `
     </label>
     <label
       class="expected-team_size__radio-label"
-      for="more-than-ten-input-id"
+      for="more-than-ten-input id"
     >
       <input
         class="expected-team_size__radio-input"
-        id="more-than-ten-input-id"
+        id="more-than-ten-input id"
         name="expected team size"
         type="radio"
       />
