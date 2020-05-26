@@ -16,7 +16,7 @@
             :paragraph="upToSaving.paragraph"
           />
         </div>
-        <buttonTrigger :buttonInnerText="buttonInnerText" />
+        <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName"/>
     </div>
   </section>
 </template>
@@ -43,7 +43,8 @@ export default {
         subTitle: 'Pay-as-you-go receipts from your cloud providers make you curse them?',
         paragraph: 'Our fire brigade can help you optimise resource consumption like we\'ve done for 75% of our customers. We’ll reconfigure and disable every option or service that is not necessary.'
       },
-      buttonInnerText: 'Get an infrastructure audit'
+      buttonInnerText: 'Get an infrastructure audit',
+      modalWindowName: 'infrastructure-audit'
     };
   }
 };

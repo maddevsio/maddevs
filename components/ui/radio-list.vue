@@ -1,17 +1,17 @@
 <template>
-  <div class="expected-team_size">
-    <div class="expected-team_size__field-name field-name required">Expected team size​</div>
-    <div class="expected-team_size__radio-list">
-      <label class="expected-team_size__radio-label"  v-for="(item, i) in teamSizeItems" :key="i" :for="`${item.id}-${inputId}`">
+  <div class="radio-list">
+    <div class="radio-list__field-name field-name" :class="{'required': radioOptionIsRequired}">{{ fieldName }}​</div>
+    <div class="radio-list__radio-list">
+      <label class="radio-list__radio-label"  v-for="(option, i) in options" :key="i" :for="`${option.id}-${inputId}`">
         <input 
-          class="expected-team_size__radio-input"
-          :id="`${item.id}-${inputId}`"
+          class="radio-list__radio-input"
+          :id="`${option.id}-${inputId}`"
           type="radio"
           name="expected team size"
-          @click="sendSelectedTeamSize(item.text)"
+          @click="sendSelectedValue(option.text)"
         >
-        <span class="expected-team_size__checkmark-radio"></span>
-        <p class="expected-team_size__radio-text_item">{{ item.text }}</p>
+        <span class="radio-list__checkmark-radio"></span>
+        <p class="radio-list__radio-text_item">{{ option.text }}</p>
       </label>
     </div>
   </div>
@@ -19,34 +19,32 @@
 
 <script>
 export default {
-  name: 'ExpectedTeamSize',
+  name: 'RadioList',
   props: {
     inputId: {
       type: String,
       default: 'input-id'
+    },
+    options: {
+      type: Array,
+      default: Function
+    },
+    emitMethodName: {
+      type: String,
+      default: 'method name'
+    },
+    fieldName: {
+      type: String,
+      default: 'field name'
+    },
+    radioOptionIsRequired: {
+      type: Boolean,
+      default: false
     }
   },
-  data() {
-    return {
-      teamSizeItems: [
-        {
-          id: 'less-five',
-          text: 'Less than 5'
-        },
-        {
-          id: 'from-five-to-ten',
-          text: 'From 5 to 10'
-        },
-        {
-          id: 'more-than-ten',
-          text: 'More than 10'
-        }
-      ]
-    };
-  },
   methods: {
-    sendSelectedTeamSize(teamSize) {
-      this.$emit('getTeamSize', teamSize);
+    sendSelectedValue(value) {
+      this.$emit(this.emitMethodName, value);
     }
   }
 };
@@ -55,7 +53,7 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
 
-  .expected-team_size {
+  .radio-list {
     padding-bottom: 16px;
 
     &__field-name {
@@ -117,7 +115,7 @@ export default {
   }
 
   @media only screen and (max-width: 420px) {
-    .expected-team_size {
+    .radio-list {
       padding-bottom: 0;
 
       &__radio-list {
