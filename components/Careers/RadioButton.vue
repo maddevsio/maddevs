@@ -4,6 +4,7 @@
       class="radio__position-input"
       :name="radio.name"
       :id="radio.id"
+      v-model="radioButtonValue"
       type="radio"
     />
     <label class="radio__position-label form-text" :for="radio.id">{{
@@ -48,16 +49,13 @@ export default {
     }
   },
   computed: {
-    selectedFileName() {
-      let ending = '...';
-      let fileName = this.selectedFile;
-      if (fileName) {
-        if (fileName.length > 25) {
-          return fileName.substring(0, 25) + ending;
-        }
-        return fileName;
+    radioButtonValue: {
+      get() {
+        return this.radio.id;
+      },
+      set() {
+        this.$emit('change', this.radio.id);
       }
-      return '';
     }
   }
 };

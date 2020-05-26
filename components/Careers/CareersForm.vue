@@ -32,6 +32,7 @@
               v-for="(radio, i) in radioData"
               :key="i"
               :radio="radio"
+              @change="changePositionValue"
             />
           </ul>
           <h4 class="careers__form-description form-text email-title">
@@ -74,6 +75,7 @@ export default {
   data() {
     return {
       selectedFile: null,
+      positionValue: 'senior',
       radioData: [
         { id: 'senior', name: 'position', labelText: 'Senior,' },
         { id: 'middle', name: 'position', labelText: 'Middle,' },
@@ -89,6 +91,10 @@ export default {
   methods: {
     onFileChanged(params) {
       this.selectedFile = params;
+    },
+    changePositionValue(newPositionValue) {
+      console.log('newPositionValue', newPositionValue);
+      this.positionValue = newPositionValue;
     }
   }
 };
