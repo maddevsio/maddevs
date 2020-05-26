@@ -163,6 +163,7 @@ export default {
     letter-spacing: -0.02em;
     text-decoration-line: underline;
     display: flex;
+    text-decoration: none;
     align-items: center;
 
     &--selected {
@@ -173,10 +174,6 @@ export default {
     &-icon {
       margin-right: 25px;
     }
-  }
-
-  &__linkedin-link {
-    text-decoration: none;
   }
 }
 
