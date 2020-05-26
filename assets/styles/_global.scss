@@ -202,6 +202,12 @@
   font-family: 'Hoves-Bold';
 }
 
+.form-text {
+  font-family: 'Hoves-Regular';
+  font-size: 40px;
+  font-weight: 500;
+}
+
 .title {
   font-size: 90px;
   padding-bottom: 15px;
@@ -484,6 +490,10 @@ button {
   .title-icon {
     height: 77px;
   }
+
+  .form-text {
+    font-size: 34px;
+  }
 }
 
 @media only screen and (max-width: 1390px) {
@@ -497,6 +507,10 @@ button {
 
   .section-title {
     font-size: 72px;
+  }
+
+  .form-text {
+    font-size: 32px;
   }
 }
 
@@ -521,6 +535,10 @@ button {
 
   .title-icon {
     height: 67px;
+  }
+
+  .form-text {
+    font-size: 30px;
   }
 }
 
@@ -568,6 +586,10 @@ button {
 @media only screen and (max-width: 870px) {
   .main-title {
     font-size: 95px;
+  }
+
+  .form-text {
+    font-size: 28px;
   }
 }
 
@@ -663,6 +685,10 @@ button {
 
   .sub-title  {
     font-size: 27px;
+  }
+
+  .form-text {
+    font-size: 24px;
   }
 
   .section-title {

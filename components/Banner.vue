@@ -12,6 +12,10 @@
               Check out our <br>
               <span class="main-title-white_part">50+ implemented projects!</span>
             </h1>
+            <h1 class="banner-main_title--white-first" v-if="currentPageName === 'careers'">
+              Look!
+            </h1>
+            <span class="banner-main_title--white" v-if="currentPageName === 'careers'">A new Mad Devs' ranger is here!</span>
             <h1 class="banner-main_title" v-if="currentPageName === 'index'">
               Mad Devs
               <span class="main-title-white_part"><br>Engineering<br>Your Growth</span>
@@ -69,7 +73,9 @@ export default {
       }
     }
 
-    .banner-main_title {
+    .banner-main_title,
+    .banner-main_title--white,
+    .banner-main_title--white-first {
       font-family: 'Hoves-Bold';
       font-style: normal;
       font-weight: bold;
@@ -79,6 +85,12 @@ export default {
       text-shadow: $text-shadow--white;
 
       .main-title-white_part {
+        color: $text-color--white;
+        text-shadow: none;
+      }
+
+      &--white,
+      &--white-first {
         color: $text-color--white;
         text-shadow: none;
       }
@@ -96,6 +108,16 @@ export default {
 
     .navigation-wrap {
       margin-top: 170px;
+    }
+  }
+
+  .careers {
+    .container {
+      position: relative;
+
+      .main-title-wrapper {
+        max-width: 75%;
+      }
     }
   }
 
@@ -131,7 +153,9 @@ export default {
   @media only screen and (min-width: 1620px) {
     .projects,
     .banner {
-      .banner-main_title {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
         font-size: 125px;
       }
 
@@ -144,7 +168,9 @@ export default {
 
   @media only screen and (max-width: 1620px) {
     .banner {
-      .banner-main_title {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
         font-size: 125px;
       }
 
@@ -165,7 +191,9 @@ export default {
 
   @media only screen and (max-width: 1670px) and (min-width: 1565px) {
     .projects {
-      .banner-main_title {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
         width: 80%;
       }
     }
@@ -173,7 +201,9 @@ export default {
 
   @media only screen and (max-width: 1440px) {
     .banner {
-      .banner-main_title {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
         font-size: 125px;
       }
     }
@@ -191,7 +221,9 @@ export default {
 
   @media only screen and (max-width: 1366px) {
     .banner {
-      .banner-main_title  {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first  {
         font-size: 115px;
       }
     }
@@ -231,7 +263,9 @@ export default {
 
   @media only screen and (max-width: 1080px) {
     .banner {
-      .banner-main_title {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
         font-size: 110px;
       }
     }
@@ -243,7 +277,9 @@ export default {
         padding-top: 0;
       }
 
-      .banner-main_title {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
         font-size: 100px;
       }
     }
@@ -296,6 +332,16 @@ export default {
         padding-bottom: 40px;
       }
     }
+
+    .careers {
+      .container {
+        position: relative;
+
+        .main-title-wrapper {
+          max-width: 95%;
+        }
+      }
+    }
   }
 
   @media only screen and (max-width: 670px) {
@@ -307,8 +353,20 @@ export default {
       }
     }
 
+    .careers {
+      .container {
+        position: relative;
+
+        .main-title-wrapper {
+          max-width: 90%;
+        }
+      }
+    }
+
     .projects {
-      .banner-main_title {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
         font-size: 85px;
       }
     }
@@ -316,8 +374,28 @@ export default {
 
   @media only screen and (max-width: 610px) {
     .banner {
-      .banner-main_title {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
         font-size: 73px;
+      }
+
+      .banner-main_title--white-first {
+        display: inline;
+      }
+    }
+
+    .careers {
+      .text-content_wrapper {
+        padding-bottom: 70px;
+      }
+
+      .container {
+        position: relative;
+
+        .main-title-wrapper {
+          max-width: 80%;
+        }
       }
     }
 
@@ -334,7 +412,9 @@ export default {
 
   @media only screen and (max-width: 455px) {
     .banner {
-      .banner-main_title {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
         font-size: 56px;
       }
     }
@@ -351,7 +431,9 @@ export default {
 
   @media only screen and (max-width: 370px) {
     .banner {
-      .banner-main_title {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
         font-size: 46px;
       }
     }
