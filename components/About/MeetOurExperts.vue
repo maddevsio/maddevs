@@ -161,4 +161,39 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1360px) {
+    .meet-our_experts {
+      &__expert-name {
+        font-size: 19px;
+      }
+
+      &__expert-position {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1220px) {
+    .meet-our_experts {
+      &__expert-name {
+        font-size: 17px;
+      }
+
+      &__expert-position {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1120px) {
+    .meet-our_experts {
+      &__expert-name {
+        font-size: 14px;
+      }
+
+      &__expert-position {
+        font-size: 11px;
+      }
+    }
+  }
 </style>
