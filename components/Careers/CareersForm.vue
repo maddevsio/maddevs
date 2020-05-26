@@ -28,59 +28,11 @@
             You can also consider me for your other
           </h4>
           <ul class="careers__position-list">
-            <li class="careers__position-item">
-              <input
-                class="careers__position-input"
-                name="position"
-                id="senior"
-                type="radio"
-              />
-              <label class="careers__position-label form-text" for="senior"
-                >Senior,</label
-              >
-              <div class="careers__position-check"></div>
-            </li>
-            <li class="careers__position-item">
-              <input
-                class="careers__position-input"
-                name="position"
-                id="middle"
-                type="radio"
-              />
-              <label class="careers__position-label form-text" for="middle"
-                >Middle,</label
-              >
-              <div class="careers__position-check"></div>
-            </li>
-            <li class="careers__position-item">
-              <input
-                class="careers__position-input"
-                name="position"
-                id="junior"
-                type="radio"
-              />
-              <label class="careers__position-label form-text" for="junior"
-                >Junior,</label
-              >
-              <div class="careers__position-check"></div>
-            </li>
-            <li class="careers__position-item">
-              <input
-                class="careers__position-input"
-                name="position"
-                id="intern"
-                type="radio"
-              />
-              <label class="careers__position-label form-text" for="intern"
-                >Intern</label
-              >
-              <div class="careers__position-check"></div>
-              <span
-                class="careers__form-description last-additional-description form-text"
-              >
-                roles.
-              </span>
-            </li>
+            <RadioButton
+              v-for="(radio, i) in radioData"
+              :key="i"
+              :radio="radio"
+            />
           </ul>
           <h4 class="careers__form-description form-text email-title">
             Please reply to
@@ -115,14 +67,24 @@
 
 <script>
 import FileInput from '@/components/Careers/FileInput';
+import RadioButton from '@/components/Careers/RadioButton';
 
 export default {
   name: 'CareersForm',
   data() {
-    return { selectedFile: null };
+    return {
+      selectedFile: null,
+      radioData: [
+        { id: 'senior', name: 'position', labelText: 'Senior,' },
+        { id: 'middle', name: 'position', labelText: 'Middle,' },
+        { id: 'junior', name: 'position', labelText: 'Junior,' },
+        { id: 'intern', name: 'position', labelText: 'Intern' }
+      ]
+    };
   },
   components: {
-    FileInput
+    FileInput,
+    RadioButton
   },
   methods: {
     onFileChanged(params) {
@@ -181,77 +143,10 @@ export default {
     padding: 0;
   }
 
-  &__position-item {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-right: 18px;
-  }
-
-  &__position-check {
-    box-sizing: border-box;
-    position: absolute;
-    border: 2px solid $text-color--grey;
-    border-radius: 100%;
-    height: 26px;
-    width: 26px;
-    z-index: 5;
-    transition: border 0.15s linear;
-    -webkit-transition: border 0.15s linear;
-    cursor: pointer;
-  }
-
-  &__position-input:checked ~ &__position-check {
-    border-color: $text-color--red;
-    border: 0;
-  }
-
-  &__position-input:checked ~ &__position-label {
-    color: $text-color--red;
-  }
-
-  &__position-input:hover &__position-check {
-    border: 2px solid $text-color--red;
-  }
-
-  &__position-check::before {
-    display: block;
-    position: absolute;
-    content: '';
-    border-radius: 100%;
-    height: 26px;
-    width: 26px;
-    margin: auto;
-    transition: background 0.15s linear;
-    -webkit-transition: background 0.15s linear;
-  }
-
-  &__position-input {
-    position: absolute;
-    visibility: hidden;
-  }
-
-  &__position-label {
-    position: relative;
-    color: $text-color--grey;
-    padding: 0 0 0 29px;
-    z-index: 9;
-    transition: all 0.15s linear;
-    cursor: pointer;
-  }
-
-  &__position-input:checked ~ &__position-check::before {
-    background: $text-color--red;
-  }
-
   &__form-description {
     font-family: 'Hoves-Regular';
     color: $text-color--black;
     font-weight: 500;
-  }
-
-  .last-additional-description {
-    margin-left: 11px;
   }
 
   &__linkedin-link {
@@ -289,15 +184,6 @@ export default {
   }
 }
 
-@media only screen and (max-width: 936px) {
-  .careers {
-    &__position-item {
-      width: 100%;
-      margin-bottom: 15px;
-    }
-  }
-}
-
 @media only screen and (max-width: 870px) {
   .careers {
     &__background-logo {
@@ -322,20 +208,6 @@ export default {
     &__form-position-input,
     &__form-linkedin-input {
       height: 35px;
-    }
-
-    &__position-check {
-      height: 24px;
-      width: 24px;
-    }
-
-    &__position-check::before {
-      height: 24px;
-      width: 24px;
-    }
-
-    &__position-item {
-      margin-bottom: 10px;
     }
   }
 }
@@ -402,24 +274,6 @@ export default {
     &__form-linkedin-input {
       width: 6.69em;
     }
-
-    &__position-check {
-      height: 20px;
-      width: 20px;
-    }
-
-    &__position-check::before {
-      height: 20px;
-      width: 20px;
-    }
-
-    &__position-label {
-      padding: 0 0 0 26px;
-    }
-
-    &__position-item {
-      margin-bottom: 5px;
-    }
   }
 }
 
@@ -428,10 +282,6 @@ export default {
     &__background-logo {
       height: 108px;
       top: -87px;
-    }
-
-    &__position-label {
-      padding: 0 0 0 25px;
     }
   }
 }
