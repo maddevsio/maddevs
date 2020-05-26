@@ -102,7 +102,7 @@ export default {
       width: 100%;
       height: 100%;
       position: relative;
-      
+
       &:hover {
         z-index: 2;
         box-shadow: 0px 0px 0px 3px $border-color--red;
