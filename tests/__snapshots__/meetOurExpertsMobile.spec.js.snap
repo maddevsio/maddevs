@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Meet Our Experts Mobile Slider renders correctly 1`] = `
+<div
+  class="swiper-container swiper swiper-container-initialized swiper-container-horizontal"
+>
+  <div
+    class="swiper-wrapper"
+    style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+  >
+    <div
+      class="swiper-slide"
+    >
+      <div
+        class="mobile-expert-item"
+      >
+        <img
+          alt="Marat Bediev"
+          class="mobile-expert-img"
+          src="[object Object]"
+        />
+         
+        <div
+          class="mobile-expert-bottom_content"
+        >
+          <div
+            class="mobile-expert-info"
+          >
+            <div
+              class="mobile-expert-name"
+            >
+              Marat Bediev
+            </div>
+             
+            <div
+              class="mobile-expert-position"
+            >
+              Senior DevOps
+            </div>
+          </div>
+           
+          <a
+            class="mobile-expert-linkedin_link"
+            href="https://www.linkedin.com/in/marat-bediev-a973171b/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="mobile-expert-linkedin_icon"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span
+    aria-atomic="true"
+    aria-live="assertive"
+    class="swiper-notification"
+  />
+</div>
+`;
