@@ -1,132 +1,58 @@
 <template>
-  <section id="careers" class="careers">
-    <div class="container">
-      <div class="careers__wrapper">
-        <img
-          class="careers__background-logo"
-          src="@/assets/img/Careers/svg/careers_logo.svg"
-          alt="Careers Background Image"
-        />
-        <form class="careers__form">
-          <label class="careers__form-name-label form-text"
-            >Hello, my name is</label
-          >
-          <input
-            class="careers__form-name-input form-text"
-            type="text"
-            placeholder="|John Smith"
-          />
-          <h4 class="careers__form-description form-text">
-            I want to work for you as a
-            <input
-              class="careers__form-position-input form-text"
-              type="text"
-              placeholder="desired position."
-            />
-          </h4>
-          <h4 class="careers__form-description form-text">
-            You can also consider me for your other
-          </h4>
-          <ul class="careers__position-list">
-            <li class="careers__position-item">
-              <input
-                class="careers__position-input"
-                name="position"
-                id="senior"
-                type="radio"
-              />
-              <label class="careers__position-label form-text" for="senior"
-                >Senior,</label
-              >
-              <div class="careers__position-check"></div>
-            </li>
-            <li class="careers__position-item">
-              <input
-                class="careers__position-input"
-                name="position"
-                id="middle"
-                type="radio"
-              />
-              <label class="careers__position-label form-text" for="middle"
-                >Middle,</label
-              >
-              <div class="careers__position-check"></div>
-            </li>
-            <li class="careers__position-item">
-              <input
-                class="careers__position-input"
-                name="position"
-                id="junior"
-                type="radio"
-              />
-              <label class="careers__position-label form-text" for="junior"
-                >Junior,</label
-              >
-              <div class="careers__position-check"></div>
-            </li>
-            <li class="careers__position-item">
-              <input
-                class="careers__position-input"
-                name="position"
-                id="intern"
-                type="radio"
-              />
-              <label class="careers__position-label form-text" for="intern"
-                >Intern</label
-              >
-              <div class="careers__position-check"></div>
-              <span
-                class="careers__form-description last-additional-description form-text"
-              >
-                roles.
-              </span>
-            </li>
-          </ul>
-          <h4 class="careers__form-description form-text email-title">
-            Please reply to
-            <input
-              class="careers__form-email-input form-text"
-              type="text"
-              placeholder="your@mail.com"
-            />
-          </h4>
-          <h4 class="careers__form-description form-text">
-            To get more information on my skills, please
-          </h4>
-          <ul class="careers__form-list form-text">
-            <li class="careers__form-list-item">
-              – check out my
-              <input
-                class="careers__form-linkedin-input form-text"
-                type="text"
-                placeholder="LinkedIn profile"
-              />
-              OR
-            </li>
-            <li class="careers__form-list-item file-attach">
-              <FileInput @input="onFileChanged" />
-            </li>
-          </ul>
-        </form>
-      </div>
-    </div>
-  </section>
+  <div>
+    <input
+      class="careers__file-input"
+      type="file"
+      @change="onFileChanged"
+      name="myFile"
+      id="myFile"
+    />
+    <span class="none-decorated-dash" v-if="selectedFile">–</span>
+    <label
+      class="careers__cv"
+      :class="{
+        'careers__cv--selected': selectedFile,
+        'careers__cv--attachable': !selectedFile
+      }"
+      for="myFile"
+    >
+      <img
+        class="careers__cv-icon"
+        src="@/assets/img/Careers/svg/attach_file.svg"
+        alt="attach file icon"
+        v-if="!selectedFile"
+      />
+      {{ selectedFile ? selectedFileName : 'Attach your CV' }}</label
+    >
+  </div>
 </template>
 
 <script>
-import FileInput from '@/components/Careers/FileInput';
-
 export default {
-  name: 'CareersForm',
+  name: 'FileInput',
   data() {
     return { selectedFile: null };
   },
-  components: {
-    FileInput
+  props: {
+    value: ['selectedFile']
   },
   methods: {
-    onFileChanged(params) {
-      this.selectedFile = params;
+    onFileChanged(event) {
+      this.selectedFile = event.target.files[0] && event.target.files[0].name;
+      this.$emit('input', this.selectedFile);
+    }
+  },
+  computed: {
+    selectedFileName() {
+      let ending = '...';
+      let fileName = this.selectedFile;
+      if (fileName) {
+        if (fileName.length > 25) {
+          return fileName.substring(0, 25) + ending;
+        }
+        return fileName;
+      }
+      return '';
     }
   }
 };
