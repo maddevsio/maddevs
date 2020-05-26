@@ -19,12 +19,18 @@
         </div>
       </div>
     </div>
+    <MeetOurExpertsMobile :experts="experts" />
   </section>
 </template>
 
 <script>
+import MeetOurExpertsMobile from '@/components/About/MeetOurExpertsMobile';
+
 export default {
   name: 'MeetOurExperts',
+  components: {
+    MeetOurExpertsMobile
+  },
   data() {
     return {
       experts: [
@@ -98,7 +104,8 @@ export default {
       grid-template-columns: repeat(4, 1fr);
     }
 
-    &__expert-item {
+    &__expert-item,
+    /deep/.mobile-expert-item {
       width: 100%;
       height: 100%;
       position: relative;
@@ -115,7 +122,8 @@ export default {
       }
     }
 
-    &__expert-bottom_content {
+    &__expert-bottom_content,
+    /deep/.mobile-expert-bottom_content {
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -124,38 +132,46 @@ export default {
       bottom: 18px;
     }
 
-    &__expert-info {
+    &__expert-info,
+    /deep/.mobile-expert-info {
       padding-left: 18px;
     }
 
-    &__expert-linkedin_link {
+    &__expert-linkedin_link,
+    /deep/.mobile-expert-linkedin_link {
       padding-right: 18px;
     }
 
-    &__expert-linkedin_icon {
+    &__expert-linkedin_icon,
+    /deep/.mobile-expert-linkedin_icon {
       margin-bottom: -4px;
     }
 
     &__expert-name,
-    &__expert-position {
+    &__expert-position,
+    /deep/.mobile-expert-name,
+    /deep/.mobile-expert-position {
       width: max-content;
       padding: 3px 6px;
       background-color: $bgcolor--grey-light;
     }
 
-    &__expert-name {
+    &__expert-name,
+    /deep/.mobile-expert-name {
       font-size: 22px;
       font-family: 'Hoves-Bold';
       letter-spacing: -1px;
     }
 
-    &__expert-position {
+    &__expert-position,
+    /deep/.mobile-expert-position {
       font-size: 18px;
       font-family: 'Hoves-Regular';
       letter-spacing: -0.3px;
     }
 
-    &__expert-img {
+    &__expert-img,
+    /deep/.mobile-expert-img {
       width: 100%;
       height: 100%;
     }
@@ -194,6 +210,26 @@ export default {
       &__expert-position {
         font-size: 11px;
       }
+    }
+  }
+
+  @media only screen and (max-width: 980px) {
+    .meet-our_experts {
+      &__experts-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    .meet-our_experts {
+      &__experts-list {
+        display: none;
+      }
+    }
+
+    /deep/.swiper {
+      display: block;
     }
   }
 </style>
