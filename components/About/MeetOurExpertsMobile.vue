@@ -1,5 +1,5 @@
 <template>
-  <swiper class="swiper" :option="swiperOption">
+  <swiper class="swiper">
     <swiper-slide v-for="(expert, i) in experts" :key="i">
       <div class="mobile-expert-item">
         <img :src="require(`@/assets/img/Home/png/experts/${expert.image}.png`)" class="mobile-expert-img" :alt="expert.name">
@@ -31,14 +31,6 @@ export default {
       type: Array,
       default: Function
     }
-  },
-  data() {
-    return {
-      swiperOption: {
-        slidesPerView: 'auto',
-        spaceBetween: 30
-      }
-    };
   }
 };
 </script>

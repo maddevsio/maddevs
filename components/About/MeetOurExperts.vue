@@ -122,6 +122,12 @@ export default {
       }
     }
 
+    /deep/.mobile-expert-item {
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
     &__expert-bottom_content,
     /deep/.mobile-expert-bottom_content {
       width: 100%;
