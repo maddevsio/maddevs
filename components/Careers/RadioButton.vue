@@ -1,5 +1,5 @@
 <template>
-  <li class="radio__position-item">
+  <li class="radio">
     <input
       class="radio__position-input"
       :name="radio.name"
@@ -67,12 +67,10 @@ export default {
 @import '../../assets/styles/vars';
 
 .radio {
-  &__position-item {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-right: 18px;
-  }
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 18px;
 
   &__position-check {
     box-sizing: border-box;
@@ -143,15 +141,15 @@ export default {
 
 @media only screen and (max-width: 936px) {
   .radio {
-    &__position-item {
-      width: 100%;
-      margin-bottom: 15px;
-    }
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 
 @media only screen and (max-width: 820px) {
   .radio {
+    margin-bottom: 10px;
+
     &__position-check {
       height: 24px;
       width: 24px;
@@ -161,15 +159,13 @@ export default {
       height: 24px;
       width: 24px;
     }
-
-    &__position-item {
-      margin-bottom: 10px;
-    }
   }
 }
 
 @media only screen and (max-width: 520px) {
   .radio {
+    margin-bottom: 5px;
+
     &__position-check {
       height: 20px;
       width: 20px;
@@ -182,10 +178,6 @@ export default {
 
     &__position-label {
       padding: 0 0 0 26px;
-    }
-
-    &__position-item {
-      margin-bottom: 5px;
     }
   }
 }
