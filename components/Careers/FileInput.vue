@@ -41,7 +41,7 @@ export default {
   },
   computed: {
     selectedFileName() {
-      let ending = '...';
+      const ending = '...';
       let fileName = this.selectedFile;
       if (fileName) {
         if (fileName.length > 25) {
