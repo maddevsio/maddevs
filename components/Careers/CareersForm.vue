@@ -450,7 +450,7 @@ export default {
     }
 
     .email-title {
-      margin: 20px 0 40px 0;
+      margin: 20px 0 40px;
     }
 
     &__form-name-input,
