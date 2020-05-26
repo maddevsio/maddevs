@@ -93,7 +93,6 @@ export default {
       this.selectedFile = params;
     },
     changePositionValue(newPositionValue) {
-      console.log('newPositionValue', newPositionValue);
       this.positionValue = newPositionValue;
     }
   }

@@ -12,7 +12,7 @@
     }}</label>
     <div class="radio__position-check"></div>
     <span
-      v-if="false"
+      v-if="radio.id === 'intern'"
       class="radio__form-description last-additional-description form-text"
     >
       roles.
