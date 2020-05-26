@@ -96,7 +96,7 @@ export default {
     background-color: $bgcolor--white;
 
     &__main-title {
-      padding-bottom: 59px;
+      padding-bottom: 38px;
     }
 
     &__experts-list {
@@ -223,6 +223,16 @@ export default {
     .meet-our_experts {
       &__experts-list {
         grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 520px) {
+    .meet-our_experts {
+      padding-bottom: 95px;
+
+      &__main-title {
+        padding-bottom: 30px;
       }
     }
   }
