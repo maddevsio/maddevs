@@ -153,18 +153,6 @@ export default {
     height: auto;
   }
 
-  .none-decorated-dash {
-    margin-right: 5px;
-  }
-
-  .file-attach {
-    display: flex;
-  }
-
-  &__file-input {
-    display: none;
-  }
-
   .email-title {
     margin: 80px 0;
   }
@@ -266,8 +254,7 @@ export default {
     margin-left: 11px;
   }
 
-  &__linkedin-link,
-  &__cv {
+  &__linkedin-link {
     color: $text-color--black;
     font-size: 20px;
     cursor: pointer;
@@ -350,13 +337,6 @@ export default {
     &__position-item {
       margin-bottom: 10px;
     }
-
-    &__cv {
-      &-icon {
-        height: 38px;
-        margin-right: 20px;
-      }
-    }
   }
 }
 
@@ -389,17 +369,6 @@ export default {
   .careers {
     .container {
       padding: 0;
-    }
-
-    &__cv {
-      &--attachable {
-        font-size: 17px;
-      }
-
-      &-icon {
-        height: 28px;
-        margin-right: 10px;
-      }
     }
 
     &__wrapper {
