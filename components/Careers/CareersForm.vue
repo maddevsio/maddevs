@@ -113,6 +113,11 @@ export default {
     position: relative;
   }
 
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__wrapper {
     border-radius: $form-border-radius;
     background: $bgcolor--grey-light;
@@ -203,6 +208,10 @@ export default {
       top: -179px;
     }
 
+    &__form-list {
+      margin-bottom: 59px;
+    }
+
     &__wrapper {
       padding: 53px 92px 92px 82px;
     }
@@ -268,11 +277,15 @@ export default {
 @media only screen and (max-width: 520px) {
   .careers {
     &__wrapper {
-      padding: 45px 11px 44px 17px;
+      padding: 45px 16px 44px;
     }
 
     .email-title {
       margin: 20px 0 40px;
+    }
+
+    &__form-list {
+      margin-bottom: 44px;
     }
 
     &__form-name-input,
