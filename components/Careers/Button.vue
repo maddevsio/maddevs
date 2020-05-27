@@ -1,5 +1,5 @@
 <template>
-  <button class="button form-text" @click="callback($event)">
+  <button class="button form-text" @click="callback">
     <slot></slot>
   </button>
 </template>
@@ -7,14 +7,8 @@
 <script>
 export default {
   name: 'Button',
-  props: {
-    buttonText: {
-      type: String,
-      default: 'Button Text'
-    }
-  },
   methods: {
-    callback: function(e) {
+    callback(e) {
       this.$emit('click', e);
     }
   }
