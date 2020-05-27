@@ -9,6 +9,7 @@
       <FrontendModal />
       <MobileModal />
       <TeamsModal />
+      <IndividualsModal />
     </client-only>
   </div>
 </template>
@@ -21,6 +22,7 @@ import BackendModal from '@/components/ui/backend-modal';
 import FrontendModal from '@/components/ui/frontend-modal';
 import MobileModal from '@/components/ui/mobile-modal';
 import TeamsModal from '@/components/ui/teams-modal';
+import IndividualsModal from '@/components/ui/individuals-modal';
 
 export default {
   name: 'Default',
@@ -31,7 +33,8 @@ export default {
     BackendModal,
     FrontendModal,
     MobileModal,
-    TeamsModal
+    TeamsModal,
+    IndividualsModal
   }
 };
 </script>
