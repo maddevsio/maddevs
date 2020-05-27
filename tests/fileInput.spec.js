@@ -1,6 +1,7 @@
 import { mount } from '@vue/test-utils';
 
 import FileInput from '@/components/Careers/FileInput';
+import CareersForm from '@/components/Careers/CareersForm';
 
 describe('FileInput component', () => {
   let wrapper;
@@ -9,11 +10,15 @@ describe('FileInput component', () => {
   };
 
   beforeEach(() => {
-    wrapper = mount(FileInput);
+    wrapper = mount(FileInput, { parentComponent: CareersForm });
   });
 
   test("is Vue's instance", () => {
     expect(wrapper.isVueInstance()).toBeTruthy();
+  });
+
+  test('should have CareersForm parent component ', () => {
+    expect(wrapper.vm.$parent.$options.name).toBe('CareersForm');
   });
 
   test('renders correctly', () => {

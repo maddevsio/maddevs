@@ -1,6 +1,7 @@
 import { mount } from '@vue/test-utils';
 
 import RadioButton from '@/components/Careers/RadioButton';
+import CareersForm from '@/components/Careers/CareersForm';
 
 describe('RadioButton component', () => {
   let wrapper;
@@ -14,12 +15,17 @@ describe('RadioButton component', () => {
 
   beforeEach(() => {
     wrapper = mount(RadioButton, {
-      propsData: props
+      propsData: props,
+      parentComponent: CareersForm
     });
   });
 
   test("is Vue's instance", () => {
     expect(wrapper.isVueInstance()).toBeTruthy();
+  });
+
+  test('should have CareersForm parent component ', () => {
+    expect(wrapper.vm.$parent.$options.name).toBe('CareersForm');
   });
 
   test('renders correctly', () => {
