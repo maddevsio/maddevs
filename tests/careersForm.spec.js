@@ -15,21 +15,7 @@ describe('CaseStudies component', () => {
   };
 
   beforeEach(() => {
-    const $route = {
-      path: '/'
-    };
-
-    global.$nuxt = {
-      $route: {
-        name: '/'
-      }
-    };
-
-    wrapper = mount(CareersForm, {
-      mocks: {
-        $route
-      }
-    });
+    wrapper = mount(CareersForm);
   });
 
   test('is Vue instance', () => {
@@ -38,22 +24,6 @@ describe('CaseStudies component', () => {
 
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
-  });
-
-  test('correctly sets the current pages name', () => {
-    const $route = {
-      path: '/projects'
-    };
-
-    wrapper = mount(CareersForm, {
-      mocks: {
-        $route
-      }
-    });
-
-    wrapper.vm.$data.currentPageName = 'projects';
-    expect(wrapper.vm.$route.path).toBe('/projects');
-    expect(wrapper.vm.$data.currentPageName).toBe('projects');
   });
 
   test('should check existence of data', () => {
