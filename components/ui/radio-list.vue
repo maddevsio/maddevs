@@ -1,13 +1,13 @@
 <template>
   <div class="radio-list">
-    <div class="radio-list__field-name field-name" :class="{'required': radioOptionIsRequired}">{{ fieldName }}​</div>
+    <div class="radio-list__field-name field-name" :class="{'required': sectionIsRequired}">{{ fieldName }}​</div>
     <div class="radio-list__radio-list">
       <label class="radio-list__radio-label"  v-for="(option, i) in options" :key="i" :for="`${option.id}-${inputId}`">
         <input 
           class="radio-list__radio-input"
           :id="`${option.id}-${inputId}`"
           type="radio"
-          name="expected team size"
+          :name="inputId"
           @click="sendSelectedValue(option.text)"
         >
         <span class="radio-list__checkmark-radio"></span>
@@ -37,7 +37,7 @@ export default {
       type: String,
       default: 'field name'
     },
-    radioOptionIsRequired: {
+    sectionIsRequired: {
       type: Boolean,
       default: false
     }

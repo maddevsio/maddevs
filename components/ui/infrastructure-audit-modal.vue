@@ -1,6 +1,6 @@
 <template>
   <modal name="infrastructure-audit" :clickToClose="false">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('infrastructure-audit')">
+    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('infrastructure-audit')">
     <ValidationObserver v-slot="{ invalid }">
       <form class="form"> 
         <div class="fields-list">
@@ -25,17 +25,17 @@
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
           <RadioList 
-            v-on:getSelectedProjectHost="getSelectedProjectHost($event)"
+            @getSelectedProjectHost="getSelectedProjectHost"
             :inputId="inputId"
             :fieldName="fieldName"
             :emitMethodName="emitMethodName"
             :options="options"
-            :radioOptionIsRequired="radioOptionIsRequired"
+            :sectionIsRequired="sectionIsRequired"
           />
         </div>
         <FormCheckboxes
-          v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
-          v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
+          @getPrivacyCheckboxState="getPrivacyCheckboxState"
+          @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
         <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Get an infrastructure audit</button>
@@ -55,15 +55,15 @@ export default {
     RadioList
   },
   data: () => ({
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    interesteMobileExpertise: '',
-    selectedProjectHost: '',
-    company: '',
+    fullName: null,
+    email: null,
+    phoneNumber: null,
+    interesteMobileExpertise: null,
+    selectedProjectHost: null,
+    company: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    radioOptionIsRequired: false,
+    sectionIsRequired: false,
     inputId: 'infrastructure-audit',
     fieldName: 'Where is your project hosted?',
     emitMethodName: 'getSelectedProjectHost',
@@ -107,7 +107,6 @@ export default {
     },
     getSelectedProjectHost(projectHost) {
       this.selectedProjectHost = projectHost;
-      console.log(projectHost);
     }
   }
 };

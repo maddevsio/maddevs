@@ -1,6 +1,6 @@
 <template>
   <modal name="teams" :clickToClose="false">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('teams')">
+    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('teams')">
     <ValidationObserver v-slot="{ invalid }">
       <form class="form"> 
         <div class="fields-list">
@@ -20,12 +20,12 @@
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
           <RadioList 
-            v-on:getTeamSize="getTeamSize($event)"
+            @getTeamSize="getTeamSize"
             :inputId="inputId"
             :fieldName="fieldName"
             :emitMethodName="emitMethodName"
             :options="options"
-            :radioOptionIsRequired="radioOptionIsRequired"
+            :sectionIsRequired="sectionIsRequired"
           />
           <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name">Project description</p>
@@ -34,8 +34,8 @@
           </ValidationProvider>
         </div>
         <FormCheckboxes
-          v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
-          v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
+          @getPrivacyCheckboxState="getPrivacyCheckboxState"
+          @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
         <button 
@@ -59,13 +59,13 @@ export default {
     RadioList
   },
   data: () => ({
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    projectDescription: '',
+    fullName: null,
+    email: null,
+    phoneNumber: null,
+    projectDescription: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    radioOptionIsRequired: true,
+    sectionIsRequired: true,
     selectedTeamSize: null,
     inputId: 'teams',
     fieldName: 'Expected team size',
