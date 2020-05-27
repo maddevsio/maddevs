@@ -1,6 +1,6 @@
 <template>
   <modal name="individuals" :clickToClose="false">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('individuals')">
+    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('individuals')">
     <ValidationObserver v-slot="{ invalid }">
       <form class="form"> 
         <div class="fields-list">
@@ -31,8 +31,8 @@
           </ValidationProvider>
         </div>
         <FormCheckboxes
-          v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
-          v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
+          @getPrivacyCheckboxState="getPrivacyCheckboxState"
+          @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
         <button 
@@ -56,11 +56,11 @@ export default {
     ExpectedTeamSize
   },
   data: () => ({
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    projectDescription: '',
-    interestedExpertise: '',
+    fullName: null,
+    email: null,
+    phoneNumber: null,
+    projectDescription: null,
+    interestedExpertise: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
     inputId: 'individuals'
