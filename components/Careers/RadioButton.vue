@@ -23,9 +23,6 @@
 <script>
 export default {
   name: 'RadioButton',
-  data() {
-    return { selectedFile: null };
-  },
   props: {
     radio: {
       id: {
@@ -40,12 +37,6 @@ export default {
         type: String,
         required: true
       }
-    }
-  },
-  methods: {
-    onFileChanged(event) {
-      this.selectedFile = event.target.files[0] && event.target.files[0].name;
-      this.$emit('input', this.selectedFile);
     }
   },
   computed: {
