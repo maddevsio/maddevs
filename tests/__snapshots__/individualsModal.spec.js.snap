@@ -7,7 +7,7 @@ exports[`Individuals modal renders correctly 1`] = `
   <img
     alt="Close modal"
     class="close-modal"
-    src="../../assets/img/common/close-icon.svg"
+    src="@/assets/img/common/close-icon.svg"
   />
    
   <validationobserver-stub />
