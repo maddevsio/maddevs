@@ -47,13 +47,11 @@
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
-import ExpectedTeamSize from '@/components/ui/expected-team-size';
 
 export default {
   name: 'frontend-modal',
   components: {
-    FormCheckboxes,
-    ExpectedTeamSize
+    FormCheckboxes
   },
   data: () => ({
     fullName: null,
