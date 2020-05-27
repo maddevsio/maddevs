@@ -60,6 +60,7 @@
               <FileInput @input="onFileChanged" />
             </li>
           </ul>
+          <Button @click="sendData">I want to work for Mad Devs!</Button>
         </form>
       </div>
     </div>
@@ -69,6 +70,7 @@
 <script>
 import FileInput from '@/components/Careers/FileInput';
 import RadioButton from '@/components/Careers/RadioButton';
+import Button from '@/components/Careers/Button';
 
 export default {
   name: 'CareersForm',
@@ -86,7 +88,8 @@ export default {
   },
   components: {
     FileInput,
-    RadioButton
+    RadioButton,
+    Button
   },
   methods: {
     onFileChanged(params) {
@@ -94,6 +97,9 @@ export default {
     },
     changePositionValue(newPositionValue) {
       this.positionValue = newPositionValue;
+    },
+    sendData() {
+      //TODO: add ajax request
     }
   }
 };
@@ -105,6 +111,11 @@ export default {
 .careers {
   .container {
     position: relative;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
   }
 
   &__wrapper {
@@ -133,6 +144,10 @@ export default {
     height: 65px;
     width: 310px;
     color: $text-color--grey;
+  }
+
+  &__form-list {
+    margin-bottom: 79px;
   }
 
   &__form-linkedin-input {
@@ -191,6 +206,10 @@ export default {
     &__background-logo {
       height: 220px;
       top: -179px;
+    }
+
+    &__form-list {
+      margin-bottom: 59px;
     }
 
     &__wrapper {
@@ -258,11 +277,15 @@ export default {
 @media only screen and (max-width: 520px) {
   .careers {
     &__wrapper {
-      padding: 45px 11px 44px 17px;
+      padding: 45px 16px 44px;
     }
 
     .email-title {
       margin: 20px 0 40px;
+    }
+
+    &__form-list {
+      margin-bottom: 44px;
     }
 
     &__form-name-input,

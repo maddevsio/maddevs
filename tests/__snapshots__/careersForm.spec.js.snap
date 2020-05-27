@@ -226,6 +226,12 @@ exports[`CaseStudies component renders correctly 1`] = `
             </div>
           </li>
         </ul>
+         
+        <button
+          class="button form-text"
+        >
+          I want to work for Mad Devs!
+        </button>
       </form>
     </div>
   </div>
