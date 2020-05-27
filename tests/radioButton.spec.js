@@ -20,7 +20,7 @@ describe('RadioButton component', () => {
     });
   });
 
-  test("is Vue's instance", () => {
+  test('is Vue instance', () => {
     expect(wrapper.isVueInstance()).toBeTruthy();
   });
 

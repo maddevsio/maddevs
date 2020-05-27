@@ -13,7 +13,7 @@ describe('FileInput component', () => {
     wrapper = mount(FileInput, { parentComponent: CareersForm });
   });
 
-  test("is Vue's instance", () => {
+  test('is Vue instance', () => {
     expect(wrapper.isVueInstance()).toBeTruthy();
   });
 

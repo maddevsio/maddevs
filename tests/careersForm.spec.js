@@ -32,7 +32,7 @@ describe('CaseStudies component', () => {
     });
   });
 
-  test("is Vue's instance", () => {
+  test('is Vue instance', () => {
     expect(wrapper.isVueInstance()).toBeTruthy();
   });
 
@@ -40,7 +40,7 @@ describe('CaseStudies component', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
 
-  test("correctly sets the current page's name", () => {
+  test('correctly sets the current pages name', () => {
     const $route = {
       path: '/projects'
     };
