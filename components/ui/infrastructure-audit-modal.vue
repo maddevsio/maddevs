@@ -111,3 +111,30 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+  .form {
+    /deep/.radio-buttons__radio-list {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    /deep/.radio-buttons__radio-label {
+      padding-bottom: 20px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+		.form {
+      /deep/.radio-buttons__radio-label {
+        &:last-child {
+          padding-bottom: 20px;
+        }
+      }
+    }
+	}
+</style>

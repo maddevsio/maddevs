@@ -1,17 +1,17 @@
 <template>
-  <div class="radio-list">
-    <div class="radio-list__field-name field-name" :class="{'required': sectionIsRequired}">{{ fieldName }}​</div>
-    <div class="radio-list__radio-list">
-      <label class="radio-list__radio-label"  v-for="(option, i) in options" :key="i" :for="`${option.id}-${inputId}`">
+  <div class="radio-buttons">
+    <div class="radio-buttons__field-name field-name" :class="{'required': sectionIsRequired}">{{ fieldName }}​</div>
+    <div class="radio-buttons__radio-list">
+      <label class="radio-buttons__radio-label"  v-for="(option, i) in options" :key="i" :for="`${option.id}-${inputId}`">
         <input 
-          class="radio-list__radio-input"
+          class="radio-buttons__radio-input"
           :id="`${option.id}-${inputId}`"
           type="radio"
           :name="inputId"
           @click="sendSelectedValue(option.text)"
         >
-        <span class="radio-list__checkmark-radio"></span>
-        <p class="radio-list__radio-text_item">{{ option.text }}</p>
+        <span class="radio-buttons__checkmark-radio"></span>
+        <p class="radio-buttons__radio-text_item">{{ option.text }}</p>
       </label>
     </div>
   </div>
@@ -53,7 +53,7 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
 
-  .radio-list {
+  .radio-buttons {
     padding-bottom: 16px;
 
     &__field-name {
@@ -115,7 +115,7 @@ export default {
   }
 
   @media only screen and (max-width: 420px) {
-    .radio-list {
+    .radio-buttons {
       padding-bottom: 0;
 
       &__radio-list {
