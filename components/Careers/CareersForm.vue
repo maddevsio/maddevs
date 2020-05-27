@@ -60,6 +60,7 @@
               <FileInput @input="onFileChanged" />
             </li>
           </ul>
+          <Button @click="sendData">I want to work for Mad Devs!</Button>
         </form>
       </div>
     </div>
@@ -69,6 +70,7 @@
 <script>
 import FileInput from '@/components/Careers/FileInput';
 import RadioButton from '@/components/Careers/RadioButton';
+import Button from '@/components/Careers/Button';
 
 export default {
   name: 'CareersForm',
@@ -86,7 +88,8 @@ export default {
   },
   components: {
     FileInput,
-    RadioButton
+    RadioButton,
+    Button
   },
   methods: {
     onFileChanged(params) {
@@ -94,6 +97,9 @@ export default {
     },
     changePositionValue(newPositionValue) {
       this.positionValue = newPositionValue;
+    },
+    sendData() {
+      //TODO: add ajax request
     }
   }
 };
@@ -133,6 +139,10 @@ export default {
     height: 65px;
     width: 310px;
     color: $text-color--grey;
+  }
+
+  &__form-list {
+    margin-bottom: 79px;
   }
 
   &__form-linkedin-input {
