@@ -48,8 +48,6 @@ export default {
   }
 
   @media only screen and (max-width: 420px) {
-    font-size: 18px;
-    border-radius: $form-border-radius-2;
     padding: 12px 26px;
   }
 }
