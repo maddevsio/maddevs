@@ -69,4 +69,17 @@ describe('CaseStudies component', () => {
     const fileInput = wrapper.findAll('.file-input');
     expect(fileInput.length).toBe(1);
   });
+
+  test('onFileChanged method should set correct position', () => {
+    const newPositionValue = 'senior';
+    CareersForm.methods.onFileChanged(newPositionValue);
+    expect(wrapper.vm.$data.positionValue).toStrictEqual(newPositionValue);
+  });
+
+  test('should have methods', () => {
+    expect(
+      typeof CareersForm.methods.onFileChanged &&
+        typeof CareersForm.methods.changePositionValue
+    ).toBe('function');
+  });
 });
