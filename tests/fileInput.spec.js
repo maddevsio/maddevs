@@ -44,4 +44,17 @@ describe('FileInput component', () => {
     expect(wrapper.emitted().input.length).toBe(1);
     expect(wrapper.emitted().input).toStrictEqual([[selectedFile]]);
   });
+
+  test('takes the file from the event', () => {
+    let wrapper = mount(FileInput);
+
+    const file = { size: 100, type: 'text', name: 'mockedFile.doc' };
+    const event = {
+      target: {
+        files: [file]
+      }
+    };
+    wrapper.vm.onFileChanged(event);
+    expect(wrapper.vm.$data.selectedFile).toEqual('mockedFile.doc');
+  });
 });
