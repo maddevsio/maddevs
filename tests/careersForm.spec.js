@@ -59,4 +59,14 @@ describe('CaseStudies component', () => {
   test('should check existence of data', () => {
     expect(wrapper.vm.$data).toStrictEqual(projects);
   });
+
+  test('should render 4 radio elements', () => {
+    const radio = wrapper.findAll('.radio');
+    expect(radio.length).toBe(4);
+  });
+
+  test('should render file-input component', () => {
+    const fileInput = wrapper.findAll('.file-input');
+    expect(fileInput.length).toBe(1);
+  });
 });
