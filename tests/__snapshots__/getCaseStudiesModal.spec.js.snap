@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact me modal renders correctly 1`] = `
+<modal-stub
+  name="get-case-studies"
+>
+  <img
+    alt="Close modal"
+    class="close-modal"
+    src="@/assets/img/common/close-icon.svg"
+  />
+   
+  <validationobserver-stub />
+</modal-stub>
+`;

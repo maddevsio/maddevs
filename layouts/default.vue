@@ -11,6 +11,7 @@
       <TeamsModal />
       <IndividualsModal />
       <InfrastructureAuditModal />
+      <GetCaseStudiesModal />
     </client-only>
   </div>
 </template>
@@ -25,6 +26,7 @@ import MobileModal from '@/components/ui/mobile-modal';
 import TeamsModal from '@/components/ui/teams-modal';
 import IndividualsModal from '@/components/ui/individuals-modal';
 import InfrastructureAuditModal from '@/components/ui/infrastructure-audit-modal';
+import GetCaseStudiesModal from '@/components/ui/get-case-studies-modal';
 
 export default {
   name: 'Default',
@@ -37,7 +39,8 @@ export default {
     MobileModal,
     TeamsModal,
     IndividualsModal,
-    InfrastructureAuditModal
+    InfrastructureAuditModal,
+    GetCaseStudiesModal
   }
 };
 </script>
