@@ -1,24 +1,29 @@
 <template>
 	<form class="footer-form form"> 
-		<div class="fields-list">
-			<div class="field-item">
-				<p class="field-name">First name and surname</p>
-				<input type="text" class="entry-field" placeholder="John Smith">
+		<ValidationObserver v-slot="{ invalid }">
+			<div class="fields-list">
+				<ValidationProvider class="field-item" v-slot="{ classes, errors }">
+					<p class="field-name">First name and surname</p>
+					<input type="text" class="entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
+					<span class="error-text">{{ errors[0] }}</span>
+				</ValidationProvider>
+				<ValidationProvider class="field-item" rules="email|required" v-slot="{ classes, errors }">
+					<p class="field-name required">Work email</p>
+					<input type="text" class="entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
+					<span class="error-text">{{ errors[0] }}</span>
+				</ValidationProvider>
+				<ValidationProvider class="field-item" rules="max:500" v-slot="{ classes, errors }">
+					<p class="field-name">Project Info</p>
+					<textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectInfo"/>
+					<span class="error-text">{{ errors[0] }}</span>
+				</ValidationProvider>
 			</div>
-			<div class="field-item">
-				<p class="field-name required">Work email</p>
-				<input type="email" required class="entry-field" placeholder="your@company.com">
-			</div>
-			<div class="field-item">
-				<p class="field-name">Project Info</p>
-				<input type="text" class="entry-field" placeholder="Describe your project...">
-			</div>
-		</div>
-		<FormCheckboxes
-			v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
-			v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
-		/>
-		<button class="button-default red-text-and-border" :class="{'disabled': !agreeWithPrivacyPolicy}">Order a project now</button>
+			<FormCheckboxes
+				@getPrivacyCheckboxState="getPrivacyCheckboxState"
+				@getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
+			/>
+			<button class="button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Order a project now</button>
+		</ValidationObserver>
 	</form>
 </template>
 
@@ -31,6 +36,10 @@ export default {
     FormCheckboxes
   },
   data: () => ({
+    fullName: null,
+    email: null,
+    projectDescription: null,
+    projectInfo: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false
   }),
@@ -50,6 +59,15 @@ export default {
 
 	.footer-form {
 		width: 450px;
+
+		button {
+			width: 100%;
+		}
+
+		textarea {
+			min-height: 54px;
+			padding: 17px 10px;
+		}
 	}
 
 	@media only screen and (max-width: 1420px) {
