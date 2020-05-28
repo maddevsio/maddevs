@@ -68,4 +68,9 @@ describe('Radio buttons list', () => {
     expect(wrapper.emitted()).toBeTruthy();
     expect(wrapper.emitted()[props.emitMethodName]).toEqual([[selectedValue]]);
   });
+
+  test('Has class if sectionIsRequired equal true', () => {
+    let div = wrapper.find('.radio-buttons__field-name');
+    expect(div.is('.required')).toBe(true);
+  });
 });

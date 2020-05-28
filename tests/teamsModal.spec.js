@@ -31,6 +31,10 @@ describe('Teams Modal', () => {
     ).toEqual(false);
     expect(defaultData.inputId).toEqual('teams');
     expect(defaultData.selectedTeamSize).toEqual(null);
+    expect(defaultData.options).toHaveLength(3);
+    expect(defaultData.fieldName).toEqual('Expected team size');
+    expect(defaultData.emitMethodName).toEqual('getTeamSize');
+    expect(defaultData.sectionIsRequired).toEqual(true);
   });
 
   test('has a functions', () => {
