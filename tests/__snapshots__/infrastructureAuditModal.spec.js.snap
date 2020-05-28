@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Teams Modal renders correctly 1`] = `
+exports[`Infrastructure Audit Modal renders correctly 1`] = `
 <modal-stub
-  name="teams"
+  name="infrastructure-audit"
 >
   <img
     alt="Close modal"

@@ -10,6 +10,7 @@
       <MobileModal />
       <TeamsModal />
       <IndividualsModal />
+      <InfrastructureAuditModal />
     </client-only>
   </div>
 </template>
@@ -23,6 +24,7 @@ import FrontendModal from '@/components/ui/frontend-modal';
 import MobileModal from '@/components/ui/mobile-modal';
 import TeamsModal from '@/components/ui/teams-modal';
 import IndividualsModal from '@/components/ui/individuals-modal';
+import InfrastructureAuditModal from '@/components/ui/infrastructure-audit-modal';
 
 export default {
   name: 'Default',
@@ -34,7 +36,8 @@ export default {
     FrontendModal,
     MobileModal,
     TeamsModal,
-    IndividualsModal
+    IndividualsModal,
+    InfrastructureAuditModal
   }
 };
 </script>
