@@ -23,7 +23,7 @@
               {{ country.countryName }}
             </li>
           </ul>
-          <buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
+          <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="red-text-and-border"/>
         </div>
       </div>
     </div>
@@ -90,7 +90,8 @@ export default {
           countryName: 'Kazakhstan'
         }
       ],
-      buttonInnerText: 'Get case studies'
+      buttonInnerText: 'Get case studies',
+      modalWindowName: 'get-case-studies'
     };
   }
 };
