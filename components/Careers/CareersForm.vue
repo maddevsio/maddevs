@@ -12,10 +12,7 @@
             <label class="careers__form-name-label form-text"
               >Hello, my name is</label
             >
-            <ValidationProvider
-              rules="required"
-              v-slot="{ classes, errors }"
-            >
+            <ValidationProvider rules="required" v-slot="{ classes, errors }">
               <input
                 class="careers__form-name-input form-text"
                 type="text"
@@ -27,10 +24,7 @@
             </ValidationProvider>
             <h4 class="careers__form-description form-text">
               I want to work for you as a
-              <ValidationProvider
-                rules="required"
-                v-slot="{ classes, errors }"
-              >
+              <ValidationProvider rules="required" v-slot="{ classes, errors }">
                 <input
                   class="careers__form-position-input form-text"
                   type="text"
@@ -72,18 +66,38 @@
               To get more information on my skills, please
             </h4>
             <ul class="careers__form-list form-text">
-              <li class="careers__form-list-item">
-                – check out my
-                <input
-                  class="careers__form-linkedin-input form-text"
-                  type="text"
-                  placeholder="LinkedIn profile"
-                />
-                OR
-              </li>
-              <li class="careers__form-list-item file-attach">
-                <FileInput @input="onFileChanged" />
-              </li>
+              <ValidationObserver ref="form">
+                <li class="careers__form-list-item">
+                  – check out my
+                  <ValidationProvider
+                    vid="linkedin"
+                    v-slot="{ classes, errors }"
+                  >
+                    <input
+                      class="careers__form-linkedin-input form-text"
+                      type="text"
+                      placeholder="LinkedIn profile"
+                      v-model="linkedinProfile"
+                    />
+                    <span class="modal-error-text error-text">{{
+                      errors[0]
+                    }}</span>
+                  </ValidationProvider>
+                  OR
+                </li>
+                <li class="careers__form-list-item file-attach">
+                  <ValidationProvider
+                    rules="oneOf:@linkedin"
+                    vid="selectedFile"
+                    v-slot="{ classes, errors }"
+                  >
+                    <FileInput v-model="selectedFile" @input="onFileChanged" />
+                    <span class="modal-error-text error-text">{{
+                      errors[0]
+                    }}</span>
+                  </ValidationProvider>
+                </li>
+              </ValidationObserver>
             </ul>
             <Button :disabled="invalid" @click="sendData"
               >I want to work for Mad Devs!</Button
@@ -104,11 +118,12 @@ export default {
   name: 'CareersForm',
   data() {
     return {
-      selectedFile: null,
+      fullName: null,
       positionValue: null,
       positionTitle: null,
-      fullName: null,
       email: null,
+      selectedFile: null,
+      linkedinProfile: null,
       radioData: [
         { id: 'senior', name: 'position', labelText: 'Senior,' },
         { id: 'middle', name: 'position', labelText: 'Middle,' },
@@ -132,6 +147,16 @@ export default {
     sendData(e) {
       e.preventDefault();
       //TODO: add ajax request
+    }
+  },
+  computed: {
+    isLinkedinProfileRequired() {
+      if (!this.selectedFile) return true;
+      return false;
+    },
+    isSelectedFileRequired() {
+      if (!this.linkedinProfile) return true;
+      return false;
     }
   }
 };
