@@ -148,16 +148,6 @@ export default {
       e.preventDefault();
       //TODO: add ajax request
     }
-  },
-  computed: {
-    isLinkedinProfileRequired() {
-      if (!this.selectedFile) return true;
-      return false;
-    },
-    isSelectedFileRequired() {
-      if (!this.linkedinProfile) return true;
-      return false;
-    }
   }
 };
 </script>
