@@ -4,8 +4,12 @@ import CareersForm from '@/components/Careers/CareersForm';
 describe('CaseStudies component', () => {
   let wrapper;
   const projects = {
+    fullName: null,
+    positionValue: null,
+    positionTitle: null,
+    email: null,
     selectedFile: null,
-    positionValue: 'senior',
+    linkedinProfile: null,
     radioData: [
       { id: 'senior', name: 'position', labelText: 'Senior,' },
       { id: 'middle', name: 'position', labelText: 'Middle,' },
@@ -30,18 +34,8 @@ describe('CaseStudies component', () => {
     expect(wrapper.vm.$data).toStrictEqual(projects);
   });
 
-  test('should render 4 radio elements', () => {
-    const radio = wrapper.findAll('.radio');
-    expect(radio.length).toBe(4);
-  });
-
-  test('should render file-input component', () => {
-    const fileInput = wrapper.findAll('.file-input');
-    expect(fileInput.length).toBe(1);
-  });
-
   test('onFileChanged method should set correct position', () => {
-    const newPositionValue = 'senior';
+    const newPositionValue = null;
     CareersForm.methods.onFileChanged(newPositionValue);
     expect(wrapper.vm.$data.positionValue).toStrictEqual(newPositionValue);
   });

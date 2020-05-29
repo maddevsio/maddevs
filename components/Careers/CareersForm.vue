@@ -7,61 +7,103 @@
           src="@/assets/img/Careers/svg/careers_logo.svg"
           alt="Careers Background Image"
         />
-        <form class="careers__form">
-          <label class="careers__form-name-label form-text"
-            >Hello, my name is</label
-          >
-          <input
-            class="careers__form-name-input form-text"
-            type="text"
-            placeholder="|John Smith"
-          />
-          <h4 class="careers__form-description form-text">
-            I want to work for you as a
-            <input
-              class="careers__form-position-input form-text"
-              type="text"
-              placeholder="desired position."
-            />
-          </h4>
-          <h4 class="careers__form-description form-text">
-            You can also consider me for your other
-          </h4>
-          <ul class="careers__position-list">
-            <RadioButton
-              v-for="(radio, i) in radioData"
-              :key="i"
-              :radio="radio"
-              @change="changePositionValue"
-            />
-          </ul>
-          <h4 class="careers__form-description form-text email-title">
-            Please reply to
-            <input
-              class="careers__form-email-input form-text"
-              type="text"
-              placeholder="your@mail.com"
-            />
-          </h4>
-          <h4 class="careers__form-description form-text">
-            To get more information on my skills, please
-          </h4>
-          <ul class="careers__form-list form-text">
-            <li class="careers__form-list-item">
-              – check out my
-              <input
-                class="careers__form-linkedin-input form-text"
-                type="text"
-                placeholder="LinkedIn profile"
+        <ValidationObserver v-slot="{ invalid }">
+          <form class="careers__form">
+            <label class="careers__form-name-label form-text"
+              >Hello, my name is
+              <ValidationProvider rules="required" v-slot="{ classes, errors }">
+                <input
+                  class="careers__form-name-input form-text"
+                  type="text"
+                  placeholder="|John Smith"
+                  :class="classes"
+                  v-model="fullName"
+                />
+                <span class="modal-error-text error-text">{{ errors[0] }}</span>
+              </ValidationProvider></label
+            >
+            <h4 class="careers__form-description form-text">
+              I want to work for you as a
+              <ValidationProvider rules="required" v-slot="{ classes, errors }">
+                <input
+                  class="careers__form-position-input form-text"
+                  type="text"
+                  placeholder="desired position."
+                  :class="classes"
+                  v-model="positionTitle"
+                />
+                <span class="modal-error-text error-text">{{ errors[0] }}</span>
+              </ValidationProvider>
+            </h4>
+            <h4 class="careers__form-description form-text">
+              You can also consider me for your other
+            </h4>
+            <ul class="careers__position-list">
+              <RadioButton
+                v-for="(radio, i) in radioData"
+                :key="i"
+                :radio="radio"
+                @change="changePositionValue"
               />
-              OR
-            </li>
-            <li class="careers__form-list-item file-attach">
-              <FileInput @input="onFileChanged" />
-            </li>
-          </ul>
-          <Button @click="sendData">I want to work for Mad Devs!</Button>
-        </form>
+            </ul>
+            <h4 class="careers__form-description form-text email-title">
+              Please reply to
+              <ValidationProvider
+                rules="email|required"
+                v-slot="{ classes, errors }"
+              >
+                <input
+                  class="careers__form-email-input form-text"
+                  type="email"
+                  placeholder="your@mail.com"
+                  :class="classes"
+                  v-model="email"
+                />
+                <span class="modal-error-text error-text">{{ errors[0] }}</span>
+              </ValidationProvider>
+            </h4>
+            <h4 class="careers__form-description form-text">
+              To get more information on my skills, please
+            </h4>
+            <ul class="careers__form-list form-text">
+              <ValidationObserver ref="form">
+                <li class="careers__form-list-item">
+                  – check out my
+                  <ValidationProvider
+                    vid="linkedin"
+                    v-slot="{ classes, errors }"
+                  >
+                    <input
+                      class="careers__form-linkedin-input form-text"
+                      type="text"
+                      placeholder="LinkedIn profile"
+                      v-model="linkedinProfile"
+                    />
+                    <span class="modal-error-text error-text">{{
+                      errors[0]
+                    }}</span>
+                  </ValidationProvider>
+                  OR
+                </li>
+                <li class="careers__form-list-item file-attach">
+                  <ValidationProvider
+                    rules="oneOf:@linkedin"
+                    vid="selectedFile"
+                    v-slot="{ classes, errors }"
+                  >
+                    <FileInput v-model="selectedFile" @input="onFileChanged" />
+                    <span class="modal-error-text error-text">{{
+                      errors[0]
+                    }}</span>
+                  </ValidationProvider>
+                </li>
+              </ValidationObserver>
+            </ul>
+            <Button :disabled="invalid" @click="sendData"
+              >I want to work for Mad Devs!</Button
+            >
+          </form>
+        </ValidationObserver>
       </div>
     </div>
   </section>
@@ -76,8 +118,12 @@ export default {
   name: 'CareersForm',
   data() {
     return {
+      fullName: null,
+      positionValue: null,
+      positionTitle: null,
+      email: null,
       selectedFile: null,
-      positionValue: 'senior',
+      linkedinProfile: null,
       radioData: [
         { id: 'senior', name: 'position', labelText: 'Senior,' },
         { id: 'middle', name: 'position', labelText: 'Middle,' },
@@ -98,7 +144,8 @@ export default {
     changePositionValue(newPositionValue) {
       this.positionValue = newPositionValue;
     },
-    sendData() {
+    sendData(e) {
+      e.preventDefault();
       //TODO: add ajax request
     }
   }
