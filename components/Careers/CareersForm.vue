@@ -10,18 +10,18 @@
         <ValidationObserver v-slot="{ invalid }">
           <form class="careers__form">
             <label class="careers__form-name-label form-text"
-              >Hello, my name is</label
+              >Hello, my name is
+              <ValidationProvider rules="required" v-slot="{ classes, errors }">
+                <input
+                  class="careers__form-name-input form-text"
+                  type="text"
+                  placeholder="|John Smith"
+                  :class="classes"
+                  v-model="fullName"
+                />
+                <span class="modal-error-text error-text">{{ errors[0] }}</span>
+              </ValidationProvider></label
             >
-            <ValidationProvider rules="required" v-slot="{ classes, errors }">
-              <input
-                class="careers__form-name-input form-text"
-                type="text"
-                placeholder="|John Smith"
-                :class="classes"
-                v-model="fullName"
-              />
-              <span class="modal-error-text error-text">{{ errors[0] }}</span>
-            </ValidationProvider>
             <h4 class="careers__form-description form-text">
               I want to work for you as a
               <ValidationProvider rules="required" v-slot="{ classes, errors }">
