@@ -208,6 +208,12 @@
   font-weight: 500;
 }
 
+.doc-text {
+  font-family: 'Hoves-Regular';
+  font-size: 24px;
+  font-weight: normal;
+}
+
 .title {
   font-size: 90px;
   padding-bottom: 15px;
@@ -681,6 +687,10 @@ button {
 
   .title {
     font-size: 41px;
+  }
+
+  .doc-text {
+    font-size: 23px;
   }
 
   .sub-title  {
