@@ -169,6 +169,22 @@ export default {
     &__image {
       height: 95px;
     }
+
+    &__title {
+      font-size: 53px;
+    }
+
+    &__sec-title {
+      font-size: 27px;
+    }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .gdpr {
+    &__title {
+      font-size: 47px;
+    }
   }
 }
 </style>
