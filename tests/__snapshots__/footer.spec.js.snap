@@ -210,7 +210,7 @@ exports[`Footer renders correctly 1`] = `
          
         <a
           class="footer__bottom-link"
-          href="https://maddevs.io/gdpr/"
+          href="/gdpr"
         >
           GDPR Compliance Commitment
         </a>
