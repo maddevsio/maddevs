@@ -20,7 +20,7 @@
           committed to stay compliant with GDPR for the sake of our customers
           and partners based in European Union and European Economic Area.
         </p>
-        <h5 class="gdpr__sec-title sec-title">Data Processor Status</h5>
+        <h5 class="gdpr__sec-title">Data Processor Status</h5>
         <p class="gdpr__paragraph paragraph">
           In accordance with official GDPR terminology, CDNvideo has the status
           of a Data Processor. If your company is a Data Controller under the
@@ -28,7 +28,7 @@
           data with us, please contact us via legal@cdnvideo.com to get our Data
           Processing Addendum (DPA) document
         </p>
-        <h5 class="gdpr__sec-title sec-title">
+        <h5 class="gdpr__sec-title">
           Privacy Policy & Usage Agreement
         </h5>
         <p class="gdpr__paragraph paragraph">
@@ -38,7 +38,7 @@
           If you have any questions, updates or concerns related to these
           documents please let us know via legal@cdnvideo.com.
         </p>
-        <h5 class="gdpr__sec-title sec-title">
+        <h5 class="gdpr__sec-title">
           Cookie Usage & Marketing Communications
         </h5>
         <p class="gdpr__paragraph paragraph gdpr__break-paragraph">
@@ -88,6 +88,7 @@ export default {
 
   &__title {
     margin-right: 36px;
+    margin-top: 55px;
     max-width: 800px;
   }
 
@@ -96,6 +97,9 @@ export default {
     color: $text-color--grey-light;
     margin-top: 62px;
     margin-bottom: 11px;
+    font-size: 32px;
+    font-family: 'Hoves-Regular';
+    font-weight: bold;
   }
 
   &__text,
@@ -122,6 +126,10 @@ export default {
     &__image {
       height: 170px;
     }
+
+    &__title {
+      margin-top: 0;
+    }
   }
 }
 
@@ -129,6 +137,10 @@ export default {
   .gdpr {
     &__image {
       height: 155px;
+    }
+
+    &__sec-title {
+      font-size: 30px;
     }
   }
 }
