@@ -75,8 +75,8 @@ export default {
   @media only screen and (max-width: 768px) {
 		.form {
       textarea {
-        height: 64px;
-        min-height: 64px;
+        height: 60px;
+        min-height: 60px;
       }
     }
   }
