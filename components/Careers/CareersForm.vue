@@ -134,7 +134,7 @@ export default {
   },
   methods: {
     onFileChanged(params) {
-      this.selectedFile = params;
+      params;
     },
     changePositionValue(newPositionValue) {
       this.positionValue = newPositionValue;

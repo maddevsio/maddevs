@@ -20,7 +20,7 @@ describe('CareersForm component', () => {
 
   beforeEach(() => {
     wrapper = mount(CareersForm, {
-      stubs: ['ValidationObserver', 'ValidationProvider']
+      stubs: ['ValidationProvider', 'ValidationObserver']
     });
   });
 

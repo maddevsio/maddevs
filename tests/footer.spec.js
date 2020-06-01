@@ -1,4 +1,4 @@
-import { mount } from '@vue/test-utils';
+import { shallowMount } from '@vue/test-utils';
 import Footer from '@/components/Footer';
 
 describe('Footer', () => {
@@ -10,8 +10,8 @@ describe('Footer', () => {
         name: '/'
       }
     };
-    wrapper = mount(Footer, {
-      stubs: ['ValidationProvider', 'ValidationObserver', 'router-link']
+    wrapper = shallowMount(Footer, {
+      stubs: ['ValidationProvider', 'ValidationObserver']
     });
   });
 
@@ -34,7 +34,7 @@ describe('Footer', () => {
       path: '/gdpr'
     };
 
-    wrapper = mount(Footer, {
+    wrapper = shallowMount(Footer, {
       mocks: {
         $route
       }
