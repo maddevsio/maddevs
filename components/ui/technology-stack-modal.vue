@@ -1,8 +1,8 @@
 <template>
-  <modal name="frontend" :clickToClose="false">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('frontend')">
+  <modal name="technology-stack" :clickToClose="false">
+    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('technology-stack')">
     <ValidationObserver v-slot="{ invalid }">
-      <form class="form"> 
+      <form class="form technology-stack"> 
         <div class="fields-list">
           <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Full Name</p>
@@ -19,18 +19,18 @@
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
-          <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name">Frontend expertise you are interested in</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need assistance with JS development and UI/UX design" v-model="interesteFrontendExpertise"/>
+          <ValidationProvider class="modal-field-item field-item" rules="max:500|required" v-slot="{ classes, errors }">
+            <p class="modal-field-name field-name required">Your question on tech stack​</p>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="Which database should I use to create a portal for customer reviews?" v-model="techStackQuestion"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
         <FormCheckboxes
-          v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
-          v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
+          @getPrivacyCheckboxState="getPrivacyCheckboxState"
+          @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
-        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Get UX help</button>
+        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">​Get advice on tech stack</button>
       </form>
     </ValidationObserver>
   </modal>
@@ -40,18 +40,18 @@
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 
 export default {
-  name: 'frontend-modal',
+  name: 'TechnologyStack',
   components: {
     FormCheckboxes
   },
   data: () => ({
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    interesteFrontendExpertise: '',
+    fullName: null,
+    email: null,
+    phoneNumber: null,
+    techStackQuestion: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'frontend'
+    inputId: 'technology-stack'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -81,11 +81,20 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 475px) {
+  @media only screen and (max-width: 565px) {
 		.form {
       textarea {
         height: 79px;
         min-height: 79px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 330px) {
+		.form {
+      textarea {
+        height: 102px;
+        min-height: 102px;
       }
     }
   }
