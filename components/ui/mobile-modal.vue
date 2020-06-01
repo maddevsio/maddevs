@@ -63,3 +63,30 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+  .form {
+    textarea {
+      height: 79px;
+      min-height: 79px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+		.form {
+      textarea {
+        height: 64px;
+        min-height: 64px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 475px) {
+		.form {
+      textarea {
+        height: 79px;
+        min-height: 79px;
+      }
+    }
+  }
+</style>

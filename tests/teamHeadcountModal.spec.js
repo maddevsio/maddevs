@@ -1,14 +1,14 @@
 import {
   mount
 } from '@vue/test-utils';
-import footerForm from '@/components/Footer/footer-form';
+import teamHeadcountModal from '@/components/ui/team-headcount-modal';
 
-describe('Footer form', () => {
+describe('Team headcount modal', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(footerForm, {
-      stubs: ['ValidationProvider', 'ValidationObserver']
+    wrapper = mount(teamHeadcountModal, {
+      stubs: ['ValidationProvider', 'ValidationObserver', 'modal']
     });
   });
 
@@ -23,18 +23,19 @@ describe('Footer form', () => {
   // --------------------- //
 
   test('sets the correct default data', () => {
-    expect(typeof footerForm.data).toBe('function');
-    const defaultData = footerForm.data();
+    expect(typeof teamHeadcountModal.data).toBe('function');
+    const defaultData = teamHeadcountModal.data();
     expect(
       defaultData.agreeWithPrivacyPolicy &&
       defaultData.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
+    expect(defaultData.inputId).toEqual('team-headcount');
   });
 
   test('has a functions', () => {
     expect(
-      typeof footerForm.methods.getPrivacyCheckboxState && 
-      typeof footerForm.methods.getDiscountOffersCheckboxState
+      typeof teamHeadcountModal.methods.getPrivacyCheckboxState && 
+      typeof teamHeadcountModal.methods.getDiscountOffersCheckboxState
     ).toBe('function');
   });
 

@@ -7,7 +7,9 @@ describe('Footer', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(Footer);
+    wrapper = mount(Footer, {
+      stubs: ['ValidationProvider', 'ValidationObserver']
+    });
   });
 
   // ------ IMPORTANT ----- //
