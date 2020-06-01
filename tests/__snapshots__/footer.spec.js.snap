@@ -2,7 +2,7 @@
 
 exports[`Footer renders correctly 1`] = `
 <footer
-  class="footer"
+  class="footer /"
 >
   <div
     class="container"
