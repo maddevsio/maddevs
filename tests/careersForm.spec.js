@@ -1,9 +1,9 @@
 import { mount } from '@vue/test-utils';
 import CareersForm from '@/components/Careers/CareersForm';
 
-describe('CaseStudies component', () => {
+describe('CareersForm component', () => {
   let wrapper;
-  const projects = {
+  const data = {
     fullName: null,
     positionValue: null,
     positionTitle: null,
@@ -19,7 +19,9 @@ describe('CaseStudies component', () => {
   };
 
   beforeEach(() => {
-    wrapper = mount(CareersForm);
+    wrapper = mount(CareersForm, {
+      stubs: ['ValidationObserver', 'ValidationProvider']
+    });
   });
 
   test('is Vue instance', () => {
@@ -31,7 +33,7 @@ describe('CaseStudies component', () => {
   });
 
   test('should check existence of data', () => {
-    expect(wrapper.vm.$data).toStrictEqual(projects);
+    expect(wrapper.vm.$data).toStrictEqual(data);
   });
 
   test('onFileChanged method should set correct position', () => {

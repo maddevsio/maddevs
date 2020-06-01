@@ -8,7 +8,7 @@
 import GDPR from '@/components/GDPR';
 
 export default {
-  name: 'gdpr',
+  name: 'main-gdpr',
   components: {
     GDPR
   },
