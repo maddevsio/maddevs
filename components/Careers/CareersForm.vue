@@ -69,10 +69,7 @@
               <ValidationObserver ref="form">
                 <li class="careers__form-list-item">
                   – check out my
-                  <ValidationProvider
-                    vid="linkedin"
-                    v-slot="{ classes, errors }"
-                  >
+                  <ValidationProvider v-slot="{ classes, errors }">
                     <input
                       class="careers__form-linkedin-input form-text"
                       type="text"
@@ -83,12 +80,10 @@
                       errors[0]
                     }}</span>
                   </ValidationProvider>
-                  OR
                 </li>
                 <li class="careers__form-list-item file-attach">
                   <ValidationProvider
-                    rules="oneOf:@linkedin"
-                    vid="selectedFile"
+                    rules="required"
                     v-slot="{ classes, errors }"
                   >
                     <FileInput v-model="selectedFile" @input="onFileChanged" />
