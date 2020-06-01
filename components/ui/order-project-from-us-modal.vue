@@ -24,6 +24,11 @@
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
+          <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
+            <p class="modal-field-name field-name">Project description</p>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescription"/>
+            <span class="modal-error-text error-text">{{ errors[0] }}</span>
+          </ValidationProvider>
         </div>
         <FormCheckboxes
          @getPrivacyCheckboxState="getPrivacyCheckboxState"
@@ -49,6 +54,7 @@ export default {
     email: null,
     phoneNumber: null,
     company: null,
+    projectDescription: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
     inputId: 'order-project-from-us'
