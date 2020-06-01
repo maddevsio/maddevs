@@ -5,7 +5,7 @@
       <h4 class="it-consulting__sub-title sub-title">{{ subTitle }}</h4>
       <p class="it-consulting__paragraph paragraph">{{ paragraph }}</p>
     </div>
-    <buttonTrigger :buttonInnerText="buttonInnerText"/>
+    <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName"/>
   </div>
 </template>
 
@@ -30,6 +30,10 @@ export default {
     buttonInnerText: {
       type: String,
       default: 'Button Inner Text'
+    },
+    modalWindowName: {
+      type: String,
+      default: 'Modal Window Name'
     }
   },
   components: {
