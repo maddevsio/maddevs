@@ -4,10 +4,13 @@ const serveStatic = require('serve-static');
 
 const app = express();
 
+const routes = require('./server/routes');
+
 const port = process.env.PORT || 5000;
 
 app.enable('trust proxy');
 
+app.use('/', routes);
 app.use(function applyXFrame(req, res, next) {
   res.set('X-Frame-Options', 'DENY');
   next(); 
