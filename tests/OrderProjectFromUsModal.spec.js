@@ -3,7 +3,7 @@ import {
 } from '@vue/test-utils';
 import OrderProjectFromUsModal from '@/components/ui/order-project-from-us-modal';
 
-describe('Backend modal', () => {
+describe('Order Project From Us Modal', () => {
   let wrapper;
 
   beforeEach(() => {
