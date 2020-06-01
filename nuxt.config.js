@@ -6,7 +6,8 @@ module.exports = {
     title: 'Mad Devs - IT Outsourcing Company in UK',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'yandex-verification', content: '1cce4e9bf6ebcdff' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
