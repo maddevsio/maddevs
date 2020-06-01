@@ -242,10 +242,10 @@ export default {
       &__experts-list {
         display: none;
       }
-    }
 
-    /deep/.swiper {
-      display: block;
+      /deep/.swiper {
+        display: block;
+      }
     }
   }
 </style>
