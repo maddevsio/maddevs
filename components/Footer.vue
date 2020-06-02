@@ -18,7 +18,7 @@
 					<p class="footer__company-name">© Mad Devs - {{ currentYear }}</p>
 					<a href="https://maddevs.io/gdpr/" class="footer__bottom-link">GDPR Compliance Commitment</a>
 					<a href="#" class="footer__bottom-link">Privacy Policy</a>
-					<a href="https://maddevs.io/nda/" class="footer__bottom-link">Non-Disclosure Agreement (NDA)</a>
+					<a href="/nda" class="footer__bottom-link">Non-Disclosure Agreement (NDA)</a>
 				</div>
 				<footerSocialNetworkBar />
 			</div>
