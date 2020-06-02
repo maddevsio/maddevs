@@ -25,8 +25,11 @@
           In accordance with official GDPR terminology, CDNvideo has the status
           of a Data Processor. If your company is a Data Controller under the
           terms of the GDPR, and you need a written consent to process personal
-          data with us, please contact us via legal@cdnvideo.com to get our Data
-          Processing Addendum (DPA) document
+          data with us, please contact us via
+          <a class="gdpr__link" href="mailto:legal@cdnvideo.com"
+            >legal@cdnvideo.com</a
+          >
+          to get our Data Processing Addendum (DPA) document
         </p>
         <h5 class="gdpr__sec-title">
           Privacy Policy & Usage Agreement
@@ -36,7 +39,10 @@
           read or download it here. Our amended Usage Agreement is available
           here. We appreciate any heads-up and improvement requests sent to us.
           If you have any questions, updates or concerns related to these
-          documents please let us know via legal@cdnvideo.com.
+          documents please let us know via
+          <a class="gdpr__link" href="mailto:legal@cdnvideo.com"
+            >legal@cdnvideo.com</a
+          >.
         </p>
         <h5 class="gdpr__sec-title">
           Cookie Usage & Marketing Communications
@@ -52,7 +58,10 @@
           We also ask our customers for their explicit consent before sending
           them any marketing communications. You are free to opt-out any time.
           Our legal & compliance department will be happy to help you with
-          opt-in/opt-out issues, please contact them via legal@cdnvideo.com.
+          opt-in/opt-out issues, please contact them via
+          <a class="gdpr__link" href="mailto:legal@cdnvideo.com"
+            >legal@cdnvideo.com</a
+          >.
         </p>
       </div>
     </div>
@@ -90,6 +99,11 @@ export default {
     margin-right: 36px;
     margin-top: 55px;
     max-width: 800px;
+  }
+
+  &__link {
+    color: $text-color--white;
+    text-decoration: none;
   }
 
   &__sec-title {
