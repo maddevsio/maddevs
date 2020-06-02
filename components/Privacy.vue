@@ -397,15 +397,14 @@
         <p class="privacy__paragraph paragraph">
           We will only transfer your personal data to countries that have been
           deemed to provide an adequate level of protection for personal data by
-          the European Commission. For further details, see European Commission:
-          Adequacy of the protection of personal data in non-EU countries.
+          the European Commission. For further details, see 
           <a
             class="privacy__link"
-            href="https://ec.europa.eu/home-affairs/e-library/glossary/adequacy-decision_en"
+            href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en"
             target="_blank"
             >European Commission: Adequacy of the protection of personal data in
             non-EU countries</a
-          >
+          >.
         </p>
         <p class="privacy__paragraph paragraph">
           Where we use certain service providers, we may use specific contracts
