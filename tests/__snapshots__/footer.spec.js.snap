@@ -61,7 +61,7 @@ exports[`Footer renders correctly 1`] = `
          
         <a
           class="footer__bottom-link"
-          href="#"
+          href="/privacy"
         >
           Privacy Policy
         </a>
