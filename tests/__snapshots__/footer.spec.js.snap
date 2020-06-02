@@ -224,7 +224,7 @@ exports[`Footer renders correctly 1`] = `
          
         <a
           class="footer__bottom-link"
-          href="https://maddevs.io/nda/"
+          href="/nda"
         >
           Non-Disclosure Agreement (NDA)
         </a>
