@@ -1,5 +1,5 @@
 <template>
-  <header class="header" :class="{'mobile-menu_is-open': mobileMenuIsOpen }">
+  <header class="header" :class="{'mobile-menu_is-open': mobileMenuIsOpen, 'white': headerIsWhite}">
     <div class="container">
       <div class="header__header-content_wrap">
         <div class="header__left-nav_bar">
@@ -87,15 +87,13 @@ export default {
       },
       modalWindowName: 'contact-me',
       mobileMenuIsOpen: false,
-      headerIsWhite: false,
-      header: null
+      headerIsWhite: false
     };
   },
   mounted () {
     window.addEventListener('scroll', this.mainPageHandleScroll);
     window.addEventListener('scroll', this.servicesPageHandleScroll);
     window.addEventListener('scroll', this.projectsPageHandleScroll);
-    this.header = document.getElementsByClassName('header');
   },
   destroyed () {
     window.removeEventListener('scroll', this.mainPageHandleScroll);
@@ -106,20 +104,12 @@ export default {
     getMobileMenuState(mobileMenuDisplayState) {
       this.mobileMenuIsOpen = mobileMenuDisplayState;
     },
-    headerAddClass(header) {
-      header.classList.add('white');
-      this.headerIsWhite = true;
-    },
-    headerRemoveClass(header) {
-      header.classList.remove('white');
-      this.headerIsWhite = false;
-    },
     mainPageHandleScroll() {
       if ($nuxt.$route.name === 'index') {
         const customerTestimonials = document.getElementById('customer-testimonials');
         const meetOurExperts = document.getElementById('meet-our-experts');
         const whyUs = document.getElementById('why-us');
-  
+
         if (
           customerTestimonials.getBoundingClientRect().top <= 0 && 
           customerTestimonials.getBoundingClientRect().bottom >= 0 ||
@@ -128,9 +118,9 @@ export default {
           whyUs.getBoundingClientRect().top <= 0 && 
           whyUs.getBoundingClientRect().bottom >= 0
         ) {
-          this.headerAddClass(this.header[0]);
+          this.headerIsWhite = true;
         } else {
-          this.headerRemoveClass(this.header[0]);
+          this.headerIsWhite = false;
         }
       }
     },
@@ -145,9 +135,9 @@ export default {
           itConsulting.getBoundingClientRect().top <= 0 && 
           itConsulting.getBoundingClientRect().bottom >= 0
         ) {
-          this.headerAddClass(this.header[0]);
+          this.headerIsWhite = true;
         } else {
-          this.headerRemoveClass(this.header[0]);
+          this.headerIsWhite = false;
         }
       }
     },
@@ -156,9 +146,9 @@ export default {
         const openSource = document.getElementById('open-source');
   
         if (openSource.getBoundingClientRect().top <= 0 && openSource.getBoundingClientRect().bottom >= 0) {
-          this.headerAddClass(this.header[0]);
+          this.headerIsWhite = true;
         } else {
-          this.headerRemoveClass(this.header[0]);
+          this.headerIsWhite = false;
         }
       }
     }
