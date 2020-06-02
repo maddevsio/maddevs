@@ -22,11 +22,14 @@
           We are Mad Devs Group Ltd.
         </p>
         <p class="privacy__text doc-text privacy__break-main-paragraph">
-          <a class="privacy__link" href="https://maddevs.io"
+          <a class="privacy__link" target="_blank" href="https://maddevs.io"
             >https://maddevs.io</a
           >
           and
-          <a class="privacy__link" href="https://maddevsgroup.co.uk/"
+          <a
+            class="privacy__link"
+            target="_blank"
+            href="https://maddevsgroup.co.uk/"
             >https://maddevsgroup.co.uk/</a
           >
           are websites operated by Mad Devs Group Ltd ("We"). We are registered
@@ -194,7 +197,12 @@
         <p class="privacy__paragraph paragraph">
           For more information on the privacy practices of Google, please visit
           the Google Privacy Terms web page:
-          https://policies.google.com/privacy?hl=en
+          <a
+            class="privacy__link"
+            href="https://policies.google.com/privacy?hl=en"
+            target="_blank"
+            >https://policies.google.com/privacy?hl=en</a
+          >
         </p>
         <p class="privacy__paragraph paragraph">
           Functionality cookies. These are used to recognise you when you return
@@ -247,9 +255,14 @@
         <p class="privacy__paragraph paragraph">
           You have the right to make a complaint at any time to the Information
           Commissioner's Office (ICO), the UK supervisory authority for data
-          protection issues (www.ico.org.uk). We would, however, appreciate the
-          chance to deal with your concerns before you approach the ICO so
-          please contact us in the first instance.
+          protection issues (<a
+            class="privacy__link"
+            href="https://ico.org.uk/"
+            target="_blank"
+            >www.ico.org.uk</a
+          >). We would, however, appreciate the chance to deal with your
+          concerns before you approach the ICO so please contact us in the first
+          instance.
         </p>
         <p class="privacy__paragraph paragraph">
           Please also use the Glossary to understand the meaning of some of the
@@ -386,19 +399,37 @@
           deemed to provide an adequate level of protection for personal data by
           the European Commission. For further details, see European Commission:
           Adequacy of the protection of personal data in non-EU countries.
+          <a
+            class="privacy__link"
+            href="https://ec.europa.eu/home-affairs/e-library/glossary/adequacy-decision_en"
+            target="_blank"
+            >European Commission: Adequacy of the protection of personal data in
+            non-EU countries</a
+          >
         </p>
         <p class="privacy__paragraph paragraph">
           Where we use certain service providers, we may use specific contracts
           approved by the European Commission which give personal data the same
-          protection it has in Europe. For further details, see European
-          Commission: Model contracts for the transfer of personal data to third
-          countries.
+          protection it has in Europe. For further details, see
+          <a
+            class="privacy__link"
+            href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/standard-contractual-clauses-scc_en"
+            target="_blank"
+            >European Commission: Model contracts for the transfer of personal
+            data to third countries</a
+          >.
         </p>
         <p class="privacy__paragraph paragraph">
           Where we use providers based in the US, we may transfer data to them
           if they are part of the Privacy Shield which requires them to provide
           similar protection to personal data shared between Europe and the US.
-          For further details, see European Commission: EU-US Privacy Shield.
+          For further details, see
+          <a
+            class="privacy__link"
+            href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/eu-us-data-transfers_en"
+            target="_blank"
+            >European Commission: EU-US Privacy Shield</a
+          >.
         </p>
         <h5 class="privacy__sec-title">
           Marketing
@@ -509,7 +540,10 @@
         <p class="privacy__paragraph paragraph">
           If you wish to be informed about what Personal Data we hold about you
           and if you want it to be removed from our systems, please contact us
-          on rock@maddevs.io
+          on
+          <a class="privacy__link" href="mailto:rock@maddevs.io" target="_blank"
+            >rock@maddevs.io</a
+          >
         </p>
         <p class="privacy__paragraph paragraph">
           Under certain circumstances, you have rights under data protection
