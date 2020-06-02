@@ -8,7 +8,7 @@ describe('Footer form', () => {
 
   beforeEach(() => {
     wrapper = mount(footerForm, {
-      stubs: ['ValidationProvider', 'ValidationObserver']
+      stubs: ['ValidationObserver', 'ValidationProvider']
     });
   });
 
