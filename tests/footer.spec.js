@@ -49,4 +49,25 @@ describe('Footer', () => {
       selector: '.gdpr'
     });
   });
+
+  test('correctly sets the current pages name to /nda and class', () => {
+    const $route = {
+      path: '/nda'
+    };
+
+    wrapper = shallowMount(Footer, {
+      mocks: {
+        $route
+      }
+    });
+
+    wrapper.vm.$data.currentPageName = 'nda';
+    expect(wrapper.vm.$route.path).toBe('/nda');
+    expect(wrapper.vm.$data.currentPageName).toBe('nda');
+
+    let wrapperClass = wrapper.findAll('.nda');
+    expect(wrapperClass).toEqual({
+      selector: '.nda'
+    });
+  });
 });
