@@ -1,17 +1,6 @@
 <template>
   <div class="infrastructure-optimisation__content-item">
-    <h3 class="infrastructure-optimisation__title title" v-if="title === 'Up to savings on infrastructure'">
-      <span class="infrastructure-optimisation__title-image-wrapp">
-        Up to
-        <img 
-          src="../../assets/img/Services/svg/percent-icon.svg" 
-          alt="fifty percent icon" 
-          class="infrastructure-optimisation__fifty-percent-icon"
-        >
-      </span>
-      <br> savings on <br> infrastructure
-    </h3>
-    <h3 class="infrastructure-optimisation__title title" v-else>{{ title }}</h3>
+    <h3 class="infrastructure-optimisation__title title">{{ title }}</h3>
     <h4 class="infrastructure-optimisation__sub-title sub-title">{{ subTitle }}</h4>
     <p class="infrastructure-optimisation__paragraph paragraph">{{ paragraph }}</p>
   </div>
@@ -58,27 +47,12 @@ export default {
     &__paragraph {
       padding-bottom: 46px;
     }
-
-    &__title-image-wrapp {
-      position: relative;
-    }
-
-    &__fifty-percent-icon {
-      position: absolute;
-      top: -34px;
-      left: 205px;
-    }
   }
 
   @media only screen and (max-width: 1560px) {
     .infrastructure-optimisation {
       &__content-item {
         max-width: 575px;
-      }
-
-      &__fifty-percent-icon {
-        height: 187px;
-        left: 182px;
       }
     }
   }
@@ -88,11 +62,6 @@ export default {
       &__content-item {
         max-width: 535px;
       }
-
-      &__fifty-percent-icon {
-        height: 179px;
-        left: 171px;
-      }
     }
   }
 
@@ -101,11 +70,6 @@ export default {
       &__content-item {
         max-width: 500px;
       }
-
-      &__fifty-percent-icon {
-        height: 168px;
-        left: 159px;
-      }
     }
   }
 
@@ -113,11 +77,6 @@ export default {
     .infrastructure-optimisation {
       &__content-item {
         max-width: 460px;
-      }
-
-      &__fifty-percent-icon {
-        height: 158px;
-        left: 146px;
       }
     }
   }
@@ -131,11 +90,6 @@ export default {
       &__title {
         max-width: 550px;
       }
-
-      &__fifty-percent-icon {
-        height: 185px;
-        left: 185px;
-      }
     }
   }
 
@@ -143,11 +97,6 @@ export default {
     .infrastructure-optimisation {
       &__title {
         max-width: 460px;
-      }
-
-      &__fifty-percent-icon {
-        height: 156px;
-        left: 148px;
       }
     }
   }
@@ -157,11 +106,6 @@ export default {
       &__title {
         max-width: 420px;
       }
-
-      &__fifty-percent-icon {
-        height: 150px;
-        left: 135px;
-      }
     }
   }
 
@@ -169,11 +113,6 @@ export default {
     .infrastructure-optimisation {
       &__title {
         max-width: 290px;
-      }
-
-      &__fifty-percent-icon {
-        height: 110px;
-        left: 88px;
       }
     }
   }
