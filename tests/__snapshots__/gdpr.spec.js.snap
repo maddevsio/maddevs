@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GDPR renders correctly 1`] = `
+<section
+  id="gdpr"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="gdpr__header"
+    >
+      <h3
+        class="gdpr__title title"
+      >
+        
+        GDPR Compliance Commitment by Mad Devs?
+      
+      </h3>
+       
+      <img
+        alt="GDPR image"
+        class="gdpr__image"
+        src="@/assets/img/common/docs.svg"
+      />
+    </div>
+     
+    <div
+      class="gdpr__content"
+    >
+      <p
+        class="gdpr__text doc-text"
+      >
+        
+        GDPR, General Data Protection Regulation, effective May 25, 2018
+        defines the clear procedure for how personal data of EU citizens
+        should be collected, modified, stored and processed. CDNvideo
+        understands the positive impact of the new data protection law and is
+        committed to stay compliant with GDPR for the sake of our customers
+        and partners based in European Union and European Economic Area.
+      
+      </p>
+       
+      <h5
+        class="gdpr__sec-title"
+      >
+        Data Processor Status
+      </h5>
+       
+      <p
+        class="gdpr__paragraph paragraph"
+      >
+        
+        In accordance with official GDPR terminology, CDNvideo has the status
+        of a Data Processor. If your company is a Data Controller under the
+        terms of the GDPR, and you need a written consent to process personal
+        data with us, please contact us via legal@cdnvideo.com to get our Data
+        Processing Addendum (DPA) document
+      
+      </p>
+       
+      <h5
+        class="gdpr__sec-title"
+      >
+        
+        Privacy Policy & Usage Agreement
+      
+      </h5>
+       
+      <p
+        class="gdpr__paragraph paragraph"
+      >
+        
+        We have made our Privacy Policy public for your convenience, you can
+        read or download it here. Our amended Usage Agreement is available
+        here. We appreciate any heads-up and improvement requests sent to us.
+        If you have any questions, updates or concerns related to these
+        documents please let us know via legal@cdnvideo.com.
+      
+      </p>
+       
+      <h5
+        class="gdpr__sec-title"
+      >
+        
+        Cookie Usage & Marketing Communications
+      
+      </h5>
+       
+      <p
+        class="gdpr__paragraph paragraph gdpr__break-paragraph"
+      >
+        
+        Our website uses cookies to identify you as our customer and send you
+        relevant offers and content. We want to make sure that it was you who
+        logged into the administration panel to manage your services. To
+        accept cookies, please click ‘Accept’ on the pop-up message below.
+      
+      </p>
+       
+      <br />
+       
+      <p
+        class="gdpr__paragraph paragraph"
+      >
+        
+        We also ask our customers for their explicit consent before sending
+        them any marketing communications. You are free to opt-out any time.
+        Our legal & compliance department will be happy to help you with
+        opt-in/opt-out issues, please contact them via legal@cdnvideo.com.
+      
+      </p>
+    </div>
+  </div>
+</section>
+`;
