@@ -169,15 +169,19 @@
           We use the following cookies:
         </p>
         <p class="privacy__paragraph paragraph">
-          Strictly necessary cookies. These are cookies that are required for
-          the operation of our website.
+          <span class="privacy__paragraph privacy__paragraph--bold paragraph"
+            >Strictly necessary cookies.</span
+          >
+          These are cookies that are required for the operation of our website.
         </p>
         <p class="privacy__paragraph paragraph">
-          Analytical or performance cookies. These allow us to recognise and
-          count the number of visitors and to see how visitors move around our
-          website when they are using it. This helps us to improve the way our
-          website works, for example, by ensuring that users are finding what
-          they are looking for easily.
+          <span class="privacy__paragraph privacy__paragraph--bold paragraph"
+            >Analytical or performance cookies.</span
+          >
+          These allow us to recognise and count the number of visitors and to
+          see how visitors move around our website when they are using it. This
+          helps us to improve the way our website works, for example, by
+          ensuring that users are finding what they are looking for easily.
         </p>
         <h5 class="privacy__sec-title">
           Google Analytics
@@ -205,16 +209,22 @@
           >
         </p>
         <p class="privacy__paragraph paragraph">
-          Functionality cookies. These are used to recognise you when you return
-          to our website. This enables us to personalise our content for you,
-          greet you by name and remember your preferences (for example, your
-          choice of language or region).
+          <span class="privacy__paragraph privacy__paragraph--bold paragraph"
+            >Functionality cookies.</span
+          >
+          These are used to recognise you when you return to our website. This
+          enables us to personalise our content for you, greet you by name and
+          remember your preferences (for example, your choice of language or
+          region).
         </p>
         <p class="privacy__paragraph paragraph">
-          Targeting cookies. These cookies record your visit to our website, the
-          pages you have visited and the links you have followed. We will use
-          this information to make our website and the advertising displayed on
-          it more relevant to your interests.
+          <span class="privacy__paragraph privacy__paragraph--bold paragraph"
+            >Targeting cookies.</span
+          >
+          These cookies record your visit to our website, the pages you have
+          visited and the links you have followed. We will use this information
+          to make our website and the advertising displayed on it more relevant
+          to your interests.
         </p>
         <p class="privacy__paragraph paragraph">
           You can block cookies by activating the setting on your browser that
@@ -433,7 +443,9 @@
         <p class="privacy__paragraph paragraph">
           We share your personal data within MadDevs companies. This will
           involve transferring your data outside the European Economic Area
-          (EEA).
+          <span class="privacy__paragraph privacy__paragraph--bold paragraph"
+            >(EEA).</span
+          >
         </p>
         <p class="privacy__paragraph paragraph">
           We ensure your personal data is protected by requiring all our group
@@ -599,33 +611,50 @@
           laws in relation to your personal data.
         </p>
         <p class="privacy__paragraph paragraph">
-          The right to access, update or delete the information we have on you.
+          <span class="privacy__paragraph privacy__paragraph--bold paragraph"
+            >The right to access, update or delete the information we have on
+            you.</span
+          >
           Whenever made possible, you can access, update or request deletion of
           your Personal Data directly within your account settings section. If
           you are unable to perform these actions yourself, please contact us to
           assist you.
         </p>
         <p class="privacy__paragraph paragraph">
-          The right of rectification. You have the right to have your
-          information rectified if that information is inaccurate or incomplete.
+          <span class="privacy__paragraph privacy__paragraph--bold paragraph"
+            >The right of rectification.</span
+          >
+          You have the right to have your information rectified if that
+          information is inaccurate or incomplete.
         </p>
         <p class="privacy__paragraph paragraph">
-          The right to object. You have the right to object to our processing of
-          your Personal Data.
+          <span class="privacy__paragraph privacy__paragraph--bold paragraph"
+            >The right to object.</span
+          >
+          You have the right to object to our processing of your Personal Data.
         </p>
         <p class="privacy__paragraph paragraph">
-          The right of restriction. You have the right to request that we
-          restrict the processing of your personal information.
+          <span class="privacy__paragraph privacy__paragraph--bold paragraph"
+            >The right of restriction.</span
+          >
+          You have the right to request that we restrict the processing of your
+          personal information.
         </p>
         <p class="privacy__paragraph paragraph">
-          The right to data portability. You have the right to be provided with
-          a copy of the information we have on you in a structured,
-          machine-readable and commonly used format.
+          <span class="privacy__paragraph privacy__paragraph--bold paragraph"
+            >The right to data portability.</span
+          >
+          You have the right to be provided with a copy of the information we
+          have on you in a structured, machine-readable and commonly used
+          format.
         </p>
         <p class="privacy__paragraph paragraph">
-          The right to withdraw consent. You also have the right to withdraw
-          your consent at any time where Mad Devs Group Ltd relied on your
-          consent to process your personal information.
+          <span class="privacy__paragraph privacy__paragraph--bold paragraph"
+            >The right to withdraw consent.</span
+          >
+          You also have the right to withdraw your consent at any time where Mad
+          Devs Group Ltd relied on your consent to process your personal
+          information.
         </p>
         <p class="privacy__paragraph paragraph">
           Please note that we may ask you to verify your identity before
@@ -634,9 +663,6 @@
           Data. For more information, please contact your local data protection
           authority in the European Economic Area (EEA).
         </p>
-
-        <!-- //! -->
-
         <h5 class="privacy__sec-title">
           No fee usually required
         </h5>
@@ -727,6 +753,10 @@ export default {
 
   &__paragraph {
     margin-bottom: 15px;
+
+    &--bold {
+      font-weight: bold;
+    }
   }
 
   &__list-wrap {
