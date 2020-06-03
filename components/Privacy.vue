@@ -746,7 +746,6 @@ export default {
     margin-top: 147px;
     margin-bottom: 53px;
     align-items: center;
-    justify-content: space-between;
   }
 
   &__content {
@@ -845,6 +844,14 @@ export default {
   .privacy {
     &__image {
       height: 180px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .privacy {
+    &__image {
+      margin-left: 15%;
     }
   }
 }

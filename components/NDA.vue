@@ -82,7 +82,6 @@ export default {
     margin-top: 147px;
     margin-bottom: 53px;
     align-items: center;
-    justify-content: space-between;
   }
 
   &__content {
@@ -125,6 +124,14 @@ export default {
   .nda {
     &__image {
       height: 180px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .nda {
+    &__image {
+      margin-left: 15%;
     }
   }
 }

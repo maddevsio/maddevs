@@ -103,7 +103,6 @@ export default {
     margin-top: 147px;
     margin-bottom: 53px;
     align-items: center;
-    justify-content: space-between;
   }
 
   &__content {
@@ -163,6 +162,14 @@ export default {
   }
 }
 
+@media only screen and (min-width: 1150px) {
+  .gdpr {
+    &__image {
+      margin-left: 15%;
+    }
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .gdpr {
     &__image {
@@ -201,6 +208,10 @@ export default {
       position: relative;
     }
 
+    &__title {
+      max-width: 480px;
+    }
+
     &__image {
       height: 140px;
       position: absolute;
@@ -210,10 +221,10 @@ export default {
   }
 }
 
-@media only screen and (max-width: 520px) and (min-width: 425px) {
+@media only screen and (max-width: 520px) and (min-width: 495px) {
   .gdpr {
     &__image {
-      top: -82px;
+      top: -95px;
     }
   }
 }
@@ -230,6 +241,15 @@ export default {
 
     &__sec-title {
       font-size: 27px;
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .gdpr {
+    &__image {
+      top: -93px;
+      right: 0;
     }
   }
 }
