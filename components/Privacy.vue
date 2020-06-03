@@ -734,8 +734,15 @@ export default {
   }
 
   &__list {
-    list-style: initial;
-    list-style-position: inside;
+    display: flex;
+    list-style: none;
+
+    &:before {
+      margin-right: 15px;
+      content: '\2022';
+      align-self: center;
+    }
+
     margin-bottom: 10px;
   }
 
