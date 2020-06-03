@@ -213,6 +213,7 @@ export default {
 
     &_first-project {
       width: 100%;
+      background-size: cover;
     }
   }
 
@@ -244,6 +245,7 @@ export default {
 
         &_first-project {
           width: 100%;
+          background-size: contain;
         }
       }
 
