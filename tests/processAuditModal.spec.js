@@ -1,14 +1,14 @@
 import {
   mount
 } from '@vue/test-utils';
-import footerForm from '@/components/Footer/footer-form';
+import processAuditModal from '@/components/ui/process-audit-modal';
 
-describe('Footer form', () => {
+describe('Process audit modal', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(footerForm, {
-      stubs: ['ValidationObserver', 'ValidationProvider']
+    wrapper = mount(processAuditModal, {
+      stubs: ['ValidationProvider', 'ValidationObserver', 'modal']
     });
   });
 
@@ -23,18 +23,19 @@ describe('Footer form', () => {
   // --------------------- //
 
   test('sets the correct default data', () => {
-    expect(typeof footerForm.data).toBe('function');
-    const defaultData = footerForm.data();
+    expect(typeof processAuditModal.data).toBe('function');
+    const defaultData = processAuditModal.data();
     expect(
       defaultData.agreeWithPrivacyPolicy &&
       defaultData.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
+    expect(defaultData.inputId).toEqual('process-audit');
   });
 
   test('has a functions', () => {
     expect(
-      typeof footerForm.methods.getPrivacyCheckboxState && 
-      typeof footerForm.methods.getDiscountOffersCheckboxState
+      typeof processAuditModal.methods.getPrivacyCheckboxState && 
+      typeof processAuditModal.methods.getDiscountOffersCheckboxState
     ).toBe('function');
   });
 

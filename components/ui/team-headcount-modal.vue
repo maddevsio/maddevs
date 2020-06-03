@@ -1,6 +1,6 @@
 <template>
-  <modal name="mobile" :clickToClose="false">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('mobile')">
+  <modal name="team-headcount" :clickToClose="false">
+    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('team-headcount')">
     <ValidationObserver v-slot="{ invalid }">
       <form class="form"> 
         <div class="fields-list">
@@ -19,18 +19,18 @@
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
-          <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name">Mobile expertise you are interested in</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need assistance with Kotlin development and UI/UX design" v-model="interesteMobileExpertise"/>
+          <ValidationProvider class="modal-field-item field-item" rules="max:500|required" v-slot="{ classes, errors }">
+            <p class="modal-field-name field-name required">Your question on team productivity​</p>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="How can I cope with miscommunication on the team and document things on time?" v-model="teamProductivityQuestion"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
         <FormCheckboxes
-          v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
-          v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
+          @getPrivacyCheckboxState="getPrivacyCheckboxState"
+          @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
-        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Get mobile help</button>
+        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">​Get advice on team</button>
       </form>
     </ValidationObserver>
   </modal>
@@ -40,18 +40,18 @@
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 
 export default {
-  name: 'mobile-modal',
+  name: 'team-headcount',
   components: {
     FormCheckboxes
   },
   data: () => ({
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    interesteMobileExpertise: '',
+    fullName: null,
+    email: null,
+    phoneNumber: null,
+    teamProductivityQuestion: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'mobile'
+    inputId: 'team-headcount'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -72,20 +72,20 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 768px) {
-		.form {
-      textarea {
-        height: 60px;
-        min-height: 60px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 475px) {
+  @media only screen and (max-width: 565px) {
 		.form {
       textarea {
         height: 79px;
         min-height: 79px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 374px) {
+		.form {
+      textarea {
+        height: 102px;
+        min-height: 102px;
       }
     }
   }

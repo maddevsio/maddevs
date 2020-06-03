@@ -1,14 +1,14 @@
 import {
   mount
 } from '@vue/test-utils';
-import footerForm from '@/components/Footer/footer-form';
+import technologyStackModal from '@/components/ui/technology-stack-modal';
 
-describe('Footer form', () => {
+describe('Technology stack modal', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(footerForm, {
-      stubs: ['ValidationObserver', 'ValidationProvider']
+    wrapper = mount(technologyStackModal, {
+      stubs: ['ValidationProvider', 'ValidationObserver', 'modal']
     });
   });
 
@@ -23,18 +23,19 @@ describe('Footer form', () => {
   // --------------------- //
 
   test('sets the correct default data', () => {
-    expect(typeof footerForm.data).toBe('function');
-    const defaultData = footerForm.data();
+    expect(typeof technologyStackModal.data).toBe('function');
+    const defaultData = technologyStackModal.data();
     expect(
       defaultData.agreeWithPrivacyPolicy &&
       defaultData.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
+    expect(defaultData.inputId).toEqual('technology-stack');
   });
 
   test('has a functions', () => {
     expect(
-      typeof footerForm.methods.getPrivacyCheckboxState && 
-      typeof footerForm.methods.getDiscountOffersCheckboxState
+      typeof technologyStackModal.methods.getPrivacyCheckboxState && 
+      typeof technologyStackModal.methods.getDiscountOffersCheckboxState
     ).toBe('function');
   });
 

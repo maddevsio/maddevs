@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CaseStudies component renders correctly 1`] = `
+exports[`CareersForm component renders correctly 1`] = `
 <section
   class="careers"
   id="careers"
@@ -17,7 +17,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         src="@/assets/img/Careers/svg/careers_logo.svg"
       />
        
-      <validationobserver />
+      <validationobserver-stub />
     </div>
   </div>
 </section>

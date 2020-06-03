@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="quick-project_start__button-wrap">
-        <buttonTrigger :buttonInnerText="buttonInnerText" class="red-text-and-border"/>
+        <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="red-text-and-border"/>
       </div>
     </div>
   </section>
@@ -56,7 +56,8 @@ export default {
           paragraph: 'You will get to know our team and we will organise the process.'
         }
       ],
-      buttonInnerText: 'Order a project from us'
+      buttonInnerText: 'Order a project from us',
+      modalWindowName: 'order-project-from-us'
     };
   }
 };
