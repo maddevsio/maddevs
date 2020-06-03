@@ -768,13 +768,12 @@ export default {
   &__list {
     display: flex;
     list-style: none;
+    margin-bottom: 10px;
 
-    &:before {
+    &::before {
       margin-right: 15px;
       content: '\2022';
     }
-
-    margin-bottom: 10px;
   }
 
   &__title {
