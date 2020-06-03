@@ -23,9 +23,10 @@
             <navigationList v-if="currentPageName === 'projects'" />
           </div>
           <div class="icon-item">
-            <img src="../assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" v-if="currentPageName === 'index'">
-            <img src="../assets/img/Services/svg/make-partner.svg" alt="Make Partner Logotype" v-if="currentPageName === 'services'">
-          </div>
+            <img src="@/assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" v-if="currentPageName === 'index'">
+            <img src="@/assets/img/Services/svg/order-a-project.svg" alt="Order a Project Logotype" v-if="currentPageName === 'services'" class="default-image">
+            <img src="@/assets/img/Services/svg/order-a-project-hover.svg" alt="Make Partner Logotype" v-if="currentPageName === 'services'" class="hover-image">
+          </div> 
         </div>
         <navigationList v-if="currentPageName !== 'projects'" />
       </div>
@@ -147,6 +148,20 @@ export default {
         margin-bottom: -140px;
         margin-right: 40px;
       }
+
+      &:hover {
+        .hover-image {
+          display: block;
+        }
+
+        .default-image {
+          display: none;
+        }
+      }
+    }
+
+    .hover-image {
+      display: none;
     }
   }
 

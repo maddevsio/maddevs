@@ -1,14 +1,14 @@
 import {
   mount
 } from '@vue/test-utils';
-import footerForm from '@/components/Footer/footer-form';
+import OrderProjectFromUsModal from '@/components/ui/order-project-from-us-modal';
 
-describe('Footer form', () => {
+describe('Order Project From Us Modal', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(footerForm, {
-      stubs: ['ValidationObserver', 'ValidationProvider']
+    wrapper = mount(OrderProjectFromUsModal, {
+      stubs: ['ValidationProvider', 'ValidationObserver', 'modal']
     });
   });
 
@@ -23,18 +23,19 @@ describe('Footer form', () => {
   // --------------------- //
 
   test('sets the correct default data', () => {
-    expect(typeof footerForm.data).toBe('function');
-    const defaultData = footerForm.data();
+    expect(typeof OrderProjectFromUsModal.data).toBe('function');
+    const defaultData = OrderProjectFromUsModal.data();
     expect(
       defaultData.agreeWithPrivacyPolicy &&
       defaultData.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
+    expect(defaultData.inputId).toEqual('order-project-from-us');
   });
 
   test('has a functions', () => {
     expect(
-      typeof footerForm.methods.getPrivacyCheckboxState && 
-      typeof footerForm.methods.getDiscountOffersCheckboxState
+      typeof OrderProjectFromUsModal.methods.getPrivacyCheckboxState && 
+      typeof OrderProjectFromUsModal.methods.getDiscountOffersCheckboxState
     ).toBe('function');
   });
 

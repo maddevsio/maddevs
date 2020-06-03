@@ -1,10 +1,11 @@
 <template>
-  <header class="header" :class="{'mobile-menu_is-open': mobileMenuIsOpen }">
+  <header class="header" :class="{'mobile-menu_is-open': mobileMenuIsOpen, 'white': headerIsWhite}">
     <div class="container">
       <div class="header__header-content_wrap">
         <div class="header__left-nav_bar">
           <router-link :to="`/`">
-            <img src="../assets/img/common/logo.svg" alt="Logotype" class="header__header-logo">
+            <img src="@/assets/img/Header/logo_black.svg" alt="Logotype" class="header__header-logo" v-if="headerIsWhite">
+            <img src="@/assets/img/common/logo.svg" alt="Logotype" class="header__header-logo" v-else>
           </router-link>
           <nav class="header__header-routes_links">
             <router-link to="/">About</router-link>
@@ -18,13 +19,13 @@
           <div class="header__right-text_content">
             <div class="header__soc-links_wrap">
               <a href="https://twitter.com/maddevsio" target="_blank" class="header__twitter-link header__soc-link">
-                <img src="../assets/img/Header/twitter-icon.svg" alt="Twitter">
+                <img src="@/assets/img/Header/twitter-icon.svg" alt="Twitter">
               </a>
               <a href="https://ru.linkedin.com/company/mad-devs" target="_blank" class="header__lindekin-link header__soc-link">
-                <img src="../assets/img/Header/lindekin-icon.svg" alt="Lindekin">
+                <img src="@/assets/img/Header/lindekin-icon.svg" alt="Lindekin">
               </a>
               <a href="https://www.facebook.com/maddevsio" target="_blank" class="header__facebook-link header__soc-link">
-                <img src="../assets/img/Header/facebook-icon.svg" alt="Facebook">
+                <img src="@/assets/img/Header/facebook-icon.svg" alt="Facebook">
               </a>
             </div>
             <div class="header__phones-dropdown_wrap">
@@ -85,12 +86,71 @@ export default {
         country: 'united-kingdom'
       },
       modalWindowName: 'contact-me',
-      mobileMenuIsOpen: false
+      mobileMenuIsOpen: false,
+      headerIsWhite: false
     };
+  },
+  mounted () {
+    window.addEventListener('scroll', this.mainPageHandleScroll);
+    window.addEventListener('scroll', this.servicesPageHandleScroll);
+    window.addEventListener('scroll', this.projectsPageHandleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.mainPageHandleScroll);
+    window.removeEventListener('scroll', this.servicesPageHandleScroll);
+    window.removeEventListener('scroll', this.projectsPageHandleScroll);
   },
   methods: {
     getMobileMenuState(mobileMenuDisplayState) {
       this.mobileMenuIsOpen = mobileMenuDisplayState;
+    },
+    mainPageHandleScroll() {
+      if ($nuxt.$route.name === 'index') {
+        const customerTestimonials = document.getElementById('customer-testimonials');
+        const meetOurExperts = document.getElementById('meet-our-experts');
+        const whyUs = document.getElementById('why-us');
+
+        if (
+          customerTestimonials.getBoundingClientRect().top <= 0 && 
+          customerTestimonials.getBoundingClientRect().bottom >= 0 ||
+          meetOurExperts.getBoundingClientRect().top <= 0 && 
+          meetOurExperts.getBoundingClientRect().bottom >= 0 ||
+          whyUs.getBoundingClientRect().top <= 0 && 
+          whyUs.getBoundingClientRect().bottom >= 0
+        ) {
+          this.headerIsWhite = true;
+        } else {
+          this.headerIsWhite = false;
+        }
+      }
+    },
+    servicesPageHandleScroll() {
+      if ($nuxt.$route.name === 'services') {
+        const infrastructureOptimisation = document.getElementById('infrastructure-optimisation');
+        const itConsulting = document.getElementById('it-consulting');
+  
+        if (
+          infrastructureOptimisation.getBoundingClientRect().top <= 0 && 
+          infrastructureOptimisation.getBoundingClientRect().bottom >= 0 ||
+          itConsulting.getBoundingClientRect().top <= 0 && 
+          itConsulting.getBoundingClientRect().bottom >= 0
+        ) {
+          this.headerIsWhite = true;
+        } else {
+          this.headerIsWhite = false;
+        }
+      }
+    },
+    projectsPageHandleScroll() {
+      if ($nuxt.$route.name === 'projects') {
+        const openSource = document.getElementById('open-source');
+  
+        if (openSource.getBoundingClientRect().top <= 0 && openSource.getBoundingClientRect().bottom >= 0) {
+          this.headerIsWhite = true;
+        } else {
+          this.headerIsWhite = false;
+        }
+      }
     }
   }
 };
@@ -103,7 +163,7 @@ export default {
     width: 100%;
     position: fixed;
     z-index: 2;
-    padding-top: 155px;
+    padding-top: 144px;
     background: $header-gradient--black-transparent;
 
     button {
@@ -231,6 +291,10 @@ export default {
         top: 20px;
       }
     }
+  }
+
+  .white {
+    background: $header-gradient--white-transparent;
   }
 
   .mobile-menu_is-open {

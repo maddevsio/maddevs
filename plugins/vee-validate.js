@@ -20,19 +20,6 @@ extend('required', {
   message: 'This field is required'
 });
 
-extend('oneOf', {
-  params: ['linkedin'],
-  validate(value, { linkedin }) {
-    console.log(linkedin, value);
-    return (
-      !!((linkedin && !value) ||
-      (!linkedin && value) ||
-      (!linkedin && !value))
-    );
-  },
-  message: 'One of the two fields is required'
-});
-
 extend('email', {
   ...email,
   message: 'Invalid email address. Please use your work email.'

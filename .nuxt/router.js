@@ -3,14 +3,18 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _669089e6 = () => interopDefault(import('../pages/careers.vue' /* webpackChunkName: "pages/careers" */))
-const _05d1c3d2 = () => interopDefault(import('../pages/projects.vue' /* webpackChunkName: "pages/projects" */))
-const _3971ac94 = () => interopDefault(import('../pages/services.vue' /* webpackChunkName: "pages/services" */))
-const _4f2234aa = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
-const _369337e8 = () => interopDefault(import('../pages/_lang/index.vue' /* webpackChunkName: "pages/_lang/index" */))
-const _c816326a = () => interopDefault(import('../pages/_lang/careers.vue' /* webpackChunkName: "pages/_lang/careers" */))
-const _1e3a0fd4 = () => interopDefault(import('../pages/_lang/projects.vue' /* webpackChunkName: "pages/_lang/projects" */))
-const _08a11490 = () => interopDefault(import('../pages/_lang/services.vue' /* webpackChunkName: "pages/_lang/services" */))
+const _67b5b601 = () => interopDefault(import('../pages/careers.vue' /* webpackChunkName: "pages/careers" */))
+const _db465bfa = () => interopDefault(import('../pages/gdpr.vue' /* webpackChunkName: "pages/gdpr" */))
+const _3d243492 = () => interopDefault(import('../pages/nda.vue' /* webpackChunkName: "pages/nda" */))
+const _6ad9b144 = () => interopDefault(import('../pages/projects.vue' /* webpackChunkName: "pages/projects" */))
+const _afeee57c = () => interopDefault(import('../pages/services.vue' /* webpackChunkName: "pages/services" */))
+const _638a5c9e = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _491ace48 = () => interopDefault(import('../pages/_lang/index.vue' /* webpackChunkName: "pages/_lang/index" */))
+const _f3004a82 = () => interopDefault(import('../pages/_lang/careers.vue' /* webpackChunkName: "pages/_lang/careers" */))
+const _c305d3f6 = () => interopDefault(import('../pages/_lang/gdpr.vue' /* webpackChunkName: "pages/_lang/gdpr" */))
+const _2bd7cd16 = () => interopDefault(import('../pages/_lang/nda.vue' /* webpackChunkName: "pages/_lang/nda" */))
+const _f5e4cb40 = () => interopDefault(import('../pages/_lang/projects.vue' /* webpackChunkName: "pages/_lang/projects" */))
+const _62830044 = () => interopDefault(import('../pages/_lang/services.vue' /* webpackChunkName: "pages/_lang/services" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -30,8 +34,16 @@ export const routerOptions = {
 
   routes: [{
     path: "/careers",
-    component: _669089e6,
+    component: _67b5b601,
     name: "careers"
+  }, {
+    path: "/gdpr",
+    component: _db465bfa,
+    name: "gdpr"
+  }, {
+    path: "/nda",
+    component: _3d243492,
+    name: "nda"
   }, {
     path: "/projects",
     component: _05d1c3d2,
@@ -50,8 +62,16 @@ export const routerOptions = {
     name: "lang"
   }, {
     path: "/:lang/careers",
-    component: _c816326a,
+    component: _f3004a82,
     name: "lang-careers"
+  }, {
+    path: "/:lang/gdpr",
+    component: _c305d3f6,
+    name: "lang-gdpr"
+  }, {
+    path: "/:lang/nda",
+    component: _2bd7cd16,
+    name: "lang-nda"
   }, {
     path: "/:lang/projects",
     component: _1e3a0fd4,

@@ -32,12 +32,15 @@ $text-shadow--black: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 $accent-color--red: #ff0000;
 $gradient--red-orange: linear-gradient(112deg, #f34f53, #fc944e);
 $header-gradient--black-transparent: linear-gradient(180deg, #010614 0%, rgba(1, 6, 20, 0.991353) 5.95%, rgba(1, 6, 19, 0.96449) 11.89%, rgba(1, 6, 19, 0.91834) 17.84%, rgba(1, 5, 17, 0.852589) 23.78%, rgba(1, 5, 16, 0.768225) 29.73%, rgba(1, 4, 13, 0.668116) 35.68%, rgba(1, 4, 11, 0.557309) 41.62%, rgba(0, 3, 9, 0.442691) 47.57%, rgba(0, 2, 7, 0.331884) 53.51%, rgba(0, 1, 5, 0.231775) 59.46%, rgba(0, 1, 3, 0.147411) 65.41%, rgba(0, 1, 2, 0.0816599) 71.35%, rgba(0, 0, 1, 0.03551) 77.3%, rgba(0, 0, 0, 0.0086472) 83.24%, rgba(0, 0, 0, 0) 89.19%);
+$header-gradient--white-transparent: linear-gradient(180deg, #F2F2F2 0%, rgba(242, 242, 242, 0.991353) 5.95%, rgba(242, 242, 242, 0.96449) 11.89%, rgba(242, 242, 242, 0.91834) 17.84%, rgba(242, 242, 242, 0.852589) 23.78%, rgba(242, 242, 242, 0.768225) 29.73%, rgba(242, 242, 242, 0.668116) 35.68%, rgba(242, 242, 242, 0.557309) 41.62%, rgba(242, 242, 242, 0.442691) 47.57%, rgba(242, 242, 242, 0.331884) 53.51%, rgba(242, 242, 242, 0.231775) 59.46%, rgba(242, 242, 242, 0.147411) 65.41%, rgba(242, 242, 242, 0.0816599) 71.35%, rgba(242, 242, 242, 0.03551) 77.3%, rgba(242, 242, 242, 0.0086472) 83.24%, rgba(242, 242, 242, 0) 89.19%);
 $border-color--grey: #96969c;
 $border-color--black: #000;
 $border-color--grey-light: #e8e8e8;
+$border-color--grey-light-outsourcing-section: #f2f2f2;
 $border-color--red: #ec1c24;
 $border-color--grey-dark-transparent: rgba(150, 150, 156, 0.2);
 $border-color--grey-light: #f2f2f2;
+$border-color--grey-dark: #3b3b3b;
 
 $white-016: rgba(255, 255, 255, 0.16);
 $dark-04: rgba(94, 108, 132, 0.4);

@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer :class="`footer ${currentPageName}`">
     <div class="container">
 			<div class="footer__content">
 				<div class="footer__text-content">
@@ -16,9 +16,9 @@
 			<div class="footer__bottom-links-line">
 				<div class="footer__left-bottom_links">
 					<p class="footer__company-name">© Mad Devs - {{ currentYear }}</p>
-					<a href="https://maddevs.io/gdpr/" class="footer__bottom-link">GDPR Compliance Commitment</a>
-					<a href="#" class="footer__bottom-link">Privacy Policy</a>
-					<a href="https://maddevs.io/nda/" class="footer__bottom-link">Non-Disclosure Agreement (NDA)</a>
+					<a href="/gdpr" target="_blank" class="footer__bottom-link">GDPR Compliance Commitment</a>
+					<a href="/privacy" target="_blank" class="footer__bottom-link">Privacy Policy</a>
+					<a href="/nda" target="_blank" class="footer__bottom-link">Non-Disclosure Agreement (NDA)</a>
 				</div>
 				<footerSocialNetworkBar />
 			</div>
@@ -38,9 +38,15 @@ export default {
     footerContacts,
     footerSocialNetworkBar
   },
+  mounted() {
+    if ($nuxt.$route.name) {
+      this.currentPageName = $nuxt.$route.name;
+    }
+  },
   data() {
     return {
-      currentYear: new Date().getFullYear()
+      currentYear: new Date().getFullYear(),
+      currentPageName: ''
     };
   }
 };
@@ -104,6 +110,14 @@ export default {
 		}
 	}
 
+	.gdpr,
+	.privacy,
+	.nda {
+		padding-top: 109px;
+		margin-top: 293px;
+		border-top: 1px solid $border-color--grey-dark;
+	}
+
 	@media only screen and (max-width: 1320px) {
 		.footer {
 			&__bottom-link,
@@ -160,6 +174,13 @@ export default {
 				font-size: 100px;
 			}
 		}
+
+		.gdpr,
+		.privacy,
+		.nda {
+			padding-top: 90px;
+			margin-top: 150px;
+		}
 	}
 
 	@media only screen and (max-width: 768px) {
@@ -202,6 +223,13 @@ export default {
 			&__main-title {
 				font-size: 75px;
 			}
+		}
+
+		.gdpr,
+		.privacy,
+		.nda {
+			margin-top: 53px;
+			padding-top: 60px;
 		}
 	}
 
