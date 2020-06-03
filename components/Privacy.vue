@@ -604,7 +604,7 @@
           If you wish to be informed about what Personal Data we hold about you
           and if you want it to be removed from our systems, please contact us
           on
-          <a class="privacy__link" href="mailto:rock@maddevs.io" target="_blank"
+          <a class="privacy__link" href="mailto:rock@maddevs.io"
             >rock@maddevs.io</a
           >
         </p>

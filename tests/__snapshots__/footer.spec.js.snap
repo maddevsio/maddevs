@@ -55,6 +55,7 @@ exports[`Footer renders correctly 1`] = `
         <a
           class="footer__bottom-link"
           href="/gdpr"
+          target="_blank"
         >
           GDPR Compliance Commitment
         </a>
@@ -62,6 +63,7 @@ exports[`Footer renders correctly 1`] = `
         <a
           class="footer__bottom-link"
           href="/privacy"
+          target="_blank"
         >
           Privacy Policy
         </a>
@@ -69,6 +71,7 @@ exports[`Footer renders correctly 1`] = `
         <a
           class="footer__bottom-link"
           href="/nda"
+          target="_blank"
         >
           Non-Disclosure Agreement (NDA)
         </a>

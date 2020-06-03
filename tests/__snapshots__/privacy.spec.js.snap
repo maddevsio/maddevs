@@ -1252,7 +1252,6 @@ exports[`Privacy renders correctly 1`] = `
         <a
           class="privacy__link"
           href="mailto:rock@maddevs.io"
-          target="_blank"
         >
           rock@maddevs.io
         </a>
