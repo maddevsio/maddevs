@@ -1,20 +1,29 @@
 <template>
   <div class="it-outsourcing__outsourcing-content">
     <div class="it-outsourcing__content_wrapper">
-      <h3 class="it-outsourcing__title title" v-if="title === 'Teams'">
+      <h3 class="it-outsourcing__title title teams-hover-title" v-if="title === 'Teams'">
         <span>Tea</span>
         <img 
-          class="it-outsourcing__teams-title-icon title-icon" 
-          src="../../assets/img/Services/svg/teams-sub-title-symbol.svg" 
+          class="it-outsourcing__title-icon title-icon" 
+          src="@/assets/img/Services/svg/teams-sub-title-symbol.svg" 
           alt="teams-sub-title-symbol"
         />
         <span class="it-outsourcing__last-character last-character">s</span>
       </h3>
-      <h3 class="it-outsourcing__title title" v-else>{{ title }}</h3>
+      <h3 class="it-outsourcing__title title individuals-hover-title" v-if="title === 'Individuals'">
+        <span>Individ</span>
+        <img 
+          class="it-outsourcing__title-icon title-icon" 
+          src="@/assets/img/Services/svg/individuals-diamond.svg" 
+          alt="individuals-sub-title-symbol"
+        />
+        <span class="it-outsourcing__last-character last-character">als</span>
+      </h3>
+      <h3 class="it-outsourcing__title title default-title">{{ title }}</h3>
       <h4 class="it-outsourcing__sub-title sub-title">{{ subTitle }}</h4>
       <p class="it-outsourcing__paragraph paragraph">{{ paragraph }}</p>
     </div>
-    <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName"/>
+    <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="it-outsourcing__button-trigger"/>
   </div>
 </template>
 
@@ -56,7 +65,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .it-outsourcing {
-    button {
+    &__button-trigger {
       width: 450px;
     }
 
@@ -65,6 +74,13 @@ export default {
       flex-direction: column;
       justify-content: space-between;
       max-width: 725px;
+    }
+
+    &__title,
+    &__sub-title,
+    &__paragraph,
+    &__button-trigger {
+      color: $text-color--grey;
     }
 
     &__title {
@@ -77,24 +93,66 @@ export default {
       padding-bottom: 46px;
     }
 
-    &__teams-title-icon {
+    &__title-icon {
+      margin-top: -15px;
       margin-left: -24px;
     }
   }
 
-  .teams * {
-    color: $text-color--grey-light;
-
+  .teams {
     .it-outsourcing__paragraph {
       width: 535px;
     }
+
+    .teams-hover-title {
+      display: none;
+    }
+
+    &:hover {
+      .teams-hover-title  {
+        display: block;
+      }
+    }
   }
 
-  .individuals * {
-    color: $text-color--grey;
+  .individuals {
+    .it-outsourcing__title-icon {
+      padding-right: 14px;
+    }
 
     .it-outsourcing__paragraph {
       width: 575px;
+    }
+
+    .individuals-hover-title {
+      display: none;
+    }
+
+    &:hover {
+      .individuals-hover-title {
+        display: block;
+      }
+    }
+  }
+
+  .teams,
+  .individuals {
+    &:hover {
+      .it-outsourcing__title,
+      .it-outsourcing__paragraph,
+      .it-outsourcing__sub-title,
+      .it-outsourcing__button-trigger {
+        color: $text-color--grey-light;
+        transition: 0.3s;
+      }
+
+      .default-title {
+        display: none;
+      }
+
+      .it-outsourcing__button-trigger {
+        border-color: $border-color--grey-light-outsourcing-section;
+      }
     }
   }
 
