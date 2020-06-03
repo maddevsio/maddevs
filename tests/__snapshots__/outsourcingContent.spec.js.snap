@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Outsourcing content renders correctly 1`] = `
+<div
+  class="it-outsourcing__outsourcing-content"
+>
+  <div
+    class="it-outsourcing__content_wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <h3
+      class="it-outsourcing__title title default-title"
+    >
+      Title
+    </h3>
+     
+    <h4
+      class="it-outsourcing__sub-title sub-title"
+    >
+      Sub title
+    </h4>
+     
+    <p
+      class="it-outsourcing__paragraph paragraph"
+    >
+      Paragraph
+    </p>
+  </div>
+   
+  <button
+    class="button-default it-outsourcing__button-trigger"
+  >
+    
+  Button inner text
+
+  </button>
+</div>
+`;
