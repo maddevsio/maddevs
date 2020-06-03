@@ -19,7 +19,7 @@ exports[`Header renders correctly 1`] = `
           <img
             alt="Logotype"
             class="header__header-logo"
-            src="../assets/img/common/logo.svg"
+            src="@/assets/img/common/logo.svg"
           />
         </router-link-stub>
          
@@ -76,7 +76,7 @@ exports[`Header renders correctly 1`] = `
             >
               <img
                 alt="Twitter"
-                src="../assets/img/Header/twitter-icon.svg"
+                src="@/assets/img/Header/twitter-icon.svg"
               />
             </a>
              
@@ -87,7 +87,7 @@ exports[`Header renders correctly 1`] = `
             >
               <img
                 alt="Lindekin"
-                src="../assets/img/Header/lindekin-icon.svg"
+                src="@/assets/img/Header/lindekin-icon.svg"
               />
             </a>
              
@@ -98,7 +98,7 @@ exports[`Header renders correctly 1`] = `
             >
               <img
                 alt="Facebook"
-                src="../assets/img/Header/facebook-icon.svg"
+                src="@/assets/img/Header/facebook-icon.svg"
               />
             </a>
           </div>
