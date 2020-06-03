@@ -95,6 +95,17 @@ export default {
   position: relative;
   z-index: 99;
 
+  @media only screen and (min-width: 1220px) {
+    .single-project {
+      &__background {
+        &_first-project {
+          width: 100%;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 1220px) {
     .single-project {
       &__content-wrap {
@@ -213,7 +224,7 @@ export default {
 
     &_first-project {
       width: 100%;
-      background-size: cover;
+      background-size: contain;
     }
   }
 
@@ -222,13 +233,13 @@ export default {
       &__background {
         background-size: contain;
 
-        &_guardrails {
-          left: 4.1px;
+        &_first-project {
+          width: 100%;
+          background-size: cover;
         }
 
-        &_first-project {
-          background-size: cover;
-          width: 100%;
+        &_guardrails {
+          left: 4.1px;
         }
       }
     }
