@@ -3,7 +3,7 @@
     <div class="container">
       <div class="gdpr__header">
         <h3 class="gdpr__title title">
-          GDPR Compliance Commitment by Mad Devs?
+          Mad Devs’ GDPR Compliance Commitment
         </h3>
         <img
           class="gdpr__image"
@@ -13,55 +13,70 @@
       </div>
       <div class="gdpr__content">
         <p class="gdpr__text doc-text">
-          GDPR, General Data Protection Regulation, effective May 25, 2018
-          defines the clear procedure for how personal data of EU citizens
-          should be collected, modified, stored and processed. CDNvideo
-          understands the positive impact of the new data protection law and is
-          committed to stay compliant with GDPR for the sake of our customers
-          and partners based in European Union and European Economic Area.
+          We are committed to stay compliant with General Data Protection
+          Regulation (GDPR) for the sake of our customers, partners and staff.
+          Personally identifiable information that belongs to EU citizens is
+          subject to rules, restrictions and limitations stated in GDPR dated
+          May 25, 2018.
         </p>
-        <h5 class="gdpr__sec-title">Data Processor Status</h5>
+        <p class="gdpr__text doc-text">
+          <span class="gdpr__text gdpr__text--bold">Important note.</span> Our
+          software development and infrastructure optimization departments have
+          worked with projects requiring full GDPR compliance, and if you need
+          help with any personal data to be properly collected, modified, stored
+          and processed, please let us know.
+        </p>
+        <h5 class="gdpr__sec-title">Data Processing Documentation</h5>
         <p class="gdpr__paragraph paragraph">
-          In accordance with official GDPR terminology, CDNvideo has the status
-          of a Data Processor. If your company is a Data Controller under the
-          terms of the GDPR, and you need a written consent to process personal
-          data with us, please contact us via
-          <a class="gdpr__link" href="mailto:legal@cdnvideo.com"
-            >legal@cdnvideo.com</a
+          Under the terms of GDPR, Mad Devs is a Data Processor. In case you are
+          a Data Controller according to the official GDPR terminology, our
+          legal department is ready to provide a written consent for processing
+          of any personal data of individuals from European Union and European
+          Economic Area. We are also ready to provide our Data Processing
+          Addendum (DPA) upon your request. Please notify our management via
+          <a class="gdpr__link" href="mailto:rock@maddevs.io"
+            >rock@maddevs.io</a
           >
-          to get our Data Processing Addendum (DPA) document
+          to get help.
         </p>
         <h5 class="gdpr__sec-title">
-          Privacy Policy & Usage Agreement
+          Privacy Policy
         </h5>
         <p class="gdpr__paragraph paragraph">
-          We have made our Privacy Policy public for your convenience, you can
-          read or download it here. Our amended Usage Agreement is available
-          here. We appreciate any heads-up and improvement requests sent to us.
-          If you have any questions, updates or concerns related to these
-          documents please let us know via
-          <a class="gdpr__link" href="mailto:legal@cdnvideo.com"
-            >legal@cdnvideo.com</a
+          For your convenience, our Privacy Policy is available on our website
+          in PDF format, you can also download it to your computer if needed. If
+          you have any questions or concerns related to this document, please
+          let us know via
+          <a class="gdpr__link" href="mailto:rock@maddevs.io">rock@maddevs.io</a
           >.
         </p>
         <h5 class="gdpr__sec-title">
-          Cookie Usage & Marketing Communications
+          Cookie Usage
         </h5>
-        <p class="gdpr__paragraph paragraph gdpr__break-paragraph">
-          Our website uses cookies to identify you as our customer and send you
-          relevant offers and content. We want to make sure that it was you who
-          logged into the administration panel to manage your services. To
-          accept cookies, please click ‘Accept’ on the pop-up message below.
-        </p>
-        <br />
         <p class="gdpr__paragraph paragraph">
-          We also ask our customers for their explicit consent before sending
-          them any marketing communications. You are free to opt-out any time.
-          Our legal & compliance department will be happy to help you with
-          opt-in/opt-out issues, please contact them via
-          <a class="gdpr__link" href="mailto:legal@cdnvideo.com"
-            >legal@cdnvideo.com</a
+          Our website uses cookies to help us define your core interests and
+          make you relevant service offerings. The “Accept” button on our pop-up
+          notification will enable you to accept cookies.
+        </p>
+        <h5 class="gdpr__sec-title">
+          Marketing Communications
+        </h5>
+        <p class="gdpr__paragraph paragraph">
+          To get information on our recent blog posts, hottest discounts and
+          newest services, you can subscribe to the Mad Devs Newsletter. You can
+          unsubscribe at any time. If you want to make sure that your data has
+          been amended or deleted, please contact us via
+          <a class="gdpr__link" href="mailto:rock@maddevs.io">rock@maddevs.io</a
           >.
+        </p>
+        <p class="gdpr__paragraph gdpr__paragraph--bold paragraph">
+          We appreciate your collaboration and openness with regard to any legal
+          issues!
+        </p>
+        <p
+          class="gdpr__paragraph gdpr__paragraph--bold gdpr__paragraph--italic paragraph"
+        >
+          Team Mad Devs
         </p>
       </div>
     </div>
@@ -104,6 +119,19 @@ export default {
   &__link {
     color: $text-color--white;
     text-decoration: none;
+  }
+
+  &__paragraph,
+  &__text {
+    margin-bottom: 15px;
+
+    &--bold {
+      font-weight: bold;
+    }
+
+    &--italic {
+      font-style: italic;
+    }
   }
 
   &__sec-title {
