@@ -171,18 +171,19 @@ export default {
       height: 140px;
       position: absolute;
       right: 39px;
-      top: -72px;
+      top: -125px;
     }
   }
 }
 
-@media only screen and (max-width: 520px) and (min-width: 425px) {
+@media only screen and (max-width: 520px) and (min-width: 460px) {
   .nda {
     &__image {
       top: -82px;
     }
   }
 }
+
 @media only screen and (max-width: 520px) {
   .nda {
     &__image {
@@ -195,6 +196,14 @@ export default {
 
     &__sec-title {
       font-size: 27px;
+    }
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .nda {
+    &__image {
+      top: -60px;
     }
   }
 }
