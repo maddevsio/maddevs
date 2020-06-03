@@ -70,4 +70,25 @@ describe('Footer', () => {
       selector: '.nda'
     });
   });
+
+  test('correctly sets the current pages name to /privacy and class', () => {
+    const $route = {
+      path: '/privacy'
+    };
+
+    wrapper = shallowMount(Footer, {
+      mocks: {
+        $route
+      }
+    });
+
+    wrapper.vm.$data.currentPageName = 'privacy';
+    expect(wrapper.vm.$route.path).toBe('/privacy');
+    expect(wrapper.vm.$data.currentPageName).toBe('privacy');
+
+    let wrapperClass = wrapper.findAll('.privacy');
+    expect(wrapperClass).toEqual({
+      selector: '.privacy'
+    });
+  });
 });

@@ -1,0 +1,39 @@
+<template>
+  <main class="main">
+    <Privacy />
+  </main>
+</template>
+
+<script>
+import Privacy from '@/components/Privacy';
+
+export default {
+  name: 'main-privacy',
+  components: {
+    Privacy
+  },
+  data() {
+    return {
+      title: 'Mad Devs Privacy',
+      description: 'Example',
+      ogUrl: 'https://maddevs.io/en/privacy'
+    };
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        { name: 'description', content: this.description },
+        { property: 'og:url', content: this.ogUrl },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: this.title },
+        { property: 'og:description', content: this.description },
+        {
+          property: 'og:image',
+          content: 'https://maddevs.io/static/Open-Graph.png'
+        }
+      ]
+    };
+  }
+};
+</script>

@@ -82,7 +82,6 @@ export default {
     margin-top: 147px;
     margin-bottom: 53px;
     align-items: center;
-    justify-content: space-between;
   }
 
   &__content {
@@ -129,6 +128,14 @@ export default {
   }
 }
 
+@media only screen and (min-width: 1150px) {
+  .nda {
+    &__image {
+      margin-left: 15%;
+    }
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .nda {
     &__image {
@@ -171,18 +178,19 @@ export default {
       height: 140px;
       position: absolute;
       right: 39px;
-      top: -72px;
+      top: -125px;
     }
   }
 }
 
-@media only screen and (max-width: 520px) and (min-width: 425px) {
+@media only screen and (max-width: 520px) and (min-width: 460px) {
   .nda {
     &__image {
       top: -82px;
     }
   }
 }
+
 @media only screen and (max-width: 520px) {
   .nda {
     &__image {
@@ -195,6 +203,14 @@ export default {
 
     &__sec-title {
       font-size: 27px;
+    }
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .nda {
+    &__image {
+      top: -60px;
     }
   }
 }
