@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CaseStudies component renders correctly 1`] = `
-<div
+<a
   class="single-project"
+  href="https://blog.maddevs.io/"
   style="background: rgb(248, 247, 246);"
 >
   <div
@@ -64,5 +65,5 @@ exports[`CaseStudies component renders correctly 1`] = `
       class="single-project__background single-project__background_first-project"
     />
   </div>
-</div>
+</a>
 `;

@@ -1,5 +1,5 @@
 <template>
-  <div class="single-project" :style="{ background: project.projectColor }">
+  <a href="https://blog.maddevs.io/" class="single-project" :style="{ background: project.projectColor }">
     <div class="single-project__container" :class="{ 'single-project__container_white-letters-theme': isWhiteColored}">
       <div class="single-project__content-wrap">
         <img :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)" class="single-project__logo" :alt="project.projectName" />
@@ -21,7 +21,7 @@
         :class="backgroundModifierClasses"
       ></div>
     </div>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -94,6 +94,9 @@ export default {
   min-width: 400px;
   position: relative;
   z-index: 99;
+  text-decoration: none;
+  color: initial;
+  display: block;
 
   @media only screen and (min-width: 1220px) {
     .single-project {
@@ -119,7 +122,7 @@ export default {
 
     .single-project {
       &__content-wrap {
-        margin:  68px 30px 0;
+        margin: 68px 30px 0;
         height: 270px;
       }
     }
@@ -132,7 +135,7 @@ export default {
   }
 
   &__content-wrap {
-    margin:  74px 70px 0;
+    margin: 74px 70px 0;
     height: 270px;
     z-index: 1;
   }
@@ -268,7 +271,7 @@ export default {
       }
 
       &__content-wrap {
-        margin:  68px 70px 0;
+        margin: 68px 70px 0;
         height: 14em;
       }
     }

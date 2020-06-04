@@ -26,8 +26,9 @@ exports[`CaseStudies component renders correctly 1`] = `
     <div
       class="projects"
     >
-      <div
+      <a
         class="single-project"
+        href="https://blog.maddevs.io/"
         style="background: rgb(248, 247, 246);"
       >
         <div
@@ -89,9 +90,10 @@ exports[`CaseStudies component renders correctly 1`] = `
             class="single-project__background single-project__background_first-project"
           />
         </div>
-      </div>
-      <div
+      </a>
+      <a
         class="single-project"
+        href="https://blog.maddevs.io/"
         style="background: rgb(86, 68, 142);"
       >
         <div
@@ -153,9 +155,10 @@ exports[`CaseStudies component renders correctly 1`] = `
             class="single-project__background"
           />
         </div>
-      </div>
-      <div
+      </a>
+      <a
         class="single-project"
+        href="https://blog.maddevs.io/"
         style="background: rgb(14, 27, 39);"
       >
         <div
@@ -217,9 +220,10 @@ exports[`CaseStudies component renders correctly 1`] = `
             class="single-project__background single-project__background_guardrails"
           />
         </div>
-      </div>
-      <div
+      </a>
+      <a
         class="single-project"
+        href="https://blog.maddevs.io/"
         style="background: rgb(255, 106, 1);"
       >
         <div
@@ -281,7 +285,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             class="single-project__background single-project__background_godee"
           />
         </div>
-      </div>
+      </a>
     </div>
   </div>
    
@@ -298,8 +302,9 @@ exports[`CaseStudies component renders correctly 1`] = `
         <div
           class="swiper-slide"
         >
-          <div
+          <a
             class="single-project"
+            href="https://blog.maddevs.io/"
             style="background: rgb(248, 247, 246);"
           >
             <div
@@ -361,13 +366,14 @@ exports[`CaseStudies component renders correctly 1`] = `
                 class="single-project__background single-project__background_first-project"
               />
             </div>
-          </div>
+          </a>
         </div>
         <div
           class="swiper-slide"
         >
-          <div
+          <a
             class="single-project"
+            href="https://blog.maddevs.io/"
             style="background: rgb(86, 68, 142);"
           >
             <div
@@ -429,13 +435,14 @@ exports[`CaseStudies component renders correctly 1`] = `
                 class="single-project__background"
               />
             </div>
-          </div>
+          </a>
         </div>
         <div
           class="swiper-slide"
         >
-          <div
+          <a
             class="single-project"
+            href="https://blog.maddevs.io/"
             style="background: rgb(14, 27, 39);"
           >
             <div
@@ -497,13 +504,14 @@ exports[`CaseStudies component renders correctly 1`] = `
                 class="single-project__background single-project__background_guardrails"
               />
             </div>
-          </div>
+          </a>
         </div>
         <div
           class="swiper-slide"
         >
-          <div
+          <a
             class="single-project"
+            href="https://blog.maddevs.io/"
             style="background: rgb(255, 106, 1);"
           >
             <div
@@ -565,7 +573,7 @@ exports[`CaseStudies component renders correctly 1`] = `
                 class="single-project__background single-project__background_godee"
               />
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <span
