@@ -268,7 +268,7 @@ export default {
       }
 
       &__content-wrap {
-        margin:  68px 30px 0;
+        margin:  68px 70px 0;
         height: 14em;
       }
     }
@@ -303,7 +303,6 @@ export default {
       }
 
       &__content-wrap {
-        margin: 40px 77px 0 34px;
         height: 120px;
         word-wrap: break-word;
 
@@ -320,6 +319,10 @@ export default {
 
   @media only screen and (max-width: 410px) {
     .single-project {
+      &__content-wrap {
+        margin: 40px 62px 0 22px;
+      }
+
       &__background {
         width: 85%;
         margin-left: -2.8em;
