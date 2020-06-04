@@ -33,9 +33,9 @@
 			<h4 class="footer-contacts__title">Message us:</h4>
 			<ul class="footer-contacts__messengers-list">
 				<li>
-					<a href="https://t.me/mun_tamara/" class="footer-contacts__messenger-item" target="_blank">
-						<img src="../../assets/img/Footer/telegram.svg" alt="Telegram">
-						Telegram
+					<a href="http://m.me/maddevsllc" class="footer-contacts__messenger-item" target="_blank">
+						<img src="../../assets/img/Footer/messenger.svg" alt="Messenger">
+						Messenger
 					</a>
 				</li>
 				<li>
@@ -45,9 +45,9 @@
 					</a>
 				</li>
 				<li>
-					<a href="#" class="footer-contacts__messenger-item">
-						<img src="../../assets/img/Footer/signal.svg" alt="Signal">
-						Signal
+					<a href="https://t.me/mun_tamara/" class="footer-contacts__messenger-item" target="_blank">
+						<img src="../../assets/img/Footer/telegram.svg" alt="Telegram">
+						Telegram
 					</a>
 				</li>
 				<li>

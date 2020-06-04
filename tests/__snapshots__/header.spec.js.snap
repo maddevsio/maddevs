@@ -360,15 +360,15 @@ exports[`Header renders correctly 1`] = `
                 <li>
                   <a
                     class="footer-contacts__messenger-item"
-                    href="https://t.me/mun_tamara/"
+                    href="http://m.me/maddevsllc"
                     target="_blank"
                   >
                     <img
-                      alt="Telegram"
-                      src="../../assets/img/Footer/telegram.svg"
+                      alt="Messenger"
+                      src="../../assets/img/Footer/messenger.svg"
                     />
                     
-					Telegram
+					Messenger
 				
                   </a>
                 </li>
@@ -392,14 +392,15 @@ exports[`Header renders correctly 1`] = `
                 <li>
                   <a
                     class="footer-contacts__messenger-item"
-                    href="#"
+                    href="https://t.me/mun_tamara/"
+                    target="_blank"
                   >
                     <img
-                      alt="Signal"
-                      src="../../assets/img/Footer/signal.svg"
+                      alt="Telegram"
+                      src="../../assets/img/Footer/telegram.svg"
                     />
                     
-					Signal
+					Telegram
 				
                   </a>
                 </li>
