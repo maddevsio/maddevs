@@ -33,9 +33,7 @@ exports[`CaseStudies component renders correctly 1`] = `
           class="open-source__github-icon"
           href="https://github.com/maddevsio"
           target="_blank"
-        >
-          &gt;
-        </a>
+        />
       </div>
     </div>
      

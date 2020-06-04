@@ -14,8 +14,7 @@
             class="open-source__github-icon"
             href="https://github.com/maddevsio"
             target="_blank"
-            >></a
-          >
+            ></a>
         </div>
       </div>
       <div class="open-source__projects">
