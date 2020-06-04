@@ -1,5 +1,5 @@
 <template>
-  <div class="single-project" :style="{ background: project.projectColor }">
+  <a href="https://blog.maddevs.io/" class="single-project" :style="{ background: project.projectColor }">
     <div class="single-project__container" :class="{ 'single-project__container_white-letters-theme': isWhiteColored}">
       <div class="single-project__content-wrap">
         <img :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)" class="single-project__logo" :alt="project.projectName" />
@@ -21,7 +21,7 @@
         :class="backgroundModifierClasses"
       ></div>
     </div>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -94,6 +94,20 @@ export default {
   min-width: 400px;
   position: relative;
   z-index: 99;
+  text-decoration: none;
+  color: initial;
+  display: block;
+
+  @media only screen and (min-width: 1220px) {
+    .single-project {
+      &__background {
+        &_first-project {
+          width: 100%;
+          background-size: cover;
+        }
+      }
+    }
+  }
 
   @media only screen and (max-width: 1220px) {
     .single-project {
@@ -108,7 +122,7 @@ export default {
 
     .single-project {
       &__content-wrap {
-        margin:  68px 30px 0;
+        margin: 68px 30px 0;
         height: 270px;
       }
     }
@@ -121,7 +135,7 @@ export default {
   }
 
   &__content-wrap {
-    margin:  74px 70px 0;
+    margin: 74px 70px 0;
     height: 270px;
     z-index: 1;
   }
@@ -213,6 +227,7 @@ export default {
 
     &_first-project {
       width: 100%;
+      background-size: contain;
     }
   }
 
@@ -221,13 +236,13 @@ export default {
       &__background {
         background-size: contain;
 
-        &_guardrails {
-          left: 4.1px;
+        &_first-project {
+          width: 100%;
+          background-size: cover;
         }
 
-        &_first-project {
-          background-size: cover;
-          width: 100%;
+        &_guardrails {
+          left: 4.1px;
         }
       }
     }
@@ -244,6 +259,7 @@ export default {
 
         &_first-project {
           width: 100%;
+          background-size: contain;
         }
       }
 
@@ -255,7 +271,7 @@ export default {
       }
 
       &__content-wrap {
-        margin:  68px 30px 0;
+        margin: 68px 70px 0;
         height: 14em;
       }
     }
@@ -290,7 +306,6 @@ export default {
       }
 
       &__content-wrap {
-        margin: 40px 77px 0 34px;
         height: 120px;
         word-wrap: break-word;
 
@@ -307,6 +322,10 @@ export default {
 
   @media only screen and (max-width: 410px) {
     .single-project {
+      &__content-wrap {
+        margin: 40px 62px 0 22px;
+      }
+
       &__background {
         width: 85%;
         margin-left: -2.8em;
