@@ -5,7 +5,7 @@
         <div class="text-content_wrapper">
           <div class="main-title-wrapper">
             <h1 class="banner-main_title" v-if="currentPageName === 'services'">
-              Your Trusted <br> <span class="media-item">IT</span>
+              Your <br class="media-query-item"> Trusted <br> <span class="media-item">IT</span>
               <span class="main-title-white_part">Outsourcing Partner</span>
             </h1>
             <h1 class="banner-main_title" v-if="currentPageName === 'projects'">
@@ -23,9 +23,31 @@
             <navigationList v-if="currentPageName === 'projects'" />
           </div>
           <div class="icon-item">
-            <img src="@/assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" v-if="currentPageName === 'index'">
-            <img src="@/assets/img/Services/svg/order-a-project.svg" alt="Order a Project Logotype" v-if="currentPageName === 'services'" class="default-image">
-            <img src="@/assets/img/Services/svg/order-a-project-hover.svg" alt="Make Partner Logotype" v-if="currentPageName === 'services'" class="hover-image">
+            <img 
+              src="@/assets/img/Home/svg/stars-banner-logo.svg" 
+              alt="Stars Logotype" 
+              v-if="currentPageName === 'index'"
+            >
+            <img 
+              src="@/assets/img/Services/svg/order-a-project.svg" 
+              alt="Order a Project Logotype" 
+              v-if="currentPageName === 'services' && showGreenBannerImage === false"
+              class="default-image" 
+            >
+            <img 
+              src="@/assets/img/Services/svg/order-a-project-hover.svg" 
+              alt="Order a Project Logotype" 
+              v-if="currentPageName === 'services' && showGreenBannerImage === false"
+              class="hover-image"
+              @click="showGreenBannerImage = !showGreenBannerImage"
+            >
+            <img 
+              src="@/assets/img/Services/svg/order-a-project-green.svg" 
+              alt="Order a Project Logotype" 
+              v-if="currentPageName === 'services' && showGreenBannerImage === true"
+              class="green-image"
+              @click="showGreenBannerImage = !showGreenBannerImage"
+            >
           </div> 
         </div>
         <navigationList v-if="currentPageName !== 'projects'" />
@@ -49,7 +71,8 @@ export default {
   },
   data() {
     return {
-      currentPageName: ''
+      currentPageName: '',
+      showGreenBannerImage: false
     };
   }
 };
@@ -134,6 +157,10 @@ export default {
   }
 
   .services {
+    .media-query-item {
+      display: none;
+    }
+
     .media-item {
       color: $text-color--white;
       text-shadow: none;
@@ -144,8 +171,9 @@ export default {
       flex-direction: column;
       justify-content: flex-end;
 
-      img {
-        margin-bottom: -140px;
+      .hover-image,
+      .default-image {
+        margin-bottom: -141px;
         margin-right: 40px;
       }
 
@@ -162,6 +190,11 @@ export default {
 
     .hover-image {
       display: none;
+    }
+
+    .green-image {
+      margin-right: 41px;
+      margin-bottom: -20px;
     }
   }
 
@@ -196,10 +229,9 @@ export default {
     }
 
     .services {
-      .icon-item {
-        img {
-          margin-right: 55px;
-        }
+      .hover-image,
+      .default-image {
+        margin-right: 55px;
       }
     }
   }
@@ -224,12 +256,16 @@ export default {
     }
 
     .services {
-      .icon-item {
-        img {
-          width: 320px;
-          margin-bottom: -120px;
-          margin-right: 64px;
-        }
+      .hover-image,
+      .default-image {
+        width: 320px;
+        margin-bottom: -120px;
+        margin-right: 64px;
+      }
+
+      .green-image {
+        width: 237px;
+        margin-bottom: -43px;
       }
     }
   }
@@ -250,10 +286,13 @@ export default {
     }
 
     .services {
-      .icon-item {
-        img {
-          margin-right: 50px;
-        }
+      .media-query-item {
+        display: block;
+      }
+
+      .hover-image,
+      .default-image {
+        margin-right: 50px;
       }
     }
   }
@@ -273,6 +312,18 @@ export default {
       .media-item {
         display: none;
       }
+
+      .green-image {
+        margin-right: 41px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1120px) {
+    .services {
+      .green-image {
+        margin-right: 28px;
+      }
     }
   }
 
@@ -282,6 +333,12 @@ export default {
       .banner-main_title--white,
       .banner-main_title--white-first {
         font-size: 110px;
+      }
+    }
+
+    .services {
+      .green-image {
+        margin-right: 18px;
       }
     }
   }
