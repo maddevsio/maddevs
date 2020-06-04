@@ -127,14 +127,14 @@ export default {
         /deep/ .single-project__background {
           margin: 0 20px;
           width: auto;
-        } 
+        }
       }
 
       &:nth-child(3) {
         /deep/ .single-project__background {
           margin: 0 29px;
           width: auto;
-        } 
+        }
 
         &::before {
           content: '';
@@ -155,7 +155,7 @@ export default {
         /deep/ .single-project__background {
           margin: 0 34px;
           width: auto;
-        } 
+        }
 
         &::after {
           content: '';
