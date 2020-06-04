@@ -100,4 +100,11 @@ describe('Header', () => {
     wrapper.vm.projectsPageHandleScroll();
     expect(wrapper.vm.$data.headerIsWhite).toBe(false);
   });
+
+  it('headerIsWhite should equal false after call function', () => {
+    wrapper.vm.$data.headerIsWhite = true;
+    expect(wrapper.vm.$data.headerIsWhite).toBe(true);
+    wrapper.vm.listenCareersLinkClick();
+    expect(wrapper.vm.$data.headerIsWhite).toBe(false);
+  });
 });
