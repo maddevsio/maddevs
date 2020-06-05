@@ -186,6 +186,7 @@ export default {
     height: 65px;
     width: 310px;
     color: $text-color--grey;
+    caret-color: $text-color--red;
   }
 
   &__form-list {
