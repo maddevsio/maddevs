@@ -370,7 +370,7 @@ export default {
       .icon-item {
         min-width: 375px;
       }
-      
+
       .hover-image,
       .default-image,
       .green-image {
@@ -564,7 +564,7 @@ export default {
     }
   }
 
-   @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 320px) {
     .services {
       .green-image {
         left: 58%;
