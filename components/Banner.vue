@@ -39,14 +39,14 @@
               alt="Order a Project Logotype" 
               v-if="currentPageName === 'services' && showGreenBannerImage === false"
               class="hover-image"
-              @click="showGreenBannerImage = !showGreenBannerImage"
+              @click="switchImage"
             >
             <img 
               src="@/assets/img/Services/svg/order-a-project-green.svg" 
               alt="Order a Project Logotype" 
               v-if="currentPageName === 'services' && showGreenBannerImage === true"
               class="green-image"
-              @click="showGreenBannerImage = !showGreenBannerImage"
+              @click="switchImage"
             >
           </div> 
         </div>
@@ -74,6 +74,11 @@ export default {
       currentPageName: '',
       showGreenBannerImage: false
     };
+  },
+  methods: {
+    switchImage() {
+      this.showGreenBannerImage = !this.showGreenBannerImage;
+    }
   }
 };
 </script>
