@@ -368,34 +368,51 @@ export default {
 
     .services {
       .icon-item {
-       min-width: 375px;
+        min-width: 375px;
+      }
+      
+      .hover-image,
+      .default-image,
+      .green-image {
+        position: absolute;
+        top: 51%;
+      }
 
-       img {
-         width: 235px;
-         position: absolute;
-         top: 51%;
-         left: 44%;
-        }
+      .hover-image,
+      .default-image {
+        width: 235px;
+        left: 44%;
+      }
+
+      .green-image {
+        width: 170px;
+        left: 50%;
       }
     }
   }
 
   @media only screen and (max-width: 870px) {
     .services {
-      .icon-item {
-       img {
-         left: 48%;
-        }
+      .hover-image,
+      .default-image {
+        left: 48%;
+      }
+
+      .green-image {
+        left: 55%;
       }
     }
   }
 
   @media only screen and (max-width: 768px) {
     .services {
-      .icon-item {
-        img {
-          left: 55%;
-        }
+      .hover-image,
+      .default-image {
+        left: 55%;
+      }
+
+      .green-image {
+        left: 63%;
       }
     }
 
@@ -418,10 +435,13 @@ export default {
 
   @media only screen and (max-width: 670px) {
     .services {
-      .icon-item {
-       img {
-         left: 59%;
-        }
+      .hover-image,
+      .default-image {
+        left: 59%;
+      }
+
+      .green-image {
+        left: 68%;
       }
     }
 
@@ -472,12 +492,17 @@ export default {
     }
 
     .services {
-      .icon-item {
-        img {
-          width: 185px;
-          top: 48%;
-          left: 54%;
-        }
+      .hover-image,
+      .default-image {
+        width: 185px;
+        top: 48%;
+        left: 54%;
+      }
+
+      .green-image {
+        width: 145px;
+        left: 61%;
+        top: 48%;
       }
     }
   }
@@ -492,11 +517,24 @@ export default {
     }
 
     .services {
-      .icon-item {
-        img {
-          width: 150px;
-          top: 47%;
-        }
+      .hover-image,
+      .default-image {
+        width: 150px;
+        top: 47%;
+      }
+
+      .green-image {
+        width: 113px;
+        left: 62%;
+        top: 47%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 475px) {
+    .services {
+      .green-image {
+        left: 64%;
       }
     }
   }
@@ -511,12 +549,25 @@ export default {
     }
 
     .services {
-      .icon-item {
-        img {
-          width: 130px;
-          top: 40%;
-          left: 48%;
-        }
+      .hover-image,
+      .default-image {
+        width: 130px;
+        top: 40%;
+        left: 48%;
+      }
+
+      .green-image {
+        width: 95px;
+        top: 40%;
+        left: 57%;
+      }
+    }
+  }
+
+   @media only screen and (max-width: 320px) {
+    .services {
+      .green-image {
+        left: 58%;
       }
     }
   }
