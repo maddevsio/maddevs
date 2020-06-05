@@ -11,7 +11,7 @@
             <router-link to="/">About</router-link>
             <router-link to="/services">Services</router-link>
             <router-link to="/projects">Projects</router-link>
-            <router-link to="/careers" @click.native="listenCareersLinkClick">Careers</router-link>
+            <router-link to="/careers" @click.native="headerIsWhite = false">Careers</router-link>
             <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
           </nav>
         </div>
@@ -151,9 +151,6 @@ export default {
           this.headerIsWhite = false;
         }
       }
-    },
-    listenCareersLinkClick() {
-      this.headerIsWhite = false;
     }
   }
 };
