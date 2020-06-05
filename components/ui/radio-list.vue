@@ -63,12 +63,13 @@ export default {
     &__radio-list,
     &__radio-label {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
     }
 
     &__radio-label {
       padding-left: 25px;
+      padding-bottom: 20px;
       position: relative;
       cursor: pointer;
 
@@ -89,6 +90,10 @@ export default {
           }
         }
       }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
 
     &__radio-text_item {
@@ -107,12 +112,22 @@ export default {
       height: 18px;
       display: block;
       position: absolute;
-      top: 3px;
+      top: 2px;
       left: 0;
       border-radius: 100%;
       background-color: $input-checkmark-bg;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+		.radio-buttons {
+      &__radio-label {
+        &:last-child {
+          padding-bottom: 20px;
+        }
+      }
+    }
+	}
 
   @media only screen and (max-width: 420px) {
     .radio-buttons {
