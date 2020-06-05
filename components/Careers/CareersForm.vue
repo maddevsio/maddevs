@@ -15,9 +15,10 @@
                 <input
                   class="careers__form-name-input form-text"
                   type="text"
-                  placeholder="|John Smith"
+                  placeholder="John Smith"
                   :class="classes"
                   v-model="fullName"
+                  ref="nameInput"
                 />
                 <span class="modal-error-text error-text">{{ errors[0] }}</span>
               </ValidationProvider></label
@@ -132,6 +133,9 @@ export default {
     RadioButton,
     Button
   },
+  mounted() {
+    this.focusInput();
+  },
   methods: {
     onFileChanged(params) {
       params;
@@ -142,6 +146,9 @@ export default {
     sendData(e) {
       e.preventDefault();
       //TODO: add ajax request
+    },
+    focusInput() {
+      this.$refs.nameInput.focus();
     }
   }
 };
