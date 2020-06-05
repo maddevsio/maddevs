@@ -290,7 +290,7 @@ exports[`Header renders correctly 1`] = `
                   >
                     <img
                       alt="United States"
-                      src="../../assets/img/Flags/united-states.svg"
+                      src="@/assets/img/Flags/united-states.svg"
                     />
                     
 					+1 888 401 3401
@@ -305,7 +305,7 @@ exports[`Header renders correctly 1`] = `
                   >
                     <img
                       alt="United States"
-                      src="../../assets/img/Flags/united-states.svg"
+                      src="@/assets/img/Flags/united-states.svg"
                     />
                     
 					+1 208 473 2904
@@ -320,7 +320,7 @@ exports[`Header renders correctly 1`] = `
                   >
                     <img
                       alt="United Kingdom"
-                      src="../../assets/img/Flags/united-kingdom.svg"
+                      src="@/assets/img/Flags/united-kingdom.svg"
                     />
                     
 					+1 888 401 3401
@@ -335,7 +335,7 @@ exports[`Header renders correctly 1`] = `
                   >
                     <img
                       alt="United Kingdom"
-                      src="../../assets/img/Flags/united-kingdom.svg"
+                      src="@/assets/img/Flags/united-kingdom.svg"
                     />
                     
 					+1 208 473 2904
@@ -365,7 +365,7 @@ exports[`Header renders correctly 1`] = `
                   >
                     <img
                       alt="Messenger"
-                      src="../../assets/img/Footer/messenger.svg"
+                      src="@/assets/img/Footer/messenger.svg"
                     />
                     
 					Messenger
@@ -381,7 +381,7 @@ exports[`Header renders correctly 1`] = `
                   >
                     <img
                       alt="Whatsapp"
-                      src="../../assets/img/Footer/whatsapp.svg"
+                      src="@/assets/img/Footer/whatsapp.svg"
                     />
                     
 					Whatsapp
@@ -397,7 +397,7 @@ exports[`Header renders correctly 1`] = `
                   >
                     <img
                       alt="Telegram"
-                      src="../../assets/img/Footer/telegram.svg"
+                      src="@/assets/img/Footer/telegram.svg"
                     />
                     
 					Telegram
@@ -412,7 +412,7 @@ exports[`Header renders correctly 1`] = `
                   >
                     <img
                       alt="WeChat"
-                      src="../../assets/img/Footer/wechat.svg"
+                      src="@/assets/img/Footer/wechat.svg"
                     />
                     
 					WeChat

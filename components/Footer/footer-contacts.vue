@@ -5,25 +5,25 @@
 			<ul class="footer-contacts__phones-list">
 				<li>
 					<a href="tel:+1 888 401 3401" class="footer-contacts__phone-item">
-						<img src="../../assets/img/Flags/united-states.svg" alt="United States">
+						<img src="@/assets/img/Flags/united-states.svg" alt="United States">
 						+1 888 401 3401
 					</a>
 				</li>
 				<li>
 					<a href="tel:+1 208 473 2904" class="footer-contacts__phone-item">
-						<img src="../../assets/img/Flags/united-states.svg" alt="United States">
+						<img src="@/assets/img/Flags/united-states.svg" alt="United States">
 						+1 208 473 2904
 					</a>
 				</li>
 				<li>
 					<a href="tel:+1 888 401 3401" class="footer-contacts__phone-item">
-						<img src="../../assets/img/Flags/united-kingdom.svg" alt="United Kingdom">
+						<img src="@/assets/img/Flags/united-kingdom.svg" alt="United Kingdom">
 						+1 888 401 3401
 					</a>
 				</li>
 				<li>
 					<a href="tel:+1 208 473 2904" class="footer-contacts__phone-item">
-						<img src="../../assets/img/Flags/united-kingdom.svg" alt="United Kingdom">
+						<img src="@/assets/img/Flags/united-kingdom.svg" alt="United Kingdom">
 						+1 208 473 2904
 					</a>
 				</li>
@@ -34,25 +34,25 @@
 			<ul class="footer-contacts__messengers-list">
 				<li>
 					<a href="http://m.me/maddevsllc" class="footer-contacts__messenger-item" target="_blank">
-						<img src="../../assets/img/Footer/messenger.svg" alt="Messenger">
+						<img src="@/assets/img/Footer/messenger.svg" alt="Messenger">
 						Messenger
 					</a>
 				</li>
 				<li>
 					<a href="http://wa.me/996555771481" class="footer-contacts__messenger-item" target="_blank">
-						<img src="../../assets/img/Footer/whatsapp.svg" alt="Whatsapp">
+						<img src="@/assets/img/Footer/whatsapp.svg" alt="Whatsapp">
 						Whatsapp
 					</a>
 				</li>
 				<li>
 					<a href="https://t.me/mun_tamara/" class="footer-contacts__messenger-item" target="_blank">
-						<img src="../../assets/img/Footer/telegram.svg" alt="Telegram">
+						<img src="@/assets/img/Footer/telegram.svg" alt="Telegram">
 						Telegram
 					</a>
 				</li>
 				<li>
 					<a href="#" class="footer-contacts__messenger-item">
-						<img src="../../assets/img/Footer/wechat.svg" alt="WeChat">
+						<img src="@/assets/img/Footer/wechat.svg" alt="WeChat">
 						WeChat
 					</a>
 				</li>
