@@ -97,15 +97,11 @@ export default {
 
 		&__bottom-link {
 			padding-left: 26px;
-			text-decoration: none;
+			text-decoration: underline;
+			text-decoration-color: $footer--text-decoration-color;
 
 			&:first-child {
 				padding-left: 30px;
-			}
-
-			&:nth-child(3) {
-				text-decoration: underline;
-				text-decoration-color: $footer--text-decoration-color;
 			}
 		}
 	}
