@@ -10,7 +10,11 @@
             70+ of Mad Devs' pet projects have been shared with the community
             via GitHub.
           </h4>
-          <span class="open-source__github-icon"></span>
+          <a
+            class="open-source__github-icon"
+            href="https://github.com/maddevsio"
+            target="_blank"
+            ></a>
         </div>
       </div>
       <div class="open-source__projects">

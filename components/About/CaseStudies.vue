@@ -123,7 +123,19 @@ export default {
     flex-wrap: wrap;
 
     .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          margin: 0 20px;
+          width: auto;
+        }
+      }
+
       &:nth-child(3) {
+        /deep/ .single-project__background {
+          margin: 0 29px;
+          width: auto;
+        }
+
         &::before {
           content: '';
           position: absolute;
@@ -140,6 +152,11 @@ export default {
       }
 
       &:last-child {
+        /deep/ .single-project__background {
+          margin: 0 34px;
+          width: auto;
+        }
+
         &::after {
           content: '';
           position: absolute;

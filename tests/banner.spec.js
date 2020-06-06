@@ -41,4 +41,12 @@ describe('Banner', () => {
   it('correctly sets the message when mounted', () => {
     expect(wrapper.vm.$data.currentPageName).toBe('/');
   });
+
+  it('switch state for showGreenBannerImage when call function', () => {
+    wrapper.vm.switchImage();
+    expect(wrapper.vm.$data.showGreenBannerImage).toBe(true);
+
+    wrapper.vm.switchImage();
+    expect(wrapper.vm.$data.showGreenBannerImage).toBe(false);
+  });
 });

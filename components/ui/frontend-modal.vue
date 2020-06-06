@@ -72,11 +72,20 @@ export default {
     }
   }
 
+  @media only screen and (max-height: 700px) {
+    .form {
+      textarea {
+        height: 57px;
+        min-height: 57px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 768px) {
 		.form {
       textarea {
-        height: 60px;
-        min-height: 60px;
+        height: 62px;
+        min-height: 62px;
       }
     }
   }
