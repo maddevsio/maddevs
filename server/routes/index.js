@@ -8,7 +8,6 @@ const API_USER_ID = process.env.NODE_SENDPULSE_API_USER_ID;
 const API_KEY = process.env.NODE_SENDPULSE_API_KEY;
 const TOKEN_STORAGE = '/tmp/';
 
-
 router.post('/send-email', (req, res) => {
   sendpulse.init(API_USER_ID, API_KEY, TOKEN_STORAGE, () => {
     const answerGetter = data => {
@@ -17,18 +16,20 @@ router.post('/send-email', (req, res) => {
     const email = {
       'subject': 'Test',
       'template': {
-        'id': 296617,
+        'id': req.body.templateId, // Required
         'variables': {
-          'name': 'Владислав',
-          'code': '123456'
+          'fullName': req.body.fullName,
+          'company': req.body.company,
+          'email': req.body.email,
+          'phoneNumber': req.body.phoneNumber,
         }
       },
       'from': {
-        'name': 'Denisoed',
+        'name': 'Mad Devs',
         'email': 'denis.grushkin@maddevs.io'
       },
       'to': [{
-        'name': 'Denis',
+        'name': 'Mad Devs',
         'email': 'denisoed@gmail.com'
       }]
     };
