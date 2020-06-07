@@ -128,13 +128,13 @@ export default {
       ]
     };
   },
+  mounted() {
+    this.focusInput();
+  },
   components: {
     FileInput,
     RadioButton,
     Button
-  },
-  mounted() {
-    this.focusInput();
   },
   methods: {
     onFileChanged(params) {
@@ -148,7 +148,9 @@ export default {
       //TODO: add ajax request
     },
     focusInput() {
-      this.$refs.nameInput.focus();
+      this.$nextTick(async () => {
+        this.$refs.nameInput.focus();
+      });
     }
   }
 };
