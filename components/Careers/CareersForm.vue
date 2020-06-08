@@ -138,6 +138,17 @@ export default {
     sendData(e) {
       if (!this.errors) {
         //TODO: add ajax request
+        const form = {
+          templateId: 305491, // Required
+          variables: {
+            fullName: this.fullName,
+            email: this.email,
+            linkedinProfile: this.linkedinProfile,
+            positionValue: this.positionValue,
+            positionTitle: this.positionTitle
+          }
+        };
+        this.$store.dispatch('sendContactMeForm', form);
       }
     },
     focusInput() {

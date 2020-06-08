@@ -10,14 +10,19 @@ const TOKEN_STORAGE = '/tmp/';
 
 router.post('/send-email', (req, res) => {
   if (req.body.templateId === null || req.body.templateId === undefined) {
-    res.json({
+    res.status(500).json({
       status: 500,
-      message: 'templateId not found'
+      message: 'templateId key not found'
     });
   } else if (typeof req.body.templateId !== 'number') {
-    res.json({
+    res.status(500).json({
       status: 500,
-      message: 'templateId must be a type number'
+      message: 'templateId key must be a type number'
+    });
+  } else if (req.body.variables !== null || req.body.variables === undefined) {
+    res.status(500).json({
+      status: 500,
+      message: 'variables key not found'
     });
   } else {
     sendpulse.init(API_USER_ID, API_KEY, TOKEN_STORAGE, () => {
@@ -32,7 +37,7 @@ router.post('/send-email', (req, res) => {
         },
         'from': {
           'name': 'Mad Devs marketing',
-          'email': 'denis.grushkin@maddevs.io'
+          'email': 'marketing@maddevs.io'
         },
         'to': [{
           'name': 'Mad Devs team',
