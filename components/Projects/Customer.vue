@@ -56,7 +56,7 @@ export default {
     align-items: center;
     justify-self: center;
     position: absolute;
-    bottom: -19%;
+    top: 62px;
     text-align: center;
     transition: opacity 0.3s linear;
     opacity: 0;
@@ -108,6 +108,7 @@ export default {
 
     &__industry {
       font-size: 10px;
+      top: 56px;
     }
   }
 }
@@ -135,6 +136,11 @@ export default {
 
     &__logo {
       width: 75%;
+    }
+
+    &__industry {
+      font-size: 8px;
+      top: 53px;
     }
   }
 }
