@@ -19,7 +19,7 @@ router.post('/send-email', (req, res) => {
       status: 500,
       message: 'templateId key must be a type number'
     });
-  } else if (req.body.variables !== null || req.body.variables === undefined) {
+  } else if (req.body.variables === null || req.body.variables === undefined) {
     res.status(500).json({
       status: 500,
       message: 'variables key not found'
