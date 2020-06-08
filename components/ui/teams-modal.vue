@@ -96,8 +96,8 @@ export default {
       this.selectedTeamSize = teamSize;
     },
     autosize(e) {
-      e.target.style.cssText = 'height: auto;';
-      e.target.style.cssText = `height: ${e.target.scrollHeight}px`;
+      e.target.style.height = 'auto';
+      e.target.style.height = `${e.target.scrollHeight}px`;
     }
   }
 };
