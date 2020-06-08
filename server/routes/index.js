@@ -23,7 +23,7 @@ router.post('/send-email', (req, res) => {
     sendpulse.init(API_USER_ID, API_KEY, TOKEN_STORAGE, () => {
       const answerGetter = data => {
         res.json(data);
-      }
+      };
       const email = {
         'subject': 'Test',
         'template': {
