@@ -15,9 +15,10 @@
                 <input
                   class="careers__form-name-input form-text"
                   type="text"
-                  placeholder="|John Smith"
+                  placeholder="John Smith"
                   :class="classes"
                   v-model="fullName"
+                  ref="nameInput"
                 />
                 <span class="modal-error-text error-text">{{ errors[0] }}</span>
               </ValidationProvider></label
@@ -127,6 +128,9 @@ export default {
       ]
     };
   },
+  mounted() {
+    this.focusInput();
+  },
   components: {
     FileInput,
     RadioButton,
@@ -142,6 +146,11 @@ export default {
     sendData(e) {
       e.preventDefault();
       //TODO: add ajax request
+    },
+    focusInput() {
+      this.$nextTick(async () => {
+        this.$refs.nameInput.focus();
+      });
     }
   }
 };
@@ -186,6 +195,7 @@ export default {
     height: 65px;
     width: 310px;
     color: $text-color--grey;
+    caret-color: $text-color--red;
   }
 
   &__form-list {
