@@ -35,7 +35,8 @@ describe('Order Project From Us Modal', () => {
   test('has a functions', () => {
     expect(
       typeof OrderProjectFromUsModal.methods.getPrivacyCheckboxState && 
-      typeof OrderProjectFromUsModal.methods.getDiscountOffersCheckboxState
+      typeof OrderProjectFromUsModal.methods.getDiscountOffersCheckboxState &&
+      typeof OrderProjectFromUsModal.methods.autosize
     ).toBe('function');
   });
 
@@ -47,5 +48,19 @@ describe('Order Project From Us Modal', () => {
       wrapper.vm.$data.agreeWithPrivacyPolicy &&
       wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
     ).toEqual(true);
+  });
+
+  test('autosize function should add value in event key', () => {
+    const event = {
+      target: {
+        style: {
+          height: ''
+        },
+        scrollHeight: 100
+      }
+    }
+
+    wrapper.vm.autosize(event);
+    expect(event.target.style.height).toEqual('100px');
   });
 });
