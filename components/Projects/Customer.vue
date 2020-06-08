@@ -51,12 +51,13 @@ export default {
   }
 
   &__industry {
+    font-family: 'Hoves-Regular';
     font-size: 12px;
     color: #ccc;
     align-items: center;
     justify-self: center;
     position: absolute;
-    bottom: -14%;
+    bottom: -19%;
     text-align: center;
     transition: opacity 0.3s linear;
     opacity: 0;
