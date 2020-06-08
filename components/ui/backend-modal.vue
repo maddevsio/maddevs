@@ -21,7 +21,7 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name">Backend expertise you are interested in</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need Go and C/C++ developers" v-model="interesteBackendExpertise"/>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need Go and C/C++ developers" v-model="interesteBackendExpertise" @keydown="autosize($event)" rows="1"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
@@ -59,6 +59,10 @@ export default {
     },
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+    },
+    autosize(e) {
+      e.target.style.cssText = 'height: auto;';
+      e.target.style.cssText = `height: ${e.target.scrollHeight}px`;
     }
   }
 };
