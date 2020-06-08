@@ -7,8 +7,8 @@
           src="@/assets/img/Careers/svg/careers_logo.svg"
           alt="Careers Background Image"
         />
-        <ValidationObserver v-slot="{ invalid }">
-          <form class="careers__form">
+        <ValidationObserver v-slot="{ handleSubmit }">
+          <form @submit.prevent="handleSubmit(sendData)" class="careers__form">
             <label class="careers__form-name-label form-text"
               >Hello, my name is
               <ValidationProvider rules="required" v-slot="{ classes, errors }">
@@ -38,12 +38,16 @@
               You can also consider me for your other
             </h4>
             <ul class="careers__position-list">
-              <RadioButton
-                v-for="(radio, i) in radioData"
-                :key="i"
-                :radio="radio"
-                @change="changePositionValue"
-              />
+              <ValidationProvider rules="required" v-slot="{ classes, errors }">
+                <RadioButton
+                  v-for="(radio, i) in radioData"
+                  :key="i"
+                  :radio="radio"
+                  v-model="positionValue"
+                  @change="changePositionValue"
+                />
+                <span class="modal-error-text error-text">{{ errors[0] }}</span>
+              </ValidationProvider>
             </ul>
             <h4 class="careers__form-description form-text email-title">
               Please reply to
@@ -85,9 +89,7 @@
                 </ValidationProvider>
               </li>
             </ul>
-            <Button :disabled="invalid" @click="sendData"
-              >I want to work for Mad Devs!</Button
-            >
+            <Button type="submit">I want to work for Mad Devs!</Button>
           </form>
         </ValidationObserver>
       </div>
@@ -134,8 +136,9 @@ export default {
       this.positionValue = newPositionValue;
     },
     sendData(e) {
-      e.preventDefault();
-      //TODO: add ajax request
+      if (!this.errors) {
+        //TODO: add ajax request
+      }
     },
     focusInput() {
       this.$nextTick(async () => {
