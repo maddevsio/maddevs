@@ -131,7 +131,6 @@ export default {
   &__title-wrap {
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
   }
 
   &__main-title {
