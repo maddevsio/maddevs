@@ -1,15 +1,15 @@
 <template>
   <div class="valued-customers__wrapper">
-    <img class="valued-customers__logo"
+    <img
+      class="valued-customers__logo"
       :src="require(`@/assets/img/Projects/svg/${customer.imgName}.svg`)"
       :alt="customer.imgName"
-    >
-    <span class="valued-customers__industry">{{customer.industry}}</span>
-  </div>       
+    />
+    <span class="valued-customers__industry">{{ customer.industry }}</span>
+  </div>
 </template>
 
 <script>
-
 export default {
   name: 'Customer',
   props: {
@@ -25,7 +25,6 @@ export default {
     }
   }
 };
-
 </script>
 
 <style lang="scss" scoped>
@@ -66,12 +65,24 @@ export default {
   }
 }
 
+@media only screen and (max-width: 1240px) {
+  .valued-customers {
+    &__logo {
+      height: 70px;
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .valued-customers {
     &__wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    &__logo {
+      height: 60px;
     }
   }
 }
@@ -93,10 +104,7 @@ export default {
 @media only screen and (max-width: 860px) {
   .valued-customers {
     grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
-
-    &__logo {
-      width: 80%;
-    }
+    grid-column-gap: 55px;
 
     &__industry {
       font-size: 10px;
@@ -104,11 +112,11 @@ export default {
   }
 }
 
-@media only screen and (max-width: 615px) {
+@media only screen and (max-width: 680px) {
   .valued-customers {
     grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
     grid-row-gap: 50px;
-    grid-column-gap: 0;
+    grid-column-gap: 35px;
     margin-top: 47px;
 
     &__logo {
@@ -126,9 +134,8 @@ export default {
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 
     &__logo {
-      width: 70%;
+      width: 75%;
     }
   }
 }
-
 </style>
