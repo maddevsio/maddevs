@@ -2,7 +2,7 @@
   <modal name="teams" :clickToClose="false">
     <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('teams')">
     <ValidationObserver v-slot="{ invalid }">
-      <form class="form"> 
+      <div class="form"> 
         <div class="fields-list">
           <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Full Name</p>
@@ -40,10 +40,12 @@
         />
         <button 
           class="modal-button-default button-default red-text-and-border" 
-          :disabled="invalid || !agreeWithPrivacyPolicy || !selectedTeamSize">
+          :disabled="invalid || !agreeWithPrivacyPolicy || !selectedTeamSize"
+          @click="sendForm(!invalid || agreeWithPrivacyPolicy || selectedTeamSize)"
+        >
           Get a team of ultra fast coders
         </button>
-      </form>
+      </div>
     </ValidationObserver>
   </modal>
 </template>
@@ -94,6 +96,22 @@ export default {
     },
     getTeamSize(teamSize) {
       this.selectedTeamSize = teamSize;
+    },
+    sendForm(isValid) {
+      if (isValid === true) {
+        const form = {
+          templateId: 304637, // Required
+          variables: {
+            fullName: this.fullName,
+            selectedTeamSize: this.selectedTeamSize,
+            email: this.email,
+            phoneNumber: this.phoneNumber,
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
+          }
+        };
+        this.$store.dispatch('sendContactMeForm', form);
+      }
     }
   }
 };

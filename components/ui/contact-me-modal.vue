@@ -67,11 +67,15 @@ export default {
     sendForm(isValid) {
       if (isValid === true) {
         const form = {
-          templateId: 296617,
-          fullName: this.fullName,
-          company: this.company,
-          email: this.email,
-          phoneNumber: this.phoneNumber
+          templateId: 303792, // Required
+          variables: {
+            fullName: this.fullName,
+            company: this.company,
+            email: this.email,
+            phoneNumber: this.phoneNumber,
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
+          }
         };
         this.$store.dispatch('sendContactMeForm', form);
       }
