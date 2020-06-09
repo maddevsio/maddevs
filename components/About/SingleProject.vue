@@ -263,7 +263,6 @@ export default {
 
     &_guardrails {
       position: relative;
-      left: 3.1px;
     }
 
     &_first-project {
@@ -310,19 +309,12 @@ export default {
     .single-project {
       &__background {
         background-size: contain;
-
-        &_guardrails {
-          left: 4.1px;
-        }
       }
     }
   }
 
   @media only screen and (max-width: 768px) {
     .single-project {
-      width: 100%;
-      min-width: 320px;
-
       &__background {
         background-size: contain;
 
@@ -346,19 +338,12 @@ export default {
       &__background {
         background-size: contain;
         height: 378px;
-
-        &_first-project {
-          background-size: cover;
-          width: 100%;
-        }
       }
     }
   }
 
   @media only screen and (max-width: 576px) {
     .single-project {
-      min-width: 100%;
-
       &__logo {
         height: 40px;
       }
@@ -370,7 +355,7 @@ export default {
       }
 
       &__content-wrap {
-        height: 120px;
+        height: 100px;
         word-wrap: break-word;
 
         .contribution-widget {
@@ -384,21 +369,34 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 445px) {
+    .single-project {
+      &__content-wrap {
+        margin: 50px 21px 0;
+      }
+    }
+  }
+
   @media only screen and (max-width: 410px) {
     .single-project {
-
       &__background {
-        width: 85%;
-        margin-left: -2.8em;
-
         &_first-project {
           background-size: contain;
           width: 100%;
         }
 
-        &_godee {
-          margin-left: -1.5em;
+        &_guardrails {
+          width: calc(100% - 47px);
+          left: -9px;
         }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 340px) {
+    .single-project {
+      &__content-wrap {
+        margin: 50px 24px 0 12px;
       }
     }
   }

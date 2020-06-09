@@ -526,6 +526,26 @@ export default {
       .single-project {
         width: 96%;
       }
+
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          width: calc(100% - 33px);
+          margin-right: 25px;
+        }
+      }
+
+      &:nth-child(3) {
+        /deep/ .single-project__background {
+          width: calc(100% - 33px);
+          left: -7px;
+        }
+      }
+
+      &:last-child {
+        /deep/ .single-project__background {
+          width: calc(100% - 33px);
+        }
+      }
     }
   }
 }
