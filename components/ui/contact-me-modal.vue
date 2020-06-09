@@ -34,6 +34,7 @@
           class="modal-button-default button-default red-text-and-border"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+          v-WaveAnimation
         >Сontact Me</button>
       </div>
     </ValidationObserver>
@@ -42,11 +43,15 @@
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
+import WaveAnimation from '@/directives/WaveAnimation';
 
 export default {
   name: 'ContactMe',
   components: {
     FormCheckboxes
+  },
+  directives: {
+    WaveAnimation
   },
   data: () => ({
     fullName: '',
