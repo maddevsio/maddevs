@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import InfrastructureAuditModal from '@/components/ui/infrastructure-audit-modal';
+import InfrastructureAuditModal from '@/components/Modal/infrastructure-audit-modal';
 
 describe('Infrastructure Audit Modal', () => {
   let wrapper;

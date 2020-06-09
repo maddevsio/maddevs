@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import IndividualsModal from '@/components/ui/individuals-modal';
+import IndividualsModal from '@/components/Modal/individuals-modal';
 
 describe('Individuals modal', () => {
   let wrapper;

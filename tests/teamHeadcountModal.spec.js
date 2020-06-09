@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import teamHeadcountModal from '@/components/ui/team-headcount-modal';
+import teamHeadcountModal from '@/components/Modal/team-headcount-modal';
 
 describe('Team headcount modal', () => {
   let wrapper;

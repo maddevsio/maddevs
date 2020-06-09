@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import mobileModal from '@/components/ui/mobile-modal';
+import mobileModal from '@/components/Modal/mobile-modal';
 
 describe('Frontend modal', () => {
   let wrapper;

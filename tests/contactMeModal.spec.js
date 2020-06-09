@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import contactMeModal from '@/components/ui/contact-me-modal';
+import contactMeModal from '@/components/Modal/contact-me-modal';
 
 describe('Contact me modal', () => {
   let wrapper;

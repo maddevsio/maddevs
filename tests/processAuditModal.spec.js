@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import processAuditModal from '@/components/ui/process-audit-modal';
+import processAuditModal from '@/components/Modal/process-audit-modal';
 
 describe('Process audit modal', () => {
   let wrapper;

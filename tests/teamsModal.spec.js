@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import TeamsModal from '@/components/ui/teams-modal';
+import TeamsModal from '@/components/Modal/teams-modal';
 
 describe('Teams Modal', () => {
   let wrapper;
