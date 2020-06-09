@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import GetCaseStudiesModal from '@/components/ui/get-case-studies-modal';
+import GetCaseStudiesModal from '@/components/Modals/get-case-studies-modal';
 
 describe('Contact me modal', () => {
   let wrapper;

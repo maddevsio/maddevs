@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import OrderProjectFromUsModal from '@/components/ui/order-project-from-us-modal';
+import OrderProjectFromUsModal from '@/components/Modals/order-project-from-us-modal';
 
 describe('Order Project From Us Modal', () => {
   let wrapper;
