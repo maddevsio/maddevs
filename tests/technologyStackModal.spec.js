@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import technologyStackModal from '@/components/Modal/technology-stack-modal';
+import technologyStackModal from '@/components/Modals/technology-stack-modal';
 
 describe('Technology stack modal', () => {
   let wrapper;

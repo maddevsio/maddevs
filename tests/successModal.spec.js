@@ -2,7 +2,7 @@ import {
   mount
 } from '@vue/test-utils';
 
-import SuccessModal from '@/components/Modal/success-modal';
+import SuccessModal from '@/components/Modals/success-modal';
 
 describe('Success modal', () => {
   let wrapper;
