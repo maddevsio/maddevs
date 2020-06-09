@@ -368,6 +368,12 @@ export default {
   }
 }
 
+@media screen and (max-width: 920px) {
+  .single-project {
+    min-width: inherit;
+  }
+}
+
 @media only screen and (max-width: 845px) {
   .case-studies--projects {
     .projects-flame-background {

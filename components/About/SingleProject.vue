@@ -272,6 +272,45 @@ export default {
     }
   }
 
+  @media screen and (max-width: 1024px) {
+    .single-project {
+      &__sub-title {
+        font-size: 47px;
+      }
+
+      &__paragraph {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    .single-project {
+      min-width: inherit;
+    }
+  }
+
+  @media screen and (max-width: 870px) {
+    .single-project {
+      &__sub-title {
+        font-size: 45px;
+      }
+
+      &__content-wrap {
+        margin: 58px 20px 0;
+        height: 175px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 820px) {
+    .single-project {
+      &__sub-title {
+        font-size: 43px;
+      }
+    }
+  }
+
   @media screen and (max-width: 1030px) and (min-width: 798px) {
     .single-project {
       &__background {
