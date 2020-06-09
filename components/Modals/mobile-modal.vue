@@ -1,8 +1,8 @@
 <template>
-  <modal name="frontend" :clickToClose="false">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('frontend')">
+  <modal name="mobile" :clickToClose="false">
+    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('mobile')">
     <ValidationObserver v-slot="{ invalid }">
-      <form class="form"> 
+      <div class="form"> 
         <div class="fields-list">
           <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Full Name</p>
@@ -20,8 +20,8 @@
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name">Frontend expertise you are interested in</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need assistance with JS development and UI/UX design" v-model="interesteFrontendExpertise"/>
+            <p class="modal-field-name field-name">Mobile expertise you are interested in</p>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need assistance with Kotlin development and UI/UX design" v-model="interesteMobileExpertise"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
@@ -30,8 +30,12 @@
           v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
           :inputId="inputId"
         />
-        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Get UX help</button>
-      </form>
+        <button
+          class="modal-button-default button-default red-text-and-border"
+          :disabled="invalid || !agreeWithPrivacyPolicy"
+          @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+        >Get mobile help</button>
+      </div>
     </ValidationObserver>
   </modal>
 </template>
@@ -40,7 +44,7 @@
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 
 export default {
-  name: 'frontend-modal',
+  name: 'mobile-modal',
   components: {
     FormCheckboxes
   },
@@ -48,10 +52,10 @@ export default {
     fullName: '',
     email: '',
     phoneNumber: '',
-    interesteFrontendExpertise: '',
+    interesteMobileExpertise: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'frontend'
+    inputId: 'mobile'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -59,6 +63,22 @@ export default {
     },
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+    },
+    sendForm(isValid) {
+      if (isValid === true) {
+        const form = {
+          templateId: 304629, // Required
+          variables: {
+            fullName: this.fullName,
+            email: this.email,
+            phoneNumber: this.phoneNumber,
+            interesteMobileExpertise: this.interesteMobileExpertise,
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
+          }
+        };
+        this.$store.dispatch('sendContactMeForm', form);
+      }
     }
   }
 };
@@ -72,20 +92,11 @@ export default {
     }
   }
 
-  @media only screen and (max-height: 700px) {
-    .form {
-      textarea {
-        height: 57px;
-        min-height: 57px;
-      }
-    }
-  }
-
   @media only screen and (max-width: 768px) {
 		.form {
       textarea {
-        height: 62px;
-        min-height: 62px;
+        height: 60px;
+        min-height: 60px;
       }
     }
   }

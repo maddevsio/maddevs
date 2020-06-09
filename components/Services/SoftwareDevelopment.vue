@@ -38,13 +38,11 @@
 
 <script>
 import SoftwareDevelopContent from '@/components/Services/SoftwareDevelopContent';
-import BackendModal from '@/components/ui/backend-modal';
 
 export default {
   name: 'SoftwareDevelopment',
   components: {
-    SoftwareDevelopContent,
-    BackendModal
+    SoftwareDevelopContent
   },
   data() {
     return {

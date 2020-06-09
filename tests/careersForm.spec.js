@@ -1,4 +1,4 @@
-import { mount } from '@vue/test-utils';
+import { shallowMount } from '@vue/test-utils';
 import CareersForm from '@/components/Careers/CareersForm';
 
 describe('CareersForm component', () => {
@@ -19,9 +19,17 @@ describe('CareersForm component', () => {
   };
 
   beforeEach(() => {
-    wrapper = mount(CareersForm, {
-      stubs: ['ValidationProvider', 'ValidationObserver']
+    wrapper = shallowMount(CareersForm, {
+      stubs: ['ValidationProvider', 'ValidationObserver'],
+      mocks: {
+        $refs: {
+          nameInput: {
+            focus: jest.fn()
+          }
+        }
+      }
     });
+    wrapper.vm.$nextTick();
   });
 
   test('is Vue instance', () => {

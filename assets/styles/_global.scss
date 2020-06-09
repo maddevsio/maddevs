@@ -731,3 +731,68 @@ button {
     }
   }
 }
+
+// --------- Wave ------------ //
+.wave {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.43);
+  z-index: -1;
+}
+
+.wave--dark {
+  background: var(--black-014) !important;
+}
+
+.waves {
+  opacity: 0;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  transform: scale(1);
+  border-radius: 100rem;
+  animation: waves .5s linear;
+}
+
+@keyframes waves {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(30);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes waves {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(30);
+  }
+}
+
+@-webkit-keyframes waves {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(30);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes waves {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(30);
+  }
+}
