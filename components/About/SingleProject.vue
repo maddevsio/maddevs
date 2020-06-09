@@ -1,10 +1,27 @@
 <template>
-  <a href="https://blog.maddevs.io/" class="single-project" :style="{ background: project.projectColor }">
-    <div class="single-project__container" :class="{ 'single-project__container_white-letters-theme': isWhiteColored}">
+  <a
+    href="https://blog.maddevs.io/"
+    class="single-project"
+    :style="{ background: project.projectColor }"
+  >
+    <div
+      class="single-project__container"
+      :class="{
+        'single-project__container_white-letters-theme': isWhiteColored
+      }"
+    >
       <div class="single-project__content-wrap">
-        <img :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)" class="single-project__logo" :alt="project.projectName" />
-        <h4 class="single-project__sub-title sub-title">{{project.projectTitle}}</h4>
-        <p class="single-project__paragraph paragraph">{{project.projectDescription}}</p> 
+        <img
+          :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)"
+          class="single-project__logo"
+          :alt="project.projectName"
+        />
+        <h4 class="single-project__sub-title sub-title">
+          {{ project.projectTitle }}
+        </h4>
+        <p class="single-project__paragraph paragraph">
+          {{ project.projectDescription }}
+        </p>
         <ContributionWidget
           :contributionWidgetColors="project.contributionWidgetColors"
           :projectName="project.projectName"
@@ -25,7 +42,6 @@
 </template>
 
 <script>
-
 import ContributionWidget from '@/components/About/ContributionWidget';
 
 export default {
@@ -40,7 +56,7 @@ export default {
         required: true
       },
       projectName: {
-        type: String, 
+        type: String,
         required: true
       },
       logoImg: {
@@ -64,10 +80,13 @@ export default {
         required: true
       }
     }
-  }, 
+  },
   computed: {
     isWhiteColored() {
-      if(this.project.projectName === 'teacherly' || this.project.projectName === 'guardrails') {
+      if (
+        this.project.projectName === 'teacherly' ||
+        this.project.projectName === 'guardrails'
+      ) {
         return true;
       }
       return false;
@@ -78,8 +97,7 @@ export default {
           this.project.projectName === 'nambafood',
         'single-project__background_guardrails':
           this.project.projectName === 'guardrails',
-        'single-project__background_godee':
-          this.project.projectName === 'godee'
+        'single-project__background_godee': this.project.projectName === 'godee'
       };
     }
   }
@@ -98,6 +116,31 @@ export default {
   color: initial;
   display: block;
 
+  @media only screen and (min-width: 1600px) {
+    .single-project {
+      &__content-wrap {
+        height: 320px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1600px) {
+    .single-project {
+      &__content-wrap {
+        height: 302px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .single-project {
+      &__content-wrap {
+        margin: 60px 46px 0;
+        height: 282px;
+      }
+    }
+  }
+
   @media only screen and (min-width: 1220px) {
     .single-project {
       &__background {
@@ -112,18 +155,16 @@ export default {
   @media only screen and (max-width: 1220px) {
     .single-project {
       &__content-wrap {
-        height: 14em;
+        height: 165px;
       }
     }
   }
 
-  @media only screen and (max-width: 1030px) {
-    width: 100%;
-
+  @media only screen and (max-width: 1024px) {
     .single-project {
       &__content-wrap {
-        margin: 68px 30px 0;
-        height: 270px;
+        margin: 68px 34px 0;
+        height: 240px;
       }
     }
   }
@@ -236,11 +277,6 @@ export default {
       &__background {
         background-size: contain;
 
-        &_first-project {
-          width: 100%;
-          background-size: cover;
-        }
-
         &_guardrails {
           left: 4.1px;
         }
@@ -342,5 +378,4 @@ export default {
     }
   }
 }
-
 </style>
