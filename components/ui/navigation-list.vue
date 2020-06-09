@@ -59,30 +59,26 @@ export default {
   @media only screen and (max-width: 1270px) {
     .navigation-list {
       .navigation-item {
-        padding-right: 30px;
+        padding-right: 44px;
         font-size: 16px;
+        letter-spacing: -0.03em;
+        background-position-y: 4px;
       }
     }
   }
 
-  @media only screen and (max-width: 1220px) {
+   @media only screen and (max-width: 970px) {
     .navigation-list {
-      .navigation-item {
-        padding-right: 20px;
-        font-size: 15px;
-      }
-    }
-  }
-
-   @media only screen and (max-width: 1024px) {
-    .navigation-list {
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(2, 300px);
+      grid-row-gap: 17px;
 
       .navigation-item {
-        padding-bottom: 27px;
-        font-size: 31px;
-        background-size: 12px;
-        background-position-y: 9px;
+        font-size: 17px;
+
+        &:nth-child(2) {
+          grid-row-start: 2;
+        }
       }
     }
   }

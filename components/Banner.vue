@@ -95,7 +95,7 @@ export default {
     .banner-content {
       width: 100%;
       height: 100%;
-      padding-top: 240px;
+      padding-top: 190px;
     }
 
     .text-content_wrapper {
@@ -265,20 +265,6 @@ export default {
   }
 
   @media only screen and (max-width: 1366px) {
-    .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first  {
-        font-size: 115px;
-      }
-    }
-
-    .index {
-      .icon-item {
-        margin-top: -50px;
-      }
-    }
-
     .services {
       .media-query-item {
         display: block;
@@ -292,12 +278,22 @@ export default {
   }
 
   @media only screen and (max-width: 1270px) {
+    .banner { 
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
+        font-size: 110px;
+      }
+
+      .text-content_wrapper {
+        padding-bottom: 122px;
+      }
+    }
+
     .index {
       .icon-item {
-        margin-top: 0;
-
         img {
-          height: 340px;
+          width: 290px;
         }
       }
     }
@@ -322,14 +318,6 @@ export default {
   }
 
   @media only screen and (max-width: 1080px) {
-    .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 110px;
-      }
-    }
-
     .services {
       .green-image {
         margin-right: 18px;
@@ -342,21 +330,11 @@ export default {
       .banner-content {
         padding-top: 0;
       }
-
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 100px;
-      }
     }
 
     .index {
       .main-title-wrapper {
-        padding-right: 0;
-      }
-
-      .icon-item {
-        display: none;
+        padding-right: 15px;
       }
     }
 
@@ -381,6 +359,29 @@ export default {
       .green-image {
         width: 170px;
         left: 50%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 970px) {
+    .banner { 
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
+        font-size: 77px;
+        letter-spacing: -5px;
+      }
+
+      .text-content_wrapper {
+        padding-bottom: 105px;
+      }
+    }
+    
+    .index {
+      .icon-item {
+        img {
+          width: 220px;
+        }
       }
     }
   }
