@@ -242,6 +242,51 @@ export default {
   display: none;
 }
 
+@media only screen and (min-width: 1600px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+
+    .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          margin: 0 19px 0 33px;
+          width: auto;
+        }
+      }
+
+      &:nth-child(3) {
+        /deep/ .single-project__background {
+          margin: 0 21px;
+          width: auto;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg')
+            no-repeat right 50%;
+          width: 100%;
+          height: 430px;
+          background-size: contain;
+          z-index: -44;
+          top: 0;
+          right: 0;
+          mix-blend-mode: overlay;
+          opacity: 0.68;
+        }
+      }
+
+      &:last-child {
+        /deep/ .single-project__background {
+          margin: 0 32px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1600px) {
   .projects {
     display: flex;

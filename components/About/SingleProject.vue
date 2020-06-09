@@ -305,6 +305,15 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 810px) and (min-width: 769px) {
+    .single-project {
+      &__content-wrap {
+        margin: 68px 23px 0;
+        height: 175px;
+      }
+    }
+  }
+
   @media screen and (max-width: 1030px) and (min-width: 798px) {
     .single-project {
       &__background {
