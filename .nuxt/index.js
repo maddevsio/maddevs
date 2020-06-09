@@ -12,11 +12,12 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_axios_f0f0c980 from 'nuxt_plugin_axios_f0f0c980' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_axios_44ce91b4 from 'nuxt_plugin_axios_44ce91b4' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_i18n_1fba523a from 'nuxt_plugin_i18n_1fba523a' // Source: ../plugins/i18n.js (mode: 'all')
 import nuxt_plugin_vuescrollto_44ce9a1c from 'nuxt_plugin_vuescrollto_44ce9a1c' // Source: ../plugins/vue-scrollto.js (mode: 'all')
 import nuxt_plugin_googleanalytics_2bcb2ee2 from 'nuxt_plugin_googleanalytics_2bcb2ee2' // Source: ../plugins/google-analytics.js (mode: 'all')
 import nuxt_plugin_veevalidate_1a0c1998 from 'nuxt_plugin_veevalidate_1a0c1998' // Source: ../plugins/vee-validate.js (mode: 'all')
+import nuxt_plugin_vue2perfectscrollbar_beb56648 from 'nuxt_plugin_vue2perfectscrollbar_beb56648' // Source: ../plugins/vue2-perfect-scrollbar.js (mode: 'all')
 import nuxt_plugin_vuejsmodal_a01fef9e from 'nuxt_plugin_vuejsmodal_a01fef9e' // Source: ../plugins/vue-js-modal.js (mode: 'client')
 import nuxt_plugin_slick_b0295394 from 'nuxt_plugin_slick_b0295394' // Source: ../plugins/slick.js (mode: 'client')
 
@@ -180,8 +181,8 @@ async function createApp (ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_axios_f0f0c980 === 'function') {
-    await nuxt_plugin_axios_f0f0c980(app.context, inject)
+  if (typeof nuxt_plugin_axios_44ce91b4 === 'function') {
+    await nuxt_plugin_axios_44ce91b4(app.context, inject)
   }
 
   if (typeof nuxt_plugin_i18n_1fba523a === 'function') {
@@ -198,6 +199,10 @@ async function createApp (ssrContext) {
 
   if (typeof nuxt_plugin_veevalidate_1a0c1998 === 'function') {
     await nuxt_plugin_veevalidate_1a0c1998(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_vue2perfectscrollbar_beb56648 === 'function') {
+    await nuxt_plugin_vue2perfectscrollbar_beb56648(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_vuejsmodal_a01fef9e === 'function') {

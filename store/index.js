@@ -10,18 +10,24 @@ export const mutations = {
       state.locale = locale;
     }
   },
-  SET_CONTACT_ME_FORM_STATUS(state, status) {
+  SET_STATUS_FOR_SEND_EMAIL(state, status) {
     state.contactMeFormStatus = status;
   }
 };
 
 export const actions = {
-  async sendContactMeForm({commit}, payload) {
+  sendEmail({commit}, payload) {
     const data = payload;
-    await this.$axios.post('send-email', data).then(res => {
-      if (res.status === 200) {
-        commit('SET_CONTACT_ME_FORM_STATUS', true);
-      }
+    return new Promise((resolve, reject) => {
+      this.$axios.post('send-email', data).then(res => {
+        if (res.status === 200) {
+          commit('SET_STATUS_FOR_SEND_EMAIL', true);
+          resolve(res);
+        }
+      }).catch(err => {
+        commit(SET_STATUS_FOR_SEND_EMAIL, false);
+        reject(err);
+      });
     });
   }
 };

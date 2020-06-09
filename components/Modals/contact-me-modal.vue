@@ -1,7 +1,7 @@
 <template>
-  <modal name="contact-me" :clickToClose="false">
+  <modal name="contact-me" :clickToClose="false" @closed="emailSended = false">
     <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('contact-me')">
-    <ValidationObserver v-slot="{ invalid }">
+    <ValidationObserver v-if="emailSended === false" v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
           <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
@@ -38,17 +38,20 @@
         >Сontact Me</button>
       </div>
     </ValidationObserver>
+    <SuccessMessage v-else />
   </modal>
 </template>
 
 <script>
-import FormCheckboxes from '@/components/ui/form-checkboxes';
 import WaveAnimation from '@/directives/WaveAnimation';
+import FormCheckboxes from '@/components/ui/form-checkboxes';
+import SuccessMessage from '@/components/Modals/success-message';
 
 export default {
   name: 'ContactMe',
   components: {
-    FormCheckboxes
+    FormCheckboxes,
+    SuccessMessage
   },
   directives: {
     WaveAnimation
@@ -60,7 +63,8 @@ export default {
     company: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'contact-me'
+    inputId: 'contact-me',
+    emailSended: false
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -82,7 +86,13 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$store.dispatch('sendEmail', form).then(res => {
+          if (res.status === 200) {
+            this.emailSended = true;
+          } else {
+            this.emailSended = false;
+          }
+        });
       }
     }
   }
