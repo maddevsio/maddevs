@@ -400,12 +400,30 @@ export default {
     .swiper-slide {
       left: -40%;
 
+      .single-project {
+        width: 60%;
+      }
+
       &-active {
         left: 0;
       }
 
-      .single-project {
-        width: 60%;
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          width: calc(100% - 14px);
+        }
+      }
+
+      &:nth-child(3) {
+        /deep/ .single-project__background {
+          width: calc(100% - 29px);
+        }
+      }
+
+      &:last-child {
+        /deep/ .single-project__background {
+          width: calc(100% - 38px);
+        }
       }
     }
   }
