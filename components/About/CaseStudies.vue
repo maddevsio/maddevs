@@ -1,19 +1,33 @@
 <template>
-  <section id="case-studies" class="case-studies" :class="{ 'case-studies--projects': currentPageName === 'projects' }">
+  <section
+    id="case-studies"
+    class="case-studies"
+    :class="{ 'case-studies--projects': currentPageName === 'projects' }"
+  >
     <div class="container">
       <div>
-      <h2 class="case-studies__main-title main-title" :class="{ 'case-studies--projects__main-title': currentPageName === 'projects' }">
-        Case
-        <span>Studies</span>
-      </h2>
-      <img class="projects-flame-background" 
-        src="@/assets/img/Projects/png/projects-flame-bg.png"
-        alt="Projects Flame Image"
-        v-if="currentPageName === 'projects'"
-      >
+        <h2
+          class="case-studies__main-title main-title"
+          :class="{
+            'case-studies--projects__main-title': currentPageName === 'projects'
+          }"
+        >
+          Case
+          <span>Studies</span>
+        </h2>
+        <img
+          class="projects-flame-background"
+          src="@/assets/img/Projects/png/projects-flame-bg.png"
+          alt="Projects Flame Image"
+          v-if="currentPageName === 'projects'"
+        />
       </div>
       <div class="projects">
-        <SingleProject v-for="(project, i) in projects" :key="i" :project="project"/>
+        <SingleProject
+          v-for="(project, i) in projects"
+          :key="i"
+          :project="project"
+        />
       </div>
     </div>
     <div class="projects-mobile-slider">
@@ -54,7 +68,8 @@ export default {
           projectBackground: 'nambafoodBackground',
           projectColor: '#f8f7f6',
           projectTitle: 'Contactless Delivery Service',
-          projectDescription: 'Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.'
+          projectDescription:
+            'Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.'
         },
         {
           projectName: 'teacherly',
@@ -63,7 +78,8 @@ export default {
           projectBackground: 'teacherlyBackground',
           projectColor: '#56448e',
           projectTitle: 'EdTech collaboration platform',
-          projectDescription: 'Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform.'
+          projectDescription:
+            'Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform.'
         },
         {
           projectName: 'guardrails',
@@ -72,7 +88,8 @@ export default {
           projectBackground: 'guardrailsBackground',
           projectColor: '#0e1b27',
           projectTitle: 'Cloud cybersecurity service',
-          projectDescription: 'Mad Devs was involved with Guardrails\' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.'
+          projectDescription:
+            'Mad Devs was involved with Guardrails\' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.'
         },
         {
           projectName: 'godee',
@@ -81,7 +98,8 @@ export default {
           projectBackground: 'godeeBackground',
           projectColor: '#ff6A01',
           projectTitle: 'Mass transportation company',
-          projectDescription: 'Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.'
+          projectDescription:
+            'Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.'
         }
       ]
     };
@@ -125,21 +143,20 @@ export default {
     .single-project {
       &:nth-child(2) {
         /deep/ .single-project__background {
-          margin: 0 20px;
           width: auto;
         }
       }
 
       &:nth-child(3) {
         /deep/ .single-project__background {
-          margin: 0 29px;
           width: auto;
         }
 
         &::before {
           content: '';
           position: absolute;
-          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg') no-repeat right 50%;
+          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg')
+            no-repeat right 50%;
           width: 100%;
           height: 430px;
           background-size: contain;
@@ -153,7 +170,6 @@ export default {
 
       &:last-child {
         /deep/ .single-project__background {
-          margin: 0 34px;
           width: auto;
         }
 
@@ -181,7 +197,6 @@ export default {
     @media only screen and (max-width: 410px) {
       .single-project {
         min-width: 100%;
-        padding-left: 28px;
       }
     }
 
@@ -190,7 +205,8 @@ export default {
         &::before {
           content: '';
           position: absolute;
-          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg') no-repeat right 50%;
+          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg')
+            no-repeat right 50%;
           width: 100%;
           height: 310px;
           background-size: contain;
@@ -220,38 +236,125 @@ export default {
       }
     }
   }
-
-  @media only screen and (max-width: 520px) {
-    .case-studies {
-      min-width: 100%;
-
-      &__main-title {
-        padding-bottom: 31px;
-      }
-    }
-  }
 }
 
 .projects-mobile-slider {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
-  .case-studies {
-    &__main-title {
-      padding-bottom: 31px;
-    }
+@media only screen and (min-width: 1600px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
 
-    .projects {
-      display: none;
-    }
+    .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          margin: 0 19px 0 33px;
+          width: auto;
+        }
+      }
 
-    .projects-mobile-slider {
-      display: block;
-    }
+      &:nth-child(3) {
+        /deep/ .single-project__background {
+          margin: 0 21px;
+          width: auto;
+        }
 
-    .swiper-slide {
-      left: -16px;
+        &::before {
+          content: '';
+          position: absolute;
+          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg')
+            no-repeat right 50%;
+          width: 100%;
+          height: 430px;
+          background-size: contain;
+          z-index: -44;
+          top: 0;
+          right: 0;
+          mix-blend-mode: overlay;
+          opacity: 0.68;
+        }
+      }
+
+      &:last-child {
+        /deep/ .single-project__background {
+          margin: 0 32px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+
+    .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          margin: 0 19px 0 33px;
+          width: auto;
+        }
+      }
+
+      &:nth-child(3) {
+        /deep/ .single-project__background {
+          margin: 0 21px;
+          width: auto;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg')
+            no-repeat right 50%;
+          width: 100%;
+          height: 430px;
+          background-size: contain;
+          z-index: -44;
+          top: 0;
+          right: 0;
+          mix-blend-mode: overlay;
+          opacity: 0.68;
+        }
+      }
+
+      &:last-child {
+        /deep/ .single-project__background {
+          margin: 0 32px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .projects {
+    .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          margin: 0 32px 0 18px;
+          width: auto;
+        }
+      }
+
+      &:nth-child(3) {
+        /deep/ .single-project__background {
+          margin: 0 19px;
+          width: auto;
+        }
+      }
+
+      &:last-child {
+        /deep/ .single-project__background {
+          margin: 0 30px;
+          width: auto;
+        }
+      }
     }
   }
 }
@@ -270,7 +373,7 @@ export default {
   .case-studies {
     &--projects {
       &__main-title {
-          width: 50%;
+        width: 50%;
       }
 
       .projects-flame-background {
@@ -282,12 +385,97 @@ export default {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .projects {
+    .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          margin: 0 25px 0 14px;
+          width: auto;
+        }
+      }
+
+      &:nth-child(3) {
+        /deep/ .single-project__background {
+          margin: 0 29px;
+          width: auto;
+        }
+      }
+
+      &:last-child {
+        /deep/ .single-project__background {
+          margin: 0 38px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .single-project {
+    min-width: inherit;
+  }
+}
+
 @media only screen and (max-width: 845px) {
   .case-studies--projects {
     .projects-flame-background {
       top: -233px;
       height: 600px;
       right: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .case-studies {
+    &__main-title {
+      padding-bottom: 31px;
+    }
+
+    .projects {
+      display: none;
+    }
+
+    .projects-mobile-slider {
+      display: block;
+    }
+
+    .swiper-slide {
+      left: -40%;
+
+      .single-project {
+        width: 60%;
+      }
+
+      &-active {
+        left: 0;
+
+        &:last-child {
+          /deep/ .single-project {
+            width: 100%;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          width: calc(100% - 14px);
+        }
+      }
+
+      &:nth-child(3) {
+        /deep/ .single-project__background {
+          width: calc(100% - 29px);
+        }
+      }
+
+      &:last-child {
+        /deep/ .single-project__background {
+          width: calc(100% - 38px);
+        }
+      }
     }
   }
 }
@@ -320,7 +508,31 @@ export default {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  .case-studies {
+    .swiper-slide {
+      left: -24%;
+
+      &-active {
+        left: 0;
+      }
+
+      .single-project {
+        width: 76%;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 520px) {
+  .case-studies {
+    min-width: 100%;
+
+    &__main-title {
+      padding-bottom: 31px;
+    }
+  }
+
   .case-studies--projects {
     .projects-flame-background {
       top: -180px;
@@ -335,6 +547,56 @@ export default {
       top: -97px;
       height: 300px;
       right: 15px;
+    }
+  }
+
+  .case-studies {
+    .swiper-slide {
+      left: -5%;
+
+      &-active {
+        left: 0;
+      }
+
+      .single-project {
+        width: 95%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .case-studies {
+    .swiper-slide {
+      left: -4%;
+
+      &-active {
+        left: 0;
+      }
+
+      .single-project {
+        width: 96%;
+      }
+
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          width: calc(100% - 33px);
+          margin-right: 25px;
+        }
+      }
+
+      &:nth-child(3) {
+        /deep/ .single-project__background {
+          width: calc(100% - 33px);
+          left: -6px;
+        }
+      }
+
+      &:last-child {
+        /deep/ .single-project__background {
+          width: calc(100% - 33px);
+        }
+      }
     }
   }
 }
