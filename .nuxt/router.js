@@ -6,6 +6,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _67b5b601 = () => interopDefault(import('../pages/careers.vue' /* webpackChunkName: "pages/careers" */))
 const _db465bfa = () => interopDefault(import('../pages/gdpr.vue' /* webpackChunkName: "pages/gdpr" */))
 const _3d243492 = () => interopDefault(import('../pages/nda.vue' /* webpackChunkName: "pages/nda" */))
+const _1a3b6158 = () => interopDefault(import('../pages/privacy.vue' /* webpackChunkName: "pages/privacy" */))
 const _6ad9b144 = () => interopDefault(import('../pages/projects.vue' /* webpackChunkName: "pages/projects" */))
 const _afeee57c = () => interopDefault(import('../pages/services.vue' /* webpackChunkName: "pages/services" */))
 const _638a5c9e = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -13,6 +14,7 @@ const _491ace48 = () => interopDefault(import('../pages/_lang/index.vue' /* webp
 const _f3004a82 = () => interopDefault(import('../pages/_lang/careers.vue' /* webpackChunkName: "pages/_lang/careers" */))
 const _c305d3f6 = () => interopDefault(import('../pages/_lang/gdpr.vue' /* webpackChunkName: "pages/_lang/gdpr" */))
 const _2bd7cd16 = () => interopDefault(import('../pages/_lang/nda.vue' /* webpackChunkName: "pages/_lang/nda" */))
+const _11ac7412 = () => interopDefault(import('../pages/_lang/privacy.vue' /* webpackChunkName: "pages/_lang/privacy" */))
 const _f5e4cb40 = () => interopDefault(import('../pages/_lang/projects.vue' /* webpackChunkName: "pages/_lang/projects" */))
 const _62830044 = () => interopDefault(import('../pages/_lang/services.vue' /* webpackChunkName: "pages/_lang/services" */))
 
@@ -45,6 +47,10 @@ export const routerOptions = {
     component: _3d243492,
     name: "nda"
   }, {
+    path: "/privacy",
+    component: _1a3b6158,
+    name: "privacy"
+  }, {
     path: "/projects",
     component: _6ad9b144,
     name: "projects"
@@ -72,6 +78,10 @@ export const routerOptions = {
     path: "/:lang/nda",
     component: _2bd7cd16,
     name: "lang-nda"
+  }, {
+    path: "/:lang/privacy",
+    component: _11ac7412,
+    name: "lang-privacy"
   }, {
     path: "/:lang/projects",
     component: _f5e4cb40,

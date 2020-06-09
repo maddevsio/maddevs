@@ -1,17 +1,12 @@
 <template>
-  <modal name="order-project-from-us" :clickToClose="false">
-    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('order-project-from-us')">
+  <modal name="process-audit" :clickToClose="false">
+    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('process-audit')">
     <ValidationObserver v-slot="{ invalid }">
-      <form class="form"> 
+      <div class="form"> 
         <div class="fields-list">
           <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Full Name</p>
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
-            <span class="modal-error-text error-text">{{ errors[0] }}</span>
-          </ValidationProvider>
-          <ValidationProvider class="modal-field-item field-item" rules="max:300|required" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name required">Company</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="MyAwesomeCompany, Inc." v-model="company">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="email|required" v-slot="{ classes, errors }">
@@ -24,19 +19,23 @@
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
-          <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name">Project description</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescription" @keydown="autosize($event)" rows="1"/>
+          <ValidationProvider class="modal-field-item field-item" rules="max:500|required" v-slot="{ classes, errors }">
+            <p class="modal-field-name field-name required">Your question on work process</p>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="How can I get more things done by implementing pipelines?" v-model="workProcessQuestion" @keydown="autosize($event)" rows="1"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
         <FormCheckboxes
-         @getPrivacyCheckboxState="getPrivacyCheckboxState"
-         @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
+          @getPrivacyCheckboxState="getPrivacyCheckboxState"
+          @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
-        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Order a project from us</button>
-      </form>
+        <button
+          class="modal-button-default button-default red-text-and-border"
+          :disabled="invalid || !agreeWithPrivacyPolicy"
+          @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+        >​Get advice on process</button>
+      </div>
     </ValidationObserver>
   </modal>
 </template>
@@ -45,7 +44,7 @@
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 
 export default {
-  name: 'order-project-from-us-modal',
+  name: 'process-audit',
   components: {
     FormCheckboxes
   },
@@ -53,11 +52,10 @@ export default {
     fullName: null,
     email: null,
     phoneNumber: null,
-    company: null,
-    projectDescription: null,
+    workProcessQuestion: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'order-project-from-us'
+    inputId: 'process-audit'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -69,7 +67,50 @@ export default {
     autosize(e) {
       e.target.style.height = 'auto';
       e.target.style.height = `${e.target.scrollHeight}px`;
+    },
+    sendForm(isValid) {
+      if (isValid === true) {
+        const form = {
+          templateId: 304634, // Required
+          variables: {
+            fullName: this.fullName,
+            workProcessQuestion: this.workProcessQuestion,
+            email: this.email,
+            phoneNumber: this.phoneNumber,
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
+          }
+        };
+        this.$store.dispatch('sendContactMeForm', form);
+      }
     }
   }
 };
 </script>
+
+<style lang="scss" scoped>
+  .form {
+    textarea {
+      height: 79px;
+      min-height: 79px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+		.form {
+      textarea {
+        height: 60px;
+        min-height: 60px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+		.form {
+      textarea {
+        height: 79px;
+        min-height: 79px;
+      }
+    }
+  }
+</style>

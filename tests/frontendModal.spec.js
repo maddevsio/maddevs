@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import frontendModal from '@/components/ui/frontend-modal';
+import frontendModal from '@/components/Modals/frontend-modal';
 
 describe('Frontend modal', () => {
   let wrapper;

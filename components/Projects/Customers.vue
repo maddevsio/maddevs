@@ -133,7 +133,6 @@ export default {
   &__title-wrap {
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
   }
 
   &__main-title {
@@ -161,15 +160,34 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1024px),
-  only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1440px) {
+  .customers {
+    .valued-customers {
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-row-gap: 95px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .customers {
+    .valued-customers {
+      grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+      grid-row-gap: 90px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1065px) {
   .customers {
     &__main-description {
       padding-top: 17px;
     }
 
     .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-row-gap: 65px;
+      grid-column-gap: 70px;
     }
   }
 }
@@ -185,12 +203,13 @@ export default {
 @media only screen and (max-width: 860px) {
   .customers {
     .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      grid-row-gap: 30px;
     }
   }
 }
 
-@media only screen and (max-width: 615px) {
+@media only screen and (max-width: 680px) {
   .customers {
     margin-top: 80px;
 
@@ -200,9 +219,26 @@ export default {
 
     .valued-customers {
       grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
-      grid-row-gap: 50px;
-      grid-column-gap: 0;
+      grid-row-gap: 25px;
+      grid-column-gap: 15px;
       margin-top: 47px;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .customers {
+    .valued-customers {
+      grid-row-gap: 0;
+      grid-column-gap: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 377px) {
+  .customers {
+    .valued-customers {
+      grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
     }
   }
 }

@@ -7,8 +7,8 @@
           src="@/assets/img/Careers/svg/careers_logo.svg"
           alt="Careers Background Image"
         />
-        <ValidationObserver v-slot="{ invalid }">
-          <form class="careers__form">
+        <ValidationObserver v-slot="{ handleSubmit }">
+          <form @submit.prevent="handleSubmit(sendData)" class="careers__form">
             <label class="careers__form-name-label form-text"
               >Hello, my name is
               <ValidationProvider rules="required" v-slot="{ classes, errors }">
@@ -16,7 +16,6 @@
                   class="careers__form-name-input form-text"
                   type="text"
                   placeholder="John Smith"
-                  :class="classes"
                   v-model="fullName"
                   ref="nameInput"
                 />
@@ -30,22 +29,25 @@
                   class="careers__form-position-input form-text"
                   type="text"
                   placeholder="desired position."
-                  :class="classes"
                   v-model="positionTitle"
                 />
                 <span class="modal-error-text error-text">{{ errors[0] }}</span>
               </ValidationProvider>
             </h4>
-            <h4 class="careers__form-description form-text">
+            <h4 class="careers__form-description form-text radio-buttons">
               You can also consider me for your other
             </h4>
             <ul class="careers__position-list">
-              <RadioButton
-                v-for="(radio, i) in radioData"
-                :key="i"
-                :radio="radio"
-                @change="changePositionValue"
-              />
+              <ValidationProvider rules="required" v-slot="{ classes, errors }">
+                <RadioButton
+                  v-for="(radio, i) in radioData"
+                  :key="i"
+                  :radio="radio"
+                  v-model="positionValue"
+                  @change="changePositionValue"
+                />
+                <span class="modal-error-text error-text">{{ errors[0] }}</span>
+              </ValidationProvider>
             </ul>
             <h4 class="careers__form-description form-text email-title">
               Please reply to
@@ -57,7 +59,6 @@
                   class="careers__form-email-input form-text"
                   type="email"
                   placeholder="your@mail.com"
-                  :class="classes"
                   v-model="email"
                 />
                 <span class="modal-error-text error-text">{{ errors[0] }}</span>
@@ -67,37 +68,28 @@
               To get more information on my skills, please
             </h4>
             <ul class="careers__form-list form-text">
-              <ValidationObserver ref="form">
-                <li class="careers__form-list-item">
-                  – check out my
-                  <ValidationProvider v-slot="{ classes, errors }">
-                    <input
-                      class="careers__form-linkedin-input form-text"
-                      type="text"
-                      placeholder="LinkedIn profile"
-                      v-model="linkedinProfile"
-                    />
-                    <span class="modal-error-text error-text">{{
-                      errors[0]
-                    }}</span>
-                  </ValidationProvider>
-                </li>
-                <li class="careers__form-list-item file-attach">
-                  <ValidationProvider
-                    rules="required"
-                    v-slot="{ classes, errors }"
-                  >
-                    <FileInput v-model="selectedFile" @input="onFileChanged" />
-                    <span class="modal-error-text error-text">{{
-                      errors[0]
-                    }}</span>
-                  </ValidationProvider>
-                </li>
-              </ValidationObserver>
+              <li class="careers__form-list-item">
+                – check out my
+                <input
+                  class="careers__form-linkedin-input form-text"
+                  type="text"
+                  placeholder="LinkedIn profile"
+                  v-model="linkedinProfile"
+                />
+              </li>
+              <li class="careers__form-list-item file-attach">
+                <ValidationProvider
+                  rules="required"
+                  v-slot="{ classes, errors }"
+                >
+                  <FileInput v-model="selectedFile" @input="onFileChanged" />
+                  <span class="modal-error-text error-text">{{
+                    errors[0]
+                  }}</span>
+                </ValidationProvider>
+              </li>
             </ul>
-            <Button :disabled="invalid" @click="sendData"
-              >I want to work for Mad Devs!</Button
-            >
+            <Button type="submit">I want to work for Mad Devs!</Button>
           </form>
         </ValidationObserver>
       </div>
@@ -144,8 +136,20 @@ export default {
       this.positionValue = newPositionValue;
     },
     sendData(e) {
-      e.preventDefault();
-      //TODO: add ajax request
+      if (!this.errors) {
+        //TODO: add ajax request
+        const form = {
+          templateId: 305491, // Required
+          variables: {
+            fullName: this.fullName,
+            email: this.email,
+            linkedinProfile: this.linkedinProfile,
+            positionValue: this.positionValue,
+            positionTitle: this.positionTitle
+          }
+        };
+        this.$store.dispatch('sendContactMeForm', form);
+      }
     },
     focusInput() {
       this.$nextTick(async () => {
@@ -240,6 +244,21 @@ export default {
 
     &-icon {
       margin-right: 25px;
+    }
+  }
+
+  .radio-buttons {
+    margin-top: 10px;
+  }
+
+  &__form-name-label,
+  &__form-description {
+    position: relative;
+
+    .modal-error-text {
+      position: absolute;
+      left: 0;
+      bottom: -5px;
     }
   }
 }

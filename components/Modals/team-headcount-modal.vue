@@ -1,8 +1,8 @@
 <template>
-  <modal name="backend" :clickToClose="false">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('backend')">
+  <modal name="team-headcount" :clickToClose="false">
+    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('team-headcount')">
     <ValidationObserver v-slot="{ invalid }">
-      <form class="form"> 
+      <div class="form"> 
         <div class="fields-list">
           <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Full Name</p>
@@ -19,19 +19,23 @@
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
-          <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name">Backend expertise you are interested in</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need Go and C/C++ developers" v-model="interesteBackendExpertise" @keydown="autosize($event)" rows="1"/>
+          <ValidationProvider class="modal-field-item field-item" rules="max:500|required" v-slot="{ classes, errors }">
+            <p class="modal-field-name field-name required">Your question on team productivity​</p>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="How can I cope with miscommunication on the team and document things on time?" v-model="teamProductivityQuestion" @keydown="autosize($event)" rows="1"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
         <FormCheckboxes
-          v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
-          v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
+          @getPrivacyCheckboxState="getPrivacyCheckboxState"
+          @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
-        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid">Get server help</button>
-      </form>
+        <button
+          class="modal-button-default button-default red-text-and-border"
+          :disabled="invalid || !agreeWithPrivacyPolicy"
+          @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+        >​Get advice on team</button>
+      </div>
     </ValidationObserver>
   </modal>
 </template>
@@ -40,18 +44,18 @@
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 
 export default {
-  name: 'backend-modal',
+  name: 'team-headcount',
   components: {
     FormCheckboxes
   },
   data: () => ({
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    interesteBackendExpertise: '',
+    fullName: null,
+    email: null,
+    phoneNumber: null,
+    teamProductivityQuestion: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'backend'
+    inputId: 'team-headcount'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -63,7 +67,50 @@ export default {
     autosize(e) {
       e.target.style.height = 'auto';
       e.target.style.height = `${e.target.scrollHeight}px`;
+    },
+    sendForm(isValid) {
+      if (isValid === true) {
+        const form = {
+          templateId: 304635, // Required
+          variables: {
+            fullName: this.fullName,
+            teamProductivityQuestion: this.teamProductivityQuestion,
+            email: this.email,
+            phoneNumber: this.phoneNumber,
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
+          }
+        };
+        this.$store.dispatch('sendContactMeForm', form);
+      }
     }
   }
 };
 </script>
+
+<style lang="scss" scoped>
+  .form {
+    textarea {
+      height: 79px;
+      min-height: 79px;
+    }
+  }
+
+  @media only screen and (max-width: 565px) {
+		.form {
+      textarea {
+        height: 79px;
+        min-height: 79px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 374px) {
+		.form {
+      textarea {
+        height: 102px;
+        min-height: 102px;
+      }
+    }
+  }
+</style>

@@ -1,8 +1,8 @@
 <template>
-  <modal name="individuals" :clickToClose="false">
-    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('individuals')">
+  <modal name="mobile" :clickToClose="false">
+    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('mobile')">
     <ValidationObserver v-slot="{ invalid }">
-      <form class="form"> 
+      <div class="form"> 
         <div class="fields-list">
           <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Full Name</p>
@@ -19,28 +19,23 @@
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
-          <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name required">Expertise you are interested in</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="React development, Heroku Postgres, etc" v-model="interestedExpertise">
-            <span class="modal-error-text error-text">{{ errors[0] }}</span>
-          </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name">Project description</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescription" @keydown="autosize($event)" rows="1"/>
+            <p class="modal-field-name field-name">Mobile expertise you are interested in</p>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need assistance with Kotlin development and UI/UX design" v-model="interesteMobileExpertise" @keydown="autosize($event)" rows="1"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
         <FormCheckboxes
-          @getPrivacyCheckboxState="getPrivacyCheckboxState"
-          @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
+          v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
+          v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
           :inputId="inputId"
         />
-        <button 
-          class="modal-button-default button-default red-text-and-border" 
-          :disabled="invalid || !agreeWithPrivacyPolicy">
-          Get individual proactive rockets
-        </button>
-      </form>
+        <button
+          class="modal-button-default button-default red-text-and-border"
+          :disabled="invalid || !agreeWithPrivacyPolicy"
+          @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+        >Get mobile help</button>
+      </div>
     </ValidationObserver>
   </modal>
 </template>
@@ -49,19 +44,18 @@
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 
 export default {
-  name: 'frontend-modal',
+  name: 'mobile-modal',
   components: {
     FormCheckboxes
   },
   data: () => ({
-    fullName: null,
-    email: null,
-    phoneNumber: null,
-    projectDescription: null,
-    interestedExpertise: null,
+    fullName: '',
+    email: '',
+    phoneNumber: '',
+    interesteMobileExpertise: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'individuals'
+    inputId: 'mobile'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -73,7 +67,50 @@ export default {
     autosize(e) {
       e.target.style.height = 'auto';
       e.target.style.height = `${e.target.scrollHeight}px`;
+    },
+    sendForm(isValid) {
+      if (isValid === true) {
+        const form = {
+          templateId: 304629, // Required
+          variables: {
+            fullName: this.fullName,
+            email: this.email,
+            phoneNumber: this.phoneNumber,
+            interesteMobileExpertise: this.interesteMobileExpertise,
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
+          }
+        };
+        this.$store.dispatch('sendContactMeForm', form);
+      }
     }
   }
 };
 </script>
+
+<style lang="scss" scoped>
+  .form {
+    textarea {
+      height: 79px;
+      min-height: 79px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+		.form {
+      textarea {
+        height: 60px;
+        min-height: 60px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 475px) {
+		.form {
+      textarea {
+        height: 79px;
+        min-height: 79px;
+      }
+    }
+  }
+</style>
