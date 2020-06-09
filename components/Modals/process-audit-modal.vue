@@ -1,8 +1,8 @@
 <template>
-  <modal name="technology-stack" :clickToClose="false">
-    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('technology-stack')">
+  <modal name="process-audit" :clickToClose="false">
+    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('process-audit')">
     <ValidationObserver v-slot="{ invalid }">
-      <form class="form technology-stack"> 
+      <div class="form"> 
         <div class="fields-list">
           <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Full Name</p>
@@ -20,8 +20,8 @@
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="max:500|required" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name required">Your question on tech stack​</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="Which database should I use to create a portal for customer reviews?" v-model="techStackQuestion"/>
+            <p class="modal-field-name field-name required">Your question on work process</p>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="How can I get more things done by implementing pipelines?" v-model="workProcessQuestion"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
@@ -30,8 +30,12 @@
           @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
-        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">​Get advice on tech stack</button>
-      </form>
+        <button
+          class="modal-button-default button-default red-text-and-border"
+          :disabled="invalid || !agreeWithPrivacyPolicy"
+          @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+        >​Get advice on process</button>
+      </div>
     </ValidationObserver>
   </modal>
 </template>
@@ -40,7 +44,7 @@
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 
 export default {
-  name: 'TechnologyStack',
+  name: 'process-audit',
   components: {
     FormCheckboxes
   },
@@ -48,10 +52,10 @@ export default {
     fullName: null,
     email: null,
     phoneNumber: null,
-    techStackQuestion: null,
+    workProcessQuestion: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'technology-stack'
+    inputId: 'process-audit'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -59,6 +63,22 @@ export default {
     },
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+    },
+    sendForm(isValid) {
+      if (isValid === true) {
+        const form = {
+          templateId: 304634, // Required
+          variables: {
+            fullName: this.fullName,
+            workProcessQuestion: this.workProcessQuestion,
+            email: this.email,
+            phoneNumber: this.phoneNumber,
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
+          }
+        };
+        this.$store.dispatch('sendContactMeForm', form);
+      }
     }
   }
 };
@@ -81,20 +101,11 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 565px) {
+  @media only screen and (max-width: 500px) {
 		.form {
       textarea {
         height: 79px;
         min-height: 79px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 330px) {
-		.form {
-      textarea {
-        height: 102px;
-        min-height: 102px;
       }
     }
   }

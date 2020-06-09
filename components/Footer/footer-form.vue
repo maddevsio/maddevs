@@ -1,5 +1,5 @@
 <template>
-	<form class="footer-form form"> 
+	<div class="footer-form form"> 
 		<ValidationObserver v-slot="{ invalid }">
 			<div class="fields-list">
 				<ValidationProvider class="field-item" v-slot="{ classes, errors }">
@@ -22,9 +22,13 @@
 				@getPrivacyCheckboxState="getPrivacyCheckboxState"
 				@getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
 			/>
-			<button class="button-default red-text-and-border" :disabled="invalid || !agreeWithPrivacyPolicy">Order a project now</button>
+			<button
+				class="button-default red-text-and-border"
+				:disabled="invalid || !agreeWithPrivacyPolicy"
+				@click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+			>Order a project now</button>
 		</ValidationObserver>
-	</form>
+	</div>
 </template>
 
 <script>
@@ -49,6 +53,22 @@ export default {
     },
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+    },
+    sendForm(isValid) {
+      if (isValid === true) {
+        const form = {
+          templateId: 305480, // Required
+          variables: {
+            fullName: this.fullName,
+            email: this.email,
+            projectInfo: this.projectInfo,
+            projectDescription: this.projectDescription,
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
+          }
+        };
+        this.$store.dispatch('sendContactMeForm', form);
+      }
     }
   }
 };

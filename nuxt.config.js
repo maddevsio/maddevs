@@ -80,6 +80,7 @@ module.exports = {
     }
   },
   modules: [
+    '@nuxtjs/axios',
     [
       '@nuxtjs/yandex-metrika',
       {
@@ -91,6 +92,9 @@ module.exports = {
         accurateTrackBounce: true
       }
     ]
-  ]
+  ],
+  axios: {
+    baseURL: 'http://localhost:5000/'
+  }
 };
 
