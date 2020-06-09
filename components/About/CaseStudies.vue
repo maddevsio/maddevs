@@ -406,6 +406,12 @@ export default {
 
       &-active {
         left: 0;
+
+        &:last-child {
+          /deep/ .single-project {
+            width: 100%;
+          }
+        }
       }
 
       &:nth-child(2) {
@@ -537,7 +543,7 @@ export default {
       &:nth-child(3) {
         /deep/ .single-project__background {
           width: calc(100% - 33px);
-          left: -7px;
+          left: -6px;
         }
       }
 
