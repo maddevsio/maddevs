@@ -96,10 +96,11 @@ export default {
       width: 100%;
       height: 100%;
       padding-top: 240px;
+    }
 
-      .text-content_wrapper {
-        display: flex;
-      }
+    .text-content_wrapper {
+      display: flex;
+      padding-bottom: 180px;
     }
 
     .banner-main_title,
@@ -109,7 +110,7 @@ export default {
       font-style: normal;
       font-weight: bold;
       font-size: 165px;
-      letter-spacing: -3px;
+      letter-spacing: -8px;
       color: $text-color--black;
       text-shadow: $text-shadow--white;
 
@@ -203,33 +204,10 @@ export default {
     }
   }
 
-  @media only screen and (min-width: 1620px) {
-    .projects,
-    .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 125px;
-      }
-
-      .text-content_wrapper {
-        display: flex;
-        padding-bottom: 130px;
-      }
-    }
-  }
-
   @media only screen and (max-width: 1620px) {
     .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 125px;
-      }
-
       .text-content_wrapper {
         display: flex;
-        padding-bottom: 130px;
       }
     }
 
@@ -237,6 +215,13 @@ export default {
       .hover-image,
       .default-image {
         margin-right: 55px;
+      }
+    }
+
+    .projects,
+    .banner {
+      .text-content_wrapper {
+        display: flex;
       }
     }
   }
@@ -256,7 +241,11 @@ export default {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
-        font-size: 125px;
+        font-size: 149px;
+      }
+
+      .text-content_wrapper {
+        padding-bottom: 147px;
       }
     }
 

@@ -52,24 +52,7 @@ export default {
       font-family: 'Hoves-Regular';
       background: url('../../assets/img/common/link-arrow.svg') no-repeat;
       background-position-y: 7px;
-    }
-  }
-
-  @media only screen and (max-width: 1620px) {
-    .navigation-list {
-      .navigation-item {
-        font-size: 17px;
-        background-position-y: 3px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1366px) {
-    .navigation-list {
-      .navigation-item {
-        padding-right: 50px;
-        font-size: 17px;
-      }
+      letter-spacing: -0.04em;
     }
   }
 
