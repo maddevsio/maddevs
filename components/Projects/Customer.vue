@@ -1,15 +1,15 @@
 <template>
   <div class="valued-customers__wrapper">
-    <img class="valued-customers__logo"
+    <img
+      class="valued-customers__logo"
       :src="require(`@/assets/img/Projects/svg/${customer.imgName}.svg`)"
       :alt="customer.imgName"
-    >
-    <span class="valued-customers__industry">{{customer.industry}}</span>
-  </div>       
+    />
+    <span class="valued-customers__industry">{{ customer.industry }}</span>
+  </div>
 </template>
 
 <script>
-
 export default {
   name: 'Customer',
   props: {
@@ -25,7 +25,6 @@ export default {
     }
   }
 };
-
 </script>
 
 <style lang="scss" scoped>
@@ -51,17 +50,26 @@ export default {
   }
 
   &__industry {
+    font-family: 'Hoves-Regular';
     font-size: 12px;
     color: #ccc;
     align-items: center;
     justify-self: center;
     position: absolute;
-    bottom: -14%;
+    top: 62px;
     text-align: center;
     transition: opacity 0.3s linear;
     opacity: 0;
     height: 0;
     overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .valued-customers {
+    &__logo {
+      height: 70px;
+    }
   }
 }
 
@@ -71,6 +79,10 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    &__logo {
+      height: 60px;
     }
   }
 }
@@ -92,22 +104,20 @@ export default {
 @media only screen and (max-width: 860px) {
   .valued-customers {
     grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
-
-    &__logo {
-      width: 80%;
-    }
+    grid-column-gap: 55px;
 
     &__industry {
       font-size: 10px;
+      top: 56px;
     }
   }
 }
 
-@media only screen and (max-width: 615px) {
+@media only screen and (max-width: 680px) {
   .valued-customers {
     grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
     grid-row-gap: 50px;
-    grid-column-gap: 0;
+    grid-column-gap: 35px;
     margin-top: 47px;
 
     &__logo {
@@ -125,9 +135,13 @@ export default {
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 
     &__logo {
-      width: 70%;
+      width: 75%;
+    }
+
+    &__industry {
+      font-size: 8px;
+      top: 53px;
     }
   }
 }
-
 </style>
