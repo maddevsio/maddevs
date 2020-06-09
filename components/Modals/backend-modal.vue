@@ -1,6 +1,5 @@
 <template>
-  <modal name="backend" :clickToClose="false">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('backend')">
+  <ModalContainer name="backend">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -30,19 +29,30 @@
           v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
           :inputId="inputId"
         />
-        <button class="modal-button-default button-default red-text-and-border" :disabled="invalid" @click="sendForm(!invalid)">Get server help</button>
+        <button
+          class="modal-button-default button-default red-text-and-border"
+          :disabled="invalid"
+          @click="sendForm(!invalid)"
+          v-WaveAnimation
+        >Get server help</button>
       </div>
     </ValidationObserver>
-  </modal>
+  </ModalContainer>
 </template>
 
 <script>
+import ModalContainer from '@/containers/ModalContainer';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
+import WaveAnimation from '@/directives/WaveAnimation';
 
 export default {
   name: 'backend-modal',
   components: {
+    ModalContainer,
     FormCheckboxes
+  },
+  directives: {
+    WaveAnimation
   },
   data: () => ({
     fullName: '',
@@ -73,7 +83,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$nuxt.$emit('send-email', form);
       }
     }
   }

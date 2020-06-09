@@ -1,6 +1,5 @@
 <template>
-  <modal name="mobile" :clickToClose="false">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('mobile')">
+  <ModalContainer name="mobile">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -37,16 +36,18 @@
         >Get mobile help</button>
       </div>
     </ValidationObserver>
-  </modal>
+  </ModalContainer>
 </template>
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
+import ModalContainer from '@/containers/ModalContainer';
 
 export default {
   name: 'mobile-modal',
   components: {
-    FormCheckboxes
+    FormCheckboxes,
+    ModalContainer
   },
   data: () => ({
     fullName: '',
@@ -77,7 +78,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$nuxt.$emit('send-email', form);
       }
     }
   }

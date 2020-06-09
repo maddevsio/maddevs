@@ -1,6 +1,5 @@
 <template>
-  <modal name="infrastructure-audit" :clickToClose="false">
-    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('infrastructure-audit')">
+  <ModalContainer name="infrastructure-audit">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -45,18 +44,20 @@
         >Get an infrastructure audit</button>
       </div>
     </ValidationObserver>
-  </modal>
+  </ModalContainer>
 </template>
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import RadioList from '@/components/ui/radio-list';
+import ModalContainer from '@/containers/ModalContainer';
 
 export default {
   name: 'infrastructure-audit',
   components: {
     FormCheckboxes,
-    RadioList
+    RadioList,
+    ModalContainer
   },
   data: () => ({
     fullName: null,
@@ -126,7 +127,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$nuxt.$emit('send-email', form);
       }
     }
   }

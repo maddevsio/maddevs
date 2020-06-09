@@ -25,6 +25,9 @@ export default {
   @import '../../assets/styles/vars';
 
   .success-message {
+    background-color: $bgcolor--black;
+    padding: 30px 60px;
+
     &__title {
       padding-top: 28px;
       font-size: 40px;
@@ -41,13 +44,15 @@ export default {
       font-family: 'Hoves-Regular';
     }
 
-    /deep/.vm--modal {
-      padding: 85px 59px 94px;
-    }
-
     .close-modal {
       top: 29px;
       right: 17px;
+    }
+  }
+
+  @media only screen and (max-height: 700px) {
+    .success-message {
+      padding: 30px 40px;
     }
   }
 </style>

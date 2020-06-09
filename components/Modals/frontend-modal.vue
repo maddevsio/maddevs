@@ -1,6 +1,5 @@
 <template>
-  <modal name="frontend" :clickToClose="false">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('frontend')">
+  <ModalContainer name="frontend">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -34,19 +33,26 @@
           class="modal-button-default button-default red-text-and-border"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+          v-WaveAnimation
         >Get UX help</button>
       </div>
     </ValidationObserver>
-  </modal>
+  </ModalContainer>
 </template>
 
 <script>
+import WaveAnimation from '@/directives/WaveAnimation';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
+import ModalContainer from '@/containers/ModalContainer';
 
 export default {
   name: 'frontend-modal',
   components: {
-    FormCheckboxes
+    FormCheckboxes,
+    ModalContainer
+  },
+  directives: {
+    WaveAnimation
   },
   data: () => ({
     fullName: '',
@@ -77,7 +83,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$nuxt.$emit('send-email', form);
       }
     }
   }

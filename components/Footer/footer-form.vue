@@ -45,7 +45,8 @@ export default {
     projectDescription: null,
     projectInfo: null,
     agreeWithPrivacyPolicy: false,
-    agreeToGetMadDevsDiscountOffers: false
+    agreeToGetMadDevsDiscountOffers: false,
+    emailSended: false
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -67,7 +68,13 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$store.dispatch('sendEmail', form).then(res => {
+          if (res.status === 200) {
+            this.emailSended = true;
+          } else {
+            this.emailSended = false;
+          }
+        });
       }
     }
   }

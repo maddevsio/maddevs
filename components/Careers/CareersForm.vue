@@ -117,7 +117,8 @@ export default {
         { id: 'middle', name: 'position', labelText: 'Middle,' },
         { id: 'junior', name: 'position', labelText: 'Junior,' },
         { id: 'intern', name: 'position', labelText: 'Intern' }
-      ]
+      ],
+      emailSended: false
     };
   },
   mounted() {
@@ -148,7 +149,13 @@ export default {
             positionTitle: this.positionTitle
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$store.dispatch('sendEmail', form).then(res => {
+          if (res.status === 200) {
+            this.emailSended = true;
+          } else {
+            this.emailSended = false;
+          }
+        });
       }
     },
     focusInput() {

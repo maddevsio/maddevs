@@ -1,6 +1,5 @@
 <template>
-  <modal name="order-project-from-us" :clickToClose="false">
-    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('order-project-from-us')">
+  <ModalContainer name="order-project-from-us">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -42,16 +41,18 @@
         >Order a project from us</button>
       </div>
     </ValidationObserver>
-  </modal>
+  </ModalContainer>
 </template>
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
+import ModalContainer from '@/containers/ModalContainer';
 
 export default {
   name: 'order-project-from-us-modal',
   components: {
-    FormCheckboxes
+    FormCheckboxes,
+    ModalContainer
   },
   data: () => ({
     fullName: null,
@@ -84,7 +85,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$nuxt.$emit('send-email', form);
       }
     }
   }

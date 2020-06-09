@@ -1,6 +1,5 @@
 <template>
-  <modal name="get-case-studies" :clickToClose="false">
-    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('get-case-studies')">
+  <ModalContainer name="get-case-studies">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -27,16 +26,18 @@
         >Get Case Studies</button>
       </div>
     </ValidationObserver>
-  </modal>
+  </ModalContainer>
 </template>
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
+import ModalContainer from '@/containers/ModalContainer';
 
 export default {
   name: 'case-studies-modal',
   components: {
-    FormCheckboxes
+    FormCheckboxes,
+    ModalContainer
   },
   data: () => ({
     fullName: null,
@@ -63,7 +64,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$nuxt.$emit('send-email', form);
       }
     }
   }

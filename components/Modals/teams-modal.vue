@@ -1,6 +1,5 @@
 <template>
-  <modal name="teams" :clickToClose="false">
-    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('teams')">
+  <ModalContainer name="teams">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -47,18 +46,20 @@
         </button>
       </div>
     </ValidationObserver>
-  </modal>
+  </ModalContainer>
 </template>
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import RadioList from '@/components/ui/radio-list';
+import ModalContainer from '@/containers/ModalContainer';
 
 export default {
   name: 'frontend-modal',
   components: {
     FormCheckboxes,
-    RadioList
+    RadioList,
+    ModalContainer
   },
   data: () => ({
     fullName: null,
@@ -110,7 +111,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$nuxt.$emit('send-email', form);
       }
     }
   }

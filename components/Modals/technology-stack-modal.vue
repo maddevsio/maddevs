@@ -1,6 +1,5 @@
 <template>
-  <modal name="technology-stack" :clickToClose="false">
-    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('technology-stack')">
+  <ModalContainer name="technology-stack">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form technology-stack"> 
         <div class="fields-list">
@@ -37,16 +36,18 @@
         >​Get advice on tech stack</button>
       </div>
     </ValidationObserver>
-  </modal>
+  </ModalContainer>
 </template>
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
+import ModalContainer from '@/containers/ModalContainer';
 
 export default {
   name: 'TechnologyStack',
   components: {
-    FormCheckboxes
+    FormCheckboxes,
+    ModalContainer
   },
   data: () => ({
     fullName: null,
@@ -77,7 +78,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$nuxt.$emit('send-email', form);
       }
     }
   }
