@@ -295,11 +295,6 @@ export default {
       &__sub-title {
         font-size: 45px;
       }
-
-      &__content-wrap {
-        margin: 58px 20px 0;
-        height: 175px;
-      }
     }
   }
 
@@ -329,8 +324,7 @@ export default {
       min-width: 320px;
 
       &__background {
-        width: 85%;
-        margin-left: 0.88em;
+        background-size: contain;
 
         &_first-project {
           width: 100%;
@@ -343,11 +337,6 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
-      }
-
-      &__content-wrap {
-        margin: 68px 70px 0;
-        height: 14em;
       }
     }
   }
@@ -397,9 +386,6 @@ export default {
 
   @media only screen and (max-width: 410px) {
     .single-project {
-      &__content-wrap {
-        margin: 40px 62px 0 22px;
-      }
 
       &__background {
         width: 85%;

@@ -197,7 +197,6 @@ export default {
     @media only screen and (max-width: 410px) {
       .single-project {
         min-width: 100%;
-        padding-left: 28px;
       }
     }
 
@@ -399,7 +398,15 @@ export default {
     }
 
     .swiper-slide {
-      left: -16px;
+      left: -40%;
+
+      &-active {
+        left: 0;
+      }
+
+      .single-project {
+        width: 60%;
+      }
     }
   }
 }
@@ -432,6 +439,22 @@ export default {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  .case-studies {
+    .swiper-slide {
+      left: -24%;
+
+      &-active {
+        left: 0;
+      }
+
+      .single-project {
+        width: 76%;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 520px) {
   .case-studies {
     min-width: 100%;
@@ -455,6 +478,36 @@ export default {
       top: -97px;
       height: 300px;
       right: 15px;
+    }
+  }
+
+  .case-studies {
+    .swiper-slide {
+      left: -5%;
+
+      &-active {
+        left: 0;
+      }
+
+      .single-project {
+        width: 95%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .case-studies {
+    .swiper-slide {
+      left: -4%;
+
+      &-active {
+        left: 0;
+      }
+
+      .single-project {
+        width: 96%;
+      }
     }
   }
 }
