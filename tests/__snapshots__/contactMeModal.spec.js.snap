@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact me modal renders correctly 1`] = `
+<modal-stub
+  height="auto"
+  name="contact-me-modal"
+>
+  <img
+    alt="Close modal"
+    class="close-modal"
+    src="@/assets/img/common/close-icon.svg"
+  />
+   
+  <perfect-scrollbar-stub
+    class="modal_scrollbar"
+  >
+    <validationobserver-stub />
+  </perfect-scrollbar-stub>
+</modal-stub>
+`;

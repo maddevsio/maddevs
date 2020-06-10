@@ -8,7 +8,7 @@ describe('Team headcount modal', () => {
 
   beforeEach(() => {
     wrapper = mount(teamHeadcountModal, {
-      stubs: ['ValidationProvider', 'ValidationObserver', 'modal']
+      stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar']
     });
   });
 

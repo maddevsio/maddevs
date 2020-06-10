@@ -8,7 +8,7 @@ describe('Backend modal', () => {
 
   beforeEach(() => {
     wrapper = mount(backendModal, {
-      stubs: ['ValidationProvider', 'ValidationObserver', 'modal']
+      stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar']
     });
   });
 

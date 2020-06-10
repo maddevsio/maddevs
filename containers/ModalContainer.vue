@@ -26,15 +26,17 @@ export default {
     emailSended: false
   }),
   created() {
-    this.$nuxt.$on(this.$props.name, form => {
-      this.$store.dispatch('sendEmail', form).then(res => {
-        if (res.status === 200) {
-          this.emailSended = true;
-        } else {
-          this.emailSended = false;
-        }
+    if (this.$nuxt) {
+      this.$nuxt.$on(this.$props.name, form => {
+        this.$store.dispatch('sendEmail', form).then(res => {
+          if (res.status === 200) {
+            this.emailSended = true;
+          } else {
+            this.emailSended = false;
+          }
+        });
       });
-    });
+    }
   }
 };
 </script>

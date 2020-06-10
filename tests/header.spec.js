@@ -8,7 +8,7 @@ describe('Header', () => {
 
   beforeEach(() => {
     wrapper = mount(Header, {
-      stubs: ['router-link', 'modal']
+      stubs: ['router-link', 'modal', 'perfect-scrollbar']
     });
   });
 
@@ -31,7 +31,7 @@ describe('Header', () => {
   it('sets the correct default data', () => {
     expect(typeof Header.data).toBe('function');
     const defaultData = Header.data();
-    expect(defaultData.modalWindowName).toBe('contact-me');
+    expect(defaultData.modalWindowName).toBe('contact-me-modal');
     expect(defaultData.headerIsWhite).toBe(false);
   });
 

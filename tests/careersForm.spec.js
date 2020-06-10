@@ -4,6 +4,7 @@ import CareersForm from '@/components/Careers/CareersForm';
 describe('CareersForm component', () => {
   let wrapper;
   const data = {
+    emailSended: false,
     fullName: null,
     positionValue: null,
     positionTitle: null,

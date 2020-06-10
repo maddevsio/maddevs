@@ -8,7 +8,7 @@ describe('Order Project From Us Modal', () => {
 
   beforeEach(() => {
     wrapper = mount(OrderProjectFromUsModal, {
-      stubs: ['ValidationProvider', 'ValidationObserver', 'modal']
+      stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar']
     });
   });
 
