@@ -31,7 +31,17 @@
       </div>
     </div>
     <div class="projects-mobile-slider">
-      <swiper class="swiper" :options="swiperOption">
+      <swiper class="swiper swiper-medium" :options="swiperOption.sliderWidthMedium">
+        <swiper-slide v-for="(project, i) in projects" :key="i">
+          <SingleProject :project="project" />
+        </swiper-slide>
+      </swiper>
+      <swiper class="swiper swiper-small" :options="swiperOption.sliderWidthSmall">
+        <swiper-slide v-for="(project, i) in projects" :key="i">
+          <SingleProject :project="project" />
+        </swiper-slide>
+      </swiper>
+      <swiper class="swiper swiper-extra-small" :options="swiperOption.sliderWidthExtraSmall">
         <swiper-slide v-for="(project, i) in projects" :key="i">
           <SingleProject :project="project" />
         </swiper-slide>
@@ -60,8 +70,18 @@ export default {
   data() {
     return {
       swiperOption: {
-        slidesPerView: 1.6,
-        freeMode: true
+        sliderWidthMedium: {
+          slidesPerView: 1.6,
+          freeMode: true
+        },
+        sliderWidthSmall: {
+          slidesPerView: 1.17,
+          freeMode: true
+        },
+        sliderWidthExtraSmall: {
+          slidesPerView: 1.03,
+          freeMode: true
+        }
       },
       currentPageName: '',
       projects: [
@@ -444,8 +464,16 @@ export default {
 
     .projects-mobile-slider {
       display: block;
-    }
 
+      .swiper-medium {
+        display: block;
+      }
+
+      .swiper-small,
+      .swiper-extra-small {
+        display: none;
+      }
+    }
 
     .swiper-slide {
       .single-project {
@@ -503,15 +531,14 @@ export default {
 
 @media only screen and (max-width: 576px) {
   .case-studies {
-    .swiper-slide {
-      left: -24%;
-
-      &-active {
-        left: 0;
+    .projects-mobile-slider {
+      .swiper-small {
+        display: block;
       }
 
-      .single-project {
-        width: 76%;
+      .swiper-medium,
+      .swiper-extra-small {
+        display: none;
       }
     }
   }
@@ -542,35 +569,22 @@ export default {
       right: 15px;
     }
   }
-
-  .case-studies {
-    .swiper-slide {
-      left: -5%;
-
-      &-active {
-        left: 0;
-      }
-
-      .single-project {
-        width: 95%;
-      }
-    }
-  }
 }
 
 @media only screen and (max-width: 375px) {
   .case-studies {
+    .projects-mobile-slider {
+      .swiper-extra-small {
+        display: block;
+      }
+
+      .swiper-medium,
+      .swiper-small {
+        display: none;
+      }
+    }
+
     .swiper-slide {
-      left: -4%;
-
-      &-active {
-        left: 0;
-      }
-
-      .single-project {
-        width: 96%;
-      }
-
       &:nth-child(2) {
         /deep/ .single-project__background {
           width: calc(100% - 33px);
