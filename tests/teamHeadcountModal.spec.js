@@ -8,7 +8,7 @@ describe('Team headcount modal', () => {
 
   beforeEach(() => {
     wrapper = mount(teamHeadcountModal, {
-      stubs: ['ValidationProvider', 'ValidationObserver', 'modal']
+      stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar']
     });
   });
 
@@ -35,7 +35,8 @@ describe('Team headcount modal', () => {
   test('has a functions', () => {
     expect(
       typeof teamHeadcountModal.methods.getPrivacyCheckboxState && 
-      typeof teamHeadcountModal.methods.getDiscountOffersCheckboxState
+      typeof teamHeadcountModal.methods.getDiscountOffersCheckboxState &&
+      typeof teamHeadcountModal.methods.autosize
     ).toBe('function');
   });
 
@@ -47,5 +48,19 @@ describe('Team headcount modal', () => {
       wrapper.vm.$data.agreeWithPrivacyPolicy &&
       wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
     ).toEqual(true);
+  });
+
+  test('autosize function should add value in event key', () => {
+    const event = {
+      target: {
+        style: {
+          height: ''
+        },
+        scrollHeight: 100
+      }
+    };
+
+    wrapper.vm.autosize(event);
+    expect(event.target.style.height).toEqual('100px');
   });
 });

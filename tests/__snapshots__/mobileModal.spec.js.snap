@@ -2,14 +2,19 @@
 
 exports[`Frontend modal renders correctly 1`] = `
 <modal-stub
-  name="mobile"
+  height="auto"
+  name="mobile-modal"
 >
   <img
     alt="Close modal"
     class="close-modal"
-    src="../../assets/img/common/close-icon.svg"
+    src="@/assets/img/common/close-icon.svg"
   />
    
-  <validationobserver-stub />
+  <perfect-scrollbar-stub
+    class="modal_scrollbar"
+  >
+    <validationobserver-stub />
+  </perfect-scrollbar-stub>
 </modal-stub>
 `;

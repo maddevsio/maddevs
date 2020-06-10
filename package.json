@@ -38,7 +38,8 @@
     "vue-i18n": "^8.17.3",
     "vue-js-modal": "^2.0.0-rc.3",
     "vue-scrollto": "^2.18.1",
-    "vue-slick": "^1.1.15"
+    "vue-slick": "^1.1.15",
+    "vue2-perfect-scrollbar": "^1.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

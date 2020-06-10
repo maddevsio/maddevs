@@ -20,5 +20,7 @@ exports[`CareersForm component renders correctly 1`] = `
       <validationobserver-stub />
     </div>
   </div>
+   
+  <successmodal-stub />
 </section>
 `;

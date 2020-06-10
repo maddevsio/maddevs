@@ -2,7 +2,8 @@
 
 exports[`Process audit modal renders correctly 1`] = `
 <modal-stub
-  name="process-audit"
+  height="auto"
+  name="process-audit-modal"
 >
   <img
     alt="Close modal"
@@ -10,6 +11,10 @@ exports[`Process audit modal renders correctly 1`] = `
     src="@/assets/img/common/close-icon.svg"
   />
    
-  <validationobserver-stub />
+  <perfect-scrollbar-stub
+    class="modal_scrollbar"
+  >
+    <validationobserver-stub />
+  </perfect-scrollbar-stub>
 </modal-stub>
 `;

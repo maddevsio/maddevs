@@ -8,7 +8,7 @@ describe('Contact me modal', () => {
 
   beforeEach(() => {
     wrapper = mount(contactMeModal, {
-      stubs: ['ValidationProvider', 'ValidationObserver', 'modal']
+      stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar']
     });
   });
 

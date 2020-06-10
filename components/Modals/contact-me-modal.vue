@@ -1,6 +1,5 @@
 <template>
-  <modal name="contact-me" :clickToClose="false">
-    <img src="../../assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('contact-me')">
+  <ModalContainer :name="modalName">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -30,30 +29,30 @@
           v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
           :inputId="inputId"
         />
-        <button
-          class="modal-button-default button-default red-text-and-border"
+        <UIButton
+          name="Сontact Me"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-          v-WaveAnimation
-        >Сontact Me</button>
+        />
       </div>
     </ValidationObserver>
-  </modal>
+  </ModalContainer>
 </template>
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
-import WaveAnimation from '@/directives/WaveAnimation';
+import UIButton from '@/components/ui/UIButton';
+import ModalContainer from '@/containers/ModalContainer';
 
 export default {
   name: 'ContactMe',
   components: {
-    FormCheckboxes
-  },
-  directives: {
-    WaveAnimation
+    FormCheckboxes,
+    ModalContainer,
+    UIButton
   },
   data: () => ({
+    modalName: 'contact-me-modal',
     fullName: '',
     email: '',
     phoneNumber: '',
@@ -82,7 +81,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$nuxt.$emit(this.modalName, form);
       }
     }
   }

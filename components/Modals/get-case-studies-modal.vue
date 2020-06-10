@@ -1,6 +1,5 @@
 <template>
-  <modal name="get-case-studies" :clickToClose="false">
-    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('get-case-studies')">
+  <ModalContainer :name="modalName">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -20,25 +19,30 @@
           @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
-        <button
-          class="modal-button-default button-default red-text-and-border"
+        <UIButton
+          name="Get Case Studies"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-        >Get Case Studies</button>
+        />
       </div>
     </ValidationObserver>
-  </modal>
+  </ModalContainer>
 </template>
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
+import ModalContainer from '@/containers/ModalContainer';
+import UIButton from '@/components/ui/UIButton';
 
 export default {
   name: 'case-studies-modal',
   components: {
-    FormCheckboxes
+    FormCheckboxes,
+    ModalContainer,
+    UIButton
   },
   data: () => ({
+    modalName: 'get-case-studies-modal',
     fullName: null,
     email: null,
     agreeWithPrivacyPolicy: false,
@@ -63,7 +67,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$nuxt.$emit(this.modalName, form);
       }
     }
   }

@@ -57,7 +57,7 @@ export default {
         }
       ],
       buttonInnerText: 'Order a project from us',
-      modalWindowName: 'order-project-from-us'
+      modalWindowName: 'order-project-from-us-modal'
     };
   }
 };

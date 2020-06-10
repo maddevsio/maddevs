@@ -354,34 +354,6 @@
 }
 
 // ----------- Modal window ----------- //
-
-.vm--modal {
-  // change initial vue-js-modal styles
-  width: 570px !important;
-  height: max-content !important;
-  max-height: 95vh;
-  top: 50% !important;
-  left: 50% !important;
-  background-color: $bgcolor--black !important;
-  box-shadow: none !important;
-  overflow: auto !important;
-
-  // Custom styles
-  padding: 30px 60px 60px;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.vm--overlay {
-  background: $modal-overlay-bg-color !important;
-}
-
-.close-modal {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  cursor: pointer;
-}
-
 .error-text {
   display: block;
   margin-top: 14px;
@@ -393,7 +365,6 @@
 .textarea {
   max-width: 100%;
   min-width: 100%;
-  max-height: 145px;
   min-height: 54px;
   height: 54px;
   overflow: hidden;
@@ -434,7 +405,7 @@ button {
 }
 
 @media only screen and (max-height: 700px) {
-  .vm--modal {
+  .modal_scrollbar {
     padding: 30px 40px;
   }
 
@@ -600,15 +571,6 @@ button {
 
   .section-title {
     font-size: 62px;
-  }
-
-  .vm--modal {
-    width: 100% !important;
-    height: 100% !important;
-    max-height: 100vh;
-    padding-left: 16px;
-    padding-right: 16px;
-    overflow-x: hidden;
   }
 
   .modal-entry-field {

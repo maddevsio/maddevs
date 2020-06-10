@@ -2,15 +2,13 @@ import {
   mount
 } from '@vue/test-utils';
 
-import SuccessModal from '@/components/Modals/success-modal';
+import SuccessModal from '@/components/Modals/success-message';
 
-describe('Success modal', () => {
+describe('Success message', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(SuccessModal, {
-      stubs: ['modal']
-    });
+    wrapper = mount(SuccessModal);
   });
 
   // ------ IMPORTANT ----- //

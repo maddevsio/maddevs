@@ -1,43 +1,48 @@
 <template>
-	<div class="footer-form form"> 
-		<ValidationObserver v-slot="{ invalid }">
-			<div class="fields-list">
-				<ValidationProvider class="field-item" v-slot="{ classes, errors }">
-					<p class="field-name">First name and surname</p>
-					<input type="text" class="entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
-					<span class="error-text">{{ errors[0] }}</span>
-				</ValidationProvider>
-				<ValidationProvider class="field-item" rules="email|required" v-slot="{ classes, errors }">
-					<p class="field-name required">Work email</p>
-					<input type="text" class="entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
-					<span class="error-text">{{ errors[0] }}</span>
-				</ValidationProvider>
-				<ValidationProvider class="field-item" rules="max:500" v-slot="{ classes, errors }">
-					<p class="field-name">Project Info</p>
-					<textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectInfo"/>
-					<span class="error-text">{{ errors[0] }}</span>
-				</ValidationProvider>
-			</div>
-			<FormCheckboxes
-				@getPrivacyCheckboxState="getPrivacyCheckboxState"
-				@getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
-			/>
-			<button
-				class="button-default red-text-and-border"
-				:disabled="invalid || !agreeWithPrivacyPolicy"
-				@click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-			>Order a project now</button>
-		</ValidationObserver>
-	</div>
+  <div class="footer-form form"> 
+    <ValidationObserver v-slot="{ invalid }">
+      <div class="fields-list">
+        <ValidationProvider class="field-item" v-slot="{ classes, errors }">
+          <p class="field-name">First name and surname</p>
+          <input type="text" class="entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
+          <span class="error-text">{{ errors[0] }}</span>
+        </ValidationProvider>
+        <ValidationProvider class="field-item" rules="email|required" v-slot="{ classes, errors }">
+          <p class="field-name required">Work email</p>
+          <input type="text" class="entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
+          <span class="error-text">{{ errors[0] }}</span>
+        </ValidationProvider>
+        <ValidationProvider class="field-item" rules="max:500" v-slot="{ classes, errors }">
+          <p class="field-name">Project Info</p>
+          <textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectInfo" @keydown="autosize($event)" rows="1" />
+          <span class="error-text">{{ errors[0] }}</span>
+        </ValidationProvider>
+      </div>
+      <FormCheckboxes
+        @getPrivacyCheckboxState="getPrivacyCheckboxState"
+        @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
+      />
+      <UIButton
+        name="Order a project now"
+        :disabled="invalid || !agreeWithPrivacyPolicy"
+        @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+      />
+    </ValidationObserver>
+    <SuccessModal />
+  </div>
 </template>
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
+import UIButton from '@/components/ui/UIButton';
+import SuccessModal from '@/components/Modals/success-modal';
 
 export default {
   name: 'footer-form',
   components: {
-    FormCheckboxes
+    FormCheckboxes,
+    UIButton,
+    SuccessModal
   },
   data: () => ({
     fullName: null,
@@ -45,7 +50,8 @@ export default {
     projectDescription: null,
     projectInfo: null,
     agreeWithPrivacyPolicy: false,
-    agreeToGetMadDevsDiscountOffers: false
+    agreeToGetMadDevsDiscountOffers: false,
+    emailSended: false
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -53,6 +59,10 @@ export default {
     },
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+    },
+    autosize(e) {
+      e.target.style.height = 'auto';
+      e.target.style.height = `${e.target.scrollHeight}px`;
     },
     sendForm(isValid) {
       if (isValid === true) {
@@ -67,7 +77,25 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$store.dispatch('sendEmail', form).then(res => {
+          if (res.status === 200) {
+            this.$modal.show('success-modal');
+            this.emailSended = true;
+            setTimeout(() => {
+              this.fullName = null;
+              this.email = null;
+              this.projectDescription = null;
+              this.projectInfo = null;
+              this.agreeWithPrivacyPolicy = false;
+              this.agreeToGetMadDevsDiscountOffers = false;
+              this.emailSended = false;
+              this.$modal.hide('success-modal');
+              this.emailSended = false;
+            }, 3000);
+          } else {
+            this.emailSended = false;
+          }
+        });
       }
     }
   }

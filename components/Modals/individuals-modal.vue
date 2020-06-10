@@ -1,6 +1,5 @@
 <template>
-  <modal name="individuals" :clickToClose="false">
-    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('individuals')">
+  <ModalContainer :name="modalName">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -26,7 +25,7 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name">Project description</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescription"/>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescription" @keydown="autosize($event)" rows="1"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
@@ -35,27 +34,30 @@
           @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
-        <button 
-          class="modal-button-default button-default red-text-and-border" 
+        <UIButton
+          name="Get individual proactive rockets"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-        >
-          Get individual proactive rockets
-        </button>
+        />
       </div>
     </ValidationObserver>
-  </modal>
+  </ModalContainer>
 </template>
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
+import ModalContainer from '@/containers/ModalContainer';
+import UIButton from '@/components/ui/UIButton';
 
 export default {
   name: 'frontend-modal',
   components: {
-    FormCheckboxes
+    FormCheckboxes,
+    ModalContainer,
+    UIButton
   },
   data: () => ({
+    modalName: 'individuals-modal',
     fullName: null,
     email: null,
     phoneNumber: null,
@@ -72,6 +74,10 @@ export default {
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
     },
+    autosize(e) {
+      e.target.style.height = 'auto';
+      e.target.style.height = `${e.target.scrollHeight}px`;
+    },
     sendForm(isValid) {
       if (isValid === true) {
         const form = {
@@ -86,7 +92,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$nuxt.$emit(this.modalName, form);
       }
     }
   }
