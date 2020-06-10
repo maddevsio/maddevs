@@ -37,11 +37,11 @@
           @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
-        <button
-          class="modal-button-default button-default red-text-and-border"
+        <UIButton
+          name="Get an infrastructure audit"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-        >Get an infrastructure audit</button>
+        />
       </div>
     </ValidationObserver>
   </ModalContainer>
@@ -51,13 +51,15 @@
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import RadioList from '@/components/ui/radio-list';
 import ModalContainer from '@/containers/ModalContainer';
+import UIButton from '@/components/ui/UIButton';
 
 export default {
   name: 'infrastructure-audit',
   components: {
     FormCheckboxes,
     RadioList,
-    ModalContainer
+    ModalContainer,
+    UIButton
   },
   data: () => ({
     modalName: 'infrastructure-modal',

@@ -34,13 +34,11 @@
           @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
-        <button 
-          class="modal-button-default button-default red-text-and-border" 
+        <UIButton
+          name="Get individual proactive rockets"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-        >
-          Get individual proactive rockets
-        </button>
+        />
       </div>
     </ValidationObserver>
   </ModalContainer>
@@ -49,12 +47,14 @@
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import ModalContainer from '@/containers/ModalContainer';
+import UIButton from '@/components/ui/UIButton';
 
 export default {
   name: 'frontend-modal',
   components: {
     FormCheckboxes,
-    ModalContainer
+    ModalContainer,
+    UIButton
   },
   data: () => ({
     modalName: 'individuals-modal',

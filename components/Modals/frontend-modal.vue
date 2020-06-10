@@ -29,30 +29,27 @@
           v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
           :inputId="inputId"
         />
-        <button
-          class="modal-button-default button-default red-text-and-border"
+        <UIButton
+          name="Get UX help"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-          v-WaveAnimation
-        >Get UX help</button>
+        />
       </div>
     </ValidationObserver>
   </ModalContainer>
 </template>
 
 <script>
-import WaveAnimation from '@/directives/WaveAnimation';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import ModalContainer from '@/containers/ModalContainer';
+import UIButton from '@/components/ui/UIButton';
 
 export default {
   name: 'frontend-modal',
   components: {
     FormCheckboxes,
-    ModalContainer
-  },
-  directives: {
-    WaveAnimation
+    ModalContainer,
+    UIButton
   },
   data: () => ({
     modalName: 'frontend-modal',

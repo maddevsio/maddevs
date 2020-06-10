@@ -29,30 +29,27 @@
           v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
           :inputId="inputId"
         />
-        <button
-          class="modal-button-default button-default red-text-and-border"
+        <UIButton
+          name="Сontact Me"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-          v-WaveAnimation
-        >Сontact Me</button>
+        />
       </div>
     </ValidationObserver>
   </ModalContainer>
 </template>
 
 <script>
-import WaveAnimation from '@/directives/WaveAnimation';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
+import UIButton from '@/components/ui/UIButton';
 import ModalContainer from '@/containers/ModalContainer';
 
 export default {
   name: 'ContactMe',
   components: {
     FormCheckboxes,
-    ModalContainer
-  },
-  directives: {
-    WaveAnimation
+    ModalContainer,
+    UIButton
   },
   data: () => ({
     modalName: 'contact-me-modal',

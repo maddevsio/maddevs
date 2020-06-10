@@ -29,11 +29,11 @@
           v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
           :inputId="inputId"
         />
-        <button
-          class="modal-button-default button-default red-text-and-border"
+        <UIButton
+          name="Get mobile help"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-        >Get mobile help</button>
+        />
       </div>
     </ValidationObserver>
   </ModalContainer>
@@ -42,12 +42,14 @@
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import ModalContainer from '@/containers/ModalContainer';
+import UIButton from '@/components/ui/UIButton';
 
 export default {
   name: 'mobile-modal',
   components: {
     FormCheckboxes,
-    ModalContainer
+    ModalContainer,
+    UIButton
   },
   data: () => ({
     modalName: 'mobile-modal',

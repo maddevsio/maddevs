@@ -34,11 +34,11 @@
          @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
-        <button
-          class="modal-button-default button-default red-text-and-border"
+        <UIButton
+          name="Order a project from us"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-        >Order a project from us</button>
+        />
       </div>
     </ValidationObserver>
   </ModalContainer>
@@ -47,12 +47,14 @@
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import ModalContainer from '@/containers/ModalContainer';
+import UIButton from '@/components/ui/UIButton';
 
 export default {
   name: 'order-project-from-us-modal',
   components: {
     FormCheckboxes,
-    ModalContainer
+    ModalContainer,
+    UIButton
   },
   data: () => ({
     modalName: 'order-project-from-us-modal',

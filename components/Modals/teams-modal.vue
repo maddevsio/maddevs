@@ -37,13 +37,11 @@
           @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
-        <button 
-          class="modal-button-default button-default red-text-and-border" 
+        <UIButton
+          name="Get a team of ultra fast coders"
           :disabled="invalid || !agreeWithPrivacyPolicy || !selectedTeamSize"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy || selectedTeamSize)"
-        >
-          Get a team of ultra fast coders
-        </button>
+        />
       </div>
     </ValidationObserver>
   </ModalContainer>
@@ -53,13 +51,15 @@
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import RadioList from '@/components/ui/radio-list';
 import ModalContainer from '@/containers/ModalContainer';
+import UIButton from '@/components/ui/UIButton';
 
 export default {
   name: 'frontend-modal',
   components: {
     FormCheckboxes,
     RadioList,
-    ModalContainer
+    ModalContainer,
+    UIButton
   },
   data: () => ({
     modalName: 'teams-modal',
