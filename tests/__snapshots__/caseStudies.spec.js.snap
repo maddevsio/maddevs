@@ -309,7 +309,7 @@ exports[`CaseStudies component renders correctly 1`] = `
     class="projects-mobile-slider"
   >
     <div
-      class="swiper-container swiper swiper-container-initialized swiper-container-horizontal"
+      class="swiper-container swiper swiper-container-initialized swiper-container-horizontal swiper-container-free-mode"
     >
       <div
         class="swiper-wrapper"

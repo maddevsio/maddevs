@@ -31,7 +31,7 @@
       </div>
     </div>
     <div class="projects-mobile-slider">
-      <swiper class="swiper">
+      <swiper class="swiper" :options="swiperOption">
         <swiper-slide v-for="(project, i) in projects" :key="i">
           <SingleProject :project="project" />
         </swiper-slide>
@@ -59,6 +59,10 @@ export default {
   },
   data() {
     return {
+      swiperOption: {
+        slidesPerView: 1.6,
+        freeMode: true
+      },
       currentPageName: '',
       projects: [
         {
@@ -442,21 +446,10 @@ export default {
       display: block;
     }
 
+
     .swiper-slide {
-      left: -40%;
-
       .single-project {
-        width: 60%;
-      }
-
-      &-active {
-        left: 0;
-
-        &:last-child {
-          /deep/ .single-project {
-            width: 100%;
-          }
-        }
+        width: 100%;
       }
 
       &:nth-child(2) {
