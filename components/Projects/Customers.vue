@@ -21,6 +21,7 @@
       <buttonTrigger
         :buttonInnerText="buttonInnerText"
         class="red-text-and-border"
+        :modalWindowName="modalWindowName"
       />
     </div>
   </section>
@@ -39,6 +40,7 @@ export default {
   data() {
     return {
       buttonInnerText: 'Order a project from us',
+      modalWindowName: 'order-project-from-us-modal',
       customers: [
         {
           imgName: 'godee',

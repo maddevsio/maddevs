@@ -1,5 +1,5 @@
 <template>
-  <ModalContainer name="team-headcount">
+  <ModalContainer :name="modalName">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -50,6 +50,7 @@ export default {
     ModalContainer
   },
   data: () => ({
+    modalName: 'team-headcount-modal',
     fullName: null,
     email: null,
     phoneNumber: null,
@@ -78,7 +79,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$nuxt.$emit('send-email', form);
+        this.$nuxt.$emit(this.modalName, form);
       }
     }
   }

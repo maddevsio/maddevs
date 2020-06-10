@@ -1,5 +1,5 @@
 <template>
-  <ModalContainer name="frontend">
+  <ModalContainer :name="modalName">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -55,6 +55,7 @@ export default {
     WaveAnimation
   },
   data: () => ({
+    modalName: 'frontend-modal',
     fullName: '',
     email: '',
     phoneNumber: '',
@@ -83,7 +84,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$nuxt.$emit('send-email', form);
+        this.$nuxt.$emit(this.modalName, form);
       }
     }
   }

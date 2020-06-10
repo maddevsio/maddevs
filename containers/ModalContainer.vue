@@ -19,14 +19,14 @@ export default {
   props: {
     name: {
       type: String,
-      default: null
+      required: true
     }
   },
   data: () => ({
     emailSended: false
   }),
   created() {
-    this.$nuxt.$on('send-email', form => {
+    this.$nuxt.$on(this.$props.name, form => {
       this.$store.dispatch('sendEmail', form).then(res => {
         if (res.status === 200) {
           this.emailSended = true;

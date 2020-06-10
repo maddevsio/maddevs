@@ -91,7 +91,7 @@ export default {
         }
       ],
       buttonInnerText: 'Get case studies',
-      modalWindowName: 'get-case-studies'
+      modalWindowName: 'get-case-studies-modal'
     };
   }
 };
