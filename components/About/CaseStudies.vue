@@ -383,6 +383,57 @@ export default {
   }
 }
 
+@media only screen and (max-width: 1280px) {
+  .projects {
+    .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          margin: 0 32px 0 18px;
+          width: auto;
+          position: relative;
+          bottom: -17px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .projects {
+    .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          bottom: -14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .projects {
+    .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          bottom: -12px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .projects {
+    .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          bottom: -10px;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1230px) {
   .case-studies--projects {
     .projects-flame-background {

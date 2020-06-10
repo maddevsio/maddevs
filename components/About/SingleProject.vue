@@ -136,26 +136,23 @@ export default {
     .single-project {
       &__content-wrap {
         margin: 60px 46px 0;
-        height: 282px;
+        height: 230px;
       }
     }
   }
 
-  @media only screen and (min-width: 1220px) {
+  @media only screen and (max-width: 1280px) {
     .single-project {
       &__background {
         &_first-project {
           width: 100%;
-          background-size: cover;
+          background-size: contain;
         }
       }
-    }
-  }
 
-  @media only screen and (max-width: 1220px) {
-    .single-project {
       &__content-wrap {
         height: 165px;
+        margin: 50px 34px 0;
       }
     }
   }
@@ -164,7 +161,7 @@ export default {
     .single-project {
       &__content-wrap {
         margin: 68px 34px 0;
-        height: 240px;
+        height: 175px;
       }
     }
   }
@@ -267,7 +264,7 @@ export default {
 
     &_first-project {
       width: 100%;
-      background-size: contain;
+      background-size: cover;
     }
   }
 
@@ -324,6 +321,10 @@ export default {
 
   @media only screen and (max-width: 768px) {
     .single-project {
+      &__content-wrap {
+        height: 230px;
+      }
+
       &__background {
         background-size: contain;
 
