@@ -163,5 +163,13 @@ export default {
       }
     }
   }
+
+  @media only screen and (max-width: 340px) {
+    &__content {
+      &-mobile {
+        margin-left: 3px;
+      }
+    }
+  }
 }
 </style>
