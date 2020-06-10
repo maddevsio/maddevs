@@ -31,7 +31,17 @@
       </div>
     </div>
     <div class="projects-mobile-slider">
-      <swiper class="swiper">
+      <swiper class="swiper swiper-medium" :options="swiperOption.sliderWidthMedium">
+        <swiper-slide v-for="(project, i) in projects" :key="i">
+          <SingleProject :project="project" />
+        </swiper-slide>
+      </swiper>
+      <swiper class="swiper swiper-small" :options="swiperOption.sliderWidthSmall">
+        <swiper-slide v-for="(project, i) in projects" :key="i">
+          <SingleProject :project="project" />
+        </swiper-slide>
+      </swiper>
+      <swiper class="swiper swiper-extra-small" :options="swiperOption.sliderWidthExtraSmall">
         <swiper-slide v-for="(project, i) in projects" :key="i">
           <SingleProject :project="project" />
         </swiper-slide>
@@ -59,6 +69,20 @@ export default {
   },
   data() {
     return {
+      swiperOption: {
+        sliderWidthMedium: {
+          slidesPerView: 1.6,
+          freeMode: true
+        },
+        sliderWidthSmall: {
+          slidesPerView: 1.17,
+          freeMode: true
+        },
+        sliderWidthExtraSmall: {
+          slidesPerView: 1.03,
+          freeMode: true
+        }
+      },
       currentPageName: '',
       projects: [
         {
@@ -359,6 +383,57 @@ export default {
   }
 }
 
+@media only screen and (max-width: 1280px) {
+  .projects {
+    .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          margin: 0 32px 0 18px;
+          width: auto;
+          position: relative;
+          bottom: -17px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .projects {
+    .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          bottom: -14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .projects {
+    .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          bottom: -12px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .projects {
+    .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          bottom: -10px;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1230px) {
   .case-studies--projects {
     .projects-flame-background {
@@ -440,23 +515,20 @@ export default {
 
     .projects-mobile-slider {
       display: block;
+
+      .swiper-medium {
+        display: block;
+      }
+
+      .swiper-small,
+      .swiper-extra-small {
+        display: none;
+      }
     }
 
     .swiper-slide {
-      left: -40%;
-
       .single-project {
-        width: 60%;
-      }
-
-      &-active {
-        left: 0;
-
-        &:last-child {
-          /deep/ .single-project {
-            width: 100%;
-          }
-        }
+        width: 100%;
       }
 
       &:nth-child(2) {
@@ -510,15 +582,21 @@ export default {
 
 @media only screen and (max-width: 576px) {
   .case-studies {
-    .swiper-slide {
-      left: -24%;
+    /deep/ .single-project__background {
+      &:nth-child(2) {
+        position: relative;
+        bottom: -10px;
+      }
+    }
 
-      &-active {
-        left: 0;
+    .projects-mobile-slider {
+      .swiper-small {
+        display: block;
       }
 
-      .single-project {
-        width: 76%;
+      .swiper-medium,
+      .swiper-extra-small {
+        display: none;
       }
     }
   }
@@ -549,46 +627,32 @@ export default {
       right: 15px;
     }
   }
-
-  .case-studies {
-    .swiper-slide {
-      left: -5%;
-
-      &-active {
-        left: 0;
-      }
-
-      .single-project {
-        width: 95%;
-      }
-    }
-  }
 }
 
 @media only screen and (max-width: 375px) {
   .case-studies {
+    .projects-mobile-slider {
+      .swiper-extra-small {
+        display: block;
+      }
+
+      .swiper-medium,
+      .swiper-small {
+        display: none;
+      }
+    }
+
     .swiper-slide {
-      left: -4%;
-
-      &-active {
-        left: 0;
-      }
-
-      .single-project {
-        width: 96%;
-      }
-
       &:nth-child(2) {
         /deep/ .single-project__background {
           width: calc(100% - 33px);
-          margin-right: 25px;
+          margin-right: 15px;
         }
       }
 
       &:nth-child(3) {
         /deep/ .single-project__background {
           width: calc(100% - 33px);
-          left: -6px;
         }
       }
 
