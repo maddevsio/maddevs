@@ -58,7 +58,7 @@ describe('Frontend modal', () => {
         },
         scrollHeight: 100
       }
-    }
+    };
 
     wrapper.vm.autosize(event);
     expect(event.target.style.height).toEqual('100px');

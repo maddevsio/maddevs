@@ -56,8 +56,8 @@ export default {
     },
     autosize(e) {
       e.target.style.height = 'auto';
-			e.target.style.height = `${e.target.scrollHeight}px`;
-		},
+      e.target.style.height = `${e.target.scrollHeight}px`;
+    },
     sendForm(isValid) {
       if (isValid === true) {
         const form = {
