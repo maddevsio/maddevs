@@ -86,6 +86,7 @@ export default {
   @media only screen and (max-width: 730px) {
     .navigation-list {
       grid-template-columns: repeat(2, 240px);
+
       .navigation-item {
         padding-right: 25px;
       }
@@ -96,6 +97,7 @@ export default {
     .navigation-list {
       grid-template-columns: repeat(1, 1fr);
       grid-row-gap: 22px;
+
       .navigation-item {
         font-size: 18px;
       }

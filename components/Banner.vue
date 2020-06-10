@@ -303,7 +303,6 @@ export default {
       .text-content_wrapper {
         padding-bottom: 147px;
       }
-
     }
 
     .services {
@@ -324,7 +323,7 @@ export default {
         .navigation-item {
           padding-right: 54px;
         }
-      } 
+      }
     }
   }
 
@@ -342,7 +341,7 @@ export default {
   }
 
   @media only screen and (max-width: 1340px) {
-    .banner { 
+    .banner {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
@@ -379,7 +378,7 @@ export default {
   }
 
   @media only screen and (max-width: 1220px) {
-    .banner { 
+    .banner {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
@@ -463,7 +462,7 @@ export default {
   }
 
   @media only screen and (max-width: 970px) {
-    .banner { 
+    .banner {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
@@ -475,7 +474,7 @@ export default {
         padding-bottom: 105px;
       }
     }
-    
+
     .index {
       .icon-item {
         img {
@@ -672,7 +671,7 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 565px) {
+  @media only screen and (max-width: 555px) {
     .banner {
       .phone-screen-logo {
         display: none;
@@ -681,7 +680,7 @@ export default {
   }
 
   @media only screen and (max-width: 530px) {
-    .banner { 
+    .banner {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
