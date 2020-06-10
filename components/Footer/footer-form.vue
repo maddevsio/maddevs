@@ -14,7 +14,7 @@
 				</ValidationProvider>
 				<ValidationProvider class="field-item" rules="max:500" v-slot="{ classes, errors }">
 					<p class="field-name">Project Info</p>
-					<textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectInfo"/>
+					<textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectInfo" @keydown="autosize($event)" rows="1" />
 					<span class="error-text">{{ errors[0] }}</span>
 				</ValidationProvider>
 			</div>
@@ -54,6 +54,10 @@ export default {
     },
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+    },
+    autosize(e) {
+      e.target.style.height = 'auto';
+      e.target.style.height = `${e.target.scrollHeight}px`;
     },
     sendForm(isValid) {
       if (isValid === true) {

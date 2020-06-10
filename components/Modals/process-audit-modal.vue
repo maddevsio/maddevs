@@ -20,7 +20,7 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="max:500|required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Your question on work process</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="How can I get more things done by implementing pipelines?" v-model="workProcessQuestion"/>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="How can I get more things done by implementing pipelines?" v-model="workProcessQuestion" @keydown="autosize($event)" rows="1"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
@@ -67,6 +67,10 @@ export default {
     },
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+    },
+    autosize(e) {
+      e.target.style.height = 'auto';
+      e.target.style.height = `${e.target.scrollHeight}px`;
     },
     sendForm(isValid) {
       if (isValid === true) {

@@ -35,7 +35,8 @@ describe('Frontend modal', () => {
   test('has a functions', () => {
     expect(
       typeof frontendModal.methods.getPrivacyCheckboxState && 
-      typeof frontendModal.methods.getDiscountOffersCheckboxState
+      typeof frontendModal.methods.getDiscountOffersCheckboxState && 
+      typeof frontendModal.methods.autosize
     ).toBe('function');
   });
 
@@ -47,5 +48,19 @@ describe('Frontend modal', () => {
       wrapper.vm.$data.agreeWithPrivacyPolicy &&
       wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
     ).toEqual(true);
+  });
+
+  test('autosize function should add value in event key', () => {
+    const event = {
+      target: {
+        style: {
+          height: ''
+        },
+        scrollHeight: 100
+      }
+    };
+
+    wrapper.vm.autosize(event);
+    expect(event.target.style.height).toEqual('100px');
   });
 });
