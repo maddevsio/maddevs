@@ -54,7 +54,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'ContributionWidget',
   props: {
@@ -123,7 +122,7 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 1024px) {
     &__img {
       height: 13px;
       width: 15px;
@@ -164,6 +163,13 @@ export default {
       }
     }
   }
-}
 
+  @media only screen and (max-width: 340px) {
+    &__content {
+      &-mobile {
+        margin-left: 3px;
+      }
+    }
+  }
+}
 </style>

@@ -120,13 +120,13 @@ describe('CaseStudies component', () => {
     expect(singleProjects).toHaveLength(4);
   });
 
-  test('should have 8 projects including projects in the slider', () => {
+  test('should have 16 projects including projects in the slider', () => {
     let sliderSingleProjects = wrapper.findAll('.single-project');
-    expect(sliderSingleProjects).toHaveLength(8);
+    expect(sliderSingleProjects).toHaveLength(16);
   });
 
   test('check that the specific images exists', () => {
     const img = wrapper.findAll('.single-project__logo');
-    expect(img.length).toBe(8);
+    expect(img.length).toBe(16);
   });
 });

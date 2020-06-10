@@ -1,10 +1,27 @@
 <template>
-  <a href="https://blog.maddevs.io/" class="single-project" :style="{ background: project.projectColor }">
-    <div class="single-project__container" :class="{ 'single-project__container_white-letters-theme': isWhiteColored}">
+  <a
+    href="https://blog.maddevs.io/"
+    class="single-project"
+    :style="{ background: project.projectColor }"
+  >
+    <div
+      class="single-project__container"
+      :class="{
+        'single-project__container_white-letters-theme': isWhiteColored
+      }"
+    >
       <div class="single-project__content-wrap">
-        <img :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)" class="single-project__logo" :alt="project.projectName" />
-        <h4 class="single-project__sub-title sub-title">{{project.projectTitle}}</h4>
-        <p class="single-project__paragraph paragraph">{{project.projectDescription}}</p> 
+        <img
+          :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)"
+          class="single-project__logo"
+          :alt="project.projectName"
+        />
+        <h4 class="single-project__sub-title sub-title">
+          {{ project.projectTitle }}
+        </h4>
+        <p class="single-project__paragraph paragraph">
+          {{ project.projectDescription }}
+        </p>
         <ContributionWidget
           :contributionWidgetColors="project.contributionWidgetColors"
           :projectName="project.projectName"
@@ -25,7 +42,6 @@
 </template>
 
 <script>
-
 import ContributionWidget from '@/components/About/ContributionWidget';
 
 export default {
@@ -40,7 +56,7 @@ export default {
         required: true
       },
       projectName: {
-        type: String, 
+        type: String,
         required: true
       },
       logoImg: {
@@ -64,10 +80,13 @@ export default {
         required: true
       }
     }
-  }, 
+  },
   computed: {
     isWhiteColored() {
-      if(this.project.projectName === 'teacherly' || this.project.projectName === 'guardrails') {
+      if (
+        this.project.projectName === 'teacherly' ||
+        this.project.projectName === 'guardrails'
+      ) {
         return true;
       }
       return false;
@@ -78,8 +97,7 @@ export default {
           this.project.projectName === 'nambafood',
         'single-project__background_guardrails':
           this.project.projectName === 'guardrails',
-        'single-project__background_godee':
-          this.project.projectName === 'godee'
+        'single-project__background_godee': this.project.projectName === 'godee'
       };
     }
   }
@@ -98,32 +116,52 @@ export default {
   color: initial;
   display: block;
 
-  @media only screen and (min-width: 1220px) {
+  @media only screen and (min-width: 1600px) {
+    .single-project {
+      &__content-wrap {
+        height: 320px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1600px) {
+    .single-project {
+      &__content-wrap {
+        height: 302px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .single-project {
+      &__content-wrap {
+        margin: 60px 46px 0;
+        height: 230px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
     .single-project {
       &__background {
         &_first-project {
           width: 100%;
-          background-size: cover;
+          background-size: contain;
         }
       }
-    }
-  }
 
-  @media only screen and (max-width: 1220px) {
-    .single-project {
       &__content-wrap {
-        height: 14em;
+        height: 165px;
+        margin: 50px 34px 0;
       }
     }
   }
 
-  @media only screen and (max-width: 1030px) {
-    width: 100%;
-
+  @media only screen and (max-width: 1024px) {
     .single-project {
       &__content-wrap {
-        margin: 68px 30px 0;
-        height: 270px;
+        margin: 68px 34px 0;
+        height: 175px;
       }
     }
   }
@@ -222,12 +260,54 @@ export default {
 
     &_guardrails {
       position: relative;
-      left: 3.1px;
     }
 
     &_first-project {
       width: 100%;
-      background-size: contain;
+      background-size: cover;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .single-project {
+      &__sub-title {
+        font-size: 47px;
+      }
+
+      &__paragraph {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    .single-project {
+      min-width: inherit;
+    }
+  }
+
+  @media screen and (max-width: 870px) {
+    .single-project {
+      &__sub-title {
+        font-size: 45px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 820px) {
+    .single-project {
+      &__sub-title {
+        font-size: 43px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 810px) and (min-width: 769px) {
+    .single-project {
+      &__content-wrap {
+        margin: 68px 23px 0;
+        height: 175px;
+      }
     }
   }
 
@@ -235,27 +315,18 @@ export default {
     .single-project {
       &__background {
         background-size: contain;
-
-        &_first-project {
-          width: 100%;
-          background-size: cover;
-        }
-
-        &_guardrails {
-          left: 4.1px;
-        }
       }
     }
   }
 
   @media only screen and (max-width: 768px) {
     .single-project {
-      width: 100%;
-      min-width: 320px;
+      &__content-wrap {
+        height: 230px;
+      }
 
       &__background {
-        width: 85%;
-        margin-left: 0.88em;
+        background-size: contain;
 
         &_first-project {
           width: 100%;
@@ -269,11 +340,6 @@ export default {
         flex-direction: column;
         align-items: center;
       }
-
-      &__content-wrap {
-        margin: 68px 70px 0;
-        height: 14em;
-      }
     }
   }
 
@@ -282,19 +348,12 @@ export default {
       &__background {
         background-size: contain;
         height: 378px;
-
-        &_first-project {
-          background-size: cover;
-          width: 100%;
-        }
       }
     }
   }
 
   @media only screen and (max-width: 576px) {
     .single-project {
-      min-width: 100%;
-
       &__logo {
         height: 40px;
       }
@@ -306,7 +365,7 @@ export default {
       }
 
       &__content-wrap {
-        height: 120px;
+        height: 100px;
         word-wrap: break-word;
 
         .contribution-widget {
@@ -320,27 +379,35 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 410px) {
+  @media only screen and (max-width: 445px) {
     .single-project {
       &__content-wrap {
-        margin: 40px 62px 0 22px;
+        margin: 50px 21px 0;
       }
+    }
+  }
 
+  @media only screen and (max-width: 410px) {
+    .single-project {
       &__background {
-        width: 85%;
-        margin-left: -2.8em;
-
         &_first-project {
           background-size: contain;
           width: 100%;
         }
 
-        &_godee {
-          margin-left: -1.5em;
+        &_guardrails {
+          width: calc(100% - 47px);
         }
       }
     }
   }
-}
 
+  @media only screen and (max-width: 340px) {
+    .single-project {
+      &__content-wrap {
+        margin: 50px 18px 0;
+      }
+    }
+  }
+}
 </style>
