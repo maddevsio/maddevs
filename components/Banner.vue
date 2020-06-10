@@ -17,7 +17,8 @@
             </h1>
             <span class="banner-main_title--white" v-if="currentPageName === 'careers'">A new Mad Devs' ranger is here!</span>
             <h1 class="banner-main_title" v-if="currentPageName === 'index'">
-              Mad Devs
+              Mad Devs 
+              <img src="@/assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" class="phone-screen-logo">
               <span class="main-title-white_part"><br>Engineering<br>Your Growth</span>
             </h1>
             <navigationList v-if="currentPageName === 'projects'" />
@@ -124,6 +125,12 @@ export default {
         color: $text-color--white;
         text-shadow: none;
       }
+    }
+
+    .phone-screen-logo {
+      width: 100px;
+      display: none;
+      margin-bottom: -15px;
     }
   }
 
@@ -265,7 +272,7 @@ export default {
   }
 
   @media only screen and (max-width: 1366px) {
-    .services {
+     .services {
       .media-query-item {
         display: block;
       }
@@ -277,16 +284,34 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1270px) {
+  @media only screen and (max-width: 1340px) {
+    .banner { 
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
+        font-size: 131px;
+      }
+
+      .text-content_wrapper {
+        padding-bottom: 122px;
+      }
+    }
+
+    .index {
+      .icon-item {
+        img {
+          width: 345px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1220px) {
     .banner { 
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
         font-size: 110px;
-      }
-
-      .text-content_wrapper {
-        padding-bottom: 122px;
       }
     }
 
@@ -428,6 +453,20 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 730px) {
+    .banner {
+      .phone-screen-logo {
+        display: inline;
+      }
+    }
+
+    .index {
+      .icon-item {
+        display: none;
+      }
+    }
+  }
+
   @media only screen and (max-width: 670px) {
     .services {
       .hover-image,
@@ -460,18 +499,6 @@ export default {
   }
 
   @media only screen and (max-width: 610px) {
-    .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 73px;
-      }
-
-      .banner-main_title--white-first {
-        display: inline;
-      }
-    }
-
     .careers {
       .text-content_wrapper {
         padding-bottom: 70px;
@@ -502,15 +529,39 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 455px) {
+  @media only screen and (max-width: 565px) {
     .banner {
+      .phone-screen-logo {
+        width: 90px;
+        margin-bottom: -10px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 565px) {
+    .banner {
+      .phone-screen-logo {
+        display: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 530px) {
+    .banner { 
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
         font-size: 56px;
+        letter-spacing: -2px;
+      }
+
+      .text-content_wrapper {
+        padding-bottom: 120px;
       }
     }
+  }
 
+  @media only screen and (max-width: 455px) {
     .services {
       .hover-image,
       .default-image {
@@ -535,14 +586,6 @@ export default {
   }
 
   @media only screen and (max-width: 370px) {
-    .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 46px;
-      }
-    }
-
     .services {
       .hover-image,
       .default-image {
@@ -555,6 +598,20 @@ export default {
         width: 95px;
         top: 40%;
         left: 57%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 335px) {
+    .banner {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
+        font-size: 48px;
+      }
+
+      .text-content_wrapper {
+        padding-bottom: 114px;
       }
     }
   }
