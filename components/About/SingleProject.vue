@@ -396,7 +396,6 @@ export default {
 
         &_guardrails {
           width: calc(100% - 47px);
-          left: -9px;
         }
       }
     }
@@ -405,7 +404,7 @@ export default {
   @media only screen and (max-width: 340px) {
     .single-project {
       &__content-wrap {
-        margin: 50px 24px 0 12px;
+        margin: 50px 18px 0;
       }
     }
   }

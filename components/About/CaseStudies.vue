@@ -531,6 +531,13 @@ export default {
 
 @media only screen and (max-width: 576px) {
   .case-studies {
+    /deep/ .single-project__background {
+      &:nth-child(2) {
+        position: relative;
+        bottom: -10px;
+      }
+    }
+
     .projects-mobile-slider {
       .swiper-small {
         display: block;
@@ -588,14 +595,13 @@ export default {
       &:nth-child(2) {
         /deep/ .single-project__background {
           width: calc(100% - 33px);
-          margin-right: 25px;
+          margin-right: 15px;
         }
       }
 
       &:nth-child(3) {
         /deep/ .single-project__background {
           width: calc(100% - 33px);
-          left: -6px;
         }
       }
 
