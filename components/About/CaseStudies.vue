@@ -338,7 +338,7 @@ export default {
     flex-wrap: wrap;
 
     &-flame-background {
-      top: -434px;
+      top: -428px;
       width: 448px;
       right: 142px;
     }

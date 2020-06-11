@@ -9,7 +9,7 @@
               <span class="main-title-white_part">Outsourcing Partner</span>
             </h1>
             <h1 class="banner-main_title" v-if="currentPageName === 'projects'">
-              Check out our <br>
+              Check out our
               <span class="main-title-white_part">50+ implemented projects!</span>
             </h1>
             <h1 class="banner-main_title--white-first" v-if="currentPageName === 'careers'">
@@ -109,9 +109,10 @@ export default {
       font-style: normal;
       font-weight: bold;
       font-size: 165px;
-      letter-spacing: -3px;
       color: $text-color--black;
       text-shadow: $text-shadow--white;
+      line-height: 100%;
+      letter-spacing: -8px;
 
       .main-title-white_part {
         color: $text-color--white;
@@ -203,29 +204,8 @@ export default {
     }
   }
 
-  @media only screen and (min-width: 1620px) {
-    .projects,
-    .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 125px;
-      }
-
-      .text-content_wrapper {
-        display: flex;
-        padding-bottom: 130px;
-      }
-    }
-  }
-
   @media only screen and (max-width: 1620px) {
     .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 125px;
-      }
 
       .text-content_wrapper {
         display: flex;
@@ -241,22 +221,12 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1670px) and (min-width: 1565px) {
-    .projects {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        width: 80%;
-      }
-    }
-  }
-
   @media only screen and (max-width: 1440px) {
     .banner {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
-        font-size: 125px;
+        font-size: 149px;
       }
     }
 
@@ -276,13 +246,6 @@ export default {
   }
 
   @media only screen and (max-width: 1366px) {
-    .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first  {
-        font-size: 115px;
-      }
-    }
 
     .index {
       .icon-item {
@@ -298,6 +261,17 @@ export default {
       .hover-image,
       .default-image {
         margin-right: 50px;
+      }
+    }
+  }
+
+    @media only screen and (max-width: 1280px) {
+    .banner {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first  {
+        font-size: 131px;
+        letter-spacing: -7.05145px;
       }
     }
   }
@@ -357,7 +331,8 @@ export default {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
-        font-size: 100px;
+        font-size: 110px;
+        letter-spacing: -8px;
       }
     }
 
@@ -410,6 +385,15 @@ export default {
   }
 
   @media only screen and (max-width: 768px) {
+    .banner {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
+        font-size: 77px;
+        letter-spacing: -5px;
+      }
+    }
+
     .services {
       .hover-image,
       .default-image {
@@ -471,11 +455,6 @@ export default {
 
   @media only screen and (max-width: 610px) {
     .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 73px;
-      }
 
       .banner-main_title--white-first {
         display: inline;
@@ -512,12 +491,24 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 576px) {
+    .banner {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
+        font-size: 77px;
+        letter-spacing: -5px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 455px) {
     .banner {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
         font-size: 56px;
+        letter-spacing: -2px;
       }
     }
 
@@ -545,13 +536,6 @@ export default {
   }
 
   @media only screen and (max-width: 370px) {
-    .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 46px;
-      }
-    }
 
     .services {
       .hover-image,
@@ -569,10 +553,19 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 355px) {
     .services {
       .green-image {
         left: 58%;
+      }
+    }
+
+    .banner {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
+        font-size: 49px;
+        line-height: 101%;
       }
     }
   }
