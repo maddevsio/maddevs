@@ -495,6 +495,29 @@ export default {
       width: 262px;
       right: 100px;
     }
+
+    .single-project {
+      &:nth-child(2) {
+        /deep/ .single-project__background {
+          margin: 0 25px 0 14px;
+          width: auto;
+        }
+      }
+
+      &:nth-child(3) {
+        /deep/ .single-project__background {
+          margin: 0 29px;
+          width: auto;
+        }
+      }
+
+      &:last-child {
+        /deep/ .single-project__background {
+          margin: 0 38px;
+          width: auto;
+        }
+      }
+    }
   }
 }
 
@@ -583,49 +606,6 @@ export default {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .case-studies {
-    &__main-title {
-      font-size: 64px;
-    }
-  }
-
-  .projects {
-    &-flame-background {
-      top: -107px;
-      width: 208px;
-      right: 70px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .projects {
-    .single-project {
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          margin: 0 25px 0 14px;
-          width: auto;
-        }
-      }
-
-      &:nth-child(3) {
-        /deep/ .single-project__background {
-          margin: 0 29px;
-          width: auto;
-        }
-      }
-
-      &:last-child {
-        /deep/ .single-project__background {
-          margin: 0 38px;
-          width: auto;
-        }
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 920px) {
   .single-project {
     min-width: inherit;
@@ -636,10 +616,17 @@ export default {
   .case-studies {
     &__main-title {
       padding-bottom: 31px;
+      font-size: 64px;
     }
 
     .projects {
       display: none;
+
+      &-flame-background {
+        top: -107px;
+        width: 208px;
+        right: 70px;
+      }
     }
 
     .projects-mobile-slider {
