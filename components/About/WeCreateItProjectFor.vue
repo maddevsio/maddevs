@@ -102,7 +102,7 @@ export default {
 
   .we-create-it-project {
     padding-top: 105px;
-    padding-bottom: 295px;
+    padding-bottom: 214px;
 
     &__content-wrap {
       display: flex;
@@ -173,6 +173,8 @@ export default {
 
   @media only screen and (max-width: 1440px) {
     .we-create-it-project {
+      padding-top: 135px;
+
       &__main-title {
         padding-bottom: 60px;
       }
@@ -201,6 +203,9 @@ export default {
 
   @media only screen and (max-width: 1300px) {
     .we-create-it-project {
+      padding-top: 200px;
+      padding-bottom: 195px;
+
       &__country-list_wrap {
         max-width: 625px;
       }
@@ -260,6 +265,9 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .we-create-it-project {
+      padding-top: 100px;
+      padding-bottom: 141px;
+
       &__country-list_wrap {
         button {
           height: 44px;
@@ -284,6 +292,8 @@ export default {
 
   @media only screen and (max-width: 890px) {
     .we-create-it-project {
+      padding-top: 56px;
+
       &__main-title {
         font-size: 64px;
         padding-bottom: 35px;
@@ -312,30 +322,72 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 730px) {
-
-  }
-
-  @media only screen and (max-width: 440px) {
+  @media only screen and (max-width: 745px) {
     .we-create-it-project {
-      &__main-title {
-        font-size: 48px;
+      padding-top: 73px;
+      padding-bottom: 60px;
+
+      &__content-wrap {
+        flex-direction: column;
+        justify-content: initial;
+        align-items: initial;
       }
 
       &__country-list_title {
-        font-size: 28px;
+        br {
+          display: none;
+        }
+      }
 
+      &__country-list {
+        grid-column-gap: 20px;
+      }
+
+      &__projects-type_list {
+        padding-bottom: 50px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 520px) {
+    .we-create-it-project {
+      &__country-list_title {
         br {
           display: block;
         }
       }
+    }
+  }
 
-      &__country-item {
-        font-size: 18px;
+  @media only screen and (max-width: 375px) {
+    .we-create-it-project {
+      padding-bottom: 90px;
+
+      &__main-title {
+        font-size: 53px;
+        letter-spacing: -2px;
+      }
+
+      &__country-list_title {
+        font-size: 28px;
       }
 
       &__project-item {
         font-size: 41px;
+        letter-spacing: -1px;
+      }
+
+      &__projects-type_list {
+        padding-bottom: 38px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 335px) {
+    .we-create-it-project {
+      &__project-item {
+        font-size: 40px;
+        letter-spacing: -2px;
       }
     }
   }
