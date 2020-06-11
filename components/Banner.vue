@@ -389,7 +389,7 @@ export default {
       }
     }
   }
-
+  
   @media only screen and (max-width: 1220px) {
     .banner {
       .banner-main_title,
@@ -749,6 +749,19 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 384px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 58%;
+      }
+
+      .green-image {
+        left: 67%;
+      }
+    }
+  }
+
   @media only screen and (max-width: 375px) {
     .services {
       .hover-image,
@@ -770,12 +783,13 @@ export default {
       .default-image {
         width: 125px;
         top: 56%;
+        left: 62%;
       }
 
       .green-image {
         width: 93px;
         top: 56%;
-        left: 67.5%;
+        left: 70.5%;
       }
     }
   }
@@ -805,6 +819,22 @@ export default {
         width: 81px;
         top: 54%;
         left: 70.5%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .services {
+      .hover-image,
+      .default-image {
+        top: 38%;
+        left: 56%
+      }
+
+      .green-image {
+        width: 81px;
+        top: 38%;
+        left: 64.5%;
       }
     }
   }

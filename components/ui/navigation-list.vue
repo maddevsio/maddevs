@@ -56,6 +56,14 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1280px) {
+    .navigation-list {
+      .navigation-item {
+        padding-right: 50px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1270px) {
     .navigation-list {
       .navigation-item {
