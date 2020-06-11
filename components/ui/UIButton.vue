@@ -1,0 +1,58 @@
+<template>
+  <button
+    class="ui-button"
+    :class="{ 'ui-button--disabled': disabled }"
+    @click="onClick"
+    v-WaveAnimation
+  >{{ name }}</button>
+</template>
+
+<script>
+import WaveAnimation from '@/directives/WaveAnimation';
+
+export default {
+  name: 'UIButton',
+  directives: {
+    WaveAnimation
+  },
+  props: {
+    name: {
+      type: String,
+      default: 'Button'
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    }
+  },
+  methods: {
+    onClick() {
+      if (this.$props.disabled === false) {
+        this.$emit('click');
+      }
+    }
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+  @import '../../assets/styles/vars';
+
+  .ui-button {
+    height: 55px;
+    border-radius: 2px;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'Hoves-Regular';
+    cursor: pointer;
+    color: $text-color--red;
+    border: 1px solid $border-color--red;
+
+    &--disabled {
+      cursor: not-allowed;
+      opacity: 0.7;
+      user-select: none;
+    }
+  }
+</style>

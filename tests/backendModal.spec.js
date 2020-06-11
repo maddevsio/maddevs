@@ -8,7 +8,7 @@ describe('Backend modal', () => {
 
   beforeEach(() => {
     wrapper = mount(backendModal, {
-      stubs: ['ValidationProvider', 'ValidationObserver', 'modal']
+      stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar']
     });
   });
 
@@ -35,7 +35,8 @@ describe('Backend modal', () => {
   test('has a functions', () => {
     expect(
       typeof backendModal.methods.getPrivacyCheckboxState && 
-      typeof backendModal.methods.getDiscountOffersCheckboxState
+      typeof backendModal.methods.getDiscountOffersCheckboxState &&
+      typeof backendModal.methods.autosize
     ).toBe('function');
   });
 
@@ -47,5 +48,19 @@ describe('Backend modal', () => {
       wrapper.vm.$data.agreeWithPrivacyPolicy &&
       wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
     ).toEqual(true);
+  });
+
+  test('autosize function should add value in event key', () => {
+    const event = {
+      target: {
+        style: {
+          height: ''
+        },
+        scrollHeight: 100
+      }
+    };
+
+    wrapper.vm.autosize(event);
+    expect(event.target.style.height).toEqual('100px');
   });
 });

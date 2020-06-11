@@ -5,8 +5,8 @@
         <div class="text-content_wrapper">
           <div class="main-title-wrapper">
             <h1 class="banner-main_title" v-if="currentPageName === 'services'">
-              Your <br class="media-query-item"> Trusted <br> <span class="media-item">IT</span>
-              <span class="main-title-white_part">Outsourcing Partner</span>
+              Your Trusted <br> <span class="media-item">IT</span>
+              <span class="main-title-white_part">Outsourcing <br> Partner</span>
             </h1>
             <h1 class="banner-main_title" v-if="currentPageName === 'projects'">
               Check out our <br>
@@ -17,7 +17,8 @@
             </h1>
             <span class="banner-main_title--white" v-if="currentPageName === 'careers'">A new Mad Devs' ranger is here!</span>
             <h1 class="banner-main_title" v-if="currentPageName === 'index'">
-              Mad Devs
+              Mad Devs 
+              <img src="@/assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" class="phone-screen-logo">
               <span class="main-title-white_part"><br>Engineering<br>Your Growth</span>
             </h1>
             <navigationList v-if="currentPageName === 'projects'" />
@@ -95,11 +96,12 @@ export default {
     .banner-content {
       width: 100%;
       height: 100%;
-      padding-top: 240px;
+      padding-top: 190px;
+    }
 
-      .text-content_wrapper {
-        display: flex;
-      }
+    .text-content_wrapper {
+      display: flex;
+      padding-bottom: 180px;
     }
 
     .banner-main_title,
@@ -109,7 +111,7 @@ export default {
       font-style: normal;
       font-weight: bold;
       font-size: 165px;
-      letter-spacing: -3px;
+      letter-spacing: -8px;
       color: $text-color--black;
       text-shadow: $text-shadow--white;
 
@@ -123,6 +125,12 @@ export default {
         color: $text-color--white;
         text-shadow: none;
       }
+    }
+
+    .phone-screen-logo {
+      width: 100px;
+      display: none;
+      margin-bottom: -15px;
     }
   }
 
@@ -162,10 +170,6 @@ export default {
   }
 
   .services {
-    .media-query-item {
-      display: none;
-    }
-
     .media-item {
       color: $text-color--white;
       text-shadow: none;
@@ -175,12 +179,6 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-
-      .hover-image,
-      .default-image {
-        margin-bottom: -141px;
-        margin-right: 40px;
-      }
 
       &:hover {
         .hover-image {
@@ -193,50 +191,67 @@ export default {
       }
     }
 
+    .hover-image,
+    .default-image,
+    .green-image {
+      position: absolute;
+      top: 64%;
+      left: 60%;
+    }
+
     .hover-image {
       display: none;
     }
+  }
 
-    .green-image {
-      margin-right: 41px;
-      margin-bottom: -20px;
+  @media only screen and (max-width: 1700px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 62%;
+      }
+
+      .green-image {
+        left: 68%;
+      }
     }
   }
 
-  @media only screen and (min-width: 1620px) {
-    .projects,
-    .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 125px;
+  @media only screen and (max-width: 1660px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 64%;
       }
 
-      .text-content_wrapper {
-        display: flex;
-        padding-bottom: 130px;
+      .green-image {
+        left: 70%;
       }
     }
   }
 
   @media only screen and (max-width: 1620px) {
     .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 125px;
-      }
-
       .text-content_wrapper {
         display: flex;
-        padding-bottom: 130px;
+      }
+    }
+
+    .projects,
+    .banner {
+      .text-content_wrapper {
+        display: flex;
       }
     }
 
     .services {
       .hover-image,
       .default-image {
-        margin-right: 55px;
+        left: 65%;
+      }
+
+      .green-image {
+        left: 71.3%;
       }
     }
   }
@@ -251,88 +266,131 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1580px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 67%;
+      }
+
+      .green-image {
+        left: 73.5%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1540px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 69%;
+      }
+
+      .green-image {
+        left: 75.5%;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1440px) {
     .banner {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
-        font-size: 125px;
+        font-size: 149px;
+      }
+
+      .text-content_wrapper {
+        padding-bottom: 147px;
       }
     }
 
     .services {
       .hover-image,
       .default-image {
-        width: 320px;
-        margin-bottom: -120px;
-        margin-right: 64px;
+        width: 296px;
+        top: 67%;
+        left: 71%;
       }
 
       .green-image {
-        width: 237px;
-        margin-bottom: -43px;
+        width: 219px;
+        top: 67%;
+        left: 76.3%;
+      }
+
+      .navigation-list {
+        .navigation-item {
+          padding-right: 54px;
+        }
       }
     }
   }
 
-  @media only screen and (max-width: 1366px) {
+   @media only screen and (max-width: 1420px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 74%;
+      }
+
+      .green-image {
+        left: 79.3%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1380px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 75%;
+      }
+
+      .green-image {
+        left: 80.4%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1340px) {
     .banner {
       .banner-main_title,
       .banner-main_title--white,
-      .banner-main_title--white-first  {
-        font-size: 115px;
+      .banner-main_title--white-first {
+        font-size: 131px;
+      }
+
+      .text-content_wrapper {
+        padding-bottom: 122px;
       }
     }
 
     .index {
       .icon-item {
-        margin-top: -50px;
-      }
-    }
-
-    .services {
-      .media-query-item {
-        display: block;
-      }
-
-      .hover-image,
-      .default-image {
-        margin-right: 50px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1270px) {
-    .index {
-      .icon-item {
-        margin-top: 0;
-
         img {
-          height: 340px;
+          width: 345px;
         }
       }
     }
 
     .services {
-      .media-item {
-        display: none;
+      .hover-image,
+      .default-image {
+        width: 231px;
+        top: 59%;
+        left: 72%;
       }
 
       .green-image {
-        margin-right: 41px;
+        width: 170px;
+        top: 59%;
+        left: 76.6%;
       }
     }
   }
 
-  @media only screen and (max-width: 1120px) {
-    .services {
-      .green-image {
-        margin-right: 28px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1080px) {
+  @media only screen and (max-width: 1220px) {
     .banner {
       .banner-main_title,
       .banner-main_title--white,
@@ -341,9 +399,48 @@ export default {
       }
     }
 
+    .index {
+      .icon-item {
+        img {
+          width: 290px;
+        }
+      }
+    }
+
     .services {
+      .hover-image,
+      .default-image {
+        left: 63%;
+      }
+
       .green-image {
-        margin-right: 18px;
+        left: 67.8%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1140px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 65%;
+      }
+
+      .green-image {
+        left: 70.2%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1080px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 69%;
+      }
+
+      .green-image {
+        left: 74.5%;
       }
     }
   }
@@ -353,58 +450,129 @@ export default {
       .banner-content {
         padding-top: 0;
       }
-
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 100px;
-      }
     }
 
     .index {
       .main-title-wrapper {
-        padding-right: 0;
-      }
-
-      .icon-item {
-        display: none;
+        padding-right: 15px;
       }
     }
 
     .services {
-      .icon-item {
-        min-width: 375px;
-      }
-
-      .hover-image,
-      .default-image,
-      .green-image {
-        position: absolute;
-        top: 51%;
-      }
-
       .hover-image,
       .default-image {
-        width: 235px;
-        left: 44%;
+        width: 188px;
+        top: 49%;
+        left: 73%;
       }
 
       .green-image {
-        width: 170px;
-        left: 50%;
+        width: 140px;
+        top: 49%;
+        left: 77.7%;
       }
     }
   }
 
-  @media only screen and (max-width: 870px) {
+  @media only screen and (max-width: 970px) {
+    .banner {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
+        font-size: 77px;
+        letter-spacing: -5px;
+      }
+
+      .text-content_wrapper {
+        padding-bottom: 105px;
+      }
+    }
+
+    .index {
+      .icon-item {
+        img {
+          width: 220px;
+        }
+      }
+    }
+
     .services {
       .hover-image,
       .default-image {
-        left: 48%;
+        width: 188px;
+        top: 54%;
+        left: 57%;
       }
 
       .green-image {
-        left: 55%;
+        width: 140px;
+        top: 54%;
+        left: 61.9%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 920px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 59%;
+      }
+
+      .green-image {
+        left: 64%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 61%;
+      }
+
+      .green-image {
+        left: 66%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 62%;
+      }
+
+      .green-image {
+        left: 67.5%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 840px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 65%;
+      }
+
+      .green-image {
+        left: 70.5%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 820px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 68%;
+      }
+
+      .green-image {
+        left: 74%;
       }
     }
   }
@@ -413,11 +581,15 @@ export default {
     .services {
       .hover-image,
       .default-image {
-        left: 55%;
+        left: 70%;
       }
 
       .green-image {
-        left: 63%;
+        left: 76%;
+      }
+
+      .media-item {
+        display: none;
       }
     }
 
@@ -438,18 +610,32 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 670px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 59%;
-      }
-
-      .green-image {
-        left: 68%;
+  @media only screen and (max-width: 730px) {
+    .banner {
+      .phone-screen-logo {
+        display: inline;
       }
     }
 
+    .index {
+      .icon-item {
+        display: none;
+      }
+    }
+
+    .services {
+      .hover-image,
+      .default-image {
+        left: 67%;
+      }
+
+      .green-image {
+        left: 73.5%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 670px) {
     .careers {
       .container {
         position: relative;
@@ -467,21 +653,17 @@ export default {
         font-size: 85px;
       }
     }
+
+    .services {
+      .hover-image,
+      .default-image,
+      .green-image {
+        display: none;
+      }
+    }
   }
 
   @media only screen and (max-width: 610px) {
-    .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 73px;
-      }
-
-      .banner-main_title--white-first {
-        display: inline;
-      }
-    }
-
     .careers {
       .text-content_wrapper {
         padding-bottom: 70px;
@@ -495,84 +677,164 @@ export default {
         }
       }
     }
+  }
 
-    .services {
-      .hover-image,
-      .default-image {
-        width: 185px;
-        top: 48%;
-        left: 54%;
-      }
-
-      .green-image {
-        width: 145px;
-        left: 61%;
-        top: 48%;
+  @media only screen and (max-width: 565px) {
+    .banner {
+      .phone-screen-logo {
+        width: 90px;
+        margin-bottom: -10px;
       }
     }
   }
 
-  @media only screen and (max-width: 455px) {
+  @media only screen and (max-width: 555px) {
+    .banner {
+      .phone-screen-logo {
+        display: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 530px) {
     .banner {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
         font-size: 56px;
-      }
-    }
-
-    .services {
-      .hover-image,
-      .default-image {
-        width: 150px;
-        top: 47%;
+        letter-spacing: -2px;
       }
 
-      .green-image {
-        width: 113px;
-        left: 62%;
-        top: 47%;
+      .text-content_wrapper {
+        padding-bottom: 120px;
       }
     }
   }
 
-  @media only screen and (max-width: 475px) {
-    .services {
-      .green-image {
-        left: 64%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 370px) {
-    .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 46px;
-      }
-    }
-
+  @media only screen and (max-width: 440px) {
     .services {
       .hover-image,
+      .default-image,
+      .green-image {
+        display: block;
+      }
+
+      .hover-image,
       .default-image {
-        width: 130px;
-        top: 40%;
+        width: 142px;
+        top: 44%;
         left: 48%;
       }
 
       .green-image {
-        width: 95px;
-        top: 40%;
-        left: 57%;
+        width: 105px;
+        top: 44%;
+        left: 56%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .services {
+      .hover-image,
+      .default-image {
+        top: 51%;
+        left: 51%;
+      }
+
+      .green-image {
+        top: 51%;
+        left: 60%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 384px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 58%;
+      }
+
+      .green-image {
+        left: 67%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .services {
+      .hover-image,
+      .default-image {
+        top: 53%;
+        left: 59%;
+      }
+
+      .green-image {
+        top: 53%;
+        left: 69%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .services {
+      .hover-image,
+      .default-image {
+        width: 125px;
+        top: 56%;
+        left: 62%;
+      }
+
+      .green-image {
+        width: 93px;
+        top: 56%;
+        left: 70.5%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 335px) {
+    .banner {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
+        font-size: 48px;
+      }
+
+      .text-content_wrapper {
+        padding-bottom: 114px;
+      }
+    }
+
+    .services {
+      .hover-image,
+      .default-image {
+        width: 110px;
+        top: 54%;
+        left: 62%;
+      }
+
+      .green-image {
+        width: 81px;
+        top: 54%;
+        left: 70.5%;
       }
     }
   }
 
   @media only screen and (max-width: 320px) {
     .services {
+      .hover-image,
+      .default-image {
+        top: 38%;
+        left: 56%;
+      }
+
       .green-image {
-        left: 58%;
+        width: 81px;
+        top: 38%;
+        left: 64.5%;
       }
     }
   }

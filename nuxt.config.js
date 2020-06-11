@@ -34,6 +34,7 @@ module.exports = {
     '~/plugins/vue-scrollto.js',
     '~/plugins/google-analytics.js',
     '~/plugins/vee-validate.js',
+    '~/plugins/vue2-perfect-scrollbar.js',
     {
       src: '~/plugins/vue-js-modal.js',
       ssr: false

@@ -8,7 +8,7 @@ describe('Technology stack modal', () => {
 
   beforeEach(() => {
     wrapper = mount(technologyStackModal, {
-      stubs: ['ValidationProvider', 'ValidationObserver', 'modal']
+      stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar']
     });
   });
 
@@ -35,7 +35,8 @@ describe('Technology stack modal', () => {
   test('has a functions', () => {
     expect(
       typeof technologyStackModal.methods.getPrivacyCheckboxState && 
-      typeof technologyStackModal.methods.getDiscountOffersCheckboxState
+      typeof technologyStackModal.methods.getDiscountOffersCheckboxState &&
+      typeof technologyStackModal.methods.autosize
     ).toBe('function');
   });
 
@@ -47,5 +48,19 @@ describe('Technology stack modal', () => {
       wrapper.vm.$data.agreeWithPrivacyPolicy &&
       wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
     ).toEqual(true);
+  });
+
+  test('autosize function should add value in event key', () => {
+    const event = {
+      target: {
+        style: {
+          height: ''
+        },
+        scrollHeight: 100
+      }
+    };
+
+    wrapper.vm.autosize(event);
+    expect(event.target.style.height).toEqual('100px');
   });
 });

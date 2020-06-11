@@ -85,7 +85,7 @@ export default {
         phoneNumber: '+44 20 3984 8555',
         country: 'united-kingdom'
       },
-      modalWindowName: 'contact-me',
+      modalWindowName: 'contact-me-modal',
       mobileMenuIsOpen: false,
       headerIsWhite: false
     };

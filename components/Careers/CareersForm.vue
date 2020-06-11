@@ -94,6 +94,7 @@
         </ValidationObserver>
       </div>
     </div>
+    <SuccessModal />
   </section>
 </template>
 
@@ -101,6 +102,7 @@
 import FileInput from '@/components/Careers/FileInput';
 import RadioButton from '@/components/Careers/RadioButton';
 import Button from '@/components/Careers/Button';
+import SuccessModal from '@/components/Modals/success-modal';
 
 export default {
   name: 'CareersForm',
@@ -117,7 +119,8 @@ export default {
         { id: 'middle', name: 'position', labelText: 'Middle,' },
         { id: 'junior', name: 'position', labelText: 'Junior,' },
         { id: 'intern', name: 'position', labelText: 'Intern' }
-      ]
+      ],
+      emailSended: false
     };
   },
   mounted() {
@@ -126,7 +129,8 @@ export default {
   components: {
     FileInput,
     RadioButton,
-    Button
+    Button,
+    SuccessModal
   },
   methods: {
     onFileChanged(params) {
@@ -148,7 +152,24 @@ export default {
             positionTitle: this.positionTitle
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$store.dispatch('sendEmail', form).then(res => {
+          if (res.status === 200) {
+            this.emailSended = true;
+            this.$modal.show('success-modal');
+            setTimeout(() => {
+              this.fullName = null;
+              this.positionValue = null;
+              this.positionTitle = null;
+              this.email = null;
+              this.selectedFile = null;
+              this.linkedinProfile = null;
+              this.$modal.hide('success-modal');
+              this.emailSended = false;
+            }, 3000);
+          } else {
+            this.emailSended = false;
+          }
+        });
       }
     },
     focusInput() {

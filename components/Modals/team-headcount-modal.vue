@@ -1,6 +1,5 @@
 <template>
-  <modal name="team-headcount" :clickToClose="false">
-    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide('team-headcount')">
+  <ModalContainer :name="modalName">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -21,7 +20,7 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="max:500|required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Your question on team productivity​</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="How can I cope with miscommunication on the team and document things on time?" v-model="teamProductivityQuestion"/>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="How can I cope with miscommunication on the team and document things on time?" v-model="teamProductivityQuestion" @keydown="autosize($event)" rows="1"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
@@ -30,25 +29,30 @@
           @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
-        <button
-          class="modal-button-default button-default red-text-and-border"
+        <UIButton
+          name="Get advice on team"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-        >​Get advice on team</button>
+        />
       </div>
     </ValidationObserver>
-  </modal>
+  </ModalContainer>
 </template>
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
+import ModalContainer from '@/containers/ModalContainer';
+import UIButton from '@/components/ui/UIButton';
 
 export default {
   name: 'team-headcount',
   components: {
-    FormCheckboxes
+    FormCheckboxes,
+    ModalContainer,
+    UIButton
   },
   data: () => ({
+    modalName: 'team-headcount-modal',
     fullName: null,
     email: null,
     phoneNumber: null,
@@ -64,6 +68,10 @@ export default {
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
     },
+    autosize(e) {
+      e.target.style.height = 'auto';
+      e.target.style.height = `${e.target.scrollHeight}px`;
+    },
     sendForm(isValid) {
       if (isValid === true) {
         const form = {
@@ -77,7 +85,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendContactMeForm', form);
+        this.$nuxt.$emit(this.modalName, form);
       }
     }
   }
