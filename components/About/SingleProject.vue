@@ -109,7 +109,6 @@ export default {
 
 .single-project {
   width: 50%;
-  min-width: 400px;
   position: relative;
   z-index: 99;
   text-decoration: none;
