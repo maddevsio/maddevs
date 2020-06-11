@@ -682,12 +682,22 @@ export default {
 }
 
 @media only screen and (max-width: 576px) {
+  .projects {
+    &-flame-background {
+      right: 45px;
+    }
+  }
+
   .case-studies {
     /deep/ .single-project__background {
       &:nth-child(2) {
         position: relative;
         bottom: -10px;
       }
+    }
+
+    &__main-title {
+      font-size: 64px;
     }
 
     .projects-mobile-slider {
@@ -716,9 +726,26 @@ export default {
 @media only screen and (max-width: 465px) {
   .case-studies--projects {
     .projects-flame-background {
-      top: -97px;
-      height: 300px;
       right: 15px;
+    }
+  }
+
+  &__main-title {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 427px) {
+  .case-studies--projects {
+    .projects-flame-background {
+      right: 15px;
+      top: -122px;
+    }
+  }
+
+  .case-studies {
+    &__main-title {
+      font-size: 56px;
     }
   }
 }
@@ -734,6 +761,10 @@ export default {
       .swiper-small {
         display: none;
       }
+    }
+
+    &__main-title {
+      font-size: 53px;
     }
 
     .swiper-slide {
@@ -769,12 +800,31 @@ export default {
   }
 }
 
-@media only screen and (max-width: 335px) {
+@media only screen and (max-width: 366px) {
   .case-studies--projects {
     .projects-flame-background {
-      top: -79px;
-      height: 254px;
-      right: 15px;
+      right: 2px;
+    }
+  }
+
+  .case-studies {
+    &__main-title {
+      font-size: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .case-studies--projects {
+    .projects-flame-background {
+      right: 0;
+      top: -70px;
+    }
+  }
+
+  .case-studies {
+    &__main-title {
+      font-size: 48px;
     }
   }
 }
