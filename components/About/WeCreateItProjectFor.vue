@@ -112,7 +112,7 @@ export default {
 
     &__main-title {
       color: $text-color--red;
-      padding-bottom: 100px;
+      padding-bottom: 80px;
     }
 
     &__projects-type_list {
@@ -132,6 +132,7 @@ export default {
       padding-bottom: 30px;
       color: $text-color--grey;
       font-size: 50px;
+      letter-spacing: -2px;
 
       br {
         display: none;
@@ -142,7 +143,7 @@ export default {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 83px;
-      grid-row-gap: 10px;
+      grid-row-gap: 15px;
       padding-bottom: 60px;
     }
 
@@ -150,6 +151,7 @@ export default {
       display: flex;
       color: $text-color--grey;
       font-size: 32px;
+      letter-spacing: -1px;
 
       img {
         padding-right: 10px;
@@ -165,118 +167,77 @@ export default {
     &__project-item {
       color: $text-color--white;
       font-size: 70px;
+      letter-spacing: -2px;
     }
   }
 
   @media only screen and (max-width: 1440px) {
     .we-create-it-project {
+      &__main-title {
+        padding-bottom: 60px;
+      }
+
       &__country-list_wrap {
         max-width: 680px;
       }
 
+      &__project-item {
+        font-size: 64px;
+      }
+
+      &__country-list_title {
+        padding-bottom: 25px;
+      }
+
       &__country-list {
-        grid-column-gap: 40px;
+        padding-bottom: 44px;
+      }
+
+      &__country-item {
+        font-size: 25px;
       }
     }
   }
 
-  @media only screen and (max-width: 1340px) {
+  @media only screen and (max-width: 1300px) {
     .we-create-it-project {
       &__country-list_wrap {
         max-width: 625px;
       }
 
-      &__country-list {
-        grid-column-gap: 30px;
-      }
-
       &__country-list_title {
-        font-size: 47px;
-      }
-
-      &__projects-type_list {
-        padding-right: 40px;
-      }
-
-      &__country-item {
-        font-size: 30px;
-      }
-
-      &__project-item {
-        font-size: 68px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1260px) {
-    .we-create-it-project {
-      &__country-list_wrap {
-        max-width: 575px;
+        font-size: 36px;
+        padding-bottom: 13px;
       }
 
       &__country-list {
-        grid-column-gap: 25px;
-      }
-
-      &__country-list_title {
-        font-size: 43px;
-      }
-
-      &__country-item {
-        font-size: 28px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 155px;
+        grid-row-gap: 8px;
+        padding-bottom: 33px;
       }
 
       &__project-item {
-        font-size: 66px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1180px) {
-    .we-create-it-project {
-      &__country-list_wrap {
-        max-width: 485px;
-      }
-
-      &__country-list_title {
-        font-size: 35px;
-      }
-
-      &__country-list {
-        grid-column-gap: 20px;
-      }
-
-      &__country-item {
-        font-size: 22px;
-      }
-
-      &__project-item {
-        font-size: 59px;
+        font-size: 54px;
+        padding-bottom: 13px;
       }
     }
   }
 
   @media only screen and (max-width: 1024px) {
     .we-create-it-project {
-      &__content-wrap {
-        flex-direction: column;
-        align-items: flex-start;
+      &__project-item {
+        font-size: 47px;
+        padding-bottom: 8px;
       }
 
-      &__country-list_wrap {
-        width: 100%;
-        max-width: 100%;
-        padding-top: 40px;
+      &__country-list_title {
+        font-size: 34px;
       }
 
       &__country-list {
-        width: max-content;
-      }
-
-      &__country-item {
-        &:nth-child(3n+3) {
-          margin-left: -20px;
-        }
+        grid-column-gap: 86px;
+        padding-bottom: 27px;
       }
     }
   }
