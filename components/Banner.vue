@@ -327,15 +327,28 @@ export default {
     }
   }
 
+   @media only screen and (max-width: 1420px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 74%;
+      }
+
+      .green-image {
+        left: 79.3%;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1380px) {
     .services {
       .hover-image,
       .default-image {
-        left: 73%;
+        left: 75%;
       }
 
       .green-image {
-        left: 78.4%;
+        left: 80.4%;
       }
     }
   }
@@ -573,6 +586,10 @@ export default {
 
       .green-image {
         left: 76%;
+      }
+
+      .media-item {
+        display: none;
       }
     }
 
