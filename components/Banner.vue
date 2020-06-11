@@ -131,7 +131,7 @@ export default {
       position: relative;
 
       .main-title-wrapper {
-        max-width: 90%;
+        max-width: 100%;
       }
     }
 
