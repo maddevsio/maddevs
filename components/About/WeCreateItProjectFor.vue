@@ -217,62 +217,7 @@ export default {
         padding-bottom: 33px;
       }
 
-      &__project-item {
-        font-size: 54px;
-        padding-bottom: 13px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .we-create-it-project {
-      &__project-item {
-        font-size: 47px;
-        padding-bottom: 8px;
-      }
-
-      &__country-list_title {
-        font-size: 34px;
-      }
-
-      &__country-list {
-        grid-column-gap: 86px;
-        padding-bottom: 27px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 640px) {
-    .we-create-it-project {
-      &__main-title {
-        font-size: 95px;
-
-        br {
-          display: none;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 520px) {
-    .we-create-it-project {
-      padding-bottom: 105px;
-
-      &__main-title {
-        font-size: 80px;
-      }
-
-      &__country-list_title {
-        font-size: 32px;
-      }
-
-      &__country-list {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
       &__country-item {
-        font-size: 25px;
-
         &:nth-child(3n+3) {
           margin-left: 0;
         }
@@ -307,9 +252,68 @@ export default {
       }
 
       &__project-item {
-        font-size: 50px;
+        font-size: 54px;
+        padding-bottom: 13px;
       }
     }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .we-create-it-project {
+      &__country-list_wrap {
+        button {
+          height: 44px;
+        }
+      }
+
+      &__project-item {
+        font-size: 47px;
+        padding-bottom: 8px;
+      }
+
+      &__country-list_title {
+        font-size: 34px;
+      }
+
+      &__country-list {
+        grid-column-gap: 86px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 890px) {
+    .we-create-it-project {
+      &__main-title {
+        font-size: 64px;
+        padding-bottom: 35px;
+        letter-spacing: -0.03em;
+      }
+
+      &__country-list_title {
+        br {
+          display: block;
+        }
+      }
+
+      &__country-list {
+        grid-column-gap: 57px;
+        grid-row-gap: 6px
+      }
+
+      &__project-item {
+        font-size: 44px;
+        padding-bottom: 11px;
+      }
+
+      &__country-item {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 730px) {
+
   }
 
   @media only screen and (max-width: 440px) {
