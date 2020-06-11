@@ -308,7 +308,7 @@ export default {
 
       &__country-list {
         grid-column-gap: 57px;
-        grid-row-gap: 6px
+        grid-row-gap: 6px;
       }
 
       &__project-item {

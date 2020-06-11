@@ -8,13 +8,13 @@ describe('Teams Modal', () => {
 
   beforeEach(() => {
     wrapper = mount(TeamsModal, {
-      stubs: ['modal', 'ValidationObserver']
+      stubs: ['modal', 'ValidationObserver', 'perfect-scrollbar']
     });
   });
 
   // ------ IMPORTANT ----- //
   test('is a Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper.exists()).toBeTruthy();
   });
   
   test('renders correctly', () => {
