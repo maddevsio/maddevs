@@ -389,7 +389,7 @@ export default {
       }
     }
   }
-  
+
   @media only screen and (max-width: 1220px) {
     .banner {
       .banner-main_title,
@@ -828,7 +828,7 @@ export default {
       .hover-image,
       .default-image {
         top: 38%;
-        left: 56%
+        left: 56%;
       }
 
       .green-image {
