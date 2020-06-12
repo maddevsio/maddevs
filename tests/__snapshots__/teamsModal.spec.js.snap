@@ -11,10 +11,10 @@ exports[`Teams Modal renders correctly 1`] = `
     src="@/assets/img/common/close-icon.svg"
   />
    
-  <perfect-scrollbar
+  <perfect-scrollbar-stub
     class="modal_scrollbar"
   >
     <validationobserver-stub />
-  </perfect-scrollbar>
+  </perfect-scrollbar-stub>
 </modal-stub>
 `;

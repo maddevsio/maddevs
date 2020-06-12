@@ -8,13 +8,13 @@ describe('Footer form', () => {
 
   beforeEach(() => {
     wrapper = mount(footerForm, {
-      stubs: ['ValidationObserver', 'ValidationProvider']
+      stubs: ['ValidationObserver', 'ValidationProvider', 'modal']
     });
   });
 
   // ------ IMPORTANT ----- //
   test('is a Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper.exists()).toBeTruthy();
   });
   
   test('renders correctly', () => {

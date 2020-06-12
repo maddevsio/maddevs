@@ -14,7 +14,7 @@ describe('FileInput component', () => {
   });
 
   test('is Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper.exists()).toBeTruthy();
   });
 
   test('should have CareersForm parent component ', () => {

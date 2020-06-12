@@ -6,7 +6,7 @@ exports[`Footer form renders correctly 1`] = `
 >
   <validationobserver-stub />
    
-  <modal
+  <modal-stub
     height="auto"
     name="success-modal"
   >
@@ -48,6 +48,6 @@ exports[`Footer form renders correctly 1`] = `
         </div>
       </div>
     </section>
-  </modal>
+  </modal-stub>
 </div>
 `;

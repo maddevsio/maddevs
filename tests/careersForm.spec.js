@@ -34,7 +34,7 @@ describe('CareersForm component', () => {
   });
 
   test('is Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper.exists()).toBeTruthy();
   });
 
   test('renders correctly', () => {

@@ -190,7 +190,8 @@
 
 .main-title {
   font-family: 'Hoves-Bold';
-  font-size: 130px;
+  font-size: 128px;
+  letter-spacing: -5px;
 }
 
 .flex-wrapper {
@@ -437,12 +438,6 @@ button {
   }
 }
 
-@media only screen and (max-width: 1620px) {
-  .main-title {
-    font-size: 120px;
-  }
-}
-
 @media only screen and (max-width: 1560px) {
   .title {
     font-size: 80px;
@@ -483,13 +478,11 @@ button {
   }
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1280px) {
   .main-title {
-    font-size: 110px;
+    font-size: 100px;
   }
-}
 
-@media only screen and (max-width: 1270px) {
   .title {
     font-size: 70px;
   }
@@ -543,7 +536,7 @@ button {
   }
 
   .main-title {
-    font-size: 105px;
+    font-size: 90px;
   }
 
   .button-default {

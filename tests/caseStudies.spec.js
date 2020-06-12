@@ -64,7 +64,7 @@ describe('CaseStudies component', () => {
   });
 
   test('is Vue\'s instance', () => {
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper.exists()).toBeTruthy();
   });
   
   test('renders correctly', () => {
