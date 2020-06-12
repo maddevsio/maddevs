@@ -67,7 +67,7 @@ export default {
     flex-wrap: wrap;
   }
 
-  @media only screen and (max-width: 520px) {
+  @media only screen and (max-width: 640px) {
     .icons-list {
       max-width: 325px;
       display: grid;

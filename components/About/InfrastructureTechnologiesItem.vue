@@ -49,11 +49,15 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 520px) {
+  @media only screen and (max-width: 640px) {
     .infrastructure-content {
       /deep/.icons-list {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+      }
+
+      /deep/.icon-item {
+        padding-right: 0;
       }
 
       /deep/.aws {
