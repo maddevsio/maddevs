@@ -6,48 +6,10 @@ exports[`Footer form renders correctly 1`] = `
 >
   <validationobserver-stub />
    
-  <modal
-    height="auto"
-    name="success-modal"
+  <transition-stub
+    name="fade"
   >
-    <img
-      alt="Close modal"
-      class="close-modal"
-      src="@/assets/img/common/close-icon.svg"
-    />
-     
-    <section
-      class="success-message"
-    >
-      <div
-        class="success-message__conten-wrapper"
-      >
-        <img
-          alt="Hand"
-          src="@/assets/img/common/success-message-hand.svg"
-        />
-         
-        <div
-          class="success-message__text-content"
-        >
-          <div
-            class="success-message__title"
-          >
-            Thanks for your 
-            <br />
-             interest in Mad Devs
-          </div>
-           
-          <div
-            class="success-message__info-text"
-          >
-            The form has been submitted. 
-            <br />
-             We will contact you as soon as possible.
-          </div>
-        </div>
-      </div>
-    </section>
-  </modal>
+    <!---->
+  </transition-stub>
 </div>
 `;
