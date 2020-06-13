@@ -45,30 +45,21 @@ export default {
     margin-top: -60px;
 
     .navigation-item {
-      padding-right: 71px;
+      padding-right: 81px;
       padding-left: 20px;
       color: $text-color--grey-light;
       font-size: 22px;
       font-family: 'Hoves-Regular';
       background: url('../../assets/img/common/link-arrow.svg') no-repeat;
       background-position-y: 7px;
+      letter-spacing: -0.04em;
     }
   }
 
-  @media only screen and (max-width: 1620px) {
-    .navigation-list {
-      .navigation-item {
-        font-size: 17px;
-        background-position-y: 3px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1366px) {
+  @media only screen and (max-width: 1280px) {
     .navigation-list {
       .navigation-item {
         padding-right: 50px;
-        font-size: 17px;
       }
     }
   }
@@ -76,60 +67,47 @@ export default {
   @media only screen and (max-width: 1270px) {
     .navigation-list {
       .navigation-item {
-        padding-right: 30px;
+        padding-right: 44px;
         font-size: 16px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1220px) {
-    .navigation-list {
-      .navigation-item {
-        padding-right: 20px;
-        font-size: 15px;
-      }
-    }
-  }
-
-   @media only screen and (max-width: 1024px) {
-    .navigation-list {
-      flex-direction: column;
-
-      .navigation-item {
-        padding-bottom: 27px;
-        font-size: 31px;
-        background-size: 12px;
-        background-position-y: 9px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 610px) {
-    .navigation-list {
-      .navigation-item {
-        font-size: 23px;
-        background-size: 11px;
-        background-position-y: 6px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 440px) {
-    .navigation-list {
-      .navigation-item {
-        font-size: 18px;
-        background-size: 9px;
+        letter-spacing: -0.03em;
         background-position-y: 4px;
       }
     }
   }
 
-  @media only screen and (max-width: 370px) {
+   @media only screen and (max-width: 970px) {
     .navigation-list {
+      display: grid;
+      grid-template-columns: repeat(2, 300px);
+      grid-row-gap: 17px;
+
       .navigation-item {
-        font-size: 15px;
-        background-size: 8px;
-        background-position-y: 3px;
+        font-size: 17px;
+
+        &:nth-child(2) {
+          grid-row-start: 2;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 730px) {
+    .navigation-list {
+      grid-template-columns: repeat(2, 240px);
+
+      .navigation-item {
+        padding-right: 25px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 530px) {
+    .navigation-list {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 22px;
+
+      .navigation-item {
+        font-size: 18px;
       }
     }
   }

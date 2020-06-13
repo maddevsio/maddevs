@@ -14,7 +14,7 @@ describe('Customer Testimonials', () => {
 
   // ------ IMPORTANT ----- //
   test('is a Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper.exists()).toBeTruthy();
   });
   
   test('renders correctly', () => {
@@ -31,7 +31,7 @@ describe('Customer Testimonials', () => {
   });
 
   it('Widget show in DOM when page load', () => {
-    let widget = wrapper.find('.clutch-widget');
+    let widget = wrapper.findAll('.clutch-widget');
     expect(widget).toBeTruthy();
   });
 

@@ -31,7 +31,7 @@ describe('Radio buttons list', () => {
 
   // ------ IMPORTANT ----- //
   test('is Vue\'s instance', () => {
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper.exists()).toBeTruthy();
   });
 
   test('renders correctly', () => {
@@ -71,6 +71,6 @@ describe('Radio buttons list', () => {
 
   test('Has class if sectionIsRequired equal true', () => {
     let div = wrapper.find('.radio-buttons__field-name');
-    expect(div.is('.required')).toBe(true);
+    expect(div.classes()).toContain('required');
   });
 });

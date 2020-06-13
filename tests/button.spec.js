@@ -16,7 +16,7 @@ describe('Button component', () => {
   });
 
   test('is Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper.exists()).toBeTruthy();
   });
 
   test('Button slot renders a default button text', () => {

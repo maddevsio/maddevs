@@ -102,7 +102,7 @@ export default {
 
   .we-create-it-project {
     padding-top: 105px;
-    padding-bottom: 295px;
+    padding-bottom: 214px;
 
     &__content-wrap {
       display: flex;
@@ -112,7 +112,7 @@ export default {
 
     &__main-title {
       color: $text-color--red;
-      padding-bottom: 100px;
+      padding-bottom: 80px;
     }
 
     &__projects-type_list {
@@ -132,6 +132,7 @@ export default {
       padding-bottom: 30px;
       color: $text-color--grey;
       font-size: 50px;
+      letter-spacing: -2px;
 
       br {
         display: none;
@@ -142,7 +143,7 @@ export default {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 83px;
-      grid-row-gap: 10px;
+      grid-row-gap: 15px;
       padding-bottom: 60px;
     }
 
@@ -150,6 +151,7 @@ export default {
       display: flex;
       color: $text-color--grey;
       font-size: 32px;
+      letter-spacing: -1px;
 
       img {
         padding-right: 10px;
@@ -165,153 +167,62 @@ export default {
     &__project-item {
       color: $text-color--white;
       font-size: 70px;
+      letter-spacing: -2px;
     }
   }
 
   @media only screen and (max-width: 1440px) {
     .we-create-it-project {
+      padding-top: 135px;
+
+      &__main-title {
+        padding-bottom: 60px;
+      }
+
       &__country-list_wrap {
         max-width: 680px;
       }
 
-      &__country-list {
-        grid-column-gap: 40px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1340px) {
-    .we-create-it-project {
-      &__country-list_wrap {
-        max-width: 625px;
-      }
-
-      &__country-list {
-        grid-column-gap: 30px;
-      }
-
-      &__country-list_title {
-        font-size: 47px;
-      }
-
-      &__projects-type_list {
-        padding-right: 40px;
-      }
-
-      &__country-item {
-        font-size: 30px;
-      }
-
       &__project-item {
-        font-size: 68px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1260px) {
-    .we-create-it-project {
-      &__country-list_wrap {
-        max-width: 575px;
-      }
-
-      &__country-list {
-        grid-column-gap: 25px;
+        font-size: 64px;
       }
 
       &__country-list_title {
-        font-size: 43px;
-      }
-
-      &__country-item {
-        font-size: 28px;
-      }
-
-      &__project-item {
-        font-size: 66px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1180px) {
-    .we-create-it-project {
-      &__country-list_wrap {
-        max-width: 485px;
-      }
-
-      &__country-list_title {
-        font-size: 35px;
+        padding-bottom: 25px;
       }
 
       &__country-list {
-        grid-column-gap: 20px;
-      }
-
-      &__country-item {
-        font-size: 22px;
-      }
-
-      &__project-item {
-        font-size: 59px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .we-create-it-project {
-      &__content-wrap {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      &__country-list_wrap {
-        width: 100%;
-        max-width: 100%;
-        padding-top: 40px;
-      }
-
-      &__country-list {
-        width: max-content;
-      }
-
-      &__country-item {
-        &:nth-child(3n+3) {
-          margin-left: -20px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 640px) {
-    .we-create-it-project {
-      &__main-title {
-        font-size: 95px;
-
-        br {
-          display: none;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 520px) {
-    .we-create-it-project {
-      padding-bottom: 105px;
-
-      &__main-title {
-        font-size: 80px;
-      }
-
-      &__country-list_title {
-        font-size: 32px;
-      }
-
-      &__country-list {
-        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 44px;
       }
 
       &__country-item {
         font-size: 25px;
+      }
+    }
+  }
 
+  @media only screen and (max-width: 1300px) {
+    .we-create-it-project {
+      padding-top: 200px;
+      padding-bottom: 195px;
+
+      &__country-list_wrap {
+        max-width: 625px;
+      }
+
+      &__country-list_title {
+        font-size: 36px;
+        padding-bottom: 13px;
+      }
+
+      &__country-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 155px;
+        grid-row-gap: 8px;
+        padding-bottom: 33px;
+      }
+
+      &__country-item {
         &:nth-child(3n+3) {
           margin-left: 0;
         }
@@ -346,31 +257,137 @@ export default {
       }
 
       &__project-item {
-        font-size: 50px;
+        font-size: 54px;
+        padding-bottom: 13px;
       }
     }
   }
 
-  @media only screen and (max-width: 440px) {
+  @media only screen and (max-width: 1024px) {
     .we-create-it-project {
-      &__main-title {
-        font-size: 48px;
+      padding-top: 100px;
+      padding-bottom: 141px;
+
+      &__country-list_wrap {
+        button {
+          height: 44px;
+        }
+      }
+
+      &__project-item {
+        font-size: 47px;
+        padding-bottom: 8px;
       }
 
       &__country-list_title {
-        font-size: 28px;
+        font-size: 34px;
+      }
 
+      &__country-list {
+        grid-column-gap: 86px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 890px) {
+    .we-create-it-project {
+      padding-top: 56px;
+
+      &__main-title {
+        font-size: 64px;
+        padding-bottom: 35px;
+        letter-spacing: -0.03em;
+      }
+
+      &__country-list_title {
         br {
           display: block;
         }
       }
 
+      &__country-list {
+        grid-column-gap: 57px;
+        grid-row-gap: 6px;
+      }
+
+      &__project-item {
+        font-size: 44px;
+        padding-bottom: 11px;
+      }
+
       &__country-item {
         font-size: 18px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 745px) {
+    .we-create-it-project {
+      padding-top: 73px;
+      padding-bottom: 60px;
+
+      &__content-wrap {
+        flex-direction: column;
+        justify-content: initial;
+        align-items: initial;
+      }
+
+      &__country-list_title {
+        br {
+          display: none;
+        }
+      }
+
+      &__country-list {
+        grid-column-gap: 20px;
+      }
+
+      &__projects-type_list {
+        padding-bottom: 50px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 520px) {
+    .we-create-it-project {
+      &__country-list_title {
+        br {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .we-create-it-project {
+      padding-bottom: 90px;
+
+      &__main-title {
+        font-size: 53px;
+        letter-spacing: -2px;
+      }
+
+      &__country-list_title {
+        font-size: 28px;
       }
 
       &__project-item {
         font-size: 41px;
+        letter-spacing: -1px;
+      }
+
+      &__projects-type_list {
+        padding-bottom: 38px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 335px) {
+    .we-create-it-project {
+      &__project-item {
+        font-size: 40px;
+        letter-spacing: -2px;
       }
     }
   }

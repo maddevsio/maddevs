@@ -59,7 +59,7 @@ describe('CaseStudies component', () => {
   });
 
   test('is Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper.exists()).toBeTruthy();
   });
 
   test('renders correctly', () => {
@@ -78,11 +78,11 @@ describe('CaseStudies component', () => {
   test('renders all projectsLogo children', () => {
     const wrapper = mount(OpenSource);
 
-    expect(wrapper.findAll(MadLocationLogo).length).toBe(1);
-    expect(wrapper.findAll(AriadnaLogo).length).toBe(1);
-    expect(wrapper.findAll(HeimdallLogo).length).toBe(1);
-    expect(wrapper.findAll(ComedianLogo).length).toBe(1);
-    expect(wrapper.findAll(IdMatchLogo).length).toBe(1);
-    expect(wrapper.findAll(YourCastLogo).length).toBe(1);
+    expect(wrapper.findAllComponents(MadLocationLogo).length).toBe(1);
+    expect(wrapper.findAllComponents(AriadnaLogo).length).toBe(1);
+    expect(wrapper.findAllComponents(HeimdallLogo).length).toBe(1);
+    expect(wrapper.findAllComponents(ComedianLogo).length).toBe(1);
+    expect(wrapper.findAllComponents(IdMatchLogo).length).toBe(1);
+    expect(wrapper.findAllComponents(YourCastLogo).length).toBe(1);
   });
 });
