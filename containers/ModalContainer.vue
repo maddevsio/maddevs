@@ -1,7 +1,7 @@
 <template>
   <modal height="auto" :name="$props.name" :clickToClose="false" @closed="emailSended = false">
     <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide($props.name)">
-    <perfect-scrollbar class="modal_scrollbar" v-if="emailSended === false">
+    <perfect-scrollbar class="modal_scrollbar" v-if="emailSended === false" :options="scrollbarOptions">
       <slot />
     </perfect-scrollbar>
     <SuccessMessage v-else />
@@ -23,7 +23,10 @@ export default {
     }
   },
   data: () => ({
-    emailSended: false
+    emailSended: false,
+    scrollbarOptions: {
+      wheelPropagation: false
+    }
   }),
   created() {
     if (this.$nuxt) {
