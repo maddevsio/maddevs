@@ -67,8 +67,8 @@ export default {
   @import '../../assets/styles/vars';
 
   .quick-project_start {
-    padding-top: 230px;
-    padding-bottom: 195px;
+    padding-top: 215px;
+    padding-bottom: 155px;
     text-align: center;
 
     &__main-title {
@@ -82,7 +82,7 @@ export default {
 
     &__button-wrap {
       width: 100%;
-      margin-top: 123px;
+      margin-top: 75px;
 
       button {
         width: inherit;
@@ -170,6 +170,25 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1440px) {
+    .quick-project_start {
+      padding-top: 195px;
+      padding-bottom: 164px;
+
+      &__main-title {
+        font-size: 121px;
+      }
+
+      &__title {
+        font-size: 42px;
+      }
+
+      &__button-wrap {
+        margin-top: 90px;
+      } 
+    }
+  }
+
   @media only screen and (max-width: 1420px) {
     .quick-project_start {
       &__icon-item {
@@ -199,6 +218,18 @@ export default {
       }
     }
   }
+
+  @media only screen and (max-width: 1280px) {
+    .quick-project_start {
+      padding-top: 195px;
+      padding-bottom: 164px;
+
+      &__main-title {
+        font-size: 100px;
+      }
+    }
+  }
+
 
   @media only screen and (max-width: 1240px) {
     .quick-project_start {
