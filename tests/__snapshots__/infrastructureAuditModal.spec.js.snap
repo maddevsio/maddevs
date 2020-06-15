@@ -13,6 +13,7 @@ exports[`Infrastructure Audit Modal renders correctly 1`] = `
    
   <perfect-scrollbar-stub
     class="modal_scrollbar"
+    options="[object Object]"
   >
     <validationobserver-stub />
   </perfect-scrollbar-stub>

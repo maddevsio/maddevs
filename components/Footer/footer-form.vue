@@ -1,6 +1,6 @@
 <template>
   <div class="footer-form form"> 
-    <ValidationObserver v-slot="{ invalid }">
+    <ValidationObserver v-slot="{ invalid }" ref="form">
       <div class="fields-list">
         <ValidationProvider class="field-item" v-slot="{ classes, errors }">
           <p class="field-name">First name and surname</p>
@@ -28,7 +28,7 @@
         @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
       />
     </ValidationObserver>
-    <SuccessModal />
+    <SuccessModal :visibled="emailSended" />
   </div>
 </template>
 
@@ -79,17 +79,15 @@ export default {
         };
         this.$store.dispatch('sendEmail', form).then(res => {
           if (res.status === 200) {
-            this.$modal.show('success-modal');
             this.emailSended = true;
             setTimeout(() => {
+              this.$refs.form.reset();
               this.fullName = null;
               this.email = null;
               this.projectDescription = null;
               this.projectInfo = null;
               this.agreeWithPrivacyPolicy = false;
               this.agreeToGetMadDevsDiscountOffers = false;
-              this.emailSended = false;
-              this.$modal.hide('success-modal');
               this.emailSended = false;
             }, 3000);
           } else {

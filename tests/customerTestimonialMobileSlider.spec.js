@@ -30,7 +30,7 @@ describe('Customer Testimonials Mobile Slider', () => {
 
   // ------ IMPORTANT ----- //
   test('is a Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper.exists()).toBeTruthy();
   });
   
   test('renders correctly', () => {

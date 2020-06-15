@@ -7,7 +7,7 @@
           src="@/assets/img/Careers/svg/careers_logo.svg"
           alt="Careers Background Image"
         />
-        <ValidationObserver v-slot="{ handleSubmit }">
+        <ValidationObserver v-slot="{ handleSubmit }" ref="form">
           <form @submit.prevent="handleSubmit(sendData)" class="careers__form">
             <label class="careers__form-name-label form-text"
               >Hello, my name is
@@ -94,7 +94,7 @@
         </ValidationObserver>
       </div>
     </div>
-    <SuccessModal />
+    <SuccessModal :visibled="emailSended" />
   </section>
 </template>
 
@@ -150,20 +150,27 @@ export default {
             linkedinProfile: this.linkedinProfile,
             positionValue: this.positionValue,
             positionTitle: this.positionTitle
-          }
+          },
+          attachments: [
+            {
+              content: this.selectedFile,
+              filename: 'File',
+              type: 'application/pdf',
+              disposition: 'attachment'
+            }
+          ]
         };
         this.$store.dispatch('sendEmail', form).then(res => {
           if (res.status === 200) {
             this.emailSended = true;
-            this.$modal.show('success-modal');
             setTimeout(() => {
+              this.$refs.form.reset();
               this.fullName = null;
               this.positionValue = null;
               this.positionTitle = null;
               this.email = null;
               this.selectedFile = null;
               this.linkedinProfile = null;
-              this.$modal.hide('success-modal');
               this.emailSended = false;
             }, 3000);
           } else {
