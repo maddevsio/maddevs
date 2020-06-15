@@ -198,6 +198,7 @@ export default {
       }
     }
   }
+  
 
   @media only screen and (max-width: 1370px) {
     .quick-project_start {
@@ -221,21 +222,33 @@ export default {
 
   @media only screen and (max-width: 1280px) {
     .quick-project_start {
-      padding-top: 195px;
-      padding-bottom: 164px;
+      padding-top: 133px;
+      padding-bottom: 151px;
 
       &__main-title {
         font-size: 100px;
+        padding-bottom: 105px;
+      }
+
+      &__icon-item {
+        &::after {
+          left: 144px;
+          top: 20px;
+          background-size: 135px;
+        }
+      }
+
+      &__button-wrap {
+        margin-top: 62px;
       }
     }
   }
-
 
   @media only screen and (max-width: 1240px) {
     .quick-project_start {
       &__icon-item {
         &::after {
-          left: 110px;
+          left: 135px;
         }
       }
     }
@@ -245,9 +258,27 @@ export default {
     .quick-project_start {
       &__icon-item {
         &::after {
-          top: 15px;
+          left: 130px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1180px) {
+    .quick-project_start {
+      &__icon-item {
+        &::after {
           left: 125px;
-          background-size: 130px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1140px) {
+    .quick-project_start {
+      &__icon-item {
+        &::after {
+          left: 117px;
         }
       }
     }
@@ -257,7 +288,9 @@ export default {
     .quick-project_start {
       &__icon-item {
         &::after {
-          left: 115px;
+          top: 30px;
+          left: 130px;
+          background-size: 100px;
         }
       }
     }
@@ -265,65 +298,95 @@ export default {
 
   @media only screen and (max-width: 1080px) {
     .quick-project_start {
+      padding-bottom: 86px;
+
+      &__main-title {
+        padding-bottom: 65px;
+      }
+
+      &__title {
+        font-size: 29px;
+        letter-spacing: -1px;
+      }
+      
+      &__paragraph {
+        font-size: 14px;
+      }
+
       &__icon-item {
         &::after {
-          left: 100px;
+          left: 120px;
         }
+      }
+
+      &__button-wrap {
+        margin-top: 55px;
+      }
+
+      /deep/.button-default {
+        height: 50px;
       }
     }
   }
 
   @media only screen and (max-width: 1024px) {
     .quick-project_start {
-      text-align: initial;
+      // text-align: initial;
 
-      &__main-title {
-        padding-bottom: 51px;
+      // &__main-title {
+      //   padding-bottom: 51px;
 
-        br {
-          display: block;
-        }
-      }
+      //   br {
+      //     display: block;
+      //   }
+      // }
 
        &__button-wrap {
         display: flex;
         justify-content: flex-start;
-        margin-top: 38px;
-        margin-left: 58px;
+        // margin-top: 38px;
+        // margin-left: 58px;
 
         button {
-          width: calc(100% - 15%);
+          // width: calc(100% - 15%);
+          width: 100%;
           color: $text-color--grey-light;
           background-color: $button-bgcolor--red;
         }
       }
 
 
-      &__content-items_list {
-        grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 40px;
-      }
+      // &__content-items_list {
+      //   grid-template-columns: repeat(1, 1fr);
+      //   grid-row-gap: 40px;
+      // }
 
-      &__content-item {
-        max-width: 360px;
-        flex-direction: row;
-      }
+      // &__content-item {
+      //   max-width: 360px;
+      //   flex-direction: row;
+      // }
+
+      // &__icon-item {
+      //   padding-top: 7px;
+      //   padding-right: 17px;
+
+      //   &::after {
+      //     display: none;
+      //   }
+      // }
+
+      // .team {
+      //   padding-top: 14px;
+      // }
+
+      // .start {
+      //   padding-top: 10px;
+      // }
 
       &__icon-item {
-        padding-top: 7px;
-        padding-right: 17px;
-
         &::after {
-          display: none;
+          left: 110px;
         }
-      }
-
-      .team {
-        padding-top: 14px;
-      }
-
-      .start {
-        padding-top: 10px;
       }
     }
   }
