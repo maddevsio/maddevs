@@ -41,7 +41,7 @@ export default {
 
 <style lang="scss" scoped>
 
-  @media only screen and (max-width: 520px) {
+  @media only screen and (max-width: 640px) {
     .technologies-backend {
       .icons-list {
         display: grid;

@@ -28,6 +28,7 @@
               <TechnologiesItem
                 :title="projectManagement.title"
                 :paragraph="projectManagement.paragraph"
+                class="technologies-project-management"
               />
             </div>
             <InfrastructureTechnologiesItem />
@@ -75,7 +76,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .technologies-and_tools {
-    padding-bottom: 183px;
+    padding-bottom: 128px;
 
     &__main-title {
       padding-bottom: 41px;
@@ -98,12 +99,28 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1440px) {
+    .technologies-and_tools {
+      padding-bottom: 95px;
+    }
+  }
+
   @media only screen and (max-width: 1420px) {
     .technologies-and_tools {
       &__flex-group {
         div {
           max-width: 520px;
         }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .technologies-and_tools {
+      padding-bottom: 57px;
+
+      &__main-title {
+        padding-bottom: 32px;
       }
     }
   }
@@ -121,6 +138,18 @@ export default {
   @media only screen and (max-width: 1024px) {
     .technologies-and_tools {
       &__flex-group {
+        div {
+          max-width: 395px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 940px) {
+    .technologies-and_tools {
+      padding-bottom: 85px;
+
+      &__flex-group {
         flex-direction: column;
 
         div {
@@ -134,13 +163,15 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 520px) {
+  @media only screen and (max-width: 430px) {
     .technologies-and_tools {
-      padding-bottom: 75px;
+      padding-bottom: 55px;
+    }
+  }
 
-      &__main-title {
-        padding-bottom: 31px;
-      }
+  @media only screen and (max-width: 350px) {
+    .technologies-and_tools {
+      padding-bottom: 15px;
     }
   }
 </style>

@@ -240,6 +240,7 @@
 
 .sub-title {
   font-size: 50px;
+  letter-spacing: -2px;
 }
 
 .section-title {
@@ -249,6 +250,7 @@
 .paragraph {
   font-size: 18px;
   font-family: 'Hoves-Regular';
+  letter-spacing: -0.03em;
 }
 
 .title-icon {
@@ -262,6 +264,8 @@
 .icon-item {
   display: flex;
   align-items: center;
+  font-size: 18px;
+  letter-spacing: -0.03em;
 
   span {
     padding-left: 7px;
@@ -455,10 +459,6 @@ button {
     font-size: 80px;
   }
 
-  .sub-title  {
-    font-size: 44px;
-  }
-
   .section-title {
     font-size: 77px;
   }
@@ -475,10 +475,6 @@ button {
 @media only screen and (max-width: 1390px) {
   .title {
     font-size: 75px;
-  }
-
-  .sub-title  {
-    font-size: 40px;
   }
 
   .section-title {
@@ -499,10 +495,6 @@ button {
     font-size: 70px;
   }
 
-  .sub-title  {
-    font-size: 35px;
-  }
-
   .section-title {
     font-size: 67px;
   }
@@ -521,10 +513,6 @@ button {
     font-size: 65px;
   }
 
-  .sub-title  {
-    font-size: 30px;
-  }
-
   .section-title {
     font-size: 62px;
   }
@@ -540,7 +528,8 @@ button {
   }
 
   .sub-title  {
-    font-size: 50px;
+    font-size: 47px;
+    letter-spacing: -2px;
   }
 
   .section-title {
@@ -554,6 +543,11 @@ button {
   .button-default {
     height: 54px;
     font-size: 17px;
+  }
+
+  .paragraph,
+  .icon-item {
+    font-size: 16px;
   }
 }
 
@@ -573,7 +567,7 @@ button {
   }
 
   .sub-title  {
-    font-size: 40px;
+    font-size: 47px;
   }
 
   .section-title {
@@ -613,19 +607,16 @@ button {
     padding-top: 23px;
     padding-bottom: 33px;
   }
+
+  .main-title {
+    font-size: 64px;
+    letter-spacing: -0.03em;
+  }
 }
 
 @media only screen and (max-width: 640px) {
-  .main-title {
-    font-size: 80px;
-  }
-
   .title {
     font-size: 60px;
-  }
-
-  .sub-title  {
-    font-size: 35px;
   }
 
   .section-title {
@@ -633,17 +624,24 @@ button {
   }
 }
 
-@media only screen and (max-width: 610px) {
-  .main-title {
-    font-size: 71px;
+@media only screen and (max-width: 640px) {
+  .sub-title,
+  .paragraph,
+  .icon-item {
+    letter-spacing: -1px;
+  }
+
+  .sub-title  {
+    font-size: 41px;
+  }
+
+  .paragraph,
+  .icon-item {
+    font-size: 17px;
   }
 }
 
 @media only screen and (max-width: 520px) {
-  .main-title {
-    font-size: 51px;
-  }
-
   .title {
     font-size: 41px;
   }
@@ -652,20 +650,12 @@ button {
     font-size: 23px;
   }
 
-  .sub-title  {
-    font-size: 27px;
-  }
-
   .form-text {
     font-size: 24px;
   }
 
   .section-title {
     font-size: 36px;
-  }
-
-  .paragraph {
-    font-size: 17px;
   }
 
   .title-icon {
@@ -685,11 +675,15 @@ button {
   }
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 430px) {
   .main-title {
-    font-size: 40px;
+    font-size: 53px;
+    letter-spacing: -2px;
   }
+}
 
+
+@media only screen and (max-width: 370px) {
   .form-checkbox-label  {
     padding-left: 29px;
   }
@@ -698,6 +692,12 @@ button {
     &::after {
       padding-left: 0;
     }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .main-title {
+    font-size: 48px;
   }
 }
 

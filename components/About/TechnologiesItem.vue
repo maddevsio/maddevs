@@ -66,6 +66,47 @@ export default {
     padding-bottom: 13px;
   }
 
+  @media only screen and (max-width: 1440px) {
+    .technologies-project-management {
+      .paragraph {
+        padding-right: 65px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .technologies-project-management {
+      .paragraph {
+        padding-right: 5px;
+      }
+    }
+
+    .technologies-backend {
+      /deep/.icon-flex_group {
+        flex-direction: column;
+        flex-wrap: initial;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 940px) {
+    .technologies-item,
+    .technologies-backend {
+      /deep/.icon-flex_group {
+        flex-direction: row;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .technologies-backend {
+      /deep/.icon-flex_group {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
   @media only screen and (max-width: 520px) {
     .technologies-item {
       padding-bottom: 25px;
