@@ -92,7 +92,8 @@ export default {
 
 		&__header-logo {
       width: 35px;
-      height: 60px;
+			height: 60px;
+			margin-left: -62px;
     }
 
     &__content-wrap {
@@ -136,6 +137,34 @@ export default {
 
 		.footer-contacts {
 			padding-top: 41px;
+		}
+
+		&__button {
+			margin-right: -62px;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		.mobile-menu {
+			&__button {
+				margin-right: -50px;
+			}
+
+			&__header-logo {
+				margin-left: -50px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 440px) {
+		.mobile-menu {
+			&__button {
+				margin-right: 0;
+			}
+
+			&__header-logo {
+				margin-left: 0;
+			}
 		}
 	}
 
