@@ -193,11 +193,16 @@ export default {
     }
 
     .hover-image,
-    .default-image,
-    .green-image {
+    .default-image {
       position: absolute;
       top: 64%;
       left: 60%;
+    }
+
+    .green-image {
+      position: absolute;
+      top: 64%;
+      left: 64%;
     }
 
     .hover-image {
@@ -205,28 +210,41 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1700px) {
+  @media only screen and (max-width: 1880px) {
     .services {
       .hover-image,
       .default-image {
-        left: 62%;
+        left: 65%;
       }
 
       .green-image {
-        left: 68%;
+        left: 70.4%;
       }
     }
   }
 
-  @media only screen and (max-width: 1660px) {
+  @media only screen and (max-width: 1760px) {
     .services {
       .hover-image,
       .default-image {
-        left: 64%;
+        left: 68%;
       }
 
       .green-image {
+        left: 73.9%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1700px) {
+    .services {
+      .hover-image,
+      .default-image {
         left: 70%;
+      }
+
+      .green-image {
+        left: 76%;
       }
     }
   }
@@ -248,11 +266,11 @@ export default {
     .services {
       .hover-image,
       .default-image {
-        left: 65%;
+        left: 68%;
       }
 
       .green-image {
-        left: 71.3%;
+        left: 74.3%;
       }
     }
   }
@@ -291,6 +309,32 @@ export default {
         left: 75.5%;
       }
     }
+
+    .index {
+      .icon-item {
+        img {
+          width: 325px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1480px) {
+    .banner {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
+        font-size: 162px;
+      }
+    }
+
+    .index {
+      .icon-item {
+        img {
+          width: 300px;
+        }
+      }
+    }
   }
 
   @media only screen and (max-width: 1440px) {
@@ -320,8 +364,8 @@ export default {
         left: 76.3%;
       }
 
-      .navigation-list {
-        .navigation-item {
+      /deep/.navigation-list {
+        /deep/.navigation-item {
           padding-right: 54px;
         }
       }
@@ -332,11 +376,11 @@ export default {
     .services {
       .hover-image,
       .default-image {
-        left: 74%;
+        left: 70%;
       }
 
       .green-image {
-        left: 79.3%;
+        left: 75.3%;
       }
     }
   }
@@ -345,7 +389,7 @@ export default {
     .services {
       .hover-image,
       .default-image {
-        left: 75%;
+        left: 71%;
       }
 
       .green-image {
@@ -370,7 +414,7 @@ export default {
     .index {
       .icon-item {
         img {
-          width: 345px;
+          width: 325px;
         }
       }
     }
@@ -379,14 +423,14 @@ export default {
       .hover-image,
       .default-image {
         width: 231px;
-        top: 59%;
-        left: 72%;
+        top: 54%;
+        left: 69%;
       }
 
       .green-image {
         width: 170px;
-        top: 59%;
-        left: 76.6%;
+        top: 54%;
+        left: 73.5%;
       }
     }
   }
@@ -462,11 +506,11 @@ export default {
     .services {
       .hover-image,
       .default-image {
-        left: 65%;
+        left: 70%;
       }
 
       .green-image {
-        left: 70.2%;
+        left: 75.2%;
       }
     }
   }
@@ -475,11 +519,11 @@ export default {
     .services {
       .hover-image,
       .default-image {
-        left: 69%;
+        left: 72%;
       }
 
       .green-image {
-        left: 74.5%;
+        left: 77.5%;
       }
     }
   }
@@ -503,13 +547,13 @@ export default {
       .hover-image,
       .default-image {
         width: 188px;
-        top: 49%;
+        top: 44%;
         left: 73%;
       }
 
       .green-image {
         width: 140px;
-        top: 49%;
+        top: 44%;
         left: 77.7%;
       }
     }
@@ -534,14 +578,22 @@ export default {
       .hover-image,
       .default-image {
         width: 188px;
-        top: 54%;
+        top: 59%;
         left: 57%;
       }
 
       .green-image {
         width: 140px;
-        top: 54%;
+        top: 59%;
         left: 61.9%;
+      }
+    }
+
+    .services {
+      /deep/.navigation-list {
+        /deep/.navigation-item {
+          padding-right: 0;
+        }
       }
     }
   }
@@ -632,11 +684,13 @@ export default {
     .services {
       .hover-image,
       .default-image {
-        left: 70%;
+        top: 46%;
+        left: 69%;
       }
 
       .green-image {
-        left: 76%;
+        top: 46%;
+        left: 75%;
       }
 
       .media-item {
@@ -843,13 +897,13 @@ export default {
     .services {
       .hover-image,
       .default-image {
-        top: 53%;
+        top: 40%;
         left: 59%;
       }
 
       .green-image {
-        top: 53%;
-        left: 69%;
+        top: 40%;
+        left: 68%;
       }
     }
   }
