@@ -391,13 +391,23 @@ export default {
     }
   }
 
-    @media only screen and (max-width: 1280px) {
+  @media only screen and (max-width: 1280px) {
     .banner {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first  {
-        font-size: 131px;
-        letter-spacing: -7.05145px;
+        font-size: 110px;
+        letter-spacing: -8px;
+      }
+    }
+
+    .index {
+      .icon-item {
+        margin-bottom: -20px;
+
+        img {
+          width: 265px;
+        }
       }
     }
   }
@@ -419,6 +429,31 @@ export default {
 
       .green-image {
         left: 67.8%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1180px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 65%;
+      }
+
+      .green-image {
+        left: 70.2%;
+      }
+    }
+
+    .index {
+      .icon-item {
+        img {
+          width: 255px;
+        }
+      }
+
+      .main-title-wrapper {
+        padding-right: 15px;
       }
     }
   }
@@ -457,8 +492,10 @@ export default {
     }
 
     .index {
-      .main-title-wrapper {
-        padding-right: 15px;
+      .icon-item {
+        img {
+          width: 230px;
+        }
       }
     }
 
@@ -480,13 +517,6 @@ export default {
 
   @media only screen and (max-width: 970px) {
     .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 110px;
-        letter-spacing: -8px;
-      }
-
       .text-content_wrapper {
         padding-bottom: 105px;
       }
@@ -512,6 +542,14 @@ export default {
         width: 140px;
         top: 54%;
         left: 61.9%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 935px) {
+    .index {
+      .icon-item {
+        display: none;
       }
     }
   }
@@ -621,6 +659,16 @@ export default {
         }
       }
     }
+
+    .index {
+      .icon-item {
+        display: block;
+
+        img {
+          width: 190px;
+        }
+      }
+    }
   }
 
   @media only screen and (max-width: 730px) {
@@ -698,13 +746,10 @@ export default {
         }
       }
     }
-  }
 
-  @media only screen and (max-width: 565px) {
-    .banner {
+    .index {
       .phone-screen-logo {
-        width: 90px;
-        margin-bottom: -10px;
+        width: 75px;
       }
     }
   }
