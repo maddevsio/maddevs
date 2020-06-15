@@ -88,8 +88,8 @@ export default {
             email: this.email,
             phoneNumber: this.phoneNumber,
             projectDescription: this.projectDescription,
-            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
           }
         };
         this.$nuxt.$emit(this.modalName, form);

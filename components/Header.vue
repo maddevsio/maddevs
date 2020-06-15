@@ -202,18 +202,18 @@ export default {
           color: transparent;
         }
 
-        &:focus {
-          color: $text-color--red;
-
-          &::after {
-            color: $text-color--red;
-          }
-        }
-
         &:last-child {
           &::after {
             content: '';
           }
+        }
+      }
+
+      .nuxt-link-exact-active {
+        color: $text-color--red;
+
+        &::after {
+          color: $text-color--red;
         }
       }
     }

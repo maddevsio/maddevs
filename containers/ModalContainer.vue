@@ -1,7 +1,7 @@
 <template>
-  <modal height="auto" :name="$props.name" :clickToClose="false" @closed="emailSended = false">
+  <modal height="auto" :name="$props.name" :clickToClose="false" @closed="isEmailSent = false">
     <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide($props.name)">
-    <perfect-scrollbar class="modal_scrollbar" v-if="emailSended === false" :options="scrollbarOptions">
+    <perfect-scrollbar class="modal_scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
       <slot />
     </perfect-scrollbar>
     <SuccessMessage v-else />
@@ -23,7 +23,7 @@ export default {
     }
   },
   data: () => ({
-    emailSended: false,
+    isEmailSent: false,
     scrollbarOptions: {
       wheelPropagation: false
     }
@@ -33,9 +33,9 @@ export default {
       this.$nuxt.$on(this.$props.name, form => {
         this.$store.dispatch('sendEmail', form).then(res => {
           if (res.status === 200) {
-            this.emailSended = true;
+            this.isEmailSent = true;
           } else {
-            this.emailSended = false;
+            this.isEmailSent = false;
           }
         });
       });
