@@ -37,8 +37,8 @@
             <h4 class="careers__form-description form-text radio-buttons">
               You can also consider me for your other
             </h4>
-            <ul class="careers__position-list">
-              <ValidationProvider rules="required" v-slot="{ classes, errors }">
+            <ValidationProvider rules="required" v-slot="{ classes, errors }">
+              <ul class="careers__position-list">
                 <RadioButton
                   v-for="(radio, i) in radioData"
                   :key="i"
@@ -47,8 +47,8 @@
                   @change="changePositionValue"
                 />
                 <span class="modal-error-text error-text">{{ errors[0] }}</span>
-              </ValidationProvider>
-            </ul>
+              </ul>
+            </ValidationProvider>
             <h4 class="careers__form-description form-text email-title">
               Please reply to
               <ValidationProvider
@@ -282,11 +282,31 @@ export default {
   &__form-name-label,
   &__form-description {
     position: relative;
+  }
+}
 
-    .modal-error-text {
-      position: absolute;
-      left: 0;
-      bottom: -5px;
+@media only screen and (min-width: 1600px) {
+  .careers {
+    &__form-name-label,
+    &__form-description {
+      position: relative;
+
+      .modal-error-text {
+        margin-top: -11px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .careers {
+    &__form-name-label,
+    &__form-description {
+      position: relative;
+
+      .modal-error-text {
+        margin-top: -16px;
+      }
     }
   }
 }
@@ -328,6 +348,16 @@ export default {
     &__form-position-input,
     &__form-linkedin-input {
       height: 35px;
+    }
+
+    &__form-name-label,
+    &__form-description {
+      .modal-error-text {
+        position: relative;
+        left: 0;
+        bottom: 4px;
+        margin-top: 0;
+      }
     }
   }
 }

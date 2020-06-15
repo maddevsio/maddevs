@@ -120,6 +120,10 @@ export default {
       &__content-wrap {
         height: 320px;
       }
+
+      &__sub-title {
+        font-size: 50px;
+      }
     }
   }
 
@@ -127,6 +131,10 @@ export default {
     .single-project {
       &__content-wrap {
         height: 302px;
+      }
+
+      &__sub-title {
+        font-size: 50px;
       }
     }
   }
@@ -150,7 +158,7 @@ export default {
       }
 
       &__content-wrap {
-        height: 165px;
+        height: 225px;
         margin: 50px 34px 0;
       }
     }
@@ -161,6 +169,11 @@ export default {
       &__content-wrap {
         margin: 68px 34px 0;
         height: 175px;
+      }
+
+      &__sub-title {
+        line-height: 40px;
+        letter-spacing: -1px;
       }
     }
   }
@@ -179,6 +192,8 @@ export default {
 
   &__sub-title {
     margin-top: 22.5px;
+    line-height: 110%;
+    letter-spacing: -2px;
   }
 
   &__paragraph {
@@ -282,13 +297,17 @@ export default {
   @media screen and (max-width: 920px) {
     .single-project {
       min-width: inherit;
+
+      &__sub-title {
+        font-size: 44px;
+      }
     }
   }
 
   @media screen and (max-width: 870px) {
     .single-project {
       &__sub-title {
-        font-size: 45px;
+        font-size: 40px;
       }
     }
   }
@@ -296,7 +315,7 @@ export default {
   @media screen and (max-width: 820px) {
     .single-project {
       &__sub-title {
-        font-size: 43px;
+        font-size: 39px;
       }
     }
   }
@@ -305,7 +324,7 @@ export default {
     .single-project {
       &__content-wrap {
         margin: 68px 23px 0;
-        height: 175px;
+        height: 145px;
       }
     }
   }
@@ -322,6 +341,10 @@ export default {
     .single-project {
       &__content-wrap {
         height: 230px;
+      }
+
+      &__sub-title {
+        font-size: 47px;
       }
 
       &__background {
@@ -357,12 +380,6 @@ export default {
         height: 40px;
       }
 
-      &__sub-title {
-        font-weight: bold;
-        font-size: 41px;
-        line-height: 40px;
-      }
-
       &__content-wrap {
         height: 100px;
         word-wrap: break-word;
@@ -382,6 +399,10 @@ export default {
     .single-project {
       &__content-wrap {
         margin: 50px 21px 0;
+      }
+
+      &__sub-title {
+        font-size: 41px;
       }
     }
   }
@@ -404,7 +425,7 @@ export default {
   @media only screen and (max-width: 340px) {
     .single-project {
       &__content-wrap {
-        margin: 50px 18px 0;
+        margin: 50px 17px 0;
       }
     }
   }
