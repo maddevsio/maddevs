@@ -204,6 +204,7 @@
   font-family: 'Hoves-Bold';
   font-size: 128px;
   letter-spacing: -5px;
+  line-height: 100%;
 }
 
 .flex-wrapper {
@@ -673,12 +674,17 @@ button {
     height: 54px;
     font-size: 17px;
   }
+
+  .main-title {
+    font-size: 57px;
+  }
 }
 
 @media only screen and (max-width: 430px) {
   .main-title {
     font-size: 53px;
     letter-spacing: -2px;
+    line-height: 99%;
   }
 }
 
