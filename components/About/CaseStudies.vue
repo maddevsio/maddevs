@@ -338,7 +338,7 @@ export default {
     flex-wrap: wrap;
 
     &-flame-background {
-      top: -428px;
+      top: -448px;
       width: 448px;
       right: 142px;
     }
@@ -429,7 +429,7 @@ export default {
 
   .projects {
     &-flame-background {
-      top: -407px;
+      top: -428px;
       width: 428px;
     }
   }
@@ -444,7 +444,7 @@ export default {
 
   .projects {
     &-flame-background {
-      top: -391px;
+      top: -410px;
       width: 400px;
     }
   }
@@ -459,7 +459,7 @@ export default {
 
   .projects {
     &-flame-background {
-      top: -302px;
+      top: -322px;
       width: 330px;
       right: 100px;
     }
@@ -475,7 +475,7 @@ export default {
 
   .projects {
     &-flame-background {
-      top: -240px;
+      top: -260px;
       width: 282px;
       right: 100px;
     }
@@ -491,7 +491,7 @@ export default {
 
   .projects {
     &-flame-background {
-      top: -213px;
+      top: -233px;
       width: 262px;
       right: 100px;
     }
@@ -530,7 +530,7 @@ export default {
 
   .projects {
     &-flame-background {
-      top: -180px;
+      top: -200px;
       width: 230px;
       right: 100px;
     }
@@ -546,7 +546,7 @@ export default {
 
   .projects {
     &-flame-background {
-      top: -180px;
+      top: -193px;
       width: 220px;
       right: 100px;
     }
@@ -600,7 +600,7 @@ export default {
 
   .projects {
     &-flame-background {
-      top: -93px;
+      top: -121px;
       width: 220px;
     }
   }
@@ -623,7 +623,7 @@ export default {
       display: none;
 
       &-flame-background {
-        top: -107px;
+        top: -130px;
         width: 208px;
         right: 70px;
       }
@@ -726,7 +726,7 @@ export default {
   .case-studies--projects {
     .projects-flame-background {
       right: 15px;
-      top: -122px;
+      top: -145px;
     }
   }
 
@@ -780,7 +780,7 @@ export default {
 @media only screen and (max-width: 370px) {
   .case-studies--projects {
     .projects-flame-background {
-      top: -117px;
+      top: -125px;
       height: 300px;
       right: 15px;
     }
@@ -805,7 +805,7 @@ export default {
   .case-studies--projects {
     .projects-flame-background {
       right: 0;
-      top: -70px;
+      top: -90px;
     }
   }
 
