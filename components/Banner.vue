@@ -79,6 +79,10 @@ export default {
   methods: {
     switchImage() {
       this.showGreenBannerImage = !this.showGreenBannerImage;
+
+      if (this.showGreenBannerImage) {
+        this.$modal.show('order-project-from-us-modal');
+      }
     }
   }
 };
@@ -196,7 +200,7 @@ export default {
     .default-image {
       position: absolute;
       top: 64%;
-      left: 60%;
+      left: 60.1%;
     }
 
     .green-image {
@@ -244,7 +248,7 @@ export default {
       }
 
       .green-image {
-        left: 76%;
+        left: 76.3%;
       }
     }
   }
@@ -430,7 +434,7 @@ export default {
       .green-image {
         width: 170px;
         top: 54%;
-        left: 73.5%;
+        left: 73.6%;
       }
     }
   }
