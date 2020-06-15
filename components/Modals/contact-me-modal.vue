@@ -53,10 +53,10 @@ export default {
   },
   data: () => ({
     modalName: 'contact-me-modal',
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    company: '',
+    fullName: null,
+    email: null,
+    phoneNumber: null,
+    company: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
     inputId: 'contact-me'
@@ -73,12 +73,12 @@ export default {
         const form = {
           templateId: 303792, // Required
           variables: {
-            fullName: this.fullName,
-            company: this.company,
-            email: this.email,
-            phoneNumber: this.phoneNumber,
-            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
+            fullName: this.fullName || '',
+            company: this.company || '',
+            email: this.email || '',
+            phoneNumber: this.phoneNumber || '',
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
           }
         };
         this.$nuxt.$emit(this.modalName, form);

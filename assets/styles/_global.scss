@@ -88,9 +88,21 @@
 }
 
 // Media
+@media only screen and (max-width: 1400px) {
+  .container {
+    padding: 0 107px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .container {
-    padding: 0 54px;
+    padding: 0 70px;
   }
 
   .sec-title {
