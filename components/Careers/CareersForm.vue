@@ -290,6 +290,7 @@ export default {
     &__form-name-label,
     &__form-description {
       position: relative;
+
       .modal-error-text {
         margin-top: -11px;
       }
@@ -302,6 +303,7 @@ export default {
     &__form-name-label,
     &__form-description {
       position: relative;
+
       .modal-error-text {
         margin-top: -16px;
       }

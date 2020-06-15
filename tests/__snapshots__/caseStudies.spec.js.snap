@@ -79,13 +79,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               <span
                 class="contribution-widget__content-mobile contribution-widget__content-mobile_nambafood"
               >
-                contribution: backend, infrastructure
+                contribution: Backend, Infrastructure
               </span>
                
               <span
                 class="contribution-widget__content contribution-widget__content_nambafood"
               >
-                contribution: backend, infrastructure, frontend
+                contribution: Backend, Infrastructure, Frontend
               </span>
             </div>
           </div>
@@ -148,13 +148,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               <span
                 class="contribution-widget__content-mobile contribution-widget__content-mobile_teacherly"
               >
-                contribution: backend, infrastructure
+                contribution: Backend, Infrastructure
               </span>
                
               <span
                 class="contribution-widget__content contribution-widget__content_teacherly"
               >
-                contribution: backend, infrastructure, frontend
+                contribution: Backend, Infrastructure, Frontend
               </span>
             </div>
           </div>
@@ -217,13 +217,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               <span
                 class="contribution-widget__content-mobile contribution-widget__content-mobile_guardrails contribution-widget__content-mobile_nambafood"
               >
-                contribution: backend, infrastructure
+                contribution: Backend, Infrastructure
               </span>
                
               <span
                 class="contribution-widget__content contribution-widget__content_guardrails contribution-widget__content_nambafood"
               >
-                contribution: backend, infrastructure, frontend
+                contribution: Backend, Infrastructure, Frontend
               </span>
             </div>
           </div>
@@ -286,13 +286,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               <span
                 class="contribution-widget__content-mobile contribution-widget__content-mobile_godee"
               >
-                contribution: backend, infrastructure
+                contribution: Backend, Infrastructure
               </span>
                
               <span
                 class="contribution-widget__content contribution-widget__content_godee"
               >
-                contribution: backend, infrastructure, frontend
+                contribution: Backend, Infrastructure, Frontend
               </span>
             </div>
           </div>
@@ -371,13 +371,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   <span
                     class="contribution-widget__content-mobile contribution-widget__content-mobile_nambafood"
                   >
-                    contribution: backend, infrastructure
+                    contribution: Backend, Infrastructure
                   </span>
                    
                   <span
                     class="contribution-widget__content contribution-widget__content_nambafood"
                   >
-                    contribution: backend, infrastructure, frontend
+                    contribution: Backend, Infrastructure, Frontend
                   </span>
                 </div>
               </div>
@@ -444,13 +444,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   <span
                     class="contribution-widget__content-mobile contribution-widget__content-mobile_teacherly"
                   >
-                    contribution: backend, infrastructure
+                    contribution: Backend, Infrastructure
                   </span>
                    
                   <span
                     class="contribution-widget__content contribution-widget__content_teacherly"
                   >
-                    contribution: backend, infrastructure, frontend
+                    contribution: Backend, Infrastructure, Frontend
                   </span>
                 </div>
               </div>
@@ -517,13 +517,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   <span
                     class="contribution-widget__content-mobile contribution-widget__content-mobile_guardrails contribution-widget__content-mobile_nambafood"
                   >
-                    contribution: backend, infrastructure
+                    contribution: Backend, Infrastructure
                   </span>
                    
                   <span
                     class="contribution-widget__content contribution-widget__content_guardrails contribution-widget__content_nambafood"
                   >
-                    contribution: backend, infrastructure, frontend
+                    contribution: Backend, Infrastructure, Frontend
                   </span>
                 </div>
               </div>
@@ -590,13 +590,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   <span
                     class="contribution-widget__content-mobile contribution-widget__content-mobile_godee"
                   >
-                    contribution: backend, infrastructure
+                    contribution: Backend, Infrastructure
                   </span>
                    
                   <span
                     class="contribution-widget__content contribution-widget__content_godee"
                   >
-                    contribution: backend, infrastructure, frontend
+                    contribution: Backend, Infrastructure, Frontend
                   </span>
                 </div>
               </div>
@@ -678,13 +678,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   <span
                     class="contribution-widget__content-mobile contribution-widget__content-mobile_nambafood"
                   >
-                    contribution: backend, infrastructure
+                    contribution: Backend, Infrastructure
                   </span>
                    
                   <span
                     class="contribution-widget__content contribution-widget__content_nambafood"
                   >
-                    contribution: backend, infrastructure, frontend
+                    contribution: Backend, Infrastructure, Frontend
                   </span>
                 </div>
               </div>
@@ -751,13 +751,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   <span
                     class="contribution-widget__content-mobile contribution-widget__content-mobile_teacherly"
                   >
-                    contribution: backend, infrastructure
+                    contribution: Backend, Infrastructure
                   </span>
                    
                   <span
                     class="contribution-widget__content contribution-widget__content_teacherly"
                   >
-                    contribution: backend, infrastructure, frontend
+                    contribution: Backend, Infrastructure, Frontend
                   </span>
                 </div>
               </div>
@@ -824,13 +824,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   <span
                     class="contribution-widget__content-mobile contribution-widget__content-mobile_guardrails contribution-widget__content-mobile_nambafood"
                   >
-                    contribution: backend, infrastructure
+                    contribution: Backend, Infrastructure
                   </span>
                    
                   <span
                     class="contribution-widget__content contribution-widget__content_guardrails contribution-widget__content_nambafood"
                   >
-                    contribution: backend, infrastructure, frontend
+                    contribution: Backend, Infrastructure, Frontend
                   </span>
                 </div>
               </div>
@@ -897,13 +897,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   <span
                     class="contribution-widget__content-mobile contribution-widget__content-mobile_godee"
                   >
-                    contribution: backend, infrastructure
+                    contribution: Backend, Infrastructure
                   </span>
                    
                   <span
                     class="contribution-widget__content contribution-widget__content_godee"
                   >
-                    contribution: backend, infrastructure, frontend
+                    contribution: Backend, Infrastructure, Frontend
                   </span>
                 </div>
               </div>
@@ -985,13 +985,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   <span
                     class="contribution-widget__content-mobile contribution-widget__content-mobile_nambafood"
                   >
-                    contribution: backend, infrastructure
+                    contribution: Backend, Infrastructure
                   </span>
                    
                   <span
                     class="contribution-widget__content contribution-widget__content_nambafood"
                   >
-                    contribution: backend, infrastructure, frontend
+                    contribution: Backend, Infrastructure, Frontend
                   </span>
                 </div>
               </div>
@@ -1058,13 +1058,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   <span
                     class="contribution-widget__content-mobile contribution-widget__content-mobile_teacherly"
                   >
-                    contribution: backend, infrastructure
+                    contribution: Backend, Infrastructure
                   </span>
                    
                   <span
                     class="contribution-widget__content contribution-widget__content_teacherly"
                   >
-                    contribution: backend, infrastructure, frontend
+                    contribution: Backend, Infrastructure, Frontend
                   </span>
                 </div>
               </div>
@@ -1131,13 +1131,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   <span
                     class="contribution-widget__content-mobile contribution-widget__content-mobile_guardrails contribution-widget__content-mobile_nambafood"
                   >
-                    contribution: backend, infrastructure
+                    contribution: Backend, Infrastructure
                   </span>
                    
                   <span
                     class="contribution-widget__content contribution-widget__content_guardrails contribution-widget__content_nambafood"
                   >
-                    contribution: backend, infrastructure, frontend
+                    contribution: Backend, Infrastructure, Frontend
                   </span>
                 </div>
               </div>
@@ -1204,13 +1204,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   <span
                     class="contribution-widget__content-mobile contribution-widget__content-mobile_godee"
                   >
-                    contribution: backend, infrastructure
+                    contribution: Backend, Infrastructure
                   </span>
                    
                   <span
                     class="contribution-widget__content contribution-widget__content_godee"
                   >
-                    contribution: backend, infrastructure, frontend
+                    contribution: Backend, Infrastructure, Frontend
                   </span>
                 </div>
               </div>
