@@ -37,8 +37,8 @@
             <h4 class="careers__form-description form-text radio-buttons">
               You can also consider me for your other
             </h4>
-            <ul class="careers__position-list">
-              <ValidationProvider rules="required" v-slot="{ classes, errors }">
+            <ValidationProvider rules="required" v-slot="{ classes, errors }">
+              <ul class="careers__position-list">
                 <RadioButton
                   v-for="(radio, i) in radioData"
                   :key="i"
@@ -47,8 +47,8 @@
                   @change="changePositionValue"
                 />
                 <span class="modal-error-text error-text">{{ errors[0] }}</span>
-              </ValidationProvider>
-            </ul>
+              </ul>
+            </ValidationProvider>
             <h4 class="careers__form-description form-text email-title">
               Please reply to
               <ValidationProvider

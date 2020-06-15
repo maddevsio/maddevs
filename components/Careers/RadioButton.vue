@@ -107,7 +107,7 @@ export default {
   &__position-label {
     position: relative;
     color: $text-color--grey;
-    padding: 0 0 0 29px;
+    padding: 0 0 0 32px;
     z-index: 9;
     transition: all 0.15s linear;
     cursor: pointer;
