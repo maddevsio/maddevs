@@ -202,7 +202,7 @@ export default {
     .green-image {
       position: absolute;
       top: 64%;
-      left: 64%;
+      left: 65.4%;
     }
 
     .hover-image {
@@ -218,7 +218,7 @@ export default {
       }
 
       .green-image {
-        left: 70.4%;
+        left: 70.6%;
       }
     }
   }
