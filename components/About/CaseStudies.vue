@@ -31,17 +31,26 @@
       </div>
     </div>
     <div class="projects-mobile-slider">
-      <swiper class="swiper swiper-medium" :options="swiperOption.sliderWidthMedium">
+      <swiper
+        class="swiper swiper-medium"
+        :options="swiperOption.sliderWidthMedium"
+      >
         <swiper-slide v-for="(project, i) in projects" :key="i">
           <SingleProject :project="project" />
         </swiper-slide>
       </swiper>
-      <swiper class="swiper swiper-small" :options="swiperOption.sliderWidthSmall">
+      <swiper
+        class="swiper swiper-small"
+        :options="swiperOption.sliderWidthSmall"
+      >
         <swiper-slide v-for="(project, i) in projects" :key="i">
           <SingleProject :project="project" />
         </swiper-slide>
       </swiper>
-      <swiper class="swiper swiper-extra-small" :options="swiperOption.sliderWidthExtraSmall">
+      <swiper
+        class="swiper swiper-extra-small"
+        :options="swiperOption.sliderWidthExtraSmall"
+      >
         <swiper-slide v-for="(project, i) in projects" :key="i">
           <SingleProject :project="project" />
         </swiper-slide>
@@ -271,6 +280,12 @@ export default {
     display: flex;
     flex-wrap: wrap;
 
+    &-flame-background {
+      top: -434px;
+      width: 448px;
+      right: 142px;
+    }
+
     .single-project {
       &:nth-child(2) {
         /deep/ .single-project__background {
@@ -312,9 +327,21 @@ export default {
 }
 
 @media only screen and (max-width: 1600px) {
+  .case-studies {
+    &__main-title {
+      font-size: 128px;
+    }
+  }
+
   .projects {
     display: flex;
     flex-wrap: wrap;
+
+    &-flame-background {
+      top: -428px;
+      width: 448px;
+      right: 142px;
+    }
 
     .single-project {
       &:nth-child(2) {
@@ -357,7 +384,17 @@ export default {
 }
 
 @media only screen and (max-width: 1440px) {
+  .case-studies {
+    &__main-title {
+      font-size: 125px;
+    }
+  }
+
   .projects {
+    &-flame-background {
+      right: 107px;
+    }
+
     .single-project {
       &:nth-child(2) {
         /deep/ .single-project__background {
@@ -383,17 +420,135 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1330px) {
+  .case-studies {
+    &__main-title {
+      font-size: 120px;
+    }
+  }
+
   .projects {
+    &-flame-background {
+      top: -407px;
+      width: 428px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .case-studies {
+    &__main-title {
+      font-size: 100px;
+    }
+  }
+
+  .projects {
+    &-flame-background {
+      top: -391px;
+      width: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .case-studies {
+    &__main-title {
+      font-size: 93px;
+    }
+  }
+
+  .projects {
+    &-flame-background {
+      top: -302px;
+      width: 330px;
+      right: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1138px) {
+  .case-studies {
+    &__main-title {
+      font-size: 91px;
+    }
+  }
+
+  .projects {
+    &-flame-background {
+      top: -240px;
+      width: 282px;
+      right: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .case-studies {
+    &__main-title {
+      font-size: 90px;
+    }
+  }
+
+  .projects {
+    &-flame-background {
+      top: -213px;
+      width: 262px;
+      right: 100px;
+    }
+
     .single-project {
       &:nth-child(2) {
         /deep/ .single-project__background {
-          margin: 0 32px 0 18px;
+          margin: 0 25px 0 14px;
           width: auto;
-          position: relative;
-          bottom: -17px;
         }
       }
+
+      &:nth-child(3) {
+        /deep/ .single-project__background {
+          margin: 0 29px;
+          width: auto;
+        }
+      }
+
+      &:last-child {
+        /deep/ .single-project__background {
+          margin: 0 38px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .case-studies {
+    &__main-title {
+      font-size: 82px;
+    }
+  }
+
+  .projects {
+    &-flame-background {
+      top: -180px;
+      width: 230px;
+      right: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 905px) {
+  .case-studies {
+    &__main-title {
+      font-size: 72px;
+    }
+  }
+
+  .projects {
+    &-flame-background {
+      top: -180px;
+      width: 220px;
+      right: 100px;
     }
   }
 }
@@ -434,55 +589,19 @@ export default {
   }
 }
 
-@media only screen and (min-width: 1230px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      top: -481px;
-      height: 800px;
-      right: 60px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1230px) {
+@media only screen and (max-width: 830px) {
   .case-studies {
     &--projects {
       &__main-title {
         width: 50%;
       }
-
-      .projects-flame-background {
-        top: -364px;
-        height: 800px;
-        right: 60px;
-      }
     }
   }
-}
 
-@media only screen and (max-width: 1024px) {
   .projects {
-    .single-project {
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          margin: 0 25px 0 14px;
-          width: auto;
-        }
-      }
-
-      &:nth-child(3) {
-        /deep/ .single-project__background {
-          margin: 0 29px;
-          width: auto;
-        }
-      }
-
-      &:last-child {
-        /deep/ .single-project__background {
-          margin: 0 38px;
-          width: auto;
-        }
-      }
+    &-flame-background {
+      top: -93px;
+      width: 220px;
     }
   }
 }
@@ -493,24 +612,21 @@ export default {
   }
 }
 
-@media only screen and (max-width: 845px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      top: -233px;
-      height: 600px;
-      right: 60px;
-    }
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .case-studies {
     &__main-title {
       padding-bottom: 31px;
+      font-size: 64px;
     }
 
     .projects {
       display: none;
+
+      &-flame-background {
+        top: -107px;
+        width: 208px;
+        right: 70px;
+      }
     }
 
     .projects-mobile-slider {
@@ -552,41 +668,23 @@ export default {
   }
 }
 
-@media only screen and (max-width: 740px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      top: -77px;
-      height: 400px;
-      right: 15px;
-    }
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      top: -97px;
-      height: 400px;
-    }
-  }
-}
-
-@media only screen and (max-width: 610px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      top: -132px;
-      height: 400px;
-    }
-  }
-}
-
 @media only screen and (max-width: 576px) {
+  .projects {
+    &-flame-background {
+      right: 45px;
+    }
+  }
+
   .case-studies {
     /deep/ .single-project__background {
       &:nth-child(2) {
         position: relative;
         bottom: -10px;
       }
+    }
+
+    &__main-title {
+      font-size: 64px;
     }
 
     .projects-mobile-slider {
@@ -610,21 +708,31 @@ export default {
       padding-bottom: 31px;
     }
   }
-
-  .case-studies--projects {
-    .projects-flame-background {
-      top: -180px;
-      height: 400px;
-    }
-  }
 }
 
 @media only screen and (max-width: 465px) {
   .case-studies--projects {
     .projects-flame-background {
-      top: -97px;
-      height: 300px;
       right: 15px;
+    }
+  }
+
+  &__main-title {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 427px) {
+  .case-studies--projects {
+    .projects-flame-background {
+      right: 15px;
+      top: -122px;
+    }
+  }
+
+  .case-studies {
+    &__main-title {
+      font-size: 56px;
     }
   }
 }
@@ -640,6 +748,10 @@ export default {
       .swiper-small {
         display: none;
       }
+    }
+
+    &__main-title {
+      font-size: 53px;
     }
 
     .swiper-slide {
@@ -675,12 +787,31 @@ export default {
   }
 }
 
-@media only screen and (max-width: 335px) {
+@media only screen and (max-width: 366px) {
   .case-studies--projects {
     .projects-flame-background {
-      top: -79px;
-      height: 254px;
-      right: 15px;
+      right: 2px;
+    }
+  }
+
+  .case-studies {
+    &__main-title {
+      font-size: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .case-studies--projects {
+    .projects-flame-background {
+      right: 0;
+      top: -70px;
+    }
+  }
+
+  .case-studies {
+    &__main-title {
+      font-size: 48px;
     }
   }
 }
