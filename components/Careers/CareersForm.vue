@@ -275,11 +275,29 @@ export default {
   &__form-name-label,
   &__form-description {
     position: relative;
+  }
+}
 
-    .modal-error-text {
-      position: absolute;
-      left: 0;
-      bottom: -5px;
+@media only screen and (min-width: 1600px) {
+  .careers {
+    &__form-name-label,
+    &__form-description {
+      position: relative;
+      .modal-error-text {
+        margin-top: -11px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .careers {
+    &__form-name-label,
+    &__form-description {
+      position: relative;
+      .modal-error-text {
+        margin-top: -16px;
+      }
     }
   }
 }
@@ -321,6 +339,16 @@ export default {
     &__form-position-input,
     &__form-linkedin-input {
       height: 35px;
+    }
+
+    &__form-name-label,
+    &__form-description {
+      .modal-error-text {
+        position: relative;
+        left: 0;
+        bottom: 4px;
+        margin-top: 0;
+      }
     }
   }
 }
