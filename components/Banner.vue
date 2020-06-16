@@ -69,6 +69,10 @@ export default {
     if ($nuxt.$route.name) {
       this.currentPageName = $nuxt.$route.name;
     }
+    window.addEventListener('click', this.setInitialStateForImage);
+  },
+  destroyed() {
+    window.removeEventListener('click', this.setInitialStateForImage);
   },
   data() {
     return {
@@ -79,6 +83,12 @@ export default {
   methods: {
     switchImage() {
       this.showGreenBannerImage = !this.showGreenBannerImage;
+      this.$modal.show('order-project-from-us-modal');
+    },
+    setInitialStateForImage() {
+      if (event.target.className === 'close-modal') {
+        this.showGreenBannerImage = false;
+      }
     }
   }
 };
@@ -193,11 +203,16 @@ export default {
     }
 
     .hover-image,
-    .default-image,
+    .default-image {
+      position: absolute;
+      top: 64%;
+      left: 60.1%;
+    }
+
     .green-image {
       position: absolute;
       top: 64%;
-      left: 60%;
+      left: 65.4%;
     }
 
     .hover-image {
@@ -205,28 +220,41 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1700px) {
+  @media only screen and (max-width: 1880px) {
     .services {
       .hover-image,
       .default-image {
-        left: 62%;
+        left: 65%;
       }
 
       .green-image {
-        left: 68%;
+        left: 70.6%;
       }
     }
   }
 
-  @media only screen and (max-width: 1660px) {
+  @media only screen and (max-width: 1760px) {
     .services {
       .hover-image,
       .default-image {
-        left: 64%;
+        left: 68%;
       }
 
       .green-image {
+        left: 73.9%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1700px) {
+    .services {
+      .hover-image,
+      .default-image {
         left: 70%;
+      }
+
+      .green-image {
+        left: 76.3%;
       }
     }
   }
@@ -248,11 +276,24 @@ export default {
     .services {
       .hover-image,
       .default-image {
-        left: 65%;
+        left: 68%;
       }
 
       .green-image {
-        left: 71.3%;
+        left: 74.3%;
+      }
+    }
+  }
+
+   @media only screen and (max-width: 1580px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 67%;
+      }
+
+      .green-image {
+        left: 73.5%;
       }
     }
   }
@@ -267,19 +308,6 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1580px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 67%;
-      }
-
-      .green-image {
-        left: 73.5%;
-      }
-    }
-  }
-
   @media only screen and (max-width: 1540px) {
     .services {
       .hover-image,
@@ -289,6 +317,32 @@ export default {
 
       .green-image {
         left: 75.5%;
+      }
+    }
+
+    .index {
+      .icon-item {
+        img {
+          width: 325px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1480px) {
+    .banner {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
+        font-size: 162px;
+      }
+    }
+
+    .index {
+      .icon-item {
+        img {
+          width: 300px;
+        }
       }
     }
   }
@@ -320,8 +374,8 @@ export default {
         left: 76.3%;
       }
 
-      .navigation-list {
-        .navigation-item {
+      /deep/.navigation-list {
+        /deep/.navigation-item {
           padding-right: 54px;
         }
       }
@@ -332,11 +386,11 @@ export default {
     .services {
       .hover-image,
       .default-image {
-        left: 74%;
+        left: 70%;
       }
 
       .green-image {
-        left: 79.3%;
+        left: 75.3%;
       }
     }
   }
@@ -345,7 +399,7 @@ export default {
     .services {
       .hover-image,
       .default-image {
-        left: 75%;
+        left: 71%;
       }
 
       .green-image {
@@ -370,7 +424,7 @@ export default {
     .index {
       .icon-item {
         img {
-          width: 345px;
+          width: 325px;
         }
       }
     }
@@ -379,25 +433,35 @@ export default {
       .hover-image,
       .default-image {
         width: 231px;
-        top: 59%;
-        left: 72%;
+        top: 54%;
+        left: 69%;
       }
 
       .green-image {
         width: 170px;
-        top: 59%;
-        left: 76.6%;
+        top: 54%;
+        left: 73.6%;
       }
     }
   }
 
-    @media only screen and (max-width: 1280px) {
+  @media only screen and (max-width: 1280px) {
     .banner {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first  {
-        font-size: 131px;
-        letter-spacing: -7.05145px;
+        font-size: 110px;
+        letter-spacing: -8px;
+      }
+    }
+
+    .index {
+      .icon-item {
+        margin-bottom: -20px;
+
+        img {
+          width: 265px;
+        }
       }
     }
   }
@@ -423,7 +487,7 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1140px) {
+  @media only screen and (max-width: 1180px) {
     .services {
       .hover-image,
       .default-image {
@@ -434,17 +498,42 @@ export default {
         left: 70.2%;
       }
     }
+
+    .index {
+      .icon-item {
+        img {
+          width: 255px;
+        }
+      }
+
+      .main-title-wrapper {
+        padding-right: 15px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1140px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 70%;
+      }
+
+      .green-image {
+        left: 75.2%;
+      }
+    }
   }
 
   @media only screen and (max-width: 1080px) {
     .services {
       .hover-image,
       .default-image {
-        left: 69%;
+        left: 72%;
       }
 
       .green-image {
-        left: 74.5%;
+        left: 77.5%;
       }
     }
   }
@@ -457,8 +546,10 @@ export default {
     }
 
     .index {
-      .main-title-wrapper {
-        padding-right: 15px;
+      .icon-item {
+        img {
+          width: 230px;
+        }
       }
     }
 
@@ -466,13 +557,13 @@ export default {
       .hover-image,
       .default-image {
         width: 188px;
-        top: 49%;
+        top: 44%;
         left: 73%;
       }
 
       .green-image {
         width: 140px;
-        top: 49%;
+        top: 44%;
         left: 77.7%;
       }
     }
@@ -480,13 +571,6 @@ export default {
 
   @media only screen and (max-width: 970px) {
     .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 110px;
-        letter-spacing: -8px;
-      }
-
       .text-content_wrapper {
         padding-bottom: 105px;
       }
@@ -501,17 +585,31 @@ export default {
     }
 
     .services {
+      /deep/.navigation-list {
+        /deep/.navigation-item {
+          padding-right: 0;
+        }
+      }
+
       .hover-image,
       .default-image {
         width: 188px;
-        top: 54%;
+        top: 59%;
         left: 57%;
       }
 
       .green-image {
         width: 140px;
-        top: 54%;
+        top: 59%;
         left: 61.9%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 935px) {
+    .index {
+      .icon-item {
+        display: none;
       }
     }
   }
@@ -594,11 +692,13 @@ export default {
     .services {
       .hover-image,
       .default-image {
-        left: 70%;
+        top: 46%;
+        left: 69%;
       }
 
       .green-image {
-        left: 76%;
+        top: 46%;
+        left: 75%;
       }
 
       .media-item {
@@ -618,6 +718,16 @@ export default {
 
         .main-title-wrapper {
           max-width: 95%;
+        }
+      }
+    }
+
+    .index {
+      .icon-item {
+        display: block;
+
+        img {
+          width: 190px;
         }
       }
     }
@@ -682,9 +792,7 @@ export default {
         display: inline;
       }
     }
-  }
 
-  @media only screen and (max-width: 610px) {
     .careers {
       .text-content_wrapper {
         padding-bottom: 70px;
@@ -698,21 +806,10 @@ export default {
         }
       }
     }
-  }
 
-  @media only screen and (max-width: 565px) {
-    .banner {
+    .index {
       .phone-screen-logo {
-        width: 90px;
-        margin-bottom: -10px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 555px) {
-    .banner {
-      .phone-screen-logo {
-        display: none;
+        width: 75px;
       }
     }
   }
@@ -724,6 +821,14 @@ export default {
       .banner-main_title--white-first {
         font-size: 77px;
         letter-spacing: -5px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 555px) {
+    .banner {
+      .phone-screen-logo {
+        display: none;
       }
     }
   }
@@ -798,30 +903,13 @@ export default {
     .services {
       .hover-image,
       .default-image {
-        top: 53%;
+        top: 40%;
         left: 59%;
       }
 
       .green-image {
-        top: 53%;
-        left: 69%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 360px) {
-    .services {
-      .hover-image,
-      .default-image {
-        width: 125px;
-        top: 56%;
-        left: 62%;
-      }
-
-      .green-image {
-        width: 93px;
-        top: 56%;
-        left: 70.5%;
+        top: 40%;
+        left: 68%;
       }
     }
   }
@@ -838,6 +926,23 @@ export default {
       .green-image {
         width: 81px;
         top: 54%;
+        left: 70.5%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .services {
+      .hover-image,
+      .default-image {
+        width: 125px;
+        top: 56%;
+        left: 62%;
+      }
+
+      .green-image {
+        width: 93px;
+        top: 56%;
         left: 70.5%;
       }
     }

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="header__header-content_wrap">
         <div class="header__left-nav_bar">
-          <router-link :to="`/`">
+          <router-link :to="`/`" class="header__logo-icon">
             <img src="@/assets/img/Header/logo_black.svg" alt="Logotype" class="header__header-logo" v-if="headerIsWhite">
             <img src="@/assets/img/common/logo.svg" alt="Logotype" class="header__header-logo" v-else>
           </router-link>
@@ -178,6 +178,7 @@ export default {
     button {
       width: 135px;
       height: 40px;
+      margin-right: -96px;
     }
 
     &__header-logo {
@@ -326,6 +327,10 @@ export default {
       z-index: -1;
       opacity: 0;
     }
+
+    &__logo-icon {
+      margin-left: -96px;
+    }
   }
 
   .white {
@@ -353,6 +358,22 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1590px) {
+    .header {
+      &__logo-icon {
+        margin-left: -80px;
+      }
+
+      button {
+        margin-right: -80px;
+      }
+
+      &__header-routes_links {
+        padding-left: 33px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1320px) {
     .header {
       &__header-routes_links {
@@ -371,32 +392,25 @@ export default {
           margin-right: 0;
         }
       }
+
+      &__logo-icon {
+        margin-left: -68px;
+      }
+
+      button {
+        margin-right: -68px;
+      }
     }
   }
 
   @media only screen and (max-width: 1240px) {
     .header {
-      button,
-      &__mailto-link,
-      &__selected-phone,
-      &__phone-item,
-      &__routes_links,
-      &__header-routes_links a {
-        font-size: 16px;
-      }
-
       &__header-routes_links {
         padding-top: 10px;
 
         a {
           margin-right: 5px;
         }
-      }
-
-      &__phones-dropdown_wrap {
-        min-width: 183px;
-        padding-top: 1px;
-        background-position-x: 158px;
       }
 
        &__selected-phone {
@@ -409,6 +423,18 @@ export default {
         img {
           top: 19px;
         }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1140px) {
+    .header {
+      &__logo-icon {
+        margin-left: -80px;
+      }
+
+      button {
+        margin-right: -80px;
       }
     }
   }
@@ -426,28 +452,22 @@ export default {
       &__phone-item,
       &__routes_links,
       &__header-routes_links a {
-        font-size: 15px;
+        font-size: 17px;
       }
 
       &__mailto-link,
       &__selected-phone,
       &__phone-item,
       &__soc-links_wrap {
-        padding-right: 10px;
+        padding-right: 5px;
       }
 
       &__header-routes_links {
-        padding-top: 11px;
+        padding-top: 10px;
 
         a {
           margin-right: 0;
         }
-      }
-
-      &__phones-dropdown_wrap {
-        min-width: 170px;
-        padding-top: 2px;
-        background-position-x: 150px;
       }
 
       &__mailto-link {

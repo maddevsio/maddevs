@@ -94,7 +94,17 @@ export default {
       justify-content: space-between;
 
       div {
-        max-width: 650px;
+        max-width: 620px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1475px) {
+    .technologies-and_tools {
+      &__flex-group {
+        div {
+          max-width: 585px;
+        }
       }
     }
   }
@@ -109,7 +119,7 @@ export default {
     .technologies-and_tools {
       &__flex-group {
         div {
-          max-width: 520px;
+          max-width: 505px;
         }
       }
     }
@@ -139,7 +149,7 @@ export default {
     .technologies-and_tools {
       &__flex-group {
         div {
-          max-width: 395px;
+          max-width: 375px;
         }
       }
     }
