@@ -33,7 +33,7 @@ export default {
       this.$emit('input', payload);
     },
     reset() {
-      this.active = false;
+      this.active = null;
     }
   }
 };
