@@ -39,10 +39,7 @@
             </h4>
             <ValidationProvider rules="required" v-slot="{ classes, errors }">
               <ul class="careers__position-list">
-                <div class="careers__position-list_group">
-                  <UIRadioButtons ref="radioButtons" :radios="radioData" v-model="positionValue" />
-                  <span class="form-text">roles.</span>
-                </div>
+                <UIRadioButtons ref="radioButtons" :radios="radioData" v-model="positionValue" />
               </ul>
               <span class="modal-error-text error-text">{{ errors[0] }}</span>
             </ValidationProvider>
@@ -195,12 +192,26 @@ export default {
     position: relative;
   }
 
-  &__position-list_group {
+  &__position-list {
     display: flex;
     align-items: center;
 
-    span {
-      margin-left: 10px;
+    /deep/ .ui-radio-buttons {
+      &_item {
+        &:last-child {
+          display: flex;
+          align-items: center;
+
+          &::after {
+            content: 'roles.';
+            font-family: 'Hoves-Regular';
+            font-size: 40px;
+            font-weight: 500;
+            margin-left: 10px;
+            line-height: normal;
+          }
+        }
+      }
     }
   }
 
@@ -317,6 +328,11 @@ export default {
       }
     }
   }
+
+  .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
+    content: 'roles.';
+    font-size: 34px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -324,6 +340,21 @@ export default {
     &__background-logo {
       height: 250px;
       top: -204px;
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .careers {
+    &__position-list {
+      /deep/ .ui-radio-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+
+        &_item {
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 }
@@ -346,6 +377,11 @@ export default {
     .email-title {
       margin: 70px 0;
     }
+  }
+
+  .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
+    content: 'roles.';
+    font-size: 30px;
   }
 }
 
@@ -436,6 +472,11 @@ export default {
     &__form-linkedin-input {
       width: 6.69em;
     }
+  }
+
+  .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
+    content: 'roles.';
+    font-size: 24px;
   }
 }
 
