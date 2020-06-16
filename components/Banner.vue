@@ -24,33 +24,31 @@
             <navigationList v-if="currentPageName === 'projects'" />
           </div>
           <div class="icon-item">
-            <div class="icon-item_content">
-              <img 
-                src="@/assets/img/Home/svg/stars-banner-logo.svg" 
-                alt="Stars Logotype" 
-                v-if="currentPageName === 'index'"
-              >
-              <img 
-                src="@/assets/img/Services/svg/order-a-project.svg" 
-                alt="Order a Project Logotype" 
-                v-if="currentPageName === 'services' && showGreenBannerImage === false"
-                class="default-image" 
-              >
-              <img 
-                src="@/assets/img/Services/svg/order-a-project-hover.svg" 
-                alt="Order a Project Logotype" 
-                v-if="currentPageName === 'services' && showGreenBannerImage === false"
-                class="hover-image"
-                @click="switchImage"
-              >
-              <img 
-                src="@/assets/img/Services/svg/order-a-project-green.svg" 
-                alt="Order a Project Logotype" 
-                v-if="currentPageName === 'services' && showGreenBannerImage === true"
-                class="green-image"
-                @click="switchImage"
-              >
-            </div>
+            <img 
+              src="@/assets/img/Home/svg/stars-banner-logo.svg" 
+              alt="Stars Logotype" 
+              v-if="currentPageName === 'index'"
+            >
+            <img 
+              src="@/assets/img/Services/svg/order-a-project.svg" 
+              alt="Order a Project Logotype" 
+              v-if="currentPageName === 'services' && showGreenBannerImage === false"
+              class="default-image" 
+            >
+            <img 
+              src="@/assets/img/Services/svg/order-a-project-hover.svg" 
+              alt="Order a Project Logotype" 
+              v-if="currentPageName === 'services' && showGreenBannerImage === false"
+              class="hover-image"
+              @click="switchImage"
+            >
+            <img 
+              src="@/assets/img/Services/svg/order-a-project-green.svg" 
+              alt="Order a Project Logotype" 
+              v-if="currentPageName === 'services' && showGreenBannerImage === true"
+              class="green-image"
+              @click="switchImage"
+            >
           </div> 
         </div>
         <navigationList v-if="currentPageName !== 'projects'" />
@@ -103,7 +101,6 @@ export default {
 
     .text-content_wrapper {
       display: flex;
-      position: relative;
       padding-bottom: 180px;
     }
 
@@ -135,32 +132,6 @@ export default {
       width: 100px;
       display: none;
       margin-bottom: -15px;
-    }
-
-    .icon-item {
-      width: 395px;
-      min-width: 395px;
-      max-width: 395px;
-      position: absolute;
-      right: 0;
-      top: 0;
-
-      &_content {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: block;
-
-        img {
-          position: absolute;
-          top: 0;
-          right: 0;
-        }
-
-        .green-image {
-          margin-right: 1px;
-        }
-      }
     }
   }
 
@@ -221,44 +192,44 @@ export default {
       }
     }
 
-    // .hover-image,
-    // .default-image,
-    // .green-image {
-    //   position: absolute;
-    //   top: 64%;
-    //   left: 60%;
-    // }
+    .hover-image,
+    .default-image,
+    .green-image {
+      position: absolute;
+      top: 64%;
+      left: 60%;
+    }
 
     .hover-image {
       display: none;
     }
   }
 
-  // @media only screen and (max-width: 1700px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       left: 62%;
-  //     }
+  @media only screen and (max-width: 1700px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 62%;
+      }
 
-  //     .green-image {
-  //       left: 68%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        left: 68%;
+      }
+    }
+  }
 
-  // @media only screen and (max-width: 1660px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       left: 64%;
-  //     }
+  @media only screen and (max-width: 1660px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 64%;
+      }
 
-  //     .green-image {
-  //       left: 70%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        left: 70%;
+      }
+    }
+  }
 
   @media only screen and (max-width: 1620px) {
     .banner {
@@ -274,16 +245,16 @@ export default {
       }
     }
 
-    // .services {
-    //   .hover-image,
-    //   .default-image {
-    //     left: 65%;
-    //   }
+    .services {
+      .hover-image,
+      .default-image {
+        left: 65%;
+      }
 
-    //   .green-image {
-    //     left: 71.3%;
-    //   }
-    // }
+      .green-image {
+        left: 71.3%;
+      }
+    }
   }
 
   @media only screen and (max-width: 1670px) and (min-width: 1565px) {
@@ -296,31 +267,31 @@ export default {
     }
   }
 
-  // @media only screen and (max-width: 1580px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       left: 67%;
-  //     }
+  @media only screen and (max-width: 1580px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 67%;
+      }
 
-  //     .green-image {
-  //       left: 73.5%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        left: 73.5%;
+      }
+    }
+  }
 
-  // @media only screen and (max-width: 1540px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       left: 69%;
-  //     }
+  @media only screen and (max-width: 1540px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 69%;
+      }
 
-  //     .green-image {
-  //       left: 75.5%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        left: 75.5%;
+      }
+    }
+  }
 
   @media only screen and (max-width: 1440px) {
     .banner {
@@ -336,18 +307,18 @@ export default {
     }
 
     .services {
-      // .hover-image,
-      // .default-image {
-      //   width: 296px;
-      //   top: 67%;
-      //   left: 71%;
-      // }
+      .hover-image,
+      .default-image {
+        width: 296px;
+        top: 67%;
+        left: 71%;
+      }
 
-      // .green-image {
-      //   width: 219px;
-      //   top: 67%;
-      //   left: 76.3%;
-      // }
+      .green-image {
+        width: 219px;
+        top: 67%;
+        left: 76.3%;
+      }
 
       .navigation-list {
         .navigation-item {
@@ -357,31 +328,31 @@ export default {
     }
   }
 
-  //  @media only screen and (max-width: 1420px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       left: 74%;
-  //     }
+   @media only screen and (max-width: 1420px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 74%;
+      }
 
-  //     .green-image {
-  //       left: 79.3%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        left: 79.3%;
+      }
+    }
+  }
 
-  // @media only screen and (max-width: 1380px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       left: 75%;
-  //     }
+  @media only screen and (max-width: 1380px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 75%;
+      }
 
-  //     .green-image {
-  //       left: 80.4%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        left: 80.4%;
+      }
+    }
+  }
 
   @media only screen and (max-width: 1340px) {
     .banner {
@@ -404,20 +375,20 @@ export default {
       }
     }
 
-    // .services {
-    //   .hover-image,
-    //   .default-image {
-    //     width: 231px;
-    //     top: 59%;
-    //     left: 72%;
-    //   }
+    .services {
+      .hover-image,
+      .default-image {
+        width: 231px;
+        top: 59%;
+        left: 72%;
+      }
 
-    //   .green-image {
-    //     width: 170px;
-    //     top: 59%;
-    //     left: 76.6%;
-    //   }
-    // }
+      .green-image {
+        width: 170px;
+        top: 59%;
+        left: 76.6%;
+      }
+    }
   }
 
     @media only screen and (max-width: 1280px) {
@@ -440,43 +411,43 @@ export default {
       }
     }
 
-    // .services {
-    //   .hover-image,
-    //   .default-image {
-    //     left: 63%;
-    //   }
+    .services {
+      .hover-image,
+      .default-image {
+        left: 63%;
+      }
 
-    //   .green-image {
-    //     left: 67.8%;
-    //   }
-    // }
+      .green-image {
+        left: 67.8%;
+      }
+    }
   }
 
-  // @media only screen and (max-width: 1140px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       left: 65%;
-  //     }
+  @media only screen and (max-width: 1140px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 65%;
+      }
 
-  //     .green-image {
-  //       left: 70.2%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        left: 70.2%;
+      }
+    }
+  }
 
-  // @media only screen and (max-width: 1080px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       left: 69%;
-  //     }
+  @media only screen and (max-width: 1080px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 69%;
+      }
 
-  //     .green-image {
-  //       left: 74.5%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        left: 74.5%;
+      }
+    }
+  }
 
   @media only screen and (max-width: 1024px) {
     .banner {
@@ -491,20 +462,20 @@ export default {
       }
     }
 
-    // .services {
-    //   .hover-image,
-    //   .default-image {
-    //     width: 188px;
-    //     top: 49%;
-    //     left: 73%;
-    //   }
+    .services {
+      .hover-image,
+      .default-image {
+        width: 188px;
+        top: 49%;
+        left: 73%;
+      }
 
-    //   .green-image {
-    //     width: 140px;
-    //     top: 49%;
-    //     left: 77.7%;
-    //   }
-    // }
+      .green-image {
+        width: 140px;
+        top: 49%;
+        left: 77.7%;
+      }
+    }
   }
 
   @media only screen and (max-width: 970px) {
@@ -529,86 +500,86 @@ export default {
       }
     }
 
-    // .services {
-    //   .hover-image,
-    //   .default-image {
-    //     width: 188px;
-    //     top: 54%;
-    //     left: 57%;
-    //   }
+    .services {
+      .hover-image,
+      .default-image {
+        width: 188px;
+        top: 54%;
+        left: 57%;
+      }
 
-    //   .green-image {
-    //     width: 140px;
-    //     top: 54%;
-    //     left: 61.9%;
-    //   }
-    // }
+      .green-image {
+        width: 140px;
+        top: 54%;
+        left: 61.9%;
+      }
+    }
   }
 
-  // @media only screen and (max-width: 920px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       left: 59%;
-  //     }
+  @media only screen and (max-width: 920px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 59%;
+      }
 
-  //     .green-image {
-  //       left: 64%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        left: 64%;
+      }
+    }
+  }
 
-  // @media only screen and (max-width: 900px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       left: 61%;
-  //     }
+  @media only screen and (max-width: 900px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 61%;
+      }
 
-  //     .green-image {
-  //       left: 66%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        left: 66%;
+      }
+    }
+  }
 
-  // @media only screen and (max-width: 880px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       left: 62%;
-  //     }
+  @media only screen and (max-width: 880px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 62%;
+      }
 
-  //     .green-image {
-  //       left: 67.5%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        left: 67.5%;
+      }
+    }
+  }
 
-  // @media only screen and (max-width: 840px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       left: 65%;
-  //     }
+  @media only screen and (max-width: 840px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 65%;
+      }
 
-  //     .green-image {
-  //       left: 70.5%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        left: 70.5%;
+      }
+    }
+  }
 
-  // @media only screen and (max-width: 820px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       left: 68%;
-  //     }
+  @media only screen and (max-width: 820px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 68%;
+      }
 
-  //     .green-image {
-  //       left: 74%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        left: 74%;
+      }
+    }
+  }
 
   @media only screen and (max-width: 768px) {
     .banner {
@@ -621,14 +592,14 @@ export default {
     }
 
     .services {
-      // .hover-image,
-      // .default-image {
-      //   left: 70%;
-      // }
+      .hover-image,
+      .default-image {
+        left: 70%;
+      }
 
-      // .green-image {
-      //   left: 76%;
-      // }
+      .green-image {
+        left: 76%;
+      }
 
       .media-item {
         display: none;
@@ -665,16 +636,16 @@ export default {
       }
     }
 
-    // .services {
-    //   .hover-image,
-    //   .default-image {
-    //     left: 67%;
-    //   }
+    .services {
+      .hover-image,
+      .default-image {
+        left: 67%;
+      }
 
-    //   .green-image {
-    //     left: 73.5%;
-    //   }
-    // }
+      .green-image {
+        left: 73.5%;
+      }
+    }
   }
 
   @media only screen and (max-width: 670px) {
@@ -780,112 +751,112 @@ export default {
         display: block;
       }
 
-      // .hover-image,
-      // .default-image {
-      //   width: 142px;
-      //   top: 44%;
-      //   left: 48%;
-      // }
+      .hover-image,
+      .default-image {
+        width: 142px;
+        top: 44%;
+        left: 48%;
+      }
 
-      // .green-image {
-      //   width: 105px;
-      //   top: 44%;
-      //   left: 56%;
-      // }
+      .green-image {
+        width: 105px;
+        top: 44%;
+        left: 56%;
+      }
     }
   }
 
-  // @media only screen and (max-width: 400px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       top: 51%;
-  //       left: 51%;
-  //     }
+  @media only screen and (max-width: 400px) {
+    .services {
+      .hover-image,
+      .default-image {
+        top: 51%;
+        left: 51%;
+      }
 
-  //     .green-image {
-  //       top: 51%;
-  //       left: 60%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        top: 51%;
+        left: 60%;
+      }
+    }
+  }
 
-  // @media only screen and (max-width: 384px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       left: 58%;
-  //     }
+  @media only screen and (max-width: 384px) {
+    .services {
+      .hover-image,
+      .default-image {
+        left: 58%;
+      }
 
-  //     .green-image {
-  //       left: 67%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        left: 67%;
+      }
+    }
+  }
 
-  // @media only screen and (max-width: 375px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       top: 53%;
-  //       left: 59%;
-  //     }
+  @media only screen and (max-width: 375px) {
+    .services {
+      .hover-image,
+      .default-image {
+        top: 53%;
+        left: 59%;
+      }
 
-  //     .green-image {
-  //       top: 53%;
-  //       left: 69%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        top: 53%;
+        left: 69%;
+      }
+    }
+  }
 
-  // @media only screen and (max-width: 360px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       width: 125px;
-  //       top: 56%;
-  //       left: 62%;
-  //     }
+  @media only screen and (max-width: 360px) {
+    .services {
+      .hover-image,
+      .default-image {
+        width: 125px;
+        top: 56%;
+        left: 62%;
+      }
 
-  //     .green-image {
-  //       width: 93px;
-  //       top: 56%;
-  //       left: 70.5%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        width: 93px;
+        top: 56%;
+        left: 70.5%;
+      }
+    }
+  }
 
-  // @media only screen and (max-width: 370px) {
-  //   .services {
-  //     .hover-image,
-  //     .default-image {
-  //       width: 110px;
-  //       top: 54%;
-  //       left: 62%;
-  //     }
+  @media only screen and (max-width: 370px) {
+    .services {
+      .hover-image,
+      .default-image {
+        width: 110px;
+        top: 54%;
+        left: 62%;
+      }
 
-  //     .green-image {
-  //       width: 81px;
-  //       top: 54%;
-  //       left: 70.5%;
-  //     }
-  //   }
-  // }
+      .green-image {
+        width: 81px;
+        top: 54%;
+        left: 70.5%;
+      }
+    }
+  }
 
   @media only screen and (max-width: 355px) {
-    // .services {
-    //   .hover-image,
-    //   .default-image {
-    //     top: 38%;
-    //     left: 56%;
-    //   }
+    .services {
+      .hover-image,
+      .default-image {
+        top: 38%;
+        left: 56%;
+      }
 
-    //   .green-image {
-    //     width: 81px;
-    //     top: 38%;
-    //     left: 64.5%;
-    //   }
-    // }
+      .green-image {
+        width: 81px;
+        top: 38%;
+        left: 64.5%;
+      }
+    }
 
     .banner {
       .banner-main_title,
