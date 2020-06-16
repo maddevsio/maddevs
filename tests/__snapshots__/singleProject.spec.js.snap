@@ -3,8 +3,8 @@
 exports[`CaseStudies component renders correctly 1`] = `
 <a
   class="single-project"
-  href="https://blog.maddevs.io/"
-  style="background: rgb(248, 247, 246);"
+  href="https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5"
+  style="background: rgb(255, 106, 1);"
 >
   <div
     class="single-project__container"
@@ -13,7 +13,7 @@ exports[`CaseStudies component renders correctly 1`] = `
       class="single-project__content-wrap"
     >
       <img
-        alt="nambafood"
+        alt="godee"
         class="single-project__logo"
         src="[object Object]"
       />
@@ -22,7 +22,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         class="single-project__sub-title sub-title"
       >
         
-        Contactless Delivery Service
+        Mass transportation company
       
       </h4>
        
@@ -30,7 +30,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         class="single-project__paragraph paragraph"
       >
         
-        Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.
+        Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.
       
       </p>
        
@@ -38,7 +38,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         class="contribution-widget"
       >
         <svg
-          class="contribution-widget__img contribution-widget__img_nambafood"
+          class="contribution-widget__img contribution-widget__img_godee"
           fill="none"
           viewBox="0 0 20 18"
           xmlns="http://www.w3.org/2000/svg"
@@ -52,13 +52,13 @@ exports[`CaseStudies component renders correctly 1`] = `
         </svg>
          
         <span
-          class="contribution-widget__content-mobile contribution-widget__content-mobile_nambafood"
+          class="contribution-widget__content-mobile contribution-widget__content-mobile_godee"
         >
           contribution: Backend, Infrastructure
         </span>
          
         <span
-          class="contribution-widget__content contribution-widget__content_nambafood"
+          class="contribution-widget__content contribution-widget__content_godee"
         >
           contribution: Backend, Infrastructure, Frontend
         </span>
@@ -66,7 +66,7 @@ exports[`CaseStudies component renders correctly 1`] = `
     </div>
      
     <div
-      class="single-project__background single-project__background_first-project"
+      class="single-project__background single-project__background_godee"
     />
   </div>
 </a>
