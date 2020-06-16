@@ -28,7 +28,7 @@
                 <img src="@/assets/img/Header/facebook-icon.svg" alt="Facebook">
               </a>
             </div>
-            <div class="header__phones-dropdown_wrap">
+            <div class="header__phones-dropdown_wrap" :id="selectedPhone.country">
               <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
                 <img :src="require(`@/assets/img/Flags/${selectedPhone.country}.svg`)" :alt="`${selectedPhone.country}`" />
                 {{ selectedPhone.phoneNumber }}
@@ -322,6 +322,10 @@ export default {
 
     &__logo-icon {
       margin-left: -96px;
+    }
+
+    #united-states {
+      background-position-x: 160px;
     }
   }
 
