@@ -24,7 +24,7 @@
               <a href="https://ru.linkedin.com/company/mad-devs" target="_blank" class="header__lindekin-link header__soc-link">
                 <img src="@/assets/img/Header/lindekin-icon.svg" alt="Lindekin">
               </a>
-              <a href="https://www.facebook.com/maddevsio" target="_blank" class="header__facebook-link header__soc-link">
+              <a href="https://www.facebook.com/maddevsllc" target="_blank" class="header__facebook-link header__soc-link">
                 <img src="@/assets/img/Header/facebook-icon.svg" alt="Facebook">
               </a>
             </div>
@@ -69,16 +69,8 @@ export default {
           country: 'united-kingdom'
         },
         {
-          phoneNumber: '+44 20 3984 8555',
-          country: 'poland'
-        },
-        {
-          phoneNumber: '+44 20 3984 8555',
-          country: 'russia'
-        },
-        {
-          phoneNumber: '+44 20 3984 8555',
-          country: 'belarus'
+          phoneNumber: '+1 833 623 3387',
+          country: 'united-states'
         }
       ],
       selectedPhone: {
