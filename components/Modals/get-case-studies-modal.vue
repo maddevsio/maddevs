@@ -63,8 +63,8 @@ export default {
           variables: {
             fullName: this.fullName,
             email: this.email,
-            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
           }
         };
         this.$nuxt.$emit(this.modalName, form);

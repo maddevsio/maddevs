@@ -94,7 +94,7 @@
         </ValidationObserver>
       </div>
     </div>
-    <SuccessModal :visibled="emailSended" />
+    <SuccessModal :visibled="isEmailSent" @onClose="resetForm" />
   </section>
 </template>
 
@@ -120,7 +120,7 @@ export default {
         { id: 'junior', name: 'position', labelText: 'Junior,' },
         { id: 'intern', name: 'position', labelText: 'Intern' }
       ],
-      emailSended: false
+      isEmailSent: false
     };
   },
   mounted() {
@@ -162,22 +162,25 @@ export default {
         };
         this.$store.dispatch('sendEmail', form).then(res => {
           if (res.status === 200) {
-            this.emailSended = true;
+            this.isEmailSent = true;
             setTimeout(() => {
-              this.$refs.form.reset();
-              this.fullName = null;
-              this.positionValue = null;
-              this.positionTitle = null;
-              this.email = null;
-              this.selectedFile = null;
-              this.linkedinProfile = null;
-              this.emailSended = false;
+              this.resetForm();
             }, 3000);
           } else {
-            this.emailSended = false;
+            this.isEmailSent = false;
           }
         });
       }
+    },
+    resetForm() {
+      this.$refs.form.reset();
+      this.fullName = null;
+      this.positionValue = null;
+      this.positionTitle = null;
+      this.email = null;
+      this.selectedFile = null;
+      this.linkedinProfile = null;
+      this.isEmailSent = false;
     },
     focusInput() {
       this.$nextTick(async () => {
