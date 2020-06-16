@@ -137,7 +137,7 @@ export default {
 
   &__main-title {
     color: $text-color--red;
-    max-width: 700px;
+    max-width: 837px;
     min-width: 575px;
     margin-right: 58px;
   }

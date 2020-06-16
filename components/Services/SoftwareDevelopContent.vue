@@ -79,8 +79,8 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 120px;
-    padding-right: 30px;
+    padding-top: 91px;
+    padding-right: 87px;
 
     &:last-child {
       padding-right: 0;
@@ -97,11 +97,15 @@ export default {
 
     &__sub-title {
       padding-bottom: 10px;
+      font-size: 32px;
+      line-height: 110%;
+      letter-spacing: -1px;
     }
 
     &__paragraph {
       max-width: 360px;
       padding-bottom: 20px;
+      line-height: 139%;
     }
 
     &__mobile-title-icon {
@@ -118,6 +122,11 @@ export default {
       padding-top: 18px;
       padding-bottom: 46px;
     }
+
+    &__title {
+      font-size: 70px;
+      line-height: 110%;
+    }
   }
 
   @media only screen and (max-width: 1560px) {
@@ -132,6 +141,29 @@ export default {
     .frontend-item {
       .software-development_content__sub-title {
         max-width: 370px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .software-development_content {
+      padding-top: 83px;
+
+      &__main-title {
+        padding-bottom: 52px;
+      }
+
+      &__title {
+        font-size: 50px;
+        line-height: 110%;
+        letter-spacing: -2px;
+        padding-bottom: 25px;
+      }
+
+      &__sub-title {
+        font-size: 32px;
+        line-height: 110%;
+        letter-spacing: -1px;
       }
     }
   }
@@ -171,7 +203,7 @@ export default {
       }
 
       &__title {
-        padding-bottom: 17px;
+        padding-bottom: 25px;
       }
 
       /deep/.icons-list {

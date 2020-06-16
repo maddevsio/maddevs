@@ -66,14 +66,18 @@ export default {
 
   .it-outsourcing {
     &__button-trigger {
-      width: 450px;
+      width: 100%;
+    }
+
+    &__sub-title {
+      margin-bottom: 15px;
     }
 
     &__outsourcing-content {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      max-width: 725px;
+      max-width: 47%;
     }
 
     &__title,
@@ -85,7 +89,10 @@ export default {
 
     &__title {
       height: 100px;
-      padding-bottom: 20px;
+      padding-bottom: 33px;
+      font-size: 90px;
+      line-height: 104%;
+      letter-spacing: -3px;
     }
 
     &__paragraph {
@@ -156,22 +163,33 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1560px) {
+  @media only screen and (max-width: 1280px) {
     .it-outsourcing {
-      button {
-        width: 400px;
+      padding: 170px 0;
+
+      &__main-title {
+        padding-bottom: 52px;
       }
 
       &__title {
-        padding-bottom: 10px;
+        font-size: 50px;
+        line-height: 110%;
+        letter-spacing: -2px;
+        padding-bottom: 0;
+      }
+
+      &__sub-title {
+        font-size: 32px;
+        line-height: 110%;
+        letter-spacing: -1px;
       }
     }
-  }
 
-  @media only screen and (max-width: 1390px) {
-    .it-outsourcing {
-      button {
-        width: 380px;
+    .teams,
+    .individuals * {
+
+      .it-outsourcing__paragraph {
+        width: 435px;
       }
     }
   }
