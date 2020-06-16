@@ -82,7 +82,7 @@
                   rules="required"
                   v-slot="{ classes, errors }"
                 >
-                  <FileInput v-model="selectedFile" @input="onFileChanged" />
+                  <FileInput v-model="selectedFile" @input="onFileChanged" ref="fileInput" />
                   <span class="modal-error-text error-text">{{
                     errors[0]
                   }}</span>
@@ -174,6 +174,7 @@ export default {
     },
     resetForm() {
       this.$refs.form.reset();
+      this.$refs.fileInput.reset();
       this.fullName = null;
       this.positionValue = null;
       this.positionTitle = null;

@@ -37,6 +37,9 @@ export default {
     onFileChanged(event) {
       this.selectedFile = event.target.files[0] && event.target.files[0].name;
       this.$emit('input', this.selectedFile);
+    },
+    reset() {
+      this.selectedFile = null;
     }
   },
   computed: {
