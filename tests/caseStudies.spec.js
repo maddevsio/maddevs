@@ -10,38 +10,46 @@ describe('CaseStudies component', () => {
     {
       projectName: 'nambafood',
       logoImg: 'nambafoodColored',
+      link: 'https://blog.maddevs.io/',
       contributionWidgetColors: ['#ec1c24', '#96969c'],
       projectBackground: 'nambafoodBackground',
       projectColor: '#f8f7f6',
       projectTitle: 'Contactless Delivery Service',
-      projectDescription: 'Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.'
+      projectDescription:
+        'Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.'
     },
     {
       projectName: 'teacherly',
       logoImg: 'teacherlyColored',
+      link: 'https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f',
       contributionWidgetColors: ['#ec1c24', '#fff'],
       projectBackground: 'teacherlyBackground',
       projectColor: '#56448e',
       projectTitle: 'EdTech collaboration platform',
-      projectDescription: 'Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform.'
+      projectDescription:
+        'Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform.'
     },
     {
       projectName: 'guardrails',
       logoImg: 'guardrailsColored',
+      link: 'https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b',
       contributionWidgetColors: ['#96969c', '#96969c'],
       projectBackground: 'guardrailsBackground',
       projectColor: '#0e1b27',
       projectTitle: 'Cloud cybersecurity service',
-      projectDescription: 'Mad Devs was involved with Guardrails\' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.'
+      projectDescription:
+        'Mad Devs was involved with Guardrails\' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.'
     },
     {
       projectName: 'godee',
       logoImg: 'godeeColored',
+      link: 'https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5',
       contributionWidgetColors: ['#000', '#000'],
       projectBackground: 'godeeBackground',
       projectColor: '#ff6A01',
       projectTitle: 'Mass transportation company',
-      projectDescription: 'Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.'
+      projectDescription:
+        'Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.'
     }
   ];
 
