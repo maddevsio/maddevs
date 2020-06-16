@@ -12,9 +12,13 @@ describe('Banner', () => {
         name: '/'
       }
     };
-
     wrapper = mount(Banner, {
-      stubs: ['router-link']
+      stubs: ['router-link'],
+      mocks: {
+        $modal: {
+          show: jest.fn()
+        }
+      }
     });
   });
 
@@ -44,9 +48,22 @@ describe('Banner', () => {
 
   it('switch state for showGreenBannerImage when call function', () => {
     wrapper.vm.switchImage();
-    expect(wrapper.vm.$data.showGreenBannerImage).toBe(true);
-
+    expect(wrapper.vm.$data.showGreenBannerImage).toBe(true);    
     wrapper.vm.switchImage();
+    expect(wrapper.vm.$data.showGreenBannerImage).toBe(false);
+
+    expect(wrapper.vm.$modal.show).toHaveBeenCalled();
+  });
+
+  it('add new state for showGreenBannerImage variable', () => {
+    global.event = {
+      target: {
+        className: 'close-modal'
+      }
+    };
+
+    wrapper.vm.$data.showGreenBannerImage = true;
+    wrapper.vm.setInitialStateForImage();
     expect(wrapper.vm.$data.showGreenBannerImage).toBe(false);
   });
 });

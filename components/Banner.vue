@@ -69,6 +69,10 @@ export default {
     if ($nuxt.$route.name) {
       this.currentPageName = $nuxt.$route.name;
     }
+    window.addEventListener('click', this.setInitialStateForImage);
+  },
+  destroyed() {
+    window.removeEventListener('click', this.setInitialStateForImage);
   },
   data() {
     return {
@@ -79,9 +83,11 @@ export default {
   methods: {
     switchImage() {
       this.showGreenBannerImage = !this.showGreenBannerImage;
-
-      if (this.showGreenBannerImage) {
-        this.$modal.show('order-project-from-us-modal');
+      this.$modal.show('order-project-from-us-modal');
+    },
+    setInitialStateForImage() {
+      if (event.target.className === 'close-modal') {
+        this.showGreenBannerImage = false;
       }
     }
   }
@@ -279,17 +285,7 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1670px) and (min-width: 1565px) {
-    .projects {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        width: 80%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1580px) {
+   @media only screen and (max-width: 1580px) {
     .services {
       .hover-image,
       .default-image {
@@ -298,6 +294,16 @@ export default {
 
       .green-image {
         left: 73.5%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1670px) and (min-width: 1565px) {
+    .projects {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
+        width: 80%;
       }
     }
   }
@@ -579,6 +585,12 @@ export default {
     }
 
     .services {
+      /deep/.navigation-list {
+        /deep/.navigation-item {
+          padding-right: 0;
+        }
+      }
+
       .hover-image,
       .default-image {
         width: 188px;
@@ -590,14 +602,6 @@ export default {
         width: 140px;
         top: 59%;
         left: 61.9%;
-      }
-    }
-
-    .services {
-      /deep/.navigation-list {
-        /deep/.navigation-item {
-          padding-right: 0;
-        }
       }
     }
   }
@@ -788,9 +792,7 @@ export default {
         display: inline;
       }
     }
-  }
 
-  @media only screen and (max-width: 610px) {
     .careers {
       .text-content_wrapper {
         padding-bottom: 70px;
@@ -812,14 +814,6 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 555px) {
-    .banner {
-      .phone-screen-logo {
-        display: none;
-      }
-    }
-  }
-
   @media only screen and (max-width: 576px) {
     .banner {
       .banner-main_title,
@@ -827,6 +821,14 @@ export default {
       .banner-main_title--white-first {
         font-size: 77px;
         letter-spacing: -5px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 555px) {
+    .banner {
+      .phone-screen-logo {
+        display: none;
       }
     }
   }
@@ -912,23 +914,6 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 360px) {
-    .services {
-      .hover-image,
-      .default-image {
-        width: 125px;
-        top: 56%;
-        left: 62%;
-      }
-
-      .green-image {
-        width: 93px;
-        top: 56%;
-        left: 70.5%;
-      }
-    }
-  }
-
   @media only screen and (max-width: 370px) {
     .services {
       .hover-image,
@@ -941,6 +926,23 @@ export default {
       .green-image {
         width: 81px;
         top: 54%;
+        left: 70.5%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .services {
+      .hover-image,
+      .default-image {
+        width: 125px;
+        top: 56%;
+        left: 62%;
+      }
+
+      .green-image {
+        width: 93px;
+        top: 56%;
         left: 70.5%;
       }
     }

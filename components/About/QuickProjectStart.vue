@@ -216,7 +216,7 @@ export default {
 
       &__button-wrap {
         margin-top: 90px;
-      } 
+      }
     }
   }
 
@@ -306,15 +306,9 @@ export default {
         font-size: 29px;
         letter-spacing: -1px;
       }
-      
+
       &__paragraph {
         font-size: 14px;
-      }
-
-      &__icon-item {
-        &::after {
-          left: 120px;
-        }
       }
 
       &__button-wrap {
@@ -502,5 +496,4 @@ export default {
       }
     }
   }
-
 </style>

@@ -423,14 +423,6 @@ export default {
       }
 
       &__header-routes_links {
-        padding-top: 11px;
-
-        a {
-          margin-right: 0;
-        }
-      }
-
-      &__header-routes_links {
         padding-top: 10px;
 
         a {
