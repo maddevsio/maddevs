@@ -53,10 +53,10 @@ export default {
   },
   data: () => ({
     modalName: 'frontend-modal',
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    interesteFrontendExpertise: '',
+    fullName: null,
+    email: null,
+    phoneNumber: null,
+    interesteFrontendExpertise: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
     inputId: 'frontend'
@@ -81,8 +81,8 @@ export default {
             email: this.email,
             phoneNumber: this.phoneNumber,
             interesteFrontendExpertise: this.interesteFrontendExpertise,
-            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
           }
         };
         this.$nuxt.$emit(this.modalName, form);

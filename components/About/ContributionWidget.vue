@@ -34,7 +34,7 @@
           ? 'contribution-widget__content-mobile_teacherly'
           : 'contribution-widget__content-mobile_nambafood'
       ]"
-      >contribution: backend, infrastructure</span
+      >contribution: Backend, Infrastructure</span
     >
     <span
       class="contribution-widget__content"
@@ -48,7 +48,7 @@
           ? 'contribution-widget__content_teacherly'
           : 'contribution-widget__content_nambafood'
       ]"
-      >contribution: backend, infrastructure, frontend</span
+      >contribution: Backend, Infrastructure, Frontend</span
     >
   </div>
 </template>

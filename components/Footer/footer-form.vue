@@ -28,7 +28,7 @@
         @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
       />
     </ValidationObserver>
-    <SuccessModal :visibled="emailSended" />
+    <SuccessModal :visibled="isEmailSent" @onClose="resetForm" />
   </div>
 </template>
 
@@ -51,7 +51,7 @@ export default {
     projectInfo: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    emailSended: false
+    isEmailSent: false
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -79,22 +79,25 @@ export default {
         };
         this.$store.dispatch('sendEmail', form).then(res => {
           if (res.status === 200) {
-            this.emailSended = true;
+            this.isEmailSent = true;
             setTimeout(() => {
-              this.$refs.form.reset();
-              this.fullName = null;
-              this.email = null;
-              this.projectDescription = null;
-              this.projectInfo = null;
-              this.agreeWithPrivacyPolicy = false;
-              this.agreeToGetMadDevsDiscountOffers = false;
-              this.emailSended = false;
+              this.resetForm();
             }, 3000);
           } else {
-            this.emailSended = false;
+            this.isEmailSent = false;
           }
         });
       }
+    },
+    resetForm() {
+      this.$refs.form.reset();
+      this.fullName = null;
+      this.email = null;
+      this.projectDescription = null;
+      this.projectInfo = null;
+      this.agreeWithPrivacyPolicy = false;
+      this.agreeToGetMadDevsDiscountOffers = false;
+      this.isEmailSent = false;
     }
   }
 };

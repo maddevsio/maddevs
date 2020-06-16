@@ -2,7 +2,7 @@
   <transition name="fade">
     <div class="success-modal" v-if="visibled">
       <div class="success-modal_content">
-        <button class="close-modal">
+        <button class="close-modal" @click="onClose">
           <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
         </button>
         <SuccessMessage />
@@ -23,6 +23,11 @@ export default {
     visibled: {
       type: Boolean,
       default: false
+    }
+  },
+  methods: {
+    onClose() {
+      this.$emit('onClose');
     }
   }
 };

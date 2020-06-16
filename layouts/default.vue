@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <perfect-scrollbar ref="PageScrollBar" id="PageScrollBar" class="page-scrollbar">
     <Header/>
-    <nuxt/>
+      <nuxt/>
     <Footer />
     <client-only>
       <ContactMeModal />
@@ -17,7 +17,7 @@
       <ProcessAuditModal />
       <TeamHeadcountModal />
     </client-only>
-  </div>
+  </perfect-scrollbar>
 </template>
 
 <script>
@@ -53,6 +53,25 @@ export default {
     TechnologyStackModal,
     ProcessAuditModal,
     TeamHeadcountModal
+  },
+  watch: {
+    '$route'() {
+      if (this.$refs.PageScrollBar && this.$refs.PageScrollBar.$el) {
+        this.$refs.PageScrollBar.$el.scrollTop = 0;
+      }
+    }
   }
 };
 </script>
+
+<style lang="scss" scoped>
+  .page-scrollbar {
+    height: 100vh;
+    overflow: hidden;
+
+    /deep/ .ps__rail-y {
+      z-index: 999;
+      cursor: pointer;
+    }
+  }
+</style>

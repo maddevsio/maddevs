@@ -164,7 +164,7 @@ export default {
       position: relative;
 
       .main-title-wrapper {
-        max-width: 75%;
+        max-width: 91%;
       }
     }
   }
@@ -802,7 +802,7 @@ export default {
         position: relative;
 
         .main-title-wrapper {
-          max-width: 80%;
+          max-width: 97%;
         }
       }
     }

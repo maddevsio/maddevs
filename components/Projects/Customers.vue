@@ -137,7 +137,7 @@ export default {
 
   &__main-title {
     color: $text-color--red;
-    max-width: 700px;
+    max-width: 837px;
     min-width: 575px;
     margin-right: 58px;
   }
@@ -152,11 +152,19 @@ export default {
 
   .valued-customers {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     align-items: center;
     margin: 80px 0 40px;
     grid-row-gap: 100px;
     grid-column-gap: 80px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .customers {
+    .valued-customers {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
   }
 }
 
@@ -218,7 +226,7 @@ export default {
     }
 
     .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       grid-row-gap: 25px;
       grid-column-gap: 15px;
       margin-top: 47px;
@@ -238,7 +246,7 @@ export default {
 @media only screen and (max-width: 377px) {
   .customers {
     .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     }
   }
 }
