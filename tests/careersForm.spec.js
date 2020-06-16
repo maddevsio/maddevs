@@ -12,10 +12,10 @@ describe('CareersForm component', () => {
     selectedFile: null,
     linkedinProfile: null,
     radioData: [
-      { id: 'senior', name: 'position', labelText: 'Senior,' },
-      { id: 'middle', name: 'position', labelText: 'Middle,' },
-      { id: 'junior', name: 'position', labelText: 'Junior,' },
-      { id: 'intern', name: 'position', labelText: 'Intern' }
+      { type: 'senior', label: 'Senior,' },
+      { type: 'middle', label: 'Middle,' },
+      { type: 'junior', label: 'Junior,' },
+      { type: 'intern', label: 'Intern' }
     ]
   };
 
@@ -49,12 +49,5 @@ describe('CareersForm component', () => {
     const newPositionValue = null;
     CareersForm.methods.onFileChanged(newPositionValue);
     expect(wrapper.vm.$data.positionValue).toStrictEqual(newPositionValue);
-  });
-
-  test('should have methods', () => {
-    expect(
-      typeof CareersForm.methods.onFileChanged &&
-        typeof CareersForm.methods.changePositionValue
-    ).toBe('function');
   });
 });

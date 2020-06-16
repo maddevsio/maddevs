@@ -1,5 +1,5 @@
 <template>
-  <perfect-scrollbar id="PageScrollBar" class="page-scrollbar">
+  <perfect-scrollbar ref="PageScrollBar" id="PageScrollBar" class="page-scrollbar">
     <Header/>
       <nuxt/>
     <Footer />
@@ -53,6 +53,13 @@ export default {
     TechnologyStackModal,
     ProcessAuditModal,
     TeamHeadcountModal
+  },
+  watch: {
+    '$route'() {
+      if (this.$refs.PageScrollBar && this.$refs.PageScrollBar.$el) {
+        this.$refs.PageScrollBar.$el.scrollTop = 0;
+      }
+    }
   }
 };
 </script>

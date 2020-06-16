@@ -117,11 +117,11 @@ export default {
         const whyUs = document.getElementById('why-us');
 
         if (
-          customerTestimonials.getBoundingClientRect().top <= 0 && 
+          customerTestimonials && customerTestimonials.getBoundingClientRect().top <= 0 && 
           customerTestimonials.getBoundingClientRect().bottom >= 0 ||
-          meetOurExperts.getBoundingClientRect().top <= 0 && 
+          meetOurExperts && meetOurExperts.getBoundingClientRect().top <= 0 && 
           meetOurExperts.getBoundingClientRect().bottom >= 0 ||
-          whyUs.getBoundingClientRect().top <= 0 && 
+          whyUs && whyUs.getBoundingClientRect().top <= 0 && 
           whyUs.getBoundingClientRect().bottom >= 0
         ) {
           this.headerIsWhite = true;
@@ -134,11 +134,11 @@ export default {
       if ($nuxt.$route.name === 'services') {
         const infrastructureOptimisation = document.getElementById('infrastructure-optimisation');
         const itConsulting = document.getElementById('it-consulting');
-  
+
         if (
-          infrastructureOptimisation.getBoundingClientRect().top <= 0 && 
+          infrastructureOptimisation && infrastructureOptimisation.getBoundingClientRect().top <= 0 && 
           infrastructureOptimisation.getBoundingClientRect().bottom >= 0 ||
-          itConsulting.getBoundingClientRect().top <= 0 && 
+          itConsulting && itConsulting.getBoundingClientRect().top <= 0 && 
           itConsulting.getBoundingClientRect().bottom >= 0
         ) {
           this.headerIsWhite = true;

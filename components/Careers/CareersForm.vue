@@ -39,15 +39,12 @@
             </h4>
             <ValidationProvider rules="required" v-slot="{ classes, errors }">
               <ul class="careers__position-list">
-                <RadioButton
-                  v-for="(radio, i) in radioData"
-                  :key="i"
-                  :radio="radio"
-                  v-model="positionValue"
-                  @change="changePositionValue"
-                />
-                <span class="modal-error-text error-text">{{ errors[0] }}</span>
+                <div class="careers__position-list_group">
+                  <UIRadioButtons ref="radioButtons" :radios="radioData" v-model="positionValue" />
+                  <span class="form-text">roles.</span>
+                </div>
               </ul>
+              <span class="modal-error-text error-text">{{ errors[0] }}</span>
             </ValidationProvider>
             <h4 class="careers__form-description form-text email-title">
               Please reply to
@@ -100,8 +97,8 @@
 
 <script>
 import FileInput from '@/components/Careers/FileInput';
-import RadioButton from '@/components/Careers/RadioButton';
 import Button from '@/components/Careers/Button';
+import UIRadioButtons from '@/components/ui/UIRadioButtons';
 import SuccessModal from '@/components/Modals/success-modal';
 
 export default {
@@ -115,10 +112,10 @@ export default {
       selectedFile: null,
       linkedinProfile: null,
       radioData: [
-        { id: 'senior', name: 'position', labelText: 'Senior,' },
-        { id: 'middle', name: 'position', labelText: 'Middle,' },
-        { id: 'junior', name: 'position', labelText: 'Junior,' },
-        { id: 'intern', name: 'position', labelText: 'Intern' }
+        { type: 'senior', label: 'Senior,' },
+        { type: 'middle', label: 'Middle,' },
+        { type: 'junior', label: 'Junior,' },
+        { type: 'intern', label: 'Intern' }
       ],
       isEmailSent: false
     };
@@ -128,16 +125,13 @@ export default {
   },
   components: {
     FileInput,
-    RadioButton,
     Button,
+    UIRadioButtons,
     SuccessModal
   },
   methods: {
     onFileChanged(params) {
       params;
-    },
-    changePositionValue(newPositionValue) {
-      this.positionValue = newPositionValue;
     },
     sendData(e) {
       if (!this.errors) {
@@ -148,7 +142,7 @@ export default {
             fullName: this.fullName,
             email: this.email,
             linkedinProfile: this.linkedinProfile,
-            positionValue: this.positionValue,
+            positionValue: this.positionValue.type,
             positionTitle: this.positionTitle
           },
           attachments: [
@@ -175,6 +169,7 @@ export default {
     resetForm() {
       this.$refs.form.reset();
       this.$refs.fileInput.reset();
+      this.$refs.radioButtons.reset();
       this.fullName = null;
       this.positionValue = null;
       this.positionTitle = null;
@@ -198,6 +193,15 @@ export default {
 .careers {
   .container {
     position: relative;
+  }
+
+  &__position-list_group {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 10px;
+    }
   }
 
   &__form {
