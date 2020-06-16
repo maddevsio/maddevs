@@ -105,6 +105,7 @@ export default {
     &__paragraph {
       max-width: 360px;
       padding-bottom: 20px;
+      line-height: 139%;
     }
 
     &__mobile-title-icon {
@@ -140,6 +141,29 @@ export default {
     .frontend-item {
       .software-development_content__sub-title {
         max-width: 370px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .software-development_content {
+      padding-top: 83px;
+
+      &__main-title {
+        padding-bottom: 52px;
+      }
+
+      &__title {
+        font-size: 50px;
+        line-height: 110%;
+        letter-spacing: -2px;
+        padding-bottom: 25px;
+      }
+
+      &__sub-title {
+        font-size: 32px;
+        line-height: 110%;
+        letter-spacing: -1px;
       }
     }
   }

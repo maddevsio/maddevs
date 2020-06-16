@@ -105,6 +105,33 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1280px) {
+    .it-consulting {
+      padding-top: 83px;
+
+      &__content-item {
+        max-width: 310px;
+      }
+
+      &__main-title {
+        padding-bottom: 0;
+      }
+
+      &__title {
+        font-size: 50px;
+        line-height: 110%;
+        letter-spacing: -2px;
+        padding-bottom: 25px;
+      }
+
+      &__sub-title {
+        font-size: 32px;
+        line-height: 110%;
+        letter-spacing: -1px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1180px) {
     .it-consulting {
       &__content-item {

@@ -77,6 +77,14 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1280px) {
+    .infrastructure-optimisation {
+      &__main-title {
+        padding-bottom: 0;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1024px) {
     .infrastructure-optimisation {
       &__flex-wrapper  {

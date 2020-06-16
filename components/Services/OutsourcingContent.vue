@@ -77,8 +77,7 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      max-width: 725px;
-      margin-right: 108px;
+      max-width: 47%;
     }
 
     &__title,
@@ -164,10 +163,33 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1390px) {
+  @media only screen and (max-width: 1280px) {
     .it-outsourcing {
-      button {
-        width: 380px;
+      padding: 170px 0;
+
+      &__main-title {
+        padding-bottom: 52px;
+      }
+
+      &__title {
+        font-size: 50px;
+        line-height: 110%;
+        letter-spacing: -2px;
+        padding-bottom: 0;
+      }
+
+      &__sub-title {
+        font-size: 32px;
+        line-height: 110%;
+        letter-spacing: -1px;
+      }
+    }
+
+    .teams,
+    .individuals * {
+
+      .it-outsourcing__paragraph {
+        width: 435px;
       }
     }
   }
