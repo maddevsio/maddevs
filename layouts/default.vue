@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <perfect-scrollbar id="PageScrollBar" class="page-scrollbar">
     <Header/>
-    <nuxt/>
+      <nuxt/>
     <Footer />
     <client-only>
       <ContactMeModal />
@@ -17,7 +17,7 @@
       <ProcessAuditModal />
       <TeamHeadcountModal />
     </client-only>
-  </div>
+  </perfect-scrollbar>
 </template>
 
 <script>
@@ -56,3 +56,15 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+  .page-scrollbar {
+    height: 100vh;
+    overflow: hidden;
+
+    /deep/ .ps__rail-y {
+      z-index: 999;
+      cursor: pointer;
+    }
+  }
+</style>

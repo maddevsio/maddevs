@@ -1,5 +1,5 @@
 <template>
-  <header class="header" :class="{'mobile-menu_is-open': mobileMenuIsOpen, 'white': headerIsWhite}">
+  <header ref="header" class="header" :class="{'mobile-menu_is-open': mobileMenuIsOpen, 'white': headerIsWhite}">
     <div class="container">
       <div class="header__header-content_wrap">
         <div class="header__left-nav_bar">
@@ -90,15 +90,21 @@ export default {
       headerIsWhite: false
     };
   },
-  mounted () {
-    window.addEventListener('scroll', this.mainPageHandleScroll);
-    window.addEventListener('scroll', this.servicesPageHandleScroll);
-    window.addEventListener('scroll', this.projectsPageHandleScroll);
+  mounted() {
+    const scrollbar = document.getElementById('PageScrollBar');
+    if (scrollbar) {
+      scrollbar.addEventListener('scroll', this.mainPageHandleScroll);
+      scrollbar.addEventListener('scroll', this.servicesPageHandleScroll);
+      scrollbar.addEventListener('scroll', this.projectsPageHandleScroll);
+    }
   },
-  destroyed () {
-    window.removeEventListener('scroll', this.mainPageHandleScroll);
-    window.removeEventListener('scroll', this.servicesPageHandleScroll);
-    window.removeEventListener('scroll', this.projectsPageHandleScroll);
+  destroyed() {
+    const scrollbar = document.getElementById('PageScrollBar');
+    if (scrollbar) {
+      scrollbar.removeEventListener('scroll', this.mainPageHandleScroll);
+      scrollbar.removeEventListener('scroll', this.servicesPageHandleScroll);
+      scrollbar.removeEventListener('scroll', this.projectsPageHandleScroll);
+    }
   },
   methods: {
     getMobileMenuState(mobileMenuDisplayState) {
@@ -167,7 +173,7 @@ export default {
     position: fixed;
     z-index: 2;
     padding-top: 144px;
-    background: $header-gradient--black-transparent;
+    transition: all 3s ease;
 
     button {
       width: 135px;
@@ -294,10 +300,44 @@ export default {
         top: 20px;
       }
     }
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: $header-gradient--black-transparent;
+      transition: all 0.2s ease;
+      z-index: -1;
+      opacity: 1;
+    }
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: $header-gradient--white-transparent;
+      transition: all 0.2s ease;
+      z-index: -1;
+      opacity: 0;
+    }
   }
 
   .white {
-    background: $header-gradient--white-transparent;
+    &::before {
+      content: '';
+      opacity: 0;
+    }
+
+    &::after {
+      content: '';
+      opacity: 1;
+    }
   }
 
   .mobile-menu_is-open {
