@@ -92,15 +92,19 @@ export default {
   },
   mounted() {
     const scrollbar = document.getElementById('PageScrollBar');
-    scrollbar.addEventListener('scroll', this.mainPageHandleScroll);
-    scrollbar.addEventListener('scroll', this.servicesPageHandleScroll);
-    scrollbar.addEventListener('scroll', this.projectsPageHandleScroll);
+    if (scrollbar) {
+      scrollbar.addEventListener('scroll', this.mainPageHandleScroll);
+      scrollbar.addEventListener('scroll', this.servicesPageHandleScroll);
+      scrollbar.addEventListener('scroll', this.projectsPageHandleScroll);
+    }
   },
   destroyed() {
     const scrollbar = document.getElementById('PageScrollBar');
-    scrollbar.removeEventListener('scroll', this.mainPageHandleScroll);
-    scrollbar.removeEventListener('scroll', this.servicesPageHandleScroll);
-    scrollbar.removeEventListener('scroll', this.projectsPageHandleScroll);
+    if (scrollbar) {
+      scrollbar.removeEventListener('scroll', this.mainPageHandleScroll);
+      scrollbar.removeEventListener('scroll', this.servicesPageHandleScroll);
+      scrollbar.removeEventListener('scroll', this.projectsPageHandleScroll);
+    }
   },
   methods: {
     getMobileMenuState(mobileMenuDisplayState) {
