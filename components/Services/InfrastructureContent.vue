@@ -44,6 +44,19 @@ export default {
       padding-bottom: 5px;
     }
 
+    &__title {
+      font-size: 70px;
+      line-height: 110%;
+      letter-spacing: -2px;
+      padding-bottom: 16px;
+    }
+
+    &__sub-title {
+      font-size: 32px;
+      line-height: 110%;
+      letter-spacing: -1px;
+    }
+
     &__paragraph {
       padding-bottom: 46px;
     }

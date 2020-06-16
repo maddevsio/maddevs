@@ -79,8 +79,8 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 120px;
-    padding-right: 30px;
+    padding-top: 91px;
+    padding-right: 87px;
 
     &:last-child {
       padding-right: 0;
@@ -97,6 +97,9 @@ export default {
 
     &__sub-title {
       padding-bottom: 10px;
+      font-size: 32px;
+      line-height: 110%;
+      letter-spacing: -1px;
     }
 
     &__paragraph {
@@ -117,6 +120,11 @@ export default {
     /deep/.icons-list {
       padding-top: 18px;
       padding-bottom: 46px;
+    }
+
+    &__title {
+      font-size: 70px;
+      line-height: 110%;
     }
   }
 
@@ -171,7 +179,7 @@ export default {
       }
 
       &__title {
-        padding-bottom: 17px;
+        padding-bottom: 25px;
       }
 
       /deep/.icons-list {

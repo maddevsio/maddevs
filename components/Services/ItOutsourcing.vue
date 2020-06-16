@@ -59,7 +59,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .it-outsourcing {
-    padding: 240px 0;
+    padding: 211px 0;
     background-color: $bgcolor--black;
 
     &__main-title {

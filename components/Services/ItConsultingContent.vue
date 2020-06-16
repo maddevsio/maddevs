@@ -61,7 +61,7 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding-top: 120px;
+      padding-top: 87px;
       padding-right: 30px;
 
       &:last-child {
@@ -75,6 +75,9 @@ export default {
 
     &__sub-title {
       padding-bottom: 10px;
+      font-size: 32px;
+      line-height: 110%;
+      letter-spacing: -1px;
     }
 
     &__paragraph {
@@ -83,7 +86,7 @@ export default {
   }
 
   @media only screen and (max-width: 1560px) {
-   .it-consulting {
+    .it-consulting {
       &__content-item {
         max-width: 390px;
       }

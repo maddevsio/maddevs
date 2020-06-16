@@ -71,7 +71,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .it-consulting {
-    padding-top: 127px;
+    padding-top: 105px;
     padding-bottom: 151px;
     background-color: $bgcolor--white;
 

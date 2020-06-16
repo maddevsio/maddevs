@@ -66,7 +66,11 @@ export default {
 
   .it-outsourcing {
     &__button-trigger {
-      width: 450px;
+      width: 100%;
+    }
+
+    &__sub-title {
+      margin-bottom: 15px;
     }
 
     &__outsourcing-content {
@@ -74,6 +78,7 @@ export default {
       flex-direction: column;
       justify-content: space-between;
       max-width: 725px;
+      margin-right: 108px;
     }
 
     &__title,
@@ -85,7 +90,10 @@ export default {
 
     &__title {
       height: 100px;
-      padding-bottom: 20px;
+      padding-bottom: 33px;
+      font-size: 90px;
+      line-height: 104%;
+      letter-spacing: -3px;
     }
 
     &__paragraph {
@@ -152,18 +160,6 @@ export default {
 
       .it-outsourcing__button-trigger {
         border-color: $border-color--grey-light-outsourcing-section;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1560px) {
-    .it-outsourcing {
-      button {
-        width: 400px;
-      }
-
-      &__title {
-        padding-bottom: 10px;
       }
     }
   }
