@@ -195,8 +195,8 @@ export default {
   &__position-list {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     position: relative;
+    flex-wrap: wrap;
     list-style: none;
     margin-top: 15px;
     padding: 0;

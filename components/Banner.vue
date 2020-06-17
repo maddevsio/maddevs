@@ -8,8 +8,8 @@
               Your <br class="phone-screen-br"> Trusted <br> <span class="main-title-white_part">IT Partner</span>
             </h1>
             <h1 class="banner-main_title" v-if="currentPageName === 'projects'">
-              Check out our
-              <span class="main-title-white_part">50+ implemented projects!</span>
+              Check out<br class="tablet-break"> our<br class="desktop-break">
+              <span class="main-title-white_part"> 50+ <br class="tablet-break">implemented projects!</span>
             </h1>
             <h1 class="banner-main_title--white-first" v-if="currentPageName === 'careers'">
               Look!
@@ -160,6 +160,10 @@ export default {
     .navigation-wrap {
       margin-top: 170px;
     }
+
+    .tablet-break {
+      display: none;
+    }
   }
 
   .careers {
@@ -234,7 +238,7 @@ export default {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
-        width: 80%;
+        width: 94%;
       }
     }
   }
@@ -428,6 +432,18 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1005px) and (min-width: 770px) {
+    .projects {
+      .tablet-break {
+        display: block;
+      }
+
+      .desktop-break {
+        display: none;
+      }
+    }
+  }
+
   @media only screen and (max-width: 970px) {
     .banner {
       .text-content_wrapper {
@@ -523,6 +539,18 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 714px) {
+    .projects {
+      .tablet-break {
+        display: block;
+      }
+
+      .desktop-break {
+        display: none;
+      }
+    }
+  }
+
   @media only screen and (max-width: 670px) {
     .careers {
       .container {
@@ -603,6 +631,16 @@ export default {
     .banner {
       .phone-screen-logo {
         display: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 515px) {
+    .projects {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first {
+        font-size: 68px;
       }
     }
   }
