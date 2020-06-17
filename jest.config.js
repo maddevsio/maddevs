@@ -23,8 +23,8 @@ module.exports = {
     '<rootDir>/pages/*.vue'
   ],
   coverageReporters: [
-    "json-summary",
-    "text",
-    "lcov"
+    'json-summary',
+    'text',
+    'lcov'
   ]
 };
