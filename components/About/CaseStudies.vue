@@ -330,6 +330,19 @@ export default {
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-flame-background {
+      top: -448px;
+      width: 448px;
+      right: 142px;
+    }
+  }
+}
+
 @media only screen and (max-width: 1600px) {
   .case-studies {
     &__main-title {
