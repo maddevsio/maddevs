@@ -97,6 +97,7 @@ export default {
         {
           projectName: 'nambafood',
           logoImg: 'nambafoodColored',
+          link: 'https://blog.maddevs.io/',
           contributionWidgetColors: ['#ec1c24', '#96969c'],
           projectBackground: 'nambafoodBackground',
           projectColor: '#f8f7f6',
@@ -107,6 +108,7 @@ export default {
         {
           projectName: 'teacherly',
           logoImg: 'teacherlyColored',
+          link: 'https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f',
           contributionWidgetColors: ['#ec1c24', '#fff'],
           projectBackground: 'teacherlyBackground',
           projectColor: '#56448e',
@@ -117,6 +119,7 @@ export default {
         {
           projectName: 'guardrails',
           logoImg: 'guardrailsColored',
+          link: 'https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b',
           contributionWidgetColors: ['#96969c', '#96969c'],
           projectBackground: 'guardrailsBackground',
           projectColor: '#0e1b27',
@@ -127,6 +130,7 @@ export default {
         {
           projectName: 'godee',
           logoImg: 'godeeColored',
+          link: 'https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5',
           contributionWidgetColors: ['#000', '#000'],
           projectBackground: 'godeeBackground',
           projectColor: '#ff6A01',
@@ -281,7 +285,7 @@ export default {
     flex-wrap: wrap;
 
     &-flame-background {
-      top: -434px;
+      top: -448px;
       width: 448px;
       right: 142px;
     }

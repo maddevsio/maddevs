@@ -125,6 +125,7 @@ export default {
 
       &__title {
         max-width: 550px;
+        font-size: 47px;
       }
     }
   }
@@ -132,7 +133,32 @@ export default {
   @media only screen and (max-width: 768px) {
     .infrastructure-optimisation {
       &__title {
+        font-size: 42px;
+        line-height: 110%;
+        letter-spacing: -2px;
+        padding-bottom: 20px;
         max-width: 460px;
+      }
+
+      &__sub-title {
+        padding-bottom: 16px;
+      }
+
+      &__paragraph {
+        padding-bottom: 24px;
+      }
+
+      &__flex-wrapper {
+        margin-top: 38px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 656px) {
+    .infrastructure-optimisation {
+      &__title {
+        max-width: 100%;
+        margin-right: 0;
       }
     }
   }

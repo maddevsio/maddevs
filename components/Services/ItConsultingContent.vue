@@ -153,6 +153,27 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 768px) {
+    .it-consulting {
+      &__title {
+        font-size: 50px;
+        padding-bottom: 14px;
+      }
+
+      &__sub-title {
+        padding-bottom: 14px;
+      }
+
+      &__content-item {
+        padding-top: 47px;
+
+        &:first-child {
+          padding-top: 78px;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 520px) {
     .it-consulting {
       &__title {

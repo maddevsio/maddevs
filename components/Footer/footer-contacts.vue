@@ -6,25 +6,13 @@
 				<li>
 					<a href="tel:+1 888 401 3401" class="footer-contacts__phone-item">
 						<img src="@/assets/img/Flags/united-states.svg" alt="United States">
-						+1 888 401 3401
-					</a>
-				</li>
-				<li>
-					<a href="tel:+1 208 473 2904" class="footer-contacts__phone-item">
-						<img src="@/assets/img/Flags/united-states.svg" alt="United States">
-						+1 208 473 2904
+						+1 833 623 3387
 					</a>
 				</li>
 				<li>
 					<a href="tel:+1 888 401 3401" class="footer-contacts__phone-item">
 						<img src="@/assets/img/Flags/united-kingdom.svg" alt="United Kingdom">
-						+1 888 401 3401
-					</a>
-				</li>
-				<li>
-					<a href="tel:+1 208 473 2904" class="footer-contacts__phone-item">
-						<img src="@/assets/img/Flags/united-kingdom.svg" alt="United Kingdom">
-						+1 208 473 2904
+						+44 20 3984 8555
 					</a>
 				</li>
 			</ul>
@@ -89,7 +77,7 @@ export default {
 		}
 
 		&__phones-list {
-			grid-template-columns: repeat(2, 180px);
+			grid-template-columns: repeat(1, 1fr);
 		}
 
 		&__messengers-list {
@@ -120,36 +108,25 @@ export default {
 		}
 
 		&__message-us {
-			padding-left: 111px;
-		}
-	}
-
-	@media only screen and (max-width: 1390px) {
-		.footer-contacts {
-			&__message-us {
-				padding-left: 60px;
-			}
+			padding-left: 133px;
 		}
 	}
 
 	@media only screen and (max-width: 1180px) {
 		.footer-contacts {
-			&__phones-list,
 			&__messengers-list {
 				grid-template-columns: 1fr;
+			}
+
+			&__message-us {
+				padding-left: 0;
 			}
 		}
 	}
 
 	@media only screen and (max-width: 1024px) {
 		.footer-contacts {
-			&__phones-list {
-				grid-template-columns: repeat(2, 175px);
-			}
-
-			&__messengers-list {
-				grid-template-columns: repeat(2, 130px);
-			}
+			justify-content: space-between;
 
 			&__phone-item {
 				font-size: 18px;
@@ -166,14 +143,25 @@ export default {
 					top: 4px;
 				}
 			}
+
+			&__messengers-list {
+				grid-template-columns: repeat(2, 1fr);
+			}
 		}
 	}
 
-	@media only screen and (max-width: 920px) {
+	@media only screen and (max-width: 576px) {
 		.footer-contacts {
-			&__phones-list,
-			&__messengers-list {
-				grid-template-columns: 1fr;
+			flex-direction: column;
+
+			&__phone-item,
+			&__messenger-item {
+				top: 3px;
+				font-size: 16px;
+			}
+
+			&__phones-list  {
+				padding-bottom: 25px;
 			}
 		}
 	}
@@ -184,10 +172,6 @@ export default {
 			&__messenger-item {
 				top: 3px;
 				font-size: 16px;
-			}
-
-			&__message-us {
-				padding-left: 40px;
 			}
 		}
 	}

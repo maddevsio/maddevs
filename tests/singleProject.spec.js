@@ -9,13 +9,15 @@ describe('CaseStudies component', () => {
   let wrapper;
   let props = {
     project: {
-      projectName: 'nambafood',
-      logoImg: 'nambafoodColored',
-      contributionWidgetColors: ['#ec1c24', '#96969c'],
-      projectBackground: 'nambafoodBackground',
-      projectColor: '#f8f7f6',
-      projectTitle: 'Contactless Delivery Service',
-      projectDescription: 'Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.'
+      projectName: 'godee',
+      logoImg: 'godeeColored',
+      link: 'https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5',
+      contributionWidgetColors: ['#000', '#000'],
+      projectBackground: 'godeeBackground',
+      projectColor: '#ff6A01',
+      projectTitle: 'Mass transportation company',
+      projectDescription:
+        'Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.'
     }
   };
 

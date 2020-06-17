@@ -1,6 +1,6 @@
 <template>
   <a
-    href="https://blog.maddevs.io/"
+    :href="project.link"
     class="single-project"
     :style="{ background: project.projectColor }"
   >
@@ -60,6 +60,10 @@ export default {
         required: true
       },
       logoImg: {
+        type: String,
+        required: true
+      },
+      link: {
         type: String,
         required: true
       },
