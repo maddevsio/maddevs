@@ -94,7 +94,7 @@ exports[`Header renders correctly 1`] = `
              
             <a
               class="header__facebook-link header__soc-link"
-              href="https://www.facebook.com/maddevsio"
+              href="https://www.facebook.com/maddevsllc"
               target="_blank"
             >
               <img
@@ -106,6 +106,7 @@ exports[`Header renders correctly 1`] = `
            
           <div
             class="header__phones-dropdown_wrap"
+            id="united-kingdom"
           >
             <a
               class="header__selected-phone"
@@ -137,38 +138,14 @@ exports[`Header renders correctly 1`] = `
               </a>
               <a
                 class="header__phone-item"
-                href="tel:+44 20 3984 8555"
+                href="tel:+1 833 623 3387"
               >
                 <img
-                  alt="poland"
+                  alt="united-states"
                   src="[object Object]"
                 />
                 
-                +44 20 3984 8555
-              
-              </a>
-              <a
-                class="header__phone-item"
-                href="tel:+44 20 3984 8555"
-              >
-                <img
-                  alt="russia"
-                  src="[object Object]"
-                />
-                
-                +44 20 3984 8555
-              
-              </a>
-              <a
-                class="header__phone-item"
-                href="tel:+44 20 3984 8555"
-              >
-                <img
-                  alt="belarus"
-                  src="[object Object]"
-                />
-                
-                +44 20 3984 8555
+                +1 833 623 3387
               
               </a>
             </div>
@@ -294,22 +271,7 @@ exports[`Header renders correctly 1`] = `
                       src="@/assets/img/Flags/united-states.svg"
                     />
                     
-					+1 888 401 3401
-				
-                  </a>
-                </li>
-                 
-                <li>
-                  <a
-                    class="footer-contacts__phone-item"
-                    href="tel:+1 208 473 2904"
-                  >
-                    <img
-                      alt="United States"
-                      src="@/assets/img/Flags/united-states.svg"
-                    />
-                    
-					+1 208 473 2904
+					+1 833 623 3387
 				
                   </a>
                 </li>
@@ -324,22 +286,7 @@ exports[`Header renders correctly 1`] = `
                       src="@/assets/img/Flags/united-kingdom.svg"
                     />
                     
-					+1 888 401 3401
-				
-                  </a>
-                </li>
-                 
-                <li>
-                  <a
-                    class="footer-contacts__phone-item"
-                    href="tel:+1 208 473 2904"
-                  >
-                    <img
-                      alt="United Kingdom"
-                      src="@/assets/img/Flags/united-kingdom.svg"
-                    />
-                    
-					+1 208 473 2904
+					+44 20 3984 8555
 				
                   </a>
                 </li>
