@@ -195,6 +195,11 @@ export default {
   &__position-list {
     display: flex;
     align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
 
     /deep/ .ui-radio-buttons {
       &_item {
@@ -255,15 +260,6 @@ export default {
 
   &__form-linkedin-input {
     width: 6.69em;
-  }
-
-  &__position-list {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin-top: 15px;
-    padding: 0;
   }
 
   &__form-description {
