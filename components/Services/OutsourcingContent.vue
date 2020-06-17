@@ -240,12 +240,18 @@ export default {
         width: initial;
       }
 
-      &__outsourcing-content {
-        max-width: 100%;
-      }
-
       &__sub-title  {
         width: initial;
+      }
+
+      &__title {
+        font-size: 48px;
+      }
+
+      &__sub-title {
+        font-size: 33px;
+        line-height: 110%;
+        letter-spacing: -1px;
       }
     }
 
@@ -255,9 +261,22 @@ export default {
         width: initial;
       }
     }
+  }
 
-    .individuals {
-      padding-top: 104px;
+  @media only screen and (max-width: 768px) {
+    .it-outsourcing {
+      &__title {
+        font-size: 47px;
+        margin-bottom: -33px;
+      }
+
+      &__sub-title {
+        font-size: 32px;
+      }
+
+      &__paragraph {
+        line-height: 119%;
+      }
     }
   }
 
