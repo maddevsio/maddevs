@@ -285,7 +285,7 @@ export default {
     flex-wrap: wrap;
 
     &-flame-background {
-      top: -434px;
+      top: -448px;
       width: 448px;
       right: 142px;
     }
@@ -326,19 +326,6 @@ export default {
           width: auto;
         }
       }
-    }
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-
-    &-flame-background {
-      top: -448px;
-      width: 448px;
-      right: 142px;
     }
   }
 }
