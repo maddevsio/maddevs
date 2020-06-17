@@ -195,6 +195,11 @@ export default {
   &__position-list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
 
     /deep/ .ui-radio-buttons {
       &_item {
@@ -257,15 +262,6 @@ export default {
     width: 6.69em;
   }
 
-  &__position-list {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin-top: 15px;
-    padding: 0;
-  }
-
   &__form-description {
     font-family: 'Hoves-Regular';
     color: $text-color--black;
@@ -304,19 +300,6 @@ export default {
   }
 }
 
-@media only screen and (min-width: 1600px) {
-  .careers {
-    &__form-name-label,
-    &__form-description {
-      position: relative;
-
-      .modal-error-text {
-        margin-top: -11px;
-      }
-    }
-  }
-}
-
 @media only screen and (max-width: 1600px) {
   .careers {
     &__form-name-label,
@@ -324,7 +307,7 @@ export default {
       position: relative;
 
       .modal-error-text {
-        margin-top: -16px;
+        margin-top: -11px;
       }
     }
   }

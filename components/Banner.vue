@@ -733,7 +733,7 @@ export default {
 
       .green-image {
         top: 52%;
-        left: 70%
+        left: 70%;
       }
     }
 
@@ -763,7 +763,7 @@ export default {
       .green-image {
         width: 78px;
         top: 54%;
-        left: 71.5%
+        left: 71.5%;
       }
     }
   }
