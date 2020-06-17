@@ -133,33 +133,31 @@ export default {
     sendData(e) {
       if (!this.errors) {
         //TODO: add ajax request
-        const form = {
-          templateId: 305491, // Required
-          variables: {
-            fullName: this.fullName,
-            email: this.email,
-            linkedinProfile: this.linkedinProfile,
-            positionValue: this.positionValue.type,
-            positionTitle: this.positionTitle
-          },
-          attachments: [
-            {
-              content: this.selectedFile,
-              filename: 'File',
-              type: 'application/pdf',
-              disposition: 'attachment'
+        this.toBase64(this.selectedFile).then(base64 => {
+          const form = {
+            templateId: 305491, // Required
+            variables: {
+              fullName: this.fullName,
+              email: this.email,
+              linkedinProfile: this.linkedinProfile,
+              positionValue: this.positionValue.type,
+              positionTitle: this.positionTitle
+            },
+            attachment:{
+              base64: base64.replace(/^data:(.*,)?/, ''),
+              name: this.selectedFile.name
             }
-          ]
-        };
-        this.$store.dispatch('sendEmail', form).then(res => {
-          if (res.status === 200) {
-            this.isEmailSent = true;
-            setTimeout(() => {
-              this.resetForm();
-            }, 3000);
-          } else {
-            this.isEmailSent = false;
-          }
+          };
+          this.$store.dispatch('sendEmail', form).then(res => {
+            if (res.status === 200) {
+              this.isEmailSent = true;
+              setTimeout(() => {
+                this.resetForm();
+              }, 3000);
+            } else {
+              this.isEmailSent = false;
+            }
+          });
         });
       }
     },
@@ -174,6 +172,14 @@ export default {
       this.selectedFile = null;
       this.linkedinProfile = null;
       this.isEmailSent = false;
+    },
+    toBase64(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = error => reject(error);
+      });
     },
     focusInput() {
       this.$nextTick(async () => {
@@ -193,8 +199,13 @@ export default {
   }
 
   &__position-list {
-    display: flex;
     align-items: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
 
     /deep/ .ui-radio-buttons {
       &_item {
@@ -244,7 +255,7 @@ export default {
     background-color: transparent;
     border: 0px solid;
     height: 65px;
-    width: 310px;
+    max-width: 610px;
     color: $text-color--grey;
     caret-color: $text-color--red;
   }
@@ -255,15 +266,6 @@ export default {
 
   &__form-linkedin-input {
     width: 6.69em;
-  }
-
-  &__position-list {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin-top: 15px;
-    padding: 0;
   }
 
   &__form-description {
