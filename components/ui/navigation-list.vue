@@ -75,7 +75,7 @@ export default {
     }
   }
 
-   @media only screen and (max-width: 970px) {
+  @media only screen and (max-width: 970px) {
     .navigation-list {
       display: grid;
       grid-template-columns: repeat(2, 300px);

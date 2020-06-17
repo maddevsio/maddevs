@@ -300,19 +300,6 @@ export default {
   }
 }
 
-@media only screen and (min-width: 1600px) {
-  .careers {
-    &__form-name-label,
-    &__form-description {
-      position: relative;
-
-      .modal-error-text {
-        margin-top: -11px;
-      }
-    }
-  }
-}
-
 @media only screen and (max-width: 1600px) {
   .careers {
     &__form-name-label,
@@ -320,7 +307,7 @@ export default {
       position: relative;
 
       .modal-error-text {
-        margin-top: -16px;
+        margin-top: -11px;
       }
     }
   }

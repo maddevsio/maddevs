@@ -53,8 +53,12 @@ export default {
     padding: 30px 60px 60px;
   }
 
-  .vm--overlay {
-    background: $modal-overlay-bg-color !important;
+  /deep/.vm--overlay {
+    background: $modal-overlay-bg-color;
+  }
+
+  /deep/.vm--modal {
+    box-shadow: none;
   }
 
   .close-modal {
