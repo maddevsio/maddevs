@@ -240,15 +240,12 @@ export default {
         width: initial;
       }
 
-      &__sub-title  {
-        width: initial;
-      }
-
       &__title {
         font-size: 48px;
       }
 
       &__sub-title {
+        width: initial;
         font-size: 33px;
         line-height: 110%;
         letter-spacing: -1px;

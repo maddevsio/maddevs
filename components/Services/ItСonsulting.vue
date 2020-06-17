@@ -92,6 +92,13 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 768px) {
+    .it-consulting {
+      padding-top: 92px;
+      padding-bottom: 117px;
+    }
+  }
+
   @media only screen and (max-width: 520px) {
     .it-consulting {
       padding-top: 60px;
