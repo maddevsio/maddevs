@@ -5,8 +5,7 @@
         <div class="text-content_wrapper">
           <div class="main-title-wrapper">
             <h1 class="banner-main_title" v-if="currentPageName === 'services'">
-              Your Trusted <br> <span class="media-item">IT</span>
-              <span class="main-title-white_part">Outsourcing <br> Partner</span>
+              Your <br class="phone-screen-br"> Trusted <br> <span class="main-title-white_part">IT Partner</span>
             </h1>
             <h1 class="banner-main_title" v-if="currentPageName === 'projects'">
               Check out our
@@ -143,6 +142,10 @@ export default {
       display: none;
       margin-bottom: -15px;
     }
+
+    .phone-screen-br {
+      display: none;
+    }
   }
 
   .projects {
@@ -181,15 +184,10 @@ export default {
   }
 
   .services {
-    .media-item {
-      color: $text-color--white;
-      text-shadow: none;
-    }
-
     .icon-item {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+      min-height: 415px;
+      margin-top: 23px;
+      margin-bottom: -36px;
 
       &:hover {
         .hover-image {
@@ -202,60 +200,17 @@ export default {
       }
     }
 
-    .hover-image,
-    .default-image {
-      position: absolute;
-      top: 64%;
-      left: 60.1%;
-    }
-
-    .green-image {
-      position: absolute;
-      top: 64%;
-      left: 65.4%;
+    .text-content_wrapper {
+      justify-content: space-between;
     }
 
     .hover-image {
       display: none;
     }
-  }
 
-  @media only screen and (max-width: 1880px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 65%;
-      }
-
-      .green-image {
-        left: 70.6%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1760px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 68%;
-      }
-
-      .green-image {
-        left: 73.9%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1700px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 70%;
-      }
-
-      .green-image {
-        left: 76.3%;
-      }
+    .green-image {
+      margin-top: -121px;
+      margin-right: 1px;
     }
   }
 
@@ -272,30 +227,6 @@ export default {
         display: flex;
       }
     }
-
-    .services {
-      .hover-image,
-      .default-image {
-        left: 68%;
-      }
-
-      .green-image {
-        left: 74.3%;
-      }
-    }
-  }
-
-   @media only screen and (max-width: 1580px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 67%;
-      }
-
-      .green-image {
-        left: 73.5%;
-      }
-    }
   }
 
   @media only screen and (max-width: 1670px) and (min-width: 1565px) {
@@ -309,22 +240,31 @@ export default {
   }
 
   @media only screen and (max-width: 1540px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 69%;
-      }
-
-      .green-image {
-        left: 75.5%;
-      }
-    }
-
     .index {
       .icon-item {
         img {
           width: 325px;
         }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1520px) {
+    .banner {
+      .text-content_wrapper {
+        padding-bottom: 130px;
+      }
+    }
+
+    .services {
+      .hover-image,
+      .default-image {
+        width: 296px;
+      }
+
+      .green-image {
+        width: 219px;
+        margin-top: -91px;
       }
     }
   }
@@ -354,56 +294,13 @@ export default {
       .banner-main_title--white-first {
         font-size: 149px;
       }
-
-      .text-content_wrapper {
-        padding-bottom: 147px;
-      }
     }
 
     .services {
-      .hover-image,
-      .default-image {
-        width: 296px;
-        top: 67%;
-        left: 71%;
-      }
-
-      .green-image {
-        width: 219px;
-        top: 67%;
-        left: 76.3%;
-      }
-
       /deep/.navigation-list {
         /deep/.navigation-item {
           padding-right: 54px;
         }
-      }
-    }
-  }
-
-   @media only screen and (max-width: 1420px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 70%;
-      }
-
-      .green-image {
-        left: 75.3%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1380px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 71%;
-      }
-
-      .green-image {
-        left: 80.4%;
       }
     }
   }
@@ -415,10 +312,6 @@ export default {
       .banner-main_title--white-first {
         font-size: 131px;
       }
-
-      .text-content_wrapper {
-        padding-bottom: 122px;
-      }
     }
 
     .index {
@@ -428,30 +321,12 @@ export default {
         }
       }
     }
-
-    .services {
-      .hover-image,
-      .default-image {
-        width: 231px;
-        top: 54%;
-        left: 69%;
-      }
-
-      .green-image {
-        width: 170px;
-        top: 54%;
-        left: 73.6%;
-      }
-    }
   }
 
   @media only screen and (max-width: 1280px) {
     .banner {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first  {
-        font-size: 110px;
-        letter-spacing: -8px;
+      .text-content_wrapper {
+        padding-bottom: 190px;
       }
     }
 
@@ -464,6 +339,22 @@ export default {
         }
       }
     }
+
+    .services {
+      .icon-item {
+        min-height: 243px;
+      }
+
+      .hover-image,
+      .default-image {
+        width: 231px;
+      }
+
+      .green-image {
+        width: 170px;
+        margin-top: -71px;
+      }
+    }
   }
 
   @media only screen and (max-width: 1270px) {
@@ -474,31 +365,20 @@ export default {
         }
       }
     }
+  }
 
-    .services {
-      .hover-image,
-      .default-image {
-        left: 63%;
-      }
-
-      .green-image {
-        left: 67.8%;
+  @media only screen and (max-width: 1220px) {
+    .banner {
+      .banner-main_title,
+      .banner-main_title--white,
+      .banner-main_title--white-first  {
+        font-size: 110px;
+        letter-spacing: -8px;
       }
     }
   }
 
   @media only screen and (max-width: 1180px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 65%;
-      }
-
-      .green-image {
-        left: 70.2%;
-      }
-    }
-
     .index {
       .icon-item {
         img {
@@ -508,32 +388,6 @@ export default {
 
       .main-title-wrapper {
         padding-right: 15px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1140px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 70%;
-      }
-
-      .green-image {
-        left: 75.2%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1080px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 72%;
-      }
-
-      .green-image {
-        left: 77.5%;
       }
     }
   }
@@ -552,19 +406,24 @@ export default {
         }
       }
     }
+  }
 
+  @media only screen and (max-width: 1010px) {
     .services {
+      /deep/.navigation-list {
+        /deep/.navigation-item {
+          padding-right: 41px;
+        }
+      }
+
       .hover-image,
       .default-image {
-        width: 188px;
-        top: 44%;
-        left: 73%;
+        width: 210px;
       }
 
       .green-image {
-        width: 140px;
-        top: 44%;
-        left: 77.7%;
+        width: 155px;
+        margin-top: -65px;
       }
     }
   }
@@ -594,14 +453,11 @@ export default {
       .hover-image,
       .default-image {
         width: 188px;
-        top: 59%;
-        left: 57%;
       }
 
       .green-image {
         width: 140px;
-        top: 59%;
-        left: 61.9%;
+        margin-top: -58px;
       }
     }
   }
@@ -614,71 +470,6 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 920px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 59%;
-      }
-
-      .green-image {
-        left: 64%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 900px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 61%;
-      }
-
-      .green-image {
-        left: 66%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 880px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 62%;
-      }
-
-      .green-image {
-        left: 67.5%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 840px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 65%;
-      }
-
-      .green-image {
-        left: 70.5%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 820px) {
-    .services {
-      .hover-image,
-      .default-image {
-        left: 68%;
-      }
-
-      .green-image {
-        left: 74%;
-      }
-    }
-  }
-
   @media only screen and (max-width: 768px) {
     .banner {
       .banner-main_title,
@@ -686,23 +477,6 @@ export default {
       .banner-main_title--white-first {
         font-size: 77px;
         letter-spacing: -5px;
-      }
-    }
-
-    .services {
-      .hover-image,
-      .default-image {
-        top: 46%;
-        left: 69%;
-      }
-
-      .green-image {
-        top: 46%;
-        left: 75%;
-      }
-
-      .media-item {
-        display: none;
       }
     }
 
@@ -733,27 +507,18 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 730px) {
-    .banner {
-      .phone-screen-logo {
-        display: inline;
-      }
-    }
-
+  @media only screen and (max-width: 755px) {
     .index {
       .icon-item {
         display: none;
       }
     }
+  }
 
-    .services {
-      .hover-image,
-      .default-image {
-        left: 67%;
-      }
-
-      .green-image {
-        left: 73.5%;
+  @media only screen and (max-width: 730px) {
+    .banner {
+      .phone-screen-logo {
+        display: inline;
       }
     }
   }
@@ -779,9 +544,14 @@ export default {
 
     .services {
       .hover-image,
-      .default-image,
+      .default-image {
+        width: 167px;
+      }
+
       .green-image {
-        display: none;
+        width: 125px;
+        margin-top: -50px;
+        margin-right: 0;
       }
     }
   }
@@ -822,10 +592,14 @@ export default {
         font-size: 77px;
         letter-spacing: -5px;
       }
+
+      .icon-item {
+        display: none;
+      }
     }
   }
 
-  @media only screen and (max-width: 555px) {
+  @media only screen and (max-width: 572px) {
     .banner {
       .phone-screen-logo {
         display: none;
@@ -846,27 +620,45 @@ export default {
         padding-bottom: 120px;
       }
     }
+
+    .services {
+      .text-content_wrapper {
+        padding-bottom: 172px;
+      }
+    }
   }
 
   @media only screen and (max-width: 440px) {
+    .banner {
+      .phone-screen-br {
+        display: block;
+      }
+    }
+
     .services {
+      .icon-item {
+        min-height: initial;
+        display: block;
+      }
+
       .hover-image,
       .default-image,
       .green-image {
         display: block;
+        position: absolute;
       }
 
       .hover-image,
       .default-image {
         width: 142px;
         top: 44%;
-        left: 48%;
+        left: 55%;
       }
 
       .green-image {
         width: 105px;
-        top: 44%;
-        left: 56%;
+        top: 55.5%;
+        left: 63.2%;
       }
     }
   }
@@ -875,13 +667,13 @@ export default {
     .services {
       .hover-image,
       .default-image {
-        top: 51%;
-        left: 51%;
+        top: 42.5%;
+        left: 61%;
       }
 
       .green-image {
-        top: 51%;
-        left: 60%;
+        top: 54%;
+        left: 70%;
       }
     }
   }
@@ -894,7 +686,7 @@ export default {
       }
 
       .green-image {
-        left: 67%;
+        left: 67.5%;
       }
     }
   }
@@ -908,25 +700,8 @@ export default {
       }
 
       .green-image {
-        top: 40%;
-        left: 68%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 370px) {
-    .services {
-      .hover-image,
-      .default-image {
-        width: 110px;
-        top: 54%;
-        left: 62%;
-      }
-
-      .green-image {
-        width: 81px;
-        top: 54%;
-        left: 70.5%;
+        top: 51.5%;
+        left: 68.5%;
       }
     }
   }
@@ -953,13 +728,12 @@ export default {
       .hover-image,
       .default-image {
         top: 38%;
-        left: 56%;
+        left: 61%;
       }
 
       .green-image {
-        width: 81px;
-        top: 38%;
-        left: 64.5%;
+        top: 52%;
+        left: 70%
       }
     }
 
@@ -973,6 +747,23 @@ export default {
 
       .text-content_wrapper {
         padding-bottom: 114px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .services {
+      .hover-image,
+      .default-image {
+        width: 105px;
+        top: 40%;
+        left: 63%;
+      }
+
+      .green-image {
+        width: 78px;
+        top: 54%;
+        left: 71.5%
       }
     }
   }
