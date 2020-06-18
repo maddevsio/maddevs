@@ -288,4 +288,30 @@ export default {
       }
     }
   }
+
+  @media only screen and (max-width: 375px) {
+    .it-outsourcing {
+      &__main-title {
+        padding-bottom: 25px;
+      }
+
+      &__title {
+        font-size: 41px;
+        line-height: 99%;
+        letter-spacing: -1px;
+        margin-bottom: -10px;
+      }
+
+      &__sub-title {
+        font-size: 27px;
+        line-height: 124%;
+        letter-spacing: -1px;
+        margin-bottom: 10px;
+      }
+
+      &__paragraph {
+        padding-bottom: 34px;
+      }
+    }
+  }
 </style>
