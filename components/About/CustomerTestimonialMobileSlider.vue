@@ -86,4 +86,12 @@ export default {
       }
     }
   }
+
+  @media only screen and (max-width: 330px) {
+    .swiper {
+      .swiper-slide {
+        width: 86%;
+      }
+    }
+  }
 </style>

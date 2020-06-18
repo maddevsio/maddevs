@@ -89,7 +89,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .customer-testimonials {
-    padding: 144px 0;
+    padding: 137px 0;
     background-color: $bgcolor--grey-light;
 
     &__main-title {
@@ -105,12 +105,11 @@ export default {
       max-height: 785px;
       display: flex;
       flex-direction: column;
-      padding-left: 50px;
+      padding-left: 82px;
     }
 
     &__content-wrap {
       display: flex;
-      justify-content: space-between;
     }
 
     &__testimonials-item {
@@ -188,6 +187,25 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1520px) {
+    .customer-testimonials {
+      &__main-title {
+        font-size: 121px;
+        padding-bottom: 87px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .customer-testimonials {
+      padding: 100px 0;
+
+      &__testimonials-list {
+        padding-left: 90px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1310px) {
     .customer-testimonials {
       &__widget-wrap {
@@ -198,27 +216,81 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1280px) {
+    .customer-testimonials {
+      padding: 111px 0;
+
+      &__main-title {
+        font-size: 100px;
+        padding-bottom: 60px;
+      }
+
+      &__widget-wrap {
+        width: 545px;
+      }
+
+      &__project {
+        width: initial;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1024px) {
     .customer-testimonials {
+
       &__main-title {
         text-align: center;
+        font-size: 90px;
       }
 
       &__content-wrap {
         flex-direction: column;
       }
 
-      &__testimonials-list {
-        display: none;
-      }
-
       &__widget-wrap {
         width: initial;
+        margin: 0 -30px;
+      }
+
+      &__testimonials-list {
+        padding-top: 55px;
+        padding-left: 0;
+      }
+
+      &__testimonials-item {
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .customer-testimonials {
+      padding: 70px 0;
+
+      &__main-title {
+        font-size: 64px;
+        padding-bottom: 43px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .customer-testimonials {
+      &__testimonials-list {
+        display: none;
       }
 
       .mobile-slider {
         display: block;
         padding-top: 35px;
+      }
+
+      &__main-title {
+        padding-bottom: 69px;
+      }
+
+      &__widget-wrap {
+        margin: initial;
       }
     }
   }
@@ -234,6 +306,20 @@ export default {
     .customer-testimonials {
       /deep/.mobile-customer_name {
         font-size: 14px;
+      }
+
+      &__main-title {
+        font-size: 53px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 330px) {
+    .customer-testimonials {
+      &__main-title {
+        font-size: 48px;
+        padding-bottom: 25px;
       }
     }
   }
