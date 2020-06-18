@@ -1029,3 +1029,13 @@ patch:
         patched: '2020-06-18T04:42:38.532Z'
     - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
         patched: '2020-06-18T04:42:38.532Z'
+    - nuxt > @nuxt/builder > @nuxt/webpack > hard-source-webpack-plugin > lodash:
+        patched: '2020-06-18T05:45:07.420Z'
+    - nuxt > @nuxt/builder > @nuxt/webpack > html-webpack-plugin > lodash:
+        patched: '2020-06-18T05:45:07.420Z'
+    - nuxt > @nuxt/builder > @nuxt/webpack > optimize-css-assets-webpack-plugin > last-call-webpack-plugin > lodash:
+        patched: '2020-06-18T05:45:07.420Z'
+    - nuxt > @nuxt/builder > @nuxt/webpack > webpack-bundle-analyzer > lodash:
+        patched: '2020-06-18T05:45:07.420Z'
+    - nuxt > @nuxt/builder > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2020-06-18T05:45:07.420Z'
