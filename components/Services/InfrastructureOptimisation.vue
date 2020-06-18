@@ -121,6 +121,14 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 375px) {
+    .infrastructure-optimisation {
+      &__flex-wrapper {
+        margin-top: 42px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 340px) {
     .infrastructure-optimisation {
       &__main-title {
