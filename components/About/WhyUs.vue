@@ -460,7 +460,7 @@ export default {
 
       &__item_description {
         width: max-content;
-      } 
+      }
     }
   }
 
@@ -474,7 +474,7 @@ export default {
 
       &__item_description {
         width: initial;
-      } 
+      }
     }
   }
 

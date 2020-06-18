@@ -25,7 +25,7 @@ exports[`Why Us? renders correctly 1`] = `
         class="why-us__customer-rates"
       >
         <div
-          class="why-us__sub-title"
+          class="why-us__sub-title why-us__customer-rates-sub-title"
         >
           Fantastic customer 
           <br />
@@ -113,7 +113,7 @@ exports[`Why Us? renders correctly 1`] = `
         class="why-us__mad-devs_metrics"
       >
         <div
-          class="why-us__sub-title"
+          class="why-us__sub-title why-us__mad-devs_metrics-sub-title"
         >
           Mad Devs' key 
           <br />
