@@ -118,4 +118,10 @@ export default {
       padding-bottom: 143px;
     }
   }
+
+  @media only screen and (max-width: 376px) {
+    .software-development {
+      padding-bottom: 80px;
+    }
+  }
 </style>

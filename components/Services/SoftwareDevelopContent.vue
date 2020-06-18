@@ -294,7 +294,10 @@ export default {
         font-size: 27px;
         line-height: 124%;
         letter-spacing: -1px;
-        margin-bottom: 10px;
+      }
+
+      /deep/.icons-list {
+        padding-bottom: 30px;
       }
     }
   }
