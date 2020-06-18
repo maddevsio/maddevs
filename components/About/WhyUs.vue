@@ -6,7 +6,7 @@
       </div>
       <div class="why-us__statistics-wrap">
         <div class="why-us__customer-rates">
-          <div class="why-us__sub-title">Fantastic customer <br> satisfaction rates:</div>
+          <div class="why-us__sub-title why-us__customer-rates-sub-title">Fantastic customer <br> satisfaction rates:</div>
           <div class="why-us__rates-list">
             <div class="why-us__rates-item">
               <div class="why-us__rates-number">
@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="why-us__mad-devs_metrics">
-          <div class="why-us__sub-title">Mad Devs' key <br> metrics:</div>
+          <div class="why-us__sub-title why-us__mad-devs_metrics-sub-title">Mad Devs' key <br> metrics:</div>
           <div class="why-us__metrics-list">
             <div class="why-us__metric-item">
               <div class="why-us__metric-number">
@@ -111,11 +111,13 @@ export default {
     background-color: $bgcolor--white;
 
     &__main-title {
+      margin-left: -40px;
       padding-bottom: 120px;
       font-size: 340px;
       font-family: 'Hoves-Bold';
       color: $text-color--grey-light;
       line-height: 200px;
+      letter-spacing: -3px;
     }
 
     &__customer-rates,
@@ -130,21 +132,21 @@ export default {
     }
 
     &__rates-list {
-      padding-bottom: 90px;
+      padding-bottom: 74px;
       border-bottom: 1px solid $border-color--grey-dark-transparent;
     }
 
     &__metrics-list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 57px;
-      grid-row-gap: 63px;
+      grid-column-gap: 44px;
+      grid-row-gap: 60px;
     }
 
     &__rates-item {
       &:nth-child(1),
       &:nth-child(2) {
-        padding-right: 104px;
+        padding-right: 80px;
       }
 
       &:nth-child(3) {
@@ -164,6 +166,7 @@ export default {
       font-size: 50px;
       font-family: 'Hoves-Bold';
       color: $text-color--black;
+      letter-spacing: -2px;
     }
 
     &__metric-number,
@@ -174,11 +177,13 @@ export default {
 
     &__metric-number {
       font-size: 50px;
+      letter-spacing: -2px;
     }
 
     &__rates-number {
       display: flex;
       font-size: 130px;
+      letter-spacing: -5px;
 
       span {
         display: block;
@@ -194,181 +199,207 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1520px) {
+  @media only screen and (max-width: 1525px) {
     .why-us {
-      &__metrics-list {
-        grid-column-gap: 40px;
-      }
-
-      &__rates-item {
-        &:nth-child(1),
-        &:nth-child(2) {
-          padding-right: 88px;
-        }
-      }
-
       &__main-title {
-        font-size: 320px;
-      }
-
-      &__sub-title {
-        font-size: 48px;
+        font-size: 313px;
       }
     }
   }
 
   @media only screen and (max-width: 1440px) {
     .why-us {
-      &__metrics-list {
-        grid-column-gap: 20px;
-      }
-
       &__rates-item {
         &:nth-child(1),
         &:nth-child(2) {
-          padding-right: 68px;
+          padding-right: 79px;
         }
       }
 
-      &__main-title {
-        font-size: 285px;
-        line-height: 170px;
+      &__rates-number {
+        font-size: 128px;
       }
 
       &__sub-title {
-        font-size: 45px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1360px) {
-    .why-us {
-      &__metrics-list {
-        grid-template-columns: repeat(3, 220px);
-      }
-
-      &__metric-item {
         br {
           display: none;
         }
       }
 
-      &__rates-number {
-        font-size: 100px;
+      &__metrics-list {
+        grid-column-gap: 40px;
+      }
+
+      &__customer-rates-sub-title {
+        max-width: 265px;
+      }
+
+      &__mad-devs_metrics-sub-title {
+        max-width: 365px;
+      }
+
+      &__mad-devs_metrics {
+        padding-top: 86px;
+      }
+
+      &__rates-list {
+        padding-bottom: 92px;
       }
     }
   }
 
-  @media only screen and (max-width: 1270px) {
+  @media only screen and (max-width: 1420px) {
     .why-us {
-      &__metrics-list {
-        grid-template-columns: repeat(3, 207px);
-      }
-
       &__main-title {
-        font-size: 250px;
-        line-height: 145px;
+        font-size: 269px;
+        letter-spacing: -2px;
+        line-height: 170px;
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 1340px) {
+    .why-us {
+      &__mad-devs_metrics-sub-title {
+        max-width: 280px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .why-us {
+      padding-bottom: 123px;
+
+      &__metrics-list {
+        grid-column-gap: 50px;
       }
 
-      &__sub-title,
-      &__metric-number {
-        font-size: 40px;
-      }
-
-      &__rates-number {
-        font-size: 90px;
-
-        span {
-          font-size: 60px;
+      &__metric-item {
+        &:nth-child(3n) {
+          margin-left: -25px;
         }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1180px) {
-    .why-us {
-      &__metrics-list {
-        grid-template-columns: repeat(3, 170px);
-      }
-
-      &__main-title {
-        font-size: 235px;
-        line-height: 135px;
       }
 
       &__rates-item {
-        &:nth-child(1) {
-          padding-right: 53px;
-        }
-
+        &:nth-child(1),
         &:nth-child(2) {
-          padding-right: 56px;
+          padding-right: 60px;
         }
-
-        &:nth-child(3) {
-          padding-right: 14px;
-        }
-      }
-
-      &__sub-title,
-      &__metric-number {
-        font-size: 38px;
-      }
-
-      &__rates-number {
-        font-size: 80px;
-
-        span {
-          font-size: 50px;
-        }
-      }
-
-      &__item_description {
-        font-size: 17px;
       }
     }
   }
 
-  @media only screen and (max-width: 1080px) {
+  @media only screen and (max-width: 1235px) {
     .why-us {
-      &__main-title {
-        font-size: 205px;
-        line-height: 117px;
-      }
-
-      &__sub-title {
-        font-size: 37px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .why-us {
-      padding-bottom: 140px;
+      padding-bottom: 130px;
 
       &__main-title {
-        font-size: 170px;
-        line-height: 105px;
+        margin-left: 0;
+        padding-bottom: 60px;
+        font-size: 235px;
+        letter-spacing: -1px;
+        line-height: 140px;
+      }
+
+      &__rates-list {
+        border-bottom: 0;
       }
 
       &__customer-rates,
-      &__rates-list,
       &__mad-devs_metrics {
         flex-direction: column;
       }
 
-      &__rates-list {
-        padding-bottom: 0;
-        border-bottom: 0;
+      &__sub-title {
+        max-width: initial;
+        font-size: 47px;
+      }
+
+      &__customer-rates-sub-title {
+        padding-bottom: 20px;
+      }
+
+      &__mad-devs_metrics-sub-title {
+        padding-bottom: 25px;
+      }
+
+      &__mad-devs_metrics {
+        padding-top: 30px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1140px) {
+    .why-us {
+      &__main-title {
+        font-size: 205px;
+        line-height: 120px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1020px) {
+    .why-us {
+      &__main-title {
+        font-size: 160px;
+        line-height: 100px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 830px) {
+    .why-us {
+      padding-bottom: 120px;
+
+      &__main-title {
+        margin-left: -20px;
+        padding-bottom: 40px;
+      }
+
+      &__rates-number {
+        font-size: 93px;
+        letter-spacing: -0.03em;
       }
 
       &__metrics-list {
-        grid-template-columns: repeat(2, 170px);
-        grid-column-gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      &__sub-title {
-        padding-bottom: 32px;
+      &__metric-item {
+        &:nth-child(3n) {
+          margin-left: 0;
+        }
+
+        &:nth-child(3) {
+          grid-row-start: 3;
+        }
+      }
+
+      &__mad-devs_metrics {
+        padding-top: 0;
+      }
+
+      &__rates-list {
+        padding-bottom: 80px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 760px) {
+    .why-us {
+
+      &__main-title {
+        font-size: 140px;
+        line-height: 80px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    .why-us {
+      &__rates-list {
+        flex-direction: column;
       }
 
       &__rates-item {
@@ -376,8 +407,8 @@ export default {
 
         p {
           max-width: 165px;
-          padding-top: 25px;
-          padding-left: 18px;
+          padding-top: 16px;
+          padding-left: 20px;
 
           br {
             display: none;
@@ -391,85 +422,58 @@ export default {
         }
       }
 
-      &__metric-item {
-        &:nth-child(2) {
-          grid-column-start: 2;
-          grid-row-start: 1;
-        }
-
-        &:nth-child(3) {
-          grid-row-start: 1;
-        }
-
-        &:nth-child(6) {
-          grid-column-start: 1;
-          grid-row-start: 3;
-        }
+      &__customer-rates-sub-title {
+        padding-bottom: 14px;
       }
     }
   }
 
-  @media only screen and (max-width: 820px) {
+  @media only screen and (max-width: 690px) {
     .why-us {
       &__main-title {
-        font-size: 155px;
-        line-height: 95px;
+        font-size: 120px;
+        line-height: 70px;
       }
     }
   }
 
-  @media only screen and (max-width: 740px) {
+  @media only screen and (max-width: 610px) {
     .why-us {
       &__main-title {
-        font-size: 125px;
-        line-height: 80px;
+        font-size: 110px;
+        line-height: 65px;
       }
     }
   }
 
-  @media only screen and (max-width: 620px) {
+  @media only screen and (max-width: 576px) {
     .why-us {
-      &__main-title {
-        font-size: 115px;
-        line-height: 72px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 520px) {
-    .why-us {
-      padding-bottom: 84px;
-
-      &__main-title {
-        padding-bottom: 94px;
-        font-size: 91px;
-        line-height: 54px;
-      }
-
-      &__sub-title {
-        font-size: 39px;
-      }
-
-      &__mad-devs_metrics {
-        padding-top: 61px;
-      }
-
-      &__rates-item {
-        p {
-          padding-top: 15px;
-        }
-      }
-
-      &__rates-number {
-        font-size: 57px;
-
-        span {
-          font-size: 41px;
-        }
-      }
+      padding-bottom: 105px;
 
       &__metric-number {
-        font-size: 28px;
+        font-size: 41px;
+      }
+
+      &__metrics-list {
+        grid-row-gap: 47px;
+      }
+
+      &__item_description {
+        width: max-content;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 560px) {
+    .why-us {
+      &__main-title {
+        padding-bottom: 25px;
+        font-size: 90px;
+        line-height: 55px;
+      }
+
+      &__item_description {
+        width: initial;
       }
     }
   }
@@ -477,43 +481,61 @@ export default {
   @media only screen and (max-width: 420px) {
     .why-us {
       &__main-title {
-        font-size: 83px;
-        line-height: 51px;
+        padding-bottom: 50px;
+      }
+
+      &__item_description {
+        font-size: 17px;
+      }
+
+      &__rates-list {
+        padding-bottom: 76px;
+      }
+
+      &__rates-number {
+        font-size: 56px;
+        letter-spacing: -2px;
+
+        span {
+          display: block;
+          margin-top: 2px;
+          font-size: 40px;
+        }
+      }
+
+      &__sub-title {
+        font-size: 41px;
       }
 
       &__metrics-list {
-        grid-template-columns: repeat(2, 150px);
-        grid-column-gap: 40px;
+        grid-row-gap: 28px;
       }
     }
   }
 
   @media only screen and (max-width: 370px) {
     .why-us {
+      padding-bottom: 60px;
+
       &__main-title {
-        font-size: 79px;
-        line-height: 48px;
+        margin-left: -15px;
+        padding-bottom: 40px;
+        font-size: 76px;
+        line-height: 47px;
       }
 
-      &__metrics-list {
-        grid-template-columns: repeat(2, 140px);
-        grid-column-gap: 30px;
+      &__customer-rates-sub-title {
+        padding-bottom: 20px;
+      }
+
+      &__rates-list {
+        padding-bottom: 47px;
+      }
+
+      &__metric-number {
+        font-size: 28px;
+        letter-spacing: -1px;
       }
     }
   }
-
-  @media only screen and (max-width: 350px) {
-    .why-us {
-
-      &__main-title {
-        font-size: 65px;
-        line-height: 40px;
-      }
-
-      &__sub-title {
-        font-size: 35px;
-      }
-    }
-  }
-
 </style>
