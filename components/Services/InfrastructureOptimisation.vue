@@ -62,6 +62,10 @@ export default {
       width: 100%;
     }
 
+    &__paragraph {
+      line-height: 119%;
+    }
+
     &__flex-wrapper {
       margin-top: 60px;
     }
@@ -79,15 +83,28 @@ export default {
 
   @media only screen and (max-width: 1280px) {
     .infrastructure-optimisation {
+      padding-top: 72px;
+
       &__main-title {
         padding-bottom: 0;
       }
     }
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 768px) {
     .infrastructure-optimisation {
-      &__flex-wrapper  {
+      padding-top: 65px;
+      padding-bottom: 65px;
+
+      &__flex-wrapper {
+        margin-top: 38px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 656px) {
+    .infrastructure-optimisation {
+      &__flex-wrapper {
         display: flex;
         flex-wrap: wrap;
       }

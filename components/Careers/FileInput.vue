@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     onFileChanged(event) {
-      this.selectedFile = event.target.files[0] && event.target.files[0].name;
+      this.selectedFile = event.target.files[0];
       this.$emit('input', this.selectedFile);
     },
     reset() {
@@ -45,7 +45,7 @@ export default {
   computed: {
     selectedFileName() {
       const ending = '...';
-      let fileName = this.selectedFile;
+      let fileName = this.selectedFile.name;
       if (fileName) {
         if (fileName.length > 25) {
           return fileName.substring(0, 25) + ending;

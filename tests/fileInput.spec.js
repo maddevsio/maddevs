@@ -60,6 +60,6 @@ describe('FileInput component', () => {
       }
     };
     wrapper.vm.onFileChanged(event);
-    expect(wrapper.vm.$data.selectedFile).toEqual('mockedFile.doc');
+    expect(wrapper.vm.$data.selectedFile).toEqual({ size: 100, type: 'text', name: 'mockedFile.doc' });
   });
 });

@@ -42,11 +42,39 @@ router.post('/send-email', (req, res) => {
         'to': [{
           'name': 'Mad Devs team',
           'email': 'denisoed@gmail.com'
-        }]
+        }],
+        'attachments_binary': { [req.body.attachment.name]: req.body.attachment.base64 }
       };
       sendpulse.smtpSendMail(answerGetter, email);
     });
   }
+
+  // const sgMail = require('@sendgrid/mail');
+  // sgMail.setApiKey();
+
+  // const msg = {
+  //   to: 'denisoed@gmail.com',
+  //   from: 'denis.grushkin@maddevs.io',
+  //   subject: 'Sending with SendGrid is Fun',
+  //   text: 'and easy to do anywhere, even with Node.js',
+  //   template_id: req.body.templateId,
+  //   dynamic_template_data: req.body.variables,
+  //   attachments: [{
+  //     content: req.body.attachment.base64,
+  //     filename: req.body.attachment.name,
+  //     disposition: 'attachment'
+  //   }]
+  // };
+
+  // sgMail.send(msg).then(res => {
+  //   res.json({
+  //     success: true,
+  //     status: 200
+  //   });
+  // }).catch(err => {
+  //   res.json(err);
+  // });
 });
+
 
 module.exports = router;

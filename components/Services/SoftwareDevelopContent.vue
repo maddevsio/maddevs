@@ -165,6 +165,18 @@ export default {
         line-height: 110%;
         letter-spacing: -1px;
       }
+
+      /deep/.icons-list {
+        flex-wrap: wrap;
+      }
+
+      /deep/.icon-flex_group {
+        display: flex;
+
+        &:last-child {
+          flex-direction: row;
+        }
+      }
     }
   }
 
@@ -207,7 +219,6 @@ export default {
       }
 
       /deep/.icons-list {
-        max-width: 300px;
         flex-wrap: wrap;
       }
 
@@ -225,6 +236,22 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 695px) {
+    .software-development_content {
+      /deep/.icons-list {
+        flex-wrap: wrap;
+      }
+
+      /deep/.icon-flex_group {
+        display: block;
+
+        &:last-child {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 520px) {
     .software-development_content {
       &__last-character {
@@ -233,6 +260,22 @@ export default {
 
       &__title {
         padding-bottom: 13px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 458px) {
+    .software-development_content {
+      /deep/.icon-flex_group {
+        display: flex;
+
+        &:last-child {
+          flex-direction: row;
+        }
+      }
+
+      /deep/.icon-item {
+        padding-right: 70px;
       }
     }
   }

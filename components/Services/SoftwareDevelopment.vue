@@ -99,9 +99,17 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .software-development {
+      padding-bottom: 90px;
+
       &__flex-wrapper {
         flex-wrap: wrap;
       }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .software-development {
+      padding-bottom: 80px;
     }
   }
 
