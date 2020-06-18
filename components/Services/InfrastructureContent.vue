@@ -178,4 +178,25 @@ export default {
       }
     }
   }
+
+  @media only screen and (max-width: 375px) {
+    .infrastructure-optimisation {
+      &__title {
+        font-size: 41px;
+        line-height: 99%;
+        letter-spacing: -1px;
+        padding-bottom: 13px;
+      }
+
+      &__sub-title {
+        font-size: 27px;
+        line-height: 124%;
+        letter-spacing: -1px;
+      }
+
+      &__paragraph {
+        padding-bottom: 70px;
+      }
+    }
+  }
 </style>
