@@ -282,10 +282,6 @@ export default {
       &__last-character {
         margin-left: -21px;
       }
-
-      &__title {
-        height: 60px;
-      }
     }
   }
 
