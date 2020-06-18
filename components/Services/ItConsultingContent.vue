@@ -185,4 +185,27 @@ export default {
       }
     }
   }
+
+  @media only screen and (max-width: 375px) {
+    .it-consulting {
+      &__title {
+        font-size: 41px;
+        line-height: 99%;
+        letter-spacing: -1px;
+        padding-bottom: 13px;
+        margin-right: 6px;
+      }
+
+      &__sub-title {
+        font-size: 27px;
+        line-height: 124%;
+        letter-spacing: -1px;
+        padding-bottom: 10px;
+      }
+
+      &__paragraph {
+        padding-bottom: 30px;
+      }
+    }
+  }
 </style>
