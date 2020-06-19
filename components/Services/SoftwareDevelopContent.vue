@@ -104,7 +104,6 @@ export default {
 
     &__paragraph {
       max-width: 360px;
-      padding-bottom: 20px;
       line-height: 139%;
     }
 
@@ -265,6 +264,10 @@ export default {
             flex-direction: column;
           }
         }
+      }
+
+      &__paragraph {
+        padding-bottom: 12px;
       }
     }
   }
