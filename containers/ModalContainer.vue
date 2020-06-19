@@ -49,7 +49,7 @@ export default {
 
   /deep/ .modal_container {
     background-color: $bgcolor--black;
-    padding: 70px 15px 60px;
+    padding: 55px 12px 53px;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
@@ -59,7 +59,7 @@ export default {
     max-height: 80vh;
     min-height: 500px;
     background-color: $bgcolor--black;
-    padding: 0 30px;
+    padding: 0 48px;
   }
 
   /deep/.vm--overlay {

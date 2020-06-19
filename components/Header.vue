@@ -1,64 +1,66 @@
 <template>
-  <header ref="header" class="header" :class="{'mobile-menu_is-open': mobileMenuIsOpen, 'white': headerIsWhite}">
-    <div class="container">
-      <div class="header__header-content_wrap">
-        <div class="header__left-nav_bar">
-          <router-link :to="`/`" class="header__logo-icon">
-            <img src="@/assets/img/Header/logo_black.svg" alt="Logotype" class="header__header-logo" v-if="headerIsWhite">
-            <img src="@/assets/img/common/logo.svg" alt="Logotype" class="header__header-logo" v-else>
-          </router-link>
-          <nav class="header__header-routes_links">
-            <router-link to="/">About</router-link>
-            <router-link to="/services">Services</router-link>
-            <router-link to="/projects">Projects</router-link>
-            <router-link to="/careers" @click.native="listenCareersLinkClick">Careers</router-link>
-            <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
-          </nav>
-        </div>
-        <div class="header__right-content">
-          <div class="header__right-text_content">
-            <div class="header__soc-links_wrap">
-              <a href="https://twitter.com/maddevsio" target="_blank" class="header__twitter-link header__soc-link">
-                <img src="@/assets/img/Header/twitter-icon.svg" alt="Twitter">
-              </a>
-              <a href="https://ru.linkedin.com/company/mad-devs" target="_blank" class="header__lindekin-link header__soc-link">
-                <img src="@/assets/img/Header/lindekin-icon.svg" alt="Lindekin">
-              </a>
-              <a href="https://www.facebook.com/maddevsllc" target="_blank" class="header__facebook-link header__soc-link">
-                <img src="@/assets/img/Header/facebook-icon.svg" alt="Facebook">
-              </a>
-            </div>
-            <div class="header__phones-dropdown_wrap" :id="selectedPhone.country">
-              <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
-                <img :src="require(`@/assets/img/Flags/${selectedPhone.country}.svg`)" :alt="`${selectedPhone.country}`" />
-                {{ selectedPhone.phoneNumber }}
-              </a>
-              <div class="header__phones-list">
-                <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone">
-                  <img :src="require(`@/assets/img/Flags/${phone.country}.svg`)" :alt="`${phone.country}`" />
-                  {{ phone.phoneNumber }}
+  <div class="header-wrapper">
+    <header ref="header" class="header" :class="{'white': headerIsWhite}">
+      <div class="container">
+        <div class="header__header-content_wrap">
+          <div class="header__left-nav_bar">
+            <router-link :to="`/`" class="header__logo-icon">
+              <img src="@/assets/img/Header/logo_black.svg" alt="Logotype" class="header__header-logo" v-if="headerIsWhite">
+              <img src="@/assets/img/common/logo.svg" alt="Logotype" class="header__header-logo" v-else>
+            </router-link>
+            <nav class="header__header-routes_links">
+              <router-link to="/">About</router-link>
+              <router-link to="/services">Services</router-link>
+              <router-link to="/projects">Projects</router-link>
+              <router-link to="/careers" @click.native="listenCareersLinkClick">Careers</router-link>
+              <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
+            </nav>
+          </div>
+          <div class="header__right-content">
+            <div class="header__right-text_content">
+              <div class="header__soc-links_wrap">
+                <a href="https://twitter.com/maddevsio" target="_blank" class="header__twitter-link header__soc-link">
+                  <img src="@/assets/img/Header/twitter-icon.svg" alt="Twitter">
+                </a>
+                <a href="https://ru.linkedin.com/company/mad-devs" target="_blank" class="header__lindekin-link header__soc-link">
+                  <img src="@/assets/img/Header/lindekin-icon.svg" alt="Lindekin">
+                </a>
+                <a href="https://www.facebook.com/maddevsllc" target="_blank" class="header__facebook-link header__soc-link">
+                  <img src="@/assets/img/Header/facebook-icon.svg" alt="Facebook">
                 </a>
               </div>
+              <div class="header__phones-dropdown_wrap" :id="selectedPhone.country">
+                <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
+                  <img :src="require(`@/assets/img/Flags/${selectedPhone.country}.svg`)" :alt="`${selectedPhone.country}`" />
+                  {{ selectedPhone.phoneNumber }}
+                </a>
+                <div class="header__phones-list">
+                  <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone">
+                    <img :src="require(`@/assets/img/Flags/${phone.country}.svg`)" :alt="`${phone.country}`" />
+                    {{ phone.phoneNumber }}
+                  </a>
+                </div>
+              </div>
+              <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
             </div>
-            <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
+            <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="red-text-and-border" />
           </div>
-          <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="red-text-and-border" />
         </div>
       </div>
-      <mobileMenu v-on:getMobileMenuState="getMobileMenuState($event)"/>
-    </div>
-  </header>
+    </header>
+    <mobileHeader />
+  </div>
 </template>
 
 <script>
 import buttonTrigger from '@/components/ui/button-trigger';
-import mobileMenu from '@/components/ui/mobile-menu';
+import mobileHeader from '@/components/ui/mobile-header';
 
 export default {
   name: 'main-header',
   components: {
     buttonTrigger,
-    mobileMenu
+    mobileHeader
   },
   data() {
     return {
@@ -78,7 +80,6 @@ export default {
         country: 'united-kingdom'
       },
       modalWindowName: 'contact-me-modal',
-      mobileMenuIsOpen: false,
       headerIsWhite: false
     };
   },
@@ -99,9 +100,6 @@ export default {
     }
   },
   methods: {
-    getMobileMenuState(mobileMenuDisplayState) {
-      this.mobileMenuIsOpen = mobileMenuDisplayState;
-    },
     mainPageHandleScroll() {
       if ($nuxt.$route.name === 'index') {
         const customerTestimonials = document.getElementById('customer-testimonials');
@@ -165,7 +163,6 @@ export default {
     position: fixed;
     z-index: 2;
     padding-top: 144px;
-    transition: all 3s ease;
 
     button {
       width: 135px;
@@ -474,24 +471,19 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .header {
-      position: initial;
+      padding-top: 0;
       background-color: $bgcolor--black;
 
       &__header-content_wrap {
         display: none;
       }
 
-      .mobile-menu {
-        display: block;
+       &::before {
+        background: none;
       }
-    }
 
-    .mobile-menu_is-open {
-      .mobile-menu {
-        height: 100%;
-        margin-top: 0;
-        padding: 22px 0;
-        box-sizing: border-box;
+      &::after {
+        background: none;
       }
     }
   }
