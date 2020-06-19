@@ -2,6 +2,7 @@
 
 exports[`Team headcount modal renders correctly 1`] = `
 <modal-stub
+  classes="modal_container"
   height="auto"
   name="team-headcount-modal"
 >

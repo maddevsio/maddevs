@@ -2,6 +2,7 @@
 
 exports[`Order Project From Us Modal renders correctly 1`] = `
 <modal-stub
+  classes="modal_container"
   height="auto"
   name="order-project-from-us-modal"
 >

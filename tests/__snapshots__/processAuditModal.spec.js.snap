@@ -2,6 +2,7 @@
 
 exports[`Process audit modal renders correctly 1`] = `
 <modal-stub
+  classes="modal_container"
   height="auto"
   name="process-audit-modal"
 >
