@@ -108,6 +108,22 @@ export default {
       padding-top: 190px;
     }
 
+    &__animation-img-wrap {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 21%;
+        right: 28%;
+        width: calc(720px / 30);
+        height: 24px;
+        background: url('../assets/sprites/sprite_tech.svg');
+        transform: rotate(-28.6deg);
+        animation: animate 15s steps(30) infinite;
+      }
+    }
+
     .text-content_wrapper {
       display: flex;
       padding-bottom: 180px;
@@ -803,6 +819,16 @@ export default {
         top: 54%;
         left: 71.5%;
       }
+    }
+  }
+
+  @keyframes animate {
+    from {
+      background-position: 0;
+    }
+
+    to {
+      background-position: 720px;
     }
   }
 </style>
