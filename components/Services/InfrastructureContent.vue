@@ -168,6 +168,12 @@ export default {
       &__title {
         max-width: 420px;
       }
+
+      &__content-item {
+        &:first-child {
+          padding-right: 0;
+        }
+      }
     }
   }
 
@@ -196,6 +202,14 @@ export default {
 
       &__paragraph {
         padding-bottom: 70px;
+      }
+
+      &__content-item {
+        &:last-child {
+          .infrastructure-optimisation__paragraph {
+            padding-bottom: 30px;
+          }
+        }
       }
     }
   }
