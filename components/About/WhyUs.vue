@@ -107,7 +107,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .why-us {
-    padding-bottom: 212px;
+    padding-bottom: 167px;
     background-color: $bgcolor--white;
 
     &__main-title {

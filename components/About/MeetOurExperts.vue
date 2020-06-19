@@ -92,7 +92,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .meet-our_experts {
-    padding-bottom: 149px;
+    padding-bottom: 186px;
     background-color: $bgcolor--white;
 
     &__main-title {
@@ -183,14 +183,15 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1360px) {
+  @media only screen and (max-width: 1340px) {
     .meet-our_experts {
       &__expert-name {
-        font-size: 19px;
+        font-size: 18px;
+        letter-spacing: -0.03em;
       }
 
       &__expert-position {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   }
@@ -198,54 +199,42 @@ export default {
   @media only screen and (max-width: 1220px) {
     .meet-our_experts {
       &__expert-name {
-        font-size: 17px;
+        font-size: 16px;
       }
 
       &__expert-position {
-        font-size: 14px;
+        font-size: 12px;
       }
     }
   }
 
-  @media only screen and (max-width: 1120px) {
-    .meet-our_experts {
-      &__expert-name {
-        font-size: 14px;
-      }
+  // @media only screen and (max-width: 980px) {
+  //   .meet-our_experts {
+  //     &__experts-list {
+  //       grid-template-columns: repeat(2, 1fr);
+  //     }
+  //   }
+  // }
 
-      &__expert-position {
-        font-size: 11px;
-      }
-    }
-  }
+  // @media only screen and (max-width: 520px) {
+  //   .meet-our_experts {
+  //     padding-bottom: 95px;
 
-  @media only screen and (max-width: 980px) {
-    .meet-our_experts {
-      &__experts-list {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-  }
+  //     &__main-title {
+  //       padding-bottom: 30px;
+  //     }
+  //   }
+  // }
 
-  @media only screen and (max-width: 520px) {
-    .meet-our_experts {
-      padding-bottom: 95px;
+  // @media only screen and (max-width: 440px) {
+  //   .meet-our_experts {
+  //     &__experts-list {
+  //       display: none;
+  //     }
 
-      &__main-title {
-        padding-bottom: 30px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 440px) {
-    .meet-our_experts {
-      &__experts-list {
-        display: none;
-      }
-
-      /deep/.swiper {
-        display: block;
-      }
-    }
-  }
+  //     /deep/.swiper {
+  //       display: block;
+  //     }
+  //   }
+  // }
 </style>
