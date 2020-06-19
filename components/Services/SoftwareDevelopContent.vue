@@ -266,16 +266,38 @@ export default {
 
   @media only screen and (max-width: 458px) {
     .software-development_content {
-      /deep/.icon-flex_group {
+      &:first-child {
+        /deep/.icon-flex_group {
         display: flex;
+        flex-direction: column;
 
-        &:last-child {
-          flex-direction: row;
+          &:last-child {
+            flex-direction: row;
+
+            /deep/.icon-item {
+              &:first-child {
+                padding-right: 70px;
+              }
+            }
+          }
+
+          &:first-child {
+            /deep/.icon-item {
+              padding-right: 70px;
+            }
+          }
         }
       }
 
-      /deep/.icon-item {
-        padding-right: 70px;
+      /deep/.icon-flex_group {
+        display: flex;
+        flex-direction: column;
+
+        &:first-child {
+          /deep/.icon-item {
+            padding-right: 70px;
+          }
+        }
       }
     }
   }
