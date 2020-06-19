@@ -291,10 +291,8 @@ export default {
           &:last-child {
             flex-direction: row;
 
-            /deep/.icon-item {
-              &:first-child {
-                padding-right: 70px;
-              }
+            /deep/.icon-item:first-child {
+              padding-right: 70px;
             }
           }
 
