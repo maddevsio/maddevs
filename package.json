@@ -29,8 +29,9 @@
     "express": "^4.17.1",
     "jest-coverage-badges": "^1.1.2",
     "jquery": "^3.5.1",
-    "nuxt": "^2.12.2",
+    "nuxt": "^2.13.0",
     "sendpulse-api": "^1.1.4",
+    "snyk": "^1.345.1",
     "swiper": "^5.4.5",
     "vee-validate": "^3.3.4",
     "vue-analytics": "^5.22.1",
@@ -39,8 +40,7 @@
     "vue-js-modal": "^2.0.0-rc.3",
     "vue-scrollto": "^2.18.1",
     "vue-slick": "^1.1.15",
-    "vue2-perfect-scrollbar": "^1.5.0",
-    "snyk": "^1.345.1"
+    "vue2-perfect-scrollbar": "^1.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
