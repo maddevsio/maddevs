@@ -3,20 +3,20 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _67b5b601 = () => interopDefault(import('../pages/careers.vue' /* webpackChunkName: "pages/careers" */))
-const _db465bfa = () => interopDefault(import('../pages/gdpr.vue' /* webpackChunkName: "pages/gdpr" */))
-const _3d243492 = () => interopDefault(import('../pages/nda.vue' /* webpackChunkName: "pages/nda" */))
-const _1a3b6158 = () => interopDefault(import('../pages/privacy.vue' /* webpackChunkName: "pages/privacy" */))
-const _6ad9b144 = () => interopDefault(import('../pages/projects.vue' /* webpackChunkName: "pages/projects" */))
-const _afeee57c = () => interopDefault(import('../pages/services.vue' /* webpackChunkName: "pages/services" */))
-const _638a5c9e = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
-const _491ace48 = () => interopDefault(import('../pages/_lang/index.vue' /* webpackChunkName: "pages/_lang/index" */))
-const _f3004a82 = () => interopDefault(import('../pages/_lang/careers.vue' /* webpackChunkName: "pages/_lang/careers" */))
-const _c305d3f6 = () => interopDefault(import('../pages/_lang/gdpr.vue' /* webpackChunkName: "pages/_lang/gdpr" */))
-const _2bd7cd16 = () => interopDefault(import('../pages/_lang/nda.vue' /* webpackChunkName: "pages/_lang/nda" */))
-const _11ac7412 = () => interopDefault(import('../pages/_lang/privacy.vue' /* webpackChunkName: "pages/_lang/privacy" */))
-const _f5e4cb40 = () => interopDefault(import('../pages/_lang/projects.vue' /* webpackChunkName: "pages/_lang/projects" */))
-const _62830044 = () => interopDefault(import('../pages/_lang/services.vue' /* webpackChunkName: "pages/_lang/services" */))
+const _669089e6 = () => interopDefault(import('../pages/careers.vue' /* webpackChunkName: "pages/careers" */))
+const _4fa3c877 = () => interopDefault(import('../pages/gdpr.vue' /* webpackChunkName: "pages/gdpr" */))
+const _d6175e7a = () => interopDefault(import('../pages/nda.vue' /* webpackChunkName: "pages/nda" */))
+const _57e45460 = () => interopDefault(import('../pages/privacy.vue' /* webpackChunkName: "pages/privacy" */))
+const _05d1c3d2 = () => interopDefault(import('../pages/projects.vue' /* webpackChunkName: "pages/projects" */))
+const _3971ac94 = () => interopDefault(import('../pages/services.vue' /* webpackChunkName: "pages/services" */))
+const _4f2234aa = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _369337e8 = () => interopDefault(import('../pages/_lang/index.vue' /* webpackChunkName: "pages/_lang/index" */))
+const _c816326a = () => interopDefault(import('../pages/_lang/careers.vue' /* webpackChunkName: "pages/_lang/careers" */))
+const _04866579 = () => interopDefault(import('../pages/_lang/gdpr.vue' /* webpackChunkName: "pages/_lang/gdpr" */))
+const _16a90b81 = () => interopDefault(import('../pages/_lang/nda.vue' /* webpackChunkName: "pages/_lang/nda" */))
+const _2721801e = () => interopDefault(import('../pages/_lang/privacy.vue' /* webpackChunkName: "pages/_lang/privacy" */))
+const _1e3a0fd4 = () => interopDefault(import('../pages/_lang/projects.vue' /* webpackChunkName: "pages/_lang/projects" */))
+const _08a11490 = () => interopDefault(import('../pages/_lang/services.vue' /* webpackChunkName: "pages/_lang/services" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -36,59 +36,59 @@ export const routerOptions = {
 
   routes: [{
     path: "/careers",
-    component: _67b5b601,
+    component: _669089e6,
     name: "careers"
   }, {
     path: "/gdpr",
-    component: _db465bfa,
+    component: _4fa3c877,
     name: "gdpr"
   }, {
     path: "/nda",
-    component: _3d243492,
+    component: _d6175e7a,
     name: "nda"
   }, {
     path: "/privacy",
-    component: _1a3b6158,
+    component: _57e45460,
     name: "privacy"
   }, {
     path: "/projects",
-    component: _6ad9b144,
+    component: _05d1c3d2,
     name: "projects"
   }, {
     path: "/services",
-    component: _afeee57c,
+    component: _3971ac94,
     name: "services"
   }, {
     path: "/",
-    component: _638a5c9e,
+    component: _4f2234aa,
     name: "index"
   }, {
     path: "/:lang",
-    component: _491ace48,
+    component: _369337e8,
     name: "lang"
   }, {
     path: "/:lang/careers",
-    component: _f3004a82,
+    component: _c816326a,
     name: "lang-careers"
   }, {
     path: "/:lang/gdpr",
-    component: _c305d3f6,
+    component: _04866579,
     name: "lang-gdpr"
   }, {
     path: "/:lang/nda",
-    component: _2bd7cd16,
+    component: _16a90b81,
     name: "lang-nda"
   }, {
     path: "/:lang/privacy",
-    component: _11ac7412,
+    component: _2721801e,
     name: "lang-privacy"
   }, {
     path: "/:lang/projects",
-    component: _f5e4cb40,
+    component: _1e3a0fd4,
     name: "lang-projects"
   }, {
     path: "/:lang/services",
-    component: _62830044,
+    component: _08a11490,
     name: "lang-services"
   }],
 
