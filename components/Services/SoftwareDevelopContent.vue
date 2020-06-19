@@ -249,6 +249,23 @@ export default {
           flex-direction: column;
         }
       }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        /deep/.icon-flex_group {
+          display: block;
+
+          &:first-child {
+            /deep/.icon-item {
+              padding-right: 70px;
+            }
+          }
+
+          &:last-child {
+            flex-direction: column;
+          }
+        }
+      }
     }
   }
 
