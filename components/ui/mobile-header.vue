@@ -1,37 +1,35 @@
 <template>
-  <perfect-scrollbar>
-		<div class="mobile-header" :class="{'is-open':mobileHeaderIsOpen}">
-			<div class="container">
-				<div class="mobile-header__top-line">
-						<div class="mobile-header__header-logo">
-								<img src="../../assets/img/common/logo.svg" alt="Logotype">
-						</div>
-						<div class="mobile-header__button-wrap">
-							<button class="mobile-header__toogle-btn" @click="toggleMobileMenu()">
-								<img src="../../assets/img/Header/mobile-header-hamburger.svg" alt="Open" class="mobile-header__open" v-if="!mobileHeaderIsOpen">
-								<img src="../../assets/img/Header/mobile-header-close.svg" alt="Close" class="mobile-header__close" v-else>
-							</button>
-						</div>
+	<div class="mobile-header" :class="{'is-open':mobileHeaderIsOpen}">
+		<div class="container">
+			<div class="mobile-header__top-line">
+					<router-link to="/" class="mobile-header__header-logo">
+							<img src="../../assets/img/common/logo.svg" alt="Logotype">
+					</router-link>
+					<div class="mobile-header__button-wrap">
+						<button class="mobile-header__toogle-btn" @click="toggleMobileHeader()">
+							<img src="../../assets/img/Header/mobile-header-hamburger.svg" alt="Open" class="mobile-header__open" v-if="!mobileHeaderIsOpen">
+							<img src="../../assets/img/Header/mobile-header-close.svg" alt="Close" class="mobile-header__close" v-else>
+						</button>
+					</div>
+			</div>
+			<div class="mobile-header__content-wrap" v-show="mobileHeaderIsOpen">
+				<nav class="mobile-header__header-routes_links">
+					<router-link to="/" @click.native="toggleMobileHeader()">About</router-link>
+					<router-link to="/services" @click.native="toggleMobileHeader()">Services</router-link>
+					<router-link to="/projects" @click.native="toggleMobileHeader()">Projects</router-link>
+					<router-link to="/careers" @click.native="toggleMobileHeader()">Careers</router-link>
+					<a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
+				</nav>
+				<buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="mobile-header__modal-trigger-btn red-text-and-border" />
+				<div class="mobile-header__contacts">
+					<footerContacts />
 				</div>
-				<div class="mobile-header__content-wrap" v-show="mobileHeaderIsOpen">
-					<nav class="mobile-header__header-routes_links">
-						<router-link to="/">About</router-link>
-						<router-link to="/services">Services</router-link>
-						<router-link to="/projects">Projects</router-link>
-						<router-link to="/careers">Careers</router-link>
-						<a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
-					</nav>
-					<buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="mobile-header__modal-trigger-btn red-text-and-border" />
-					<div class="mobile-header__contacts">
-						<footerContacts />
-					</div>
-					<div class="mobile-header__social-network_links">
-						<footerSocialNetworkBar />
-					</div>
+				<div class="mobile-header__social-network_links">
+					<footerSocialNetworkBar />
 				</div>
 			</div>
 		</div>
-		</perfect-scrollbar>
+	</div>
 </template>
 
 <script>
@@ -55,9 +53,8 @@ export default {
     };
   },
   methods: {
-    toggleMobileMenu() {
+    toggleMobileHeader() {
       this.mobileHeaderIsOpen = !this.mobileHeaderIsOpen;
-      this.$emit('getMobileMenuState', this.mobileHeaderIsOpen);
     }
   }
 };
@@ -141,17 +138,17 @@ export default {
 		&__toogle-btn {
 			background-color: transparent;
 			box-shadow: none;
-			border: none;
+			border: 0;
 		}
 	}
-	
+
 	.is-open {
 		position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
-		background: black; 
-		
+		background: #000;
+
 		/deep/.page-scrollbar {
 			height: 0;
 		}

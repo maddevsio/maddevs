@@ -1,131 +1,118 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders correctly 1`] = `
-<header
-  class="header"
+<div
+  class="header-wrapper"
 >
-  <div
-    class="container"
+  <header
+    class="header"
   >
     <div
-      class="header__header-content_wrap"
+      class="container"
     >
       <div
-        class="header__left-nav_bar"
-      >
-        <router-link-stub
-          class="header__logo-icon"
-          to="/"
-        >
-          <img
-            alt="Logotype"
-            class="header__header-logo"
-            src="@/assets/img/common/logo.svg"
-          />
-        </router-link-stub>
-         
-        <nav
-          class="header__header-routes_links"
-        >
-          <router-link-stub
-            to="/"
-          >
-            About
-          </router-link-stub>
-           
-          <router-link-stub
-            to="/services"
-          >
-            Services
-          </router-link-stub>
-           
-          <router-link-stub
-            to="/projects"
-          >
-            Projects
-          </router-link-stub>
-           
-          <router-link-stub
-            to="/careers"
-          >
-            Careers
-          </router-link-stub>
-           
-          <a
-            href="https://blog.maddevs.io/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Blog
-          </a>
-        </nav>
-      </div>
-       
-      <div
-        class="header__right-content"
+        class="header__header-content_wrap"
       >
         <div
-          class="header__right-text_content"
+          class="header__left-nav_bar"
+        >
+          <router-link-stub
+            class="header__logo-icon"
+            to="/"
+          >
+            <img
+              alt="Logotype"
+              class="header__header-logo"
+              src="@/assets/img/common/logo.svg"
+            />
+          </router-link-stub>
+           
+          <nav
+            class="header__header-routes_links"
+          >
+            <router-link-stub
+              to="/"
+            >
+              About
+            </router-link-stub>
+             
+            <router-link-stub
+              to="/services"
+            >
+              Services
+            </router-link-stub>
+             
+            <router-link-stub
+              to="/projects"
+            >
+              Projects
+            </router-link-stub>
+             
+            <router-link-stub
+              to="/careers"
+            >
+              Careers
+            </router-link-stub>
+             
+            <a
+              href="https://blog.maddevs.io/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Blog
+            </a>
+          </nav>
+        </div>
+         
+        <div
+          class="header__right-content"
         >
           <div
-            class="header__soc-links_wrap"
+            class="header__right-text_content"
           >
-            <a
-              class="header__twitter-link header__soc-link"
-              href="https://twitter.com/maddevsio"
-              target="_blank"
-            >
-              <img
-                alt="Twitter"
-                src="@/assets/img/Header/twitter-icon.svg"
-              />
-            </a>
-             
-            <a
-              class="header__lindekin-link header__soc-link"
-              href="https://ru.linkedin.com/company/mad-devs"
-              target="_blank"
-            >
-              <img
-                alt="Lindekin"
-                src="@/assets/img/Header/lindekin-icon.svg"
-              />
-            </a>
-             
-            <a
-              class="header__facebook-link header__soc-link"
-              href="https://www.facebook.com/maddevsllc"
-              target="_blank"
-            >
-              <img
-                alt="Facebook"
-                src="@/assets/img/Header/facebook-icon.svg"
-              />
-            </a>
-          </div>
-           
-          <div
-            class="header__phones-dropdown_wrap"
-            id="united-kingdom"
-          >
-            <a
-              class="header__selected-phone"
-              href="tel:+44 20 3984 8555"
-            >
-              <img
-                alt="united-kingdom"
-                src="[object Object]"
-              />
-              
-              +44 20 3984 8555
-            
-            </a>
-             
             <div
-              class="header__phones-list"
+              class="header__soc-links_wrap"
             >
               <a
-                class="header__phone-item"
+                class="header__twitter-link header__soc-link"
+                href="https://twitter.com/maddevsio"
+                target="_blank"
+              >
+                <img
+                  alt="Twitter"
+                  src="@/assets/img/Header/twitter-icon.svg"
+                />
+              </a>
+               
+              <a
+                class="header__lindekin-link header__soc-link"
+                href="https://ru.linkedin.com/company/mad-devs"
+                target="_blank"
+              >
+                <img
+                  alt="Lindekin"
+                  src="@/assets/img/Header/lindekin-icon.svg"
+                />
+              </a>
+               
+              <a
+                class="header__facebook-link header__soc-link"
+                href="https://www.facebook.com/maddevsllc"
+                target="_blank"
+              >
+                <img
+                  alt="Facebook"
+                  src="@/assets/img/Header/facebook-icon.svg"
+                />
+              </a>
+            </div>
+             
+            <div
+              class="header__phones-dropdown_wrap"
+              id="united-kingdom"
+            >
+              <a
+                class="header__selected-phone"
                 href="tel:+44 20 3984 8555"
               >
                 <img
@@ -136,71 +123,97 @@ exports[`Header renders correctly 1`] = `
                 +44 20 3984 8555
               
               </a>
-              <a
-                class="header__phone-item"
-                href="tel:+1 833 623 3387"
+               
+              <div
+                class="header__phones-list"
               >
-                <img
-                  alt="united-states"
-                  src="[object Object]"
-                />
+                <a
+                  class="header__phone-item"
+                  href="tel:+44 20 3984 8555"
+                >
+                  <img
+                    alt="united-kingdom"
+                    src="[object Object]"
+                  />
+                  
+                  +44 20 3984 8555
                 
-                +1 833 623 3387
-              
-              </a>
+                </a>
+                <a
+                  class="header__phone-item"
+                  href="tel:+1 833 623 3387"
+                >
+                  <img
+                    alt="united-states"
+                    src="[object Object]"
+                  />
+                  
+                  +1 833 623 3387
+                
+                </a>
+              </div>
             </div>
+             
+            <a
+              class="header__mailto-link"
+              href="mailto:team@maddevs.io"
+            >
+              team@maddevs.io
+            </a>
           </div>
            
-          <a
-            class="header__mailto-link"
-            href="mailto:team@maddevs.io"
+          <button
+            class="button-default red-text-and-border"
           >
-            team@maddevs.io
-          </a>
-        </div>
-         
-        <button
-          class="button-default red-text-and-border"
-        >
-          
+            
   Contact me
 
-        </button>
+          </button>
+        </div>
       </div>
     </div>
-     
+  </header>
+   
+  <div
+    class="mobile-header"
+  >
     <div
-      class="mobile-menu"
+      class="container"
     >
       <div
-        class="mobile-menu__top-line"
+        class="mobile-header__top-line"
       >
-        <div
-          class="mobile-menu__header-logo"
+        <router-link-stub
+          class="mobile-header__header-logo"
+          to="/"
         >
           <img
             alt="Logotype"
             src="../../assets/img/common/logo.svg"
           />
-        </div>
+        </router-link-stub>
          
         <div
-          class="mobile-menu__button"
+          class="mobile-header__button-wrap"
         >
-          <img
-            alt="Open"
-            class="mobile-menu__open"
-            src="../../assets/img/Header/mobile-menu-hamburger.svg"
-          />
+          <button
+            class="mobile-header__toogle-btn"
+          >
+            <img
+              alt="Open"
+              class="mobile-header__open"
+              src="../../assets/img/Header/mobile-header-hamburger.svg"
+            />
+          </button>
         </div>
       </div>
        
       <div
-        class="mobile-menu__content-wrap"
+        class="mobile-header__content-wrap"
         style="display: none;"
       >
         <nav
-          class="mobile-menu__header-routes_links"
+          class="mobile-header__header-routes_links"
         >
           <router-link-stub
             to="/"
@@ -236,7 +249,7 @@ exports[`Header renders correctly 1`] = `
         </nav>
          
         <button
-          class="button-default red-text-and-border"
+          class="button-default mobile-header__modal-trigger-btn red-text-and-border"
         >
           
   Contact me
@@ -244,7 +257,7 @@ exports[`Header renders correctly 1`] = `
         </button>
          
         <div
-          class="mobile-menu__contacts"
+          class="mobile-header__contacts"
         >
           <div
             class="footer-contacts"
@@ -373,7 +386,7 @@ exports[`Header renders correctly 1`] = `
         </div>
          
         <div
-          class="mobile-menu__social-network_links"
+          class="mobile-header__social-network_links"
         >
           <div
             class="footer-social-network"
@@ -478,5 +491,5 @@ exports[`Header renders correctly 1`] = `
       </div>
     </div>
   </div>
-</header>
+</div>
 `;
