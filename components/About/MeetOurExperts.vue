@@ -36,49 +36,49 @@ export default {
       experts: [
         {
           name: 'Marat Bediev',
-          position: 'Senior DevOps',
+          position: 'Senior DevOps Engineer',
           image: 'marat',
           linkedin: 'https://www.linkedin.com/in/marat-bediev-a973171b/'
         },
         {
           name: 'Tamara Mun',
-          position: 'Delivery manager',
+          position: 'Delivery Manager',
           image: 'tamara',
           linkedin: 'https://www.linkedin.com/in/tamara-mun/'
         },
         {
           name: 'Andrew "Сhuck" Minkin',
-          position: 'CTO, Co-founder',
+          position: 'CTO, Co-Founder',
           image: 'chuck',
           linkedin: 'https://www.linkedin.com/in/andrew-minkin-700a2523/'
         },
         {
           name: 'Nakylai Taiirova',
-          position: 'Senior Full-Stack developer',
+          position: 'Senior Full-Stack Developer',
           image: 'nakylai',
           linkedin: 'https://www.linkedin.com/in/nakylai-taiirova-28bab859/'
         },
         {
           name: 'Daria Utesheva',
-          position: 'Head of HR department',
+          position: 'Head of HR Department',
           image: 'daria',
           linkedin: 'https://www.linkedin.com/in/%D0%B4%D0%B0%D1%80%D1%8C%D1%8F-%D1%83%D1%82%D0%B5%D1%88%D0%B5%D0%B2%D0%B0-47804198/'
         },
         {
           name: 'Nuradil Alymkulov',
-          position: 'Senior Full-Stack developer',
+          position: 'Senior Full-Stack Developer',
           image: 'nuradil',
           linkedin: 'https://www.linkedin.com/in/nuradil-alymkulov/'
         },
         {
           name: 'Alice Jang',
-          position: 'Project manager',
+          position: 'Project Manager',
           image: 'alice',
           linkedin: 'https://www.linkedin.com/in/alice-jang-b235b240/'
         },
         {
           name: 'Arthur Elizavetenkov',
-          position: 'Project manager',
+          position: 'Project Manager',
           image: 'arthur',
           linkedin: 'https://www.linkedin.com/in/earthurkg/'
         }
@@ -92,7 +92,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .meet-our_experts {
-    padding-bottom: 149px;
+    padding-bottom: 186px;
     background-color: $bgcolor--white;
 
     &__main-title {
@@ -104,8 +104,7 @@ export default {
       grid-template-columns: repeat(4, 1fr);
     }
 
-    &__expert-item,
-    /deep/.mobile-expert-item {
+    &__expert-item {
       width: 100%;
       height: 100%;
       position: relative;
@@ -176,21 +175,21 @@ export default {
       letter-spacing: -0.3px;
     }
 
-    &__expert-img,
-    /deep/.mobile-expert-img {
+    &__expert-img {
       width: 100%;
       height: 100%;
     }
   }
 
-  @media only screen and (max-width: 1360px) {
+  @media only screen and (max-width: 1340px) {
     .meet-our_experts {
       &__expert-name {
-        font-size: 19px;
+        font-size: 18px;
+        letter-spacing: -0.03em;
       }
 
       &__expert-position {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   }
@@ -198,19 +197,19 @@ export default {
   @media only screen and (max-width: 1220px) {
     .meet-our_experts {
       &__expert-name {
-        font-size: 17px;
+        font-size: 16px;
       }
 
       &__expert-position {
-        font-size: 14px;
+        font-size: 12px;
       }
     }
   }
 
-  @media only screen and (max-width: 1120px) {
+  @media only screen and (max-width: 1180px) {
     .meet-our_experts {
       &__expert-name {
-        font-size: 14px;
+        font-size: 13px;
       }
 
       &__expert-position {
@@ -219,32 +218,22 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 980px) {
+  @media only screen and (max-width: 1080px) {
     .meet-our_experts {
-      &__experts-list {
-        grid-template-columns: repeat(2, 1fr);
+      &__expert-name {
+        font-size: 12px;
+      }
+
+      &__expert-position {
+        font-size: 10px;
       }
     }
   }
 
-  @media only screen and (max-width: 520px) {
-    .meet-our_experts {
-      padding-bottom: 95px;
-
-      &__main-title {
-        padding-bottom: 30px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 440px) {
+  @media only screen and (max-width: 1000px) {
     .meet-our_experts {
       &__experts-list {
         display: none;
-      }
-
-      /deep/.swiper {
-        display: block;
       }
     }
   }
