@@ -33,7 +33,11 @@ exports[`Banner renders correctly 1`] = `
         <div
           class="icon-item"
         >
-          <!---->
+          <div
+            class="banner__animation-img-wrap"
+          >
+            <!---->
+          </div>
            
           <!---->
            
