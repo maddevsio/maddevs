@@ -104,8 +104,7 @@ export default {
       grid-template-columns: repeat(4, 1fr);
     }
 
-    &__expert-item,
-    /deep/.mobile-expert-item {
+    &__expert-item {
       width: 100%;
       height: 100%;
       position: relative;
@@ -176,8 +175,7 @@ export default {
       letter-spacing: -0.3px;
     }
 
-    &__expert-img,
-    /deep/.mobile-expert-img {
+    &__expert-img {
       width: 100%;
       height: 100%;
     }
@@ -208,33 +206,35 @@ export default {
     }
   }
 
-  // @media only screen and (max-width: 980px) {
-  //   .meet-our_experts {
-  //     &__experts-list {
-  //       grid-template-columns: repeat(2, 1fr);
-  //     }
-  //   }
-  // }
+  @media only screen and (max-width: 1080px) {
+    .meet-our_experts {
+      &__expert-name {
+        font-size: 13px;
+      }
 
-  // @media only screen and (max-width: 520px) {
-  //   .meet-our_experts {
-  //     padding-bottom: 95px;
+      &__expert-position {
+        font-size: 11px;
+      }
+    }
+  }
 
-  //     &__main-title {
-  //       padding-bottom: 30px;
-  //     }
-  //   }
-  // }
+  @media only screen and (max-width: 1080px) {
+    .meet-our_experts {
+      &__expert-name {
+        font-size: 12px;
+      }
 
-  // @media only screen and (max-width: 440px) {
-  //   .meet-our_experts {
-  //     &__experts-list {
-  //       display: none;
-  //     }
+      &__expert-position {
+        font-size: 10px;
+      }
+    }
+  }
 
-  //     /deep/.swiper {
-  //       display: block;
-  //     }
-  //   }
-  // }
+  @media only screen and (max-width: 1000px) {
+    .meet-our_experts {
+      &__experts-list {
+        display: none;
+      }
+    }
+  }
 </style>
