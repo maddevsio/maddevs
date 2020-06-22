@@ -1,7 +1,7 @@
 <template>
   <div class="mobile-header" :class="{ 'is-open': mobileHeaderIsOpen }">
 		<div class="mobile-header__top-line">
-			<router-link to="/" class="mobile-header__header-logo">
+			<router-link to="/" class="mobile-header__header-logo" @click.native="mobileHeaderIsOpen = false">
 				<img src="../../assets/img/common/logo.svg" alt="Logotype">
 			</router-link>
 			<div class="mobile-header__button-wrap">
@@ -54,6 +54,7 @@ export default {
   watch: {
     '$route'() {
       this.mobileHeaderIsOpen = false;
+      this.$nuxt.$emit('tooglePageScrollBar', false);
     }
   },
   methods: {
@@ -143,8 +144,12 @@ export default {
 			border: 0;
 			box-shadow: none;
 			background-color: transparent;
-		}
-	}
+    }
+    
+    .nuxt-link-exact-active {
+      color: $text-color--red;
+    }
+  }
 
 	.is-open {
 		position: fixed;
