@@ -36,49 +36,49 @@ export default {
       experts: [
         {
           name: 'Marat Bediev',
-          position: 'Senior DevOps',
+          position: 'Senior DevOps Engineer',
           image: 'marat',
           linkedin: 'https://www.linkedin.com/in/marat-bediev-a973171b/'
         },
         {
           name: 'Tamara Mun',
-          position: 'Delivery manager',
+          position: 'Delivery Manager',
           image: 'tamara',
           linkedin: 'https://www.linkedin.com/in/tamara-mun/'
         },
         {
           name: 'Andrew "Сhuck" Minkin',
-          position: 'CTO, Co-founder',
+          position: 'CTO, Co-Founder',
           image: 'chuck',
           linkedin: 'https://www.linkedin.com/in/andrew-minkin-700a2523/'
         },
         {
           name: 'Nakylai Taiirova',
-          position: 'Senior Full-Stack developer',
+          position: 'Senior Full-Stack Developer',
           image: 'nakylai',
           linkedin: 'https://www.linkedin.com/in/nakylai-taiirova-28bab859/'
         },
         {
           name: 'Daria Utesheva',
-          position: 'Head of HR department',
+          position: 'Head of HR Department',
           image: 'daria',
           linkedin: 'https://www.linkedin.com/in/%D0%B4%D0%B0%D1%80%D1%8C%D1%8F-%D1%83%D1%82%D0%B5%D1%88%D0%B5%D0%B2%D0%B0-47804198/'
         },
         {
           name: 'Nuradil Alymkulov',
-          position: 'Senior Full-Stack developer',
+          position: 'Senior Full-Stack Developer',
           image: 'nuradil',
           linkedin: 'https://www.linkedin.com/in/nuradil-alymkulov/'
         },
         {
           name: 'Alice Jang',
-          position: 'Project manager',
+          position: 'Project Manager',
           image: 'alice',
           linkedin: 'https://www.linkedin.com/in/alice-jang-b235b240/'
         },
         {
           name: 'Arthur Elizavetenkov',
-          position: 'Project manager',
+          position: 'Project Manager',
           image: 'arthur',
           linkedin: 'https://www.linkedin.com/in/earthurkg/'
         }
@@ -206,7 +206,7 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1080px) {
+  @media only screen and (max-width: 1180px) {
     .meet-our_experts {
       &__expert-name {
         font-size: 13px;
