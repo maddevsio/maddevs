@@ -210,14 +210,6 @@ exports[`We Create It Project For renders correctly 1`] = `
           
           </li>
         </ul>
-         
-        <button
-          class="button-default red-text-and-border"
-        >
-          
-  Get case studies
-
-        </button>
       </div>
     </div>
   </div>
