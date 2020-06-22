@@ -1,5 +1,5 @@
 <template>
-  <swiper class="swiper">
+  <swiper class="swiper" :options="swiperOption">
     <swiper-slide v-for="(expert, i) in experts" :key="i">
       <div class="mobile-expert-item">
         <img :src="require(`@/assets/img/Home/png/experts/${expert.image}.png`)" class="mobile-expert-img" :alt="expert.name">
@@ -31,6 +31,13 @@ export default {
       type: Array,
       default: Function
     }
+  },
+  data() {
+    return {
+      swiperOption: {
+        slidesPerView: 'auto'
+      }
+    };
   }
 };
 </script>
@@ -39,8 +46,23 @@ export default {
   .swiper {
     display: none;
 
-    .swiper-slide {
+    .swiper-container {
       width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      width: 347px;
+    }
+
+    .mobile-expert-item {
+      position: relative;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .swiper {
+      display: block;
     }
   }
 </style>
