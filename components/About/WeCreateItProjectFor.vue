@@ -23,7 +23,6 @@
               {{ country.countryName }}
             </li>
           </ul>
-          <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="red-text-and-border"/>
         </div>
       </div>
     </div>
@@ -31,13 +30,9 @@
 </template>
 
 <script>
-import buttonTrigger from '@/components/ui/button-trigger';
 
 export default {
   name: 'WeCreateItProjectFor',
-  components: {
-    buttonTrigger
-  },
   data() {
     return {
       countries: [
@@ -89,9 +84,7 @@ export default {
           iconName: 'kazakhstan',
           countryName: 'Kazakhstan'
         }
-      ],
-      buttonInnerText: 'Get case studies',
-      modalWindowName: 'get-case-studies-modal'
+      ]
     };
   }
 };
@@ -101,7 +94,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .we-create-it-project {
-    padding-top: 105px;
+    padding-top: 195px;
     padding-bottom: 214px;
 
     &__content-wrap {
