@@ -6,7 +6,7 @@ describe('Mobile Header', () => {
 
   beforeEach(() => {
     wrapper = mount(mobileHeader, {
-      stubs: ['router-link']
+      stubs: ['router-link', 'perfect-scrollbar']
     });
   });
 

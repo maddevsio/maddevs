@@ -178,322 +178,318 @@ exports[`Header renders correctly 1`] = `
     class="mobile-header"
   >
     <div
-      class="container"
+      class="mobile-header__top-line"
     >
-      <div
-        class="mobile-header__top-line"
+      <router-link-stub
+        class="mobile-header__header-logo"
+        to="/"
       >
-        <router-link-stub
-          class="mobile-header__header-logo"
-          to="/"
+        <img
+          alt="Logotype"
+          src="../../assets/img/common/logo.svg"
+        />
+      </router-link-stub>
+       
+      <div
+        class="mobile-header__button-wrap"
+      >
+        <button
+          class="mobile-header__toogle-btn"
         >
           <img
-            alt="Logotype"
-            src="../../assets/img/common/logo.svg"
+            alt="Open"
+            class="mobile-header__open"
+            src="../../assets/img/Header/mobile-header-hamburger.svg"
           />
-        </router-link-stub>
-         
-        <div
-          class="mobile-header__button-wrap"
-        >
-          <button
-            class="mobile-header__toogle-btn"
-          >
-            <img
-              alt="Open"
-              class="mobile-header__open"
-              src="../../assets/img/Header/mobile-header-hamburger.svg"
-            />
-          </button>
-        </div>
+        </button>
       </div>
-       
-      <perfect-scrollbar-stub
-        class="mobile-header__scrollbar custom-scrollbar"
+    </div>
+     
+    <perfect-scrollbar-stub
+      class="mobile-header__scrollbar custom-scrollbar container"
+    >
+      <div
+        class="mobile-header__content-wrap"
+        style="display: none;"
       >
-        <div
-          class="mobile-header__content-wrap"
-          style="display: none;"
+        <nav
+          class="mobile-header__header-routes_links"
         >
-          <nav
-            class="mobile-header__header-routes_links"
+          <router-link-stub
+            to="/"
           >
-            <router-link-stub
-              to="/"
-            >
-              About
-            </router-link-stub>
-             
-            <router-link-stub
-              to="/services"
-            >
-              Services
-            </router-link-stub>
-             
-            <router-link-stub
-              to="/projects"
-            >
-              Projects
-            </router-link-stub>
-             
-            <router-link-stub
-              to="/careers"
-            >
-              Careers
-            </router-link-stub>
-             
-            <a
-              href="https://blog.maddevs.io/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              Blog
-            </a>
-          </nav>
+            About
+          </router-link-stub>
            
-          <button
-            class="button-default mobile-header__modal-trigger-btn red-text-and-border"
+          <router-link-stub
+            to="/services"
           >
-            
+            Services
+          </router-link-stub>
+           
+          <router-link-stub
+            to="/projects"
+          >
+            Projects
+          </router-link-stub>
+           
+          <router-link-stub
+            to="/careers"
+          >
+            Careers
+          </router-link-stub>
+           
+          <a
+            href="https://blog.maddevs.io/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Blog
+          </a>
+        </nav>
+         
+        <button
+          class="button-default mobile-header__modal-trigger-btn red-text-and-border"
+        >
+          
   Contact me
 
-          </button>
-           
+        </button>
+         
+        <div
+          class="mobile-header__contacts"
+        >
           <div
-            class="mobile-header__contacts"
+            class="footer-contacts"
           >
             <div
-              class="footer-contacts"
+              class="footer-contacts__call-us"
             >
-              <div
-                class="footer-contacts__call-us"
+              <h4
+                class="footer-contacts__title"
               >
-                <h4
-                  class="footer-contacts__title"
-                >
-                  Call us:
-                </h4>
-                 
-                <ul
-                  class="footer-contacts__phones-list"
-                >
-                  <li>
-                    <a
-                      class="footer-contacts__phone-item"
-                      href="tel:+1 888 401 3401"
-                    >
-                      <img
-                        alt="United States"
-                        src="@/assets/img/Flags/united-states.svg"
-                      />
-                      
+                Call us:
+              </h4>
+               
+              <ul
+                class="footer-contacts__phones-list"
+              >
+                <li>
+                  <a
+                    class="footer-contacts__phone-item"
+                    href="tel:+1 888 401 3401"
+                  >
+                    <img
+                      alt="United States"
+                      src="@/assets/img/Flags/united-states.svg"
+                    />
+                    
 					+1 833 623 3387
 				
-                    </a>
-                  </li>
-                   
-                  <li>
-                    <a
-                      class="footer-contacts__phone-item"
-                      href="tel:+1 888 401 3401"
-                    >
-                      <img
-                        alt="United Kingdom"
-                        src="@/assets/img/Flags/united-kingdom.svg"
-                      />
-                      
+                  </a>
+                </li>
+                 
+                <li>
+                  <a
+                    class="footer-contacts__phone-item"
+                    href="tel:+1 888 401 3401"
+                  >
+                    <img
+                      alt="United Kingdom"
+                      src="@/assets/img/Flags/united-kingdom.svg"
+                    />
+                    
 					+44 20 3984 8555
 				
-                    </a>
-                  </li>
-                </ul>
-              </div>
-               
-              <div
-                class="footer-contacts__message-us"
+                  </a>
+                </li>
+              </ul>
+            </div>
+             
+            <div
+              class="footer-contacts__message-us"
+            >
+              <h4
+                class="footer-contacts__title"
               >
-                <h4
-                  class="footer-contacts__title"
-                >
-                  Message us:
-                </h4>
-                 
-                <ul
-                  class="footer-contacts__messengers-list"
-                >
-                  <li>
-                    <a
-                      class="footer-contacts__messenger-item"
-                      href="http://m.me/maddevsllc"
-                      target="_blank"
-                    >
-                      <img
-                        alt="Messenger"
-                        src="@/assets/img/Footer/messenger.svg"
-                      />
-                      
+                Message us:
+              </h4>
+               
+              <ul
+                class="footer-contacts__messengers-list"
+              >
+                <li>
+                  <a
+                    class="footer-contacts__messenger-item"
+                    href="http://m.me/maddevsllc"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Messenger"
+                      src="@/assets/img/Footer/messenger.svg"
+                    />
+                    
 					Messenger
 				
-                    </a>
-                  </li>
-                   
-                  <li>
-                    <a
-                      class="footer-contacts__messenger-item"
-                      href="http://wa.me/996555771481"
-                      target="_blank"
-                    >
-                      <img
-                        alt="Whatsapp"
-                        src="@/assets/img/Footer/whatsapp.svg"
-                      />
-                      
+                  </a>
+                </li>
+                 
+                <li>
+                  <a
+                    class="footer-contacts__messenger-item"
+                    href="http://wa.me/996555771481"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Whatsapp"
+                      src="@/assets/img/Footer/whatsapp.svg"
+                    />
+                    
 					Whatsapp
 				
-                    </a>
-                  </li>
-                   
-                  <li>
-                    <a
-                      class="footer-contacts__messenger-item"
-                      href="https://t.me/mun_tamara/"
-                      target="_blank"
-                    >
-                      <img
-                        alt="Telegram"
-                        src="@/assets/img/Footer/telegram.svg"
-                      />
-                      
+                  </a>
+                </li>
+                 
+                <li>
+                  <a
+                    class="footer-contacts__messenger-item"
+                    href="https://t.me/mun_tamara/"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Telegram"
+                      src="@/assets/img/Footer/telegram.svg"
+                    />
+                    
 					Telegram
 				
-                    </a>
-                  </li>
-                   
-                  <li>
-                    <a
-                      class="footer-contacts__messenger-item"
-                      href="#"
-                    >
-                      <img
-                        alt="WeChat"
-                        src="@/assets/img/Footer/wechat.svg"
-                      />
-                      
+                  </a>
+                </li>
+                 
+                <li>
+                  <a
+                    class="footer-contacts__messenger-item"
+                    href="#"
+                  >
+                    <img
+                      alt="WeChat"
+                      src="@/assets/img/Footer/wechat.svg"
+                    />
+                    
 					WeChat
 				
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-           
-          <div
-            class="mobile-header__social-network_links"
-          >
-            <div
-              class="footer-social-network"
-            >
-              <a
-                class="footer-social-network__social-newtork_link"
-                href="https://github.com/maddevsio"
-                target="_blank"
-              >
-                <img
-                  alt="Mad Devs GitHub"
-                  class="footer-social-network__github"
-                  src="../../assets/img/Footer/github.svg"
-                />
-              </a>
-               
-              <a
-                class="footer-social-network__social-newtork_link"
-                href="https://www.facebook.com/maddevsio"
-                target="_blank"
-              >
-                <img
-                  alt="Mad Devs Facebook"
-                  class="footer-social-network__facebook"
-                  src="../../assets/img/Footer/facebook.svg"
-                />
-              </a>
-               
-              <a
-                class="footer-social-network__social-newtork_link"
-                href="https://www.instagram.com/maddevsio/"
-                target="_blank"
-              >
-                <img
-                  alt="Mad Devs Instagram"
-                  class="footer-social-network__instagram"
-                  src="../../assets/img/Footer/instagram.svg"
-                />
-              </a>
-               
-              <a
-                class="footer-social-network__social-newtork_link"
-                href="https://blog.maddevs.io/"
-                target="_blank"
-              >
-                <img
-                  alt="Mad Devs Medium"
-                  class="footer-social-network__medium"
-                  src="../../assets/img/Footer/medium.svg"
-                />
-              </a>
-               
-              <a
-                class="footer-social-network__social-newtork_link"
-                href="https://twitter.com/MadDevsIO"
-                target="_blank"
-              >
-                <img
-                  alt="Mad Devs Twitter"
-                  class="footer-social-network__twitter"
-                  src="../../assets/img/Footer/twitter.svg"
-                />
-              </a>
-               
-              <a
-                class="footer-social-network__social-newtork_link"
-                href="https://www.slideshare.net/maddevs/presentations"
-                target="_blank"
-              >
-                <img
-                  alt="Mad Devs Slideshare"
-                  class="footer-social-network__slideshare"
-                  src="../../assets/img/Footer/slideshare.svg"
-                />
-              </a>
-               
-              <a
-                class="footer-social-network__social-newtork_link"
-                href="https://www.youtube.com/channel/UCF6liiudpZq6AQe6hXVEW7w"
-                target="_blank"
-              >
-                <img
-                  alt="Mad Devs YouTube"
-                  class="footer-social-network__youtube"
-                  src="../../assets/img/Footer/youtube.svg"
-                />
-              </a>
-               
-              <a
-                class="footer-social-network__social-newtork_link"
-                href="https://www.behance.net/maddevs"
-                target="_blank"
-              >
-                <img
-                  alt="Mad Devs Behance"
-                  class="footer-social-network__behance"
-                  src="../../assets/img/Footer/behance.svg"
-                />
-              </a>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </perfect-scrollbar-stub>
-    </div>
+         
+        <div
+          class="mobile-header__social-network_links"
+        >
+          <div
+            class="footer-social-network"
+          >
+            <a
+              class="footer-social-network__social-newtork_link"
+              href="https://github.com/maddevsio"
+              target="_blank"
+            >
+              <img
+                alt="Mad Devs GitHub"
+                class="footer-social-network__github"
+                src="../../assets/img/Footer/github.svg"
+              />
+            </a>
+             
+            <a
+              class="footer-social-network__social-newtork_link"
+              href="https://www.facebook.com/maddevsio"
+              target="_blank"
+            >
+              <img
+                alt="Mad Devs Facebook"
+                class="footer-social-network__facebook"
+                src="../../assets/img/Footer/facebook.svg"
+              />
+            </a>
+             
+            <a
+              class="footer-social-network__social-newtork_link"
+              href="https://www.instagram.com/maddevsio/"
+              target="_blank"
+            >
+              <img
+                alt="Mad Devs Instagram"
+                class="footer-social-network__instagram"
+                src="../../assets/img/Footer/instagram.svg"
+              />
+            </a>
+             
+            <a
+              class="footer-social-network__social-newtork_link"
+              href="https://blog.maddevs.io/"
+              target="_blank"
+            >
+              <img
+                alt="Mad Devs Medium"
+                class="footer-social-network__medium"
+                src="../../assets/img/Footer/medium.svg"
+              />
+            </a>
+             
+            <a
+              class="footer-social-network__social-newtork_link"
+              href="https://twitter.com/MadDevsIO"
+              target="_blank"
+            >
+              <img
+                alt="Mad Devs Twitter"
+                class="footer-social-network__twitter"
+                src="../../assets/img/Footer/twitter.svg"
+              />
+            </a>
+             
+            <a
+              class="footer-social-network__social-newtork_link"
+              href="https://www.slideshare.net/maddevs/presentations"
+              target="_blank"
+            >
+              <img
+                alt="Mad Devs Slideshare"
+                class="footer-social-network__slideshare"
+                src="../../assets/img/Footer/slideshare.svg"
+              />
+            </a>
+             
+            <a
+              class="footer-social-network__social-newtork_link"
+              href="https://www.youtube.com/channel/UCF6liiudpZq6AQe6hXVEW7w"
+              target="_blank"
+            >
+              <img
+                alt="Mad Devs YouTube"
+                class="footer-social-network__youtube"
+                src="../../assets/img/Footer/youtube.svg"
+              />
+            </a>
+             
+            <a
+              class="footer-social-network__social-newtork_link"
+              href="https://www.behance.net/maddevs"
+              target="_blank"
+            >
+              <img
+                alt="Mad Devs Behance"
+                class="footer-social-network__behance"
+                src="../../assets/img/Footer/behance.svg"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </perfect-scrollbar-stub>
   </div>
 </div>
 `;

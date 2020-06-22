@@ -139,13 +139,10 @@ export default {
 		}
 
 		&__toogle-btn {
-			background-color: transparent;
-			box-shadow: none;
-			border: 0;
-		}
-
-		&__toogle-btn {
 			padding: 0;
+			border: 0;
+			box-shadow: none;
+			background-color: transparent;
 		}
 	}
 
