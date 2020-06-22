@@ -193,7 +193,7 @@ export default {
         line-height: 99%;
         letter-spacing: -1px;
         padding-bottom: 13px;
-        margin-right: 6px;
+        max-width: 77%;
       }
 
       &__sub-title {
@@ -205,6 +205,10 @@ export default {
 
       &__paragraph {
         padding-bottom: 30px;
+      }
+
+      &__content-item {
+        padding-top: 75px;
       }
     }
   }
