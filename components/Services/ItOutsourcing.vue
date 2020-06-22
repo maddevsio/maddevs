@@ -108,7 +108,11 @@ export default {
 
   @media only screen and (max-width: 375px) {
     .it-outsourcing {
-      padding: 130px 0;
+      padding: 86px 0 130px;
+
+      &__main-title {
+        padding-bottom: 26px;
+      }
     }
   }
 </style>

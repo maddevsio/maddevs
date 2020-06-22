@@ -282,10 +282,6 @@ export default {
       &__last-character {
         margin-left: -21px;
       }
-
-      &__title {
-        height: 60px;
-      }
     }
   }
 
@@ -295,11 +291,16 @@ export default {
         padding-bottom: 25px;
       }
 
+      &__title,
+      .individuals-hover-title,
+      .teams-hover-title {
+        margin-bottom: -40px;
+      }
+
       &__title {
         font-size: 41px;
         line-height: 99%;
         letter-spacing: -1px;
-        margin-bottom: -10px;
       }
 
       &__sub-title {

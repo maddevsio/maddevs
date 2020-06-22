@@ -40,4 +40,8 @@ describe('Meet Our Experts Mobile Slider', () => {
     let swiperSlide = wrapper.findAll('.swiper-slide');
     expect(swiperSlide).toHaveLength(1);
   });
+
+  test('sets the correct data for slider option', () => {
+    expect(wrapper.vm.$data.swiperOption.slidesPerView).toEqual('auto');
+  });
 });

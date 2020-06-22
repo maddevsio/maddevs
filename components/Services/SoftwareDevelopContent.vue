@@ -104,7 +104,6 @@ export default {
 
     &__paragraph {
       max-width: 360px;
-      padding-bottom: 20px;
       line-height: 139%;
     }
 
@@ -249,6 +248,27 @@ export default {
           flex-direction: column;
         }
       }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        /deep/.icon-flex_group {
+          display: block;
+
+          &:first-child {
+            /deep/.icon-item {
+              padding-right: 70px;
+            }
+          }
+
+          &:last-child {
+            flex-direction: column;
+          }
+        }
+      }
+
+      &__paragraph {
+        padding-bottom: 12px;
+      }
     }
   }
 
@@ -266,16 +286,36 @@ export default {
 
   @media only screen and (max-width: 458px) {
     .software-development_content {
-      /deep/.icon-flex_group {
+      &:first-child {
+        /deep/.icon-flex_group {
         display: flex;
+        flex-direction: column;
 
-        &:last-child {
-          flex-direction: row;
+          &:last-child {
+            flex-direction: row;
+
+            /deep/.icon-item:first-child {
+              padding-right: 70px;
+            }
+          }
+
+          &:first-child {
+            /deep/.icon-item {
+              padding-right: 70px;
+            }
+          }
         }
       }
 
-      /deep/.icon-item {
-        padding-right: 70px;
+      /deep/.icon-flex_group {
+        display: flex;
+        flex-direction: column;
+
+        &:first-child {
+          /deep/.icon-item {
+            padding-right: 70px;
+          }
+        }
       }
     }
   }
@@ -294,7 +334,10 @@ export default {
         font-size: 27px;
         line-height: 124%;
         letter-spacing: -1px;
-        margin-bottom: 10px;
+      }
+
+      /deep/.icons-list {
+        padding-bottom: 30px;
       }
     }
   }
