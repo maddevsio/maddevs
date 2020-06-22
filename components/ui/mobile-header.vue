@@ -145,7 +145,7 @@ export default {
 			box-shadow: none;
 			background-color: transparent;
     }
-    
+
     .nuxt-link-exact-active {
       color: $text-color--red;
     }
