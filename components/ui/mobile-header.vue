@@ -1,35 +1,37 @@
 <template>
-	<div class="mobile-header" :class="{'is-open':mobileHeaderIsOpen}">
-		<div class="container">
-			<div class="mobile-header__top-line">
-					<router-link to="/" class="mobile-header__header-logo">
-							<img src="../../assets/img/common/logo.svg" alt="Logotype">
-					</router-link>
-					<div class="mobile-header__button-wrap">
-						<button class="mobile-header__toogle-btn" @click="toggleMobileHeader()">
-							<img src="../../assets/img/Header/mobile-header-hamburger.svg" alt="Open" class="mobile-header__open" v-if="!mobileHeaderIsOpen">
-							<img src="../../assets/img/Header/mobile-header-close.svg" alt="Close" class="mobile-header__close" v-else>
-						</button>
-					</div>
-			</div>
-			<div class="mobile-header__content-wrap" v-show="mobileHeaderIsOpen">
-				<nav class="mobile-header__header-routes_links">
-					<router-link to="/" @click.native="toggleMobileHeader()">About</router-link>
-					<router-link to="/services" @click.native="toggleMobileHeader()">Services</router-link>
-					<router-link to="/projects" @click.native="toggleMobileHeader()">Projects</router-link>
-					<router-link to="/careers" @click.native="toggleMobileHeader()">Careers</router-link>
-					<a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
-				</nav>
-				<buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="mobile-header__modal-trigger-btn red-text-and-border" />
-				<div class="mobile-header__contacts">
-					<footerContacts />
-				</div>
-				<div class="mobile-header__social-network_links">
-					<footerSocialNetworkBar />
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="mobile-header" :class="{ 'is-open': mobileHeaderIsOpen }">
+    <div class="container">
+      <div class="mobile-header__top-line">
+        <router-link to="/" class="mobile-header__header-logo">
+          <img src="../../assets/img/common/logo.svg" alt="Logotype">
+        </router-link>
+        <div class="mobile-header__button-wrap">
+          <button class="mobile-header__toogle-btn" @click="toggleMobileHeader()">
+            <img src="../../assets/img/Header/mobile-header-hamburger.svg" alt="Open" class="mobile-header__open" v-if="!mobileHeaderIsOpen">
+            <img src="../../assets/img/Header/mobile-header-close.svg" alt="Close" class="mobile-header__close" v-else>
+          </button>
+        </div>
+      </div>
+      <perfect-scrollbar class="mobile-header__scrollbar custom-scrollbar">
+        <div class="mobile-header__content-wrap" v-show="mobileHeaderIsOpen">
+          <nav class="mobile-header__header-routes_links">
+            <router-link to="/" @click.native="toggleMobileHeader()">About</router-link>
+            <router-link to="/services" @click.native="toggleMobileHeader()">Services</router-link>
+            <router-link to="/projects" @click.native="toggleMobileHeader()">Projects</router-link>
+            <router-link to="/careers" @click.native="toggleMobileHeader()">Careers</router-link>
+            <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
+          </nav>
+          <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="mobile-header__modal-trigger-btn red-text-and-border" />
+          <div class="mobile-header__contacts">
+            <footerContacts />
+          </div>
+          <div class="mobile-header__social-network_links">
+            <footerSocialNetworkBar />
+          </div>
+        </div>
+      </perfect-scrollbar>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -55,6 +57,9 @@ export default {
   methods: {
     toggleMobileHeader() {
       this.mobileHeaderIsOpen = !this.mobileHeaderIsOpen;
+      if (this.$nuxt) {
+        this.$nuxt.$emit('tooglePageScrollBar', this.mobileHeaderIsOpen);
+      }
     }
   }
 };
@@ -66,7 +71,7 @@ export default {
 	.mobile-header {
     width: 100%;
 		display: none;
-		margin-top: -120px;
+    margin-top: -120px;
 
 		&__modal-trigger-btn {
 			width: 100%;
@@ -149,8 +154,9 @@ export default {
     z-index: 999;
 		background: #000;
 
-		/deep/.page-scrollbar {
-			height: 0;
+		.mobile-header__scrollbar {
+			height: 88vh;
+      padding-right: 15px;
 		}
 	}
 
@@ -160,14 +166,23 @@ export default {
 			height: 100%;
 			margin-top: 0;
 			padding: 22px 0;
-			box-sizing: border-box;
+      box-sizing: border-box;
+
+      .container {
+        padding-right: 85px;
+      }
 		}
 	}
 
 	@media only screen and (max-width: 768px) {
 		.mobile-header {
+
+      .container {
+        padding-right: 55px;
+      }
+
 			&__button-wrap {
-				margin-right: -50px;
+				margin-right: -35px;
 			}
 
 			&__header-logo {
@@ -178,8 +193,12 @@ export default {
 
 	@media only screen and (max-width: 440px) {
 		.mobile-header {
+      .container {
+        padding-right: 2px;
+      }
+
 			&__button-wrap {
-				margin-right: 0;
+				margin-right: 8px;
 			}
 
 			&__header-logo {

@@ -13,7 +13,7 @@ exports[`Individuals modal renders correctly 1`] = `
   />
    
   <perfect-scrollbar-stub
-    class="modal_scrollbar"
+    class="modal_scrollbar custom-scrollbar"
     options="[object Object]"
   >
     <validationobserver-stub />

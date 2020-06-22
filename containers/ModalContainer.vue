@@ -1,7 +1,7 @@
 <template>
   <modal :classes="['modal_container']" height="auto" :name="$props.name" :clickToClose="false" @closed="isEmailSent = false">
     <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide($props.name)">
-    <perfect-scrollbar class="modal_scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
+    <perfect-scrollbar class="modal_scrollbar custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
       <slot />
     </perfect-scrollbar>
     <SuccessMessage v-else />
@@ -76,44 +76,5 @@ export default {
     right: 19px;
     cursor: pointer;
     z-index: 1;
-  }
-
-  /deep/ .ps__rail-y {
-    width: 8px;
-    background-color: transparent !important;
-    right: 4px !important;
-
-    &::before {
-      content: '';
-      width: 4px;
-      height: 100%;
-      position: absolute;
-      right: 0;
-      top: 0;
-      background-color: $white-02;
-      border-radius: 10px;
-      transition: all .3s ease;
-    }
-
-    .ps__thumb-y {
-      width: 4px !important;
-      right: 0;
-
-      &:active {
-        width: 8px !important;
-      }
-    }
-
-    &:hover,
-    &:active {
-      &::before {
-        content: '';
-        right: 2px;
-      }
-
-      .ps__thumb-y {
-        width: 8px !important;
-      }
-    }
   }
 </style>
