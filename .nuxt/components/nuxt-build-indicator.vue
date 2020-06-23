@@ -77,7 +77,7 @@ export default {
         return
       }
       this._connecting = true
-      this.sse = new EventSource('http://localhost:45427/sse')
+      this.sse = new EventSource('/_loading/sse')
       this.sse.addEventListener('message', event => this.onSseMessage(event))
     },
     onSseMessage (message) {
@@ -136,7 +136,6 @@ svg {
   display: inline-block;
   vertical-align: baseline;
   width: 1.1em;
-  height: 0.825em;
   position: relative;
   top: 1px;
 }
