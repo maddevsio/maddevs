@@ -2,6 +2,7 @@
 
 exports[`Infrastructure Audit Modal renders correctly 1`] = `
 <modal-stub
+  classes="modal_container"
   height="auto"
   name="infrastructure-modal"
 >
@@ -12,7 +13,7 @@ exports[`Infrastructure Audit Modal renders correctly 1`] = `
   />
    
   <perfect-scrollbar-stub
-    class="modal_scrollbar"
+    class="modal_scrollbar custom-scrollbar"
     options="[object Object]"
   >
     <validationobserver-stub />
