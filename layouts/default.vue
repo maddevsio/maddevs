@@ -54,11 +54,28 @@ export default {
     ProcessAuditModal,
     TeamHeadcountModal
   },
+  created() {
+    this.$nuxt.$on('tooglePageScrollBar', opened => {
+      if (opened === true) {
+        this.disableScroll();
+      } else {
+        this.enableScroll();
+      }
+    });
+  },
   watch: {
     '$route'() {
       if (this.$refs.PageScrollBar && this.$refs.PageScrollBar.$el) {
         this.$refs.PageScrollBar.$el.scrollTop = 0;
       }
+    }
+  },
+  methods: {
+    enableScroll() {
+      this.$refs.PageScrollBar.create();
+    },
+    disableScroll() {
+      this.$refs.PageScrollBar.destroy();
     }
   }
 };
