@@ -378,20 +378,7 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .header {
-      padding-top: 0;
-      background-color: $bgcolor--black;
-
-      &__header-content_wrap {
-        display: none;
-      }
-
-       &::before {
-        background: none;
-      }
-
-      &::after {
-        background: none;
-      }
+      display: none;
     }
   }
 </style>
