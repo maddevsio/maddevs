@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 module.exports = {
+  srcDir: 'client/',
   /*
   ** Headers of the page
   */
@@ -40,14 +41,18 @@ module.exports = {
     {
       src: '~/plugins/vue-js-modal.js',
       ssr: false
-    },
-    {
-      src: '~plugins/slick.js',
-      ssr: false
     }
   ],
   generate: {
-    routes: ['/', '/services', '/projects', '/careers']
+    routes: [
+      '/',
+      '/services',
+      '/projects',
+      '/careers',
+      '/gdpr',
+      '/nda',
+      '/privacy'
+    ]
   },
   css: [
     {
@@ -63,16 +68,6 @@ module.exports = {
     ** Run ESLint on save
     */
     transpile: ['vee-validate/dist/rules'],
-    vendor: ['vue-slick'],
-    extend (config, { isDev, isClient, isServer }) {
-      if (isServer) {
-        config.externals += [
-          require('webpack-node-externals')({
-            whitelist: [/^vue-slick/]
-          })
-        ];
-      }
-    },
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({

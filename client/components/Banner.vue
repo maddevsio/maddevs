@@ -139,19 +139,19 @@ export default {
       font-weight: bold;
       font-size: 165px;
       color: $text-color--black;
-      text-shadow: $text-shadow--white;
+      -webkit-text-stroke: $text-stroke--white;
       line-height: 100%;
       letter-spacing: -8px;
 
       .main-title-white_part {
         color: $text-color--white;
-        text-shadow: none;
+			  -webkit-text-stroke: 0;
       }
 
       &--white,
       &--white-first {
         color: $text-color--white;
-        text-shadow: none;
+        -webkit-text-stroke: 0;
       }
     }
 

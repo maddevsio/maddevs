@@ -97,7 +97,7 @@ export default {
 
       span {
         color: $text-color--grey-light;
-        text-shadow: $text-shadow--black;
+        -webkit-text-stroke: $text-stroke--black;
       }
     }
 

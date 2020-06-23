@@ -1,13 +1,18 @@
 import Vue from 'vue'
 
-import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch, promisify, globalHandleError, urlJoin, sanitizeComponent } from './utils'
+import {
+  getMatchedComponentsInstances,
+  getChildrenComponentInstancesUsingFetch,
+  promisify,
+  globalHandleError,
+  sanitizeComponent
+} from './utils'
 
 import NuxtLoading from './components/nuxt-loading.vue'
-import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
-import '../assets/styles/index.scss'
+import '../client/assets/styles/index.scss'
 
-import _6f6c098b from '../layouts/default.vue'
+import _6f6c098b from '../client/layouts/default.vue'
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b) }
 
@@ -20,8 +25,7 @@ export default {
       domProps: {
         id: '__layout'
       },
-
-          key: this.layoutName
+      key: this.layoutName
     }, [layoutEl])
 
     const transitionEl = h('transition', {
@@ -45,7 +49,7 @@ export default {
       }
     }, [
       loadingEl,
-      h(NuxtBuildIndicator),
+
       transitionEl
     ])
   },
@@ -65,8 +69,8 @@ export default {
   created () {
     // Add this.$nuxt in child instances
     Vue.prototype.$nuxt = this
+    // add to window so we can listen when ready
     if (process.client) {
-      // add to window so we can listen when ready
       window.$nuxt = this
 
       this.refreshOnlineStatus()
@@ -80,10 +84,9 @@ export default {
     this.context = this.$options.context
   },
 
-  async mounted () {
+  mounted () {
     this.$loading = this.$refs.loading
   },
-
   watch: {
     'nuxt.err': 'errorChanged'
   },
@@ -93,9 +96,9 @@ export default {
       return !this.isOnline
     },
 
-    isFetching () {
+      isFetching() {
       return this.nbFetching > 0
-    },
+    }
   },
 
   methods: {
@@ -171,10 +174,6 @@ export default {
     },
 
     setLayout (layout) {
-      if(layout && typeof layout !== 'string') {
-        throw new Error('[nuxt] Avoid using non-string value as layout property.')
-      }
-
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }
@@ -187,7 +186,7 @@ export default {
         layout = 'default'
       }
       return Promise.resolve(layouts['_' + layout])
-    },
+    }
   },
 
   components: {

@@ -66,7 +66,7 @@ export default {
 		}
 
 		&__main-title {
-			text-shadow: $text-shadow--white;
+			-webkit-text-stroke: $text-stroke--white;
 		}
 
 		&__mailto-link {

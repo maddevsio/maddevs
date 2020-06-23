@@ -12,15 +12,14 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_0d21699e from 'nuxt_plugin_plugin_0d21699e' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_yandexmetrikaplugin04602fb5_7ab332f6 from 'nuxt_plugin_yandexmetrikaplugin04602fb5_7ab332f6' // Source: ./yandex-metrika.plugin.04602fb5.js (mode: 'client')
 import nuxt_plugin_axios_44ce91b4 from 'nuxt_plugin_axios_44ce91b4' // Source: ./axios.js (mode: 'all')
-import nuxt_plugin_i18n_1fba523a from 'nuxt_plugin_i18n_1fba523a' // Source: ../plugins/i18n.js (mode: 'all')
-import nuxt_plugin_vuescrollto_44ce9a1c from 'nuxt_plugin_vuescrollto_44ce9a1c' // Source: ../plugins/vue-scrollto.js (mode: 'all')
-import nuxt_plugin_googleanalytics_2bcb2ee2 from 'nuxt_plugin_googleanalytics_2bcb2ee2' // Source: ../plugins/google-analytics.js (mode: 'all')
-import nuxt_plugin_veevalidate_1a0c1998 from 'nuxt_plugin_veevalidate_1a0c1998' // Source: ../plugins/vee-validate.js (mode: 'all')
-import nuxt_plugin_vue2perfectscrollbar_beb56648 from 'nuxt_plugin_vue2perfectscrollbar_beb56648' // Source: ../plugins/vue2-perfect-scrollbar.js (mode: 'all')
-import nuxt_plugin_vuejsmodal_a01fef9e from 'nuxt_plugin_vuejsmodal_a01fef9e' // Source: ../plugins/vue-js-modal.js (mode: 'client')
-import nuxt_plugin_slick_b0295394 from 'nuxt_plugin_slick_b0295394' // Source: ../plugins/slick.js (mode: 'client')
+import nuxt_plugin_i18n_1fba523a from 'nuxt_plugin_i18n_1fba523a' // Source: ../client/plugins/i18n.js (mode: 'all')
+import nuxt_plugin_vuescrollto_44ce9a1c from 'nuxt_plugin_vuescrollto_44ce9a1c' // Source: ../client/plugins/vue-scrollto.js (mode: 'all')
+import nuxt_plugin_googleanalytics_2bcb2ee2 from 'nuxt_plugin_googleanalytics_2bcb2ee2' // Source: ../client/plugins/google-analytics.js (mode: 'all')
+import nuxt_plugin_veevalidate_1a0c1998 from 'nuxt_plugin_veevalidate_1a0c1998' // Source: ../client/plugins/vee-validate.js (mode: 'all')
+import nuxt_plugin_vue2perfectscrollbar_beb56648 from 'nuxt_plugin_vue2perfectscrollbar_beb56648' // Source: ../client/plugins/vue2-perfect-scrollbar.js (mode: 'all')
+import nuxt_plugin_vuejsmodal_a01fef9e from 'nuxt_plugin_vuejsmodal_a01fef9e' // Source: ../client/plugins/vue-js-modal.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -51,7 +50,7 @@ Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n
 
 const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
-async function createApp(ssrContext, config = {}) {
+async function createApp (ssrContext) {
   const router = await createRouter(ssrContext)
 
   const store = createStore(ssrContext)
@@ -67,7 +66,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Mad Devs - IT Outsourcing Company in UK","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"yandex-verification","content":"1cce4e9bf6ebcdff"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"sitemap","type":"application\u002Fxml","href":"https:\u002F\u002Fmaddevs.io\u002Fsitemap.xml"}],"script":[{"src":"https:\u002F\u002Fwidget.clutch.co\u002Fstatic\u002Fjs\u002Fwidget.js"}],"style":[]},
+    head: {"title":"Mad Devs - IT Outsourcing Company in UK","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"yandex-verification","content":"1cce4e9bf6ebcdff"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"sitemap","type":"application\u002Fxml","href":"https:\u002F\u002Fmaddevs.io\u002Fsitemap.xml"}],"script":[{"src":"https:\u002F\u002Fwidget.clutch.co\u002Fstatic\u002Fjs\u002Fwidget.js"},{"src":"https:\u002F\u002Fmc.yandex.ru\u002Fmetrika\u002Fwatch.js","async":""}],"style":[]},
 
     store,
     router,
@@ -140,7 +139,7 @@ async function createApp(ssrContext, config = {}) {
     ssrContext
   })
 
-  function inject(key, value) {
+  const inject = function (key, value) {
     if (!key) {
       throw new Error('inject(key, value) has no key provided')
     }
@@ -151,10 +150,6 @@ async function createApp(ssrContext, config = {}) {
     key = '$' + key
     // Add into app
     app[key] = value
-    // Add into context
-    if (!app.context[key]) {
-      app.context[key] = value
-    }
 
     // Add into store
     store[key] = app[key]
@@ -177,9 +172,6 @@ async function createApp(ssrContext, config = {}) {
     })
   }
 
-  // Inject runtime config as $config
-  inject('config', config)
-
   if (process.client) {
     // Replace store state before plugins execution
     if (window.__NUXT__ && window.__NUXT__.state) {
@@ -187,17 +179,10 @@ async function createApp(ssrContext, config = {}) {
     }
   }
 
-  // Add enablePreview(previewData = {}) in context for plugins
-  if (process.static && process.client) {
-    app.context.enablePreview = function (previewData = {}) {
-      app.previewData = Object.assign({}, previewData)
-      inject('preview', previewData)
-    }
-  }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_0d21699e === 'function') {
-    await nuxt_plugin_plugin_0d21699e(app.context, inject)
+  if (process.client && typeof nuxt_plugin_yandexmetrikaplugin04602fb5_7ab332f6 === 'function') {
+    await nuxt_plugin_yandexmetrikaplugin04602fb5_7ab332f6(app.context, inject)
   }
 
   if (typeof nuxt_plugin_axios_44ce91b4 === 'function') {
@@ -226,17 +211,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (process.client && typeof nuxt_plugin_vuejsmodal_a01fef9e === 'function') {
     await nuxt_plugin_vuejsmodal_a01fef9e(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_slick_b0295394 === 'function') {
-    await nuxt_plugin_slick_b0295394(app.context, inject)
-  }
-
-  // Lock enablePreview in context
-  if (process.static && process.client) {
-    app.context.enablePreview = function () {
-      console.warn('You cannot call enablePreview() outside a plugin.')
-    }
   }
 
   // If server-side, wait for async component to be resolved first
