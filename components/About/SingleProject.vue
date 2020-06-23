@@ -210,10 +210,7 @@ export default {
     position: relative;
     z-index: 1;
     color: $text-color--grey;
-    font-family: 'Hoves-Regular';
     margin-top: 36px;
-    font-size: 16px;
-    line-height: 23px;
 
     &__img {
       &_black {
