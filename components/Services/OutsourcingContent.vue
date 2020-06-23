@@ -74,10 +74,6 @@ export default {
       top: -35px;
     }
 
-    &__sub-title {
-      margin-bottom: 15px;
-    }
-
     &__outsourcing-content {
       display: flex;
       flex-direction: column;
@@ -107,6 +103,7 @@ export default {
       font-size: 32px;
       line-height: 110%;
       letter-spacing: -2px;
+      margin-bottom: 15px;
     }
 
     &__paragraph {

@@ -7,21 +7,29 @@ exports[`Outsourcing content renders correctly 1`] = `
   <div
     class="it-outsourcing__content_wrapper"
   >
-    <!---->
-     
-    <!---->
-     
-    <h3
-      class="it-outsourcing__title title default-title"
+    <div
+      class="it-outsourcing__content-wrap"
     >
-      Title
-    </h3>
-     
-    <h4
-      class="it-outsourcing__sub-title sub-title"
-    >
-      Sub title
-    </h4>
+      <div
+        class="it-outsourcing__title-wrap"
+      >
+        <h3
+          class="it-outsourcing__title title default-title"
+        >
+          Title
+        </h3>
+         
+        <h4
+          class="it-outsourcing__sub-title sub-title"
+        >
+          Sub title
+        </h4>
+      </div>
+       
+      <!---->
+       
+      <!---->
+    </div>
      
     <p
       class="it-outsourcing__paragraph paragraph"
