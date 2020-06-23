@@ -125,18 +125,18 @@ exports[`Header renders correctly 1`] = `
              
             <div
               class="header__phones-dropdown_wrap"
-              id="united-kingdom"
+              id="united-states"
             >
               <a
                 class="header__selected-phone"
-                href="tel:+44 20 3984 8555"
+                href="tel:+1 833 623 3387"
               >
                 <img
-                  alt="united-kingdom"
+                  alt="united-states"
                   src="[object Object]"
                 />
                 
-                +44 20 3984 8555
+                +1 833 623 3387
               
               </a>
                
@@ -158,6 +158,7 @@ exports[`Header renders correctly 1`] = `
                 <a
                   class="header__phone-item"
                   href="tel:+1 833 623 3387"
+                  style="display: none;"
                 >
                   <img
                     alt="united-states"
