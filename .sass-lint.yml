@@ -1,6 +1,6 @@
 files:
   ignore:
-    - 'assets/styles/_vars.scss'
+    - 'client/assets/styles/_vars.scss'
 rules:
   brace-style:
     - 2

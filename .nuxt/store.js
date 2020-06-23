@@ -6,7 +6,7 @@ Vue.use(Vuex)
 let store = {};
 
 (function updateModules () {
-  store = normalizeRoot(require('../store/index.js'), 'store/index.js')
+  store = normalizeRoot(require('../client/store/index.js'), 'store/index.js')
 
   // If store is an exported method = classic mode (deprecated)
 
