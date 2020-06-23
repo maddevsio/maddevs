@@ -152,7 +152,7 @@
           governed by English law. We both agree to the exclusive jurisdiction
           of the courts of England and Wales.
         </p>
-        <h5 class="privacy__sec-title privacy__sec-title--center ">
+        <h5 class="privacy__sec-title privacy__sec-title">
           Cookie Policy
         </h5>
         <p class="privacy__paragraph paragraph">
@@ -233,7 +233,7 @@
           essential cookies) you may not be able to access all or parts of our
           website.
         </p>
-        <h5 class="privacy__sec-title  privacy__sec-title--center">
+        <h5 class="privacy__sec-title  privacy__sec-title">
           Privacy Policy
         </h5>
         <p class="privacy__paragraph paragraph">
@@ -341,7 +341,7 @@
           Types of Data Collected
         </h5>
         <h5
-          class="privacy__sec-title privacy__sec-title--italic privacy__sec-title--multi-title"
+          class="privacy__sec-title privacy__sec-title privacy__sec-title--multi-title"
         >
           Personal Data
         </h5>
@@ -789,10 +789,6 @@ export default {
     font-size: 32px;
     font-family: 'Hoves-Regular';
     font-weight: bold;
-
-    &--center {
-      text-align: center;
-    }
 
     &--italic {
       font-style: italic;

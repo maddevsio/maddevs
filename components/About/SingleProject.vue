@@ -119,6 +119,17 @@ export default {
   color: initial;
   display: block;
 
+  @media only screen and (min-width: 1670px) {
+    .single-project {
+      &__background {
+        &_first-project {
+          width: 100%;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
   @media only screen and (min-width: 1600px) {
     .single-project {
       &__content-wrap {
@@ -152,6 +163,18 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1287px) {
+    .single-project {
+      &__sub-title {
+        padding-right: 7px;
+      }
+
+      &__content-wrap {
+        height: 290px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1280px) {
     .single-project {
       &__background {
@@ -168,11 +191,23 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1253px) {
+    .single-project {
+      &__sub-title {
+        padding-right: 9px;
+      }
+
+      &__content-wrap {
+        height: 280px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1024px) {
     .single-project {
       &__content-wrap {
         margin: 68px 34px 0;
-        height: 175px;
+        height: 125px;
       }
 
       &__sub-title {
@@ -210,10 +245,7 @@ export default {
     position: relative;
     z-index: 1;
     color: $text-color--grey;
-    font-family: 'Hoves-Regular';
     margin-top: 36px;
-    font-size: 16px;
-    line-height: 23px;
 
     &__img {
       &_black {
@@ -278,11 +310,6 @@ export default {
 
     &_guardrails {
       position: relative;
-    }
-
-    &_first-project {
-      width: 100%;
-      background-size: cover;
     }
   }
 
