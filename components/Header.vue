@@ -11,7 +11,7 @@
               <router-link to="/">About</router-link>
               <router-link to="/services">Services</router-link>
               <router-link to="/projects">Projects</router-link>
-              <router-link to="/careers" @click.native="listenCareersLinkClick">Careers</router-link>
+              <router-link to="/careers">Careers</router-link>
               <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
             </nav>
           </div>
@@ -34,7 +34,7 @@
                   {{ selectedPhone.phoneNumber }}
                 </a>
                 <div class="header__phones-list">
-                  <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone">
+                  <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone" v-show="phone != selectedPhone">
                     <img :src="require(`@/assets/img/Flags/${phone.country}.svg`)" :alt="`${phone.country}`" />
                     {{ phone.phoneNumber }}
                   </a>
@@ -76,13 +76,17 @@ export default {
           country: 'united-states'
         }
       ],
-      selectedPhone: {
-        phoneNumber: '+44 20 3984 8555',
-        country: 'united-kingdom'
-      },
+      selectedPhone: null,
       modalWindowName: 'contact-me-modal',
       headerLogoTextDisplayState: false
     };
+  },
+  created() {
+    /**
+     * Sets default value for selectedPhone
+     * this.phones[1] is a United Kingdom number
+    */
+    this.selectedPhone = this.phones[1];
   },
   mounted() {
     const scrollbar = document.getElementById('PageScrollBar');
