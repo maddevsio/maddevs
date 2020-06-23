@@ -1,12 +1,11 @@
 <template>
   <div class="header-wrapper">
-    <header ref="header" class="header" :class="{'white': headerIsWhite}">
+    <header ref="header" class="header">
       <div class="container">
         <div class="header__header-content_wrap">
           <div class="header__left-nav_bar">
             <router-link :to="`/`" class="header__logo-icon">
-              <img src="@/assets/img/Header/logo_black.svg" alt="Logotype" class="header__header-logo" v-if="headerIsWhite">
-              <img src="@/assets/img/common/logo.svg" alt="Logotype" class="header__header-logo" v-else>
+              <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
             </router-link>
             <nav class="header__header-routes_links">
               <router-link to="/">About</router-link>
@@ -55,12 +54,14 @@
 <script>
 import buttonTrigger from '@/components/ui/button-trigger';
 import mobileHeader from '@/components/ui/mobile-header';
+import headerLogo from '@/components/svg/headerLogo';
 
 export default {
   name: 'main-header',
   components: {
     buttonTrigger,
-    mobileHeader
+    mobileHeader,
+    headerLogo
   },
   data() {
     return {
@@ -80,76 +81,32 @@ export default {
         country: 'united-kingdom'
       },
       modalWindowName: 'contact-me-modal',
-      headerIsWhite: false
+      headerLogoTextDisplayState: false
     };
   },
   mounted() {
     const scrollbar = document.getElementById('PageScrollBar');
     if (scrollbar) {
-      scrollbar.addEventListener('scroll', this.mainPageHandleScroll);
-      scrollbar.addEventListener('scroll', this.servicesPageHandleScroll);
-      scrollbar.addEventListener('scroll', this.projectsPageHandleScroll);
+      scrollbar.addEventListener('scroll', this.handleScroll);
     }
   },
   destroyed() {
     const scrollbar = document.getElementById('PageScrollBar');
     if (scrollbar) {
-      scrollbar.removeEventListener('scroll', this.mainPageHandleScroll);
-      scrollbar.removeEventListener('scroll', this.servicesPageHandleScroll);
-      scrollbar.removeEventListener('scroll', this.projectsPageHandleScroll);
+      scrollbar.removeEventListener('scroll', this.handleScroll);
+    }
+  },
+  watch: {
+    '$route'() {
+      this.headerLogoTextDisplayState = false;
     }
   },
   methods: {
-    mainPageHandleScroll() {
-      if ($nuxt.$route.name === 'index') {
-        const customerTestimonials = document.getElementById('customer-testimonials');
-        const meetOurExperts = document.getElementById('meet-our-experts');
-        const whyUs = document.getElementById('why-us');
-
-        if (
-          customerTestimonials && customerTestimonials.getBoundingClientRect().top <= 0 && 
-          customerTestimonials.getBoundingClientRect().bottom >= 0 ||
-          meetOurExperts && meetOurExperts.getBoundingClientRect().top <= 0 && 
-          meetOurExperts.getBoundingClientRect().bottom >= 0 ||
-          whyUs && whyUs.getBoundingClientRect().top <= 0 && 
-          whyUs.getBoundingClientRect().bottom >= 0
-        ) {
-          this.headerIsWhite = true;
-        } else {
-          this.headerIsWhite = false;
-        }
-      }
-    },
-    servicesPageHandleScroll() {
-      if ($nuxt.$route.name === 'services') {
-        const infrastructureOptimisation = document.getElementById('infrastructure-optimisation');
-        const itConsulting = document.getElementById('it-consulting');
-
-        if (
-          infrastructureOptimisation && infrastructureOptimisation.getBoundingClientRect().top <= 0 && 
-          infrastructureOptimisation.getBoundingClientRect().bottom >= 0 ||
-          itConsulting && itConsulting.getBoundingClientRect().top <= 0 && 
-          itConsulting.getBoundingClientRect().bottom >= 0
-        ) {
-          this.headerIsWhite = true;
-        } else {
-          this.headerIsWhite = false;
-        }
-      }
-    },
-    projectsPageHandleScroll() {
-      if ($nuxt.$route.name === 'projects') {
-        const openSource = document.getElementById('open-source');
-  
-        if (openSource.getBoundingClientRect().top <= 0 && openSource.getBoundingClientRect().bottom >= 0) {
-          this.headerIsWhite = true;
-        } else {
-          this.headerIsWhite = false;
-        }
-      }
-    },
-    listenCareersLinkClick() {
-      this.headerIsWhite = false;
+    handleScroll(e) {
+      if(e.target.scrollTop >= 100)
+        this.headerLogoTextDisplayState = true;
+      else 
+        this.headerLogoTextDisplayState = false;
     }
   }
 };
@@ -160,13 +117,15 @@ export default {
 
   .header {
     width: 100%;
+    height: 40px;
+    padding: 11px 0;
     position: fixed;
     z-index: 2;
-    padding-top: 144px;
+    background-color: #000;
 
     button {
       width: 135px;
-      height: 40px;
+      height: 38px;
       margin-right: -96px;
     }
 
@@ -176,9 +135,9 @@ export default {
     }
 
     &__header-content_wrap {
+      height: max-content;
       display: flex;
       justify-content: space-between;
-      margin-top: -120px;
     }
 
     &__header-routes_links {
@@ -190,7 +149,7 @@ export default {
         color: $text-color--grey;
         text-decoration: none;
         margin-right: 16px;
-        font-size: 18px;
+        font-size: 17px;
         font-family: 'Hoves-Regular';
 
         &::after {
@@ -234,12 +193,11 @@ export default {
     }
 
     &__phones-dropdown_wrap {
-      height: max-content;
       min-width: 200px;
       padding-top: 1px;
       background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
       background-position-y: 9px;
-      background-position-x: 174px;
+      background-position-x: 170px;
 
       &:hover {
         .header__phones-list {
@@ -252,6 +210,9 @@ export default {
     &__phones-list {
       display: none;
       position: absolute;
+      margin-left: -10px;
+      padding: 0 10px 10px;
+      background-color: #000;
     }
 
     &__mailto-link,
@@ -259,7 +220,7 @@ export default {
     &__phone-item {
       padding-right: 26px;
       color: $text-color--grey;
-      font-size: 18px;
+      font-size: 17px;
       font-family: 'Hoves-Regular';
       text-decoration: none;
     }
@@ -291,50 +252,12 @@ export default {
       }
     }
 
-    &::before {
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      background: $header-gradient--black-transparent;
-      transition: all 0.2s ease;
-      z-index: -1;
-      opacity: 1;
-    }
-
-    &::after {
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      background: $header-gradient--white-transparent;
-      transition: all 0.2s ease;
-      z-index: -1;
-      opacity: 0;
-    }
-
     &__logo-icon {
       margin-left: -96px;
     }
 
     #united-states {
-      background-position-x: 160px;
-    }
-  }
-
-  .white {
-    &::before {
-      content: '';
-      opacity: 0;
-    }
-
-    &::after {
-      content: '';
-      opacity: 1;
+      background-position-x: 153px;
     }
   }
 
@@ -434,20 +357,6 @@ export default {
 
   @media only screen and (max-width: 1120px) {
     .header {
-      button {
-        width: 120px;
-        height: 35px;
-      }
-
-      button,
-      &__mailto-link,
-      &__selected-phone,
-      &__phone-item,
-      &__routes_links,
-      &__header-routes_links a {
-        font-size: 17px;
-      }
-
       &__mailto-link,
       &__selected-phone,
       &__phone-item,
@@ -456,8 +365,6 @@ export default {
       }
 
       &__header-routes_links {
-        padding-top: 10px;
-
         a {
           margin-right: 0;
         }
@@ -471,20 +378,7 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .header {
-      padding-top: 0;
-      background-color: $bgcolor--black;
-
-      &__header-content_wrap {
-        display: none;
-      }
-
-       &::before {
-        background: none;
-      }
-
-      &::after {
-        background: none;
-      }
+      display: none;
     }
   }
 </style>
