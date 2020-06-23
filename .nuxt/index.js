@@ -12,14 +12,14 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_axios_f0f0c980 from 'nuxt_plugin_axios_f0f0c980' // Source: ./axios.js (mode: 'all')
-import nuxt_plugin_i18n_1fba523a from 'nuxt_plugin_i18n_1fba523a' // Source: ../plugins/i18n.js (mode: 'all')
-import nuxt_plugin_vuescrollto_44ce9a1c from 'nuxt_plugin_vuescrollto_44ce9a1c' // Source: ../plugins/vue-scrollto.js (mode: 'all')
-import nuxt_plugin_googleanalytics_2bcb2ee2 from 'nuxt_plugin_googleanalytics_2bcb2ee2' // Source: ../plugins/google-analytics.js (mode: 'all')
-import nuxt_plugin_veevalidate_1a0c1998 from 'nuxt_plugin_veevalidate_1a0c1998' // Source: ../plugins/vee-validate.js (mode: 'all')
-import nuxt_plugin_vue2perfectscrollbar_beb56648 from 'nuxt_plugin_vue2perfectscrollbar_beb56648' // Source: ../plugins/vue2-perfect-scrollbar.js (mode: 'all')
-import nuxt_plugin_vuejsmodal_a01fef9e from 'nuxt_plugin_vuejsmodal_a01fef9e' // Source: ../plugins/vue-js-modal.js (mode: 'client')
-import nuxt_plugin_slick_b0295394 from 'nuxt_plugin_slick_b0295394' // Source: ../plugins/slick.js (mode: 'client')
+import nuxt_plugin_yandexmetrikaplugin04602fb5_7ab332f6 from 'nuxt_plugin_yandexmetrikaplugin04602fb5_7ab332f6' // Source: ./yandex-metrika.plugin.04602fb5.js (mode: 'client')
+import nuxt_plugin_axios_44ce91b4 from 'nuxt_plugin_axios_44ce91b4' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_i18n_1fba523a from 'nuxt_plugin_i18n_1fba523a' // Source: ../client/plugins/i18n.js (mode: 'all')
+import nuxt_plugin_vuescrollto_44ce9a1c from 'nuxt_plugin_vuescrollto_44ce9a1c' // Source: ../client/plugins/vue-scrollto.js (mode: 'all')
+import nuxt_plugin_googleanalytics_2bcb2ee2 from 'nuxt_plugin_googleanalytics_2bcb2ee2' // Source: ../client/plugins/google-analytics.js (mode: 'all')
+import nuxt_plugin_veevalidate_1a0c1998 from 'nuxt_plugin_veevalidate_1a0c1998' // Source: ../client/plugins/vee-validate.js (mode: 'all')
+import nuxt_plugin_vue2perfectscrollbar_beb56648 from 'nuxt_plugin_vue2perfectscrollbar_beb56648' // Source: ../client/plugins/vue2-perfect-scrollbar.js (mode: 'all')
+import nuxt_plugin_vuejsmodal_a01fef9e from 'nuxt_plugin_vuejsmodal_a01fef9e' // Source: ../client/plugins/vue-js-modal.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -66,7 +66,7 @@ async function createApp (ssrContext) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Mad Devs - IT Outsourcing Company in UK","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"yandex-verification","content":"1cce4e9bf6ebcdff"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"sitemap","type":"application\u002Fxml","href":"https:\u002F\u002Fmaddevs.io\u002Fsitemap.xml"}],"script":[{"src":"https:\u002F\u002Fwidget.clutch.co\u002Fstatic\u002Fjs\u002Fwidget.js"}],"style":[]},
+    head: {"title":"Mad Devs - IT Outsourcing Company in UK","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"yandex-verification","content":"1cce4e9bf6ebcdff"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"sitemap","type":"application\u002Fxml","href":"https:\u002F\u002Fmaddevs.io\u002Fsitemap.xml"}],"script":[{"src":"https:\u002F\u002Fwidget.clutch.co\u002Fstatic\u002Fjs\u002Fwidget.js"},{"src":"https:\u002F\u002Fmc.yandex.ru\u002Fmetrika\u002Fwatch.js","async":""}],"style":[]},
 
     store,
     router,
@@ -181,8 +181,12 @@ async function createApp (ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_axios_f0f0c980 === 'function') {
-    await nuxt_plugin_axios_f0f0c980(app.context, inject)
+  if (process.client && typeof nuxt_plugin_yandexmetrikaplugin04602fb5_7ab332f6 === 'function') {
+    await nuxt_plugin_yandexmetrikaplugin04602fb5_7ab332f6(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_axios_44ce91b4 === 'function') {
+    await nuxt_plugin_axios_44ce91b4(app.context, inject)
   }
 
   if (typeof nuxt_plugin_i18n_1fba523a === 'function') {
@@ -207,10 +211,6 @@ async function createApp (ssrContext) {
 
   if (process.client && typeof nuxt_plugin_vuejsmodal_a01fef9e === 'function') {
     await nuxt_plugin_vuejsmodal_a01fef9e(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_slick_b0295394 === 'function') {
-    await nuxt_plugin_slick_b0295394(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

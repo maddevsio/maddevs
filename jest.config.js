@@ -3,9 +3,9 @@ module.exports = {
   moduleFileExtensions: ['js', 'json', 'vue'],
   watchman: false,
   moduleNameMapper: {
-    '^~/(.*)$': '<rootDir>/$1',
-    '^~~/(.*)$': '<rootDir>/$1',
-    '^@/(.*)$': '<rootDir>/$1',
+    '^~/(.*)$': '<rootDir>/client/$1',
+    '^~~/(.*)$': '<rootDir>/client/$1',
+    '^@/(.*)$': '<rootDir>/client/$1',
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '<rootDir>/jest_config/assetsTransformer.js', '\\.(css|less)$': '<rootDir>/jest_config/assetsTransformer.js'
   },
   transform: {
@@ -19,8 +19,8 @@ module.exports = {
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
   collectCoverage: true,
   collectCoverageFrom: [
-    '<rootDir>/components/**/*.vue',
-    '<rootDir>/pages/*.vue'
+    '<rootDir>/client/components/**/*.vue',
+    '<rootDir>/client/pages/*.vue'
   ],
   coverageReporters: [
     'json-summary',

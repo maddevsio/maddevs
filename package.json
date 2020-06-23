@@ -12,12 +12,12 @@
     "lint": "npm run lint-es & npm run lint-vue-scss & npm run lint-scss",
     "lint-es": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint-vue-scss": "sass-lint-vue components",
-    "lint-scss": "sass-lint assets/styles/*.scss --verbose",
+    "lint-scss": "sass-lint client/assets/styles/*.scss --verbose",
     "precommit": "npm run lint",
     "heroku-postbuild": "npm run generate",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
-    "test": "jest && node jest-coverage-badges.js -output './static'"
+    "test": "jest && node jest-coverage-badges.js -output './client/static'"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
@@ -38,7 +38,6 @@
     "vue-i18n": "^8.18.2",
     "vue-js-modal": "^2.0.0-rc.3",
     "vue-scrollto": "^2.18.1",
-    "vue-slick": "^1.1.15",
     "vue2-perfect-scrollbar": "^1.5.0"
   },
   "devDependencies": {
