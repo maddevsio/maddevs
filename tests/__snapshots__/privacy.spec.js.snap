@@ -320,7 +320,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <h5
-        class="privacy__sec-title privacy__sec-title--center "
+        class="privacy__sec-title privacy__sec-title"
       >
         
         Cookie Policy
@@ -470,7 +470,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <h5
-        class="privacy__sec-title  privacy__sec-title--center"
+        class="privacy__sec-title  privacy__sec-title"
       >
         
         Privacy Policy
@@ -690,7 +690,7 @@ exports[`Privacy renders correctly 1`] = `
       </h5>
        
       <h5
-        class="privacy__sec-title privacy__sec-title--italic privacy__sec-title--multi-title"
+        class="privacy__sec-title privacy__sec-title privacy__sec-title--multi-title"
       >
         
         Personal Data
