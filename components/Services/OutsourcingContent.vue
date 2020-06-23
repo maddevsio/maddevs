@@ -1,26 +1,24 @@
 <template>
   <div class="it-outsourcing__outsourcing-content">
     <div class="it-outsourcing__content_wrapper">
-      <h3 class="it-outsourcing__title title teams-hover-title" v-if="title === 'Teams'">
-        <span>Tea</span>
+      <div class="it-outsourcing__content-wrap">
+        <div class="it-outsourcing__title-wrap">
+          <h3 class="it-outsourcing__title title default-title">{{ title }}</h3>
+          <h4 class="it-outsourcing__sub-title sub-title">{{ subTitle }}</h4>
+        </div>
         <img 
-          class="it-outsourcing__title-icon title-icon" 
-          src="@/assets/img/Services/svg/teams-sub-title-symbol.svg" 
-          alt="teams-sub-title-symbol"
+          class="it-outsourcing__content-icon" 
+          src="@/assets/img/Services/svg/individuals-symbol.svg" 
+          alt="individuals-title-symbol"
+          v-if="title === 'Individuals'"
         />
-        <span class="it-outsourcing__last-character last-character">s</span>
-      </h3>
-      <h3 class="it-outsourcing__title title individuals-hover-title" v-if="title === 'Individuals'">
-        <span>Individ</span>
         <img 
-          class="it-outsourcing__title-icon title-icon" 
-          src="@/assets/img/Services/svg/individuals-diamond.svg" 
-          alt="individuals-sub-title-symbol"
+          class="it-outsourcing__content-icon" 
+          src="@/assets/img/Services/svg/teams-symbol.svg" 
+          alt="teams-title-symbol"
+          v-if="title === 'Teams'"
         />
-        <span class="it-outsourcing__last-character last-character">als</span>
-      </h3>
-      <h3 class="it-outsourcing__title title default-title">{{ title }}</h3>
-      <h4 class="it-outsourcing__sub-title sub-title">{{ subTitle }}</h4>
+      </div>
       <p class="it-outsourcing__paragraph paragraph">{{ paragraph }}</p>
     </div>
     <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="it-outsourcing__button-trigger"/>
@@ -69,6 +67,13 @@ export default {
       width: 100%;
     }
 
+    &__content-icon {
+      visibility: hidden;
+      margin-bottom: 15px;
+      position: relative;
+      top: -35px;
+    }
+
     &__sub-title {
       margin-bottom: 15px;
     }
@@ -80,6 +85,10 @@ export default {
       max-width: 47%;
     }
 
+    &__content-wrap {
+      display: flex;
+    }
+
     &__title,
     &__sub-title,
     &__paragraph,
@@ -88,57 +97,26 @@ export default {
     }
 
     &__title {
-      height: 100px;
-      padding-bottom: 33px;
-      font-size: 90px;
-      line-height: 104%;
-      letter-spacing: -3px;
+      padding-bottom: 17px;
+      font-size: 70px;
+      line-height: 92%;
+      letter-spacing: -2px;
+    }
+
+    &__sub-title {
+      font-size: 32px;
+      line-height: 110%;
+      letter-spacing: -2px;
     }
 
     &__paragraph {
-      width: 535px;
       padding-bottom: 46px;
-    }
-
-    &__title-icon {
-      margin-top: -15px;
-      margin-left: -24px;
-    }
-  }
-
-  .teams {
-    .it-outsourcing__paragraph {
-      width: 535px;
-    }
-
-    .teams-hover-title {
-      display: none;
-    }
-
-    &:hover {
-      .teams-hover-title  {
-        display: block;
-      }
     }
   }
 
   .individuals {
-    .it-outsourcing__title-icon {
+    .it-outsourcing__content-icon {
       padding-right: 14px;
-    }
-
-    .it-outsourcing__paragraph {
-      width: 575px;
-    }
-
-    .individuals-hover-title {
-      display: none;
-    }
-
-    &:hover {
-      .individuals-hover-title {
-        display: block;
-      }
     }
   }
 
@@ -153,12 +131,21 @@ export default {
         transition: 0.3s;
       }
 
-      .default-title {
-        display: none;
-      }
-
       .it-outsourcing__button-trigger {
         border-color: $border-color--grey-light-outsourcing-section;
+      }
+
+      .it-outsourcing__content-icon {
+        visibility: visible;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    .it-outsourcing {
+      &__sub-title {
+        max-width: 85%;
       }
     }
   }
@@ -175,7 +162,7 @@ export default {
         font-size: 50px;
         line-height: 110%;
         letter-spacing: -2px;
-        padding-bottom: 0;
+        padding-bottom: 25px;
       }
 
       &__sub-title {
@@ -183,53 +170,23 @@ export default {
         line-height: 110%;
         letter-spacing: -1px;
       }
-    }
 
-    .teams,
-    .individuals * {
-
-      .it-outsourcing__paragraph {
-        width: 435px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1270px) {
-    .it-outsourcing {
-      button {
-        width: 360px;
-      }
-
-      &__title {
-        padding-bottom: 0;
-      }
-    }
-
-    .teams,
-    .individuals * {
-
-      .it-outsourcing__paragraph {
-        width: 435px;
+      &__content-icon {
+        height: 180px;
       }
     }
   }
 
   @media only screen and (max-width: 1180px) {
     .it-outsourcing {
-      button {
-        width: 340px;
+      &__title {
+        font-size: 50px;
+        line-height: 110%;
+        letter-spacing: -2px;
       }
 
-      &__sub-title  {
-        width: 465px;
-      }
-    }
-
-    .teams,
-    .individuals * {
-
-      .it-outsourcing__paragraph {
-        width: 300px;
+      &__content-icon {
+        height: 160px;
       }
     }
   }
@@ -242,6 +199,7 @@ export default {
 
       &__title {
         font-size: 48px;
+        padding-bottom: 25px;
       }
 
       &__sub-title {
@@ -249,6 +207,11 @@ export default {
         font-size: 33px;
         line-height: 110%;
         letter-spacing: -1px;
+      }
+
+      &__content-icon {
+        height: 130px;
+        padding-left: 10px;
       }
     }
 
@@ -260,11 +223,32 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 900px) {
+    .it-outsourcing {
+      &__content-icon {
+        height: 115px;
+        top: -25px;
+      }
+
+      &__title {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 840px) {
+    .it-outsourcing {
+      &__content-icon {
+        height: 145px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     .it-outsourcing {
       &__title {
         font-size: 47px;
-        margin-bottom: -33px;
+        padding-bottom: 10px;
       }
 
       &__sub-title {
@@ -277,10 +261,23 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 580px) {
+    .it-outsourcing {
+      &__content-icon {
+        height: 125px;
+        top: -13px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 520px) {
     .it-outsourcing {
       &__last-character {
         margin-left: -21px;
+      }
+
+      &__content-icon {
+        height: 115px;
       }
     }
   }
@@ -291,10 +288,8 @@ export default {
         padding-bottom: 25px;
       }
 
-      &__title,
-      .individuals-hover-title,
-      .teams-hover-title {
-        margin-bottom: -40px;
+      &__content-icon {
+        height: 100px;
       }
 
       &__title {
@@ -312,6 +307,14 @@ export default {
 
       &__paragraph {
         padding-bottom: 34px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 345px) {
+    .it-outsourcing {
+      &__content-icon {
+        height: 90px;
       }
     }
   }
