@@ -80,8 +80,9 @@ export default {
   color: $text-color--grey;
   font-family: 'Hoves-Regular';
   margin-top: 36px;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 95%;
 
   &__img {
     width: 20px;
@@ -121,6 +122,14 @@ export default {
       color: $text-color--black;
     }
   }
+
+    @media only screen and (max-width: 1120px) {
+      font-size: 18px;
+    }
+
+    @media only screen and (max-width: 1035px) {
+      font-size: 16px;
+    }
 
   @media only screen and (max-width: 1024px) {
     &__img {
@@ -164,7 +173,17 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 640px) {
+    font-size: 17px;
+  }
+
+  @media only screen and (max-width: 520px) {
+    font-size: 16px;
+  }
+
   @media only screen and (max-width: 340px) {
+    font-size: 15px;
+
     &__content {
       &-mobile {
         margin-left: 3px;
