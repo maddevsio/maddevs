@@ -60,14 +60,15 @@ export default {
 
 	.footer-contacts {
 		display: flex;
-		padding-top: 90px;
+		margin-top: 123px;
 
 		&__title {
 			padding-bottom: 19px;
 			color: $text-color--grey-light;
-			font-family: 'Hoves-Regular';
-			font-size: 18px;
+			font-family: 'Hoves-Bold';
+    	font-size: 27px;
 			font-weight: 500;
+			letter-spacing: -1px;
 		}
 
 		&__phones-list,
@@ -81,7 +82,8 @@ export default {
 		}
 
 		&__messengers-list {
-			grid-template-columns: repeat(2, 130px);
+			grid-template-columns: repeat(2, 1fr);
+			grid-column-gap: 84px;
 		}
 
 		&__phone-item,
@@ -89,22 +91,16 @@ export default {
 			position: relative;
 			padding-left: 26px;
 			color: $text-color--grey;
-			font-family: 'Hoves-Regular';
+			font-family: 'Hoves-Bold';
+			font-size: 22px;
 			text-decoration: none;
+			letter-spacing: -1px;
 
 			img {
 				position: absolute;
 				top: 5px;
 				left: 0;
 			}
-		}
-
-		&__phone-item {
-			font-size: 20px;
-		}
-
-		&__messenger-item {
-			font-size: 18px;
 		}
 
 		&__message-us {

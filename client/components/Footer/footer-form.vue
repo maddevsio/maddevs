@@ -3,17 +3,14 @@
     <ValidationObserver v-slot="{ invalid }" ref="form">
       <div class="fields-list">
         <ValidationProvider class="field-item" v-slot="{ classes, errors }">
-          <p class="field-name">First name and surname</p>
           <input type="text" class="entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
         <ValidationProvider class="field-item" rules="email|required" v-slot="{ classes, errors }">
-          <p class="field-name required">Work email</p>
           <input type="text" class="entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
         <ValidationProvider class="field-item" rules="max:500" v-slot="{ classes, errors }">
-          <p class="field-name">Project Info</p>
           <textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectInfo" @keydown="autosize($event)" rows="1" />
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
@@ -23,6 +20,7 @@
         @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
       />
       <UIButton
+        class="ui-button--bold-text"
         name="Order a project now"
         :disabled="invalid || !agreeWithPrivacyPolicy"
         @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
@@ -110,13 +108,27 @@ export default {
 		width: 450px;
 
 		button {
-			width: 100%;
+      width: 100%;
+      height: 64px;
 		}
 
 		textarea {
-			min-height: 54px;
-			padding: 17px 10px;
-		}
+			min-height: 64px;
+			padding: 22px 10px;
+    }
+    
+    .fields-list {
+      display: grid;
+      grid-row-gap: 12px;
+    }
+
+    .form-checkboxes {
+      padding-top: 18px;
+    }
+
+    .entry-field {
+      padding: 21px 10px;
+    }
 	}
 
 	@media only screen and (max-width: 1420px) {

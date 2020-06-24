@@ -5,7 +5,10 @@
 				<div class="footer__text-content">
 					<div class="footer__title-wrap">
 						<h2 class="footer__main-title main-title">Get In Touch</h2>
-						<a class="footer__mailto-link" href="mailto:team@maddevs.io">team@maddevs.io</a>
+						<div class="footer__mail-wrapper">
+							<img src="@/assets/img/Footer/mail-icon.svg" alt="mail">
+							<a class="footer__mailto-link" href="mailto:team@maddevs.io">team@maddevs.io</a>
+						</div>
 					</div>
           <footerContacts />
 				</div>
@@ -56,13 +59,13 @@ export default {
   @import '../assets/styles/vars';
 
 	.footer {
-		padding-top: 129px;
+		padding-top: 65px;
 		padding-bottom: 87px;
 
 		&__content {
 			display: flex;
     	justify-content: space-between;
-			padding-bottom: 57px;
+			padding-bottom: 50px;
 		}
 
 		&__main-title {
@@ -70,11 +73,13 @@ export default {
 		}
 
 		&__mailto-link {
+			margin-left: 28px;
 			color: $text-color--red;
 			font-size: 70px;
 			font-family: 'Hoves-Bold';
 			text-decoration: none;
 			border-bottom: 1px solid;
+			letter-spacing: -2px;
 		}
 
 		&__bottom-links-line {
@@ -103,6 +108,14 @@ export default {
 			&:first-child {
 				padding-left: 30px;
 			}
+		}
+
+		&__form-wrap {
+			margin-top: 18px;
+		}
+
+		&__mail-wrapper {
+			margin-top: 60px;
 		}
 	}
 
