@@ -73,6 +73,13 @@
   }
 }
 
+.modal_scrollbar {
+
+  .ps__rail-y {
+    right: 2px !important;
+  }
+}
+
 // Best Practices line numbers
 .best-practices_wrap-title .line-number_text .line-number span {
   color: #3b3b3b;
