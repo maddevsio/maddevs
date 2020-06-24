@@ -1,6 +1,6 @@
 <template>
   <modal :classes="['modal_container']" height="auto" :name="$props.name" :clickToClose="false" @closed="isEmailSent = false">
-    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="$modal.hide($props.name)">
+    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="hideModal()">
     <perfect-scrollbar class="modal_scrollbar custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
       <slot />
     </perfect-scrollbar>
@@ -40,6 +40,12 @@ export default {
         });
       });
     }
+  },
+  methods: {
+    hideModal() {
+      this.$modal.hide(this.$props.name);
+      this.$nuxt.$emit('tooglePageScrollBar', false);
+    }
   }
 };
 </script>
@@ -49,17 +55,17 @@ export default {
 
   /deep/ .modal_container {
     background-color: $bgcolor--black;
-    padding: 55px 12px 53px;
+    padding: 40px 12px 53px;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
   }
 
   .modal_scrollbar {
-    max-height: 80vh;
-    min-height: 500px;
-    background-color: $bgcolor--black;
+    max-height: calc(100vh - 126px);
+    margin-top: 30px;
     padding: 0 48px;
+    background-color: $bgcolor--black;
   }
 
   /deep/.vm--overlay {
@@ -77,4 +83,20 @@ export default {
     cursor: pointer;
     z-index: 1;
   }
+
+  @media only screen and (max-width: 640px) {
+		/deep/.modal_container {
+      width: 100% !important;
+      height: 100% !important;
+      padding: 63px 12px 0;
+
+      .form {
+        padding-right: 15px;
+      }
+    }
+
+    .modal_scrollbar {
+      padding: 0;
+    }
+	}
 </style>
