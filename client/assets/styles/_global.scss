@@ -73,6 +73,13 @@
   }
 }
 
+.modal_scrollbar {
+
+  .ps__rail-y {
+    right: 2px !important;
+  }
+}
+
 // Best Practices line numbers
 .best-practices_wrap-title .line-number_text .line-number span {
   color: #3b3b3b;
@@ -330,10 +337,14 @@
   flex-direction: column;
 }
 
+.field-item {
+  display: block;
+  margin-bottom: 30px;
+}
+
 .field-name {
   width: max-content;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  margin-bottom: 6px;
   color: $text-color--grey;
   font-size: 16px;
   font-family: 'Hoves-Regular';
@@ -366,7 +377,7 @@
 .form-checkboxes {
   display: flex;
   flex-direction: column;
-  padding-top: 36px;
+  padding-top: 4px;
   padding-bottom: 26px;
 }
 
@@ -424,7 +435,7 @@
 // ----------- Modal window ----------- //
 .error-text {
   display: block;
-  margin-top: 14px;
+  margin-top: 7px;
   color: $text-color--red-opacity;
   font-size: 16px;
   font-family: 'Hoves-Regular';
@@ -586,8 +597,6 @@ button {
   }
 
   .modal-field-name {
-    padding-top: 10px;
-    padding-bottom: 9px;
     font-size: 16px;
   }
 
@@ -602,11 +611,6 @@ button {
 
   .close-modal {
     right: 16px;
-  }
-
-  .form-checkboxes {
-    padding-top: 23px;
-    padding-bottom: 33px;
   }
 
   .main-title {
