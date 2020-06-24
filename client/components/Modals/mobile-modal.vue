@@ -13,7 +13,7 @@
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
-          <ValidationProvider class="modal-field-item field-item" rules="phone" v-slot="{ classes, errors }">
+          <ValidationProvider class="modal-field-item field-item" rules="phone|max:50" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name">Phone number</p>
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
