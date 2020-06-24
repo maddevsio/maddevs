@@ -116,11 +116,12 @@ export default {
       &::before {
         content: '';
         position: absolute;
-        top: 21%;
-        right: 28%;
-        width: calc(720px / 30);
-        height: 24px;
+        z-index: 99;
         background: url('../assets/sprites/sprite_tech.svg');
+        top: 19%;
+        right: 24.2%;
+        width: calc(1720px / 30);
+        height: 58px;
         transform: rotate(-28.6deg);
         animation: animate 15s steps(30) infinite;
       }
@@ -349,6 +350,19 @@ export default {
     .banner {
       .text-content_wrapper {
         padding-bottom: 190px;
+      }
+
+      &__animation-img-wrap {
+        &::before {
+          content: '';
+          background: url('../assets/sprites/sprite_tech_small.svg');
+          top: 19%;
+          right: 24%;
+          width: calc(1200px / 30);
+          height: 40px;
+          transform: rotate(-28.6deg);
+          animation: animate-sm 15s steps(30) infinite;
+        }
       }
     }
 
@@ -830,7 +844,17 @@ export default {
     }
 
     to {
-      background-position: 720px;
+      background-position: 1740px;
+    }
+  }
+
+  @keyframes animate-sm {
+    from {
+      background-position: 0;
+    }
+
+    to {
+      background-position: 1200px;
     }
   }
 </style>
