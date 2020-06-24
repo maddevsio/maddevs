@@ -17,7 +17,7 @@
     "heroku-postbuild": "npm run generate",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
-    "test": "jest && node jest-coverage-badges.js -output './client/static'"
+    "test": "jest && node ./helpers/jest-coverage-badges.js -output './client/static'"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
@@ -28,6 +28,7 @@
     "express": "^4.17.1",
     "jquery": "^3.5.1",
     "nuxt": "^2.12.2",
+    "request": "^2.88.2",
     "sendpulse-api": "^1.1.4",
     "snyk": "^1.338.0",
     "swiper": "^5.4.2",

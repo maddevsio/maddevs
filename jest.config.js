@@ -26,5 +26,6 @@ module.exports = {
     'json-summary',
     'text',
     'lcov'
-  ]
+  ],
+  testResultsProcessor: './helpers/jest-coverage-slack.js'
 };
