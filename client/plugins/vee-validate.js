@@ -7,7 +7,7 @@ Vue.component('ValidationProvider', ValidationProvider);
 
 const phoneNumber = {
   validate (value) {
-    const regex = /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/g;
+    const regex = /^[0-9\s- \+]*$/g;
     if (value.match(regex)) {
       return true;
     }
