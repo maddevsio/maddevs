@@ -10,5 +10,5 @@ jobs:
       - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@master
         with:
-          urls: 'https://maddevs.co/'
+          urls: 'https://maddevs.io, https://maddevs.io/en/jobs'
           slackWebhookUrl: ${{ secrets.LIGHTHOUSE_CHECK_WEBHOOK_URL }}
