@@ -54,10 +54,10 @@ export default {
   @import '../../assets/styles/vars';
 
   .radio-buttons {
-    padding-bottom: 16px;
+    margin-bottom: 30px;
 
     &__field-name {
-      padding-bottom: 16px;
+      margin-bottom: 16px;
     }
 
     &__radio-list,
