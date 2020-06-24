@@ -1,22 +1,13 @@
-name: Lighthouse CI
-
-on: [push]
+name: Test Lighthouse Check
+on: [pull_request]
 
 jobs:
-  lhci:
-    name: Lighthouse
+  lighthouse-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 10.x
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@master
+      - run: mkdir /tmp/artifacts
+      - name: Run Lighthouse
+        uses: foo-software/lighthouse-check-action@master
         with:
-          node-version: 10.x
-      - name: npm install, build
-        run: |
-          npm install
-          npm run generate
-      - name: run Lighthouse CI
-        run: |
-          npm install -g @lhci/cli@0.4.x
-          lhci autorun
+          slackWebhookUrl: ${{ secrets.LIGHTHOUSE_CHECK_WEBHOOK_URL }}
