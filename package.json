@@ -22,7 +22,6 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
     "@nuxtjs/yandex-metrika": "^0.1.2",
-    "awesome-phonenumber": "^2.34.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",

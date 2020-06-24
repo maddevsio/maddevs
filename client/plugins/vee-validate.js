@@ -1,17 +1,17 @@
 import Vue from 'vue';
 import { ValidationObserver, ValidationProvider, extend, configure } from 'vee-validate';
 import { required, email, max } from 'vee-validate/dist/rules';
-import PhoneNumber from 'awesome-phonenumber';
 
 Vue.component('ValidationObserver', ValidationObserver);
 Vue.component('ValidationProvider', ValidationProvider);
 
 const phoneNumber = {
   validate (value) {
-    return new Promise(resolve => {
-      let phone = new PhoneNumber(value);
-      resolve({ valid: phone.isValid() });
-    });
+    const regex = /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/g;
+    if (value.match(regex)) {
+      return true;
+    }
+    return false;
   }
 };
 
