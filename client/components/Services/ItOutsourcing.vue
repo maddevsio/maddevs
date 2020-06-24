@@ -68,17 +68,7 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    .it-outsourcing {
-      padding: 140px 0 125px;
-
-      &__main-title {
-        padding-bottom: 39px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 630px) {
+  @media only screen and (max-width: 840px) {
     .it-outsourcing {
       &__flex-wrapper {
         flex-direction: column;
@@ -91,6 +81,16 @@ export default {
 
     .individuals {
       padding-top: 104px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .it-outsourcing {
+      padding: 140px 0 125px;
+
+      &__main-title {
+        padding-bottom: 39px;
+      }
     }
   }
 
