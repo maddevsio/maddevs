@@ -55,7 +55,7 @@ export default {
 
   /deep/ .modal_container {
     background-color: $bgcolor--black;
-    padding: 55px 12px 53px;
+    padding: 40px 12px 53px;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
@@ -63,8 +63,9 @@ export default {
 
   .modal_scrollbar {
     max-height: calc(100vh - 126px);
-    background-color: $bgcolor--black;
+    margin-top: 30px;
     padding: 0 48px;
+    background-color: $bgcolor--black;
   }
 
   /deep/.vm--overlay {
