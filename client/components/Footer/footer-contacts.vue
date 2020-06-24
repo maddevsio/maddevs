@@ -6,7 +6,7 @@
 				<li>
 					<a href="tel:+1 888 401 3401" class="footer-contacts__phone-item">
 						<img src="@/assets/img/Flags/united-states.svg" alt="United States">
-						+1 833 623 3387
+						+1 833-MADDEVS
 					</a>
 				</li>
 				<li>

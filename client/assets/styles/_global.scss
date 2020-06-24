@@ -387,6 +387,10 @@
     background: url('../img/common/checkmark.svg') no-repeat center;
     background-color: $input-bgcolor--grey-dark;
   }
+
+  a {
+    color: $label-text--grey-dark;
+  }
 }
 
 .form-checkbox-input {

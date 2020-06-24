@@ -1,6 +1,6 @@
 <template>
   <div class="form-checkboxes">
-    <label class="form-checkbox-label required" :for="`privacy-policy-${inputId}`">I confirm that I have read and accepted Mad Devs’ <br> Privacy Policy
+    <label class="form-checkbox-label required" :for="`privacy-policy-${inputId}`">I confirm that I have read and accepted Mad Devs’ <br> <a href="/privacy" target="blank">Privacy Policy</a>
       <input 
         class="form-checkbox-input"
         :id="`privacy-policy-${inputId}`" 
