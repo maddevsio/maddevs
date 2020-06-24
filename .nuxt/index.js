@@ -12,6 +12,7 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
+import nuxt_plugin_yandexmetrikaplugin04602fb5_7ab332f6 from 'nuxt_plugin_yandexmetrikaplugin04602fb5_7ab332f6' // Source: ./yandex-metrika.plugin.04602fb5.js (mode: 'client')
 import nuxt_plugin_axios_44ce91b4 from 'nuxt_plugin_axios_44ce91b4' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_i18n_1fba523a from 'nuxt_plugin_i18n_1fba523a' // Source: ../client/plugins/i18n.js (mode: 'all')
 import nuxt_plugin_vuescrollto_44ce9a1c from 'nuxt_plugin_vuescrollto_44ce9a1c' // Source: ../client/plugins/vue-scrollto.js (mode: 'all')
@@ -65,7 +66,7 @@ async function createApp (ssrContext) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Mad Devs - IT Outsourcing Company in UK","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"yandex-verification","content":"1cce4e9bf6ebcdff"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"sitemap","type":"application\u002Fxml","href":"https:\u002F\u002Fmaddevs.io\u002Fsitemap.xml"}],"script":[{"src":"https:\u002F\u002Fwidget.clutch.co\u002Fstatic\u002Fjs\u002Fwidget.js"}],"style":[]},
+    head: {"title":"Mad Devs - IT Outsourcing Company in UK","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"yandex-verification","content":"1cce4e9bf6ebcdff"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"sitemap","type":"application\u002Fxml","href":"https:\u002F\u002Fmaddevs.io\u002Fsitemap.xml"}],"script":[{"src":"https:\u002F\u002Fwidget.clutch.co\u002Fstatic\u002Fjs\u002Fwidget.js"},{"src":"https:\u002F\u002Fmc.yandex.ru\u002Fmetrika\u002Fwatch.js","async":""}],"style":[]},
 
     store,
     router,
@@ -179,6 +180,10 @@ async function createApp (ssrContext) {
   }
 
   // Plugin execution
+
+  if (process.client && typeof nuxt_plugin_yandexmetrikaplugin04602fb5_7ab332f6 === 'function') {
+    await nuxt_plugin_yandexmetrikaplugin04602fb5_7ab332f6(app.context, inject)
+  }
 
   if (typeof nuxt_plugin_axios_44ce91b4 === 'function') {
     await nuxt_plugin_axios_44ce91b4(app.context, inject)
