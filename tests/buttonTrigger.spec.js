@@ -11,6 +11,14 @@ describe('Form checkboxes', () => {
       propsData: {
         buttonInnerText: 'Some button name',
         modalWindowName: 'Some modal window name'
+      },
+      mocks: {
+        $modal: {
+          show: jest.fn()
+        },
+        $nuxt: {
+          $emit: jest.fn()
+        }
       }
     });
   });
@@ -33,5 +41,11 @@ describe('Form checkboxes', () => {
   test('sets the correctly button name', () => {
     let button = wrapper.find('.button-default');
     expect(button.text()).toBe('Some button name');
+  });
+
+  test('Should call two events', () => {
+    wrapper.vm.showModal();
+    expect(wrapper.vm.$modal.show).toHaveBeenCalled();
+    expect(wrapper.vm.$nuxt.$emit).toHaveBeenCalled();
   });
 });
