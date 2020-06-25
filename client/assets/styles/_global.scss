@@ -385,10 +385,11 @@
   position: relative;
   padding-left: 33px;
   color: $label-text--grey-dark;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Hoves-Regular';
   user-select: none;
   cursor: pointer;
+  letter-spacing: -0.03em;
 
   &:first-child {
     padding-bottom: 30px;
@@ -397,6 +398,10 @@
   input:checked ~ .checkmark {
     background: url('../img/common/checkmark.svg') no-repeat center;
     background-color: $input-bgcolor--grey-dark;
+  }
+
+  a {
+    color: $label-text--grey-dark;
   }
 }
 

@@ -54,5 +54,11 @@ export default {
       opacity: 0.7;
       user-select: none;
     }
+
+    &--bold-text {
+      font-size: 21px;
+      font-family: 'Hoves-Bold';
+      letter-spacing: -1px;
+    }
   }
 </style>
