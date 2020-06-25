@@ -1,11 +1,14 @@
 <template>
   <section id="infrastructure-optimisation" class="infrastructure-optimisation main-parent-item">
     <div class="container">
+      <div class="infrastructure-optimisation__header">
         <h2 class="infrastructure-optimisation__main-title main-title">
-            <span>Infrastructure</span><br>Optimisation
+          <span>Infrastructure</span><br>Optimisation
         </h2>
+        <div class="infrastructure-optimisation__bg"></div>
+      </div>
         <div class="infrastructure-optimisation__flex-wrapper flex-wrapper">
-         <InfrastructureContent 
+          <InfrastructureContent
             :title="whatMakes.title" 
             :subTitle="whatMakes.subTitle" 
             :paragraph="whatMakes.paragraph"
@@ -62,6 +65,35 @@ export default {
       width: 100%;
     }
 
+    .infrastructure-optimisation__content-item {
+      &:first-child {
+        /deep/.infrastructure-optimisation__title {
+          max-width: 100%;
+        }
+      }
+
+      &:nth-child(2) {
+        /deep/.infrastructure-optimisation__title {
+          max-width: 85%;
+        }
+      }
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    &__bg {
+      background: url('../../assets/img/Services/svg/infrastructure-bg.svg') bottom right/contain no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 107px;
+      right: 0;
+    }
+
     &__paragraph {
       line-height: 119%;
     }
@@ -73,6 +105,7 @@ export default {
     &__main-title {
       padding-bottom: 20px;
       color: $text-color--black;
+      z-index: 99;
 
       span {
         color: $text-color--grey-light;
@@ -87,6 +120,26 @@ export default {
 
       &__main-title {
         padding-bottom: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 870px) {
+    /deep/.infrastructure-optimisation {
+      &__title {
+        max-width: 100%;
+      }
+
+      &__bg {
+        display: none;
+      }
+
+      .infrastructure-optimisation__content-item {
+        &:nth-child(2) {
+          /deep/.infrastructure-optimisation__title {
+            max-width: 100%;
+          }
+        }
       }
     }
   }

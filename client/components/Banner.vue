@@ -23,11 +23,10 @@
             <navigationList v-if="currentPageName === 'projects'" />
           </div>
           <div class="icon-item">
-            <div class="banner__animation-img-wrap">
+            <div class="banner__animation-img-wrap" v-if="currentPageName === 'index'">
               <img
                 src="@/assets/img/Home/svg/stars-banner-logo.svg"
                 alt="Stars Logotype"
-                v-if="currentPageName === 'index'"
               >
             </div>
             <img 
