@@ -5,6 +5,7 @@ require('dotenv').config();
 module.exports = testResults => {
   const webhookUrl = process.env.NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL;
   if (!webhookUrl) {
+    console.log(process);
     throw new Error('Please add a slack webhookUrl in var NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL on your .env file');
   }
 
