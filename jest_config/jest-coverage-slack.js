@@ -100,7 +100,6 @@ module.exports = testResults => {
         color
       };
     });
-
     sendMessageToSlack(reportResult);
   });
 

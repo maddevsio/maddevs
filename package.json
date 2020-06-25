@@ -17,7 +17,8 @@
     "heroku-postbuild": "npm run generate",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
-    "test": "jest && node ./helpers/jest-coverage-badges.js -output './client/static'"
+    "test": "jest --config=jest.config.develop.js && node ./jest_config/jest-coverage-badges.js -output './client/static'",
+    "test:staging": "jest --config=jest.config.staging.js"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
