@@ -103,17 +103,6 @@ exports[`We Create It Project For renders correctly 1`] = `
             class="we-create-it-project__country-item"
           >
             <img
-              alt="Vietnam"
-              src="[object Object]"
-            />
-            
-            Vietnam
-          
-          </li>
-          <li
-            class="we-create-it-project__country-item"
-          >
-            <img
               alt="UK"
               src="[object Object]"
             />
@@ -130,17 +119,6 @@ exports[`We Create It Project For renders correctly 1`] = `
             />
             
             Poland
-          
-          </li>
-          <li
-            class="we-create-it-project__country-item"
-          >
-            <img
-              alt="Russia"
-              src="[object Object]"
-            />
-            
-            Russia
           
           </li>
           <li
@@ -169,17 +147,6 @@ exports[`We Create It Project For renders correctly 1`] = `
             class="we-create-it-project__country-item"
           >
             <img
-              alt="Belarus"
-              src="[object Object]"
-            />
-            
-            Belarus
-          
-          </li>
-          <li
-            class="we-create-it-project__country-item"
-          >
-            <img
               alt="Switzerland"
               src="[object Object]"
             />
@@ -191,11 +158,22 @@ exports[`We Create It Project For renders correctly 1`] = `
             class="we-create-it-project__country-item"
           >
             <img
-              alt="Singapore"
+              alt="Belarus"
               src="[object Object]"
             />
             
-            Singapore
+            Belarus
+          
+          </li>
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="Vietnam"
+              src="[object Object]"
+            />
+            
+            Vietnam
           
           </li>
           <li
@@ -207,6 +185,28 @@ exports[`We Create It Project For renders correctly 1`] = `
             />
             
             Kazakhstan
+          
+          </li>
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="Russia"
+              src="[object Object]"
+            />
+            
+            Russia
+          
+          </li>
+          <li
+            class="we-create-it-project__country-item"
+          >
+            <img
+              alt="Singapore"
+              src="[object Object]"
+            />
+            
+            Singapore
           
           </li>
         </ul>
