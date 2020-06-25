@@ -22,12 +22,21 @@ exports[`Footer renders correctly 1`] = `
             Get In Touch
           </h2>
            
-          <a
-            class="footer__mailto-link"
-            href="mailto:team@maddevs.io"
+          <div
+            class="footer__mail-wrapper"
           >
-            team@maddevs.io
-          </a>
+            <img
+              alt="mail"
+              src="@/assets/img/Footer/mail-icon.svg"
+            />
+             
+            <a
+              class="footer__mailto-link"
+              href="mailto:team@maddevs.io"
+            >
+              team@maddevs.io
+            </a>
+          </div>
         </div>
          
         <footercontacts-stub />
@@ -43,15 +52,15 @@ exports[`Footer renders correctly 1`] = `
     <div
       class="footer__bottom-links-line"
     >
+      <p
+        class="footer__company-name"
+      >
+        © Mad Devs - 2020
+      </p>
+       
       <div
         class="footer__left-bottom_links"
       >
-        <p
-          class="footer__company-name"
-        >
-          © Mad Devs - 2020
-        </p>
-         
         <a
           class="footer__bottom-link"
           href="/gdpr"
