@@ -17,8 +17,8 @@
 				</div>
 			</div>
 			<div class="footer__bottom-links-line">
+				<p class="footer__company-name">© Mad Devs - {{ currentYear }}</p>
 				<div class="footer__left-bottom_links">
-					<p class="footer__company-name">© Mad Devs - {{ currentYear }}</p>
 					<a href="/gdpr" target="_blank" class="footer__bottom-link">GDPR Compliance Commitment</a>
 					<a href="/privacy" target="_blank" class="footer__bottom-link">Privacy Policy</a>
 					<a href="/nda" target="_blank" class="footer__bottom-link">Non-Disclosure Agreement (NDA)</a>
@@ -59,8 +59,8 @@ export default {
   @import '../assets/styles/vars';
 
 	.footer {
-		padding-top: 65px;
-		padding-bottom: 87px;
+		padding-top: 80px;
+    padding-bottom: 59px;
 
 		&__content {
 			display: flex;
@@ -115,7 +115,7 @@ export default {
 		}
 
 		&__mail-wrapper {
-			margin-top: 60px;
+			margin-top: 58px;
 		}
 	}
 
@@ -127,146 +127,130 @@ export default {
 		border-top: 1px solid $border-color--grey-dark;
 	}
 
+	@media only screen and (max-width: 1440px) {
+		.footer {
+			padding-top: 110px;
+			padding-bottom: 103px;
+		}	
+	}
+
+	@media only screen and (max-width: 1420px) {
+		.footer {
+			padding-bottom: 65px;
+
+			&__bottom-links-line {
+				display: grid;
+				justify-content: center;
+				grid-row-gap: 25px;
+				padding-top: 30px;
+				text-align: center;
+			}
+
+			&__bottom-link {
+				&:first-child {
+					padding-left: 0;
+				}
+			}
+
+			&__company-name {
+				grid-row-start: 3;
+			}
+		}
+	}
+
 	@media only screen and (max-width: 1320px) {
 		.footer {
-			&__bottom-link,
-			&__company-name {
-				font-size: 13px;
-			}
-		}
-	}
+			padding-top: 90px;
 
-	@media only screen and (max-width: 1180px) {
-		.footer {
+			&__main-title {
+				font-size: 100px;
+			}
+
 			&__mailto-link {
-				font-size: 55px;
+				font-size: 62px;
+			}
+
+			&__mail-wrapper {
+				margin-top: 50px;
 			}
 		}
 	}
 
-	@media only screen and (max-width: 1150px) {
+	@media only screen and (max-width: 1220px) {
 		.footer {
-			&__bottom-link {
-				padding-left: 15px;
+			&__mail-wrapper {
+				margin-top: 25px;
+
+				img {
+					display: none;
+				}
+			}
+
+			&__mailto-link {
+				margin-left: 0;
+				font-size: 46px;
+			}
+
+			&__content {
+				padding-bottom: 55px;
 			}
 		}
 	}
 
 	@media only screen and (max-width: 1024px) {
 		.footer {
+			padding-top: 75px;
+			padding-bottom: 43px;
+
+			&__main-title {
+				font-size: 90px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 960px) {
+		.footer {
+			padding-top: 40px;
+			padding-bottom: 50px;
+
+			&__main-title {
+				font-size: 64px;
+				letter-spacing: -0.03em;
+			}
+
 			&__content {
 				flex-direction: column;
+				padding-bottom: 42px;
 			}
 
+			&__mail-wrapper {
+				margin-top: 20px;
+			} 
+		}
+	}
+
+	@media only screen and (max-width: 760px) {
+		.footer {
 			&__bottom-links-line {
-				flex-direction: column-reverse;
-				padding-left: 0;
+				padding-top: 35px;
 			}
 
 			&__left-bottom_links {
-				padding-top: 20px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 920px) {
-		.footer {
-			&__main-title {
-				font-size: 120px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 870px) {
-		.footer {
-			&__main-title {
-				font-size: 100px;
-			}
-		}
-
-		.gdpr,
-		.privacy,
-		.nda {
-			padding-top: 90px;
-			margin-top: 150px;
-		}
-	}
-
-	@media only screen and (max-width: 768px) {
-		.footer {
-			&__mailto-link {
-				font-size: 36px;
-			}
-
-			&__left-bottom_links {
-				display: grid;
-				grid-template-columns: 1fr;
+				flex-wrap: wrap;
+				justify-content: center;
 			}
 
 			&__bottom-link {
-				padding-top: 8px;
-				padding-left: 0;
-
-				&:nth-child(3) {
-					grid-row-start: 3;
+				&:last-child {
+					padding-top: 10px;
 				}
 			}
-
-			&__company-name {
-				grid-row-start: 4;
-				padding-top: 35px;
-			}
 		}
 	}
 
-	@media only screen and (max-width: 728px) {
+	@media only screen and (max-width: 680px) {
 		.footer {
-			&__main-title {
-				font-size: 75px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 600px) {
-		.footer {
-			&__main-title {
-				font-size: 75px;
-			}
-		}
-
-		.gdpr,
-		.privacy,
-		.nda {
-			margin-top: 53px;
 			padding-top: 60px;
-		}
-	}
-
-	@media only screen and (max-width: 520px) {
-		.footer {
-			&__main-title {
-				font-size: 65px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 440px) {
-		.footer {
-			&__main-title {
-				font-size: 55px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 370px) {
-		.footer {
-			&__main-title {
-				font-size: 45px;
-			}
-
-			&__mailto-link {
-				font-size: 25px;
-			}
 		}
 	}
 </style>

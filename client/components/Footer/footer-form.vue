@@ -109,7 +109,7 @@ export default {
 
 		button {
       width: 100%;
-      height: 64px;
+      height: 68px;
 		}
 
 		textarea {
@@ -131,41 +131,21 @@ export default {
     }
 	}
 
-	@media only screen and (max-width: 1420px) {
+	@media only screen and (max-width: 1440px) {
 		.footer-form {
-			width: 390px;
+			width: 370px;
 		}
 	}
 
-	@media only screen and (max-width: 1320px) {
+	@media only screen and (max-width: 1220px) {
 		.footer-form {
-			width: 320px;
-
-			/deep/.form-checkbox-label {
-				br {
-					display: none;
-				}
-			}
+			width: 380px;
 		}
-	}
-
-	@media only screen and (max-width: 1150px) {
+  }
+  
+  @media only screen and (max-width: 960px) {
 		.footer-form {
-			width: 340px;
-
-			button {
-				font-size: 17px;
-			}
-
-      .entry-field {
-        font-size: 17px;
-      }
-		}
-	}
-
-	@media only screen and (max-width: 1024px) {
-		.footer-form {
-			width: 100%;
+      width: 100%;
 		}
 	}
 </style>

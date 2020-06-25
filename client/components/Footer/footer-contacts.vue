@@ -104,70 +104,87 @@ export default {
 		}
 
 		&__message-us {
-			padding-left: 133px;
+			margin-left: 133px;
 		}
 	}
 
-	@media only screen and (max-width: 1180px) {
+	@media only screen and (max-width: 1320px) {
 		.footer-contacts {
-			&__messengers-list {
-				grid-template-columns: 1fr;
-			}
+			margin-top: 77px;
 
 			&__message-us {
-				padding-left: 0;
+				margin-left: 88px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 1220px) {
+		.footer-contacts {
+			flex-direction: column;
+			margin-top: 64px;
+
+			&__message-us {
+				margin-top: 40px;
+				margin-left: 0;
+			}
+
+			&__messengers-list {
+				grid-template-columns: repeat(2, 218px);
+				grid-column-gap: 0;
 			}
 		}
 	}
 
 	@media only screen and (max-width: 1024px) {
 		.footer-contacts {
-			justify-content: space-between;
-
-			&__phone-item {
-				font-size: 18px;
-			}
-
-			&__messenger-item,
 			&__title {
-				font-size: 17px;
+				padding-bottom: 7px;
+				font-size: 24px;
 			}
+		}
+	}
 
-			&__phone-item,
-			&__messenger-item {
-				img {
-					top: 4px;
-				}
+	@media only screen and (max-width: 960px) {
+		.footer-contacts {
+			flex-direction: row;
+			justify-content: space-between;
+			margin-bottom: 60px;
+
+			&__message-us {
+				margin-top: 0;
 			}
 
 			&__messengers-list {
 				grid-template-columns: repeat(2, 1fr);
+				grid-column-gap: 54px;
 			}
 		}
 	}
 
-	@media only screen and (max-width: 576px) {
+	@media only screen and (max-width: 680px) {
+		.footer-contacts {
+			&__messengers-list {
+				grid-template-columns: repeat(1, 1fr);
+			}
+		}
+	}
+
+	@media only screen and (max-width: 520px) {
 		.footer-contacts {
 			flex-direction: column;
 
-			&__phone-item,
-			&__messenger-item {
-				top: 3px;
-				font-size: 16px;
+			&__messengers-list {
+				grid-template-columns: repeat(2, 1fr);
+				grid-column-gap: 0;
 			}
 
-			&__phones-list  {
-				padding-bottom: 25px;
+			&__message-us {
+				margin-top: 30px;
 			}
-		}
-	}
 
-	@media only screen and (max-width: 370px) {
-		.footer-contacts {
-			&__phone-item,
-			&__messenger-item {
-				top: 3px;
-				font-size: 16px;
+			&__messenger-item,
+			&__phone-item {
+				font-size: 20px;
 			}
 		}
 	}
