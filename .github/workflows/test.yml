@@ -14,12 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
-      env:
-        NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL: ${{ secrets.JEST_COVERAGE_SLACK_WEBHOOK_URL }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run test:staging
       env:
+        NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL: ${{ secrets.JEST_COVERAGE_SLACK_WEBHOOK_URL }}
         CI: true
