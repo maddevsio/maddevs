@@ -16,5 +16,15 @@ module.exports = {
     // process `*.svg` files with `imgTransform.js`
     '\\.(svg|png)$': '<rootDir>/jest_config/imgTransformer.js'
   },
-  snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue']
+  snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
+  collectCoverage: true,
+  collectCoverageFrom: [
+    '<rootDir>/client/components/**/*.vue',
+    '<rootDir>/client/pages/*.vue'
+  ],
+  coverageReporters: [
+    'json-summary',
+    'text',
+    'lcov'
+  ]
 };
