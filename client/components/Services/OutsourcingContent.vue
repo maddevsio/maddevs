@@ -68,10 +68,10 @@ export default {
     }
 
     &__content-icon {
-      visibility: hidden;
       margin-bottom: 15px;
       position: relative;
       top: -35px;
+      opacity: 40%;
     }
 
     &__outsourcing-content {
@@ -133,7 +133,7 @@ export default {
       }
 
       .it-outsourcing__content-icon {
-        visibility: visible;
+        opacity: 1;
         transition: 0.3s;
       }
     }
@@ -233,7 +233,7 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 840px) {
+  @media only screen and (max-width: 878px) {
     .it-outsourcing {
       &__content-icon {
         height: 145px;
@@ -311,7 +311,7 @@ export default {
   @media only screen and (max-width: 345px) {
     .it-outsourcing {
       &__content-icon {
-        height: 90px;
+        height: 75px;
       }
     }
   }
