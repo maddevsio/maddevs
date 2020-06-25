@@ -99,7 +99,6 @@ export default {
 
     &__content-wrap {
       display: flex;
-      justify-content: space-between;
       align-items: flex-end;
     }
 
@@ -110,6 +109,7 @@ export default {
 
     &__projects-type_list {
       padding-right: 60px;
+      width: 49%;
     }
 
     &__country-list_wrap {
@@ -126,6 +126,7 @@ export default {
       color: $text-color--grey;
       font-size: 50px;
       letter-spacing: -2px;
+      max-width: 547px;
 
       br {
         display: none;
@@ -134,7 +135,7 @@ export default {
 
     &__country-list {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 83px;
       grid-row-gap: 15px;
       padding-bottom: 60px;
@@ -338,6 +339,7 @@ export default {
 
       &__projects-type_list {
         padding-bottom: 50px;
+        width: 100%;
       }
     }
   }
