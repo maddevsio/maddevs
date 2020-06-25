@@ -147,5 +147,13 @@ export default {
 		.footer-form {
       width: 100%;
 		}
+  }
+  
+  @media only screen and (max-width: 420px) {
+		.footer-form {
+			.field-item {
+        margin-bottom: 0;
+      }
+		}
 	}
 </style>

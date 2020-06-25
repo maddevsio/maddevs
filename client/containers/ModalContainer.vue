@@ -1,5 +1,5 @@
 <template>
-  <modal :classes="['modal_container']" height="auto" :name="$props.name" @closed="isEmailSent = false">
+  <modal :classes="['modal_container']" height="auto" :name="$props.name" :clickToClose="false" @closed="isEmailSent = false">
     <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="hideModal()">
     <perfect-scrollbar class="modal_scrollbar custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
       <slot />

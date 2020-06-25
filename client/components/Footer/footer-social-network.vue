@@ -54,4 +54,12 @@ export default {
 			justify-content: center;
 		}
 	}
+
+	@media only screen and (max-width: 420px) {
+		.footer-social-network {
+			&__social-newtork_link {
+				padding-right: 22px;
+			}
+		}
+	}
 </style>

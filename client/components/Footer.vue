@@ -253,4 +253,45 @@ export default {
 			padding-top: 60px;
 		}
 	}
+
+	@media only screen and (max-width: 420px) {
+		.footer {
+			padding-top: 55px;
+			padding-bottom: 17px;
+
+			&__mailto-link {
+				font-size: 40px;
+				letter-spacing: -0.02em;
+			}
+
+			&__main-title {
+				font-size: 53px;
+				letter-spacing: -2px;
+			}
+
+			&__bottom-link {
+				padding-left: 10px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 370px) {
+		.footer {
+			padding-bottom: 43px;
+
+			&__mailto-link {
+				font-size: 34px;
+			}
+
+			&__mail-wrapper {
+				margin-top: 10px;
+			}
+
+			&__bottom-link {
+				&:nth-child(2) {
+					padding-top: 10px;
+				}
+			}
+		}
+	}
 </style>

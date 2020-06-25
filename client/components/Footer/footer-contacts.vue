@@ -188,4 +188,18 @@ export default {
 			}
 		}
 	}
+
+	@media only screen and (max-width: 420px) {
+		.footer-contacts {
+			margin-top: 50px;
+			margin-bottom: 80px;
+		}
+	}
+
+	@media only screen and (max-width: 370px) {
+		.footer-contacts {
+			margin-top: 37px;
+			margin-bottom: 58px;
+		}
+	}
 </style>
