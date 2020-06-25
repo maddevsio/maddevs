@@ -124,8 +124,15 @@ export default {
       }
 
       &__title {
-        max-width: 550px;
         font-size: 47px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 870px) {
+    .infrastructure-optimisation {
+      &__title {
+        max-width: 100%;
       }
     }
   }

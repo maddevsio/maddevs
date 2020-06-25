@@ -56,7 +56,7 @@ export default {
   },
   created() {
     this.$nuxt.$on('tooglePageScrollBar', opened => {
-      if (opened === true) {
+      if (opened) {
         this.disableScroll();
       } else {
         this.enableScroll();

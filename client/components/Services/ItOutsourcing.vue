@@ -68,7 +68,17 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 840px) {
+  @media only screen and (min-width: 1024px) {
+    .it-outsourcing {
+      /deep/.teams {
+        .it-outsourcing__sub-title.sub-title {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 878px) {
     .it-outsourcing {
       &__flex-wrapper {
         flex-direction: column;

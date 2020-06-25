@@ -1,5 +1,5 @@
 <template>
-  <button class="button-default" @click="$modal.show(modalWindowName)">
+  <button class="button-default" @click="showModal()">
     {{ buttonInnerText }}
   </button>
 </template>
@@ -15,6 +15,12 @@ export default {
     modalWindowName: {
       type: String,
       default: ''
+    }
+  },
+  methods: {
+    showModal() {
+      this.$modal.show(this.$props.modalWindowName);
+      this.$nuxt.$emit('tooglePageScrollBar', true);
     }
   }
 };
