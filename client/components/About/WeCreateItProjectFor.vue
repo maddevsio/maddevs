@@ -45,20 +45,12 @@ export default {
           countryName: 'Australia'
         },
         {
-          iconName: 'vietnam',
-          countryName: 'Vietnam'
-        },
-        {
           iconName: 'united-kingdom',
           countryName: 'UK'
         },
         {
           iconName: 'poland',
           countryName: 'Poland'
-        },
-        {
-          iconName: 'russia',
-          countryName: 'Russia'
         },
         {
           iconName: 'austria',
@@ -69,20 +61,28 @@ export default {
           countryName: 'France'
         },
         {
-          iconName: 'belarus',
-          countryName: 'Belarus'
-        },
-        {
           iconName: 'switzerland',
           countryName: 'Switzerland'
         },
         {
-          iconName: 'singapore',
-          countryName: 'Singapore'
+          iconName: 'belarus',
+          countryName: 'Belarus'
+        },
+        {
+          iconName: 'vietnam',
+          countryName: 'Vietnam'
         },
         {
           iconName: 'kazakhstan',
           countryName: 'Kazakhstan'
+        },
+        {
+          iconName: 'russia',
+          countryName: 'Russia'
+        },
+        {
+          iconName: 'singapore',
+          countryName: 'Singapore'
         }
       ]
     };
@@ -214,40 +214,6 @@ export default {
         grid-column-gap: 155px;
         grid-row-gap: 8px;
         padding-bottom: 33px;
-      }
-
-      &__country-item {
-        &:nth-child(3n+3) {
-          margin-left: 0;
-        }
-
-        &:nth-child(4) {
-          grid-row-start: 2;
-        }
-
-        &:nth-child(2) {
-					grid-row-start: 3;
-        }
-
-        &:nth-child(3) {
-          grid-row-start: 4;
-        }
-
-        &:nth-child(10) {
-          grid-row-start: 5;
-        }
-
-        &:nth-child(6) {
-          grid-row-start: 6;
-        }
-
-        &:nth-child(5) {
-          grid-row-start: 3;
-        }
-
-        &:nth-child(11) {
-          grid-row-start: 4;
-        }
       }
 
       &__project-item {
