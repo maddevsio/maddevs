@@ -65,7 +65,8 @@ export default {
     projectDescription: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'order-project-from-us'
+    inputId: 'order-project-from-us',
+    onSubmit: false
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -79,21 +80,39 @@ export default {
       e.target.style.height = `${e.target.scrollHeight}px`;
     },
     sendForm(isValid) {
-      if (isValid === true) {
+      if (isValid === true && !this.onSubmit) {
+        this.onSubmit = true;
         const form = {
           templateId: 304632, // Required
           variables: {
-            fullName: this.fullName,
-            company: this.company,
-            email: this.email,
-            phoneNumber: this.phoneNumber,
-            projectDescription: this.projectDescription,
+            fullName: this.fullName || '',
+            company: this.company || '',
+            email: this.email || '',
+            phoneNumber: this.phoneNumber || '',
+            projectDescription: this.projectDescription || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
           }
         };
-        this.$nuxt.$emit(this.modalName, form);
+        this.$store.dispatch('sendEmail', form).then(res => {
+          this.onSubmit = false;
+          this.resetForm();
+          if (res.status === 200) {
+            this.$nuxt.$emit(this.modalName, true);
+          } else {
+            this.$nuxt.$emit(this.modalName, false);
+          }
+        });
       }
+    },
+    resetForm() {
+      this.fullName = null;
+      this.email = null;
+      this.phoneNumber = null;
+      this.company = null;
+      this.projectDescription = null;
+      this.agreeWithPrivacyPolicy = false;
+      this.agreeToGetMadDevsDiscountOffers = false;
     }
   }
 };
