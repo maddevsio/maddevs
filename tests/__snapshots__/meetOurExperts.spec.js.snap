@@ -368,7 +368,9 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Marat Bediev"
             class="mobile-expert-img"
+            sizes="(max-width:1000px) 600px"
             src="[object Object]"
+            srcset="[object Object] 1200w"
           />
            
           <div
@@ -413,7 +415,9 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Tamara Mun"
             class="mobile-expert-img"
+            sizes="(max-width:1000px) 600px"
             src="[object Object]"
+            srcset="[object Object] 1200w"
           />
            
           <div
@@ -458,7 +462,9 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Andrew \\"Сhuck\\" Minkin"
             class="mobile-expert-img"
+            sizes="(max-width:1000px) 600px"
             src="[object Object]"
+            srcset="[object Object] 1200w"
           />
            
           <div
@@ -503,7 +509,9 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Nakylai Taiirova"
             class="mobile-expert-img"
+            sizes="(max-width:1000px) 600px"
             src="[object Object]"
+            srcset="[object Object] 1200w"
           />
            
           <div
@@ -548,7 +556,9 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Daria Utesheva"
             class="mobile-expert-img"
+            sizes="(max-width:1000px) 600px"
             src="[object Object]"
+            srcset="[object Object] 1200w"
           />
            
           <div
@@ -593,7 +603,9 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Nuradil Alymkulov"
             class="mobile-expert-img"
+            sizes="(max-width:1000px) 600px"
             src="[object Object]"
+            srcset="[object Object] 1200w"
           />
            
           <div
@@ -638,7 +650,9 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Alice Jang"
             class="mobile-expert-img"
+            sizes="(max-width:1000px) 600px"
             src="[object Object]"
+            srcset="[object Object] 1200w"
           />
            
           <div
@@ -683,7 +697,9 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Arthur Elizavetenkov"
             class="mobile-expert-img"
+            sizes="(max-width:1000px) 600px"
             src="[object Object]"
+            srcset="[object Object] 1200w"
           />
            
           <div
