@@ -3,17 +3,17 @@
     <div class="container">
       <div class="why-us__title-wrap">
         <h2 class="why-us__main-title">Why us?</h2>
+        <div class="why-us__sub-title why-us__customer-rates-sub-title title">Fantastic customer <br> satisfaction rates:</div>
       </div>
       <div class="why-us__statistics-wrap">
         <div class="why-us__customer-rates">
-          <div class="why-us__sub-title why-us__customer-rates-sub-title">Fantastic customer <br> satisfaction rates:</div>
           <div class="why-us__rates-list">
             <div class="why-us__rates-item">
               <div class="why-us__rates-number">
                 92<span>%</span>
               </div>
               <p class="why-us__item_description paragraph">
-                recommend us <br> to others.
+                recommend us to others.
               </p>
             </div>
             <div class="why-us__rates-item">
@@ -21,7 +21,7 @@
                 87<span>%</span>
               </div>
               <p class="why-us__item_description paragraph">
-                stay with us for <br> more than 2 years.
+                stay with us for more than 2 <br> years.
               </p>
             </div>
             <div class="why-us__rates-item">
@@ -29,13 +29,13 @@
                 98<span>%</span>
               </div>
               <p class="why-us__item_description paragraph">
-                are satisfied with our <br> pricing.
+                are satisfied with our pricing.
               </p>
             </div>
           </div>
         </div>
         <div class="why-us__mad-devs_metrics">
-          <div class="why-us__sub-title why-us__mad-devs_metrics-sub-title">Mad Devs' key <br> metrics:</div>
+          <div class="why-us__sub-title why-us__mad-devs_metrics-sub-title">Mad Devs' key metrics:</div>
           <div class="why-us__metrics-list">
             <div class="why-us__metric-item">
               <div class="why-us__metric-number">
@@ -50,15 +50,15 @@
                 100+
               </div>
               <p class="why-us__item_description paragraph">
-                staff members <br> work for Mad Devs.
+                staff members work <br> for Mad Devs.
               </p>
             </div>
             <div class="why-us__metric-item">
               <div class="why-us__metric-number">
-                10+ million
+                10M+
               </div>
               <p class="why-us__item_description paragraph">
-                US dollars raised by <br> 5 customer startups in 2019.
+                US dollars raised by 5 customer <br> startups in 2019.
               </p>
             </div>
             <div class="why-us__metric-item">
@@ -110,6 +110,10 @@ export default {
     padding-bottom: 167px;
     background-color: $bgcolor--white;
 
+    &__title-wrap {
+      position: relative;
+    }
+
     &__main-title {
       margin-left: -40px;
       padding-bottom: 120px;
@@ -127,13 +131,19 @@ export default {
       justify-content: space-between;
     }
 
+    &__customer-rates,
     &__mad-devs_metrics {
-      padding-top: 96px;
+      flex-direction: column;
+    }
+
+    &__customer-rates-sub-title {
+      position: absolute;
+      bottom: -30px;
     }
 
     &__rates-list {
-      padding-bottom: 74px;
-      border-bottom: 1px solid $border-color--grey-dark-transparent;
+      padding-bottom: 142px;
+      align-items: baseline;
     }
 
     &__metrics-list {
@@ -141,12 +151,14 @@ export default {
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 44px;
       grid-row-gap: 60px;
+      margin-top: 36px;
     }
 
     &__rates-item {
       &:nth-child(1),
       &:nth-child(2) {
-        padding-right: 80px;
+        padding-right: 190px;
+        padding-top: 34px;
       }
 
       &:nth-child(3) {
@@ -163,10 +175,11 @@ export default {
     }
 
     &__sub-title {
-      font-size: 50px;
+      font-size: 90px;
       font-family: 'Hoves-Bold';
       color: $text-color--black;
-      letter-spacing: -2px;
+      line-height: 104%;
+      letter-spacing: -3px;
     }
 
     &__metric-number,
@@ -176,25 +189,32 @@ export default {
     }
 
     &__metric-number {
-      font-size: 50px;
-      letter-spacing: -2px;
+      font-size: 90px;
+      line-height: 104%;
+      letter-spacing: -3px;
     }
 
     &__rates-number {
       display: flex;
-      font-size: 130px;
-      letter-spacing: -5px;
+      letter-spacing: -8px;
+      font-size: 165px;
+      line-height: 100%;
 
       span {
         display: block;
         margin-top: 5px;
         font-size: 70px;
+        line-height: 92%;
+        letter-spacing: -2px;
+        margin-left: 12px;
       }
     }
 
     &__item_description {
-      font-size: 18px;
-      letter-spacing: -0.03em;
+      font-size: 21px;
+      line-height: 129%;
+      letter-spacing: -0.02em;
+
       a {
         color: $text-color--black;
       }
@@ -218,10 +238,6 @@ export default {
         }
       }
 
-      &__rates-number {
-        font-size: 128px;
-      }
-
       &__sub-title {
         br {
           display: none;
@@ -230,22 +246,6 @@ export default {
 
       &__metrics-list {
         grid-column-gap: 40px;
-      }
-
-      &__customer-rates-sub-title {
-        max-width: 265px;
-      }
-
-      &__mad-devs_metrics-sub-title {
-        max-width: 365px;
-      }
-
-      &__mad-devs_metrics {
-        padding-top: 86px;
-      }
-
-      &__rates-list {
-        padding-bottom: 92px;
       }
     }
   }
@@ -260,21 +260,16 @@ export default {
     }
   }
 
-
-  @media only screen and (max-width: 1340px) {
-    .why-us {
-      &__mad-devs_metrics-sub-title {
-        max-width: 280px;
-      }
-    }
-  }
-
   @media only screen and (max-width: 1280px) {
     .why-us {
       padding-bottom: 123px;
 
       &__metrics-list {
         grid-column-gap: 50px;
+      }
+
+      &__rates-list {
+        padding-bottom: 82px;
       }
 
       &__metric-item {
@@ -288,6 +283,19 @@ export default {
         &:nth-child(2) {
           padding-right: 60px;
         }
+      }
+
+      &__sub-title {
+        font-size: 70px;
+        line-height: 100%;
+        letter-spacing: -2px;
+        max-width: 90%;
+      }
+
+      &__metric-number {
+        font-size: 70px;
+        line-height: 92%;
+        letter-spacing: -2px;
       }
     }
   }
@@ -306,20 +314,6 @@ export default {
 
       &__rates-list {
         border-bottom: 0;
-      }
-
-      &__customer-rates,
-      &__mad-devs_metrics {
-        flex-direction: column;
-      }
-
-      &__sub-title {
-        max-width: initial;
-        font-size: 47px;
-      }
-
-      &__customer-rates-sub-title {
-        padding-bottom: 20px;
       }
 
       &__mad-devs_metrics-sub-title {
@@ -341,11 +335,30 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1024px) {
     .why-us {
       &__main-title {
-        font-size: 160px;
-        line-height: 100px;
+        font-size: calc(91px + (195 - 91) * ((100vw - 320px) / (1024 - 320)));
+        line-height: 68%;
+      }
+
+      &__rates-list {
+        padding-bottom: 119px;
+      }
+
+      &__sub-title {
+        font-size: 63px;
+        line-height: 110%;
+        letter-spacing: -2px;
+      }
+
+      &__metrics-list {
+        grid-column-gap: 90px;
+      }
+
+      &__rates-number {
+        letter-spacing: -5px;
+        font-size: 128px;
       }
     }
   }
