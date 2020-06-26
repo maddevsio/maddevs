@@ -19,8 +19,8 @@
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name">Mobile expertise you are interested in</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need assistance with Kotlin development and UI/UX design" v-model="interesteMobileExpertise" @keydown="autosize($event)" rows="1"/>
+            <p class="modal-field-name field-name">Expertise you are interested in</p>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need assistance with..." v-model="needAssistanceWith" @keydown="autosize($event)" rows="1"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
@@ -30,9 +30,9 @@
           :inputId="inputId"
         />
         <UIButton
-          name="Get mobile help"
-          :disabled="invalid || !agreeWithPrivacyPolicy"
-          @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+          name="Get your trusted IT partner"
+          :disabled="invalid"
+          @click="sendForm(!invalid)"
         />
       </div>
     </ValidationObserver>
@@ -40,26 +40,26 @@
 </template>
 
 <script>
-import FormCheckboxes from '@/components/ui/form-checkboxes';
 import ModalContainer from '@/containers/ModalContainer';
+import FormCheckboxes from '@/components/ui/form-checkboxes';
 import UIButton from '@/components/ui/UIButton';
 
 export default {
-  name: 'mobile-modal',
+  name: 'get-your-trusted-it-partner',
   components: {
-    FormCheckboxes,
     ModalContainer,
+    FormCheckboxes,
     UIButton
   },
   data: () => ({
-    modalName: 'mobile-modal',
+    modalName: 'get-your-trusted-it-partner',
     fullName: null,
     email: null,
     phoneNumber: null,
-    interesteMobileExpertise: null,
+    needAssistanceWith: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'mobile',
+    inputId: 'get-your-trusted-it-partner',
     onSubmit: false
   }),
   methods: {
@@ -82,9 +82,9 @@ export default {
             fullName: this.fullName || '',
             email: this.email || '',
             phoneNumber: this.phoneNumber || '',
-            interesteMobileExpertise: this.interesteMobileExpertise || '',
+            needAssistanceWith: this.needAssistanceWith || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers  ? 'Yes' : 'No'
           }
         };
         this.$store.dispatch('sendEmail', form).then(res => {
@@ -102,37 +102,10 @@ export default {
       this.fullName = null;
       this.email = null;
       this.phoneNumber = null;
-      this.interesteMobileExpertise = null;
+      this.needAssistanceWith = null;
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
     }
   }
 };
 </script>
-
-<style lang="scss" scoped>
-  .form {
-    textarea {
-      height: 79px;
-      min-height: 79px;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-		.form {
-      textarea {
-        height: 60px;
-        min-height: 60px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 475px) {
-		.form {
-      textarea {
-        height: 79px;
-        min-height: 79px;
-      }
-    }
-  }
-</style>

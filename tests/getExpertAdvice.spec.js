@@ -1,13 +1,13 @@
 import {
   mount
 } from '@vue/test-utils';
-import teamHeadcountModal from '@/components/Modals/team-headcount-modal';
+import getExpertAdvice from '@/components/Modals/get-expert-advice-modal';
 
-describe('Team headcount modal', () => {
+describe('Technology stack modal', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(teamHeadcountModal, {
+    wrapper = mount(getExpertAdvice, {
       stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar']
     });
   });
@@ -23,20 +23,20 @@ describe('Team headcount modal', () => {
   // --------------------- //
 
   test('sets the correct default data', () => {
-    expect(typeof teamHeadcountModal.data).toBe('function');
-    const defaultData = teamHeadcountModal.data();
+    expect(typeof getExpertAdvice.data).toBe('function');
+    const defaultData = getExpertAdvice.data();
     expect(
       defaultData.agreeWithPrivacyPolicy &&
       defaultData.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
-    expect(defaultData.inputId).toEqual('team-headcount');
+    expect(defaultData.inputId).toEqual('get-expert-advice');
   });
 
   test('has a functions', () => {
     expect(
-      typeof teamHeadcountModal.methods.getPrivacyCheckboxState && 
-      typeof teamHeadcountModal.methods.getDiscountOffersCheckboxState &&
-      typeof teamHeadcountModal.methods.autosize
+      typeof getExpertAdvice.methods.getPrivacyCheckboxState && 
+      typeof getExpertAdvice.methods.getDiscountOffersCheckboxState &&
+      typeof getExpertAdvice.methods.autosize
     ).toBe('function');
   });
 
