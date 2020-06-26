@@ -15,7 +15,7 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="phone|max:50" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name">Phone number</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
+            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="max:500|required" v-slot="{ classes, errors }">
@@ -59,7 +59,8 @@ export default {
     techStackQuestion: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'technology-stack'
+    inputId: 'technology-stack',
+    onSubmit: false
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -73,20 +74,37 @@ export default {
       e.target.style.height = `${e.target.scrollHeight}px`;
     },
     sendForm(isValid) {
-      if (isValid === true) {
+      if (isValid === true && !this.onSubmit) {
+        this.onSubmit = true;
         const form = {
           templateId: 304641, // Required
           variables: {
-            fullName: this.fullName,
-            techStackQuestion: this.techStackQuestion,
-            email: this.email,
-            phoneNumber: this.phoneNumber,
+            fullName: this.fullName || '',
+            techStackQuestion: this.techStackQuestion || '',
+            email: this.email || '',
+            phoneNumber: this.phoneNumber || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
           }
         };
-        this.$nuxt.$emit(this.modalName, form);
+        this.$store.dispatch('sendEmail', form).then(res => {
+          this.onSubmit = false;
+          this.resetForm();
+          if (res.status === 200) {
+            this.$nuxt.$emit(this.modalName, true);
+          } else {
+            this.$nuxt.$emit(this.modalName, false);
+          }
+        });
       }
+    },
+    resetForm() {
+      this.fullName = null;
+      this.email = null;
+      this.phoneNumber = null;
+      this.techStackQuestion = null;
+      this.agreeWithPrivacyPolicy = false;
+      this.agreeToGetMadDevsDiscountOffers = false;
     }
   }
 };

@@ -114,7 +114,8 @@ export default {
         { type: 'junior', label: 'Junior,' },
         { type: 'intern', label: 'Intern' }
       ],
-      isEmailSent: false
+      isEmailSent: false,
+      onSumbit: false
     };
   },
   mounted() {
@@ -131,7 +132,8 @@ export default {
       params;
     },
     sendData(e) {
-      if (!this.errors) {
+      if (!this.errors && !this.onSumbit) {
+        this.onSumbit = true;
         //TODO: add ajax request
         this.toBase64(this.selectedFile).then(base64 => {
           const form = {
@@ -149,6 +151,7 @@ export default {
             }
           };
           this.$store.dispatch('sendEmail', form).then(res => {
+            this.onSumbit = false;
             if (res.status === 200) {
               this.isEmailSent = true;
               setTimeout(() => {
