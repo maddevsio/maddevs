@@ -11,6 +11,7 @@ describe('CareersForm component', () => {
     email: null,
     selectedFile: null,
     linkedinProfile: null,
+    onSumbit: false,
     radioData: [
       { type: 'senior', label: 'Senior,' },
       { type: 'middle', label: 'Middle,' },

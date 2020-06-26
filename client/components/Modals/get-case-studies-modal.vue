@@ -47,7 +47,8 @@ export default {
     email: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'case-studies'
+    inputId: 'case-studies',
+    onSubmit: false
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -57,18 +58,33 @@ export default {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
     },
     sendForm(isValid) {
-      if (isValid === true) {
+      if (isValid === true && !this.onSubmit) {
+        this.onSubmit = true;
         const form = {
           templateId: 304622, // Required
           variables: {
-            fullName: this.fullName,
-            email: this.email,
+            fullName: this.fullName || '',
+            email: this.email || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
           }
         };
-        this.$nuxt.$emit(this.modalName, form);
+        this.$store.dispatch('sendEmail', form).then(res => {
+          this.onSubmit = false;
+          this.resetForm();
+          if (res.status === 200) {
+            this.$nuxt.$emit(this.modalName, true);
+          } else {
+            this.$nuxt.$emit(this.modalName, false);
+          }
+        });
       }
+    },
+    resetForm() {
+      this.fullName = null;
+      this.email = null;
+      this.agreeWithPrivacyPolicy = false;
+      this.agreeToGetMadDevsDiscountOffers = false;
     }
   }
 };

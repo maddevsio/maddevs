@@ -30,14 +30,12 @@ export default {
   }),
   created() {
     if (this.$nuxt) {
-      this.$nuxt.$on(this.$props.name, form => {
-        this.$store.dispatch('sendEmail', form).then(res => {
-          if (res.status === 200) {
-            this.isEmailSent = true;
-          } else {
-            this.isEmailSent = false;
-          }
-        });
+      this.$nuxt.$on(this.$props.name, status => {
+        if (status === true) {
+          this.isEmailSent = true;
+        } else {
+          this.isEmailSent = false;
+        }
       });
     }
   },
