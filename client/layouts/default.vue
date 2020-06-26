@@ -26,7 +26,7 @@ import InfrastructureAuditModal from '@/components/Modals/infrastructure-audit-m
 import GetCaseStudiesModal from '@/components/Modals/get-case-studies-modal';
 import OrderProjectFromUsModal from '@/components/Modals/order-project-from-us-modal';
 import GetYourTrustedItPartnerModal from '@/components/Modals/get-your-trusted-it-partner-modal';
-import GetExpertAdvice from '@/components/Modals/get-expert-advice';
+import GetExpertAdvice from '@/components/Modals/get-expert-advice-modal';
 
 export default {
   name: 'Default',

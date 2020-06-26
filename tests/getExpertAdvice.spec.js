@@ -1,13 +1,13 @@
 import {
   mount
 } from '@vue/test-utils';
-import processAuditModal from '@/components/Modals/process-audit-modal';
+import getExpertAdvice from '@/components/Modals/get-expert-advice-modal';
 
-describe('Process audit modal', () => {
+describe('Technology stack modal', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(processAuditModal, {
+    wrapper = mount(getExpertAdvice, {
       stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar']
     });
   });
@@ -23,20 +23,20 @@ describe('Process audit modal', () => {
   // --------------------- //
 
   test('sets the correct default data', () => {
-    expect(typeof processAuditModal.data).toBe('function');
-    const defaultData = processAuditModal.data();
+    expect(typeof getExpertAdvice.data).toBe('function');
+    const defaultData = getExpertAdvice.data();
     expect(
       defaultData.agreeWithPrivacyPolicy &&
       defaultData.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
-    expect(defaultData.inputId).toEqual('process-audit');
+    expect(defaultData.inputId).toEqual('get-expert-advice');
   });
 
   test('has a functions', () => {
     expect(
-      typeof processAuditModal.methods.getPrivacyCheckboxState && 
-      typeof processAuditModal.methods.getDiscountOffersCheckboxState &&
-      typeof processAuditModal.methods.autosize
+      typeof getExpertAdvice.methods.getPrivacyCheckboxState && 
+      typeof getExpertAdvice.methods.getDiscountOffersCheckboxState &&
+      typeof getExpertAdvice.methods.autosize
     ).toBe('function');
   });
 

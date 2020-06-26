@@ -84,7 +84,6 @@ export default {
 
 		&__bottom-links-line {
 			display: flex;
-			justify-content: space-between;
 			padding-top: 23px;
 			border-top: 1px solid $footer--border-color--grey-light;
 		}
