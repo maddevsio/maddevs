@@ -193,6 +193,8 @@ export default {
     }
 
     &__item_description {
+      font-size: 18px;
+      letter-spacing: -0.03em;
       a {
         color: $text-color--black;
       }

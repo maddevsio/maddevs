@@ -129,14 +129,14 @@ exports[`Header renders correctly 1`] = `
             >
               <a
                 class="header__selected-phone"
-                href="tel:+1 833 623 3387"
+                href="tel:+1 833-MADDEVS"
               >
                 <img
                   alt="united-states"
                   src="[object Object]"
                 />
                 
-                +1 833 623 3387
+                +1 833-MADDEVS
               
               </a>
                
@@ -157,7 +157,7 @@ exports[`Header renders correctly 1`] = `
                 </a>
                 <a
                   class="header__phone-item"
-                  href="tel:+1 833 623 3387"
+                  href="tel:+1 833-MADDEVS"
                   style="display: none;"
                 >
                   <img
@@ -165,7 +165,7 @@ exports[`Header renders correctly 1`] = `
                     src="[object Object]"
                   />
                   
-                  +1 833 623 3387
+                  +1 833-MADDEVS
                 
                 </a>
               </div>
@@ -301,7 +301,7 @@ exports[`Header renders correctly 1`] = `
                       src="@/assets/img/Flags/united-states.svg"
                     />
                     
-					+1 833 623 3387
+					+1 833-MADDEVS
 				
                   </a>
                 </li>

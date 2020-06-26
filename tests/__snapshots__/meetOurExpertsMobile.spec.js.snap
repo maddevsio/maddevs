@@ -17,7 +17,9 @@ exports[`Meet Our Experts Mobile Slider renders correctly 1`] = `
         <img
           alt="Marat Bediev"
           class="mobile-expert-img"
+          sizes="(max-width:1000px) 600px"
           src="[object Object]"
+          srcset="[object Object] 1200w"
         />
          
         <div

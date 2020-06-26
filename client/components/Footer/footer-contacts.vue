@@ -6,7 +6,7 @@
 				<li>
 					<a href="tel:+1 888 401 3401" class="footer-contacts__phone-item">
 						<img src="@/assets/img/Flags/united-states.svg" alt="United States">
-						+1 833 623 3387
+						+1 833-MADDEVS
 					</a>
 				</li>
 				<li>
@@ -60,14 +60,15 @@ export default {
 
 	.footer-contacts {
 		display: flex;
-		padding-top: 90px;
+		margin-top: 123px;
 
 		&__title {
 			padding-bottom: 19px;
 			color: $text-color--grey-light;
-			font-family: 'Hoves-Regular';
-			font-size: 18px;
+			font-family: 'Hoves-Bold';
+    	font-size: 27px;
 			font-weight: 500;
+			letter-spacing: -1px;
 		}
 
 		&__phones-list,
@@ -81,7 +82,8 @@ export default {
 		}
 
 		&__messengers-list {
-			grid-template-columns: repeat(2, 130px);
+			grid-template-columns: repeat(2, 1fr);
+			grid-column-gap: 84px;
 		}
 
 		&__phone-item,
@@ -89,8 +91,10 @@ export default {
 			position: relative;
 			padding-left: 26px;
 			color: $text-color--grey;
-			font-family: 'Hoves-Regular';
+			font-family: 'Hoves-Bold';
+			font-size: 22px;
 			text-decoration: none;
+			letter-spacing: -1px;
 
 			img {
 				position: absolute;
@@ -99,80 +103,103 @@ export default {
 			}
 		}
 
-		&__phone-item {
-			font-size: 20px;
-		}
-
-		&__messenger-item {
-			font-size: 18px;
-		}
-
 		&__message-us {
-			padding-left: 133px;
+			margin-left: 133px;
 		}
 	}
 
-	@media only screen and (max-width: 1180px) {
+	@media only screen and (max-width: 1320px) {
 		.footer-contacts {
-			&__messengers-list {
-				grid-template-columns: 1fr;
-			}
+			margin-top: 77px;
 
 			&__message-us {
-				padding-left: 0;
+				margin-left: 88px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 1220px) {
+		.footer-contacts {
+			flex-direction: column;
+			margin-top: 64px;
+
+			&__message-us {
+				margin-top: 40px;
+				margin-left: 0;
+			}
+
+			&__messengers-list {
+				grid-template-columns: repeat(2, 218px);
+				grid-column-gap: 0;
 			}
 		}
 	}
 
 	@media only screen and (max-width: 1024px) {
 		.footer-contacts {
-			justify-content: space-between;
-
-			&__phone-item {
-				font-size: 18px;
-			}
-
-			&__messenger-item,
 			&__title {
-				font-size: 17px;
-			}
-
-			&__phone-item,
-			&__messenger-item {
-				img {
-					top: 4px;
-				}
-			}
-
-			&__messengers-list {
-				grid-template-columns: repeat(2, 1fr);
+				padding-bottom: 7px;
+				font-size: 24px;
 			}
 		}
 	}
 
-	@media only screen and (max-width: 576px) {
+	@media only screen and (max-width: 960px) {
+		.footer-contacts {
+			flex-direction: row;
+			justify-content: space-between;
+			margin-bottom: 60px;
+
+			&__message-us {
+				margin-top: 0;
+			}
+
+			&__messengers-list {
+				grid-template-columns: repeat(2, 1fr);
+				grid-column-gap: 54px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 680px) {
+		.footer-contacts {
+			&__messengers-list {
+				grid-template-columns: repeat(1, 1fr);
+			}
+		}
+	}
+
+	@media only screen and (max-width: 520px) {
 		.footer-contacts {
 			flex-direction: column;
 
-			&__phone-item,
-			&__messenger-item {
-				top: 3px;
-				font-size: 16px;
+			&__messengers-list {
+				grid-template-columns: repeat(2, 1fr);
+				grid-column-gap: 0;
 			}
 
-			&__phones-list  {
-				padding-bottom: 25px;
+			&__message-us {
+				margin-top: 30px;
 			}
+
+			&__messenger-item,
+			&__phone-item {
+				font-size: 20px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 420px) {
+		.footer-contacts {
+			margin-top: 50px;
+			margin-bottom: 80px;
 		}
 	}
 
 	@media only screen and (max-width: 370px) {
 		.footer-contacts {
-			&__phone-item,
-			&__messenger-item {
-				top: 3px;
-				font-size: 16px;
-			}
+			margin-top: 37px;
+			margin-bottom: 58px;
 		}
 	}
 </style>

@@ -10,7 +10,7 @@ describe('Meet Our Experts Mobile Slider', () => {
       {
         name: 'Marat Bediev',
         position: 'Senior DevOps',
-        image: 'marat',
+        image: 'Marat',
         linkedin: 'https://www.linkedin.com/in/marat-bediev-a973171b/'
       }
     ]

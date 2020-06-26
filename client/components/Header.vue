@@ -72,7 +72,7 @@ export default {
           country: 'united-kingdom'
         },
         {
-          phoneNumber: '+1 833 623 3387',
+          phoneNumber: '+1 833-MADDEVS',
           country: 'united-states'
         }
       ],
@@ -258,10 +258,6 @@ export default {
 
     &__logo-icon {
       margin-left: -96px;
-    }
-
-    #united-states {
-      background-position-x: 153px;
     }
   }
 

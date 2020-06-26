@@ -37,49 +37,49 @@ export default {
         {
           name: 'Marat Bediev',
           position: 'Senior DevOps Engineer',
-          image: 'marat',
+          image: 'Marat',
           linkedin: 'https://www.linkedin.com/in/marat-bediev-a973171b/'
         },
         {
           name: 'Tamara Mun',
           position: 'Delivery Manager',
-          image: 'tamara',
+          image: 'Tamara',
           linkedin: 'https://www.linkedin.com/in/tamara-mun/'
         },
         {
           name: 'Andrew "Сhuck" Minkin',
           position: 'CTO, Co-Founder',
-          image: 'chuck',
+          image: 'Chuck',
           linkedin: 'https://www.linkedin.com/in/andrew-minkin-700a2523/'
         },
         {
           name: 'Nakylai Taiirova',
           position: 'Senior Full-Stack Developer',
-          image: 'nakylai',
+          image: 'Nakylai',
           linkedin: 'https://www.linkedin.com/in/nakylai-taiirova-28bab859/'
         },
         {
           name: 'Daria Utesheva',
           position: 'Head of HR Department',
-          image: 'daria',
+          image: 'Daria',
           linkedin: 'https://www.linkedin.com/in/%D0%B4%D0%B0%D1%80%D1%8C%D1%8F-%D1%83%D1%82%D0%B5%D1%88%D0%B5%D0%B2%D0%B0-47804198/'
         },
         {
           name: 'Nuradil Alymkulov',
           position: 'Senior Full-Stack Developer',
-          image: 'nuradil',
+          image: 'Nuradil',
           linkedin: 'https://www.linkedin.com/in/nuradil-alymkulov/'
         },
         {
           name: 'Alice Jang',
           position: 'Project Manager',
-          image: 'alice',
+          image: 'Alice',
           linkedin: 'https://www.linkedin.com/in/alice-jang-b235b240/'
         },
         {
           name: 'Arthur Elizavetenkov',
           position: 'Project Manager',
-          image: 'arthur',
+          image: 'Arthur',
           linkedin: 'https://www.linkedin.com/in/earthurkg/'
         }
       ]

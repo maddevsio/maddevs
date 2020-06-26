@@ -41,7 +41,7 @@ export default {
 		align-items: center;
 
 		&__social-newtork_link {
-			padding-right: 39px;
+			padding-right: 35px;
 
 			&:last-child {
 				padding-right: 0;
@@ -49,28 +49,16 @@ export default {
 		}
 	}
 
-	@media only screen and (max-width: 1390px) {
+	@media only screen and (max-width: 1420px) {
 		.footer-social-network {
-			&__social-newtork_link {
-				padding-right: 29px;
-			}
+			justify-content: center;
 		}
 	}
 
-	@media only screen and (max-width: 1150px) {
+	@media only screen and (max-width: 420px) {
 		.footer-social-network {
 			&__social-newtork_link {
-				padding-right: 19px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 1024px) {
-		.footer-social-network {
-			justify-content: space-between;
-
-			&__social-newtork_link {
-				padding-right: 0px;
+				padding-right: 22px;
 			}
 		}
 	}
