@@ -13,7 +13,7 @@ exports[`Mobile Header renders correctly 1`] = `
     >
       <img
         alt="Logotype"
-        src="../../assets/img/common/logo.svg"
+        src="@/assets/img/common/logo.svg"
       />
     </router-link-stub>
      
@@ -26,7 +26,7 @@ exports[`Mobile Header renders correctly 1`] = `
         <img
           alt="Open"
           class="mobile-header__open"
-          src="../../assets/img/Header/mobile-header-hamburger.svg"
+          src="@/assets/img/Header/mobile-header-hamburger.svg"
         />
       </button>
     </div>

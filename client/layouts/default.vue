@@ -1,5 +1,5 @@
 <template>
-  <perfect-scrollbar ref="PageScrollBar" id="PageScrollBar" class="page-scrollbar">
+  <div>
     <Header/>
       <nuxt/>
     <Footer />
@@ -13,7 +13,7 @@
       <GetYourTrustedItPartnerModal />
       <GetExpertAdvice />
     </client-only>
-  </perfect-scrollbar>
+  </div>
 </template>
 
 <script>
@@ -41,30 +41,6 @@ export default {
     OrderProjectFromUsModal,
     GetYourTrustedItPartnerModal,
     GetExpertAdvice
-  },
-  created() {
-    this.$nuxt.$on('tooglePageScrollBar', opened => {
-      if (opened) {
-        this.disableScroll();
-      } else {
-        this.enableScroll();
-      }
-    });
-  },
-  watch: {
-    '$route'() {
-      if (this.$refs.PageScrollBar && this.$refs.PageScrollBar.$el) {
-        this.$refs.PageScrollBar.$el.scrollTop = 0;
-      }
-    }
-  },
-  methods: {
-    enableScroll() {
-      this.$refs.PageScrollBar.create();
-    },
-    disableScroll() {
-      this.$refs.PageScrollBar.destroy();
-    }
   }
 };
 </script>

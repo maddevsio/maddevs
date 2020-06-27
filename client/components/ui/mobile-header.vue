@@ -2,12 +2,12 @@
   <div class="mobile-header" :class="{ 'is-open': mobileHeaderIsOpen }">
 		<div class="mobile-header__top-line">
 			<router-link to="/" class="mobile-header__header-logo" @click.native="mobileHeaderIsOpen = false">
-				<img src="../../assets/img/common/logo.svg" alt="Logotype">
+				<img src="@/assets/img/common/logo.svg" alt="Logotype">
 			</router-link>
 			<div class="mobile-header__button-wrap">
 				<button class="mobile-header__toogle-btn" @click="toggleMobileHeader()">
-					<img src="../../assets/img/Header/mobile-header-hamburger.svg" alt="Open" class="mobile-header__open" v-if="!mobileHeaderIsOpen">
-					<img src="../../assets/img/Header/mobile-header-close.svg" alt="Close" class="mobile-header__close" v-else>
+					<img src="@/assets/img/Header/mobile-header-hamburger.svg" alt="Open" class="mobile-header__open" v-if="!mobileHeaderIsOpen">
+					<img src="@/assets/img/Header/mobile-header-close.svg" alt="Close" class="mobile-header__close" v-else>
 				</button>
 			</div>
 		</div>
