@@ -6,11 +6,14 @@ exports[`Infrastructure Audit Modal renders correctly 1`] = `
   height="auto"
   name="infrastructure-modal"
 >
-  <img
-    alt="Close modal"
+  <button
     class="close-modal"
-    src="@/assets/img/common/close-icon.svg"
-  />
+  >
+    <img
+      alt="Close modal"
+      src="@/assets/img/common/close-icon.svg"
+    />
+  </button>
    
   <perfect-scrollbar-stub
     class="modal_scrollbar custom-scrollbar"

@@ -33,22 +33,18 @@ describe('Header', () => {
   });
 
   it('headerLogoTextDisplayState should to be equal true', () => {
-    const event = {
-      target: {
-        scrollTop: 100
-      }
-    };
-    wrapper.vm.handleScroll(event);
+    Object.defineProperty(window, 'pageYOffset', {
+      value: 100
+    });
+    wrapper.vm.handleScroll();
     expect(wrapper.vm.$data.headerLogoTextDisplayState).toBe(true);
   });
 
   it('headerLogoTextDisplayState should to be equal false', () => {
-    const event = {
-      target: {
-        scrollTop: 0
-      }
-    };
-    wrapper.vm.handleScroll(event);
+    Object.defineProperty(window, 'pageYOffset', {
+      value: 99
+    });
+    wrapper.vm.handleScroll();
     expect(wrapper.vm.$data.headerLogoTextDisplayState).toBe(false);
   });
 });

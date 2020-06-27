@@ -1,6 +1,8 @@
 <template>
   <modal :classes="['modal_container']" height="auto" :name="$props.name" @closed="hideModal">
-    <img src="@/assets/img/common/close-icon.svg" class="close-modal" alt="Close modal" @click="hideModal()">
+    <button @click="onClose" class="close-modal">
+      <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
+    </button>
     <perfect-scrollbar class="modal_scrollbar custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
       <slot />
     </perfect-scrollbar>
@@ -42,8 +44,10 @@ export default {
   methods: {
     hideModal() {
       this.isEmailSent = false;
-      this.$modal.hide(this.$props.name);
       this.$nuxt.$emit('tooglePageScrollBar', false);
+    },
+    onClose() {
+      this.$modal.hide(this.$props.name);
     }
   }
 };
@@ -77,10 +81,12 @@ export default {
 
   .close-modal {
     position: absolute;
-    top: 30px;
-    right: 19px;
+    top: 25px;
+    right: 12px;
     cursor: pointer;
     z-index: 1;
+    background-color: transparent;
+    border: 0;
   }
 
   @media only screen and (max-width: 640px) {

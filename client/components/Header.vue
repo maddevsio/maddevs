@@ -8,7 +8,7 @@
               <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
             </router-link>
             <nav class="header__header-routes_links">
-              <router-link to="/">About</router-link>
+              <router-link exact to="/">About</router-link>
               <router-link to="/services">Services</router-link>
               <router-link to="/projects">Projects</router-link>
               <router-link to="/careers">Careers</router-link>
@@ -88,26 +88,21 @@ export default {
     */
     this.selectedPhone = this.phones[1];
   },
-  mounted() {
-    const scrollbar = document.getElementById('PageScrollBar');
-    if (scrollbar) {
-      scrollbar.addEventListener('scroll', this.handleScroll);
-    }
-  },
-  destroyed() {
-    const scrollbar = document.getElementById('PageScrollBar');
-    if (scrollbar) {
-      scrollbar.removeEventListener('scroll', this.handleScroll);
-    }
-  },
   watch: {
     '$route'() {
       this.headerLogoTextDisplayState = false;
     }
   },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+    this.handleScroll();
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
   methods: {
-    handleScroll(e) {
-      if(e.target.scrollTop >= 100)
+    handleScroll() {
+      if(window.pageYOffset >= 100)
         this.headerLogoTextDisplayState = true;
       else 
         this.headerLogoTextDisplayState = false;
@@ -168,7 +163,7 @@ export default {
         }
       }
 
-      .nuxt-link-exact-active {
+      .nuxt-link-active {
         color: $text-color--red;
 
         &::after {
