@@ -18,19 +18,19 @@
         </div>
       </div>
       <div class="quick-project_start__button-wrap">
-        <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="red-text-and-border"/>
+        <UIButtonModalTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" :buttonIsRed="buttonIsRed" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import buttonTrigger from '@/components/ui/button-trigger';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 
 export default {
   name: 'QuickProjectStart',
   components: {
-    buttonTrigger
+    UIButtonModalTrigger
   },
   data() {
     return {
@@ -56,8 +56,9 @@ export default {
           paragraph: 'You will get to know our team and we will organise the process.'
         }
       ],
+      modalWindowName: 'order-project-from-us-modal',
       buttonInnerText: 'Order a project from us',
-      modalWindowName: 'order-project-from-us-modal'
+      buttonIsRed: true
     };
   }
 };

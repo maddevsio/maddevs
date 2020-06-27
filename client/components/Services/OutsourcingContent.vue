@@ -21,12 +21,17 @@
       </div>
       <p class="it-outsourcing__paragraph paragraph">{{ paragraph }}</p>
     </div>
-    <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="it-outsourcing__button-trigger"/>
+    <UIButtonModalTrigger 
+      :buttonInnerText="buttonInnerText"
+      :buttonIsRed="buttonIsRed"
+      :modalWindowName="modalWindowName" 
+      class="it-outsourcing__ui-button-modal-trigger"
+    />
   </div>
 </template>
 
 <script>
-import buttonTrigger from '@/components/ui/button-trigger';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 
 export default {
   name: 'OutsourcingContent',
@@ -53,7 +58,12 @@ export default {
     }
   },
   components: {
-    buttonTrigger
+    UIButtonModalTrigger
+  },
+  data() {
+    return {
+      buttonIsRed: false
+    };
   }
 };
 
@@ -63,7 +73,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .it-outsourcing {
-    &__button-trigger {
+    &__ui-button-modal-trigger {
       width: 100%;
     }
 
@@ -88,7 +98,7 @@ export default {
     &__title,
     &__sub-title,
     &__paragraph,
-    &__button-trigger {
+    &__ui-button-modal-trigger {
       color: $text-color--grey;
     }
 
@@ -123,12 +133,12 @@ export default {
       .it-outsourcing__title,
       .it-outsourcing__paragraph,
       .it-outsourcing__sub-title,
-      .it-outsourcing__button-trigger {
+      .it-outsourcing__ui-button-modal-trigger {
         color: $text-color--grey-light;
         transition: 0.3s;
       }
 
-      .it-outsourcing__button-trigger {
+      .it-outsourcing__ui-button-modal-trigger {
         border-color: $border-color--grey-light-outsourcing-section;
       }
 

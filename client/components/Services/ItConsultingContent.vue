@@ -5,12 +5,16 @@
       <h4 class="it-consulting__sub-title sub-title">{{ subTitle }}</h4>
       <p class="it-consulting__paragraph paragraph">{{ paragraph }}</p>
     </div>
-    <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName"/>
+    <UIButtonModalTrigger 
+      :buttonInnerText="buttonInnerText"
+      :buttonIsRed="buttonIsRed"
+      :modalWindowName="modalWindowName"
+    />
   </div>
 </template>
 
 <script>
-import buttonTrigger from '@/components/ui/button-trigger';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 
 export default {
   name: 'ItConsultingContent',
@@ -37,7 +41,12 @@ export default {
     }
   },
   components: {
-    buttonTrigger
+    UIButtonModalTrigger
+  },
+  data() {
+    return {
+      buttonIsRed: false
+    };
   }
 };
 </script>

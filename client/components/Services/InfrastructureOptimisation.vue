@@ -19,20 +19,24 @@
             :paragraph="upToSaving.paragraph"
           />
         </div>
-        <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName"/>
+        <UIButtonModalTrigger 
+          :buttonInnerText="buttonInnerText"
+          :buttonIsRed="buttonIsRed"
+          :modalWindowName="modalWindowName"
+        />
     </div>
   </section>
 </template>
 
 <script>
 import InfrastructureContent from '@/components/Services/InfrastructureContent';
-import buttonTrigger from '@/components/ui/button-trigger';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 
 export default {
   name: 'InfrastructureOptimisation',
   components: {
     InfrastructureContent,
-    buttonTrigger
+    UIButtonModalTrigger
   },
   data() {
     return {
@@ -47,6 +51,7 @@ export default {
         paragraph: 'Our fire brigade can help you optimise resource consumption like we\'ve done for 75% of our customers. We’ll reconfigure and disable every option or service that is not necessary.'
       },
       buttonInnerText: 'Get an infrastructure audit',
+      buttonIsRed: false,
       modalWindowName: 'infrastructure-modal'
     };
   }

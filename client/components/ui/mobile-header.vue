@@ -20,7 +20,12 @@
 					<router-link to="/careers">Careers</router-link>
 					<a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
 				</nav>
-				<buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="mobile-header__modal-trigger-btn red-text-and-border" />
+				<UIButtonModalTrigger 
+					:buttonInnerText="buttonInnerText" 
+					:buttonIsRed="buttonIsRed"
+					:modalWindowName="modalWindowName"
+					class="mobile-header__modal-trigger-btn" 
+				/>
 				<div class="mobile-header__contacts">
 					<footerContacts />
 				</div>
@@ -33,20 +38,21 @@
 </template>
 
 <script>
-import buttonTrigger from '@/components/ui/button-trigger';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 import footerContacts from '@/components/Footer/footer-contacts';
 import footerSocialNetworkBar from '@/components/Footer/footer-social-network';
 
 export default {
   name: 'mobile-header',
   components: {
-    buttonTrigger,
+    UIButtonModalTrigger,
     footerContacts,
     footerSocialNetworkBar
   },
   data() {
     return {
       buttonInnerText: 'Contact me',
+      buttonIsRed: true,
       mobileHeaderIsOpen: false,
       modalWindowName: 'contact-me'
     };
