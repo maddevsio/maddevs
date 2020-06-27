@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Frontend modal renders correctly 1`] = `
+exports[`Technology stack modal renders correctly 1`] = `
 <modal-stub
   classes="modal_container"
   height="auto"
-  name="frontend-modal"
+  name="get-expert-advice"
 >
   <button
     class="close-modal"

@@ -50,7 +50,7 @@ Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n
 
 const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
-async function createApp(ssrContext, config = {}) {
+async function createApp (ssrContext) {
   const router = await createRouter(ssrContext)
 
   const store = createStore(ssrContext)
@@ -139,7 +139,7 @@ async function createApp(ssrContext, config = {}) {
     ssrContext
   })
 
-  function inject(key, value) {
+  const inject = function (key, value) {
     if (!key) {
       throw new Error('inject(key, value) has no key provided')
     }
@@ -150,10 +150,6 @@ async function createApp(ssrContext, config = {}) {
     key = '$' + key
     // Add into app
     app[key] = value
-    // Add into context
-    if (!app.context[key]) {
-      app.context[key] = value
-    }
 
     // Add into store
     store[key] = app[key]
@@ -176,9 +172,6 @@ async function createApp(ssrContext, config = {}) {
     })
   }
 
-  // Inject runtime config as $config
-  inject('config', config)
-
   if (process.client) {
     // Replace store state before plugins execution
     if (window.__NUXT__ && window.__NUXT__.state) {
@@ -186,13 +179,6 @@ async function createApp(ssrContext, config = {}) {
     }
   }
 
-  // Add enablePreview(previewData = {}) in context for plugins
-  if (process.static && process.client) {
-    app.context.enablePreview = function (previewData = {}) {
-      app.previewData = Object.assign({}, previewData)
-      inject('preview', previewData)
-    }
-  }
   // Plugin execution
 
   if (typeof nuxt_plugin_plugin_0d21699e === 'function') {
@@ -225,13 +211,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (process.client && typeof nuxt_plugin_vuejsmodal_a01fef9e === 'function') {
     await nuxt_plugin_vuejsmodal_a01fef9e(app.context, inject)
-  }
-
-  // Lock enablePreview in context
-  if (process.static && process.client) {
-    app.context.enablePreview = function () {
-      console.warn('You cannot call enablePreview() outside a plugin.')
-    }
   }
 
   // If server-side, wait for async component to be resolved first
