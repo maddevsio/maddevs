@@ -21,20 +21,24 @@
           :paragraph="TeamHeadcount.paragraph"
         />
       </div>
-      <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName"/>
+      <UIButtonModalTrigger 
+        :buttonInnerText="buttonInnerText"
+        :buttonIsRed="buttonIsRed"
+        :modalWindowName="modalWindowName"
+      />
     </div>
   </section>
 </template>
 
 <script>
 import ItConsultingContent from '@/components/Services/ItConsultingContent';
-import buttonTrigger from '@/components/ui/button-trigger';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 
 export default {
   name: 'ItConsulting',
   components: {
     ItConsultingContent,
-    buttonTrigger
+    UIButtonModalTrigger
   },
   data() {
     return {
@@ -54,7 +58,8 @@ export default {
         paragraph: 'Hire good people and get rid of underperformers. Easier said than done, right? Get assessments for the skills and seniority level of your staff. Our positively mad engineers and PMs know how to do this.'
       },
       modalWindowName: 'get-expert-advice',
-      buttonInnerText: 'Get expert advice'
+      buttonInnerText: 'Get expert advice',
+      buttonIsRed: false
     };
   }
 };

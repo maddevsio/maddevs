@@ -26,20 +26,24 @@
             :secondParagraph="mobile.secondParagraph"
           />
         </div>
-        <buttonTrigger :modalWindowName="modalWindowName" :buttonInnerText="buttonInnerText" />
+        <UIButtonModalTrigger 
+          :buttonInnerText="buttonInnerText"
+          :buttonIsRed="buttonIsRed"
+          :modalWindowName="modalWindowName"
+        />
     </div>
   </section>
 </template>
 
 <script>
 import SoftwareDevelopContent from '@/components/Services/SoftwareDevelopContent';
-import buttonTrigger from '@/components/ui/button-trigger';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 
 export default {
   name: 'SoftwareDevelopment',
   components: {
     SoftwareDevelopContent,
-    buttonTrigger
+    UIButtonModalTrigger
   },
   data() {
     return {
@@ -66,7 +70,8 @@ export default {
         buttonInnerText: 'Get mobile help'
       },
       modalWindowName: 'get-your-trusted-it-partner',
-      buttonInnerText: 'Get your trusted IT partner'
+      buttonInnerText: 'Get your trusted IT partner',
+      buttonIsRed: false
     };
   }
 };
