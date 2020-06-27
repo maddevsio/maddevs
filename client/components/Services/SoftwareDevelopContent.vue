@@ -19,16 +19,10 @@
       <FrontendIcons v-if="title === 'Frontend'"/>
       <MobileIcons v-if="title === 'Mobile'"/>
     </div>
-    <UIButtonModalTrigger 
-      :buttonInnerText="buttonInnerText"
-      :buttonIsRed="buttonIsRed"
-      :modalWindowName="modalWindowName"
-    />
   </div>
 </template>
 
 <script>
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 import BackendIcons from '@/components/IconsGroup/BackendIcons';
 import FrontendIcons from '@/components/IconsGroup/FrontendIcons';
 import MobileIcons from '@/components/IconsGroup/MobileIcons';
@@ -55,18 +49,9 @@ export default {
     thirdParagraph: {
       type: String,
       default: 'Third Paragraph'
-    },
-    buttonInnerText: {
-      type: String,
-      default: 'Button Inner Text'
-    },
-    modalWindowName: {
-      type: String,
-      default: 'Modal Window Name'
     }
   },
   components: {
-    UIButtonModalTrigger,
     BackendIcons,
     FrontendIcons,
     MobileIcons
@@ -93,11 +78,6 @@ export default {
 
     &:last-child {
       padding-right: 0;
-    }
-
-    button {
-      width: 100%;
-      color: $text-color--grey;
     }
 
     &__content-item_wrapper {

@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Technology stack modal renders correctly 1`] = `
+exports[`Get your trusted it partner modal renders correctly 1`] = `
 <modal-stub
   classes="modal_container"
   height="auto"
-  name="technology-stack-modal"
+  name="get-your-trusted-it-partner"
 >
   <img
     alt="Close modal"

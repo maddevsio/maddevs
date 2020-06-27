@@ -5,17 +5,13 @@
     <Footer />
     <client-only>
       <ContactMeModal />
-      <BackendModal />
-      <FrontendModal />
-      <MobileModal />
       <TeamsModal />
       <IndividualsModal />
       <InfrastructureAuditModal />
       <GetCaseStudiesModal />
       <OrderProjectFromUsModal />
-      <TechnologyStackModal />
-      <ProcessAuditModal />
-      <TeamHeadcountModal />
+      <GetYourTrustedItPartnerModal />
+      <GetExpertAdvice />
     </client-only>
   </perfect-scrollbar>
 </template>
@@ -24,17 +20,13 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ContactMeModal from '@/components/Modals/contact-me-modal';
-import BackendModal from '@/components/Modals/backend-modal';
-import FrontendModal from '@/components/Modals/frontend-modal';
-import MobileModal from '@/components/Modals/mobile-modal';
 import TeamsModal from '@/components/Modals/teams-modal';
 import IndividualsModal from '@/components/Modals/individuals-modal';
 import InfrastructureAuditModal from '@/components/Modals/infrastructure-audit-modal';
 import GetCaseStudiesModal from '@/components/Modals/get-case-studies-modal';
 import OrderProjectFromUsModal from '@/components/Modals/order-project-from-us-modal';
-import TechnologyStackModal from '@/components/Modals/technology-stack-modal';
-import ProcessAuditModal from '@/components/Modals/process-audit-modal';
-import TeamHeadcountModal from '@/components/Modals/team-headcount-modal';
+import GetYourTrustedItPartnerModal from '@/components/Modals/get-your-trusted-it-partner-modal';
+import GetExpertAdvice from '@/components/Modals/get-expert-advice-modal';
 
 export default {
   name: 'Default',
@@ -42,17 +34,13 @@ export default {
     Header,
     Footer,
     ContactMeModal,
-    BackendModal,
-    FrontendModal,
-    MobileModal,
     TeamsModal,
     IndividualsModal,
     InfrastructureAuditModal,
     GetCaseStudiesModal,
     OrderProjectFromUsModal,
-    TechnologyStackModal,
-    ProcessAuditModal,
-    TeamHeadcountModal
+    GetYourTrustedItPartnerModal,
+    GetExpertAdvice
   },
   created() {
     this.$nuxt.$on('tooglePageScrollBar', opened => {
