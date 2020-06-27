@@ -23,7 +23,8 @@
     </div>
     <UIButtonModalTrigger 
       :buttonInnerText="buttonInnerText"
-      :buttonIsRed="buttonIsRed"
+      :isRed="isRed"
+      :isBlack="isBlack"
       :modalWindowName="modalWindowName" 
       class="it-outsourcing__ui-button-modal-trigger"
     />
@@ -62,7 +63,8 @@ export default {
   },
   data() {
     return {
-      buttonIsRed: false
+      isRed: false,
+      isBlack: false
     };
   }
 };

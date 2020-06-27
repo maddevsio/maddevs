@@ -42,7 +42,12 @@
               </div>
               <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
             </div>
-            <UIButtonModalTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" :buttonIsRed="buttonIsRed" />
+            <UIButtonModalTrigger 
+              :buttonInnerText="buttonInnerText" 
+              :modalWindowName="modalWindowName" 
+              :isRed="isRed"
+              :isBlack="isBlack"
+            />
           </div>
         </div>
       </div>
@@ -66,7 +71,8 @@ export default {
   data() {
     return {
       buttonInnerText: 'Contact me',
-      buttonIsRed: true,
+      isRed: true,
+      isBlack: false,
       phones: [
         {
           phoneNumber: '+44 20 3984 8555',

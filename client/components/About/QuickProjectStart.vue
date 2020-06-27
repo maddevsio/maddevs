@@ -18,7 +18,12 @@
         </div>
       </div>
       <div class="quick-project_start__button-wrap">
-        <UIButtonModalTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" :buttonIsRed="buttonIsRed" />
+        <UIButtonModalTrigger 
+          :buttonInnerText="buttonInnerText" 
+          :modalWindowName="modalWindowName" 
+          :isRed="isRed"
+          :isBlack="isBlack"
+        />
       </div>
     </div>
   </section>
@@ -58,7 +63,8 @@ export default {
       ],
       modalWindowName: 'order-project-from-us-modal',
       buttonInnerText: 'Order a project from us',
-      buttonIsRed: true
+      isRed: true,
+      isBlack: false
     };
   }
 };

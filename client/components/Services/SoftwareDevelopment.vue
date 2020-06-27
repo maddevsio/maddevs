@@ -28,7 +28,7 @@
         </div>
         <UIButtonModalTrigger 
           :buttonInnerText="buttonInnerText"
-          :buttonIsRed="buttonIsRed"
+          :isRed="isRed"
           :modalWindowName="modalWindowName"
         />
     </div>
@@ -71,7 +71,7 @@ export default {
       },
       modalWindowName: 'get-your-trusted-it-partner',
       buttonInnerText: 'Get your trusted IT partner',
-      buttonIsRed: false
+      isRed: false
     };
   }
 };

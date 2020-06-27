@@ -23,7 +23,8 @@
       </div>
       <UIButtonModalTrigger 
         :buttonInnerText="buttonInnerText"
-        :buttonIsRed="buttonIsRed"
+        :isRed="isRed"
+        :isBlack="isBlack"
         :modalWindowName="modalWindowName"
       />
     </div>
@@ -59,7 +60,8 @@ export default {
       },
       modalWindowName: 'get-expert-advice',
       buttonInnerText: 'Get expert advice',
-      buttonIsRed: false
+      isRed: false,
+      isBlack: true
     };
   }
 };

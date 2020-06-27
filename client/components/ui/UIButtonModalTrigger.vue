@@ -1,12 +1,22 @@
 <template>
-  <button class="ui-button-modal-trigger" :class="{'ui-button-modal-trigger--red' : buttonIsRed}" @click="showModal()">
+  <button 
+    class="ui-button-modal-trigger" 
+    :class="{'ui-button-modal-trigger--red':isRed, 'ui-button-modal-trigger--black':isBlack}"
+    @click="showModal()"
+    v-WaveAnimation
+  >
     {{ buttonInnerText }}
   </button>
 </template>
 
 <script>
+import WaveAnimation from '@/directives/WaveAnimation';
+
 export default {
   name: 'UIButtonModalTrigger',
+  directives: {
+    WaveAnimation
+  },
   props: {
     buttonInnerText: {
       type: String,
@@ -16,7 +26,11 @@ export default {
       type: String,
       default: ''
     },
-    buttonIsRed: {
+    isRed: {
+      type: Boolean,
+      default: false
+    },
+    isBlack: {
       type: Boolean,
       default: false
     }
@@ -42,10 +56,36 @@ export default {
     font-size: 18px;
     font-family: 'Hoves-Regular';
     cursor: pointer;
+    transition: 0.2s;
 
     &--red {
       color: $text-color--red;
       border: 1px solid $border-color--red;
+
+      &:hover {
+        background-color: $bgcolor--red;
+        color: $text-color--white;
+      }
+
+      &:active {
+        background-color: $button-active--red;
+        border-color: $button-active-border--red;
+      }
+    }
+
+    &--black {
+      color: $text-color--black;
+      border: 1px solid $border-color--black;
+
+      &:hover {
+        background-color: $bgcolor--black;
+        color: $text-color--white;
+      }
+
+      &:active {
+        background-color: $button-active--red;
+        border-color: $button-active-border--red;
+      }
     }
   }
 </style>

@@ -21,7 +21,8 @@
       <UIButtonModalTrigger
         :buttonInnerText="buttonInnerText"
         :modalWindowName="modalWindowName"
-        :buttonIsRed="buttonIsRed"
+        :isRed="isRed"
+        :isBlack="isBlack"
       />
     </div>
   </section>
@@ -40,7 +41,8 @@ export default {
   data() {
     return {
       buttonInnerText: 'Order a project from us',
-      buttonIsRed: true,
+      isRed: true,
+      isBlack: false,
       modalWindowName: 'order-project-from-us-modal',
       customers: [
         {

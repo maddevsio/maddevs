@@ -55,11 +55,6 @@ export default {
     BackendIcons,
     FrontendIcons,
     MobileIcons
-  },
-  data() {
-    return {
-      buttonIsRed: false
-    };
   }
 };
 </script>
