@@ -424,6 +424,12 @@ export default {
         font-size: 93px;
         letter-spacing: -0.03em;
       }
+
+      &__metric-item {
+        &:nth-of-type(3) {
+          grid-row: 3;
+        }
+      }
     }
   }
 
