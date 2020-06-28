@@ -1,6 +1,7 @@
 <template>
   <div class="file-input">
     <input
+      ref="fileInput"
       class="file-input__uploader"
       type="file"
       @change="onFileChanged"
@@ -40,6 +41,7 @@ export default {
     },
     reset() {
       this.selectedFile = null;
+      this.$refs.fileInput.value = null;
     }
   },
   computed: {

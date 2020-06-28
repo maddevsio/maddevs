@@ -5,13 +5,10 @@
       <h4 class="it-consulting__sub-title sub-title">{{ subTitle }}</h4>
       <p class="it-consulting__paragraph paragraph">{{ paragraph }}</p>
     </div>
-    <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName"/>
   </div>
 </template>
 
 <script>
-import buttonTrigger from '@/components/ui/button-trigger';
-
 export default {
   name: 'ItConsultingContent',
   props: {
@@ -26,18 +23,7 @@ export default {
     paragraph: {
       type: String,
       default: 'Paragraph'
-    },
-    buttonInnerText: {
-      type: String,
-      default: 'Button Inner Text'
-    },
-    modalWindowName: {
-      type: String,
-      default: 'Modal Window Name'
     }
-  },
-  components: {
-    buttonTrigger
   }
 };
 </script>
@@ -46,12 +32,6 @@ export default {
   @import '../../assets/styles/vars';
 
   .it-consulting {
-    button {
-      width: 100%;
-      color: $text-color--black;
-      border-color: $border-color--black;
-    }
-
 		&__content-item_wrapper {
 			color: $text-color--black;
     }

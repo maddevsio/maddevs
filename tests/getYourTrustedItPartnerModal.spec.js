@@ -1,13 +1,13 @@
 import {
   mount
 } from '@vue/test-utils';
-import mobileModal from '@/components/Modals/mobile-modal';
+import getYourTrustedItPartnerModal from '@/components/Modals/get-your-trusted-it-partner-modal';
 
-describe('Frontend modal', () => {
+describe('Get your trusted it partner modal', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(mobileModal, {
+    wrapper = mount(getYourTrustedItPartnerModal, {
       stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar']
     });
   });
@@ -23,20 +23,20 @@ describe('Frontend modal', () => {
   // --------------------- //
 
   test('sets the correct default data', () => {
-    expect(typeof mobileModal.data).toBe('function');
-    const defaultData = mobileModal.data();
+    expect(typeof getYourTrustedItPartnerModal.data).toBe('function');
+    const defaultData = getYourTrustedItPartnerModal.data();
     expect(
       defaultData.agreeWithPrivacyPolicy &&
       defaultData.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
-    expect(defaultData.inputId).toEqual('mobile');
+    expect(defaultData.inputId).toEqual('get-your-trusted-it-partner');
   });
 
   test('has a functions', () => {
     expect(
-      typeof mobileModal.methods.getPrivacyCheckboxState && 
-      typeof mobileModal.methods.getDiscountOffersCheckboxState &&
-      typeof mobileModal.methods.autosize
+      typeof getYourTrustedItPartnerModal.methods.getPrivacyCheckboxState && 
+      typeof getYourTrustedItPartnerModal.methods.getDiscountOffersCheckboxState &&
+      typeof getYourTrustedItPartnerModal.methods.autosize
     ).toBe('function');
   });
 

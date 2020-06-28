@@ -29,26 +29,44 @@ router.post('/send-email', (req, res) => {
       const answerGetter = data => {
         res.json(data);
       };
-      const email = {
-        'subject': 'Test',
-        'template': {
-          'id': req.body.templateId, // Required
-          'variables': req.body.variables
-        },
-        'from': {
-          'name': 'Mad Devs marketing',
-          'email': 'marketing@maddevs.io'
-        },
-        'to': [{
-          'name': 'Mad Devs team',
-          'email': 'denisoed@gmail.com'
-        }],
-        'attachments_binary': { [req.body.attachment.name]: req.body.attachment.base64 }
-      };
+      let email = {};
+      if (req.body && req.body.attachment) {
+        email = {
+          'subject': 'Marketing',
+          'template': {
+            'id': req.body.templateId, // Required
+            'variables': req.body.variables
+          },
+          'from': {
+            'name': 'Mad Devs marketing',
+            'email': 'marketing@maddevs.io'
+          },
+          'to': [{
+            'name': 'Mad Devs team',
+            'email': 'denisoed@gmail.com'
+          }],
+          'attachments_binary': { [req.body.attachment.name]: req.body.attachment.base64 }
+        };
+      } else {
+        email = {
+          'subject': 'Marketing',
+          'template': {
+            'id': req.body.templateId, // Required
+            'variables': req.body.variables
+          },
+          'from': {
+            'name': 'Mad Devs marketing',
+            'email': 'marketing@maddevs.io'
+          },
+          'to': [{
+            'name': 'Mad Devs team',
+            'email': 'denisoed@gmail.com'
+          }]
+        };
+      }
       sendpulse.smtpSendMail(answerGetter, email);
     });
   }
 });
-
 
 module.exports = router;

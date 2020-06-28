@@ -15,7 +15,7 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="phone|max:50" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name">Phone number</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
+            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
           <RadioList 
@@ -66,11 +66,11 @@ export default {
     fullName: null,
     email: null,
     phoneNumber: null,
+    selectedTeamSize: null,
     projectDescription: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
     sectionIsRequired: true,
-    selectedTeamSize: null,
     inputId: 'teams',
     fieldName: 'Expected team size',
     emitMethodName: 'getTeamSize',
@@ -87,7 +87,8 @@ export default {
         id: 'more-than-ten',
         text: 'More than 10'
       }
-    ]
+    ],
+    onSubmit: false
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -104,20 +105,39 @@ export default {
       e.target.style.height = `${e.target.scrollHeight}px`;
     },
     sendForm(isValid) {
-      if (isValid === true) {
+      if (isValid === true && !this.onSubmit) {
+        this.onSubmit = true;
         const form = {
           templateId: 304637, // Required
           variables: {
-            fullName: this.fullName,
-            selectedTeamSize: this.selectedTeamSize,
-            email: this.email,
-            phoneNumber: this.phoneNumber,
+            fullName: this.fullName || '',
+            selectedTeamSize: this.selectedTeamSize || '',
+            projectDescription: this.projectDescription || '',
+            email: this.email || '',
+            phoneNumber: this.phoneNumber || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
           }
         };
-        this.$nuxt.$emit(this.modalName, form);
+        this.$store.dispatch('sendEmail', form).then(res => {
+          this.onSubmit = false;
+          this.resetForm();
+          if (res.status === 200) {
+            this.$nuxt.$emit(this.modalName, true);
+          } else {
+            this.$nuxt.$emit(this.modalName, false);
+          }
+        });
       }
+    },
+    resetForm() {
+      this.fullName = null;
+      this.email = null;
+      this.phoneNumber = null;
+      this.selectedTeamSize = null;
+      this.projectDescription = null;
+      this.agreeWithPrivacyPolicy = false;
+      this.agreeToGetMadDevsDiscountOffers = false;
     }
   }
 };

@@ -15,12 +15,12 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="phone|max:50" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name">Phone number</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
+            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
-          <ValidationProvider class="modal-field-item field-item" rules="max:500|required" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name required">Your question on tech stack​</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="Which database should I use to create a portal for customer reviews?" v-model="techStackQuestion" @keydown="autosize($event)" rows="1"/>
+          <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
+            <p class="modal-field-name field-name">Your questions on IT consulting​</p>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" v-model="questionsOnItConsulting" @keydown="autosize($event)" rows="1"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
@@ -30,7 +30,7 @@
           :inputId="inputId"
         />
         <UIButton
-          name="Get advice on tech stack"
+          name="Get expert advice"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
         />
@@ -45,21 +45,22 @@ import ModalContainer from '@/containers/ModalContainer';
 import UIButton from '@/components/ui/UIButton';
 
 export default {
-  name: 'TechnologyStack',
+  name: 'GetExpertAdvice',
   components: {
     FormCheckboxes,
     ModalContainer,
     UIButton
   },
   data: () => ({
-    modalName: 'technology-stack-modal',
+    modalName: 'get-expert-advice',
     fullName: null,
     email: null,
     phoneNumber: null,
-    techStackQuestion: null,
+    questionsOnItConsulting: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'technology-stack'
+    inputId: 'get-expert-advice',
+    onSubmit: false
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -73,57 +74,38 @@ export default {
       e.target.style.height = `${e.target.scrollHeight}px`;
     },
     sendForm(isValid) {
-      if (isValid === true) {
+      if (isValid === true && !this.onSubmit) {
+        this.onSubmit = true;
         const form = {
           templateId: 304641, // Required
           variables: {
-            fullName: this.fullName,
-            techStackQuestion: this.techStackQuestion,
-            email: this.email,
-            phoneNumber: this.phoneNumber,
+            fullName: this.fullName || '',
+            questionsOnItConsulting: this.questionsOnItConsulting || '',
+            email: this.email || '',
+            phoneNumber: this.phoneNumber || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
           }
         };
-        this.$nuxt.$emit(this.modalName, form);
+        this.$store.dispatch('sendEmail', form).then(res => {
+          this.onSubmit = false;
+          this.resetForm();
+          if (res.status === 200) {
+            this.$nuxt.$emit(this.modalName, true);
+          } else {
+            this.$nuxt.$emit(this.modalName, false);
+          }
+        });
       }
+    },
+    resetForm() {
+      this.fullName = null;
+      this.email = null;
+      this.phoneNumber = null;
+      this.questionsOnItConsulting = null;
+      this.agreeWithPrivacyPolicy = false;
+      this.agreeToGetMadDevsDiscountOffers = false;
     }
   }
 };
 </script>
-
-<style lang="scss" scoped>
-  .form {
-    textarea {
-      height: 79px;
-      min-height: 79px;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-		.form {
-      textarea {
-        height: 60px;
-        min-height: 60px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 565px) {
-		.form {
-      textarea {
-        height: 79px;
-        min-height: 79px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 330px) {
-		.form {
-      textarea {
-        height: 102px;
-        min-height: 102px;
-      }
-    }
-  }
-</style>

@@ -15,24 +15,24 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="phone|max:50" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name">Phone number</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
+            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
-          <ValidationProvider class="modal-field-item field-item" rules="max:500|required" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name required">Your question on work process</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="How can I get more things done by implementing pipelines?" v-model="workProcessQuestion" @keydown="autosize($event)" rows="1"/>
+          <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
+            <p class="modal-field-name field-name">Expertise you are interested in</p>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need assistance with..." v-model="needAssistanceWith" @keydown="autosize($event)" rows="1"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
         <FormCheckboxes
-          @getPrivacyCheckboxState="getPrivacyCheckboxState"
-          @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
+          v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
+          v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
           :inputId="inputId"
         />
         <UIButton
-          name="Get advice on process"
-          :disabled="invalid || !agreeWithPrivacyPolicy"
-          @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+          name="Get your trusted IT partner"
+          :disabled="invalid"
+          @click="sendForm(!invalid)"
         />
       </div>
     </ValidationObserver>
@@ -40,26 +40,27 @@
 </template>
 
 <script>
-import FormCheckboxes from '@/components/ui/form-checkboxes';
 import ModalContainer from '@/containers/ModalContainer';
+import FormCheckboxes from '@/components/ui/form-checkboxes';
 import UIButton from '@/components/ui/UIButton';
 
 export default {
-  name: 'process-audit',
+  name: 'get-your-trusted-it-partner',
   components: {
-    FormCheckboxes,
     ModalContainer,
+    FormCheckboxes,
     UIButton
   },
   data: () => ({
-    modalName: 'process-audit-modal',
+    modalName: 'get-your-trusted-it-partner',
     fullName: null,
     email: null,
     phoneNumber: null,
-    workProcessQuestion: null,
+    needAssistanceWith: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'process-audit'
+    inputId: 'get-your-trusted-it-partner',
+    onSubmit: false
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -73,48 +74,38 @@ export default {
       e.target.style.height = `${e.target.scrollHeight}px`;
     },
     sendForm(isValid) {
-      if (isValid === true) {
+      if (isValid === true && !this.onSubmit) {
+        this.onSubmit = true;
         const form = {
-          templateId: 304634, // Required
+          templateId: 304629, // Required
           variables: {
-            fullName: this.fullName,
-            workProcessQuestion: this.workProcessQuestion,
-            email: this.email,
-            phoneNumber: this.phoneNumber,
+            fullName: this.fullName || '',
+            email: this.email || '',
+            phoneNumber: this.phoneNumber || '',
+            needAssistanceWith: this.needAssistanceWith || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers  ? 'Yes' : 'No'
           }
         };
-        this.$nuxt.$emit(this.modalName, form);
+        this.$store.dispatch('sendEmail', form).then(res => {
+          this.onSubmit = false;
+          this.resetForm();
+          if (res.status === 200) {
+            this.$nuxt.$emit(this.modalName, true);
+          } else {
+            this.$nuxt.$emit(this.modalName, false);
+          }
+        });
       }
+    },
+    resetForm() {
+      this.fullName = null;
+      this.email = null;
+      this.phoneNumber = null;
+      this.needAssistanceWith = null;
+      this.agreeWithPrivacyPolicy = false;
+      this.agreeToGetMadDevsDiscountOffers = false;
     }
   }
 };
 </script>
-
-<style lang="scss" scoped>
-  .form {
-    textarea {
-      height: 79px;
-      min-height: 79px;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-		.form {
-      textarea {
-        height: 60px;
-        min-height: 60px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-		.form {
-      textarea {
-        height: 79px;
-        min-height: 79px;
-      }
-    }
-  }
-</style>

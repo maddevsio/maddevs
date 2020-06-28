@@ -39,6 +39,7 @@ export default {
   .footer-social-network {
 		display: flex;
 		align-items: center;
+		margin-left: auto;
 
 		&__social-newtork_link {
 			padding-right: 35px;
@@ -52,6 +53,7 @@ export default {
 	@media only screen and (max-width: 1420px) {
 		.footer-social-network {
 			justify-content: center;
+			margin-left: 0;
 		}
 	}
 

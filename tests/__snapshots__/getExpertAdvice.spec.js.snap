@@ -4,13 +4,16 @@ exports[`Technology stack modal renders correctly 1`] = `
 <modal-stub
   classes="modal_container"
   height="auto"
-  name="technology-stack-modal"
+  name="get-expert-advice"
 >
-  <img
-    alt="Close modal"
+  <button
     class="close-modal"
-    src="@/assets/img/common/close-icon.svg"
-  />
+  >
+    <img
+      alt="Close modal"
+      src="@/assets/img/common/close-icon.svg"
+    />
+  </button>
    
   <perfect-scrollbar-stub
     class="modal_scrollbar custom-scrollbar"

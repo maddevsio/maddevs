@@ -15,14 +15,13 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="phone|max:50" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name">Phone number</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 (23X) XXX-XXXX" v-model="phoneNumber">
+            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
-          <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name required">Expertise you are interested in</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="React development, Heroku Postgres, etc" v-model="interestedExpertise">
-            <span class="modal-error-text error-text">{{ errors[0] }}</span>
-          </ValidationProvider>
+          <div class="modal-field-item field-item">
+            <p class="modal-field-name field-name">Expertise you are interested in</p>
+            <input type="text" class="modal-entry-field entry-field" placeholder="React development, Heroku Postgres, etc" v-model="interestedExpertise">
+          </div>
           <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name">Project description</p>
             <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescription" @keydown="autosize($event)" rows="1"/>
@@ -65,7 +64,8 @@ export default {
     interestedExpertise: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'individuals'
+    inputId: 'individuals',
+    onSubmit: false
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -79,21 +79,39 @@ export default {
       e.target.style.height = `${e.target.scrollHeight}px`;
     },
     sendForm(isValid) {
-      if (isValid === true) {
+      if (isValid === true && !this.onSubmit) {
+        this.onSubmit = true;
         const form = {
           templateId: 304625, // Required
           variables: {
-            fullName: this.fullName,
-            company: this.company,
-            email: this.email,
-            phoneNumber: this.phoneNumber,
-            projectDescription: this.projectDescription,
+            fullName: this.fullName || '',
+            email: this.email || '',
+            phoneNumber: this.phoneNumber || '',
+            interestedExpertise: this.interestedExpertise || '',
+            projectDescription: this.projectDescription || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
           }
         };
-        this.$nuxt.$emit(this.modalName, form);
+        this.$store.dispatch('sendEmail', form).then(res => {
+          this.onSubmit = false;
+          this.resetForm();
+          if (res.status === 200) {
+            this.$nuxt.$emit(this.modalName, true);
+          } else {
+            this.$nuxt.$emit(this.modalName, false);
+          }
+        });
       }
+    },
+    resetForm() {
+      this.fullName = null;
+      this.email = null;
+      this.phoneNumber = null;
+      this.projectDescription = null;
+      this.interestedExpertise = null;
+      this.agreeWithPrivacyPolicy = false;
+      this.agreeToGetMadDevsDiscountOffers = false;
     }
   }
 };
