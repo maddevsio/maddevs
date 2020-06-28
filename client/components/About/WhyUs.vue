@@ -345,10 +345,11 @@ export default {
         line-height: 110%;
         letter-spacing: -2px;
         max-width: 100%;
+        margin-bottom: -37px;
       }
 
       &__mad-devs_metrics-sub-title {
-        padding-bottom: 50px;
+        padding-bottom: 85px;
       }
 
       &__item_description {
@@ -364,6 +365,10 @@ export default {
         grid-column-gap: 90px;
         margin-top: 0;
         grid-row-gap: 41px;
+      }
+
+      &__rates-item {
+        padding-top: 76px;
       }
 
       &__rates-number {
@@ -386,10 +391,12 @@ export default {
 
       &__sub-title {
         font-size: 47px;
+        margin-bottom: -17px;
       }
 
       &__mad-devs_metrics-sub-title {
-        padding-bottom: 23px;
+        padding-bottom: 0;
+        margin-bottom: 23px;
       }
 
       &__item_description {
@@ -405,7 +412,7 @@ export default {
       }
 
       &__rates-item {
-        padding-top: 34px;
+        padding-top: 65px;
       }
 
       &__rates-number {
@@ -417,7 +424,6 @@ export default {
 
   @media only screen and (max-width: 760px) {
     .why-us {
-
       &__main-title {
         font-size: 140px;
         line-height: 80px;
