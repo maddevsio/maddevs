@@ -426,7 +426,6 @@ export default {
     .why-us {
       &__main-title {
         font-size: 140px;
-        line-height: 80px;
       }
     }
   }
@@ -435,6 +434,10 @@ export default {
     .why-us {
       &__rates-list {
         flex-direction: column;
+      }
+
+      &__statistics-wrap {
+        margin-top: 28px;
       }
 
       &__rates-item {
@@ -454,6 +457,10 @@ export default {
           p {
             max-width: 120px;
           }
+        }
+
+        &:last-child {
+          padding: 34px 60px 0 0;
         }
       }
 
@@ -504,9 +511,8 @@ export default {
   @media only screen and (max-width: 560px) {
     .why-us {
       &__main-title {
-        padding-bottom: 25px;
-        font-size: 90px;
-        line-height: 55px;
+        padding-bottom: 63px;
+        font-size: 98px;
       }
 
       &__item_description {
@@ -515,63 +521,160 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 537px) {
     .why-us {
       &__main-title {
-        padding-bottom: 50px;
-      }
-
-      &__item_description {
-        font-size: 17px;
-      }
-
-      &__rates-list {
-        padding-bottom: 76px;
-      }
-
-      &__rates-number {
-        font-size: 56px;
-        letter-spacing: -2px;
-
-        span {
-          display: block;
-          margin-top: 2px;
-          font-size: 40px;
-        }
-      }
-
-      &__sub-title {
-        font-size: 41px;
-      }
-
-      &__metrics-list {
-        grid-row-gap: 28px;
+        padding-bottom: 155px;
       }
     }
   }
 
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 510px) {
     .why-us {
-      padding-bottom: 60px;
-
       &__main-title {
-        margin-left: -15px;
-        padding-bottom: 40px;
-        font-size: 76px;
-        line-height: 47px;
+        padding-bottom: 200px;
+        font-size: 90px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 482px) {
+    .why-us {
+      &__main-title {
+        padding-bottom: 205px;
+        font-size: 90px;
+        margin-left: -25px;
       }
 
-      &__customer-rates-sub-title {
-        padding-bottom: 20px;
+      &__rates-item {
+        &#{&} {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 473px) {
+    .why-us {
+      &__main-title {
+        font-size: 85px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .why-us {
+      &__main-title {
+        font-size: 82px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    .why-us {
+      &__main-title {
+        padding-bottom: 80px;
+        text-align: center;
+        font-size: 90px;
+        margin-left: 0;
       }
 
       &__rates-list {
-        padding-bottom: 47px;
+        padding-bottom: 69px;
+      }
+
+      &__customer-rates-sub-title,
+      &__mad-devs_metrics-sub-title {
+        font-size: 41px;
+      }
+
+      &__rates-number {
+        font-size: 70px;
+        line-height: 92%;
+        letter-spacing: -2px;
+
+        span {
+          font-size: 41px;
+          line-height: 99%;
+          letter-spacing: -1px;
+        }
+      }
+
+      &__rates-item {
+        p {
+          font-size: 17px;
+          line-height: 129%;
+          letter-spacing: -1px;
+          padding-top: 0;
+        }
       }
 
       &__metric-number {
-        font-size: 28px;
+        font-size: 41px;
+        line-height: 99%;
         letter-spacing: -1px;
+      }
+      
+      &__item_description {
+        font-size: 17px;
+        line-height: 129%;
+        letter-spacing: -1px;
+        padding-top: 0;
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 420px) {
+    .why-us {
+      &__metrics-list {
+        grid-row-gap: 30px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 389px) {
+    .why-us {
+      &__main-title {
+        font-size: 86px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 376px) {
+    .why-us {
+      &__main-title {
+        font-size: 82px;
+        padding-bottom: 135px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 357px) {
+    .why-us {
+      &__main-title {
+        font-size: 79px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 352px) {
+    .why-us {
+      &__main-title {
+        font-size: 77px;
+        padding-bottom: 176px;
+      }
+
+      &__metrics-list {
+        grid-column-gap: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 337px) {
+    .why-us {
+      &__main-title {
+        font-size: 72px;
       }
     }
   }
