@@ -303,7 +303,7 @@ export default {
   @media only screen and (max-width: 1235px) {
     .why-us {
       &__main-title {
-        padding-bottom: 60px;
+        padding-bottom: 103px;
         font-size: 235px;
         letter-spacing: -1px;
         line-height: 140px;
@@ -334,6 +334,7 @@ export default {
         font-size: calc(91px + (195 - 91) * ((100vw - 320px) / (1024 - 320)));
         line-height: 67%;
         margin-left: 0;
+        padding-bottom: 57px;
       }
 
       &__rates-list {
@@ -374,6 +375,10 @@ export default {
       &__rates-number {
         letter-spacing: -5px;
         font-size: 128px;
+
+        span {
+          margin-left: 7px;
+        }
       }
     }
   }
@@ -489,6 +494,12 @@ export default {
   @media only screen and (max-width: 576px) {
     .why-us {
       padding-bottom: 105px;
+
+      &__rates-number {
+        span {
+          margin-left: 5px;
+        }
+      }
 
       &__metric-number {
         font-size: 56px;
@@ -627,8 +638,11 @@ export default {
 
   @media only screen and (max-width: 420px) {
     .why-us {
+      padding-bottom: 77px;
+
       &__metrics-list {
         grid-row-gap: 30px;
+        grid-column-gap: 25px;
       }
     }
   }
