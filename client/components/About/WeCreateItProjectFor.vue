@@ -138,7 +138,6 @@ export default {
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 83px;
       grid-row-gap: 15px;
-      padding-bottom: 60px;
     }
 
     &__country-item {
@@ -185,10 +184,6 @@ export default {
         padding-bottom: 25px;
       }
 
-      &__country-list {
-        padding-bottom: 44px;
-      }
-
       &__country-item {
         font-size: 25px;
       }
@@ -213,12 +208,15 @@ export default {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 155px;
         grid-row-gap: 8px;
-        padding-bottom: 33px;
       }
 
       &__project-item {
         font-size: 54px;
         padding-bottom: 13px;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
       }
     }
   }
@@ -245,7 +243,6 @@ export default {
 
       &__country-list {
         grid-column-gap: 86px;
-        padding-bottom: 30px;
       }
     }
   }
