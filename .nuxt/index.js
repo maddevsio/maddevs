@@ -12,8 +12,8 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_0d21699e from 'nuxt_plugin_plugin_0d21699e' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_axios_44ce91b4 from 'nuxt_plugin_axios_44ce91b4' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_plugin_de090618 from 'nuxt_plugin_plugin_de090618' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_axios_6f5a760a from 'nuxt_plugin_axios_6f5a760a' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_i18n_1fba523a from 'nuxt_plugin_i18n_1fba523a' // Source: ../client/plugins/i18n.js (mode: 'all')
 import nuxt_plugin_vuescrollto_44ce9a1c from 'nuxt_plugin_vuescrollto_44ce9a1c' // Source: ../client/plugins/vue-scrollto.js (mode: 'all')
 import nuxt_plugin_googleanalytics_2bcb2ee2 from 'nuxt_plugin_googleanalytics_2bcb2ee2' // Source: ../client/plugins/google-analytics.js (mode: 'all')
@@ -50,7 +50,7 @@ Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n
 
 const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
-async function createApp (ssrContext) {
+async function createApp(ssrContext, config = {}) {
   const router = await createRouter(ssrContext)
 
   const store = createStore(ssrContext)
@@ -139,7 +139,7 @@ async function createApp (ssrContext) {
     ssrContext
   })
 
-  const inject = function (key, value) {
+  function inject(key, value) {
     if (!key) {
       throw new Error('inject(key, value) has no key provided')
     }
@@ -150,6 +150,10 @@ async function createApp (ssrContext) {
     key = '$' + key
     // Add into app
     app[key] = value
+    // Add into context
+    if (!app.context[key]) {
+      app.context[key] = value
+    }
 
     // Add into store
     store[key] = app[key]
@@ -172,6 +176,9 @@ async function createApp (ssrContext) {
     })
   }
 
+  // Inject runtime config as $config
+  inject('config', config)
+
   if (process.client) {
     // Replace store state before plugins execution
     if (window.__NUXT__ && window.__NUXT__.state) {
@@ -179,14 +186,21 @@ async function createApp (ssrContext) {
     }
   }
 
+  // Add enablePreview(previewData = {}) in context for plugins
+  if (process.static && process.client) {
+    app.context.enablePreview = function (previewData = {}) {
+      app.previewData = Object.assign({}, previewData)
+      inject('preview', previewData)
+    }
+  }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_0d21699e === 'function') {
-    await nuxt_plugin_plugin_0d21699e(app.context, inject)
+  if (typeof nuxt_plugin_plugin_de090618 === 'function') {
+    await nuxt_plugin_plugin_de090618(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_44ce91b4 === 'function') {
-    await nuxt_plugin_axios_44ce91b4(app.context, inject)
+  if (typeof nuxt_plugin_axios_6f5a760a === 'function') {
+    await nuxt_plugin_axios_6f5a760a(app.context, inject)
   }
 
   if (typeof nuxt_plugin_i18n_1fba523a === 'function') {
@@ -211,6 +225,13 @@ async function createApp (ssrContext) {
 
   if (process.client && typeof nuxt_plugin_vuejsmodal_a01fef9e === 'function') {
     await nuxt_plugin_vuejsmodal_a01fef9e(app.context, inject)
+  }
+
+  // Lock enablePreview in context
+  if (process.static && process.client) {
+    app.context.enablePreview = function () {
+      console.warn('You cannot call enablePreview() outside a plugin.')
+    }
   }
 
   // If server-side, wait for async component to be resolved first
