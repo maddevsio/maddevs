@@ -109,12 +109,13 @@ export default {
 
 		button {
       width: 100%;
-      height: 68px;
+      height: 65px;
 		}
 
 		textarea {
 			min-height: 64px;
 			padding: 22px 10px;
+      resize: vertical;
     }
     
     .fields-list {
@@ -128,6 +129,10 @@ export default {
 
     .entry-field {
       padding: 21px 10px;
+    }
+
+    .field-item {
+      margin-bottom: 8px;
     }
 	}
 

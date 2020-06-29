@@ -20,7 +20,7 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name">Your questions on IT consulting​</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" v-model="questionsOnItConsulting" @keydown="autosize($event)" rows="1"/>
+            <textarea type="text" class="modal-entry-field entry-field textarea" placeholder="Tell us how we can help you…" :class="classes" v-model="questionsOnItConsulting" @keydown="autosize($event)" rows="1"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>

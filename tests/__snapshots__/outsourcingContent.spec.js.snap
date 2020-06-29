@@ -39,11 +39,15 @@ exports[`Outsourcing content renders correctly 1`] = `
   </div>
    
   <button
-    class="button-default it-outsourcing__button-trigger"
+    class="ui-button-modal-trigger it-outsourcing__ui-button-modal-trigger"
+    style="position: relative; overflow: hidden;"
   >
     
   Button inner text
 
+    <div
+      class="wave"
+    />
   </button>
 </div>
 `;

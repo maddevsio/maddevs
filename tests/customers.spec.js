@@ -95,9 +95,4 @@ describe('Customers component', () => {
   test('should check existence of data', () => {
     expect(wrapper.vm.$data.customers).toStrictEqual(customers);
   });
-
-  test('should render red button', () => {
-    let redButton = wrapper.findAll('.red-text-and-border');
-    expect(redButton).toHaveLength(1);
-  });
 });

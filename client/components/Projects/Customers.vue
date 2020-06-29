@@ -18,28 +18,33 @@
           :customer="customer"
         />
       </div>
-      <buttonTrigger
+      <UIButtonModalTrigger
         :buttonInnerText="buttonInnerText"
         :modalWindowName="modalWindowName"
-        class="red-text-and-border"
+        :isRed="isRed"
+        :isBlack="isBlack"
+        :isGrey="isGrey"
       />
     </div>
   </section>
 </template>
 
 <script>
-import buttonTrigger from '@/components/ui/button-trigger';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 import Customer from '@/components/Projects/Customer';
 
 export default {
   name: 'Customers',
   components: {
-    buttonTrigger,
+    UIButtonModalTrigger,
     Customer
   },
   data() {
     return {
       buttonInnerText: 'Order a project from us',
+      isRed: true,
+      isBlack: false,
+      isGrey: false,
       modalWindowName: 'order-project-from-us-modal',
       customers: [
         {

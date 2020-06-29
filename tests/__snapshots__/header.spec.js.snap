@@ -185,11 +185,15 @@ exports[`Header renders correctly 1`] = `
           </div>
            
           <button
-            class="button-default red-text-and-border"
+            class="ui-button-modal-trigger ui-button-modal-trigger--red"
+            style="position: relative; overflow: hidden;"
           >
             
   Contact me
 
+            <div
+              class="wave"
+            />
           </button>
         </div>
       </div>
@@ -271,11 +275,15 @@ exports[`Header renders correctly 1`] = `
         </nav>
          
         <button
-          class="button-default mobile-header__modal-trigger-btn red-text-and-border"
+          class="ui-button-modal-trigger mobile-header__modal-trigger-btn ui-button-modal-trigger--red"
+          style="position: relative; overflow: hidden;"
         >
           
   Contact me
 
+          <div
+            class="wave"
+          />
         </button>
          
         <div
