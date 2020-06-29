@@ -21,7 +21,7 @@
 			<h4 class="footer-contacts__title">Message us:</h4>
 			<ul class="footer-contacts__messengers-list">
 				<li>
-					<a href="http://m.me/maddevsllc" class="footer-contacts__messenger-item" target="_blank">
+					<a href="https://facebook.com/maddevsllc" class="footer-contacts__messenger-item" target="_blank">
 						<img src="@/assets/img/Footer/messenger.svg" alt="Messenger">
 						Messenger
 					</a>
@@ -39,7 +39,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#" class="footer-contacts__messenger-item">
+					<a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc" class="footer-contacts__messenger-item" target="_blank">
 						<img src="@/assets/img/Footer/wechat.svg" alt="WeChat">
 						WeChat
 					</a>

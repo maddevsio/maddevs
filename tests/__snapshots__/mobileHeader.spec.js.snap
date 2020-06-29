@@ -152,7 +152,7 @@ exports[`Mobile Header renders correctly 1`] = `
               <li>
                 <a
                   class="footer-contacts__messenger-item"
-                  href="http://m.me/maddevsllc"
+                  href="https://facebook.com/maddevsllc"
                   target="_blank"
                 >
                   <img
@@ -200,7 +200,8 @@ exports[`Mobile Header renders correctly 1`] = `
               <li>
                 <a
                   class="footer-contacts__messenger-item"
-                  href="#"
+                  href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
+                  target="_blank"
                 >
                   <img
                     alt="WeChat"
