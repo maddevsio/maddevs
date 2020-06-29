@@ -26,20 +26,25 @@
             :secondParagraph="mobile.secondParagraph"
           />
         </div>
-        <buttonTrigger :modalWindowName="modalWindowName" :buttonInnerText="buttonInnerText" />
+        <UIButtonModalTrigger 
+          :buttonInnerText="buttonInnerText"
+          :isBlack="isBlack"
+          :isGrey="isGrey"
+          :modalWindowName="modalWindowName"
+        />
     </div>
   </section>
 </template>
 
 <script>
 import SoftwareDevelopContent from '@/components/Services/SoftwareDevelopContent';
-import buttonTrigger from '@/components/ui/button-trigger';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 
 export default {
   name: 'SoftwareDevelopment',
   components: {
     SoftwareDevelopContent,
-    buttonTrigger
+    UIButtonModalTrigger
   },
   data() {
     return {
@@ -66,7 +71,10 @@ export default {
         buttonInnerText: 'Get mobile help'
       },
       modalWindowName: 'get-your-trusted-it-partner',
-      buttonInnerText: 'Get your trusted IT partner'
+      buttonInnerText: 'Get your trusted IT partner',
+      isRed: false,
+      isBlack: false,
+      isGrey: true
     };
   }
 };
@@ -94,7 +102,6 @@ export default {
 
     button {
       width: 100%;
-      color: $text-color--grey;
     }
   }
 

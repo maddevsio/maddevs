@@ -48,10 +48,23 @@ export default {
     cursor: pointer;
     color: $text-color--red;
     border: 1px solid $border-color--red;
+    transition: 0.2s;
+
+    &:not(.ui-button--disabled) {
+      &:hover {
+        background-color: $bgcolor--red;
+        color: $text-color--white;
+      }
+
+      &:active {
+        background-color: $button-active--red;
+        border-color: $button-active-border--red;
+      }
+    }
 
     &--disabled {
       cursor: not-allowed;
-      opacity: 0.7;
+      opacity: 0.5;
       user-select: none;
     }
 

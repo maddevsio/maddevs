@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ui button modal trigger renders correctly 1`] = `
+<button
+  class="ui-button-modal-trigger ui-button-modal-trigger--red"
+  style="position: relative; overflow: hidden;"
+>
+  
+  Some button name
+
+  <div
+    class="wave"
+  />
+</button>
+`;

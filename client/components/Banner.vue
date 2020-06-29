@@ -182,6 +182,11 @@ export default {
     .tablet-break {
       display: none;
     }
+
+    .text-content_wrapper {
+      display: flex;
+      padding-bottom: 90px;
+    }
   }
 
   .careers {
@@ -278,6 +283,12 @@ export default {
       }
     }
 
+    .projects {
+      .text-content_wrapper {
+        padding-bottom: 40px;
+      }
+    }
+
     .services {
       .hover-image,
       .default-image {
@@ -362,6 +373,12 @@ export default {
           transform: rotate(-28.6deg);
           animation: animate-sm 15s steps(30) infinite;
         }
+      }
+    }
+
+    .projects {
+      .text-content_wrapper {
+        padding-bottom: 170px;
       }
     }
 
@@ -482,6 +499,12 @@ export default {
       }
     }
 
+    .projects {
+      .text-content_wrapper {
+        padding-bottom: 85px;
+      }
+    }
+
     .index {
       .icon-item {
         img {
@@ -529,7 +552,7 @@ export default {
 
     .projects {
       .text-content_wrapper {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
       }
     }
 
@@ -690,6 +713,12 @@ export default {
       }
     }
 
+    .projects {
+      .text-content_wrapper {
+        padding-bottom: 100px;
+      }
+    }
+
     .services {
       .text-content_wrapper {
         padding-bottom: 172px;
@@ -816,6 +845,12 @@ export default {
 
       .text-content_wrapper {
         padding-bottom: 114px;
+      }
+    }
+
+    .projects {
+      .text-content_wrapper {
+        padding-bottom: 94px;
       }
     }
   }

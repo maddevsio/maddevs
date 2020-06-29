@@ -1,16 +1,19 @@
 import {
   mount
 } from '@vue/test-utils';
-import buttonTrigger from '@/components/ui/button-trigger';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 
-describe('Form checkboxes', () => {
+describe('Ui button modal trigger', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(buttonTrigger, {
+    wrapper = mount(UIButtonModalTrigger, {
       propsData: {
         buttonInnerText: 'Some button name',
-        modalWindowName: 'Some modal window name'
+        modalWindowName: 'Some modal window name',
+        isRed: true,
+        isBlack: false,
+        isGrey: false
       },
       mocks: {
         $modal: {
@@ -38,9 +41,10 @@ describe('Form checkboxes', () => {
     expect(wrapper.props().modalWindowName).toBe('Some modal window name');
   });
 
-  test('sets the correctly button name', () => {
-    let button = wrapper.find('.button-default');
+  test('sets the correctly button name and contains new class --red', () => {
+    let button = wrapper.find('.ui-button-modal-trigger');
     expect(button.text()).toBe('Some button name');
+    expect(button.classes()).toContain('ui-button-modal-trigger--red');
   });
 
   test('Should call two events', () => {

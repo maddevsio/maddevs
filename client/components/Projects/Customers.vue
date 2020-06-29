@@ -18,28 +18,33 @@
           :customer="customer"
         />
       </div>
-      <buttonTrigger
+      <UIButtonModalTrigger
         :buttonInnerText="buttonInnerText"
         :modalWindowName="modalWindowName"
-        class="red-text-and-border"
+        :isRed="isRed"
+        :isBlack="isBlack"
+        :isGrey="isGrey"
       />
     </div>
   </section>
 </template>
 
 <script>
-import buttonTrigger from '@/components/ui/button-trigger';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 import Customer from '@/components/Projects/Customer';
 
 export default {
   name: 'Customers',
   components: {
-    buttonTrigger,
+    UIButtonModalTrigger,
     Customer
   },
   data() {
     return {
       buttonInnerText: 'Order a project from us',
+      isRed: true,
+      isBlack: false,
+      isGrey: false,
       modalWindowName: 'order-project-from-us-modal',
       customers: [
         {
@@ -124,7 +129,7 @@ export default {
 @import '../../assets/styles/vars';
 
 .customers {
-  margin-top: 170px;
+  padding-top: 170px;
 
   button {
     width: 100%;
@@ -179,6 +184,8 @@ export default {
 
 @media only screen and (max-width: 1240px) {
   .customers {
+    padding-top: 155px;
+
     .valued-customers {
       grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
       grid-row-gap: 90px;
@@ -202,6 +209,8 @@ export default {
 
 @media only screen and (max-width: 1024px) {
   .customers {
+    padding-top: 192px;
+
     &__title-wrap {
       flex-wrap: wrap;
     }
@@ -210,6 +219,8 @@ export default {
 
 @media only screen and (max-width: 860px) {
   .customers {
+    padding-top: 107px;
+
     .valued-customers {
       grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
       grid-row-gap: 30px;
@@ -219,7 +230,7 @@ export default {
 
 @media only screen and (max-width: 680px) {
   .customers {
-    margin-top: 80px;
+    padding-top: 80px;
 
     &__main-title {
       min-width: 0;

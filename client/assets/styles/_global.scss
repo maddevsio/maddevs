@@ -419,24 +419,6 @@
   background-color: $input-bgcolor--grey-dark;
 }
 
-// ----------- Button styles ----------- //
-
-.button-default {
-  height: 65px;
-  border: 1px solid $border-color--grey;
-  border-radius: 2px;
-  box-shadow: none;
-  background-color: transparent;
-  font-size: 18px;
-  font-family: 'Hoves-Regular';
-  cursor: pointer;
-}
-
-.red-text-and-border {
-  color: $text-color--red;
-  border: 1px solid $border-color--red;
-}
-
 // ----------- Modal window ----------- //
 .error-text {
   display: block;
@@ -447,18 +429,10 @@
 }
 
 .textarea {
-  max-width: 100%;
-  min-width: 100%;
   min-height: 54px;
   height: 54px;
   overflow: hidden;
-}
-
-button {
-  &:disabled {
-    pointer-events: none;
-    user-select: none;
-  }
+  resize: vertical;
 }
 
 .invalid {
