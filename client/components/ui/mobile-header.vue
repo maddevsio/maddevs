@@ -48,7 +48,7 @@ export default {
     return {
       buttonInnerText: 'Contact me',
       mobileHeaderIsOpen: false,
-      modalWindowName: 'contact-me'
+      modalWindowName: 'contact-me-modal'
     };
   },
   watch: {

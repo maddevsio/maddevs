@@ -38,6 +38,7 @@
           :inputId="inputId"
         />
         <UIButton
+          class="ui-button--bold-text"
           name="Get a team of ultra fast coders"
           :disabled="invalid || !agreeWithPrivacyPolicy || !selectedTeamSize"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy || selectedTeamSize)"
