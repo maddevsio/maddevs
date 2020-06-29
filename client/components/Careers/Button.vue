@@ -1,5 +1,5 @@
 <template>
-  <button class="button form-text" @click="callback">
+  <button class="button form-text" :class="{ 'is-disabled': disabled }" @click="callback">
     <slot></slot>
   </button>
 </template>
@@ -7,9 +7,17 @@
 <script>
 export default {
   name: 'Button',
+  props: {
+    disabled: {
+      type: Boolean,
+      default: false
+    }
+  },
   methods: {
     callback(e) {
-      this.$emit('click', e);
+      if (this.$props.disabled === false) {
+        this.$emit('click', e); 
+      }
     }
   }
 };
@@ -55,5 +63,10 @@ export default {
   @media only screen and (max-width: 420px) {
     padding: 12px 26px;
   }
+}
+
+.is-disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 </style>

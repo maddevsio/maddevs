@@ -1,7 +1,8 @@
 <template>
   <div class="form-checkboxes">
     <label class="form-checkbox-label required" :for="`privacy-policy-${inputId}`">I confirm that I have read and accepted Mad Devs’ <a href="/privacy" target="blank">Privacy Policy</a>
-      <input 
+      <input
+        ref="privacyPolicy"
         class="form-checkbox-input"
         :id="`privacy-policy-${inputId}`" 
         type="checkbox"
@@ -11,7 +12,8 @@
       <span class="checkmark"></span>
     </label>
     <label class="form-checkbox-label" :for="`marketing-communications-${inputId}`">I agree to get Mad Devs’ discount offers and other marketing communications
-      <input 
+      <input
+        ref="marketingCommunications"
         class="form-checkbox-input"
         :id="`marketing-communications-${inputId}`"
         type="checkbox"
@@ -38,6 +40,10 @@ export default {
     },
     discountOffersCheckboxChangeState(e) {
       this.$emit('getDiscountOffersCheckboxState', e.target.checked);
+    },
+    reset() {
+      this.$refs.privacyPolicy.checked = false;
+      this.$refs.marketingCommunications.checked = false;
     }
   }
 };
