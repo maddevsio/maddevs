@@ -108,7 +108,7 @@ exports[`Mobile Header renders correctly 1`] = `
               <li>
                 <a
                   class="footer-contacts__phone-item"
-                  href="tel:+1 888 401 3401"
+                  href="tel:+1 833-MADDEVS"
                 >
                   <img
                     alt="United States"
@@ -123,7 +123,7 @@ exports[`Mobile Header renders correctly 1`] = `
               <li>
                 <a
                   class="footer-contacts__phone-item"
-                  href="tel:+1 888 401 3401"
+                  href="tel:+44 20 3984 8555"
                 >
                   <img
                     alt="United Kingdom"
