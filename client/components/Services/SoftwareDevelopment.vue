@@ -28,8 +28,7 @@
         </div>
         <UIButtonModalTrigger 
           :buttonInnerText="buttonInnerText"
-          :isBlack="isBlack"
-          :isGrey="isGrey"
+          :isGrey="true"
           :modalWindowName="modalWindowName"
         />
     </div>
@@ -71,8 +70,7 @@ export default {
         buttonInnerText: 'Get mobile help'
       },
       modalWindowName: 'get-your-trusted-it-partner',
-      buttonInnerText: 'Get your trusted IT partner',
-      isGrey: true
+      buttonInnerText: 'Get your trusted IT partner'
     };
   }
 };

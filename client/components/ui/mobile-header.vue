@@ -59,15 +59,23 @@ export default {
   watch: {
     '$route'() {
       this.mobileHeaderIsOpen = false;
-      this.$nuxt.$emit('tooglePageScrollBar', false);
+      this.enableScrollOnBody();
     }
   },
   methods: {
     toggleMobileHeader() {
       this.mobileHeaderIsOpen = !this.mobileHeaderIsOpen;
-      if (this.$nuxt) {
-        this.$nuxt.$emit('tooglePageScrollBar', this.mobileHeaderIsOpen);
+      if(this.mobileHeaderIsOpen) {
+        this.disableScrollOnBody();
+      } else {
+        this.enableScrollOnBody();
       }
+    },
+    enableScrollOnBody() {
+      document.body.classList.remove('scrollDisabled');
+    },
+    disableScrollOnBody() {
+      document.body.classList.add('scrollDisabled');
     }
   }
 };
