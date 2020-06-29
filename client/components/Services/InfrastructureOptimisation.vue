@@ -22,9 +22,9 @@
         <UIButtonModalTrigger 
           :buttonInnerText="buttonInnerText"
           :modalWindowName="modalWindowName"
-          :isRed="isRed"
-          :isBlack="isBlack"
-          :isGrey="isGrey"
+          :isRed="false"
+          :isBlack="true"
+          :isGrey="false"
         />
     </div>
   </section>
@@ -53,9 +53,6 @@ export default {
         paragraph: 'Our fire brigade can help you optimise resource consumption like we\'ve done for 75% of our customers. We’ll reconfigure and disable every option or service that is not necessary.'
       },
       buttonInnerText: 'Get an infrastructure audit',
-      isRed: false,
-      isBlack: true,
-      isGrey: false,
       modalWindowName: 'infrastructure-modal'
     };
   }

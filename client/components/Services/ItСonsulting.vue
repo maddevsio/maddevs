@@ -23,9 +23,9 @@
       </div>
       <UIButtonModalTrigger 
         :buttonInnerText="buttonInnerText"
-        :isRed="isRed"
-        :isBlack="isBlack"
-        :isGrey="isGrey"
+        :isRed="false"
+        :isBlack="true"
+        :isGrey="false"
         :modalWindowName="modalWindowName"
       />
     </div>
@@ -60,10 +60,7 @@ export default {
         paragraph: 'Hire good people and get rid of underperformers. Easier said than done, right? Get assessments for the skills and seniority level of your staff. Our positively mad engineers and PMs know how to do this.'
       },
       modalWindowName: 'get-expert-advice',
-      buttonInnerText: 'Get expert advice',
-      isRed: false,
-      isBlack: true,
-      isGrey: false
+      buttonInnerText: 'Get expert advice'
     };
   }
 };

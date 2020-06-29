@@ -23,9 +23,9 @@
     </div>
     <UIButtonModalTrigger 
       :buttonInnerText="buttonInnerText"
-      :isRed="isRed"
-      :isBlack="isBlack"
-      :isGrey="isGrey"
+      :isRed="false"
+      :isBlack="false"
+      :isGrey="false"
       :modalWindowName="modalWindowName" 
       class="it-outsourcing__ui-button-modal-trigger"
     />
@@ -61,13 +61,6 @@ export default {
   },
   components: {
     UIButtonModalTrigger
-  },
-  data() {
-    return {
-      isRed: false,
-      isBlack: false,
-      isGrey: false
-    };
   }
 };
 

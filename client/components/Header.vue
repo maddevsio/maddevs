@@ -45,9 +45,9 @@
             <UIButtonModalTrigger 
               :buttonInnerText="buttonInnerText" 
               :modalWindowName="modalWindowName" 
-              :isRed="isRed"
-              :isBlack="isBlack"
-              :isGrey="isGrey"
+              :isRed="true"
+              :isBlack="false"
+              :isGrey="false"
             />
           </div>
         </div>
@@ -72,9 +72,6 @@ export default {
   data() {
     return {
       buttonInnerText: 'Contact me',
-      isRed: true,
-      isBlack: false,
-      isGrey: false,
       phones: [
         {
           phoneNumber: '+44 20 3984 8555',
