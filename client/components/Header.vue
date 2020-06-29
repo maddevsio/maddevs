@@ -42,7 +42,13 @@
               </div>
               <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
             </div>
-            <buttonTrigger :buttonInnerText="buttonInnerText" :modalWindowName="modalWindowName" class="red-text-and-border" />
+            <UIButtonModalTrigger 
+              :buttonInnerText="buttonInnerText" 
+              :modalWindowName="modalWindowName" 
+              :isRed="isRed"
+              :isBlack="isBlack"
+              :isGrey="isGrey"
+            />
           </div>
         </div>
       </div>
@@ -52,20 +58,23 @@
 </template>
 
 <script>
-import buttonTrigger from '@/components/ui/button-trigger';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 import mobileHeader from '@/components/ui/mobile-header';
 import headerLogo from '@/components/svg/headerLogo';
 
 export default {
   name: 'main-header',
   components: {
-    buttonTrigger,
+    UIButtonModalTrigger,
     mobileHeader,
     headerLogo
   },
   data() {
     return {
       buttonInnerText: 'Contact me',
+      isRed: true,
+      isBlack: false,
+      isGrey: false,
       phones: [
         {
           phoneNumber: '+44 20 3984 8555',

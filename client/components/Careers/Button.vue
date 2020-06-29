@@ -28,6 +28,11 @@ export default {
   border: 0;
   align-self: center;
 
+  &:active {
+    background-color: $button-active--red;
+    border-color: $button-active-border--red;
+  }
+
   @media only screen and (max-width: 768px) {
     border-radius: $form-border-radius-4;
     padding: 18px 31px;
