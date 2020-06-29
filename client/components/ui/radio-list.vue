@@ -83,6 +83,7 @@ export default {
         &:checked ~ {
           span {
             background-color: $bgcolor--red;
+            border-color: $border-color--red;
           }
 
           p {
@@ -115,7 +116,7 @@ export default {
       top: 2px;
       left: 0;
       border-radius: 100%;
-      background-color: $input-checkmark-bg;
+      border: 1px solid $border-color--grey;
     }
   }
 
