@@ -52,14 +52,14 @@ export default {
     color: $text-color--white;
 
     &:not(.ui-button--disabled) {
-      &:active {
-        background-color: $button-active--red;
-        border-color: $button-active-border--red;
-      }
-
       &:hover {
         background-color: $bgcolor--red;
         color: $text-color--white;
+      }
+
+      &:active {
+        background-color: $button-active--red;
+        border-color: $button-active-border--red;
       }
     }
 
