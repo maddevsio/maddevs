@@ -23,8 +23,6 @@
 				<UIButtonModalTrigger 
 					:buttonInnerText="buttonInnerText" 
 					:isRed="true"
-					:isBlack="false"
-					:isGrey="false"
 					:modalWindowName="modalWindowName"
 					class="mobile-header__modal-trigger-btn" 
 				/>

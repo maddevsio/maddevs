@@ -22,8 +22,6 @@
           :buttonInnerText="buttonInnerText" 
           :modalWindowName="modalWindowName" 
           :isRed="true"
-          :isBlack="false"
-          :isGrey="false"
         />
       </div>
     </div>
