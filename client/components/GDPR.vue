@@ -73,9 +73,7 @@
           We appreciate your collaboration and openness with regard to any legal
           issues!
         </p>
-        <p
-          class="gdpr__paragraph gdpr__paragraph--bold gdpr__paragraph--italic paragraph"
-        >
+        <p class="gdpr__paragraph gdpr__paragraph--bold gdpr__paragraph--italic paragraph">
           Team Mad Devs
         </p>
       </div>
