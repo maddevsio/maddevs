@@ -76,7 +76,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .technologies-and_tools {
-    padding-bottom: 128px;
+    padding-bottom: 38px;
 
     &__main-title {
       padding-bottom: 41px;
@@ -111,7 +111,7 @@ export default {
 
   @media only screen and (max-width: 1440px) {
     .technologies-and_tools {
-      padding-bottom: 95px;
+      padding-bottom: 5px;
     }
   }
 
@@ -127,7 +127,7 @@ export default {
 
   @media only screen and (max-width: 1280px) {
     .technologies-and_tools {
-      padding-bottom: 57px;
+      padding-bottom: 37px;
 
       &__main-title {
         padding-bottom: 32px;
@@ -157,7 +157,7 @@ export default {
 
   @media only screen and (max-width: 940px) {
     .technologies-and_tools {
-      padding-bottom: 85px;
+      padding-bottom: 65px;
 
       &__flex-group {
         flex-direction: column;
@@ -175,13 +175,13 @@ export default {
 
   @media only screen and (max-width: 430px) {
     .technologies-and_tools {
-      padding-bottom: 55px;
+      padding-bottom: 35px;
     }
   }
 
   @media only screen and (max-width: 350px) {
     .technologies-and_tools {
-      padding-bottom: 15px;
+      padding-bottom: 0;
     }
   }
 </style>
