@@ -152,6 +152,8 @@ export default {
 }
 
 .case-studies {
+  padding-top: 90px;
+
   &--projects {
     .projects-flame-background {
       position: absolute;
@@ -441,6 +443,8 @@ export default {
 
 @media only screen and (max-width: 1280px) {
   .case-studies {
+    padding-top: 20px;
+
     &__main-title {
       font-size: 100px;
     }
