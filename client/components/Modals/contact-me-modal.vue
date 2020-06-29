@@ -30,7 +30,6 @@
           :inputId="inputId"
         />
         <UIButton
-          class="ui-button--bold-text"
           name="Сontact Me"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"

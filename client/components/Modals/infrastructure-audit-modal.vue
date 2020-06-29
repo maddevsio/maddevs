@@ -38,7 +38,6 @@
           :inputId="inputId"
         />
         <UIButton
-          class="ui-button--bold-text"
           name="Get an infrastructure audit"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"

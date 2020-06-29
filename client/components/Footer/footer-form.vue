@@ -20,7 +20,7 @@
         @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
       />
       <UIButton
-        class="ui-button--bold-text ui-button--transparent-bgc"
+        class="ui-button--transparent-bgc"
         name="Order a project now"
         :disabled="invalid || !agreeWithPrivacyPolicy"
         @click="sendForm(!invalid || agreeWithPrivacyPolicy)"

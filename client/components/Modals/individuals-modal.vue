@@ -34,7 +34,6 @@
           :inputId="inputId"
         />
         <UIButton
-          class="ui-button--bold-text"
           name="Get individual proactive rockets"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"

@@ -30,7 +30,6 @@
           :inputId="inputId"
         />
         <UIButton
-          class="ui-button--bold-text"
           name="Get your trusted IT partner"
           :disabled="invalid"
           @click="sendForm(!invalid)"
