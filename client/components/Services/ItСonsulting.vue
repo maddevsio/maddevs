@@ -25,6 +25,7 @@
         :buttonInnerText="buttonInnerText"
         :isRed="isRed"
         :isBlack="isBlack"
+        :isGrey="isGrey"
         :modalWindowName="modalWindowName"
       />
     </div>
@@ -61,7 +62,8 @@ export default {
       modalWindowName: 'get-expert-advice',
       buttonInnerText: 'Get expert advice',
       isRed: false,
-      isBlack: true
+      isBlack: true,
+      isGrey: false
     };
   }
 };

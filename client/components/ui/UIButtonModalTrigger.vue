@@ -1,7 +1,7 @@
 <template>
   <button 
     class="ui-button-modal-trigger" 
-    :class="{'ui-button-modal-trigger--red':isRed, 'ui-button-modal-trigger--black':isBlack}"
+    :class="{'ui-button-modal-trigger--red':isRed, 'ui-button-modal-trigger--black':isBlack, 'ui-button-modal-trigger--grey':isGrey}"
     @click="showModal()"
     v-WaveAnimation
   >
@@ -31,6 +31,10 @@ export default {
       default: false
     },
     isBlack: {
+      type: Boolean,
+      default: false
+    },
+    isGrey: {
       type: Boolean,
       default: false
     }
@@ -66,11 +70,6 @@ export default {
         background-color: $bgcolor--red;
         color: $text-color--white;
       }
-
-      &:active {
-        background-color: $button-active--red;
-        border-color: $button-active-border--red;
-      }
     }
 
     &--black {
@@ -81,11 +80,21 @@ export default {
         background-color: $bgcolor--black;
         color: $text-color--white;
       }
+    }
 
-      &:active {
-        background-color: $button-active--red;
-        border-color: $button-active-border--red;
+    &--grey {
+      color: $text-color--grey;
+      border: 1px solid $border-color--grey;
+
+      &:hover {
+        background-color: $bgcolor--grey;
+        color: $text-color--black;
       }
+    }
+
+    &:active {
+      background-color: $button-active--red;
+      border-color: $button-active-border--red;
     }
   }
 </style>

@@ -47,6 +47,7 @@
               :modalWindowName="modalWindowName" 
               :isRed="isRed"
               :isBlack="isBlack"
+              :isGrey="isGrey"
             />
           </div>
         </div>
@@ -73,6 +74,7 @@ export default {
       buttonInnerText: 'Contact me',
       isRed: true,
       isBlack: false,
+      isGrey: false,
       phones: [
         {
           phoneNumber: '+44 20 3984 8555',

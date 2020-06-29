@@ -25,6 +25,7 @@
       :buttonInnerText="buttonInnerText"
       :isRed="isRed"
       :isBlack="isBlack"
+      :isGrey="isGrey"
       :modalWindowName="modalWindowName" 
       class="it-outsourcing__ui-button-modal-trigger"
     />
@@ -64,7 +65,8 @@ export default {
   data() {
     return {
       isRed: false,
-      isBlack: false
+      isBlack: false,
+      isGrey: false
     };
   }
 };
@@ -77,6 +79,18 @@ export default {
   .it-outsourcing {
     &__ui-button-modal-trigger {
       width: 100%;
+
+      // Кнопка имеет уникальное поведение, cначала она имеет серый цвет, затем белый, такого поведения больше нигде не замечено, поэтому стили пишуться в этом компоненте
+      // Important используется чтобы перебить те стили которые выставляются на hover у родительского блока
+      &:hover {
+        background-color: $bgcolor--grey-light;
+        color: $text-color--black !important;
+      }
+
+      &:active {
+        background-color: $button-active--red !important;
+        border-color: $button-active-border--red !important;
+      }
     }
 
     &__content-icon {
@@ -137,16 +151,16 @@ export default {
       .it-outsourcing__sub-title,
       .it-outsourcing__ui-button-modal-trigger {
         color: $text-color--grey-light;
-        transition: 0.3s;
+        transition: 0.2s;
       }
 
       .it-outsourcing__ui-button-modal-trigger {
-        border-color: $border-color--grey-light-outsourcing-section;
+        border-color: $border-color--grey-light;
       }
 
       .it-outsourcing__content-icon {
         opacity: 1;
-        transition: 0.3s;
+        transition: 0.2s;
       }
     }
   }

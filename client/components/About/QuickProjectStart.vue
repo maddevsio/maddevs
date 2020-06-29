@@ -23,6 +23,7 @@
           :modalWindowName="modalWindowName" 
           :isRed="isRed"
           :isBlack="isBlack"
+          :isGrey="isGrey"
         />
       </div>
     </div>
@@ -64,7 +65,8 @@ export default {
       modalWindowName: 'order-project-from-us-modal',
       buttonInnerText: 'Order a project from us',
       isRed: true,
-      isBlack: false
+      isBlack: false,
+      isGrey: false
     };
   }
 };

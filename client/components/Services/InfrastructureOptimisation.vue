@@ -24,6 +24,7 @@
           :modalWindowName="modalWindowName"
           :isRed="isRed"
           :isBlack="isBlack"
+          :isGrey="isGrey"
         />
     </div>
   </section>
@@ -54,6 +55,7 @@ export default {
       buttonInnerText: 'Get an infrastructure audit',
       isRed: false,
       isBlack: true,
+      isGrey: false,
       modalWindowName: 'infrastructure-modal'
     };
   }

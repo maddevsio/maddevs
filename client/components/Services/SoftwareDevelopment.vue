@@ -28,7 +28,8 @@
         </div>
         <UIButtonModalTrigger 
           :buttonInnerText="buttonInnerText"
-          :isRed="isRed"
+          :isBlack="isBlack"
+          :isGrey="isGrey"
           :modalWindowName="modalWindowName"
         />
     </div>
@@ -71,7 +72,9 @@ export default {
       },
       modalWindowName: 'get-your-trusted-it-partner',
       buttonInnerText: 'Get your trusted IT partner',
-      isRed: false
+      isRed: false,
+      isBlack: false,
+      isGrey: true
     };
   }
 };
@@ -99,7 +102,6 @@ export default {
 
     button {
       width: 100%;
-      color: $text-color--grey;
     }
   }
 
