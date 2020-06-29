@@ -18,33 +18,21 @@
           :customer="customer"
         />
       </div>
-      <UIButtonModalTrigger
-        :buttonInnerText="buttonInnerText"
-        :modalWindowName="modalWindowName"
-        :isRed="isRed"
-        :isBlack="isBlack"
-        :isGrey="isGrey"
-      />
     </div>
   </section>
 </template>
 
 <script>
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 import Customer from '@/components/Projects/Customer';
 
 export default {
   name: 'Customers',
   components: {
-    UIButtonModalTrigger,
     Customer
   },
   data() {
     return {
       buttonInnerText: 'Order a project from us',
-      isRed: true,
-      isBlack: false,
-      isGrey: false,
       modalWindowName: 'order-project-from-us-modal',
       customers: [
         {
@@ -130,10 +118,6 @@ export default {
 
 .customers {
   padding-top: 170px;
-
-  button {
-    width: 100%;
-  }
 
   &__title-wrap {
     display: flex;

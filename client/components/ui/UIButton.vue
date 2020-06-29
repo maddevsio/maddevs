@@ -39,16 +39,16 @@ export default {
   @import '../../assets/styles/vars';
 
   .ui-button {
-    height: 55px;
-    border-radius: 2px;
-    box-shadow: none;
-    background-color: transparent;
-    font-size: 18px;
-    font-family: 'Hoves-Regular';
-    cursor: pointer;
-    color: $text-color--red;
+    height: 64px;
     border: 1px solid $border-color--red;
+    background-color: $bgcolor--red;
+    color: $text-color--white;
+    font-size: 21px;
+    font-family: 'Hoves-Bold';
+    letter-spacing: -0.03em;
+    box-shadow: none;
     transition: 0.2s;
+    cursor: pointer;
 
     &:not(.ui-button--disabled) {
       &:hover {
@@ -68,10 +68,9 @@ export default {
       user-select: none;
     }
 
-    &--bold-text {
-      font-size: 21px;
-      font-family: 'Hoves-Bold';
-      letter-spacing: -1px;
+    &--transparent-bgc {
+      background-color: transparent;
+      color: $text-color--red;
     }
   }
 </style>

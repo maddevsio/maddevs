@@ -22,8 +22,7 @@
 				</nav>
 				<UIButtonModalTrigger 
 					:buttonInnerText="buttonInnerText" 
-					:isRed="isRed"
-					:isBlack="isBlack"
+					:isRed="true"
 					:modalWindowName="modalWindowName"
 					class="mobile-header__modal-trigger-btn" 
 				/>
@@ -53,10 +52,8 @@ export default {
   data() {
     return {
       buttonInnerText: 'Contact me',
-      isRed: true,
-      isBlack: false,
       mobileHeaderIsOpen: false,
-      modalWindowName: 'contact-me'
+      modalWindowName: 'contact-me-modal'
     };
   },
   watch: {

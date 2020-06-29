@@ -57,7 +57,7 @@ export default {
   @import '../assets/styles/vars';
 
   /deep/ .modal_container {
-    background-color: $bgcolor--black;
+    background-color: $modal-bg-color;
     padding: 40px 12px 53px;
     top: 50% !important;
     left: 50% !important;
@@ -68,7 +68,6 @@ export default {
     max-height: calc(100vh - 126px);
     margin-top: 30px;
     padding: 0 48px;
-    background-color: $bgcolor--black;
   }
 
   /deep/.vm--overlay {
@@ -87,6 +86,25 @@ export default {
     z-index: 1;
     background-color: transparent;
     border: 0;
+  }
+
+  /deep/.modal-entry-field {
+    background-color: $modal-entry-field-bg;
+    color: $text-color--white;
+
+    &::placeholder {
+      color: $bgcolor--grey;
+      opacity: 0.5;
+    }
+  }
+
+  /deep/.invalid {
+    background-color: $input-invalid--bg;
+    color: $text-color--grey-light;
+
+    &::placeholder {
+      color: $text-color--grey-light;
+    }
   }
 
   @media only screen and (max-width: 640px) {
