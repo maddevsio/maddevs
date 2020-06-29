@@ -9,9 +9,11 @@ describe('Ui button modal trigger', () => {
   beforeEach(() => {
     wrapper = mount(UIButtonModalTrigger, {
       propsData: {
-        UIButtonModalTrigger: 'Some button name',
+        buttonInnerText: 'Some button name',
         modalWindowName: 'Some modal window name',
-        isRed: true
+        isRed: true,
+        isBlack: false,
+        isGrey: false
       },
       mocks: {
         $modal: {
@@ -35,11 +37,11 @@ describe('Ui button modal trigger', () => {
   // --------------------- //
 
   test('correctly props data', () => {
-    expect(wrapper.props().UIButtonModalTrigger).toBe('Some button name');
+    expect(wrapper.props().buttonInnerText).toBe('Some button name');
     expect(wrapper.props().modalWindowName).toBe('Some modal window name');
   });
 
-  test('sets the correctly button name and contains new class - red', () => {
+  test('sets the correctly button name and contains new class --red', () => {
     let button = wrapper.find('.ui-button-modal-trigger');
     expect(button.text()).toBe('Some button name');
     expect(button.classes()).toContain('ui-button-modal-trigger--red');
