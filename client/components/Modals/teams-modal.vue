@@ -33,6 +33,7 @@
           </ValidationProvider>
         </div>
         <FormCheckboxes
+          ref="checkboxes"
           @getPrivacyCheckboxState="getPrivacyCheckboxState"
           @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
@@ -131,6 +132,7 @@ export default {
       }
     },
     resetForm() {
+      this.$refs.checkboxes.reset();
       this.fullName = null;
       this.email = null;
       this.phoneNumber = null;

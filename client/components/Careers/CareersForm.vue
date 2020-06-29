@@ -7,7 +7,7 @@
           src="@/assets/img/Careers/svg/careers_logo.svg"
           alt="Careers Background Image"
         />
-        <ValidationObserver v-slot="{ handleSubmit }" ref="form">
+        <ValidationObserver v-slot="{ handleSubmit, invalid }" ref="form">
           <form @submit.prevent="handleSubmit(sendData)" class="careers__form">
             <label class="careers__form-name-label form-text"
               >Hello, my name is
@@ -83,7 +83,7 @@
                 </ValidationProvider>
               </li>
             </ul>
-            <Button type="submit">I want to work for Mad Devs!</Button>
+            <Button type="submit" :disabled="invalid">I want to work for Mad Devs!</Button>
           </form>
         </ValidationObserver>
       </div>
