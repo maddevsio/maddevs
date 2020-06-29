@@ -16,6 +16,14 @@ exports[`Why Us? renders correctly 1`] = `
       >
         Why us?
       </h2>
+       
+      <div
+        class="why-us__sub-title why-us__customer-rates-sub-title title"
+      >
+        Fantastic customer 
+        <br />
+         satisfaction rates:
+      </div>
     </div>
      
     <div
@@ -24,14 +32,6 @@ exports[`Why Us? renders correctly 1`] = `
       <div
         class="why-us__customer-rates"
       >
-        <div
-          class="why-us__sub-title why-us__customer-rates-sub-title"
-        >
-          Fantastic customer 
-          <br />
-           satisfaction rates:
-        </div>
-         
         <div
           class="why-us__rates-list"
         >
@@ -52,9 +52,7 @@ exports[`Why Us? renders correctly 1`] = `
               class="why-us__item_description paragraph"
             >
               
-              recommend us 
-              <br />
-               to others.
+              recommend us to others.
             
             </p>
           </div>
@@ -76,9 +74,9 @@ exports[`Why Us? renders correctly 1`] = `
               class="why-us__item_description paragraph"
             >
               
-              stay with us for 
+              stay with us for more than 2 
               <br />
-               more than 2 years.
+               years.
             
             </p>
           </div>
@@ -100,9 +98,7 @@ exports[`Why Us? renders correctly 1`] = `
               class="why-us__item_description paragraph"
             >
               
-              are satisfied with our 
-              <br />
-               pricing.
+              are satisfied with our pricing.
             
             </p>
           </div>
@@ -115,9 +111,7 @@ exports[`Why Us? renders correctly 1`] = `
         <div
           class="why-us__sub-title why-us__mad-devs_metrics-sub-title"
         >
-          Mad Devs' key 
-          <br />
-           metrics:
+          Mad Devs' key metrics:
         </div>
          
         <div
@@ -160,9 +154,9 @@ exports[`Why Us? renders correctly 1`] = `
               class="why-us__item_description paragraph"
             >
               
-              staff members 
+              staff members work 
               <br />
-               work for Mad Devs.
+               for Mad Devs.
             
             </p>
           </div>
@@ -174,7 +168,7 @@ exports[`Why Us? renders correctly 1`] = `
               class="why-us__metric-number"
             >
               
-              10+ million
+              10M+
             
             </div>
              
@@ -182,9 +176,9 @@ exports[`Why Us? renders correctly 1`] = `
               class="why-us__item_description paragraph"
             >
               
-              US dollars raised by 
+              US dollars raised by 5 customer 
               <br />
-               5 customer startups in 2019.
+               startups in 2019.
             
             </p>
           </div>
