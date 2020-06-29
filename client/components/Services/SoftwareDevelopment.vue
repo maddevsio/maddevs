@@ -28,8 +28,6 @@
         </div>
         <UIButtonModalTrigger 
           :buttonInnerText="buttonInnerText"
-          :isBlack="true"
-          :isGrey="true"
           :modalWindowName="modalWindowName"
         />
     </div>
