@@ -3,17 +3,17 @@
     <div class="container">
       <div class="why-us__title-wrap">
         <h2 class="why-us__main-title">Why us?</h2>
+        <div class="why-us__sub-title why-us__customer-rates-sub-title title">Fantastic customer <br> satisfaction rates:</div>
       </div>
       <div class="why-us__statistics-wrap">
         <div class="why-us__customer-rates">
-          <div class="why-us__sub-title why-us__customer-rates-sub-title">Fantastic customer <br> satisfaction rates:</div>
           <div class="why-us__rates-list">
             <div class="why-us__rates-item">
               <div class="why-us__rates-number">
                 92<span>%</span>
               </div>
               <p class="why-us__item_description paragraph">
-                recommend us <br> to others.
+                recommend us to others.
               </p>
             </div>
             <div class="why-us__rates-item">
@@ -21,7 +21,7 @@
                 87<span>%</span>
               </div>
               <p class="why-us__item_description paragraph">
-                stay with us for <br> more than 2 years.
+                stay with us for more than 2 <br> years.
               </p>
             </div>
             <div class="why-us__rates-item">
@@ -29,13 +29,13 @@
                 98<span>%</span>
               </div>
               <p class="why-us__item_description paragraph">
-                are satisfied with our <br> pricing.
+                are satisfied with our pricing.
               </p>
             </div>
           </div>
         </div>
         <div class="why-us__mad-devs_metrics">
-          <div class="why-us__sub-title why-us__mad-devs_metrics-sub-title">Mad Devs' key <br> metrics:</div>
+          <div class="why-us__sub-title why-us__mad-devs_metrics-sub-title">Mad Devs' key metrics:</div>
           <div class="why-us__metrics-list">
             <div class="why-us__metric-item">
               <div class="why-us__metric-number">
@@ -50,15 +50,15 @@
                 100+
               </div>
               <p class="why-us__item_description paragraph">
-                staff members <br> work for Mad Devs.
+                staff members work <br> for Mad Devs.
               </p>
             </div>
             <div class="why-us__metric-item">
               <div class="why-us__metric-number">
-                10+ million
+                10M+
               </div>
               <p class="why-us__item_description paragraph">
-                US dollars raised by <br> 5 customer startups in 2019.
+                US dollars raised by 5 customer <br> startups in 2019.
               </p>
             </div>
             <div class="why-us__metric-item">
@@ -110,6 +110,10 @@ export default {
     padding-bottom: 167px;
     background-color: $bgcolor--white;
 
+    &__title-wrap {
+      position: relative;
+    }
+
     &__main-title {
       margin-left: -40px;
       padding-bottom: 120px;
@@ -127,13 +131,19 @@ export default {
       justify-content: space-between;
     }
 
+    &__customer-rates,
     &__mad-devs_metrics {
-      padding-top: 96px;
+      flex-direction: column;
+    }
+
+    &__customer-rates-sub-title {
+      position: absolute;
+      bottom: -30px;
     }
 
     &__rates-list {
-      padding-bottom: 74px;
-      border-bottom: 1px solid $border-color--grey-dark-transparent;
+      padding-bottom: 142px;
+      align-items: baseline;
     }
 
     &__metrics-list {
@@ -141,12 +151,14 @@ export default {
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 44px;
       grid-row-gap: 60px;
+      margin-top: 36px;
     }
 
     &__rates-item {
       &:nth-child(1),
       &:nth-child(2) {
-        padding-right: 80px;
+        padding-right: 190px;
+        padding-top: 34px;
       }
 
       &:nth-child(3) {
@@ -163,10 +175,11 @@ export default {
     }
 
     &__sub-title {
-      font-size: 50px;
+      font-size: 90px;
       font-family: 'Hoves-Bold';
       color: $text-color--black;
-      letter-spacing: -2px;
+      line-height: 104%;
+      letter-spacing: -3px;
     }
 
     &__metric-number,
@@ -176,25 +189,32 @@ export default {
     }
 
     &__metric-number {
-      font-size: 50px;
-      letter-spacing: -2px;
+      font-size: 90px;
+      line-height: 104%;
+      letter-spacing: -3px;
     }
 
     &__rates-number {
       display: flex;
-      font-size: 130px;
-      letter-spacing: -5px;
+      letter-spacing: -8px;
+      font-size: 165px;
+      line-height: 100%;
 
       span {
         display: block;
         margin-top: 5px;
         font-size: 70px;
+        line-height: 92%;
+        letter-spacing: -2px;
+        margin-left: 12px;
       }
     }
 
     &__item_description {
-      font-size: 18px;
-      letter-spacing: -0.03em;
+      font-size: 21px;
+      line-height: 129%;
+      letter-spacing: -0.02em;
+
       a {
         color: $text-color--black;
       }
@@ -218,10 +238,6 @@ export default {
         }
       }
 
-      &__rates-number {
-        font-size: 128px;
-      }
-
       &__sub-title {
         br {
           display: none;
@@ -230,22 +246,6 @@ export default {
 
       &__metrics-list {
         grid-column-gap: 40px;
-      }
-
-      &__customer-rates-sub-title {
-        max-width: 265px;
-      }
-
-      &__mad-devs_metrics-sub-title {
-        max-width: 365px;
-      }
-
-      &__mad-devs_metrics {
-        padding-top: 86px;
-      }
-
-      &__rates-list {
-        padding-bottom: 92px;
       }
     }
   }
@@ -260,27 +260,22 @@ export default {
     }
   }
 
-
-  @media only screen and (max-width: 1340px) {
-    .why-us {
-      &__mad-devs_metrics-sub-title {
-        max-width: 280px;
-      }
-    }
-  }
-
   @media only screen and (max-width: 1280px) {
     .why-us {
       padding-bottom: 123px;
 
       &__metrics-list {
-        grid-column-gap: 50px;
+        grid-column-gap: 54px;
       }
 
-      &__metric-item {
-        &:nth-child(3n) {
-          margin-left: -25px;
-        }
+      &__rates-list {
+        padding-bottom: 82px;
+      }
+
+      &__item_description {
+        font-size: 18px;
+        line-height: 139%;
+        letter-spacing: -0.03em;
       }
 
       &__rates-item {
@@ -289,16 +284,26 @@ export default {
           padding-right: 60px;
         }
       }
+
+      &__sub-title {
+        font-size: 70px;
+        line-height: 100%;
+        letter-spacing: -2px;
+        max-width: 90%;
+      }
+
+      &__metric-number {
+        font-size: 70px;
+        line-height: 92%;
+        letter-spacing: -2px;
+      }
     }
   }
 
   @media only screen and (max-width: 1235px) {
     .why-us {
-      padding-bottom: 130px;
-
       &__main-title {
-        margin-left: 0;
-        padding-bottom: 60px;
+        padding-bottom: 103px;
         font-size: 235px;
         letter-spacing: -1px;
         line-height: 140px;
@@ -308,26 +313,8 @@ export default {
         border-bottom: 0;
       }
 
-      &__customer-rates,
-      &__mad-devs_metrics {
-        flex-direction: column;
-      }
-
-      &__sub-title {
-        max-width: initial;
-        font-size: 47px;
-      }
-
-      &__customer-rates-sub-title {
-        padding-bottom: 20px;
-      }
-
       &__mad-devs_metrics-sub-title {
         padding-bottom: 25px;
-      }
-
-      &__mad-devs_metrics {
-        padding-top: 30px;
       }
     }
   }
@@ -341,22 +328,96 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1024px) {
     .why-us {
       &__main-title {
-        font-size: 160px;
-        line-height: 100px;
+        font-size: calc(91px + (195 - 91) * ((100vw - 320px) / (1024 - 320)));
+        line-height: 67%;
+        margin-left: 0;
+        padding-bottom: 57px;
+      }
+
+      &__rates-list {
+        padding-bottom: 119px;
+      }
+
+      &__sub-title {
+        font-size: 63px;
+        line-height: 110%;
+        letter-spacing: -2px;
+        max-width: 100%;
+        margin-bottom: -37px;
+      }
+
+      &__mad-devs_metrics-sub-title {
+        padding-bottom: 85px;
+      }
+
+      &__item_description {
+        font-size: 16px;
+        line-height: 119%;
+
+        br {
+          display: none;
+        }
+      }
+
+      &__metrics-list {
+        grid-column-gap: 90px;
+        margin-top: 0;
+        grid-row-gap: 41px;
+      }
+
+      &__rates-item {
+        padding-top: 76px;
+      }
+
+      &__rates-number {
+        letter-spacing: -5px;
+        font-size: 128px;
+
+        span {
+          margin-left: 7px;
+        }
       }
     }
   }
 
-  @media only screen and (max-width: 830px) {
+  @media only screen and (max-width: 870px) {
     .why-us {
-      padding-bottom: 120px;
-
       &__main-title {
-        margin-left: -20px;
-        padding-bottom: 40px;
+        font-size: calc(91px + (195 - 91) * ((100vw - 320px) / (1024 - 320)));
+        margin-left: -18px;
+      }
+
+      &__rates-list {
+        padding-bottom: 100px;
+      }
+
+      &__sub-title {
+        font-size: 47px;
+        margin-bottom: -17px;
+      }
+
+      &__mad-devs_metrics-sub-title {
+        padding-bottom: 0;
+        margin-bottom: 23px;
+      }
+
+      &__item_description {
+        font-size: 16px;
+        line-height: 119%;
+      }
+
+      &__metrics-list {
+        grid-column-gap: 90px;
+        margin-top: 0;
+        grid-row-gap: 41px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &__rates-item {
+        padding-top: 65px;
       }
 
       &__rates-number {
@@ -364,36 +425,18 @@ export default {
         letter-spacing: -0.03em;
       }
 
-      &__metrics-list {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
       &__metric-item {
-        &:nth-child(3n) {
-          margin-left: 0;
+        &:nth-of-type(3) {
+          grid-row: 3;
         }
-
-        &:nth-child(3) {
-          grid-row-start: 3;
-        }
-      }
-
-      &__mad-devs_metrics {
-        padding-top: 0;
-      }
-
-      &__rates-list {
-        padding-bottom: 80px;
       }
     }
   }
 
   @media only screen and (max-width: 760px) {
     .why-us {
-
       &__main-title {
         font-size: 140px;
-        line-height: 80px;
       }
     }
   }
@@ -402,6 +445,10 @@ export default {
     .why-us {
       &__rates-list {
         flex-direction: column;
+      }
+
+      &__statistics-wrap {
+        margin-top: 28px;
       }
 
       &__rates-item {
@@ -422,6 +469,10 @@ export default {
             max-width: 120px;
           }
         }
+
+        &:last-child {
+          padding: 34px 60px 0 0;
+        }
       }
 
       &__customer-rates-sub-title {
@@ -434,7 +485,6 @@ export default {
     .why-us {
       &__main-title {
         font-size: 120px;
-        line-height: 70px;
       }
     }
   }
@@ -443,7 +493,6 @@ export default {
     .why-us {
       &__main-title {
         font-size: 110px;
-        line-height: 65px;
       }
     }
   }
@@ -452,16 +501,26 @@ export default {
     .why-us {
       padding-bottom: 105px;
 
+      &__rates-number {
+        span {
+          margin-left: 5px;
+        }
+      }
+
       &__metric-number {
-        font-size: 41px;
+        font-size: 56px;
+        line-height: 101%;
+        letter-spacing: -2px;
       }
 
       &__metrics-list {
         grid-row-gap: 47px;
+        grid-column-gap: 63px;
+        grid-row-gap: 34px;
       }
 
       &__item_description {
-        width: max-content;
+        max-width: 85%;
       }
     }
   }
@@ -469,9 +528,8 @@ export default {
   @media only screen and (max-width: 560px) {
     .why-us {
       &__main-title {
-        padding-bottom: 25px;
-        font-size: 90px;
-        line-height: 55px;
+        padding-bottom: 63px;
+        font-size: 98px;
       }
 
       &__item_description {
@@ -480,63 +538,163 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 537px) {
     .why-us {
       &__main-title {
-        padding-bottom: 50px;
-      }
-
-      &__item_description {
-        font-size: 17px;
-      }
-
-      &__rates-list {
-        padding-bottom: 76px;
-      }
-
-      &__rates-number {
-        font-size: 56px;
-        letter-spacing: -2px;
-
-        span {
-          display: block;
-          margin-top: 2px;
-          font-size: 40px;
-        }
-      }
-
-      &__sub-title {
-        font-size: 41px;
-      }
-
-      &__metrics-list {
-        grid-row-gap: 28px;
+        padding-bottom: 155px;
       }
     }
   }
 
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 510px) {
     .why-us {
-      padding-bottom: 60px;
-
       &__main-title {
-        margin-left: -15px;
-        padding-bottom: 40px;
-        font-size: 76px;
-        line-height: 47px;
+        padding-bottom: 200px;
+        font-size: 90px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 482px) {
+    .why-us {
+      &__main-title {
+        padding-bottom: 205px;
+        font-size: 90px;
+        margin-left: -25px;
       }
 
-      &__customer-rates-sub-title {
-        padding-bottom: 20px;
+      &__rates-item {
+        &#{&} {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 473px) {
+    .why-us {
+      &__main-title {
+        font-size: 85px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .why-us {
+      &__main-title {
+        font-size: 82px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    .why-us {
+      &__main-title {
+        padding-bottom: 80px;
+        text-align: center;
+        font-size: 90px;
+        margin-left: 0;
       }
 
       &__rates-list {
-        padding-bottom: 47px;
+        padding-bottom: 69px;
+      }
+
+      &__customer-rates-sub-title,
+      &__mad-devs_metrics-sub-title {
+        font-size: 41px;
+      }
+
+      &__rates-number {
+        font-size: 70px;
+        line-height: 92%;
+        letter-spacing: -2px;
+
+        span {
+          font-size: 41px;
+          line-height: 99%;
+          letter-spacing: -1px;
+        }
+      }
+
+      &__rates-item {
+        p {
+          font-size: 17px;
+          line-height: 129%;
+          letter-spacing: -1px;
+          padding-top: 0;
+        }
       }
 
       &__metric-number {
-        font-size: 28px;
+        font-size: 41px;
+        line-height: 99%;
         letter-spacing: -1px;
+      }
+      
+      &__item_description {
+        font-size: 17px;
+        line-height: 129%;
+        letter-spacing: -1px;
+        padding-top: 0;
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 420px) {
+    .why-us {
+      padding-bottom: 77px;
+
+      &__metrics-list {
+        grid-row-gap: 30px;
+        grid-column-gap: 25px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 389px) {
+    .why-us {
+      &__main-title {
+        font-size: 86px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 376px) {
+    .why-us {
+      &__main-title {
+        font-size: 82px;
+        padding-bottom: 135px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 357px) {
+    .why-us {
+      &__main-title {
+        font-size: 79px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 352px) {
+    .why-us {
+      &__main-title {
+        font-size: 77px;
+        padding-bottom: 176px;
+      }
+
+      &__metrics-list {
+        grid-column-gap: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 337px) {
+    .why-us {
+      &__main-title {
+        font-size: 72px;
       }
     }
   }
