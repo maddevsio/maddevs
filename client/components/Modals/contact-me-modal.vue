@@ -25,8 +25,9 @@
           </ValidationProvider>
         </div>
         <FormCheckboxes
-          v-on:getPrivacyCheckboxState="getPrivacyCheckboxState($event)"
-          v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState($event)"
+          ref="checkboxes"
+          v-on:getPrivacyCheckboxState="getPrivacyCheckboxState"
+          v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
           :inputId="inputId"
         />
         <UIButton
@@ -95,6 +96,7 @@ export default {
       }
     },
     resetForm() {
+      this.$refs.checkboxes.reset();
       this.fullName = null;
       this.email = null;
       this.phoneNumber = null;

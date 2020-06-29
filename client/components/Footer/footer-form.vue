@@ -11,11 +11,12 @@
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
         <ValidationProvider class="field-item" rules="max:500" v-slot="{ classes, errors }">
-          <textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectInfo" @keydown="autosize($event)" rows="1" />
+          <textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescriber" @keydown="autosize($event)" rows="1" />
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
       </div>
       <FormCheckboxes
+        ref="checkboxes"
         @getPrivacyCheckboxState="getPrivacyCheckboxState"
         @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
       />
@@ -45,11 +46,11 @@ export default {
   data: () => ({
     fullName: null,
     email: null,
-    projectDescription: null,
-    projectInfo: null,
+    projectDescriber: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    isEmailSent: false
+    isEmailSent: false,
+    onSubmit: false
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -63,19 +64,20 @@ export default {
       e.target.style.height = `${e.target.scrollHeight}px`;
     },
     sendForm(isValid) {
-      if (isValid === true) {
+      if (isValid === true && !this.onSubmit) {
+        this.onSubmit = true;
         const form = {
           templateId: 305480, // Required
           variables: {
             fullName: this.fullName,
             email: this.email,
-            projectInfo: this.projectInfo,
-            projectDescription: this.projectDescription,
+            projectDescriber: this.projectDescriber,
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
         this.$store.dispatch('sendEmail', form).then(res => {
+          this.onSubmit = false;
           if (res.status === 200) {
             this.isEmailSent = true;
             setTimeout(() => {
@@ -89,10 +91,10 @@ export default {
     },
     resetForm() {
       this.$refs.form.reset();
+      this.$refs.checkboxes.reset();
       this.fullName = null;
       this.email = null;
-      this.projectDescription = null;
-      this.projectInfo = null;
+      this.projectDescriber = null;
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
       this.isEmailSent = false;
