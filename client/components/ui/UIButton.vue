@@ -46,19 +46,20 @@ export default {
     font-size: 18px;
     font-family: 'Hoves-Regular';
     cursor: pointer;
-    color: $text-color--red;
-    border: 1px solid $border-color--red;
     transition: 0.2s;
+    background-color: $bgcolor--red;
+    border: 1px solid $border-color--red;
+    color: $text-color--white;
 
     &:not(.ui-button--disabled) {
-      &:hover {
-        background-color: $bgcolor--red;
-        color: $text-color--white;
-      }
-
       &:active {
         background-color: $button-active--red;
         border-color: $button-active-border--red;
+      }
+
+      &:hover {
+        background-color: $bgcolor--red;
+        color: $text-color--white;
       }
     }
 
@@ -72,6 +73,11 @@ export default {
       font-size: 21px;
       font-family: 'Hoves-Bold';
       letter-spacing: -1px;
+    }
+
+    &--transparent-bgc {
+      background-color: transparent;
+      color: $text-color--red;
     }
   }
 </style>

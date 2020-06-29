@@ -4,13 +4,13 @@
 			<h4 class="footer-contacts__title">Call us:</h4>
 			<ul class="footer-contacts__phones-list">
 				<li>
-					<a href="tel:+1 888 401 3401" class="footer-contacts__phone-item">
+					<a href="tel:+1 833-MADDEVS" class="footer-contacts__phone-item">
 						<img src="@/assets/img/Flags/united-states.svg" alt="United States">
 						+1 833-MADDEVS
 					</a>
 				</li>
 				<li>
-					<a href="tel:+1 888 401 3401" class="footer-contacts__phone-item">
+					<a href="tel:+44 20 3984 8555" class="footer-contacts__phone-item">
 						<img src="@/assets/img/Flags/united-kingdom.svg" alt="United Kingdom">
 						+44 20 3984 8555
 					</a>
