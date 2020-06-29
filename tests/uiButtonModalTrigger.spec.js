@@ -11,9 +11,7 @@ describe('Ui button modal trigger', () => {
       propsData: {
         buttonInnerText: 'Some button name',
         modalWindowName: 'Some modal window name',
-        isRed: true,
-        isBlack: false,
-        isGrey: false
+        isRed: true
       },
       mocks: {
         $modal: {
