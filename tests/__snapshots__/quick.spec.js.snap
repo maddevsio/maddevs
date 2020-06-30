@@ -179,14 +179,10 @@ exports[`Quick Project Start renders correctly 1`] = `
     >
       <button
         class="ui-button-modal-trigger ui-button-modal-trigger--red"
-        style="position: relative; overflow: hidden;"
       >
         
   Order a project from us
 
-        <div
-          class="wave"
-        />
       </button>
     </div>
   </div>

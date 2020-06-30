@@ -6,6 +6,7 @@
       type="file"
       @change="onFileChanged"
       name="file"
+      accept=".pdf,.cv,.doc,.odt,.docx,.txt"
       id="file"
     />
     <span class="none-decorated-dash" v-if="selectedFile">–</span>

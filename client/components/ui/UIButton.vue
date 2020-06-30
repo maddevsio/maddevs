@@ -3,7 +3,7 @@
     class="ui-button"
     :class="{ 'ui-button--disabled': disabled }"
     @click="onClick"
-    v-WaveAnimation
+    v-WaveAnimation="!disabled"
   >{{ name }}</button>
 </template>
 

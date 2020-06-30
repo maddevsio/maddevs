@@ -1,7 +1,7 @@
 <template>
   <button 
     class="ui-button-modal-trigger" 
-    :class="{'ui-button-modal-trigger--red':isRed, 'ui-button-modal-trigger--black':isBlack, 'ui-button-modal-trigger--grey':isGrey}"
+    :class="{ 'ui-button-modal-trigger--red': isRed, 'ui-button-modal-trigger--black': isBlack, 'ui-button-modal-trigger--grey': isGrey }"
     @click="showModal()"
     v-WaveAnimation
   >

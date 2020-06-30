@@ -5,6 +5,7 @@ exports[`FileInput component renders correctly 1`] = `
   class="file-input"
 >
   <input
+    accept=".pdf,.cv,.doc,.odt,.docx,.txt"
     class="file-input__uploader"
     id="file"
     name="file"
