@@ -186,14 +186,10 @@ exports[`Header renders correctly 1`] = `
            
           <button
             class="ui-button-modal-trigger ui-button-modal-trigger--red"
-            style="position: relative; overflow: hidden;"
           >
             
   Contact me
 
-            <div
-              class="wave"
-            />
           </button>
         </div>
       </div>
@@ -276,14 +272,10 @@ exports[`Header renders correctly 1`] = `
          
         <button
           class="ui-button-modal-trigger mobile-header__modal-trigger-btn ui-button-modal-trigger--red"
-          style="position: relative; overflow: hidden;"
         >
           
   Contact me
 
-          <div
-            class="wave"
-          />
         </button>
          
         <div

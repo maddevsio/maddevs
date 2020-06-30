@@ -36,9 +36,11 @@ export default {
   border: 0;
   align-self: center;
 
-  &:active {
-    background-color: $button-active--red;
-    border-color: $button-active-border--red;
+  &:not(.is-disabled) {
+    &:active {
+      background-color: $button-active--red;
+      border-color: $button-active-border--red;
+    }
   }
 
   @media only screen and (max-width: 768px) {

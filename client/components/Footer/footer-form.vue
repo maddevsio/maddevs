@@ -6,8 +6,10 @@
           <input type="text" class="entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
-        <ValidationProvider class="field-item" rules="email|required" v-slot="{ classes, errors }">
-          <input type="text" class="entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
+        <ValidationProvider class="field-item footer-form_email" rules="email|required" v-slot="{ classes, errors }">
+          <div v-PlaceholderAsterisk="'your@mail.com'">
+            <input type="text" class="entry-field" :class="classes" v-model="email">
+          </div>
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
         <ValidationProvider class="field-item" rules="max:500" v-slot="{ classes, errors }">
@@ -35,6 +37,7 @@
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import UIButton from '@/components/ui/UIButton';
 import SuccessModal from '@/components/Modals/success-modal';
+import PlaceholderAsterisk from '@/directives/PlaceholderAsterisk';
 
 export default {
   name: 'footer-form',
@@ -43,10 +46,13 @@ export default {
     UIButton,
     SuccessModal
   },
+  directives: {
+    PlaceholderAsterisk
+  },
   data: () => ({
     fullName: null,
     email: null,
-    projectDescriber: null,
+    projectDescriber: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
     isEmailSent: false,
@@ -94,7 +100,7 @@ export default {
       this.$refs.checkboxes.reset();
       this.fullName = null;
       this.email = null;
-      this.projectDescriber = null;
+      this.projectDescriber = '';
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
       this.isEmailSent = false;
@@ -107,7 +113,22 @@ export default {
   @import '../../assets/styles/vars';
 
 	.footer-form {
-		width: 450px;
+    width: 450px;
+    
+    &_email {
+      /deep/ .v-placeholder-asterisk {
+        font-size: 18px;
+        color: $bgcolor--grey;
+        font-family: 'Hoves-Regular';
+        left: 10px !important;
+        top: 50% !important;
+        transform: translateY(-50%);
+
+        span {
+          opacity: 0.5;
+        }
+      }
+    }
 
 		button {
       width: 100%;

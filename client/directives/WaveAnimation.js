@@ -15,20 +15,36 @@ const startAnimation = e => {
   }
 };
 
-const WaveAnimation = {
-  bind(el, binding) {
+const createWave = (el, binding) => {
+  if (binding.value && binding.value !== false) {
     const wave = document.createElement('div');
     el.style.position = 'relative';
     el.style.overflow = 'hidden';
     wave.classList.add('wave');
-    if (binding.modifiers.dark && binding.expression === 'true') {
+    if (binding.modifiers.dark) {
       wave.classList.add('wave--dark');
     }
     el.appendChild(wave);
     el.addEventListener('click', startAnimation);
+  }
+};
+
+const WaveAnimation = {
+  bind(el, binding) {
+    createWave(el, binding);
+  },
+  update(el, binding) {
+    const wave = el.querySelector('.wave');
+    if (wave) {
+      el.removeChild(wave);
+    } else {
+      createWave(el, binding);
+    }
   },
   unbind(el) {
-    el.removeEventListener('click', startAnimation);
+    if (el) {
+      el.removeEventListener('click', startAnimation);
+    }
   }
 };
 
