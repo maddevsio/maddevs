@@ -1,5 +1,5 @@
 const listenInputEvent = e => {
-  const pl = e.target.parentNode.querySelector('.v-placeholder');
+  const pl = e.target.parentNode.querySelector('.v-placeholder-asterisk');
   if (e.target && e.target.value !== '') {
     pl.style.opacity = 0;
     pl.style.visibility = 'hidden';
@@ -9,7 +9,7 @@ const listenInputEvent = e => {
   }
 };
 
-const Placeholder = {
+const PlaceholderAsterisk = {
   bind(el, binding) {
     const placeholder = document.createElement('div');
     const span = document.createElement('span');
@@ -19,7 +19,7 @@ const Placeholder = {
     asterisk.innerText = '*';
     asterisk.style.color = 'red';
     asterisk.style.marginLeft = '3px';
-    placeholder.classList.add('v-placeholder');
+    placeholder.classList.add('v-placeholder-asterisk');
     placeholder.style.pointerEvents = 'none';
     placeholder.style.position = 'absolute';
     placeholder.style.top = 0;
@@ -39,4 +39,4 @@ const Placeholder = {
   }
 };
 
-export default Placeholder;
+export default PlaceholderAsterisk;

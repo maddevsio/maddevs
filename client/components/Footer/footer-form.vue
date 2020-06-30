@@ -7,7 +7,7 @@
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
         <ValidationProvider class="field-item footer-form_email" rules="email|required" v-slot="{ classes, errors }">
-          <div v-Placeholder="'your@mail.com'">
+          <div v-PlaceholderAsterisk="'your@mail.com'">
             <input type="text" class="entry-field" :class="classes" v-model="email">
           </div>
           <span class="error-text">{{ errors[0] }}</span>
@@ -37,7 +37,7 @@
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import UIButton from '@/components/ui/UIButton';
 import SuccessModal from '@/components/Modals/success-modal';
-import Placeholder from '@/directives/Placeholder';
+import PlaceholderAsterisk from '@/directives/PlaceholderAsterisk';
 
 export default {
   name: 'footer-form',
@@ -47,7 +47,7 @@ export default {
     SuccessModal
   },
   directives: {
-    Placeholder
+    PlaceholderAsterisk
   },
   data: () => ({
     fullName: null,
@@ -116,7 +116,7 @@ export default {
     width: 450px;
     
     &_email {
-      /deep/ .v-placeholder {
+      /deep/ .v-placeholder-asterisk {
         font-size: 18px;
         color: $bgcolor--grey;
         font-family: 'Hoves-Regular';
