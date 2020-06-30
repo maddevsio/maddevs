@@ -114,7 +114,7 @@ export default {
   @media only screen and (max-width: 640px) {
 		/deep/.modal_container {
       width: 100% !important;
-      height: 100vh !important;
+      height: 100% !important;
       padding: 63px 0 0 12px;
 
       .form {
