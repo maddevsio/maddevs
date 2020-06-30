@@ -73,7 +73,7 @@
               </li>
               <li class="careers__form-list-item file-attach">
                 <ValidationProvider
-                  rules="required"
+                  rules="ext:pdf,doc,docx|required|size:5000"
                   v-slot="{ classes, errors }"
                 >
                   <FileInput v-model="selectedFile" @input="onFileChanged" ref="fileInput" />
