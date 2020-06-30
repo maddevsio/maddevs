@@ -44,7 +44,7 @@ export default {
     return {
       TechnologyStack: {
         title: 'Technology Stack',
-        subTitle: 'Tired of the slow and hard-to- maintain technology that your previous team used?',
+        subTitle: 'Tired of the slow and hard-to-maintain technology that your previous team used?',
         paragraph: 'We’ll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.'
       },
       ProcessAudit: {
