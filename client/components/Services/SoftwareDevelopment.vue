@@ -29,6 +29,7 @@
         <UIButtonModalTrigger 
           :buttonInnerText="buttonInnerText"
           :modalWindowName="modalWindowName"
+          :isGrey="true"
         />
     </div>
   </section>
