@@ -111,7 +111,7 @@ export default {
 		/deep/.modal_container {
       width: 100% !important;
       height: 100% !important;
-      padding: 63px 12px 0;
+      padding: 63px 0 0 12px;
 
       .form {
         padding-right: 15px;
