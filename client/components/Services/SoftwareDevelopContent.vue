@@ -149,6 +149,10 @@ export default {
         letter-spacing: -1px;
       }
 
+      &__mobile-title-icon {
+        margin: 0 11px -10px -12px;
+      }
+
       /deep/.icons-list {
         flex-wrap: wrap;
       }
@@ -159,14 +163,6 @@ export default {
         &:last-child {
           flex-direction: row;
         }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1270px) {
-    .software-development_content {
-      &__last-character {
-        margin-left: -26px;
       }
     }
   }
@@ -264,6 +260,10 @@ export default {
 
       &__title {
         padding-bottom: 13px;
+      }
+
+      &__mobile-title-icon {
+        margin: 0 0 -8px -22px;
       }
     }
   }
