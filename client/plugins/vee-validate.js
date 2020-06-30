@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import { ValidationObserver, ValidationProvider, extend, configure } from 'vee-validate';
-import { required, email, max } from 'vee-validate/dist/rules';
+import { required, email, max, size, ext } from 'vee-validate/dist/rules';
 
 Vue.component('ValidationObserver', ValidationObserver);
 Vue.component('ValidationProvider', ValidationProvider);
@@ -17,7 +17,7 @@ const phoneNumber = {
 
 extend('required', {
   ...required,
-  message: 'This field is required'
+  message: 'This field is required.'
 });
 
 extend('email', {
@@ -28,7 +28,18 @@ extend('email', {
 extend('max', {
   ...max,
   params: ['length'],
-  message: 'Sorry, the number of characters in this field should not exceed {length}'
+  message: 'Sorry, the number of characters in this field should not exceed {length}.'
+});
+
+extend('size', {
+  ...size,
+  params: ['size'],
+  message: 'Sorry, file size has exceeded its max limit of 5MB.'
+});
+
+extend('ext', {
+  ...ext,
+  message: 'Please, upload a file with one of the following extensions: pdf, doc, docx.'
 });
 
 extend('phone', {
