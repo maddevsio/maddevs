@@ -48,6 +48,5 @@ describe('Ui button modal trigger', () => {
   test('Should call two events', () => {
     wrapper.vm.showModal();
     expect(wrapper.vm.$modal.show).toHaveBeenCalled();
-    expect(wrapper.vm.$nuxt.$emit).toHaveBeenCalled();
   });
 });

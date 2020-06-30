@@ -44,10 +44,14 @@ export default {
   methods: {
     hideModal() {
       this.isEmailSent = false;
-      this.$nuxt.$emit('tooglePageScrollBar', false);
+      this.enableScrollOnBody();
     },
     onClose() {
       this.$modal.hide(this.$props.name);
+      this.enableScrollOnBody();
+    },
+    enableScrollOnBody() {
+      document.body.classList.remove('scrollDisabled');
     }
   }
 };

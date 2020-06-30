@@ -25,7 +25,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .success-message {
-    background-color: $bgcolor--black;
+    background-color: $modal-bg-color;
     padding: 30px 60px;
 
     &__title {

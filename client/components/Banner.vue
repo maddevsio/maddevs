@@ -739,14 +739,12 @@ export default {
         display: block;
       }
 
-      .hover-image,
       .default-image,
       .green-image {
         display: block;
         position: absolute;
       }
 
-      .hover-image,
       .default-image {
         width: 142px;
         top: 44%;
@@ -763,7 +761,6 @@ export default {
 
   @media only screen and (max-width: 400px) {
     .services {
-      .hover-image,
       .default-image {
         top: 42.5%;
         left: 61%;
@@ -778,7 +775,6 @@ export default {
 
   @media only screen and (max-width: 384px) {
     .services {
-      .hover-image,
       .default-image {
         left: 58%;
       }
@@ -791,7 +787,6 @@ export default {
 
   @media only screen and (max-width: 375px) {
     .services {
-      .hover-image,
       .default-image {
         top: 40%;
         left: 59%;
@@ -806,7 +801,6 @@ export default {
 
   @media only screen and (max-width: 360px) {
     .services {
-      .hover-image,
       .default-image {
         width: 125px;
         top: 56%;
@@ -823,7 +817,6 @@ export default {
 
   @media only screen and (max-width: 355px) {
     .services {
-      .hover-image,
       .default-image {
         top: 38%;
         left: 61%;
@@ -857,7 +850,6 @@ export default {
 
   @media only screen and (max-width: 320px) {
     .services {
-      .hover-image,
       .default-image {
         width: 105px;
         top: 40%;
