@@ -42,7 +42,10 @@ export default {
   methods: {
     showModal() {
       this.$modal.show(this.$props.modalWindowName);
-      this.$nuxt.$emit('tooglePageScrollBar', true);
+      this.disableScrollOnBody();
+    },
+    disableScrollOnBody() {
+      document.body.classList.add('scrollDisabled');
     }
   }
 };

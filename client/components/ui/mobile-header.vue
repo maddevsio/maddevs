@@ -145,7 +145,7 @@ export default {
 		}
 
 		&__contacts {
-			padding-bottom: 42px;
+			padding-bottom: 22px;
 		}
 
 		.footer-contacts {
