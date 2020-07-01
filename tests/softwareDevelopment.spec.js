@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import SoftwareDevelopment from '@/components/Services/SoftwareDevelopment.vue';
+import SoftwareDevelopment from '@/components/Services/SoftwareDevelopment';
 
 describe('SoftwareDevelopment', () => {
   let wrapper;
@@ -36,10 +36,11 @@ describe('SoftwareDevelopment', () => {
   beforeEach(() => {
     wrapper = mount(SoftwareDevelopment);
   });
+
   test('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
+
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
