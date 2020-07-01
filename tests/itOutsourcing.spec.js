@@ -2,7 +2,6 @@ import {
   mount
 } from '@vue/test-utils';
 import ItOutsourcing from '@/components/Services/ItOutsourcing.vue';
-import OutsourcingContent from '@/components/Services/OutsourcingContent.vue';
 
 describe('IT Outsourcing', () => {
   let wrapper;
