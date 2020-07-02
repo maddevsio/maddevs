@@ -44,10 +44,22 @@ module.exports = testResults => {
     return '#00FF00';
   };
 
+  const getTotalCoveragePercentage = percentages => {
+    const sumPercentages = percentages.reduce((a, b) => {
+      return (+a) + (+b);
+    });
+    return (sumPercentages / percentages.length).toFixed(2);
+  };
+
   const createMessage = vars => {
+    const percentages = [vars.statements.coverage, vars.branches.coverage, vars.lines.coverage, vars.functions.coverage];
     const message = {
       text: testResults.numFailedTests > 0 ? errText : passingText,
       attachments: [
+        {
+          text: `*Total coverage percentage*: ${getTotalCoveragePercentage(percentages)}%`,
+          color: getColor(getTotalCoveragePercentage(percentages))
+        },
         {
           text: `Statements: ${vars.statements.coverage}%`,
           color: vars.statements.color
