@@ -44,10 +44,14 @@ export default {
   methods: {
     hideModal() {
       this.isEmailSent = false;
-      this.$nuxt.$emit('tooglePageScrollBar', false);
+      this.enableScrollOnBody();
     },
     onClose() {
       this.$modal.hide(this.$props.name);
+      this.enableScrollOnBody();
+    },
+    enableScrollOnBody() {
+      document.body.classList.remove('scrollDisabled');
     }
   }
 };
@@ -111,7 +115,7 @@ export default {
 		/deep/.modal_container {
       width: 100% !important;
       height: 100% !important;
-      padding: 63px 12px 0;
+      padding: 63px 0 0 12px;
 
       .form {
         padding-right: 15px;

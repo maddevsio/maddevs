@@ -19,8 +19,8 @@
       </div>
       <div class="quick-project_start__button-wrap">
         <UIButtonModalTrigger 
-          :buttonInnerText="buttonInnerText" 
-          :modalWindowName="modalWindowName" 
+          :buttonInnerText="buttonInnerText"
+          :modalWindowName="modalWindowName"
           :isRed="true"
         />
       </div>

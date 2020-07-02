@@ -1,0 +1,389 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SoftwareDevelopment renders correctly 1`] = `
+<section
+  class="software-development main-parent-item"
+  id="software-development"
+>
+  <div
+    class="container"
+  >
+    <h2
+      class="software-development__main-title main-title"
+    >
+      <span>
+        Software
+      </span>
+      <br />
+      Development
+      
+    </h2>
+     
+    <div
+      class="software-development__flex-wrapper flex-wrapper"
+    >
+      <div
+        class="software-development_content"
+      >
+        <div
+          class="software-development_content__content-item_wrapper"
+        >
+          <h3
+            class="software-development_content__title title"
+          >
+            Backend
+          </h3>
+           
+          <h4
+            class="software-development_content__sub-title sub-title"
+          >
+            Your MVP doesn't work as expected after launch?
+          </h4>
+           
+          <p
+            class="software-development_content__paragraph paragraph"
+          >
+            Let our positively mad team rescue you and create sensible server logic for your project.
+          </p>
+           
+          <p
+            class="software-development_content__paragraph paragraph"
+          >
+            We'll cure your growth pains like good doctors – just tell us about them and focus on your business.
+          </p>
+           
+          <p
+            class="software-development_content__paragraph paragraph"
+          >
+            At Mad Devs we know everything about:
+          </p>
+           
+          <div
+            class="icons-list"
+          >
+            <div
+              class="icon-flex_group"
+            >
+              <div
+                class="icon-item"
+              >
+                <img
+                  alt="Python"
+                  src="../../assets/img/Technologies/svg/pyton.svg"
+                />
+                 
+                <span>
+                  Python
+                </span>
+              </div>
+               
+              <div
+                class="icon-item"
+              >
+                <img
+                  alt="Golang"
+                  src="../../assets/img/Technologies/svg/golang.svg"
+                />
+                 
+                <span>
+                  Go
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="icon-flex_group"
+            >
+              <div
+                class="icon-item"
+              >
+                <img
+                  alt="JavaScript"
+                  src="../../assets/img/Technologies/svg/javascript.svg"
+                />
+                 
+                <span>
+                  JavaScript
+                </span>
+              </div>
+               
+              <div
+                class="icon-item"
+              >
+                <img
+                  alt="PHP"
+                  src="../../assets/img/Technologies/svg/php.svg"
+                />
+                 
+                <span>
+                  PHP
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="icon-flex_group"
+            >
+              <div
+                class="icon-item"
+              >
+                <img
+                  alt="Node.js"
+                  src="../../assets/img/Technologies/svg/node-js.svg"
+                />
+                 
+                <span>
+                  Node.js
+                </span>
+              </div>
+               
+              <div
+                class="icon-item"
+              >
+                <img
+                  alt="Ruby"
+                  src="../../assets/img/Technologies/svg/ruby.svg"
+                />
+                 
+                <span>
+                  Ruby
+                </span>
+              </div>
+            </div>
+          </div>
+           
+          <!---->
+           
+          <!---->
+        </div>
+      </div>
+       
+      <div
+        class="software-development_content frontend-item"
+      >
+        <div
+          class="software-development_content__content-item_wrapper"
+        >
+          <h3
+            class="software-development_content__title title"
+          >
+            Frontend
+          </h3>
+           
+          <h4
+            class="software-development_content__sub-title sub-title"
+          >
+            Your users get lost in lousy interfaces?
+          </h4>
+           
+          <p
+            class="software-development_content__paragraph paragraph"
+          >
+            Our wizards will take your UX magic to the next level where everything is intuitive and user-friendly. Mad Devs strive to get involved with well-polished projects that will live a long life.
+          </p>
+           
+          <p
+            class="software-development_content__paragraph paragraph"
+          >
+            We work with the best present-day frontend stack:
+          </p>
+           
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="icons-list"
+          >
+            <div
+              class="icon-flex_group"
+            >
+              <div
+                class="icon-item"
+              >
+                <img
+                  alt="react-js"
+                  src="../../assets/img/Technologies/svg/react-js.svg"
+                />
+                 
+                <span>
+                  React
+                </span>
+              </div>
+               
+              <div
+                class="icon-item"
+              >
+                <img
+                  alt="babel"
+                  src="../../assets/img/Technologies/svg/Babel.svg"
+                />
+                 
+                <span>
+                  Babel
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="icon-flex_group"
+            >
+              <div
+                class="icon-item"
+              >
+                <img
+                  alt="vue-js"
+                  src="../../assets/img/Technologies/svg/vue.svg"
+                />
+                 
+                <span>
+                  Vue.js
+                </span>
+              </div>
+               
+              <div
+                class="icon-item"
+              >
+                <img
+                  alt="webpack"
+                  src="../../assets/img/Technologies/svg/webpack.svg"
+                />
+                 
+                <span>
+                  Webpack
+                </span>
+              </div>
+            </div>
+          </div>
+           
+          <!---->
+        </div>
+      </div>
+       
+      <div
+        class="software-development_content"
+      >
+        <div
+          class="software-development_content__content-item_wrapper"
+        >
+          <h3
+            class="software-development_content__title title"
+          >
+            <span>
+              Mobi
+            </span>
+             
+            <img
+              alt="phone-title-symbol"
+              class="software-development_content__mobile-title-icon title-icon"
+              src="../../assets/img/Services/svg/phone-title-symbol.svg"
+            />
+             
+            <span
+              class="software-development_content__last-character last-character"
+            >
+              e
+            </span>
+          </h3>
+           
+          <h4
+            class="software-development_content__sub-title sub-title"
+          >
+            Your app is slow and unable to survive a demo?
+          </h4>
+           
+          <p
+            class="software-development_content__paragraph paragraph"
+          >
+            We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you'll be ecstatic to use yourself.
+          </p>
+           
+          <p
+            class="software-development_content__paragraph paragraph"
+          >
+            We do both iOS and Android development using the following languages and frameworks:
+          </p>
+           
+          <!---->
+           
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="icons-list"
+          >
+            <div
+              class="icon-flex_group"
+            >
+              <div
+                class="icon-item"
+              >
+                <img
+                  alt="Kotlin"
+                  src="../../assets/img/Technologies/svg/kotlin.svg"
+                />
+                 
+                <span>
+                  Kotlin
+                </span>
+              </div>
+               
+              <div
+                class="icon-item"
+              >
+                <img
+                  alt="Java"
+                  src="../../assets/img/Technologies/svg/java.svg"
+                />
+                 
+                <span>
+                  Java
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="icon-flex_group"
+            >
+              <div
+                class="icon-item"
+              >
+                <img
+                  alt="Objective-C"
+                  src="../../assets/img/Technologies/svg/objective.svg"
+                />
+                 
+                <span>
+                  Objective-C
+                </span>
+              </div>
+               
+              <div
+                class="icon-item"
+              >
+                <img
+                  alt="Swift"
+                  src="../../assets/img/Technologies/svg/swift.svg"
+                />
+                 
+                <span>
+                  Swift
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <button
+      class="ui-button-modal-trigger ui-button-modal-trigger--grey"
+    >
+      
+  Get your trusted IT partner
+
+    </button>
+  </div>
+</section>
+`;
