@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Outsourcing content renders correctly 1`] = `
+exports[`ItConsultingContent component renders correctly 1`] = `
 <div
   class="it-consulting__content-item"
 >

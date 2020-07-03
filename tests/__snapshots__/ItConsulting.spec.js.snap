@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Customer Testimonials Mobile Slider renders correctly 1`] = `
+exports[`ItСonsulting component renders correctly 1`] = `
 <section
   class="it-consulting main-parent-item"
   id="it-consulting"
