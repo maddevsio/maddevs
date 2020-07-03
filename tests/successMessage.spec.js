@@ -11,7 +11,6 @@ describe('Success message', () => {
     wrapper = mount(SuccessModal);
   });
 
-  // ------ IMPORTANT ----- //
   test('is Vue\'s instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
@@ -19,5 +18,13 @@ describe('Success message', () => {
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
-  // --------------------- //
+
+  test('should call close emit twice', () => {
+    expect(wrapper.emitted().close).toBeFalsy();
+    wrapper.vm.close();
+    expect(wrapper.emitted().close.length).toBe(1);
+    wrapper.vm.$emit('close');
+    expect(wrapper.emitted().close).toBeTruthy();
+    expect(wrapper.emitted().close.length).toBe(2);
+  });
 });
