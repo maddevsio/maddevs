@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IT Outsourcing renders correctly 1`] = `
+exports[`TechnologiesAndTools renders correctly 1`] = `
 <section
   class="technologies-and_tools"
   id="technologies-and-tools"
