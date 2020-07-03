@@ -3,6 +3,7 @@
 exports[`Button component renders correctly 1`] = `
 <button
   class="button form-text"
+  id="careers-btn"
 >
   Btn text
 </button>

@@ -1,5 +1,5 @@
 <template>
-  <button class="button form-text" :class="{ 'is-disabled': disabled }" @click="callback">
+  <button id="careers-btn" class="button form-text" :class="{ 'is-disabled': disabled }" @click="callback">
     <slot></slot>
   </button>
 </template>

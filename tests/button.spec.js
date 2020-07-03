@@ -11,6 +11,9 @@ describe('Button component', () => {
       parentComponent: CareersForm,
       slots: {
         default: 'Btn text'
+      },
+      propsData: {
+        disabled: false
       }
     });
   });
@@ -37,5 +40,43 @@ describe('Button component', () => {
     wrapper.vm.$emit('click');
     expect(wrapper.emitted().click).toBeTruthy();
     expect(wrapper.emitted().click.length).toBe(1);
+  });
+
+  test('should test click emit', () => {
+    wrapper = mount(Button);
+    wrapper.vm.$emit('click');
+    expect(wrapper.find('#careers-btn').exists()).toBe(true);
+    const button = wrapper.find('#careers-btn');
+    button.trigger('click');
+    expect(wrapper.emitted().click).toBeTruthy();
+    expect(wrapper.emitted().click.length).toBe(2);
+  });
+
+  test('correctly sets props and recognizes click event', () => {
+    wrapper = mount(Button, {
+      parentComponent: CareersForm,
+      slots: {
+        default: 'Btn text'
+      },
+      propsData: {
+        disabled: true
+      }
+    });
+
+    expect(wrapper.props().disabled).toBe(true);
+    expect(wrapper.find('#careers-btn').exists()).toBe(true);
+    const button = wrapper.find('#careers-btn');
+    button.trigger('click');
+    expect(wrapper.emitted().click).toBeFalsy();
+
+    wrapper = mount(Button, {
+      parentComponent: CareersForm,
+      slots: {
+        default: 'Btn text'
+      },
+      propsData: {
+        disabled: false
+      }
+    });
   });
 });
