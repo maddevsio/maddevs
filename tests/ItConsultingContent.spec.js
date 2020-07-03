@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils';
 import ItConsultingContent from '@/components/Services/ItConsultingContent.vue';
 
-describe('Outsourcing content', () => {
+describe('ItConsultingContent component', () => {
   let wrapper;
 
   beforeEach(() => {

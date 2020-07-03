@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils';
 import ItСonsulting from '@/components/Services/ItСonsulting.vue';
 
-describe('Customer Testimonials Mobile Slider', () => {
+describe('ItСonsulting component', () => {
   let wrapper;
   const data = {
     TechnologyStack: {
