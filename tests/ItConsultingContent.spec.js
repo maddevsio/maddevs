@@ -22,7 +22,7 @@ describe('ItConsultingContent component', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
 
-  test('correctly props data', () => {
+  test('correctly passed props data', () => {
     expect(wrapper.props().title).toBe('Title');
     expect(wrapper.props().subTitle).toBe('Sub title');
     expect(wrapper.props().paragraph).toBe('Paragraph');
