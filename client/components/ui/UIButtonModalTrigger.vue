@@ -39,13 +39,21 @@ export default {
       default: false
     }
   },
+  mounted() {
+    window.addEventListener('scroll', () => {
+      document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+    });
+  },
   methods: {
     showModal() {
       this.$modal.show(this.$props.modalWindowName);
       this.disableScrollOnBody();
     },
     disableScrollOnBody() {
-      document.body.classList.add('scrollDisabled');
+      const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+      const body = document.body;
+      body.style.position = 'fixed';
+      body.style.top = `-${scrollY}`;
     }
   }
 };

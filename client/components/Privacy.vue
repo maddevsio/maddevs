@@ -3,7 +3,7 @@
     <div class="container">
       <div class="privacy__header">
         <h3 class="privacy__title title">
-          Website Acceptable Use Terms
+          Privacy Policy: Website Acceptable Use Terms 
         </h3>
         <img
           class="privacy__image"
