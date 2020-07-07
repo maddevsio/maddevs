@@ -3,7 +3,7 @@
     <div class="container">
       <div class="why-us__title-wrap">
         <h2 class="why-us__main-title">Why us?</h2>
-        <div class="why-us__sub-title why-us__customer-rates-sub-title title">Fantastic customer <br> satisfaction rates:</div>
+        <div class="why-us__sub-title why-us__customer-rates-sub-title title">Impressive customer satisfaction rates</div>
       </div>
       <div class="why-us__statistics-wrap">
         <div class="why-us__customer-rates">
@@ -82,7 +82,7 @@
                 30+
               </div>
               <p class="why-us__item_description paragraph">
-                tech bloggers and conference <br> speakers on our team.
+                tech bloggers and conference <br> speakers in our team.
               </p>
             </div>
           </div>

@@ -36,7 +36,7 @@
           :inputId="inputId"
         />
         <UIButton
-          name="Order a project from us"
+          name="Submit your project"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
         />

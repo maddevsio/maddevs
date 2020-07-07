@@ -428,7 +428,7 @@ exports[`Header renders correctly 1`] = `
              
             <a
               class="footer-social-network__social-newtork_link"
-              href="https://www.facebook.com/maddevsio"
+              href="https://www.facebook.com/maddevsllc"
               target="_blank"
             >
               <img
@@ -471,30 +471,6 @@ exports[`Header renders correctly 1`] = `
                 alt="Mad Devs Twitter"
                 class="footer-social-network__twitter"
                 src="../../assets/img/Footer/twitter.svg"
-              />
-            </a>
-             
-            <a
-              class="footer-social-network__social-newtork_link"
-              href="https://www.slideshare.net/maddevs/presentations"
-              target="_blank"
-            >
-              <img
-                alt="Mad Devs Slideshare"
-                class="footer-social-network__slideshare"
-                src="../../assets/img/Footer/slideshare.svg"
-              />
-            </a>
-             
-            <a
-              class="footer-social-network__social-newtork_link"
-              href="https://www.youtube.com/channel/UCF6liiudpZq6AQe6hXVEW7w"
-              target="_blank"
-            >
-              <img
-                alt="Mad Devs YouTube"
-                class="footer-social-network__youtube"
-                src="../../assets/img/Footer/youtube.svg"
               />
             </a>
              

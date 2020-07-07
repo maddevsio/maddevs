@@ -11,7 +11,7 @@
       >
       <span class="checkmark"></span>
     </label>
-    <label class="form-checkbox-label" :for="`marketing-communications-${inputId}`">I agree to get Mad Devs’ discount offers and other marketing communications
+    <label class="form-checkbox-label" :for="`marketing-communications-${inputId}`">I agree to get Mad Devs’ discount offers and other marketing communications.
       <input
         ref="marketingCommunications"
         class="form-checkbox-input"

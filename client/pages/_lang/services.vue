@@ -1,7 +1,7 @@
 <template>
   <main class="main">
     <Banner />
-    <ItOutsourcing />
+    <RemoteTechStaff />
     <SoftwareDevelopment />
     <InfrastructureOptimisation />
     <ItConsulting />
@@ -10,7 +10,7 @@
 
 <script>
 import Banner from '@/components/Banner';
-import ItOutsourcing from '@/components/Services/ItOutsourcing';
+import RemoteTechStaff from '@/components/Services/RemoteTechStaff';
 import SoftwareDevelopment from '@/components/Services/SoftwareDevelopment';
 import InfrastructureOptimisation from '@/components/Services/InfrastructureOptimisation';
 import ItConsulting from '@/components/Services/ItСonsulting';
@@ -19,7 +19,7 @@ export default {
   name: 'main-services',
   components: {
     Banner,
-    ItOutsourcing,
+    RemoteTechStaff,
     SoftwareDevelopment,
     InfrastructureOptimisation,
     ItConsulting

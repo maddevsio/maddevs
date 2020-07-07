@@ -4,7 +4,7 @@
 			<div class="footer__content">
 				<div class="footer__text-content">
 					<div class="footer__title-wrap">
-						<h2 class="footer__main-title main-title">Get In Touch</h2>
+						<h2 class="footer__main-title main-title">Get in Touch</h2>
 						<div class="footer__mail-wrapper">
 							<img src="@/assets/img/Footer/mail-icon.svg" alt="mail">
 							<a class="footer__mailto-link" href="mailto:team@maddevs.io">team@maddevs.io</a>

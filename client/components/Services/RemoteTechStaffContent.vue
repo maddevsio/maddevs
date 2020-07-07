@@ -1,30 +1,30 @@
 <template>
-  <div class="it-outsourcing__outsourcing-content">
-    <div class="it-outsourcing__content_wrapper">
-      <div class="it-outsourcing__content-wrap">
-        <div class="it-outsourcing__title-wrap">
-          <h3 class="it-outsourcing__title title default-title">{{ title }}</h3>
-          <h4 class="it-outsourcing__sub-title sub-title">{{ subTitle }}</h4>
+  <div class="remote-tech-staff-content__tech-staff">
+    <div class="remote-tech-staff-content__content_wrapper">
+      <div class="remote-tech-staff-content__content-wrap">
+        <div class="remote-tech-staff-content__title-wrap">
+          <h3 class="remote-tech-staff-content__title title default-title">{{ title }}</h3>
+          <h4 class="remote-tech-staff-content__sub-title sub-title">{{ subTitle }}</h4>
         </div>
         <img 
-          class="it-outsourcing__content-icon" 
+          class="remote-tech-staff-content__content-icon" 
           src="@/assets/img/Services/svg/individuals-symbol.svg" 
           alt="individuals-title-symbol"
           v-if="title === 'Individuals'"
         />
-        <img 
-          class="it-outsourcing__content-icon" 
+        <img
+          class="remote-tech-staff-content__content-icon" 
           src="@/assets/img/Services/svg/teams-symbol.svg" 
           alt="teams-title-symbol"
           v-if="title === 'Teams'"
         />
       </div>
-      <p class="it-outsourcing__paragraph paragraph">{{ paragraph }}</p>
+      <p class="remote-tech-staff-content__paragraph paragraph">{{ paragraph }}</p>
     </div>
     <UIButtonModalTrigger 
       :buttonInnerText="buttonInnerText"
       :modalWindowName="modalWindowName" 
-      class="it-outsourcing__ui-button-modal-trigger"
+      class="remote-tech-staff-content__ui-button-modal-trigger"
     />
   </div>
 </template>
@@ -33,7 +33,7 @@
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 
 export default {
-  name: 'OutsourcingContent',
+  name: 'RemoteTechStaffContent',
   props: {
     title: {
       type: String,
@@ -66,12 +66,10 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
 
-  .it-outsourcing {
+  .remote-tech-staff-content {
     &__ui-button-modal-trigger {
       width: 100%;
 
-      // Кнопка имеет уникальное поведение, cначала она имеет серый цвет, затем белый, такого поведения больше нигде не замечено, поэтому стили пишуться в этом компоненте
-      // Important используется чтобы перебить те стили которые выставляются на hover у родительского блока
       &:hover {
         background-color: $bgcolor--grey-light;
         color: $text-color--black !important;
@@ -90,7 +88,7 @@ export default {
       opacity: 40%;
     }
 
-    &__outsourcing-content {
+    &__tech-staff {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -128,7 +126,7 @@ export default {
   }
 
   .individuals {
-    .it-outsourcing__content-icon {
+    .remote-tech-staff-content__content-icon {
       padding-right: 14px;
     }
   }
@@ -136,19 +134,19 @@ export default {
   .teams,
   .individuals {
     &:hover {
-      .it-outsourcing__title,
-      .it-outsourcing__paragraph,
-      .it-outsourcing__sub-title,
-      .it-outsourcing__ui-button-modal-trigger {
+      .remote-tech-staff-content__title,
+      .remote-tech-staff-content__paragraph,
+      .remote-tech-staff-content__sub-title,
+      .remote-tech-staff-content__ui-button-modal-trigger {
         color: $text-color--grey-light;
         transition: 0.2s;
       }
 
-      .it-outsourcing__ui-button-modal-trigger {
+      .remote-tech-staff-content__ui-button-modal-trigger {
         border-color: $border-color--grey-light;
       }
 
-      .it-outsourcing__content-icon {
+      .remote-tech-staff-content__content-icon {
         opacity: 1;
         transition: 0.2s;
       }
@@ -156,7 +154,7 @@ export default {
   }
 
   @media only screen and (min-width: 1600px) {
-    .it-outsourcing {
+    .remote-tech-staff-content {
       &__sub-title {
         max-width: 85%;
       }
@@ -164,7 +162,7 @@ export default {
   }
 
   @media only screen and (max-width: 1280px) {
-    .it-outsourcing {
+    .remote-tech-staff-content {
       padding: 170px 0;
 
       &__main-title {
@@ -191,7 +189,7 @@ export default {
   }
 
   @media only screen and (max-width: 1180px) {
-    .it-outsourcing {
+    .remote-tech-staff-content {
       &__title {
         font-size: 50px;
         line-height: 110%;
@@ -205,7 +203,7 @@ export default {
   }
 
   @media only screen and (max-width: 1024px) {
-    .it-outsourcing {
+    .remote-tech-staff-content {
       button {
         width: initial;
       }
@@ -230,14 +228,14 @@ export default {
 
     .teams,
     .individuals * {
-      .it-outsourcing__paragraph {
+      .remote-tech-staff-content__paragraph {
         width: initial;
       }
     }
   }
 
   @media only screen and (max-width: 900px) {
-    .it-outsourcing {
+    .remote-tech-staff-content {
       &__content-icon {
         height: 115px;
         top: -25px;
@@ -250,7 +248,11 @@ export default {
   }
 
   @media only screen and (max-width: 878px) {
-    .it-outsourcing {
+    .remote-tech-staff-content {
+      &__tech-staff {
+        max-width: 100%;
+      }
+
       &__content-icon {
         height: 145px;
       }
@@ -258,7 +260,7 @@ export default {
   }
 
   @media only screen and (max-width: 768px) {
-    .it-outsourcing {
+    .remote-tech-staff-content {
       &__title {
         font-size: 47px;
         padding-bottom: 10px;
@@ -275,7 +277,7 @@ export default {
   }
 
   @media only screen and (max-width: 580px) {
-    .it-outsourcing {
+    .remote-tech-staff-content {
       &__content-icon {
         height: 125px;
         top: -13px;
@@ -284,7 +286,7 @@ export default {
   }
 
   @media only screen and (max-width: 520px) {
-    .it-outsourcing {
+    .remote-tech-staff-content {
       &__last-character {
         margin-left: -21px;
       }
@@ -296,7 +298,7 @@ export default {
   }
 
   @media only screen and (max-width: 375px) {
-    .it-outsourcing {
+    .remote-tech-staff-content {
       &__main-title {
         padding-bottom: 25px;
       }
@@ -325,7 +327,7 @@ export default {
   }
 
   @media only screen and (max-width: 345px) {
-    .it-outsourcing {
+    .remote-tech-staff-content {
       &__content-icon {
         height: 75px;
       }

@@ -1,7 +1,7 @@
 <template>
   <div class="navigation-wrap" v-if="currentPageName !== 'careers'" >
     <nav class="navigation-list" v-if="currentPageName === 'services'">
-      <a href="#it-outsourcing" class="navigation-item">IT Outsourcing</a>
+      <a href="#remote-tech-staff" class="navigation-item">Remote Tech Staff</a>
       <a href="#software-development" class="navigation-item">Software Development</a>
       <a href="#infrastructure-optimisation" class="navigation-item">Infrastructure Optimization</a>
       <a href="#it-consulting" class="navigation-item">IT Consulting</a>
@@ -12,7 +12,7 @@
       <a href="#open-source" class="navigation-item">Open-source pet projects</a>
     </nav>
     <nav class="navigation-list" v-else>
-      <router-link to="services/#it-outsourcing" class="navigation-item">IT Outsourcing</router-link>
+      <router-link to="services/#remote-tech-staff" class="navigation-item">Remote Tech Staff</router-link>
       <router-link to="services/#software-development" class="navigation-item">Software Development</router-link>
       <router-link to="services/#infrastructure-optimisation" class="navigation-item">Infrastructure Optimization</router-link>
       <router-link to="services/#it-consulting" class="navigation-item">IT Consulting</router-link>

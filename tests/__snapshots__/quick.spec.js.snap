@@ -51,7 +51,7 @@ exports[`Quick Project Start renders correctly 1`] = `
             <p
               class="quick-project_start__paragraph paragraph"
             >
-              Submit your project requestor project idea to us.
+              Submit your project request or project idea to us.
             </p>
           </div>
         </div>
@@ -167,7 +167,7 @@ exports[`Quick Project Start renders correctly 1`] = `
             <p
               class="quick-project_start__paragraph paragraph"
             >
-              You will get to know our team and we will organise the process.
+              You will get to know the team and we’ll start the project work.
             </p>
           </div>
         </div>
@@ -181,7 +181,7 @@ exports[`Quick Project Start renders correctly 1`] = `
         class="ui-button-modal-trigger ui-button-modal-trigger--red"
       >
         
-  Order a project from us
+  Submit your project
 
       </button>
     </div>

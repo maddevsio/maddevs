@@ -51,9 +51,9 @@ exports[`Banner renders correctly 1`] = `
         >
           <router-link-stub
             class="navigation-item"
-            to="services/#it-outsourcing"
+            to="services/#remote-tech-staff"
           >
-            IT Outsourcing
+            Remote Tech Staff
           </router-link-stub>
            
           <router-link-stub

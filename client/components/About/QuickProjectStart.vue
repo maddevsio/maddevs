@@ -41,7 +41,7 @@ export default {
       itemsTextContent: [
         {
           title: 'contact',
-          paragraph: 'Submit your project requestor project idea to us.'
+          paragraph: 'Submit your project request or project idea to us.'
         },
         {
           title: 'analysis',
@@ -57,11 +57,11 @@ export default {
         },
         {
           title: 'start',
-          paragraph: 'You will get to know our team and we will organise the process.'
+          paragraph: 'You will get to know the team and we’ll start the project work.'
         }
       ],
       modalWindowName: 'order-project-from-us-modal',
-      buttonInnerText: 'Order a project from us'
+      buttonInnerText: 'Submit your project'
     };
   }
 };

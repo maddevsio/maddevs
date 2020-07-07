@@ -1,10 +1,10 @@
 <template>
-  <section id="it-outsourcing" class="it-outsourcing main-parent-item">
+  <section id="remote-tech-staff" class="remote-tech-staff main-parent-item">
     <div class="container">
-      <div class="it-outsourcing__content-wrapper">
-        <h2 class="it-outsourcing__main-title main-title">IT Outsourcing</h2>
-        <div class="it-outsourcing__flex-wrapper flex-wrapper">
-          <OutsourcingContent 
+      <div class="remote-tech-staff__content-wrapper">
+        <h2 class="remote-tech-staff__main-title main-title">Remote Tech Staff</h2>
+        <div class="remote-tech-staff__flex-wrapper flex-wrapper">
+          <RemoteTechStaffContent 
             :title="teams.title" 
             :subTitle="teams.subTitle" 
             :paragraph="teams.paragraph"
@@ -12,7 +12,7 @@
             :modalWindowName="teams.modalWindowName"
             class="teams"
           />
-          <OutsourcingContent 
+          <RemoteTechStaffContent 
             :title="individuals.title" 
             :subTitle="individuals.subTitle" 
             :paragraph="individuals.paragraph"
@@ -27,12 +27,12 @@
 </template>
 
 <script>
-import OutsourcingContent from '@/components/Services/OutsourcingContent';
+import RemoteTechStaffContent from '@/components/Services/RemoteTechStaffContent';
 
 export default {
-  name: 'ItOutsourcing',
+  name: 'RemoteTechStaff',
   components: {
-    OutsourcingContent
+    RemoteTechStaffContent
   },
   data() {
     return {
@@ -58,7 +58,7 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
 
-  .it-outsourcing {
+  .remote-tech-staff {
     padding: 211px 0 105px;
     background-color: $bgcolor--black;
 
@@ -69,9 +69,9 @@ export default {
   }
 
   @media only screen and (min-width: 1024px) {
-    .it-outsourcing {
+    .remote-tech-staff {
       /deep/.teams {
-        .it-outsourcing__sub-title.sub-title {
+        .remote-tech-staff__sub-title.sub-title {
           margin-right: 10px;
         }
       }
@@ -79,7 +79,7 @@ export default {
   }
 
   @media only screen and (max-width: 878px) {
-    .it-outsourcing {
+    .remote-tech-staff {
       &__flex-wrapper {
         flex-direction: column;
       }
@@ -95,7 +95,7 @@ export default {
   }
 
   @media only screen and (max-width: 768px) {
-    .it-outsourcing {
+    .remote-tech-staff {
       padding: 140px 0 70px;
 
       &__main-title {
@@ -105,19 +105,19 @@ export default {
   }
 
   @media only screen and (max-width: 576px) {
-    .it-outsourcing {
+    .remote-tech-staff {
       padding: 120px 0 105px;
     }
   }
 
   @media only screen and (max-width: 520px) {
-    .it-outsourcing {
+    .remote-tech-staff {
       padding: 144px 0 0 0;
     }
   }
 
   @media only screen and (max-width: 375px) {
-    .it-outsourcing {
+    .remote-tech-staff {
       padding: 86px 0 20px;
 
       &__main-title {
