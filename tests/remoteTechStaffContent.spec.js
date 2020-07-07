@@ -1,13 +1,13 @@
 import {
   mount
 } from '@vue/test-utils';
-import OutsourcingContent from '@/components/Services/OutsourcingContent.vue';
+import RemoteTechStaffContent from '@/components/Services/RemoteTechStaffContent';
 
-describe('Outsourcing content', () => {
+describe('Remote tech staff content', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(OutsourcingContent, {
+    wrapper = mount(RemoteTechStaffContent, {
       propsData: {
         title: 'Title',
         subTitle: 'Sub title',

@@ -20,9 +20,7 @@ exports[`Why Us? renders correctly 1`] = `
       <div
         class="why-us__sub-title why-us__customer-rates-sub-title title"
       >
-        Fantastic customer 
-        <br />
-         satisfaction rates:
+        Impressive customer satisfaction rates
       </div>
     </div>
      
@@ -249,7 +247,7 @@ exports[`Why Us? renders correctly 1`] = `
               
               tech bloggers and conference 
               <br />
-               speakers on our team.
+               speakers in our team.
             
             </p>
           </div>

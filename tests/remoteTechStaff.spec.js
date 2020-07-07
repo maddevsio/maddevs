@@ -1,13 +1,13 @@
 import {
   mount
 } from '@vue/test-utils';
-import ItOutsourcing from '@/components/Services/ItOutsourcing.vue';
+import RemoteTechStaff from '@/components/Services/RemoteTechStaff';
 
-describe('IT Outsourcing', () => {
+describe('Remote tech staff', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(ItOutsourcing);
+    wrapper = mount(RemoteTechStaff);
   });
 
   test('is a Vue instance', () => {
