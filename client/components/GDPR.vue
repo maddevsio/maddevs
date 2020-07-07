@@ -13,27 +13,23 @@
       </div>
       <div class="gdpr__content">
         <p class="gdpr__text doc-text">
-          We are committed to stay compliant with General Data Protection
-          Regulation (GDPR) for the sake of our customers, partners and staff.
-          Personally identifiable information that belongs to EU citizens is
-          subject to rules, restrictions and limitations stated in GDPR dated
+          We are committed to staying compliant with the General Data Protection Regulation (GDPR)
+          for the sake of our customers, partners, and staff. Personally identifiable information that
+          belongs to EU citizens is subject to rules, restrictions, and limitations stated in GDPR dated
           May 25, 2018.
         </p>
         <p class="gdpr__text doc-text">
-          <span class="gdpr__text gdpr__text--bold">Important note.</span> Our
-          software development and infrastructure optimization departments have
-          worked with projects requiring full GDPR compliance, and if you need
-          help with any personal data to be properly collected, modified, stored
-          and processed, please let us know.
+          <span class="gdpr__text gdpr__text--bold">Important note.</span> Our software development and infrastructure optimization departments
+          have worked with projects requiring full GDPR compliance, and if you need help with any
+          personal data to be properly collected, modified, stored, and processed, please let us know.
         </p>
         <h5 class="gdpr__sec-title">Data Processing Documentation</h5>
         <p class="gdpr__paragraph paragraph">
-          Under the terms of GDPR, Mad Devs is a Data Processor. In case you are
-          a Data Controller according to the official GDPR terminology, our
-          legal department is ready to provide a written consent for processing
-          of any personal data of individuals from European Union and European
-          Economic Area. We are also ready to provide our Data Processing
-          Addendum (DPA) upon your request. Please notify our management via
+          Under the terms of GDPR, Mad Devs is a Data Processor. In case you are a Data Controller
+          according to the official GDPR terminology, our legal department is ready to provide written
+          consent for the processing of any personal data of individuals from the European Union and
+          European Economic Area. We are also ready to provide our <a class="gdpr__link" href="https://gdpr.eu/what-is-data-processing-agreement/">Data Processing Addendum (DPA)</a>
+          <br> upon your request. Please notify our management via
           <a class="gdpr__link" href="mailto:rock@maddevs.io"
             >rock@maddevs.io</a
           >
@@ -43,10 +39,9 @@
           Privacy Policy
         </h5>
         <p class="gdpr__paragraph paragraph">
-          For your convenience, our Privacy Policy is available on our website
-          in PDF format, you can also download it to your computer if needed. If
-          you have any questions or concerns related to this document, please
-          let us know via
+          For your convenience, our Privacy Policy is available on our website in PDF format, you can
+          also download it to your computer if needed. If you have any questions or concerns related
+          to this document, please let us know via
           <a class="gdpr__link" href="mailto:rock@maddevs.io">rock@maddevs.io</a
           >.
         </p>
@@ -54,24 +49,22 @@
           Cookie Usage
         </h5>
         <p class="gdpr__paragraph paragraph">
-          Our website uses cookies to help us define your core interests and
-          make you relevant service offerings. The “Accept” button on our pop-up
-          notification will enable you to accept cookies.
+          Our website uses cookies to help us define your core interests and make you relevant
+          service offerings. The “Accept” button on our pop-up notification will enable you to accept
+          cookies.
         </p>
         <h5 class="gdpr__sec-title">
           Marketing Communications
         </h5>
         <p class="gdpr__paragraph paragraph">
-          To get information on our recent blog posts, hottest discounts and
-          newest services, you can subscribe to the Mad Devs Newsletter. You can
-          unsubscribe at any time. If you want to make sure that your data has
-          been amended or deleted, please contact us via
+          To get information on our recent blog posts, hottest discounts, and newest services, you can
+          subscribe to the Mad Devs Newsletter. You can unsubscribe at any time. If you want to make
+          sure that your data has been amended or deleted, please contact us via
           <a class="gdpr__link" href="mailto:rock@maddevs.io">rock@maddevs.io</a
           >.
         </p>
         <p class="gdpr__paragraph gdpr__paragraph--bold paragraph">
-          We appreciate your collaboration and openness with regard to any legal
-          issues!
+          We appreciate your collaboration and openness with regard to any legal issues!
         </p>
         <p class="gdpr__paragraph gdpr__paragraph--bold gdpr__paragraph--italic paragraph">
           Team Mad Devs
