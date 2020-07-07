@@ -2,6 +2,12 @@
 
 > Mad Devs is a full stack team for development and administration of IT projects. We specialize in projects requiring the individual technical solutions.
 
+## Code coverage with tests
+![Coverage statements](client/static/badge-statements.svg) 
+![Coverage branches](client/static/badge-branches.svg)
+![Coverage functions](client/static/badge-functions.svg)
+![Coverage lines](client/static/badge-lines.svg)
+
 ## Build Setup
 
 ``` bash

@@ -1,4 +1,4 @@
-FROM node:8-slim
+FROM node:12
 
 WORKDIR /app
 COPY package.json /app

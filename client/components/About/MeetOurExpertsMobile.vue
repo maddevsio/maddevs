@@ -1,0 +1,72 @@
+<template>
+  <swiper class="swiper" :options="swiperOption">
+    <swiper-slide v-for="(expert, i) in experts" :key="i">
+      <div class="mobile-expert-item">
+        <img 
+          :srcset="[require(`@/assets/img/Home/png/experts/${expert.image}@2x.png`) + ' 1200w']"
+          sizes="(max-width:1000px) 600px"
+          :src="require(`@/assets/img/Home/png/experts/${expert.image}.png`)"
+          class="mobile-expert-img" :alt="expert.name">
+        <div class="mobile-expert-bottom_content">
+          <div class="mobile-expert-info">
+            <div class="mobile-expert-name">{{ expert.name }}</div>
+            <div class="mobile-expert-position">{{ expert.position }}</div>
+          </div>
+          <a :href="expert.linkedin" class="mobile-expert-linkedin_link" target="blank">
+            <img src="../../assets/img/Home/svg/experts/linkedin.svg" class="mobile-expert-linkedin_icon" alt="Linkedin">
+          </a>
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper>
+</template>
+
+<script>
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
+
+export default {
+  name: 'MeetOurExpertsMobile',
+  components: {
+    Swiper,
+    SwiperSlide
+  },
+  props: {
+    experts: {
+      type: Array,
+      default: Function
+    }
+  },
+  data() {
+    return {
+      swiperOption: {
+        slidesPerView: 'auto'
+      }
+    };
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+  .swiper {
+    display: none;
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      width: 347px;
+    }
+
+    .mobile-expert-item {
+      position: relative;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .swiper {
+      display: block;
+    }
+  }
+</style>

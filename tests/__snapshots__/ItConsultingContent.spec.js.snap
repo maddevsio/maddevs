@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItConsultingContent component renders correctly 1`] = `
+<div
+  class="it-consulting__content-item"
+>
+  <div
+    class="it-consulting__content-item_wrapper"
+  >
+    <h3
+      class="it-consulting__title title"
+    >
+      Title
+    </h3>
+     
+    <h4
+      class="it-consulting__sub-title sub-title"
+    >
+      Sub title
+    </h4>
+     
+    <p
+      class="it-consulting__paragraph paragraph"
+    >
+      Paragraph
+    </p>
+  </div>
+</div>
+`;

@@ -1,9 +1,12 @@
+require('dotenv').config();
+
 module.exports = {
+  srcDir: 'client/',
   /*
   ** Headers of the page
   */
   head: {
-    title: 'Mad Devs - IT Outsourcing Company in UK',
+    title: 'Mad Devs: Software & Mobile App Development Company',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -15,9 +18,6 @@ module.exports = {
     ],
     script: [
       {
-        src: 'https://code.tidio.co/kuhpv1cxwof3di7of0qiwbfmvggsdeav.js'
-      },
-      {
         src: 'https://widget.clutch.co/static/js/widget.js'
       }
     ]
@@ -25,8 +25,10 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
-
+  loading: {
+    color: '#ec1c24',
+    height: '3px'
+  },
   router: {
     middleware: 'i18n'
   },
@@ -34,13 +36,23 @@ module.exports = {
     '~/plugins/i18n.js',
     '~/plugins/vue-scrollto.js',
     '~/plugins/google-analytics.js',
+    '~/plugins/vee-validate.js',
+    '~/plugins/vue2-perfect-scrollbar.js',
     {
-      src: '~plugins/slick.js',
+      src: '~/plugins/vue-js-modal.js',
       ssr: false
     }
   ],
   generate: {
-    routes: ['/', '/en', '/en/jobs', '/ru', '/ru/jobs']
+    routes: [
+      '/',
+      '/services',
+      '/projects',
+      '/careers',
+      '/gdpr',
+      '/nda',
+      '/privacy'
+    ]
   },
   css: [
     {
@@ -55,16 +67,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    vendor: ['vue-slick'],
-    extend (config, { isDev, isClient, isServer }) {
-      if (isServer) {
-        config.externals += [
-          require('webpack-node-externals')({
-            whitelist: [/^vue-slick/]
-          })
-        ]
-      }
-    },
+    transpile: ['vee-validate/dist/rules'],
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
@@ -72,11 +75,12 @@ module.exports = {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
-        })
+        });
       }
     }
   },
   modules: [
+    '@nuxtjs/axios',
     [
       '@nuxtjs/yandex-metrika',
       {
@@ -87,7 +91,10 @@ module.exports = {
         trackLinks: true,
         accurateTrackBounce: true
       }
-    ],
-  ]
-}
+    ]
+  ],
+  axios: {
+    baseURL: process.env.NODE_API_URL
+  }
+};
 

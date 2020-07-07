@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<footer
+  class="footer /"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="footer__content"
+    >
+      <div
+        class="footer__text-content"
+      >
+        <div
+          class="footer__title-wrap"
+        >
+          <h2
+            class="footer__main-title main-title"
+          >
+            Get in Touch
+          </h2>
+           
+          <div
+            class="footer__mail-wrapper"
+          >
+            <img
+              alt="mail"
+              src="@/assets/img/Footer/mail-icon.svg"
+            />
+             
+            <a
+              class="footer__mailto-link"
+              href="mailto:team@maddevs.io"
+            >
+              team@maddevs.io
+            </a>
+          </div>
+        </div>
+         
+        <footercontacts-stub />
+      </div>
+       
+      <div
+        class="footer__form-wrap"
+      >
+        <footerform-stub />
+      </div>
+    </div>
+     
+    <div
+      class="footer__bottom-links-line"
+    >
+      <p
+        class="footer__company-name"
+      >
+        © Mad Devs - 2020
+      </p>
+       
+      <div
+        class="footer__left-bottom_links"
+      >
+        <a
+          class="footer__bottom-link"
+          href="/gdpr"
+          target="_blank"
+        >
+          GDPR Compliance Commitment
+        </a>
+         
+        <a
+          class="footer__bottom-link"
+          href="/privacy"
+          target="_blank"
+        >
+          Privacy Policy
+        </a>
+         
+        <a
+          class="footer__bottom-link"
+          href="/nda"
+          target="_blank"
+        >
+          Non-Disclosure Agreement (NDA)
+        </a>
+      </div>
+       
+      <footersocialnetworkbar-stub />
+    </div>
+  </div>
+</footer>
+`;

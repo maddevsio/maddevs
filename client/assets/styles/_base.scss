@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  transition: all .4s ease;
+  background-color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+* {
+  outline: none !important;
+  -webkit-text-size-adjust: 100%;
+
+  &::-moz-focus-outer,
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.scrollDisabled {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+//----------- Base classes ------------ //
+.container {
+  max-width: 1600px;
+  margin: auto;
+  padding: 0 136px;
+}
+
+.sec-title {
+  width: 100%;
+  font-family: 'MADEEvolveSans-medium', sans-serif;
+  font-size: 40px;
+  line-height: 1.38;
+  text-align: center;
+  font-weight: 500;
+  color: #2c1c1c;
+  box-sizing: border-box;
+}
+
+.sec-desc {
+  font-size: 28px;
+  line-height: 1.5;
+  font-family: 'MADEEvolveSans-regular', sans-serif;
+  font-weight: normal;
+}
+
+.rotate_contacts-wrap {
+  transform: rotateY(180deg);
+  z-index: 110;
+}
+//----------- End Base classes ------------//
+
+// #region Fonts
+
+@font-face {
+  font-family: 'Hoves-Bold';
+  src: url('../fonts/Hoves/TT-Hoves-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Hoves-Regular';
+  src: url('../fonts/Hoves/TT-Hoves-Regular.woff') format('woff');
+}
