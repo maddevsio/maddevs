@@ -22,30 +22,40 @@
         fill=""
       />
     </svg>
+    <span 
+      class="contribution-widget__content-mobile contribution-widget__content-mobile_godee" 
+      v-if="projectName === 'godee'"
+    >
+      contribution: Backend, Infrastructure, Mobile Apps
+    </span>
     <span
+      v-else
       class="contribution-widget__content-mobile"
       :class="[
         projectName === 'guardrails'
           ? 'contribution-widget__content-mobile_guardrails'
           : '',
-        projectName === 'godee'
-          ? 'contribution-widget__content-mobile_godee'
-          : projectName === 'teacherly'
+        projectName === 'teacherly'
           ? 'contribution-widget__content-mobile_teacherly'
           : 'contribution-widget__content-mobile_nambafood'
       ]"
       >contribution: Backend, Infrastructure</span
     >
+    <span 
+      class="contribution-widget__content contribution-widget__content_godee" 
+      v-if="projectName === 'godee'"
+    >
+      contribution: Backend, Infrastructure, Mobile Apps
+    </span>
     <span
+      v-else
       class="contribution-widget__content"
       :class="[
         projectName === 'guardrails'
           ? 'contribution-widget__content_guardrails'
           : '',
-        projectName === 'godee'
-          ? 'contribution-widget__content_godee'
-          : projectName === 'teacherly'
-          ? 'contribution-widget__content_teacherly'
+        projectName === 'teacherly' 
+          ? 'contribution-widget__content_teacherly' 
           : 'contribution-widget__content_nambafood'
       ]"
       >contribution: Backend, Infrastructure, Frontend</span
