@@ -28,13 +28,13 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jquery": "^3.5.1",
-    "nuxt": "^2.13.2",
+    "nuxt": "^2.13.3",
     "psi": "^4.0.1",
     "request": "^2.88.2",
     "sendpulse-api": "^1.1.4",
     "snyk": "^1.360.0",
     "swiper": "^5.4.5",
-    "vee-validate": "^3.3.6",
+    "vee-validate": "^3.3.7",
     "vue-analytics": "^5.22.1",
     "vue-awesome-swiper": "^4.1.1",
     "vue-i18n": "^8.18.2",
@@ -59,7 +59,7 @@
     "sass-lint": "^1.13.1",
     "sass-lint-vue": "^0.4.0",
     "sass-loader": "^7.3.1",
-    "vue-jest": "^3.0.5"
+    "vue-jest": "^3.0.6"
   },
   "snyk": true
 }
