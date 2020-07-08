@@ -10,7 +10,7 @@ describe('CaseStudies component', () => {
     {
       projectName: 'nambafood',
       logoImg: 'nambafoodColored',
-      link: 'https://blog.maddevs.io/',
+      link: 'https://blog.maddevs.io/namba-food-startup-e6564e66806d',
       contributionWidgetColors: ['#ec1c24', '#96969c'],
       projectBackground: 'nambafoodBackground',
       projectColor: '#f8f7f6',
