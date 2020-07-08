@@ -130,11 +130,11 @@ describe('CaseStudies component', () => {
 
   test('should have 16 projects including projects in the slider', () => {
     let sliderSingleProjects = wrapper.findAll('.single-project');
-    expect(sliderSingleProjects).toHaveLength(16);
+    expect(sliderSingleProjects).toHaveLength(8);
   });
 
   test('check that the specific images exists', () => {
     const img = wrapper.findAll('.single-project__logo');
-    expect(img.length).toBe(16);
+    expect(img.length).toBe(8);
   });
 });
