@@ -28,7 +28,7 @@ exports[`CaseStudies component renders correctly 1`] = `
     >
       <a
         class="single-project"
-        href="https://blog.maddevs.io/"
+        href="https://blog.maddevs.io/namba-food-startup-e6564e66806d"
         style="background: rgb(248, 247, 246);"
       >
         <div
@@ -324,7 +324,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         >
           <a
             class="single-project"
-            href="https://blog.maddevs.io/"
+            href="https://blog.maddevs.io/namba-food-startup-e6564e66806d"
             style="background: rgb(248, 247, 246);"
           >
             <div
@@ -635,7 +635,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         >
           <a
             class="single-project"
-            href="https://blog.maddevs.io/"
+            href="https://blog.maddevs.io/namba-food-startup-e6564e66806d"
             style="background: rgb(248, 247, 246);"
           >
             <div
@@ -946,7 +946,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         >
           <a
             class="single-project"
-            href="https://blog.maddevs.io/"
+            href="https://blog.maddevs.io/namba-food-startup-e6564e66806d"
             style="background: rgb(248, 247, 246);"
           >
             <div
