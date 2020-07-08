@@ -36,7 +36,7 @@
           <SingleProject :project="project" />
         </swiper-slide>
       </swiper>
-      <div class="swiper-pagination" slot="pagination"></div>
+      <div class="swiper-pagination" slot="pagination"/>
     </div>
   </section>
 </template>
