@@ -31,30 +31,12 @@
       </div>
     </div>
     <div class="projects-mobile-slider">
-      <swiper
-        class="swiper swiper-medium"
-        :options="swiperOption.sliderWidthMedium"
-      >
+      <swiper class="swiper" :options="swiperOption">
         <swiper-slide v-for="(project, i) in projects" :key="i">
           <SingleProject :project="project" />
         </swiper-slide>
       </swiper>
-      <swiper
-        class="swiper swiper-small"
-        :options="swiperOption.sliderWidthSmall"
-      >
-        <swiper-slide v-for="(project, i) in projects" :key="i">
-          <SingleProject :project="project" />
-        </swiper-slide>
-      </swiper>
-      <swiper
-        class="swiper swiper-extra-small"
-        :options="swiperOption.sliderWidthExtraSmall"
-      >
-        <swiper-slide v-for="(project, i) in projects" :key="i">
-          <SingleProject :project="project" />
-        </swiper-slide>
-      </swiper>
+      <div class="swiper-pagination" slot="pagination"/>
     </div>
   </section>
 </template>
@@ -71,6 +53,12 @@ export default {
     SwiperSlide,
     SingleProject
   },
+  beforeMount() {
+    // Set new params for slider
+    if (window.screen.width <= 480) {
+      this.swiperOption.slidesPerView = 1.05;
+    }
+  },
   mounted() {
     if ($nuxt.$route.name) {
       this.currentPageName = $nuxt.$route.name;
@@ -79,18 +67,10 @@ export default {
   data() {
     return {
       swiperOption: {
-        sliderWidthMedium: {
-          slidesPerView: 1.6,
-          freeMode: true
+        pagination: {
+          el: '.swiper-pagination'
         },
-        sliderWidthSmall: {
-          slidesPerView: 1.17,
-          freeMode: true
-        },
-        sliderWidthExtraSmall: {
-          slidesPerView: 1.03,
-          freeMode: true
-        }
+        slidesPerView: 1.20
       },
       currentPageName: '',
       projects: [
@@ -151,6 +131,20 @@ export default {
   background: $bgcolor--project-white;
 }
 
+.swiper-pagination {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/deep/.swiper-pagination-bullet {
+  margin-right: 8px;
+  background-color: $slider-dots-bg-color;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .case-studies {
   padding-top: 90px;
 
@@ -194,8 +188,7 @@ export default {
         &::before {
           content: '';
           position: absolute;
-          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg')
-            no-repeat right 50%;
+          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg') no-repeat right 50%;
           width: 100%;
           height: 430px;
           background-size: contain;
@@ -640,13 +633,8 @@ export default {
     .projects-mobile-slider {
       display: block;
 
-      .swiper-medium {
+      .swiper {
         display: block;
-      }
-
-      .swiper-small,
-      .swiper-extra-small {
-        display: none;
       }
     }
 
@@ -694,17 +682,6 @@ export default {
     &__main-title {
       font-size: 64px;
     }
-
-    .projects-mobile-slider {
-      .swiper-small {
-        display: block;
-      }
-
-      .swiper-medium,
-      .swiper-extra-small {
-        display: none;
-      }
-    }
   }
 }
 
@@ -747,17 +724,6 @@ export default {
 
 @media only screen and (max-width: 375px) {
   .case-studies {
-    .projects-mobile-slider {
-      .swiper-extra-small {
-        display: block;
-      }
-
-      .swiper-medium,
-      .swiper-small {
-        display: none;
-      }
-    }
-
     &__main-title {
       font-size: 53px;
     }
