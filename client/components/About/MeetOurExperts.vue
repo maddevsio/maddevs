@@ -6,7 +6,7 @@
       </div>
       <div class="meet-our_experts__experts-list">
         <div class="meet-our_experts__expert-item" v-for="(expert, i) in experts" :key="i">
-          <img :src="require(`@/assets/img/Home/png/experts/${expert.image}.png`)" class="meet-our_experts__expert-img" :alt="expert.name">
+          <image-component :name="expert.image" :className="'meet-our_experts__expert-img'" :nameRetina="`${expert.image}@2x`"/>
           <div class="meet-our_experts__expert-bottom_content">
             <div class="meet-our_experts__expert-info">
               <div class="meet-our_experts__expert-name">{{ expert.name }}</div>
@@ -25,11 +25,13 @@
 
 <script>
 import MeetOurExpertsMobile from '@/components/About/MeetOurExpertsMobile';
+import ImageComponent from '@/components/ui/image-component';
 
 export default {
   name: 'MeetOurExperts',
   components: {
-    MeetOurExpertsMobile
+    MeetOurExpertsMobile,
+    ImageComponent
   },
   data() {
     return {
