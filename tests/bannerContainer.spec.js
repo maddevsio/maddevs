@@ -1,9 +1,9 @@
 import {
   mount
 } from '@vue/test-utils';
-import Banner from '@/components/Banner';
+import BannerContainer from '@/containers/BannerContainer';
 
-describe('Banner', () => {
+describe('Banner Container', () => {
   let wrapper;
 
   beforeEach(() => {
@@ -12,7 +12,7 @@ describe('Banner', () => {
         name: '/'
       }
     };
-    wrapper = mount(Banner, {
+    wrapper = mount(BannerContainer, {
       stubs: ['router-link'],
       mocks: {
         $modal: {
@@ -33,12 +33,12 @@ describe('Banner', () => {
   // --------------------- //
 
   it('has a mounted hook', () => {
-    expect(typeof Banner.mounted).toBe('function');
+    expect(typeof BannerContainer.mounted).toBe('function');
   });
 
   it('sets the correct default data', () => {
-    expect(typeof Banner.data).toBe('function');
-    const defaultData = Banner.data();
+    expect(typeof BannerContainer.data).toBe('function');
+    const defaultData = BannerContainer.data();
     expect(defaultData.currentPageName).toBe('');
   });
 
