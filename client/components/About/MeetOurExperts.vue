@@ -6,7 +6,7 @@
       </div>
       <div class="meet-our_experts__experts-list">
         <div class="meet-our_experts__expert-item" v-for="(expert, i) in experts" :key="i">
-          <image-component :name="expert.image" :className="'meet-our_experts__expert-img'" :nameRetina="`${expert.image}@2x`"/>
+          <image-component :fileName="expert.image" class='meet-our_experts__expert-img' :fileNameRetina="`${expert.image}@2x`"/>
           <div class="meet-our_experts__expert-bottom_content">
             <div class="meet-our_experts__expert-info">
               <div class="meet-our_experts__expert-name">{{ expert.name }}</div>
@@ -175,11 +175,6 @@ export default {
       font-size: 18px;
       font-family: 'Hoves-Regular';
       letter-spacing: -0.3px;
-    }
-
-    &__expert-img {
-      width: 100%;
-      height: 100%;
     }
   }
 
