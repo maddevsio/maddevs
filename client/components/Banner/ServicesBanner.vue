@@ -20,7 +20,7 @@
 import navigationList from '@/components/ui/navigation-list';
 
 export default {
-  name: 'Banner',
+  name: 'ServicesBanner',
   components: {
     navigationList
   },
@@ -50,7 +50,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/styles/vars';
   .phone-screen-br {
     display: none;
   }
@@ -93,14 +92,6 @@ export default {
     .green-image {
       width: 219px;
       margin-top: -91px;
-    }
-  }
-
-  @media only screen and (max-width: 1440px) {
-    /deep/.navigation-list {
-      /deep/.navigation-item {
-        padding-right: 54px;
-      }
     }
   }
 

@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <Banner />
+    <BannerContainer />
     <RemoteTechStaff />
     <SoftwareDevelopment />
     <InfrastructureOptimisation />

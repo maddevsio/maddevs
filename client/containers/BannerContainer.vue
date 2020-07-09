@@ -1,10 +1,10 @@
 <template>
   <section id="banner-container" class="banner-container">
     <div class="container">
-      <AboutBanner/>
-      <ServicesBanner/>
-      <ProjectsBanner/>
-      <CareersBanner/>
+      <AboutBanner v-if="currentPage === 'index'"/>
+      <ServicesBanner v-if="currentPage === 'services'"/>
+      <ProjectsBanner v-if="currentPage === 'projects'"/>
+      <CareersBanner v-if="currentPage === 'careers'"/>
     </div>
   </section>
 </template>
@@ -22,6 +22,16 @@ export default {
     ServicesBanner,
     ProjectsBanner,
     CareersBanner
+  },
+  mounted() {
+    if ($nuxt.$route.name) {
+      this.currentPage = $nuxt.$route.name;
+    }
+  },
+  data() {
+    return {
+      currentPage: null
+    };
   }
 };
 </script>

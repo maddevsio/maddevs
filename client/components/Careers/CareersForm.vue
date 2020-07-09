@@ -401,6 +401,7 @@ export default {
 @media only screen and (max-width: 768px) {
   .careers {
     &__background-logo {
+      top: -85px;
       right: 54px;
     }
   }
