@@ -67,6 +67,9 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+    vendor: ['axios'],
+    followSymlinks: true,
+    cache: true,
     transpile: ['vee-validate/dist/rules'],
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
