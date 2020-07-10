@@ -7,8 +7,8 @@ import ImageComponent from '@/components/ui/image-component';
 describe('Webp image component', () => {
   let wrapper;
   const props = {
-    fileName: 'some-name',
-    fileNameRetina: 'some-name-retina'
+    fileName: 'Marat',
+    fileNameRetina: 'Marat@2x'
   };
 
   beforeEach(() => {
@@ -27,17 +27,12 @@ describe('Webp image component', () => {
   });
   // --------------------- //
 
-  it('has a functions', () => {
-    expect(typeof RadioList.methods.sendSelectedValue).toBe('function');
-  });
-
   test('correctly props data', () => {
     expect(wrapper.props().fileName).toBe(props.fileName);
     expect(wrapper.props().fileNameRetina).toBe(props.fileNameRetina);
   });
 
   test('Has class if sectionIsRequired equal true', () => {
-    let div = wrapper.find('.multi-imagew');
-    expect(div.classes()).toContain('required');
+    expect(wrapper.find("picture")).toBeTruthy();
   });
 });
