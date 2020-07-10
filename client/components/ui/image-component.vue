@@ -16,13 +16,12 @@ export default {
   name: 'ImageComponent',
   props: {
     fileName: {
-      type: String
-    },
-    className: {
-      type: String
+      type: String,
+      default: undefined
     },
     fileNameRetina: {
-      type: String
+      type: String,
+      default: undefined
     }
   }
 };
