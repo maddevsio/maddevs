@@ -425,449 +425,458 @@ exports[`Meet Our Experts renders correctly 1`] = `
   </div>
    
   <div
-    class="swiper-container swiper swiper-container-initialized swiper-container-horizontal"
+    class="experts-slider-wrapper"
   >
     <div
-      class="swiper-wrapper"
-      style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+      class="swiper-container swiper swiper-container-initialized swiper-container-horizontal"
     >
       <div
-        class="swiper-slide"
+        class="swiper-wrapper"
+        style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
       >
         <div
-          class="mobile-expert-item"
+          class="swiper-slide"
         >
-          <picture>
-            <source
-              class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Marat@2x"
-              class="multi-image"
-              src="[object Object]"
-              srcset="[object Object] 2x"
-            />
-          </picture>
-           
           <div
-            class="mobile-expert-bottom_content"
+            class="mobile-expert-item"
           >
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Marat@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
+             
             <div
-              class="mobile-expert-info"
+              class="mobile-expert-bottom_content"
             >
               <div
-                class="mobile-expert-name"
+                class="mobile-expert-info"
               >
-                Marat Bediev
+                <div
+                  class="mobile-expert-name"
+                >
+                  Marat Bediev
+                </div>
+                 
+                <div
+                  class="mobile-expert-position"
+                >
+                  Senior DevOps Engineer
+                </div>
               </div>
                
-              <div
-                class="mobile-expert-position"
+              <a
+                class="mobile-expert-linkedin_link"
+                href="https://www.linkedin.com/in/marat-bediev-a973171b/"
+                target="blank"
               >
-                Senior DevOps Engineer
-              </div>
+                <img
+                  alt="Linkedin"
+                  class="mobile-expert-linkedin_icon"
+                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                />
+              </a>
             </div>
-             
-            <a
-              class="mobile-expert-linkedin_link"
-              href="https://www.linkedin.com/in/marat-bediev-a973171b/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="mobile-expert-linkedin_icon"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
+          </div>
+        </div>
+        <div
+          class="swiper-slide"
+        >
+          <div
+            class="mobile-expert-item"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
               />
-            </a>
+               
+              <img
+                alt="Tamara@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
+             
+            <div
+              class="mobile-expert-bottom_content"
+            >
+              <div
+                class="mobile-expert-info"
+              >
+                <div
+                  class="mobile-expert-name"
+                >
+                  Tamara Mun
+                </div>
+                 
+                <div
+                  class="mobile-expert-position"
+                >
+                  Delivery Manager
+                </div>
+              </div>
+               
+              <a
+                class="mobile-expert-linkedin_link"
+                href="https://www.linkedin.com/in/tamara-mun/"
+                target="blank"
+              >
+                <img
+                  alt="Linkedin"
+                  class="mobile-expert-linkedin_icon"
+                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-slide"
+        >
+          <div
+            class="mobile-expert-item"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Chuck@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
+             
+            <div
+              class="mobile-expert-bottom_content"
+            >
+              <div
+                class="mobile-expert-info"
+              >
+                <div
+                  class="mobile-expert-name"
+                >
+                  Andrew "Сhuck" Minkin
+                </div>
+                 
+                <div
+                  class="mobile-expert-position"
+                >
+                  CTO, Co-Founder
+                </div>
+              </div>
+               
+              <a
+                class="mobile-expert-linkedin_link"
+                href="https://www.linkedin.com/in/andrew-minkin-700a2523/"
+                target="blank"
+              >
+                <img
+                  alt="Linkedin"
+                  class="mobile-expert-linkedin_icon"
+                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-slide"
+        >
+          <div
+            class="mobile-expert-item"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Nakylai@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
+             
+            <div
+              class="mobile-expert-bottom_content"
+            >
+              <div
+                class="mobile-expert-info"
+              >
+                <div
+                  class="mobile-expert-name"
+                >
+                  Nakylai Taiirova
+                </div>
+                 
+                <div
+                  class="mobile-expert-position"
+                >
+                  Senior Full-Stack Developer
+                </div>
+              </div>
+               
+              <a
+                class="mobile-expert-linkedin_link"
+                href="https://www.linkedin.com/in/nakylai-taiirova-28bab859/"
+                target="blank"
+              >
+                <img
+                  alt="Linkedin"
+                  class="mobile-expert-linkedin_icon"
+                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-slide"
+        >
+          <div
+            class="mobile-expert-item"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Daria@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
+             
+            <div
+              class="mobile-expert-bottom_content"
+            >
+              <div
+                class="mobile-expert-info"
+              >
+                <div
+                  class="mobile-expert-name"
+                >
+                  Daria Utesheva
+                </div>
+                 
+                <div
+                  class="mobile-expert-position"
+                >
+                  Head of HR Department
+                </div>
+              </div>
+               
+              <a
+                class="mobile-expert-linkedin_link"
+                href="https://www.linkedin.com/in/%D0%B4%D0%B0%D1%80%D1%8C%D1%8F-%D1%83%D1%82%D0%B5%D1%88%D0%B5%D0%B2%D0%B0-47804198/"
+                target="blank"
+              >
+                <img
+                  alt="Linkedin"
+                  class="mobile-expert-linkedin_icon"
+                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-slide"
+        >
+          <div
+            class="mobile-expert-item"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Nuradil@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
+             
+            <div
+              class="mobile-expert-bottom_content"
+            >
+              <div
+                class="mobile-expert-info"
+              >
+                <div
+                  class="mobile-expert-name"
+                >
+                  Nuradil Alymkulov
+                </div>
+                 
+                <div
+                  class="mobile-expert-position"
+                >
+                  Senior Full-Stack Developer
+                </div>
+              </div>
+               
+              <a
+                class="mobile-expert-linkedin_link"
+                href="https://www.linkedin.com/in/nuradil-alymkulov/"
+                target="blank"
+              >
+                <img
+                  alt="Linkedin"
+                  class="mobile-expert-linkedin_icon"
+                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-slide"
+        >
+          <div
+            class="mobile-expert-item"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Alice@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
+             
+            <div
+              class="mobile-expert-bottom_content"
+            >
+              <div
+                class="mobile-expert-info"
+              >
+                <div
+                  class="mobile-expert-name"
+                >
+                  Alice Jang
+                </div>
+                 
+                <div
+                  class="mobile-expert-position"
+                >
+                  Project Manager
+                </div>
+              </div>
+               
+              <a
+                class="mobile-expert-linkedin_link"
+                href="https://www.linkedin.com/in/alice-jang-b235b240/"
+                target="blank"
+              >
+                <img
+                  alt="Linkedin"
+                  class="mobile-expert-linkedin_icon"
+                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-slide"
+        >
+          <div
+            class="mobile-expert-item"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Arthur@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
+             
+            <div
+              class="mobile-expert-bottom_content"
+            >
+              <div
+                class="mobile-expert-info"
+              >
+                <div
+                  class="mobile-expert-name"
+                >
+                  Arthur Elizavetenkov
+                </div>
+                 
+                <div
+                  class="mobile-expert-position"
+                >
+                  Project Manager
+                </div>
+              </div>
+               
+              <a
+                class="mobile-expert-linkedin_link"
+                href="https://www.linkedin.com/in/earthurkg/"
+                target="blank"
+              >
+                <img
+                  alt="Linkedin"
+                  class="mobile-expert-linkedin_icon"
+                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div
-        class="swiper-slide"
-      >
-        <div
-          class="mobile-expert-item"
-        >
-          <picture>
-            <source
-              class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Tamara@2x"
-              class="multi-image"
-              src="[object Object]"
-              srcset="[object Object] 2x"
-            />
-          </picture>
-           
-          <div
-            class="mobile-expert-bottom_content"
-          >
-            <div
-              class="mobile-expert-info"
-            >
-              <div
-                class="mobile-expert-name"
-              >
-                Tamara Mun
-              </div>
-               
-              <div
-                class="mobile-expert-position"
-              >
-                Delivery Manager
-              </div>
-            </div>
-             
-            <a
-              class="mobile-expert-linkedin_link"
-              href="https://www.linkedin.com/in/tamara-mun/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="mobile-expert-linkedin_icon"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="swiper-slide"
-      >
-        <div
-          class="mobile-expert-item"
-        >
-          <picture>
-            <source
-              class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Chuck@2x"
-              class="multi-image"
-              src="[object Object]"
-              srcset="[object Object] 2x"
-            />
-          </picture>
-           
-          <div
-            class="mobile-expert-bottom_content"
-          >
-            <div
-              class="mobile-expert-info"
-            >
-              <div
-                class="mobile-expert-name"
-              >
-                Andrew "Сhuck" Minkin
-              </div>
-               
-              <div
-                class="mobile-expert-position"
-              >
-                CTO, Co-Founder
-              </div>
-            </div>
-             
-            <a
-              class="mobile-expert-linkedin_link"
-              href="https://www.linkedin.com/in/andrew-minkin-700a2523/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="mobile-expert-linkedin_icon"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="swiper-slide"
-      >
-        <div
-          class="mobile-expert-item"
-        >
-          <picture>
-            <source
-              class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Nakylai@2x"
-              class="multi-image"
-              src="[object Object]"
-              srcset="[object Object] 2x"
-            />
-          </picture>
-           
-          <div
-            class="mobile-expert-bottom_content"
-          >
-            <div
-              class="mobile-expert-info"
-            >
-              <div
-                class="mobile-expert-name"
-              >
-                Nakylai Taiirova
-              </div>
-               
-              <div
-                class="mobile-expert-position"
-              >
-                Senior Full-Stack Developer
-              </div>
-            </div>
-             
-            <a
-              class="mobile-expert-linkedin_link"
-              href="https://www.linkedin.com/in/nakylai-taiirova-28bab859/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="mobile-expert-linkedin_icon"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="swiper-slide"
-      >
-        <div
-          class="mobile-expert-item"
-        >
-          <picture>
-            <source
-              class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Daria@2x"
-              class="multi-image"
-              src="[object Object]"
-              srcset="[object Object] 2x"
-            />
-          </picture>
-           
-          <div
-            class="mobile-expert-bottom_content"
-          >
-            <div
-              class="mobile-expert-info"
-            >
-              <div
-                class="mobile-expert-name"
-              >
-                Daria Utesheva
-              </div>
-               
-              <div
-                class="mobile-expert-position"
-              >
-                Head of HR Department
-              </div>
-            </div>
-             
-            <a
-              class="mobile-expert-linkedin_link"
-              href="https://www.linkedin.com/in/%D0%B4%D0%B0%D1%80%D1%8C%D1%8F-%D1%83%D1%82%D0%B5%D1%88%D0%B5%D0%B2%D0%B0-47804198/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="mobile-expert-linkedin_icon"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="swiper-slide"
-      >
-        <div
-          class="mobile-expert-item"
-        >
-          <picture>
-            <source
-              class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Nuradil@2x"
-              class="multi-image"
-              src="[object Object]"
-              srcset="[object Object] 2x"
-            />
-          </picture>
-           
-          <div
-            class="mobile-expert-bottom_content"
-          >
-            <div
-              class="mobile-expert-info"
-            >
-              <div
-                class="mobile-expert-name"
-              >
-                Nuradil Alymkulov
-              </div>
-               
-              <div
-                class="mobile-expert-position"
-              >
-                Senior Full-Stack Developer
-              </div>
-            </div>
-             
-            <a
-              class="mobile-expert-linkedin_link"
-              href="https://www.linkedin.com/in/nuradil-alymkulov/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="mobile-expert-linkedin_icon"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="swiper-slide"
-      >
-        <div
-          class="mobile-expert-item"
-        >
-          <picture>
-            <source
-              class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Alice@2x"
-              class="multi-image"
-              src="[object Object]"
-              srcset="[object Object] 2x"
-            />
-          </picture>
-           
-          <div
-            class="mobile-expert-bottom_content"
-          >
-            <div
-              class="mobile-expert-info"
-            >
-              <div
-                class="mobile-expert-name"
-              >
-                Alice Jang
-              </div>
-               
-              <div
-                class="mobile-expert-position"
-              >
-                Project Manager
-              </div>
-            </div>
-             
-            <a
-              class="mobile-expert-linkedin_link"
-              href="https://www.linkedin.com/in/alice-jang-b235b240/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="mobile-expert-linkedin_icon"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="swiper-slide"
-      >
-        <div
-          class="mobile-expert-item"
-        >
-          <picture>
-            <source
-              class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Arthur@2x"
-              class="multi-image"
-              src="[object Object]"
-              srcset="[object Object] 2x"
-            />
-          </picture>
-           
-          <div
-            class="mobile-expert-bottom_content"
-          >
-            <div
-              class="mobile-expert-info"
-            >
-              <div
-                class="mobile-expert-name"
-              >
-                Arthur Elizavetenkov
-              </div>
-               
-              <div
-                class="mobile-expert-position"
-              >
-                Project Manager
-              </div>
-            </div>
-             
-            <a
-              class="mobile-expert-linkedin_link"
-              href="https://www.linkedin.com/in/earthurkg/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="mobile-expert-linkedin_icon"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="swiper-notification"
+      />
     </div>
-    <span
-      aria-atomic="true"
-      aria-live="assertive"
-      class="swiper-notification"
+     
+    <div
+      class="swiper-pagination swiper-pagination--black"
+      slot="pagination"
     />
   </div>
 </section>

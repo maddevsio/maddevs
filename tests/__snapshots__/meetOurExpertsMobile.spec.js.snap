@@ -2,71 +2,80 @@
 
 exports[`Meet Our Experts Mobile Slider renders correctly 1`] = `
 <div
-  class="swiper-container swiper swiper-container-initialized swiper-container-horizontal"
+  class="experts-slider-wrapper"
 >
   <div
-    class="swiper-wrapper"
-    style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+    class="swiper-container swiper swiper-container-initialized swiper-container-horizontal"
   >
     <div
-      class="swiper-slide"
+      class="swiper-wrapper"
+      style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
     >
       <div
-        class="mobile-expert-item"
+        class="swiper-slide"
       >
-        <picture>
-          <source
-            class="multi-image"
-            srcset="[object Object] ,[object Object] 2x"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Marat@2x"
-            class="multi-image"
-            src="[object Object]"
-            srcset="[object Object] 2x"
-          />
-        </picture>
-         
         <div
-          class="mobile-expert-bottom_content"
+          class="mobile-expert-item"
         >
+          <picture>
+            <source
+              class="multi-image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Marat@2x"
+              class="multi-image"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
           <div
-            class="mobile-expert-info"
+            class="mobile-expert-bottom_content"
           >
             <div
-              class="mobile-expert-name"
+              class="mobile-expert-info"
             >
-              Marat Bediev
+              <div
+                class="mobile-expert-name"
+              >
+                Marat Bediev
+              </div>
+               
+              <div
+                class="mobile-expert-position"
+              >
+                Senior DevOps
+              </div>
             </div>
              
-            <div
-              class="mobile-expert-position"
+            <a
+              class="mobile-expert-linkedin_link"
+              href="https://www.linkedin.com/in/marat-bediev-a973171b/"
+              target="blank"
             >
-              Senior DevOps
-            </div>
+              <img
+                alt="Linkedin"
+                class="mobile-expert-linkedin_icon"
+                src="../../assets/img/Home/svg/experts/linkedin.svg"
+              />
+            </a>
           </div>
-           
-          <a
-            class="mobile-expert-linkedin_link"
-            href="https://www.linkedin.com/in/marat-bediev-a973171b/"
-            target="blank"
-          >
-            <img
-              alt="Linkedin"
-              class="mobile-expert-linkedin_icon"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
-            />
-          </a>
         </div>
       </div>
     </div>
+    <span
+      aria-atomic="true"
+      aria-live="assertive"
+      class="swiper-notification"
+    />
   </div>
-  <span
-    aria-atomic="true"
-    aria-live="assertive"
-    class="swiper-notification"
+   
+  <div
+    class="swiper-pagination swiper-pagination--black"
+    slot="pagination"
   />
 </div>
 `;
