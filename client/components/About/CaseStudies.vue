@@ -36,7 +36,7 @@
           <SingleProject :project="project" />
         </swiper-slide>
       </swiper>
-      <div class="swiper-pagination" slot="pagination"/>
+      <div class="swiper-pagination swiper-pagination--white" slot="pagination"/>
     </div>
   </section>
 </template>
@@ -68,7 +68,7 @@ export default {
     return {
       swiperOption: {
         pagination: {
-          el: '.swiper-pagination'
+          el: '.swiper-pagination--white'
         },
         slidesPerView: 1.20
       },
@@ -129,20 +129,6 @@ export default {
 
 .swiper-container {
   background: $bgcolor--project-white;
-}
-
-.swiper-pagination {
-  width: 100%;
-  margin-top: 20px;
-}
-
-/deep/.swiper-pagination-bullet {
-  margin-right: 8px;
-  background-color: $slider-dots-bg-color;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .case-studies {

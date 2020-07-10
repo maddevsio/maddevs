@@ -624,7 +624,7 @@ exports[`CaseStudies component renders correctly 1`] = `
     </div>
      
     <div
-      class="swiper-pagination"
+      class="swiper-pagination swiper-pagination--white"
       slot="pagination"
     />
   </div>

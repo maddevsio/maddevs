@@ -444,6 +444,32 @@
   }
 }
 
+// --------------- Swiper slider pagination dots ---------------- //
+.swiper-pagination {
+  width: 100%;
+  margin-top: 20px;
+
+  .swiper-pagination-bullet {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &--white {
+    .swiper-pagination-bullet {
+      background-color: $slider-dots-bg-color-white;
+    }
+  }
+
+  &--black {
+    .swiper-pagination-bullet {
+      background-color: $slider-dots-bg-color-black;
+    }
+  }
+}
+
 // --------------- Global media styles ---------------- //
 @media only screen and (max-width: 1560px) {
   .title {
