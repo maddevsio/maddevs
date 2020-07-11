@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "npm run lint-es & npm run lint-vue-scss & npm run lint-scss",
+    "lint": "npm run lint-vue-scss & npm run lint-scss & npm run lint-es ",
     "lint-es": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint-vue-scss": "sass-lint-vue components",
     "lint-scss": "sass-lint client/assets/styles/*.scss --verbose",

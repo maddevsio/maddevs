@@ -33,6 +33,6 @@ describe('Webp image component', () => {
   });
 
   test('Has class if sectionIsRequired equal true', () => {
-    expect(wrapper.find("picture")).toBeTruthy();
+    expect(wrapper.find('picture')).toBeTruthy();
   });
 });
