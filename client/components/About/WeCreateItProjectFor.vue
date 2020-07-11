@@ -14,7 +14,7 @@
           <li class="we-create-it-project__project-item">Transportation</li>
         </ul>
         <div class="we-create-it-project__country-list_wrap">
-          <div class="we-create-it-project__country-list_title">We work with 
+          <div class="we-create-it-project__country-list_title">We work with
             <br> customers in:
           </div>
           <ul class="we-create-it-project__country-list">
@@ -159,7 +159,9 @@ export default {
 
     &__project-item {
       color: $text-color--white;
-      font-size: 70px;
+      // TODO template text
+      // font-size: 70px;
+      font-size: 65px;
       letter-spacing: -2px;
     }
   }
@@ -177,7 +179,9 @@ export default {
       }
 
       &__project-item {
-        font-size: 64px;
+        // TODO template text
+        // font-size: 64px;
+        font-size: 60px;
       }
 
       &__country-list_title {

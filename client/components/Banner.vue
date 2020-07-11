@@ -16,7 +16,7 @@
             </h1>
             <span class="banner-main_title--white" v-if="currentPageName === 'careers'">A new Mad Devs' ranger is here!</span>
             <h1 class="banner-main_title" v-if="currentPageName === 'index'">
-              Mad Devs 
+              Mad Devs
               <img src="@/assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" class="phone-screen-logo">
               <span class="main-title-white_part"><br>Engineering<br>Your Growth</span>
             </h1>
@@ -29,27 +29,27 @@
                 alt="Stars Logotype"
               >
             </div>
-            <img 
-              src="@/assets/img/Services/svg/order-a-project.svg" 
-              alt="Order a Project Logotype" 
+            <img
+              src="@/assets/img/Services/svg/order-a-project.svg"
+              alt="Order a Project Logotype"
               v-if="currentPageName === 'services' && showGreenBannerImage === false"
-              class="default-image" 
+              class="default-image"
             >
-            <img 
-              src="@/assets/img/Services/svg/order-a-project-hover.svg" 
-              alt="Order a Project Logotype" 
+            <img
+              src="@/assets/img/Services/svg/order-a-project-hover.svg"
+              alt="Order a Project Logotype"
               v-if="currentPageName === 'services' && showGreenBannerImage === false"
               class="hover-image"
               @click="switchImage"
             >
-            <img 
-              src="@/assets/img/Services/svg/order-a-project-green.svg" 
-              alt="Order a Project Logotype" 
+            <img
+              src="@/assets/img/Services/svg/order-a-project-green.svg"
+              alt="Order a Project Logotype"
               v-if="currentPageName === 'services' && showGreenBannerImage === true"
               class="green-image"
               @click="switchImage"
             >
-          </div> 
+          </div>
         </div>
         <navigationList v-if="currentPageName !== 'projects'" />
       </div>
@@ -137,7 +137,9 @@ export default {
       font-family: 'Hoves-Bold';
       font-style: normal;
       font-weight: bold;
-      font-size: 165px;
+      // TODO template text
+      // font-size: 165px;
+      font-size: 150px;
       color: $text-color--black;
       -webkit-text-stroke: $text-stroke--white;
       line-height: 100%;
@@ -325,7 +327,9 @@ export default {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
-        font-size: 149px;
+        // TODO template text
+        // font-size: 149px;
+        font-size: 135px;
       }
     }
 
@@ -343,7 +347,9 @@ export default {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
-        font-size: 131px;
+        // TODO template text
+        // font-size: 131px;
+        font-size: 115px;
       }
     }
 
