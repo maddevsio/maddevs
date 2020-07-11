@@ -24,11 +24,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
       <div
         class="meet-our_experts__expert-item"
       >
-        <img
-          alt="Marat Bediev"
-          class="meet-our_experts__expert-img"
-          src="[object Object]"
-        />
+        <picture>
+          <source
+            class="multi-image"
+            srcset="[object Object] ,[object Object] 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Marat@2x"
+            class="multi-image"
+            src="[object Object]"
+            srcset="[object Object] 2x"
+          />
+        </picture>
          
         <div
           class="meet-our_experts__expert-bottom_content"
@@ -65,11 +74,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
       <div
         class="meet-our_experts__expert-item"
       >
-        <img
-          alt="Tamara Mun"
-          class="meet-our_experts__expert-img"
-          src="[object Object]"
-        />
+        <picture>
+          <source
+            class="multi-image"
+            srcset="[object Object] ,[object Object] 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Tamara@2x"
+            class="multi-image"
+            src="[object Object]"
+            srcset="[object Object] 2x"
+          />
+        </picture>
          
         <div
           class="meet-our_experts__expert-bottom_content"
@@ -106,11 +124,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
       <div
         class="meet-our_experts__expert-item"
       >
-        <img
-          alt="Andrew \\"Сhuck\\" Minkin"
-          class="meet-our_experts__expert-img"
-          src="[object Object]"
-        />
+        <picture>
+          <source
+            class="multi-image"
+            srcset="[object Object] ,[object Object] 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Chuck@2x"
+            class="multi-image"
+            src="[object Object]"
+            srcset="[object Object] 2x"
+          />
+        </picture>
          
         <div
           class="meet-our_experts__expert-bottom_content"
@@ -147,11 +174,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
       <div
         class="meet-our_experts__expert-item"
       >
-        <img
-          alt="Nakylai Taiirova"
-          class="meet-our_experts__expert-img"
-          src="[object Object]"
-        />
+        <picture>
+          <source
+            class="multi-image"
+            srcset="[object Object] ,[object Object] 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Nakylai@2x"
+            class="multi-image"
+            src="[object Object]"
+            srcset="[object Object] 2x"
+          />
+        </picture>
          
         <div
           class="meet-our_experts__expert-bottom_content"
@@ -188,11 +224,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
       <div
         class="meet-our_experts__expert-item"
       >
-        <img
-          alt="Daria Utesheva"
-          class="meet-our_experts__expert-img"
-          src="[object Object]"
-        />
+        <picture>
+          <source
+            class="multi-image"
+            srcset="[object Object] ,[object Object] 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Daria@2x"
+            class="multi-image"
+            src="[object Object]"
+            srcset="[object Object] 2x"
+          />
+        </picture>
          
         <div
           class="meet-our_experts__expert-bottom_content"
@@ -229,11 +274,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
       <div
         class="meet-our_experts__expert-item"
       >
-        <img
-          alt="Nuradil Alymkulov"
-          class="meet-our_experts__expert-img"
-          src="[object Object]"
-        />
+        <picture>
+          <source
+            class="multi-image"
+            srcset="[object Object] ,[object Object] 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Nuradil@2x"
+            class="multi-image"
+            src="[object Object]"
+            srcset="[object Object] 2x"
+          />
+        </picture>
          
         <div
           class="meet-our_experts__expert-bottom_content"
@@ -270,11 +324,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
       <div
         class="meet-our_experts__expert-item"
       >
-        <img
-          alt="Alice Jang"
-          class="meet-our_experts__expert-img"
-          src="[object Object]"
-        />
+        <picture>
+          <source
+            class="multi-image"
+            srcset="[object Object] ,[object Object] 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Alice@2x"
+            class="multi-image"
+            src="[object Object]"
+            srcset="[object Object] 2x"
+          />
+        </picture>
          
         <div
           class="meet-our_experts__expert-bottom_content"
@@ -311,11 +374,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
       <div
         class="meet-our_experts__expert-item"
       >
-        <img
-          alt="Arthur Elizavetenkov"
-          class="meet-our_experts__expert-img"
-          src="[object Object]"
-        />
+        <picture>
+          <source
+            class="multi-image"
+            srcset="[object Object] ,[object Object] 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Arthur@2x"
+            class="multi-image"
+            src="[object Object]"
+            srcset="[object Object] 2x"
+          />
+        </picture>
          
         <div
           class="meet-our_experts__expert-bottom_content"
@@ -368,13 +440,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <div
             class="mobile-expert-item"
           >
-            <img
-              alt="Marat Bediev"
-              class="mobile-expert-img"
-              sizes="(max-width:1000px) 600px"
-              src="[object Object]"
-              srcset="[object Object] 1200w"
-            />
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Marat@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
              
             <div
               class="mobile-expert-bottom_content"
@@ -415,13 +494,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <div
             class="mobile-expert-item"
           >
-            <img
-              alt="Tamara Mun"
-              class="mobile-expert-img"
-              sizes="(max-width:1000px) 600px"
-              src="[object Object]"
-              srcset="[object Object] 1200w"
-            />
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Tamara@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
              
             <div
               class="mobile-expert-bottom_content"
@@ -462,13 +548,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <div
             class="mobile-expert-item"
           >
-            <img
-              alt="Andrew \\"Сhuck\\" Minkin"
-              class="mobile-expert-img"
-              sizes="(max-width:1000px) 600px"
-              src="[object Object]"
-              srcset="[object Object] 1200w"
-            />
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Chuck@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
              
             <div
               class="mobile-expert-bottom_content"
@@ -509,13 +602,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <div
             class="mobile-expert-item"
           >
-            <img
-              alt="Nakylai Taiirova"
-              class="mobile-expert-img"
-              sizes="(max-width:1000px) 600px"
-              src="[object Object]"
-              srcset="[object Object] 1200w"
-            />
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Nakylai@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
              
             <div
               class="mobile-expert-bottom_content"
@@ -556,13 +656,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <div
             class="mobile-expert-item"
           >
-            <img
-              alt="Daria Utesheva"
-              class="mobile-expert-img"
-              sizes="(max-width:1000px) 600px"
-              src="[object Object]"
-              srcset="[object Object] 1200w"
-            />
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Daria@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
              
             <div
               class="mobile-expert-bottom_content"
@@ -603,13 +710,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <div
             class="mobile-expert-item"
           >
-            <img
-              alt="Nuradil Alymkulov"
-              class="mobile-expert-img"
-              sizes="(max-width:1000px) 600px"
-              src="[object Object]"
-              srcset="[object Object] 1200w"
-            />
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Nuradil@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
              
             <div
               class="mobile-expert-bottom_content"
@@ -650,13 +764,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <div
             class="mobile-expert-item"
           >
-            <img
-              alt="Alice Jang"
-              class="mobile-expert-img"
-              sizes="(max-width:1000px) 600px"
-              src="[object Object]"
-              srcset="[object Object] 1200w"
-            />
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Alice@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
              
             <div
               class="mobile-expert-bottom_content"
@@ -697,13 +818,20 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <div
             class="mobile-expert-item"
           >
-            <img
-              alt="Arthur Elizavetenkov"
-              class="mobile-expert-img"
-              sizes="(max-width:1000px) 600px"
-              src="[object Object]"
-              srcset="[object Object] 1200w"
-            />
+            <picture>
+              <source
+                class="multi-image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Arthur@2x"
+                class="multi-image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
              
             <div
               class="mobile-expert-bottom_content"

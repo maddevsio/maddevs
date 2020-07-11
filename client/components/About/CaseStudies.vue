@@ -194,7 +194,7 @@ export default {
         &::after {
           content: '';
           position: absolute;
-          background-image: url('../../assets/img/Studies/svg/godeeSecondaryBg.svg');
+          background-image: url('../../assets/img/Studies/jpg/godeeSecondaryBg.jpg');
           background-repeat: no-repeat;
           width: 100%;
           height: 100%;

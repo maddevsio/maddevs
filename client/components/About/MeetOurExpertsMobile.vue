@@ -3,11 +3,7 @@
     <swiper class="swiper" :options="swiperOption">
       <swiper-slide v-for="(expert, i) in experts" :key="i">
         <div class="mobile-expert-item">
-          <img 
-            :srcset="[require(`@/assets/img/Home/png/experts/${expert.image}@2x.png`) + ' 1200w']"
-            sizes="(max-width:1000px) 600px"
-            :src="require(`@/assets/img/Home/png/experts/${expert.image}.png`)"
-            class="mobile-expert-img" :alt="expert.name">
+          <image-component :fileName="`${expert.image}`" :fileNameRetina="`${expert.image}@2x`"/>
           <div class="mobile-expert-bottom_content">
             <div class="mobile-expert-info">
               <div class="mobile-expert-name">{{ expert.name }}</div>
@@ -26,12 +22,14 @@
 
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
+import ImageComponent from '@/components/ui/image-component';
 
 export default {
   name: 'MeetOurExpertsMobile',
   components: {
     Swiper,
-    SwiperSlide
+    SwiperSlide,
+    ImageComponent
   },
   props: {
     experts: {
