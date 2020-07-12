@@ -7,9 +7,9 @@
         </h1>
       </div>
       <div class="icon-item">
-        <img src="@/assets/img/Services/svg/order-a-project.svg" alt="Order a Project Logotype" class="default-image" v-if="!showGreenBannerImage">
-        <img src="@/assets/img/Services/svg/order-a-project-hover.svg"  alt="Order a Project Logotype" class="hover-image" v-if="!showGreenBannerImage" @click="switchImage">
-        <img src="@/assets/img/Services/svg/order-a-project-green.svg" alt="Order a Project Logotype" class="green-image" v-if="showGreenBannerImage" @click="switchImage">
+        <img src="@/assets/img/Services/svg/order-a-project.svg" alt="Order a Project Logotype" class="default-image" v-if="!$store.state.modalWindowIsOpen">
+        <img src="@/assets/img/Services/svg/order-a-project-hover.svg"  alt="Order a Project Logotype" class="hover-image" v-if="!$store.state.modalWindowIsOpen" @click="showModal">
+        <img src="@/assets/img/Services/svg/order-a-project-green.svg" alt="Order a Project Logotype" class="green-image" v-if="$store.state.modalWindowIsOpen" @click="showModal">
       </div> 
     </div>
     <navigationList/>
@@ -25,25 +25,25 @@ export default {
     navigationList
   },
   mounted() {
-    window.addEventListener('click', this.setInitialStateForImage);
+    window.addEventListener('scroll', this.handleScroll);
   },
   destroyed() {
-    window.removeEventListener('click', this.setInitialStateForImage);
-  },
-  data() {
-    return {
-      showGreenBannerImage: false
-    };
+    window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
-    switchImage() {
-      this.showGreenBannerImage = !this.showGreenBannerImage;
+    showModal() {
       this.$modal.show('order-project-from-us-modal');
+      this.$store.commit('SET_DISPLAY_STATE_FOR_MODAL_WINDOW', true);
+      this.disableScrollOnBody();
     },
-    setInitialStateForImage() {
-      if (event.target.className === 'close-modal') {
-        this.showGreenBannerImage = false;
-      }
+    disableScrollOnBody() {
+      const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+      const body = document.body;
+      body.style.position = 'fixed';
+      body.style.top = `-${scrollY}`;
+    },
+    handleScroll() {
+      document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
     }
   }
 };
