@@ -1,6 +1,6 @@
 <template>
-  <modal :classes="['modal_container']" height="auto" :name="$props.name" @closed="hideModal">
-    <button @click="onClose" class="close-modal">
+  <modal :classes="['modal_container']" height="auto" :name="$props.name" @closed="handleOutsideClick">
+    <button @click="closeModal" class="close-modal">
       <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
     </button>
     <perfect-scrollbar class="modal_scrollbar custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
@@ -42,12 +42,14 @@ export default {
     }
   },
   methods: {
-    hideModal() {
+    handleOutsideClick() {
       this.isEmailSent = false;
+      this.$store.commit('SET_DISPLAY_STATE_FOR_MODAL_WINDOW', false);
       this.enableScrollOnBody();
     },
-    onClose() {
+    closeModal() {
       this.$modal.hide(this.$props.name);
+      this.$store.commit('SET_DISPLAY_STATE_FOR_MODAL_WINDOW', false);
     },
     enableScrollOnBody() {
       const body = document.body;

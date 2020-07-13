@@ -39,10 +39,16 @@ export default {
       default: false
     }
   },
+  data() {
+    return {
+      scrollYPosition: null 
+    };
+  },
   mounted() {
-    window.addEventListener('scroll', () => {
-      document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
-    });
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
     showModal() {
@@ -50,10 +56,11 @@ export default {
       this.disableScrollOnBody();
     },
     disableScrollOnBody() {
-      const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
-      const body = document.body;
-      body.style.position = 'fixed';
-      body.style.top = `-${scrollY}`;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${this.scrollYPosition}`;
+    },
+    handleScroll() {
+      this.scrollYPosition = `${window.scrollY}px`;
     }
   }
 };
