@@ -203,7 +203,7 @@ export default {
 
       &__testimonials-list {
         padding-left: 55px;
-        width: 35%;
+        width: 29%;
       }
     }
   }
@@ -223,7 +223,7 @@ export default {
       padding: 111px 0;
 
       &__main-title {
-        font-size: 100px;
+        font-size: 80px;
         padding-bottom: 60px;
       }
 
