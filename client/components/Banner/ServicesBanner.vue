@@ -24,6 +24,11 @@ export default {
   components: {
     navigationList
   },
+  data() {
+    return {
+      scrollYPosition: null 
+    };
+  },
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
   },
@@ -37,13 +42,11 @@ export default {
       this.disableScrollOnBody();
     },
     disableScrollOnBody() {
-      const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
-      const body = document.body;
-      body.style.position = 'fixed';
-      body.style.top = `-${scrollY}`;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${this.scrollYPosition}`;
     },
     handleScroll() {
-      document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+      this.scrollYPosition = `${window.scrollY}px`;
     }
   }
 };

@@ -111,7 +111,7 @@ describe('CaseStudies component', () => {
       parentComponent: BannerContainer
     });
 
-    expect(wrapper.vm.$parent.$options.name).toBe('Banner');
+    expect(wrapper.vm.$parent.$options.name).toBe('BannerContainer');
   });
 
   test('should check existence of data', () => {
