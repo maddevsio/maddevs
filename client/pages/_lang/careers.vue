@@ -18,7 +18,7 @@ export default {
   data() {
     return {
       title: 'Mad Devs Careers',
-      description: 'Example',
+      description: '',
       ogUrl: 'https://maddevs.io/en/projects'
     };
   },
@@ -33,7 +33,7 @@ export default {
         { property: 'og:description', content: this.description },
         {
           property: 'og:image',
-          content: 'https://maddevs.io/static/Open-Graph.png'
+          content: 'https://maddevs.io/Open-Graph.png'
         }
       ]
     };
