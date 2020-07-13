@@ -23,8 +23,8 @@ describe('Form checkboxes', () => {
           state: {
             modalWindowIsOpen: false
           }
-        },
-      },
+        }
+      }
     });
   });
 
