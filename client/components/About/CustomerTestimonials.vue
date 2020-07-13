@@ -241,7 +241,9 @@ export default {
 
       &__main-title {
         text-align: center;
-        font-size: 90px;
+        // TODO template text
+        // font-size: 90px;
+        font-size: 80px;
       }
 
       &__content-wrap {
