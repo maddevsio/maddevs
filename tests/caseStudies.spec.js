@@ -2,7 +2,7 @@ import {
   mount
 } from '@vue/test-utils';
 import CaseStudies from '@/components/About/CaseStudies';
-import Banner from '@/components/Banner';
+import BannerContainer from '@/containers/BannerContainer';
 
 describe('CaseStudies component', () => {
   let wrapper;
@@ -108,10 +108,10 @@ describe('CaseStudies component', () => {
       mocks: {
         $route
       },
-      parentComponent: Banner
+      parentComponent: BannerContainer
     });
 
-    expect(wrapper.vm.$parent.$options.name).toBe('Banner');
+    expect(wrapper.vm.$parent.$options.name).toBe('BannerContainer');
   });
 
   test('should check existence of data', () => {

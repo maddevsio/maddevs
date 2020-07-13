@@ -1,47 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Banner renders correctly 1`] = `
-<section
-  class="banner /"
-  id="banner"
+exports[`Form checkboxes renders correctly 1`] = `
+<div
+  class="banner-content projects-content"
 >
   <div
-    class="container"
+    class="text-content_wrapper"
   >
     <div
-      class="banner-content"
+      class="main-title-wrapper"
     >
-      <div
-        class="text-content_wrapper"
+      <h1
+        class="banner-main_title"
       >
-        <div
-          class="main-title-wrapper"
-        >
-          <!---->
-           
-          <!---->
-           
-          <!---->
-           
-          <!---->
-           
-          <!---->
-           
-          <!---->
-        </div>
+        
+        Check out
+        <br
+          class="tablet-break"
+        />
+         our
+        <br
+          class="desktop-break"
+        />
          
-        <div
-          class="icon-item"
+        <span
+          class="main-title-white_part"
         >
-          <!---->
-           
-          <!---->
-           
-          <!---->
-           
-          <!---->
-        </div>
-      </div>
+           50+ 
+          <br
+            class="tablet-break"
+          />
+          implemented projects-content!
+        </span>
+      </h1>
        
       <div
         class="navigation-wrap"
@@ -80,5 +71,5 @@ exports[`Banner renders correctly 1`] = `
       </div>
     </div>
   </div>
-</section>
+</div>
 `;

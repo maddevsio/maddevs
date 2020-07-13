@@ -1,7 +1,8 @@
 export const state = () => ({
   locales: ['en', 'ru'],
   locale: 'en',
-  contactMeFormStatus: false
+  contactMeFormStatus: false,
+  modalWindowIsOpen: false
 });
 
 export const mutations = {
@@ -12,7 +13,10 @@ export const mutations = {
   },
   SET_STATUS_FOR_SEND_EMAIL(state, status) {
     state.contactMeFormStatus = status;
-  }
+  },
+  SET_DISPLAY_STATE_FOR_MODAL_WINDOW(state, payload) {
+    state.modalWindowIsOpen = payload;
+  } 
 };
 
 export const actions = {
