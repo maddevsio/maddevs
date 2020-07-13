@@ -169,7 +169,8 @@ export default {
     }
 
     &__widget-wrap {
-      width: 813px;
+      max-width: 813px;
+      width: 90%;
       height: 100%;
       overflow: hidden;
 
