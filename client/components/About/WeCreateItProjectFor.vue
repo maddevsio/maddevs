@@ -181,7 +181,7 @@ export default {
       &__project-item {
         // TODO template text
         // font-size: 64px;
-        font-size: 60px;
+        font-size: 55px;
       }
 
       &__country-list_title {
