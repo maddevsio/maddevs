@@ -215,7 +215,7 @@ export default {
       }
 
       &__project-item {
-        font-size: 54px;
+        font-size: 40px;
         padding-bottom: 13px;
 
         &:last-child {

@@ -6,24 +6,24 @@
           <h3 class="remote-tech-staff-content__title title default-title">{{ title }}</h3>
           <h4 class="remote-tech-staff-content__sub-title sub-title">{{ subTitle }}</h4>
         </div>
-        <img 
-          class="remote-tech-staff-content__content-icon" 
-          src="@/assets/img/Services/svg/individuals-symbol.svg" 
+        <img
+          class="remote-tech-staff-content__content-icon"
+          src="@/assets/img/Services/svg/individuals-symbol.svg"
           alt="individuals-title-symbol"
           v-if="title === 'Individuals'"
         />
         <img
-          class="remote-tech-staff-content__content-icon" 
-          src="@/assets/img/Services/svg/teams-symbol.svg" 
+          class="remote-tech-staff-content__content-icon"
+          src="@/assets/img/Services/svg/teams-symbol.svg"
           alt="teams-title-symbol"
           v-if="title === 'Teams'"
         />
       </div>
       <p class="remote-tech-staff-content__paragraph paragraph">{{ paragraph }}</p>
     </div>
-    <UIButtonModalTrigger 
+    <UIButtonModalTrigger
       :buttonInnerText="buttonInnerText"
-      :modalWindowName="modalWindowName" 
+      :modalWindowName="modalWindowName"
       class="remote-tech-staff-content__ui-button-modal-trigger"
     />
   </div>
@@ -108,7 +108,7 @@ export default {
 
     &__title {
       padding-bottom: 17px;
-      font-size: 70px;
+      font-size: 80px;
       line-height: 92%;
       letter-spacing: -2px;
     }

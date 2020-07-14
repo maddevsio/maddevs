@@ -162,7 +162,7 @@ export default {
 			padding-top: 90px;
 
 			&__main-title {
-				font-size: 100px;
+				font-size: 80px;
 			}
 
 			&__mailto-link {

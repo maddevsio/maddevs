@@ -425,7 +425,7 @@ export default {
     padding-top: 20px;
 
     &__main-title {
-      font-size: 100px;
+      font-size: 80px;
     }
   }
 

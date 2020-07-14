@@ -124,7 +124,7 @@ export default {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
-        font-size: 131px;
+        font-size: 90px;
       }
     }
   }
@@ -142,7 +142,7 @@ export default {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first  {
-        font-size: 110px;
+        font-size: 90px;
         letter-spacing: -8px;
       }
     }

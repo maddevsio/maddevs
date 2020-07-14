@@ -3,9 +3,9 @@
     <div class="software-development_content__content-item_wrapper">
       <h3 class="software-development_content__title title" v-if="title === 'Mobile'">
         <span>Mobi</span>
-        <img 
-          class="software-development_content__mobile-title-icon title-icon" 
-          src="../../assets/img/Services/svg/phone-title-symbol.svg" 
+        <img
+          class="software-development_content__mobile-title-icon title-icon"
+          src="../../assets/img/Services/svg/phone-title-symbol.svg"
           alt="phone-title-symbol"
         />
         <span class="software-development_content__last-character last-character">e</span>
@@ -107,7 +107,7 @@ export default {
     }
 
     &__title {
-      font-size: 70px;
+      font-size: 80px;
       line-height: 110%;
     }
   }
