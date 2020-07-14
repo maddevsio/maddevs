@@ -4,7 +4,7 @@
       <div class="main-title-wrapper">
         <h1 class="banner-main_title">
           Check out<br class="tablet-break"> our<br class="desktop-break">
-          <span class="main-title-white_part"> 50+ <br class="tablet-break">implemented projects-content!</span>
+          <span class="main-title-white_part"> 50+ <br class="tablet-break">implemented projects!</span>
         </h1>
         <navigationList />
       </div>

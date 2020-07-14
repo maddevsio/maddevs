@@ -30,7 +30,7 @@ exports[`Form checkboxes renders correctly 1`] = `
           <br
             class="tablet-break"
           />
-          implemented projects-content!
+          implemented projects!
         </span>
       </h1>
        

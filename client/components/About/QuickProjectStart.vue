@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="quick-project_start__button-wrap">
-        <UIButtonModalTrigger
+        <UIButtonModalTrigger 
           :buttonInnerText="buttonInnerText"
           :modalWindowName="modalWindowName"
           :isRed="true"
@@ -346,9 +346,7 @@ export default {
   @media only screen and (max-width: 1024px) {
     .quick-project_start {
       &__main-title {
-        // TODO template text
-        // font-size: 90px;
-        font-size: 80px;
+        font-size: 90px;
       }
 
       &__button-wrap {

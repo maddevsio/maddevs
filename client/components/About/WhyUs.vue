@@ -175,9 +175,7 @@ export default {
     }
 
     &__sub-title {
-      // TODO template text
-      // font-size: 90px;
-      font-size: 80px;
+      font-size: 90px;
       font-family: 'Hoves-Bold';
       color: $text-color--black;
       line-height: 104%;
@@ -191,9 +189,7 @@ export default {
     }
 
     &__metric-number {
-      // TODO template text
-      // font-size: 90px;
-      font-size: 75px;
+      font-size: 90px;
       line-height: 104%;
       letter-spacing: -3px;
     }
@@ -201,9 +197,7 @@ export default {
     &__rates-number {
       display: flex;
       letter-spacing: -8px;
-      // TODO template text
-      // font-size: 165px;
-      font-size: 150px;
+      font-size: 165px;
       line-height: 100%;
 
       span {
@@ -556,9 +550,7 @@ export default {
     .why-us {
       &__main-title {
         padding-bottom: 200px;
-        // TODO template text
-        // font-size: 90px;
-        font-size: 80px;
+        font-size: 90px;
       }
     }
   }
@@ -567,9 +559,7 @@ export default {
     .why-us {
       &__main-title {
         padding-bottom: 205px;
-        // TODO template text
-        // font-size: 90px;
-        font-size: 80px;
+        font-size: 90px;
         margin-left: -25px;
       }
 
@@ -602,9 +592,7 @@ export default {
       &__main-title {
         padding-bottom: 80px;
         text-align: center;
-        // TODO template text
-        // font-size: 90px;
-        font-size: 80px;
+        font-size: 90px;
         margin-left: 0;
       }
 
@@ -643,7 +631,7 @@ export default {
         line-height: 99%;
         letter-spacing: -1px;
       }
-
+      
       &__item_description {
         font-size: 17px;
         line-height: 129%;
