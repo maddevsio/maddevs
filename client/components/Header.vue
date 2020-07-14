@@ -42,9 +42,9 @@
               </div>
               <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
             </div>
-            <UIButtonModalTrigger
-              :buttonInnerText="buttonInnerText"
-              :modalWindowName="modalWindowName"
+            <UIButtonModalTrigger 
+              :buttonInnerText="buttonInnerText" 
+              :modalWindowName="modalWindowName" 
               :isRed="true"
             />
           </div>
@@ -108,7 +108,7 @@ export default {
     handleScroll() {
       if(window.pageYOffset >= 100)
         this.headerLogoTextDisplayState = true;
-      else
+      else 
         this.headerLogoTextDisplayState = false;
     }
   }
@@ -276,11 +276,11 @@ export default {
   @media only screen and (max-width: 1590px) {
     .header {
       &__logo-icon {
-        margin-left: -30px;
+        margin-left: -80px;
       }
 
       button {
-        margin-right: -30px;
+        margin-right: -80px;
       }
 
       &__header-routes_links {
@@ -309,11 +309,11 @@ export default {
       }
 
       &__logo-icon {
-        margin-left: -28px;
+        margin-left: -68px;
       }
 
       button {
-        margin-right: -28px;
+        margin-right: -68px;
       }
     }
   }
@@ -345,11 +345,11 @@ export default {
   @media only screen and (max-width: 1140px) {
     .header {
       &__logo-icon {
-        margin-left: -45px;
+        margin-left: -80px;
       }
 
       button {
-        margin-right: -45px;
+        margin-right: -80px;
       }
     }
   }

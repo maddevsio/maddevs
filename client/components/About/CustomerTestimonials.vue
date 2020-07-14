@@ -169,7 +169,7 @@ export default {
     }
 
     &__widget-wrap {
-      // max-width: 813px;
+      max-width: 813px;
       width: 90%;
       height: 100%;
       overflow: hidden;
@@ -202,8 +202,7 @@ export default {
       padding: 100px 0;
 
       &__testimonials-list {
-        padding-left: 55px;
-        width: 29%;
+        padding-left: 90px;
       }
     }
   }
@@ -223,12 +222,12 @@ export default {
       padding: 111px 0;
 
       &__main-title {
-        font-size: 80px;
+        font-size: 100px;
         padding-bottom: 60px;
       }
 
       &__widget-wrap {
-        // width: 545px;
+        width: 545px;
       }
 
       &__project {
@@ -259,7 +258,6 @@ export default {
       &__testimonials-list {
         padding-top: 55px;
         padding-left: 0;
-        width: 100%;
       }
 
       &__testimonials-item {

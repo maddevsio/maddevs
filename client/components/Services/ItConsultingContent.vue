@@ -50,7 +50,7 @@ export default {
     }
 
     &__title {
-      font-size: 80px;
+      font-size: 70px;
     }
 
     &__sub-title {

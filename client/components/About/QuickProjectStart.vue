@@ -260,7 +260,7 @@ export default {
       padding-bottom: 151px;
 
       &__main-title {
-        font-size: 80px;
+        font-size: 100px;
         padding-bottom: 105px;
       }
 
