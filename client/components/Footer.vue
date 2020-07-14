@@ -130,7 +130,7 @@ export default {
 		.footer {
 			padding-top: 110px;
 			padding-bottom: 103px;
-		}
+		}	
 	}
 
 	@media only screen and (max-width: 1420px) {
@@ -202,9 +202,7 @@ export default {
 			padding-bottom: 43px;
 
 			&__main-title {
-        // TODO template text
-				// font-size: 90px;
-        font-size: 80px;
+				font-size: 90px;
 			}
 		}
 	}
@@ -226,7 +224,7 @@ export default {
 
 			&__mail-wrapper {
 				margin-top: 20px;
-			}
+			} 
 		}
 	}
 

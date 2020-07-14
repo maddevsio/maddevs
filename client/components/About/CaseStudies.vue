@@ -472,9 +472,7 @@ export default {
 @media only screen and (max-width: 1024px) {
   .case-studies {
     &__main-title {
-      // TODO template text
-      // font-size: 90px;
-      font-size: 80px;
+      font-size: 90px;
     }
   }
 
