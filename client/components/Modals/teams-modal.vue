@@ -10,7 +10,7 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="email|required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Work email</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
+            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="your@mail.com" v-model="emailFrom">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="phone|max:50" v-slot="{ classes, errors }">
@@ -65,7 +65,8 @@ export default {
   data: () => ({
     modalName: 'teams-modal',
     fullName: null,
-    email: null,
+    emailFrom: null,
+    emailTo: 'team@maddevs.io',
     phoneNumber: null,
     selectedTeamSize: null,
     projectDescription: null,
@@ -114,7 +115,8 @@ export default {
             fullName: this.fullName || '',
             selectedTeamSize: this.selectedTeamSize || '',
             projectDescription: this.projectDescription || '',
-            email: this.email || '',
+            emailFrom: this.emailFrom || '',
+            emailTo: this.emailTo || '',
             phoneNumber: this.phoneNumber || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
@@ -134,7 +136,7 @@ export default {
     resetForm() {
       this.$refs.checkboxes.reset();
       this.fullName = null;
-      this.email = null;
+      this.emailFrom = null;
       this.phoneNumber = null;
       this.selectedTeamSize = null;
       this.projectDescription = null;

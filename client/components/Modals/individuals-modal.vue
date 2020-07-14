@@ -10,7 +10,7 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="email|required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Work email</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
+            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="your@mail.com" v-model="emailFrom">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="phone|max:50" v-slot="{ classes, errors }">
@@ -59,7 +59,8 @@ export default {
   data: () => ({
     modalName: 'individuals-modal',
     fullName: null,
-    email: null,
+    emailFrom: null,
+    emailTo: 'team@maddevs.io',
     phoneNumber: null,
     projectDescription: null,
     interestedExpertise: null,
@@ -86,7 +87,8 @@ export default {
           templateId: 304625, // Required
           variables: {
             fullName: this.fullName || '',
-            email: this.email || '',
+            emailFrom: this.emailFrom || '',
+            emailTo: this.emailTo || '',
             phoneNumber: this.phoneNumber || '',
             interestedExpertise: this.interestedExpertise || '',
             projectDescription: this.projectDescription || '',
@@ -108,7 +110,7 @@ export default {
     resetForm() {
       this.$refs.checkboxes.reset();
       this.fullName = null;
-      this.email = null;
+      this.emailFrom = null;
       this.phoneNumber = null;
       this.projectDescription = null;
       this.interestedExpertise = null;

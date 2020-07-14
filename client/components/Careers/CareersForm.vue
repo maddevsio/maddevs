@@ -53,7 +53,7 @@
                   class="careers__form-email-input form-text"
                   type="email"
                   placeholder="your@mail.com"
-                  v-model="email"
+                  v-model="emailFrom"
                 />
                 <span class="modal-error-text error-text">{{ errors[0] }}</span>
               </ValidationProvider>
@@ -105,7 +105,8 @@ export default {
       fullName: null,
       positionValue: null,
       positionTitle: null,
-      email: null,
+      emailFrom: null,
+      emailTo: 'hr@maddevs.io',
       selectedFile: null,
       linkedinProfile: null,
       radioData: [
@@ -140,7 +141,8 @@ export default {
             templateId: 305491, // Required
             variables: {
               fullName: this.fullName,
-              email: this.email,
+              emailFrom: this.emailFrom,
+              emailTo: this.emailTo,
               linkedinProfile: this.linkedinProfile,
               positionValue: this.positionValue.type,
               positionTitle: this.positionTitle
@@ -171,7 +173,7 @@ export default {
       this.fullName = null;
       this.positionValue = null;
       this.positionTitle = null;
-      this.email = null;
+      this.emailFrom = null;
       this.selectedFile = null;
       this.linkedinProfile = null;
       this.isEmailSent = false;

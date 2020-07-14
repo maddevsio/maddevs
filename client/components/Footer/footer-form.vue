@@ -8,7 +8,7 @@
         </ValidationProvider>
         <ValidationProvider class="field-item footer-form_email" rules="email|required" v-slot="{ classes, errors }">
           <div v-PlaceholderAsterisk="'your@mail.com'">
-            <input type="text" class="entry-field" :class="classes" v-model="email">
+            <input type="text" class="entry-field" :class="classes" v-model="emailFrom">
           </div>
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
@@ -51,7 +51,8 @@ export default {
   },
   data: () => ({
     fullName: null,
-    email: null,
+    emailFrom: null,
+    emailTo: 'team@maddevs.io',
     projectDescriber: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
@@ -76,7 +77,8 @@ export default {
           templateId: 305480, // Required
           variables: {
             fullName: this.fullName,
-            email: this.email,
+            emailFrom: this.emailFrom || '',
+            emailTo: this.emailTo || '',
             projectDescriber: this.projectDescriber,
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
@@ -99,7 +101,7 @@ export default {
       this.$refs.form.reset();
       this.$refs.checkboxes.reset();
       this.fullName = null;
-      this.email = null;
+      this.emailFrom = null;
       this.projectDescriber = '';
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
