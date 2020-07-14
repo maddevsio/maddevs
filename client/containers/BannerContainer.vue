@@ -112,9 +112,7 @@ export default {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
-        // TODO template text
-        // font-size: 149px;
-        font-size: 135px;
+        font-size: 149px;
       }
     }
   }
