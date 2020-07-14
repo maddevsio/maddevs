@@ -177,7 +177,7 @@ export default {
     &__sub-title {
       // TODO template text
       // font-size: 90px;
-      font-size: 60px;
+      font-size: 80px;
       font-family: 'Hoves-Bold';
       color: $text-color--black;
       line-height: 104%;
@@ -193,7 +193,7 @@ export default {
     &__metric-number {
       // TODO template text
       // font-size: 90px;
-      font-size: 65px;
+      font-size: 75px;
       line-height: 104%;
       letter-spacing: -3px;
     }
@@ -203,7 +203,7 @@ export default {
       letter-spacing: -8px;
       // TODO template text
       // font-size: 165px;
-      font-size: 130px;
+      font-size: 150px;
       line-height: 100%;
 
       span {

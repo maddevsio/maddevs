@@ -45,7 +45,7 @@ export default {
     }
 
     &__title {
-      font-size: 80px;
+      font-size: 70px;
       line-height: 110%;
       letter-spacing: -2px;
       padding-bottom: 16px;
