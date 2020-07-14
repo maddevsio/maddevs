@@ -15,7 +15,7 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="email|required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Work email</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
+            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="your@mail.com" v-model="emailFrom">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="phone|max:50" v-slot="{ classes, errors }">
@@ -60,7 +60,8 @@ export default {
   data: () => ({
     modalName: 'order-project-from-us-modal',
     fullName: null,
-    email: null,
+    emailFrom: null,
+    emailTo: 'team@maddevs.io',
     phoneNumber: null,
     company: null,
     projectDescription: null,
@@ -88,7 +89,8 @@ export default {
           variables: {
             fullName: this.fullName || '',
             company: this.company || '',
-            email: this.email || '',
+            emailFrom: this.emailFrom || '',
+            emailTo: this.emailTo || '',
             phoneNumber: this.phoneNumber || '',
             projectDescription: this.projectDescription || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
@@ -109,7 +111,7 @@ export default {
     resetForm() {
       this.$refs.checkboxes.reset();
       this.fullName = null;
-      this.email = null;
+      this.emailFrom = null;
       this.phoneNumber = null;
       this.company = null;
       this.projectDescription = null;
