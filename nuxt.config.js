@@ -1,4 +1,5 @@
 require('dotenv').config();
+const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 
 module.exports = {
   srcDir: 'client/',
@@ -41,7 +42,8 @@ module.exports = {
     {
       src: '~/plugins/vue-js-modal.js',
       ssr: false
-    }
+    },
+    new ExtractCssChunks()
   ],
   generate: {
     routes: [
@@ -67,6 +69,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+    extractCSS: true,
     vendor: ['axios'],
     followSymlinks: true,
     cache: true,
@@ -81,21 +84,31 @@ module.exports = {
         });
       }
     },
-    html: {
-      minify: {
-        collapseBooleanAttributes: true,
-        decodeEntities: true,
-        minifyCSS: true,
-        minifyJS: true,
-        processConditionalComments: true,
-        removeEmptyAttributes: true,
-        removeRedundantAttributes: true,
-        trimCustomFragments: true,
-        useShortDoctype: true
-      }
-    },
+    // html: {
+    //   minify: {
+    //     collapseBooleanAttributes: true,
+    //     decodeEntities: true,
+    //     minifyCSS: true,
+    //     minifyJS: true,
+    //     processConditionalComments: true,
+    //     removeEmptyAttributes: true,
+    //     removeRedundantAttributes: true,
+    //     trimCustomFragments: true,
+    //     useShortDoctype: true
+    //   }
+    // },
     optimization: {
-      minimize: true
+      // minimize: true
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.(css|vue)$/,
+            chunks: 'all',
+            enforce: true
+          }
+        }
+      }
     }
   },
   modules: [
