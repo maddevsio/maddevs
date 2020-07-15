@@ -56,6 +56,7 @@ export default {
     modalName: 'get-your-trusted-it-partner',
     fullName: null,
     email: null,
+    emailTo: 'team@maddevs.io',
     phoneNumber: null,
     needAssistanceWith: null,
     agreeWithPrivacyPolicy: false,
@@ -82,6 +83,7 @@ export default {
           variables: {
             fullName: this.fullName || '',
             email: this.email || '',
+            emailTo: this.emailTo || '',
             phoneNumber: this.phoneNumber || '',
             needAssistanceWith: this.needAssistanceWith || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',

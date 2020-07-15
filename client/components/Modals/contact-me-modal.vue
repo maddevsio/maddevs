@@ -56,6 +56,7 @@ export default {
     modalName: 'contact-me-modal',
     fullName: null,
     email: null,
+    emailTo: 'team@maddevs.io',
     phoneNumber: null,
     company: null,
     agreeWithPrivacyPolicy: false,
@@ -79,6 +80,7 @@ export default {
             fullName: this.fullName || '',
             company: this.company || '',
             email: this.email || '',
+            emailTo: this.emailTo || '',
             phoneNumber: this.phoneNumber || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'

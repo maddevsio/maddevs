@@ -60,6 +60,7 @@ export default {
     modalName: 'individuals-modal',
     fullName: null,
     email: null,
+    emailTo: 'team@maddevs.io',
     phoneNumber: null,
     projectDescription: null,
     interestedExpertise: null,
@@ -87,6 +88,7 @@ export default {
           variables: {
             fullName: this.fullName || '',
             email: this.email || '',
+            emailTo: this.emailTo || '',
             phoneNumber: this.phoneNumber || '',
             interestedExpertise: this.interestedExpertise || '',
             projectDescription: this.projectDescription || '',

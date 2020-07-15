@@ -46,6 +46,7 @@ export default {
     modalName: 'get-case-studies-modal',
     fullName: null,
     email: null,
+    emailTo: 'team@maddevs.io',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
     inputId: 'case-studies',
@@ -66,6 +67,7 @@ export default {
           variables: {
             fullName: this.fullName || '',
             email: this.email || '',
+            emailTo: this.emailTo || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
           }

@@ -52,6 +52,7 @@ export default {
   data: () => ({
     fullName: null,
     email: null,
+    emailTo: 'team@maddevs.io',
     projectDescriber: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
@@ -76,7 +77,8 @@ export default {
           templateId: 305480, // Required
           variables: {
             fullName: this.fullName,
-            email: this.email,
+            email: this.email || '',
+            emailTo: this.emailTo || '',
             projectDescriber: this.projectDescriber,
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers

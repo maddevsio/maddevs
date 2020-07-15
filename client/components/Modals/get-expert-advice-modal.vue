@@ -56,6 +56,7 @@ export default {
     modalName: 'get-expert-advice',
     fullName: null,
     email: null,
+    emailTo: 'team@maddevs.io',
     phoneNumber: null,
     questionsOnItConsulting: null,
     agreeWithPrivacyPolicy: false,
@@ -83,6 +84,7 @@ export default {
             fullName: this.fullName || '',
             questionsOnItConsulting: this.questionsOnItConsulting || '',
             email: this.email || '',
+            emailTo: this.emailTo || '',
             phoneNumber: this.phoneNumber || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'

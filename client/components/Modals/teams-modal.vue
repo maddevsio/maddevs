@@ -66,6 +66,7 @@ export default {
     modalName: 'teams-modal',
     fullName: null,
     email: null,
+    emailTo: 'team@maddevs.io',
     phoneNumber: null,
     selectedTeamSize: null,
     projectDescription: null,
@@ -115,6 +116,7 @@ export default {
             selectedTeamSize: this.selectedTeamSize || '',
             projectDescription: this.projectDescription || '',
             email: this.email || '',
+            emailTo: this.emailTo || '',
             phoneNumber: this.phoneNumber || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'

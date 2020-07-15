@@ -106,6 +106,7 @@ export default {
       positionValue: null,
       positionTitle: null,
       email: null,
+      emailTo: 'hr@maddevs.io',
       selectedFile: null,
       linkedinProfile: null,
       radioData: [
@@ -141,6 +142,7 @@ export default {
             variables: {
               fullName: this.fullName,
               email: this.email,
+              emailTo: this.emailTo,
               linkedinProfile: this.linkedinProfile,
               positionValue: this.positionValue.type,
               positionTitle: this.positionTitle
