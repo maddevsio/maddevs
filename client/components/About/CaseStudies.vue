@@ -19,6 +19,7 @@
           class="projects-flame-background"
           src="@/assets/img/Projects/png/projects-flame-bg.png"
           alt="Projects Flame Image"
+          v-lazy-load
           v-if="currentPageName === 'projects'"
         />
       </div>

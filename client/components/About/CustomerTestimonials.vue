@@ -11,6 +11,7 @@
               ref="clutch"
               class="clutch-widget"
               data-url="https://widget.clutch.co"
+              v-lazy-load
               data-widget-type="4"
               data-expandifr="true"
               data-height="auto"

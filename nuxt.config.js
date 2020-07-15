@@ -84,6 +84,7 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/axios',
+    'nuxt-lazy-load',
     [
       '@nuxtjs/yandex-metrika',
       {
