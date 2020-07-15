@@ -1,4 +1,7 @@
 require('dotenv').config();
+const imageminMozjpeg = require('imagemin-mozjpeg');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const isDev = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   srcDir: 'client/',
@@ -67,11 +70,109 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+    optimizeCss: false,
     vendor: ['axios'],
     followSymlinks: true,
     cache: true,
     transpile: ['vee-validate/dist/rules'],
+    ...(!isDev && {
+      html: {
+        minify: {
+          collapseBooleanAttributes: true,
+          decodeEntities: true,
+          minifyCSS: true,
+          minifyJS: true,
+          processConditionalComments: true,
+          removeEmptyAttributes: true,
+          removeRedundantAttributes: true,
+          trimCustomFragments: true,
+          useShortDoctype: true
+        }
+      }
+    }),
+    optimization: {
+      minimize: !isDev
+    },
+    ...(!isDev && {
+      extractCSS: {
+        ignoreOrder: true
+      }
+    }),
+    ...(!isDev && {
+      preset: {
+        browsers: 'cover 99.5%',
+        autoprefixer: true
+      }
+    }),
+
+    order: 'cssnanoLast',
     extend (config, { isDev, isClient }) {
+      const ORIGINAL_TEST = '/\\.(png|jpe?g|gif|svg|webp)$/i';
+      const vueSvgLoader = [
+        {
+          loader: 'vue-svg-loader',
+          options: {
+            svgo: false
+          }
+        }
+      ];
+      const imageMinPlugin = new ImageminPlugin({
+        pngquant: {
+          quality: '5-30',
+          speed: 7,
+          strip: true
+        },
+        jpegtran: {
+          progressive: true
+
+        },
+        gifsicle: {
+          interlaced: true
+        },
+        plugins: [
+          imageminMozjpeg({
+            quality: 70,
+            progressive: true
+          })
+
+        ]
+      });
+      const svgRule = {
+        test: /\.svg$/,
+        oneOf: [
+          {
+            resourceQuery: /inline/,
+            use: vueSvgLoader
+          },
+          {
+            resourceQuery: /data/,
+            loader: 'url-loader'
+          },
+          {
+            resourceQuery: /raw/,
+            loader: 'raw-loader'
+          },
+          {
+            loader: 'file-loader' // By default, always use file-loader
+          }
+        ]
+      };
+      config.module.rules.push(svgRule); // Actually add the rule
+      if (!isDev) config.plugins.push(imageMinPlugin);
+      config.module.rules.forEach(rule => {
+        if (rule.test.toString() === ORIGINAL_TEST) {
+          rule.test = /\.(png|jpe?g|gif|webp)$/i;
+          rule.use = [
+            {
+              loader: 'url-loader',
+              options: {
+                limit: 1000,
+                name: isDev ? '[path][name].[ext]' : 'img/[contenthash:7].[ext]'
+              }
+            }
+          ];
+        }
+      });
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -84,6 +185,17 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/axios',
+    [
+      'nuxt-compress',
+      {
+        gzip: {
+          cache: true
+        },
+        brotli: {
+          threshold: 10240
+        }
+      }
+    ],
     [
       '@nuxtjs/yandex-metrika',
       {
