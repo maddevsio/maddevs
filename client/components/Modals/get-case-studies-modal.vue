@@ -10,7 +10,7 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="email|required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Work email</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="your@mail.com" v-model="emailFrom">
+            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
@@ -45,7 +45,7 @@ export default {
   data: () => ({
     modalName: 'get-case-studies-modal',
     fullName: null,
-    emailFrom: null,
+    email: null,
     emailTo: 'team@maddevs.io',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
@@ -66,7 +66,7 @@ export default {
           templateId: 304622, // Required
           variables: {
             fullName: this.fullName || '',
-            emailFrom: this.emailFrom || '',
+            email: this.email || '',
             emailTo: this.emailTo || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
@@ -86,7 +86,7 @@ export default {
     resetForm() {
       this.$refs.checkboxes.reset();
       this.fullName = null;
-      this.emailFrom = null;
+      this.email = null;
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
     }
