@@ -85,6 +85,7 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
     'nuxt-lazy-load',
+    ['nuxt-compress'],
     [
       '@nuxtjs/yandex-metrika',
       {
