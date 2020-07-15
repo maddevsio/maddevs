@@ -63,6 +63,7 @@ export default {
     UIButton
   },
   data: () => ({
+    form: null,
     modalName: 'teams-modal',
     fullName: null,
     email: null,
@@ -109,7 +110,7 @@ export default {
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
         this.onSubmit = true;
-        const form = {
+        this.form = {
           templateId: 304637, // Required
           variables: {
             fullName: this.fullName || '',
@@ -122,7 +123,7 @@ export default {
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
           }
         };
-        this.$store.dispatch('sendEmail', form).then(res => {
+        this.$store.dispatch('sendEmail', this.form).then(res => {
           this.onSubmit = false;
           this.resetForm();
           if (res.status === 200) {
@@ -140,6 +141,7 @@ export default {
       this.phoneNumber = null;
       this.selectedTeamSize = null;
       this.projectDescription = null;
+      this.form = null;
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
     }
