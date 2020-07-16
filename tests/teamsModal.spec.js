@@ -17,7 +17,7 @@ describe('Teams Modal', () => {
     });
     wrapper.vm.$refs.checkboxes = {
       reset: jest.fn()
-    }
+    };
   });
 
   // ------ IMPORTANT ----- //
@@ -82,18 +82,18 @@ describe('Teams Modal', () => {
 
   test('sendForm should add new object in $data.form', () => {
     const form = {
-      "templateId": 304637,
-      "variables": {
-        "agreeToGetMadDevsDiscountOffers": "No",
-        "agreeWithPrivacyPolicy": "No",
-        "email": "",
-        "emailTo": "team@maddevs.io",
-        "fullName": "",
-        "phoneNumber": "",
-        "projectDescription": "",
-        "selectedTeamSize": "",
+      'templateId': 304637,
+      'variables': {
+        'agreeToGetMadDevsDiscountOffers': 'No',
+        'agreeWithPrivacyPolicy': 'No',
+        'email': '',
+        'emailTo': 'team@maddevs.io',
+        'fullName': '',
+        'phoneNumber': '',
+        'projectDescription': '',
+        'selectedTeamSize': ''
       }
-    }
+    };
     expect(wrapper.vm.$data.form).toEqual(null);
     wrapper.vm.sendForm(true);
     expect(wrapper.vm.$data.form).toEqual(form);

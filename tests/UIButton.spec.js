@@ -10,7 +10,7 @@ describe('Ui button modal trigger', () => {
     wrapper = mount(UIButton, {
       propsData: {
         name: 'Button name',
-        disabled: false,
+        disabled: false
       }
     });
   });
@@ -39,7 +39,7 @@ describe('Ui button modal trigger', () => {
     wrapper = mount(UIButton, {
       propsData: {
         name: 'Button name',
-        disabled: true,
+        disabled: true
       }
     });
     wrapper.vm.onClick();

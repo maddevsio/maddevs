@@ -22,7 +22,7 @@ describe('Footer form', () => {
       form: {
         reset: jest.fn()
       }
-    }
+    };
   });
 
   // ------ IMPORTANT ----- //
@@ -78,16 +78,16 @@ describe('Footer form', () => {
 
   test('sendForm should add new object in $data.form', () => {
     const form = {
-      "templateId": 305480,
-      "variables": {
-        "agreeToGetMadDevsDiscountOffers": false,
-        "agreeWithPrivacyPolicy": false,
-        "email": "",
-        "emailTo": "team@maddevs.io",
-        "fullName": null,
-        "projectDescriber": ""
+      'templateId': 305480,
+      'variables': {
+        'agreeToGetMadDevsDiscountOffers': false,
+        'agreeWithPrivacyPolicy': false,
+        'email': '',
+        'emailTo': 'team@maddevs.io',
+        'fullName': null,
+        'projectDescriber': ''
       }
-    }
+    };
     expect(wrapper.vm.$data.form).toEqual(null);
     wrapper.vm.sendForm(true);
     expect(wrapper.vm.$data.form).toEqual(form);
