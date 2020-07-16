@@ -6,7 +6,7 @@
     </p>
     <InfrastructureFirstIconsGroup />
     <p class="infrastructure-content__paragraph paragraph">
-      Mad Devs infrastructure leads also have expertise with a with a wide range of tools for tools сonfiguration, СI/CD and monitoring:
+      Mad Devs infrastructure leads also have expertise with a wide range of tools for tools сonfiguration, СI/CD and monitoring:
     </p>
     <InfrastructureSecondIconsGroup />
   </div>

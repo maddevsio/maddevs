@@ -50,9 +50,7 @@
         <p class="nda__paragraph paragraph">
           Our company has experience of working with NDA agreements of any kind and complexity. 
           If you have more specific questions please contact us via
-          <a class="nda__link" href="mailto:rock@maddevs.com"
-            >rock@maddevs.com</a
-          >.
+          <a class="nda__link" href="mailto:rock@maddevs.io">rock@maddevs.io</a>.
         </p>
       </div>
     </div>

@@ -11,7 +11,7 @@
           <form @submit.prevent="handleSubmit(sendData)" class="careers__form">
             <label class="careers__form-name-label form-text"
               >Hello, my name is
-              <ValidationProvider rules="required" v-slot="{ classes, errors }">
+              <ValidationProvider rules="required|max:50" v-slot="{ classes, errors }">
                 <input
                   class="careers__form-name-input form-text"
                   type="text"
