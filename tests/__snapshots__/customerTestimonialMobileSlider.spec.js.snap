@@ -44,11 +44,16 @@ exports[`Customer Testimonials Mobile Slider renders correctly 1`] = `
         <div
           class="mobile-project"
         >
-          <img
-            alt="teacherly"
-            class="mobile-project_image teacherly"
-            src="[object Object]"
-          />
+          <a
+            rel="nofollow"
+            target="blank"
+          >
+            <img
+              alt="teacherly"
+              class="mobile-project_image teacherly"
+              src="[object Object]"
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -88,11 +93,16 @@ exports[`Customer Testimonials Mobile Slider renders correctly 1`] = `
         <div
           class="mobile-project"
         >
-          <img
-            alt="veeqo"
-            class="mobile-project_image veeqo"
-            src="[object Object]"
-          />
+          <a
+            rel="nofollow"
+            target="blank"
+          >
+            <img
+              alt="veeqo"
+              class="mobile-project_image veeqo"
+              src="[object Object]"
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -132,11 +142,16 @@ exports[`Customer Testimonials Mobile Slider renders correctly 1`] = `
         <div
           class="mobile-project"
         >
-          <img
-            alt="guardrails"
-            class="mobile-project_image guardrails"
-            src="[object Object]"
-          />
+          <a
+            rel="nofollow"
+            target="blank"
+          >
+            <img
+              alt="guardrails"
+              class="mobile-project_image guardrails"
+              src="[object Object]"
+            />
+          </a>
         </div>
       </div>
     </div>
