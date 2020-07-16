@@ -2,7 +2,7 @@
   <div class="footer-form form"> 
     <ValidationObserver v-slot="{ invalid }" ref="form">
       <div class="fields-list">
-        <ValidationProvider class="field-item" v-slot="{ classes, errors }">
+        <ValidationProvider class="field-item" rules="max:50" v-slot="{ classes, errors }">
           <input type="text" class="entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>

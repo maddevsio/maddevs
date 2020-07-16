@@ -10,7 +10,7 @@ describe('CaseStudies component', () => {
     {
       projectName: 'nambafood',
       logoImg: 'nambafoodColored',
-      link: 'https://blog.maddevs.io/namba-food-startup-e6564e66806d',
+      link: 'https://blog.maddevs.io/namba-food-top-1-delivery-service-in-central-asia-3df8ca4d436d?source=friends_link&sk=1dd67cc82dad8e4fae756b3a4d47f121',
       contributionWidgetColors: ['#ec1c24', '#96969c'],
       projectBackground: 'nambafoodBackground',
       projectColor: '#f8f7f6',
@@ -21,7 +21,7 @@ describe('CaseStudies component', () => {
     {
       projectName: 'teacherly',
       logoImg: 'teacherlyColored',
-      link: 'https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f',
+      link: 'https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f?source=friends_link&sk=0f492513f43ce5b4330c3cfa484378c5',
       contributionWidgetColors: ['#ec1c24', '#fff'],
       projectBackground: 'teacherlyBackground',
       projectColor: '#56448e',
@@ -32,7 +32,7 @@ describe('CaseStudies component', () => {
     {
       projectName: 'guardrails',
       logoImg: 'guardrailsColored',
-      link: 'https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b',
+      link: 'https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0',
       contributionWidgetColors: ['#96969c', '#96969c'],
       projectBackground: 'guardrailsBackground',
       projectColor: '#0e1b27',
@@ -43,13 +43,12 @@ describe('CaseStudies component', () => {
     {
       projectName: 'godee',
       logoImg: 'godeeColored',
-      link: 'https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5',
+      link: 'https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5?source=friends_link&sk=3e3f75a7f35f0e4d9d447a19e015330a',
       contributionWidgetColors: ['#000', '#000'],
       projectBackground: 'godeeBackground',
       projectColor: '#ff6A01',
-      projectTitle: 'Mass transportation company',
-      projectDescription:
-        'Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.'
+      projectTitle: 'Convenient shuttle bus service',
+      projectDescription: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.'
     }
   ];
 

@@ -15,7 +15,7 @@ export default {
     return {
       title: 'Mad Devs NDA',
       description: '',
-      ogUrl: 'https://maddevs.io/en/nda'
+      ogUrl: 'https://maddevs.io/nda'
     };
   },
   head() {

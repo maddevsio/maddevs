@@ -31,7 +31,9 @@
                 </p>
               </div>
               <div class="customer-testimonials__project">
-                <img :src="require(`@/assets/img/Home/svg/customerTestimonials/${testimonial.customerProject}.svg`)" class="customer-testimonials__project-image" :class="testimonial.customerProject" :alt="testimonial.customerProject">
+                <a :href="testimonial.link" target="blank" rel="nofollow">
+                  <img :src="require(`@/assets/img/Home/svg/customerTestimonials/${testimonial.customerProject}.svg`)" class="customer-testimonials__project-image" :class="testimonial.customerProject" :alt="testimonial.customerProject">
+                </a>
               </div>
             </div>
           </div>
@@ -58,21 +60,24 @@ export default {
           customerCountry: 'The UK',
           customerProject: 'teacherly',
           customerImageName: 'atif',
-          testimonialText: 'Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.'
+          testimonialText: 'Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.',
+          link: 'https://teacherly.io/'
         },
         {
           customerName: 'Daniel Vartanov,',
           customerCountry: 'The UK',
           customerProject: 'veeqo',
           customerImageName: 'daniel',
-          testimonialText: 'We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.'
+          testimonialText: 'We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.',
+          link: 'https://www.veeqo.com/'
         },
         {
           customerName: 'Stefan Streichsbier,',
           customerCountry: 'Singapore',
           customerProject: 'guardrails',
           customerImageName: 'stefan',
-          testimonialText: 'I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.'
+          testimonialText: 'I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.',
+          link: 'https://www.guardrails.io/'
         }
       ]
     };

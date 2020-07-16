@@ -54,7 +54,7 @@ export default {
     enableScrollOnBody() {
       const body = document.body;
       const scrollY = body.style.top;
-      body.style.position = '';
+      body.style.overflow = '';
       body.style.top = '';
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }

@@ -28,7 +28,7 @@ export default {
     return {
       title: 'Mad Devs Services',
       description: '',
-      ogUrl: 'https://maddevs.io/en/services'
+      ogUrl: 'https://maddevs.io/services'
     };
   },
   head() {

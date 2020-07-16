@@ -12,7 +12,9 @@
           </p>
         </div>
         <div class="mobile-project">
-          <img :src="require(`@/assets/img/Home/svg/customerTestimonials/${testimonial.customerProject}.svg`)" class="mobile-project_image" :class="testimonial.customerProject" :alt="testimonial.customerProject">
+          <a :href="testimonial.link" target="blank" rel="nofollow">
+            <img :src="require(`@/assets/img/Home/svg/customerTestimonials/${testimonial.customerProject}.svg`)" class="mobile-project_image" :class="testimonial.customerProject" :alt="testimonial.customerProject">
+          </a>
         </div>
       </div>
     </swiper-slide>

@@ -16,7 +16,7 @@ export default {
     return {
       title: 'Mad Devs GDPR',
       description: '',
-      ogUrl: 'https://maddevs.io/en/gdpr'
+      ogUrl: 'https://maddevs.io/gdpr'
     };
   },
   head() {

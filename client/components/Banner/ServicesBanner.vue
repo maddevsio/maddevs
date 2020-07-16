@@ -42,7 +42,7 @@ export default {
       this.disableScrollOnBody();
     },
     disableScrollOnBody() {
-      document.body.style.position = 'fixed';
+      document.body.style.overflow = 'hidden';
       document.body.style.top = `-${this.scrollYPosition}`;
     },
     handleScroll() {

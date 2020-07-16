@@ -16,7 +16,7 @@ export default {
     return {
       title: 'Mad Devs Privacy',
       description: '',
-      ogUrl: 'https://maddevs.io/en/privacy'
+      ogUrl: 'https://maddevs.io/privacy'
     };
   },
   head() {
