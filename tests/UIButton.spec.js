@@ -26,8 +26,8 @@ describe('Ui button modal trigger', () => {
   // --------------------- //
 
   test('Button slot renders a default button text', () => {
-    const btn = wrapper.find('.ui-button');
-    expect(btn.text()).toBe('Button name');
+    const button = wrapper.find('.ui-button');
+    expect(button.text()).toBe('Button name');
   });
 
   test('onClick should call $emit', () => {
