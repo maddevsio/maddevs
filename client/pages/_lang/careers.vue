@@ -19,7 +19,7 @@ export default {
     return {
       title: 'Mad Devs Careers',
       description: '',
-      ogUrl: 'https://maddevs.io/en/projects'
+      ogUrl: 'https://maddevs.io/careers'
     };
   },
   head() {
