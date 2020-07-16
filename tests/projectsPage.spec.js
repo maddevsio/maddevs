@@ -11,7 +11,7 @@ describe('Projects page', () => {
       $route: {
         name: null
       }
-    }
+    };
     wrapper = mount(ProjectsPage, {
       stubs: ['ValidationObserver']
     });

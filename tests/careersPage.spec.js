@@ -11,7 +11,7 @@ describe('Careers page', () => {
       $route: {
         name: null
       }
-    }
+    };
     wrapper = mount(CareersPage, {
       stubs: ['ValidationObserver']
     });

@@ -11,7 +11,7 @@ describe('Index page', () => {
       $route: {
         name: null
       }
-    }
+    };
     wrapper = mount(IndexPage, {
       stubs: ['ValidationObserver', 'client-only']
     });
