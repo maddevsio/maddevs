@@ -47,9 +47,8 @@ describe('CaseStudies component', () => {
       contributionWidgetColors: ['#000', '#000'],
       projectBackground: 'godeeBackground',
       projectColor: '#ff6A01',
-      projectTitle: 'Mass transportation company',
-      projectDescription:
-        'Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.'
+      projectTitle: 'Convenient shuttle bus service',
+      projectDescription: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.'
     }
   ];
 

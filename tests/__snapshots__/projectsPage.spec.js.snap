@@ -274,7 +274,7 @@ exports[`Projects page renders correctly 1`] = `
                 class="single-project__sub-title sub-title"
               >
                 
-        Mass transportation company
+        Convenient shuttle bus service
       
               </h4>
                
@@ -282,7 +282,7 @@ exports[`Projects page renders correctly 1`] = `
                 class="single-project__paragraph paragraph"
               >
                 
-        Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.
+        Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.
       
               </p>
                
@@ -582,7 +582,7 @@ exports[`Projects page renders correctly 1`] = `
                     class="single-project__sub-title sub-title"
                   >
                     
-        Mass transportation company
+        Convenient shuttle bus service
       
                   </h4>
                    
@@ -590,7 +590,7 @@ exports[`Projects page renders correctly 1`] = `
                     class="single-project__paragraph paragraph"
                   >
                     
-        Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.
+        Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.
       
                   </p>
                    
