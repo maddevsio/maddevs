@@ -14,8 +14,8 @@ export default {
   data() {
     return {
       title: 'Mad Devs NDA',
-      description: 'Example',
-      ogUrl: 'https://maddevs.io/en/nda'
+      description: '',
+      ogUrl: 'https://maddevs.io/nda'
     };
   },
   head() {
@@ -23,13 +23,14 @@ export default {
       title: this.title,
       meta: [
         { name: 'description', content: this.description },
+        // Facebook / Open Graph
         { property: 'og:url', content: this.ogUrl },
         { property: 'og:type', content: 'website' },
         { property: 'og:title', content: this.title },
         { property: 'og:description', content: this.description },
         {
           property: 'og:image',
-          content: 'https://maddevs.io/static/Open-Graph.png'
+          content: 'https://maddevs.io/Open-Graph.png'
         }
       ]
     };

@@ -53,7 +53,7 @@ describe('Form checkboxes', () => {
 
   it('disableScrollOnBody should add new params for body', () => {
     wrapper.vm.disableScrollOnBody();
-    expect(document.body.style.position).toBe('fixed');
+    expect(document.body.style.overflow).toBe('hidden');
   });
 
   it('handleScroll should add new value for scrollYPosition', () => {

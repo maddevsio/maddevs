@@ -2,7 +2,7 @@
   <div class="footer-form form"> 
     <ValidationObserver v-slot="{ invalid }" ref="form">
       <div class="fields-list">
-        <ValidationProvider class="field-item" v-slot="{ classes, errors }">
+        <ValidationProvider class="field-item" rules="max:50" v-slot="{ classes, errors }">
           <input type="text" class="entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
@@ -50,8 +50,10 @@ export default {
     PlaceholderAsterisk
   },
   data: () => ({
+    form: null,
     fullName: null,
     email: null,
+    emailTo: 'team@maddevs.io',
     projectDescriber: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
@@ -72,17 +74,18 @@ export default {
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
         this.onSubmit = true;
-        const form = {
+        this.form = {
           templateId: 305480, // Required
           variables: {
             fullName: this.fullName,
-            email: this.email,
+            email: this.email || '',
+            emailTo: this.emailTo || '',
             projectDescriber: this.projectDescriber,
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
           }
         };
-        this.$store.dispatch('sendEmail', form).then(res => {
+        this.$store.dispatch('sendEmail', this.form).then(res => {
           this.onSubmit = false;
           if (res.status === 200) {
             this.isEmailSent = true;
@@ -100,6 +103,7 @@ export default {
       this.$refs.checkboxes.reset();
       this.fullName = null;
       this.email = null;
+      this.form = null;
       this.projectDescriber = '';
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;

@@ -49,4 +49,17 @@ describe('Ui button modal trigger', () => {
     wrapper.vm.showModal();
     expect(wrapper.vm.$modal.show).toHaveBeenCalled();
   });
+
+  it('disableScrollOnBody should add new params for body', () => {
+    wrapper.vm.disableScrollOnBody();
+    expect(document.body.style.overflow).toBe('hidden');
+  });
+
+  it('handleScroll should add new value for scrollYPosition', () => {
+    Object.defineProperty(window, 'scrollY', {
+      value: 100
+    });
+    wrapper.vm.handleScroll();
+    expect(wrapper.vm.$data.scrollYPosition).toBe('100px');
+  });
 });
