@@ -34,12 +34,13 @@
               </div>
               <div class="header__phones-dropdown_wrap" :id="selectedPhone.country">
                 <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
-                  <img :src="require(`@/assets/img/Flags/${selectedPhone.country}.svg`)" :alt="`${selectedPhone.country}`" />
+                  <p :class="`header__flag header__flag--${selectedPhone.country}`" />
                   {{ selectedPhone.phoneNumber }}
+                  <i class="header__phones-dropdown_arrow"/>
                 </a>
                 <div class="header__phones-list">
                   <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone" v-show="phone != selectedPhone">
-                    <img :src="require(`@/assets/img/Flags/${phone.country}.svg`)" :alt="`${phone.country}`" />
+                    <p :class="`header__flag header__flag--${phone.country}`" />
                     {{ phone.phoneNumber }}
                   </a>
                 </div>
@@ -126,7 +127,7 @@ export default {
   .header {
     width: 100%;
     height: 2.5vw;
-    padding: 11px 0;
+    padding: 0.8vw 0;
     position: fixed;
     z-index: 2;
     background-color: #000;
@@ -213,12 +214,17 @@ export default {
       padding-right: 5px;
     }
 
+    &__phones-dropdown_arrow {
+      display: inline-block;
+      height: 0.4vw;
+      width: 0.6vw;
+      margin-left: 0.3vw;
+      background-image: url('../assets/img/Header/dropdown-arrow.svg');
+      background-size: cover;
+    }
     &__phones-dropdown_wrap {
       min-width: 200px;
       padding-top: 1px;
-      background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
-      background-position-y: 9px;
-      background-position-x: 170px;
 
       &:hover {
         .header__phones-list {
@@ -244,6 +250,8 @@ export default {
       font-size: 1vw;
       font-family: 'Hoves-Regular';
       text-decoration: none;
+      display: flex;
+      align-items: center;
     }
 
     &__selected-phone,
@@ -295,6 +303,20 @@ export default {
 
       &--lindekin {
         background-image: url(../assets/img/Header/lindekin-icon.svg);
+      }
+    }
+    &__flag {
+      height: 0.8vw;
+      width: 1vw;
+      background-repeat: no-repeat;
+      margin: 0 10px 0 0;
+
+      &--united-states {
+        background-image: url(../assets/img/Flags/united-states.svg);
+      }
+
+      &--united-kingdom {
+        background-image: url(../assets/img/Flags/united-kingdom.svg);
       }
     }
   }
