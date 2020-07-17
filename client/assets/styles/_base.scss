@@ -48,9 +48,9 @@ main {
 
 //----------- Base classes ------------ //
 .container {
-  max-width: 1600px;
+  max-width: 100%;
   margin: auto;
-  padding: 0 136px;
+  padding: 0 9vw;
 }
 
 .sec-title {
@@ -88,3 +88,4 @@ main {
   font-family: 'Hoves-Regular';
   src: url('../fonts/Hoves/TT-Hoves-Regular.woff') format('woff');
 }
+

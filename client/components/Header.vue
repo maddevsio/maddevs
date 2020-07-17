@@ -2,11 +2,12 @@
   <div class="header-wrapper">
     <header ref="header" class="header">
       <div class="container">
-        <div class="header__header-content_wrap">
+        <div class="header__header-content_logo">
+          <router-link :to="`/`" class="header__logo-icon">
+            <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
+          </router-link>
+          <div class="header__header-content_wrap">
           <div class="header__left-nav_bar">
-            <router-link :to="`/`" class="header__logo-icon">
-              <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
-            </router-link>
             <nav class="header__header-routes_links">
               <router-link exact to="/">About</router-link>
               <router-link to="/services">Services</router-link>
@@ -18,15 +19,18 @@
           <div class="header__right-content">
             <div class="header__right-text_content">
               <div class="header__soc-links_wrap">
-                <a href="https://twitter.com/maddevsio" target="_blank" class="header__twitter-link header__soc-link">
-                  <img src="@/assets/img/Header/twitter-icon.svg" alt="Twitter">
-                </a>
-                <a href="https://ru.linkedin.com/company/mad-devs" target="_blank" class="header__lindekin-link header__soc-link">
-                  <img src="@/assets/img/Header/lindekin-icon.svg" alt="Lindekin">
-                </a>
-                <a href="https://www.facebook.com/maddevsllc" target="_blank" class="header__facebook-link header__soc-link">
-                  <img src="@/assets/img/Header/facebook-icon.svg" alt="Facebook">
-                </a>
+                <a
+                  href="https://twitter.com/maddevsio"
+                  target="_blank"
+                  class="header-social-logo header-social-logo--twitter header__soc-link"/>
+                <a
+                  href="https://ru.linkedin.com/company/mad-devs"
+                  target="_blank"
+                  class="header-social-logo header-social-logo--lindekin header__soc-link"/>
+                <a
+                  href="https://www.facebook.com/maddevsllc"
+                  target="_blank"
+                  class="header-social-logo header-social-logo--facebook header__soc-link"/>
               </div>
               <div class="header__phones-dropdown_wrap" :id="selectedPhone.country">
                 <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
@@ -42,12 +46,13 @@
               </div>
               <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
             </div>
-            <UIButtonModalTrigger 
-              :buttonInnerText="buttonInnerText" 
-              :modalWindowName="modalWindowName" 
-              :isRed="true"
-            />
           </div>
+          </div>
+          <UIButtonModalTrigger
+            :buttonInnerText="buttonInnerText"
+            :modalWindowName="modalWindowName"
+            :isRed="true"
+          />
         </div>
       </div>
     </header>
@@ -108,7 +113,7 @@ export default {
     handleScroll() {
       if(window.pageYOffset >= 100)
         this.headerLogoTextDisplayState = true;
-      else 
+      else
         this.headerLogoTextDisplayState = false;
     }
   }
@@ -120,39 +125,49 @@ export default {
 
   .header {
     width: 100%;
-    height: 40px;
+    height: 2.5vw;
     padding: 11px 0;
     position: fixed;
     z-index: 2;
     background-color: #000;
 
     button {
-      width: 135px;
-      height: 38px;
+      padding: 0 24px;
+      height: 2.4vw;
       margin-right: -96px;
+      font-size: 1.1vw;
+      line-height: 1.1vw;
+      white-space: nowrap;
     }
 
     &__header-logo {
-      width: 40px;
-      height: 70px;
+      width: 2.2vw;
+      height: auto;
     }
 
     &__header-content_wrap {
-      height: max-content;
       display: flex;
+      width: 100%;
+      justify-content: space-between;
+      height: 2.4vw;
+      align-items: center;
+    }
+
+    &__header-content_logo {
+      display: flex;
+      width: 100%;
       justify-content: space-between;
     }
 
     &__header-routes_links {
       position: relative;
-      padding-top: 9px;
       padding-left: 55px;
 
       a {
         color: $text-color--grey;
         text-decoration: none;
-        margin-right: 16px;
-        font-size: 17px;
+        margin-right: 2vw;
+        font-size: 1vw;
         font-family: 'Hoves-Regular';
 
         &::after {
@@ -180,15 +195,18 @@ export default {
     &__right-content,
     &__right-text_content {
       display: flex;
+      align-items: center;
     }
 
     &__right-text_content {
       display: flex;
-      padding-top: 9px;
     }
 
     &__soc-links_wrap {
       padding-right: 26px;
+      display: flex;
+      width: 6vw;
+      justify-content: space-between;
     }
 
     &__soc-link {
@@ -223,7 +241,7 @@ export default {
     &__phone-item {
       padding-right: 26px;
       color: $text-color--grey;
-      font-size: 17px;
+      font-size: 1vw;
       font-family: 'Hoves-Regular';
       text-decoration: none;
     }
@@ -232,7 +250,7 @@ export default {
     &__phone-item {
       position: relative;
       padding-left: 25px;
-      padding-right: 40px;
+      padding-right: 2.5vw;
       cursor: pointer;
 
       img {
@@ -258,6 +276,27 @@ export default {
     &__logo-icon {
       margin-left: -96px;
     }
+
+    &-social-logo {
+      width: 1.5vw;
+      height: 1.5vw;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: contain;
+      overflow: hidden;
+
+      &--facebook {
+        background-image: url(../assets/img/Header/facebook-icon.svg);
+      }
+
+      &--twitter {
+        background-image: url(../assets/img/Header/twitter-icon.svg);
+      }
+
+      &--lindekin {
+        background-image: url(../assets/img/Header/lindekin-icon.svg);
+      }
+    }
   }
 
   .mobile-menu_is-open {
@@ -268,7 +307,7 @@ export default {
     z-index: 999;
 
     .container {
-      height: 100vh;
+      height: 100vw;
       overflow: scroll;
     }
   }
