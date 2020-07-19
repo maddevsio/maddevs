@@ -103,12 +103,11 @@ exports[`Mobile Header renders correctly 1`] = `
             >
               <li>
                 <a
-                  class="footer-contacts__phone-item"
+                  class="footer-contacts__phone-item footer-contacts__phone-item--flag"
                   href="tel:+1 833-MADDEVS"
                 >
-                  <img
-                    alt="United States"
-                    src="@/assets/img/Flags/united-states.svg"
+                  <p
+                    class="footer-contacts__icon footer-contacts__icon--usa"
                   />
                   
 					+1 833-MADDEVS
@@ -118,12 +117,11 @@ exports[`Mobile Header renders correctly 1`] = `
                
               <li>
                 <a
-                  class="footer-contacts__phone-item"
+                  class="footer-contacts__phone-item footer-contacts__phone-item--flag"
                   href="tel:+44 20 3984 8555"
                 >
-                  <img
-                    alt="United Kingdom"
-                    src="@/assets/img/Flags/united-kingdom.svg"
+                  <p
+                    class="footer-contacts__icon footer-contacts__icon--uk"
                   />
                   
 					+44 20 3984 8555
@@ -151,9 +149,8 @@ exports[`Mobile Header renders correctly 1`] = `
                   href="https://facebook.com/maddevsllc"
                   target="_blank"
                 >
-                  <img
-                    alt="Messenger"
-                    src="@/assets/img/Footer/messenger.svg"
+                  <p
+                    class="footer-contacts__message footer-contacts__message--messenger"
                   />
                   
 					Messenger
@@ -167,9 +164,8 @@ exports[`Mobile Header renders correctly 1`] = `
                   href="http://wa.me/996555771481"
                   target="_blank"
                 >
-                  <img
-                    alt="Whatsapp"
-                    src="@/assets/img/Footer/whatsapp.svg"
+                  <p
+                    class="footer-contacts__message footer-contacts__message--whatsapp"
                   />
                   
 					Whatsapp
@@ -183,9 +179,8 @@ exports[`Mobile Header renders correctly 1`] = `
                   href="https://t.me/mun_tamara/"
                   target="_blank"
                 >
-                  <img
-                    alt="Telegram"
-                    src="@/assets/img/Footer/telegram.svg"
+                  <p
+                    class="footer-contacts__message footer-contacts__message--telegram"
                   />
                   
 					Telegram
@@ -199,9 +194,8 @@ exports[`Mobile Header renders correctly 1`] = `
                   href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
                   target="_blank"
                 >
-                  <img
-                    alt="WeChat"
-                    src="@/assets/img/Footer/wechat.svg"
+                  <p
+                    class="footer-contacts__message footer-contacts__message--wechat"
                   />
                   
 					WeChat
