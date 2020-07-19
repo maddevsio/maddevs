@@ -310,6 +310,7 @@ export default {
       width: 1vw;
       background-repeat: no-repeat;
       margin: 0 10px 0 0;
+      background-size: contain;
 
       &--united-states {
         background-image: url(../assets/img/Flags/united-states.svg);
