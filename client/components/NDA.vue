@@ -90,7 +90,7 @@ export default {
 
   &__link {
     color: $text-color--white;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   &__sec-title {

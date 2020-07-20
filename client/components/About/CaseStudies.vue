@@ -650,12 +650,6 @@ export default {
 }
 
 @media only screen and (max-width: 576px) {
-  .projects {
-    &-flame-background {
-      right: 45px;
-    }
-  }
-
   .case-studies {
     /deep/ .single-project__background {
       &:nth-child(2) {
@@ -666,6 +660,20 @@ export default {
 
     &__main-title {
       font-size: 64px;
+    }
+
+    &-flame-background {
+      right: 45px;
+    }
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .case-studies {
+    .projects {
+      &-flame-background {
+        right: 20px;
+      }
     }
   }
 }
@@ -680,10 +688,13 @@ export default {
   }
 }
 
-@media only screen and (max-width: 465px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      right: 15px;
+@media only screen and (max-width: 475px) {
+  .case-studies {
+    .projects { 
+      &-flame-background {
+        top: -95px;
+        width: 180px;
+      }
     }
   }
 
@@ -692,14 +703,18 @@ export default {
   }
 }
 
-@media only screen and (max-width: 427px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      right: 15px;
-      top: -145px;
+@media only screen and (max-width: 460px) {
+  .case-studies {
+    .projects { 
+      &-flame-background {
+        top: -70px;
+        width: 165px;
+      }
     }
   }
+}
 
+@media only screen and (max-width: 427px) {
   .case-studies {
     &__main-title {
       font-size: 56px;
@@ -733,26 +748,16 @@ export default {
         }
       }
     }
-  }
-}
 
-@media only screen and (max-width: 370px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      top: -125px;
-      height: 300px;
-      right: 15px;
+    .projects {
+      &-flame-background {
+        width: 160px;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 366px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      right: 2px;
-    }
-  }
-
   .case-studies {
     &__main-title {
       font-size: 50px;
@@ -761,16 +766,16 @@ export default {
 }
 
 @media only screen and (max-width: 345px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      right: 0;
-      top: -90px;
-    }
-  }
-
   .case-studies {
     &__main-title {
       font-size: 48px;
+    }
+
+    .projects {
+      &-flame-background {
+        top: -45px;
+        width: 130px;
+      }
     }
   }
 }
