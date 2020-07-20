@@ -5,7 +5,7 @@
 			<ul class="footer-contacts__phones-list">
 				<li>
 					<a href="tel:+1 833-MADDEVS" class="footer-contacts__phone-item footer-contacts__phone-item--flag">
-						<p class="footer-contacts__icon footer-contacts__icon--usa"/>
+						<span class="footer-contacts__icon footer-contacts__icon--usa"/>
 						+1 833-MADDEVS
 					</a>
 				</li>
@@ -22,25 +22,25 @@
 			<ul class="footer-contacts__messengers-list">
 				<li>
 					<a href="https://facebook.com/maddevsllc" class="footer-contacts__messenger-item" target="_blank">
-						<p class="footer-contacts__message footer-contacts__message--messenger"/>
+						<i class="footer-contacts__message footer-contacts__message--messenger"/>
 						Messenger
 					</a>
 				</li>
 				<li>
 					<a href="http://wa.me/996555771481" class="footer-contacts__messenger-item" target="_blank">
-						<p class="footer-contacts__message footer-contacts__message--whatsapp"/>
+						<i class="footer-contacts__message footer-contacts__message--whatsapp"/>
 						Whatsapp
 					</a>
 				</li>
 				<li>
 					<a href="https://t.me/mun_tamara/" class="footer-contacts__messenger-item" target="_blank">
-						<p class="footer-contacts__message footer-contacts__message--telegram" />
+						<i class="footer-contacts__message footer-contacts__message--telegram" />
 						Telegram
 					</a>
 				</li>
 				<li>
 					<a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc" class="footer-contacts__messenger-item" target="_blank">
-						<p class="footer-contacts__message footer-contacts__message--wechat" />
+						<i class="footer-contacts__message footer-contacts__message--wechat" />
 						WeChat
 					</a>
 				</li>

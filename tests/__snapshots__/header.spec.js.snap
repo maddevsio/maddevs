@@ -104,7 +104,7 @@ exports[`Header renders correctly 1`] = `
                 />
                  
                 <a
-                  class="header-social-logo header-social-logo--lindekin header__soc-link"
+                  class="header-social-logo header-social-logo--linkedin header__soc-link"
                   href="https://ru.linkedin.com/company/mad-devs"
                   target="_blank"
                 />
@@ -124,7 +124,7 @@ exports[`Header renders correctly 1`] = `
                   class="header__selected-phone"
                   href="tel:+1 833-MADDEVS"
                 >
-                  <p
+                  <span
                     class="header__flag header__flag--united-states"
                   />
                   
@@ -142,7 +142,7 @@ exports[`Header renders correctly 1`] = `
                     class="header__phone-item"
                     href="tel:+44 20 3984 8555"
                   >
-                    <p
+                    <span
                       class="header__flag header__flag--united-kingdom"
                     />
                     
@@ -154,7 +154,7 @@ exports[`Header renders correctly 1`] = `
                     href="tel:+1 833-MADDEVS"
                     style="display: none;"
                   >
-                    <p
+                    <span
                       class="header__flag header__flag--united-states"
                     />
                     
@@ -290,7 +290,7 @@ exports[`Header renders correctly 1`] = `
                     class="footer-contacts__phone-item footer-contacts__phone-item--flag"
                     href="tel:+1 833-MADDEVS"
                   >
-                    <p
+                    <span
                       class="footer-contacts__icon footer-contacts__icon--usa"
                     />
                     
@@ -304,7 +304,7 @@ exports[`Header renders correctly 1`] = `
                     class="footer-contacts__phone-item footer-contacts__phone-item--flag"
                     href="tel:+44 20 3984 8555"
                   >
-                    <p
+                    <span
                       class="footer-contacts__icon footer-contacts__icon--uk"
                     />
                     
@@ -333,7 +333,7 @@ exports[`Header renders correctly 1`] = `
                     href="https://facebook.com/maddevsllc"
                     target="_blank"
                   >
-                    <p
+                    <i
                       class="footer-contacts__message footer-contacts__message--messenger"
                     />
                     
@@ -348,7 +348,7 @@ exports[`Header renders correctly 1`] = `
                     href="http://wa.me/996555771481"
                     target="_blank"
                   >
-                    <p
+                    <i
                       class="footer-contacts__message footer-contacts__message--whatsapp"
                     />
                     
@@ -363,7 +363,7 @@ exports[`Header renders correctly 1`] = `
                     href="https://t.me/mun_tamara/"
                     target="_blank"
                   >
-                    <p
+                    <i
                       class="footer-contacts__message footer-contacts__message--telegram"
                     />
                     
@@ -378,7 +378,7 @@ exports[`Header renders correctly 1`] = `
                     href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
                     target="_blank"
                   >
-                    <p
+                    <i
                       class="footer-contacts__message footer-contacts__message--wechat"
                     />
                     

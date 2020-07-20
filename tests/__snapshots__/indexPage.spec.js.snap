@@ -87,7 +87,7 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="we-create-it-project__country-list_title"
           >
-            We work with 
+            We work with
           
             <br />
              customers in:
@@ -100,9 +100,8 @@ exports[`Index page renders correctly 1`] = `
             <li
               class="we-create-it-project__country-item"
             >
-              <img
-                alt="USA"
-                src="[object Object]"
+              <span
+                class="we-create-it-project__logo-country we-create-it-project__logo-country--united-states"
               />
               
             USA
@@ -111,9 +110,8 @@ exports[`Index page renders correctly 1`] = `
             <li
               class="we-create-it-project__country-item"
             >
-              <img
-                alt="Australia"
-                src="[object Object]"
+              <span
+                class="we-create-it-project__logo-country we-create-it-project__logo-country--australia"
               />
               
             Australia
@@ -122,9 +120,8 @@ exports[`Index page renders correctly 1`] = `
             <li
               class="we-create-it-project__country-item"
             >
-              <img
-                alt="UK"
-                src="[object Object]"
+              <span
+                class="we-create-it-project__logo-country we-create-it-project__logo-country--united-kingdom"
               />
               
             UK
@@ -133,9 +130,8 @@ exports[`Index page renders correctly 1`] = `
             <li
               class="we-create-it-project__country-item"
             >
-              <img
-                alt="Poland"
-                src="[object Object]"
+              <span
+                class="we-create-it-project__logo-country we-create-it-project__logo-country--poland"
               />
               
             Poland
@@ -144,9 +140,8 @@ exports[`Index page renders correctly 1`] = `
             <li
               class="we-create-it-project__country-item"
             >
-              <img
-                alt="Austria"
-                src="[object Object]"
+              <span
+                class="we-create-it-project__logo-country we-create-it-project__logo-country--austria"
               />
               
             Austria
@@ -155,9 +150,8 @@ exports[`Index page renders correctly 1`] = `
             <li
               class="we-create-it-project__country-item"
             >
-              <img
-                alt="France"
-                src="[object Object]"
+              <span
+                class="we-create-it-project__logo-country we-create-it-project__logo-country--france"
               />
               
             France
@@ -166,9 +160,8 @@ exports[`Index page renders correctly 1`] = `
             <li
               class="we-create-it-project__country-item"
             >
-              <img
-                alt="Switzerland"
-                src="[object Object]"
+              <span
+                class="we-create-it-project__logo-country we-create-it-project__logo-country--switzerland"
               />
               
             Switzerland
@@ -177,9 +170,8 @@ exports[`Index page renders correctly 1`] = `
             <li
               class="we-create-it-project__country-item"
             >
-              <img
-                alt="Belarus"
-                src="[object Object]"
+              <span
+                class="we-create-it-project__logo-country we-create-it-project__logo-country--belarus"
               />
               
             Belarus
@@ -188,9 +180,8 @@ exports[`Index page renders correctly 1`] = `
             <li
               class="we-create-it-project__country-item"
             >
-              <img
-                alt="Vietnam"
-                src="[object Object]"
+              <span
+                class="we-create-it-project__logo-country we-create-it-project__logo-country--vietnam"
               />
               
             Vietnam
@@ -199,9 +190,8 @@ exports[`Index page renders correctly 1`] = `
             <li
               class="we-create-it-project__country-item"
             >
-              <img
-                alt="Kazakhstan"
-                src="[object Object]"
+              <span
+                class="we-create-it-project__logo-country we-create-it-project__logo-country--kazakhstan"
               />
               
             Kazakhstan
@@ -210,9 +200,8 @@ exports[`Index page renders correctly 1`] = `
             <li
               class="we-create-it-project__country-item"
             >
-              <img
-                alt="Russia"
-                src="[object Object]"
+              <span
+                class="we-create-it-project__logo-country we-create-it-project__logo-country--russia"
               />
               
             Russia
@@ -221,9 +210,8 @@ exports[`Index page renders correctly 1`] = `
             <li
               class="we-create-it-project__country-item"
             >
-              <img
-                alt="Singapore"
-                src="[object Object]"
+              <span
+                class="we-create-it-project__logo-country we-create-it-project__logo-country--singapore"
               />
               
             Singapore
