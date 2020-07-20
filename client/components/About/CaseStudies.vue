@@ -404,6 +404,14 @@ export default {
   }
 }
 
+@media only screen and (max-width: 1390px) {
+  .projects {
+    &-flame-background {
+      top: -385px;
+    }
+  }
+}
+
 @media only screen and (max-width: 1330px) {
   .case-studies {
     &__main-title {

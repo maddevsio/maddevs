@@ -35,9 +35,9 @@
               <ComedianLogo v-else-if="openSource.imgName === 'comedian'" />
               <IdMatchLogo v-else-if="openSource.imgName === 'id_match'" />
               <YourCastLogo v-else />
-              <span class="open-source__industry">{{
+              <p class="open-source__industry">{{
                 openSource.industry
-              }}</span>
+              }}</p>
             </div>
             <p class="open-source__paragraph paragraph">
               {{ openSource.description }}
@@ -176,6 +176,7 @@ export default {
   }
 
   &__industry {
+    width: min-content;
     font-family: 'Hoves-Regular';
     color: $text-color--black;
     opacity: 0.5;
