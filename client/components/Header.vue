@@ -162,13 +162,14 @@ export default {
 
     &__header-routes_links {
       position: relative;
-      padding-left: 55px;
+      padding-left: 3.9vw;
 
       a {
         color: $text-color--grey;
         text-decoration: none;
-        margin-right: 2vw;
+        margin-right: 1vw;
         font-size: 1vw;
+        letter-spacing: 1px;
         font-family: 'Hoves-Regular';
 
         &::after {
@@ -204,7 +205,6 @@ export default {
     }
 
     &__soc-links_wrap {
-      padding-right: 26px;
       display: flex;
       width: 6vw;
       justify-content: space-between;
@@ -257,9 +257,10 @@ export default {
     &__selected-phone,
     &__phone-item {
       position: relative;
-      padding-left: 25px;
-      padding-right: 2.5vw;
+      padding-left: 1.6vw;
+      padding-right: 3vw;
       cursor: pointer;
+      letter-spacing: 0.05vw;
 
       img {
         position: absolute;
@@ -383,8 +384,6 @@ export default {
   @media only screen and (max-width: 1240px) {
     .header {
       &__header-routes_links {
-        padding-top: 10px;
-
         a {
           margin-right: 5px;
         }

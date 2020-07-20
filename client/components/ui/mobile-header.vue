@@ -243,7 +243,6 @@ export default {
 	@media only screen and (max-width: 360px) {
 		.mobile-header {
 			&__header-routes_links {
-				padding-top: 20px;
 
 				a {
 					padding: 10px 0;
