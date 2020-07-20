@@ -256,7 +256,7 @@
 
 .main-title {
   font-family: 'Hoves-Bold';
-  font-size: 128px;
+  font-size: 8vw;
   letter-spacing: -5px;
   line-height: 100%;
 }
@@ -504,9 +504,10 @@
 }
 
 @media only screen and (max-width: 1280px) {
-  .main-title {
-    font-size: 100px;
-  }
+  // TODO remove
+  //.main-title {
+  //  font-size: 100px;
+  //}
 
   .title {
     font-size: 70px;
@@ -526,9 +527,10 @@
 }
 
 @media only screen and (max-width: 1180px) {
-  .title {
-    font-size: 65px;
-  }
+  // TODO remove
+  //.title {
+  //  font-size: 65px;
+  //}
 
   .section-title {
     font-size: 62px;
@@ -540,9 +542,10 @@
     height: 44px;
   }
 
-  .title {
-    font-size: 80px;
-  }
+  // TODO remove
+  //.title {
+  //  font-size: 80px;
+  //}
 
   .sub-title  {
     font-size: 47px;
@@ -569,9 +572,10 @@
 }
 
 @media only screen and (max-width: 870px) {
-  .main-title {
-    font-size: 95px;
-  }
+  // TODO remove
+  //.main-title {
+  //  font-size: 95px;
+  //}
 
   .form-text {
     font-size: 28px;
@@ -579,9 +583,10 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .title {
-    font-size: 65px;
-  }
+  // TODO remove
+  //.title {
+  //  font-size: 65px;
+  //}
 
   .sub-title  {
     font-size: 47px;
@@ -603,9 +608,10 @@
 }
 
 @media only screen and (max-width: 640px) {
-  .title {
-    font-size: 60px;
-  }
+  // todo remove
+  //.title {
+  //  font-size: 60px;
+  //}
 
   .section-title {
     font-size: 57px;
@@ -630,9 +636,10 @@
 }
 
 @media only screen and (max-width: 520px) {
-  .title {
-    font-size: 41px;
-  }
+  // TODO remove
+  //.title {
+  //  font-size: 41px;
+  //}
 
   .doc-text {
     font-size: 23px;

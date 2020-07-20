@@ -14,7 +14,7 @@
           <li class="we-create-it-project__project-item">Transportation</li>
         </ul>
         <div class="we-create-it-project__country-list_wrap">
-          <div class="we-create-it-project__country-list_title">We work with 
+          <div class="we-create-it-project__country-list_title">We work with
             <br> customers in:
           </div>
           <ul class="we-create-it-project__country-list">
@@ -104,11 +104,12 @@ export default {
 
     &__main-title {
       color: $text-color--red;
-      padding-bottom: 80px;
+      padding-bottom: 4vw;
     }
 
     &__projects-type_list {
-      padding-right: 60px;
+      padding-left: 0.5vw;
+      padding-right: 4.5vw;
       width: 49%;
     }
 
@@ -124,9 +125,10 @@ export default {
     &__country-list_title {
       padding-bottom: 30px;
       color: $text-color--grey;
-      font-size: 50px;
+      font-size: 3.2vw;
       letter-spacing: -2px;
       max-width: 547px;
+      line-height: 3.9vw;
 
       br {
         display: none;
@@ -159,8 +161,9 @@ export default {
 
     &__project-item {
       color: $text-color--white;
-      font-size: 70px;
-      letter-spacing: -2px;
+      font-size: 4.3vw;
+      letter-spacing: -1px;
+      line-height: 5.35vw;
     }
   }
 
@@ -174,10 +177,6 @@ export default {
 
       &__country-list_wrap {
         max-width: 680px;
-      }
-
-      &__project-item {
-        font-size: 64px;
       }
 
       &__country-list_title {
@@ -211,7 +210,6 @@ export default {
       }
 
       &__project-item {
-        font-size: 54px;
         padding-bottom: 13px;
 
         &:last-child {
@@ -233,7 +231,6 @@ export default {
       }
 
       &__project-item {
-        font-size: 47px;
         padding-bottom: 8px;
       }
 
@@ -269,7 +266,6 @@ export default {
       }
 
       &__project-item {
-        font-size: 44px;
         padding-bottom: 11px;
       }
 
@@ -331,7 +327,6 @@ export default {
       }
 
       &__project-item {
-        font-size: 41px;
         letter-spacing: -1px;
       }
 
