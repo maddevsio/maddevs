@@ -91,9 +91,9 @@ export default {
 
 		&__modal-trigger-btn {
 			width: 100%;
-      height: 14vw;
+      height: 10vw;
       font-family: 'Hoves-Bold';
-      font-size: 4vw;
+      font-size: 3vw;
       color: $text-color--red;
     	border-color: $border-color--red;
     }
@@ -121,8 +121,8 @@ export default {
 		}
 
 		&__header-routes_links a {
-      padding: 5vw 0;
-      font-size: 8vw;
+      padding: 3vw 0;
+      font-size: 5vw;
 			font-family: 'Hoves-Bold';
 			text-decoration: none;
 			color: $text-color--white;
@@ -174,6 +174,19 @@ export default {
       &__header-logo {
         width: 8vw;
         height: auto;
+      }
+    }
+
+    @media only screen and (max-width: 545px) {
+      &__header-routes_links a {
+        padding: 5vw 0;
+        font-size: 8vw;
+
+      }
+
+      &__modal-trigger-btn {
+        height: 14vw;
+        font-size: 4vw;
       }
     }
   }
