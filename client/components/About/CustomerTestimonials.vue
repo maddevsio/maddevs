@@ -69,7 +69,7 @@ export default {
           customerProject: 'veeqo',
           customerImageName: 'daniel',
           testimonialText: 'We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.',
-          link: 'https://www.veeqo.com/'
+          link: 'https://veeqo.com/'
         },
         {
           customerName: 'Stefan Streichsbier,',
@@ -77,7 +77,7 @@ export default {
           customerProject: 'guardrails',
           customerImageName: 'stefan',
           testimonialText: 'I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.',
-          link: 'https://www.guardrails.io/'
+          link: 'https://guardrails.io/'
         }
       ]
     };

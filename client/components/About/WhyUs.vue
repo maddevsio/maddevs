@@ -149,7 +149,7 @@ export default {
     &__metrics-list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 44px;
+      grid-column-gap: 365px;
       grid-row-gap: 60px;
       margin-top: 36px;
     }
@@ -221,10 +221,30 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1780px) {
+    .why-us {
+      &__metrics-list {
+        grid-column-gap: 300px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1680px) {
+    .why-us {
+      &__metrics-list {
+        grid-column-gap: 260px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1525px) {
     .why-us {
       &__main-title {
         font-size: 313px;
+      }
+
+      &__metrics-list {
+        grid-column-gap: 205px;
       }
     }
   }
@@ -245,7 +265,7 @@ export default {
       }
 
       &__metrics-list {
-        grid-column-gap: 40px;
+        grid-column-gap: 165px;
       }
     }
   }
@@ -260,12 +280,28 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1340px) {
+    .why-us {
+      &__metrics-list {
+        grid-column-gap: 125px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1290px) {
+    .why-us {
+      &__metrics-list {
+        grid-column-gap: 105px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1280px) {
     .why-us {
       padding-bottom: 123px;
 
       &__metrics-list {
-        grid-column-gap: 54px;
+        grid-column-gap: 115px;
       }
 
       &__rates-list {
@@ -316,6 +352,18 @@ export default {
       &__mad-devs_metrics-sub-title {
         padding-bottom: 25px;
       }
+
+      &__metrics-list {
+        grid-column-gap: 90px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1180px) {
+    .why-us {
+      &__metrics-list {
+        grid-column-gap: 60px;
+      }
     }
   }
 
@@ -363,7 +411,7 @@ export default {
       }
 
       &__metrics-list {
-        grid-column-gap: 90px;
+        grid-column-gap: 30px;
         margin-top: 0;
         grid-row-gap: 41px;
       }
@@ -410,7 +458,7 @@ export default {
       }
 
       &__metrics-list {
-        grid-column-gap: 90px;
+        grid-column-gap: 285px;
         margin-top: 0;
         grid-row-gap: 41px;
         grid-template-columns: repeat(2, 1fr);
@@ -477,6 +525,10 @@ export default {
 
       &__customer-rates-sub-title {
         padding-bottom: 14px;
+      }
+
+      &__metrics-list {
+        grid-column-gap: 90px;
       }
     }
   }

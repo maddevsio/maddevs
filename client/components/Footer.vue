@@ -4,7 +4,7 @@
 			<div class="footer__content">
 				<div class="footer__text-content">
 					<div class="footer__title-wrap">
-						<h2 class="footer__main-title main-title">Get in Touch</h2>
+						<h2 class="footer__main-title main-title">Get In Touch</h2>
 						<div class="footer__mail-wrapper">
 							<img src="@/assets/img/Footer/mail-icon.svg" alt="mail">
 							<a class="footer__mailto-link" href="mailto:team@maddevs.io">team@maddevs.io</a>
@@ -122,7 +122,7 @@ export default {
 	.privacy,
 	.nda {
 		padding-top: 109px;
-		margin-top: 293px;
+		margin-top: 90px;
 		border-top: 1px solid $border-color--grey-dark;
 	}
 
@@ -244,12 +244,33 @@ export default {
 					padding-top: 10px;
 				}
 			}
+
+		}
+
+		.gdpr,
+		.privacy,
+		.nda {
+			margin-top: 60px;
 		}
 	}
 
 	@media only screen and (max-width: 680px) {
 		.footer {
 			padding-top: 60px;
+		}
+	}
+
+	@media only screen and (max-width: 500px) {
+		.footer {
+			&__left-bottom_links {
+				flex-direction: column;
+			}
+
+			&__bottom-link {
+				&:nth-child(2) {
+					padding-top: 10px;
+				}
+			}
 		}
 	}
 

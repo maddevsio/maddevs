@@ -1042,11 +1042,11 @@ exports[`Projects page renders correctly 1`] = `
                 />
               </svg>
                
-              <span
+              <p
                 class="open-source__industry"
               >
                 Logistics
-              </span>
+              </p>
             </div>
              
             <p
@@ -1085,11 +1085,11 @@ exports[`Projects page renders correctly 1`] = `
                 />
               </svg>
                
-              <span
+              <p
                 class="open-source__industry"
               >
                 Team Management
-              </span>
+              </p>
             </div>
              
             <p
@@ -1128,11 +1128,11 @@ exports[`Projects page renders correctly 1`] = `
                 />
               </svg>
                
-              <span
+              <p
                 class="open-source__industry"
               >
                 Logistics
-              </span>
+              </p>
             </div>
              
             <p
@@ -1171,11 +1171,11 @@ exports[`Projects page renders correctly 1`] = `
                 />
               </svg>
                
-              <span
+              <p
                 class="open-source__industry"
               >
                 Security
-              </span>
+              </p>
             </div>
              
             <p
@@ -1249,11 +1249,11 @@ exports[`Projects page renders correctly 1`] = `
                 </defs>
               </svg>
                
-              <span
+              <p
                 class="open-source__industry"
               >
                 Entertainment
-              </span>
+              </p>
             </div>
              
             <p
@@ -1302,11 +1302,11 @@ exports[`Projects page renders correctly 1`] = `
                 />
               </svg>
                
-              <span
+              <p
                 class="open-source__industry"
               >
                 Security
-              </span>
+              </p>
             </div>
              
             <p

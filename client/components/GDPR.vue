@@ -212,9 +212,20 @@ export default {
   }
 }
 
+@media only screen and (max-width: 590px) {
+  .gdpr {
+    &__image {
+      height: 120px;
+      right: 39px;
+      top: -125px;
+    }
+  }
+}
+
 @media only screen and (max-width: 520px) and (min-width: 495px) {
   .gdpr {
     &__image {
+      top: -95px;
       top: -95px;
     }
   }
@@ -224,6 +235,7 @@ export default {
   .gdpr {
     &__image {
       height: 95px;
+      top: -95px;
     }
 
     &__title {
