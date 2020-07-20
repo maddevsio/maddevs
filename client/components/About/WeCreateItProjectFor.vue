@@ -19,7 +19,7 @@
           </div>
           <ul class="we-create-it-project__country-list">
             <li v-for="(country, i) in countries" :key="i" class="we-create-it-project__country-item">
-              <img :src="require(`@/assets/img/Flags/${country.iconName}.svg`)" :alt="`${country.countryName}`" />
+              <span :class="`we-create-it-project__logo-country we-create-it-project__logo-country--${country.iconName}`"/>
               {{ country.countryName }}
             </li>
           </ul>
@@ -105,6 +105,10 @@ export default {
     &__main-title {
       color: $text-color--red;
       padding-bottom: 4vw;
+
+      @media only screen and (max-width: 745px) {
+        padding-bottom: 14vw;
+      }
     }
 
     &__projects-type_list {
@@ -113,8 +117,65 @@ export default {
       width: 49%;
     }
 
+    &__logo-country {
+      height: 1vw;
+      width: 1.5vw;
+      background-repeat: no-repeat;
+      margin: 0 0.1vw 0 0;
+      background-size: contain;
+
+      &--united-kingdom {
+        background-image: url(../../assets/img/Flags/united-kingdom.svg);
+      }
+
+      &--united-states {
+        background-image: url(../../assets/img/Flags/united-states.svg);
+      }
+
+      &--austria {
+        background-image: url(../../assets/img/Flags/austria.svg);
+      }
+
+      &--poland {
+        background-image: url(../../assets/img/Flags/poland.svg);
+      }
+
+      &--russia {
+        background-image: url(../../assets/img/Flags/russia.svg);
+      }
+
+      &--vietnam {
+        background-image: url(../../assets/img/Flags/vietnam.svg);
+      }
+
+      &--switzerland {
+        background-image: url(../../assets/img/Flags/switzerland.svg);
+      }
+
+      &--australia {
+        background-image: url(../../assets/img/Flags/australia.svg);
+      }
+
+      &--belarus {
+        background-image: url(../../assets/img/Flags/belarus.svg);
+      }
+
+      &--france {
+        background-image: url(../../assets/img/Flags/france.svg);
+      }
+
+      &--singapore {
+        background-image: url(../../assets/img/Flags/singapore.svg);
+      }
+
+      &--kazakhstan {
+        background-image: url(../../assets/img/Flags/kazakhstan.svg);
+      }
+    }
+
     &__country-list_wrap {
       max-width: 770px;
+      padding-bottom: 0.3vw;
 
       button {
         width: 100%;
@@ -123,7 +184,7 @@ export default {
     }
 
     &__country-list_title {
-      padding-bottom: 30px;
+      padding-bottom: 2vw;
       color: $text-color--grey;
       font-size: 3.2vw;
       letter-spacing: -2px;
@@ -143,14 +204,11 @@ export default {
     }
 
     &__country-item {
-      display: flex;
       color: $text-color--grey;
-      font-size: 32px;
+      font-size: 1.9vw;
       letter-spacing: -1px;
-
-      img {
-        padding-right: 10px;
-      }
+      display: flex;
+      align-items: center;
     }
 
     &__project-item,
@@ -169,38 +227,17 @@ export default {
 
   @media only screen and (max-width: 1440px) {
     .we-create-it-project {
-      padding-top: 135px;
-
-      &__main-title {
-        padding-bottom: 60px;
-      }
-
       &__country-list_wrap {
         max-width: 680px;
-      }
-
-      &__country-list_title {
-        padding-bottom: 25px;
-      }
-
-      &__country-item {
-        font-size: 25px;
       }
     }
   }
 
   @media only screen and (max-width: 1300px) {
     .we-create-it-project {
-      padding-top: 200px;
-      padding-bottom: 195px;
 
       &__country-list_wrap {
         max-width: 625px;
-      }
-
-      &__country-list_title {
-        font-size: 36px;
-        padding-bottom: 13px;
       }
 
       &__country-list {
@@ -210,8 +247,6 @@ export default {
       }
 
       &__project-item {
-        padding-bottom: 13px;
-
         &:last-child {
           padding-bottom: 0;
         }
@@ -221,21 +256,13 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .we-create-it-project {
-      padding-top: 100px;
-      padding-bottom: 141px;
+      padding-top: 12vw;
+      padding-bottom: 10vw;
 
       &__country-list_wrap {
         button {
           height: 44px;
         }
-      }
-
-      &__project-item {
-        padding-bottom: 8px;
-      }
-
-      &__country-list_title {
-        font-size: 34px;
       }
 
       &__country-list {
@@ -246,11 +273,8 @@ export default {
 
   @media only screen and (max-width: 890px) {
     .we-create-it-project {
-      padding-top: 56px;
 
       &__main-title {
-        font-size: 64px;
-        padding-bottom: 35px;
         letter-spacing: -0.03em;
       }
 
@@ -264,21 +288,13 @@ export default {
         grid-column-gap: 57px;
         grid-row-gap: 6px;
       }
-
-      &__project-item {
-        padding-bottom: 11px;
-      }
-
-      &__country-item {
-        font-size: 18px;
-      }
     }
   }
 
   @media only screen and (max-width: 745px) {
     .we-create-it-project {
       padding-top: 73px;
-      padding-bottom: 60px;
+      padding-bottom: 25vw;
 
       &__content-wrap {
         flex-direction: column;
@@ -286,18 +302,38 @@ export default {
         align-items: initial;
       }
 
+      &__project-item {
+        padding-bottom: 10vw;
+        font-size: 11vw;
+      }
+
       &__country-list_title {
+        padding-bottom: 7vw;
+        font-size: 8.2vw;
+        line-height: 8.9vw;
         br {
           display: none;
         }
       }
 
       &__country-list {
-        grid-column-gap: 20px;
+        grid-column-gap: 10vw;
+        grid-row-gap: 5vw;
+      }
+
+      &__country-item {
+        font-size: 3.9vw;
+        letter-spacing: 1px;
+      }
+
+      &__logo-country {
+        height: 4vw;
+        width: 4.5vw;
+        margin: 0 2.5vw 0 0;
       }
 
       &__projects-type_list {
-        padding-bottom: 50px;
+        padding-bottom: 16vw;
         width: 100%;
       }
     }
@@ -309,29 +345,6 @@ export default {
         br {
           display: block;
         }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .we-create-it-project {
-      padding-bottom: 90px;
-
-      &__main-title {
-        font-size: 53px;
-        letter-spacing: -2px;
-      }
-
-      &__country-list_title {
-        font-size: 28px;
-      }
-
-      &__project-item {
-        letter-spacing: -1px;
-      }
-
-      &__projects-type_list {
-        padding-bottom: 38px;
       }
     }
   }

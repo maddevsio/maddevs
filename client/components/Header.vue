@@ -26,7 +26,7 @@
                 <a
                   href="https://ru.linkedin.com/company/mad-devs"
                   target="_blank"
-                  class="header-social-logo header-social-logo--lindekin header__soc-link"/>
+                  class="header-social-logo header-social-logo--linkedin header__soc-link"/>
                 <a
                   href="https://www.facebook.com/maddevsllc"
                   target="_blank"
@@ -34,13 +34,13 @@
               </div>
               <div class="header__phones-dropdown_wrap" :id="selectedPhone.country">
                 <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
-                  <p :class="`header__flag header__flag--${selectedPhone.country}`" />
+                  <span :class="`header__flag header__flag--${selectedPhone.country}`" />
                   {{ selectedPhone.phoneNumber }}
                   <i class="header__phones-dropdown_arrow"/>
                 </a>
                 <div class="header__phones-list">
                   <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone" v-show="phone != selectedPhone">
-                    <p :class="`header__flag header__flag--${phone.country}`" />
+                    <span :class="`header__flag header__flag--${phone.country}`" />
                     {{ phone.phoneNumber }}
                   </a>
                 </div>
@@ -301,7 +301,7 @@ export default {
         background-image: url(../assets/img/Header/twitter-icon.svg);
       }
 
-      &--lindekin {
+      &--linkedin {
         background-image: url(../assets/img/Header/lindekin-icon.svg);
       }
     }

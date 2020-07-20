@@ -162,6 +162,20 @@ export default {
     .nuxt-link-exact-active {
       color: $text-color--red;
     }
+
+    @media only screen and (max-width: 1024px) {
+      &__header-logo {
+        width: 5vw;
+        height: auto;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      &__header-logo {
+        width: 8vw;
+        height: auto;
+      }
+    }
   }
 
 	.is-open {

@@ -11,7 +11,7 @@
 				</li>
 				<li>
 					<a href="tel:+44 20 3984 8555" class="footer-contacts__phone-item footer-contacts__phone-item--flag">
-						<p class="footer-contacts__icon footer-contacts__icon--uk"/>
+						<span class="footer-contacts__icon footer-contacts__icon--uk"/>
 						+44 20 3984 8555
 					</a>
 				</li>
