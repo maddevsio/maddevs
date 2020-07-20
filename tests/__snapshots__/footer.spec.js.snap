@@ -19,7 +19,7 @@ exports[`Footer renders correctly 1`] = `
           <h2
             class="footer__main-title main-title"
           >
-            Get in Touch
+            Get In Touch
           </h2>
            
           <div
