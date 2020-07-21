@@ -2,21 +2,21 @@
   <div class="technologies-item">
     <h4 class="technologies-item__title sub-title">{{ title }}</h4>
     <p class="technologies-item__paragraph paragraph">{{ paragraph }}</p>
-    <FrontendIcons v-if="title === 'Frontend'" />
-    <BackendIcons v-if="title === 'Backend'" />
-    <MobileIcons v-if="title === 'Mobile'" />
-    <ProjectManagement v-if="title === 'Project Management'"/>
+    <div class="icons-list">
+      <div class="icon-flex_group">
+        <TechIcon v-for="(icon, i) in icons" :key="i" :class-prefix="icon.prefix" :title="icon.title"/>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import BackendIcons from '@/components/IconsGroup/BackendIcons';
-import FrontendIcons from '@/components/IconsGroup/FrontendIcons';
-import MobileIcons from '@/components/IconsGroup/MobileIcons';
-import ProjectManagement from '@/components/IconsGroup/ProjectManagement';
 
+
+import TechIcon from '../IconsGroup/tech-icon';
 export default {
   name: 'TechnologiesItem',
+  components: {TechIcon},
   props: {
     title: {
       type: String,
@@ -25,13 +25,10 @@ export default {
     paragraph: {
       type: String,
       default: 'Paragraph'
+    },
+    icons: {
+      type: Array
     }
-  },
-  components: {
-    BackendIcons,
-    FrontendIcons,
-    MobileIcons,
-    ProjectManagement
   }
 };
 </script>

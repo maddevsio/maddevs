@@ -45,28 +45,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-  @media only screen and (max-width: 640px) {
-    .technologies-backend {
       .icons-list {
         display: grid;
-        grid-template-columns: repeat(2, 160px);
+        grid-template-columns: repeat(1, 1fr);
       }
-
-      .icon-flex_group {
-        flex-direction: column;
-
-        &:last-child {
-          flex-direction: row;
-          flex-wrap: nowrap;
-
-          .icon-item {
-            &:last-child {
-              padding-left: 63px;
-            }
-          }
-        }
-      }
-    }
-  }
 </style>
