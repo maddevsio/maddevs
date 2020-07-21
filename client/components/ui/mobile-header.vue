@@ -14,7 +14,7 @@
 		<perfect-scrollbar class="mobile-header__scrollbar custom-scrollbar container">
 			<div class="mobile-header__content-wrap" v-show="mobileHeaderIsOpen">
 				<nav class="mobile-header__header-routes_links">
-					<router-link to="/">About</router-link>
+					<router-link exact to="/">About</router-link>
 					<router-link to="/services">Services</router-link>
 					<router-link to="/projects">Projects</router-link>
 					<router-link to="/careers">Careers</router-link>
@@ -161,6 +161,9 @@ export default {
 
     .nuxt-link-exact-active {
       color: $text-color--red;
+      &::after {
+        color: $text-color--red;
+      }
     }
 
     @media only screen and (max-width: 1024px) {

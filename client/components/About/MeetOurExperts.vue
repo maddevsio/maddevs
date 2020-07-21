@@ -234,4 +234,16 @@ export default {
       }
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .meet-our_experts {
+      padding-bottom: 120px;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .meet-our_experts {
+      padding-bottom: 90px;
+    }
+  }
 </style>

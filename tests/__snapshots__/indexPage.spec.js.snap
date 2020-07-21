@@ -1842,7 +1842,7 @@ exports[`Index page renders correctly 1`] = `
                 class="customer-testimonials__project"
               >
                 <a
-                  href="https://www.veeqo.com/"
+                  href="https://veeqo.com/"
                   rel="nofollow"
                   target="blank"
                 >
@@ -1893,7 +1893,7 @@ exports[`Index page renders correctly 1`] = `
                 class="customer-testimonials__project"
               >
                 <a
-                  href="https://www.guardrails.io/"
+                  href="https://guardrails.io/"
                   rel="nofollow"
                   target="blank"
                 >
@@ -2004,7 +2004,7 @@ exports[`Index page renders correctly 1`] = `
                   class="mobile-project"
                 >
                   <a
-                    href="https://www.veeqo.com/"
+                    href="https://veeqo.com/"
                     rel="nofollow"
                     target="blank"
                   >
@@ -2055,7 +2055,7 @@ exports[`Index page renders correctly 1`] = `
                   class="mobile-project"
                 >
                   <a
-                    href="https://www.guardrails.io/"
+                    href="https://guardrails.io/"
                     rel="nofollow"
                     target="blank"
                   >
