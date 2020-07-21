@@ -106,7 +106,7 @@ export default {
       positionValue: null,
       positionTitle: null,
       email: null,
-      emailTo: 'hr@maddevs.io',
+      emailTo: 'merynes345@gmail.com',
       selectedFile: null,
       linkedinProfile: null,
       radioData: [

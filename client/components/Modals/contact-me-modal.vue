@@ -56,7 +56,7 @@ export default {
     modalName: 'contact-me-modal',
     fullName: null,
     email: null,
-    emailTo: 'team@maddevs.io',
+    emailTo: 'merunes345@gmail.com',
     phoneNumber: null,
     company: null,
     agreeWithPrivacyPolicy: false,
