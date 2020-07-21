@@ -9,7 +9,7 @@ describe('CareersForm component', () => {
     positionValue: null,
     positionTitle: null,
     email: null,
-    emailTo: 'merynes345@gmail.com',
+    emailTo: 'hr@maddevs.io',
     selectedFile: null,
     linkedinProfile: null,
     onSumbit: false,
