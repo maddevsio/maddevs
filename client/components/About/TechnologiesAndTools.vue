@@ -115,7 +115,7 @@ export default {
         paragraph: 'Our project managers can provide you with a detailed report on the workload of every team member. We use modern tools and solutions for task tracking, team sync-ups and our daily communication process:',
         icons: [
           {
-            title: 'Atlassian Jira',
+            title: 'Jira',
             prefix: 'jira'
           },
           {
@@ -123,12 +123,36 @@ export default {
             prefix: 'slack'
           },
           {
-            title: 'Hangouts',
-            prefix: 'hangouts'
+            title: 'Basecamp',
+            prefix: 'basecamp'
+          },
+          {
+            title: 'Confluence',
+            prefix: 'confluence'
+          },
+          {
+            title: 'Trello',
+            prefix: 'trello'
+          },
+          {
+            title: 'Notion',
+            prefix: 'notion'
           },
           {
             title: 'Skype',
             prefix: 'skype'
+          },
+          {
+            title: 'Google Meet',
+            prefix: 'google-meet'
+          },
+          {
+            title: 'Zoom',
+            prefix: 'zoom'
+          },
+          {
+            title: 'Microsoft Teams',
+            prefix: 'microsoft-teams'
           }
         ]
       }]

@@ -106,7 +106,7 @@ export default {
       }
 
       &--jira {
-        background-image: url(../../assets/img/Technologies/svg/jira.svg);
+        background-image: url(../../assets/img/Technologies/png/jira.png);
       }
 
       &--skype {
@@ -183,6 +183,34 @@ export default {
 
       &--amazon-cloudwatch {
         background-image: url(../../assets/img/Technologies/svg/amazon-cloudwatch.svg);
+      }
+
+      &--basecamp {
+        background-image: url(../../assets/img/Technologies/png/basecamp.png);
+      }
+
+      &--confluence {
+        background-image: url(../../assets/img/Technologies/png/confluence.png);
+      }
+
+      &--trello {
+        background-image: url(../../assets/img/Technologies/png/trello.png);
+      }
+
+      &--notion {
+        background-image: url(../../assets/img/Technologies/png/notion.png);
+      }
+
+      &--google-meet {
+        background-image: url(../../assets/img/Technologies/png/google-meet.png);
+      }
+
+      &--zoom {
+        background-image: url(../../assets/img/Technologies/png/zoom.png);
+      }
+
+      &--microsoft-teams {
+        background-image: url(../../assets/img/Technologies/png/microsoft-teams.png);
       }
     }
   }
