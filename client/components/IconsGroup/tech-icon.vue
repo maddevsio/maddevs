@@ -116,6 +116,74 @@ export default {
       &--slack {
         background-image: url(../../assets/img/Technologies/svg/slack.svg);
       }
+
+      &--asw {
+        background-image: url(../../assets/img/Technologies/svg/asw.svg);
+      }
+
+      &--digital-ocean {
+        background-image: url(../../assets/img/Technologies/svg/digital-ocean.svg);
+      }
+
+      &--heroku {
+        background-image: url(../../assets/img/Technologies/svg/heroku.svg);
+      }
+
+      &--azure {
+        background-image: url(../../assets/img/Technologies/svg/azure.svg);
+      }
+
+      &--ansible{
+        background-image: url(../../assets/img/Technologies/svg/ansible.svg);
+      }
+
+      &--terraform {
+        background-image: url(../../assets/img/Technologies/svg/terraform.svg);
+      }
+
+      &--cloudformation {
+        background-image: url(../../assets/img/Technologies/svg/cloudformation.svg);
+      }
+
+      &--jenkins {
+        background-image: url(../../assets/img/Technologies/svg/jenkins.svg);
+      }
+
+      &--bamboo {
+        background-image: url(../../assets/img/Technologies/svg/bamboo.svg);
+      }
+
+      &--team-city {
+        background-image: url(../../assets/img/Technologies/svg/team-city.svg);
+      }
+
+      &--travis {
+        background-image: url(../../assets/img/Technologies/svg/travis.svg);
+      }
+
+      &--aswcp {
+        background-image: url(../../assets/img/Technologies/svg/aswcp.png);
+      }
+
+      &--circle {
+        background-image: url(../../assets/img/Technologies/svg/circle.svg);
+      }
+
+      &--elk {
+        background-image: url(../../assets/img/Technologies/svg/elk.svg);
+      }
+
+      &--senrty {
+        background-image: url(../../assets/img/Technologies/svg/senrty.svg);
+      }
+
+      &--prometheus {
+        background-image: url(../../assets/img/Technologies/svg/prometheus.svg);
+      }
+
+      &--amazon-cloudwatch {
+        background-image: url(../../assets/img/Technologies/svg/amazon-cloudwatch.svg);
+      }
     }
   }
 </style>

@@ -6,7 +6,6 @@
             Technologies <br> & Tools
         </h2>
         <div class="technologies-and_tools__technologies-list">
-          <div class="technologies-and_tools__flex-group">
             <TechnologiesItem
               :title="frontend.title"
               :paragraph="frontend.paragraph"
@@ -17,23 +16,18 @@
               :paragraph="backend.paragraph"
               class="technologies-backend"
             />
-          </div>
-          <div class="technologies-and_tools__flex-group">
-            <div class="technologies-and_tools__sub-flex_group">
               <TechnologiesItem
                 :title="mobile.title"
                 :paragraph="mobile.paragraph"
                 class="technologies-mobile"
               />
+          <InfrastructureTechnologiesItem />
               <TechnologiesItem
                 :title="projectManagement.title"
                 :paragraph="projectManagement.paragraph"
                 class="technologies-project-management"
               />
-            </div>
-            <InfrastructureTechnologiesItem />
           </div>
-        </div>
       </div>
     </div>
   </section>
@@ -85,8 +79,14 @@ export default {
 
     &__technologies-list {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       justify-content: space-between;
+      align-items: flex-start;
+
+      .technologies-item,
+      .infrastructure-content{
+        width: 45%;
+      }
     }
 
     &__flex-group {
