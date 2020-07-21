@@ -294,7 +294,7 @@
 }
 
 .sub-title {
-  font-size: 50px;
+  font-size: 3vw;
   letter-spacing: -2px;
 }
 
@@ -303,7 +303,7 @@
 }
 
 .paragraph {
-  font-size: 21px;
+  font-size: 1.2vw;
   font-family: 'Hoves-Regular';
   line-height: 129%;
   letter-spacing: -0.02em;
@@ -542,16 +542,6 @@
     height: 44px;
   }
 
-  // TODO remove
-  //.title {
-  //  font-size: 80px;
-  //}
-
-  .sub-title  {
-    font-size: 47px;
-    letter-spacing: -2px;
-  }
-
   .section-title {
     font-size: 77px;
   }
@@ -574,14 +564,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  // TODO remove
-  //.title {
-  //  font-size: 65px;
-  //}
-
-  .sub-title  {
-    font-size: 47px;
-  }
 
   .section-title {
     font-size: 62px;
@@ -614,10 +596,6 @@
   .paragraph,
   .icon-item {
     letter-spacing: -1px;
-  }
-
-  .sub-title  {
-    font-size: 41px;
   }
 
   .paragraph,

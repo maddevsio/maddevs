@@ -40,7 +40,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .technologies-item {
-    padding-bottom: 40px;
+    padding-bottom: 3vw;
 
     &__title,
     &__paragraph {
@@ -58,7 +58,7 @@ export default {
     }
 
     /deep/.icons-list {
-      padding: 13px 0;
+      padding: 1.1vw 0;
     }
   }
 

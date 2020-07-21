@@ -79,7 +79,7 @@ export default {
     padding-bottom: 38px;
 
     &__main-title {
-      padding-bottom: 41px;
+      padding-bottom: 4.8vw;
       color: $text-color--white;
     }
 
