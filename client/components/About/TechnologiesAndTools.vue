@@ -284,6 +284,14 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 745px) {
+    .technologies-and_tools {
+      &__technologies-list {
+        display: block;
+      }
+    }
+  }
+
   @media only screen and (max-width: 430px) {
     .technologies-and_tools {
       padding-bottom: 35px;

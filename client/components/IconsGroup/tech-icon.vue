@@ -214,4 +214,21 @@ export default {
       }
     }
   }
+
+  @media only screen and (max-width: 640px) {
+    .tech-icon {
+      padding-bottom: 3vw;
+      padding-right: 5.5vw;
+      &__name {
+        font-size: 4.5vw;
+      }
+
+      &__logo {
+        height: 5vw;
+        width: 5vw;
+        padding-bottom: 2vw;
+        padding-right: 5vw;
+      }
+    }
+  }
 </style>

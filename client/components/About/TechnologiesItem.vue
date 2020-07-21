@@ -102,6 +102,12 @@ export default {
         flex-wrap: wrap;
       }
     }
+
+    .technologies-item {
+      /deep/.icons-list {
+        padding: 3.1vw 0;
+      }
+    }
   }
 
   @media only screen and (max-width: 520px) {
