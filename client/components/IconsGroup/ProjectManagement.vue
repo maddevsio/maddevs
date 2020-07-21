@@ -1,31 +1,38 @@
 <template>
   <div class="icons-list">
     <div class="icon-flex_group">
-      <div class="icon-item jira">
-        <img src="../../assets/img/Technologies/svg/jira.svg" alt="Atlassian Jira">
-        <span>Atlassian Jira</span>
-      </div>
-      <div class="icon-item">
-         <img src="../../assets/img/Technologies/svg/slack.svg" alt="Slack">
-         <span>Slack</span>
-      </div>
-    </div>
-    <div class="icon-flex_group">
-      <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/hangouts.svg" alt="Hangouts">
-        <span>Hangouts</span>
-      </div>
-      <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/skype.svg" alt="Skype">
-        <span>Skype</span>
-      </div>
+      <TechIcon v-for="(icon, i) in icons" :key="i" :class-prefix="icon.prefix" :title="icon.title"/>
     </div>
   </div>
 </template>
 
 <script>
+import TechIcon from './tech-icon';
+
 export default {
-  name: 'ProjectManagement'
+  name: 'ProjectManagement',
+  components: {TechIcon},
+  data() {
+    return {
+      icons: [
+        {
+          title: 'Atlassian Jira',
+          prefix: 'jira'
+        },
+        {
+          title: 'Slack',
+          prefix: 'slack'
+        },
+        {
+          title: 'Hangouts',
+          prefix: 'hangouts'
+        },
+        {
+          title: 'Skype',
+          prefix: 'skype'
+        }
+      ]
+    };}
 };
 </script>
 

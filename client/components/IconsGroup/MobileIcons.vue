@@ -1,31 +1,38 @@
 <template>
   <div class="icons-list">
     <div class="icon-flex_group">
-      <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/kotlin.svg" alt="Kotlin">
-        <span>Kotlin</span>
-      </div>
-      <div class="icon-item">
-         <img src="../../assets/img/Technologies/svg/java.svg" alt="Java">
-         <span>Java</span>
-      </div>
-    </div>
-    <div class="icon-flex_group">
-      <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/objective.svg" alt="Objective-C">
-        <span>Objective-C</span>
-      </div>
-      <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/swift.svg" alt="Swift">
-        <span>Swift</span>
-      </div>
+      <TechIcon v-for="(icon, i) in icons" :key="i" :class-prefix="icon.prefix" :title="icon.title"/>
     </div>
   </div>
 </template>
 
 <script>
+import TechIcon from './tech-icon';
+
 export default {
-  name: 'MobileIcons'
+  name: 'MobileIcons',
+  components: {TechIcon},
+  data() {
+    return {
+      icons: [
+        {
+          title: 'Kotlin',
+          prefix: 'kotlin'
+        },
+        {
+          title: 'Java',
+          prefix: 'java'
+        },
+        {
+          title: 'Objective-C',
+          prefix: 'objective'
+        },
+        {
+          title: 'Swift',
+          prefix: 'swift'
+        }
+      ]
+    };}
 };
 </script>
 

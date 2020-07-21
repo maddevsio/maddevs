@@ -60,6 +60,62 @@ export default {
       &--webpack {
         background-image: url(../../assets/img/Technologies/svg/webpack.svg);
       }
+
+      &--python {
+        background-image: url(../../assets/img/Technologies/svg/pyton.svg);
+      }
+
+      &--javascript {
+        background-image: url(../../assets/img/Technologies/svg/javascript.svg);
+      }
+
+      &--php {
+        background-image: url(../../assets/img/Technologies/svg/php.svg);
+      }
+
+      &--node-js {
+        background-image: url(../../assets/img/Technologies/svg/node-js.svg);
+      }
+
+      &--ruby {
+        background-image: url(../../assets/img/Technologies/svg/ruby.svg);
+      }
+
+      &--golang {
+        background-image: url(../../assets/img/Technologies/svg/golang.svg);
+      }
+
+      &--objective {
+        background-image: url(../../assets/img/Technologies/svg/objective.svg);
+      }
+
+      &--java {
+        background-image: url(../../assets/img/Technologies/svg/java.svg);
+      }
+
+      &--swift {
+        background-image: url(../../assets/img/Technologies/svg/swift.svg);
+      }
+
+      &--kotlin {
+        background-image: url(../../assets/img/Technologies/svg/kotlin.svg);
+      }
+
+      &--hangouts {
+        background-image: url(../../assets/img/Technologies/svg/hangouts.svg);
+      }
+
+      &--jira {
+        background-image: url(../../assets/img/Technologies/svg/jira.svg);
+      }
+
+      &--skype {
+        background-image: url(../../assets/img/Technologies/svg/skype.svg);
+      }
+
+      &--slack {
+        background-image: url(../../assets/img/Technologies/svg/slack.svg);
+      }
     }
   }
 </style>
