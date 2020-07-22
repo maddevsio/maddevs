@@ -1,0 +1,376 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SoftwareDevelopment renders correctly 1`] = `
+<section
+  class="software-development main-parent-item"
+  id="software-development"
+>
+  <div
+    class="container"
+  >
+    <h2
+      class="software-development__main-title main-title"
+    >
+      <span>
+        Software
+      </span>
+      <br />
+      Development
+      
+    </h2>
+     
+    <div
+      class="software-development__flex-wrapper flex-wrapper"
+    >
+      <div
+        class="software-development_content"
+      >
+        <div
+          class="software-development_content__content-item_wrapper"
+        >
+          <h3
+            class="software-development_content__title title"
+          >
+            Backend
+          </h3>
+           
+          <h4
+            class="software-development_content__sub-title sub-title"
+          >
+            Your MVP doesn't work as expected after launch?
+          </h4>
+           
+          <p
+            class="software-development_content__paragraph paragraph"
+          >
+            Let our positively mad team rescue you and create sensible server logic for your project.
+          </p>
+           
+          <p
+            class="software-development_content__paragraph paragraph"
+          >
+            We'll cure your growth pains like good doctors – just tell us about them and focus on your business.
+          </p>
+           
+          <p
+            class="software-development_content__paragraph paragraph"
+          >
+            At Mad Devs we know everything about:
+          </p>
+           
+          <div
+            class="icons-list"
+          >
+            <div
+              class="icon-flex_group"
+            >
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--python"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Python
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--golang"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Golang
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--javascript"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  JavaScript
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--php"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  PHP
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--node-js"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Node.js
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--ruby"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Ruby
+                </p>
+              </div>
+            </div>
+          </div>
+           
+          <!---->
+           
+          <!---->
+        </div>
+      </div>
+       
+      <div
+        class="software-development_content frontend-item"
+      >
+        <div
+          class="software-development_content__content-item_wrapper"
+        >
+          <h3
+            class="software-development_content__title title"
+          >
+            Frontend
+          </h3>
+           
+          <h4
+            class="software-development_content__sub-title sub-title"
+          >
+            Your users get lost in lousy interfaces?
+          </h4>
+           
+          <p
+            class="software-development_content__paragraph paragraph"
+          >
+            Our wizards will take your UX magic to the next level where everything is intuitive and user-friendly. Mad Devs strive to get involved with well-polished projects that will live a long life.
+          </p>
+           
+          <p
+            class="software-development_content__paragraph paragraph"
+          >
+            We work with the best present-day frontend stack:
+          </p>
+           
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="icons-list"
+          >
+            <div
+              class="icon-flex_group"
+            >
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--react"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  React
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--vue"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Vue.js
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--babel"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Babel
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--webpack"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Webpack
+                </p>
+              </div>
+            </div>
+          </div>
+           
+          <!---->
+        </div>
+      </div>
+       
+      <div
+        class="software-development_content"
+      >
+        <div
+          class="software-development_content__content-item_wrapper"
+        >
+          <h3
+            class="software-development_content__title title"
+          >
+            <span>
+              Mobi
+            </span>
+             
+            <img
+              alt="phone-title-symbol"
+              class="software-development_content__mobile-title-icon title-icon"
+              src="../../assets/img/Services/svg/phone-title-symbol.svg"
+            />
+             
+            <span
+              class="software-development_content__last-character last-character"
+            >
+              e
+            </span>
+          </h3>
+           
+          <h4
+            class="software-development_content__sub-title sub-title"
+          >
+            Your app is slow and unable to survive a demo?
+          </h4>
+           
+          <p
+            class="software-development_content__paragraph paragraph"
+          >
+            We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you'll be ecstatic to use yourself.
+          </p>
+           
+          <p
+            class="software-development_content__paragraph paragraph"
+          >
+            We do both iOS and Android development using the following languages and frameworks:
+          </p>
+           
+          <!---->
+           
+          <!---->
+           
+          <!---->
+           
+          <div
+            class="icons-list"
+          >
+            <div
+              class="icon-flex_group"
+            >
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--kotlin"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Kotlin
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--java"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Java
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--objective"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Objective-C
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--swift"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Swift
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <button
+      class="ui-button-modal-trigger ui-button-modal-trigger--grey"
+    >
+      
+  Get your trusted IT partner
+
+    </button>
+  </div>
+</section>
+`;
