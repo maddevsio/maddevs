@@ -575,14 +575,10 @@
   }
 }
 
-@media only screen and (max-width: 640px) {
-  // todo remove
-  //.title {
-  //  font-size: 60px;
-  //}
-
-  .section-title {
-    font-size: 57px;
+@media only screen and (max-width: 745px) {
+  .paragraph,
+  .icon-item {
+    font-size: 2.5vw;
   }
 }
 
@@ -591,18 +587,19 @@
     letter-spacing: -1px;
     font-size: 11vw;
   }
+
+  .section-title {
+    font-size: 57px;
+  }
+
   .paragraph,
   .icon-item {
     letter-spacing: -1px;
-    font-size: 5.2vw;
+    font-size: 4vw;
   }
 }
 
 @media only screen and (max-width: 520px) {
-  // TODO remove
-  //.title {
-  //  font-size: 41px;
-  //}
 
   .doc-text {
     font-size: 23px;

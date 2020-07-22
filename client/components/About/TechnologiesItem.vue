@@ -95,6 +95,10 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 745px) {
+
+  }
+
   @media only screen and (max-width: 640px) {
     .technologies-backend {
       /deep/.icon-flex_group {

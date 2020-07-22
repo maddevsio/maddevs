@@ -215,7 +215,41 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 745px) {
+    .tech-icon {
+      padding-bottom: 3vw;
+      padding-right: 5.5vw;
+      &__name {
+        font-size: 2.5vw;
+      }
+
+      &__logo {
+        height: 2vw;
+        width: 2vw;
+        padding-bottom: 1vw;
+        padding-right: 2vw;
+      }
+    }
+  }
+
   @media only screen and (max-width: 640px) {
+    .tech-icon {
+      padding-bottom: 3vw;
+      padding-right: 5.5vw;
+      &__name {
+        font-size: 3vw;
+      }
+
+      &__logo {
+        height: 3.5vw;
+        width: 3.5vw;
+        padding-bottom: 1.7vw;
+        padding-right: 3vw;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 520px) {
     .tech-icon {
       padding-bottom: 3vw;
       padding-right: 5.5vw;
@@ -227,7 +261,7 @@ export default {
         height: 5vw;
         width: 5vw;
         padding-bottom: 2vw;
-        padding-right: 5vw;
+        padding-right: 3.8vw;
       }
     }
   }

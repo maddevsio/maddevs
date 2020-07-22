@@ -118,8 +118,8 @@ export default {
     }
 
     &__logo-country {
-      height: 1vw;
-      width: 1.5vw;
+      height: 1.6vw;
+      width: 2.5vw;
       background-repeat: no-repeat;
       margin: 0 0.1vw 0 0;
       background-size: contain;
@@ -327,8 +327,8 @@ export default {
       }
 
       &__logo-country {
-        height: 4vw;
-        width: 4.5vw;
+        height: 4.2vw;
+        width: 5vw;
         margin: 0 2.5vw 0 0;
       }
 
@@ -345,6 +345,10 @@ export default {
         br {
           display: block;
         }
+      }
+
+      &__country-item {
+        font-size: 5vw;
       }
     }
   }
