@@ -144,7 +144,7 @@ export default {
   }
 
   &__main-title {
-    padding-bottom: 41px;
+    padding-bottom: 2vw;
     display: inline-block;
     color: $text-color--red;
 
@@ -313,7 +313,7 @@ export default {
 @media only screen and (max-width: 1600px) {
   .case-studies {
     &__main-title {
-      font-size: 128px;
+      font-size: 8vw;
     }
   }
 
@@ -368,11 +368,6 @@ export default {
 }
 
 @media only screen and (max-width: 1440px) {
-  .case-studies {
-    &__main-title {
-      font-size: 125px;
-    }
-  }
 
   .projects {
     &-flame-background {
@@ -413,11 +408,6 @@ export default {
 }
 
 @media only screen and (max-width: 1330px) {
-  .case-studies {
-    &__main-title {
-      font-size: 120px;
-    }
-  }
 
   .projects {
     &-flame-background {
@@ -430,10 +420,6 @@ export default {
 @media only screen and (max-width: 1280px) {
   .case-studies {
     padding-top: 20px;
-
-    &__main-title {
-      font-size: 100px;
-    }
   }
 
   .projects {
@@ -445,11 +431,6 @@ export default {
 }
 
 @media only screen and (max-width: 1230px) {
-  .case-studies {
-    &__main-title {
-      font-size: 93px;
-    }
-  }
 
   .projects {
     &-flame-background {
@@ -477,12 +458,6 @@ export default {
 }
 
 @media only screen and (max-width: 1024px) {
-  .case-studies {
-    &__main-title {
-      font-size: 90px;
-    }
-  }
-
   .projects {
     &-flame-background {
       top: -233px;
@@ -532,12 +507,6 @@ export default {
 }
 
 @media only screen and (max-width: 905px) {
-  .case-studies {
-    &__main-title {
-      font-size: 72px;
-    }
-  }
-
   .projects {
     &-flame-background {
       top: -193px;
@@ -608,11 +577,6 @@ export default {
 
 @media only screen and (max-width: 768px) {
   .case-studies {
-    &__main-title {
-      padding-bottom: 31px;
-      font-size: 64px;
-    }
-
     .projects {
       display: none;
 
@@ -666,10 +630,6 @@ export default {
       }
     }
 
-    &__main-title {
-      font-size: 64px;
-    }
-
     &-flame-background {
       right: 45px;
     }
@@ -691,14 +651,13 @@ export default {
     min-width: 100%;
 
     &__main-title {
-      padding-bottom: 31px;
     }
   }
 }
 
 @media only screen and (max-width: 475px) {
   .case-studies {
-    .projects { 
+    .projects {
       &-flame-background {
         top: -95px;
         width: 180px;
@@ -707,13 +666,12 @@ export default {
   }
 
   &__main-title {
-    font-size: 60px;
   }
 }
 
 @media only screen and (max-width: 460px) {
   .case-studies {
-    .projects { 
+    .projects {
       &-flame-background {
         top: -70px;
         width: 165px;
@@ -725,17 +683,12 @@ export default {
 @media only screen and (max-width: 427px) {
   .case-studies {
     &__main-title {
-      font-size: 56px;
     }
   }
 }
 
 @media only screen and (max-width: 375px) {
   .case-studies {
-    &__main-title {
-      font-size: 53px;
-    }
-
     .swiper-slide {
       &:nth-child(2) {
         /deep/ .single-project__background {
@@ -765,20 +718,8 @@ export default {
   }
 }
 
-@media only screen and (max-width: 366px) {
-  .case-studies {
-    &__main-title {
-      font-size: 50px;
-    }
-  }
-}
-
 @media only screen and (max-width: 345px) {
   .case-studies {
-    &__main-title {
-      font-size: 48px;
-    }
-
     .projects {
       &-flame-background {
         top: -45px;

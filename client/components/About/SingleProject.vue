@@ -132,21 +132,14 @@ export default {
 
   @media only screen and (min-width: 1600px) {
     .single-project {
-      &__content-wrap {
-        height: 320px;
-      }
-
       &__sub-title {
-        font-size: 50px;
+        font-size: 3vw;
       }
     }
   }
 
   @media only screen and (max-width: 1600px) {
     .single-project {
-      &__content-wrap {
-        height: 302px;
-      }
 
       &__sub-title {
         font-size: 50px;
@@ -224,19 +217,19 @@ export default {
   }
 
   &__content-wrap {
-    margin: 74px 70px 0;
-    height: 270px;
+    margin: 3.7vw 4vw 0;
     z-index: 1;
   }
 
   &__sub-title {
-    margin-top: 22.5px;
+    margin-top: 1vw;
     line-height: 110%;
     letter-spacing: -2px;
   }
 
   &__paragraph {
-    margin-top: 33px;
+    margin-top: 1vw;
+    line-height: 1.7vw;
   }
 
   .contribution-widget {
@@ -305,7 +298,7 @@ export default {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
-    height: 413px;
+    height: 21.5vw;
     width: 100%;
 
     &_guardrails {
