@@ -76,6 +76,7 @@ export default {
   }
 
   &__cv {
+    min-width: max-content;
     color: $text-color--black;
     font-size: 20px;
     cursor: pointer;
