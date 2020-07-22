@@ -76,11 +76,17 @@ exports[`Customer Testimonials renders correctly 1`] = `
             <div
               class="customer-testimonials__project"
             >
-              <img
-                alt="teacherly"
-                class="customer-testimonials__project-image teacherly"
-                src="[object Object]"
-              />
+              <a
+                href="https://teacherly.io/"
+                rel="nofollow"
+                target="blank"
+              >
+                <img
+                  alt="teacherly"
+                  class="customer-testimonials__project-image teacherly"
+                  src="[object Object]"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -121,11 +127,17 @@ exports[`Customer Testimonials renders correctly 1`] = `
             <div
               class="customer-testimonials__project"
             >
-              <img
-                alt="veeqo"
-                class="customer-testimonials__project-image veeqo"
-                src="[object Object]"
-              />
+              <a
+                href="https://veeqo.com/"
+                rel="nofollow"
+                target="blank"
+              >
+                <img
+                  alt="veeqo"
+                  class="customer-testimonials__project-image veeqo"
+                  src="[object Object]"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -166,11 +178,17 @@ exports[`Customer Testimonials renders correctly 1`] = `
             <div
               class="customer-testimonials__project"
             >
-              <img
-                alt="guardrails"
-                class="customer-testimonials__project-image guardrails"
-                src="[object Object]"
-              />
+              <a
+                href="https://guardrails.io/"
+                rel="nofollow"
+                target="blank"
+              >
+                <img
+                  alt="guardrails"
+                  class="customer-testimonials__project-image guardrails"
+                  src="[object Object]"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -220,11 +238,17 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <div
                 class="mobile-project"
               >
-                <img
-                  alt="teacherly"
-                  class="mobile-project_image teacherly"
-                  src="[object Object]"
-                />
+                <a
+                  href="https://teacherly.io/"
+                  rel="nofollow"
+                  target="blank"
+                >
+                  <img
+                    alt="teacherly"
+                    class="mobile-project_image teacherly"
+                    src="[object Object]"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -265,11 +289,17 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <div
                 class="mobile-project"
               >
-                <img
-                  alt="veeqo"
-                  class="mobile-project_image veeqo"
-                  src="[object Object]"
-                />
+                <a
+                  href="https://veeqo.com/"
+                  rel="nofollow"
+                  target="blank"
+                >
+                  <img
+                    alt="veeqo"
+                    class="mobile-project_image veeqo"
+                    src="[object Object]"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -310,11 +340,17 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <div
                 class="mobile-project"
               >
-                <img
-                  alt="guardrails"
-                  class="mobile-project_image guardrails"
-                  src="[object Object]"
-                />
+                <a
+                  href="https://guardrails.io/"
+                  rel="nofollow"
+                  target="blank"
+                >
+                  <img
+                    alt="guardrails"
+                    class="mobile-project_image guardrails"
+                    src="[object Object]"
+                  />
+                </a>
               </div>
             </div>
           </div>

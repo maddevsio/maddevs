@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <Banner />
+    <BannerContainer />
     <RemoteTechStaff />
     <SoftwareDevelopment />
     <InfrastructureOptimisation />
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Banner from '@/components/Banner';
+import BannerContainer from '@/containers/BannerContainer';
 import RemoteTechStaff from '@/components/Services/RemoteTechStaff';
 import SoftwareDevelopment from '@/components/Services/SoftwareDevelopment';
 import InfrastructureOptimisation from '@/components/Services/InfrastructureOptimisation';
@@ -18,7 +18,7 @@ import ItConsulting from '@/components/Services/ItСonsulting';
 export default {
   name: 'main-services',
   components: {
-    Banner,
+    BannerContainer,
     RemoteTechStaff,
     SoftwareDevelopment,
     InfrastructureOptimisation,
@@ -27,8 +27,8 @@ export default {
   data() {
     return {
       title: 'Mad Devs Services',
-      description: 'Example',
-      ogUrl: 'https://maddevs.io/en/services'
+      description: '',
+      ogUrl: 'https://maddevs.io/services'
     };
   },
   head() {
@@ -40,7 +40,7 @@ export default {
         { property: 'og:type', content: 'website' },
         { property: 'og:title', content: this.title },
         { property: 'og:description', content: this.description },
-        { property: 'og:image', content: 'https://maddevs.io/static/Open-Graph.png' }
+        { property: 'og:image', content: 'https://maddevs.io/Open-Graph.png' }
       ]
     };
   }

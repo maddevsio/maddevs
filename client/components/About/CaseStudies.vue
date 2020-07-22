@@ -31,30 +31,12 @@
       </div>
     </div>
     <div class="projects-mobile-slider">
-      <swiper
-        class="swiper swiper-medium"
-        :options="swiperOption.sliderWidthMedium"
-      >
+      <swiper class="swiper" :options="swiperOption">
         <swiper-slide v-for="(project, i) in projects" :key="i">
           <SingleProject :project="project" />
         </swiper-slide>
       </swiper>
-      <swiper
-        class="swiper swiper-small"
-        :options="swiperOption.sliderWidthSmall"
-      >
-        <swiper-slide v-for="(project, i) in projects" :key="i">
-          <SingleProject :project="project" />
-        </swiper-slide>
-      </swiper>
-      <swiper
-        class="swiper swiper-extra-small"
-        :options="swiperOption.sliderWidthExtraSmall"
-      >
-        <swiper-slide v-for="(project, i) in projects" :key="i">
-          <SingleProject :project="project" />
-        </swiper-slide>
-      </swiper>
+      <div class="swiper-pagination swiper-pagination--white" slot="pagination"/>
     </div>
   </section>
 </template>
@@ -71,6 +53,12 @@ export default {
     SwiperSlide,
     SingleProject
   },
+  beforeMount() {
+    // Set new params for slider
+    if (window.screen.width <= 480) {
+      this.swiperOption.slidesPerView = 1.05;
+    }
+  },
   mounted() {
     if ($nuxt.$route.name) {
       this.currentPageName = $nuxt.$route.name;
@@ -79,25 +67,17 @@ export default {
   data() {
     return {
       swiperOption: {
-        sliderWidthMedium: {
-          slidesPerView: 1.6,
-          freeMode: true
+        pagination: {
+          el: '.swiper-pagination--white'
         },
-        sliderWidthSmall: {
-          slidesPerView: 1.17,
-          freeMode: true
-        },
-        sliderWidthExtraSmall: {
-          slidesPerView: 1.03,
-          freeMode: true
-        }
+        slidesPerView: 1.20
       },
       currentPageName: '',
       projects: [
         {
           projectName: 'nambafood',
           logoImg: 'nambafoodColored',
-          link: 'https://blog.maddevs.io/',
+          link: 'https://blog.maddevs.io/namba-food-top-1-delivery-service-in-central-asia-3df8ca4d436d?source=friends_link&sk=1dd67cc82dad8e4fae756b3a4d47f121',
           contributionWidgetColors: ['#ec1c24', '#96969c'],
           projectBackground: 'nambafoodBackground',
           projectColor: '#f8f7f6',
@@ -108,7 +88,7 @@ export default {
         {
           projectName: 'teacherly',
           logoImg: 'teacherlyColored',
-          link: 'https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f',
+          link: 'https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f?source=friends_link&sk=0f492513f43ce5b4330c3cfa484378c5',
           contributionWidgetColors: ['#ec1c24', '#fff'],
           projectBackground: 'teacherlyBackground',
           projectColor: '#56448e',
@@ -119,7 +99,7 @@ export default {
         {
           projectName: 'guardrails',
           logoImg: 'guardrailsColored',
-          link: 'https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b',
+          link: 'https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0',
           contributionWidgetColors: ['#96969c', '#96969c'],
           projectBackground: 'guardrailsBackground',
           projectColor: '#0e1b27',
@@ -130,13 +110,12 @@ export default {
         {
           projectName: 'godee',
           logoImg: 'godeeColored',
-          link: 'https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5',
+          link: 'https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5?source=friends_link&sk=3e3f75a7f35f0e4d9d447a19e015330a',
           contributionWidgetColors: ['#000', '#000'],
           projectBackground: 'godeeBackground',
           projectColor: '#ff6A01',
-          projectTitle: 'Mass transportation company',
-          projectDescription:
-            'Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.'
+          projectTitle: 'Convenient shuttle bus service',
+          projectDescription: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.'
         }
       ]
     };
@@ -194,8 +173,7 @@ export default {
         &::before {
           content: '';
           position: absolute;
-          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg')
-            no-repeat right 50%;
+          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg') no-repeat right 50%;
           width: 100%;
           height: 430px;
           background-size: contain;
@@ -215,7 +193,7 @@ export default {
         &::after {
           content: '';
           position: absolute;
-          background-image: url('../../assets/img/Studies/svg/godeeSecondaryBg.svg');
+          background-image: url('../../assets/img/Studies/jpg/godeeSecondaryBg.jpg');
           background-repeat: no-repeat;
           width: 100%;
           height: 100%;
@@ -422,6 +400,14 @@ export default {
           width: auto;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .projects {
+    &-flame-background {
+      top: -385px;
     }
   }
 }
@@ -640,13 +626,8 @@ export default {
     .projects-mobile-slider {
       display: block;
 
-      .swiper-medium {
+      .swiper {
         display: block;
-      }
-
-      .swiper-small,
-      .swiper-extra-small {
-        display: none;
       }
     }
 
@@ -677,12 +658,6 @@ export default {
 }
 
 @media only screen and (max-width: 576px) {
-  .projects {
-    &-flame-background {
-      right: 45px;
-    }
-  }
-
   .case-studies {
     /deep/ .single-project__background {
       &:nth-child(2) {
@@ -695,14 +670,17 @@ export default {
       font-size: 64px;
     }
 
-    .projects-mobile-slider {
-      .swiper-small {
-        display: block;
-      }
+    &-flame-background {
+      right: 45px;
+    }
+  }
+}
 
-      .swiper-medium,
-      .swiper-extra-small {
-        display: none;
+@media only screen and (max-width: 530px) {
+  .case-studies {
+    .projects {
+      &-flame-background {
+        right: 20px;
       }
     }
   }
@@ -718,10 +696,13 @@ export default {
   }
 }
 
-@media only screen and (max-width: 465px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      right: 15px;
+@media only screen and (max-width: 475px) {
+  .case-studies {
+    .projects { 
+      &-flame-background {
+        top: -95px;
+        width: 180px;
+      }
     }
   }
 
@@ -730,14 +711,18 @@ export default {
   }
 }
 
-@media only screen and (max-width: 427px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      right: 15px;
-      top: -145px;
+@media only screen and (max-width: 460px) {
+  .case-studies {
+    .projects { 
+      &-flame-background {
+        top: -70px;
+        width: 165px;
+      }
     }
   }
+}
 
+@media only screen and (max-width: 427px) {
   .case-studies {
     &__main-title {
       font-size: 56px;
@@ -747,17 +732,6 @@ export default {
 
 @media only screen and (max-width: 375px) {
   .case-studies {
-    .projects-mobile-slider {
-      .swiper-extra-small {
-        display: block;
-      }
-
-      .swiper-medium,
-      .swiper-small {
-        display: none;
-      }
-    }
-
     &__main-title {
       font-size: 53px;
     }
@@ -782,26 +756,16 @@ export default {
         }
       }
     }
-  }
-}
 
-@media only screen and (max-width: 370px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      top: -125px;
-      height: 300px;
-      right: 15px;
+    .projects {
+      &-flame-background {
+        width: 160px;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 366px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      right: 2px;
-    }
-  }
-
   .case-studies {
     &__main-title {
       font-size: 50px;
@@ -810,16 +774,16 @@ export default {
 }
 
 @media only screen and (max-width: 345px) {
-  .case-studies--projects {
-    .projects-flame-background {
-      right: 0;
-      top: -90px;
-    }
-  }
-
   .case-studies {
     &__main-title {
       font-size: 48px;
+    }
+
+    .projects {
+      &-flame-background {
+        top: -45px;
+        width: 130px;
+      }
     }
   }
 }

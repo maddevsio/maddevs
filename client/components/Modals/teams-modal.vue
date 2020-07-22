@@ -3,7 +3,7 @@
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
-          <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
+          <ValidationProvider class="modal-field-item field-item" rules="required|max:50" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Full Name</p>
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
@@ -63,9 +63,11 @@ export default {
     UIButton
   },
   data: () => ({
+    form: null,
     modalName: 'teams-modal',
     fullName: null,
     email: null,
+    emailTo: 'team@maddevs.io',
     phoneNumber: null,
     selectedTeamSize: null,
     projectDescription: null,
@@ -108,19 +110,20 @@ export default {
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
         this.onSubmit = true;
-        const form = {
+        this.form = {
           templateId: 304637, // Required
           variables: {
             fullName: this.fullName || '',
             selectedTeamSize: this.selectedTeamSize || '',
             projectDescription: this.projectDescription || '',
             email: this.email || '',
+            emailTo: this.emailTo || '',
             phoneNumber: this.phoneNumber || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
           }
         };
-        this.$store.dispatch('sendEmail', form).then(res => {
+        this.$store.dispatch('sendEmail', this.form).then(res => {
           this.onSubmit = false;
           this.resetForm();
           if (res.status === 200) {
@@ -138,6 +141,7 @@ export default {
       this.phoneNumber = null;
       this.selectedTeamSize = null;
       this.projectDescription = null;
+      this.form = null;
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
     }

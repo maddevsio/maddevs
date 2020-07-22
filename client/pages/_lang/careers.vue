@@ -1,25 +1,25 @@
 <template>
   <main class="main">
-    <Banner />
+    <BannerContainer />
     <Careers />
   </main>
 </template>
 
 <script>
-import Banner from '@/components/Banner';
+import BannerContainer from '@/containers/BannerContainer';
 import Careers from '@/components/Careers/CareersForm';
 
 export default {
   name: 'main-careers',
   components: {
-    Banner,
+    BannerContainer,
     Careers
   },
   data() {
     return {
       title: 'Mad Devs Careers',
-      description: 'Example',
-      ogUrl: 'https://maddevs.io/en/projects'
+      description: '',
+      ogUrl: 'https://maddevs.io/careers'
     };
   },
   head() {
@@ -33,7 +33,7 @@ export default {
         { property: 'og:description', content: this.description },
         {
           property: 'og:image',
-          content: 'https://maddevs.io/static/Open-Graph.png'
+          content: 'https://maddevs.io/Open-Graph.png'
         }
       ]
     };

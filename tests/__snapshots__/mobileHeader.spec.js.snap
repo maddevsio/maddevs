@@ -43,6 +43,7 @@ exports[`Mobile Header renders correctly 1`] = `
         class="mobile-header__header-routes_links"
       >
         <router-link-stub
+          exact=""
           to="/"
         >
           About

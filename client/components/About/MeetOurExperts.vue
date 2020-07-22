@@ -6,7 +6,7 @@
       </div>
       <div class="meet-our_experts__experts-list">
         <div class="meet-our_experts__expert-item" v-for="(expert, i) in experts" :key="i">
-          <img :src="require(`@/assets/img/Home/png/experts/${expert.image}.png`)" class="meet-our_experts__expert-img" :alt="expert.name">
+          <image-component :fileName="expert.image" :fileNameRetina="`${expert.image}@2x`"/>
           <div class="meet-our_experts__expert-bottom_content">
             <div class="meet-our_experts__expert-info">
               <div class="meet-our_experts__expert-name">{{ expert.name }}</div>
@@ -25,11 +25,13 @@
 
 <script>
 import MeetOurExpertsMobile from '@/components/About/MeetOurExpertsMobile';
+import ImageComponent from '@/components/ui/image-component';
 
 export default {
   name: 'MeetOurExperts',
   components: {
-    MeetOurExpertsMobile
+    MeetOurExpertsMobile,
+    ImageComponent
   },
   data() {
     return {
@@ -62,7 +64,7 @@ export default {
           name: 'Daria Utesheva',
           position: 'Head of HR Department',
           image: 'Daria',
-          linkedin: 'https://www.linkedin.com/in/%D0%B4%D0%B0%D1%80%D1%8C%D1%8F-%D1%83%D1%82%D0%B5%D1%88%D0%B5%D0%B2%D0%B0-47804198/'
+          linkedin: 'https://www.linkedin.com/in/daria-utesheva-47804198/'
         },
         {
           name: 'Nuradil Alymkulov',
@@ -174,11 +176,6 @@ export default {
       font-family: 'Hoves-Regular';
       letter-spacing: -0.3px;
     }
-
-    &__expert-img {
-      width: 100%;
-      height: 100%;
-    }
   }
 
   @media only screen and (max-width: 1340px) {
@@ -235,6 +232,18 @@ export default {
       &__experts-list {
         display: none;
       }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .meet-our_experts {
+      padding-bottom: 120px;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .meet-our_experts {
+      padding-bottom: 90px;
     }
   }
 </style>

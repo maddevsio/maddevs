@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <Banner />
+    <BannerContainer />
     <WeCreateItProjectFor />
     <TechnologiesAndTools />
     <CaseStudies />
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Banner from '@/components/Banner';
+import BannerContainer from '@/containers/BannerContainer';
 import WeCreateItProjectFor from '@/components/About/WeCreateItProjectFor';
 import TechnologiesAndTools from '@/components/About/TechnologiesAndTools';
 import CaseStudies from '@/components/About/CaseStudies';
@@ -24,7 +24,7 @@ import MeetOurExperts from '@/components/About/MeetOurExperts';
 export default {
   name: 'About',
   components: {
-    Banner,
+    BannerContainer,
     WeCreateItProjectFor,
     TechnologiesAndTools,
     CustomerTestimonials,
@@ -35,9 +35,9 @@ export default {
   },
   data() {
     return {
-      title: this.$t('title-home'),
-      description: this.$t('meta-desc_home'),
-      ogUrl: this.$t('og_meta-url_home')
+      title: 'Mad Devs: Software & Mobile App Development Company',
+      description: 'We develop tailored software solutions for corporations using the present-day developer tools and technology stack. Mad Devs acts as a part of your extended team, and you get your systems properly administered and monitored',
+      ogUrl: 'https://maddevs.io'
     };
   },
   head () {
@@ -45,13 +45,12 @@ export default {
       title: this.title,
       meta: [
         { name: 'description', content: this.description },
-        { name: 'description', content: this.description },
         // Facebook / Open Graph
         { property: 'og:url', content: this.ogUrl },
         { property: 'og:type', content: 'website' },
         { property: 'og:title', content: this.title },
         { property: 'og:description', content: this.description },
-        { property: 'og:image', content: 'https://maddevs.io/static/Open-Graph.png' }
+        { property: 'og:image', content: 'https://maddevs.io/Open-Graph.png' }
       ]
     };
   }

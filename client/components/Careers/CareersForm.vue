@@ -11,7 +11,7 @@
           <form @submit.prevent="handleSubmit(sendData)" class="careers__form">
             <label class="careers__form-name-label form-text"
               >Hello, my name is
-              <ValidationProvider rules="required" v-slot="{ classes, errors }">
+              <ValidationProvider rules="required|max:50" v-slot="{ classes, errors }">
                 <input
                   class="careers__form-name-input form-text"
                   type="text"
@@ -106,6 +106,7 @@ export default {
       positionValue: null,
       positionTitle: null,
       email: null,
+      emailTo: 'hr@maddevs.io',
       selectedFile: null,
       linkedinProfile: null,
       radioData: [
@@ -141,6 +142,7 @@ export default {
             variables: {
               fullName: this.fullName,
               email: this.email,
+              emailTo: this.emailTo,
               linkedinProfile: this.linkedinProfile,
               positionValue: this.positionValue.type,
               positionTitle: this.positionTitle
@@ -401,6 +403,7 @@ export default {
 @media only screen and (max-width: 768px) {
   .careers {
     &__background-logo {
+      top: -85px;
       right: 54px;
     }
   }

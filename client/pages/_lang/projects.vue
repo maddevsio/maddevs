@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <Banner />
+    <BannerContainer />
     <CaseStudies />
     <Customers />
     <OpenSource />
@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Banner from '@/components/Banner';
+import BannerContainer from '@/containers/BannerContainer';
 import CaseStudies from '@/components/About/CaseStudies';
 import Customers from '@/components/Projects/Customers';
 import OpenSource from '@/components/Projects/OpenSource';
@@ -16,7 +16,7 @@ import OpenSource from '@/components/Projects/OpenSource';
 export default {
   name: 'main-projects',
   components: {
-    Banner,
+    BannerContainer,
     CaseStudies,
     Customers,
     OpenSource
@@ -24,8 +24,8 @@ export default {
   data() {
     return {
       title: 'Mad Devs Projects',
-      description: 'Example',
-      ogUrl: 'https://maddevs.io/en/projects'
+      description: '',
+      ogUrl: 'https://maddevs.io/projects'
     };
   },
   head() {
@@ -37,7 +37,7 @@ export default {
         { property: 'og:type', content: 'website' },
         { property: 'og:title', content: this.title },
         { property: 'og:description', content: this.description },
-        { property: 'og:image', content: 'https://maddevs.io/static/Open-Graph.png' }
+        { property: 'og:image', content: 'https://maddevs.io/Open-Graph.png' }
       ]
     };
   }

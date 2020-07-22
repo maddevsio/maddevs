@@ -3,7 +3,7 @@
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
-          <ValidationProvider class="modal-field-item field-item" rules="required" v-slot="{ classes, errors }">
+          <ValidationProvider class="modal-field-item field-item" rules="required|max:50" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Full Name</p>
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
@@ -56,6 +56,7 @@ export default {
     modalName: 'get-your-trusted-it-partner',
     fullName: null,
     email: null,
+    emailTo: 'team@maddevs.io',
     phoneNumber: null,
     needAssistanceWith: null,
     agreeWithPrivacyPolicy: false,
@@ -82,6 +83,7 @@ export default {
           variables: {
             fullName: this.fullName || '',
             email: this.email || '',
+            emailTo: this.emailTo || '',
             phoneNumber: this.phoneNumber || '',
             needAssistanceWith: this.needAssistanceWith || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
