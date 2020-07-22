@@ -134,16 +134,13 @@ export default {
     .single-project {
       &__sub-title {
         font-size: 3vw;
+        letter-spacing: -1px;
       }
     }
   }
 
   @media only screen and (max-width: 1600px) {
     .single-project {
-
-      &__sub-title {
-        font-size: 50px;
-      }
     }
   }
 
@@ -238,7 +235,7 @@ export default {
     position: relative;
     z-index: 1;
     color: $text-color--grey;
-    margin-top: 36px;
+    margin-top: 2vw;
 
     &__img {
       &_black {
@@ -255,7 +252,7 @@ export default {
     }
 
     &__content {
-      margin-left: 6px;
+      margin-left: 0.5vw;
 
       &-mobile {
         display: none;
@@ -298,7 +295,7 @@ export default {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
-    height: 21.5vw;
+    height: 22vw;
     width: 100%;
 
     &_guardrails {
@@ -407,10 +404,6 @@ export default {
       &__content-wrap {
         height: 100px;
         word-wrap: break-word;
-
-        .contribution-widget {
-          margin-top: 26px;
-        }
       }
 
       &__paragraph {

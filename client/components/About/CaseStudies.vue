@@ -280,7 +280,6 @@ export default {
 
       &:nth-child(3) {
         /deep/ .single-project__background {
-          margin: 0 21px;
           width: auto;
         }
 
@@ -337,7 +336,6 @@ export default {
 
       &:nth-child(3) {
         /deep/ .single-project__background {
-          margin: 0 21px;
           width: auto;
         }
 
