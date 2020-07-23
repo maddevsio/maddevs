@@ -135,28 +135,9 @@
   }
 }
 
-// Media
-@media only screen and (max-width: 1590px) {
-  .container {
-    padding: 0 107px;
-  }
-}
-
-@media only screen and (max-width: 1380px) {
-  .container {
-    padding: 0 100px;
-  }
-}
-
-@media only screen and (max-width: 970px) {
-  .container {
-    padding: 0 80px;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .container {
-    padding: 0 70px;
+    padding: 0 2vh;
   }
 
   .sec-title {
@@ -256,7 +237,7 @@
 
 .main-title {
   font-family: 'Hoves-Bold';
-  font-size: 128px;
+  font-size: 8vw;
   letter-spacing: -5px;
   line-height: 100%;
 }
@@ -294,7 +275,7 @@
 }
 
 .sub-title {
-  font-size: 50px;
+  font-size: 3vw;
   letter-spacing: -2px;
 }
 
@@ -303,7 +284,7 @@
 }
 
 .paragraph {
-  font-size: 21px;
+  font-size: 1.2vw;
   font-family: 'Hoves-Regular';
   line-height: 129%;
   letter-spacing: -0.02em;
@@ -504,9 +485,6 @@
 }
 
 @media only screen and (max-width: 1280px) {
-  .main-title {
-    font-size: 100px;
-  }
 
   .title {
     font-size: 70px;
@@ -526,10 +504,6 @@
 }
 
 @media only screen and (max-width: 1180px) {
-  .title {
-    font-size: 65px;
-  }
-
   .section-title {
     font-size: 62px;
   }
@@ -540,52 +514,23 @@
     height: 44px;
   }
 
-  .title {
-    font-size: 80px;
-  }
-
-  .sub-title  {
-    font-size: 47px;
-    letter-spacing: -2px;
-  }
-
   .section-title {
     font-size: 77px;
-  }
-
-  .main-title {
-    font-size: 90px;
   }
 
   .button-default {
     height: 54px;
     font-size: 17px;
   }
-
-  .paragraph,
-  .icon-item {
-    font-size: 19px;
-  }
 }
 
 @media only screen and (max-width: 870px) {
-  .main-title {
-    font-size: 95px;
-  }
-
   .form-text {
     font-size: 28px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .title {
-    font-size: 65px;
-  }
-
-  .sub-title  {
-    font-size: 47px;
-  }
 
   .section-title {
     font-size: 62px;
@@ -597,42 +542,36 @@
   }
 
   .main-title {
-    font-size: 64px;
+    font-size: 12.9vw;
     letter-spacing: -0.03em;
   }
 }
 
+@media only screen and (max-width: 745px) {
+  .paragraph,
+  .icon-item {
+    font-size: 2.5vw;
+  }
+}
+
 @media only screen and (max-width: 640px) {
-  .title {
-    font-size: 60px;
+  .sub-title {
+    letter-spacing: -1px;
+    font-size: 11vw;
   }
 
   .section-title {
     font-size: 57px;
   }
-}
 
-@media only screen and (max-width: 640px) {
-  .sub-title,
   .paragraph,
   .icon-item {
     letter-spacing: -1px;
-  }
-
-  .sub-title  {
-    font-size: 41px;
-  }
-
-  .paragraph,
-  .icon-item {
-    font-size: 18px;
+    font-size: 4vw;
   }
 }
 
 @media only screen and (max-width: 520px) {
-  .title {
-    font-size: 41px;
-  }
 
   .doc-text {
     font-size: 23px;
@@ -663,13 +602,12 @@
   }
 
   .main-title {
-    font-size: 57px;
+    font-size: 12.9vw;
   }
 }
 
 @media only screen and (max-width: 430px) {
   .main-title {
-    font-size: 50px;
     letter-spacing: -2px;
     line-height: 99%;
   }
@@ -685,12 +623,6 @@
     &::after {
       padding-left: 0;
     }
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .main-title {
-    font-size: 45px;
   }
 }
 

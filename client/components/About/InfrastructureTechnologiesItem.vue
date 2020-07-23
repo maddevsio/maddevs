@@ -1,27 +1,108 @@
 <template>
-  <div class="infrastructure-content">
+  <div class="infrastructure-content technologies-item">
     <h4 class="infrastructure-content__title sub-title">Infrastructure</h4>
     <p class="infrastructure-content__paragraph paragraph">
       We have helped our customers save up to 50% on infrastructure by optimising their cloud-resource consumption. We know how to get the best value for money, whichever cloud service provider you choose:
     </p>
-    <InfrastructureFirstIconsGroup />
+    <div class="icons-list">
+      <div class="icon-flex_group">
+        <TechIcon v-for="(icon, i) in firstGroup" :key="i" :class-prefix="icon.prefix" :title="icon.title"/>
+      </div>
+    </div>
     <p class="infrastructure-content__paragraph paragraph">
       Mad Devs infrastructure leads also have expertise with a wide range of tools for tools сonfiguration, СI/CD and monitoring:
     </p>
-    <InfrastructureSecondIconsGroup />
+    <div class="icons-list">
+      <div class="icon-flex_group">
+        <TechIcon v-for="(icon, i) in secondGroup" :key="i" :class-prefix="icon.prefix" :title="icon.title"/>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import InfrastructureFirstIconsGroup from '@/components/IconsGroup/InfrastructureFirstIconsGroup';
-import InfrastructureSecondIconsGroup from '@/components/IconsGroup/InfrastructureSecondIconsGroup';
 
+import TechIcon from '@/components/IconsGroup/tech-icon';
 export default {
   name: 'InfrastructureTechnologiesItem',
   components: {
-    InfrastructureFirstIconsGroup,
-    InfrastructureSecondIconsGroup
-  }
+    TechIcon
+  },
+  data() {
+    return {
+      firstGroup: [
+        {
+          title: 'ASW',
+          prefix: 'asw'
+        },
+        {
+          title: 'Digital Ocean',
+          prefix: 'digital-ocean'
+        },
+        {
+          title: 'Heroku',
+          prefix: 'heroku'
+        },
+        {
+          title: 'Azure',
+          prefix: 'azure'
+        }
+      ],
+      secondGroup: [
+        {
+          title: 'Ansible',
+          prefix: 'ansible'
+        },
+        {
+          title: 'Terraform',
+          prefix: 'terraform'
+        },
+        {
+          title: 'CloudFormation',
+          prefix: 'cloudformation'
+        },
+        {
+          title: 'Jenkins',
+          prefix: 'jenkins'
+        },
+        {
+          title: 'Bamboo',
+          prefix: 'bamboo'
+        },
+        {
+          title: 'TeamCity',
+          prefix: 'team-city'
+        },
+        {
+          title: 'Travis CI',
+          prefix: 'travis'
+        },
+        {
+          title: 'AWS CodePipeline',
+          prefix: 'aswcp'
+        },
+        {
+          title: 'Circle CI',
+          prefix: 'circle'
+        },
+        {
+          title: 'ELK',
+          prefix: 'elk'
+        },
+        {
+          title: 'Sentry',
+          prefix: 'senrty'
+        },
+        {
+          title: 'Prometheus',
+          prefix: 'prometheus'
+        },
+        {
+          title: 'Amazon CloudWatch',
+          prefix: 'amazon-cloudwatch'
+        }
+      ]
+    };}
 };
 </script>
 
