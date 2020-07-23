@@ -6,7 +6,6 @@
       <ProjectsBanner v-if="currentPage === 'projects'"/>
       <CareersBanner v-if="currentPage === 'careers'"/>
     </div>
-    <Cookie :className="currentPage"/>
   </section>
 </template>
 
@@ -15,7 +14,6 @@ import AboutBanner from '@/components/Banner/AboutBanner';
 import ServicesBanner from '@/components/Banner/ServicesBanner';
 import ProjectsBanner from '@/components/Banner/ProjectsBanner';
 import CareersBanner from '@/components/Banner/CareersBanner';
-import Cookie from '@/components/ui/cookie';
 
 export default {
   name: 'BannerContainer',
@@ -23,8 +21,7 @@ export default {
     AboutBanner,
     ServicesBanner,
     ProjectsBanner,
-    CareersBanner,
-    Cookie
+    CareersBanner
   },
   mounted() {
     if ($nuxt.$route.name) {
@@ -47,7 +44,6 @@ export default {
     height: 100%;
     position: relative;
     background-color: $bgcolor--black;
-    position: relative;
 
     .banner-content {
       width: 100%;

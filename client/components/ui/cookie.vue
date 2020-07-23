@@ -1,6 +1,6 @@
 <template>
-  <div v-if="cookieActive" ref="Cookie" class="cookie-notif" :class="className">
-    <img src="@/assets/img/common/cookie.svg" alt="Cookie">
+  <div v-if="cookieActive" ref="Cookie" class="cookie-notif">
+    <img src="@/assets/img/common/cookie.svg" alt="Cookie" class="cookie-icon">
     <p>This website uses cookies to improve your experience. By continuing browsing our <br> website, you agree with cookie usage. Read our <a href="/privacy" target="blank">Privacy Policy</a> for more information.</p>
     <button @click="hideCookieNotif" class="cookie-notif_button">Accept cookies</button>
   </div>
@@ -9,12 +9,6 @@
 <script>
 export default {
   name: 'cookie',
-  props: {
-    className: {
-      type: String,
-      default: 'className'
-    }
-  },
   data() {
     return {
       cookieActive: false
@@ -38,23 +32,25 @@ export default {
   @import '../../assets/styles/vars';
   .cookie-notif {
     width: 100%;
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 33px;
+    padding: 1.1vw 2.5vw;
     box-sizing: border-box;
     background-color: $cookie-bg-color;
     transition: all .2s ease;
     z-index: 999;
     .cookie-notif_button {
-      width: 130px;
-      height: 38px;
-      border: 1px solid $border-color--red;
+      width: 10vw;
+      height: 2.8vw;
+      padding: 0;
+      border: 0.07vw solid $border-color--red;
       background-color: transparent;
-      border-radius: 2px;
+      border-radius: 0.1vw;
       color: $text-color--red;
-      font-size: 14px;
+      font-size: 1vw;
       font-family: 'Hoves-Regular';
       letter-spacing: -0.03em;
       box-shadow: none;
@@ -71,11 +67,17 @@ export default {
         border-color: $button-active-border--red;
       }
     }
+
+    .cookie-icon {
+      width: 2.6vw;
+      height: 2.6vw;
+    }
+
     p {
-      margin: 0 20px;
+      margin: 0 1.5vw;
       color: $text-color--white;
       font-family: 'Hoves-Regular';
-      font-size: 14px;
+      font-size: 1vw;
       line-height: 1.4;
       letter-spacing: 0.02em;
     }
@@ -83,56 +85,5 @@ export default {
     a {
       color: $text-color--white;
     }
-  }
-
-  .index {
-    bottom: -190px;
-  }
-
-  @media only screen and (max-width: 1440px) {
-    .index {
-      bottom: -130px;
-    }
-  }
-
-  @media only screen and (max-width: 1300px) {
-    .index {
-      bottom: -195px;
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .index {
-      bottom: -105px;
-    }
-  }
-
-  @media only screen and (max-width: 890px) {
-    .index {
-      bottom: -66px;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .cookie-notif {
-      flex-direction: column;
-      
-      .cookie-notif_button {
-        width: 100%;
-      }
-
-      img {
-        display: none;
-      }
-
-      p {
-        margin: 0 0 15px;
-        text-align: center;
-
-        br {
-          display: none;
-        }
-      }
-    } 
   }
 </style>

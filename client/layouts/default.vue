@@ -3,6 +3,7 @@
     <Header/>
       <nuxt/>
     <Footer />
+    <Cookie />
     <client-only>
       <ContactMeModal />
       <TeamsModal />
@@ -27,6 +28,7 @@ import GetCaseStudiesModal from '@/components/Modals/get-case-studies-modal';
 import OrderProjectFromUsModal from '@/components/Modals/order-project-from-us-modal';
 import GetYourTrustedItPartnerModal from '@/components/Modals/get-your-trusted-it-partner-modal';
 import GetExpertAdvice from '@/components/Modals/get-expert-advice-modal';
+import Cookie from '@/components/ui/cookie';
 
 export default {
   name: 'Default',
@@ -40,7 +42,8 @@ export default {
     GetCaseStudiesModal,
     OrderProjectFromUsModal,
     GetYourTrustedItPartnerModal,
-    GetExpertAdvice  
+    GetExpertAdvice,
+    Cookie
   }
 };
 </script>
