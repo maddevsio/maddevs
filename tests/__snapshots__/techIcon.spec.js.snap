@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TechIcon component renders correctly 1`] = `
+<div
+  class="tech-icon"
+>
+  <span
+    class="tech-icon__logo tech-icon__logo--vue"
+  />
+   
+  <p
+    class="tech-icon__name"
+  >
+    Vue tech
+  </p>
+</div>
+`;

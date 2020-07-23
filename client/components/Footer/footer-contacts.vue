@@ -22,25 +22,25 @@
 			<ul class="footer-contacts__messengers-list">
 				<li>
 					<a href="https://facebook.com/maddevsllc" class="footer-contacts__messenger-item" target="_blank">
-						<i class="footer-contacts__message footer-contacts__message--messenger"/>
+						<span class="footer-contacts__message footer-contacts__message--messenger"/>
 						Messenger
 					</a>
 				</li>
 				<li>
 					<a href="http://wa.me/996555771481" class="footer-contacts__messenger-item" target="_blank">
-						<i class="footer-contacts__message footer-contacts__message--whatsapp"/>
+						<span class="footer-contacts__message footer-contacts__message--whatsapp"/>
 						Whatsapp
 					</a>
 				</li>
 				<li>
 					<a href="https://t.me/mun_tamara/" class="footer-contacts__messenger-item" target="_blank">
-						<i class="footer-contacts__message footer-contacts__message--telegram" />
+						<span class="footer-contacts__message footer-contacts__message--telegram" />
 						Telegram
 					</a>
 				</li>
 				<li>
 					<a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc" class="footer-contacts__messenger-item" target="_blank">
-						<i class="footer-contacts__message footer-contacts__message--wechat" />
+						<span class="footer-contacts__message footer-contacts__message--wechat" />
 						WeChat
 					</a>
 				</li>

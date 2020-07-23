@@ -22,7 +22,7 @@
 
 <script>
 
-import TechIcon from '../IconsGroup/tech-icon';
+import TechIcon from '@/components/IconsGroup/tech-icon';
 export default {
   name: 'InfrastructureTechnologiesItem',
   components: {

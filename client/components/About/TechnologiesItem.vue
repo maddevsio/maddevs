@@ -13,10 +13,12 @@
 <script>
 
 
-import TechIcon from '../IconsGroup/tech-icon';
+import TechIcon from '@/components/IconsGroup/tech-icon';
 export default {
   name: 'TechnologiesItem',
-  components: {TechIcon},
+  components: {
+    TechIcon
+  },
   props: {
     title: {
       type: String,
@@ -93,10 +95,6 @@ export default {
         flex-direction: row;
       }
     }
-  }
-
-  @media only screen and (max-width: 745px) {
-
   }
 
   @media only screen and (max-width: 640px) {
