@@ -16,12 +16,12 @@ exports[`TechnologiesItem component renders correctly 1`] = `
     Paragraph
   </p>
    
-  <!---->
-   
-  <!---->
-   
-  <!---->
-   
-  <!---->
+  <div
+    class="icons-list"
+  >
+    <div
+      class="icon-flex_group"
+    />
+  </div>
 </div>
 `;

@@ -4,14 +4,14 @@
 			<h4 class="footer-contacts__title">Call us:</h4>
 			<ul class="footer-contacts__phones-list">
 				<li>
-					<a href="tel:+1 833-MADDEVS" class="footer-contacts__phone-item">
-						<img src="@/assets/img/Flags/united-states.svg" alt="United States">
+					<a href="tel:+1 833-MADDEVS" class="footer-contacts__phone-item footer-contacts__phone-item--flag">
+						<span class="footer-contacts__icon footer-contacts__icon--usa"/>
 						+1 833-MADDEVS
 					</a>
 				</li>
 				<li>
-					<a href="tel:+44 20 3984 8555" class="footer-contacts__phone-item">
-						<img src="@/assets/img/Flags/united-kingdom.svg" alt="United Kingdom">
+					<a href="tel:+44 20 3984 8555" class="footer-contacts__phone-item footer-contacts__phone-item--flag">
+						<span class="footer-contacts__icon footer-contacts__icon--uk"/>
 						+44 20 3984 8555
 					</a>
 				</li>
@@ -22,25 +22,25 @@
 			<ul class="footer-contacts__messengers-list">
 				<li>
 					<a href="https://facebook.com/maddevsllc" class="footer-contacts__messenger-item" target="_blank">
-						<img src="@/assets/img/Footer/messenger.svg" alt="Messenger">
+						<span class="footer-contacts__message footer-contacts__message--messenger"/>
 						Messenger
 					</a>
 				</li>
 				<li>
 					<a href="http://wa.me/996555771481" class="footer-contacts__messenger-item" target="_blank">
-						<img src="@/assets/img/Footer/whatsapp.svg" alt="Whatsapp">
+						<span class="footer-contacts__message footer-contacts__message--whatsapp"/>
 						Whatsapp
 					</a>
 				</li>
 				<li>
 					<a href="https://t.me/mun_tamara/" class="footer-contacts__messenger-item" target="_blank">
-						<img src="@/assets/img/Footer/telegram.svg" alt="Telegram">
+						<span class="footer-contacts__message footer-contacts__message--telegram" />
 						Telegram
 					</a>
 				</li>
 				<li>
 					<a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc" class="footer-contacts__messenger-item" target="_blank">
-						<img src="@/assets/img/Footer/wechat.svg" alt="WeChat">
+						<span class="footer-contacts__message footer-contacts__message--wechat" />
 						WeChat
 					</a>
 				</li>
@@ -61,6 +61,43 @@ export default {
 	.footer-contacts {
 		display: flex;
 		margin-top: 123px;
+
+    &__message {
+      display: inline-block;
+      height: 3vw;
+      width: 5vw;
+      background-repeat: no-repeat;
+      margin: 0;
+      background-size: contain;
+      &--whatsapp {
+        background-image: url(../../assets/img/Footer/whatsapp.svg);
+      }
+      &--messenger {
+        background-image: url(../../assets/img/Footer/messenger.svg);
+      }
+      &--telegram {
+        background-image: url(../../assets/img/Footer/telegram.svg);
+      }
+      &--wechat {
+        background-image: url(../../assets/img/Footer/wechat.svg);
+      }
+    }
+
+    &__icon {
+      display: inline-block;
+      height: 4vw;
+      width: 6vw;
+      background-repeat: no-repeat;
+      margin: 0;
+      background-size: contain;
+      &--uk {
+        background-image: url(../../assets/img/Flags/united-kingdom.svg);
+      }
+
+      &--usa {
+        background-image: url(../../assets/img/Flags/united-states.svg);
+      }
+    }
 
 		&__title {
 			padding-bottom: 19px;
@@ -89,12 +126,13 @@ export default {
 		&__phone-item,
 		&__messenger-item {
 			position: relative;
-			padding-left: 26px;
 			color: $text-color--grey;
 			font-family: 'Hoves-Bold';
 			font-size: 22px;
 			text-decoration: none;
 			letter-spacing: -1px;
+      display: flex;
+      align-items: center;
 
 			img {
 				position: absolute;
@@ -139,8 +177,8 @@ export default {
 		.footer-contacts {
 			&__title {
 				padding-bottom: 7px;
-				font-size: 24px;
-			}
+        font-size: 4vw;
+      }
 		}
 	}
 
@@ -184,7 +222,7 @@ export default {
 
 			&__messenger-item,
 			&__phone-item {
-				font-size: 20px;
+				font-size: 4vw;
 			}
 		}
 	}
