@@ -75,10 +75,6 @@ export default {
         type: String,
         required: true
       },
-      projectColor: {
-        type: String,
-        required: true
-      },
       projectTitle: {
         type: String,
         required: true
