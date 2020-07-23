@@ -86,4 +86,32 @@ export default {
       color: $text-color--white;
     }
   }
+
+  @media only screen and (max-width: 720px) {
+    .cookie-notif {
+      flex-direction: column;
+      padding: 15px 17px;
+
+      .cookie-notif_button {
+        width: 100%;
+        height: 38px;
+        font-size: 14px;
+        font-family: 'Hoves-Bold';
+      }
+
+      img {
+        display: none;
+      }
+
+      p {
+        font-size: 14px;
+        margin: 0 0 15px;
+        text-align: center;
+
+        br {
+          display: none;
+        }
+      }
+    } 
+  }
 </style>
