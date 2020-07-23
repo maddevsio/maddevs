@@ -27,17 +27,17 @@
           :projectName="project.projectName"
         />
       </div>
-      <div
-        class="single-project__background"
-        :style="{
+    </div>
+    <div
+      class="single-project__background"
+      :style="{
           'background-image':
             'url(' +
             require(`@/assets/img/Studies/png/${project.projectBackground}.png`) +
             ')'
         }"
-        :class="backgroundModifierClasses"
-      />
-    </div>
+      :class="backgroundModifierClasses"
+    />
   </a>
 </template>
 
@@ -107,7 +107,9 @@ export default {
   z-index: 99;
   text-decoration: none;
   color: initial;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @media only screen and (min-width: 1600px) {
     .single-project {
@@ -214,7 +216,8 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 745px) {
+
       &__content-wrap {
         margin: 10vw 9vw 0;
         z-index: 1;

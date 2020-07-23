@@ -89,8 +89,6 @@ export default {
   z-index: 1;
   color: $text-color--grey;
   font-family: 'Hoves-Regular';
-  margin-top: 36px;
-  font-size: 20px;
   letter-spacing: -1px;
   line-height: 95%;
 
