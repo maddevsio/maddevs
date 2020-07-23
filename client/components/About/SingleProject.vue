@@ -140,27 +140,6 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1440px) {
-    .single-project {
-      &__content-wrap {
-        margin: 60px 46px 0;
-        height: 230px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1287px) {
-    .single-project {
-      &__sub-title {
-        padding-right: 7px;
-      }
-
-      &__content-wrap {
-        height: 290px;
-      }
-    }
-  }
-
   @media only screen and (max-width: 1280px) {
     .single-project {
       &__background {
@@ -169,11 +148,6 @@ export default {
           background-size: contain;
         }
       }
-
-      &__content-wrap {
-        height: 225px;
-        margin: 50px 34px 0;
-      }
     }
   }
 
@@ -181,24 +155,6 @@ export default {
     .single-project {
       &__sub-title {
         padding-right: 9px;
-      }
-
-      &__content-wrap {
-        height: 280px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .single-project {
-      &__content-wrap {
-        margin: 68px 34px 0;
-        height: 125px;
-      }
-
-      &__sub-title {
-        line-height: 40px;
-        letter-spacing: -1px;
       }
     }
   }
@@ -337,15 +293,6 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 810px) and (min-width: 769px) {
-    .single-project {
-      &__content-wrap {
-        margin: 68px 23px 0;
-        height: 145px;
-      }
-    }
-  }
-
   @media screen and (max-width: 1030px) and (min-width: 798px) {
     .single-project {
       &__background {
@@ -356,9 +303,6 @@ export default {
 
   @media only screen and (max-width: 768px) {
     .single-project {
-      &__content-wrap {
-        height: 230px;
-      }
 
       &__sub-title {
         font-size: 47px;
@@ -397,11 +341,6 @@ export default {
         height: 40px;
       }
 
-      &__content-wrap {
-        height: 100px;
-        word-wrap: break-word;
-      }
-
       &__paragraph {
         margin-top: 15px;
       }
@@ -410,10 +349,6 @@ export default {
 
   @media only screen and (max-width: 445px) {
     .single-project {
-      &__content-wrap {
-        margin: 50px 21px 0;
-      }
-
       &__sub-title {
         font-size: 41px;
       }
@@ -431,14 +366,6 @@ export default {
         &_guardrails {
           width: calc(100% - 47px);
         }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 340px) {
-    .single-project {
-      &__content-wrap {
-        margin: 50px 17px 0;
       }
     }
   }
