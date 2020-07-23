@@ -156,16 +156,7 @@ export default {
         background-size: cover;
       }
 
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          width: auto;
-        }
-      }
-
       &:nth-child(3) {
-        /deep/ .single-project__background {
-          width: auto;
-        }
 
         &::before {
           content: '';
@@ -183,9 +174,6 @@ export default {
       }
 
       &:last-child {
-        /deep/ .single-project__background {
-          width: auto;
-        }
 
         &::after {
           content: '';
@@ -212,48 +200,6 @@ export default {
   display: none;
 }
 
-@media only screen and (min-width: 1600px) {
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-
-    &-flame-background {
-      top: -448px;
-      width: 448px;
-      right: 142px;
-    }
-
-    .single-project {
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          margin: 0 19px 0 33px;
-          width: auto;
-        }
-      }
-
-      &:nth-child(3) {
-        /deep/ .single-project__background {
-          width: auto;
-        }
-
-        &::before {
-          content: '';
-          position: absolute;
-          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg')
-            no-repeat right 50%;
-          width: 100%;
-          background-size: contain;
-          z-index: -44;
-          top: 0;
-          right: 0;
-          mix-blend-mode: overlay;
-          opacity: 0.68;
-        }
-      }
-    }
-  }
-}
-
 @media only screen and (max-width: 1600px) {
   .case-studies {
     &__main-title {
@@ -271,6 +217,43 @@ export default {
     .projects-mobile-slider {
       display: block;
 
+      .swiper-slide {
+        &:nth-child(3) {
+          .single-project {
+            &::before {
+              content: '';
+              position: absolute;
+              background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg') no-repeat right 50%;
+              width: 100%;
+              height: 35vw;
+              background-size: contain;
+              z-index: -44;
+              top: 0;
+              right: 0;
+              mix-blend-mode: overlay;
+              opacity: 0.68;
+            }
+          }
+        }
+
+        &:last-child {
+          .single-project {
+            &::after {
+              content: '';
+              position: absolute;
+              background-image: url('../../assets/img/Studies/jpg/godeeSecondaryBg.jpg');
+              background-repeat: no-repeat;
+              width: 100%;
+              height: 100%;
+              background-size: contain;
+              z-index: -44;
+              top: 0;
+              right: 0;
+            }
+          }
+        }
+      }
+
       .swiper {
         display: block;
       }
@@ -287,21 +270,12 @@ export default {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 640px) {
   .case-studies {
     &__main-title {
-      font-size: 12.9vw;
+      font-size: 11vw;
+      padding-bottom: 8vw;
     }
-
-      &:nth-child(3) {
-        /deep/ .single-project__background {
-          width: auto;
-        }
-
-        &::before {
-          background-size: contain;
-        }
-      }
-    }
+  }
 }
 </style>

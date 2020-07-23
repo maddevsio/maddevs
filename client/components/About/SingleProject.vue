@@ -209,7 +209,8 @@ export default {
     background-position: center bottom;
     background-size: contain;
     height: 22vw;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
 
     &_guardrails {
       position: relative;
@@ -250,5 +251,12 @@ export default {
       margin-top: 14vw;
     }
   }
+
+  &__background_first-project {
+    background-size: cover;
+    width: 100%;
+  }
 }
 </style>
+
+
