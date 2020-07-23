@@ -109,11 +109,11 @@ exports[`Projects page renders correctly 1`] = `
                 </span>
               </div>
             </div>
-             
-            <div
-              class="single-project__background single-project__background_first-project"
-            />
           </div>
+           
+          <div
+            class="single-project__background single-project__background_first-project"
+          />
         </a>
         <a
           class="single-project"
@@ -178,11 +178,11 @@ exports[`Projects page renders correctly 1`] = `
                 </span>
               </div>
             </div>
-             
-            <div
-              class="single-project__background"
-            />
           </div>
+           
+          <div
+            class="single-project__background"
+          />
         </a>
         <a
           class="single-project"
@@ -247,11 +247,11 @@ exports[`Projects page renders correctly 1`] = `
                 </span>
               </div>
             </div>
-             
-            <div
-              class="single-project__background single-project__background_guardrails"
-            />
           </div>
+           
+          <div
+            class="single-project__background single-project__background_guardrails"
+          />
         </a>
         <a
           class="single-project"
@@ -320,11 +320,11 @@ exports[`Projects page renders correctly 1`] = `
                 </span>
               </div>
             </div>
-             
-            <div
-              class="single-project__background single-project__background_godee"
-            />
           </div>
+           
+          <div
+            class="single-project__background single-project__background_godee"
+          />
         </a>
       </div>
     </div>
@@ -405,11 +405,11 @@ exports[`Projects page renders correctly 1`] = `
                     </span>
                   </div>
                 </div>
-                 
-                <div
-                  class="single-project__background single-project__background_first-project"
-                />
               </div>
+               
+              <div
+                class="single-project__background single-project__background_first-project"
+              />
             </a>
           </div>
           <div
@@ -478,11 +478,11 @@ exports[`Projects page renders correctly 1`] = `
                     </span>
                   </div>
                 </div>
-                 
-                <div
-                  class="single-project__background"
-                />
               </div>
+               
+              <div
+                class="single-project__background"
+              />
             </a>
           </div>
           <div
@@ -551,11 +551,11 @@ exports[`Projects page renders correctly 1`] = `
                     </span>
                   </div>
                 </div>
-                 
-                <div
-                  class="single-project__background single-project__background_guardrails"
-                />
               </div>
+               
+              <div
+                class="single-project__background single-project__background_guardrails"
+              />
             </a>
           </div>
           <div
@@ -628,11 +628,11 @@ exports[`Projects page renders correctly 1`] = `
                     </span>
                   </div>
                 </div>
-                 
-                <div
-                  class="single-project__background single-project__background_godee"
-                />
               </div>
+               
+              <div
+                class="single-project__background single-project__background_godee"
+              />
             </a>
           </div>
         </div>
