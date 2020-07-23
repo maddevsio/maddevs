@@ -70,7 +70,7 @@ export default {
         pagination: {
           el: '.swiper-pagination--white'
         },
-        slidesPerView: 1.20
+        slidesPerView: 1.05
       },
       currentPageName: '',
       projects: [

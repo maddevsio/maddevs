@@ -22,8 +22,8 @@
         fill=""
       />
     </svg>
-    <span 
-      class="contribution-widget__content-mobile contribution-widget__content-mobile_godee" 
+    <span
+      class="contribution-widget__content-mobile contribution-widget__content-mobile_godee"
       v-if="projectName === 'godee'"
     >
       contribution: Backend, Infrastructure, Mobile Apps
@@ -41,8 +41,8 @@
       ]"
       >contribution: Backend, Infrastructure</span
     >
-    <span 
-      class="contribution-widget__content contribution-widget__content_godee" 
+    <span
+      class="contribution-widget__content contribution-widget__content_godee"
       v-if="projectName === 'godee'"
     >
       contribution: Backend, Infrastructure, Mobile Apps
@@ -54,8 +54,8 @@
         projectName === 'guardrails'
           ? 'contribution-widget__content_guardrails'
           : '',
-        projectName === 'teacherly' 
-          ? 'contribution-widget__content_teacherly' 
+        projectName === 'teacherly'
+          ? 'contribution-widget__content_teacherly'
           : 'contribution-widget__content_nambafood'
       ]"
       >contribution: Backend, Infrastructure, Frontend</span
@@ -132,15 +132,6 @@ export default {
       color: $text-color--black;
     }
   }
-
-    @media only screen and (max-width: 1120px) {
-      font-size: 18px;
-    }
-
-    @media only screen and (max-width: 1035px) {
-      font-size: 16px;
-    }
-
   @media only screen and (max-width: 1024px) {
     &__img {
       height: 13px;
@@ -188,7 +179,7 @@ export default {
   }
 
   @media only screen and (max-width: 520px) {
-    font-size: 16px;
+    // font-size: 16px;
   }
 
   @media only screen and (max-width: 340px) {

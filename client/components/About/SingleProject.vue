@@ -36,7 +36,7 @@
             ')'
         }"
         :class="backgroundModifierClasses"
-      ></div>
+      />
     </div>
   </a>
 </template>
@@ -83,13 +83,7 @@ export default {
   },
   computed: {
     isWhiteColored() {
-      if (
-        this.project.projectName === 'teacherly' ||
-        this.project.projectName === 'guardrails'
-      ) {
-        return true;
-      }
-      return false;
+      return this.project.projectName === 'teacherly' || this.project.projectName === 'guardrails';
     },
     backgroundModifierClasses() {
       return {
@@ -115,46 +109,11 @@ export default {
   color: initial;
   display: block;
 
-  @media only screen and (min-width: 1670px) {
-    .single-project {
-      &__background {
-        &_first-project {
-          width: 100%;
-          background-size: cover;
-        }
-      }
-    }
-  }
-
   @media only screen and (min-width: 1600px) {
     .single-project {
       &__sub-title {
         font-size: 3vw;
         letter-spacing: -1px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1600px) {
-    .single-project {
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .single-project {
-      &__background {
-        &_first-project {
-          width: 100%;
-          background-size: contain;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1253px) {
-    .single-project {
-      &__sub-title {
-        padding-right: 9px;
       }
     }
   }
@@ -255,66 +214,22 @@ export default {
     }
   }
 
-  @media screen and (max-width: 1024px) {
-    .single-project {
+  @media only screen and (max-width: 768px) {
+      &__content-wrap {
+        margin: 10vw 9vw 0;
+        z-index: 1;
+        line-height: 1vw;
+      }
+
       &__sub-title {
-        font-size: 47px;
+        margin-top: 5vw;
+        line-height: 110%;
+        letter-spacing: -1px;
       }
 
       &__paragraph {
-        font-size: 16px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 920px) {
-    .single-project {
-      min-width: inherit;
-
-      &__sub-title {
-        font-size: 44px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 870px) {
-    .single-project {
-      &__sub-title {
-        font-size: 40px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 820px) {
-    .single-project {
-      &__sub-title {
-        font-size: 39px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 1030px) and (min-width: 798px) {
-    .single-project {
-      &__background {
-        background-size: contain;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .single-project {
-
-      &__sub-title {
-        font-size: 47px;
-      }
-
-      &__background {
-        background-size: contain;
-
-        &_first-project {
-          width: 100%;
-          background-size: contain;
-        }
+        margin-top: 2vw;
+        line-height: 5.9vw;
       }
 
       &__container {
@@ -323,50 +238,13 @@ export default {
         flex-direction: column;
         align-items: center;
       }
+
+    &__background {
+      height: 39vw;
     }
-  }
 
-  @media screen and (max-width: 768px) and (min-width: 580px) {
-    .single-project {
-      &__background {
-        background-size: contain;
-        height: 378px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 576px) {
-    .single-project {
-      &__logo {
-        height: 40px;
-      }
-
-      &__paragraph {
-        margin-top: 15px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 445px) {
-    .single-project {
-      &__sub-title {
-        font-size: 41px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 410px) {
-    .single-project {
-      &__background {
-        &_first-project {
-          background-size: contain;
-          width: 100%;
-        }
-
-        &_guardrails {
-          width: calc(100% - 47px);
-        }
-      }
+    .contribution-widget {
+      margin-top: 14vw;
     }
   }
 }
