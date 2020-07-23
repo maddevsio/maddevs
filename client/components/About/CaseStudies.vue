@@ -209,50 +209,6 @@ export default {
   .swiper-container {
     background: $bgcolor--black;
   }
-
-  .swiper-slide {
-    @media only screen and (max-width: 410px) {
-      .single-project {
-        min-width: 100%;
-      }
-    }
-
-    &:nth-child(3) {
-      .single-project {
-        &::before {
-          content: '';
-          position: absolute;
-          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg')
-            no-repeat right 50%;
-          width: 100%;
-          height: 310px;
-          background-size: contain;
-          z-index: -44;
-          top: 0;
-          right: 0;
-          mix-blend-mode: overlay;
-          opacity: 0.68;
-        }
-      }
-    }
-
-    &:last-child {
-      .single-project {
-        &::after {
-          content: '';
-          position: absolute;
-          background-image: url('../../assets/img/Studies/svg/godeeSecondaryBg.svg');
-          background-repeat: no-repeat;
-          width: 100%;
-          height: 100%;
-          background-size: contain;
-          z-index: -44;
-          top: 0;
-          right: 0;
-        }
-      }
-    }
-  }
 }
 
 .projects-mobile-slider {
@@ -594,26 +550,11 @@ export default {
     }
 
     .swiper-slide {
+      height: auto;
+
       .single-project {
         width: 100%;
-      }
-
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          width: calc(100% - 14px);
-        }
-      }
-
-      &:nth-child(3) {
-        /deep/ .single-project__background {
-          width: calc(100% - 29px);
-        }
-      }
-
-      &:last-child {
-        /deep/ .single-project__background {
-          width: calc(100% - 38px);
-        }
+        min-height: 100%;
       }
     }
   }
@@ -687,27 +628,6 @@ export default {
 
 @media only screen and (max-width: 375px) {
   .case-studies {
-    .swiper-slide {
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          width: calc(100% - 33px);
-          margin-right: 15px;
-        }
-      }
-
-      &:nth-child(3) {
-        /deep/ .single-project__background {
-          width: calc(100% - 33px);
-        }
-      }
-
-      &:last-child {
-        /deep/ .single-project__background {
-          width: calc(100% - 33px);
-        }
-      }
-    }
-
     .projects {
       &-flame-background {
         width: 160px;
