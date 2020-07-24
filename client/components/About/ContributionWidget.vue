@@ -176,10 +176,6 @@ export default {
     font-size: 17px;
   }
 
-  @media only screen and (max-width: 520px) {
-    // font-size: 16px;
-  }
-
   @media only screen and (max-width: 340px) {
     font-size: 15px;
 
