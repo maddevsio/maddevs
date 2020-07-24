@@ -70,7 +70,7 @@ export default {
         pagination: {
           el: '.swiper-pagination--white'
         },
-        slidesPerView: 1.20
+        slidesPerView: 1.05
       },
       currentPageName: '',
       projects: [
@@ -131,20 +131,13 @@ export default {
 }
 
 .case-studies {
-  padding-top: 90px;
-
-  &--projects {
-    .projects-flame-background {
-      position: absolute;
-    }
-  }
 
   .container {
     position: relative;
   }
 
   &__main-title {
-    padding-bottom: 41px;
+    padding-bottom: 2vw;
     display: inline-block;
     color: $text-color--red;
 
@@ -159,23 +152,18 @@ export default {
     flex-wrap: wrap;
 
     .single-project {
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          width: auto;
-        }
+      &__background_first-project {
+        background-size: cover;
       }
 
       &:nth-child(3) {
-        /deep/ .single-project__background {
-          width: auto;
-        }
 
         &::before {
           content: '';
           position: absolute;
           background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg') no-repeat right 50%;
           width: 100%;
-          height: 430px;
+          height: 25vw;
           background-size: contain;
           z-index: -44;
           top: 0;
@@ -186,9 +174,6 @@ export default {
       }
 
       &:last-child {
-        /deep/ .single-project__background {
-          width: auto;
-        }
 
         &::after {
           content: '';
@@ -209,422 +194,65 @@ export default {
   .swiper-container {
     background: $bgcolor--black;
   }
-
-  .swiper-slide {
-    @media only screen and (max-width: 410px) {
-      .single-project {
-        min-width: 100%;
-      }
-    }
-
-    &:nth-child(3) {
-      .single-project {
-        &::before {
-          content: '';
-          position: absolute;
-          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg')
-            no-repeat right 50%;
-          width: 100%;
-          height: 310px;
-          background-size: contain;
-          z-index: -44;
-          top: 0;
-          right: 0;
-          mix-blend-mode: overlay;
-          opacity: 0.68;
-        }
-      }
-    }
-
-    &:last-child {
-      .single-project {
-        &::after {
-          content: '';
-          position: absolute;
-          background-image: url('../../assets/img/Studies/svg/godeeSecondaryBg.svg');
-          background-repeat: no-repeat;
-          width: 100%;
-          height: 100%;
-          background-size: contain;
-          z-index: -44;
-          top: 0;
-          right: 0;
-        }
-      }
-    }
-  }
 }
 
 .projects-mobile-slider {
   display: none;
 }
 
-@media only screen and (min-width: 1600px) {
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-
-    &-flame-background {
-      top: -448px;
-      width: 448px;
-      right: 142px;
-    }
-
-    .single-project {
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          margin: 0 19px 0 33px;
-          width: auto;
-        }
-      }
-
-      &:nth-child(3) {
-        /deep/ .single-project__background {
-          margin: 0 21px;
-          width: auto;
-        }
-
-        &::before {
-          content: '';
-          position: absolute;
-          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg')
-            no-repeat right 50%;
-          width: 100%;
-          height: 430px;
-          background-size: contain;
-          z-index: -44;
-          top: 0;
-          right: 0;
-          mix-blend-mode: overlay;
-          opacity: 0.68;
-        }
-      }
-
-      &:last-child {
-        /deep/ .single-project__background {
-          margin: 0 32px;
-          width: auto;
-        }
-      }
-    }
-  }
-}
-
 @media only screen and (max-width: 1600px) {
   .case-studies {
     &__main-title {
-      font-size: 128px;
-    }
-  }
-
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-
-    &-flame-background {
-      top: -448px;
-      width: 448px;
-      right: 142px;
-    }
-
-    .single-project {
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          margin: 0 19px 0 33px;
-          width: auto;
-        }
-      }
-
-      &:nth-child(3) {
-        /deep/ .single-project__background {
-          margin: 0 21px;
-          width: auto;
-        }
-
-        &::before {
-          content: '';
-          position: absolute;
-          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg')
-            no-repeat right 50%;
-          width: 100%;
-          height: 430px;
-          background-size: contain;
-          z-index: -44;
-          top: 0;
-          right: 0;
-          mix-blend-mode: overlay;
-          opacity: 0.68;
-        }
-      }
-
-      &:last-child {
-        /deep/ .single-project__background {
-          margin: 0 32px;
-          width: auto;
-        }
-      }
+      font-size: 8vw;
     }
   }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 745px) {
   .case-studies {
-    &__main-title {
-      font-size: 125px;
-    }
-  }
-
-  .projects {
-    &-flame-background {
-      right: 107px;
-    }
-
-    .single-project {
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          margin: 0 32px 0 18px;
-          width: auto;
-        }
-      }
-
-      &:nth-child(3) {
-        /deep/ .single-project__background {
-          margin: 0 19px;
-          width: auto;
-        }
-      }
-
-      &:last-child {
-        /deep/ .single-project__background {
-          margin: 0 30px;
-          width: auto;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1390px) {
-  .projects {
-    &-flame-background {
-      top: -385px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1330px) {
-  .case-studies {
-    &__main-title {
-      font-size: 120px;
-    }
-  }
-
-  .projects {
-    &-flame-background {
-      top: -428px;
-      width: 428px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  .case-studies {
-    padding-top: 20px;
-
-    &__main-title {
-      font-size: 100px;
-    }
-  }
-
-  .projects {
-    &-flame-background {
-      top: -410px;
-      width: 400px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1230px) {
-  .case-studies {
-    &__main-title {
-      font-size: 93px;
-    }
-  }
-
-  .projects {
-    &-flame-background {
-      top: -322px;
-      width: 330px;
-      right: 100px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1138px) {
-  .case-studies {
-    &__main-title {
-      font-size: 91px;
-    }
-  }
-
-  .projects {
-    &-flame-background {
-      top: -260px;
-      width: 282px;
-      right: 100px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .case-studies {
-    &__main-title {
-      font-size: 90px;
-    }
-  }
-
-  .projects {
-    &-flame-background {
-      top: -233px;
-      width: 262px;
-      right: 100px;
-    }
-
-    .single-project {
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          margin: 0 25px 0 14px;
-          width: auto;
-        }
-      }
-
-      &:nth-child(3) {
-        /deep/ .single-project__background {
-          margin: 0 29px;
-          width: auto;
-        }
-      }
-
-      &:last-child {
-        /deep/ .single-project__background {
-          margin: 0 38px;
-          width: auto;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 980px) {
-  .case-studies {
-    &__main-title {
-      font-size: 82px;
-    }
-  }
-
-  .projects {
-    &-flame-background {
-      top: -200px;
-      width: 230px;
-      right: 100px;
-    }
-  }
-}
-
-@media only screen and (max-width: 905px) {
-  .case-studies {
-    &__main-title {
-      font-size: 72px;
-    }
-  }
-
-  .projects {
-    &-flame-background {
-      top: -193px;
-      width: 220px;
-      right: 100px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1110px) {
-  .projects {
-    .single-project {
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          bottom: -14px;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .projects {
-    .single-project {
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          bottom: -12px;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .projects {
-    .single-project {
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          bottom: -10px;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 830px) {
-  .case-studies {
-    &--projects {
-      &__main-title {
-        width: 50%;
-      }
-    }
-  }
-
-  .projects {
-    &-flame-background {
-      top: -121px;
-      width: 220px;
-    }
-  }
-}
-
-@media screen and (max-width: 920px) {
-  .single-project {
-    min-width: inherit;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .case-studies {
-    &__main-title {
-      padding-bottom: 31px;
-      font-size: 64px;
-    }
-
     .projects {
       display: none;
-
-      &-flame-background {
-        top: -130px;
-        width: 208px;
-        right: 70px;
-      }
     }
 
     .projects-mobile-slider {
       display: block;
+
+      .swiper-slide {
+        &:nth-child(3) {
+          .single-project {
+            &::before {
+              content: '';
+              position: absolute;
+              background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg') no-repeat right 50%;
+              width: 100%;
+              height: 35vw;
+              background-size: contain;
+              z-index: -44;
+              top: 0;
+              right: 0;
+              mix-blend-mode: overlay;
+              opacity: 0.68;
+            }
+          }
+        }
+
+        &:last-child {
+          .single-project {
+            &::after {
+              content: '';
+              position: absolute;
+              background-image: url('../../assets/img/Studies/jpg/godeeSecondaryBg.jpg');
+              background-repeat: no-repeat;
+              width: 100%;
+              height: 100%;
+              background-size: contain;
+              z-index: -44;
+              top: 0;
+              right: 0;
+            }
+          }
+        }
+      }
 
       .swiper {
         display: block;
@@ -632,158 +260,21 @@ export default {
     }
 
     .swiper-slide {
+      height: auto;
+
       .single-project {
         width: 100%;
-      }
-
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          width: calc(100% - 14px);
-        }
-      }
-
-      &:nth-child(3) {
-        /deep/ .single-project__background {
-          width: calc(100% - 29px);
-        }
-      }
-
-      &:last-child {
-        /deep/ .single-project__background {
-          width: calc(100% - 38px);
-        }
+        min-height: 100%;
       }
     }
   }
 }
 
-@media only screen and (max-width: 576px) {
-  .case-studies {
-    /deep/ .single-project__background {
-      &:nth-child(2) {
-        position: relative;
-        bottom: -10px;
-      }
-    }
-
-    &__main-title {
-      font-size: 64px;
-    }
-
-    &-flame-background {
-      right: 45px;
-    }
-  }
-}
-
-@media only screen and (max-width: 530px) {
-  .case-studies {
-    .projects {
-      &-flame-background {
-        right: 20px;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  .case-studies {
-    min-width: 100%;
-
-    &__main-title {
-      padding-bottom: 31px;
-    }
-  }
-}
-
-@media only screen and (max-width: 475px) {
-  .case-studies {
-    .projects { 
-      &-flame-background {
-        top: -95px;
-        width: 180px;
-      }
-    }
-  }
-
-  &__main-title {
-    font-size: 60px;
-  }
-}
-
-@media only screen and (max-width: 460px) {
-  .case-studies {
-    .projects { 
-      &-flame-background {
-        top: -70px;
-        width: 165px;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 427px) {
+@media only screen and (max-width: 640px) {
   .case-studies {
     &__main-title {
-      font-size: 56px;
-    }
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .case-studies {
-    &__main-title {
-      font-size: 53px;
-    }
-
-    .swiper-slide {
-      &:nth-child(2) {
-        /deep/ .single-project__background {
-          width: calc(100% - 33px);
-          margin-right: 15px;
-        }
-      }
-
-      &:nth-child(3) {
-        /deep/ .single-project__background {
-          width: calc(100% - 33px);
-        }
-      }
-
-      &:last-child {
-        /deep/ .single-project__background {
-          width: calc(100% - 33px);
-        }
-      }
-    }
-
-    .projects {
-      &-flame-background {
-        width: 160px;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 366px) {
-  .case-studies {
-    &__main-title {
-      font-size: 50px;
-    }
-  }
-}
-
-@media only screen and (max-width: 345px) {
-  .case-studies {
-    &__main-title {
-      font-size: 48px;
-    }
-
-    .projects {
-      &-flame-background {
-        top: -45px;
-        width: 130px;
-      }
+      font-size: 11vw;
+      padding-bottom: 8vw;
     }
   }
 }

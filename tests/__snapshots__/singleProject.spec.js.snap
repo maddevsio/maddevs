@@ -68,10 +68,10 @@ exports[`CaseStudies component renders correctly 1`] = `
         </span>
       </div>
     </div>
-     
-    <div
-      class="single-project__background single-project__background_godee"
-    />
   </div>
+   
+  <div
+    class="single-project__background single-project__background_godee"
+  />
 </a>
 `;

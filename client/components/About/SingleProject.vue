@@ -27,17 +27,17 @@
           :projectName="project.projectName"
         />
       </div>
-      <div
-        class="single-project__background"
-        :style="{
+    </div>
+    <div
+      class="single-project__background"
+      :style="{
           'background-image':
             'url(' +
             require(`@/assets/img/Studies/png/${project.projectBackground}.png`) +
             ')'
         }"
-        :class="backgroundModifierClasses"
-      ></div>
-    </div>
+      :class="backgroundModifierClasses"
+    />
   </a>
 </template>
 
@@ -75,10 +75,6 @@ export default {
         type: String,
         required: true
       },
-      projectColor: {
-        type: String,
-        required: true
-      },
       projectTitle: {
         type: String,
         required: true
@@ -87,13 +83,7 @@ export default {
   },
   computed: {
     isWhiteColored() {
-      if (
-        this.project.projectName === 'teacherly' ||
-        this.project.projectName === 'guardrails'
-      ) {
-        return true;
-      }
-      return false;
+      return this.project.projectName === 'teacherly' || this.project.projectName === 'guardrails';
     },
     backgroundModifierClasses() {
       return {
@@ -117,101 +107,14 @@ export default {
   z-index: 99;
   text-decoration: none;
   color: initial;
-  display: block;
-
-  @media only screen and (min-width: 1670px) {
-    .single-project {
-      &__background {
-        &_first-project {
-          width: 100%;
-          background-size: cover;
-        }
-      }
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @media only screen and (min-width: 1600px) {
     .single-project {
-      &__content-wrap {
-        height: 320px;
-      }
-
       &__sub-title {
-        font-size: 50px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1600px) {
-    .single-project {
-      &__content-wrap {
-        height: 302px;
-      }
-
-      &__sub-title {
-        font-size: 50px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1440px) {
-    .single-project {
-      &__content-wrap {
-        margin: 60px 46px 0;
-        height: 230px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1287px) {
-    .single-project {
-      &__sub-title {
-        padding-right: 7px;
-      }
-
-      &__content-wrap {
-        height: 290px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .single-project {
-      &__background {
-        &_first-project {
-          width: 100%;
-          background-size: contain;
-        }
-      }
-
-      &__content-wrap {
-        height: 225px;
-        margin: 50px 34px 0;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1253px) {
-    .single-project {
-      &__sub-title {
-        padding-right: 9px;
-      }
-
-      &__content-wrap {
-        height: 280px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .single-project {
-      &__content-wrap {
-        margin: 68px 34px 0;
-        height: 125px;
-      }
-
-      &__sub-title {
-        line-height: 40px;
+        font-size: 3vw;
         letter-spacing: -1px;
       }
     }
@@ -224,19 +127,19 @@ export default {
   }
 
   &__content-wrap {
-    margin: 74px 70px 0;
-    height: 270px;
+    margin: 3.7vw 4vw 0;
     z-index: 1;
   }
 
   &__sub-title {
-    margin-top: 22.5px;
+    margin-top: 1vw;
     line-height: 110%;
     letter-spacing: -2px;
   }
 
   &__paragraph {
-    margin-top: 33px;
+    margin-top: 1vw;
+    line-height: 1.7vw;
   }
 
   .contribution-widget {
@@ -245,7 +148,7 @@ export default {
     position: relative;
     z-index: 1;
     color: $text-color--grey;
-    margin-top: 36px;
+    margin-top: 2vw;
 
     &__img {
       &_black {
@@ -262,7 +165,7 @@ export default {
     }
 
     &__content {
-      margin-left: 6px;
+      margin-left: 0.5vw;
 
       &-mobile {
         display: none;
@@ -305,86 +208,32 @@ export default {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
-    height: 413px;
-    width: 100%;
+    height: 22vw;
+    width: 95%;
+    margin: 0 auto;
 
     &_guardrails {
       position: relative;
     }
   }
 
-  @media screen and (max-width: 1024px) {
-    .single-project {
+  @media only screen and (max-width: 745px) {
+
+      &__content-wrap {
+        margin: 10vw 9vw 0;
+        z-index: 1;
+        line-height: 1vw;
+      }
+
       &__sub-title {
-        font-size: 47px;
+        margin-top: 5vw;
+        line-height: 110%;
+        letter-spacing: -1px;
       }
 
       &__paragraph {
-        font-size: 16px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 920px) {
-    .single-project {
-      min-width: inherit;
-
-      &__sub-title {
-        font-size: 44px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 870px) {
-    .single-project {
-      &__sub-title {
-        font-size: 40px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 820px) {
-    .single-project {
-      &__sub-title {
-        font-size: 39px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 810px) and (min-width: 769px) {
-    .single-project {
-      &__content-wrap {
-        margin: 68px 23px 0;
-        height: 145px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 1030px) and (min-width: 798px) {
-    .single-project {
-      &__background {
-        background-size: contain;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .single-project {
-      &__content-wrap {
-        height: 230px;
-      }
-
-      &__sub-title {
-        font-size: 47px;
-      }
-
-      &__background {
-        background-size: contain;
-
-        &_first-project {
-          width: 100%;
-          background-size: contain;
-        }
+        margin-top: 2vw;
+        line-height: 5.9vw;
       }
 
       &__container {
@@ -393,72 +242,21 @@ export default {
         flex-direction: column;
         align-items: center;
       }
+
+    &__background {
+      height: 39vw;
+    }
+
+    .contribution-widget {
+      margin-top: 14vw;
     }
   }
 
-  @media screen and (max-width: 768px) and (min-width: 580px) {
-    .single-project {
-      &__background {
-        background-size: contain;
-        height: 378px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 576px) {
-    .single-project {
-      &__logo {
-        height: 40px;
-      }
-
-      &__content-wrap {
-        height: 100px;
-        word-wrap: break-word;
-
-        .contribution-widget {
-          margin-top: 26px;
-        }
-      }
-
-      &__paragraph {
-        margin-top: 15px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 445px) {
-    .single-project {
-      &__content-wrap {
-        margin: 50px 21px 0;
-      }
-
-      &__sub-title {
-        font-size: 41px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 410px) {
-    .single-project {
-      &__background {
-        &_first-project {
-          background-size: contain;
-          width: 100%;
-        }
-
-        &_guardrails {
-          width: calc(100% - 47px);
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 340px) {
-    .single-project {
-      &__content-wrap {
-        margin: 50px 17px 0;
-      }
-    }
+  &__background_first-project {
+    background-size: cover;
+    width: 100%;
   }
 }
 </style>
+
+
