@@ -1043,3 +1043,5 @@ patch:
         patched: '2020-06-18T23:28:09.331Z'
     - '@nuxtjs/axios > @nuxtjs/proxy > http-proxy-middleware > lodash':
         patched: '2020-07-07T11:02:13.191Z'
+    - psi > lodash:
+        patched: '2020-07-08T03:18:49.728Z'
