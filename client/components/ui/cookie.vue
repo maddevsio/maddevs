@@ -87,15 +87,31 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 860px) {
+    .cookie-notif {
+      .cookie-notif_button {
+        width: 12vw;
+        height: 3.8vw;
+        font-size: 1.4vw;
+      }
+
+      p {
+        margin: 0 1.8vw;
+        font-size: 1.5vw;
+      }
+    } 
+
+  }
+
   @media only screen and (max-width: 720px) {
     .cookie-notif {
+      padding: 1.3vw 2.6vw;
       flex-direction: column;
-      padding: 15px 17px;
 
       .cookie-notif_button {
         width: 100%;
-        height: 38px;
-        font-size: 14px;
+        height: 7.2vw;
+        font-size: 2.5vw;
         font-family: 'Hoves-Bold';
       }
 
@@ -104,13 +120,26 @@ export default {
       }
 
       p {
-        font-size: 14px;
-        margin: 0 0 15px;
+        margin-bottom: 2vw;
+        font-size: 2.3vw;
         text-align: center;
 
         br {
           display: none;
         }
+      }
+    } 
+  }
+
+  @media only screen and (max-width: 340px) {
+    .cookie-notif {
+      .cookie-notif_button {
+        height: 8.5vw;
+      }
+
+      .cookie-notif_button, 
+      p {
+        font-size: 3.1vw;
       }
     } 
   }
