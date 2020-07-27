@@ -103,83 +103,6 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
         </div>
         <div
           class="technologies-item"
-          class-prefix="technologies-mobile"
-        >
-          <h4
-            class="technologies-item__title sub-title"
-          >
-            Mobile
-          </h4>
-           
-          <p
-            class="technologies-item__paragraph paragraph"
-          >
-            We don't just create mobile apps, we make them intuitive for super-smooth user journeys. Mad Devs do both iOs and Android development and perform audits of existing applications. You can turn to our mobile developers for any of the following programming languages:
-          </p>
-           
-          <div
-            class="icons-list"
-          >
-            <div
-              class="icon-flex_group"
-            >
-              <div
-                class="tech-icon"
-              >
-                <span
-                  class="tech-icon__logo tech-icon__logo--kotlin"
-                />
-                 
-                <p
-                  class="tech-icon__name"
-                >
-                  Kotlin
-                </p>
-              </div>
-              <div
-                class="tech-icon"
-              >
-                <span
-                  class="tech-icon__logo tech-icon__logo--java"
-                />
-                 
-                <p
-                  class="tech-icon__name"
-                >
-                  Java
-                </p>
-              </div>
-              <div
-                class="tech-icon"
-              >
-                <span
-                  class="tech-icon__logo tech-icon__logo--objective"
-                />
-                 
-                <p
-                  class="tech-icon__name"
-                >
-                  Objective-C
-                </p>
-              </div>
-              <div
-                class="tech-icon"
-              >
-                <span
-                  class="tech-icon__logo tech-icon__logo--swift"
-                />
-                 
-                <p
-                  class="tech-icon__name"
-                >
-                  Swift
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="technologies-item"
           class-prefix="technologies-backend"
         >
           <h4
@@ -276,6 +199,96 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
                   class="tech-icon__name"
                 >
                   Ruby
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--cpp"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  C++
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="technologies-item"
+          class-prefix="technologies-mobile"
+        >
+          <h4
+            class="technologies-item__title sub-title"
+          >
+            Mobile
+          </h4>
+           
+          <p
+            class="technologies-item__paragraph paragraph"
+          >
+            We don't just create mobile apps, we make them intuitive for super-smooth user journeys. Mad Devs do both iOs and Android development and perform audits of existing applications. You can turn to our mobile developers for any of the following programming languages:
+          </p>
+           
+          <div
+            class="icons-list"
+          >
+            <div
+              class="icon-flex_group"
+            >
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--kotlin"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Kotlin
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--java"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Java
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--objective"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Objective-C
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--swift"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  Swift
                 </p>
               </div>
             </div>
@@ -696,6 +709,19 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
                   class="tech-icon__name"
                 >
                   Amazon CloudWatch
+                </p>
+              </div>
+              <div
+                class="tech-icon"
+              >
+                <span
+                  class="tech-icon__logo tech-icon__logo--gitlab-ci"
+                />
+                 
+                <p
+                  class="tech-icon__name"
+                >
+                  GitLab CI
                 </p>
               </div>
             </div>

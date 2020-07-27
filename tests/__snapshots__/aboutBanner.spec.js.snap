@@ -17,17 +17,21 @@ exports[`Form checkboxes renders correctly 1`] = `
           class="banner-main_title"
         >
           
-        Your 
-          <br
-            class="phone-screen-br"
+        Mad Devs
+        
+          <img
+            alt="Stars Logotype"
+            class="phone-screen-logo"
+            src="@/assets/img/Home/svg/stars-banner-logo.svg"
           />
-           Trusted 
-          <br />
            
           <span
             class="main-title-white_part"
           >
-            IT Partner
+            <br />
+            Engineering
+            <br />
+            Your Growth
           </span>
         </h1>
       </div>
@@ -35,19 +39,14 @@ exports[`Form checkboxes renders correctly 1`] = `
       <div
         class="icon-item"
       >
-        <img
-          alt="Order a Project Logotype"
-          class="default-image"
-          src="@/assets/img/Services/svg/order-a-project.svg"
-        />
-         
-        <img
-          alt="Order a Project Logotype"
-          class="hover-image"
-          src="@/assets/img/Services/svg/order-a-project-hover.svg"
-        />
-         
-        <!---->
+        <div
+          class="animation-img-wrap"
+        >
+          <img
+            alt="Stars Logotype"
+            src="@/assets/img/Home/svg/stars-banner-logo.svg"
+          />
+        </div>
       </div>
     </div>
      

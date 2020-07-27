@@ -14,40 +14,18 @@ exports[`Form checkboxes renders correctly 1`] = `
         class="main-title-wrapper"
       >
         <h1
-          class="banner-main_title"
+          class="banner-main_title--white-first"
         >
           
-        Your 
-          <br
-            class="phone-screen-br"
-          />
-           Trusted 
-          <br />
-           
-          <span
-            class="main-title-white_part"
-          >
-            IT Partner
-          </span>
+        Look!
+      
         </h1>
-      </div>
-       
-      <div
-        class="icon-item"
-      >
-        <img
-          alt="Order a Project Logotype"
-          class="default-image"
-          src="@/assets/img/Services/svg/order-a-project.svg"
-        />
          
-        <img
-          alt="Order a Project Logotype"
-          class="hover-image"
-          src="@/assets/img/Services/svg/order-a-project-hover.svg"
-        />
-         
-        <!---->
+        <span
+          class="banner-main_title--white"
+        >
+          A new Mad Devs' ranger is here!
+        </span>
       </div>
     </div>
      
