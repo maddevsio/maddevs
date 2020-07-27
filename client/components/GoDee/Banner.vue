@@ -48,13 +48,11 @@ export default {
       font-size: get-vw(72px);
     }
 
-    &__main-title,
     &__sub-title {
       color: $accent-orange-text-color;
       letter-spacing: get-vw(-2px);
     }
 
-    &__main-title,
     &__sub-title,
     &__description {
       font-family: 'Hoves-Bold';
