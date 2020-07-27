@@ -5,7 +5,9 @@ describe('Privacy', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(Privacy);
+    wrapper = mount(Privacy, {
+      stubs: ['router-link']
+    });
   });
   test('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
