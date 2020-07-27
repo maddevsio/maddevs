@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GoDee banner renders correctly 1`] = `
+<section
+  class="banner"
+  id="banner"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="banner__banner-content"
+    >
+      <div
+        class="banner__text-content"
+      >
+        <h1
+          class="banner__main-title"
+        >
+          <img
+            alt="GoDee"
+            class="banner__main-title-logo"
+            src="@/assets/img/GoDee/svg/goodee-logo.svg"
+          />
+        </h1>
+         
+        <h3
+          class="banner__sub-title"
+        >
+          Convenient shuttle 
+          <br />
+           bus service
+        </h3>
+         
+        <p
+          class="banner__description"
+        >
+          Mad Devs helped GoDee to develop feature-rich 
+          <br />
+           software to re-invent public mobility by building new 
+          <br />
+           smart ways of daily commute.
+        </p>
+      </div>
+       
+      <div
+        class="banner__phone-wrapper"
+      >
+        <img
+          alt="preview"
+          class="banner__phone-image"
+          src="@/assets/img/GoDee/svg/godee-iphonex.svg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;

@@ -1162,7 +1162,7 @@ exports[`Index page renders correctly 1`] = `
         </a>
         <a
           class="single-project"
-          href="https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5?source=friends_link&sk=3e3f75a7f35f0e4d9d447a19e015330a"
+          href="/godee"
           style="background: rgb(255, 106, 1);"
         >
           <div
@@ -1470,7 +1470,7 @@ exports[`Index page renders correctly 1`] = `
           >
             <a
               class="single-project"
-              href="https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5?source=friends_link&sk=3e3f75a7f35f0e4d9d447a19e015330a"
+              href="/godee"
               style="background: rgb(255, 106, 1);"
             >
               <div
