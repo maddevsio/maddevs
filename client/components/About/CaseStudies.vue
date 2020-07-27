@@ -110,7 +110,7 @@ export default {
         {
           projectName: 'godee',
           logoImg: 'godeeColored',
-          link: 'https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5?source=friends_link&sk=3e3f75a7f35f0e4d9d447a19e015330a',
+          link: '/godee',
           contributionWidgetColors: ['#000', '#000'],
           projectBackground: 'godeeBackground',
           projectColor: '#ff6A01',
