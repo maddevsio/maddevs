@@ -62,7 +62,7 @@ export default {
 
     &__sub-title,
     &__description {
-      margin-top: get-vw(15px);
+      margin-top: get-vw(10px);
     }
 
     &__description {
