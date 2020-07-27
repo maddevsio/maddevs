@@ -689,3 +689,70 @@
     transform: scale(30);
   }
 }
+
+.banner-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: $bgcolor--black;
+
+  .banner-content {
+    width: 100%;
+    height: 100%;
+    padding-top: 12vw;
+  }
+
+  .banner-main_title,
+  .banner-main_title--white,
+  .banner-main_title--white-first {
+    font-family: 'Hoves-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10.4vw;
+    color: $text-color--black;
+    -webkit-text-stroke: $text-stroke--white;
+    line-height: 100%;
+    letter-spacing: -0.6vw;
+
+    .main-title-white_part {
+      color: $text-color--white;
+      -webkit-text-stroke: 0;
+    }
+
+    &--white,
+    &--white-first {
+      color: $text-color--white;
+      -webkit-text-stroke: 0;
+    }
+  }
+
+  .text-content_wrapper {
+    display: flex;
+    padding-bottom: 8.5vw;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .banner-container {
+    .banner-main_title--white-first {
+      display: inline;
+    }
+  }
+}
+
+@media only screen and (max-width: 755px) {
+  .banner-container {
+    .banner-content {
+      padding-top: 0;
+    }
+
+    .banner-main_title,
+    .banner-main_title--white,
+    .banner-main_title--white-first {
+      font-size: 15vw;
+      letter-spacing: -2px;
+      line-height: 17vw;
+      padding-bottom: 6vw;
+    }
+  }
+}

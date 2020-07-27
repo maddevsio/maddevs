@@ -1,4 +1,5 @@
 <template>
+  <div class="container banner-container">
   <div class="banner-content">
     <div class="text-content_wrapper">
       <div class="main-title-wrapper">
@@ -15,6 +16,7 @@
       </div>
     </div>
     <navigationList/>
+  </div>
   </div>
 </template>
 
