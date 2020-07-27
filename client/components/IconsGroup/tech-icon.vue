@@ -133,7 +133,7 @@ export default {
         background-image: url(../../assets/img/Technologies/svg/azure.svg);
       }
 
-      &--ansible{
+      &--ansible {
         background-image: url(../../assets/img/Technologies/svg/ansible.svg);
       }
 
@@ -211,6 +211,14 @@ export default {
 
       &--microsoft-teams {
         background-image: url(../../assets/img/Technologies/png/microsoft-teams.png);
+      }
+
+      &--cpp {
+        background-image: url(../../assets/img/Technologies/png/cpp.png);
+      }
+
+      &--gitlab-ci {
+        background-image: url(../../assets/img/Technologies/png/gitlab-ci.png);
       }
     }
   }
