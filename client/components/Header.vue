@@ -1,11 +1,12 @@
 <template>
   <div class="header-wrapper">
     <header ref="header" class="header">
+      <div class="header-container">
+      <router-link :to="`/`" class="header__logo-icon">
+        <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
+      </router-link>
       <div class="container">
         <div class="header__header-content_logo">
-          <router-link :to="`/`" class="header__logo-icon">
-            <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
-          </router-link>
           <div class="header__header-content_wrap">
           <div class="header__left-nav_bar">
             <nav class="header__header-routes_links">
@@ -55,6 +56,7 @@
             :isRed="true"
           />
         </div>
+      </div>
       </div>
     </header>
     <mobileHeader />
@@ -132,10 +134,19 @@ export default {
     z-index: 2;
     background-color: #000;
 
+    &-container {
+      display: flex;
+      position: relative;
+
+      .container {
+        width: 100%;
+      }
+    }
+
     button {
       padding: 0 24px;
       height: 2.4vw;
-      margin-right: -96px;
+      margin-right: -7vw;
       font-size: 1.1vw;
       line-height: 1.1vw;
       white-space: nowrap;
@@ -162,7 +173,6 @@ export default {
 
     &__header-routes_links {
       position: relative;
-      padding-left: 3.9vw;
 
       a {
         color: $text-color--grey;
@@ -210,10 +220,6 @@ export default {
       justify-content: space-between;
     }
 
-    &__soc-link {
-      padding-right: 5px;
-    }
-
     &__phones-dropdown_arrow {
       display: inline-block;
       height: 0.4vw;
@@ -223,9 +229,6 @@ export default {
       background-size: cover;
     }
     &__phones-dropdown_wrap {
-      min-width: 200px;
-      padding-top: 1px;
-
       &:hover {
         .header__phones-list {
           display: flex;
@@ -237,15 +240,12 @@ export default {
     &__phones-list {
       display: none;
       position: absolute;
-      margin-left: -10px;
-      padding: 0 10px 10px;
-      background-color: #000;
     }
 
     &__mailto-link,
     &__selected-phone,
     &__phone-item {
-      padding-right: 26px;
+      padding-right: 3vw;
       color: $text-color--grey;
       font-size: 1vw;
       font-family: 'Hoves-Regular';
@@ -268,22 +268,9 @@ export default {
       }
     }
 
-    &__selected-phone {
-      img {
-        top: 4px;
-      }
-    }
-
-    &__phone-item {
-      padding-top: 17px;
-
-      img {
-        top: 20px;
-      }
-    }
-
     &__logo-icon {
-      margin-left: -96px;
+      position: absolute;
+      left: 2vw;
     }
 
     &-social-logo {
@@ -310,7 +297,7 @@ export default {
       height: 0.8vw;
       width: 1vw;
       background-repeat: no-repeat;
-      margin: 0 10px 0 0;
+      margin: 0 0.6vw 0 0;
       background-size: contain;
 
       &--united-states {
@@ -333,106 +320,6 @@ export default {
     .container {
       height: 100vw;
       overflow: scroll;
-    }
-  }
-
-  @media only screen and (max-width: 1590px) {
-    .header {
-      &__logo-icon {
-        margin-left: -80px;
-      }
-
-      button {
-        margin-right: -80px;
-      }
-
-      &__header-routes_links {
-        padding-left: 33px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1320px) {
-    .header {
-      &__header-routes_links {
-        padding-left: 25px;
-      }
-
-      &__mailto-link,
-      &__selected-phone,
-      &__phone-item,
-      &__soc-links_wrap {
-        padding-right: 15px;
-      }
-
-      &__routes_links {
-        a {
-          margin-right: 0;
-        }
-      }
-
-      &__logo-icon {
-        margin-left: -68px;
-      }
-
-      button {
-        margin-right: -68px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1240px) {
-    .header {
-      &__header-routes_links {
-        a {
-          margin-right: 5px;
-        }
-      }
-
-       &__selected-phone {
-        img {
-          top: 2px;
-        }
-      }
-
-      &__phone-item {
-        img {
-          top: 19px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1140px) {
-    .header {
-      &__logo-icon {
-        margin-left: -80px;
-      }
-
-      button {
-        margin-right: -80px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1120px) {
-    .header {
-      &__mailto-link,
-      &__selected-phone,
-      &__phone-item,
-      &__soc-links_wrap {
-        padding-right: 5px;
-      }
-
-      &__header-routes_links {
-        a {
-          margin-right: 0;
-        }
-      }
-
-      &__mailto-link {
-        padding-top: 1px;
-      }
     }
   }
 
