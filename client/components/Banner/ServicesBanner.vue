@@ -62,6 +62,9 @@ export default {
   .icon-item {
     padding-left: 3.5vw;
     padding-top: 1vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
 
     .default-image {
       width: 100%;
@@ -85,30 +88,7 @@ export default {
   }
 
   .green-image {
-    margin-top: -121px;
-    margin-right: 1px;
-  }
-
-
-  @media only screen and (max-width: 1010px) {
-    /deep/.navigation-list {
-      /deep/.navigation-item {
-        padding-right: 41px;
-      }
-    }
-
-    .green-image {
-      width: 155px;
-      margin-top: -65px;
-    }
-  }
-
-  @media only screen and (max-width: 970px) {
-
-    .green-image {
-      width: 140px;
-      margin-top: -58px;
-    }
+    width: 74%;
   }
 
   @media only screen and (max-width: 755px) {
@@ -117,108 +97,34 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 670px) {
-    .green-image {
-      width: 125px;
-      margin-top: -50px;
-      margin-right: 0;
-    }
-  }
-
-
   @media only screen and (max-width: 440px) {
     .phone-screen-br {
       display: block;
     }
 
+    .text-content_wrapper {
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+    }
+
     .icon-item {
       min-height: initial;
-      display: block;
-    }
-
-    .green-image {
-      display: block;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      height: 40%;
       position: absolute;
-    }
+      bottom: -12vw;
+      right: 12vw;
 
-    .green-image {
-      width: 105px;
-      top: 55.5%;
-      left: 63.2%;
-    }
-  }
-
-  @media only screen and (max-width: 400px) {
-    .default-image {
-      top: 42.5%;
-      left: 61%;
-    }
-
-    .green-image {
-      top: 54%;
-      left: 70%;
-    }
-  }
-
-  @media only screen and (max-width: 384px) {
-    .default-image {
-      left: 58%;
-    }
-
-    .green-image {
-      left: 67.5%;
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .default-image {
-      top: 40%;
-      left: 59%;
-    }
-
-    .green-image {
-      top: 51.5%;
-      left: 68.5%;
-    }
-  }
-
-  @media only screen and (max-width: 360px) {
-    .default-image {
-      width: 125px;
-      top: 56%;
-      left: 62%;
-    }
-
-    .green-image {
-      width: 93px;
-      top: 56%;
-      left: 70.5%;
-    }
-  }
-
-  @media only screen and (max-width: 355px) {
-    .default-image {
-      top: 38%;
-      left: 61%;
-    }
-
-    .green-image {
-      top: 52%;
-      left: 70%;
-    }
-  }
-
-  @media only screen and (max-width: 320px) {
-    .default-image {
-      width: 105px;
-      top: 40%;
-      left: 63%;
-    }
-
-    .green-image {
-      width: 78px;
-      top: 54%;
-      left: 71.5%;
+      .default-image {
+        display: flex;
+        align-items: flex-end;
+        & img {
+          width: 24%;
+        }
+      }
     }
   }
 </style>
