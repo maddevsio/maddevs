@@ -1,12 +1,10 @@
 <template>
-  <section id="banner-container" class="banner-container">
-    <div class="container">
+    <div class="container banner-container">
       <AboutBanner v-if="currentPage === 'index'"/>
       <ServicesBanner v-if="currentPage === 'services'"/>
       <ProjectsBanner v-if="currentPage === 'projects'"/>
       <CareersBanner v-if="currentPage === 'careers'"/>
     </div>
-  </section>
 </template>
 
 <script>
@@ -57,11 +55,11 @@ export default {
       font-family: 'Hoves-Bold';
       font-style: normal;
       font-weight: bold;
-      font-size: 165px;
+      font-size: 10.4vw;
       color: $text-color--black;
       -webkit-text-stroke: $text-stroke--white;
       line-height: 100%;
-      letter-spacing: -8px;
+      letter-spacing: -9px;
 
       .main-title-white_part {
         color: $text-color--white;
@@ -77,72 +75,7 @@ export default {
 
     .text-content_wrapper {
       display: flex;
-      padding-bottom: 180px;
-    }
-  }
-
-  @media only screen and (max-width: 1620px) {
-    .banner-container {
-      .text-content_wrapper {
-        display: flex;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1520px) {
-    .banner-container {
-      .text-content_wrapper {
-        padding-bottom: 130px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1480px) {
-    .banner-container {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 162px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1440px) {
-    .banner-container {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 149px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1340px) {
-    .banner-container {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 131px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .banner-container {
-      .text-content_wrapper {
-        padding-bottom: 190px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1220px) {
-    .banner-container {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first  {
-        font-size: 110px;
-        letter-spacing: -8px;
-      }
+      padding-bottom: 12vw;
     }
   }
 
@@ -150,25 +83,6 @@ export default {
     .banner-container {
       .banner-content {
         padding-top: 0;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 970px) {
-    .banner-container {
-      .text-content_wrapper {
-        padding-bottom: 105px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .banner-container {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 77px;
-        letter-spacing: -5px;
       }
     }
   }
@@ -181,47 +95,15 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 755px) {
     .banner-container {
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
-        font-size: 77px;
-        letter-spacing: -5px;
-      }
-
-      .icon-item {
-        display: none;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 455px) {
-    .banner-container {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 56px;
+        font-size: 15vw;
         letter-spacing: -2px;
-      }
-
-      .text-content_wrapper {
-        padding-bottom: 120px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 355px) {
-    .banner-container {
-      .banner-main_title,
-      .banner-main_title--white,
-      .banner-main_title--white-first {
-        font-size: 49px;
-        line-height: 101%;
-      }
-
-      .text-content_wrapper {
-        padding-bottom: 114px;
+        line-height: 17vw;
+        padding-bottom: 23vw;
       }
     }
   }
