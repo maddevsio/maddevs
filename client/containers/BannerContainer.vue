@@ -46,7 +46,7 @@ export default {
     .banner-content {
       width: 100%;
       height: 100%;
-      padding-top: 190px;
+      padding-top: 12vw;
     }
 
     .banner-main_title,
@@ -59,7 +59,7 @@ export default {
       color: $text-color--black;
       -webkit-text-stroke: $text-stroke--white;
       line-height: 100%;
-      letter-spacing: -9px;
+      letter-spacing: -0.6vw;
 
       .main-title-white_part {
         color: $text-color--white;
@@ -75,15 +75,7 @@ export default {
 
     .text-content_wrapper {
       display: flex;
-      padding-bottom: 12vw;
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .banner-container {
-      .banner-content {
-        padding-top: 0;
-      }
+      padding-bottom: 8.5vw;
     }
   }
 
@@ -97,13 +89,17 @@ export default {
 
   @media only screen and (max-width: 755px) {
     .banner-container {
+      .banner-content {
+        padding-top: 0;
+      }
+
       .banner-main_title,
       .banner-main_title--white,
       .banner-main_title--white-first {
         font-size: 15vw;
         letter-spacing: -2px;
         line-height: 17vw;
-        padding-bottom: 23vw;
+        padding-bottom: 6vw;
       }
     }
   }
