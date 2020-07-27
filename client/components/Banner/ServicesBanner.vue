@@ -60,23 +60,24 @@ export default {
   }
 
   .icon-item {
-    min-height: 415px;
-    margin-top: 23px;
-    margin-bottom: -36px;
+    padding-left: 3.5vw;
+    padding-top: 1vw;
+
+    .default-image {
+      width: 100%;
+    }
 
     &:hover {
       .hover-image {
         display: block;
+        width: 100%;
       }
 
       .default-image {
         display: none;
+        width: 100%;
       }
     }
-  }
-
-  .text-content_wrapper {
-    justify-content: space-between;
   }
 
   .hover-image {
@@ -88,44 +89,12 @@ export default {
     margin-right: 1px;
   }
 
-  @media only screen and (max-width: 1520px) {
-    .hover-image,
-    .default-image {
-      width: 296px;
-    }
-
-    .green-image {
-      width: 219px;
-      margin-top: -91px;
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .icon-item {
-      min-height: 243px;
-    }
-
-    .hover-image,
-    .default-image {
-      width: 231px;
-    }
-
-    .green-image {
-      width: 170px;
-      margin-top: -71px;
-    }
-  }
 
   @media only screen and (max-width: 1010px) {
     /deep/.navigation-list {
       /deep/.navigation-item {
         padding-right: 41px;
       }
-    }
-
-    .hover-image,
-    .default-image {
-      width: 210px;
     }
 
     .green-image {
@@ -135,16 +104,6 @@ export default {
   }
 
   @media only screen and (max-width: 970px) {
-    /deep/.navigation-list {
-      /deep/.navigation-item {
-        padding-right: 0;
-      }
-    }
-
-    .hover-image,
-    .default-image {
-      width: 188px;
-    }
 
     .green-image {
       width: 140px;
@@ -152,12 +111,13 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 670px) {
-    .hover-image,
-    .default-image {
-      width: 167px;
+  @media only screen and (max-width: 755px) {
+    .icon-item {
+      display: none;
     }
+  }
 
+  @media only screen and (max-width: 670px) {
     .green-image {
       width: 125px;
       margin-top: -50px;
@@ -165,11 +125,6 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 455px) {
-    .text-content_wrapper {
-      padding-bottom: 172px;
-    }
-  }
 
   @media only screen and (max-width: 440px) {
     .phone-screen-br {
@@ -181,16 +136,9 @@ export default {
       display: block;
     }
 
-    .default-image,
     .green-image {
       display: block;
       position: absolute;
-    }
-
-    .default-image {
-      width: 142px;
-      top: 44%;
-      left: 55%;
     }
 
     .green-image {
