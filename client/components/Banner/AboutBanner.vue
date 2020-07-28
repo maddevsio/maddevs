@@ -57,7 +57,7 @@ export default {
     display: flex;
     align-items: flex-end;
 
-    & img {
+    img {
       width: 100%;
     }
   }

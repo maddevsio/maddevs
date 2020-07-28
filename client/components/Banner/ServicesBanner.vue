@@ -121,7 +121,7 @@ export default {
       .default-image {
         display: flex;
         align-items: flex-end;
-        & img {
+        img {
           width: 24%;
         }
       }
