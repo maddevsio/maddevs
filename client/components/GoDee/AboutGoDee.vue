@@ -31,7 +31,7 @@ export default {
 
     &__text-content {
       text-align: center;
-      margin-bottom: get-vw(45px);
+      margin-bottom: get-vw(120px);
     }
 
     &__main-title {
@@ -74,6 +74,7 @@ export default {
     &__people-image {
       width: get-vw(393px);
       height: get-vw(262px);
+      margin-bottom: get-vw(-75px);
     }
   }
 </style>

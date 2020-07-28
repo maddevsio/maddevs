@@ -12,6 +12,7 @@
         <div class="banner__phone-wrapper">
           <img src="@/assets/img/GoDee/svg/godee-iphonex.svg" class="banner__phone-image" alt="preview">
         </div>
+        <img src="@/assets/img/GoDee/svg/banner-godee-route-line.svg" class="banner__route-line" alt="Route">
       </div>
     </div>
   </section>
@@ -69,9 +70,29 @@ export default {
       letter-spacing: get-vw(-1px);
     }
 
+    &__phone-wrapper {
+      z-index: 1;
+    }
+
     &__phone-image {
       width: get-vw(460px);
       height: get-vw(809px);
+    }
+
+    &__route-line {
+      width: get-vw(1104px);
+      height: get-vw(4173px);
+      position: absolute;
+      top: get-vw(920px);
+      left: get-vw(184px);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .banner {
+      &__route-line {
+        left: get-vw(315px);
+      }
     }
   }
 </style>
