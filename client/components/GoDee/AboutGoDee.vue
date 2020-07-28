@@ -30,8 +30,20 @@ export default {
     background-size: contain;
 
     &__text-content {
-      text-align: center;
+      position: relative;
       margin-bottom: get-vw(120px);
+      text-align: center;
+
+      &::before {
+        content: '';
+        width: get-vw(150px);
+        height: get-vw(150px);
+        position: absolute;
+        top: get-vw(135px);
+        left: get-vw(-18px);
+        background: url('../../assets/img/GoDee/svg/godee-bus.svg') no-repeat;
+        background-size: get-vw(150px);
+      }
     }
 
     &__main-title {
@@ -75,6 +87,17 @@ export default {
       width: get-vw(393px);
       height: get-vw(262px);
       margin-bottom: get-vw(-75px);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .about-godee {
+      &__text-content {
+
+        &::before {
+          left: get-vw(247px);
+        }
+      }
     }
   }
 </style>
