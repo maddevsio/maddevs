@@ -52,6 +52,12 @@ exports[`GoDee banner renders correctly 1`] = `
           src="@/assets/img/GoDee/svg/godee-iphonex.svg"
         />
       </div>
+       
+      <img
+        alt="Route"
+        class="banner__route-line"
+        src="@/assets/img/GoDee/svg/banner-godee-route-line.svg"
+      />
     </div>
   </div>
 </section>
