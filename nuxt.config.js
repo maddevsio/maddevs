@@ -10,7 +10,11 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'yandex-verification', content: '1cce4e9bf6ebcdff' }
+      { name: 'yandex-verification', content: '1cce4e9bf6ebcdff' },
+      { ref: 'canonical', href: 'https://maddevsgroup.co.uk' },
+      { ref: 'canonical', href: 'https://maddevsgroup.uk' },
+      { ref: 'canonical', href: 'https://maddevs.uk' },
+      { ref: 'canonical', href: 'https://www.maddevs.io' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
