@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Issues And Solution renders correctly 1`] = `
+<section
+  class="issues-and-solution"
+  id="issues-and-solution"
+>
+  <div
+    class="container"
+  >
+    <h2
+      class="issues-and-solution__main-title"
+    >
+      Issues and Solution
+    </h2>
+  </div>
+   
+  <img
+    alt="Background"
+    class="issues-and-solution__background-image"
+    src="@/assets/img/GoDee/png/issues-and-solution-bg.png"
+  />
+</section>
+`;
