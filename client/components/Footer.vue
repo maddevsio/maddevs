@@ -237,6 +237,11 @@ export default {
         padding-left: 10px;
       }
 
+      &__mailto-link {
+        letter-spacing: 0.2vw;
+        font-size: 6vw;
+      }
+
       &__mail-wrapper {
         margin-top: 4vw;
       }
@@ -254,8 +259,18 @@ export default {
       &__company-name {
         font-size: 4vw;
       }
+
     }
 	}
+
+  @media only screen and (max-width: 520px) {
+    .footer {
+      &__mailto-link {
+        letter-spacing: 0.2vw;
+        font-size: 10vw;
+      }
+    }
+  }
 
 	@media only screen and (max-width: 370px) {
 		.footer {

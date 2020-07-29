@@ -260,6 +260,42 @@ export default {
 		}
 	}
 
+  @media only screen and (max-width: 520px) {
+    .footer-contacts {
+      &__title {
+        padding-bottom: 3.5vw;
+        font-size: 6vw;
+      }
+
+      &__icon {
+        height: 3.5vw;
+        width: 6vw;
+      }
+
+      &__phones-list,
+      &__messengers-list {
+        display: grid;
+        grid-gap: 3.5vw;
+        margin-bottom: 8vw;
+      }
+
+      &__messenger-item,
+      &__phone-item {
+        font-size: 5vw;
+        letter-spacing: -0.1vw;
+      }
+
+      &__message {
+        height: 4vw;
+        width: 6vw;
+      }
+
+      &__messengers-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
 	@media only screen and (max-width: 370px) {
 		.footer-contacts {
 			margin-top: get-vw(37px);
