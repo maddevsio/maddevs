@@ -131,7 +131,7 @@ export default {
 
 	@media only screen and (max-width: 1420px) {
 		.footer {
-			padding-bottom: 65px;
+			padding-bottom: get-vw(65px);
 
 			&__bottom-links-line {
 				display: grid;
@@ -140,15 +140,15 @@ export default {
 				text-align: center;
 			}
 
-			&__bottom-link {
-				&:first-child {
-					padding-left: 0;
-				}
-			}
+			/*&__bottom-link {*/
+			/*	&:first-child {*/
+			/*		padding-left: 0;*/
+			/*	}*/
+			/*}*/
 
-			&__company-name {
-				grid-row-start: 3;
-			}
+			/*&__company-name {*/
+			/*	grid-row-start: 3;*/
+			/*}*/
 		}
 	}
 
