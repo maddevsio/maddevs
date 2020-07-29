@@ -29,6 +29,35 @@
         </div>
         <div class="issues-and-solution__empty-white-block"></div>
       </div>
+      <div class="issues-and-solution__taxi">
+        <div class="issues-and-solution__taxi-content-wrapper">
+          <div class="issues-and-solution__taxi-title">
+            <div class="issues-and-solution__taxi-main-title">Taxi</div>
+            <div class="issues-and-solution__taxi-description">Taxis are safer and more comfortable but less accessible <br> as they cost much higher.</div>
+          </div>
+          <div class="issues-and-solution__price-group">
+            <div class="issues-and-solution__price-item">
+              <div class="issues-and-solution__price-value">0.51 USD</div>
+              <div class="issues-and-solution__price-description">The basic fee</div>
+            </div>
+            <div class="issues-and-solution__price-item">
+              <div class="issues-and-solution__price-value">0.56 USD</div>
+              <div class="issues-and-solution__price-description">The kilometer price</div>
+            </div>
+            <div class="issues-and-solution__price-item">
+              <div class="issues-and-solution__price-value">~10 km (<img src="" alt="">)</div>
+              <div class="issues-and-solution__price-description">Average kilometers per trip</div>
+            </div>
+            <div class="issues-and-solution__price-item">
+              <div class="issues-and-solution__price-value">~25 days</div>
+              <div class="issues-and-solution__price-description">a month</div>
+            </div>
+          </div>
+          <div class="issues-and-solution__result-item">
+            <span>=</span> 300 USD a month
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -80,7 +109,10 @@ export default {
     }
 
     &__main-title,
-    &__description-title {
+    &__description-title,
+    &__taxi-main-title,
+    &__price-value,
+    &__result-item {
       font-family: 'Hoves-Bold';
     }
 
@@ -110,6 +142,19 @@ export default {
           background-size: get-vw(150px);
         }
       }
+
+      &:last-child {
+        &::before {
+          content: '';
+          width: get-vw(46px);
+          height: get-vw(46px);
+          position: absolute;
+          top: get-vw(140px);
+          left: get-vw(-102px);
+          background: url('../../assets/img/GoDee/svg/route-dot.svg') no-repeat;
+          background-size: get-vw(46px);
+        }
+      }
     }
 
     &__description-title {
@@ -135,7 +180,8 @@ export default {
     }
 
     &__description-paragraph,
-    &__icon-designation {
+    &__icon-designation,
+    &__taxi-description {
       font-size: get-vw(24px);
       font-family: 'Hoves-Regular';
       letter-spacing: get-vw(-1px);
@@ -187,15 +233,82 @@ export default {
       height: get-vw(755px);
     }
 
-    &__empty-white-block {
+    &__empty-white-block,
+    &__taxi {
       width: 100%;
       height: get-vw(421px);
-      position: absolute;
-      bottom: 5px;
       border-radius: get-vw(15px);
       box-shadow: 0 get-vw(10px) get-vw(25px) rgba(0, 0, 0, 0.15);
       background-color: $bgcolor--white;
       z-index: -1;
+    }
+
+    &__empty-white-block {
+      position: absolute;
+      bottom: 5px;
+    }
+
+    &__taxi {
+      position: relative;
+      margin-top: get-vw(40px);
+    }
+
+    &__taxi-content-wrapper {
+      padding: get-vw(30px) get-vw(45px) get-vw(44px) get-vw(102px);
+    }
+
+    &__taxi-main-title {
+      margin-bottom: get-vw(15px);
+      font-size: get-vw(32px);
+      letter-spacing: get-vw(-1px);
+    }
+
+    &__taxi-description {
+      margin-bottom: get-vw(34px);
+      color: $text-color--grey-dark;
+    }
+
+    &__price-group {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: get-vw(3px) solid $border-color--grey-godee-case;
+    }
+
+    &__price-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__price-value {
+      margin-bottom: get-vw(10px);
+      font-size: get-vw(44px);
+      letter-spacing: get-vw(-1px);
+    }
+
+    &__price-description {
+      margin-bottom: get-vw(25px);
+      font-size: get-vw(28px);
+      font-family: 'Hoves-Regular';
+      letter-spacing: get-vw(-0.8px);
+      color: $text-color--grey;
+    }
+
+    &__result-item {
+      display: flex;
+      align-items: center;
+      margin-top: get-vw(7px);
+      font-size: get-vw(50px);
+      letter-spacing: get-vw(-2px);
+
+      span {
+        display: block;
+        margin-top: get-vw(-8px);
+        margin-right: get-vw(15px);
+        font-size: get-vw(90px);
+        letter-spacing: get-vw(-3px);
+        color: $text-color--grey;
+      }
     }
   }
 
@@ -205,6 +318,12 @@ export default {
         &:first-child {
           &::before {
             left: get-vw(-130px);
+          }
+        }
+
+        &:last-child {
+          &::before {
+            left: get-vw(-80px);
           }
         }
       }
