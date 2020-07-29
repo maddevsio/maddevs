@@ -1,4 +1,5 @@
 <template>
+  <div class="container banner-container">
   <div class="banner-content">
     <div class="text-content_wrapper">
       <div class="main-title-wrapper">
@@ -10,9 +11,10 @@
         <img src="@/assets/img/Services/svg/order-a-project.svg" alt="Order a Project Logotype" class="default-image" v-if="!$store.state.modalWindowIsOpen">
         <img src="@/assets/img/Services/svg/order-a-project-hover.svg"  alt="Order a Project Logotype" class="hover-image" v-if="!$store.state.modalWindowIsOpen" @click="showModal">
         <img src="@/assets/img/Services/svg/order-a-project-green.svg" alt="Order a Project Logotype" class="green-image" v-if="$store.state.modalWindowIsOpen" @click="showModal">
-      </div> 
+      </div>
     </div>
     <navigationList/>
+  </div>
   </div>
 </template>
 
@@ -26,7 +28,7 @@ export default {
   },
   data() {
     return {
-      scrollYPosition: null 
+      scrollYPosition: null
     };
   },
   mounted() {
@@ -58,23 +60,27 @@ export default {
   }
 
   .icon-item {
-    min-height: 415px;
-    margin-top: 23px;
-    margin-bottom: -36px;
+    padding-left: 3.5vw;
+    padding-top: 1vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    .default-image {
+      width: 100%;
+    }
 
     &:hover {
       .hover-image {
         display: block;
+        width: 100%;
       }
 
       .default-image {
         display: none;
+        width: 100%;
       }
     }
-  }
-
-  .text-content_wrapper {
-    justify-content: space-between;
   }
 
   .hover-image {
@@ -82,90 +88,12 @@ export default {
   }
 
   .green-image {
-    margin-top: -121px;
-    margin-right: 1px;
+    width: 74%;
   }
 
-  @media only screen and (max-width: 1520px) {
-    .hover-image,
-    .default-image {
-      width: 296px;
-    }
-
-    .green-image {
-      width: 219px;
-      margin-top: -91px;
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
+  @media only screen and (max-width: 755px) {
     .icon-item {
-      min-height: 243px;
-    }
-
-    .hover-image,
-    .default-image {
-      width: 231px;
-    }
-
-    .green-image {
-      width: 170px;
-      margin-top: -71px;
-    }
-  }
-
-  @media only screen and (max-width: 1010px) {
-    /deep/.navigation-list {
-      /deep/.navigation-item {
-        padding-right: 41px;
-      }
-    }
-
-    .hover-image,
-    .default-image {
-      width: 210px;
-    }
-
-    .green-image {
-      width: 155px;
-      margin-top: -65px;
-    }
-  }
-
-  @media only screen and (max-width: 970px) {
-    /deep/.navigation-list {
-      /deep/.navigation-item {
-        padding-right: 0;
-      }
-    }
-
-    .hover-image,
-    .default-image {
-      width: 188px;
-    }
-
-    .green-image {
-      width: 140px;
-      margin-top: -58px;
-    }
-  }
-
-  @media only screen and (max-width: 670px) {
-    .hover-image,
-    .default-image {
-      width: 167px;
-    }
-
-    .green-image {
-      width: 125px;
-      margin-top: -50px;
-      margin-right: 0;
-    }
-  }
-
-  @media only screen and (max-width: 455px) {
-    .text-content_wrapper {
-      padding-bottom: 172px;
+      display: none;
     }
   }
 
@@ -174,101 +102,29 @@ export default {
       display: block;
     }
 
+    .text-content_wrapper {
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+    }
+
     .icon-item {
       min-height: initial;
-      display: block;
-    }
-
-    .default-image,
-    .green-image {
-      display: block;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      height: 40%;
       position: absolute;
-    }
+      bottom: -12vw;
+      right: 12vw;
 
-    .default-image {
-      width: 142px;
-      top: 44%;
-      left: 55%;
-    }
-
-    .green-image {
-      width: 105px;
-      top: 55.5%;
-      left: 63.2%;
-    }
-  }
-
-  @media only screen and (max-width: 400px) {
-    .default-image {
-      top: 42.5%;
-      left: 61%;
-    }
-
-    .green-image {
-      top: 54%;
-      left: 70%;
-    }
-  }
-
-  @media only screen and (max-width: 384px) {
-    .default-image {
-      left: 58%;
-    }
-
-    .green-image {
-      left: 67.5%;
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .default-image {
-      top: 40%;
-      left: 59%;
-    }
-
-    .green-image {
-      top: 51.5%;
-      left: 68.5%;
-    }
-  }
-
-  @media only screen and (max-width: 360px) {
-    .default-image {
-      width: 125px;
-      top: 56%;
-      left: 62%;
-    }
-
-    .green-image {
-      width: 93px;
-      top: 56%;
-      left: 70.5%;
-    }
-  }
-
-  @media only screen and (max-width: 355px) {
-    .default-image {
-      top: 38%;
-      left: 61%;
-    }
-
-    .green-image {
-      top: 52%;
-      left: 70%;
-    }
-  }
-
-  @media only screen and (max-width: 320px) {
-    .default-image {
-      width: 105px;
-      top: 40%;
-      left: 63%;
-    }
-
-    .green-image {
-      width: 78px;
-      top: 54%;
-      left: 71.5%;
+      .default-image {
+        display: flex;
+        align-items: flex-end;
+        img {
+          width: 24%;
+        }
+      }
     }
   }
 </style>

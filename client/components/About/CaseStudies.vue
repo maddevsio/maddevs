@@ -151,6 +151,13 @@ export default {
     display: flex;
     flex-wrap: wrap;
 
+    &-flame-background {
+      position: absolute;
+      bottom: 85vw;
+      right: 7vw;
+      width: 26vw;
+    }
+
     .single-project {
       &__background_first-project {
         background-size: cover;
@@ -212,6 +219,12 @@ export default {
   .case-studies {
     .projects {
       display: none;
+    }
+
+    .projects-flame-background {
+      bottom: -5vw;
+      right: 7vw;
+      width: 22vw;
     }
 
     .projects-mobile-slider {

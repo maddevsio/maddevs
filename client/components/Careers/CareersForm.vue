@@ -197,6 +197,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
+@import '../../assets/styles/get-vw';
 
 .careers {
   .container {
@@ -209,7 +210,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: 15px;
+    margin-top: get-vw(15px);
     padding: 0;
 
     /deep/ .ui-radio-buttons {
@@ -221,9 +222,9 @@ export default {
           &::after {
             content: 'roles.';
             font-family: 'Hoves-Regular';
-            font-size: 40px;
+            font-size: get-vw(40px);
             font-weight: 500;
-            margin-left: 10px;
+            margin-left: get-vw(10px);
             line-height: normal;
           }
         }
@@ -239,18 +240,18 @@ export default {
   &__wrapper {
     border-radius: $form-border-radius;
     background: $bgcolor--grey-light;
-    padding: 63px 102px 102px 92px;
+    padding: get-vw(63px) get-vw(102px) get-vw(102px) get-vw(92px);
   }
 
   &__background-logo {
     position: absolute;
-    top: -260px;
-    right: 60px;
-    height: auto;
+    top: -14vw;
+    right: 4vw;
+    height: 20vw;
   }
 
   .email-title {
-    margin: 80px 0;
+    margin: get-vw(80px) 0;
   }
 
   &__form-name-input,
@@ -258,9 +259,9 @@ export default {
   &__form-position-input,
   &__form-linkedin-input {
     background-color: transparent;
-    border: 0px solid;
-    height: 65px;
-    max-width: 610px;
+    border: 0 solid;
+    height: get-vw(65px);
+    max-width: get-vw(610px);
     color: $text-color--grey;
     caret-color: $text-color--red;
   }
@@ -281,9 +282,9 @@ export default {
 
   &__linkedin-link {
     color: $text-color--black;
-    font-size: 20px;
+    font-size: get-vw(20px);
     cursor: pointer;
-    line-height: 33px;
+    line-height: get-vw(33px);
     text-align: center;
     letter-spacing: -0.02em;
     text-decoration-line: underline;
@@ -297,12 +298,12 @@ export default {
     }
 
     &-icon {
-      margin-right: 25px;
+      margin-right: get-vw(25px);
     }
   }
 
   .radio-buttons {
-    margin-top: 10px;
+    margin-top: get-vw(10px);
   }
 
   &__form-name-label,
@@ -329,15 +330,6 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .careers {
-    &__background-logo {
-      height: 250px;
-      top: -204px;
-    }
-  }
-}
-
 @media only screen and (max-width: 960px) {
   .careers {
     &__position-list {
@@ -355,10 +347,6 @@ export default {
 
 @media only screen and (max-width: 870px) {
   .careers {
-    &__background-logo {
-      height: 220px;
-      top: -179px;
-    }
 
     &__form-list {
       margin-bottom: 59px;
@@ -400,21 +388,8 @@ export default {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .careers {
-    &__background-logo {
-      top: -85px;
-      right: 54px;
-    }
-  }
-}
-
 @media only screen and (max-width: 670px) {
   .careers {
-    &__background-logo {
-      height: 180px;
-      top: -146px;
-    }
 
     &__wrapper {
       padding: 53px 72px 92px 62px;
@@ -434,10 +409,6 @@ export default {
 
     &__wrapper {
       border-radius: 0;
-    }
-
-    &__background-logo {
-      right: 30px;
     }
   }
 }
@@ -472,15 +443,6 @@ export default {
   .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
     content: 'roles.';
     font-size: 24px;
-  }
-}
-
-@media only screen and (max-width: 455px) {
-  .careers {
-    &__background-logo {
-      height: 108px;
-      top: -87px;
-    }
   }
 }
 </style>

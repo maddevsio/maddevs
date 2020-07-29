@@ -9,11 +9,11 @@ describe('Index page', () => {
   beforeEach(() => {
     global.$nuxt = {
       $route: {
-        name: null
+        name: '/'
       }
     };
     wrapper = mount(IndexPage, {
-      stubs: ['ValidationObserver', 'client-only']
+      stubs: ['router-link', 'router-view', 'ValidationObserver', 'client-only']
     });
   });
 
@@ -21,7 +21,7 @@ describe('Index page', () => {
   test('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
+
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });

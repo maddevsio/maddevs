@@ -100,6 +100,10 @@ export default {
         {
           title: 'Amazon CloudWatch',
           prefix: 'amazon-cloudwatch'
+        },
+        {
+          title: 'GitLab CI',
+          prefix: 'gitlab-ci'
         }
       ]
     };}
