@@ -131,23 +131,10 @@ export default {
 
 	@media only screen and (max-width: 1420px) {
 		.footer {
-			padding-bottom: get-vw(65px);
-
 			&__bottom-links-line {
 				display: grid;
 				justify-content: center;
-				grid-row-gap: get-vw(25px);
 				text-align: center;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 1320px) {
-		.footer {
-			padding-top: get-vw(90px);
-
-			&__mail-wrapper {
-				margin-top: get-vw(50px);
 			}
 		}
 	}
@@ -155,7 +142,6 @@ export default {
 	@media only screen and (max-width: 1220px) {
 		.footer {
 			&__mail-wrapper {
-				margin-top: get-vw(25px);
 
 				img {
 					display: none;
@@ -164,10 +150,6 @@ export default {
 
 			&__mailto-link {
 				margin-left: 0;
-			}
-
-			&__content {
-				padding-bottom: get-vw(55px);
 			}
 		}
 	}
@@ -179,10 +161,10 @@ export default {
 		}
 	}
 
-	@media only screen and (max-width: 960px) {
+	@media only screen and (max-width: 980px) {
 		.footer {
-			padding-top: get-vw(40px);
-			padding-bottom: get-vw(50px);
+      padding-bottom: 5vw;
+      padding-top: 9vw;
 
 			&__content {
 				flex-direction: column;
@@ -192,11 +174,20 @@ export default {
 			&__mail-wrapper {
 				margin-top: get-vw(20px);
 			}
+
+      &__company-name,
+      &__bottom-link {
+        font-size: 2vw;
+      }
+
+      &__left-bottom_links {
+        margin-bottom: 2vw;
+      }
 		}
 	}
 
-  @media only screen and (max-width: 760px) {
-    .footer {
+	@media only screen and (max-width: 760px) {
+		.footer {
       &__bottom-link {
         font-size: 2.5vw;
         margin-bottom: 1vw;
@@ -206,14 +197,6 @@ export default {
         grid-row: 3 / 3;
         font-size: 2.5vw;
       }
-    }
-  }
-
-	@media only screen and (max-width: 760px) {
-		.footer {
-			&__bottom-links-line {
-				padding-top: get-vw(35px);
-			}
 
 			&__left-bottom_links {
 				flex-wrap: wrap;
@@ -230,8 +213,6 @@ export default {
 
 	@media only screen and (max-width: 680px) {
     .footer {
-      padding-bottom: 17px;
-      padding-top: get-vw(60px);
 
       &__bottom-link {
         padding-left: 10px;
@@ -265,26 +246,13 @@ export default {
 
   @media only screen and (max-width: 520px) {
     .footer {
+      padding-bottom: 17vw;
+      padding-top: 15.5vw;
+
       &__mailto-link {
         letter-spacing: 0.2vw;
         font-size: 10vw;
       }
     }
   }
-
-	@media only screen and (max-width: 370px) {
-		.footer {
-			padding-bottom: 43px;
-
-			&__mailto-link {
-				font-size: 34px;
-			}
-
-			&__bottom-link {
-				&:nth-child(2) {
-					padding-top: 10px;
-				}
-			}
-		}
-	}
 </style>

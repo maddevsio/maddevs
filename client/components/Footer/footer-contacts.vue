@@ -295,11 +295,4 @@ export default {
       }
     }
   }
-
-	@media only screen and (max-width: 370px) {
-		.footer-contacts {
-			margin-top: get-vw(37px);
-			margin-bottom: get-vw(58px);
-		}
-	}
 </style>
