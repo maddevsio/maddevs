@@ -139,26 +139,12 @@ export default {
 				grid-row-gap: get-vw(25px);
 				text-align: center;
 			}
-
-			/*&__bottom-link {*/
-			/*	&:first-child {*/
-			/*		padding-left: 0;*/
-			/*	}*/
-			/*}*/
-
-			/*&__company-name {*/
-			/*	grid-row-start: 3;*/
-			/*}*/
 		}
 	}
 
 	@media only screen and (max-width: 1320px) {
 		.footer {
 			padding-top: get-vw(90px);
-
-			&__mailto-link {
-				font-size: get-vw(62px);
-			}
 
 			&__mail-wrapper {
 				margin-top: get-vw(50px);
@@ -178,7 +164,6 @@ export default {
 
 			&__mailto-link {
 				margin-left: 0;
-				font-size: get-vw(46px);
 			}
 
 			&__content {
@@ -210,6 +195,20 @@ export default {
 		}
 	}
 
+  @media only screen and (max-width: 760px) {
+    .footer {
+      &__bottom-link {
+        font-size: 2.5vw;
+        margin-bottom: 1vw;
+      }
+
+      &__company-name {
+        grid-row: 3 / 3;
+        font-size: 2.5vw;
+      }
+    }
+  }
+
 	@media only screen and (max-width: 760px) {
 		.footer {
 			&__bottom-links-line {
@@ -220,13 +219,6 @@ export default {
 				flex-wrap: wrap;
 				justify-content: center;
 			}
-
-			&__bottom-link {
-				&:last-child {
-					padding-top: get-vw(10px);
-				}
-			}
-
 		}
 
 		.gdpr,
@@ -237,24 +229,13 @@ export default {
 	}
 
 	@media only screen and (max-width: 680px) {
-		.footer {
-			padding-top: get-vw(60px);
-		}
-	}
+    .footer {
+      padding-bottom: 17px;
+      padding-top: get-vw(60px);
 
-	@media only screen and (max-width: 420px) {
-		.footer {
-			padding-top: 55px;
-			padding-bottom: 17px;
-
-			&__mailto-link {
-				font-size: 40px;
-				letter-spacing: -0.02em;
-			}
-
-			&__bottom-link {
-				padding-left: 10px;
-			}
+      &__bottom-link {
+        padding-left: 10px;
+      }
 
       &__mail-wrapper {
         margin-top: 4vw;
@@ -272,9 +253,8 @@ export default {
 
       &__company-name {
         font-size: 4vw;
-        grid-row: 3 / 3;
       }
-		}
+    }
 	}
 
 	@media only screen and (max-width: 370px) {

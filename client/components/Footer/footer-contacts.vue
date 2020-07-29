@@ -129,7 +129,7 @@ export default {
 			position: relative;
 			color: $text-color--grey;
 			font-family: 'Hoves-Bold';
-			font-size: 22px;
+			font-size: get-vw(22px);
 			text-decoration: none;
 			letter-spacing: -1px;
       display: flex;
@@ -176,10 +176,7 @@ export default {
 
 	@media only screen and (max-width: 1024px) {
 		.footer-contacts {
-			&__title {
-				padding-bottom: get-vw(7px);
-        font-size: 4vw;
-      }
+
 		}
 	}
 
@@ -193,6 +190,21 @@ export default {
 				margin-top: 0;
 			}
 
+      &__title {
+        padding-bottom: 2vw;
+        font-size: 3vw;
+      }
+
+      &__phone-item,
+      &__messenger-item {
+        font-size: 2.7vw;
+      }
+
+      &__message {
+        height: 2vw;
+        width: 4vw;
+      }
+
 			&__messengers-list {
 				grid-template-columns: repeat(2, 1fr);
 				grid-column-gap: get-vw(54px);
@@ -200,52 +212,12 @@ export default {
 		}
 	}
 
-	@media only screen and (max-width: 680px) {
-		.footer-contacts {
-			&__messengers-list {
-				grid-template-columns: repeat(1, 1fr);
-			}
-		}
-	}
+  @media only screen and (max-width: 768px) {
 
-	@media only screen and (max-width: 520px) {
-		.footer-contacts {
-			flex-direction: column;
-
+    .footer-contacts {
       &__icon {
-        height: 4vw;
-        width: 6vw;
-      }
-
-      &__message {
-        height: 3vw;
-        width: 5vw;
-      }
-
-			&__messengers-list {
-				grid-template-columns: repeat(2, 1fr);
-				grid-column-gap: 0;
-			}
-
-			&__message-us {
-				margin-top: get-vw(30px);
-			}
-
-			&__messenger-item,
-			&__phone-item {
-				font-size: 4vw;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 420px) {
-		.footer-contacts {
-			margin-top: 50px;
-			margin-bottom: 80px;
-
-      &__title {
-        padding-bottom: 3.5vw;
-        font-size: 6vw;
+        height: 2.5vw;
+        width: 4vw;
       }
 
       &__phones-list,
@@ -257,12 +229,33 @@ export default {
 
       &__messenger-item,
       &__phone-item {
-        font-size: 5vw;
+        font-size: 3vw;
       }
 
       &__message {
-        height: 4.5vw;
-        width: 7vw;
+        height: 3vw;
+        width: 5vw;
+      }
+    }
+  }
+
+	@media only screen and (max-width: 680px) {
+		.footer-contacts {
+			margin-top: 50px;
+			margin-bottom: 80px;
+      flex-direction: column;
+
+      &__message-us {
+        margin-top: get-vw(30px);
+      }
+
+      &__title {
+        padding-bottom: 2.5vw;
+        font-size: 5vw;
+      }
+
+      &__messengers-list {
+        grid-template-columns: repeat(1, 1fr);
       }
 		}
 	}

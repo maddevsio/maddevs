@@ -173,10 +173,15 @@ export default {
   @media only screen and (max-width: 960px) {
 		.footer-form {
       width: 100%;
+
+      button {
+        height: 7vw;
+        margin-bottom: 6vw;
+      }
 		}
   }
 
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 680px) {
 		.footer-form {
 			.field-item {
         margin-bottom: 0;
