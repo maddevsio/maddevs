@@ -135,6 +135,7 @@ export default {
 				display: grid;
 				justify-content: center;
 				text-align: center;
+        grid-row-gap: 1vw;
 			}
 		}
 	}

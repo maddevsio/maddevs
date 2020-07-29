@@ -180,7 +180,7 @@ export default {
 		}
 	}
 
-	@media only screen and (max-width: 960px) {
+	@media only screen and (max-width: 980px) {
 		.footer-contacts {
 			flex-direction: row;
 			justify-content: space-between;

@@ -170,7 +170,7 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 980px) {
 		.footer-form {
       width: 100%;
 
