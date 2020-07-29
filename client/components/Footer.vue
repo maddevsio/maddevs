@@ -215,10 +215,6 @@ export default {
 	@media only screen and (max-width: 680px) {
     .footer {
 
-      &__bottom-link {
-        padding-left: 10px;
-      }
-
       &__mailto-link {
         letter-spacing: 0.2vw;
         font-size: 6vw;
