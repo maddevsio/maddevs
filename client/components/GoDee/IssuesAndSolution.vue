@@ -202,12 +202,21 @@ export default {
   @media only screen and (max-width: 768px) {
     .issues-and-solution {
       &__description-item {
-      &:first-child {
-        &::before {
-          left: get-vw(-122px);
+        &:first-child {
+          &::before {
+            left: get-vw(-130px);
+          }
         }
       }
-    }
+
+      &__transportation-content-wrapper {
+        justify-content: space-between;
+      }
+
+      &__image-wrapper {
+        margin-left: 0;
+        margin-right: get-vw(-77px);
+      }
     }
   }
 </style>
