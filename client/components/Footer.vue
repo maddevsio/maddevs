@@ -156,10 +156,6 @@ export default {
 		.footer {
 			padding-top: get-vw(90px);
 
-			&__main-title {
-				font-size: get-vw(100px);
-			}
-
 			&__mailto-link {
 				font-size: get-vw(62px);
 			}
@@ -195,10 +191,6 @@ export default {
 		.footer {
 			padding-top: get-vw(75px);
 			padding-bottom: get-vw(43px);
-
-			&__main-title {
-				font-size: get-vw(90px);
-			}
 		}
 	}
 
@@ -206,11 +198,6 @@ export default {
 		.footer {
 			padding-top: get-vw(40px);
 			padding-bottom: get-vw(50px);
-
-			&__main-title {
-				font-size: get-vw(64px);
-				letter-spacing: -0.03em;
-			}
 
 			&__content {
 				flex-direction: column;
@@ -255,20 +242,6 @@ export default {
 		}
 	}
 
-	@media only screen and (max-width: 500px) {
-		.footer {
-			&__left-bottom_links {
-				flex-direction: column;
-			}
-
-			&__bottom-link {
-				&:nth-child(2) {
-					padding-top: 10px;
-				}
-			}
-		}
-	}
-
 	@media only screen and (max-width: 420px) {
 		.footer {
 			padding-top: 55px;
@@ -277,11 +250,6 @@ export default {
 			&__mailto-link {
 				font-size: 40px;
 				letter-spacing: -0.02em;
-			}
-
-			&__main-title {
-        font-size: 14.2vw;
-				letter-spacing: -2px;
 			}
 
 			&__bottom-link {
@@ -294,10 +262,17 @@ export default {
 
       &__bottom-link {
         font-size: 4vw;
+        padding-bottom: 2vw;
+      }
+
+      &__bottom-links-line {
+        grid-row-gap: 7vw;
+        padding-top: 8vw;
       }
 
       &__company-name {
-        display: none;
+        font-size: 4vw;
+        grid-row: 3 / 3;
       }
 		}
 	}

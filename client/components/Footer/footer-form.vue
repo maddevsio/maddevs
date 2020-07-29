@@ -188,11 +188,12 @@ export default {
       }
 
       .form-checkboxes {
-        padding-top: 6vw;
+        padding-top: 7vw;
       }
 
       button {
         height: 17vw;
+        margin-bottom: 6vw;
       }
 		}
 	}
