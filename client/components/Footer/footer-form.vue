@@ -122,10 +122,10 @@ export default {
 
     &_email {
       /deep/ .v-placeholder-asterisk {
-        font-size: get-vw(18px);
+        font-size: 18px;
         color: $bgcolor--grey;
         font-family: 'Hoves-Regular';
-        left: get-vw(10px) !important;
+        left: 10px !important;
         top: 50% !important;
         transform: translateY(-50%);
 
@@ -141,8 +141,8 @@ export default {
 		}
 
 		textarea {
-			min-height: get-vw(64px);
-			padding: get-vw(22px) get-vw(10px);
+			min-height: 64px;
+			padding: 22px 10px;
       resize: vertical;
     }
 
@@ -156,7 +156,7 @@ export default {
     }
 
     .entry-field {
-      padding: get-vw(21px) get-vw(10px);
+      padding: 21px 10px;
     }
 
     .field-item {
@@ -180,6 +180,19 @@ export default {
 		.footer-form {
 			.field-item {
         margin-bottom: 0;
+      }
+
+      .fields-list {
+        display: grid;
+        grid-row-gap: 2vw;
+      }
+
+      .form-checkboxes {
+        padding-top: 6vw;
+      }
+
+      button {
+        height: 17vw;
       }
 		}
 	}

@@ -280,13 +280,25 @@ export default {
 			}
 
 			&__main-title {
-				font-size: 53px;
+        font-size: 14.2vw;
 				letter-spacing: -2px;
 			}
 
 			&__bottom-link {
 				padding-left: 10px;
 			}
+
+      &__mail-wrapper {
+        margin-top: 4vw;
+      }
+
+      &__bottom-link {
+        font-size: 4vw;
+      }
+
+      &__company-name {
+        display: none;
+      }
 		}
 	}
 
@@ -296,10 +308,6 @@ export default {
 
 			&__mailto-link {
 				font-size: 34px;
-			}
-
-			&__mail-wrapper {
-				margin-top: 10px;
 			}
 
 			&__bottom-link {

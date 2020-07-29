@@ -242,6 +242,28 @@ export default {
 		.footer-contacts {
 			margin-top: 50px;
 			margin-bottom: 80px;
+
+      &__title {
+        padding-bottom: 3.5vw;
+        font-size: 6vw;
+      }
+
+      &__phones-list,
+      &__messengers-list {
+        display: grid;
+        grid-gap: 2.5vw;
+        margin-bottom: 8vw;
+      }
+
+      &__messenger-item,
+      &__phone-item {
+        font-size: 5vw;
+      }
+
+      &__message {
+        height: 4.5vw;
+        width: 7vw;
+      }
 		}
 	}
 
