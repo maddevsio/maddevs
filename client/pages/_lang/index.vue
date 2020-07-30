@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <BannerContainer />
+    <AboutBanner />
     <WeCreateItProjectFor />
     <TechnologiesAndTools />
     <CaseStudies />
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import BannerContainer from '@/containers/BannerContainer';
+import AboutBanner from '@/components/Banner/AboutBanner';
 import WeCreateItProjectFor from '@/components/About/WeCreateItProjectFor';
 import TechnologiesAndTools from '@/components/About/TechnologiesAndTools';
 import CaseStudies from '@/components/About/CaseStudies';
@@ -24,7 +24,7 @@ import MeetOurExperts from '@/components/About/MeetOurExperts';
 export default {
   name: 'About',
   components: {
-    BannerContainer,
+    AboutBanner,
     WeCreateItProjectFor,
     TechnologiesAndTools,
     CustomerTestimonials,

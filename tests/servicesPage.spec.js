@@ -1,6 +1,4 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { shallowMount } from '@vue/test-utils';
 import ServicesPage from '@/pages/_lang/services';
 
 describe('Services page', () => {
@@ -12,16 +10,14 @@ describe('Services page', () => {
         name: null
       }
     };
-    wrapper = mount(ServicesPage, {
-      stubs: ['ValidationObserver']
-    });
+    wrapper = shallowMount(ServicesPage);
   });
 
   // ------ IMPORTANT ----- //
   test('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
+
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
