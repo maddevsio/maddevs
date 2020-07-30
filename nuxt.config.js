@@ -35,7 +35,6 @@ module.exports = {
   plugins: [
     '~/plugins/i18n.js',
     '~/plugins/vue-scrollto.js',
-    '~/plugins/google-analytics.js',
     '~/plugins/vee-validate.js',
     '~/plugins/vue2-perfect-scrollbar.js',
     {
@@ -84,18 +83,12 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/axios',
-    [
-      '@nuxtjs/yandex-metrika',
-      {
-        id: '52976554',
-        webvisor: true,
-        clickmap: true,
-        useCDN: false,
-        trackLinks: true,
-        accurateTrackBounce: true
-      }
-    ]
+    '@nuxtjs/gtm'
   ],
+  gtm: {
+    id: 'GTM-NNKVRF3',
+    enabled: true
+  },
   axios: {
     baseURL: process.env.NODE_API_URL
   }
