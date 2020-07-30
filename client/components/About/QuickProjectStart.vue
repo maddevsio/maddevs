@@ -195,13 +195,13 @@ export default {
 
   @media only screen and (max-width: 960px) {
     .quick-project_start {
-      padding-top: 85px;
-      padding-bottom: 124px;
+      padding-top: get-vw(85px, 960);
+      padding-bottom: get-vw(124px, 960);
       text-align: initial;
 
       &__content-items_list {
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 45px;
+        grid-row-gap: get-vw(45px, 960);
       }
 
       &__content-item {
@@ -210,12 +210,8 @@ export default {
       }
 
       &__icon-item {
-        padding-top: 13px;
-        padding-right: 17px;
-
-        img {
-          width: 30px;
-        }
+        padding-top: get-vw(13px, 960);
+        padding-right: get-vw(17px, 960);
 
         &::after {
           display: none;
@@ -223,26 +219,30 @@ export default {
       }
 
       .team {
-        padding-top: 14px;
+        padding-top: get-vw(14px, 960);
       }
 
       .start {
-        padding-top: 10px;
+        padding-top: get-vw(10px, 960);
       }
     }
   }
+
 
   @media only screen and (max-width: 745px) {
     .quick-project_start {
       &__icon {
         height: 6vw;
-        width: 8vw;
+        width: 11vw;
       }
     }
   }
 
   @media only screen and (max-width: 680px) {
     .quick-project_start {
+      padding-top: 16.8vw;
+      padding-bottom: 26vw;
+
       &__paragraph {
         width: initial;
       }
@@ -251,6 +251,11 @@ export default {
 
   @media only screen and (max-width: 520px) {
     .quick-project_start {
+
+     &__main-title {
+       padding-bottom: 14.25vw;
+       }
+
       &__icon {
         height: 7vw;
         width: 9vw;
@@ -260,44 +265,6 @@ export default {
         text-transform: capitalize;
         color: $text-color--red;
         letter-spacing: -0.1vw;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .quick-project_start {
-      padding-bottom: 102px;
-
-      &__content-items_list {
-        grid-row-gap: 35px;
-      }
-
-      &__button-wrap {
-        margin-top: 35px;
-        margin-left: 52px;
-
-        button {
-          width: calc(100% - 28%);
-        }
-      }
-
-      &__icon-item {
-        padding-top: 5px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 340px) {
-    .quick-project_start {
-      padding-top: 65px;
-      padding-bottom: 78px;
-
-      &__button-wrap {
-        margin-left: 0;
-
-        button {
-          width: 100%;
-        }
       }
     }
   }
