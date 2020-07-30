@@ -29,6 +29,7 @@
         </div>
         <div class="issues-and-solution__empty-white-block"></div>
       </div>
+      <img src="@/assets/img/GoDee/svg/route-dot.svg" class="issues-and-solution__taxi-route-dot" alt="Route dot">
       <div class="issues-and-solution__taxi">
         <div class="issues-and-solution__taxi-content-wrapper">
           <div class="issues-and-solution__taxi-title">
@@ -71,6 +72,7 @@
         <div class="issues-and-solution__solution-main-title">Solution: GoDee</div>
         <div class="issues-and-solution__solution-description">GoDee’s founders decided to make buses smarter and <br> more user-friendly. GoDee tackled this by converting <br> traditional bus transportation into a modern service <br> offering a convenient and predictable ride that is just <br> one click away.</div>
       </div>
+      <img src="@/assets/img/GoDee/svg/route-dot-orange.svg" class="issues-and-solution__solution-route-dot" alt="Route dot">
       <div class="issues-and-solution__solution">
         <div class="issues-and-solution__solution-content-wrapper">
           <div class="issues-and-solution__price-group issues-and-solution__solution-price-group">
@@ -415,6 +417,16 @@ export default {
       bottom: get-vw(-22px);
     }
 
+    &__equal-symbol-basic-fee {
+      right: get-vw(-65px);
+    }
+
+    &__equal-symbol-kilometer-price,
+    &__equal-symbol-kilometers-per-trip {
+      right: get-vw(-80px);
+      transform: rotate(45deg);
+    }
+
     &__solution-description {
       color: $text-color--grey-dark;
       margin-left: get-vw(102px);
@@ -426,6 +438,21 @@ export default {
       position: absolute;
       right: 0;
       bottom: 0;
+    }
+
+    &__taxi-route-dot,
+    &__solution-route-dot {
+      position: absolute;
+      height: get-vw(46px);
+      width: get-vw(46px);
+    }
+
+    &__taxi-route-dot {
+      margin-top: get-vw(215px);
+    }
+
+    &__solution-route-dot {
+      margin-top: get-vw(140px);
     }
   }
 
@@ -453,6 +480,11 @@ export default {
         margin-left: 0;
         margin-right: get-vw(-77px);
       }
+
+      &__taxi-route-dot,
+      &__solution-route-dot {
+        margin-left: get-vw(23px);
+      }  
     }
   }
 </style>
