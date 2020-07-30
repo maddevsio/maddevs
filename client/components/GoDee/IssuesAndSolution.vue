@@ -37,15 +37,24 @@
           </div>
           <div class="issues-and-solution__price-group">
             <div class="issues-and-solution__price-item">
-              <div class="issues-and-solution__price-value">0.51 USD</div>
+              <div class="issues-and-solution__price-value issues-and-solution__taxi-price-value">
+                0.51 USD
+                <span class="issues-and-solution__equal-symbol-basic-fee">+</span>
+              </div>
               <div class="issues-and-solution__price-description">The basic fee</div>
             </div>
             <div class="issues-and-solution__price-item">
-              <div class="issues-and-solution__price-value">0.56 USD</div>
+              <div class="issues-and-solution__price-value issues-and-solution__taxi-price-value">
+                0.56 USD
+                <span class="issues-and-solution__equal-symbol-kilometer-price">+</span>
+              </div>
               <div class="issues-and-solution__price-description">The kilometer price</div>
             </div>
             <div class="issues-and-solution__price-item">
-              <div class="issues-and-solution__price-value">~10 km (<img src="" alt="">)</div>
+              <div class="issues-and-solution__price-value issues-and-solution__taxi-price-value">~
+                10 km (<img src="@/assets/img/GoDee/svg/math-symbol.svg" class="issues-and-solution__math-symbol" alt="Math">)
+                <span class="issues-and-solution__equal-symbol-kilometers-per-trip">+</span>
+              </div>
               <div class="issues-and-solution__price-description">Average kilometers per trip</div>
             </div>
             <div class="issues-and-solution__price-item">
@@ -56,6 +65,38 @@
           <div class="issues-and-solution__result-item">
             <span>=</span> 300 USD a month
           </div>
+        </div>
+      </div>
+      <div class="issues-and-solution__solution-title">
+        <div class="issues-and-solution__solution-main-title">Solution: GoDee</div>
+        <div class="issues-and-solution__solution-description">GoDee’s founders decided to make buses smarter and <br> more user-friendly. GoDee tackled this by converting <br> traditional bus transportation into a modern service <br> offering a convenient and predictable ride that is just <br> one click away.</div>
+      </div>
+      <div class="issues-and-solution__solution">
+        <div class="issues-and-solution__solution-content-wrapper">
+          <div class="issues-and-solution__price-group issues-and-solution__solution-price-group">
+            <div class="issues-and-solution__price-item">
+              <div class="issues-and-solution__price-value issues-and-solution__solution-price-value">
+                1.29 USD 
+                <span class="issues-and-solution__equal-symbol-one-trip">+</span>
+              </div>
+              <div class="issues-and-solution__price-description issues-and-solution__solution-price-description">One trip</div>
+            </div>
+            <div class="issues-and-solution__price-item">
+              <div class="issues-and-solution__price-value issues-and-solution__solution-price-value">
+                2
+                <span class="issues-and-solution__equal-symbol-trips-a-day">+</span>
+              </div>
+              <div class="issues-and-solution__price-description issues-and-solution__solution-price-description">Trips a day</div>
+            </div>
+            <div class="issues-and-solution__price-item">
+              <div class="issues-and-solution__price-value issues-and-solution__solution-price-value">~25 days</div>
+              <div class="issues-and-solution__price-description issues-and-solution__solution-price-description">a month</div>
+            </div>
+          </div>
+          <div class="issues-and-solution__result-item issues-and-solution__solution-result-item">
+            <span>=</span> 65 USD a month
+          </div>
+          <img src="@/assets/img/GoDee/svg/solution-sec-phone.svg" class="issues-and-solution__phone-image" alt="iPhoneX">
         </div>
       </div>
     </div>
@@ -181,7 +222,8 @@ export default {
 
     &__description-paragraph,
     &__icon-designation,
-    &__taxi-description {
+    &__taxi-description,
+    &__solution-description {
       font-size: get-vw(24px);
       font-family: 'Hoves-Regular';
       letter-spacing: get-vw(-1px);
@@ -234,7 +276,8 @@ export default {
     }
 
     &__empty-white-block,
-    &__taxi {
+    &__taxi,
+    &__solution {
       width: 100%;
       height: get-vw(421px);
       border-radius: get-vw(15px);
@@ -243,18 +286,28 @@ export default {
       z-index: -1;
     }
 
+    &__solution {
+      height: unset;
+      position: relative;
+    }
+
     &__empty-white-block {
       position: absolute;
       bottom: 5px;
     }
 
-    &__taxi {
+    &__taxi,
+    &__solution-content-wrapper {
       position: relative;
       margin-top: get-vw(40px);
     }
 
     &__taxi-content-wrapper {
       padding: get-vw(30px) get-vw(45px) get-vw(44px) get-vw(102px);
+    }
+
+    &__solution-content-wrapper {
+      padding: get-vw(54px) get-vw(45px) get-vw(34px) get-vw(102px);
     }
 
     &__taxi-main-title {
@@ -274,6 +327,10 @@ export default {
       border-bottom: get-vw(3px) solid $border-color--grey-godee-case;
     }
 
+    &__solution-price-group {
+      width: 65%;
+    }
+
     &__price-item {
       display: flex;
       flex-direction: column;
@@ -281,9 +338,15 @@ export default {
     }
 
     &__price-value {
+      position: relative;
       margin-bottom: get-vw(10px);
       font-size: get-vw(44px);
       letter-spacing: get-vw(-1px);
+
+      span {
+        position: absolute;
+        color: $text-color--grey;
+      }
     }
 
     &__price-description {
@@ -292,6 +355,12 @@ export default {
       font-family: 'Hoves-Regular';
       letter-spacing: get-vw(-0.8px);
       color: $text-color--grey;
+    }
+
+    &__math-symbol {
+      width: get-vw(64px);
+      height: get-vw(39px);
+      margin-bottom: get-vw(-9px);
     }
 
     &__result-item {
@@ -309,6 +378,54 @@ export default {
         letter-spacing: get-vw(-3px);
         color: $text-color--grey;
       }
+    }
+
+    &__solution-title {
+      margin-top: get-vw(120px);
+      margin-bottom: get-vw(105px);
+    }
+
+    &__solution-main-title {
+      margin-left: get-vw(102px);
+      margin-bottom: get-vw(16px);
+      font-size: get-vw(50px);
+      letter-spacing: get-vw(-2px);
+      font-family: 'Hoves-Bold';
+    }
+
+    &__solution-main-title,
+    &__solution-price-value,
+    &__solution-price-description,
+    &__solution-result-item {
+      color: $accent-orange-text-color;
+    }
+
+    &__equal-symbol-trips-a-day,
+    &__equal-symbol-one-trip {
+      transform: rotate(45deg);
+    }
+
+    &__equal-symbol-one-trip {
+      right: get-vw(-125px);
+      bottom: get-vw(-22px);
+    }
+
+    &__equal-symbol-trips-a-day {
+      right: get-vw(-176px);
+      bottom: get-vw(-22px);
+    }
+
+    &__solution-description {
+      color: $text-color--grey-dark;
+      margin-left: get-vw(102px);
+    }
+
+    &__phone-image {
+      width: get-vw(430px);
+      height: get-vw(730px);
+      position: absolute;
+      right: 0;
+      bottom: 0;
     }
   }
 
