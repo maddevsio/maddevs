@@ -71,6 +71,7 @@ export default {
     }
 
     &__phone-wrapper {
+      margin-right: get-vw(33px);
       z-index: 1;
     }
 
@@ -84,14 +85,18 @@ export default {
       height: get-vw(4173px);
       position: absolute;
       top: get-vw(920px);
-      left: get-vw(184px);
     }
   }
 
   @media only screen and (max-width: 768px) {
     .banner {
       &__route-line {
-        left: get-vw(315px);
+        left: get-vw(40px);
+      }
+
+      &__phone-wrapper {
+        margin-right: get-vw(275px);
+        z-index: 1;
       }
     }
   }
