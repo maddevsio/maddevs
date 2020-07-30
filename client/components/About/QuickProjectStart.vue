@@ -11,7 +11,7 @@
               <span :class="`quick-project_start__icon quick-project_start__icon--${item.title}`"/>
             </div>
             <div class="quick-project_start__text-item">
-              <h4 class="quick-project_start__title sub-title">{{ item.title }}</h4>
+              <h4 class="quick-project_start__title sub-paragraph">{{ item.title }}</h4>
               <p class="quick-project_start__paragraph paragraph">{{ item.paragraph }}</p>
             </div>
           </div>
@@ -79,6 +79,7 @@ export default {
     &__main-title {
       padding-bottom: get-vw(105px);
       color: $text-color--white;
+      text-align: initial;
 
       br {
         display: none;
@@ -198,10 +199,6 @@ export default {
       padding-bottom: 124px;
       text-align: initial;
 
-      &__main-title {
-        padding-bottom: 45px;
-      }
-
       &__content-items_list {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 45px;
@@ -232,22 +229,14 @@ export default {
       .start {
         padding-top: 10px;
       }
-
-      &__title {
-        font-size: 47px;
-      }
-
-      &__paragraph {
-        width: max-content;
-        font-size: 16px;
-      }
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 745px) {
     .quick-project_start {
-      &__main-title {
-        font-size: 64px;
+      &__icon {
+        height: 6vw;
+        width: 8vw;
       }
     }
   }
@@ -260,10 +249,17 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 430px) {
+  @media only screen and (max-width: 520px) {
     .quick-project_start {
-      &__main-title {
-        font-size: 53px;
+      &__icon {
+        height: 7vw;
+        width: 9vw;
+      }
+
+      &__title {
+        text-transform: capitalize;
+        color: $text-color--red;
+        letter-spacing: -0.1vw;
       }
     }
   }
@@ -285,14 +281,6 @@ export default {
         }
       }
 
-      &__title {
-        font-size: 28px;
-      }
-
-      &__paragraph {
-        font-size: 17px;
-      }
-
       &__icon-item {
         padding-top: 5px;
       }
@@ -303,10 +291,6 @@ export default {
     .quick-project_start {
       padding-top: 65px;
       padding-bottom: 78px;
-
-      &__main-title {
-        font-size: 48px;
-      }
 
       &__button-wrap {
         margin-left: 0;
