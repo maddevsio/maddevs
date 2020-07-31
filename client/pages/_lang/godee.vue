@@ -4,6 +4,7 @@
     <AboutGoDee />
     <IssuesAndSolution />
     <Result />
+    <Collaboration />
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import Banner from '@/components/GoDee/Banner';
 import AboutGoDee from '@/components/GoDee/AboutGoDee';
 import IssuesAndSolution from '@/components/GoDee/IssuesAndSolution';
 import Result from '@/components/GoDee/Result';
+import Collaboration from '@/components/GoDee/Collaboration';
 
 export default {
   name: 'GoDee',
@@ -19,7 +21,8 @@ export default {
     Banner,
     AboutGoDee,
     IssuesAndSolution,
-    Result
+    Result,
+    Collaboration
   },
   data() {
     return {

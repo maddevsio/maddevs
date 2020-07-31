@@ -28,7 +28,7 @@ export default {
   .result {
     position: relative;
     margin-top: get-vw(325px);
-    margin-bottom: get-vw(443px);
+    margin-bottom: get-vw(460px);
 
     &__container {
       position: relative;

@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="collaboration__company-logo-wrapper">
-      <img class="collaboration__company-logo collaboration__company-logo--godee" src="@assets/img/GoDee/svg/godee-logo-gray.svg" alt="GoDee">
+      <img class="collaboration__company-logo collaboration__company-logo--godee" src="@/assets/img/GoDee/svg/godee-logo-gray.svg" alt="GoDee">
       <img class="collaboration__company-logo collaboration__company-logo--maddevs" src="@/assets/img/GoDee/svg/maddevs-logo-gray.svg" alt="Mad Devs">
     </div>
   </section>
@@ -23,40 +23,47 @@ export default {
   @import '../../assets/styles/vars';
   @import '../../assets/styles/get-vw';
 
-  &__main-title,
-  &__description {
-    text-align: center;
-  }
-
-  &__main-title {
-    margin-top: get-vw(17px);
-    margin-bottom: get-vw(38px);
-    font-size: get-vw(90px);
-    font-family: 'Hoves-Bold';
-    letter-spacing: get-vw(-3px);
-    color: $accent-orange-text-color;
-  }
-
-  &__description {
-    font-size: get-vw(24px);
-    font-family: 'Hoves-Regular';
-    letter-spacing: get-vw(-1px);
-    color: $text-color--grey-dark;
-  }
-
-  &__company-logo {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: get-vw(40px);
-
-    &--godee {
-      width: get-vw(746px);
-      height: get-vw(161px);
+  .collaboration {
+    &__main-title,
+    &__description {
+      text-align: center;
+    }
+  
+    &__main-title {
+      font-size: get-vw(90px);
+      font-family: 'Hoves-Bold';
+      letter-spacing: get-vw(-3px);
+      color: $accent-orange-text-color;
+    }
+  
+    &__description {
+      margin-top: get-vw(38px);
+      font-size: get-vw(24px);
+      font-family: 'Hoves-Regular';
+      letter-spacing: get-vw(-1px);
+      color: $text-color--grey-dark;
     }
 
-    &--maddevs {
-      width: get-vw(590px);
-      height: get-vw(219px);
+    &__company-logo-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+    }
+  
+    &__company-logo {
+      margin-top: get-vw(-8px);
+      margin-bottom: get-vw(40px);
+  
+      &--godee {
+        width: get-vw(746px);
+        height: get-vw(161px);
+      }
+  
+      &--maddevs {
+        width: get-vw(590px);
+        height: get-vw(219px);
+        margin-left: get-vw(60px);
+      }
     }
   }
 </style>
