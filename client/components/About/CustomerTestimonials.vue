@@ -175,14 +175,9 @@ export default {
     }
 
     &__widget-wrap {
-      max-width: get-vw(813px);
+      max-width: 37vw;
       width: 90%;
       height: 100%;
-      overflow: hidden;
-
-      .clutch-widget {
-        margin: 0 get-vw(-30px);
-      }
     }
 
     &__project {
@@ -191,6 +186,19 @@ export default {
 
     .mobile-slider {
       display: none;
+    }
+  }
+
+  @media only screen and (max-width: 1600px) {
+    .customer-testimonials {
+      &__widget-wrap {
+        max-width: get-vw(813px);
+        overflow: hidden;
+
+        .clutch-widget {
+          margin: 0 get-vw(-30px);
+        }
+      }
     }
   }
 
@@ -235,6 +243,7 @@ export default {
       &__testimonials-list {
         padding-top: get-vw(85px);
         padding-left: 0;
+        max-height: 64vw;
       }
 
       &__testimonials-item {
@@ -249,12 +258,6 @@ export default {
 
   @media only screen and (max-width: 745px) {
     .customer-testimonials {
-      padding: 70px 0;
-
-      &__main-title {
-        padding-bottom: 43px;
-      }
-
       &__customer-name,
       /deep/.mobile-customer_name {
         padding-left: 2vw;
@@ -271,11 +274,7 @@ export default {
 
       .mobile-slider {
         display: block;
-        padding-top: 35px;
-      }
-
-      &__main-title {
-        padding-bottom: 69px;
+        padding-top: 6vw;
       }
 
       &__widget-wrap {
@@ -292,19 +291,11 @@ export default {
 
   @media only screen and (max-width: 520px) {
     .customer-testimonials {
-      padding-top: 45px;
-      padding-bottom: 27px;
-    }
-  }
-
-  @media only screen and (max-width: 440px) {
-    .customer-testimonials {
+      &__customer-name,
       /deep/.mobile-customer_name {
-        font-size: 14px;
-      }
-
-      &__main-title {
-        padding-bottom: 30px;
+        padding-left: 4vw;
+        font-size: 4vw;
+        line-height: 6vw;
       }
     }
   }
