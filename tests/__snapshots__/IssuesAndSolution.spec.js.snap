@@ -22,7 +22,7 @@ exports[`Issues And Solution renders correctly 1`] = `
   </div>
    
   <div
-    class="container"
+    class="container-godee"
   >
     <div
       class="issues-and-solution__transportation"
