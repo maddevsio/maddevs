@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-form form"> 
+  <div class="footer-form form">
     <ValidationObserver v-slot="{ invalid }" ref="form">
       <div class="fields-list">
         <ValidationProvider class="field-item" rules="max:50" v-slot="{ classes, errors }">
@@ -115,10 +115,11 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
-	.footer-form {
-    width: 450px;
-    
+  .footer-form {
+    width: get-vw(450px);
+
     &_email {
       /deep/ .v-placeholder-asterisk {
         font-size: 18px;
@@ -136,7 +137,7 @@ export default {
 
 		button {
       width: 100%;
-      height: 65px;
+      height: get-vw(65px);
 		}
 
 		textarea {
@@ -144,14 +145,14 @@ export default {
 			padding: 22px 10px;
       resize: vertical;
     }
-    
+
     .fields-list {
       display: grid;
-      grid-row-gap: 12px;
+      grid-row-gap: get-vw(12px);
     }
 
     .form-checkboxes {
-      padding-top: 18px;
+      padding-top: get-vw(18px);
     }
 
     .entry-field {
@@ -159,32 +160,45 @@ export default {
     }
 
     .field-item {
-      margin-bottom: 8px;
+      margin-bottom: get-vw(8px);
     }
 	}
 
-	@media only screen and (max-width: 1440px) {
-		.footer-form {
-			width: 370px;
-		}
-	}
-
-	@media only screen and (max-width: 1220px) {
-		.footer-form {
-			width: 380px;
-		}
+  @media only screen and (max-width: 1220px) {
+    .footer-form {
+      width: 35vw;
+    }
   }
-  
-  @media only screen and (max-width: 960px) {
+
+  @media only screen and (max-width: 980px) {
 		.footer-form {
       width: 100%;
+
+      button {
+        height: 7vw;
+        margin-bottom: 6vw;
+      }
 		}
   }
-  
-  @media only screen and (max-width: 420px) {
+
+  @media only screen and (max-width: 680px) {
 		.footer-form {
 			.field-item {
         margin-bottom: 0;
+      }
+
+      .fields-list {
+        display: grid;
+        grid-row-gap: 2vw;
+      }
+
+      .form-checkboxes {
+        padding-top: 7vw;
+      }
+
+      button {
+        height: 17vw;
+        margin-bottom: 6vw;
       }
 		}
 	}
