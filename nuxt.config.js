@@ -54,7 +54,8 @@ module.exports = {
       '/careers',
       '/gdpr',
       '/nda',
-      '/privacy'
+      '/privacy',
+      '/godee'
     ]
   },
   css: [
