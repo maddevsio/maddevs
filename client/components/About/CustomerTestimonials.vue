@@ -92,13 +92,14 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
   .customer-testimonials {
-    padding: 137px 0;
+    padding: get-vw(137px) 0;
     background-color: $bgcolor--grey-light;
 
     &__main-title {
-      padding-bottom: 59px;
+      padding-bottom: get-vw(59px);
 
       span {
         color: $text-color--grey-light;
@@ -107,10 +108,10 @@ export default {
     }
 
     &__testimonials-list {
-      max-height: 785px;
+      max-height: get-vw(785px);
       display: flex;
       flex-direction: column;
-      padding-left: 82px;
+      padding-left: get-vw(82px);
     }
 
     &__content-wrap {
@@ -118,8 +119,8 @@ export default {
     }
 
     &__testimonials-item {
-      max-width: 445px;
-      padding-top: 54px;
+      max-width: get-vw(445px);
+      padding-top: get-vw(54px);
 
       &:first-child {
         padding-top: 0;
@@ -137,19 +138,19 @@ export default {
 
       &::before {
         content: '';
-        width: 18px;
-        height: 12px;
+        width: get-vw(18px);
+        height: get-vw(12px);
         position: absolute;
-        top: 5px;
-        left: -23px;
+        top: get-vw(5px);
+        left: get-vw(-23px);
         background: url('../../assets/img/Home/svg/customerTestimonials/quotes.svg') no-repeat center;
       }
     }
 
     &__customer-info {
       justify-content: space-between;
-      padding-top: 15px;
-      padding-bottom: 54px;
+      padding-top: get-vw(15px);
+      padding-bottom: get-vw(54px);
       border-bottom: 1px solid $input-bgcolor--grey-dark;
     }
 
@@ -167,48 +168,29 @@ export default {
 
     &__customer-name,
     /deep/.mobile-customer_name {
-      padding-left: 14px;
+      padding-left: get-vw(14px);
       color: $text-color--grey;
       font-family: 'Hoves-Regular';
-      font-size: 16px;
+      font-size: get-vw(16px);
     }
 
     &__widget-wrap {
-      max-width: 813px;
+      max-width: get-vw(813px);
       width: 90%;
       height: 100%;
       overflow: hidden;
 
       .clutch-widget {
-        margin: 0 -30px;
+        margin: 0 get-vw(-30px);
       }
     }
 
     &__project {
-      width: 156px;
+      width: get-vw(156px);
     }
 
     .mobile-slider {
       display: none;
-    }
-  }
-
-  @media only screen and (max-width: 1520px) {
-    .customer-testimonials {
-      &__main-title {
-        font-size: 121px;
-        padding-bottom: 87px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1440px) {
-    .customer-testimonials {
-      padding: 100px 0;
-
-      &__testimonials-list {
-        padding-left: 90px;
-      }
     }
   }
 
@@ -224,17 +206,6 @@ export default {
 
   @media only screen and (max-width: 1280px) {
     .customer-testimonials {
-      padding: 111px 0;
-
-      &__main-title {
-        font-size: 100px;
-        padding-bottom: 60px;
-      }
-
-      &__widget-wrap {
-        width: 545px;
-      }
-
       &__project {
         width: initial;
       }
@@ -244,22 +215,17 @@ export default {
   @media only screen and (max-width: 1024px) {
     .customer-testimonials {
 
-      &__main-title {
-        text-align: center;
-        font-size: 90px;
-      }
-
       &__content-wrap {
         flex-direction: column;
       }
 
       &__widget-wrap {
         width: initial;
-        margin: 0 -30px;
+        // margin: 0 -30px;
       }
 
       &__testimonials-list {
-        padding-top: 55px;
+        /*padding-top: 55px;*/
         padding-left: 0;
       }
 
@@ -274,7 +240,6 @@ export default {
       padding: 70px 0;
 
       &__main-title {
-        font-size: 64px;
         padding-bottom: 43px;
       }
     }
@@ -315,17 +280,7 @@ export default {
       }
 
       &__main-title {
-        font-size: 53px;
         padding-bottom: 30px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 330px) {
-    .customer-testimonials {
-      &__main-title {
-        font-size: 48px;
-        padding-bottom: 25px;
       }
     }
   }
