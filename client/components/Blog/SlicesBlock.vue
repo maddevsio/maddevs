@@ -20,10 +20,9 @@
 </template>
 
 <script>
-// Imports for all slices
-const QuoteSlice = () => import('../components/slices/QuoteSlice.vue');
-const TextSlice = () => import('../components/slices/TextSlice.vue');
-const ImageCaptionSlice = () => import('../components/slices/ImageCaptionSlice.vue');
+import QuoteSlice from '~/components/Blog/slices/QuoteSlice.vue';
+import TextSlice from '~/components/Blog/slices/TextSlice.vue';
+import ImageCaptionSlice from '~/components/Blog/slices/TextSlice.vue';
 
 export default {
   props: ['slices'],

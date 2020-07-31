@@ -16,10 +16,11 @@
 
 <script>
 //Importing all the slices components
-import SlicesBlock from '~/components/SlicesBlock.vue';
+import SlicesBlock from '~/components/Blog/SlicesBlock.vue';
 
 export default {
   name: 'post',
+  layout: 'blog',
   components: {
     SlicesBlock
   },

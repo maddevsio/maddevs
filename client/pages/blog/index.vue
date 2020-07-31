@@ -27,13 +27,14 @@
 
 <script>
 // Importing blog posts widget
-import BlogWidget from '~/components/BlogWidget.vue';
+import BlogWidget from '~/components/Blog/BlogWidget.vue';
 
 export default {
   name: 'Blog',
   components: {
     BlogWidget
   },
+  layout: 'blog',
   head () {
     return {
       title: 'Prismic Nuxt.js Blog'
