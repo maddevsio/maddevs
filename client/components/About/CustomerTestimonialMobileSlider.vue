@@ -55,7 +55,6 @@ export default {
       align-items: center;
       justify-content: space-between;
       padding-top: 9vw;
-      // padding-bottom: 15vw;
     }
   }
 

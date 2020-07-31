@@ -237,7 +237,6 @@ export default {
 
       &__widget-wrap {
         width: initial;
-        // margin: 0 -30px;
       }
 
       &__testimonials-list {
