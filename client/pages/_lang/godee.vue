@@ -3,6 +3,7 @@
     <Banner />
     <AboutGoDee />
     <IssuesAndSolution />
+    <Result />
   </main>
 </template>
 
@@ -10,13 +11,15 @@
 import Banner from '@/components/GoDee/Banner';
 import AboutGoDee from '@/components/GoDee/AboutGoDee';
 import IssuesAndSolution from '@/components/GoDee/IssuesAndSolution';
+import Result from '@/components/GoDee/Result';
 
 export default {
   name: 'GoDee',
   components: {
     Banner,
     AboutGoDee,
-    IssuesAndSolution
+    IssuesAndSolution,
+    Result
   },
   data() {
     return {
