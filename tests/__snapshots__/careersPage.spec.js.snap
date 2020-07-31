@@ -38,33 +38,33 @@ exports[`Careers page renders correctly 1`] = `
         <nav
           class="navigation-list"
         >
-          <router-link
+          <router-link-stub
             class="navigation-item"
             to="services/#remote-tech-staff"
           >
             Remote Tech Staff
-          </router-link>
+          </router-link-stub>
            
-          <router-link
+          <router-link-stub
             class="navigation-item"
             to="services/#software-development"
           >
             Software Development
-          </router-link>
+          </router-link-stub>
            
-          <router-link
+          <router-link-stub
             class="navigation-item"
             to="services/#infrastructure-optimisation"
           >
             Infrastructure Optimization
-          </router-link>
+          </router-link-stub>
            
-          <router-link
+          <router-link-stub
             class="navigation-item"
             to="services/#it-consulting"
           >
             IT Consulting
-          </router-link>
+          </router-link-stub>
         </nav>
       </div>
     </div>
