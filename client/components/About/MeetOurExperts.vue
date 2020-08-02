@@ -153,6 +153,8 @@ export default {
     &__expert-linkedin_icon,
     /deep/.mobile-expert-linkedin_icon {
       margin-bottom: get-vw(-4px);
+      width: get-vw(21px);
+      height: get-vw(21px);
     }
 
     &__expert-name,
@@ -183,6 +185,13 @@ export default {
     .meet-our_experts {
       &__experts-list {
         display: none;
+      }
+
+      &__expert-linkedin_icon,
+      /deep/.mobile-expert-linkedin_icon {
+        margin-bottom: get-vw(-4px);
+        width: auto;
+        height: auto;
       }
 
       &__expert-name,

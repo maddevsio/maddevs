@@ -98,6 +98,11 @@ export default {
     padding: get-vw(137px) 0;
     background-color: $bgcolor--grey-light;
 
+    &__project-image {
+      height: get-vw(38px);
+      width: auto;
+    }
+
     &__main-title {
       padding-bottom: get-vw(59px);
 
@@ -191,6 +196,11 @@ export default {
 
   @media only screen and (max-width: 1600px) {
     .customer-testimonials {
+
+      &__project-image {
+        height: auto;
+      }
+
       &__widget-wrap {
         max-width: get-vw(813px);
         overflow: hidden;
