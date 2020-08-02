@@ -267,8 +267,8 @@
 }
 
 .title {
-  font-size: 90px;
-  padding-bottom: 15px;
+  font-size: get-vw(90px);
+  padding-bottom: get-vw(15px);
 }
 
 .last-character {
