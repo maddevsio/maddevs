@@ -155,7 +155,7 @@ exports[`Index page renders correctly 1`] = `
           class="we-create-it-project__country-list_wrap"
         >
           <div
-            class="we-create-it-project__country-list_title"
+            class="we-create-it-project__country-list_title sub-paragraph"
           >
             We work with
           
@@ -1684,10 +1684,8 @@ exports[`Index page renders correctly 1`] = `
             <div
               class="quick-project_start__icon-item contact"
             >
-              <img
-                alt="contact"
-                class="quick-project_start__image-item"
-                src="[object Object]"
+              <span
+                class="quick-project_start__icon quick-project_start__icon--contact"
               />
             </div>
              
@@ -1695,7 +1693,7 @@ exports[`Index page renders correctly 1`] = `
               class="quick-project_start__text-item"
             >
               <h4
-                class="quick-project_start__title sub-title"
+                class="quick-project_start__title sub-paragraph"
               >
                 contact
               </h4>
@@ -1713,10 +1711,8 @@ exports[`Index page renders correctly 1`] = `
             <div
               class="quick-project_start__icon-item analysis"
             >
-              <img
-                alt="analysis"
-                class="quick-project_start__image-item"
-                src="[object Object]"
+              <span
+                class="quick-project_start__icon quick-project_start__icon--analysis"
               />
             </div>
              
@@ -1724,7 +1720,7 @@ exports[`Index page renders correctly 1`] = `
               class="quick-project_start__text-item"
             >
               <h4
-                class="quick-project_start__title sub-title"
+                class="quick-project_start__title sub-paragraph"
               >
                 analysis
               </h4>
@@ -1742,10 +1738,8 @@ exports[`Index page renders correctly 1`] = `
             <div
               class="quick-project_start__icon-item proposal"
             >
-              <img
-                alt="proposal"
-                class="quick-project_start__image-item"
-                src="[object Object]"
+              <span
+                class="quick-project_start__icon quick-project_start__icon--proposal"
               />
             </div>
              
@@ -1753,7 +1747,7 @@ exports[`Index page renders correctly 1`] = `
               class="quick-project_start__text-item"
             >
               <h4
-                class="quick-project_start__title sub-title"
+                class="quick-project_start__title sub-paragraph"
               >
                 proposal
               </h4>
@@ -1771,10 +1765,8 @@ exports[`Index page renders correctly 1`] = `
             <div
               class="quick-project_start__icon-item team"
             >
-              <img
-                alt="team"
-                class="quick-project_start__image-item"
-                src="[object Object]"
+              <span
+                class="quick-project_start__icon quick-project_start__icon--team"
               />
             </div>
              
@@ -1782,7 +1774,7 @@ exports[`Index page renders correctly 1`] = `
               class="quick-project_start__text-item"
             >
               <h4
-                class="quick-project_start__title sub-title"
+                class="quick-project_start__title sub-paragraph"
               >
                 team
               </h4>
@@ -1800,10 +1792,8 @@ exports[`Index page renders correctly 1`] = `
             <div
               class="quick-project_start__icon-item start"
             >
-              <img
-                alt="start"
-                class="quick-project_start__image-item"
-                src="[object Object]"
+              <span
+                class="quick-project_start__icon quick-project_start__icon--start"
               />
             </div>
              
@@ -1811,7 +1801,7 @@ exports[`Index page renders correctly 1`] = `
               class="quick-project_start__text-item"
             >
               <h4
-                class="quick-project_start__title sub-title"
+                class="quick-project_start__title sub-paragraph"
               >
                 start
               </h4>

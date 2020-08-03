@@ -65,7 +65,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         class="we-create-it-project__country-list_wrap"
       >
         <div
-          class="we-create-it-project__country-list_title"
+          class="we-create-it-project__country-list_title sub-paragraph"
         >
           We work with
           

@@ -54,8 +54,7 @@ export default {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding-top: 15px;
-      padding-bottom: 54px;
+      padding-top: 9vw;
     }
   }
 
@@ -67,32 +66,11 @@ export default {
     .swiper {
       .veeqo,
       .teacherly {
-        width: 95px;
+        width: 20vw;
       }
 
       .guardrails {
-        width: 156px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 440px) {
-    .swiper {
-      .veeqo,
-      .teacherly {
-        width: 75px;
-      }
-
-      .guardrails {
-        width: 126px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 330px) {
-    .swiper {
-      .swiper-slide {
-        width: 86%;
+        width: 30vw;
       }
     }
   }
