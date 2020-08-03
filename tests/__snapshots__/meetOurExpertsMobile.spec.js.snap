@@ -59,7 +59,7 @@ exports[`Meet Our Experts Mobile Slider renders correctly 1`] = `
               <img
                 alt="Linkedin"
                 class="mobile-expert-linkedin_icon"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
+                src="@/assets/img/Home/svg/experts/linkedin.svg"
               />
             </a>
           </div>
