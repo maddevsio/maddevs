@@ -5,6 +5,8 @@
     <IssuesAndSolution />
     <Result />
     <Collaboration />
+    <Mvp />
+    <TechnicalOverview />
   </main>
 </template>
 
@@ -14,6 +16,8 @@ import AboutGoDee from '@/components/GoDee/AboutGoDee';
 import IssuesAndSolution from '@/components/GoDee/IssuesAndSolution';
 import Result from '@/components/GoDee/Result';
 import Collaboration from '@/components/GoDee/Collaboration';
+import Mvp from '@/components/GoDee/Mvp';
+import TechnicalOverview from '@/components/GoDee/TechnicalOverview';
 
 export default {
   name: 'GoDee',
@@ -22,7 +26,9 @@ export default {
     AboutGoDee,
     IssuesAndSolution,
     Result,
-    Collaboration
+    Collaboration,
+    Mvp,
+    TechnicalOverview
   },
   data() {
     return {
