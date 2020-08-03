@@ -112,7 +112,6 @@ export default {
     }
 
     &__projects-type_list {
-      padding-left: 0.5vw;
       padding-right: 4.5vw;
       width: 49%;
     }

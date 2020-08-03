@@ -46,7 +46,6 @@ export default {
 
     .navigation-item {
       padding-right: 5vw;
-      padding-left: 1.2vw;
       color: $text-color--grey-light;
       font-size: 1.4vw;
       font-family: 'Hoves-Regular';
@@ -80,7 +79,6 @@ export default {
 
       .navigation-item {
         font-size: 3vw;
-        padding-left: 3.2vw;
 
         &::before {
           border-width: 0 get-vw(3px, 730) get-vw(3px, 730) 0;
@@ -98,7 +96,6 @@ export default {
 
       .navigation-item {
         font-size: 5vw;
-        padding-left: 5.2vw;
 
         &::before {
           border-width: 0 get-vw(3px, 530) get-vw(3px, 530) 0;
