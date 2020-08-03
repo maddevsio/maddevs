@@ -9,7 +9,7 @@ exports[`GoDee page renders correctly 1`] = `
     id="banner"
   >
     <div
-      class="container"
+      class="container-godee"
     >
       <div
         class="banner__banner-content"
@@ -70,7 +70,7 @@ exports[`GoDee page renders correctly 1`] = `
     id="about-godee"
   >
     <div
-      class="container"
+      class="container-godee"
     >
       <div
         class="about-godee__text-content"
@@ -133,7 +133,7 @@ exports[`GoDee page renders correctly 1`] = `
     </div>
      
     <div
-      class="container"
+      class="container-godee"
     >
       <div
         class="issues-and-solution__transportation"
@@ -510,6 +510,357 @@ exports[`GoDee page renders correctly 1`] = `
             src="@/assets/img/GoDee/svg/solution-sec-phone.svg"
           />
         </div>
+      </div>
+    </div>
+  </section>
+   
+  <section
+    class="result"
+    id="result"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="result__container"
+      >
+        <div
+          class="result__head-text"
+        >
+          <h3
+            class="result__main-title"
+          >
+            Result
+          </h3>
+           
+          <p
+            class="result__description"
+          >
+            Exciting project to improve people’s daily life and reduce environmental pollution. 
+            <br />
+             Regular commutes with affordable and stress-free service.
+          </p>
+        </div>
+         
+        <div
+          class="result__video-frame-wrapper"
+        >
+          <iframe
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen="allowfullscreen"
+            frameborder="0"
+            height="100%"
+            src="https://www.youtube.com/embed/_XCRbXmTUwI"
+            width="100%"
+          />
+        </div>
+      </div>
+       
+      <img
+        alt="Result route line"
+        class="result__route-line"
+        src="@/assets/img/GoDee/svg/result-route-line.svg"
+      />
+    </div>
+  </section>
+   
+  <section
+    class="collaboration"
+    id="collaboration"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="collaboration__title-wrapper"
+      >
+        <h2
+          class="collaboration__main-title"
+        >
+          Mad Devs & GoDee 
+          <br />
+           collaboration
+        </h2>
+         
+        <p
+          class="collaboration__description"
+        >
+          Mad Devs started to consult GoDee at the early stage of this project assisting with the choice 
+          <br />
+           of the technology stack and step-by-step planning. Then a number of our positively mad 
+          <br />
+           developers started to work on the GoDee’s smart urban bus management system as an 
+          <br />
+           extended part of the team.
+        </p>
+      </div>
+    </div>
+     
+    <div
+      class="collaboration__company-logo-wrapper"
+    >
+      <img
+        alt="GoDee"
+        class="collaboration__company-logo collaboration__company-logo--godee"
+        src="@/assets/img/GoDee/svg/godee-logo-gray.svg"
+      />
+       
+      <img
+        alt="Mad Devs"
+        class="collaboration__company-logo collaboration__company-logo--maddevs"
+        src="@/assets/img/GoDee/svg/maddevs-logo-gray.svg"
+      />
+    </div>
+  </section>
+   
+  <section
+    class="mvp"
+    id="mvp"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="mvp__container"
+      >
+        <div
+          class="mvp__title-wrapper"
+        >
+          <h2
+            class="mvp__main-title"
+          >
+            MVP
+          </h2>
+           
+          <p
+            class="mvp__description"
+          >
+            Before investing a considerable amount of money in building software, hiring personnel, and 
+            <br />
+             acquiring minibuses, GoDee wanted to develop an MVP to understand the market fit potential.
+          </p>
+        </div>
+         
+        <div
+          class="mvp__phones-list"
+        >
+          <img
+            alt="Phone"
+            class="mvp__phone-item"
+            src="@/assets/img/GoDee/svg/mvp-sec-first-phone.svg"
+          />
+           
+          <img
+            alt="Phone"
+            class="mvp__phone-item"
+            src="@/assets/img/GoDee/svg/mvp-sec-second-phone.svg"
+          />
+           
+          <img
+            alt="Phone"
+            class="mvp__phone-item"
+            src="@/assets/img/GoDee/svg/mvp-sec-third-phone.svg"
+          />
+        </div>
+         
+        <div
+          class="mvp__year-item"
+        >
+          2018
+        </div>
+         
+        <div
+          class="mvp__tech"
+        >
+          <div
+            class="mvp__tech-item"
+          >
+            <div
+              class="mvp__tech-title"
+            >
+              Live chat
+            </div>
+             
+            <p
+              class="mvp__tech-description"
+            >
+              During 3 months of helping white collars to 
+              <br />
+               commute conveniently, the integrated live chat 
+              <br />
+               feature collected extensive feedback from users.
+            </p>
+          </div>
+           
+          <div
+            class="mvp__tech-item"
+          >
+            <div
+              class="mvp__tech-title"
+            >
+              Trip request
+            </div>
+             
+            <p
+              class="mvp__tech-description"
+            >
+              On top of that, the trip request feature enables GoDee 
+              <br />
+               to analyze actual demand for different Ho Chi Minh 
+              <br />
+               districts.
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="mvp__user-centered-solution"
+        >
+          <div
+            class="mvp__user-centered-solution-text-content"
+          >
+            <div
+              class="mvp__user-centered-solution-title"
+            >
+              User-centered solution
+            </div>
+             
+            <p
+              class="mvp__user-centered-solution-description"
+            >
+              Although services like GoDee exist in 
+              <br />
+               other parts of the world, copy-pasting 
+              <br />
+               the functionality was pointless as Ho 
+              <br />
+               Chi Minh citizens' commuting culture 
+              <br />
+               is different. Thus, slowly improving the 
+              <br />
+               solution driven by users' feedback was 
+              <br />
+               key to its current rapid growth.
+            </p>
+          </div>
+           
+          <img
+            alt="Hands"
+            class="mvp__hands-with-phone-image"
+            src="@/assets/img/GoDee/svg/hands-with-phone.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  <section
+    class="technical-overview"
+    id="technical-overview"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="technical-overview__container"
+      >
+        <h2
+          class="technical-overview__main-title"
+        >
+          Technical Overview
+        </h2>
+         
+        <ul
+          class="technical-overview__tech-list"
+        >
+          <li
+            class="technical-overview__tech-item"
+          >
+            <img
+              alt="Android"
+              class="technical-overview__tech-item-icon"
+              src="@/assets/img/GoDee/svg/android.svg"
+            />
+             
+            <div
+              class="technical-overview__tech-item-title"
+            >
+              Mobile applications 
+              <br />
+               for drivers
+            </div>
+             
+            <p
+              class="technical-overview__tech-item-description"
+            >
+              Android
+            </p>
+          </li>
+           
+          <li
+            class="technical-overview__tech-item"
+          >
+            <img
+              alt="Computer"
+              class="technical-overview__tech-item-icon"
+              src="@/assets/img/GoDee/svg/computer.svg"
+            />
+             
+            <div
+              class="technical-overview__tech-item-title"
+            >
+              Control panel 
+              <br />
+               for admin staff
+            </div>
+             
+            <p
+              class="technical-overview__tech-item-description"
+            >
+              Used for business purposes to 
+              <br />
+               create routes, get reports and 
+              <br />
+               show current active routes on 
+              <br />
+               a map.
+            </p>
+          </li>
+           
+          <li
+            class="technical-overview__tech-item"
+          >
+            <div
+              class="technical-overview__icons-wrapper"
+            >
+              <img
+                alt="Android"
+                class="technical-overview__tech-item-icon"
+                src="@/assets/img/GoDee/svg/android.svg"
+              />
+               
+              <img
+                alt="Apple"
+                class="technical-overview__tech-item-icon"
+                src="@/assets/img/GoDee/svg/apple.svg"
+              />
+            </div>
+             
+            <div
+              class="technical-overview__tech-item-title"
+            >
+              Mobile application 
+              <br />
+               for passengers
+            </div>
+             
+            <p
+              class="technical-overview__tech-item-description"
+            >
+              Android, iOS
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
   </section>

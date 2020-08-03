@@ -1,6 +1,6 @@
 <template>
   <section id="about-godee" class="about-godee">
-    <div class="container">
+    <div class="container-godee">
       <div class="about-godee__text-content">
         <h2 class="about-godee__main-title">About GoDee</h2>
         <p class="about-godee__description-bold">The app-based system allows users to find a route, <br> select the time, book a seat, and pay for the ride online.</p>
@@ -87,17 +87,6 @@ export default {
       width: get-vw(393px);
       height: get-vw(262px);
       margin-bottom: get-vw(-75px);
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .about-godee {
-      &__text-content {
-
-        &::before {
-          left: get-vw(-28px);
-        }
-      }
     }
   }
 </style>

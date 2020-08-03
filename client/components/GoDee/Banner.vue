@@ -1,6 +1,6 @@
 <template>
   <section id="banner" class="banner">
-    <div class="container">
+    <div class="container-godee">
       <div class="banner__banner-content">
         <div class="banner__text-content">
           <h1 class="banner__main-title">
@@ -85,19 +85,6 @@ export default {
       height: get-vw(4173px);
       position: absolute;
       top: get-vw(920px);
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .banner {
-      &__route-line {
-        left: get-vw(40px);
-      }
-
-      &__phone-wrapper {
-        margin-right: get-vw(275px);
-        z-index: 1;
-      }
     }
   }
 </style>
