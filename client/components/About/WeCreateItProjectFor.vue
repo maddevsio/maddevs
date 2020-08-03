@@ -14,7 +14,7 @@
           <li class="we-create-it-project__project-item">Transportation</li>
         </ul>
         <div class="we-create-it-project__country-list_wrap">
-          <div class="we-create-it-project__country-list_title sub-paragraph">We work with
+          <div class="we-create-it-project__country-list_title">We work with
             <br> customers in:
           </div>
           <ul class="we-create-it-project__country-list">
@@ -112,6 +112,7 @@ export default {
     }
 
     &__projects-type_list {
+      padding-left: 0.5vw;
       padding-right: 4.5vw;
       width: 49%;
     }
@@ -185,6 +186,7 @@ export default {
     &__country-list_title {
       padding-bottom: 2vw;
       color: $text-color--grey;
+      font-size: 3.2vw;
       letter-spacing: -2px;
       max-width: 547px;
       line-height: 3.9vw;
@@ -307,6 +309,7 @@ export default {
 
       &__country-list_title {
         padding-bottom: 7vw;
+        font-size: 8.2vw;
         line-height: 8.9vw;
         br {
           display: none;

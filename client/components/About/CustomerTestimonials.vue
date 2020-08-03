@@ -92,19 +92,13 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
-  @import '../../assets/styles/get-vw';
 
   .customer-testimonials {
-    padding: get-vw(137px) 0;
+    padding: 137px 0;
     background-color: $bgcolor--grey-light;
 
-    &__project-image {
-      height: get-vw(38px);
-      width: auto;
-    }
-
     &__main-title {
-      padding-bottom: get-vw(59px);
+      padding-bottom: 59px;
 
       span {
         color: $text-color--grey-light;
@@ -113,10 +107,10 @@ export default {
     }
 
     &__testimonials-list {
-      max-height: get-vw(785px);
+      max-height: 785px;
       display: flex;
       flex-direction: column;
-      padding-left: get-vw(82px);
+      padding-left: 82px;
     }
 
     &__content-wrap {
@@ -124,8 +118,8 @@ export default {
     }
 
     &__testimonials-item {
-      max-width: get-vw(445px);
-      padding-top: get-vw(54px);
+      max-width: 445px;
+      padding-top: 54px;
 
       &:first-child {
         padding-top: 0;
@@ -143,19 +137,19 @@ export default {
 
       &::before {
         content: '';
-        width: get-vw(18px);
-        height: get-vw(12px);
+        width: 18px;
+        height: 12px;
         position: absolute;
-        top: get-vw(5px);
-        left: get-vw(-23px);
+        top: 5px;
+        left: -23px;
         background: url('../../assets/img/Home/svg/customerTestimonials/quotes.svg') no-repeat center;
       }
     }
 
     &__customer-info {
       justify-content: space-between;
-      padding-top: get-vw(15px);
-      padding-bottom: get-vw(54px);
+      padding-top: 15px;
+      padding-bottom: 54px;
       border-bottom: 1px solid $input-bgcolor--grey-dark;
     }
 
@@ -173,20 +167,25 @@ export default {
 
     &__customer-name,
     /deep/.mobile-customer_name {
-      padding-left: get-vw(14px);
+      padding-left: 14px;
       color: $text-color--grey;
       font-family: 'Hoves-Regular';
-      font-size: get-vw(16px);
+      font-size: 16px;
     }
 
     &__widget-wrap {
-      max-width: 37vw;
+      max-width: 813px;
       width: 90%;
       height: 100%;
+      overflow: hidden;
+
+      .clutch-widget {
+        margin: 0 -30px;
+      }
     }
 
     &__project {
-      width: get-vw(156px);
+      width: 156px;
     }
 
     .mobile-slider {
@@ -194,28 +193,21 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1600px) {
+  @media only screen and (max-width: 1520px) {
     .customer-testimonials {
-
-      &__project-image {
-        height: auto;
-      }
-
-      &__widget-wrap {
-        max-width: get-vw(813px);
-        overflow: hidden;
-
-        .clutch-widget {
-          margin: 0 get-vw(-30px);
-        }
+      &__main-title {
+        font-size: 121px;
+        padding-bottom: 87px;
       }
     }
   }
 
-  @media only screen and (max-width: 1480px) {
+  @media only screen and (max-width: 1440px) {
     .customer-testimonials {
-      &__widget-wrap {
-        max-width: 58vw;
+      padding: 100px 0;
+
+      &__testimonials-list {
+        padding-left: 90px;
       }
     }
   }
@@ -232,6 +224,17 @@ export default {
 
   @media only screen and (max-width: 1280px) {
     .customer-testimonials {
+      padding: 111px 0;
+
+      &__main-title {
+        font-size: 100px;
+        padding-bottom: 60px;
+      }
+
+      &__widget-wrap {
+        width: 545px;
+      }
+
       &__project {
         width: initial;
       }
@@ -241,41 +244,43 @@ export default {
   @media only screen and (max-width: 1024px) {
     .customer-testimonials {
 
+      &__main-title {
+        text-align: center;
+        font-size: 90px;
+      }
+
       &__content-wrap {
         flex-direction: column;
       }
 
       &__widget-wrap {
         width: initial;
+        margin: 0 -30px;
       }
 
       &__testimonials-list {
-        padding-top: get-vw(85px);
+        padding-top: 55px;
         padding-left: 0;
-        max-height: 64vw;
       }
 
       &__testimonials-item {
         max-width: 100%;
       }
-
-      &__widget-wrap {
-        max-width: 100%;
-      }
     }
   }
 
-  @media only screen and (max-width: 745px) {
+  @media only screen and (max-width: 768px) {
     .customer-testimonials {
-      &__customer-name,
-      /deep/.mobile-customer_name {
-        padding-left: 2vw;
-        font-size: 2vw;
+      padding: 70px 0;
+
+      &__main-title {
+        font-size: 64px;
+        padding-bottom: 43px;
       }
     }
   }
 
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 576px) {
     .customer-testimonials {
       &__testimonials-list {
         display: none;
@@ -283,28 +288,44 @@ export default {
 
       .mobile-slider {
         display: block;
-        padding-top: 6vw;
+        padding-top: 35px;
+      }
+
+      &__main-title {
+        padding-bottom: 69px;
       }
 
       &__widget-wrap {
         margin: initial;
-      }
-
-      &__customer-name,
-      /deep/.mobile-customer_name {
-        padding-left: 3vw;
-        font-size: 3vw;
       }
     }
   }
 
   @media only screen and (max-width: 520px) {
     .customer-testimonials {
-      &__customer-name,
+      padding-top: 45px;
+      padding-bottom: 27px;
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    .customer-testimonials {
       /deep/.mobile-customer_name {
-        padding-left: 4vw;
-        font-size: 4vw;
-        line-height: 6vw;
+        font-size: 14px;
+      }
+
+      &__main-title {
+        font-size: 53px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 330px) {
+    .customer-testimonials {
+      &__main-title {
+        font-size: 48px;
+        padding-bottom: 25px;
       }
     }
   }

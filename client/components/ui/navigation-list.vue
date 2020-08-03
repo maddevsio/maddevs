@@ -38,7 +38,6 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
-  @import '../../assets/styles/get-vw';
 
   .navigation-list {
     display: flex;
@@ -46,21 +45,13 @@ export default {
 
     .navigation-item {
       padding-right: 5vw;
+      padding-left: 1.2vw;
       color: $text-color--grey-light;
       font-size: 1.4vw;
       font-family: 'Hoves-Regular';
+      background: url('../../assets/img/common/link-arrow.svg') no-repeat;
+      background-position-y: 8px;
       letter-spacing: -0.045em;
-      &::before {
-        content: '';
-        border: solid red;
-        border-width: 0 get-vw(2.5px) get-vw(2.5px) 0;
-        display: inline-block;
-        padding: get-vw(4px);
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-        margin-right: get-vw(18px);
-        vertical-align: middle;
-      }
     }
   }
 
@@ -79,12 +70,7 @@ export default {
 
       .navigation-item {
         font-size: 3vw;
-
-        &::before {
-          border-width: 0 get-vw(3px, 730) get-vw(3px, 730) 0;
-          padding: get-vw(5px, 730);
-          margin-right: get-vw(18px, 730);
-        }
+        padding-left: 3.2vw;
       }
     }
   }
@@ -96,12 +82,7 @@ export default {
 
       .navigation-item {
         font-size: 5vw;
-
-        &::before {
-          border-width: 0 get-vw(3px, 530) get-vw(3px, 530) 0;
-          padding: get-vw(5px, 530);
-          margin-right: get-vw(18px, 530);
-        }
+        padding-left: 5.2vw;
       }
     }
   }
