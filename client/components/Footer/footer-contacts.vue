@@ -57,15 +57,16 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
 	.footer-contacts {
 		display: flex;
-		margin-top: 123px;
+		margin-top: get-vw(123px);
 
     &__message {
       display: inline-block;
-      height: 3vw;
-      width: 5vw;
+      height: 1vw;
+      width: 2vw;
       background-repeat: no-repeat;
       margin: 0;
       background-size: contain;
@@ -85,8 +86,8 @@ export default {
 
     &__icon {
       display: inline-block;
-      height: 4vw;
-      width: 6vw;
+      height: 1vw;
+      width: 2vw;
       background-repeat: no-repeat;
       margin: 0;
       background-size: contain;
@@ -100,10 +101,10 @@ export default {
     }
 
 		&__title {
-			padding-bottom: 19px;
+			padding-bottom: get-vw(19px);
 			color: $text-color--grey-light;
 			font-family: 'Hoves-Bold';
-    	font-size: 27px;
+    	font-size: get-vw(27px);
 			font-weight: 500;
 			letter-spacing: -1px;
 		}
@@ -111,7 +112,7 @@ export default {
 		&__phones-list,
 		&__messengers-list {
 			display: grid;
-			grid-gap: 10px;
+			grid-gap: get-vw(10px);
 		}
 
 		&__phones-list {
@@ -120,7 +121,7 @@ export default {
 
 		&__messengers-list {
 			grid-template-columns: repeat(2, 1fr);
-			grid-column-gap: 84px;
+			grid-column-gap: get-vw(84px);
 		}
 
 		&__phone-item,
@@ -128,7 +129,7 @@ export default {
 			position: relative;
 			color: $text-color--grey;
 			font-family: 'Hoves-Bold';
-			font-size: 22px;
+			font-size: get-vw(22px);
 			text-decoration: none;
 			letter-spacing: -1px;
       display: flex;
@@ -142,16 +143,16 @@ export default {
 		}
 
 		&__message-us {
-			margin-left: 133px;
+			margin-left: get-vw(133px);
 		}
 	}
 
 	@media only screen and (max-width: 1320px) {
 		.footer-contacts {
-			margin-top: 77px;
+			margin-top: get-vw(77px);
 
 			&__message-us {
-				margin-left: 88px;
+				margin-left: get-vw(88px);
 			}
 		}
 	}
@@ -159,15 +160,15 @@ export default {
 	@media only screen and (max-width: 1220px) {
 		.footer-contacts {
 			flex-direction: column;
-			margin-top: 64px;
+			margin-top: get-vw(64px);
 
 			&__message-us {
-				margin-top: 40px;
+				margin-top: get-vw(40px);
 				margin-left: 0;
 			}
 
 			&__messengers-list {
-				grid-template-columns: repeat(2, 218px);
+				grid-template-columns: repeat(2, get-vw(218px));
 				grid-column-gap: 0;
 			}
 		}
@@ -175,69 +176,123 @@ export default {
 
 	@media only screen and (max-width: 1024px) {
 		.footer-contacts {
-			&__title {
-				padding-bottom: 7px;
-        font-size: 4vw;
-      }
+
 		}
 	}
 
-	@media only screen and (max-width: 960px) {
+	@media only screen and (max-width: 980px) {
 		.footer-contacts {
 			flex-direction: row;
 			justify-content: space-between;
-			margin-bottom: 60px;
+			margin-bottom: get-vw(60px);
 
 			&__message-us {
 				margin-top: 0;
 			}
 
+      &__title {
+        padding-bottom: 2vw;
+        font-size: 3vw;
+      }
+
+      &__phone-item,
+      &__messenger-item {
+        font-size: 2.7vw;
+      }
+
+      &__message {
+        height: 2vw;
+        width: 4vw;
+      }
+
 			&__messengers-list {
 				grid-template-columns: repeat(2, 1fr);
-				grid-column-gap: 54px;
+				grid-column-gap: get-vw(54px);
 			}
 		}
 	}
+
+  @media only screen and (max-width: 768px) {
+
+    .footer-contacts {
+      &__icon {
+        height: 2.5vw;
+        width: 4vw;
+      }
+
+      &__phones-list,
+      &__messengers-list {
+        display: grid;
+        grid-gap: 2.5vw;
+        margin-bottom: 8vw;
+      }
+
+      &__messenger-item,
+      &__phone-item {
+        font-size: 3vw;
+      }
+
+      &__message {
+        height: 3vw;
+        width: 5vw;
+      }
+    }
+  }
 
 	@media only screen and (max-width: 680px) {
 		.footer-contacts {
-			&__messengers-list {
-				grid-template-columns: repeat(1, 1fr);
-			}
-		}
-	}
-
-	@media only screen and (max-width: 520px) {
-		.footer-contacts {
-			flex-direction: column;
-
-			&__messengers-list {
-				grid-template-columns: repeat(2, 1fr);
-				grid-column-gap: 0;
-			}
-
-			&__message-us {
-				margin-top: 30px;
-			}
-
-			&__messenger-item,
-			&__phone-item {
-				font-size: 4vw;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 420px) {
-		.footer-contacts {
 			margin-top: 50px;
 			margin-bottom: 80px;
+      flex-direction: column;
+
+      &__message-us {
+        margin-top: get-vw(30px);
+      }
+
+      &__title {
+        padding-bottom: 2.5vw;
+        font-size: 5vw;
+      }
+
+      &__messengers-list {
+        grid-template-columns: repeat(1, 1fr);
+      }
 		}
 	}
 
-	@media only screen and (max-width: 370px) {
-		.footer-contacts {
-			margin-top: 37px;
-			margin-bottom: 58px;
-		}
-	}
+  @media only screen and (max-width: 520px) {
+    .footer-contacts {
+      &__title {
+        padding-bottom: 3.5vw;
+        font-size: 6vw;
+      }
+
+      &__icon {
+        height: 3.5vw;
+        width: 6vw;
+      }
+
+      &__phones-list,
+      &__messengers-list {
+        display: grid;
+        grid-gap: 3.5vw;
+        margin-bottom: 8vw;
+      }
+
+      &__messenger-item,
+      &__phone-item {
+        font-size: 5vw;
+        letter-spacing: -0.1vw;
+      }
+
+      &__message {
+        height: 4vw;
+        width: 6vw;
+      }
+
+      &__messengers-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
 </style>

@@ -105,9 +105,10 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
   .why-us {
-    padding-bottom: 167px;
+    padding-bottom: get-vw(167px);
     background-color: $bgcolor--white;
 
     &__title-wrap {
@@ -115,13 +116,13 @@ export default {
     }
 
     &__main-title {
-      margin-left: -40px;
-      padding-bottom: 120px;
-      font-size: 340px;
+      margin-left: get-vw(-40px);
+      padding-bottom: get-vw(120px);
+      font-size: get-vw(340px);
       font-family: 'Hoves-Bold';
       color: $text-color--grey-light;
-      line-height: 200px;
-      letter-spacing: -3px;
+      line-height: get-vw(200px);
+      letter-spacing: get-vw(-3px);
     }
 
     &__customer-rates,
@@ -138,32 +139,26 @@ export default {
 
     &__customer-rates-sub-title {
       position: absolute;
-      bottom: -30px;
+      bottom: get-vw(-30px);
+      margin-bottom: get-vw(40px);
     }
 
     &__rates-list {
-      padding-bottom: 142px;
+      padding-bottom: get-vw(142px);
       align-items: baseline;
     }
 
     &__metrics-list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 365px;
-      grid-row-gap: 60px;
-      margin-top: 36px;
+      grid-column-gap: get-vw(365px);
+      grid-row-gap: get-vw(60px);
+      margin-top: get-vw(36px);
     }
 
     &__rates-item {
-      &:nth-child(1),
-      &:nth-child(2) {
-        padding-right: 190px;
-        padding-top: 34px;
-      }
-
-      &:nth-child(3) {
-        padding-right: 43px;
-      }
+        padding-right: get-vw(40px);
+        padding-top: get-vw(34px);
     }
 
     &__metric-item {
@@ -175,11 +170,11 @@ export default {
     }
 
     &__sub-title {
-      font-size: 90px;
+      font-size: get-vw(90px);
       font-family: 'Hoves-Bold';
       color: $text-color--black;
       line-height: 104%;
-      letter-spacing: -3px;
+      letter-spacing: get-vw(-3px);
     }
 
     &__metric-number,
@@ -189,29 +184,28 @@ export default {
     }
 
     &__metric-number {
-      font-size: 90px;
+      font-size: get-vw(90px);
       line-height: 104%;
-      letter-spacing: -3px;
+      letter-spacing: get-vw(-3px);
     }
 
     &__rates-number {
       display: flex;
-      letter-spacing: -8px;
-      font-size: 165px;
+      letter-spacing: get-vw(-8px);
+      font-size: get-vw(165px);
       line-height: 100%;
 
       span {
         display: block;
-        margin-top: 5px;
-        font-size: 70px;
+        margin-top: get-vw(5px);
+        font-size: get-vw(70px);
         line-height: 92%;
-        letter-spacing: -2px;
-        margin-left: 12px;
+        letter-spacing: get-vw(-2px);
+        margin-left: get-vw(12px);
       }
     }
 
     &__item_description {
-      font-size: 21px;
       line-height: 129%;
       letter-spacing: -0.02em;
 
@@ -224,7 +218,7 @@ export default {
   @media only screen and (max-width: 1780px) {
     .why-us {
       &__metrics-list {
-        grid-column-gap: 300px;
+        grid-column-gap: get-vw(300px);
       }
     }
   }
@@ -232,259 +226,7 @@ export default {
   @media only screen and (max-width: 1680px) {
     .why-us {
       &__metrics-list {
-        grid-column-gap: 260px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1525px) {
-    .why-us {
-      &__main-title {
-        font-size: 313px;
-      }
-
-      &__metrics-list {
-        grid-column-gap: 205px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1440px) {
-    .why-us {
-      &__rates-item {
-        &:nth-child(1),
-        &:nth-child(2) {
-          padding-right: 79px;
-        }
-      }
-
-      &__sub-title {
-        br {
-          display: none;
-        }
-      }
-
-      &__metrics-list {
-        grid-column-gap: 165px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1420px) {
-    .why-us {
-      &__main-title {
-        font-size: 269px;
-        letter-spacing: -2px;
-        line-height: 170px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1340px) {
-    .why-us {
-      &__metrics-list {
-        grid-column-gap: 125px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1290px) {
-    .why-us {
-      &__metrics-list {
-        grid-column-gap: 105px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .why-us {
-      padding-bottom: 123px;
-
-      &__metrics-list {
-        grid-column-gap: 115px;
-      }
-
-      &__rates-list {
-        padding-bottom: 82px;
-      }
-
-      &__item_description {
-        font-size: 18px;
-        line-height: 139%;
-        letter-spacing: -0.03em;
-      }
-
-      &__rates-item {
-        &:nth-child(1),
-        &:nth-child(2) {
-          padding-right: 60px;
-        }
-      }
-
-      &__sub-title {
-        font-size: 70px;
-        line-height: 100%;
-        letter-spacing: -2px;
-        max-width: 90%;
-      }
-
-      &__metric-number {
-        font-size: 70px;
-        line-height: 92%;
-        letter-spacing: -2px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1235px) {
-    .why-us {
-      &__main-title {
-        padding-bottom: 103px;
-        font-size: 235px;
-        letter-spacing: -1px;
-        line-height: 140px;
-      }
-
-      &__rates-list {
-        border-bottom: 0;
-      }
-
-      &__mad-devs_metrics-sub-title {
-        padding-bottom: 25px;
-      }
-
-      &__metrics-list {
-        grid-column-gap: 90px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1180px) {
-    .why-us {
-      &__metrics-list {
-        grid-column-gap: 60px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1140px) {
-    .why-us {
-      &__main-title {
-        font-size: 205px;
-        line-height: 120px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .why-us {
-      &__main-title {
-        font-size: calc(91px + (195 - 91) * ((100vw - 320px) / (1024 - 320)));
-        line-height: 67%;
-        margin-left: 0;
-        padding-bottom: 57px;
-      }
-
-      &__rates-list {
-        padding-bottom: 119px;
-      }
-
-      &__sub-title {
-        font-size: 63px;
-        line-height: 110%;
-        letter-spacing: -2px;
-        max-width: 100%;
-        margin-bottom: -37px;
-      }
-
-      &__mad-devs_metrics-sub-title {
-        padding-bottom: 85px;
-      }
-
-      &__item_description {
-        font-size: 16px;
-        line-height: 119%;
-
-        br {
-          display: none;
-        }
-      }
-
-      &__metrics-list {
-        grid-column-gap: 30px;
-        margin-top: 0;
-        grid-row-gap: 41px;
-      }
-
-      &__rates-item {
-        padding-top: 76px;
-      }
-
-      &__rates-number {
-        letter-spacing: -5px;
-        font-size: 128px;
-
-        span {
-          margin-left: 7px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 870px) {
-    .why-us {
-      &__main-title {
-        font-size: calc(91px + (195 - 91) * ((100vw - 320px) / (1024 - 320)));
-        margin-left: -18px;
-      }
-
-      &__rates-list {
-        padding-bottom: 100px;
-      }
-
-      &__sub-title {
-        font-size: 47px;
-        margin-bottom: -17px;
-      }
-
-      &__mad-devs_metrics-sub-title {
-        padding-bottom: 0;
-        margin-bottom: 23px;
-      }
-
-      &__item_description {
-        font-size: 16px;
-        line-height: 119%;
-      }
-
-      &__metrics-list {
-        grid-column-gap: 285px;
-        margin-top: 0;
-        grid-row-gap: 41px;
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      &__rates-item {
-        padding-top: 65px;
-      }
-
-      &__rates-number {
-        font-size: 93px;
-        letter-spacing: -0.03em;
-      }
-
-      &__metric-item {
-        &:nth-of-type(3) {
-          grid-row: 3;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 760px) {
-    .why-us {
-      &__main-title {
-        font-size: 140px;
+        grid-column-gap: get-vw(260px);
       }
     }
   }
@@ -495,146 +237,42 @@ export default {
         flex-direction: column;
       }
 
+      &__rates-number {
+        display: flex;
+        font-size: 14vw;
+      }
+
+      &__metric-number {
+        font-size: 10vw;
+      }
+
+      &__metrics-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
       &__statistics-wrap {
-        margin-top: 28px;
+        margin-top: get-vw(28px, 720);
       }
 
       &__rates-item {
         display: flex;
 
         p {
-          max-width: 165px;
-          padding-top: 16px;
-          padding-left: 20px;
+          max-width: get-vw(165px, 720);
+          padding-left: get-vw(20px, 720);
 
           br {
             display: none;
           }
         }
-
-        &:first-child {
-          p {
-            max-width: 120px;
-          }
-        }
-
-        &:last-child {
-          padding: 34px 60px 0 0;
-        }
       }
 
       &__customer-rates-sub-title {
-        padding-bottom: 14px;
+        padding-bottom: get-vw(14px, 720);
       }
 
       &__metrics-list {
-        grid-column-gap: 90px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 690px) {
-    .why-us {
-      &__main-title {
-        font-size: 120px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 610px) {
-    .why-us {
-      &__main-title {
-        font-size: 110px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 576px) {
-    .why-us {
-      padding-bottom: 105px;
-
-      &__rates-number {
-        span {
-          margin-left: 5px;
-        }
-      }
-
-      &__metric-number {
-        font-size: 56px;
-        line-height: 101%;
-        letter-spacing: -2px;
-      }
-
-      &__metrics-list {
-        grid-row-gap: 47px;
-        grid-column-gap: 63px;
-        grid-row-gap: 34px;
-      }
-
-      &__item_description {
-        max-width: 85%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 560px) {
-    .why-us {
-      &__main-title {
-        padding-bottom: 63px;
-        font-size: 98px;
-      }
-
-      &__item_description {
-        width: initial;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 537px) {
-    .why-us {
-      &__main-title {
-        padding-bottom: 155px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 510px) {
-    .why-us {
-      &__main-title {
-        padding-bottom: 200px;
-        font-size: 90px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 482px) {
-    .why-us {
-      &__main-title {
-        padding-bottom: 205px;
-        font-size: 90px;
-        margin-left: -25px;
-      }
-
-      &__rates-item {
-        &#{&} {
-          padding-right: 0;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 473px) {
-    .why-us {
-      &__main-title {
-        font-size: 85px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 450px) {
-    .why-us {
-      &__main-title {
-        font-size: 82px;
+        grid-column-gap: get-vw(90px, 720);
       }
     }
   }
@@ -642,36 +280,55 @@ export default {
   @media only screen and (max-width: 440px) {
     .why-us {
       &__main-title {
-        padding-bottom: 80px;
+        padding-bottom: get-vw(80px, 440);
         text-align: center;
-        font-size: 90px;
+        font-size: get-vw(90px, 440);
         margin-left: 0;
+      }
+
+      &__customer-rates-sub-title {
+        padding-bottom: get-vw(14px, 440);
       }
 
       &__rates-list {
         padding-bottom: 69px;
+
+        .why-us__item_description {
+          line-height: 129%;
+          letter-spacing: -1px;
+          padding-top: 0;
+            max-width: 50%;
+            padding-left: 6vw;
+
+        }
       }
 
       &__customer-rates-sub-title,
       &__mad-devs_metrics-sub-title {
-        font-size: 41px;
+        font-size: get-vw(41px, 440);
+      }
+
+      &__mad-devs_metrics-sub-title {
+        padding-bottom: 7vw;
       }
 
       &__rates-number {
-        font-size: 70px;
+        font-size: 17vw;
         line-height: 92%;
         letter-spacing: -2px;
 
         span {
-          font-size: 41px;
+          font-size: get-vw(41px, 440);
           line-height: 99%;
           letter-spacing: -1px;
         }
       }
 
       &__rates-item {
+        padding-right: 0;
+        padding-top: 6vw;
+
         p {
-          font-size: 17px;
           line-height: 129%;
           letter-spacing: -1px;
           padding-top: 0;
@@ -679,74 +336,9 @@ export default {
       }
 
       &__metric-number {
-        font-size: 41px;
+        font-size: 10.5vw;
         line-height: 99%;
         letter-spacing: -1px;
-      }
-      
-      &__item_description {
-        font-size: 17px;
-        line-height: 129%;
-        letter-spacing: -1px;
-        padding-top: 0;
-      }
-    }
-  }
-
-
-  @media only screen and (max-width: 420px) {
-    .why-us {
-      padding-bottom: 77px;
-
-      &__metrics-list {
-        grid-row-gap: 30px;
-        grid-column-gap: 25px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 389px) {
-    .why-us {
-      &__main-title {
-        font-size: 86px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 376px) {
-    .why-us {
-      &__main-title {
-        font-size: 82px;
-        padding-bottom: 135px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 357px) {
-    .why-us {
-      &__main-title {
-        font-size: 79px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 352px) {
-    .why-us {
-      &__main-title {
-        font-size: 77px;
-        padding-bottom: 176px;
-      }
-
-      &__metrics-list {
-        grid-column-gap: 0;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 337px) {
-    .why-us {
-      &__main-title {
-        font-size: 72px;
       }
     }
   }

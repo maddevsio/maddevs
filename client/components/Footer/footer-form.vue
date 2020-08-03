@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-form form"> 
+  <div class="footer-form form">
     <ValidationObserver v-slot="{ invalid }" ref="form">
       <div class="fields-list">
         <ValidationProvider class="field-item" rules="max:50" v-slot="{ classes, errors }">
@@ -115,16 +115,17 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
-	.footer-form {
-    width: 450px;
-    
+  .footer-form {
+    width: get-vw(450px);
+
     &_email {
       /deep/ .v-placeholder-asterisk {
-        font-size: 18px;
+        font-size: get-vw(18px);
         color: $bgcolor--grey;
         font-family: 'Hoves-Regular';
-        left: 10px !important;
+        left: get-vw(10px) !important;
         top: 50% !important;
         transform: translateY(-50%);
 
@@ -136,55 +137,130 @@ export default {
 
 		button {
       width: 100%;
-      height: 65px;
+      height: get-vw(65px);
+      font-size: get-vw(21px);
 		}
 
 		textarea {
-			min-height: 64px;
-			padding: 22px 10px;
+			min-height: get-vw(64px);
+			padding: get-vw(22px) get-vw(10px);
       resize: vertical;
     }
-    
+
     .fields-list {
       display: grid;
-      grid-row-gap: 12px;
+      grid-row-gap: get-vw(12px);
     }
 
     .form-checkboxes {
-      padding-top: 18px;
+      padding-top: get-vw(18px);
     }
 
     .entry-field {
-      padding: 21px 10px;
+      padding: get-vw(21px) get-vw(10px);
+      font-size: get-vw(18px);
     }
 
     .field-item {
-      margin-bottom: 8px;
+      margin-bottom: get-vw(8px);
+    }
+
+    /deep/ .checkmark {
+      width: get-vw(20px);
+      height: get-vw(20px);
+      margin-top: 0.5vw;
+    }
+
+    /deep/ .form-checkboxes {
+      label {
+        padding-left: get-vw(33px);
+        font-size: get-vw(18px);
+        padding-bottom: get-vw(30px);
+      }
     }
 	}
 
-	@media only screen and (max-width: 1440px) {
-		.footer-form {
-			width: 370px;
-		}
-	}
+  @media only screen and (max-width: 1680px) {
+    .footer-form {
+      .entry-field {
+        padding: 21px 10px;
+        font-size: 18px;
+      }
 
-	@media only screen and (max-width: 1220px) {
-		.footer-form {
-			width: 380px;
-		}
+      /deep/ .checkmark {
+        width: 20px;
+        height: 20px;
+        margin-top: 0.5vw;
+      }
+
+      /deep/ .form-checkboxes {
+        label {
+          padding-left: 33px;
+          font-size: 18px;
+          padding-bottom: 30px;
+        }
+      }
+
+      button {
+        font-size: 21px;
+      }
+    }
   }
-  
-  @media only screen and (max-width: 960px) {
+
+  @media only screen and (max-width: 1220px) {
+    .footer-form {
+      width: 35vw;
+
+      &_email {
+        /deep/ .v-placeholder-asterisk {
+          font-size: 18px;
+          left: 10px !important;
+          top: 50% !important;
+          transform: translateY(-50%);
+
+          span {
+            opacity: 0.5;
+          }
+        }
+      }
+
+      textarea {
+        min-height: 64px;
+        padding: 22px 10px;
+        resize: vertical;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 980px) {
 		.footer-form {
       width: 100%;
+
+      button {
+        height: 7vw;
+        margin-bottom: 6vw;
+      }
 		}
   }
-  
-  @media only screen and (max-width: 420px) {
+
+  @media only screen and (max-width: 680px) {
 		.footer-form {
 			.field-item {
         margin-bottom: 0;
+      }
+
+      .fields-list {
+        display: grid;
+        grid-row-gap: 2vw;
+      }
+
+      .form-checkboxes {
+        padding-top: 7vw;
+      }
+
+      button {
+        height: 17vw;
+        margin-bottom: 6vw;
       }
 		}
 	}

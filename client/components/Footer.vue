@@ -57,15 +57,17 @@ export default {
 
 <style lang="scss" scoped>
   @import '../assets/styles/vars';
+  @import '../assets/styles/get-vw';
 
-	.footer {
-		padding-top: 80px;
-    padding-bottom: 59px;
+
+  .footer {
+		padding-top: get-vw(95px);
+    padding-bottom: 7.5vw;
 
 		&__content {
 			display: flex;
     	justify-content: space-between;
-			padding-bottom: 50px;
+			padding-bottom: get-vw(50px);
 		}
 
 		&__main-title {
@@ -73,18 +75,18 @@ export default {
 		}
 
 		&__mailto-link {
-			margin-left: 28px;
+			margin-left: get-vw(28px);
 			color: $text-color--red;
-			font-size: 70px;
+			font-size: get-vw(70px);
 			font-family: 'Hoves-Bold';
 			text-decoration: none;
 			border-bottom: 1px solid;
-			letter-spacing: -2px;
+			letter-spacing: get-vw(-2px);
 		}
 
 		&__bottom-links-line {
 			display: flex;
-			padding-top: 23px;
+			padding-top: get-vw(23px);
 			border-top: 1px solid $footer--border-color--grey-light;
 		}
 
@@ -94,83 +96,46 @@ export default {
 
 		&__bottom-link,
 		&__company-name {
-			font-size: 16px;
+			font-size: get-vw(16px);
 			font-family: 'Hoves-Regular';
 			color: $text-color--grey;
 		}
 
 		&__bottom-link {
-			padding-left: 26px;
+			padding-left: get-vw(26px);
 			text-decoration: underline;
 			text-decoration-color: $footer--text-decoration-color;
 
 			&:first-child {
-				padding-left: 30px;
+				padding-left: get-vw(30px);
 			}
 		}
 
 		&__form-wrap {
-			margin-top: 18px;
+			margin-top: get-vw(18px);
 		}
 
 		&__mail-wrapper {
-			margin-top: 58px;
+			margin-top: get-vw(64px);
 		}
 	}
 
 	.gdpr,
 	.privacy,
 	.nda {
-		padding-top: 109px;
-		margin-top: 90px;
+		padding-top: get-vw(109px);
+		margin-top: get-vw(90px);
 		border-top: 1px solid $border-color--grey-dark;
 	}
 
-	@media only screen and (max-width: 1440px) {
-		.footer {
-			padding-top: 110px;
-			padding-bottom: 103px;
-		}	
-	}
 
 	@media only screen and (max-width: 1420px) {
 		.footer {
-			padding-bottom: 65px;
-
 			&__bottom-links-line {
 				display: grid;
 				justify-content: center;
-				grid-row-gap: 25px;
-				padding-top: 30px;
 				text-align: center;
-			}
-
-			&__bottom-link {
-				&:first-child {
-					padding-left: 0;
-				}
-			}
-
-			&__company-name {
-				grid-row-start: 3;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 1320px) {
-		.footer {
-			padding-top: 90px;
-
-			&__main-title {
-				font-size: 100px;
-			}
-
-			&__mailto-link {
-				font-size: 62px;
-			}
-
-			&__mail-wrapper {
-				margin-top: 50px;
+        grid-row-gap: 1vw;
 			}
 		}
 	}
@@ -178,7 +143,6 @@ export default {
 	@media only screen and (max-width: 1220px) {
 		.footer {
 			&__mail-wrapper {
-				margin-top: 25px;
 
 				img {
 					display: none;
@@ -187,131 +151,105 @@ export default {
 
 			&__mailto-link {
 				margin-left: 0;
-				font-size: 46px;
-			}
-
-			&__content {
-				padding-bottom: 55px;
 			}
 		}
 	}
 
 	@media only screen and (max-width: 1024px) {
 		.footer {
-			padding-top: 75px;
-			padding-bottom: 43px;
-
-			&__main-title {
-				font-size: 90px;
-			}
+			padding-top: get-vw(75px);
+			padding-bottom: get-vw(43px);
 		}
 	}
 
-	@media only screen and (max-width: 960px) {
+	@media only screen and (max-width: 980px) {
 		.footer {
-			padding-top: 40px;
-			padding-bottom: 50px;
-
-			&__main-title {
-				font-size: 64px;
-				letter-spacing: -0.03em;
-			}
+      padding-bottom: 5vw;
+      padding-top: 9vw;
 
 			&__content {
 				flex-direction: column;
-				padding-bottom: 42px;
+				padding-bottom: get-vw(42px);
 			}
 
 			&__mail-wrapper {
-				margin-top: 20px;
-			} 
+				margin-top: get-vw(20px);
+			}
+
+      &__company-name,
+      &__bottom-link {
+        font-size: 2vw;
+      }
+
+      &__left-bottom_links {
+        margin-bottom: 2vw;
+      }
 		}
 	}
 
 	@media only screen and (max-width: 760px) {
 		.footer {
-			&__bottom-links-line {
-				padding-top: 35px;
-			}
+      &__bottom-link {
+        font-size: 2.5vw;
+        margin-bottom: 1vw;
+      }
+
+      &__company-name {
+        grid-row: 3 / 3;
+        font-size: 2.5vw;
+      }
 
 			&__left-bottom_links {
 				flex-wrap: wrap;
 				justify-content: center;
 			}
-
-			&__bottom-link {
-				&:last-child {
-					padding-top: 10px;
-				}
-			}
-
 		}
 
 		.gdpr,
 		.privacy,
 		.nda {
-			margin-top: 60px;
+			margin-top: get-vw(60px);
 		}
 	}
 
 	@media only screen and (max-width: 680px) {
-		.footer {
-			padding-top: 60px;
-		}
+    .footer {
+
+      &__mailto-link {
+        letter-spacing: 0.2vw;
+        font-size: 6vw;
+      }
+
+      &__mail-wrapper {
+        margin-top: 4vw;
+      }
+
+      &__bottom-link {
+        font-size: 4vw;
+        padding-bottom: 2vw;
+      }
+
+      &__bottom-links-line {
+        grid-row-gap: 7vw;
+        padding-top: 8vw;
+      }
+
+      &__company-name {
+        font-size: 4vw;
+      }
+
+    }
 	}
 
-	@media only screen and (max-width: 500px) {
-		.footer {
-			&__left-bottom_links {
-				flex-direction: column;
-			}
+  @media only screen and (max-width: 520px) {
+    .footer {
+      padding-bottom: 17vw;
+      padding-top: 15.5vw;
 
-			&__bottom-link {
-				&:nth-child(2) {
-					padding-top: 10px;
-				}
-			}
-		}
-	}
-
-	@media only screen and (max-width: 420px) {
-		.footer {
-			padding-top: 55px;
-			padding-bottom: 17px;
-
-			&__mailto-link {
-				font-size: 40px;
-				letter-spacing: -0.02em;
-			}
-
-			&__main-title {
-				font-size: 53px;
-				letter-spacing: -2px;
-			}
-
-			&__bottom-link {
-				padding-left: 10px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 370px) {
-		.footer {
-			padding-bottom: 43px;
-
-			&__mailto-link {
-				font-size: 34px;
-			}
-
-			&__mail-wrapper {
-				margin-top: 10px;
-			}
-
-			&__bottom-link {
-				&:nth-child(2) {
-					padding-top: 10px;
-				}
-			}
-		}
-	}
+      &__mailto-link {
+        letter-spacing: 0.2vw;
+        font-size: 10vw;
+      }
+    }
+  }
 </style>

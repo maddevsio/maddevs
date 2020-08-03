@@ -24,7 +24,7 @@
             </div>
           </div>
           <div class="issues-and-solution__image-wrapper">
-            <img src="../../assets/img/GoDee/svg/women.svg" class="issues-and-solution__women-image" alt="Women">
+            <img src="@/assets/img/GoDee/svg/women.svg" class="issues-and-solution__women-image" alt="Women">
           </div>
         </div>
         <div class="issues-and-solution__empty-white-block"></div>
@@ -78,7 +78,7 @@
           <div class="issues-and-solution__price-group issues-and-solution__solution-price-group">
             <div class="issues-and-solution__price-item">
               <div class="issues-and-solution__price-value issues-and-solution__solution-price-value">
-                1.29 USD 
+                1.29 USD
                 <span class="issues-and-solution__equal-symbol-one-trip">+</span>
               </div>
               <div class="issues-and-solution__price-description issues-and-solution__solution-price-description">One trip</div>
