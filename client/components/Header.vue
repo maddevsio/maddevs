@@ -270,7 +270,7 @@ export default {
 
     &__logo-icon {
       position: absolute;
-      left: 2vw;
+      left: 3vw;
     }
 
     &-social-logo {
