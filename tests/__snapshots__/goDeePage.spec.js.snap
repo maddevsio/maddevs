@@ -864,5 +864,228 @@ exports[`GoDee page renders correctly 1`] = `
       </div>
     </div>
   </section>
+   
+  <section
+    class="features"
+    id="features"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="features__container"
+      >
+        <h2
+          class="features__main-title"
+        >
+          Features
+        </h2>
+         
+        <div
+          class="features__content-wrapper"
+        >
+          <ul
+            class="features__features-text-list"
+          >
+            <li
+              class="features__features-text-item"
+            >
+              <div
+                class="features__text-title"
+              >
+                Online Time-Tables & Live 
+                <br />
+                 Location Tracking
+              </div>
+               
+              <p
+                class="features__text-description"
+              >
+                To make the GoDee app easy to use, we created a system 
+                <br />
+                 that tracks bus location in real time. So every user is able to 
+                <br />
+                 book a seat while their bus is approaching them.
+              </p>
+            </li>
+             
+            <li
+              class="features__features-text-item"
+            >
+              <div
+                class="features__text-title"
+              >
+                GPS
+              </div>
+               
+              <p
+                class="features__text-description"
+              >
+                We use GPS data for bus tracking, and we have developed 
+                <br />
+                 an algorithm for bus travel/arrival time prediction, which 
+                <br />
+                 uses geocoding service and also calculates time 
+                <br />
+                 concerning traffic jams and their severity. The predictor 
+                <br />
+                 functionality calculates estimated arrival time for a bus on 
+                <br />
+                 this or that route. It helps our passengers check if the 
+                <br />
+                 requested bus arrives on time, taking into account 
+                <br />
+                 traffic jams.
+              </p>
+            </li>
+             
+            <li
+              class="features__features-text-item"
+            >
+              <div
+                class="features__text-title"
+              >
+                Referral
+              </div>
+               
+              <div
+                class="features__text-description"
+              >
+                Inside the GoDee application, users can share referrals and 
+                <br />
+                 get free rides as bonuses. After receiving a referral code 
+                <br />
+                 from a referrer, the user can input the code from the 
+                <br />
+                 booking confirmation as a promo code and enjoy one free 
+                <br />
+                 ride. Meanwhile, referrers themselves receive a reward with 
+                <br />
+                 "X" number of free rides.
+              </div>
+            </li>
+             
+            <li
+              class="features__features-text-item features__features-text-item-payment"
+            >
+              <div
+                class="features__text-title"
+              >
+                Payment method
+              </div>
+               
+              <p
+                class="features__text-description"
+              >
+                As cashless payments are becoming more and more 
+                <br />
+                 popular in Vietnam, we have integrated Stripe service into 
+                <br />
+                 GoDee, enabling the passengers to pay with credit cards 
+                <br />
+                 easily and quickly. We have also developed an API for 
+                <br />
+                 flawless third-party service integration. Visa/Mastercard, 
+                <br />
+                 AmEx, MoMo and JCB are integrated into the GoDee user 
+                <br />
+                 app to facilitate cashless payments. We have also provided 
+                <br />
+                 a personal balance, which can be replenished via the 
+                <br />
+                 above-mentioned payment systems.
+              </p>
+               
+              <div
+                class="features__text-sub-title"
+              >
+                Online Payment Service Integration
+              </div>
+               
+              <p
+                class="features__text-description"
+              >
+                Visa/Mastercard, AmEx, MoMo and JCB are integrated into 
+                <br />
+                 the GoDee user app to facilitate cashless payments.
+              </p>
+            </li>
+             
+            <li
+              class="features__features-text-item"
+            >
+              <div
+                class="features__text-title"
+              >
+                The best possible routes
+              </div>
+               
+              <div
+                class="features__text-description"
+              >
+                Depending on passengers’ requests, the system allows 
+                <br />
+                 drivers to build the best possible routes automatically. If 
+                <br />
+                 there are no orders from passengers, drivers will skip the 
+                <br />
+                 empty bus and stop along the way.
+              </div>
+            </li>
+          </ul>
+           
+          <ul
+            class="features__features-images-list"
+          >
+            <li
+              class="features__image-wrapper"
+            >
+              <img
+                alt="Features"
+                class="features__live-location-tracker"
+                src="[object Object]"
+              />
+            </li>
+            <li
+              class="features__image-wrapper"
+            >
+              <img
+                alt="Features"
+                class="features__time-tables"
+                src="[object Object]"
+              />
+            </li>
+            <li
+              class="features__image-wrapper"
+            >
+              <img
+                alt="Features"
+                class="features__referral"
+                src="[object Object]"
+              />
+            </li>
+            <li
+              class="features__image-wrapper"
+            >
+              <img
+                alt="Features"
+                class="features__payment-methods"
+                src="[object Object]"
+              />
+            </li>
+            <li
+              class="features__image-wrapper"
+            >
+              <img
+                alt="Features"
+                class="features__possible-routes"
+                src="[object Object]"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 `;
