@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import GdprPage from '@/pages/_lang/gdpr';
+import GdprPage from '@/pages/gdpr';
 
 describe('Gdpr page', () => {
   let wrapper;
