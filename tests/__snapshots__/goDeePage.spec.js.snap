@@ -9,7 +9,7 @@ exports[`GoDee page renders correctly 1`] = `
     id="banner"
   >
     <div
-      class="container"
+      class="container-godee"
     >
       <div
         class="banner__banner-content"
@@ -70,7 +70,7 @@ exports[`GoDee page renders correctly 1`] = `
     id="about-godee"
   >
     <div
-      class="container"
+      class="container-godee"
     >
       <div
         class="about-godee__text-content"
@@ -133,7 +133,7 @@ exports[`GoDee page renders correctly 1`] = `
     </div>
      
     <div
-      class="container"
+      class="container-godee"
     >
       <div
         class="issues-and-solution__transportation"
@@ -511,6 +511,56 @@ exports[`GoDee page renders correctly 1`] = `
           />
         </div>
       </div>
+    </div>
+  </section>
+   
+  <section
+    class="result"
+    id="result"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="result__container"
+      >
+        <div
+          class="result__head-text"
+        >
+          <h3
+            class="result__main-title"
+          >
+            Result
+          </h3>
+           
+          <p
+            class="result__description"
+          >
+            Exciting project to improve people’s daily life and reduce environmental pollution. 
+            <br />
+             Regular commutes with affordable and stress-free service.
+          </p>
+        </div>
+         
+        <div
+          class="result__video-frame-wrapper"
+        >
+          <iframe
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen="allowfullscreen"
+            frameborder="0"
+            height="100%"
+            src="https://www.youtube.com/embed/_XCRbXmTUwI"
+            width="100%"
+          />
+        </div>
+      </div>
+       
+      <img
+        alt="Result route line"
+        class="result__route-line"
+        src="@/assets/img/GoDee/svg/result-route-line.svg"
+      />
     </div>
   </section>
 </main>

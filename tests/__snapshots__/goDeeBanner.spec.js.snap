@@ -6,7 +6,7 @@ exports[`GoDee banner renders correctly 1`] = `
   id="banner"
 >
   <div
-    class="container"
+    class="container-godee"
   >
     <div
       class="banner__banner-content"
