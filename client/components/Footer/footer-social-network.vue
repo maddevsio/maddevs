@@ -1,22 +1,22 @@
 <template>
 	<div class="footer-social-network">
 		<a href="https://github.com/maddevsio" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/github.svg" class="footer-social-network__icon footer-social-network__github" alt="Mad Devs GitHub">
+			<img src="@/assets/img/Footer/github.svg" class="footer-social-network__icon footer-social-network__github" alt="Mad Devs GitHub">
 		</a>
 		<a href="https://www.facebook.com/maddevsllc" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/facebook.svg" class="footer-social-network__icon footer-social-network__facebook" alt="Mad Devs Facebook">
+			<img src="@/assets/img/Footer/facebook.svg" class="footer-social-network__icon footer-social-network__facebook" alt="Mad Devs Facebook">
 		</a>
 		<a href="https://www.instagram.com/maddevsio/" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/instagram.svg" class="footer-social-network__icon footer-social-network__instagram" alt="Mad Devs Instagram">
+			<img src="@/assets/img/Footer/instagram.svg" class="footer-social-network__icon footer-social-network__instagram" alt="Mad Devs Instagram">
 		</a>
 		<a href="https://blog.maddevs.io/" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/medium.svg" class="footer-social-network__icon footer-social-network__medium" alt="Mad Devs Medium">
+			<img src="@/assets/img/Footer/medium.svg" class="footer-social-network__icon footer-social-network__medium" alt="Mad Devs Medium">
 		</a>
 		<a href="https://twitter.com/MadDevsIO" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/twitter.svg" class="footer-social-network__icon footer-social-network__twitter" alt="Mad Devs Twitter">
+			<img src="@/assets/img/Footer/twitter.svg" class="footer-social-network__icon footer-social-network__twitter" alt="Mad Devs Twitter">
 		</a>
 		<a href="https://www.behance.net/maddevs" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/behance.svg" class="footer-social-network__icon footer-social-network__behance" alt="Mad Devs Behance">
+			<img src="@/assets/img/Footer/behance.svg" class="footer-social-network__icon footer-social-network__behance" alt="Mad Devs Behance">
 		</a>
 	</div>
 </template>
