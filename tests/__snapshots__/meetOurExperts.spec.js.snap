@@ -66,7 +66,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             <img
               alt="Linkedin"
               class="meet-our_experts__expert-linkedin_icon"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
+              src="@/assets/img/Home/svg/experts/linkedin.svg"
             />
           </a>
         </div>
@@ -116,7 +116,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             <img
               alt="Linkedin"
               class="meet-our_experts__expert-linkedin_icon"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
+              src="@/assets/img/Home/svg/experts/linkedin.svg"
             />
           </a>
         </div>
@@ -166,7 +166,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             <img
               alt="Linkedin"
               class="meet-our_experts__expert-linkedin_icon"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
+              src="@/assets/img/Home/svg/experts/linkedin.svg"
             />
           </a>
         </div>
@@ -216,7 +216,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             <img
               alt="Linkedin"
               class="meet-our_experts__expert-linkedin_icon"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
+              src="@/assets/img/Home/svg/experts/linkedin.svg"
             />
           </a>
         </div>
@@ -266,7 +266,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             <img
               alt="Linkedin"
               class="meet-our_experts__expert-linkedin_icon"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
+              src="@/assets/img/Home/svg/experts/linkedin.svg"
             />
           </a>
         </div>
@@ -316,7 +316,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             <img
               alt="Linkedin"
               class="meet-our_experts__expert-linkedin_icon"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
+              src="@/assets/img/Home/svg/experts/linkedin.svg"
             />
           </a>
         </div>
@@ -366,7 +366,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             <img
               alt="Linkedin"
               class="meet-our_experts__expert-linkedin_icon"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
+              src="@/assets/img/Home/svg/experts/linkedin.svg"
             />
           </a>
         </div>
@@ -416,7 +416,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             <img
               alt="Linkedin"
               class="meet-our_experts__expert-linkedin_icon"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
+              src="@/assets/img/Home/svg/experts/linkedin.svg"
             />
           </a>
         </div>
@@ -482,7 +482,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
                 <img
                   alt="Linkedin"
                   class="mobile-expert-linkedin_icon"
-                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                  src="@/assets/img/Home/svg/experts/linkedin.svg"
                 />
               </a>
             </div>
@@ -536,7 +536,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
                 <img
                   alt="Linkedin"
                   class="mobile-expert-linkedin_icon"
-                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                  src="@/assets/img/Home/svg/experts/linkedin.svg"
                 />
               </a>
             </div>
@@ -590,7 +590,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
                 <img
                   alt="Linkedin"
                   class="mobile-expert-linkedin_icon"
-                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                  src="@/assets/img/Home/svg/experts/linkedin.svg"
                 />
               </a>
             </div>
@@ -644,7 +644,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
                 <img
                   alt="Linkedin"
                   class="mobile-expert-linkedin_icon"
-                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                  src="@/assets/img/Home/svg/experts/linkedin.svg"
                 />
               </a>
             </div>
@@ -698,7 +698,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
                 <img
                   alt="Linkedin"
                   class="mobile-expert-linkedin_icon"
-                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                  src="@/assets/img/Home/svg/experts/linkedin.svg"
                 />
               </a>
             </div>
@@ -752,7 +752,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
                 <img
                   alt="Linkedin"
                   class="mobile-expert-linkedin_icon"
-                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                  src="@/assets/img/Home/svg/experts/linkedin.svg"
                 />
               </a>
             </div>
@@ -806,7 +806,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
                 <img
                   alt="Linkedin"
                   class="mobile-expert-linkedin_icon"
-                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                  src="@/assets/img/Home/svg/experts/linkedin.svg"
                 />
               </a>
             </div>
@@ -860,7 +860,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
                 <img
                   alt="Linkedin"
                   class="mobile-expert-linkedin_icon"
-                  src="../../assets/img/Home/svg/experts/linkedin.svg"
+                  src="@/assets/img/Home/svg/experts/linkedin.svg"
                 />
               </a>
             </div>
