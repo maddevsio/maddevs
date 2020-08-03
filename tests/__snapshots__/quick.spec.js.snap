@@ -32,8 +32,10 @@ exports[`Quick Project Start renders correctly 1`] = `
           <div
             class="quick-project_start__icon-item contact"
           >
-            <span
-              class="quick-project_start__icon quick-project_start__icon--contact"
+            <img
+              alt="contact"
+              class="quick-project_start__image-item"
+              src="[object Object]"
             />
           </div>
            
@@ -41,7 +43,7 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title sub-paragraph"
+              class="quick-project_start__title sub-title"
             >
               contact
             </h4>
@@ -59,8 +61,10 @@ exports[`Quick Project Start renders correctly 1`] = `
           <div
             class="quick-project_start__icon-item analysis"
           >
-            <span
-              class="quick-project_start__icon quick-project_start__icon--analysis"
+            <img
+              alt="analysis"
+              class="quick-project_start__image-item"
+              src="[object Object]"
             />
           </div>
            
@@ -68,7 +72,7 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title sub-paragraph"
+              class="quick-project_start__title sub-title"
             >
               analysis
             </h4>
@@ -86,8 +90,10 @@ exports[`Quick Project Start renders correctly 1`] = `
           <div
             class="quick-project_start__icon-item proposal"
           >
-            <span
-              class="quick-project_start__icon quick-project_start__icon--proposal"
+            <img
+              alt="proposal"
+              class="quick-project_start__image-item"
+              src="[object Object]"
             />
           </div>
            
@@ -95,7 +101,7 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title sub-paragraph"
+              class="quick-project_start__title sub-title"
             >
               proposal
             </h4>
@@ -113,8 +119,10 @@ exports[`Quick Project Start renders correctly 1`] = `
           <div
             class="quick-project_start__icon-item team"
           >
-            <span
-              class="quick-project_start__icon quick-project_start__icon--team"
+            <img
+              alt="team"
+              class="quick-project_start__image-item"
+              src="[object Object]"
             />
           </div>
            
@@ -122,7 +130,7 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title sub-paragraph"
+              class="quick-project_start__title sub-title"
             >
               team
             </h4>
@@ -140,8 +148,10 @@ exports[`Quick Project Start renders correctly 1`] = `
           <div
             class="quick-project_start__icon-item start"
           >
-            <span
-              class="quick-project_start__icon quick-project_start__icon--start"
+            <img
+              alt="start"
+              class="quick-project_start__image-item"
+              src="[object Object]"
             />
           </div>
            
@@ -149,7 +159,7 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title sub-paragraph"
+              class="quick-project_start__title sub-title"
             >
               start
             </h4>

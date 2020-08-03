@@ -1,4 +1,5 @@
-@function get-vw($value, $vw-viewport: 1680) {
+$vw-viewport: 1680;
+@function get-vw($value) {
   $vw-context: $vw-viewport * 0.01 * 1px;
   @return $value / $vw-context * 1vw;
   @return $value;

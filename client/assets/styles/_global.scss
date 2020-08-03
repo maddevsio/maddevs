@@ -249,7 +249,6 @@
 
 .title,
 .sub-title,
-.sub-paragraph,
 .section-title {
   font-family: 'Hoves-Bold';
 }
@@ -267,8 +266,8 @@
 }
 
 .title {
-  font-size: get-vw(90px);
-  padding-bottom: get-vw(15px);
+  font-size: 90px;
+  padding-bottom: 15px;
 }
 
 .last-character {
@@ -289,10 +288,6 @@
   font-family: 'Hoves-Regular';
   line-height: 129%;
   letter-spacing: -0.02em;
-}
-
-.sub-paragraph {
-  font-size: 3.2vw;
 }
 
 .title-icon {
@@ -557,10 +552,6 @@
   .icon-item {
     font-size: 2.5vw;
   }
-
-  .sub-paragraph {
-    font-size: 7vw;
-  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -619,12 +610,6 @@
   .main-title {
     letter-spacing: -2px;
     line-height: 99%;
-  }
-
-  .paragraph,
-  .icon-item {
-    letter-spacing: -1px;
-    font-size: 4.5vw;
   }
 }
 
