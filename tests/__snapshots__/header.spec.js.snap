@@ -409,8 +409,8 @@ exports[`Header renders correctly 1`] = `
             >
               <img
                 alt="Mad Devs GitHub"
-                class="footer-social-network__github"
-                src="../../assets/img/Footer/github.svg"
+                class="footer-social-network__icon footer-social-network__github"
+                src="@/assets/img/Footer/github.svg"
               />
             </a>
              
@@ -421,8 +421,8 @@ exports[`Header renders correctly 1`] = `
             >
               <img
                 alt="Mad Devs Facebook"
-                class="footer-social-network__facebook"
-                src="../../assets/img/Footer/facebook.svg"
+                class="footer-social-network__icon footer-social-network__facebook"
+                src="@/assets/img/Footer/facebook.svg"
               />
             </a>
              
@@ -433,8 +433,8 @@ exports[`Header renders correctly 1`] = `
             >
               <img
                 alt="Mad Devs Instagram"
-                class="footer-social-network__instagram"
-                src="../../assets/img/Footer/instagram.svg"
+                class="footer-social-network__icon footer-social-network__instagram"
+                src="@/assets/img/Footer/instagram.svg"
               />
             </a>
              
@@ -445,8 +445,8 @@ exports[`Header renders correctly 1`] = `
             >
               <img
                 alt="Mad Devs Medium"
-                class="footer-social-network__medium"
-                src="../../assets/img/Footer/medium.svg"
+                class="footer-social-network__icon footer-social-network__medium"
+                src="@/assets/img/Footer/medium.svg"
               />
             </a>
              
@@ -457,8 +457,8 @@ exports[`Header renders correctly 1`] = `
             >
               <img
                 alt="Mad Devs Twitter"
-                class="footer-social-network__twitter"
-                src="../../assets/img/Footer/twitter.svg"
+                class="footer-social-network__icon footer-social-network__twitter"
+                src="@/assets/img/Footer/twitter.svg"
               />
             </a>
              
@@ -469,8 +469,8 @@ exports[`Header renders correctly 1`] = `
             >
               <img
                 alt="Mad Devs Behance"
-                class="footer-social-network__behance"
-                src="../../assets/img/Footer/behance.svg"
+                class="footer-social-network__icon footer-social-network__behance"
+                src="@/assets/img/Footer/behance.svg"
               />
             </a>
           </div>

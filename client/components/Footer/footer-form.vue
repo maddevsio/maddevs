@@ -122,10 +122,10 @@ export default {
 
     &_email {
       /deep/ .v-placeholder-asterisk {
-        font-size: 18px;
+        font-size: get-vw(18px);
         color: $bgcolor--grey;
         font-family: 'Hoves-Regular';
-        left: 10px !important;
+        left: get-vw(10px) !important;
         top: 50% !important;
         transform: translateY(-50%);
 
@@ -138,11 +138,12 @@ export default {
 		button {
       width: 100%;
       height: get-vw(65px);
+      font-size: get-vw(21px);
 		}
 
 		textarea {
-			min-height: 64px;
-			padding: 22px 10px;
+			min-height: get-vw(64px);
+			padding: get-vw(22px) get-vw(10px);
       resize: vertical;
     }
 
@@ -156,17 +157,78 @@ export default {
     }
 
     .entry-field {
-      padding: 21px 10px;
+      padding: get-vw(21px) get-vw(10px);
+      font-size: get-vw(18px);
     }
 
     .field-item {
       margin-bottom: get-vw(8px);
     }
+
+    /deep/ .checkmark {
+      width: get-vw(20px);
+      height: get-vw(20px);
+      margin-top: 0.5vw;
+    }
+
+    /deep/ .form-checkboxes {
+      label {
+        padding-left: get-vw(33px);
+        font-size: get-vw(18px);
+        padding-bottom: get-vw(30px);
+      }
+    }
 	}
+
+  @media only screen and (max-width: 1680px) {
+    .footer-form {
+      .entry-field {
+        padding: 21px 10px;
+        font-size: 18px;
+      }
+
+      /deep/ .checkmark {
+        width: 20px;
+        height: 20px;
+        margin-top: 0.5vw;
+      }
+
+      /deep/ .form-checkboxes {
+        label {
+          padding-left: 33px;
+          font-size: 18px;
+          padding-bottom: 30px;
+        }
+      }
+
+      button {
+        font-size: 21px;
+      }
+    }
+  }
 
   @media only screen and (max-width: 1220px) {
     .footer-form {
       width: 35vw;
+
+      &_email {
+        /deep/ .v-placeholder-asterisk {
+          font-size: 18px;
+          left: 10px !important;
+          top: 50% !important;
+          transform: translateY(-50%);
+
+          span {
+            opacity: 0.5;
+          }
+        }
+      }
+
+      textarea {
+        min-height: 64px;
+        padding: 22px 10px;
+        resize: vertical;
+      }
     }
   }
 

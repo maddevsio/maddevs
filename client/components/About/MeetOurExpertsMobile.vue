@@ -10,7 +10,7 @@
               <div class="mobile-expert-position">{{ expert.position }}</div>
             </div>
             <a :href="expert.linkedin" class="mobile-expert-linkedin_link" target="blank">
-              <img src="../../assets/img/Home/svg/experts/linkedin.svg" class="mobile-expert-linkedin_icon" alt="Linkedin">
+              <img src="@/assets/img/Home/svg/experts/linkedin.svg" class="mobile-expert-linkedin_icon" alt="Linkedin">
             </a>
           </div>
         </div>
