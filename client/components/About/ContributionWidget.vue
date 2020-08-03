@@ -112,9 +112,11 @@ export default {
 
   &__content {
     margin-left: 6px;
+    font-size: 1vw;
 
     &-mobile {
       display: none;
+      font-size: 1.1vw;
     }
 
     &_nambafood,
@@ -155,6 +157,7 @@ export default {
       &-mobile {
         display: block;
         margin-left: 6px;
+        font-size: 2.3vw;
 
         &_nambafood {
           color: $text-color--black;
@@ -173,15 +176,10 @@ export default {
   }
 
   @media only screen and (max-width: 640px) {
-    font-size: 17px;
-  }
-
-  @media only screen and (max-width: 340px) {
-    font-size: 15px;
 
     &__content {
       &-mobile {
-        margin-left: 3px;
+        font-size: 3.7vw;
       }
     }
   }
