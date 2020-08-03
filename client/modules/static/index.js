@@ -34,11 +34,11 @@ let writePayload = async function (payload, dir, windowNamespace) {
 module.exports = moduleOptions => {
   const options = {
     blacklist: [],
-    ...this.options.static,
+    ...(this.options && this.options.static),
     ...moduleOptions
   };
 
-  this.nuxt.hook('generate:page', async page => {
+  this.nuxt && this.nuxt.hook('generate:page', async page => {
     if (!this.nuxt.options.generate.subFolders) {
       throw new Error('generate.subFolders should be true for @nuxt/static');
     }
@@ -56,8 +56,8 @@ module.exports = moduleOptions => {
   });
 
   // Add nuxt_static middleware
-  this.addPlugin({
-    src: path.resolve(__dirname, 'plugin.js')
-  });
-  this.nuxt.options.router.middleware.push('nuxt_static');
+  // this.addPlugin({
+  //   src: path.resolve(__dirname, 'plugin.js')
+  // });
+  this.nuxt && this.nuxt.options.router.middleware.push('nuxt_static');
 };
