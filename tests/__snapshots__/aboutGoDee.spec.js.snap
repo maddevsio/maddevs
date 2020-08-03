@@ -6,7 +6,7 @@ exports[`About GoDee renders correctly 1`] = `
   id="about-godee"
 >
   <div
-    class="container"
+    class="container-godee"
   >
     <div
       class="about-godee__text-content"

@@ -13,7 +13,7 @@ describe('Careers page', () => {
       }
     };
     wrapper = mount(CareersPage, {
-      stubs: ['ValidationObserver']
+      stubs: ['ValidationObserver', 'router-link']
     });
   });
 

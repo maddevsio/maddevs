@@ -4,7 +4,7 @@
       <h2 class="issues-and-solution__main-title">Issues and Solution</h2>
       <img src="@/assets/img/GoDee/png/issues-and-solution-bg.png" class="issues-and-solution__background-image" alt="Background">
     </div>
-    <div class="container">
+    <div class="container-godee">
       <div class="issues-and-solution__transportation">
         <div class="issues-and-solution__transportation-content-wrapper">
           <div class="issues-and-solutio__left-text-content">
@@ -453,38 +453,6 @@ export default {
 
     &__solution-route-dot {
       margin-top: get-vw(140px);
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .issues-and-solution {
-      &__description-item {
-        &:first-child {
-          &::before {
-            left: get-vw(-130px);
-          }
-        }
-
-        &:last-child {
-          &::before {
-            left: get-vw(-80px);
-          }
-        }
-      }
-
-      &__transportation-content-wrapper {
-        justify-content: space-between;
-      }
-
-      &__image-wrapper {
-        margin-left: 0;
-        margin-right: get-vw(-77px);
-      }
-
-      &__taxi-route-dot,
-      &__solution-route-dot {
-        margin-left: get-vw(23px);
-      }
     }
   }
 </style>
