@@ -7,6 +7,7 @@
     <Collaboration />
     <Mvp />
     <TechnicalOverview />
+    <Features />
   </main>
 </template>
 
@@ -18,6 +19,7 @@ import Result from '@/components/GoDee/Result';
 import Collaboration from '@/components/GoDee/Collaboration';
 import Mvp from '@/components/GoDee/Mvp';
 import TechnicalOverview from '@/components/GoDee/TechnicalOverview';
+import Features from '@/components/GoDee/Features';
 
 export default {
   name: 'GoDee',
@@ -28,7 +30,8 @@ export default {
     Result,
     Collaboration,
     Mvp,
-    TechnicalOverview
+    TechnicalOverview,
+    Features
   },
   data() {
     return {
