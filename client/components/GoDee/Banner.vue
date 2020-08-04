@@ -24,7 +24,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @import '../../assets/styles/vars';
   @import '../../assets/styles/get-vw';
 
@@ -85,6 +85,7 @@ export default {
       height: get-vw(4173px);
       position: absolute;
       top: get-vw(920px);
+      left: get-vw(160px);
     }
   }
 </style>
