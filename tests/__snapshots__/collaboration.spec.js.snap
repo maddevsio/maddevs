@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Collaboration renders correctly 1`] = `
+<section
+  class="collaboration"
+  id="collaboration"
+>
+  <div
+    class="container-godee"
+  >
+    <div
+      class="collaboration__title-wrapper"
+    >
+      <h2
+        class="collaboration__main-title"
+      >
+        Mad Devs & GoDee 
+        <br />
+         collaboration
+      </h2>
+       
+      <p
+        class="collaboration__description"
+      >
+        Mad Devs started to consult GoDee at the early stage of this project assisting with the choice 
+        <br />
+         of the technology stack and step-by-step planning. Then a number of our positively mad 
+        <br />
+         developers started to work on the GoDee’s smart urban bus management system as an 
+        <br />
+         extended part of the team.
+      </p>
+    </div>
+  </div>
+   
+  <div
+    class="collaboration__company-logo-wrapper"
+  >
+    <img
+      alt="GoDee"
+      class="collaboration__company-logo collaboration__company-logo--godee"
+      src="@/assets/img/GoDee/svg/godee-logo-gray.svg"
+    />
+     
+    <img
+      alt="Mad Devs"
+      class="collaboration__company-logo collaboration__company-logo--maddevs"
+      src="@/assets/img/GoDee/svg/maddevs-logo-gray.svg"
+    />
+  </div>
+</section>
+`;
