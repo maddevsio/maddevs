@@ -1,8 +1,8 @@
 <template>
   <section id="features" class="features">
     <div class="container-godee">
+      <h2 class="features__main-title">Features</h2>
       <div class="features__container">
-        <h2 class="features__main-title">Features</h2>
         <div class="features__content-wrapper">
           <ul class="features__features-text-list">
             <li class="features__features-text-item">
@@ -35,6 +35,8 @@
           </ul>
         </div>
       </div>
+      <img src="@/assets/img/GoDee/svg/features-route-line.svg" class="features__route-line" alt="Features route line">
+      <img src="@/assets/img/GoDee/svg/godee-bus.svg" class="features__bus-icon" alt="Bus">
     </div>
   </section>
 </template>
@@ -66,11 +68,19 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @import '../../assets/styles/vars';
   @import '../../assets/styles/get-vw';
 
   .features {
+    position: relative;
+
+    &__container {
+      margin-left: get-vw(65px);
+      margin-right: get-vw(-75px);
+      padding: 0 get-vw(75px);
+    }
+
     &__content-wrapper {
       display: flex;
       justify-content: space-between;
@@ -88,6 +98,10 @@ export default {
       letter-spacing: get-vw(-3px);
       color: $accent-orange-text-color;
       text-align: center;
+    }
+
+    &__features-text-list {
+      margin-top: get-vw(30px);
     }
 
     &__features-images-list {
@@ -128,7 +142,12 @@ export default {
     }
 
     &__image-wrapper {
-      margin-bottom: get-vw(106px);
+      margin-bottom: get-vw(70px);
+
+      &:nth-child(2) {
+        margin-top: get-vw(-140px);
+        margin-bottom: get-vw(50px);
+      }
     }
 
     &__live-location-tracker {
@@ -157,6 +176,25 @@ export default {
 
     &__possible-routes {
       height: get-vw(506px);
+    }
+
+    &__route-line,
+    &__bus-icon {
+      position: absolute;
+    }
+
+    &__route-line {
+      width: get-vw(469px);
+      height: get-vw(2384px);
+      top: get-vw(35px);
+      left: get-vw(160px);
+    }
+
+    &__bus-icon {
+      width: get-vw(130px);
+      height: get-vw(130px);
+      top: get-vw(370px);
+      left: get-vw(119px);
     }
   }
 </style>
