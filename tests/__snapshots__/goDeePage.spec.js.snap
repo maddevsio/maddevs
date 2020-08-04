@@ -872,15 +872,15 @@ exports[`GoDee page renders correctly 1`] = `
     <div
       class="container-godee"
     >
+      <h2
+        class="features__main-title"
+      >
+        Features
+      </h2>
+       
       <div
         class="features__container"
       >
-        <h2
-          class="features__main-title"
-        >
-          Features
-        </h2>
-         
         <div
           class="features__content-wrapper"
         >
@@ -1085,6 +1085,18 @@ exports[`GoDee page renders correctly 1`] = `
           </ul>
         </div>
       </div>
+       
+      <img
+        alt="Features route line"
+        class="features__route-line"
+        src="@/assets/img/GoDee/svg/features-route-line.svg"
+      />
+       
+      <img
+        alt="Bus"
+        class="features__bus-icon"
+        src="@/assets/img/GoDee/svg/godee-bus.svg"
+      />
     </div>
   </section>
 </main>
