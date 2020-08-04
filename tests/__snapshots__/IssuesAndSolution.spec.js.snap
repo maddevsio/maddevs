@@ -134,7 +134,7 @@ exports[`Issues And Solution renders correctly 1`] = `
           <img
             alt="Women"
             class="issues-and-solution__women-image"
-            src="../../assets/img/GoDee/svg/women.svg"
+            src="@/assets/img/GoDee/svg/women.svg"
           />
         </div>
       </div>
@@ -327,7 +327,7 @@ exports[`Issues And Solution renders correctly 1`] = `
               class="issues-and-solution__price-value issues-and-solution__solution-price-value"
             >
               
-              1.29 USD 
+              1.29 USD
               
               <span
                 class="issues-and-solution__equal-symbol-one-trip"

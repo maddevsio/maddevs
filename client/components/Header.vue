@@ -146,7 +146,7 @@ export default {
     button {
       padding: 0 24px;
       height: 2.4vw;
-      margin-right: -7vw;
+      margin-right: -5.5vw;
       font-size: 1.1vw;
       line-height: 1.1vw;
       white-space: nowrap;
@@ -270,7 +270,7 @@ export default {
 
     &__logo-icon {
       position: absolute;
-      left: 2vw;
+      left: 3vw;
     }
 
     &-social-logo {
