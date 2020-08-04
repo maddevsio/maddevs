@@ -50,7 +50,7 @@ export default {
   .mobile-apps {
     position: relative;
     margin-top: get-vw(65px);
-    margin-bottom: get-vw(225px);
+    margin-bottom: get-vw(134px);
 
     &__container {
       padding-left: 70px;
