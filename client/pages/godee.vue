@@ -8,6 +8,7 @@
     <Mvp />
     <TechnicalOverview />
     <Features />
+    <MobileApps />
   </main>
 </template>
 
@@ -20,6 +21,8 @@ import Collaboration from '@/components/GoDee/Collaboration';
 import Mvp from '@/components/GoDee/Mvp';
 import TechnicalOverview from '@/components/GoDee/TechnicalOverview';
 import Features from '@/components/GoDee/Features';
+import MobileApps from '@/components/GoDee/MobileApps';
+
 
 export default {
   name: 'GoDee',
@@ -31,7 +34,8 @@ export default {
     Collaboration,
     Mvp,
     TechnicalOverview,
-    Features
+    Features,
+    MobileApps
   },
   data() {
     return {

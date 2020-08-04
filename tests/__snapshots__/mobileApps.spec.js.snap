@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobileApps renders correctly 1`] = `
+<section
+  class="mobile-apps"
+  id="mobile-apps"
+>
+  <div
+    class="container-godee"
+  >
+    <div
+      class="mobile-apps__head-text-content"
+    >
+      <h2
+        class="mobile-apps__main-title"
+      >
+        Mobile Apps
+      </h2>
+       
+      <h3
+        class="mobile-apps__sub-title"
+      >
+        Mobile applications for drivers
+      </h3>
+       
+      <p
+        class="mobile-apps__description"
+      >
+        An app for drivers enables them to pick up passengers from bus stops, according to 
+        <br />
+         their previously booked tickets.
+      </p>
+    </div>
+     
+    <div
+      class="mobile-apps__container"
+    >
+      <div
+        class="mobile-apps__driver-features"
+      >
+        <div
+          class="mobile-apps__driver-feature"
+        >
+          <img
+            alt="Phone"
+            class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone"
+            src="@/assets/img/GoDee/svg/mobile-apps-first-phone.svg"
+          />
+           
+          <p
+            class="mobile-apps__description"
+          >
+            Fast registration for 
+            <br />
+             drivers.
+          </p>
+        </div>
+         
+        <div
+          class="mobile-apps__driver-feature"
+        >
+          <img
+            alt="Phone"
+            class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone"
+            src="@/assets/img/GoDee/svg/mobile-apps-second-phone.svg"
+          />
+           
+          <p
+            class="mobile-apps__description"
+          >
+            Inbuilt voice feature 
+            <br />
+             updates drivers about bus 
+            <br />
+             stops and the number of 
+            <br />
+             passengers waiting.
+          </p>
+        </div>
+         
+        <div
+          class="mobile-apps__driver-feature"
+        >
+          <img
+            alt="Phone"
+            class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone"
+            src="@/assets/img/GoDee/svg/mobile-apps-third-phone.svg"
+          />
+           
+          <p
+            class="mobile-apps__description"
+          >
+            Drivers can easily pick 
+            <br />
+             passengers from bus 
+            <br />
+             stops while staying on 
+            <br />
+             track with the schedule.
+          </p>
+        </div>
+         
+        <div
+          class="mobile-apps__driver-feature"
+        >
+          <img
+            alt="Phone"
+            class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone"
+            src="@/assets/img/GoDee/svg/mobile-apps-fourth-phone.svg"
+          />
+           
+          <p
+            class="mobile-apps__description"
+          >
+            Drivers can see bus 
+            <br />
+             stops' real pictures to 
+            <br />
+             understand where to 
+            <br />
+             pick up passengers.
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="mobile-apps__application-for-users"
+      >
+        <h3
+          class="mobile-apps__sub-title"
+        >
+          Mobile applications for passengers
+        </h3>
+         
+        <p
+          class="mobile-apps__description mobile-apps__application-for-users-description"
+        >
+          Ticket booking process is intuitive — the passenger needs to select the pick up and 
+          <br />
+           drop off points, choose the departure time in the schedule, and book the ticket. 
+          <br />
+           The most suitable route will be found automatically.
+        </p>
+         
+        <img
+          alt="Phone"
+          class="mobile-apps__phone-image mobile-apps__application-for-users-phone"
+          src="@/assets/img/GoDee/svg/solution-sec-phone.svg"
+        />
+      </div>
+    </div>
+     
+    <img
+      alt="Mobile Apps route line"
+      class="mobile-apps__route-line"
+      src="@/assets/img/GoDee/svg/mobile-apps-route-line.svg"
+    />
+     
+    <img
+      alt="Bus"
+      class="mobile-apps__bus-icon"
+      src="@/assets/img/GoDee/svg/godee-bus.svg"
+    />
+  </div>
+</section>
+`;
