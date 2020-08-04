@@ -55,7 +55,8 @@ module.exports = {
       '/gdpr',
       '/nda',
       '/privacy',
-      '/godee'
+      '/godee',
+      '/blog'
     ]
   },
   css: [
@@ -87,9 +88,17 @@ module.exports = {
     }
   },
   modules: [
+    '@/modules/static',
+    '@/modules/crawler',
     '@nuxtjs/axios',
-    '@nuxtjs/gtm'
+    '@nuxtjs/gtm',
+    '@nuxtjs/prismic'
   ],
+  prismic: {
+    endpoint: 'https://SuperPuperTest.cdn.prismic.io/api/v2',
+    linkResolver: '@/plugins/link-resolver',
+    htmlSerializer: '@/plugins/html-serializer'
+  },
   gtm: {
     id: 'GTM-NNKVRF3',
     enabled: true

@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils';
-import ServicesPage from '@/pages/_lang/services';
+import ServicesPage from '@/pages/services';
 
 describe('Services page', () => {
   let wrapper;
