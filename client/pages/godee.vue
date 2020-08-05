@@ -10,6 +10,7 @@
     <Features />
     <MobileApps />
     <ControlPanel />
+    <SmartRoutePlaning />
   </main>
 </template>
 
@@ -24,7 +25,7 @@ import TechnicalOverview from '@/components/GoDee/TechnicalOverview';
 import Features from '@/components/GoDee/Features';
 import MobileApps from '@/components/GoDee/MobileApps';
 import ControlPanel from '@/components/GoDee/ControlPanel';
-
+import SmartRoutePlaning from '@/components/GoDee/SmartRoutePlaning';
 
 export default {
   name: 'GoDee',
@@ -38,7 +39,8 @@ export default {
     TechnicalOverview,
     Features,
     MobileApps,
-    ControlPanel
+    ControlPanel,
+    SmartRoutePlaning
   },
   data() {
     return {

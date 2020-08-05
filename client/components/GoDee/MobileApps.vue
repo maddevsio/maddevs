@@ -53,8 +53,8 @@ export default {
     margin-bottom: get-vw(134px);
 
     &__container {
-      padding-left: 70px;
-      padding-right: 80px;
+      padding-left: get-vw(70px);
+      padding-right: get-vw(80px);
     }
 
     &__head-text-content,
@@ -138,8 +138,8 @@ export default {
     &__route-line {
       width: get-vw(1337px);
       height: get-vw(2287px);
-      top: 38px;
-      right: 128px;
+      top: get-vw(50px);
+      right: get-vw(163px);
       z-index: -1;
     }
 
