@@ -82,6 +82,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/styles/vars';
+@import '../assets/styles/get-vw';
 
 .gdpr {
   width: 100%;
@@ -91,19 +92,25 @@ export default {
 
   &__header {
     display: flex;
-    margin-top: 147px;
+    margin-top: get-vw(147px);
     margin-bottom: 53px;
     align-items: center;
   }
 
+  &__image {
+    height: get-vw(190px);
+    width: get-vw(130px);
+    margin-left: 10vw;
+  }
+
   &__content {
-    max-width: 880px;
+    max-width: get-vw(880px);
   }
 
   &__title {
-    margin-right: 36px;
-    margin-top: 55px;
-    max-width: 800px;
+    margin-right: get-vw(36px);
+    margin-top: get-vw(55px);
+    max-width: get-vw(800px);
   }
 
   &__link {
@@ -113,7 +120,7 @@ export default {
 
   &__paragraph,
   &__text {
-    margin-bottom: 15px;
+    margin-bottom: get-vw(15px);
 
     &--bold {
       font-weight: bold;
@@ -127,9 +134,9 @@ export default {
   &__sec-title {
     text-align: left;
     color: $text-color--grey-light;
-    margin-top: 62px;
-    margin-bottom: 11px;
-    font-size: 32px;
+    margin-top: get-vw(62px);
+    margin-bottom: get-vw(11px);
+    font-size: get-vw(32px);
     font-family: 'Hoves-Regular';
     font-weight: bold;
   }
@@ -141,32 +148,24 @@ export default {
   }
 
   &__break-paragraph {
-    margin-bottom: 5px;
+    margin-bottom: get-vw(5px);
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1600px) {
   .gdpr {
-    &__image {
-      height: 180px;
+    &__content {
+      max-width: 880px;
     }
-  }
-}
 
-@media only screen and (min-width: 1150px) {
-  .gdpr {
-    &__image {
-      margin-left: 15%;
+    &__title {
+      max-width: 800px;
     }
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .gdpr {
-    &__image {
-      height: 170px;
-    }
-
     &__title {
       margin-top: 0;
     }
@@ -176,7 +175,7 @@ export default {
 @media only screen and (max-width: 870px) {
   .gdpr {
     &__image {
-      height: 155px;
+      height: get-vw(155px, 870);
     }
 
     &__sec-title {
@@ -204,55 +203,22 @@ export default {
     }
 
     &__image {
-      height: 140px;
+      height: get-vw(140px, 670);
       position: absolute;
-      right: 39px;
-      top: -72px;
-    }
-  }
-}
-
-@media only screen and (max-width: 590px) {
-  .gdpr {
-    &__image {
-      height: 120px;
-      right: 39px;
-      top: -125px;
-    }
-  }
-}
-
-@media only screen and (max-width: 520px) and (min-width: 495px) {
-  .gdpr {
-    &__image {
-      top: -95px;
-      top: -95px;
+      right: get-vw(39px, 670);
+      top: get-vw(-72px, 670);
     }
   }
 }
 
 @media only screen and (max-width: 520px) {
   .gdpr {
-    &__image {
-      height: 95px;
-      top: -95px;
-    }
-
     &__title {
       font-size: 53px;
     }
 
     &__sec-title {
       font-size: 27px;
-    }
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  .gdpr {
-    &__image {
-      top: -93px;
-      right: 0;
     }
   }
 }
