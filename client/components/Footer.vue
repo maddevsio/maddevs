@@ -6,7 +6,7 @@
 					<div class="footer__title-wrap">
 						<h2 class="footer__main-title main-title">Get In Touch</h2>
 						<div class="footer__mail-wrapper">
-							<img class="footer__mail-icon" src="@/assets/img/Footer/mail-icon.svg" alt="mail">
+              <span  class="footer__mail-icon"/>
 							<a class="footer__mailto-link" href="mailto:team@maddevs.io">team@maddevs.io</a>
 						</div>
 					</div>
@@ -102,8 +102,12 @@ export default {
 		}
 
     &__mail-icon {
+      display: inline-block;
       width: get-vw(67px);
       height: get-vw(50px);
+      background-image: url(../assets/img/Footer/mail-icon.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
 		&__bottom-link {
@@ -142,22 +146,14 @@ export default {
 				text-align: center;
         grid-row-gap: 1vw;
 			}
-
-      &__mail-icon {
-        width: 67px;
-        height: 50px;
-      }
 		}
 	}
 
 	@media only screen and (max-width: 1220px) {
 		.footer {
-			&__mail-wrapper {
-
-				img {
-					display: none;
-				}
-			}
+      &__mail-icon {
+        display: none;
+      }
 
 			&__mailto-link {
 				margin-left: 0;
