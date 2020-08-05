@@ -42,7 +42,7 @@ export default {
     }
 
 		&__social-newtork_link {
-			padding-right: 35px;
+			padding-right: get-vw(35px);
 
 			&:last-child {
 				padding-right: 0;
