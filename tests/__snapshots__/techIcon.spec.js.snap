@@ -9,7 +9,7 @@ exports[`TechIcon component renders correctly 1`] = `
   />
    
   <p
-    class="tech-icon__name"
+    class="tech-icon__name paragraph"
   >
     Vue tech
   </p>
