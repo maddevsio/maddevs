@@ -9,6 +9,7 @@
     <TechnicalOverview />
     <Features />
     <MobileApps />
+    <ControlPanel />
   </main>
 </template>
 
@@ -22,6 +23,7 @@ import Mvp from '@/components/GoDee/Mvp';
 import TechnicalOverview from '@/components/GoDee/TechnicalOverview';
 import Features from '@/components/GoDee/Features';
 import MobileApps from '@/components/GoDee/MobileApps';
+import ControlPanel from '@/components/GoDee/ControlPanel';
 
 
 export default {
@@ -35,7 +37,8 @@ export default {
     Mvp,
     TechnicalOverview,
     Features,
-    MobileApps
+    MobileApps,
+    ControlPanel
   },
   data() {
     return {
