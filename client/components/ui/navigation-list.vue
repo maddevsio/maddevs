@@ -69,6 +69,10 @@ export default {
       display: grid;
       grid-template-columns: repeat(2, 35vw);
       grid-row-gap: 1.5vw;
+
+      .navigation-item {
+        font-size: 2vw;
+      }
     }
   }
 

@@ -265,6 +265,16 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 970px) {
+    .customer-testimonials {
+      &__customer-name,
+      /deep/.mobile-customer_name {
+        padding-left: 2vw;
+        font-size: 1.5vw;
+      }
+    }
+  }
+
   @media only screen and (max-width: 745px) {
     .customer-testimonials {
       &__customer-name,

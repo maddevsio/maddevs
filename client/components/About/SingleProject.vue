@@ -100,6 +100,8 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
+@import '../../assets/styles/get-vw';
+
 
 .single-project {
   width: 50%;
@@ -115,7 +117,7 @@ export default {
     .single-project {
       &__sub-title {
         font-size: 3vw;
-        letter-spacing: -1px;
+        letter-spacing: get-vw(-1px);
       }
     }
   }
@@ -134,7 +136,7 @@ export default {
   &__sub-title {
     margin-top: 1vw;
     line-height: 110%;
-    letter-spacing: -2px;
+    letter-spacing: get-vw(-2px);
   }
 
   &__paragraph {

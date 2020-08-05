@@ -346,7 +346,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     React
                   </p>
@@ -359,7 +359,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Vue.js
                   </p>
@@ -372,7 +372,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Babel
                   </p>
@@ -385,7 +385,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Webpack
                   </p>
@@ -423,7 +423,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Python
                   </p>
@@ -436,7 +436,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Golang
                   </p>
@@ -449,7 +449,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     JavaScript
                   </p>
@@ -462,7 +462,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     PHP
                   </p>
@@ -475,7 +475,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Node.js
                   </p>
@@ -488,7 +488,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Ruby
                   </p>
@@ -501,7 +501,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     C++
                   </p>
@@ -539,7 +539,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Kotlin
                   </p>
@@ -552,7 +552,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Java
                   </p>
@@ -565,7 +565,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Objective-C
                   </p>
@@ -578,7 +578,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Swift
                   </p>
@@ -616,7 +616,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Jira
                   </p>
@@ -629,7 +629,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Slack
                   </p>
@@ -642,7 +642,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Basecamp
                   </p>
@@ -655,7 +655,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Confluence
                   </p>
@@ -668,7 +668,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Trello
                   </p>
@@ -681,7 +681,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Notion
                   </p>
@@ -694,7 +694,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Skype
                   </p>
@@ -707,7 +707,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Google Meet
                   </p>
@@ -720,7 +720,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Zoom
                   </p>
@@ -733,7 +733,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Microsoft Teams
                   </p>
@@ -773,7 +773,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     ASW
                   </p>
@@ -786,7 +786,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Digital Ocean
                   </p>
@@ -799,7 +799,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Heroku
                   </p>
@@ -812,7 +812,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Azure
                   </p>
@@ -842,7 +842,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Ansible
                   </p>
@@ -855,7 +855,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Terraform
                   </p>
@@ -868,7 +868,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     CloudFormation
                   </p>
@@ -881,7 +881,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Jenkins
                   </p>
@@ -894,7 +894,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Bamboo
                   </p>
@@ -907,7 +907,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     TeamCity
                   </p>
@@ -920,7 +920,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Travis CI
                   </p>
@@ -933,7 +933,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     AWS CodePipeline
                   </p>
@@ -946,7 +946,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Circle CI
                   </p>
@@ -959,7 +959,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     ELK
                   </p>
@@ -972,7 +972,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Sentry
                   </p>
@@ -985,7 +985,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Prometheus
                   </p>
@@ -998,7 +998,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     Amazon CloudWatch
                   </p>
@@ -1011,7 +1011,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <p
-                    class="tech-icon__name"
+                    class="tech-icon__name paragraph"
                   >
                     GitLab CI
                   </p>

@@ -81,6 +81,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
+@import '../../assets/styles/get-vw';
 
 .contribution-widget {
   display: flex;
@@ -156,8 +157,8 @@ export default {
 
       &-mobile {
         display: block;
-        margin-left: 6px;
-        font-size: 2.3vw;
+        margin-left: get-vw(6px, 1024);
+        font-size: 1.3vw;
 
         &_nambafood {
           color: $text-color--black;
@@ -171,6 +172,14 @@ export default {
         &_godee {
           color: $text-color--black;
         }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 970px) {
+    &__content {
+      &-mobile {
+        font-size: 1.7vw;
       }
     }
   }
