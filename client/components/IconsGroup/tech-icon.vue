@@ -1,7 +1,7 @@
 <template>
   <div class="tech-icon">
     <span :class="`tech-icon__logo tech-icon__logo--${classPrefix}`"/>
-    <p class="tech-icon__name">{{title}}</p>
+    <p class="tech-icon__name paragraph">{{title}}</p>
   </div>
 </template>
 
@@ -32,7 +32,6 @@ export default {
 
     &__name {
       color: $text-color--grey;
-      font-size: 1vw;
       margin-left: 0.3vw;
       font-family: 'Hoves-Regular';
     }
@@ -223,13 +222,24 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 970px) {
+    .tech-icon {
+      padding-bottom: 1vw;
+      padding-right: 1.5vw;
+
+      &__logo {
+        height: 1.5vw;
+        width: 1.5vw;
+        padding-bottom: 1vw;
+        padding-right: 1.5vw;
+      }
+    }
+  }
+
   @media only screen and (max-width: 745px) {
     .tech-icon {
       padding-bottom: 3vw;
       padding-right: 5.5vw;
-      &__name {
-        font-size: 2.5vw;
-      }
 
       &__logo {
         height: 2vw;
@@ -244,9 +254,6 @@ export default {
     .tech-icon {
       padding-bottom: 3vw;
       padding-right: 5.5vw;
-      &__name {
-        font-size: 3vw;
-      }
 
       &__logo {
         height: 3.5vw;
@@ -261,9 +268,6 @@ export default {
     .tech-icon {
       padding-bottom: 3vw;
       padding-right: 5.5vw;
-      &__name {
-        font-size: 4.5vw;
-      }
 
       &__logo {
         height: 5vw;

@@ -252,6 +252,7 @@ export default {
       text-decoration: none;
       display: flex;
       align-items: center;
+      line-height: 1.8vw;
     }
 
     &__selected-phone,

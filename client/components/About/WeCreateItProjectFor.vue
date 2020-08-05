@@ -92,10 +92,11 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
   .we-create-it-project {
-    padding-top: 195px;
-    padding-bottom: 214px;
+    padding-top: get-vw(195px);
+    padding-bottom: get-vw(214px);
 
     &__content-wrap {
       display: flex;
@@ -285,6 +286,20 @@ export default {
       &__country-list {
         grid-column-gap: 57px;
         grid-row-gap: 6px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 970px) {
+    .we-create-it-project {
+      &__country-item {
+        font-size: 2.8vw;
+      }
+
+      &__logo-country {
+        height: 2.5vw;
+        width: 3vw;
+        margin: 0 2vw 0 0;
       }
     }
   }
