@@ -11,10 +11,10 @@ exports[`Gdpr page renders correctly 1`] = `
       class="container"
     >
       <div
-        class="gdpr__header"
+        class="agreement-page__header"
       >
         <h3
-          class="gdpr__title title"
+          class="agreement-page__title title"
         >
           
         Mad Devs’ GDPR Compliance Commitment
@@ -23,16 +23,16 @@ exports[`Gdpr page renders correctly 1`] = `
          
         <img
           alt="GDPR image"
-          class="gdpr__image"
+          class="agreement-page__image"
           src="@/assets/img/common/docs.svg"
         />
       </div>
        
       <div
-        class="gdpr__content"
+        class="agreement-page__content"
       >
         <p
-          class="gdpr__text doc-text"
+          class="agreement-page__text doc-text"
         >
           
         We are committed to staying compliant with the General Data Protection Regulation (GDPR)
@@ -43,10 +43,10 @@ exports[`Gdpr page renders correctly 1`] = `
         </p>
          
         <p
-          class="gdpr__text doc-text"
+          class="agreement-page__text doc-text"
         >
           <span
-            class="gdpr__text gdpr__text--bold"
+            class="agreement-page__text agreement-page__text--bold"
           >
             Important note.
           </span>
@@ -57,13 +57,13 @@ exports[`Gdpr page renders correctly 1`] = `
         </p>
          
         <h5
-          class="gdpr__sec-title"
+          class="agreement-page__sec-title"
         >
           Data Processing Documentation
         </h5>
          
         <p
-          class="gdpr__paragraph paragraph"
+          class="agreement-page__paragraph paragraph"
         >
           
         Under the terms of GDPR, Mad Devs is a Data Processor. In case you are a Data Controller
@@ -71,7 +71,7 @@ exports[`Gdpr page renders correctly 1`] = `
         consent for the processing of any personal data of individuals from the European Union and
         European Economic Area. We are also ready to provide our 
           <a
-            class="gdpr__link"
+            class="agreement-page__link"
             href="https://gdpr.eu/what-is-data-processing-agreement/"
           >
             Data Processing Addendum (DPA)
@@ -81,7 +81,7 @@ exports[`Gdpr page renders correctly 1`] = `
            upon your request. Please notify our management via
         
           <a
-            class="gdpr__link"
+            class="agreement-page__link"
             href="mailto:rock@maddevs.io"
           >
             rock@maddevs.io
@@ -92,7 +92,7 @@ exports[`Gdpr page renders correctly 1`] = `
         </p>
          
         <h5
-          class="gdpr__sec-title"
+          class="agreement-page__sec-title"
         >
           
         Privacy Policy
@@ -100,7 +100,7 @@ exports[`Gdpr page renders correctly 1`] = `
         </h5>
          
         <p
-          class="gdpr__paragraph paragraph"
+          class="agreement-page__paragraph paragraph"
         >
           
         For your convenience, our Privacy Policy is available on our website in PDF format, you can
@@ -108,7 +108,7 @@ exports[`Gdpr page renders correctly 1`] = `
         to this document, please let us know via
         
           <a
-            class="gdpr__link"
+            class="agreement-page__link"
             href="mailto:rock@maddevs.io"
           >
             rock@maddevs.io
@@ -118,7 +118,7 @@ exports[`Gdpr page renders correctly 1`] = `
         </p>
          
         <h5
-          class="gdpr__sec-title"
+          class="agreement-page__sec-title"
         >
           
         Cookie Usage
@@ -126,7 +126,7 @@ exports[`Gdpr page renders correctly 1`] = `
         </h5>
          
         <p
-          class="gdpr__paragraph paragraph"
+          class="agreement-page__paragraph paragraph"
         >
           
         Our website uses cookies to help us define your core interests and make you relevant
@@ -136,7 +136,7 @@ exports[`Gdpr page renders correctly 1`] = `
         </p>
          
         <h5
-          class="gdpr__sec-title"
+          class="agreement-page__sec-title"
         >
           
         Marketing Communications
@@ -144,7 +144,7 @@ exports[`Gdpr page renders correctly 1`] = `
         </h5>
          
         <p
-          class="gdpr__paragraph paragraph"
+          class="agreement-page__paragraph paragraph"
         >
           
         To get information on our recent blog posts, hottest discounts, and newest services, you can
@@ -152,7 +152,7 @@ exports[`Gdpr page renders correctly 1`] = `
         sure that your data has been amended or deleted, please contact us via
         
           <a
-            class="gdpr__link"
+            class="agreement-page__link"
             href="mailto:rock@maddevs.io"
           >
             rock@maddevs.io
@@ -162,7 +162,7 @@ exports[`Gdpr page renders correctly 1`] = `
         </p>
          
         <p
-          class="gdpr__paragraph gdpr__paragraph--bold paragraph"
+          class="agreement-page__paragraph agreement-page__paragraph--bold paragraph"
         >
           
         We appreciate your collaboration and openness with regard to any legal issues!
@@ -170,7 +170,7 @@ exports[`Gdpr page renders correctly 1`] = `
         </p>
          
         <p
-          class="gdpr__paragraph gdpr__paragraph--bold gdpr__paragraph--italic paragraph"
+          class="agreement-page__paragraph agreement-page__paragraph--bold agreement-page__paragraph--italic paragraph"
         >
           
         Team Mad Devs
