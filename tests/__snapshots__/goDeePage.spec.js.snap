@@ -9,7 +9,7 @@ exports[`GoDee page renders correctly 1`] = `
     id="banner"
   >
     <div
-      class="container"
+      class="container-godee"
     >
       <div
         class="banner__banner-content"
@@ -70,7 +70,7 @@ exports[`GoDee page renders correctly 1`] = `
     id="about-godee"
   >
     <div
-      class="container"
+      class="container-godee"
     >
       <div
         class="about-godee__text-content"
@@ -133,7 +133,7 @@ exports[`GoDee page renders correctly 1`] = `
     </div>
      
     <div
-      class="container"
+      class="container-godee"
     >
       <div
         class="issues-and-solution__transportation"
@@ -511,6 +511,592 @@ exports[`GoDee page renders correctly 1`] = `
           />
         </div>
       </div>
+    </div>
+  </section>
+   
+  <section
+    class="result"
+    id="result"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="result__container"
+      >
+        <div
+          class="result__head-text"
+        >
+          <h3
+            class="result__main-title"
+          >
+            Result
+          </h3>
+           
+          <p
+            class="result__description"
+          >
+            Exciting project to improve people’s daily life and reduce environmental pollution. 
+            <br />
+             Regular commutes with affordable and stress-free service.
+          </p>
+        </div>
+         
+        <div
+          class="result__video-frame-wrapper"
+        >
+          <iframe
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen="allowfullscreen"
+            frameborder="0"
+            height="100%"
+            src="https://www.youtube.com/embed/_XCRbXmTUwI"
+            width="100%"
+          />
+        </div>
+      </div>
+       
+      <img
+        alt="Result route line"
+        class="result__route-line"
+        src="@/assets/img/GoDee/svg/result-route-line.svg"
+      />
+    </div>
+  </section>
+   
+  <section
+    class="collaboration"
+    id="collaboration"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="collaboration__title-wrapper"
+      >
+        <h2
+          class="collaboration__main-title"
+        >
+          Mad Devs & GoDee 
+          <br />
+           collaboration
+        </h2>
+         
+        <p
+          class="collaboration__description"
+        >
+          Mad Devs started to consult GoDee at the early stage of this project assisting with the choice 
+          <br />
+           of the technology stack and step-by-step planning. Then a number of our positively mad 
+          <br />
+           developers started to work on the GoDee’s smart urban bus management system as an 
+          <br />
+           extended part of the team.
+        </p>
+      </div>
+    </div>
+     
+    <div
+      class="collaboration__company-logo-wrapper"
+    >
+      <img
+        alt="GoDee"
+        class="collaboration__company-logo collaboration__company-logo--godee"
+        src="@/assets/img/GoDee/svg/godee-logo-gray.svg"
+      />
+       
+      <img
+        alt="Mad Devs"
+        class="collaboration__company-logo collaboration__company-logo--maddevs"
+        src="@/assets/img/GoDee/svg/maddevs-logo-gray.svg"
+      />
+    </div>
+  </section>
+   
+  <section
+    class="mvp"
+    id="mvp"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="mvp__container"
+      >
+        <div
+          class="mvp__title-wrapper"
+        >
+          <h2
+            class="mvp__main-title"
+          >
+            MVP
+          </h2>
+           
+          <p
+            class="mvp__description"
+          >
+            Before investing a considerable amount of money in building software, hiring personnel, and 
+            <br />
+             acquiring minibuses, GoDee wanted to develop an MVP to understand the market fit potential.
+          </p>
+        </div>
+         
+        <div
+          class="mvp__phones-list"
+        >
+          <img
+            alt="Phone"
+            class="mvp__phone-item"
+            src="@/assets/img/GoDee/svg/mvp-sec-first-phone.svg"
+          />
+           
+          <img
+            alt="Phone"
+            class="mvp__phone-item"
+            src="@/assets/img/GoDee/svg/mvp-sec-second-phone.svg"
+          />
+           
+          <img
+            alt="Phone"
+            class="mvp__phone-item"
+            src="@/assets/img/GoDee/svg/mvp-sec-third-phone.svg"
+          />
+        </div>
+         
+        <div
+          class="mvp__year-item"
+        >
+          2018
+        </div>
+         
+        <div
+          class="mvp__tech"
+        >
+          <div
+            class="mvp__tech-item"
+          >
+            <div
+              class="mvp__tech-title"
+            >
+              Live chat
+            </div>
+             
+            <p
+              class="mvp__tech-description"
+            >
+              During 3 months of helping white collars to 
+              <br />
+               commute conveniently, the integrated live chat 
+              <br />
+               feature collected extensive feedback from users.
+            </p>
+          </div>
+           
+          <div
+            class="mvp__tech-item"
+          >
+            <div
+              class="mvp__tech-title"
+            >
+              Trip request
+            </div>
+             
+            <p
+              class="mvp__tech-description"
+            >
+              On top of that, the trip request feature enables GoDee 
+              <br />
+               to analyze actual demand for different Ho Chi Minh 
+              <br />
+               districts.
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="mvp__user-centered-solution"
+        >
+          <div
+            class="mvp__user-centered-solution-text-content"
+          >
+            <div
+              class="mvp__user-centered-solution-title"
+            >
+              User-centered solution
+            </div>
+             
+            <p
+              class="mvp__user-centered-solution-description"
+            >
+              Although services like GoDee exist in 
+              <br />
+               other parts of the world, copy-pasting 
+              <br />
+               the functionality was pointless as Ho 
+              <br />
+               Chi Minh citizens' commuting culture 
+              <br />
+               is different. Thus, slowly improving the 
+              <br />
+               solution driven by users' feedback was 
+              <br />
+               key to its current rapid growth.
+            </p>
+          </div>
+           
+          <img
+            alt="Hands"
+            class="mvp__hands-with-phone-image"
+            src="@/assets/img/GoDee/svg/hands-with-phone.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  <section
+    class="technical-overview"
+    id="technical-overview"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="technical-overview__container"
+      >
+        <h2
+          class="technical-overview__main-title"
+        >
+          Technical Overview
+        </h2>
+         
+        <ul
+          class="technical-overview__tech-list"
+        >
+          <li
+            class="technical-overview__tech-item"
+          >
+            <img
+              alt="Android"
+              class="technical-overview__tech-item-icon"
+              src="@/assets/img/GoDee/svg/android.svg"
+            />
+             
+            <div
+              class="technical-overview__tech-item-title"
+            >
+              Mobile applications 
+              <br />
+               for drivers
+            </div>
+             
+            <p
+              class="technical-overview__tech-item-description"
+            >
+              Android
+            </p>
+          </li>
+           
+          <li
+            class="technical-overview__tech-item"
+          >
+            <img
+              alt="Computer"
+              class="technical-overview__tech-item-icon"
+              src="@/assets/img/GoDee/svg/computer.svg"
+            />
+             
+            <div
+              class="technical-overview__tech-item-title"
+            >
+              Control panel 
+              <br />
+               for admin staff
+            </div>
+             
+            <p
+              class="technical-overview__tech-item-description"
+            >
+              Used for business purposes to 
+              <br />
+               create routes, get reports and 
+              <br />
+               show current active routes on 
+              <br />
+               a map.
+            </p>
+          </li>
+           
+          <li
+            class="technical-overview__tech-item"
+          >
+            <div
+              class="technical-overview__icons-wrapper"
+            >
+              <img
+                alt="Android"
+                class="technical-overview__tech-item-icon"
+                src="@/assets/img/GoDee/svg/android.svg"
+              />
+               
+              <img
+                alt="Apple"
+                class="technical-overview__tech-item-icon"
+                src="@/assets/img/GoDee/svg/apple.svg"
+              />
+            </div>
+             
+            <div
+              class="technical-overview__tech-item-title"
+            >
+              Mobile application 
+              <br />
+               for passengers
+            </div>
+             
+            <p
+              class="technical-overview__tech-item-description"
+            >
+              Android, iOS
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+   
+  <section
+    class="features"
+    id="features"
+  >
+    <div
+      class="container-godee"
+    >
+      <h2
+        class="features__main-title"
+      >
+        Features
+      </h2>
+       
+      <div
+        class="features__container"
+      >
+        <div
+          class="features__content-wrapper"
+        >
+          <ul
+            class="features__features-text-list"
+          >
+            <li
+              class="features__features-text-item"
+            >
+              <div
+                class="features__text-title"
+              >
+                Online Time-Tables & Live 
+                <br />
+                 Location Tracking
+              </div>
+               
+              <p
+                class="features__text-description"
+              >
+                To make the GoDee app easy to use, we created a system 
+                <br />
+                 that tracks bus location in real time. So every user is able to 
+                <br />
+                 book a seat while their bus is approaching them.
+              </p>
+            </li>
+             
+            <li
+              class="features__features-text-item"
+            >
+              <div
+                class="features__text-title"
+              >
+                GPS
+              </div>
+               
+              <p
+                class="features__text-description"
+              >
+                We use GPS data for bus tracking, and we have developed 
+                <br />
+                 an algorithm for bus travel/arrival time prediction, which 
+                <br />
+                 uses geocoding service and also calculates time 
+                <br />
+                 concerning traffic jams and their severity. The predictor 
+                <br />
+                 functionality calculates estimated arrival time for a bus on 
+                <br />
+                 this or that route. It helps our passengers check if the 
+                <br />
+                 requested bus arrives on time, taking into account 
+                <br />
+                 traffic jams.
+              </p>
+            </li>
+             
+            <li
+              class="features__features-text-item"
+            >
+              <div
+                class="features__text-title"
+              >
+                Referral
+              </div>
+               
+              <div
+                class="features__text-description"
+              >
+                Inside the GoDee application, users can share referrals and 
+                <br />
+                 get free rides as bonuses. After receiving a referral code 
+                <br />
+                 from a referrer, the user can input the code from the 
+                <br />
+                 booking confirmation as a promo code and enjoy one free 
+                <br />
+                 ride. Meanwhile, referrers themselves receive a reward with 
+                <br />
+                 "X" number of free rides.
+              </div>
+            </li>
+             
+            <li
+              class="features__features-text-item features__features-text-item-payment"
+            >
+              <div
+                class="features__text-title"
+              >
+                Payment method
+              </div>
+               
+              <p
+                class="features__text-description"
+              >
+                As cashless payments are becoming more and more 
+                <br />
+                 popular in Vietnam, we have integrated Stripe service into 
+                <br />
+                 GoDee, enabling the passengers to pay with credit cards 
+                <br />
+                 easily and quickly. We have also developed an API for 
+                <br />
+                 flawless third-party service integration. Visa/Mastercard, 
+                <br />
+                 AmEx, MoMo and JCB are integrated into the GoDee user 
+                <br />
+                 app to facilitate cashless payments. We have also provided 
+                <br />
+                 a personal balance, which can be replenished via the 
+                <br />
+                 above-mentioned payment systems.
+              </p>
+               
+              <div
+                class="features__text-sub-title"
+              >
+                Online Payment Service Integration
+              </div>
+               
+              <p
+                class="features__text-description"
+              >
+                Visa/Mastercard, AmEx, MoMo and JCB are integrated into 
+                <br />
+                 the GoDee user app to facilitate cashless payments.
+              </p>
+            </li>
+             
+            <li
+              class="features__features-text-item"
+            >
+              <div
+                class="features__text-title"
+              >
+                The best possible routes
+              </div>
+               
+              <div
+                class="features__text-description"
+              >
+                Depending on passengers’ requests, the system allows 
+                <br />
+                 drivers to build the best possible routes automatically. If 
+                <br />
+                 there are no orders from passengers, drivers will skip the 
+                <br />
+                 empty bus and stop along the way.
+              </div>
+            </li>
+          </ul>
+           
+          <ul
+            class="features__features-images-list"
+          >
+            <li
+              class="features__image-wrapper"
+            >
+              <img
+                alt="Features"
+                class="features__live-location-tracker"
+                src="[object Object]"
+              />
+            </li>
+            <li
+              class="features__image-wrapper"
+            >
+              <img
+                alt="Features"
+                class="features__time-tables"
+                src="[object Object]"
+              />
+            </li>
+            <li
+              class="features__image-wrapper"
+            >
+              <img
+                alt="Features"
+                class="features__referral"
+                src="[object Object]"
+              />
+            </li>
+            <li
+              class="features__image-wrapper"
+            >
+              <img
+                alt="Features"
+                class="features__payment-methods"
+                src="[object Object]"
+              />
+            </li>
+            <li
+              class="features__image-wrapper"
+            >
+              <img
+                alt="Features"
+                class="features__possible-routes"
+                src="[object Object]"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+       
+      <img
+        alt="Features route line"
+        class="features__route-line"
+        src="@/assets/img/GoDee/svg/features-route-line.svg"
+      />
+       
+      <img
+        alt="Bus"
+        class="features__bus-icon"
+        src="@/assets/img/GoDee/svg/godee-bus.svg"
+      />
     </div>
   </section>
 </main>

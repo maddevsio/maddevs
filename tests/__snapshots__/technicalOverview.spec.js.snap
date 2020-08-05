@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TechnicalOverview renders correctly 1`] = `
+<section
+  class="technical-overview"
+  id="technical-overview"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="technical-overview__container"
+    >
+      <h2
+        class="technical-overview__main-title"
+      >
+        Technical Overview
+      </h2>
+       
+      <ul
+        class="technical-overview__tech-list"
+      >
+        <li
+          class="technical-overview__tech-item"
+        >
+          <img
+            alt="Android"
+            class="technical-overview__tech-item-icon"
+            src="@/assets/img/GoDee/svg/android.svg"
+          />
+           
+          <div
+            class="technical-overview__tech-item-title"
+          >
+            Mobile applications 
+            <br />
+             for drivers
+          </div>
+           
+          <p
+            class="technical-overview__tech-item-description"
+          >
+            Android
+          </p>
+        </li>
+         
+        <li
+          class="technical-overview__tech-item"
+        >
+          <img
+            alt="Computer"
+            class="technical-overview__tech-item-icon"
+            src="@/assets/img/GoDee/svg/computer.svg"
+          />
+           
+          <div
+            class="technical-overview__tech-item-title"
+          >
+            Control panel 
+            <br />
+             for admin staff
+          </div>
+           
+          <p
+            class="technical-overview__tech-item-description"
+          >
+            Used for business purposes to 
+            <br />
+             create routes, get reports and 
+            <br />
+             show current active routes on 
+            <br />
+             a map.
+          </p>
+        </li>
+         
+        <li
+          class="technical-overview__tech-item"
+        >
+          <div
+            class="technical-overview__icons-wrapper"
+          >
+            <img
+              alt="Android"
+              class="technical-overview__tech-item-icon"
+              src="@/assets/img/GoDee/svg/android.svg"
+            />
+             
+            <img
+              alt="Apple"
+              class="technical-overview__tech-item-icon"
+              src="@/assets/img/GoDee/svg/apple.svg"
+            />
+          </div>
+           
+          <div
+            class="technical-overview__tech-item-title"
+          >
+            Mobile application 
+            <br />
+             for passengers
+          </div>
+           
+          <p
+            class="technical-overview__tech-item-description"
+          >
+            Android, iOS
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+`;

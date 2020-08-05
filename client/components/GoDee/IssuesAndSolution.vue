@@ -4,7 +4,7 @@
       <h2 class="issues-and-solution__main-title">Issues and Solution</h2>
       <img src="@/assets/img/GoDee/png/issues-and-solution-bg.png" class="issues-and-solution__background-image" alt="Background">
     </div>
-    <div class="container">
+    <div class="container-godee">
       <div class="issues-and-solution__transportation">
         <div class="issues-and-solution__transportation-content-wrapper">
           <div class="issues-and-solutio__left-text-content">
@@ -129,7 +129,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @import '../../assets/styles/vars';
   @import '../../assets/styles/get-vw';
 
@@ -176,13 +176,13 @@ export default {
 
         &::before {
           content: '';
-          width: get-vw(150px);
-          height: get-vw(150px);
+          width: get-vw(130px);
+          height: get-vw(130px);
           position: absolute;
-          top: get-vw(65px);
-          left: get-vw(-153px);
+          top: get-vw(75px);
+          left: get-vw(-127px);
           background: url('../../assets/img/GoDee/svg/godee-bus.svg') no-repeat;
-          background-size: get-vw(150px);
+          background-size: get-vw(130px);
         }
       }
 
@@ -193,7 +193,7 @@ export default {
           height: get-vw(46px);
           position: absolute;
           top: get-vw(140px);
-          left: get-vw(-102px);
+          left: get-vw(-85px);
           background: url('../../assets/img/GoDee/svg/route-dot.svg') no-repeat;
           background-size: get-vw(46px);
         }
@@ -445,6 +445,7 @@ export default {
       position: absolute;
       height: get-vw(46px);
       width: get-vw(46px);
+      margin-left: get-vw(16px);
     }
 
     &__taxi-route-dot {
@@ -453,38 +454,6 @@ export default {
 
     &__solution-route-dot {
       margin-top: get-vw(140px);
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .issues-and-solution {
-      &__description-item {
-        &:first-child {
-          &::before {
-            left: get-vw(-130px);
-          }
-        }
-
-        &:last-child {
-          &::before {
-            left: get-vw(-80px);
-          }
-        }
-      }
-
-      &__transportation-content-wrapper {
-        justify-content: space-between;
-      }
-
-      &__image-wrapper {
-        margin-left: 0;
-        margin-right: get-vw(-77px);
-      }
-
-      &__taxi-route-dot,
-      &__solution-route-dot {
-        margin-left: get-vw(23px);
-      }
     }
   }
 </style>

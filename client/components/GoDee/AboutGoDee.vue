@@ -1,6 +1,6 @@
 <template>
   <section id="about-godee" class="about-godee">
-    <div class="container">
+    <div class="container-godee">
       <div class="about-godee__text-content">
         <h2 class="about-godee__main-title">About GoDee</h2>
         <p class="about-godee__description-bold">The app-based system allows users to find a route, <br> select the time, book a seat, and pay for the ride online.</p>
@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @import '../../assets/styles/vars';
   @import '../../assets/styles/get-vw';
 
@@ -36,13 +36,13 @@ export default {
 
       &::before {
         content: '';
-        width: get-vw(150px);
-        height: get-vw(150px);
+        width: get-vw(130px);
+        height: get-vw(130px);
         position: absolute;
-        top: get-vw(135px);
-        left: get-vw(-51px);
+        top: get-vw(145px);
+        left: get-vw(-25px);
         background: url('../../assets/img/GoDee/svg/godee-bus.svg') no-repeat;
-        background-size: get-vw(150px);
+        background-size: get-vw(130px);
       }
     }
 
@@ -87,17 +87,6 @@ export default {
       width: get-vw(393px);
       height: get-vw(262px);
       margin-bottom: get-vw(-75px);
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .about-godee {
-      &__text-content {
-
-        &::before {
-          left: get-vw(-28px);
-        }
-      }
     }
   }
 </style>

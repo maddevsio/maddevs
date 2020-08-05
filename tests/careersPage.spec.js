@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import CareersPage from '@/pages/_lang/careers';
+import CareersPage from '@/pages/careers';
 
 describe('Careers page', () => {
   let wrapper;
@@ -13,7 +13,7 @@ describe('Careers page', () => {
       }
     };
     wrapper = mount(CareersPage, {
-      stubs: ['ValidationObserver']
+      stubs: ['ValidationObserver', 'router-link']
     });
   });
 
