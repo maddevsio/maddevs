@@ -3,7 +3,7 @@
     <div class="container">
       <div class="privacy__header">
         <h3 class="privacy__title title">
-          Privacy Policy: Website Acceptable Use Terms 
+          Privacy Policy: Website Acceptable Use Terms
         </h3>
         <img
           class="privacy__image"
@@ -12,16 +12,16 @@
         />
       </div>
       <div class="privacy__content">
-        <p class="privacy__text doc-text privacy__break-main-paragraph">
+        <p class="privacy__text doc-text privacy__break-main-paragraph paragraph">
           This acceptable use policy sets out the content standards that apply
           when you upload content to our site, make contact with other users on
           our site, link to our site, or interact with our site in any other
           way.
         </p>
-        <p class="privacy__text doc-text privacy__break-main-paragraph">
+        <p class="privacy__text doc-text privacy__break-main-paragraph paragraph">
           We are Mad Devs Group Ltd.
         </p>
-        <p class="privacy__text doc-text privacy__break-main-paragraph">
+        <p class="privacy__text doc-text privacy__break-main-paragraph paragraph">
           <a class="privacy__link" target="_blank" href="https://maddevs.io"
             >https://maddevs.io</a
           >
@@ -37,7 +37,7 @@
           registered office at Salisbury House, Station Road, Cambridge, CB1
           2LA, United Kingdom.
         </p>
-        <p class="privacy__text doc-text">
+        <p class="privacy__text doc-text paragraph">
           We also have close associations with Mad Devs LLC, a company
           registered in Kyrgyzstan under a company number 02004201710239 and
           have a registered office at 103 Ibraimova str., Bishkek, 720011,
@@ -734,6 +734,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/styles/vars';
+@import '../assets/styles/get-vw';
 
 .privacy {
   width: 100%;
@@ -743,17 +744,17 @@ export default {
 
   &__header {
     display: flex;
-    margin-top: 147px;
-    margin-bottom: 53px;
+    margin-top: get-vw(147px);
+    margin-bottom: get-vw(53px);
     align-items: center;
   }
 
   &__content {
-    max-width: 880px;
+    max-width: get-vw(880px);
   }
 
   &__paragraph {
-    margin-bottom: 15px;
+    margin-bottom: get-vw(15px);
 
     &--bold {
       font-weight: bold;
@@ -767,26 +768,26 @@ export default {
   &__list {
     display: flex;
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom: get-vw(10px);
 
     &::before {
-      margin-right: 15px;
+      margin-right: get-vw(15px);
       content: '\2022';
     }
   }
 
   &__title {
-    margin-right: 36px;
-    margin-top: 55px;
-    max-width: 800px;
+    margin-right: get-vw(36px);
+    margin-top: get-vw(55px);
+    max-width: get-vw(1200px);
   }
 
   &__sec-title {
     text-align: left;
     color: $text-color--grey-light;
-    margin-top: 62px;
-    margin-bottom: 11px;
-    font-size: 32px;
+    margin-top: get-vw(62px);
+    margin-bottom: get-vw(11px);
+    font-size: get-vw(32px);
     font-family: 'Hoves-Regular';
     font-weight: bold;
 
@@ -795,7 +796,7 @@ export default {
     }
 
     &--multi-title {
-      margin-top: 15px;
+      margin-top: get-vw(15px);
     }
   }
 
@@ -810,7 +811,7 @@ export default {
   &__term-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: get-vw(15px);
   }
 
   &__term-title {
@@ -823,7 +824,7 @@ export default {
   }
 
   &__break-paragraph {
-    margin-bottom: 5px;
+    margin-bottom: get-vw(5px);
   }
 
   &__link {
@@ -832,32 +833,30 @@ export default {
   }
 
   &__break-main-paragraph {
-    margin-bottom: 15px;
+    margin-bottom: get-vw(15px);
+  }
+
+  &__image {
+    height: get-vw(230px);
+    width: get-vw(190px);
+    margin-left: 10vw;
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1600px) {
   .privacy {
-    &__image {
-      height: 180px;
+    &__content {
+      max-width: 880px;
     }
-  }
-}
 
-@media only screen and (min-width: 1150px) {
-  .privacy {
-    &__image {
-      margin-left: 15%;
+    &__title {
+      max-width: 800px;
     }
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .privacy {
-    &__image {
-      height: 170px;
-    }
-
     &__title {
       margin-top: 0;
     }
@@ -867,28 +866,24 @@ export default {
 @media only screen and (max-width: 870px) {
   .privacy {
     &__image {
-      height: 155px;
+      height: get-vw(155px, 870);
     }
 
     &__sec-title {
-      font-size: 30px;
+      font-size: get-vw(30px, 870);
     }
   }
 }
 
 @media only screen and (max-width: 768px) {
   .privacy {
-    &__image {
-      height: 150px;
-    }
-
     &__term-container {
       flex-direction: column;
     }
 
     &__term-title {
       width: 100%;
-      margin-bottom: 5px;
+      margin-bottom: get-vw(5px, 768);
     }
 
     &__term-description {
@@ -904,42 +899,18 @@ export default {
     }
 
     &__image {
-      height: 140px;
+      height: get-vw(140px, 670);
       position: absolute;
-      right: 39px;
-      top: -72px;
-    }
-  }
-}
-
-@media only screen and (max-width: 520px) and (min-width: 425px) {
-  .privacy {
-    &__image {
-      top: -82px;
+      right: -1.179vw;
+      top: -12.74vw;
     }
   }
 }
 
 @media only screen and (max-width: 520px) {
   .privacy {
-    &__image {
-      height: 95px;
-    }
-
-    &__title {
-      font-size: 53px;
-    }
-
     &__sec-title {
-      font-size: 27px;
-    }
-  }
-}
-
-@media only screen and (max-width: 370px) {
-  .privacy {
-    &__title {
-      font-size: 47px;
+      font-size: get-vw(27px, 520);
     }
   }
 }
