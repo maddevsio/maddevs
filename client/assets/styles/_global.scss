@@ -1,3 +1,5 @@
+@import './get-vw';
+
 // Reviews dots
 .reviews .slick-dots {
   display: flex;
@@ -262,7 +264,7 @@
 
 .doc-text {
   font-family: 'Hoves-Regular';
-  font-size: 24px;
+  font-size: get-vw(24px);
   font-weight: normal;
 }
 
@@ -502,6 +504,10 @@
 @media only screen and (max-width: 1560px) {
   .title {
     font-size: 80px;
+  }
+
+  .doc-text {
+    font-size: get-vw(24px);
   }
 
   .section-title {
