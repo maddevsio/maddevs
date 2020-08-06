@@ -1,6 +1,6 @@
 <template>
-  <button 
-    class="ui-button-modal-trigger" 
+  <button
+    class="ui-button-modal-trigger"
     :class="{ 'ui-button-modal-trigger--red': isRed, 'ui-button-modal-trigger--black': isBlack, 'ui-button-modal-trigger--grey': isGrey }"
     @click="showModal()"
     v-WaveAnimation
@@ -41,7 +41,7 @@ export default {
   },
   data() {
     return {
-      scrollYPosition: null 
+      scrollYPosition: null
     };
   },
   mounted() {
@@ -68,17 +68,23 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
   .ui-button-modal-trigger {
-    height: 65px;
+    height: get-vw(65px);
     border: 1px solid $border-color--grey;
     border-radius: 2px;
     box-shadow: none;
     background-color: transparent;
-    font-size: 18px;
+    font-size: get-vw(18px);
     font-family: 'Hoves-Regular';
     cursor: pointer;
     transition: 0.2s;
+
+    @media only screen and (max-width: 1680px) {
+      height: 65px;
+      font-size: 18px;
+    }
 
     &--red {
       color: $text-color--red;

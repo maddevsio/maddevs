@@ -4,7 +4,7 @@
       <div class="remote-tech-staff-content__content-wrap">
         <div class="remote-tech-staff-content__title-wrap">
           <h3 class="remote-tech-staff-content__title block-paragraph">{{ title }}</h3>
-          <h4 class="remote-tech-staff-content__sub-title sub-title">{{ subTitle }}</h4>
+          <h4 class="remote-tech-staff-content__sub-title sub-paragraph">{{ subTitle }}</h4>
         </div>
         <img
           class="remote-tech-staff-content__content-icon"
@@ -109,7 +109,6 @@ export default {
 
     &__title {
       padding-bottom: get-vw(17px);
-      // font-size: get-vw(70px);
       line-height: 92%;
       letter-spacing: get-vw(-2px);
     }
@@ -169,13 +168,6 @@ export default {
         padding-bottom: 52px;
       }
 
-      /*<!--&__title {-->*/
-      /*<!--  font-size: 50px;-->*/
-      /*<!--  line-height: 110%;-->*/
-      /*<!--  letter-spacing: -2px;-->*/
-      /*<!--  padding-bottom: 25px;-->*/
-      /*<!--}-->*/
-
       &__sub-title {
         line-height: 110%;
         letter-spacing: -1px;
@@ -231,18 +223,31 @@ export default {
   @media only screen and (max-width: 768px) {
     .remote-tech-staff-content {
       &__title {
-        // font-size: get-vw(47px, 768);
         padding-bottom: get-vw(10px, 768);
+      }
+
+      &__sub-title {
+        padding-bottom: 2vw;
       }
 
       &__paragraph {
         line-height: 119%;
+        padding-bottom: 5vw;
       }
     }
   }
 
   @media only screen and (max-width: 580px) {
     .remote-tech-staff-content {
+      &__title {
+        padding-bottom: 4.5vw;
+      }
+
+      &__paragraph {
+        line-height: 119%;
+        padding-bottom: 8vw;
+      }
+
       &__content-icon {
         height: get-vw(125px, 580);
         top: get-vw(-13px, 580);

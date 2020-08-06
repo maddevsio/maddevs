@@ -4,17 +4,17 @@
       <div class="remote-tech-staff__content-wrapper">
         <h2 class="remote-tech-staff__main-title main-title">Remote Tech Staff</h2>
         <div class="remote-tech-staff__flex-wrapper flex-wrapper">
-          <RemoteTechStaffContent 
-            :title="teams.title" 
-            :subTitle="teams.subTitle" 
+          <RemoteTechStaffContent
+            :title="teams.title"
+            :subTitle="teams.subTitle"
             :paragraph="teams.paragraph"
             :buttonInnerText="teams.buttonInnerText"
             :modalWindowName="teams.modalWindowName"
             class="teams"
           />
-          <RemoteTechStaffContent 
-            :title="individuals.title" 
-            :subTitle="individuals.subTitle" 
+          <RemoteTechStaffContent
+            :title="individuals.title"
+            :subTitle="individuals.subTitle"
             :paragraph="individuals.paragraph"
             :buttonInnerText="individuals.buttonInnerText"
             :modalWindowName="individuals.modalWindowName"
@@ -57,9 +57,10 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
   .remote-tech-staff {
-    padding: 211px 0 105px;
+    padding: get-vw(211px) 0 get-vw(105px);
     background-color: $bgcolor--black;
 
     &__main-title {
