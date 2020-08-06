@@ -1,6 +1,9 @@
 <template>
 	<div class="footer-social-network">
-		<a v-for="(item, i) in socialIcons" :key="i" :href="item.link" :class="`footer-social-network__link footer-social-network__link--${item.name}`" target="_blank"/>
+		<a v-for="(item, i) in socialIcons"
+       :key="i" :href="item.link"
+       :class="`footer-social-network__link footer-social-network__link--${item.name}`"
+       target="_blank"/>
 	</div>
 </template>
 
