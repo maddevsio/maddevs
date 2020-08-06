@@ -273,6 +273,12 @@
   padding-bottom: get-vw(15px);
 }
 
+.block-paragraph {
+  font-size: 4.3vw;
+  font-family: 'Hoves-Bold';
+  letter-spacing: get-vw(-1px);
+}
+
 .last-character {
   margin-left: -33px;
 }
@@ -621,6 +627,10 @@
   .sub-paragraph {
     font-size: 7vw;
   }
+
+  .block-paragraph {
+    font-size: 11vw;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -697,6 +707,11 @@
     &::after {
       padding-left: 0;
     }
+  }
+
+  .block-paragraph {
+    font-size: get-vw(40px, 370);
+    letter-spacing: -2px;
   }
 }
 

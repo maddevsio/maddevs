@@ -3,27 +3,27 @@
     <div class="remote-tech-staff-content__content_wrapper">
       <div class="remote-tech-staff-content__content-wrap">
         <div class="remote-tech-staff-content__title-wrap">
-          <h3 class="remote-tech-staff-content__title title default-title">{{ title }}</h3>
+          <h3 class="remote-tech-staff-content__title block-paragraph">{{ title }}</h3>
           <h4 class="remote-tech-staff-content__sub-title sub-title">{{ subTitle }}</h4>
         </div>
-        <img 
-          class="remote-tech-staff-content__content-icon" 
-          src="@/assets/img/Services/svg/individuals-symbol.svg" 
+        <img
+          class="remote-tech-staff-content__content-icon"
+          src="@/assets/img/Services/svg/individuals-symbol.svg"
           alt="individuals-title-symbol"
           v-if="title === 'Individuals'"
         />
         <img
-          class="remote-tech-staff-content__content-icon" 
-          src="@/assets/img/Services/svg/teams-symbol.svg" 
+          class="remote-tech-staff-content__content-icon"
+          src="@/assets/img/Services/svg/teams-symbol.svg"
           alt="teams-title-symbol"
           v-if="title === 'Teams'"
         />
       </div>
       <p class="remote-tech-staff-content__paragraph paragraph">{{ paragraph }}</p>
     </div>
-    <UIButtonModalTrigger 
+    <UIButtonModalTrigger
       :buttonInnerText="buttonInnerText"
-      :modalWindowName="modalWindowName" 
+      :modalWindowName="modalWindowName"
       class="remote-tech-staff-content__ui-button-modal-trigger"
     />
   </div>
@@ -65,6 +65,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
   .remote-tech-staff-content {
     &__ui-button-modal-trigger {
@@ -82,9 +83,9 @@ export default {
     }
 
     &__content-icon {
-      margin-bottom: 15px;
+      margin-bottom: get-vw(15px);
       position: relative;
-      top: -35px;
+      top: get-vw(-35px);
       opacity: 40%;
     }
 
@@ -107,27 +108,26 @@ export default {
     }
 
     &__title {
-      padding-bottom: 17px;
-      font-size: 70px;
+      padding-bottom: get-vw(17px);
+      // font-size: get-vw(70px);
       line-height: 92%;
-      letter-spacing: -2px;
+      letter-spacing: get-vw(-2px);
     }
 
     &__sub-title {
-      font-size: 32px;
       line-height: 110%;
-      letter-spacing: -2px;
-      margin-bottom: 15px;
+      letter-spacing: get-vw(-2px);
+      margin-bottom: get-vw(15px);
     }
 
     &__paragraph {
-      padding-bottom: 46px;
+      padding-bottom: get-vw(46px);
     }
   }
 
   .individuals {
     .remote-tech-staff-content__content-icon {
-      padding-right: 14px;
+      padding-right: get-vw(14px);
     }
   }
 
@@ -169,15 +169,14 @@ export default {
         padding-bottom: 52px;
       }
 
-      &__title {
-        font-size: 50px;
-        line-height: 110%;
-        letter-spacing: -2px;
-        padding-bottom: 25px;
-      }
+      /*<!--&__title {-->*/
+      /*<!--  font-size: 50px;-->*/
+      /*<!--  line-height: 110%;-->*/
+      /*<!--  letter-spacing: -2px;-->*/
+      /*<!--  padding-bottom: 25px;-->*/
+      /*<!--}-->*/
 
       &__sub-title {
-        font-size: 32px;
         line-height: 110%;
         letter-spacing: -1px;
       }
@@ -188,36 +187,10 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1180px) {
-    .remote-tech-staff-content {
-      &__title {
-        font-size: 50px;
-        line-height: 110%;
-        letter-spacing: -2px;
-      }
-
-      &__content-icon {
-        height: 160px;
-      }
-    }
-  }
-
   @media only screen and (max-width: 1024px) {
     .remote-tech-staff-content {
       button {
         width: initial;
-      }
-
-      &__title {
-        font-size: 48px;
-        padding-bottom: 25px;
-      }
-
-      &__sub-title {
-        width: initial;
-        font-size: 33px;
-        line-height: 110%;
-        letter-spacing: -1px;
       }
 
       &__content-icon {
@@ -240,10 +213,6 @@ export default {
         height: 115px;
         top: -25px;
       }
-
-      &__title {
-        padding-bottom: 20px;
-      }
     }
   }
 
@@ -262,12 +231,8 @@ export default {
   @media only screen and (max-width: 768px) {
     .remote-tech-staff-content {
       &__title {
-        font-size: 47px;
-        padding-bottom: 10px;
-      }
-
-      &__sub-title {
-        font-size: 32px;
+        // font-size: get-vw(47px, 768);
+        padding-bottom: get-vw(10px, 768);
       }
 
       &__paragraph {
@@ -279,8 +244,8 @@ export default {
   @media only screen and (max-width: 580px) {
     .remote-tech-staff-content {
       &__content-icon {
-        height: 125px;
-        top: -13px;
+        height: get-vw(125px, 580);
+        top: get-vw(-13px, 580);
       }
     }
   }
@@ -289,47 +254,6 @@ export default {
     .remote-tech-staff-content {
       &__last-character {
         margin-left: -21px;
-      }
-
-      &__content-icon {
-        height: 115px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .remote-tech-staff-content {
-      &__main-title {
-        padding-bottom: 25px;
-      }
-
-      &__content-icon {
-        height: 100px;
-      }
-
-      &__title {
-        font-size: 41px;
-        line-height: 99%;
-        letter-spacing: -1px;
-      }
-
-      &__sub-title {
-        font-size: 27px;
-        line-height: 124%;
-        letter-spacing: -1px;
-        margin-bottom: 10px;
-      }
-
-      &__paragraph {
-        padding-bottom: 34px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 345px) {
-    .remote-tech-staff-content {
-      &__content-icon {
-        height: 75px;
       }
     }
   }
