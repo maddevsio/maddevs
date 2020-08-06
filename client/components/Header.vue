@@ -71,13 +71,13 @@ export default {
     return {
       buttonInnerText: 'Contact me',
       phones: [
+        // {
+        //   phoneNumber: '+1 833-MADDEVS',
+        //   country: 'united-states'
+        // },
         {
           phoneNumber: '+44 20 3984 8555',
           country: 'united-kingdom'
-        },
-        {
-          phoneNumber: '+1 833-MADDEVS',
-          country: 'united-states'
         }
       ],
       selectedPhone: null,
@@ -90,7 +90,7 @@ export default {
      * Sets default value for selectedPhone
      * this.phones[1] is a United Kingdom number
     */
-    this.selectedPhone = this.phones[1];
+    this.selectedPhone = this.phones[0];
   },
   watch: {
     '$route'() {
@@ -196,9 +196,9 @@ export default {
     }
 
     &__phones-dropdown_wrap {
-      min-width: 200px;
+      // min-width: 200px;
       padding-top: 1px;
-      background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
+      // background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
       background-position-y: 9px;
       background-position-x: 170px;
 
@@ -231,8 +231,7 @@ export default {
     &__selected-phone,
     &__phone-item {
       position: relative;
-      padding-left: 25px;
-      padding-right: 40px;
+      padding: 0 25px;
       cursor: pointer;
 
       img {
