@@ -64,7 +64,7 @@ export default {
     background-color: $bgcolor--black;
 
     &__main-title {
-      padding-bottom: 65px;
+      padding-bottom: get-vw(65px);
       color: $text-color--red;
     }
   }
@@ -73,7 +73,7 @@ export default {
     .remote-tech-staff {
       /deep/.teams {
         .remote-tech-staff__sub-title.sub-title {
-          margin-right: 10px;
+          margin-right: get-vw(10px);
         }
       }
     }
@@ -91,39 +91,29 @@ export default {
     }
 
     .individuals {
-      padding-top: 104px;
+      padding-top: get-vw(104px, 878);
     }
   }
 
   @media only screen and (max-width: 768px) {
     .remote-tech-staff {
-      padding: 140px 0 70px;
+      padding: get-vw(140px, 768) 0 get-vw(70px, 768);
 
       &__main-title {
-        padding-bottom: 39px;
+        padding-bottom: get-vw(39px, 768)
       }
     }
   }
 
   @media only screen and (max-width: 576px) {
     .remote-tech-staff {
-      padding: 120px 0 105px;
+      padding: get-vw(120px, 576) 0 get-vw(105px, 576);
     }
   }
 
   @media only screen and (max-width: 520px) {
     .remote-tech-staff {
-      padding: 144px 0 0 0;
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .remote-tech-staff {
-      padding: 86px 0 20px;
-
-      &__main-title {
-        padding-bottom: 26px;
-      }
+      padding: get-vw(144px, 520) 0 0 0;
     }
   }
 </style>
