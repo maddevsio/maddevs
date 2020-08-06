@@ -14,13 +14,13 @@ exports[`Remote tech staff content renders correctly 1`] = `
         class="remote-tech-staff-content__title-wrap"
       >
         <h3
-          class="remote-tech-staff-content__title title default-title"
+          class="remote-tech-staff-content__title block-paragraph"
         >
           Title
         </h3>
          
         <h4
-          class="remote-tech-staff-content__sub-title sub-title"
+          class="remote-tech-staff-content__sub-title sub-paragraph"
         >
           Sub title
         </h4>

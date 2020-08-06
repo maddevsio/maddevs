@@ -4,17 +4,17 @@
       <div class="remote-tech-staff__content-wrapper">
         <h2 class="remote-tech-staff__main-title main-title">Remote Tech Staff</h2>
         <div class="remote-tech-staff__flex-wrapper flex-wrapper">
-          <RemoteTechStaffContent 
-            :title="teams.title" 
-            :subTitle="teams.subTitle" 
+          <RemoteTechStaffContent
+            :title="teams.title"
+            :subTitle="teams.subTitle"
             :paragraph="teams.paragraph"
             :buttonInnerText="teams.buttonInnerText"
             :modalWindowName="teams.modalWindowName"
             class="teams"
           />
-          <RemoteTechStaffContent 
-            :title="individuals.title" 
-            :subTitle="individuals.subTitle" 
+          <RemoteTechStaffContent
+            :title="individuals.title"
+            :subTitle="individuals.subTitle"
             :paragraph="individuals.paragraph"
             :buttonInnerText="individuals.buttonInnerText"
             :modalWindowName="individuals.modalWindowName"
@@ -57,13 +57,14 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
   .remote-tech-staff {
-    padding: 211px 0 105px;
+    padding: get-vw(211px) 0 get-vw(105px);
     background-color: $bgcolor--black;
 
     &__main-title {
-      padding-bottom: 65px;
+      padding-bottom: get-vw(65px);
       color: $text-color--red;
     }
   }
@@ -72,7 +73,7 @@ export default {
     .remote-tech-staff {
       /deep/.teams {
         .remote-tech-staff__sub-title.sub-title {
-          margin-right: 10px;
+          margin-right: get-vw(10px);
         }
       }
     }
@@ -90,39 +91,29 @@ export default {
     }
 
     .individuals {
-      padding-top: 104px;
+      padding-top: get-vw(104px, 878);
     }
   }
 
   @media only screen and (max-width: 768px) {
     .remote-tech-staff {
-      padding: 140px 0 70px;
+      padding: get-vw(140px, 768) 0 get-vw(70px, 768);
 
       &__main-title {
-        padding-bottom: 39px;
+        padding-bottom: get-vw(39px, 768)
       }
     }
   }
 
   @media only screen and (max-width: 576px) {
     .remote-tech-staff {
-      padding: 120px 0 105px;
+      padding: get-vw(120px, 576) 0 get-vw(105px, 576);
     }
   }
 
   @media only screen and (max-width: 520px) {
     .remote-tech-staff {
-      padding: 144px 0 0 0;
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .remote-tech-staff {
-      padding: 86px 0 20px;
-
-      &__main-title {
-        padding-bottom: 26px;
-      }
+      padding: get-vw(144px, 520) 0 0 0;
     }
   }
 </style>

@@ -115,37 +115,37 @@ exports[`Index page renders correctly 1`] = `
           class="we-create-it-project__projects-type_list"
         >
           <li
-            class="we-create-it-project__project-item"
+            class="we-create-it-project__project-item block-paragraph"
           >
             E-learning
           </li>
            
           <li
-            class="we-create-it-project__project-item"
+            class="we-create-it-project__project-item block-paragraph"
           >
             FinTech
           </li>
            
           <li
-            class="we-create-it-project__project-item"
+            class="we-create-it-project__project-item block-paragraph"
           >
             HealthTech
           </li>
            
           <li
-            class="we-create-it-project__project-item"
+            class="we-create-it-project__project-item block-paragraph"
           >
             E-commerce
           </li>
            
           <li
-            class="we-create-it-project__project-item"
+            class="we-create-it-project__project-item block-paragraph"
           >
             AdTech
           </li>
            
           <li
-            class="we-create-it-project__project-item"
+            class="we-create-it-project__project-item block-paragraph"
           >
             Transportation
           </li>
