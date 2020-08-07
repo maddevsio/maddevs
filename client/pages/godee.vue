@@ -12,6 +12,7 @@
     <ControlPanel />
     <SmartRoutePlaning />
     <TripsMonitor />
+    <RouteOptimization />
   </main>
 </template>
 
@@ -28,6 +29,7 @@ import MobileApps from '@/components/GoDee/MobileApps';
 import ControlPanel from '@/components/GoDee/ControlPanel';
 import SmartRoutePlaning from '@/components/GoDee/SmartRoutePlaning';
 import TripsMonitor from '@/components/GoDee/TripsMonitor';
+import RouteOptimization from '@/components/GoDee/RouteOptimization';
 
 export default {
   name: 'GoDee',
@@ -43,7 +45,8 @@ export default {
     MobileApps,
     ControlPanel,
     SmartRoutePlaning,
-    TripsMonitor
+    TripsMonitor,
+    RouteOptimization
   },
   data() {
     return {

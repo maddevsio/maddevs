@@ -85,7 +85,7 @@ export default {
 
     &__main-title {
       font-size: get-vw(50px);
-      margin-top: get-vw(100px);
+      margin-top: get-vw(70px);
       margin-bottom: get-vw(30px);
     }
 
@@ -109,13 +109,13 @@ export default {
 
     &__features-title {
       font-size: get-vw(32px);
-      margin-bottom: get-vw(46px);
+      margin-bottom: get-vw(40px);
     }
 
     &__features-item {
       display: flex;
       align-items: center;
-      margin-bottom: get-vw(64px);
+      margin-bottom: get-vw(60px);
 
       p {
         margin-left: get-vw(26px);
@@ -168,7 +168,6 @@ export default {
       width: get-vw(1165px);
       height: get-vw(681px);
       margin-left: get-vw(-25px);
-      margin-bottom: get-vw(30px);
     }
 
     &__trips-monitor-mini-map {
