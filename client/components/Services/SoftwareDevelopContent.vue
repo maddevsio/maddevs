@@ -94,7 +94,6 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     padding-top: get-vw(143px);
-    padding-right: get-vw(87px);
 
     &:last-child {
       padding-right: 0;
@@ -118,6 +117,7 @@ export default {
     &__mobile-title-icon {
       margin-left: get-vw(-24px);
       margin-bottom: get-vw(-10px);
+      padding-right: 1vw;
     }
 
     /deep/.icon-item {
@@ -133,6 +133,7 @@ export default {
     &__title {
       line-height: 110%;
       letter-spacing: get-vw(-3px);
+      white-space: nowrap;
     }
 
     &__icon-flex-group {
@@ -142,67 +143,15 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1560px) {
-    .frontend-item {
-      .software-development_content__sub-title {
-        max-width: 390px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1390px) {
-    .frontend-item {
-      .software-development_content__sub-title {
-        max-width: 370px;
-      }
-    }
-  }
-
   @media only screen and (max-width: 1280px) {
     .software-development_content {
-      padding-top: 83px;
 
       &__main-title {
         padding-bottom: 52px;
       }
 
-      &__title {
-        line-height: 110%;
-        letter-spacing: -2px;
-        padding-bottom: 25px;
-      }
-
       &__sub-title {
-        line-height: 110%;
         letter-spacing: -1px;
-      }
-
-      &__mobile-title-icon {
-        margin: 0 11px -10px -12px;
-      }
-
-      /deep/.icons-list {
-        flex-wrap: wrap;
-      }
-
-      /deep/.icon-flex_group {
-        display: flex;
-
-        &:last-child {
-          flex-direction: row;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1180px) {
-    .software-development_content {
-      &__sub-title {
-        width: 270px;
-      }
-
-      /deep/.icon-item {
-        padding-right: 20px;
       }
     }
   }
@@ -217,31 +166,32 @@ export default {
         max-width: initial;
       }
 
-      &__sub-title  {
-        width: initial;
-      }
-
-      &__title {
-        padding-bottom: 25px;
-      }
-
-      /deep/.icons-list {
-        flex-wrap: wrap;
-      }
-
-      /deep/.icon-flex_group {
-        &:nth-child(3) {
-          display: flex;
-        }
-      }
-    }
-
-    .frontend-item {
-      .software-development_content__sub-title {
-        max-width: initial;
+      &__mobile-title-icon {
+        margin-left: -1.5vw;
+        margin-bottom: -0.23vw;
+        padding-right: 2vw;
       }
     }
   }
+
+   @media only screen and (max-width: 780px) {
+     .software-development_content {
+       &__mobile-title-icon {
+         padding-right: 3vw;
+         margin-left: -1.5vw;
+       }
+     }
+   }
+
+   @media only screen and (max-width: 640px) {
+     .software-development_content {
+       &__mobile-title-icon {
+         padding-right: 1vw;
+         margin-bottom: 0;
+         margin-left: -3vw;
+       }
+     }
+   }
 
   @media only screen and (max-width: 695px) {
     .software-development_content {
@@ -280,24 +230,14 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 520px) {
-    .software-development_content {
-      &__last-character {
-        margin-left: -18px;
-      }
-
-      &__title {
-        padding-bottom: 13px;
-      }
-
-      &__mobile-title-icon {
-        margin: 0 0 -8px -22px;
-      }
-    }
-  }
-
   @media only screen and (max-width: 458px) {
     .software-development_content {
+      &__mobile-title-icon {
+        padding-right: 3.5vw;
+        margin-bottom: -0.5vw;
+        margin-left: -2.5vw;
+      }
+
       &:first-child {
         /deep/.icon-flex_group {
         display: flex;

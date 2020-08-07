@@ -178,21 +178,9 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    .software-development {
-      padding-bottom: 80px;
-    }
-  }
-
   @media only screen and (max-width: 520px) {
     .software-development {
-      padding-bottom: 143px;
-    }
-  }
-
-  @media only screen and (max-width: 376px) {
-    .software-development {
-      padding-bottom: 80px;
+      padding-bottom: get-vw(143px, 520);
     }
   }
 </style>
