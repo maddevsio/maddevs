@@ -5,23 +5,23 @@
         IT Consulting
       </h2>
       <div class="it-consulting__flex-wrapper flex-wrapper">
-        <ItConsultingContent 
-          :title="TechnologyStack.title" 
-          :subTitle="TechnologyStack.subTitle" 
+        <ItConsultingContent
+          :title="TechnologyStack.title"
+          :subTitle="TechnologyStack.subTitle"
           :paragraph="TechnologyStack.paragraph"
         />
-        <ItConsultingContent 
-          :title="ProcessAudit.title" 
-          :subTitle="ProcessAudit.subTitle" 
+        <ItConsultingContent
+          :title="ProcessAudit.title"
+          :subTitle="ProcessAudit.subTitle"
           :paragraph="ProcessAudit.paragraph"
         />
-        <ItConsultingContent 
-          :title="TeamHeadcount.title" 
-          :subTitle="TeamHeadcount.subTitle" 
+        <ItConsultingContent
+          :title="TeamHeadcount.title"
+          :subTitle="TeamHeadcount.subTitle"
           :paragraph="TeamHeadcount.paragraph"
         />
       </div>
-      <UIButtonModalTrigger 
+      <UIButtonModalTrigger
         :buttonInnerText="buttonInnerText"
         :isBlack="true"
         :modalWindowName="modalWindowName"
@@ -66,18 +66,20 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
   .it-consulting {
-    padding-top: 105px;
-    padding-bottom: 151px;
+    padding-top: get-vw(105px);
+    padding-bottom: get-vw(151px);
     background-color: $bgcolor--white;
 
     &__flex-wrapper {
-      margin-top: -40px;
+      margin-top: get-vw(-40px);
     }
 
     &__main-title {
       color: $text-color--black;
+      letter-spacing: get-vw(-8px);
     }
 
     button {
@@ -97,15 +99,15 @@ export default {
 
   @media only screen and (max-width: 768px) {
     .it-consulting {
-      padding-top: 92px;
-      padding-bottom: 117px;
+      padding-top: get-vw(92px, 768);
+      padding-bottom: get-vw(117px, 768);
     }
   }
 
   @media only screen and (max-width: 520px) {
     .it-consulting {
-      padding-top: 60px;
-      padding-bottom: 75px;
+      padding-top: get-vw(60px, 520);
+      padding-bottom: get-vw(75px, 520);
     }
   }
 </style>

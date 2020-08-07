@@ -1,7 +1,7 @@
 <template>
   <div class="it-consulting__content-item">
     <div class="it-consulting__content-item_wrapper">
-      <h3 class="it-consulting__title title">{{ title }}</h3>
+      <h3 class="it-consulting__title block-paragraph">{{ title }}</h3>
       <h4 class="it-consulting__sub-title sub-title">{{ subTitle }}</h4>
       <p class="it-consulting__paragraph paragraph">{{ paragraph }}</p>
     </div>
@@ -30,6 +30,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
   .it-consulting {
 		&__content-item_wrapper {
@@ -37,12 +38,12 @@ export default {
     }
 
     &__content-item {
-      max-width: 440px;
+      max-width: get-vw(440px);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding-top: 87px;
-      padding-right: 30px;
+      padding-top: 6.17vw;
+      padding-right: get-vw(30px);
 
       &:last-child {
         padding-right: 0;
@@ -50,12 +51,13 @@ export default {
     }
 
     &__title {
-      font-size: 70px;
+      line-height: 3.5vw;
+      letter-spacing: -0.2vw;
+      padding-bottom: 2vw;
     }
 
     &__sub-title {
       padding-bottom: 10px;
-      font-size: 32px;
       line-height: 110%;
       letter-spacing: -1px;
     }
@@ -65,61 +67,17 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1560px) {
-    .it-consulting {
-      &__content-item {
-        max-width: 390px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1390px) {
-    .it-consulting {
-      &__content-item {
-        max-width: 355px;
-      }
-
-      &__title {
-        font-size: 67px;
-      }
-    }
-  }
-
   @media only screen and (max-width: 1280px) {
     .it-consulting {
-      padding-top: 83px;
-
-      &__content-item {
-        max-width: 310px;
-      }
-
-      &__main-title {
-        padding-bottom: 0;
-      }
 
       &__title {
-        font-size: 50px;
         line-height: 110%;
         letter-spacing: -2px;
-        padding-bottom: 25px;
       }
 
       &__sub-title {
-        font-size: 32px;
         line-height: 110%;
         letter-spacing: -1px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1180px) {
-    .it-consulting {
-      &__content-item {
-        max-width: 270px;
-      }
-
-      &__title {
-        font-size: 56px;
       }
     }
   }
