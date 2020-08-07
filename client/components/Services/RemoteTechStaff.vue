@@ -113,7 +113,7 @@ export default {
 
   @media only screen and (max-width: 520px) {
     .remote-tech-staff {
-      padding: get-vw(144px, 520) 0 0 0;
+      padding: get-vw(144px, 520) 0 23vw 0;
     }
   }
 </style>

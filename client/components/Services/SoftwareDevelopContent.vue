@@ -224,6 +224,15 @@ export default {
         }
       }
 
+      &__sub-title {
+        font-size: 7vw;
+        padding-bottom: 3vw;
+      }
+
+      &__title {
+        padding: 4vw 0;
+      }
+
       &__paragraph {
         padding-bottom: 12px;
       }
@@ -268,26 +277,6 @@ export default {
             padding-right: 70px;
           }
         }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .software-development_content {
-      padding-top: 70px;
-
-      &__title {
-        line-height: 99%;
-        letter-spacing: -1px;
-      }
-
-      &__sub-title {
-        line-height: 124%;
-        letter-spacing: -1px;
-      }
-
-      /deep/.icons-list {
-        padding-bottom: 30px;
       }
     }
   }
