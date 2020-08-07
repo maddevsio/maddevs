@@ -88,13 +88,13 @@ export default {
    @import '../../assets/styles/get-vw';
 
    .software-development_content {
-    max-width: 440px;
+    max-width: get-vw(440px);
     min-width: calc(1em + 4vw);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 91px;
-    padding-right: 87px;
+    padding-top: get-vw(143px);
+    padding-right: get-vw(87px);
 
     &:last-child {
       padding-right: 0;
@@ -105,35 +105,34 @@ export default {
     }
 
     &__sub-title {
-      padding-bottom: 10px;
-      font-size: 32px;
+      padding-bottom: get-vw(12px);
       line-height: 110%;
-      letter-spacing: -1px;
+      letter-spacing: get-vw(-1px);
     }
 
     &__paragraph {
-      max-width: 360px;
+      max-width: get-vw(360px);
       line-height: 139%;
     }
 
     &__mobile-title-icon {
-      margin-left: -24px;
-      margin-bottom: -10px;
+      margin-left: get-vw(-24px);
+      margin-bottom: get-vw(-10px);
     }
 
     /deep/.icon-item {
-      padding-bottom: 15px;
-      padding-right: 40px;
+      padding-bottom: get-vw(15px);
+      padding-right: get-vw(40px);
     }
 
     /deep/.icons-list {
-      padding-top: 18px;
-      padding-bottom: 46px;
+      padding-top: get-vw(18px);
+      padding-bottom: get-vw(46px);
     }
 
     &__title {
-      font-size: 70px;
       line-height: 110%;
+      letter-spacing: get-vw(-3px);
     }
 
     &__icon-flex-group {
@@ -168,14 +167,12 @@ export default {
       }
 
       &__title {
-        font-size: 50px;
         line-height: 110%;
         letter-spacing: -2px;
         padding-bottom: 25px;
       }
 
       &__sub-title {
-        font-size: 32px;
         line-height: 110%;
         letter-spacing: -1px;
       }
@@ -340,13 +337,11 @@ export default {
       padding-top: 70px;
 
       &__title {
-        font-size: 41px;
         line-height: 99%;
         letter-spacing: -1px;
       }
 
       &__sub-title {
-        font-size: 27px;
         line-height: 124%;
         letter-spacing: -1px;
       }

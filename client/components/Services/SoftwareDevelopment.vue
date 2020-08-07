@@ -143,13 +143,15 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
   .software-development {
-    padding: 106px 0 204px;
+    padding: get-vw(106px) 0 get-vw(204px);
     background-color: $bgcolor--black;
 
     &__flex-wrapper {
-      margin-top: -40px;
+      margin-top: get-vw(-40px);
+      margin-bottom: get-vw(30px);
     }
 
     &__main-title {
