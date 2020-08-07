@@ -5,28 +5,31 @@
             <span>Software</span><br>Development
         </h2>
         <div class="software-development__flex-wrapper flex-wrapper">
-         <SoftwareDevelopContent 
-            :title="backend.title" 
-            :subTitle="backend.subTitle" 
+         <SoftwareDevelopContent
+            :title="backend.title"
+            :subTitle="backend.subTitle"
             :firstParagraph="backend.firstParagraph"
             :secondParagraph="backend.secondParagraph"
             :thirdParagraph="backend.thirdParagraph"
+            :icons="backend.icons"
           />
-          <SoftwareDevelopContent 
-            :title="frontend.title" 
-            :subTitle="frontend.subTitle" 
+          <SoftwareDevelopContent
+            :title="frontend.title"
+            :subTitle="frontend.subTitle"
             :firstParagraph="frontend.firstParagraph"
             :secondParagraph="frontend.secondParagraph"
             class="frontend-item"
+            :icons="frontend.icons"
           />
-          <SoftwareDevelopContent 
-            :title="mobile.title" 
-            :subTitle="mobile.subTitle" 
+          <SoftwareDevelopContent
+            :title="mobile.title"
+            :subTitle="mobile.subTitle"
             :firstParagraph="mobile.firstParagraph"
             :secondParagraph="mobile.secondParagraph"
+            :icons="mobile.icons"
           />
         </div>
-        <UIButtonModalTrigger 
+        <UIButtonModalTrigger
           :buttonInnerText="buttonInnerText"
           :modalWindowName="modalWindowName"
           :isGrey="true"
@@ -53,21 +56,83 @@ export default {
         firstParagraph: 'Let our positively mad team rescue you and create sensible server logic for your project.',
         secondParagraph: 'We\'ll cure your growth pains like good doctors – just tell us about them and focus on your business.',
         thirdParagraph: 'At Mad Devs we know everything about:',
-        buttonInnerText: 'Get server help'
+        buttonInnerText: 'Get server help',
+        icons: [
+          {
+            title: 'Python',
+            prefix: 'python'
+          },
+          {
+            title: 'Golang',
+            prefix: 'golang'
+          },
+          {
+            title: 'JavaScript',
+            prefix: 'javascript'
+          },
+          {
+            title: 'PHP',
+            prefix: 'php'
+          },
+          {
+            title: 'Node.js',
+            prefix: 'node-js'
+          },
+          {
+            title: 'Ruby',
+            prefix: 'ruby'
+          }
+        ]
       },
       frontend: {
         title: 'Frontend',
         subTitle: 'Your users get lost in lousy interfaces?',
         firstParagraph: 'Our wizards will take your UX magic to the next level where everything is intuitive and user-friendly. Mad Devs strive to get involved with well-polished projects that will live a long life.',
         secondParagraph: 'We work with the best present-day frontend stack:',
-        buttonInnerText: 'Get UX help'
+        buttonInnerText: 'Get UX help',
+        icons: [
+          {
+            title: 'React',
+            prefix: 'react'
+          },
+          {
+            title: 'Vue.js',
+            prefix: 'vue'
+          },
+          {
+            title: 'Babel',
+            prefix: 'babel'
+          },
+          {
+            title: 'Webpack',
+            prefix: 'webpack'
+          }
+        ]
       },
       mobile: {
         title: 'Mobile',
         subTitle: 'Your app is slow and unable to survive a demo?',
         firstParagraph: 'We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you\'ll be ecstatic to use yourself.',
         secondParagraph: 'We do both iOS and Android development using the following languages and frameworks:',
-        buttonInnerText: 'Get mobile help'
+        buttonInnerText: 'Get mobile help',
+        icons: [
+          {
+            title: 'Kotlin',
+            prefix: 'kotlin'
+          },
+          {
+            title: 'Java',
+            prefix: 'java'
+          },
+          {
+            title: 'Objective-C',
+            prefix: 'objective'
+          },
+          {
+            title: 'Swift',
+            prefix: 'swift'
+          }
+        ]
       },
       modalWindowName: 'get-your-trusted-it-partner',
       buttonInnerText: 'Get your trusted IT partner'
@@ -78,13 +143,15 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
   .software-development {
-    padding: 106px 0 204px;
+    padding: get-vw(106px) 0 get-vw(204px);
     background-color: $bgcolor--black;
 
     &__flex-wrapper {
-      margin-top: -40px;
+      margin-top: get-vw(-40px);
+      margin-bottom: get-vw(30px);
     }
 
     &__main-title {
@@ -111,21 +178,9 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    .software-development {
-      padding-bottom: 80px;
-    }
-  }
-
   @media only screen and (max-width: 520px) {
     .software-development {
-      padding-bottom: 143px;
-    }
-  }
-
-  @media only screen and (max-width: 376px) {
-    .software-development {
-      padding-bottom: 80px;
+      padding-bottom: get-vw(143px, 520);
     }
   }
 </style>
