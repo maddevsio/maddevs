@@ -3,12 +3,12 @@
 		<div class="footer-contacts__call-us">
 			<h4 class="footer-contacts__title">Call us:</h4>
 			<ul class="footer-contacts__phones-list">
-				<li>
-					<a href="tel:+1 833-MADDEVS" class="footer-contacts__phone-item footer-contacts__phone-item--flag">
-						<span class="footer-contacts__icon footer-contacts__icon--usa"/>
+				<!-- <li>
+					<a href="tel:+1 833-MADDEVS" class="footer-contacts__phone-item">
+						<img src="@/assets/img/Flags/united-states.svg" alt="United States">
 						+1 833-MADDEVS
 					</a>
-				</li>
+				</li> -->
 				<li>
 					<a href="tel:+44 20 3984 8555" class="footer-contacts__phone-item footer-contacts__phone-item--flag">
 						<span class="footer-contacts__icon footer-contacts__icon--uk"/>

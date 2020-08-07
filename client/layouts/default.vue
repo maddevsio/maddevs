@@ -42,8 +42,15 @@ export default {
     GetCaseStudiesModal,
     OrderProjectFromUsModal,
     GetYourTrustedItPartnerModal,
-    GetExpertAdvice,
-    Cookie
+    GetExpertAdvice
+  },
+  mounted() {
+    this.$nextTick(() => {
+      const section = document.querySelector(window.location.hash);
+      if (section) {
+        section.scrollIntoView({ block: 'start' });
+      }
+    });
   }
 };
 </script>
