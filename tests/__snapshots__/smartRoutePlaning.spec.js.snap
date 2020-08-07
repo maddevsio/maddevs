@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Smart Route Planing renders correctly 1`] = `
+<section
+  class="smart-route-planing"
+  id="smart-route-planing"
+>
+  <div
+    class="container-godee"
+  >
+    <div
+      class="smart-route-planing__head-text-content"
+    >
+      <h3
+        class="smart-route-planing__main-title"
+      >
+        Smart route planning
+      </h3>
+       
+      <p
+        class="smart-route-planing__description-bold"
+      >
+        How to create profitable yet convenient to users routes?
+      </p>
+       
+      <p
+        class="smart-route-planing__description"
+      >
+        Let users send 
+        <span>
+          trip requests
+        </span>
+         and tell you what works for them. The feature was 
+        <br />
+         available initially from the MVP phase, and it enables GoDee route manager to build 
+        <br />
+         routes effectively by understanding the real demand.
+      </p>
+       
+      <p
+        class="smart-route-planing__description"
+      >
+        Inside the application, users can submit a trip request with pick up and drop off locations 
+        <br />
+         at the desired time. The request is added to the list on managers' dashboard.
+      </p>
+       
+      <img
+        alt="Number"
+        class="smart-route-planing__number-icon smart-route-planing__number-icon-one"
+        src="@/assets/img/GoDee/svg/number-one.svg"
+      />
+    </div>
+     
+    <div
+      class="smart-route-planing__container"
+    >
+      <img
+        alt="Trip requests list"
+        class="smart-route-planing__image smart-route-planing__image-trip-requests-list"
+        src="@/assets/img/GoDee/png/trip-request-list.png"
+      />
+       
+      <div
+        class="smart-route-planing__prime-algorithm"
+      >
+        <div
+          class="smart-route-planing__prime-text-content"
+        >
+          <h4
+            class="smart-route-planing__sub-title"
+          >
+            Prim's algorithm
+          </h4>
+           
+          <p
+            class="smart-route-planing__description"
+          >
+            Prim's algorithm is used to connect dots on a map effectively. 
+            <br />
+             So, a trip request list is transformed into a map, where new 
+            <br />
+             potential routes are displayed for easier overview. The 
+            <br />
+             algorithm connects dots and maps possible routes. 
+            <br />
+             The aim is to connect as many dots as possible while keeping 
+            <br />
+             the longevity under 20 km.
+          </p>
+           
+          <img
+            alt="Number"
+            class="smart-route-planing__number-icon smart-route-planing__number-icon-two"
+            src="@/assets/img/GoDee/svg/number-two.svg"
+          />
+        </div>
+         
+        <img
+          alt="Prim algorithm"
+          class="smart-route-planing__prim-algorithm-gif"
+          src="@/assets/img/GoDee/gif/prim-algorithm.gif"
+        />
+      </div>
+       
+      <img
+        alt="Trip request map"
+        class="smart-route-planing__image smart-route-planing__image-trip-request-map"
+        src="@/assets/img/GoDee/png/trip-request-map.png"
+      />
+    </div>
+  </div>
+</section>
+`;

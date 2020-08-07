@@ -1403,6 +1403,12 @@ exports[`GoDee page renders correctly 1`] = `
           <br />
            at the desired time. The request is added to the list on managers' dashboard.
         </p>
+         
+        <img
+          alt="Number"
+          class="smart-route-planing__number-icon smart-route-planing__number-icon-one"
+          src="@/assets/img/GoDee/svg/number-one.svg"
+        />
       </div>
        
       <div
@@ -1441,11 +1447,18 @@ exports[`GoDee page renders correctly 1`] = `
               <br />
                the longevity under 20 km.
             </p>
+             
+            <img
+              alt="Number"
+              class="smart-route-planing__number-icon smart-route-planing__number-icon-two"
+              src="@/assets/img/GoDee/svg/number-two.svg"
+            />
           </div>
            
           <img
-            alt=""
-            src=""
+            alt="Prim algorithm"
+            class="smart-route-planing__prim-algorithm-gif"
+            src="@/assets/img/GoDee/gif/prim-algorithm.gif"
           />
         </div>
          
@@ -1455,6 +1468,302 @@ exports[`GoDee page renders correctly 1`] = `
           src="@/assets/img/GoDee/png/trip-request-map.png"
         />
       </div>
+    </div>
+  </section>
+   
+  <section
+    class="trips-monitor"
+    id="trips-monitor"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="trips-monitor__head-text-content"
+      >
+        <h3
+          class="trips-monitor__main-title"
+        >
+          Trips Monitor
+        </h3>
+         
+        <p
+          class="trips-monitor__description"
+        >
+          The Trips Monitor feature enables operators to track every bus in real-time and collect 
+          <br />
+           data on late or early arrival. Moreover, the operator can contact drivers or passengers 
+          <br />
+           right away if necessary.
+        </p>
+      </div>
+       
+      <div
+        class="trips-monitor__container"
+      >
+        <img
+          alt="Trips monitor"
+          class="trips-monitor__trips-monitor-image"
+          src="@/assets/img/GoDee/png/trips-monitor.png"
+        />
+         
+        <div
+          class="trips-monitor__trips-monitor-features"
+        >
+          <h4
+            class="trips-monitor__features-title"
+          >
+            The Trips Monitor dashboard displays the 
+            <br />
+             following information:
+          </h4>
+           
+          <div
+            class="trips-monitor__features-content-wrapper"
+          >
+            <ul
+              class="trips-monitor__features-list"
+            >
+              <li
+                class="trips-monitor__features-item"
+              >
+                <img
+                  alt="Map icon"
+                  src="@/assets/img/GoDee/svg/map.svg"
+                />
+                 
+                <p>
+                  
+                A mini-map that shows drivers' location in real-time.
+              
+                </p>
+              </li>
+               
+              <li
+                class="trips-monitor__features-item"
+              >
+                <img
+                  alt="Clock icon"
+                  src="@/assets/img/GoDee/svg/clock.svg"
+                />
+                 
+                <p>
+                  
+                Buses’ late and early departures.
+              
+                </p>
+              </li>
+               
+              <li
+                class="trips-monitor__features-item"
+              >
+                <img
+                  alt="Calendar icon"
+                  src="@/assets/img/GoDee/svg/calendar.svg"
+                />
+                 
+                <p>
+                  
+                The entire bus schedule for the weeks ahead.
+              
+                </p>
+              </li>
+               
+              <li
+                class="trips-monitor__features-item"
+              >
+                <img
+                  alt="Pin icon"
+                  src="@/assets/img/GoDee/svg/map-pin.svg"
+                />
+                 
+                <p>
+                  
+                A bus stop where a driver forgot to pick up a GoDee client.
+              
+                </p>
+              </li>
+               
+              <li
+                class="trips-monitor__features-item"
+              >
+                <img
+                  alt="Humans icon"
+                  src="@/assets/img/GoDee/svg/humans.svg"
+                />
+                 
+                <p>
+                  
+                The number of passengers assigned to each stop and driver.
+              
+                </p>
+              </li>
+               
+              <li
+                class="trips-monitor__features-item"
+              >
+                <img
+                  alt="Revert icon"
+                  src="@/assets/img/GoDee/svg/revert.svg"
+                />
+                 
+                <p>
+                  
+                Access to historical information through filters.
+              
+                </p>
+              </li>
+            </ul>
+             
+            <img
+              alt=""
+              class="trips-monitor__trips-monitor-mini-map"
+              src="@/assets/img/GoDee/svg/trips-monitor-mini-map.svg"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <img
+        alt="Bus icon"
+        class="trips-monitor__bus-icon"
+        src="@/assets/img/GoDee/svg/godee-bus.svg"
+      />
+    </div>
+  </section>
+   
+  <section
+    class="route-optimization"
+    id="route-optimization"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="route-optimization__container"
+      >
+        <div
+          class="route-optimization__head-text-content"
+        >
+          <h3
+            class="route-optimization__main-title"
+          >
+            Route optimization
+          </h3>
+           
+          <p
+            class="route-optimization__description"
+          >
+            With the help of detailed drivers' performance data, Mad Devs’ Pifia microservice 
+            <br />
+             enables route managers to optimize ETA (estimated time of arrival). Pifia shows a more 
+            <br />
+             accurate arrival and departure time in just one click.
+          </p>
+           
+          <img
+            alt="Trips monitor"
+            class="route-optimization__trips-monitor-route-optimization-section"
+            src="@/assets/img/GoDee/png/trips-monitor-route-optimization-section.png"
+          />
+           
+          <img
+            alt="Bus icon"
+            class="route-optimization__bus-icon"
+            src="@/assets/img/GoDee/svg/godee-bus.svg"
+          />
+        </div>
+         
+        <div
+          class="route-optimization__text-content-wrapper"
+        >
+          <div
+            class="route-optimization__text-content-item"
+          >
+            <div
+              class="route-optimization__left-text-block"
+            >
+              <h4
+                class="route-optimization__title"
+              >
+                Let’s imagine two examples of early and 
+                <br />
+                 late departure time:
+              </h4>
+               
+              <p
+                class="route-optimization__description"
+              >
+                If Pifia understands that a minibus usually comes late due to 
+                <br />
+                 increased traffic at 5:35 PM and not 5:30 PM, it tells the route 
+                <br />
+                 manager to shift the arrival time to 5:35 PM. It might sound like 
+                <br />
+                 only 5 minutes change, but such small optimizations add up.
+              </p>
+            </div>
+             
+            <div
+              class="route-optimization__right-text-block"
+            >
+              <p
+                class="route-optimization__description-bold"
+              >
+                By shifting a bus arrival 
+                <br />
+                 time to 5:35 PM, the 
+                <br />
+                 passengers waiting for the 
+                <br />
+                 ride won’t need to stand in 
+                <br />
+                 the hot, humid weather.
+              </p>
+            </div>
+          </div>
+           
+          <div
+            class="route-optimization__text-content-item"
+          >
+            <div
+              class="route-optimization__left-text-block"
+            >
+              <h4
+                class="route-optimization__title"
+              >
+                Real-time ETA
+              </h4>
+               
+              <p
+                class="route-optimization__description"
+              >
+                On top of that, Pifia shows in real-time the approximate 
+                <br />
+                 late/early departure. Thus, passengers waiting for the ride 
+                <br />
+                 always know whether the bus is coming late and how long it 
+                <br />
+                 would take. The information is displayed on their mobile 
+                <br />
+                 application.
+              </p>
+            </div>
+             
+            <img
+              alt="ETA preview on phone"
+              class="route-optimization__eta-preview-phone"
+              src="@/assets/img/GoDee/svg/eta-preview-phone.svg"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <img
+        alt="Route line"
+        class="route-optimization__route-line"
+        src="@/assets/img/GoDee/svg/route-optimization-route-line.svg"
+      />
     </div>
   </section>
 </main>
