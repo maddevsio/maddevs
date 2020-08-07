@@ -121,17 +121,17 @@ exports[`Header renders correctly 1`] = `
                  
                 <div
                   class="header__phones-dropdown_wrap"
-                  id="united-states"
+                  id="united-kingdom"
                 >
                   <a
                     class="header__selected-phone"
-                    href="tel:+1 833-MADDEVS"
+                    href="tel:+44 20 3984 8555"
                   >
                     <span
-                      class="header__flag header__flag--united-states"
+                      class="header__flag header__flag--united-kingdom"
                     />
                     
-                +1 833-MADDEVS
+                +44 20 3984 8555
                 
                     <i
                       class="header__phones-dropdown_arrow"
@@ -144,24 +144,13 @@ exports[`Header renders correctly 1`] = `
                     <a
                       class="header__phone-item"
                       href="tel:+44 20 3984 8555"
+                      style="display: none;"
                     >
                       <span
                         class="header__flag header__flag--united-kingdom"
                       />
                       
                   +44 20 3984 8555
-                
-                    </a>
-                    <a
-                      class="header__phone-item"
-                      href="tel:+1 833-MADDEVS"
-                      style="display: none;"
-                    >
-                      <span
-                        class="header__flag header__flag--united-states"
-                      />
-                      
-                  +1 833-MADDEVS
                 
                     </a>
                   </div>
@@ -290,20 +279,6 @@ exports[`Header renders correctly 1`] = `
               <ul
                 class="footer-contacts__phones-list"
               >
-                <li>
-                  <a
-                    class="footer-contacts__phone-item footer-contacts__phone-item--flag"
-                    href="tel:+1 833-MADDEVS"
-                  >
-                    <span
-                      class="footer-contacts__icon footer-contacts__icon--usa"
-                    />
-                    
-					+1 833-MADDEVS
-				
-                  </a>
-                </li>
-                 
                 <li>
                   <a
                     class="footer-contacts__phone-item footer-contacts__phone-item--flag"
