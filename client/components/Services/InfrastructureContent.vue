@@ -29,91 +29,35 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
 
   .infrastructure-optimisation {
     &__content-item {
-      max-width: 640px;
+      max-width: get-vw(640px);
 
       &:first-child {
-        padding-right: 25px;
+        padding-right: get-vw(25px);
       }
     }
 
     &__sub-title,
     &__title {
-      padding-bottom: 5px;
+      padding-bottom: get-vw(5px);
     }
 
     &__title {
-      font-size: 70px;
       line-height: 110%;
-      letter-spacing: -2px;
-      padding-bottom: 16px;
+      letter-spacing: get-vw(-2px);
+      padding-bottom: get-vw(16px);
     }
 
     &__sub-title {
-      font-size: 32px;
       line-height: 110%;
       letter-spacing: -1px;
     }
 
     &__paragraph {
-      padding-bottom: 46px;
-    }
-  }
-
-  @media only screen and (max-width: 1560px) {
-    .infrastructure-optimisation {
-      &__content-item {
-        max-width: 575px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1390px) {
-    .infrastructure-optimisation {
-      &__content-item {
-        max-width: 535px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .infrastructure-optimisation {
-      padding-top: 83px;
-
-      &__main-title {
-        padding-bottom: 0;
-      }
-
-      &__title {
-        font-size: 50px;
-        line-height: 110%;
-        letter-spacing: -2px;
-        padding-bottom: 25px;
-      }
-
-      &__sub-title {
-        font-size: 32px;
-        line-height: 110%;
-        letter-spacing: -1px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1270px) {
-    .infrastructure-optimisation {
-      &__content-item {
-        max-width: 500px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1180px) {
-    .infrastructure-optimisation {
-      &__content-item {
-        max-width: 460px;
-      }
+      padding-bottom: get-vw(46px);
     }
   }
 
@@ -121,10 +65,6 @@ export default {
     .infrastructure-optimisation {
       &__content-item  {
         max-width: initial;
-      }
-
-      &__title {
-        font-size: 47px;
       }
     }
   }
@@ -140,15 +80,13 @@ export default {
   @media only screen and (max-width: 768px) {
     .infrastructure-optimisation {
       &__title {
-        font-size: 42px;
-        line-height: 110%;
-        letter-spacing: -2px;
-        padding-bottom: 20px;
-        max-width: 460px;
+        font-size: 7vw;
+        line-height: 124%;
+        letter-spacing: -0.4px;
       }
 
       &__sub-title {
-        padding-bottom: 16px;
+        padding-bottom: get-vw(16px, 768);
       }
 
       &__paragraph {
@@ -170,41 +108,19 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 640px) {
-    .infrastructure-optimisation {
-      &__title {
-        max-width: 420px;
-      }
-
-      &__content-item {
-        &:first-child {
-          padding-right: 0;
-        }
-      }
-    }
-  }
-
   @media only screen and (max-width: 520px) {
     .infrastructure-optimisation {
       &__title {
-        max-width: 290px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .infrastructure-optimisation {
-      &__title {
-        font-size: 41px;
+        font-size: 11vw;
         line-height: 99%;
         letter-spacing: -1px;
         padding-bottom: 13px;
       }
 
       &__sub-title {
-        font-size: 27px;
+        font-size: 7vw;
         line-height: 124%;
-        letter-spacing: -1px;
+        letter-spacing: -0.4px;
       }
 
       &__paragraph {
