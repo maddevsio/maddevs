@@ -6,6 +6,7 @@
           <h3 class="route-optimization__main-title">Route optimization</h3>
           <p class="route-optimization__description">With the help of detailed drivers' performance data, Mad Devs’ Pifia microservice <br> enables route managers to optimize ETA (estimated time of arrival). Pifia shows a more <br> accurate arrival and departure time in just one click.</p>
           <img src="@/assets/img/GoDee/png/trips-monitor-route-optimization-section.png" alt="Trips monitor" class="route-optimization__trips-monitor-route-optimization-section">
+          <img src="@/assets/img/GoDee/svg/godee-bus.svg" alt="Bus icon" class="route-optimization__bus-icon">
         </div>
         <div class="route-optimization__text-content-wrapper">
           <div class="route-optimization__text-content-item">
@@ -46,6 +47,7 @@ export default {
     margin-top: get-vw(-79px);
 
     &__head-text-content {
+      position: relative;
       text-align: center;
     }
 
@@ -139,6 +141,15 @@ export default {
       top: get-vw(24px);
       right: get-vw(185px);
       z-index: -1;
+    }
+
+    &__bus-icon {
+      width: get-vw(130px);
+      height: get-vw(130px);
+      position: absolute;
+      top: get-vw(-33px);
+      right: get-vw(80px);
+      transform: rotate(-90deg);
     }
   }
 </style>

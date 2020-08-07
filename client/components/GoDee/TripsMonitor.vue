@@ -52,6 +52,7 @@
           </div>
         </div>
       </div>
+      <img src="@/assets/img/GoDee/svg/godee-bus.svg" alt="Bus icon" class="trips-monitor__bus-icon">
     </div>
   </section>
 </template>
@@ -180,6 +181,14 @@ export default {
     &__features-content-wrapper {
       display: flex;
       justify-content: space-between;
+    }
+
+    &__bus-icon {
+      width: get-vw(130px);
+      height: get-vw(130px);
+      position: absolute;
+      top: get-vw(-45px);
+      left: get-vw(122px);
     }
   }
 </style>
