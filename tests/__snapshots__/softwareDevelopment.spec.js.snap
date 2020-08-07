@@ -57,6 +57,89 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
           >
             At Mad Devs we know everything about:
           </p>
+           
+          <div
+            class="software-development_content__icon-flex-group"
+          >
+            <div
+              class="tech-icon"
+            >
+              <span
+                class="tech-icon__logo tech-icon__logo--python"
+              />
+               
+              <p
+                class="tech-icon__name paragraph"
+              >
+                Python
+              </p>
+            </div>
+            <div
+              class="tech-icon"
+            >
+              <span
+                class="tech-icon__logo tech-icon__logo--golang"
+              />
+               
+              <p
+                class="tech-icon__name paragraph"
+              >
+                Golang
+              </p>
+            </div>
+            <div
+              class="tech-icon"
+            >
+              <span
+                class="tech-icon__logo tech-icon__logo--javascript"
+              />
+               
+              <p
+                class="tech-icon__name paragraph"
+              >
+                JavaScript
+              </p>
+            </div>
+            <div
+              class="tech-icon"
+            >
+              <span
+                class="tech-icon__logo tech-icon__logo--php"
+              />
+               
+              <p
+                class="tech-icon__name paragraph"
+              >
+                PHP
+              </p>
+            </div>
+            <div
+              class="tech-icon"
+            >
+              <span
+                class="tech-icon__logo tech-icon__logo--node-js"
+              />
+               
+              <p
+                class="tech-icon__name paragraph"
+              >
+                Node.js
+              </p>
+            </div>
+            <div
+              class="tech-icon"
+            >
+              <span
+                class="tech-icon__logo tech-icon__logo--ruby"
+              />
+               
+              <p
+                class="tech-icon__name paragraph"
+              >
+                Ruby
+              </p>
+            </div>
+          </div>
         </div>
       </div>
        
@@ -91,6 +174,63 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
           </p>
            
           <!---->
+           
+          <div
+            class="software-development_content__icon-flex-group"
+          >
+            <div
+              class="tech-icon"
+            >
+              <span
+                class="tech-icon__logo tech-icon__logo--react"
+              />
+               
+              <p
+                class="tech-icon__name paragraph"
+              >
+                React
+              </p>
+            </div>
+            <div
+              class="tech-icon"
+            >
+              <span
+                class="tech-icon__logo tech-icon__logo--vue"
+              />
+               
+              <p
+                class="tech-icon__name paragraph"
+              >
+                Vue.js
+              </p>
+            </div>
+            <div
+              class="tech-icon"
+            >
+              <span
+                class="tech-icon__logo tech-icon__logo--babel"
+              />
+               
+              <p
+                class="tech-icon__name paragraph"
+              >
+                Babel
+              </p>
+            </div>
+            <div
+              class="tech-icon"
+            >
+              <span
+                class="tech-icon__logo tech-icon__logo--webpack"
+              />
+               
+              <p
+                class="tech-icon__name paragraph"
+              >
+                Webpack
+              </p>
+            </div>
+          </div>
         </div>
       </div>
        
@@ -139,6 +279,63 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
           </p>
            
           <!---->
+           
+          <div
+            class="software-development_content__icon-flex-group"
+          >
+            <div
+              class="tech-icon"
+            >
+              <span
+                class="tech-icon__logo tech-icon__logo--kotlin"
+              />
+               
+              <p
+                class="tech-icon__name paragraph"
+              >
+                Kotlin
+              </p>
+            </div>
+            <div
+              class="tech-icon"
+            >
+              <span
+                class="tech-icon__logo tech-icon__logo--java"
+              />
+               
+              <p
+                class="tech-icon__name paragraph"
+              >
+                Java
+              </p>
+            </div>
+            <div
+              class="tech-icon"
+            >
+              <span
+                class="tech-icon__logo tech-icon__logo--objective"
+              />
+               
+              <p
+                class="tech-icon__name paragraph"
+              >
+                Objective-C
+              </p>
+            </div>
+            <div
+              class="tech-icon"
+            >
+              <span
+                class="tech-icon__logo tech-icon__logo--swift"
+              />
+               
+              <p
+                class="tech-icon__name paragraph"
+              >
+                Swift
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
