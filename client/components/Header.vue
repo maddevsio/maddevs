@@ -8,10 +8,10 @@
               <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
             </router-link>
             <nav class="header__header-routes_links">
-              <router-link exact to="/">About</router-link>
-              <router-link to="/services">Services</router-link>
-              <router-link to="/projects">Projects</router-link>
-              <router-link to="/careers">Careers</router-link>
+              <router-link @click.native="goToTopPage" exact to="/">About</router-link>
+              <router-link @click.native="goToTopPage" to="/services">Services</router-link>
+              <router-link @click.native="goToTopPage" to="/projects">Projects</router-link>
+              <router-link @click.native="goToTopPage" to="/careers">Careers</router-link>
               <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
             </nav>
           </div>
@@ -105,6 +105,9 @@ export default {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
+    goToTopPage() {
+      window.scrollTo(0, 0);
+    },
     handleScroll() {
       if(window.pageYOffset >= 100)
         this.headerLogoTextDisplayState = true;
