@@ -209,6 +209,11 @@ export default {
 				grid-template-columns: repeat(2, 1fr);
 				grid-column-gap: get-vw(54px);
 			}
+
+      &__icon {
+        height: 1.8vw;
+        width: 2.9vw;
+      }
 		}
 	}
 

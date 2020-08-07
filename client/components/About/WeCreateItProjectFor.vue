@@ -6,12 +6,12 @@
       </h2>
       <div class="we-create-it-project__content-wrap">
         <ul class="we-create-it-project__projects-type_list">
-          <li class="we-create-it-project__project-item">E-learning</li>
-          <li class="we-create-it-project__project-item">FinTech</li>
-          <li class="we-create-it-project__project-item">HealthTech</li>
-          <li class="we-create-it-project__project-item">E-commerce</li>
-          <li class="we-create-it-project__project-item">AdTech</li>
-          <li class="we-create-it-project__project-item">Transportation</li>
+          <li class="we-create-it-project__project-item block-paragraph">E-learning</li>
+          <li class="we-create-it-project__project-item block-paragraph">FinTech</li>
+          <li class="we-create-it-project__project-item block-paragraph">HealthTech</li>
+          <li class="we-create-it-project__project-item block-paragraph">E-commerce</li>
+          <li class="we-create-it-project__project-item block-paragraph">AdTech</li>
+          <li class="we-create-it-project__project-item block-paragraph">Transportation</li>
         </ul>
         <div class="we-create-it-project__country-list_wrap">
           <div class="we-create-it-project__country-list_title sub-paragraph">We work with
@@ -218,7 +218,6 @@ export default {
 
     &__project-item {
       color: $text-color--white;
-      font-size: 4.3vw;
       letter-spacing: -1px;
       line-height: 5.35vw;
     }
@@ -317,7 +316,6 @@ export default {
 
       &__project-item {
         padding-bottom: 10vw;
-        font-size: 11vw;
       }
 
       &__country-list_title {
@@ -361,15 +359,6 @@ export default {
 
       &__country-item {
         font-size: 5vw;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 335px) {
-    .we-create-it-project {
-      &__project-item {
-        font-size: 40px;
-        letter-spacing: -2px;
       }
     }
   }

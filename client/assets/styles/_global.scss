@@ -1,3 +1,5 @@
+@import './get-vw';
+
 // Reviews dots
 .reviews .slick-dots {
   display: flex;
@@ -262,17 +264,23 @@
 
 .doc-text {
   font-family: 'Hoves-Regular';
-  font-size: 24px;
+  font-size: get-vw(24px);
   font-weight: normal;
+}
+
+.block-paragraph {
+  font-size: 4.3vw;
+  font-family: 'Hoves-Bold';
+  letter-spacing: get-vw(-1px);
+}
+
+.last-character {
+  margin-left: -33px;
 }
 
 .title {
   font-size: get-vw(90px);
   padding-bottom: get-vw(15px);
-}
-
-.last-character {
-  margin-left: -33px;
 }
 
 .sub-title {
@@ -296,7 +304,8 @@
 }
 
 .title-icon {
-  padding: 0 5px;
+  padding: 0 get-vw(5px);
+  height: 5.14vw;
 }
 
 .icons-list {
@@ -501,52 +510,56 @@
 // --------------- Global media styles ---------------- //
 @media only screen and (max-width: 1560px) {
   .title {
-    font-size: 80px;
+    font-size: get-vw(80px, 1560);
+  }
+
+  .doc-text {
+    font-size: get-vw(24px);
   }
 
   .section-title {
-    font-size: 77px;
+    font-size: get-vw(77px, 1560);
   }
 
   .title-icon {
-    height: 77px;
+    height: get-vw(77px, 1560);
   }
 
   .form-text {
-    font-size: 34px;
+    font-size: get-vw(34px, 1560);
   }
 }
 
 @media only screen and (max-width: 1390px) {
   .title {
-    font-size: 75px;
+    font-size: get-vw(75px, 1390);
   }
 
   .section-title {
-    font-size: 72px;
+    font-size: get-vw(72px, 1390);
   }
 
   .form-text {
-    font-size: 32px;
+    font-size: get-vw(32px, 1390);
   }
 }
 
 @media only screen and (max-width: 1280px) {
 
   .title {
-    font-size: 70px;
+    font-size: get-vw(70px, 1280);
   }
 
   .section-title {
-    font-size: 67px;
+    font-size: get-vw(67px, 1280);
   }
 
   .title-icon {
-    height: 67px;
+    height: get-vw(67px, 1280);
   }
 
   .form-text {
-    font-size: 30px;
+    font-size: get-vw(30px, 1280);
   }
 }
 
@@ -606,6 +619,23 @@
   }
 }
 
+@media only screen and (max-width: 755px) {
+  .banner-container {
+    .banner-content {
+      padding-top: 0;
+    }
+
+    .banner-main_title,
+    .banner-main_title--white,
+    .banner-main_title--white-first {
+      font-size: 15vw;
+      letter-spacing: -2px;
+      line-height: 17vw;
+      padding-bottom: 6vw;
+    }
+  }
+}
+
 @media only screen and (max-width: 745px) {
   .paragraph,
   .icon-item {
@@ -615,12 +645,24 @@
   .sub-paragraph {
     font-size: 7vw;
   }
+
+  .block-paragraph {
+    font-size: 11vw;
+  }
 }
 
 @media only screen and (max-width: 640px) {
   .sub-title {
     letter-spacing: -1px;
     font-size: 11vw;
+  }
+
+  .title {
+    font-size: 11vw;
+  }
+
+  .title-icon {
+    height: 14vw;
   }
 
   .section-title {
@@ -631,6 +673,14 @@
   .icon-item {
     letter-spacing: -1px;
     font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .banner-container {
+    .banner-main_title--white-first {
+      display: inline;
+    }
   }
 }
 
@@ -646,11 +696,6 @@
 
   .section-title {
     font-size: 36px;
-  }
-
-  .title-icon {
-    height: 43px;
-    padding-left: 13px;
   }
 
   .form-checkboxes {
@@ -691,6 +736,11 @@
     &::after {
       padding-left: 0;
     }
+  }
+
+  .block-paragraph {
+    font-size: get-vw(40px, 370);
+    letter-spacing: -2px;
   }
 }
 
@@ -756,30 +806,5 @@
 
   to {
     transform: scale(30);
-  }
-}
-
-@media only screen and (max-width: 610px) {
-  .banner-container {
-    .banner-main_title--white-first {
-      display: inline;
-    }
-  }
-}
-
-@media only screen and (max-width: 755px) {
-  .banner-container {
-    .banner-content {
-      padding-top: 0;
-    }
-
-    .banner-main_title,
-    .banner-main_title--white,
-    .banner-main_title--white-first {
-      font-size: 15vw;
-      letter-spacing: -2px;
-      line-height: 17vw;
-      padding-bottom: 6vw;
-    }
   }
 }

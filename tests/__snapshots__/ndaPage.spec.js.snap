@@ -11,10 +11,10 @@ exports[`Nda page renders correctly 1`] = `
       class="container"
     >
       <div
-        class="nda__header"
+        class="agreement-page__header"
       >
         <h3
-          class="nda__title title"
+          class="agreement-page__title title"
         >
           
         Non-Disclosure Agreement at Mad Devs
@@ -23,16 +23,16 @@ exports[`Nda page renders correctly 1`] = `
          
         <img
           alt="NDA image"
-          class="nda__image"
+          class="agreement-page__image"
           src="@/assets/img/common/docs.svg"
         />
       </div>
        
       <div
-        class="nda__content"
+        class="agreement-page__content"
       >
         <p
-          class="nda__text doc-text"
+          class="agreement-page__text doc-text"
         >
           
         All staff members, including contractors and consultants working for Mad Devs, are obliged
@@ -45,7 +45,7 @@ exports[`Nda page renders correctly 1`] = `
         <br />
          
         <p
-          class="nda__text doc-text"
+          class="agreement-page__text doc-text"
         >
           
         Even if our customer doesn’t have an NDA in place, we will protect their business secrets
@@ -53,7 +53,7 @@ exports[`Nda page renders correctly 1`] = `
         If you want to get familiar with this document, please send us a request via
         
           <a
-            class="nda__link"
+            class="agreement-page__link"
             href="mailto:rock@maddevs.com"
           >
             rock@maddevs.com
@@ -63,13 +63,13 @@ exports[`Nda page renders correctly 1`] = `
         </p>
          
         <h5
-          class="nda__sec-title"
+          class="agreement-page__sec-title"
         >
           Customer NDA Templates
         </h5>
          
         <p
-          class="nda__paragraph paragraph"
+          class="agreement-page__paragraph paragraph"
         >
           
         Some of our customers have standard NDA templates pre-approved by their legal
@@ -82,7 +82,7 @@ exports[`Nda page renders correctly 1`] = `
         </p>
          
         <h5
-          class="nda__sec-title"
+          class="agreement-page__sec-title"
         >
           
         Customer NDA Agreements Made Specifically for Mad Devs
@@ -90,7 +90,7 @@ exports[`Nda page renders correctly 1`] = `
         </h5>
          
         <p
-          class="nda__paragraph paragraph nda__break-paragraph"
+          class="agreement-page__paragraph paragraph agreement-page__break-paragraph"
         >
           
         Many customers prefer to create a tailored NDA for Mad Devs in collaboration with us. This
@@ -104,14 +104,14 @@ exports[`Nda page renders correctly 1`] = `
         <br />
          
         <p
-          class="nda__paragraph paragraph"
+          class="agreement-page__paragraph paragraph"
         >
           
-        Our company has experience of working with NDA agreements of any kind and complexity. 
+        Our company has experience of working with NDA agreements of any kind and complexity.
         If you have more specific questions please contact us via
         
           <a
-            class="nda__link"
+            class="agreement-page__link"
             href="mailto:rock@maddevs.io"
           >
             rock@maddevs.io
