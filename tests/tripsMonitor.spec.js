@@ -1,20 +1,13 @@
 import {
   mount
 } from '@vue/test-utils';
-import ProjectsBanner from '@/components/Banner/ProjectsBanner';
+import TripsMonitor from '@/components/GoDee/TripsMonitor';
 
-describe('Projects banner', () => {
+describe('Trips Monitor', () => {
   let wrapper;
 
   beforeEach(() => {
-    global.$nuxt = {
-      $route: {
-        name: '/'
-      }
-    };
-    wrapper = mount(ProjectsBanner, {
-      stubs: ['router-link']
-    });
+    wrapper = mount(TripsMonitor);
   });
 
   // ------ IMPORTANT ----- //

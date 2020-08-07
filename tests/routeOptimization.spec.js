@@ -1,27 +1,20 @@
 import {
   mount
 } from '@vue/test-utils';
-import ProjectsBanner from '@/components/Banner/ProjectsBanner';
+import RouteOptimization from '@/components/GoDee/RouteOptimization';
 
-describe('Projects banner', () => {
+describe('Route Optimization', () => {
   let wrapper;
 
   beforeEach(() => {
-    global.$nuxt = {
-      $route: {
-        name: '/'
-      }
-    };
-    wrapper = mount(ProjectsBanner, {
-      stubs: ['router-link']
-    });
+    wrapper = mount(RouteOptimization);
   });
 
   // ------ IMPORTANT ----- //
   test('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
+
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
