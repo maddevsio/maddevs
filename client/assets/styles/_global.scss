@@ -289,7 +289,7 @@
 }
 
 .section-title {
-  font-size: 87px;
+  font-size: get-vw(87px);
 }
 
 .paragraph {
@@ -565,7 +565,7 @@
 
 @media only screen and (max-width: 1180px) {
   .section-title {
-    font-size: 62px;
+    font-size: get-vw(62px, 1180);
   }
 }
 
@@ -575,7 +575,7 @@
   }
 
   .section-title {
-    font-size: 77px;
+    font-size: get-vw(77px, 1024);
   }
 
   .button-default {
@@ -605,7 +605,7 @@
 @media only screen and (max-width: 768px) {
 
   .section-title {
-    font-size: 62px;
+    font-size: get-vw(62px, 768);
   }
 
   .textarea {
@@ -666,7 +666,7 @@
   }
 
   .section-title {
-    font-size: 57px;
+    font-size: get-vw(57px, 640);
   }
 
   .paragraph,
@@ -695,7 +695,7 @@
   }
 
   .section-title {
-    font-size: 36px;
+    font-size: get-vw(36px, 520);
   }
 
   .form-checkboxes {
@@ -724,6 +724,14 @@
   .icon-item {
     letter-spacing: -1px;
     font-size: 4.5vw;
+  }
+
+  .section-title {
+    font-size: 10vw;
+  }
+
+  .sub-title {
+    font-size: 7vw;
   }
 }
 

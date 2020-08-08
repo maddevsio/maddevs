@@ -135,7 +135,7 @@ export default {
   background: $bgcolor--grey-light;
 
   &__section-title {
-    margin-bottom: 31px;
+    margin-bottom: get-vw(31px);
     position: relative;
   }
 
@@ -155,10 +155,10 @@ export default {
     &::after {
       content: url('../../assets/img/Projects/svg/github.svg');
       position: absolute;
-      width: 128px;
-      height: 121px;
+      width: get-vw(128px);
+      height: get-vw(121px);
       left: 0;
-      bottom: -73px;
+      bottom: get-vw(-73px);
     }
   }
 
@@ -166,14 +166,14 @@ export default {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-top: 76px;
+    margin-top: get-vw(76px);
   }
 
   &__content-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 36px;
+    margin-bottom: get-vw(36px);
   }
 
   &__industry {
@@ -189,16 +189,12 @@ export default {
     letter-spacing: -0.02em;
   }
 
-  &__paragraph {
-    padding-right: 31px;
-  }
-
   &__project-link {
     display: block;
     text-decoration: none;
     color: inherit;
     height: 100%;
-    padding: 52px 30px 100px 43px;
+    padding: get-vw(52px) get-vw(30px) get-vw(100px) get-vw(43px);
   }
 
   &__project {
@@ -274,41 +270,40 @@ export default {
     text-align: center;
     letter-spacing: -0.02em;
     font-style: normal;
-    font-size: 36px;
+    font-size: get-vw(36px);
     line-height: 99%;
     margin: 0 auto;
     font-family: 'Hoves-Bold';
     color: $text-color--red;
-    margin-top: 32px;
+    margin-top: get-vw(32px);
     border-bottom: 1px solid $border-color--red;
     cursor: pointer;
     text-decoration: none;
+  }
+
+  svg {
+    height: get-vw(50px);
+    width: get-vw(220px);
   }
 }
 
 @media only screen and (max-width: 1180px) {
   .open-source {
-    &__github-icon {
-      &::after {
-        width: 80px;
-        height: 74px;
-        bottom: -39px;
-        left: 0;
-      }
-    }
-
-    &__github-link {
-      font-size: 33px;
+    svg {
+      height: inherit;
+      width: inherit;
     }
   }
 }
 
+
+
 @media only screen and (max-width: 1024px) {
   .open-source {
-    padding-bottom: 150px;
+    padding-bottom: get-vw(150px, 1024);
 
     &__paragraph {
-      padding-right: 21px;
+      padding-right: get-vw(21px, 1024);
     }
 
     &__industry {
@@ -323,11 +318,6 @@ export default {
 
 @media only screen and (max-width: 920px) {
   .open-source {
-    padding-bottom: 100px;
-
-    &__paragraph {
-      padding-right: 11px;
-    }
 
     &__industry {
       font-size: 16px;
@@ -353,27 +343,18 @@ export default {
 
 @media only screen and (max-width: 624px) {
   .open-source {
-    padding-bottom: 50px;
 
     &__paragraph {
-      padding-right: 31px;
+      padding-right: get-vw(31px, 624);
     }
 
     &__projects {
-      margin-bottom: 31px;
+      margin-bottom: get-vw(31px);
     }
 
     &__project {
       width: 100%;
       border-right: 0;
-    }
-
-    &__github-icon {
-      &::after {
-        width: 63px;
-        height: 59px;
-        bottom: -29px;
-      }
     }
 
     &__industry {
@@ -393,6 +374,11 @@ export default {
     padding-top: 35px;
     margin-top: 35px;
 
+    &__projects {
+      margin-top: 17.5vw;
+      margin-bottom: 0;
+    }
+
     &__paragraph {
       padding-right: 0;
     }
@@ -403,15 +389,26 @@ export default {
 
     &__github-link {
       font-size: 17px;
+      margin-top: 14vw;
+    }
+
+    &__content-wrap {
+      margin-bottom: 4vw;
     }
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 420px) {
   .open-source {
-    &__industry {
-      font-size: 13px;
+    &__github-icon {
+      &::after {
+        width: 18.61905vw;
+        height: 8.20238vw;
+        left: 0;
+        bottom: 0.65476vw;
+      }
     }
   }
+
 }
 </style>
