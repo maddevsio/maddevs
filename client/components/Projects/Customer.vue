@@ -29,14 +29,15 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
+@import '../../assets/styles/get-vw';
 
 .valued-customers {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(get-vw(166px), 1fr));
   align-items: center;
-  margin: 80px 0 40px;
-  grid-row-gap: 100px;
-  grid-column-gap: 80px;
+  margin: get-vw(80px) 0 get-vw(40px);
+  grid-row-gap: get-vw(100px);
+  grid-column-gap: get-vw(80px);
 
   &__wrapper {
     justify-self: center;
@@ -63,13 +64,9 @@ export default {
     height: 0;
     overflow: hidden;
   }
-}
 
-@media only screen and (max-width: 1240px) {
-  .valued-customers {
-    &__logo {
-      height: 70px;
-    }
+  &__logo {
+    height: get-vw(60px);
   }
 }
 
@@ -79,10 +76,6 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    &__logo {
-      height: 60px;
     }
   }
 }
@@ -96,19 +89,15 @@ export default {
     }
 
     &__logo {
-      width: 90%;
+      height: get-vw(40px, 1024);
     }
   }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 745px) {
   .valued-customers {
-    grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
-    grid-column-gap: 55px;
-
-    &__industry {
-      font-size: 10px;
-      top: 56px;
+    &__logo {
+      height: get-vw(40px, 745);
     }
   }
 }
