@@ -57,7 +57,7 @@ export default {
     align-items: center;
     justify-self: center;
     position: absolute;
-    top: 62px;
+    top: get-vw(62px);
     text-align: center;
     transition: opacity 0.3s linear;
     opacity: 0;
@@ -104,32 +104,22 @@ export default {
 
 @media only screen and (max-width: 680px) {
   .valued-customers {
-    grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
-    grid-row-gap: 50px;
-    grid-column-gap: 35px;
-    margin-top: 47px;
+    grid-template-columns: repeat(auto-fit, minmax(get-vw(105px, 680), 1fr));
+    grid-row-gap: get-vw(50px, 680);
+    grid-column-gap: get-vw(35px, 680);
+    margin-top: get-vw(47px, 680);
+
+    &__industry {
+      top: get-vw(82px, 680);
+    }
 
     &__logo {
       width: 80%;
+      height: 17vw;
     }
 
     &__industry {
       font-size: 8px;
-    }
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .valued-customers {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-
-    &__logo {
-      width: 75%;
-    }
-
-    &__industry {
-      font-size: 8px;
-      top: 53px;
     }
   }
 }

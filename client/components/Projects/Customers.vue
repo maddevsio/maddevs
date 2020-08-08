@@ -190,7 +190,15 @@ export default {
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       grid-row-gap: 25px;
       grid-column-gap: 15px;
-      margin-top: 47px;
+      margin-top: get-vw(47px, 680);
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .customers {
+    &__main-description {
+      line-height: 110%;
     }
   }
 }
@@ -200,6 +208,15 @@ export default {
     .valued-customers {
       grid-row-gap: 0;
       grid-column-gap: 0;
+    }
+
+    &__main-title {
+      letter-spacing: 1px;
+      margin-bottom: 5vw;
+    }
+
+    &__main-description {
+      line-height: 135%;
     }
   }
 }

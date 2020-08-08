@@ -127,10 +127,11 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
+@import '../../assets/styles/get-vw';
 
 .open-source {
-  padding: 99px 0 205px;
-  margin-top: 120px;
+  padding: get-vw(99px) 0 get-vw(205px);
+  margin-top: get-vw(120px);
   background: $bgcolor--grey-light;
 
   &__section-title {
