@@ -204,12 +204,12 @@ export default {
       button {
         font-size: 21px;
       }
-    }
-  }
 
-  @media only screen and (max-width: 1220px) {
-    .footer-form {
-      width: 35vw;
+      textarea {
+        min-height: 64px;
+        padding: 22px 10px;
+        resize: vertical;
+      }
 
       &_email {
         /deep/ .v-placeholder-asterisk {
@@ -223,12 +223,12 @@ export default {
           }
         }
       }
+    }
+  }
 
-      textarea {
-        min-height: 64px;
-        padding: 22px 10px;
-        resize: vertical;
-      }
+  @media only screen and (max-width: 1220px) {
+    .footer-form {
+      width: 35vw;
     }
   }
 
