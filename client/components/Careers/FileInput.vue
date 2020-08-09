@@ -63,6 +63,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
+@import '../../assets/styles/get-vw';
 
 .file-input {
   display: flex;
@@ -78,9 +79,8 @@ export default {
   &__cv {
     min-width: max-content;
     color: $text-color--black;
-    font-size: 20px;
+    font-size: get-vw(20px);
     cursor: pointer;
-    line-height: 33px;
     text-align: center;
     letter-spacing: -0.02em;
     text-decoration-line: underline;
@@ -93,7 +93,23 @@ export default {
     }
 
     &-icon {
-      margin-right: 25px;
+      margin-right: get-vw(25px);
+      width: get-vw(39px);
+      height: get-vw(48px);
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .file-input {
+    &__cv {
+      font-size: 20px;
+
+      &-icon {
+        margin-right: 25px;
+        width: 39px;
+        height: 48px;
+      }
     }
   }
 }

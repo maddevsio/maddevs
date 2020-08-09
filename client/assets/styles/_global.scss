@@ -258,7 +258,7 @@
 
 .form-text {
   font-family: 'Hoves-Regular';
-  font-size: 40px;
+  font-size: get-vw(40px);
   font-weight: 500;
 }
 
@@ -419,7 +419,7 @@
   display: block;
   margin-top: 7px;
   color: $text-color--red-opacity;
-  font-size: 16px;
+  font-size: get-vw(16px);
   font-family: 'Hoves-Regular';
 }
 
@@ -511,6 +511,10 @@
 @media only screen and (max-width: 1560px) {
   .title {
     font-size: get-vw(80px, 1560);
+  }
+
+  .error-text {
+    font-size: 16px;
   }
 
   .doc-text {

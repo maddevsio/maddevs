@@ -16,7 +16,7 @@ export default {
   methods: {
     callback(e) {
       if (this.$props.disabled === false) {
-        this.$emit('click', e); 
+        this.$emit('click', e);
       }
     }
   }
@@ -30,7 +30,6 @@ export default {
   background-color: $button-bgcolor--red;
   color: $text-color--white;
   font-weight: bold;
-  line-height: 33px;
   cursor: pointer;
   border-radius: $form-border-radius-6;
   border: 0;
