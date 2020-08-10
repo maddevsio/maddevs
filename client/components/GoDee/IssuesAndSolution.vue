@@ -269,7 +269,7 @@ export default {
 
     &__image-wrapper {
       margin-top: get-vw(33px);
-      margin-left: get-vw(-27px);
+      margin-left: get-vw(-20px);
     }
 
     &__women-image {

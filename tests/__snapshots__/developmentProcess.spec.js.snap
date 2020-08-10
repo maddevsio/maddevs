@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DevelopmentProcess renders correctly 1`] = `
+<section
+  class="development-process"
+  id="development-process"
+>
+  <div
+    class="container-godee"
+  >
+    <div
+      class="development-process__head-text-content"
+    >
+      <h2
+        class="development-process__main-title"
+      >
+        Development Process
+      </h2>
+       
+      <h3
+        class="development-process__sub-title"
+      >
+        How big is the team?
+      </h3>
+       
+      <p
+        class="development-process__description"
+      >
+        There are currently 14 members of the development team, working closely with 
+        <br />
+         business on the project:
+      </p>
+    </div>
+     
+    <ul
+      class="development-process__list"
+    >
+      <li
+        class="development-process__list-item"
+      >
+        <div
+          class="development-process__list-team-size-number"
+        >
+          3
+        </div>
+         
+        <p
+          class="development-process__department"
+        >
+          Managers
+        </p>
+      </li>
+       
+      <li
+        class="development-process__list-item"
+      >
+        <div
+          class="development-process__list-team-size-number"
+        >
+          4
+        </div>
+         
+        <p
+          class="development-process__department"
+        >
+          Mobile 
+          <br />
+           Developers
+        </p>
+      </li>
+       
+      <li
+        class="development-process__list-item"
+      >
+        <div
+          class="development-process__list-team-size-number"
+        >
+          4
+        </div>
+         
+        <p
+          class="development-process__department"
+        >
+          Backend
+        </p>
+      </li>
+       
+      <li
+        class="development-process__list-item"
+      >
+        <div
+          class="development-process__list-team-size-number"
+        >
+          2
+        </div>
+         
+        <p
+          class="development-process__department"
+        >
+          Testing
+        </p>
+      </li>
+       
+      <li
+        class="development-process__list-item"
+      >
+        <div
+          class="development-process__list-team-size-number"
+        >
+          1
+        </div>
+         
+        <p
+          class="development-process__department"
+        >
+          Designer
+        </p>
+      </li>
+    </ul>
+     
+    <img
+      alt=""
+      class="development-process__development-process-banner"
+      src="@/assets/img/GoDee/png/development-process.png"
+    />
+     
+    <div
+      class="development-process__agile-methodology-content"
+    >
+      <p
+        class="development-process__description development-process__description-agile"
+      >
+         We follow Kanban agile methodology and work closely with the business-focused 
+        <br />
+         roles on the customer’s side.
+      </p>
+       
+      <img
+        alt="Route line"
+        class="development-process__route-line"
+        src="@/assets/img/GoDee/svg/development-process-route-line.svg"
+      />
+       
+      <div
+        class="development-process__work-flow"
+      >
+        <h3
+          class="development-process__work-flow-title"
+        >
+          The task lifecycle looks as follows:
+        </h3>
+         
+        <img
+          alt="Agile process"
+          class="development-process__agile-process-image"
+          src="@/assets/img/GoDee/svg/agile-process.svg"
+        />
+         
+        <div
+          class="development-process__work-flow-steps-description"
+        >
+          <p
+            class="development-process__description development-process__work-flow-step"
+          >
+            After being created, the 
+            <br />
+             task receives 
+            <span>
+              To Do
+            </span>
+             
+            <br />
+             status on the Kanban 
+            <br />
+             board.
+          </p>
+           
+          <p
+            class="development-process__description development-process__work-flow-step"
+          >
+            The status of the task 
+            <br />
+             becomes 
+            <span>
+              Solved
+            </span>
+            , 
+            <br />
+             when work on the task 
+            <br />
+             is Done.
+          </p>
+           
+          <p
+            class="development-process__description development-process__work-flow-step"
+          >
+            When the task is ready 
+            <br />
+             to be tested, the status 
+            <br />
+             changes into 
+            <span>
+              To Test.
+            </span>
+          </p>
+           
+          <p
+            class="development-process__description development-process__work-flow-step"
+          >
+            When the testing 
+            <br />
+             process is completed, 
+            <br />
+             the status 
+            <span>
+              Tested
+            </span>
+             is 
+            <br />
+             assigned to the task.
+          </p>
+           
+          <p
+            class="development-process__description development-process__work-flow-step"
+          >
+            After being thoroughly 
+            <br />
+             tested, the new 
+            <br />
+             functionality gets the 
+            <br />
+             status 
+            <span>
+              Deployed
+            </span>
+            .
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
