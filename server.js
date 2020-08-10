@@ -16,8 +16,7 @@ const routes = require('./server/routes');
 app.use('/', routes);
 app.use(function applyXFrame(req, res, next) {
   res.set('X-Frame-Options', 'DENY');
-  res.set('Cache-Control', 'public, max-age=3600000');
-  next();
+  next(); 
 });
 app.use((req, res, next) => {
   if (req.secure) {
