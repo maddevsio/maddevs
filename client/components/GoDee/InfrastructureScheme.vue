@@ -104,7 +104,6 @@ export default {
       height: get-vw(2857px);
       top: get-vw(53px);
       right: get-vw(215px);
-
     }
   }
 </style>
