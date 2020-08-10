@@ -31,9 +31,10 @@
       <img src="@/assets/img/GoDee/png/development-process.png" alt="" class="development-process__development-process-banner">
       <div class="development-process__agile-methodology-content">
         <p class="development-process__description development-process__description-agile"> We follow Kanban agile methodology and work closely with the business-focused <br> roles on the customer’s side.</p>
+        <img src="@/assets/img/GoDee/svg/development-process-route-line.svg" alt="Route line" class="development-process__route-line">
         <div class="development-process__work-flow">
           <h3 class="development-process__work-flow-title">The task lifecycle looks as follows:</h3>
-          <img src="" alt="">
+          <img src="@/assets/img/GoDee/svg/agile-process.svg" alt="Agile process" class="development-process__agile-process-image">
           <div class="development-process__work-flow-steps-description">
             <p class="development-process__description development-process__work-flow-step">After being created, the <br> task receives <span>To Do</span> <br> status on the Kanban <br> board.</p>
             <p class="development-process__description development-process__work-flow-step">The status of the task <br> becomes <span>Solved</span>, <br> when work on the task <br> is Done.</p>
@@ -111,13 +112,11 @@ export default {
     }
 
     &__list,
-    &__list-item,
-    &__work-flow-steps-description {
+    &__list-item {
       display: flex;
     }
 
-    &__list,
-    &__work-flow-steps-description {
+    &__list {
       justify-content: space-between;
     }
 
@@ -135,6 +134,16 @@ export default {
       width: get-vw(1680px);
       height: get-vw(483px);
       margin: get-vw(46px) -8.5vw get-vw(330px);
+    }
+
+    &__agile-methodology-content {
+      position: relative;
+    }
+
+    &__work-flow-steps-description {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-column-gap: 10px;
     }
 
     &__work-flow-title {
@@ -176,6 +185,20 @@ export default {
           color: $text-color--green;
         }
       }
+    }
+
+    &__agile-process-image {
+      width: get-vw(1413px);
+      height: get-vw(399px);
+      margin-left: get-vw(-21px);
+    }
+
+    &__route-line {
+      width: get-vw(660px);
+      height: get-vw(504px);
+      position: absolute;
+      top: get-vw(-311px);
+      left: get-vw(60px);
     }
   }
 </style>
