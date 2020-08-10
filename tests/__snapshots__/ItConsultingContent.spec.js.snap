@@ -8,7 +8,7 @@ exports[`ItConsultingContent component renders correctly 1`] = `
     class="it-consulting__content-item_wrapper"
   >
     <h3
-      class="it-consulting__title title"
+      class="it-consulting__title block-paragraph"
     >
       Title
     </h3>

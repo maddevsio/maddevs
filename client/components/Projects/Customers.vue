@@ -115,9 +115,10 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
+@import '../../assets/styles/get-vw';
 
 .customers {
-  padding-top: 170px;
+  padding-top: get-vw(170px);
 
   &__title-wrap {
     display: flex;
@@ -126,67 +127,33 @@ export default {
 
   &__main-title {
     color: $text-color--red;
-    max-width: 837px;
-    min-width: 575px;
-    margin-right: 58px;
+    max-width: get-vw(837px);
+    min-width: get-vw(575px);
+    margin-right: get-vw(58px);
   }
 
   &__main-description {
     color: $text-color--grey;
-    line-height: 25px;
+    line-height: get-vw(25px);
     letter-spacing: -0.03em;
-    max-width: 575px;
-    padding-bottom: 19px;
+    max-width: get-vw(575px);
+    padding-bottom: get-vw(19px);
   }
 
   .valued-customers {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(get-vw(150px), 1fr));
     align-items: center;
-    margin: 80px 0 40px;
-    grid-row-gap: 100px;
-    grid-column-gap: 80px;
+    margin: get-vw(80px) 0 get-vw(40px);
+    grid-row-gap: get-vw(100px);
+    grid-column-gap: get-vw(80px);
   }
 }
 
 @media only screen and (max-width: 1600px) {
   .customers {
     .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    }
-  }
-}
-
-@media only screen and (max-width: 1440px) {
-  .customers {
-    .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      grid-row-gap: 95px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1240px) {
-  .customers {
-    padding-top: 155px;
-
-    .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
-      grid-row-gap: 90px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1065px) {
-  .customers {
-    &__main-description {
-      padding-top: 17px;
-    }
-
-    .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      grid-row-gap: 65px;
-      grid-column-gap: 70px;
+      grid-template-columns: repeat(auto-fit, minmax(get-vw(140px), 1fr));
     }
   }
 }
@@ -198,16 +165,15 @@ export default {
     &__title-wrap {
       flex-wrap: wrap;
     }
-  }
-}
 
-@media only screen and (max-width: 860px) {
-  .customers {
-    padding-top: 107px;
+    &__main-title {
+      max-width: 90%;
+      margin-bottom: 2vw;
+    }
 
-    .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-      grid-row-gap: 30px;
+    &__main-description {
+      max-width: 90%;
+      line-height: 2.4881vw;
     }
   }
 }
@@ -224,7 +190,15 @@ export default {
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       grid-row-gap: 25px;
       grid-column-gap: 15px;
-      margin-top: 47px;
+      margin-top: get-vw(47px, 680);
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .customers {
+    &__main-description {
+      line-height: 110%;
     }
   }
 }
@@ -234,6 +208,15 @@ export default {
     .valued-customers {
       grid-row-gap: 0;
       grid-column-gap: 0;
+    }
+
+    &__main-title {
+      letter-spacing: 1px;
+      margin-bottom: 5vw;
+    }
+
+    &__main-description {
+      line-height: 135%;
     }
   }
 }

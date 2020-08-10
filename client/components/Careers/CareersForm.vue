@@ -20,8 +20,7 @@
                   ref="nameInput"
                 />
                 <span class="modal-error-text error-text">{{ errors[0] }}</span>
-              </ValidationProvider></label
-            >
+              </ValidationProvider></label>
             <h4 class="careers__form-description form-text">
               I want to work for you as a
               <ValidationProvider rules="required" v-slot="{ classes, errors }">

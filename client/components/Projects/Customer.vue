@@ -29,14 +29,15 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
+@import '../../assets/styles/get-vw';
 
 .valued-customers {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(get-vw(166px), 1fr));
   align-items: center;
-  margin: 80px 0 40px;
-  grid-row-gap: 100px;
-  grid-column-gap: 80px;
+  margin: get-vw(80px) 0 get-vw(40px);
+  grid-row-gap: get-vw(100px);
+  grid-column-gap: get-vw(80px);
 
   &__wrapper {
     justify-self: center;
@@ -56,20 +57,16 @@ export default {
     align-items: center;
     justify-self: center;
     position: absolute;
-    top: 62px;
+    top: get-vw(62px);
     text-align: center;
     transition: opacity 0.3s linear;
     opacity: 0;
     height: 0;
     overflow: hidden;
   }
-}
 
-@media only screen and (max-width: 1240px) {
-  .valued-customers {
-    &__logo {
-      height: 70px;
-    }
+  &__logo {
+    height: get-vw(60px);
   }
 }
 
@@ -79,10 +76,6 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    &__logo {
-      height: 60px;
     }
   }
 }
@@ -96,51 +89,37 @@ export default {
     }
 
     &__logo {
-      width: 90%;
+      height: get-vw(40px, 1024);
     }
   }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 745px) {
   .valued-customers {
-    grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
-    grid-column-gap: 55px;
-
-    &__industry {
-      font-size: 10px;
-      top: 56px;
+    &__logo {
+      height: get-vw(40px, 745);
     }
   }
 }
 
 @media only screen and (max-width: 680px) {
   .valued-customers {
-    grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
-    grid-row-gap: 50px;
-    grid-column-gap: 35px;
-    margin-top: 47px;
+    grid-template-columns: repeat(auto-fit, minmax(get-vw(105px, 680), 1fr));
+    grid-row-gap: get-vw(50px, 680);
+    grid-column-gap: get-vw(35px, 680);
+    margin-top: get-vw(47px, 680);
+
+    &__industry {
+      top: get-vw(82px, 680);
+    }
 
     &__logo {
       width: 80%;
+      height: 17vw;
     }
 
     &__industry {
       font-size: 8px;
-    }
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .valued-customers {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-
-    &__logo {
-      width: 75%;
-    }
-
-    &__industry {
-      font-size: 8px;
-      top: 53px;
     }
   }
 }

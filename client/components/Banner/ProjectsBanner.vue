@@ -26,6 +26,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../assets/styles/get-vw';
+
   .projects-content {
     .container {
       position: relative;
@@ -36,7 +38,7 @@ export default {
     }
 
     .navigation-wrap {
-      margin-top: 170px;
+      margin-top: get-vw(170px);
     }
 
     .tablet-break {
@@ -129,7 +131,7 @@ export default {
 
   @media only screen and (max-width: 515px) {
     .banner-main_title {
-      font-size: 68px;
+      font-size: get-vw(68px, 515);
     }
   }
 

@@ -26,7 +26,7 @@ exports[`ItСonsulting component renders correctly 1`] = `
           class="it-consulting__content-item_wrapper"
         >
           <h3
-            class="it-consulting__title title"
+            class="it-consulting__title block-paragraph"
           >
             Technology Stack
           </h3>
@@ -52,7 +52,7 @@ exports[`ItСonsulting component renders correctly 1`] = `
           class="it-consulting__content-item_wrapper"
         >
           <h3
-            class="it-consulting__title title"
+            class="it-consulting__title block-paragraph"
           >
             Process Audit
           </h3>
@@ -78,7 +78,7 @@ exports[`ItСonsulting component renders correctly 1`] = `
           class="it-consulting__content-item_wrapper"
         >
           <h3
-            class="it-consulting__title title"
+            class="it-consulting__title block-paragraph"
           >
             Team Headcount
           </h3>
