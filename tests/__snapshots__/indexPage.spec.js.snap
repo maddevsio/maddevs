@@ -2476,6 +2476,7 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
+              loading="lazy"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
@@ -2483,6 +2484,7 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Marat@2x"
               class="multi-image"
+              loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
             />
@@ -2526,6 +2528,7 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
+              loading="lazy"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
@@ -2533,6 +2536,7 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Tamara@2x"
               class="multi-image"
+              loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
             />
@@ -2576,6 +2580,7 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
+              loading="lazy"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
@@ -2583,6 +2588,7 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Chuck@2x"
               class="multi-image"
+              loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
             />
@@ -2626,6 +2632,7 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
+              loading="lazy"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
@@ -2633,6 +2640,7 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Nakylai@2x"
               class="multi-image"
+              loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
             />
@@ -2676,6 +2684,7 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
+              loading="lazy"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
@@ -2683,6 +2692,7 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Daria@2x"
               class="multi-image"
+              loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
             />
@@ -2726,6 +2736,7 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
+              loading="lazy"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
@@ -2733,6 +2744,7 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Nuradil@2x"
               class="multi-image"
+              loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
             />
@@ -2776,6 +2788,7 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
+              loading="lazy"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
@@ -2783,6 +2796,7 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Alice@2x"
               class="multi-image"
+              loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
             />
@@ -2826,6 +2840,7 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
+              loading="lazy"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
@@ -2833,6 +2848,7 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Arthur@2x"
               class="multi-image"
+              loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
             />
@@ -2892,6 +2908,7 @@ exports[`Index page renders correctly 1`] = `
               <picture>
                 <source
                   class="multi-image"
+                  loading="lazy"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
@@ -2899,6 +2916,7 @@ exports[`Index page renders correctly 1`] = `
                 <img
                   alt="Marat@2x"
                   class="multi-image"
+                  loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
                 />
@@ -2946,6 +2964,7 @@ exports[`Index page renders correctly 1`] = `
               <picture>
                 <source
                   class="multi-image"
+                  loading="lazy"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
@@ -2953,6 +2972,7 @@ exports[`Index page renders correctly 1`] = `
                 <img
                   alt="Tamara@2x"
                   class="multi-image"
+                  loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
                 />
@@ -3000,6 +3020,7 @@ exports[`Index page renders correctly 1`] = `
               <picture>
                 <source
                   class="multi-image"
+                  loading="lazy"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
@@ -3007,6 +3028,7 @@ exports[`Index page renders correctly 1`] = `
                 <img
                   alt="Chuck@2x"
                   class="multi-image"
+                  loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
                 />
@@ -3054,6 +3076,7 @@ exports[`Index page renders correctly 1`] = `
               <picture>
                 <source
                   class="multi-image"
+                  loading="lazy"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
@@ -3061,6 +3084,7 @@ exports[`Index page renders correctly 1`] = `
                 <img
                   alt="Nakylai@2x"
                   class="multi-image"
+                  loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
                 />
@@ -3108,6 +3132,7 @@ exports[`Index page renders correctly 1`] = `
               <picture>
                 <source
                   class="multi-image"
+                  loading="lazy"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
@@ -3115,6 +3140,7 @@ exports[`Index page renders correctly 1`] = `
                 <img
                   alt="Daria@2x"
                   class="multi-image"
+                  loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
                 />
@@ -3162,6 +3188,7 @@ exports[`Index page renders correctly 1`] = `
               <picture>
                 <source
                   class="multi-image"
+                  loading="lazy"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
@@ -3169,6 +3196,7 @@ exports[`Index page renders correctly 1`] = `
                 <img
                   alt="Nuradil@2x"
                   class="multi-image"
+                  loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
                 />
@@ -3216,6 +3244,7 @@ exports[`Index page renders correctly 1`] = `
               <picture>
                 <source
                   class="multi-image"
+                  loading="lazy"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
@@ -3223,6 +3252,7 @@ exports[`Index page renders correctly 1`] = `
                 <img
                   alt="Alice@2x"
                   class="multi-image"
+                  loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
                 />
@@ -3270,6 +3300,7 @@ exports[`Index page renders correctly 1`] = `
               <picture>
                 <source
                   class="multi-image"
+                  loading="lazy"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
@@ -3277,6 +3308,7 @@ exports[`Index page renders correctly 1`] = `
                 <img
                   alt="Arthur@2x"
                   class="multi-image"
+                  loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
                 />
