@@ -1,10 +1,11 @@
 <template>
  <picture>
   <source
-    class="multi-image" :srcset="[require(`@/assets/img/Home/webp/experts/${fileName}.webp`) + ' ', require(`@/assets/img/Home/webp/experts/${fileNameRetina}.webp`) + ' 2x']"
+    class="multi-image" loading="lazy" :srcset="[require(`@/assets/img/Home/webp/experts/${fileName}.webp`) + ' ', require(`@/assets/img/Home/webp/experts/${fileNameRetina}.webp`) + ' 2x']"
     type='image/webp'>
   <img
     :src="[require(`@/assets/img/Home/png/experts/${fileName}.png`)]"
+    loading="lazy"
     :srcset="[require(`@/assets/img/Home/png/experts/${fileNameRetina}.png`) + ' 2x']"
     class="multi-image"
     :alt="fileNameRetina">
