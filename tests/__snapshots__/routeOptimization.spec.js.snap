@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Route Optimization renders correctly 1`] = `
+<section
+  class="route-optimization"
+  id="route-optimization"
+>
+  <div
+    class="container-godee"
+  >
+    <div
+      class="route-optimization__container"
+    >
+      <div
+        class="route-optimization__head-text-content"
+      >
+        <h3
+          class="route-optimization__main-title"
+        >
+          Route optimization
+        </h3>
+         
+        <p
+          class="route-optimization__description"
+        >
+          With the help of detailed drivers' performance data, Mad Devs’ Pifia microservice 
+          <br />
+           enables route managers to optimize ETA (estimated time of arrival). Pifia shows a more 
+          <br />
+           accurate arrival and departure time in just one click.
+        </p>
+         
+        <img
+          alt="Trips monitor"
+          class="route-optimization__trips-monitor-route-optimization-section"
+          src="@/assets/img/GoDee/png/trips-monitor-route-optimization-section.png"
+        />
+         
+        <img
+          alt="Bus icon"
+          class="route-optimization__bus-icon"
+          src="@/assets/img/GoDee/svg/godee-bus.svg"
+        />
+      </div>
+       
+      <div
+        class="route-optimization__text-content-wrapper"
+      >
+        <div
+          class="route-optimization__text-content-item"
+        >
+          <div
+            class="route-optimization__left-text-block"
+          >
+            <h4
+              class="route-optimization__title"
+            >
+              Let’s imagine two examples of early and 
+              <br />
+               late departure time:
+            </h4>
+             
+            <p
+              class="route-optimization__description"
+            >
+              If Pifia understands that a minibus usually comes late due to 
+              <br />
+               increased traffic at 5:35 PM and not 5:30 PM, it tells the route 
+              <br />
+               manager to shift the arrival time to 5:35 PM. It might sound like 
+              <br />
+               only 5 minutes change, but such small optimizations add up.
+            </p>
+          </div>
+           
+          <div
+            class="route-optimization__right-text-block"
+          >
+            <p
+              class="route-optimization__description-bold"
+            >
+              By shifting a bus arrival 
+              <br />
+               time to 5:35 PM, the 
+              <br />
+               passengers waiting for the 
+              <br />
+               ride won’t need to stand in 
+              <br />
+               the hot, humid weather.
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="route-optimization__text-content-item"
+        >
+          <div
+            class="route-optimization__left-text-block"
+          >
+            <h4
+              class="route-optimization__title"
+            >
+              Real-time ETA
+            </h4>
+             
+            <p
+              class="route-optimization__description"
+            >
+              On top of that, Pifia shows in real-time the approximate 
+              <br />
+               late/early departure. Thus, passengers waiting for the ride 
+              <br />
+               always know whether the bus is coming late and how long it 
+              <br />
+               would take. The information is displayed on their mobile 
+              <br />
+               application.
+            </p>
+          </div>
+           
+          <img
+            alt="ETA preview on phone"
+            class="route-optimization__eta-preview-phone"
+            src="@/assets/img/GoDee/svg/eta-preview-phone.svg"
+          />
+        </div>
+      </div>
+    </div>
+     
+    <img
+      alt="Route line"
+      class="route-optimization__route-line"
+      src="@/assets/img/GoDee/svg/route-optimization-route-line.svg"
+    />
+  </div>
+</section>
+`;

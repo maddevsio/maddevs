@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Trips Monitor renders correctly 1`] = `
+<section
+  class="trips-monitor"
+  id="trips-monitor"
+>
+  <div
+    class="container-godee"
+  >
+    <div
+      class="trips-monitor__head-text-content"
+    >
+      <h3
+        class="trips-monitor__main-title"
+      >
+        Trips Monitor
+      </h3>
+       
+      <p
+        class="trips-monitor__description"
+      >
+        The Trips Monitor feature enables operators to track every bus in real-time and collect 
+        <br />
+         data on late or early arrival. Moreover, the operator can contact drivers or passengers 
+        <br />
+         right away if necessary.
+      </p>
+    </div>
+     
+    <div
+      class="trips-monitor__container"
+    >
+      <img
+        alt="Trips monitor"
+        class="trips-monitor__trips-monitor-image"
+        src="@/assets/img/GoDee/png/trips-monitor.png"
+      />
+       
+      <div
+        class="trips-monitor__trips-monitor-features"
+      >
+        <h4
+          class="trips-monitor__features-title"
+        >
+          The Trips Monitor dashboard displays the 
+          <br />
+           following information:
+        </h4>
+         
+        <div
+          class="trips-monitor__features-content-wrapper"
+        >
+          <ul
+            class="trips-monitor__features-list"
+          >
+            <li
+              class="trips-monitor__features-item"
+            >
+              <img
+                alt="Map icon"
+                src="@/assets/img/GoDee/svg/map.svg"
+              />
+               
+              <p>
+                
+                A mini-map that shows drivers' location in real-time.
+              
+              </p>
+            </li>
+             
+            <li
+              class="trips-monitor__features-item"
+            >
+              <img
+                alt="Clock icon"
+                src="@/assets/img/GoDee/svg/clock.svg"
+              />
+               
+              <p>
+                
+                Buses’ late and early departures.
+              
+              </p>
+            </li>
+             
+            <li
+              class="trips-monitor__features-item"
+            >
+              <img
+                alt="Calendar icon"
+                src="@/assets/img/GoDee/svg/calendar.svg"
+              />
+               
+              <p>
+                
+                The entire bus schedule for the weeks ahead.
+              
+              </p>
+            </li>
+             
+            <li
+              class="trips-monitor__features-item"
+            >
+              <img
+                alt="Pin icon"
+                src="@/assets/img/GoDee/svg/map-pin.svg"
+              />
+               
+              <p>
+                
+                A bus stop where a driver forgot to pick up a GoDee client.
+              
+              </p>
+            </li>
+             
+            <li
+              class="trips-monitor__features-item"
+            >
+              <img
+                alt="Humans icon"
+                src="@/assets/img/GoDee/svg/humans.svg"
+              />
+               
+              <p>
+                
+                The number of passengers assigned to each stop and driver.
+              
+              </p>
+            </li>
+             
+            <li
+              class="trips-monitor__features-item"
+            >
+              <img
+                alt="Revert icon"
+                src="@/assets/img/GoDee/svg/revert.svg"
+              />
+               
+              <p>
+                
+                Access to historical information through filters.
+              
+              </p>
+            </li>
+          </ul>
+           
+          <img
+            alt=""
+            class="trips-monitor__trips-monitor-mini-map"
+            src="@/assets/img/GoDee/svg/trips-monitor-mini-map.svg"
+          />
+        </div>
+      </div>
+    </div>
+     
+    <img
+      alt="Bus icon"
+      class="trips-monitor__bus-icon"
+      src="@/assets/img/GoDee/svg/godee-bus.svg"
+    />
+  </div>
+</section>
+`;

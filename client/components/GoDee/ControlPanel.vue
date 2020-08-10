@@ -117,8 +117,8 @@ export default {
       width: get-vw(1357px);
       height: get-vw(4662px);
       position: absolute;
-      top: -103px;
-      right: 105px;
+      top: get-vw(-136px);
+      right: get-vw(140px);
     }
   }
 </style>

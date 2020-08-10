@@ -1359,5 +1359,652 @@ exports[`GoDee page renders correctly 1`] = `
       />
     </div>
   </section>
+   
+  <section
+    class="smart-route-planing"
+    id="smart-route-planing"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="smart-route-planing__head-text-content"
+      >
+        <h3
+          class="smart-route-planing__main-title"
+        >
+          Smart route planning
+        </h3>
+         
+        <p
+          class="smart-route-planing__description-bold"
+        >
+          How to create profitable yet convenient to users routes?
+        </p>
+         
+        <p
+          class="smart-route-planing__description"
+        >
+          Let users send 
+          <span>
+            trip requests
+          </span>
+           and tell you what works for them. The feature was 
+          <br />
+           available initially from the MVP phase, and it enables GoDee route manager to build 
+          <br />
+           routes effectively by understanding the real demand.
+        </p>
+         
+        <p
+          class="smart-route-planing__description"
+        >
+          Inside the application, users can submit a trip request with pick up and drop off locations 
+          <br />
+           at the desired time. The request is added to the list on managers' dashboard.
+        </p>
+         
+        <img
+          alt="Number"
+          class="smart-route-planing__number-icon smart-route-planing__number-icon-one"
+          src="@/assets/img/GoDee/svg/number-one.svg"
+        />
+      </div>
+       
+      <div
+        class="smart-route-planing__container"
+      >
+        <img
+          alt="Trip requests list"
+          class="smart-route-planing__image smart-route-planing__image-trip-requests-list"
+          src="@/assets/img/GoDee/png/trip-request-list.png"
+        />
+         
+        <div
+          class="smart-route-planing__prime-algorithm"
+        >
+          <div
+            class="smart-route-planing__prime-text-content"
+          >
+            <h4
+              class="smart-route-planing__sub-title"
+            >
+              Prim's algorithm
+            </h4>
+             
+            <p
+              class="smart-route-planing__description"
+            >
+              Prim's algorithm is used to connect dots on a map effectively. 
+              <br />
+               So, a trip request list is transformed into a map, where new 
+              <br />
+               potential routes are displayed for easier overview. The 
+              <br />
+               algorithm connects dots and maps possible routes. 
+              <br />
+               The aim is to connect as many dots as possible while keeping 
+              <br />
+               the longevity under 20 km.
+            </p>
+             
+            <img
+              alt="Number"
+              class="smart-route-planing__number-icon smart-route-planing__number-icon-two"
+              src="@/assets/img/GoDee/svg/number-two.svg"
+            />
+          </div>
+           
+          <img
+            alt="Prim algorithm"
+            class="smart-route-planing__prim-algorithm-gif"
+            src="@/assets/img/GoDee/gif/prim-algorithm.gif"
+          />
+        </div>
+         
+        <img
+          alt="Trip request map"
+          class="smart-route-planing__image smart-route-planing__image-trip-request-map"
+          src="@/assets/img/GoDee/png/trip-request-map.png"
+        />
+      </div>
+    </div>
+  </section>
+   
+  <section
+    class="trips-monitor"
+    id="trips-monitor"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="trips-monitor__head-text-content"
+      >
+        <h3
+          class="trips-monitor__main-title"
+        >
+          Trips Monitor
+        </h3>
+         
+        <p
+          class="trips-monitor__description"
+        >
+          The Trips Monitor feature enables operators to track every bus in real-time and collect 
+          <br />
+           data on late or early arrival. Moreover, the operator can contact drivers or passengers 
+          <br />
+           right away if necessary.
+        </p>
+      </div>
+       
+      <div
+        class="trips-monitor__container"
+      >
+        <img
+          alt="Trips monitor"
+          class="trips-monitor__trips-monitor-image"
+          src="@/assets/img/GoDee/png/trips-monitor.png"
+        />
+         
+        <div
+          class="trips-monitor__trips-monitor-features"
+        >
+          <h4
+            class="trips-monitor__features-title"
+          >
+            The Trips Monitor dashboard displays the 
+            <br />
+             following information:
+          </h4>
+           
+          <div
+            class="trips-monitor__features-content-wrapper"
+          >
+            <ul
+              class="trips-monitor__features-list"
+            >
+              <li
+                class="trips-monitor__features-item"
+              >
+                <img
+                  alt="Map icon"
+                  src="@/assets/img/GoDee/svg/map.svg"
+                />
+                 
+                <p>
+                  
+                A mini-map that shows drivers' location in real-time.
+              
+                </p>
+              </li>
+               
+              <li
+                class="trips-monitor__features-item"
+              >
+                <img
+                  alt="Clock icon"
+                  src="@/assets/img/GoDee/svg/clock.svg"
+                />
+                 
+                <p>
+                  
+                Buses’ late and early departures.
+              
+                </p>
+              </li>
+               
+              <li
+                class="trips-monitor__features-item"
+              >
+                <img
+                  alt="Calendar icon"
+                  src="@/assets/img/GoDee/svg/calendar.svg"
+                />
+                 
+                <p>
+                  
+                The entire bus schedule for the weeks ahead.
+              
+                </p>
+              </li>
+               
+              <li
+                class="trips-monitor__features-item"
+              >
+                <img
+                  alt="Pin icon"
+                  src="@/assets/img/GoDee/svg/map-pin.svg"
+                />
+                 
+                <p>
+                  
+                A bus stop where a driver forgot to pick up a GoDee client.
+              
+                </p>
+              </li>
+               
+              <li
+                class="trips-monitor__features-item"
+              >
+                <img
+                  alt="Humans icon"
+                  src="@/assets/img/GoDee/svg/humans.svg"
+                />
+                 
+                <p>
+                  
+                The number of passengers assigned to each stop and driver.
+              
+                </p>
+              </li>
+               
+              <li
+                class="trips-monitor__features-item"
+              >
+                <img
+                  alt="Revert icon"
+                  src="@/assets/img/GoDee/svg/revert.svg"
+                />
+                 
+                <p>
+                  
+                Access to historical information through filters.
+              
+                </p>
+              </li>
+            </ul>
+             
+            <img
+              alt=""
+              class="trips-monitor__trips-monitor-mini-map"
+              src="@/assets/img/GoDee/svg/trips-monitor-mini-map.svg"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <img
+        alt="Bus icon"
+        class="trips-monitor__bus-icon"
+        src="@/assets/img/GoDee/svg/godee-bus.svg"
+      />
+    </div>
+  </section>
+   
+  <section
+    class="route-optimization"
+    id="route-optimization"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="route-optimization__container"
+      >
+        <div
+          class="route-optimization__head-text-content"
+        >
+          <h3
+            class="route-optimization__main-title"
+          >
+            Route optimization
+          </h3>
+           
+          <p
+            class="route-optimization__description"
+          >
+            With the help of detailed drivers' performance data, Mad Devs’ Pifia microservice 
+            <br />
+             enables route managers to optimize ETA (estimated time of arrival). Pifia shows a more 
+            <br />
+             accurate arrival and departure time in just one click.
+          </p>
+           
+          <img
+            alt="Trips monitor"
+            class="route-optimization__trips-monitor-route-optimization-section"
+            src="@/assets/img/GoDee/png/trips-monitor-route-optimization-section.png"
+          />
+           
+          <img
+            alt="Bus icon"
+            class="route-optimization__bus-icon"
+            src="@/assets/img/GoDee/svg/godee-bus.svg"
+          />
+        </div>
+         
+        <div
+          class="route-optimization__text-content-wrapper"
+        >
+          <div
+            class="route-optimization__text-content-item"
+          >
+            <div
+              class="route-optimization__left-text-block"
+            >
+              <h4
+                class="route-optimization__title"
+              >
+                Let’s imagine two examples of early and 
+                <br />
+                 late departure time:
+              </h4>
+               
+              <p
+                class="route-optimization__description"
+              >
+                If Pifia understands that a minibus usually comes late due to 
+                <br />
+                 increased traffic at 5:35 PM and not 5:30 PM, it tells the route 
+                <br />
+                 manager to shift the arrival time to 5:35 PM. It might sound like 
+                <br />
+                 only 5 minutes change, but such small optimizations add up.
+              </p>
+            </div>
+             
+            <div
+              class="route-optimization__right-text-block"
+            >
+              <p
+                class="route-optimization__description-bold"
+              >
+                By shifting a bus arrival 
+                <br />
+                 time to 5:35 PM, the 
+                <br />
+                 passengers waiting for the 
+                <br />
+                 ride won’t need to stand in 
+                <br />
+                 the hot, humid weather.
+              </p>
+            </div>
+          </div>
+           
+          <div
+            class="route-optimization__text-content-item"
+          >
+            <div
+              class="route-optimization__left-text-block"
+            >
+              <h4
+                class="route-optimization__title"
+              >
+                Real-time ETA
+              </h4>
+               
+              <p
+                class="route-optimization__description"
+              >
+                On top of that, Pifia shows in real-time the approximate 
+                <br />
+                 late/early departure. Thus, passengers waiting for the ride 
+                <br />
+                 always know whether the bus is coming late and how long it 
+                <br />
+                 would take. The information is displayed on their mobile 
+                <br />
+                 application.
+              </p>
+            </div>
+             
+            <img
+              alt="ETA preview on phone"
+              class="route-optimization__eta-preview-phone"
+              src="@/assets/img/GoDee/svg/eta-preview-phone.svg"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <img
+        alt="Route line"
+        class="route-optimization__route-line"
+        src="@/assets/img/GoDee/svg/route-optimization-route-line.svg"
+      />
+    </div>
+  </section>
+   
+  <section
+    class="development-process"
+    id="development-process"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="development-process__head-text-content"
+      >
+        <h2
+          class="development-process__main-title"
+        >
+          Development Process
+        </h2>
+         
+        <h3
+          class="development-process__sub-title"
+        >
+          How big is the team?
+        </h3>
+         
+        <p
+          class="development-process__description"
+        >
+          There are currently 14 members of the development team, working closely with 
+          <br />
+           business on the project:
+        </p>
+      </div>
+       
+      <ul
+        class="development-process__list"
+      >
+        <li
+          class="development-process__list-item"
+        >
+          <div
+            class="development-process__list-team-size-number"
+          >
+            3
+          </div>
+           
+          <p
+            class="development-process__department"
+          >
+            Managers
+          </p>
+        </li>
+         
+        <li
+          class="development-process__list-item"
+        >
+          <div
+            class="development-process__list-team-size-number"
+          >
+            4
+          </div>
+           
+          <p
+            class="development-process__department"
+          >
+            Mobile 
+            <br />
+             Developers
+          </p>
+        </li>
+         
+        <li
+          class="development-process__list-item"
+        >
+          <div
+            class="development-process__list-team-size-number"
+          >
+            4
+          </div>
+           
+          <p
+            class="development-process__department"
+          >
+            Backend
+          </p>
+        </li>
+         
+        <li
+          class="development-process__list-item"
+        >
+          <div
+            class="development-process__list-team-size-number"
+          >
+            2
+          </div>
+           
+          <p
+            class="development-process__department"
+          >
+            Testing
+          </p>
+        </li>
+         
+        <li
+          class="development-process__list-item"
+        >
+          <div
+            class="development-process__list-team-size-number"
+          >
+            1
+          </div>
+           
+          <p
+            class="development-process__department"
+          >
+            Designer
+          </p>
+        </li>
+      </ul>
+       
+      <img
+        alt=""
+        class="development-process__development-process-banner"
+        src="@/assets/img/GoDee/png/development-process.png"
+      />
+       
+      <div
+        class="development-process__agile-methodology-content"
+      >
+        <p
+          class="development-process__description development-process__description-agile"
+        >
+           We follow Kanban agile methodology and work closely with the business-focused 
+          <br />
+           roles on the customer’s side.
+        </p>
+         
+        <img
+          alt="Route line"
+          class="development-process__route-line"
+          src="@/assets/img/GoDee/svg/development-process-route-line.svg"
+        />
+         
+        <div
+          class="development-process__work-flow"
+        >
+          <h3
+            class="development-process__work-flow-title"
+          >
+            The task lifecycle looks as follows:
+          </h3>
+           
+          <img
+            alt="Agile process"
+            class="development-process__agile-process-image"
+            src="@/assets/img/GoDee/svg/agile-process.svg"
+          />
+           
+          <div
+            class="development-process__work-flow-steps-description"
+          >
+            <p
+              class="development-process__description development-process__work-flow-step"
+            >
+              After being created, the 
+              <br />
+               task receives 
+              <span>
+                To Do
+              </span>
+               
+              <br />
+               status on the Kanban 
+              <br />
+               board.
+            </p>
+             
+            <p
+              class="development-process__description development-process__work-flow-step"
+            >
+              The status of the task 
+              <br />
+               becomes 
+              <span>
+                Solved
+              </span>
+              , 
+              <br />
+               when work on the task 
+              <br />
+               is Done.
+            </p>
+             
+            <p
+              class="development-process__description development-process__work-flow-step"
+            >
+              When the task is ready 
+              <br />
+               to be tested, the status 
+              <br />
+               changes into 
+              <span>
+                To Test.
+              </span>
+            </p>
+             
+            <p
+              class="development-process__description development-process__work-flow-step"
+            >
+              When the testing 
+              <br />
+               process is completed, 
+              <br />
+               the status 
+              <span>
+                Tested
+              </span>
+               is 
+              <br />
+               assigned to the task.
+            </p>
+             
+            <p
+              class="development-process__description development-process__work-flow-step"
+            >
+              After being thoroughly 
+              <br />
+               tested, the new 
+              <br />
+               functionality gets the 
+              <br />
+               status 
+              <span>
+                Deployed
+              </span>
+              .
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 `;

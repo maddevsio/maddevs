@@ -10,6 +10,10 @@
     <Features />
     <MobileApps />
     <ControlPanel />
+    <SmartRoutePlaning />
+    <TripsMonitor />
+    <RouteOptimization />
+    <DevelopmentProcess />
   </main>
 </template>
 
@@ -24,7 +28,10 @@ import TechnicalOverview from '@/components/GoDee/TechnicalOverview';
 import Features from '@/components/GoDee/Features';
 import MobileApps from '@/components/GoDee/MobileApps';
 import ControlPanel from '@/components/GoDee/ControlPanel';
-
+import SmartRoutePlaning from '@/components/GoDee/SmartRoutePlaning';
+import TripsMonitor from '@/components/GoDee/TripsMonitor';
+import RouteOptimization from '@/components/GoDee/RouteOptimization';
+import DevelopmentProcess from '@/components/GoDee/DevelopmentProcess';
 
 export default {
   name: 'GoDee',
@@ -38,7 +45,11 @@ export default {
     TechnicalOverview,
     Features,
     MobileApps,
-    ControlPanel
+    ControlPanel,
+    SmartRoutePlaning,
+    TripsMonitor,
+    RouteOptimization,
+    DevelopmentProcess
   },
   data() {
     return {

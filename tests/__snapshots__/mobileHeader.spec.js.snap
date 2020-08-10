@@ -105,20 +105,6 @@ exports[`Mobile Header renders correctly 1`] = `
               <li>
                 <a
                   class="footer-contacts__phone-item footer-contacts__phone-item--flag"
-                  href="tel:+1 833-MADDEVS"
-                >
-                  <span
-                    class="footer-contacts__icon footer-contacts__icon--usa"
-                  />
-                  
-					+1 833-MADDEVS
-				
-                </a>
-              </li>
-               
-              <li>
-                <a
-                  class="footer-contacts__phone-item footer-contacts__phone-item--flag"
                   href="tel:+44 20 3984 8555"
                 >
                   <span
