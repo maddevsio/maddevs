@@ -14,6 +14,7 @@
     <TripsMonitor />
     <RouteOptimization />
     <DevelopmentProcess />
+    <InfrastructureScheme />
   </main>
 </template>
 
@@ -32,6 +33,7 @@ import SmartRoutePlaning from '@/components/GoDee/SmartRoutePlaning';
 import TripsMonitor from '@/components/GoDee/TripsMonitor';
 import RouteOptimization from '@/components/GoDee/RouteOptimization';
 import DevelopmentProcess from '@/components/GoDee/DevelopmentProcess';
+import InfrastructureScheme from '@/components/GoDee/InfrastructureScheme';
 
 export default {
   name: 'GoDee',
@@ -49,7 +51,8 @@ export default {
     SmartRoutePlaning,
     TripsMonitor,
     RouteOptimization,
-    DevelopmentProcess
+    DevelopmentProcess,
+    InfrastructureScheme
   },
   data() {
     return {

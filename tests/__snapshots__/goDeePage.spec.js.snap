@@ -2006,5 +2006,96 @@ exports[`GoDee page renders correctly 1`] = `
       </div>
     </div>
   </section>
+   
+  <section
+    class="infrastructure-scheme"
+    id="infrastructure-scheme"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="infrastructure-scheme__head-text-content"
+      >
+        <h2
+          class="infrastructure-scheme__main-title"
+        >
+          Infrastructure scheme
+        </h2>
+         
+        <p
+          class="infrastructure-scheme__description"
+        >
+          The infrastructure is hosted on the Digital Ocean developer cloud.
+        </p>
+         
+        <img
+          alt="Digital Ocean"
+          class="infrastructure-scheme__digital-ocean-logo"
+          src="@/assets/img/GoDee/svg/digital-ocean-logo.svg"
+        />
+      </div>
+       
+      <div
+        class="infrastructure-scheme__infrastructure-preview"
+      >
+        <h3
+          class="infrastructure-scheme__preview-title"
+        >
+          What does it look like?
+        </h3>
+         
+        <p
+          class="infrastructure-scheme__description"
+        >
+          Our applications send requests to an Nginx server, and then they are processed via the 
+          <br />
+           gRPC framework and address to separate APIs for each application. APIs refer to Redis 
+          <br />
+           quick-caching Streams and Georeferencing service, which allows the bus driver to be on 
+          <br />
+           track along the way.
+        </p>
+         
+        <img
+          alt="Scheme"
+          class="infrastructure-scheme__scheme-image"
+          src="@/assets/img/GoDee/png/infrastructure-scheme.png"
+        />
+      </div>
+       
+      <div
+        class="infrastructure-scheme__technologies"
+      >
+        <p
+          class="infrastructure-scheme__description"
+        >
+          Then all information, collected and processed by those services, is controlled via the Web 
+          <br />
+           Admin panel, which is connected to the PostgreSQL database, OSRM, Firebase and push 
+          <br />
+           notification services. We use Docker containers throughout the development process.
+        </p>
+         
+        <img
+          alt="Technologies"
+          class="infrastructure-scheme__technologies-image"
+          src="@/assets/img/GoDee/svg/technologies.svg"
+        />
+      </div>
+       
+      <img
+        alt="Route line"
+        class="infrastructure-scheme__route-line infrastructure-scheme__left-route-line"
+        src="@/assets/img/GoDee/svg/infrastructure-scheme-left-route-line.svg"
+      />
+       
+      <img
+        alt="Route line"
+        class="infrastructure-scheme__route-line infrastructure-scheme__right-route-line"
+        src="@/assets/img/GoDee/svg/infrastructure-scheme-right-route-line.svg"
+      />
+    </div>
+  </section>
 </main>
 `;
