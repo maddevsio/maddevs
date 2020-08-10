@@ -50,7 +50,7 @@
 
 <script>
 export default {
-  name: 'Development Process'
+  name: 'DevelopmentProcess'
 };
 </script>
 
