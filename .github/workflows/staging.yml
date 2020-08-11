@@ -28,7 +28,7 @@ jobs:
         with:
           command: |
             docker rm -f maddevsio || true
-            docker run -d --name=maddevsio --restart=always -e NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL=${secrets.NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL} -e NODE_SENDPULSE_API_USER_ID=${secrets.NODE_SENDPULSE_API_USER_ID} -e NODE_SENDPULSE_API_KEY=${secrets.NODE_SENDPULSE_API_KEY} -e NODE_API_URL=${secrets.NODE_API_URL} -e VIRTUAL_HOST=${secrets.DOMAIN} -e LETSENCRYPT_HOST=${secrets.DOMAIN} -e LETSENCRYPT_EMAIL=${secrets.EMAIL} maddevsio/maddevsio:staging
+            docker run -d --name=maddevsio --restart=always -e NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL=${{secrets.NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL}} -e NODE_SENDPULSE_API_USER_ID=${{secrets.NODE_SENDPULSE_API_USER_ID}} -e NODE_SENDPULSE_API_KEY=${{secrets.NODE_SENDPULSE_API_KEY}} -e NODE_API_URL=${{secrets.NODE_API_URL}} -e VIRTUAL_HOST=${{secrets.DOMAIN}} -e LETSENCRYPT_HOST=${{secrets.DOMAIN}} -e LETSENCRYPT_EMAIL=${{secrets.EMAIL}} maddevsio/maddevsio:staging
           host: ${{ secrets.HOST }}
           user: github
           key: ${{ secrets.PRIVATE_KEY}}
