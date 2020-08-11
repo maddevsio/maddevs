@@ -10,7 +10,7 @@ exports[`Header renders correctly 1`] = `
     <div
       class="header-container"
     >
-      <router-link-stub
+      <nuxt-link
         class="header__logo-icon"
         to="/"
       >
@@ -39,7 +39,7 @@ exports[`Header renders correctly 1`] = `
             />
           </g>
         </svg>
-      </router-link-stub>
+      </nuxt-link>
        
       <div
         class="container"
@@ -56,30 +56,30 @@ exports[`Header renders correctly 1`] = `
               <nav
                 class="header__header-routes_links"
               >
-                <router-link-stub
+                <nuxt-link
                   exact=""
                   to="/"
                 >
                   About
-                </router-link-stub>
+                </nuxt-link>
                  
-                <router-link-stub
+                <nuxt-link
                   to="/services"
                 >
                   Services
-                </router-link-stub>
+                </nuxt-link>
                  
-                <router-link-stub
+                <nuxt-link
                   to="/projects"
                 >
                   Projects
-                </router-link-stub>
+                </nuxt-link>
                  
-                <router-link-stub
+                <nuxt-link
                   to="/careers"
                 >
                   Careers
-                </router-link-stub>
+                </nuxt-link>
                  
                 <a
                   href="https://blog.maddevs.io/"
@@ -184,7 +184,7 @@ exports[`Header renders correctly 1`] = `
     <div
       class="mobile-header__top-line"
     >
-      <router-link-stub
+      <nuxt-link
         class="mobile-header__header-logo"
         to="/"
       >
@@ -192,7 +192,7 @@ exports[`Header renders correctly 1`] = `
           alt="Logotype"
           src="@/assets/img/common/logo.svg"
         />
-      </router-link-stub>
+      </nuxt-link>
        
       <div
         class="mobile-header__button-wrap"
@@ -219,30 +219,30 @@ exports[`Header renders correctly 1`] = `
         <nav
           class="mobile-header__header-routes_links"
         >
-          <router-link-stub
+          <nuxt-link
             exact=""
             to="/"
           >
             About
-          </router-link-stub>
+          </nuxt-link>
            
-          <router-link-stub
+          <nuxt-link
             to="/services"
           >
             Services
-          </router-link-stub>
+          </nuxt-link>
            
-          <router-link-stub
+          <nuxt-link
             to="/projects"
           >
             Projects
-          </router-link-stub>
+          </nuxt-link>
            
-          <router-link-stub
+          <nuxt-link
             to="/careers"
           >
             Careers
-          </router-link-stub>
+          </nuxt-link>
            
           <a
             href="https://blog.maddevs.io/"
