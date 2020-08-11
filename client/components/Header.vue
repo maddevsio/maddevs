@@ -2,18 +2,18 @@
   <div class="header-wrapper">
     <header ref="header" class="header">
       <div class="header-container">
-      <router-link :to="`/`" class="header__logo-icon">
+      <nuxt-link :prefetch="false" :to="`/`" class="header__logo-icon">
         <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
-      </router-link>
+      </nuxt-link>
       <div class="container">
         <div class="header__header-content_logo">
           <div class="header__header-content_wrap">
           <div class="header__left-nav_bar">
             <nav class="header__header-routes_links">
-              <router-link exact to="/">About</router-link>
-              <router-link to="/services">Services</router-link>
-              <router-link to="/projects">Projects</router-link>
-              <router-link to="/careers">Careers</router-link>
+              <nuxt-link :prefetch="false" exact to="/">About</nuxt-link>
+              <nuxt-link :prefetch="false" to="/services">Services</nuxt-link>
+              <nuxt-link :prefetch="false" to="/projects">Projects</nuxt-link>
+              <nuxt-link :prefetch="false" to="/careers">Careers</nuxt-link>
               <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
             </nav>
           </div>

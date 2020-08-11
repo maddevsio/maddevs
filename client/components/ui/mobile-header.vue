@@ -1,9 +1,9 @@
 <template>
   <div class="mobile-header" :class="{ 'is-open': mobileHeaderIsOpen }">
 		<div class="mobile-header__top-line">
-			<router-link to="/" class="mobile-header__header-logo" @click.native="mobileHeaderIsOpen = false">
+			<nuxt-link :prefetch="false" to="/" class="mobile-header__header-logo" @click.native="mobileHeaderIsOpen = false">
 				<img src="@/assets/img/common/logo.svg" alt="Logotype">
-			</router-link>
+			</nuxt-link>
 			<div class="mobile-header__button-wrap">
 				<button class="mobile-header__toogle-btn" @click="toggleMobileHeader()">
 					<img src="@/assets/img/Header/mobile-header-hamburger.svg" alt="Open" class="mobile-header__open" v-if="!mobileHeaderIsOpen">
@@ -14,10 +14,10 @@
 		<perfect-scrollbar class="mobile-header__scrollbar custom-scrollbar container">
 			<div class="mobile-header__content-wrap" v-show="mobileHeaderIsOpen">
 				<nav class="mobile-header__header-routes_links">
-					<router-link exact to="/">About</router-link>
-					<router-link to="/services">Services</router-link>
-					<router-link to="/projects">Projects</router-link>
-					<router-link to="/careers">Careers</router-link>
+          <nuxt-link :prefetch="false" exact to="/">About</nuxt-link>
+					<nuxt-link :prefetch="false" to="/services">Services</nuxt-link>
+					<nuxt-link :prefetch="false" to="/projects">Projects</nuxt-link>
+					<nuxt-link :prefetch="false" to="/careers">Careers</nuxt-link>
 					<a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
 				</nav>
 				<UIButtonModalTrigger

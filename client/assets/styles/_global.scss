@@ -253,15 +253,6 @@
   resize: vertical;
 }
 
-.invalid {
-  background-color: $input-invalid--bg;
-  color: $text-color--grey-light;
-
-  &::placeholder {
-    color: $text-color--grey-light;
-  }
-}
-
 // --------------- Swiper slider pagination dots ---------------- //
 .swiper-pagination {
   width: 100%;

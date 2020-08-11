@@ -12,10 +12,10 @@
       <a href="#open-source" class="navigation-item">Open-source pet projects</a>
     </nav>
     <nav class="navigation-list" v-else>
-      <router-link to="services/#remote-tech-staff" class="navigation-item">Remote Tech Staff</router-link>
-      <router-link to="services/#software-development" class="navigation-item">Software Development</router-link>
-      <router-link to="services/#infrastructure-optimisation" class="navigation-item">Infrastructure Optimization</router-link>
-      <router-link to="services/#it-consulting" class="navigation-item">IT Consulting</router-link>
+      <nuxt-link :prefetch="false" to="services/#remote-tech-staff" class="navigation-item">Remote Tech Staff</nuxt-link>>
+      <nuxt-link :prefetch="false" to="services/#software-development" class="navigation-item">Software Development</nuxt-link>>
+      <nuxt-link :prefetch="false" to="services/#infrastructure-optimisation" class="navigation-item">Infrastructure Optimization</nuxt-link>>
+      <nuxt-link :prefetch="false" to="services/#it-consulting" class="navigation-item">IT Consulting</nuxt-link>>
     </nav>
   </div>
 </template>
