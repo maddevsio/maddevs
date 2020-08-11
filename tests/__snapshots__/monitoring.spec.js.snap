@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Monitoring renders correctly 1`] = `
+<section
+  class="monitoring"
+  id="monitoring"
+>
+  <div
+    class="container-godee"
+  >
+    <div
+      class="monitoring__text-content"
+    >
+      <h2
+        class="monitoring__main-title"
+      >
+        Monitoring
+      </h2>
+       
+      <img
+        alt="Datadog logo"
+        class="monitoring__datadog-logo"
+        src="@/assets/img/GoDee/svg/datadog-logo.svg"
+      />
+       
+      <p
+        class="monitoring__description"
+      >
+        We believe that every production system requires proper monitoring. For this purpose, we use 
+        <br />
+         Datadog service, which allows us to discover possible issues before they affect our users.
+      </p>
+    </div>
+     
+    <div
+      class="monitoring__monitoring-configuration"
+    >
+      <h3
+        class="monitoring__sub-title"
+      >
+        Here is an example of our monitoring 
+        <br />
+         configuration for the GoDee project: 
+      </h3>
+       
+      <img
+        alt="Monitoring Services"
+        class="monitoring__monitoring-services-image"
+        src="@/assets/img/GoDee/png/monitoring-services.png"
+      />
+    </div>
+  </div>
+</section>
+`;
