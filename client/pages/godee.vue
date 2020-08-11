@@ -17,6 +17,7 @@
     <InfrastructureScheme />
     <Monitoring />
     <ImplementedTechnologies />
+    <StableScalable />
   </main>
 </template>
 
@@ -38,6 +39,7 @@ import DevelopmentProcess from '@/components/GoDee/DevelopmentProcess';
 import InfrastructureScheme from '@/components/GoDee/InfrastructureScheme';
 import Monitoring from '@/components/GoDee/Monitoring';
 import ImplementedTechnologies from '@/components/GoDee/ImplementedTechnologies';
+import StableScalable from '@/components/GoDee/StableScalable';
 
 export default {
   name: 'GoDee',
@@ -58,7 +60,8 @@ export default {
     DevelopmentProcess,
     InfrastructureScheme,
     Monitoring,
-    ImplementedTechnologies
+    ImplementedTechnologies,
+    StableScalable
   },
   data() {
     return {
