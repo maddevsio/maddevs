@@ -3,7 +3,7 @@ on:
   pull_request:
   push:
     branches:
-      - AD-3889
+      - develop
 
 jobs:
   build:
