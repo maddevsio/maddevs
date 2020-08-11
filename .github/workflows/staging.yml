@@ -27,7 +27,8 @@ jobs:
         uses: fifsky/ssh-action@master
         with:
           command: |
-            docker run -d --rm --name=maddevsio --restart=always -e NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL=${NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL} -e NODE_SENDPULSE_API_USER_ID=${NODE_SENDPULSE_API_USER_ID} -e NODE_SENDPULSE_API_KEY=${NODE_SENDPULSE_API_KEY} -e NODE_API_URL=${NODE_API_URL} -e VIRTUAL_HOST=${DOMAIN} -e LETSENCRYPT_HOST=${DOMAIN} -e LETSENCRYPT_EMAIL=${EMAIL} maddevsio/maddevsio:staging
+            docker rm -f maddevsio || true
+            docker run -d --name=maddevsio --restart=always -e NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL=${NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL} -e NODE_SENDPULSE_API_USER_ID=${NODE_SENDPULSE_API_USER_ID} -e NODE_SENDPULSE_API_KEY=${NODE_SENDPULSE_API_KEY} -e NODE_API_URL=${NODE_API_URL} -e VIRTUAL_HOST=${DOMAIN} -e LETSENCRYPT_HOST=${DOMAIN} -e LETSENCRYPT_EMAIL=${EMAIL} maddevsio/maddevsio:staging
           host: ${{ secrets.HOST }}
           user: github
           key: ${{ secrets.PRIVATE_KEY}}
