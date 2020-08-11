@@ -1,22 +1,24 @@
 <template>
   <section id="impact" class="impact">
     <div class="container-godee">
-      <h2 class="impact__main-title">Impact</h2>
-      <p class="impact__description">GoDee faced the challenge of changing people’s habits. And to grow the user base, we needed to <br> create an extremely helpful and hassle-free solution. Something that creates an alternative for <br> expensive taxis and inconvenient motorbikes, remaining predictable, affordable and ‘green’ by design.</p>
-      <ul class="impact__statistic-list">
-        <li class="impact__statistic-item">
-          <div class="impact__statistic-number">44</div>
-          <p class="impact__designation">All routes</p>
-        </li>
-        <li class="impact__statistic-item">
-          <div class="impact__statistic-number">14</div>
-          <p class="impact__designation">Active routes</p>
-        </li>
-        <li class="impact__statistic-item">
-          <div class="impact__statistic-number">~4500</div>
-          <p class="impact__designation">Passengers per month</p>
-        </li>
-      </ul>
+      <div class="impact__container">
+        <h2 class="impact__main-title">Impact</h2>
+        <p class="impact__description">GoDee faced the challenge of changing people’s habits. And to grow the user base, we needed to <br> create an extremely helpful and hassle-free solution. Something that creates an alternative for <br> expensive taxis and inconvenient motorbikes, remaining predictable, affordable and ‘green’ by design.</p>
+        <ul class="impact__statistic-list">
+          <li class="impact__statistic-item">
+            <div class="impact__statistic-number">44</div>
+            <p class="impact__designation">All routes</p>
+          </li>
+          <li class="impact__statistic-item">
+            <div class="impact__statistic-number">14</div>
+            <p class="impact__designation">Active routes</p>
+          </li>
+          <li class="impact__statistic-item">
+            <div class="impact__statistic-number">~4500</div>
+            <p class="impact__designation">Passengers per month</p>
+          </li>
+        </ul>
+      </div>
       <img src="@/assets/img/GoDee/svg/impact-footer-image.svg" alt="Group of people" class="impact__footer-image">
     </div>
   </section>
@@ -67,15 +69,27 @@ export default {
       display: flex;
     }
 
-     &__statistic-list {
-       display: grid;
-       grid-template-columns: repeat(3, 1fr);
-       justify-content: center;
-       position: relative;
-     }
+    &__statistic-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      position: relative;
+    }
 
     &__statistic-item {
       flex-direction: column;
+
+      &:nth-child(1) {
+        margin-left: get-vw(40px);
+      }
+
+      &:nth-child(2) {
+        margin-right: get-vw(75px);
+      }
+
+      &:nth-child(3) {
+        margin-left: get-vw(-210px);
+      }
     }
 
     &__statistic-number {
