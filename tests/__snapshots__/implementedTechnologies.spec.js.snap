@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Implemented Technologies renders correctly 1`] = `
+<section
+  class="implemented-technologies"
+  id="implemented-technologies"
+>
+  <div
+    class="container-godee"
+  >
+    <h2
+      class="implemented-technologies__main-title"
+    >
+      Implemented technologies 
+    </h2>
+     
+    <ul
+      class="implemented-technologies__technologies-list"
+    >
+      <li
+        class="implemented-technologies__technologies-item"
+      >
+        <img
+          alt="Backend"
+          class="implemented-technologies__backend"
+          src="@/assets/img/GoDee/svg/backend-technologies.svg"
+        />
+      </li>
+       
+      <li
+        class="implemented-technologies__technologies-item"
+      >
+        <img
+          alt="Frontend"
+          class="implemented-technologies__frontend"
+          src="@/assets/img/GoDee/svg/frontend-technologies.svg"
+        />
+      </li>
+       
+      <li
+        class="implemented-technologies__technologies-item"
+      >
+        <img
+          alt="Apps"
+          class="implemented-technologies__apps"
+          src="@/assets/img/GoDee/svg/apps-technologies.svg"
+        />
+      </li>
+       
+      <li
+        class="implemented-technologies__technologies-item"
+      >
+        <img
+          alt="Task tracking"
+          class="implemented-technologies__task-tracking"
+          src="@/assets/img/GoDee/svg/task-tracking-technologies.svg"
+        />
+      </li>
+       
+      <li
+        class="implemented-technologies__technologies-item"
+      >
+        <img
+          alt="Monitoring"
+          class="implemented-technologies__monitoring"
+          src="@/assets/img/GoDee/svg/monitoring-technologies.svg"
+        />
+      </li>
+    </ul>
+  </div>
+</section>
+`;
