@@ -19,6 +19,7 @@
     <ImplementedTechnologies />
     <StableScalable />
     <Impact />
+    <TechnicalSupport />
   </main>
 </template>
 
@@ -42,6 +43,7 @@ import Monitoring from '@/components/GoDee/Monitoring';
 import ImplementedTechnologies from '@/components/GoDee/ImplementedTechnologies';
 import StableScalable from '@/components/GoDee/StableScalable';
 import Impact from '@/components/GoDee/Impact';
+import TechnicalSupport from '@/components/GoDee/TechnicalSupport';
 
 export default {
   name: 'GoDee',
@@ -64,7 +66,8 @@ export default {
     Monitoring,
     ImplementedTechnologies,
     StableScalable,
-    Impact
+    Impact,
+    TechnicalSupport
   },
   data() {
     return {
