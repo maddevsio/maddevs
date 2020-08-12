@@ -63,7 +63,7 @@ describe('CaseStudies component', () => {
     };
 
     wrapper = mount(CaseStudies, {
-      stubs: ['router-link'],
+      stubs: ['nuxt-link'],
       mocks: {
         $route
       }

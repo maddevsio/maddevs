@@ -7,7 +7,7 @@ exports[`Mobile Header renders correctly 1`] = `
   <div
     class="mobile-header__top-line"
   >
-    <nuxt-link
+    <nuxt-link-stub
       class="mobile-header__header-logo"
       to="/"
     >
@@ -15,7 +15,7 @@ exports[`Mobile Header renders correctly 1`] = `
         alt="Logotype"
         src="@/assets/img/common/logo.svg"
       />
-    </nuxt-link>
+    </nuxt-link-stub>
      
     <div
       class="mobile-header__button-wrap"
@@ -42,30 +42,30 @@ exports[`Mobile Header renders correctly 1`] = `
       <nav
         class="mobile-header__header-routes_links"
       >
-        <nuxt-link
+        <nuxt-link-stub
           exact=""
           to="/"
         >
           About
-        </nuxt-link>
+        </nuxt-link-stub>
          
-        <nuxt-link
+        <nuxt-link-stub
           to="/services"
         >
           Services
-        </nuxt-link>
+        </nuxt-link-stub>
          
-        <nuxt-link
+        <nuxt-link-stub
           to="/projects"
         >
           Projects
-        </nuxt-link>
+        </nuxt-link-stub>
          
-        <nuxt-link
+        <nuxt-link-stub
           to="/careers"
         >
           Careers
-        </nuxt-link>
+        </nuxt-link-stub>
          
         <a
           href="https://blog.maddevs.io/"

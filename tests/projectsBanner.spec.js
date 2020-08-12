@@ -13,7 +13,7 @@ describe('Projects banner', () => {
       }
     };
     wrapper = mount(ProjectsBanner, {
-      stubs: ['router-link']
+      stubs: ['nuxt-link']
     });
   });
 

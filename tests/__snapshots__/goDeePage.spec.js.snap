@@ -2148,5 +2148,299 @@ exports[`GoDee page renders correctly 1`] = `
       </div>
     </div>
   </section>
+   
+  <section
+    class="implemented-technologies"
+    id="implemented-technologies"
+  >
+    <div
+      class="container-godee"
+    >
+      <h2
+        class="implemented-technologies__main-title"
+      >
+        Implemented technologies 
+      </h2>
+       
+      <ul
+        class="implemented-technologies__technologies-list"
+      >
+        <li
+          class="implemented-technologies__technologies-item"
+        >
+          <img
+            alt="Backend"
+            class="implemented-technologies__backend"
+            src="@/assets/img/GoDee/svg/backend-technologies.svg"
+          />
+        </li>
+         
+        <li
+          class="implemented-technologies__technologies-item"
+        >
+          <img
+            alt="Frontend"
+            class="implemented-technologies__frontend"
+            src="@/assets/img/GoDee/svg/frontend-technologies.svg"
+          />
+        </li>
+         
+        <li
+          class="implemented-technologies__technologies-item"
+        >
+          <img
+            alt="Apps"
+            class="implemented-technologies__apps"
+            src="@/assets/img/GoDee/svg/apps-technologies.svg"
+          />
+        </li>
+         
+        <li
+          class="implemented-technologies__technologies-item"
+        >
+          <img
+            alt="Task tracking"
+            class="implemented-technologies__task-tracking"
+            src="@/assets/img/GoDee/svg/task-tracking-technologies.svg"
+          />
+        </li>
+         
+        <li
+          class="implemented-technologies__technologies-item"
+        >
+          <img
+            alt="Monitoring"
+            class="implemented-technologies__monitoring"
+            src="@/assets/img/GoDee/svg/monitoring-technologies.svg"
+          />
+        </li>
+      </ul>
+    </div>
+  </section>
+   
+  <section
+    class="stable-scalable"
+    id="stable-scalable"
+  >
+    <div
+      class="container-godee"
+    >
+      <h2
+        class="stable-scalable__main-title"
+      >
+        Stable & Scalable 
+        <br />
+         Solution
+      </h2>
+       
+      <p
+        class="stable-scalable__description stable-scalable__description-head"
+      >
+        Transportation & logistics software has zero-tolerance to downtime. Imagine hundreds of passengers 
+        <br />
+         not being able to book a ticket, drivers not knowing where to pick up/drop off passengers, operators 
+        <br />
+         seeing empty screens. Disaster!
+      </p>
+       
+      <img
+        alt="Man at the computer"
+        class="stable-scalable__man-at-the-computer"
+        src="@/assets/img/GoDee/svg/man-at-the-computer.svg"
+      />
+       
+      <p
+        class="stable-scalable__description stable-scalable__description-footer"
+      >
+        GoDee’s microservice architecture, as well as the quality of the solution itself, make it easy for each Mad 
+        <br />
+         Devs developer to deploy new features without causing spikes in downtime. On top of that, 
+        <span>
+          75%
+        </span>
+         of 
+        <br />
+         code is covered by various tests and has detailed documentation and pull requests. GoDee's business 
+        <br />
+         model greatly benefits from economies of scale. Thus, increased demand from Ho Chi Minh citizens is 
+        <br />
+         backed up by GoDee's unchanging low cost for infrastructure.
+      </p>
+    </div>
+  </section>
+   
+  <section
+    class="impact"
+    id="impact"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="impact__container"
+      >
+        <h2
+          class="impact__main-title"
+        >
+          Impact
+        </h2>
+         
+        <p
+          class="impact__description"
+        >
+          GoDee faced the challenge of changing people’s habits. And to grow the user base, we needed to 
+          <br />
+           create an extremely helpful and hassle-free solution. Something that creates an alternative for 
+          <br />
+           expensive taxis and inconvenient motorbikes, remaining predictable, affordable and ‘green’ by design.
+        </p>
+         
+        <ul
+          class="impact__statistic-list"
+        >
+          <li
+            class="impact__statistic-item"
+          >
+            <div
+              class="impact__statistic-number"
+            >
+              44
+            </div>
+             
+            <p
+              class="impact__designation"
+            >
+              All routes
+            </p>
+          </li>
+           
+          <li
+            class="impact__statistic-item"
+          >
+            <div
+              class="impact__statistic-number"
+            >
+              14
+            </div>
+             
+            <p
+              class="impact__designation"
+            >
+              Active routes
+            </p>
+          </li>
+           
+          <li
+            class="impact__statistic-item"
+          >
+            <div
+              class="impact__statistic-number"
+            >
+              ~4500
+            </div>
+             
+            <p
+              class="impact__designation"
+            >
+              Passengers per month
+            </p>
+          </li>
+        </ul>
+      </div>
+       
+      <img
+        alt="Group of people"
+        class="impact__footer-image"
+        src="@/assets/img/GoDee/svg/impact-footer-image.svg"
+      />
+    </div>
+  </section>
+   
+  <section
+    class="technical-support"
+    id="technical-support"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="technical-support__head-text-content"
+      >
+        <h2
+          class="technical-support__main-title"
+        >
+          Technical Support Service 
+          <br />
+           for GoDee 
+        </h2>
+         
+        <p
+          class="technical-support__description"
+        >
+          Mad Devs is still improving GoDee, developing new features and components to deliver the best possible 
+          <br />
+           user experience by analyzing their behavior and feedback. We provide technical support to GoDee’s 
+          <br />
+           customers which helps resolve all issues instantly and have a direct line with the system’s users.
+        </p>
+      </div>
+       
+      <img
+        alt="Support team"
+        class="technical-support__support-team"
+        src="@/assets/img/GoDee/png/support-team.png"
+      />
+       
+      <div
+        class="technical-support__customer-review-content"
+      >
+        <h3
+          class="technical-support__review-section-title"
+        >
+          What does our customer say about Mad Devs?
+        </h3>
+         
+        <div
+          class="technical-support__review-item"
+        >
+          <div
+            class="technical-support__customer-info"
+          >
+            <img
+              alt="Customer"
+              class="technical-support__customer-image"
+              src="@/assets/img/GoDee/png/karabukaev.png"
+            />
+             
+            <div
+              class="technical-support__info"
+            >
+              <p
+                class="technical-support__customer-name"
+              >
+                Ruslan Karabukaev
+              </p>
+               
+              <p
+                class="technical-support__position"
+              >
+                Co-founder of GoDee
+              </p>
+            </div>
+          </div>
+           
+          <p
+            class="technical-support__description technical-support__description--review"
+          >
+            We built the platforms from scratch with Mad Devs. They have dedicately and patiently support and 
+            <br />
+             guide us to take proper action on a bunch of ideas and requirements. We have attracted 27,000 
+            <br />
+             users so far thanks to their continuous support for improvement and development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 `;

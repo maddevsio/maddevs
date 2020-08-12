@@ -1,27 +1,20 @@
 import {
   mount
 } from '@vue/test-utils';
-import CareersBanner from '@/components/Banner/CareersBanner';
+import Impact from '@/components/GoDee/Impact';
 
-describe('Form checkboxes', () => {
+describe('Impact', () => {
   let wrapper;
 
   beforeEach(() => {
-    global.$nuxt = {
-      $route: {
-        name: '/'
-      }
-    };
-    wrapper = mount(CareersBanner, {
-      stubs: ['nuxt-link']
-    });
+    wrapper = mount(Impact);
   });
 
   // ------ IMPORTANT ----- //
   test('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
+
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });

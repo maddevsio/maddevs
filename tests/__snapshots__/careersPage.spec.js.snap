@@ -38,36 +38,36 @@ exports[`Careers page renders correctly 1`] = `
         <nav
           class="navigation-list"
         >
-          <nuxt-link
+          <nuxt-link-stub
             class="navigation-item"
             to="services/#remote-tech-staff"
           >
             Remote Tech Staff
-          </nuxt-link>
+          </nuxt-link-stub>
           &gt;
     
-          <nuxt-link
+          <nuxt-link-stub
             class="navigation-item"
             to="services/#software-development"
           >
             Software Development
-          </nuxt-link>
+          </nuxt-link-stub>
           &gt;
     
-          <nuxt-link
+          <nuxt-link-stub
             class="navigation-item"
             to="services/#infrastructure-optimisation"
           >
             Infrastructure Optimization
-          </nuxt-link>
+          </nuxt-link-stub>
           &gt;
     
-          <nuxt-link
+          <nuxt-link-stub
             class="navigation-item"
             to="services/#it-consulting"
           >
             IT Consulting
-          </nuxt-link>
+          </nuxt-link-stub>
           &gt;
   
         </nav>

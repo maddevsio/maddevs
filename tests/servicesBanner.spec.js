@@ -13,7 +13,7 @@ describe('Form checkboxes', () => {
       }
     };
     wrapper = mount(ServicesBanner, {
-      stubs: ['router-link'],
+      stubs: ['nuxt-link'],
       mocks: {
         $modal: {
           show: jest.fn()

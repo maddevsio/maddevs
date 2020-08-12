@@ -8,7 +8,7 @@ describe('Header', () => {
 
   beforeEach(() => {
     wrapper = mount(Header, {
-      stubs: ['router-link', 'modal', 'perfect-scrollbar']
+      stubs: ['nuxt-link', 'modal', 'perfect-scrollbar']
     });
   });
 

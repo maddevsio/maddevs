@@ -13,7 +13,7 @@ describe('Index page', () => {
       }
     };
     wrapper = mount(IndexPage, {
-      stubs: ['router-link', 'router-view', 'ValidationObserver', 'client-only']
+      stubs: ['nuxt-link', 'router-view', 'ValidationObserver', 'client-only']
     });
   });
 

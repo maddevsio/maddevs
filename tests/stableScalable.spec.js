@@ -1,27 +1,20 @@
 import {
   mount
 } from '@vue/test-utils';
-import CareersBanner from '@/components/Banner/CareersBanner';
+import StableScalable from '@/components/GoDee/StableScalable';
 
-describe('Form checkboxes', () => {
+describe('Stable Scalable', () => {
   let wrapper;
 
   beforeEach(() => {
-    global.$nuxt = {
-      $route: {
-        name: '/'
-      }
-    };
-    wrapper = mount(CareersBanner, {
-      stubs: ['nuxt-link']
-    });
+    wrapper = mount(StableScalable);
   });
 
   // ------ IMPORTANT ----- //
   test('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
+
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
