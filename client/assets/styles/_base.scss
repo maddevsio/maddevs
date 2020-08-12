@@ -52,29 +52,6 @@ main {
   margin: auto;
   padding: 0 8.5vw;
 }
-
-.sec-title {
-  width: 100%;
-  font-family: 'MADEEvolveSans-medium', sans-serif;
-  font-size: 40px;
-  line-height: 1.38;
-  text-align: center;
-  font-weight: 500;
-  color: #2c1c1c;
-  box-sizing: border-box;
-}
-
-.sec-desc {
-  font-size: 28px;
-  line-height: 1.5;
-  font-family: 'MADEEvolveSans-regular', sans-serif;
-  font-weight: normal;
-}
-
-.rotate_contacts-wrap {
-  transform: rotateY(180deg);
-  z-index: 110;
-}
 //----------- End Base classes ------------//
 
 // #region Fonts
