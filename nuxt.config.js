@@ -22,7 +22,7 @@ module.exports = {
     ],
     script: [
       {
-        src: 'https://widget.clutch.co/static/js/widget.js', defer: true, async: true
+        src: 'https://widget.clutch.co/static/js/widget.js', async: true
       }
     ]
   },
