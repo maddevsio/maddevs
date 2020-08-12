@@ -2,7 +2,7 @@
 
 exports[`GoDee page renders correctly 1`] = `
 <main
-  class="main"
+  class="main main-godee"
 >
   <section
     class="banner"
@@ -2440,6 +2440,108 @@ exports[`GoDee page renders correctly 1`] = `
           </p>
         </div>
       </div>
+    </div>
+  </section>
+   
+  <section
+    class="godee-in-the-news"
+    id="godee-in-the-news"
+  >
+    <div
+      class="container-godee"
+    >
+      <h2
+        class="godee-in-the-news__main-title"
+      >
+        GoDee in the News
+      </h2>
+       
+      <div
+        class="godee-in-the-news__central-blocks-wrapper"
+      >
+        <div
+          class="godee-in-the-news__block godee-in-the-news__left-block"
+        >
+          <img
+            alt="Phone in hand"
+            class="godee-in-the-news__block-image"
+            src="@/assets/img/GoDee/png/phone-in-hand.png"
+          />
+           
+          <div
+            class="godee-in-the-news__block-text-content"
+          >
+            <h4
+              class="godee-in-the-news__block-title"
+            >
+              Rise Above Saigon’s Traffic with GoDee: A Reliable, 
+              <br />
+               Stress-Free Commute
+            </h4>
+             
+            <p
+              class="godee-in-the-news__description"
+            >
+              Being a user of the product we have developed is key for the 
+              <br />
+               successful collaboration with GoDee...
+            </p>
+             
+            <a
+              class="godee-in-the-news__block-link"
+              href="https://saigoneer.com/"
+              target="blank"
+            >
+              saigoneer.com
+            </a>
+          </div>
+        </div>
+         
+        <div
+          class="godee-in-the-news__block godee-in-the-news__right-block"
+        >
+          <img
+            alt="Bus"
+            class="godee-in-the-news__block-image"
+            src="@/assets/img/GoDee/png/bus.png"
+          />
+           
+          <div
+            class="godee-in-the-news__block-text-content"
+          >
+            <h4
+              class="godee-in-the-news__block-title"
+            >
+              Vietnam Building Rapid Bus System 
+              <br />
+               in Ho Chi Minh City
+            </h4>
+             
+            <p
+              class="godee-in-the-news__description"
+            >
+              The company GoDee offers a car transport service, similar to 
+              <br />
+               Uber. GoDee also offers people a low-cost way to share...
+            </p>
+             
+            <a
+              class="godee-in-the-news__block-link"
+              href="https://learningenglish.voanews.com/"
+              target="blank"
+            >
+              learningenglish.voanews.com
+            </a>
+          </div>
+        </div>
+      </div>
+       
+      <a
+        class="godee-in-the-news__view-next-project"
+        href="#"
+      >
+        View next project
+      </a>
     </div>
   </section>
 </main>

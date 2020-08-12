@@ -8,7 +8,12 @@ describe('Header', () => {
 
   beforeEach(() => {
     wrapper = mount(Header, {
-      stubs: ['nuxt-link', 'modal', 'perfect-scrollbar']
+      stubs: ['nuxt-link', 'modal', 'perfect-scrollbar'],
+      mocks: { 
+        $route: {
+          name: '/'
+        }
+      }
     });
   });
 
