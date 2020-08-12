@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-      <a href="" class="godee-in-the-news__view-next-project">View next project</a>
+      <a href="#" class="godee-in-the-news__view-next-project">View next project</a>
     </div>
   </section>
 </template>
