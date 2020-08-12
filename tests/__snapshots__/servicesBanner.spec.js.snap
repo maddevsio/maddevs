@@ -57,33 +57,38 @@ exports[`Form checkboxes renders correctly 1`] = `
       <nav
         class="navigation-list"
       >
-        <router-link-stub
+        <nuxt-link
           class="navigation-item"
           to="services/#remote-tech-staff"
         >
           Remote Tech Staff
-        </router-link-stub>
-         
-        <router-link-stub
+        </nuxt-link>
+        &gt;
+    
+        <nuxt-link
           class="navigation-item"
           to="services/#software-development"
         >
           Software Development
-        </router-link-stub>
-         
-        <router-link-stub
+        </nuxt-link>
+        &gt;
+    
+        <nuxt-link
           class="navigation-item"
           to="services/#infrastructure-optimisation"
         >
           Infrastructure Optimization
-        </router-link-stub>
-         
-        <router-link-stub
+        </nuxt-link>
+        &gt;
+    
+        <nuxt-link
           class="navigation-item"
           to="services/#it-consulting"
         >
           IT Consulting
-        </router-link-stub>
+        </nuxt-link>
+        &gt;
+  
       </nav>
     </div>
   </div>
