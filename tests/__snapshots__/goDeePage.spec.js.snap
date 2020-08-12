@@ -2355,5 +2355,92 @@ exports[`GoDee page renders correctly 1`] = `
       />
     </div>
   </section>
+   
+  <section
+    class="technical-support"
+    id="technical-support"
+  >
+    <div
+      class="container-godee"
+    >
+      <div
+        class="technical-support__head-text-content"
+      >
+        <h2
+          class="technical-support__main-title"
+        >
+          Technical Support Service 
+          <br />
+           for GoDee 
+        </h2>
+         
+        <p
+          class="technical-support__description"
+        >
+          Mad Devs is still improving GoDee, developing new features and components to deliver the best possible 
+          <br />
+           user experience by analyzing their behavior and feedback. We provide technical support to GoDee’s 
+          <br />
+           customers which helps resolve all issues instantly and have a direct line with the system’s users.
+        </p>
+      </div>
+       
+      <img
+        alt="Support team"
+        class="technical-support__support-team"
+        src="@/assets/img/GoDee/png/support-team.png"
+      />
+       
+      <div
+        class="technical-support__customer-review-content"
+      >
+        <h3
+          class="technical-support__review-section-title"
+        >
+          What does our customer say about Mad Devs?
+        </h3>
+         
+        <div
+          class="technical-support__review-item"
+        >
+          <div
+            class="technical-support__customer-info"
+          >
+            <img
+              alt="Customer"
+              class="technical-support__customer-image"
+              src="@/assets/img/GoDee/png/karabukaev.png"
+            />
+             
+            <div
+              class="technical-support__info"
+            >
+              <p
+                class="technical-support__customer-name"
+              >
+                Ruslan Karabukaev
+              </p>
+               
+              <p
+                class="technical-support__position"
+              >
+                Co-founder of GoDee
+              </p>
+            </div>
+          </div>
+           
+          <p
+            class="technical-support__description technical-support__description--review"
+          >
+            We built the platforms from scratch with Mad Devs. They have dedicately and patiently support and 
+            <br />
+             guide us to take proper action on a bunch of ideas and requirements. We have attracted 27,000 
+            <br />
+             users so far thanks to their continuous support for improvement and development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 `;
