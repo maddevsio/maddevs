@@ -225,22 +225,6 @@ export default {
       height: 0.4vw;
       width: 0.6vw;
       margin-left: 0.3vw;
-      background-image: url('../assets/img/Header/dropdown-arrow.svg');
-      background-size: cover;
-    }
-    &__phones-dropdown_wrap {
-      // min-width: 200px;
-      padding-top: 1px;
-      // background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
-      background-position-y: 9px;
-      background-position-x: 170px;
-
-      &:hover {
-        .header__phones-list {
-          display: flex;
-          flex-direction: column;
-        }
-      }
     }
 
     &__phones-list {
