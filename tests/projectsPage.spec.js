@@ -13,7 +13,7 @@ describe('Projects page', () => {
       }
     };
     wrapper = mount(ProjectsPage, {
-      stubs: ['ValidationObserver', 'router-link']
+      stubs: ['ValidationObserver', 'nuxt-link']
     });
   });
 

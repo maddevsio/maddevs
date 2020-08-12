@@ -6,7 +6,7 @@ describe('Privacy', () => {
 
   beforeEach(() => {
     wrapper = mount(Privacy, {
-      stubs: ['router-link']
+      stubs: ['nuxt-link']
     });
   });
   test('is a Vue instance', () => {
