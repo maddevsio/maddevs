@@ -1,9 +1,9 @@
 <template>
   <div class="header-wrapper">
-    <header ref="header" class="header">
+    <header ref="header" class="header" :class="{'header-white': headerIsWhite}">
       <div class="header-container">
       <nuxt-link :prefetch="false" :to="`/`" class="header__logo-icon">
-        <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
+        <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState" :headerIsWhite="headerIsWhite"/>
       </nuxt-link>
       <div class="container">
         <div class="header__header-content_logo">
@@ -79,10 +79,6 @@ export default {
     return {
       buttonInnerText: 'Contact me',
       phones: [
-        // {
-        //   phoneNumber: '+1 833-MADDEVS',
-        //   country: 'united-states'
-        // },
         {
           phoneNumber: '+44 20 3984 8555',
           country: 'united-kingdom'
@@ -90,7 +86,8 @@ export default {
       ],
       selectedPhone: null,
       modalWindowName: 'contact-me-modal',
-      headerLogoTextDisplayState: false
+      headerLogoTextDisplayState: false,
+      headerIsWhite: false
     };
   },
   created() {
@@ -99,10 +96,17 @@ export default {
      * this.phones[1] is a United Kingdom number
     */
     this.selectedPhone = this.phones[0];
+
+    if(this.$route.name === 'godee') {
+      this.headerIsWhite = true;
+    } else {
+      this.headerIsWhite = false;
+    }
   },
   watch: {
     '$route'() {
       this.headerLogoTextDisplayState = false;
+      this.headerIsWhite = false;
     }
   },
   mounted() {
@@ -125,14 +129,14 @@ export default {
 
 <style lang="scss" scoped>
   @import '../assets/styles/vars';
+  @import '../assets/styles/get-vw';
 
   .header {
     width: 100%;
-    height: 2.5vw;
-    padding: 0.8vw 0;
+    padding: get-vw(15px) 0;
     position: fixed;
     z-index: 2;
-    background-color: #000;
+    background-color: $bgcolor--black;
 
     &-container {
       display: flex;
@@ -144,24 +148,22 @@ export default {
     }
 
     button {
-      padding: 0 24px;
-      height: 2.4vw;
-      margin-right: -5.5vw;
-      font-size: 1.1vw;
-      line-height: 1.1vw;
+      padding: 0 get-vw(24px);
+      height: get-vw(38px);
+      margin-right: get-vw(-92px);
+      line-height: get-vw(23px);
       white-space: nowrap;
     }
 
     &__header-logo {
-      width: 2.2vw;
-      height: auto;
+      width: get-vw(40px);
+      height: get-vw(70px);
     }
 
     &__header-content_wrap {
       display: flex;
       width: 100%;
       justify-content: space-between;
-      height: 2.4vw;
       align-items: center;
     }
 
@@ -177,9 +179,9 @@ export default {
       a {
         color: $text-color--grey;
         text-decoration: none;
-        margin-right: 1vw;
-        font-size: 1vw;
-        letter-spacing: 1px;
+        margin-right: get-vw(30px);
+        font-size: get-vw(18px);
+        letter-spacing: get-vw(1px);
         font-family: 'Hoves-Regular';
 
         &::after {
@@ -216,31 +218,8 @@ export default {
 
     &__soc-links_wrap {
       display: flex;
-      width: 6vw;
+      width: get-vw(90px);
       justify-content: space-between;
-    }
-
-    &__phones-dropdown_arrow {
-      display: inline-block;
-      height: 0.4vw;
-      width: 0.6vw;
-      margin-left: 0.3vw;
-      background-image: url('../assets/img/Header/dropdown-arrow.svg');
-      background-size: cover;
-    }
-    &__phones-dropdown_wrap {
-      // min-width: 200px;
-      padding-top: 1px;
-      // background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
-      background-position-y: 9px;
-      background-position-x: 170px;
-
-      &:hover {
-        .header__phones-list {
-          display: flex;
-          flex-direction: column;
-        }
-      }
     }
 
     &__phones-list {
@@ -251,22 +230,23 @@ export default {
     &__mailto-link,
     &__selected-phone,
     &__phone-item {
-      padding-right: 3vw;
+      padding-right: get-vw(36px);
       color: $text-color--grey;
-      font-size: 1vw;
+      font-size: get-vw(18px);
       font-family: 'Hoves-Regular';
       text-decoration: none;
       display: flex;
       align-items: center;
-      line-height: 1.8vw;
+      line-height: get-vw(1.23px);
     }
 
     &__selected-phone,
     &__phone-item {
       position: relative;
-      padding: 0 25px;
+      padding-left: get-vw(26px);
+      padding-right: get-vw(22px);
       cursor: pointer;
-      letter-spacing: 0.05vw;
+      letter-spacing: get-vw(1px);
 
       img {
         position: absolute;
@@ -280,8 +260,8 @@ export default {
     }
 
     &-social-logo {
-      width: 1.5vw;
-      height: 1.5vw;
+      width: get-vw(22px);
+      height: get-vw(22px);
       display: inline-block;
       background-repeat: no-repeat;
       background-size: contain;
@@ -300,10 +280,10 @@ export default {
       }
     }
     &__flag {
-      height: 0.8vw;
-      width: 1vw;
+      height: get-vw(14px);
+      width: get-vw(18px);
       background-repeat: no-repeat;
-      margin: 0 0.6vw 0 0;
+      margin-right: get-vw(10px);
       background-size: contain;
 
       &--united-states {
@@ -314,6 +294,10 @@ export default {
         background-image: url(../assets/img/Flags/united-kingdom.svg);
       }
     }
+  }
+
+  .header-white {
+    background-color: $bgcolor--white;
   }
 
   .mobile-menu_is-open {
