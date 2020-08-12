@@ -1,5 +1,5 @@
 <template>
-  <main class="main">
+  <main class="main main-godee">
     <Banner />
     <AboutGoDee />
     <IssuesAndSolution />
@@ -99,7 +99,7 @@ export default {
 <style lang="scss">
   @import '../assets/styles/vars';
 
-  .main {
+  .main-godee {
     background-color: $bgcolor--white;
   }
 </style>

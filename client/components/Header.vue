@@ -1,9 +1,9 @@
 <template>
   <div class="header-wrapper">
-    <header ref="header" class="header">
+    <header ref="header" class="header" :class="{'header-white': headerIsWhite}">
       <div class="header-container">
       <nuxt-link :prefetch="false" :to="`/`" class="header__logo-icon">
-        <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
+        <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState" :headerIsWhite="headerIsWhite"/>
       </nuxt-link>
       <div class="container">
         <div class="header__header-content_logo">
@@ -79,10 +79,6 @@ export default {
     return {
       buttonInnerText: 'Contact me',
       phones: [
-        // {
-        //   phoneNumber: '+1 833-MADDEVS',
-        //   country: 'united-states'
-        // },
         {
           phoneNumber: '+44 20 3984 8555',
           country: 'united-kingdom'
@@ -90,7 +86,8 @@ export default {
       ],
       selectedPhone: null,
       modalWindowName: 'contact-me-modal',
-      headerLogoTextDisplayState: false
+      headerLogoTextDisplayState: false,
+      headerIsWhite: false
     };
   },
   created() {
@@ -99,10 +96,17 @@ export default {
      * this.phones[1] is a United Kingdom number
     */
     this.selectedPhone = this.phones[0];
+
+    if(this.$route.name === 'godee') {
+      this.headerIsWhite = true;
+    } else {
+      this.headerIsWhite = false;
+    }
   },
   watch: {
     '$route'() {
       this.headerLogoTextDisplayState = false;
+      this.headerIsWhite = false;
     }
   },
   mounted() {
@@ -132,7 +136,7 @@ export default {
     padding: get-vw(15px) 0;
     position: fixed;
     z-index: 2;
-    background-color: #000;
+    background-color: $bgcolor--black;
 
     &-container {
       display: flex;
@@ -176,7 +180,7 @@ export default {
         color: $text-color--grey;
         text-decoration: none;
         margin-right: get-vw(30px);
-        font-size: get-vw(17px);
+        font-size: get-vw(18px);
         letter-spacing: get-vw(1px);
         font-family: 'Hoves-Regular';
 
@@ -218,10 +222,6 @@ export default {
       justify-content: space-between;
     }
 
-    &__phones-dropdown_wrap {
-      margin-top: get-vw(1px);
-    }
-
     &__phones-list {
       display: none;
       position: absolute;
@@ -232,7 +232,7 @@ export default {
     &__phone-item {
       padding-right: get-vw(36px);
       color: $text-color--grey;
-      font-size: get-vw(17px);
+      font-size: get-vw(18px);
       font-family: 'Hoves-Regular';
       text-decoration: none;
       display: flex;
@@ -294,6 +294,10 @@ export default {
         background-image: url(../assets/img/Flags/united-kingdom.svg);
       }
     }
+  }
+
+  .header-white {
+    background-color: $bgcolor--white;
   }
 
   .mobile-menu_is-open {
