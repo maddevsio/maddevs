@@ -72,8 +72,8 @@ export default {
 
   .ui-button-modal-trigger {
     height: get-vw(65px);
-    border: 1px solid $border-color--grey;
-    border-radius: 2px;
+    border: get-vw(1px) solid $border-color--grey;
+    border-radius: get-vw(2px);
     box-shadow: none;
     background-color: transparent;
     font-size: get-vw(18px);
@@ -81,14 +81,9 @@ export default {
     cursor: pointer;
     transition: 0.2s;
 
-    @media only screen and (max-width: 1680px) {
-      height: 65px;
-      font-size: 18px;
-    }
-
     &--red {
       color: $text-color--red;
-      border: 1px solid $border-color--red;
+      border: get-vw(1px) solid $border-color--red;
 
       &:hover {
         background-color: $bgcolor--red;
@@ -98,7 +93,7 @@ export default {
 
     &--black {
       color: $text-color--black;
-      border: 1px solid $border-color--black;
+      border: get-vw(1px) solid $border-color--black;
 
       &:hover {
         background-color: $bgcolor--black;
@@ -108,7 +103,7 @@ export default {
 
     &--grey {
       color: $text-color--grey;
-      border: 1px solid $border-color--grey;
+      border: get-vw(1px) solid $border-color--grey;
 
       &:hover {
         background-color: $bgcolor--grey;

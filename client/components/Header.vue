@@ -125,11 +125,11 @@ export default {
 
 <style lang="scss" scoped>
   @import '../assets/styles/vars';
+  @import '../assets/styles/get-vw';
 
   .header {
     width: 100%;
-    height: 2.5vw;
-    padding: 0.8vw 0;
+    padding: get-vw(15px) 0;
     position: fixed;
     z-index: 2;
     background-color: #000;
@@ -144,24 +144,22 @@ export default {
     }
 
     button {
-      padding: 0 24px;
-      height: 2.4vw;
-      margin-right: -5.5vw;
-      font-size: 1.1vw;
-      line-height: 1.1vw;
+      padding: 0 get-vw(24px);
+      height: get-vw(38px);
+      margin-right: get-vw(-92px);
+      line-height: get-vw(23px);
       white-space: nowrap;
     }
 
     &__header-logo {
-      width: 2.2vw;
-      height: auto;
+      width: get-vw(40px);
+      height: get-vw(70px);
     }
 
     &__header-content_wrap {
       display: flex;
       width: 100%;
       justify-content: space-between;
-      height: 2.4vw;
       align-items: center;
     }
 
@@ -177,9 +175,9 @@ export default {
       a {
         color: $text-color--grey;
         text-decoration: none;
-        margin-right: 1vw;
-        font-size: 1vw;
-        letter-spacing: 1px;
+        margin-right: get-vw(30px);
+        font-size: get-vw(17px);
+        letter-spacing: get-vw(1px);
         font-family: 'Hoves-Regular';
 
         &::after {
@@ -216,15 +214,12 @@ export default {
 
     &__soc-links_wrap {
       display: flex;
-      width: 6vw;
+      width: get-vw(90px);
       justify-content: space-between;
     }
 
-    &__phones-dropdown_arrow {
-      display: inline-block;
-      height: 0.4vw;
-      width: 0.6vw;
-      margin-left: 0.3vw;
+    &__phones-dropdown_wrap {
+      margin-top: get-vw(1px);
     }
 
     &__phones-list {
@@ -235,22 +230,23 @@ export default {
     &__mailto-link,
     &__selected-phone,
     &__phone-item {
-      padding-right: 3vw;
+      padding-right: get-vw(36px);
       color: $text-color--grey;
-      font-size: 1vw;
+      font-size: get-vw(17px);
       font-family: 'Hoves-Regular';
       text-decoration: none;
       display: flex;
       align-items: center;
-      line-height: 1.8vw;
+      line-height: get-vw(1.23px);
     }
 
     &__selected-phone,
     &__phone-item {
       position: relative;
-      padding: 0 25px;
+      padding-left: get-vw(26px);
+      padding-right: get-vw(22px);
       cursor: pointer;
-      letter-spacing: 0.05vw;
+      letter-spacing: get-vw(1px);
 
       img {
         position: absolute;
@@ -264,8 +260,8 @@ export default {
     }
 
     &-social-logo {
-      width: 1.5vw;
-      height: 1.5vw;
+      width: get-vw(22px);
+      height: get-vw(22px);
       display: inline-block;
       background-repeat: no-repeat;
       background-size: contain;
@@ -284,10 +280,10 @@ export default {
       }
     }
     &__flag {
-      height: 0.8vw;
-      width: 1vw;
+      height: get-vw(14px);
+      width: get-vw(18px);
       background-repeat: no-repeat;
-      margin: 0 0.6vw 0 0;
+      margin-right: get-vw(10px);
       background-size: contain;
 
       &--united-states {
