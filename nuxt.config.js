@@ -95,6 +95,7 @@ module.exports = {
   ],
   gtm: {
     id: 'GTM-NNKVRF3',
+    scriptDefer: true,
     enabled: true
   },
   axios: {
