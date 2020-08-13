@@ -3,11 +3,21 @@
     <AboutBanner />
     <WeCreateItProjectFor />
     <TechnologiesAndTools />
-    <CaseStudies />
-    <QuickProjectStart />
-    <CustomerTestimonials />
-    <WhyUs />
-    <MeetOurExperts />
+    <LazyHydrate  when-visible >
+      <CaseStudies />
+    </LazyHydrate>
+    <LazyHydrate  when-visible >
+      <QuickProjectStart />
+    </LazyHydrate>
+    <LazyHydrate  when-visible >
+      <CustomerTestimonials />
+    </LazyHydrate>
+    <LazyHydrate  when-visible >
+      <WhyUs />
+    </LazyHydrate>
+    <LazyHydrate  when-visible >
+      <MeetOurExperts />
+    </LazyHydrate>
   </main>
 </template>
 
@@ -20,6 +30,7 @@ import QuickProjectStart from '@/components/About/QuickProjectStart';
 import CustomerTestimonials from '@/components/About/CustomerTestimonials';
 import WhyUs from '@/components/About/WhyUs';
 import MeetOurExperts from '@/components/About/MeetOurExperts';
+import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
   name: 'About',
@@ -31,7 +42,8 @@ export default {
     CaseStudies,
     QuickProjectStart,
     WhyUs,
-    MeetOurExperts
+    MeetOurExperts,
+    LazyHydrate
   },
   data() {
     return {

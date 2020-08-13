@@ -22,7 +22,7 @@ module.exports = {
     ],
     script: [
       {
-        src: 'https://widget.clutch.co/static/js/widget.js', ssr: false
+        src: 'https://widget.clutch.co/static/js/widget.js', defer: true
       }
     ]
   },
@@ -87,6 +87,7 @@ module.exports = {
       }
     }
   },
+  transpile: ['vue-lazy-hydration'],
   modules: [
     '@/modules/static',
     '@/modules/crawler',
