@@ -87,6 +87,7 @@ module.exports = {
       }
     }
   },
+  transpile: ['vue-lazy-hydration'],
   modules: [
     '@/modules/static',
     '@/modules/crawler',
