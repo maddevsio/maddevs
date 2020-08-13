@@ -42,7 +42,8 @@ export default {
     GetCaseStudiesModal,
     OrderProjectFromUsModal,
     GetYourTrustedItPartnerModal,
-    GetExpertAdvice
+    GetExpertAdvice,
+    Cookie
   },
   mounted() {
     this.$nextTick(() => {
