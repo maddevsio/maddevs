@@ -22,7 +22,7 @@ module.exports = {
     ],
     script: [
       {
-        src: 'https://widget.clutch.co/static/js/widget.js', ssr: false
+        src: 'https://widget.clutch.co/static/js/widget.js', defer: true, async: true
       }
     ]
   },
@@ -96,7 +96,8 @@ module.exports = {
   gtm: {
     id: 'GTM-NNKVRF3',
     scriptDefer: true,
-    enabled: true
+    enabled: true,
+    async: true
   },
   axios: {
     baseURL: process.env.NODE_API_URL
