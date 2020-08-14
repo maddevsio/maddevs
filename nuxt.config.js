@@ -55,7 +55,7 @@ module.exports = {
       '/gdpr',
       '/nda',
       '/privacy',
-      '/godee',
+      '/go-dee-case-study',
       '/blog'
     ]
   },

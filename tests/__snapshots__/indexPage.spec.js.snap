@@ -1266,7 +1266,7 @@ exports[`Index page renders correctly 1`] = `
         </a>
         <a
           class="single-project"
-          href="/godee"
+          href="/go-dee-case-study"
           style="background: rgb(255, 106, 1);"
         >
           <div
@@ -1578,7 +1578,7 @@ exports[`Index page renders correctly 1`] = `
           >
             <a
               class="single-project"
-              href="/godee"
+              href="/go-dee-case-study"
               style="background: rgb(255, 106, 1);"
             >
               <div

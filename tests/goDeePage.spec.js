@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import GoDeePage from '@/pages/godee';
+import GoDeePage from '@/pages/go-dee-case-study';
 
 describe('GoDee page', () => {
   let wrapper;

@@ -97,7 +97,7 @@ export default {
       &__link {
         width: 16px;
         height: 16px;
-        margin-right: 35px;
+        margin-right: 40px;
       }
 		}
 	}
@@ -107,7 +107,7 @@ export default {
       &__link {
         width: 16px;
         height: 16px;
-        margin-right: get-vw(35px, 420);
+        margin-right: get-vw(45px, 420);
       }
 		}
 	}
