@@ -3,21 +3,11 @@
     <AboutBanner />
     <WeCreateItProjectFor />
     <TechnologiesAndTools />
-    <LazyHydrate  when-visible >
-      <CaseStudies />
-    </LazyHydrate>
-    <LazyHydrate  when-visible >
-      <QuickProjectStart />
-    </LazyHydrate>
-    <LazyHydrate  when-visible >
-      <CustomerTestimonials />
-    </LazyHydrate>
-    <LazyHydrate  when-visible >
-      <WhyUs />
-    </LazyHydrate>
-    <LazyHydrate  when-visible >
-      <MeetOurExperts />
-    </LazyHydrate>
+    <CaseStudies />
+    <QuickProjectStart />
+    <CustomerTestimonials />
+    <WhyUs />
+    <MeetOurExperts />
   </main>
 </template>
 
@@ -30,7 +20,6 @@ import QuickProjectStart from '@/components/About/QuickProjectStart';
 import CustomerTestimonials from '@/components/About/CustomerTestimonials';
 import WhyUs from '@/components/About/WhyUs';
 import MeetOurExperts from '@/components/About/MeetOurExperts';
-import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
   name: 'About',
@@ -42,10 +31,11 @@ export default {
     CaseStudies,
     QuickProjectStart,
     WhyUs,
-    MeetOurExperts,
-    LazyHydrate
+    MeetOurExperts
   },
   data() {
+    // TODO remove console after optimize perfomance
+    console.log('test fonts v1.3');
     return {
       title: 'Mad Devs: Software & Mobile App Development Company',
       description: 'We develop tailored software solutions for corporations using the present-day developer tools and technology stack. Mad Devs acts as a part of your extended team, and you get your systems properly administered and monitored',

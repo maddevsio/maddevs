@@ -156,7 +156,7 @@ export default {
     &__taxi-main-title,
     &__price-value,
     &__result-item {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__transportation {
@@ -227,7 +227,7 @@ export default {
     &__taxi-description,
     &__solution-description {
       font-size: get-vw(24px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       letter-spacing: get-vw(-1px);
     }
 
@@ -354,7 +354,7 @@ export default {
     &__price-description {
       margin-bottom: get-vw(25px);
       font-size: get-vw(28px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       letter-spacing: get-vw(-0.8px);
       color: $text-color--grey;
     }
@@ -392,7 +392,7 @@ export default {
       margin-bottom: get-vw(16px);
       font-size: get-vw(50px);
       letter-spacing: get-vw(-2px);
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__solution-main-title,

@@ -33,7 +33,7 @@ export default {
       font-size: 40px;
       color: $text-color--red;
       letter-spacing: -1px;
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__info-text {
@@ -41,7 +41,7 @@ export default {
       font-size: 18px;
       color: $text-color--grey;
       letter-spacing: -0.03em;
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
     }
 
     .close-modal {

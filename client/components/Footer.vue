@@ -78,7 +78,7 @@ export default {
 			margin-left: get-vw(28px);
 			color: $text-color--red;
 			font-size: get-vw(70px);
-			font-family: 'Hoves-Bold';
+			font-family: 'Hoves-Bold', sans-serif;
 			text-decoration: none;
 			border-bottom: 1px solid;
 			letter-spacing: get-vw(-2px);
@@ -97,7 +97,7 @@ export default {
 		&__bottom-link,
 		&__company-name {
 			font-size: get-vw(16px);
-			font-family: 'Hoves-Regular';
+			font-family: 'Hoves-Regular', sans-serif;
 			color: $text-color--grey;
 		}
 

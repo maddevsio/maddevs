@@ -68,7 +68,7 @@ export default {
 
     &__main-title,
     &__sub-title {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__main-title {
@@ -86,7 +86,7 @@ export default {
 
     &__description {
       font-size: get-vw(24px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       letter-spacing: get-vw(-1px);
       color: $text-color--grey-dark;
     }

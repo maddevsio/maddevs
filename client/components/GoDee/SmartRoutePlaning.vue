@@ -49,7 +49,7 @@ export default {
     &__main-title,
     &__sub-title,
     &__description-bold {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__main-title {
@@ -72,16 +72,16 @@ export default {
     &__description,
     &__description-bold {
       margin-bottom: get-vw(40px);
-    } 
+    }
 
     &__description {
       font-size: get-vw(24px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       line-height: get-vw(33px);
       color: $text-color--grey-dark;
 
       span {
-        font-family: 'Hoves-Bold';
+        font-family: 'Hoves-Bold', sans-serif;
       }
     }
 

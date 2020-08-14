@@ -117,7 +117,7 @@ export default {
           display: none;
         }
       }
-    } 
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -197,6 +197,6 @@ export default {
       p {
         margin-bottom: get-vw(13px, 375);
       }
-    } 
+    }
   }
 </style>

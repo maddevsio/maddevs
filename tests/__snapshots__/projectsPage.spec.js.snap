@@ -124,6 +124,7 @@ exports[`Projects page renders correctly 1`] = `
               <img
                 alt="nambafood"
                 class="single-project__logo"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -176,7 +177,7 @@ exports[`Projects page renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background single-project__background_first-project"
+            class="single-project__background single-project__background--nambafood"
           />
         </a>
         <a
@@ -193,6 +194,7 @@ exports[`Projects page renders correctly 1`] = `
               <img
                 alt="teacherly"
                 class="single-project__logo"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -245,7 +247,7 @@ exports[`Projects page renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background"
+            class="single-project__background single-project__background--teacherly"
           />
         </a>
         <a
@@ -262,6 +264,7 @@ exports[`Projects page renders correctly 1`] = `
               <img
                 alt="guardrails"
                 class="single-project__logo"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -314,7 +317,7 @@ exports[`Projects page renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background single-project__background_guardrails"
+            class="single-project__background single-project__background--guardrails"
           />
         </a>
         <a
@@ -331,6 +334,7 @@ exports[`Projects page renders correctly 1`] = `
               <img
                 alt="godee"
                 class="single-project__logo"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -387,7 +391,7 @@ exports[`Projects page renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background single-project__background_godee"
+            class="single-project__background single-project__background--godee"
           />
         </a>
       </div>
@@ -420,6 +424,7 @@ exports[`Projects page renders correctly 1`] = `
                   <img
                     alt="nambafood"
                     class="single-project__logo"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    
@@ -472,7 +477,7 @@ exports[`Projects page renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background single-project__background_first-project"
+                class="single-project__background single-project__background--nambafood"
               />
             </a>
           </div>
@@ -493,6 +498,7 @@ exports[`Projects page renders correctly 1`] = `
                   <img
                     alt="teacherly"
                     class="single-project__logo"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    
@@ -545,7 +551,7 @@ exports[`Projects page renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background"
+                class="single-project__background single-project__background--teacherly"
               />
             </a>
           </div>
@@ -566,6 +572,7 @@ exports[`Projects page renders correctly 1`] = `
                   <img
                     alt="guardrails"
                     class="single-project__logo"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    
@@ -618,7 +625,7 @@ exports[`Projects page renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background single-project__background_guardrails"
+                class="single-project__background single-project__background--guardrails"
               />
             </a>
           </div>
@@ -639,6 +646,7 @@ exports[`Projects page renders correctly 1`] = `
                   <img
                     alt="godee"
                     class="single-project__logo"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    
@@ -695,7 +703,7 @@ exports[`Projects page renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background single-project__background_godee"
+                class="single-project__background single-project__background--godee"
               />
             </a>
           </div>

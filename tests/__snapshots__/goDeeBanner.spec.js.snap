@@ -20,6 +20,7 @@ exports[`GoDee banner renders correctly 1`] = `
           <img
             alt="GoDee"
             class="banner__main-title-logo"
+            loading="lazy"
             src="@/assets/img/GoDee/svg/goodee-logo.svg"
           />
         </h1>
@@ -49,6 +50,7 @@ exports[`GoDee banner renders correctly 1`] = `
         <img
           alt="preview"
           class="banner__phone-image"
+          loading="lazy"
           src="@/assets/img/GoDee/svg/godee-iphonex.svg"
         />
       </div>
@@ -56,6 +58,7 @@ exports[`GoDee banner renders correctly 1`] = `
       <img
         alt="Route"
         class="banner__route-line"
+        loading="lazy"
         src="@/assets/img/GoDee/svg/banner-godee-route-line.svg"
       />
     </div>

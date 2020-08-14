@@ -17,6 +17,7 @@
         </h2>
         <img
           class="projects-flame-background"
+          loading="lazy"
           src="@/assets/img/Projects/png/projects-flame-bg.png"
           alt="Projects Flame Image"
           v-if="currentPageName === 'projects'"

@@ -6,14 +6,14 @@
       </div>
       <div class="mobile-info">
         <div class="mobile-profile">
-          <img :src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)" class="mobile-customer_image" :alt="testimonial.customerName">
+          <img loading="lazy" :src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)" class="mobile-customer_image" :alt="testimonial.customerName">
           <p class="mobile-customer_name">
             {{ testimonial.customerName }} <br> {{ testimonial.customerCountry }}
           </p>
         </div>
         <div class="mobile-project">
           <a :href="testimonial.link" target="blank" rel="nofollow">
-            <img :src="require(`@/assets/img/Home/svg/customerTestimonials/${testimonial.customerProject}.svg`)" class="mobile-project_image" :class="testimonial.customerProject" :alt="testimonial.customerProject">
+            <img loading="lazy" :src="require(`@/assets/img/Home/svg/customerTestimonials/${testimonial.customerProject}.svg`)" class="mobile-project_image" :class="testimonial.customerProject" :alt="testimonial.customerProject">
           </a>
         </div>
       </div>
