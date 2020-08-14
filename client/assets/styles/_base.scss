@@ -57,13 +57,14 @@ main {
 // #region Fonts
 
 @font-face {
-  font-family: 'Hoves-Bold', sans-serif;
+  font-family: 'Hoves-Bold';
   src: url('../fonts/Hoves/TT-Hoves-Bold.woff') format('woff');
+  font-weight: bold;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Hoves-Regular', sans-serif;
+  font-family: 'Hoves-Regular';
   src: url('../fonts/Hoves/TT-Hoves-Regular.woff') format('woff');
   font-display: swap;
 }
