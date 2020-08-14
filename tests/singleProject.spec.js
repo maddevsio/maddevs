@@ -73,7 +73,7 @@ describe('CaseStudies component', () => {
     wrapper = mount(SingleProject, {
       propsData: props
     });
-    
+
     const container = wrapper.findAll('.single-project__container').at(0);
     expect(container.classes()).not.toContain('single-project__container_white-letters-theme');
   });
@@ -94,7 +94,7 @@ describe('CaseStudies component', () => {
       propsData: props
     });
     const background = wrapper.findAll('.single-project__background').at(0);
-    expect(background.classes()).toContain('single-project__background_first-project');
+    expect(background.classes()).toContain('single-project__background--nambafood');
   });
 
   test('shoud add single-project__background_guardrails class to .single-project__background if projectName will be guardrails', () => {
@@ -109,7 +109,7 @@ describe('CaseStudies component', () => {
       propsData: props
     });
     const background = wrapper.findAll('.single-project__background').at(0);
-    expect(background.classes()).toContain('single-project__background_guardrails');
+    expect(background.classes()).toContain('single-project__background--guardrails');
   });
 
   test('shoud add single-project__background_godee class to .single-project__background if projectName will be godee', () => {
@@ -124,7 +124,7 @@ describe('CaseStudies component', () => {
       propsData: props
     });
     const background = wrapper.findAll('.single-project__background').at(0);
-    expect(background.classes()).toContain('single-project__background_godee');
+    expect(background.classes()).toContain('single-project__background--godee');
   });
 
   test('shoud not add single-project__background_first-project class to .single-project__background if projectName will be nambafood', () => {
@@ -140,6 +140,6 @@ describe('CaseStudies component', () => {
     });
 
     const background = wrapper.findAll('.single-project__background').at(0);
-    expect(background.classes()).not.toContain('single-project__background_first-project');
+    expect(background.classes()).not.toContain('single-project__background--godee');
   });
 });

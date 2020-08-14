@@ -25,7 +25,7 @@ const createWave = (el, binding) => {
       wave.classList.add('wave--dark');
     }
     el.appendChild(wave);
-    el.addEventListener('click', startAnimation);
+    el.addEventListener('click', startAnimation, {passive: true});
   }
 };
 

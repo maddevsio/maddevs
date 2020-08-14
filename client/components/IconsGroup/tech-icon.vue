@@ -189,7 +189,7 @@ export default {
       }
 
       &--confluence {
-        background-image: url(../../assets/img/Technologies/png/confluence.png);
+        background-image: url(../../assets/img/Technologies/svg/confluence.svg);
       }
 
       &--trello {
@@ -201,7 +201,7 @@ export default {
       }
 
       &--google-meet {
-        background-image: url(../../assets/img/Technologies/png/google-meet.png);
+        background-image: url(../../assets/img/Technologies/svg/google-meet.svg);
       }
 
       &--zoom {
