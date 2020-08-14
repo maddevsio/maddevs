@@ -10,10 +10,10 @@
           <div class="header__header-content_wrap">
           <div class="header__left-nav_bar">
             <nav class="header__header-routes_links">
-              <nuxt-link :prefetch="false" exact to="/">About</nuxt-link>
-              <nuxt-link :prefetch="false" to="/services">Services</nuxt-link>
-              <nuxt-link :prefetch="false" to="/projects">Projects</nuxt-link>
-              <nuxt-link :prefetch="false" to="/careers">Careers</nuxt-link>
+              <nuxt-link @click.native="goToTopPage" :prefetch="false" exact to="/">About</nuxt-link>
+              <nuxt-link @click.native="goToTopPage" :prefetch="false" to="/services">Services</nuxt-link>
+              <nuxt-link @click.native="goToTopPage" :prefetch="false" to="/projects">Projects</nuxt-link>
+              <nuxt-link @click.native="goToTopPage" :prefetch="false" to="/careers">Careers</nuxt-link>
               <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
             </nav>
           </div>
@@ -117,6 +117,9 @@ export default {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
+    goToTopPage() {
+      window.scrollTo(0, 0);
+    },
     handleScroll() {
       if(window.pageYOffset >= 100)
         this.headerLogoTextDisplayState = true;
