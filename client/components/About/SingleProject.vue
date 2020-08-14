@@ -13,6 +13,7 @@
       <div class="single-project__content-wrap">
         <img
           :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)"
+          loading="lazy"
           class="single-project__logo"
           :alt="project.projectName"
         />

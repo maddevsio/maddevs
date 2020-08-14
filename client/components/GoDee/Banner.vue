@@ -4,15 +4,15 @@
       <div class="banner__banner-content">
         <div class="banner__text-content">
           <h1 class="banner__main-title">
-            <img src="@/assets/img/GoDee/svg/goodee-logo.svg" class="banner__main-title-logo" alt="GoDee">
+            <img loading="lazy" src="@/assets/img/GoDee/svg/goodee-logo.svg" class="banner__main-title-logo" alt="GoDee">
           </h1>
           <h3 class="banner__sub-title">Convenient shuttle <br> bus service</h3>
           <p class="banner__description">Mad Devs helped GoDee to develop feature-rich <br> software to re-invent public mobility by building new <br> smart ways of daily commute.</p>
         </div>
         <div class="banner__phone-wrapper">
-          <img src="@/assets/img/GoDee/svg/godee-iphonex.svg" class="banner__phone-image" alt="preview">
+          <img loading="lazy" src="@/assets/img/GoDee/svg/godee-iphonex.svg" class="banner__phone-image" alt="preview">
         </div>
-        <img src="@/assets/img/GoDee/svg/banner-godee-route-line.svg" class="banner__route-line" alt="Route">
+        <img loading="lazy" src="@/assets/img/GoDee/svg/banner-godee-route-line.svg" class="banner__route-line" alt="Route">
       </div>
     </div>
   </section>
