@@ -72,7 +72,7 @@ exports[`CaseStudies component renders correctly 1`] = `
   </div>
    
   <div
-    class="single-project__background single-project__background_godee"
+    class="single-project__background single-project__background--godee"
   />
 </a>
 `;

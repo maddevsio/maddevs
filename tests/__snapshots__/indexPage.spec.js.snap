@@ -1121,7 +1121,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background single-project__background_first-project"
+            class="single-project__background single-project__background--nambafood"
           />
         </a>
         <a
@@ -1191,7 +1191,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background"
+            class="single-project__background single-project__background--teacherly"
           />
         </a>
         <a
@@ -1261,7 +1261,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background single-project__background_guardrails"
+            class="single-project__background single-project__background--guardrails"
           />
         </a>
         <a
@@ -1335,7 +1335,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background single-project__background_godee"
+            class="single-project__background single-project__background--godee"
           />
         </a>
       </div>
@@ -1421,7 +1421,7 @@ exports[`Index page renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background single-project__background_first-project"
+                class="single-project__background single-project__background--nambafood"
               />
             </a>
           </div>
@@ -1495,7 +1495,7 @@ exports[`Index page renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background"
+                class="single-project__background single-project__background--teacherly"
               />
             </a>
           </div>
@@ -1569,7 +1569,7 @@ exports[`Index page renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background single-project__background_guardrails"
+                class="single-project__background single-project__background--guardrails"
               />
             </a>
           </div>
@@ -1647,7 +1647,7 @@ exports[`Index page renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background single-project__background_godee"
+                class="single-project__background single-project__background--godee"
               />
             </a>
           </div>
