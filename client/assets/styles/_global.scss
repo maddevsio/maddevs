@@ -61,7 +61,7 @@
 }
 
 .main-title {
-  font-family: 'Hoves-Bold';
+  font-family: 'Hoves-Bold', sans-serif;
   font-size: 8vw;
   letter-spacing: -5px;
   line-height: 100%;
@@ -76,24 +76,24 @@
 .sub-title,
 .sub-paragraph,
 .section-title {
-  font-family: 'Hoves-Bold';
+  font-family: 'Hoves-Bold', sans-serif;
 }
 
 .form-text {
-  font-family: 'Hoves-Regular';
+  font-family: 'Hoves-Regular', sans-serif;
   font-size: get-vw(40px);
   font-weight: 500;
 }
 
 .doc-text {
-  font-family: 'Hoves-Regular';
+  font-family: 'Hoves-Regular', sans-serif;
   font-size: get-vw(24px);
   font-weight: normal;
 }
 
 .block-paragraph {
   font-size: 4.3vw;
-  font-family: 'Hoves-Bold';
+  font-family: 'Hoves-Bold', sans-serif;
   letter-spacing: get-vw(-1px);
 }
 
@@ -117,7 +117,7 @@
 
 .paragraph {
   font-size: 1.2vw;
-  font-family: 'Hoves-Regular';
+  font-family: 'Hoves-Regular', sans-serif;
   line-height: 129%;
   letter-spacing: -0.02em;
 }
@@ -144,7 +144,7 @@
   span {
     padding-left: 7px;
     color: $text-color--grey;
-    font-family: 'Hoves-Regular';
+    font-family: 'Hoves-Regular', sans-serif;
   }
 }
 
@@ -165,7 +165,7 @@
   margin-bottom: 6px;
   color: $text-color--grey;
   font-size: 16px;
-  font-family: 'Hoves-Regular';
+  font-family: 'Hoves-Regular', sans-serif;
 }
 
 .entry-field {
@@ -176,7 +176,7 @@
   background-color: $input-bgcolor--grey-dark;
   color: $text-color--grey;
   font-size: 18px;
-  font-family: 'Hoves-Regular';
+  font-family: 'Hoves-Regular', sans-serif;
   box-sizing: border-box;
 
   &::placeholder {
@@ -204,7 +204,7 @@
   padding-left: 33px;
   color: $label-text--grey-dark;
   font-size: 18px;
-  font-family: 'Hoves-Regular';
+  font-family: 'Hoves-Regular', sans-serif;
   user-select: none;
   cursor: pointer;
   letter-spacing: -0.03em;
@@ -243,7 +243,7 @@
   margin-top: 7px;
   color: $text-color--red-opacity;
   font-size: get-vw(16px);
-  font-family: 'Hoves-Regular';
+  font-family: 'Hoves-Regular', sans-serif;
 }
 
 .textarea {
@@ -294,7 +294,7 @@
   .banner-main_title,
   .banner-main_title--white,
   .banner-main_title--white-first {
-    font-family: 'Hoves-Bold';
+    font-family: 'Hoves-Bold', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 10.4vw;

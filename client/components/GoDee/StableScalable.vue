@@ -27,7 +27,7 @@ export default {
       margin-bottom: get-vw(42px);
       font-size: get-vw(90px);
       letter-spacing: get-vw(-3px);
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
       color: $accent-orange-text-color;
     }
 
@@ -35,12 +35,12 @@ export default {
       position: relative;
       font-size: get-vw(24px);
       line-height: get-vw(33px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       letter-spacing: get-vw(-1px);
       color: $text-color--grey-dark;
 
       span {
-        font-family: 'Hoves-Bold';
+        font-family: 'Hoves-Bold', sans-serif;
       }
     }
 

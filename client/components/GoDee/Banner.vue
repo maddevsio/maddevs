@@ -56,7 +56,7 @@ export default {
 
     &__sub-title,
     &__description {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__sub-title,

@@ -51,7 +51,7 @@ export default {
       border-radius: 0.1vw;
       color: $text-color--red;
       font-size: 1vw;
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       letter-spacing: -0.03em;
       box-shadow: none;
       transition: 0.2s;
@@ -76,7 +76,7 @@ export default {
     p {
       margin: 0 1.5vw;
       color: $text-color--white;
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       font-size: 1vw;
       line-height: 1.4;
       letter-spacing: 0.02em;
@@ -99,7 +99,7 @@ export default {
         margin: 0 1.8vw;
         font-size: 1.5vw;
       }
-    } 
+    }
 
   }
 
@@ -112,7 +112,7 @@ export default {
         width: 100%;
         height: 7.2vw;
         font-size: 2.5vw;
-        font-family: 'Hoves-Bold';
+        font-family: 'Hoves-Bold', sans-serif;
       }
 
       img {
@@ -128,7 +128,7 @@ export default {
           display: none;
         }
       }
-    } 
+    }
   }
 
   @media only screen and (max-width: 340px) {
@@ -137,10 +137,10 @@ export default {
         height: 8.5vw;
       }
 
-      .cookie-notif_button, 
+      .cookie-notif_button,
       p {
         font-size: 3.1vw;
       }
-    } 
+    }
   }
 </style>

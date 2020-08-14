@@ -81,7 +81,7 @@ export default {
 
     &__main-title,
     &__features-title {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__main-title {
@@ -99,7 +99,7 @@ export default {
     &__description,
     &__features-item {
       font-size: get-vw(24px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       line-height: get-vw(33px);
       color: $text-color--grey-dark;
     }

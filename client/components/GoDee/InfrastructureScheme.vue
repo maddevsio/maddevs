@@ -5,7 +5,7 @@
         <h2 class="infrastructure-scheme__main-title">Infrastructure scheme</h2>
         <p class="infrastructure-scheme__description">The infrastructure is hosted on the Digital Ocean developer cloud.</p>
         <img src="@/assets/img/GoDee/svg/digital-ocean-logo.svg" alt="Digital Ocean" class="infrastructure-scheme__digital-ocean-logo">
-      </div> 
+      </div>
       <div class="infrastructure-scheme__infrastructure-preview">
         <h3 class="infrastructure-scheme__preview-title">What does it look like?</h3>
         <p class="infrastructure-scheme__description">Our applications send requests to an Nginx server, and then they are processed via the <br> gRPC framework and address to separate APIs for each application. APIs refer to Redis <br> quick-caching Streams and Georeferencing service, which allows the bus driver to be on <br> track along the way.</p>
@@ -40,10 +40,10 @@ export default {
     &__technologies {
       text-align: center;
     }
-    
+
     &__main-title,
     &__preview-title {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__main-title {
@@ -55,7 +55,7 @@ export default {
 
     &__description {
       font-size: get-vw(24px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       letter-spacing: get-vw(-1px);
       line-height: get-vw(33px);
       color: $text-color--grey;

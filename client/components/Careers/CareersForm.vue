@@ -220,7 +220,7 @@ export default {
 
           &::after {
             content: 'roles.';
-            font-family: 'Hoves-Regular';
+            font-family: 'Hoves-Regular', sans-serif;
             font-size: get-vw(40px);
             font-weight: 500;
             margin-left: get-vw(10px);
@@ -274,7 +274,7 @@ export default {
   }
 
   &__form-description {
-    font-family: 'Hoves-Regular';
+    font-family: 'Hoves-Regular', sans-serif;
     color: $text-color--black;
     font-weight: 500;
   }

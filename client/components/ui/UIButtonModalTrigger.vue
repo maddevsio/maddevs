@@ -77,7 +77,7 @@ export default {
     box-shadow: none;
     background-color: transparent;
     font-size: get-vw(18px);
-    font-family: 'Hoves-Regular';
+    font-family: 'Hoves-Regular', sans-serif;
     cursor: pointer;
     transition: 0.2s;
 

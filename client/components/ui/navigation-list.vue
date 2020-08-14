@@ -48,7 +48,7 @@ export default {
       padding-right: 5vw;
       color: $text-color--grey-light;
       font-size: 1.4vw;
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       letter-spacing: -0.045em;
       &::before {
         content: '';

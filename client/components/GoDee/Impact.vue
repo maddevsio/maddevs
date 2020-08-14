@@ -41,7 +41,7 @@ export default {
     &__main-title,
     &__statistic-number,
     &__designation {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__main-title {
@@ -61,7 +61,7 @@ export default {
       margin-bottom: get-vw(61px);
       font-size: get-vw(24px);
       line-height: get-vw(33px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       color: $text-color--grey-dark;
     }
 

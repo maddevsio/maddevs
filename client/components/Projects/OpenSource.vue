@@ -178,7 +178,7 @@ export default {
 
   &__industry {
     width: min-content;
-    font-family: 'Hoves-Regular';
+    font-family: 'Hoves-Regular', sans-serif;
     color: $text-color--black;
     opacity: 0.5;
     visibility: hidden;
@@ -272,10 +272,9 @@ export default {
     font-style: normal;
     font-size: get-vw(36px);
     line-height: 99%;
-    margin: 0 auto;
-    font-family: 'Hoves-Bold';
+    margin: get-vw(32px) auto 0;
+    font-family: 'Hoves-Bold', sans-serif;
     color: $text-color--red;
-    margin-top: get-vw(32px);
     border-bottom: 1px solid $border-color--red;
     cursor: pointer;
     text-decoration: none;

@@ -39,11 +39,11 @@ export default {
     &__main-title,
     &__description {
       text-align: center;
-    } 
+    }
 
     &__main-title {
       font-size: get-vw(70px);
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
       letter-spacing: get-vw(-2px);
       color: $accent-orange-text-color;
     }
@@ -52,7 +52,7 @@ export default {
       margin-top: get-vw(39px);
       margin-bottom: get-vw(65px);
       font-size: get-vw(24px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       letter-spacing: get-vw(-1px);
     }
 

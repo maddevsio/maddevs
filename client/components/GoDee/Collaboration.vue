@@ -28,18 +28,18 @@ export default {
     &__description {
       text-align: center;
     }
-  
+
     &__main-title {
       font-size: get-vw(90px);
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
       letter-spacing: get-vw(-3px);
       color: $accent-orange-text-color;
     }
-  
+
     &__description {
       margin-top: get-vw(38px);
       font-size: get-vw(24px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       letter-spacing: get-vw(-1px);
       color: $text-color--grey-dark;
     }
@@ -49,16 +49,16 @@ export default {
       justify-content: center;
       align-items: baseline;
     }
-  
+
     &__company-logo {
       margin-top: get-vw(-8px);
       margin-bottom: get-vw(40px);
-  
+
       &--godee {
         width: get-vw(746px);
         height: get-vw(161px);
       }
-  
+
       &--maddevs {
         width: get-vw(590px);
         height: get-vw(219px);

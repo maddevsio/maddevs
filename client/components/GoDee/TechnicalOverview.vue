@@ -55,7 +55,7 @@ export default {
 
     &__main-title,
     &__tech-item-title {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__tech-list {
@@ -86,7 +86,7 @@ export default {
 
     &__tech-item-description {
       font-size: get-vw(18px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       line-height: get-vw(25px);
       color: $text-color--grey-dark;
     }
