@@ -92,7 +92,7 @@ export default {
 		&__modal-trigger-btn {
 			width: 100%;
       height: 10vw;
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
       font-size: 3vw;
       color: $text-color--red;
     	border-color: $border-color--red;
@@ -123,7 +123,7 @@ export default {
 		&__header-routes_links a {
       padding: 3vw 0;
       font-size: 5vw;
-			font-family: 'Hoves-Bold';
+			font-family: 'Hoves-Bold', sans-serif;
 			text-decoration: none;
 			color: $text-color--white;
 			border-bottom: 1px solid $border-color--grey;

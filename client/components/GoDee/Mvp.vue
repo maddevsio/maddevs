@@ -72,13 +72,13 @@ export default {
     &__tech-title,
     &__user-centered-solution-title,
     &__user-centered-solution-description {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__description,
     &__tech-description,
     &__year-item {
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       color: $text-color--grey-dark;
     }
 

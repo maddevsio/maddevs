@@ -51,7 +51,7 @@ export default {
   }
 
   &__industry {
-    font-family: 'Hoves-Regular';
+    font-family: 'Hoves-Regular', sans-serif;
     font-size: 12px;
     color: #ccc;
     align-items: center;

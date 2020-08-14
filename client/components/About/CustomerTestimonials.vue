@@ -175,7 +175,7 @@ export default {
     /deep/.mobile-customer_name {
       padding-left: get-vw(14px);
       color: $text-color--grey;
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       font-size: get-vw(16px);
     }
 

@@ -89,7 +89,7 @@ export default {
   position: relative;
   z-index: 1;
   color: $text-color--grey;
-  font-family: 'Hoves-Regular';
+  font-family: 'Hoves-Regular', sans-serif;
   letter-spacing: -1px;
   line-height: 95%;
 
