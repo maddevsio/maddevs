@@ -30,15 +30,7 @@
       </div>
     </div>
     <div
-      class="single-project__background"
-      :style="{
-          'background-image':
-            'url(' +
-            require(`@/assets/img/Studies/png/${project.projectBackground}.png`) +
-            ')'
-        }"
-      :class="backgroundModifierClasses"
-    />
+      :class="`single-project__background single-project__background--${project.projectName}`"/>
   </a>
 </template>
 
@@ -85,15 +77,6 @@ export default {
   computed: {
     isWhiteColored() {
       return this.project.projectName === 'teacherly' || this.project.projectName === 'guardrails';
-    },
-    backgroundModifierClasses() {
-      return {
-        'single-project__background_first-project':
-          this.project.projectName === 'nambafood',
-        'single-project__background_guardrails':
-          this.project.projectName === 'guardrails',
-        'single-project__background_godee': this.project.projectName === 'godee'
-      };
     }
   }
 };
@@ -215,8 +198,23 @@ export default {
     width: 95%;
     margin: 0 auto;
 
-    &_guardrails {
+    &--nambafood {
+      background-size: cover;
+      width: 100%;
+      background-image: url(../../assets/img/Studies/png/nambafoodBackground.png);
+    }
+
+    &--teacherly {
+      background-image: url(../../assets/img/Studies/png/teacherlyBackground.png);
+    }
+
+    &--guardrails {
       position: relative;
+      background-image: url(../../assets/img/Studies/png/guardrailsBackground.png);
+    }
+
+    &--godee {
+      background-image: url(../../assets/img/Studies/png/godeeBackground.png);
     }
   }
 
@@ -253,11 +251,6 @@ export default {
     .contribution-widget {
       margin-top: 14vw;
     }
-  }
-
-  &__background_first-project {
-    background-size: cover;
-    width: 100%;
   }
 }
 </style>
