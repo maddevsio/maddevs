@@ -124,6 +124,7 @@ exports[`Projects page renders correctly 1`] = `
               <img
                 alt="nambafood"
                 class="single-project__logo"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -193,6 +194,7 @@ exports[`Projects page renders correctly 1`] = `
               <img
                 alt="teacherly"
                 class="single-project__logo"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -262,6 +264,7 @@ exports[`Projects page renders correctly 1`] = `
               <img
                 alt="guardrails"
                 class="single-project__logo"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -331,6 +334,7 @@ exports[`Projects page renders correctly 1`] = `
               <img
                 alt="godee"
                 class="single-project__logo"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -420,6 +424,7 @@ exports[`Projects page renders correctly 1`] = `
                   <img
                     alt="nambafood"
                     class="single-project__logo"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    
@@ -493,6 +498,7 @@ exports[`Projects page renders correctly 1`] = `
                   <img
                     alt="teacherly"
                     class="single-project__logo"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    
@@ -566,6 +572,7 @@ exports[`Projects page renders correctly 1`] = `
                   <img
                     alt="guardrails"
                     class="single-project__logo"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    
@@ -639,6 +646,7 @@ exports[`Projects page renders correctly 1`] = `
                   <img
                     alt="godee"
                     class="single-project__logo"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    

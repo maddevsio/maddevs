@@ -15,6 +15,7 @@ exports[`CaseStudies component renders correctly 1`] = `
       <img
         alt="godee"
         class="single-project__logo"
+        loading="lazy"
         src="[object Object]"
       />
        

@@ -33,7 +33,7 @@ export default {
     &__name {
       color: $text-color--grey;
       margin-left: 0.3vw;
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
     }
 
     &__logo {

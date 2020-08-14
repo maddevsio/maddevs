@@ -119,7 +119,7 @@ export default {
       margin-left: get-vw(-40px);
       padding-bottom: get-vw(120px);
       font-size: get-vw(340px);
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
       color: $text-color--grey-light;
       line-height: get-vw(200px);
       letter-spacing: get-vw(-3px);
@@ -171,7 +171,7 @@ export default {
 
     &__sub-title {
       font-size: get-vw(90px);
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
       color: $text-color--black;
       line-height: 104%;
       letter-spacing: get-vw(-3px);
@@ -179,7 +179,7 @@ export default {
 
     &__metric-number,
     &__rates-number {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
       color: $text-color--red;
     }
 

@@ -27,6 +27,7 @@ exports[`Customer Testimonials Mobile Slider renders correctly 1`] = `
         >
           <img
             class="mobile-customer_image"
+            loading="lazy"
             src="[object Object]"
           />
            
@@ -51,6 +52,7 @@ exports[`Customer Testimonials Mobile Slider renders correctly 1`] = `
             <img
               alt="teacherly"
               class="mobile-project_image teacherly"
+              loading="lazy"
               src="[object Object]"
             />
           </a>
@@ -76,6 +78,7 @@ exports[`Customer Testimonials Mobile Slider renders correctly 1`] = `
         >
           <img
             class="mobile-customer_image"
+            loading="lazy"
             src="[object Object]"
           />
            
@@ -100,6 +103,7 @@ exports[`Customer Testimonials Mobile Slider renders correctly 1`] = `
             <img
               alt="veeqo"
               class="mobile-project_image veeqo"
+              loading="lazy"
               src="[object Object]"
             />
           </a>
@@ -125,6 +129,7 @@ exports[`Customer Testimonials Mobile Slider renders correctly 1`] = `
         >
           <img
             class="mobile-customer_image"
+            loading="lazy"
             src="[object Object]"
           />
            
@@ -149,6 +154,7 @@ exports[`Customer Testimonials Mobile Slider renders correctly 1`] = `
             <img
               alt="guardrails"
               class="mobile-project_image guardrails"
+              loading="lazy"
               src="[object Object]"
             />
           </a>

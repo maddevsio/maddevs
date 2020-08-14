@@ -124,7 +124,7 @@ export default {
       /deep/ .v-placeholder-asterisk {
         font-size: get-vw(18px);
         color: $bgcolor--grey;
-        font-family: 'Hoves-Regular';
+        font-family: 'Hoves-Regular', sans-serif;
         left: get-vw(10px) !important;
         top: 50% !important;
         transform: translateY(-50%);

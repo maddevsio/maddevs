@@ -103,7 +103,7 @@ export default {
 		&__title {
 			padding-bottom: get-vw(19px);
 			color: $text-color--grey-light;
-			font-family: 'Hoves-Bold';
+			font-family: 'Hoves-Bold', sans-serif;
     	font-size: get-vw(27px);
 			font-weight: 500;
 			letter-spacing: -1px;
@@ -128,7 +128,7 @@ export default {
 		&__messenger-item {
 			position: relative;
 			color: $text-color--grey;
-			font-family: 'Hoves-Bold';
+			font-family: 'Hoves-Bold', sans-serif;
 			font-size: get-vw(22px);
 			text-decoration: none;
 			letter-spacing: -1px;
