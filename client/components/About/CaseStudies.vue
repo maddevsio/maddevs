@@ -17,6 +17,7 @@
         </h2>
         <img
           class="projects-flame-background"
+          loading="lazy"
           src="@/assets/img/Projects/png/projects-flame-bg.png"
           alt="Projects Flame Image"
           v-if="currentPageName === 'projects'"
@@ -110,7 +111,7 @@ export default {
         {
           projectName: 'godee',
           logoImg: 'godeeColored',
-          link: '/godee',
+          link: '/go-dee-case-study',
           contributionWidgetColors: ['#000', '#000'],
           projectBackground: 'godeeBackground',
           projectColor: '#ff6A01',

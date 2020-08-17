@@ -89,7 +89,7 @@ export default {
     &__main-title,
     &__text-title,
     &__text-sub-title {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__main-title {
@@ -115,7 +115,7 @@ export default {
     }
 
     &__features-text-item-payment {
-      margin-bottom: get-vw(146px); 
+      margin-bottom: get-vw(146px);
     }
 
     &__text-title {
@@ -138,7 +138,7 @@ export default {
 
     &__text-description {
       font-size: get-vw(24px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
     }
 
     &__image-wrapper {

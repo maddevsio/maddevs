@@ -69,7 +69,7 @@ export default {
     &__head-text-content {
       margin-bottom: get-vw(50px);
     }
-    
+
     &__main-title,
     &__sub-title {
       letter-spacing: get-vw(-2px);
@@ -80,7 +80,7 @@ export default {
     &__department,
     &__list-team-size-number,
     &__work-flow-title {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__main-title {
@@ -102,7 +102,7 @@ export default {
 
     &__description {
       font-size: get-vw(24px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       color: $text-color--grey-dark;
     }
 
@@ -153,7 +153,7 @@ export default {
 
     &__work-flow-step {
       span {
-        font-family: 'Hoves-Bold';
+        font-family: 'Hoves-Bold', sans-serif;
       }
 
       &:nth-child(1) {

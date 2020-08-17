@@ -41,7 +41,7 @@ export default {
     &__main-title {
       margin-bottom: get-vw(66px);
       font-size: get-vw(90px);
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
       letter-spacing: get-vw(-3px);
       color: $accent-orange-text-color;
     }

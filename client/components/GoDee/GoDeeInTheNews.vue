@@ -38,7 +38,7 @@ export default {
   .godee-in-the-news {
     &__main-title,
     &__block-title {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__main-title,
@@ -71,7 +71,7 @@ export default {
     &__description,
     &__view-next-project,
     &__block-link {
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
     }
 
     &__description {

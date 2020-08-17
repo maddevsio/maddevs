@@ -97,7 +97,7 @@ export default {
     */
     this.selectedPhone = this.phones[0];
 
-    if(this.$route.name === 'godee') {
+    if(this.$route.name === 'go-dee-case-study') {
       this.headerIsWhite = true;
     } else {
       this.headerIsWhite = false;
@@ -185,7 +185,7 @@ export default {
         margin-right: get-vw(30px);
         font-size: get-vw(18px);
         letter-spacing: get-vw(1px);
-        font-family: 'Hoves-Regular';
+        font-family: 'Hoves-Regular', sans-serif;
 
         &::after {
           content: '↓';
@@ -236,7 +236,7 @@ export default {
       padding-right: get-vw(36px);
       color: $text-color--grey;
       font-size: get-vw(18px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       text-decoration: none;
       display: flex;
       align-items: center;

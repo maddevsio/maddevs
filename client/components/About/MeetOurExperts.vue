@@ -13,7 +13,7 @@
               <div class="meet-our_experts__expert-position">{{ expert.position }}</div>
             </div>
             <a :href="expert.linkedin" class="meet-our_experts__expert-linkedin_link" target="blank">
-              <img src="@/assets/img/Home/svg/experts/linkedin.svg" class="meet-our_experts__expert-linkedin_icon" alt="Linkedin">
+              <img loading="lazy" src="@/assets/img/Home/svg/experts/linkedin.svg" class="meet-our_experts__expert-linkedin_icon" alt="Linkedin">
             </a>
           </div>
         </div>
@@ -169,14 +169,14 @@ export default {
     &__expert-name,
     /deep/.mobile-expert-name {
       font-size: get-vw(22px);
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
       letter-spacing: get-vw(-1px);
     }
 
     &__expert-position,
     /deep/.mobile-expert-position {
       font-size: get-vw(18px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       letter-spacing: get-vw(-0.3px);
     }
   }

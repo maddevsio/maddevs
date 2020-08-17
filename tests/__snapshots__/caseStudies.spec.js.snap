@@ -40,6 +40,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             <img
               alt="nambafood"
               class="single-project__logo"
+              loading="lazy"
               src="[object Object]"
             />
              
@@ -92,7 +93,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         </div>
          
         <div
-          class="single-project__background single-project__background_first-project"
+          class="single-project__background single-project__background--nambafood"
         />
       </a>
       <a
@@ -109,6 +110,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             <img
               alt="teacherly"
               class="single-project__logo"
+              loading="lazy"
               src="[object Object]"
             />
              
@@ -161,7 +163,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         </div>
          
         <div
-          class="single-project__background"
+          class="single-project__background single-project__background--teacherly"
         />
       </a>
       <a
@@ -178,6 +180,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             <img
               alt="guardrails"
               class="single-project__logo"
+              loading="lazy"
               src="[object Object]"
             />
              
@@ -230,12 +233,12 @@ exports[`CaseStudies component renders correctly 1`] = `
         </div>
          
         <div
-          class="single-project__background single-project__background_guardrails"
+          class="single-project__background single-project__background--guardrails"
         />
       </a>
       <a
         class="single-project"
-        href="/godee"
+        href="/go-dee-case-study"
         style="background: rgb(255, 106, 1);"
       >
         <div
@@ -247,6 +250,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             <img
               alt="godee"
               class="single-project__logo"
+              loading="lazy"
               src="[object Object]"
             />
              
@@ -303,7 +307,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         </div>
          
         <div
-          class="single-project__background single-project__background_godee"
+          class="single-project__background single-project__background--godee"
         />
       </a>
     </div>
@@ -336,6 +340,7 @@ exports[`CaseStudies component renders correctly 1`] = `
                 <img
                   alt="nambafood"
                   class="single-project__logo"
+                  loading="lazy"
                   src="[object Object]"
                 />
                  
@@ -388,7 +393,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             </div>
              
             <div
-              class="single-project__background single-project__background_first-project"
+              class="single-project__background single-project__background--nambafood"
             />
           </a>
         </div>
@@ -409,6 +414,7 @@ exports[`CaseStudies component renders correctly 1`] = `
                 <img
                   alt="teacherly"
                   class="single-project__logo"
+                  loading="lazy"
                   src="[object Object]"
                 />
                  
@@ -461,7 +467,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             </div>
              
             <div
-              class="single-project__background"
+              class="single-project__background single-project__background--teacherly"
             />
           </a>
         </div>
@@ -482,6 +488,7 @@ exports[`CaseStudies component renders correctly 1`] = `
                 <img
                   alt="guardrails"
                   class="single-project__logo"
+                  loading="lazy"
                   src="[object Object]"
                 />
                  
@@ -534,7 +541,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             </div>
              
             <div
-              class="single-project__background single-project__background_guardrails"
+              class="single-project__background single-project__background--guardrails"
             />
           </a>
         </div>
@@ -543,7 +550,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         >
           <a
             class="single-project"
-            href="/godee"
+            href="/go-dee-case-study"
             style="background: rgb(255, 106, 1);"
           >
             <div
@@ -555,6 +562,7 @@ exports[`CaseStudies component renders correctly 1`] = `
                 <img
                   alt="godee"
                   class="single-project__logo"
+                  loading="lazy"
                   src="[object Object]"
                 />
                  
@@ -611,7 +619,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             </div>
              
             <div
-              class="single-project__background single-project__background_godee"
+              class="single-project__background single-project__background--godee"
             />
           </a>
         </div>

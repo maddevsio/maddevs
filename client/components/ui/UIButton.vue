@@ -44,7 +44,7 @@ export default {
     background-color: $bgcolor--red;
     color: $text-color--white;
     font-size: 21px;
-    font-family: 'Hoves-Bold';
+    font-family: 'Hoves-Bold', sans-serif;
     letter-spacing: -0.03em;
     box-shadow: none;
     transition: 0.2s;

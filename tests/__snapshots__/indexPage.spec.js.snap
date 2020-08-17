@@ -1068,6 +1068,7 @@ exports[`Index page renders correctly 1`] = `
               <img
                 alt="nambafood"
                 class="single-project__logo"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -1120,7 +1121,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background single-project__background_first-project"
+            class="single-project__background single-project__background--nambafood"
           />
         </a>
         <a
@@ -1137,6 +1138,7 @@ exports[`Index page renders correctly 1`] = `
               <img
                 alt="teacherly"
                 class="single-project__logo"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -1189,7 +1191,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background"
+            class="single-project__background single-project__background--teacherly"
           />
         </a>
         <a
@@ -1206,6 +1208,7 @@ exports[`Index page renders correctly 1`] = `
               <img
                 alt="guardrails"
                 class="single-project__logo"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -1258,12 +1261,12 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background single-project__background_guardrails"
+            class="single-project__background single-project__background--guardrails"
           />
         </a>
         <a
           class="single-project"
-          href="/godee"
+          href="/go-dee-case-study"
           style="background: rgb(255, 106, 1);"
         >
           <div
@@ -1275,6 +1278,7 @@ exports[`Index page renders correctly 1`] = `
               <img
                 alt="godee"
                 class="single-project__logo"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -1331,7 +1335,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <div
-            class="single-project__background single-project__background_godee"
+            class="single-project__background single-project__background--godee"
           />
         </a>
       </div>
@@ -1364,6 +1368,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="nambafood"
                     class="single-project__logo"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    
@@ -1416,7 +1421,7 @@ exports[`Index page renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background single-project__background_first-project"
+                class="single-project__background single-project__background--nambafood"
               />
             </a>
           </div>
@@ -1437,6 +1442,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="teacherly"
                     class="single-project__logo"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    
@@ -1489,7 +1495,7 @@ exports[`Index page renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background"
+                class="single-project__background single-project__background--teacherly"
               />
             </a>
           </div>
@@ -1510,6 +1516,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="guardrails"
                     class="single-project__logo"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    
@@ -1562,7 +1569,7 @@ exports[`Index page renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background single-project__background_guardrails"
+                class="single-project__background single-project__background--guardrails"
               />
             </a>
           </div>
@@ -1571,7 +1578,7 @@ exports[`Index page renders correctly 1`] = `
           >
             <a
               class="single-project"
-              href="/godee"
+              href="/go-dee-case-study"
               style="background: rgb(255, 106, 1);"
             >
               <div
@@ -1583,6 +1590,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="godee"
                     class="single-project__logo"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    
@@ -1639,7 +1647,7 @@ exports[`Index page renders correctly 1`] = `
               </div>
                
               <div
-                class="single-project__background single-project__background_godee"
+                class="single-project__background single-project__background--godee"
               />
             </a>
           </div>
@@ -1893,18 +1901,13 @@ exports[`Index page renders correctly 1`] = `
                 <img
                   alt="Atif Mahmud,"
                   class="customer-testimonials__customer-image"
+                  loading="lazy"
                   src="[object Object]"
                 />
                  
                 <p
                   class="customer-testimonials__customer-name"
-                >
-                  
-                Atif Mahmud, 
-                  <br />
-                   The UK
-              
-                </p>
+                />
               </div>
                
               <div
@@ -1918,6 +1921,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="teacherly"
                     class="customer-testimonials__project-image teacherly"
+                    loading="lazy"
                     src="[object Object]"
                   />
                 </a>
@@ -1944,18 +1948,13 @@ exports[`Index page renders correctly 1`] = `
                 <img
                   alt="Daniel Vartanov,"
                   class="customer-testimonials__customer-image"
+                  loading="lazy"
                   src="[object Object]"
                 />
                  
                 <p
                   class="customer-testimonials__customer-name"
-                >
-                  
-                Daniel Vartanov, 
-                  <br />
-                   The UK
-              
-                </p>
+                />
               </div>
                
               <div
@@ -1969,6 +1968,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="veeqo"
                     class="customer-testimonials__project-image veeqo"
+                    loading="lazy"
                     src="[object Object]"
                   />
                 </a>
@@ -1995,18 +1995,13 @@ exports[`Index page renders correctly 1`] = `
                 <img
                   alt="Stefan Streichsbier,"
                   class="customer-testimonials__customer-image"
+                  loading="lazy"
                   src="[object Object]"
                 />
                  
                 <p
                   class="customer-testimonials__customer-name"
-                >
-                  
-                Stefan Streichsbier, 
-                  <br />
-                   Singapore
-              
-                </p>
+                />
               </div>
                
               <div
@@ -2020,6 +2015,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="guardrails"
                     class="customer-testimonials__project-image guardrails"
+                    loading="lazy"
                     src="[object Object]"
                   />
                 </a>
@@ -2055,6 +2051,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="Atif Mahmud,"
                     class="mobile-customer_image"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    
@@ -2080,6 +2077,7 @@ exports[`Index page renders correctly 1`] = `
                     <img
                       alt="teacherly"
                       class="mobile-project_image teacherly"
+                      loading="lazy"
                       src="[object Object]"
                     />
                   </a>
@@ -2106,6 +2104,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="Daniel Vartanov,"
                     class="mobile-customer_image"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    
@@ -2131,6 +2130,7 @@ exports[`Index page renders correctly 1`] = `
                     <img
                       alt="veeqo"
                       class="mobile-project_image veeqo"
+                      loading="lazy"
                       src="[object Object]"
                     />
                   </a>
@@ -2157,6 +2157,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="Stefan Streichsbier,"
                     class="mobile-customer_image"
+                    loading="lazy"
                     src="[object Object]"
                   />
                    
@@ -2182,6 +2183,7 @@ exports[`Index page renders correctly 1`] = `
                     <img
                       alt="guardrails"
                       class="mobile-project_image guardrails"
+                      loading="lazy"
                       src="[object Object]"
                     />
                   </a>
@@ -2522,6 +2524,7 @@ exports[`Index page renders correctly 1`] = `
               <img
                 alt="Linkedin"
                 class="meet-our_experts__expert-linkedin_icon"
+                loading="lazy"
                 src="@/assets/img/Home/svg/experts/linkedin.svg"
               />
             </a>
@@ -2574,6 +2577,7 @@ exports[`Index page renders correctly 1`] = `
               <img
                 alt="Linkedin"
                 class="meet-our_experts__expert-linkedin_icon"
+                loading="lazy"
                 src="@/assets/img/Home/svg/experts/linkedin.svg"
               />
             </a>
@@ -2626,6 +2630,7 @@ exports[`Index page renders correctly 1`] = `
               <img
                 alt="Linkedin"
                 class="meet-our_experts__expert-linkedin_icon"
+                loading="lazy"
                 src="@/assets/img/Home/svg/experts/linkedin.svg"
               />
             </a>
@@ -2678,6 +2683,7 @@ exports[`Index page renders correctly 1`] = `
               <img
                 alt="Linkedin"
                 class="meet-our_experts__expert-linkedin_icon"
+                loading="lazy"
                 src="@/assets/img/Home/svg/experts/linkedin.svg"
               />
             </a>
@@ -2730,6 +2736,7 @@ exports[`Index page renders correctly 1`] = `
               <img
                 alt="Linkedin"
                 class="meet-our_experts__expert-linkedin_icon"
+                loading="lazy"
                 src="@/assets/img/Home/svg/experts/linkedin.svg"
               />
             </a>
@@ -2782,6 +2789,7 @@ exports[`Index page renders correctly 1`] = `
               <img
                 alt="Linkedin"
                 class="meet-our_experts__expert-linkedin_icon"
+                loading="lazy"
                 src="@/assets/img/Home/svg/experts/linkedin.svg"
               />
             </a>
@@ -2834,6 +2842,7 @@ exports[`Index page renders correctly 1`] = `
               <img
                 alt="Linkedin"
                 class="meet-our_experts__expert-linkedin_icon"
+                loading="lazy"
                 src="@/assets/img/Home/svg/experts/linkedin.svg"
               />
             </a>
@@ -2886,6 +2895,7 @@ exports[`Index page renders correctly 1`] = `
               <img
                 alt="Linkedin"
                 class="meet-our_experts__expert-linkedin_icon"
+                loading="lazy"
                 src="@/assets/img/Home/svg/experts/linkedin.svg"
               />
             </a>
@@ -2954,6 +2964,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="Linkedin"
                     class="mobile-expert-linkedin_icon"
+                    loading="lazy"
                     src="@/assets/img/Home/svg/experts/linkedin.svg"
                   />
                 </a>
@@ -3010,6 +3021,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="Linkedin"
                     class="mobile-expert-linkedin_icon"
+                    loading="lazy"
                     src="@/assets/img/Home/svg/experts/linkedin.svg"
                   />
                 </a>
@@ -3066,6 +3078,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="Linkedin"
                     class="mobile-expert-linkedin_icon"
+                    loading="lazy"
                     src="@/assets/img/Home/svg/experts/linkedin.svg"
                   />
                 </a>
@@ -3122,6 +3135,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="Linkedin"
                     class="mobile-expert-linkedin_icon"
+                    loading="lazy"
                     src="@/assets/img/Home/svg/experts/linkedin.svg"
                   />
                 </a>
@@ -3178,6 +3192,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="Linkedin"
                     class="mobile-expert-linkedin_icon"
+                    loading="lazy"
                     src="@/assets/img/Home/svg/experts/linkedin.svg"
                   />
                 </a>
@@ -3234,6 +3249,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="Linkedin"
                     class="mobile-expert-linkedin_icon"
+                    loading="lazy"
                     src="@/assets/img/Home/svg/experts/linkedin.svg"
                   />
                 </a>
@@ -3290,6 +3306,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="Linkedin"
                     class="mobile-expert-linkedin_icon"
+                    loading="lazy"
                     src="@/assets/img/Home/svg/experts/linkedin.svg"
                   />
                 </a>
@@ -3346,6 +3363,7 @@ exports[`Index page renders correctly 1`] = `
                   <img
                     alt="Linkedin"
                     class="mobile-expert-linkedin_icon"
+                    loading="lazy"
                     src="@/assets/img/Home/svg/experts/linkedin.svg"
                   />
                 </a>

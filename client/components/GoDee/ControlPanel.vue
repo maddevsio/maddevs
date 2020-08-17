@@ -46,7 +46,7 @@ export default {
     &__sub-title,
     &__description-bold,
     &__count {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__main-title,
@@ -77,7 +77,7 @@ export default {
     &__description {
       margin-bottom: get-vw(40px);
       font-size: get-vw(24px);
-      font-family: 'Hoves-Regular';
+      font-family: 'Hoves-Regular', sans-serif;
       color: $text-color--grey-dark;
     }
 

@@ -42,7 +42,7 @@ describe('CaseStudies component', () => {
     {
       projectName: 'godee',
       logoImg: 'godeeColored',
-      link: '/godee',
+      link: '/go-dee-case-study',
       contributionWidgetColors: ['#000', '#000'],
       projectBackground: 'godeeBackground',
       projectColor: '#ff6A01',

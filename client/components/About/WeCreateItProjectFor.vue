@@ -213,7 +213,7 @@ export default {
     &__project-item,
     &__country-list_title,
     &__country-item {
-      font-family: 'Hoves-Bold';
+      font-family: 'Hoves-Bold', sans-serif;
     }
 
     &__project-item {

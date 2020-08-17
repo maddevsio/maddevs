@@ -30,27 +30,28 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
+
   .cookie-notif {
     width: 100%;
+    padding: get-vw(16px) 0;
     position: fixed;
     bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.1vw 2.5vw;
     box-sizing: border-box;
     background-color: $cookie-bg-color;
     transition: all .2s ease;
     z-index: 999;
     .cookie-notif_button {
-      width: 10vw;
-      height: 2.8vw;
-      padding: 0;
-      border: 0.07vw solid $border-color--red;
+      height: get-vw(40px);
+      padding: 0 get-vw(26px);
+      border: get-vw(1px) solid $border-color--red;
       background-color: transparent;
-      border-radius: 0.1vw;
+      border-radius: get-vw(2px);
       color: $text-color--red;
-      font-size: 1vw;
+      font-size: get-vw(16px);
       font-family: 'Hoves-Regular';
       letter-spacing: -0.03em;
       box-shadow: none;
@@ -69,17 +70,17 @@ export default {
     }
 
     .cookie-icon {
-      width: 2.6vw;
-      height: 2.6vw;
+      width: get-vw(36px);
+      height: get-vw(36px);
     }
 
     p {
-      margin: 0 1.5vw;
+      margin: 0 get-vw(20px);
       color: $text-color--white;
       font-family: 'Hoves-Regular';
-      font-size: 1vw;
-      line-height: 1.4;
-      letter-spacing: 0.02em;
+      font-size: get-vw(16px);
+      line-height: get-vw(19px);
+      letter-spacing: -0.03em;
     }
 
     a {
@@ -87,31 +88,20 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 860px) {
+  @media only screen and (max-width: 1024px) {
     .cookie-notif {
-      .cookie-notif_button {
-        width: 12vw;
-        height: 3.8vw;
-        font-size: 1.4vw;
-      }
-
-      p {
-        margin: 0 1.8vw;
-        font-size: 1.5vw;
-      }
-    } 
-
-  }
-
-  @media only screen and (max-width: 720px) {
-    .cookie-notif {
-      padding: 1.3vw 2.6vw;
+      padding: get-vw(16px, 1024);
       flex-direction: column;
+
+      .cookie-notif_button,
+      p {
+        font-size: get-vw(16px, 1024);
+        line-height: get-vw(19px, 1024);
+      }
 
       .cookie-notif_button {
         width: 100%;
-        height: 7.2vw;
-        font-size: 2.5vw;
+        height: get-vw(45px, 1024);
         font-family: 'Hoves-Bold';
       }
 
@@ -120,27 +110,93 @@ export default {
       }
 
       p {
-        margin-bottom: 2vw;
-        font-size: 2.3vw;
+        margin-bottom: get-vw(13px, 1024);
         text-align: center;
 
         br {
           display: none;
         }
       }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .cookie-notif {
+      padding: get-vw(16px, 768);
+
+      .cookie-notif_button,
+      p {
+        font-size: get-vw(16px, 768);
+        line-height: get-vw(19px, 768);
+      }
+
+      .cookie-notif_button {
+        height: get-vw(45px, 768);
+      }
+
+      p {
+        margin-bottom: get-vw(13px, 768);
+      }
     } 
   }
 
-  @media only screen and (max-width: 340px) {
+  @media only screen and (max-width: 576px) {
     .cookie-notif {
-      .cookie-notif_button {
-        height: 8.5vw;
+      padding: get-vw(16px, 576);
+
+      .cookie-notif_button,
+      p {
+        font-size: get-vw(16px, 576);
+        line-height: get-vw(19px, 576);
       }
 
-      .cookie-notif_button, 
+      .cookie-notif_button {
+        height: get-vw(45px, 576);
+      }
+
       p {
-        font-size: 3.1vw;
+        margin-bottom: get-vw(13px, 576);
       }
     } 
+  }
+
+  @media only screen and (max-width: 440px) {
+    .cookie-notif {
+      padding: get-vw(16px, 440);
+
+      .cookie-notif_button,
+      p {
+        font-size: get-vw(16px, 440);
+        line-height: get-vw(19px, 440);
+      }
+
+      .cookie-notif_button {
+        height: get-vw(45px, 440);
+      }
+
+      p {
+        margin-bottom: get-vw(13px, 440);
+      }
+    } 
+  }
+
+  @media only screen and (max-width: 375px) {
+    .cookie-notif {
+      padding: get-vw(16px, 375);
+
+      .cookie-notif_button,
+      p {
+        font-size: get-vw(16px, 375);
+        line-height: get-vw(19px, 375);
+      }
+
+      .cookie-notif_button {
+        height: get-vw(45px, 375);
+      }
+
+      p {
+        margin-bottom: get-vw(13px, 375);
+      }
+    }
   }
 </style>
