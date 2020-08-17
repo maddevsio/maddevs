@@ -145,7 +145,8 @@ export default {
               emailTo: this.emailTo,
               linkedinProfile: this.linkedinProfile,
               positionValue: this.positionValue.type,
-              positionTitle: this.positionTitle
+              positionTitle: this.positionTitle,
+              subject: `Job Candidate Application for ${this.positionTitle}`
             },
             attachment:{
               base64: base64.replace(/^data:(.*,)?/, ''),

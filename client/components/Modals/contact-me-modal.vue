@@ -62,7 +62,8 @@ export default {
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
     inputId: 'contact-me',
-    onSubmit: false
+    onSubmit: false,
+    subject: 'Marketing'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -83,7 +84,8 @@ export default {
             emailTo: this.emailTo || '',
             phoneNumber: this.phoneNumber || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
+            subject: this.subject || ''
           }
         };
         this.$store.dispatch('sendEmail', form).then(res => {
