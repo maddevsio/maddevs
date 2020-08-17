@@ -85,7 +85,8 @@ describe('Footer form', () => {
         'email': '',
         'emailTo': 'team@maddevs.io',
         'fullName': null,
-        'projectDescriber': ''
+        'projectDescriber': '',
+        'subject': 'Marketing'
       }
     };
     expect(wrapper.vm.$data.form).toEqual(null);
