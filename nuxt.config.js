@@ -91,7 +91,14 @@ module.exports = {
     '@/modules/static',
     '@/modules/crawler',
     '@nuxtjs/axios',
-    '@nuxtjs/gtm'
+    '@nuxtjs/gtm',
+    [
+      'nuxt-modernizr',
+      {
+        'feature-detects': ['css/scrollbars', 'css/overflow-scrolling', 'test/img/webp'],
+        options: ['setClasses']
+      }
+    ]
   ],
   gtm: {
     id: 'GTM-NNKVRF3',
