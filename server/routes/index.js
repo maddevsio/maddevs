@@ -32,7 +32,7 @@ router.post('/send-email', (req, res) => {
       let email = {};
       if (req.body && req.body.attachment) {
         email = {
-          'subject': 'Marketing',
+          'subject': req.body.variables.subject,
           'template': {
             'id': req.body.templateId, // Required
             'variables': req.body.variables
@@ -49,7 +49,7 @@ router.post('/send-email', (req, res) => {
         };
       } else {
         email = {
-          'subject': 'Marketing',
+          'subject': req.body.variables.subject,
           'template': {
             'id': req.body.templateId, // Required
             'variables': req.body.variables
