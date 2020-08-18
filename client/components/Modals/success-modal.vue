@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div class="success-modal" v-if="visibled">
+    <div class="success-modal" v-if="visibled" :id="id">
       <div class="success-modal_content">
         <button class="close-modal" @click="onClose">
           <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
@@ -23,6 +23,10 @@ export default {
     visibled: {
       type: Boolean,
       default: false
+    },
+    id: {
+      type: String,
+      default: null
     }
   },
   methods: {

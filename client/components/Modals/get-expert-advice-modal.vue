@@ -1,5 +1,5 @@
 <template>
-  <ModalContainer :name="modalName">
+  <ModalContainer :name="modalName" successModalID="get-expert-advice-modal">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form technology-stack"> 
         <div class="fields-list">

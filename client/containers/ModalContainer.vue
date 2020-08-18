@@ -6,7 +6,7 @@
     <perfect-scrollbar class="modal_scrollbar custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
       <slot />
     </perfect-scrollbar>
-    <SuccessMessage v-else />
+    <SuccessMessage :id="successModalID" v-else />
   </modal>
 </template>
 
@@ -22,6 +22,10 @@ export default {
     name: {
       type: String,
       required: true
+    },
+    successModalID: {
+      type: String,
+      default: null
     }
   },
   data: () => ({
