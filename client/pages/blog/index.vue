@@ -3,11 +3,12 @@
     <div class="filter">
       <p>Filter by tags:</p>
       <div class="filter-list">
-        <input type="radio" id="sport" name="Tag" class="filter-input">
-        <label for="sport" class="filter-label" @click="getPostsByTag('Software features')">Software features</label>
-        <input type="radio" id="health" name="Tag" class="filter-input">
-        <label for="health" class="filter-label" @click="getPostsByTag('Integration of stripe')">Integration of Stripe</label>
-        <input type="radio" id="health" name="Tag" class="filter-input">
+        <input type="radio" id="software-features" name="Tag" class="radio-input">
+        <label for="software-features" class="filter-label" @click="getPostsByTag('Software features')">Software features</label>
+
+        <input type="radio" id="integration-of-stripe" name="Tag" class="radio-input">
+        <label for="integration-of-stripe" class="filter-label" @click="getPostsByTag('Integration of stripe')">Integration of Stripe</label>
+        <button class="reset-filter" @click="resetFilter()" v-if="filterIsActive">Reset filter</button>
       </div>
     </div>
     <div class="posts" v-if="posts && homepageContent">
@@ -41,8 +42,9 @@ export default {
   },
   data() {
     return {
-      homepageContent: null,
-      posts: null
+      homepageContent: {},
+      posts: [],
+      filterIsActive: false
     };
   },
   created() {
@@ -77,7 +79,29 @@ export default {
 
     async getPostsByTag(tag) {
       const posts = await this.$prismic.api.query(this.$prismic.predicates.at('document.tags', [tag]));
-      this.posts = posts.results;
+
+      if(posts !== null && posts.results.length !== 0) {
+        this.posts = posts.results;
+        this.filterIsActive = true;
+      } else {
+        this.posts = [];
+      }
+    },
+
+    resetFilter() {
+      this.filterIsActive = false;
+      this.resetRadioInputs();
+      this.getAllPosts();
+    },
+
+    resetRadioInputs() {
+      const radioInput = document.getElementsByClassName('radio-input');
+
+      for(let i=0; i < radioInput.length; i++) {
+        if (radioInput[i].checked) {
+          radioInput[i].checked = false;
+        }
+      }
     }
   }
 };
@@ -136,10 +160,10 @@ export default {
   grid-gap: 10px
   margin-top: 10px
 
-.filter-input
+.radio-input
   display: none
 
-.filter-input:checked + .filter-label, .filter-label:hover
+.radio-input:checked + .filter-label, .filter-label:hover
   border-color: #5163ba 
   background-color: #5163ba
   color: #fff
@@ -152,6 +176,18 @@ export default {
   cursor: pointer
   font-size: 13px
   text-align: center
+
+.reset-filter
+  padding: 5px 0
+  background-color: #ec1c24
+  border: 1px solid #ec1c24
+  border-radius: 2px
+  color: #fff
+  cursor: pointer
+
+.reset-filter:active
+  background-color: #cc4247
+  border-color: #cc4247
 
 @media (max-width: 767px)
   .home
