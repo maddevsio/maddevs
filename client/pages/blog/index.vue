@@ -97,7 +97,7 @@ export default {
     resetRadioInputs() {
       const radioInput = document.getElementsByClassName('radio-input');
 
-      for(let i=0; i < radioInput.length; i++) {
+      for(let i = 0; i < radioInput.length; i++) {
         if (radioInput[i].checked) {
           radioInput[i].checked = false;
         }
@@ -109,7 +109,7 @@ export default {
 
 <style lang="sass" scoped>
 .home
-  max-width: 700px
+  max-width: 500px
   margin: auto
   text-align: center
   .blog-avatar
