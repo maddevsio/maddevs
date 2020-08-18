@@ -1,5 +1,5 @@
 <template>
-  <ModalContainer :name="modalName">
+  <ModalContainer :name="modalName" successModalID="get-your-trusted-it-partner-modal">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
