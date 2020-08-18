@@ -35,7 +35,7 @@ export default {
   },
   data() {
     // TODO remove console after optimize perfomance
-    console.log('test fonts v1.3');
+    console.log('test fonts v1.5');
     return {
       title: 'Mad Devs: Software & Mobile App Development Company',
       description: 'We develop tailored software solutions for corporations using the present-day developer tools and technology stack. Mad Devs acts as a part of your extended team, and you get your systems properly administered and monitored',
