@@ -197,25 +197,6 @@ export default {
     height: 22vw;
     width: 95%;
     margin: 0 auto;
-
-    &--nambafood {
-      background-size: cover;
-      width: 100%;
-      background-image: url(../../assets/img/Studies/png/nambafoodBackground.png);
-    }
-
-    &--teacherly {
-      background-image: url(../../assets/img/Studies/png/teacherlyBackground.png);
-    }
-
-    &--guardrails {
-      position: relative;
-      background-image: url(../../assets/img/Studies/png/guardrailsBackground.png);
-    }
-
-    &--godee {
-      background-image: url(../../assets/img/Studies/png/godeeBackground.png);
-    }
   }
 
   @media only screen and (max-width: 745px) {
@@ -253,6 +234,57 @@ export default {
     }
   }
 }
+
+
+.webp {
+  .single-project {
+    &__background {
+      &--nambafood {
+        background-size: cover;
+        width: 100%;
+        background-image: url(../../assets/img/Studies/webp/nambafoodBackground.webp);
+      }
+
+      &--teacherly {
+        background-image: url(../../assets/img/Studies/webp/teacherlyBackground.webp);
+      }
+
+      &--guardrails {
+        position: relative;
+        background-image: url(../../assets/img/Studies/webp/guardrailsBackground.webp);
+      }
+
+      &--godee {
+        background-image: url(../../assets/img/Studies/webp/godeeBackground.webp);
+      }
+    }
+  }
+}
+
+  .no-webp {
+    .single-project {
+      &__background {
+        &--nambafood {
+          background-size: cover;
+          width: 100%;
+          background-image: url(../../assets/img/Studies/png/nambafoodBackground.png);
+        }
+
+        &--teacherly {
+          background-image: url(../../assets/img/Studies/png/teacherlyBackground.png);
+        }
+
+        &--guardrails {
+          position: relative;
+          background-image: url(../../assets/img/Studies/png/guardrailsBackground.png);
+        }
+
+        &--godee {
+          background-image: url(../../assets/img/Studies/png/godeeBackground.png);
+        }
+      }
+    }
+  }
 </style>
 
 
