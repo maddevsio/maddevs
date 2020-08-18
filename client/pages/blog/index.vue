@@ -42,13 +42,7 @@ export default {
   data() {
     return {
       homepageContent: null,
-      posts: null,
-      filterIsActive: false
-    };
-  },
-  head () {
-    return {
-      title: 'Prismic Nuxt.js Blog'
+      posts: null
     };
   },
   created() {
@@ -81,7 +75,7 @@ export default {
       };
     },
 
-    async getPostsByTag(tag, event) {
+    async getPostsByTag(tag) {
       const posts = await this.$prismic.api.query(this.$prismic.predicates.at('document.tags', [tag]));
       this.posts = posts.results;
     }
