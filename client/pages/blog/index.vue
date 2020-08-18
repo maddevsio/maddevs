@@ -1,65 +1,89 @@
 <template>
   <section class="home">
-    <article>
-      <div class="blog-avatar" :style="{ backgroundImage: 'url(' + image + ')' }" ></div>
-      <!-- Template for page title -->
-      <h1 class="blog-title">
-        {{ $prismic.asText(homepageContent.headline) }}
-      </h1>
-      <!-- Template for page description -->
-      <p class="blog-description">{{ $prismic.asText(homepageContent.description) }}</p>
-      
-      <!-- Check blog posts exist -->
+    <div class="filter">
+      <p>Filter by tags:</p>
+      <div class="filter-list">
+        <input type="radio" id="sport" name="Tag" class="filter-input">
+        <label for="sport" class="filter-label" @click="getPostsByTag('Software features')">Software features</label>
+        <input type="radio" id="health" name="Tag" class="filter-input">
+        <label for="health" class="filter-label" @click="getPostsByTag('Integration of stripe')">Integration of Stripe</label>
+        <input type="radio" id="health" name="Tag" class="filter-input">
+      </div>
+    </div>
+    <div class="posts" v-if="posts && homepageContent">
+      <div class="head-content">
+        <div class="blog-avatar" :style="{backgroundImage: 'url(' + homepageContent.image + ')'}" />
+        <h1 class="blog-title">
+          {{ homepageContent.headline }}
+        </h1>
+        <p class="blog-description">{{ homepageContent.description }}</p>
+      </div>
       <div v-if="posts.length !== 0" class="blog-main">
-        <!-- Template for blog posts -->
         <section v-for="post in posts" :key="post.id" v-bind:post="post" class="blog-post">
-          <!-- Here :post="post" passes the data to the component -->
           <blog-widget :post="post"></blog-widget>
         </section>
       </div>
-      <!-- If no blog posts return message -->
       <div v-else class="blog-main">
         <p>No Posts published at this time.</p>
       </div>
-    </article>
+    </div>
   </section>
 </template>
 
 <script>
-// Importing blog posts widget
-import BlogWidget from '~/components/Blog/BlogWidget.vue';
+import BlogWidget from '@/components/Blog/BlogWidget.vue';
 
 export default {
   name: 'Blog',
+  layout: 'blog',
   components: {
     BlogWidget
   },
-  layout: 'blog',
+  data() {
+    return {
+      homepageContent: null,
+      posts: null,
+      filterIsActive: false
+    };
+  },
   head () {
     return {
       title: 'Prismic Nuxt.js Blog'
     };
   },
-  async asyncData({ $prismic, error }) {
-    try{
+  created() {
+    this.getContent();
+  },
+  methods: {
+    getContent() {
       // Query to get blog home content
-      const homepageContent = (await $prismic.api.getSingle('blog_home')).data;
+      this.getHomePageContent();
 
       // Query to get posts content to preview
-      const blogPosts = await $prismic.api.query(
-        $prismic.predicates.at('document.type', 'post'),
+      this.getAllPosts();
+    },
+
+    async getAllPosts() {
+      const posts = await this.$prismic.api.query(
+        this.$prismic.predicates.at('document.type', 'post'),
         { orderings : '[my.post.date desc]' }
       );
+      this.posts = posts.results;
+    },
 
-      // Returns data to be used in template
-      return {
-        homepageContent,
-        posts: blogPosts.results,
-        image: homepageContent.image.url
+    async getHomePageContent() {
+      const homepageContent = (await this.$prismic.api.getSingle('blog_home')).data;
+
+      this.homepageContent = {
+        image: homepageContent.image.url,
+        headline: homepageContent.headline[0].text,
+        description: homepageContent.description[0].text
       };
-    } catch (e) {
-      // Returns error page
-      error({ statusCode: 404, message: 'Page not found' });
+    },
+
+    async getPostsByTag(tag, event) {
+      const posts = await this.$prismic.api.query(this.$prismic.predicates.at('document.tags', [tag]));
+      this.posts = posts.results;
     }
   }
 };
@@ -104,6 +128,36 @@ export default {
 .blog-post
   margin: 0
   margin-bottom: 3rem
+
+.filter
+  width: max-content
+  position: absolute;
+  top: 20px
+  left: 30px;
+  text-align: left
+
+.filter-list
+  display: grid
+  grid-template-columns: repeat(1, max-content)
+  grid-gap: 10px
+  margin-top: 10px
+
+.filter-input
+  display: none
+
+.filter-input:checked + .filter-label, .filter-label:hover
+  border-color: #5163ba 
+  background-color: #5163ba
+  color: #fff
+
+.filter-label
+  display: block
+  padding: 5px 10px
+  border-radius: 4px
+  border: 1px solid #96969c
+  cursor: pointer
+  font-size: 13px
+  text-align: center
 
 @media (max-width: 767px)
   .home
