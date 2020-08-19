@@ -15,6 +15,9 @@
         <img loading="lazy" src="@/assets/img/GoDee/svg/banner-godee-route-line.svg" class="banner__route-line" alt="Route">
       </div>
     </div>
+    <div class="banner__grey-block">
+      Case study
+    </div>
   </section>
 </template>
 
@@ -86,6 +89,20 @@ export default {
       position: absolute;
       top: get-vw(920px);
       left: get-vw(160px);
+    }
+
+    &__grey-block {
+      width: get-vw(280px);
+      position: absolute;
+      padding: get-vw(10px) get-vw(26px);
+      top: get-vw(242px);
+      left: 0;
+      background-color: $border-color--grey;
+      font-size: get-vw(24px);
+      letter-spacing: get-vw(-1px);
+      font-family: 'Hoves-Bold', sans-serif;
+      color: $text-color--white;
+      text-align: right;
     }
   }
 </style>

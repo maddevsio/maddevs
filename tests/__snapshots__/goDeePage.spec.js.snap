@@ -66,6 +66,14 @@ exports[`GoDee page renders correctly 1`] = `
         />
       </div>
     </div>
+     
+    <div
+      class="banner__grey-block"
+    >
+      
+    Case study
+  
+    </div>
   </section>
    
   <section

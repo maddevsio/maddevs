@@ -238,7 +238,7 @@ exports[`CaseStudies component renders correctly 1`] = `
       </a>
       <a
         class="single-project"
-        href="/go-dee-case-study"
+        href="/godee-case-study"
         style="background: rgb(255, 106, 1);"
       >
         <div
@@ -550,7 +550,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         >
           <a
             class="single-project"
-            href="/go-dee-case-study"
+            href="/godee-case-study"
             style="background: rgb(255, 106, 1);"
           >
             <div

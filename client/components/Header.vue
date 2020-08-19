@@ -97,7 +97,7 @@ export default {
     */
     this.selectedPhone = this.phones[0];
 
-    if(this.$route.name === 'go-dee-case-study') {
+    if(this.$route.name === 'godee-case-study') {
       this.headerIsWhite = true;
     } else {
       this.headerIsWhite = false;
