@@ -205,6 +205,11 @@ export default {
         height: 115px;
         top: -25px;
       }
+
+      &__ui-button-modal-trigger {
+        font-size: 1.6vw;
+        height: 5vw;
+      }
     }
   }
 
@@ -237,6 +242,15 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 745px) {
+    .remote-tech-staff-content {
+      &__ui-button-modal-trigger {
+        font-size: 2.6vw;
+        height: 7.7vw;
+      }
+    }
+  }
+
   @media only screen and (max-width: 580px) {
     .remote-tech-staff-content {
       &__title {
@@ -251,6 +265,11 @@ export default {
       &__content-icon {
         height: get-vw(125px, 580);
         top: get-vw(-13px, 580);
+      }
+
+      &__ui-button-modal-trigger {
+        font-size: 4.6vw;
+        height: 13vw;
       }
     }
   }

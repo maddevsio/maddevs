@@ -34,7 +34,7 @@ export default {
     MeetOurExperts
   },
   data() {
-    // TODO remove console after optimize perfomance
+    // TODO remove console after optimize perfomanceF
     console.log('test fonts v1.5');
     return {
       title: 'Mad Devs: Software & Mobile App Development Company',
