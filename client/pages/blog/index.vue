@@ -2,14 +2,13 @@
   <section class="home">
     <div class="filter">
       <p>Filter by tags:</p>
-      <div class="filter-list">
-        <input type="radio" id="software-features" name="Tag" class="radio-input">
-        <label for="software-features" class="filter-label" @click="getPostsByTag('Software features')">Software features</label>
-
-        <input type="radio" id="integration-of-stripe" name="Tag" class="radio-input">
-        <label for="integration-of-stripe" class="filter-label" @click="getPostsByTag('Integration of stripe')">Integration of Stripe</label>
-        <button class="reset-filter" @click="resetFilter()" v-if="filterIsActive">Reset filter</button>
-      </div>
+      <ul class="filter-list" v-for="(tag, i) in tags" :key="i">
+        <li class="filter-item">
+          <input type="radio" :id="tag.inputId" name="Tag" class="radio-input">
+          <label :for="tag.inputId" class="filter-label" @click="getPostsByTag(tag.tagName)">{{ tag.tagName }}</label>
+        </li>
+      </ul>
+      <button class="reset-filter" @click="resetFilter()" v-if="filterIsActive">Reset filter</button>
     </div>
     <div class="posts" v-if="posts && homepageContent">
       <div class="head-content">
@@ -44,6 +43,7 @@ export default {
     return {
       homepageContent: {},
       posts: [],
+      tags: [],
       filterIsActive: false
     };
   },
@@ -65,6 +65,7 @@ export default {
         { orderings : '[my.post.date desc]' }
       );
       this.posts = posts.results;
+      this.tags = this.getTagsFromPosts(posts.results);
     },
 
     async getHomePageContent() {
@@ -102,6 +103,27 @@ export default {
           radioInput[i].checked = false;
         }
       }
+    },
+
+    getTagsFromPosts(posts) {
+      let totalTags = [];
+      let tagsObjectList = [];
+
+      posts.forEach(post => {
+        totalTags = totalTags.concat(post.tags);
+      });
+
+      // Remove duplicates
+      totalTags = totalTags.filter((tag, i) => i === totalTags.indexOf(tag));
+
+      // Create objects list and 
+      totalTags.forEach(tag => {
+        tagsObjectList.push({
+          tagName: tag, 
+          inputId: tag.toLowerCase().replace(/\s/g , '-') // Replaced space on the dash
+        });
+      });
+      return tagsObjectList;
     }
   }
 };
@@ -156,7 +178,7 @@ export default {
 
 .filter-list
   display: grid
-  grid-template-columns: repeat(1, max-content)
+  grid-template-columns: repeat(1, 100%)
   grid-gap: 10px
   margin-top: 10px
 
@@ -178,7 +200,9 @@ export default {
   text-align: center
 
 .reset-filter
-  padding: 5px 0
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px 10px
   background-color: #ec1c24
   border: 1px solid #ec1c24
   border-radius: 2px
