@@ -21,6 +21,8 @@ exports[`CareersForm component renders correctly 1`] = `
     </div>
   </div>
    
-  <successmodal-stub />
+  <successmodal-stub
+    id="career-modal"
+  />
 </section>
 `;

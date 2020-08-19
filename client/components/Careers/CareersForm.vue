@@ -87,7 +87,7 @@
         </ValidationObserver>
       </div>
     </div>
-    <SuccessModal :visibled="isEmailSent" @onClose="resetForm" />
+    <SuccessModal :visibled="isEmailSent" id="career-modal" @onClose="resetForm" />
   </section>
 </template>
 
