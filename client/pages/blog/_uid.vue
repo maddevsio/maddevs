@@ -72,9 +72,15 @@ export default {
 
   .blog-post {
     width: max-content;
+    margin-left: 20px;
     padding: 4px 10px 10px;
     border: 1px solid black;
     border-radius: 3px;
+
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 
   .blog-error {
@@ -88,8 +94,7 @@ export default {
   }
 
   .recommended-posts-list {
-    display: grid;
-    grid-row-gap: 15px;
+    display: flex;
     margin-bottom: 30px;
   }
 </style>
