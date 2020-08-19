@@ -29,7 +29,7 @@
         @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
       />
     </ValidationObserver>
-    <SuccessModal :visibled="isEmailSent" @onClose="resetForm" />
+    <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
   </div>
 </template>
 
