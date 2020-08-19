@@ -92,14 +92,14 @@ module.exports = {
     '@/modules/crawler',
     '@nuxtjs/axios',
     '@nuxtjs/gtm',
-    '@nuxtjs/prismic'
-      [
-        'nuxt-modernizr',
-        {
-          'feature-detects': ['css/scrollbars', 'css/overflow-scrolling', 'test/img/webp'],
-          options: ['setClasses']
-        }
-      ]
+    '@nuxtjs/prismic',
+    [
+      'nuxt-modernizr',
+      {
+        'feature-detects': ['css/scrollbars', 'css/overflow-scrolling', 'test/img/webp'],
+        options: ['setClasses']
+      }
+    ]
   ],
   prismic: {
     endpoint: 'https://SuperPuperTest.cdn.prismic.io/api/v2',
