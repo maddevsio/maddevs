@@ -10,7 +10,7 @@
       </div>
     </template>
     <template v-else>
-      <div class='post-part single container'>
+      <div class='post-part single'>
         <p class="block-img" :class="size">
           <prismic-image :field="img"/>
         </p>
