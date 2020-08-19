@@ -1,5 +1,5 @@
 <template>
-  <ModalContainer :name="modalName">
+  <ModalContainer :name="modalName" successModalID="get-case-studies-modal">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -50,7 +50,8 @@ export default {
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
     inputId: 'case-studies',
-    onSubmit: false
+    onSubmit: false,
+    subject: 'Marketing'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -69,7 +70,8 @@ export default {
             email: this.email || '',
             emailTo: this.emailTo || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
+            subject: this.subject || ''
           }
         };
         this.$store.dispatch('sendEmail', form).then(res => {

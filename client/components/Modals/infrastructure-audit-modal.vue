@@ -1,5 +1,5 @@
 <template>
-  <ModalContainer :name="modalName">
+  <ModalContainer :name="modalName" successModalID="infrastructure-audit-modal">
     <ValidationObserver v-slot="{ invalid }">
       <div class="form"> 
         <div class="fields-list">
@@ -107,7 +107,8 @@ export default {
         text: 'Other'
       }
     ],
-    onSubmit: false
+    onSubmit: false,
+    subject: 'Marketing'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -132,7 +133,8 @@ export default {
             phoneNumber: this.phoneNumber || '',
             selectedProjectHost: this.selectedProjectHost || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
+            subject: this.subject || ''
           }
         };
         this.$store.dispatch('sendEmail', form).then(res => {
