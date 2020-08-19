@@ -310,6 +310,18 @@ export default {
   &__form-description {
     position: relative;
   }
+
+  .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
+    content: 'roles.';
+    font-size: get-vw(40px);
+  }
+}
+
+@media only screen and (max-width: 1560px) {
+  .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
+    content: 'roles.';
+    font-size: get-vw(34px, 1560);
+  }
 }
 
 @media only screen and (max-width: 1600px) {
@@ -327,6 +339,18 @@ export default {
   .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
     content: 'roles.';
     font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
+    font-size: get-vw(32px, 1390);
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
+    font-size: get-vw(30px, 1280);
   }
 }
 
@@ -362,8 +386,7 @@ export default {
   }
 
   .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
-    content: 'roles.';
-    font-size: 30px;
+    font-size: get-vw(28px, 870);
   }
 }
 
@@ -438,11 +461,12 @@ export default {
     &__form-linkedin-input {
       width: 6.69em;
     }
-  }
 
-  .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
-    content: 'roles.';
-    font-size: 24px;
+    .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
+      font-size: get-vw(24px, 520);
+    }
   }
 }
+
+
 </style>
