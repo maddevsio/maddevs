@@ -51,7 +51,7 @@ exports[`GoDee banner renders correctly 1`] = `
           alt="preview"
           class="banner__phone-image"
           loading="lazy"
-          src="@/assets/img/GoDee/svg/godee-iphonex.svg"
+          src="@/assets/img/GoDee/png/godee-iphonex.png"
         />
       </div>
        

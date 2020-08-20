@@ -44,7 +44,7 @@ exports[`MobileApps renders correctly 1`] = `
           <img
             alt="Phone"
             class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone"
-            src="@/assets/img/GoDee/svg/mobile-apps-first-phone.svg"
+            src="@/assets/img/GoDee/png/mobile-apps-first-phone.png"
           />
            
           <p
@@ -62,7 +62,7 @@ exports[`MobileApps renders correctly 1`] = `
           <img
             alt="Phone"
             class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone"
-            src="@/assets/img/GoDee/svg/mobile-apps-second-phone.svg"
+            src="@/assets/img/GoDee/png/mobile-apps-second-phone.png"
           />
            
           <p
@@ -84,7 +84,7 @@ exports[`MobileApps renders correctly 1`] = `
           <img
             alt="Phone"
             class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone"
-            src="@/assets/img/GoDee/svg/mobile-apps-third-phone.svg"
+            src="@/assets/img/GoDee/png/mobile-apps-third-phone.png"
           />
            
           <p
@@ -106,7 +106,7 @@ exports[`MobileApps renders correctly 1`] = `
           <img
             alt="Phone"
             class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone"
-            src="@/assets/img/GoDee/svg/mobile-apps-fourth-phone.svg"
+            src="@/assets/img/GoDee/png/mobile-apps-fourth-phone.png"
           />
            
           <p
@@ -145,7 +145,7 @@ exports[`MobileApps renders correctly 1`] = `
         <img
           alt="Phone"
           class="mobile-apps__phone-image mobile-apps__application-for-users-phone"
-          src="@/assets/img/GoDee/svg/solution-sec-phone.svg"
+          src="@/assets/img/GoDee/png/solution-sec-phone.png"
         />
       </div>
     </div>
@@ -159,7 +159,7 @@ exports[`MobileApps renders correctly 1`] = `
     <img
       alt="Bus"
       class="mobile-apps__bus-icon"
-      src="@/assets/img/GoDee/svg/godee-bus.svg"
+      src="@/assets/img/GoDee/png/godee-bus.png"
     />
   </div>
 </section>

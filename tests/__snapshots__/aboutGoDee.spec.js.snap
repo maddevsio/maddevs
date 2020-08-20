@@ -42,7 +42,7 @@ exports[`About GoDee renders correctly 1`] = `
       <img
         alt="People"
         class="about-godee__people-image"
-        src="@/assets/img/GoDee/svg/about-godee-people.svg"
+        src="@/assets/img/GoDee/png/about-godee-people.png"
       />
     </div>
   </div>

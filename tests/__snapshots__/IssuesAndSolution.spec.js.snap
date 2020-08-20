@@ -134,7 +134,7 @@ exports[`Issues And Solution renders correctly 1`] = `
           <img
             alt="Women"
             class="issues-and-solution__women-image"
-            src="@/assets/img/GoDee/svg/women.svg"
+            src="@/assets/img/GoDee/png/women.png"
           />
         </div>
       </div>
@@ -396,7 +396,7 @@ exports[`Issues And Solution renders correctly 1`] = `
         <img
           alt="iPhoneX"
           class="issues-and-solution__phone-image"
-          src="@/assets/img/GoDee/svg/solution-sec-phone.svg"
+          src="@/assets/img/GoDee/png/solution-sec-phone.png"
         />
       </div>
     </div>

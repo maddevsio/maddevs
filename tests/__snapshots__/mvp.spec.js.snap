@@ -35,19 +35,19 @@ exports[`Mvp renders correctly 1`] = `
         <img
           alt="Phone"
           class="mvp__phone-item"
-          src="@/assets/img/GoDee/svg/mvp-sec-first-phone.svg"
+          src="@/assets/img/GoDee/png/mvp-sec-first-phone.png"
         />
          
         <img
           alt="Phone"
           class="mvp__phone-item"
-          src="@/assets/img/GoDee/svg/mvp-sec-second-phone.svg"
+          src="@/assets/img/GoDee/png/mvp-sec-second-phone.png"
         />
          
         <img
           alt="Phone"
           class="mvp__phone-item"
-          src="@/assets/img/GoDee/svg/mvp-sec-third-phone.svg"
+          src="@/assets/img/GoDee/png/mvp-sec-third-phone.png"
         />
       </div>
        
