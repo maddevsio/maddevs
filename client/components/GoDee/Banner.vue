@@ -10,7 +10,7 @@
           <p class="banner__description">Mad Devs helped GoDee to develop feature-rich <br> software to re-invent public mobility by building new <br> smart ways of daily commute.</p>
         </div>
         <div class="banner__phone-wrapper">
-          <img loading="lazy" src="@/assets/img/GoDee/svg/godee-iphonex.svg" class="banner__phone-image" alt="preview">
+          <img loading="lazy" src="@/assets/img/GoDee/png/godee-iphonex.png" class="banner__phone-image" alt="preview">
         </div>
         <img loading="lazy" src="@/assets/img/GoDee/svg/banner-godee-route-line.svg" class="banner__route-line" alt="Route">
       </div>

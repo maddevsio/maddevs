@@ -9,30 +9,30 @@
       <div class="mobile-apps__container">
         <div class="mobile-apps__driver-features">
           <div class="mobile-apps__driver-feature">
-            <img src="@/assets/img/GoDee/svg/mobile-apps-first-phone.svg" alt="Phone" class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone">
+            <img src="@/assets/img/GoDee/png/mobile-apps-first-phone.png" alt="Phone" class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone">
             <p class="mobile-apps__description">Fast registration for <br> drivers.</p>
           </div>
           <div class="mobile-apps__driver-feature">
-            <img src="@/assets/img/GoDee/svg/mobile-apps-second-phone.svg" alt="Phone" class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone">
+            <img src="@/assets/img/GoDee/png/mobile-apps-second-phone.png" alt="Phone" class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone">
             <p class="mobile-apps__description">Inbuilt voice feature <br> updates drivers about bus <br> stops and the number of <br> passengers waiting.</p>
           </div>
           <div class="mobile-apps__driver-feature">
-            <img src="@/assets/img/GoDee/svg/mobile-apps-third-phone.svg" alt="Phone" class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone">
+            <img src="@/assets/img/GoDee/png/mobile-apps-third-phone.png" alt="Phone" class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone">
             <p class="mobile-apps__description">Drivers can easily pick <br> passengers from bus <br> stops while staying on <br> track with the schedule.</p>
           </div>
           <div class="mobile-apps__driver-feature">
-            <img src="@/assets/img/GoDee/svg/mobile-apps-fourth-phone.svg" alt="Phone" class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone">
+            <img src="@/assets/img/GoDee/png/mobile-apps-fourth-phone.png" alt="Phone" class="mobile-apps__phone-image mobile-apps__driver-features-sec-phone">
             <p class="mobile-apps__description">Drivers can see bus <br> stops' real pictures to <br> understand where to <br> pick up passengers.</p>
           </div>
         </div>
         <div class="mobile-apps__application-for-users">
           <h3 class="mobile-apps__sub-title">Mobile applications for passengers</h3>
           <p class="mobile-apps__description mobile-apps__application-for-users-description">Ticket booking process is intuitive — the passenger needs to select the pick up and <br> drop off points, choose the departure time in the schedule, and book the ticket. <br> The most suitable route will be found automatically.</p>
-          <img src="@/assets/img/GoDee/svg/solution-sec-phone.svg" alt="Phone" class="mobile-apps__phone-image mobile-apps__application-for-users-phone">
+          <img src="@/assets/img/GoDee/png/solution-sec-phone.png" alt="Phone" class="mobile-apps__phone-image mobile-apps__application-for-users-phone">
         </div>
       </div>
       <img src="@/assets/img/GoDee/svg/mobile-apps-route-line.svg" class="mobile-apps__route-line" alt="Mobile Apps route line">
-      <img src="@/assets/img/GoDee/svg/godee-bus.svg" class="mobile-apps__bus-icon" alt="Bus">
+      <img src="@/assets/img/GoDee/png/godee-bus.png" class="mobile-apps__bus-icon" alt="Bus">
     </div>
   </section>
 </template>

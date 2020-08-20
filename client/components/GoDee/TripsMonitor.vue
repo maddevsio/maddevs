@@ -48,11 +48,11 @@
                 </p>
               </li>
             </ul>
-            <img src="@/assets/img/GoDee/svg/trips-monitor-mini-map.svg" alt="" class="trips-monitor__trips-monitor-mini-map">
+            <img src="@/assets/img/GoDee/png/trips-monitor-mini-map.png" alt="" class="trips-monitor__trips-monitor-mini-map">
           </div>
         </div>
       </div>
-      <img src="@/assets/img/GoDee/svg/godee-bus.svg" alt="Bus icon" class="trips-monitor__bus-icon">
+      <img src="@/assets/img/GoDee/png/godee-bus.png" alt="Bus icon" class="trips-monitor__bus-icon">
     </div>
   </section>
 </template>

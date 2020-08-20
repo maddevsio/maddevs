@@ -24,7 +24,7 @@
             </div>
           </div>
           <div class="issues-and-solution__image-wrapper">
-            <img src="@/assets/img/GoDee/svg/women.svg" class="issues-and-solution__women-image" alt="Women">
+            <img src="@/assets/img/GoDee/png/women.png" class="issues-and-solution__women-image" alt="Women">
           </div>
         </div>
         <div class="issues-and-solution__empty-white-block"></div>
@@ -98,7 +98,7 @@
           <div class="issues-and-solution__result-item issues-and-solution__solution-result-item">
             <span>=</span> 65 USD a month
           </div>
-          <img src="@/assets/img/GoDee/svg/solution-sec-phone.svg" class="issues-and-solution__phone-image" alt="iPhoneX">
+          <img src="@/assets/img/GoDee/png/solution-sec-phone.png" class="issues-and-solution__phone-image" alt="iPhoneX">
         </div>
       </div>
     </div>
@@ -181,7 +181,7 @@ export default {
           position: absolute;
           top: get-vw(75px);
           left: get-vw(-127px);
-          background: url('../../assets/img/GoDee/svg/godee-bus.svg') no-repeat;
+          background: url('../../assets/img/GoDee/png/godee-bus.png') no-repeat;
           background-size: get-vw(130px);
         }
       }
@@ -268,8 +268,8 @@ export default {
     }
 
     &__image-wrapper {
-      margin-top: get-vw(33px);
-      margin-left: get-vw(-20px);
+      margin-top: get-vw(30px);
+      margin-left: get-vw(-26px);
     }
 
     &__women-image {

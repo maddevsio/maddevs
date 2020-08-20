@@ -17,7 +17,7 @@
             <p class="control-panel__description-bold control-panel__description-bold--black">Trip requests per month</p>
           </div>
           <div class="control-panel__count-item">
-            <div class="control-panel__count">~4500</div>
+            <div class="control-panel__count">~10000</div>
             <p class="control-panel__description-bold control-panel__description-bold--black">Passengers per month</p>
           </div>
         </div>

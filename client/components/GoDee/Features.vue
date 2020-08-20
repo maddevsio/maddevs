@@ -30,13 +30,13 @@
           </ul>
           <ul class="features__features-images-list">
             <li class="features__image-wrapper" v-for="(image, i) in images" :key="i">
-              <img :src="require(`@/assets/img/GoDee/svg/${image.name}.svg`)" alt="Features" :class="`features__${image.name}`">
+              <img :src="require(`@/assets/img/GoDee/png/${image.name}.png`)" alt="Features" :class="`features__${image.name}`">
             </li>
           </ul>
         </div>
       </div>
       <img src="@/assets/img/GoDee/svg/features-route-line.svg" class="features__route-line" alt="Features route line">
-      <img src="@/assets/img/GoDee/svg/godee-bus.svg" class="features__bus-icon" alt="Bus">
+      <img src="@/assets/img/GoDee/png/godee-bus.png" class="features__bus-icon" alt="Bus">
     </div>
   </section>
 </template>

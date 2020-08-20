@@ -7,7 +7,7 @@
         <p class="about-godee__description">GoDee is a reliable way to commute in Ho Chi Minh city, Vietnam . Shuttle buses ride <br> along the express routes linking the major districts and popular destinations of the city. <br> It helps users to save their time, money, and planet due to less ecological impact.</p>
       </div>
       <div class="about-godee__people-image-wrapper">
-        <img src="@/assets/img/GoDee/svg/about-godee-people.svg" class="about-godee__people-image" alt="People">
+        <img src="@/assets/img/GoDee/png/about-godee-people.png" class="about-godee__people-image" alt="People">
       </div>
     </div>
   </section>
@@ -26,7 +26,7 @@ export default {
   .about-godee {
     margin-top: get-vw(325px);
     margin-bottom: get-vw(120px);
-    background: url('../../assets/img/GoDee/svg/about-godee-bg.svg') no-repeat bottom;
+    background: url('../../assets/img/GoDee/png/about-godee-bg.png') no-repeat bottom;
     background-size: contain;
 
     &__text-content {
@@ -41,7 +41,7 @@ export default {
         position: absolute;
         top: get-vw(145px);
         left: get-vw(-25px);
-        background: url('../../assets/img/GoDee/svg/godee-bus.svg') no-repeat;
+        background: url('../../assets/img/GoDee/png/godee-bus.png') no-repeat;
         background-size: get-vw(130px);
       }
     }
