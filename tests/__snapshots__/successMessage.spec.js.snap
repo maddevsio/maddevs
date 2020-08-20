@@ -3,6 +3,7 @@
 exports[`Success message renders correctly 1`] = `
 <section
   class="success-message"
+  id="success-message"
 >
   <div
     class="success-message__conten-wrapper"

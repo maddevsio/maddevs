@@ -93,6 +93,7 @@ module.exports = {
     '@/modules/crawler',
     '@nuxtjs/axios',
     '@nuxtjs/gtm',
+    '@nuxtjs/prismic',
     [
       'nuxt-modernizr',
       {
@@ -103,6 +104,11 @@ module.exports = {
   ],
   render: {
     compressor: shrinkRay()
+  },
+  prismic: {
+    endpoint: 'https://SuperPuperTest.cdn.prismic.io/api/v2',
+    linkResolver: '@/plugins/link-resolver',
+    htmlSerializer: '@/plugins/html-serializer'
   },
   gtm: {
     id: 'GTM-NNKVRF3',
