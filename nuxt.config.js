@@ -1,4 +1,5 @@
 require('dotenv').config();
+import shrinkRay from 'shrink-ray-current';
 
 module.exports = {
   srcDir: 'client/',
@@ -100,6 +101,9 @@ module.exports = {
       }
     ]
   ],
+  render: {
+    compressor: shrinkRay()
+  },
   gtm: {
     id: 'GTM-NNKVRF3',
     scriptDefer: true,
