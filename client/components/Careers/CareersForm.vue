@@ -312,14 +312,12 @@ export default {
   }
 
   .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
-    content: 'roles.';
     font-size: get-vw(40px);
   }
 }
 
 @media only screen and (max-width: 1560px) {
   .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
-    content: 'roles.';
     font-size: get-vw(34px, 1560);
   }
 }
