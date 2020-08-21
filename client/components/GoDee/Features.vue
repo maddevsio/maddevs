@@ -111,7 +111,11 @@ export default {
     }
 
     &__features-text-item {
-      margin-bottom: get-vw(70px);
+      margin-bottom: get-vw(92px);
+
+      &:last-child {
+        margin-top: get-vw(170px);
+      }
     }
 
     &__features-text-item-payment {
@@ -185,16 +189,16 @@ export default {
 
     &__route-line {
       width: get-vw(469px);
-      height: get-vw(2384px);
+      height: get-vw(2370px);
       top: get-vw(35px);
-      left: get-vw(160px);
+      left: get-vw(175px);
     }
 
     &__bus-icon {
       width: get-vw(130px);
       height: get-vw(130px);
-      top: get-vw(370px);
-      left: get-vw(119px);
+      top: get-vw(360px);
+      left: get-vw(135px);
     }
   }
 </style>

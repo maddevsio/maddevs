@@ -40,7 +40,7 @@ export default {
         height: get-vw(130px);
         position: absolute;
         top: get-vw(145px);
-        left: get-vw(-25px);
+        left: get-vw(-8px);
         background: url('../../assets/img/GoDee/png/godee-bus.png') no-repeat;
         background-size: get-vw(130px);
       }

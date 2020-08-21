@@ -49,8 +49,8 @@ export default {
 
   .mobile-apps {
     position: relative;
-    margin-top: get-vw(65px);
-    margin-bottom: get-vw(134px);
+    margin-top: get-vw(50px);
+    margin-bottom: get-vw(130px);
 
     &__container {
       padding-left: get-vw(70px);
@@ -139,14 +139,14 @@ export default {
       width: get-vw(1337px);
       height: get-vw(2287px);
       top: get-vw(50px);
-      right: get-vw(163px);
+      right: get-vw(180px);
       z-index: -1;
     }
 
     &__bus-icon {
       width: get-vw(130px);
       height: get-vw(130px);
-      right: get-vw(120px);
+      right: get-vw(135px);
       bottom: get-vw(670px);
     }
   }

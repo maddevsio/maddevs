@@ -100,6 +100,10 @@ export default {
       letter-spacing: get-vw(-1px);
     }
 
+    &__department {
+      font-size: get-vw(32px);
+    }
+
     &__description {
       font-size: get-vw(24px);
       font-family: 'Hoves-Regular', sans-serif;

@@ -88,7 +88,7 @@ export default {
       height: get-vw(4173px);
       position: absolute;
       top: get-vw(920px);
-      left: get-vw(160px);
+      left: get-vw(177px);
     }
 
     &__grey-block {

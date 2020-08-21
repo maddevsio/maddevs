@@ -126,7 +126,7 @@ export default {
       width: get-vw(1170px);
       height: get-vw(525px);
       margin-left: get-vw(-26px);
-      margin-bottom: get-vw(90px);
+      margin-bottom: get-vw(60px);
     }
 
     &__eta-preview-phone {
@@ -139,7 +139,7 @@ export default {
       height: get-vw(1905px);
       position: absolute;
       top: get-vw(24px);
-      right: get-vw(185px);
+      right: get-vw(203px);
       z-index: -1;
     }
 
