@@ -1,4 +1,5 @@
 require('dotenv').config();
+import shrinkRay from 'shrink-ray-current';
 
 module.exports = {
   srcDir: 'client/',
@@ -101,6 +102,9 @@ module.exports = {
       }
     ]
   ],
+  render: {
+    compressor: shrinkRay()
+  },
   prismic: {
     endpoint: 'https://SuperPuperTest.cdn.prismic.io/api/v2',
     linkResolver: '@/plugins/link-resolver',

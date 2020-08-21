@@ -416,7 +416,7 @@
 
 @media only screen and (max-width: 870px) {
   .form-text {
-    font-size: 28px;
+    font-size: get-vw(28px, 870);
   }
 }
 
@@ -509,7 +509,7 @@
   }
 
   .form-text {
-    font-size: 24px;
+    font-size: get-vw(24px, 520);
   }
 
   .section-title {

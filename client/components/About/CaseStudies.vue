@@ -255,7 +255,6 @@ export default {
             &::after {
               content: '';
               position: absolute;
-              background-image: url('../../assets/img/Studies/jpg/godeeSecondaryBg.jpg');
               background-repeat: no-repeat;
               width: 100%;
               height: 100%;
@@ -289,6 +288,38 @@ export default {
     &__main-title {
       font-size: 11vw;
       padding-bottom: 8vw;
+    }
+  }
+}
+
+.no-webp {
+  .case-studies {
+    .projects-mobile-slider {
+      .swiper-slide {
+        &:last-child {
+          .single-project {
+            &::after {
+              background-image: url('../../assets/img/Studies/jpg/godeeSecondaryBg.jpg');
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.webp {
+  .case-studies {
+    .projects-mobile-slider {
+      .swiper-slide {
+        &:last-child {
+          .single-project {
+            &::after {
+              background-image: url('../../assets/img/Studies/webp/godeeSecondaryBg.webp');
+            }
+          }
+        }
+      }
     }
   }
 }
