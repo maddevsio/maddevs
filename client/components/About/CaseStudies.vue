@@ -111,7 +111,7 @@ export default {
         {
           projectName: 'godee',
           logoImg: 'godeeColored',
-          link: '/go-dee-case-study',
+          link: '/godee-case-study',
           contributionWidgetColors: ['#000', '#000'],
           projectBackground: 'godeeBackground',
           projectColor: '#ff6A01',

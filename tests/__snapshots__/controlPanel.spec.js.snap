@@ -78,7 +78,7 @@ exports[`ControlPanel renders correctly 1`] = `
           <div
             class="control-panel__count"
           >
-            ~4500
+            ~10000
           </div>
            
           <p

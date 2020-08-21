@@ -39,7 +39,7 @@ exports[`Route Optimization renders correctly 1`] = `
         <img
           alt="Bus icon"
           class="route-optimization__bus-icon"
-          src="@/assets/img/GoDee/svg/godee-bus.svg"
+          src="@/assets/img/GoDee/png/godee-bus.png"
         />
       </div>
        
@@ -122,7 +122,7 @@ exports[`Route Optimization renders correctly 1`] = `
           <img
             alt="ETA preview on phone"
             class="route-optimization__eta-preview-phone"
-            src="@/assets/img/GoDee/svg/eta-preview-phone.svg"
+            src="@/assets/img/GoDee/png/eta-preview-phone.png"
           />
         </div>
       </div>

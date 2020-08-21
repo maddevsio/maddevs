@@ -48,11 +48,11 @@
                 </p>
               </li>
             </ul>
-            <img src="@/assets/img/GoDee/svg/trips-monitor-mini-map.svg" alt="" class="trips-monitor__trips-monitor-mini-map">
+            <img src="@/assets/img/GoDee/png/trips-monitor-mini-map.png" alt="" class="trips-monitor__trips-monitor-mini-map">
           </div>
         </div>
       </div>
-      <img src="@/assets/img/GoDee/svg/godee-bus.svg" alt="Bus icon" class="trips-monitor__bus-icon">
+      <img src="@/assets/img/GoDee/png/godee-bus.png" alt="Bus icon" class="trips-monitor__bus-icon">
     </div>
   </section>
 </template>
@@ -69,7 +69,7 @@ export default {
 
   .trips-monitor {
     position: relative;
-    margin-bottom: get-vw(130px);
+    margin-bottom: get-vw(168px);
 
     &__head-text-content {
       text-align: center;
@@ -86,8 +86,8 @@ export default {
 
     &__main-title {
       font-size: get-vw(50px);
-      margin-top: get-vw(70px);
-      margin-bottom: get-vw(30px);
+      margin-top: get-vw(40px);
+      margin-bottom: get-vw(10px);
     }
 
     &__description,
@@ -188,7 +188,7 @@ export default {
       height: get-vw(130px);
       position: absolute;
       top: get-vw(-45px);
-      left: get-vw(122px);
+      left: get-vw(140px);
     }
   }
 </style>

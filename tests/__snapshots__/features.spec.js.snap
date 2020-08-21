@@ -231,7 +231,7 @@ exports[`Features renders correctly 1`] = `
     <img
       alt="Bus"
       class="features__bus-icon"
-      src="@/assets/img/GoDee/svg/godee-bus.svg"
+      src="@/assets/img/GoDee/png/godee-bus.png"
     />
   </div>
 </section>

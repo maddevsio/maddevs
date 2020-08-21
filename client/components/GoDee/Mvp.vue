@@ -7,9 +7,9 @@
           <p class="mvp__description">Before investing a considerable amount of money in building software, hiring personnel, and <br> acquiring minibuses, GoDee wanted to develop an MVP to understand the market fit potential.</p>
         </div>
         <div class="mvp__phones-list">
-          <img src="@/assets/img/GoDee/svg/mvp-sec-first-phone.svg" alt="Phone" class="mvp__phone-item">
-          <img src="@/assets/img/GoDee/svg/mvp-sec-second-phone.svg" alt="Phone" class="mvp__phone-item">
-          <img src="@/assets/img/GoDee/svg/mvp-sec-third-phone.svg" alt="Phone" class="mvp__phone-item">
+          <img src="@/assets/img/GoDee/png/mvp-sec-first-phone.png" alt="Phone" class="mvp__phone-item">
+          <img src="@/assets/img/GoDee/png/mvp-sec-second-phone.png" alt="Phone" class="mvp__phone-item">
+          <img src="@/assets/img/GoDee/png/mvp-sec-third-phone.png" alt="Phone" class="mvp__phone-item">
         </div>
         <div class="mvp__year-item">2018</div>
         <div class="mvp__tech">

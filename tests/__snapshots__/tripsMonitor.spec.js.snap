@@ -148,7 +148,7 @@ exports[`Trips Monitor renders correctly 1`] = `
           <img
             alt=""
             class="trips-monitor__trips-monitor-mini-map"
-            src="@/assets/img/GoDee/svg/trips-monitor-mini-map.svg"
+            src="@/assets/img/GoDee/png/trips-monitor-mini-map.png"
           />
         </div>
       </div>
@@ -157,7 +157,7 @@ exports[`Trips Monitor renders correctly 1`] = `
     <img
       alt="Bus icon"
       class="trips-monitor__bus-icon"
-      src="@/assets/img/GoDee/svg/godee-bus.svg"
+      src="@/assets/img/GoDee/png/godee-bus.png"
     />
   </div>
 </section>

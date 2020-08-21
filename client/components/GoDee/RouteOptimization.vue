@@ -6,7 +6,7 @@
           <h3 class="route-optimization__main-title">Route optimization</h3>
           <p class="route-optimization__description">With the help of detailed drivers' performance data, Mad Devs’ Pifia microservice <br> enables route managers to optimize ETA (estimated time of arrival). Pifia shows a more <br> accurate arrival and departure time in just one click.</p>
           <img src="@/assets/img/GoDee/png/trips-monitor-route-optimization-section.png" alt="Trips monitor" class="route-optimization__trips-monitor-route-optimization-section">
-          <img src="@/assets/img/GoDee/svg/godee-bus.svg" alt="Bus icon" class="route-optimization__bus-icon">
+          <img src="@/assets/img/GoDee/png/godee-bus.png" alt="Bus icon" class="route-optimization__bus-icon">
         </div>
         <div class="route-optimization__text-content-wrapper">
           <div class="route-optimization__text-content-item">
@@ -23,7 +23,7 @@
               <h4 class="route-optimization__title">Real-time ETA</h4>
               <p class="route-optimization__description">On top of that, Pifia shows in real-time the approximate <br> late/early departure. Thus, passengers waiting for the ride <br> always know whether the bus is coming late and how long it <br> would take. The information is displayed on their mobile <br> application.</p>
             </div>
-            <img src="@/assets/img/GoDee/svg/eta-preview-phone.svg" alt="ETA preview on phone" class="route-optimization__eta-preview-phone">
+            <img src="@/assets/img/GoDee/png/eta-preview-phone.png" alt="ETA preview on phone" class="route-optimization__eta-preview-phone">
           </div>
         </div>
       </div>
@@ -126,7 +126,7 @@ export default {
       width: get-vw(1170px);
       height: get-vw(525px);
       margin-left: get-vw(-26px);
-      margin-bottom: get-vw(90px);
+      margin-bottom: get-vw(60px);
     }
 
     &__eta-preview-phone {
@@ -139,7 +139,7 @@ export default {
       height: get-vw(1905px);
       position: absolute;
       top: get-vw(24px);
-      right: get-vw(185px);
+      right: get-vw(203px);
       z-index: -1;
     }
 
