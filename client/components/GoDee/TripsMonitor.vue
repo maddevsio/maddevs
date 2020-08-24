@@ -11,44 +11,44 @@
           <h4 class="trips-monitor__features-title">The Trips Monitor dashboard displays the <br> following information:</h4>
           <div class="trips-monitor__features-content-wrapper">
             <ul class="trips-monitor__features-list">
-              <li class="trips-monitor__features-item trips-monitor__active" @mouseover="handleHover($event)">
+              <li class="trips-monitor__features-item trips-monitor__active" ref="firstChildOfList" @mouseover="handleHover($event, 'trips-monitor-mini-map')">
                 <MapIcon />
                 <p>
                   A mini-map that shows drivers' location in real-time.
                 </p>
               </li>
-              <li class="trips-monitor__features-item" @mouseover="handleHover($event, '')">
+              <li class="trips-monitor__features-item" @mouseover="handleHover($event, 'trip-item')">
                 <ClockIcon />
                 <p>
                   Buses’ late and early departures.
                 </p>
               </li>
-              <li class="trips-monitor__features-item" @mouseover="handleHover($event, '')">
+              <li class="trips-monitor__features-item" @mouseover="handleHover($event, 'calendar')">
                 <CalendarIcon />
                 <p>
                   The entire bus schedule for the weeks ahead.
                 </p>
               </li>
-              <li class="trips-monitor__features-item" @mouseover="handleHover($event, '')">
+              <li class="trips-monitor__features-item" @mouseover="handleHover($event, 'selected-trip-menu')">
                 <MapPinIcon />
                 <p>
                   A bus stop where a driver forgot to pick up a GoDee client.
                 </p>
               </li>
-              <li class="trips-monitor__features-item" @mouseover="handleHover($event, '')">
+              <li class="trips-monitor__features-item" @mouseover="handleHover($event, 'customer-support')">
                 <PeopleIcon />
                 <p>
                   The number of passengers assigned to each stop and driver.
                 </p>
               </li>
-              <li class="trips-monitor__features-item" @mouseover="handleHover($event, '')">
+              <li class="trips-monitor__features-item" @mouseover="handleHover($event, 'filter')">
                 <RevertIcon />
                 <p>
                   Access to historical information through filters.
                 </p>
               </li>
             </ul>
-            <img src="@/assets/img/GoDee/png/trips-monitor-mini-map.png" alt="" class="trips-monitor__trips-monitor-mini-map">
+            <img src="@/assets/img/GoDee/png/trips-monitor-mini-map.png" class="trips-monitor__trips-monitor-mini-map" ref="image">
           </div>
         </div>
       </div>
@@ -76,13 +76,15 @@ export default {
     RevertIcon
   },
   methods: {
-    handleHover(e) {
+    handleHover(e, imageName) {
       // Remove default class from first item of list 
-      if (e.target.classList.contains('trips-monitor__active')) {
-        e.target.classList.remove('trips-monitor__active');
+      if (this.$refs.firstChildOfList.classList.contains('trips-monitor__active')) {
+        this.$refs.firstChildOfList.classList.remove('trips-monitor__active');
       }
 
-
+      this.$refs.image.src = `/_nuxt/client/assets/img/GoDee/png/${imageName}.png`;
+      this.$refs.image.classList = [];
+      this.$refs.image.classList.add(`trips-monitor__${imageName}`);
     }
   }
 };
@@ -212,6 +214,41 @@ export default {
       height: get-vw(387px);
       margin-top: get-vw(52px);
       margin-right: get-vw(-140px);
+    }
+
+    &__trip-item {
+      width: get-vw(372px);
+      height: get-vw(180px);
+      margin-top: get-vw(140px);
+      margin-right: get-vw(-100px);
+    }
+
+    &__calendar {
+      width: get-vw(363px);
+      height: get-vw(434px);
+      margin-top: get-vw(30px);
+      margin-right: get-vw(-70px);
+    }
+
+    &__selected-trip-menu {
+      width: get-vw(500px);
+      height: get-vw(292px);
+      margin-top: get-vw(100px);
+      margin-right: get-vw(-140px);
+    }
+
+    &__customer-support {
+      width: get-vw(436px);
+      height: get-vw(670px);
+      margin-top: get-vw(-100px);
+      margin-right: get-vw(-115px);
+    }
+
+    &__filter {
+      width: get-vw(461px);
+      height: get-vw(537px);
+      margin-top: get-vw(-20px);
+      margin-right: get-vw(-125px);
     }
 
     &__features-content-wrapper {
