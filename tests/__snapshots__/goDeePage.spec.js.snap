@@ -1536,12 +1536,17 @@ exports[`GoDee page renders correctly 1`] = `
               class="trips-monitor__features-list"
             >
               <li
-                class="trips-monitor__features-item"
+                class="trips-monitor__features-item trips-monitor__active"
               >
-                <img
-                  alt="Map icon"
-                  src="@/assets/img/GoDee/svg/map.svg"
-                />
+                <svg
+                  fill="none"
+                  viewBox="0 0 42 41"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M40.125 0.25L39.765 0.3175L27.75 4.975L14.25 0.25L1.56 4.525C1.0875 4.6825 0.75 5.0875 0.75 5.605V39.625C0.75 40.255 1.245 40.75 1.875 40.75L2.235 40.6825L14.25 36.025L27.75 40.75L40.44 36.475C40.9125 36.3175 41.25 35.9125 41.25 35.395V1.375C41.25 0.745 40.755 0.25 40.125 0.25ZM27.75 36.25L14.25 31.5025V4.75L27.75 9.4975V36.25Z"
+                  />
+                </svg>
                  
                 <p>
                   
@@ -1553,10 +1558,15 @@ exports[`GoDee page renders correctly 1`] = `
               <li
                 class="trips-monitor__features-item"
               >
-                <img
-                  alt="Clock icon"
-                  src="@/assets/img/GoDee/svg/clock.svg"
-                />
+                <svg
+                  fill="none"
+                  viewBox="0 0 46 46"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M45.5 9.37006L35.15 0.685059L32.2475 4.12756L42.5975 12.8126L45.5 9.37006ZM13.73 4.12756L10.85 0.685059L0.5 9.34756L3.4025 12.7901L13.73 4.12756ZM24.125 14.5001H20.75V28.0001L31.4375 34.4126L33.125 31.6451L24.125 26.3126V14.5001ZM23 5.50006C11.8175 5.50006 2.75 14.5676 2.75 25.7501C2.75 36.9326 11.795 46.0001 23 46.0001C34.1825 46.0001 43.25 36.9326 43.25 25.7501C43.25 14.5676 34.1825 5.50006 23 5.50006ZM23 41.5001C14.2925 41.5001 7.25 34.4576 7.25 25.7501C7.25 17.0426 14.2925 10.0001 23 10.0001C31.7075 10.0001 38.75 17.0426 38.75 25.7501C38.75 34.4576 31.7075 41.5001 23 41.5001Z"
+                  />
+                </svg>
                  
                 <p>
                   
@@ -1568,10 +1578,15 @@ exports[`GoDee page renders correctly 1`] = `
               <li
                 class="trips-monitor__features-item"
               >
-                <img
-                  alt="Calendar icon"
-                  src="@/assets/img/GoDee/svg/calendar.svg"
-                />
+                <svg
+                  fill="none"
+                  viewBox="0 0 46 51"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M41 5.25H38.75V0.75H34.25V5.25H11.75V0.75H7.25V5.25H5C2.525 5.25 0.5 7.275 0.5 9.75V45.75C0.5 48.225 2.525 50.25 5 50.25H41C43.475 50.25 45.5 48.225 45.5 45.75V9.75C45.5 7.275 43.475 5.25 41 5.25ZM41 45.75H5V16.5H41V45.75Z"
+                  />
+                </svg>
                  
                 <p>
                   
@@ -1583,10 +1598,15 @@ exports[`GoDee page renders correctly 1`] = `
               <li
                 class="trips-monitor__features-item"
               >
-                <img
-                  alt="Pin icon"
-                  src="@/assets/img/GoDee/svg/map-pin.svg"
-                />
+                <svg
+                  fill="none"
+                  viewBox="0 0 32 45"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 0C7.2925 0 0.25 7.0425 0.25 15.75C0.25 27.5625 16 45 16 45C16 45 31.75 27.5625 31.75 15.75C31.75 7.0425 24.7075 0 16 0ZM16 21.375C12.895 21.375 10.375 18.855 10.375 15.75C10.375 12.645 12.895 10.125 16 10.125C19.105 10.125 21.625 12.645 21.625 15.75C21.625 18.855 19.105 21.375 16 21.375Z"
+                  />
+                </svg>
                  
                 <p>
                   
@@ -1598,10 +1618,15 @@ exports[`GoDee page renders correctly 1`] = `
               <li
                 class="trips-monitor__features-item"
               >
-                <img
-                  alt="Humans icon"
-                  src="@/assets/img/GoDee/svg/humans.svg"
-                />
+                <svg
+                  fill="none"
+                  viewBox="0 0 46 33"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M33.125 16.5C36.23 16.5 38.7275 13.98 38.7275 10.875C38.7275 7.77 36.23 5.25 33.125 5.25C30.02 5.25 27.5 7.77 27.5 10.875C27.5 13.98 30.02 16.5 33.125 16.5ZM16.25 14.25C19.985 14.25 22.9775 11.235 22.9775 7.5C22.9775 3.765 19.985 0.75 16.25 0.75C12.515 0.75 9.5 3.765 9.5 7.5C9.5 11.235 12.515 14.25 16.25 14.25ZM33.125 21C29.0075 21 20.75 23.07 20.75 27.1875V32.25H45.5V27.1875C45.5 23.07 37.2425 21 33.125 21ZM16.25 18.75C11.0075 18.75 0.5 21.3825 0.5 26.625V32.25H16.25V27.1875C16.25 25.275 16.9925 21.9225 21.5825 19.38C19.625 18.975 17.735 18.75 16.25 18.75Z"
+                  />
+                </svg>
                  
                 <p>
                   
@@ -1613,10 +1638,15 @@ exports[`GoDee page renders correctly 1`] = `
               <li
                 class="trips-monitor__features-item"
               >
-                <img
-                  alt="Revert icon"
-                  src="@/assets/img/GoDee/svg/revert.svg"
-                />
+                <svg
+                  fill="none"
+                  viewBox="0 0 48 41"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.25 0.25C16.0675 0.25 7 9.3175 7 20.5H0.25L9.0025 29.2525L9.16 29.5675L18.25 20.5H11.5C11.5 11.7925 18.5425 4.75 27.25 4.75C35.9575 4.75 43 11.7925 43 20.5C43 29.2075 35.9575 36.25 27.25 36.25C22.9075 36.25 18.97 34.4725 16.135 31.615L12.94 34.81C16.6075 38.4775 21.6475 40.75 27.25 40.75C38.4325 40.75 47.5 31.6825 47.5 20.5C47.5 9.3175 38.4325 0.25 27.25 0.25ZM25 11.5V22.75L34.63 28.465L36.25 25.7425L28.375 21.0625V11.5H25Z"
+                  />
+                </svg>
                  
                 <p>
                   
@@ -1627,7 +1657,6 @@ exports[`GoDee page renders correctly 1`] = `
             </ul>
              
             <img
-              alt=""
               class="trips-monitor__trips-monitor-mini-map"
               src="@/assets/img/GoDee/png/trips-monitor-mini-map.png"
             />
