@@ -37,5 +37,13 @@ export default {
         color: $text-color--white;
       }
     }
+
+    /deep/ pre {
+      padding: 20px;
+      overflow: auto;
+      background: $bgcolor--white;
+      border-radius: 2px;
+      font-family: 'Hoves-Regular', sans-serif;
+    }
   }
 </style>

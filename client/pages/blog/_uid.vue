@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <div class="main-container container">
     <div class="outer-container">
       <!-- Template for page title -->
       <h1 class="blog-title title">{{ $prismic.asText(document.title) }}</h1>
@@ -27,7 +27,7 @@ import BlogWidget from '@/components/Blog/BlogWidget.vue';
 
 export default {
   name: 'post',
-  layout: 'blog',
+  layout: 'default',
   components: {
     SlicesBlock,
     BlogWidget
@@ -67,8 +67,7 @@ export default {
   @import '../../assets/styles/get-vw';
 
   .main-container {
-    height: 100vh;
-    padding: 0 get-vw(320px);
+    padding-top: get-vw(100px);
     background-color: $bgcolor--black;
 
     span {
