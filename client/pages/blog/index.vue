@@ -1,30 +1,32 @@
 <template>
-  <section class="home">
-    <div class="filter">
-      <p>Filter by tags:</p>
-      <ul class="filter-list" v-for="(tag, i) in tags" :key="i">
-        <li class="filter-item">
-          <input type="radio" :id="tag.inputId" name="Tag" class="radio-input">
-          <label :for="tag.inputId" class="filter-label" @click="getPostsByTag(tag.tagName)">{{ tag.tagName }}</label>
-        </li>
-      </ul>
-      <button class="reset-filter" @click="resetFilter()" v-if="filterIsActive">Reset filter</button>
+  <section class="home container">
+    <div class="head-content">
+      <!-- <div class="blog-avatar" :style="{backgroundImage: 'url(' + homepageContent.image + ')'}" /> -->
+      <h1 class="blog-title title">
+        {{ homepageContent.headline }}
+      </h1>
+      <p class="blog-description sub-title">{{ homepageContent.description }}</p>
     </div>
-    <div class="posts" v-if="posts && homepageContent">
-      <div class="head-content">
-        <div class="blog-avatar" :style="{backgroundImage: 'url(' + homepageContent.image + ')'}" />
-        <h1 class="blog-title">
-          {{ homepageContent.headline }}
-        </h1>
-        <p class="blog-description">{{ homepageContent.description }}</p>
+    <div class="body-content">
+      <div class="posts" v-if="posts && homepageContent">
+        <div v-if="posts.length !== 0" class="blog-main">
+          <section v-for="post in posts" :key="post.id" v-bind:post="post" class="blog-post-wrapper">
+            <blog-widget :post="post"></blog-widget>
+          </section>
+        </div>
+        <div v-else class="blog-main">
+          <p>No Posts published at this time.</p>
+        </div>
       </div>
-      <div v-if="posts.length !== 0" class="blog-main">
-        <section v-for="post in posts" :key="post.id" v-bind:post="post" class="blog-post">
-          <blog-widget :post="post"></blog-widget>
-        </section>
-      </div>
-      <div v-else class="blog-main">
-        <p>No Posts published at this time.</p>
+      <div class="filter">
+        <p class="filter-title paragraph">Filter by tags:</p>
+        <ul class="filter-list" v-for="(tag, i) in tags" :key="i">
+          <li class="filter-item">
+            <input type="radio" :id="tag.inputId" name="Tag" class="radio-input">
+            <label :for="tag.inputId" class="filter-label" @click="getPostsByTag(tag.tagName)">{{ tag.tagName }}</label>
+          </li>
+        </ul>
+        <button class="reset-filter" @click="resetFilter()" v-if="filterIsActive">Reset filter</button>
       </div>
     </div>
   </section>
@@ -35,7 +37,7 @@ import BlogWidget from '@/components/Blog/BlogWidget.vue';
 
 export default {
   name: 'Blog',
-  layout: 'blog',
+  layout: 'default',
   components: {
     BlogWidget
   },
@@ -130,12 +132,15 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import '../../assets/styles/vars';
+@import '../../assets/styles/_vars';
 @import '../../assets/styles/get-vw';
 
 .home
+  display: flex
+  flex-direction: column
+  padding-top: get-vw(60px)
   background-color: $bgcolor--black
-  text-align: center
+
   .blog-avatar
     height: 140px
     width: 140px
@@ -143,23 +148,29 @@ export default {
     background-position: center
     background-size: cover
     margin: 0 auto
-  .blog-description
-    font-size: 18px
-    color: #fff
-    line-height: 30px
-    margin-bottom: 1rem
-    padding-bottom: 1rem
-    font-family: 'Hoves-Regular', sans-serif
+
+.head-content 
+  margin: 40px auto;
+
+.body-content
+  display: flex
+  justify-content: space-between
+
+.blog-title,
+.filter-title,
+.filter-label
+  color: $text-color--white
+
+.blog-description
+  margin: 10px 0
+  color: $text-color--grey
+  text-align: center
 
 .blog-main
-  width: max-content;
-  overflow: auto;
-  height: get-vw(410px)
   display: flex
   flex-direction: column
-  align-items: center
-  margin: auto
-  text-align: left
+  padding-right: get-vw(30px)
+
   &.single img
     width: 100%
     height: auto
@@ -171,20 +182,15 @@ export default {
     background-size: 2px 2px
     background-position: 0 23px
 
-.blog-post
+.blog-post-wrapper
   margin: 0
-  padding-bottom: 2rem
+  padding-bottom: get-vw(30px)
 
-.blog-title
-  color: #fff
-  font-family: 'Hoves-Regular', sans-serif
+  a 
+    text-decoration: none
 
 .filter
   width: max-content
-  position: absolute;
-  top: 20px
-  left: 30px;
-  text-align: left
 
 .filter-list
   display: grid
@@ -202,11 +208,15 @@ export default {
 
 .filter-label
   display: block
-  padding: 5px 10px
-  border-radius: 4px
-  border: 1px solid #96969c
+  padding: get-vw(10px)
+  border: get-vw(1px) solid $border-color--grey
+  border-radius: get-vw(2px)
+  box-shadow: none
+  background-color: transparent
+  font-size: get-vw(18px)
+  font-family: 'Hoves-Regular', sans-serif
   cursor: pointer
-  font-size: 13px
+  transition: 0.2s
   text-align: center
 
 .reset-filter

@@ -10,7 +10,7 @@
     <slices-block :slices="slices" class="text-container"/>
     <p class="recommended-title">Recommended posts:</p>
     <div v-if="recommendedPosts.length !== 0" class="recommended-posts-list">
-      <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="blog-post">
+      <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="recommended-post">
         <blog-widget :post="recommendedPost"></blog-widget>
       </section>
     </div>
@@ -80,7 +80,7 @@ export default {
     }
   }
 
-  .blog-post {
+  .recommended-post {
     width: max-content;
     margin-left: get-vw(20px);
     padding: get-vw(4px) get-vw(25px) get-vw(10px);

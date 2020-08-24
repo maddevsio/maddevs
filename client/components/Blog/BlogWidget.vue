@@ -61,10 +61,7 @@ export default {
   @import '../../assets/styles/get-vw';
 
   .blog-post {
-    width: get-vw(550px);
-    padding: 10px;
-    border: 1px solid;
-    border-radius: 10px;
+    // width: get-vw(800px); 
     color: $text-color--white;
 
     p {
