@@ -11,38 +11,38 @@
           <h4 class="trips-monitor__features-title">The Trips Monitor dashboard displays the <br> following information:</h4>
           <div class="trips-monitor__features-content-wrapper">
             <ul class="trips-monitor__features-list">
-              <li class="trips-monitor__features-item">
-                <img src="@/assets/img/GoDee/svg/map.svg" alt="Map icon">
+              <li class="trips-monitor__features-item" @mouseover="handleHover">
+                <MapIcon />
                 <p>
                   A mini-map that shows drivers' location in real-time.
                 </p>
               </li>
-              <li class="trips-monitor__features-item">
-                <img src="@/assets/img/GoDee/svg/clock.svg" alt="Clock icon">
+              <li class="trips-monitor__features-item" @mouseover="handleHover">
+                <ClockIcon />
                 <p>
                   Buses’ late and early departures.
                 </p>
               </li>
-              <li class="trips-monitor__features-item">
-                <img src="@/assets/img/GoDee/svg/calendar.svg" alt="Calendar icon">
+              <li class="trips-monitor__features-item" @mouseover="handleHover">
+                <CalendarIcon />
                 <p>
                   The entire bus schedule for the weeks ahead.
                 </p>
               </li>
-              <li class="trips-monitor__features-item">
-                <img src="@/assets/img/GoDee/svg/map-pin.svg" alt="Pin icon">
+              <li class="trips-monitor__features-item" @mouseover="handleHover">
+                <MapPinIcon />
                 <p>
                   A bus stop where a driver forgot to pick up a GoDee client.
                 </p>
               </li>
-              <li class="trips-monitor__features-item">
-                <img src="@/assets/img/GoDee/svg/humans.svg" alt="Humans icon">
+              <li class="trips-monitor__features-item" @mouseover="handleHover">
+                <PeopleIcon />
                 <p>
                   The number of passengers assigned to each stop and driver.
                 </p>
               </li>
-              <li class="trips-monitor__features-item">
-                <img src="@/assets/img/GoDee/svg/revert.svg" alt="Revert icon">
+              <li class="trips-monitor__features-item" @mouseover="handleHover">
+                <RevertIcon />
                 <p>
                   Access to historical information through filters.
                 </p>
@@ -58,8 +58,28 @@
 </template>
 
 <script>
+import CalendarIcon from '@/components/svg/calendar-icon';
+import ClockIcon from '@/components/svg/clock-icon';
+import MapIcon from '@/components/svg/map-icon';
+import MapPinIcon from '@/components/svg/map-pin-icon';
+import PeopleIcon from '@/components/svg/people-icon';
+import RevertIcon from '@/components/svg/revert-icon';
+
 export default {
-  name: 'Result'
+  name: 'TripMonitor',
+  components: {
+    CalendarIcon,
+    ClockIcon,
+    MapIcon,
+    MapPinIcon,
+    PeopleIcon,
+    RevertIcon
+  },
+  methods: {
+    handleHover() {
+      console.log('asdasd');
+    }
+  }
 };
 </script>
 
@@ -117,50 +137,43 @@ export default {
       display: flex;
       align-items: center;
       margin-bottom: get-vw(60px);
+      cursor: pointer;
 
       p {
         margin-left: get-vw(26px);
       }
 
-      img {
-        width: get-vw(47px);
+      svg {
+        /deep/ path {
+          fill: $svg-gray;
+        }
+      }
+
+      &:hover {
+        p {
+          color: $text-color--black;
+        }
+
+        svg {
+          /deep/ path {
+            fill: $svg-orange;
+          }
+        }
       }
 
       &:nth-child(1) {
-        color: $text-color--black;
-
-        img {
-          height: get-vw(40px);
-        }
-      }
-
-      &:nth-child(2) {
-        img {
-          height: get-vw(45px);
-        }
-      }
-
-      &:nth-child(3) {
-        img {
-          height: get-vw(49px);
+        p {
+          margin-left: get-vw(30px);
         }
       }
 
       &:nth-child(4) {
-        img {
-          height: get-vw(45px);
+        svg {
+          margin-left: get-vw(7px);
         }
-      }
-
-      &:nth-child(5) {
-        img {
-          width: get-vw(45px);
-        }
-      }
-
-      &:nth-child(6) {
-        img {
-          height: get-vw(40px);
+        
+        p {
+          margin-left: get-vw(35px);
         }
       }
     }
