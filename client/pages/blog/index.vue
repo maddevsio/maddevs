@@ -130,9 +130,11 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+@import '../../assets/styles/vars';
+@import '../../assets/styles/get-vw';
+
 .home
-  max-width: 500px
-  margin: auto
+  background-color: $bgcolor--black
   text-align: center
   .blog-avatar
     height: 140px
@@ -140,18 +142,22 @@ export default {
     border-radius: 50%
     background-position: center
     background-size: cover
-    margin: 1em auto
+    margin: 0 auto
   .blog-description
     font-size: 18px
-    color: #9A9A9A
+    color: #fff
     line-height: 30px
-    margin-bottom: 3rem
-    padding-bottom: 3rem
-    font-family: 'Lato', sans-serif
-    border-bottom: 1px solid #DADADA
+    margin-bottom: 1rem
+    padding-bottom: 1rem
+    font-family: 'Hoves-Regular', sans-serif
 
 .blog-main
-  max-width: 700px
+  width: max-content;
+  overflow: auto;
+  height: get-vw(410px)
+  display: flex
+  flex-direction: column
+  align-items: center
   margin: auto
   text-align: left
   &.single img
@@ -167,7 +173,11 @@ export default {
 
 .blog-post
   margin: 0
-  margin-bottom: 3rem
+  padding-bottom: 2rem
+
+.blog-title
+  color: #fff
+  font-family: 'Hoves-Regular', sans-serif
 
 .filter
   width: max-content
@@ -212,11 +222,4 @@ export default {
 .reset-filter:active
   background-color: #cc4247
   border-color: #cc4247
-
-@media (max-width: 767px)
-  .home
-    padding: 0 20px
-  .blog-main
-    padding: 0
-    font-size: 18px
 </style>

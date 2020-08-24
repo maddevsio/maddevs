@@ -1,16 +1,13 @@
 <template>
   <div class="main-container">
     <div class="outer-container">
-      <div class="back">
-        <nuxt-link to="/blog">back to list</nuxt-link>
-      </div>
       <!-- Template for page title -->
-      <h1 class="blog-title">{{ $prismic.asText(document.title) }}</h1>
+      <h1 class="blog-title title">{{ $prismic.asText(document.title) }}</h1>
       <!-- Template for published date -->
       <p class="blog-post-meta"><span class="created-at">{{ formattedDate }}</span></p>
     </div>
     <!-- Slice Block Componenet tag -->
-    <slices-block :slices="slices"/>
+    <slices-block :slices="slices" class="text-container"/>
     <p class="recommended-title">Recommended posts:</p>
     <div v-if="recommendedPosts.length !== 0" class="recommended-posts-list">
       <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="blog-post">
@@ -66,16 +63,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
+
   .main-container {
-    padding: 0 20px
+    height: 100vh;
+    padding: 0 get-vw(320px);
+    background-color: $bgcolor--black;
+
+    span {
+      font-size: 1.2vw;
+      font-family: 'Hoves-Regular', sans-serif;
+      line-height: 129%;
+      letter-spacing: -0.02em;
+      color: $text-color--white;
+    }
   }
 
   .blog-post {
     width: max-content;
-    margin-left: 20px;
-    padding: 4px 10px 10px;
-    border: 1px solid black;
-    border-radius: 3px;
+    margin-left: get-vw(20px);
+    padding: get-vw(4px) get-vw(25px) get-vw(10px);
+    border: get-vw(1px) solid $border-color--white;
+    border-radius: get-vw(3px);
 
 
     &:first-child {
@@ -88,13 +98,19 @@ export default {
   }
 
   .recommended-title {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 24px;
+    margin-top: get-vw(13px);
+    margin-bottom: get-vw(10px);
+    font-size: get-vw(24px);
+    font-family: 'Hoves-Regular', sans-serif;
+    color: $text-color--white;
   }
 
   .recommended-posts-list {
     display: flex;
-    margin-bottom: 30px;
+    padding-bottom: get-vw(30px);
+  }
+
+  .blog-title {
+    color: $text-color--white;
   }
 </style>

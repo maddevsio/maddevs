@@ -11,8 +11,31 @@ export default {
 };
 </script>
 
-<style lang="sass">
-.textslice
-  a
-    text-decoration: underline
+<style lang="scss" scoped>
+  @import '../../../assets/styles/_vars';
+  @import '../../../assets/styles/get-vw';
+
+  .textslice {
+
+    /deep/ strong, 
+    /deep/ h1,
+    /deep/ p {
+      color: $text-color--white;
+      font-family: 'Hoves-Bold';
+    }
+
+    /deep/ p {
+      margin: get-vw(15px) 0;
+      font-size: 1.2vw;
+      font-family: 'Hoves-Regular', sans-serif;
+      line-height: 129%;
+      letter-spacing: -0.02em;
+
+      a {
+        font-family: 'Hoves-Regular', sans-serif;
+        text-decoration: underline;
+        color: $text-color--white;
+      }
+    }
+  }
 </style>
