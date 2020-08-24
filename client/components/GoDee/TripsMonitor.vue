@@ -11,37 +11,37 @@
           <h4 class="trips-monitor__features-title">The Trips Monitor dashboard displays the <br> following information:</h4>
           <div class="trips-monitor__features-content-wrapper">
             <ul class="trips-monitor__features-list">
-              <li class="trips-monitor__features-item" @mouseover="handleHover">
+              <li class="trips-monitor__features-item trips-monitor__active" @mouseover="handleHover($event)">
                 <MapIcon />
                 <p>
                   A mini-map that shows drivers' location in real-time.
                 </p>
               </li>
-              <li class="trips-monitor__features-item" @mouseover="handleHover">
+              <li class="trips-monitor__features-item" @mouseover="handleHover($event, '')">
                 <ClockIcon />
                 <p>
                   Buses’ late and early departures.
                 </p>
               </li>
-              <li class="trips-monitor__features-item" @mouseover="handleHover">
+              <li class="trips-monitor__features-item" @mouseover="handleHover($event, '')">
                 <CalendarIcon />
                 <p>
                   The entire bus schedule for the weeks ahead.
                 </p>
               </li>
-              <li class="trips-monitor__features-item" @mouseover="handleHover">
+              <li class="trips-monitor__features-item" @mouseover="handleHover($event, '')">
                 <MapPinIcon />
                 <p>
                   A bus stop where a driver forgot to pick up a GoDee client.
                 </p>
               </li>
-              <li class="trips-monitor__features-item" @mouseover="handleHover">
+              <li class="trips-monitor__features-item" @mouseover="handleHover($event, '')">
                 <PeopleIcon />
                 <p>
                   The number of passengers assigned to each stop and driver.
                 </p>
               </li>
-              <li class="trips-monitor__features-item" @mouseover="handleHover">
+              <li class="trips-monitor__features-item" @mouseover="handleHover($event, '')">
                 <RevertIcon />
                 <p>
                   Access to historical information through filters.
@@ -76,8 +76,13 @@ export default {
     RevertIcon
   },
   methods: {
-    handleHover() {
-      console.log('asdasd');
+    handleHover(e) {
+      // Remove default class from first item of list 
+      if (e.target.classList.contains('trips-monitor__active')) {
+        e.target.classList.remove('trips-monitor__active');
+      }
+
+
     }
   }
 };
@@ -174,6 +179,24 @@ export default {
         
         p {
           margin-left: get-vw(35px);
+        }
+      }
+
+      &:nth-child(6) {
+        svg {
+          margin-left: get-vw(-2px);
+        }
+      }
+    }
+
+    &__active {
+      p {
+        color: $text-color--black;
+      }
+
+      svg {
+        /deep/ path {
+          fill: $svg-orange;
         }
       }
     }
