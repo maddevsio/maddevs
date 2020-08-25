@@ -86,4 +86,8 @@ export default {
     font-size: get-vw(32px);
     letter-spacing: get-vw(-1px);
   }
+
+  .blog-post-meta {
+    margin-bottom: get-vw(10px);
+  }
 </style>

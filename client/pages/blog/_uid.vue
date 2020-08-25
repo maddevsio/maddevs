@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container container">
+  <div class="main-container">
     <div class="outer-container">
       <!-- Template for page title -->
       <h1 class="blog-title title">{{ $prismic.asText(document.title) }}</h1>
@@ -71,7 +71,7 @@ export default {
   @import '../../assets/styles/get-vw';
 
   .main-container {
-    padding-top: get-vw(150px);
+    padding: get-vw(150px) get-vw(250px) 0;
     background-color: $bgcolor--black;
 
     span {

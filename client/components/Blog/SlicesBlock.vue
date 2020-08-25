@@ -22,7 +22,7 @@
 <script>
 import QuoteSlice from '~/components/Blog/slices/QuoteSlice.vue';
 import TextSlice from '~/components/Blog/slices/TextSlice.vue';
-import ImageCaptionSlice from '~/components/Blog/slices/TextSlice.vue';
+import ImageCaptionSlice from '~/components/Blog/slices/ImageCaptionSlice.vue';
 
 export default {
   props: ['slices'],

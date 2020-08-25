@@ -48,12 +48,17 @@ export default {
       font-family: 'Hoves-Bold';
     }
 
-    /deep/ p {
-      margin: get-vw(25px) 0;
+    /deep/ p,
+    /deep/ li {
       font-size: 1.3vw;
-      font-family: 'Hoves-Regular', sans-serif;
       line-height: 129%;
       letter-spacing: -0.02em;
+    }
+
+
+    /deep/ p {
+      margin: get-vw(25px) 0;
+      font-family: 'Hoves-Regular', sans-serif;
     }
 
     /deep/ em {
