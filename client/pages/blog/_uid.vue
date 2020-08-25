@@ -1,24 +1,20 @@
 <template>
   <div class="main-container">
     <div class="outer-container">
-      <div class="back">
-        <nuxt-link to="/blog">back to list</nuxt-link>
-      </div>
       <!-- Template for page title -->
-      <h1 class="blog-title">{{ $prismic.asText(document.title) }}</h1>
+      <h1 class="blog-title title">{{ $prismic.asText(document.title) }}</h1>
       <!-- Template for published date -->
       <p class="blog-post-meta"><span class="created-at">{{ formattedDate }}</span></p>
     </div>
     <!-- Slice Block Componenet tag -->
-    <slices-block :slices="slices"/>
-    <p class="recommended-title">Recommended posts:</p>
-    <div v-if="recommendedPosts.length !== 0" class="recommended-posts-list">
-      <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="blog-post">
-        <blog-widget :post="recommendedPost"></blog-widget>
-      </section>
-    </div>
-    <div v-else class="blog-error">
-      No recommended Posts published at this time.
+    <slices-block :slices="slices" class="text-container"/>
+    <div v-if="recommendedPosts.length !== 0">
+      <p class="recommended-title">Recommended posts:</p>
+      <div class="recommended-posts-list">
+        <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="recommended-post">
+          <blog-widget :post="recommendedPost"></blog-widget>
+        </section>
+      </div>
     </div>
   </div>
 </template>
@@ -30,7 +26,7 @@ import BlogWidget from '@/components/Blog/BlogWidget.vue';
 
 export default {
   name: 'post',
-  layout: 'blog',
+  layout: 'default',
   components: {
     SlicesBlock,
     BlogWidget
@@ -49,7 +45,12 @@ export default {
       if (post.tags.length) {
         recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', post.tags));
         recommendedPosts = recommendedPosts.results.filter(recommendedPost => recommendedPost.uid !== post.uid);
+
+        if (recommendedPosts.length > 3) {
+          recommendedPosts = recommendedPosts.slices(1, 4);
+        }
       }
+
       // Returns data to be used in template
       return {
         document: post.data,
@@ -66,20 +67,40 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../assets/styles/vars';
+  @import '../../assets/styles/get-vw';
+
   .main-container {
-    padding: 0 20px
+    padding: get-vw(150px) get-vw(250px) 0;
+    background-color: $bgcolor--black;
+
+    span {
+      display: block;
+      margin-bottom: get-vw(45px);
+      font-size: 1.2vw;
+      font-family: 'Hoves-Regular', sans-serif;
+      line-height: 129%;
+      letter-spacing: -0.02em;
+      color: $text-color--white;
+    }
   }
 
-  .blog-post {
-    width: max-content;
-    margin-left: 20px;
-    padding: 4px 10px 10px;
-    border: 1px solid black;
-    border-radius: 3px;
+  .recommended-post {
+    width: 30%;
+    height: max-content;
+    margin-left: get-vw(20px);
+    padding: get-vw(10px);
+    border-radius: get-vw(3px);
+    background: $bgcolor--grey-light;
+    transition: 0.2s;
 
 
     &:first-child {
       margin-left: 0;
+    }
+
+    &:hover {
+      background: #d7d7d7;
     }
   }
 
@@ -88,13 +109,36 @@ export default {
   }
 
   .recommended-title {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 24px;
+    margin-top: get-vw(65px);
+    margin-bottom: get-vw(30px);
+    font-size: get-vw(32px);
+    font-family: 'Hoves-Bold', sans-serif;
+    color: $text-color--white;
   }
 
   .recommended-posts-list {
     display: flex;
-    margin-bottom: 30px;
+    padding-bottom: get-vw(30px);
+  }
+
+  .blog-title {
+    font-size: get-vw(55px);
+    color: $text-color--white;
+  }
+
+  /deep/ span {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  /deep/ a {
+    text-decoration: none;
+  }
+
+  /deep/ .post-title,
+  /deep/ .blog-post-meta,
+  /deep/ span,
+  /deep/ p {
+    color: $text-color--black;
   }
 </style>

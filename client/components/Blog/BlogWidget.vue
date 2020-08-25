@@ -1,7 +1,7 @@
 <template>
   <nuxt-link :to="link">
     <div class="blog-post">
-      <h2>{{ $prismic.asText(post.data.title) }}</h2>
+      <h2 class="post-title sub-title">{{ $prismic.asText(post.data.title) }}</h2>
       <p class="blog-post-meta"><span class="created-at">{{ formattedDate }}</span></p>
       <p>{{getFirstParagraph(post)}}</p>
     </div>
@@ -56,10 +56,38 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-.blog-post
-  color: #353535
+<style lang="scss" scoped>
+  @import '../../assets/styles/_vars';
+  @import '../../assets/styles/get-vw';
 
-h2
-  margin: 0
+  .blog-post {
+    color: $text-color--white;
+
+    p {
+      margin-top: get-vw(5px);
+    }
+
+    p, span {
+      font-family: 'Hoves-Regular', sans-serif;
+    }
+
+    span {
+      font-size: 1.2vw;
+      line-height: 129%;
+      letter-spacing: -0.02em;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .post-title {
+    font-size: get-vw(32px);
+    letter-spacing: get-vw(-1px);
+  }
+
+  .blog-post-meta {
+    margin-bottom: get-vw(10px);
+  }
 </style>
