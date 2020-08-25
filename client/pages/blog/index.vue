@@ -165,6 +165,9 @@ export default {
 .reset-filter
   color: $text-color--white
 
+.filter-title
+  font-family: 'Hoves-Bold', sans-serif
+
 .blog-description
   margin: get-vw(10px) 0
   color: $text-color--grey
