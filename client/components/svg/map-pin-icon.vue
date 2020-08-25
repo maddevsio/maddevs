@@ -1,0 +1,20 @@
+<template>
+  <svg viewBox="0 0 32 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 0C7.2925 0 0.25 7.0425 0.25 15.75C0.25 27.5625 16 45 16 45C16 45 31.75 27.5625 31.75 15.75C31.75 7.0425 24.7075 0 16 0ZM16 21.375C12.895 21.375 10.375 18.855 10.375 15.75C10.375 12.645 12.895 10.125 16 10.125C19.105 10.125 21.625 12.645 21.625 15.75C21.625 18.855 19.105 21.375 16 21.375Z"/>
+  </svg>
+</template>
+
+<script>
+export default {
+  name: 'MapPin'
+};
+</script>
+
+<style lang="scss" scoped>
+  @import '../../assets/styles/get-vw';
+
+  svg {
+    width: get-vw(32px); 
+    height: get-vw(45px);
+  }
+</style>
