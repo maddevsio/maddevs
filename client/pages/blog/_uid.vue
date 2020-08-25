@@ -8,14 +8,13 @@
     </div>
     <!-- Slice Block Componenet tag -->
     <slices-block :slices="slices" class="text-container"/>
-    <p class="recommended-title">Recommended posts:</p>
-    <div v-if="recommendedPosts.length !== 0" class="recommended-posts-list">
-      <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="recommended-post">
-        <blog-widget :post="recommendedPost"></blog-widget>
-      </section>
-    </div>
-    <div v-else class="blog-error">
-      No recommended Posts published at this time.
+    <div v-if="recommendedPosts.length !== 0">
+      <p class="recommended-title">Recommended posts:</p>
+      <div class="recommended-posts-list">
+        <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="recommended-post">
+          <blog-widget :post="recommendedPost"></blog-widget>
+        </section>
+      </div>
     </div>
   </div>
 </template>
@@ -46,7 +45,12 @@ export default {
       if (post.tags.length) {
         recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', post.tags));
         recommendedPosts = recommendedPosts.results.filter(recommendedPost => recommendedPost.uid !== post.uid);
+
+        if (recommendedPosts.length > 3) {
+          recommendedPosts = recommendedPosts.slices(1, 4);
+        }
       }
+
       // Returns data to be used in template
       return {
         document: post.data,
@@ -67,10 +71,12 @@ export default {
   @import '../../assets/styles/get-vw';
 
   .main-container {
-    padding-top: get-vw(100px);
+    padding-top: get-vw(150px);
     background-color: $bgcolor--black;
 
     span {
+      display: block;
+      margin-bottom: get-vw(45px);
       font-size: 1.2vw;
       font-family: 'Hoves-Regular', sans-serif;
       line-height: 129%;
@@ -80,15 +86,21 @@ export default {
   }
 
   .recommended-post {
-    width: max-content;
+    width: 30%;
+    height: max-content;
     margin-left: get-vw(20px);
-    padding: get-vw(4px) get-vw(25px) get-vw(10px);
-    border: get-vw(1px) solid $border-color--white;
+    padding: get-vw(10px);
     border-radius: get-vw(3px);
+    background: $bgcolor--grey-light;
+    transition: 0.2s;
 
 
     &:first-child {
       margin-left: 0;
+    }
+
+    &:hover {
+      background: #d7d7d7;
     }
   }
 
@@ -97,10 +109,10 @@ export default {
   }
 
   .recommended-title {
-    margin-top: get-vw(13px);
-    margin-bottom: get-vw(10px);
-    font-size: get-vw(24px);
-    font-family: 'Hoves-Regular', sans-serif;
+    margin-top: get-vw(65px);
+    margin-bottom: get-vw(30px);
+    font-size: get-vw(32px);
+    font-family: 'Hoves-Bold', sans-serif;
     color: $text-color--white;
   }
 
@@ -110,6 +122,23 @@ export default {
   }
 
   .blog-title {
+    font-size: get-vw(55px);
     color: $text-color--white;
+  }
+
+  /deep/ span {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  /deep/ a {
+    text-decoration: none;
+  }
+
+  /deep/ .post-title,
+  /deep/ .blog-post-meta,
+  /deep/ span,
+  /deep/ p {
+    color: $text-color--black;
   }
 </style>

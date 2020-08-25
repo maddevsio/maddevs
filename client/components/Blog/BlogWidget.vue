@@ -61,7 +61,6 @@ export default {
   @import '../../assets/styles/get-vw';
 
   .blog-post {
-    // width: get-vw(800px); 
     color: $text-color--white;
 
     p {
@@ -81,5 +80,10 @@ export default {
     a {
       text-decoration: none;
     }
+  }
+
+  .post-title {
+    font-size: get-vw(32px);
+    letter-spacing: get-vw(-1px);
   }
 </style>

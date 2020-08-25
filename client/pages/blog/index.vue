@@ -138,7 +138,7 @@ export default {
 .home
   display: flex
   flex-direction: column
-  padding-top: get-vw(60px)
+  padding-top: get-vw(100px)
   background-color: $bgcolor--black
 
   .blog-avatar
@@ -150,26 +150,31 @@ export default {
     margin: 0 auto
 
 .head-content 
-  margin: 40px auto;
+  margin: get-vw(60px) auto;
 
 .body-content
   display: flex
   justify-content: space-between
 
+.blog-title
+  font-size: get-vw(76px)
+
 .blog-title,
 .filter-title,
-.filter-label
+.filter-label,
+.reset-filter
   color: $text-color--white
 
 .blog-description
-  margin: 10px 0
+  margin: get-vw(10px) 0
   color: $text-color--grey
   text-align: center
+  font-size: get-vw(46px)
 
 .blog-main
+  width: 85%;
   display: flex
   flex-direction: column
-  padding-right: get-vw(30px)
 
   &.single img
     width: 100%
@@ -184,50 +189,51 @@ export default {
 
 .blog-post-wrapper
   margin: 0
-  padding-bottom: get-vw(30px)
+  padding-bottom: get-vw(50px)
 
   a 
     text-decoration: none
 
 .filter
-  width: max-content
+  min-width: get-vw(180px);
 
 .filter-list
   display: grid
   grid-template-columns: repeat(1, 100%)
-  grid-gap: 10px
-  margin-top: 10px
+  grid-gap: get-vw(10px)
+  margin-top: get-vw(10px)
 
 .radio-input
   display: none
 
 .radio-input:checked + .filter-label, .filter-label:hover
-  border-color: #5163ba 
-  background-color: #5163ba
-  color: #fff
+  border-color: $border-color--red
+  color: $text-color--red
+
+.filter-label,
+.reset-filter
+  font-size: get-vw(16px)
+  border-radius: get-vw(2px)
+  cursor: pointer
+
 
 .filter-label
   display: block
   padding: get-vw(10px)
-  border: get-vw(1px) solid $border-color--grey
-  border-radius: get-vw(2px)
   box-shadow: none
   background-color: transparent
-  font-size: get-vw(18px)
-  font-family: 'Hoves-Regular', sans-serif
-  cursor: pointer
+  border: get-vw(1px) solid $border-color--grey
   transition: 0.2s
   text-align: center
+  font-family: 'Hoves-Regular', sans-serif
 
 .reset-filter
   width: 100%;
-  margin-top: 10px;
-  padding: 5px 10px
-  background-color: #ec1c24
-  border: 1px solid #ec1c24
-  border-radius: 2px
-  color: #fff
-  cursor: pointer
+  margin-top: get-vw(10px);
+  padding: get-vw(11px) get-vw(10px)
+  font-family: 'Hoves-Bold', sans-serif
+  background-color: $bgcolor--red
+  border: none
 
 .reset-filter:active
   background-color: #cc4247
