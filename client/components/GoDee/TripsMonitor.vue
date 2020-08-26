@@ -82,7 +82,7 @@ export default {
         this.$refs.firstChildOfList.classList.remove('trips-monitor__active');
       }
 
-      this.$refs.image.src = `/_nuxt/client/assets/img/GoDee/png/${imageName}.png`;
+      this.$refs.image.src = require(`../../assets/img/GoDee/png/${imageName}.png`);
       this.$refs.image.classList = [];
       this.$refs.image.classList.add(`trips-monitor__${imageName}`);
     }
