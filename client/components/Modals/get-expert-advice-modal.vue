@@ -63,7 +63,8 @@ export default {
     agreeToGetMadDevsDiscountOffers: false,
     inputId: 'get-expert-advice',
     onSubmit: false,
-    subject: 'Marketing'
+    subject: 'Marketing',
+    form: ''
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -79,7 +80,7 @@ export default {
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
         this.onSubmit = true;
-        const form = {
+        this.form = {
           templateId: 304641, // Required
           variables: {
             fullName: this.fullName || '',
@@ -92,7 +93,7 @@ export default {
             subject: this.subject || ''
           }
         };
-        this.$store.dispatch('sendEmail', form).then(res => {
+        this.$store.dispatch('sendEmail', this.form).then(res => {
           this.onSubmit = false;
           this.resetForm();
           if (res.status === 200) {
