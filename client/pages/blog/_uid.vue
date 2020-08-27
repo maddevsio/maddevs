@@ -5,6 +5,9 @@
       <h1 class="blog-title title">{{ $prismic.asText(document.title) }}</h1>
       <!-- Template for published date -->
       <p class="blog-post-meta"><span class="created-at">{{ formattedDate }}</span></p>
+      <div class="share-links">
+        <a :href="`https://www.linkedin.com/sharing/share-offsite/?url=${url}`" class="share-link">Share on Linkedin</a>
+      </div>
     </div>
     <!-- Slice Block Componenet tag -->
     <slices-block :slices="slices" class="text-container"/>
@@ -31,9 +34,25 @@ export default {
     SlicesBlock,
     BlogWidget
   },
+  data() {
+    return {
+      title: '',
+      description: '',
+      url: '',
+      ogImage: '',
+      ogUrl: 'https://maddevs.io'
+    };
+  },
   head () {
     return {
-      title: 'Prismic Nuxt.js Blog'
+      title: this.title,
+      meta: [
+        { name: 'description', content: this.description },
+        { property: 'og:url', content: this.ogUrl },
+        { property: 'og:title', content: this.title },
+        { property: 'og:description', content: this.description },
+        { property: 'og:image', content: this.ogImage }
+      ]
     };
   },
   async asyncData({ $prismic, params, error }) {
@@ -62,6 +81,22 @@ export default {
       // Returns error page
       error({ statusCode: 404, message: 'Page not found' });
     }
+  },
+  mounted() {
+    if (this.document.title.length !== 0) {
+      this.title = this.document.title[0].text;
+    }
+
+    if (this.document.subtitle.length !== 0) {
+      this.description = this.document.subtitle[0].text;
+    }
+
+    if (this.document.og_image.url) {
+      this.ogImage = this.document.og_image.url;
+    } else {
+      this.ogImage = 'https://maddevs.io/Open-Graph.png';
+    }
+    this.url = window.location.href;
   }
 };
 </script>
@@ -124,6 +159,24 @@ export default {
   .blog-title {
     font-size: get-vw(55px);
     color: $text-color--white;
+  }
+
+  .share-link {
+    padding: get-vw(5px) get-vw(10px);
+    background-color: $bgcolor--white;
+    border-radius: get-vw(2px);
+    font-family: 'Hoves-Regular', sans-serif;
+    font-size: 1.1vw;
+    color: $text-color--black;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: $bgcolor--grey-light;
+    }
+
+    &:active {
+      background-color: $bgcolor--grey;
+    }
   }
 
   /deep/ span {
