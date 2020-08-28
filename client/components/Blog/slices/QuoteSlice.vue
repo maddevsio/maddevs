@@ -14,7 +14,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../../assets/styles/get-vw';
   @import '../../../assets/styles/_vars';
 
   .block-quotation {

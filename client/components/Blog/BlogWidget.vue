@@ -58,7 +58,6 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/_vars';
-  @import '../../assets/styles/get-vw';
 
   .blog-post {
     color: $text-color--white;

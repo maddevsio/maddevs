@@ -133,7 +133,6 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../assets/styles/_vars';
-@import '../../assets/styles/get-vw';
 
 .home
   max-width: 1680px;

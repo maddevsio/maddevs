@@ -44,7 +44,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import '../../../assets/styles/get-vw';
 @import '../../../assets/styles/_vars';
 
 img

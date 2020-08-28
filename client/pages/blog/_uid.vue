@@ -12,10 +12,10 @@
       <img :src="document.featured_image.url" class="featured-image" v-if="document.featured_image.url !== undefined">
       <p class="introduction-paragraph">{{ $prismic.asText(document.introduction_paragraph) }}</p>
     </div>
-    <div class="table-of-content" v-if="headingsList.length !== 0">>
+    <div class="table-of-content" v-if="headingsList.length !== 0">
       <p class="table-of-content-title">Table of content:</p>
       <ul class="table-of-content-list">
-        <li v-for="(heading, i) in headingsList" :key="i" class="heading-item">{{ heading }}</li>
+        <li v-for="(heading, i) in headingsList" :key="i" class="table-of-content-list-item" @click="scrollToHeading(heading.headingName)">{{ heading.textContent }}</li>
       </ul>
     </div>
     <!-- Slice Block Componenet tag -->
@@ -28,6 +28,9 @@
         </section>
       </div>
     </div>
+    <button class="back-to-list" @click="scrollToTableOfContent('table-of-content')" v-if="buttonIsActive">
+      <i/>
+    </button>
   </div>
 </template>
 
@@ -50,7 +53,8 @@ export default {
       url: '',
       featuredImage: '',
       ogUrl: 'https://maddevs.io',
-      headingsList: []
+      headingsList: [],
+      buttonIsActive: false
     };
   },
   head () {
@@ -109,16 +113,43 @@ export default {
     this.url = window.location.href;
 
     this.getAllHeadings();
+
+    window.addEventListener('scroll', this.handleScroll);
   },
   methods: {
     getAllHeadings() {
       this.document.body.forEach(listItem => {
         if(listItem.primary.text !== undefined) {
           if(listItem.primary.text[0].type === 'heading1') {
-            this.headingsList.push(listItem.primary.text[0].text);
+            this.headingsList.push({
+              textContent: listItem.primary.text[0].text,
+              headingName: listItem.primary.text[0].text.toLowerCase().replace(/\s/g , '-')
+            });
           }
         }
       });
+    },
+    scrollTo(className) {
+      const element = document.getElementsByClassName(className);
+      element[0].scrollIntoView(
+        {
+          block: 'center', 
+          behavior: 'smooth'
+        }
+      );
+    },
+    scrollToHeading(className) {
+      this.scrollTo(className);
+      this.buttonIsActive = true;
+    },
+    scrollToTableOfContent(className) {
+      this.scrollTo(className);
+      this.buttonIsActive = false;
+    },
+    handleScroll(e) {
+      if (e.target.scrollingElement.scrollTop === 0) {
+        this.buttonIsActive = false;
+      }
     }
   }
 };
@@ -126,7 +157,6 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
-  @import '../../assets/styles/get-vw';
 
   .main-container {
     max-width: 1680px;
@@ -224,7 +254,7 @@ export default {
   }
 
   .introduction-paragraph,
-  .heading-item,
+  .table-of-content-list-item,
   .table-of-content-title {
     margin: 25px 0;
     font-family: 'Hoves-Regular', sans-serif;
@@ -235,12 +265,22 @@ export default {
     white-space: pre-wrap;
   }
 
+  .table-of-content {
+    margin-top: 25px;
+  }
+
   .table-of-content-list {
-    margin-bottom: 30px;
     list-style-type: disc;
   }
 
-  .heading-item {
+  .table-of-content-title {
+    margin-top: 0;
+    margin-bottom: -5px;
+    font-size: 1.9em;
+    font-family: 'Hoves-Bold', sans-serif;
+  }
+
+  .table-of-content-list-item {
     margin: 15px;
     cursor: pointer;
 
@@ -249,9 +289,35 @@ export default {
     }
   }
 
-  .table-of-content-title {
-    margin-bottom: -5px;
-    font-size: 1.9em;
-    font-family: 'Hoves-Bold', sans-serif;
+  .back-to-list {
+    padding: 12px 14px 4px;
+    position: fixed;
+    right: 38px;
+    bottom: 20px;
+    background-color: transparent;
+    border: 1px solid $border-color--red;
+    border-radius: 2px;
+    transition: 0.2s;
+    cursor: pointer;
+
+    i {
+      display: inline-block;
+      padding: 4px;
+      border: solid $border-color--red;
+      border-width: 0 3px 3px 0;
+      transform: rotate(-135deg);
+    }
+
+    &:hover {
+      background-color: $bgcolor--red;
+
+      i {
+        border-color: $border-color--black;
+      }
+    }
+
+    &:active {
+      background-color: $button-active--red;
+    }
   }
 </style>

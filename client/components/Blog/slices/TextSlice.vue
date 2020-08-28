@@ -1,19 +1,33 @@
 <template>
   <div class='post-part single'>
-    <prismic-rich-text class="textslice" :field="slice.primary.text"/>
+    <prismic-rich-text class="textslice" :class="className" :field="slice.primary.text"/>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['slice'],
-  name: 'text-slice'
+  props: {
+    slice: {
+      type: Object,
+      default: null
+    }
+  },
+  name: 'text-slice',
+  data() {
+    return {
+      className: ''
+    };
+  },
+  mounted() {
+    if (this.$props.slice.primary.text[0].type === 'heading1') {
+      this.className = this.$props.slice.primary.text[0].text.toLowerCase().replace(/\s/g , '-');
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
   @import '../../../assets/styles/_vars';
-  @import '../../../assets/styles/get-vw';
 
   .textslice {
 
