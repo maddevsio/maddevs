@@ -64,7 +64,7 @@ export default {
     color: $text-color--white;
 
     p {
-      margin-top: get-vw(5px);
+      margin-top: 5px;
     }
 
     p, span {
@@ -72,7 +72,7 @@ export default {
     }
 
     span {
-      font-size: 1.2vw;
+      font-size: 17px;
       line-height: 129%;
       letter-spacing: -0.02em;
     }
@@ -83,11 +83,11 @@ export default {
   }
 
   .post-title {
-    font-size: get-vw(32px);
-    letter-spacing: get-vw(-1px);
+    font-size: 32px;
+    letter-spacing: -1px;
   }
 
   .blog-post-meta {
-    margin-bottom: get-vw(10px);
+    margin-bottom: 10px;
   }
 </style>

@@ -52,13 +52,12 @@ img
   height: auto
 
 .block-img
-  margin-bottom: get-vw(10px);
+  margin-bottom: 10px;
 
 .image-label
   display: block
   text-align: center
-  font-style: italic
-  font-size: 1.3vw;
+  font-size: 14px;
   line-height: 129%;
   letter-spacing: -0.02em;
   font-family: 'Hoves-Regular', sans-serif;
