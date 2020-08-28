@@ -6,7 +6,8 @@
       <!-- Template for published date -->
       <p class="blog-post-meta"><span class="created-at">{{ formattedDate }}</span></p>
       <div class="share-links">
-        <a :href="`https://www.linkedin.com/sharing/share-offsite/?url=${url}`" class="share-link">Share on Linkedin</a>
+        <a :href="`https://www.linkedin.com/sharing/share-offsite/?url=${url}`" target="_blank" class="share-link">Share on Linkedin</a>
+        <a :href="`http://twitter.com/share?text=${title}?&url=${url}`" target="_blank" class="share-link">Share on Twitter</a>
       </div>
     </div>
     <!-- Slice Block Componenet tag -->
