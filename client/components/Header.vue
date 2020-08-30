@@ -271,15 +271,15 @@ export default {
       overflow: hidden;
 
       &--facebook {
-        background-image: url(../assets/img/Header/facebook-icon.svg);
+        background-image: url(../assets/img/common/facebook-icon.svg);
       }
 
       &--twitter {
-        background-image: url(../assets/img/Header/twitter-icon.svg);
+        background-image: url(../assets/img/common/twitter-icon.svg);
       }
 
       &--linkedin {
-        background-image: url(../assets/img/Header/lindekin-icon.svg);
+        background-image: url(../assets/img/common/lindekin-icon.svg);
       }
     }
     &__flag {

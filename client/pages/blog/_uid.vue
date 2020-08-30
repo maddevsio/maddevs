@@ -1,42 +1,50 @@
 <template>
-  <div class="main-container">
-    <div class="outer-container">
-      <!-- Template for page title -->
-      <h1 class="blog-title title">{{ $prismic.asText(document.title) }}</h1>
-      <!-- Template for published date -->
-      <p class="blog-post-meta"><span class="created-at">{{ formattedDate }}</span></p>
-      <div class="share-links">
-        <a :href="`https://www.linkedin.com/sharing/share-offsite/?url=${url}`" target="_blank" class="share-link">Share on Linkedin</a>
-        <a :href="`http://twitter.com/share?text=${title}?&url=${url}`" target="_blank" class="share-link">Share on Twitter</a>
+  <div class="blog-post">
+    <div class="blog-post__introduction-container">
+      <h1 class="blog-post__blog-title title">{{ $prismic.asText(document.title) }}</h1>
+      <p class="blog-post__blog-sub-title">{{ $prismic.asText(document.subtitle) }}</p>
+      <div class="blog-post__post-info">
+        <div class="blog-post__author">
+          <img :src="document.author_image.url" :alt="$prismic.asText(document.author)" class="blog-post__author-image" v-if="document.author_image.url !== undefined">
+          <div class="blog-post__none-image" v-else></div>
+          <div class="blog-post__author-info">
+            <p class="blog-post__author-name">{{ $prismic.asText(document.author) }}</p>
+            <p class="blog-post__data-of-creation">
+              <span class="blog-post__created-at">{{ formattedDate }}</span>
+            </p>
+          </div>
+        </div>
+        <div class="blog-post__share">
+          <a :href="`https://www.linkedin.com/sharing/share-offsite/?url=${url}`" target="_blank" class="blog-post__share-link blog-post__share-link--linkedin"></a>
+          <a :href="`http://twitter.com/share?text=${title}?&url=${url}`" target="_blank" class="blog-post__share-link blog-post__share-link--twitter"></a>
+        </div>
       </div>
-      <img :src="document.featured_image.url" class="featured-image" v-if="document.featured_image.url !== undefined">
-      <p class="introduction-paragraph">{{ $prismic.asText(document.introduction_paragraph) }}</p>
+      <img :src="document.featured_image.url" class="blog-post__featured-image" v-if="document.featured_image.url !== undefined">
+      <p class="blog-post__introduction-paragraph">{{ $prismic.asText(document.introduction_paragraph) }}</p>
     </div>
-    <div class="table-of-content" v-if="headingsList.length !== 0">
-      <p class="table-of-content-title">Table of content:</p>
-      <ul class="table-of-content-list">
-        <li v-for="(heading, i) in headingsList" :key="i" class="table-of-content-list-item" @click="scrollToHeading(heading.headingName)">{{ heading.textContent }}</li>
+    <div class="blog-post__table-of-content" v-if="headingsList.length !== 0">
+      <p class="blog-post__table-of-content-title">Table of content:</p>
+      <ul class="blog-post__table-of-content-list">
+        <li v-for="(heading, i) in headingsList" :key="i" class="blog-post__table-of-content-list-item" @click="scrollToHeading(heading.headingName)">{{ heading.textContent }}</li>
       </ul>
     </div>
-    <!-- Slice Block Componenet tag -->
-    <slices-block :slices="slices" class="text-container"/>
+    <slices-block :slices="slices" class="blog-post__text-container"/>
     <div v-if="recommendedPosts.length !== 0">
-      <p class="recommended-title">Recommended posts:</p>
-      <div class="recommended-posts-list">
-        <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="recommended-post">
+      <p class="blog-post__recommended-title">Recommended posts:</p>
+      <div class="blog-post__recommended-posts-list">
+        <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="blog-post__recommended-post">
           <blog-widget :post="recommendedPost"></blog-widget>
         </section>
       </div>
     </div>
-    <button class="back-to-list" @click="scrollToTableOfContent('table-of-content')" v-if="buttonIsActive">
+    <button class="blog-post__back-to-list" @click="scrollToTableOfContent('blog-post__table-of-content')" v-if="buttonIsActive">
       <i/>
     </button>
   </div>
 </template>
 
 <script>
-//Importing all the slices components
-import SlicesBlock from '~/components/Blog/SlicesBlock.vue';
+import SlicesBlock from '@/components/Blog/SlicesBlock.vue';
 import BlogWidget from '@/components/Blog/BlogWidget.vue';
 
 export default {
@@ -115,6 +123,7 @@ export default {
     this.getAllHeadings();
 
     window.addEventListener('scroll', this.handleScroll);
+    console.log(this.document);
   },
   methods: {
     getAllHeadings() {
@@ -158,166 +167,228 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
 
-  .main-container {
+  .blog-post {
     max-width: 1680px;
     margin: auto;
     padding: 150px 250px 0;
     background-color: $bgcolor--black;
 
-    span {
+    &__blog-sub-title {
+      margin-bottom: 22px;
+      font-family: 'Hoves-Regular', sans-serif;
+      color: $text-color--grey;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 129%;
+      letter-spacing: 0.2px;
+    }
+
+    &__post-info {
+      margin-top: 7px;
+      margin-bottom: 30px;
+    }
+
+    &__post-info,
+    &__author {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__author-info {
+      margin-left: 15px;
+    }
+
+    &__author-name {
+      color: $text-color--white;
+    }
+
+    &__created-at,
+    &__author-name {
       display: block;
-      font-size: 17px;
+      font-size: 15px;
       font-family: 'Hoves-Regular', sans-serif;
       line-height: 129%;
       letter-spacing: -0.02em;
-      color: $text-color--white;
-    }
-  }
-
-  .recommended-post {
-    width: 30%;
-    height: max-content;
-    margin-left: 20px;
-    padding: 10px;
-    border-radius: 3px;
-    background: $bgcolor--grey-light;
-    transition: 0.2s;
-
-
-    &:first-child {
-      margin-left: 0;
     }
 
-    &:hover {
-      background: #d7d7d7;
-    }
-  }
-
-  .blog-error {
-    font-weight: bold;
-  }
-
-  .recommended-title {
-    margin-top: 65px;
-    margin-bottom: 30px;
-    font-size: 32px;
-    font-family: 'Hoves-Bold', sans-serif;
-    color: $text-color--white;
-  }
-
-  .recommended-posts-list {
-    display: flex;
-    padding-bottom: 30px;
-  }
-
-  .blog-title {
-    font-size: 55px;
-    color: $text-color--white;
-  }
-
-  .share-links {
-    margin-bottom: 45px;
-  }
-
-  .share-link {
-    padding: 5px 7px;
-    background-color: $bgcolor--white;
-    border-radius: 2px;
-    font-family: 'Hoves-Regular', sans-serif;
-    font-size: 14px;
-    color: $text-color--black;
-    transition: 0.2s;
-
-    &:hover {
-      background-color: $bgcolor--grey-light;
+    &__author-name {
+      margin-bottom: 4px;
     }
 
-    &:active {
-      background-color: $bgcolor--grey;
-    }
-  }
-
-  /deep/ span {
-    display: block;
-    margin-bottom: 15px;
-  }
-
-  /deep/ a {
-    text-decoration: none;
-  }
-
-  /deep/ .post-title,
-  /deep/ .blog-post-meta,
-  /deep/ span,
-  /deep/ p {
-    color: $text-color--black;
-  }
-
-  .introduction-paragraph,
-  .table-of-content-list-item,
-  .table-of-content-title {
-    margin: 25px 0;
-    font-family: 'Hoves-Regular', sans-serif;
-    color: $text-color--white;
-    font-size: 18px;
-    line-height: 129%;
-    letter-spacing: -0.02em;
-    white-space: pre-wrap;
-  }
-
-  .table-of-content {
-    margin-top: 25px;
-  }
-
-  .table-of-content-list {
-    list-style-type: disc;
-  }
-
-  .table-of-content-title {
-    margin-top: 0;
-    margin-bottom: -5px;
-    font-size: 1.9em;
-    font-family: 'Hoves-Bold', sans-serif;
-  }
-
-  .table-of-content-list-item {
-    margin: 15px;
-    cursor: pointer;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .back-to-list {
-    padding: 12px 14px 4px;
-    position: fixed;
-    right: 38px;
-    bottom: 20px;
-    background-color: transparent;
-    border: 1px solid $border-color--red;
-    border-radius: 2px;
-    transition: 0.2s;
-    cursor: pointer;
-
-    i {
-      display: inline-block;
-      padding: 4px;
-      border: solid $border-color--red;
-      border-width: 0 3px 3px 0;
-      transform: rotate(-135deg);
+    &__author-image {
+      object-fit: cover;
     }
 
-    &:hover {
-      background-color: $bgcolor--red;
+    &__author-image,
+    &__none-image {
+      width: 52px;
+      height: 52px;
+      border-radius: 100%;
+    }
 
-      i {
-        border-color: $border-color--black;
+    &__none-image {
+      background-color: $bgcolor--black-light;
+    }
+
+    &__created-at {
+      color: $text-color--grey;
+    }
+
+    &__recommended-post {
+      width: 30%;
+      height: max-content;
+      margin-left: 20px;
+      padding: 10px;
+      border-radius: 3px;
+      background: $bgcolor--grey-light;
+      transition: 0.2s;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover {
+        background: #d7d7d7;
       }
     }
 
-    &:active {
-      background-color: $button-active--red;
+    &__recommended-title {
+      margin-top: 65px;
+      margin-bottom: 30px;
+      font-size: 32px;
+      font-family: 'Hoves-Bold', sans-serif;
+      color: $text-color--white;
+    }
+
+    &__recommended-posts-list {
+      display: flex;
+      padding-bottom: 30px;
+    }
+
+    &__blog-title {
+      font-size: 55px;
+      color: $text-color--white;
+    }
+
+    &__share {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    &__share-link {
+      width: 23px;
+      height: 23px;
+      display: block;
+      background-repeat: no-repeat;
+      margin-left: 7px;
+
+      &--linkedin {
+        margin-left: 0;
+        background-image: url('../../assets/img/common/lindekin-icon.svg');
+      }
+
+      &--twitter {
+        background-image: url('../../assets/img/common/twitter-icon.svg');
+      }
+
+    }
+
+    &__introduction-paragraph,
+    &__table-of-content-list-item,
+    &__table-of-content-title {
+      margin: 25px 0;
+      font-family: 'Hoves-Regular', sans-serif;
+      color: $text-color--white;
+      font-size: 18px;
+      line-height: 129%;
+      letter-spacing: -0.02em;
+      white-space: pre-wrap;
+    }
+
+    &__table-of-content {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    &__table-of-content-list {
+      list-style-type: disc;
+    }
+
+    &__table-of-content-title {
+      margin-top: 0;
+      margin-bottom: -5px;
+      font-size: 1.9em;
+      font-family: 'Hoves-Bold', sans-serif;
+    }
+
+    &__table-of-content-list-item {
+      margin: 15px;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__back-to-list {
+      padding: 12px 14px 4px;
+      position: fixed;
+      right: 38px;
+      bottom: 20px;
+      background-color: transparent;
+      border: 1px solid $border-color--red;
+      border-radius: 2px;
+      transition: 0.2s;
+      cursor: pointer;
+
+      i {
+        display: inline-block;
+        padding: 4px;
+        border: solid $border-color--red;
+        border-width: 0 3px 3px 0;
+        transform: rotate(-135deg);
+      }
+
+      &:hover {
+        background-color: $bgcolor--red;
+
+        i {
+          border-color: $border-color--black;
+        }
+      }
+
+      &:active {
+        background-color: $button-active--red;
+      }
+    }
+
+    &__featured-image {
+      width: 100%;
+      height: auto;
+    }
+
+    /deep/ .textslice {
+      span {
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      span,
+      p {
+        color: $text-color--white;
+      }
+    }
+
+    &__recommended-post {
+      /deep/ h2,
+      /deep/ p {
+        color: $text-color--black;
+      }
     }
   }
 </style>
