@@ -55,6 +55,7 @@ export default {
     /deep/ h5,
     /deep/ h6 {
       margin-top: 40px;
+      margin-bottom: 30px;
     }
 
     /deep/ strong,

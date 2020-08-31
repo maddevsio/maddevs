@@ -1,7 +1,6 @@
 <template>
   <section class="home container">
     <div class="head-content">
-      <!-- <div class="blog-avatar" :style="{backgroundImage: 'url(' + homepageContent.image + ')'}" /> -->
       <h1 class="blog-title title">
         {{ homepageContent.headline }}
       </h1>
