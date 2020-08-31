@@ -56,7 +56,7 @@
         </section>
       </div>
     </div>
-    <button class="blog-post__back-to-list" @click="scrollToTableOfContent('blog-post__table-of-content')" v-if="buttonIsActive">
+    <button class="blog-post__back-to-list" @click="scrollToTop()" v-if="buttonIsActive">
       <i/>
     </button>
   </div>
@@ -79,6 +79,7 @@ export default {
       description: '',
       url: '',
       featuredImage: '',
+      ogUrl: 'https://maddevs.io',
       headingsList: [],
       buttonIsActive: false
     };
@@ -87,14 +88,11 @@ export default {
     return {
       title: this.title,
       meta: [
-        { hid: 'description', name: 'description', content: this.description },
-        { property: 'og:url', content: this.url },
+        { name: 'description', content: this.description },
+        { property: 'og:url', content: this.ogUrl },
         { property: 'og:title', content: this.title },
         { property: 'og:description', content: this.description },
         { property: 'og:image', content: this.featuredImage }
-      ],
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: this.featuredImage }
       ]
     };
   },
@@ -171,12 +169,16 @@ export default {
       this.scrollTo(className);
       this.buttonIsActive = true;
     },
-    scrollToTableOfContent(className) {
-      this.scrollTo(className);
-      this.buttonIsActive = false;
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     },
     handleScroll(e) {
-      if (e.target.scrollingElement.scrollTop === 0) {
+      if (e.target.scrollingElement.scrollTop !== 0) {
+        this.buttonIsActive = true;
+      } else {
         this.buttonIsActive = false;
       }
     }
@@ -304,7 +306,6 @@ export default {
       margin-left: 7px;
 
       &--linkedin {
-        margin-left: 0;
         background-image: url('../../assets/img/common/lindekin-icon.svg');
       }
 
@@ -312,6 +313,9 @@ export default {
         background-image: url('../../assets/img/common/twitter-icon.svg');
       }
 
+      &--facebook {
+        background-image: url('../../assets/img/common/facebook-icon.svg');
+      }
     }
 
     &__introduction-paragraph,
@@ -409,6 +413,24 @@ export default {
       /deep/ p {
         color: $text-color--black;
       }
+    }
+  }
+
+  @media only screen and (max-width: 1080px) {
+    .blog-post {
+      padding: 150px 200px 0; 
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .blog-post {
+      padding: 150px 140px 0; 
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .blog-post {
+      padding: 150px 2.8vw 0; 
     }
   }
 </style>
