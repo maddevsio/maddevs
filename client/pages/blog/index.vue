@@ -1,7 +1,6 @@
 <template>
   <section class="home container">
     <div class="head-content">
-      <!-- <div class="blog-avatar" :style="{backgroundImage: 'url(' + homepageContent.image + ')'}" /> -->
       <h1 class="blog-title title">
         {{ homepageContent.headline }}
       </h1>
@@ -133,12 +132,13 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../assets/styles/_vars';
-@import '../../assets/styles/get-vw';
 
 .home
+  max-width: 1680px;
   display: flex
   flex-direction: column
-  padding-top: get-vw(100px)
+  margin: auto;
+  padding-top: 100px
   background-color: $bgcolor--black
 
   .blog-avatar
@@ -150,14 +150,14 @@ export default {
     margin: 0 auto
 
 .head-content 
-  margin: get-vw(60px) auto;
+  margin: 60px auto;
 
 .body-content
   display: flex
   justify-content: space-between
 
 .blog-title
-  font-size: get-vw(76px)
+  font-size: 76px
 
 .blog-title,
 .filter-title,
@@ -169,10 +169,10 @@ export default {
   font-family: 'Hoves-Bold', sans-serif
 
 .blog-description
-  margin: get-vw(10px) 0
+  margin: 10px 0
   color: $text-color--grey
   text-align: center
-  font-size: get-vw(46px)
+  font-size: 46px
 
 .blog-main
   width: 85%;
@@ -192,19 +192,19 @@ export default {
 
 .blog-post-wrapper
   margin: 0
-  padding-bottom: get-vw(50px)
+  padding-bottom: 50px
 
   a 
     text-decoration: none
 
 .filter
-  min-width: get-vw(180px);
+  min-width: 150px;
 
 .filter-list
   display: grid
   grid-template-columns: repeat(1, 100%)
-  grid-gap: get-vw(10px)
-  margin-top: get-vw(10px)
+  grid-gap: 10px
+  margin-top: 10px
 
 .radio-input
   display: none
@@ -215,25 +215,25 @@ export default {
 
 .filter-label,
 .reset-filter
-  font-size: get-vw(16px)
-  border-radius: get-vw(2px)
+  font-size: 14px
+  border-radius: 2px
   cursor: pointer
 
 
 .filter-label
   display: block
-  padding: get-vw(10px)
+  padding: 7px
   box-shadow: none
   background-color: transparent
-  border: get-vw(1px) solid $border-color--grey
+  border: 1px solid $border-color--grey
   transition: 0.2s
   text-align: center
   font-family: 'Hoves-Regular', sans-serif
 
 .reset-filter
   width: 100%;
-  margin-top: get-vw(10px);
-  padding: get-vw(11px) get-vw(10px)
+  margin-top: 10px;
+  padding: 8px 7px
   font-family: 'Hoves-Bold', sans-serif
   background-color: $bgcolor--red
   border: none
