@@ -17,28 +17,28 @@
         <div class="blog-post__share">
           <ShareNetwork
             network="twitter"
-            :url="url"
+            :url="ogUrl"
             :title="title"
             class="blog-post__share-link blog-post__share-link--twitter"
             target="_blank" 
           />
           <ShareNetwork
             network="facebook"
-            :url="url"
+            :url="ogUrl"
             :title="title"
             class="blog-post__share-link blog-post__share-link--facebook"
             target="_blank" 
           />
           <ShareNetwork
             network="linkedin"
-            :url="url"
+            :url="ogUrl"
             :title="title"
             class="blog-post__share-link blog-post__share-link--linkedin"
             target="_blank" 
           />
         </div>
       </div>
-      <img :src="document.featured_image.url" class="blog-post__featured-image" v-if="document.featured_image.url !== undefined">
+      <img :src="document.introduction_image.url" class="blog-post__introduction-image" v-if="document.introduction_image.url !== undefined">
       <p class="blog-post__introduction-paragraph">{{ $prismic.asText(document.introduction_paragraph) }}</p>
     </div>
     <div class="blog-post__table-of-content" v-if="headingsList.length !== 0">
@@ -56,7 +56,7 @@
         </section>
       </div>
     </div>
-    <button class="blog-post__back-to-list" @click="scrollToTableOfContent('blog-post__table-of-content')" v-if="buttonIsActive">
+    <button class="blog-post__back-to-list" @click="scrollToTop()" v-if="buttonIsActive">
       <i/>
     </button>
   </div>
@@ -77,7 +77,7 @@ export default {
     return {
       title: '',
       description: '',
-      url: '',
+      ogUrl: '',
       featuredImage: '',
       headingsList: [],
       buttonIsActive: false
@@ -87,14 +87,11 @@ export default {
     return {
       title: this.title,
       meta: [
-        { hid: 'description', name: 'description', content: this.description },
-        { property: 'og:url', content: this.url },
+        { name: 'description', content: this.description },
+        { property: 'og:url', content: this.ogUrl },
         { property: 'og:title', content: this.title },
         { property: 'og:description', content: this.description },
         { property: 'og:image', content: this.featuredImage }
-      ],
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: this.featuredImage }
       ]
     };
   },
@@ -125,7 +122,7 @@ export default {
       error({ statusCode: 404, message: 'Page not found' });
     }
   },
-  mounted() {
+  created() {
     if (this.document.title.length !== 0) {
       this.title = this.document.title[0].text;
     }
@@ -139,11 +136,14 @@ export default {
     } else {
       this.featuredImage = '/favicon.ico';
     }
-    this.url = window.location.href;
 
-    this.getAllHeadings();
-
+    if (process.client) {
+      this.$data.ogUrl = window.location.href;
+    }
+  },
+  mounted() {
     window.addEventListener('scroll', this.handleScroll);
+    this.getAllHeadings();
   },
   methods: {
     getAllHeadings() {
@@ -171,12 +171,16 @@ export default {
       this.scrollTo(className);
       this.buttonIsActive = true;
     },
-    scrollToTableOfContent(className) {
-      this.scrollTo(className);
-      this.buttonIsActive = false;
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     },
     handleScroll(e) {
-      if (e.target.scrollingElement.scrollTop === 0) {
+      if (e.target.scrollingElement.scrollTop !== 0) {
+        this.buttonIsActive = true;
+      } else {
         this.buttonIsActive = false;
       }
     }
@@ -304,7 +308,6 @@ export default {
       margin-left: 7px;
 
       &--linkedin {
-        margin-left: 0;
         background-image: url('../../assets/img/common/lindekin-icon.svg');
       }
 
@@ -312,6 +315,9 @@ export default {
         background-image: url('../../assets/img/common/twitter-icon.svg');
       }
 
+      &--facebook {
+        background-image: url('../../assets/img/common/facebook-icon.svg');
+      }
     }
 
     &__introduction-paragraph,
@@ -383,7 +389,7 @@ export default {
       }
     }
 
-    &__featured-image {
+    &__introduction-image {
       width: 100%;
       height: auto;
     }
@@ -409,6 +415,24 @@ export default {
       /deep/ p {
         color: $text-color--black;
       }
+    }
+  }
+
+  @media only screen and (max-width: 1080px) {
+    .blog-post {
+      padding: 150px 200px 0; 
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .blog-post {
+      padding: 150px 140px 0; 
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .blog-post {
+      padding: 150px 2.8vw 0; 
     }
   }
 </style>

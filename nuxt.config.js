@@ -7,6 +7,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
+    title: 'Mad Devs: Software & Mobile App Development Company',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -17,6 +18,7 @@ module.exports = {
       { ref: 'canonical', href: 'https://www.maddevs.io' }
     ],
     link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'sitemap', type: 'application/xml', href: 'https://maddevs.io/sitemap.xml' }
     ],
     script: [
@@ -107,7 +109,8 @@ module.exports = {
   prismic: {
     endpoint: 'https://SuperPuperTest.cdn.prismic.io/api/v2',
     linkResolver: '@/plugins/link-resolver',
-    htmlSerializer: '@/plugins/html-serializer'
+    htmlSerializer: '@/plugins/html-serializer',
+    preview: false
   },
   gtm: {
     id: 'GTM-NNKVRF3',
