@@ -75,9 +75,9 @@ export default {
   },
   data() {
     return {
-      title: 'Test title',
-      description: 'Test description',
-      ogUrl: 'Test ogUrl',
+      title: '',
+      description: '',
+      ogUrl: '',
       featuredImage: '',
       headingsList: [],
       buttonIsActive: false
@@ -122,14 +122,14 @@ export default {
       error({ statusCode: 404, message: 'Page not found' });
     }
   },
-  created() {
-    // if (this.document.title.length !== 0) {
-    //   this.title = this.document.title[0].text;
-    // }
+  beforeMount() {
+    if (this.document.title.length !== 0) {
+      this.title = this.document.title[0].text;
+    }
 
-    // if (this.document.subtitle.length !== 0) {
-    //   this.description = this.document.subtitle[0].text;
-    // }
+    if (this.document.subtitle.length !== 0) {
+      this.description = this.document.subtitle[0].text;
+    }
 
     if (this.document.featured_image.url) {
       this.featuredImage = this.document.featured_image.url;
@@ -137,9 +137,7 @@ export default {
       this.featuredImage = '/favicon.ico';
     }
 
-    // if (process.client) {
-    //   this.$data.ogUrl = window.location.href;
-    // }
+    this.ogUrl = window.location.href;
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
