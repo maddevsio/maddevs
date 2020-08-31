@@ -94,7 +94,7 @@ export default {
         { property: 'og:image', content: this.featuredImage }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: this.featuredImage }
       ]
     };
   },
