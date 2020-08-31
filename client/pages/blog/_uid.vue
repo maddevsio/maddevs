@@ -75,9 +75,9 @@ export default {
   },
   data() {
     return {
-      title: '',
+      title: 'Test',
       description: '',
-      ogUrl: '',
+      ogUrl: 'https://maddevs.io/services',
       featuredImage: '',
       headingsList: [],
       buttonIsActive: false
@@ -123,9 +123,9 @@ export default {
     }
   },
   created() {
-    if (this.document.title.length !== 0) {
-      this.title = this.document.title[0].text;
-    }
+    // if (this.document.title.length !== 0) {
+    //   this.title = this.document.title[0].text;
+    // }
 
     if (this.document.subtitle.length !== 0) {
       this.description = this.document.subtitle[0].text;
@@ -137,9 +137,9 @@ export default {
       this.featuredImage = '/favicon.ico';
     }
 
-    if (process.client) {
-      this.$data.ogUrl = window.location.href;
-    }
+    // if (process.client) {
+    //   this.$data.ogUrl = window.location.href;
+    // }
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
