@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer social network renders correctly 1`] = `
+<div
+  class="footer-social-network"
+>
+  <a
+    class="footer-social-network__link footer-social-network__link--github"
+    href="https://www.facebook.com/maddevsllc"
+    target="_blank"
+  />
+  <a
+    class="footer-social-network__link footer-social-network__link--facebook"
+    href="https://www.facebook.com/maddevsllc"
+    target="_blank"
+  />
+  <a
+    class="footer-social-network__link footer-social-network__link--instagram"
+    href="https://www.instagram.com/maddevsio/"
+    target="_blank"
+  />
+  <a
+    class="footer-social-network__link footer-social-network__link--medium"
+    href="https://blog.maddevs.io/"
+    target="_blank"
+  />
+  <a
+    class="footer-social-network__link footer-social-network__link--twitter"
+    href="https://twitter.com/MadDevsIO"
+    target="_blank"
+  />
+  <a
+    class="footer-social-network__link footer-social-network__link--behance"
+    href="https://www.behance.net/maddevs"
+    target="_blank"
+  />
+</div>
+`;
