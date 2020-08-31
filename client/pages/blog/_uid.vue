@@ -15,8 +15,27 @@
           </div>
         </div>
         <div class="blog-post__share">
-          <a :href="`https://www.linkedin.com/sharing/share-offsite/?url=${url}`" target="_blank" class="blog-post__share-link blog-post__share-link--linkedin"></a>
-          <a :href="`http://twitter.com/share?text=${title}?&url=${url}`" target="_blank" class="blog-post__share-link blog-post__share-link--twitter"></a>
+          <ShareNetwork
+            network="twitter"
+            :url="url"
+            :title="title"
+            class="blog-post__share-link blog-post__share-link--twitter"
+            target="_blank" 
+          />
+          <ShareNetwork
+            network="facebook"
+            :url="url"
+            :title="title"
+            class="blog-post__share-link blog-post__share-link--facebook"
+            target="_blank" 
+          />
+          <ShareNetwork
+            network="linkedin"
+            :url="url"
+            :title="title"
+            class="blog-post__share-link blog-post__share-link--linkedin"
+            target="_blank" 
+          />
         </div>
       </div>
       <img :src="document.featured_image.url" class="blog-post__featured-image" v-if="document.featured_image.url !== undefined">
@@ -69,11 +88,14 @@ export default {
     return {
       title: this.title,
       meta: [
-        { name: 'description', content: this.description },
+        { hid: 'description', name: 'description', content: this.description },
         { property: 'og:url', content: this.ogUrl },
         { property: 'og:title', content: this.title },
         { property: 'og:description', content: this.description },
         { property: 'og:image', content: this.featuredImage }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
     };
   },
@@ -116,14 +138,13 @@ export default {
     if (this.document.featured_image.url) {
       this.featuredImage = this.document.featured_image.url;
     } else {
-      this.featuredImage = 'https://maddevs.io/Open-Graph.png';
+      this.featuredImage = '/favicon.ico';
     }
     this.url = window.location.href;
 
     this.getAllHeadings();
 
     window.addEventListener('scroll', this.handleScroll);
-    console.log(this.document);
   },
   methods: {
     getAllHeadings() {
