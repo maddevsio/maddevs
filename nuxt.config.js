@@ -7,7 +7,6 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Mad Devs: Software & Mobile App Development Company',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -18,7 +17,6 @@ module.exports = {
       { ref: 'canonical', href: 'https://www.maddevs.io' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'sitemap', type: 'application/xml', href: 'https://maddevs.io/sitemap.xml' }
     ],
     script: [
@@ -42,6 +40,7 @@ module.exports = {
     '~/plugins/vue-scrollto.js',
     '~/plugins/vee-validate.js',
     '~/plugins/vue2-perfect-scrollbar.js',
+    '~/plugins/vue-social-sharing.js',
     {
       src: '~/plugins/vue-js-modal.js',
       ssr: false
