@@ -17,28 +17,28 @@
         <div class="blog-post__share">
           <ShareNetwork
             network="twitter"
-            :url="url"
+            :url="ogUrl"
             :title="title"
             class="blog-post__share-link blog-post__share-link--twitter"
             target="_blank" 
           />
           <ShareNetwork
             network="facebook"
-            :url="url"
+            :url="ogUrl"
             :title="title"
             class="blog-post__share-link blog-post__share-link--facebook"
             target="_blank" 
           />
           <ShareNetwork
             network="linkedin"
-            :url="url"
+            :url="ogUrl"
             :title="title"
             class="blog-post__share-link blog-post__share-link--linkedin"
             target="_blank" 
           />
         </div>
       </div>
-      <img :src="document.featured_image.url" class="blog-post__featured-image" v-if="document.featured_image.url !== undefined">
+      <img :src="document.introduction_image.url" class="blog-post__introduction-image" v-if="document.introduction_image.url !== undefined">
       <p class="blog-post__introduction-paragraph">{{ $prismic.asText(document.introduction_paragraph) }}</p>
     </div>
     <div class="blog-post__table-of-content" v-if="headingsList.length !== 0">
@@ -77,9 +77,8 @@ export default {
     return {
       title: '',
       description: '',
-      url: '',
+      ogUrl: '',
       featuredImage: '',
-      ogUrl: 'https://maddevs.io',
       headingsList: [],
       buttonIsActive: false
     };
@@ -123,7 +122,7 @@ export default {
       error({ statusCode: 404, message: 'Page not found' });
     }
   },
-  mounted() {
+  created() {
     if (this.document.title.length !== 0) {
       this.title = this.document.title[0].text;
     }
@@ -137,11 +136,14 @@ export default {
     } else {
       this.featuredImage = '/favicon.ico';
     }
-    this.url = window.location.href;
 
-    this.getAllHeadings();
-
+    if (process.client) {
+      this.$data.ogUrl = window.location.href;
+    }
+  },
+  mounted() {
     window.addEventListener('scroll', this.handleScroll);
+    this.getAllHeadings();
   },
   methods: {
     getAllHeadings() {
@@ -387,7 +389,7 @@ export default {
       }
     }
 
-    &__featured-image {
+    &__introduction-image {
       width: 100%;
       height: auto;
     }

@@ -109,7 +109,8 @@ module.exports = {
   prismic: {
     endpoint: 'https://SuperPuperTest.cdn.prismic.io/api/v2',
     linkResolver: '@/plugins/link-resolver',
-    htmlSerializer: '@/plugins/html-serializer'
+    htmlSerializer: '@/plugins/html-serializer',
+    preview: false
   },
   gtm: {
     id: 'GTM-NNKVRF3',
