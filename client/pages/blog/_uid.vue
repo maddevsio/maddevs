@@ -79,7 +79,6 @@ export default {
       description: '',
       url: '',
       featuredImage: '',
-      ogUrl: 'https://maddevs.io',
       headingsList: [],
       buttonIsActive: false
     };
@@ -89,7 +88,7 @@ export default {
       title: this.title,
       meta: [
         { hid: 'description', name: 'description', content: this.description },
-        { property: 'og:url', content: this.ogUrl },
+        { property: 'og:url', content: this.url },
         { property: 'og:title', content: this.title },
         { property: 'og:description', content: this.description },
         { property: 'og:image', content: this.featuredImage }
