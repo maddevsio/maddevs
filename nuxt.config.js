@@ -57,8 +57,9 @@ module.exports = {
       '/gdpr',
       '/nda',
       '/privacy',
-      '/go-dee-case-study',
-      '/blog'
+      '/godee-case-study',
+      '/blog',
+      '/blog/its-not-just-a-layout.-what-do-you-need-to-know-to'
     ]
   },
   css: [
