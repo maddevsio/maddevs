@@ -52,9 +52,9 @@ module.exports = {
   generate: {
     async routes() {
       const routes = ['/', '/services', '/projects', '/careers', '/gdpr', '/nda', '/privacy', '/godee-case-study', '/blog'];
-      const prismicData = await axios.get(process.env.PRISMIC_ENDPOINT);
+      const prismicData = await axios.get(process.env.NODE_PRISMIC_API);
       const ref = prismicData.data.refs[0].ref;
-      const blogPosts = await axios.get(`${process.env.PRISMIC_ENDPOINT}/documents/search?ref=${ref}#format=json`);
+      const blogPosts = await axios.get(`${process.env.NODE_PRISMIC_API}/documents/search?ref=${ref}#format=json`);
       const dynamicRoutes = blogPosts.data.results.map(blogPost => '/blog/' + blogPost.uid);
       const allRoutes = routes.concat(dynamicRoutes);
       return allRoutes;
@@ -106,7 +106,7 @@ module.exports = {
     compressor: shrinkRay()
   },
   prismic: {
-    endpoint: process.env.PRISMIC_ENDPOINT,
+    endpoint: process.env.NODE_PRISMIC_API,
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
     preview: false
