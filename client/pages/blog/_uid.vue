@@ -88,10 +88,20 @@ export default {
       title: this.title,
       meta: [
         { name: 'description', content: this.description },
+        // Facebook / Open Graph
+        { property: 'og:type', content: 'website' },
         { property: 'og:url', content: this.ogUrl },
         { property: 'og:title', content: this.title },
         { property: 'og:description', content: this.description },
-        { property: 'og:image', content: this.featuredImage }
+        { property: 'og:image', content: this.featuredImage },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        // Twitter / Twitter Card
+        { property: 'twitter:card', content: 'summary' },
+        { property: 'twitter:title', content: this.title },
+        { property: 'twitter:description', content: this.description },
+        { property: 'twitter:image:src', content: this.featuredImage },
+        { property: 'twitter:url', content: this.ogUrl }
       ]
     };
   },
@@ -122,7 +132,7 @@ export default {
       error({ statusCode: 404, message: 'Page not found' });
     }
   },
-  beforeMount() {
+  mounted() {
     if (this.document.title.length !== 0) {
       this.title = this.document.title[0].text;
     }
@@ -138,8 +148,6 @@ export default {
     }
 
     this.ogUrl = window.location.href;
-  },
-  mounted() {
     window.addEventListener('scroll', this.handleScroll);
     this.getAllHeadings();
   },
