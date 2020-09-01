@@ -21,8 +21,8 @@ describe('Nda page', () => {
   // --------------------- //
 
   test('Sets the correctly data', () => {
-    expect(wrapper.vm.$data.title).toEqual('Mad Devs NDA');
-    expect(wrapper.vm.$data.description).toEqual('');
+    expect(wrapper.vm.$data.title).toEqual('Mad Devs: Work Under NDA');
+    expect(wrapper.vm.$data.description).toEqual('Non-Disclosure Agreement at Mad Devs');
     expect(wrapper.vm.$data.ogUrl).toEqual('https://maddevs.io/nda');
   });
 });
