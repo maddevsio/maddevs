@@ -1,5 +1,6 @@
 require('dotenv').config();
 import shrinkRay from 'shrink-ray-current';
+import axios from 'axios';
 
 module.exports = {
   srcDir: 'client/',
@@ -49,18 +50,15 @@ module.exports = {
     }
   ],
   generate: {
-    routes: [
-      '/',
-      '/services',
-      '/projects',
-      '/careers',
-      '/gdpr',
-      '/nda',
-      '/privacy',
-      '/godee-case-study',
-      '/blog',
-      '/blog/its-not-just-a-layout.-what-do-you-need-to-know-to'
-    ]
+    async routes() {
+      const routes = ['/', '/services', '/projects', '/careers', '/gdpr', '/nda', '/privacy', '/godee-case-study', '/blog'];
+      const prismicData = await axios.get(process.env.NODE_PRISMIC_API);
+      const ref = prismicData.data.refs[0].ref;
+      const blogPosts = await axios.get(`${process.env.NODE_PRISMIC_API}/documents/search?ref=${ref}#format=json`);
+      const dynamicRoutes = blogPosts.data.results.map(blogPost => '/blog/' + blogPost.uid);
+      const allRoutes = routes.concat(dynamicRoutes);
+      return allRoutes;
+    }
   },
   css: [
     {
@@ -108,7 +106,7 @@ module.exports = {
     compressor: shrinkRay()
   },
   prismic: {
-    endpoint: 'https://SuperPuperTest.cdn.prismic.io/api/v2',
+    endpoint: process.env.NODE_PRISMIC_API,
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
     preview: false
