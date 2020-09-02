@@ -87,21 +87,21 @@ export default {
     return {
       title: this.title,
       meta: [
-        { name: 'description', content: this.description },
+        { name: 'description', content: 'Test' },
         // Facebook / Open Graph
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: this.ogUrl },
-        { property: 'og:title', content: this.title },
-        { property: 'og:description', content: this.description },
-        { property: 'og:image', content: this.featuredImage },
+        { property: 'og:url', content: 'https://maddevs.io' },
+        { property: 'og:title', content: 'Test title' },
+        { property: 'og:description', content: 'test description' },
+        { property: 'og:image', content: 'https://maddevs.io/Open-Graph.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         // Twitter / Twitter Card
         { property: 'twitter:card', content: 'summary' },
-        { property: 'twitter:title', content: this.title },
-        { property: 'twitter:description', content: this.description },
-        { property: 'twitter:image:src', content: this.featuredImage },
-        { property: 'twitter:url', content: this.ogUrl }
+        { property: 'twitter:text:title', content: 'test twitter title' },
+        { property: 'twitter:description', content: 'test twitter description' },
+        { property: 'twitter:image:src', content: 'https://maddevs.io/Open-Graph.png' },
+        { property: 'twitter:url', content: 'https://maddevs.io' }
       ]
     };
   },
