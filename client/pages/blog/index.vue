@@ -45,7 +45,10 @@ export default {
       homepageContent: {},
       posts: [],
       tags: [],
-      filterIsActive: false
+      filterIsActive: false,
+      metaTitle: 'Blog',
+      description: '',
+      ogUrl: 'https://maddevs.io/blog'
     };
   },
   created() {
@@ -55,21 +58,21 @@ export default {
     return {
       title: this.title,
       meta: [
-        { name: 'description', content: 'Blog main page' },
+        { name: 'description', content: this.description },
         // Facebook / Open Graph
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://maddevs.io/blog' },
-        { property: 'og:title', content: 'Blog title' },
-        { property: 'og:description', content: 'Blog description' },
+        { property: 'og:url', content: this.ogUrl },
+        { property: 'og:title', content: this.metaTitle },
+        { property: 'og:description', content: this.description },
         { property: 'og:image', content: 'https://maddevs.io/Open-Graph.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         // Twitter / Twitter Card
         { property: 'twitter:card', content: 'summary' },
-        { property: 'twitter:text:title', content: 'Blog twitter title' },
-        { property: 'twitter:description', content: 'Blog twitter description' },
+        { property: 'twitter:text:title', content: this.metaTitle },
+        { property: 'twitter:description', content: this.description },
         { property: 'twitter:image:src', content: 'https://maddevs.io/Open-Graph.png' },
-        { property: 'twitter:url', content: 'https://maddevs.io/blog' }
+        { property: 'twitter:url', content: this.ogUrl }
       ]
     };
   },

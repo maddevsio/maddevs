@@ -87,21 +87,21 @@ export default {
     return {
       title: this.title,
       meta: [
-        { name: 'description', content: 'Test' },
+        { name: 'description', content: this.document.subtitle.length !== 0 ? this.document.subtitle[0].text : ''},
         // Facebook / Open Graph
-        { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://maddevs.io' },
-        { property: 'og:title', content: 'Test title' },
-        { property: 'og:description', content: 'test description' },
-        { property: 'og:image', content: 'https://maddevs.io/Open-Graph.png' },
+        { property: 'og:type', content: 'website'},
+        { property: 'og:url', content: `https://maddevs.co${this.$nuxt.$route.path}`},
+        { property: 'og:title', content: this.document.title.length !== 0 ? this.document.title[0].text : ''},
+        { property: 'og:description', content: this.document.subtitle.length !== 0 ? this.document.subtitle[0].text : ''},
+        { property: 'og:image', content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico'},
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         // Twitter / Twitter Card
         { property: 'twitter:card', content: 'summary' },
-        { property: 'twitter:text:title', content: 'test twitter title' },
-        { property: 'twitter:description', content: 'test twitter description' },
-        { property: 'twitter:image:src', content: 'https://maddevs.io/Open-Graph.png' },
-        { property: 'twitter:url', content: 'https://maddevs.io' }
+        { property: 'twitter:text:title', content: this.document.title.length !== 0 ? this.document.title[0].text : '' },
+        { property: 'twitter:description', content: this.document.subtitle.length !== 0 ? this.document.subtitle[0].text : ''},
+        { property: 'twitter:image:src', content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico' },
+        { property: 'twitter:url', content: `https://maddevs.co${this.$nuxt.$route.path}`}
       ]
     };
   },
@@ -135,16 +135,6 @@ export default {
   mounted() {
     if (this.document.title.length !== 0) {
       this.title = this.document.title[0].text;
-    }
-
-    if (this.document.subtitle.length !== 0) {
-      this.description = this.document.subtitle[0].text;
-    }
-
-    if (this.document.featured_image.url) {
-      this.featuredImage = this.document.featured_image.url;
-    } else {
-      this.featuredImage = '/favicon.ico';
     }
 
     this.ogUrl = window.location.href;
