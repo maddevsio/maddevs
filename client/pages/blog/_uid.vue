@@ -90,7 +90,7 @@ export default {
         { name: 'description', content: this.document.subtitle.length !== 0 ? this.document.subtitle[0].text : ''},
         // Facebook / Open Graph
         { property: 'og:type', content: 'website'},
-        { property: 'og:url', content: `https://maddevs.co${this.$nuxt.$route.path}`},
+        { property: 'og:url', content: this.ogUrl},
         { property: 'og:title', content: this.document.title.length !== 0 ? this.document.title[0].text : ''},
         { property: 'og:description', content: this.document.subtitle.length !== 0 ? this.document.subtitle[0].text : ''},
         { property: 'og:image', content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico'},
@@ -101,7 +101,7 @@ export default {
         { property: 'twitter:text:title', content: this.document.title.length !== 0 ? this.document.title[0].text : '' },
         { property: 'twitter:description', content: this.document.subtitle.length !== 0 ? this.document.subtitle[0].text : ''},
         { property: 'twitter:image:src', content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico' },
-        { property: 'twitter:url', content: `https://maddevs.co${this.$nuxt.$route.path}`}
+        { property: 'twitter:url', content: this.ogUrl}
       ]
     };
   },
