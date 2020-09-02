@@ -51,6 +51,28 @@ export default {
   created() {
     this.getContent();
   },
+  head () {
+    return {
+      title: this.title,
+      meta: [
+        { name: 'description', content: 'Blog main page' },
+        // Facebook / Open Graph
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://maddevs.io/blog' },
+        { property: 'og:title', content: 'Blog title' },
+        { property: 'og:description', content: 'Blog description' },
+        { property: 'og:image', content: 'https://maddevs.io/Open-Graph.png' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        // Twitter / Twitter Card
+        { property: 'twitter:card', content: 'summary' },
+        { property: 'twitter:text:title', content: 'Blog twitter title' },
+        { property: 'twitter:description', content: 'Blog twitter description' },
+        { property: 'twitter:image:src', content: 'https://maddevs.io/Open-Graph.png' },
+        { property: 'twitter:url', content: 'https://maddevs.io/blog' }
+      ]
+    };
+  },
   methods: {
     getContent() {
       // Query to get blog home content
