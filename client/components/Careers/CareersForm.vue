@@ -116,7 +116,8 @@ export default {
         { type: 'intern', label: 'Intern' }
       ],
       isEmailSent: false,
-      onSumbit: false
+      onSumbit: false,
+      form: ''
     };
   },
   mounted() {
@@ -137,7 +138,7 @@ export default {
         this.onSumbit = true;
         //TODO: add ajax request
         this.toBase64(this.selectedFile).then(base64 => {
-          const form = {
+          this.form = {
             templateId: 305491, // Required
             variables: {
               fullName: this.fullName,
@@ -153,7 +154,7 @@ export default {
               name: this.selectedFile.name
             }
           };
-          this.$store.dispatch('sendEmail', form).then(res => {
+          this.$store.dispatch('sendEmail', this.form).then(res => {
             this.onSumbit = false;
             if (res.status === 200) {
               this.isEmailSent = true;
