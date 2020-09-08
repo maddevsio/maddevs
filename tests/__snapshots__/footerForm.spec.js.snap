@@ -7,6 +7,7 @@ exports[`Footer form renders correctly 1`] = `
   <validationobserver-stub />
    
   <transition-stub
+    id="footer-modal"
     name="fade"
   >
     <!---->
