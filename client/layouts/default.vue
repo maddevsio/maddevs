@@ -41,6 +41,19 @@ export default {
     OrderProjectFromUsModal,
     GetYourTrustedItPartnerModal,
     GetExpertAdvice
+  },
+  mounted() {
+    this.$nextTick(() => {
+      try {
+        const section = document.querySelector(window.location.hash);
+        if (section) {
+          section.scrollIntoView({ block: 'start' });
+        }
+        return true;
+      } catch {
+        return false;
+      }
+    });
   }
 };
 </script>

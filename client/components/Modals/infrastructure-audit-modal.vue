@@ -107,7 +107,9 @@ export default {
         text: 'Other'
       }
     ],
-    onSubmit: false
+    onSubmit: false,
+    subject: 'Marketing',
+    form: ''
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -122,7 +124,7 @@ export default {
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
         this.onSubmit = true;
-        const form = {
+        this.form = {
           templateId: 304628, // Required
           variables: {
             fullName: this.fullName || '',
@@ -132,10 +134,11 @@ export default {
             phoneNumber: this.phoneNumber || '',
             selectedProjectHost: this.selectedProjectHost || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No'
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
+            subject: this.subject || ''
           }
         };
-        this.$store.dispatch('sendEmail', form).then(res => {
+        this.$store.dispatch('sendEmail', this.form).then(res => {
           this.onSubmit = false;
           this.resetForm();
           if (res.status === 200) {
