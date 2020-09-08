@@ -5,34 +5,75 @@ exports[`Footer social network renders correctly 1`] = `
   class="footer-social-network"
 >
   <a
-    class="footer-social-network__link footer-social-network__link--github"
+    class="footer-social-network__social-newtork_link"
+    href="https://github.com/maddevsio"
+    target="_blank"
+  >
+    <img
+      alt="Mad Devs GitHub"
+      class="footer-social-network__github"
+      src="../../assets/img/Footer/github.svg"
+    />
+  </a>
+   
+  <a
+    class="footer-social-network__social-newtork_link"
     href="https://www.facebook.com/maddevsllc"
     target="_blank"
-  />
+  >
+    <img
+      alt="Mad Devs Facebook"
+      class="footer-social-network__facebook"
+      src="../../assets/img/Footer/facebook.svg"
+    />
+  </a>
+   
   <a
-    class="footer-social-network__link footer-social-network__link--facebook"
-    href="https://www.facebook.com/maddevsllc"
-    target="_blank"
-  />
-  <a
-    class="footer-social-network__link footer-social-network__link--instagram"
+    class="footer-social-network__social-newtork_link"
     href="https://www.instagram.com/maddevsio/"
     target="_blank"
-  />
+  >
+    <img
+      alt="Mad Devs Instagram"
+      class="footer-social-network__instagram"
+      src="../../assets/img/Footer/instagram.svg"
+    />
+  </a>
+   
   <a
-    class="footer-social-network__link footer-social-network__link--medium"
+    class="footer-social-network__social-newtork_link"
     href="https://blog.maddevs.io/"
     target="_blank"
-  />
+  >
+    <img
+      alt="Mad Devs Medium"
+      class="footer-social-network__medium"
+      src="../../assets/img/Footer/medium.svg"
+    />
+  </a>
+   
   <a
-    class="footer-social-network__link footer-social-network__link--twitter"
+    class="footer-social-network__social-newtork_link"
     href="https://twitter.com/MadDevsIO"
     target="_blank"
-  />
+  >
+    <img
+      alt="Mad Devs Twitter"
+      class="footer-social-network__twitter"
+      src="../../assets/img/Footer/twitter.svg"
+    />
+  </a>
+   
   <a
-    class="footer-social-network__link footer-social-network__link--behance"
+    class="footer-social-network__social-newtork_link"
     href="https://www.behance.net/maddevs"
     target="_blank"
-  />
+  >
+    <img
+      alt="Mad Devs Behance"
+      class="footer-social-network__behance"
+      src="../../assets/img/Footer/behance.svg"
+    />
+  </a>
 </div>
 `;

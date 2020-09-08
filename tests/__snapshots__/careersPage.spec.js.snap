@@ -42,7 +42,6 @@ exports[`Careers page renders correctly 1`] = `
     </div>
      
     <transition-stub
-      id="career-modal"
       name="fade"
     >
       <!---->

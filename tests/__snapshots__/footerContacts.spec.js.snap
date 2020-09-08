@@ -18,11 +18,12 @@ exports[`Footer contacts renders correctly 1`] = `
     >
       <li>
         <a
-          class="footer-contacts__phone-item footer-contacts__phone-item--flag"
+          class="footer-contacts__phone-item"
           href="tel:+44 20 3984 8555"
         >
-          <span
-            class="footer-contacts__icon footer-contacts__icon--uk"
+          <img
+            alt="United Kingdom"
+            src="@/assets/img/Flags/united-kingdom.svg"
           />
           
 					+44 20 3984 8555
@@ -50,8 +51,9 @@ exports[`Footer contacts renders correctly 1`] = `
           href="https://facebook.com/maddevsllc"
           target="_blank"
         >
-          <span
-            class="footer-contacts__message footer-contacts__message--messenger"
+          <img
+            alt="Messenger"
+            src="@/assets/img/Footer/messenger.svg"
           />
           
 					Messenger
@@ -65,8 +67,9 @@ exports[`Footer contacts renders correctly 1`] = `
           href="http://wa.me/996555771481"
           target="_blank"
         >
-          <span
-            class="footer-contacts__message footer-contacts__message--whatsapp"
+          <img
+            alt="Whatsapp"
+            src="@/assets/img/Footer/whatsapp.svg"
           />
           
 					Whatsapp
@@ -80,8 +83,9 @@ exports[`Footer contacts renders correctly 1`] = `
           href="https://t.me/mun_tamara/"
           target="_blank"
         >
-          <span
-            class="footer-contacts__message footer-contacts__message--telegram"
+          <img
+            alt="Telegram"
+            src="@/assets/img/Footer/telegram.svg"
           />
           
 					Telegram
@@ -95,8 +99,9 @@ exports[`Footer contacts renders correctly 1`] = `
           href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
           target="_blank"
         >
-          <span
-            class="footer-contacts__message footer-contacts__message--wechat"
+          <img
+            alt="WeChat"
+            src="@/assets/img/Footer/wechat.svg"
           />
           
 					WeChat
