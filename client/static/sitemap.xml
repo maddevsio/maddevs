@@ -12,22 +12,32 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/en/</loc>
+  <loc>https://maddevs.io/services</loc>
   <lastmod>2020-05-08T11:21:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/en/jobs/</loc>
+  <loc>https://maddevs.io/projects</loc>
   <lastmod>2020-05-08T11:21:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/ru/</loc>
+  <loc>https://maddevs.io/careers</loc>
   <lastmod>2020-05-08T11:21:42+00:00</lastmod>
   <priority>0.70</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/ru/jobs/</loc>
+  <loc>https://maddevs.io/gdpr</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/nda</loc>
+  <lastmod>2020-05-08T11:21:42+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/privacy</loc>
   <lastmod>2020-05-08T11:21:42+00:00</lastmod>
   <priority>0.70</priority>
 </url>
