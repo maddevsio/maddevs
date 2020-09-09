@@ -1,5 +1,5 @@
 <template>
-  <section class="success-message">
+  <section class="success-message" id="success-message">
     <div class="success-message__conten-wrapper">
       <img src="@/assets/img/common/success-message-hand.svg" alt="Hand">
       <div class="success-message__text-content">
