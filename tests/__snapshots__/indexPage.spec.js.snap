@@ -976,7 +976,6 @@ exports[`Index page renders correctly 1`] = `
                   class="contribution-widget__img contribution-widget__img_nambafood"
                   fill="none"
                   viewBox="0 0 20 18"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     clip-rule="evenodd"
@@ -1045,7 +1044,6 @@ exports[`Index page renders correctly 1`] = `
                   class="contribution-widget__img contribution-widget__img_teacherly"
                   fill="none"
                   viewBox="0 0 20 18"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     clip-rule="evenodd"
@@ -1114,7 +1112,6 @@ exports[`Index page renders correctly 1`] = `
                   class="contribution-widget__img contribution-widget__img_guardrails"
                   fill="none"
                   viewBox="0 0 20 18"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     clip-rule="evenodd"
@@ -1183,7 +1180,6 @@ exports[`Index page renders correctly 1`] = `
                   class="contribution-widget__img contribution-widget__img_godee"
                   fill="none"
                   viewBox="0 0 20 18"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     clip-rule="evenodd"
@@ -1272,7 +1268,6 @@ exports[`Index page renders correctly 1`] = `
                       class="contribution-widget__img contribution-widget__img_nambafood"
                       fill="none"
                       viewBox="0 0 20 18"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         clip-rule="evenodd"
@@ -1345,7 +1340,6 @@ exports[`Index page renders correctly 1`] = `
                       class="contribution-widget__img contribution-widget__img_teacherly"
                       fill="none"
                       viewBox="0 0 20 18"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         clip-rule="evenodd"
@@ -1418,7 +1412,6 @@ exports[`Index page renders correctly 1`] = `
                       class="contribution-widget__img contribution-widget__img_guardrails"
                       fill="none"
                       viewBox="0 0 20 18"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         clip-rule="evenodd"
@@ -1491,7 +1484,6 @@ exports[`Index page renders correctly 1`] = `
                       class="contribution-widget__img contribution-widget__img_godee"
                       fill="none"
                       viewBox="0 0 20 18"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         clip-rule="evenodd"

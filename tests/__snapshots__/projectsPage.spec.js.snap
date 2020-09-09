@@ -86,7 +86,6 @@ exports[`Projects page renders correctly 1`] = `
                   class="contribution-widget__img contribution-widget__img_nambafood"
                   fill="none"
                   viewBox="0 0 20 18"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     clip-rule="evenodd"
@@ -155,7 +154,6 @@ exports[`Projects page renders correctly 1`] = `
                   class="contribution-widget__img contribution-widget__img_teacherly"
                   fill="none"
                   viewBox="0 0 20 18"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     clip-rule="evenodd"
@@ -224,7 +222,6 @@ exports[`Projects page renders correctly 1`] = `
                   class="contribution-widget__img contribution-widget__img_guardrails"
                   fill="none"
                   viewBox="0 0 20 18"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     clip-rule="evenodd"
@@ -293,7 +290,6 @@ exports[`Projects page renders correctly 1`] = `
                   class="contribution-widget__img contribution-widget__img_godee"
                   fill="none"
                   viewBox="0 0 20 18"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     clip-rule="evenodd"
@@ -382,7 +378,6 @@ exports[`Projects page renders correctly 1`] = `
                       class="contribution-widget__img contribution-widget__img_nambafood"
                       fill="none"
                       viewBox="0 0 20 18"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         clip-rule="evenodd"
@@ -455,7 +450,6 @@ exports[`Projects page renders correctly 1`] = `
                       class="contribution-widget__img contribution-widget__img_teacherly"
                       fill="none"
                       viewBox="0 0 20 18"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         clip-rule="evenodd"
@@ -528,7 +522,6 @@ exports[`Projects page renders correctly 1`] = `
                       class="contribution-widget__img contribution-widget__img_guardrails"
                       fill="none"
                       viewBox="0 0 20 18"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         clip-rule="evenodd"
@@ -601,7 +594,6 @@ exports[`Projects page renders correctly 1`] = `
                       class="contribution-widget__img contribution-widget__img_godee"
                       fill="none"
                       viewBox="0 0 20 18"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         clip-rule="evenodd"
@@ -1011,7 +1003,6 @@ exports[`Projects page renders correctly 1`] = `
                 height="50"
                 viewBox="0 0 229 50"
                 width="229"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M0 0H228.571V50H0V0Z"
@@ -1074,7 +1065,6 @@ exports[`Projects page renders correctly 1`] = `
                 height="50"
                 viewBox="0 0 229 50"
                 width="229"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   class="fill1"
@@ -1117,7 +1107,6 @@ exports[`Projects page renders correctly 1`] = `
                 height="50"
                 viewBox="0 0 229 50"
                 width="229"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   class="fill1"
@@ -1160,7 +1149,6 @@ exports[`Projects page renders correctly 1`] = `
                 height="50"
                 viewBox="0 0 229 50"
                 width="229"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   class="fill1"
@@ -1203,7 +1191,6 @@ exports[`Projects page renders correctly 1`] = `
                 height="50"
                 viewBox="0 0 229 50"
                 width="229"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <g
                   clip-path="url(#clip0)"
@@ -1281,7 +1268,6 @@ exports[`Projects page renders correctly 1`] = `
                 height="50"
                 viewBox="0 0 229 50"
                 width="229"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M0 0H228.571V50H0V0Z"

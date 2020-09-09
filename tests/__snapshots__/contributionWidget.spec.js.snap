@@ -8,7 +8,6 @@ exports[`ContributionWidget component renders correctly 1`] = `
     class="contribution-widget__img contribution-widget__img_nambafood"
     fill="none"
     viewBox="0 0 20 18"
-    xmlns="http://www.w3.org/2000/svg"
   >
     <path
       clip-rule="evenodd"
