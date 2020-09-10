@@ -1,4 +1,5 @@
 <template>
+  <div class="container banner-container">
   <div class="banner-content projects-content">
     <div class="text-content_wrapper">
       <div class="main-title-wrapper">
@@ -9,6 +10,7 @@
         <navigationList />
       </div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -27,20 +29,20 @@ export default {
   .projects-content {
     .container {
       position: relative;
-  
+
       .main-title-wrapper {
         max-width: 100%;
       }
     }
-  
+
     .navigation-wrap {
       margin-top: 170px;
     }
-  
+
     .tablet-break {
       display: none;
     }
-  
+
     .text-content_wrapper {
       display: flex;
       padding-bottom: 90px;
@@ -122,7 +124,7 @@ export default {
       .text-content_wrapper {
         padding-bottom: 90px;
       }
-    } 
+    }
   }
 
   @media only screen and (max-width: 515px) {
