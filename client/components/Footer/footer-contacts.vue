@@ -11,7 +11,7 @@
 				</li> -->
 				<li>
 					<a href="tel:+44 20 3984 8555" class="footer-contacts__phone-item">
-						<img src="@/assets/img/Flags/united-kingdom.svg" alt="United Kingdom">
+            <span class="footer-contacts__icon footer-contacts__icon--uk" />
 						+44 20 3984 8555
 					</a>
 				</li>
@@ -23,24 +23,28 @@
 				<li>
 					<a href="https://facebook.com/maddevsllc" class="footer-contacts__messenger-item" target="_blank">
 						<img src="@/assets/img/Footer/messenger.svg" alt="Messenger">
+            <span class="footer-contacts__icon footer-contacts__icon--messenger" />
 						Messenger
 					</a>
 				</li>
 				<li>
 					<a href="http://wa.me/996555771481" class="footer-contacts__messenger-item" target="_blank">
 						<img src="@/assets/img/Footer/whatsapp.svg" alt="Whatsapp">
+            <span class="footer-contacts__icon footer-contacts__icon--whatsapp" />
 						Whatsapp
 					</a>
 				</li>
 				<li>
 					<a href="https://t.me/mun_tamara/" class="footer-contacts__messenger-item" target="_blank">
 						<img src="@/assets/img/Footer/telegram.svg" alt="Telegram">
+            <span class="footer-contacts__icon footer-contacts__icon--telegram" />
 						Telegram
 					</a>
 				</li>
 				<li>
 					<a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc" class="footer-contacts__messenger-item" target="_blank">
 						<img src="@/assets/img/Footer/wechat.svg" alt="WeChat">
+            <span class="footer-contacts__icon footer-contacts__icon--wechat" />
 						WeChat
 					</a>
 				</li>
@@ -71,6 +75,33 @@ export default {
 			letter-spacing: -1px;
 		}
 
+    &__icon {
+      display: inline-block;
+      height: 16px;
+      width: 19px;
+      background-repeat: no-repeat;
+
+      &--uk {
+        background-image: url(../../assets/img/Flags/united-kingdom.svg);
+      }
+
+      &--messenger {
+        background-image: url(../../assets/img/Footer/messenger.svg);
+      }
+
+      &--whatsapp {
+        background-image: url(../../assets/img/Footer/whatsapp.svg);
+      }
+
+      &--telegram {
+        background-image: url(../../assets/img/Footer/telegram.svg);
+      }
+
+      &--wechat {
+        background-image: url(../../assets/img/Footer/wechat.svg);
+      }
+    }
+
 		&__phones-list,
 		&__messengers-list {
 			display: grid;
@@ -89,7 +120,6 @@ export default {
 		&__phone-item,
 		&__messenger-item {
 			position: relative;
-			padding-left: 26px;
 			color: $text-color--grey;
 			font-family: 'Hoves-Bold';
 			font-size: 22px;
