@@ -21,13 +21,12 @@ exports[`Footer contacts renders correctly 1`] = `
           class="footer-contacts__phone-item"
           href="tel:+44 20 3984 8555"
         >
-          <img
-            alt="United Kingdom"
-            src="@/assets/img/Flags/united-kingdom.svg"
+          <span
+            class="footer-contacts__icon footer-contacts__icon--uk"
           />
           
-					+44 20 3984 8555
-				
+						+44 20 3984 8555
+					
         </a>
       </li>
     </ul>
@@ -55,9 +54,13 @@ exports[`Footer contacts renders correctly 1`] = `
             alt="Messenger"
             src="@/assets/img/Footer/messenger.svg"
           />
+           
+          <span
+            class="footer-contacts__icon footer-contacts__icon--messenger"
+          />
           
-					Messenger
-				
+						Messenger
+					
         </a>
       </li>
        
@@ -71,9 +74,13 @@ exports[`Footer contacts renders correctly 1`] = `
             alt="Whatsapp"
             src="@/assets/img/Footer/whatsapp.svg"
           />
+           
+          <span
+            class="footer-contacts__icon footer-contacts__icon--whatsapp"
+          />
           
-					Whatsapp
-				
+						Whatsapp
+					
         </a>
       </li>
        
@@ -87,9 +94,13 @@ exports[`Footer contacts renders correctly 1`] = `
             alt="Telegram"
             src="@/assets/img/Footer/telegram.svg"
           />
+           
+          <span
+            class="footer-contacts__icon footer-contacts__icon--telegram"
+          />
           
-					Telegram
-				
+						Telegram
+					
         </a>
       </li>
        
@@ -103,9 +114,13 @@ exports[`Footer contacts renders correctly 1`] = `
             alt="WeChat"
             src="@/assets/img/Footer/wechat.svg"
           />
+           
+          <span
+            class="footer-contacts__icon footer-contacts__icon--wechat"
+          />
           
-					WeChat
-				
+						WeChat
+					
         </a>
       </li>
     </ul>

@@ -25,9 +25,8 @@ exports[`Footer renders correctly 1`] = `
           <div
             class="footer__mail-wrapper"
           >
-            <img
-              alt="mail"
-              src="@/assets/img/Footer/mail-icon.svg"
+            <span
+              class="footer__mail"
             />
              
             <a

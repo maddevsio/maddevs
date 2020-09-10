@@ -27,6 +27,7 @@ exports[`Meet Our Experts Mobile Slider renders correctly 1`] = `
             <img
               alt="Marat@2x"
               class="multi-image"
+              loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
             />

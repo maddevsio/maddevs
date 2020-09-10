@@ -57,10 +57,8 @@ exports[`Projects page renders correctly 1`] = `
             <div
               class="single-project__content-wrap"
             >
-              <img
-                alt="nambafood"
-                class="single-project__logo"
-                src="[object Object]"
+              <span
+                class="single-project__logo-bg single-project__logo-bg--nambafoodColored"
               />
                
               <h4
@@ -126,10 +124,8 @@ exports[`Projects page renders correctly 1`] = `
             <div
               class="single-project__content-wrap"
             >
-              <img
-                alt="teacherly"
-                class="single-project__logo"
-                src="[object Object]"
+              <span
+                class="single-project__logo-bg single-project__logo-bg--teacherlyColored"
               />
                
               <h4
@@ -195,10 +191,8 @@ exports[`Projects page renders correctly 1`] = `
             <div
               class="single-project__content-wrap"
             >
-              <img
-                alt="guardrails"
-                class="single-project__logo"
-                src="[object Object]"
+              <span
+                class="single-project__logo-bg single-project__logo-bg--guardrailsColored"
               />
                
               <h4
@@ -264,10 +258,8 @@ exports[`Projects page renders correctly 1`] = `
             <div
               class="single-project__content-wrap"
             >
-              <img
-                alt="godee"
-                class="single-project__logo"
-                src="[object Object]"
+              <span
+                class="single-project__logo-bg single-project__logo-bg--godeeColored"
               />
                
               <h4
@@ -353,10 +345,8 @@ exports[`Projects page renders correctly 1`] = `
                 <div
                   class="single-project__content-wrap"
                 >
-                  <img
-                    alt="nambafood"
-                    class="single-project__logo"
-                    src="[object Object]"
+                  <span
+                    class="single-project__logo-bg single-project__logo-bg--nambafoodColored"
                   />
                    
                   <h4
@@ -426,10 +416,8 @@ exports[`Projects page renders correctly 1`] = `
                 <div
                   class="single-project__content-wrap"
                 >
-                  <img
-                    alt="teacherly"
-                    class="single-project__logo"
-                    src="[object Object]"
+                  <span
+                    class="single-project__logo-bg single-project__logo-bg--teacherlyColored"
                   />
                    
                   <h4
@@ -499,10 +487,8 @@ exports[`Projects page renders correctly 1`] = `
                 <div
                   class="single-project__content-wrap"
                 >
-                  <img
-                    alt="guardrails"
-                    class="single-project__logo"
-                    src="[object Object]"
+                  <span
+                    class="single-project__logo-bg single-project__logo-bg--guardrailsColored"
                   />
                    
                   <h4
@@ -572,10 +558,8 @@ exports[`Projects page renders correctly 1`] = `
                 <div
                   class="single-project__content-wrap"
                 >
-                  <img
-                    alt="godee"
-                    class="single-project__logo"
-                    src="[object Object]"
+                  <span
+                    class="single-project__logo-bg single-project__logo-bg--godeeColored"
                   />
                    
                   <h4

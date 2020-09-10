@@ -210,27 +210,37 @@ exports[`Services page renders correctly 1`] = `
                 <div
                   class="icon-item"
                 >
-                  <img
-                    alt="Python"
-                    src="../../assets/img/Technologies/svg/pyton.svg"
-                  />
-                   
-                  <span>
-                    Python
-                  </span>
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--python"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Python
+                    </p>
+                  </div>
                 </div>
                  
                 <div
                   class="icon-item"
                 >
-                  <img
-                    alt="Golang"
-                    src="../../assets/img/Technologies/svg/golang.svg"
-                  />
-                   
-                  <span>
-                    Go
-                  </span>
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--golang"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Go
+                    </p>
+                  </div>
                 </div>
               </div>
                
@@ -240,27 +250,37 @@ exports[`Services page renders correctly 1`] = `
                 <div
                   class="icon-item"
                 >
-                  <img
-                    alt="JavaScript"
-                    src="../../assets/img/Technologies/svg/javascript.svg"
-                  />
-                   
-                  <span>
-                    JavaScript
-                  </span>
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--javascript"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      JavaScript
+                    </p>
+                  </div>
                 </div>
                  
                 <div
                   class="icon-item"
                 >
-                  <img
-                    alt="PHP"
-                    src="../../assets/img/Technologies/svg/php.svg"
-                  />
-                   
-                  <span>
-                    PHP
-                  </span>
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--php"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      PHP
+                    </p>
+                  </div>
                 </div>
               </div>
                
@@ -270,27 +290,37 @@ exports[`Services page renders correctly 1`] = `
                 <div
                   class="icon-item"
                 >
-                  <img
-                    alt="Node.js"
-                    src="../../assets/img/Technologies/svg/node-js.svg"
-                  />
-                   
-                  <span>
-                    Node.js
-                  </span>
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--node-js"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Node.js
+                    </p>
+                  </div>
                 </div>
                  
                 <div
                   class="icon-item"
                 >
-                  <img
-                    alt="Ruby"
-                    src="../../assets/img/Technologies/svg/ruby.svg"
-                  />
-                   
-                  <span>
-                    Ruby
-                  </span>
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--ruby"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Ruby
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -344,27 +374,37 @@ exports[`Services page renders correctly 1`] = `
                 <div
                   class="icon-item"
                 >
-                  <img
-                    alt="react-js"
-                    src="../../assets/img/Technologies/svg/react-js.svg"
-                  />
-                   
-                  <span>
-                    React
-                  </span>
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--react"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      React
+                    </p>
+                  </div>
                 </div>
                  
                 <div
                   class="icon-item"
                 >
-                  <img
-                    alt="babel"
-                    src="../../assets/img/Technologies/svg/Babel.svg"
-                  />
-                   
-                  <span>
-                    Babel
-                  </span>
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--babel"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Babel
+                    </p>
+                  </div>
                 </div>
               </div>
                
@@ -374,27 +414,37 @@ exports[`Services page renders correctly 1`] = `
                 <div
                   class="icon-item"
                 >
-                  <img
-                    alt="vue-js"
-                    src="../../assets/img/Technologies/svg/vue.svg"
-                  />
-                   
-                  <span>
-                    Vue.js
-                  </span>
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--vue"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Vue
+                    </p>
+                  </div>
                 </div>
                  
                 <div
                   class="icon-item"
                 >
-                  <img
-                    alt="webpack"
-                    src="../../assets/img/Technologies/svg/webpack.svg"
-                  />
-                   
-                  <span>
-                    Webpack
-                  </span>
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--webpack"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Webpack
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -462,27 +512,37 @@ exports[`Services page renders correctly 1`] = `
                 <div
                   class="icon-item"
                 >
-                  <img
-                    alt="Kotlin"
-                    src="../../assets/img/Technologies/svg/kotlin.svg"
-                  />
-                   
-                  <span>
-                    Kotlin
-                  </span>
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--kotlin"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Kotlin
+                    </p>
+                  </div>
                 </div>
                  
                 <div
                   class="icon-item"
                 >
-                  <img
-                    alt="Java"
-                    src="../../assets/img/Technologies/svg/java.svg"
-                  />
-                   
-                  <span>
-                    Java
-                  </span>
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--java"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Java
+                    </p>
+                  </div>
                 </div>
               </div>
                
@@ -492,27 +552,37 @@ exports[`Services page renders correctly 1`] = `
                 <div
                   class="icon-item"
                 >
-                  <img
-                    alt="Objective-C"
-                    src="../../assets/img/Technologies/svg/objective.svg"
-                  />
-                   
-                  <span>
-                    Objective-C
-                  </span>
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--objective"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Objective-C
+                    </p>
+                  </div>
                 </div>
                  
                 <div
                   class="icon-item"
                 >
-                  <img
-                    alt="Swift"
-                    src="../../assets/img/Technologies/svg/swift.svg"
-                  />
-                   
-                  <span>
-                    Swift
-                  </span>
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--swift"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Swift
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
