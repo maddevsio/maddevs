@@ -6,6 +6,7 @@
   <img
     :src="[require(`@/assets/img/Home/png/experts/${fileName}.png`)]"
     :srcset="[require(`@/assets/img/Home/png/experts/${fileNameRetina}.png`) + ' 2x']"
+    loading="lazy"
     class="multi-image"
     :alt="fileNameRetina">
  </picture>

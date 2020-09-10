@@ -25,14 +25,23 @@
             </div>
             <div class="customer-testimonials__customer-info">
               <div class="customer-testimonials__profile">
-                <img :src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)" class="customer-testimonials__customer-image" :alt="testimonial.customerName">
+                <img
+                  :src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)"
+                  loading="lazy"
+                  class="customer-testimonials__customer-image"
+                  :alt="testimonial.customerName">
                 <p class="customer-testimonials__customer-name">
                   {{ testimonial.customerName }} <br> {{ testimonial.customerCountry }}
                 </p>
               </div>
               <div class="customer-testimonials__project">
                 <a :href="testimonial.link" target="blank" rel="nofollow">
-                  <img :src="require(`@/assets/img/Home/svg/customerTestimonials/${testimonial.customerProject}.svg`)" class="customer-testimonials__project-image" :class="testimonial.customerProject" :alt="testimonial.customerProject">
+                  <img
+                    :src="require(`@/assets/img/Home/svg/customerTestimonials/${testimonial.customerProject}.svg`)"
+                    class="customer-testimonials__project-image"
+                    loading="lazy"
+                    :class="testimonial.customerProject"
+                    :alt="testimonial.customerProject">
                 </a>
               </div>
             </div>
