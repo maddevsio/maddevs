@@ -31,18 +31,23 @@
                   target="_blank"
                   class="header-social-logo header-social-logo--facebook header__soc-link"/>
               </div>
+
+
               <div class="header__phones-dropdown_wrap" :id="selectedPhone.country">
                 <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
-                  <img :src="require(`@/assets/img/Flags/${selectedPhone.country}.svg`)" :alt="`${selectedPhone.country}`" />
+                  <span :class="`header__flag header__flag--${selectedPhone.country}`" />
                   {{ selectedPhone.phoneNumber }}
+                  <i class="header__phones-dropdown_arrow"/>
                 </a>
                 <div class="header__phones-list">
                   <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone" v-show="phone != selectedPhone">
-                    <img :src="require(`@/assets/img/Flags/${phone.country}.svg`)" :alt="`${phone.country}`" />
+                    <span :class="`header__flag header__flag--${phone.country}`" />
                     {{ phone.phoneNumber }}
                   </a>
                 </div>
               </div>
+
+
               <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
             </div>
             <UIButtonModalTrigger
@@ -155,6 +160,7 @@ export default {
       background-repeat: no-repeat;
       margin-right: 10px;
       background-size: contain;
+      display: inline-block;
       &--united-states {
         background-image: url(../assets/img/Flags/united-states.svg);
       }
@@ -278,6 +284,8 @@ export default {
     }
 
     &__selected-phone {
+      display: flex;
+      align-items: center;
       img {
         top: 4px;
       }
