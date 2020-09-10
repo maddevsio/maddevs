@@ -1,63 +1,81 @@
 <template>
   <ul class="icons-list">
-    <li class="icon-item">
-      <img src="../../assets/img/Technologies/svg/ansible.svg" alt="Ansible">
-      <span>Ansible</span>
-    </li>
-    <li class="icon-item">
-      <img src="../../assets/img/Technologies/svg/terraform.svg" alt="Terraform">
-      <span>Terraform</span>
-    </li>
-    <li class="icon-item">
-      <img src="../../assets/img/Technologies/svg/cloudformation.svg" alt="CloudFormation">
-      <span>CloudFormation</span>
-    </li>
-    <li class="icon-item">
-      <img src="../../assets/img/Technologies/svg/jenkins.svg" alt="Jenkins">
-      <span>Jenkins</span>
-    </li>
-    <li class="icon-item">
-      <img src="../../assets/img/Technologies/svg/bamboo.svg" alt="Bamboo">
-      <span>Bamboo</span>
-    </li>
-    <li class="icon-item">
-      <img src="../../assets/img/Technologies/svg/team-city.svg" alt="TeamCity">
-      <span>TeamCity</span>
-    </li>
-    <li class="icon-item">
-      <img src="../../assets/img/Technologies/svg/travis.svg" alt="Travis CI">
-      <span>Travis CI</span>
-    </li>
-    <li class="icon-item">
-      <img src="../../assets/img/Technologies/svg/aswcp.png" alt="AWS CodePipeline">
-      <span>AWS CodePipeline</span>
-    </li>
-    <li class="icon-item">
-      <img src="../../assets/img/Technologies/svg/circle.svg" alt="Circle CI">
-      <span>Circle CI</span>
-    </li>
-    <li class="icon-item">
-      <img src="../../assets/img/Technologies/svg/elk.svg" alt="ELK">
-      <span>ELK</span>
-    </li>
-    <li class="icon-item">
-      <img src="../../assets/img/Technologies/svg/senrty.svg" alt="Sentry">
-      <span>Sentry</span>
-    </li>
-    <li class="icon-item">
-      <img src="../../assets/img/Technologies/svg/prometheus.svg" alt="Prometheus">
-      <span>Prometheus</span>
-    </li>
-    <li class="icon-item">
-      <img src="../../assets/img/Technologies/svg/amazon-cloudwatch.svg" alt="Amazon CloudWatch">
-      <span>Amazon CloudWatch</span>
+    <li class="icon-item" v-for="(icon, i) in secondGroup" :key="i">
+      <TechIcon :class-prefix="icon.prefix" :title="icon.title"/>
     </li>
   </ul>
 </template>
 
 <script>
+import TechIcon from '@/components/IconsGroup/tech-icon';
+
 export default {
-  name: 'InfrastructureSecondIconsGroup'
+  name: 'InfrastructureSecondIconsGroup',
+  components: {
+    TechIcon
+  },
+  data() {
+    return {
+      secondGroup: [
+        {
+          title: 'Ansible',
+          prefix: 'ansible'
+        },
+        {
+          title: 'Terraform',
+          prefix: 'terraform'
+        },
+        {
+          title: 'CloudFormation',
+          prefix: 'cloudformation'
+        },
+        {
+          title: 'Jenkins',
+          prefix: 'jenkins'
+        },
+        {
+          title: 'Bamboo',
+          prefix: 'bamboo'
+        },
+        {
+          title: 'TeamCity',
+          prefix: 'team-city'
+        },
+        {
+          title: 'Travis CI',
+          prefix: 'travis'
+        },
+        {
+          title: 'AWS CodePipeline',
+          prefix: 'aswcp'
+        },
+        {
+          title: 'Circle CI',
+          prefix: 'circle'
+        },
+        {
+          title: 'ELK',
+          prefix: 'elk'
+        },
+        {
+          title: 'Sentry',
+          prefix: 'senrty'
+        },
+        {
+          title: 'Prometheus',
+          prefix: 'prometheus'
+        },
+        {
+          title: 'Amazon CloudWatch',
+          prefix: 'amazon-cloudwatch'
+        },
+        {
+          title: 'GitLab CI',
+          prefix: 'gitlab-ci'
+        }
+      ]
+    };
+  }
 };
 </script>
 

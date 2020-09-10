@@ -2,29 +2,30 @@
   <div class="icons-list">
     <div class="icon-flex_group">
       <div class="icon-item aws">
-        <img src="../../assets/img/Technologies/svg/asw.svg" alt="AWS">
-        <span>AWS</span>
+        <TechIcon class-prefix="asw" title="ASW"/>
       </div>
       <div class="icon-item digital-ocean">
-        <img src="../../assets/img/Technologies/svg/digital-ocean.svg" alt="Digital Ocean">
-        <span>Digital Ocean</span>
+        <TechIcon class-prefix="digital-ocean" title="Digital Ocean"/>
       </div>
     </div>
     <div class="icon-flex_group">
       <div class="icon-item heroku">
-        <img src="../../assets/img/Technologies/svg/heroku.svg" alt="Heroku">
-        <span>Heroku</span>
+        <TechIcon class-prefix="heroku" title="Heroku"/>
       </div>
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/azure.svg" alt="Azure">
-        <span>Azure</span>
+        <TechIcon class-prefix="azure" title="Azure"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import TechIcon from '@/components/IconsGroup/tech-icon';
+
 export default {
-  name: 'InfrastructureFirstIconsGroup'
+  name: 'InfrastructureFirstIconsGroup',
+  components: {
+    TechIcon
+  }
 };
 </script>

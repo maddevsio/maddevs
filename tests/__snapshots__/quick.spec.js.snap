@@ -32,10 +32,8 @@ exports[`Quick Project Start renders correctly 1`] = `
           <div
             class="quick-project_start__icon-item contact"
           >
-            <img
-              alt="contact"
-              class="quick-project_start__image-item"
-              src="[object Object]"
+            <span
+              class="quick-project_start__image-bg quick-project_start__image-bg--contact"
             />
           </div>
            
@@ -61,10 +59,8 @@ exports[`Quick Project Start renders correctly 1`] = `
           <div
             class="quick-project_start__icon-item analysis"
           >
-            <img
-              alt="analysis"
-              class="quick-project_start__image-item"
-              src="[object Object]"
+            <span
+              class="quick-project_start__image-bg quick-project_start__image-bg--analysis"
             />
           </div>
            
@@ -90,10 +86,8 @@ exports[`Quick Project Start renders correctly 1`] = `
           <div
             class="quick-project_start__icon-item proposal"
           >
-            <img
-              alt="proposal"
-              class="quick-project_start__image-item"
-              src="[object Object]"
+            <span
+              class="quick-project_start__image-bg quick-project_start__image-bg--proposal"
             />
           </div>
            
@@ -119,10 +113,8 @@ exports[`Quick Project Start renders correctly 1`] = `
           <div
             class="quick-project_start__icon-item team"
           >
-            <img
-              alt="team"
-              class="quick-project_start__image-item"
-              src="[object Object]"
+            <span
+              class="quick-project_start__image-bg quick-project_start__image-bg--team"
             />
           </div>
            
@@ -148,10 +140,8 @@ exports[`Quick Project Start renders correctly 1`] = `
           <div
             class="quick-project_start__icon-item start"
           >
-            <img
-              alt="start"
-              class="quick-project_start__image-item"
-              src="[object Object]"
+            <span
+              class="quick-project_start__image-bg quick-project_start__image-bg--start"
             />
           </div>
            

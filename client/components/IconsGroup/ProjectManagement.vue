@@ -2,30 +2,31 @@
   <div class="icons-list">
     <div class="icon-flex_group">
       <div class="icon-item jira">
-        <img src="../../assets/img/Technologies/svg/jira.svg" alt="Atlassian Jira">
-        <span>Atlassian Jira</span>
+        <TechIcon class-prefix="jira" title="Atlassian Jira"/>
       </div>
       <div class="icon-item">
-         <img src="../../assets/img/Technologies/svg/slack.svg" alt="Slack">
-         <span>Slack</span>
+        <TechIcon class-prefix="slack" title="Slack"/>
       </div>
     </div>
     <div class="icon-flex_group">
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/hangouts.svg" alt="Hangouts">
-        <span>Hangouts</span>
+        <TechIcon class-prefix="hangouts" title="Hangouts"/>
       </div>
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/skype.svg" alt="Skype">
-        <span>Skype</span>
+        <TechIcon class-prefix="skype" title="Skype"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import TechIcon from '@/components/IconsGroup/tech-icon';
+
 export default {
-  name: 'ProjectManagement'
+  name: 'ProjectManagement',
+  components: {
+    TechIcon
+  }
 };
 </script>
 

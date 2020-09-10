@@ -12,10 +12,8 @@ exports[`CaseStudies component renders correctly 1`] = `
     <div
       class="single-project__content-wrap"
     >
-      <img
-        alt="godee"
-        class="single-project__logo"
-        src="[object Object]"
+      <span
+        class="single-project__logo-bg single-project__logo-bg--godeeColored"
       />
        
       <h4

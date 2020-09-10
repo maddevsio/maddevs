@@ -18,33 +18,41 @@
           <div class="header__right-content">
             <div class="header__right-text_content">
               <div class="header__soc-links_wrap">
-                <a href="https://twitter.com/maddevsio" target="_blank" class="header__twitter-link header__soc-link">
-                  <img src="@/assets/img/Header/twitter-icon.svg" alt="Twitter">
-                </a>
-                <a href="https://ru.linkedin.com/company/mad-devs" target="_blank" class="header__lindekin-link header__soc-link">
-                  <img src="@/assets/img/Header/lindekin-icon.svg" alt="Lindekin">
-                </a>
-                <a href="https://www.facebook.com/maddevsllc" target="_blank" class="header__facebook-link header__soc-link">
-                  <img src="@/assets/img/Header/facebook-icon.svg" alt="Facebook">
-                </a>
+                <a
+                  href="https://twitter.com/maddevsio"
+                  target="_blank"
+                  class="header-social-logo header-social-logo--twitter header__soc-link"/>
+                <a
+                  href="https://ru.linkedin.com/company/mad-devs"
+                  target="_blank"
+                  class="header-social-logo header-social-logo--linkedin header__soc-link"/>
+                <a
+                  href="https://www.facebook.com/maddevsllc"
+                  target="_blank"
+                  class="header-social-logo header-social-logo--facebook header__soc-link"/>
               </div>
+
+
               <div class="header__phones-dropdown_wrap" :id="selectedPhone.country">
                 <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
-                  <img :src="require(`@/assets/img/Flags/${selectedPhone.country}.svg`)" :alt="`${selectedPhone.country}`" />
+                  <span :class="`header__flag header__flag--${selectedPhone.country}`" />
                   {{ selectedPhone.phoneNumber }}
+                  <i class="header__phones-dropdown_arrow"/>
                 </a>
                 <div class="header__phones-list">
                   <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone" v-show="phone != selectedPhone">
-                    <img :src="require(`@/assets/img/Flags/${phone.country}.svg`)" :alt="`${phone.country}`" />
+                    <span :class="`header__flag header__flag--${phone.country}`" />
                     {{ phone.phoneNumber }}
                   </a>
                 </div>
               </div>
+
+
               <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
             </div>
-            <UIButtonModalTrigger 
-              :buttonInnerText="buttonInnerText" 
-              :modalWindowName="modalWindowName" 
+            <UIButtonModalTrigger
+              :buttonInnerText="buttonInnerText"
+              :modalWindowName="modalWindowName"
               :isRed="true"
             />
           </div>
@@ -111,7 +119,7 @@ export default {
     handleScroll() {
       if(window.pageYOffset >= 100)
         this.headerLogoTextDisplayState = true;
-      else 
+      else
         this.headerLogoTextDisplayState = false;
     }
   }
@@ -128,6 +136,38 @@ export default {
     position: fixed;
     z-index: 2;
     background-color: #000;
+
+    &-social-logo {
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: contain;
+      overflow: hidden;
+      &--facebook {
+        background-image: url(../assets/img/common/facebook-icon.svg);
+      }
+      &--twitter {
+        background-image: url(../assets/img/common/twitter-icon.svg);
+      }
+      &--linkedin {
+        background-image: url(../assets/img/common/lindekin-icon.svg);
+      }
+    }
+    &__flag {
+      height: 14px;
+      width: 18px;
+      background-repeat: no-repeat;
+      margin-right: 10px;
+      background-size: contain;
+      display: inline-block;
+      &--united-states {
+        background-image: url(../assets/img/Flags/united-states.svg);
+      }
+      &--united-kingdom {
+        background-image: url(../assets/img/Flags/united-kingdom.svg);
+      }
+    }
 
     button {
       width: 135px;
@@ -244,6 +284,8 @@ export default {
     }
 
     &__selected-phone {
+      display: flex;
+      align-items: center;
       img {
         top: 4px;
       }

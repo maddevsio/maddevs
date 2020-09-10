@@ -73,7 +73,7 @@ describe('CaseStudies component', () => {
   test('is Vue\'s instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
+
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
@@ -133,7 +133,7 @@ describe('CaseStudies component', () => {
   });
 
   test('check that the specific images exists', () => {
-    const img = wrapper.findAll('.single-project__logo');
+    const img = wrapper.findAll('.single-project__logo-bg');
     expect(img.length).toBe(8);
   });
 });
