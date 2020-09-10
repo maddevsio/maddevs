@@ -32,6 +32,14 @@ const PlaceholderAsterisk = {
     const input = el.querySelector('input');
     input.addEventListener('input', listenInputEvent);
   },
+  update(el) {
+    const input = el.querySelector('input');
+    if (input.value === null || input.value === '') {
+      const pl = el.querySelector('.v-placeholder-asterisk');
+      pl.style.opacity = 1;
+      pl.style.visibility = 'visible';
+    }
+  },
   unbind(el) {
     if (el) {
       el.removeEventListener('input', listenInputEvent);

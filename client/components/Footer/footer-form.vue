@@ -29,7 +29,7 @@
         @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
       />
     </ValidationObserver>
-    <SuccessModal :visibled="isEmailSent" @onClose="resetForm" />
+    <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
   </div>
 </template>
 
@@ -58,7 +58,8 @@ export default {
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
     isEmailSent: false,
-    onSubmit: false
+    onSubmit: false,
+    subject: 'Marketing'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -82,7 +83,8 @@ export default {
             emailTo: this.emailTo || '',
             projectDescriber: this.projectDescriber,
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers,
+            subject: this.subject || ''
           }
         };
         this.$store.dispatch('sendEmail', this.form).then(res => {

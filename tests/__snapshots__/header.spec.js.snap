@@ -129,18 +129,18 @@ exports[`Header renders correctly 1`] = `
              
             <div
               class="header__phones-dropdown_wrap"
-              id="united-states"
+              id="united-kingdom"
             >
               <a
                 class="header__selected-phone"
-                href="tel:+1 833-MADDEVS"
+                href="tel:+44 20 3984 8555"
               >
                 <img
-                  alt="united-states"
+                  alt="united-kingdom"
                   src="[object Object]"
                 />
                 
-                +1 833-MADDEVS
+                +44 20 3984 8555
               
               </a>
                
@@ -150,6 +150,7 @@ exports[`Header renders correctly 1`] = `
                 <a
                   class="header__phone-item"
                   href="tel:+44 20 3984 8555"
+                  style="display: none;"
                 >
                   <img
                     alt="united-kingdom"
@@ -157,19 +158,6 @@ exports[`Header renders correctly 1`] = `
                   />
                   
                   +44 20 3984 8555
-                
-                </a>
-                <a
-                  class="header__phone-item"
-                  href="tel:+1 833-MADDEVS"
-                  style="display: none;"
-                >
-                  <img
-                    alt="united-states"
-                    src="[object Object]"
-                  />
-                  
-                  +1 833-MADDEVS
                 
                 </a>
               </div>
@@ -296,21 +284,6 @@ exports[`Header renders correctly 1`] = `
               <ul
                 class="footer-contacts__phones-list"
               >
-                <li>
-                  <a
-                    class="footer-contacts__phone-item"
-                    href="tel:+1 833-MADDEVS"
-                  >
-                    <img
-                      alt="United States"
-                      src="@/assets/img/Flags/united-states.svg"
-                    />
-                    
-					+1 833-MADDEVS
-				
-                  </a>
-                </li>
-                 
                 <li>
                   <a
                     class="footer-contacts__phone-item"

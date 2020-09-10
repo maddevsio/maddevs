@@ -8,8 +8,21 @@ describe('Individuals modal', () => {
 
   beforeEach(() => {
     wrapper = mount(IndividualsModal, {
-      stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar']
+      stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar'],
+      mocks: {
+        $store: {
+          dispatch: () => new Promise((rs, rj) => rs())
+        }
+      }
     });
+    wrapper.vm.$refs = { 
+      checkboxes: {
+        reset: jest.fn()
+      },
+      form: {
+        reset: jest.fn()
+      }
+    };
   });
 
   // ------ IMPORTANT ----- //
@@ -62,5 +75,55 @@ describe('Individuals modal', () => {
 
     wrapper.vm.autosize(event);
     expect(event.target.style.height).toEqual('100px');
+  });
+
+  test('sendForm should add new object in $data.form', () => {
+    const form = {
+      'templateId': 304625,
+      'variables': {
+        'agreeToGetMadDevsDiscountOffers': 'No',
+        'agreeWithPrivacyPolicy': 'No',
+        'email': '',
+        'emailTo': 'team@maddevs.io',
+        'fullName': '',
+        'subject': 'Marketing',
+        'phoneNumber': '',
+        'interestedExpertise': '',
+        'projectDescription': ''
+      }
+    };
+    expect(wrapper.vm.$data.form).toEqual('');
+    wrapper.vm.sendForm(true);
+    expect(wrapper.vm.$data.form).toEqual(form);
+  });
+
+  test('should rest values in data instances', () => {
+    // Set mock data for data instances
+    wrapper.vm.$data.fullName = 'Name';
+    wrapper.vm.$data.email = 'email@mail.com';
+    wrapper.vm.$data.projectDescriber = 'Project Describer';
+    wrapper.vm.$data.form = {
+      value1: 'value1',
+      value2: 'value2'
+    };
+    wrapper.vm.$data.interestedExpertise = 'test';
+    wrapper.vm.$data.projectDescription = 'test';
+    wrapper.vm.$data.agreeWithPrivacyPolicy = true;
+    wrapper.vm.$data.agreeToGetMadDevsDiscountOffers = true;
+    wrapper.vm.$data.isEmailSent = true;
+
+    wrapper.vm.resetForm();
+    expect(
+      wrapper.vm.$data.fullName &&
+      wrapper.vm.$data.email &&
+      wrapper.vm.$data.form &&
+      wrapper.vm.$data.interestedExpertise &&
+      wrapper.vm.$data.projectDescription
+    ).toEqual(null);
+    expect(
+      wrapper.vm.$data.agreeWithPrivacyPolicy &&
+      wrapper.vm.$data.agreeToGetMadDevsDiscountOffers &&
+      wrapper.vm.$data.isEmailSent
+    ).toEqual(false);
   });
 });

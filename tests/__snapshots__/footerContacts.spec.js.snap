@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer contacts renders correctly 1`] = `
+<div
+  class="footer-contacts"
+>
+  <div
+    class="footer-contacts__call-us"
+  >
+    <h4
+      class="footer-contacts__title"
+    >
+      Call us:
+    </h4>
+     
+    <ul
+      class="footer-contacts__phones-list"
+    >
+      <li>
+        <a
+          class="footer-contacts__phone-item"
+          href="tel:+44 20 3984 8555"
+        >
+          <img
+            alt="United Kingdom"
+            src="@/assets/img/Flags/united-kingdom.svg"
+          />
+          
+					+44 20 3984 8555
+				
+        </a>
+      </li>
+    </ul>
+  </div>
+   
+  <div
+    class="footer-contacts__message-us"
+  >
+    <h4
+      class="footer-contacts__title"
+    >
+      Message us:
+    </h4>
+     
+    <ul
+      class="footer-contacts__messengers-list"
+    >
+      <li>
+        <a
+          class="footer-contacts__messenger-item"
+          href="https://facebook.com/maddevsllc"
+          target="_blank"
+        >
+          <img
+            alt="Messenger"
+            src="@/assets/img/Footer/messenger.svg"
+          />
+          
+					Messenger
+				
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class="footer-contacts__messenger-item"
+          href="http://wa.me/996555771481"
+          target="_blank"
+        >
+          <img
+            alt="Whatsapp"
+            src="@/assets/img/Footer/whatsapp.svg"
+          />
+          
+					Whatsapp
+				
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class="footer-contacts__messenger-item"
+          href="https://t.me/mun_tamara/"
+          target="_blank"
+        >
+          <img
+            alt="Telegram"
+            src="@/assets/img/Footer/telegram.svg"
+          />
+          
+					Telegram
+				
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class="footer-contacts__messenger-item"
+          href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
+          target="_blank"
+        >
+          <img
+            alt="WeChat"
+            src="@/assets/img/Footer/wechat.svg"
+          />
+          
+					WeChat
+				
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
