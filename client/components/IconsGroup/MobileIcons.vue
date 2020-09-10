@@ -2,30 +2,31 @@
   <div class="icons-list">
     <div class="icon-flex_group">
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/kotlin.svg" alt="Kotlin">
-        <span>Kotlin</span>
+        <TechIcon class-prefix="kotlin" title="Kotlin"/>
       </div>
       <div class="icon-item">
-         <img src="../../assets/img/Technologies/svg/java.svg" alt="Java">
-         <span>Java</span>
+        <TechIcon class-prefix="java" title="Java"/>
       </div>
     </div>
     <div class="icon-flex_group">
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/objective.svg" alt="Objective-C">
-        <span>Objective-C</span>
+        <TechIcon class-prefix="objective" title="Objective-C"/>
       </div>
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/swift.svg" alt="Swift">
-        <span>Swift</span>
+        <TechIcon class-prefix="swift" title="Swift"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import TechIcon from '@/components/IconsGroup/tech-icon';
+
 export default {
-  name: 'MobileIcons'
+  name: 'MobileIcons',
+  components: {
+    TechIcon
+  }
 };
 </script>
 
