@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <BannerContainer />
+    <ServicesBanner />
     <RemoteTechStaff />
     <SoftwareDevelopment />
     <InfrastructureOptimisation />
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import BannerContainer from '@/containers/BannerContainer';
+import ServicesBanner from '@/components/Banner/ServicesBanner';
 import RemoteTechStaff from '@/components/Services/RemoteTechStaff';
 import SoftwareDevelopment from '@/components/Services/SoftwareDevelopment';
 import InfrastructureOptimisation from '@/components/Services/InfrastructureOptimisation';
@@ -18,7 +18,7 @@ import ItConsulting from '@/components/Services/ItСonsulting';
 export default {
   name: 'main-services',
   components: {
-    BannerContainer,
+    ServicesBanner,
     RemoteTechStaff,
     SoftwareDevelopment,
     InfrastructureOptimisation,
@@ -26,8 +26,8 @@ export default {
   },
   data() {
     return {
-      title: 'Mad Devs Services',
-      description: '',
+      title: 'Mad Devs: Custom Software Development and Mobile App Creation Services',
+      description: 'We deliver software engineering and mobile app development services, software testing and QA services, DevOps and IT consulting services to businesses of any size.',
       ogUrl: 'https://maddevs.io/services'
     };
   },

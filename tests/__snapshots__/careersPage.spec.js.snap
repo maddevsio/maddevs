@@ -4,22 +4,71 @@ exports[`Careers page renders correctly 1`] = `
 <main
   class="main"
 >
-  <section
-    class="banner-container"
-    id="banner-container"
+  <div
+    class="container banner-container"
   >
     <div
-      class="container"
+      class="banner-content"
     >
-      <!---->
+      <div
+        class="text-content_wrapper"
+      >
+        <div
+          class="main-title-wrapper"
+        >
+          <h1
+            class="banner-main_title--white-first"
+          >
+            
+        Look!
+      
+          </h1>
+           
+          <span
+            class="banner-main_title--white"
+          >
+            A new Mad Devs' ranger is here!
+          </span>
+        </div>
+      </div>
        
-      <!---->
-       
-      <!---->
-       
-      <!---->
+      <div
+        class="navigation-wrap"
+      >
+        <nav
+          class="navigation-list"
+        >
+          <router-link
+            class="navigation-item"
+            to="services/#remote-tech-staff"
+          >
+            Remote Tech Staff
+          </router-link>
+           
+          <router-link
+            class="navigation-item"
+            to="services/#software-development"
+          >
+            Software Development
+          </router-link>
+           
+          <router-link
+            class="navigation-item"
+            to="services/#infrastructure-optimisation"
+          >
+            Infrastructure Optimization
+          </router-link>
+           
+          <router-link
+            class="navigation-item"
+            to="services/#it-consulting"
+          >
+            IT Consulting
+          </router-link>
+        </nav>
+      </div>
     </div>
-  </section>
+  </div>
    
   <section
     class="careers"

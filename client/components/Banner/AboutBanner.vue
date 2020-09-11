@@ -1,9 +1,10 @@
 <template>
+  <div class="container banner-container">
   <div class="banner-content">
     <div class="text-content_wrapper">
       <div class="main-title-wrapper">
         <h1 class="banner-main_title">
-          Mad Devs 
+          Mad Devs
           <img src="@/assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" class="phone-screen-logo">
           <span class="main-title-white_part"><br>Engineering<br>Your Growth</span>
         </h1>
@@ -12,9 +13,10 @@
         <div class="animation-img-wrap">
           <img src="@/assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype">
         </div>
-      </div> 
+      </div>
     </div>
     <navigationList/>
+  </div>
   </div>
 </template>
 

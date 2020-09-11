@@ -1,24 +1,24 @@
 <template>
   <main class="main">
-    <BannerContainer />
+    <CareersBanner />
     <Careers />
   </main>
 </template>
 
 <script>
-import BannerContainer from '@/containers/BannerContainer';
+import CareersBanner from '@/components/Banner/CareersBanner';
 import Careers from '@/components/Careers/CareersForm';
 
 export default {
   name: 'main-careers',
   components: {
-    BannerContainer,
+    CareersBanner,
     Careers
   },
   data() {
     return {
-      title: 'Mad Devs Careers',
-      description: '',
+      title: 'Mad Devs Careers: Work with Us',
+      description: 'Join our team of 100+ staff members working on unique projects, master new IT skills, and build a fantastic career path in software engineering, DevOps, or mobile app development.',
       ogUrl: 'https://maddevs.io/careers'
     };
   },
