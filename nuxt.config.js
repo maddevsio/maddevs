@@ -87,7 +87,8 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/gtm'
+    '@nuxtjs/gtm',
+    '@nuxtjs/robots'
   ],
   gtm: {
     id: 'GTM-NNKVRF3',
@@ -95,6 +96,11 @@ module.exports = {
   },
   axios: {
     baseURL: process.env.NODE_API_URL
+  },
+  robots: {
+    UserAgent: '*',
+    Disallow: ['/gdpr', '/privacy', '/nda'],
+    Sitemap: 'https://maddevs.io/sitemap.xml'
   }
 };
 
