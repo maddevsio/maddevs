@@ -12,5 +12,5 @@ jobs:
         with:
           author: ${{ github.actor }}
           branch: ${{ github.ref }}
-          urls: 'https://maddevs.сo'
+          urls: 'https://maddevs.co'
           slackWebhookUrl: ${{ secrets.LIGHTHOUSE_CHECK_WEBHOOK_URL }}
