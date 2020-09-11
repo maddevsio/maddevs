@@ -2,7 +2,6 @@ import {
   mount
 } from '@vue/test-utils';
 import CaseStudies from '@/components/About/CaseStudies';
-import BannerContainer from '@/containers/BannerContainer';
 
 describe('CaseStudies component', () => {
   let wrapper;
@@ -96,21 +95,6 @@ describe('CaseStudies component', () => {
     wrapper.vm.$data.currentPageName = 'projects';
     expect(wrapper.vm.$route.path).toBe('/projects');
     expect(wrapper.vm.$data.currentPageName).toBe('projects');
-  });
-
-  test('should have Banner parent component ', () => {
-    const $route = {
-      path: '/projects'
-    };
-
-    wrapper = mount(CaseStudies, {
-      mocks: {
-        $route
-      },
-      parentComponent: BannerContainer
-    });
-
-    expect(wrapper.vm.$parent.$options.name).toBe('BannerContainer');
   });
 
   test('should check existence of data', () => {

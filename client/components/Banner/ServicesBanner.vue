@@ -1,4 +1,5 @@
 <template>
+  <div class="container banner-container">
   <div class="banner-content">
     <div class="text-content_wrapper">
       <div class="main-title-wrapper">
@@ -10,9 +11,10 @@
         <img src="@/assets/img/Services/svg/order-a-project.svg" alt="Order a Project Logotype" class="default-image" v-if="!$store.state.modalWindowIsOpen">
         <img src="@/assets/img/Services/svg/order-a-project-hover.svg"  alt="Order a Project Logotype" class="hover-image" v-if="!$store.state.modalWindowIsOpen" @click="showModal">
         <img src="@/assets/img/Services/svg/order-a-project-green.svg" alt="Order a Project Logotype" class="green-image" v-if="$store.state.modalWindowIsOpen" @click="showModal">
-      </div> 
+      </div>
     </div>
     <navigationList/>
+  </div>
   </div>
 </template>
 
@@ -26,7 +28,7 @@ export default {
   },
   data() {
     return {
-      scrollYPosition: null 
+      scrollYPosition: null
     };
   },
   mounted() {
