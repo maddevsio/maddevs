@@ -14,8 +14,8 @@ export default {
   },
   data() {
     return {
-      title: 'Mad Devs Privacy',
-      description: '',
+      title: 'Mad Devs Privacy Policy',
+      description: 'Mad Devs’ Privacy Policy: Website Acceptable Use Terms.',
       ogUrl: 'https://maddevs.io/privacy'
     };
   },
