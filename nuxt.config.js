@@ -23,9 +23,7 @@ module.exports = {
     script: [
       {
         src: 'https://widget.clutch.co/static/js/widget.js'
-      }
-    ],
-    script: [
+      },
       {
         type: 'application/ld+json',
         innerHTML: JSON.stringify(
