@@ -335,7 +335,7 @@ export default {
   .careers {
     &__background-logo {
       height: 250px;
-      top: -204px;
+      top: -110px;
     }
   }
 }
@@ -415,7 +415,6 @@ export default {
   .careers {
     &__background-logo {
       height: 180px;
-      top: -146px;
     }
 
     &__wrapper {

@@ -9,7 +9,7 @@
             </h1>
           </div>
           <div class="icon-item">
-            <img src="@/assets/img/Services/svg/order-a-project.svg" alt="Order a Project Logotype" class="default-image" v-if="!$store.state.modalWindowIsOpen">
+            <img src="@/assets/img/Services/svg/order-a-project.svg" alt="Order a Project Logotype" class="default-image" v-if="!$store.state.modalWindowIsOpen" @click="showModal">
             <img src="@/assets/img/Services/svg/order-a-project-hover.svg"  alt="Order a Project Logotype" class="hover-image" v-if="!$store.state.modalWindowIsOpen" @click="showModal">
             <img src="@/assets/img/Services/svg/order-a-project-green.svg" alt="Order a Project Logotype" class="green-image" v-if="$store.state.modalWindowIsOpen" @click="showModal">
           </div>
@@ -181,6 +181,16 @@ export default {
     .icon-item {
       min-height: initial;
       display: block;
+
+      &:hover {
+        .hover-image {
+          display: none;
+        }
+
+        .default-image {
+          display: block;
+        }
+      }
     }
 
     .default-image,

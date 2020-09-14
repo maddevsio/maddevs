@@ -6,7 +6,6 @@
 					<div class="footer__title-wrap">
 						<h2 class="footer__main-title main-title">Get In Touch</h2>
 						<div class="footer__mail-wrapper">
-              <span class="footer__mail"/>
 							<a class="footer__mailto-link" href="mailto:team@maddevs.io">team@maddevs.io</a>
 						</div>
 					</div>
@@ -68,20 +67,11 @@ export default {
 			padding-bottom: 50px;
 		}
 
-    &__mail {
-      display: inline-block;
-      width: 68px;
-      height: 50px;
-      background-image: url(../assets/img/Footer/mail-icon.svg);
-      background-repeat: no-repeat;
-    }
-
 		&__main-title {
 			-webkit-text-stroke: $text-stroke--white;
 		}
 
 		&__mailto-link {
-			margin-left: 28px;
 			color: $text-color--red;
 			font-size: 70px;
 			font-family: 'Hoves-Bold';

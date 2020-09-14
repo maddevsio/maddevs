@@ -432,13 +432,15 @@ export default {
         padding-top: 13px;
         padding-right: 17px;
 
-        img {
-          width: 30px;
-        }
-
         &::after {
           display: none;
         }
+      }
+
+      &__image-bg {
+        width: 30px;
+        height: 35px;
+        background-size: 30px;
       }
 
       .team {

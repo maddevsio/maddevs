@@ -25,10 +25,6 @@ exports[`Footer renders correctly 1`] = `
           <div
             class="footer__mail-wrapper"
           >
-            <span
-              class="footer__mail"
-            />
-             
             <a
               class="footer__mailto-link"
               href="mailto:team@maddevs.io"

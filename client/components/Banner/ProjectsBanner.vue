@@ -80,12 +80,14 @@ export default {
   }
 
   @media only screen and (max-width: 1005px) and (min-width: 770px) {
-    .tablet-break {
-      display: block;
-    }
+    .projects-content {
+      .tablet-break {
+        display: block;
+      }
 
-    .desktop-break {
-      display: none;
+      .desktop-break {
+        display: none;
+      }
     }
   }
 
@@ -106,18 +108,20 @@ export default {
   }
 
   @media only screen and (max-width: 714px) {
-    .tablet-break {
-      display: block;
-    }
+    .projects-content {
+      .tablet-break {
+        display: block;
+      }
 
-    .desktop-break {
-      display: none;
+      .desktop-break {
+        display: none;
+      }
     }
   }
 
   @media only screen and (max-width: 670px) {
     .banner-main_title {
-      font-size: 85px;
+      font-size: 83px;
     }
 
     .projects-content {
@@ -129,7 +133,7 @@ export default {
 
   @media only screen and (max-width: 515px) {
     .banner-main_title {
-      font-size: 68px;
+      font-size: 54px;
     }
   }
 
@@ -145,6 +149,10 @@ export default {
     .projects-content {
       .text-content_wrapper {
         padding-bottom: 94px;
+      }
+
+      .banner-main_title {
+        font-size: 48px;
       }
     }
   }
