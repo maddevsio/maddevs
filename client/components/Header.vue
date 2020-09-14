@@ -230,10 +230,6 @@ export default {
       padding-top: 9px;
     }
 
-    &__soc-links_wrap {
-      padding-right: 26px;
-    }
-
     &__soc-link {
       padding-right: 5px;
     }
@@ -241,6 +237,7 @@ export default {
     &__phones-dropdown_wrap {
       // min-width: 200px;
       padding-top: 1px;
+      padding-left: 12px;
       // background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
       background-position-y: 9px;
       background-position-x: 170px;
@@ -274,7 +271,6 @@ export default {
     &__selected-phone,
     &__phone-item {
       position: relative;
-      padding: 0 25px;
       cursor: pointer;
 
       img {
@@ -341,8 +337,7 @@ export default {
 
       &__mailto-link,
       &__selected-phone,
-      &__phone-item,
-      &__soc-links_wrap {
+      &__phone-item {
         padding-right: 15px;
       }
 
