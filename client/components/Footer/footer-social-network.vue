@@ -42,7 +42,7 @@ export default {
       background-repeat: no-repeat;
       background-position: center;
 
-      &-github {
+      &--github {
         background-image: url(../../assets/img/Footer/github.svg);
       }
 

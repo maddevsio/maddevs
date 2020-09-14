@@ -63,7 +63,7 @@ export default {
       position: relative;
 
       .main-title-wrapper {
-        max-width: 97%;
+        max-width: 95%;
       }
     }
   }
