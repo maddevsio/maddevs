@@ -1,22 +1,22 @@
 <template>
 	<div class="footer-social-network">
 		<a href="https://github.com/maddevsio" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/github.svg" class="footer-social-network__github" alt="Mad Devs GitHub">
+      <span class="footer-social-network__icon footer-social-network__icon--github"/>
 		</a>
 		<a href="https://www.facebook.com/maddevsllc" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/facebook.svg" class="footer-social-network__facebook" alt="Mad Devs Facebook">
+      <span class="footer-social-network__icon footer-social-network__icon--facebook"/>
 		</a>
 		<a href="https://www.instagram.com/maddevsio/" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/instagram.svg" class="footer-social-network__instagram" alt="Mad Devs Instagram">
+      <span class="footer-social-network__icon footer-social-network__icon--instagram"/>
 		</a>
 		<a href="https://blog.maddevs.io/" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/medium.svg" class="footer-social-network__medium" alt="Mad Devs Medium">
+      <span class="footer-social-network__icon footer-social-network__icon--medium"/>
 		</a>
 		<a href="https://twitter.com/MadDevsIO" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/twitter.svg" class="footer-social-network__twitter" alt="Mad Devs Twitter">
+      <span class="footer-social-network__icon footer-social-network__icon--twitter"/>
 		</a>
 		<a href="https://www.behance.net/maddevs" class="footer-social-network__social-newtork_link" target="_blank">
-			<img src="../../assets/img/Footer/behance.svg" class="footer-social-network__behance" alt="Mad Devs Behance">
+      <span class="footer-social-network__icon footer-social-network__icon--behance"/>
 		</a>
 	</div>
 </template>
@@ -34,6 +34,38 @@ export default {
 		display: flex;
 		align-items: center;
 		margin-left: auto;
+
+    &__icon {
+      display: block;
+      width: 19px;
+      height: 19px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &--github {
+        background-image: url(../../assets/img/Footer/github.svg);
+      }
+
+      &--facebook {
+        background-image: url(../../assets/img/Footer/facebook.svg);
+      }
+
+      &--instagram {
+        background-image: url(../../assets/img/Footer/instagram.svg);
+      }
+
+      &--medium {
+        background-image: url(../../assets/img/Footer/medium.svg);
+      }
+
+      &--twitter {
+        background-image: url(../../assets/img/Footer/twitter.svg);
+      }
+
+      &--behance {
+        background-image: url(../../assets/img/Footer/behance.svg);
+      }
+    }
 
 		&__social-newtork_link {
 			padding-right: 35px;

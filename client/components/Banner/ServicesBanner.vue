@@ -1,19 +1,23 @@
 <template>
-  <div class="banner-content">
-    <div class="text-content_wrapper">
-      <div class="main-title-wrapper">
-        <h1 class="banner-main_title">
-          Your <br class="phone-screen-br"> Trusted <br> <span class="main-title-white_part">IT Partner</span>
-        </h1>
+  <section class="container">
+    <div class="banner-container">
+      <div class="banner-content">
+        <div class="text-content_wrapper">
+          <div class="main-title-wrapper">
+            <h1 class="banner-main_title">
+              Your <br class="phone-screen-br"> Trusted <br> <span class="main-title-white_part">IT Partner</span>
+            </h1>
+          </div>
+          <div class="icon-item">
+            <img src="@/assets/img/Services/svg/order-a-project.svg" alt="Order a Project Logotype" class="default-image" v-if="!$store.state.modalWindowIsOpen" @click="showModal">
+            <img src="@/assets/img/Services/svg/order-a-project-hover.svg"  alt="Order a Project Logotype" class="hover-image" v-if="!$store.state.modalWindowIsOpen" @click="showModal">
+            <img src="@/assets/img/Services/svg/order-a-project-green.svg" alt="Order a Project Logotype" class="green-image" v-if="$store.state.modalWindowIsOpen" @click="showModal">
+          </div>
+        </div>
+        <navigationList/>
       </div>
-      <div class="icon-item">
-        <img src="@/assets/img/Services/svg/order-a-project.svg" alt="Order a Project Logotype" class="default-image" v-if="!$store.state.modalWindowIsOpen">
-        <img src="@/assets/img/Services/svg/order-a-project-hover.svg"  alt="Order a Project Logotype" class="hover-image" v-if="!$store.state.modalWindowIsOpen" @click="showModal">
-        <img src="@/assets/img/Services/svg/order-a-project-green.svg" alt="Order a Project Logotype" class="green-image" v-if="$store.state.modalWindowIsOpen" @click="showModal">
-      </div> 
     </div>
-    <navigationList/>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -26,7 +30,7 @@ export default {
   },
   data() {
     return {
-      scrollYPosition: null 
+      scrollYPosition: null
     };
   },
   mounted() {
@@ -177,6 +181,16 @@ export default {
     .icon-item {
       min-height: initial;
       display: block;
+
+      &:hover {
+        .hover-image {
+          display: none;
+        }
+
+        .default-image {
+          display: block;
+        }
+      }
     }
 
     .default-image,

@@ -59,6 +59,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <img
                 alt="Atif Mahmud,"
                 class="customer-testimonials__customer-image"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -84,6 +85,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
                 <img
                   alt="teacherly"
                   class="customer-testimonials__project-image teacherly"
+                  loading="lazy"
                   src="[object Object]"
                 />
               </a>
@@ -110,6 +112,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <img
                 alt="Daniel Vartanov,"
                 class="customer-testimonials__customer-image"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -135,6 +138,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
                 <img
                   alt="veeqo"
                   class="customer-testimonials__project-image veeqo"
+                  loading="lazy"
                   src="[object Object]"
                 />
               </a>
@@ -161,6 +165,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <img
                 alt="Stefan Streichsbier,"
                 class="customer-testimonials__customer-image"
+                loading="lazy"
                 src="[object Object]"
               />
                
@@ -186,6 +191,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
                 <img
                   alt="guardrails"
                   class="customer-testimonials__project-image guardrails"
+                  loading="lazy"
                   src="[object Object]"
                 />
               </a>

@@ -4,7 +4,6 @@
     height="50"
     viewBox="0 0 229 50"
     fill="none"
-    xmlns="http://www.w3.org/2000/svg"
   >
     <path d="M0 0H228.571V50H0V0Z" />
     <path

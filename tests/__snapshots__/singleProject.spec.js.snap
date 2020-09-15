@@ -12,10 +12,8 @@ exports[`CaseStudies component renders correctly 1`] = `
     <div
       class="single-project__content-wrap"
     >
-      <img
-        alt="godee"
-        class="single-project__logo"
-        src="[object Object]"
+      <span
+        class="single-project__logo-bg single-project__logo-bg--godeeColored"
       />
        
       <h4
@@ -41,7 +39,6 @@ exports[`CaseStudies component renders correctly 1`] = `
           class="contribution-widget__img contribution-widget__img_godee"
           fill="none"
           viewBox="0 0 20 18"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <path
             clip-rule="evenodd"

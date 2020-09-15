@@ -1,18 +1,18 @@
 <template>
   <main class="main">
-    <BannerContainer />
+    <CareersBanner />
     <Careers />
   </main>
 </template>
 
 <script>
-import BannerContainer from '@/containers/BannerContainer';
+import CareersBanner from '@/components/Banner/CareersBanner';
 import Careers from '@/components/Careers/CareersForm';
 
 export default {
   name: 'main-careers',
   components: {
-    BannerContainer,
+    CareersBanner,
     Careers
   },
   data() {

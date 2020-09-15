@@ -8,7 +8,7 @@
         <div class="quick-project_start__content-items_list">
           <div class="quick-project_start__content-item" v-for="(item, i) in itemsTextContent" :key="i">
             <div class="quick-project_start__icon-item" :class="item.title">
-              <img :src="require(`@/assets/img/Home/svg/Quick/${item.title}.svg`)" class="quick-project_start__image-item" :alt="item.title">
+              <span :class="`quick-project_start__image-bg quick-project_start__image-bg--${item.title}`"/>
             </div>
             <div class="quick-project_start__text-item">
               <h4 class="quick-project_start__title sub-title">{{ item.title }}</h4>
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="quick-project_start__button-wrap">
-        <UIButtonModalTrigger 
+        <UIButtonModalTrigger
           :buttonInnerText="buttonInnerText"
           :modalWindowName="modalWindowName"
           :isRed="true"
@@ -84,6 +84,37 @@ export default {
       }
     }
 
+    &__image-bg {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-repeat: no-repeat;
+
+      &--analysis {
+        background-image: url(../../assets/img/Home/svg/Quick/analysis.svg);
+      }
+
+      &--contact {
+        background-image: url(../../assets/img/Home/svg/Quick/contact.svg);
+      }
+
+      &--proposal {
+        background-image: url(../../assets/img/Home/svg/Quick/proposal.svg);
+      }
+
+      &--quick-project-arrow {
+        background-image: url(../../assets/img/Home/svg/Quick/quick-project-arrow.svg);
+      }
+
+      &--start {
+        background-image: url(../../assets/img/Home/svg/Quick/start.svg);
+      }
+
+      &--team {
+        background-image: url(../../assets/img/Home/svg/Quick/team.svg);
+      }
+    }
+
     &__button-wrap {
       width: 100%;
       margin-top: 75px;
@@ -108,6 +139,8 @@ export default {
     &__icon-item {
       position: relative;
       padding-bottom: 22px;
+      display: flex;
+      justify-content: center;
 
        &::after {
         content: '';
@@ -399,13 +432,15 @@ export default {
         padding-top: 13px;
         padding-right: 17px;
 
-        img {
-          width: 30px;
-        }
-
         &::after {
           display: none;
         }
+      }
+
+      &__image-bg {
+        width: 30px;
+        height: 35px;
+        background-size: 30px;
       }
 
       .team {

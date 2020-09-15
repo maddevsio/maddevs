@@ -32,7 +32,7 @@ router.post('/send-email', (req, res) => {
       let email = {};
       if (req.body && req.body.attachment) {
         email = {
-          'subject': 'Marketing',
+          'subject': req.body.variables.subject,
           'template': {
             'id': req.body.templateId, // Required
             'variables': req.body.variables
@@ -43,13 +43,13 @@ router.post('/send-email', (req, res) => {
           },
           'to': [{
             'name': 'Mad Devs team',
-            'email': req.body.variables.emailTo
+            'email': 'earthur@maddevs.io'
           }],
           'attachments_binary': { [req.body.attachment.name]: req.body.attachment.base64 }
         };
       } else {
         email = {
-          'subject': 'Marketing',
+          'subject': req.body.variables.subject,
           'template': {
             'id': req.body.templateId, // Required
             'variables': req.body.variables
@@ -60,7 +60,7 @@ router.post('/send-email', (req, res) => {
           },
           'to': [{
             'name': 'Mad Devs team',
-            'email': req.body.variables.emailTo
+            'email': 'earthur@maddevs.io'
           }]
         };
       }

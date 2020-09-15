@@ -13,7 +13,11 @@
               <div class="meet-our_experts__expert-position">{{ expert.position }}</div>
             </div>
             <a :href="expert.linkedin" class="meet-our_experts__expert-linkedin_link" target="blank">
-              <img src="../../assets/img/Home/svg/experts/linkedin.svg" class="meet-our_experts__expert-linkedin_icon" alt="Linkedin">
+              <img
+                src="../../assets/img/Home/svg/experts/linkedin.svg"
+                class="meet-our_experts__expert-linkedin_icon"
+                loading="lazy"
+                alt="Linkedin">
             </a>
           </div>
         </div>

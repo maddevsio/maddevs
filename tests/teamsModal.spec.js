@@ -91,7 +91,8 @@ describe('Teams Modal', () => {
         'fullName': '',
         'phoneNumber': '',
         'projectDescription': '',
-        'selectedTeamSize': ''
+        'selectedTeamSize': '',
+        'subject': 'Marketing'
       }
     };
     expect(wrapper.vm.$data.form).toEqual(null);

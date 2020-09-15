@@ -2,40 +2,39 @@
   <div class="icons-list">
     <div class="icon-flex_group">
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/pyton.svg" alt="Python">
-        <span>Python</span>
+        <TechIcon class-prefix="python" title="Python"/>
       </div>
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/golang.svg" alt="Golang">
-        <span>Go</span>
+        <TechIcon class-prefix="golang" title="Go"/>
       </div>
     </div>
     <div class="icon-flex_group">
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/javascript.svg" alt="JavaScript">
-        <span>JavaScript</span>
+        <TechIcon class-prefix="javascript" title="JavaScript"/>
       </div>
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/php.svg" alt="PHP">
-        <span>PHP</span>
+        <TechIcon class-prefix="php" title="PHP"/>
       </div>
     </div>
     <div class="icon-flex_group">
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/node-js.svg" alt="Node.js">
-        <span>Node.js</span>
+        <TechIcon class-prefix="node-js" title="Node.js"/>
       </div>
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/ruby.svg" alt="Ruby">
-        <span>Ruby</span>
+        <TechIcon class-prefix="ruby" title="Ruby"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import TechIcon from '@/components/IconsGroup/tech-icon';
+
 export default {
-  name: 'BackendIcons'
+  name: 'BackendIcons',
+  components: {
+    TechIcon
+  }
 };
 </script>
 

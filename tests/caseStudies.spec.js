@@ -2,7 +2,6 @@ import {
   mount
 } from '@vue/test-utils';
 import CaseStudies from '@/components/About/CaseStudies';
-import BannerContainer from '@/containers/BannerContainer';
 
 describe('CaseStudies component', () => {
   let wrapper;
@@ -73,7 +72,7 @@ describe('CaseStudies component', () => {
   test('is Vue\'s instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
+
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
@@ -98,21 +97,6 @@ describe('CaseStudies component', () => {
     expect(wrapper.vm.$data.currentPageName).toBe('projects');
   });
 
-  test('should have Banner parent component ', () => {
-    const $route = {
-      path: '/projects'
-    };
-
-    wrapper = mount(CaseStudies, {
-      mocks: {
-        $route
-      },
-      parentComponent: BannerContainer
-    });
-
-    expect(wrapper.vm.$parent.$options.name).toBe('BannerContainer');
-  });
-
   test('should check existence of data', () => {
     expect(wrapper.vm.$data.projects).toStrictEqual(projects);
   });
@@ -133,7 +117,7 @@ describe('CaseStudies component', () => {
   });
 
   test('check that the specific images exists', () => {
-    const img = wrapper.findAll('.single-project__logo');
+    const img = wrapper.findAll('.single-project__logo-bg');
     expect(img.length).toBe(8);
   });
 });

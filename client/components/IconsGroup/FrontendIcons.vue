@@ -2,30 +2,31 @@
   <div class="icons-list">
     <div class="icon-flex_group">
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/react-js.svg" alt="react-js">
-        <span>React</span>
+        <TechIcon class-prefix="react" title="React"/>
       </div>
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/Babel.svg" alt="babel">
-        <span>Babel</span>
+        <TechIcon class-prefix="babel" title="Babel"/>
       </div>
     </div>
     <div class="icon-flex_group">
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/vue.svg" alt="vue-js">
-        <span>Vue.js</span>
+        <TechIcon class-prefix="vue" title="Vue"/>
       </div>
       <div class="icon-item">
-        <img src="../../assets/img/Technologies/svg/webpack.svg" alt="webpack">
-        <span>Webpack</span>
+        <TechIcon class-prefix="webpack" title="Webpack"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import TechIcon from '@/components/IconsGroup/tech-icon';
+
 export default {
-  name: 'FrontendIcons'
+  name: 'FrontendIcons',
+  components: {
+    TechIcon
+  }
 };
 </script>
 

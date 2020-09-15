@@ -25,11 +25,6 @@ exports[`Footer renders correctly 1`] = `
           <div
             class="footer__mail-wrapper"
           >
-            <img
-              alt="mail"
-              src="@/assets/img/Footer/mail-icon.svg"
-            />
-             
             <a
               class="footer__mailto-link"
               href="mailto:team@maddevs.io"

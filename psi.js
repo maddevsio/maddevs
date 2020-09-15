@@ -1,4 +1,4 @@
-const request = require('request');
+/* const request = require('request');
 const psi = require('psi');
 require('dotenv').config();
 
@@ -42,7 +42,7 @@ require('dotenv').config();
   };
   const createMessage = data => {
     const message = {
-      text: 'Simulate page load: https://maddevs.io',
+      text: 'Simulate page load: https://maddevs.co',
       attachments: [
         {
           text: `${data['first-contentful-paint'].title}: ${data['first-contentful-paint'].sec}`,
@@ -79,7 +79,7 @@ require('dotenv').config();
   };
   const {
     data
-  } = await psi('https://maddevs.io');
+  } = await psi('https://maddevs.co');
   const reportResult = {
     'first-contentful-paint': {
       sec: data.lighthouseResult.audits['first-contentful-paint'].displayValue,
@@ -103,4 +103,4 @@ require('dotenv').config();
     }
   };
   sendMessageToSlack(reportResult);
-})();
+})(); */

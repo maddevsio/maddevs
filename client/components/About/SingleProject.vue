@@ -11,11 +11,7 @@
       }"
     >
       <div class="single-project__content-wrap">
-        <img
-          :src="require(`@/assets/img/Home/svg/clients/${project.logoImg}.svg`)"
-          class="single-project__logo"
-          :alt="project.projectName"
-        />
+        <span :class="`single-project__logo-bg single-project__logo-bg--${project.logoImg}`"/>
         <h4 class="single-project__sub-title sub-title">
           {{ project.projectTitle }}
         </h4>
@@ -51,10 +47,6 @@ export default {
   },
   props: {
     project: {
-      projectColor: {
-        type: String,
-        required: true
-      },
       projectName: {
         type: String,
         required: true
@@ -118,6 +110,29 @@ export default {
   text-decoration: none;
   color: initial;
   display: block;
+
+  &__logo-bg {
+    display: block;
+    height: 47px;
+    width: 200px;
+    background-repeat: no-repeat;
+
+    &--godeeColored {
+      background-image: url(../../assets/img/Home/svg/clients/godeeColored.svg);
+    }
+
+    &--guardrailsColored {
+      background-image: url(../../assets/img/Home/svg/clients/guardrailsColored.svg);
+    }
+
+    &--nambafoodColored {
+      background-image: url(../../assets/img/Home/svg/clients/nambafoodColored.svg);
+    }
+
+    &--teacherlyColored {
+      background-image: url(../../assets/img/Home/svg/clients/teacherlyColored.svg);
+    }
+  }
 
   @media only screen and (min-width: 1670px) {
     .single-project {
@@ -407,7 +422,7 @@ export default {
 
   @media only screen and (max-width: 576px) {
     .single-project {
-      &__logo {
+      &__logo-bg {
         height: 40px;
       }
 

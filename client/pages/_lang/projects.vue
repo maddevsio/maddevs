@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <BannerContainer />
+    <ProjectsBanner />
     <CaseStudies />
     <Customers />
     <OpenSource />
@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import BannerContainer from '@/containers/BannerContainer';
+import ProjectsBanner from '@/components/Banner/ProjectsBanner';
 import CaseStudies from '@/components/About/CaseStudies';
 import Customers from '@/components/Projects/Customers';
 import OpenSource from '@/components/Projects/OpenSource';
@@ -16,7 +16,7 @@ import OpenSource from '@/components/Projects/OpenSource';
 export default {
   name: 'main-projects',
   components: {
-    BannerContainer,
+    ProjectsBanner,
     CaseStudies,
     Customers,
     OpenSource

@@ -1,4 +1,5 @@
 <template>
+  <div class="container banner-container">
   <div class="banner-content projects-content">
     <div class="text-content_wrapper">
       <div class="main-title-wrapper">
@@ -9,6 +10,7 @@
         <navigationList />
       </div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -27,20 +29,20 @@ export default {
   .projects-content {
     .container {
       position: relative;
-  
+
       .main-title-wrapper {
         max-width: 100%;
       }
     }
-  
+
     .navigation-wrap {
       margin-top: 170px;
     }
-  
+
     .tablet-break {
       display: none;
     }
-  
+
     .text-content_wrapper {
       display: flex;
       padding-bottom: 90px;
@@ -78,12 +80,14 @@ export default {
   }
 
   @media only screen and (max-width: 1005px) and (min-width: 770px) {
-    .tablet-break {
-      display: block;
-    }
+    .projects-content {
+      .tablet-break {
+        display: block;
+      }
 
-    .desktop-break {
-      display: none;
+      .desktop-break {
+        display: none;
+      }
     }
   }
 
@@ -104,30 +108,32 @@ export default {
   }
 
   @media only screen and (max-width: 714px) {
-    .tablet-break {
-      display: block;
-    }
+    .projects-content {
+      .tablet-break {
+        display: block;
+      }
 
-    .desktop-break {
-      display: none;
+      .desktop-break {
+        display: none;
+      }
     }
   }
 
   @media only screen and (max-width: 670px) {
     .banner-main_title {
-      font-size: 85px;
+      font-size: 83px;
     }
 
     .projects-content {
       .text-content_wrapper {
         padding-bottom: 90px;
       }
-    } 
+    }
   }
 
   @media only screen and (max-width: 515px) {
     .banner-main_title {
-      font-size: 68px;
+      font-size: 54px;
     }
   }
 
@@ -143,6 +149,10 @@ export default {
     .projects-content {
       .text-content_wrapper {
         padding-bottom: 94px;
+      }
+
+      .banner-main_title {
+        font-size: 48px;
       }
     }
   }
