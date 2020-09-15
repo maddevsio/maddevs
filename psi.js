@@ -1,4 +1,4 @@
-const request = require('request');
+/* const request = require('request');
 const psi = require('psi');
 require('dotenv').config();
 
@@ -103,4 +103,4 @@ require('dotenv').config();
     }
   };
   sendMessageToSlack(reportResult);
-})();
+})(); */
