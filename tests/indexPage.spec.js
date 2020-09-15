@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import IndexPage from '@/pages/_lang/index';
+import IndexPage from '@/pages/index';
 
 describe('Index page', () => {
   let wrapper;

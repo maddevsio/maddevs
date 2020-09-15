@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import NdaPage from '@/pages/_lang/nda';
+import NdaPage from '@/pages/nda';
 
 describe('Nda page', () => {
   let wrapper;
