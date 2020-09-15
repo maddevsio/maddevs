@@ -72,12 +72,7 @@ module.exports = {
     color: '#ec1c24',
     height: '3px'
   },
-  router: {
-    middleware: 'i18n'
-  },
   plugins: [
-    '~/plugins/i18n.js',
-    '~/plugins/vue-scrollto.js',
     '~/plugins/vee-validate.js',
     '~/plugins/vue2-perfect-scrollbar.js',
     {

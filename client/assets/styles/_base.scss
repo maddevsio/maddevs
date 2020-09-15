@@ -52,29 +52,6 @@ main {
   margin: auto;
   padding: 0 136px;
 }
-
-.sec-title {
-  width: 100%;
-  font-family: 'MADEEvolveSans-medium', sans-serif;
-  font-size: 40px;
-  line-height: 1.38;
-  text-align: center;
-  font-weight: 500;
-  color: #2c1c1c;
-  box-sizing: border-box;
-}
-
-.sec-desc {
-  font-size: 28px;
-  line-height: 1.5;
-  font-family: 'MADEEvolveSans-regular', sans-serif;
-  font-weight: normal;
-}
-
-.rotate_contacts-wrap {
-  transform: rotateY(180deg);
-  z-index: 110;
-}
 //----------- End Base classes ------------//
 
 // #region Fonts
@@ -82,9 +59,11 @@ main {
 @font-face {
   font-family: 'Hoves-Bold';
   src: url('../fonts/Hoves/TT-Hoves-Bold.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Hoves-Regular';
   src: url('../fonts/Hoves/TT-Hoves-Regular.woff') format('woff');
+  font-display: swap;
 }
