@@ -22,7 +22,8 @@ module.exports = {
     ],
     script: [
       {
-        src: 'https://widget.clutch.co/static/js/widget.js'
+        src: 'https://widget.clutch.co/static/js/widget.js',
+        defer: true
       },
       {
         type: 'application/ld+json',
@@ -72,12 +73,7 @@ module.exports = {
     color: '#ec1c24',
     height: '3px'
   },
-  router: {
-    middleware: 'i18n'
-  },
   plugins: [
-    '~/plugins/i18n.js',
-    '~/plugins/vue-scrollto.js',
     '~/plugins/vee-validate.js',
     '~/plugins/vue2-perfect-scrollbar.js',
     {
@@ -127,11 +123,13 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/gtm',
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    'nuxt-lazy-load'
   ],
   gtm: {
     id: 'GTM-NNKVRF3',
-    enabled: true
+    enabled: true,
+    scriptDefer: true
   },
   axios: {
     baseURL: process.env.NODE_API_URL
@@ -142,4 +140,3 @@ module.exports = {
     Sitemap: 'https://maddevs.io/sitemap.xml'
   }
 };
-

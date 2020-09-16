@@ -132,13 +132,13 @@ export default {
     }
   }
 
-    @media only screen and (max-width: 1120px) {
-      font-size: 18px;
-    }
+  @media only screen and (max-width: 1120px) {
+    font-size: 18px;
+  }
 
-    @media only screen and (max-width: 1035px) {
-      font-size: 16px;
-    }
+  @media only screen and (max-width: 1035px) {
+    font-size: 16px;
+  }
 
   @media only screen and (max-width: 1024px) {
     &__img {
