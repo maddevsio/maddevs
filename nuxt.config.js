@@ -22,7 +22,8 @@ module.exports = {
     ],
     script: [
       {
-        src: 'https://widget.clutch.co/static/js/widget.js'
+        src: 'https://widget.clutch.co/static/js/widget.js',
+        defer: true
       },
       {
         type: 'application/ld+json',
@@ -127,7 +128,8 @@ module.exports = {
   ],
   gtm: {
     id: 'GTM-NNKVRF3',
-    enabled: true
+    enabled: true,
+    scriptDefer: true
   },
   axios: {
     baseURL: process.env.NODE_API_URL
@@ -138,4 +140,3 @@ module.exports = {
     Sitemap: 'https://maddevs.io/sitemap.xml'
   }
 };
-
