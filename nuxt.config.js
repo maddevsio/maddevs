@@ -128,7 +128,8 @@ module.exports = {
   ],
   gtm: {
     id: 'GTM-NNKVRF3',
-    enabled: true
+    enabled: true,
+    scriptDefer: true
   },
   axios: {
     baseURL: process.env.NODE_API_URL
