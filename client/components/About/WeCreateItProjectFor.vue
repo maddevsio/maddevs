@@ -17,16 +17,12 @@
           <div class="we-create-it-project__country-list_title">We work with
             <br> customers in:
           </div>
-
-
           <ul class="we-create-it-project__country-list">
             <li v-for="(country, i) in countries" :key="i" class="we-create-it-project__country-item">
               <span :class="`we-create-it-project__logo-country we-create-it-project__logo-country--${country.iconName}`"/>
               {{ country.countryName }}
             </li>
           </ul>
-
-
         </div>
       </div>
     </div>

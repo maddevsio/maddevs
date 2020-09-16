@@ -1,16 +1,9 @@
 export const state = () => ({
-  locales: ['en', 'ru'],
-  locale: 'en',
   contactMeFormStatus: false,
   modalWindowIsOpen: false
 });
 
 export const mutations = {
-  SET_LANG(state, locale) {
-    if (state.locales.indexOf(locale) !== -1) {
-      state.locale = locale;
-    }
-  },
   SET_STATUS_FOR_SEND_EMAIL(state, status) {
     state.contactMeFormStatus = status;
   },
