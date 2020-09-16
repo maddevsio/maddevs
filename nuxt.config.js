@@ -1,4 +1,5 @@
 require('dotenv').config();
+import axios from 'axios';
 
 module.exports = {
   srcDir: 'client/',
@@ -76,21 +77,22 @@ module.exports = {
   plugins: [
     '~/plugins/vee-validate.js',
     '~/plugins/vue2-perfect-scrollbar.js',
+    '~/plugins/vue-social-sharing.js',
     {
       src: '~/plugins/vue-js-modal.js',
       ssr: false
     }
   ],
   generate: {
-    routes: [
-      '/',
-      '/services',
-      '/projects',
-      '/careers',
-      '/gdpr',
-      '/nda',
-      '/privacy'
-    ]
+    async routes() {
+      const routes = ['/', '/services', '/projects', '/careers', '/gdpr', '/nda', '/privacy', '/blog'];
+      const prismicData = await axios.get(process.env.NODE_PRISMIC_API);
+      const ref = prismicData.data.refs[0].ref;
+      const blogPosts = await axios.get(`${process.env.NODE_PRISMIC_API}/documents/search?ref=${ref}#format=json`);
+      const dynamicRoutes = blogPosts.data.results.map(blogPost => '/blog/' + blogPost.uid);
+      const allRoutes = routes.concat(dynamicRoutes);
+      return allRoutes;
+    }
   },
   css: [
     {
@@ -124,6 +126,9 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/gtm',
     '@nuxtjs/robots',
+    '@/modules/static',
+    '@/modules/crawler',
+    '@nuxtjs/prismic',
     'nuxt-lazy-load'
   ],
   gtm: {
@@ -138,5 +143,11 @@ module.exports = {
     UserAgent: '*',
     Disallow: ['/gdpr', '/privacy', '/nda'],
     Sitemap: 'https://maddevs.io/sitemap.xml'
+  },
+  prismic: {
+    endpoint: process.env.NODE_PRISMIC_API,
+    linkResolver: '@/plugins/link-resolver',
+    htmlSerializer: '@/plugins/html-serializer',
+    preview: false
   }
 };
