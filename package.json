@@ -43,6 +43,7 @@
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
+    "@bazzite/nuxt-optimized-images": "^0.4.0",
     "@vue/test-utils": "^1.1.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
@@ -52,13 +53,17 @@
     "eslint-loader": "^2.2.1",
     "eslint-plugin-vue": "^4.0.0",
     "husky": "^4.3.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "imagemin-svgo": "^8.0.0",
     "jest": "^25.5.4",
     "jest-serializer-vue": "^2.0.2",
     "node-sass": "^4.14.1",
     "sass-lint": "^1.13.1",
     "sass-lint-vue": "^0.4.0",
     "sass-loader": "^7.3.1",
-    "vue-jest": "^3.0.6"
+    "vue-jest": "^3.0.6",
+    "webp-loader": "^0.6.0"
   },
   "husky": {
     "hooks": {

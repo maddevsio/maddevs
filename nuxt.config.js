@@ -124,6 +124,7 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/gtm',
     '@nuxtjs/robots',
+    '@bazzite/nuxt-optimized-images',
     'nuxt-lazy-load'
   ],
   gtm: {
@@ -138,5 +139,8 @@ module.exports = {
     UserAgent: '*',
     Disallow: ['/gdpr', '/privacy', '/nda'],
     Sitemap: 'https://maddevs.io/sitemap.xml'
+  },
+  optimizedImages: {
+    optimizeImages: true
   }
 };
