@@ -123,7 +123,8 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/gtm',
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    'nuxt-lazy-load'
   ],
   gtm: {
     id: 'GTM-NNKVRF3',
