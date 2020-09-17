@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="default-layout">
     <Header/>
       <nuxt/>
     <Footer />
@@ -59,6 +59,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .default-layout {
+    background-color: #000;
+  }
+
   .page-scrollbar {
     height: 100vh;
     overflow: hidden;

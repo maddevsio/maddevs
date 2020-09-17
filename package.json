@@ -23,7 +23,9 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/gtm": "^2.3.2",
+    "@nuxtjs/prismic": "^1.2.4",
     "@nuxtjs/robots": "^2.4.2",
+    "axios": "^0.20.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -38,6 +40,7 @@
     "vee-validate": "^3.3.9",
     "vue-awesome-swiper": "^4.1.1",
     "vue-js-modal": "^2.0.0-rc.6",
+    "vue-social-sharing": "^3.0.0-beta.11",
     "vue2-perfect-scrollbar": "^1.5.0"
   },
   "devDependencies": {
