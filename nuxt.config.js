@@ -29,7 +29,7 @@ module.exports = {
       {
         type: 'application/ld+json',
         innerHTML:
-        {
+        `{
           '@context': 'http://www.schema.org',
           '@type': 'Organization',
           'name': 'Mad Devs Group LTD - Custom Software Development Company',
@@ -62,7 +62,7 @@ module.exports = {
             'https://github.com/maddevsio',
             'https://www.behance.net/maddevs'
           ] 
-        }
+        }`
       }
     ]
   },
