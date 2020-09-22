@@ -27,8 +27,8 @@ module.exports = {
         defer: true
       },
       {
-        type: 'application/ld+json',
-        innerHTML:
+        vmid: 'ldjson-schema',
+        innerHTML: 
         `{
           '@context': 'http://www.schema.org',
           '@type': 'Organization',
@@ -62,9 +62,13 @@ module.exports = {
             'https://github.com/maddevsio',
             'https://www.behance.net/maddevs'
           ] 
-        }`
+        }`,
+        type: 'application/ld+json'
       }
-    ]
+    ],
+    __dangerouslyDisableSanitizersByTagID: {
+      'ldjson-schema': ['innerHTML']
+    }
   },
   /*
   ** Customize the progress bar color
