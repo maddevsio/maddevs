@@ -11,12 +11,12 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'yandex-verification', content: '1cce4e9bf6ebcdff' },
-      { rel: 'canonical', href: 'https://maddevs.io' }
+      { name: 'yandex-verification', content: '1cce4e9bf6ebcdff' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'sitemap', type: 'application/xml', href: 'https://maddevs.io/sitemap.xml' }
+      { rel: 'sitemap', type: 'application/xml', href: 'https://maddevs.io/sitemap.xml' },
+      { rel: 'canonical', href: 'https://maddevs.io'}
     ],
     __dangerouslyDisableSanitizers: ['script'],
     script: [
