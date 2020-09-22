@@ -21,14 +21,16 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'sitemap', type: 'application/xml', href: 'https://maddevs.io/sitemap.xml' }
     ],
-    script: [{
-      vmid: 'ldjson-schema',
-      innerHTML: '{ "@context": "http://schema.org" }',
-      type: 'application/ld+json'
-    }],
-    __dangerouslyDisableSanitizersByTagID: {
-      'ldjson-schema': ['innerHTML']
-    }
+    script: [
+      {
+        src: 'https://widget.clutch.co/static/js/widget.js',
+        defer: true
+      },
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.parse(process.env.NODE_JSONLD.replace(/&quot;/g,'"'))
+      }
+    ]
   },
   /*
   ** Customize the progress bar color
