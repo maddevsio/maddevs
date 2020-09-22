@@ -78,6 +78,10 @@ module.exports = {
     '~/plugins/vue2-perfect-scrollbar.js',
     '~/plugins/vue-social-sharing.js',
     {
+      src: '~/plugins/drift-chat.js',
+      ssr: false
+    },
+    {
       src: '~/plugins/vue-js-modal.js',
       ssr: false
     }
