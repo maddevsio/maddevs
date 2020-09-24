@@ -1,6 +1,6 @@
 <template>
 	<div class="footer-contacts row">
-		<div class="footer-contacts__call-us col-xl-5">
+		<div class="footer-contacts__call-us col-xl-5 col-6">
 			<h4 class="footer-contacts__title">Call us:</h4>
 			<ul class="footer-contacts__phones-list">
 				<li>
@@ -17,7 +17,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="footer-contacts__message-us col-xl-6 col-lg-8 col-md-8">
+		<div class="footer-contacts__message-us col-xl-6 col-lg-8 col-md-8 col-6">
 			<h4 class="footer-contacts__title">Message us:</h4>
 			<ul class="footer-contacts__messengers-list">
 				<li>
@@ -132,6 +132,12 @@ export default {
 				left: 0;
 			}
 		}
+
+		&__phone-item,
+		&__messenger-item {
+    	display: block;
+			width: max-content;
+		}
 	}
 
 	@media only screen and (max-width: 1199px) {
@@ -144,6 +150,7 @@ export default {
 
 	@media only screen and (max-width: 1024px) {
 		.footer-contacts {
+			flex-direction: column;
 			margin-top: 43px;
 
 			&__phone-item,
@@ -162,6 +169,26 @@ export default {
 				 &--telegram {
 					margin-bottom: -10px;
 				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 670px) {
+		.footer-contacts {
+			flex-direction: row-reverse;
+
+			&__messengers-list {
+				grid-template-columns: repeat(1, 1fr);
+			}
+
+			&__message-us {
+				margin-top: 0;
+			}
+
+			&__phone-item,
+			&__messenger-item,
+			&__title {
+				font-size: 14px;
 			}
 		}
 	}

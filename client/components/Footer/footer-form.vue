@@ -206,9 +206,10 @@ export default {
       }
 
       .textarea {
+        min-height: 86px;
+        max-height: 130px;
         padding-top: 20px;
         padding-bottom: 20px;
-        min-height: 86px;
       }
 
 			.entry-field {
@@ -239,6 +240,10 @@ export default {
 
       .submit-button {
         height: 48px;
+      }
+
+      .error-text {
+        font-size: 10px;
       }
 		}
 	}

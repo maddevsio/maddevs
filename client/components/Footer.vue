@@ -11,7 +11,7 @@
 						</div>
 					</div>
           <footerContacts />
-					<footerSocialNetworkBar />
+					<footerSocialNetworkBar class="footer__social-network"/>
 					<div class="footer__links-wrapper">
 						<p class="footer__company-name">© Mad Devs - {{ currentYear }}</p>
 						<div class="footer__links">
@@ -24,6 +24,7 @@
 				<div class="footer__form-wrap col-xl-5 col-lg-4 col-md-5 col-sm-5">
 					<footerForm />
 				</div>
+				<footerBottomContentMobile />
 			</div>
     </div>
   </footer>
@@ -33,13 +34,15 @@
 import footerForm from '@/components/Footer/footer-form';
 import footerContacts from '@/components/Footer/footer-contacts';
 import footerSocialNetworkBar from '@/components/Footer/footer-social-network';
+import footerBottomContentMobile from '@/components/Footer/footer-bottom-content-mobile';
 
 export default {
   name: 'Footer',
   components: {
     footerForm,
     footerContacts,
-    footerSocialNetworkBar
+    footerSocialNetworkBar,
+    footerBottomContentMobile
   },
   mounted() {
     if ($nuxt.$route.name) {
@@ -151,6 +154,19 @@ export default {
 			&__link,
 			&__company-name {
 				font-size: 12px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 670px) {
+		.footer {
+			&__links-wrapper,
+			&__social-network {
+				display: none;
+			}
+
+			&__form-wrap {
+				padding-top: 39px;
 			}
 		}
 	}
