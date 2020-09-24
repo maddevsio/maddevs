@@ -119,20 +119,16 @@ export default {
   @import '../../assets/styles/vars';
 
 	.footer-form {
-    width: 450px;
+    width: 100%;
     
     &_email {
       /deep/ .v-placeholder-asterisk {
-        font-size: 18px;
-        color: $bgcolor--grey;
-        font-family: 'Hoves-Regular';
-        left: 10px !important;
+        font-size: 16px;
+        font-family: 'Poppins-Regular';
+        color: $text-color--grey-form-placeholder;
+        left: 17px !important;
         top: 50% !important;
         transform: translateY(-50%);
-
-        span {
-          opacity: 0.5;
-        }
       }
     }
 
@@ -141,47 +137,62 @@ export default {
       height: 65px;
 		}
 
-		textarea {
-			min-height: 64px;
+		.textarea {
+			min-height: 131px;
 			padding: 22px 10px;
       resize: vertical;
     }
     
     .fields-list {
       display: grid;
-      grid-row-gap: 12px;
     }
 
     .form-checkboxes {
-      padding-top: 18px;
-    }
-
-    .entry-field {
-      padding: 21px 10px;
+      padding-top: 16px;
+      padding-bottom: 34px;
     }
 
     .field-item {
       margin-bottom: 8px;
     }
-	}
 
-	@media only screen and (max-width: 1440px) {
-		.footer-form {
-			width: 370px;
-		}
-	}
+    .entry-field {
+      padding: 21px 17px;
+      border: 1px solid $border-color--grey-form;
+      border-radius: 4px;
+      background-color: transparent;
+      color: $text-color--white-darken;
 
-	@media only screen and (max-width: 1220px) {
-		.footer-form {
-			width: 380px;
-		}
-  }
-  
-  @media only screen and (max-width: 960px) {
-		.footer-form {
-      width: 100%;
-		}
-  }
+      &::placeholder {
+        color: $text-color--grey-form-placeholder;
+      }
+    }
+
+    .entry-field,
+    .textarea {
+      font-size: 16px;
+    }
+
+    .entry-field,
+    .error-text {
+      font-family: 'Poppins-Regular';
+    }
+
+    .error-text {
+      font-size: 14px;
+    }
+
+    .invalid {
+      border-color: $input-invalid--bg;
+    }
+
+    /deep/ .form-checkbox-label {
+      padding-left: 30px;
+      font-family: 'Formular-Regular';
+      font-size: 15px;
+      letter-spacing: -0.02em;
+    }
+	}
   
   @media only screen and (max-width: 420px) {
 		.footer-form {

@@ -1,3 +1,11 @@
+// new desing global styles
+.title-new {
+  font-size: 62px;
+  font-family: 'Poppins-Bold';
+  letter-spacing: -1px;
+  color: $section-title-white;
+}
+
 // Reviews dots
 .reviews .slick-dots {
   display: flex;
