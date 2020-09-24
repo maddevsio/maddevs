@@ -256,10 +256,10 @@ exports[`Header renders correctly 1`] = `
           class="mobile-header__contacts"
         >
           <div
-            class="footer-contacts"
+            class="footer-contacts row"
           >
             <div
-              class="footer-contacts__call-us"
+              class="footer-contacts__call-us col-xl-5"
             >
               <h4
                 class="footer-contacts__title"
@@ -270,6 +270,20 @@ exports[`Header renders correctly 1`] = `
               <ul
                 class="footer-contacts__phones-list"
               >
+                <li>
+                  <a
+                    class="footer-contacts__phone-item"
+                    href="tel:+1 833-MADDEVS"
+                  >
+                    <span
+                      class="footer-contacts__icon footer-contacts__icon--united-states"
+                    />
+                    
+						+1 833-MADDEVS
+					
+                  </a>
+                </li>
+                 
                 <li>
                   <a
                     class="footer-contacts__phone-item"
@@ -287,7 +301,7 @@ exports[`Header renders correctly 1`] = `
             </div>
              
             <div
-              class="footer-contacts__message-us"
+              class="footer-contacts__message-us col-xl-6 col-lg-8 col-md-8"
             >
               <h4
                 class="footer-contacts__title"
@@ -304,11 +318,6 @@ exports[`Header renders correctly 1`] = `
                     href="https://facebook.com/maddevsllc"
                     target="_blank"
                   >
-                    <img
-                      alt="Messenger"
-                      src="@/assets/img/Footer/messenger.svg"
-                    />
-                     
                     <span
                       class="footer-contacts__icon footer-contacts__icon--messenger"
                     />
@@ -324,11 +333,6 @@ exports[`Header renders correctly 1`] = `
                     href="http://wa.me/996555771481"
                     target="_blank"
                   >
-                    <img
-                      alt="Whatsapp"
-                      src="@/assets/img/Footer/whatsapp.svg"
-                    />
-                     
                     <span
                       class="footer-contacts__icon footer-contacts__icon--whatsapp"
                     />
@@ -344,11 +348,6 @@ exports[`Header renders correctly 1`] = `
                     href="https://t.me/mun_tamara/"
                     target="_blank"
                   >
-                    <img
-                      alt="Telegram"
-                      src="@/assets/img/Footer/telegram.svg"
-                    />
-                     
                     <span
                       class="footer-contacts__icon footer-contacts__icon--telegram"
                     />
@@ -364,11 +363,6 @@ exports[`Header renders correctly 1`] = `
                     href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
                     target="_blank"
                   >
-                    <img
-                      alt="WeChat"
-                      src="@/assets/img/Footer/wechat.svg"
-                    />
-                     
                     <span
                       class="footer-contacts__icon footer-contacts__icon--wechat"
                     />
@@ -395,6 +389,16 @@ exports[`Header renders correctly 1`] = `
             >
               <span
                 class="footer-social-network__icon footer-social-network__icon--github"
+              />
+            </a>
+             
+            <a
+              class="footer-social-network__social-newtork_link"
+              href="https://www.linkedin.com/company/mad-devs"
+              target="_blank"
+            >
+              <span
+                class="footer-social-network__icon footer-social-network__icon--linkedin"
               />
             </a>
              
