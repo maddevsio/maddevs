@@ -17,7 +17,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="footer-contacts__message-us col-xl-6">
+		<div class="footer-contacts__message-us col-xl-6 col-lg-8 col-md-8">
 			<h4 class="footer-contacts__title">Message us:</h4>
 			<ul class="footer-contacts__messengers-list">
 				<li>
@@ -134,64 +134,35 @@ export default {
 		}
 	}
 
+	@media only screen and (max-width: 1199px) {
+		.footer-contacts {
+			&__message-us {
+				margin-top: 47px;
+			}
+		}
+	}
+
 	@media only screen and (max-width: 1024px) {
 		.footer-contacts {
-			&__title {
-				padding-bottom: 7px;
-			}
-		}
-	}
+			margin-top: 43px;
 
-	@media only screen and (max-width: 960px) {
-		.footer-contacts {
-			flex-direction: row;
-			justify-content: space-between;
-			margin-bottom: 60px;
-
-			&__message-us {
-				margin-top: 0;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 680px) {
-		.footer-contacts {
-			&__messengers-list {
-				grid-template-columns: repeat(1, 1fr);
-			}
-		}
-	}
-
-	@media only screen and (max-width: 520px) {
-		.footer-contacts {
-			flex-direction: column;
-
-			&__messengers-list {
-				grid-template-columns: repeat(2, 1fr);
-			}
-
-			&__message-us {
-				margin-top: 30px;
-			}
-
+			&__phone-item,
 			&__messenger-item,
-			&__phone-item {
-				font-size: 20px;
+			&__title {
+				font-size: 12px;
 			}
-		}
-	}
 
-	@media only screen and (max-width: 420px) {
-		.footer-contacts {
-			margin-top: 50px;
-			margin-bottom: 80px;
-		}
-	}
+			&__title {
+				margin-bottom: 12px;
+			}
 
-	@media only screen and (max-width: 370px) {
-		.footer-contacts {
-			margin-top: 37px;
-			margin-bottom: 58px;
+	    &__icon {
+				margin-bottom: -7px;
+
+				 &--telegram {
+					margin-bottom: -10px;
+				}
+			}
 		}
 	}
 </style>

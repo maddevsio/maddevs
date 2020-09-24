@@ -2,9 +2,9 @@
   <footer :class="`footer ${currentPageName}`">
     <div class="container">
 			<div class="footer__content row">
-				<div class="footer__text-content col-xl-7">
+				<div class="footer__text-content col-xl-7 col-lg-8 col-md-7 col-sm-7">
 					<div class="footer__title-wrap">
-						<h2 class="footer__title title-new">Get In Touch</h2>
+						<h2 class="footer__title title">Get In Touch</h2>
 						<div class="footer__mail-wrapper">
 							<a class="footer__mailto-link" href="mailto:team@maddevs.io">team@maddevs.io</a>
 							<span class="footer__underline" />
@@ -21,7 +21,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="footer__form-wrap col-xl-5">
+				<div class="footer__form-wrap col-xl-5 col-lg-4 col-md-5 col-sm-5">
 					<footerForm />
 				</div>
 			</div>
@@ -62,6 +62,14 @@ export default {
 		padding-top: 65px;
 		padding-bottom: 59px;
 
+		&__title {
+		  color: $section-title-white;
+		}
+
+		&__text-content {
+			padding: 0
+		}
+
 		&__mail-wrapper {
 			width: max-content;
 		}
@@ -83,6 +91,7 @@ export default {
 		}
 
 		&__links-wrapper {
+			width: max-content;
 			margin-top: 79px;
 		}
 
@@ -125,89 +134,25 @@ export default {
 		border-top: 1px solid $border-color--grey-dark;
 	}
 
-	@media only screen and (max-width: 1440px) {
-		.footer {
-			padding-top: 110px;
-			padding-bottom: 103px;
-		}
-	}
-
-	@media only screen and (max-width: 1420px) {
-		.footer {
-			padding-bottom: 65px;
-		}
-	}
-
-	@media only screen and (max-width: 1220px) {
-		.footer {
-			&__mail-wrapper {
-
-				img {
-					display: none;
-				}
-			}
-		}
-	}
-
 	@media only screen and (max-width: 1024px) {
 		.footer {
-			padding-bottom: 43px;
-		}
-	}
-
-	@media only screen and (max-width: 960px) {
-		.footer {
-			padding-top: 40px;
-			padding-bottom: 50px;
-
-			&__content {
-				flex-direction: column;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 760px) {
-		.gdpr,
-		.privacy,
-		.nda {
-			margin-top: 60px;
-		}
-	}
-
-	@media only screen and (max-width: 680px) {
-		.footer {
-			padding-top: 60px;
-		}
-	}
-
-	@media only screen and (max-width: 420px) {
-		.footer {
-			padding-top: 55px;
-			padding-bottom: 17px;
-
 			&__mailto-link {
-				font-size: 40px;
-				letter-spacing: -0.02em;
+				font-size: 32px;
 			}
 
-			&__title {
-				font-size: 53px;
-				letter-spacing: -2px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 370px) {
-		.footer {
-			padding-bottom: 43px;
-
-			&__mailto-link {
-				font-size: 34px;
+			&__underline {
+				margin-top: -11px;
 			}
 
-			&__mail-wrapper {
-				margin-top: 10px;
+			&__links-wrapper {
+				margin-top: 45px;
+			}
+
+			&__link,
+			&__company-name {
+				font-size: 12px;
 			}
 		}
 	}
+
 </style>

@@ -76,4 +76,14 @@ export default {
 			}
 		}
 	}
+
+	@media only screen and (max-width: 1024px) {
+		.footer-social-network  {
+			margin-top: 60px;
+
+			&__icon {
+				margin-right: 19px;
+			}
+		}
+	}
 </style>

@@ -1,9 +1,8 @@
 // new desing global styles
-.title-new {
+.title {
   font-size: 62px;
   font-family: 'Poppins-Bold';
   letter-spacing: -1px;
-  color: $section-title-white;
 }
 
 // Reviews dots
@@ -316,7 +315,6 @@
   justify-content: space-between;
 }
 
-.title,
 .sub-title,
 .section-title {
   font-family: 'Hoves-Bold';
@@ -332,11 +330,6 @@
   font-family: 'Hoves-Regular';
   font-size: 24px;
   font-weight: normal;
-}
-
-.title {
-  font-size: 90px;
-  padding-bottom: 15px;
 }
 
 .last-character {
@@ -427,8 +420,8 @@
 .form-checkboxes {
   display: flex;
   flex-direction: column;
-  padding-top: 4px;
-  padding-bottom: 26px;
+  margin-top: 4px;
+  margin-bottom: 26px;
 }
 
 .form-checkbox-label {
@@ -442,7 +435,7 @@
   letter-spacing: -0.03em;
 
   &:first-child {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   input:checked ~ .checkmark {
@@ -530,10 +523,6 @@
 }
 
 @media only screen and (max-width: 1560px) {
-  .title {
-    font-size: 80px;
-  }
-
   .section-title {
     font-size: 77px;
   }
@@ -574,10 +563,6 @@
 }
 
 @media only screen and (max-width: 1390px) {
-  .title {
-    font-size: 75px;
-  }
-
   .section-title {
     font-size: 72px;
   }
@@ -600,10 +585,6 @@
 @media only screen and (max-width: 1280px) {
   .main-title {
     font-size: 100px;
-  }
-
-  .title {
-    font-size: 70px;
   }
 
   .section-title {
@@ -637,22 +618,18 @@
 }
 
 @media only screen and (max-width: 1180px) {
-  .title {
-    font-size: 65px;
-  }
-
   .section-title {
     font-size: 62px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .textarea {
-    height: 44px;
+  .title {
+    font-size: 36px;
   }
 
-  .title {
-    font-size: 80px;
+  .textarea {
+    height: 44px;
   }
 
   .sub-title  {
@@ -704,10 +681,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .title {
-    font-size: 65px;
-  }
-
   .sub-title  {
     font-size: 47px;
   }
@@ -737,10 +710,6 @@
 }
 
 @media only screen and (max-width: 640px) {
-  .title {
-    font-size: 60px;
-  }
-
   .section-title {
     font-size: 57px;
   }
@@ -785,10 +754,6 @@
 }
 
 @media only screen and (max-width: 520px) {
-  .title {
-    font-size: 41px;
-  }
-
   .doc-text {
     font-size: 23px;
   }

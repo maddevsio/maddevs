@@ -23,7 +23,7 @@
         @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
       />
       <UIButton
-        class="ui-button--transparent-bgc"
+        class="ui-button--transparent-bgc submit-button"
         name="Order a project now"
         :disabled="invalid || !agreeWithPrivacyPolicy"
         @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
@@ -132,7 +132,7 @@ export default {
       }
     }
 
-		button {
+		.submit-button {
       width: 100%;
       height: 65px;
 		}
@@ -148,8 +148,8 @@ export default {
     }
 
     .form-checkboxes {
-      padding-top: 16px;
-      padding-bottom: 34px;
+      margin-top: 16px;
+      margin-bottom: 34px;
     }
 
     .field-item {
@@ -169,12 +169,14 @@ export default {
     }
 
     .entry-field,
-    .textarea {
+    .textarea,
+    .submit-button {
       font-size: 16px;
     }
 
     .entry-field,
-    .error-text {
+    .error-text,
+    .submit-button {
       font-family: 'Poppins-Regular';
     }
 
@@ -193,11 +195,50 @@ export default {
       letter-spacing: -0.02em;
     }
 	}
-  
-  @media only screen and (max-width: 420px) {
+
+  @media only screen and (max-width: 1024px) {
 		.footer-form {
-			.field-item {
-        margin-bottom: 0;
+			.entry-field,
+      .textarea,
+      /deep/ .form-checkbox-label,
+      .submit-button {
+        font-size: 12px;
+      }
+
+      .textarea {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        min-height: 86px;
+      }
+
+			.entry-field {
+        padding: 15px 16px;
+      }
+
+       &_email {
+        /deep/ .v-placeholder-asterisk {
+          font-size: 12px;
+        }
+      }
+
+      /deep/ .checkmark {
+        width: 16px;
+        height: 16px;
+      }
+
+      /deep/ .form-checkboxes {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      /deep/ .form-checkbox-label {
+        &:first-child {
+          margin-bottom: 14px;
+        }
+      }
+
+      .submit-button {
+        height: 48px;
       }
 		}
 	}
