@@ -5,7 +5,7 @@ exports[`Footer contacts renders correctly 1`] = `
   class="footer-contacts row"
 >
   <div
-    class="footer-contacts__call-us col-xl-5"
+    class="footer-contacts__call-us col-xl-5 col-6"
   >
     <h4
       class="footer-contacts__title"
@@ -47,7 +47,7 @@ exports[`Footer contacts renders correctly 1`] = `
   </div>
    
   <div
-    class="footer-contacts__message-us col-xl-6 col-lg-8 col-md-8"
+    class="footer-contacts__message-us col-xl-6 col-lg-8 col-md-8 col-6"
   >
     <h4
       class="footer-contacts__title"

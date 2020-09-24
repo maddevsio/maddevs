@@ -40,7 +40,9 @@ exports[`Footer renders correctly 1`] = `
          
         <footercontacts-stub />
          
-        <footersocialnetworkbar-stub />
+        <footersocialnetworkbar-stub
+          class="footer__social-network"
+        />
          
         <div
           class="footer__links-wrapper"
@@ -86,6 +88,8 @@ exports[`Footer renders correctly 1`] = `
       >
         <footerform-stub />
       </div>
+       
+      <footerbottomcontentmobile-stub />
     </div>
   </div>
 </footer>
