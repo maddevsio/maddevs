@@ -2,7 +2,7 @@
   <footer :class="`footer ${currentPageName}`">
     <div class="container">
 			<div class="footer__content row">
-				<div class="footer__text-content col-xl-7 col-lg-8 col-md-7 col-sm-7">
+				<div class="footer__text-content col-xl-7 col-lg-8 col-md-7">
 					<div class="footer__title-wrap">
 						<h2 class="footer__title title">Get In Touch</h2>
 						<div class="footer__mail-wrapper">
@@ -21,7 +21,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="footer__form-wrap col-xl-5 col-lg-4 col-md-5 col-sm-5">
+				<div class="footer__form-wrap col-xl-5 col-lg-4 col-md-5">
 					<footerForm />
 				</div>
 				<footerBottomContentMobile />
@@ -158,7 +158,7 @@ export default {
 		}
 	}
 
-	@media only screen and (max-width: 670px) {
+	@media only screen and (max-width: 767px) {
 		.footer {
 			&__links-wrapper,
 			&__social-network {

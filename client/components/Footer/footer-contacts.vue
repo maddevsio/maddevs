@@ -173,7 +173,7 @@ export default {
 		}
 	}
 
-	@media only screen and (max-width: 670px) {
+	@media only screen and (max-width: 767px) {
 		.footer-contacts {
 			flex-direction: row-reverse;
 
