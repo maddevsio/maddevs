@@ -1,49 +1,29 @@
-.container-bootstrap,
-.container-bootstrap-fluid,
-.container-bootstrap-sm,
-.container-bootstrap-md,
-.container-bootstrap-lg,
-.container-bootstrap-xl,
-.container-bootstrap-xxl {
-  width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
+.container {
+  max-width: 1440px;
+  padding: 0 100px;
   margin-right: auto;
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
-  .container-bootstrap, .container-bootstrap-sm {
-    max-width: 540px;
+@media (max-width: 768px) {
+  .container {
+    padding: 0 76px;
   }
 }
 
-@media (min-width: 768px) {
-  .container-bootstrap, .container-bootstrap-sm, .container-bootstrap-md {
-    max-width: 720px;
+@media (max-width: 576px) {
+  .container {
+    padding: 0 74px;
   }
 }
 
-@media (min-width: 992px) {
-  .container-bootstrap, .container-bootstrap-sm, .container-bootstrap-md, .container-bootstrap-lg {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container-bootstrap, .container-bootstrap-sm, .container-bootstrap-md, .container-bootstrap-lg, .container-bootstrap-xl {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container-bootstrap, .container-bootstrap-sm, .container-bootstrap-md, .container-bootstrap-lg, .container-bootstrap-xl, .container-bootstrap-xxl {
-    max-width: 1320px;
+@media (max-width: 440px) {
+  .container {
+    padding: 0 24px;
   }
 }
 
 .row {
-  --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;

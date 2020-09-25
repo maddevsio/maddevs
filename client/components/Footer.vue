@@ -1,28 +1,30 @@
 <template>
   <footer :class="`footer ${currentPageName}`">
     <div class="container">
-			<div class="footer__content">
-				<div class="footer__text-content">
+			<div class="footer__content row">
+				<div class="footer__text-content col-xl-7 col-lg-8 col-md-7">
 					<div class="footer__title-wrap">
-						<h2 class="footer__main-title main-title">Get In Touch</h2>
+						<h2 class="footer__title title">Get In Touch</h2>
 						<div class="footer__mail-wrapper">
 							<a class="footer__mailto-link" href="mailto:team@maddevs.io">team@maddevs.io</a>
+							<span class="footer__underline" />
 						</div>
 					</div>
           <footerContacts />
+					<footerSocialNetworkBar class="footer__social-network"/>
+					<div class="footer__links-wrapper">
+						<p class="footer__company-name">© Mad Devs - {{ currentYear }}</p>
+						<div class="footer__links">
+							<a href="/gdpr" target="_blank" class="footer__link">GDPR Compliance Commitment</a>
+							<a href="/privacy" target="_blank" class="footer__link">Privacy Policy</a>
+							<a href="/nda" target="_blank" class="footer__link">Non-Disclosure Agreement (NDA)</a>
+						</div>
+					</div>
 				</div>
-				<div class="footer__form-wrap">
+				<div class="footer__form-wrap col-xl-5 col-lg-4 col-md-5">
 					<footerForm />
 				</div>
-			</div>
-			<div class="footer__bottom-links-line">
-				<p class="footer__company-name">© Mad Devs - {{ currentYear }}</p>
-				<div class="footer__left-bottom_links">
-					<a href="/gdpr" target="_blank" class="footer__bottom-link">GDPR Compliance Commitment</a>
-					<a href="/privacy" target="_blank" class="footer__bottom-link">Privacy Policy</a>
-					<a href="/nda" target="_blank" class="footer__bottom-link">Non-Disclosure Agreement (NDA)</a>
-				</div>
-				<footerSocialNetworkBar />
+				<footerBottomContentMobile />
 			</div>
     </div>
   </footer>
@@ -32,13 +34,15 @@
 import footerForm from '@/components/Footer/footer-form';
 import footerContacts from '@/components/Footer/footer-contacts';
 import footerSocialNetworkBar from '@/components/Footer/footer-social-network';
+import footerBottomContentMobile from '@/components/Footer/footer-bottom-content-mobile';
 
 export default {
   name: 'Footer',
   components: {
     footerForm,
     footerContacts,
-    footerSocialNetworkBar
+    footerSocialNetworkBar,
+    footerBottomContentMobile
   },
   mounted() {
     if ($nuxt.$route.name) {
@@ -58,61 +62,70 @@ export default {
   @import '../assets/styles/vars';
 
 	.footer {
-		padding-top: 80px;
-    padding-bottom: 59px;
+		padding-top: 65px;
+		padding-bottom: 59px;
 
-		&__content {
-			display: flex;
-    	justify-content: space-between;
-			padding-bottom: 50px;
+		&__title {
+		  color: $section-title-white;
 		}
 
-		&__main-title {
-			-webkit-text-stroke: $text-stroke--white;
+		&__text-content {
+			padding: 0
+		}
+
+		&__mail-wrapper {
+			width: max-content;
 		}
 
 		&__mailto-link {
 			color: $text-color--red;
-			font-size: 70px;
-			font-family: 'Hoves-Bold';
+			font-size: 48px;
+			font-family: 'Poppins-Bold';
 			text-decoration: none;
-			border-bottom: 1px solid;
-			letter-spacing: -2px;
+			letter-spacing: -1px;
 		}
 
-		&__bottom-links-line {
+		&__underline {
+			width: 100%;
+			height: 1px;
+			display: block;
+			margin-top: -15px;
+			background-color: $bgcolor--red;
+		}
+
+		&__links-wrapper {
+			width: max-content;
+			margin-top: 79px;
+		}
+
+		&__links {
 			display: flex;
-			padding-top: 23px;
-			border-top: 1px solid $footer--border-color--grey-light;
 		}
 
-		&__left-bottom_links {
-			display: flex;
-		}
-
-		&__bottom-link,
+		&__link,
 		&__company-name {
-			font-size: 16px;
-			font-family: 'Hoves-Regular';
+			font-size: 15px;
+			font-family: 'Formular-Regular';
 			color: $text-color--grey;
+			letter-spacing:  -0.02em;
 		}
 
-		&__bottom-link {
+		&__company-name {
+			margin-bottom: 6px;
+		}
+
+		&__link {
 			padding-left: 26px;
 			text-decoration: underline;
 			text-decoration-color: $footer--text-decoration-color;
 
 			&:first-child {
-				padding-left: 30px;
+				padding-left: 0;
 			}
 		}
 
 		&__form-wrap {
 			margin-top: 18px;
-		}
-
-		&__mail-wrapper {
-			margin-top: 58px;
 		}
 	}
 
@@ -124,192 +137,38 @@ export default {
 		border-top: 1px solid $border-color--grey-dark;
 	}
 
-	@media only screen and (max-width: 1440px) {
-		.footer {
-			padding-top: 110px;
-			padding-bottom: 103px;
-		}
-	}
-
-	@media only screen and (max-width: 1420px) {
-		.footer {
-			padding-bottom: 65px;
-
-			&__bottom-links-line {
-				display: grid;
-				justify-content: center;
-				grid-row-gap: 25px;
-				padding-top: 30px;
-				text-align: center;
-			}
-
-			&__bottom-link {
-				&:first-child {
-					padding-left: 0;
-				}
-			}
-
-			&__company-name {
-				grid-row-start: 3;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 1320px) {
-		.footer {
-			padding-top: 90px;
-
-			&__main-title {
-				font-size: 100px;
-			}
-
-			&__mailto-link {
-				font-size: 62px;
-			}
-
-			&__mail-wrapper {
-				margin-top: 50px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 1220px) {
-		.footer {
-			&__mail-wrapper {
-				margin-top: 25px;
-
-				img {
-					display: none;
-				}
-			}
-
-			&__mailto-link {
-				margin-left: 0;
-				font-size: 46px;
-			}
-
-			&__content {
-				padding-bottom: 55px;
-			}
-		}
-	}
-
 	@media only screen and (max-width: 1024px) {
 		.footer {
-			padding-top: 75px;
-			padding-bottom: 43px;
-
-			&__main-title {
-				font-size: 90px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 960px) {
-		.footer {
-			padding-top: 40px;
-			padding-bottom: 50px;
-
-			&__main-title {
-				font-size: 64px;
-				letter-spacing: -0.03em;
-			}
-
-			&__content {
-				flex-direction: column;
-				padding-bottom: 42px;
-			}
-
-			&__mail-wrapper {
-				margin-top: 20px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 760px) {
-		.footer {
-			&__bottom-links-line {
-				padding-top: 35px;
-			}
-
-			&__left-bottom_links {
-				flex-wrap: wrap;
-				justify-content: center;
-			}
-
-			&__bottom-link {
-				&:last-child {
-					padding-top: 10px;
-				}
-			}
-
-		}
-
-		.gdpr,
-		.privacy,
-		.nda {
-			margin-top: 60px;
-		}
-	}
-
-	@media only screen and (max-width: 680px) {
-		.footer {
-			padding-top: 60px;
-		}
-	}
-
-	@media only screen and (max-width: 500px) {
-		.footer {
-			&__left-bottom_links {
-				flex-direction: column;
-			}
-
-			&__bottom-link {
-				&:nth-child(2) {
-					padding-top: 10px;
-				}
-			}
-		}
-	}
-
-	@media only screen and (max-width: 420px) {
-		.footer {
-			padding-top: 55px;
-			padding-bottom: 17px;
-
 			&__mailto-link {
-				font-size: 40px;
-				letter-spacing: -0.02em;
+				font-size: 32px;
 			}
 
-			&__main-title {
-				font-size: 53px;
-				letter-spacing: -2px;
+			&__underline {
+				margin-top: -11px;
 			}
 
-			&__bottom-link {
-				padding-left: 10px;
+			&__links-wrapper {
+				margin-top: 45px;
+			}
+
+			&__link,
+			&__company-name {
+				font-size: 12px;
 			}
 		}
 	}
 
-	@media only screen and (max-width: 370px) {
+	@media only screen and (max-width: 767px) {
 		.footer {
-			padding-bottom: 43px;
-
-			&__mailto-link {
-				font-size: 34px;
+			&__links-wrapper,
+			&__social-network {
+				display: none;
 			}
 
-			&__mail-wrapper {
-				margin-top: 10px;
-			}
-
-			&__bottom-link {
-				&:nth-child(2) {
-					padding-top: 10px;
-				}
+			&__form-wrap {
+				padding-top: 39px;
 			}
 		}
 	}
+
 </style>

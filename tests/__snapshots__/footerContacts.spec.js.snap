@@ -2,10 +2,10 @@
 
 exports[`Footer contacts renders correctly 1`] = `
 <div
-  class="footer-contacts"
+  class="footer-contacts row"
 >
   <div
-    class="footer-contacts__call-us"
+    class="footer-contacts__call-us col-xl-5 col-6"
   >
     <h4
       class="footer-contacts__title"
@@ -16,6 +16,20 @@ exports[`Footer contacts renders correctly 1`] = `
     <ul
       class="footer-contacts__phones-list"
     >
+      <li>
+        <a
+          class="footer-contacts__phone-item"
+          href="tel:+1 833-MADDEVS"
+        >
+          <span
+            class="footer-contacts__icon footer-contacts__icon--united-states"
+          />
+          
+						+1 833-MADDEVS
+					
+        </a>
+      </li>
+       
       <li>
         <a
           class="footer-contacts__phone-item"
@@ -33,7 +47,7 @@ exports[`Footer contacts renders correctly 1`] = `
   </div>
    
   <div
-    class="footer-contacts__message-us"
+    class="footer-contacts__message-us col-xl-6 col-lg-8 col-md-8 col-6"
   >
     <h4
       class="footer-contacts__title"
@@ -50,11 +64,6 @@ exports[`Footer contacts renders correctly 1`] = `
           href="https://facebook.com/maddevsllc"
           target="_blank"
         >
-          <img
-            alt="Messenger"
-            src="@/assets/img/Footer/messenger.svg"
-          />
-           
           <span
             class="footer-contacts__icon footer-contacts__icon--messenger"
           />
@@ -70,11 +79,6 @@ exports[`Footer contacts renders correctly 1`] = `
           href="http://wa.me/996555771481"
           target="_blank"
         >
-          <img
-            alt="Whatsapp"
-            src="@/assets/img/Footer/whatsapp.svg"
-          />
-           
           <span
             class="footer-contacts__icon footer-contacts__icon--whatsapp"
           />
@@ -90,11 +94,6 @@ exports[`Footer contacts renders correctly 1`] = `
           href="https://t.me/mun_tamara/"
           target="_blank"
         >
-          <img
-            alt="Telegram"
-            src="@/assets/img/Footer/telegram.svg"
-          />
-           
           <span
             class="footer-contacts__icon footer-contacts__icon--telegram"
           />
@@ -110,11 +109,6 @@ exports[`Footer contacts renders correctly 1`] = `
           href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
           target="_blank"
         >
-          <img
-            alt="WeChat"
-            src="@/assets/img/Footer/wechat.svg"
-          />
-           
           <span
             class="footer-contacts__icon footer-contacts__icon--wechat"
           />

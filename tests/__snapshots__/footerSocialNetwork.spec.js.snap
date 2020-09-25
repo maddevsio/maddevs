@@ -16,6 +16,16 @@ exports[`Footer social network renders correctly 1`] = `
    
   <a
     class="footer-social-network__social-newtork_link"
+    href="https://www.linkedin.com/company/mad-devs"
+    target="_blank"
+  >
+    <span
+      class="footer-social-network__icon footer-social-network__icon--linkedin"
+    />
+  </a>
+   
+  <a
+    class="footer-social-network__social-newtork_link"
     href="https://www.facebook.com/maddevsllc"
     target="_blank"
   >
