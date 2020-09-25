@@ -43,7 +43,7 @@
 
 <script>
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
-import mobileHeader from '@/components/ui/mobile-header';
+import mobileHeader from '@/components/Header/mobile-header';
 import headerLogo from '@/components/svg/headerLogo';
 
 export default {
@@ -58,12 +58,12 @@ export default {
       buttonInnerText: 'Contact me',
       phones: [
         {
-          phoneNumber: '+1 833-MADDEVS',
-          country: 'united-states'
-        },
-        {
           phoneNumber: '+44 20 3984 8555',
           country: 'united-kingdom'
+        },
+        {
+          phoneNumber: '+1 833-MADDEVS',
+          country: 'united-states'
         }
       ],
       selectedPhone: null,
