@@ -138,7 +138,7 @@ exports[`Header renders correctly 1`] = `
         </div>
          
         <button
-          class="ui-button-modal-trigger header__contact-button ui-button-modal-trigger--red"
+          class="ui-button-modal-trigger ui-button-modal-trigger--red"
         >
           
   Contact me
