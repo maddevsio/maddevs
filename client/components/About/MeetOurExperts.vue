@@ -2,10 +2,10 @@
   <section id="meet-our-experts" class="meet-our_experts">
     <div class="container">
       <div class="meet-our_experts__main-title_wrap">
-        <h2 class="meet-our_experts__main-title main-title">Meet our experts</h2>
+        <h2 class="meet-our_experts__main-title">Meet our experts</h2>
       </div>
-      <div class="meet-our_experts__experts-list">
-        <div class="meet-our_experts__expert-item" v-for="(expert, i) in experts" :key="i">
+      <div class="meet-our_experts__experts-list row">
+        <div class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6" v-for="(expert, i) in experts" :key="i">
           <image-component :fileName="expert.image" :fileNameRetina="`${expert.image}@2x`"/>
           <div class="meet-our_experts__expert-bottom_content">
             <div class="meet-our_experts__expert-info">
@@ -95,24 +95,21 @@ export default {
   @import '../../assets/styles/vars';
 
   .meet-our_experts {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     background-color: $bgcolor--white;
 
     &__main-title {
-      padding-bottom: 38px;
-    }
-
-    &__experts-list {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(140px, 295px));
-      grid-gap: 20px;
+      margin-bottom: 10px;
+      font-size: 40px;
+      font-family: 'Poppins-Bold';
+      color: $text-color--black-lighter;
+      text-align: center;
+      letter-spacing: -1px;
     }
 
     &__expert-item {
-      height: 100%;
-      max-height: 394px;
-      max-width: 295px;
       position: relative;
+      margin-bottom: 20px;
     }
 
     &__expert-bottom_content {
@@ -191,7 +188,7 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .meet-our_experts {
-      padding-bottom: 76px;
+      padding-bottom: 56px;
 
       &__expert-bottom_content {
         bottom: 10px;
@@ -202,10 +199,6 @@ export default {
         background-color: $bgcolor--light-white;
       }
 
-      &__expert-item {
-        max-height: 187px;
-      }
-
       &__expert-linkedin_icon {
         width: 15px;
         height: 15px;
@@ -213,16 +206,36 @@ export default {
 
       &__expert-linkedin_link {
         top: 11px;
-        right: 11px;
       }
-
-      &__expert-name {
-        font-size: 9px;
-      }
-
+      
+      &__expert-name,
       &__expert-position {
         font-size: 9px;
       }
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .meet-our_experts {
+      &__main-title {
+        font-size: 36px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .meet-our_experts {
+      padding-bottom: 45px;
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .meet-our_experts {
+      &__expert-name,
+      &__expert-position {
+        font-size: 8px;
+      }
+    }
+  }
+
 </style>

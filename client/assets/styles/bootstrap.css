@@ -25,6 +25,7 @@
 
 .row {
   --bs-gutter-y: 0;
+  --bs-gutter-x: 20px;
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(var(--bs-gutter-y) * -1);
