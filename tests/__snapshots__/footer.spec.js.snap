@@ -11,7 +11,7 @@ exports[`Footer renders correctly 1`] = `
       class="footer__content row"
     >
       <div
-        class="footer__text-content col-xl-7 col-lg-8 col-md-7 col-sm-7"
+        class="footer__text-content col-xl-7 col-lg-8 col-md-7"
       >
         <div
           class="footer__title-wrap"
@@ -84,7 +84,7 @@ exports[`Footer renders correctly 1`] = `
       </div>
        
       <div
-        class="footer__form-wrap col-xl-5 col-lg-4 col-md-5 col-sm-5"
+        class="footer__form-wrap col-xl-5 col-lg-4 col-md-5"
       >
         <footerform-stub />
       </div>
