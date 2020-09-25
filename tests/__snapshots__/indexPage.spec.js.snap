@@ -2568,17 +2568,17 @@ exports[`Index page renders correctly 1`] = `
         class="meet-our_experts__main-title_wrap"
       >
         <h2
-          class="meet-our_experts__main-title main-title"
+          class="meet-our_experts__main-title"
         >
           Meet our experts
         </h2>
       </div>
        
       <div
-        class="meet-our_experts__experts-list"
+        class="meet-our_experts__experts-list row"
       >
         <div
-          class="meet-our_experts__expert-item"
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
         >
           <picture>
             <source
@@ -2614,23 +2614,23 @@ exports[`Index page renders correctly 1`] = `
                 Senior DevOps Engineer
               </div>
             </div>
-             
-            <a
-              class="meet-our_experts__expert-linkedin_link"
-              href="https://www.linkedin.com/in/marat-bediev-a973171b/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="meet-our_experts__expert-linkedin_icon"
-                loading="lazy"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
           </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/marat-bediev-a973171b/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
         </div>
         <div
-          class="meet-our_experts__expert-item"
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
         >
           <picture>
             <source
@@ -2666,23 +2666,23 @@ exports[`Index page renders correctly 1`] = `
                 Delivery Manager
               </div>
             </div>
-             
-            <a
-              class="meet-our_experts__expert-linkedin_link"
-              href="https://www.linkedin.com/in/tamara-mun/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="meet-our_experts__expert-linkedin_icon"
-                loading="lazy"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
           </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/tamara-mun/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
         </div>
         <div
-          class="meet-our_experts__expert-item"
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
         >
           <picture>
             <source
@@ -2709,7 +2709,7 @@ exports[`Index page renders correctly 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Andrew "Сhuck" Minkin
+                Andrew "Chuck" Minkin
               </div>
                
               <div
@@ -2718,23 +2718,23 @@ exports[`Index page renders correctly 1`] = `
                 CTO, Co-Founder
               </div>
             </div>
-             
-            <a
-              class="meet-our_experts__expert-linkedin_link"
-              href="https://www.linkedin.com/in/andrew-minkin-700a2523/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="meet-our_experts__expert-linkedin_icon"
-                loading="lazy"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
           </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/andrew-minkin-700a2523/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
         </div>
         <div
-          class="meet-our_experts__expert-item"
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
         >
           <picture>
             <source
@@ -2770,23 +2770,23 @@ exports[`Index page renders correctly 1`] = `
                 Senior Full-Stack Developer
               </div>
             </div>
-             
-            <a
-              class="meet-our_experts__expert-linkedin_link"
-              href="https://www.linkedin.com/in/nakylai-taiirova-28bab859/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="meet-our_experts__expert-linkedin_icon"
-                loading="lazy"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
           </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/nakylai-taiirova-28bab859/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
         </div>
         <div
-          class="meet-our_experts__expert-item"
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
         >
           <picture>
             <source
@@ -2822,23 +2822,23 @@ exports[`Index page renders correctly 1`] = `
                 Head of HR Department
               </div>
             </div>
-             
-            <a
-              class="meet-our_experts__expert-linkedin_link"
-              href="https://www.linkedin.com/in/daria-utesheva-47804198/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="meet-our_experts__expert-linkedin_icon"
-                loading="lazy"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
           </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/daria-utesheva-47804198/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
         </div>
         <div
-          class="meet-our_experts__expert-item"
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
         >
           <picture>
             <source
@@ -2874,23 +2874,23 @@ exports[`Index page renders correctly 1`] = `
                 Senior Full-Stack Developer
               </div>
             </div>
-             
-            <a
-              class="meet-our_experts__expert-linkedin_link"
-              href="https://www.linkedin.com/in/nuradil-alymkulov/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="meet-our_experts__expert-linkedin_icon"
-                loading="lazy"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
           </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/nuradil-alymkulov/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
         </div>
         <div
-          class="meet-our_experts__expert-item"
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
         >
           <picture>
             <source
@@ -2926,23 +2926,23 @@ exports[`Index page renders correctly 1`] = `
                 Project Manager
               </div>
             </div>
-             
-            <a
-              class="meet-our_experts__expert-linkedin_link"
-              href="https://www.linkedin.com/in/alice-jang-b235b240/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="meet-our_experts__expert-linkedin_icon"
-                loading="lazy"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
           </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/alice-jang-b235b240/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
         </div>
         <div
-          class="meet-our_experts__expert-item"
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
         >
           <picture>
             <source
@@ -2978,486 +2978,22 @@ exports[`Index page renders correctly 1`] = `
                 Project Manager
               </div>
             </div>
-             
-            <a
-              class="meet-our_experts__expert-linkedin_link"
-              href="https://www.linkedin.com/in/earthurkg/"
-              target="blank"
-            >
-              <img
-                alt="Linkedin"
-                class="meet-our_experts__expert-linkedin_icon"
-                loading="lazy"
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-              />
-            </a>
           </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/earthurkg/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
         </div>
       </div>
-    </div>
-     
-    <div
-      class="experts-slider-wrapper"
-    >
-      <div
-        class="swiper-container swiper swiper-container-initialized swiper-container-horizontal"
-      >
-        <div
-          class="swiper-wrapper"
-          style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
-        >
-          <div
-            class="swiper-slide"
-          >
-            <div
-              class="mobile-expert-item"
-            >
-              <picture>
-                <source
-                  class="multi-image"
-                  srcset="[object Object] ,[object Object] 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Marat@2x"
-                  class="multi-image"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
-                />
-              </picture>
-               
-              <div
-                class="mobile-expert-bottom_content"
-              >
-                <div
-                  class="mobile-expert-info"
-                >
-                  <div
-                    class="mobile-expert-name"
-                  >
-                    Marat Bediev
-                  </div>
-                   
-                  <div
-                    class="mobile-expert-position"
-                  >
-                    Senior DevOps Engineer
-                  </div>
-                </div>
-                 
-                <a
-                  class="mobile-expert-linkedin_link"
-                  href="https://www.linkedin.com/in/marat-bediev-a973171b/"
-                  target="blank"
-                >
-                  <img
-                    alt="Linkedin"
-                    class="mobile-expert-linkedin_icon"
-                    src="../../assets/img/Home/svg/experts/linkedin.svg"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="swiper-slide"
-          >
-            <div
-              class="mobile-expert-item"
-            >
-              <picture>
-                <source
-                  class="multi-image"
-                  srcset="[object Object] ,[object Object] 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Tamara@2x"
-                  class="multi-image"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
-                />
-              </picture>
-               
-              <div
-                class="mobile-expert-bottom_content"
-              >
-                <div
-                  class="mobile-expert-info"
-                >
-                  <div
-                    class="mobile-expert-name"
-                  >
-                    Tamara Mun
-                  </div>
-                   
-                  <div
-                    class="mobile-expert-position"
-                  >
-                    Delivery Manager
-                  </div>
-                </div>
-                 
-                <a
-                  class="mobile-expert-linkedin_link"
-                  href="https://www.linkedin.com/in/tamara-mun/"
-                  target="blank"
-                >
-                  <img
-                    alt="Linkedin"
-                    class="mobile-expert-linkedin_icon"
-                    src="../../assets/img/Home/svg/experts/linkedin.svg"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="swiper-slide"
-          >
-            <div
-              class="mobile-expert-item"
-            >
-              <picture>
-                <source
-                  class="multi-image"
-                  srcset="[object Object] ,[object Object] 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Chuck@2x"
-                  class="multi-image"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
-                />
-              </picture>
-               
-              <div
-                class="mobile-expert-bottom_content"
-              >
-                <div
-                  class="mobile-expert-info"
-                >
-                  <div
-                    class="mobile-expert-name"
-                  >
-                    Andrew "Сhuck" Minkin
-                  </div>
-                   
-                  <div
-                    class="mobile-expert-position"
-                  >
-                    CTO, Co-Founder
-                  </div>
-                </div>
-                 
-                <a
-                  class="mobile-expert-linkedin_link"
-                  href="https://www.linkedin.com/in/andrew-minkin-700a2523/"
-                  target="blank"
-                >
-                  <img
-                    alt="Linkedin"
-                    class="mobile-expert-linkedin_icon"
-                    src="../../assets/img/Home/svg/experts/linkedin.svg"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="swiper-slide"
-          >
-            <div
-              class="mobile-expert-item"
-            >
-              <picture>
-                <source
-                  class="multi-image"
-                  srcset="[object Object] ,[object Object] 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Nakylai@2x"
-                  class="multi-image"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
-                />
-              </picture>
-               
-              <div
-                class="mobile-expert-bottom_content"
-              >
-                <div
-                  class="mobile-expert-info"
-                >
-                  <div
-                    class="mobile-expert-name"
-                  >
-                    Nakylai Taiirova
-                  </div>
-                   
-                  <div
-                    class="mobile-expert-position"
-                  >
-                    Senior Full-Stack Developer
-                  </div>
-                </div>
-                 
-                <a
-                  class="mobile-expert-linkedin_link"
-                  href="https://www.linkedin.com/in/nakylai-taiirova-28bab859/"
-                  target="blank"
-                >
-                  <img
-                    alt="Linkedin"
-                    class="mobile-expert-linkedin_icon"
-                    src="../../assets/img/Home/svg/experts/linkedin.svg"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="swiper-slide"
-          >
-            <div
-              class="mobile-expert-item"
-            >
-              <picture>
-                <source
-                  class="multi-image"
-                  srcset="[object Object] ,[object Object] 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Daria@2x"
-                  class="multi-image"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
-                />
-              </picture>
-               
-              <div
-                class="mobile-expert-bottom_content"
-              >
-                <div
-                  class="mobile-expert-info"
-                >
-                  <div
-                    class="mobile-expert-name"
-                  >
-                    Daria Utesheva
-                  </div>
-                   
-                  <div
-                    class="mobile-expert-position"
-                  >
-                    Head of HR Department
-                  </div>
-                </div>
-                 
-                <a
-                  class="mobile-expert-linkedin_link"
-                  href="https://www.linkedin.com/in/daria-utesheva-47804198/"
-                  target="blank"
-                >
-                  <img
-                    alt="Linkedin"
-                    class="mobile-expert-linkedin_icon"
-                    src="../../assets/img/Home/svg/experts/linkedin.svg"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="swiper-slide"
-          >
-            <div
-              class="mobile-expert-item"
-            >
-              <picture>
-                <source
-                  class="multi-image"
-                  srcset="[object Object] ,[object Object] 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Nuradil@2x"
-                  class="multi-image"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
-                />
-              </picture>
-               
-              <div
-                class="mobile-expert-bottom_content"
-              >
-                <div
-                  class="mobile-expert-info"
-                >
-                  <div
-                    class="mobile-expert-name"
-                  >
-                    Nuradil Alymkulov
-                  </div>
-                   
-                  <div
-                    class="mobile-expert-position"
-                  >
-                    Senior Full-Stack Developer
-                  </div>
-                </div>
-                 
-                <a
-                  class="mobile-expert-linkedin_link"
-                  href="https://www.linkedin.com/in/nuradil-alymkulov/"
-                  target="blank"
-                >
-                  <img
-                    alt="Linkedin"
-                    class="mobile-expert-linkedin_icon"
-                    src="../../assets/img/Home/svg/experts/linkedin.svg"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="swiper-slide"
-          >
-            <div
-              class="mobile-expert-item"
-            >
-              <picture>
-                <source
-                  class="multi-image"
-                  srcset="[object Object] ,[object Object] 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Alice@2x"
-                  class="multi-image"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
-                />
-              </picture>
-               
-              <div
-                class="mobile-expert-bottom_content"
-              >
-                <div
-                  class="mobile-expert-info"
-                >
-                  <div
-                    class="mobile-expert-name"
-                  >
-                    Alice Jang
-                  </div>
-                   
-                  <div
-                    class="mobile-expert-position"
-                  >
-                    Project Manager
-                  </div>
-                </div>
-                 
-                <a
-                  class="mobile-expert-linkedin_link"
-                  href="https://www.linkedin.com/in/alice-jang-b235b240/"
-                  target="blank"
-                >
-                  <img
-                    alt="Linkedin"
-                    class="mobile-expert-linkedin_icon"
-                    src="../../assets/img/Home/svg/experts/linkedin.svg"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="swiper-slide"
-          >
-            <div
-              class="mobile-expert-item"
-            >
-              <picture>
-                <source
-                  class="multi-image"
-                  srcset="[object Object] ,[object Object] 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Arthur@2x"
-                  class="multi-image"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
-                />
-              </picture>
-               
-              <div
-                class="mobile-expert-bottom_content"
-              >
-                <div
-                  class="mobile-expert-info"
-                >
-                  <div
-                    class="mobile-expert-name"
-                  >
-                    Arthur Elizavetenkov
-                  </div>
-                   
-                  <div
-                    class="mobile-expert-position"
-                  >
-                    Project Manager
-                  </div>
-                </div>
-                 
-                <a
-                  class="mobile-expert-linkedin_link"
-                  href="https://www.linkedin.com/in/earthurkg/"
-                  target="blank"
-                >
-                  <img
-                    alt="Linkedin"
-                    class="mobile-expert-linkedin_icon"
-                    src="../../assets/img/Home/svg/experts/linkedin.svg"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <span
-          aria-atomic="true"
-          aria-live="assertive"
-          class="swiper-notification"
-        />
-      </div>
-       
-      <div
-        class="swiper-pagination swiper-pagination--black"
-        slot="pagination"
-      />
     </div>
   </section>
 </main>
