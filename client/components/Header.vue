@@ -57,10 +57,10 @@ export default {
     return {
       buttonInnerText: 'Contact me',
       phones: [
-        // {
-        //   phoneNumber: '+1 833-MADDEVS',
-        //   country: 'united-states'
-        // },
+        {
+          phoneNumber: '+1 833-MADDEVS',
+          country: 'united-states'
+        },
         {
           phoneNumber: '+44 20 3984 8555',
           country: 'united-kingdom'
@@ -156,7 +156,7 @@ export default {
 
     &__contact-button {
       width: 132px;
-      height: 38px;
+      height: 39px;
       border-radius: 4px;
     }
 
@@ -202,10 +202,10 @@ export default {
     }
 
     &__phones-dropdown_wrap {
-      // min-width: 200px;
+      min-width: 200px;
       margin-left: 12px;
       margin-right: 88px;
-      // background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
+      background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
       background-position-y: 9px;
       background-position-x: 170px;
 
@@ -221,7 +221,7 @@ export default {
       display: none;
       position: absolute;
       margin-left: -10px;
-      padding: 0 10px 10px;
+      padding: 0 10px 2px;
       background-color: $bgcolor--black;
     }
 
@@ -263,6 +263,30 @@ export default {
     .container {
       height: 100vh;
       overflow: scroll;
+    }
+  }
+
+  @media only screen and (max-width: 1366px) {
+    .header {
+      &__phones-dropdown_wrap {
+        margin-right: 63px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .header {
+      &__phones-dropdown_wrap {
+        margin-right: 33px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1180px) {
+    .header {
+      &__phones-dropdown_wrap {
+        margin-right: 0;
+      }
     }
   }
 
