@@ -1,61 +1,39 @@
 <template>
   <div class="header-wrapper">
     <header ref="header" class="header">
-      <div class="container">
-        <div class="header__header-content_wrap">
-          <div class="header__left-nav_bar">
-            <router-link :to="`/`" class="header__logo-icon">
-              <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
-            </router-link>
-            <nav class="header__header-routes_links">
-              <router-link @click.native="goToTopPage" exact to="/">About</router-link>
-              <router-link @click.native="goToTopPage" to="/services">Services</router-link>
-              <router-link @click.native="goToTopPage" to="/projects">Projects</router-link>
-              <router-link @click.native="goToTopPage" to="/careers">Careers</router-link>
-              <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
-            </nav>
-          </div>
-          <div class="header__right-content">
-            <div class="header__right-text_content">
-              <div class="header__soc-links_wrap">
-                <a
-                  href="https://twitter.com/maddevsio"
-                  target="_blank"
-                  class="header-social-logo header-social-logo--twitter header__soc-link"/>
-                <a
-                  href="https://ru.linkedin.com/company/mad-devs"
-                  target="_blank"
-                  class="header-social-logo header-social-logo--linkedin header__soc-link"/>
-                <a
-                  href="https://www.facebook.com/maddevsllc"
-                  target="_blank"
-                  class="header-social-logo header-social-logo--facebook header__soc-link"/>
-              </div>
-
-
-              <div class="header__phones-dropdown_wrap" :id="selectedPhone.country">
-                <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
-                  <span :class="`header__flag header__flag--${selectedPhone.country}`" />
-                  {{ selectedPhone.phoneNumber }}
-                  <i class="header__phones-dropdown_arrow"/>
-                </a>
-                <div class="header__phones-list">
-                  <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone" v-show="phone != selectedPhone">
-                    <span :class="`header__flag header__flag--${phone.country}`" />
-                    {{ phone.phoneNumber }}
-                  </a>
-                </div>
-              </div>
-
-
-              <a href="mailto:team@maddevs.io" class="header__mailto-link">team@maddevs.io</a>
+      <div class="container row">
+        <div class="header__left-nav_bar col-xl-6 col-lg-6">
+          <router-link :to="`/`" class="header__logo-icon">
+            <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
+          </router-link>
+          <nav class="header__header-routes_links">
+            <router-link @click.native="goToTopPage" exact to="/" class="header__navigation-link">About</router-link>
+            <router-link @click.native="goToTopPage" to="/services" class="header__navigation-link">Services</router-link>
+            <router-link @click.native="goToTopPage" to="/projects" class="header__navigation-link">Projects</router-link>
+            <router-link @click.native="goToTopPage" to="/careers" class="header__navigation-link">Careers</router-link>
+            <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer" class="header__navigation-link">Blog</a>
+          </nav>
+        </div>
+        <div class="header__right-content col-xl-6 col-lg-6">
+          <div class="header__phones-dropdown_wrap" :id="selectedPhone.country">
+            <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
+              <span :class="`header__flag header__flag--${selectedPhone.country}`" />
+              {{ selectedPhone.phoneNumber }}
+              <i class="header__phones-dropdown_arrow"/>
+            </a>
+            <div class="header__phones-list">
+              <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone" v-show="phone != selectedPhone">
+                <span :class="`header__flag header__flag--${phone.country}`" />
+                {{ phone.phoneNumber }}
+              </a>
             </div>
-            <UIButtonModalTrigger
-              :buttonInnerText="buttonInnerText"
-              :modalWindowName="modalWindowName"
-              :isRed="true"
-            />
           </div>
+          <UIButtonModalTrigger
+            :buttonInnerText="buttonInnerText"
+            :modalWindowName="modalWindowName"
+            :isRed="true"
+            class="header__contact-button"
+          />
         </div>
       </div>
     </header>
@@ -135,25 +113,24 @@ export default {
     padding: 11px 0;
     position: fixed;
     z-index: 2;
-    background-color: #000;
+    background-color: $bgcolor--black;
 
-    &-social-logo {
-      width: 22px;
-      height: 22px;
-      display: inline-block;
-      background-repeat: no-repeat;
-      background-size: contain;
-      overflow: hidden;
-      &--facebook {
-        background-image: url(../assets/img/common/facebook-icon.svg);
-      }
-      &--twitter {
-        background-image: url(../assets/img/common/twitter-icon.svg);
-      }
-      &--linkedin {
-        background-image: url(../assets/img/common/lindekin-icon.svg);
-      }
+    &__header-logo {
+      width: 34px;
+      height: 58px;
+      margin: 5px -33px 0 -65px;
     }
+
+    &__left-nav_bar,
+    &__right-content {
+      display: flex;
+      align-items: center;
+    }
+
+    &__right-content {
+      justify-content: flex-end;
+    }
+
     &__flag {
       height: 14px;
       width: 18px;
@@ -161,83 +138,73 @@ export default {
       margin-right: 10px;
       background-size: contain;
       display: inline-block;
+
       &--united-states {
         background-image: url(../assets/img/Flags/united-states.svg);
       }
+
       &--united-kingdom {
         background-image: url(../assets/img/Flags/united-kingdom.svg);
       }
     }
 
-    button {
-      width: 135px;
-      height: 38px;
-      margin-right: -96px;
-    }
-
-    &__header-logo {
-      width: 40px;
-      height: 70px;
-    }
-
-    &__header-content_wrap {
-      height: max-content;
-      display: flex;
-      justify-content: space-between;
-    }
-
+    &__phones-dropdown_wrap,
+    &__contact-button,
     &__header-routes_links {
-      position: relative;
-      padding-top: 9px;
-      padding-left: 55px;
+      margin-bottom: 29px;
+    }
 
-      a {
-        color: $text-color--grey;
-        text-decoration: none;
-        margin-right: 16px;
+    &__contact-button {
+      width: 132px;
+      height: 38px;
+      border-radius: 4px;
+    }
+
+    &__navigation-link,
+    &__selected-phone,
+    &__phone-item {
+      color: $text-color--light-white;
+    }
+
+    &__navigation-link,
+    &__selected-phone,
+    &__phone-item,
+    &__contact-button {
+      font-size: 16px;
+      font-family: 'Poppins-Regular';
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    &__navigation-link {
+      margin-right: 10px;
+
+      &::after {
+        content: '↓';
         font-size: 17px;
         font-family: 'Hoves-Regular';
-
-        &::after {
-          content: '↓';
-          color: transparent;
-        }
-
-        &:last-child {
-          &::after {
-            content: '';
-          }
-        }
+        color: transparent;
       }
 
-      .nuxt-link-active {
+      &:last-child {
+        &::after {
+          content: '';
+        }
+      }
+    }
+
+    .nuxt-link-active {
+      color: $text-color--red;
+
+      &::after {
         color: $text-color--red;
-
-        &::after {
-          color: $text-color--red;
-        }
       }
-    }
-
-    &__left-nav_bar,
-    &__right-content,
-    &__right-text_content {
-      display: flex;
-    }
-
-    &__right-text_content {
-      display: flex;
-      padding-top: 9px;
-    }
-
-    &__soc-link {
-      padding-right: 5px;
     }
 
     &__phones-dropdown_wrap {
       // min-width: 200px;
-      padding-top: 1px;
-      padding-left: 12px;
+      margin-left: 12px;
+      margin-right: 88px;
       // background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
       background-position-y: 9px;
       background-position-x: 170px;
@@ -255,17 +222,7 @@ export default {
       position: absolute;
       margin-left: -10px;
       padding: 0 10px 10px;
-      background-color: #000;
-    }
-
-    &__mailto-link,
-    &__selected-phone,
-    &__phone-item {
-      padding-right: 26px;
-      color: $text-color--grey;
-      font-size: 17px;
-      font-family: 'Hoves-Regular';
-      text-decoration: none;
+      background-color: $bgcolor--black;
     }
 
     &__selected-phone,
@@ -294,10 +251,6 @@ export default {
         top: 20px;
       }
     }
-
-    &__logo-icon {
-      margin-left: -96px;
-    }
   }
 
   .mobile-menu_is-open {
@@ -310,107 +263,6 @@ export default {
     .container {
       height: 100vh;
       overflow: scroll;
-    }
-  }
-
-  @media only screen and (max-width: 1590px) {
-    .header {
-      &__logo-icon {
-        margin-left: -80px;
-      }
-
-      button {
-        margin-right: -80px;
-      }
-
-      &__header-routes_links {
-        padding-left: 33px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1320px) {
-    .header {
-      &__header-routes_links {
-        padding-left: 25px;
-      }
-
-      &__mailto-link,
-      &__selected-phone,
-      &__phone-item {
-        padding-right: 15px;
-      }
-
-      &__routes_links {
-        a {
-          margin-right: 0;
-        }
-      }
-
-      &__logo-icon {
-        margin-left: -68px;
-      }
-
-      button {
-        margin-right: -68px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1240px) {
-    .header {
-      &__header-routes_links {
-        padding-top: 10px;
-
-        a {
-          margin-right: 5px;
-        }
-      }
-
-       &__selected-phone {
-        img {
-          top: 2px;
-        }
-      }
-
-      &__phone-item {
-        img {
-          top: 19px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1140px) {
-    .header {
-      &__logo-icon {
-        margin-left: -80px;
-      }
-
-      button {
-        margin-right: -80px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1120px) {
-    .header {
-      &__mailto-link,
-      &__selected-phone,
-      &__phone-item,
-      &__soc-links_wrap {
-        padding-right: 5px;
-      }
-
-      &__header-routes_links {
-        a {
-          margin-right: 0;
-        }
-      }
-
-      &__mailto-link {
-        padding-top: 1px;
-      }
     }
   }
 

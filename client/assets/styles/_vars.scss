@@ -1,6 +1,6 @@
 // ---------- Background  ------------ //
 $bgcolor--white: #fff;
-$bgcolor--black: #000;
+$bgcolor--black: #111213;
 $bgcolor--grey: #96969C;
 $bgcolor--grey-light: #f2f2f2;
 $bgcolor--grey-dark: #f4f5f7;
@@ -14,7 +14,9 @@ $bgcolor--black-light: #ffffff1a;
 // ---------- Text ------------ //
 $text-color--white: #fff;
 $text-color--white-darken: #fcfcfd;
+$text-color--light-white: #f5f7f9;
 $text-color--black: #000;
+$text-color--black-lighter: #111213;
 $text-color--grey: #96969c;
 $text-color--grey-light: #f2f2f2;
 $text-color--red: #ec1c24;
@@ -82,4 +84,3 @@ $modal-entry-field-bg: #403838;
 $label-text--grey-dark: rgba(150, 150, 156, 0.7);
 $slider-dots-bg-color-white: #eff3f6;
 $slider-dots-bg-color-black: #000;
-$section-title-white: #f5f7f9;

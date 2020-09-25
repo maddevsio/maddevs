@@ -149,7 +149,7 @@ export default {
     color: $text-color--red;
 
     span {
-      color: $text-color--black;
+      color: $text-color--black-lighter;
       -webkit-text-stroke: $text-stroke--red;
     }
   }
