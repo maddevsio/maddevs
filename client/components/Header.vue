@@ -32,7 +32,6 @@
             :buttonInnerText="buttonInnerText"
             :modalWindowName="modalWindowName"
             :isRed="true"
-            class="header__contact-button"
           />
         </div>
       </div>
@@ -149,12 +148,12 @@ export default {
     }
 
     &__phones-dropdown_wrap,
-    &__contact-button,
-    &__header-routes_links {
+    &__header-routes_links,
+    button {
       margin-bottom: 29px;
     }
 
-    &__contact-button {
+    button {
       width: 132px;
       height: 39px;
       border-radius: 4px;
@@ -169,7 +168,7 @@ export default {
     &__navigation-link,
     &__selected-phone,
     &__phone-item,
-    &__contact-button {
+    button {
       font-size: 16px;
       font-family: 'Poppins-Regular';
       text-decoration: none;
