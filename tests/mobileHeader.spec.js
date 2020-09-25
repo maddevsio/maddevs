@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import mobileHeader from '@/components/ui/mobile-header';
+import mobileHeader from '@/components/Header/mobile-header';
 
 describe('Mobile Header', () => {
   let wrapper;

@@ -173,7 +173,7 @@ export default {
     top: 0;
     left: 0;
     z-index: 999;
-		background: #000;
+		background: $bgcolor--black;
 
 		.mobile-header__scrollbar {
 			height: calc(100vh - 100px);

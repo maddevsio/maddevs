@@ -66,7 +66,7 @@ export default {
 		padding-bottom: 59px;
 
 		&__title {
-		  color: $section-title-white;
+		  color: $text-color--light-white;
 		}
 
 		&__text-content {
