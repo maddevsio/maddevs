@@ -2,7 +2,7 @@
   <section id="meet-our-experts" class="meet-our_experts">
     <div class="container">
       <div class="meet-our_experts__main-title_wrap">
-        <h2 class="meet-our_experts__main-title">Meet our experts</h2>
+        <h2 class="meet-our_experts__main-title title-md">Meet our experts</h2>
       </div>
       <div class="meet-our_experts__experts-list row">
         <div class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6" v-for="(expert, i) in experts" :key="i">
@@ -100,11 +100,8 @@ export default {
 
     &__main-title {
       margin-bottom: 10px;
-      font-size: 40px;
-      font-family: 'Poppins-Bold';
       color: $text-color--black-lighter;
       text-align: center;
-      letter-spacing: -1px;
     }
 
     &__expert-item {
@@ -211,14 +208,6 @@ export default {
       &__expert-name,
       &__expert-position {
         font-size: 9px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .meet-our_experts {
-      &__main-title {
-        font-size: 36px;
       }
     }
   }

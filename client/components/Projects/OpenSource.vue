@@ -6,7 +6,7 @@
           Our code - available in open source - is used by many other companies.
         </h3>
         <div class="open-source__github-wrap">
-          <h4 class="open-source__sub-title sub-title">
+          <h4 class="open-source__sub-title title-md">
             70+ of Mad Devs' pet projects have been shared with the community
             via GitHub.
           </h4>

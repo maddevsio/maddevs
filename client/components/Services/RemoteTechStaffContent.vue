@@ -4,7 +4,7 @@
       <div class="remote-tech-staff-content__content-wrap">
         <div class="remote-tech-staff-content__title-wrap">
           <h3 class="remote-tech-staff-content__title title default-title">{{ title }}</h3>
-          <h4 class="remote-tech-staff-content__sub-title sub-title">{{ subTitle }}</h4>
+          <h4 class="remote-tech-staff-content__sub-title title-md">{{ subTitle }}</h4>
         </div>
         <img 
           class="remote-tech-staff-content__content-icon" 

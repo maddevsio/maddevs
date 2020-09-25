@@ -1,7 +1,7 @@
 <template>
   <div class="infrastructure-optimisation__content-item">
     <h3 class="infrastructure-optimisation__title title">{{ title }}</h3>
-    <h4 class="infrastructure-optimisation__sub-title sub-title">{{ subTitle }}</h4>
+    <h4 class="infrastructure-optimisation__sub-title title-md">{{ subTitle }}</h4>
     <p class="infrastructure-optimisation__paragraph paragraph">{{ paragraph }}</p>
   </div>
 </template>
