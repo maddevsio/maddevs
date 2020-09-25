@@ -12,29 +12,26 @@
               <div class="meet-our_experts__expert-name">{{ expert.name }}</div>
               <div class="meet-our_experts__expert-position">{{ expert.position }}</div>
             </div>
-            <a :href="expert.linkedin" class="meet-our_experts__expert-linkedin_link" target="blank">
-              <img
-                src="../../assets/img/Home/svg/experts/linkedin.svg"
-                class="meet-our_experts__expert-linkedin_icon"
-                loading="lazy"
-                alt="Linkedin">
-            </a>
           </div>
+          <a :href="expert.linkedin" class="meet-our_experts__expert-linkedin_link" target="blank">
+            <img
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              alt="Linkedin">
+          </a>
         </div>
       </div>
     </div>
-    <MeetOurExpertsMobile :experts="experts" />
   </section>
 </template>
 
 <script>
-import MeetOurExpertsMobile from '@/components/About/MeetOurExpertsMobile';
 import ImageComponent from '@/components/ui/image-component';
 
 export default {
   name: 'MeetOurExperts',
   components: {
-    MeetOurExpertsMobile,
     ImageComponent
   },
   data() {
@@ -53,7 +50,7 @@ export default {
           linkedin: 'https://www.linkedin.com/in/tamara-mun/'
         },
         {
-          name: 'Andrew "Сhuck" Minkin',
+          name: 'Andrew "Chuck" Minkin',
           position: 'CTO, Co-Founder',
           image: 'Chuck',
           linkedin: 'https://www.linkedin.com/in/andrew-minkin-700a2523/'
@@ -98,7 +95,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .meet-our_experts {
-    padding-bottom: 186px;
+    padding-bottom: 100px;
     background-color: $bgcolor--white;
 
     &__main-title {
@@ -107,34 +104,18 @@ export default {
 
     &__experts-list {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, minmax(140px, 295px));
+      grid-gap: 20px;
     }
 
     &__expert-item {
-      width: 100%;
       height: 100%;
+      max-height: 394px;
+      max-width: 295px;
       position: relative;
-
-      &:hover {
-        z-index: 2;
-        box-shadow: 0px 0px 0px 3px $border-color--red;
-
-        .meet-our_experts__expert-name,
-        .meet-our_experts__expert-position {
-          color: $text-color--white;
-          background-color: $bgcolor--red;
-        }
-      }
     }
 
-    /deep/.mobile-expert-item {
-      &:hover {
-        box-shadow: none;
-      }
-    }
-
-    &__expert-bottom_content,
-    /deep/.mobile-expert-bottom_content {
+    &__expert-bottom_content {
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -143,111 +124,105 @@ export default {
       bottom: 18px;
     }
 
-    &__expert-info,
-    /deep/.mobile-expert-info {
-      padding-left: 18px;
+    &__expert-info {
+      margin-left: 18px;
     }
 
-    &__expert-linkedin_link,
-    /deep/.mobile-expert-linkedin_link {
-      padding-right: 18px;
-    }
-
-    &__expert-linkedin_icon,
-    /deep/.mobile-expert-linkedin_icon {
-      margin-bottom: -4px;
+    &__expert-linkedin_link {
+      position: absolute;
+      right: 20px;
+      bottom: 15px;
     }
 
     &__expert-name,
-    &__expert-position,
-    /deep/.mobile-expert-name,
-    /deep/.mobile-expert-position {
+    &__expert-position {
       width: max-content;
-      padding: 3px 6px;
-      background-color: $bgcolor--grey-light;
+      padding: 3px 8px;
+      background-color: $bgcolor--white-darken;
+      letter-spacing: -0.02em;
     }
 
-    &__expert-name,
-    /deep/.mobile-expert-name {
-      font-size: 22px;
-      font-family: 'Hoves-Bold';
-      letter-spacing: -1px;
+    &__expert-name {
+      font-size: 17px;
+      font-family: 'Poppins-Bold';
     }
 
-    &__expert-position,
-    /deep/.mobile-expert-position {
-      font-size: 18px;
-      font-family: 'Hoves-Regular';
-      letter-spacing: -0.3px;
+    &__expert-position {
+      font-size: 14px;
+      font-family: 'Poppins-Regular';
+    }
+
+    &__expert-linkedin_icon {
+      width: 24px;
+      height: 24px;
     }
   }
 
-  @media only screen and (max-width: 1340px) {
+  @media only screen and (max-width: 1290px) {
     .meet-our_experts {
-      &__expert-name {
-        font-size: 18px;
-        letter-spacing: -0.03em;
-      }
-
-      &__expert-position {
-        font-size: 14px;
+      &__expert-linkedin_link {
+        top: 20px;
       }
     }
   }
 
   @media only screen and (max-width: 1220px) {
     .meet-our_experts {
-      &__expert-name {
-        font-size: 16px;
-      }
-
+      &__expert-name,
       &__expert-position {
-        font-size: 12px;
+        padding: 3px 4px;
       }
-    }
-  }
 
-  @media only screen and (max-width: 1180px) {
-    .meet-our_experts {
       &__expert-name {
         font-size: 13px;
-      }
-
-      &__expert-position {
-        font-size: 11px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1080px) {
-    .meet-our_experts {
-      &__expert-name {
-        font-size: 12px;
+        font-weight: 600;
+        font-family: 'Poppins-Regular';
       }
 
       &__expert-position {
         font-size: 10px;
       }
-    }
-  }
 
-  @media only screen and (max-width: 1000px) {
-    .meet-our_experts {
-      &__experts-list {
-        display: none;
+      &__expert-info {
+        margin-left: 12px;
       }
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .meet-our_experts {
-      padding-bottom: 120px;
-    }
-  }
+      padding-bottom: 76px;
 
-  @media only screen and (max-width: 576px) {
-    .meet-our_experts {
-      padding-bottom: 90px;
+      &__expert-bottom_content {
+        bottom: 10px;
+      }
+
+      &__expert-name,
+      &__expert-position {
+        background-color: $bgcolor--light-white;
+      }
+
+      &__expert-item {
+        max-height: 187px;
+      }
+
+      &__expert-linkedin_icon {
+        width: 15px;
+        height: 15px;
+      }
+
+      &__expert-linkedin_link {
+        top: 11px;
+        right: 11px;
+      }
+
+      &__expert-name {
+        font-size: 9px;
+      }
+
+      &__expert-position {
+        font-size: 9px;
+      }
     }
   }
 </style>
