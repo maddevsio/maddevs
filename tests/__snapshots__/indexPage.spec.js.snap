@@ -98,197 +98,183 @@ exports[`Index page renders correctly 1`] = `
     <div
       class="container"
     >
-      <h2
-        class="we-create-it-project__main-title main-title"
-      >
-        
-      We create 
-        <br />
-         IT projects for:
-    
-      </h2>
-       
       <div
-        class="we-create-it-project__content-wrap"
+        class="we-create-it-project__content-wrapper"
       >
-        <ul
-          class="we-create-it-project__projects-type_list"
+        <h2
+          class="we-create-it-project__title title-md"
         >
-          <li
-            class="we-create-it-project__project-item"
-          >
-            E-learning
-          </li>
-           
-          <li
-            class="we-create-it-project__project-item"
-          >
-            FinTech
-          </li>
-           
-          <li
-            class="we-create-it-project__project-item"
-          >
-            HealthTech
-          </li>
-           
-          <li
-            class="we-create-it-project__project-item"
-          >
-            E-commerce
-          </li>
-           
-          <li
-            class="we-create-it-project__project-item"
-          >
-            AdTech
-          </li>
-           
-          <li
-            class="we-create-it-project__project-item"
-          >
-            Transportation
-          </li>
-        </ul>
+          
+        We create 
+          <br />
+           IT projects for:
+      
+        </h2>
          
         <div
-          class="we-create-it-project__country-list_wrap"
+          class="we-create-it-project__projects-type_list row gy-0"
         >
           <div
-            class="we-create-it-project__country-list_title"
+            class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
-            We work with
-          
-            <br />
-             customers in:
-        
+            <div
+              class="we-create-it-project__paragraph paragraph-lg"
+            >
+              Content Streaming 
+              <br />
+               Transportation
+            </div>
           </div>
            
-          <ul
-            class="we-create-it-project__country-list"
+          <div
+            class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
-            <li
-              class="we-create-it-project__country-item"
+            <div
+              class="we-create-it-project__paragraph paragraph-lg"
             >
-              <span
-                class="we-create-it-project__logo-country we-create-it-project__logo-country--united-states"
-              />
-              
-            USA
-          
-            </li>
-            <li
-              class="we-create-it-project__country-item"
+              HealthTech 
+              <br />
+               IoTs
+            </div>
+          </div>
+           
+          <div
+            class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          >
+            <div
+              class="we-create-it-project__paragraph paragraph-lg"
             >
-              <span
-                class="we-create-it-project__logo-country we-create-it-project__logo-country--australia"
-              />
-              
-            Australia
-          
-            </li>
-            <li
-              class="we-create-it-project__country-item"
+              E-Commerce 
+              <br />
+               AdTech
+            </div>
+          </div>
+           
+          <div
+            class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          >
+            <div
+              class="we-create-it-project__paragraph paragraph-lg"
             >
-              <span
-                class="we-create-it-project__logo-country we-create-it-project__logo-country--united-kingdom"
-              />
-              
-            UK
-          
-            </li>
-            <li
-              class="we-create-it-project__country-item"
+              E-Learning 
+              <br />
+               FinTech
+            </div>
+          </div>
+           
+          <div
+            class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          >
+            <div
+              class="we-create-it-project__paragraph paragraph-lg"
             >
-              <span
-                class="we-create-it-project__logo-country we-create-it-project__logo-country--poland"
-              />
-              
-            Poland
-          
-            </li>
-            <li
-              class="we-create-it-project__country-item"
+              Serverless 
+              <br />
+               BYOD
+            </div>
+          </div>
+           
+          <div
+            class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          >
+            <div
+              class="we-create-it-project__paragraph paragraph-lg"
             >
-              <span
-                class="we-create-it-project__logo-country we-create-it-project__logo-country--austria"
-              />
-              
-            Austria
-          
-            </li>
-            <li
-              class="we-create-it-project__country-item"
-            >
-              <span
-                class="we-create-it-project__logo-country we-create-it-project__logo-country--france"
-              />
-              
-            France
-          
-            </li>
-            <li
-              class="we-create-it-project__country-item"
-            >
-              <span
-                class="we-create-it-project__logo-country we-create-it-project__logo-country--switzerland"
-              />
-              
-            Switzerland
-          
-            </li>
-            <li
-              class="we-create-it-project__country-item"
-            >
-              <span
-                class="we-create-it-project__logo-country we-create-it-project__logo-country--belarus"
-              />
-              
-            Belarus
-          
-            </li>
-            <li
-              class="we-create-it-project__country-item"
-            >
-              <span
-                class="we-create-it-project__logo-country we-create-it-project__logo-country--vietnam"
-              />
-              
-            Vietnam
-          
-            </li>
-            <li
-              class="we-create-it-project__country-item"
-            >
-              <span
-                class="we-create-it-project__logo-country we-create-it-project__logo-country--kazakhstan"
-              />
-              
-            Kazakhstan
-          
-            </li>
-            <li
-              class="we-create-it-project__country-item"
-            >
-              <span
-                class="we-create-it-project__logo-country we-create-it-project__logo-country--russia"
-              />
-              
-            Russia
-          
-            </li>
-            <li
-              class="we-create-it-project__country-item"
-            >
-              <span
-                class="we-create-it-project__logo-country we-create-it-project__logo-country--singapore"
-              />
-              
-            Singapore
-          
-            </li>
-          </ul>
+              Blockchain 
+              <br />
+               FoodTech
+            </div>
+          </div>
         </div>
+         
+        <ul
+          class="we-create-it-project__country-list row"
+        >
+          <li
+            class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+          >
+            <span
+              class="we-create-it-project__logo-country we-create-it-project__logo-country--united-states"
+            />
+          </li>
+          <li
+            class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+          >
+            <span
+              class="we-create-it-project__logo-country we-create-it-project__logo-country--australia"
+            />
+          </li>
+          <li
+            class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+          >
+            <span
+              class="we-create-it-project__logo-country we-create-it-project__logo-country--united-kingdom"
+            />
+          </li>
+          <li
+            class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+          >
+            <span
+              class="we-create-it-project__logo-country we-create-it-project__logo-country--poland"
+            />
+          </li>
+          <li
+            class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+          >
+            <span
+              class="we-create-it-project__logo-country we-create-it-project__logo-country--austria"
+            />
+          </li>
+          <li
+            class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+          >
+            <span
+              class="we-create-it-project__logo-country we-create-it-project__logo-country--france"
+            />
+          </li>
+          <li
+            class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+          >
+            <span
+              class="we-create-it-project__logo-country we-create-it-project__logo-country--switzerland"
+            />
+          </li>
+          <li
+            class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+          >
+            <span
+              class="we-create-it-project__logo-country we-create-it-project__logo-country--belarus"
+            />
+          </li>
+          <li
+            class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+          >
+            <span
+              class="we-create-it-project__logo-country we-create-it-project__logo-country--vietnam"
+            />
+          </li>
+          <li
+            class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+          >
+            <span
+              class="we-create-it-project__logo-country we-create-it-project__logo-country--kazakhstan"
+            />
+          </li>
+          <li
+            class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+          >
+            <span
+              class="we-create-it-project__logo-country we-create-it-project__logo-country--russia"
+            />
+          </li>
+          <li
+            class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+          >
+            <span
+              class="we-create-it-project__logo-country we-create-it-project__logo-country--singapore"
+            />
+          </li>
+        </ul>
       </div>
     </div>
   </section>

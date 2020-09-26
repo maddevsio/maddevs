@@ -1,29 +1,35 @@
 <template>
   <section id="we-create-it-project" class="we-create-it-project">
     <div class="container">
-      <h2 class="we-create-it-project__main-title main-title">
-        We create <br> IT projects for:
-      </h2>
-      <div class="we-create-it-project__content-wrap">
-        <ul class="we-create-it-project__projects-type_list">
-          <li class="we-create-it-project__project-item">E-learning</li>
-          <li class="we-create-it-project__project-item">FinTech</li>
-          <li class="we-create-it-project__project-item">HealthTech</li>
-          <li class="we-create-it-project__project-item">E-commerce</li>
-          <li class="we-create-it-project__project-item">AdTech</li>
-          <li class="we-create-it-project__project-item">Transportation</li>
-        </ul>
-        <div class="we-create-it-project__country-list_wrap">
-          <div class="we-create-it-project__country-list_title">We work with
-            <br> customers in:
+      <div class="we-create-it-project__content-wrapper">
+        <h2 class="we-create-it-project__title title-md">
+          We create <br> IT projects for:
+        </h2>
+        <div class="we-create-it-project__projects-type_list row gy-0">
+          <div class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <div class="we-create-it-project__paragraph paragraph-lg">Content Streaming <br> Transportation</div>
           </div>
-          <ul class="we-create-it-project__country-list">
-            <li v-for="(country, i) in countries" :key="i" class="we-create-it-project__country-item">
-              <span :class="`we-create-it-project__logo-country we-create-it-project__logo-country--${country.iconName}`"/>
-              {{ country.countryName }}
-            </li>
-          </ul>
+          <div class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <div class="we-create-it-project__paragraph paragraph-lg">HealthTech <br> IoTs</div>
+          </div>
+          <div class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <div class="we-create-it-project__paragraph paragraph-lg">E-Commerce <br> AdTech</div>
+          </div>
+          <div class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <div class="we-create-it-project__paragraph paragraph-lg">E-Learning <br> FinTech</div>
+          </div>
+          <div class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <div class="we-create-it-project__paragraph paragraph-lg">Serverless <br> BYOD</div>
+          </div>
+          <div class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <div class="we-create-it-project__paragraph paragraph-lg">Blockchain <br> FoodTech</div>
+          </div>
         </div>
+        <ul class="we-create-it-project__country-list row">
+          <li v-for="(country, i) in countries" :key="i" class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2">
+            <span :class="`we-create-it-project__logo-country we-create-it-project__logo-country--${country.iconName}`"/>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -94,29 +100,35 @@ export default {
   @import '../../assets/styles/vars';
 
   .we-create-it-project {
-    padding-top: 195px;
-    padding-bottom: 214px;
+    margin: 134px 0;
 
-    &__content-wrap {
-      display: flex;
-      align-items: flex-end;
+    &__content-wrapper {
+      padding: 51px 80px 73px;
+      text-align: center;
+      background-color: $bgcolor--light-white;
     }
 
-    &__main-title {
-      color: $text-color--red;
-      padding-bottom: 80px;
+    &__title {
+      margin-bottom: 24px;
+
+      br {
+        display: none;
+      }
     }
 
     &__projects-type_list {
-      padding-right: 60px;
-      width: 49%;
+      margin: 0 0 45px;
+    }
+
+    &__project-item {
+      padding: 0;
     }
 
     &__logo-country {
-      height: 20px;
+      display: block;
       width: 28px;
+      height: 20px;
       background-repeat: no-repeat;
-      margin: 0 10px 0 0;
       background-size: contain;
 
       &--united-kingdom {
@@ -167,246 +179,57 @@ export default {
         background-image: url(../../assets/img/Flags/kazakhstan.svg);
       }
     }
-
-    &__country-list_wrap {
-      max-width: 770px;
-
-      button {
-        width: 100%;
-        margin-bottom: 15px;
-      }
-    }
-
-    &__country-list_title {
-      padding-bottom: 30px;
-      color: $text-color--grey;
-      font-size: 50px;
-      letter-spacing: -2px;
-      max-width: 547px;
-
-      br {
-        display: none;
-      }
-    }
-
-    &__country-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 83px;
-      grid-row-gap: 15px;
-    }
-
-    &__country-item {
-      display: flex;
-      color: $text-color--grey;
-      font-size: 32px;
-      letter-spacing: -1px;
-
-      img {
-        padding-right: 10px;
-      }
-    }
-
-    &__project-item,
-    &__country-list_title,
-    &__country-item {
-      font-family: 'Hoves-Bold';
-    }
-
-    &__country-item {
-      display: flex;
-      align-items: center;
-    }
-
-    &__project-item {
-      color: $text-color--white;
-      font-size: 70px;
-      letter-spacing: -2px;
-    }
   }
 
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 1366px) {
     .we-create-it-project {
-      padding-top: 135px;
-
-      &__main-title {
-        padding-bottom: 60px;
-      }
-
-      &__country-list_wrap {
-        max-width: 680px;
-      }
-
-      &__project-item {
-        font-size: 64px;
-      }
-
-      &__country-list_title {
-        padding-bottom: 25px;
-      }
-
-      &__country-item {
-        font-size: 25px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1300px) {
-    .we-create-it-project {
-      padding-top: 200px;
-      padding-bottom: 195px;
-
-      &__country-list_wrap {
-        max-width: 625px;
-      }
-
-      &__country-list_title {
-        font-size: 36px;
-        padding-bottom: 13px;
-      }
-
-      &__country-list {
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 155px;
-        grid-row-gap: 8px;
-      }
-
-      &__project-item {
-        font-size: 54px;
-        padding-bottom: 13px;
-
-        &:last-child {
-          padding-bottom: 0;
-        }
+      &__content-wrapper {
+        padding-left: 70px;
+        padding-right: 70px;
       }
     }
   }
 
   @media only screen and (max-width: 1024px) {
     .we-create-it-project {
-      padding-top: 100px;
-      padding-bottom: 141px;
+      margin-top: 75px;
+      margin-bottom: 64px;
 
-      &__country-list_wrap {
-        button {
-          height: 44px;
-        }
-      }
-
-      &__project-item {
-        font-size: 47px;
-        padding-bottom: 8px;
-      }
-
-      &__country-list_title {
-        font-size: 34px;
-      }
-
-      &__country-list {
-        grid-column-gap: 86px;
+      &__logo-country {
+        width: 21px;
+        height: 15px;
       }
     }
   }
 
-  @media only screen and (max-width: 890px) {
+  @media only screen and (max-width: 768px) {
     .we-create-it-project {
-      padding-top: 56px;
-
-      &__main-title {
-        font-size: 64px;
-        padding-bottom: 35px;
-        letter-spacing: -0.03em;
+      &__projects-type_list {
+        margin-bottom: 40px;
       }
 
-      &__country-list_title {
+      &__content-wrapper {
+        padding: 33px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+    .we-create-it-project {
+      margin-top: 34px;
+      margin-bottom: 45px;
+      background-color: $bgcolor--light-white;
+
+      &__content-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+      }
+
+      &__title {
         br {
           display: block;
         }
-      }
-
-      &__country-list {
-        grid-column-gap: 57px;
-        grid-row-gap: 6px;
-      }
-
-      &__project-item {
-        font-size: 44px;
-        padding-bottom: 11px;
-      }
-
-      &__country-item {
-        font-size: 18px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 745px) {
-    .we-create-it-project {
-      padding-top: 73px;
-      padding-bottom: 60px;
-
-      &__content-wrap {
-        flex-direction: column;
-        justify-content: initial;
-        align-items: initial;
-      }
-
-      &__country-list_title {
-        br {
-          display: none;
-        }
-      }
-
-      &__country-list {
-        grid-column-gap: 20px;
-      }
-
-      &__projects-type_list {
-        padding-bottom: 50px;
-        width: 100%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 520px) {
-    .we-create-it-project {
-      &__country-list_title {
-        br {
-          display: block;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .we-create-it-project {
-      padding-bottom: 90px;
-
-      &__main-title {
-        font-size: 53px;
-        letter-spacing: -2px;
-      }
-
-      &__country-list_title {
-        font-size: 28px;
-      }
-
-      &__project-item {
-        font-size: 41px;
-        letter-spacing: -1px;
-      }
-
-      &__projects-type_list {
-        padding-bottom: 38px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 335px) {
-    .we-create-it-project {
-      &__project-item {
-        font-size: 40px;
-        letter-spacing: -2px;
       }
     }
   }
