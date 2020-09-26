@@ -121,7 +121,7 @@ exports[`Projects page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title sub-title"
+                class="single-project__sub-title title-md"
               >
                 
         Contactless Delivery Service
@@ -187,7 +187,7 @@ exports[`Projects page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title sub-title"
+                class="single-project__sub-title title-md"
               >
                 
         EdTech collaboration platform
@@ -253,7 +253,7 @@ exports[`Projects page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title sub-title"
+                class="single-project__sub-title title-md"
               >
                 
         Cloud cybersecurity service
@@ -319,7 +319,7 @@ exports[`Projects page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title sub-title"
+                class="single-project__sub-title title-md"
               >
                 
         Convenient shuttle bus service
@@ -405,7 +405,7 @@ exports[`Projects page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title sub-title"
+                    class="single-project__sub-title title-md"
                   >
                     
         Contactless Delivery Service
@@ -475,7 +475,7 @@ exports[`Projects page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title sub-title"
+                    class="single-project__sub-title title-md"
                   >
                     
         EdTech collaboration platform
@@ -545,7 +545,7 @@ exports[`Projects page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title sub-title"
+                    class="single-project__sub-title title-md"
                   >
                     
         Cloud cybersecurity service
@@ -615,7 +615,7 @@ exports[`Projects page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title sub-title"
+                    class="single-project__sub-title title-md"
                   >
                     
         Convenient shuttle bus service
@@ -1011,7 +1011,7 @@ exports[`Projects page renders correctly 1`] = `
           class="open-source__github-wrap"
         >
           <h4
-            class="open-source__sub-title sub-title"
+            class="open-source__sub-title title-md"
           >
             
           70+ of Mad Devs' pet projects have been shared with the community

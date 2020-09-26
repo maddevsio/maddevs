@@ -42,7 +42,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             />
              
             <h4
-              class="single-project__sub-title sub-title"
+              class="single-project__sub-title title-md"
             >
               
         Contactless Delivery Service
@@ -108,7 +108,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             />
              
             <h4
-              class="single-project__sub-title sub-title"
+              class="single-project__sub-title title-md"
             >
               
         EdTech collaboration platform
@@ -174,7 +174,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             />
              
             <h4
-              class="single-project__sub-title sub-title"
+              class="single-project__sub-title title-md"
             >
               
         Cloud cybersecurity service
@@ -240,7 +240,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             />
              
             <h4
-              class="single-project__sub-title sub-title"
+              class="single-project__sub-title title-md"
             >
               
         Convenient shuttle bus service
@@ -326,7 +326,7 @@ exports[`CaseStudies component renders correctly 1`] = `
                 />
                  
                 <h4
-                  class="single-project__sub-title sub-title"
+                  class="single-project__sub-title title-md"
                 >
                   
         Contactless Delivery Service
@@ -396,7 +396,7 @@ exports[`CaseStudies component renders correctly 1`] = `
                 />
                  
                 <h4
-                  class="single-project__sub-title sub-title"
+                  class="single-project__sub-title title-md"
                 >
                   
         EdTech collaboration platform
@@ -466,7 +466,7 @@ exports[`CaseStudies component renders correctly 1`] = `
                 />
                  
                 <h4
-                  class="single-project__sub-title sub-title"
+                  class="single-project__sub-title title-md"
                 >
                   
         Cloud cybersecurity service
@@ -536,7 +536,7 @@ exports[`CaseStudies component renders correctly 1`] = `
                 />
                  
                 <h4
-                  class="single-project__sub-title sub-title"
+                  class="single-project__sub-title title-md"
                 >
                   
         Convenient shuttle bus service

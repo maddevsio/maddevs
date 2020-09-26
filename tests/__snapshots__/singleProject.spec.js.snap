@@ -17,7 +17,7 @@ exports[`CaseStudies component renders correctly 1`] = `
       />
        
       <h4
-        class="single-project__sub-title sub-title"
+        class="single-project__sub-title title-md"
       >
         
         Mass transportation company

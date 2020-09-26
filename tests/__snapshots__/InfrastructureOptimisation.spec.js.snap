@@ -40,7 +40,7 @@ exports[`Infrastructure optimisation renders correctly 1`] = `
         </h3>
          
         <h4
-          class="infrastructure-optimisation__sub-title sub-title"
+          class="infrastructure-optimisation__sub-title title-md"
         >
           Optimising teams don’t care for tomorrow’s traffic peaks? We care!
         </h4>
@@ -62,7 +62,7 @@ exports[`Infrastructure optimisation renders correctly 1`] = `
         </h3>
          
         <h4
-          class="infrastructure-optimisation__sub-title sub-title"
+          class="infrastructure-optimisation__sub-title title-md"
         >
           Pay-as-you-go receipts from your cloud providers make you curse them?
         </h4>

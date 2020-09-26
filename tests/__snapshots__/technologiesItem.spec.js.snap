@@ -5,7 +5,7 @@ exports[`TechnologiesItem component renders correctly 1`] = `
   class="technologies-item"
 >
   <h4
-    class="technologies-item__title sub-title"
+    class="technologies-item__title title-md"
   >
     Title
   </h4>

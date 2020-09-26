@@ -31,7 +31,7 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
             class="technologies-item technologies-frontend"
           >
             <h4
-              class="technologies-item__title sub-title"
+              class="technologies-item__title title-md"
             >
               Frontend
             </h4>
@@ -137,7 +137,7 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
             class="technologies-item technologies-backend"
           >
             <h4
-              class="technologies-item__title sub-title"
+              class="technologies-item__title title-md"
             >
               Backend
             </h4>
@@ -290,7 +290,7 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
               class="technologies-item technologies-mobile"
             >
               <h4
-                class="technologies-item__title sub-title"
+                class="technologies-item__title title-md"
               >
                 Mobile
               </h4>
@@ -396,7 +396,7 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
               class="technologies-item technologies-project-management"
             >
               <h4
-                class="technologies-item__title sub-title"
+                class="technologies-item__title title-md"
               >
                 Project Management
               </h4>
@@ -503,7 +503,7 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
             class="infrastructure-content"
           >
             <h4
-              class="infrastructure-content__title sub-title"
+              class="infrastructure-content__title title-md"
             >
               Infrastructure
             </h4>

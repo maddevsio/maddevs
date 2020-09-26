@@ -20,7 +20,7 @@ exports[`Remote tech staff content renders correctly 1`] = `
         </h3>
          
         <h4
-          class="remote-tech-staff-content__sub-title sub-title"
+          class="remote-tech-staff-content__sub-title title-md"
         >
           Sub title
         </h4>

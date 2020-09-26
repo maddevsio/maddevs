@@ -32,7 +32,7 @@ exports[`ItСonsulting component renders correctly 1`] = `
           </h3>
            
           <h4
-            class="it-consulting__sub-title sub-title"
+            class="it-consulting__sub-title title-md"
           >
             Tired of the slow and hard-to-maintain technology that your previous team used?
           </h4>
@@ -58,7 +58,7 @@ exports[`ItСonsulting component renders correctly 1`] = `
           </h3>
            
           <h4
-            class="it-consulting__sub-title sub-title"
+            class="it-consulting__sub-title title-md"
           >
             Have to constantly deal with extended deadlines and mess-ups?
           </h4>
@@ -84,7 +84,7 @@ exports[`ItСonsulting component renders correctly 1`] = `
           </h3>
            
           <h4
-            class="it-consulting__sub-title sub-title"
+            class="it-consulting__sub-title title-md"
           >
             Is your team too big or too small and therefore causing trouble?
           </h4>
