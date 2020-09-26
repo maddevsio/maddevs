@@ -106,7 +106,6 @@ export default {
 
     &__expert-item {
       position: relative;
-      margin-bottom: 20px;
     }
 
     &__expert-bottom_content {
