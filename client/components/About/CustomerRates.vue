@@ -215,6 +215,10 @@ export default {
 
   @media only screen and (max-width: 570px) {
     .customer-rates {
+      &__top-row {
+        margin-bottom: 91px;
+      }
+
       &__rates-block {
         &--bottom-row {
           padding-bottom: 10px;
