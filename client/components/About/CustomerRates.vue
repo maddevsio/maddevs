@@ -2,7 +2,8 @@
   <section id="customer-rates" class="customer-rates">
     <div class="container">
       <h2 class="customer-rates__title title">
-        Fantastic <br> customer rates:
+        <span>Fantastic</span> <br> customer rates:
+        <img src="@/assets/img/Home/svg/CustomerRates/satisfaction-icon.svg" alt="Satisfaction" class="customer-rates__title-icon">
       </h2>
       <div class="customer-rates__top-row row">
         <div class="col-xl-4 col-sm-4">
@@ -83,11 +84,19 @@ export default {
     background-color: $bgcolor--white-darken;
 
     &__title {
+      position: relative;
+      margin-bottom: 20px;
       text-align: center;
 
       br {
         display: none;
       }
+    }
+
+    &__title-icon {
+      width: 200px;
+      margin-left: -268px;
+      margin-bottom: -19px;
     }
 
     &__top-row {
@@ -179,6 +188,12 @@ export default {
         text-align: center;
       }
 
+      &__title-icon {
+        width: 95px;
+        margin-left: -156px;
+        margin-bottom: -9px;
+      }
+
       &__number {
         &--top-row {
           font-size: 50px;
@@ -200,6 +215,13 @@ export default {
   @media only screen and (max-width: 720px) {
     .customer-rates {
       &__title {
+        margin-left: -50px;
+        line-height: 40px;
+
+        span {
+          margin-right: -61px;
+        }
+
         br {
           display: block;
         }

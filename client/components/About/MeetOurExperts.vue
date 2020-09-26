@@ -96,7 +96,7 @@ export default {
 
   .meet-our_experts {
     padding-bottom: 80px;
-    background-color: $bgcolor--white;
+    background-color: $bgcolor--white-darken;
 
     &__main-title {
       margin-bottom: 10px;
