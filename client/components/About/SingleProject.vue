@@ -12,7 +12,7 @@
     >
       <div class="single-project__content-wrap">
         <span :class="`single-project__logo-bg single-project__logo-bg--${project.logoImg}`"/>
-        <h4 class="single-project__sub-title sub-title">
+        <h4 class="single-project__sub-title title-md">
           {{ project.projectTitle }}
         </h4>
         <p class="single-project__paragraph paragraph">

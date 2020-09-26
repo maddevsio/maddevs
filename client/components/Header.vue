@@ -203,7 +203,7 @@ export default {
     &__phones-dropdown_wrap {
       min-width: 200px;
       margin-left: 12px;
-      margin-right: 88px;
+      margin-right: 68px;
       background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
       background-position-y: 9px;
       background-position-x: 170px;
@@ -268,7 +268,7 @@ export default {
   @media only screen and (max-width: 1366px) {
     .header {
       &__phones-dropdown_wrap {
-        margin-right: 63px;
+        margin-right: 43px;
       }
     }
   }
@@ -276,7 +276,7 @@ export default {
   @media only screen and (max-width: 1280px) {
     .header {
       &__phones-dropdown_wrap {
-        margin-right: 33px;
+        margin-right: 13px;
       }
     }
   }

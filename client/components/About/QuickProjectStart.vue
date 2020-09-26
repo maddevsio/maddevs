@@ -11,7 +11,7 @@
               <span :class="`quick-project_start__image-bg quick-project_start__image-bg--${item.title}`"/>
             </div>
             <div class="quick-project_start__text-item">
-              <h4 class="quick-project_start__title sub-title">{{ item.title }}</h4>
+              <h4 class="quick-project_start__title title-md">{{ item.title }}</h4>
               <p class="quick-project_start__paragraph paragraph">{{ item.paragraph }}</p>
             </div>
           </div>

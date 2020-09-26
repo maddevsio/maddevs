@@ -39,7 +39,7 @@ exports[`Remote tech staff renders correctly 1`] = `
                 </h3>
                  
                 <h4
-                  class="remote-tech-staff-content__sub-title sub-title"
+                  class="remote-tech-staff-content__sub-title title-md"
                 >
                   Tired of 20 or 30 people not delivering you any features?
                 </h4>
@@ -89,7 +89,7 @@ exports[`Remote tech staff renders correctly 1`] = `
                 </h3>
                  
                 <h4
-                  class="remote-tech-staff-content__sub-title sub-title"
+                  class="remote-tech-staff-content__sub-title title-md"
                 >
                   Seeing one, two, five guys working on a minor thing? Ha!
                 </h4>

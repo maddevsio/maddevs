@@ -11,7 +11,7 @@
         <span class="software-development_content__last-character last-character">e</span>
       </h3>
       <h3 class="software-development_content__title title" v-else>{{ title }}</h3>
-      <h4 class="software-development_content__sub-title sub-title">{{ subTitle }}</h4>
+      <h4 class="software-development_content__sub-title title-md">{{ subTitle }}</h4>
       <p class="software-development_content__paragraph paragraph">{{ firstParagraph }}</p>
       <p class="software-development_content__paragraph paragraph">{{ secondParagraph }}</p>
       <p class="software-development_content__paragraph paragraph" v-if="title === 'Backend'">{{ thirdParagraph }}</p>

@@ -14,7 +14,7 @@ exports[`ItConsultingContent component renders correctly 1`] = `
     </h3>
      
     <h4
-      class="it-consulting__sub-title sub-title"
+      class="it-consulting__sub-title title-md"
     >
       Sub title
     </h4>

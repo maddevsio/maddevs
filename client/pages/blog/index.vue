@@ -4,7 +4,7 @@
       <h1 class="blog-title title">
         {{ homepageContent.headline }}
       </h1>
-      <p class="blog-description sub-title">{{ homepageContent.description }}</p>
+      <p class="blog-description title-md">{{ homepageContent.description }}</p>
     </div>
     <div class="body-content">
       <div class="posts" v-if="posts && homepageContent">

@@ -1,6 +1,6 @@
 <template>
   <div class="infrastructure-content">
-    <h4 class="infrastructure-content__title sub-title">Infrastructure</h4>
+    <h4 class="infrastructure-content__title title-md">Infrastructure</h4>
     <p class="infrastructure-content__paragraph paragraph">
       We have helped our customers save up to 50% on infrastructure by optimising their cloud-resource consumption. We know how to get the best value for money, whichever cloud service provider you choose:
     </p>

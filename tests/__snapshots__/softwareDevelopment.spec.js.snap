@@ -35,7 +35,7 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
           </h3>
            
           <h4
-            class="software-development_content__sub-title sub-title"
+            class="software-development_content__sub-title title-md"
           >
             Your MVP doesn't work as expected after launch?
           </h4>
@@ -201,7 +201,7 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
           </h3>
            
           <h4
-            class="software-development_content__sub-title sub-title"
+            class="software-development_content__sub-title title-md"
           >
             Your users get lost in lousy interfaces?
           </h4>
@@ -337,7 +337,7 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
           </h3>
            
           <h4
-            class="software-development_content__sub-title sub-title"
+            class="software-development_content__sub-title title-md"
           >
             Your app is slow and unable to survive a demo?
           </h4>

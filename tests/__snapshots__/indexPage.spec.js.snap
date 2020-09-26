@@ -323,7 +323,7 @@ exports[`Index page renders correctly 1`] = `
               class="technologies-item technologies-frontend"
             >
               <h4
-                class="technologies-item__title sub-title"
+                class="technologies-item__title title-md"
               >
                 Frontend
               </h4>
@@ -429,7 +429,7 @@ exports[`Index page renders correctly 1`] = `
               class="technologies-item technologies-backend"
             >
               <h4
-                class="technologies-item__title sub-title"
+                class="technologies-item__title title-md"
               >
                 Backend
               </h4>
@@ -582,7 +582,7 @@ exports[`Index page renders correctly 1`] = `
                 class="technologies-item technologies-mobile"
               >
                 <h4
-                  class="technologies-item__title sub-title"
+                  class="technologies-item__title title-md"
                 >
                   Mobile
                 </h4>
@@ -688,7 +688,7 @@ exports[`Index page renders correctly 1`] = `
                 class="technologies-item technologies-project-management"
               >
                 <h4
-                  class="technologies-item__title sub-title"
+                  class="technologies-item__title title-md"
                 >
                   Project Management
                 </h4>
@@ -795,7 +795,7 @@ exports[`Index page renders correctly 1`] = `
               class="infrastructure-content"
             >
               <h4
-                class="infrastructure-content__title sub-title"
+                class="infrastructure-content__title title-md"
               >
                 Infrastructure
               </h4>
@@ -1190,7 +1190,7 @@ exports[`Index page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title sub-title"
+                class="single-project__sub-title title-md"
               >
                 
         Contactless Delivery Service
@@ -1256,7 +1256,7 @@ exports[`Index page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title sub-title"
+                class="single-project__sub-title title-md"
               >
                 
         EdTech collaboration platform
@@ -1322,7 +1322,7 @@ exports[`Index page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title sub-title"
+                class="single-project__sub-title title-md"
               >
                 
         Cloud cybersecurity service
@@ -1388,7 +1388,7 @@ exports[`Index page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title sub-title"
+                class="single-project__sub-title title-md"
               >
                 
         Convenient shuttle bus service
@@ -1474,7 +1474,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title sub-title"
+                    class="single-project__sub-title title-md"
                   >
                     
         Contactless Delivery Service
@@ -1544,7 +1544,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title sub-title"
+                    class="single-project__sub-title title-md"
                   >
                     
         EdTech collaboration platform
@@ -1614,7 +1614,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title sub-title"
+                    class="single-project__sub-title title-md"
                   >
                     
         Cloud cybersecurity service
@@ -1684,7 +1684,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title sub-title"
+                    class="single-project__sub-title title-md"
                   >
                     
         Convenient shuttle bus service
@@ -1794,7 +1794,7 @@ exports[`Index page renders correctly 1`] = `
               class="quick-project_start__text-item"
             >
               <h4
-                class="quick-project_start__title sub-title"
+                class="quick-project_start__title title-md"
               >
                 contact
               </h4>
@@ -1821,7 +1821,7 @@ exports[`Index page renders correctly 1`] = `
               class="quick-project_start__text-item"
             >
               <h4
-                class="quick-project_start__title sub-title"
+                class="quick-project_start__title title-md"
               >
                 analysis
               </h4>
@@ -1848,7 +1848,7 @@ exports[`Index page renders correctly 1`] = `
               class="quick-project_start__text-item"
             >
               <h4
-                class="quick-project_start__title sub-title"
+                class="quick-project_start__title title-md"
               >
                 proposal
               </h4>
@@ -1875,7 +1875,7 @@ exports[`Index page renders correctly 1`] = `
               class="quick-project_start__text-item"
             >
               <h4
-                class="quick-project_start__title sub-title"
+                class="quick-project_start__title title-md"
               >
                 team
               </h4>
@@ -1902,7 +1902,7 @@ exports[`Index page renders correctly 1`] = `
               class="quick-project_start__text-item"
             >
               <h4
-                class="quick-project_start__title sub-title"
+                class="quick-project_start__title title-md"
               >
                 start
               </h4>
@@ -2302,255 +2302,231 @@ exports[`Index page renders correctly 1`] = `
   </section>
    
   <section
-    class="why-us"
-    id="why-us"
+    class="customer-rates"
+    id="customer-rates"
   >
     <div
       class="container"
     >
-      <div
-        class="why-us__title-wrap"
+      <h2
+        class="customer-rates__title title"
       >
-        <h2
-          class="why-us__main-title"
+        <span>
+          Fantastic
+        </span>
+         
+        <br />
+         customer rates:
+      
+        <img
+          alt="Satisfaction"
+          class="customer-rates__title-icon"
+          src="@/assets/img/Home/svg/CustomerRates/satisfaction-icon.svg"
+        />
+      </h2>
+       
+      <div
+        class="customer-rates__top-row row"
+      >
+        <div
+          class="col-xl-4 col-sm-4"
         >
-          Why us?
-        </h2>
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--top-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--top-row"
+            >
+              92%
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--top-row"
+            >
+              recommend us to 
+              <br
+                class="customer-rates__line-break"
+              />
+               others.
+            </p>
+          </div>
+        </div>
          
         <div
-          class="why-us__sub-title why-us__customer-rates-sub-title title"
+          class="col-xl-4 col-sm-4"
         >
-          Impressive customer satisfaction rates
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--top-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--top-row"
+            >
+              87%
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--top-row"
+            >
+              stay with us for 
+              <br
+                class="customer-rates__line-break"
+              />
+               more than 2 years
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="col-xl-4 col-sm-4"
+        >
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--top-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--top-row"
+            >
+              98%
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--top-row"
+            >
+              are satisfied with 
+              <br
+                class="customer-rates__line-break"
+              />
+               our pricing.
+            </p>
+          </div>
         </div>
       </div>
        
+      <h3
+        class="customer-rates__section-sub-title title-md"
+      >
+        Mad Devs' key metrics:
+      </h3>
+       
       <div
-        class="why-us__statistics-wrap"
+        class="customer-rates__bottom-row row"
       >
         <div
-          class="why-us__customer-rates"
+          class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
         >
           <div
-            class="why-us__rates-list"
+            class="customer-rates__rates-block customer-rates__rates-block--bottom-row"
           >
-            <div
-              class="why-us__rates-item"
+            <p
+              class="customer-rates__number customer-rates__number--bottom-row"
             >
-              <div
-                class="why-us__rates-number"
-              >
-                
-              92
-                <span>
-                  %
-                </span>
-              </div>
-               
-              <p
-                class="why-us__item_description paragraph"
-              >
-                
-              recommend us to others.
-            
-              </p>
-            </div>
+              10M+
+            </p>
              
-            <div
-              class="why-us__rates-item"
+            <p
+              class="customer-rates__description customer-rates__description--bottom-row"
             >
-              <div
-                class="why-us__rates-number"
-              >
-                
-              87
-                <span>
-                  %
-                </span>
-              </div>
-               
-              <p
-                class="why-us__item_description paragraph"
-              >
-                
-              stay with us for more than 2 
-                <br />
-                 years.
-            
-              </p>
-            </div>
-             
-            <div
-              class="why-us__rates-item"
-            >
-              <div
-                class="why-us__rates-number"
-              >
-                
-              98
-                <span>
-                  %
-                </span>
-              </div>
-               
-              <p
-                class="why-us__item_description paragraph"
-              >
-                
-              are satisfied with our pricing.
-            
-              </p>
-            </div>
+              US dollars raised by 5 customer startups in 2019.
+            </p>
           </div>
         </div>
          
         <div
-          class="why-us__mad-devs_metrics"
+          class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
         >
           <div
-            class="why-us__sub-title why-us__mad-devs_metrics-sub-title"
+            class="customer-rates__rates-block customer-rates__rates-block--bottom-row"
           >
-            Mad Devs' key metrics:
-          </div>
-           
-          <div
-            class="why-us__metrics-list"
-          >
-            <div
-              class="why-us__metric-item"
+            <p
+              class="customer-rates__number customer-rates__number--bottom-row"
             >
-              <div
-                class="why-us__metric-number"
-              >
-                
-              50+
-            
-              </div>
-               
-              <p
-                class="why-us__item_description paragraph"
-              >
-                
-              projects delivered to 
-                <br />
-                 customers by our team.
-            
-              </p>
-            </div>
-             
-            <div
-              class="why-us__metric-item"
-            >
-              <div
-                class="why-us__metric-number"
-              >
-                
-              100+
-            
-              </div>
-               
-              <p
-                class="why-us__item_description paragraph"
-              >
-                
-              staff members work 
-                <br />
-                 for Mad Devs.
-            
-              </p>
-            </div>
-             
-            <div
-              class="why-us__metric-item"
-            >
-              <div
-                class="why-us__metric-number"
-              >
-                
-              10M+
-            
-              </div>
-               
-              <p
-                class="why-us__item_description paragraph"
-              >
-                
-              US dollars raised by 5 customer 
-                <br />
-                 startups in 2019.
-            
-              </p>
-            </div>
-             
-            <div
-              class="why-us__metric-item"
-            >
-              <div
-                class="why-us__metric-number"
-              >
-                
               75%
-            
-              </div>
-               
-              <p
-                class="why-us__item_description paragraph"
-              >
-                
-              of customers are now paying 
-                <br />
-                 50% less for IT infrastructure.
-            
-              </p>
-            </div>
+            </p>
              
-            <div
-              class="why-us__metric-item"
+            <p
+              class="customer-rates__description customer-rates__description--bottom-row"
             >
-              <div
-                class="why-us__metric-number"
-              >
-                
-              70+
-            
-              </div>
-               
-              <p
-                class="why-us__item_description paragraph"
-              >
-                
-              open-source projects 
-                <br />
-                 on 
-                <a
-                  href="https://github.com/maddevsio"
-                  target="blank"
-                >
-                  GitHub.
-                </a>
-              </p>
-            </div>
-             
-            <div
-              class="why-us__metric-item"
+              of customers are now paying 50% less for IT infrastructure.
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--bottom-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--bottom-row"
             >
-              <div
-                class="why-us__metric-number"
-              >
-                
               30+
-            
-              </div>
-               
-              <p
-                class="why-us__item_description paragraph"
-              >
-                
-              tech bloggers and conference 
-                <br />
-                 speakers in our team.
-            
-              </p>
-            </div>
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--bottom-row"
+            >
+              tech bloggers and conference speakers in our team.
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--bottom-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--bottom-row"
+            >
+              50+
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--bottom-row"
+            >
+              projects delivered to customers by our team.
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--bottom-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--bottom-row"
+            >
+              100+
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--bottom-row"
+            >
+              staff members work for Mad Devs.
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--bottom-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--bottom-row"
+            >
+              70+
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--bottom-row"
+            >
+              open-source projects on GitHub.
+            </p>
           </div>
         </div>
       </div>
@@ -2568,7 +2544,7 @@ exports[`Index page renders correctly 1`] = `
         class="meet-our_experts__main-title_wrap"
       >
         <h2
-          class="meet-our_experts__main-title"
+          class="meet-our_experts__main-title title-md"
         >
           Meet our experts
         </h2>

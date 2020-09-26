@@ -12,7 +12,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
       class="meet-our_experts__main-title_wrap"
     >
       <h2
-        class="meet-our_experts__main-title"
+        class="meet-our_experts__main-title title-md"
       >
         Meet our experts
       </h2>

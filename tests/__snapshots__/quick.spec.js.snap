@@ -41,7 +41,7 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title sub-title"
+              class="quick-project_start__title title-md"
             >
               contact
             </h4>
@@ -68,7 +68,7 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title sub-title"
+              class="quick-project_start__title title-md"
             >
               analysis
             </h4>
@@ -95,7 +95,7 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title sub-title"
+              class="quick-project_start__title title-md"
             >
               proposal
             </h4>
@@ -122,7 +122,7 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title sub-title"
+              class="quick-project_start__title title-md"
             >
               team
             </h4>
@@ -149,7 +149,7 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title sub-title"
+              class="quick-project_start__title title-md"
             >
               start
             </h4>

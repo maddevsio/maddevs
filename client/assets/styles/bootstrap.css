@@ -24,7 +24,7 @@
 }
 
 .row {
-  --bs-gutter-y: 0;
+  --bs-gutter-y: 20px;
   --bs-gutter-x: 20px;
   display: flex;
   flex-wrap: wrap;

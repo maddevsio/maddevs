@@ -1,13 +1,13 @@
 import {
   mount
 } from '@vue/test-utils';
-import WhyUs from '@/components/About/WhyUs';
+import CustomerRates from '@/components/About/CustomerRates.vue';
 
-describe('Why Us?', () => {
+describe('Customer Rates', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(WhyUs);
+    wrapper = mount(CustomerRates);
   });
 
   // ------ IMPORTANT ----- //

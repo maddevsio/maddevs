@@ -287,7 +287,6 @@
   justify-content: space-between;
 }
 
-.sub-title,
 .section-title {
   font-family: 'Hoves-Bold';
 }
@@ -308,9 +307,10 @@
   margin-left: -33px;
 }
 
-.sub-title {
-  font-size: 50px;
-  letter-spacing: -2px;
+.title-md {
+  font-size: 40px;
+  font-family: 'Poppins-Bold';
+  letter-spacing: -1px;
 }
 
 .section-title {
@@ -604,11 +604,6 @@
     height: 44px;
   }
 
-  .sub-title  {
-    font-size: 47px;
-    letter-spacing: -2px;
-  }
-
   .section-title {
     font-size: 77px;
   }
@@ -653,8 +648,8 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .sub-title  {
-    font-size: 47px;
+  .title-md {
+    font-size: 28px;
   }
 
   .section-title {
@@ -686,14 +681,9 @@
     font-size: 57px;
   }
 
-  .sub-title,
   .paragraph,
   .icon-item {
     letter-spacing: -1px;
-  }
-
-  .sub-title  {
-    font-size: 41px;
   }
 
   .paragraph,
@@ -782,6 +772,11 @@
   }
 }
 
+@media only screen and (max-width: 375px) {
+  .title-md {
+    font-size: 36px;
+  }
+}
 
 @media only screen and (max-width: 370px) {
   .form-checkbox-label  {

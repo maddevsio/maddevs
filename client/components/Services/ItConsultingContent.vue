@@ -2,7 +2,7 @@
   <div class="it-consulting__content-item">
     <div class="it-consulting__content-item_wrapper">
       <h3 class="it-consulting__title title">{{ title }}</h3>
-      <h4 class="it-consulting__sub-title sub-title">{{ subTitle }}</h4>
+      <h4 class="it-consulting__sub-title title-md">{{ subTitle }}</h4>
       <p class="it-consulting__paragraph paragraph">{{ paragraph }}</p>
     </div>
   </div>
