@@ -324,6 +324,26 @@
   letter-spacing: -0.02em;
 }
 
+.paragraph-lg,
+.paragraph-md,
+.paragraph-sm {
+  font-family: 'Poppins-Regular';
+  letter-spacing: -0.02em;
+}
+
+.paragraph-lg {
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+.paragraph-md {
+  font-size: 16px;
+}
+
+.paragraph-sm {
+  font-size: 14px;
+}
+
 .title-icon {
   padding: 0 5px;
 }
@@ -626,6 +646,19 @@
     .banner-content {
       padding-top: 0;
     }
+  }
+
+  .paragraph-lg {
+    letter-spacing: 0.02em;
+  }
+  
+  .paragraph-lg,
+  .paragraph-md {
+    font-size: 14px;
+  }
+  
+  .paragraph-sm {
+    font-size: 12px;
   }
 }
 
