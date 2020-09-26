@@ -1,38 +1,40 @@
 <template>
   <div class="header-wrapper">
     <header ref="header" class="header">
-      <div class="container row">
-        <div class="header__left-nav_bar col-xl-6 col-lg-6">
-          <router-link :to="`/`" class="header__logo-icon">
-            <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
-          </router-link>
-          <nav class="header__header-routes_links">
-            <router-link @click.native="goToTopPage" exact to="/" class="header__navigation-link">About</router-link>
-            <router-link @click.native="goToTopPage" to="/services" class="header__navigation-link">Services</router-link>
-            <router-link @click.native="goToTopPage" to="/projects" class="header__navigation-link">Projects</router-link>
-            <router-link @click.native="goToTopPage" to="/careers" class="header__navigation-link">Careers</router-link>
-            <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer" class="header__navigation-link">Blog</a>
-          </nav>
-        </div>
-        <div class="header__right-content col-xl-6 col-lg-6">
-          <div class="header__phones-dropdown_wrap" :id="selectedPhone.country">
-            <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
-              <span :class="`header__flag header__flag--${selectedPhone.country}`" />
-              {{ selectedPhone.phoneNumber }}
-              <i class="header__phones-dropdown_arrow"/>
-            </a>
-            <div class="header__phones-list">
-              <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone" v-show="phone != selectedPhone">
-                <span :class="`header__flag header__flag--${phone.country}`" />
-                {{ phone.phoneNumber }}
-              </a>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="header__left-nav_bar col-xl-6 col-lg-6">
+            <router-link :to="`/`" class="header__logo-icon">
+              <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
+            </router-link>
+            <nav class="header__header-routes_links">
+              <router-link @click.native="goToTopPage" exact to="/" class="header__navigation-link">About</router-link>
+              <router-link @click.native="goToTopPage" to="/services" class="header__navigation-link">Services</router-link>
+              <router-link @click.native="goToTopPage" to="/projects" class="header__navigation-link">Projects</router-link>
+              <router-link @click.native="goToTopPage" to="/careers" class="header__navigation-link">Careers</router-link>
+              <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer" class="header__navigation-link">Blog</a>
+            </nav>
           </div>
-          <UIButtonModalTrigger
-            :buttonInnerText="buttonInnerText"
-            :modalWindowName="modalWindowName"
-            :isRed="true"
-          />
+          <div class="header__right-content col-xl-6 col-lg-6">
+            <div class="header__phones-dropdown_wrap" :id="selectedPhone.country">
+              <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
+                <span :class="`header__flag header__flag--${selectedPhone.country}`" />
+                {{ selectedPhone.phoneNumber }}
+                <i class="header__phones-dropdown_arrow"/>
+              </a>
+              <div class="header__phones-list">
+                <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone" v-show="phone != selectedPhone">
+                  <span :class="`header__flag header__flag--${phone.country}`" />
+                  {{ phone.phoneNumber }}
+                </a>
+              </div>
+            </div>
+            <UIButtonModalTrigger
+              :buttonInnerText="buttonInnerText"
+              :modalWindowName="modalWindowName"
+              :isRed="true"
+            />
+          </div>
         </div>
       </div>
     </header>
