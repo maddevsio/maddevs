@@ -113,7 +113,7 @@ export default {
     }
 
     &__rates-block {
-      background-color: $bgcolor--light-white;
+      background-color: $bgcolor--white;
 
       &--top-row {
         padding-top: 28px;

@@ -12,11 +12,9 @@ exports[`Quick Project Start renders correctly 1`] = `
       class="quick-project_start__title-wrap"
     >
       <h2
-        class="quick-project_start__main-title main-title"
+        class="quick-project_start__main-title title"
       >
-        Quick 
-        <br />
-         Project Start
+        Quick Project Start
       </h2>
     </div>
      
@@ -24,10 +22,10 @@ exports[`Quick Project Start renders correctly 1`] = `
       class="quick-project_start__content-wrap"
     >
       <div
-        class="quick-project_start__content-items_list"
+        class="quick-project_start__content-items_list row"
       >
         <div
-          class="quick-project_start__content-item"
+          class="quick-project_start__content-item col-xl-2 col-lg-2 col-md-2 col-sm-2"
         >
           <div
             class="quick-project_start__icon-item contact"
@@ -41,20 +39,20 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title title-md"
+              class="quick-project_start__item-title"
             >
               contact
             </h4>
              
             <p
-              class="quick-project_start__paragraph paragraph"
+              class="quick-project_start__paragraph paragraph-sm"
             >
               Submit your project request or project idea to us.
             </p>
           </div>
         </div>
         <div
-          class="quick-project_start__content-item"
+          class="quick-project_start__content-item col-xl-2 col-lg-2 col-md-2 col-sm-2"
         >
           <div
             class="quick-project_start__icon-item analysis"
@@ -68,20 +66,20 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title title-md"
+              class="quick-project_start__item-title"
             >
               analysis
             </h4>
              
             <p
-              class="quick-project_start__paragraph paragraph"
+              class="quick-project_start__paragraph paragraph-sm"
             >
               We will contact you to clarify your project requirements.
             </p>
           </div>
         </div>
         <div
-          class="quick-project_start__content-item"
+          class="quick-project_start__content-item col-xl-2 col-lg-2 col-md-2 col-sm-2"
         >
           <div
             class="quick-project_start__icon-item proposal"
@@ -95,20 +93,20 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title title-md"
+              class="quick-project_start__item-title"
             >
               proposal
             </h4>
              
             <p
-              class="quick-project_start__paragraph paragraph"
+              class="quick-project_start__paragraph paragraph-sm"
             >
               We will provide you with our free, non-binding bid or a tailored proposal.
             </p>
           </div>
         </div>
         <div
-          class="quick-project_start__content-item"
+          class="quick-project_start__content-item col-xl-2 col-lg-2 col-md-2 col-sm-2"
         >
           <div
             class="quick-project_start__icon-item team"
@@ -122,20 +120,20 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title title-md"
+              class="quick-project_start__item-title"
             >
               team
             </h4>
              
             <p
-              class="quick-project_start__paragraph paragraph"
+              class="quick-project_start__paragraph paragraph-sm"
             >
               We will assemble and prepare a team for your project.
             </p>
           </div>
         </div>
         <div
-          class="quick-project_start__content-item"
+          class="quick-project_start__content-item col-xl-2 col-lg-2 col-md-2 col-sm-2"
         >
           <div
             class="quick-project_start__icon-item start"
@@ -149,13 +147,13 @@ exports[`Quick Project Start renders correctly 1`] = `
             class="quick-project_start__text-item"
           >
             <h4
-              class="quick-project_start__title title-md"
+              class="quick-project_start__item-title"
             >
               start
             </h4>
              
             <p
-              class="quick-project_start__paragraph paragraph"
+              class="quick-project_start__paragraph paragraph-sm"
             >
               You will get to know the team and we’ll start the project work.
             </p>
@@ -164,17 +162,13 @@ exports[`Quick Project Start renders correctly 1`] = `
       </div>
     </div>
      
-    <div
-      class="quick-project_start__button-wrap"
+    <button
+      class="ui-button-modal-trigger quick-project_start__button ui-button-modal-trigger--red"
     >
-      <button
-        class="ui-button-modal-trigger ui-button-modal-trigger--red"
-      >
-        
+      
   Submit your project
 
-      </button>
-    </div>
+    </button>
   </div>
 </section>
 `;

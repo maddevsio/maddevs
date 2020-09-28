@@ -66,7 +66,7 @@ export default {
 		padding-bottom: 59px;
 
 		&__title {
-		  color: $text-color--light-white;
+		  color: $text-color--white;
 		}
 
 		&__text-content {
