@@ -51,20 +51,14 @@
             </div>
           </div>
         </div>
-        <CustomerTestimonialMobileSlider :testimonials="testimonials" class="mobile-slider" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import CustomerTestimonialMobileSlider from '@/components/About/CustomerTestimonialMobileSlider';
-
 export default {
   name: 'CustomerTestimonials',
-  components: {
-    CustomerTestimonialMobileSlider
-  },
   data() {
     return {
       testimonials: [

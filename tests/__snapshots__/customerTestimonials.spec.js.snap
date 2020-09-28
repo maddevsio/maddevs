@@ -8,241 +8,79 @@ exports[`Customer Testimonials renders correctly 1`] = `
   <div
     class="container"
   >
-    <h1
-      class="customer-testimonials__main-title main-title"
+    <h2
+      class="customer-testimonials__title title"
     >
-      <span>
-        Customer
-      </span>
-       Testimonials
+      
+      Customer Testimonials
     
-    </h1>
+    </h2>
      
     <div
-      class="customer-testimonials__content-wrap"
+      class="customer-testimonials__content-wrap row"
     >
       <div
-        class="customer-testimonials__widget-wrap"
+        class="customer-testimonials__widget-col col-xl-8 col-lg-8"
       >
         <client-only-stub>
           <div
-            class="clutch-widget"
-            data-clutchcompany-id="258762"
-            data-expandifr="true"
-            data-height="auto"
-            data-url="https://widget.clutch.co"
-            data-widget-type="4"
-          />
+            class="customer-testimonials__widget-wrap"
+          >
+            <div
+              class="clutch-widget"
+              data-clutchcompany-id="258762"
+              data-expandifr="true"
+              data-height="auto"
+              data-url="https://widget.clutch.co"
+              data-widget-type="4"
+            />
+          </div>
         </client-only-stub>
       </div>
        
       <div
-        class="customer-testimonials__testimonials-list"
+        class="col-xl-4 col-lg-4"
       >
         <div
-          class="customer-testimonials__testimonials-item"
+          class="customer-testimonials__testimonials-list row"
         >
           <div
-            class="customer-testimonials__testimonials-text paragraph"
+            class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
           >
+            <div
+              class="customer-testimonials__testimonials-text paragraph-md"
+            >
+              
+              Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.
             
-            Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.
-          
-          </div>
-           
-          <div
-            class="customer-testimonials__customer-info"
-          >
-            <div
-              class="customer-testimonials__profile"
-            >
-              <img
-                alt="Atif Mahmud,"
-                class="customer-testimonials__customer-image"
-                loading="lazy"
-                src="[object Object]"
-              />
-               
-              <p
-                class="customer-testimonials__customer-name"
-              >
-                
-                Atif Mahmud, 
-                <br />
-                 The UK
-              
-              </p>
             </div>
              
             <div
-              class="customer-testimonials__project"
-            >
-              <a
-                href="https://teacherly.io/"
-                rel="nofollow"
-                target="blank"
-              >
-                <img
-                  alt="teacherly"
-                  class="customer-testimonials__project-image teacherly"
-                  loading="lazy"
-                  src="[object Object]"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="customer-testimonials__testimonials-item"
-        >
-          <div
-            class="customer-testimonials__testimonials-text paragraph"
-          >
-            
-            We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.
-          
-          </div>
-           
-          <div
-            class="customer-testimonials__customer-info"
-          >
-            <div
-              class="customer-testimonials__profile"
-            >
-              <img
-                alt="Daniel Vartanov,"
-                class="customer-testimonials__customer-image"
-                loading="lazy"
-                src="[object Object]"
-              />
-               
-              <p
-                class="customer-testimonials__customer-name"
-              >
-                
-                Daniel Vartanov, 
-                <br />
-                 The UK
-              
-              </p>
-            </div>
-             
-            <div
-              class="customer-testimonials__project"
-            >
-              <a
-                href="https://veeqo.com/"
-                rel="nofollow"
-                target="blank"
-              >
-                <img
-                  alt="veeqo"
-                  class="customer-testimonials__project-image veeqo"
-                  loading="lazy"
-                  src="[object Object]"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="customer-testimonials__testimonials-item"
-        >
-          <div
-            class="customer-testimonials__testimonials-text paragraph"
-          >
-            
-            I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.
-          
-          </div>
-           
-          <div
-            class="customer-testimonials__customer-info"
-          >
-            <div
-              class="customer-testimonials__profile"
-            >
-              <img
-                alt="Stefan Streichsbier,"
-                class="customer-testimonials__customer-image"
-                loading="lazy"
-                src="[object Object]"
-              />
-               
-              <p
-                class="customer-testimonials__customer-name"
-              >
-                
-                Stefan Streichsbier, 
-                <br />
-                 Singapore
-              
-              </p>
-            </div>
-             
-            <div
-              class="customer-testimonials__project"
-            >
-              <a
-                href="https://guardrails.io/"
-                rel="nofollow"
-                target="blank"
-              >
-                <img
-                  alt="guardrails"
-                  class="customer-testimonials__project-image guardrails"
-                  loading="lazy"
-                  src="[object Object]"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-       
-      <div
-        class="swiper-container swiper mobile-slider swiper-container-initialized swiper-container-horizontal"
-      >
-        <div
-          class="swiper-wrapper"
-          style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
-        >
-          <div
-            class="swiper-slide"
-          >
-            <div
-              class="mobile-text paragraph"
-            >
-              
-      Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.
-    
-            </div>
-             
-            <div
-              class="mobile-info"
+              class="customer-testimonials__customer-info"
             >
               <div
-                class="mobile-profile"
+                class="customer-testimonials__profile"
               >
                 <img
                   alt="Atif Mahmud,"
-                  class="mobile-customer_image"
+                  class="customer-testimonials__customer-image"
+                  loading="lazy"
                   src="[object Object]"
                 />
                  
                 <p
-                  class="mobile-customer_name"
+                  class="customer-testimonials__customer-name paragraph-sm"
                 >
                   
-          Atif Mahmud, 
+                  Atif Mahmud, 
                   <br />
                    The UK
-        
+                
                 </p>
               </div>
                
               <div
-                class="mobile-project"
+                class="customer-testimonials__project"
               >
                 <a
                   href="https://teacherly.io/"
@@ -251,7 +89,8 @@ exports[`Customer Testimonials renders correctly 1`] = `
                 >
                   <img
                     alt="teacherly"
-                    class="mobile-project_image teacherly"
+                    class="customer-testimonials__project-image customer-testimonials__teacherly"
+                    loading="lazy"
                     src="[object Object]"
                   />
                 </a>
@@ -259,41 +98,42 @@ exports[`Customer Testimonials renders correctly 1`] = `
             </div>
           </div>
           <div
-            class="swiper-slide"
+            class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
           >
             <div
-              class="mobile-text paragraph"
+              class="customer-testimonials__testimonials-text paragraph-md"
             >
               
-      We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.
-    
+              We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.
+            
             </div>
              
             <div
-              class="mobile-info"
+              class="customer-testimonials__customer-info"
             >
               <div
-                class="mobile-profile"
+                class="customer-testimonials__profile"
               >
                 <img
                   alt="Daniel Vartanov,"
-                  class="mobile-customer_image"
+                  class="customer-testimonials__customer-image"
+                  loading="lazy"
                   src="[object Object]"
                 />
                  
                 <p
-                  class="mobile-customer_name"
+                  class="customer-testimonials__customer-name paragraph-sm"
                 >
                   
-          Daniel Vartanov, 
+                  Daniel Vartanov, 
                   <br />
                    The UK
-        
+                
                 </p>
               </div>
                
               <div
-                class="mobile-project"
+                class="customer-testimonials__project"
               >
                 <a
                   href="https://veeqo.com/"
@@ -302,7 +142,8 @@ exports[`Customer Testimonials renders correctly 1`] = `
                 >
                   <img
                     alt="veeqo"
-                    class="mobile-project_image veeqo"
+                    class="customer-testimonials__project-image customer-testimonials__veeqo"
+                    loading="lazy"
                     src="[object Object]"
                   />
                 </a>
@@ -310,41 +151,42 @@ exports[`Customer Testimonials renders correctly 1`] = `
             </div>
           </div>
           <div
-            class="swiper-slide"
+            class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
           >
             <div
-              class="mobile-text paragraph"
+              class="customer-testimonials__testimonials-text paragraph-md"
             >
               
-      I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.
-    
+              I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.
+            
             </div>
              
             <div
-              class="mobile-info"
+              class="customer-testimonials__customer-info"
             >
               <div
-                class="mobile-profile"
+                class="customer-testimonials__profile"
               >
                 <img
                   alt="Stefan Streichsbier,"
-                  class="mobile-customer_image"
+                  class="customer-testimonials__customer-image"
+                  loading="lazy"
                   src="[object Object]"
                 />
                  
                 <p
-                  class="mobile-customer_name"
+                  class="customer-testimonials__customer-name paragraph-sm"
                 >
                   
-          Stefan Streichsbier, 
+                  Stefan Streichsbier, 
                   <br />
                    Singapore
-        
+                
                 </p>
               </div>
                
               <div
-                class="mobile-project"
+                class="customer-testimonials__project"
               >
                 <a
                   href="https://guardrails.io/"
@@ -353,7 +195,8 @@ exports[`Customer Testimonials renders correctly 1`] = `
                 >
                   <img
                     alt="guardrails"
-                    class="mobile-project_image guardrails"
+                    class="customer-testimonials__project-image customer-testimonials__guardrails"
+                    loading="lazy"
                     src="[object Object]"
                   />
                 </a>
@@ -361,11 +204,6 @@ exports[`Customer Testimonials renders correctly 1`] = `
             </div>
           </div>
         </div>
-        <span
-          aria-atomic="true"
-          aria-live="assertive"
-          class="swiper-notification"
-        />
       </div>
     </div>
   </div>
