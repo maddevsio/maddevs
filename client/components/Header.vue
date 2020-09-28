@@ -164,7 +164,7 @@ export default {
     &__navigation-link,
     &__selected-phone,
     &__phone-item {
-      color: $text-color--light-white;
+      color: $text-color--white;
     }
 
     &__navigation-link,

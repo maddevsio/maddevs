@@ -2,28 +2,27 @@
   <section id="quick-project-start" class="quick-project_start">
     <div class="container">
       <div class="quick-project_start__title-wrap">
-        <h2 class="quick-project_start__main-title main-title">Quick <br> Project Start</h2>
+        <h2 class="quick-project_start__main-title title">Quick Project Start</h2>
       </div>
       <div class="quick-project_start__content-wrap">
-        <div class="quick-project_start__content-items_list">
-          <div class="quick-project_start__content-item" v-for="(item, i) in itemsTextContent" :key="i">
+        <div class="quick-project_start__content-items_list row">
+          <div class="quick-project_start__content-item col-xl-2 col-lg-2 col-md-2 col-sm-2" v-for="(item, i) in itemsTextContent" :key="i">
             <div class="quick-project_start__icon-item" :class="item.title">
               <span :class="`quick-project_start__image-bg quick-project_start__image-bg--${item.title}`"/>
             </div>
             <div class="quick-project_start__text-item">
-              <h4 class="quick-project_start__title title-md">{{ item.title }}</h4>
-              <p class="quick-project_start__paragraph paragraph">{{ item.paragraph }}</p>
+              <h4 class="quick-project_start__item-title">{{ item.title }}</h4>
+              <p class="quick-project_start__paragraph paragraph-sm">{{ item.paragraph }}</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="quick-project_start__button-wrap">
-        <UIButtonModalTrigger
-          :buttonInnerText="buttonInnerText"
-          :modalWindowName="modalWindowName"
-          :isRed="true"
-        />
-      </div>
+      <UIButtonModalTrigger
+        class="quick-project_start__button"
+        :buttonInnerText="buttonInnerText"
+        :modalWindowName="modalWindowName"
+        :isRed="true"
+      />
     </div>
   </section>
 </template>
@@ -71,23 +70,19 @@ export default {
   @import '../../assets/styles/vars';
 
   .quick-project_start {
-    padding-top: 215px;
-    padding-bottom: 155px;
+    padding: 165px 0;
     text-align: center;
 
     &__main-title {
-      padding-bottom: 105px;
+      padding-bottom: 35px;
       color: $text-color--white;
-
-      br {
-        display: none;
-      }
     }
 
     &__image-bg {
       display: block;
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
+      background-size: contain;
       background-repeat: no-repeat;
 
       &--analysis {
@@ -115,30 +110,27 @@ export default {
       }
     }
 
-    &__button-wrap {
+    &__button {
       width: 100%;
-      margin-top: 75px;
-
-      button {
-        width: inherit;
-      }
+      height: 56px;
+      margin-top: 47px;
+      font-family: 'Poppins-Regular';
+      font-size: 16px;
+      letter-spacing: -0.02em;
     }
 
     &__content-items_list {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-column-gap: 65px;
+      justify-content: space-between;
     }
 
     &__content-item {
-      max-width: 240px;
       display: flex;
       flex-direction: column;
     }
 
     &__icon-item {
       position: relative;
-      padding-bottom: 22px;
+      margin-bottom: 15px;
       display: flex;
       justify-content: center;
 
@@ -147,12 +139,16 @@ export default {
         width: 200px;
         height: 200px;
         position: absolute;
-        left: 200px;
+        top: -13px;
+        left: 130px;
         background: url('../../assets/img/Home/svg/Quick/quick-project-arrow.svg') no-repeat;
       }
     }
 
-    &__title {
+    &__item-title {
+      font-family: 'Poppins-Bold';
+      font-size: 32px;
+      letter-spacing: -1px;
       text-transform: capitalize;
       color: $text-color--red;
     }
@@ -177,111 +173,22 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1800px) {
+  @media only screen and (max-width: 8192px) { // 8K UHD max screen resolution 
     .quick-project_start {
       &__icon-item {
         &::after {
-          left: 188px;
+          left: 170px;
         }
       }
     }
   }
 
-  @media only screen and (max-width: 1700px) {
+  @media only screen and (max-width: 1366px) {
     .quick-project_start {
       &__icon-item {
         &::after {
-          left: 175px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1640px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 165px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1620px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 155px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1520px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 140px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1470px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 132px;
-          background-size: 160px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1440px) {
-    .quick-project_start {
-      padding-top: 195px;
-      padding-bottom: 164px;
-
-      &__main-title {
-        font-size: 121px;
-      }
-
-      &__title {
-        font-size: 42px;
-      }
-
-      &__button-wrap {
-        margin-top: 90px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1370px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 140px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1330px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 125px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1300px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 118px;
+          left: 135px;
+          background-size: 145px;
         }
       }
     }
@@ -289,43 +196,10 @@ export default {
 
   @media only screen and (max-width: 1280px) {
     .quick-project_start {
-      padding-top: 133px;
-      padding-bottom: 151px;
-
-      &__main-title {
-        font-size: 100px;
-        padding-bottom: 105px;
-      }
-
       &__icon-item {
         &::after {
+          background-size: 125px;
           left: 130px;
-          top: 20px;
-          background-size: 135px;
-        }
-      }
-
-      &__button-wrap {
-        margin-top: 62px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1240px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 125px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1220px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 120px;
         }
       }
     }
@@ -333,44 +207,10 @@ export default {
 
   @media only screen and (max-width: 1180px) {
     .quick-project_start {
-      padding-bottom: 86px;
-
-      &__main-title {
-        padding-bottom: 65px;
-      }
-
-      &__title {
-        font-size: 29px;
-        letter-spacing: -1px;
-      }
-
-      &__paragraph {
-        font-size: 14px;
-      }
-
-      &__button-wrap {
-        margin-top: 55px;
-      }
-
-      /deep/.button-default {
-        height: 50px;
-      }
-
       &__icon-item {
         &::after {
-          top: 30px;
-          left: 125px;
-          background-size: 100px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1120px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 115px;
+          left: 120px;
+          background-size: 110px;
         }
       }
     }
@@ -378,18 +218,39 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .quick-project_start {
-      &__main-title {
-        font-size: 90px;
+      padding: 62px 0;
+
+      &__item-title {
+        font-size: 18px;
       }
 
-      &__button-wrap {
-        button {
-          width: 100%;
-          color: $text-color--grey-light;
-          background-color: $button-bgcolor--red;
+      &__paragraph {
+        font-size: 10px;
+      }
+
+      &__image-bg {
+        width: 27px;
+        height: 30px;
+      }
+
+      &__button {
+        width: 100%;
+        color: $text-color--grey-light;
+        background-color: $button-bgcolor--red;
+      }
+
+      &__icon-item {
+        &::after {
+          top: -5px;
+          left: 110px;
+          background-size: 80px;
         }
       }
+    }
+  }
 
+  @media only screen and (max-width: 960px) {
+    .quick-project_start {
       &__icon-item {
         &::after {
           left: 95px;
@@ -398,140 +259,59 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 980px) {
+  @media only screen and (max-width: 768px) {
     .quick-project_start {
       &__icon-item {
         &::after {
-          left: 90px;
+          left: 75px;
+          background-size: 62px;
         }
       }
     }
   }
 
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 767px) {
     .quick-project_start {
-      padding-top: 85px;
-      padding-bottom: 124px;
+      &__content-item {
+        padding: 0;
+      }
+
+      &__icon-item {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+    .quick-project_start {
+      padding: 95px 0;
       text-align: initial;
-
-      &__main-title {
-        padding-bottom: 45px;
-      }
-
-      &__content-items_list {
-        grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 45px;
-      }
 
       &__content-item {
         max-width: 360px;
         flex-direction: row;
       }
 
-      &__icon-item {
-        padding-top: 13px;
-        padding-right: 17px;
-
-        &::after {
-          display: none;
-        }
+      &__item-title {
+        font-size: 27px;
       }
+
+      &__paragraph,
+      &__button {
+        font-size: 14px;
+      }
+
+      &__icon-item {
+        margin-top: 6px;
+        margin-right: 23px;
+      }
+
 
       &__image-bg {
-        width: 30px;
-        height: 35px;
-        background-size: 30px;
-      }
-
-      .team {
-        padding-top: 14px;
-      }
-
-      .start {
-        padding-top: 10px;
-      }
-
-      &__title {
-        font-size: 47px;
-      }
-
-      &__paragraph {
-        width: max-content;
-        font-size: 16px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .quick-project_start {
-      &__main-title {
-        font-size: 64px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 680px) {
-    .quick-project_start {
-      &__paragraph {
-        width: initial;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 430px) {
-    .quick-project_start {
-      &__main-title {
-        font-size: 53px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .quick-project_start {
-      padding-bottom: 102px;
-
-      &__content-items_list {
-        grid-row-gap: 35px;
-      }
-
-      &__button-wrap {
-        margin-top: 35px;
-        margin-left: 52px;
-
-        button {
-          width: calc(100% - 28%);
-        }
-      }
-
-      &__title {
-        font-size: 28px;
-      }
-
-      &__paragraph {
-        font-size: 17px;
-      }
-
-      &__icon-item {
-        padding-top: 5px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 340px) {
-    .quick-project_start {
-      padding-top: 65px;
-      padding-bottom: 78px;
-
-      &__main-title {
-        font-size: 48px;
-      }
-
-      &__button-wrap {
-        margin-left: 0;
-
-        button {
-          width: 100%;
-        }
+        width: 32px;
+        height: 32px;
       }
     }
   }

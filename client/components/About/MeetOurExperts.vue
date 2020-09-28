@@ -192,7 +192,7 @@ export default {
 
       &__expert-name,
       &__expert-position {
-        background-color: $bgcolor--light-white;
+        background-color: $bgcolor--white;
       }
 
       &__expert-linkedin_icon {

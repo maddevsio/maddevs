@@ -114,7 +114,7 @@ export default {
     }
 
     &__testimonials-list {
-      margin-top: 47px;
+      margin-top: 25px;
     }
 
     &__testimonials-item {

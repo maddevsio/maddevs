@@ -105,7 +105,7 @@ export default {
     &__content-wrapper {
       padding: 51px 80px 73px;
       text-align: center;
-      background-color: $bgcolor--light-white;
+      background-color: $bgcolor--white;
     }
 
     &__title {
@@ -218,7 +218,7 @@ export default {
     .we-create-it-project {
       margin-top: 34px;
       margin-bottom: 45px;
-      background-color: $bgcolor--light-white;
+      background-color: $bgcolor--white;
 
       &__content-wrapper {
         padding-left: 0;
