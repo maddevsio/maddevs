@@ -194,6 +194,16 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1320px) {
+    .quick-project_start {
+      &__icon-item {
+        &::after {
+          left: 120px;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 1280px) {
     .quick-project_start {
       &__icon-item {
