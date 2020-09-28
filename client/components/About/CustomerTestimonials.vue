@@ -1,66 +1,64 @@
 <template>
   <section id="customer-testimonials" class="customer-testimonials">
     <div class="container">
-      <h1 class="customer-testimonials__main-title main-title">
-        <span>Customer</span> Testimonials
-      </h1>
-      <div class="customer-testimonials__content-wrap">
-        <div class="customer-testimonials__widget-wrap">
+      <h2 class="customer-testimonials__title title">
+        Customer Testimonials
+      </h2>
+      <div class="customer-testimonials__content-wrap row">
+        <div class="customer-testimonials__widget-col col-xl-8 col-lg-8">
           <client-only>
-            <div
-              ref="clutch"
-              class="clutch-widget"
-              data-url="https://widget.clutch.co"
-              data-widget-type="4"
-              data-expandifr="true"
-              data-height="auto"
-              data-clutchcompany-id="258762">
+            <div class="customer-testimonials__widget-wrap">
+              <div
+                ref="clutch"
+                class="clutch-widget"
+                data-url="https://widget.clutch.co"
+                data-widget-type="4"
+                data-expandifr="true"
+                data-height="auto"
+                data-clutchcompany-id="258762">
+              </div>
             </div>
           </client-only>
         </div>
-        <div class="customer-testimonials__testimonials-list">
-          <div class="customer-testimonials__testimonials-item" v-for="(testimonial, i) in testimonials" :key="i">
-            <div class="customer-testimonials__testimonials-text paragraph">
-              {{ testimonial.testimonialText }}
-            </div>
-            <div class="customer-testimonials__customer-info">
-              <div class="customer-testimonials__profile">
-                <img
-                  :src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)"
-                  loading="lazy"
-                  class="customer-testimonials__customer-image"
-                  :alt="testimonial.customerName">
-                <p class="customer-testimonials__customer-name">
-                  {{ testimonial.customerName }} <br> {{ testimonial.customerCountry }}
-                </p>
+        <div class="col-xl-4 col-lg-4">
+          <div class="customer-testimonials__testimonials-list row">
+            <div class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4" v-for="(testimonial, i) in testimonials" :key="i">
+              <div class="customer-testimonials__testimonials-text paragraph-md">
+                {{ testimonial.testimonialText }}
               </div>
-              <div class="customer-testimonials__project">
-                <a :href="testimonial.link" target="blank" rel="nofollow">
+              <div class="customer-testimonials__customer-info">
+                <div class="customer-testimonials__profile">
                   <img
-                    :src="require(`@/assets/img/Home/svg/customerTestimonials/${testimonial.customerProject}.svg`)"
-                    class="customer-testimonials__project-image"
+                    :src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)"
                     loading="lazy"
-                    :class="testimonial.customerProject"
-                    :alt="testimonial.customerProject">
-                </a>
+                    class="customer-testimonials__customer-image"
+                    :alt="testimonial.customerName">
+                  <p class="customer-testimonials__customer-name paragraph-sm">
+                    {{ testimonial.customerName }} <br> {{ testimonial.customerCountry }}
+                  </p>
+                </div>
+                <div class="customer-testimonials__project">
+                  <a :href="testimonial.link" target="blank" rel="nofollow">
+                    <img
+                      :src="require(`@/assets/img/Home/svg/customerTestimonials/${testimonial.customerProject}.svg`)"
+                      class="customer-testimonials__project-image"
+                      loading="lazy"
+                      :class="`customer-testimonials__${testimonial.customerProject}`"
+                      :alt="testimonial.customerProject">
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <CustomerTestimonialMobileSlider :testimonials="testimonials" class="mobile-slider" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import CustomerTestimonialMobileSlider from '@/components/About/CustomerTestimonialMobileSlider';
-
 export default {
   name: 'CustomerTestimonials',
-  components: {
-    CustomerTestimonialMobileSlider
-  },
   data() {
     return {
       testimonials: [
@@ -103,89 +101,63 @@ export default {
   @import '../../assets/styles/vars';
 
   .customer-testimonials {
-    padding: 137px 0;
+    padding-top: 60px;
+    padding-bottom: 102px;
     background-color: $bgcolor--grey-light;
 
-    &__main-title {
-      padding-bottom: 59px;
-
-      span {
-        color: $text-color--grey-light;
-        -webkit-text-stroke: $text-stroke--black;
-      }
-    }
-
-    &__testimonials-list {
-      max-height: 785px;
-      display: flex;
-      flex-direction: column;
-      padding-left: 82px;
+    &__title {
+      margin-bottom: 10px;
     }
 
     &__content-wrap {
       display: flex;
     }
 
+    &__testimonials-list {
+      margin-top: 47px;
+    }
+
     &__testimonials-item {
-      max-width: 445px;
-      padding-top: 54px;
+      margin-top: 62px;
 
       &:first-child {
-        padding-top: 0;
+        margin-top: 0;
       }
 
       &:last-child {
         div {
+          margin-bottom: 0;
+          padding-bottom: 0;
           border-bottom: 0;
         }
       }
     }
 
-    &__testimonials-text {
-      position: relative;
-
-      &::before {
-        content: '';
-        width: 18px;
-        height: 12px;
-        position: absolute;
-        top: 5px;
-        left: -23px;
-        background: url('../../assets/img/Home/svg/customerTestimonials/quotes.svg') no-repeat center;
-      }
-    }
-
     &__customer-info {
       justify-content: space-between;
-      padding-top: 15px;
-      padding-bottom: 54px;
-      border-bottom: 1px solid $input-bgcolor--grey-dark;
+      padding-top: 16px;
     }
 
     &__customer-info,
-    &__profile,
-    /deep/.mobile-profile {
+    &__profile {
       display: flex;
       align-items: center;
     }
 
-    &__customer-image,
-    /deep/.mobile-customer_image {
-      border-radius: 100%;
+    &__customer-image {
+      width: 42px;
+      height: 42px;
+      border-radius: 4px;
     }
 
-    &__customer-name,
-    /deep/.mobile-customer_name {
-      padding-left: 14px;
+    &__customer-name {
+      padding-left: 8px;
+      font-family: 'Formular-Regular';
       color: $text-color--grey;
-      font-family: 'Hoves-Regular';
-      font-size: 16px;
     }
 
     &__widget-wrap {
-      max-width: 813px;
-      width: 90%;
-      height: 100%;
+      margin-right: 37px;
       overflow: hidden;
 
       .clutch-widget {
@@ -202,30 +174,11 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1520px) {
-    .customer-testimonials {
-      &__main-title {
-        font-size: 121px;
-        padding-bottom: 87px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1440px) {
-    .customer-testimonials {
-      padding: 100px 0;
-
-      &__testimonials-list {
-        padding-left: 90px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1310px) {
+  @media only screen and (max-width: 1328px) {
     .customer-testimonials {
       &__widget-wrap {
         .clutch-widget {
-          margin: initial;
+          margin: 0;
         }
       }
     }
@@ -233,108 +186,112 @@ export default {
 
   @media only screen and (max-width: 1280px) {
     .customer-testimonials {
-      padding: 111px 0;
-
-      &__main-title {
-        font-size: 100px;
-        padding-bottom: 60px;
-      }
-
-      &__widget-wrap {
-        width: 545px;
+      &__customer-info {
+        flex-direction: column;
+        align-items: flex-start;
       }
 
       &__project {
-        width: initial;
+        margin-top: 15px;
       }
     }
   }
 
   @media only screen and (max-width: 1024px) {
     .customer-testimonials {
+      padding-top: 42px;
+      padding-bottom: 58px;
+    }
+  }
 
-      &__main-title {
-        text-align: center;
-        font-size: 90px;
-      }
-
-      &__content-wrap {
-        flex-direction: column;
-      }
-
+  @media only screen and (max-width: 991px) {
+    .customer-testimonials {
       &__widget-wrap {
-        width: initial;
-        margin: 0 -30px;
+        width: 100%;
+        margin: 0;
+
+        .clutch-widget {
+          margin: 0 -30px;
+        }
+      }
+
+      &__customer-image {
+        width: 34px;
+        height: 34px;
       }
 
       &__testimonials-list {
-        padding-top: 55px;
-        padding-left: 0;
+        margin-top: 5px;
+        flex-direction: unset;
       }
 
       &__testimonials-item {
-        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 0;
+      }
+
+      &__profile {
+        align-items: initial;
+      }
+
+      &__project {
+        margin-top: 11px;
+      }
+
+      &__teacherly {
+        width: 52px;
+      }
+
+      &__veeqo {
+        width: 45px;
+      }
+
+      &__guardrails {
+        width: 85px;
       }
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 910px) {
     .customer-testimonials {
-      padding: 70px 0;
-
-      &__main-title {
-        font-size: 64px;
-        padding-bottom: 43px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 576px) {
-    .customer-testimonials {
-      &__testimonials-list {
-        display: none;
-      }
-
-      .mobile-slider {
-        display: block;
-        padding-top: 35px;
-      }
-
-      &__main-title {
-        padding-bottom: 69px;
-      }
-
       &__widget-wrap {
-        margin: initial;
+        .clutch-widget {
+          margin: 0;
+        }
       }
     }
   }
 
-  @media only screen and (max-width: 520px) {
+  @media only screen and (max-width: 575px) {
     .customer-testimonials {
-      padding-top: 45px;
-      padding-bottom: 27px;
-    }
-  }
+      padding-bottom: 71px;
 
-  @media only screen and (max-width: 440px) {
-    .customer-testimonials {
-      /deep/.mobile-customer_name {
-        font-size: 14px;
+      &__customer-info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid $input-bgcolor--grey-dark;
       }
 
-      &__main-title {
-        font-size: 53px;
-        padding-bottom: 30px;
+      &__profile {
+        align-items: center;
       }
-    }
-  }
 
-  @media only screen and (max-width: 330px) {
-    .customer-testimonials {
-      &__main-title {
-        font-size: 48px;
-        padding-bottom: 25px;
+      &__project {
+        width: initial;
+      }
+
+      &__teacherly,
+      &__veeqo {
+        width: initial;
+      }
+
+      &__guardrails {
+        width: 120px;
       }
     }
   }
