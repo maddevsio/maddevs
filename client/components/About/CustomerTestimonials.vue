@@ -22,7 +22,7 @@
         </div>
         <div class="col-xl-4 col-lg-4">
           <div class="customer-testimonials__testimonials-list row">
-            <div class="customer-testimonials__testimonials-item col-md-4" v-for="(testimonial, i) in testimonials" :key="i">
+            <div class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4" v-for="(testimonial, i) in testimonials" :key="i">
               <div class="customer-testimonials__testimonials-text paragraph-md">
                 {{ testimonial.testimonialText }}
               </div>
@@ -115,14 +115,12 @@ export default {
       margin-bottom: 10px;
     }
 
-    &__content-wrap,
-    &__testimonials-list {
+    &__content-wrap {
       display: flex;
     }
 
     &__testimonials-list {
       margin-top: 47px;
-      flex-direction: column;
     }
 
     &__testimonials-item {
@@ -134,6 +132,8 @@ export default {
 
       &:last-child {
         div {
+          margin-bottom: 0;
+          padding-bottom: 0;
           border-bottom: 0;
         }
       }
@@ -142,7 +142,6 @@ export default {
     &__customer-info {
       justify-content: space-between;
       padding-top: 16px;
-      // border-bottom: 1px solid $input-bgcolor--grey-dark;
     }
 
     &__customer-info,
@@ -204,8 +203,24 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1024px) {
+    .customer-testimonials {
+      padding-top: 42px;
+      padding-bottom: 58px;
+    }
+  }
+
   @media only screen and (max-width: 991px) {
     .customer-testimonials {
+      &__widget-wrap {
+        width: 100%;
+        margin: 0;
+
+        .clutch-widget {
+          margin: 0 -30px;
+        }
+      }
+
       &__customer-image {
         width: 34px;
         height: 34px;
@@ -241,6 +256,48 @@ export default {
 
       &__guardrails {
         width: 85px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 910px) {
+    .customer-testimonials {
+      &__widget-wrap {
+        .clutch-widget {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+    .customer-testimonials {
+      padding-bottom: 71px;
+
+      &__customer-info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid $input-bgcolor--grey-dark;
+      }
+
+      &__profile {
+        align-items: center;
+      }
+
+      &__project {
+        width: initial;
+      }
+
+      &__teacherly,
+      &__veeqo {
+        width: initial;
+      }
+
+      &__guardrails {
+        width: 120px;
       }
     }
   }
