@@ -48,7 +48,7 @@
         </p>
         <br />
         <p class="nda__paragraph paragraph">
-          Our company has experience of working with NDA agreements of any kind and complexity. 
+          Our company has experience of working with NDA agreements of any kind and complexity.
           If you have more specific questions please contact us via
           <a class="nda__link" href="mailto:rock@maddevs.io">rock@maddevs.io</a>.
         </p>
@@ -99,7 +99,7 @@ export default {
     margin-top: 62px;
     margin-bottom: 11px;
     font-size: 32px;
-    font-family: 'Hoves-Regular';
+    font-family: 'Poppins-Regular', sans-serif;;
     font-weight: bold;
   }
 

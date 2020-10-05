@@ -1,6 +1,6 @@
 <template>
-  <button 
-    class="ui-button-modal-trigger" 
+  <button
+    class="ui-button-modal-trigger"
     :class="{ 'ui-button-modal-trigger--red': isRed, 'ui-button-modal-trigger--black': isBlack, 'ui-button-modal-trigger--grey': isGrey }"
     @click="showModal()"
     v-WaveAnimation
@@ -41,7 +41,7 @@ export default {
   },
   data() {
     return {
-      scrollYPosition: null 
+      scrollYPosition: null
     };
   },
   mounted() {
@@ -76,7 +76,7 @@ export default {
     box-shadow: none;
     background-color: transparent;
     font-size: 18px;
-    font-family: 'Hoves-Regular';
+    font-family: 'Poppins-Regular', sans-serif;;
     cursor: pointer;
     transition: 0.2s;
 

@@ -152,7 +152,6 @@ export default {
 
     &__customer-name {
       padding-left: 8px;
-      font-family: 'Formular-Regular';
       color: $text-color--grey;
     }
 

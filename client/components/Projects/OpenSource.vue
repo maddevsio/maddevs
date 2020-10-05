@@ -177,7 +177,7 @@ export default {
 
   &__industry {
     width: min-content;
-    font-family: 'Hoves-Regular';
+    font-family: 'Poppins-Regular', sans-serif;;
     color: $text-color--black;
     opacity: 0.5;
     visibility: hidden;
@@ -276,7 +276,7 @@ export default {
     font-size: 36px;
     line-height: 99%;
     margin: 0 auto;
-    font-family: 'Hoves-Bold';
+    font-family: 'Poppins-Bold', sans-serif;;
     color: $text-color--red;
     margin-top: 32px;
     border-bottom: 1px solid $border-color--red;

@@ -64,7 +64,6 @@ export default {
 		&__title {
 			margin-bottom: 18px;
 			color: $text-color--grey-light;
-			font-family: 'Formular-Regular';
     	font-size: 15px;
 			letter-spacing: -0.02em;
 		}
@@ -80,7 +79,7 @@ export default {
       &--uk {
         background-image: url(../../assets/img/Flags/united-kingdom.svg);
 			}
-			
+
 			&--united-states {
         background-image: url(../../assets/img/Flags/united-states.svg);
 			}
@@ -121,7 +120,7 @@ export default {
 		&__messenger-item {
 			position: relative;
 			color: $text-color--grey;
-			font-family: 'Poppins-Regular';
+			font-family: 'Poppins-Regular', sans-serif;
 			font-size: 16px;
 			text-decoration: none;
 			letter-spacing: -0.02em;

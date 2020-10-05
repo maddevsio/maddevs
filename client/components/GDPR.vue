@@ -130,7 +130,7 @@ export default {
     margin-top: 62px;
     margin-bottom: 11px;
     font-size: 32px;
-    font-family: 'Hoves-Regular';
+    font-family: 'Poppins-Regular', sans-serif;;
     font-weight: bold;
   }
 
@@ -225,7 +225,6 @@ export default {
 @media only screen and (max-width: 520px) and (min-width: 495px) {
   .gdpr {
     &__image {
-      top: -95px;
       top: -95px;
     }
   }

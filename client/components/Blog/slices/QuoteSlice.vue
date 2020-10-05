@@ -21,7 +21,7 @@ export default {
     font-style: italic;
     font-size: 24px;
     margin: 0;
-    font-family: 'Hoves-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     color: $text-color--white;
 
     &:before {

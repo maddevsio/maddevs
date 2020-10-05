@@ -3,7 +3,7 @@
     <div class="container">
       <div class="privacy__header">
         <h3 class="privacy__title title">
-          Privacy Policy: Website Acceptable Use Terms 
+          Privacy Policy: Website Acceptable Use Terms
         </h3>
         <img
           class="privacy__image"
@@ -787,7 +787,7 @@ export default {
     margin-top: 62px;
     margin-bottom: 11px;
     font-size: 32px;
-    font-family: 'Hoves-Regular';
+    font-family: 'Poppins-Regular', sans-serif;;
     font-weight: bold;
 
     &--italic {

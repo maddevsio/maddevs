@@ -1,7 +1,7 @@
 // new desing global styles
 .title {
   font-size: 62px;
-  font-family: 'Poppins-Bold';
+  font-family: 'Poppins-Bold', sans-serif;
   letter-spacing: -1px;
 }
 
@@ -54,14 +54,15 @@
   .banner-main_title,
   .banner-main_title--white,
   .banner-main_title--white-first {
-    font-family: 'Hoves-Bold';
+    font-family: 'Poppins-Bold', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 165px;
+    font-size: 120px;
+    line-height: 96%;
+    /* or 115px */
+    letter-spacing: -0.04em;
     color: $text-color--black-lighter;
     -webkit-text-stroke: $text-stroke--white;
-    line-height: 100%;
-    letter-spacing: -8px;
 
     .main-title-white_part {
       color: $text-color--white;
@@ -126,29 +127,6 @@
 
   .ps__rail-y {
     right: 2px !important;
-  }
-}
-
-// Best Practices line numbers
-.best-practices_wrap-title .line-number_text .line-number span {
-  color: #3b3b3b;
-  font-size: 14px;
-  margin-top: 26px;
-  font-family: 'FiraMono',
-  sans-serif;
-
-  @media only screen and (max-width: 480px) {
-    margin-top: 21px;
-  }
-
-  &:last-child {
-    position: relative;
-
-    &::after {
-      content: '}';
-      position: absolute;
-      right: -15px;
-    }
   }
 }
 
@@ -276,7 +254,7 @@
 }
 
 .main-title {
-  font-family: 'Hoves-Bold';
+  font-family: 'Poppins-Bold', sans-serif;
   font-size: 128px;
   letter-spacing: -5px;
   line-height: 100%;
@@ -288,17 +266,17 @@
 }
 
 .section-title {
-  font-family: 'Hoves-Bold';
+  font-family: 'Poppins-Bold', sans-serif;
 }
 
 .form-text {
-  font-family: 'Hoves-Regular';
+  font-family: 'Poppins-Regular', sans-serif;
   font-size: 40px;
   font-weight: 500;
 }
 
 .doc-text {
-  font-family: 'Hoves-Regular';
+  font-family: 'Poppins-Regular', sans-serif;
   font-size: 24px;
   font-weight: normal;
 }
@@ -309,7 +287,7 @@
 
 .title-md {
   font-size: 40px;
-  font-family: 'Poppins-Bold';
+  font-family: 'Poppins-Bold', sans-serif;
   letter-spacing: -1px;
 }
 
@@ -319,7 +297,7 @@
 
 .paragraph {
   font-size: 21px;
-  font-family: 'Hoves-Regular';
+  font-family: 'Poppins-Regular', sans-serif;
   line-height: 129%;
   letter-spacing: -0.02em;
 }
@@ -327,7 +305,7 @@
 .paragraph-lg,
 .paragraph-md,
 .paragraph-sm {
-  font-family: 'Poppins-Regular';
+  font-family: 'Poppins-Regular', sans-serif;
   letter-spacing: -0.02em;
 }
 
@@ -361,7 +339,7 @@
   span {
     padding-left: 7px;
     color: $text-color--grey;
-    font-family: 'Hoves-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
   }
 }
 
@@ -382,7 +360,7 @@
   margin-bottom: 6px;
   color: $text-color--grey;
   font-size: 16px;
-  font-family: 'Hoves-Regular';
+  font-family: 'Poppins-Regular', sans-serif;
 }
 
 .entry-field {
@@ -393,7 +371,7 @@
   background-color: $input-bgcolor--grey-dark;
   color: $text-color--grey;
   font-size: 18px;
-  font-family: 'Hoves-Regular';
+  font-family: 'Poppins-Regular', sans-serif;
   box-sizing: border-box;
 
   &::placeholder {
@@ -421,7 +399,7 @@
   padding-left: 33px;
   color: $label-text--grey-dark;
   font-size: 18px;
-  font-family: 'Hoves-Regular';
+  font-family: 'Poppins-Regular', sans-serif;
   user-select: none;
   cursor: pointer;
   letter-spacing: -0.03em;
@@ -460,7 +438,7 @@
   margin-top: 7px;
   color: $text-color--red-opacity;
   font-size: 16px;
-  font-family: 'Hoves-Regular';
+  font-family: 'Poppins-Regular', sans-serif;
 }
 
 .textarea {
@@ -651,12 +629,12 @@
   .paragraph-lg {
     letter-spacing: 0.02em;
   }
-  
+
   .paragraph-lg,
   .paragraph-md {
     font-size: 14px;
   }
-  
+
   .paragraph-sm {
     font-size: 12px;
   }

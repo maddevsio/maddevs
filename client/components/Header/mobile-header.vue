@@ -20,11 +20,11 @@
 					<router-link to="/careers">Careers</router-link>
 					<a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
 				</nav>
-				<UIButtonModalTrigger 
-					:buttonInnerText="buttonInnerText" 
+				<UIButtonModalTrigger
+					:buttonInnerText="buttonInnerText"
 					:isRed="true"
 					:modalWindowName="modalWindowName"
-					class="mobile-header__modal-trigger-btn" 
+					class="mobile-header__modal-trigger-btn"
 				/>
 				<div class="mobile-header__contacts">
 					<footerContacts />
@@ -92,7 +92,7 @@ export default {
 		&__modal-trigger-btn {
 			width: 100%;
       height: 65px;
-			font-family: 'Hoves-Bold';
+			font-family: 'Poppins-Bold', sans-serif;;
 			font-size: 27px;
       color: $text-color--red;
     	border-color: $border-color--red;
@@ -123,7 +123,7 @@ export default {
 		&__header-routes_links a {
 			padding: 14px 0;
 			font-size: 36px;
-			font-family: 'Hoves-Bold';
+			font-family: 'Poppins-Bold', sans-serif;;
 			text-decoration: none;
 			color: $text-color--white;
 			border-bottom: 1px solid $border-color--grey;

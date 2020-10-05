@@ -80,7 +80,7 @@ export default {
 		&__mailto-link {
 			color: $text-color--red;
 			font-size: 48px;
-			font-family: 'Poppins-Bold';
+			font-family: 'Poppins-Bold', sans-serif;;
 			text-decoration: none;
 			letter-spacing: -1px;
 		}
@@ -105,7 +105,6 @@ export default {
 		&__link,
 		&__company-name {
 			font-size: 15px;
-			font-family: 'Formular-Regular';
 			color: $text-color--grey;
 			letter-spacing:  -0.02em;
 		}

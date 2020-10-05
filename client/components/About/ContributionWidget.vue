@@ -21,8 +21,8 @@
         fill=""
       />
     </svg>
-    <span 
-      class="contribution-widget__content-mobile contribution-widget__content-mobile_godee" 
+    <span
+      class="contribution-widget__content-mobile contribution-widget__content-mobile_godee"
       v-if="projectName === 'godee'"
     >
       contribution: Backend, Infrastructure, Mobile Apps
@@ -40,8 +40,8 @@
       ]"
       >contribution: Backend, Infrastructure</span
     >
-    <span 
-      class="contribution-widget__content contribution-widget__content_godee" 
+    <span
+      class="contribution-widget__content contribution-widget__content_godee"
       v-if="projectName === 'godee'"
     >
       contribution: Backend, Infrastructure, Mobile Apps
@@ -53,8 +53,8 @@
         projectName === 'guardrails'
           ? 'contribution-widget__content_guardrails'
           : '',
-        projectName === 'teacherly' 
-          ? 'contribution-widget__content_teacherly' 
+        projectName === 'teacherly'
+          ? 'contribution-widget__content_teacherly'
           : 'contribution-widget__content_nambafood'
       ]"
       >contribution: Backend, Infrastructure, Frontend</span
@@ -87,7 +87,7 @@ export default {
   position: relative;
   z-index: 1;
   color: $text-color--grey;
-  font-family: 'Hoves-Regular';
+  font-family: 'Poppins-Regular', sans-serif;
   margin-top: 36px;
   font-size: 20px;
   letter-spacing: -1px;

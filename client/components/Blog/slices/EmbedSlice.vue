@@ -39,10 +39,10 @@ export default {
       h1 {
         margin-bottom: 10px;
         font-size: 18px;
-        font-family: 'Hoves-Bold';
+        font-family: 'Poppins-Bold', sans-serif;
         color: $text-color--white;
       }
- 
+
       h1,
       p {
         letter-spacing: -0.02em;
@@ -51,7 +51,7 @@ export default {
 
       p {
         font-size: 16px;
-        font-family: 'Hoves-Regular';
+        font-family: 'Poppins-Regular', sans-serif;
         color: $text-color--grey;
       }
     }

@@ -142,10 +142,10 @@ export default {
       // Remove duplicates
       totalTags = totalTags.filter((tag, i) => i === totalTags.indexOf(tag));
 
-      // Create objects list and 
+      // Create objects list and
       totalTags.forEach(tag => {
         tagsObjectList.push({
-          tagName: tag, 
+          tagName: tag,
           inputId: tag.toLowerCase().replace(/\s/g , '-') // Replaced space on the dash
         });
       });
@@ -156,7 +156,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import '../../assets/styles/_vars';
+@import '../../assets/styles/_vars'
 
 .home
   max-width: 1680px;
@@ -174,7 +174,7 @@ export default {
     background-size: cover
     margin: 0 auto
 
-.head-content 
+.head-content
   margin: 60px auto;
 
 .body-content
@@ -191,7 +191,7 @@ export default {
   color: $text-color--white
 
 .filter-title
-  font-family: 'Hoves-Bold', sans-serif
+  font-family: 'Poppins-Bold', sans-serif
 
 .blog-description
   margin: 10px 0
@@ -219,7 +219,7 @@ export default {
   margin: 0
   padding-bottom: 50px
 
-  a 
+  a
     text-decoration: none
 
 .filter
@@ -253,13 +253,13 @@ export default {
   border: 1px solid $border-color--grey
   transition: 0.2s
   text-align: center
-  font-family: 'Hoves-Regular', sans-serif
+  font-family: 'Poppins-Regular', sans-serif
 
 .reset-filter
   width: 100%;
   margin-top: 10px;
   padding: 8px 7px
-  font-family: 'Hoves-Bold', sans-serif
+  font-family: 'Poppins-Bold', sans-serif
   background-color: $bgcolor--red
   border: none
 

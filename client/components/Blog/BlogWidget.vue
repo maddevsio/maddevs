@@ -38,7 +38,7 @@ export default {
           });
         }
       });
-      
+
       const limitedText = firstParagraph.substr(0, textLimit);
 
       if (firstParagraph.length > textLimit) {
@@ -67,7 +67,7 @@ export default {
     }
 
     p, span {
-      font-family: 'Hoves-Regular', sans-serif;
+      font-family: 'Poppins-Regular', sans-serif;
     }
 
     span {

@@ -120,14 +120,14 @@ export default {
         padding-bottom: 40px;
       }
 
-      &--bottom-row {  
-        height: 128px;    
+      &--bottom-row {
+        height: 128px;
         padding: 24px 20px;
       }
     }
 
     &__number {
-      font-family: 'Hoves-Bold';
+      font-family: 'Poppins-Bold', sans-serif;
 
       &--top-row {
         font-size: 102px;
@@ -142,7 +142,7 @@ export default {
     }
 
     &__description {
-      font-family: 'Poppins-Regular';
+      font-family: 'Poppins-Regular', sans-serif;
       color: $text-color--black-lighter;
       letter-spacing: -0.02em;
 
@@ -151,7 +151,7 @@ export default {
       }
 
       &--bottom-row {
-        font-size: 14px;   
+        font-size: 14px;
       }
     }
 

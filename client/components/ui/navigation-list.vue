@@ -49,7 +49,7 @@ export default {
       padding-left: 20px;
       color: $text-color--grey-light;
       font-size: 22px;
-      font-family: 'Hoves-Regular';
+      font-family: 'Poppins-Regular', sans-serif;;
       background: url('../../assets/img/common/link-arrow.svg') no-repeat;
       background-position-y: 7px;
       letter-spacing: -0.04em;

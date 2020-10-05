@@ -20,21 +20,21 @@
             :url="ogUrl"
             :title="title"
             class="blog-post__share-link blog-post__share-link--twitter"
-            target="_blank" 
+            target="_blank"
           />
           <ShareNetwork
             network="facebook"
             :url="ogUrl"
             :title="title"
             class="blog-post__share-link blog-post__share-link--facebook"
-            target="_blank" 
+            target="_blank"
           />
           <ShareNetwork
             network="linkedin"
             :url="ogUrl"
             :title="title"
             class="blog-post__share-link blog-post__share-link--linkedin"
-            target="_blank" 
+            target="_blank"
           />
         </div>
       </div>
@@ -158,7 +158,7 @@ export default {
       const element = document.getElementsByClassName(className);
       element[0].scrollIntoView(
         {
-          block: 'center', 
+          block: 'center',
           behavior: 'smooth'
         }
       );
@@ -195,7 +195,7 @@ export default {
 
     &__blog-sub-title {
       margin-bottom: 22px;
-      font-family: 'Hoves-Regular', sans-serif;
+      font-family: 'Poppins-Regular', sans-serif;
       color: $text-color--grey;
       font-size: 20px;
       font-weight: bold;
@@ -227,7 +227,7 @@ export default {
     &__author-name {
       display: block;
       font-size: 15px;
-      font-family: 'Hoves-Regular', sans-serif;
+      font-family: 'Poppins-Regular', sans-serif;
       line-height: 129%;
       letter-spacing: -0.02em;
     }
@@ -277,7 +277,7 @@ export default {
       margin-top: 65px;
       margin-bottom: 30px;
       font-size: 32px;
-      font-family: 'Hoves-Bold', sans-serif;
+      font-family: 'Poppins-Bold', sans-serif;
       color: $text-color--white;
     }
 
@@ -320,7 +320,7 @@ export default {
     &__table-of-content-list-item,
     &__table-of-content-title {
       margin: 25px 0;
-      font-family: 'Hoves-Regular', sans-serif;
+      font-family: 'Poppins-Regular', sans-serif;
       color: $text-color--white;
       font-size: 18px;
       line-height: 129%;
@@ -341,7 +341,7 @@ export default {
       margin-top: 0;
       margin-bottom: -5px;
       font-size: 1.9em;
-      font-family: 'Hoves-Bold', sans-serif;
+      font-family: 'Poppins-Bold', sans-serif;
     }
 
     &__table-of-content-list-item {
@@ -416,19 +416,19 @@ export default {
 
   @media only screen and (max-width: 1080px) {
     .blog-post {
-      padding: 150px 200px 0; 
+      padding: 150px 200px 0;
     }
   }
 
   @media only screen and (max-width: 1024px) {
     .blog-post {
-      padding: 150px 140px 0; 
+      padding: 150px 140px 0;
     }
   }
 
   @media only screen and (max-width: 768px) {
     .blog-post {
-      padding: 150px 2.8vw 0; 
+      padding: 150px 2.8vw 0;
     }
   }
 </style>

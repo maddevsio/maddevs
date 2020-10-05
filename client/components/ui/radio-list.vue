@@ -3,7 +3,7 @@
     <div class="radio-buttons__field-name field-name" :class="{'required': sectionIsRequired}">{{ fieldName }}​</div>
     <div class="radio-buttons__radio-list">
       <label class="radio-buttons__radio-label"  v-for="(option, i) in options" :key="i" :for="`${option.id}-${inputId}`">
-        <input 
+        <input
           class="radio-buttons__radio-input"
           :id="`${option.id}-${inputId}`"
           type="radio"
@@ -99,7 +99,7 @@ export default {
 
     &__radio-text_item {
       color: $text-color--grey;
-      font-family: 'Hoves-Regular';
+      font-family: 'Poppins-Regular', sans-serif;;
       font-size: 18px;
       letter-spacing: -0.03em;
     }

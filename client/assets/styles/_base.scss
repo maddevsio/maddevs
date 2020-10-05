@@ -4,6 +4,7 @@ body {
   min-width: 320px;
   transition: all .4s ease;
   background-color: #111213;
+  font-family: 'Poppins-Regular', sans-serif;
 }
 
 h1,
@@ -47,33 +48,14 @@ main {
 }
 
 // #region Fonts
-
-@font-face {
-  font-family: 'Hoves-Bold';
-  src: url('../fonts/Hoves/TT-Hoves-Bold.woff') format('woff');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Hoves-Regular';
-  src: url('../fonts/Hoves/TT-Hoves-Regular.woff') format('woff');
-  font-display: swap;
-}
-
 @font-face {
   font-family: 'Poppins-Bold';
   src: url('../fonts/Poppins/Poppins-Bold.woff') format('woff');
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
   font-family: 'Poppins-Regular';
   src: url('../fonts/Poppins/Poppins-Regular.woff') format('woff');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Formular-Regular';
-  src: url('../fonts/Formular/Formular.woff') format('woff');
-  font-display: swap;
+  font-display: auto;
 }

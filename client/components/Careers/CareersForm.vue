@@ -222,7 +222,7 @@ export default {
 
           &::after {
             content: 'roles.';
-            font-family: 'Hoves-Regular';
+            font-family: 'Poppins-Regular', sans-serif;
             font-size: 40px;
             font-weight: 500;
             margin-left: 10px;
@@ -276,7 +276,7 @@ export default {
   }
 
   &__form-description {
-    font-family: 'Hoves-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     color: $text-color--black;
     font-weight: 500;
   }
@@ -288,7 +288,6 @@ export default {
     line-height: 33px;
     text-align: center;
     letter-spacing: -0.02em;
-    text-decoration-line: underline;
     display: flex;
     text-decoration: none;
     align-items: center;

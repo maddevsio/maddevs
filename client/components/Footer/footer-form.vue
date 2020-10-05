@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-form form"> 
+  <div class="footer-form form">
     <ValidationObserver v-slot="{ invalid }" ref="form">
       <div class="fields-list">
         <ValidationProvider class="field-item" rules="max:50" v-slot="{ classes, errors }">
@@ -120,11 +120,11 @@ export default {
 
 	.footer-form {
     width: 100%;
-    
+
     &_email {
       /deep/ .v-placeholder-asterisk {
         font-size: 16px;
-        font-family: 'Poppins-Regular';
+        font-family: 'Poppins-Regular', sans-serif;;
         color: $text-color--grey-form-placeholder;
         left: 17px !important;
         top: 50% !important;
@@ -142,7 +142,7 @@ export default {
 			padding: 22px 10px;
       resize: vertical;
     }
-    
+
     .fields-list {
       display: grid;
     }
@@ -177,7 +177,7 @@ export default {
     .entry-field,
     .error-text,
     .submit-button {
-      font-family: 'Poppins-Regular';
+      font-family: 'Poppins-Regular', sans-serif;;
     }
 
     .error-text {
@@ -190,7 +190,6 @@ export default {
 
     /deep/ .form-checkbox-label {
       padding-left: 30px;
-      font-family: 'Formular-Regular';
       font-size: 15px;
       letter-spacing: -0.02em;
     }

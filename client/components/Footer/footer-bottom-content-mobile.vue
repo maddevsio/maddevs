@@ -39,7 +39,6 @@ export default {
 
     /deep/ .footer-social-network {
       justify-content: space-between;
-      margin-top: 60px;
       margin-top: 45px;
     }
 
@@ -65,12 +64,11 @@ export default {
 		&__link,
 		&__company-name {
 			font-size: 12px;
-			font-family: 'Formular-Regular';
 			color: $text-color--grey;
 			letter-spacing:  -0.02em;
 		}
   }
-  
+
   @media only screen and (max-width: 767px) {
 		.footer-bottom-content {
 			display: block;

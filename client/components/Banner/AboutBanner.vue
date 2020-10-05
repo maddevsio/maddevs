@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss" scoped>
   .animation-img-wrap {
-    position: relative;
+    position: absolute;
 
     &::before {
       content: '';
@@ -56,36 +56,16 @@ export default {
   .icon-item {
     display: flex;
     align-items: flex-end;
+
+    img {
+      width: 360px;
+    }
   }
 
   .phone-screen-logo {
     width: 100px;
     display: none;
     margin-bottom: -15px;
-  }
-
-  @media only screen and (max-width: 1540px) {
-    .icon-item {
-      img {
-        width: 325px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1480px) {
-    .icon-item {
-      img {
-        width: 300px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1340px) {
-    .icon-item {
-      img {
-        width: 325px;
-      }
-    }
   }
 
   @media only screen and (max-width: 1280px) {
