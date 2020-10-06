@@ -74,11 +74,6 @@
       -webkit-text-stroke: 0;
     }
   }
-
-  .text-content_wrapper {
-    display: flex;
-    padding-bottom: 180px;
-  }
 }
 
 .custom-scrollbar {
@@ -500,33 +495,7 @@
   .form-text {
     font-size: 34px;
   }
-
-  .banner-container {
-    .text-content_wrapper {
-      padding-bottom: 130px;
-    }
-  }
 }
-
-//@media only screen and (max-width: 1480px) {
-//  .banner-container {
-//    .banner-main_title,
-//    .banner-main_title--white,
-//    .banner-main_title--white-first {
-//      font-size: 162px;
-//    }
-//  }
-//}
-//
-//@media only screen and (max-width: 1440px) {
-//  .banner-container {
-//    .banner-main_title,
-//    .banner-main_title--white,
-//    .banner-main_title--white-first {
-//      font-size: 149px;
-//    }
-//  }
-//}
 
 @media only screen and (max-width: 1390px) {
   .section-title {
@@ -537,16 +506,6 @@
     font-size: 32px;
   }
 }
-
-//@media only screen and (max-width: 1340px) {
-//  .banner-container {
-//    .banner-main_title,
-//    .banner-main_title--white,
-//    .banner-main_title--white-first {
-//      font-size: 131px;
-//    }
-//  }
-//}
 
 @media only screen and (max-width: 1280px) {
   .main-title {
@@ -571,23 +530,8 @@
     .banner-main_title--white-first {
       font-size: 108px;
     }
-
-    .text-content_wrapper {
-      padding-bottom: 190px;
-    }
   }
 }
-
-//@media only screen and (max-width: 1220px) {
-//  .banner-container {
-//    .banner-main_title,
-//    .banner-main_title--white,
-//    .banner-main_title--white-first  {
-//      font-size: 110px;
-//      letter-spacing: -8px;
-//    }
-//  }
-//}
 
 @media screen and (max-width: 1140px) {
   .banner-container {
@@ -661,10 +605,6 @@
     .banner-main_title--white-first {
       font-size: 74px;
       line-height: 96%;
-    }
-
-    .text-content_wrapper {
-      padding-bottom: 105px;
     }
   }
 }
@@ -774,21 +714,6 @@
   }
 }
 
-@media only screen and (max-width: 455px) {
-  .banner-container {
-    .banner-main_title,
-    .banner-main_title--white,
-    .banner-main_title--white-first {
-      //font-size: 56px;
-      //letter-spacing: -2px;
-    }
-
-    .text-content_wrapper {
-      padding-bottom: 120px;
-    }
-  }
-}
-
 @media only screen and (max-width: 430px) {
   .main-title {
     font-size: 50px;
@@ -815,17 +740,12 @@
   }
 }
 
-@media only screen and (max-width: 355px) {
+@media only screen and (max-width: 340px) {
   .banner-container {
     .banner-main_title,
     .banner-main_title--white,
     .banner-main_title--white-first {
-      //font-size: 49px;
-      //line-height: 101%;
-    }
-
-    .text-content_wrapper {
-      padding-bottom: 114px;
+      font-size: 40px;
     }
   }
 }

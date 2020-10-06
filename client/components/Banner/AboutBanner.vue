@@ -13,8 +13,8 @@
           <div class="animation-img-wrap"/>
         </div>
       </div>
-      <navigationList/>
     </div>
+    <navigationList/>
   </div>
 </template>
 

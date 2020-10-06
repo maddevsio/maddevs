@@ -12,7 +12,7 @@
       <a href="#open-source" class="navigation-item">Open-source pet projects</a>
     </nav>
     <nav class="navigation-list" v-else>
-      <router-link to="services/#remote-tech-staff" class="navigation-item">Remote Tech Staff</router-link>
+      <router-link to="services/#remote-tech-staff" class="navigation-item">Remote Tech <span class="mobile_hidden">Staff</span></router-link>
       <router-link to="services/#software-development" class="navigation-item">Software Development</router-link>
       <router-link to="services/#infrastructure-optimisation" class="navigation-item">Infrastructure Optimization</router-link>
       <router-link to="services/#it-consulting" class="navigation-item">IT Consulting</router-link>
@@ -39,75 +39,79 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
 
+  .navigation-wrap {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
   .navigation-list {
     display: flex;
     flex-direction: row;
-    margin-top: -60px;
 
     .navigation-item {
-      padding-right: 81px;
-      padding-left: 20px;
+      margin-right: 81px;
+      border-bottom: 1px solid rgba(236, 28, 36, .5);
       color: $text-color--grey-light;
-      font-size: 22px;
+      font-size: 19px;
+      line-height: 24px;
       font-family: 'Poppins-Regular', sans-serif;;
-      background: url('../../assets/img/common/link-arrow.svg') no-repeat;
-      background-position-y: 7px;
       letter-spacing: -0.04em;
-    }
-  }
+      text-decoration: none;
 
-  @media only screen and (max-width: 1360px) {
-    .navigation-list {
-      .navigation-item {
-        padding-right: 50px;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        border-bottom: 1px solid rgba(236, 28, 36, 1);
       }
     }
   }
 
-  @media only screen and (max-width: 1280px) {
+  @media screen and (max-width: 1130px) {
+    .mobile_hidden {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1090px){
     .navigation-list {
+      justify-content: space-between;
+
       .navigation-item {
-        padding-right: 44px;
-        font-size: 16px;
-        letter-spacing: -0.03em;
-        background-position-y: 4px;
+        margin-right: 25px;
       }
     }
   }
 
   @media only screen and (max-width: 970px) {
     .navigation-list {
-      display: grid;
-      grid-template-columns: repeat(2, 300px);
-      grid-row-gap: 17px;
+      .navigation-item {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.03em;
+        background-position-y: 4px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 690px) {
+    .navigation-list {
+      flex-direction: column;
 
       .navigation-item {
-        font-size: 17px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 25px;
+        max-width: fit-content;
 
-        &:nth-child(2) {
-          grid-row-start: 2;
+        .mobile_hidden {
+          display: inline;
         }
-      }
-    }
-  }
 
-  @media only screen and (max-width: 730px) {
-    .navigation-list {
-      grid-template-columns: repeat(2, 240px);
-
-      .navigation-item {
-        padding-right: 25px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 530px) {
-    .navigation-list {
-      grid-template-columns: repeat(1, 1fr);
-      grid-row-gap: 22px;
-
-      .navigation-item {
-        font-size: 18px;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
