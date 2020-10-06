@@ -2,14 +2,14 @@
   <div class="banner-container">
     <div class="banner-content">
       <div class="text-content_wrapper container">
-        <div class="main-title-wrapper col-xxl-7 col-xl-7">
+        <div class="main-title-wrapper col-xxl-7 col-xl-7 col-lg-7">
           <h1 class="banner-main_title">
-            Mad Devs
-            <img src="@/assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" class="phone-screen-logo">
+            <span class="main-title-black_part">Mad Devs</span>
+            <!--            <img src="@/assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" class="phone-screen-logo">-->
             <span class="main-title-white_part"><br>Engineering<br>Your Growth</span>
           </h1>
         </div>
-        <div class="icon-item col-xxl-4 col-xl-5">
+        <div class="icon-item col-xxl-4 col-xl-5 col-lg-5">
           <div class="animation-img-wrap"/>
         </div>
       </div>
@@ -51,29 +51,41 @@ export default {
   background-image: url('../../assets/img/Home/svg/stars-banner-logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: auto;
+  //margin-left: auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 99;
+    background: url('../../assets/sprites/sprite_tech.svg');
+    top: 19%;
+    right: 24.2%;
+    width: calc(1720px / 30);
+    height: 58px;
+    transform: rotate(-28.6deg);
+    animation: animate 15s steps(30) infinite;
+  }
 }
 
-@media (min-width: 1200px) {
-  .animation-img-wrap {
-    &::before {
-      content: '';
-      background: url('../../assets/sprites/sprite_tech_small.svg');
-      right: 37%;
-      width: calc(1200px / 30);
-      height: 40px;
-      transform: rotate(-28.6deg);
-      animation: animate-sm 15s steps(30) infinite;
-    }
+.main-title-wrapper {
+  min-width: fit-content;
+  padding-right: 30px;
+}
+
+.main-title-black_part {
+  &:after {
+    content: '';
+    background-image: url('../../assets/img/Home/svg/stars-banner-logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 76px;
+    height: 92px;
+    margin-left: 34px;
+    display: none;
   }
 }
 
 @media only screen and (min-width: 1281px) {
-  .main-title-wrapper {
-    //padding-right: 62px;
-    //min-width: 740px;
-  }
-
   .icon-item {
     display: flex;
     align-items: flex-end;
@@ -90,39 +102,19 @@ export default {
     background-image: url('../../assets/img/Home/svg/stars-banner-logo.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: auto;
-
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: 99;
-      background: url('../../assets/sprites/sprite_tech.svg');
-      top: 19%;
-      right: 24.2%;
-      width: calc(1720px / 30);
-      height: 58px;
-      transform: rotate(-28.6deg);
-      animation: animate 15s steps(30) infinite;
-    }
+    //margin-left: auto;
   }
 }
 
 @media only screen and (max-width: 1280px) {
-  .banner-main_title {
-    font-size: 108px;
-
-    @media screen and (max-width: 1220px) {
-
-    }
-  }
-
   .animation-img-wrap {
+    width: 303px;
     height: 375px;
 
     &::before {
       content: '';
       background: url('../../assets/sprites/sprite_tech_small.svg');
-      right: 37%;
+      right: 26%;
       width: calc(1200px / 30);
       height: 40px;
       transform: rotate(-28.6deg);
@@ -131,73 +123,62 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1270px) {
-  .icon-item {
-    img {
-      width: 290px;
-    }
-  }
-}
-
 @media only screen and (max-width: 1180px) {
-  .icon-item {
-    img {
-      width: 255px;
-    }
-  }
-
   .main-title-wrapper {
-    padding-right: 15px;
+    padding-right: 30px;
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .icon-item {
-    img {
-      width: 230px;
+
+@media only screen and (max-width: 1140px) {
+  .animation-img-wrap {
+    width: 238px;
+    height: 271px;
+
+    &:before {
+      display: none;
     }
   }
 }
+
 
 @media only screen and (max-width: 970px) {
-  .icon-item {
-    img {
-      width: 220px;
-    }
+  .animation-img-wrap {
+    width: 138px;
+    height: 171px;
   }
-}
-
-@media only screen and (max-width: 935px) {
-  .icon-item {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .icon-item {
-    display: block;
-
-    img {
-      width: 190px;
-    }
-  }
+  //.icon-item {
+  //  display: none;
+  //}
 }
 
 @media only screen and (max-width: 755px) {
-  .icon-item {
-    display: none;
-  }
+  //.icon-item {
+  //  display: none;
+  //}
 }
 
 @media only screen and (max-width: 730px) {
-  .phone-screen-logo {
-    display: inline;
+  .icon-item {
+    display: none;
+  }
+
+  .main-title-black_part::after {
+    display: inline-block;
   }
 }
 
 @media only screen and (max-width: 610px) {
   .phone-screen-logo {
     width: 75px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .main-title-black_part::after {
+    width: 66px;
+    height: 82px;
+    margin-left: 16px;
   }
 }
 
@@ -208,8 +189,8 @@ export default {
 }
 
 @media only screen and (max-width: 440px) {
-  .phone-screen-br {
-    display: block;
+  .main-title-black_part::after {
+    display: inline-block;
   }
 }
 

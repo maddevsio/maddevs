@@ -108,6 +108,11 @@ export default {
 		&__header-logo {
       width: 35px;
 			height: 60px;
+
+      @media screen and (max-width: 768px){
+        width: 28px;
+        height: 49px;
+      }
     }
 
     &__content-wrap {

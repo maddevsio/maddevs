@@ -566,6 +566,12 @@
   }
 
   .banner-container {
+    .banner-main_title,
+    .banner-main_title--white,
+    .banner-main_title--white-first {
+      font-size: 108px;
+    }
+
     .text-content_wrapper {
       padding-bottom: 190px;
     }
@@ -582,6 +588,18 @@
 //    }
 //  }
 //}
+
+@media screen and (max-width: 1140px) {
+  .banner-container {
+    .banner-main_title,
+    .banner-main_title--white,
+    .banner-main_title--white-first {
+      font-size: 90px;
+      line-height: 101%;
+      letter-spacing: -0.04em;
+    }
+  }
+}
 
 @media only screen and (max-width: 1180px) {
   .section-title {
@@ -638,6 +656,13 @@
 
 @media only screen and (max-width: 970px) {
   .banner-container {
+    .banner-main_title,
+    .banner-main_title--white,
+    .banner-main_title--white-first {
+      font-size: 74px;
+      line-height: 96%;
+    }
+
     .text-content_wrapper {
       padding-bottom: 105px;
     }
@@ -708,12 +733,9 @@
     .banner-main_title,
     .banner-main_title--white,
     .banner-main_title--white-first {
-      font-size: 77px;
-      letter-spacing: -5px;
-    }
-
-    .icon-item {
-      display: none;
+      font-size: 50px;
+      line-height: 101%;
+      letter-spacing: -0.03em;
     }
   }
 }
@@ -757,8 +779,8 @@
     .banner-main_title,
     .banner-main_title--white,
     .banner-main_title--white-first {
-      font-size: 56px;
-      letter-spacing: -2px;
+      //font-size: 56px;
+      //letter-spacing: -2px;
     }
 
     .text-content_wrapper {
@@ -782,7 +804,7 @@
 }
 
 @media only screen and (max-width: 370px) {
-  .form-checkbox-label  {
+  .form-checkbox-label {
     padding-left: 29px;
   }
 
@@ -798,8 +820,8 @@
     .banner-main_title,
     .banner-main_title--white,
     .banner-main_title--white-first {
-      font-size: 49px;
-      line-height: 101%;
+      //font-size: 49px;
+      //line-height: 101%;
     }
 
     .text-content_wrapper {
