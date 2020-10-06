@@ -23,3 +23,4 @@ client/assets/img/Home/png/copyright/mad_copy--dont_touche.png
 
 # Nuxt build
 .nuxt
+dist/

@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation-wrap" v-if="currentPageName !== 'careers'" >
+  <div class="navigation-wrap container" v-if="currentPageName !== 'careers'" >
     <nav class="navigation-list" v-if="currentPageName === 'services'">
       <a href="#remote-tech-staff" class="navigation-item">Remote Tech Staff</a>
       <a href="#software-development" class="navigation-item">Software Development</a>

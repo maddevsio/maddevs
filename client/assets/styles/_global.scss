@@ -59,7 +59,6 @@
     font-weight: bold;
     font-size: 120px;
     line-height: 96%;
-    /* or 115px */
     letter-spacing: -0.04em;
     color: $text-color--black-lighter;
     -webkit-text-stroke: $text-stroke--white;
@@ -267,6 +266,7 @@
 
 .section-title {
   font-family: 'Poppins-Bold', sans-serif;
+  font-size: 87px;
 }
 
 .form-text {
@@ -289,10 +289,6 @@
   font-size: 40px;
   font-family: 'Poppins-Bold', sans-serif;
   letter-spacing: -1px;
-}
-
-.section-title {
-  font-size: 87px;
 }
 
 .paragraph {
@@ -512,25 +508,25 @@
   }
 }
 
-@media only screen and (max-width: 1480px) {
-  .banner-container {
-    .banner-main_title,
-    .banner-main_title--white,
-    .banner-main_title--white-first {
-      font-size: 162px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1440px) {
-  .banner-container {
-    .banner-main_title,
-    .banner-main_title--white,
-    .banner-main_title--white-first {
-      font-size: 149px;
-    }
-  }
-}
+//@media only screen and (max-width: 1480px) {
+//  .banner-container {
+//    .banner-main_title,
+//    .banner-main_title--white,
+//    .banner-main_title--white-first {
+//      font-size: 162px;
+//    }
+//  }
+//}
+//
+//@media only screen and (max-width: 1440px) {
+//  .banner-container {
+//    .banner-main_title,
+//    .banner-main_title--white,
+//    .banner-main_title--white-first {
+//      font-size: 149px;
+//    }
+//  }
+//}
 
 @media only screen and (max-width: 1390px) {
   .section-title {
@@ -542,15 +538,15 @@
   }
 }
 
-@media only screen and (max-width: 1340px) {
-  .banner-container {
-    .banner-main_title,
-    .banner-main_title--white,
-    .banner-main_title--white-first {
-      font-size: 131px;
-    }
-  }
-}
+//@media only screen and (max-width: 1340px) {
+//  .banner-container {
+//    .banner-main_title,
+//    .banner-main_title--white,
+//    .banner-main_title--white-first {
+//      font-size: 131px;
+//    }
+//  }
+//}
 
 @media only screen and (max-width: 1280px) {
   .main-title {
@@ -576,16 +572,16 @@
   }
 }
 
-@media only screen and (max-width: 1220px) {
-  .banner-container {
-    .banner-main_title,
-    .banner-main_title--white,
-    .banner-main_title--white-first  {
-      font-size: 110px;
-      letter-spacing: -8px;
-    }
-  }
-}
+//@media only screen and (max-width: 1220px) {
+//  .banner-container {
+//    .banner-main_title,
+//    .banner-main_title--white,
+//    .banner-main_title--white-first  {
+//      font-size: 110px;
+//      letter-spacing: -8px;
+//    }
+//  }
+//}
 
 @media only screen and (max-width: 1180px) {
   .section-title {
@@ -695,10 +691,6 @@
   .paragraph,
   .icon-item {
     letter-spacing: -1px;
-  }
-
-  .paragraph,
-  .icon-item {
     font-size: 18px;
   }
 }
