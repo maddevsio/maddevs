@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileInput component renders correctly 1`] = `
+<div
+  class="file-input"
+>
+  <input
+    accept=".pdf,.cv,.doc,.odt,.docx,.txt"
+    class="file-input__uploader"
+    id="file"
+    name="file"
+    type="file"
+  />
+   
+  <!---->
+   
+  <label
+    class="file-input__cv file-input__cv--attachable"
+    for="file"
+  >
+    <img
+      alt="attach file icon"
+      class="file-input__cv-icon"
+      src="@/assets/img/Careers/svg/attach_file.svg"
+    />
+    
+    Attach your CV
+  </label>
+</div>
+`;
