@@ -100,7 +100,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .we-create-it-project {
-    margin: 134px 0;
+    margin: 131px 0;
 
     &__content-wrapper {
       padding: 51px 80px 73px;

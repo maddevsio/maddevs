@@ -2,10 +2,16 @@
   <section id="technologies-and-tools" class="technologies-and_tools">
     <div class="container">
       <div class="technologies-and_tools__content-wrap">
-        <h2 class="technologies-and_tools__main-title main-title">
-            Technologies <br> & Tools
+        <h2 class="technologies-and_tools__main-title">
+          Technologies & Tools
         </h2>
-        <div class="technologies-and_tools__technologies-list">
+        <div class="tech_legend">
+          <div v-for="(item, key) in legend" :key="key" class="tech_legend__item" :class="`legend-${item.value.replace(/\W/g, '').toLowerCase()}`">
+            {{item.value}}
+          </div>
+        </div>
+        <div class="tech_container"></div>
+        <div style="display:none;" class="technologies-and_tools__technologies-list">
           <div class="technologies-and_tools__flex-group">
             <TechnologiesItem
               :title="frontend.title"
@@ -31,7 +37,7 @@
                 class="technologies-project-management"
               />
             </div>
-            <InfrastructureTechnologiesItem />
+            <InfrastructureTechnologiesItem/>
           </div>
         </div>
       </div>
@@ -51,6 +57,32 @@ export default {
   },
   data() {
     return {
+      legend: [
+        {
+          value: 'DevOps'
+        },
+        {
+          value:  'QA'
+        },
+        {
+          value: 'Backend'
+        },
+        {
+          value: 'Frontend'
+        },
+        {
+          value: 'Mobile'
+        },
+        {
+          value: 'PM'
+        },
+        {
+          value: 'Infrastructure'
+        },
+        {
+          value: 'UI/UX'
+        }
+      ],
       frontend: {
         title: 'Frontend',
         paragraph: 'We do frontend development at a fast pace, in accordance with ES6 standards. To create easy-to-maintain projects, we use current tools & technologies:'
@@ -73,115 +105,172 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/vars';
+@import '../../assets/styles/vars';
+@import '../../assets/styles/techIcons';
 
+.tech_legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__item {
+    margin-right: 31px;
+    color: #938F95;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      min-width: 16px;
+      height: 16px;
+      border-radius: 2px;
+      margin-right: 8px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  // establish Technical legends colors
+  $tech_legends: (
+    'devops': rgba(40,29,29,1),
+    'qa': rgba(33,33,33,1),
+    'backend': rgba(31,30,40,1),
+    'frontend': rgba(40,33,44,1),
+    'mobile': rgba(26,36,36,1),
+    'pm': rgba(38,38,31,1),
+    'infrastructure': rgba(38,32,27,1),
+    'uiux': rgba(37,33,29,1),
+  );
+
+  // loop, to style Legends
+  @each $name, $color in $tech_legends {
+    // selector based on class name
+    .legend-#{$name}:before {
+      background: $color;
+    }
+  }
+}
+
+.technologies-and_tools {
+  padding-bottom: 38px;
+
+  &__main-title {
+    padding-bottom: 41px;
+    color: $text-color--white;
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 62px;
+    line-height: 120%;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+
+  &__technologies-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__flex-group {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      max-width: 620px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1475px) {
   .technologies-and_tools {
-    padding-bottom: 38px;
+    &__flex-group {
+      div {
+        max-width: 585px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .technologies-and_tools {
+    padding-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 1420px) {
+  .technologies-and_tools {
+    &__flex-group {
+      div {
+        max-width: 505px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .technologies-and_tools {
+    padding-bottom: 37px;
 
     &__main-title {
-      padding-bottom: 41px;
-      color: $text-color--white;
+      padding-bottom: 32px;
     }
+  }
+}
 
-    &__technologies-list {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+@media only screen and (max-width: 1180px) {
+  .technologies-and_tools {
+    &__flex-group {
+      div {
+        max-width: 435px;
+      }
     }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .technologies-and_tools {
+    &__flex-group {
+      div {
+        max-width: 375px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .technologies-and_tools {
+    padding-bottom: 65px;
 
     &__flex-group {
-      display: flex;
-      justify-content: space-between;
+      flex-direction: column;
 
       div {
-        max-width: 620px;
+        max-width: initial;
+      }
+
+      &:first-child {
+        flex-direction: column-reverse;
       }
     }
   }
+}
 
-  @media only screen and (max-width: 1475px) {
-    .technologies-and_tools {
-      &__flex-group {
-        div {
-          max-width: 585px;
-        }
-      }
-    }
+@media only screen and (max-width: 430px) {
+  .technologies-and_tools {
+    padding-bottom: 35px;
   }
+}
 
-  @media only screen and (max-width: 1440px) {
-    .technologies-and_tools {
-      padding-bottom: 5px;
-    }
+@media only screen and (max-width: 350px) {
+  .technologies-and_tools {
+    padding-bottom: 0;
   }
-
-  @media only screen and (max-width: 1420px) {
-    .technologies-and_tools {
-      &__flex-group {
-        div {
-          max-width: 505px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .technologies-and_tools {
-      padding-bottom: 37px;
-
-      &__main-title {
-        padding-bottom: 32px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1180px) {
-    .technologies-and_tools {
-      &__flex-group {
-        div {
-          max-width: 435px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .technologies-and_tools {
-      &__flex-group {
-        div {
-          max-width: 375px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 940px) {
-    .technologies-and_tools {
-      padding-bottom: 65px;
-
-      &__flex-group {
-        flex-direction: column;
-
-        div {
-          max-width: initial;
-        }
-
-        &:first-child {
-          flex-direction: column-reverse;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 430px) {
-    .technologies-and_tools {
-      padding-bottom: 35px;
-    }
-  }
-
-  @media only screen and (max-width: 350px) {
-    .technologies-and_tools {
-      padding-bottom: 0;
-    }
-  }
+}
 </style>
