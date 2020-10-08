@@ -1,0 +1,923 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TechnologiesAndTools renders correctly 1`] = `
+<section
+  class="technologies-and_tools"
+  id="technologies-and-tools"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="technologies-and_tools__content-wrap"
+    >
+      <h2
+        class="technologies-and_tools__main-title"
+      >
+        
+        Technologies & Tools
+      
+      </h2>
+       
+      <div
+        class="tech_legend"
+      >
+        <div
+          class="tech_legend__item legend-devops"
+        >
+          
+          DevOps
+        
+        </div>
+        <div
+          class="tech_legend__item legend-qa"
+        >
+          
+          QA
+        
+        </div>
+        <div
+          class="tech_legend__item legend-backend"
+        >
+          
+          Backend
+        
+        </div>
+        <div
+          class="tech_legend__item legend-frontend"
+        >
+          
+          Frontend
+        
+        </div>
+        <div
+          class="tech_legend__item legend-mobile"
+        >
+          
+          Mobile
+        
+        </div>
+        <div
+          class="tech_legend__item legend-pm"
+        >
+          
+          PM
+        
+        </div>
+        <div
+          class="tech_legend__item legend-infrastructure"
+        >
+          
+          Infrastructure
+        
+        </div>
+        <div
+          class="tech_legend__item legend-uiux"
+        >
+          
+          UI/UX
+        
+        </div>
+      </div>
+       
+      <div
+        class="tech_container"
+      />
+       
+      <div
+        class="technologies-and_tools__technologies-list"
+        style="display: none;"
+      >
+        <div
+          class="technologies-and_tools__flex-group"
+        >
+          <div
+            class="technologies-item technologies-frontend"
+          >
+            <h4
+              class="technologies-item__title title-md"
+            >
+              Frontend
+            </h4>
+             
+            <p
+              class="technologies-item__paragraph paragraph"
+            >
+              We do frontend development at a fast pace, in accordance with ES6 standards. To create easy-to-maintain projects, we use current tools & technologies:
+            </p>
+             
+            <div
+              class="icons-list"
+            >
+              <div
+                class="icon-flex_group"
+              >
+                <div
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--react"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      React
+                    </p>
+                  </div>
+                </div>
+                 
+                <div
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--babel"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Babel
+                    </p>
+                  </div>
+                </div>
+              </div>
+               
+              <div
+                class="icon-flex_group"
+              >
+                <div
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--vue"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Vue
+                    </p>
+                  </div>
+                </div>
+                 
+                <div
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--webpack"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Webpack
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+          </div>
+           
+          <div
+            class="technologies-item technologies-backend"
+          >
+            <h4
+              class="technologies-item__title title-md"
+            >
+              Backend
+            </h4>
+             
+            <p
+              class="technologies-item__paragraph paragraph"
+            >
+              We build reliable backends for the heavy workloads generated by millions of users. Our team has experience with nearly all the popular programming languages:
+            </p>
+             
+            <!---->
+             
+            <div
+              class="icons-list"
+            >
+              <div
+                class="icon-flex_group"
+              >
+                <div
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--python"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Python
+                    </p>
+                  </div>
+                </div>
+                 
+                <div
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--golang"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Go
+                    </p>
+                  </div>
+                </div>
+              </div>
+               
+              <div
+                class="icon-flex_group"
+              >
+                <div
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--javascript"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      JavaScript
+                    </p>
+                  </div>
+                </div>
+                 
+                <div
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--php"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      PHP
+                    </p>
+                  </div>
+                </div>
+              </div>
+               
+              <div
+                class="icon-flex_group"
+              >
+                <div
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--node-js"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Node.js
+                    </p>
+                  </div>
+                </div>
+                 
+                <div
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--ruby"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Ruby
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            <!---->
+             
+            <!---->
+          </div>
+        </div>
+         
+        <div
+          class="technologies-and_tools__flex-group"
+        >
+          <div
+            class="technologies-and_tools__sub-flex_group"
+          >
+            <div
+              class="technologies-item technologies-mobile"
+            >
+              <h4
+                class="technologies-item__title title-md"
+              >
+                Mobile
+              </h4>
+               
+              <p
+                class="technologies-item__paragraph paragraph"
+              >
+                We don't just create mobile apps, we make them intuitive for super-smooth user journeys. Mad Devs do both iOs and Android development and perform audits of existing applications. You can turn to our mobile developers for any of the following programming languages:
+              </p>
+               
+              <!---->
+               
+              <!---->
+               
+              <div
+                class="icons-list"
+              >
+                <div
+                  class="icon-flex_group"
+                >
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--kotlin"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Kotlin
+                      </p>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--java"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Java
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                 
+                <div
+                  class="icon-flex_group"
+                >
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--objective"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Objective-C
+                      </p>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--swift"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Swift
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <!---->
+            </div>
+             
+            <div
+              class="technologies-item technologies-project-management"
+            >
+              <h4
+                class="technologies-item__title title-md"
+              >
+                Project Management
+              </h4>
+               
+              <p
+                class="technologies-item__paragraph paragraph"
+              >
+                Our project managers can provide you with a detailed report on the workload of every team member. We use modern tools and solutions for task tracking, team sync-ups and our daily communication process:
+              </p>
+               
+              <!---->
+               
+              <!---->
+               
+              <!---->
+               
+              <div
+                class="icons-list"
+              >
+                <div
+                  class="icon-flex_group"
+                >
+                  <div
+                    class="icon-item jira"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--jira"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Atlassian Jira
+                      </p>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--slack"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Slack
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                 
+                <div
+                  class="icon-flex_group"
+                >
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--hangouts"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Hangouts
+                      </p>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--skype"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Skype
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           
+          <div
+            class="infrastructure-content"
+          >
+            <h4
+              class="infrastructure-content__title title-md"
+            >
+              Infrastructure
+            </h4>
+             
+            <p
+              class="infrastructure-content__paragraph paragraph"
+            >
+              
+    We have helped our customers save up to 50% on infrastructure by optimising their cloud-resource consumption. We know how to get the best value for money, whichever cloud service provider you choose:
+  
+            </p>
+             
+            <div
+              class="icons-list"
+            >
+              <div
+                class="icon-flex_group"
+              >
+                <div
+                  class="icon-item aws"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--asw"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      ASW
+                    </p>
+                  </div>
+                </div>
+                 
+                <div
+                  class="icon-item digital-ocean"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--digital-ocean"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Digital Ocean
+                    </p>
+                  </div>
+                </div>
+              </div>
+               
+              <div
+                class="icon-flex_group"
+              >
+                <div
+                  class="icon-item heroku"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--heroku"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Heroku
+                    </p>
+                  </div>
+                </div>
+                 
+                <div
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--azure"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Azure
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            <p
+              class="infrastructure-content__paragraph paragraph"
+            >
+              
+    Mad Devs infrastructure leads also have expertise with a wide range of tools for tools сonfiguration, СI/CD and monitoring:
+  
+            </p>
+             
+            <ul
+              class="icons-list"
+            >
+              <li
+                class="icon-item"
+              >
+                <div
+                  class="tech-icon"
+                >
+                  <span
+                    class="tech-icon__logo tech-icon__logo--ansible"
+                  />
+                   
+                  <p
+                    class="tech-icon__name paragraph"
+                  >
+                    Ansible
+                  </p>
+                </div>
+              </li>
+              <li
+                class="icon-item"
+              >
+                <div
+                  class="tech-icon"
+                >
+                  <span
+                    class="tech-icon__logo tech-icon__logo--terraform"
+                  />
+                   
+                  <p
+                    class="tech-icon__name paragraph"
+                  >
+                    Terraform
+                  </p>
+                </div>
+              </li>
+              <li
+                class="icon-item"
+              >
+                <div
+                  class="tech-icon"
+                >
+                  <span
+                    class="tech-icon__logo tech-icon__logo--cloudformation"
+                  />
+                   
+                  <p
+                    class="tech-icon__name paragraph"
+                  >
+                    CloudFormation
+                  </p>
+                </div>
+              </li>
+              <li
+                class="icon-item"
+              >
+                <div
+                  class="tech-icon"
+                >
+                  <span
+                    class="tech-icon__logo tech-icon__logo--jenkins"
+                  />
+                   
+                  <p
+                    class="tech-icon__name paragraph"
+                  >
+                    Jenkins
+                  </p>
+                </div>
+              </li>
+              <li
+                class="icon-item"
+              >
+                <div
+                  class="tech-icon"
+                >
+                  <span
+                    class="tech-icon__logo tech-icon__logo--bamboo"
+                  />
+                   
+                  <p
+                    class="tech-icon__name paragraph"
+                  >
+                    Bamboo
+                  </p>
+                </div>
+              </li>
+              <li
+                class="icon-item"
+              >
+                <div
+                  class="tech-icon"
+                >
+                  <span
+                    class="tech-icon__logo tech-icon__logo--team-city"
+                  />
+                   
+                  <p
+                    class="tech-icon__name paragraph"
+                  >
+                    TeamCity
+                  </p>
+                </div>
+              </li>
+              <li
+                class="icon-item"
+              >
+                <div
+                  class="tech-icon"
+                >
+                  <span
+                    class="tech-icon__logo tech-icon__logo--travis"
+                  />
+                   
+                  <p
+                    class="tech-icon__name paragraph"
+                  >
+                    Travis CI
+                  </p>
+                </div>
+              </li>
+              <li
+                class="icon-item"
+              >
+                <div
+                  class="tech-icon"
+                >
+                  <span
+                    class="tech-icon__logo tech-icon__logo--aswcp"
+                  />
+                   
+                  <p
+                    class="tech-icon__name paragraph"
+                  >
+                    AWS CodePipeline
+                  </p>
+                </div>
+              </li>
+              <li
+                class="icon-item"
+              >
+                <div
+                  class="tech-icon"
+                >
+                  <span
+                    class="tech-icon__logo tech-icon__logo--circle"
+                  />
+                   
+                  <p
+                    class="tech-icon__name paragraph"
+                  >
+                    Circle CI
+                  </p>
+                </div>
+              </li>
+              <li
+                class="icon-item"
+              >
+                <div
+                  class="tech-icon"
+                >
+                  <span
+                    class="tech-icon__logo tech-icon__logo--elk"
+                  />
+                   
+                  <p
+                    class="tech-icon__name paragraph"
+                  >
+                    ELK
+                  </p>
+                </div>
+              </li>
+              <li
+                class="icon-item"
+              >
+                <div
+                  class="tech-icon"
+                >
+                  <span
+                    class="tech-icon__logo tech-icon__logo--senrty"
+                  />
+                   
+                  <p
+                    class="tech-icon__name paragraph"
+                  >
+                    Sentry
+                  </p>
+                </div>
+              </li>
+              <li
+                class="icon-item"
+              >
+                <div
+                  class="tech-icon"
+                >
+                  <span
+                    class="tech-icon__logo tech-icon__logo--prometheus"
+                  />
+                   
+                  <p
+                    class="tech-icon__name paragraph"
+                  >
+                    Prometheus
+                  </p>
+                </div>
+              </li>
+              <li
+                class="icon-item"
+              >
+                <div
+                  class="tech-icon"
+                >
+                  <span
+                    class="tech-icon__logo tech-icon__logo--amazon-cloudwatch"
+                  />
+                   
+                  <p
+                    class="tech-icon__name paragraph"
+                  >
+                    Amazon CloudWatch
+                  </p>
+                </div>
+              </li>
+              <li
+                class="icon-item"
+              >
+                <div
+                  class="tech-icon"
+                >
+                  <span
+                    class="tech-icon__logo tech-icon__logo--gitlab-ci"
+                  />
+                   
+                  <p
+                    class="tech-icon__name paragraph"
+                  >
+                    GitLab CI
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
