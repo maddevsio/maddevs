@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`We Create It Project For renders correctly 1`] = `
+<section
+  class="we-create-it-project"
+  id="we-create-it-project"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="we-create-it-project__content-wrapper"
+    >
+      <h2
+        class="we-create-it-project__title title-md"
+      >
+        
+        We create 
+        <br />
+         IT projects for:
+      
+      </h2>
+       
+      <div
+        class="we-create-it-project__projects-type_list row gy-0"
+      >
+        <div
+          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="we-create-it-project__paragraph paragraph-lg"
+          >
+            Content Streaming 
+            <br />
+             Transportation
+          </div>
+        </div>
+         
+        <div
+          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="we-create-it-project__paragraph paragraph-lg"
+          >
+            HealthTech 
+            <br />
+             IoTs
+          </div>
+        </div>
+         
+        <div
+          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="we-create-it-project__paragraph paragraph-lg"
+          >
+            E-Commerce 
+            <br />
+             AdTech
+          </div>
+        </div>
+         
+        <div
+          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="we-create-it-project__paragraph paragraph-lg"
+          >
+            E-Learning 
+            <br />
+             FinTech
+          </div>
+        </div>
+         
+        <div
+          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="we-create-it-project__paragraph paragraph-lg"
+          >
+            Serverless 
+            <br />
+             BYOD
+          </div>
+        </div>
+         
+        <div
+          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="we-create-it-project__paragraph paragraph-lg"
+          >
+            Blockchain 
+            <br />
+             FoodTech
+          </div>
+        </div>
+      </div>
+       
+      <ul
+        class="we-create-it-project__country-list row"
+      >
+        <li
+          class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+        >
+          <span
+            class="we-create-it-project__logo-country we-create-it-project__logo-country--united-states"
+          />
+        </li>
+        <li
+          class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+        >
+          <span
+            class="we-create-it-project__logo-country we-create-it-project__logo-country--australia"
+          />
+        </li>
+        <li
+          class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+        >
+          <span
+            class="we-create-it-project__logo-country we-create-it-project__logo-country--united-kingdom"
+          />
+        </li>
+        <li
+          class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+        >
+          <span
+            class="we-create-it-project__logo-country we-create-it-project__logo-country--poland"
+          />
+        </li>
+        <li
+          class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+        >
+          <span
+            class="we-create-it-project__logo-country we-create-it-project__logo-country--austria"
+          />
+        </li>
+        <li
+          class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+        >
+          <span
+            class="we-create-it-project__logo-country we-create-it-project__logo-country--france"
+          />
+        </li>
+        <li
+          class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+        >
+          <span
+            class="we-create-it-project__logo-country we-create-it-project__logo-country--switzerland"
+          />
+        </li>
+        <li
+          class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+        >
+          <span
+            class="we-create-it-project__logo-country we-create-it-project__logo-country--belarus"
+          />
+        </li>
+        <li
+          class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+        >
+          <span
+            class="we-create-it-project__logo-country we-create-it-project__logo-country--vietnam"
+          />
+        </li>
+        <li
+          class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+        >
+          <span
+            class="we-create-it-project__logo-country we-create-it-project__logo-country--kazakhstan"
+          />
+        </li>
+        <li
+          class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+        >
+          <span
+            class="we-create-it-project__logo-country we-create-it-project__logo-country--russia"
+          />
+        </li>
+        <li
+          class="we-create-it-project__country-item col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"
+        >
+          <span
+            class="we-create-it-project__logo-country we-create-it-project__logo-country--singapore"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+`;
