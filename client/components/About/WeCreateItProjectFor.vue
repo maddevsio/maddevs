@@ -135,6 +135,15 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1040px) {
+    .we-create-it-project {
+      &__content-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1024px) {
     .we-create-it-project {
       &__content-wrapper {
