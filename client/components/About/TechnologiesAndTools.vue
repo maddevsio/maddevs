@@ -7,14 +7,13 @@
         </h2>
         <div class="tech_legend">
           <div v-for="(item, key) in legend" :key="key" class="tech_legend__item"
-               :class="`legend-${item.value.replace(/\W/g, '').toLowerCase()}`">
+               :class="(`legend-${item.value.replace(/\W/g, '').toLowerCase()}`)">
             {{ item.value }}
           </div>
         </div>
         <div class="tech_container">
           <div class="tech_item"
                :key="index"
-               :data-index="index"
                :class="(`${item.technology}-${item.value} ${item.technology}`)"
                v-for="(item, index) in technologies"
           >
@@ -332,37 +331,37 @@ export default {
         {
           title: 'Figma',
           value: 'figma',
-          technology: 'uxui'
+          technology: 'uiux'
         },
         {
           title: 'Adobe Suite',
           value: 'adobe',
-          technology: 'uxui'
+          technology: 'uiux'
         },
         {
           title: 'Sketch',
           value: 'sketch',
-          technology: 'uxui'
+          technology: 'uiux'
         },
         {
           title: 'InVision',
           value: 'invision',
-          technology: 'uxui'
+          technology: 'uiux'
         },
         {
           title: 'Zeplin',
           value: 'zeplin',
-          technology: 'uxui'
+          technology: 'uiux'
         },
         {
           title: 'Balsamic',
           value: 'balsamic',
-          technology: 'uxui'
+          technology: 'uiux'
         },
         {
           title: 'Principle',
           value: 'principle-app',
-          technology: 'uxui'
+          technology: 'uiux'
         },
         {
           title: 'PostCSS',
@@ -489,8 +488,14 @@ $tech_legends: (
   'mobile': rgba(26, 36, 36, 1),
   'pm': rgba(38, 38, 31, 1),
   'infrastructure': rgba(38, 32, 27, 1),
-  'uxui': rgba(37, 33, 29, 1),
+  'uiux': rgba(37, 33, 29, 1),
 );
+
+@mixin mediaMiddleScreen($property) {
+  @media screen and (max-width: 1024px){
+    order: $property;
+  }
+}
 
 .tech_legend {
   display: flex;
@@ -533,17 +538,21 @@ $tech_legends: (
 .tech_container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 1px;
+  grid-gap: 1px 1px;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(9, 1fr);
+  }
 }
 
 .tech_item {
-  max-width: 102px;
   width: 100%;
   height: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   span {
     white-space: nowrap;
@@ -552,6 +561,11 @@ $tech_legends: (
     line-height: 13px;
     color: rgba(255, 255, 255, 0.25);
     margin-top: 15px;
+    width: 100%;
+    max-width: 90px;
+    text-overflow: ellipsis;
+    text-align: center;
+    overflow: hidden;
   }
 
   @each $name, $color in $tech_legends {
@@ -565,6 +579,520 @@ $tech_legends: (
         display: block;
       }
     }
+  }
+
+  // Done
+  &.qa-jasmine {
+    order: 72;
+
+    @include mediaMiddleScreen(54);
+  }
+
+  // Done
+  &.qa-selenoid {
+    order: 70;
+
+    @include mediaMiddleScreen(52);
+  }
+
+  // Done
+  &.qa-appium {
+    order: 47;
+
+    @include mediaMiddleScreen(50);
+  }
+
+  // Done
+  &.qa-cucumber {
+    order: 48;
+
+    @include mediaMiddleScreen(51);
+  }
+
+  // Done
+  &.qa-test-ng {
+    order: 99;
+  }
+
+  // Done
+  &.qa-pytest {
+    order: 71;
+
+    @include mediaMiddleScreen(53);
+  }
+
+  // Done
+  &.qa-selenium {
+    order: 60;
+
+    @include mediaMiddleScreen(45);
+  }
+
+  // Done
+  &.qa-selenium-grid {
+    order: 59;
+
+    @include mediaMiddleScreen(44);
+  }
+
+  // Done
+  &.backend-python {
+    order: 31;
+
+    @include mediaMiddleScreen(32);
+  }
+
+  // Done
+  &.backend-go {
+    order: 32;
+
+    @include mediaMiddleScreen(33);
+  }
+
+  // Done
+  &.backend-node {
+    order: 33;
+
+    @include mediaMiddleScreen(34);
+  }
+
+  // Done
+  &.backend-js {
+    order: 34;
+
+    @include mediaMiddleScreen(35);
+  }
+
+  // Done
+  &.backend-typescript {
+    order: 43;
+
+    @include mediaMiddleScreen(36);
+  }
+
+  // Done
+  &.backend-php {
+    order: 44;
+
+    @include mediaMiddleScreen(41);
+  }
+
+  // Done
+  &.backend-ruby {
+    order: 45;
+
+    @include mediaMiddleScreen(42);
+  }
+
+  // Done
+  &.backend-c-plus {
+    order: 59;
+
+    @include mediaMiddleScreen(25);
+  }
+
+  // Done
+  &.backend-c {
+    order: 46;
+
+    @include mediaMiddleScreen(43);
+  }
+
+  // Done
+  &.mobile-kotlin {
+    order: 11;
+
+    @include mediaMiddleScreen(19);
+  }
+
+  // Done
+  &.mobile-java {
+    order: 12;
+
+    @include mediaMiddleScreen(22);
+  }
+
+  // Done
+  &.mobile-obj-c {
+    order: 35;
+
+    @include mediaMiddleScreen(23);
+  }
+
+  // Done
+  &.mobile-swift {
+    order: 23;
+
+    @include mediaMiddleScreen(20);
+  }
+
+  // Done
+  &.mobile-apple {
+    order: 36;
+
+    @include mediaMiddleScreen(24);
+  }
+
+  // Done
+  &.mobile-android {
+    order: 24;
+
+    @include mediaMiddleScreen(21);
+  }
+
+  // Done
+  &.frontend-js {
+    order: 65;
+
+    @include mediaMiddleScreen(70);
+  }
+
+  // Done
+  &.frontend-react {
+    order: 66;
+
+    @include mediaMiddleScreen(71);
+  }
+
+  // Done
+  &.frontend-babel {
+    order: 67;
+
+    @include mediaMiddleScreen(72);
+  }
+
+  // Done
+  &.frontend-vue {
+    order: 68;
+
+    @include mediaMiddleScreen(73);
+  }
+
+  // Done
+  &.frontend-webpack {
+    order: 55;
+
+    @include mediaMiddleScreen(63);
+  }
+
+  // Done
+  &.frontend-next {
+    order: 56;
+
+    @include mediaMiddleScreen(64);
+  }
+
+  // Done
+  &.frontend-nuxt {
+    order: 57;
+
+    @include mediaMiddleScreen(65);
+  }
+
+  // Done
+  &.frontend-sass {
+    order: 69;
+
+    @include mediaMiddleScreen(74);
+  }
+
+  // Done
+  &.frontend-post-css {
+    order: 52;
+
+    @include mediaMiddleScreen(60);
+  }
+
+  // Done
+  &.frontend-typescript {
+    order: 53;
+
+    @include mediaMiddleScreen(61);
+  }
+
+  // Done
+  &.frontend-angular {
+    order: 54;
+
+    @include mediaMiddleScreen(62);
+  }
+
+  // Done
+  &.devops-ansible {
+    order: 1;
+  }
+
+  // Done
+  &.devops-terraform {
+    order: 2;
+  }
+
+  // Done
+  &.devops-cloud-formation {
+    order: 3;
+  }
+
+  // Done
+  &.devops-jenkins {
+    order: 4;
+  }
+
+  // Done
+  &.devops-bamboo {
+    order: 5;
+  }
+
+  // Done
+  &.devops-gitlab {
+    order: 6;
+  }
+
+  // Done
+  &.devops-travis-ci {
+    order: 13;
+
+    @include mediaMiddleScreen(10);
+  }
+
+  // Done
+  &.devops-circle-ci {
+    order: 14;
+
+    @include mediaMiddleScreen(11);
+  }
+
+  // Done
+  &.devops-elastic {
+    order: 15;
+
+    @include mediaMiddleScreen(12);
+  }
+
+  // Done
+  &.devops-sentry {
+    order: 16;
+
+    @include mediaMiddleScreen(13);
+  }
+
+  // Done
+  &.devops-cloud-watch {
+    order: 17;
+
+    @include mediaMiddleScreen(14);
+  }
+
+  // Done
+  &.devops-prometheus {
+    order: 18;
+
+    @include mediaMiddleScreen(15);
+  }
+
+  // Done
+  &.infrastructure-aws {
+    order: 7;
+  }
+
+  // Done
+  &.infrastructure-gsp {
+    order: 8;
+  }
+
+  // Done
+  &.infrastructure-digital-ocean {
+    order: 9;
+  }
+
+  // Done
+  &.infrastructure-azure {
+    order: 10;
+
+    @include mediaMiddleScreen(27);
+  }
+
+  // Done
+  &.infrastructure-heroku {
+    order: 20;
+
+    @include mediaMiddleScreen(17);
+  }
+
+  // Done
+  &.infrastructure-netlify {
+    order: 21;
+
+    @include mediaMiddleScreen(18);
+  }
+
+  // Done
+  &.infrastructure-cloudflare {
+    order: 22;
+
+    @include mediaMiddleScreen(26);
+  }
+
+  // Done
+  &.infrastructure-cloud-native {
+    order: 19;
+
+    @include mediaMiddleScreen(16);
+  }
+
+  // Done
+  &.pm-jira {
+    order: 25;
+
+    @include mediaMiddleScreen(28);
+  }
+
+  // Done
+  &.pm-slack {
+    order: 26;
+
+    @include mediaMiddleScreen(29);
+  }
+
+  // Done
+  &.pm-meet {
+    order: 27;
+
+    @include mediaMiddleScreen(30);
+  }
+
+  // Done
+  &.pm-zoom {
+    order: 28;
+
+    @include mediaMiddleScreen(31);
+  }
+
+  // Done
+  &.pm-miro {
+    order: 29;
+
+    @include mediaMiddleScreen(47);
+  }
+
+  // Done
+  &.pm-jira-assistant {
+    order: 38;
+
+  }
+
+  // Done
+  &.pm-loom {
+    order: 37;
+  }
+
+  // Done
+  &.pm-jira-service-desk {
+    order: 39;
+  }
+
+  // Done
+  &.pm-basecamp {
+    order: 40;
+  }
+
+  // Done
+  &.pm-trello {
+    order: 30;
+
+    @include mediaMiddleScreen(46);
+  }
+
+  // Done
+  &.pm-notion {
+    order: 41;
+
+    @include mediaMiddleScreen(48);
+  }
+
+  // Done
+  &.pm-zapier {
+    order: 42;
+
+    @include mediaMiddleScreen(49);
+  }
+
+  // Done
+  &.uiux-figma {
+    order: 49;
+
+    @include mediaMiddleScreen(57);
+  }
+
+  // Done
+  &.uiux-sketch {
+    order: 51;
+
+    @include mediaMiddleScreen(59);
+  }
+
+  // Done
+  &.uiux-adobe {
+    order: 50;
+
+    @include mediaMiddleScreen(58);
+  }
+
+  // Done
+  &.uiux-frame {
+    order: 99;
+  }
+
+  // Done
+  &.uiux-invision {
+    order: 61;
+
+    @include mediaMiddleScreen(66);
+  }
+
+  // Done
+  &.uiux-zeplin {
+    order: 62;
+
+    @include mediaMiddleScreen(67);
+  }
+
+  // Done
+  &.uiux-balsamic {
+    order: 63;
+
+    @include mediaMiddleScreen(68);
+  }
+
+  // Done
+  &.uiux-principle-app {
+    order: 64;
+
+    @include mediaMiddleScreen(69);
+  }
+
+  // Done
+  &.other-confluence {
+    order: 99;
+  }
+
+  // Done
+  &.other-teamcity {
+    order: 99;
+  }
+
+  // Done
+  &.other-aws-code {
+    order: 99;
+  }
+
+  // Done
+  &.other-team {
+    order: 99;
+  }
+
+  // Done
+  &.other-skype {
+    order: 99;
   }
 }
 
