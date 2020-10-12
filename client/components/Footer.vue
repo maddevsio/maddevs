@@ -10,8 +10,6 @@
 							<span class="footer__underline" />
 						</div>
 					</div>
-          <footerContacts />
-					<footerSocialNetworkBar class="footer__social-network"/>
 					<div class="footer__links-wrapper">
 						<p class="footer__company-name">© Mad Devs - {{ currentYear }}</p>
 						<div class="footer__links">
@@ -24,7 +22,6 @@
 				<div class="footer__form-wrap col-xl-5 col-lg-4 col-md-5">
 					<footerForm />
 				</div>
-				<footerBottomContentMobile />
 			</div>
     </div>
   </footer>
@@ -33,16 +30,12 @@
 <script>
 import footerForm from '@/components/Footer/footer-form';
 import footerContacts from '@/components/Footer/footer-contacts';
-import footerSocialNetworkBar from '@/components/Footer/footer-social-network';
-import footerBottomContentMobile from '@/components/Footer/footer-bottom-content-mobile';
 
 export default {
   name: 'Footer',
   components: {
     footerForm,
-    footerContacts,
-    footerSocialNetworkBar,
-    footerBottomContentMobile
+    footerContacts
   },
   mounted() {
     if ($nuxt.$route.name) {
