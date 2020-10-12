@@ -11,6 +11,7 @@
 					<footerForm />
 				</div>
 			</div>
+			<footerNavbarMobile />
     </div>
   </footer>
 </template>
@@ -19,13 +20,15 @@
 import footerForm from '@/components/Footer/footer-form';
 import footerContacts from '@/components/Footer/footer-contacts';
 import footerNavbar from '@/components/Footer/footer-navbar';
+import footerNavbarMobile from '@/components/Footer/footer-navbar-mobile';
 
 export default {
   name: 'Footer',
   components: {
     footerForm,
     footerContacts,
-    footerNavbar
+    footerNavbar,
+    footerNavbarMobile
   },
   mounted() {
     if ($nuxt.$route.name) {
@@ -75,29 +78,19 @@ export default {
 		border-top: 1px solid $border-color--grey-dark;
 	}
 
-	@media only screen and (max-width: 1320px) {
-		.footer {
-			&__nav-item,
-			&__company-name {
-				font-size: 14px;
-			}
-		}
-	}
-
 	@media only screen and (max-width: 1200px) {
 		.footer {
 			&__main-title {
 				margin-bottom: 20px;
-			}
-
-			&__navbar {
-				margin-top: 59px;
 			}
 		}
 	}
 
 	@media only screen and (max-width: 991px) {
 		.footer {
+			padding-top: 75px;
+			padding-bottom: 50px;
+
 			&__form-wrap,
 			&__left-content {
 				padding-left: 0;
@@ -105,8 +98,22 @@ export default {
 			}
 			
 			&__form-wrap {
-				padding-top: 39px;
+				padding-top: 40px;
 			}
+		}
+	}
+
+	@media only screen and (max-width: 576px) {
+		.footer {
+			&__main-title {
+				font-size: 46px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 375px) {
+		.footer {
+			padding-top: 50px;
 		}
 	}
 </style>

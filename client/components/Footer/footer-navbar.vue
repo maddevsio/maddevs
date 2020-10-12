@@ -53,6 +53,21 @@ export default {
 		}
   }
 
+  @media only screen and (max-width: 1320px) {
+		.footer-navbar {
+			&__nav-item,
+			&__company-name {
+				font-size: 14px;
+			}
+		}
+  }
+  
+  @media only screen and (max-width: 1200px) {
+		.footer-navbar {
+      margin-top: 59px;
+		}
+	}
+
 	@media only screen and (max-width: 991px) {
     .footer-navbar {
       display: none;

@@ -99,6 +99,39 @@ export default {
 	@import '../../assets/styles/_socialNetworkIcons';
 	@import '../../assets/styles/_flagsIcons';
 
+	@mixin contacts-head-content {
+		&__head-content {
+			flex-direction: column;
+			margin-bottom: 50px;
+		}
+
+		&__contact-item {
+			&:last-child {
+				margin-top: 50px;
+			}
+		}
+	}
+
+	@mixin messenger-list-grid {
+		&__messengers-list {
+			display: grid;
+			grid-template-columns: repeat(2, max-content);
+			padding-bottom: 35px;
+		}
+
+		&__messenger-item-wrapper {
+			justify-content: flex-start;
+		}
+
+		&__messengers-list {
+			li {
+				&:nth-child(3) {
+					margin-left: -8px;
+				}
+			}
+		}
+	}
+
 	.footer-contacts {
 		&__head-content {
 			margin-bottom: 78px;
@@ -230,43 +263,18 @@ export default {
 
 	@media only screen and (max-width: 1200px) {
 		.footer-contacts {
-			&__head-content {
-				flex-direction: column;
-				margin-bottom: 50px;
-			}
-
-			&__contact-item {
-				&:last-child {
-					margin-top: 50px;
-				}
-			}
-
 			&__messengers-list {
 				margin-bottom: 40px;
 				padding-bottom: 40px;
 			}
+
+			@include contacts-head-content;
 		}
 	}
 
 	@media only screen and (min-width: 992px) and (max-width: 1140px) {
 		.footer-contacts {
-			&__messengers-list {
-				display: grid;
-				grid-template-columns: repeat(2, max-content);
-				padding-bottom: 35px;
-			}
-
-			&__messenger-item-wrapper {
-				justify-content: flex-start;
-			}
-
-			&__messengers-list {
-				li {
-					&:nth-child(3) {
-						margin-left: -8px;
-					}
-				}
-			}
+		  @include messenger-list-grid;
 		}
 	}
 
@@ -291,6 +299,18 @@ export default {
 					margin-right: 0;
 				}
 			}
+		}
+	}
+
+	@media only screen and (max-width: 640px) {
+		.footer-contacts {
+			@include contacts-head-content;
+		}
+	}
+
+	@media only screen and (max-width: 576px) {
+		.footer-contacts {
+		  @include messenger-list-grid;
 		}
 	}
 </style>
