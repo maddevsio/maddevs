@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Customer Testimonials renders correctly 1`] = `
+<section
+  class="customer-testimonials"
+  id="customer-testimonials"
+>
+  <div
+    class="container"
+  >
+    <h2
+      class="customer-testimonials__title title"
+    >
+      
+      Customer Testimonials
+    
+    </h2>
+     
+    <div
+      class="customer-testimonials__content-wrap row"
+    >
+      <div
+        class="customer-testimonials__widget-col col-xl-8 col-lg-8"
+      >
+        <client-only-stub>
+          <div
+            class="customer-testimonials__widget-wrap"
+          >
+            <div
+              class="clutch-widget"
+              data-clutchcompany-id="258762"
+              data-expandifr="true"
+              data-height="auto"
+              data-url="https://widget.clutch.co"
+              data-widget-type="4"
+            />
+          </div>
+        </client-only-stub>
+      </div>
+       
+      <div
+        class="col-xl-4 col-lg-4"
+      >
+        <div
+          class="customer-testimonials__testimonials-list row"
+        >
+          <div
+            class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
+          >
+            <div
+              class="customer-testimonials__testimonials-text paragraph-md"
+            >
+              
+              Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.
+            
+            </div>
+             
+            <div
+              class="customer-testimonials__customer-info"
+            >
+              <div
+                class="customer-testimonials__profile"
+              >
+                <img
+                  alt="Atif Mahmud,"
+                  class="customer-testimonials__customer-image"
+                  loading="lazy"
+                  src="[object Object]"
+                />
+                 
+                <p
+                  class="customer-testimonials__customer-name paragraph-sm"
+                >
+                  
+                  Atif Mahmud, 
+                  <br />
+                   The UK
+                
+                </p>
+              </div>
+               
+              <div
+                class="customer-testimonials__project"
+              >
+                <a
+                  href="https://teacherly.io/"
+                  rel="nofollow"
+                  target="blank"
+                >
+                  <img
+                    alt="teacherly"
+                    class="customer-testimonials__project-image customer-testimonials__teacherly"
+                    loading="lazy"
+                    src="[object Object]"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
+          >
+            <div
+              class="customer-testimonials__testimonials-text paragraph-md"
+            >
+              
+              We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.
+            
+            </div>
+             
+            <div
+              class="customer-testimonials__customer-info"
+            >
+              <div
+                class="customer-testimonials__profile"
+              >
+                <img
+                  alt="Daniel Vartanov,"
+                  class="customer-testimonials__customer-image"
+                  loading="lazy"
+                  src="[object Object]"
+                />
+                 
+                <p
+                  class="customer-testimonials__customer-name paragraph-sm"
+                >
+                  
+                  Daniel Vartanov, 
+                  <br />
+                   The UK
+                
+                </p>
+              </div>
+               
+              <div
+                class="customer-testimonials__project"
+              >
+                <a
+                  href="https://veeqo.com/"
+                  rel="nofollow"
+                  target="blank"
+                >
+                  <img
+                    alt="veeqo"
+                    class="customer-testimonials__project-image customer-testimonials__veeqo"
+                    loading="lazy"
+                    src="[object Object]"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
+          >
+            <div
+              class="customer-testimonials__testimonials-text paragraph-md"
+            >
+              
+              I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.
+            
+            </div>
+             
+            <div
+              class="customer-testimonials__customer-info"
+            >
+              <div
+                class="customer-testimonials__profile"
+              >
+                <img
+                  alt="Stefan Streichsbier,"
+                  class="customer-testimonials__customer-image"
+                  loading="lazy"
+                  src="[object Object]"
+                />
+                 
+                <p
+                  class="customer-testimonials__customer-name paragraph-sm"
+                >
+                  
+                  Stefan Streichsbier, 
+                  <br />
+                   Singapore
+                
+                </p>
+              </div>
+               
+              <div
+                class="customer-testimonials__project"
+              >
+                <a
+                  href="https://guardrails.io/"
+                  rel="nofollow"
+                  target="blank"
+                >
+                  <img
+                    alt="guardrails"
+                    class="customer-testimonials__project-image customer-testimonials__guardrails"
+                    loading="lazy"
+                    src="[object Object]"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

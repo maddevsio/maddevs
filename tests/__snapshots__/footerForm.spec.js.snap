@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer form renders correctly 1`] = `
+<div
+  class="footer-form form"
+>
+  <validationobserver-stub />
+   
+  <transition-stub
+    name="fade"
+  >
+    <!---->
+  </transition-stub>
+</div>
+`;
