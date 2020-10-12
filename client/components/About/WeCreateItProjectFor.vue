@@ -1,32 +1,32 @@
 <template>
-  <section id="we-create-it-project" class="we-create-it-project">
+  <section id="weCreateItProject" class="weCreateItProject">
     <div class="container">
-      <div class="we-create-it-project__content-wrapper">
-        <h2 class="we-create-it-project__main-title">
+      <div class="weCreateItProject__content-wrapper">
+        <h2 class="weCreateItProject__main-title">
           We create <br> IT projects for:
         </h2>
-        <div class="we-create-it-project__projects-type_list row gy-0">
-          <div class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="we-create-it-project__paragraph">Content Streaming <br> Transportation</p>
+        <div class="weCreateItProject__projects-type_list row gy-0">
+          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <p class="weCreateItProject__paragraph">Content Streaming <br> Transportation</p>
           </div>
-          <div class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="we-create-it-project__paragraph">HealthTech <br> IoTs</p>
+          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <p class="weCreateItProject__paragraph">HealthTech <br> IoTs</p>
           </div>
-          <div class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="we-create-it-project__paragraph">E-Commerce <br> AdTech</p>
+          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <p class="weCreateItProject__paragraph">E-Commerce <br> AdTech</p>
           </div>
-          <div class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="we-create-it-project__paragraph">E-Learning <br> FinTech</p>
+          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <p class="weCreateItProject__paragraph">E-Learning <br> FinTech</p>
           </div>
-          <div class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="we-create-it-project__paragraph">Serverless <br> BYOD</p>
+          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <p class="weCreateItProject__paragraph">Serverless <br> BYOD</p>
           </div>
-          <div class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="we-create-it-project__paragraph">Blockchain <br> FoodTech</p>
+          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <p class="weCreateItProject__paragraph">Blockchain <br> FoodTech</p>
           </div>
         </div>
-        <ul class="we-create-it-project__flags-list">
-          <li v-for="(flag, i) in flags" :key="i" class="we-create-it-project__flag-item" :class="flag"></li>
+        <ul class="weCreateItProject__flags-list">
+          <li v-for="(flag, i) in flags" :key="i" class="weCreateItProject__flag-item" :class="flag"></li>
         </ul>
       </div>
     </div>
@@ -39,7 +39,7 @@ export default {
   name: 'WeCreateItProjectFor',
   data() {
     return {
-      flags: [
+      flags: [ // if will be added or removed flag, need to change css grid, on line 94 and 178
         'flag-usa',
         'flag-australia',
         'flag-vietnam',
@@ -72,7 +72,7 @@ export default {
   @import '../../assets/styles/vars';
   @import '../../assets/styles/_flagsIcons';
 
-  .we-create-it-project {
+  .weCreateItProject {
     margin: 131px 0;
 
     &__content-wrapper {
@@ -128,7 +128,7 @@ export default {
   }
 
   @media only screen and (max-width: 1270px) {
-    .we-create-it-project {
+    .weCreateItProject {
       &__paragraph {
         font-size: 16px;
       }
@@ -136,7 +136,7 @@ export default {
   }
 
   @media only screen and (max-width: 1040px) {
-    .we-create-it-project {
+    .weCreateItProject {
       &__content-wrapper {
         padding-left: 20px;
         padding-right: 20px;
@@ -145,7 +145,7 @@ export default {
   }
 
   @media only screen and (max-width: 1024px) {
-    .we-create-it-project {
+    .weCreateItProject {
       &__content-wrapper {
         padding: 25px 33px 33px;
       }
@@ -173,7 +173,7 @@ export default {
   }
 
   @media only screen and (max-width: 720px) {
-    .we-create-it-project {
+    .weCreateItProject {
       &__flags-list {
         grid-template-columns: repeat(11, 1fr);
         grid-row-gap: 19px;
@@ -182,7 +182,7 @@ export default {
   }
 
   @media only screen and (max-width: 576px) {
-    .we-create-it-project {
+    .weCreateItProject {
       &__main-title {
         br {
           display: block;
@@ -192,7 +192,7 @@ export default {
   }
 
   @media screen and (min-width: 575px) and (max-width: 576px) {
-    .we-create-it-project {
+    .weCreateItProject {
       &__content-wrapper {
         padding-left: 13px;
         padding-right: 13px;
@@ -201,7 +201,7 @@ export default {
   }
 
   @media only screen and (max-width: 480px) {
-    .we-create-it-project {
+    .weCreateItProject {
       margin-top: 34px;
       margin-bottom: 45px;
       background-color: $bgcolor--white;
@@ -243,7 +243,7 @@ export default {
   }
 
   @media only screen and (max-width: 345px) {
-    .we-create-it-project {
+    .weCreateItProject {
       &__paragraph {
         font-size: 14px;
       }
