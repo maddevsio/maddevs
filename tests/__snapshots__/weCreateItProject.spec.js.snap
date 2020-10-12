@@ -2,17 +2,17 @@
 
 exports[`We Create It Project For renders correctly 1`] = `
 <section
-  class="we-create-it-project"
-  id="we-create-it-project"
+  class="weCreateItProject"
+  id="weCreateItProject"
 >
   <div
     class="container"
   >
     <div
-      class="we-create-it-project__content-wrapper"
+      class="weCreateItProject__content-wrapper"
     >
       <h2
-        class="we-create-it-project__main-title"
+        class="weCreateItProject__main-title"
       >
         
         We create 
@@ -22,13 +22,13 @@ exports[`We Create It Project For renders correctly 1`] = `
       </h2>
        
       <div
-        class="we-create-it-project__projects-type_list row gy-0"
+        class="weCreateItProject__projects-type_list row gy-0"
       >
         <div
-          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
         >
           <p
-            class="we-create-it-project__paragraph"
+            class="weCreateItProject__paragraph"
           >
             Content Streaming 
             <br />
@@ -37,10 +37,10 @@ exports[`We Create It Project For renders correctly 1`] = `
         </div>
          
         <div
-          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
         >
           <p
-            class="we-create-it-project__paragraph"
+            class="weCreateItProject__paragraph"
           >
             HealthTech 
             <br />
@@ -49,10 +49,10 @@ exports[`We Create It Project For renders correctly 1`] = `
         </div>
          
         <div
-          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
         >
           <p
-            class="we-create-it-project__paragraph"
+            class="weCreateItProject__paragraph"
           >
             E-Commerce 
             <br />
@@ -61,10 +61,10 @@ exports[`We Create It Project For renders correctly 1`] = `
         </div>
          
         <div
-          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
         >
           <p
-            class="we-create-it-project__paragraph"
+            class="weCreateItProject__paragraph"
           >
             E-Learning 
             <br />
@@ -73,10 +73,10 @@ exports[`We Create It Project For renders correctly 1`] = `
         </div>
          
         <div
-          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
         >
           <p
-            class="we-create-it-project__paragraph"
+            class="weCreateItProject__paragraph"
           >
             Serverless 
             <br />
@@ -85,10 +85,10 @@ exports[`We Create It Project For renders correctly 1`] = `
         </div>
          
         <div
-          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
         >
           <p
-            class="we-create-it-project__paragraph"
+            class="weCreateItProject__paragraph"
           >
             Blockchain 
             <br />
@@ -98,73 +98,73 @@ exports[`We Create It Project For renders correctly 1`] = `
       </div>
        
       <ul
-        class="we-create-it-project__flags-list"
+        class="weCreateItProject__flags-list"
       >
         <li
-          class="we-create-it-project__flag-item flag-usa"
+          class="weCreateItProject__flag-item flag-usa"
         />
         <li
-          class="we-create-it-project__flag-item flag-australia"
+          class="weCreateItProject__flag-item flag-australia"
         />
         <li
-          class="we-create-it-project__flag-item flag-vietnam"
+          class="weCreateItProject__flag-item flag-vietnam"
         />
         <li
-          class="we-create-it-project__flag-item flag-france"
+          class="weCreateItProject__flag-item flag-france"
         />
         <li
-          class="we-create-it-project__flag-item flag-uk"
+          class="weCreateItProject__flag-item flag-uk"
         />
         <li
-          class="we-create-it-project__flag-item flag-indonesia"
+          class="weCreateItProject__flag-item flag-indonesia"
         />
         <li
-          class="we-create-it-project__flag-item flag-germany"
+          class="weCreateItProject__flag-item flag-germany"
         />
         <li
-          class="we-create-it-project__flag-item flag-austria"
+          class="weCreateItProject__flag-item flag-austria"
         />
         <li
-          class="we-create-it-project__flag-item flag-switzerland"
+          class="weCreateItProject__flag-item flag-switzerland"
         />
         <li
-          class="we-create-it-project__flag-item flag-canada"
+          class="weCreateItProject__flag-item flag-canada"
         />
         <li
-          class="we-create-it-project__flag-item flag-latvia"
+          class="weCreateItProject__flag-item flag-latvia"
         />
         <li
-          class="we-create-it-project__flag-item flag-kazakhstan"
+          class="weCreateItProject__flag-item flag-kazakhstan"
         />
         <li
-          class="we-create-it-project__flag-item flag-sweden"
+          class="weCreateItProject__flag-item flag-sweden"
         />
         <li
-          class="we-create-it-project__flag-item flag-finland"
+          class="weCreateItProject__flag-item flag-finland"
         />
         <li
-          class="we-create-it-project__flag-item flag-united-arab-emirates"
+          class="weCreateItProject__flag-item flag-united-arab-emirates"
         />
         <li
-          class="we-create-it-project__flag-item flag-denmark"
+          class="weCreateItProject__flag-item flag-denmark"
         />
         <li
-          class="we-create-it-project__flag-item flag-japan"
+          class="weCreateItProject__flag-item flag-japan"
         />
         <li
-          class="we-create-it-project__flag-item flag-norway"
+          class="weCreateItProject__flag-item flag-norway"
         />
         <li
-          class="we-create-it-project__flag-item flag-portugal"
+          class="weCreateItProject__flag-item flag-portugal"
         />
         <li
-          class="we-create-it-project__flag-item flag-katar"
+          class="weCreateItProject__flag-item flag-katar"
         />
         <li
-          class="we-create-it-project__flag-item flag-south-africa"
+          class="weCreateItProject__flag-item flag-south-africa"
         />
         <li
-          class="we-create-it-project__flag-item flag-netherlands"
+          class="weCreateItProject__flag-item flag-netherlands"
         />
       </ul>
     </div>
