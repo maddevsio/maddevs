@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`We Create It Project For renders correctly 1`] = `
+<section
+  class="we-create-it-project"
+  id="we-create-it-project"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="we-create-it-project__content-wrapper"
+    >
+      <h2
+        class="we-create-it-project__main-title"
+      >
+        
+        We create 
+        <br />
+         IT projects for:
+      
+      </h2>
+       
+      <div
+        class="we-create-it-project__projects-type_list row gy-0"
+      >
+        <div
+          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <p
+            class="we-create-it-project__paragraph"
+          >
+            Content Streaming 
+            <br />
+             Transportation
+          </p>
+        </div>
+         
+        <div
+          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <p
+            class="we-create-it-project__paragraph"
+          >
+            HealthTech 
+            <br />
+             IoTs
+          </p>
+        </div>
+         
+        <div
+          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <p
+            class="we-create-it-project__paragraph"
+          >
+            E-Commerce 
+            <br />
+             AdTech
+          </p>
+        </div>
+         
+        <div
+          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <p
+            class="we-create-it-project__paragraph"
+          >
+            E-Learning 
+            <br />
+             FinTech
+          </p>
+        </div>
+         
+        <div
+          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <p
+            class="we-create-it-project__paragraph"
+          >
+            Serverless 
+            <br />
+             BYOD
+          </p>
+        </div>
+         
+        <div
+          class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <p
+            class="we-create-it-project__paragraph"
+          >
+            Blockchain 
+            <br />
+             FoodTech
+          </p>
+        </div>
+      </div>
+       
+      <ul
+        class="we-create-it-project__flags-list"
+      >
+        <li
+          class="we-create-it-project__flag-item flag-usa"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-australia"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-vietnam"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-france"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-uk"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-indonesia"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-germany"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-austria"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-switzerland"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-canada"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-latvia"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-kazakhstan"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-sweden"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-finland"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-united-arab-emirates"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-denmark"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-japan"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-norway"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-portugal"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-katar"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-south-africa"
+        />
+        <li
+          class="we-create-it-project__flag-item flag-netherlands"
+        />
+      </ul>
+    </div>
+  </div>
+</section>
+`;

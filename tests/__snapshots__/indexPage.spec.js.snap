@@ -1,0 +1,3342 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index page renders correctly 1`] = `
+<main
+  class="main"
+>
+  <div
+    class="banner-container"
+  >
+    <div
+      class="banner-content"
+    >
+      <div
+        class="text-content_wrapper container"
+      >
+        <div
+          class="main-title-wrapper col-xxl-7 col-xl-7 col-lg-7"
+        >
+          <h1
+            class="banner-main_title"
+          >
+            <span
+              class="main-title-black_part"
+            >
+              Mad Devs
+            </span>
+             
+            <span
+              class="main-title-white_part"
+            >
+              <br />
+              Engineering
+              <br />
+              Your Growth
+            </span>
+          </h1>
+        </div>
+         
+        <div
+          class="icon-item col-xxl-4 col-xl-5 col-lg-5"
+        >
+          <div
+            class="animation-img-wrap"
+          />
+        </div>
+      </div>
+    </div>
+     
+    <div
+      class="navigation-wrap container"
+    >
+      <nav
+        class="navigation-list"
+      >
+        <router-link-stub
+          class="navigation-item"
+          to="services/#remote-tech-staff"
+        >
+          Remote Tech 
+          <span
+            class="mobile_hidden"
+          >
+            Staff
+          </span>
+        </router-link-stub>
+         
+        <router-link-stub
+          class="navigation-item"
+          to="services/#software-development"
+        >
+          Software Development
+        </router-link-stub>
+         
+        <router-link-stub
+          class="navigation-item"
+          to="services/#infrastructure-optimisation"
+        >
+          Infrastructure Optimization
+        </router-link-stub>
+         
+        <router-link-stub
+          class="navigation-item"
+          to="services/#it-consulting"
+        >
+          IT Consulting
+        </router-link-stub>
+      </nav>
+    </div>
+  </div>
+   
+  <section
+    class="we-create-it-project"
+    id="we-create-it-project"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="we-create-it-project__content-wrapper"
+      >
+        <h2
+          class="we-create-it-project__main-title"
+        >
+          
+        We create 
+          <br />
+           IT projects for:
+      
+        </h2>
+         
+        <div
+          class="we-create-it-project__projects-type_list row gy-0"
+        >
+          <div
+            class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          >
+            <p
+              class="we-create-it-project__paragraph"
+            >
+              Content Streaming 
+              <br />
+               Transportation
+            </p>
+          </div>
+           
+          <div
+            class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          >
+            <p
+              class="we-create-it-project__paragraph"
+            >
+              HealthTech 
+              <br />
+               IoTs
+            </p>
+          </div>
+           
+          <div
+            class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          >
+            <p
+              class="we-create-it-project__paragraph"
+            >
+              E-Commerce 
+              <br />
+               AdTech
+            </p>
+          </div>
+           
+          <div
+            class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          >
+            <p
+              class="we-create-it-project__paragraph"
+            >
+              E-Learning 
+              <br />
+               FinTech
+            </p>
+          </div>
+           
+          <div
+            class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          >
+            <p
+              class="we-create-it-project__paragraph"
+            >
+              Serverless 
+              <br />
+               BYOD
+            </p>
+          </div>
+           
+          <div
+            class="we-create-it-project__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          >
+            <p
+              class="we-create-it-project__paragraph"
+            >
+              Blockchain 
+              <br />
+               FoodTech
+            </p>
+          </div>
+        </div>
+         
+        <ul
+          class="we-create-it-project__flags-list"
+        >
+          <li
+            class="we-create-it-project__flag-item flag-usa"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-australia"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-vietnam"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-france"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-uk"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-indonesia"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-germany"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-austria"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-switzerland"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-canada"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-latvia"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-kazakhstan"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-sweden"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-finland"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-united-arab-emirates"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-denmark"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-japan"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-norway"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-portugal"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-katar"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-south-africa"
+          />
+          <li
+            class="we-create-it-project__flag-item flag-netherlands"
+          />
+        </ul>
+      </div>
+    </div>
+  </section>
+   
+  <section
+    class="technologies-and_tools"
+    id="technologies-and-tools"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="technologies-and_tools__content-wrap"
+      >
+        <h2
+          class="technologies-and_tools__main-title"
+        >
+          
+        Technologies & Tools
+      
+        </h2>
+         
+        <div
+          class="tech_legend"
+        >
+          <div
+            class="tech_legend__item legend-devops"
+          >
+            
+          DevOps
+        
+          </div>
+          <div
+            class="tech_legend__item legend-qa"
+          >
+            
+          QA
+        
+          </div>
+          <div
+            class="tech_legend__item legend-backend"
+          >
+            
+          Backend
+        
+          </div>
+          <div
+            class="tech_legend__item legend-frontend"
+          >
+            
+          Frontend
+        
+          </div>
+          <div
+            class="tech_legend__item legend-mobile"
+          >
+            
+          Mobile
+        
+          </div>
+          <div
+            class="tech_legend__item legend-pm"
+          >
+            
+          PM
+        
+          </div>
+          <div
+            class="tech_legend__item legend-infrastructure"
+          >
+            
+          Infrastructure
+        
+          </div>
+          <div
+            class="tech_legend__item legend-uiux"
+          >
+            
+          UI/UX
+        
+          </div>
+        </div>
+         
+        <div
+          class="tech_container"
+        >
+          <div
+            class="tech_item devops-ansible devops"
+          >
+            <span>
+              Ansible
+            </span>
+          </div>
+          <div
+            class="tech_item devops-terraform devops"
+          >
+            <span>
+              Terraform
+            </span>
+          </div>
+          <div
+            class="tech_item devops-cloud-formation devops"
+          >
+            <span>
+              CloudFormation
+            </span>
+          </div>
+          <div
+            class="tech_item devops-jenkins devops"
+          >
+            <span>
+              Jenkins
+            </span>
+          </div>
+          <div
+            class="tech_item devops-bamboo devops"
+          >
+            <span>
+              Bamboo
+            </span>
+          </div>
+          <div
+            class="tech_item devops-gitlab devops"
+          >
+            <span>
+              GitlabCI
+            </span>
+          </div>
+          <div
+            class="tech_item devops-travis-ci devops"
+          >
+            <span>
+              TravisCI
+            </span>
+          </div>
+          <div
+            class="tech_item devops-elastic devops"
+          >
+            <span>
+              ELK
+            </span>
+          </div>
+          <div
+            class="tech_item devops-circle-ci devops"
+          >
+            <span>
+              CircleCI
+            </span>
+          </div>
+          <div
+            class="tech_item devops-sentry devops"
+          >
+            <span>
+              Sentry
+            </span>
+          </div>
+          <div
+            class="tech_item devops-cloud-watch devops"
+          >
+            <span>
+              CloudWatch
+            </span>
+          </div>
+          <div
+            class="tech_item devops-prometheus devops"
+          >
+            <span>
+              Prometheus
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-aws infrastructure"
+          >
+            <span>
+              AWS
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-gsp infrastructure"
+          >
+            <span>
+              GCP
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-digital-ocean infrastructure"
+          >
+            <span>
+              Digital Ocean
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-azure infrastructure"
+          >
+            <span>
+              Azure
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-cloud-native infrastructure"
+          >
+            <span>
+              CloudNative
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-heroku infrastructure"
+          >
+            <span>
+              Heroku
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-netlify infrastructure"
+          >
+            <span>
+              Netlify
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-cloudflare infrastructure"
+          >
+            <span>
+              CloudFlare
+            </span>
+          </div>
+          <div
+            class="tech_item mobile-kotlin mobile"
+          >
+            <span>
+              Kotlin
+            </span>
+          </div>
+          <div
+            class="tech_item mobile-java mobile"
+          >
+            <span>
+              Java
+            </span>
+          </div>
+          <div
+            class="tech_item mobile-obj-c mobile"
+          >
+            <span>
+              Objective-C
+            </span>
+          </div>
+          <div
+            class="tech_item mobile-swift mobile"
+          >
+            <span>
+              Swift
+            </span>
+          </div>
+          <div
+            class="tech_item mobile-apple mobile"
+          >
+            <span>
+              IOS
+            </span>
+          </div>
+          <div
+            class="tech_item mobile-android mobile"
+          >
+            <span>
+              Android
+            </span>
+          </div>
+          <div
+            class="tech_item pm-jira pm"
+          >
+            <span>
+              Jira
+            </span>
+          </div>
+          <div
+            class="tech_item pm-slack pm"
+          >
+            <span>
+              Slack
+            </span>
+          </div>
+          <div
+            class="tech_item pm-meet pm"
+          >
+            <span>
+              Meet
+            </span>
+          </div>
+          <div
+            class="tech_item pm-zoom pm"
+          >
+            <span>
+              Zoom
+            </span>
+          </div>
+          <div
+            class="tech_item pm-miro pm"
+          >
+            <span>
+              Miro
+            </span>
+          </div>
+          <div
+            class="tech_item pm-trello pm"
+          >
+            <span>
+              Trello
+            </span>
+          </div>
+          <div
+            class="tech_item pm-loom pm"
+          >
+            <span>
+              Loom
+            </span>
+          </div>
+          <div
+            class="tech_item pm-jira-assistant pm"
+          >
+            <span>
+              Jira Assistant
+            </span>
+          </div>
+          <div
+            class="tech_item pm-jira-service-desk pm"
+          >
+            <span>
+              Service Desk
+            </span>
+          </div>
+          <div
+            class="tech_item pm-basecamp pm"
+          >
+            <span>
+              Basecamp
+            </span>
+          </div>
+          <div
+            class="tech_item pm-notion pm"
+          >
+            <span>
+              Notion
+            </span>
+          </div>
+          <div
+            class="tech_item pm-zapier pm"
+          >
+            <span>
+              Zapier
+            </span>
+          </div>
+          <div
+            class="tech_item backend-python backend"
+          >
+            <span>
+              Python
+            </span>
+          </div>
+          <div
+            class="tech_item backend-go backend"
+          >
+            <span>
+              Go
+            </span>
+          </div>
+          <div
+            class="tech_item backend-node backend"
+          >
+            <span>
+              Node.js
+            </span>
+          </div>
+          <div
+            class="tech_item backend-js backend"
+          >
+            <span>
+              JavaScript
+            </span>
+          </div>
+          <div
+            class="tech_item backend-typescript backend"
+          >
+            <span>
+              TypeScript
+            </span>
+          </div>
+          <div
+            class="tech_item backend-php backend"
+          >
+            <span>
+              PHP
+            </span>
+          </div>
+          <div
+            class="tech_item backend-ruby backend"
+          >
+            <span>
+              Ruby
+            </span>
+          </div>
+          <div
+            class="tech_item backend-c backend"
+          >
+            <span>
+              C
+            </span>
+          </div>
+          <div
+            class="tech_item backend-c-plus backend"
+          >
+            <span>
+              C++
+            </span>
+          </div>
+          <div
+            class="tech_item uiux-figma uiux"
+          >
+            <span>
+              Figma
+            </span>
+          </div>
+          <div
+            class="tech_item uiux-adobe uiux"
+          >
+            <span>
+              Adobe Suite
+            </span>
+          </div>
+          <div
+            class="tech_item uiux-sketch uiux"
+          >
+            <span>
+              Sketch
+            </span>
+          </div>
+          <div
+            class="tech_item uiux-invision uiux"
+          >
+            <span>
+              InVision
+            </span>
+          </div>
+          <div
+            class="tech_item uiux-zeplin uiux"
+          >
+            <span>
+              Zeplin
+            </span>
+          </div>
+          <div
+            class="tech_item uiux-balsamic uiux"
+          >
+            <span>
+              Balsamic
+            </span>
+          </div>
+          <div
+            class="tech_item uiux-principle-app uiux"
+          >
+            <span>
+              Principle
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-post-css frontend"
+          >
+            <span>
+              PostCSS
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-typescript frontend"
+          >
+            <span>
+              TypeScript
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-angular frontend"
+          >
+            <span>
+              Angular
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-webpack frontend"
+          >
+            <span>
+              Webpack
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-next frontend"
+          >
+            <span>
+              Next.js
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-nuxt frontend"
+          >
+            <span>
+              Nuxt.js
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-js frontend"
+          >
+            <span>
+              JavaScript
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-react frontend"
+          >
+            <span>
+              React
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-babel frontend"
+          >
+            <span>
+              Babel
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-vue frontend"
+          >
+            <span>
+              Vue
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-sass frontend"
+          >
+            <span>
+              SASS
+            </span>
+          </div>
+          <div
+            class="tech_item qa-jasmine qa"
+          >
+            <span>
+              Jasmine
+            </span>
+          </div>
+          <div
+            class="tech_item qa-selenoid qa"
+          >
+            <span>
+              Selenoid
+            </span>
+          </div>
+          <div
+            class="tech_item qa-appium qa"
+          >
+            <span>
+              Appium
+            </span>
+          </div>
+          <div
+            class="tech_item qa-cucumber qa"
+          >
+            <span>
+              Cucumber
+            </span>
+          </div>
+          <div
+            class="tech_item qa-pytest qa"
+          >
+            <span>
+              PyTest
+            </span>
+          </div>
+          <div
+            class="tech_item qa-selenium qa"
+          >
+            <span>
+              Selenium
+            </span>
+          </div>
+          <div
+            class="tech_item qa-selenium-grid qa"
+          >
+            <span>
+              Selenium Grid
+            </span>
+          </div>
+        </div>
+         
+        <div
+          class="technologies-and_tools__technologies-list"
+          style="display: none;"
+        >
+          <div
+            class="technologies-and_tools__flex-group"
+          >
+            <div
+              class="technologies-item technologies-frontend"
+            >
+              <h4
+                class="technologies-item__title title-md"
+              >
+                Frontend
+              </h4>
+               
+              <p
+                class="technologies-item__paragraph paragraph"
+              >
+                We do frontend development at a fast pace, in accordance with ES6 standards. To create easy-to-maintain projects, we use current tools & technologies:
+              </p>
+               
+              <div
+                class="icons-list"
+              >
+                <div
+                  class="icon-flex_group"
+                >
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--react"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        React
+                      </p>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--babel"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Babel
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                 
+                <div
+                  class="icon-flex_group"
+                >
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--vue"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Vue
+                      </p>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--webpack"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Webpack
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <!---->
+               
+              <!---->
+               
+              <!---->
+            </div>
+             
+            <div
+              class="technologies-item technologies-backend"
+            >
+              <h4
+                class="technologies-item__title title-md"
+              >
+                Backend
+              </h4>
+               
+              <p
+                class="technologies-item__paragraph paragraph"
+              >
+                We build reliable backends for the heavy workloads generated by millions of users. Our team has experience with nearly all the popular programming languages:
+              </p>
+               
+              <!---->
+               
+              <div
+                class="icons-list"
+              >
+                <div
+                  class="icon-flex_group"
+                >
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--python"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Python
+                      </p>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--golang"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Go
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                 
+                <div
+                  class="icon-flex_group"
+                >
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--javascript"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        JavaScript
+                      </p>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--php"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        PHP
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                 
+                <div
+                  class="icon-flex_group"
+                >
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--node-js"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Node.js
+                      </p>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--ruby"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Ruby
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <!---->
+               
+              <!---->
+            </div>
+          </div>
+           
+          <div
+            class="technologies-and_tools__flex-group"
+          >
+            <div
+              class="technologies-and_tools__sub-flex_group"
+            >
+              <div
+                class="technologies-item technologies-mobile"
+              >
+                <h4
+                  class="technologies-item__title title-md"
+                >
+                  Mobile
+                </h4>
+                 
+                <p
+                  class="technologies-item__paragraph paragraph"
+                >
+                  We don't just create mobile apps, we make them intuitive for super-smooth user journeys. Mad Devs do both iOs and Android development and perform audits of existing applications. You can turn to our mobile developers for any of the following programming languages:
+                </p>
+                 
+                <!---->
+                 
+                <!---->
+                 
+                <div
+                  class="icons-list"
+                >
+                  <div
+                    class="icon-flex_group"
+                  >
+                    <div
+                      class="icon-item"
+                    >
+                      <div
+                        class="tech-icon"
+                      >
+                        <span
+                          class="tech-icon__logo tech-icon__logo--kotlin"
+                        />
+                         
+                        <p
+                          class="tech-icon__name paragraph"
+                        >
+                          Kotlin
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="icon-item"
+                    >
+                      <div
+                        class="tech-icon"
+                      >
+                        <span
+                          class="tech-icon__logo tech-icon__logo--java"
+                        />
+                         
+                        <p
+                          class="tech-icon__name paragraph"
+                        >
+                          Java
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="icon-flex_group"
+                  >
+                    <div
+                      class="icon-item"
+                    >
+                      <div
+                        class="tech-icon"
+                      >
+                        <span
+                          class="tech-icon__logo tech-icon__logo--objective"
+                        />
+                         
+                        <p
+                          class="tech-icon__name paragraph"
+                        >
+                          Objective-C
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="icon-item"
+                    >
+                      <div
+                        class="tech-icon"
+                      >
+                        <span
+                          class="tech-icon__logo tech-icon__logo--swift"
+                        />
+                         
+                        <p
+                          class="tech-icon__name paragraph"
+                        >
+                          Swift
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 
+                <!---->
+              </div>
+               
+              <div
+                class="technologies-item technologies-project-management"
+              >
+                <h4
+                  class="technologies-item__title title-md"
+                >
+                  Project Management
+                </h4>
+                 
+                <p
+                  class="technologies-item__paragraph paragraph"
+                >
+                  Our project managers can provide you with a detailed report on the workload of every team member. We use modern tools and solutions for task tracking, team sync-ups and our daily communication process:
+                </p>
+                 
+                <!---->
+                 
+                <!---->
+                 
+                <!---->
+                 
+                <div
+                  class="icons-list"
+                >
+                  <div
+                    class="icon-flex_group"
+                  >
+                    <div
+                      class="icon-item jira"
+                    >
+                      <div
+                        class="tech-icon"
+                      >
+                        <span
+                          class="tech-icon__logo tech-icon__logo--jira"
+                        />
+                         
+                        <p
+                          class="tech-icon__name paragraph"
+                        >
+                          Atlassian Jira
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="icon-item"
+                    >
+                      <div
+                        class="tech-icon"
+                      >
+                        <span
+                          class="tech-icon__logo tech-icon__logo--slack"
+                        />
+                         
+                        <p
+                          class="tech-icon__name paragraph"
+                        >
+                          Slack
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="icon-flex_group"
+                  >
+                    <div
+                      class="icon-item"
+                    >
+                      <div
+                        class="tech-icon"
+                      >
+                        <span
+                          class="tech-icon__logo tech-icon__logo--hangouts"
+                        />
+                         
+                        <p
+                          class="tech-icon__name paragraph"
+                        >
+                          Hangouts
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="icon-item"
+                    >
+                      <div
+                        class="tech-icon"
+                      >
+                        <span
+                          class="tech-icon__logo tech-icon__logo--skype"
+                        />
+                         
+                        <p
+                          class="tech-icon__name paragraph"
+                        >
+                          Skype
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            <div
+              class="infrastructure-content"
+            >
+              <h4
+                class="infrastructure-content__title title-md"
+              >
+                Infrastructure
+              </h4>
+               
+              <p
+                class="infrastructure-content__paragraph paragraph"
+              >
+                
+    We have helped our customers save up to 50% on infrastructure by optimising their cloud-resource consumption. We know how to get the best value for money, whichever cloud service provider you choose:
+  
+              </p>
+               
+              <div
+                class="icons-list"
+              >
+                <div
+                  class="icon-flex_group"
+                >
+                  <div
+                    class="icon-item aws"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--asw"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        ASW
+                      </p>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="icon-item digital-ocean"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--digital-ocean"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Digital Ocean
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                 
+                <div
+                  class="icon-flex_group"
+                >
+                  <div
+                    class="icon-item heroku"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--heroku"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Heroku
+                      </p>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="icon-item"
+                  >
+                    <div
+                      class="tech-icon"
+                    >
+                      <span
+                        class="tech-icon__logo tech-icon__logo--azure"
+                      />
+                       
+                      <p
+                        class="tech-icon__name paragraph"
+                      >
+                        Azure
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <p
+                class="infrastructure-content__paragraph paragraph"
+              >
+                
+    Mad Devs infrastructure leads also have expertise with a wide range of tools for tools сonfiguration, СI/CD and monitoring:
+  
+              </p>
+               
+              <ul
+                class="icons-list"
+              >
+                <li
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--ansible"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Ansible
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--terraform"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Terraform
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--cloudformation"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      CloudFormation
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--jenkins"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Jenkins
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--bamboo"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Bamboo
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--team-city"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      TeamCity
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--travis"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Travis CI
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--aswcp"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      AWS CodePipeline
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--circle"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Circle CI
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--elk"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      ELK
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--senrty"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Sentry
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--prometheus"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Prometheus
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--amazon-cloudwatch"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      Amazon CloudWatch
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="icon-item"
+                >
+                  <div
+                    class="tech-icon"
+                  >
+                    <span
+                      class="tech-icon__logo tech-icon__logo--gitlab-ci"
+                    />
+                     
+                    <p
+                      class="tech-icon__name paragraph"
+                    >
+                      GitLab CI
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  <section
+    class="case-studies"
+    id="case-studies"
+  >
+    <div
+      class="container"
+    >
+      <div>
+        <h2
+          class="case-studies__main-title main-title"
+        >
+          
+        Case
+        
+          <span>
+            Studies
+          </span>
+        </h2>
+         
+        <!---->
+      </div>
+       
+      <div
+        class="projects"
+      >
+        <a
+          class="single-project"
+          href="https://blog.maddevs.io/namba-food-top-1-delivery-service-in-central-asia-3df8ca4d436d?source=friends_link&sk=1dd67cc82dad8e4fae756b3a4d47f121"
+          style="background: rgb(248, 247, 246);"
+        >
+          <div
+            class="single-project__container"
+          >
+            <div
+              class="single-project__content-wrap"
+            >
+              <span
+                class="single-project__logo-bg single-project__logo-bg--nambafoodColored"
+              />
+               
+              <h4
+                class="single-project__sub-title title-md"
+              >
+                
+        Contactless Delivery Service
+      
+              </h4>
+               
+              <p
+                class="single-project__paragraph paragraph"
+              >
+                
+        Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.
+      
+              </p>
+               
+              <div
+                class="contribution-widget"
+              >
+                <svg
+                  class="contribution-widget__img contribution-widget__img_nambafood"
+                  fill="none"
+                  viewBox="0 0 20 18"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M18.5953 0.101606L10.0137 3.89286L1.4321 0.101606C0.8301 -0.214585 0 0.239607 0 1.05169V16.8817C0 17.4883 0.375465 17.9827 0.88497 17.9979C0.908393 18.0007 0.932093 18.0007 0.955516 17.9979H1.00647L6.63061 17.433L5.56535 15.9642C5.09975 15.3356 5.66412 14.7897 6.26141 15.002C6.38134 15.0445 6.51146 14.9884 6.62826 15.0179L5.21732 10.4138C5.21184 10.3979 5.20713 10.382 5.20243 10.3661L5.19146 10.3312V10.3206C5.15304 10.1337 5.18595 9.93963 5.28409 9.7744C5.38224 9.60918 5.53896 9.48397 5.72523 9.42196C5.9115 9.35995 6.1147 9.36536 6.29716 9.43717C6.47963 9.50899 6.62901 9.64234 6.71762 9.81253V9.81936C6.73094 9.84514 8.33627 13.6766 8.33627 13.6766C8.3737 13.4824 8.48149 13.3074 8.6403 13.1832C8.7991 13.0589 8.99851 12.9935 9.20268 12.9987C9.40686 13.0039 9.60242 13.0794 9.75424 13.2116C9.90605 13.3437 10.0042 13.5239 10.031 13.7198C10.0592 13.5182 10.1628 13.3335 10.322 13.2006C10.4812 13.0676 10.6852 12.9955 10.8956 12.9979C11.3149 12.9979 11.6402 13.3566 11.7131 13.7433L12.6671 11.1425C12.7331 10.9685 12.8602 10.8224 13.0263 10.7297C13.1923 10.637 13.3866 10.6037 13.5755 10.6354C13.7643 10.6672 13.9356 10.7621 14.0595 10.9035C14.1835 11.045 14.2521 11.224 14.2536 11.4094V11.4337L13.4039 17.4277L19.0218 17.9925H19.0727C19.0961 17.9954 19.1198 17.9954 19.1432 17.9925C19.6528 17.9774 20 17.486 20 16.8787V1.0479C19.9992 0.236575 19.1973 -0.214585 18.5953 0.101606Z"
+                    fill=""
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                 
+                <span
+                  class="contribution-widget__content-mobile contribution-widget__content-mobile_nambafood"
+                >
+                  contribution: Backend, Infrastructure
+                </span>
+                 
+                <span
+                  class="contribution-widget__content contribution-widget__content_nambafood"
+                >
+                  contribution: Backend, Infrastructure, Frontend
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="single-project__background single-project__background_first-project"
+            />
+          </div>
+        </a>
+        <a
+          class="single-project"
+          href="https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f?source=friends_link&sk=0f492513f43ce5b4330c3cfa484378c5"
+          style="background: rgb(86, 68, 142);"
+        >
+          <div
+            class="single-project__container single-project__container_white-letters-theme"
+          >
+            <div
+              class="single-project__content-wrap"
+            >
+              <span
+                class="single-project__logo-bg single-project__logo-bg--teacherlyColored"
+              />
+               
+              <h4
+                class="single-project__sub-title title-md"
+              >
+                
+        EdTech collaboration platform
+      
+              </h4>
+               
+              <p
+                class="single-project__paragraph paragraph"
+              >
+                
+        Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform.
+      
+              </p>
+               
+              <div
+                class="contribution-widget"
+              >
+                <svg
+                  class="contribution-widget__img contribution-widget__img_teacherly"
+                  fill="none"
+                  viewBox="0 0 20 18"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M18.5953 0.101606L10.0137 3.89286L1.4321 0.101606C0.8301 -0.214585 0 0.239607 0 1.05169V16.8817C0 17.4883 0.375465 17.9827 0.88497 17.9979C0.908393 18.0007 0.932093 18.0007 0.955516 17.9979H1.00647L6.63061 17.433L5.56535 15.9642C5.09975 15.3356 5.66412 14.7897 6.26141 15.002C6.38134 15.0445 6.51146 14.9884 6.62826 15.0179L5.21732 10.4138C5.21184 10.3979 5.20713 10.382 5.20243 10.3661L5.19146 10.3312V10.3206C5.15304 10.1337 5.18595 9.93963 5.28409 9.7744C5.38224 9.60918 5.53896 9.48397 5.72523 9.42196C5.9115 9.35995 6.1147 9.36536 6.29716 9.43717C6.47963 9.50899 6.62901 9.64234 6.71762 9.81253V9.81936C6.73094 9.84514 8.33627 13.6766 8.33627 13.6766C8.3737 13.4824 8.48149 13.3074 8.6403 13.1832C8.7991 13.0589 8.99851 12.9935 9.20268 12.9987C9.40686 13.0039 9.60242 13.0794 9.75424 13.2116C9.90605 13.3437 10.0042 13.5239 10.031 13.7198C10.0592 13.5182 10.1628 13.3335 10.322 13.2006C10.4812 13.0676 10.6852 12.9955 10.8956 12.9979C11.3149 12.9979 11.6402 13.3566 11.7131 13.7433L12.6671 11.1425C12.7331 10.9685 12.8602 10.8224 13.0263 10.7297C13.1923 10.637 13.3866 10.6037 13.5755 10.6354C13.7643 10.6672 13.9356 10.7621 14.0595 10.9035C14.1835 11.045 14.2521 11.224 14.2536 11.4094V11.4337L13.4039 17.4277L19.0218 17.9925H19.0727C19.0961 17.9954 19.1198 17.9954 19.1432 17.9925C19.6528 17.9774 20 17.486 20 16.8787V1.0479C19.9992 0.236575 19.1973 -0.214585 18.5953 0.101606Z"
+                    fill=""
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                 
+                <span
+                  class="contribution-widget__content-mobile contribution-widget__content-mobile_teacherly"
+                >
+                  contribution: Backend, Infrastructure
+                </span>
+                 
+                <span
+                  class="contribution-widget__content contribution-widget__content_teacherly"
+                >
+                  contribution: Backend, Infrastructure, Frontend
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="single-project__background"
+            />
+          </div>
+        </a>
+        <a
+          class="single-project"
+          href="https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0"
+          style="background: rgb(14, 27, 39);"
+        >
+          <div
+            class="single-project__container single-project__container_white-letters-theme"
+          >
+            <div
+              class="single-project__content-wrap"
+            >
+              <span
+                class="single-project__logo-bg single-project__logo-bg--guardrailsColored"
+              />
+               
+              <h4
+                class="single-project__sub-title title-md"
+              >
+                
+        Cloud cybersecurity service
+      
+              </h4>
+               
+              <p
+                class="single-project__paragraph paragraph"
+              >
+                
+        Mad Devs was involved with Guardrails' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.
+      
+              </p>
+               
+              <div
+                class="contribution-widget"
+              >
+                <svg
+                  class="contribution-widget__img contribution-widget__img_guardrails"
+                  fill="none"
+                  viewBox="0 0 20 18"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M18.5953 0.101606L10.0137 3.89286L1.4321 0.101606C0.8301 -0.214585 0 0.239607 0 1.05169V16.8817C0 17.4883 0.375465 17.9827 0.88497 17.9979C0.908393 18.0007 0.932093 18.0007 0.955516 17.9979H1.00647L6.63061 17.433L5.56535 15.9642C5.09975 15.3356 5.66412 14.7897 6.26141 15.002C6.38134 15.0445 6.51146 14.9884 6.62826 15.0179L5.21732 10.4138C5.21184 10.3979 5.20713 10.382 5.20243 10.3661L5.19146 10.3312V10.3206C5.15304 10.1337 5.18595 9.93963 5.28409 9.7744C5.38224 9.60918 5.53896 9.48397 5.72523 9.42196C5.9115 9.35995 6.1147 9.36536 6.29716 9.43717C6.47963 9.50899 6.62901 9.64234 6.71762 9.81253V9.81936C6.73094 9.84514 8.33627 13.6766 8.33627 13.6766C8.3737 13.4824 8.48149 13.3074 8.6403 13.1832C8.7991 13.0589 8.99851 12.9935 9.20268 12.9987C9.40686 13.0039 9.60242 13.0794 9.75424 13.2116C9.90605 13.3437 10.0042 13.5239 10.031 13.7198C10.0592 13.5182 10.1628 13.3335 10.322 13.2006C10.4812 13.0676 10.6852 12.9955 10.8956 12.9979C11.3149 12.9979 11.6402 13.3566 11.7131 13.7433L12.6671 11.1425C12.7331 10.9685 12.8602 10.8224 13.0263 10.7297C13.1923 10.637 13.3866 10.6037 13.5755 10.6354C13.7643 10.6672 13.9356 10.7621 14.0595 10.9035C14.1835 11.045 14.2521 11.224 14.2536 11.4094V11.4337L13.4039 17.4277L19.0218 17.9925H19.0727C19.0961 17.9954 19.1198 17.9954 19.1432 17.9925C19.6528 17.9774 20 17.486 20 16.8787V1.0479C19.9992 0.236575 19.1973 -0.214585 18.5953 0.101606Z"
+                    fill=""
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                 
+                <span
+                  class="contribution-widget__content-mobile contribution-widget__content-mobile_guardrails contribution-widget__content-mobile_nambafood"
+                >
+                  contribution: Backend, Infrastructure
+                </span>
+                 
+                <span
+                  class="contribution-widget__content contribution-widget__content_guardrails contribution-widget__content_nambafood"
+                >
+                  contribution: Backend, Infrastructure, Frontend
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="single-project__background single-project__background_guardrails"
+            />
+          </div>
+        </a>
+        <a
+          class="single-project"
+          href="https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5?source=friends_link&sk=3e3f75a7f35f0e4d9d447a19e015330a"
+          style="background: rgb(255, 106, 1);"
+        >
+          <div
+            class="single-project__container"
+          >
+            <div
+              class="single-project__content-wrap"
+            >
+              <span
+                class="single-project__logo-bg single-project__logo-bg--godeeColored"
+              />
+               
+              <h4
+                class="single-project__sub-title title-md"
+              >
+                
+        Convenient shuttle bus service
+      
+              </h4>
+               
+              <p
+                class="single-project__paragraph paragraph"
+              >
+                
+        Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.
+      
+              </p>
+               
+              <div
+                class="contribution-widget"
+              >
+                <svg
+                  class="contribution-widget__img contribution-widget__img_godee"
+                  fill="none"
+                  viewBox="0 0 20 18"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M18.5953 0.101606L10.0137 3.89286L1.4321 0.101606C0.8301 -0.214585 0 0.239607 0 1.05169V16.8817C0 17.4883 0.375465 17.9827 0.88497 17.9979C0.908393 18.0007 0.932093 18.0007 0.955516 17.9979H1.00647L6.63061 17.433L5.56535 15.9642C5.09975 15.3356 5.66412 14.7897 6.26141 15.002C6.38134 15.0445 6.51146 14.9884 6.62826 15.0179L5.21732 10.4138C5.21184 10.3979 5.20713 10.382 5.20243 10.3661L5.19146 10.3312V10.3206C5.15304 10.1337 5.18595 9.93963 5.28409 9.7744C5.38224 9.60918 5.53896 9.48397 5.72523 9.42196C5.9115 9.35995 6.1147 9.36536 6.29716 9.43717C6.47963 9.50899 6.62901 9.64234 6.71762 9.81253V9.81936C6.73094 9.84514 8.33627 13.6766 8.33627 13.6766C8.3737 13.4824 8.48149 13.3074 8.6403 13.1832C8.7991 13.0589 8.99851 12.9935 9.20268 12.9987C9.40686 13.0039 9.60242 13.0794 9.75424 13.2116C9.90605 13.3437 10.0042 13.5239 10.031 13.7198C10.0592 13.5182 10.1628 13.3335 10.322 13.2006C10.4812 13.0676 10.6852 12.9955 10.8956 12.9979C11.3149 12.9979 11.6402 13.3566 11.7131 13.7433L12.6671 11.1425C12.7331 10.9685 12.8602 10.8224 13.0263 10.7297C13.1923 10.637 13.3866 10.6037 13.5755 10.6354C13.7643 10.6672 13.9356 10.7621 14.0595 10.9035C14.1835 11.045 14.2521 11.224 14.2536 11.4094V11.4337L13.4039 17.4277L19.0218 17.9925H19.0727C19.0961 17.9954 19.1198 17.9954 19.1432 17.9925C19.6528 17.9774 20 17.486 20 16.8787V1.0479C19.9992 0.236575 19.1973 -0.214585 18.5953 0.101606Z"
+                    fill=""
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                 
+                <span
+                  class="contribution-widget__content-mobile contribution-widget__content-mobile_godee"
+                >
+                  
+    contribution: Backend, Infrastructure, Mobile Apps
+  
+                </span>
+                 
+                <span
+                  class="contribution-widget__content contribution-widget__content_godee"
+                >
+                  
+    contribution: Backend, Infrastructure, Mobile Apps
+  
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="single-project__background single-project__background_godee"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+     
+    <div
+      class="projects-mobile-slider"
+    >
+      <div
+        class="swiper-container swiper swiper-container-initialized swiper-container-horizontal"
+      >
+        <div
+          class="swiper-wrapper"
+          style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+        >
+          <div
+            class="swiper-slide"
+          >
+            <a
+              class="single-project"
+              href="https://blog.maddevs.io/namba-food-top-1-delivery-service-in-central-asia-3df8ca4d436d?source=friends_link&sk=1dd67cc82dad8e4fae756b3a4d47f121"
+              style="background: rgb(248, 247, 246);"
+            >
+              <div
+                class="single-project__container"
+              >
+                <div
+                  class="single-project__content-wrap"
+                >
+                  <span
+                    class="single-project__logo-bg single-project__logo-bg--nambafoodColored"
+                  />
+                   
+                  <h4
+                    class="single-project__sub-title title-md"
+                  >
+                    
+        Contactless Delivery Service
+      
+                  </h4>
+                   
+                  <p
+                    class="single-project__paragraph paragraph"
+                  >
+                    
+        Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.
+      
+                  </p>
+                   
+                  <div
+                    class="contribution-widget"
+                  >
+                    <svg
+                      class="contribution-widget__img contribution-widget__img_nambafood"
+                      fill="none"
+                      viewBox="0 0 20 18"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M18.5953 0.101606L10.0137 3.89286L1.4321 0.101606C0.8301 -0.214585 0 0.239607 0 1.05169V16.8817C0 17.4883 0.375465 17.9827 0.88497 17.9979C0.908393 18.0007 0.932093 18.0007 0.955516 17.9979H1.00647L6.63061 17.433L5.56535 15.9642C5.09975 15.3356 5.66412 14.7897 6.26141 15.002C6.38134 15.0445 6.51146 14.9884 6.62826 15.0179L5.21732 10.4138C5.21184 10.3979 5.20713 10.382 5.20243 10.3661L5.19146 10.3312V10.3206C5.15304 10.1337 5.18595 9.93963 5.28409 9.7744C5.38224 9.60918 5.53896 9.48397 5.72523 9.42196C5.9115 9.35995 6.1147 9.36536 6.29716 9.43717C6.47963 9.50899 6.62901 9.64234 6.71762 9.81253V9.81936C6.73094 9.84514 8.33627 13.6766 8.33627 13.6766C8.3737 13.4824 8.48149 13.3074 8.6403 13.1832C8.7991 13.0589 8.99851 12.9935 9.20268 12.9987C9.40686 13.0039 9.60242 13.0794 9.75424 13.2116C9.90605 13.3437 10.0042 13.5239 10.031 13.7198C10.0592 13.5182 10.1628 13.3335 10.322 13.2006C10.4812 13.0676 10.6852 12.9955 10.8956 12.9979C11.3149 12.9979 11.6402 13.3566 11.7131 13.7433L12.6671 11.1425C12.7331 10.9685 12.8602 10.8224 13.0263 10.7297C13.1923 10.637 13.3866 10.6037 13.5755 10.6354C13.7643 10.6672 13.9356 10.7621 14.0595 10.9035C14.1835 11.045 14.2521 11.224 14.2536 11.4094V11.4337L13.4039 17.4277L19.0218 17.9925H19.0727C19.0961 17.9954 19.1198 17.9954 19.1432 17.9925C19.6528 17.9774 20 17.486 20 16.8787V1.0479C19.9992 0.236575 19.1973 -0.214585 18.5953 0.101606Z"
+                        fill=""
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                     
+                    <span
+                      class="contribution-widget__content-mobile contribution-widget__content-mobile_nambafood"
+                    >
+                      contribution: Backend, Infrastructure
+                    </span>
+                     
+                    <span
+                      class="contribution-widget__content contribution-widget__content_nambafood"
+                    >
+                      contribution: Backend, Infrastructure, Frontend
+                    </span>
+                  </div>
+                </div>
+                 
+                <div
+                  class="single-project__background single-project__background_first-project"
+                />
+              </div>
+            </a>
+          </div>
+          <div
+            class="swiper-slide"
+          >
+            <a
+              class="single-project"
+              href="https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f?source=friends_link&sk=0f492513f43ce5b4330c3cfa484378c5"
+              style="background: rgb(86, 68, 142);"
+            >
+              <div
+                class="single-project__container single-project__container_white-letters-theme"
+              >
+                <div
+                  class="single-project__content-wrap"
+                >
+                  <span
+                    class="single-project__logo-bg single-project__logo-bg--teacherlyColored"
+                  />
+                   
+                  <h4
+                    class="single-project__sub-title title-md"
+                  >
+                    
+        EdTech collaboration platform
+      
+                  </h4>
+                   
+                  <p
+                    class="single-project__paragraph paragraph"
+                  >
+                    
+        Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform.
+      
+                  </p>
+                   
+                  <div
+                    class="contribution-widget"
+                  >
+                    <svg
+                      class="contribution-widget__img contribution-widget__img_teacherly"
+                      fill="none"
+                      viewBox="0 0 20 18"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M18.5953 0.101606L10.0137 3.89286L1.4321 0.101606C0.8301 -0.214585 0 0.239607 0 1.05169V16.8817C0 17.4883 0.375465 17.9827 0.88497 17.9979C0.908393 18.0007 0.932093 18.0007 0.955516 17.9979H1.00647L6.63061 17.433L5.56535 15.9642C5.09975 15.3356 5.66412 14.7897 6.26141 15.002C6.38134 15.0445 6.51146 14.9884 6.62826 15.0179L5.21732 10.4138C5.21184 10.3979 5.20713 10.382 5.20243 10.3661L5.19146 10.3312V10.3206C5.15304 10.1337 5.18595 9.93963 5.28409 9.7744C5.38224 9.60918 5.53896 9.48397 5.72523 9.42196C5.9115 9.35995 6.1147 9.36536 6.29716 9.43717C6.47963 9.50899 6.62901 9.64234 6.71762 9.81253V9.81936C6.73094 9.84514 8.33627 13.6766 8.33627 13.6766C8.3737 13.4824 8.48149 13.3074 8.6403 13.1832C8.7991 13.0589 8.99851 12.9935 9.20268 12.9987C9.40686 13.0039 9.60242 13.0794 9.75424 13.2116C9.90605 13.3437 10.0042 13.5239 10.031 13.7198C10.0592 13.5182 10.1628 13.3335 10.322 13.2006C10.4812 13.0676 10.6852 12.9955 10.8956 12.9979C11.3149 12.9979 11.6402 13.3566 11.7131 13.7433L12.6671 11.1425C12.7331 10.9685 12.8602 10.8224 13.0263 10.7297C13.1923 10.637 13.3866 10.6037 13.5755 10.6354C13.7643 10.6672 13.9356 10.7621 14.0595 10.9035C14.1835 11.045 14.2521 11.224 14.2536 11.4094V11.4337L13.4039 17.4277L19.0218 17.9925H19.0727C19.0961 17.9954 19.1198 17.9954 19.1432 17.9925C19.6528 17.9774 20 17.486 20 16.8787V1.0479C19.9992 0.236575 19.1973 -0.214585 18.5953 0.101606Z"
+                        fill=""
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                     
+                    <span
+                      class="contribution-widget__content-mobile contribution-widget__content-mobile_teacherly"
+                    >
+                      contribution: Backend, Infrastructure
+                    </span>
+                     
+                    <span
+                      class="contribution-widget__content contribution-widget__content_teacherly"
+                    >
+                      contribution: Backend, Infrastructure, Frontend
+                    </span>
+                  </div>
+                </div>
+                 
+                <div
+                  class="single-project__background"
+                />
+              </div>
+            </a>
+          </div>
+          <div
+            class="swiper-slide"
+          >
+            <a
+              class="single-project"
+              href="https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0"
+              style="background: rgb(14, 27, 39);"
+            >
+              <div
+                class="single-project__container single-project__container_white-letters-theme"
+              >
+                <div
+                  class="single-project__content-wrap"
+                >
+                  <span
+                    class="single-project__logo-bg single-project__logo-bg--guardrailsColored"
+                  />
+                   
+                  <h4
+                    class="single-project__sub-title title-md"
+                  >
+                    
+        Cloud cybersecurity service
+      
+                  </h4>
+                   
+                  <p
+                    class="single-project__paragraph paragraph"
+                  >
+                    
+        Mad Devs was involved with Guardrails' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.
+      
+                  </p>
+                   
+                  <div
+                    class="contribution-widget"
+                  >
+                    <svg
+                      class="contribution-widget__img contribution-widget__img_guardrails"
+                      fill="none"
+                      viewBox="0 0 20 18"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M18.5953 0.101606L10.0137 3.89286L1.4321 0.101606C0.8301 -0.214585 0 0.239607 0 1.05169V16.8817C0 17.4883 0.375465 17.9827 0.88497 17.9979C0.908393 18.0007 0.932093 18.0007 0.955516 17.9979H1.00647L6.63061 17.433L5.56535 15.9642C5.09975 15.3356 5.66412 14.7897 6.26141 15.002C6.38134 15.0445 6.51146 14.9884 6.62826 15.0179L5.21732 10.4138C5.21184 10.3979 5.20713 10.382 5.20243 10.3661L5.19146 10.3312V10.3206C5.15304 10.1337 5.18595 9.93963 5.28409 9.7744C5.38224 9.60918 5.53896 9.48397 5.72523 9.42196C5.9115 9.35995 6.1147 9.36536 6.29716 9.43717C6.47963 9.50899 6.62901 9.64234 6.71762 9.81253V9.81936C6.73094 9.84514 8.33627 13.6766 8.33627 13.6766C8.3737 13.4824 8.48149 13.3074 8.6403 13.1832C8.7991 13.0589 8.99851 12.9935 9.20268 12.9987C9.40686 13.0039 9.60242 13.0794 9.75424 13.2116C9.90605 13.3437 10.0042 13.5239 10.031 13.7198C10.0592 13.5182 10.1628 13.3335 10.322 13.2006C10.4812 13.0676 10.6852 12.9955 10.8956 12.9979C11.3149 12.9979 11.6402 13.3566 11.7131 13.7433L12.6671 11.1425C12.7331 10.9685 12.8602 10.8224 13.0263 10.7297C13.1923 10.637 13.3866 10.6037 13.5755 10.6354C13.7643 10.6672 13.9356 10.7621 14.0595 10.9035C14.1835 11.045 14.2521 11.224 14.2536 11.4094V11.4337L13.4039 17.4277L19.0218 17.9925H19.0727C19.0961 17.9954 19.1198 17.9954 19.1432 17.9925C19.6528 17.9774 20 17.486 20 16.8787V1.0479C19.9992 0.236575 19.1973 -0.214585 18.5953 0.101606Z"
+                        fill=""
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                     
+                    <span
+                      class="contribution-widget__content-mobile contribution-widget__content-mobile_guardrails contribution-widget__content-mobile_nambafood"
+                    >
+                      contribution: Backend, Infrastructure
+                    </span>
+                     
+                    <span
+                      class="contribution-widget__content contribution-widget__content_guardrails contribution-widget__content_nambafood"
+                    >
+                      contribution: Backend, Infrastructure, Frontend
+                    </span>
+                  </div>
+                </div>
+                 
+                <div
+                  class="single-project__background single-project__background_guardrails"
+                />
+              </div>
+            </a>
+          </div>
+          <div
+            class="swiper-slide"
+          >
+            <a
+              class="single-project"
+              href="https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5?source=friends_link&sk=3e3f75a7f35f0e4d9d447a19e015330a"
+              style="background: rgb(255, 106, 1);"
+            >
+              <div
+                class="single-project__container"
+              >
+                <div
+                  class="single-project__content-wrap"
+                >
+                  <span
+                    class="single-project__logo-bg single-project__logo-bg--godeeColored"
+                  />
+                   
+                  <h4
+                    class="single-project__sub-title title-md"
+                  >
+                    
+        Convenient shuttle bus service
+      
+                  </h4>
+                   
+                  <p
+                    class="single-project__paragraph paragraph"
+                  >
+                    
+        Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.
+      
+                  </p>
+                   
+                  <div
+                    class="contribution-widget"
+                  >
+                    <svg
+                      class="contribution-widget__img contribution-widget__img_godee"
+                      fill="none"
+                      viewBox="0 0 20 18"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M18.5953 0.101606L10.0137 3.89286L1.4321 0.101606C0.8301 -0.214585 0 0.239607 0 1.05169V16.8817C0 17.4883 0.375465 17.9827 0.88497 17.9979C0.908393 18.0007 0.932093 18.0007 0.955516 17.9979H1.00647L6.63061 17.433L5.56535 15.9642C5.09975 15.3356 5.66412 14.7897 6.26141 15.002C6.38134 15.0445 6.51146 14.9884 6.62826 15.0179L5.21732 10.4138C5.21184 10.3979 5.20713 10.382 5.20243 10.3661L5.19146 10.3312V10.3206C5.15304 10.1337 5.18595 9.93963 5.28409 9.7744C5.38224 9.60918 5.53896 9.48397 5.72523 9.42196C5.9115 9.35995 6.1147 9.36536 6.29716 9.43717C6.47963 9.50899 6.62901 9.64234 6.71762 9.81253V9.81936C6.73094 9.84514 8.33627 13.6766 8.33627 13.6766C8.3737 13.4824 8.48149 13.3074 8.6403 13.1832C8.7991 13.0589 8.99851 12.9935 9.20268 12.9987C9.40686 13.0039 9.60242 13.0794 9.75424 13.2116C9.90605 13.3437 10.0042 13.5239 10.031 13.7198C10.0592 13.5182 10.1628 13.3335 10.322 13.2006C10.4812 13.0676 10.6852 12.9955 10.8956 12.9979C11.3149 12.9979 11.6402 13.3566 11.7131 13.7433L12.6671 11.1425C12.7331 10.9685 12.8602 10.8224 13.0263 10.7297C13.1923 10.637 13.3866 10.6037 13.5755 10.6354C13.7643 10.6672 13.9356 10.7621 14.0595 10.9035C14.1835 11.045 14.2521 11.224 14.2536 11.4094V11.4337L13.4039 17.4277L19.0218 17.9925H19.0727C19.0961 17.9954 19.1198 17.9954 19.1432 17.9925C19.6528 17.9774 20 17.486 20 16.8787V1.0479C19.9992 0.236575 19.1973 -0.214585 18.5953 0.101606Z"
+                        fill=""
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                     
+                    <span
+                      class="contribution-widget__content-mobile contribution-widget__content-mobile_godee"
+                    >
+                      
+    contribution: Backend, Infrastructure, Mobile Apps
+  
+                    </span>
+                     
+                    <span
+                      class="contribution-widget__content contribution-widget__content_godee"
+                    >
+                      
+    contribution: Backend, Infrastructure, Mobile Apps
+  
+                    </span>
+                  </div>
+                </div>
+                 
+                <div
+                  class="single-project__background single-project__background_godee"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <span
+          aria-atomic="true"
+          aria-live="assertive"
+          class="swiper-notification"
+        />
+      </div>
+       
+      <div
+        class="swiper-pagination swiper-pagination--white"
+        slot="pagination"
+      />
+    </div>
+  </section>
+   
+  <section
+    class="quick-project_start"
+    id="quick-project-start"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="quick-project_start__title-wrap"
+      >
+        <h2
+          class="quick-project_start__main-title title"
+        >
+          Quick Project Start
+        </h2>
+      </div>
+       
+      <div
+        class="quick-project_start__content-wrap"
+      >
+        <div
+          class="quick-project_start__content-items_list row"
+        >
+          <div
+            class="quick-project_start__content-item col-xl-2 col-lg-2 col-md-2 col-sm-2"
+          >
+            <div
+              class="quick-project_start__icon-item contact"
+            >
+              <span
+                class="quick-project_start__image-bg quick-project_start__image-bg--contact"
+              />
+            </div>
+             
+            <div
+              class="quick-project_start__text-item"
+            >
+              <h4
+                class="quick-project_start__item-title"
+              >
+                contact
+              </h4>
+               
+              <p
+                class="quick-project_start__paragraph paragraph-sm"
+              >
+                Submit your project request or project idea to us.
+              </p>
+            </div>
+          </div>
+          <div
+            class="quick-project_start__content-item col-xl-2 col-lg-2 col-md-2 col-sm-2"
+          >
+            <div
+              class="quick-project_start__icon-item analysis"
+            >
+              <span
+                class="quick-project_start__image-bg quick-project_start__image-bg--analysis"
+              />
+            </div>
+             
+            <div
+              class="quick-project_start__text-item"
+            >
+              <h4
+                class="quick-project_start__item-title"
+              >
+                analysis
+              </h4>
+               
+              <p
+                class="quick-project_start__paragraph paragraph-sm"
+              >
+                We will contact you to clarify your project requirements.
+              </p>
+            </div>
+          </div>
+          <div
+            class="quick-project_start__content-item col-xl-2 col-lg-2 col-md-2 col-sm-2"
+          >
+            <div
+              class="quick-project_start__icon-item proposal"
+            >
+              <span
+                class="quick-project_start__image-bg quick-project_start__image-bg--proposal"
+              />
+            </div>
+             
+            <div
+              class="quick-project_start__text-item"
+            >
+              <h4
+                class="quick-project_start__item-title"
+              >
+                proposal
+              </h4>
+               
+              <p
+                class="quick-project_start__paragraph paragraph-sm"
+              >
+                We will provide you with our free, non-binding bid or a tailored proposal.
+              </p>
+            </div>
+          </div>
+          <div
+            class="quick-project_start__content-item col-xl-2 col-lg-2 col-md-2 col-sm-2"
+          >
+            <div
+              class="quick-project_start__icon-item team"
+            >
+              <span
+                class="quick-project_start__image-bg quick-project_start__image-bg--team"
+              />
+            </div>
+             
+            <div
+              class="quick-project_start__text-item"
+            >
+              <h4
+                class="quick-project_start__item-title"
+              >
+                team
+              </h4>
+               
+              <p
+                class="quick-project_start__paragraph paragraph-sm"
+              >
+                We will assemble and prepare a team for your project.
+              </p>
+            </div>
+          </div>
+          <div
+            class="quick-project_start__content-item col-xl-2 col-lg-2 col-md-2 col-sm-2"
+          >
+            <div
+              class="quick-project_start__icon-item start"
+            >
+              <span
+                class="quick-project_start__image-bg quick-project_start__image-bg--start"
+              />
+            </div>
+             
+            <div
+              class="quick-project_start__text-item"
+            >
+              <h4
+                class="quick-project_start__item-title"
+              >
+                start
+              </h4>
+               
+              <p
+                class="quick-project_start__paragraph paragraph-sm"
+              >
+                You will get to know the team and we’ll start the project work.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+      <button
+        class="ui-button-modal-trigger quick-project_start__button ui-button-modal-trigger--red"
+      >
+        
+  Submit your project
+
+      </button>
+    </div>
+  </section>
+   
+  <section
+    class="customer-testimonials"
+    id="customer-testimonials"
+  >
+    <div
+      class="container"
+    >
+      <h2
+        class="customer-testimonials__title title"
+      >
+        
+      Customer Testimonials
+    
+      </h2>
+       
+      <div
+        class="customer-testimonials__content-wrap row"
+      >
+        <div
+          class="customer-testimonials__widget-col col-xl-8 col-lg-8"
+        >
+          <client-only-stub>
+            <div
+              class="customer-testimonials__widget-wrap"
+            >
+              <div
+                class="clutch-widget"
+                data-clutchcompany-id="258762"
+                data-expandifr="true"
+                data-height="auto"
+                data-url="https://widget.clutch.co"
+                data-widget-type="4"
+              />
+            </div>
+          </client-only-stub>
+        </div>
+         
+        <div
+          class="col-xl-4 col-lg-4"
+        >
+          <div
+            class="customer-testimonials__testimonials-list row"
+          >
+            <div
+              class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
+            >
+              <div
+                class="customer-testimonials__testimonials-text paragraph-md"
+              >
+                
+              Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.
+            
+              </div>
+               
+              <div
+                class="customer-testimonials__customer-info"
+              >
+                <div
+                  class="customer-testimonials__profile"
+                >
+                  <img
+                    alt="Atif Mahmud,"
+                    class="customer-testimonials__customer-image"
+                    loading="lazy"
+                    src="[object Object]"
+                  />
+                   
+                  <p
+                    class="customer-testimonials__customer-name paragraph-sm"
+                  >
+                    
+                  Atif Mahmud, 
+                    <br />
+                     The UK
+                
+                  </p>
+                </div>
+                 
+                <div
+                  class="customer-testimonials__project"
+                >
+                  <a
+                    href="https://teacherly.io/"
+                    rel="nofollow"
+                    target="blank"
+                  >
+                    <img
+                      alt="teacherly"
+                      class="customer-testimonials__project-image customer-testimonials__teacherly"
+                      loading="lazy"
+                      src="[object Object]"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
+            >
+              <div
+                class="customer-testimonials__testimonials-text paragraph-md"
+              >
+                
+              We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.
+            
+              </div>
+               
+              <div
+                class="customer-testimonials__customer-info"
+              >
+                <div
+                  class="customer-testimonials__profile"
+                >
+                  <img
+                    alt="Daniel Vartanov,"
+                    class="customer-testimonials__customer-image"
+                    loading="lazy"
+                    src="[object Object]"
+                  />
+                   
+                  <p
+                    class="customer-testimonials__customer-name paragraph-sm"
+                  >
+                    
+                  Daniel Vartanov, 
+                    <br />
+                     The UK
+                
+                  </p>
+                </div>
+                 
+                <div
+                  class="customer-testimonials__project"
+                >
+                  <a
+                    href="https://veeqo.com/"
+                    rel="nofollow"
+                    target="blank"
+                  >
+                    <img
+                      alt="veeqo"
+                      class="customer-testimonials__project-image customer-testimonials__veeqo"
+                      loading="lazy"
+                      src="[object Object]"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
+            >
+              <div
+                class="customer-testimonials__testimonials-text paragraph-md"
+              >
+                
+              I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.
+            
+              </div>
+               
+              <div
+                class="customer-testimonials__customer-info"
+              >
+                <div
+                  class="customer-testimonials__profile"
+                >
+                  <img
+                    alt="Stefan Streichsbier,"
+                    class="customer-testimonials__customer-image"
+                    loading="lazy"
+                    src="[object Object]"
+                  />
+                   
+                  <p
+                    class="customer-testimonials__customer-name paragraph-sm"
+                  >
+                    
+                  Stefan Streichsbier, 
+                    <br />
+                     Singapore
+                
+                  </p>
+                </div>
+                 
+                <div
+                  class="customer-testimonials__project"
+                >
+                  <a
+                    href="https://guardrails.io/"
+                    rel="nofollow"
+                    target="blank"
+                  >
+                    <img
+                      alt="guardrails"
+                      class="customer-testimonials__project-image customer-testimonials__guardrails"
+                      loading="lazy"
+                      src="[object Object]"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  <section
+    class="customer-rates"
+    id="customer-rates"
+  >
+    <div
+      class="container"
+    >
+      <h2
+        class="customer-rates__title title"
+      >
+        <span>
+          Fantastic
+        </span>
+         
+        <br />
+         customer rates:
+      
+        <img
+          alt="Satisfaction"
+          class="customer-rates__title-icon"
+          src="@/assets/img/Home/svg/CustomerRates/satisfaction-icon.svg"
+        />
+      </h2>
+       
+      <div
+        class="customer-rates__top-row row"
+      >
+        <div
+          class="col-xl-4 col-sm-4"
+        >
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--top-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--top-row"
+            >
+              92%
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--top-row"
+            >
+              recommend us to 
+              <br
+                class="customer-rates__line-break"
+              />
+               others.
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="col-xl-4 col-sm-4"
+        >
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--top-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--top-row"
+            >
+              87%
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--top-row"
+            >
+              stay with us for 
+              <br
+                class="customer-rates__line-break"
+              />
+               more than 2 years
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="col-xl-4 col-sm-4"
+        >
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--top-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--top-row"
+            >
+              98%
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--top-row"
+            >
+              are satisfied with 
+              <br
+                class="customer-rates__line-break"
+              />
+               our pricing.
+            </p>
+          </div>
+        </div>
+      </div>
+       
+      <h3
+        class="customer-rates__section-sub-title title-md"
+      >
+        Mad Devs' key metrics:
+      </h3>
+       
+      <div
+        class="customer-rates__bottom-row row"
+      >
+        <div
+          class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--bottom-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--bottom-row"
+            >
+              10M+
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--bottom-row"
+            >
+              US dollars raised by 5 customer startups in 2019.
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--bottom-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--bottom-row"
+            >
+              75%
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--bottom-row"
+            >
+              of customers are now paying 50% less for IT infrastructure.
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--bottom-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--bottom-row"
+            >
+              30+
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--bottom-row"
+            >
+              tech bloggers and conference speakers in our team.
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--bottom-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--bottom-row"
+            >
+              50+
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--bottom-row"
+            >
+              projects delivered to customers by our team.
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--bottom-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--bottom-row"
+            >
+              100+
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--bottom-row"
+            >
+              staff members work for Mad Devs.
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+        >
+          <div
+            class="customer-rates__rates-block customer-rates__rates-block--bottom-row"
+          >
+            <p
+              class="customer-rates__number customer-rates__number--bottom-row"
+            >
+              70+
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description--bottom-row"
+            >
+              open-source projects on GitHub.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  <section
+    class="meet-our_experts"
+    id="meet-our-experts"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="meet-our_experts__main-title_wrap"
+      >
+        <h2
+          class="meet-our_experts__main-title title-md"
+        >
+          Meet our experts
+        </h2>
+      </div>
+       
+      <div
+        class="meet-our_experts__experts-list row"
+      >
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Marat@2x"
+              class="multi-image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Marat Bediev
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                Senior DevOps Engineer
+              </div>
+            </div>
+          </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/marat-bediev-a973171b/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
+        </div>
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Tamara@2x"
+              class="multi-image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Tamara Mun
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                Delivery Manager
+              </div>
+            </div>
+          </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/tamara-mun/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
+        </div>
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Chuck@2x"
+              class="multi-image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Andrew "Chuck" Minkin
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                CTO, Co-Founder
+              </div>
+            </div>
+          </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/andrew-minkin-700a2523/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
+        </div>
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Nakylai@2x"
+              class="multi-image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Nakylai Taiirova
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                Senior Full-Stack Developer
+              </div>
+            </div>
+          </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/nakylai-taiirova-28bab859/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
+        </div>
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Daria@2x"
+              class="multi-image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Daria Utesheva
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                Head of HR Department
+              </div>
+            </div>
+          </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/daria-utesheva-47804198/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
+        </div>
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Nuradil@2x"
+              class="multi-image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Nuradil Alymkulov
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                Senior Full-Stack Developer
+              </div>
+            </div>
+          </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/nuradil-alymkulov/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
+        </div>
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Alice@2x"
+              class="multi-image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Alice Jang
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                Project Manager
+              </div>
+            </div>
+          </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/alice-jang-b235b240/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
+        </div>
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Arthur@2x"
+              class="multi-image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Arthur Elizavetenkov
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                Project Manager
+              </div>
+            </div>
+          </div>
+           
+          <a
+            class="meet-our_experts__expert-linkedin_link"
+            href="https://www.linkedin.com/in/earthurkg/"
+            target="blank"
+          >
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin_icon"
+              loading="lazy"
+              src="../../assets/img/Home/svg/experts/linkedin.svg"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+`;
