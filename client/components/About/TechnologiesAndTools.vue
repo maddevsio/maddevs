@@ -497,6 +497,12 @@ $tech_legends: (
   }
 }
 
+@mixin mediaMobileScreen($property) {
+  @media screen and (max-width: 568px) {
+    order: $property;
+  }
+}
+
 .tech_legend {
   display: flex;
   align-items: center;
@@ -533,6 +539,41 @@ $tech_legends: (
       background: $color;
     }
   }
+
+  @media screen and (max-width: 976px) {
+    max-width: 460px;
+    margin: auto auto 45px;
+    flex-wrap: wrap;
+
+    &__item {
+      margin-right: 9px;
+      margin-left: 9px;
+      color: #938F95;
+      font-size: 12px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    margin-left: -7px;
+    justify-content: space-between;
+
+    &__item {
+      margin-right: 0;
+      margin-left: 7px;
+    }
+  }
+
+  @media screen and (max-width: 330px) {
+    margin-left: 0;
+
+    &__item {
+      font-size: 10px;
+    }
+  }
 }
 
 .tech_container {
@@ -542,6 +583,10 @@ $tech_legends: (
 
   @media screen and (max-width: 1024px) {
     grid-template-columns: repeat(9, 1fr);
+  }
+
+  @media screen and (max-width: 568px) {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
@@ -553,6 +598,15 @@ $tech_legends: (
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
+  @media screen and (max-width: 976px) {
+    height: 74px;
+  }
+
+  @media screen and (max-width: 668px) {
+    height: 54px;
+    justify-content: flex-end;
+  }
 
   span {
     white-space: nowrap;
@@ -566,6 +620,17 @@ $tech_legends: (
     text-overflow: ellipsis;
     text-align: center;
     overflow: hidden;
+
+    @media screen and (max-width: 976px) {
+      font-size: 8px;
+      line-height: 13px;
+      margin-top: 11px;
+    }
+
+    @media screen and (max-width: 668px) {
+      margin-top: 9px;
+      margin-bottom: 3px;
+    }
   }
 
   @each $name, $color in $tech_legends {
@@ -577,6 +642,11 @@ $tech_legends: (
         width: 26px;
         height: 26px;
         display: block;
+
+        @media screen and (max-width: 976px) {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
@@ -593,6 +663,8 @@ $tech_legends: (
     order: 70;
 
     @include mediaMiddleScreen(52);
+
+    @include mediaMobileScreen(44);
   }
 
   // Done
@@ -626,6 +698,8 @@ $tech_legends: (
     order: 60;
 
     @include mediaMiddleScreen(45);
+
+    @include mediaMobileScreen(58);
   }
 
   // Done
@@ -633,6 +707,8 @@ $tech_legends: (
     order: 59;
 
     @include mediaMiddleScreen(44);
+
+    @include mediaMobileScreen(57);
   }
 
   // Done
@@ -647,6 +723,8 @@ $tech_legends: (
     order: 32;
 
     @include mediaMiddleScreen(33);
+
+    @include mediaMobileScreen(32);
   }
 
   // Done
@@ -654,6 +732,8 @@ $tech_legends: (
     order: 33;
 
     @include mediaMiddleScreen(34);
+
+    @include mediaMobileScreen(53);
   }
 
   // Done
@@ -661,6 +741,8 @@ $tech_legends: (
     order: 34;
 
     @include mediaMiddleScreen(35);
+
+    @include mediaMobileScreen(44);
   }
 
   // Done
@@ -682,6 +764,8 @@ $tech_legends: (
     order: 45;
 
     @include mediaMiddleScreen(42);
+
+    @include mediaMobileScreen(52);
   }
 
   // Done
@@ -689,6 +773,8 @@ $tech_legends: (
     order: 59;
 
     @include mediaMiddleScreen(25);
+
+    @include mediaMobileScreen(44);
   }
 
   // Done
@@ -696,6 +782,8 @@ $tech_legends: (
     order: 46;
 
     @include mediaMiddleScreen(43);
+
+    @include mediaMobileScreen(44);
   }
 
   // Done
@@ -703,6 +791,8 @@ $tech_legends: (
     order: 11;
 
     @include mediaMiddleScreen(19);
+
+    @include mediaMobileScreen(16);
   }
 
   // Done
@@ -724,6 +814,8 @@ $tech_legends: (
     order: 23;
 
     @include mediaMiddleScreen(20);
+
+    @include mediaMobileScreen(17);
   }
 
   // Done
@@ -738,6 +830,8 @@ $tech_legends: (
     order: 24;
 
     @include mediaMiddleScreen(21);
+
+    @include mediaMobileScreen(18);
   }
 
   // Done
@@ -745,6 +839,8 @@ $tech_legends: (
     order: 65;
 
     @include mediaMiddleScreen(70);
+
+    @include mediaMobileScreen(66);
   }
 
   // Done
@@ -752,6 +848,8 @@ $tech_legends: (
     order: 66;
 
     @include mediaMiddleScreen(71);
+
+    @include mediaMobileScreen(67);
   }
 
   // Done
@@ -759,6 +857,8 @@ $tech_legends: (
     order: 67;
 
     @include mediaMiddleScreen(72);
+
+    @include mediaMobileScreen(68);
   }
 
   // Done
@@ -766,6 +866,8 @@ $tech_legends: (
     order: 68;
 
     @include mediaMiddleScreen(73);
+
+    @include mediaMobileScreen(69);
   }
 
   // Done
@@ -794,6 +896,8 @@ $tech_legends: (
     order: 69;
 
     @include mediaMiddleScreen(74);
+
+    @include mediaMobileScreen(70);
   }
 
   // Done
@@ -852,6 +956,8 @@ $tech_legends: (
     order: 13;
 
     @include mediaMiddleScreen(10);
+
+    @include mediaMobileScreen(7);
   }
 
   // Done
@@ -859,6 +965,8 @@ $tech_legends: (
     order: 14;
 
     @include mediaMiddleScreen(11);
+
+    @include mediaMobileScreen(8);
   }
 
   // Done
@@ -866,6 +974,8 @@ $tech_legends: (
     order: 15;
 
     @include mediaMiddleScreen(12);
+
+    @include mediaMobileScreen(9);
   }
 
   // Done
@@ -873,6 +983,8 @@ $tech_legends: (
     order: 16;
 
     @include mediaMiddleScreen(13);
+
+    @include mediaMobileScreen(10);
   }
 
   // Done
@@ -880,6 +992,8 @@ $tech_legends: (
     order: 17;
 
     @include mediaMiddleScreen(14);
+
+    @include mediaMobileScreen(11);
   }
 
   // Done
@@ -887,21 +1001,29 @@ $tech_legends: (
     order: 18;
 
     @include mediaMiddleScreen(15);
+
+    @include mediaMobileScreen(12);
   }
 
   // Done
   &.infrastructure-aws {
     order: 7;
+
+    @include mediaMobileScreen(13);
   }
 
   // Done
   &.infrastructure-gsp {
     order: 8;
+
+    @include mediaMobileScreen(14);
   }
 
   // Done
   &.infrastructure-digital-ocean {
     order: 9;
+
+    @include mediaMobileScreen(15);
   }
 
   // Done
@@ -909,6 +1031,8 @@ $tech_legends: (
     order: 10;
 
     @include mediaMiddleScreen(27);
+
+    @include mediaMobileScreen(26);
   }
 
   // Done
@@ -916,6 +1040,8 @@ $tech_legends: (
     order: 20;
 
     @include mediaMiddleScreen(17);
+
+    @include mediaMobileScreen(20);
   }
 
   // Done
@@ -923,6 +1049,8 @@ $tech_legends: (
     order: 21;
 
     @include mediaMiddleScreen(18);
+
+    @include mediaMobileScreen(21);
   }
 
   // Done
@@ -930,6 +1058,8 @@ $tech_legends: (
     order: 22;
 
     @include mediaMiddleScreen(26);
+
+    @include mediaMobileScreen(25);
   }
 
   // Done
@@ -937,6 +1067,8 @@ $tech_legends: (
     order: 19;
 
     @include mediaMiddleScreen(16);
+
+    @include mediaMobileScreen(19);
   }
 
   // Done
@@ -972,27 +1104,36 @@ $tech_legends: (
     order: 29;
 
     @include mediaMiddleScreen(47);
+
+    @include mediaMobileScreen(43);
   }
 
   // Done
   &.pm-jira-assistant {
     order: 38;
 
+    @include mediaMobileScreen(34);
   }
 
   // Done
   &.pm-loom {
     order: 37;
+
+    @include mediaMobileScreen(33);
   }
 
   // Done
   &.pm-jira-service-desk {
     order: 39;
+
+    @include mediaMobileScreen(35);
   }
 
   // Done
   &.pm-basecamp {
     order: 40;
+
+    @include mediaMobileScreen(36);
   }
 
   // Done
@@ -1000,6 +1141,8 @@ $tech_legends: (
     order: 30;
 
     @include mediaMiddleScreen(46);
+
+    @include mediaMobileScreen(42);
   }
 
   // Done
@@ -1007,6 +1150,8 @@ $tech_legends: (
     order: 41;
 
     @include mediaMiddleScreen(48);
+
+    @include mediaMobileScreen(43);
   }
 
   // Done
@@ -1014,6 +1159,8 @@ $tech_legends: (
     order: 42;
 
     @include mediaMiddleScreen(49);
+
+    @include mediaMobileScreen(44);
   }
 
   // Done
@@ -1021,6 +1168,8 @@ $tech_legends: (
     order: 49;
 
     @include mediaMiddleScreen(57);
+
+    @include mediaMobileScreen(99);
   }
 
   // Done
@@ -1028,6 +1177,8 @@ $tech_legends: (
     order: 51;
 
     @include mediaMiddleScreen(59);
+
+    @include mediaMobileScreen(99);
   }
 
   // Done
@@ -1035,6 +1186,8 @@ $tech_legends: (
     order: 50;
 
     @include mediaMiddleScreen(58);
+
+    @include mediaMobileScreen(99);
   }
 
   // Done
@@ -1047,6 +1200,8 @@ $tech_legends: (
     order: 61;
 
     @include mediaMiddleScreen(66);
+
+    @include mediaMobileScreen(99);
   }
 
   // Done
@@ -1054,6 +1209,8 @@ $tech_legends: (
     order: 62;
 
     @include mediaMiddleScreen(67);
+
+    @include mediaMobileScreen(99);
   }
 
   // Done
@@ -1061,6 +1218,8 @@ $tech_legends: (
     order: 63;
 
     @include mediaMiddleScreen(68);
+
+    @include mediaMobileScreen(99);
   }
 
   // Done
@@ -1068,6 +1227,8 @@ $tech_legends: (
     order: 64;
 
     @include mediaMiddleScreen(69);
+
+    @include mediaMobileScreen(99);
   }
 
   // Done
@@ -1108,6 +1269,10 @@ $tech_legends: (
     text-align: center;
     font-weight: bold;
     letter-spacing: -1px;
+
+    @media screen and (max-width: 834px){
+      font-size: 36px;
+    }
   }
 
   &__technologies-list {
