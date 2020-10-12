@@ -138,7 +138,7 @@ export default {
 		}
 
 		.textarea {
-			min-height: 131px;
+			min-height: 172px;
 			padding: 22px 10px;
       resize: vertical;
     }
@@ -193,57 +193,42 @@ export default {
       font-size: 15px;
       letter-spacing: -0.02em;
     }
-	}
-
-  @media only screen and (max-width: 1024px) {
+  }
+  
+  @media only screen and (max-width: 1320px) {
 		.footer-form {
-			.entry-field,
+      .entry-field,
       .textarea,
-      /deep/ .form-checkbox-label,
-      .submit-button {
-        font-size: 12px;
-      }
-
-      .textarea {
-        min-height: 86px;
-        max-height: 130px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-      }
-
-			.entry-field {
-        padding: 15px 16px;
-      }
-
-       &_email {
-        /deep/ .v-placeholder-asterisk {
-          font-size: 12px;
-        }
-      }
-
-      /deep/ .checkmark {
-        width: 16px;
-        height: 16px;
-      }
-
-      /deep/ .form-checkboxes {
-        margin-top: 0;
-        margin-bottom: 20px;
-      }
-
+      .submit-button,
       /deep/ .form-checkbox-label {
-        &:first-child {
-          margin-bottom: 14px;
-        }
+        font-size: 14px;
       }
 
-      .submit-button {
-        height: 48px;
+      &_email {
+        /deep/ .v-placeholder-asterisk {
+          font-size: 14px;
+        }
       }
 
       .error-text {
-        font-size: 10px;
+        font-size: 13px;
       }
-		}
-	}
+    }
+  }
+
+  @media only screen and (max-width: 1140px) {
+		.footer-form {
+		  .textarea {
+        min-height: 131px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+		.footer-form {
+		  .textarea {
+        min-height: 100px;
+      }
+    }
+  }
 </style>
