@@ -21,19 +21,22 @@
 						<p class="footer-contacts__messenger-name">{{ messenger.name }}</p>
 					</li>
 				</ul>
-				<ul class="footer-contacts__social-network-list">
-					<li v-for="(socialNetwork, i) in socialNetworkList" :key="i" class="footer-contacts__social-network-item-wrapper">
-						<a :href="socialNetwork.link" class="footer-contacts__social-network-item" :class="socialNetwork.className" target="__blank"></a>
-					</li>
-				</ul>
+				<div class="footer-contacts__social-network-list-desktop">
+					<footerSocialNetworkList />
+				</div>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
+import footerSocialNetworkList from '@/components/Footer/footer-social-network-list';
+
 export default {
   name: 'footer-contacts',
+  components: {
+    footerSocialNetworkList
+  },
   data() {
     return {
       messengers: [
@@ -57,36 +60,6 @@ export default {
           className: 'messenger-wechat',
           link: 'https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc'
         }
-      ],
-      socialNetworkList: [
-        {
-          className: 'social-network-github',
-          link: 'https://github.com/maddevsio'
-        },
-        {
-          className: 'social-network-facebook',
-          link: 'https://www.facebook.com/maddevsllc'
-        },
-        {
-          className: 'social-network-twitter',
-          link: 'https://twitter.com/MadDevsIO'
-        },
-        {
-          className: 'social-network-linkedin',
-          link: 'https://www.linkedin.com/company/mad-devs'
-        },
-        {
-          className: 'social-network-instagram',
-          link: 'https://www.instagram.com/maddevsio'
-        },
-        {
-          className: 'social-network-medium',
-          link: 'https://blog.maddevs.io'
-        },
-        {
-          className: 'social-network-behance',
-          link: 'https://www.behance.net/maddevs'
-        }
       ]
     };
   }
@@ -96,13 +69,12 @@ export default {
 <style lang="scss" scoped>
 	@import '../../assets/styles/vars';
 	@import '../../assets/styles/_messengerIcons';
-	@import '../../assets/styles/_socialNetworkIcons';
 	@import '../../assets/styles/_flagsIcons';
 
 	@mixin contacts-head-content {
 		&__head-content {
 			flex-direction: column;
-			margin-bottom: 50px;
+			margin-bottom: 40px;
 		}
 
 		&__contact-item {
@@ -114,33 +86,31 @@ export default {
 
 	@mixin messenger-list-grid {
 		&__messengers-list {
+			width: max-content;
 			display: grid;
 			grid-template-columns: repeat(2, max-content);
-			padding-bottom: 35px;
+			grid-column-gap: 40px;
 		}
 
 		&__messenger-item-wrapper {
 			justify-content: flex-start;
 		}
 
-		&__messengers-list {
-			li {
-				&:nth-child(3) {
-					margin-left: -8px;
-				}
+		&__messenger-item-wrapper {
+			&:nth-child(3) {
+				margin-left: -8px;
 			}
 		}
 	}
 
 	.footer-contacts {
 		&__head-content {
-			margin-bottom: 78px;
+			margin-bottom: 74px;
 		}
 
 		&__head-content,
 		&__messengers-list,
-		&__messenger-item-wrapper,
-		&__social-network-list {
+		&__messenger-item-wrapper {
 			display: flex;
 			justify-content: space-between;
 		}
@@ -159,7 +129,6 @@ export default {
 		}
 
 		&__contact-title-flag,
-		&__social-network-item,
 		&__messenger-item {
 			&::before {
 				content: '';
@@ -196,28 +165,19 @@ export default {
 			max-width: 85%;
 		}
 
-		&__messengers-list,
-		&__social-network-list {
-			li {
-				&:first-child {
-					margin-left: -8px;
-				}
+		&__messenger-item-wrapper {
+			align-items: center;
+
+			&:first-child {
+				margin-left: -8px;
 			}
 		}
 
-		&__messengers-list {
-			margin-bottom: 62px;
-			padding-bottom: 62px;
-			border-bottom: 1px solid $border-color--grey-dark-transparent;
-		}
-
-		&__messenger-item-wrapper {
-			align-items: center;
-		}
-
-		&__social-network-item-wrapper {
-			&:last-child {
-				margin-right: -8px;
+		&__messenger-item {
+			&::before {
+				width: 42px;
+				height: 42px;
+				margin-right: 3px;
 			}
 		}
 
@@ -225,18 +185,10 @@ export default {
 			color: $text-color--grey;
 		}
 
-		&__messenger-item {
-			&::before {
-				margin-right: 3px;
-			}
-		}
-
-		&__messenger-item,
-		&__social-network-item {
-			&::before {
-				width: 42px;
-				height: 42px;
-			}
+		&__social-network-list-desktop {
+			margin-top: 60px;
+			padding-top: 60px;
+			border-top: 1px solid $border-color--grey-dark-transparent;
 		}
 	}
 
@@ -251,8 +203,7 @@ export default {
 				font-size: 14px;
 			}
 
-			&__messenger-item,
-			&__social-network-item {
+			&__messenger-item {
 				&::before {
 					width: 36px;
 					height: 36px;
@@ -263,9 +214,9 @@ export default {
 
 	@media only screen and (max-width: 1200px) {
 		.footer-contacts {
-			&__messengers-list {
-				margin-bottom: 40px;
-				padding-bottom: 40px;
+			&__social-network-list-desktop {
+				margin-top: 35px;
+				padding-top: 40px;
 			}
 
 			@include contacts-head-content;
@@ -294,10 +245,8 @@ export default {
 				max-width: 100%;
 			}
 
-			&__social-network-item-wrapper {
-				&:last-child {
-					margin-right: 0;
-				}
+			&__social-network-list-desktop {
+				display: none;
 			}
 		}
 	}
@@ -305,11 +254,6 @@ export default {
 	@media only screen and (max-width: 640px) {
 		.footer-contacts {
 			@include contacts-head-content;
-		}
-	}
-
-	@media only screen and (max-width: 576px) {
-		.footer-contacts {
 		  @include messenger-list-grid;
 		}
 	}

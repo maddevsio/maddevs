@@ -2,14 +2,17 @@
   <footer :class="`footer ${currentPageName}`">
     <div class="container">
 			<div class="footer__content row">
-				<div class="footer__left-content col-xl-8 col-lg-8">
+				<div class="footer__left-content col-xl-8 col-lg-7">
 					<h2 class="footer__main-title">Get In Touch</h2>
 					<footerContacts />
 					<footerNavbar />
 				</div>
-				<div class="footer__form-wrap col-xl-4 col-lg-4">
+				<div class="footer__form-wrap col-xl-4 col-lg-5">
 					<footerForm />
 				</div>
+			</div>
+			<div class="footer__social-network-list-mobile">
+				<footerSocialNetWorkList />
 			</div>
 			<footerNavbarMobile />
     </div>
@@ -21,6 +24,7 @@ import footerForm from '@/components/Footer/footer-form';
 import footerContacts from '@/components/Footer/footer-contacts';
 import footerNavbar from '@/components/Footer/footer-navbar';
 import footerNavbarMobile from '@/components/Footer/footer-navbar-mobile';
+import footerSocialNetWorkList from '@/components/Footer/footer-social-network-list';
 
 export default {
   name: 'Footer',
@@ -28,7 +32,8 @@ export default {
     footerForm,
     footerContacts,
     footerNavbar,
-    footerNavbarMobile
+    footerNavbarMobile,
+    footerSocialNetWorkList
   },
   mounted() {
     if ($nuxt.$route.name) {
@@ -66,7 +71,12 @@ export default {
 		}
 
 		&__form-wrap {
-			margin-top: 18px;
+			margin-top: 20px;
+		}
+
+		&__social-network-list-mobile {
+			display: none;
+			margin: 40px; 
 		}
 	}
 
@@ -86,6 +96,14 @@ export default {
 		}
 	}
 
+  @media only screen and (max-width: 1199px) {
+		.footer {
+			&__left-content {
+				padding-right: 40px;
+			}
+		}
+	}
+
 	@media only screen and (max-width: 991px) {
 		.footer {
 			padding-top: 75px;
@@ -98,7 +116,12 @@ export default {
 			}
 			
 			&__form-wrap {
+				margin-top: 0;
 				padding-top: 40px;
+			}
+
+			&__social-network-list-mobile {
+				display: block;
 			}
 		}
 	}
@@ -114,6 +137,11 @@ export default {
 	@media only screen and (max-width: 375px) {
 		.footer {
 			padding-top: 50px;
+
+			&__social-network-list-mobile {
+				margin-left: 0;
+				margin-right: 0;
+			}
 		}
 	}
 </style>

@@ -408,8 +408,10 @@
     background-color: $input-bgcolor--grey-dark;
   }
 
-  a {
+  a,
+  span {
     color: $label-text--grey-dark;
+    white-space: nowrap;
   }
 }
 
@@ -430,7 +432,7 @@
 // ----------- Modal window ----------- //
 .error-text {
   display: block;
-  margin-top: 7px;
+  margin-top: 3px;
   color: $text-color--red-opacity;
   font-size: 16px;
   font-family: 'Poppins-Regular', sans-serif;

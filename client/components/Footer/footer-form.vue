@@ -138,7 +138,7 @@ export default {
 		}
 
 		.textarea {
-			min-height: 172px;
+			min-height: 194px;
 			padding: 22px 10px;
       resize: vertical;
     }
@@ -153,11 +153,11 @@ export default {
     }
 
     .field-item {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .entry-field {
-      padding: 21px 17px;
+      padding: 15px 17px;
       border: 1px solid $border-color--grey-form;
       border-radius: 4px;
       background-color: transparent;
@@ -216,18 +216,10 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1140px) {
+  @media only screen and (min-width: 1141px) and (max-width: 1199px) {
 		.footer-form {
 		  .textarea {
-        min-height: 131px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1000px) {
-		.footer-form {
-		  .textarea {
-        min-height: 100px;
+        min-height: 160px;
       }
     }
   }
