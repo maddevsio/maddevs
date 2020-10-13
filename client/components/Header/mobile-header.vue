@@ -29,9 +29,6 @@
 				<div class="mobile-header__contacts">
 					<footerContacts />
 				</div>
-				<div class="mobile-header__social-network_links">
-					<!-- <footerSocialNetworkBar /> -->
-				</div>
 			</div>
 		</perfect-scrollbar>
 	</div>

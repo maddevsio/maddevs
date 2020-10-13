@@ -1,29 +1,27 @@
 <template>
 	<div class="footer-contacts">
-		<div class="footer-contacts">
-			<div class="footer-contacts__head-content">
-				<div class="footer-contacts__contact-item">
-					<p class="footer-contacts__contact-title">Text us:</p>
-					<a href="mailto:team@maddevs.io" class="footer-contacts__contact-link footer-contacts__contact-mail">team@maddevs.io</a>
-				</div>
-				<div class="footer-contacts__contact-item">
-					<div class="footer-contacts__contact-title-wrapper">
-						<div class="footer-contacts__contact-title-flag flag-uk"></div>
-						<p class="footer-contacts__contact-title">Call us:</p>
-					</div>
-					<a href="tel:+44 20 3984 8555" class="footer-contacts__contact-link footer-contacts__contact-phone-number">+44 20 3984 8555</a>
-				</div>
+		<div class="footer-contacts__head-content">
+			<div class="footer-contacts__contact-item">
+				<p class="footer-contacts__contact-title">Text us:</p>
+				<a href="mailto:team@maddevs.io" class="footer-contacts__contact-link footer-contacts__contact-mail">team@maddevs.io</a>
 			</div>
-			<div class="footer-contacts__lists-wrapper">
-				<ul class="footer-contacts__messengers-list">
-					<li v-for="(messenger, i) in messengers" :key="i" class="footer-contacts__messenger-item-wrapper">
-						<a :href="messenger.link" class="footer-contacts__messenger-item" :class="messenger.className" target="__blank"></a>
-						<p class="footer-contacts__messenger-name">{{ messenger.name }}</p>
-					</li>
-				</ul>
-				<div class="footer-contacts__social-network-list-desktop">
-					<footerSocialNetworkList />
+			<div class="footer-contacts__contact-item">
+				<div class="footer-contacts__contact-title-wrapper">
+					<div class="footer-contacts__contact-title-flag flag-uk"></div>
+					<p class="footer-contacts__contact-title">Call us:</p>
 				</div>
+				<a href="tel:+44 20 3984 8555" class="footer-contacts__contact-link footer-contacts__contact-phone-number">+44 20 3984 8555</a>
+			</div>
+		</div>
+		<div class="footer-contacts__lists-wrapper">
+			<ul class="footer-contacts__messengers-list">
+				<li v-for="(messenger, i) in messengers" :key="i" class="footer-contacts__messenger-item-wrapper">
+					<a :href="messenger.link" class="footer-contacts__messenger-item" :class="messenger.className" target="__blank"></a>
+					<p class="footer-contacts__messenger-name">{{ messenger.name }}</p>
+				</li>
+			</ul>
+			<div class="footer-contacts__social-network-list-desktop">
+				<footerSocialNetworkList />
 			</div>
 		</div>
 	</div>
