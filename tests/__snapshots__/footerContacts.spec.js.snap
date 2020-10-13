@@ -121,73 +121,77 @@ exports[`Footer contacts renders correctly 1`] = `
         </li>
       </ul>
        
-      <ul
-        class="footer-contacts__social-network-list"
+      <div
+        class="footer-contacts__social-network-list-desktop"
       >
-        <li
-          class="footer-contacts__social-network-item-wrapper"
+        <ul
+          class="footerSocialNetworkList"
         >
-          <a
-            class="footer-contacts__social-network-item social-network-github"
-            href="https://github.com/maddevsio"
-            target="__blank"
-          />
-        </li>
-        <li
-          class="footer-contacts__social-network-item-wrapper"
-        >
-          <a
-            class="footer-contacts__social-network-item social-network-facebook"
-            href="https://www.facebook.com/maddevsllc"
-            target="__blank"
-          />
-        </li>
-        <li
-          class="footer-contacts__social-network-item-wrapper"
-        >
-          <a
-            class="footer-contacts__social-network-item social-network-twitter"
-            href="https://twitter.com/MadDevsIO"
-            target="__blank"
-          />
-        </li>
-        <li
-          class="footer-contacts__social-network-item-wrapper"
-        >
-          <a
-            class="footer-contacts__social-network-item social-network-linkedin"
-            href="https://www.linkedin.com/company/mad-devs"
-            target="__blank"
-          />
-        </li>
-        <li
-          class="footer-contacts__social-network-item-wrapper"
-        >
-          <a
-            class="footer-contacts__social-network-item social-network-instagram"
-            href="https://www.instagram.com/maddevsio"
-            target="__blank"
-          />
-        </li>
-        <li
-          class="footer-contacts__social-network-item-wrapper"
-        >
-          <a
-            class="footer-contacts__social-network-item social-network-medium"
-            href="https://blog.maddevs.io"
-            target="__blank"
-          />
-        </li>
-        <li
-          class="footer-contacts__social-network-item-wrapper"
-        >
-          <a
-            class="footer-contacts__social-network-item social-network-behance"
-            href="https://www.behance.net/maddevs"
-            target="__blank"
-          />
-        </li>
-      </ul>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link social-network-github"
+              href="https://github.com/maddevsio"
+              target="__blank"
+            />
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link social-network-facebook"
+              href="https://www.facebook.com/maddevsllc"
+              target="__blank"
+            />
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link social-network-twitter"
+              href="https://twitter.com/MadDevsIO"
+              target="__blank"
+            />
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link social-network-linkedin"
+              href="https://www.linkedin.com/company/mad-devs"
+              target="__blank"
+            />
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link social-network-instagram"
+              href="https://www.instagram.com/maddevsio"
+              target="__blank"
+            />
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link social-network-medium"
+              href="https://blog.maddevs.io"
+              target="__blank"
+            />
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link social-network-behance"
+              href="https://www.behance.net/maddevs"
+              target="__blank"
+            />
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
