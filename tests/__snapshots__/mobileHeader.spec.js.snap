@@ -91,201 +91,193 @@ exports[`Mobile Header renders correctly 1`] = `
           class="footer-contacts"
         >
           <div
-            class="footer-contacts"
+            class="footer-contacts__head-content"
           >
             <div
-              class="footer-contacts__head-content"
+              class="footer-contacts__contact-item"
             >
-              <div
-                class="footer-contacts__contact-item"
+              <p
+                class="footer-contacts__contact-title"
               >
-                <p
-                  class="footer-contacts__contact-title"
-                >
-                  Text us:
-                </p>
-                 
-                <a
-                  class="footer-contacts__contact-link footer-contacts__contact-mail"
-                  href="mailto:team@maddevs.io"
-                >
-                  team@maddevs.io
-                </a>
-              </div>
+                Text us:
+              </p>
                
-              <div
-                class="footer-contacts__contact-item"
+              <a
+                class="footer-contacts__contact-link footer-contacts__contact-mail"
+                href="mailto:team@maddevs.io"
               >
-                <div
-                  class="footer-contacts__contact-title-wrapper"
-                >
-                  <div
-                    class="footer-contacts__contact-title-flag flag-uk"
-                  />
-                   
-                  <p
-                    class="footer-contacts__contact-title"
-                  >
-                    Call us:
-                  </p>
-                </div>
-                 
-                <a
-                  class="footer-contacts__contact-link footer-contacts__contact-phone-number"
-                  href="tel:+44 20 3984 8555"
-                >
-                  +44 20 3984 8555
-                </a>
-              </div>
+                team@maddevs.io
+              </a>
             </div>
              
             <div
-              class="footer-contacts__lists-wrapper"
+              class="footer-contacts__contact-item"
+            >
+              <div
+                class="footer-contacts__contact-title-wrapper"
+              >
+                <div
+                  class="footer-contacts__contact-title-flag flag-uk"
+                />
+                 
+                <p
+                  class="footer-contacts__contact-title"
+                >
+                  Call us:
+                </p>
+              </div>
+               
+              <a
+                class="footer-contacts__contact-link footer-contacts__contact-phone-number"
+                href="tel:+44 20 3984 8555"
+              >
+                +44 20 3984 8555
+              </a>
+            </div>
+          </div>
+           
+          <div
+            class="footer-contacts__lists-wrapper"
+          >
+            <ul
+              class="footer-contacts__messengers-list"
+            >
+              <li
+                class="footer-contacts__messenger-item-wrapper"
+              >
+                <a
+                  class="footer-contacts__messenger-item messenger-facebook-messenger"
+                  href="https://facebook.com/maddevsllc"
+                  target="__blank"
+                />
+                 
+                <p
+                  class="footer-contacts__messenger-name"
+                >
+                  Messenger
+                </p>
+              </li>
+              <li
+                class="footer-contacts__messenger-item-wrapper"
+              >
+                <a
+                  class="footer-contacts__messenger-item messenger-watsapp"
+                  href="http://wa.me/996555771481"
+                  target="__blank"
+                />
+                 
+                <p
+                  class="footer-contacts__messenger-name"
+                >
+                  WhatsApp
+                </p>
+              </li>
+              <li
+                class="footer-contacts__messenger-item-wrapper"
+              >
+                <a
+                  class="footer-contacts__messenger-item messenger-telegram"
+                  href="https://t.me/mun_tamara/"
+                  target="__blank"
+                />
+                 
+                <p
+                  class="footer-contacts__messenger-name"
+                >
+                  Telegram
+                </p>
+              </li>
+              <li
+                class="footer-contacts__messenger-item-wrapper"
+              >
+                <a
+                  class="footer-contacts__messenger-item messenger-wechat"
+                  href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
+                  target="__blank"
+                />
+                 
+                <p
+                  class="footer-contacts__messenger-name"
+                >
+                  WeChat
+                </p>
+              </li>
+            </ul>
+             
+            <div
+              class="footer-contacts__social-network-list-desktop"
             >
               <ul
-                class="footer-contacts__messengers-list"
+                class="footerSocialNetworkList"
               >
                 <li
-                  class="footer-contacts__messenger-item-wrapper"
+                  class="footerSocialNetworkList__social-network-link-wrapper"
                 >
                   <a
-                    class="footer-contacts__messenger-item messenger-facebook-messenger"
-                    href="https://facebook.com/maddevsllc"
+                    class="footerSocialNetworkList__social-network-link social-network-github"
+                    href="https://github.com/maddevsio"
                     target="__blank"
                   />
-                   
-                  <p
-                    class="footer-contacts__messenger-name"
-                  >
-                    Messenger
-                  </p>
                 </li>
                 <li
-                  class="footer-contacts__messenger-item-wrapper"
+                  class="footerSocialNetworkList__social-network-link-wrapper"
                 >
                   <a
-                    class="footer-contacts__messenger-item messenger-watsapp"
-                    href="http://wa.me/996555771481"
+                    class="footerSocialNetworkList__social-network-link social-network-facebook"
+                    href="https://www.facebook.com/maddevsllc"
                     target="__blank"
                   />
-                   
-                  <p
-                    class="footer-contacts__messenger-name"
-                  >
-                    WhatsApp
-                  </p>
                 </li>
                 <li
-                  class="footer-contacts__messenger-item-wrapper"
+                  class="footerSocialNetworkList__social-network-link-wrapper"
                 >
                   <a
-                    class="footer-contacts__messenger-item messenger-telegram"
-                    href="https://t.me/mun_tamara/"
+                    class="footerSocialNetworkList__social-network-link social-network-twitter"
+                    href="https://twitter.com/MadDevsIO"
                     target="__blank"
                   />
-                   
-                  <p
-                    class="footer-contacts__messenger-name"
-                  >
-                    Telegram
-                  </p>
                 </li>
                 <li
-                  class="footer-contacts__messenger-item-wrapper"
+                  class="footerSocialNetworkList__social-network-link-wrapper"
                 >
                   <a
-                    class="footer-contacts__messenger-item messenger-wechat"
-                    href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
+                    class="footerSocialNetworkList__social-network-link social-network-linkedin"
+                    href="https://www.linkedin.com/company/mad-devs"
                     target="__blank"
                   />
-                   
-                  <p
-                    class="footer-contacts__messenger-name"
-                  >
-                    WeChat
-                  </p>
+                </li>
+                <li
+                  class="footerSocialNetworkList__social-network-link-wrapper"
+                >
+                  <a
+                    class="footerSocialNetworkList__social-network-link social-network-instagram"
+                    href="https://www.instagram.com/maddevsio"
+                    target="__blank"
+                  />
+                </li>
+                <li
+                  class="footerSocialNetworkList__social-network-link-wrapper"
+                >
+                  <a
+                    class="footerSocialNetworkList__social-network-link social-network-medium"
+                    href="https://blog.maddevs.io"
+                    target="__blank"
+                  />
+                </li>
+                <li
+                  class="footerSocialNetworkList__social-network-link-wrapper"
+                >
+                  <a
+                    class="footerSocialNetworkList__social-network-link social-network-behance"
+                    href="https://www.behance.net/maddevs"
+                    target="__blank"
+                  />
                 </li>
               </ul>
-               
-              <div
-                class="footer-contacts__social-network-list-desktop"
-              >
-                <ul
-                  class="footerSocialNetworkList"
-                >
-                  <li
-                    class="footerSocialNetworkList__social-network-link-wrapper"
-                  >
-                    <a
-                      class="footerSocialNetworkList__social-network-link social-network-github"
-                      href="https://github.com/maddevsio"
-                      target="__blank"
-                    />
-                  </li>
-                  <li
-                    class="footerSocialNetworkList__social-network-link-wrapper"
-                  >
-                    <a
-                      class="footerSocialNetworkList__social-network-link social-network-facebook"
-                      href="https://www.facebook.com/maddevsllc"
-                      target="__blank"
-                    />
-                  </li>
-                  <li
-                    class="footerSocialNetworkList__social-network-link-wrapper"
-                  >
-                    <a
-                      class="footerSocialNetworkList__social-network-link social-network-twitter"
-                      href="https://twitter.com/MadDevsIO"
-                      target="__blank"
-                    />
-                  </li>
-                  <li
-                    class="footerSocialNetworkList__social-network-link-wrapper"
-                  >
-                    <a
-                      class="footerSocialNetworkList__social-network-link social-network-linkedin"
-                      href="https://www.linkedin.com/company/mad-devs"
-                      target="__blank"
-                    />
-                  </li>
-                  <li
-                    class="footerSocialNetworkList__social-network-link-wrapper"
-                  >
-                    <a
-                      class="footerSocialNetworkList__social-network-link social-network-instagram"
-                      href="https://www.instagram.com/maddevsio"
-                      target="__blank"
-                    />
-                  </li>
-                  <li
-                    class="footerSocialNetworkList__social-network-link-wrapper"
-                  >
-                    <a
-                      class="footerSocialNetworkList__social-network-link social-network-medium"
-                      href="https://blog.maddevs.io"
-                      target="__blank"
-                    />
-                  </li>
-                  <li
-                    class="footerSocialNetworkList__social-network-link-wrapper"
-                  >
-                    <a
-                      class="footerSocialNetworkList__social-network-link social-network-behance"
-                      href="https://www.behance.net/maddevs"
-                      target="__blank"
-                    />
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
       </div>
-       
-      <div
-        class="mobile-header__social-network_links"
-      />
     </div>
   </perfect-scrollbar-stub>
 </div>
