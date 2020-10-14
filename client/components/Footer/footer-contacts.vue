@@ -16,7 +16,7 @@
 		<div class="footer-contacts__lists-wrapper">
 			<ul class="footer-contacts__messengers-list">
 				<li v-for="(messenger, i) in messengers" :key="i" class="footer-contacts__messenger-item-wrapper">
-					<a :href="messenger.link" class="footer-contacts__messenger-item" :class="messenger.className" target="__blank"></a>
+					<a :href="messenger.link" class="footer-contacts__messenger-item" :class="`footer-contacts__${messenger.className}`" target="__blank"></a>
 					<p class="footer-contacts__messenger-name">{{ messenger.name }}</p>
 				</li>
 			</ul>
@@ -126,8 +126,7 @@ export default {
 			font-family: 'Poppins-Regular', sans-serif;
 		}
 
-		&__contact-title-flag,
-		&__messenger-item {
+		&__contact-title-flag {
 			&::before {
 				content: '';
 				display: block;
@@ -172,11 +171,10 @@ export default {
 		}
 
 		&__messenger-item {
-			&::before {
-				width: 42px;
-				height: 42px;
-				margin-right: 3px;
-			}
+			display: block;
+			width: 42px;
+			height: 42px;
+			margin-right: 3px;
 		}
 
 		&__messenger-name {
@@ -187,6 +185,22 @@ export default {
 			margin-top: 52px;
 			padding-top: 52px;
 			border-top: 1px solid $border-color--grey-dark-transparent;
+		}
+
+		&__messenger-facebook-messenger {
+			@include messenger-facebook-messenger;
+		}
+
+		&__messenger-watsapp {
+			@include messenger-watsapp;
+		}
+
+		&__messenger-telegram {
+			@include messenger-telegram;
+		}
+
+		&__messenger-wechat {
+			@include messenger-wechat;
 		}
 	}
 
@@ -202,10 +216,8 @@ export default {
 			}
 
 			&__messenger-item {
-				&::before {
-					width: 36px;
-					height: 36px;
-				}
+				width: 36px;
+				height: 36px;
 			}
 		}
 	}

@@ -1,7 +1,7 @@
 <template>
   <ul class="footerSocialNetworkList">
     <li v-for="(socialNetwork, i) in socialNetworkList" :key="i" class="footerSocialNetworkList__social-network-link-wrapper">
-      <a :href="socialNetwork.link" class="footerSocialNetworkList__social-network-link" :class="socialNetwork.className" target="__blank"></a>
+      <a :href="socialNetwork.link" class="footerSocialNetworkList__social-network-link" :class="`footerSocialNetworkList__${socialNetwork.className}`" target="__blank"></a>
     </li>
   </ul>
 </template>
@@ -65,22 +65,45 @@ export default {
     }
     
     &__social-network-link {
-      &::before {
-        content: '';
-        display: block;
-        width: 42px;
-        height: 42px;
-      }
+      display: block;
+      width: 42px;
+      height: 42px;
+    }
+
+    &__social-network-github {
+      @include social-network-github;
+    }
+
+    &__social-network-facebook {
+      @include social-network-facebook;
+    }
+
+    &__social-network-twitter {
+      @include social-network-twitter;
+    }
+
+    &__social-network-linkedin {
+      @include social-network-linkedin;
+    }
+
+    &__social-network-instagram {
+      @include social-network-instagram;
+    }
+
+    &__social-network-medium {
+      @include social-network-medium;
+    }
+
+    &__social-network-behance {
+      @include social-network-behance;
     }
   }
 
   @media only screen and (max-width: 1320px) {
     .footerSocialNetworkList {
       &__social-network-link {
-        &::before {
-          width: 36px;
-          height: 36px;
-        }
+        width: 36px;
+        height: 36px;
       }
     }
   }
