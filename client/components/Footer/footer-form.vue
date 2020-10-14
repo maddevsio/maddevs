@@ -214,8 +214,10 @@ export default {
 
   @media only screen and (max-width: 991px) {
 		.footer-form {
-      /deep/ .form-checkboxes {
-        margin-top: 0;
+      .field-item {
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }

@@ -25,7 +25,7 @@ export default {
   
   .footer-navbar {
 		width: max-content;
-    margin-top: 66px;
+    margin-top: 65px;
 
     &__nav-list {
 			display: flex;
@@ -84,10 +84,4 @@ export default {
 			}
 		}
 	}
-
-	@media only screen and (max-width: 991px) {
-    .footer-navbar {
-      display: none;
-    }
-  }
 </style>

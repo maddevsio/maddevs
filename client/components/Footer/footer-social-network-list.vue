@@ -107,23 +107,4 @@ export default {
       }
     }
   }
-  
-  @media only screen and (max-width: 1200px) {
-    .footerSocialNetworkList {
-      &__social-network-list {
-        margin-top: 35px;
-        padding-top: 40px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 991px) {
-    .footerSocialNetworkList {
-      &__social-network-link-wrapper {
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-    }
-  }
 </style>

@@ -130,11 +130,6 @@ export default {
 			&::before {
 				content: '';
 				display: block;
-			}
-		}
-
-		&__contact-title-flag {
-			&::before {
 				width: 18px;
 				height: 14px;
 				margin-right: 8px;
@@ -216,13 +211,13 @@ export default {
 			}
 
 			&__messenger-item {
-				width: 36px;
-				height: 36px;
-			}
+        width: 36px;
+        height: 36px;
+      }
 		}
 	}
 
-	@media only screen and (max-width: 1200px) {
+	@media only screen and (min-width: 991px) and (max-width: 1200px) {
 		.footer-contacts {
 			&__social-network-list-desktop {
 				margin-top: 35px;
@@ -230,11 +225,6 @@ export default {
 			}
 
 			@include contacts-head-content;
-		}
-	}
-
-	@media only screen and (min-width: 992px) and (max-width: 1140px) {
-		.footer-contacts {
 		  @include messenger-list-grid;
 		}
 	}

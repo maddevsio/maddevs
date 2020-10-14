@@ -26,7 +26,6 @@ export default {
   @import '../../assets/styles/vars';
 
   .footer-navbar-mobile {
-    display: none;
     margin-top: 40px;
     text-align: center;
 
@@ -40,12 +39,6 @@ export default {
 			color: $text-color--grey;
       letter-spacing:  -0.02em;
       text-decoration: none;
-		}
-  }
-
-  @media only screen and (max-width: 991px) {
-		.footer-navbar-mobile {
-			display: block;
 		}
   }
 
