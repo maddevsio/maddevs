@@ -2,17 +2,15 @@
   <section id="quickProjectStart" class="quickProjectStart">
     <div class="container">
       <h2 class="quickProjectStart__main-title">Quick Project Start</h2>
-      <div class="quickProjectStart__content-wrap">
-        <div class="quickProjectStart__content-list row">
-          <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2" v-for="(item, i) in sectionContent" :key="i">
-            <div class="quickProjectStart__list-item-icons-group">
-              <div class="quickProjectStart__list-item-icon" :class="item.iconClassName"/>
-              <div class="quickProjectStart__list-item-arrow quick-arrow"/>
-            </div>
-            <div class="quickProjectStart__list-item-text">
-              <h4 class="quickProjectStart__list-item-title">{{ item.title }}</h4>
-              <p class="quickProjectStart__description">{{ item.description }}</p>
-            </div>
+      <div class="quickProjectStart__content-list row">
+        <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2" v-for="(item, i) in sectionContent" :key="i">
+          <div class="quickProjectStart__icons-group">
+            <div class="quickProjectStart__main-icon" :class="`quickProjectStart__${item.iconClassName}`"/>
+            <div class="quickProjectStart__arrow-icon"/>
+          </div>
+          <div class="quickProjectStart__list-item-text-wrapper">
+            <h4 class="quickProjectStart__title">{{ item.title }}</h4>
+            <p class="quickProjectStart__description">{{ item.description }}</p>
           </div>
         </div>
       </div>
@@ -79,14 +77,14 @@ export default {
     text-align: center;
 
     &__main-title {
-      margin-bottom: 40px;
+      margin-bottom: 37px;
       font-size: 62px;
       line-height: 74px;
       color: $text-color--white;
     }
 
     &__main-title,
-    &__list-item-title {
+    &__title {
       font-family: 'Poppins-Bold';
       letter-spacing: -1px;
     }
@@ -96,7 +94,7 @@ export default {
     }
 
     &__list-item,
-    &__list-item-icons-group {
+    &__icons-group {
       display: flex;
     }
 
@@ -105,40 +103,33 @@ export default {
       align-items: center;
 
       &:last-child {
-        .quickProjectStart__list-item-arrow {
+        .quickProjectStart__arrow-icon {
           display: none;
         }
       }
     }
 
-    &__list-item-icon,
-    &__list-item-arrow {
-      &::before {
-        content: '';
-        display: block;
-        height: 65px;
-        margin-bottom: 3px;
-      }
+    &__main-icon,
+    &__arrow-icon {
+      display: block;
+      height: 65px;
+      margin-bottom: 3px;
     }
 
-    &__list-item-icon {
-      &::before {
-        width: 48px;
-      }
+    &__main-icon {
+      width: 48px;
     }
 
-    &__list-item-arrow {
+    &__arrow-icon {
+      width: 16vw;
+      max-width: 233px;
       position: absolute;
+      margin-left: 2.7vw;
 
-       &::before {
-        width: 16vw;
-        max-width: 233px;
-        margin-top: -3px;
-        margin-left: 2.7vw;
-      }
+      @include quick-arrow;
     }
 
-    &__list-item-title {
+    &__title {
       font-size: 32px;
       font-family: 'Poppins-Bold';
       line-height: 32px;
@@ -182,6 +173,26 @@ export default {
       line-height: 24px;
       letter-spacing: -0.02em;
     }
+
+    &__quick-contact {
+      @include quick-contact;
+    }
+
+    &__quick-analysis {
+      @include quick-analysis;
+    }
+
+    &__quick-proposal {
+      @include quick-proposal;
+    }
+
+    &__quick-team {
+      @include quick-team;
+    }
+
+    &__quick-start {
+      @include quick-start;
+    }
   }
 
   @media only screen and (max-width: 1240px) {
@@ -194,7 +205,7 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     .quickProjectStart {
-      &__list-item-arrow {
+      &__arrow-icon {
         display: none;
       }
 
@@ -206,7 +217,7 @@ export default {
 
   @media only screen and (max-width: 960px) {
     .quickProjectStart {
-      &__list-item-title {
+      &__title {
         font-size: 27px;
       }
 
@@ -230,7 +241,7 @@ export default {
         line-height: 43px;
       }
 
-      &__list-item-title {
+      &__title {
         font-size: 18px;
         line-height: 21px;
       }
@@ -241,21 +252,21 @@ export default {
         line-height: 15px;
       }
 
-      &__list-item-icon {
-        &::before {
-          width: 45px;
-          height: 55px;
-        }
+      &__main-icon {
+        width: 45px;
+        height: 55px;
       }
 
-      &__list-item-arrow {
+      &__arrow-icon {
         display: block;
+        width: 11vw;
+        max-width: 84px;
+        margin-left: 6vw;
+        @include quick-arrow-bright;
+      }
 
-        &::before {
-          width: 11vw;
-          max-width: 84px;
-          margin-left: 6vw;
-        }
+      &__button {
+        margin-top: 37px;
       }
     }
   }
@@ -276,12 +287,12 @@ export default {
         margin-top: 10px;
       }
 
-      &__list-item-text {
+      &__list-item-text-wrapper {
         margin-top: 16px;
         margin-left: 13px;
       }
 
-      &__list-item-title {
+      &__title {
         font-size: 27px;
         line-height: 32px;
       }
@@ -291,14 +302,12 @@ export default {
         line-height: 20px;
       }
 
-      &__list-item-icon {
-        &::before {
-          width: 48px;
-          height: 65px;
-        }
+      &__main-icon {
+        width: 48px;
+        height: 65px;
       }
 
-      &__list-item-arrow {
+      &__arrow-icon {
         display: none;
       }
 
