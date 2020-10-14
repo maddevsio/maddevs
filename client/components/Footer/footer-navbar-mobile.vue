@@ -42,7 +42,7 @@ export default {
 		}
   }
 
-   @media only screen and (max-width: 470px) {
+  @media only screen and (max-width: 470px) {
 		.footer-navbar-mobile {
 			&__nav-group {
         display: flex;
