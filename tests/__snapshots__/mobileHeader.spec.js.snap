@@ -146,7 +146,7 @@ exports[`Mobile Header renders correctly 1`] = `
                 class="footer-contacts__messenger-item-wrapper"
               >
                 <a
-                  class="footer-contacts__messenger-item messenger-facebook-messenger"
+                  class="footer-contacts__messenger-item footer-contacts__messenger-facebook-messenger"
                   href="https://facebook.com/maddevsllc"
                   target="__blank"
                 />
@@ -161,7 +161,7 @@ exports[`Mobile Header renders correctly 1`] = `
                 class="footer-contacts__messenger-item-wrapper"
               >
                 <a
-                  class="footer-contacts__messenger-item messenger-watsapp"
+                  class="footer-contacts__messenger-item footer-contacts__messenger-watsapp"
                   href="http://wa.me/996555771481"
                   target="__blank"
                 />
@@ -176,7 +176,7 @@ exports[`Mobile Header renders correctly 1`] = `
                 class="footer-contacts__messenger-item-wrapper"
               >
                 <a
-                  class="footer-contacts__messenger-item messenger-telegram"
+                  class="footer-contacts__messenger-item footer-contacts__messenger-telegram"
                   href="https://t.me/mun_tamara/"
                   target="__blank"
                 />
@@ -191,7 +191,7 @@ exports[`Mobile Header renders correctly 1`] = `
                 class="footer-contacts__messenger-item-wrapper"
               >
                 <a
-                  class="footer-contacts__messenger-item messenger-wechat"
+                  class="footer-contacts__messenger-item footer-contacts__messenger-wechat"
                   href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
                   target="__blank"
                 />
@@ -214,7 +214,7 @@ exports[`Mobile Header renders correctly 1`] = `
                   class="footerSocialNetworkList__social-network-link-wrapper"
                 >
                   <a
-                    class="footerSocialNetworkList__social-network-link social-network-github"
+                    class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-github"
                     href="https://github.com/maddevsio"
                     target="__blank"
                   />
@@ -223,7 +223,7 @@ exports[`Mobile Header renders correctly 1`] = `
                   class="footerSocialNetworkList__social-network-link-wrapper"
                 >
                   <a
-                    class="footerSocialNetworkList__social-network-link social-network-facebook"
+                    class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-facebook"
                     href="https://www.facebook.com/maddevsllc"
                     target="__blank"
                   />
@@ -232,7 +232,7 @@ exports[`Mobile Header renders correctly 1`] = `
                   class="footerSocialNetworkList__social-network-link-wrapper"
                 >
                   <a
-                    class="footerSocialNetworkList__social-network-link social-network-twitter"
+                    class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-twitter"
                     href="https://twitter.com/MadDevsIO"
                     target="__blank"
                   />
@@ -241,7 +241,7 @@ exports[`Mobile Header renders correctly 1`] = `
                   class="footerSocialNetworkList__social-network-link-wrapper"
                 >
                   <a
-                    class="footerSocialNetworkList__social-network-link social-network-linkedin"
+                    class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-linkedin"
                     href="https://www.linkedin.com/company/mad-devs"
                     target="__blank"
                   />
@@ -250,7 +250,7 @@ exports[`Mobile Header renders correctly 1`] = `
                   class="footerSocialNetworkList__social-network-link-wrapper"
                 >
                   <a
-                    class="footerSocialNetworkList__social-network-link social-network-instagram"
+                    class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-instagram"
                     href="https://www.instagram.com/maddevsio"
                     target="__blank"
                   />
@@ -259,7 +259,7 @@ exports[`Mobile Header renders correctly 1`] = `
                   class="footerSocialNetworkList__social-network-link-wrapper"
                 >
                   <a
-                    class="footerSocialNetworkList__social-network-link social-network-medium"
+                    class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-medium"
                     href="https://blog.maddevs.io"
                     target="__blank"
                   />
@@ -268,7 +268,7 @@ exports[`Mobile Header renders correctly 1`] = `
                   class="footerSocialNetworkList__social-network-link-wrapper"
                 >
                   <a
-                    class="footerSocialNetworkList__social-network-link social-network-behance"
+                    class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-behance"
                     href="https://www.behance.net/maddevs"
                     target="__blank"
                   />
