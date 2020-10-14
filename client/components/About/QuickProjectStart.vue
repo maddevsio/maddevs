@@ -118,6 +118,7 @@ export default {
 
     &__main-icon {
       width: 48px;
+      margin-bottom: 8px;
     }
 
     &__arrow-icon {
