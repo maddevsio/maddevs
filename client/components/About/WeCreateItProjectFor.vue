@@ -76,7 +76,7 @@ export default {
     margin: 131px 0;
 
     &__content-wrapper {
-      padding: 40px 48px 48px;
+      padding: 40px 45px 45px;
       text-align: center;
       background-color: $bgcolor--white;
     }
@@ -91,7 +91,8 @@ export default {
 
     &__flags-list {
       display: grid;
-      grid-template-columns: repeat(22, 1fr);
+      grid-template-columns: repeat(22, max-content);
+      justify-content: space-between;
     }
 
     &__flag-item {
@@ -105,13 +106,14 @@ export default {
 
     &__main-title,
     &__paragraph {
-      color: $text-color--black;
+      color: $text-color--black-lighter;
     }
 
     &__main-title {
-      margin-bottom: 25px;
+      margin-bottom: 39px;
       font-size: 62px;
       font-family: 'Poppins-Bold', sans-serif;
+      line-height: 74px;
       letter-spacing: -1px;
 
       br {
@@ -147,15 +149,17 @@ export default {
   @media only screen and (max-width: 1024px) {
     .weCreateItProject {
       &__content-wrapper {
-        padding: 25px 33px 33px;
+        padding: 33px 33px 45px;
       }
 
       &__main-title {
+        margin-bottom: 27px;
         font-size: 32px;
+        line-height: 38px;
       }
 
       &__projects-type_list {
-        margin: 0 0 45px;
+        margin: 0 0 40px;
       }
 
       &__flag-item {
@@ -175,7 +179,7 @@ export default {
   @media only screen and (max-width: 720px) {
     .weCreateItProject {
       &__flags-list {
-        grid-template-columns: repeat(11, 1fr);
+        grid-template-columns: repeat(11, max-content);
         grid-row-gap: 19px;
       }
     }
@@ -213,6 +217,7 @@ export default {
       }
 
       &__main-title {
+        margin-bottom: 25px;
         font-size: 36px;
         line-height: 120%;
       }
@@ -231,7 +236,7 @@ export default {
       }
 
       &__projects-type_list {
-        margin: 0 0 30px;
+        margin: 0 0 27px;
       }
 
       &__project-item {
