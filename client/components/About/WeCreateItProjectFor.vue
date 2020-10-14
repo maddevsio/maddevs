@@ -26,7 +26,7 @@
           </div>
         </div>
         <ul class="weCreateItProject__flags-list">
-          <li v-for="(flag, i) in flags" :key="i" class="weCreateItProject__flag-item" :class="flag"></li>
+          <li v-for="(flag, i) in flags" :key="i" class="weCreateItProject__flag-item" :class="`weCreateItProject__${flag}`"></li>
         </ul>
       </div>
     </div>
@@ -96,12 +96,9 @@ export default {
     }
 
     &__flag-item {
-      &::before {
-        content: '';
-        display: block;
-        width: 32px;
-        height: 23px;
-      }
+      display: block;
+      width: 32px;
+      height: 23px;
     }
 
     &__main-title,
@@ -126,6 +123,94 @@ export default {
       font-size: 18px;
       letter-spacing: -0.02em;
       line-height: 34px;
+    }
+
+    &__flag-usa {
+      @include flag-usa;
+    }
+
+    &__flag-australia {
+      @include flag-australia;
+    }
+
+    &__flag-vietnam {
+      @include flag-vietnam;
+    }
+
+    &__flag-france {
+      @include flag-france;
+    }
+
+    &__flag-uk {
+      @include flag-uk;
+    }
+
+    &__flag-indonesia {
+      @include flag-indonesia;
+    }
+
+    &__flag-germany {
+      @include flag-germany;
+    }
+
+    &__flag-austria {
+      @include flag-austria;
+    }
+
+    &__flag-switzerland {
+      @include flag-switzerland;
+    }
+
+    &__flag-canada {
+      @include flag-canada;
+    }
+
+    &__flag-latvia {
+      @include flag-latvia;
+    }
+
+    &__flag-kazakhstan {
+      @include flag-kazakhstan;
+    }
+
+    &__flag-sweden {
+      @include flag-sweden;
+    }
+
+    &__flag-finland {
+      @include flag-finland;
+    }
+
+    &__flag-united-arab-emirates {
+      @include flag-united-arab-emirates;
+    }
+
+    &__flag-denmark {
+      @include flag-denmark;
+    }
+
+    &__flag-japan {
+      @include flag-japan;
+    }
+
+    &__flag-norway {
+      @include flag-norway;
+    }
+
+    &__flag-portugal {
+      @include flag-portugal;
+    }
+
+    &__flag-katar {
+      @include flag-katar;
+    }
+
+    &__flag-south-africa {
+      @include flag-south-africa;
+    }
+
+    &__flag-netherlands {
+      @include flag-netherlands;
     }
   }
 
@@ -163,10 +248,8 @@ export default {
       }
 
       &__flag-item {
-        &::before {
-          width: 21px;
-          height: 15px;
-        }
+        width: 21px;
+        height: 15px;
       }
 
       &__paragraph {
@@ -229,10 +312,8 @@ export default {
       }
 
       &__flag-item {
-        &::before {
-          width: 23px;
-          height: 19px;
-        }
+        width: 23px;
+        height: 19px;
       }
 
       &__projects-type_list {
