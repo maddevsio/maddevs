@@ -24,8 +24,8 @@ export default {
   @import '../../assets/styles/vars';
   
   .footer-navbar {
-    width: max-content;
-    margin-top: 72px;
+		width: max-content;
+    margin-top: 66px;
 
     &__nav-list {
 			display: flex;
@@ -43,12 +43,12 @@ export default {
 		}
 
 		&__nav-item {
-			padding-left: 26px;
+			margin-left: 26px;
 			text-decoration: underline;
 			text-decoration-color: $footer--text-decoration-color;
 
 			&:first-child {
-				padding-left: 0;
+				margin-left: 0;
 			}
 		}
   }
@@ -64,7 +64,24 @@ export default {
   
   @media only screen and (max-width: 1200px) {
 		.footer-navbar {
-      margin-top: 52px;
+			width: initial;
+			margin-top: 40px;
+			
+			&__nav-list {
+				flex-wrap: wrap;
+			}
+
+			&__nav-item,
+			&__company-name {
+				margin-bottom: 3px;
+			}
+
+			&__nav-item {
+				&:last-child {
+					margin-left: 0;
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-form form">
+  <form class="footer-form form">
     <ValidationObserver v-slot="{ invalid }" ref="form">
       <div class="fields-list">
         <ValidationProvider class="field-item" rules="max:50" v-slot="{ classes, errors }">
@@ -13,7 +13,7 @@
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
         <ValidationProvider class="field-item" rules="max:500" v-slot="{ classes, errors }">
-          <textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescriber" @keydown="autosize($event)" rows="1" />
+          <textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescriber" />
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
       </div>
@@ -30,7 +30,7 @@
       />
     </ValidationObserver>
     <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
-  </div>
+  </form>
 </template>
 
 <script>
@@ -67,10 +67,6 @@ export default {
     },
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
-    },
-    autosize(e) {
-      e.target.style.height = 'auto';
-      e.target.style.height = `${e.target.scrollHeight}px`;
     },
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
@@ -138,9 +134,9 @@ export default {
 		}
 
 		.textarea {
-			min-height: 194px;
-			padding: 22px 10px;
-      resize: vertical;
+      height: 192px;
+      max-height: 192px;
+      padding: 22px 10px;
     }
 
     .fields-list {
@@ -148,8 +144,8 @@ export default {
     }
 
     .form-checkboxes {
-      margin-top: 16px;
-      margin-bottom: 34px;
+      margin-top: 10px;
+      margin-bottom: 22px;
     }
 
     .field-item {
@@ -216,10 +212,10 @@ export default {
     }
   }
 
-  @media only screen and (min-width: 1141px) and (max-width: 1199px) {
+  @media only screen and (max-width: 991px) {
 		.footer-form {
-		  .textarea {
-        min-height: 160px;
+      /deep/ .form-checkboxes {
+        margin-top: 0;
       }
     }
   }

@@ -93,6 +93,10 @@ export default {
 			&__main-title {
 				margin-bottom: 20px;
 			}
+
+			&__form-wrap {
+				margin-top: 33px;
+			}
 		}
 	}
 
@@ -116,8 +120,7 @@ export default {
 			}
 			
 			&__form-wrap {
-				margin-top: 0;
-				padding-top: 40px;
+				margin-top: 30px;
 			}
 
 			&__social-network-list-mobile {

@@ -72,12 +72,12 @@ export default {
 	@mixin contacts-head-content {
 		&__head-content {
 			flex-direction: column;
-			margin-bottom: 40px;
+			margin-bottom: 31px;
 		}
 
 		&__contact-item {
 			&:last-child {
-				margin-top: 50px;
+				margin-top: 38px;
 			}
 		}
 	}
@@ -103,7 +103,7 @@ export default {
 
 	.footer-contacts {
 		&__head-content {
-			margin-bottom: 74px;
+			margin-bottom: 68px;
 		}
 
 		&__head-content,
@@ -184,8 +184,8 @@ export default {
 		}
 
 		&__social-network-list-desktop {
-			margin-top: 60px;
-			padding-top: 60px;
+			margin-top: 52px;
+			padding-top: 52px;
 			border-top: 1px solid $border-color--grey-dark-transparent;
 		}
 	}
