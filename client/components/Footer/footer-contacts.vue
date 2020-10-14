@@ -233,6 +233,7 @@ export default {
 		.footer-contacts {
 			&__head-content {
 				flex-direction: row;
+				margin-bottom: 31px;
 			}
 
 			&__contact-item {
