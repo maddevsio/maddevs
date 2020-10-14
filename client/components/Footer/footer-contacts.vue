@@ -159,7 +159,7 @@ export default {
 		}
 
 		&__lists-wrapper {
-			max-width: 85%;
+			max-width: 86%;
 		}
 
 		&__messenger-item-wrapper {
