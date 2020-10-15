@@ -99,6 +99,12 @@ export default {
     }
 
     &__list-item {
+      &:first-child {
+        padding: 0 15px;
+      }
+    }
+
+    &__list-item {
       flex-direction: column;
       align-items: center;
 
@@ -113,7 +119,6 @@ export default {
     &__arrow-icon {
       display: block;
       height: 65px;
-      margin-bottom: 3px;
     }
 
     &__main-icon {
@@ -126,6 +131,7 @@ export default {
       max-width: 233px;
       position: absolute;
       margin-left: 2.7vw;
+      margin-bottom: 3px;
 
       @include quick-arrow;
     }
@@ -145,25 +151,10 @@ export default {
 
     &__description {
       margin-top: 8px;
-      font-size: 14px;
+      font-size: 15px;
       line-height: 22px;
       letter-spacing: -0.02em;
       color: $quick-project-description-color;
-    }
-
-    &__team {
-      margin-top: -7px;
-    }
-
-    &__start {
-      &::before {
-        display: none;
-      }
-    }
-
-    &__start,
-    &__contacts {
-      margin-top: -3px;
     }
 
     &__button {
@@ -196,18 +187,16 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1240px) {
-    .quickProjectStart {
-      &__list-item {
-        padding: 0;
-      }
-    }
-  }
-
   @media only screen and (max-width: 1024px) {
     .quickProjectStart {
       &__arrow-icon {
         display: none;
+      }
+
+      &__list-item {
+        &:first-child {
+          padding: 0 10px;
+        }
       }
 
       &__button {
@@ -217,22 +206,6 @@ export default {
   }
 
   @media only screen and (max-width: 960px) {
-    .quickProjectStart {
-      &__title {
-        font-size: 27px;
-      }
-
-      &__description {
-        font-size: 12px;
-      }
-
-      &__button {
-        font-size: 14px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
     .quickProjectStart {
       padding: 50px 0;
 
@@ -267,6 +240,8 @@ export default {
       }
 
       &__button {
+        height: 48px;
+        font-size: 14px;
         margin-top: 37px;
       }
     }
@@ -313,7 +288,6 @@ export default {
       }
 
       &__button {
-        height: 40px;
         margin-top: 40px;
         color: $text-color--white;
         background-color: $bgcolor--red;
