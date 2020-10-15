@@ -2,29 +2,20 @@
   <footer :class="`footer ${currentPageName}`">
     <div class="container">
 			<div class="footer__content row">
-				<div class="footer__text-content col-xl-7 col-lg-8 col-md-7">
-					<div class="footer__title-wrap">
-						<h2 class="footer__title title">Get In Touch</h2>
-						<div class="footer__mail-wrapper">
-							<a class="footer__mailto-link" href="mailto:team@maddevs.io">team@maddevs.io</a>
-							<span class="footer__underline" />
-						</div>
-					</div>
-          <footerContacts />
-					<footerSocialNetworkBar class="footer__social-network"/>
-					<div class="footer__links-wrapper">
-						<p class="footer__company-name">© Mad Devs - {{ currentYear }}</p>
-						<div class="footer__links">
-							<a href="/gdpr" target="_blank" class="footer__link">GDPR Compliance Commitment</a>
-							<a href="/privacy" target="_blank" class="footer__link">Privacy Policy</a>
-							<a href="/nda" target="_blank" class="footer__link">Non-Disclosure Agreement (NDA)</a>
-						</div>
-					</div>
+				<div class="footer__left-content col-xl-8 col-lg-7">
+					<h2 class="footer__main-title">Get In Touch</h2>
+					<footerContacts />
+					<footerNavbar class="footer__navbar-desktop" />
 				</div>
-				<div class="footer__form-wrap col-xl-5 col-lg-4 col-md-5">
+				<div class="footer__form-wrap col-xl-4 col-lg-5">
 					<footerForm />
 				</div>
-				<footerBottomContentMobile />
+			</div>
+			<div class="footer__mobile-content footer__social-network-list-mobile">
+				<footerSocialNetWorkList />
+			</div>
+			<div class="footer__mobile-content">
+				<footerNavbarMobile />
 			</div>
     </div>
   </footer>
@@ -33,16 +24,18 @@
 <script>
 import footerForm from '@/components/Footer/footer-form';
 import footerContacts from '@/components/Footer/footer-contacts';
-import footerSocialNetworkBar from '@/components/Footer/footer-social-network';
-import footerBottomContentMobile from '@/components/Footer/footer-bottom-content-mobile';
+import footerNavbar from '@/components/Footer/footer-navbar';
+import footerNavbarMobile from '@/components/Footer/footer-navbar-mobile';
+import footerSocialNetWorkList from '@/components/Footer/footer-social-network-list';
 
 export default {
   name: 'Footer',
   components: {
     footerForm,
     footerContacts,
-    footerSocialNetworkBar,
-    footerBottomContentMobile
+    footerNavbar,
+    footerNavbarMobile,
+    footerSocialNetWorkList
   },
   mounted() {
     if ($nuxt.$route.name) {
@@ -59,72 +52,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/styles/vars';
+	@import '../assets/styles/vars';
+	@import '../assets/styles/_flagsIcons';
 
 	.footer {
-		padding-top: 65px;
-		padding-bottom: 59px;
+		padding-top: 100px;
+		padding-bottom: 92px;
 
-		&__title {
-		  color: $text-color--white;
-		}
-
-		&__text-content {
-			padding: 0
-		}
-
-		&__mail-wrapper {
-			width: max-content;
-		}
-
-		&__mailto-link {
-			color: $text-color--red;
-			font-size: 48px;
-			font-family: 'Poppins-Bold', sans-serif;;
-			text-decoration: none;
+		&__main-title {
+			margin-bottom: 46px;
+			font-size: 62px;
+			font-family: 'Poppins-Bold', sans-serif;
+			line-height: 74px;
 			letter-spacing: -1px;
+			color: $text-color--red;
 		}
 
-		&__underline {
-			width: 100%;
-			height: 1px;
-			display: block;
-			margin-top: -15px;
-			background-color: $bgcolor--red;
-		}
-
-		&__links-wrapper {
-			width: max-content;
-			margin-top: 79px;
-		}
-
-		&__links {
-			display: flex;
-		}
-
-		&__link,
-		&__company-name {
-			font-size: 15px;
-			color: $text-color--grey;
-			letter-spacing:  -0.02em;
-		}
-
-		&__company-name {
-			margin-bottom: 6px;
-		}
-
-		&__link {
-			padding-left: 26px;
-			text-decoration: underline;
-			text-decoration-color: $footer--text-decoration-color;
-
-			&:first-child {
-				padding-left: 0;
-			}
+		&__left-content {
+			padding-right: 128px;
 		}
 
 		&__form-wrap {
-			margin-top: 18px;
+			margin-top: 20px;
+		}
+
+		&__mobile-content {
+			display: none;
+		}
+
+		&__social-network-list-mobile {
+			margin: 40px;
 		}
 	}
 
@@ -136,38 +93,59 @@ export default {
 		border-top: 1px solid $border-color--grey-dark;
 	}
 
-	@media only screen and (max-width: 1024px) {
+	@media only screen and (max-width: 1200px) {
 		.footer {
-			&__mailto-link {
-				font-size: 32px;
-			}
-
-			&__underline {
-				margin-top: -11px;
-			}
-
-			&__links-wrapper {
-				margin-top: 45px;
-			}
-
-			&__link,
-			&__company-name {
-				font-size: 12px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 767px) {
-		.footer {
-			&__links-wrapper,
-			&__social-network {
-				display: none;
+			&__main-title {
+				margin-bottom: 20px;
 			}
 
 			&__form-wrap {
-				padding-top: 39px;
+				margin-top: 33px;
+			}
+
+			&__left-content {
+				padding-right: 40px;
 			}
 		}
 	}
 
+	@media only screen and (max-width: 991px) {
+		.footer {
+			padding-top: 75px;
+			padding-bottom: 50px;
+
+			&__form-wrap,
+			&__left-content {
+				padding-left: 0;
+				padding-right: 0;
+			}
+			
+			&__form-wrap {
+				margin-top: 30px;
+			}
+
+			&__mobile-content {
+				display: block;
+			}
+
+			&__navbar-desktop {
+				display: none;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 576px) {
+		.footer {
+			padding-top: 50px;
+
+			&__main-title {
+				font-size: 46px;
+			}
+
+			&__social-network-list-mobile {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
 </style>
