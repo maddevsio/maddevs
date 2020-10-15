@@ -99,14 +99,12 @@ export default {
     }
 
     &__list-item {
+      flex-direction: column;
+      align-items: center;
+
       &:first-child {
         padding: 0 15px;
       }
-    }
-
-    &__list-item {
-      flex-direction: column;
-      align-items: center;
 
       &:last-child {
         .quickProjectStart__arrow-icon {
