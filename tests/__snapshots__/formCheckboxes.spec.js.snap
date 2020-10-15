@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form checkboxes renders correctly 1`] = `
+<div
+  class="form-checkboxes"
+>
+  <label
+    class="form-checkbox-label required"
+    for="privacy-policy-input id"
+  >
+    I confirm that I have read and accepted 
+    <span>
+      Mad Devs’
+    </span>
+     
+    <a
+      href="/privacy"
+      target="blank"
+    >
+      Privacy Policy
+    </a>
+     
+    <input
+      class="form-checkbox-input"
+      id="privacy-policy-input id"
+      name="Privacy policy"
+      type="checkbox"
+    />
+     
+    <span
+      class="checkmark"
+    />
+  </label>
+   
+  <label
+    class="form-checkbox-label"
+    for="marketing-communications-input id"
+  >
+    I agree to get 
+    <span>
+      Mad Devs’
+    </span>
+     discount offers and other marketing communications.
+    
+    <input
+      class="form-checkbox-input"
+      id="marketing-communications-input id"
+      name="Marketing communications"
+      type="checkbox"
+    />
+     
+    <span
+      class="checkmark"
+    />
+  </label>
+</div>
+`;

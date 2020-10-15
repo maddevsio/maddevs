@@ -29,9 +29,6 @@
 				<div class="mobile-header__contacts">
 					<footerContacts />
 				</div>
-				<div class="mobile-header__social-network_links">
-					<footerSocialNetworkBar />
-				</div>
 			</div>
 		</perfect-scrollbar>
 	</div>
@@ -40,14 +37,12 @@
 <script>
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 import footerContacts from '@/components/Footer/footer-contacts';
-import footerSocialNetworkBar from '@/components/Footer/footer-social-network';
 
 export default {
   name: 'mobile-header',
   components: {
     UIButtonModalTrigger,
-    footerContacts,
-    footerSocialNetworkBar
+    footerContacts
   },
   data() {
     return {
