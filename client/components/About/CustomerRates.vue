@@ -298,7 +298,7 @@ export default {
 
       &__number-item-top-row {
         font-size: 50px;
-        line-height: 65px;
+        line-height: 60px;
       }
 
       &__number-item-bottom-row {
@@ -335,6 +335,10 @@ export default {
         padding-left: 5px;
         padding-right: 5px;
       }
+
+      &__number-item-top-row {
+        line-height: 66px;
+      }
     }
   }
 
@@ -347,6 +351,10 @@ export default {
       &__description-bottom-row {
         font-size: 11px;
         line-height: 17px;
+      }
+
+      &__number-item-top-row {
+        line-height: 63px;
       }
     }
   }
