@@ -101,70 +101,70 @@ exports[`We Create It Project For renders correctly 1`] = `
         class="weCreateItProject__flags-list"
       >
         <li
-          class="weCreateItProject__flag-item flag-usa"
+          class="weCreateItProject__flag-item weCreateItProject__flag-usa"
         />
         <li
-          class="weCreateItProject__flag-item flag-australia"
+          class="weCreateItProject__flag-item weCreateItProject__flag-australia"
         />
         <li
-          class="weCreateItProject__flag-item flag-vietnam"
+          class="weCreateItProject__flag-item weCreateItProject__flag-vietnam"
         />
         <li
-          class="weCreateItProject__flag-item flag-france"
+          class="weCreateItProject__flag-item weCreateItProject__flag-france"
         />
         <li
-          class="weCreateItProject__flag-item flag-uk"
+          class="weCreateItProject__flag-item weCreateItProject__flag-uk"
         />
         <li
-          class="weCreateItProject__flag-item flag-indonesia"
+          class="weCreateItProject__flag-item weCreateItProject__flag-indonesia"
         />
         <li
-          class="weCreateItProject__flag-item flag-germany"
+          class="weCreateItProject__flag-item weCreateItProject__flag-germany"
         />
         <li
-          class="weCreateItProject__flag-item flag-austria"
+          class="weCreateItProject__flag-item weCreateItProject__flag-austria"
         />
         <li
-          class="weCreateItProject__flag-item flag-switzerland"
+          class="weCreateItProject__flag-item weCreateItProject__flag-switzerland"
         />
         <li
-          class="weCreateItProject__flag-item flag-canada"
+          class="weCreateItProject__flag-item weCreateItProject__flag-canada"
         />
         <li
-          class="weCreateItProject__flag-item flag-latvia"
+          class="weCreateItProject__flag-item weCreateItProject__flag-latvia"
         />
         <li
-          class="weCreateItProject__flag-item flag-kazakhstan"
+          class="weCreateItProject__flag-item weCreateItProject__flag-kazakhstan"
         />
         <li
-          class="weCreateItProject__flag-item flag-sweden"
+          class="weCreateItProject__flag-item weCreateItProject__flag-sweden"
         />
         <li
-          class="weCreateItProject__flag-item flag-finland"
+          class="weCreateItProject__flag-item weCreateItProject__flag-finland"
         />
         <li
-          class="weCreateItProject__flag-item flag-united-arab-emirates"
+          class="weCreateItProject__flag-item weCreateItProject__flag-united-arab-emirates"
         />
         <li
-          class="weCreateItProject__flag-item flag-denmark"
+          class="weCreateItProject__flag-item weCreateItProject__flag-denmark"
         />
         <li
-          class="weCreateItProject__flag-item flag-japan"
+          class="weCreateItProject__flag-item weCreateItProject__flag-japan"
         />
         <li
-          class="weCreateItProject__flag-item flag-norway"
+          class="weCreateItProject__flag-item weCreateItProject__flag-norway"
         />
         <li
-          class="weCreateItProject__flag-item flag-portugal"
+          class="weCreateItProject__flag-item weCreateItProject__flag-portugal"
         />
         <li
-          class="weCreateItProject__flag-item flag-katar"
+          class="weCreateItProject__flag-item weCreateItProject__flag-katar"
         />
         <li
-          class="weCreateItProject__flag-item flag-south-africa"
+          class="weCreateItProject__flag-item weCreateItProject__flag-south-africa"
         />
         <li
-          class="weCreateItProject__flag-item flag-netherlands"
+          class="weCreateItProject__flag-item weCreateItProject__flag-netherlands"
         />
       </ul>
     </div>
