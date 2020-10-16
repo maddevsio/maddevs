@@ -3,10 +3,10 @@
     <div class="container">
       <h2 class="quickProjectStart__main-title">Quick Project Start</h2>
       <div class="quickProjectStart__content-list row">
-        <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2" :class="`quickProjectStart__list-item-${item.title}`" v-for="(item, i) in sectionContent" :key="i">
+        <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2" :class="`quickProjectStart__list-item--${item.title}`" v-for="(item, i) in sectionContent" :key="i">
           <div class="quickProjectStart__icons-group">
             <div class="quickProjectStart__main-icon" :class="`quickProjectStart__${item.iconClassName}`"/>
-            <div class="quickProjectStart__arrow-icon" :class="`quickProjectStart__arrow-icon-${item.title}-block`"/>
+            <div class="quickProjectStart__arrow-icon" :class="`quickProjectStart__arrow-icon--${item.title}`"/>
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
             <h4 class="quickProjectStart__title">{{ item.title }}</h4>
@@ -101,10 +101,10 @@ export default {
     &__list-item {
       flex-direction: column;
       align-items: center;
-    }
 
-    &__list-item-contact {
-      padding: 0 15px;
+      &--contact {
+        padding: 0 15px;
+      }
     }
 
     &__main-icon,
@@ -126,10 +126,10 @@ export default {
       margin-bottom: 3px;
 
       @include quick-arrow;
-    }
 
-    &__arrow-icon-start-block {
-      display: none;
+      &--start {
+        display: none;
+      }
     }
 
     &__title {
@@ -183,18 +183,10 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (min-width: 960px) and (max-width: 1024px) {
     .quickProjectStart {
       &__arrow-icon {
         display: none;
-      }
-
-      &__list-item-contact {
-        padding: 0 10px;
-      }
-
-      &__button {
-        margin-top: 27px;
       }
     }
   }
@@ -226,7 +218,6 @@ export default {
       }
 
       &__arrow-icon {
-        display: block;
         width: 11vw;
         max-width: 84px;
         margin-left: 6vw;
