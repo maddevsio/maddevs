@@ -11,11 +11,11 @@ describe('Quick Project Start', () => {
   });
 
   test('itemsTextContent must contain five elements', () => {
-    expect(wrapper.vm.$data.itemsTextContent).toHaveLength(5);
+    expect(wrapper.vm.$data.sectionContent).toHaveLength(5);
   });
 
   test('correctly length of elements in DOM', () => {
-    let contentItems = wrapper.findAll('.quick-project_start__content-item');
+    let contentItems = wrapper.findAll('.quickProjectStart__list-item');
     expect(contentItems).toHaveLength(5);
   });
 
