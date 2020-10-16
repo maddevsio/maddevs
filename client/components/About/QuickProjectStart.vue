@@ -3,10 +3,10 @@
     <div class="container">
       <h2 class="quickProjectStart__main-title">Quick Project Start</h2>
       <div class="quickProjectStart__content-list row">
-        <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2" v-for="(item, i) in sectionContent" :key="i">
+        <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2" :class="`quickProjectStart__list-item-${item.title}`" v-for="(item, i) in sectionContent" :key="i">
           <div class="quickProjectStart__icons-group">
             <div class="quickProjectStart__main-icon" :class="`quickProjectStart__${item.iconClassName}`"/>
-            <div class="quickProjectStart__arrow-icon"/>
+            <div class="quickProjectStart__arrow-icon" :class="`quickProjectStart__arrow-icon-${item.title}-block`"/>
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
             <h4 class="quickProjectStart__title">{{ item.title }}</h4>
@@ -101,16 +101,10 @@ export default {
     &__list-item {
       flex-direction: column;
       align-items: center;
+    }
 
-      &:first-child {
-        padding: 0 15px;
-      }
-
-      &:last-child {
-        .quickProjectStart__arrow-icon {
-          display: none;
-        }
-      }
+    &__list-item-contact {
+      padding: 0 15px;
     }
 
     &__main-icon,
@@ -132,6 +126,10 @@ export default {
       margin-bottom: 3px;
 
       @include quick-arrow;
+    }
+
+    &__arrow-icon-start-block {
+      display: none;
     }
 
     &__title {
@@ -191,10 +189,8 @@ export default {
         display: none;
       }
 
-      &__list-item {
-        &:first-child {
-          padding: 0 10px;
-        }
+      &__list-item-contact {
+        padding: 0 10px;
       }
 
       &__button {
