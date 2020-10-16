@@ -3,10 +3,10 @@
     <div class="container">
       <h2 class="quickProjectStart__main-title">Quick Project Start</h2>
       <div class="quickProjectStart__content-list row">
-        <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2" :class="`quickProjectStart__list-item--${item.title}`" v-for="(item, i) in sectionContent" :key="i">
+        <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2" :class="`quickProjectStart__list-item_${item.title}`" v-for="(item, i) in sectionContent" :key="i">
           <div class="quickProjectStart__icons-group">
             <div class="quickProjectStart__main-icon" :class="`quickProjectStart__${item.iconClassName}`"/>
-            <div class="quickProjectStart__arrow-icon" :class="`quickProjectStart__arrow-icon--${item.title}`"/>
+            <div class="quickProjectStart__arrow-icon" :class="`quickProjectStart__arrow-icon_${item.title}`"/>
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
             <h4 class="quickProjectStart__title">{{ item.title }}</h4>
@@ -102,7 +102,7 @@ export default {
       flex-direction: column;
       align-items: center;
 
-      &--contact {
+      &_contact {
         padding: 0 15px;
       }
     }
@@ -127,7 +127,7 @@ export default {
 
       @include quick-arrow;
 
-      &--start {
+      &_start {
         display: none;
       }
     }
