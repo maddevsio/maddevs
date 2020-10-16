@@ -11,85 +11,38 @@ exports[`Footer renders correctly 1`] = `
       class="footer__content row"
     >
       <div
-        class="footer__text-content col-xl-7 col-lg-8 col-md-7"
+        class="footer__left-content col-xl-8 col-lg-7"
       >
-        <div
-          class="footer__title-wrap"
+        <h2
+          class="footer__main-title"
         >
-          <h2
-            class="footer__title title"
-          >
-            Get In Touch
-          </h2>
-           
-          <div
-            class="footer__mail-wrapper"
-          >
-            <a
-              class="footer__mailto-link"
-              href="mailto:team@maddevs.io"
-            >
-              team@maddevs.io
-            </a>
-             
-            <span
-              class="footer__underline"
-            />
-          </div>
-        </div>
+          Get In Touch
+        </h2>
          
         <footercontacts-stub />
          
-        <footersocialnetworkbar-stub
-          class="footer__social-network"
+        <footernavbar-stub
+          class="footer__navbar-desktop"
         />
-         
-        <div
-          class="footer__links-wrapper"
-        >
-          <p
-            class="footer__company-name"
-          >
-            © Mad Devs - 2020
-          </p>
-           
-          <div
-            class="footer__links"
-          >
-            <a
-              class="footer__link"
-              href="/gdpr"
-              target="_blank"
-            >
-              GDPR Compliance Commitment
-            </a>
-             
-            <a
-              class="footer__link"
-              href="/privacy"
-              target="_blank"
-            >
-              Privacy Policy
-            </a>
-             
-            <a
-              class="footer__link"
-              href="/nda"
-              target="_blank"
-            >
-              Non-Disclosure Agreement (NDA)
-            </a>
-          </div>
-        </div>
       </div>
        
       <div
-        class="footer__form-wrap col-xl-5 col-lg-4 col-md-5"
+        class="footer__form-wrap col-xl-4 col-lg-5"
       >
         <footerform-stub />
       </div>
-       
-      <footerbottomcontentmobile-stub />
+    </div>
+     
+    <div
+      class="footer__mobile-content footer__social-network-list-mobile"
+    >
+      <footersocialnetworklist-stub />
+    </div>
+     
+    <div
+      class="footer__mobile-content"
+    >
+      <footernavbarmobile-stub />
     </div>
   </div>
 </footer>
