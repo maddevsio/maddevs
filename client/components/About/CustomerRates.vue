@@ -194,7 +194,7 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1280px) {
+  @media only screen and (max-width: 1366px) {
     .customer-rates {
       &__rates-block-bottom-row {
         padding-left: 10px;
@@ -266,7 +266,7 @@ export default {
 
       &__rates-block {
         height: 103px;
-        padding: 20px 10px;
+        padding: 20px 4px;
       }
 
       &__number-item-top-row {
@@ -314,7 +314,7 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 460px) {
+  @media only screen and (max-width: 540px) {
     .customer-rates {
       padding: 45px 0;
 
@@ -327,27 +327,19 @@ export default {
         line-height: 43px;
       }
 
-      &__rates-block {
-        height: 110px;
-      }
-
-      &__rates-block-bottom-row {
-        padding-left: 5px;
-        padding-right: 5px;
-      }
-
       &__number-item-top-row {
         line-height: 66px;
+      }
+
+      &__number-item-bottom-row {
+        margin-top: 8px;
+        margin-bottom: 5px;
       }
     }
   }
 
   @media only screen and (max-width: 340px) {
     .customer-rates {
-      &__rates-block {
-        height: 100px;
-      }
-
       &__description-bottom-row {
         font-size: 11px;
         line-height: 17px;
