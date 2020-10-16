@@ -1,24 +1,21 @@
 <template>
-  <section id="quick-project-start" class="quick-project_start">
+  <section id="quickProjectStart" class="quickProjectStart">
     <div class="container">
-      <div class="quick-project_start__title-wrap">
-        <h2 class="quick-project_start__main-title title">Quick Project Start</h2>
-      </div>
-      <div class="quick-project_start__content-wrap">
-        <div class="quick-project_start__content-items_list row">
-          <div class="quick-project_start__content-item col-xl-2 col-lg-2 col-md-2 col-sm-2" v-for="(item, i) in itemsTextContent" :key="i">
-            <div class="quick-project_start__icon-item" :class="item.title">
-              <span :class="`quick-project_start__image-bg quick-project_start__image-bg--${item.title}`"/>
-            </div>
-            <div class="quick-project_start__text-item">
-              <h4 class="quick-project_start__item-title">{{ item.title }}</h4>
-              <p class="quick-project_start__paragraph paragraph-sm">{{ item.paragraph }}</p>
-            </div>
+      <h2 class="quickProjectStart__main-title">Quick Project Start</h2>
+      <div class="quickProjectStart__content-list row">
+        <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2" :class="`quickProjectStart__list-item_${item.title}`" v-for="(item, i) in sectionContent" :key="i">
+          <div class="quickProjectStart__icons-group">
+            <div class="quickProjectStart__main-icon" :class="`quickProjectStart__${item.iconClassName}`"/>
+            <div class="quickProjectStart__arrow-icon" :class="`quickProjectStart__arrow-icon_${item.title}`"/>
+          </div>
+          <div class="quickProjectStart__list-item-text-wrapper">
+            <h4 class="quickProjectStart__title">{{ item.title }}</h4>
+            <p class="quickProjectStart__description">{{ item.description }}</p>
           </div>
         </div>
       </div>
       <UIButtonModalTrigger
-        class="quick-project_start__button"
+        class="quickProjectStart__button"
         :buttonInnerText="buttonInnerText"
         :modalWindowName="modalWindowName"
         :isRed="true"
@@ -37,26 +34,31 @@ export default {
   },
   data() {
     return {
-      itemsTextContent: [
+      sectionContent: [
         {
           title: 'contact',
-          paragraph: 'Submit your project request or project idea to us.'
+          description: 'Submit your project request or project idea to us.',
+          iconClassName: 'quick-contact'
         },
         {
           title: 'analysis',
-          paragraph: 'We will contact you to clarify your project requirements.'
+          description: 'We will contact you to clarify your project requirements.',
+          iconClassName: 'quick-analysis'
         },
         {
           title: 'proposal',
-          paragraph: 'We will provide you with our free, non-binding bid or a tailored proposal.'
+          description: 'We will provide you with our free, non-binding bid or a tailored proposal.',
+          iconClassName: 'quick-proposal'
         },
         {
           title: 'team',
-          paragraph: 'We will assemble and prepare a team for your project.'
+          description: 'We will assemble and prepare a team for your project.',
+          iconClassName: 'quick-team'
         },
         {
           title: 'start',
-          paragraph: 'You will get to know the team and we’ll start the project work.'
+          description: 'You will get to know the team and we’ll start the project work.',
+          iconClassName: 'quick-start'
         }
       ],
       modalWindowName: 'order-project-from-us-modal',
@@ -68,260 +70,212 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/_quickProjectIcons';
 
-  .quick-project_start {
-    padding: 165px 0;
+  .quickProjectStart {
+    padding: 100px 0;
     text-align: center;
 
     &__main-title {
-      padding-bottom: 35px;
+      margin-bottom: 37px;
+      font-size: 62px;
+      line-height: 74px;
       color: $text-color--white;
     }
 
-    &__image-bg {
+    &__main-title,
+    &__title {
+      font-family: 'Poppins-Bold';
+      letter-spacing: -1px;
+    }
+ 
+    &__content-list {
+      justify-content: space-between;
+    }
+
+    &__list-item,
+    &__icons-group {
+      display: flex;
+    }
+
+    &__list-item {
+      flex-direction: column;
+      align-items: center;
+
+      &_contact {
+        padding: 0 15px;
+      }
+    }
+
+    &__main-icon,
+    &__arrow-icon {
       display: block;
-      width: 40px;
-      height: 40px;
-      background-size: contain;
-      background-repeat: no-repeat;
+      height: 65px;
+    }
 
-      &--analysis {
-        background-image: url(../../assets/img/Home/svg/Quick/analysis.svg);
-      }
+    &__main-icon {
+      width: 48px;
+      margin-bottom: 8px;
+    }
 
-      &--contact {
-        background-image: url(../../assets/img/Home/svg/Quick/contact.svg);
-      }
+    &__arrow-icon {
+      width: 16vw;
+      max-width: 233px;
+      position: absolute;
+      margin-left: 2.7vw;
+      margin-bottom: 3px;
 
-      &--proposal {
-        background-image: url(../../assets/img/Home/svg/Quick/proposal.svg);
-      }
+      @include quick-arrow;
 
-      &--quick-project-arrow {
-        background-image: url(../../assets/img/Home/svg/Quick/quick-project-arrow.svg);
+      &_start {
+        display: none;
       }
+    }
 
-      &--start {
-        background-image: url(../../assets/img/Home/svg/Quick/start.svg);
-      }
+    &__title {
+      font-size: 32px;
+      font-family: 'Poppins-Bold';
+      line-height: 32px;
+      text-transform: capitalize;
+      color: $text-color--red;
+    }
 
-      &--team {
-        background-image: url(../../assets/img/Home/svg/Quick/team.svg);
-      }
+    &__description,
+    &__button {
+      font-family: 'Poppins-Regular';
+    }
+
+    &__description {
+      margin-top: 8px;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+      color: $quick-project-description-color;
     }
 
     &__button {
       width: 100%;
       height: 56px;
       margin-top: 47px;
-      font-family: 'Poppins-Regular';
       font-size: 16px;
+      line-height: 24px;
       letter-spacing: -0.02em;
     }
 
-    &__content-items_list {
-      justify-content: space-between;
+    &__quick-contact {
+      @include quick-contact;
     }
 
-    &__content-item {
-      display: flex;
-      flex-direction: column;
+    &__quick-analysis {
+      @include quick-analysis;
     }
 
-    &__icon-item {
-      position: relative;
-      margin-bottom: 15px;
-      display: flex;
-      justify-content: center;
-
-       &::after {
-        content: '';
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        top: -13px;
-        left: 130px;
-        background: url('../../assets/img/Home/svg/Quick/quick-project-arrow.svg') no-repeat;
-      }
+    &__quick-proposal {
+      @include quick-proposal;
     }
 
-    &__item-title {
-      font-family: 'Poppins-Bold';
-      font-size: 32px;
-      letter-spacing: -1px;
-      text-transform: capitalize;
-      color: $text-color--red;
+    &__quick-team {
+      @include quick-team;
     }
 
-    &__paragraph {
-      color: $text-color--grey-light;
+    &__quick-start {
+      @include quick-start;
     }
+  }
 
-    .team {
-      margin-top: -7px;
-    }
-
-    .start {
-      &::after {
+  @media only screen and (min-width: 960px) and (max-width: 1024px) {
+    .quickProjectStart {
+      &__arrow-icon {
         display: none;
-      }
-    }
-
-    .start,
-    .contacts {
-      margin-top: -3px;
-    }
-  }
-
-  @media only screen and (max-width: 8192px) { // 8K UHD max screen resolution 
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 170px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1366px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 135px;
-          background-size: 145px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1320px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 120px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          background-size: 125px;
-          left: 130px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1180px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 120px;
-          background-size: 110px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .quick-project_start {
-      padding: 62px 0;
-
-      &__item-title {
-        font-size: 18px;
-      }
-
-      &__paragraph {
-        font-size: 10px;
-      }
-
-      &__image-bg {
-        width: 27px;
-        height: 30px;
-      }
-
-      &__button {
-        width: 100%;
-        color: $text-color--grey-light;
-        background-color: $button-bgcolor--red;
-      }
-
-      &__icon-item {
-        &::after {
-          top: -5px;
-          left: 110px;
-          background-size: 80px;
-        }
       }
     }
   }
 
   @media only screen and (max-width: 960px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 95px;
-        }
+    .quickProjectStart {
+      padding: 50px 0;
+
+      &__main-title {
+        margin-bottom: 15px;
+        font-size: 36px;
+        line-height: 43px;
+      }
+
+      &__title {
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+      &__description {
+        margin-top: 4px;
+        font-size: 10px;
+        line-height: 15px;
+      }
+
+      &__main-icon {
+        width: 45px;
+        height: 55px;
+      }
+
+      &__arrow-icon {
+        width: 11vw;
+        max-width: 84px;
+        margin-left: 6vw;
+        @include quick-arrow-bright;
+      }
+
+      &__button {
+        height: 48px;
+        font-size: 14px;
+        margin-top: 37px;
       }
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    .quick-project_start {
-      &__icon-item {
-        &::after {
-          left: 75px;
-          background-size: 62px;
-        }
-      }
-    }
-  }
 
   @media only screen and (max-width: 767px) {
-    .quick-project_start {
-      &__content-item {
-        padding: 0;
+    .quickProjectStart {
+      text-align: left;
+
+      &__main-title {
+        margin-bottom: 23px;
+        text-align: center;
       }
 
-      &__icon-item {
-        &::after {
-          display: none;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 575px) {
-    .quick-project_start {
-      padding: 95px 0;
-      text-align: initial;
-
-      &__content-item {
-        max-width: 360px;
+      &__list-item {
         flex-direction: row;
+        align-items: flex-start;
+        margin-top: 10px;
       }
 
-      &__item-title {
+      &__list-item-text-wrapper {
+        margin-top: 16px;
+        margin-left: 13px;
+      }
+
+      &__title {
         font-size: 27px;
+        line-height: 32px;
       }
 
-      &__paragraph,
-      &__button {
+      &__description {
         font-size: 14px;
+        line-height: 20px;
       }
 
-      &__icon-item {
-        margin-top: 6px;
-        margin-right: 23px;
+      &__main-icon {
+        width: 48px;
+        height: 65px;
       }
 
+      &__arrow-icon {
+        display: none;
+      }
 
-      &__image-bg {
-        width: 32px;
-        height: 32px;
+      &__button {
+        margin-top: 40px;
+        color: $text-color--white;
+        background-color: $bgcolor--red;
       }
     }
   }

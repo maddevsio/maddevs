@@ -1,6 +1,6 @@
 <template>
   <div class="form-checkboxes">
-    <label class="form-checkbox-label required" :for="`privacy-policy-${inputId}`">I confirm that I have read and accepted Mad Devs’ <a href="/privacy" target="blank">Privacy Policy</a>
+    <label class="form-checkbox-label required" :for="`privacy-policy-${inputId}`">I confirm that I have read and accepted <span>Mad Devs’</span> <a href="/privacy" target="blank">Privacy Policy</a>
       <input
         ref="privacyPolicy"
         class="form-checkbox-input"
@@ -11,7 +11,7 @@
       >
       <span class="checkmark"></span>
     </label>
-    <label class="form-checkbox-label" :for="`marketing-communications-${inputId}`">I agree to get Mad Devs’ discount offers and other marketing communications.
+    <label class="form-checkbox-label" :for="`marketing-communications-${inputId}`">I agree to get <span>Mad Devs’</span> discount offers and other marketing communications.
       <input
         ref="marketingCommunications"
         class="form-checkbox-input"
@@ -47,5 +47,4 @@ export default {
     }
   }
 };
-
 </script>
