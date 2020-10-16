@@ -2305,7 +2305,7 @@ exports[`Index page renders correctly 1`] = `
         class="quickProjectStart__content-list row"
       >
         <div
-          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item--contact"
+          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_contact"
         >
           <div
             class="quickProjectStart__icons-group"
@@ -2315,7 +2315,7 @@ exports[`Index page renders correctly 1`] = `
             />
              
             <div
-              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon--contact"
+              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_contact"
             />
           </div>
            
@@ -2336,7 +2336,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item--analysis"
+          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_analysis"
         >
           <div
             class="quickProjectStart__icons-group"
@@ -2346,7 +2346,7 @@ exports[`Index page renders correctly 1`] = `
             />
              
             <div
-              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon--analysis"
+              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_analysis"
             />
           </div>
            
@@ -2367,7 +2367,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item--proposal"
+          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_proposal"
         >
           <div
             class="quickProjectStart__icons-group"
@@ -2377,7 +2377,7 @@ exports[`Index page renders correctly 1`] = `
             />
              
             <div
-              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon--proposal"
+              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_proposal"
             />
           </div>
            
@@ -2398,7 +2398,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item--team"
+          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_team"
         >
           <div
             class="quickProjectStart__icons-group"
@@ -2408,7 +2408,7 @@ exports[`Index page renders correctly 1`] = `
             />
              
             <div
-              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon--team"
+              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_team"
             />
           </div>
            
@@ -2429,7 +2429,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item--start"
+          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_start"
         >
           <div
             class="quickProjectStart__icons-group"
@@ -2439,7 +2439,7 @@ exports[`Index page renders correctly 1`] = `
             />
              
             <div
-              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon--start"
+              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_start"
             />
           </div>
            
