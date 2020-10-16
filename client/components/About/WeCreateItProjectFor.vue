@@ -214,7 +214,7 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1270px) {
+  @media only screen and (min-width: 1200px) and (max-width: 1270px) {
     .weCreateItProject {
       &__paragraph {
         font-size: 16px;
@@ -223,15 +223,6 @@ export default {
   }
 
   @media only screen and (max-width: 1040px) {
-    .weCreateItProject {
-      &__content-wrapper {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
     .weCreateItProject {
       &__content-wrapper {
         padding: 33px 33px 45px;
@@ -270,28 +261,15 @@ export default {
 
   @media only screen and (max-width: 576px) {
     .weCreateItProject {
+      margin-top: 34px;
+      margin-bottom: 45px;
+      background-color: $bgcolor--white;
+
       &__main-title {
         br {
           display: block;
         }
       }
-    }
-  }
-
-  @media screen and (min-width: 575px) and (max-width: 576px) {
-    .weCreateItProject {
-      &__content-wrapper {
-        padding-left: 13px;
-        padding-right: 13px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 480px) {
-    .weCreateItProject {
-      margin-top: 34px;
-      margin-bottom: 45px;
-      background-color: $bgcolor--white;
 
       &__content-wrapper {
         padding-left: 0;
