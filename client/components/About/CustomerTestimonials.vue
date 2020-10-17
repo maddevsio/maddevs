@@ -159,6 +159,10 @@ export default {
             margin: 0 -30px;
           }
 
+          @media only screen and (max-width: 1279px) and (min-width: 1170px) {
+            margin: 0;
+          }
+
           @media only screen and (max-width: 910px) {
             margin: 0;
           }
@@ -171,14 +175,6 @@ export default {
 
           @media screen and (min-width: 768px) {
             justify-self: center;
-          }
-        }
-
-        @media only screen and (min-width: 1170px) {
-          justify-self: self-start;
-
-          @media screen and (max-width: 1365px) {
-            width: 715px;
           }
         }
 
@@ -200,7 +196,6 @@ export default {
     &__veeqo,
     &__guardrails {
       display: block;
-      background-size: cover;
     }
 
     &__teacherly {
@@ -219,10 +214,6 @@ export default {
       width: 160px;
       height: 32px;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='32' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.967 14.073c.167-.108.338-.21.509-.312.2.81.319 1.653.319 2.524 0 5.882-4.821 10.667-10.747 10.667-5.925 0-10.746-4.786-10.746-10.667S10.122 5.62 16.048 5.62c2.832 0 5.402 1.102 7.323 2.885a4.999 4.999 0 00-.471.341 10.158 10.158 0 00-6.852-2.66c-5.61 0-10.175 4.531-10.175 10.1 0 5.57 4.565 10.1 10.175 10.1 5.611 0 10.176-4.53 10.176-10.1 0-.761-.095-1.499-.257-2.212zM16.119 0c8.888 0 16.12 7.178 16.12 16s-7.232 16-16.12 16C7.231 32 0 24.822 0 16c0-2.322.508-4.527 1.408-6.52.163.111.32.23.473.356A15.232 15.232 0 00.581 16c0 8.505 6.97 15.423 15.538 15.423 8.568 0 15.539-6.918 15.539-15.423 0-8.505-6.97-15.423-15.539-15.423A15.54 15.54 0 005.387 4.865a27.15 27.15 0 00-.412-.405A16.12 16.12 0 0116.12 0zm0 21.689c-2.967 0-5.373-2.388-5.373-5.333 0-2.946 2.406-5.334 5.373-5.334 2.968 0 5.373 2.388 5.373 5.334 0 2.945-2.405 5.333-5.373 5.333zm8.955-8.889c-.989 0-1.79-.796-1.79-1.778s.801-1.778 1.79-1.778c.99 0 1.791.796 1.791 1.778s-.801 1.778-1.79 1.778zM3.224 8.889c-.99 0-1.791-.796-1.791-1.778s.802-1.778 1.79-1.778c.99 0 1.792.796 1.792 1.778S4.213 8.89 3.224 8.89zm52.49 7.085h.195v5.786h-1.808v-.82c-.827.446-1.794.704-2.896.704-3.095 0-5.635-2.133-5.635-5.425 0-3.309 2.54-5.41 5.635-5.41 2.207 0 3.588 1.098 4.381 2.336l-1.873 1.004a3.006 3.006 0 00-2.508-1.364c-1.92 0-3.317 1.458-3.317 3.434 0 1.975 1.396 3.433 3.317 3.433.937 0 1.826-.407 2.254-.8l.254-.193.388-.386v-.675h-2.266v-1.624h3.878zm8.483 5.654c-3.223 0-4.779-1.787-4.779-4.359v-6.288h2.286v6.21c0 1.458.858 2.462 2.492 2.462 1.636 0 2.477-1.004 2.477-2.462v-6.21h2.302v6.272c0 2.603-1.556 4.375-4.778 4.375zm18.118-.188h-2.571l-.651-1.772h-4.54l-.667 1.772h-2.572l4.096-10.459h2.826l4.08 10.459zm-3.841-3.732l-1.651-4.5-1.651 4.5h3.302zm15.309 3.732h-2.588l-2.08-3.716h-1.65v3.716H85.21V10.981h4.952c2.207 0 3.556 1.427 3.556 3.372 0 1.85-1.174 2.838-2.317 3.104l2.38 3.983zm-3.953-5.676c.905 0 1.587-.533 1.587-1.411s-.682-1.412-1.587-1.412h-2.365v2.823h2.365zm11.674 5.676h-4.175V10.981h4.175c3.318 0 5.619 2.086 5.619 5.238 0 3.151-2.301 5.221-5.619 5.221zm0-1.96c2.095 0 3.318-1.49 3.318-3.261 0-1.85-1.143-3.278-3.318-3.278h-1.92v6.539h1.92zm17.706 1.96h-2.588l-2.079-3.716h-1.651v3.716h-2.254V10.981h4.953c2.206 0 3.555 1.427 3.555 3.372 0 1.85-1.174 2.838-2.317 3.104l2.381 3.983zm-3.953-5.676c.905 0 1.588-.533 1.588-1.411s-.683-1.412-1.588-1.412h-2.365v2.823h2.365zm17.373 5.676h-2.572l-.651-1.772h-4.54l-.666 1.772h-2.572l4.096-10.459h2.825l4.08 10.459zm-3.842-3.732l-1.651-4.5-1.651 4.5h3.302zm8.991 3.732h-2.254V10.981h2.254V21.44zm11.71 0h-7.703V10.981h2.254v8.499h5.449v1.96zm6.273.188c-2.032 0-3.493-.674-4.477-1.662l1.222-1.693a4.671 4.671 0 003.366 1.41c1.238 0 1.841-.564 1.841-1.16 0-1.85-6.095-.58-6.095-4.515 0-1.74 1.523-3.183 4.016-3.183 1.682 0 3.079.501 4.127 1.458l-1.254 1.63c-.857-.783-2-1.144-3.08-1.144-.968 0-1.508.423-1.508 1.05 0 1.663 6.08.55 6.08 4.454 0 1.913-1.381 3.355-4.238 3.355z' fill='%23000'/%3E%3C/svg%3E");
-    }
-
-    .mobile-slider {
-      display: none;
     }
 
     // Media quires for elements
@@ -249,6 +240,13 @@ export default {
 
       &__project {
         justify-self: self-end;
+      }
+
+      &__teacherly,
+      &__veeqo,
+      &__guardrails {
+        background-size: contain;
+        background-repeat: no-repeat;
       }
 
       &__teacherly {
@@ -309,6 +307,12 @@ export default {
         justify-self: center;
       }
 
+      &__teacherly,
+      &__veeqo,
+      &__guardrails {
+        background-size: cover;
+      }
+
       @media screen and (max-width: 1023px) {
         .container {
           padding: 50px 75px;
@@ -321,7 +325,7 @@ export default {
         }
       }
 
-      @media screen and (max-width: 1279px) {
+      @media only screen and (max-width: 1169px) {
         &__content-wrap {
           row-gap: 40px;
           grid-template-rows: max-content 250px;
@@ -352,6 +356,10 @@ export default {
           justify-self: self-start;
         }
 
+        &__profile {
+          column-gap: 10px;
+        }
+
         &__teacherly {
           width: 50px;
           height: 16px;
@@ -366,10 +374,6 @@ export default {
           width: 80px;
           height: 16px;
         }
-
-        &__profile {
-          column-gap: 10px;
-        }
       }
     }
 
@@ -383,19 +387,40 @@ export default {
         margin-bottom: 25px;
       }
 
-      @media screen and (max-width: 1279px) {
+      @media screen and (max-width: 1169px) {
         &__testimonials-list {
           column-gap: 60px;
         }
       }
     }
 
-    @media screen and (min-width: 1280px) {
+    @media only screen and (min-width: 1170px) {
       &__content-wrap {
         grid-template-columns: repeat(2, max-content);
+        grid-template-rows: auto;
+        column-gap: 20px;
+        row-gap: unset;
+      }
 
-        @media screen and (max-width: 1439px) {
-          column-gap: 20px;
+      &__testimonials {
+        &-list {
+          grid-template-columns: min-content;
+        }
+
+        &-item:first-child {
+          margin-top: 25px;
+        }
+      }
+
+      &__widget-col {
+        justify-self: self-start;
+
+        @media screen and (max-width: 1365px) {
+          width: 715px;
+        }
+
+        @media screen and (max-width: 1279px){
+          width: 615px;
         }
       }
 
@@ -405,10 +430,6 @@ export default {
           grid-template-rows: auto;
           row-gap: 62px;
           height: fit-content;
-        }
-
-        &-item:first-child {
-          margin-top: 25px;
         }
 
         &-text {
@@ -424,6 +445,16 @@ export default {
 
       &__profile {
         column-gap: 8px;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      &__content-wrap {
+        grid-template-columns: repeat(2, max-content);
+
+        @media screen and (max-width: 1439px) {
+          column-gap: 20px;
+        }
       }
     }
 
