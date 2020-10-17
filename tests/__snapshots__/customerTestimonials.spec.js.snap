@@ -17,10 +17,10 @@ exports[`Customer Testimonials renders correctly 1`] = `
     </h2>
      
     <div
-      class="customer-testimonials__content-wrap row"
+      class="customer-testimonials__content-wrap"
     >
       <div
-        class="customer-testimonials__widget-col col-xl-8 col-lg-8"
+        class="customer-testimonials__widget-col"
       >
         <client-only-stub>
           <div
@@ -39,168 +39,155 @@ exports[`Customer Testimonials renders correctly 1`] = `
       </div>
        
       <div
-        class="col-xl-4 col-lg-4"
+        class="customer-testimonials__testimonials-list"
       >
         <div
-          class="customer-testimonials__testimonials-list row"
+          class="customer-testimonials__testimonials-item"
         >
+          <blockquote
+            class="customer-testimonials__testimonials-text paragraph-md"
+          >
+            
+            Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.
+          
+          </blockquote>
+           
           <div
-            class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
+            class="customer-testimonials__customer-info"
           >
             <div
-              class="customer-testimonials__testimonials-text paragraph-md"
+              class="customer-testimonials__profile"
             >
-              
-              Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.
-            
+              <img
+                alt="Atif Mahmud,"
+                class="customer-testimonials__customer-image"
+                loading="lazy"
+                src="[object Object]"
+              />
+               
+              <span
+                class="customer-testimonials__customer-name paragraph-sm"
+              >
+                
+                Atif Mahmud, 
+                <span>
+                  The UK
+                </span>
+              </span>
             </div>
              
             <div
-              class="customer-testimonials__customer-info"
+              class="customer-testimonials__project"
             >
-              <div
-                class="customer-testimonials__profile"
+              <a
+                href="https://teacherly.io/"
+                rel="nofollow"
+                target="blank"
               >
-                <img
-                  alt="Atif Mahmud,"
-                  class="customer-testimonials__customer-image"
-                  loading="lazy"
-                  src="[object Object]"
+                <span
+                  class="customer-testimonials__teacherly"
                 />
-                 
-                <p
-                  class="customer-testimonials__customer-name paragraph-sm"
-                >
-                  
-                  Atif Mahmud, 
-                  <br />
-                   The UK
-                
-                </p>
-              </div>
-               
-              <div
-                class="customer-testimonials__project"
-              >
-                <a
-                  href="https://teacherly.io/"
-                  rel="nofollow"
-                  target="blank"
-                >
-                  <img
-                    alt="teacherly"
-                    class="customer-testimonials__project-image customer-testimonials__teacherly"
-                    loading="lazy"
-                    src="[object Object]"
-                  />
-                </a>
-              </div>
+              </a>
             </div>
           </div>
+        </div>
+        <div
+          class="customer-testimonials__testimonials-item"
+        >
+          <blockquote
+            class="customer-testimonials__testimonials-text paragraph-md"
+          >
+            
+            We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.
+          
+          </blockquote>
+           
           <div
-            class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
+            class="customer-testimonials__customer-info"
           >
             <div
-              class="customer-testimonials__testimonials-text paragraph-md"
+              class="customer-testimonials__profile"
             >
-              
-              We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.
-            
+              <img
+                alt="Daniel Vartanov,"
+                class="customer-testimonials__customer-image"
+                loading="lazy"
+                src="[object Object]"
+              />
+               
+              <span
+                class="customer-testimonials__customer-name paragraph-sm"
+              >
+                
+                Daniel Vartanov, 
+                <span>
+                  The UK
+                </span>
+              </span>
             </div>
              
             <div
-              class="customer-testimonials__customer-info"
+              class="customer-testimonials__project"
             >
-              <div
-                class="customer-testimonials__profile"
+              <a
+                href="https://veeqo.com/"
+                rel="nofollow"
+                target="blank"
               >
-                <img
-                  alt="Daniel Vartanov,"
-                  class="customer-testimonials__customer-image"
-                  loading="lazy"
-                  src="[object Object]"
+                <span
+                  class="customer-testimonials__veeqo"
                 />
-                 
-                <p
-                  class="customer-testimonials__customer-name paragraph-sm"
-                >
-                  
-                  Daniel Vartanov, 
-                  <br />
-                   The UK
-                
-                </p>
-              </div>
-               
-              <div
-                class="customer-testimonials__project"
-              >
-                <a
-                  href="https://veeqo.com/"
-                  rel="nofollow"
-                  target="blank"
-                >
-                  <img
-                    alt="veeqo"
-                    class="customer-testimonials__project-image customer-testimonials__veeqo"
-                    loading="lazy"
-                    src="[object Object]"
-                  />
-                </a>
-              </div>
+              </a>
             </div>
           </div>
+        </div>
+        <div
+          class="customer-testimonials__testimonials-item"
+        >
+          <blockquote
+            class="customer-testimonials__testimonials-text paragraph-md"
+          >
+            
+            I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.
+          
+          </blockquote>
+           
           <div
-            class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
+            class="customer-testimonials__customer-info"
           >
             <div
-              class="customer-testimonials__testimonials-text paragraph-md"
+              class="customer-testimonials__profile"
             >
-              
-              I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.
-            
+              <img
+                alt="Stefan Streichsbier,"
+                class="customer-testimonials__customer-image"
+                loading="lazy"
+                src="[object Object]"
+              />
+               
+              <span
+                class="customer-testimonials__customer-name paragraph-sm"
+              >
+                
+                Stefan Streichsbier, 
+                <span>
+                  Singapore
+                </span>
+              </span>
             </div>
              
             <div
-              class="customer-testimonials__customer-info"
+              class="customer-testimonials__project"
             >
-              <div
-                class="customer-testimonials__profile"
+              <a
+                href="https://guardrails.io/"
+                rel="nofollow"
+                target="blank"
               >
-                <img
-                  alt="Stefan Streichsbier,"
-                  class="customer-testimonials__customer-image"
-                  loading="lazy"
-                  src="[object Object]"
+                <span
+                  class="customer-testimonials__guardrails"
                 />
-                 
-                <p
-                  class="customer-testimonials__customer-name paragraph-sm"
-                >
-                  
-                  Stefan Streichsbier, 
-                  <br />
-                   Singapore
-                
-                </p>
-              </div>
-               
-              <div
-                class="customer-testimonials__project"
-              >
-                <a
-                  href="https://guardrails.io/"
-                  rel="nofollow"
-                  target="blank"
-                >
-                  <img
-                    alt="guardrails"
-                    class="customer-testimonials__project-image customer-testimonials__guardrails"
-                    loading="lazy"
-                    src="[object Object]"
-                  />
-                </a>
-              </div>
+              </a>
             </div>
           </div>
         </div>

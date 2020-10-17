@@ -98,36 +98,17 @@ export default {
   .customer-testimonials {
     background-color: $bgcolor--grey-light;
 
-    .container {
-      padding: 85px 0 90px;
-    }
-
     &__title {
       line-height: 1.2;
-      margin-bottom: 25px;
     }
 
     &__content-wrap {
       display: grid;
-      grid-template-columns: max-content auto;
-      column-gap: 60px;
     }
 
     &__testimonials {
       &-list {
         display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 400px;
-        row-gap: 62px;
-        height: fit-content;
-      }
-
-      &-item:first-child {
-        margin-top: 25px;
-      }
-
-      &-text {
-        margin: 0 0 16px 0;
       }
     }
 
@@ -136,14 +117,8 @@ export default {
       display: grid;
     }
 
-    &__customer-info {
-      grid-template-columns: max-content max-content;
-      column-gap: 60px;
-    }
-
     &__profile {
-      grid-template-columns: auto 129px;
-      column-gap: 8px;
+      grid-template-columns: max-content 130px;
       align-items: center;
     }
 
@@ -163,51 +138,61 @@ export default {
       }
 
       &-name {
-        display: inline-block;
         color: #6d7a7d;
+
+        span {
+          display: block;
+        }
       }
     }
 
-    &__widget-wrap {
-      overflow: hidden;
-      width: 780px;
+    &__widget {
+      &-wrap {
+        overflow: hidden;
 
-      .clutch-widget {
-        @media only screen and (min-width: 1329px) {
-          margin: 0 -30px;
+        .clutch-widget {
+          @media only screen and (min-width: 992px) {
+            margin: 0 -30px;
+          }
+
+          @media only screen and (max-width: 991px) and (min-width: 911px) {
+            margin: 0 -30px;
+          }
+
+          @media only screen and (max-width: 910px) {
+            margin: 0;
+          }
+        }
+      }
+
+      &-col {
+        @media only screen and (max-width: 1169px) {
+          width: 100%;
+
+          @media screen and (min-width: 768px) {
+            justify-self: center;
+          }
         }
 
-        @media only screen and (max-width: 1328px) and (min-width: 992px) {
-          margin: 0;
+        @media only screen and (min-width: 1170px) {
+          justify-self: self-start;
+
+          @media screen and (max-width: 1365px) {
+            width: 715px;
+          }
         }
 
-        @media only screen and (max-width: 991px) and (min-width: 911px) {
-          margin: 0 -30px;
-        }
-
-        @media only screen and (max-width: 910px) {
-          margin: 0;
+        @media screen and (min-width: 1366px) {
+          width: 805px;
         }
       }
     }
 
     &__project {
-      display: flex;
+      align-self: center;
 
-      @media screen and (min-width: 1025px) {
-        width: 160px;
-
-        @media screen and (max-width: 1365px) {
-          justify-content: flex-end;
-        }
-      }
-
-      @media screen and (min-width: 1440px) {
-        justify-content: flex-start;
-      }
-
-      @media screen and (max-width: 1439px) and(min-width: 1366px) {
-        justify-content: center;
+      @media screen and (max-width: 1365px) and (min-width: 1025px) {
+        justify-self: flex-end;
       }
     }
 
@@ -215,6 +200,7 @@ export default {
     &__veeqo,
     &__guardrails {
       display: block;
+      background-size: cover;
     }
 
     &__teacherly {
@@ -237,6 +223,218 @@ export default {
 
     .mobile-slider {
       display: none;
+    }
+
+    // Media quires for elements
+    @media screen and (max-width: 767px) {
+      &__title {
+        margin-bottom: 16px;
+      }
+
+      &__content-wrap {
+        grid-template-rows: auto;
+      }
+
+      &__testimonials-text {
+        margin: 0 0 13px 0;
+      }
+
+      &__customer-info {
+        grid-template-columns: auto auto;
+      }
+
+      &__profile {
+        column-gap: 10px;
+      }
+
+      &__project {
+        justify-self: self-end;
+      }
+
+      &__teacherly {
+        width: 88px;
+        height: 28px;
+      }
+
+      &__veeqo {
+        width: 86px;
+        height: 32px;
+      }
+
+      @media screen and (min-width: 320px) {
+        .container {
+          padding: 45px 25px;
+        }
+
+        &__content-wrap {
+          row-gap: 20px;
+        }
+
+        &__testimonials-list {
+          row-gap: 50px;
+        }
+
+        &__guardrails {
+          width: 105px;
+          height: 20px;
+        }
+      }
+
+      @media screen and (min-width: 576px) {
+        .container {
+          padding: 45px 75px;
+        }
+
+        &__content-wrap {
+          row-gap: 30px;
+        }
+
+        &__testimonials-list {
+          row-gap: 55px;
+        }
+
+        &__guardrails {
+          width: 126px;
+          height: 26px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      &__customer-info {
+        column-gap: 20px;
+      }
+
+      &__project {
+        justify-self: center;
+      }
+
+      @media screen and (max-width: 1023px) {
+        .container {
+          padding: 50px 75px;
+        }
+
+        &__title {
+          font-size: 36px;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+      }
+
+      @media screen and (max-width: 1279px) {
+        &__content-wrap {
+          row-gap: 40px;
+          grid-template-rows: max-content 250px;
+        }
+
+        &__testimonials {
+          &-list {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 37px;
+            grid-template-rows: auto;
+          }
+
+          &-item:first-child {
+            margin: 0;
+          }
+
+          &-text {
+            margin: 0 0 13px 0;
+          }
+        }
+
+        &__customer-info {
+          row-gap: 14px;
+        }
+
+        &__project {
+          align-self: self-start;
+          justify-self: self-start;
+        }
+
+        &__teacherly {
+          width: 50px;
+          height: 16px;
+        }
+
+        &__veeqo {
+          width: 45px;
+          height: 16px;
+        }
+
+        &__guardrails {
+          width: 80px;
+          height: 16px;
+        }
+
+        &__profile {
+          column-gap: 10px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      .container {
+        padding: 100px;
+      }
+
+      &__title {
+        font-size: 62px;
+        margin-bottom: 25px;
+      }
+
+      @media screen and (max-width: 1279px) {
+        &__testimonials-list {
+          column-gap: 60px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      &__content-wrap {
+        grid-template-columns: repeat(2, max-content);
+
+        @media screen and (max-width: 1439px) {
+          column-gap: 20px;
+        }
+      }
+
+      &__testimonials {
+        &-list {
+          grid-template-columns: min-content;
+          grid-template-rows: auto;
+          row-gap: 62px;
+          height: fit-content;
+        }
+
+        &-item:first-child {
+          margin-top: 25px;
+        }
+
+        &-text {
+          margin: 0 0 16px 0;
+        }
+      }
+
+      &__customer {
+        &-info {
+          grid-template-columns: 2fr 1.8fr;
+        }
+      }
+
+      &__profile {
+        column-gap: 8px;
+      }
+    }
+
+    @media screen and(min-width: 1440px) {
+      &__content-wrap {
+        column-gap: 65px;
+      }
+
+      &__testimonials-list {
+        grid-template-columns: 360px;
+      }
     }
   }
 </style>
