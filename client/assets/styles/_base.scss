@@ -5,6 +5,7 @@ body {
   transition: all .4s ease;
   background-color: #111213;
   font-family: 'Poppins-Regular', sans-serif;
+  font-feature-settings: 'zero' on, 'ordn' on, 'ss02' on, 'ss05' on;
 }
 
 h1,

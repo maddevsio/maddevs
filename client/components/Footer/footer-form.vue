@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-form form">
+  <form class="footer-form form">
     <ValidationObserver v-slot="{ invalid }" ref="form">
       <div class="fields-list">
         <ValidationProvider class="field-item" rules="max:50" v-slot="{ classes, errors }">
@@ -13,7 +13,7 @@
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
         <ValidationProvider class="field-item" rules="max:500" v-slot="{ classes, errors }">
-          <textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescriber" @keydown="autosize($event)" rows="1" />
+          <textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescriber" />
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
       </div>
@@ -30,7 +30,7 @@
       />
     </ValidationObserver>
     <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
-  </div>
+  </form>
 </template>
 
 <script>
@@ -67,10 +67,6 @@ export default {
     },
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
-    },
-    autosize(e) {
-      e.target.style.height = 'auto';
-      e.target.style.height = `${e.target.scrollHeight}px`;
     },
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
@@ -138,9 +134,9 @@ export default {
 		}
 
 		.textarea {
-			min-height: 131px;
-			padding: 22px 10px;
-      resize: vertical;
+      height: 192px;
+      max-height: 192px;
+      padding: 22px 10px;
     }
 
     .fields-list {
@@ -148,16 +144,16 @@ export default {
     }
 
     .form-checkboxes {
-      margin-top: 16px;
-      margin-bottom: 34px;
+      margin-top: 10px;
+      margin-bottom: 22px;
     }
 
     .field-item {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .entry-field {
-      padding: 21px 17px;
+      padding: 15px 17px;
       border: 1px solid $border-color--grey-form;
       border-radius: 4px;
       background-color: transparent;
@@ -193,57 +189,36 @@ export default {
       font-size: 15px;
       letter-spacing: -0.02em;
     }
-	}
-
-  @media only screen and (max-width: 1024px) {
+  }
+  
+  @media only screen and (max-width: 1320px) {
 		.footer-form {
-			.entry-field,
+      .entry-field,
       .textarea,
-      /deep/ .form-checkbox-label,
-      .submit-button {
-        font-size: 12px;
-      }
-
-      .textarea {
-        min-height: 86px;
-        max-height: 130px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-      }
-
-			.entry-field {
-        padding: 15px 16px;
-      }
-
-       &_email {
-        /deep/ .v-placeholder-asterisk {
-          font-size: 12px;
-        }
-      }
-
-      /deep/ .checkmark {
-        width: 16px;
-        height: 16px;
-      }
-
-      /deep/ .form-checkboxes {
-        margin-top: 0;
-        margin-bottom: 20px;
-      }
-
+      .submit-button,
       /deep/ .form-checkbox-label {
-        &:first-child {
-          margin-bottom: 14px;
-        }
+        font-size: 14px;
       }
 
-      .submit-button {
-        height: 48px;
+      &_email {
+        /deep/ .v-placeholder-asterisk {
+          font-size: 14px;
+        }
       }
 
       .error-text {
-        font-size: 10px;
+        font-size: 13px;
       }
-		}
-	}
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+		.footer-form {
+      .field-item {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 </style>
