@@ -93,10 +93,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/vars';
-
   .customer-testimonials {
-    background-color: $bgcolor--grey-light;
+    background-color: #f5f7f9;
 
     &__title {
       line-height: 1.2;
