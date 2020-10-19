@@ -31,9 +31,11 @@
 							<a href="tel:+44 20 3984 8555" class="mobile-header__contact-link mobile-header__contact-phone-number">+44 20 3984 8555</a>
 						</div>
 						<ul class="mobile-header__messengers-list">
-							<li v-for="(messenger, i) in messengers" :key="i" class="mobile-header__messenger-item-wrapper">
-								<a :href="messenger.link" class="mobile-header__messenger-item" :class="`mobile-header__${messenger.className}`" target="__blank"></a>
-								<p class="mobile-header__messenger-name">{{ messenger.name }}</p>
+							<li v-for="(messenger, i) in messengers" :key="i">
+								<a :href="messenger.link" target="__blank" class="mobile-header__messenger-item-wrapper">
+									<span class="mobile-header__messenger-item" :class="`mobile-header__${messenger.className}`" />
+									<p class="mobile-header__messenger-name">{{ messenger.name }}</p>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -259,6 +261,10 @@ export default {
 		&__messenger-item-wrapper {
 			display: flex;
     	align-items: center;
+		}
+
+		&__messenger-item-wrapper {
+			text-decoration: none;
 		}
 
 		&__contact-link,

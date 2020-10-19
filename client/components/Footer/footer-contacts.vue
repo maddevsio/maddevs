@@ -15,9 +15,11 @@
 		</div>
 		<div class="footer-contacts__lists-wrapper">
 			<ul class="footer-contacts__messengers-list">
-				<li v-for="(messenger, i) in messengers" :key="i" class="footer-contacts__messenger-item-wrapper">
-					<a :href="messenger.link" class="footer-contacts__messenger-item" :class="`footer-contacts__${messenger.className}`" target="__blank"></a>
-					<p class="footer-contacts__messenger-name">{{ messenger.name }}</p>
+				<li v-for="(messenger, i) in messengers" :key="i">
+					<a :href="messenger.link" target="__blank" class="footer-contacts__messenger-item-wrapper">
+						<span class="footer-contacts__messenger-item" :class="`footer-contacts__${messenger.className}`" />
+						<p class="footer-contacts__messenger-name">{{ messenger.name }}</p>
+					</a>
 				</li>
 			</ul>
 			<div class="footer-contacts__social-network-list-desktop">
@@ -157,6 +159,7 @@ export default {
 
 		&__messenger-item-wrapper {
 			align-items: center;
+			text-decoration: none;
 
 			&:first-child {
 				margin-left: -8px;
