@@ -33,6 +33,10 @@ describe('footer social network list', () => {
     {
       className: 'social-network-behance',
       link: 'https://www.behance.net/maddevs'
+    },
+    {
+      'className': 'social-network-dev',
+      'link': 'https://dev.to/maddevs'
     }
   ];
 

@@ -22,29 +22,9 @@ describe('Header', () => {
   });
   // --------------------- //
 
-  it('has a functions', () => {
-    expect(typeof wrapper.vm.handleScroll).toBe('function');
-  });
-
   it('sets the correct default data', () => {
     expect(typeof Header.data).toBe('function');
     const defaultData = Header.data();
     expect(defaultData.modalWindowName).toBe('contact-me-modal');
-  });
-
-  it('headerLogoTextDisplayState should to be equal true', () => {
-    Object.defineProperty(window, 'pageYOffset', {
-      value: 100
-    });
-    wrapper.vm.handleScroll();
-    expect(wrapper.vm.$data.headerLogoTextDisplayState).toBe(true);
-  });
-
-  it('headerLogoTextDisplayState should to be equal false', () => {
-    Object.defineProperty(window, 'pageYOffset', {
-      value: 99
-    });
-    wrapper.vm.handleScroll();
-    expect(wrapper.vm.$data.headerLogoTextDisplayState).toBe(false);
   });
 });

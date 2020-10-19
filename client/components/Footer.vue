@@ -81,7 +81,7 @@ export default {
 		}
 
 		&__social-network-list-mobile {
-			margin: 40px;
+			margin: 40px -16px;
 		}
 	}
 

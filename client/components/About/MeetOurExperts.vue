@@ -1,9 +1,7 @@
 <template>
   <section id="meet-our-experts" class="meet-our_experts">
     <div class="container">
-      <div class="meet-our_experts__main-title_wrap">
-        <h2 class="meet-our_experts__main-title title-md">Meet our experts</h2>
-      </div>
+      <h2 class="meet-our_experts__main-title">Meet our experts</h2>
       <div class="meet-our_experts__experts-list row">
         <div class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6" v-for="(expert, i) in experts" :key="i">
           <image-component :fileName="expert.image" :fileNameRetina="`${expert.image}@2x`"/>
@@ -13,13 +11,7 @@
               <div class="meet-our_experts__expert-position">{{ expert.position }}</div>
             </div>
           </div>
-          <a :href="expert.linkedin" class="meet-our_experts__expert-linkedin_link" target="blank">
-            <img
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
-              class="meet-our_experts__expert-linkedin_icon"
-              loading="lazy"
-              alt="Linkedin">
-          </a>
+          <a :href="expert.linkedin" class="meet-our_experts__expert-linkedin-link" rel="nofollow" target="blank"></a>
         </div>
       </div>
     </div>
@@ -93,15 +85,20 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/_socialNetworkIcons';
 
   .meet-our_experts {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     background-color: $bgcolor--white-darken;
 
     &__main-title {
-      margin-bottom: 10px;
-      color: $text-color--black-lighter;
+      margin-bottom: 42px;
+      font-size: 40px;
+      font-family: 'Poppins-Bold';
+      line-height: 48px;
+      letter-spacing: -1px;
       text-align: center;
+      color: $text-color--black-lighter;
     }
 
     &__expert-item {
@@ -118,19 +115,23 @@ export default {
     }
 
     &__expert-info {
-      margin-left: 18px;
+      margin-left: 16px;
     }
 
-    &__expert-linkedin_link {
+    &__expert-linkedin-link {
+      width: 24px;
+      height: 24px;
+      display: block;
       position: absolute;
-      right: 20px;
-      bottom: 15px;
+      top: 16px;
+      right: 28px;
+      @include social-network-linkedin-blue;
     }
 
     &__expert-name,
     &__expert-position {
       width: max-content;
-      padding: 3px 8px;
+      padding: 4px 8px;
       background-color: $bgcolor--white-darken;
       letter-spacing: -0.02em;
     }
@@ -145,22 +146,7 @@ export default {
       font-family: 'Poppins-Regular';
     }
 
-    &__expert-linkedin_icon {
-      width: 24px;
-      height: 24px;
-    }
-  }
-
-  @media only screen and (max-width: 1290px) {
-    .meet-our_experts {
-      &__expert-linkedin_link {
-        top: 20px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1220px) {
-    .meet-our_experts {
+    @media only screen and (max-width: 1180px) {
       &__expert-name,
       &__expert-position {
         padding: 3px 4px;
@@ -168,8 +154,6 @@ export default {
 
       &__expert-name {
         font-size: 13px;
-        font-weight: 600;
-        font-family: 'Poppins-Regular';
       }
 
       &__expert-position {
@@ -179,51 +163,55 @@ export default {
       &__expert-info {
         margin-left: 12px;
       }
-    }
-  }
 
-  @media only screen and (max-width: 1024px) {
-    .meet-our_experts {
-      padding-bottom: 56px;
-
-      &__expert-bottom_content {
-        bottom: 10px;
+      &__expert-linkedin-link {
+        width: 16px;
+        height: 16px;
       }
+    }
 
+    @media only screen and (max-width: 1024px) {
       &__expert-name,
       &__expert-position {
-        background-color: $bgcolor--white;
+        padding: 2px 3px;
       }
 
-      &__expert-linkedin_icon {
-        width: 15px;
-        height: 15px;
+      &__expert-name {
+        font-size: 10px;
       }
 
-      &__expert-linkedin_link {
-        top: 11px;
-      }
-      
-      &__expert-name,
       &__expert-position {
         font-size: 9px;
       }
-    }
-  }
 
-  @media only screen and (max-width: 375px) {
-    .meet-our_experts {
-      padding-bottom: 45px;
-    }
-  }
+      &__expert-info {
+        margin-left: 8px;
+      }
 
-  @media only screen and (max-width: 360px) {
-    .meet-our_experts {
-      &__expert-name,
+      &__expert-linkedin-link {
+        top: 8px;
+        right: 20px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      &__expert-name {
+        font-size: 13px;
+      }
+
+      &__expert-position {
+        font-size: 11px;
+      }
+    }
+
+    @media screen and (max-width: 460px) {
+      &__expert-name {
+        font-size: 9px;
+      }
+
       &__expert-position {
         font-size: 8px;
       }
     }
   }
-
 </style>
