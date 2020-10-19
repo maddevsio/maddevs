@@ -1,0 +1,14 @@
+@mixin header-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin hamburger {
+  @include header-icon;
+  background-image: url('data:image/svg+xml;charset=UTF-8,\ <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M0 10h30v1H0v-1zM0 19h30v1H0v-1z" fill="rgb(245, 247, 249)"/></svg>');
+}
+
+@mixin close {
+  @include header-icon;
+  background-image: url('data:image/svg+xml;charset=UTF-8,\ <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path d="M5.001 25L25 5m-.001 20L5 5" stroke="rgb(242, 242, 242)" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}

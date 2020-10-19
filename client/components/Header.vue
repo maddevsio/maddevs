@@ -5,7 +5,7 @@
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-6">
             <router-link :to="`/`" class="header__logo-icon">
-              <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
+              <headerLogo class="header__header-logo"/>
             </router-link>
             <nav class="header__header-routes_links">
               <router-link @click.native="goToTopPage" exact to="/" class="header__navigation-link">About</router-link>
@@ -49,31 +49,12 @@ export default {
     return {
       buttonInnerText: 'Contact me',
       selectedPhone: null,
-      modalWindowName: 'contact-me-modal',
-      headerLogoTextDisplayState: false
+      modalWindowName: 'contact-me-modal'
     };
-  },
-  watch: {
-    '$route'() {
-      this.headerLogoTextDisplayState = false;
-    }
-  },
-  mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-    this.handleScroll();
-  },
-  destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
     goToTopPage() {
       window.scrollTo(0, 0);
-    },
-    handleScroll() {
-      if(window.pageYOffset >= 100)
-        this.headerLogoTextDisplayState = true;
-      else
-        this.headerLogoTextDisplayState = false;
     }
   }
 };

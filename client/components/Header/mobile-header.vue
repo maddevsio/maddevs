@@ -2,13 +2,10 @@
   <div class="mobile-header" :class="{ 'mobile-header--is-open': mobileHeaderIsOpen }">
 		<div class="mobile-header__top-line">
 			<router-link to="/" class="mobile-header__header-logo" @click.native="mobileHeaderIsOpen = false">
-				<img src="@/assets/img/common/logo.svg" alt="Logotype">
+				<headerLogo />
 			</router-link>
 			<div class="mobile-header__button-wrap">
-				<button class="mobile-header__toogle-btn" @click="toggleMobileHeader()">
-					<img src="@/assets/img/Header/mobile-header-hamburger.svg" alt="Open" class="mobile-header__open" v-if="!mobileHeaderIsOpen">
-					<img src="@/assets/img/Header/mobile-header-close.svg" alt="Close" class="mobile-header__close" v-else>
-				</button>
+				<button class="mobile-header__toogle-btn" @click="toggleMobileHeader()" :class="mobileHeaderIsOpen ? 'mobile-header__close' : 'mobile-header__hamburger'"></button>
 			</div>
 		</div>
 		<perfect-scrollbar class="mobile-header__scrollbar custom-scrollbar container">
@@ -58,13 +55,15 @@
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 import footerSocialNetworkList from '@/components/Footer/footer-social-network-list';
 import footerContacts from '@/components/Footer/footer-contacts';
+import headerLogo from '@/components/svg/headerLogo';
 
 export default {
   name: 'mobile-header',
   components: {
     UIButtonModalTrigger,
     footerSocialNetworkList,
-    footerContacts
+    footerContacts,
+    headerLogo
   },
   data() {
     return {
@@ -124,6 +123,7 @@ export default {
 	@import '../../assets/styles/vars';
 	@import '../../assets/styles/_messengerIcons';
 	@import '../../assets/styles/_flagsIcons';
+	@import '../../assets/styles/_headerIcons';
 
 	.mobile-header {
     width: 100%;
@@ -207,22 +207,33 @@ export default {
 			border-bottom: 0;
 		}
 
-		&__close,
-		&__open {
-			cursor: pointer;
-		}
-
 		&__social-network_links {
 			padding: 32px 0;
 			border-top: 1px solid $footer--border-color--grey-light;
 		}
 
 		&__toogle-btn {
+			display: block;
 			padding: 0;
 			border: 0;
 			box-shadow: none;
 			background-color: transparent;
-    }
+			cursor: pointer;
+		}
+		
+		&__hamburger,
+		&__close {
+			width: 30px;
+			height: 30px;
+		}
+
+		&__hamburger { 
+			@include hamburger;
+		}
+
+		&__close {
+			@include close;
+		}
 
 		.nuxt-link-active {
 			color: $text-color--red;
