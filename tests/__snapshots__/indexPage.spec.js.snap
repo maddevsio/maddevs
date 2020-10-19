@@ -2918,15 +2918,11 @@ exports[`Index page renders correctly 1`] = `
     <div
       class="container"
     >
-      <div
-        class="meet-our_experts__main-title_wrap"
+      <h2
+        class="meet-our_experts__main-title"
       >
-        <h2
-          class="meet-our_experts__main-title title-md"
-        >
-          Meet our experts
-        </h2>
-      </div>
+        Meet our experts
+      </h2>
        
       <div
         class="meet-our_experts__experts-list row"
@@ -2971,17 +2967,10 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <a
-            class="meet-our_experts__expert-linkedin_link"
+            class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/marat-bediev-a973171b/"
             target="blank"
-          >
-            <img
-              alt="Linkedin"
-              class="meet-our_experts__expert-linkedin_icon"
-              loading="lazy"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
-            />
-          </a>
+          />
         </div>
         <div
           class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
@@ -3023,17 +3012,10 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <a
-            class="meet-our_experts__expert-linkedin_link"
+            class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/tamara-mun/"
             target="blank"
-          >
-            <img
-              alt="Linkedin"
-              class="meet-our_experts__expert-linkedin_icon"
-              loading="lazy"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
-            />
-          </a>
+          />
         </div>
         <div
           class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
@@ -3075,17 +3057,10 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <a
-            class="meet-our_experts__expert-linkedin_link"
+            class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/andrew-minkin-700a2523/"
             target="blank"
-          >
-            <img
-              alt="Linkedin"
-              class="meet-our_experts__expert-linkedin_icon"
-              loading="lazy"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
-            />
-          </a>
+          />
         </div>
         <div
           class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
@@ -3127,17 +3102,10 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <a
-            class="meet-our_experts__expert-linkedin_link"
+            class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/nakylai-taiirova-28bab859/"
             target="blank"
-          >
-            <img
-              alt="Linkedin"
-              class="meet-our_experts__expert-linkedin_icon"
-              loading="lazy"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
-            />
-          </a>
+          />
         </div>
         <div
           class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
@@ -3179,17 +3147,10 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <a
-            class="meet-our_experts__expert-linkedin_link"
+            class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/daria-utesheva-47804198/"
             target="blank"
-          >
-            <img
-              alt="Linkedin"
-              class="meet-our_experts__expert-linkedin_icon"
-              loading="lazy"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
-            />
-          </a>
+          />
         </div>
         <div
           class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
@@ -3231,17 +3192,10 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <a
-            class="meet-our_experts__expert-linkedin_link"
+            class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/nuradil-alymkulov/"
             target="blank"
-          >
-            <img
-              alt="Linkedin"
-              class="meet-our_experts__expert-linkedin_icon"
-              loading="lazy"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
-            />
-          </a>
+          />
         </div>
         <div
           class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
@@ -3283,17 +3237,10 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <a
-            class="meet-our_experts__expert-linkedin_link"
+            class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/alice-jang-b235b240/"
             target="blank"
-          >
-            <img
-              alt="Linkedin"
-              class="meet-our_experts__expert-linkedin_icon"
-              loading="lazy"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
-            />
-          </a>
+          />
         </div>
         <div
           class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
@@ -3335,17 +3282,10 @@ exports[`Index page renders correctly 1`] = `
           </div>
            
           <a
-            class="meet-our_experts__expert-linkedin_link"
+            class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/earthurkg/"
             target="blank"
-          >
-            <img
-              alt="Linkedin"
-              class="meet-our_experts__expert-linkedin_icon"
-              loading="lazy"
-              src="../../assets/img/Home/svg/experts/linkedin.svg"
-            />
-          </a>
+          />
         </div>
       </div>
     </div>
