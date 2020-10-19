@@ -12,7 +12,7 @@
     >
       <div class="single-project__content-wrap">
         <span :class="`single-project__logo-bg single-project__logo-bg--${project.logoImg}`"/>
-        <h4 class="single-project__sub-title title-md">
+        <h4 class="single-project__sub-title">
           {{ project.projectTitle }}
         </h4>
         <p class="single-project__paragraph paragraph">
@@ -23,16 +23,19 @@
           :projectName="project.projectName"
         />
       </div>
-      <div
-        class="single-project__background"
-        :style="{
-          'background-image':
-            'url(' +
-            require(`@/assets/img/Studies/png/${project.projectBackground}.png`) +
-            ')'
-        }"
-        :class="backgroundModifierClasses"
-      ></div>
+      <div class="single-project__background" :class="backgroundModifierClasses">
+        <picture>
+          <source
+            class="multi-image"
+            :srcset="[require(`@/assets/img/Studies/png/${project.projectBackground}.webp`) + ' ', require(`@/assets/img/Studies/png/${project.projectBackground}.webp`) + ' 2x']"
+            type='image/webp'>
+          <img
+            :src="[require(`@/assets/img/Studies/png/${project.projectBackground}.png`)]"
+            :srcset="[require(`@/assets/img/Studies/png/${project.projectBackground}.png`) + ' 2x']"
+            loading="lazy"
+            :alt="project.projectBackground">
+        </picture>
+      </div>
     </div>
   </a>
 </template>
@@ -102,9 +105,9 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
+@import '../../assets/styles/caseIcons';
 
 .single-project {
-  width: 50%;
   position: relative;
   z-index: 99;
   text-decoration: none;
@@ -113,154 +116,134 @@ export default {
 
   &__logo-bg {
     display: block;
-    height: 47px;
-    width: 200px;
-    background-repeat: no-repeat;
+    height: 41px;
 
     &--godeeColored {
-      background-image: url(../../assets/img/Home/svg/clients/godeeColored.svg);
+      @include godee-icon;
     }
 
     &--guardrailsColored {
-      background-image: url(../../assets/img/Home/svg/clients/guardrailsColored.svg);
+      @include guardrails-icon;
     }
 
     &--nambafoodColored {
-      background-image: url(../../assets/img/Home/svg/clients/nambafoodColored.svg);
+      @include nambafood-icon;
     }
 
     &--teacherlyColored {
-      background-image: url(../../assets/img/Home/svg/clients/teacherlyColored.svg);
-    }
-  }
-
-  @media only screen and (min-width: 1670px) {
-    .single-project {
-      &__background {
-        &_first-project {
-          width: 100%;
-          background-size: cover;
-        }
-      }
-    }
-  }
-
-  @media only screen and (min-width: 1600px) {
-    .single-project {
-      &__content-wrap {
-        height: 320px;
-      }
-
-      &__sub-title {
-        font-size: 50px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1600px) {
-    .single-project {
-      &__content-wrap {
-        height: 302px;
-      }
-
-      &__sub-title {
-        font-size: 50px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1440px) {
-    .single-project {
-      &__content-wrap {
-        margin: 60px 46px 0;
-        height: 230px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1287px) {
-    .single-project {
-      &__sub-title {
-        padding-right: 7px;
-      }
-
-      &__content-wrap {
-        height: 290px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .single-project {
-      &__background {
-        &_first-project {
-          width: 100%;
-          background-size: contain;
-        }
-      }
-
-      &__content-wrap {
-        height: 225px;
-        margin: 50px 34px 0;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1253px) {
-    .single-project {
-      &__sub-title {
-        padding-right: 9px;
-      }
-
-      &__content-wrap {
-        height: 280px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .single-project {
-      &__content-wrap {
-        margin: 68px 34px 0;
-        height: 125px;
-      }
-
-      &__sub-title {
-        line-height: 40px;
-        letter-spacing: -1px;
-      }
-    }
-  }
-
-  &__container {
-    &_white-letters-theme {
-      color: $text-color--white;
+      @include teacherly-icon;
     }
   }
 
   &__content-wrap {
-    margin: 74px 70px 0;
-    height: 270px;
+    padding: 32px 32px 0;
     z-index: 1;
   }
 
+  &__container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   &__sub-title {
-    margin-top: 22.5px;
-    line-height: 110%;
-    letter-spacing: -2px;
+    font-family: Poppins-Bold, sans-serif;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -1px;
+    margin-top: 34px;
+    color: #111213;
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 1158px) {
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: 1100px) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: 978px) {
+      margin-top: 14px;
+      font-size: 25px;
+    }
+
+    @media screen and (max-width: 826px) {
+      font-size: 22px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 650px) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 608px) {
+      font-size: 30px;
+    }
   }
 
   &__paragraph {
-    margin-top: 33px;
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    height: 72px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    @media screen and (max-width: 1229px) {
+      height: 94px;
+      -webkit-line-clamp: 4;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 14px;
+    }
+
+    @media screen and (max-width: 873px) {
+      height: 120px;
+      -webkit-line-clamp: 5;
+    }
+
+    @media screen and (max-width: 800px) {
+      height: 144px;
+      -webkit-line-clamp: 6;
+    }
+
+    @media screen and (max-width: 650px) {
+      font-size: 12px;
+      line-height: 21px;
+      height: 128px;
+    }
+
+    @media screen and (max-width: 608px) {
+      -webkit-line-clamp: initial;
+      font-size: 14px;
+      line-height: 20px;
+      height: auto;
+      margin-bottom: 25px;
+    }
   }
 
   .contribution-widget {
     display: flex;
-    align-items: center;
+    align-items: self-start;
     position: relative;
     z-index: 1;
     color: $text-color--grey;
-    margin-top: 36px;
+    margin-top: 26px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 14px;
+    }
 
     &__img {
       &_black {
@@ -317,161 +300,50 @@ export default {
   }
 
   &__background {
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: contain;
-    height: 413px;
+    height: 322px;
     width: 100%;
+    position: relative;
+
+    @media screen and (max-width: 1120px) {
+      height: 270px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      height: 230px;
+    }
+
+    @media screen and (max-width: 958px) {
+      height: 180px;
+    }
+
+    @media screen and (max-width: 608px) {
+      height: 270px;
+    }
+
+    @media screen and (max-width: 500px) {
+      height: 180px;
+    }
+
+    @media screen and (max-width: 440px) {
+      height: 200px;
+    }
+
+    img {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }
 
     &_guardrails {
       position: relative;
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  &__container_white-letters-theme {
     .single-project {
-      &__sub-title {
-        font-size: 47px;
-      }
-
+      &__sub-title,
       &__paragraph {
-        font-size: 16px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 920px) {
-    .single-project {
-      min-width: inherit;
-
-      &__sub-title {
-        font-size: 44px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 870px) {
-    .single-project {
-      &__sub-title {
-        font-size: 40px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 820px) {
-    .single-project {
-      &__sub-title {
-        font-size: 39px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 810px) and (min-width: 769px) {
-    .single-project {
-      &__content-wrap {
-        margin: 68px 23px 0;
-        height: 145px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 1030px) and (min-width: 798px) {
-    .single-project {
-      &__background {
-        background-size: contain;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .single-project {
-      &__content-wrap {
-        height: 230px;
-      }
-
-      &__sub-title {
-        font-size: 47px;
-      }
-
-      &__background {
-        background-size: contain;
-
-        &_first-project {
-          width: 100%;
-          background-size: contain;
-        }
-      }
-
-      &__container {
-        padding-top: 1px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  }
-
-  @media screen and (max-width: 768px) and (min-width: 580px) {
-    .single-project {
-      &__background {
-        background-size: contain;
-        height: 378px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 576px) {
-    .single-project {
-      &__logo-bg {
-        height: 40px;
-      }
-
-      &__content-wrap {
-        height: 100px;
-        word-wrap: break-word;
-
-        .contribution-widget {
-          margin-top: 26px;
-        }
-      }
-
-      &__paragraph {
-        margin-top: 15px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 445px) {
-    .single-project {
-      &__content-wrap {
-        margin: 50px 21px 0;
-      }
-
-      &__sub-title {
-        font-size: 41px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 410px) {
-    .single-project {
-      &__background {
-        &_first-project {
-          background-size: contain;
-          width: 100%;
-        }
-
-        &_guardrails {
-          width: calc(100% - 47px);
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 340px) {
-    .single-project {
-      &__content-wrap {
-        margin: 50px 17px 0;
+        color: $text-color--white;
       }
     }
   }

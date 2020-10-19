@@ -83,120 +83,65 @@ export default {
 
 .contribution-widget {
   display: flex;
-  align-items: center;
+  align-items: self-start;
   position: relative;
   z-index: 1;
   color: $text-color--grey;
   font-family: 'Poppins-Regular', sans-serif;
-  margin-top: 36px;
-  font-size: 20px;
+  margin-top: 26px;
+  font-size: 17px;
+  line-height: 120%;
   letter-spacing: -1px;
-  line-height: 95%;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 14px;
+  }
+
+  @media screen and (max-width: 650px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @media screen and (max-width: 608px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 
   &__img {
     width: 20px;
     height: 18px;
 
-    &_teacherly,
+    &_guardrails,
+    &_teacherly {
+      fill: $text-color--white-darken;
+    }
+
+    &_godee,
     &_nambafood {
-      fill: $text-color--red;
-    }
-
-    &_guardrails {
-      fill: $text-color--grey;
-    }
-
-    &_godee {
       fill: $text-color--black;
     }
   }
 
   &__content {
-    margin-left: 6px;
+    margin-left: 8px;
 
     &-mobile {
       display: none;
     }
 
-    &_nambafood,
-    &_guardrails {
-      color: $text-color--grey;
-    }
-
-    &_teacherly {
-      color: $text-color--white;
-    }
-
-    &_godee {
+    &_godee,
+    &_nambafood {
       color: $text-color--black;
     }
-  }
 
-  @media only screen and (max-width: 1120px) {
-    font-size: 18px;
-  }
-
-  @media only screen and (max-width: 1035px) {
-    font-size: 16px;
-  }
-
-  @media only screen and (max-width: 1024px) {
-    &__img {
-      height: 13px;
-      width: 15px;
-
-      &_teacherly {
-        fill: $text-color--red;
-      }
-
-      &_guardrails {
-        fill: $text-color--white;
-      }
-
-      &_nambafood,
-      &_godee {
-        fill: $text-color--black;
-      }
-    }
-
-    &__content {
-      display: none;
-
-      &-mobile {
-        display: block;
-        margin-left: 6px;
-
-        &_nambafood {
-          color: $text-color--black;
-        }
-
-        &_teacherly,
-        &_guardrails {
-          color: $text-color--white;
-        }
-
-        &_godee {
-          color: $text-color--black;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 640px) {
-    font-size: 17px;
-  }
-
-  @media only screen and (max-width: 520px) {
-    font-size: 16px;
-  }
-
-  @media only screen and (max-width: 340px) {
-    font-size: 15px;
-
-    &__content {
-      &-mobile {
-        margin-left: 3px;
-      }
+    &_guardrails,
+    &_teacherly {
+      color: $text-color--white-darken;
     }
   }
 }

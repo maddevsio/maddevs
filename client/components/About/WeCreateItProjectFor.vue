@@ -26,7 +26,7 @@
           </div>
         </div>
         <ul class="weCreateItProject__flags-list">
-          <li v-for="(flag, i) in flags" :key="i" class="weCreateItProject__flag-item" :class="flag"></li>
+          <li v-for="(flag, i) in flags" :key="i" class="weCreateItProject__flag-item" :class="`weCreateItProject__${flag}`"></li>
         </ul>
       </div>
     </div>
@@ -76,7 +76,7 @@ export default {
     margin: 131px 0;
 
     &__content-wrapper {
-      padding: 40px 48px 48px;
+      padding: 40px 45px 45px;
       text-align: center;
       background-color: $bgcolor--white;
     }
@@ -91,27 +91,26 @@ export default {
 
     &__flags-list {
       display: grid;
-      grid-template-columns: repeat(22, 1fr);
+      grid-template-columns: repeat(22, max-content);
+      justify-content: space-between;
     }
 
     &__flag-item {
-      &::before {
-        content: '';
-        display: block;
-        width: 32px;
-        height: 23px;
-      }
+      display: block;
+      width: 32px;
+      height: 23px;
     }
 
     &__main-title,
     &__paragraph {
-      color: $text-color--black;
+      color: $text-color--black-lighter;
     }
 
     &__main-title {
-      margin-bottom: 25px;
+      margin-bottom: 39px;
       font-size: 62px;
       font-family: 'Poppins-Bold', sans-serif;
+      line-height: 74px;
       letter-spacing: -1px;
 
       br {
@@ -125,9 +124,97 @@ export default {
       letter-spacing: -0.02em;
       line-height: 34px;
     }
+
+    &__flag-usa {
+      @include flag-usa;
+    }
+
+    &__flag-australia {
+      @include flag-australia;
+    }
+
+    &__flag-vietnam {
+      @include flag-vietnam;
+    }
+
+    &__flag-france {
+      @include flag-france;
+    }
+
+    &__flag-uk {
+      @include flag-uk;
+    }
+
+    &__flag-indonesia {
+      @include flag-indonesia;
+    }
+
+    &__flag-germany {
+      @include flag-germany;
+    }
+
+    &__flag-austria {
+      @include flag-austria;
+    }
+
+    &__flag-switzerland {
+      @include flag-switzerland;
+    }
+
+    &__flag-canada {
+      @include flag-canada;
+    }
+
+    &__flag-latvia {
+      @include flag-latvia;
+    }
+
+    &__flag-kazakhstan {
+      @include flag-kazakhstan;
+    }
+
+    &__flag-sweden {
+      @include flag-sweden;
+    }
+
+    &__flag-finland {
+      @include flag-finland;
+    }
+
+    &__flag-united-arab-emirates {
+      @include flag-united-arab-emirates;
+    }
+
+    &__flag-denmark {
+      @include flag-denmark;
+    }
+
+    &__flag-japan {
+      @include flag-japan;
+    }
+
+    &__flag-norway {
+      @include flag-norway;
+    }
+
+    &__flag-portugal {
+      @include flag-portugal;
+    }
+
+    &__flag-katar {
+      @include flag-katar;
+    }
+
+    &__flag-south-africa {
+      @include flag-south-africa;
+    }
+
+    &__flag-netherlands {
+      @include flag-netherlands;
+    }
   }
 
-  @media only screen and (max-width: 1270px) {
+  @media only screen and (min-width: 1200px) and (max-width: 1270px) {
     .weCreateItProject {
       &__paragraph {
         font-size: 16px;
@@ -138,31 +225,22 @@ export default {
   @media only screen and (max-width: 1040px) {
     .weCreateItProject {
       &__content-wrapper {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .weCreateItProject {
-      &__content-wrapper {
-        padding: 25px 33px 33px;
+        padding: 33px 33px 45px;
       }
 
       &__main-title {
+        margin-bottom: 27px;
         font-size: 32px;
+        line-height: 38px;
       }
 
       &__projects-type_list {
-        margin: 0 0 45px;
+        margin: 0 0 40px;
       }
 
       &__flag-item {
-        &::before {
-          width: 21px;
-          height: 15px;
-        }
+        width: 21px;
+        height: 15px;
       }
 
       &__paragraph {
@@ -175,7 +253,7 @@ export default {
   @media only screen and (max-width: 720px) {
     .weCreateItProject {
       &__flags-list {
-        grid-template-columns: repeat(11, 1fr);
+        grid-template-columns: repeat(11, max-content);
         grid-row-gap: 19px;
       }
     }
@@ -183,28 +261,15 @@ export default {
 
   @media only screen and (max-width: 576px) {
     .weCreateItProject {
+      margin-top: 34px;
+      margin-bottom: 45px;
+      background-color: $bgcolor--white;
+
       &__main-title {
         br {
           display: block;
         }
       }
-    }
-  }
-
-  @media screen and (min-width: 575px) and (max-width: 576px) {
-    .weCreateItProject {
-      &__content-wrapper {
-        padding-left: 13px;
-        padding-right: 13px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 480px) {
-    .weCreateItProject {
-      margin-top: 34px;
-      margin-bottom: 45px;
-      background-color: $bgcolor--white;
 
       &__content-wrapper {
         padding-left: 0;
@@ -213,6 +278,7 @@ export default {
       }
 
       &__main-title {
+        margin-bottom: 25px;
         font-size: 36px;
         line-height: 120%;
       }
@@ -224,14 +290,12 @@ export default {
       }
 
       &__flag-item {
-        &::before {
-          width: 23px;
-          height: 19px;
-        }
+        width: 23px;
+        height: 19px;
       }
 
       &__projects-type_list {
-        margin: 0 0 30px;
+        margin: 0 0 27px;
       }
 
       &__project-item {
