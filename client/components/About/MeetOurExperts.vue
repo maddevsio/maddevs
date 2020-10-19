@@ -11,7 +11,7 @@
               <div class="meet-our_experts__expert-position">{{ expert.position }}</div>
             </div>
           </div>
-          <a :href="expert.linkedin" class="meet-our_experts__expert-linkedin-link" target="blank"></a>
+          <a :href="expert.linkedin" class="meet-our_experts__expert-linkedin-link" rel="nofollow" target="blank"></a>
         </div>
       </div>
     </div>
@@ -85,6 +85,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/_socialNetworkIcons';
 
   .meet-our_experts {
     padding-bottom: 100px;
@@ -124,9 +125,7 @@ export default {
       position: absolute;
       top: 16px;
       right: 28px;
-      background-image: url('data:image/svg+xml;charset=UTF-8,\ <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.262 0H1.809C.832 0 0 .774 0 1.727v20.545C0 23.226.546 24 1.523 24h20.453c.98 0 2.024-.774 2.024-1.728V1.727A1.72 1.72 0 0022.262 0z" fill="rgb(255, 255, 255)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M22.262 0H1.809C.832 0 0 .774 0 1.727v20.545C0 23.226.546 24 1.523 24h20.453c.98 0 2.024-.774 2.024-1.728V1.727A1.72 1.72 0 0022.262 0zM9.142 9.143h3.232v1.647h.035C12.902 9.902 14.357 9 16.155 9c3.453 0 4.416 1.833 4.416 5.229v6.342h-3.428v-5.717c0-1.52-.607-2.854-2.026-2.854-1.724 0-2.546 1.167-2.546 3.082v5.49H9.143V9.141zM3.43 20.57h3.428V9.143H3.43V20.57zM7.286 5.143A2.142 2.142 0 113 5.144a2.142 2.142 0 014.285-.001z" fill="rgb(0, 119, 181)"/><path d="M21.5.5h-19a2 2 0 00-2 2v19a2 2 0 002 2h19a2 2 0 002-2v-19a2 2 0 00-2-2z" fill="rgb(255, 255, 255)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.005C0 .898.897 0 2.005 0h19.99C23.102 0 24 .897 24 2.005v19.99A2.004 2.004 0 0121.995 24H2.005A2.005 2.005 0 010 21.995V2.005zM9.5 9.15h3.25v1.633C13.219 9.844 14.419 9 16.223 9c3.457 0 4.277 1.869 4.277 5.299v6.351H17v-5.57c0-1.954-.468-3.055-1.66-3.055-1.652 0-2.34 1.188-2.34 3.054v5.571H9.5V9.15zm-6 11.35H7V9H3.5v11.5zm4-15.25a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" fill="rgb(0, 119, 181)"/></svg>');
-      background-repeat: no-repeat;
-      background-position: center;
+      @include social-network-linkedin-blue;
     }
 
     &__expert-name,
