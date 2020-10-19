@@ -195,6 +195,16 @@ export default {
       }
     }
 
+    @media screen and (max-width: 767px) {
+      &__expert-name {
+        font-size: 13px;
+      }
+
+      &__expert-position {
+        font-size: 11px;
+      }
+    }
+
     @media screen and (max-width: 460px) {
       &__expert-name {
         font-size: 9px;
