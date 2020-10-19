@@ -94,14 +94,11 @@ exports[`Projects page renders correctly 1`] = `
     >
       <div>
         <h2
-          class="case-studies__main-title main-title"
+          class="case-studies__main-title"
         >
           
-        Case
-        
-          <span>
-            Studies
-          </span>
+        Case Studies
+      
         </h2>
          
         <!---->
@@ -126,7 +123,7 @@ exports[`Projects page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title title-md"
+                class="single-project__sub-title"
               >
                 
         Contactless Delivery Service
@@ -137,7 +134,7 @@ exports[`Projects page renders correctly 1`] = `
                 class="single-project__paragraph paragraph"
               >
                 
-        Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.
+        Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.
       
               </p>
                
@@ -173,7 +170,22 @@ exports[`Projects page renders correctly 1`] = `
              
             <div
               class="single-project__background single-project__background_first-project"
-            />
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="nambafoodBackground"
+                  loading="lazy"
+                  src="[object Object]"
+                  srcset="[object Object] 2x"
+                />
+              </picture>
+            </div>
           </div>
         </a>
         <a
@@ -192,7 +204,7 @@ exports[`Projects page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title title-md"
+                class="single-project__sub-title"
               >
                 
         EdTech collaboration platform
@@ -239,7 +251,22 @@ exports[`Projects page renders correctly 1`] = `
              
             <div
               class="single-project__background"
-            />
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="teacherlyBackground"
+                  loading="lazy"
+                  src="[object Object]"
+                  srcset="[object Object] 2x"
+                />
+              </picture>
+            </div>
           </div>
         </a>
         <a
@@ -258,7 +285,7 @@ exports[`Projects page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title title-md"
+                class="single-project__sub-title"
               >
                 
         Cloud cybersecurity service
@@ -305,7 +332,22 @@ exports[`Projects page renders correctly 1`] = `
              
             <div
               class="single-project__background single-project__background_guardrails"
-            />
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="guardrailsBackground"
+                  loading="lazy"
+                  src="[object Object]"
+                  srcset="[object Object] 2x"
+                />
+              </picture>
+            </div>
           </div>
         </a>
         <a
@@ -324,7 +366,7 @@ exports[`Projects page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title title-md"
+                class="single-project__sub-title"
               >
                 
         Convenient shuttle bus service
@@ -375,7 +417,22 @@ exports[`Projects page renders correctly 1`] = `
              
             <div
               class="single-project__background single-project__background_godee"
-            />
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="godeeBackground"
+                  loading="lazy"
+                  src="[object Object]"
+                  srcset="[object Object] 2x"
+                />
+              </picture>
+            </div>
           </div>
         </a>
       </div>
@@ -410,7 +467,7 @@ exports[`Projects page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title title-md"
+                    class="single-project__sub-title"
                   >
                     
         Contactless Delivery Service
@@ -421,7 +478,7 @@ exports[`Projects page renders correctly 1`] = `
                     class="single-project__paragraph paragraph"
                   >
                     
-        Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.
+        Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.
       
                   </p>
                    
@@ -457,7 +514,22 @@ exports[`Projects page renders correctly 1`] = `
                  
                 <div
                   class="single-project__background single-project__background_first-project"
-                />
+                >
+                  <picture>
+                    <source
+                      class="multi-image"
+                      srcset="[object Object] ,[object Object] 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="nambafoodBackground"
+                      loading="lazy"
+                      src="[object Object]"
+                      srcset="[object Object] 2x"
+                    />
+                  </picture>
+                </div>
               </div>
             </a>
           </div>
@@ -480,7 +552,7 @@ exports[`Projects page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title title-md"
+                    class="single-project__sub-title"
                   >
                     
         EdTech collaboration platform
@@ -527,7 +599,22 @@ exports[`Projects page renders correctly 1`] = `
                  
                 <div
                   class="single-project__background"
-                />
+                >
+                  <picture>
+                    <source
+                      class="multi-image"
+                      srcset="[object Object] ,[object Object] 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="teacherlyBackground"
+                      loading="lazy"
+                      src="[object Object]"
+                      srcset="[object Object] 2x"
+                    />
+                  </picture>
+                </div>
               </div>
             </a>
           </div>
@@ -550,7 +637,7 @@ exports[`Projects page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title title-md"
+                    class="single-project__sub-title"
                   >
                     
         Cloud cybersecurity service
@@ -597,7 +684,22 @@ exports[`Projects page renders correctly 1`] = `
                  
                 <div
                   class="single-project__background single-project__background_guardrails"
-                />
+                >
+                  <picture>
+                    <source
+                      class="multi-image"
+                      srcset="[object Object] ,[object Object] 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="guardrailsBackground"
+                      loading="lazy"
+                      src="[object Object]"
+                      srcset="[object Object] 2x"
+                    />
+                  </picture>
+                </div>
               </div>
             </a>
           </div>
@@ -620,7 +722,7 @@ exports[`Projects page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title title-md"
+                    class="single-project__sub-title"
                   >
                     
         Convenient shuttle bus service
@@ -671,7 +773,22 @@ exports[`Projects page renders correctly 1`] = `
                  
                 <div
                   class="single-project__background single-project__background_godee"
-                />
+                >
+                  <picture>
+                    <source
+                      class="multi-image"
+                      srcset="[object Object] ,[object Object] 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="godeeBackground"
+                      loading="lazy"
+                      src="[object Object]"
+                      srcset="[object Object] 2x"
+                    />
+                  </picture>
+                </div>
               </div>
             </a>
           </div>
