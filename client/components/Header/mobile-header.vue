@@ -8,7 +8,7 @@
 				<button class="mobile-header__toogle-btn" @click="toggleMobileHeader()" :class="mobileHeaderIsOpen ? 'mobile-header__close' : 'mobile-header__hamburger'"></button>
 			</div>
 		</div>
-		<perfect-scrollbar class="mobile-header__scrollbar custom-scrollbar container">
+		<perfect-scrollbar class="mobile-header__scrollbar custom-scrollbar container" ref="mobileMenuScrollBar">
 			<div class="mobile-header__content-wrap" v-show="mobileHeaderIsOpen">
 				<div class="mobile-header__nav-wrap">
 					<nav class="mobile-header__header-routes_links">
@@ -126,10 +126,13 @@ export default {
 	@import '../../assets/styles/_headerIcons';
 
 	.mobile-header {
-    width: 100%;
+		width: 100%;
+		height: 48px;
 		display: none;
-		margin-top: -120px;
+		position: fixed;
 		font-feature-settings: normal;
+		z-index: 2;
+		background-color: $bgcolor--black ;
 
 		&__modal-trigger-btn {
 			width: 100%;
@@ -141,39 +144,34 @@ export default {
     }
 
 		&__top-line {
+			max-height: 48px;
 			display: flex;
 			justify-content: space-between;
-			margin-bottom: 32px;
-			padding: 22px 34px 0;
+			padding: 0 34px;
 
 			@media screen and (max-width: 970px) {
-				padding-left: 28px;
-				padding-right: 28px;
+				padding: 0 28px;
 			}
 
 			@media screen and (max-width: 768px) {
-				padding-left: 18px;
-				padding-right: 18px;
+				padding: 0 18px;
 			}
 
 			@media screen and (max-width: 440px) {
-				padding-left: 16px;
-				padding-right: 16px;
+				padding: 0 24px;
 			}
 		}
 
 		&__header-logo {
-      width: 35px;
-			height: 60px;
-
-      @media screen and (max-width: 768px) {
-        width: 28px;
-        height: 49px;
-      }
+			width: 28px;
+			height: 49px;
+			margin-top: 11px;
+			z-index: 2;
     }
 
     &__content-wrap {
-			height: 100%;
+			padding-top: 27px;
+			background-color: $bgcolor--black;
 		}
 
 		&__nav-wrap,
@@ -214,6 +212,7 @@ export default {
 
 		&__toogle-btn {
 			display: block;
+			margin-top: 9px;
 			padding: 0;
 			border: 0;
 			box-shadow: none;
@@ -328,6 +327,7 @@ export default {
 		}
 
 		&--is-open {
+			height: 100vh;
 			position: fixed;
 			top: 0;
 			left: 0;
@@ -335,7 +335,7 @@ export default {
 			background: $bgcolor--black;
 
 			.mobile-header__scrollbar {
-				height: calc(100vh - 100px);
+				height: calc(100vh - 50px);
 				overflow: auto;
 			}
 		}
@@ -358,7 +358,6 @@ export default {
 
 		@media screen and (max-width: 991px) {
 			display: block;
-			height: 100%;
 			margin-top: 0;
 			box-sizing: border-box;
 		}
@@ -429,3 +428,4 @@ export default {
 		}
 	}
 </style>
+

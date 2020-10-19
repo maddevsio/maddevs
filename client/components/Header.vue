@@ -5,7 +5,7 @@
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-6">
             <router-link :to="`/`" class="header__logo-icon">
-              <headerLogo class="header__header-logo"/>
+              <headerLogo class="header__header-logo" />
             </router-link>
             <nav class="header__header-routes_links">
               <router-link @click.native="goToTopPage" exact to="/" class="header__navigation-link">About</router-link>
@@ -190,11 +190,6 @@ export default {
     position: fixed;
     padding: initial;
     z-index: 999;
-
-    .container {
-      height: 100vh;
-      overflow: scroll;
-    }
   }
 
 </style>
