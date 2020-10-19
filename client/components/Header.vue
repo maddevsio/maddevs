@@ -5,29 +5,20 @@
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-6">
             <router-link :to="`/`" class="header__logo-icon">
-              <headerLogo class="header__header-logo" :headerLogoTextDisplayState="headerLogoTextDisplayState"/>
+              <headerLogo class="header__header-logo" />
             </router-link>
             <nav class="header__header-routes_links">
               <router-link @click.native="goToTopPage" exact to="/" class="header__navigation-link">About</router-link>
               <router-link @click.native="goToTopPage" to="/services" class="header__navigation-link">Services</router-link>
               <router-link @click.native="goToTopPage" to="/projects" class="header__navigation-link">Projects</router-link>
               <router-link @click.native="goToTopPage" to="/careers" class="header__navigation-link">Careers</router-link>
-              <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer" class="header__navigation-link">Blog</a>
+              <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer" class="header__navigation-link header__navigation-link-blog">Blog</a>
             </nav>
           </div>
           <div class="header__right-content col-xl-6 col-lg-6">
-            <div class="header__phones-dropdown_wrap" :id="selectedPhone.country">
-              <a class="header__selected-phone" :href="`tel:${selectedPhone.phoneNumber}`">
-                <span :class="`header__flag header__flag--${selectedPhone.country}`" />
-                {{ selectedPhone.phoneNumber }}
-                <i class="header__phones-dropdown_arrow"/>
-              </a>
-              <div class="header__phones-list">
-                <a v-for="(phone, i) in phones" :key="i" class="header__phone-item" :href="`tel:${phone.phoneNumber}`" @click="selectedPhone = phone" v-show="phone != selectedPhone">
-                  <span :class="`header__flag header__flag--${phone.country}`" />
-                  {{ phone.phoneNumber }}
-                </a>
-              </div>
+            <div class="header__phone-wrapper">
+              <span class="header__phone-flag" />
+              <a class="header__header-phone" href="tel:+44 20 3984 8555">+44 20 3984 8555</a>
             </div>
             <UIButtonModalTrigger
               :buttonInnerText="buttonInnerText"
@@ -57,49 +48,13 @@ export default {
   data() {
     return {
       buttonInnerText: 'Contact me',
-      phones: [
-        {
-          phoneNumber: '+44 20 3984 8555',
-          country: 'united-kingdom'
-        },
-        {
-          phoneNumber: '+1 833-MADDEVS',
-          country: 'united-states'
-        }
-      ],
       selectedPhone: null,
-      modalWindowName: 'contact-me-modal',
-      headerLogoTextDisplayState: false
+      modalWindowName: 'contact-me-modal'
     };
-  },
-  created() {
-    /**
-     * Sets default value for selectedPhone
-     * this.phones[1] is a United Kingdom number
-    */
-    this.selectedPhone = this.phones[0];
-  },
-  watch: {
-    '$route'() {
-      this.headerLogoTextDisplayState = false;
-    }
-  },
-  mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-    this.handleScroll();
-  },
-  destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
     goToTopPage() {
       window.scrollTo(0, 0);
-    },
-    handleScroll() {
-      if(window.pageYOffset >= 100)
-        this.headerLogoTextDisplayState = true;
-      else
-        this.headerLogoTextDisplayState = false;
     }
   }
 };
@@ -107,6 +62,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../assets/styles/vars';
+  @import '../assets/styles/_flagsIcons';
 
   .header {
     width: 100%;
@@ -132,24 +88,7 @@ export default {
       justify-content: flex-end;
     }
 
-    &__flag {
-      height: 14px;
-      width: 18px;
-      background-repeat: no-repeat;
-      margin-right: 10px;
-      background-size: contain;
-      display: inline-block;
-
-      &--united-states {
-        background-image: url(../assets/img/Flags/united-states.svg);
-      }
-
-      &--united-kingdom {
-        background-image: url(../assets/img/Flags/united-kingdom.svg);
-      }
-    }
-
-    &__phones-dropdown_wrap,
+    &__phone-wrapper,
     &__header-routes_links,
     button {
       margin-bottom: 29px;
@@ -159,26 +98,25 @@ export default {
       width: 132px;
       height: 39px;
       border-radius: 4px;
+      border-color: $text-color--red-opacity;
     }
 
     &__navigation-link,
-    &__selected-phone,
-    &__phone-item {
+    &__header-phone {
       color: $text-color--white;
     }
 
     &__navigation-link,
-    &__selected-phone,
-    &__phone-item,
+    &__header-phone,
     button {
       font-size: 16px;
-      font-family: 'Poppins-Regular', sans-serif;;
+      font-family: 'Poppins-Regular', sans-serif;
       text-decoration: none;
       letter-spacing: -0.02em;
     }
 
     &__navigation-link {
-      margin-right: 10px;
+      margin-right: 15px;
 
       &::after {
         content: '↓';
@@ -186,11 +124,11 @@ export default {
         font-family: 'Poppins-Regular', sans-serif;;
         color: transparent;
       }
+    }
 
-      &:last-child {
-        &::after {
-          content: '';
-        }
+    &__navigation-link-blog {
+      &::after {
+        content: '';
       }
     }
 
@@ -202,55 +140,47 @@ export default {
       }
     }
 
-    &__phones-dropdown_wrap {
-      min-width: 200px;
-      margin-left: 12px;
-      margin-right: 68px;
-      background: url('../assets/img/Header/dropdown-arrow.svg') no-repeat;
-      background-position-y: 9px;
-      background-position-x: 170px;
+    &__phone-wrapper {
+      display: flex;
+      align-items: center;
+      margin-right: 40px;
 
-      &:hover {
-        .header__phones-list {
-          display: flex;
-          flex-direction: column;
-        }
+      @media screen and (max-width: 1366px) {
+        margin-right: 49px;
+      }
+
+      @media screen and (max-width: 1280px) {
+        margin-right: 33px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        margin-right: 20px;
       }
     }
 
-    &__phones-list {
-      display: none;
-      position: absolute;
-      margin-left: -10px;
-      padding: 0 10px 2px;
-      background-color: $bgcolor--black;
-    }
-
-    &__selected-phone,
-    &__phone-item {
+    &__header-phone {
+      display: flex;
+      align-items: center;
       position: relative;
+      margin-left: 7px;
       cursor: pointer;
 
       img {
         position: absolute;
+        top: 4px;
         left: 0;
       }
     }
 
-    &__selected-phone {
-      display: flex;
-      align-items: center;
-      img {
-        top: 4px;
-      }
+    &__phone-flag {
+      display: block;
+      width: 18px;
+      height: 14px;
+      @include flag-uk;
     }
 
-    &__phone-item {
-      padding-top: 17px;
-
-      img {
-        top: 20px;
-      }
+    @media screen and (max-width: 991px) {
+      display: none;
     }
   }
 
@@ -260,40 +190,6 @@ export default {
     position: fixed;
     padding: initial;
     z-index: 999;
-
-    .container {
-      height: 100vh;
-      overflow: scroll;
-    }
   }
 
-  @media only screen and (max-width: 1366px) {
-    .header {
-      &__phones-dropdown_wrap {
-        margin-right: 43px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .header {
-      &__phones-dropdown_wrap {
-        margin-right: 13px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1180px) {
-    .header {
-      &__phones-dropdown_wrap {
-        margin-right: 0;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .header {
-      display: none;
-    }
-  }
 </style>

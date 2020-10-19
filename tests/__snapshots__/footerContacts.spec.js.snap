@@ -31,7 +31,7 @@ exports[`Footer contacts renders correctly 1`] = `
         class="footer-contacts__contact-title-wrapper"
       >
         <div
-          class="footer-contacts__contact-title-flag flag-uk"
+          class="footer-contacts__contact-title-flag"
         />
          
         <p
@@ -56,65 +56,73 @@ exports[`Footer contacts renders correctly 1`] = `
     <ul
       class="footer-contacts__messengers-list"
     >
-      <li
-        class="footer-contacts__messenger-item-wrapper"
-      >
+      <li>
         <a
-          class="footer-contacts__messenger-item footer-contacts__messenger-facebook-messenger"
+          class="footer-contacts__messenger-item-wrapper"
           href="https://facebook.com/maddevsllc"
           target="__blank"
-        />
-         
-        <p
-          class="footer-contacts__messenger-name"
         >
-          Messenger
-        </p>
+          <span
+            class="footer-contacts__messenger-item footer-contacts__messenger-facebook-messenger"
+          />
+           
+          <p
+            class="footer-contacts__messenger-name"
+          >
+            Messenger
+          </p>
+        </a>
       </li>
-      <li
-        class="footer-contacts__messenger-item-wrapper"
-      >
+      <li>
         <a
-          class="footer-contacts__messenger-item footer-contacts__messenger-watsapp"
+          class="footer-contacts__messenger-item-wrapper"
           href="http://wa.me/996555771481"
           target="__blank"
-        />
-         
-        <p
-          class="footer-contacts__messenger-name"
         >
-          WhatsApp
-        </p>
+          <span
+            class="footer-contacts__messenger-item footer-contacts__messenger-watsapp"
+          />
+           
+          <p
+            class="footer-contacts__messenger-name"
+          >
+            WhatsApp
+          </p>
+        </a>
       </li>
-      <li
-        class="footer-contacts__messenger-item-wrapper"
-      >
+      <li>
         <a
-          class="footer-contacts__messenger-item footer-contacts__messenger-telegram"
+          class="footer-contacts__messenger-item-wrapper"
           href="https://t.me/mun_tamara/"
           target="__blank"
-        />
-         
-        <p
-          class="footer-contacts__messenger-name"
         >
-          Telegram
-        </p>
+          <span
+            class="footer-contacts__messenger-item footer-contacts__messenger-telegram"
+          />
+           
+          <p
+            class="footer-contacts__messenger-name"
+          >
+            Telegram
+          </p>
+        </a>
       </li>
-      <li
-        class="footer-contacts__messenger-item-wrapper"
-      >
+      <li>
         <a
-          class="footer-contacts__messenger-item footer-contacts__messenger-wechat"
+          class="footer-contacts__messenger-item-wrapper"
           href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
           target="__blank"
-        />
-         
-        <p
-          class="footer-contacts__messenger-name"
         >
-          WeChat
-        </p>
+          <span
+            class="footer-contacts__messenger-item footer-contacts__messenger-wechat"
+          />
+           
+          <p
+            class="footer-contacts__messenger-name"
+          >
+            WeChat
+          </p>
+        </a>
       </li>
     </ul>
      
@@ -184,6 +192,15 @@ exports[`Footer contacts renders correctly 1`] = `
           <a
             class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-behance"
             href="https://www.behance.net/maddevs"
+            target="__blank"
+          />
+        </li>
+        <li
+          class="footerSocialNetworkList__social-network-link-wrapper"
+        >
+          <a
+            class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-dev"
+            href="https://dev.to/maddevs"
             target="__blank"
           />
         </li>
