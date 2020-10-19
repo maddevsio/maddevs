@@ -188,70 +188,70 @@ exports[`Index page renders correctly 1`] = `
           class="weCreateItProject__flags-list"
         >
           <li
-            class="weCreateItProject__flag-item flag-usa"
+            class="weCreateItProject__flag-item weCreateItProject__flag-usa"
           />
           <li
-            class="weCreateItProject__flag-item flag-australia"
+            class="weCreateItProject__flag-item weCreateItProject__flag-australia"
           />
           <li
-            class="weCreateItProject__flag-item flag-vietnam"
+            class="weCreateItProject__flag-item weCreateItProject__flag-vietnam"
           />
           <li
-            class="weCreateItProject__flag-item flag-france"
+            class="weCreateItProject__flag-item weCreateItProject__flag-france"
           />
           <li
-            class="weCreateItProject__flag-item flag-uk"
+            class="weCreateItProject__flag-item weCreateItProject__flag-uk"
           />
           <li
-            class="weCreateItProject__flag-item flag-indonesia"
+            class="weCreateItProject__flag-item weCreateItProject__flag-indonesia"
           />
           <li
-            class="weCreateItProject__flag-item flag-germany"
+            class="weCreateItProject__flag-item weCreateItProject__flag-germany"
           />
           <li
-            class="weCreateItProject__flag-item flag-austria"
+            class="weCreateItProject__flag-item weCreateItProject__flag-austria"
           />
           <li
-            class="weCreateItProject__flag-item flag-switzerland"
+            class="weCreateItProject__flag-item weCreateItProject__flag-switzerland"
           />
           <li
-            class="weCreateItProject__flag-item flag-canada"
+            class="weCreateItProject__flag-item weCreateItProject__flag-canada"
           />
           <li
-            class="weCreateItProject__flag-item flag-latvia"
+            class="weCreateItProject__flag-item weCreateItProject__flag-latvia"
           />
           <li
-            class="weCreateItProject__flag-item flag-kazakhstan"
+            class="weCreateItProject__flag-item weCreateItProject__flag-kazakhstan"
           />
           <li
-            class="weCreateItProject__flag-item flag-sweden"
+            class="weCreateItProject__flag-item weCreateItProject__flag-sweden"
           />
           <li
-            class="weCreateItProject__flag-item flag-finland"
+            class="weCreateItProject__flag-item weCreateItProject__flag-finland"
           />
           <li
-            class="weCreateItProject__flag-item flag-united-arab-emirates"
+            class="weCreateItProject__flag-item weCreateItProject__flag-united-arab-emirates"
           />
           <li
-            class="weCreateItProject__flag-item flag-denmark"
+            class="weCreateItProject__flag-item weCreateItProject__flag-denmark"
           />
           <li
-            class="weCreateItProject__flag-item flag-japan"
+            class="weCreateItProject__flag-item weCreateItProject__flag-japan"
           />
           <li
-            class="weCreateItProject__flag-item flag-norway"
+            class="weCreateItProject__flag-item weCreateItProject__flag-norway"
           />
           <li
-            class="weCreateItProject__flag-item flag-portugal"
+            class="weCreateItProject__flag-item weCreateItProject__flag-portugal"
           />
           <li
-            class="weCreateItProject__flag-item flag-katar"
+            class="weCreateItProject__flag-item weCreateItProject__flag-katar"
           />
           <li
-            class="weCreateItProject__flag-item flag-south-africa"
+            class="weCreateItProject__flag-item weCreateItProject__flag-south-africa"
           />
           <li
-            class="weCreateItProject__flag-item flag-netherlands"
+            class="weCreateItProject__flag-item weCreateItProject__flag-netherlands"
           />
         </ul>
       </div>
@@ -1692,14 +1692,11 @@ exports[`Index page renders correctly 1`] = `
     >
       <div>
         <h2
-          class="case-studies__main-title main-title"
+          class="case-studies__main-title"
         >
           
-        Case
-        
-          <span>
-            Studies
-          </span>
+        Case Studies
+      
         </h2>
          
         <!---->
@@ -1724,7 +1721,7 @@ exports[`Index page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title title-md"
+                class="single-project__sub-title"
               >
                 
         Contactless Delivery Service
@@ -1771,7 +1768,22 @@ exports[`Index page renders correctly 1`] = `
              
             <div
               class="single-project__background single-project__background_first-project"
-            />
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="nambafoodBackground"
+                  loading="lazy"
+                  src="[object Object]"
+                  srcset="[object Object] 2x"
+                />
+              </picture>
+            </div>
           </div>
         </a>
         <a
@@ -1790,7 +1802,7 @@ exports[`Index page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title title-md"
+                class="single-project__sub-title"
               >
                 
         EdTech collaboration platform
@@ -1837,7 +1849,22 @@ exports[`Index page renders correctly 1`] = `
              
             <div
               class="single-project__background"
-            />
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="teacherlyBackground"
+                  loading="lazy"
+                  src="[object Object]"
+                  srcset="[object Object] 2x"
+                />
+              </picture>
+            </div>
           </div>
         </a>
         <a
@@ -1856,7 +1883,7 @@ exports[`Index page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title title-md"
+                class="single-project__sub-title"
               >
                 
         Cloud cybersecurity service
@@ -1903,7 +1930,22 @@ exports[`Index page renders correctly 1`] = `
              
             <div
               class="single-project__background single-project__background_guardrails"
-            />
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="guardrailsBackground"
+                  loading="lazy"
+                  src="[object Object]"
+                  srcset="[object Object] 2x"
+                />
+              </picture>
+            </div>
           </div>
         </a>
         <a
@@ -1922,7 +1964,7 @@ exports[`Index page renders correctly 1`] = `
               />
                
               <h4
-                class="single-project__sub-title title-md"
+                class="single-project__sub-title"
               >
                 
         Convenient shuttle bus service
@@ -1973,7 +2015,22 @@ exports[`Index page renders correctly 1`] = `
              
             <div
               class="single-project__background single-project__background_godee"
-            />
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="godeeBackground"
+                  loading="lazy"
+                  src="[object Object]"
+                  srcset="[object Object] 2x"
+                />
+              </picture>
+            </div>
           </div>
         </a>
       </div>
@@ -2008,7 +2065,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title title-md"
+                    class="single-project__sub-title"
                   >
                     
         Contactless Delivery Service
@@ -2055,7 +2112,22 @@ exports[`Index page renders correctly 1`] = `
                  
                 <div
                   class="single-project__background single-project__background_first-project"
-                />
+                >
+                  <picture>
+                    <source
+                      class="multi-image"
+                      srcset="[object Object] ,[object Object] 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="nambafoodBackground"
+                      loading="lazy"
+                      src="[object Object]"
+                      srcset="[object Object] 2x"
+                    />
+                  </picture>
+                </div>
               </div>
             </a>
           </div>
@@ -2078,7 +2150,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title title-md"
+                    class="single-project__sub-title"
                   >
                     
         EdTech collaboration platform
@@ -2125,7 +2197,22 @@ exports[`Index page renders correctly 1`] = `
                  
                 <div
                   class="single-project__background"
-                />
+                >
+                  <picture>
+                    <source
+                      class="multi-image"
+                      srcset="[object Object] ,[object Object] 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="teacherlyBackground"
+                      loading="lazy"
+                      src="[object Object]"
+                      srcset="[object Object] 2x"
+                    />
+                  </picture>
+                </div>
               </div>
             </a>
           </div>
@@ -2148,7 +2235,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title title-md"
+                    class="single-project__sub-title"
                   >
                     
         Cloud cybersecurity service
@@ -2195,7 +2282,22 @@ exports[`Index page renders correctly 1`] = `
                  
                 <div
                   class="single-project__background single-project__background_guardrails"
-                />
+                >
+                  <picture>
+                    <source
+                      class="multi-image"
+                      srcset="[object Object] ,[object Object] 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="guardrailsBackground"
+                      loading="lazy"
+                      src="[object Object]"
+                      srcset="[object Object] 2x"
+                    />
+                  </picture>
+                </div>
               </div>
             </a>
           </div>
@@ -2218,7 +2320,7 @@ exports[`Index page renders correctly 1`] = `
                   />
                    
                   <h4
-                    class="single-project__sub-title title-md"
+                    class="single-project__sub-title"
                   >
                     
         Convenient shuttle bus service
@@ -2269,7 +2371,22 @@ exports[`Index page renders correctly 1`] = `
                  
                 <div
                   class="single-project__background single-project__background_godee"
-                />
+                >
+                  <picture>
+                    <source
+                      class="multi-image"
+                      srcset="[object Object] ,[object Object] 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="godeeBackground"
+                      loading="lazy"
+                      src="[object Object]"
+                      srcset="[object Object] 2x"
+                    />
+                  </picture>
+                </div>
               </div>
             </a>
           </div>
@@ -2487,10 +2604,10 @@ exports[`Index page renders correctly 1`] = `
       </h2>
        
       <div
-        class="customer-testimonials__content-wrap row"
+        class="customer-testimonials__content-wrap"
       >
         <div
-          class="customer-testimonials__widget-col col-xl-8 col-lg-8"
+          class="customer-testimonials__widget-col"
         >
           <client-only-stub>
             <div
@@ -2509,168 +2626,155 @@ exports[`Index page renders correctly 1`] = `
         </div>
          
         <div
-          class="col-xl-4 col-lg-4"
+          class="customer-testimonials__testimonials-list"
         >
           <div
-            class="customer-testimonials__testimonials-list row"
+            class="customer-testimonials__testimonials-item"
           >
+            <blockquote
+              class="customer-testimonials__testimonials-text paragraph-md"
+            >
+              
+            Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.
+          
+            </blockquote>
+             
             <div
-              class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
+              class="customer-testimonials__customer-info"
             >
               <div
-                class="customer-testimonials__testimonials-text paragraph-md"
+                class="customer-testimonials__profile"
               >
-                
-              Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.
-            
+                <img
+                  alt="Atif Mahmud,"
+                  class="customer-testimonials__customer-image"
+                  loading="lazy"
+                  src="[object Object]"
+                />
+                 
+                <span
+                  class="customer-testimonials__customer-name paragraph-sm"
+                >
+                  
+                Atif Mahmud, 
+                  <span>
+                    The UK
+                  </span>
+                </span>
               </div>
                
               <div
-                class="customer-testimonials__customer-info"
+                class="customer-testimonials__project"
               >
-                <div
-                  class="customer-testimonials__profile"
+                <a
+                  href="https://teacherly.io/"
+                  rel="nofollow"
+                  target="blank"
                 >
-                  <img
-                    alt="Atif Mahmud,"
-                    class="customer-testimonials__customer-image"
-                    loading="lazy"
-                    src="[object Object]"
+                  <span
+                    class="customer-testimonials__teacherly"
                   />
-                   
-                  <p
-                    class="customer-testimonials__customer-name paragraph-sm"
-                  >
-                    
-                  Atif Mahmud, 
-                    <br />
-                     The UK
-                
-                  </p>
-                </div>
-                 
-                <div
-                  class="customer-testimonials__project"
-                >
-                  <a
-                    href="https://teacherly.io/"
-                    rel="nofollow"
-                    target="blank"
-                  >
-                    <img
-                      alt="teacherly"
-                      class="customer-testimonials__project-image customer-testimonials__teacherly"
-                      loading="lazy"
-                      src="[object Object]"
-                    />
-                  </a>
-                </div>
+                </a>
               </div>
             </div>
+          </div>
+          <div
+            class="customer-testimonials__testimonials-item"
+          >
+            <blockquote
+              class="customer-testimonials__testimonials-text paragraph-md"
+            >
+              
+            We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.
+          
+            </blockquote>
+             
             <div
-              class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
+              class="customer-testimonials__customer-info"
             >
               <div
-                class="customer-testimonials__testimonials-text paragraph-md"
+                class="customer-testimonials__profile"
               >
-                
-              We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.
-            
+                <img
+                  alt="Daniel Vartanov,"
+                  class="customer-testimonials__customer-image"
+                  loading="lazy"
+                  src="[object Object]"
+                />
+                 
+                <span
+                  class="customer-testimonials__customer-name paragraph-sm"
+                >
+                  
+                Daniel Vartanov, 
+                  <span>
+                    The UK
+                  </span>
+                </span>
               </div>
                
               <div
-                class="customer-testimonials__customer-info"
+                class="customer-testimonials__project"
               >
-                <div
-                  class="customer-testimonials__profile"
+                <a
+                  href="https://veeqo.com/"
+                  rel="nofollow"
+                  target="blank"
                 >
-                  <img
-                    alt="Daniel Vartanov,"
-                    class="customer-testimonials__customer-image"
-                    loading="lazy"
-                    src="[object Object]"
+                  <span
+                    class="customer-testimonials__veeqo"
                   />
-                   
-                  <p
-                    class="customer-testimonials__customer-name paragraph-sm"
-                  >
-                    
-                  Daniel Vartanov, 
-                    <br />
-                     The UK
-                
-                  </p>
-                </div>
-                 
-                <div
-                  class="customer-testimonials__project"
-                >
-                  <a
-                    href="https://veeqo.com/"
-                    rel="nofollow"
-                    target="blank"
-                  >
-                    <img
-                      alt="veeqo"
-                      class="customer-testimonials__project-image customer-testimonials__veeqo"
-                      loading="lazy"
-                      src="[object Object]"
-                    />
-                  </a>
-                </div>
+                </a>
               </div>
             </div>
+          </div>
+          <div
+            class="customer-testimonials__testimonials-item"
+          >
+            <blockquote
+              class="customer-testimonials__testimonials-text paragraph-md"
+            >
+              
+            I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.
+          
+            </blockquote>
+             
             <div
-              class="customer-testimonials__testimonials-item col-xl-12 col-lg-12 col-md-4 col-sm-4"
+              class="customer-testimonials__customer-info"
             >
               <div
-                class="customer-testimonials__testimonials-text paragraph-md"
+                class="customer-testimonials__profile"
               >
-                
-              I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.
-            
+                <img
+                  alt="Stefan Streichsbier,"
+                  class="customer-testimonials__customer-image"
+                  loading="lazy"
+                  src="[object Object]"
+                />
+                 
+                <span
+                  class="customer-testimonials__customer-name paragraph-sm"
+                >
+                  
+                Stefan Streichsbier, 
+                  <span>
+                    Singapore
+                  </span>
+                </span>
               </div>
                
               <div
-                class="customer-testimonials__customer-info"
+                class="customer-testimonials__project"
               >
-                <div
-                  class="customer-testimonials__profile"
+                <a
+                  href="https://guardrails.io/"
+                  rel="nofollow"
+                  target="blank"
                 >
-                  <img
-                    alt="Stefan Streichsbier,"
-                    class="customer-testimonials__customer-image"
-                    loading="lazy"
-                    src="[object Object]"
+                  <span
+                    class="customer-testimonials__guardrails"
                   />
-                   
-                  <p
-                    class="customer-testimonials__customer-name paragraph-sm"
-                  >
-                    
-                  Stefan Streichsbier, 
-                    <br />
-                     Singapore
-                
-                  </p>
-                </div>
-                 
-                <div
-                  class="customer-testimonials__project"
-                >
-                  <a
-                    href="https://guardrails.io/"
-                    rel="nofollow"
-                    target="blank"
-                  >
-                    <img
-                      alt="guardrails"
-                      class="customer-testimonials__project-image customer-testimonials__guardrails"
-                      loading="lazy"
-                      src="[object Object]"
-                    />
-                  </a>
-                </div>
+                </a>
               </div>
             </div>
           </div>

@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItСonsulting component renders correctly 1`] = `
+<section
+  class="it-consulting main-parent-item"
+  id="it-consulting"
+>
+  <div
+    class="container"
+  >
+    <h2
+      class="it-consulting__main-title main-title"
+    >
+      
+      IT Consulting
+    
+    </h2>
+     
+    <div
+      class="it-consulting__flex-wrapper flex-wrapper"
+    >
+      <div
+        class="it-consulting__content-item"
+      >
+        <div
+          class="it-consulting__content-item_wrapper"
+        >
+          <h3
+            class="it-consulting__title title"
+          >
+            Technology Stack
+          </h3>
+           
+          <h4
+            class="it-consulting__sub-title title-md"
+          >
+            Tired of the slow and hard-to-maintain technology that your previous team used?
+          </h4>
+           
+          <p
+            class="it-consulting__paragraph paragraph"
+          >
+            We’ll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="it-consulting__content-item"
+      >
+        <div
+          class="it-consulting__content-item_wrapper"
+        >
+          <h3
+            class="it-consulting__title title"
+          >
+            Process Audit
+          </h3>
+           
+          <h4
+            class="it-consulting__sub-title title-md"
+          >
+            Have to constantly deal with extended deadlines and mess-ups?
+          </h4>
+           
+          <p
+            class="it-consulting__paragraph paragraph"
+          >
+            Your process probably just lacks transparency and reasonable control. We know how to avoid this and check who does what right now.
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="it-consulting__content-item"
+      >
+        <div
+          class="it-consulting__content-item_wrapper"
+        >
+          <h3
+            class="it-consulting__title title"
+          >
+            Team Headcount
+          </h3>
+           
+          <h4
+            class="it-consulting__sub-title title-md"
+          >
+            Is your team too big or too small and therefore causing trouble?
+          </h4>
+           
+          <p
+            class="it-consulting__paragraph paragraph"
+          >
+            Hire good people and get rid of underperformers. Easier said than done, right? Get assessments for the skills and seniority level of your staff. Our positively mad engineers and PMs know how to do this.
+          </p>
+        </div>
+      </div>
+    </div>
+     
+    <button
+      class="ui-button-modal-trigger ui-button-modal-trigger--black"
+    >
+      
+  Get expert advice
+
+    </button>
+  </div>
+</section>
+`;

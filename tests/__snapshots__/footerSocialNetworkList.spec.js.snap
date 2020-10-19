@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`footer social network list renders correctly 1`] = `
+<ul
+  class="footerSocialNetworkList"
+>
+  <li
+    class="footerSocialNetworkList__social-network-link-wrapper"
+  >
+    <a
+      class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-github"
+      href="https://github.com/maddevsio"
+      target="__blank"
+    />
+  </li>
+  <li
+    class="footerSocialNetworkList__social-network-link-wrapper"
+  >
+    <a
+      class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-facebook"
+      href="https://www.facebook.com/maddevsllc"
+      target="__blank"
+    />
+  </li>
+  <li
+    class="footerSocialNetworkList__social-network-link-wrapper"
+  >
+    <a
+      class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-twitter"
+      href="https://twitter.com/MadDevsIO"
+      target="__blank"
+    />
+  </li>
+  <li
+    class="footerSocialNetworkList__social-network-link-wrapper"
+  >
+    <a
+      class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-linkedin"
+      href="https://www.linkedin.com/company/mad-devs"
+      target="__blank"
+    />
+  </li>
+  <li
+    class="footerSocialNetworkList__social-network-link-wrapper"
+  >
+    <a
+      class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-instagram"
+      href="https://www.instagram.com/maddevsio"
+      target="__blank"
+    />
+  </li>
+  <li
+    class="footerSocialNetworkList__social-network-link-wrapper"
+  >
+    <a
+      class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-medium"
+      href="https://blog.maddevs.io"
+      target="__blank"
+    />
+  </li>
+  <li
+    class="footerSocialNetworkList__social-network-link-wrapper"
+  >
+    <a
+      class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-behance"
+      href="https://www.behance.net/maddevs"
+      target="__blank"
+    />
+  </li>
+</ul>
+`;
