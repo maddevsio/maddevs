@@ -5,48 +5,30 @@
         <h2 class="technologies-and_tools__main-title">
           Technologies <span>&</span>&nbsp;<span>Tools</span>
         </h2>
-        <div class="tech_legend">
-          <div v-for="(item, key) in legend" :key="key" class="tech_legend__item"
-               :class="(`legend-${item.value.replace(/\W/g, '').toLowerCase()}`)">
+        <div
+          class="tech_legend"
+          :class="(`tech_legend-${this.activeLegend}`)"
+        >
+          <div
+            v-for="(item, key) in legend"
+            @click="selectLegend(`${item.value.replace(/\W/g, '').toLowerCase()}`)"
+            :key="key"
+            class="tech_legend__item"
+            :class="(`legend-${item.value.replace(/\W/g, '').toLowerCase()}`)"
+          >
             {{ item.value }}
           </div>
         </div>
-        <div class="tech_container">
+        <div
+          class="tech_container"
+          :class="this.activeLegend"
+        >
           <div class="tech_item"
                :key="index"
                :class="(`${item.technology}-${item.value} ${item.technology}`)"
                v-for="(item, index) in technologies"
           >
             <span>{{ item.title }}</span>
-          </div>
-        </div>
-        <div style="display:none;" class="technologies-and_tools__technologies-list">
-          <div class="technologies-and_tools__flex-group">
-            <TechnologiesItem
-              :title="frontend.title"
-              :paragraph="frontend.paragraph"
-              class="technologies-frontend"
-            />
-            <TechnologiesItem
-              :title="backend.title"
-              :paragraph="backend.paragraph"
-              class="technologies-backend"
-            />
-          </div>
-          <div class="technologies-and_tools__flex-group">
-            <div class="technologies-and_tools__sub-flex_group">
-              <TechnologiesItem
-                :title="mobile.title"
-                :paragraph="mobile.paragraph"
-                class="technologies-mobile"
-              />
-              <TechnologiesItem
-                :title="projectManagement.title"
-                :paragraph="projectManagement.paragraph"
-                class="technologies-project-management"
-              />
-            </div>
-            <InfrastructureTechnologiesItem/>
           </div>
         </div>
       </div>
@@ -454,6 +436,8 @@ export default {
           technology: 'qa'
         }
       ],
+      activeLegend: '',
+      // Maybe need to remove after test was updateds
       frontend: {
         title: 'Frontend',
         paragraph: 'We do frontend development at a fast pace, in accordance with ES6 standards. To create easy-to-maintain projects, we use current tools & technologies:'
@@ -471,6 +455,15 @@ export default {
         paragraph: 'Our project managers can provide you with a detailed report on the workload of every team member. We use modern tools and solutions for task tracking, team sync-ups and our daily communication process:'
       }
     };
+  },
+  methods: {
+    selectLegend(e) {
+      if (e === this.activeLegend) {
+        this.activeLegend = '';
+      } else {
+        this.activeLegend = e;
+      }
+    }
   }
 };
 </script>
@@ -517,6 +510,8 @@ $tech_legends: (
     letter-spacing: -0.02em;
     display: flex;
     align-items: center;
+    cursor: pointer;
+    position: relative;
 
     &::before {
       content: "";
@@ -526,6 +521,21 @@ $tech_legends: (
       height: 16px;
       border-radius: 2px;
       margin-right: 8px;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 8px;
+      min-width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 8px;
+      left: 4px;
+      background: #938F95;
+      opacity: 0;
+      transition: opacity .2s;
     }
 
     &:last-child {
@@ -538,6 +548,12 @@ $tech_legends: (
     // selector based on class name
     .legend-#{$name}:before {
       background: $color;
+    }
+
+    &-#{$name} {
+      .legend-#{$name}:after {
+        opacity: 1;
+      }
     }
   }
 
@@ -589,6 +605,15 @@ $tech_legends: (
   @media screen and (max-width: 568px) {
     grid-template-columns: repeat(6, 1fr);
   }
+
+  @each $name, $color in $tech_legends {
+    // selector based on class name
+    &.#{$name} {
+      .tech_item:not(.#{$name}) {
+        opacity: .4;
+      }
+    }
+  }
 }
 
 .tech_item {
@@ -599,6 +624,7 @@ $tech_legends: (
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  transition: opacity .2s linear;
 
   @media screen and (max-width: 976px) {
     height: 74px;
@@ -1281,36 +1307,11 @@ $tech_legends: (
     flex-direction: column;
     justify-content: space-between;
   }
-
-  &__flex-group {
-    display: flex;
-    justify-content: space-between;
-
-    div {
-      max-width: 620px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1475px) {
-  .technologies-and_tools {
-    &__flex-group div {
-      max-width: 585px;
-    }
-  }
 }
 
 @media only screen and (max-width: 1440px) {
   .technologies-and_tools {
     margin-bottom: 5px;
-  }
-}
-
-@media only screen and (max-width: 1420px) {
-  .technologies-and_tools {
-    &__flex-group div {
-      max-width: 505px;
-    }
   }
 }
 
@@ -1320,34 +1321,6 @@ $tech_legends: (
 
     &__main-title {
       margin-bottom: 32px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1180px) {
-  .technologies-and_tools__flex-group div {
-    max-width: 435px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .technologies-and_tools__flex-group div {
-    max-width: 375px;
-  }
-}
-
-@media only screen and (max-width: 940px) {
-  .technologies-and_tools {
-    &__flex-group {
-      flex-direction: column;
-
-      div {
-        max-width: initial;
-      }
-
-      &:first-child {
-        flex-direction: column-reverse;
-      }
     }
   }
 }
