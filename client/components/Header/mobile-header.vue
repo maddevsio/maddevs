@@ -1,5 +1,5 @@
 <template>
-  <div class="mobile-header" :class="{ 'is-open': mobileHeaderIsOpen }">
+  <div class="mobile-header" :class="{ 'mobile-header--is-open': mobileHeaderIsOpen }">
 		<div class="mobile-header__top-line">
 			<router-link to="/" class="mobile-header__header-logo" @click.native="mobileHeaderIsOpen = false">
 				<img src="@/assets/img/common/logo.svg" alt="Logotype">
@@ -13,22 +13,42 @@
 		</div>
 		<perfect-scrollbar class="mobile-header__scrollbar custom-scrollbar container">
 			<div class="mobile-header__content-wrap" v-show="mobileHeaderIsOpen">
-				<nav class="mobile-header__header-routes_links">
-					<router-link exact to="/">About</router-link>
-					<router-link to="/services">Services</router-link>
-					<router-link to="/projects">Projects</router-link>
-					<router-link to="/careers">Careers</router-link>
-					<a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer">Blog</a>
-				</nav>
+				<div class="mobile-header__nav-wrap">
+					<nav class="mobile-header__header-routes_links">
+						<router-link class="mobile-header__nav-link" exact to="/">About</router-link>
+						<router-link class="mobile-header__nav-link" to="/services">Services</router-link>
+						<router-link class="mobile-header__nav-link" to="/projects">Projects</router-link>
+						<router-link class="mobile-header__nav-link" to="/careers">Careers</router-link>
+						<a href="https://blog.maddevs.io/" class="mobile-header__nav-link mobile-header__nav-blog-link" target="_blank" rel="noreferrer">Blog</a>
+					</nav>
+					<div class="mobile-header__contacts mobile-header__large-phone-content">
+						<div class="mobile-header__contact-item mobile-header__contact-item-email">
+							<p class="mobile-header__contact-title">Text us:</p>
+							<a href="mailto:team@maddevs.io" class="mobile-header__contact-link mobile-header__contact-mail">team@maddevs.io</a>
+						</div>
+						<div class="mobile-header__contact-item">
+							<div class="mobile-header__contact-title-wrapper">
+								<div class="mobile-header__contact-title-flag"></div>
+								<p class="mobile-header__contact-title">Call us:</p>
+							</div>
+							<a href="tel:+44 20 3984 8555" class="mobile-header__contact-link mobile-header__contact-phone-number">+44 20 3984 8555</a>
+						</div>
+						<ul class="mobile-header__messengers-list">
+							<li v-for="(messenger, i) in messengers" :key="i" class="mobile-header__messenger-item-wrapper">
+								<a :href="messenger.link" class="mobile-header__messenger-item" :class="`mobile-header__${messenger.className}`" target="__blank"></a>
+								<p class="mobile-header__messenger-name">{{ messenger.name }}</p>
+							</li>
+						</ul>
+					</div>
+				</div>
 				<UIButtonModalTrigger
 					:buttonInnerText="buttonInnerText"
 					:isRed="true"
 					:modalWindowName="modalWindowName"
 					class="mobile-header__modal-trigger-btn"
 				/>
-				<div class="mobile-header__contacts">
-					<footerContacts />
-				</div>
+				<footerSocialNetworkList class="mobile-header__large-phone-content mobile-header__icons-list" />
+				<footerContacts class="mobile-header__small-phone-content" />
 			</div>
 		</perfect-scrollbar>
 	</div>
@@ -36,19 +56,43 @@
 
 <script>
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
+import footerSocialNetworkList from '@/components/Footer/footer-social-network-list';
 import footerContacts from '@/components/Footer/footer-contacts';
 
 export default {
   name: 'mobile-header',
   components: {
     UIButtonModalTrigger,
+    footerSocialNetworkList,
     footerContacts
   },
   data() {
     return {
       buttonInnerText: 'Contact me',
       mobileHeaderIsOpen: false,
-      modalWindowName: 'contact-me-modal'
+      modalWindowName: 'contact-me-modal',
+      messengers: [
+        {
+	        name: 'Messenger',
+	        className: 'messenger-facebook-messenger',
+	        link: 'https://facebook.com/maddevsllc'
+        },
+        {
+	        name: 'WhatsApp',
+	        className: 'messenger-watsapp',
+	        link: 'http://wa.me/996555771481'
+        },
+        {
+          name: 'Telegram',
+          className: 'messenger-telegram',
+          link: 'https://t.me/mun_tamara/'
+        },
+        {
+          name: 'WeChat',
+          className: 'messenger-wechat',
+          link: 'https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc'
+        }
+      ]
     };
   },
   watch: {
@@ -77,20 +121,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/vars';
+	@import '../../assets/styles/vars';
+	@import '../../assets/styles/_messengerIcons';
+	@import '../../assets/styles/_flagsIcons';
 
 	.mobile-header {
     width: 100%;
 		display: none;
-    margin-top: -120px;
+		margin-top: -120px;
+		font-feature-settings: normal;
 
 		&__modal-trigger-btn {
 			width: 100%;
-      height: 65px;
-			font-family: 'Poppins-Bold', sans-serif;;
-			font-size: 27px;
-      color: $text-color--red;
-    	border-color: $border-color--red;
+			height: 60px;
+			margin-top: 5px;
+			margin-bottom: 55px;
+			font-family: 'Poppins-Regular', sans-serif;
+			font-size: 16px;
     }
 
 		&__top-line {
@@ -98,13 +145,28 @@ export default {
 			justify-content: space-between;
 			margin-bottom: 32px;
 			padding: 22px 34px 0;
+
+			@media screen and (max-width: 970px) {
+				padding-left: 28px;
+				padding-right: 28px;
+			}
+
+			@media screen and (max-width: 768px) {
+				padding-left: 18px;
+				padding-right: 18px;
+			}
+
+			@media screen and (max-width: 440px) {
+				padding-left: 16px;
+				padding-right: 16px;
+			}
 		}
 
 		&__header-logo {
       width: 35px;
 			height: 60px;
 
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 768px) {
         width: 28px;
         height: 49px;
       }
@@ -114,24 +176,35 @@ export default {
 			height: 100%;
 		}
 
-    &__header-routes_links {
-			width: 100%;
+		&__nav-wrap,
+		&__header-routes_links {
 			display: flex;
+		}
+
+		&__nav-wrap {
+			justify-content: space-between;
+		}
+
+    &__header-routes_links {
+			width: 40%;
 			flex-direction: column;
 		}
 
-		&__header-routes_links a {
+		&__nav-link {
 			padding: 14px 0;
-			font-size: 36px;
-			font-family: 'Poppins-Bold', sans-serif;;
+			font-size: 32px;
+			font-family: 'Poppins-Regular', sans-serif;
+			font-weight: 600;
+			letter-spacing: -1px;
+			line-height: 38px;
 			text-decoration: none;
 			color: $text-color--white;
-			border-bottom: 1px solid $border-color--grey;
+			border-bottom: 1px solid $header-grey-border-color;
+		}
 
-			&:last-child {
-				padding-bottom: 54px;
-				border-bottom: 0;
-			}
+		&__nav-blog-link {
+			padding-bottom: 54px;
+			border-bottom: 0;
 		}
 
 		&__close,
@@ -142,14 +215,6 @@ export default {
 		&__social-network_links {
 			padding: 32px 0;
 			border-top: 1px solid $footer--border-color--grey-light;
-		}
-
-		&__contacts {
-			padding-bottom: 22px;
-		}
-
-		.footer-contacts {
-			padding-top: 41px;
 		}
 
 		&__toogle-btn {
@@ -166,70 +231,189 @@ export default {
 				color: $text-color--red;
 			}
 		}
-  }
 
-	.is-open {
-		position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-		background: $bgcolor--black;
-
-		.mobile-header__scrollbar {
-			height: calc(100vh - 100px);
-			overflow: auto;
+		&__contacts {
+			margin-top: 12px;	
 		}
-	}
 
-  @media only screen and (max-width: 1024px) {
-		.mobile-header {
+		&__messengers-list {
+			display: grid;
+			grid-template-columns: repeat(2, max-content);
+			grid-column-gap: 60px;
+			grid-row-gap: 6px;
+			margin-top: 53px;
+			margin-left: -7px;
+		}
+
+		&__contact-title-wrapper,
+		&__messenger-item-wrapper {
+			display: flex;
+    	align-items: center;
+		}
+
+		&__contact-link,
+		&__contact-title,
+		&__messenger-name {
+			font-family: 'Poppins-Regular', sans-serif;
+		}
+
+		&__contact-title,
+		&__contact-link {
+			color: $text-color--white;
+		}
+
+		&__contact-item-email {
+			margin-bottom: 33px;
+		}
+
+		&__contact-link {
+			display: inline-block;
+			margin-top: 11px;
+			font-size: 28px;
+			font-weight: 600;
+			line-height: 38px;
+			letter-spacing: -1px;
+			border-bottom: 1px solid $header-red-border-color;
+			text-decoration: none;
+		}
+
+		&__contact-title-flag {
+			display: block;
+			width: 18px;
+			height: 14px;
+			margin-right: 8px;
+			@include flag-uk;
+		}
+
+		&__contact-title, 
+		&__messenger-name {
+			letter-spacing: -0.02em;
+		}
+
+		&__contact-title {
+			font-size: 15px;
+			line-height: 22px;
+		}
+
+		&__messenger-item {
+			display: block;
+			width: 32px;
+			height: 32px;
+			margin-right: 3px;
+		}
+
+		&__messenger-name {
+			font-size: 12px;
+			line-height: 18px;
+			color: $text-color--grey;
+		}
+
+		&__icons-list {
+			margin-bottom: 73px;
+		}
+
+		&__small-phone-content {
+			display: none;
+		}
+
+		&--is-open {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 999;
+			background: $bgcolor--black;
+
+			.mobile-header__scrollbar {
+				height: calc(100vh - 100px);
+				overflow: auto;
+			}
+		}
+
+		&__messenger-facebook-messenger {
+			@include messenger-facebook-messenger;
+		}
+
+		&__messenger-watsapp {
+			@include messenger-watsapp;
+		}
+
+		&__messenger-telegram {
+			@include messenger-telegram;
+		}
+
+		&__messenger-wechat {
+			@include messenger-wechat;
+		}
+
+		@media screen and (max-width: 991px) {
 			display: block;
 			height: 100%;
 			margin-top: 0;
-      box-sizing: border-box;
+			box-sizing: border-box;
 		}
 	}
 
-	@media only screen and (max-width: 970px) {
+	@media screen and (max-width: 640px) {
 		.mobile-header {
-			&__top-line  {
-				padding-left: 28px;
-    		padding-right: 28px;
+    	&__header-routes_links {
+				width: 100%;
+			}
+
+			&__large-phone-content {
+				display: none;
+			}
+
+			&__icons-list {
+				margin-bottom: 0;
+			}
+
+			&__small-phone-content {
+				display: block;
+				margin-bottom: 53px;
+			}
+
+			/deep/ .footer-contacts__head-content {
+				margin-bottom: 62px;
+			}
+
+			/deep/ .footer-contacts__messengers-list {
+				grid-column-gap: 35px;
+			}
+
+			/deep/ .footer-contacts__social-network-list-desktop {
+				display: block;
+			}
+
+			/deep/ .footer-contacts__messenger-name,
+			/deep/ .footer-contacts__contact-title {
+				font-size: 15px;
+			}
+
+			/deep/ .footer-contacts__messenger-item,
+			/deep/ .footerSocialNetworkList__social-network-link {
+				width: 42px;
+				height: 42px;
+			}
+
+			/deep/ .footer-contacts__contact-link {
+				font-size: 28px;
 			}
 		}
-	}
-
-	@media only screen and (max-width: 768px) {
-		.mobile-header {
-			&__top-line  {
-    		padding-left: 18px;
-    		padding-right: 18px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 440px) {
-		.mobile-header {
-			&__top-line {
-				padding-left: 16px;
-    		padding-right: 16px;
-			}
-		}
-	}
-
+  }
+	
 	@media only screen and (max-width: 360px) {
 		.mobile-header {
 			&__header-routes_links {
 				padding-top: 20px;
-
-				a {
-					padding: 10px 0;
-					font-size: 29px;
-
-					&:last-child {
-						padding-bottom: 25px;
-					}
-				}
+			}
+	
+			&__nav-link {
+				padding: 10px 0;
+				font-size: 29px;
+			}
+	
+			&__nav-blog-link {
+				padding-bottom: 25px;
 			}
 		}
 	}

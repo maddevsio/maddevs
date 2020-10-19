@@ -7,7 +7,7 @@
 			</div>
 			<div class="footer-contacts__contact-item">
 				<div class="footer-contacts__contact-title-wrapper">
-					<div class="footer-contacts__contact-title-flag flag-uk"></div>
+					<div class="footer-contacts__contact-title-flag"></div>
 					<p class="footer-contacts__contact-title">Call us:</p>
 				</div>
 				<a href="tel:+44 20 3984 8555" class="footer-contacts__contact-link footer-contacts__contact-phone-number">+44 20 3984 8555</a>
@@ -127,13 +127,11 @@ export default {
 		}
 
 		&__contact-title-flag {
-			&::before {
-				content: '';
-				display: block;
-				width: 18px;
-				height: 14px;
-				margin-right: 8px;
-			}
+			display: block;
+			width: 18px;
+			height: 14px;
+			margin-right: 8px;
+			@include flag-uk;
 		}
 
 		&__contact-title,
