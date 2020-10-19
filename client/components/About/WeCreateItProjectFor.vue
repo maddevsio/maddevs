@@ -73,7 +73,11 @@ export default {
   @import '../../assets/styles/_flagsIcons';
 
   .weCreateItProject {
-    margin: 131px 0;
+    margin: 124px 0 131px;
+
+    @media screen and (max-width: 1024px) {
+      margin: 75px 0 64px;
+    }
 
     &__content-wrapper {
       padding: 40px 45px 45px;
@@ -215,10 +219,8 @@ export default {
   }
 
   @media only screen and (min-width: 1200px) and (max-width: 1270px) {
-    .weCreateItProject {
-      &__paragraph {
-        font-size: 16px;
-      }
+    .weCreateItProject__paragraph {
+      font-size: 16px;
     }
   }
 
@@ -251,11 +253,9 @@ export default {
   }
 
   @media only screen and (max-width: 720px) {
-    .weCreateItProject {
-      &__flags-list {
-        grid-template-columns: repeat(11, max-content);
-        grid-row-gap: 19px;
-      }
+    .weCreateItProject__flags-list {
+      grid-template-columns: repeat(11, max-content);
+      grid-row-gap: 19px;
     }
   }
 
@@ -265,10 +265,8 @@ export default {
       margin-bottom: 45px;
       background-color: $bgcolor--white;
 
-      &__main-title {
-        br {
-          display: block;
-        }
+      &__main-title br {
+        display: block;
       }
 
       &__content-wrapper {
@@ -307,10 +305,8 @@ export default {
   }
 
   @media only screen and (max-width: 345px) {
-    .weCreateItProject {
-      &__paragraph {
-        font-size: 14px;
-      }
+    .weCreateItProject__paragraph {
+      font-size: 14px;
     }
   }
 </style>

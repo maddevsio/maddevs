@@ -3,7 +3,7 @@
     <div class="container">
       <div class="technologies-and_tools__content-wrap">
         <h2 class="technologies-and_tools__main-title">
-          Technologies & Tools
+          Technologies <span>&</span>&nbsp;<span>Tools</span>
         </h2>
         <div class="tech_legend">
           <div v-for="(item, key) in legend" :key="key" class="tech_legend__item"
@@ -492,7 +492,7 @@ $tech_legends: (
 );
 
 @mixin mediaMiddleScreen($property) {
-  @media screen and (max-width: 1024px){
+  @media screen and (max-width: 1024px) {
     order: $property;
   }
 }
@@ -532,6 +532,7 @@ $tech_legends: (
       margin-right: 0;
     }
   }
+
   // loop, to style Legends
   @each $name, $color in $tech_legends {
     // selector based on class name
@@ -542,7 +543,7 @@ $tech_legends: (
 
   @media screen and (max-width: 976px) {
     max-width: 460px;
-    margin: auto auto 45px;
+    margin: auto auto 32px;
     flex-wrap: wrap;
 
     &__item {
@@ -1258,10 +1259,10 @@ $tech_legends: (
 }
 
 .technologies-and_tools {
-  padding-bottom: 38px;
+  margin-bottom: 38px;
 
   &__main-title {
-    padding-bottom: 41px;
+    margin-bottom: 41px;
     color: $text-color--white;
     font-family: 'Poppins-Bold', sans-serif;
     font-size: 62px;
@@ -1270,7 +1271,7 @@ $tech_legends: (
     font-weight: bold;
     letter-spacing: -1px;
 
-    @media screen and (max-width: 834px){
+    @media screen and (max-width: 834px) {
       font-size: 36px;
     }
   }
@@ -1293,64 +1294,50 @@ $tech_legends: (
 
 @media only screen and (max-width: 1475px) {
   .technologies-and_tools {
-    &__flex-group {
-      div {
-        max-width: 585px;
-      }
+    &__flex-group div {
+      max-width: 585px;
     }
   }
 }
 
 @media only screen and (max-width: 1440px) {
   .technologies-and_tools {
-    padding-bottom: 5px;
+    margin-bottom: 5px;
   }
 }
 
 @media only screen and (max-width: 1420px) {
   .technologies-and_tools {
-    &__flex-group {
-      div {
-        max-width: 505px;
-      }
+    &__flex-group div {
+      max-width: 505px;
     }
   }
 }
 
 @media only screen and (max-width: 1280px) {
   .technologies-and_tools {
-    padding-bottom: 37px;
+    margin-bottom: 46px;
 
     &__main-title {
-      padding-bottom: 32px;
+      margin-bottom: 32px;
     }
   }
 }
 
 @media only screen and (max-width: 1180px) {
-  .technologies-and_tools {
-    &__flex-group {
-      div {
-        max-width: 435px;
-      }
-    }
+  .technologies-and_tools__flex-group div {
+    max-width: 435px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .technologies-and_tools {
-    &__flex-group {
-      div {
-        max-width: 375px;
-      }
-    }
+  .technologies-and_tools__flex-group div {
+    max-width: 375px;
   }
 }
 
 @media only screen and (max-width: 940px) {
   .technologies-and_tools {
-    padding-bottom: 65px;
-
     &__flex-group {
       flex-direction: column;
 
@@ -1367,13 +1354,13 @@ $tech_legends: (
 
 @media only screen and (max-width: 430px) {
   .technologies-and_tools {
-    padding-bottom: 35px;
+    margin-bottom: 35px;
   }
 }
 
 @media only screen and (max-width: 350px) {
   .technologies-and_tools {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 

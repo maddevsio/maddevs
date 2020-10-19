@@ -29,14 +29,6 @@
         />
       </div>
     </div>
-    <div class="projects-mobile-slider">
-      <swiper class="swiper" :options="swiperOption">
-        <swiper-slide v-for="(project, i) in projects" :key="i">
-          <SingleProject :project="project" />
-        </swiper-slide>
-      </swiper>
-      <div class="swiper-pagination swiper-pagination--white" slot="pagination"/>
-    </div>
   </section>
 </template>
 
@@ -133,6 +125,10 @@ export default {
 .case-studies {
   padding-top: 90px;
 
+  @media screen and (max-width: 1024px) {
+    padding-top: 5px;
+  }
+
   &--projects {
     .projects-flame-background {
       position: absolute;
@@ -217,54 +213,6 @@ export default {
 
     @media screen and (max-width: 608px) {
       grid-template-columns: repeat(1, 1fr);
-    }
-  }
-
-  .swiper-container {
-    background: $bgcolor--black;
-  }
-
-  .swiper-slide {
-    @media only screen and (max-width: 410px) {
-      .single-project {
-        min-width: 100%;
-      }
-    }
-
-    &:nth-child(3) {
-      .single-project {
-        &::before {
-          content: '';
-          position: absolute;
-          background: url('../../assets/img/Studies/svg/guardrailsSecondaryBg.svg')
-            no-repeat right 50%;
-          width: 100%;
-          height: 310px;
-          background-size: contain;
-          z-index: -44;
-          top: 0;
-          right: 0;
-          mix-blend-mode: overlay;
-          opacity: 0.68;
-        }
-      }
-    }
-
-    &:last-child {
-      .single-project {
-        &::after {
-          content: '';
-          position: absolute;
-          background-image: url('../../assets/img/Studies/svg/godeeSecondaryBg.svg');
-          background-repeat: no-repeat;
-          width: 100%;
-          height: 100%;
-          background-size: contain;
-          z-index: -44;
-          top: 0;
-          right: 0;
-        }
-      }
     }
   }
 }
