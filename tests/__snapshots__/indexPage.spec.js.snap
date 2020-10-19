@@ -1738,7 +1738,7 @@ exports[`Index page renders correctly 1`] = `
                 class="single-project__paragraph paragraph"
               >
                 
-        Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.
+        Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.
       
               </p>
                
@@ -2082,7 +2082,7 @@ exports[`Index page renders correctly 1`] = `
                     class="single-project__paragraph paragraph"
                   >
                     
-        Mad Devs created the Namba Food delivery service from scratch. The apps for couriers, end users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for food and other goods.
+        Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.
       
                   </p>
                    
