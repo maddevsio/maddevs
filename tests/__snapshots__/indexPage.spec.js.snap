@@ -3077,6 +3077,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/marat-bediev-a973171b/"
+            rel="nofollow"
             target="blank"
           />
         </div>
@@ -3122,6 +3123,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/tamara-mun/"
+            rel="nofollow"
             target="blank"
           />
         </div>
@@ -3167,6 +3169,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/andrew-minkin-700a2523/"
+            rel="nofollow"
             target="blank"
           />
         </div>
@@ -3212,6 +3215,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/nakylai-taiirova-28bab859/"
+            rel="nofollow"
             target="blank"
           />
         </div>
@@ -3257,6 +3261,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/daria-utesheva-47804198/"
+            rel="nofollow"
             target="blank"
           />
         </div>
@@ -3302,6 +3307,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/nuradil-alymkulov/"
+            rel="nofollow"
             target="blank"
           />
         </div>
@@ -3347,6 +3353,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/alice-jang-b235b240/"
+            rel="nofollow"
             target="blank"
           />
         </div>
@@ -3392,6 +3399,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             class="meet-our_experts__expert-linkedin-link"
             href="https://www.linkedin.com/in/earthurkg/"
+            rel="nofollow"
             target="blank"
           />
         </div>
