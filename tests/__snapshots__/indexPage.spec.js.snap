@@ -272,8 +272,14 @@ exports[`Index page renders correctly 1`] = `
           class="technologies-and_tools__main-title"
         >
           
-        Technologies & Tools
-      
+        Technologies 
+          <span>
+            &
+          </span>
+           
+          <span>
+            Tools
+          </span>
         </h2>
          
         <div

@@ -29,6 +29,14 @@
         />
       </div>
     </div>
+    <div class="projects-mobile-slider">
+      <swiper class="swiper" :options="swiperOption">
+        <swiper-slide v-for="(project, i) in projects" :key="i">
+          <SingleProject :project="project" />
+        </swiper-slide>
+      </swiper>
+      <div class="swiper-pagination swiper-pagination--white" slot="pagination"/>
+    </div>
   </section>
 </template>
 
