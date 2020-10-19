@@ -67,5 +67,14 @@ exports[`footer social network list renders correctly 1`] = `
       target="__blank"
     />
   </li>
+  <li
+    class="footerSocialNetworkList__social-network-link-wrapper"
+  >
+    <a
+      class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-dev"
+      href="https://dev.to/maddevs"
+      target="__blank"
+    />
+  </li>
 </ul>
 `;
