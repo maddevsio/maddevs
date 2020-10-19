@@ -39,6 +39,10 @@ export default {
         {
           className: 'social-network-behance',
           link: 'https://www.behance.net/maddevs'
+        },
+        {
+          className: 'social-network-dev',
+          link: 'https://dev.to/maddevs'
         }
       ]
     };
@@ -50,24 +54,30 @@ export default {
   @import '../../assets/styles/vars';
   @import '../../assets/styles/_socialNetworkIcons';
 
+  @mixin social-network-list-grid {
+    .footerSocialNetworkList {
+      display: grid;
+      grid-template-columns: repeat(4, max-content);
+
+      &__social-network-link-wrapper {
+        margin: 0 -8px;
+      }
+    }
+  }
+
   .footerSocialNetworkList {
     display: flex;
     justify-content: space-between;
-    
-    &__social-network-link-wrapper {
-      &:first-child {
-        margin-left: -8px;
-      }
 
-      &:last-child {
-        margin-right: -8px;
-      }
-    }
-    
     &__social-network-link {
       display: block;
       width: 42px;
       height: 42px;
+
+      @media screen and (max-width: 1320px) {
+        width: 36px;
+        height: 36px;
+      }
     }
 
     &__social-network-github {
@@ -97,14 +107,17 @@ export default {
     &__social-network-behance {
       @include social-network-behance;
     }
+
+    &__social-network-dev {
+      @include social-network-dev;
+    }
   }
 
-  @media only screen and (max-width: 1320px) {
-    .footerSocialNetworkList {
-      &__social-network-link {
-        width: 36px;
-        height: 36px;
-      }
-    }
+  @media screen and (min-width: 991px) and (max-width: 1200px) {
+    @include social-network-list-grid;
+  }
+
+  @media screen and (max-width: 640px) {
+    @include social-network-list-grid;
   }
 </style>

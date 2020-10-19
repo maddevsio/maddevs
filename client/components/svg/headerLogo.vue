@@ -11,11 +11,30 @@
 
 <script>
 export default {
-  name: 'main-header',
-  props: {
-    headerLogoTextDisplayState: {
-      type: Boolean,
-      default: true
+  name: 'header-logo',
+  data() {
+    return {
+      headerLogoTextDisplayState: false
+    };
+  },
+  watch: {
+    '$route'() {
+      this.headerLogoTextDisplayState = false;
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+    this.handleScroll();
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      if(window.pageYOffset >= 100)
+        this.headerLogoTextDisplayState = true;
+      else
+        this.headerLogoTextDisplayState = false;
     }
   }
 };

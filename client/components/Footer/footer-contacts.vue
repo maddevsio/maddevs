@@ -7,7 +7,7 @@
 			</div>
 			<div class="footer-contacts__contact-item">
 				<div class="footer-contacts__contact-title-wrapper">
-					<div class="footer-contacts__contact-title-flag flag-uk"></div>
+					<div class="footer-contacts__contact-title-flag"></div>
 					<p class="footer-contacts__contact-title">Call us:</p>
 				</div>
 				<a href="tel:+44 20 3984 8555" class="footer-contacts__contact-link footer-contacts__contact-phone-number">+44 20 3984 8555</a>
@@ -15,9 +15,11 @@
 		</div>
 		<div class="footer-contacts__lists-wrapper">
 			<ul class="footer-contacts__messengers-list">
-				<li v-for="(messenger, i) in messengers" :key="i" class="footer-contacts__messenger-item-wrapper">
-					<a :href="messenger.link" class="footer-contacts__messenger-item" :class="`footer-contacts__${messenger.className}`" target="__blank"></a>
-					<p class="footer-contacts__messenger-name">{{ messenger.name }}</p>
+				<li v-for="(messenger, i) in messengers" :key="i">
+					<a :href="messenger.link" target="__blank" class="footer-contacts__messenger-item-wrapper">
+						<span class="footer-contacts__messenger-item" :class="`footer-contacts__${messenger.className}`" />
+						<p class="footer-contacts__messenger-name">{{ messenger.name }}</p>
+					</a>
 				</li>
 			</ul>
 			<div class="footer-contacts__social-network-list-desktop">
@@ -127,13 +129,11 @@ export default {
 		}
 
 		&__contact-title-flag {
-			&::before {
-				content: '';
-				display: block;
-				width: 18px;
-				height: 14px;
-				margin-right: 8px;
-			}
+			display: block;
+			width: 18px;
+			height: 14px;
+			margin-right: 8px;
+			@include flag-uk;
 		}
 
 		&__contact-title,
@@ -159,6 +159,7 @@ export default {
 
 		&__messenger-item-wrapper {
 			align-items: center;
+			text-decoration: none;
 
 			&:first-child {
 				margin-left: -8px;

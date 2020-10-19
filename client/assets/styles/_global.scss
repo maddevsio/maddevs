@@ -584,12 +584,6 @@
     font-size: 19px;
   }
 
-  .banner-container {
-    .banner-content {
-      padding-top: 0;
-    }
-  }
-
   .paragraph-lg {
     letter-spacing: 0.02em;
   }
@@ -601,6 +595,14 @@
 
   .paragraph-sm {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .banner-container {
+    .banner-content {
+      padding-top: 85px;
+    }
   }
 }
 
