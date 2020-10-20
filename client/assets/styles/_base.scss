@@ -34,6 +34,8 @@ main {
 * {
   outline: none !important;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  text-rendering:optimizeLegibility !important;
 
   &::-moz-focus-outer,
   &::-moz-focus-inner {
