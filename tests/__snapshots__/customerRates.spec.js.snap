@@ -8,25 +8,21 @@ exports[`Customer Rates renders correctly 1`] = `
   <div
     class="container"
   >
-    <div
-      class="customer-rates__main-title-wrapper"
+    <h2
+      class="customer-rates__main-title"
     >
-      <h2
-        class="customer-rates__main-title"
-      >
-        <span>
-          Fantastic
-        </span>
-         
-        <br />
-         customer rates:
-      
-      </h2>
+      <span>
+        Fantastic
+      </span>
        
-      <div
+      <br />
+       customer   
+      <span
         class="customer-rates__title-icon"
-      />
-    </div>
+      >
+        rates:
+      </span>
+    </h2>
      
     <div
       class="customer-rates__top-row row"

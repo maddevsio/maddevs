@@ -2,7 +2,7 @@
   <section id="technologies-and-tools" class="technologies-and_tools">
     <div class="container">
       <div class="technologies-and_tools__content-wrap">
-        <h2 class="technologies-and_tools__main-title">
+        <h2 class="technologies-and_tools__main-title h2_title">
           Technologies <span>&</span>&nbsp;<span>Tools</span>
         </h2>
         <div
@@ -1288,18 +1288,11 @@ $tech_legends: (
   margin-bottom: 38px;
 
   &__main-title {
+    @include h2_title;
+
     margin-bottom: 41px;
     color: $text-color--white;
-    font-family: 'Poppins-Bold', sans-serif;
-    font-size: 62px;
-    line-height: 120%;
     text-align: center;
-    font-weight: bold;
-    letter-spacing: -1px;
-
-    @media screen and (max-width: 834px) {
-      font-size: 36px;
-    }
   }
 
   &__technologies-list {

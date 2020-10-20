@@ -8,11 +8,11 @@ exports[`Meet Our Experts renders correctly 1`] = `
   <div
     class="container"
   >
-    <h2
+    <h3
       class="meet-our_experts__main-title"
     >
       Meet our experts
-    </h2>
+    </h3>
      
     <div
       class="meet-our_experts__experts-list row"

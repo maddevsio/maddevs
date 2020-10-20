@@ -40,6 +40,7 @@ export default {
         margin-bottom: 10px;
         font-size: 18px;
         font-family: 'Poppins-Bold', sans-serif;
+        font-weight: 700;
         color: $text-color--white;
       }
 

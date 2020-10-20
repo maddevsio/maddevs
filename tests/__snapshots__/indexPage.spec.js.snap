@@ -269,7 +269,7 @@ exports[`Index page renders correctly 1`] = `
         class="technologies-and_tools__content-wrap"
       >
         <h2
-          class="technologies-and_tools__main-title"
+          class="technologies-and_tools__main-title h2_title"
         >
           
         Technologies 
@@ -1768,7 +1768,7 @@ exports[`Index page renders correctly 1`] = `
       class="container"
     >
       <h2
-        class="customer-testimonials__title title"
+        class="customer-testimonials__title"
       >
         
       Customer Testimonials
@@ -1962,25 +1962,21 @@ exports[`Index page renders correctly 1`] = `
     <div
       class="container"
     >
-      <div
-        class="customer-rates__main-title-wrapper"
+      <h2
+        class="customer-rates__main-title"
       >
-        <h2
-          class="customer-rates__main-title"
-        >
-          <span>
-            Fantastic
-          </span>
-           
-          <br />
-           customer rates:
-      
-        </h2>
+        <span>
+          Fantastic
+        </span>
          
-        <div
+        <br />
+         customer   
+        <span
           class="customer-rates__title-icon"
-        />
-      </div>
+        >
+          rates:
+        </span>
+      </h2>
        
       <div
         class="customer-rates__top-row row"
@@ -2192,11 +2188,11 @@ exports[`Index page renders correctly 1`] = `
     <div
       class="container"
     >
-      <h2
+      <h3
         class="meet-our_experts__main-title"
       >
         Meet our experts
-      </h2>
+      </h3>
        
       <div
         class="meet-our_experts__experts-list row"

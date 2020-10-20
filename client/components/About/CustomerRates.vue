@@ -1,12 +1,9 @@
 <template>
   <section id="customer-rates" class="customer-rates">
     <div class="container">
-      <div class="customer-rates__main-title-wrapper">
-        <h2 class="customer-rates__main-title">
-          <span>Fantastic</span> <br> customer rates:
-        </h2>
-        <div class="customer-rates__title-icon" />
-      </div>
+      <h2 class="customer-rates__main-title">
+        <span>Fantastic</span> <br> customer&nbsp;&nbsp;&nbsp;<span class="customer-rates__title-icon">rates:</span>
+      </h2>
       <div class="customer-rates__top-row row">
         <div class="col-xl-4 col-md-4">
           <div class="customer-rates__rates-block customer-rates__rates-block-top-row">
@@ -82,23 +79,34 @@ export default {
   @import '../../assets/styles/_customerRatesIcons';
 
   .customer-rates {
-    padding: 100px 0;
+    padding: 86px 0 102px;
     background-color: $bgcolor--white-darken;
+
+    @media only screen and (max-width: 1199px) {
+      padding: 86px 0 76px;
+    }
+
+    @media screen and (max-width: 834px) {
+      padding: 52px 0 76px;
+    }
 
     &__main-title-wrapper {
       display: flex;
       justify-content: center;
     }
 
-    &__main-title,
-    &__section-sub-title,
-    &__number-item {
-      font-family: 'Poppins-Bold', sans-serif;
+    &__main-title {
+      @include h2_title;
+      margin-left: 90px;
     }
 
-    &__main-title,
     &__section-sub-title {
-      letter-spacing: -1px;
+      @include h3_title;
+    }
+
+    &__number-item {
+      font-family: 'Poppins-Bold', sans-serif;
+      font-weight: 700;
     }
 
     &__main-title,
@@ -115,8 +123,6 @@ export default {
 
     &__main-title {
       margin-bottom: 36px;
-      font-size: 62px;
-      line-height: 74px;
 
       br {
         display: none;
@@ -129,8 +135,6 @@ export default {
 
     &__section-sub-title {
       margin-bottom: 22px;
-      font-size: 40px;
-      line-height: 48px;
     }
 
     &__rates-block {
@@ -179,13 +183,27 @@ export default {
     }
 
     &__title-icon {
-      width: 220px;
-      height: 105px;
-      display: block;
-      margin-top: -23px;
-      margin-left: -262px;
+      position: relative;
       z-index: 1;
-      @include title-icon;
+
+      &::after {
+        content: '';
+        @include title-icon;
+        top: -20px;
+        right: 90px;
+        position: absolute;
+        z-index: 12;
+        width: 220px;
+        height: 105px;
+        display: block;
+
+        @media screen and (max-width: 834px) {
+          width: 103px;
+          height: 50px;
+          top: -2px;
+          right: 43px;
+        }
+      }
     }
 
     &__line-break {
@@ -209,21 +227,11 @@ export default {
   @media only screen and (max-width: 1199px) {
     .customer-rates {
       &__main-title {
-        margin-bottom: 55px;
-
-        br {
-          display: block;
-        }
+        margin-bottom: 28px;
       }
 
-      &__title-icon {
-        width: 184px;
-        margin-top: 50px;
-        margin-left: -262px;
-      }
-      
       &__top-row {
-        margin-bottom: 68px;
+        margin-bottom: 76px;
       }
 
       &__rates-block-bottom-row {
@@ -241,31 +249,31 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 860px) {
+  @media screen and (max-width: 965px) {
+    .customer-rates__main-title br {
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: 834px) {
     .customer-rates {
       padding: 67px 0;
 
       &__main-title {
-        font-size: 35px;
-        line-height: 43px;
         margin-bottom: 40px;
-      }
 
-      &__title-icon {
-        width: 140px;
-        margin-top: 10px;
-        margin-left: -170px;
+        br {
+          display: none;
+        }
       }
 
       &__section-sub-title {
-        font-size: 30px;
-        line-height: 36px;
         margin-bottom: 19px;
       }
 
       &__rates-block {
         height: 103px;
-        padding: 20px 4px;
+        padding: 20px 10px;
       }
 
       &__number-item-top-row {
@@ -284,11 +292,6 @@ export default {
     .customer-rates {
       &__main-title {
         margin-bottom: 32px;
-      }
-
-      &__title-icon {
-        width: 90px;
-        margin-left: -123px;
       }
 
       &__top-row {
@@ -313,17 +316,18 @@ export default {
     }
   }
 
+  @media screen and (max-width: 534px) {
+    .customer-rates__main-title br {
+      display: block;
+    }
+  }
+
   @media only screen and (max-width: 540px) {
     .customer-rates {
       padding: 45px 0;
 
-      &__title-icon {
-        margin: 15px 55px 0 -145px;
-      }
-
       &__section-sub-title {
         margin-bottom: 11px;
-        line-height: 43px;
       }
 
       &__number-item-top-row {

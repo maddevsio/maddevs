@@ -111,11 +111,9 @@ export default {
     }
 
     &__main-title {
+      @include h2_title;
+
       margin-bottom: 39px;
-      font-size: 62px;
-      font-family: 'Poppins-Bold', sans-serif;
-      line-height: 74px;
-      letter-spacing: -1px;
 
       br {
         display: none;
