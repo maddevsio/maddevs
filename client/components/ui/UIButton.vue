@@ -44,7 +44,8 @@ export default {
     background-color: $bgcolor--red;
     color: $text-color--white;
     font-size: 21px;
-    font-family: 'Poppins-Bold', sans-serif;;
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 700;
     letter-spacing: -0.03em;
     box-shadow: none;
     transition: 0.2s;

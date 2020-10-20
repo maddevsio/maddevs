@@ -136,7 +136,8 @@ export default {
 
     &__expert-name {
       font-size: 17px;
-      font-family: 'Poppins-Bold';
+      font-family: 'Poppins-Bold', sans-serif;
+      font-weight: 700;
     }
 
     &__expert-position {

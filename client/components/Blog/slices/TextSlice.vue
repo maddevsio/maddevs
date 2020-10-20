@@ -61,6 +61,7 @@ export default {
     /deep/ strong,
     /deep/ p {
       font-family: 'Poppins-Bold', sans-serif;
+      font-weight: 700;
     }
 
     /deep/ p,

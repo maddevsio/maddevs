@@ -34,6 +34,7 @@ export default {
       color: $text-color--red;
       letter-spacing: -1px;
       font-family: 'Poppins-Bold', sans-serif;;
+      font-weight: 700;
     }
 
     &__info-text {

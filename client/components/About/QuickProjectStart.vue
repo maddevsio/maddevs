@@ -128,6 +128,7 @@ export default {
 
     &__title {
       font-family: 'Poppins-Bold', sans-serif;
+      font-weight: 700;
       font-size: 32px;
       line-height: 32px;
       letter-spacing: -1px;

@@ -2,7 +2,7 @@
   <section id="customer-rates" class="customer-rates">
     <div class="container">
       <h2 class="customer-rates__main-title">
-        <span>Fantastic</span> <br> customer <span class="customer-rates__title-icon">rates:</span>
+        <span>Fantastic</span> <br> customer&nbsp;&nbsp;&nbsp;<span class="customer-rates__title-icon">rates:</span>
       </h2>
       <div class="customer-rates__top-row row">
         <div class="col-xl-4 col-md-4">
@@ -97,6 +97,7 @@ export default {
 
     &__main-title {
       @include h2_title;
+      margin-left: 90px;
     }
 
     &__section-sub-title {
@@ -105,6 +106,7 @@ export default {
 
     &__number-item {
       font-family: 'Poppins-Bold', sans-serif;
+      font-weight: 700;
     }
 
     &__main-title,
@@ -188,7 +190,7 @@ export default {
         content: '';
         @include title-icon;
         top: -20px;
-        right: 32px;
+        right: 90px;
         position: absolute;
         z-index: 12;
         width: 220px;

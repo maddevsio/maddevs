@@ -275,10 +275,10 @@ export default {
     font-style: normal;
     font-size: 36px;
     line-height: 99%;
-    margin: 0 auto;
-    font-family: 'Poppins-Bold', sans-serif;;
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 700;
     color: $text-color--red;
-    margin-top: 32px;
+    margin: 32px auto 0;
     border-bottom: 1px solid $border-color--red;
     cursor: pointer;
     text-decoration: none;

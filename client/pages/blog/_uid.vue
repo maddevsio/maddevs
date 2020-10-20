@@ -278,6 +278,7 @@ export default {
       margin-bottom: 30px;
       font-size: 32px;
       font-family: 'Poppins-Bold', sans-serif;
+      font-weight: 700;
       color: $text-color--white;
     }
 
@@ -342,6 +343,7 @@ export default {
       margin-bottom: -5px;
       font-size: 1.9em;
       font-family: 'Poppins-Bold', sans-serif;
+      font-weight: 700;
     }
 
     &__table-of-content-list-item {
