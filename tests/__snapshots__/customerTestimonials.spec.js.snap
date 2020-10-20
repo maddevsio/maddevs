@@ -9,7 +9,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
     class="container"
   >
     <h2
-      class="customer-testimonials__title title"
+      class="customer-testimonials__title"
     >
       
       Customer Testimonials

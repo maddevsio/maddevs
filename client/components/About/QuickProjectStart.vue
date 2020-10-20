@@ -77,18 +77,12 @@ export default {
     text-align: center;
 
     &__main-title {
+      @include h2_title;
+
       margin-bottom: 37px;
-      font-size: 62px;
-      line-height: 74px;
       color: $text-color--white;
     }
 
-    &__main-title,
-    &__title {
-      font-family: 'Poppins-Bold';
-      letter-spacing: -1px;
-    }
- 
     &__content-list {
       justify-content: space-between;
     }
@@ -133,22 +127,24 @@ export default {
     }
 
     &__title {
+      font-family: 'Poppins-Bold', sans-serif;
       font-size: 32px;
-      font-family: 'Poppins-Bold';
       line-height: 32px;
+      letter-spacing: -1px;
       text-transform: capitalize;
       color: $text-color--red;
     }
 
     &__description,
     &__button {
-      font-family: 'Poppins-Regular';
+      font-family: 'Poppins-Regular', sans-serif;
     }
 
     &__description {
       margin-top: 8px;
-      font-size: 15px;
+      font-size: 14px;
       line-height: 22px;
+      text-align: center;
       letter-spacing: -0.02em;
       color: $quick-project-description-color;
     }

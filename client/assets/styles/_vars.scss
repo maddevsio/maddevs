@@ -21,7 +21,7 @@ $text-color--grey: #96969c;
 $text-color--grey-light: #f2f2f2;
 $text-color--red: #ec1c24;
 $text-color--red-opacity: rgba(236, 28, 36, 0.5);
-$text-color--grey-form-placeholder: #6E6E73; 
+$text-color--grey-form-placeholder: #6E6E73;
 $text-stroke--white: 1.5px #f2f2f2;
 $text-stroke--red: 1.5px #ec1c24;
 $text-stroke--black: 1.5px #000;
@@ -90,4 +90,28 @@ $slider-dots-bg-color-white: #eff3f6;
 $slider-dots-bg-color-black: #000;
 $quick-project-description-color: #c5c3cc;
 
+@mixin h2_title {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-size: 62px;
+  line-height: 120%;
+  letter-spacing: -1px;
 
+  @media screen and (max-width: 834px) {
+    font-size: 36px;
+  }
+}
+
+@mixin h3_title {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -1px;
+
+  @media screen and (max-width: 834px) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 578px) {
+    font-size: 36px;
+  }
+}
