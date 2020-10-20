@@ -12,7 +12,7 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
       class="technologies-and_tools__content-wrap"
     >
       <h2
-        class="technologies-and_tools__main-title h2_title"
+        class="technologies-and_tools__main-title"
       >
         
         Technologies 

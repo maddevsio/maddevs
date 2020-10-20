@@ -131,16 +131,8 @@ export default {
 }
 
 .case-studies {
-  padding-top: 90px;
-
-  @media screen and (max-width: 1024px) {
-    padding-top: 5px;
-  }
-
-  &--projects {
-    .projects-flame-background {
-      position: absolute;
-    }
+  &--projects .projects-flame-background {
+    position: absolute;
   }
 
   .container {
@@ -149,7 +141,6 @@ export default {
 
   &__main-title {
     @include h2_title;
-
     padding-bottom: 30px;
     color: $text-color--red;
     text-align: center;

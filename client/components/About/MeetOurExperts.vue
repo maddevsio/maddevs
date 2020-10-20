@@ -91,10 +91,16 @@ export default {
     padding-bottom: 100px;
     background-color: $bgcolor--white-darken;
 
+    @media screen and (max-width: 834px) {
+      padding-bottom: 76px;
+    }
+
+    @media screen and (max-width: 578px) {
+      padding-bottom: 67px;
+    }
+
     &__main-title {
       @include h3_title;
-
-      margin-bottom: 22px;
       text-align: center;
       color: $text-color--black-lighter;
     }
