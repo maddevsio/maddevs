@@ -1,26 +1,22 @@
 <template>
-  <section id="remote-tech-staff" class="remote-tech-staff main-parent-item">
+  <section id="remote-tech-staff" class="remoteTechStaff main-parent-item">
     <div class="container">
-      <div class="remote-tech-staff__content-wrapper">
-        <h2 class="remote-tech-staff__main-title main-title">Remote Tech Staff</h2>
-        <div class="remote-tech-staff__flex-wrapper flex-wrapper">
-          <RemoteTechStaffContent 
-            :title="teams.title" 
-            :subTitle="teams.subTitle" 
-            :paragraph="teams.paragraph"
-            :buttonInnerText="teams.buttonInnerText"
-            :modalWindowName="teams.modalWindowName"
-            class="teams"
-          />
-          <RemoteTechStaffContent 
-            :title="individuals.title" 
-            :subTitle="individuals.subTitle" 
-            :paragraph="individuals.paragraph"
-            :buttonInnerText="individuals.buttonInnerText"
-            :modalWindowName="individuals.modalWindowName"
-            class="individuals"
-          />
-        </div>
+      <h2 class="remoteTechStaff__main-title">Remote Tech Staff</h2>
+      <div class="remoteTechStaff__tech-staff-items">
+        <RemoteTechStaffContent 
+          :title="teams.title" 
+          :subTitle="teams.subTitle" 
+          :paragraph="teams.paragraph"
+          :buttonInnerText="teams.buttonInnerText"
+          :modalWindowName="teams.modalWindowName"
+        />
+        <RemoteTechStaffContent 
+          :title="individuals.title" 
+          :subTitle="individuals.subTitle" 
+          :paragraph="individuals.paragraph"
+          :buttonInnerText="individuals.buttonInnerText"
+          :modalWindowName="individuals.modalWindowName"
+        />
       </div>
     </div>
   </section>
@@ -58,70 +54,25 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
 
-  .remote-tech-staff {
-    padding: 211px 0 105px;
+  .remoteTechStaff {
+    padding: 130px 0 65px;
     background-color: $bgcolor--black;
 
     &__main-title {
-      padding-bottom: 65px;
+      margin-bottom: 63px;
+      font-size: 62px;
+      font-family: 'Poppins-Bold';
+      line-height: 74px;
+      letter-spacing: -1px;
       color: $text-color--red;
     }
-  }
 
-  @media only screen and (min-width: 1024px) {
-    .remote-tech-staff {
-      /deep/.teams {
-        .remote-tech-staff__sub-title.sub-title {
-          margin-right: 10px;
-        }
-      }
-    }
-  }
+    &__tech-staff-items {
+      display: flex;
+      justify-content: space-between;
 
-  @media only screen and (max-width: 878px) {
-    .remote-tech-staff {
-      &__flex-wrapper {
+      @media only screen and (max-width: 1023px) {
         flex-direction: column;
-      }
-
-      &__outsourcing-content {
-        max-width: 100%;
-      }
-    }
-
-    .individuals {
-      padding-top: 104px;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .remote-tech-staff {
-      padding: 140px 0 70px;
-
-      &__main-title {
-        padding-bottom: 39px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 576px) {
-    .remote-tech-staff {
-      padding: 120px 0 105px;
-    }
-  }
-
-  @media only screen and (max-width: 520px) {
-    .remote-tech-staff {
-      padding: 144px 0 0 0;
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .remote-tech-staff {
-      padding: 86px 0 20px;
-
-      &__main-title {
-        padding-bottom: 26px;
       }
     }
   }

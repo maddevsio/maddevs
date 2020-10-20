@@ -1,0 +1,32 @@
+<template>
+  <h4 class="item-sub-title">{{ itemSubTitle }}</h4>
+</template>
+
+<script>
+export default {
+  name: 'UIItemSubTitle',
+  props: {
+    itemSubTitle: {
+      type: String,
+      default: ''
+    }
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+  @import '../../../assets/styles/vars';
+
+  .item-sub-title {
+    font-size: 23px;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-weight: 600;
+    line-height: 136%;
+    letter-spacing: -1px;
+    color: $remote-tech-staff-sub-title-grey;
+
+    @media screen and (max-width: 1280px) {
+      font-size: 21px;
+    }
+  }
+</style>
