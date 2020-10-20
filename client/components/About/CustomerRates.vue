@@ -84,7 +84,6 @@ export default {
   .customer-rates {
     padding: 100px 0;
     background-color: $bgcolor--white-darken;
-    font-feature-settings: normal;
 
     &__main-title-wrapper {
       display: flex;

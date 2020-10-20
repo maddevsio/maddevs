@@ -132,7 +132,6 @@ export default {
 		height: 48px;
 		display: none;
 		position: fixed;
-		font-feature-settings: normal;
 		z-index: 2;
 		background-color: $bgcolor--black ;
 
