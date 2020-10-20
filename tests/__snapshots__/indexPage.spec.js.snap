@@ -1970,7 +1970,7 @@ exports[`Index page renders correctly 1`] = `
         </span>
          
         <br />
-         customer 
+         customer   
         <span
           class="customer-rates__title-icon"
         >
