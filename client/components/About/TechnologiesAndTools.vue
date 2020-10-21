@@ -2,7 +2,7 @@
   <section id="technologies-and-tools" class="technologies-and_tools">
     <div class="container">
       <div class="technologies-and_tools__content-wrap">
-        <h2 class="technologies-and_tools__main-title h2_title">
+        <h2 class="technologies-and_tools__main-title">
           Technologies <span>&</span>&nbsp;<span>Tools</span>
         </h2>
         <div
@@ -559,7 +559,7 @@ $tech_legends: (
 
   @media screen and (max-width: 976px) {
     max-width: 460px;
-    margin: auto auto 32px;
+    margin: auto auto 10px;
     flex-wrap: wrap;
 
     &__item {
@@ -1285,12 +1285,9 @@ $tech_legends: (
 }
 
 .technologies-and_tools {
-  margin-bottom: 38px;
-
   &__main-title {
     @include h2_title;
 
-    margin-bottom: 41px;
     color: $text-color--white;
     text-align: center;
   }
@@ -1301,33 +1298,4 @@ $tech_legends: (
     justify-content: space-between;
   }
 }
-
-@media only screen and (max-width: 1440px) {
-  .technologies-and_tools {
-    margin-bottom: 5px;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  .technologies-and_tools {
-    margin-bottom: 46px;
-
-    &__main-title {
-      margin-bottom: 32px;
-    }
-  }
-}
-
-@media only screen and (max-width: 430px) {
-  .technologies-and_tools {
-    margin-bottom: 35px;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .technologies-and_tools {
-    margin-bottom: 0;
-  }
-}
-
 </style>
