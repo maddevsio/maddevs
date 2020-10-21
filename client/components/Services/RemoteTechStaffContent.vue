@@ -78,7 +78,6 @@ export default {
       &:hover {
         .remoteTechStaffContent__item-icon {
           opacity: 1;
-          transition: 0.4s;
         }
       }
     }
@@ -106,6 +105,7 @@ export default {
       display: block;
       position: absolute;
       opacity: 0.2;
+      transition: 0.4s;
     }
 
     &__ui-button-modal-trigger {
