@@ -4,7 +4,7 @@
       <div class="remoteTechStaffContent__text-wrap">
         <UIItemTitle :itemTitle="title" class="remoteTechStaffContent__item-title"/>
         <UIItemSubTitle :itemSubTitle="subTitle" class="remoteTechStaffContent__item-sub-title"/>
-        <UIParagraph :paragraph="paragraph" :class="`remoteTechStaffContent__${title.toLowerCase()}-paragraph`"/>
+        <UIParagraph :paragraph="paragraph" class="remoteTechStaffContent__paragraph" :class="`remoteTechStaffContent__${title.toLowerCase()}-paragraph`"/>
       </div>
     </div>
     <UIButtonModalTrigger 
@@ -213,6 +213,10 @@ export default {
         width: 100%;
       }
 
+       &__item-sub-title {
+         width: 300px;
+       }
+
       &__tech-staff-individuals {
         margin-top: 83px;
       }
@@ -220,6 +224,11 @@ export default {
       &__item-icon {
         top: 0;
         right: 0;
+        opacity: 1;
+      }
+
+      &__paragraph {
+        width: 75%;
       }
     }
 
@@ -251,8 +260,7 @@ export default {
       }
 
       &__item-sub-title,
-      &__teams-paragraph,
-      &__individuals-paragraph {
+      &__paragraph {
         width: 100%;
       }
     }
