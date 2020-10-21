@@ -1,7 +1,7 @@
 <template>
   <section id="meet-our-experts" class="meet-our_experts">
     <div class="container">
-      <h2 class="meet-our_experts__main-title">Meet our experts</h2>
+      <h3 class="meet-our_experts__main-title">Meet our experts</h3>
       <div class="meet-our_experts__experts-list row">
         <div class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6" v-for="(expert, i) in experts" :key="i">
           <image-component :fileName="expert.image" :fileNameRetina="`${expert.image}@2x`"/>
@@ -91,12 +91,16 @@ export default {
     padding-bottom: 100px;
     background-color: $bgcolor--white-darken;
 
+    @media screen and (max-width: 834px) {
+      padding-bottom: 76px;
+    }
+
+    @media screen and (max-width: 578px) {
+      padding-bottom: 67px;
+    }
+
     &__main-title {
-      margin-bottom: 42px;
-      font-size: 40px;
-      font-family: 'Poppins-Bold';
-      line-height: 48px;
-      letter-spacing: -1px;
+      @include h3_title;
       text-align: center;
       color: $text-color--black-lighter;
     }
@@ -138,7 +142,8 @@ export default {
 
     &__expert-name {
       font-size: 17px;
-      font-family: 'Poppins-Bold';
+      font-family: 'Poppins-Bold', sans-serif;
+      font-weight: 700;
     }
 
     &__expert-position {

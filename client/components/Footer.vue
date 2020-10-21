@@ -63,6 +63,7 @@ export default {
 			margin-bottom: 46px;
 			font-size: 62px;
 			font-family: 'Poppins-Bold', sans-serif;
+      font-weight: 700;
 			line-height: 74px;
 			letter-spacing: -1px;
 			color: $text-color--red;
@@ -119,7 +120,7 @@ export default {
 				padding-left: 0;
 				padding-right: 0;
 			}
-			
+
 			&__form-wrap {
 				margin-top: 30px;
 			}

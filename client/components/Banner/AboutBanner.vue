@@ -30,6 +30,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.banner-container {
+  margin-bottom: 124px;
+
+  @media screen and (max-width: 834px) {
+    margin-bottom: 49px;
+  }
+
+  @media screen and (max-width: 578px) {
+    margin-bottom: 47px;
+  }
+}
+
+.banner-content {
+  margin-bottom: 46px;
+
+  @media screen and (max-width: 834px) {
+    margin-bottom: 74px;
+  }
+
+  @media screen and (max-width: 578px) {
+    margin-bottom: 65px;
+  }
+}
+
 .text-content_wrapper {
   position: relative;
 }

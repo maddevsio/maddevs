@@ -559,7 +559,7 @@ $tech_legends: (
 
   @media screen and (max-width: 976px) {
     max-width: 460px;
-    margin: auto auto 32px;
+    margin: auto auto 10px;
     flex-wrap: wrap;
 
     &__item {
@@ -1285,21 +1285,11 @@ $tech_legends: (
 }
 
 .technologies-and_tools {
-  margin-bottom: 38px;
-
   &__main-title {
-    margin-bottom: 41px;
-    color: $text-color--white;
-    font-family: 'Poppins-Bold', sans-serif;
-    font-size: 62px;
-    line-height: 120%;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: -1px;
+    @include h2_title;
 
-    @media screen and (max-width: 834px) {
-      font-size: 36px;
-    }
+    color: $text-color--white;
+    text-align: center;
   }
 
   &__technologies-list {
@@ -1308,33 +1298,4 @@ $tech_legends: (
     justify-content: space-between;
   }
 }
-
-@media only screen and (max-width: 1440px) {
-  .technologies-and_tools {
-    margin-bottom: 5px;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  .technologies-and_tools {
-    margin-bottom: 46px;
-
-    &__main-title {
-      margin-bottom: 32px;
-    }
-  }
-}
-
-@media only screen and (max-width: 430px) {
-  .technologies-and_tools {
-    margin-bottom: 35px;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .technologies-and_tools {
-    margin-bottom: 0;
-  }
-}
-
 </style>

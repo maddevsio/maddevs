@@ -131,16 +131,8 @@ export default {
 }
 
 .case-studies {
-  padding-top: 90px;
-
-  @media screen and (max-width: 1024px) {
-    padding-top: 5px;
-  }
-
-  &--projects {
-    .projects-flame-background {
-      position: absolute;
-    }
+  &--projects .projects-flame-background {
+    position: absolute;
   }
 
   .container {
@@ -148,21 +140,12 @@ export default {
   }
 
   &__main-title {
-    font-family: Poppins-Bold, sans-serif;
+    @include h2_title;
     padding-bottom: 30px;
     color: $text-color--red;
     text-align: center;
     margin: auto;
     display: block;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 62px;
-    line-height: 120%;
-    letter-spacing: -1px;
-
-    @media screen and (max-width: 834px) {
-      font-size: 36px;
-    }
   }
 
   .projects {
