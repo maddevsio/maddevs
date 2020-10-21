@@ -74,6 +74,13 @@ export default {
 
     &__tech-staff {
       justify-content: space-between;
+
+      &:hover {
+        .remoteTechStaffContent__item-icon {
+          opacity: 1;
+          transition: 0.2s;
+        }
+      }
     }
 
     &__item-title {
@@ -102,6 +109,7 @@ export default {
     &__item-icon {
       display: block;
       position: absolute;
+      opacity: 0.2;
     }
 
     &__ui-button-modal-trigger {
@@ -209,8 +217,7 @@ export default {
         margin-top: 83px;
       }
 
-      &__teams-icon,
-      &__individuals-icon {
+      &__item-icon {
         top: 0;
         right: 0;
       }
@@ -250,26 +257,4 @@ export default {
       }
     }
   }
-
-  // .teams,
-  // .individuals {
-  //   &:hover {
-  //     .remote-tech-staff-content__title,
-  //     .remote-tech-staff-content__paragraph,
-  //     .remote-tech-staff-content__sub-title,
-  //     .remote-tech-staff-content__ui-button-modal-trigger {
-  //       color: $text-color--grey-light;
-  //       transition: 0.2s;
-  //     }
-
-  //     .remote-tech-staff-content__ui-button-modal-trigger {
-  //       border-color: $border-color--grey-light;
-  //     }
-
-  //     .remote-tech-staff-content__content-icon {
-  //       opacity: 1;
-  //       transition: 0.2s;
-  //     }
-  //   }
-  // }
 </style>

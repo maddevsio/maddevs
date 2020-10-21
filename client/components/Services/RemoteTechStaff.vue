@@ -55,7 +55,6 @@ export default {
   @import '../../assets/styles/vars';
 
   .remoteTechStaff {
-    padding: 130px 0 65px;
     background-color: $bgcolor--black;
 
     &__main-title {
