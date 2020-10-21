@@ -30,7 +30,6 @@ export default {
     &__title-wrapper {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 28px;
     }
   
     &__order-a-project-icon {
@@ -40,6 +39,33 @@ export default {
       position: relative;
       right: 30px;
       @include order-a-project-icon;
+
+      @media screen and (max-width: 1280px) {
+        width: 265px;
+        height: 282px;
+        right: 0;
+      }
+
+      @media screen and (max-width: 1140px) {
+        width: 215px;
+        height: 232px;
+      }
+
+      @media screen and (max-width: 970px) {
+        width: 175px;
+        height: 192px;
+      }
+
+      @media screen and (max-width: 834px) {
+        width: 145px;
+        height: 162px;
+      }
+
+      @media screen and (max-width: 810px) {
+        width: 115px;
+        height: 132px;
+        top: 15px;
+      }
     }
   }
 </style>
