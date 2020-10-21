@@ -8,7 +8,7 @@
 				<button class="mobile-header__toogle-btn" @click="toggleMobileHeader()" :class="mobileHeaderIsOpen ? 'mobile-header__close' : 'mobile-header__hamburger'"></button>
 			</div>
 		</div>
-		<perfect-scrollbar class="mobile-header__scrollbar custom-scrollbar container">
+		<div class="mobile-header__scrollbar container">
 			<div class="mobile-header__content-wrap" v-show="mobileHeaderIsOpen">
 				<div class="mobile-header__nav-wrap">
 					<nav class="mobile-header__header-routes_links">
@@ -49,7 +49,7 @@
 				<footerSocialNetworkList class="mobile-header__large-phone-content mobile-header__icons-list" />
 				<footerContacts class="mobile-header__small-phone-content" />
 			</div>
-		</perfect-scrollbar>
+		</div>
 	</div>
 </template>
 

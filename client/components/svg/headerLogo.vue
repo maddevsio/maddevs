@@ -14,7 +14,8 @@ export default {
   name: 'header-logo',
   data() {
     return {
-      headerLogoTextDisplayState: false
+      headerLogoTextDisplayState: false,
+      mobileMenuScrollBar: ''
     };
   },
   watch: {
@@ -23,18 +24,27 @@ export default {
     }
   },
   mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-    this.handleScroll();
+    this.mobileMenuScrollBar = document.getElementsByClassName('mobile-header__scrollbar')[0];
+    this.mobileMenuScrollBar.addEventListener('scroll', this.handleMobileMenuScroll);
+    window.addEventListener('scroll', this.handleWindowScroll);
   },
   destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
+    this.mobileMenuScrollBar.removeEventListener('scroll', this.handleMobileMenuScroll);
+    window.removeEventListener('scroll', this.handleWindowScroll);
   },
   methods: {
-    handleScroll() {
-      if(window.pageYOffset >= 100)
+    handleWindowScroll() {
+      this.changeLogoState(window.pageYOffset, 100);
+    },
+    handleMobileMenuScroll() {
+      this.changeLogoState(this.mobileMenuScrollBar.scrollTop, 30);
+    },
+    changeLogoState(scrollTop, number) {
+      if(scrollTop >= number) {
         this.headerLogoTextDisplayState = true;
-      else
+      } else {
         this.headerLogoTextDisplayState = false;
+      }
     }
   }
 };
