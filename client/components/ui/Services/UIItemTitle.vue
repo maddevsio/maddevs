@@ -18,6 +18,7 @@ export default {
   @import '../../../assets/styles/vars';
 
   .item-title {
+    margin-bottom: 24px;
     font-size: 40px;
     font-family: 'Poppins-Bold', sans-serif;
     line-height: 120%;
@@ -25,7 +26,13 @@ export default {
     color: $text-color--white;
 
     @media screen and (max-width: 1280px) {
-      font-size: 38px;
+      margin-bottom: 16px;
+      font-size: 27px;
+    }
+
+    @media only screen and (max-width: 834px) {
+      margin-bottom: 14px;
+      font-size: 25px;
     }
   }
 </style>

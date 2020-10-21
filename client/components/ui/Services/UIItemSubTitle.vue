@@ -26,7 +26,11 @@ export default {
     color: $remote-tech-staff-sub-title-grey;
 
     @media screen and (max-width: 1280px) {
-      font-size: 21px;
+      font-size: 20px;
+    }
+
+    @media only screen and (max-width: 834px) {
+      font-size: 18px;
     }
   }
 </style>
