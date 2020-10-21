@@ -48,7 +48,7 @@ export default {
     font-weight: 700;
     letter-spacing: -0.03em;
     box-shadow: none;
-    transition: 0.2s;
+    transition: 0.4s;
     cursor: pointer;
 
     &:not(.ui-button--disabled) {

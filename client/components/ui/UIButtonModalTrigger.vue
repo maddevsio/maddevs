@@ -78,7 +78,7 @@ export default {
     font-size: 18px;
     font-family: 'Poppins-Regular', sans-serif;;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.4s;
 
     &--red {
       color: $text-color--red;

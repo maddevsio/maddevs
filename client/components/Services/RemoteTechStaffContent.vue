@@ -78,7 +78,7 @@ export default {
       &:hover {
         .remoteTechStaffContent__item-icon {
           opacity: 1;
-          transition: 0.2s;
+          transition: 0.4s;
         }
       }
     }
