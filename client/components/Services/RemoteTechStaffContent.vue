@@ -223,7 +223,7 @@ export default {
       &__individuals-icon {
         width: 48px;
         height: 75px;
-        top: -26px;
+        top: -27px;
         left: 139px;
       }
 
