@@ -226,14 +226,14 @@ export default {
         width: 40px;
         height: 38px;
         top: -11px;
-        left: 95px;
+        left: 90px;
       }
 
       &__individuals-icon {
         width: 48px;
         height: 75px;
         top: -27px;
-        left: 139px;
+        left: 133px;
       }
 
       &__paragraph {
