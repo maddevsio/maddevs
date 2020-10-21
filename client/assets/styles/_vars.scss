@@ -70,6 +70,7 @@ $project-hover-bg-color--white: #fff;
 $button-bgcolor--red: #ec1c24;
 $button-active--red: #ca1920;
 $button-active-border--red: #ca1920;
+$button-border--white-opacity: rgba(255, 255, 255, 0.5);
 
 // ---------- Footer specific colors ------------ //
 $footer--text-decoration-color: rgba(196, 196, 196, 0.3);
@@ -89,6 +90,7 @@ $label-text--grey-dark: rgba(150, 150, 156, 0.7);
 $slider-dots-bg-color-white: #eff3f6;
 $slider-dots-bg-color-black: #000;
 $quick-project-description-color: #c5c3cc;
+$remote-tech-staff-sub-title-grey: #D7DDE1;
 
 @mixin h2_title {
   font-family: 'Poppins-Bold', sans-serif;
