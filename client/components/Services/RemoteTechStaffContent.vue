@@ -76,6 +76,10 @@ export default {
       }
     }
 
+    &__content_wrapper {
+      margin-bottom: 28px;
+    }
+
     &__tech-staff,
     &__item-icon {
       transition: 0.4s;
@@ -115,7 +119,6 @@ export default {
     &__ui-button-modal-trigger {
       width: 100%;
       height: 56px;
-      margin-top: 28px;
       color: $text-color--white;
       border-color: $button-border--white-opacity;
 
@@ -151,6 +154,10 @@ export default {
         width: 445px;
       }
 
+      &__content_wrapper {
+        margin-bottom: 22px;
+      }
+
       &__teams-paragraph {
         width: 350px;
       }
@@ -182,7 +189,6 @@ export default {
 
       &__ui-button-modal-trigger {
         font-size: 14px;
-        margin-top: 22px;
       }
     }
 
@@ -238,10 +244,6 @@ export default {
 
       &__paragraph {
         width: 100%;
-      }
-
-      &__ui-button-modal-trigger {
-        height: 54px;
       }
     }
   }
