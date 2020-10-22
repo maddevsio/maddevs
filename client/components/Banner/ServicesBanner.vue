@@ -122,7 +122,7 @@ export default {
         width: 98px;
         height: 118px;
         top: 65px;
-        left: 190px;
+        left: 195px;
       } 
     }
   }
