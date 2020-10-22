@@ -63,23 +63,28 @@ export default {
   .remoteTechStaffContent {
     &__tech-staff {
       width: 503px;
+      justify-content: space-between;
       position: relative;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1;
+
+        .remoteTechStaffContent__item-icon {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__tech-staff,
+    &__item-icon {
+      transition: 0.4s;
     }
 
     &__tech-staff,
     &__text-wrap {
       display: flex;
       flex-direction: column;
-    }
-
-    &__tech-staff {
-      justify-content: space-between;
-
-      &:hover {
-        .remoteTechStaffContent__item-icon {
-          opacity: 1;
-        }
-      }
     }
 
     &__item-sub-title {
@@ -104,8 +109,7 @@ export default {
     &__item-icon {
       display: block;
       position: absolute;
-      opacity: 0.2;
-      transition: 0.4s;
+      opacity: 0.4;
     }
 
     &__ui-button-modal-trigger {
@@ -189,13 +193,18 @@ export default {
     }
 
     @media only screen and (max-width: 1023px) {
+      &__tech-staff,
+      &__item-icon {
+        opacity: 1;
+      }
+
       &__tech-staff {
         width: 100%;
       }
 
-       &__item-sub-title {
-         width: 100%;
-       }
+      &__item-sub-title {
+        width: 100%;
+      }
 
       &__tech-staff-individuals {
         margin-top: 115px;
@@ -217,14 +226,14 @@ export default {
         width: 40px;
         height: 38px;
         top: -11px;
-        left: 95px;
+        left: 90px;
       }
 
       &__individuals-icon {
         width: 48px;
         height: 75px;
         top: -27px;
-        left: 139px;
+        left: 133px;
       }
 
       &__paragraph {
