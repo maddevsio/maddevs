@@ -60,7 +60,7 @@ export default {
 		padding-bottom: 92px;
 
 		&__main-title {
-			margin-bottom: 46px;
+			margin-bottom: 43px;
 			font-size: 62px;
 			font-family: 'Poppins-Bold', sans-serif;
       font-weight: 700;

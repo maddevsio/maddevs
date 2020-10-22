@@ -144,12 +144,12 @@ export default {
 		&__contact-link {
 			display: inline-block;
 			margin-top: 12px;
-			font-size: 34px;
+      font-size: 34px;
+      line-height: 100%;
 			font-weight: 600;
 			font-family: 'Poppins-Regular', sans-serif;
-			line-height: 32px;
 			letter-spacing: -1px;
-			border-bottom: 1px solid $border-color--red;
+			border-bottom: 1px solid $text-color--red-opacity;
 			text-decoration: none;
 		}
 
@@ -178,8 +178,8 @@ export default {
 		}
 
 		&__social-network-list-desktop {
-			margin-top: 52px;
-			padding-top: 52px;
+			margin-top: 53px;
+			padding-top: 53px;
 			border-top: 1px solid $border-color--grey-dark-transparent;
 		}
 

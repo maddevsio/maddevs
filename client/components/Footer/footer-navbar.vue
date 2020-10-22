@@ -22,10 +22,10 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
-  
+
   .footer-navbar {
 		width: max-content;
-    margin-top: 65px;
+    margin-top: 73px;
 
     &__nav-list {
 			display: flex;
@@ -61,12 +61,12 @@ export default {
 			}
 		}
   }
-  
+
   @media only screen and (max-width: 1200px) {
 		.footer-navbar {
 			width: initial;
 			margin-top: 40px;
-			
+
 			&__nav-list {
 				flex-wrap: wrap;
 			}
