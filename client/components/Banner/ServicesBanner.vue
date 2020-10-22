@@ -1,5 +1,5 @@
 <template>
-  <section class="banner__banner-container banner-container">
+  <section class="banner banner-container">
     <div class="banner__banner-content banner-content">
       <div class="banner__title-wrapper container">
         <h1 class="banner__banner-main_title banner-main_title">
@@ -27,9 +27,17 @@ export default {
   @import '../../assets/styles/_servicesBannerIcons';
 
   .banner {
+    &__banner-content {
+      margin-bottom: 34px;
+
+      @media screen and (max-width: 991px) {
+        padding-top: 120px;
+      } 
+    }
+
     &__title-wrapper {
       display: flex;
-      justify-content: space-between;
+      position: relative;
     }
   
     &__order-a-project-icon {
@@ -37,35 +45,85 @@ export default {
       height: 312px;
       display: block;
       position: relative;
-      right: 30px;
+      left: 85px;
       @include order-a-project-icon;
+
+      @media screen and (max-width: 1290px) {
+        left: 75px;
+      }
 
       @media screen and (max-width: 1280px) {
         width: 265px;
         height: 282px;
-        right: 0;
+        left: 40px;
       }
 
       @media screen and (max-width: 1140px) {
         width: 215px;
         height: 232px;
+        top: 8px;
       }
 
       @media screen and (max-width: 970px) {
         width: 175px;
         height: 192px;
+        top: 0;
       }
 
       @media screen and (max-width: 834px) {
-        width: 145px;
-        height: 162px;
+        width: 135px;
+        height: 152px;
+        top: 17px;
+        left: 20px;
       }
 
       @media screen and (max-width: 810px) {
-        width: 115px;
-        height: 132px;
-        top: 15px;
+        width: 118px;
+        height: 138px;
+        top: 25px;
+        left: 15px;
       }
+
+      @media screen and (max-width: 690px) {
+        position: absolute;
+        width: 180px;
+        height: 200px;
+        top: 125px;
+        left: 58%;
+      }
+
+      @media screen and (max-width: 576px) {
+        width: 150px;
+        height: 185px;
+        top: 70px;
+        left: 53%;
+      }
+
+      @media screen and (max-width: 440px) {
+        width: 140px;
+        height: 150px;
+        top: 81px;
+        left: 55%;
+      }
+
+      @media screen and (max-width: 390px) {
+        width: 108px;
+        height: 128px;
+        top: 90px;
+        left: 229px;
+      }
+
+      @media screen and (min-width: 341px) and (max-width: 358px) {
+        top: 150px;
+        left: 210px;
+      }
+
+      @media screen and (max-width: 340px) {
+        width: 98px;
+        height: 118px;
+        top: 65px;
+        left: 190px;
+      } 
     }
   }
 </style>

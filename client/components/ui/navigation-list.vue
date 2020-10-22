@@ -49,7 +49,7 @@ export default {
     flex-direction: row;
 
     .navigation-item {
-      margin-right: 81px;
+      margin-right: 48px;
       border-bottom: 1px solid rgba(236, 28, 36, .5);
       color: $text-color--grey-light;
       font-size: 19px;
@@ -79,7 +79,7 @@ export default {
       justify-content: space-between;
 
       .navigation-item {
-        margin-right: 25px;
+        margin-right: 15px;
       }
     }
   }
