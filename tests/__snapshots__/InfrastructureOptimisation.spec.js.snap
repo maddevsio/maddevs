@@ -8,74 +8,78 @@ exports[`Infrastructure optimisation renders correctly 1`] = `
   <div
     class="container"
   >
-    <h2
-      class="infrastructure-optimisation__main-title"
-    >
-      Infrastructure 
-      <br
-        class="infrastructure-optimisation__small-screen-break"
-      />
-       Optimisation
-    </h2>
-     
     <div
-      class="infrastructure-optimisation__content"
+      class="infrastructure-optimisation__content-wrapper"
     >
+      <h2
+        class="infrastructure-optimisation__main-title"
+      >
+        Infrastructure 
+        <br
+          class="infrastructure-optimisation__small-screen-break"
+        />
+         Optimisation
+      </h2>
+       
       <div
-        class="infrastructure-optimisation__text-content"
+        class="infrastructure-optimisation__content"
       >
         <div
-          class="content-item"
+          class="infrastructure-optimisation__text-content"
         >
-          <h3
-            class="item-title content-item__title content-item__title-first-item"
+          <div
+            class="content-item"
           >
-            What makes us stand out from others?
-          </h3>
+            <h3
+              class="item-title content-item__title content-item__title-first-item"
+            >
+              What makes us stand out from others?
+            </h3>
+             
+            <h4
+              class="item-sub-title content-item__sub-title content-item__sub-title-first-item"
+            >
+              Optimising teams don’t care for tomorrow’s traffic peaks? We care!
+            </h4>
+             
+            <p
+              class="paragraph content-item__paragraph"
+            >
+              We don't just have experience with infrastructure management tools, our team helped develop some of them. We know where to get the cheapest price and the best service.
+            </p>
+          </div>
            
-          <h4
-            class="item-sub-title content-item__sub-title content-item__sub-title-first-item"
+          <div
+            class="content-item"
           >
-            Optimising teams don’t care for tomorrow’s traffic peaks? We care!
-          </h4>
-           
-          <p
-            class="paragraph content-item__paragraph"
-          >
-            We don't just have experience with infrastructure management tools, our team helped develop some of them. We know where to get the cheapest price and the best service.
-          </p>
+            <h3
+              class="item-title content-item__title content-item__title-second-item"
+            >
+              Up to 50% savings on infrastructure
+            </h3>
+             
+            <h4
+              class="item-sub-title content-item__sub-title content-item__sub-title-second-item"
+            >
+              Pay-as-you-go receipts from your cloud providers make you curse them?
+            </h4>
+             
+            <p
+              class="paragraph content-item__paragraph"
+            >
+              Our fire brigade can help you optimise resource consumption like we've done for 75% of our customers. We’ll reconfigure and disable every option or service that is not necessary.
+            </p>
+          </div>
         </div>
          
-        <div
-          class="content-item"
+        <button
+          class="ui-button-modal-trigger infrastructure-optimisation__button"
         >
-          <h3
-            class="item-title content-item__title content-item__title-second-item"
-          >
-            Up to 50% savings on infrastructure
-          </h3>
-           
-          <h4
-            class="item-sub-title content-item__sub-title content-item__sub-title-second-item"
-          >
-            Pay-as-you-go receipts from your cloud providers make you curse them?
-          </h4>
-           
-          <p
-            class="paragraph content-item__paragraph"
-          >
-            Our fire brigade can help you optimise resource consumption like we've done for 75% of our customers. We’ll reconfigure and disable every option or service that is not necessary.
-          </p>
-        </div>
-      </div>
-       
-      <button
-        class="ui-button-modal-trigger infrastructure-optimisation__button"
-      >
-        
+          
   Get an infrastructure audit
 
-      </button>
+        </button>
+      </div>
     </div>
   </div>
 </section>
