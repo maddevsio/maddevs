@@ -34,13 +34,13 @@ export default {
   },
   methods: {
     handleWindowScroll() {
-      this.changeLogoState(window.pageYOffset, 100);
+      this.changeLogoState(window.pageYOffset);
     },
     handleMobileMenuScroll() {
-      this.changeLogoState(this.mobileMenuScrollBar.scrollTop, 30);
+      this.changeLogoState(this.mobileMenuScrollBar.scrollTop);
     },
-    changeLogoState(scrollTop, number) {
-      if(scrollTop >= number) {
+    changeLogoState(scrollTop) {
+      if(scrollTop >= 20) {
         this.headerLogoTextDisplayState = true;
       } else {
         this.headerLogoTextDisplayState = false;
