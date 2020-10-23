@@ -84,13 +84,16 @@ export default {
       @include h2_title;
       width: max-content;
       margin: auto;
-      padding-top: 0;
       padding-left: 32px;
       padding-right: 32px;
       position: relative;
       z-index: 1;
       background-color: $bgcolor--black;
       color: $text-color--red;
+
+      @media screen and  (min-width: 320px) {
+        padding-top: 0;
+      }
     }
 
     &__text-content {
