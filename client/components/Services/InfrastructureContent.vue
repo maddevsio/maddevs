@@ -86,7 +86,7 @@ export default {
       }
 
       &:last-child {
-        margin-top: 100px;
+        margin-top: 48px;
       }
     }
   }

@@ -1,27 +1,29 @@
 <template>
   <section id="infrastructure-optimisation" class="infrastructure-optimisation">
     <div class="container">
-      <h2 class="infrastructure-optimisation__main-title">Infrastructure <br class="infrastructure-optimisation__small-screen-break"> Optimisation</h2>
-      <div class="infrastructure-optimisation__content">
-        <div class="infrastructure-optimisation__text-content">
-          <InfrastructureContent
-            :title="whatMakes.title" 
-            :subTitle="whatMakes.subTitle" 
-            :paragraph="whatMakes.paragraph"
-            :className="whatMakes.className"
-          />
-          <InfrastructureContent 
-            :title="upToSaving.title" 
-            :subTitle="upToSaving.subTitle" 
-            :paragraph="upToSaving.paragraph"
-            :className="upToSaving.className"
+      <div class="infrastructure-optimisation__content-wrapper">
+        <h2 class="infrastructure-optimisation__main-title">Infrastructure <br class="infrastructure-optimisation__small-screen-break"> Optimisation</h2>
+        <div class="infrastructure-optimisation__content">
+          <div class="infrastructure-optimisation__text-content">
+            <InfrastructureContent
+              :title="whatMakes.title" 
+              :subTitle="whatMakes.subTitle" 
+              :paragraph="whatMakes.paragraph"
+              :className="whatMakes.className"
+            />
+            <InfrastructureContent 
+              :title="upToSaving.title" 
+              :subTitle="upToSaving.subTitle" 
+              :paragraph="upToSaving.paragraph"
+              :className="upToSaving.className"
+            />
+          </div>
+          <UIButtonModalTrigger 
+            :buttonInnerText="buttonInnerText"
+            :modalWindowName="modalWindowName"
+            class="infrastructure-optimisation__button"
           />
         </div>
-        <UIButtonModalTrigger 
-          :buttonInnerText="buttonInnerText"
-          :modalWindowName="modalWindowName"
-          class="infrastructure-optimisation__button"
-        />
       </div>
     </div>
   </section>
@@ -62,17 +64,13 @@ export default {
   @import '../../assets/styles/vars';
 
   .infrastructure-optimisation {
-    &__main-title {
-      width: max-content;
-      margin: auto;
-      padding-left: 32px;
-      padding-right: 32px;
-      position: relative;
-      text-align: center;
-      z-index: 1;
-      background-color: $bgcolor--black;
-      color: $text-color--red;
-      @include h2_title;
+    &__content-wrapper {
+      &:hover {
+        .infrastructure-optimisation__button {
+          background-color: $bgcolor--white;
+          color: $text-color--black !important;
+        }
+      }
     }
 
     &__content {
@@ -82,10 +80,27 @@ export default {
       border: 2px solid $border-color--red;
     }
 
+    &__main-title {
+      @include h2_title;
+      width: max-content;
+      margin: auto;
+      padding-top: 0;
+      padding-left: 32px;
+      padding-right: 32px;
+      position: relative;
+      z-index: 1;
+      background-color: $bgcolor--black;
+      color: $text-color--red;
+    }
+
     &__text-content {
       display: flex;
       justify-content: space-between;
       margin-bottom: 39px;
+
+      @media screen and  (max-width: 1023px) {
+        flex-direction: column;
+      }
     }
 
     &__button {
@@ -94,11 +109,6 @@ export default {
       font-size: 16px;
       color: $text-color--white;
       border-color: $button-border--white-opacity;
-
-      &:hover {
-        background-color: $bgcolor--white;
-        color: $text-color--black !important;
-      }
 
       &:active {
         background-color: $bgcolor--white !important;
@@ -124,27 +134,26 @@ export default {
         margin-bottom: 29px;
       }
 
+      &__main-title {
+        margin-left: 38px;
+      }
+
       &__small-screen-break {
         display: block;
       }
     }
 
-    @media screen and  (max-width: 1023px) {
-      &__text-content {
-        flex-direction: column;
-      }
-    }
-
     @media screen and  (max-width: 834px) {
-      &__main-title {
-        padding-left: 22px;
-        padding-right: 22px;
-      }
-
       &__content {
         margin-top: -66px;
         padding-top: 74px;
         margin-bottom: 80px;
+      }
+
+      &__main-title {
+        margin-left: 50px;
+        padding-left: 22px;
+        padding-right: 22px;
       }
     }
 
@@ -153,29 +162,41 @@ export default {
         padding-left: 56px;
         padding-right: 56px;
       }
+
+      &__main-title {
+        margin-left: 36px;
+      }
     }
 
     @media screen and  (max-width: 576px) {
-      &__main-title {
-        padding-left: 18px;
-        padding-right: 18px;
-      }
-
       &__content {
         padding: 70px 44px 44px;
+      }
+
+      &__main-title {
+        margin-left: 24px;
       }
     }
 
     @media screen and  (max-width: 440px) {
       &__content {
-        padding: 64px 24px 32px 24px;
+        padding: 64px 24px 24px 24px;
+      }
+
+      &__main-title {
+        margin-left: 26px;
+        padding-left: 0;
+        padding-right: 0;
       }
     }
 
-    @media screen and  (max-width: 380px) {
+    @media screen and  (max-width: 350px) {
+      &__content {
+        padding: 60px 14px 14px;
+      }
+
       &__main-title {
-        padding-left: 0;
-        padding-right: 0;
+        margin-left: 14px;
       }
     }
   }
