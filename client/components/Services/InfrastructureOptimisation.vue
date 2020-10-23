@@ -110,6 +110,8 @@ export default {
       width: 100%;
       height: 56px;
       font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
       color: $text-color--white;
       border-color: $button-border--white-opacity;
 
@@ -200,6 +202,12 @@ export default {
 
       &__main-title {
         margin-left: 14px;
+      }
+    }
+
+    @media screen and  (max-width: 330px) {
+      &__main-title {
+        margin: auto;
       }
     }
   }
