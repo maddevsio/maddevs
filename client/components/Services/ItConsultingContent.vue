@@ -49,6 +49,10 @@ export default {
       height: calc(100% - 64px);
       padding: 32px;
       background-color: $bgcolor--white;
+
+      @media screen and (max-width: 330px) {
+        padding: 29px;
+      }
     }
 
     &__title,

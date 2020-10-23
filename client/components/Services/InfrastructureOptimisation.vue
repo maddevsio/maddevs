@@ -204,5 +204,11 @@ export default {
         margin-left: 14px;
       }
     }
+
+    @media screen and  (max-width: 330px) {
+      &__main-title {
+        margin: auto;
+      }
+    }
   }
 </style>
