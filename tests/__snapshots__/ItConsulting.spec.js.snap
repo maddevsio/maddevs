@@ -2,104 +2,121 @@
 
 exports[`ItСonsulting component renders correctly 1`] = `
 <section
-  class="it-consulting main-parent-item"
+  class="it-consulting"
   id="it-consulting"
 >
   <div
     class="container"
   >
     <h2
-      class="it-consulting__main-title main-title"
+      class="it-consulting__main-title"
     >
-      
       IT Consulting
-    
     </h2>
      
     <div
-      class="it-consulting__flex-wrapper flex-wrapper"
+      class="it-consulting__content row"
     >
       <div
-        class="it-consulting__content-item"
+        class="it-consulting-item col-xl-4 col-lg-4"
       >
-        <div
-          class="it-consulting__content-item_wrapper"
-        >
-          <h3
-            class="it-consulting__title title"
+        <client-only-stub>
+          <div
+            class="it-consulting-item__text-content"
           >
-            Technology Stack
-          </h3>
-           
-          <h4
-            class="it-consulting__sub-title title-md"
-          >
-            Tired of the slow and hard-to-maintain technology that your previous team used?
-          </h4>
-           
-          <p
-            class="it-consulting__paragraph paragraph"
-          >
-            We’ll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.
-          </p>
-        </div>
+            <h3
+              class="item-title it-consulting-item__title"
+            >
+              Technology 
+              <br />
+               Stack
+            </h3>
+             
+            <h4
+              class="item-sub-title it-consulting-item__sub-title it-consulting-item__sub-title-first-item"
+            >
+              Tired of the slow and 
+              <span>
+                hard-to-maintain
+              </span>
+               technology that your previous team used?
+            </h4>
+             
+            <p
+              class="paragraph it-consulting-item__paragraph"
+            >
+              We’ll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.
+            </p>
+          </div>
+        </client-only-stub>
       </div>
        
       <div
-        class="it-consulting__content-item"
+        class="it-consulting-item col-xl-4 col-lg-4"
       >
-        <div
-          class="it-consulting__content-item_wrapper"
-        >
-          <h3
-            class="it-consulting__title title"
+        <client-only-stub>
+          <div
+            class="it-consulting-item__text-content"
           >
-            Process Audit
-          </h3>
-           
-          <h4
-            class="it-consulting__sub-title title-md"
-          >
-            Have to constantly deal with extended deadlines and mess-ups?
-          </h4>
-           
-          <p
-            class="it-consulting__paragraph paragraph"
-          >
-            Your process probably just lacks transparency and reasonable control. We know how to avoid this and check who does what right now.
-          </p>
-        </div>
+            <h3
+              class="item-title it-consulting-item__title"
+            >
+              Process 
+              <br />
+               Audit
+            </h3>
+             
+            <h4
+              class="item-sub-title it-consulting-item__sub-title it-consulting-item__sub-title-second-item"
+            >
+              Have to constantly deal with extended deadlines and 
+              <span>
+                mess-ups?
+              </span>
+            </h4>
+             
+            <p
+              class="paragraph it-consulting-item__paragraph"
+            >
+              Your process probably just lacks transparency and reasonable control. We know how to avoid this and check who does what right now.
+            </p>
+          </div>
+        </client-only-stub>
       </div>
        
       <div
-        class="it-consulting__content-item"
+        class="it-consulting-item col-xl-4 col-lg-4"
       >
-        <div
-          class="it-consulting__content-item_wrapper"
-        >
-          <h3
-            class="it-consulting__title title"
+        <client-only-stub>
+          <div
+            class="it-consulting-item__text-content"
           >
-            Team Headcount
-          </h3>
-           
-          <h4
-            class="it-consulting__sub-title title-md"
-          >
-            Is your team too big or too small and therefore causing trouble?
-          </h4>
-           
-          <p
-            class="it-consulting__paragraph paragraph"
-          >
-            Hire good people and get rid of underperformers. Easier said than done, right? Get assessments for the skills and seniority level of your staff. Our positively mad engineers and PMs know how to do this.
-          </p>
-        </div>
+            <h3
+              class="item-title it-consulting-item__title"
+            >
+              Team 
+              <br />
+               Headcount
+            </h3>
+             
+            <h4
+              class="item-sub-title it-consulting-item__sub-title it-consulting-item__sub-title-third-item"
+            >
+              Is your team too big or too small and therefore causing trouble?
+            </h4>
+             
+            <p
+              class="paragraph it-consulting-item__paragraph"
+            >
+              Hire good people and get rid of underperformers. Easier said than done, right? Get assessments for the skills and seniority level of your staff. Our positively mad engineers and PMs know how to do this.
+            </p>
+          </div>
+        </client-only-stub>
       </div>
     </div>
      
     <button
-      class="ui-button-modal-trigger ui-button-modal-trigger--black"
+      class="ui-button-modal-trigger it-consulting__button ui-button-modal-trigger--black"
     >
       
   Get expert advice

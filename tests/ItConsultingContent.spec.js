@@ -6,6 +6,7 @@ describe('ItConsultingContent component', () => {
 
   beforeEach(() => {
     wrapper = mount(ItConsultingContent, {
+      stubs: ['client-only'],
       propsData: {
         title: 'Title',
         subTitle: 'Sub title',
