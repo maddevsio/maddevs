@@ -1,27 +1,40 @@
 <template>
-  <div class="infrastructure-optimisation__content-item">
-    <h3 class="infrastructure-optimisation__title title">{{ title }}</h3>
-    <h4 class="infrastructure-optimisation__sub-title title-md">{{ subTitle }}</h4>
-    <p class="infrastructure-optimisation__paragraph paragraph">{{ paragraph }}</p>
+  <div class="content-item">
+    <UIItemTitle :itemTitle="title" class="content-item__title" :class="`content-item__title-${className}`"/>
+    <UIItemSubTitle :itemSubTitle="subTitle" class="content-item__sub-title" :class="`content-item__sub-title-${className}`"/>
+    <UIParagraph :paragraph="paragraph" class="content-item__paragraph" />
   </div>
 </template>
 
 <script>
+import UIParagraph from '@/components/ui/Services/UIParagraph';
+import UIItemTitle from '@/components/ui/Services/UIItemTitle';
+import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle';
+
 export default {
   name: 'InfrastructureContent',
   props: {
     title: {
       type: String,
-      default: 'Title'
+      default: ''
     },
     subTitle: {
       type: String,
-      default: 'Sub Title'
+      default: ''
     },
     paragraph: {
       type: String,
-      default: 'Paragraph'
+      default: ''
+    },
+    className: {
+      type: String,
+      default: ''
     }
+  },
+  components: {
+    UIItemTitle,
+    UIItemSubTitle,
+    UIParagraph
   }
 };
 
@@ -30,193 +43,50 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
 
-  .infrastructure-optimisation {
-    &__content-item {
-      max-width: 640px;
-
-      &:first-child {
-        padding-right: 25px;
-      }
+  .content-item {
+    &__title-first-item {
+      width: 463px;
     }
 
-    &__sub-title,
-    &__title {
-      padding-bottom: 5px;
+    &__sub-title-first-item {
+      width: 310px;
     }
 
-    &__title {
-      font-size: 70px;
-      line-height: 110%;
-      letter-spacing: -2px;
-      padding-bottom: 16px;
+    &__title-second-item, 
+    &__sub-title-second-item,
+    &__paragraph {
+      width: 397px;
     }
 
     &__sub-title {
-      font-size: 32px;
-      line-height: 110%;
-      letter-spacing: -1px;
+      margin-bottom: 8px;
     }
 
-    &__paragraph {
-      padding-bottom: 46px;
-    }
-  }
-
-  @media only screen and (max-width: 1560px) {
-    .infrastructure-optimisation {
-      &__content-item {
-        max-width: 575px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1390px) {
-    .infrastructure-optimisation {
-      &__content-item {
-        max-width: 535px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .infrastructure-optimisation {
-      padding-top: 83px;
-
-      &__main-title {
-        padding-bottom: 0;
+    @media screen and  (max-width: 1280px) {
+      &__title-first-item {
+        width: 280px;
       }
 
-      &__title {
-        font-size: 50px;
-        line-height: 110%;
-        letter-spacing: -2px;
-        padding-bottom: 25px;
+      &__sub-title-first-item {
+        width: 260px;
       }
 
-      &__sub-title {
-        font-size: 32px;
-        line-height: 110%;
-        letter-spacing: -1px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1270px) {
-    .infrastructure-optimisation {
-      &__content-item {
-        max-width: 500px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1180px) {
-    .infrastructure-optimisation {
-      &__content-item {
-        max-width: 460px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .infrastructure-optimisation {
-      &__content-item  {
-        max-width: initial;
-      }
-
-      &__title {
-        font-size: 47px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 870px) {
-    .infrastructure-optimisation {
-      &__title {
-        max-width: 100%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .infrastructure-optimisation {
-      &__title {
-        font-size: 42px;
-        line-height: 110%;
-        letter-spacing: -2px;
-        padding-bottom: 20px;
-        max-width: 460px;
-      }
-
-      &__sub-title {
-        padding-bottom: 16px;
-      }
-
+      &__title-second-item, 
+      &__sub-title-second-item,
       &__paragraph {
-        padding-bottom: 24px;
-      }
-
-      &__flex-wrapper {
-        margin-top: 38px;
+        width: 315px;
       }
     }
-  }
 
-  @media only screen and (max-width: 656px) {
-    .infrastructure-optimisation {
-      &__title {
-        max-width: 100%;
-        margin-right: 0;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 640px) {
-    .infrastructure-optimisation {
-      &__title {
-        max-width: 420px;
-      }
-
-      &__content-item {
-        &:first-child {
-          padding-right: 0;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 520px) {
-    .infrastructure-optimisation {
-      &__title {
-        max-width: 290px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .infrastructure-optimisation {
-      &__title {
-        font-size: 41px;
-        line-height: 99%;
-        letter-spacing: -1px;
-        padding-bottom: 13px;
-      }
-
-      &__sub-title {
-        font-size: 27px;
-        line-height: 124%;
-        letter-spacing: -1px;
-      }
-
+    @media screen and  (max-width: 1023px) {
+      &__title, 
+      &__sub-title,
       &__paragraph {
-        padding-bottom: 70px;
+        width: 100%;
       }
 
-      &__content-item {
-        &:last-child {
-          .infrastructure-optimisation__paragraph {
-            padding-bottom: 30px;
-          }
-        }
+      &:last-child {
+        margin-top: 48px;
       }
     }
   }
