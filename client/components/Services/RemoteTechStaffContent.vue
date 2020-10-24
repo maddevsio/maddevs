@@ -119,6 +119,8 @@ export default {
     &__ui-button-modal-trigger {
       width: 100%;
       height: 56px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
       color: $text-color--white;
       border-color: $button-border--white-opacity;
 

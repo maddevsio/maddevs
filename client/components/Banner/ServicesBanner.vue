@@ -47,83 +47,103 @@ export default {
       position: relative;
       left: 85px;
       @include order-a-project-icon;
+    }
 
-      @media screen and (max-width: 1290px) {
-        left: 75px;
-      }
-
-      @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 1280px) {
+      &__order-a-project-icon {
         width: 265px;
         height: 282px;
-        left: 40px;
-      }
-
-      @media screen and (max-width: 1140px) {
-        width: 215px;
-        height: 232px;
-        top: 8px;
-      }
-
-      @media screen and (max-width: 970px) {
-        width: 175px;
-        height: 192px;
-        top: 0;
-      }
-
-      @media screen and (max-width: 834px) {
-        width: 135px;
-        height: 152px;
-        top: 17px;
-        left: 20px;
-      }
-
-      @media screen and (max-width: 810px) {
-        width: 118px;
-        height: 138px;
-        top: 25px;
-        left: 15px;
-      }
-
-      @media screen and (max-width: 690px) {
         position: absolute;
-        width: 180px;
-        height: 200px;
+        left: 69%;
+      }
+
+      &__banner-main_title {
+        margin-bottom: 76px;
+      }
+    }
+
+    @media screen and (max-width: 1140px) {
+      &__order-a-project-icon {
+        width: 250px;
+        height: 240px;
+        top: -3px;
+        left: 64%;
+      }
+
+      &__banner-main_title {
+        margin-bottom: 57px;
+      }
+    }
+
+    @media screen and (max-width: 970px) {
+      &__order-a-project-icon {
+        width: 200px;
+        height: 190px;
+      }
+
+      &__banner-main_title {
+        margin-bottom: 42px;
+      }
+    }
+
+    @media screen and (max-width: 834px) {
+      &__order-a-project-icon {
+        left: 67%;
+      }
+    }
+
+    @media screen and (max-width: 690px) {
+      &__order-a-project-icon {
+        width: 200px;
+        height: 180px;
         top: 125px;
         left: 58%;
       }
 
-      @media screen and (max-width: 576px) {
-        width: 165px;
-        height: 185px;
-        top: 70px;
-        left: 53%;
+      &__banner-main_title {
+        margin-bottom: 0;
       }
+    }
 
-      @media screen and (max-width: 440px) {
+    @media screen and (max-width: 576px) {
+      &__order-a-project-icon {
+        top: 70px;
+        left: 55%;
+      }
+    }
+
+    @media screen and (max-width: 440px) {
+      &__order-a-project-icon {
         width: 140px;
         height: 150px;
         top: 81px;
-        left: 55%;
+        left: 52%;
       }
+    }
 
-      @media screen and (max-width: 390px) {
+    @media screen and (max-width: 390px) {
+      &__order-a-project-icon {
         width: 108px;
         height: 128px;
         top: 90px;
         left: 229px;
       }
+    }
 
-      @media screen and (min-width: 341px) and (max-width: 358px) {
+    @media screen and (min-width: 341px) and (max-width: 358px) {
+      &__order-a-project-icon {
         top: 150px;
         left: 210px;
       }
+    }
 
-      @media screen and (max-width: 340px) {
+    @media screen and (max-width: 340px) {
+      &__order-a-project-icon {
         width: 98px;
         height: 118px;
         top: 65px;
         left: 195px;
-      } 
+      }
     }
   }
 </style>
