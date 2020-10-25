@@ -1,48 +1,48 @@
 <template>
-  <section id="software-development" class="software-development main-parent-item">
+  <section id="software-development" class="software-development">
     <div class="container">
-        <h2 class="software-development__main-title main-title">
-            <span>Software</span><br>Development
-        </h2>
-        <div class="software-development__flex-wrapper flex-wrapper">
-         <SoftwareDevelopContent 
-            :title="backend.title" 
-            :subTitle="backend.subTitle" 
-            :firstParagraph="backend.firstParagraph"
-            :secondParagraph="backend.secondParagraph"
-            :thirdParagraph="backend.thirdParagraph"
-          />
-          <SoftwareDevelopContent 
-            :title="frontend.title" 
-            :subTitle="frontend.subTitle" 
-            :firstParagraph="frontend.firstParagraph"
-            :secondParagraph="frontend.secondParagraph"
-            class="frontend-item"
-          />
-          <SoftwareDevelopContent 
-            :title="mobile.title" 
-            :subTitle="mobile.subTitle" 
-            :firstParagraph="mobile.firstParagraph"
-            :secondParagraph="mobile.secondParagraph"
-          />
-        </div>
-        <UIButtonModalTrigger 
-          :buttonInnerText="buttonInnerText"
-          :modalWindowName="modalWindowName"
-          :isGrey="true"
+      <h2 class="software-development__main-title">Software Development</h2>
+      <div class="software-development__content row">
+        <SoftwareDevelopmentContent 
+          :title="backend.title" 
+          :subTitle="backend.subTitle" 
+          :firstParagraph="backend.firstParagraph"
+          :secondParagraph="backend.secondParagraph"
+          :icons="backend.icons"
         />
+        <SoftwareDevelopmentContent 
+          :title="frontend.title" 
+          :subTitle="frontend.subTitle" 
+          :firstParagraph="frontend.firstParagraph"
+          :secondParagraph="frontend.secondParagraph"
+          :icons="frontend.icons"
+        />
+        <SoftwareDevelopmentContent 
+          :title="mobile.title" 
+          :subTitle="mobile.subTitle" 
+          :firstParagraph="mobile.firstParagraph"
+          :secondParagraph="mobile.secondParagraph"
+          :icons="mobile.icons"
+        />
+      </div>
+      <UIButtonModalTrigger 
+        :buttonInnerText="buttonInnerText"
+        :modalWindowName="modalWindowName"
+        :isGrey="true"
+        class="software-development__button"
+      />
     </div>
   </section>
 </template>
 
 <script>
-import SoftwareDevelopContent from '@/components/Services/SoftwareDevelopContent';
+import SoftwareDevelopmentContent from '@/components/Services/SoftwareDevelopmentContent';
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 
 export default {
   name: 'SoftwareDevelopment',
   components: {
-    SoftwareDevelopContent,
+    SoftwareDevelopmentContent,
     UIButtonModalTrigger
   },
   data() {
@@ -50,24 +50,122 @@ export default {
       backend: {
         title: 'Backend',
         subTitle: 'Your MVP doesn\'t work as expected after launch?',
-        firstParagraph: 'Let our positively mad team rescue you and create sensible server logic for your project.',
-        secondParagraph: 'We\'ll cure your growth pains like good doctors – just tell us about them and focus on your business.',
-        thirdParagraph: 'At Mad Devs we know everything about:',
-        buttonInnerText: 'Get server help'
+        firstParagraph: 'Let our positively mad team rescue you and create sensible server logic for your project. We\'ll cure your growth pains like good doctors – just tell us about them and only focus on your business.',
+        secondParagraph: 'At Mad Devs we know everything about:',
+        icons: [
+          {
+            title: 'Python',
+            className: 'backend-python'
+          },
+          {
+            title: 'Go',
+            className: 'backend-go'
+          },
+          {
+            title: 'Node.js',
+            className: 'backend-node'
+          },
+          {
+            title: 'C',
+            className: 'backend-c'
+          },
+          {
+            title: 'TypeScript',
+            className: 'frontend-typescript'
+          },
+          {
+            title: 'PHP',
+            className: 'backend-php'
+          },
+          {
+            title: 'Ruby',
+            className: 'backend-ruby'
+          },
+          {
+            title: 'C++',
+            className: 'backend-c-plus'
+          }
+        ]
       },
       frontend: {
         title: 'Frontend',
         subTitle: 'Your users get lost in lousy interfaces?',
         firstParagraph: 'Our wizards will take your UX magic to the next level where everything is intuitive and user-friendly. Mad Devs strive to get involved with well-polished projects that will live a long life.',
         secondParagraph: 'We work with the best present-day frontend stack:',
-        buttonInnerText: 'Get UX help'
+        icons: [
+          {
+            title: 'JavaScript',
+            className: 'frontend-js'
+          },
+          {
+            title: 'React',
+            className: 'frontend-react'
+          },
+          {
+            title: 'Babel',
+            className: 'frontend-babel'
+          },
+          {
+            title: 'Vue',
+            className: 'frontend-vue'
+          },
+          {
+            title: 'PostCSS',
+            className: 'frontend-post-css'
+          },
+          {
+            title: 'Angular',
+            className: 'frontend-angular'
+          },
+          {
+            title: 'Nuxt.js',
+            className: 'frontend-nuxt'
+          },
+          {
+            title: 'SASS',
+            className: 'frontend-sass'
+          }
+        ]
       },
       mobile: {
         title: 'Mobile',
         subTitle: 'Your app is slow and unable to survive a demo?',
         firstParagraph: 'We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you\'ll be ecstatic to use yourself.',
         secondParagraph: 'We do both iOS and Android development using the following languages and frameworks:',
-        buttonInnerText: 'Get mobile help'
+        icons: [
+          {
+            title: 'Android',
+            className: 'mobile-android'
+          },
+          {
+            title: 'Kotlin',
+            className: 'mobile-kotlin'
+          },
+          {
+            title: 'Java',
+            className: 'mobile-java'
+          },
+          {
+            title: 'Firebase',
+            className: 'mobile-firebase'
+          },
+          {
+            title: 'iOS',
+            className: 'mobile-apple'
+          },
+          {
+            title: 'Objective-C',
+            className: 'mobile-obj-c'
+          },
+          {
+            title: 'Swift',
+            className: 'mobile-swift'
+          },
+          {
+            title: 'Flutter',
+            className: 'mobile-flutter'
+          }
+        ]
       },
       modalWindowName: 'get-your-trusted-it-partner',
       buttonInnerText: 'Get your trusted IT partner'
@@ -80,52 +178,47 @@ export default {
   @import '../../assets/styles/vars';
 
   .software-development {
-    padding: 106px 0 204px;
-    background-color: $bgcolor--black;
-
-    &__flex-wrapper {
-      margin-top: -40px;
-    }
+    padding-bottom: 128px;
 
     &__main-title {
-      color: $text-color--red;
-
-      span {
-        color: $text-color--black;
-        -webkit-text-stroke: $text-stroke--red;
-      }
+      text-align: center;
+      @include h2_title;
     }
 
-    button {
+    &__main-title,
+    &__button {
+      color: $text-color--white;
+    }
+
+    &__button {
       width: 100%;
-    }
-  }
+      height: 56px;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      border-color: $button-border--white-opacity;
 
-  @media only screen and (max-width: 1024px) {
-    .software-development {
-      padding-bottom: 90px;
+      &:hover {
+        background-color: $bgcolor--white;
+        color: $text-color--black !important;
+      }
 
-      &__flex-wrapper {
-        flex-wrap: wrap;
+      &:active {
+        background-color: $bgcolor--white !important;
+        border-color: $button-border--white-opacity !important;
+      }
+
+      @media screen and (max-width: 1280px) {
+        font-size: 14px;
       }
     }
-  }
 
-  @media only screen and (max-width: 768px) {
-    .software-development {
-      padding-bottom: 80px;
-    }
-  }
+    &__content {
+      margin-bottom: 22px;
 
-  @media only screen and (max-width: 520px) {
-    .software-development {
-      padding-bottom: 143px;
-    }
-  }
-
-  @media only screen and (max-width: 376px) {
-    .software-development {
-      padding-bottom: 80px;
+      @media screen and (min-width: 400px) and (max-width: 1023px) {
+        font-size: 16px;
+      }
     }
   }
 </style>

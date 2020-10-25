@@ -73,6 +73,10 @@ export default {
 
     &__sub-title {
       margin-bottom: 8px;
+
+      @media screen and (max-width: 1023px) {
+        margin-bottom: 13px;
+      }
     }
 
     &__sub-title-third-item {

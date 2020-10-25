@@ -185,10 +185,6 @@ export default {
         right: 15px;
       }
 
-      &__item-sub-title {
-        margin-bottom: 12px;
-      }
-
       &__ui-button-modal-trigger {
         font-size: 14px;
       }
@@ -212,6 +208,7 @@ export default {
 
       &__item-sub-title {
         width: 100%;
+        margin-bottom: 13px;
       }
 
       &__tech-staff-individuals {
