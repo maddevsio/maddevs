@@ -88,7 +88,7 @@ export default {
       }
 
       @media only screen and (max-width: 834px) {
-        margin-top: 0;
+        margin-top: 20px;
       }
     }
   }

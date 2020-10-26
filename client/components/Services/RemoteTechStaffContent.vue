@@ -180,6 +180,12 @@ export default {
       @include individuals-icon;
     }
 
+    @media only screen and (max-width: 1320px) {
+      &__tech-staff {
+        width: 475px;
+      }
+    }
+
     @media only screen and (max-width: 1280px) {
       &__tech-staff {
         width: 445px;
@@ -219,9 +225,19 @@ export default {
       }
     }
 
-    @media only screen and (max-width: 1160px) {
+    @media only screen and (max-width: 1220px) {
       &__tech-staff {
         width: 400px;
+      }
+    }
+
+    @media only screen and (max-width: 1080px) {
+      &__tech-staff {
+        width: 370px;
+      }
+
+      &__individuals-icon {
+        right: -20px;
       }
     }
 
@@ -241,7 +257,7 @@ export default {
       }
 
       &__tech-staff-individuals {
-        margin-top: 115px;
+        margin-top: 85px;
       }
 
       &__item-icon {
