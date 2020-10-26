@@ -178,7 +178,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .software-development {
-    padding-bottom: 128px;
+    padding-bottom: 96px;
 
     &__main-title {
       text-align: center;
@@ -219,6 +219,14 @@ export default {
       @media screen and (min-width: 400px) and (max-width: 1023px) {
         font-size: 16px;
       }
+    }
+
+    @media screen and (max-width: 834px) {
+      padding-bottom: 72px;
+    }
+
+    @media screen and (max-width: 578px) {
+      padding-bottom: 48px;
     }
   }
 </style>

@@ -75,7 +75,7 @@ export default {
 
     &__content {
       margin-top: -68px;
-      margin-bottom: 136px;
+      margin-bottom: 96px;
       padding: 83px 106px 52px 106px;
       border: 1px solid $border-color--red;
     }
@@ -84,16 +84,13 @@ export default {
       @include h2_title;
       width: max-content;
       margin: auto;
+      padding-top: 0 !important;
       padding-left: 32px;
       padding-right: 32px;
       position: relative;
       z-index: 1;
       background-color: $bgcolor--black;
       color: $text-color--red;
-
-      @media screen and  (min-width: 320px) {
-        padding-top: 0;
-      }
     }
 
     &__text-content {
@@ -152,7 +149,7 @@ export default {
       &__content {
         margin-top: -66px;
         padding-top: 74px;
-        margin-bottom: 80px;
+        margin-bottom: 72px;
       }
 
       &__main-title {
@@ -170,6 +167,12 @@ export default {
 
       &__main-title {
         margin-left: 36px;
+      }
+    }
+
+    @media screen and  (max-width: 578px) {
+      &__content {
+        margin-bottom: 48px;
       }
     }
 
