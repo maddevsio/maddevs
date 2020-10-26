@@ -1,5 +1,10 @@
 <template>
-  <div class="remoteTechStaffContent__tech-staff" :class="`remoteTechStaffContent__tech-staff-${title.toLowerCase()}`">
+  <div 
+    class="remoteTechStaffContent__tech-staff" 
+    :class="[(`remoteTechStaffContent__tech-staff-${title.toLowerCase()}`), (activeByDefault === true ? 'remoteTechStaffContent__tech-staff-active' : '')]"
+    @mouseover="handleMouseOver(title)"
+    @mouseout="handleMouseOut(title)"
+  >
     <div class="remoteTechStaffContent__content_wrapper">
       <div class="remoteTechStaffContent__text-wrap">
         <UIItemTitle :itemTitle="title" />
@@ -24,6 +29,12 @@ import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle';
 
 export default {
   name: 'RemoteTechStaffContent',
+  components: {
+    UIButtonModalTrigger,
+    UIItemTitle,
+    UIItemSubTitle,
+    UIParagraph
+  },
   props: {
     title: {
       type: String,
@@ -44,13 +55,31 @@ export default {
     modalWindowName: {
       type: String,
       default: 'Modal Window Name'
+    },
+    activeByDefault: {
+      type: Boolean,
+      default: null
     }
   },
-  components: {
-    UIButtonModalTrigger,
-    UIItemTitle,
-    UIItemSubTitle,
-    UIParagraph
+  data() {
+    return {
+      teamsItem: null
+    };
+  },
+  mounted() {
+    this.teamsItem = document.getElementsByClassName('remoteTechStaffContent__tech-staff-teams')[0];
+  },
+  methods: {
+    handleMouseOver(currentElement) {
+      if (currentElement !== 'Teams') {
+        this.teamsItem.classList.remove('remoteTechStaffContent__tech-staff-active');
+      }
+    },
+    handleMouseOut(currentElement) {
+      if (currentElement !== 'Teams') {
+        this.teamsItem.classList.add('remoteTechStaffContent__tech-staff-active');
+      }
+    }
   }
 };
 
@@ -66,13 +95,13 @@ export default {
       justify-content: space-between;
       position: relative;
       opacity: 0.6;
+    }
 
-      &:hover {
+    &__tech-staff-active, &__tech-staff:hover  {
+      opacity: 1;
+
+      .remoteTechStaffContent__item-icon {
         opacity: 1;
-
-        .remoteTechStaffContent__item-icon {
-          opacity: 1;
-        }
       }
     }
 

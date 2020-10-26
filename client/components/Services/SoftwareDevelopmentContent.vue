@@ -2,10 +2,12 @@
   <div class="content-item col-xl-4 col-lg-12">
     <div class="content-item__content-wrapper">
       <div class="content-item__text-content">
-        <UIItemTitle :itemTitle="title" class="content-item__title"/>
-        <UIItemSubTitle :itemSubTitle="subTitle" class="content-item__sub-title"/>
-        <UIParagraph :paragraph="firstParagraph" class="content-item__paragraph content-item__paragraph-first" v-html="firstParagraph"/>
-        <UIParagraph :paragraph="secondParagraph" class="content-item__paragraph content-item__paragraph-second" v-html="secondParagraph"/>
+        <client-only>
+          <UIItemTitle :itemTitle="title" class="content-item__title"/>
+          <UIItemSubTitle :itemSubTitle="subTitle" class="content-item__sub-title"/>
+          <UIParagraph :paragraph="firstParagraph" class="content-item__paragraph content-item__paragraph-first" v-html="firstParagraph"/>
+          <UIParagraph :paragraph="secondParagraph" class="content-item__paragraph content-item__paragraph-second" v-html="secondParagraph"/>
+        </client-only>
       </div>
       <SoftwareDevelopmentIcons :icons="icons"/>
     </div>
