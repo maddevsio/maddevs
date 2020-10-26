@@ -22,7 +22,7 @@ exports[`Remote tech staff renders correctly 1`] = `
       class="remoteTechStaff__tech-staff-items"
     >
       <div
-        class="remoteTechStaffContent__tech-staff remoteTechStaffContent__tech-staff-teams"
+        class="remoteTechStaffContent__tech-staff remoteTechStaffContent__tech-staff-teams remoteTechStaffContent__tech-staff-active"
       >
         <div
           class="remoteTechStaffContent__content_wrapper"
