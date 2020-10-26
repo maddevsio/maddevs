@@ -78,11 +78,15 @@ export default {
       }
     }
 
-    @media screen and  (max-width: 1023px) {
+    @media screen and (max-width: 1023px) {
       &__title, 
       &__sub-title,
       &__paragraph {
         width: 100%;
+      }
+
+      &__sub-title {
+        margin-bottom: 13px;
       }
 
       &:last-child {

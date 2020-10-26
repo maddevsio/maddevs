@@ -4,10 +4,10 @@ exports[`ItConsultingContent component renders correctly 1`] = `
 <div
   class="it-consulting-item col-xl-4 col-lg-4"
 >
-  <client-only-stub>
-    <div
-      class="it-consulting-item__text-content"
-    >
+  <div
+    class="it-consulting-item__text-content"
+  >
+    <client-only-stub>
       <h3
         class="item-title it-consulting-item__title"
       >
@@ -25,7 +25,7 @@ exports[`ItConsultingContent component renders correctly 1`] = `
       >
         Paragraph
       </p>
-    </div>
-  </client-only-stub>
+    </client-only-stub>
+  </div>
 </div>
 `;

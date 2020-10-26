@@ -1,12 +1,12 @@
 <template>
   <div class="it-consulting-item col-xl-4 col-lg-4">
-    <client-only>
-      <div class="it-consulting-item__text-content">
+    <div class="it-consulting-item__text-content">
+      <client-only>
         <UIItemTitle :itemTitle="title" class="it-consulting-item__title" v-html="title"/>
         <UIItemSubTitle :itemSubTitle="subTitle" class="it-consulting-item__sub-title" :class="`it-consulting-item__sub-title-${className}`" v-html="subTitle"/>
         <UIParagraph :paragraph="paragraph" class="it-consulting-item__paragraph"/>
-      </div>
-    </client-only>
+      </client-only>
+    </div>
   </div>
 </template>
 
@@ -73,6 +73,10 @@ export default {
 
     &__sub-title {
       margin-bottom: 8px;
+
+      @media screen and (max-width: 1023px) {
+        margin-bottom: 13px;
+      }
     }
 
     &__sub-title-third-item {

@@ -26,12 +26,11 @@ export default {
     color: $text-color--white;
 
     @media screen and (max-width: 1280px) {
-      margin-bottom: 16px;
+      margin-bottom: 14px;
       font-size: 27px;
     }
 
     @media only screen and (max-width: 834px) {
-      margin-bottom: 14px;
       font-size: 25px;
     }
   }
