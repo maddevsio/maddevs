@@ -29,10 +29,6 @@ export default {
     margin-top: 40px;
     text-align: center;
 
-    &__nav-link-privacy {
-      margin-left: 10px;
-    }
-
     &__nav-link,
 		&__company-name {
 			font-size: 14px;
@@ -40,6 +36,18 @@ export default {
       letter-spacing:  -0.02em;
       text-decoration: none;
 		}
+  }
+
+  @media only screen and (max-width: 600px) {
+    .footer-navbar-mobile {
+      text-align: left;
+
+      &__nav-link,
+      &__company-name {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
   }
 
   @media only screen and (max-width: 470px) {

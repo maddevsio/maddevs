@@ -193,7 +193,6 @@ export default {
 			padding: 14px 0;
 			font-size: 32px;
 			font-family: 'Poppins-Regular', sans-serif;
-			font-weight: 600;
 			letter-spacing: -1px;
 			line-height: 38px;
 			text-decoration: none;
@@ -220,14 +219,14 @@ export default {
 			background-color: transparent;
 			cursor: pointer;
 		}
-		
+
 		&__hamburger,
 		&__close {
 			width: 30px;
 			height: 30px;
 		}
 
-		&__hamburger { 
+		&__hamburger {
 			@include hamburger;
 		}
 
@@ -244,7 +243,7 @@ export default {
 		}
 
 		&__contacts {
-			margin-top: 12px;	
+			margin-top: 12px;
 		}
 
 		&__messengers-list {
@@ -285,7 +284,6 @@ export default {
 			display: inline-block;
 			margin-top: 11px;
 			font-size: 28px;
-			font-weight: 600;
 			line-height: 38px;
 			letter-spacing: -1px;
 			border-bottom: 1px solid $header-red-border-color;
@@ -300,7 +298,7 @@ export default {
 			@include flag-uk;
 		}
 
-		&__contact-title, 
+		&__contact-title,
 		&__messenger-name {
 			letter-spacing: -0.02em;
 		}
@@ -415,18 +413,18 @@ export default {
 			}
 		}
   }
-	
+
 	@media only screen and (max-width: 360px) {
 		.mobile-header {
 			&__header-routes_links {
 				padding-top: 20px;
 			}
-	
+
 			&__nav-link {
 				padding: 10px 0;
 				font-size: 29px;
 			}
-	
+
 			&__nav-blog-link {
 				padding-bottom: 25px;
 			}

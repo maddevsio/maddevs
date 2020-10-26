@@ -78,6 +78,11 @@ export default {
         width: 36px;
         height: 36px;
       }
+
+      @media screen and (max-width: 768px) {
+        width: 42px;
+        height: 42px;
+      }
     }
 
     &__social-network-github {
@@ -113,7 +118,7 @@ export default {
     }
   }
 
-  @media screen and (min-width: 991px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     @include social-network-list-grid;
   }
 

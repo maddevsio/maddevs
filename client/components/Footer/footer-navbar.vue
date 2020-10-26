@@ -3,8 +3,8 @@
     <p class="footer-navbar__company-name">© Mad Devs - {{ currentYear }}</p>
     <div class="footer-navbar__nav-list">
       <a href="/gdpr" target="_blank" class="footer-navbar__nav-item">GDPR Compliance Commitment</a>
-      <a href="/privacy" target="_blank" class="footer-navbar__nav-item">Privacy Policy</a>
       <a href="/nda" target="_blank" class="footer-navbar__nav-item">Non-Disclosure Agreement (NDA)</a>
+      <a href="/privacy" target="_blank" class="footer-navbar__nav-item">Privacy Policy</a>
     </div>
   </div>
 </template>
@@ -25,7 +25,7 @@ export default {
 
   .footer-navbar {
 		width: max-content;
-    margin-top: 73px;
+    margin-top: 64px;
 
     &__nav-list {
 			display: flex;
@@ -43,12 +43,12 @@ export default {
 		}
 
 		&__nav-item {
-			margin-left: 26px;
+			margin-right: 26px;
 			text-decoration: underline;
 			text-decoration-color: $footer--text-decoration-color;
 
-			&:first-child {
-				margin-left: 0;
+			&:last-child {
+				margin-right: 0;
 			}
 		}
   }

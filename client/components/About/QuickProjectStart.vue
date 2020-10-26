@@ -187,12 +187,6 @@ export default {
   }
 }
 
-@media only screen and (min-width: 960px) and (max-width: 1024px) {
-  .quickProjectStart__arrow-icon {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 960px) {
   .quickProjectStart {
     &__title {
