@@ -26,29 +26,31 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
           <div
             class="content-item__text-content"
           >
-            <h3
-              class="item-title content-item__title"
-            >
-              Backend
-            </h3>
-             
-            <h4
-              class="item-sub-title content-item__sub-title"
-            >
-              Your MVP doesn't work as expected after launch?
-            </h4>
-             
-            <p
-              class="paragraph content-item__paragraph content-item__paragraph-first"
-            >
-              Let our positively mad team rescue you and create sensible server logic for your project. We'll cure your growth pains like good doctors – just tell us about them and only focus on your business.
-            </p>
-             
-            <p
-              class="paragraph content-item__paragraph content-item__paragraph-second"
-            >
-              At Mad Devs we know everything about:
-            </p>
+            <client-only-stub>
+              <h3
+                class="item-title content-item__title"
+              >
+                Backend
+              </h3>
+               
+              <h4
+                class="item-sub-title content-item__sub-title"
+              >
+                Your MVP doesn't work as expected after launch?
+              </h4>
+               
+              <p
+                class="paragraph content-item__paragraph content-item__paragraph-first"
+              >
+                Let our positively mad team rescue you and create sensible server logic for your project. We'll cure your growth pains like good doctors – just tell us about them and only focus on your business.
+              </p>
+               
+              <p
+                class="paragraph content-item__paragraph content-item__paragraph-second"
+              >
+                At Mad Devs we know everything about:
+              </p>
+            </client-only-stub>
           </div>
            
           <ul
@@ -123,45 +125,47 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
           <div
             class="content-item__text-content"
           >
-            <h3
-              class="item-title content-item__title"
-            >
-              Frontend
-            </h3>
-             
-            <h4
-              class="item-sub-title content-item__sub-title"
-            >
-              Your users get lost in lousy interfaces?
-            </h4>
-             
-            <p
-              class="paragraph content-item__paragraph content-item__paragraph-first"
-            >
-              Our wizards will take your UX magic to the next level where everything is intuitive and 
-              <span>
-                user-friendly.
-              </span>
+            <client-only-stub>
+              <h3
+                class="item-title content-item__title"
+              >
+                Frontend
+              </h3>
                
-              <span>
-                Mad Devs
-              </span>
-               strive to get involved with 
-              <span>
-                well-polished
-              </span>
-               projects that will live a long life.
-            </p>
-             
-            <p
-              class="paragraph content-item__paragraph content-item__paragraph-second"
-            >
-              We work with the best 
-              <span>
-                present-day
-              </span>
-               frontend stack:
-            </p>
+              <h4
+                class="item-sub-title content-item__sub-title"
+              >
+                Your users get lost in lousy interfaces?
+              </h4>
+               
+              <p
+                class="paragraph content-item__paragraph content-item__paragraph-first"
+              >
+                Our wizards will take your UX magic to the next level where everything is intuitive and 
+                <span>
+                  user-friendly.
+                </span>
+                 
+                <span>
+                  Mad Devs
+                </span>
+                 strive to get involved with 
+                <span>
+                  well-polished
+                </span>
+                 projects that will live a long life.
+              </p>
+               
+              <p
+                class="paragraph content-item__paragraph content-item__paragraph-second"
+              >
+                We work with the best 
+                <span>
+                  present-day
+                </span>
+                 frontend stack:
+              </p>
+            </client-only-stub>
           </div>
            
           <ul
@@ -236,29 +240,31 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
           <div
             class="content-item__text-content"
           >
-            <h3
-              class="item-title content-item__title"
-            >
-              Mobile
-            </h3>
-             
-            <h4
-              class="item-sub-title content-item__sub-title"
-            >
-              Your app is slow and unable to survive a demo?
-            </h4>
-             
-            <p
-              class="paragraph content-item__paragraph content-item__paragraph-first"
-            >
-              We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you'll be ecstatic to use yourself.
-            </p>
-             
-            <p
-              class="paragraph content-item__paragraph content-item__paragraph-second"
-            >
-              We do both iOS and Android development using the following languages and frameworks:
-            </p>
+            <client-only-stub>
+              <h3
+                class="item-title content-item__title"
+              >
+                Mobile
+              </h3>
+               
+              <h4
+                class="item-sub-title content-item__sub-title"
+              >
+                Your app is slow and unable to survive a demo?
+              </h4>
+               
+              <p
+                class="paragraph content-item__paragraph content-item__paragraph-first"
+              >
+                We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you'll be ecstatic to use yourself.
+              </p>
+               
+              <p
+                class="paragraph content-item__paragraph content-item__paragraph-second"
+              >
+                We do both iOS and Android development using the following languages and frameworks:
+              </p>
+            </client-only-stub>
           </div>
            
           <ul

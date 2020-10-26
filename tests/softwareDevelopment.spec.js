@@ -132,7 +132,9 @@ describe('SoftwareDevelopment', () => {
   };
 
   beforeEach(() => {
-    wrapper = mount(SoftwareDevelopment);
+    wrapper = mount(SoftwareDevelopment, {
+      stubs: ['client-only']
+    });
   });
 
   test('is a Vue instance', () => {
