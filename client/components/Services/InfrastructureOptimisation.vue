@@ -74,10 +74,10 @@ export default {
     }
 
     &__content {
-      margin-top: -69px;
+      margin-top: -68px;
       margin-bottom: 136px;
       padding: 83px 106px 52px 106px;
-      border: 2px solid $border-color--red;
+      border: 1px solid $border-color--red;
     }
 
     &__main-title {
@@ -189,9 +189,9 @@ export default {
       }
 
       &__main-title {
-        margin-left: 26px;
-        padding-left: 0;
-        padding-right: 0;
+        margin-left: 15px;
+        padding-left: 10px;
+        padding-right: 15px;
       }
     }
 
@@ -201,7 +201,9 @@ export default {
       }
 
       &__main-title {
-        margin-left: 14px;
+        margin-left: 9px;
+        padding-left: 5px;
+        padding-right: 5px;
       }
     }
 
