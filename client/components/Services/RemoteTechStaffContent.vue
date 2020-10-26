@@ -162,6 +162,10 @@ export default {
         background-color: $bgcolor--white !important;
         border-color: $button-border--white-opacity !important;
       }
+
+      @media screen and (max-width: 375px) {
+        height: 48px;
+      }
     }
 
     &__teams-icon {

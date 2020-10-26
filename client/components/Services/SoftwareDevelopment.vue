@@ -211,6 +211,10 @@ export default {
       @media screen and (max-width: 1280px) {
         font-size: 14px;
       }
+
+      @media screen and (max-width: 375px) {
+        height: 48px;
+      }
     }
 
     &__content {
