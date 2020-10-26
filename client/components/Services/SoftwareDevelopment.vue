@@ -90,8 +90,8 @@ export default {
       frontend: {
         title: 'Frontend',
         subTitle: 'Your users get lost in lousy interfaces?',
-        firstParagraph: 'Our wizards will take your UX magic to the next level where everything is intuitive and user-friendly. Mad Devs strive to get involved with well-polished projects that will live a long life.',
-        secondParagraph: 'We work with the best present-day frontend stack:',
+        firstParagraph: 'Our wizards will take your UX magic to the next level where everything is intuitive and <span>user-friendly.</span> Mad Devs strive to get involved with <span>well-polished</span> projects that will live a long life.',
+        secondParagraph: 'We work with the best <span>present-day</span> frontend stack:',
         icons: [
           {
             title: 'JavaScript',

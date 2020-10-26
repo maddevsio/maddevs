@@ -61,6 +61,10 @@ export default {
         text-overflow: ellipsis;
         text-align: center;
         color: $software-icon-text-color;
+
+        @media only screen  and (min-width: 1999px) and (max-width: 1240px)  {
+          font-size: 9px;
+        }
       }
     }
 
@@ -79,6 +83,7 @@ export default {
   
         span {
           margin-top: 8px;
+          margin-bottom: -3px;
           font-size: 8px;
         }
       }

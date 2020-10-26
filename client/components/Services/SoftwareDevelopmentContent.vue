@@ -4,8 +4,8 @@
       <div class="content-item__text-content">
         <UIItemTitle :itemTitle="title" class="content-item__title"/>
         <UIItemSubTitle :itemSubTitle="subTitle" class="content-item__sub-title"/>
-        <UIParagraph :paragraph="firstParagraph" class="content-item__paragraph content-item__paragraph-first"/>
-        <UIParagraph :paragraph="secondParagraph" class="content-item__paragraph content-item__paragraph-second"/>
+        <UIParagraph :paragraph="firstParagraph" class="content-item__paragraph content-item__paragraph-first" v-html="firstParagraph"/>
+        <UIParagraph :paragraph="secondParagraph" class="content-item__paragraph content-item__paragraph-second" v-html="secondParagraph"/>
       </div>
       <SoftwareDevelopmentIcons :icons="icons"/>
     </div>
