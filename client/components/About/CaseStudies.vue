@@ -14,12 +14,6 @@
         >
           Case Studies
         </h2>
-        <img
-          class="projects-flame-background"
-          src="@/assets/img/Projects/png/projects-flame-bg.png"
-          alt="Projects Flame Image"
-          v-if="currentPageName === 'projects'"
-        />
       </div>
       <div class="projects">
         <SingleProject

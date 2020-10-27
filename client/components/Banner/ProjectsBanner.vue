@@ -1,16 +1,14 @@
 <template>
-  <div class="container banner-container">
-  <div class="banner-content projects-content">
-    <div class="text-content_wrapper">
-      <div class="main-title-wrapper">
-        <h1 class="banner-main_title">
-          Check out<br class="tablet-break"> our<br class="desktop-break">
-          <span class="main-title-white_part"> 50+ <br class="tablet-break">implemented projects!</span>
+  <div class="banner__banner-container banner-container">
+    <div class="banner__banner-content banner-content">
+      <div class="banner__main-title-wrapper main-title-wrapper container">
+        <h1 class="banner__banner-main_title banner-main_title">
+          Check out our <br> <span class="banner__main-title-white_part main-title-white_part"> 50+ implemented <br> projects!</span>
         </h1>
-        <navigationList />
+        <div class="banner__fire-icon"></div>
       </div>
+      <navigationList />
     </div>
-  </div>
   </div>
 </template>
 
@@ -26,134 +24,65 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .projects-content {
-    .container {
-      position: relative;
+  @import '../../assets/styles/_projectsBannerIcons';
 
-      .main-title-wrapper {
-        max-width: 100%;
-      }
+  .banner {
+    span {
+      white-space: nowrap;
     }
 
-    .navigation-wrap {
-      margin-top: 170px;
+    &__banner-main_title {
+      margin-bottom: 72px;
     }
 
-    .tablet-break {
-      display: none;
-    }
+    &__fire-icon {
+      display: block;
+      width: 407px;
+      height: 661px;
+      position: absolute;
+      top: 326px;
+      right: 100px;
+      @include fire-icon;
 
-    .text-content_wrapper {
-      display: flex;
-      padding-bottom: 90px;
-    }
-  }
-
-  @media only screen and (max-width: 1620px) {
-    .projects-content {
-      .text-content_wrapper {
-        display: flex;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1670px) and (min-width: 1565px) {
-    .banner-main_title {
-      width: 94%;
-    }
-  }
-
-  @media only screen and (max-width: 1520px) {
-    .projects-content {
-      .text-content_wrapper {
-        padding-bottom: 40px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .projects-content {
-      .text-content_wrapper {
-        padding-bottom: 170px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1005px) and (min-width: 770px) {
-    .projects-content {
-      .tablet-break {
-        display: block;
+      @media screen and (max-width: 1320px) {
+        width: 340px;
+        height: 600px;
+        top: 395px;
       }
 
-      .desktop-break {
-        display: none;
+      @media screen and (max-width: 1280px) {
+        top: 358px;
+      }
+
+      @media screen and (max-width: 1140px) {
+        top: 320px;
+      }
+
+      @media screen and (max-width: 991px) {
+        width: 300px;
+        height: 560px;
+        top: 259px;
+      }
+
+      @media screen and (max-width: 970px) {
+        width: 250px;
+        height: 510px;
+        top: 255px;
+      }
+
+      @media screen and (max-width: 834px) {
+        top: 206px;
+        right: 95px;
+      }
+
+      @media screen and (max-width: 690px) {
+        top: 294px;
+        right: 60px;
       }
     }
   }
 
-  @media only screen and (max-width: 970px) {
-    .projects-content {
-      .text-content_wrapper {
-        padding-bottom: 85px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    .projects-content {
-      .text-content_wrapper {
-        padding-bottom: 20px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 714px) {
-    .projects-content {
-      .tablet-break {
-        display: block;
-      }
-
-      .desktop-break {
-        display: none;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 670px) {
-    .banner-main_title {
-      font-size: 83px;
-    }
-
-    .projects-content {
-      .text-content_wrapper {
-        padding-bottom: 90px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 515px) {
-    .banner-main_title {
-      font-size: 54px;
-    }
-  }
-
-  @media only screen and (max-width: 455px) {
-    .projects-content {
-      .text-content_wrapper {
-        padding-bottom: 100px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 355px) {
-    .projects-content {
-      .text-content_wrapper {
-        padding-bottom: 94px;
-      }
-
-      .banner-main_title {
-        font-size: 48px;
-      }
-    }
+  /deep/ .navigation-list {
+    justify-content: flex-start;
   }
 </style>
