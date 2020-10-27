@@ -27,6 +27,14 @@ export default {
   @import '../../assets/styles/_projectsBannerIcons';
 
   .banner {
+    &__banner-content {
+      margin-bottom: 104px;
+    }
+
+    &__main-title-wrapper {
+      position: relative;
+    }
+
     &__banner-main_title {
       width: max-content;
       margin-bottom: 72px;
@@ -41,7 +49,7 @@ export default {
       width: 407px;
       height: 661px;
       position: absolute;
-      top: 326px;
+      top: 177px;
       right: 100px;
       @include fire-icon;
     }
@@ -50,19 +58,19 @@ export default {
       &__fire-icon {
         width: 340px;
         height: 600px;
-        top: 395px;
+        top: 249px;
       }
     }
 
     @media screen and (max-width: 1280px) {
       &__fire-icon {
-        top: 358px;
+        top: 213px;
       }
     }
 
     @media screen and (max-width: 1140px) {
       &__fire-icon {
-        top: 320px;
+        top: 175px;
       }
     }
 
@@ -74,7 +82,11 @@ export default {
       &__fire-icon {
         width: 300px;
         height: 560px;
-        top: 293px;
+        top: 184px;
+      }
+
+      &__banner-content {
+        margin-bottom: 70px;
       }
     }
 
@@ -82,24 +94,28 @@ export default {
       &__fire-icon {
         width: 250px;
         height: 510px;
-        top: 290px;
+        top: 180px;
       } 
     }
 
     @media screen and (max-width: 834px) {
       &__fire-icon {
-        top: 306px;
+        top: 187px;
         right: 95px;
       }
 
       &__small-screen-break {
         display: block;
       }
+
+      &__banner-content {
+        margin-bottom: 60px;
+      }
     }
 
     @media screen and (max-width: 768px) {
       &__fire-icon {
-        top: 314px;
+        top: 194px;
         right: 75px;
       }
     }
@@ -108,20 +124,20 @@ export default {
       &__fire-icon {
         width: 240px;
         height: 470px;
-        top: 428px;
+        top: 308px;
         right: 55px;
       }
     }
 
     @media screen and (max-width: 578px) {
       &__fire-icon {
-        top: 404px;
+        top: 284px;
       }
     }
 
     @media screen and (max-width: 576px) {
       &__fire-icon {
-        top: 262px;
+        top: 142px;
       }
 
       &__small-screen-break {
@@ -133,7 +149,7 @@ export default {
       &__fire-icon {
         width: 203px;
         height: 400px;
-        top: 368px;
+        top: 248px;
         right: 45px;
       }
 
@@ -146,7 +162,7 @@ export default {
       &__fire-icon {
         width: 145px;
         height: 300px;
-        top: 453px;
+        top: 333px;
       }
     }
 
@@ -158,7 +174,7 @@ export default {
 
     @media screen and (max-width: 420px) {
       &__fire-icon {
-        top: 495px;
+        top: 376px;
         right: 35px;
       }
     }
@@ -169,7 +185,7 @@ export default {
       }
 
       &__fire-icon {
-        top: 475px;
+        top: 356px;
       }
     }
 
@@ -179,7 +195,7 @@ export default {
       }
 
       &__fire-icon {
-        top: 455px;
+        top: 336px;
         right: 30px;
       }
     }
