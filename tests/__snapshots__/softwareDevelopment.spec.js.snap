@@ -18,7 +18,7 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
       class="software-development__content row"
     >
       <div
-        class="content-item col-xl-4 col-lg-12"
+        class="content-item col-xl-4 col-lg-4"
       >
         <div
           class="content-item__content-wrapper"
@@ -40,7 +40,7 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
               </h4>
                
               <p
-                class="paragraph content-item__paragraph content-item__paragraph-first"
+                class="paragraph content-item__paragraph content-item__paragraph-first content-item__paragraph-backend"
               >
                 Let our positively mad team rescue you and create sensible server logic for your project. We'll cure your growth pains like good doctors – just tell us about them and only focus on your business.
               </p>
@@ -117,7 +117,7 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
       </div>
        
       <div
-        class="content-item col-xl-4 col-lg-12"
+        class="content-item col-xl-4 col-lg-4"
       >
         <div
           class="content-item__content-wrapper"
@@ -139,7 +139,7 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
               </h4>
                
               <p
-                class="paragraph content-item__paragraph content-item__paragraph-first"
+                class="paragraph content-item__paragraph content-item__paragraph-first content-item__paragraph-frontend"
               >
                 Our wizards will take your UX magic to the next level where everything is intuitive and 
                 <span>
@@ -232,7 +232,7 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
       </div>
        
       <div
-        class="content-item col-xl-4 col-lg-12"
+        class="content-item col-xl-4 col-lg-4"
       >
         <div
           class="content-item__content-wrapper"
@@ -254,7 +254,7 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
               </h4>
                
               <p
-                class="paragraph content-item__paragraph content-item__paragraph-first"
+                class="paragraph content-item__paragraph content-item__paragraph-first content-item__paragraph-mobile"
               >
                 We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you'll be ecstatic to use yourself.
               </p>
