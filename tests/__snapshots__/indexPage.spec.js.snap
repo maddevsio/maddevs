@@ -864,14 +864,14 @@ exports[`Index page renders correctly 1`] = `
     >
       <div>
         <h2
-          class="case-studies__main-title"
+          class="case-studies__main-title case-studies__main-title-"
         >
           
-        Case Studies
+        Case 
+          <!---->
+           Studies
       
         </h2>
-         
-        <!---->
       </div>
        
       <div
