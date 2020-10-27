@@ -185,17 +185,17 @@ export default {
 	@media only screen and (max-width: 1320px) {
 		.footer-contacts {
 			&__contact-link {
-				font-size: 30px;
+				font-size: 28px;
 			}
 
-			&__messenger-item {
-        width: 36px;
-        height: 36px;
-      }
+			//&__messenger-item {
+      //  width: 36px;
+      //  height: 36px;
+      //}
 		}
 	}
 
-	@media only screen and (min-width: 991px) and (max-width: 1200px) {
+	@media only screen and (min-width: 768px) and (max-width: 1200px) {
 		.footer-contacts {
       &__contact-item {
         margin-bottom: 42px;
@@ -260,6 +260,11 @@ export default {
 		.footer-contacts {
 			@include contacts-head-content;
 		  @include messenger-list-grid;
+
+      &__contact-title {
+        font-size: 13px;
+        line-height: 22px;
+      }
 		}
 	}
 
@@ -269,7 +274,7 @@ export default {
         width: max-content;
         display: grid;
         grid-template-columns: repeat(2, max-content);
-        grid-column-gap: 53px;
+        grid-column-gap: 33px;
       }
 
       &__messenger-item {

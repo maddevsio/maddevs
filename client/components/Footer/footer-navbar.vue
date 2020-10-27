@@ -33,7 +33,8 @@ export default {
 
 		&__nav-item,
 		&__company-name {
-			font-size: 15px;
+			font-size: 16px;
+      line-height: 24px;
 			color: $text-color--grey;
 			letter-spacing:  -0.02em;
 		}
@@ -49,15 +50,6 @@ export default {
 
 			&:last-child {
 				margin-right: 0;
-			}
-		}
-  }
-
-  @media only screen and (max-width: 1320px) {
-		.footer-navbar {
-			&__nav-item,
-			&__company-name {
-				font-size: 14px;
 			}
 		}
   }

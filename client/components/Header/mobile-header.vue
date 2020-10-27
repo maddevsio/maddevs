@@ -304,20 +304,20 @@ export default {
 		}
 
 		&__contact-title {
-			font-size: 15px;
-			line-height: 22px;
+			font-size: 16px;
+			line-height: 24px;
 		}
 
 		&__messenger-item {
 			display: block;
-			width: 32px;
-			height: 32px;
+			width: 42px;
+			height: 42px;
 			margin-right: 3px;
 		}
 
 		&__messenger-name {
-			font-size: 12px;
-			line-height: 18px;
+			font-size: 16px;
+			line-height: 24px;
 			color: $text-color--grey;
 		}
 
@@ -389,10 +389,6 @@ export default {
 				margin-bottom: 62px;
 			}
 
-			/deep/ .footer-contacts__messengers-list {
-				grid-column-gap: 35px;
-			}
-
 			/deep/ .footer-contacts__social-network-list-desktop {
 				display: block;
 			}
@@ -412,6 +408,14 @@ export default {
 				font-size: 28px;
 			}
 		}
+  }
+
+  @media screen and (max-width: 600px) {
+    .mobile-header {
+      /deep/ .footer-contacts__messengers-list {
+        grid-column-gap: 35px;
+      }
+    }
   }
 
 	@media only screen and (max-width: 360px) {
