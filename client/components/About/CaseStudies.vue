@@ -8,11 +8,9 @@
       <div>
         <h2
           class="case-studies__main-title"
-          :class="{
-            'case-studies--projects__main-title': currentPageName === 'projects'
-          }"
+          :class="`case-studies__main-title-${currentPageName}`"
         >
-          Case Studies
+          Case <br v-if="currentPageName === 'projects'"> Studies
         </h2>
       </div>
       <div class="projects">
@@ -127,6 +125,20 @@ export default {
 .case-studies {
   &--projects .projects-flame-background {
     position: absolute;
+  }
+
+  &__main-title-projects {
+    text-align: left !important;
+
+    br {
+      display: none;
+    }
+
+    @media screen and (max-width: 420px) {
+      br {
+        display: block;
+      }
+    }
   }
 
   .container {
