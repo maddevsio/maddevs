@@ -97,7 +97,7 @@ export default {
     }
 
     &__paragraph-frontend {
-      @media screen and (min-width: 992px) and (max-width: 1075px) {
+      @media screen and (min-width: 992px) and (max-width: 1070px) {
         width: 183px;
         line-height: 25px;
       }
