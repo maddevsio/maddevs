@@ -130,7 +130,7 @@ export default {
 
 		.submit-button {
       width: 100%;
-      height: 65px;
+      height: 64px;
 		}
 
 		.textarea {
@@ -141,6 +141,7 @@ export default {
 
     .fields-list {
       display: grid;
+      margin-bottom: 25px;
     }
 
     .form-checkboxes {
@@ -149,25 +150,41 @@ export default {
     }
 
     .field-item {
-      margin-bottom: 10px;
+      margin-bottom: 13px;
+      display: flex;
+      flex-direction: column;
+
+      > div {
+        width: 100%;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     .entry-field {
-      padding: 15px 17px;
+      padding: 12px 19px 13px;
       border: 1px solid $border-color--grey-form;
       border-radius: 4px;
       background-color: transparent;
       color: $text-color--white-darken;
+      font-size: 16px;
+      line-height: 27px;
 
       &::placeholder {
         color: $text-color--grey-form-placeholder;
       }
+
+      &.textarea {
+        font-size: 16px;
+        line-height: 27px;
+      }
     }
 
-    .entry-field,
-    .textarea,
     .submit-button {
       font-size: 16px;
+      line-height: 24px;
     }
 
     .entry-field,
@@ -186,11 +203,12 @@ export default {
 
     /deep/ .form-checkbox-label {
       padding-left: 30px;
-      font-size: 15px;
+      font-size: 16px;
+      line-height: 24px;
       letter-spacing: -0.02em;
     }
   }
-  
+
   @media only screen and (max-width: 1320px) {
 		.footer-form {
       .entry-field,
@@ -201,7 +219,7 @@ export default {
       }
 
       &_email {
-        /deep/ .v-placeholder-asterisk {
+         /deep/ .v-placeholder-asterisk {
           font-size: 14px;
         }
       }

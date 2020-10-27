@@ -232,11 +232,6 @@ export default {
       width: 21px;
       height: 15px;
     }
-
-    &__paragraph {
-      font-size: 14px;
-      line-height: 25px;
-    }
   }
 }
 
@@ -247,12 +242,19 @@ export default {
 }
 
 @media screen and (max-width: 834px) {
-  .weCreateItProject__main-title {
-    padding-top: 33px;
-    margin-bottom: 3px;
+  .weCreateItProject {
+    &__paragraph {
+      font-size: 14px;
+      line-height: 25px;
+    }
 
-    br {
-      display: none;
+    &__main-title {
+      padding-top: 33px;
+      margin-bottom: 3px;
+
+      br {
+        display: none;
+      }
     }
   }
 }

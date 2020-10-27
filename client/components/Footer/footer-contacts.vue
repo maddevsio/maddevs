@@ -76,22 +76,9 @@ export default {
 			flex-direction: column;
 			margin-bottom: 31px;
 		}
-
-		&__contact-item {
-			&:last-child {
-				margin-top: 38px;
-			}
-		}
 	}
 
 	@mixin messenger-list-grid {
-		&__messengers-list {
-			width: max-content;
-			display: grid;
-			grid-template-columns: repeat(2, max-content);
-			grid-column-gap: 40px;
-		}
-
 		&__messenger-item-wrapper {
 			justify-content: flex-start;
 		}
@@ -144,17 +131,12 @@ export default {
 		&__contact-link {
 			display: inline-block;
 			margin-top: 12px;
-			font-size: 34px;
-			font-weight: 600;
+      font-size: 34px;
+      line-height: 100%;
 			font-family: 'Poppins-Regular', sans-serif;
-			line-height: 32px;
 			letter-spacing: -1px;
-			border-bottom: 1px solid $border-color--red;
+			border-bottom: 1px solid $text-color--red-opacity;
 			text-decoration: none;
-		}
-
-		&__lists-wrapper {
-			max-width: 86%;
 		}
 
 		&__messenger-item-wrapper {
@@ -178,8 +160,8 @@ export default {
 		}
 
 		&__social-network-list-desktop {
-			margin-top: 52px;
-			padding-top: 52px;
+			margin-top: 53px;
+			padding-top: 53px;
 			border-top: 1px solid $border-color--grey-dark-transparent;
 		}
 
@@ -206,11 +188,6 @@ export default {
 				font-size: 30px;
 			}
 
-			&__contact-title,
-			&__messenger-name {
-				font-size: 14px;
-			}
-
 			&__messenger-item {
         width: 36px;
         height: 36px;
@@ -220,6 +197,15 @@ export default {
 
 	@media only screen and (min-width: 991px) and (max-width: 1200px) {
 		.footer-contacts {
+      &__contact-item {
+        margin-bottom: 42px;
+
+        &:last-child {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+
 			&__social-network-list-desktop {
 				margin-top: 35px;
 				padding-top: 40px;
@@ -230,28 +216,45 @@ export default {
 		}
 	}
 
+  @media screen and (max-width: 1100px) and (min-width: 768px) {
+    .footer-contacts__messengers-list {
+      width: max-content;
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      grid-column-gap: 40px;
+    }
+  }
+
 	@media only screen and (max-width: 991px) {
 		.footer-contacts {
 			&__head-content {
 				flex-direction: row;
-				margin-bottom: 31px;
-			}
-
-			&__contact-item {
-				&:last-child {
-					margin-top: 0;
-				}
+				margin-bottom: 48px;
+        flex-wrap: wrap;
 			}
 
 			&__lists-wrapper {
 				max-width: 100%;
 			}
-
-			&__social-network-list-desktop {
-				display: none;
-			}
 		}
 	}
+
+  @media screen and (max-width: 767px) {
+    .footer-contacts {
+      &__social-network-list-desktop {
+        display: none;
+      }
+
+      &__contact-item {
+        margin-bottom: 33px;
+
+        &:last-child {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 
 	@media only screen and (max-width: 640px) {
 		.footer-contacts {
@@ -259,4 +262,20 @@ export default {
 		  @include messenger-list-grid;
 		}
 	}
+
+  @media screen and (max-width: 600px) {
+    .footer-contacts {
+      &__messengers-list {
+        width: max-content;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-column-gap: 53px;
+      }
+
+      &__messenger-item {
+        width: 42px;
+        height: 42px;
+      }
+    }
+  }
 </style>

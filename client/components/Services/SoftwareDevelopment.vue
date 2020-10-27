@@ -90,8 +90,8 @@ export default {
       frontend: {
         title: 'Frontend',
         subTitle: 'Your users get lost in lousy interfaces?',
-        firstParagraph: 'Our wizards will take your UX magic to the next level where everything is intuitive and user-friendly. Mad Devs strive to get involved with well-polished projects that will live a long life.',
-        secondParagraph: 'We work with the best present-day frontend stack:',
+        firstParagraph: 'Our wizards will take your UX magic to the next level where everything is intuitive and <span>user-friendly.</span> <span>Mad Devs</span> strive to get involved with <span>well-polished</span> projects that will live a long life.',
+        secondParagraph: 'We work with the best <span>present-day</span> frontend stack:',
         icons: [
           {
             title: 'JavaScript',
@@ -178,7 +178,7 @@ export default {
   @import '../../assets/styles/vars';
 
   .software-development {
-    padding-bottom: 128px;
+    padding-bottom: 96px;
 
     &__main-title {
       text-align: center;
@@ -211,6 +211,10 @@ export default {
       @media screen and (max-width: 1280px) {
         font-size: 14px;
       }
+
+      @media screen and (max-width: 375px) {
+        height: 48px;
+      }
     }
 
     &__content {
@@ -219,6 +223,14 @@ export default {
       @media screen and (min-width: 400px) and (max-width: 1023px) {
         font-size: 16px;
       }
+    }
+
+    @media screen and (max-width: 834px) {
+      padding-bottom: 72px;
+    }
+
+    @media screen and (max-width: 578px) {
+      padding-bottom: 48px;
     }
   }
 </style>

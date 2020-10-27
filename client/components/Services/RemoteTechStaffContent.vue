@@ -1,5 +1,10 @@
 <template>
-  <div class="remoteTechStaffContent__tech-staff" :class="`remoteTechStaffContent__tech-staff-${title.toLowerCase()}`">
+  <div 
+    class="remoteTechStaffContent__tech-staff" 
+    :class="[(`remoteTechStaffContent__tech-staff-${title.toLowerCase()}`), (activeByDefault === true ? 'remoteTechStaffContent__tech-staff-active' : '')]"
+    @mouseover="handleMouseOver(title)"
+    @mouseout="handleMouseOut(title)"
+  >
     <div class="remoteTechStaffContent__content_wrapper">
       <div class="remoteTechStaffContent__text-wrap">
         <UIItemTitle :itemTitle="title" />
@@ -24,6 +29,12 @@ import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle';
 
 export default {
   name: 'RemoteTechStaffContent',
+  components: {
+    UIButtonModalTrigger,
+    UIItemTitle,
+    UIItemSubTitle,
+    UIParagraph
+  },
   props: {
     title: {
       type: String,
@@ -44,13 +55,31 @@ export default {
     modalWindowName: {
       type: String,
       default: 'Modal Window Name'
+    },
+    activeByDefault: {
+      type: Boolean,
+      default: null
     }
   },
-  components: {
-    UIButtonModalTrigger,
-    UIItemTitle,
-    UIItemSubTitle,
-    UIParagraph
+  data() {
+    return {
+      teamsItem: null
+    };
+  },
+  mounted() {
+    this.teamsItem = document.getElementsByClassName('remoteTechStaffContent__tech-staff-teams')[0];
+  },
+  methods: {
+    handleMouseOver(currentElement) {
+      if (currentElement !== 'Teams') {
+        this.teamsItem.classList.remove('remoteTechStaffContent__tech-staff-active');
+      }
+    },
+    handleMouseOut(currentElement) {
+      if (currentElement !== 'Teams') {
+        this.teamsItem.classList.add('remoteTechStaffContent__tech-staff-active');
+      }
+    }
   }
 };
 
@@ -66,13 +95,13 @@ export default {
       justify-content: space-between;
       position: relative;
       opacity: 0.6;
+    }
 
-      &:hover {
+    &__tech-staff-active, &__tech-staff:hover  {
+      opacity: 1;
+
+      .remoteTechStaffContent__item-icon {
         opacity: 1;
-
-        .remoteTechStaffContent__item-icon {
-          opacity: 1;
-        }
       }
     }
 
@@ -133,6 +162,10 @@ export default {
         background-color: $bgcolor--white !important;
         border-color: $button-border--white-opacity !important;
       }
+
+      @media screen and (max-width: 375px) {
+        height: 48px;
+      }
     }
 
     &__teams-icon {
@@ -149,6 +182,12 @@ export default {
       top: -35px;
       right: -6px;
       @include individuals-icon;
+    }
+
+    @media only screen and (max-width: 1320px) {
+      &__tech-staff {
+        width: 475px;
+      }
     }
 
     @media only screen and (max-width: 1280px) {
@@ -190,9 +229,19 @@ export default {
       }
     }
 
-    @media only screen and (max-width: 1160px) {
+    @media only screen and (max-width: 1220px) {
       &__tech-staff {
         width: 400px;
+      }
+    }
+
+    @media only screen and (max-width: 1080px) {
+      &__tech-staff {
+        width: 370px;
+      }
+
+      &__individuals-icon {
+        right: -20px;
       }
     }
 
@@ -212,7 +261,7 @@ export default {
       }
 
       &__tech-staff-individuals {
-        margin-top: 115px;
+        margin-top: 85px;
       }
 
       &__item-icon {

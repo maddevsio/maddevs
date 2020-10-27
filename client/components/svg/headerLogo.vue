@@ -40,7 +40,7 @@ export default {
       this.changeLogoState(this.mobileMenuScrollBar.scrollTop);
     },
     changeLogoState(scrollTop) {
-      if(scrollTop >= 20) {
+      if(scrollTop >= 10) {
         this.headerLogoTextDisplayState = true;
       } else {
         this.headerLogoTextDisplayState = false;

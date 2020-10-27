@@ -383,6 +383,7 @@
     content: '*';
     padding-left: 3px;
     color: $text-color--red;
+    position: absolute;
   }
 }
 
@@ -404,7 +405,7 @@
   letter-spacing: -0.03em;
 
   &:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   input:checked ~ .checkmark {

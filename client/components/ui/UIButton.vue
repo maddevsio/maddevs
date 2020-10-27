@@ -40,13 +40,14 @@ export default {
 
   .ui-button {
     height: 64px;
-    border: 1px solid $border-color--red;
+    border: 1px solid $border-color--red-opacity;
     background-color: $bgcolor--red;
+    border-radius: 4px;
     color: $text-color--white;
     font-size: 21px;
     font-family: 'Poppins-Bold', sans-serif;
     font-weight: 700;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     box-shadow: none;
     transition: 0.4s;
     cursor: pointer;
@@ -65,7 +66,6 @@ export default {
 
     &--disabled {
       cursor: not-allowed;
-      opacity: 0.5;
       user-select: none;
     }
 

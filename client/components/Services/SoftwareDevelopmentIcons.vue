@@ -61,14 +61,23 @@ export default {
         text-overflow: ellipsis;
         text-align: center;
         color: $software-icon-text-color;
+
+        @media only screen  and (min-width: 1999px) and (max-width: 1240px)  {
+          font-size: 9px;
+        }
       }
     }
 
     @media only screen and (max-width: 1199px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: 991px) {
       grid-template-columns: repeat(8, 1fr);
     }
 
-    @media only screen and (max-width: 660px) {
+    @media only screen and (max-width: 740px) {
+
       &__icon-item {
         height: 54px;
 
@@ -79,12 +88,13 @@ export default {
   
         span {
           margin-top: 8px;
+          margin-bottom: -3px;
           font-size: 8px;
         }
       }
     }
 
-    @media only screen and (max-width: 540px) {
+    @media only screen and (max-width: 660px) {
       grid-template-columns: repeat(4, 1fr);
     }
   }

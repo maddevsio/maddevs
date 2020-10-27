@@ -64,31 +64,38 @@ export default {
 
     @media screen and (max-width: 1140px) {
       &__order-a-project-icon {
-        width: 250px;
-        height: 240px;
-        top: -3px;
-        left: 64%;
+        width: 210px;
+        height: 200px;
+        top: 2px;
+        left: 68%;
       }
 
       &__banner-main_title {
-        margin-bottom: 57px;
+        margin-bottom: 33px;
       }
     }
 
     @media screen and (max-width: 970px) {
       &__order-a-project-icon {
-        width: 200px;
-        height: 190px;
+        width: 180px;
+        height: 170px;
+        left: 67%;
       }
 
       &__banner-main_title {
-        margin-bottom: 42px;
+        margin-bottom: 30px;
       }
     }
 
     @media screen and (max-width: 834px) {
       &__order-a-project-icon {
-        left: 67%;
+        width: 160px;
+        height: 140px;
+        left: 73%;
+      }
+
+      &__banner-main_title {
+        margin-bottom: 0;
       }
     }
 
@@ -101,14 +108,20 @@ export default {
       }
 
       &__banner-main_title {
-        margin-bottom: 0;
+        margin-bottom: 44px;
       }
     }
 
     @media screen and (max-width: 576px) {
       &__order-a-project-icon {
-        top: 70px;
-        left: 55%;
+        width: 170px;
+        height: 150px;
+        top: 80px;
+        left: 56%;
+      }
+
+      &__banner-main_title {
+        margin-bottom: 30px;
       }
     }
 

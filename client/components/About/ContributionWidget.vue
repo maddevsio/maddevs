@@ -90,7 +90,7 @@ export default {
   font-family: 'Poppins-Regular', sans-serif;
   margin-top: 26px;
   font-size: 17px;
-  line-height: 120%;
+  line-height: 18px;
   letter-spacing: -1px;
 
   @media screen and (max-width: 1024px) {
@@ -103,17 +103,13 @@ export default {
   }
 
   @media screen and (max-width: 650px) {
-    font-size: 12px;
-    line-height: 18px;
-  }
-
-  @media screen and (max-width: 608px) {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
   }
 
   &__img {
     width: 20px;
+    min-width: 20px;
     height: 18px;
 
     &_guardrails,
