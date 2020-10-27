@@ -69,10 +69,15 @@ export default {
     }
 
     @media only screen and (max-width: 1199px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: 991px) {
       grid-template-columns: repeat(8, 1fr);
     }
 
-    @media only screen and (max-width: 660px) {
+    @media only screen and (max-width: 740px) {
+
       &__icon-item {
         height: 54px;
 
@@ -89,7 +94,7 @@ export default {
       }
     }
 
-    @media only screen and (max-width: 540px) {
+    @media only screen and (max-width: 660px) {
       grid-template-columns: repeat(4, 1fr);
     }
   }

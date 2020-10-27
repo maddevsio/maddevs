@@ -1,11 +1,11 @@
 <template>
-  <div class="content-item col-xl-4 col-lg-12">
+  <div class="content-item col-xl-4 col-lg-4">
     <div class="content-item__content-wrapper">
       <div class="content-item__text-content">
         <client-only>
           <UIItemTitle :itemTitle="title" class="content-item__title"/>
           <UIItemSubTitle :itemSubTitle="subTitle" class="content-item__sub-title"/>
-          <UIParagraph :paragraph="firstParagraph" class="content-item__paragraph content-item__paragraph-first" v-html="firstParagraph"/>
+          <UIParagraph :paragraph="firstParagraph" class="content-item__paragraph content-item__paragraph-first" :class="`content-item__paragraph-${title.toLowerCase()}`" v-html="firstParagraph"/>
           <UIParagraph :paragraph="secondParagraph" class="content-item__paragraph content-item__paragraph-second" v-html="secondParagraph"/>
         </client-only>
       </div>
@@ -93,6 +93,13 @@ export default {
 
       @media screen and (min-width: 400px) and (max-width: 991px) {
         margin-bottom: 11px;
+      }
+    }
+
+    &__paragraph-frontend {
+      @media screen and (min-width: 992px) and (max-width: 1075px) {
+        width: 183px;
+        line-height: 25px;
       }
     }
   }
