@@ -1,22 +1,22 @@
 <template>
   <section id="open-source" class="open-source">
     <div class="container">
-      <div>
+      <div class="open-source__top-text-content">
         <h3 class="open-source__main-title">Our code - available in open source - is used by many other companies.</h3>
         <div class="open-source__github-wrap">
-          <p class="open-source__description">70+ of Mad Devs' pet projects have been shared with <br> the community via GitHub.</p>
+          <p class="open-source__description">70+ of <span>Mad Devs'</span> pet projects have been shared with <br> the community via GitHub.</p>
           <a class="open-source__github-icon" href="https://github.com/maddevsio" target="_blank"></a>
         </div>
       </div>
       <div class="open-source__projects row">
-        <div class="col-xl-4" v-for="(openSource, i) in openSources" :key="i">
+        <div class="col-xl-4 col-lg-4 col-md-6" v-for="(openSource, i) in openSources" :key="i">
           <div class="open-source__project" :class="`open-source__project-${openSource.projectName}`">
             <a class="open-source__project-link" :href="openSource.link" target="_blank">
               <div class="open-source__content-wrap">
                 <div :class="`open-source__icon open-source__${openSource.projectName}`"></div>
                 <p class="open-source__industry">{{ openSource.industry }}</p>
               </div>
-              <p class="open-source__paragraph">{{ openSource.description }}</p>
+              <p class="open-source__paragraph" v-html="openSource.description">{{ openSource.description }}</p>
             </a>
           </div>
         </div>
@@ -27,23 +27,8 @@
 </template>
 
 <script>
-import MadLocationLogo from '@/components/Projects/MadLocationLogo';
-import AriadnaLogo from '@/components/Projects/AriadnaLogo';
-import HeimdallLogo from '@/components/Projects/HeimdallLogo';
-import ComedianLogo from '@/components/Projects/ComedianLogo';
-import IdMatchLogo from '@/components/Projects/IdMatchLogo';
-import YourCastLogo from '@/components/Projects/YourCastLogo';
-
 export default {
   name: 'OpenSource',
-  components: {
-    MadLocationLogo,
-    AriadnaLogo,
-    HeimdallLogo,
-    ComedianLogo,
-    IdMatchLogo,
-    YourCastLogo
-  },
   data() {
     return {
       openSources: [
@@ -57,13 +42,13 @@ export default {
           projectName: 'comedian',
           industry: 'Team Management',
           link: 'https://github.com/maddevsio/comedian',
-          description: 'A team-management system leveraging Slack and Telegram bot functionalities to enable remote standups and track daily performance.'
+          description: 'A <span>team-management</span> system leveraging Slack and Telegram bot functionalities to enable remote standups and track daily performance.'
         },
         {
           projectName: 'ariadna',
           industry: 'Logistics',
           link: 'https://github.com/maddevsio/ariadna',
-          description: 'An open-source geocoder, built on top of ElasticSearch, for fast geocoding and better search for CIS countries.'
+          description: 'An <span>open-source</span> geocoder, built on top of ElasticSearch, for fast geocoding and better search for CIS countries.'
         },
         {
           projectName: 'id-match',
@@ -81,7 +66,7 @@ export default {
           projectName: 'heimdall',
           industry: 'Security',
           link: 'https://github.com/maddevsio/heimdall',
-          description: 'A security-monitoring solution for Ethereum smart contracts.'
+          description: 'A <span>security-monitoring</span> solution for Ethereum smart contracts.'
         }
       ]
     };
@@ -108,6 +93,10 @@ export default {
     padding-bottom: 15px;
   }
 
+  &__top-text-content {
+    margin-bottom: 20px;
+  }
+
   &__description,
   &__paragraph,
   &__github-link,
@@ -117,13 +106,31 @@ export default {
     line-height: 24px;
     letter-spacing: -0.02em;
     color: $text-color--black-lighter;
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  &__github-wrap {
+    display: flex;
+    justify-content: center;
+    margin-right: -84px;
   }
 
   &__github-icon {
     width: 84px;
     height: 79px;
     display: block;
-    @include github-icon
+    margin-top: -24px;
+    margin-left: -3px;
+    @include github-icon;
+
+    @media only screen and (max-width: 690px) {
+      height: 60px;
+      margin-top: -20px;
+      margin-left: -14px;
+    }
   }
 
 
@@ -153,7 +160,6 @@ export default {
   }
 
   &__projects {
-    margin-top: 30px;
     margin-bottom: 36px;
   }
 
@@ -175,6 +181,10 @@ export default {
       .open-source__industry {
         display: block;
       }
+    }
+
+    @media only screen and (max-width: 767px) {
+      min-height: unset;
     }
   }
 
