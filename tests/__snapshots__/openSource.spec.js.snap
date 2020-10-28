@@ -60,12 +60,6 @@ exports[`CaseStudies component renders correctly 1`] = `
               <div
                 class="open-source__icon open-source__mad-location"
               />
-               
-              <p
-                class="open-source__industry"
-              >
-                Logistics
-              </p>
             </div>
              
             <p
@@ -93,12 +87,6 @@ exports[`CaseStudies component renders correctly 1`] = `
               <div
                 class="open-source__icon open-source__comedian"
               />
-               
-              <p
-                class="open-source__industry"
-              >
-                Team Management
-              </p>
             </div>
              
             <p
@@ -130,12 +118,6 @@ exports[`CaseStudies component renders correctly 1`] = `
               <div
                 class="open-source__icon open-source__ariadna"
               />
-               
-              <p
-                class="open-source__industry"
-              >
-                Logistics
-              </p>
             </div>
              
             <p
@@ -167,12 +149,6 @@ exports[`CaseStudies component renders correctly 1`] = `
               <div
                 class="open-source__icon open-source__id-match"
               />
-               
-              <p
-                class="open-source__industry"
-              >
-                Security
-              </p>
             </div>
              
             <p
@@ -200,12 +176,6 @@ exports[`CaseStudies component renders correctly 1`] = `
               <div
                 class="open-source__icon open-source__your-cast"
               />
-               
-              <p
-                class="open-source__industry"
-              >
-                Entertainment
-              </p>
             </div>
              
             <p
@@ -233,12 +203,6 @@ exports[`CaseStudies component renders correctly 1`] = `
               <div
                 class="open-source__icon open-source__heimdall"
               />
-               
-              <p
-                class="open-source__industry"
-              >
-                Security
-              </p>
             </div>
              
             <p
