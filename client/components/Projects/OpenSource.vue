@@ -14,7 +14,7 @@
             <a class="open-source__project-link" :href="openSource.link" target="_blank">
               <div class="open-source__content-wrap">
                 <div :class="`open-source__icon open-source__${openSource.projectName}`"></div>
-                <p class="open-source__industry">{{ openSource.industry }}</p>
+                <!-- <p class="open-source__industry">{{ openSource.industry }}</p> -->
               </div>
               <p class="open-source__paragraph" v-html="openSource.description">{{ openSource.description }}</p>
             </a>
@@ -115,7 +115,7 @@ export default {
   &__github-wrap {
     display: flex;
     justify-content: center;
-    margin-right: -84px;
+    margin-right: -13px;
   }
 
   &__github-icon {
@@ -123,14 +123,8 @@ export default {
     height: 79px;
     display: block;
     margin-top: -24px;
-    margin-left: -3px;
+    margin-left: -1px;
     @include github-icon;
-
-    @media only screen and (max-width: 690px) {
-      height: 60px;
-      margin-top: -20px;
-      margin-left: -14px;
-    }
   }
 
 
@@ -276,6 +270,63 @@ export default {
 
   &__heimdall {
     @include heimdall;
+  }
+
+  @media only screen and (max-width: 690px) {
+    &__github-wrap {
+      margin-right: 0;
+    }
+
+    &__description {
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        margin-left: 300px;
+        top: 20px;
+        @include github-icon;
+      }
+    }
+    
+    &__github-icon {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 490px) {
+     &__description {
+      br {
+        display: none;
+      }
+
+      &::before {
+        margin-left: 300px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    &__description {
+      br {
+        display: block;
+      }
+
+      &::before {
+        top: 42px;
+        margin-left: 253px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 356px) {
+    &__description {
+      &::before {
+        margin-left: 232px;
+      }
+    }
   }
 }
 </style>
