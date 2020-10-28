@@ -210,23 +210,8 @@ export default {
   }
 
   @media only screen and (max-width: 1320px) {
-		.footer-form {
-      .entry-field,
-      .textarea,
-      .submit-button,
-      /deep/ .form-checkbox-label {
-        font-size: 14px;
-      }
-
-      &_email {
-         /deep/ .v-placeholder-asterisk {
-          font-size: 14px;
-        }
-      }
-
-      .error-text {
-        font-size: 13px;
-      }
+		.footer-form .error-text {
+      font-size: 13px;
     }
   }
 

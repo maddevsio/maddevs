@@ -127,8 +127,8 @@ export default {
 
 	@media only screen and (max-width: 991px) {
 		.footer {
-			padding-top: 75px;
-			padding-bottom: 50px;
+      padding-top: 48px;
+      padding-bottom: 46px;
 
 			&__form-wrap,
 			&__left-content {
@@ -144,9 +144,6 @@ export default {
 
   @media screen and (max-width: 767px) {
     .footer {
-      padding-top: 48px;
-      padding-bottom: 46px;
-
       &__main-title {
         font-size: 45px;
       }

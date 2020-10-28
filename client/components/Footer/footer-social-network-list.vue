@@ -74,10 +74,10 @@ export default {
       width: 42px;
       height: 42px;
 
-      @media screen and (max-width: 1320px) {
-        width: 36px;
-        height: 36px;
-      }
+      //@media screen and (max-width: 1320px) {
+      //  width: 36px;
+      //  height: 36px;
+      //}
 
       @media screen and (max-width: 768px) {
         width: 42px;
