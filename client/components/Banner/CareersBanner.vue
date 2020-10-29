@@ -62,8 +62,8 @@ export default {
       }
 
       @media only screen and (max-width: 576px) {
-        width: 70px;
-        bottom: -62px;
+        width: 90px;
+        bottom: -58px;
         right: 30px;
       }
     }
