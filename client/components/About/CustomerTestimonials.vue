@@ -235,6 +235,15 @@ export default {
           margin-top: 15px;
         }
       }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: row;
+
+        .customer-testimonials__project {
+          margin-top: 0;
+          align-self: center;
+        }
+      }
     }
 
     &-name {
@@ -307,7 +316,7 @@ export default {
     height: 29px;
     @include teacherly;
 
-    @media screen and (max-width: 1169px) {
+    @media screen and (max-width: 1169px) and (min-width: 768px) {
       width: 50px;
       height: 16px;
       background-size: contain;
@@ -319,7 +328,7 @@ export default {
     height: 31px;
     @include veeqo;
 
-    @media screen and (max-width: 1169px) {
+    @media screen and (max-width: 1169px) and (min-width: 768px) {
       width: 43px;
       height: 16px;
       background-size: contain;
@@ -335,6 +344,11 @@ export default {
       width: 80px;
       height: 16px;
       background-size: contain;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 105px;
+      height: 20px;
     }
   }
 }
