@@ -2,18 +2,10 @@
 
 exports[`Customer component renders correctly 1`] = `
 <div
-  class="valued-customers__wrapper"
+  class="icon-wrapper"
 >
-  <img
-    alt="godee"
-    class="valued-customers__logo"
-    src="[object Object]"
+  <div
+    class="icon-wrapper__icon icon-wrapper__undefined"
   />
-   
-  <span
-    class="valued-customers__industry"
-  >
-    Transportation
-  </span>
 </div>
 `;
