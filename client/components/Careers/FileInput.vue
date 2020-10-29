@@ -9,7 +9,7 @@
       accept=".pdf,.cv,.doc,.odt,.docx,.txt"
       id="file"
     />
-    <span class="none-decorated-dash" v-if="selectedFile">–</span>
+    <span class="none-decorated-dash">–</span>
     <label
       class="file-input__cv"
       :class="{
@@ -18,14 +18,7 @@
       }"
       for="file"
     >
-      <img
-        class="file-input__cv-icon"
-        src="@/assets/img/Careers/svg/attach_file.svg"
-        alt="attach file icon"
-        v-if="!selectedFile"
-      />
-      {{ selectedFile ? selectedFileName : 'Attach your CV' }}</label
-    >
+     {{ selectedFile ? selectedFileName : 'find attached my CV' }}</label>
   </div>
 </template>
 
@@ -33,7 +26,9 @@
 export default {
   name: 'FileInput',
   data() {
-    return { selectedFile: null };
+    return { 
+      selectedFile: null
+    };
   },
   methods: {
     onFileChanged(event) {
@@ -77,49 +72,16 @@ export default {
 
   &__cv {
     min-width: max-content;
-    color: $text-color--black;
-    font-size: 20px;
-    cursor: pointer;
-    line-height: 33px;
-    text-align: center;
+    color: $text-color--grey;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 22px;
+    line-height: 24px;
     letter-spacing: -0.02em;
-    text-decoration-line: underline;
-    display: flex;
-    align-items: center;
+    text-decoration-line: none;
+    cursor: pointer;
 
-    &--selected {
-      color: $text-color--grey;
-      font-size: inherit;
-    }
-
-    &-icon {
-      margin-right: 25px;
-    }
-  }
-}
-
-@media only screen and (max-width: 820px) {
-  .file-input {
-    &__cv {
-      &-icon {
-        height: 38px;
-        margin-right: 20px;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .file-input {
-    &__cv {
-      &--attachable {
-        font-size: 17px;
-      }
-
-      &-icon {
-        height: 28px;
-        margin-right: 10px;
-      }
+    @media only screen and (max-width: 550px) {
+      font-size: 18px;
     }
   }
 }
