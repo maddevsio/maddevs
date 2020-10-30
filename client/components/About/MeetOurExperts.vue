@@ -11,7 +11,8 @@
               <div class="meet-our_experts__expert-position">{{ expert.position }}</div>
             </div>
           </div>
-          <a :href="expert.linkedin" class="meet-our_experts__expert-linkedin-link" rel="nofollow" target="blank"></a>
+          <i class="meet-our_experts__expert-linkedin-link"></i>
+          <a :href="expert.linkedin" class="" rel="nofollow" target="blank"></a>
         </div>
       </div>
     </div>
@@ -107,6 +108,29 @@ export default {
 
     &__expert-item {
       position: relative;
+
+      &:hover {
+        a {
+          border: 1px solid $border-color--red;
+        }
+
+        .meet-our_experts__expert {
+          &-name,
+          &-position {
+            color: $text-color--white;
+            background: $border-color--red;
+          }
+        }
+      }
+
+      a {
+        transition: all .1s;
+        position: absolute;
+        top: 0;
+        left: calc(var(--bs-gutter-x) / 2);
+        width: calc(100% - var(--bs-gutter-x));
+        height: calc(100% - 1px);
+      }
     }
 
     &__expert-bottom_content {
@@ -138,6 +162,7 @@ export default {
       padding: 4px 8px;
       background-color: $bgcolor--white-darken;
       letter-spacing: -0.02em;
+      transition: all .1s;
     }
 
     &__expert-name {
@@ -148,7 +173,7 @@ export default {
 
     &__expert-position {
       font-size: 14px;
-      font-family: 'Poppins-Regular';
+      font-family: 'Poppins-Regular', sans-serif;
     }
 
     @media only screen and (max-width: 1180px) {
@@ -209,7 +234,17 @@ export default {
       }
     }
 
-    @media screen and (max-width: 460px) {
+    @media screen and (max-width: 385px) {
+      &__expert-name {
+        font-size: 11px;
+      }
+
+      &__expert-position {
+        font-size: 9px;
+      }
+    }
+
+    @media screen and (max-width: 374px) {
       &__expert-name {
         font-size: 9px;
       }
