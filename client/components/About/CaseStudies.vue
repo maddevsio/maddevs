@@ -12,6 +12,7 @@
         >
           Case <br v-if="currentPageName === 'projects'"> Studies
         </h2>
+        <div class="case-studies__fire-icon"></div>
       </div>
       <div class="projects">
         <SingleProject
@@ -117,6 +118,7 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
 @import '../../assets/styles/caseIcons';
+@import '../../assets/styles/projectsBannerIcons';
 
 .swiper-container {
   background: $bgcolor--project-white;
@@ -210,6 +212,82 @@ export default {
 
     @media screen and (max-width: 608px) {
       grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // Projects page, flame icon styles 
+  &__fire-icon {
+    display: block;
+    width: 407px;
+    height: 661px;
+    position: absolute;
+    top: -366px;
+    right: 100px;
+    @include fire-icon;
+
+    @media screen and (max-width: 1320px) {
+      width: 340px;
+      height: 600px;
+      top: -297px;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 300px;
+      height: 560px;
+      top: -253px;
+    }
+
+    @media screen and (max-width: 970px) {
+      width: 250px;
+      height: 510px;
+      top: -200px;
+    }
+
+    @media screen and (max-width: 834px) {
+      top: -255px;
+      right: 95px;
+    }
+
+    @media screen and (max-width: 768px) {
+      top: -255px;
+      right: 65px;
+    }
+
+    @media screen and (max-width: 690px) {
+      width: 240px;
+      height: 470px;
+      top: -229px;
+      right: 55px;
+    }
+
+    @media screen and (max-width: 578px) {
+      top: -254px;
+    }
+
+    @media screen and (max-width: 530px) {
+      width: 203px;
+      height: 400px;
+      top: -197px;
+      right: 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 145px;
+      height: 300px;
+      top: -112px;
+    }
+
+    @media screen and (max-width: 440px) {
+      right: 25px;
+    }
+
+    @media screen and (max-width: 420px) {
+      top: -70px;
+      right: 35px;
+    }
+
+    @media screen and (max-width: 355px) {
+      right: 30px;
     }
   }
 }
