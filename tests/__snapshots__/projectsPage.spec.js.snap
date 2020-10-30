@@ -811,299 +811,149 @@ exports[`Projects page renders correctly 1`] = `
       class="container"
     >
       <div
-        class="customers__title-wrap"
+        class="customers__text-content"
       >
         <h2
-          class="customers__main-title main-title"
+          class="customers__main-title"
         >
-          
-        Our valued customers
-      
+          Our valued customers
         </h2>
          
         <p
-          class="customers__main-description paragraph"
+          class="customers__description"
         >
-          
-        Due to our NDAs and confidentiality requirements, we cannot disclose
-        details for all of our customers. These are a few of the companies we
-        work with.
-      
+          Due to our NDAs and confidentiality requirements, we cannot disclose details for all of our customers. These are a few of the companies we work with.
         </p>
       </div>
        
       <div
-        class="valued-customers"
+        class="customers__customers-list"
       >
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="godee"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__godee-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            Transportation
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="guardrails"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__guardrails-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            Security
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="teacherly"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__teacherly-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            EdTech
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="triggermesh"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__triggermesh-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            CloudTech
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="clutch"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__clutch-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            AdTech
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="eatigo"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__eatigo-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            Logistics
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="veeqo"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__veeqo-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            Ecommerce
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="admitad"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__admitad-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            AdTech
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="iotsploit"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__iotsploit-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            IoT
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="sir_jonas"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__sir-jonas-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            Tourism
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="progressay"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__progressay-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            EdTech
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="kickoico"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__kickoico-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            Blockchain
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="namba_food"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__nambafood-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            Logistics
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="showmebishkek"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__showmebishkek-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            Tourism
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="mythril"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__mythril-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            Blockchain
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="seso"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__seso-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            Entertainment
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="tengri"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__tengri-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            FinTech
-          </span>
         </div>
         <div
-          class="valued-customers__wrapper"
+          class="icon-wrapper"
         >
-          <img
-            alt="peklo"
-            class="valued-customers__logo"
-            src="[object Object]"
+          <div
+            class="icon-wrapper__icon icon-wrapper__peklo-icon"
           />
-           
-          <span
-            class="valued-customers__industry"
-          >
-            AdTech
-          </span>
         </div>
       </div>
     </div>

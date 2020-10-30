@@ -1,11 +1,6 @@
 <template>
-  <div class="valued-customers__wrapper">
-    <img
-      class="valued-customers__logo"
-      :src="require(`@/assets/img/Projects/svg/${customer.imgName}.svg`)"
-      :alt="customer.imgName"
-    />
-    <span class="valued-customers__industry">{{ customer.industry }}</span>
+  <div class="icon-wrapper">
+    <div class="icon-wrapper__icon" :class="`icon-wrapper__${customer.className}`"></div> 
   </div>
 </template>
 
@@ -14,13 +9,10 @@ export default {
   name: 'Customer',
   props: {
     customer: {
-      imgName: {
+      className: {
         type: String,
-        require: true
-      },
-      industry: {
-        type: String,
-        require: true
+        require: true,
+        default: ''
       }
     }
   }
@@ -29,118 +21,100 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
+@import '../../assets/styles/_ourValuedIcons';
 
-.valued-customers {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
+.icon-wrapper {
+  min-height: 111px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 80px 0 40px;
-  grid-row-gap: 100px;
-  grid-column-gap: 80px;
+  background-color: $our-valued-icon-background; 
 
-  &__wrapper {
-    justify-self: center;
-    align-self: center;
-    position: relative;
+  &__icon {
+    width: 143px;
+    height: 64px;
+    display: block;
   }
 
-  &__wrapper:hover .valued-customers__industry {
-    opacity: 1;
-    height: auto;
+  &__godee-icon {
+    @include godee-icon;
   }
 
-  &__industry {
-    font-family: 'Poppins-Regular', sans-serif;;
-    font-size: 12px;
-    color: #ccc;
-    align-items: center;
-    justify-self: center;
-    position: absolute;
-    top: 62px;
-    text-align: center;
-    transition: opacity 0.3s linear;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
+  &__guardrails-icon {
+    @include guardrails-icon;
   }
-}
 
-@media only screen and (max-width: 1240px) {
-  .valued-customers {
-    &__logo {
-      height: 70px;
-    }
+  &__teacherly-icon {
+    @include teacherly-icon;
   }
-}
 
-@media only screen and (min-width: 1024px) {
-  .valued-customers {
-    &__wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    &__logo {
-      height: 60px;
-    }
+  &__triggermesh-icon {
+    @include triggermesh-icon;
   }
-}
 
-@media only screen and (max-width: 1024px) {
-  .valued-customers {
-    &__wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    &__logo {
-      width: 90%;
-    }
+  &__clutch-icon {
+    @include clutch-icon;
   }
-}
 
-@media only screen and (max-width: 860px) {
-  .valued-customers {
-    grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
-    grid-column-gap: 55px;
-
-    &__industry {
-      font-size: 10px;
-      top: 56px;
-    }
+  &__eatigo-icon {
+    @include eatigo-icon;
   }
-}
 
-@media only screen and (max-width: 680px) {
-  .valued-customers {
-    grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
-    grid-row-gap: 50px;
-    grid-column-gap: 35px;
-    margin-top: 47px;
-
-    &__logo {
-      width: 80%;
-    }
-
-    &__industry {
-      font-size: 8px;
-    }
+  &__veeqo-icon {
+    @include veeqo-icon;
   }
-}
 
-@media only screen and (max-width: 350px) {
-  .valued-customers {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  &__admitad-icon {
+    @include admitad-icon;
+  }
 
-    &__logo {
-      width: 75%;
-    }
+  &__iotsploit-icon {
+    @include iotsploit-icon;
+  }
 
-    &__industry {
-      font-size: 8px;
-      top: 53px;
+  &__sir-jonas-icon {
+    @include sir-jonas-icon;
+  }
+
+  &__progressay-icon {
+    @include progressay-icon;
+  }
+
+  &__kickoico-icon {
+    @include kickoico-icon;
+  }
+
+  &__nambafood-icon {
+    @include nambafood-icon;
+  }
+
+  &__showmebishkek-icon {
+    @include showmebishkek-icon;
+  }
+
+  &__mythril-icon {
+    @include mythril-icon;
+  }
+
+  &__seso-icon {
+    @include seso-icon;
+  }
+
+  &__tengri-icon {
+    @include tengri-icon;
+  }
+
+  &__peklo-icon {
+    @include peklo-icon;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    min-height: 81px;
+
+    &__icon {
+      width: 75px;
+      height: 33px;
     }
   }
 }
