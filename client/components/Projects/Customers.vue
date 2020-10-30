@@ -143,6 +143,8 @@ export default {
   }
 
   @media only screen and (max-width: 1024px) {
+    padding-bottom: 109px;
+
     &__customers-list {
       grid-template-columns: repeat(6, 1fr);
       grid-gap: 14px;
@@ -150,6 +152,8 @@ export default {
   }
 
   @media only screen and (max-width: 834px) {
+    padding-bottom: 82px;
+    
     &__text-content {
       margin-bottom: 20px;
     }
@@ -167,6 +171,10 @@ export default {
     &__customers-list {
       grid-template-columns: repeat(4, 1fr);
     }
+  }
+
+  @media only screen and (max-width: 578px) {
+    padding-bottom: 60px;
   }
 
   @media only screen and (max-width: 520px) {
