@@ -18,6 +18,10 @@ exports[`CaseStudies component renders correctly 1`] = `
          Studies
       
       </h2>
+       
+      <div
+        class="case-studies__fire-icon"
+      />
     </div>
      
     <div

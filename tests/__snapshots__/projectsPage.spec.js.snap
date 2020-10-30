@@ -32,17 +32,13 @@ exports[`Projects page renders correctly 1`] = `
              projects!
           </span>
         </h1>
-         
-        <div
-          class="banner__fire-icon"
-        />
       </div>
        
       <div
         class="navigation-wrap container"
       >
         <nav
-          class="navigation-list"
+          class="navigation-list navigation-list-"
         >
           <router-link-stub
             class="navigation-item"
@@ -98,6 +94,10 @@ exports[`Projects page renders correctly 1`] = `
            Studies
       
         </h2>
+         
+        <div
+          class="case-studies__fire-icon"
+        />
       </div>
        
       <div
@@ -986,7 +986,9 @@ exports[`Projects page renders correctly 1`] = `
               Mad Devs'
             </span>
              pet projects have been shared with 
-            <br />
+            <br
+              class="open-source__descktop-break"
+            />
              the community via GitHub.
           </p>
            

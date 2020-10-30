@@ -28,7 +28,9 @@ exports[`CaseStudies component renders correctly 1`] = `
             Mad Devs'
           </span>
            pet projects have been shared with 
-          <br />
+          <br
+            class="open-source__descktop-break"
+          />
            the community via GitHub.
         </p>
          

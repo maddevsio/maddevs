@@ -33,7 +33,7 @@ exports[`Form checkboxes renders correctly 1`] = `
       class="navigation-wrap container"
     >
       <nav
-        class="navigation-list"
+        class="navigation-list navigation-list-/"
       >
         <router-link-stub
           class="navigation-item"

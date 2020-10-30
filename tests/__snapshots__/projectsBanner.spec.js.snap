@@ -29,17 +29,13 @@ exports[`Form checkboxes renders correctly 1`] = `
            projects!
         </span>
       </h1>
-       
-      <div
-        class="banner__fire-icon"
-      />
     </div>
      
     <div
       class="navigation-wrap container"
     >
       <nav
-        class="navigation-list"
+        class="navigation-list navigation-list-/"
       >
         <router-link-stub
           class="navigation-item"
