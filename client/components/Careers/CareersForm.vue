@@ -371,6 +371,10 @@ export default {
     .posotion-error-text {
       top: 5px;
     }
+
+    .error-text-file-attach {
+      top: 0;
+    }
   }
 
   @media only screen and (max-width: 460px) {
