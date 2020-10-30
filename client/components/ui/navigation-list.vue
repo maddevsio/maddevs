@@ -1,17 +1,17 @@
 <template>
   <div class="navigation-wrap container" v-if="currentPageName !== 'careers'" >
-    <nav class="navigation-list" v-if="currentPageName === 'services'">
+    <nav class="navigation-list" :class="`navigation-list-${currentPageName}`" v-if="currentPageName === 'services'">
       <a href="#remote-tech-staff" class="navigation-item">Remote Tech Staff</a>
       <a href="#software-development" class="navigation-item">Software Development</a>
       <a href="#infrastructure-optimisation" class="navigation-item">Infrastructure Optimization</a>
       <a href="#it-consulting" class="navigation-item">IT Consulting</a>
     </nav>
-    <nav class="navigation-list" v-else-if="currentPageName === 'projects'">
+    <nav class="navigation-list" :class="`navigation-list-${currentPageName}`" v-else-if="currentPageName === 'projects'">
       <a href="#case-studies" class="navigation-item">Case studies</a>
       <a href="#customers" class="navigation-item">Our customers</a>
       <a href="#open-source" class="navigation-item">Open-source pet projects</a>
     </nav>
-    <nav class="navigation-list" v-else>
+    <nav class="navigation-list" :class="`navigation-list-${currentPageName}`" v-else>
       <router-link to="services/#remote-tech-staff" class="navigation-item">Remote Tech <span class="mobile_hidden">Staff</span></router-link>
       <router-link to="services/#software-development" class="navigation-item">Software Development</router-link>
       <router-link to="services/#infrastructure-optimisation" class="navigation-item">Infrastructure Optimization</router-link>
@@ -57,6 +57,7 @@ export default {
       font-family: 'Poppins-Regular', sans-serif;;
       letter-spacing: -0.04em;
       text-decoration: none;
+      transition: 0.3s;
 
       &:last-child {
         margin-right: 0;
@@ -74,12 +75,18 @@ export default {
     }
   }
 
-  @media screen and (max-width: 1090px){
+  @media screen and (max-width: 1090px) {
     .navigation-list {
       justify-content: space-between;
 
       .navigation-item {
         margin-right: 15px;
+      }
+    }
+
+    .navigation-list-projects {
+      .navigation-item {
+        margin-right: 30px;
       }
     }
   }
@@ -91,6 +98,12 @@ export default {
         line-height: 24px;
         letter-spacing: -0.03em;
         background-position-y: 4px;
+      }
+    }
+
+    .navigation-list-projects {
+      .navigation-item {
+        margin-right: 22px;
       }
     }
   }

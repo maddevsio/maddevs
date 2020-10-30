@@ -261,7 +261,7 @@ export default {
       }
 
       &__tech-staff-individuals {
-        margin-top: 85px;
+        margin-top: 115px;
       }
 
       &__item-icon {

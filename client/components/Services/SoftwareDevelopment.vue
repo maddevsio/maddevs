@@ -226,11 +226,12 @@ export default {
     }
 
     @media screen and (max-width: 834px) {
-      padding-bottom: 72px;
+      padding-top: 25px;
+      padding-bottom: 96px;
     }
 
     @media screen and (max-width: 578px) {
-      padding-bottom: 48px;
+      padding-top: 47px;
     }
   }
 </style>

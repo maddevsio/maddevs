@@ -153,7 +153,7 @@ export default {
       &__content {
         margin-top: -66px;
         padding-top: 74px;
-        margin-bottom: 72px;
+        margin-bottom: 82px;
       }
 
       &__main-title {
@@ -176,7 +176,7 @@ export default {
 
     @media screen and  (max-width: 578px) {
       &__content {
-        margin-bottom: 48px;
+        margin-bottom: 58px;
       }
     }
 

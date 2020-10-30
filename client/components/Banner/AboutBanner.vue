@@ -5,7 +5,6 @@
         <div class="main-title-wrapper col-xxl-7 col-xl-7 col-lg-7">
           <h1 class="banner-main_title">
             <span class="main-title-black_part">Mad Devs</span>
-            <!--            <img src="@/assets/img/Home/svg/stars-banner-logo.svg" alt="Stars Logotype" class="phone-screen-logo">-->
             <span class="main-title-white_part"><br>Engineering<br>Your Growth</span>
           </h1>
         </div>
@@ -58,12 +57,6 @@ export default {
   position: relative;
 }
 
-.phone-screen-logo {
-  width: 100px;
-  display: none;
-  margin-bottom: -15px;
-}
-
 .banner-main_title {
   white-space: nowrap;
 }
@@ -75,7 +68,6 @@ export default {
   background-image: url('../../assets/img/Home/svg/stars-banner-logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  //margin-left: auto;
 
   &::before {
     content: '';
@@ -104,7 +96,7 @@ export default {
     background-repeat: no-repeat;
     width: 76px;
     height: 92px;
-    margin-left: 34px;
+    margin-left: 30px;
     display: none;
   }
 }
@@ -126,7 +118,6 @@ export default {
     background-image: url('../../assets/img/Home/svg/stars-banner-logo.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    //margin-left: auto;
   }
 }
 
@@ -134,6 +125,7 @@ export default {
   .animation-img-wrap {
     width: 303px;
     height: 375px;
+    bottom: 11px;
 
     &::before {
       content: '';
@@ -158,6 +150,7 @@ export default {
   .animation-img-wrap {
     width: 238px;
     height: 271px;
+    top: 12px;
 
     &:before {
       display: none;
@@ -168,18 +161,18 @@ export default {
 
 @media only screen and (max-width: 970px) {
   .animation-img-wrap {
-    width: 138px;
-    height: 171px;
+    width: 198px;
+    height: 230px;
+    top: -5px;
   }
-  //.icon-item {
-  //  display: none;
-  //}
 }
 
-@media only screen and (max-width: 755px) {
-  //.icon-item {
-  //  display: none;
-  //}
+@media only screen and (max-width: 815px) {
+  .animation-img-wrap {
+    width: 168px;
+    height: 171px;
+    top: 28px;
+  }
 }
 
 @media only screen and (max-width: 730px) {
@@ -192,23 +185,13 @@ export default {
   }
 }
 
-@media only screen and (max-width: 610px) {
-  .phone-screen-logo {
-    width: 75px;
-  }
-}
-
 @media only screen and (max-width: 576px) {
   .main-title-black_part::after {
     width: 66px;
     height: 82px;
+    position: relative;
+    top: 5px;
     margin-left: 16px;
-  }
-}
-
-@media only screen and (max-width: 572px) {
-  .phone-screen-logo {
-    display: none;
   }
 }
 
