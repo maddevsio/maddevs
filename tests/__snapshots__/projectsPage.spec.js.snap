@@ -95,9 +95,7 @@ exports[`Projects page renders correctly 1`] = `
       
         </h2>
          
-        <div
-          class="case-studies__fire-icon"
-        />
+        <!---->
       </div>
        
       <div
