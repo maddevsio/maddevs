@@ -119,7 +119,7 @@ export default {
   }
 
   &__github-icon {
-    width: 84px;
+    width: 77px;
     height: 79px;
     display: block;
     margin-top: -24px;
@@ -277,6 +277,10 @@ export default {
     
     &__top-text-content {
       margin-bottom: 30px;
+    }
+
+    &__github-icon {
+      width: 55px;
     }
   }
 

@@ -86,7 +86,7 @@ export default {
 
     .navigation-list-projects {
       .navigation-item {
-        margin-right: 30px;
+        margin-right: 35px;
       }
     }
   }
@@ -103,7 +103,7 @@ export default {
 
     .navigation-list-projects {
       .navigation-item {
-        margin-right: 22px;
+        margin-right: 25px;
       }
     }
   }
