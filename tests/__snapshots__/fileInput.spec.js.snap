@@ -12,19 +12,18 @@ exports[`FileInput component renders correctly 1`] = `
     type="file"
   />
    
-  <!---->
+  <span
+    class="none-decorated-dash"
+  >
+    –
+  </span>
    
   <label
     class="file-input__cv file-input__cv--attachable"
     for="file"
   >
-    <img
-      alt="attach file icon"
-      class="file-input__cv-icon"
-      src="@/assets/img/Careers/svg/attach_file.svg"
-    />
     
-    Attach your CV
+   find attached my CV
   </label>
 </div>
 `;

@@ -6,17 +6,11 @@ exports[`CareersForm component renders correctly 1`] = `
   id="careers"
 >
   <div
-    class="container"
+    class="careers__container container"
   >
     <div
       class="careers__wrapper"
     >
-      <img
-        alt="Careers Background Image"
-        class="careers__background-logo"
-        src="@/assets/img/Careers/svg/careers_logo.svg"
-      />
-       
       <validationobserver-stub />
     </div>
   </div>

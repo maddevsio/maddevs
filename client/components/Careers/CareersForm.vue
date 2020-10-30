@@ -1,19 +1,14 @@
 <template>
   <section id="careers" class="careers">
-    <div class="container">
+    <div class="careers__container container">
       <div class="careers__wrapper">
-        <img
-          class="careers__background-logo"
-          src="@/assets/img/Careers/svg/careers_logo.svg"
-          alt="Careers Background Image"
-        />
         <ValidationObserver v-slot="{ handleSubmit, invalid }" ref="form">
           <form @submit.prevent="handleSubmit(sendData)" class="careers__form">
-            <label class="careers__form-name-label form-text"
+            <label class="careers__form-name-label"
               >Hello, my name is
               <ValidationProvider rules="required|max:50" v-slot="{ classes, errors }">
                 <input
-                  class="careers__form-name-input form-text"
+                  class="careers__form-input careers__form-name-input"
                   type="text"
                   placeholder="John Smith"
                   v-model="fullName"
@@ -22,11 +17,11 @@
                 <span class="modal-error-text error-text">{{ errors[0] }}</span>
               </ValidationProvider></label
             >
-            <h4 class="careers__form-description form-text">
+            <h4 class="careers__form-description">
               I want to work for you as a
               <ValidationProvider rules="required" v-slot="{ classes, errors }">
                 <input
-                  class="careers__form-position-input form-text"
+                  class="careers__form-input careers__form-position-input"
                   type="text"
                   placeholder="desired position."
                   v-model="positionTitle"
@@ -34,8 +29,8 @@
                 <span class="modal-error-text error-text">{{ errors[0] }}</span>
               </ValidationProvider>
             </h4>
-            <h4 class="careers__form-description form-text radio-buttons">
-              You can also consider me for your other
+            <h4 class="careers__form-description radio-buttons">
+              You can also consider me for <br> your other
             </h4>
             <ValidationProvider rules="required" v-slot="{ classes, errors }">
               <ul class="careers__position-list">
@@ -43,14 +38,14 @@
               </ul>
               <span class="modal-error-text error-text">{{ errors[0] }}</span>
             </ValidationProvider>
-            <h4 class="careers__form-description form-text email-title">
+            <h4 class="careers__form-description careers__form-description-email-title">
               Please reply to
               <ValidationProvider
                 rules="email|required"
                 v-slot="{ classes, errors }"
               >
                 <input
-                  class="careers__form-email-input form-text"
+                  class="careers__form-input careers__form-email-input"
                   type="email"
                   placeholder="your@mail.com"
                   v-model="email"
@@ -58,26 +53,26 @@
                 <span class="modal-error-text error-text">{{ errors[0] }}</span>
               </ValidationProvider>
             </h4>
-            <h4 class="careers__form-description form-text">
-              To get more information on my skills, please
+            <h4 class="careers__form-description">
+              To get more information on my <br> skills, please
             </h4>
-            <ul class="careers__form-list form-text">
-              <li class="careers__form-list-item">
+            <ul class="careers__form-list">
+              <li class="careers__form-list-item careers__form-list-item-linkedin">
                 – check out my
                 <input
-                  class="careers__form-linkedin-input form-text"
+                  class="careers__form-input careers__form-linkedin-input"
                   type="text"
                   placeholder="LinkedIn profile"
                   v-model="linkedinProfile"
                 />
               </li>
-              <li class="careers__form-list-item file-attach">
+              <li class="careers__form-list-item careers__file-attach">
                 <ValidationProvider
                   rules="ext:pdf,doc,docx|required|size:5000"
                   v-slot="{ classes, errors }"
                 >
                   <FileInput v-model="selectedFile" @input="onFileChanged" ref="fileInput" />
-                  <span class="modal-error-text error-text">{{
+                  <span class="modal-error-text error-text error-text-file-attach">{{
                     errors[0]
                   }}</span>
                 </ValidationProvider>
@@ -201,17 +196,13 @@ export default {
 @import '../../assets/styles/vars';
 
 .careers {
-  .container {
-    position: relative;
-  }
-
   &__position-list {
     align-items: center;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: 15px;
+    margin-top: 12px;
     padding: 0;
 
     /deep/ .ui-radio-buttons {
@@ -223,10 +214,10 @@ export default {
           &::after {
             content: 'roles.';
             font-family: 'Poppins-Regular', sans-serif;
-            font-size: 40px;
-            font-weight: 500;
-            margin-left: 10px;
-            line-height: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            margin-left: 11px;
           }
         }
       }
@@ -239,50 +230,40 @@ export default {
   }
 
   &__wrapper {
-    border-radius: $form-border-radius;
-    background: $bgcolor--grey-light;
-    padding: 63px 102px 102px 92px;
+    padding: 77px 105px 97px;
+    background-color: $bgcolor--white;
   }
 
-  &__background-logo {
-    position: absolute;
-    top: -260px;
-    right: 60px;
-    height: auto;
+  &__form-description-email-title {
+    margin: 48px 0 40px;
   }
 
-  .email-title {
-    margin: 80px 0;
-  }
-
-  &__form-name-input,
-  &__form-email-input,
-  &__form-position-input,
-  &__form-linkedin-input {
+  &__form-input {
+    width: 40%;
+    height: 32px;
     background-color: transparent;
     border: 0px solid;
-    height: 65px;
-    max-width: 610px;
     color: $text-color--grey;
     caret-color: $text-color--red;
   }
 
   &__form-list {
-    margin-bottom: 79px;
-  }
-
-  &__form-linkedin-input {
-    width: 6.69em;
+    margin-top: 7px;
+    margin-bottom: 60px;
   }
 
   &__form-description {
     font-family: 'Poppins-Regular', sans-serif;
-    color: $text-color--black;
+    color: $text-color--black-lighter;
     font-weight: 500;
+
+    br {
+      display: none;
+    }
   }
 
   &__linkedin-link {
-    color: $text-color--black;
+    color: $text-color--black-lighter;
     font-size: 20px;
     cursor: pointer;
     line-height: 33px;
@@ -302,184 +283,117 @@ export default {
     }
   }
 
-  .radio-buttons {
-    margin-top: 10px;
+  &__form-list-item-linkedin {
+    margin-bottom: 11px;
+  }
+
+  &__form-description,
+  &__form-input {
+    margin-bottom: 10px;
   }
 
   &__form-name-label,
-  &__form-description {
+  &__form-description,
+  &__form-input,
+  &__form-list-item {
     position: relative;
-  }
-}
-
-@media only screen and (max-width: 1600px) {
-  .careers {
-    &__form-name-label,
-    &__form-description {
-      position: relative;
-
-      .modal-error-text {
-        margin-top: -11px;
-      }
-    }
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
   }
 
-  .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
-    content: 'roles.';
-    font-size: 34px;
+  &__form-name-label {
+    margin-bottom: 6px;
   }
-}
 
-@media only screen and (max-width: 1024px) {
-  .careers {
-    &__background-logo {
-      height: 250px;
-      top: -110px;
-    }
+  .modal-error-text {
+    font-size: 14px;
+    position: relative;
+    top: -13px;
+    margin-top: 0;
   }
-}
 
-@media only screen and (max-width: 960px) {
-  .careers {
-    &__position-list {
-      /deep/ .ui-radio-buttons {
-        flex-direction: column;
-        align-items: flex-start;
-
-        &_item {
-          margin-bottom: 10px;
-        }
-      }
-    }
+  .error-text-file-attach {
+    top: 0;
   }
-}
 
-@media only screen and (max-width: 870px) {
-  .careers {
-    &__background-logo {
-      height: 220px;
-      top: -179px;
-    }
-
-    &__form-list {
-      margin-bottom: 59px;
-    }
-
+  @media only screen and (max-width: 860px) {
     &__wrapper {
-      padding: 53px 92px 92px 82px;
-    }
-
-    .email-title {
-      margin: 70px 0;
-    }
-  }
-
-  .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
-    content: 'roles.';
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 820px) {
-  .careers {
-    &__form-name-input,
-    &__form-email-input,
-    &__form-position-input,
-    &__form-linkedin-input {
-      height: 35px;
-    }
-
-    &__form-name-label,
-    &__form-description {
-      .modal-error-text {
-        position: relative;
-        left: 0;
-        bottom: 4px;
-        margin-top: 0;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .careers {
-    &__background-logo {
-      top: -85px;
-      right: 54px;
-    }
-  }
-}
-
-@media only screen and (max-width: 670px) {
-  .careers {
-    &__background-logo {
-      height: 180px;
-    }
-
-    &__wrapper {
-      padding: 53px 72px 92px 62px;
-    }
-
-    .email-title {
-      margin: 65px 0;
-    }
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .careers {
-    .container {
       padding: 0;
+      background-color: transparent;
     }
 
-    &__wrapper {
-      border-radius: 0;
-    }
-
-    &__background-logo {
-      right: 30px;
+    &__container {
+      padding-top: 67px;
+      padding-bottom: 67px;
+      background-color: $bgcolor--white;
     }
   }
-}
 
-@media only screen and (max-width: 520px) {
-  .careers {
-    &__wrapper {
-      padding: 45px 16px 44px;
+  @media only screen and (max-width: 550px) {
+    &__form-name-label,
+    &__form-description,
+    &__form-input,
+    &__form-list-item {
+      font-size: 18px;
     }
 
-    .email-title {
-      margin: 20px 0 40px;
+    &__form-name-input {
+      width: 120px;
+    }
+
+    &__form-position-input {
+      width: 145px;
+    }
+
+    &__form-email-input {
+      width: 140px;
+    }
+
+    &__position-list {
+      margin-top: 4px;
+    }
+
+    &__form-description-email-title {
+      margin-top: 9px;
+    }
+
+    .modal-error-text {
+      font-size: 12px;
+      top: -15px;
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+    &__form-position-input {
+      width: 220px;
+    }
+  }
+
+  @media only screen and (max-width: 340px) {
+    &__container {
+      padding-top: 47px;
+      padding-bottom: 47px;
     }
 
     &__form-list {
-      margin-bottom: 44px;
+      margin-bottom: 40px;
     }
 
-    &__form-name-input,
-    &__form-email-input,
-    &__form-position-input,
+    &__form-name-label,
+    &__form-description,
+    &__form-input,
+    &__form-list-item {
+      font-size: 17px;
+    }
+
+    &__form-position-input {
+      width: 205px;
+    }
+
     &__form-linkedin-input {
-      height: 34px;
-      width: 260px;
-    }
-
-    &__form-linkedin-input {
-      width: 6.69em;
-    }
-  }
-
-  .careers__position-list /deep/ .ui-radio-buttons_item:last-child::after {
-    content: 'roles.';
-    font-size: 24px;
-  }
-}
-
-@media only screen and (max-width: 455px) {
-  .careers {
-    &__background-logo {
-      height: 108px;
-      top: -87px;
+      width: 135px;
     }
   }
 }
