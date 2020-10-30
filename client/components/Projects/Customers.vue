@@ -93,7 +93,7 @@ export default {
 @import '../../assets/styles/vars';
 
 .customers {
-  padding-bottom: 151px;
+  padding-bottom: 108px;
 
   &__text-content {
     display: flex;

@@ -12,7 +12,7 @@
         >
           Case <br v-if="currentPageName === 'projects'"> Studies
         </h2>
-        <div class="case-studies__fire-icon"></div>
+        <div class="case-studies__fire-icon" v-if="currentPageName === 'projects'"></div>
       </div>
       <div class="projects">
         <SingleProject
