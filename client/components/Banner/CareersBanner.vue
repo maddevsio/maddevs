@@ -28,6 +28,7 @@ export default {
 
     &__banner-main_title {
       color: $text-color--white;
+      line-height: 101%;
 
       span {
         white-space: nowrap;

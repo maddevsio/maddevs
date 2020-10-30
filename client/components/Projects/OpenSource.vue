@@ -4,7 +4,7 @@
       <div class="open-source__top-text-content">
         <h3 class="open-source__main-title">Our code - available in open source - is used by many other companies.</h3>
         <div class="open-source__github-wrap">
-          <p class="open-source__description">70+ of <span>Mad Devs'</span> pet projects have been shared with <br> the community via GitHub.</p>
+          <p class="open-source__description">70+ of <span>Mad Devs'</span> pet projects have been shared with <br class="open-source__descktop-break"> the community via GitHub.</p>
           <a class="open-source__github-icon" href="https://github.com/maddevsio" target="_blank"></a>
         </div>
       </div>
@@ -79,7 +79,7 @@ export default {
 @import '../../assets/styles/_openSourceIcons';
 
 .open-source {
-  padding-bottom: 25px;
+  padding-bottom: 108px;
   background: $bgcolor--white;
 
   &__main-title,
@@ -94,7 +94,7 @@ export default {
   }
 
   &__top-text-content {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   &__description,
@@ -272,6 +272,14 @@ export default {
     @include heimdall;
   }
 
+  @media only screen and (max-width: 834px) {
+    padding-bottom: 80px;
+    
+    &__top-text-content {
+      margin-bottom: 30px;
+    }
+  }
+
   @media only screen and (max-width: 690px) {
     &__github-wrap {
       margin-right: 0;
@@ -294,14 +302,22 @@ export default {
     &__github-icon {
       display: none;
     }
+
+    &__descktop-break {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 578px) {
+    padding-bottom: 55px;
+
+    &__projects {
+      margin-bottom: 26px;
+    }
   }
 
   @media only screen and (max-width: 490px) {
-     &__description {
-      br {
-        display: none;
-      }
-
+    &__description {
       &::before {
         margin-left: 300px;
       }
@@ -310,21 +326,11 @@ export default {
 
   @media only screen and (max-width: 400px) {
     &__description {
-      br {
-        display: block;
-      }
+      width: 277px;
 
       &::before {
-        top: 42px;
-        margin-left: 253px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 356px) {
-    &__description {
-      &::before {
-        margin-left: 232px;
+        top: 45px;
+        margin-left: 170px;
       }
     }
   }

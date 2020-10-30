@@ -36,7 +36,7 @@
               <ul class="careers__position-list">
                 <UIRadioButtons ref="radioButtons" :radios="radioData" v-model="positionValue" />
               </ul>
-              <span class="modal-error-text error-text">{{ errors[0] }}</span>
+              <span class="modal-error-text error-text posotion-error-text">{{ errors[0] }}</span>
             </ValidationProvider>
             <h4 class="careers__form-description careers__form-description-email-title">
               Please reply to
@@ -243,7 +243,7 @@ export default {
     height: 32px;
     background-color: transparent;
     border: 0px solid;
-    color: $text-color--grey;
+    color: $text-color--red;
     caret-color: $text-color--red;
   }
 
@@ -318,6 +318,10 @@ export default {
     top: 0;
   }
 
+  .posotion-error-text {
+    top: 5px;
+  }
+
   @media only screen and (max-width: 860px) {
     &__wrapper {
       padding: 0;
@@ -362,6 +366,10 @@ export default {
     .modal-error-text {
       font-size: 12px;
       top: -15px;
+    }
+
+    .posotion-error-text {
+      top: 5px;
     }
   }
 
