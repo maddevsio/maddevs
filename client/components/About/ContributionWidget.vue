@@ -89,13 +89,13 @@ export default {
   color: $text-color--grey;
   font-family: 'Poppins-Regular', sans-serif;
   margin-top: 26px;
-  font-size: 17px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: -1px;
 
   @media screen and (max-width: 1024px) {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 24px;
   }
 
   @media screen and (max-width: 768px) {
@@ -103,6 +103,11 @@ export default {
   }
 
   @media screen and (max-width: 650px) {
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  @media screen and (max-width: 608px) {
     font-size: 14px;
     line-height: 20px;
   }
@@ -111,6 +116,7 @@ export default {
     width: 20px;
     min-width: 20px;
     height: 18px;
+    margin-top: 2px;
 
     &_guardrails,
     &_teacherly {
