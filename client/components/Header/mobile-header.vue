@@ -413,13 +413,19 @@ export default {
   @media screen and (max-width: 600px) {
     .mobile-header {
       /deep/ .footer-contacts__messengers-list {
-        grid-column-gap: 35px;
+        grid-column-gap: 60px;
       }
     }
   }
 
 	@media only screen and (max-width: 360px) {
 		.mobile-header {
+
+      /deep/ .footer-contacts__messengers-list {
+        grid-column-gap: 33px;
+        width: 100%;
+      }
+
 			&__header-routes_links {
 				padding-top: 20px;
 			}
