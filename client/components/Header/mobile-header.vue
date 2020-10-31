@@ -243,6 +243,7 @@ export default {
 
 		&__contacts {
 			margin-top: 12px;
+      margin-left: 40px;
 		}
 
 		&__messengers-list {
@@ -264,7 +265,6 @@ export default {
 			text-decoration: none;
 		}
 
-		&__contact-link,
 		&__contact-title,
 		&__messenger-name {
 			font-family: 'Poppins-Regular', sans-serif;
@@ -285,6 +285,7 @@ export default {
 			font-size: 28px;
 			line-height: 38px;
 			letter-spacing: -1px;
+      font-family: 'Poppins-Medium', sans-serif;
 			border-bottom: 1px solid $header-red-border-color;
 			text-decoration: none;
 		}
