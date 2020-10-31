@@ -46,7 +46,6 @@
 					:modalWindowName="modalWindowName"
 					class="mobile-header__modal-trigger-btn"
 				/>
-				<footerSocialNetworkList class="mobile-header__large-phone-content mobile-header__icons-list" />
 				<footerContacts class="mobile-header__small-phone-content" />
 			</div>
 		</div>
@@ -192,7 +191,7 @@ export default {
 		&__nav-link {
 			padding: 14px 0;
 			font-size: 32px;
-			font-family: 'Poppins-Regular', sans-serif;
+			font-family: 'Poppins-Medium', sans-serif;
 			letter-spacing: -1px;
 			line-height: 38px;
 			text-decoration: none;
