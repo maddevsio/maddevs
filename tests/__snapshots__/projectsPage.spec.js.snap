@@ -35,7 +35,7 @@ exports[`Projects page renders correctly 1`] = `
       </div>
        
       <div
-        class="navigation-wrap container"
+        class="navigation-wrap container navigation-wrap-"
       >
         <nav
           class="navigation-list navigation-list-"
