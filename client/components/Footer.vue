@@ -99,7 +99,7 @@ export default {
 	.privacy,
 	.nda {
 		padding-top: 109px;
-		margin-top: 90px;
+		margin-top: 141px;
 		border-top: 1px solid $border-color--grey-dark;
 	}
 
@@ -122,7 +122,7 @@ export default {
   @media screen and (max-width: 990px){
     .footer__main-title {
       font-size: 45px;
-    }
+		}
   }
 
 	@media only screen and (max-width: 991px) {
@@ -139,6 +139,14 @@ export default {
 			&__form-wrap {
 				margin-top: 30px;
 			}
+		}
+	}
+
+	@media only screen and (max-width: 834px) {
+		.gdpr,
+		.privacy,
+		.nda {
+			margin-top: 90px;
 		}
 	}
 
@@ -161,7 +169,15 @@ export default {
         padding-top: 35px;
       }
     }
-  }
+	}
+	
+	@media only screen and (max-width: 578px) {
+		.gdpr,
+		.privacy,
+		.nda {
+			margin-top: 68px;
+		}
+	}
 
 	@media only screen and (max-width: 576px) {
 		.footer {
