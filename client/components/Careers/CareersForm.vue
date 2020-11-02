@@ -246,6 +246,10 @@ export default {
     border: 0px solid;
     color: $text-color--red;
     caret-color: $text-color--red;
+
+    &::placeholder {
+      color: $text-color--grey;
+    }
   }
 
   &__form-list {
