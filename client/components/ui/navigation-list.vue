@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation-wrap container" v-if="currentPageName !== 'careers'" >
+  <div class="navigation-wrap container" :class="`navigation-wrap-${currentPageName}`" v-if="currentPageName !== 'careers'" >
     <nav class="navigation-list" :class="`navigation-list-${currentPageName}`" v-if="currentPageName === 'services'">
       <a href="#remote-tech-staff" class="navigation-item">Remote Tech Staff</a>
       <a href="#software-development" class="navigation-item">Software Development</a>
@@ -44,6 +44,16 @@ export default {
     margin-bottom: 60px;
   }
 
+  .navigation-wrap-projects {
+    @media screen and (max-width: 480px) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 420px) {
+      margin-bottom: 20px;
+    }
+  }
+
   .navigation-list {
     display: flex;
     flex-direction: row;
@@ -69,6 +79,10 @@ export default {
     }
   }
 
+  .navigation-list-projects {
+    justify-content: flex-start;
+  }
+
   @media screen and (max-width: 1130px) {
     .mobile_hidden {
       display: none;
@@ -85,6 +99,8 @@ export default {
     }
 
     .navigation-list-projects {
+      justify-content: flex-start;
+
       .navigation-item {
         margin-right: 35px;
       }

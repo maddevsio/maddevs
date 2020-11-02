@@ -73,6 +73,18 @@ export default {
       }
     }
 
+    @media screen and (max-width: 480px) {
+      &__banner-content {
+        margin-bottom: 40px;
+      }
+    }
+
+    @media screen and (max-width: 420px) {
+      &__banner-content {
+        margin-bottom: 20px;
+      }
+    }
+
     @media screen and (max-width: 390px) {
       &__banner-main_title {
         font-size: 45px;
@@ -84,9 +96,5 @@ export default {
         font-size: 40px;
       }
     }
-  }
-
-  /deep/ .navigation-list {
-    justify-content: flex-start;
   }
 </style>
