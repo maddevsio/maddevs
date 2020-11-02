@@ -84,7 +84,12 @@ export default {
       align-items: center;
     }
 
+    &__left-nav_bar {
+      padding-right: 0;
+    }
+
     &__right-content {
+      padding-left: 0;
       justify-content: flex-end;
     }
 
