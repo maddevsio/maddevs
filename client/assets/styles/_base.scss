@@ -59,6 +59,13 @@ main {
 }
 
 @font-face {
+  font-family: 'Poppins-Medium';
+  font-weight: 600;
+  src: url('../fonts/Poppins/Poppins-Medium.woff2') format('woff2'), url('../fonts/Poppins/Poppins-Medium.woff') format('woff');
+  font-display: auto;
+}
+
+@font-face {
   font-family: 'Poppins-Regular';
   font-weight: 400;
   src: url('../fonts/Poppins/Poppins-Regular.woff2') format('woff2'), url('../fonts/Poppins/Poppins-Regular.woff') format('woff');

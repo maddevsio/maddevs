@@ -151,7 +151,7 @@ export default {
 	}
 
   @media screen and (max-width: 767px) {
-    .footer {
+    .footer { 
       &__main-title {
         font-size: 45px;
       }

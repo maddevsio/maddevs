@@ -133,7 +133,8 @@ export default {
 			margin-top: 12px;
       font-size: 34px;
       line-height: 100%;
-			font-family: 'Poppins-Regular', sans-serif;
+      font-weight: 600;
+			font-family: 'Poppins-Medium', sans-serif;
 			letter-spacing: -1px;
 			border-bottom: 1px solid $text-color--red-opacity;
 			text-decoration: none;
@@ -216,12 +217,12 @@ export default {
 		}
 	}
 
-  @media screen and (max-width: 1100px) and (min-width: 768px) {
+  @media screen and (max-width: 1100px) {
     .footer-contacts__messengers-list {
       width: max-content;
       display: grid;
       grid-template-columns: repeat(2, max-content);
-      grid-column-gap: 40px;
+      grid-column-gap: 70px;
     }
   }
 
@@ -239,6 +240,12 @@ export default {
 		}
 	}
 
+  @media screen and (max-width: 800px) {
+    .footer-contacts__messengers-list {
+      grid-column-gap: 60px;
+    }
+  }
+
   @media screen and (max-width: 767px) {
     .footer-contacts {
       &__social-network-list-desktop {
@@ -246,8 +253,6 @@ export default {
       }
 
       &__contact-item {
-        margin-bottom: 33px;
-
         &:last-child {
           margin-top: 0;
           margin-bottom: 0;
@@ -260,6 +265,10 @@ export default {
 		.footer-contacts {
 			@include contacts-head-content;
 		  @include messenger-list-grid;
+
+      &__contact-item {
+        margin-bottom: 33px;
+      }
 
       &__contact-title {
         font-size: 13px;
@@ -274,7 +283,7 @@ export default {
         width: max-content;
         display: grid;
         grid-template-columns: repeat(2, max-content);
-        grid-column-gap: 33px;
+        grid-column-gap: 70px;
       }
 
       &__messenger-item {
@@ -282,5 +291,14 @@ export default {
         height: 42px;
       }
     }
+  }
+
+  @media screen and (max-width: 360px) {
+    .footer-contacts__messengers-list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-column-gap: 33px;
+      }
   }
 </style>

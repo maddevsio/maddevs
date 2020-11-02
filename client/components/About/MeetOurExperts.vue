@@ -118,7 +118,7 @@ export default {
           &-name,
           &-position {
             color: $text-color--white;
-            background: $border-color--red;
+            background: $bgcolor--red;
           }
         }
       }

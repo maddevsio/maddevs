@@ -4,9 +4,9 @@
     <div class="footer-navbar-mobile__nav-list">
       <div class="footer-navbar-mobile__nav-group">
         <a href="/gdpr" target="_blank" class="footer-navbar-mobile__nav-link">GDPR Compliance Commitment</a>
-        <a href="/privacy" target="_blank" class="footer-navbar-mobile__nav-link footer-navbar-mobile__nav-link-privacy">Privacy Policy</a>
+        <a href="/nda" target="_blank" class="footer-navbar-mobile__nav-link">Non-Disclosure Agreement (NDA)</a>
       </div>
-      <a href="/nda" target="_blank" class="footer-navbar-mobile__nav-link">Non-Disclosure Agreement (NDA)</a>
+      <a href="/privacy" target="_blank" class="footer-navbar-mobile__nav-link footer-navbar-mobile__nav-link-privacy">Privacy Policy</a>
     </div>
   </div>
 </template>

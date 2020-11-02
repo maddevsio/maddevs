@@ -46,7 +46,6 @@
 					:modalWindowName="modalWindowName"
 					class="mobile-header__modal-trigger-btn"
 				/>
-				<footerSocialNetworkList class="mobile-header__large-phone-content mobile-header__icons-list" />
 				<footerContacts class="mobile-header__small-phone-content" />
 			</div>
 		</div>
@@ -192,7 +191,7 @@ export default {
 		&__nav-link {
 			padding: 14px 0;
 			font-size: 32px;
-			font-family: 'Poppins-Regular', sans-serif;
+			font-family: 'Poppins-Medium', sans-serif;
 			letter-spacing: -1px;
 			line-height: 38px;
 			text-decoration: none;
@@ -244,6 +243,7 @@ export default {
 
 		&__contacts {
 			margin-top: 12px;
+      margin-left: 40px;
 		}
 
 		&__messengers-list {
@@ -265,7 +265,6 @@ export default {
 			text-decoration: none;
 		}
 
-		&__contact-link,
 		&__contact-title,
 		&__messenger-name {
 			font-family: 'Poppins-Regular', sans-serif;
@@ -286,6 +285,7 @@ export default {
 			font-size: 28px;
 			line-height: 38px;
 			letter-spacing: -1px;
+      font-family: 'Poppins-Medium', sans-serif;
 			border-bottom: 1px solid $header-red-border-color;
 			text-decoration: none;
 		}
@@ -413,13 +413,19 @@ export default {
   @media screen and (max-width: 600px) {
     .mobile-header {
       /deep/ .footer-contacts__messengers-list {
-        grid-column-gap: 35px;
+        grid-column-gap: 60px;
       }
     }
   }
 
 	@media only screen and (max-width: 360px) {
 		.mobile-header {
+
+      /deep/ .footer-contacts__messengers-list {
+        grid-column-gap: 33px;
+        width: 100%;
+      }
+
 			&__header-routes_links {
 				padding-top: 20px;
 			}
