@@ -91,7 +91,7 @@ export default {
   margin-top: 26px;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: -1px;
+  letter-spacing: -0.02em;
 
   @media screen and (max-width: 1024px) {
     font-size: 14px;
