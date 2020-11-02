@@ -11,17 +11,20 @@ exports[`GDPR renders correctly 1`] = `
       class="gdpr__header"
     >
       <h3
-        class="gdpr__title title"
+        class="gdpr__title"
       >
-        
-        Mad Devs’ GDPR Compliance Commitment
-      
+        <span
+          class="gdpr__nowrap"
+        >
+          Mad Devs’
+        </span>
+         GDPR 
+        <br />
+         Compliance Commitment
       </h3>
        
-      <img
-        alt="GDPR image"
+      <div
         class="gdpr__image"
-        src="@/assets/img/common/docs.svg"
       />
     </div>
      
@@ -29,7 +32,7 @@ exports[`GDPR renders correctly 1`] = `
       class="gdpr__content"
     >
       <p
-        class="gdpr__text doc-text"
+        class="gdpr__text--first gdpr__text"
       >
         
         We are committed to staying compliant with the General Data Protection Regulation (GDPR)
@@ -40,7 +43,7 @@ exports[`GDPR renders correctly 1`] = `
       </p>
        
       <p
-        class="gdpr__text doc-text"
+        class="gdpr__text"
       >
         <span
           class="gdpr__text gdpr__text--bold"
@@ -54,16 +57,22 @@ exports[`GDPR renders correctly 1`] = `
       </p>
        
       <h5
-        class="gdpr__sec-title"
+        class="gdpr__sec-title gdpr__sec-title--first"
       >
         Data Processing Documentation
       </h5>
        
       <p
-        class="gdpr__paragraph paragraph"
+        class="gdpr__paragraph"
       >
         
-        Under the terms of GDPR, Mad Devs is a Data Processor. In case you are a Data Controller
+        Under the terms of GDPR, 
+        <span
+          class="gdpr__nowrap"
+        >
+          Mad Devs
+        </span>
+         is a Data Processor. In case you are a Data Controller
         according to the official GDPR terminology, our legal department is ready to provide written
         consent for the processing of any personal data of individuals from the European Union and
         European Economic Area. We are also ready to provide our 
@@ -97,7 +106,7 @@ exports[`GDPR renders correctly 1`] = `
       </h5>
        
       <p
-        class="gdpr__paragraph paragraph"
+        class="gdpr__paragraph"
       >
         
         For your convenience, our Privacy Policy is available on our website in PDF format, you can
@@ -123,7 +132,7 @@ exports[`GDPR renders correctly 1`] = `
       </h5>
        
       <p
-        class="gdpr__paragraph paragraph"
+        class="gdpr__paragraph"
       >
         
         Our website uses cookies to help us define your core interests and make you relevant
@@ -141,11 +150,17 @@ exports[`GDPR renders correctly 1`] = `
       </h5>
        
       <p
-        class="gdpr__paragraph paragraph"
+        class="gdpr__paragraph"
       >
         
         To get information on our recent blog posts, hottest discounts, and newest services, you can
-        subscribe to the Mad Devs Newsletter. You can unsubscribe at any time. If you want to make
+        subscribe to the 
+        <span
+          class="gdpr__nowrap"
+        >
+          Mad Devs
+        </span>
+         Newsletter. You can unsubscribe at any time. If you want to make
         sure that your data has been amended or deleted, please contact us via
         
         <a
@@ -159,7 +174,7 @@ exports[`GDPR renders correctly 1`] = `
       </p>
        
       <p
-        class="gdpr__paragraph gdpr__paragraph--bold paragraph"
+        class="gdpr__paragraph gdpr__paragraph--bold"
       >
         
         We appreciate your collaboration and openness with regard to any legal issues!
@@ -167,11 +182,15 @@ exports[`GDPR renders correctly 1`] = `
       </p>
        
       <p
-        class="gdpr__paragraph gdpr__paragraph--bold gdpr__paragraph--italic paragraph"
+        class="gdpr__paragraph gdpr__paragraph--bold gdpr__paragraph--italic"
       >
         
-        Team Mad Devs
-      
+        Team 
+        <span
+          class="gdpr__nowrap"
+        >
+          Mad Devs
+        </span>
       </p>
     </div>
   </div>

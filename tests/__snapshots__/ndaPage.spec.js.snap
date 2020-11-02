@@ -14,17 +14,25 @@ exports[`Nda page renders correctly 1`] = `
         class="nda__header"
       >
         <h3
-          class="nda__title title"
+          class="nda__title"
         >
-          
-        Non-Disclosure Agreement at Mad Devs
-      
+          <span
+            class="nda__nowrap"
+          >
+            Non-Disclosure
+          </span>
+           Agreement 
+          <br />
+           at 
+          <span
+            class="nda__nowrap"
+          >
+            Mad Devs
+          </span>
         </h3>
          
-        <img
-          alt="NDA image"
+        <div
           class="nda__image"
-          src="@/assets/img/common/docs.svg"
         />
       </div>
        
@@ -32,20 +40,40 @@ exports[`Nda page renders correctly 1`] = `
         class="nda__content"
       >
         <p
-          class="nda__text doc-text"
+          class="nda__text nda__text--first"
         >
           
-        All staff members, including contractors and consultants working for Mad Devs, are obliged
-        to sign a non-disclosure agreement before getting access to our internal systems. This is
-        one of our standard onboarding practices for the employee’s day one. At Mad Devs, we
-        understand how important it is to protect our technology and process know-how.
-      
+        All staff members, including contractors and consultants working for 
+          <span
+            class="nda__nowrap"
+          >
+            Mad Devs
+          </span>
+          , are obliged
+        to sign a 
+          <span
+            class="nda__nowrap"
+          >
+            non-disclosure
+          </span>
+           agreement before getting access to our internal systems. This is
+        one of our standard onboarding practices for the employee’s day one. At 
+          <span
+            class="nda__nowrap"
+          >
+            Mad Devs
+          </span>
+          , we
+        understand how important it is to protect our technology and process 
+          <span
+            class="nda__nowrap"
+          >
+            know-how.
+          </span>
         </p>
          
-        <br />
-         
         <p
-          class="nda__text doc-text"
+          class="nda__text"
         >
           
         Even if our customer doesn’t have an NDA in place, we will protect their business secrets
@@ -53,7 +81,7 @@ exports[`Nda page renders correctly 1`] = `
         If you want to get familiar with this document, please send us a request via
         
           <a
-            class="nda__link"
+            class="nda__link nda__link--head-text"
             href="mailto:rock@maddevs.com"
           >
             rock@maddevs.com
@@ -63,13 +91,13 @@ exports[`Nda page renders correctly 1`] = `
         </p>
          
         <h5
-          class="nda__sec-title"
+          class="nda__sec-title nda__sec-title--first"
         >
           Customer NDA Templates
         </h5>
          
         <p
-          class="nda__paragraph paragraph"
+          class="nda__paragraph"
         >
           
         Some of our customers have standard NDA templates pre-approved by their legal
@@ -85,15 +113,25 @@ exports[`Nda page renders correctly 1`] = `
           class="nda__sec-title"
         >
           
-        Customer NDA Agreements Made Specifically for Mad Devs
-      
+        Customer NDA Agreements Made Specifically for 
+          <span
+            class="nda__nowrap"
+          >
+            Mad Devs
+          </span>
         </h5>
          
         <p
-          class="nda__paragraph paragraph nda__break-paragraph"
+          class="nda__paragraph nda__break-paragraph"
         >
           
-        Many customers prefer to create a tailored NDA for Mad Devs in collaboration with us. This
+        Many customers prefer to create a tailored NDA for 
+          <span
+            class="nda__nowrap"
+          >
+            Mad Devs
+          </span>
+           in collaboration with us. This
         practice is also very welcome. We are ready to explain how data will circulate within the new
         system, list the tools that we use, and describe the process our team follows. We are used to
         talking with the customer’s legal department and take efforts aimed at the protection of
@@ -101,17 +139,15 @@ exports[`Nda page renders correctly 1`] = `
       
         </p>
          
-        <br />
-         
         <p
-          class="nda__paragraph paragraph"
+          class="nda__paragraph"
         >
           
         Our company has experience of working with NDA agreements of any kind and complexity.
         If you have more specific questions please contact us via
         
           <a
-            class="nda__link"
+            class="nda__link nda__link--paragraph"
             href="mailto:rock@maddevs.io"
           >
             rock@maddevs.io
