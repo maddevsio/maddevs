@@ -532,6 +532,7 @@ $tech_legends: (
       height: 8px;
       border-radius: 50%;
       margin-right: 8px;
+      top: 7px;
       left: 4px;
       background: #938F95;
       opacity: 0;
@@ -571,6 +572,10 @@ $tech_legends: (
       display: flex;
       align-items: center;
       margin-bottom: 14px;
+
+      &::after {
+        top: 5px;
+      }
     }
   }
 
