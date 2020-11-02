@@ -241,6 +241,7 @@ export default {
   &__form-input {
     width: 40%;
     height: 32px;
+    padding: 0;
     background-color: transparent;
     border: 0px solid;
     color: $text-color--red;
