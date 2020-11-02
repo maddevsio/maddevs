@@ -173,7 +173,7 @@ export default {
     top: 80px;
     @include document-icon;
 
-    @media only screen and (max-width: 1260px) {
+    @media only screen and (max-width: 1300px) {
       width: 140px;
       height: 170px;
       top: 55px;
