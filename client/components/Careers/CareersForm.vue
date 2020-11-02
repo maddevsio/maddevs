@@ -294,12 +294,17 @@ export default {
 
   &__form-name-label,
   &__form-description,
+  &__form-list-item {
+    line-height: 24px;
+  }
+
+  &__form-name-label,
+  &__form-description,
   &__form-input,
   &__form-list-item {
     position: relative;
     font-family: 'Poppins-Regular', sans-serif;
     font-size: 22px;
-    line-height: 24px;
     letter-spacing: -0.02em;
   }
 
