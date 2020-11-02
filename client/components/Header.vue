@@ -3,7 +3,7 @@
     <header ref="header" class="header">
       <div class="container">
         <div class="row">
-          <div class="header__left-nav_bar col-xl-6 col-lg-6">
+          <div class="header__left-nav_bar col-xl-6 col-lg-7">
             <router-link :to="`/`" class="header__logo-icon">
               <headerLogo class="header__header-logo" />
             </router-link>
@@ -15,7 +15,7 @@
               <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer" class="header__navigation-link header__navigation-link-blog">Blog</a>
             </nav>
           </div>
-          <div class="header__right-content col-xl-6 col-lg-6">
+          <div class="header__right-content col-xl-6 col-lg-5">
             <div class="header__phone-wrapper">
               <span class="header__phone-flag" />
               <a class="header__header-phone" href="tel:+44 20 3984 8555">+44 20 3984 8555</a>
@@ -84,12 +84,7 @@ export default {
       align-items: center;
     }
 
-    &__left-nav_bar {
-      padding-right: 0;
-    }
-
     &__right-content {
-      padding-left: 0;
       justify-content: flex-end;
     }
 
