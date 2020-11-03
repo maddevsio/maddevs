@@ -32,8 +32,8 @@
         />
         <UIButton
           name="Get your trusted IT partner"
-          :disabled="invalid"
-          @click="sendForm(!invalid)"
+          :disabled="invalid || !agreeWithPrivacyPolicy"
+          @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
         />
       </div>
