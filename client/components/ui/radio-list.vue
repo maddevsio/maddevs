@@ -60,17 +60,16 @@ export default {
       margin-bottom: 16px;
     }
 
-    &__radio-list,
-    &__radio-label {
+    &__radio-list {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
     }
 
     &__radio-label {
-      padding-left: 25px;
+      display: flex;
+      align-items: center;
       padding-bottom: 20px;
-      position: relative;
       cursor: pointer;
 
       &:hover {
@@ -98,6 +97,7 @@ export default {
     }
 
     &__radio-text_item {
+      margin-left: 8px;
       color: $text-color--grey;
       font-family: 'Poppins-Regular', sans-serif;;
       font-size: 16px;
@@ -112,40 +112,8 @@ export default {
       width: 18px;
       height: 18px;
       display: block;
-      position: absolute;
-      top: 2px;
-      left: 0;
       border-radius: 100%;
       border: 1px solid $border-color--grey;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-		.radio-buttons {
-      &__radio-label {
-        &:last-child {
-          padding-bottom: 20px;
-        }
-      }
-    }
-	}
-
-  @media only screen and (max-width: 420px) {
-    .radio-buttons {
-      padding-bottom: 0;
-
-      &__radio-list {
-        flex-direction: column;
-        align-items: flex-start;
-
-        label {
-          padding-bottom: 20px;
-        }
-      }
-
-      &__field-name {
-        padding-top: 20px;
-      }
     }
   }
 </style>
