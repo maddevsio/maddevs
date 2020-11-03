@@ -113,7 +113,7 @@ export default {
       height: 18px;
       display: block;
       position: absolute;
-      top: 1px;
+      top: 2px;
       left: 0;
       border-radius: 100%;
       border: 1px solid $border-color--grey;
