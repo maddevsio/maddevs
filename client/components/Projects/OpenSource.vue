@@ -4,7 +4,9 @@
       <div class="open-source__top-text-content">
         <h3 class="open-source__main-title">Our code - available in open source - is used by many other companies.</h3>
         <div class="open-source__github-wrap">
-          <p class="open-source__description">70+ of <span>Mad Devs'</span> pet projects have been shared with <br class="open-source__descktop-break"> the community via GitHub.</p>
+          <p class="open-source__description">
+            70+ of <span>Mad Devs'</span> pet projects have been shared with <br class="open-source__descktop-break"> the community via <span class="open-source__mobile-icon-wrapper">GitHub. <a class="open-source__github-icon-mobile" href="https://github.com/maddevsio" target="_blank"></a></span>
+          </p>
           <a class="open-source__github-icon" href="https://github.com/maddevsio" target="_blank"></a>
         </div>
       </div>
@@ -33,37 +35,31 @@ export default {
       openSources: [
         {
           projectName: 'mad-location',
-          industry: 'Logistics',
           link: 'https://github.com/maddevsio/mad-location-manager',
           description: 'А library for GPS and accelerometer data "fusion" with a Kalman filter.'
         },
         {
           projectName: 'comedian',
-          industry: 'Team Management',
           link: 'https://github.com/maddevsio/comedian',
           description: 'A <span>team-management</span> system leveraging Slack and Telegram bot functionalities to enable remote standups and track daily performance.'
         },
         {
           projectName: 'ariadna',
-          industry: 'Logistics',
           link: 'https://github.com/maddevsio/ariadna',
           description: 'An <span>open-source</span> geocoder, built on top of ElasticSearch, for fast geocoding and better search for CIS countries.'
         },
         {
           projectName: 'id-match',
-          industry: 'Security',
           link: 'https://github.com/maddevsio/idmatch',
           description: 'An open source tool enabling ID cards recognition to ensure security on your premises.'
         },
         {
           projectName: 'your-cast',
-          industry: 'Entertainment',
           link: 'https://github.com/maddevsio/yourcast.tv',
           description: 'A solution to create lists of YouTube videos and stream them online in just a few seconds.'
         },
         {
           projectName: 'heimdall',
-          industry: 'Security',
           link: 'https://github.com/maddevsio/heimdall',
           description: 'A <span>security-monitoring</span> solution for Ethereum smart contracts.'
         }
@@ -98,8 +94,7 @@ export default {
 
   &__description,
   &__paragraph,
-  &__github-link,
-  &__industry {
+  &__github-link {
     font-family: 'Poppins-Regular';
     font-size: 16px;
     line-height: 24px;
@@ -111,24 +106,44 @@ export default {
     }
   }
 
+  &__mobile-icon-wrapper {
+    position: relative;
+  }
+
   &__github-wrap {
     display: flex;
     justify-content: center;
     margin-right: -13px;
   }
 
-  &__github-icon {
-    width: 77px;
-    height: 79px;
-    display: block;
-    margin-top: -24px;
-    margin-left: -1px;
+  &__github-icon,
+  &__github-icon-mobile {
     @include github-icon;
   }
 
+  &__github-link,
+  &__github-icon,
+  &__icon {
+    display: block;
+  }
+
+  &__github-icon {
+    width: 77px;
+    height: 79px;
+    margin-top: -24px;
+    margin-left: -1px;
+  }
+
+  &__github-icon-mobile {
+    width: 35px;
+    height: 35px;
+    display: none;
+    position: absolute;
+    top: -4px;
+    right: -32px;
+  }
 
   &__github-link {
-    display: block;
     color: $text-color--red;
   }
 
@@ -137,12 +152,6 @@ export default {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 31px;
-  }
-
-  &__industry {
-    display: none;
-    width: min-content;
-    color: $text-color--black-lighter;
   }
 
   &__project-link {
@@ -166,13 +175,8 @@ export default {
     transition: 0.4s;
 
     &:hover  {
-      .open-source__paragraph,
-      .open-source__industry {
+      .open-source__paragraph {
         color: $text-color--white-darken;
-      }
-
-      .open-source__industry {
-        display: block;
       }
     }
 
@@ -242,7 +246,6 @@ export default {
   }
 
   &__icon {
-    display: block;
     width: 229px;
     height: 50px;
   }
@@ -287,27 +290,14 @@ export default {
     &__github-wrap {
       margin-right: 0;
     }
-
-    &__description {
-      position: relative;
-
-      &::before {
-        content: '';
-        width: 35px;
-        height: 35px;
-        position: absolute;
-        margin-left: 300px;
-        top: 20px;
-        @include github-icon;
-      }
-    }
     
-    &__github-icon {
-      display: none;
-    }
-
+    &__github-icon,
     &__descktop-break {
       display: none;
+    }
+
+    &__github-icon-mobile {
+      display: block;
     }
   }
 
@@ -319,22 +309,9 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 490px) {
-    &__description {
-      &::before {
-        margin-left: 300px;
-      }
-    }
-  }
-
   @media only screen and (max-width: 400px) {
     &__description {
       width: 277px;
-
-      &::before {
-        top: 45px;
-        margin-left: 170px;
-      }
     }
   }
 }
