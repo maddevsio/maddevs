@@ -14,7 +14,6 @@
             <a class="open-source__project-link" :href="openSource.link" target="_blank">
               <div class="open-source__content-wrap">
                 <div :class="`open-source__icon open-source__${openSource.projectName}`"></div>
-                <!-- <p class="open-source__industry">{{ openSource.industry }}</p> -->
               </div>
               <p class="open-source__paragraph" v-html="openSource.description">{{ openSource.description }}</p>
             </a>
@@ -154,7 +153,7 @@ export default {
   }
 
   &__projects {
-    margin-bottom: 36px;
+    margin-bottom: 56px;
   }
 
   &__project {
@@ -316,7 +315,7 @@ export default {
     padding-bottom: 55px;
 
     &__projects {
-      margin-bottom: 26px;
+      margin-bottom: 36px;
     }
   }
 
