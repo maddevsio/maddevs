@@ -2026,7 +2026,7 @@ exports[`Index page renders correctly 1`] = `
               <br
                 class="customer-rates__line-break"
               />
-               more than 2 years
+               more than 2 years.
             </p>
           </div>
         </div>
