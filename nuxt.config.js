@@ -95,8 +95,8 @@ module.exports = {
     '@nuxtjs/robots',
     '@/modules/static',
     '@/modules/crawler',
-    '@nuxtjs/prismic',
-    'nuxt-lazy-load'
+    '@nuxtjs/prismic'
+    // 'nuxt-lazy-load'
   ],
   gtm: {
     id: 'GTM-NNKVRF3',
