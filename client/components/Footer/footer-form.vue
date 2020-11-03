@@ -183,14 +183,8 @@ export default {
       }
     }
 
-    .submit-button {
-      font-size: 16px;
-      line-height: 24px;
-    }
-
     .entry-field,
-    .error-text,
-    .submit-button {
+    .error-text {
       font-family: 'Poppins-Regular', sans-serif;;
     }
 

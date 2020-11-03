@@ -100,8 +100,8 @@ export default {
     &__radio-text_item {
       color: $text-color--grey;
       font-family: 'Poppins-Regular', sans-serif;;
-      font-size: 18px;
-      letter-spacing: -0.03em;
+      font-size: 16px;
+      letter-spacing: -0.02em;
     }
 
     &__radio-input {
@@ -113,7 +113,7 @@ export default {
       height: 18px;
       display: block;
       position: absolute;
-      top: 2px;
+      top: 1px;
       left: 0;
       border-radius: 100%;
       border: 1px solid $border-color--grey;
