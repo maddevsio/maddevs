@@ -206,20 +206,13 @@ export default {
     padding: 0;
 
     /deep/ .ui-radio-buttons {
-      &_item {
-        &:last-child {
-          display: flex;
-          align-items: center;
-
-          &::after {
-            content: 'roles.';
-            font-family: 'Poppins-Regular', sans-serif;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: -0.02em;
-            margin-left: 11px;
-          }
-        }
+      &::after {
+        content: 'roles.';
+        font-family: 'Poppins-Regular', sans-serif;
+        font-size: 22px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        margin-left: 11px;
       }
     }
   }
@@ -345,6 +338,22 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 630px) {
+     &__position-list {
+      /deep/ .ui-radio-buttons {
+        &::after {
+          position: absolute;
+          left: 88px;
+          bottom: 0;
+        }
+      }
+    }
+
+    &__form-description-email-title {
+      margin-top: 20px;
+    }
+  }
+
   @media only screen and (max-width: 550px) {
     &__form-name-label,
     &__form-description,
@@ -371,6 +380,15 @@ export default {
 
     &__form-description-email-title {
       margin-top: 9px;
+    }
+
+    &__position-list {
+      /deep/ .ui-radio-buttons {
+        &::after {
+          font-size: 16px;
+          left: 67px;
+        }
+      }
     }
 
     .modal-error-text {

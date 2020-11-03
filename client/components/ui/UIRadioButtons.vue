@@ -57,8 +57,8 @@ export default {
     }
 
     &-circle {
-      height: 19px;
-      width: 19px;
+      height: 22px;
+      width: 22px;
       box-sizing: border-box;
       border: 1px solid $text-color--grey;
       border-radius: 100%;
@@ -71,7 +71,7 @@ export default {
       margin-top: 1px;
       color: $text-color--grey;
       font-family: 'Poppins-Regular', sans-serif;
-      font-size: 16px;
+      font-size: 22px;
       line-height: 24px;
       letter-spacing: -0.02em;
     }
@@ -88,10 +88,25 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 630px) {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 15px;
+  }
+
+  @media only screen and (max-width: 550px) {
     grid-row-gap: 12px;
+
+    &_item {
+      &-circle {
+        height: 19px;
+        width: 19px;
+      }
+
+      &-label {
+        font-size: 16px;
+      }
+    }
   }
 }
 </style>
