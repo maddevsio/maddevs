@@ -1,235 +1,304 @@
 <template>
 	<div class="footer-contacts">
-		<div class="footer-contacts__call-us">
-			<h4 class="footer-contacts__title">Call us:</h4>
-			<ul class="footer-contacts__phones-list">
-				<!-- <li>
-					<a href="tel:+1 833-MADDEVS" class="footer-contacts__phone-item">
-						<img src="@/assets/img/Flags/united-states.svg" alt="United States">
-						+1 833-MADDEVS
-					</a>
-				</li> -->
-				<li>
-					<a href="tel:+44 20 3984 8555" class="footer-contacts__phone-item">
-            <span class="footer-contacts__icon footer-contacts__icon--uk" />
-						+44 20 3984 8555
-					</a>
-				</li>
-			</ul>
+		<div class="footer-contacts__head-content">
+			<div class="footer-contacts__contact-item">
+				<p class="footer-contacts__contact-title">Text us:</p>
+				<a href="mailto:team@maddevs.io" class="footer-contacts__contact-link footer-contacts__contact-mail">team@maddevs.io</a>
+			</div>
+			<div class="footer-contacts__contact-item">
+				<div class="footer-contacts__contact-title-wrapper">
+					<div class="footer-contacts__contact-title-flag"></div>
+					<p class="footer-contacts__contact-title">Call us:</p>
+				</div>
+				<a href="tel:+44 20 3984 8555" class="footer-contacts__contact-link footer-contacts__contact-phone-number">+44 20 3984 8555</a>
+			</div>
 		</div>
-		<div class="footer-contacts__message-us">
-			<h4 class="footer-contacts__title">Message us:</h4>
+		<div class="footer-contacts__lists-wrapper">
 			<ul class="footer-contacts__messengers-list">
-				<li>
-					<a href="https://facebook.com/maddevsllc" class="footer-contacts__messenger-item" target="_blank">
-						<img src="@/assets/img/Footer/messenger.svg" alt="Messenger">
-            <span class="footer-contacts__icon footer-contacts__icon--messenger" />
-						Messenger
-					</a>
-				</li>
-				<li>
-					<a href="http://wa.me/996555771481" class="footer-contacts__messenger-item" target="_blank">
-						<img src="@/assets/img/Footer/whatsapp.svg" alt="Whatsapp">
-            <span class="footer-contacts__icon footer-contacts__icon--whatsapp" />
-						Whatsapp
-					</a>
-				</li>
-				<li>
-					<a href="https://t.me/mun_tamara/" class="footer-contacts__messenger-item" target="_blank">
-						<img src="@/assets/img/Footer/telegram.svg" alt="Telegram">
-            <span class="footer-contacts__icon footer-contacts__icon--telegram" />
-						Telegram
-					</a>
-				</li>
-				<li>
-					<a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc" class="footer-contacts__messenger-item" target="_blank">
-						<img src="@/assets/img/Footer/wechat.svg" alt="WeChat">
-            <span class="footer-contacts__icon footer-contacts__icon--wechat" />
-						WeChat
+				<li v-for="(messenger, i) in messengers" :key="i">
+					<a :href="messenger.link" target="__blank" class="footer-contacts__messenger-item-wrapper">
+						<span class="footer-contacts__messenger-item" :class="`footer-contacts__${messenger.className}`" />
+						<p class="footer-contacts__messenger-name">{{ messenger.name }}</p>
 					</a>
 				</li>
 			</ul>
+			<div class="footer-contacts__social-network-list-desktop">
+				<footerSocialNetworkList />
+			</div>
 		</div>
 	</div>
 </template>
 
 <script>
+import footerSocialNetworkList from '@/components/Footer/footer-social-network-list';
+
 export default {
-  name: 'footer-contacts'
+  name: 'footer-contacts',
+  components: {
+    footerSocialNetworkList
+  },
+  data() {
+    return {
+      messengers: [
+        {
+	        name: 'Messenger',
+	        className: 'messenger-facebook-messenger',
+	        link: 'https://facebook.com/maddevsllc'
+        },
+        {
+	        name: 'WhatsApp',
+	        className: 'messenger-watsapp',
+	        link: 'http://wa.me/996555771481'
+        },
+        {
+          name: 'Telegram',
+          className: 'messenger-telegram',
+          link: 'https://t.me/mun_tamara/'
+        },
+        {
+          name: 'WeChat',
+          className: 'messenger-wechat',
+          link: 'https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc'
+        }
+      ]
+    };
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/vars';
+	@import '../../assets/styles/vars';
+	@import '../../assets/styles/_messengerIcons';
+	@import '../../assets/styles/_flagsIcons';
+
+	@mixin contacts-head-content {
+		&__head-content {
+			flex-direction: column;
+			margin-bottom: 31px;
+		}
+	}
+
+	@mixin messenger-list-grid {
+		&__messenger-item-wrapper {
+			justify-content: flex-start;
+		}
+
+		&__messenger-item-wrapper {
+			&:nth-child(3) {
+				margin-left: -8px;
+			}
+		}
+	}
 
 	.footer-contacts {
-		display: flex;
-		margin-top: 123px;
+		&__head-content {
+			margin-bottom: 68px;
+		}
 
-		&__title {
-			padding-bottom: 19px;
-			color: $text-color--grey-light;
-			font-family: 'Hoves-Bold';
-    	font-size: 27px;
-			font-weight: 500;
+		&__head-content,
+		&__messengers-list,
+		&__messenger-item-wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__contact-title-wrapper {
+			display: flex;
+    	align-items: center;
+		}
+
+		&__contact-title,
+		&__messenger-name {
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: -0.02em;
+			font-family: 'Poppins-Regular', sans-serif;
+		}
+
+		&__contact-title-flag {
+			display: block;
+			width: 18px;
+			height: 14px;
+			margin-right: 8px;
+			@include flag-uk;
+		}
+
+		&__contact-title,
+		&__contact-link {
+			color: $text-color--white;
+		}
+
+		&__contact-link {
+			display: inline-block;
+			margin-top: 12px;
+      font-size: 34px;
+      line-height: 100%;
+      font-weight: 600;
+			font-family: 'Poppins-Medium', sans-serif;
 			letter-spacing: -1px;
-		}
-
-    &__icon {
-      display: inline-block;
-      height: 16px;
-      width: 19px;
-      background-repeat: no-repeat;
-
-      &--uk {
-        background-image: url(../../assets/img/Flags/united-kingdom.svg);
-      }
-
-      &--messenger {
-        background-image: url(../../assets/img/Footer/messenger.svg);
-      }
-
-      &--whatsapp {
-        background-image: url(../../assets/img/Footer/whatsapp.svg);
-      }
-
-      &--telegram {
-        background-image: url(../../assets/img/Footer/telegram.svg);
-      }
-
-      &--wechat {
-        background-image: url(../../assets/img/Footer/wechat.svg);
-      }
-    }
-
-		&__phones-list,
-		&__messengers-list {
-			display: grid;
-			grid-gap: 10px;
-		}
-
-		&__phones-list {
-			grid-template-columns: repeat(1, 1fr);
-		}
-
-		&__messengers-list {
-			grid-template-columns: repeat(2, 1fr);
-			grid-column-gap: 84px;
-		}
-
-		&__phone-item,
-		&__messenger-item {
-			position: relative;
-			color: $text-color--grey;
-			font-family: 'Hoves-Bold';
-			font-size: 22px;
+			border-bottom: 1px solid $text-color--red-opacity;
 			text-decoration: none;
-			letter-spacing: -1px;
+		}
 
-			img {
-				position: absolute;
-				top: 5px;
-				left: 0;
+		&__messenger-item-wrapper {
+			align-items: center;
+			text-decoration: none;
+
+			&:first-child {
+				margin-left: -8px;
 			}
 		}
 
-		&__message-us {
-			margin-left: 133px;
+		&__messenger-item {
+			display: block;
+			width: 42px;
+			height: 42px;
+			margin-right: 3px;
+		}
+
+		&__messenger-name {
+			color: $text-color--grey;
+		}
+
+		&__social-network-list-desktop {
+			margin-top: 53px;
+			padding-top: 53px;
+			border-top: 1px solid $border-color--grey-dark-transparent;
+		}
+
+		&__messenger-facebook-messenger {
+			@include messenger-facebook-messenger;
+		}
+
+		&__messenger-watsapp {
+			@include messenger-watsapp;
+		}
+
+		&__messenger-telegram {
+			@include messenger-telegram;
+		}
+
+		&__messenger-wechat {
+			@include messenger-wechat;
 		}
 	}
 
 	@media only screen and (max-width: 1320px) {
 		.footer-contacts {
-			margin-top: 77px;
-
-			&__message-us {
-				margin-left: 88px;
+			&__contact-link {
+				font-size: 28px;
 			}
+
+			//&__messenger-item {
+      //  width: 36px;
+      //  height: 36px;
+      //}
 		}
 	}
 
-	@media only screen and (max-width: 1220px) {
+	@media only screen and (min-width: 768px) and (max-width: 1200px) {
 		.footer-contacts {
-			flex-direction: column;
-			margin-top: 64px;
+      &__contact-item {
+        margin-bottom: 42px;
 
-			&__message-us {
-				margin-top: 40px;
-				margin-left: 0;
+        &:last-child {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+
+			&__social-network-list-desktop {
+				margin-top: 35px;
+				padding-top: 40px;
 			}
 
-			&__messengers-list {
-				grid-template-columns: repeat(2, 218px);
-				grid-column-gap: 0;
-			}
+			@include contacts-head-content;
+		  @include messenger-list-grid;
 		}
 	}
 
-	@media only screen and (max-width: 1024px) {
+  @media screen and (max-width: 1100px) {
+    .footer-contacts__messengers-list {
+      width: max-content;
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      grid-column-gap: 70px;
+    }
+  }
+
+	@media only screen and (max-width: 991px) {
 		.footer-contacts {
-			&__title {
-				padding-bottom: 7px;
-				font-size: 24px;
+			&__head-content {
+				flex-direction: row;
+				margin-bottom: 48px;
+        flex-wrap: wrap;
+			}
+
+			&__lists-wrapper {
+				max-width: 100%;
 			}
 		}
 	}
 
-	@media only screen and (max-width: 960px) {
+  @media screen and (max-width: 800px) {
+    .footer-contacts__messengers-list {
+      grid-column-gap: 60px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .footer-contacts {
+      &__social-network-list-desktop {
+        display: none;
+      }
+
+      &__contact-item {
+        &:last-child {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+	@media only screen and (max-width: 640px) {
 		.footer-contacts {
-			flex-direction: row;
-			justify-content: space-between;
-			margin-bottom: 60px;
+			@include contacts-head-content;
+		  @include messenger-list-grid;
 
-			&__message-us {
-				margin-top: 0;
-			}
+      &__contact-item {
+        margin-bottom: 33px;
+      }
 
-			&__messengers-list {
-				grid-template-columns: repeat(2, 1fr);
-				grid-column-gap: 54px;
-			}
+      &__contact-title {
+        font-size: 13px;
+        line-height: 22px;
+      }
 		}
 	}
 
-	@media only screen and (max-width: 680px) {
-		.footer-contacts {
-			&__messengers-list {
-				grid-template-columns: repeat(1, 1fr);
-			}
-		}
-	}
+  @media screen and (max-width: 600px) {
+    .footer-contacts {
+      &__messengers-list {
+        width: max-content;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-column-gap: 70px;
+      }
 
-	@media only screen and (max-width: 520px) {
-		.footer-contacts {
-			flex-direction: column;
+      &__messenger-item {
+        width: 42px;
+        height: 42px;
+      }
+    }
+  }
 
-			&__messengers-list {
-				grid-template-columns: repeat(2, 1fr);
-				grid-column-gap: 0;
-			}
-
-			&__message-us {
-				margin-top: 30px;
-			}
-
-			&__messenger-item,
-			&__phone-item {
-				font-size: 20px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 420px) {
-		.footer-contacts {
-			margin-top: 50px;
-			margin-bottom: 80px;
-		}
-	}
-
-	@media only screen and (max-width: 370px) {
-		.footer-contacts {
-			margin-top: 37px;
-			margin-bottom: 58px;
-		}
-	}
+  @media screen and (max-width: 360px) {
+    .footer-contacts__messengers-list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-column-gap: 33px;
+      }
+  }
 </style>

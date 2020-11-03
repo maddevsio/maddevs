@@ -1,28 +1,21 @@
 <template>
   <footer :class="`footer ${currentPageName}`">
     <div class="container">
-			<div class="footer__content">
-				<div class="footer__text-content">
-					<div class="footer__title-wrap">
-						<h2 class="footer__main-title main-title">Get In Touch</h2>
-						<div class="footer__mail-wrapper">
-							<a class="footer__mailto-link" href="mailto:team@maddevs.io">team@maddevs.io</a>
-						</div>
-					</div>
-          <footerContacts />
+			<div class="footer__content row">
+				<div class="footer__left-content col-xl-8 col-lg-7 col-md-6">
+					<h2 class="footer__main-title">Get In Touch</h2>
+					<footerContacts />
+					<footerNavbar class="footer__navbar-desktop" />
 				</div>
-				<div class="footer__form-wrap">
+				<div class="footer__form-wrap col-xl-4 col-lg-5 col-md-5">
 					<footerForm />
 				</div>
 			</div>
-			<div class="footer__bottom-links-line">
-				<p class="footer__company-name">© Mad Devs - {{ currentYear }}</p>
-				<div class="footer__left-bottom_links">
-					<a href="/gdpr" target="_blank" class="footer__bottom-link">GDPR Compliance Commitment</a>
-					<a href="/privacy" target="_blank" class="footer__bottom-link">Privacy Policy</a>
-					<a href="/nda" target="_blank" class="footer__bottom-link">Non-Disclosure Agreement (NDA)</a>
-				</div>
-				<footerSocialNetworkBar />
+			<div class="footer__mobile-content footer__social-network-list-mobile">
+				<footerSocialNetWorkList />
+			</div>
+			<div class="footer__mobile-content">
+				<footerNavbarMobile />
 			</div>
     </div>
   </footer>
@@ -31,14 +24,18 @@
 <script>
 import footerForm from '@/components/Footer/footer-form';
 import footerContacts from '@/components/Footer/footer-contacts';
-import footerSocialNetworkBar from '@/components/Footer/footer-social-network';
+import footerNavbar from '@/components/Footer/footer-navbar';
+import footerNavbarMobile from '@/components/Footer/footer-navbar-mobile';
+import footerSocialNetWorkList from '@/components/Footer/footer-social-network-list';
 
 export default {
   name: 'Footer',
   components: {
     footerForm,
     footerContacts,
-    footerSocialNetworkBar
+    footerNavbar,
+    footerNavbarMobile,
+    footerSocialNetWorkList
   },
   mounted() {
     if ($nuxt.$route.name) {
@@ -55,64 +52,46 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/styles/vars';
+	@import '../assets/styles/vars';
+	@import '../assets/styles/_flagsIcons';
 
 	.footer {
-		padding-top: 80px;
-    padding-bottom: 59px;
+		padding-top: 100px;
+		padding-bottom: 92px;
 
-		&__content {
-			display: flex;
-    	justify-content: space-between;
-			padding-bottom: 50px;
-		}
+    &__content {
+      justify-content: space-between;
+
+      @media screen and (max-width: 991px) {
+        margin: 0;
+      }
+    }
 
 		&__main-title {
-			-webkit-text-stroke: $text-stroke--white;
-		}
-
-		&__mailto-link {
+			margin-bottom: 43px;
+			font-size: 62px;
+			font-family: 'Poppins-Bold', sans-serif;
+      font-weight: 700;
+			line-height: 120%;
+			letter-spacing: -1px;
 			color: $text-color--red;
-			font-size: 70px;
-			font-family: 'Hoves-Bold';
-			text-decoration: none;
-			border-bottom: 1px solid;
-			letter-spacing: -2px;
 		}
 
-		&__bottom-links-line {
-			display: flex;
-			padding-top: 23px;
-			border-top: 1px solid $footer--border-color--grey-light;
-		}
-
-		&__left-bottom_links {
-			display: flex;
-		}
-
-		&__bottom-link,
-		&__company-name {
-			font-size: 16px;
-			font-family: 'Hoves-Regular';
-			color: $text-color--grey;
-		}
-
-		&__bottom-link {
-			padding-left: 26px;
-			text-decoration: underline;
-			text-decoration-color: $footer--text-decoration-color;
-
-			&:first-child {
-				padding-left: 30px;
-			}
+		&__left-content {
+			padding-right: 128px;
+      box-sizing: border-box;
 		}
 
 		&__form-wrap {
-			margin-top: 18px;
+			margin-top: 20px;
 		}
 
-		&__mail-wrapper {
-			margin-top: 58px;
+		&__mobile-content {
+			display: none;
+		}
+
+		&__social-network-list-mobile {
+			margin: 40px 0;
 		}
 	}
 
@@ -120,195 +99,97 @@ export default {
 	.privacy,
 	.nda {
 		padding-top: 109px;
-		margin-top: 90px;
+		margin-top: 141px;
 		border-top: 1px solid $border-color--grey-dark;
 	}
 
-	@media only screen and (max-width: 1440px) {
+	@media only screen and (max-width: 1200px) {
 		.footer {
-			padding-top: 110px;
-			padding-bottom: 103px;
-		}
-	}
-
-	@media only screen and (max-width: 1420px) {
-		.footer {
-			padding-bottom: 65px;
-
-			&__bottom-links-line {
-				display: grid;
-				justify-content: center;
-				grid-row-gap: 25px;
-				padding-top: 30px;
-				text-align: center;
-			}
-
-			&__bottom-link {
-				&:first-child {
-					padding-left: 0;
-				}
-			}
-
-			&__company-name {
-				grid-row-start: 3;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 1320px) {
-		.footer {
-			padding-top: 90px;
-
 			&__main-title {
-				font-size: 100px;
+				margin-bottom: 20px;
 			}
 
-			&__mailto-link {
-				font-size: 62px;
+			&__form-wrap {
+				margin-top: 33px;
 			}
 
-			&__mail-wrapper {
-				margin-top: 50px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 1220px) {
-		.footer {
-			&__mail-wrapper {
-				margin-top: 25px;
-
-				img {
-					display: none;
-				}
-			}
-
-			&__mailto-link {
-				margin-left: 0;
-				font-size: 46px;
-			}
-
-			&__content {
-				padding-bottom: 55px;
+			&__left-content {
+				padding-right: 40px;
 			}
 		}
 	}
 
-	@media only screen and (max-width: 1024px) {
-		.footer {
-			padding-top: 75px;
-			padding-bottom: 43px;
+  @media screen and (max-width: 990px){
+    .footer__main-title {
+      font-size: 45px;
+		}
+  }
 
-			&__main-title {
-				font-size: 90px;
+	@media only screen and (max-width: 991px) {
+		.footer {
+      padding-top: 48px;
+      padding-bottom: 46px;
+
+			&__form-wrap,
+			&__left-content {
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+			&__form-wrap {
+				margin-top: 30px;
 			}
 		}
 	}
 
-	@media only screen and (max-width: 960px) {
-		.footer {
-			padding-top: 40px;
-			padding-bottom: 50px;
-
-			&__main-title {
-				font-size: 64px;
-				letter-spacing: -0.03em;
-			}
-
-			&__content {
-				flex-direction: column;
-				padding-bottom: 42px;
-			}
-
-			&__mail-wrapper {
-				margin-top: 20px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 760px) {
-		.footer {
-			&__bottom-links-line {
-				padding-top: 35px;
-			}
-
-			&__left-bottom_links {
-				flex-wrap: wrap;
-				justify-content: center;
-			}
-
-			&__bottom-link {
-				&:last-child {
-					padding-top: 10px;
-				}
-			}
-
-		}
-
+	@media only screen and (max-width: 834px) {
 		.gdpr,
 		.privacy,
 		.nda {
-			margin-top: 60px;
+			margin-top: 90px;
 		}
 	}
 
-	@media only screen and (max-width: 680px) {
-		.footer {
-			padding-top: 60px;
+  @media screen and (max-width: 767px) {
+    .footer { 
+      &__main-title {
+        font-size: 45px;
+      }
+
+      &__navbar-desktop {
+        display: none;
+      }
+
+      &__mobile-content {
+        display: block;
+      }
+
+      &__social-network-list-mobile {
+        border-top: 1px solid rgba(164, 168, 180, .2);
+        padding-top: 35px;
+      }
+    }
+	}
+	
+	@media only screen and (max-width: 578px) {
+		.gdpr,
+		.privacy,
+		.nda {
+			margin-top: 68px;
 		}
 	}
 
-	@media only screen and (max-width: 500px) {
+	@media only screen and (max-width: 576px) {
 		.footer {
-			&__left-bottom_links {
-				flex-direction: column;
-			}
-
-			&__bottom-link {
-				&:nth-child(2) {
-					padding-top: 10px;
-				}
-			}
-		}
-	}
-
-	@media only screen and (max-width: 420px) {
-		.footer {
-			padding-top: 55px;
-			padding-bottom: 17px;
-
-			&__mailto-link {
-				font-size: 40px;
-				letter-spacing: -0.02em;
-			}
+			padding-top: 50px;
 
 			&__main-title {
-				font-size: 53px;
-				letter-spacing: -2px;
+				font-size: 46px;
 			}
 
-			&__bottom-link {
-				padding-left: 10px;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 370px) {
-		.footer {
-			padding-bottom: 43px;
-
-			&__mailto-link {
-				font-size: 34px;
-			}
-
-			&__mail-wrapper {
-				margin-top: 10px;
-			}
-
-			&__bottom-link {
-				&:nth-child(2) {
-					padding-top: 10px;
-				}
+      &__social-network-list-mobile {
+				margin-left: 0;
+				margin-right: 0;
 			}
 		}
 	}

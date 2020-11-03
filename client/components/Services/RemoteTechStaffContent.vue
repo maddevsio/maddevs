@@ -1,39 +1,40 @@
 <template>
-  <div class="remote-tech-staff-content__tech-staff">
-    <div class="remote-tech-staff-content__content_wrapper">
-      <div class="remote-tech-staff-content__content-wrap">
-        <div class="remote-tech-staff-content__title-wrap">
-          <h3 class="remote-tech-staff-content__title title default-title">{{ title }}</h3>
-          <h4 class="remote-tech-staff-content__sub-title sub-title">{{ subTitle }}</h4>
-        </div>
-        <img 
-          class="remote-tech-staff-content__content-icon" 
-          src="@/assets/img/Services/svg/individuals-symbol.svg" 
-          alt="individuals-title-symbol"
-          v-if="title === 'Individuals'"
-        />
-        <img
-          class="remote-tech-staff-content__content-icon" 
-          src="@/assets/img/Services/svg/teams-symbol.svg" 
-          alt="teams-title-symbol"
-          v-if="title === 'Teams'"
-        />
+  <div 
+    class="remoteTechStaffContent__tech-staff" 
+    :class="[(`remoteTechStaffContent__tech-staff-${title.toLowerCase()}`), (activeByDefault === true ? 'remoteTechStaffContent__tech-staff-active' : '')]"
+    @mouseover="handleMouseOver(title)"
+    @mouseout="handleMouseOut(title)"
+  >
+    <div class="remoteTechStaffContent__content_wrapper">
+      <div class="remoteTechStaffContent__text-wrap">
+        <UIItemTitle :itemTitle="title" />
+        <UIItemSubTitle :itemSubTitle="subTitle" class="remoteTechStaffContent__item-sub-title"/>
+        <UIParagraph :paragraph="paragraph" class="remoteTechStaffContent__paragraph" :class="`remoteTechStaffContent__${title.toLowerCase()}-paragraph`"/>
       </div>
-      <p class="remote-tech-staff-content__paragraph paragraph">{{ paragraph }}</p>
     </div>
     <UIButtonModalTrigger 
       :buttonInnerText="buttonInnerText"
       :modalWindowName="modalWindowName" 
-      class="remote-tech-staff-content__ui-button-modal-trigger"
+      class="remoteTechStaffContent__ui-button-modal-trigger"
     />
+    <div class="remoteTechStaffContent__item-icon" :class="`remoteTechStaffContent__${title.toLowerCase()}-icon`"></div>
   </div>
 </template>
 
 <script>
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
+import UIParagraph from '@/components/ui/Services/UIParagraph';
+import UIItemTitle from '@/components/ui/Services/UIItemTitle';
+import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle';
 
 export default {
   name: 'RemoteTechStaffContent',
+  components: {
+    UIButtonModalTrigger,
+    UIItemTitle,
+    UIItemSubTitle,
+    UIParagraph
+  },
   props: {
     title: {
       type: String,
@@ -54,10 +55,31 @@ export default {
     modalWindowName: {
       type: String,
       default: 'Modal Window Name'
+    },
+    activeByDefault: {
+      type: Boolean,
+      default: null
     }
   },
-  components: {
-    UIButtonModalTrigger
+  data() {
+    return {
+      teamsItem: null
+    };
+  },
+  mounted() {
+    this.teamsItem = document.getElementsByClassName('remoteTechStaffContent__tech-staff-teams')[0];
+  },
+  methods: {
+    handleMouseOver(currentElement) {
+      if (currentElement !== 'Teams') {
+        this.teamsItem.classList.remove('remoteTechStaffContent__tech-staff-active');
+      }
+    },
+    handleMouseOut(currentElement) {
+      if (currentElement !== 'Teams') {
+        this.teamsItem.classList.add('remoteTechStaffContent__tech-staff-active');
+      }
+    }
   }
 };
 
@@ -65,271 +87,211 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/_remoteTechStaffIcons';
 
-  .remote-tech-staff-content {
+  .remoteTechStaffContent {
+    &__tech-staff {
+      width: 503px;
+      justify-content: space-between;
+      position: relative;
+      opacity: 0.6;
+    }
+
+    &__tech-staff-active, &__tech-staff:hover  {
+      opacity: 1;
+
+      .remoteTechStaffContent__item-icon {
+        opacity: 1;
+      }
+    }
+
+    &__content_wrapper {
+      margin-bottom: 28px;
+    }
+
+    &__tech-staff,
+    &__item-icon {
+      transition: 0.4s;
+    }
+
+    &__tech-staff,
+    &__text-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item-sub-title {
+      width: 336px;
+      margin-bottom: 16px;
+    }
+    
+    &__ui-button-modal-trigger {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+    }
+
+    &__teams-paragraph {
+      width: 400px;
+    }
+
+    &__individuals-paragraph {
+      width: 424px;
+    }
+
+    &__item-icon {
+      display: block;
+      position: absolute;
+      opacity: 0.4;
+    }
+
     &__ui-button-modal-trigger {
       width: 100%;
+      height: 56px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      color: $text-color--white;
+      border-color: $button-border--white-opacity;
 
       &:hover {
-        background-color: $bgcolor--grey-light;
+        background-color: $bgcolor--white;
         color: $text-color--black !important;
       }
 
       &:active {
-        background-color: $button-active--red !important;
-        border-color: $button-active-border--red !important;
+        background-color: $bgcolor--white !important;
+        border-color: $button-border--white-opacity !important;
+      }
+
+      @media screen and (max-width: 375px) {
+        height: 48px;
       }
     }
 
-    &__content-icon {
-      margin-bottom: 15px;
-      position: relative;
+    &__teams-icon {
+      width: 158px;
+      height: 156px;
+      top: -10px;
+      right: -48px;
+      @include teams-icon;
+    }
+
+    &__individuals-icon {
+      width: 190px;
+      height: 207px;
       top: -35px;
-      opacity: 40%;
+      right: -6px;
+      @include individuals-icon;
     }
 
-    &__tech-staff {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      max-width: 47%;
-    }
-
-    &__content-wrap {
-      display: flex;
-    }
-
-    &__title,
-    &__sub-title,
-    &__paragraph,
-    &__ui-button-modal-trigger {
-      color: $text-color--grey;
-    }
-
-    &__title {
-      padding-bottom: 17px;
-      font-size: 70px;
-      line-height: 92%;
-      letter-spacing: -2px;
-    }
-
-    &__sub-title {
-      font-size: 32px;
-      line-height: 110%;
-      letter-spacing: -2px;
-      margin-bottom: 15px;
-    }
-
-    &__paragraph {
-      padding-bottom: 46px;
-    }
-  }
-
-  .individuals {
-    .remote-tech-staff-content__content-icon {
-      padding-right: 14px;
-    }
-  }
-
-  .teams,
-  .individuals {
-    &:hover {
-      .remote-tech-staff-content__title,
-      .remote-tech-staff-content__paragraph,
-      .remote-tech-staff-content__sub-title,
-      .remote-tech-staff-content__ui-button-modal-trigger {
-        color: $text-color--grey-light;
-        transition: 0.2s;
-      }
-
-      .remote-tech-staff-content__ui-button-modal-trigger {
-        border-color: $border-color--grey-light;
-      }
-
-      .remote-tech-staff-content__content-icon {
-        opacity: 1;
-        transition: 0.2s;
-      }
-    }
-  }
-
-  @media only screen and (min-width: 1600px) {
-    .remote-tech-staff-content {
-      &__sub-title {
-        max-width: 85%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .remote-tech-staff-content {
-      padding: 170px 0;
-
-      &__main-title {
-        padding-bottom: 52px;
-      }
-
-      &__title {
-        font-size: 50px;
-        line-height: 110%;
-        letter-spacing: -2px;
-        padding-bottom: 25px;
-      }
-
-      &__sub-title {
-        font-size: 32px;
-        line-height: 110%;
-        letter-spacing: -1px;
-      }
-
-      &__content-icon {
-        height: 180px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1180px) {
-    .remote-tech-staff-content {
-      &__title {
-        font-size: 50px;
-        line-height: 110%;
-        letter-spacing: -2px;
-      }
-
-      &__content-icon {
-        height: 160px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .remote-tech-staff-content {
-      button {
-        width: initial;
-      }
-
-      &__title {
-        font-size: 48px;
-        padding-bottom: 25px;
-      }
-
-      &__sub-title {
-        width: initial;
-        font-size: 33px;
-        line-height: 110%;
-        letter-spacing: -1px;
-      }
-
-      &__content-icon {
-        height: 130px;
-        padding-left: 10px;
-      }
-    }
-
-    .teams,
-    .individuals * {
-      .remote-tech-staff-content__paragraph {
-        width: initial;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 900px) {
-    .remote-tech-staff-content {
-      &__content-icon {
-        height: 115px;
-        top: -25px;
-      }
-
-      &__title {
-        padding-bottom: 20px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 878px) {
-    .remote-tech-staff-content {
+    @media only screen and (max-width: 1320px) {
       &__tech-staff {
-        max-width: 100%;
-      }
-
-      &__content-icon {
-        height: 145px;
+        width: 475px;
       }
     }
-  }
 
-  @media only screen and (max-width: 768px) {
-    .remote-tech-staff-content {
-      &__title {
-        font-size: 47px;
-        padding-bottom: 10px;
+    @media only screen and (max-width: 1280px) {
+      &__tech-staff {
+        width: 445px;
       }
 
-      &__sub-title {
-        font-size: 32px;
+      &__content_wrapper {
+        margin-bottom: 22px;
+      }
+
+      &__teams-paragraph {
+        width: 350px;
+      }
+
+      &__individuals-paragraph {
+        width: 375px;
+      }
+
+      &__item-sub-title {
+        width: 290px;
+      }
+
+      &__teams-icon {
+        width: 118px;
+        height: 116px;
+        right: -22px;
+      }
+
+      &__individuals-icon {
+        width: 140px;
+        height: 147px;
+        top: -25px;
+        right: 15px;
+      }
+
+      &__ui-button-modal-trigger {
+        font-size: 14px;
+      }
+    }
+
+    @media only screen and (max-width: 1220px) {
+      &__tech-staff {
+        width: 400px;
+      }
+    }
+
+    @media only screen and (max-width: 1080px) {
+      &__tech-staff {
+        width: 370px;
+      }
+
+      &__individuals-icon {
+        right: -20px;
+      }
+    }
+
+    @media only screen and (max-width: 1023px) {
+      &__tech-staff,
+      &__item-icon {
+        opacity: 1;
+      }
+
+      &__tech-staff {
+        width: 100%;
+      }
+
+      &__item-sub-title {
+        width: 100%;
+        margin-bottom: 13px;
+      }
+
+      &__tech-staff-individuals {
+        margin-top: 65px;
+      }
+
+      &__item-icon {
+        top: -20px;
+        right: 0;
+        opacity: 1;
       }
 
       &__paragraph {
-        line-height: 119%;
+        width: 80%;
       }
     }
-  }
 
-  @media only screen and (max-width: 580px) {
-    .remote-tech-staff-content {
-      &__content-icon {
-        height: 125px;
-        top: -13px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 520px) {
-    .remote-tech-staff-content {
-      &__last-character {
-        margin-left: -21px;
+    @media only screen and (max-width: 834px) {
+      &__teams-icon {
+        width: 40px;
+        height: 38px;
+        top: -11px;
+        left: 90px;
       }
 
-      &__content-icon {
-        height: 115px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .remote-tech-staff-content {
-      &__main-title {
-        padding-bottom: 25px;
-      }
-
-      &__content-icon {
-        height: 100px;
-      }
-
-      &__title {
-        font-size: 41px;
-        line-height: 99%;
-        letter-spacing: -1px;
-      }
-
-      &__sub-title {
-        font-size: 27px;
-        line-height: 124%;
-        letter-spacing: -1px;
-        margin-bottom: 10px;
-      }
-
-      &__paragraph {
-        padding-bottom: 34px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 345px) {
-    .remote-tech-staff-content {
-      &__content-icon {
+      &__individuals-icon {
+        width: 48px;
         height: 75px;
+        top: -27px;
+        left: 133px;
+      }
+
+      &__paragraph {
+        width: 100%;
       }
     }
   }

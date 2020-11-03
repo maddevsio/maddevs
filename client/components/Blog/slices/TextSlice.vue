@@ -40,7 +40,7 @@ export default {
 
     /deep/ h1,
     /deep/ li {
-      font-family: 'Hoves-Regular';
+      font-family: 'Poppins-Regular', sans-serif;
     }
 
     /deep/ h1 {
@@ -50,7 +50,7 @@ export default {
     }
 
     /deep/ h2,
-    /deep/ h3, 
+    /deep/ h3,
     /deep/ h4,
     /deep/ h5,
     /deep/ h6 {
@@ -60,7 +60,8 @@ export default {
 
     /deep/ strong,
     /deep/ p {
-      font-family: 'Hoves-Bold';
+      font-family: 'Poppins-Bold', sans-serif;
+      font-weight: 700;
     }
 
     /deep/ p,
@@ -73,7 +74,7 @@ export default {
 
     /deep/ p {
       margin: 25px 0;
-      font-family: 'Hoves-Regular', sans-serif;
+      font-family: 'Poppins-Regular', sans-serif;
     }
 
     /deep/ em {
@@ -87,7 +88,7 @@ export default {
       overflow: auto;
       background: $bgcolor--grey-light;
       border-radius: 2px;
-      font-family: 'Hoves-Regular', sans-serif;
+      font-family: 'Poppins-Regular', sans-serif;
       line-height: 24px;
     }
 
@@ -102,7 +103,7 @@ export default {
     /deep/ a {
       text-decoration: underline;
       color: $text-color--white;
-      font-family: 'Hoves-Regular', sans-serif;
+      font-family: 'Poppins-Regular', sans-serif;
     }
   }
 </style>

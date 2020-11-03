@@ -1,6 +1,6 @@
 // ---------- Background  ------------ //
-$bgcolor--white: #fff;
-$bgcolor--black: #000;
+$bgcolor--white: #f5f7f9;
+$bgcolor--black: #111213;
 $bgcolor--grey: #96969C;
 $bgcolor--grey-light: #f2f2f2;
 $bgcolor--grey-dark: #f4f5f7;
@@ -10,27 +10,33 @@ $bgcolor--project-indigo: #56448E;
 $bgcolor--project-blue: #0E1B27;
 $bgcolor--project-orange: #FF6A01;
 $bgcolor--black-light: #ffffff1a;
+$bgcolor--white-darken: #fcfcfd;
 
 // ---------- Text ------------ //
-$text-color--white: #fff;
+$text-color--white: #f5f7f9;
+$text-color--white-darken: #fcfcfd;
 $text-color--black: #000;
+$text-color--black-lighter: #111213;
 $text-color--grey: #96969c;
 $text-color--grey-light: #f2f2f2;
 $text-color--red: #ec1c24;
-$text-color--red-opacity: rgba(236, 28, 36, 0.7);
+$text-color--red-opacity: rgba(236, 28, 36, 0.5);
+$text-color--grey-form-placeholder: #6E6E73;
 $text-stroke--white: 1.5px #f2f2f2;
 $text-stroke--red: 1.5px #ec1c24;
 $text-stroke--black: 1.5px #000;
 
 // ---------- Border ------------ //
 $border-color--grey: #96969c;
-$border-color--black: #000;
+$border-color--black: #111213;
 $border-color--white: #fff;
 $border-color--grey-light: #e8e8e8;
 $border-color--red: #ec1c24;
+$border-color--red-opacity: rgba(236, 28, 36, 0.5);
 $border-color--grey-dark-transparent: rgba(150, 150, 156, 0.2);
 $border-color--grey-light: #f2f2f2;
 $border-color--grey-dark: #3b3b3b;
+$border-color--grey-form: #333333;
 
 // ---------- Border radius ------------ //
 $form-border-radius: 7px;
@@ -65,10 +71,15 @@ $project-hover-bg-color--white: #fff;
 $button-bgcolor--red: #ec1c24;
 $button-active--red: #ca1920;
 $button-active-border--red: #ca1920;
+$button-border--white-opacity: rgba(255, 255, 255, 0.5);
 
 // ---------- Footer specific colors ------------ //
 $footer--text-decoration-color: rgba(196, 196, 196, 0.3);
 $footer--border-color--grey-light: rgba(196, 196, 196, 0.3);
+
+// ---------- Header specific colors ------------ //
+$header-red-border-color: rgba(236, 28, 36, 0.5);
+$header-grey-border-color: rgba(164, 168, 180, 0.4);
 
 // ---------- Modal ------------ //
 $modal-overlay-bg-color: #0d0d0dc7;
@@ -79,4 +90,46 @@ $modal-entry-field-bg: #403838;
 $label-text--grey-dark: rgba(150, 150, 156, 0.7);
 $slider-dots-bg-color-white: #eff3f6;
 $slider-dots-bg-color-black: #000;
+$quick-project-description-color: #c5c3cc;
+$remote-tech-staff-sub-title-grey: #d7dde1;
+$software-icon-text-color: #a4a8b4;
+$software-icon-background: #eef0f2;
+$our-valued-icon-background: #191A1B;
 
+@mixin h2_title {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  padding-top: 96px;
+  padding-bottom: 24px;
+
+  @media screen and (max-width: 834px) {
+    font-size: 36px;
+    padding-top: 72px;
+  }
+
+  @media screen and (max-width: 578px){
+    padding-top: 48px;
+  }
+}
+
+@mixin h3_title {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  padding-top: 102px;
+  padding-bottom: 22px;
+
+  @media screen and (max-width: 834px) {
+    font-size: 28px;
+    padding-top: 78px;
+  }
+
+  @media screen and (max-width: 578px) {
+    padding-top: 54px;
+  }
+}

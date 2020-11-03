@@ -1,17 +1,11 @@
 <template>
   <section id="customers" class="customers">
     <div class="container">
-      <div class="customers__title-wrap">
-        <h2 class="customers__main-title main-title">
-          Our valued customers
-        </h2>
-        <p class="customers__main-description paragraph">
-          Due to our NDAs and confidentiality requirements, we cannot disclose
-          details for all of our customers. These are a few of the companies we
-          work with.
-        </p>
+      <div class="customers__text-content">
+        <h2 class="customers__main-title">Our valued customers</h2>
+        <p class="customers__description">Due to our NDAs and confidentiality requirements, we cannot disclose details for all of our customers. These are a few of the companies we work with.</p>
       </div>
-      <div class="valued-customers">
+      <div class="customers__customers-list">
         <Customer
           v-for="(customer, i) in customers"
           :key="i"
@@ -36,76 +30,58 @@ export default {
       modalWindowName: 'order-project-from-us-modal',
       customers: [
         {
-          imgName: 'godee',
-          industry: 'Transportation'
+          className: 'godee-icon'
         },
         {
-          imgName: 'guardrails',
-          industry: 'Security'
+          className: 'guardrails-icon'
         },
         {
-          imgName: 'teacherly',
-          industry: 'EdTech'
+          className: 'teacherly-icon'
         },
         {
-          imgName: 'triggermesh',
-          industry: 'CloudTech'
+          className: 'triggermesh-icon'
         },
         {
-          imgName: 'clutch',
-          industry: 'AdTech'
+          className: 'clutch-icon'
         },
         {
-          imgName: 'eatigo',
-          industry: 'Logistics'
+          className: 'eatigo-icon'
         },
         {
-          imgName: 'veeqo',
-          industry: 'Ecommerce'
+          className: 'veeqo-icon'
         },
         {
-          imgName: 'admitad',
-          industry: 'AdTech'
+          className: 'admitad-icon'
         },
         {
-          imgName: 'iotsploit',
-          industry: 'IoT'
+          className: 'iotsploit-icon'
         },
         {
-          imgName: 'sir_jonas',
-          industry: 'Tourism'
+          className: 'sir-jonas-icon'
         },
         {
-          imgName: 'progressay',
-          industry: 'EdTech'
+          className: 'progressay-icon'
         },
         {
-          imgName: 'kickoico',
-          industry: 'Blockchain'
+          className: 'kickoico-icon'
         },
         {
-          imgName: 'namba_food',
-          industry: 'Logistics'
+          className: 'nambafood-icon'
         },
         {
-          imgName: 'showmebishkek',
-          industry: 'Tourism'
+          className: 'showmebishkek-icon'
         },
         {
-          imgName: 'mythril',
-          industry: 'Blockchain'
+          className: 'mythril-icon'
         },
         {
-          imgName: 'seso',
-          industry: 'Entertainment'
+          className: 'seso-icon'
         },
         {
-          imgName: 'tengri',
-          industry: 'FinTech'
+          className: 'tengri-icon'
         },
         {
-          imgName: 'peklo',
-          industry: 'AdTech'
+          className: 'peklo-icon'
         }
       ]
     };
@@ -117,139 +93,107 @@ export default {
 @import '../../assets/styles/vars';
 
 .customers {
-  padding-top: 170px;
+  padding-bottom: 108px;
 
-  &__title-wrap {
+  &__text-content {
     display: flex;
-    align-items: flex-end;
-  }
-
-  &__main-title {
-    color: $text-color--red;
-    max-width: 837px;
-    min-width: 575px;
-    margin-right: 58px;
-  }
-
-  &__main-description {
-    color: $text-color--grey;
-    line-height: 25px;
-    letter-spacing: -0.03em;
-    max-width: 575px;
-    padding-bottom: 19px;
-  }
-
-  .valued-customers {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 80px 0 40px;
-    grid-row-gap: 100px;
-    grid-column-gap: 80px;
+    margin-bottom: 40px;
   }
-}
 
-@media only screen and (max-width: 1600px) {
-  .customers {
-    .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  &__customers-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+
+  &__main-title,
+  &__description {
+    text-align: center;
+  }
+  
+  &__main-title {
+    @include h2_title;
+    width: max-content;
+    color: $text-color--white;
+    padding-bottom: 4px;
+  }
+
+  &__description {
+    width: 680px;
+    font-family: 'Poppins-Regular';
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: $text-color--grey;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    &__customers-list {
+      grid-template-columns: repeat(5, 1fr);
     }
   }
-}
 
-@media only screen and (max-width: 1440px) {
-  .customers {
-    .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      grid-row-gap: 95px;
+  @media only screen and (max-width: 1160px) {
+    &__customers-list {
+      grid-template-columns: repeat(4, 1fr);
     }
   }
-}
 
-@media only screen and (max-width: 1240px) {
-  .customers {
-    padding-top: 155px;
+  @media only screen and (max-width: 1024px) {
+    padding-bottom: 109px;
 
-    .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
-      grid-row-gap: 90px;
+    &__customers-list {
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 14px;
     }
   }
-}
 
-@media only screen and (max-width: 1065px) {
-  .customers {
-    &__main-description {
-      padding-top: 17px;
+  @media only screen and (max-width: 834px) {
+    padding-bottom: 82px;
+    
+    &__text-content {
+      margin-bottom: 20px;
+    }
+       
+    &__customers-list {
+      grid-template-columns: repeat(5, 1fr);
     }
 
-    .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      grid-row-gap: 65px;
-      grid-column-gap: 70px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .customers {
-    padding-top: 192px;
-
-    &__title-wrap {
-      flex-wrap: wrap;
+    &__description {
+      width: 395px;
     }
   }
-}
 
-@media only screen and (max-width: 860px) {
-  .customers {
-    padding-top: 107px;
-
-    .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-      grid-row-gap: 30px;
+  @media only screen and (max-width: 640px) {
+    &__customers-list {
+      grid-template-columns: repeat(4, 1fr);
     }
   }
-}
 
-@media only screen and (max-width: 680px) {
-  .customers {
-    padding-top: 80px;
+  @media only screen and (max-width: 578px) {
+    padding-bottom: 60px;
+  }
+
+  @media only screen and (max-width: 520px) {
+    &__customers-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     &__main-title {
-      min-width: 0;
+      width: unset;
     }
 
-    .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      grid-row-gap: 25px;
-      grid-column-gap: 15px;
-      margin-top: 47px;
+    &__description {
+      width: 100%;
     }
   }
-}
 
-@media only screen and (max-width: 520px) {
-  .customers {
-    .valued-customers {
-      grid-row-gap: 0;
-      grid-column-gap: 0;
-    }
-  }
-}
-
-@media only screen and (max-width: 377px) {
-  .customers {
-    .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-    }
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .customers {
-    .valued-customers {
-      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  @media only screen and (max-width: 360px) {
+    &__customers-list {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

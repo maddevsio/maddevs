@@ -8,7 +8,7 @@
       @click="setActive(i, item)"
     >
       <div class="ui-radio-buttons_item-circle"></div>
-      <div class="ui-radio-buttons_item-label form-text">{{ item.label }}</div>
+      <div class="ui-radio-buttons_item-label">{{ item.label }}</div>
     </div>
   </div>
 </template>
@@ -57,18 +57,23 @@ export default {
     }
 
     &-circle {
-      height: 26px;
-      width: 26px;
+      height: 22px;
+      width: 22px;
       box-sizing: border-box;
-      border: 2px solid $text-color--grey;
+      border: 1px solid $text-color--grey;
       border-radius: 100%;
       transition: border 0.15s linear;
       cursor: pointer;
-      margin-right: 5px;
+      margin-right: 7px;
     }
 
     &-label {
+      margin-top: 1px;
       color: $text-color--grey;
+      font-family: 'Poppins-Regular', sans-serif;
+      font-size: 22px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
     }
 
     &--active {
@@ -79,6 +84,27 @@ export default {
       .ui-radio-buttons_item-circle {
         border: 0;
         background-color: $text-color--red;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 630px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 15px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    grid-row-gap: 12px;
+
+    &_item {
+      &-circle {
+        height: 19px;
+        width: 19px;
+      }
+
+      &-label {
+        font-size: 16px;
       }
     }
   }

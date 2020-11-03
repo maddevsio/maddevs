@@ -2,28 +2,30 @@
 
 exports[`ItConsultingContent component renders correctly 1`] = `
 <div
-  class="it-consulting__content-item"
+  class="it-consulting-item col-xl-4 col-lg-4"
 >
   <div
-    class="it-consulting__content-item_wrapper"
+    class="it-consulting-item__text-content"
   >
-    <h3
-      class="it-consulting__title title"
-    >
-      Title
-    </h3>
-     
-    <h4
-      class="it-consulting__sub-title sub-title"
-    >
-      Sub title
-    </h4>
-     
-    <p
-      class="it-consulting__paragraph paragraph"
-    >
-      Paragraph
-    </p>
+    <client-only-stub>
+      <h3
+        class="item-title it-consulting-item__title"
+      >
+        Title
+      </h3>
+       
+      <h4
+        class="item-sub-title it-consulting-item__sub-title it-consulting-item__sub-title-"
+      >
+        Sub title
+      </h4>
+       
+      <p
+        class="paragraph it-consulting-item__paragraph"
+      >
+        Paragraph
+      </p>
+    </client-only-stub>
   </div>
 </div>
 `;

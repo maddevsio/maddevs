@@ -26,15 +26,18 @@ export default {
 @import '../../assets/styles/vars';
 
 .button {
-  padding: 23px 42px;
+  height: 56px;
+  width: 401px;
   background-color: $button-bgcolor--red;
   color: $text-color--white;
-  font-weight: bold;
-  line-height: 33px;
-  cursor: pointer;
-  border-radius: $form-border-radius-6;
+  font-size: 16px;
+  font-family: 'Poppins-Regular', sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  border-radius: 2px;
   border: 0;
-  align-self: center;
+  align-self: self-start;
+  cursor: pointer;
 
   &:not(.is-disabled) {
     &:active {
@@ -43,27 +46,13 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    border-radius: $form-border-radius-4;
-    padding: 18px 31px;
-    font-size: 25px;
-  }
-
-  @media only screen and (max-width: 670px) {
-    font-size: 20px;
-    font-weight: normal;
-    padding: 15px 30px;
-  }
-
-  @media only screen and (max-width: 520px) {
-    font-size: 18px;
-    border-radius: $form-border-radius-2;
-    padding: 12px 66px;
+  @media only screen and (max-width: 860px) {
     width: 100%;
   }
 
-  @media only screen and (max-width: 420px) {
-    padding: 12px 26px;
+  @media only screen and (max-width: 550px) {
+    height: 48px;
+    font-size: 14px;
   }
 }
 

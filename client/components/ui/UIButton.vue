@@ -39,15 +39,17 @@ export default {
   @import '../../assets/styles/vars';
 
   .ui-button {
-    height: 64px;
-    border: 1px solid $border-color--red;
+    border: 1px solid $border-color--red-opacity;
     background-color: $bgcolor--red;
+    border-radius: 4px;
     color: $text-color--white;
-    font-size: 21px;
-    font-family: 'Hoves-Bold';
-    letter-spacing: -0.03em;
+    font-size: 16px;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 24px;
     box-shadow: none;
-    transition: 0.2s;
+    transition: 0.4s;
     cursor: pointer;
 
     &:not(.ui-button--disabled) {
@@ -63,8 +65,8 @@ export default {
     }
 
     &--disabled {
-      cursor: not-allowed;
       opacity: 0.5;
+      cursor: not-allowed;
       user-select: none;
     }
 

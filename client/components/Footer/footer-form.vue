@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-form form"> 
+  <form class="footer-form form">
     <ValidationObserver v-slot="{ invalid }" ref="form">
       <div class="fields-list">
         <ValidationProvider class="field-item" rules="max:50" v-slot="{ classes, errors }">
@@ -13,7 +13,7 @@
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
         <ValidationProvider class="field-item" rules="max:500" v-slot="{ classes, errors }">
-          <textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescriber" @keydown="autosize($event)" rows="1" />
+          <textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescriber" />
           <span class="error-text">{{ errors[0] }}</span>
         </ValidationProvider>
       </div>
@@ -23,14 +23,15 @@
         @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
       />
       <UIButton
-        class="ui-button--transparent-bgc"
+        class="ui-button--transparent-bgc submit-button"
         name="Order a project now"
         :disabled="invalid || !agreeWithPrivacyPolicy"
         @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+        type="button"
       />
     </ValidationObserver>
     <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
-  </div>
+  </form>
 </template>
 
 <script>
@@ -67,10 +68,6 @@ export default {
     },
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
-    },
-    autosize(e) {
-      e.target.style.height = 'auto';
-      e.target.style.height = `${e.target.scrollHeight}px`;
     },
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
@@ -119,75 +116,107 @@ export default {
   @import '../../assets/styles/vars';
 
 	.footer-form {
-    width: 450px;
-    
+    width: 100%;
+
     &_email {
       /deep/ .v-placeholder-asterisk {
-        font-size: 18px;
-        color: $bgcolor--grey;
-        font-family: 'Hoves-Regular';
-        left: 10px !important;
+        font-size: 16px;
+        font-family: 'Poppins-Regular', sans-serif;;
+        color: $text-color--grey-form-placeholder;
+        left: 17px !important;
         top: 50% !important;
         transform: translateY(-50%);
-
-        span {
-          opacity: 0.5;
-        }
       }
     }
 
-		button {
+		.submit-button {
       width: 100%;
-      height: 65px;
+      height: 64px;
 		}
 
-		textarea {
-			min-height: 64px;
-			padding: 22px 10px;
-      resize: vertical;
+		.textarea {
+      height: 192px;
+      max-height: 192px;
+      padding: 22px 10px;
     }
-    
+
     .fields-list {
       display: grid;
-      grid-row-gap: 12px;
+      margin-bottom: 25px;
     }
 
     .form-checkboxes {
-      padding-top: 18px;
-    }
-
-    .entry-field {
-      padding: 21px 10px;
+      margin-top: 10px;
+      margin-bottom: 22px;
     }
 
     .field-item {
-      margin-bottom: 8px;
-    }
-	}
+      margin-bottom: 13px;
+      display: flex;
+      flex-direction: column;
 
-	@media only screen and (max-width: 1440px) {
-		.footer-form {
-			width: 370px;
-		}
-	}
+      > div {
+        width: 100%;
+      }
 
-	@media only screen and (max-width: 1220px) {
-		.footer-form {
-			width: 380px;
-		}
-  }
-  
-  @media only screen and (max-width: 960px) {
-		.footer-form {
-      width: 100%;
-		}
-  }
-  
-  @media only screen and (max-width: 420px) {
-		.footer-form {
-			.field-item {
+      &:last-child {
         margin-bottom: 0;
       }
-		}
-	}
+    }
+
+    .entry-field {
+      padding: 12px 19px 13px;
+      border: 1px solid $border-color--grey-form;
+      border-radius: 4px;
+      background-color: transparent;
+      color: $text-color--white-darken;
+      font-size: 16px;
+      line-height: 27px;
+
+      &::placeholder {
+        color: $text-color--grey-form-placeholder;
+      }
+
+      &.textarea {
+        font-size: 16px;
+        line-height: 27px;
+      }
+    }
+
+    .entry-field,
+    .error-text {
+      font-family: 'Poppins-Regular', sans-serif;;
+    }
+
+    .error-text {
+      font-size: 14px;
+    }
+
+    .invalid {
+      border-color: $input-invalid--bg;
+    }
+
+    /deep/ .form-checkbox-label {
+      padding-left: 30px;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  @media only screen and (max-width: 1320px) {
+		.footer-form .error-text {
+      font-size: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+		.footer-form {
+      .field-item {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 </style>

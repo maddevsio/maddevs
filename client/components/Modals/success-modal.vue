@@ -2,7 +2,7 @@
   <transition name="fade">
     <div class="success-modal" v-if="visibled" :id="id">
       <div class="success-modal_content">
-        <button class="close-modal" @click="onClose">
+        <button class="close-modal" @click="onClose" type="button">
           <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
         </button>
         <SuccessMessage />

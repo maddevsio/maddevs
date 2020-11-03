@@ -20,7 +20,7 @@
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="max:500" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name">Expertise you are interested in</p>
-            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need assistance with..." v-model="needAssistanceWith" @keydown="autosize($event)" rows="1"/>
+            <textarea type="text" class="modal-entry-field entry-field textarea" :class="classes" placeholder="I need assistance with..." v-model="needAssistanceWith"/>
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
         </div>
@@ -34,6 +34,7 @@
           name="Get your trusted IT partner"
           :disabled="invalid"
           @click="sendForm(!invalid)"
+          class="modal-button"
         />
       </div>
     </ValidationObserver>
@@ -72,10 +73,6 @@ export default {
     },
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
-    },
-    autosize(e) {
-      e.target.style.height = 'auto';
-      e.target.style.height = `${e.target.scrollHeight}px`;
     },
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {

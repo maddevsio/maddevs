@@ -1,30 +1,32 @@
 <template>
-  <section id="it-consulting" class="it-consulting main-parent-item">
+  <section id="it-consulting" class="it-consulting">
     <div class="container">
-      <h2 class="it-consulting__main-title main-title">
-        IT Consulting
-      </h2>
-      <div class="it-consulting__flex-wrapper flex-wrapper">
+      <h2 class="it-consulting__main-title">IT Consulting</h2>
+      <div class="it-consulting__content row">
         <ItConsultingContent 
           :title="TechnologyStack.title" 
           :subTitle="TechnologyStack.subTitle" 
           :paragraph="TechnologyStack.paragraph"
+          :className="TechnologyStack.className"
         />
         <ItConsultingContent 
           :title="ProcessAudit.title" 
           :subTitle="ProcessAudit.subTitle" 
           :paragraph="ProcessAudit.paragraph"
+          :className="ProcessAudit.className"
         />
         <ItConsultingContent 
           :title="TeamHeadcount.title" 
           :subTitle="TeamHeadcount.subTitle" 
           :paragraph="TeamHeadcount.paragraph"
+          :className="TeamHeadcount.className"
         />
       </div>
       <UIButtonModalTrigger 
         :buttonInnerText="buttonInnerText"
         :isBlack="true"
         :modalWindowName="modalWindowName"
+        class="it-consulting__button"
       />
     </div>
   </section>
@@ -43,19 +45,22 @@ export default {
   data() {
     return {
       TechnologyStack: {
-        title: 'Technology Stack',
-        subTitle: 'Tired of the slow and hard-to-maintain technology that your previous team used?',
-        paragraph: 'We’ll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.'
+        title: 'Technology <br> Stack',
+        subTitle: 'Tired of the slow and <span>hard-to-maintain</span> technology that your previous team used?',
+        paragraph: 'We’ll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.',
+        className: 'first-item'
       },
       ProcessAudit: {
-        title: 'Process Audit',
-        subTitle: 'Have to constantly deal with extended deadlines and mess-ups?',
-        paragraph: 'Your process probably just lacks transparency and reasonable control. We know how to avoid this and check who does what right now.'
+        title: 'Process <br> Audit',
+        subTitle: 'Have to constantly deal with extended deadlines and <span>mess-ups?</span>',
+        paragraph: 'Your process probably just lacks transparency and reasonable control. We know how to avoid this and check who does what right now.',
+        className: 'second-item'
       },
       TeamHeadcount: {
-        title: 'Team Headcount',
+        title: 'Team <br> Headcount',
         subTitle: 'Is your team too big or too small and therefore causing trouble?',
-        paragraph: 'Hire good people and get rid of underperformers. Easier said than done, right? Get assessments for the skills and seniority level of your staff. Our positively mad engineers and PMs know how to do this.'
+        paragraph: 'Hire good people and get rid of underperformers. Easier said than done, right? Get assessments for the skills and seniority level of your staff. Our positively mad engineers and PMs know how to do this.',
+        className: 'third-item'
       },
       modalWindowName: 'get-expert-advice',
       buttonInnerText: 'Get expert advice'
@@ -68,44 +73,51 @@ export default {
   @import '../../assets/styles/vars';
 
   .it-consulting {
-    padding-top: 105px;
-    padding-bottom: 151px;
-    background-color: $bgcolor--white;
+    padding-bottom: 76px;
+    background-color: $bgcolor--white-darken;
 
-    &__flex-wrapper {
-      margin-top: -40px;
+    &__content {
+      margin-bottom: 22px;
     }
-
+    
     &__main-title {
-      color: $text-color--black;
-    }
+      @include h2_title;
+      padding-top: 76px;
+      margin-bottom: 8px;
+      text-align: center;
 
-    button {
-      width: 100%;
-      color: $text-color--black;
-      border-color: $border-color--black;
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .it-consulting {
-      &__flex-wrapper {
-        flex-wrap: wrap;
+      @media screen and (max-width: 834px) {
+        margin-bottom: 0;
       }
     }
-  }
 
-  @media only screen and (max-width: 768px) {
-    .it-consulting {
-      padding-top: 92px;
-      padding-bottom: 117px;
+    &__button {
+      width: 100%;
+      height: 56px;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+
+      &:active {
+        background-color: $bgcolor--black !important;
+        border-color: $border-color--black !important;
+      }
+
+      @media screen and (max-width: 1280px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 375px) {
+        height: 48px;
+      }
     }
-  }
 
-  @media only screen and (max-width: 520px) {
-    .it-consulting {
-      padding-top: 60px;
-      padding-bottom: 75px;
+    @media screen and (max-width: 576px) {
+      padding-bottom: 48px;
+
+      &__main-title {
+        padding-top: 48px;
+      }
     }
   }
 </style>

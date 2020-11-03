@@ -2,179 +2,185 @@
 
 exports[`Quick Project Start renders correctly 1`] = `
 <section
-  class="quick-project_start"
-  id="quick-project-start"
+  class="quickProjectStart"
+  id="quickProjectStart"
 >
   <div
     class="container"
   >
-    <div
-      class="quick-project_start__title-wrap"
+    <h2
+      class="quickProjectStart__main-title"
     >
-      <h2
-        class="quick-project_start__main-title main-title"
-      >
-        Quick 
-        <br />
-         Project Start
-      </h2>
-    </div>
+      Quick Project Start
+    </h2>
      
     <div
-      class="quick-project_start__content-wrap"
+      class="quickProjectStart__content-list row"
     >
       <div
-        class="quick-project_start__content-items_list"
+        class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_contact"
       >
         <div
-          class="quick-project_start__content-item"
+          class="quickProjectStart__icons-group"
         >
           <div
-            class="quick-project_start__icon-item contact"
-          >
-            <span
-              class="quick-project_start__image-bg quick-project_start__image-bg--contact"
-            />
-          </div>
+            class="quickProjectStart__main-icon quickProjectStart__quick-contact"
+          />
            
           <div
-            class="quick-project_start__text-item"
-          >
-            <h4
-              class="quick-project_start__title sub-title"
-            >
-              contact
-            </h4>
-             
-            <p
-              class="quick-project_start__paragraph paragraph"
-            >
-              Submit your project request or project idea to us.
-            </p>
-          </div>
+            class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_contact"
+          />
         </div>
+         
         <div
-          class="quick-project_start__content-item"
+          class="quickProjectStart__list-item-text-wrapper"
         >
-          <div
-            class="quick-project_start__icon-item analysis"
+          <h4
+            class="quickProjectStart__title"
           >
-            <span
-              class="quick-project_start__image-bg quick-project_start__image-bg--analysis"
-            />
-          </div>
+            contact
+          </h4>
            
-          <div
-            class="quick-project_start__text-item"
+          <p
+            class="quickProjectStart__description"
           >
-            <h4
-              class="quick-project_start__title sub-title"
-            >
-              analysis
-            </h4>
-             
-            <p
-              class="quick-project_start__paragraph paragraph"
-            >
-              We will contact you to clarify your project requirements.
-            </p>
-          </div>
+            Submit your project request or project idea to us.
+          </p>
         </div>
+      </div>
+      <div
+        class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_analysis"
+      >
         <div
-          class="quick-project_start__content-item"
+          class="quickProjectStart__icons-group"
         >
           <div
-            class="quick-project_start__icon-item proposal"
-          >
-            <span
-              class="quick-project_start__image-bg quick-project_start__image-bg--proposal"
-            />
-          </div>
+            class="quickProjectStart__main-icon quickProjectStart__quick-analysis"
+          />
            
           <div
-            class="quick-project_start__text-item"
-          >
-            <h4
-              class="quick-project_start__title sub-title"
-            >
-              proposal
-            </h4>
-             
-            <p
-              class="quick-project_start__paragraph paragraph"
-            >
-              We will provide you with our free, non-binding bid or a tailored proposal.
-            </p>
-          </div>
+            class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_analysis"
+          />
         </div>
+         
         <div
-          class="quick-project_start__content-item"
+          class="quickProjectStart__list-item-text-wrapper"
         >
-          <div
-            class="quick-project_start__icon-item team"
+          <h4
+            class="quickProjectStart__title"
           >
-            <span
-              class="quick-project_start__image-bg quick-project_start__image-bg--team"
-            />
-          </div>
+            analysis
+          </h4>
            
-          <div
-            class="quick-project_start__text-item"
+          <p
+            class="quickProjectStart__description"
           >
-            <h4
-              class="quick-project_start__title sub-title"
-            >
-              team
-            </h4>
-             
-            <p
-              class="quick-project_start__paragraph paragraph"
-            >
-              We will assemble and prepare a team for your project.
-            </p>
-          </div>
+            We will contact you to clarify your project requirements.
+          </p>
         </div>
+      </div>
+      <div
+        class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_proposal"
+      >
         <div
-          class="quick-project_start__content-item"
+          class="quickProjectStart__icons-group"
         >
           <div
-            class="quick-project_start__icon-item start"
-          >
-            <span
-              class="quick-project_start__image-bg quick-project_start__image-bg--start"
-            />
-          </div>
+            class="quickProjectStart__main-icon quickProjectStart__quick-proposal"
+          />
            
           <div
-            class="quick-project_start__text-item"
+            class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_proposal"
+          />
+        </div>
+         
+        <div
+          class="quickProjectStart__list-item-text-wrapper"
+        >
+          <h4
+            class="quickProjectStart__title"
           >
-            <h4
-              class="quick-project_start__title sub-title"
-            >
-              start
-            </h4>
-             
-            <p
-              class="quick-project_start__paragraph paragraph"
-            >
-              You will get to know the team and we’ll start the project work.
-            </p>
-          </div>
+            proposal
+          </h4>
+           
+          <p
+            class="quickProjectStart__description"
+          >
+            We will provide you with our free, non-binding bid or a tailored proposal.
+          </p>
+        </div>
+      </div>
+      <div
+        class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_team"
+      >
+        <div
+          class="quickProjectStart__icons-group"
+        >
+          <div
+            class="quickProjectStart__main-icon quickProjectStart__quick-team"
+          />
+           
+          <div
+            class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_team"
+          />
+        </div>
+         
+        <div
+          class="quickProjectStart__list-item-text-wrapper"
+        >
+          <h4
+            class="quickProjectStart__title"
+          >
+            team
+          </h4>
+           
+          <p
+            class="quickProjectStart__description"
+          >
+            We will assemble and prepare a team for your project.
+          </p>
+        </div>
+      </div>
+      <div
+        class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_start"
+      >
+        <div
+          class="quickProjectStart__icons-group"
+        >
+          <div
+            class="quickProjectStart__main-icon quickProjectStart__quick-start"
+          />
+           
+          <div
+            class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_start"
+          />
+        </div>
+         
+        <div
+          class="quickProjectStart__list-item-text-wrapper"
+        >
+          <h4
+            class="quickProjectStart__title"
+          >
+            start
+          </h4>
+           
+          <p
+            class="quickProjectStart__description"
+          >
+            You will get to know the team and we’ll start the project work.
+          </p>
         </div>
       </div>
     </div>
      
-    <div
-      class="quick-project_start__button-wrap"
+    <button
+      class="ui-button-modal-trigger quickProjectStart__button ui-button-modal-trigger--red"
     >
-      <button
-        class="ui-button-modal-trigger ui-button-modal-trigger--red"
-      >
-        
+      
   Submit your project
 
-      </button>
-    </div>
+    </button>
   </div>
 </section>
 `;

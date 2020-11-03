@@ -1,21 +1,13 @@
 <template>
-  <section class="container">
-    <div class="banner-container">
-      <div class="banner-content">
-        <div class="text-content_wrapper">
-          <div class="main-title-wrapper">
-            <h1 class="banner-main_title">
-              Your <br class="phone-screen-br"> Trusted <br> <span class="main-title-white_part">IT Partner</span>
-            </h1>
-          </div>
-          <div class="icon-item">
-            <img src="@/assets/img/Services/svg/order-a-project.svg" alt="Order a Project Logotype" class="default-image" v-if="!$store.state.modalWindowIsOpen" @click="showModal">
-            <img src="@/assets/img/Services/svg/order-a-project-hover.svg"  alt="Order a Project Logotype" class="hover-image" v-if="!$store.state.modalWindowIsOpen" @click="showModal">
-            <img src="@/assets/img/Services/svg/order-a-project-green.svg" alt="Order a Project Logotype" class="green-image" v-if="$store.state.modalWindowIsOpen" @click="showModal">
-          </div>
-        </div>
-        <navigationList/>
+  <section class="banner banner-container">
+    <div class="banner__banner-content banner-content">
+      <div class="banner__title-wrapper container">
+        <h1 class="banner__banner-main_title banner-main_title">
+          Your Trusted <br> <span class="banner__main-title-white_part main-title-white_part">IT Partner</span>
+        </h1>
+        <div class="banner__order-a-project-icon"></div>
       </div>
+      <navigationList/>
     </div>
   </section>
 </template>
@@ -27,262 +19,144 @@ export default {
   name: 'ServicesBanner',
   components: {
     navigationList
-  },
-  data() {
-    return {
-      scrollYPosition: null
-    };
-  },
-  mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
-  methods: {
-    showModal() {
-      this.$modal.show('order-project-from-us-modal');
-      this.$store.commit('SET_DISPLAY_STATE_FOR_MODAL_WINDOW', true);
-      this.disableScrollOnBody();
-    },
-    disableScrollOnBody() {
-      document.body.style.overflow = 'hidden';
-      document.body.style.top = `-${this.scrollYPosition}`;
-    },
-    handleScroll() {
-      this.scrollYPosition = `${window.scrollY}px`;
-    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-  .phone-screen-br {
-    display: none;
-  }
+  @import '../../assets/styles/_servicesBannerIcons';
 
-  .icon-item {
-    min-height: 415px;
-    margin-top: 23px;
-    margin-bottom: -36px;
+  .banner {
+    &__banner-content {
+      margin-bottom: 34px;
 
-    &:hover {
-      .hover-image {
-        display: block;
-      }
-
-      .default-image {
-        display: none;
-      }
-    }
-  }
-
-  .text-content_wrapper {
-    justify-content: space-between;
-  }
-
-  .hover-image {
-    display: none;
-  }
-
-  .green-image {
-    margin-top: -121px;
-    margin-right: 1px;
-  }
-
-  @media only screen and (max-width: 1520px) {
-    .hover-image,
-    .default-image {
-      width: 296px;
+      @media screen and (max-width: 991px) {
+        padding-top: 120px;
+      } 
     }
 
-    .green-image {
-      width: 219px;
-      margin-top: -91px;
+    &__title-wrapper {
+      display: flex;
+      position: relative;
     }
-  }
-
-  @media only screen and (max-width: 1280px) {
-    .icon-item {
-      min-height: 243px;
-    }
-
-    .hover-image,
-    .default-image {
-      width: 231px;
-    }
-
-    .green-image {
-      width: 170px;
-      margin-top: -71px;
-    }
-  }
-
-  @media only screen and (max-width: 1010px) {
-    /deep/.navigation-list {
-      /deep/.navigation-item {
-        padding-right: 41px;
-      }
-    }
-
-    .hover-image,
-    .default-image {
-      width: 210px;
-    }
-
-    .green-image {
-      width: 155px;
-      margin-top: -65px;
-    }
-  }
-
-  @media only screen and (max-width: 970px) {
-    /deep/.navigation-list {
-      /deep/.navigation-item {
-        padding-right: 0;
-      }
-    }
-
-    .hover-image,
-    .default-image {
-      width: 188px;
-    }
-
-    .green-image {
-      width: 140px;
-      margin-top: -58px;
-    }
-  }
-
-  @media only screen and (max-width: 670px) {
-    .hover-image,
-    .default-image {
-      width: 167px;
-    }
-
-    .green-image {
-      width: 125px;
-      margin-top: -50px;
-      margin-right: 0;
-    }
-  }
-
-  @media only screen and (max-width: 455px) {
-    .text-content_wrapper {
-      padding-bottom: 172px;
-    }
-  }
-
-  @media only screen and (max-width: 440px) {
-    .phone-screen-br {
+  
+    &__order-a-project-icon {
+      width: 295px;
+      height: 312px;
       display: block;
+      position: relative;
+      left: 85px;
+      @include order-a-project-icon;
     }
 
-    .icon-item {
-      min-height: initial;
-      display: block;
+    @media screen and (max-width: 1280px) {
+      &__order-a-project-icon {
+        width: 265px;
+        height: 282px;
+        position: absolute;
+        left: 69%;
+      }
 
-      &:hover {
-        .hover-image {
-          display: none;
-        }
-
-        .default-image {
-          display: block;
-        }
+      &__banner-main_title {
+        margin-bottom: 76px;
       }
     }
 
-    .default-image,
-    .green-image {
-      display: block;
-      position: absolute;
+    @media screen and (max-width: 1140px) {
+      &__order-a-project-icon {
+        width: 210px;
+        height: 200px;
+        top: 2px;
+        left: 68%;
+      }
+
+      &__banner-main_title {
+        margin-bottom: 33px;
+      }
     }
 
-    .default-image {
-      width: 142px;
-      top: 44%;
-      left: 55%;
+    @media screen and (max-width: 970px) {
+      &__order-a-project-icon {
+        width: 180px;
+        height: 170px;
+        left: 67%;
+      }
+
+      &__banner-main_title {
+        margin-bottom: 30px;
+      }
     }
 
-    .green-image {
-      width: 105px;
-      top: 55.5%;
-      left: 63.2%;
-    }
-  }
+    @media screen and (max-width: 834px) {
+      &__order-a-project-icon {
+        width: 160px;
+        height: 140px;
+        left: 73%;
+      }
 
-  @media only screen and (max-width: 400px) {
-    .default-image {
-      top: 42.5%;
-      left: 61%;
-    }
-
-    .green-image {
-      top: 54%;
-      left: 70%;
-    }
-  }
-
-  @media only screen and (max-width: 384px) {
-    .default-image {
-      left: 58%;
+      &__banner-main_title {
+        margin-bottom: 0;
+      }
     }
 
-    .green-image {
-      left: 67.5%;
-    }
-  }
+    @media screen and (max-width: 690px) {
+      &__order-a-project-icon {
+        width: 200px;
+        height: 180px;
+        top: 125px;
+        left: 58%;
+      }
 
-  @media only screen and (max-width: 375px) {
-    .default-image {
-      top: 40%;
-      left: 59%;
-    }
-
-    .green-image {
-      top: 51.5%;
-      left: 68.5%;
-    }
-  }
-
-  @media only screen and (max-width: 360px) {
-    .default-image {
-      width: 125px;
-      top: 56%;
-      left: 62%;
+      &__banner-main_title {
+        margin-bottom: 44px;
+      }
     }
 
-    .green-image {
-      width: 93px;
-      top: 56%;
-      left: 70.5%;
-    }
-  }
+    @media screen and (max-width: 576px) {
+      &__order-a-project-icon {
+        width: 170px;
+        height: 150px;
+        top: 80px;
+        left: 56%;
+      }
 
-  @media only screen and (max-width: 355px) {
-    .default-image {
-      top: 38%;
-      left: 61%;
-    }
-
-    .green-image {
-      top: 52%;
-      left: 70%;
-    }
-  }
-
-  @media only screen and (max-width: 320px) {
-    .default-image {
-      width: 105px;
-      top: 40%;
-      left: 63%;
+      &__banner-main_title {
+        margin-bottom: 30px;
+      }
     }
 
-    .green-image {
-      width: 78px;
-      top: 54%;
-      left: 71.5%;
+    @media screen and (max-width: 440px) {
+      &__order-a-project-icon {
+        width: 140px;
+        height: 150px;
+        top: 81px;
+        left: 52%;
+      }
+    }
+
+    @media screen and (max-width: 390px) {
+      &__order-a-project-icon {
+        width: 108px;
+        height: 128px;
+        top: 90px;
+        left: 229px;
+      }
+    }
+
+    @media screen and (min-width: 341px) and (max-width: 358px) {
+      &__order-a-project-icon {
+        top: 150px;
+        left: 210px;
+      }
+    }
+
+    @media screen and (max-width: 340px) {
+      &__order-a-project-icon {
+        width: 98px;
+        height: 118px;
+        top: 65px;
+        left: 195px;
+      }
     }
   }
 </style>

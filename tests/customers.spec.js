@@ -7,76 +7,58 @@ describe('Customers component', () => {
   let wrapper;
   let customers = [
     {
-      imgName: 'godee',
-      industry: 'Transportation'
+      className: 'godee-icon'
     },
     {
-      imgName: 'guardrails',
-      industry: 'Security'
+      className: 'guardrails-icon'
     },
     {
-      imgName: 'teacherly',
-      industry: 'EdTech'
+      className: 'teacherly-icon'
     },
     {
-      imgName: 'triggermesh',
-      industry: 'CloudTech'
+      className: 'triggermesh-icon'
     },
     {
-      imgName: 'clutch',
-      industry: 'AdTech'
+      className: 'clutch-icon'
     },
     {
-      imgName: 'eatigo',
-      industry: 'Logistics'
+      className: 'eatigo-icon'
     },
     {
-      imgName: 'veeqo',
-      industry: 'Ecommerce'
+      className: 'veeqo-icon'
     },
     {
-      imgName: 'admitad',
-      industry: 'AdTech'
+      className: 'admitad-icon'
     },
     {
-      imgName: 'iotsploit',
-      industry: 'IoT'
+      className: 'iotsploit-icon'
     },
     {
-      imgName: 'sir_jonas',
-      industry: 'Tourism'
+      className: 'sir-jonas-icon'
     },
     {
-      imgName: 'progressay',
-      industry: 'EdTech'
+      className: 'progressay-icon'
     },
     {
-      imgName: 'kickoico',
-      industry: 'Blockchain'
+      className: 'kickoico-icon'
     },
     {
-      imgName: 'namba_food',
-      industry: 'Logistics'
+      className: 'nambafood-icon'
     },
     {
-      imgName: 'showmebishkek',
-      industry: 'Tourism'
+      className: 'showmebishkek-icon'
     },
     {
-      imgName: 'mythril',
-      industry: 'Blockchain'
+      className: 'mythril-icon'
     },
     {
-      imgName: 'seso',
-      industry: 'Entertainment'
+      className: 'seso-icon'
     },
     {
-      imgName: 'tengri',
-      industry: 'FinTech'
+      className: 'tengri-icon'
     },
     {
-      imgName: 'peklo',
-      industry: 'AdTech'
+      className: 'peklo-icon'
     }
   ];
 

@@ -8,80 +8,41 @@ exports[`Footer renders correctly 1`] = `
     class="container"
   >
     <div
-      class="footer__content"
+      class="footer__content row"
     >
       <div
-        class="footer__text-content"
+        class="footer__left-content col-xl-8 col-lg-7 col-md-6"
       >
-        <div
-          class="footer__title-wrap"
+        <h2
+          class="footer__main-title"
         >
-          <h2
-            class="footer__main-title main-title"
-          >
-            Get In Touch
-          </h2>
-           
-          <div
-            class="footer__mail-wrapper"
-          >
-            <a
-              class="footer__mailto-link"
-              href="mailto:team@maddevs.io"
-            >
-              team@maddevs.io
-            </a>
-          </div>
-        </div>
+          Get In Touch
+        </h2>
          
         <footercontacts-stub />
+         
+        <footernavbar-stub
+          class="footer__navbar-desktop"
+        />
       </div>
        
       <div
-        class="footer__form-wrap"
+        class="footer__form-wrap col-xl-4 col-lg-5 col-md-5"
       >
         <footerform-stub />
       </div>
     </div>
      
     <div
-      class="footer__bottom-links-line"
+      class="footer__mobile-content footer__social-network-list-mobile"
     >
-      <p
-        class="footer__company-name"
-      >
-        © Mad Devs - 2020
-      </p>
-       
-      <div
-        class="footer__left-bottom_links"
-      >
-        <a
-          class="footer__bottom-link"
-          href="/gdpr"
-          target="_blank"
-        >
-          GDPR Compliance Commitment
-        </a>
-         
-        <a
-          class="footer__bottom-link"
-          href="/privacy"
-          target="_blank"
-        >
-          Privacy Policy
-        </a>
-         
-        <a
-          class="footer__bottom-link"
-          href="/nda"
-          target="_blank"
-        >
-          Non-Disclosure Agreement (NDA)
-        </a>
-      </div>
-       
-      <footersocialnetworkbar-stub />
+      <footersocialnetworklist-stub />
+    </div>
+     
+    <div
+      class="footer__mobile-content"
+    >
+      <footernavbarmobile-stub />
     </div>
   </div>
 </footer>

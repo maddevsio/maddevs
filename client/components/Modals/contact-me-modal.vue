@@ -31,6 +31,7 @@
           :inputId="inputId"
         />
         <UIButton
+          class="modal-button"
           name="Сontact Me"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"

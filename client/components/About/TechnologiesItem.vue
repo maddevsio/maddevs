@@ -1,6 +1,6 @@
 <template>
   <div class="technologies-item">
-    <h4 class="technologies-item__title sub-title">{{ title }}</h4>
+    <h4 class="technologies-item__title title-md">{{ title }}</h4>
     <p class="technologies-item__paragraph paragraph">{{ paragraph }}</p>
     <FrontendIcons v-if="title === 'Frontend'" />
     <BackendIcons v-if="title === 'Backend'" />

@@ -10,18 +10,18 @@ exports[`Privacy renders correctly 1`] = `
     <div
       class="privacy__header"
     >
-      <h3
-        class="privacy__title title"
+      <h2
+        class="privacy__title"
       >
         
-        Privacy Policy: Website Acceptable Use Terms 
+        Privacy Policy: Website 
+        <br />
+         Acceptable Use Terms
       
-      </h3>
+      </h2>
        
-      <img
-        alt="Privacy image"
+      <div
         class="privacy__image"
-        src="@/assets/img/common/docs.svg"
       />
     </div>
      
@@ -29,7 +29,7 @@ exports[`Privacy renders correctly 1`] = `
       class="privacy__content"
     >
       <p
-        class="privacy__text doc-text privacy__break-main-paragraph"
+        class="privacy__text privacy__break-main privacy__break-main--first"
       >
         
         This acceptable use policy sets out the content standards that apply
@@ -40,15 +40,21 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__text doc-text privacy__break-main-paragraph"
+        class="privacy__text privacy__break-main"
       >
         
-        We are Mad Devs Group Ltd.
+        We are 
+        <span
+          class="privacy__nowrap"
+        >
+          Mad Devs
+        </span>
+         Group Ltd.
       
       </p>
        
       <p
-        class="privacy__text doc-text privacy__break-main-paragraph"
+        class="privacy__text privacy__break-main"
       >
         <a
           class="privacy__link"
@@ -68,7 +74,13 @@ exports[`Privacy renders correctly 1`] = `
           https://maddevsgroup.co.uk/
         </a>
         
-        are websites operated by Mad Devs Group Ltd ("We"). We are registered
+        are websites operated by 
+        <span
+          class="privacy__nowrap"
+        >
+          Mad Devs
+        </span>
+         Group Ltd ("We"). We are registered
         in England and Wales under a company number 11793394 and have our
         registered office at Salisbury House, Station Road, Cambridge, CB1
         2LA, United Kingdom.
@@ -76,26 +88,32 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__text doc-text"
+        class="privacy__text privacy__break-main"
       >
         
-        We also have close associations with Mad Devs LLC, a company
+        We also have close associations with 
+        <span
+          class="privacy__nowrap"
+        >
+          Mad Devs
+        </span>
+         LLC, a company
         registered in Kyrgyzstan under a company number 02004201710239 and
         have a registered office at 103 Ibraimova str., Bishkek, 720011,
         Kyrgyz Republic.
       
       </p>
        
-      <h5
-        class="privacy__sec-title"
+      <h4
+        class="privacy__sec-title privacy__sec-title--first"
       >
         
         By using our site you accept these terms
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         By using our site, you confirm that you accept the terms of this
@@ -104,7 +122,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         If you do not agree to these terms, you must not use our site.
@@ -112,7 +130,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We recommend that you print a copy of these terms for future
@@ -120,16 +138,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         We may make changes to the terms of this policy
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We amend these terms from time to time. Every time you wish to use our
@@ -138,16 +156,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Prohibited uses
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph privacy__break-paragraph"
+        class="privacy__paragraph privacy__break"
       >
         
         You may use our site only for lawful purposes. You may not use our
@@ -156,7 +174,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <ul
-        class="privacy__list-wrap paragraph"
+        class="privacy__list-wrap privacy__paragraph"
       >
         <li
           class="privacy__list"
@@ -200,7 +218,7 @@ exports[`Privacy renders correctly 1`] = `
       </ul>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         You also agree not to reproduce, duplicate, copy or re-sell any part
@@ -212,16 +230,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Breach of this policy
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         When we consider that a breach of this acceptable use policy has
@@ -230,7 +248,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         Failure to comply with this acceptable use policy constitutes a
@@ -241,7 +259,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <ul
-        class="privacy__list-wrap paragraph"
+        class="privacy__list-wrap"
       >
         <li
           class="privacy__list"
@@ -279,7 +297,7 @@ exports[`Privacy renders correctly 1`] = `
       </ul>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We exclude our liability for all action we may take in response to
@@ -289,16 +307,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Which country's laws apply to any disputes?
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         If you are a consumer, please note that the terms of this policy, its
@@ -309,7 +327,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         If you are a business, the terms of this policy, its subject matter
@@ -319,16 +337,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title privacy__sec-title"
       >
         
         Cookie Policy
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         Our website uses cookies to distinguish you from other users of our
@@ -338,7 +356,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         A cookie is a small file of letters and numbers that we store on your
@@ -348,7 +366,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We use the following cookies:
@@ -356,10 +374,10 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         <span
-          class="privacy__paragraph privacy__paragraph--bold paragraph"
+          class="privacy__paragraph privacy__paragraph--bold"
         >
           Strictly necessary cookies.
         </span>
@@ -369,10 +387,10 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         <span
-          class="privacy__paragraph privacy__paragraph--bold paragraph"
+          class="privacy__paragraph privacy__paragraph--bold"
         >
           Analytical or performance cookies.
         </span>
@@ -384,16 +402,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Google Analytics
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         Google Analytics is a web analytics service offered by Google that
@@ -410,7 +428,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         For more information on the privacy practices of Google, please visit
@@ -426,10 +444,10 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         <span
-          class="privacy__paragraph privacy__paragraph--bold paragraph"
+          class="privacy__paragraph privacy__paragraph--bold"
         >
           Functionality cookies.
         </span>
@@ -442,10 +460,10 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         <span
-          class="privacy__paragraph privacy__paragraph--bold paragraph"
+          class="privacy__paragraph privacy__paragraph--bold"
         >
           Targeting cookies.
         </span>
@@ -458,7 +476,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         You can block cookies by activating the setting on your browser that
@@ -469,16 +487,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title  privacy__sec-title"
       >
         
         Privacy Policy
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We respect your privacy and are committed to protecting your personal
@@ -490,7 +508,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         This website is not intended for children and we do not knowingly
@@ -499,7 +517,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         It is important that you read this ­privacy policy together with any
@@ -512,7 +530,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         Our Data Protection Officer is [NAME], who is responsible for
@@ -524,7 +542,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         You have the right to make a complaint at any time to the Information
@@ -544,7 +562,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         Please also use the Glossary to understand the meaning of some of the
@@ -556,7 +574,7 @@ exports[`Privacy renders correctly 1`] = `
         class="privacy__term-container"
       >
         <div
-          class="privacy__term-title paragraph"
+          class="privacy__term-title"
         >
           
           Personal Data
@@ -564,7 +582,7 @@ exports[`Privacy renders correctly 1`] = `
         </div>
          
         <div
-          class="privacy__term-description paragraph"
+          class="privacy__term-description"
         >
           
           Personal Data means data about a living individual who can be
@@ -578,7 +596,7 @@ exports[`Privacy renders correctly 1`] = `
         class="privacy__term-container"
       >
         <div
-          class="privacy__term-title paragraph"
+          class="privacy__term-title"
         >
           
           Usage Data
@@ -586,7 +604,7 @@ exports[`Privacy renders correctly 1`] = `
         </div>
          
         <div
-          class="privacy__term-description paragraph"
+          class="privacy__term-description"
         >
           
           Usage Data is data collected automatically either generated by the
@@ -600,7 +618,7 @@ exports[`Privacy renders correctly 1`] = `
         class="privacy__term-container"
       >
         <div
-          class="privacy__term-title paragraph"
+          class="privacy__term-title"
         >
           
           Data Controller
@@ -608,7 +626,7 @@ exports[`Privacy renders correctly 1`] = `
         </div>
          
         <div
-          class="privacy__term-description paragraph"
+          class="privacy__term-description"
         >
           
           Data Controller means the natural or legal person who (either alone
@@ -624,7 +642,7 @@ exports[`Privacy renders correctly 1`] = `
         class="privacy__term-container"
       >
         <div
-          class="privacy__term-title paragraph"
+          class="privacy__term-title"
         >
           
           Data Processors (or Service Providers)
@@ -632,7 +650,7 @@ exports[`Privacy renders correctly 1`] = `
         </div>
          
         <div
-          class="privacy__term-description paragraph"
+          class="privacy__term-description"
         >
           
           Data Processor (or Service Provider) means any natural or legal
@@ -647,7 +665,7 @@ exports[`Privacy renders correctly 1`] = `
         class="privacy__term-container"
       >
         <div
-          class="privacy__term-title paragraph"
+          class="privacy__term-title"
         >
           
           Data Subject (or User)
@@ -655,7 +673,7 @@ exports[`Privacy renders correctly 1`] = `
         </div>
          
         <div
-          class="privacy__term-description paragraph"
+          class="privacy__term-description"
         >
           
           Data Subject is any living individual who is using our service and
@@ -664,16 +682,16 @@ exports[`Privacy renders correctly 1`] = `
         </div>
       </div>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Information Collection and Use
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We collect several different types of information for various purposes
@@ -681,24 +699,24 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Types of Data Collected
       
-      </h5>
+      </h4>
        
-      <h5
+      <h4
         class="privacy__sec-title privacy__sec-title privacy__sec-title--multi-title"
       >
         
         Personal Data
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         While using our service, we may ask you to provide us with certain
@@ -709,7 +727,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <ul
-        class="privacy__list-wrap paragraph"
+        class="privacy__list-wrap"
       >
         <li
           class="privacy__list"
@@ -736,24 +754,28 @@ exports[`Privacy renders correctly 1`] = `
         </li>
       </ul>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Use of Data
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
-        
-        Mad Devs Group Ltd uses the collected data for various purposes:
+        <span
+          class="privacy__nowrap"
+        >
+          Mad Devs
+        </span>
+         Group Ltd uses the collected data for various purposes:
       
       </p>
        
       <ul
-        class="privacy__list-wrap paragraph"
+        class="privacy__list-wrap"
       >
         <li
           class="privacy__list"
@@ -814,20 +836,26 @@ exports[`Privacy renders correctly 1`] = `
         </li>
       </ul>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Legal Basis for Processing Personal Data under the General Data
         Protection Regulation (GDPR)
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
-        If you are from the European Economic Area (EEA), Mad Devs Group Ltd
+        If you are from the European Economic Area (EEA), 
+        <span
+          class="privacy__nowrap"
+        >
+          Mad Devs
+        </span>
+         Group Ltd
         legal basis for collecting and using the personal information
         described in this Privacy Policy depends on the Personal Data we
         collect and the specific context in which we collect it.
@@ -835,15 +863,19 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
-        
-        Mad Devs Group Ltd may process your Personal Data because:
+        <span
+          class="privacy__nowrap"
+        >
+          Mad Devs
+        </span>
+         Group Ltd may process your Personal Data because:
       
       </p>
        
       <ul
-        class="privacy__list-wrap paragraph"
+        class="privacy__list-wrap"
       >
         <li
           class="privacy__list"
@@ -879,19 +911,23 @@ exports[`Privacy renders correctly 1`] = `
         </li>
       </ul>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Retention of Data
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
-        
-        Mad Devs Group Ltd will retain your Personal Data only for as long as
+        <span
+          class="privacy__nowrap"
+        >
+          Mad Devs
+        </span>
+         Group Ltd will retain your Personal Data only for as long as
         is necessary for the purposes set out in this Privacy Policy. We will
         retain and use your Personal Data to the extent necessary to comply
         with our legal obligations (for example, if we are required to retain
@@ -901,10 +937,14 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
-        
-        Mad Devs Group Ltd will also retain Usage Data for internal analysis
+        <span
+          class="privacy__nowrap"
+        >
+          Mad Devs
+        </span>
+         Group Ltd will also retain Usage Data for internal analysis
         purposes. Usage Data is generally retained for a shorter period of
         time, except when this data is used to strengthen the security or to
         improve the functionality of our service, or we are legally obligated
@@ -912,30 +952,30 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Transfer of Data
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We share your personal data within MadDevs companies. This will
         involve transferring your data outside the European Economic Area
         
         <span
-          class="privacy__paragraph privacy__paragraph--bold paragraph"
+          class="privacy__paragraph privacy__paragraph--bold"
         >
           (EEA).
         </span>
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We ensure your personal data is protected by requiring all our group
@@ -944,7 +984,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         Whenever we transfer your personal data out of the EEA, we ensure a
@@ -954,7 +994,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We will only transfer your personal data to countries that have been
@@ -974,7 +1014,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         Where we use certain service providers, we may use specific contracts
@@ -994,7 +1034,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         Where we use providers based in the US, we may transfer data to them
@@ -1013,16 +1053,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Marketing
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We strive to provide you with choices regarding certain personal data
@@ -1030,16 +1070,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Promotional offers from us
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We may use your identity, contact details and information we hold
@@ -1050,7 +1090,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         You will receive marketing communications from us if you have
@@ -1059,16 +1099,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Change of purpose
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We will only use your personal data for the purposes for which we
@@ -1081,7 +1121,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         If we need to use your personal data for an unrelated purpose, we will
@@ -1091,7 +1131,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         Please note that we may process your personal data without your
@@ -1100,52 +1140,62 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Disclosure of Data
       
-      </h5>
+      </h4>
        
-      <h5
+      <h4
         class="privacy__sec-title privacy__sec-title--multi-title"
       >
         
         Disclosure for Law Enforcement
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
-        Under certain circumstances, Mad Devs Group Ltd may be required to
+        Under certain circumstances, 
+        <span
+          class="privacy__nowrap"
+        >
+          Mad Devs
+        </span>
+         Group Ltd may be required to
         disclose your Personal Data if required to do so by law or in response
         to valid requests by public authorities (e.g. a court or a government
         agency).
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Legal Requirements
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
-        
-        Mad Devs Group Ltd may disclose your Personal Data in limited
+        <span
+          class="privacy__nowrap"
+        >
+          Mad Devs
+        </span>
+         Group Ltd may disclose your Personal Data in limited
         circumstances if such action is necessary to as follows:
       
       </p>
        
       <ul
-        class="privacy__list-wrap paragraph"
+        class="privacy__list-wrap"
       >
         <li
           class="privacy__list"
@@ -1159,7 +1209,13 @@ exports[`Privacy renders correctly 1`] = `
           class="privacy__list"
         >
           
-          To protect and defend the rights or property of Mad Devs Group Ltd
+          To protect and defend the rights or property of 
+          <span
+            class="privacy__nowrap"
+          >
+            Mad Devs
+          </span>
+           Group Ltd
         
         </li>
          
@@ -1189,16 +1245,16 @@ exports[`Privacy renders correctly 1`] = `
         </li>
       </ul>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Security of Data
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We have put in place appropriate security measures to prevent your
@@ -1212,7 +1268,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We have put in place procedures to deal with any suspected personal
@@ -1221,28 +1277,34 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Your Data Protection Rights under the General Data Protection
         Regulation (GDPR)
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         If you are a resident of the European Economic Area (EEA), you have
-        certain data protection rights. Mad Devs Group Ltd aims to take
+        certain data protection rights. 
+        <span
+          class="privacy__nowrap"
+        >
+          Mad Devs
+        </span>
+         Group Ltd aims to take
         reasonable steps to allow you to correct, amend, delete or limit the
         use of your Personal Data.
       
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         If you wish to be informed about what Personal Data we hold about you
@@ -1258,7 +1320,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         Under certain circumstances, you have rights under data protection
@@ -1267,10 +1329,10 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         <span
-          class="privacy__paragraph privacy__paragraph--bold paragraph"
+          class="privacy__paragraph privacy__paragraph--bold"
         >
           The right to access, update or delete the information we have on
           you.
@@ -1284,10 +1346,10 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         <span
-          class="privacy__paragraph privacy__paragraph--bold paragraph"
+          class="privacy__paragraph privacy__paragraph--bold"
         >
           The right of rectification.
         </span>
@@ -1298,10 +1360,10 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         <span
-          class="privacy__paragraph privacy__paragraph--bold paragraph"
+          class="privacy__paragraph privacy__paragraph--bold"
         >
           The right to object.
         </span>
@@ -1311,10 +1373,10 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         <span
-          class="privacy__paragraph privacy__paragraph--bold paragraph"
+          class="privacy__paragraph privacy__paragraph--bold"
         >
           The right of restriction.
         </span>
@@ -1325,10 +1387,10 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         <span
-          class="privacy__paragraph privacy__paragraph--bold paragraph"
+          class="privacy__paragraph privacy__paragraph--bold"
         >
           The right to data portability.
         </span>
@@ -1340,10 +1402,10 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         <span
-          class="privacy__paragraph privacy__paragraph--bold paragraph"
+          class="privacy__paragraph privacy__paragraph--bold"
         >
           The right to withdraw consent.
         </span>
@@ -1355,7 +1417,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         Please note that we may ask you to verify your identity before
@@ -1366,16 +1428,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         No fee usually required
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         You will not have to pay a fee to access your personal data (or to
@@ -1386,16 +1448,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         What we may need from you
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We may need to request specific information from you to help us
@@ -1408,16 +1470,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Time limit to respond
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We try to respond to all legitimate requests within one month.
@@ -1427,16 +1489,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Service Providers
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         We may employ third party companies and individuals to facilitate our
@@ -1447,7 +1509,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         These third parties have access to your Personal Data only to perform
@@ -1456,16 +1518,16 @@ exports[`Privacy renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h4
         class="privacy__sec-title"
       >
         
         Links to Other Sites
       
-      </h5>
+      </h4>
        
       <p
-        class="privacy__paragraph paragraph"
+        class="privacy__paragraph"
       >
         
         Our Service may contain links to other sites that are not operated by

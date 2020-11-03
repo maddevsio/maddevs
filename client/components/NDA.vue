@@ -2,33 +2,28 @@
   <section id="nda">
     <div class="container">
       <div class="nda__header">
-        <h3 class="nda__title title">
-          Non-Disclosure Agreement at Mad Devs
+        <h3 class="nda__title">
+          <span class="nda__nowrap">Non-Disclosure</span> Agreement <br> at <span class="nda__nowrap">Mad Devs</span>
         </h3>
-        <img
-          class="nda__image"
-          src="@/assets/img/common/docs.svg"
-          alt="NDA image"
-        />
+        <div class="nda__image"></div>
       </div>
       <div class="nda__content">
-        <p class="nda__text doc-text">
-          All staff members, including contractors and consultants working for Mad Devs, are obliged
-          to sign a non-disclosure agreement before getting access to our internal systems. This is
-          one of our standard onboarding practices for the employee’s day one. At Mad Devs, we
-          understand how important it is to protect our technology and process know-how.
+        <p class="nda__text nda__text--first">
+          All staff members, including contractors and consultants working for <span class="nda__nowrap">Mad Devs</span>, are obliged
+          to sign a <span class="nda__nowrap">non-disclosure</span> agreement before getting access to our internal systems. This is
+          one of our standard onboarding practices for the employee’s day one. At <span class="nda__nowrap">Mad Devs</span>, we
+          understand how important it is to protect our technology and process <span class="nda__nowrap">know-how.</span>
         </p>
-        <br>
-        <p class="nda__text doc-text">
+        <p class="nda__text">
           Even if our customer doesn’t have an NDA in place, we will protect their business secrets
           and any of the competitive advantages we create for them by our non-disclosure agreement.
           If you want to get familiar with this document, please send us a request via
-          <a class="nda__link" href="mailto:rock@maddevs.com"
+          <a class="nda__link nda__link--head-text" href="mailto:rock@maddevs.com"
             >rock@maddevs.com</a
           >.
         </p>
-        <h5 class="nda__sec-title">Customer NDA Templates</h5>
-        <p class="nda__paragraph paragraph">
+        <h5 class="nda__sec-title nda__sec-title--first">Customer NDA Templates</h5>
+        <p class="nda__paragraph">
           Some of our customers have standard NDA templates pre-approved by their legal
           departments. If we are offered to sign such an agreement, we always proceed with it as the
           customer knows their industry better. If a customer offers us some additional instructions or
@@ -37,20 +32,19 @@
           consideration and applied in the process of work on the customer’s project.
         </p>
         <h5 class="nda__sec-title">
-          Customer NDA Agreements Made Specifically for Mad Devs
+          Customer NDA Agreements Made Specifically for <span class="nda__nowrap">Mad Devs</span>
         </h5>
-        <p class="nda__paragraph paragraph nda__break-paragraph">
-          Many customers prefer to create a tailored NDA for Mad Devs in collaboration with us. This
+        <p class="nda__paragraph nda__break-paragraph">
+          Many customers prefer to create a tailored NDA for <span class="nda__nowrap">Mad Devs</span> in collaboration with us. This
           practice is also very welcome. We are ready to explain how data will circulate within the new
           system, list the tools that we use, and describe the process our team follows. We are used to
           talking with the customer’s legal department and take efforts aimed at the protection of
           confidential information.
         </p>
-        <br />
-        <p class="nda__paragraph paragraph">
-          Our company has experience of working with NDA agreements of any kind and complexity. 
+        <p class="nda__paragraph">
+          Our company has experience of working with NDA agreements of any kind and complexity.
           If you have more specific questions please contact us via
-          <a class="nda__link" href="mailto:rock@maddevs.io">rock@maddevs.io</a>.
+          <a class="nda__link nda__link--paragraph" href="mailto:rock@maddevs.io">rock@maddevs.io</a>.
         </p>
       </div>
     </div>
@@ -64,6 +58,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/styles/vars';
+@import '../assets/styles/_commonIcons';
 
 .nda {
   width: 100%;
@@ -73,9 +68,9 @@ export default {
 
   &__header {
     display: flex;
-    margin-top: 147px;
-    margin-bottom: 53px;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 71px;
   }
 
   &__content {
@@ -83,136 +78,95 @@ export default {
   }
 
   &__title {
-    margin-right: 36px;
-    margin-top: 55px;
-    max-width: 800px;
+    color: $text-color--white;
+    @include h2_title;
   }
 
   &__link {
-    color: $text-color--white;
     text-decoration: underline;
+
+    &--head-text {
+      color: $text-color--white;
+    }
+
+    &--paragraph {
+      color: $remote-tech-staff-sub-title-grey;
+    }
   }
 
   &__sec-title {
-    text-align: left;
-    color: $text-color--grey-light;
-    margin-top: 62px;
-    margin-bottom: 11px;
-    font-size: 32px;
-    font-family: 'Hoves-Regular';
-    font-weight: bold;
+    margin-top: 48px;
+    margin-bottom: 8px;
+    font-family: 'Poppins-Regular';
+    font-size: 24px;
+    line-height: 136%;
+    letter-spacing: -1px;
+    color: $text-color--red;
+
+    &--first {
+      margin-top: 71px;
+    }
+
+    &--italic {
+      font-style: italic;
+    }
   }
 
-  &__text,
-  &__paragraph,
-  &__header {
+  &__paragraph {
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: $remote-tech-staff-sub-title-grey;
+  }
+
+  &__text {
+    margin: 25px 0;
+    font-family: 'Poppins-Regular';
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
     color: $text-color--white;
+
+    &--first {
+      margin-top: 0;
+    }
+
+    @media only screen and (max-width: 350px) {
+      font-size: 20px;
+    }
   }
 
   &__break-paragraph {
     margin-bottom: 5px;
   }
-}
 
-@media only screen and (max-width: 1280px) {
-  .nda {
-    &__image {
-      height: 180px;
-    }
+  &__nowrap {
+    white-space: nowrap;
   }
-}
 
-@media only screen and (min-width: 1150px) {
-  .nda {
-    &__image {
-      margin-left: 15%;
-    }
-  }
-}
+  &__image {
+    width: 190px;
+    height: 230px;
+    display: block;
+    position: relative;
+    top: 80px;
+    @include document-icon;
 
-@media only screen and (max-width: 1024px) {
-  .nda {
-    &__image {
+    @media only screen and (max-width: 1300px) {
+      width: 140px;
       height: 170px;
+      top: 55px;
     }
 
-    &__title {
-      margin-top: 0;
-    }
-  }
-}
-
-@media only screen and (max-width: 870px) {
-  .nda {
-    &__image {
-      height: 155px;
-    }
-
-    &__sec-title {
-      font-size: 30px;
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .nda {
-    &__image {
+    @media only screen and (max-width: 1200px) {
+      width: 100px;
       height: 150px;
-    }
-  }
-}
-
-@media only screen and (max-width: 670px) {
-  .nda {
-    &__header {
-      position: relative;
+      top: 30px;
     }
 
-    &__image {
-      height: 140px;
-      position: absolute;
-      right: 39px;
-      top: -125px;
-    }
-  }
-}
-
-@media only screen and (max-width: 520px) and (min-width: 460px) {
-  .nda {
-    &__image {
-      top: -82px;
-    }
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  .nda {
-    &__image {
-      height: 95px;
-    }
-
-    &__title {
-      font-size: 53px;
-    }
-
-    &__sec-title {
-      font-size: 27px;
-    }
-  }
-}
-
-@media only screen and (max-width: 455px) {
-  .nda {
-    &__image {
-      top: -60px;
-    }
-  }
-}
-
-@media only screen and (max-width: 370px) {
-  .nda {
-    &__title {
-      font-size: 47px;
+    @media only screen and (max-width: 1180px) {
+      display: none;
     }
   }
 }

@@ -3,7 +3,9 @@ body {
   padding: 0;
   min-width: 320px;
   transition: all .4s ease;
-  background-color: #000;
+  background-color: #111213;
+  font-family: 'Poppins-Regular', sans-serif;
+  font-feature-settings: 'zero' on, 'ordn' on, 'ss02' on, 'ss05' on;
 }
 
 h1,
@@ -32,6 +34,8 @@ main {
 * {
   outline: none !important;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility !important;
 
   &::-moz-focus-outer,
   &::-moz-focus-inner {
@@ -46,24 +50,24 @@ main {
   top: 0;
 }
 
-//----------- Base classes ------------ //
-.container {
-  max-width: 1600px;
-  margin: auto;
-  padding: 0 136px;
-}
-//----------- End Base classes ------------//
-
 // #region Fonts
-
 @font-face {
-  font-family: 'Hoves-Bold';
-  src: url('../fonts/Hoves/TT-Hoves-Bold.woff') format('woff');
-  font-display: swap;
+  font-family: 'Poppins-Bold';
+  font-weight: 700;
+  src: url('../fonts/Poppins/Poppins-Bold.woff2') format('woff2'), url('../fonts/Poppins/Poppins-Bold.woff') format('woff');
+  font-display: auto;
 }
 
 @font-face {
-  font-family: 'Hoves-Regular';
-  src: url('../fonts/Hoves/TT-Hoves-Regular.woff') format('woff');
-  font-display: swap;
+  font-family: 'Poppins-Medium';
+  font-weight: 600;
+  src: url('../fonts/Poppins/Poppins-Medium.woff2') format('woff2'), url('../fonts/Poppins/Poppins-Medium.woff') format('woff');
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  font-weight: 400;
+  src: url('../fonts/Poppins/Poppins-Regular.woff2') format('woff2'), url('../fonts/Poppins/Poppins-Regular.woff') format('woff');
+  font-display: auto;
 }

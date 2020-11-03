@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer form renders correctly 1`] = `
-<div
+<form
   class="footer-form form"
 >
   <validationobserver-stub />
@@ -11,5 +11,5 @@ exports[`Footer form renders correctly 1`] = `
   >
     <!---->
   </transition-stub>
-</div>
+</form>
 `;

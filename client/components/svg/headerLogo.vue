@@ -11,11 +11,40 @@
 
 <script>
 export default {
-  name: 'main-header',
-  props: {
-    headerLogoTextDisplayState: {
-      type: Boolean,
-      default: true
+  name: 'header-logo',
+  data() {
+    return {
+      headerLogoTextDisplayState: false,
+      mobileMenuScrollBar: ''
+    };
+  },
+  watch: {
+    '$route'() {
+      this.headerLogoTextDisplayState = false;
+    }
+  },
+  mounted() {
+    this.mobileMenuScrollBar = document.getElementsByClassName('mobile-header__scrollbar')[0];
+    this.mobileMenuScrollBar.addEventListener('scroll', this.handleMobileMenuScroll);
+    window.addEventListener('scroll', this.handleWindowScroll);
+  },
+  destroyed() {
+    this.mobileMenuScrollBar.removeEventListener('scroll', this.handleMobileMenuScroll);
+    window.removeEventListener('scroll', this.handleWindowScroll);
+  },
+  methods: {
+    handleWindowScroll() {
+      this.changeLogoState(window.pageYOffset);
+    },
+    handleMobileMenuScroll() {
+      this.changeLogoState(this.mobileMenuScrollBar.scrollTop);
+    },
+    changeLogoState(scrollTop) {
+      if(scrollTop >= 10) {
+        this.headerLogoTextDisplayState = true;
+      } else {
+        this.headerLogoTextDisplayState = false;
+      }
     }
   }
 };

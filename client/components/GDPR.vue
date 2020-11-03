@@ -2,30 +2,24 @@
   <section id="gdpr">
     <div class="container">
       <div class="gdpr__header">
-        <h3 class="gdpr__title title">
-          Mad Devs’ GDPR Compliance Commitment
-        </h3>
-        <img
-          class="gdpr__image"
-          src="@/assets/img/common/docs.svg"
-          alt="GDPR image"
-        />
+        <h3 class="gdpr__title"><span class="gdpr__nowrap">Mad Devs’</span> GDPR <br> Compliance Commitment</h3>
+        <div class="gdpr__image"></div>
       </div>
       <div class="gdpr__content">
-        <p class="gdpr__text doc-text">
+        <p class="gdpr__text--first gdpr__text">
           We are committed to staying compliant with the General Data Protection Regulation (GDPR)
           for the sake of our customers, partners, and staff. Personally identifiable information that
           belongs to EU citizens is subject to rules, restrictions, and limitations stated in GDPR dated
           May 25, 2018.
         </p>
-        <p class="gdpr__text doc-text">
+        <p class="gdpr__text">
           <span class="gdpr__text gdpr__text--bold">Important note.</span> Our software development and infrastructure optimization departments
           have worked with projects requiring full GDPR compliance, and if you need help with any
           personal data to be properly collected, modified, stored, and processed, please let us know.
         </p>
-        <h5 class="gdpr__sec-title">Data Processing Documentation</h5>
-        <p class="gdpr__paragraph paragraph">
-          Under the terms of GDPR, Mad Devs is a Data Processor. In case you are a Data Controller
+        <h5 class="gdpr__sec-title gdpr__sec-title--first">Data Processing Documentation</h5>
+        <p class="gdpr__paragraph">
+          Under the terms of GDPR, <span class="gdpr__nowrap">Mad Devs</span> is a Data Processor. In case you are a Data Controller
           according to the official GDPR terminology, our legal department is ready to provide written
           consent for the processing of any personal data of individuals from the European Union and
           European Economic Area. We are also ready to provide our <a class="gdpr__link" href="https://gdpr.eu/what-is-data-processing-agreement/">Data Processing Addendum (DPA)</a>
@@ -38,7 +32,7 @@
         <h5 class="gdpr__sec-title">
           Privacy Policy
         </h5>
-        <p class="gdpr__paragraph paragraph">
+        <p class="gdpr__paragraph">
           For your convenience, our Privacy Policy is available on our website in PDF format, you can
           also download it to your computer if needed. If you have any questions or concerns related
           to this document, please let us know via
@@ -48,7 +42,7 @@
         <h5 class="gdpr__sec-title">
           Cookie Usage
         </h5>
-        <p class="gdpr__paragraph paragraph">
+        <p class="gdpr__paragraph">
           Our website uses cookies to help us define your core interests and make you relevant
           service offerings. The “Accept” button on our pop-up notification will enable you to accept
           cookies.
@@ -56,18 +50,18 @@
         <h5 class="gdpr__sec-title">
           Marketing Communications
         </h5>
-        <p class="gdpr__paragraph paragraph">
+        <p class="gdpr__paragraph">
           To get information on our recent blog posts, hottest discounts, and newest services, you can
-          subscribe to the Mad Devs Newsletter. You can unsubscribe at any time. If you want to make
+          subscribe to the <span class="gdpr__nowrap">Mad Devs</span> Newsletter. You can unsubscribe at any time. If you want to make
           sure that your data has been amended or deleted, please contact us via
           <a class="gdpr__link" href="mailto:rock@maddevs.io">rock@maddevs.io</a
           >.
         </p>
-        <p class="gdpr__paragraph gdpr__paragraph--bold paragraph">
+        <p class="gdpr__paragraph gdpr__paragraph--bold">
           We appreciate your collaboration and openness with regard to any legal issues!
         </p>
-        <p class="gdpr__paragraph gdpr__paragraph--bold gdpr__paragraph--italic paragraph">
-          Team Mad Devs
+        <p class="gdpr__paragraph gdpr__paragraph--bold gdpr__paragraph--italic">
+          Team <span class="gdpr__nowrap">Mad Devs</span>
         </p>
       </div>
     </div>
@@ -82,6 +76,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/styles/vars';
+@import '../assets/styles/_commonIcons';
 
 .gdpr {
   width: 100%;
@@ -91,9 +86,9 @@ export default {
 
   &__header {
     display: flex;
-    margin-top: 147px;
-    margin-bottom: 53px;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 71px;
   }
 
   &__content {
@@ -101,19 +96,53 @@ export default {
   }
 
   &__title {
-    margin-right: 36px;
-    margin-top: 55px;
-    max-width: 800px;
+    color: $text-color--white;
+    @include h2_title;
   }
 
   &__link {
-    color: $text-color--white;
+    color: $remote-tech-staff-sub-title-grey;
     text-decoration: none;
   }
 
-  &__paragraph,
+  &__paragraph {
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: $remote-tech-staff-sub-title-grey;
+
+    &--bold {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  }
+  
+  &__sec-title {
+    margin-top: 48px;
+    margin-bottom: 8px;
+    font-family: 'Poppins-Regular';
+    font-size: 24px;
+    line-height: 136%;
+    letter-spacing: -1px;
+    color: $text-color--red;
+
+    &--first {
+      margin-top: 71px;
+    }
+  }
+
   &__text {
-    margin-bottom: 15px;
+    margin: 25px 0;
+    font-family: 'Poppins-Regular';
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: $text-color--white;
+
+    &--first {
+      margin-top: 0;
+    }
 
     &--bold {
       font-weight: bold;
@@ -122,145 +151,56 @@ export default {
     &--italic {
       font-style: italic;
     }
+
+    @media only screen and (max-width: 350px) {
+      font-size: 20px;
+    }
   }
 
-  &__sec-title {
-    text-align: left;
-    color: $text-color--grey-light;
-    margin-top: 62px;
-    margin-bottom: 11px;
-    font-size: 32px;
-    font-family: 'Hoves-Regular';
-    font-weight: bold;
-  }
-
-  &__text,
-  &__paragraph,
-  &__header {
-    color: $text-color--white;
-  }
-
-  &__break-paragraph {
+  &__break {
     margin-bottom: 5px;
   }
-}
 
-@media only screen and (max-width: 1280px) {
-  .gdpr {
-    &__image {
-      height: 180px;
-    }
+  &__nowrap {
+    white-space: nowrap;
   }
-}
 
-@media only screen and (min-width: 1150px) {
-  .gdpr {
-    &__image {
-      margin-left: 15%;
-    }
-  }
-}
+  &__image {
+    width: 190px;
+    height: 230px;
+    display: block;
+    position: relative;
+    top: 80px;
+    @include document-icon;
 
-@media only screen and (max-width: 1024px) {
-  .gdpr {
-    &__image {
+    @media only screen and (max-width: 1300px) {
+      width: 140px;
       height: 170px;
+      top: 55px;
     }
 
-    &__title {
-      margin-top: 0;
-    }
-  }
-}
-
-@media only screen and (max-width: 870px) {
-  .gdpr {
-    &__image {
-      height: 155px;
-    }
-
-    &__sec-title {
-      font-size: 30px;
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .gdpr {
-    &__image {
+    @media only screen and (max-width: 1200px) {
+      width: 100px;
       height: 150px;
+      top: 30px;
+    }
+
+    @media only screen and (max-width: 1140px) {
+      width: 65px;
+      height: 115px;
+      top: 7px;
     }
   }
-}
 
-@media only screen and (max-width: 670px) {
-  .gdpr {
-    &__header {
-      position: relative;
-    }
-
+  @media only screen and (max-width: 1080px) {
     &__title {
-      max-width: 480px;
+      br {
+        display: none;
+      }
     }
 
     &__image {
-      height: 140px;
-      position: absolute;
-      right: 39px;
-      top: -72px;
-    }
-  }
-}
-
-@media only screen and (max-width: 590px) {
-  .gdpr {
-    &__image {
-      height: 120px;
-      right: 39px;
-      top: -125px;
-    }
-  }
-}
-
-@media only screen and (max-width: 520px) and (min-width: 495px) {
-  .gdpr {
-    &__image {
-      top: -95px;
-      top: -95px;
-    }
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  .gdpr {
-    &__image {
-      height: 95px;
-      top: -95px;
-    }
-
-    &__title {
-      font-size: 53px;
-    }
-
-    &__sec-title {
-      font-size: 27px;
-    }
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  .gdpr {
-    &__image {
-      top: -93px;
-      right: 0;
-    }
-  }
-}
-
-@media only screen and (max-width: 370px) {
-  .gdpr {
-    &__title {
-      font-size: 47px;
+      display: none;
     }
   }
 }

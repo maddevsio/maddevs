@@ -42,6 +42,7 @@
           name="Get an infrastructure audit"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+          class="modal-button"
         />
       </div>
     </ValidationObserver>

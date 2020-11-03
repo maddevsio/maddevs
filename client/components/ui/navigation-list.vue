@@ -1,18 +1,18 @@
 <template>
-  <div class="navigation-wrap" v-if="currentPageName !== 'careers'" >
-    <nav class="navigation-list" v-if="currentPageName === 'services'">
+  <div class="navigation-wrap container" :class="`navigation-wrap-${currentPageName}`" v-if="currentPageName !== 'careers'" >
+    <nav class="navigation-list" :class="`navigation-list-${currentPageName}`" v-if="currentPageName === 'services'">
       <a href="#remote-tech-staff" class="navigation-item">Remote Tech Staff</a>
       <a href="#software-development" class="navigation-item">Software Development</a>
       <a href="#infrastructure-optimisation" class="navigation-item">Infrastructure Optimization</a>
       <a href="#it-consulting" class="navigation-item">IT Consulting</a>
     </nav>
-    <nav class="navigation-list" v-else-if="currentPageName === 'projects'">
+    <nav class="navigation-list" :class="`navigation-list-${currentPageName}`" v-else-if="currentPageName === 'projects'">
       <a href="#case-studies" class="navigation-item">Case studies</a>
       <a href="#customers" class="navigation-item">Our customers</a>
       <a href="#open-source" class="navigation-item">Open-source pet projects</a>
     </nav>
-    <nav class="navigation-list" v-else>
-      <router-link to="services/#remote-tech-staff" class="navigation-item">Remote Tech Staff</router-link>
+    <nav class="navigation-list" :class="`navigation-list-${currentPageName}`" v-else>
+      <router-link to="services/#remote-tech-staff" class="navigation-item">Remote Tech <span class="mobile_hidden">Staff</span></router-link>
       <router-link to="services/#software-development" class="navigation-item">Software Development</router-link>
       <router-link to="services/#infrastructure-optimisation" class="navigation-item">Infrastructure Optimization</router-link>
       <router-link to="services/#it-consulting" class="navigation-item">IT Consulting</router-link>
@@ -39,75 +39,108 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
 
-  .navigation-list {
-    display: flex;
-    flex-direction: row;
-    margin-top: -60px;
+  .navigation-wrap {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
 
-    .navigation-item {
-      padding-right: 81px;
-      padding-left: 20px;
-      color: $text-color--grey-light;
-      font-size: 22px;
-      font-family: 'Hoves-Regular';
-      background: url('../../assets/img/common/link-arrow.svg') no-repeat;
-      background-position-y: 7px;
-      letter-spacing: -0.04em;
+  .navigation-wrap-projects {
+    @media screen and (max-width: 480px) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 420px) {
+      margin-bottom: 20px;
     }
   }
 
-  @media only screen and (max-width: 1360px) {
-    .navigation-list {
-      .navigation-item {
-        padding-right: 50px;
+  .navigation-list {
+    display: flex;
+    flex-direction: row;
+
+    .navigation-item {
+      margin-right: 48px;
+      border-bottom: 1px solid rgba(236, 28, 36, .5);
+      color: $text-color--grey-light;
+      font-size: 19px;
+      line-height: 24px;
+      font-family: 'Poppins-Regular', sans-serif;;
+      letter-spacing: -0.04em;
+      text-decoration: none;
+      transition: 0.3s;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        border-bottom: 1px solid rgba(236, 28, 36, 1);
       }
     }
   }
 
-  @media only screen and (max-width: 1280px) {
+  .navigation-list-projects {
+    justify-content: flex-start;
+  }
+
+  @media screen and (max-width: 1130px) {
+    .mobile_hidden {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1090px) {
     .navigation-list {
+      justify-content: space-between;
+
       .navigation-item {
-        padding-right: 44px;
-        font-size: 16px;
-        letter-spacing: -0.03em;
-        background-position-y: 4px;
+        margin-right: 15px;
+      }
+    }
+
+    .navigation-list-projects {
+      justify-content: flex-start;
+
+      .navigation-item {
+        margin-right: 35px;
       }
     }
   }
 
   @media only screen and (max-width: 970px) {
     .navigation-list {
-      display: grid;
-      grid-template-columns: repeat(2, 300px);
-      grid-row-gap: 17px;
+      .navigation-item {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.03em;
+        background-position-y: 4px;
+      }
+    }
+
+    .navigation-list-projects {
+      .navigation-item {
+        margin-right: 25px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 690px) {
+    .navigation-list {
+      flex-direction: column;
 
       .navigation-item {
-        font-size: 17px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 25px;
+        max-width: fit-content;
 
-        &:nth-child(2) {
-          grid-row-start: 2;
+        .mobile_hidden {
+          display: inline;
         }
-      }
-    }
-  }
 
-  @media only screen and (max-width: 730px) {
-    .navigation-list {
-      grid-template-columns: repeat(2, 240px);
-
-      .navigation-item {
-        padding-right: 25px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 530px) {
-    .navigation-list {
-      grid-template-columns: repeat(1, 1fr);
-      grid-row-gap: 22px;
-
-      .navigation-item {
-        font-size: 18px;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }

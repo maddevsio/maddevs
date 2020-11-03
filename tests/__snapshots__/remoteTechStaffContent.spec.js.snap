@@ -2,48 +2,44 @@
 
 exports[`Remote tech staff content renders correctly 1`] = `
 <div
-  class="remote-tech-staff-content__tech-staff"
+  class="remoteTechStaffContent__tech-staff remoteTechStaffContent__tech-staff-title"
 >
   <div
-    class="remote-tech-staff-content__content_wrapper"
+    class="remoteTechStaffContent__content_wrapper"
   >
     <div
-      class="remote-tech-staff-content__content-wrap"
+      class="remoteTechStaffContent__text-wrap"
     >
-      <div
-        class="remote-tech-staff-content__title-wrap"
+      <h3
+        class="item-title"
       >
-        <h3
-          class="remote-tech-staff-content__title title default-title"
-        >
-          Title
-        </h3>
-         
-        <h4
-          class="remote-tech-staff-content__sub-title sub-title"
-        >
-          Sub title
-        </h4>
-      </div>
+        Title
+      </h3>
        
-      <!---->
+      <h4
+        class="item-sub-title remoteTechStaffContent__item-sub-title"
+      >
+        Sub title
+      </h4>
        
-      <!---->
+      <p
+        class="paragraph remoteTechStaffContent__paragraph remoteTechStaffContent__title-paragraph"
+      >
+        Paragraph
+      </p>
     </div>
-     
-    <p
-      class="remote-tech-staff-content__paragraph paragraph"
-    >
-      Paragraph
-    </p>
   </div>
    
   <button
-    class="ui-button-modal-trigger remote-tech-staff-content__ui-button-modal-trigger"
+    class="ui-button-modal-trigger remoteTechStaffContent__ui-button-modal-trigger"
   >
     
   Button inner text
 
   </button>
+   
+  <div
+    class="remoteTechStaffContent__item-icon remoteTechStaffContent__title-icon"
+  />
 </div>
 `;

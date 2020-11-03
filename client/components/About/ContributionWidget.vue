@@ -21,8 +21,8 @@
         fill=""
       />
     </svg>
-    <span 
-      class="contribution-widget__content-mobile contribution-widget__content-mobile_godee" 
+    <span
+      class="contribution-widget__content-mobile contribution-widget__content-mobile_godee"
       v-if="projectName === 'godee'"
     >
       contribution: Backend, Infrastructure, Mobile Apps
@@ -40,8 +40,8 @@
       ]"
       >contribution: Backend, Infrastructure</span
     >
-    <span 
-      class="contribution-widget__content contribution-widget__content_godee" 
+    <span
+      class="contribution-widget__content contribution-widget__content_godee"
       v-if="projectName === 'godee'"
     >
       contribution: Backend, Infrastructure, Mobile Apps
@@ -53,8 +53,8 @@
         projectName === 'guardrails'
           ? 'contribution-widget__content_guardrails'
           : '',
-        projectName === 'teacherly' 
-          ? 'contribution-widget__content_teacherly' 
+        projectName === 'teacherly'
+          ? 'contribution-widget__content_teacherly'
           : 'contribution-widget__content_nambafood'
       ]"
       >contribution: Backend, Infrastructure, Frontend</span
@@ -83,120 +83,67 @@ export default {
 
 .contribution-widget {
   display: flex;
-  align-items: center;
+  align-items: self-start;
   position: relative;
   z-index: 1;
   color: $text-color--grey;
-  font-family: 'Hoves-Regular';
-  margin-top: 36px;
-  font-size: 20px;
-  letter-spacing: -1px;
-  line-height: 95%;
+  font-family: 'Poppins-Regular', sans-serif;
+  margin-top: 26px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 14px;
+  }
+
+  @media screen and (max-width: 650px) {
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  @media screen and (max-width: 608px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 
   &__img {
     width: 20px;
+    min-width: 20px;
     height: 18px;
+    margin-top: 2px;
 
-    &_teacherly,
+    &_guardrails,
+    &_teacherly {
+      fill: $text-color--white-darken;
+    }
+
+    &_godee,
     &_nambafood {
-      fill: $text-color--red;
-    }
-
-    &_guardrails {
-      fill: $text-color--grey;
-    }
-
-    &_godee {
       fill: $text-color--black;
     }
   }
 
   &__content {
-    margin-left: 6px;
+    margin-left: 8px;
 
     &-mobile {
       display: none;
     }
 
-    &_nambafood,
-    &_guardrails {
-      color: $text-color--grey;
-    }
-
-    &_teacherly {
-      color: $text-color--white;
-    }
-
-    &_godee {
+    &_godee,
+    &_nambafood {
       color: $text-color--black;
     }
-  }
 
-  @media only screen and (max-width: 1120px) {
-    font-size: 18px;
-  }
-
-  @media only screen and (max-width: 1035px) {
-    font-size: 16px;
-  }
-
-  @media only screen and (max-width: 1024px) {
-    &__img {
-      height: 13px;
-      width: 15px;
-
-      &_teacherly {
-        fill: $text-color--red;
-      }
-
-      &_guardrails {
-        fill: $text-color--white;
-      }
-
-      &_nambafood,
-      &_godee {
-        fill: $text-color--black;
-      }
-    }
-
-    &__content {
-      display: none;
-
-      &-mobile {
-        display: block;
-        margin-left: 6px;
-
-        &_nambafood {
-          color: $text-color--black;
-        }
-
-        &_teacherly,
-        &_guardrails {
-          color: $text-color--white;
-        }
-
-        &_godee {
-          color: $text-color--black;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 640px) {
-    font-size: 17px;
-  }
-
-  @media only screen and (max-width: 520px) {
-    font-size: 16px;
-  }
-
-  @media only screen and (max-width: 340px) {
-    font-size: 15px;
-
-    &__content {
-      &-mobile {
-        margin-left: 3px;
-      }
+    &_guardrails,
+    &_teacherly {
+      color: $text-color--white-darken;
     }
   }
 }

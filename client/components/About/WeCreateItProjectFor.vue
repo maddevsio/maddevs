@@ -1,29 +1,34 @@
 <template>
-  <section id="we-create-it-project" class="we-create-it-project">
+  <section id="weCreateItProject" class="weCreateItProject">
     <div class="container">
-      <h2 class="we-create-it-project__main-title main-title">
-        We create <br> IT projects for:
-      </h2>
-      <div class="we-create-it-project__content-wrap">
-        <ul class="we-create-it-project__projects-type_list">
-          <li class="we-create-it-project__project-item">E-learning</li>
-          <li class="we-create-it-project__project-item">FinTech</li>
-          <li class="we-create-it-project__project-item">HealthTech</li>
-          <li class="we-create-it-project__project-item">E-commerce</li>
-          <li class="we-create-it-project__project-item">AdTech</li>
-          <li class="we-create-it-project__project-item">Transportation</li>
-        </ul>
-        <div class="we-create-it-project__country-list_wrap">
-          <div class="we-create-it-project__country-list_title">We work with
-            <br> customers in:
+      <div class="weCreateItProject__content-wrapper">
+        <h2 class="weCreateItProject__main-title">
+          We create <br> IT projects for:
+        </h2>
+        <div class="weCreateItProject__projects-type_list row gy-0">
+          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <p class="weCreateItProject__paragraph">Content Streaming <br> Transportation</p>
           </div>
-          <ul class="we-create-it-project__country-list">
-            <li v-for="(country, i) in countries" :key="i" class="we-create-it-project__country-item">
-              <span :class="`we-create-it-project__logo-country we-create-it-project__logo-country--${country.iconName}`"/>
-              {{ country.countryName }}
-            </li>
-          </ul>
+          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <p class="weCreateItProject__paragraph">HealthTech <br> IoTs</p>
+          </div>
+          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <p class="weCreateItProject__paragraph">E-Commerce <br> AdTech</p>
+          </div>
+          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <p class="weCreateItProject__paragraph">E-Learning <br> FinTech</p>
+          </div>
+          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <p class="weCreateItProject__paragraph">Serverless <br> BYOD</p>
+          </div>
+          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+            <p class="weCreateItProject__paragraph">Blockchain <br> FoodTech</p>
+          </div>
         </div>
+        <ul class="weCreateItProject__flags-list">
+          <li v-for="(flag, i) in flags" :key="i" class="weCreateItProject__flag-item"
+              :class="`weCreateItProject__${flag}`"></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -35,55 +40,29 @@ export default {
   name: 'WeCreateItProjectFor',
   data() {
     return {
-      countries: [
-        {
-          iconName: 'united-states',
-          countryName: 'USA'
-        },
-        {
-          iconName: 'australia',
-          countryName: 'Australia'
-        },
-        {
-          iconName: 'united-kingdom',
-          countryName: 'UK'
-        },
-        {
-          iconName: 'poland',
-          countryName: 'Poland'
-        },
-        {
-          iconName: 'austria',
-          countryName: 'Austria'
-        },
-        {
-          iconName: 'france',
-          countryName: 'France'
-        },
-        {
-          iconName: 'switzerland',
-          countryName: 'Switzerland'
-        },
-        {
-          iconName: 'belarus',
-          countryName: 'Belarus'
-        },
-        {
-          iconName: 'vietnam',
-          countryName: 'Vietnam'
-        },
-        {
-          iconName: 'kazakhstan',
-          countryName: 'Kazakhstan'
-        },
-        {
-          iconName: 'russia',
-          countryName: 'Russia'
-        },
-        {
-          iconName: 'singapore',
-          countryName: 'Singapore'
-        }
+      flags: [ // if will be added or removed flag, need to change css grid, on line 94 and 178
+        'flag-usa',
+        'flag-australia',
+        'flag-vietnam',
+        'flag-france',
+        'flag-uk',
+        'flag-indonesia',
+        'flag-germany',
+        'flag-austria',
+        'flag-switzerland',
+        'flag-canada',
+        'flag-latvia',
+        'flag-kazakhstan',
+        'flag-sweden',
+        'flag-finland',
+        'flag-united-arab-emirates',
+        'flag-denmark',
+        'flag-japan',
+        'flag-norway',
+        'flag-portugal',
+        'flag-katar',
+        'flag-south-africa',
+        'flag-netherlands'
       ]
     };
   }
@@ -91,323 +70,253 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/vars';
+@import '../../assets/styles/vars';
+@import '../../assets/styles/_flagsIcons';
 
-  .we-create-it-project {
-    padding-top: 195px;
-    padding-bottom: 214px;
+.weCreateItProject {
+  &__content-wrapper {
+    padding: 0 45px 45px;
+    text-align: center;
+    background-color: $bgcolor--white;
+  }
 
-    &__content-wrap {
-      display: flex;
-      align-items: flex-end;
+  &__projects-type_list {
+    margin: 0 0 63px;
+  }
+
+  &__project-item {
+    padding: 0;
+  }
+
+  &__flags-list {
+    display: grid;
+    grid-template-columns: repeat(22, max-content);
+    justify-content: space-between;
+  }
+
+  &__flag-item {
+    display: block;
+    width: 32px;
+    height: 23px;
+  }
+
+  &__main-title,
+  &__paragraph {
+    color: $text-color--black-lighter;
+  }
+
+  &__main-title {
+    @include h2_title;
+    padding-top: 40px;
+    margin-bottom: 23px;
+
+    br {
+      display: none;
     }
+  }
 
-    &__main-title {
-      color: $text-color--red;
-      padding-bottom: 80px;
+  &__paragraph {
+    font-family: 'Poppins-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    line-height: 34px;
+  }
+
+  &__flag-usa {
+    @include flag-usa;
+  }
+
+  &__flag-australia {
+    @include flag-australia;
+  }
+
+  &__flag-vietnam {
+    @include flag-vietnam;
+  }
+
+  &__flag-france {
+    @include flag-france;
+  }
+
+  &__flag-uk {
+    @include flag-uk;
+  }
+
+  &__flag-indonesia {
+    @include flag-indonesia;
+  }
+
+  &__flag-germany {
+    @include flag-germany;
+  }
+
+  &__flag-austria {
+    @include flag-austria;
+  }
+
+  &__flag-switzerland {
+    @include flag-switzerland;
+  }
+
+  &__flag-canada {
+    @include flag-canada;
+  }
+
+  &__flag-latvia {
+    @include flag-latvia;
+  }
+
+  &__flag-kazakhstan {
+    @include flag-kazakhstan;
+  }
+
+  &__flag-sweden {
+    @include flag-sweden;
+  }
+
+  &__flag-finland {
+    @include flag-finland;
+  }
+
+  &__flag-united-arab-emirates {
+    @include flag-united-arab-emirates;
+  }
+
+  &__flag-denmark {
+    @include flag-denmark;
+  }
+
+  &__flag-japan {
+    @include flag-japan;
+  }
+
+  &__flag-norway {
+    @include flag-norway;
+  }
+
+  &__flag-portugal {
+    @include flag-portugal;
+  }
+
+  &__flag-katar {
+    @include flag-katar;
+  }
+
+  &__flag-south-africa {
+    @include flag-south-africa;
+  }
+
+  &__flag-netherlands {
+    @include flag-netherlands;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1270px) {
+  .weCreateItProject__paragraph {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .weCreateItProject {
+    &__content-wrapper {
+      padding: 0 33px 45px;
     }
 
     &__projects-type_list {
-      padding-right: 60px;
-      width: 49%;
+      margin: 0 0 40px;
     }
 
-    &__logo-country {
-      height: 20px;
-      width: 28px;
-      background-repeat: no-repeat;
-      margin: 0 10px 0 0;
-      background-size: contain;
+    &__flag-item {
+      width: 21px;
+      height: 15px;
+    }
+  }
+}
 
-      &--united-kingdom {
-        background-image: url(../../assets/img/Flags/united-kingdom.svg);
-      }
+@media screen and (max-width: 1024px) {
+  .weCreateItProject__main-title br {
+    display: block;
+  }
+}
 
-      &--united-states {
-        background-image: url(../../assets/img/Flags/united-states.svg);
-      }
-
-      &--austria {
-        background-image: url(../../assets/img/Flags/austria.svg);
-      }
-
-      &--poland {
-        background-image: url(../../assets/img/Flags/poland.svg);
-      }
-
-      &--russia {
-        background-image: url(../../assets/img/Flags/russia.svg);
-      }
-
-      &--vietnam {
-        background-image: url(../../assets/img/Flags/vietnam.svg);
-      }
-
-      &--switzerland {
-        background-image: url(../../assets/img/Flags/switzerland.svg);
-      }
-
-      &--australia {
-        background-image: url(../../assets/img/Flags/australia.svg);
-      }
-
-      &--belarus {
-        background-image: url(../../assets/img/Flags/belarus.svg);
-      }
-
-      &--france {
-        background-image: url(../../assets/img/Flags/france.svg);
-      }
-
-      &--singapore {
-        background-image: url(../../assets/img/Flags/singapore.svg);
-      }
-
-      &--kazakhstan {
-        background-image: url(../../assets/img/Flags/kazakhstan.svg);
-      }
+@media screen and (max-width: 834px) {
+  .weCreateItProject {
+    &__paragraph {
+      font-size: 14px;
+      line-height: 25px;
     }
 
-    &__country-list_wrap {
-      max-width: 770px;
-
-      button {
-        width: 100%;
-        margin-bottom: 15px;
-      }
-    }
-
-    &__country-list_title {
-      padding-bottom: 30px;
-      color: $text-color--grey;
-      font-size: 50px;
-      letter-spacing: -2px;
-      max-width: 547px;
+    &__main-title {
+      padding-top: 33px;
+      margin-bottom: 3px;
 
       br {
         display: none;
       }
     }
+  }
+}
 
-    &__country-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 83px;
-      grid-row-gap: 15px;
-    }
+@media only screen and (max-width: 720px) {
+  .weCreateItProject__flags-list {
+    grid-template-columns: repeat(11, max-content);
+    grid-row-gap: 19px;
+  }
+}
 
-    &__country-item {
-      display: flex;
-      color: $text-color--grey;
-      font-size: 32px;
-      letter-spacing: -1px;
+@media only screen and (max-width: 606px) {
+  .weCreateItProject__main-title br {
+    display: block;
+  }
+}
 
-      img {
-        padding-right: 10px;
+@media only screen and (max-width: 576px) {
+  .weCreateItProject {
+    background-color: $bgcolor--white;
+
+    &__main-title {
+      padding-top: 34px;
+      margin-bottom: 1px;
+
+      br {
+        display: block;
       }
     }
 
-    &__project-item,
-    &__country-list_title,
-    &__country-item {
-      font-family: 'Hoves-Bold';
+    &__content-wrapper {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: left;
     }
 
-    &__country-item {
-      display: flex;
-      align-items: center;
+    &__paragraph {
+      font-size: 16px;
+      line-height: 33px;
+      letter-spacing: -0.02em;
+    }
+
+    &__flag-item {
+      width: 23px;
+      height: 19px;
+    }
+
+    &__projects-type_list {
+      margin: 0 0 27px;
     }
 
     &__project-item {
-      color: $text-color--white;
-      font-size: 70px;
-      letter-spacing: -2px;
-    }
-  }
-
-  @media only screen and (max-width: 1440px) {
-    .we-create-it-project {
-      padding-top: 135px;
-
-      &__main-title {
-        padding-bottom: 60px;
-      }
-
-      &__country-list_wrap {
-        max-width: 680px;
-      }
-
-      &__project-item {
-        font-size: 64px;
-      }
-
-      &__country-list_title {
-        padding-bottom: 25px;
-      }
-
-      &__country-item {
-        font-size: 25px;
+      &:nth-child(2n) {
+        padding-left: 26px;
       }
     }
   }
+}
 
-  @media only screen and (max-width: 1300px) {
-    .we-create-it-project {
-      padding-top: 200px;
-      padding-bottom: 195px;
-
-      &__country-list_wrap {
-        max-width: 625px;
-      }
-
-      &__country-list_title {
-        font-size: 36px;
-        padding-bottom: 13px;
-      }
-
-      &__country-list {
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 155px;
-        grid-row-gap: 8px;
-      }
-
-      &__project-item {
-        font-size: 54px;
-        padding-bottom: 13px;
-
-        &:last-child {
-          padding-bottom: 0;
-        }
-      }
-    }
+@media only screen and (max-width: 345px) {
+  .weCreateItProject__paragraph {
+    font-size: 14px;
   }
-
-  @media only screen and (max-width: 1024px) {
-    .we-create-it-project {
-      padding-top: 100px;
-      padding-bottom: 141px;
-
-      &__country-list_wrap {
-        button {
-          height: 44px;
-        }
-      }
-
-      &__project-item {
-        font-size: 47px;
-        padding-bottom: 8px;
-      }
-
-      &__country-list_title {
-        font-size: 34px;
-      }
-
-      &__country-list {
-        grid-column-gap: 86px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 890px) {
-    .we-create-it-project {
-      padding-top: 56px;
-
-      &__main-title {
-        font-size: 64px;
-        padding-bottom: 35px;
-        letter-spacing: -0.03em;
-      }
-
-      &__country-list_title {
-        br {
-          display: block;
-        }
-      }
-
-      &__country-list {
-        grid-column-gap: 57px;
-        grid-row-gap: 6px;
-      }
-
-      &__project-item {
-        font-size: 44px;
-        padding-bottom: 11px;
-      }
-
-      &__country-item {
-        font-size: 18px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 745px) {
-    .we-create-it-project {
-      padding-top: 73px;
-      padding-bottom: 60px;
-
-      &__content-wrap {
-        flex-direction: column;
-        justify-content: initial;
-        align-items: initial;
-      }
-
-      &__country-list_title {
-        br {
-          display: none;
-        }
-      }
-
-      &__country-list {
-        grid-column-gap: 20px;
-      }
-
-      &__projects-type_list {
-        padding-bottom: 50px;
-        width: 100%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 520px) {
-    .we-create-it-project {
-      &__country-list_title {
-        br {
-          display: block;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .we-create-it-project {
-      padding-bottom: 90px;
-
-      &__main-title {
-        font-size: 53px;
-        letter-spacing: -2px;
-      }
-
-      &__country-list_title {
-        font-size: 28px;
-      }
-
-      &__project-item {
-        font-size: 41px;
-        letter-spacing: -1px;
-      }
-
-      &__projects-type_list {
-        padding-bottom: 38px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 335px) {
-    .we-create-it-project {
-      &__project-item {
-        font-size: 40px;
-        letter-spacing: -2px;
-      }
-    }
-  }
+}
 </style>
