@@ -49,8 +49,7 @@ describe('Teams Modal', () => {
     expect(
       typeof TeamsModal.methods.getPrivacyCheckboxState && 
       typeof TeamsModal.methods.getDiscountOffersCheckboxState && 
-      typeof TeamsModal.methods.getTeamSize &&
-      typeof TeamsModal.methods.autosize
+      typeof TeamsModal.methods.getTeamSize
     ).toBe('function');
   });
 
@@ -64,20 +63,6 @@ describe('Teams Modal', () => {
       wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
     ).toEqual(true);
     expect(wrapper.vm.$data.selectedTeamSize).toEqual('Less than 5');
-  });
-
-  test('autosize function should add value in event key', () => {
-    const event = {
-      target: {
-        style: {
-          height: ''
-        },
-        scrollHeight: 100
-      }
-    };
-
-    wrapper.vm.autosize(event);
-    expect(event.target.style.height).toEqual('100px');
   });
 
   test('sendForm should add new object in $data.form', () => {

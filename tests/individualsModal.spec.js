@@ -48,8 +48,7 @@ describe('Individuals modal', () => {
   test('has a functions', () => {
     expect(
       typeof IndividualsModal.methods.getPrivacyCheckboxState && 
-      typeof IndividualsModal.methods.getDiscountOffersCheckboxState &&
-      typeof IndividualsModal.methods.autosize
+      typeof IndividualsModal.methods.getDiscountOffersCheckboxState
     ).toBe('function');
   });
 
@@ -61,20 +60,6 @@ describe('Individuals modal', () => {
       wrapper.vm.$data.agreeWithPrivacyPolicy &&
       wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
     ).toEqual(true);
-  });
-
-  test('autosize function should add value in event key', () => {
-    const event = {
-      target: {
-        style: {
-          height: ''
-        },
-        scrollHeight: 100
-      }
-    };
-
-    wrapper.vm.autosize(event);
-    expect(event.target.style.height).toEqual('100px');
   });
 
   test('sendForm should add new object in $data.form', () => {

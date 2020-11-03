@@ -48,8 +48,7 @@ describe('Order Project From Us Modal', () => {
   test('has a functions', () => {
     expect(
       typeof OrderProjectFromUsModal.methods.getPrivacyCheckboxState && 
-      typeof OrderProjectFromUsModal.methods.getDiscountOffersCheckboxState &&
-      typeof OrderProjectFromUsModal.methods.autosize
+      typeof OrderProjectFromUsModal.methods.getDiscountOffersCheckboxState
     ).toBe('function');
   });
 
@@ -63,19 +62,6 @@ describe('Order Project From Us Modal', () => {
     ).toEqual(true);
   });
 
-  test('autosize function should add value in event key', () => {
-    const event = {
-      target: {
-        style: {
-          height: ''
-        },
-        scrollHeight: 100
-      }
-    };
-
-    wrapper.vm.autosize(event);
-    expect(event.target.style.height).toEqual('100px');
-  });
   test('sendForm should add new object in $data.form', () => {
     const form = {
       'templateId': 304632,
