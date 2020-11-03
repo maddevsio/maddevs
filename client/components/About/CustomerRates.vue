@@ -16,7 +16,7 @@
           <div class="customer-rates__rates-block customer-rates__rates-block-top-row">
             <p class="customer-rates__number-item customer-rates__number-item-top-row">87%</p>
             <p class="customer-rates__description customer-rates__description-top-row">stay with us for <br
-              class="customer-rates__line-break"> more than 2 years</p>
+              class="customer-rates__line-break"> more than 2 years.</p>
           </div>
         </div>
         <div class="col-xl-4 col-md-4">
