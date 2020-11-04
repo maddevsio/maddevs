@@ -70,7 +70,8 @@ export default {
     inputId: 'individuals',
     onSubmit: false,
     subject: 'Marketing',
-    form: ''
+    form: '',
+    modalTitle: 'Mad Devs Website Forms'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -93,7 +94,8 @@ export default {
             projectDescription: this.projectDescription || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
-            subject: this.subject || ''
+            subject: this.subject || '',
+            modalTitle: this.modalTitle
           }
         };
         this.$store.dispatch('sendEmail', this.form).then(res => {

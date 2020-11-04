@@ -38,7 +38,7 @@ router.post('/send-email', (req, res) => {
             'variables': req.body.variables
           },
           'from': {
-            'name': 'Mad Devs marketing',
+            'name': req.body.variables.modalTitle,
             'email': 'marketing@maddevs.io'
           },
           'to': [{
@@ -55,7 +55,7 @@ router.post('/send-email', (req, res) => {
             'variables': req.body.variables
           },
           'from': {
-            'name': 'Mad Devs marketing',
+            'name': req.body.variables.modalTitle,
             'email': 'marketing@maddevs.io'
           },
           'to': [{
