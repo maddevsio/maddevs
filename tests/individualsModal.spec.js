@@ -74,7 +74,8 @@ describe('Individuals modal', () => {
         'subject': 'Marketing',
         'phoneNumber': '',
         'interestedExpertise': '',
-        'projectDescription': ''
+        'projectDescription': '',
+        'modalTitle': 'Mad Devs Website Forms'
       }
     };
     expect(wrapper.vm.$data.form).toEqual('');

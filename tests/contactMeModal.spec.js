@@ -73,7 +73,8 @@ describe('Contact me modal', () => {
         'fullName': '',
         'subject': 'Marketing',
         'company': '',
-        'phoneNumber': ''
+        'phoneNumber': '',
+        'modalTitle': 'Mad Devs Website Forms'
       }
     };
     expect(wrapper.vm.$data.form).toEqual(null);

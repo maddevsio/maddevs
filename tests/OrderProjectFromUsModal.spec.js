@@ -74,7 +74,8 @@ describe('Order Project From Us Modal', () => {
         'subject': 'Marketing',
         'phoneNumber': '',
         'company': '',
-        'projectDescription': ''
+        'projectDescription': '',
+        'modalTitle': 'Mad Devs Website Forms'
       }
     };
     expect(wrapper.vm.$data.form).toEqual('');

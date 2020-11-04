@@ -71,7 +71,8 @@ describe('Footer form', () => {
         'emailTo': 'team@maddevs.io',
         'fullName': null,
         'projectDescriber': '',
-        'subject': 'Marketing'
+        'subject': 'Marketing',
+        'modalTitle': 'Mad Devs Website Forms'
       }
     };
     expect(wrapper.vm.$data.form).toEqual(null);

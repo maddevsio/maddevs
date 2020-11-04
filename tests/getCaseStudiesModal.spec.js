@@ -72,7 +72,8 @@ describe('Contact me modal', () => {
         'email': '',
         'emailTo': 'team@maddevs.io',
         'fullName': '',
-        'subject': 'Marketing'
+        'subject': 'Marketing',
+        'modalTitle': 'Mad Devs Website Forms'
       }
     };
     expect(wrapper.vm.$data.form).toEqual('');

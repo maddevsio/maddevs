@@ -73,7 +73,8 @@ describe('Get your trusted it partner modal', () => {
         'fullName': '',
         'subject': 'Marketing',
         'phoneNumber': '',
-        'needAssistanceWith': ''
+        'needAssistanceWith': '',
+        'modalTitle': 'Mad Devs Website Forms'
       }
     };
     expect(wrapper.vm.$data.form).toEqual('');
