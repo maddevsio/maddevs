@@ -74,5 +74,9 @@ export default {
       background-color: transparent;
       color: $text-color--red;
     }
+
+    @media only screen and (max-width: 360px) {
+      font-size: 14px;
+    }
   }
 </style>
