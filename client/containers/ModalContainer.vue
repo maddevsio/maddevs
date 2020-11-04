@@ -48,18 +48,18 @@ export default {
   methods: {
     handleOutsideClick() {
       this.isEmailSent = false;
-      this.$store.commit('SET_DISPLAY_STATE_FOR_MODAL_WINDOW', false);
       this.enableScrollOnBody();
     },
     closeModal() {
       this.$modal.hide(this.$props.name);
-      this.$store.commit('SET_DISPLAY_STATE_FOR_MODAL_WINDOW', false);
     },
     enableScrollOnBody() {
-      const body = document.body;
-      const scrollY = body.style.top;
-      body.style.overflow = '';
-      body.style.top = '';
+      const scrollY = document.body.style.top;
+      if (window.innerWidth <= 640) {
+        document.body.style.position = '';
+      }
+      document.body.style.overflow = '';
+      document.body.style.top = '';
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
   }

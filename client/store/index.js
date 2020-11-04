@@ -1,15 +1,11 @@
 export const state = () => ({
-  contactMeFormStatus: false,
-  modalWindowIsOpen: false
+  contactMeFormStatus: false
 });
 
 export const mutations = {
   SET_STATUS_FOR_SEND_EMAIL(state, status) {
     state.contactMeFormStatus = status;
-  },
-  SET_DISPLAY_STATE_FOR_MODAL_WINDOW(state, payload) {
-    state.modalWindowIsOpen = payload;
-  } 
+  }
 };
 
 export const actions = {

@@ -56,8 +56,11 @@ export default {
       this.disableScrollOnBody();
     },
     disableScrollOnBody() {
-      document.body.style.overflow = 'hidden';
+      if (window.innerWidth <= 640) {
+        document.body.style.position = 'fixed';
+      }
       document.body.style.top = `-${this.scrollYPosition}`;
+      document.body.style.overflow = 'hidden';
     },
     handleScroll() {
       this.scrollYPosition = `${window.scrollY}px`;
