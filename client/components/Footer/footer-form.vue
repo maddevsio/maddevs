@@ -91,12 +91,13 @@ export default {
           if (res.status === 200) {
             this.isEmailSent = true;
             setTimeout(() => {
-              this.resetForm();
+              this.isEmailSent = false;
             }, 3000);
           } else {
             this.isEmailSent = false;
           }
         });
+        this.resetForm();
       }
     },
     resetForm() {
@@ -108,7 +109,6 @@ export default {
       this.projectDescriber = '';
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
-      this.isEmailSent = false;
     }
   }
 };
