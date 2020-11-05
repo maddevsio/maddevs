@@ -1,45 +1,3 @@
-// new desing global styles
-.title {
-  font-size: 62px;
-  font-family: 'Poppins-Bold', sans-serif;
-  font-weight: 700;
-  letter-spacing: -1px;
-}
-
-// Reviews dots
-.reviews .slick-dots {
-  display: flex;
-  padding-left: 0;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 0;
-
-  button {
-    width: 36px;
-    height: 10px;
-    margin-top: -5px;
-    opacity: 0;
-    background-color: transparent;
-    color: transparent;
-    border: 0;
-    cursor: pointer;
-  }
-
-  li {
-    width: 36px;
-    height: 3px;
-    border-radius: 3px;
-    background-color: rgba($bgcolor--white, 0.2);
-    margin: 10px;
-    list-style: none;
-  }
-
-  .slick-active {
-    background: $bgcolor--white;
-    outline: none;
-  }
-}
-
 .banner-container {
   width: 100%;
   height: 100%;
@@ -52,9 +10,7 @@
     padding-top: 190px;
   }
 
-  .banner-main_title,
-  .banner-main_title--white,
-  .banner-main_title--white-first {
+  .banner-main_title {
     font-family: 'Poppins-Bold', sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -129,101 +85,6 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-
-  .sec-title {
-    font-size: 32px;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .sec-title {
-    line-height: 1.2;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .sec-title {
-    font-size: 28px;
-  }
-}
-
-.motivation {
-  position: relative;
-
-  .slick-dots {
-    display: flex;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%);
-    padding-left: 0;
-    justify-content: center;
-    margin-bottom: 0;
-    z-index: 1;
-
-    button {
-      width: 36px;
-      height: 10px;
-      margin-top: -5px;
-      opacity: 0;
-      background-color: transparent;
-      color: transparent;
-      border: 0;
-      cursor: pointer;
-    }
-
-    li {
-      width: 36px;
-      height: 3px;
-      border-radius: 3px;
-      background-color: rgba($bgcolor--white, 0.2);
-      margin: 10px;
-      list-style: none;
-    }
-
-    .slick-active {
-      background: $bgcolor--white;
-      outline: none;
-    }
-  }
-}
-
-.main-title {
-  font-family: 'Poppins-Bold', sans-serif;
-  font-weight: 700;
-  font-size: 128px;
-  letter-spacing: -5px;
-  line-height: 100%;
-}
-
-.flex-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.section-title {
-  font-family: 'Poppins-Bold', sans-serif;
-  font-weight: 700;
-  font-size: 87px;
-}
-
-.form-text {
-  font-family: 'Poppins-Regular', sans-serif;
-  font-size: 40px;
-  font-weight: 500;
-}
-
-.doc-text {
-  font-family: 'Poppins-Regular', sans-serif;
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.last-character {
-  margin-left: -33px;
-}
-
 .title-md {
   font-size: 40px;
   font-family: 'Poppins-Bold', sans-serif;
@@ -238,16 +99,10 @@
   letter-spacing: -0.02em;
 }
 
-.paragraph-lg,
 .paragraph-md,
 .paragraph-sm {
   font-family: 'Poppins-Regular', sans-serif;
   letter-spacing: -0.02em;
-}
-
-.paragraph-lg {
-  font-size: 20px;
-  letter-spacing: -1px;
 }
 
 .paragraph-md {
@@ -258,29 +113,7 @@
   font-size: 14px;
 }
 
-.title-icon {
-  padding: 0 5px;
-}
-
-.icons-list {
-  display: flex;
-}
-
-.icon-item {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  letter-spacing: -0.03em;
-
-  span {
-    padding-left: 7px;
-    color: $text-color--grey;
-    font-family: 'Poppins-Regular', sans-serif;
-  }
-}
-
 // ----------- Form styles ----------- //
-
 .form {
   display: flex;
   flex-direction: column;
@@ -334,7 +167,6 @@
 }
 
 .form-checkbox-label {
-
   position: relative;
   padding-left: 30px;
   font-size: 16px;
@@ -440,47 +272,7 @@
   }
 }
 
-@media only screen and (max-width: 1560px) {
-  .section-title {
-    font-size: 77px;
-  }
-
-  .title-icon {
-    height: 77px;
-  }
-
-  .form-text {
-    font-size: 34px;
-  }
-}
-
-@media only screen and (max-width: 1390px) {
-  .section-title {
-    font-size: 72px;
-  }
-
-  .form-text {
-    font-size: 32px;
-  }
-}
-
 @media only screen and (max-width: 1280px) {
-  .main-title {
-    font-size: 100px;
-  }
-
-  .section-title {
-    font-size: 67px;
-  }
-
-  .title-icon {
-    height: 67px;
-  }
-
-  .form-text {
-    font-size: 30px;
-  }
-
   .banner-container {
     .banner-main_title,
     .banner-main_title--white,
@@ -502,40 +294,11 @@
   }
 }
 
-@media only screen and (max-width: 1180px) {
-  .section-title {
-    font-size: 62px;
-  }
-}
-
 @media only screen and (max-width: 1024px) {
-  .title {
-    font-size: 36px;
-  }
-
-  .section-title {
-    font-size: 77px;
-  }
-
-  .main-title {
-    font-size: 90px;
-  }
-
-  .button-default {
-    height: 54px;
-    font-size: 17px;
-  }
-
-  .paragraph,
-  .icon-item {
+  .paragraph {
     font-size: 19px;
   }
 
-  .paragraph-lg {
-    letter-spacing: 0.02em;
-  }
-
-  .paragraph-lg,
   .paragraph-md {
     font-size: 14px;
   }
@@ -564,28 +327,9 @@
   }
 }
 
-@media only screen and (max-width: 870px) {
-  .main-title {
-    font-size: 95px;
-  }
-
-  .form-text {
-    font-size: 28px;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .title-md {
     font-size: 28px;
-  }
-
-  .section-title {
-    font-size: 62px;
-  }
-
-  .main-title {
-    font-size: 64px;
-    letter-spacing: -0.03em;
   }
 
   .banner-container {
@@ -599,12 +343,7 @@
 }
 
 @media only screen and (max-width: 640px) {
-  .section-title {
-    font-size: 57px;
-  }
-
-  .paragraph,
-  .icon-item {
+  .paragraph {
     letter-spacing: -1px;
     font-size: 18px;
   }
@@ -631,44 +370,10 @@
 }
 
 @media only screen and (max-width: 520px) {
-  .doc-text {
-    font-size: 23px;
-  }
-
-  .form-text {
-    font-size: 24px;
-  }
-
-  .section-title {
-    font-size: 36px;
-  }
-
-  .title-icon {
-    height: 43px;
-    padding-left: 13px;
-  }
-
   .form-checkboxes {
     br {
       display: none;
     }
-  }
-
-  .button-default {
-    height: 54px;
-    font-size: 17px;
-  }
-
-  .main-title {
-    font-size: 57px;
-  }
-}
-
-@media only screen and (max-width: 430px) {
-  .main-title {
-    font-size: 50px;
-    letter-spacing: -2px;
-    line-height: 99%;
   }
 }
 
@@ -697,12 +402,6 @@
     .banner-main_title--white-first {
       font-size: 40px;
     }
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .main-title {
-    font-size: 45px;
   }
 }
 
