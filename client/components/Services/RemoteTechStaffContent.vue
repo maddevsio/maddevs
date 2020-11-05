@@ -125,7 +125,7 @@ export default {
     }
 
     &__item-sub-title {
-      width: 336px;
+      width: 350px;
       margin-bottom: 16px;
     }
     
