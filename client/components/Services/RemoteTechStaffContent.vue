@@ -10,6 +10,7 @@
         <UIItemTitle :itemTitle="title" />
         <UIItemSubTitle :itemSubTitle="subTitle" class="remoteTechStaffContent__item-sub-title"/>
         <UIParagraph :paragraph="paragraph" class="remoteTechStaffContent__paragraph" :class="`remoteTechStaffContent__${title.toLowerCase()}-paragraph`"/>
+        <div class="remoteTechStaffContent__item-icon" :class="`remoteTechStaffContent__${title.toLowerCase()}-icon`"></div>
       </div>
     </div>
     <UIButtonModalTrigger 
@@ -17,7 +18,6 @@
       :modalWindowName="modalWindowName" 
       class="remoteTechStaffContent__ui-button-modal-trigger"
     />
-    <div class="remoteTechStaffContent__item-icon" :class="`remoteTechStaffContent__${title.toLowerCase()}-icon`"></div>
   </div>
 </template>
 
@@ -118,6 +118,10 @@ export default {
     &__text-wrap {
       display: flex;
       flex-direction: column;
+    }
+
+    &__text-wrap {
+      position: relative;
     }
 
     &__item-sub-title {

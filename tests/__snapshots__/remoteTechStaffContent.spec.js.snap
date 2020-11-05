@@ -27,6 +27,10 @@ exports[`Remote tech staff content renders correctly 1`] = `
       >
         Paragraph
       </p>
+       
+      <div
+        class="remoteTechStaffContent__item-icon remoteTechStaffContent__title-icon"
+      />
     </div>
   </div>
    
@@ -37,9 +41,5 @@ exports[`Remote tech staff content renders correctly 1`] = `
   Button inner text
 
   </button>
-   
-  <div
-    class="remoteTechStaffContent__item-icon remoteTechStaffContent__title-icon"
-  />
 </div>
 `;
