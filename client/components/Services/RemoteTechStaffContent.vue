@@ -212,7 +212,7 @@ export default {
       }
 
       &__item-sub-title {
-        width: 290px;
+        width: 300px;
       }
 
       &__teams-icon {
@@ -241,11 +241,16 @@ export default {
 
     @media only screen and (max-width: 1080px) {
       &__tech-staff {
-        width: 370px;
+        width: 380px;
+      }
+
+      &__teams-icon {
+        width: 100px;
       }
 
       &__individuals-icon {
-        right: -20px;
+        width: 115px;
+        right: -10px;
       }
     }
 
