@@ -5,6 +5,7 @@
       <a href="/gdpr" target="_blank" class="footer-navbar__nav-item">GDPR Compliance Commitment</a>
       <a href="/nda" target="_blank" class="footer-navbar__nav-item">Non-Disclosure Agreement (NDA)</a>
       <a href="/privacy" target="_blank" class="footer-navbar__nav-item">Privacy Policy</a>
+      <a href="/faq" target="_blank" class="footer-navbar__nav-item">FAQ</a>
     </div>
   </div>
 </template>
