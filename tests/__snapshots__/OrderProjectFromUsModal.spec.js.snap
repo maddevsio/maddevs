@@ -15,11 +15,21 @@ exports[`Order Project From Us Modal renders correctly 1`] = `
     />
   </button>
    
-  <perfect-scrollbar-stub
-    class="modal_scrollbar custom-scrollbar"
-    options="[object Object]"
+  <div
+    class="desktop-content"
+  >
+    <perfect-scrollbar-stub
+      class="modal_scrollbar custom-scrollbar"
+      options="[object Object]"
+    >
+      <validationobserver-stub />
+    </perfect-scrollbar-stub>
+  </div>
+   
+  <div
+    class="mobile-content"
   >
     <validationobserver-stub />
-  </perfect-scrollbar-stub>
+  </div>
 </modal-stub>
 `;
