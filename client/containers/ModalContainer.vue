@@ -58,8 +58,6 @@ export default {
       // Enable body scroll in Safari for mobile devices
       if (window.innerWidth <= 640) {
         document.body.style.position = '';
-        // Rest scrollTo settings 
-        window.scrollTo(0, 0);
       }
       document.body.style.overflow = '';
       document.body.style.top = '';

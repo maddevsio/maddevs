@@ -60,7 +60,7 @@ export default {
       if (window.innerWidth <= 640) {
         document.body.style.position = 'fixed';
         // Hide iOS bottom bar in browser 
-        window.scrollTo(0, 1);
+        window.scrollTo(1, 0);
       }
       document.body.style.top = `-${this.scrollYPosition}`;
       document.body.style.overflow = 'hidden';
