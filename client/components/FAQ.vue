@@ -142,7 +142,8 @@ export default {
   }
 
   &__sec-title {
-    padding-top: 48px;
+    margin-top: -48px;
+    padding-top: 96px;
     padding-bottom: 8px;
     font-family: 'Poppins-Regular';
     font-size: 24px;
