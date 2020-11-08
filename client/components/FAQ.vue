@@ -153,7 +153,7 @@ export default {
   }
 
   &__sec-title-first {
-    padding-top: 0;
+    padding-top: 35px;
   }
 
   &__paragraph,
