@@ -3,10 +3,16 @@
     <button @click="closeModal" class="close-modal">
       <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
     </button>
-    <perfect-scrollbar class="modal_scrollbar custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
-      <slot />
-    </perfect-scrollbar>
-    <SuccessMessage :id="successModalID" v-else />
+    <div class="desktop-content">
+      <perfect-scrollbar class="modal_scrollbar custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
+        <slot />
+      </perfect-scrollbar>
+      <SuccessMessage :id="successModalID" v-else />
+    </div>
+    <div class="mobile-content">
+      <slot v-if="isEmailSent === false" />
+      <SuccessMessage :id="successModalID" v-else />
+    </div>
   </modal>
 </template>
 
@@ -121,19 +127,41 @@ export default {
     }
   }
 
+  .mobile-content {
+    display: none;
+    padding: 0 12px;
+  }
+
   @media only screen and (max-width: 640px) {
-		/deep/.modal_container {
+    /deep/.modal_container {
       width: 100% !important;
       height: 100% !important;
-      padding: 40px 0 0 12px;
-
-      .form {
-        padding-right: 15px;
-      }
+      padding-top: 53px;
+      overflow: auto;
     }
 
-    .modal_scrollbar {
-      padding: 0;
+    .desktop-content {
+      display: none;
+    }
+
+    .mobile-content {
+      display: block;
     }
 	}
+
+  // @media only screen and (max-width: 640px) {
+	// 	/deep/.modal_container {
+  //     width: 100% !important;
+  //     height: 100% !important;
+  //     padding: 40px 0 0 12px;
+
+  //     .form {
+  //       padding-right: 15px;
+  //     }
+  //   }
+
+  //   .modal_scrollbar {
+  //     padding: 0;
+  //   }
+	// }
 </style>

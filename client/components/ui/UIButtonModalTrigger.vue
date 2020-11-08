@@ -59,8 +59,6 @@ export default {
       // Disable body scroll in Safari for mobile devices
       if (window.innerWidth <= 640) {
         document.body.style.position = 'fixed';
-        // Hide iOS bottom bar in browser 
-        window.scrollTo(1, 0);
       }
       document.body.style.top = `-${this.scrollYPosition}`;
       document.body.style.overflow = 'hidden';
