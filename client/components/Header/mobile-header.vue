@@ -118,7 +118,7 @@ export default {
       document.body.classList.add('scrollDisabled');
     },
     getIOSBottomBarHeight() {
-      return window.innerHeight - window.outerHeight;
+      return Math.abs(window.innerHeight - window.outerHeight);
     }
   }
 };
