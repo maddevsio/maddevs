@@ -143,7 +143,11 @@ export default {
   }
 
   &__sec-title-first {
-    padding-top: 35px;
+    padding-top: 48px;
+
+    @media screen and (max-width: 834px) {
+      padding-top: 58px;
+    }
   }
 
   &__paragraph,
