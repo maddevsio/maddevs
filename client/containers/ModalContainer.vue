@@ -141,7 +141,7 @@ export default {
   @media not all and (min-resolution:.001dpcm) and (max-resolution: 640px)
   { @supports (-webkit-appearance: none) {
 
-    /deep/.safari_only { 
+    .safari_only { 
       .form {
         padding-bottom: 75px;
       }
