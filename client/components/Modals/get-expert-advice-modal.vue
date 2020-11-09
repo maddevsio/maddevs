@@ -1,7 +1,7 @@
 <template>
   <ModalContainer :name="modalName" successModalID="get-expert-advice-modal">
     <ValidationObserver v-slot="{ invalid }">
-      <div class="form technology-stack modal-safari-only"> 
+      <div class="form technology-stack"> 
         <div class="fields-list">
           <ValidationProvider class="modal-field-item field-item" rules="required|max:50" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Full Name</p>

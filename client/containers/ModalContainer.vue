@@ -3,7 +3,7 @@
     <button @click="closeModal" class="close-modal">
       <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
     </button>
-    <perfect-scrollbar class="modal_scrollbar custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
+    <perfect-scrollbar class="modal_scrollbar modal-safari-only custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
       <slot />
     </perfect-scrollbar>
     <SuccessMessage :id="successModalID" v-else />
@@ -134,11 +134,6 @@ export default {
 
     .modal_scrollbar {
       padding: 0;
-    }
-
-    // only for IOS
-    _::-webkit-full-page-media, _:future, :root .modal-safari-only {
-			padding-bottom: var(--modal-ios-bar-size) !important;
     }
 	}
 </style>
