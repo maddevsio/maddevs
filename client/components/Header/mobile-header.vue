@@ -390,7 +390,7 @@ export default {
 
 			&__small-phone-content {
 				display: block;
-				margin-bottom: 53px;
+				margin-bottom: 25px;
 			}
 
 			/deep/ .footer-contacts__head-content {
