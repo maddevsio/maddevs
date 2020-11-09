@@ -7,7 +7,7 @@ exports[`Get your trusted it partner modal renders correctly 1`] = `
   name="get-your-trusted-it-partner"
 >
   <button
-    class="close-modal"
+    class="close-modal safari_only"
   >
     <img
       alt="Close modal"
@@ -15,21 +15,11 @@ exports[`Get your trusted it partner modal renders correctly 1`] = `
     />
   </button>
    
-  <div
-    class="desktop-content"
-  >
-    <perfect-scrollbar-stub
-      class="modal_scrollbar custom-scrollbar"
-      options="[object Object]"
-    >
-      <validationobserver-stub />
-    </perfect-scrollbar-stub>
-  </div>
-   
-  <div
-    class="mobile-content"
+  <perfect-scrollbar-stub
+    class="modal_scrollbar custom-scrollbar"
+    options="[object Object]"
   >
     <validationobserver-stub />
-  </div>
+  </perfect-scrollbar-stub>
 </modal-stub>
 `;
