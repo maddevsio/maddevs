@@ -11,11 +11,11 @@ exports[`FAQ renders correctly 1`] = `
     <div
       class="faq__header"
     >
-      <h3
+      <h2
         class="faq__title"
       >
         Frequently Asked Questions
-      </h3>
+      </h2>
        
       <div
         class="faq__image"
@@ -25,12 +25,12 @@ exports[`FAQ renders correctly 1`] = `
     <div
       class="faq__content"
     >
-      <h5
+      <h3
         class="faq__sec-title faq__sec-title-first"
         id="how-many-people-work-at-your-company?"
       >
         How many people work at your company?
-      </h5>
+      </h3>
        
       <p
         class="faq__paragraph"
@@ -50,12 +50,12 @@ exports[`FAQ renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h3
         class="faq__sec-title"
         id="what-time-zone-does-your-team-operate-in?"
       >
         What time zone does your team operate in?
-      </h5>
+      </h3>
        
       <p
         class="faq__paragraph faq__break-paragraph"
@@ -79,12 +79,12 @@ exports[`FAQ renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h3
         class="faq__sec-title"
         id="what-types-of-projects-you-do-not-work-on?"
       >
         What types of projects you do NOT work on?
-      </h5>
+      </h3>
        
       <p
         class="faq__paragraph faq__break-paragraph"
@@ -106,12 +106,12 @@ exports[`FAQ renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h3
         class="faq__sec-title"
         id="where-can-i-find-the-project-portfolio-of-your-company?"
       >
         Where can I find the project portfolio of your company?
-      </h5>
+      </h3>
        
       <p
         class="faq__paragraph faq__break-paragraph"
@@ -155,7 +155,7 @@ exports[`FAQ renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h3
         class="faq__sec-title"
         id="what-details-do-you-need-from-me-to-discuss-my-project-&-start-work?"
       >
@@ -166,7 +166,7 @@ exports[`FAQ renders correctly 1`] = `
           project & start
         </span>
          work?
-      </h5>
+      </h3>
        
       <p
         class="faq__paragraph faq__break-paragraph"
@@ -193,12 +193,12 @@ exports[`FAQ renders correctly 1`] = `
         </span>
       </p>
        
-      <h5
+      <h3
         class="faq__sec-title"
         id="how-much-does-software-development-cost?-how-do-you-charge?"
       >
         How much does software development cost? How do you charge?
-      </h5>
+      </h3>
        
       <p
         class="faq__paragraph faq__break-paragraph"
@@ -220,12 +220,12 @@ exports[`FAQ renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h3
         class="faq__sec-title"
         id="how-can-i-control-my-project-budget?"
       >
         How can I control my project budget?
-      </h5>
+      </h3>
        
       <p
         class="faq__paragraph faq__break-paragraph"
@@ -235,12 +235,12 @@ exports[`FAQ renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h3
         class="faq__sec-title"
         id="how-do-you-ensure-security-for-confidential-information?-do-you-work-under-nda?"
       >
         How do you ensure security for confidential information? Do you work under NDA?
-      </h5>
+      </h3>
        
       <p
         class="faq__paragraph faq__break-paragraph"
@@ -265,12 +265,12 @@ exports[`FAQ renders correctly 1`] = `
         </a>
       </p>
        
-      <h5
+      <h3
         class="faq__sec-title"
         id="how-do-you-mitigate-the-risks-related-to-intellectual-property-ownership?"
       >
         How do you mitigate the risks related to intellectual property ownership?
-      </h5>
+      </h3>
        
       <p
         class="faq__paragraph faq__break-paragraph"
@@ -296,12 +296,12 @@ exports[`FAQ renders correctly 1`] = `
       
       </p>
        
-      <h5
+      <h3
         class="faq__sec-title"
         id="what-if-my-question-is-not-answered-on-this-page?"
       >
         What if my question is not answered on this page?
-      </h5>
+      </h3>
        
       <p
         class="faq__paragraph faq__break-paragraph"
