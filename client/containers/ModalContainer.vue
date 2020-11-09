@@ -142,7 +142,7 @@ export default {
   { @supports (-webkit-appearance: none) {
 
     .safari_only { 
-      .form {
+      /deep/.form {
         padding-bottom: 85px;
       }
     }
