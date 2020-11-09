@@ -106,6 +106,7 @@ export default {
       this.mobileHeaderIsOpen = !this.mobileHeaderIsOpen;
       if(this.mobileHeaderIsOpen) {
         this.disableScrollOnBody();
+        document.documentElement.style.setProperty('--mobile-header-ios-bar-size', `${this.getIOSBottomBarHeight()}px`);
       } else {
         this.enableScrollOnBody();
       }
@@ -115,6 +116,9 @@ export default {
     },
     disableScrollOnBody() {
       document.body.classList.add('scrollDisabled');
+    },
+    getIOSBottomBarHeight() {
+      return window.innerHeight - window.outerHeight;
     }
   }
 };
@@ -125,6 +129,10 @@ export default {
 	@import '../../assets/styles/_messengerIcons';
 	@import '../../assets/styles/_flagsIcons';
 	@import '../../assets/styles/_headerIcons';
+
+	:root {
+    --mobile-header-ios-bar-size: 0;
+  }
 
 	.mobile-header {
 		width: 100%;
@@ -444,7 +452,7 @@ export default {
 	// only for IOS
 	@media screen and (max-width: 991px) {
     _::-webkit-full-page-media, _:future, :root .safari_only {
-			height: calc(100vh - 16%) !important;
+			height: calc(100vh - var(--mobile-header-ios-bar-size)) !important;
     }
 	}
 </style>

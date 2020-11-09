@@ -138,7 +138,7 @@ export default {
 
     // only for IOS
     _::-webkit-full-page-media, _:future, :root .safari_only {
-			max-height: calc(100vh - 210px) !important;
+			max-height: calc(100vh - var(--modal-ios-bar-size)) !important;
     }
 	}
 </style>
