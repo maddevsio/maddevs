@@ -137,6 +137,7 @@ export default {
     }
 	}
 
+  // IOS only styles
   @media not all and (min-resolution:.001dpcm) and (max-resolution: 640px)
   { @supports (-webkit-appearance: none) {
 
