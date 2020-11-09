@@ -426,6 +426,11 @@
   animation: waves .5s linear;
 }
 
+// Drift button 
+.drift-conductor-item {
+  z-index: 1;
+}
+
 @keyframes waves {
   from {
     transform: scale(1);
