@@ -442,12 +442,14 @@ export default {
 	}
 
 	// IOS only styles
-  @media not all and (min-resolution:.001dpcm)
-  { @supports (-webkit-appearance: none) {
-
-    .safari_only { 
-			height: calc(100vh - 150px);
-    }
-  }}
+	@media only screen and (max-width: 991px) {
+		@media not all and (min-resolution:.001dpcm)
+		{ @supports (-webkit-appearance: none) {
+	
+			.safari_only { 
+				height: calc(100vh - 150px) !important;
+			}
+		}}
+	}
 </style>
 
