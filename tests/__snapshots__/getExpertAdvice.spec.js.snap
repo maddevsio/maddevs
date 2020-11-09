@@ -16,7 +16,7 @@ exports[`Technology stack modal renders correctly 1`] = `
   </button>
    
   <perfect-scrollbar-stub
-    class="modal_scrollbar custom-scrollbar safari_only"
+    class="modal_scrollbar custom-scrollbar"
     options="[object Object]"
   >
     <validationobserver-stub />
