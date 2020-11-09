@@ -138,7 +138,7 @@ export default {
 	}
 
   // IOS only styles
-  @media not all and (min-resolution:.001dpcm) and (max-resolution: 640px)
+  @media not all and (min-resolution:.001dpcm)
   { @supports (-webkit-appearance: none) {
 
     .safari_only { 
