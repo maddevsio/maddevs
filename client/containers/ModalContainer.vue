@@ -135,5 +135,10 @@ export default {
     .modal_scrollbar {
       padding: 0;
     }
+
+    // only for IOS
+    _::-webkit-full-page-media, _:future, :root .modal-safari-only {
+      max-height: calc(100vh - 185px) !important;
+    }
 	}
 </style>

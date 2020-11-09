@@ -347,11 +347,6 @@
     letter-spacing: -1px;
     font-size: 18px;
   }
-
-  // only for IOS
-  _::-webkit-full-page-media, _:future, :root .modal-safari-only {
-    max-height: calc(100vh - var(--modal-ios-bar-size)) !important;
-  }
 }
 
 @media only screen and (max-width: 610px) {
