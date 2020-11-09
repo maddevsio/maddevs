@@ -2,26 +2,26 @@
   <section id="faq" class="faq">
     <div class="container">
       <div class="faq__header">
-        <h3 class="faq__title">Frequently Asked Questions</h3>
+        <h2 class="faq__title">Frequently Asked Questions</h2>
         <div class="faq__image"></div>
       </div>
       <div class="faq__content">
-        <h5 id="how-many-people-work-at-your-company?" class="faq__sec-title faq__sec-title-first">How many people work at your company?</h5>
+        <h3 id="how-many-people-work-at-your-company?" class="faq__sec-title faq__sec-title-first">How many people work at your company?</h3>
         <p class="faq__paragraph">
           <span class="faq__nowrap">Mad Devs</span> currently is a 120+ person strong team of rock stars who are on a mission to deliver value to <span class="faq__nowrap">long-term</span> projects. 
         </p>
-        <h5 id="what-time-zone-does-your-team-operate-in?" class="faq__sec-title">What time zone does your team operate in?</h5>
+        <h3 id="what-time-zone-does-your-team-operate-in?" class="faq__sec-title">What time zone does your team operate in?</h3>
         <p class="faq__paragraph faq__break-paragraph">
           We generally work in +6 and +3 UTC from 9 AM to 6 PM, but we have early birds and night owls allowing us to adjust to customers from the US, the UK, South East Asia, and Oceania.
         </p>
         <p class="faq__paragraph">
           Our development workflows are devised around asynchronous communication, leveraging automatic reporting drilled down to every task instance or team member. Daily standups, work logs, and <span class="faq__nowrap">all-hands</span> meetings or video calls keep everybody on the same page.
         </p>
-        <h5 id="what-types-of-projects-you-do-not-work-on?" class="faq__sec-title">What types of projects you do NOT work on?</h5>
+        <h3 id="what-types-of-projects-you-do-not-work-on?" class="faq__sec-title">What types of projects you do NOT work on?</h3>
         <p class="faq__paragraph faq__break-paragraph">
           Mad Devs workflow is dedicated to the creation and maintenance of <span class="faq__nowrap">high-quality</span>, scalable systems intended for heavy workloads. We can’t help with requests for landing pages and <span class="faq__nowrap">ultra-fast</span> MVPs. 
         </p>
-        <h5 id="where-can-i-find-the-project-portfolio-of-your-company?" class="faq__sec-title">Where can I find the project portfolio of your company?</h5>
+        <h3 id="where-can-i-find-the-project-portfolio-of-your-company?" class="faq__sec-title">Where can I find the project portfolio of your company?</h3>
         <p class="faq__paragraph faq__break-paragraph">
           Since 2016, our team has delivered to customers 50+ projects in FinTech, Transportation, HealthTech, AdTech, EdTech, and <span class="faq__nowrap">E-commerce</span> industries.
         </p>
@@ -31,23 +31,23 @@
         <p class="faq__paragraph faq__paragraph--italic faq__break-paragraph">
           We cannot disclose details for ~40% of our customers as we need to comply with the terms of NDAs.
         </p>
-        <h5 id="what-details-do-you-need-from-me-to-discuss-my-project-&-start-work?" class="faq__sec-title">What details do you need from me to discuss my <span class="faq__nowrap">project & start</span> work?</h5>
+        <h3 id="what-details-do-you-need-from-me-to-discuss-my-project-&-start-work?" class="faq__sec-title">What details do you need from me to discuss my <span class="faq__nowrap">project & start</span> work?</h3>
         <p class="faq__paragraph faq__break-paragraph">
           Simply submit your project idea to us via our contact form. We will contact you to clarify further requirements and prepare the project time & cost estimates. For more details, you can get in touch with our delivery manager <span class="faq__nowrap">Tamara Mun:</span> <a class="faq__link" href="mailto:tamaramun@maddevs.io">tamaramun@maddevs.io</a>, or schedule a meeting at <span class="faq__nowrap">calendly/mun_tamara.</span>
         </p>
-        <h5 id="how-much-does-software-development-cost?-how-do-you-charge?" class="faq__sec-title">How much does software development cost? How do you charge?</h5>
+        <h3 id="how-much-does-software-development-cost?-how-do-you-charge?" class="faq__sec-title">How much does software development cost? How do you charge?</h3>
         <p class="faq__paragraph faq__break-paragraph">
           Our pricing has always been transparent. We charge our customers on a <span class="faq__nowrap">‘Time & Material’</span> basis which makes the costs predictable as there are known rates for each specialist, from developer to PM. This ensures great control over budget and provides the required level of flexibility as the projects’ scope can be easily corrected on the go. Thus, in the end, together we deliver a product that truly solves <span class="faq__nowrap">end-customers’</span> needs.
         </p>
-        <h5 id="how-can-i-control-my-project-budget?" class="faq__sec-title">How can I control my project budget?</h5>
+        <h3 id="how-can-i-control-my-project-budget?" class="faq__sec-title">How can I control my project budget?</h3>
         <p class="faq__paragraph faq__break-paragraph">
           You will have full control over your budget with our detailed monthly invoice. Weekly and daily reports cover the team’s contribution to your project in addition to individual performance reports that tell you what each of the specialists you hired has accomplished. Thus, with all information in your hands, the right adjustments in priorities of cost control factors can be implemented.
         </p>
-        <h5 id="how-do-you-ensure-security-for-confidential-information?-do-you-work-under-nda?" class="faq__sec-title">How do you ensure security for confidential information? Do you work under NDA?</h5>
+        <h3 id="how-do-you-ensure-security-for-confidential-information?-do-you-work-under-nda?" class="faq__sec-title">How do you ensure security for confidential information? Do you work under NDA?</h3>
         <p class="faq__paragraph faq__break-paragraph">
           <span class="faq__nowrap">Mad Devs</span> always works under the NDA of our own, however, if you have a <span class="faq__nowrap">non-disclosure</span> agreement on your side, we can consider your contract, too. Please read more about work under NDA in the corresponding section of our website: <a class="faq__link" href="https://maddevs.io/nda/">https://maddevs.io/nda/</a>
         </p>
-        <h5 id="how-do-you-mitigate-the-risks-related-to-intellectual-property-ownership?" class="faq__sec-title">How do you mitigate the risks related to intellectual property ownership?</h5>
+        <h3 id="how-do-you-mitigate-the-risks-related-to-intellectual-property-ownership?" class="faq__sec-title">How do you mitigate the risks related to intellectual property ownership?</h3>
         <p class="faq__paragraph faq__break-paragraph">
           Intellectual Property is wholly owned by you and your company.
         </p>
@@ -57,7 +57,7 @@
         <p class="faq__paragraph faq__break-paragraph">
           You have these accesses from the very beginning of the project, but it is important to remember that according to the contract you become a full owner only after paying for all the hours worked by the team.
         </p>
-        <h5 id="what-if-my-question-is-not-answered-on-this-page?" class="faq__sec-title">What if my question is not answered on this page?</h5>
+        <h3 id="what-if-my-question-is-not-answered-on-this-page?" class="faq__sec-title">What if my question is not answered on this page?</h3>
         <p class="faq__paragraph faq__break-paragraph">
           Please don’t hesitate to contact us directly with any questions you may have. You have a number of options to use:
         </p>
