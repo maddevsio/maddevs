@@ -1,6 +1,6 @@
 <template>
-  <modal :classes="['modal_container']" height="auto" :name="$props.name" @closed="handleOutsideClick">
-    <button @click="closeModal" class="close-modal safari_only">
+  <modal :classes="['modal_container', 'safari_only']" height="auto" :name="$props.name" @closed="handleOutsideClick">
+    <button @click="closeModal" class="close-modal">
       <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
     </button>
     <perfect-scrollbar class="modal_scrollbar custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
@@ -137,11 +137,13 @@ export default {
     }
 	}
 
-  @media not all and (min-resolution:.001dpcm)
+  @media not all and (min-resolution:.001dpcm) and (max-resolution: 640px)
   { @supports (-webkit-appearance: none) {
 
-    .safari_only { 
-      display: none;
+    /deep/.safari_only { 
+      .form {
+        padding-bottom: 75px;
+      }
     }
   }}
 </style>
