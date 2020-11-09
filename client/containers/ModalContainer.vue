@@ -1,18 +1,12 @@
 <template>
   <modal :classes="['modal_container']" height="auto" :name="$props.name" @closed="handleOutsideClick">
-    <button @click="closeModal" class="close-modal">
+    <button @click="closeModal" class="close-modal safari_only">
       <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
     </button>
-    <div class="desktop-content">
-      <perfect-scrollbar class="modal_scrollbar custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
-        <slot />
-      </perfect-scrollbar>
-      <SuccessMessage :id="successModalID" v-else />
-    </div>
-    <div class="mobile-content">
-      <slot v-if="isEmailSent === false" />
-      <SuccessMessage :id="successModalID" v-else />
-    </div>
+    <perfect-scrollbar class="modal_scrollbar custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
+      <slot />
+    </perfect-scrollbar>
+    <SuccessMessage :id="successModalID" v-else />
   </modal>
 </template>
 
@@ -127,41 +121,27 @@ export default {
     }
   }
 
-  .mobile-content {
-    display: none;
-    padding: 0 12px;
-  }
-
   @media only screen and (max-width: 640px) {
-    /deep/.modal_container {
+		/deep/.modal_container {
       width: 100% !important;
       height: 100% !important;
-      padding-top: 53px;
-      overflow: auto;
+      padding: 40px 0 0 12px;
+
+      .form {
+        padding-right: 15px;
+      }
     }
 
-    .desktop-content {
-      display: none;
-    }
-
-    .mobile-content {
-      display: block;
+    .modal_scrollbar {
+      padding: 0;
     }
 	}
 
-  // @media only screen and (max-width: 640px) {
-	// 	/deep/.modal_container {
-  //     width: 100% !important;
-  //     height: 100% !important;
-  //     padding: 40px 0 0 12px;
+  @media not all and (min-resolution:.001dpcm)
+  { @supports (-webkit-appearance: none) {
 
-  //     .form {
-  //       padding-right: 15px;
-  //     }
-  //   }
-
-  //   .modal_scrollbar {
-  //     padding: 0;
-  //   }
-	// }
+    .safari_only { 
+      display: none;
+    }
+  }}
 </style>
