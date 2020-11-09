@@ -143,7 +143,7 @@ export default {
 
     .safari_only { 
       .form {
-        padding-bottom: 75px;
+        padding-bottom: 85px;
       }
     }
   }}
