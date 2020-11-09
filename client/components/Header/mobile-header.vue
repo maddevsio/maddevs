@@ -8,7 +8,7 @@
 				<button class="mobile-header__toogle-btn" @click="toggleMobileHeader()" :class="mobileHeaderIsOpen ? 'mobile-header__close' : 'mobile-header__hamburger'"></button>
 			</div>
 		</div>
-		<div class="mobile-header__scrollbar container">
+		<div class="mobile-header__scrollbar safari_only container">
 			<div class="mobile-header__content-wrap" v-show="mobileHeaderIsOpen">
 				<div class="mobile-header__nav-wrap">
 					<nav class="mobile-header__header-routes_links">
@@ -440,5 +440,14 @@ export default {
 			}
 		}
 	}
+
+	// IOS only styles
+  @media not all and (min-resolution:.001dpcm)
+  { @supports (-webkit-appearance: none) {
+
+    .safari_only { 
+			height: calc(100vh - 150px);
+    }
+  }}
 </style>
 
