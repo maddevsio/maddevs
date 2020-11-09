@@ -2,7 +2,7 @@
 
 exports[`Get your trusted it partner modal renders correctly 1`] = `
 <modal-stub
-  classes="modal_container,safari_only"
+  classes="modal_container"
   height="auto"
   name="get-your-trusted-it-partner"
 >
@@ -16,7 +16,7 @@ exports[`Get your trusted it partner modal renders correctly 1`] = `
   </button>
    
   <perfect-scrollbar-stub
-    class="modal_scrollbar custom-scrollbar"
+    class="modal_scrollbar custom-scrollbar safari_only"
     options="[object Object]"
   >
     <validationobserver-stub />
