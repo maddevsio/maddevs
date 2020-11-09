@@ -428,7 +428,7 @@
 
 // Drift button 
 .drift-conductor-item {
-  z-index: 1;
+  z-index: 1 !important;
 }
 
 @keyframes waves {
