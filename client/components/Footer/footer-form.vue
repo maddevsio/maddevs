@@ -28,6 +28,7 @@
         :disabled="invalid || !agreeWithPrivacyPolicy"
         @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
         type="button"
+        ref="submitButton"
       />
     </ValidationObserver>
     <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
@@ -73,6 +74,7 @@ export default {
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
         this.onSubmit = true;
+        this.setStateForElements('Waiting...');
         this.form = {
           templateId: 305480, // Required
           variables: {
@@ -90,6 +92,8 @@ export default {
           this.onSubmit = false;
           if (res.status === 200) {
             this.isEmailSent = true;
+            this.setStateForElements('Order a project now');
+            this.resetForm();
             setTimeout(() => {
               this.isEmailSent = false;
             }, 3000);
@@ -97,8 +101,11 @@ export default {
             this.isEmailSent = false;
           }
         });
-        this.resetForm();
       }
+    },
+    setStateForElements(buttonText) {
+      this.$refs.submitButton.$el.innerText = buttonText;
+      this.$refs.form.$el.classList.toggle('freeze');
     },
     resetForm() {
       this.$refs.form.reset();
@@ -204,6 +211,11 @@ export default {
       line-height: 24px;
       letter-spacing: -0.02em;
     }
+  }
+
+  .freeze {
+    pointer-events: none;
+    user-select: none;
   }
 
   @media only screen and (max-width: 1320px) {
