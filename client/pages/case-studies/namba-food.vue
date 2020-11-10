@@ -217,3 +217,7 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+@import "../../assets/styles/cases/base";
+</style>
