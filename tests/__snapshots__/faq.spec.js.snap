@@ -58,7 +58,7 @@ exports[`FAQ renders correctly 1`] = `
       </h3>
        
       <p
-        class="faq__paragraph faq__break-paragraph"
+        class="faq__paragraph"
       >
         
         We generally work in +6 and +3 UTC from 9 AM to 6 PM, but we have early birds and night owls allowing us to adjust to customers from the US, the UK, South East Asia, and Oceania.
@@ -66,7 +66,7 @@ exports[`FAQ renders correctly 1`] = `
       </p>
        
       <p
-        class="faq__paragraph"
+        class="faq__paragraph faq__paragraph-margin"
       >
         
         Our development workflows are devised around asynchronous communication, leveraging automatic reporting drilled down to every task instance or team member. Daily standups, work logs, and 
@@ -87,7 +87,7 @@ exports[`FAQ renders correctly 1`] = `
       </h3>
        
       <p
-        class="faq__paragraph faq__break-paragraph"
+        class="faq__paragraph"
       >
         
         Mad Devs workflow is dedicated to the creation and maintenance of 
@@ -114,7 +114,7 @@ exports[`FAQ renders correctly 1`] = `
       </h3>
        
       <p
-        class="faq__paragraph faq__break-paragraph"
+        class="faq__paragraph"
       >
         
         Since 2016, our team has delivered to customers 50+ projects in FinTech, Transportation, HealthTech, AdTech, EdTech, and 
@@ -128,7 +128,7 @@ exports[`FAQ renders correctly 1`] = `
       </p>
        
       <p
-        class="faq__paragraph faq__break-paragraph"
+        class="faq__paragraph faq__paragraph-margin"
       >
         
         The 
@@ -148,7 +148,7 @@ exports[`FAQ renders correctly 1`] = `
       </p>
        
       <p
-        class="faq__paragraph faq__paragraph--italic faq__break-paragraph"
+        class="faq__paragraph faq__paragraph--italic faq__paragraph-margin"
       >
         
         We cannot disclose details for ~40% of our customers as we need to comply with the terms of NDAs.
@@ -169,7 +169,7 @@ exports[`FAQ renders correctly 1`] = `
       </h3>
        
       <p
-        class="faq__paragraph faq__break-paragraph"
+        class="faq__paragraph"
       >
         
         Simply submit your project idea to us via our contact form. We will contact you to clarify further requirements and prepare the project time & cost estimates. For more details, you can get in touch with our delivery manager 
@@ -186,11 +186,16 @@ exports[`FAQ renders correctly 1`] = `
           tamaramun@maddevs.io
         </a>
         , or schedule a meeting at 
-        <span
-          class="faq__nowrap"
+        <a
+          class="faq__link"
+          href="https://calendly.com/tamaramun"
         >
-          calendly/mun_tamara.
-        </span>
+          <span
+            class="faq__nowrap"
+          >
+            calendly/mun_tamara.
+          </span>
+        </a>
       </p>
        
       <h3
@@ -201,7 +206,7 @@ exports[`FAQ renders correctly 1`] = `
       </h3>
        
       <p
-        class="faq__paragraph faq__break-paragraph"
+        class="faq__paragraph"
       >
         
         Our pricing has always been transparent. We charge our customers on a 
@@ -228,7 +233,7 @@ exports[`FAQ renders correctly 1`] = `
       </h3>
        
       <p
-        class="faq__paragraph faq__break-paragraph"
+        class="faq__paragraph"
       >
         
         You will have full control over your budget with our detailed monthly invoice. Weekly and daily reports cover the team’s contribution to your project in addition to individual performance reports that tell you what each of the specialists you hired has accomplished. Thus, with all information in your hands, the right adjustments in priorities of cost control factors can be implemented.
@@ -243,7 +248,7 @@ exports[`FAQ renders correctly 1`] = `
       </h3>
        
       <p
-        class="faq__paragraph faq__break-paragraph"
+        class="faq__paragraph"
       >
         <span
           class="faq__nowrap"
@@ -273,7 +278,7 @@ exports[`FAQ renders correctly 1`] = `
       </h3>
        
       <p
-        class="faq__paragraph faq__break-paragraph"
+        class="faq__paragraph"
       >
         
         Intellectual Property is wholly owned by you and your company.
@@ -281,7 +286,7 @@ exports[`FAQ renders correctly 1`] = `
       </p>
        
       <p
-        class="faq__paragraph faq__break-paragraph"
+        class="faq__paragraph faq__paragraph-margin"
       >
         
         After you sign a contract with us, you will become the owner of the repository, the project environment, Slack, hosting, and etc. The team only manages this and adjusts the processes in accordance with the regulations of the company.
@@ -289,7 +294,7 @@ exports[`FAQ renders correctly 1`] = `
       </p>
        
       <p
-        class="faq__paragraph faq__break-paragraph"
+        class="faq__paragraph faq__paragraph-margin"
       >
         
         You have these accesses from the very beginning of the project, but it is important to remember that according to the contract you become a full owner only after paying for all the hours worked by the team.
@@ -304,7 +309,7 @@ exports[`FAQ renders correctly 1`] = `
       </h3>
        
       <p
-        class="faq__paragraph faq__break-paragraph"
+        class="faq__paragraph"
       >
         
         Please don’t hesitate to contact us directly with any questions you may have. You have a number of options to use:

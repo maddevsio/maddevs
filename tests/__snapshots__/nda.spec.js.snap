@@ -149,7 +149,7 @@ exports[`NDA renders correctly 1`] = `
       </p>
        
       <p
-        class="nda__paragraph"
+        class="nda__paragraph nda__paragraph-margin"
       >
         
         Our company has experience of working with NDA agreements of any kind and complexity.
