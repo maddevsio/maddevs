@@ -107,7 +107,7 @@ export default {
 
   &__paragraph {
     font-family: 'Poppins-Regular';
-    font-size: 16px;
+    font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.02em;
     color: $remote-tech-staff-sub-title-grey;
@@ -124,7 +124,7 @@ export default {
     font-family: 'Poppins-Regular';
     font-size: 24px;
     line-height: 136%;
-    letter-spacing: -1px;
+    letter-spacing: 0;
     color: $text-color--red;
 
     &--first {

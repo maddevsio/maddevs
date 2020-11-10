@@ -41,7 +41,7 @@
           talking with the customer’s legal department and take efforts aimed at the protection of
           confidential information.
         </p>
-        <p class="nda__paragraph">
+        <p class="nda__paragraph nda__paragraph-margin">
           Our company has experience of working with NDA agreements of any kind and complexity.
           If you have more specific questions please contact us via
           <a class="nda__link nda__link--paragraph" href="mailto:rock@maddevs.io">rock@maddevs.io</a>.
@@ -100,7 +100,7 @@ export default {
     font-family: 'Poppins-Regular';
     font-size: 24px;
     line-height: 136%;
-    letter-spacing: -1px;
+    letter-spacing: 0;
     color: $text-color--red;
 
     &--first {
@@ -114,10 +114,14 @@ export default {
 
   &__paragraph {
     font-family: 'Poppins-Regular';
-    font-size: 16px;
+    font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.02em;
     color: $remote-tech-staff-sub-title-grey;
+  }
+
+  &__paragraph-margin {
+    margin-top: 14px;
   }
 
   &__text {
