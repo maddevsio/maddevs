@@ -62,14 +62,9 @@ export default {
       }
       document.body.style.top = `-${this.scrollYPosition}`;
       document.body.style.overflow = 'hidden';
-
-      document.documentElement.style.setProperty('--modal-ios-bar-size', `${this.getIOSBottomBarHeight()}px`);
     },
     handleScroll() {
       this.scrollYPosition = `${window.scrollY}px`;
-    },
-    getIOSBottomBarHeight() {
-      return Math.abs(window.innerHeight - window.outerHeight);
     }
   }
 };
@@ -77,10 +72,6 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
-
-  :root {
-    --modal-ios-bar-size: 0;
-  }
 
   .ui-button-modal-trigger {
     height: 65px;
