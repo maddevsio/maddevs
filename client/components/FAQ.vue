@@ -143,10 +143,10 @@ export default {
   }
 
   &__sec-title-first {
-    padding-top: 48px;
+    margin-top: -96px;
 
     @media screen and (max-width: 834px) {
-      padding-top: 58px;
+      margin-top: -86px;
     }
   }
 
