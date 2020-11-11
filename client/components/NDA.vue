@@ -18,8 +18,8 @@
           Even if our customer doesn’t have an NDA in place, we will protect their business secrets
           and any of the competitive advantages we create for them by our <span class="nda__nowrap">non-disclosure</span> agreement.
           If you want to get familiar with this document, please send us a request via
-          <a class="nda__link nda__link--head-text" href="mailto:rock@maddevs.com"
-            >rock@maddevs.com</a
+          <a class="nda__link nda__link--head-text" href="mailto:rock@maddevs.io"
+            >rock@maddevs.io</a
           >.
         </p>
         <h5 class="nda__sec-title nda__sec-title--first">Customer NDA Templates</h5>
@@ -97,7 +97,7 @@ export default {
   &__sec-title {
     margin-top: 48px;
     margin-bottom: 8px;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 24px;
     line-height: 136%;
     letter-spacing: 0;
@@ -113,7 +113,7 @@ export default {
   }
 
   &__paragraph {
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.02em;
@@ -126,7 +126,7 @@ export default {
 
   &__text {
     margin: 25px 0;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 22px;
     line-height: 36px;
     letter-spacing: -0.035em;

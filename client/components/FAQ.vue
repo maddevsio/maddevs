@@ -33,7 +33,7 @@
         </p>
         <h3 id="what-details-do-you-need-from-me-to-discuss-my-project-&-start-work?" class="faq__sec-title">What details do you need from me to discuss my <span class="faq__nowrap">project & start</span> work?</h3>
         <p class="faq__paragraph">
-          Simply submit your project idea to us via our contact form. We will contact you to clarify further requirements and prepare the project time & cost estimates. For more details, you can get in touch with our delivery manager <span class="faq__nowrap">Tamara Mun:</span> <a class="faq__link" href="mailto:tamaramun@maddevs.io">tamaramun@maddevs.io</a>, or schedule a meeting at <a class="faq__link" href="https://calendly.com/tamaramun"><span class="faq__nowrap">calendly/mun_tamara.</span></a>
+          Simply submit your project idea to us via our contact form. We will contact you to clarify further requirements and prepare the project time & cost estimates. For more details, you can get in touch with our delivery manager <span class="faq__nowrap">Tamara Mun:</span> <a class="faq__link" href="mailto:tamaramun@maddevs.io">tamaramun@maddevs.io</a>, or schedule a meeting at <a class="faq__link" href="https://calendly.com/tamaramun"><span class="faq__nowrap">calendly/tamaramun</span></a>
         </p>
         <h3 id="how-much-does-software-development-cost?-how-do-you-charge?" class="faq__sec-title">How much does software development cost? How do you charge?</h3>
         <p class="faq__paragraph">
@@ -135,7 +135,7 @@ export default {
     margin-top: -48px;
     padding-top: 96px;
     padding-bottom: 8px;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 24px;
     line-height: 136%;
     letter-spacing: 0;
@@ -158,7 +158,7 @@ export default {
 
   &__link,
   &__paragraph {
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.02em;

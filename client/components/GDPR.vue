@@ -106,7 +106,7 @@ export default {
   }
 
   &__paragraph {
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.02em;
@@ -121,7 +121,7 @@ export default {
   &__sec-title {
     margin-top: 48px;
     margin-bottom: 8px;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 24px;
     line-height: 136%;
     letter-spacing: 0;
@@ -134,7 +134,7 @@ export default {
 
   &__text {
     margin: 25px 0;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 22px;
     line-height: 36px;
     letter-spacing: -0.035em;
