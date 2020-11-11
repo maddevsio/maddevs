@@ -14,8 +14,12 @@
       value to both vendors and customers by conveniently delivering goods at the right time.
     </TextParagraph>
     <h2>Multi-directional business model</h2>
-    <!-- Нужно передавать текст в качестве параметра -->
-    <TextQuoteBig text="Namba Food achieves complete synergy by diversifying to multi-directional business models." />
+    <TextQuoteBig>
+      <div class="case_blockquote__container">
+        <div class="case_blockquote__icon"></div>
+        <p class="case_blockquote__text">Namba Food achieves complete synergy by diversifying to multi-directional business models.</p>
+      </div>
+    </TextQuoteBig>
     <h3>Delivery of food and goods</h3>
     <TextParagraph>
       Namba Food's delivery service positions itself as an intermediary body between good & food service providers and

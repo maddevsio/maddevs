@@ -1,27 +1,22 @@
 <template>
-  <div class="case_blockquote-big">
-    <div class="case_blockquote-big__icon"></div>
-    <p class="case_blockquote-big__text">{{text}}</p>
+  <div class="case_blockquote__big">
+    <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'TextQuoteBig',
-  props: {
-    text: {
-      type: String,
-      default: ''
-    }
-  }
+  name: 'TextQuoteBig'
 };
 </script>
 
 <style scoped lang="scss">
   @import '../../assets/styles/cases/_mixins';
 
-  .case_blockquote-big {
-    @include big-quote_container;
+  .case_blockquote {
+    &__container {
+      @include big-quote_container;
+    }
 
     &__text {
       @include big-quote_text($text-color--black-cases);
