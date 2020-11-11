@@ -33,7 +33,7 @@
         </p>
         <h3 id="what-details-do-you-need-from-me-to-discuss-my-project-&-start-work?" class="faq__sec-title">What details do you need from me to discuss my <span class="faq__nowrap">project & start</span> work?</h3>
         <p class="faq__paragraph">
-          Simply submit your project idea to us via our contact form. We will contact you to clarify further requirements and prepare the project time & cost estimates. For more details, you can get in touch with our delivery manager <span class="faq__nowrap">Tamara Mun:</span> <a class="faq__link" href="mailto:tamaramun@maddevs.io">tamaramun@maddevs.io</a>, or schedule a meeting at <a class="faq__link" href="https://calendly.com/tamaramun"><span class="faq__nowrap">calendly/tamaramun</span></a>
+          Simply submit your project idea to us via our contact form. We will contact you to clarify further requirements and prepare the project time & cost estimates. For more details, you can get in touch with our delivery manager <span class="faq__nowrap">Tamara Mun:</span> <a class="faq__link" href="mailto:tamaramun@maddevs.io">tamaramun@maddevs.io</a>, or schedule a meeting at <a class="faq__link" href="https://calendly.com/tamaramun" target="_blank"><span class="faq__nowrap">calendly/tamaramun</span></a>
         </p>
         <h3 id="how-much-does-software-development-cost?-how-do-you-charge?" class="faq__sec-title">How much does software development cost? How do you charge?</h3>
         <p class="faq__paragraph">
@@ -45,7 +45,7 @@
         </p>
         <h3 id="how-do-you-ensure-security-for-confidential-information?-do-you-work-under-nda?" class="faq__sec-title">How do you ensure security for confidential information? Do you work under NDA?</h3>
         <p class="faq__paragraph">
-          <span class="faq__nowrap">Mad Devs</span> always works under the NDA of our own, however, if you have a <span class="faq__nowrap">non-disclosure</span> agreement on your side, we can consider your contract, too. Please read more about work under NDA in the corresponding section of our website: <a class="faq__link" href="https://maddevs.io/nda/">https://maddevs.io/nda/</a>
+          <span class="faq__nowrap">Mad Devs</span> always works under the NDA of our own, however, if you have a <span class="faq__nowrap">non-disclosure</span> agreement on your side, we can consider your contract, too. Please read more about work under NDA in the corresponding section of our website: <a class="faq__link" href="https://maddevs.io/nda/" target="_blank">https://maddevs.io/nda/</a>
         </p>
         <h3 id="how-do-you-mitigate-the-risks-related-to-intellectual-property-ownership?" class="faq__sec-title">How do you mitigate the risks related to intellectual property ownership?</h3>
         <p class="faq__paragraph">
@@ -68,10 +68,10 @@
           <li class="faq__list">Phone Call via <a class="faq__link faq__link" href="tel:+44 20 3984 8555">+44 20 3984 8555</a></li>
           <li class="faq__list">
             Text message via 
-            <a href="https://facebook.com/maddevsllc" class="faq__link faq__link">Facebook Messenger</a>, 
-            <a href="https://t.me/mun_tamara/" class="faq__link faq__link">Telegram</a>, 
-            <a href="http://wa.me/996555771481" class="faq__link faq__link">Whatsapp</a>, 
-            or <a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc" class="faq__link faq__link">WeChat</a>.
+            <a href="https://facebook.com/maddevsllc" class="faq__link faq__link" target="_blank">Facebook Messenger</a>, 
+            <a href="https://t.me/mun_tamara/" class="faq__link faq__link" target="_blank">Telegram</a>, 
+            <a href="http://wa.me/996555771481" class="faq__link faq__link" target="_blank">Whatsapp</a>, 
+            or <a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc" class="faq__link faq__link" target="_blank">WeChat</a>.
           </li>
         </ul>
       </div>

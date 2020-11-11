@@ -22,7 +22,7 @@
           Under the terms of GDPR, <span class="gdpr__nowrap">Mad Devs</span> is a Data Processor. In case you are a Data Controller
           according to the official GDPR terminology, our legal department is ready to provide written
           consent for the processing of any personal data of individuals from the European Union and
-          European Economic Area. We are also ready to provide our <a class="gdpr__link" href="https://gdpr.eu/what-is-data-processing-agreement/">Data Processing Addendum (DPA)</a>
+          European Economic Area. We are also ready to provide our <a class="gdpr__link" href="https://gdpr.eu/what-is-data-processing-agreement/" target="_blank">Data Processing Addendum (DPA)</a>
           <br> upon your request. Please notify our management via
           <a class="gdpr__link" href="mailto:rock@maddevs.io"
             >rock@maddevs.io</a
