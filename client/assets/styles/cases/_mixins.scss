@@ -100,3 +100,47 @@
   left: 0;
   @include red-quote;
 }
+
+@mixin team_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 21px;
+  grid-row-gap: 71px;
+}
+
+@mixin team_member {
+  display: flex;
+  align-items: center;
+}
+
+@mixin team-member_info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+@mixin team-member_image {
+  width: 40px;
+  height: 40px;
+  background-color: gainsboro; // Выставил временно, удалю как только настрою компонент Pictures
+}
+
+@mixin team-member_full-name($color) {
+  color: $color;
+  font-family: Inter-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.035em;
+}
+
+@mixin team-member_position($color) {
+  color: $color;
+  font-family: Inter-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
