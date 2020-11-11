@@ -192,6 +192,7 @@ exports[`FAQ page renders correctly 1`] = `
           <a
             class="faq__link"
             href="https://calendly.com/tamaramun"
+            target="_blank"
           >
             <span
               class="faq__nowrap"
@@ -268,6 +269,7 @@ exports[`FAQ page renders correctly 1`] = `
           <a
             class="faq__link"
             href="https://maddevs.io/nda/"
+            target="_blank"
           >
             https://maddevs.io/nda/
           </a>
@@ -373,6 +375,7 @@ exports[`FAQ page renders correctly 1`] = `
             <a
               class="faq__link faq__link"
               href="https://facebook.com/maddevsllc"
+              target="_blank"
             >
               Facebook Messenger
             </a>
@@ -381,6 +384,7 @@ exports[`FAQ page renders correctly 1`] = `
             <a
               class="faq__link faq__link"
               href="https://t.me/mun_tamara/"
+              target="_blank"
             >
               Telegram
             </a>
@@ -389,6 +393,7 @@ exports[`FAQ page renders correctly 1`] = `
             <a
               class="faq__link faq__link"
               href="http://wa.me/996555771481"
+              target="_blank"
             >
               Whatsapp
             </a>
@@ -397,6 +402,7 @@ exports[`FAQ page renders correctly 1`] = `
             <a
               class="faq__link faq__link"
               href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
+              target="_blank"
             >
               WeChat
             </a>

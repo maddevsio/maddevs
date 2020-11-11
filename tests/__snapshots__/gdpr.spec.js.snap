@@ -79,6 +79,7 @@ exports[`GDPR renders correctly 1`] = `
         <a
           class="gdpr__link"
           href="https://gdpr.eu/what-is-data-processing-agreement/"
+          target="_blank"
         >
           Data Processing Addendum (DPA)
         </a>
