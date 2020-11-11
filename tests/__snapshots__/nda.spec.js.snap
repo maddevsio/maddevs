@@ -85,9 +85,9 @@ exports[`NDA renders correctly 1`] = `
         
         <a
           class="nda__link nda__link--head-text"
-          href="mailto:rock@maddevs.com"
+          href="mailto:rock@maddevs.io"
         >
-          rock@maddevs.com
+          rock@maddevs.io
         </a>
         .
       
