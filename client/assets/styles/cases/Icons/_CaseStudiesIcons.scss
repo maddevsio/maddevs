@@ -1,0 +1,10 @@
+@mixin icon-common {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin red-quote {
+  @include icon-common;
+  background-image: url('data:image/svg+xml;charset=UTF-8,\ <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 69"><path d="M19.78 44.02H0L18.616 0h12.605L19.78 44.02zm31.415 0h-19.78L50.031 0h12.605L51.195 44.02z" fill="%23EC1C24"/></svg>');
+}
