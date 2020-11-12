@@ -109,42 +109,39 @@
   letter-spacing: -0.02em;
 }
 
-// @mixin list {
-//   display: flex;
-//   flex-direction: column;
-// }
+@mixin list {
+  display: flex;
+  flex-direction: column;
+}
 
-// @mixin list-grey-item_container($backgroundColor) {
-//   display: flex;
-//   margin-bottom: 11px;
-//   padding: 16px 17px;
-//   background-color: $backgroundColor;
+@mixin list-item_box($backgroundColor, $color) {
+  margin-bottom: 11px;
+  padding: 16px 17px;
+  font-family: Inter-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 166%;
+  letter-spacing: -0.035em;
+  color: $color;
+  background-color: $backgroundColor;
 
-//   &:last-child {
-//     margin-bottom: 0;
-//   }
-// }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
 
-// @mixin list-grey-item_text($color) {
-//   color: $color;
-//   font-family: Inter-Regular, sans-serif;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 17px;
-//   line-height: 166%;
-//   letter-spacing: -0.035em;
-// }
-
-// @mixin list-grey-item_checkmark($color) {
-//   width: 24px;
-//   height: 24px;
-//   margin-right: 14px;
-//   color: $color;
-//   font-family: Inter-Regular, sans-serif;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 18px;
-//   line-height: 133%;
-//   text-align: center;
-//   letter-spacing: -0.035em;
-// }
+@mixin list-item-box_checkmark($color) {
+  content: '✓';
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+  color: $color;
+  font-family: Inter-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 133%;
+  text-align: center;
+  letter-spacing: -0.035em;
+}
