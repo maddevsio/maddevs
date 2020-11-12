@@ -8,8 +8,8 @@
 				<button class="mobile-header__toogle-btn" @click="toggleMobileHeader()" :class="mobileHeaderIsOpen ? 'mobile-header__close' : 'mobile-header__hamburger'"></button>
 			</div>
 		</div>
-		<div class="mobile-header__scrollbar container">
-			<div class="mobile-header__content-wrap" v-show="mobileHeaderIsOpen">
+		<div class="mobile-header__scrollbar safari_only container" v-show="mobileHeaderIsOpen">
+			<div class="mobile-header__content-wrap">
 				<div class="mobile-header__nav-wrap">
 					<nav class="mobile-header__header-routes_links">
 						<router-link class="mobile-header__nav-link" exact to="/">About</router-link>
@@ -106,6 +106,7 @@ export default {
       this.mobileHeaderIsOpen = !this.mobileHeaderIsOpen;
       if(this.mobileHeaderIsOpen) {
         this.disableScrollOnBody();
+        document.documentElement.style.setProperty('--mobile-header-ios-bar-size', `${this.getIOSBottomBarHeight()}px`);
       } else {
         this.enableScrollOnBody();
       }
@@ -115,6 +116,9 @@ export default {
     },
     disableScrollOnBody() {
       document.body.classList.add('scrollDisabled');
+    },
+    getIOSBottomBarHeight() {
+      return Math.abs(window.innerHeight - window.outerHeight);
     }
   }
 };
@@ -125,6 +129,10 @@ export default {
 	@import '../../assets/styles/_messengerIcons';
 	@import '../../assets/styles/_flagsIcons';
 	@import '../../assets/styles/_headerIcons';
+
+	:root {
+    --mobile-header-ios-bar-size: 0;
+  }
 
 	.mobile-header {
 		width: 100%;
@@ -382,7 +390,7 @@ export default {
 
 			&__small-phone-content {
 				display: block;
-				margin-bottom: 53px;
+				margin-bottom: 25px;
 			}
 
 			/deep/ .footer-contacts__head-content {
@@ -439,6 +447,13 @@ export default {
 				padding-bottom: 25px;
 			}
 		}
+	}
+
+	// only for IOS
+	@media screen and (max-width: 991px) {
+    _::-webkit-full-page-media, _:future, :root .safari_only {
+			height: calc(100vh - var(--mobile-header-ios-bar-size)) !important;
+    }
 	}
 </style>
 

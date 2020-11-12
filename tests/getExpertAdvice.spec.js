@@ -73,7 +73,8 @@ describe('Technology stack modal', () => {
         'fullName': '',
         'subject': 'Marketing',
         'phoneNumber': '',
-        'questionsOnItConsulting': ''
+        'questionsOnItConsulting': '',
+        'modalTitle': 'Mad Devs Website Forms'
       }
     };
     expect(wrapper.vm.$data.form).toEqual('');

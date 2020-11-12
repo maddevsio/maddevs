@@ -77,7 +77,8 @@ describe('Teams Modal', () => {
         'phoneNumber': '',
         'projectDescription': '',
         'selectedTeamSize': '',
-        'subject': 'Marketing'
+        'subject': 'Marketing',
+        'modalTitle': 'Mad Devs Website Forms'
       }
     };
     expect(wrapper.vm.$data.form).toEqual(null);

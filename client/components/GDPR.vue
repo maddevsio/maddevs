@@ -22,7 +22,7 @@
           Under the terms of GDPR, <span class="gdpr__nowrap">Mad Devs</span> is a Data Processor. In case you are a Data Controller
           according to the official GDPR terminology, our legal department is ready to provide written
           consent for the processing of any personal data of individuals from the European Union and
-          European Economic Area. We are also ready to provide our <a class="gdpr__link" href="https://gdpr.eu/what-is-data-processing-agreement/">Data Processing Addendum (DPA)</a>
+          European Economic Area. We are also ready to provide our <a class="gdpr__link" href="https://gdpr.eu/what-is-data-processing-agreement/" target="_blank">Data Processing Addendum (DPA)</a>
           <br> upon your request. Please notify our management via
           <a class="gdpr__link" href="mailto:rock@maddevs.io"
             >rock@maddevs.io</a
@@ -106,8 +106,8 @@ export default {
   }
 
   &__paragraph {
-    font-family: 'Poppins-Regular';
-    font-size: 16px;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.02em;
     color: $remote-tech-staff-sub-title-grey;
@@ -121,10 +121,10 @@ export default {
   &__sec-title {
     margin-top: 48px;
     margin-bottom: 8px;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 24px;
     line-height: 136%;
-    letter-spacing: -1px;
+    letter-spacing: 0;
     color: $text-color--red;
 
     &--first {
@@ -134,7 +134,7 @@ export default {
 
   &__text {
     margin: 25px 0;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 22px;
     line-height: 36px;
     letter-spacing: -0.035em;

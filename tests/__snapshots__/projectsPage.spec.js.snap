@@ -979,7 +979,8 @@ exports[`Projects page renders correctly 1`] = `
           <p
             class="open-source__description"
           >
-            70+ of 
+            
+          70+ of 
             <span>
               Mad Devs'
             </span>
@@ -987,7 +988,17 @@ exports[`Projects page renders correctly 1`] = `
             <br
               class="open-source__descktop-break"
             />
-             the community via GitHub.
+             the community via 
+            <span
+              class="open-source__mobile-icon-wrapper"
+            >
+              GitHub. 
+              <a
+                class="open-source__github-icon-mobile"
+                href="https://github.com/maddevsio"
+                target="_blank"
+              />
+            </span>
           </p>
            
           <a

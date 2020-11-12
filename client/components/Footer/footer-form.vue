@@ -28,6 +28,7 @@
         :disabled="invalid || !agreeWithPrivacyPolicy"
         @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
         type="button"
+        ref="submitButton"
       />
     </ValidationObserver>
     <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
@@ -60,7 +61,8 @@ export default {
     agreeToGetMadDevsDiscountOffers: false,
     isEmailSent: false,
     onSubmit: false,
-    subject: 'Marketing'
+    subject: 'Marketing',
+    modalTitle: 'Mad Devs Website Forms'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -72,6 +74,7 @@ export default {
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
         this.onSubmit = true;
+        this.setStateForElements('Waiting...');
         this.form = {
           templateId: 305480, // Required
           variables: {
@@ -81,21 +84,28 @@ export default {
             projectDescriber: this.projectDescriber,
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers,
-            subject: this.subject || ''
+            subject: this.subject || '',
+            modalTitle: this.modalTitle
           }
         };
         this.$store.dispatch('sendEmail', this.form).then(res => {
           this.onSubmit = false;
           if (res.status === 200) {
             this.isEmailSent = true;
+            this.setStateForElements('Order a project now');
+            this.resetForm();
             setTimeout(() => {
-              this.resetForm();
+              this.isEmailSent = false;
             }, 3000);
           } else {
             this.isEmailSent = false;
           }
         });
       }
+    },
+    setStateForElements(buttonText) {
+      this.$refs.submitButton.$el.innerText = buttonText;
+      this.$refs.form.$el.classList.toggle('freeze');
     },
     resetForm() {
       this.$refs.form.reset();
@@ -106,7 +116,6 @@ export default {
       this.projectDescriber = '';
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
-      this.isEmailSent = false;
     }
   }
 };
@@ -202,6 +211,11 @@ export default {
       line-height: 24px;
       letter-spacing: -0.02em;
     }
+  }
+
+  .freeze {
+    pointer-events: none;
+    user-select: none;
   }
 
   @media only screen and (max-width: 1320px) {

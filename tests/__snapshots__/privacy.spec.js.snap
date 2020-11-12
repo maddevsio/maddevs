@@ -122,7 +122,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         If you do not agree to these terms, you must not use our site.
@@ -130,7 +130,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         We recommend that you print a copy of these terms for future
@@ -248,7 +248,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         Failure to comply with this acceptable use policy constitutes a
@@ -327,7 +327,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         If you are a business, the terms of this policy, its subject matter
@@ -356,7 +356,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         A cookie is a small file of letters and numbers that we store on your
@@ -366,7 +366,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         We use the following cookies:
@@ -374,7 +374,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         <span
           class="privacy__paragraph privacy__paragraph--bold"
@@ -387,7 +387,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         <span
           class="privacy__paragraph privacy__paragraph--bold"
@@ -428,7 +428,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         For more information on the privacy practices of Google, please visit
@@ -444,7 +444,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         <span
           class="privacy__paragraph privacy__paragraph--bold"
@@ -460,7 +460,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         <span
           class="privacy__paragraph privacy__paragraph--bold"
@@ -476,7 +476,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         You can block cookies by activating the setting on your browser that
@@ -508,7 +508,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         This website is not intended for children and we do not knowingly
@@ -517,7 +517,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         It is important that you read this ­privacy policy together with any
@@ -530,7 +530,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         Our Data Protection Officer is [NAME], who is responsible for
@@ -542,7 +542,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         You have the right to make a complaint at any time to the Information
@@ -562,7 +562,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         Please also use the Glossary to understand the meaning of some of the
@@ -863,7 +863,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         <span
           class="privacy__nowrap"
@@ -937,7 +937,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         <span
           class="privacy__nowrap"
@@ -975,7 +975,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         We ensure your personal data is protected by requiring all our group
@@ -984,7 +984,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         Whenever we transfer your personal data out of the EEA, we ensure a
@@ -994,7 +994,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         We will only transfer your personal data to countries that have been
@@ -1014,7 +1014,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         Where we use certain service providers, we may use specific contracts
@@ -1034,7 +1034,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         Where we use providers based in the US, we may transfer data to them
@@ -1090,7 +1090,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         You will receive marketing communications from us if you have
@@ -1121,7 +1121,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         If we need to use your personal data for an unrelated purpose, we will
@@ -1131,7 +1131,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         Please note that we may process your personal data without your
@@ -1268,7 +1268,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         We have put in place procedures to deal with any suspected personal
@@ -1304,7 +1304,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         If you wish to be informed about what Personal Data we hold about you
@@ -1320,7 +1320,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         Under certain circumstances, you have rights under data protection
@@ -1329,7 +1329,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         <span
           class="privacy__paragraph privacy__paragraph--bold"
@@ -1346,7 +1346,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         <span
           class="privacy__paragraph privacy__paragraph--bold"
@@ -1360,7 +1360,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         <span
           class="privacy__paragraph privacy__paragraph--bold"
@@ -1373,7 +1373,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         <span
           class="privacy__paragraph privacy__paragraph--bold"
@@ -1387,7 +1387,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         <span
           class="privacy__paragraph privacy__paragraph--bold"
@@ -1402,7 +1402,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         <span
           class="privacy__paragraph privacy__paragraph--bold"
@@ -1417,7 +1417,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         Please note that we may ask you to verify your identity before
@@ -1509,7 +1509,7 @@ exports[`Privacy renders correctly 1`] = `
       </p>
        
       <p
-        class="privacy__paragraph"
+        class="privacy__paragraph privacy__paragraph-margin"
       >
         
         These third parties have access to your Personal Data only to perform

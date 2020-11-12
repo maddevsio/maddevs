@@ -18,7 +18,7 @@
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
           </ValidationProvider>
-          <ValidationProvider class="modal-field-item field-item" rules="max:300" v-slot="{ classes, errors }">
+          <ValidationProvider class="modal-field-item field-item" rules="max:300|required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Company</p>
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="MyAwesomeCompany, Inc." v-model="company">
             <span class="modal-error-text error-text">{{ errors[0] }}</span>
@@ -110,7 +110,8 @@ export default {
     ],
     onSubmit: false,
     subject: 'Marketing',
-    form: ''
+    form: '',
+    modalTitle: 'Mad Devs Website Forms'
   }),
   methods: {
     getPrivacyCheckboxState(privacyState) {
@@ -136,7 +137,8 @@ export default {
             selectedProjectHost: this.selectedProjectHost || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
-            subject: this.subject || ''
+            subject: this.subject || '',
+            modalTitle: this.modalTitle
           }
         };
         this.$store.dispatch('sendEmail', this.form).then(res => {

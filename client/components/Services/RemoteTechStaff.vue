@@ -78,18 +78,30 @@ export default {
       display: flex;
       justify-content: space-between;
       margin-top: 38px;
+    }
 
-      @media only screen and (max-width: 1280px) {
+    @media only screen and (max-width: 1280px) {
+      &__tech-staff-items {
         margin-top: 18px;
       }
+    }
 
-      @media only screen and (max-width: 1023px) {
+    @media only screen and (max-width: 1023px) {
+      &__tech-staff-items {
         flex-direction: column;
       }
+    }
 
-      @media only screen and (max-width: 834px) {
+    @media only screen and (max-width: 834px) {
+      padding-bottom: 25px;
+
+      &__tech-staff-items {
         margin-top: 20px;
       }
+    }
+
+    @media screen and (max-width: 578px) {
+      padding-bottom: 47px;
     }
   }
 </style>

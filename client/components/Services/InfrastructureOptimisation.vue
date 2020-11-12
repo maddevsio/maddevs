@@ -64,6 +64,8 @@ export default {
   @import '../../assets/styles/vars';
 
   .infrastructure-optimisation {
+    padding-top: 96px;
+
     &__content-wrapper {
       &:hover {
         .infrastructure-optimisation__button {
@@ -150,6 +152,8 @@ export default {
     }
 
     @media screen and  (max-width: 834px) {
+      padding-top: 72px;
+
       &__content {
         margin-top: -66px;
         padding-top: 74px;
@@ -175,6 +179,8 @@ export default {
     }
 
     @media screen and  (max-width: 578px) {
+      padding-top: 48px;
+
       &__content {
         margin-bottom: 58px;
       }

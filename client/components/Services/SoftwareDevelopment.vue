@@ -178,8 +178,6 @@ export default {
   @import '../../assets/styles/vars';
 
   .software-development {
-    padding-bottom: 96px;
-
     &__main-title {
       text-align: center;
       @include h2_title;
@@ -226,12 +224,11 @@ export default {
     }
 
     @media screen and (max-width: 834px) {
-      padding-top: 25px;
-      padding-bottom: 96px;
+      padding-bottom: 25px;
     }
 
     @media screen and (max-width: 578px) {
-      padding-top: 47px;
+      padding-bottom: 47px;
     }
   }
 </style>

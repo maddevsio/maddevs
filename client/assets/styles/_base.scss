@@ -71,3 +71,17 @@ main {
   src: url('../fonts/Poppins/Poppins-Regular.woff2') format('woff2'), url('../fonts/Poppins/Poppins-Regular.woff') format('woff');
   font-display: auto;
 }
+
+@font-face {
+  font-family: 'Inter-Regular';
+  font-weight: 400;
+  src: url('../fonts/Inter/Inter-Regular.woff2') format('woff2'), url('../fonts/Inter/Inter-Regular.woff') format('woff');
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Inter-Italic';
+  font-weight: 400;
+  src: url('../fonts/Inter/Inter-Italic.woff2') format('woff2'), url('../fonts/Inter/Inter-Italic.woff') format('woff');
+  font-display: auto;
+}

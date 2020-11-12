@@ -5,6 +5,7 @@
       <a href="/gdpr" target="_blank" class="footer-navbar__nav-item">GDPR Compliance Commitment</a>
       <a href="/nda" target="_blank" class="footer-navbar__nav-item">Non-Disclosure Agreement (NDA)</a>
       <a href="/privacy" target="_blank" class="footer-navbar__nav-item">Privacy Policy</a>
+      <a href="/faq" target="_blank" class="footer-navbar__nav-item">FAQ</a>
     </div>
   </div>
 </template>
@@ -54,7 +55,7 @@ export default {
 		}
   }
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1320px) {
 		.footer-navbar {
 			width: initial;
 			margin-top: 40px;
@@ -69,10 +70,27 @@ export default {
 			}
 
 			&__nav-item {
-				&:last-child {
+				&:nth-child(1) {
+					width: 100%;
+				}
+
+				&:nth-child(2),
+				&:nth-child(3) {
+					margin-right: 15px;
+				}
+
+				&:nth-child(4) {
 					margin-left: 0;
 					margin-bottom: 0;
 				}
+			}
+		}
+	}
+
+  @media only screen and (max-width: 991px) {
+		.footer-navbar {
+			&__nav-list {
+				flex-direction: column;
 			}
 		}
 	}

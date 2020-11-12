@@ -81,7 +81,8 @@ describe('Infrastructure Audit Modal', () => {
         'subject': 'Marketing',
         'phoneNumber': '',
         'company': '',
-        'selectedProjectHost': ''
+        'selectedProjectHost': '',
+        'modalTitle': 'Mad Devs Website Forms'
       }
     };
     expect(wrapper.vm.$data.form).toEqual('');

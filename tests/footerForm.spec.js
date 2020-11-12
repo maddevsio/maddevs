@@ -61,24 +61,6 @@ describe('Footer form', () => {
     ).toEqual(true);
   });
 
-  test('sendForm should add new object in $data.form', () => {
-    const form = {
-      'templateId': 305480,
-      'variables': {
-        'agreeToGetMadDevsDiscountOffers': false,
-        'agreeWithPrivacyPolicy': false,
-        'email': '',
-        'emailTo': 'team@maddevs.io',
-        'fullName': null,
-        'projectDescriber': '',
-        'subject': 'Marketing'
-      }
-    };
-    expect(wrapper.vm.$data.form).toEqual(null);
-    wrapper.vm.sendForm(true);
-    expect(wrapper.vm.$data.form).toEqual(form);
-  });
-
   test('should rest values in data instances', () => {
     // Set mock data for data instances
     wrapper.vm.$data.fullName = 'Name';

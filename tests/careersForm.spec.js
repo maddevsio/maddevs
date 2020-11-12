@@ -19,7 +19,8 @@ describe('CareersForm component', () => {
       { type: 'middle', label: 'Middle,' },
       { type: 'junior', label: 'Junior,' },
       { type: 'intern', label: 'Intern' }
-    ]
+    ],
+    modalTitle: 'Mad Devs Website Carrers Form'
   };
 
   beforeEach(() => {

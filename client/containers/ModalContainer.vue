@@ -3,7 +3,7 @@
     <button @click="closeModal" class="close-modal">
       <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
     </button>
-    <perfect-scrollbar class="modal_scrollbar custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
+    <perfect-scrollbar class="modal_scrollbar modal-safari-only custom-scrollbar" v-if="isEmailSent === false" :options="scrollbarOptions">
       <slot />
     </perfect-scrollbar>
     <SuccessMessage :id="successModalID" v-else />
@@ -48,18 +48,19 @@ export default {
   methods: {
     handleOutsideClick() {
       this.isEmailSent = false;
-      this.$store.commit('SET_DISPLAY_STATE_FOR_MODAL_WINDOW', false);
       this.enableScrollOnBody();
     },
     closeModal() {
       this.$modal.hide(this.$props.name);
-      this.$store.commit('SET_DISPLAY_STATE_FOR_MODAL_WINDOW', false);
     },
     enableScrollOnBody() {
-      const body = document.body;
-      const scrollY = body.style.top;
-      body.style.overflow = '';
-      body.style.top = '';
+      const scrollY = document.body.style.top;
+      // Enable body scroll in Safari for mobile devices
+      if (window.innerWidth <= 640) {
+        document.body.style.position = '';
+      }
+      document.body.style.overflow = '';
+      document.body.style.top = '';
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
   }
@@ -124,7 +125,7 @@ export default {
 		/deep/.modal_container {
       width: 100% !important;
       height: 100% !important;
-      padding: 63px 0 0 12px;
+      padding: 40px 0 0 12px;
 
       .form {
         padding-right: 15px;
@@ -135,4 +136,46 @@ export default {
       padding: 0;
     }
 	}
+
+  /* iphone 5 */
+  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+    _::-webkit-full-page-media, _:future, :root .modal-safari-only {
+      max-height: calc(100vh - 177px) !important;
+    }
+  }
+
+  /* iphone 6, 6s, 7, 8 */
+  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    _::-webkit-full-page-media, _:future, :root .modal-safari-only {
+      max-height: calc(100vh - 177px) !important;
+    }
+  }
+
+  /* iphone 6+, 6s+, 7+, 8+ */
+  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+    _::-webkit-full-page-media, _:future, :root .modal-safari-only {
+      max-height: calc(100vh - 177px) !important;
+    }
+  }
+
+  /* iphone X , XS, 11 Pro */
+  @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    _::-webkit-full-page-media, _:future, :root .modal-safari-only {
+      max-height: calc(100vh - 205px) !important;
+    }
+  }
+
+  /* iphone XR, 11 */
+  @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio: 2) {
+    _::-webkit-full-page-media, _:future, :root .modal-safari-only {
+      max-height: calc(100vh - 205px) !important;
+    }
+  }
+
+  /* iphone XS Max, 11 Pro Max */
+  @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio: 3) {
+    _::-webkit-full-page-media, _:future, :root .modal-safari-only {
+      max-height: calc(100vh - 205px) !important;
+    }
+  }
 </style>

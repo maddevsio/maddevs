@@ -16,15 +16,15 @@
         </p>
         <p class="nda__text">
           Even if our customer doesn’t have an NDA in place, we will protect their business secrets
-          and any of the competitive advantages we create for them by our non-disclosure agreement.
+          and any of the competitive advantages we create for them by our <span class="nda__nowrap">non-disclosure</span> agreement.
           If you want to get familiar with this document, please send us a request via
-          <a class="nda__link nda__link--head-text" href="mailto:rock@maddevs.com"
-            >rock@maddevs.com</a
+          <a class="nda__link nda__link--head-text" href="mailto:rock@maddevs.io"
+            >rock@maddevs.io</a
           >.
         </p>
         <h5 class="nda__sec-title nda__sec-title--first">Customer NDA Templates</h5>
         <p class="nda__paragraph">
-          Some of our customers have standard NDA templates pre-approved by their legal
+          Some of our customers have standard NDA templates  <span class="nda__nowrap">pre-approved</span> by their legal
           departments. If we are offered to sign such an agreement, we always proceed with it as the
           customer knows their industry better. If a customer offers us some additional instructions or
           training on confidential information in their organization, we eagerly agree. Any requirements
@@ -41,7 +41,7 @@
           talking with the customer’s legal department and take efforts aimed at the protection of
           confidential information.
         </p>
-        <p class="nda__paragraph">
+        <p class="nda__paragraph nda__paragraph-margin">
           Our company has experience of working with NDA agreements of any kind and complexity.
           If you have more specific questions please contact us via
           <a class="nda__link nda__link--paragraph" href="mailto:rock@maddevs.io">rock@maddevs.io</a>.
@@ -97,10 +97,10 @@ export default {
   &__sec-title {
     margin-top: 48px;
     margin-bottom: 8px;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 24px;
     line-height: 136%;
-    letter-spacing: -1px;
+    letter-spacing: 0;
     color: $text-color--red;
 
     &--first {
@@ -113,16 +113,20 @@ export default {
   }
 
   &__paragraph {
-    font-family: 'Poppins-Regular';
-    font-size: 16px;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.02em;
     color: $remote-tech-staff-sub-title-grey;
   }
 
+  &__paragraph-margin {
+    margin-top: 14px;
+  }
+
   &__text {
     margin: 25px 0;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 22px;
     line-height: 36px;
     letter-spacing: -0.035em;

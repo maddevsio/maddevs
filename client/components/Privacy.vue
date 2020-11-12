@@ -46,10 +46,10 @@
           By using our site, you confirm that you accept the terms of this
           policy and that you agree to comply with them.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           If you do not agree to these terms, you must not use our site.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           We recommend that you print a copy of these terms for future
           reference.
         </p>
@@ -105,7 +105,7 @@
           When we consider that a breach of this acceptable use policy has
           occurred, we may take such action as we deem appropriate.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           Failure to comply with this acceptable use policy constitutes a
           material breach of the terms of use upon which you are permitted to
           use our site, and may result in our taking all or any of the following
@@ -142,7 +142,7 @@
           we both agree that the courts of England and Wales will have exclusive
           jurisdiction.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           If you are a business, the terms of this policy, its subject matter
           and its formation (and any non-contractual disputes or claims) are
           governed by English law. We both agree to the exclusive jurisdiction
@@ -156,21 +156,21 @@
           website. This helps us to provide you with a good experience when you
           browse our website and also allows us to improve our site.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           A cookie is a small file of letters and numbers that we store on your
           browser or the hard drive of your computer if you agree. Cookies
           contain information that is transferred to your computer's hard drive.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           We use the following cookies:
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           <span class="privacy__paragraph privacy__paragraph--bold"
             >Strictly necessary cookies.</span
           >
           These are cookies that are required for the operation of our website.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           <span class="privacy__paragraph privacy__paragraph--bold"
             >Analytical or performance cookies.</span
           >
@@ -194,7 +194,7 @@
           analytics.js and dc.js) from sharing information with Google Analytics
           about visits activity.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           For more information on the privacy practices of Google, please visit
           the Google Privacy Terms web page:
           <a
@@ -204,7 +204,7 @@
             >https://policies.google.com/privacy?hl=en</a
           >
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           <span class="privacy__paragraph privacy__paragraph--bold"
             >Functionality cookies.</span
           >
@@ -213,7 +213,7 @@
           remember your preferences (for example, your choice of language or
           region).
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           <span class="privacy__paragraph privacy__paragraph--bold"
             >Targeting cookies.</span
           >
@@ -222,7 +222,7 @@
           to make our website and the advertising displayed on it more relevant
           to your interests.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           You can block cookies by activating the setting on your browser that
           allows you to refuse the setting of all or some cookies. However, if
           you use your browser settings to block all cookies (including
@@ -239,11 +239,11 @@
           visit it from) and tell you about your privacy rights and how the law
           protects you.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           This website is not intended for children and we do not knowingly
           collect data relating to children.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           It is important that you read this ­privacy policy together with any
           other privacy policy or fair processing policy we may provide on
           specific occasions when we are collecting or processing personal data
@@ -251,14 +251,14 @@
           data. This privacy policy supplements other notices and privacy
           policies and is not intended to override them.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           Our Data Protection Officer is [NAME], who is responsible for
           overseeing questions in relation to this privacy policy. If you have
           any questions about this privacy policy, including any requests to
           exercise your legal rights, please contact the DPO using the email
           address above.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           You have the right to make a complaint at any time to the Information
           Commissioner's Office (ICO), the UK supervisory authority for data
           protection issues (<a
@@ -270,7 +270,7 @@
           concerns before you approach the ICO so please contact us in the first
           instance.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           Please also use the Glossary to understand the meaning of some of the
           terms used in this privacy policy.
         </p>
@@ -399,7 +399,7 @@
           described in this Privacy Policy depends on the Personal Data we
           collect and the specific context in which we collect it.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           <span class="privacy__nowrap">Mad Devs</span> Group Ltd may process your Personal Data because:
         </p>
         <ul class="privacy__list-wrap">
@@ -428,7 +428,7 @@
           your data to comply with applicable laws), resolve disputes and
           enforce our legal agreements and policies.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           <span class="privacy__nowrap">Mad Devs</span> Group Ltd will also retain Usage Data for internal analysis
           purposes. Usage Data is generally retained for a shorter period of
           time, except when this data is used to strengthen the security or to
@@ -445,16 +445,16 @@
             >(EEA).</span
           >
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           We ensure your personal data is protected by requiring all our group
           companies to follow the same rules when processing your personal data.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           Whenever we transfer your personal data out of the EEA, we ensure a
           similar degree of protection is afforded to it by ensuring at least
           one of the following safeguards is implemented.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           We will only transfer your personal data to countries that have been
           deemed to provide an adequate level of protection for personal data by
           the European Commission. For further details, see
@@ -466,7 +466,7 @@
             non-EU countries</a
           >.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           Where we use certain service providers, we may use specific contracts
           approved by the European Commission which give personal data the same
           protection it has in Europe. For further details, see
@@ -478,7 +478,7 @@
             data to third countries</a
           >.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           Where we use providers based in the US, we may transfer data to them
           if they are part of the Privacy Shield which requires them to provide
           similar protection to personal data shared between Europe and the US.
@@ -506,7 +506,7 @@
           what may be of interest to you. This is how we decide which products,
           services and offers may be relevant for you (we call this marketing).
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           You will receive marketing communications from us if you have
           requested information from us or purchased services from us and you
           have not opted out of receiving that marketing.
@@ -522,12 +522,12 @@
           for the new purpose is compatible with the original purpose, please
           contact us.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           If we need to use your personal data for an unrelated purpose, we will
           notify you and we will explain the legal basis which allows us to do
           so.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           Please note that we may process your personal data without your
           knowledge or consent, in compliance with the above rules, where this
           is required or permitted by law.
@@ -581,7 +581,7 @@
           process your personal data on our instructions and they are subject to
           a duty of confidentiality.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           We have put in place procedures to deal with any suspected personal
           data breach and will notify you and any applicable regulator of a
           breach where we are legally required to do so.
@@ -596,7 +596,7 @@
           reasonable steps to allow you to correct, amend, delete or limit the
           use of your Personal Data.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           If you wish to be informed about what Personal Data we hold about you
           and if you want it to be removed from our systems, please contact us
           on
@@ -604,11 +604,11 @@
             >rock@maddevs.io</a
           >
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           Under certain circumstances, you have rights under data protection
           laws in relation to your personal data.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           <span class="privacy__paragraph privacy__paragraph--bold"
             >The right to access, update or delete the information we have on
             you.</span
@@ -618,27 +618,27 @@
           you are unable to perform these actions yourself, please contact us to
           assist you.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           <span class="privacy__paragraph privacy__paragraph--bold"
             >The right of rectification.</span
           >
           You have the right to have your information rectified if that
           information is inaccurate or incomplete.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           <span class="privacy__paragraph privacy__paragraph--bold"
             >The right to object.</span
           >
           You have the right to object to our processing of your Personal Data.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           <span class="privacy__paragraph privacy__paragraph--bold"
             >The right of restriction.</span
           >
           You have the right to request that we restrict the processing of your
           personal information.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           <span class="privacy__paragraph privacy__paragraph--bold"
             >The right to data portability.</span
           >
@@ -646,7 +646,7 @@
           have on you in a structured, machine-readable and commonly used
           format.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           <span class="privacy__paragraph privacy__paragraph--bold"
             >The right to withdraw consent.</span
           >
@@ -654,7 +654,7 @@
           Devs Group Ltd relied on your consent to process your personal
           information.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           Please note that we may ask you to verify your identity before
           responding to such requests. You have the right to complain to a Data
           Protection Authority about our collection and use of your Personal
@@ -701,7 +701,7 @@
           perform Service-related services or assist us in analysing how our
           Service is used.
         </p>
-        <p class="privacy__paragraph">
+        <p class="privacy__paragraph privacy__paragraph-margin">
           These third parties have access to your Personal Data only to perform
           these tasks on our behalf and are obligated not to disclose or use it
           for any other purpose.
@@ -757,14 +757,18 @@ export default {
   }
 
   &__paragraph {
-    font-family: 'Poppins-Regular';
-    font-size: 16px;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.02em;
   }
 
+  &__paragraph-margin {
+    margin-top: 14px; 
+  }
+
   &__list-wrap {
-    margin: 25px 0;
+    margin: 14px 0;
   }
 
   &__list {
@@ -791,10 +795,10 @@ export default {
   &__sec-title {
     margin-top: 48px;
     margin-bottom: 8px;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 24px;
     line-height: 136%;
-    letter-spacing: -1px;
+    letter-spacing: 0;
     color: $text-color--red;
 
     &--first {
@@ -836,7 +840,7 @@ export default {
 
   &__break-main {
     margin: 25px 0;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 22px;
     line-height: 36px;
     letter-spacing: -0.035em;

@@ -98,9 +98,19 @@ export default {
 	.gdpr,
 	.privacy,
 	.nda {
-		padding-top: 109px;
 		margin-top: 141px;
+	}
+
+	.gdpr,
+	.privacy,
+	.nda,
+	.faq {
+		padding-top: 109px;
 		border-top: 1px solid $border-color--grey-dark;
+	}
+
+	.faq {
+		margin-top: 114px;
 	}
 
 	@media only screen and (max-width: 1200px) {
@@ -148,6 +158,10 @@ export default {
 		.nda {
 			margin-top: 90px;
 		}
+
+		.faq {
+			margin-top: 65px;
+		}
 	}
 
   @media screen and (max-width: 767px) {
@@ -176,6 +190,10 @@ export default {
 		.privacy,
 		.nda {
 			margin-top: 68px;
+		}
+
+		.faq {
+			margin-top: 44px;
 		}
 	}
 

@@ -112,7 +112,8 @@ export default {
       ],
       isEmailSent: false,
       onSumbit: false,
-      form: ''
+      form: '',
+      modalTitle: 'Mad Devs Website Carrers Form'
     };
   },
   mounted() {
@@ -142,7 +143,8 @@ export default {
               linkedinProfile: this.linkedinProfile,
               positionValue: this.positionValue.type,
               positionTitle: this.positionTitle,
-              subject: `Job Candidate Application for ${this.positionTitle}`
+              subject: `Job Candidate Application for ${this.positionTitle}`,
+              modalTitle: this.modalTitle
             },
             attachment:{
               base64: base64.replace(/^data:(.*,)?/, ''),
