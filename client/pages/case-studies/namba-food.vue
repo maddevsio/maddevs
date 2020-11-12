@@ -14,12 +14,9 @@
       value to both vendors and customers by conveniently delivering goods at the right time.
     </TextParagraph>
     <h2>Multi-directional business model</h2>
-    <TextQuoteBig>
-      <div class="case_blockquote__container">
-        <div class="case_blockquote__icon"></div>
-        <p class="case_blockquote__text">Namba Food achieves complete synergy by diversifying to multi-directional business models.</p>
-      </div>
-    </TextQuoteBig>
+    <TextQuote>
+      Namba Food achieves complete synergy by diversifying to multi-directional business models.
+    </TextQuote>
     <h3>Delivery of food and goods</h3>
     <TextParagraph>
       Namba Food's delivery service positions itself as an intermediary body between good & food service providers and
@@ -182,7 +179,6 @@ import Header from '@/components/Cases/Header';
 import TextParagraph from '@/components/Cases/TextParagraph';
 import TextQuote from '@/components/Cases/TextQuote';
 import TextQuoteBox from '@/components/Cases/TextQuoteBox';
-import TextQuoteBig from '@/components/Cases/TextQuoteBig';
 import Picture from '@/components/Cases/Picture';
 import List from '@/components/Cases/List';
 
@@ -192,7 +188,6 @@ export default {
     TextParagraph,
     TextQuote,
     TextQuoteBox,
-    TextQuoteBig,
     Picture,
     List
   },
