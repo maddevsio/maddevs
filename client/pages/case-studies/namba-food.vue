@@ -171,6 +171,9 @@
         </TextParagraph>
       </div>
     </div>
+    <TextQuote>
+      Control panel enables operators to , manage items that were ordered from a shop or restaurant, and promo
+    </TextQuote>
   </main>
 </template>
 
