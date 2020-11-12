@@ -171,3 +171,16 @@
     left: 0;
   }
 }
+
+@mixin text-quot_box($color, $borderColor) {
+  margin: 0;
+  padding-left: 33px;
+  border-left: 2px solid $borderColor;
+  color: $color;
+  font-family: Inter-Regular, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 33px;  
+  letter-spacing: -0.035em;
+}
