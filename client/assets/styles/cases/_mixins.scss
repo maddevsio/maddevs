@@ -114,15 +114,18 @@
   flex-direction: column;
 }
 
-@mixin list-item_box($backgroundColor, $color) {
-  margin-bottom: 11px;
-  padding: 16px 17px;
+@mixin list_text {
   font-family: Inter-Regular, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
   line-height: 166%;
   letter-spacing: -0.035em;
+}
+
+@mixin list-item_box($backgroundColor, $color) {
+  margin-bottom: 11px;
+  padding: 16px 17px;
   color: $color;
   background-color: $backgroundColor;
 
@@ -144,4 +147,27 @@
   line-height: 133%;
   text-align: center;
   letter-spacing: -0.035em;
+}
+
+@mixin list-item_dot($color) {
+  position: relative;
+  margin-bottom: 14px;
+  padding-left: 25px;
+  color: $color;
+  font-family: Inter-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 166%;
+  letter-spacing: -0.035em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+  }
 }
