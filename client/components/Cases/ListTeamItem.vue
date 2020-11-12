@@ -1,35 +1,52 @@
 <template>
-  <li class="case_team-member">
-    <slot></slot>
+  <li class="case_team-item">
+    <img class="case_team-item__image"> <!-- Выставил временно, заменю на компонент Picture как только подготовлю его --> 
+    <div class="case_team-item__info">
+      <p class="case_team-item__name">{{name}}</p>
+      <p class="case_team-item__position">{{position}}</p>
+    </div>
   </li>
 </template>
 
 <script>
 export default {
-  name: 'TeamMember'
+  name: 'ListTeamItem',
+  props: {
+    name: {
+      type: String,
+      default: ''
+    },
+    position: {
+      type: String,
+      default: ''
+    }
+  }
 };
 </script>
 
 <style scoped lang="scss">
   @import '../../assets/styles/cases/_mixins';
   
-  .case_team-member {
-    @include team_member;
+  .case_team-item {
+    display: flex;
+    align-items: center;
 
     &__info-wrap {
-      @include team-member_info;
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
     }
 
-    &__full-name {
-      @include team-member_full-name($text-color--black-cases); 
+    &__name {
+      @include team-item_name($text-color--black-cases); 
     }
 
     &__position {
-      @include team-member_position($text-color--black-cases);
+      @include team-item_position($text-color--black-cases);
     }
 
     &__image {
-      @include team-member_image;
+      @include team-item_image;
     }
   }
 </style>
