@@ -1,4 +1,5 @@
-@import "../_vars";
+@import "../vars";
+@import "./Icons/CaseStudiesIcons";
 
 @mixin title_h1($color) {
   color: $color;
@@ -73,4 +74,20 @@
   font-size: 13px;
   line-height: 166%;
   letter-spacing: -0.02em;
+}
+
+@mixin quote_text($color) {
+  color: $color;
+  font-family: Inter-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 155%;
+  letter-spacing: -0.02em;
+}
+
+@mixin quote_icon {
+  width: 68px;
+  height: 68px;
+  @include red-quote;
 }
