@@ -1,0 +1,26 @@
+<template>
+  <li class="case_list-numbered_item">
+    <slot></slot>
+  </li>
+</template>
+
+<script>
+export default {
+  name: 'ListNumberedItem'
+};
+</script>
+
+<style scoped lang="scss">
+  @import '../../assets/styles/cases/_mixins';
+
+  .case_list-numbered_item {
+    list-style: none;
+    @include list-item_box($bgcolor--white, $text-color--black-cases);
+
+    &::before {
+      margin-right: 14px;
+      counter-increment: section;
+      content: counters(section, "")
+    }
+  }
+</style>

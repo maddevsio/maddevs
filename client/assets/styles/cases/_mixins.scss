@@ -145,6 +145,7 @@
   padding: 16px 17px;
   color: $color;
   background-color: $backgroundColor;
+  @include list_text;
 
   &:last-child {
     margin-bottom: 0;

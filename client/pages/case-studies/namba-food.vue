@@ -5,9 +5,9 @@
       Mad Devs developed the Namba Food delivery service from scratch. The app for couriers, end-users placing orders,
       and business owners work as a seamless system, ensuring a smooth delivery process for all types of goods.
     </TextParagraph>
-    <TextQuote>
+    <TextQuoteBox>
       Namba Food is a unique delivery service that combines speed, convenience, and simplicity.
-    </TextQuote>
+    </TextQuoteBox>
     <TextParagraph>
       Being first is hard. Namba Food is a story about success that took a global idea and successfully localized and
       integrated it into the daily lives of Kyrgyzstan's people. Since 2013 the company has been on a mission to bring
@@ -86,12 +86,20 @@
       Namba Food involves several user journeys for different roles. Each user journey required different sets of
       functionalities and user interfaces.
     </TextParagraph>
-    <List>
-      <li>Website and Client mobile applications for making orders.</li>
-      <li>Manager control panel for proceeding with orders.</li>
-      <li>Operator panel and Courier mobile app for assigning the orders to couriers and tracking them.</li>
-      <li>Admin Panel for checking the reports and stats, and managing all the staff.</li>
-    </List>
+    <ListNumbered>
+      <ListNumberedItem>
+        Website and Client mobile applications for making orders.
+      </ListNumberedItem>
+      <ListNumberedItem>
+        Manager control panel for proceeding with orders.
+      </ListNumberedItem>
+      <ListNumberedItem>
+        Operator panel and Courier mobile app for assigning the orders to couriers and tracking them.
+      </ListNumberedItem>
+      <ListNumberedItem>
+        Admin Panel for checking the reports and stats, and managing all the staff.
+      </ListNumberedItem>
+    </ListNumbered>
     <h2>Web-version & mobile application for end-users (Android, iOS)</h2>
     <TextParagraph>
       Namba Food is not a simple catalog of goods and services as it aims to seamlessly blend into the modern, busy
@@ -184,6 +192,12 @@ import TextQuote from '@/components/Cases/TextQuote';
 import TextQuoteBox from '@/components/Cases/TextQuoteBox';
 import Picture from '@/components/Cases/Picture';
 import List from '@/components/Cases/List';
+import ListNumbered from '@/components/Cases/ListNumbered';
+import ListNumberedItem from '@/components/Cases/ListNumberedItem';
+import ListTeam from '@/components/Cases/ListTeam';
+import ListTeamItem from '@/components/Cases/ListTeamItem';
+import ListItemBoxCheckMark from '@/components/Cases/ListItemBoxCheckMark';
+import ListItemDot from '@/components/Cases/ListItemDot';
 
 export default {
   components: {
@@ -192,7 +206,13 @@ export default {
     TextQuote,
     TextQuoteBox,
     Picture,
-    List
+    List,
+    ListNumbered,
+    ListNumberedItem,
+    ListTeam,
+    ListTeamItem,
+    ListItemBoxCheckMark,
+    ListItemDot
   },
   name: 'NambaFood',
   data() {
