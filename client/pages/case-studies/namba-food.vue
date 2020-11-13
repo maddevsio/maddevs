@@ -86,20 +86,20 @@
       Namba Food involves several user journeys for different roles. Each user journey required different sets of
       functionalities and user interfaces.
     </TextParagraph>
-    <ListNumbered>
-      <ListNumberedItem>
+    <ListNumberedBox>
+      <ListNumberedItemBox>
         Website and Client mobile applications for making orders.
-      </ListNumberedItem>
-      <ListNumberedItem>
+      </ListNumberedItemBox>
+      <ListNumberedItemBox>
         Manager control panel for proceeding with orders.
-      </ListNumberedItem>
-      <ListNumberedItem>
+      </ListNumberedItemBox>
+      <ListNumberedItemBox>
         Operator panel and Courier mobile app for assigning the orders to couriers and tracking them.
-      </ListNumberedItem>
-      <ListNumberedItem>
+      </ListNumberedItemBox>
+      <ListNumberedItemBox>
         Admin Panel for checking the reports and stats, and managing all the staff.
-      </ListNumberedItem>
-    </ListNumbered>
+      </ListNumberedItemBox>
+    </ListNumberedBox>
     <h2>Web-version & mobile application for end-users (Android, iOS)</h2>
     <TextParagraph>
       Namba Food is not a simple catalog of goods and services as it aims to seamlessly blend into the modern, busy
@@ -192,8 +192,8 @@ import TextQuote from '@/components/Cases/TextQuote';
 import TextQuoteBox from '@/components/Cases/TextQuoteBox';
 import Picture from '@/components/Cases/Picture';
 import List from '@/components/Cases/List';
-import ListNumbered from '@/components/Cases/ListNumbered';
-import ListNumberedItem from '@/components/Cases/ListNumberedItem';
+import ListNumberedBox from '@/components/Cases/ListNumberedBox';
+import ListNumberedItemBox from '@/components/Cases/ListNumberedItemBox';
 import ListTeam from '@/components/Cases/ListTeam';
 import ListTeamItem from '@/components/Cases/ListTeamItem';
 import ListItemBoxCheckMark from '@/components/Cases/ListItemBoxCheckMark';
@@ -207,8 +207,8 @@ export default {
     TextQuoteBox,
     Picture,
     List,
-    ListNumbered,
-    ListNumberedItem,
+    ListNumberedBox,
+    ListNumberedItemBox,
     ListTeam,
     ListTeamItem,
     ListItemBoxCheckMark,
