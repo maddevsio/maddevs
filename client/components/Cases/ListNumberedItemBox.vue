@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'ListNumberedItem'
+  name: 'ListNumberedItemBox'
 };
 </script>
 
