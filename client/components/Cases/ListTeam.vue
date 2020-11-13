@@ -1,21 +1,19 @@
 <template>
-  <ul class="case_list">
+  <ul class="case_list-team">
     <slot></slot>
   </ul>
 </template>
 
 <script>
 export default {
-  name: 'List'
+  name: 'ListTeam'
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
   @import '../../assets/styles/cases/_mixins';
 
-  .case {
-    &_list {
-      @include list;
-    }
+  .case_list-team {
+    @include list_team;
   }
 </style>

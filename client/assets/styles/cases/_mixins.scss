@@ -91,3 +91,114 @@
   height: 68px;
   @include red-quote;
 }
+
+@mixin list_team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 21px;
+  grid-row-gap: 71px;
+}
+
+@mixin team-item_image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: gainsboro; // Выставил временно, удалю как только настрою компонент Pictures
+}
+
+@mixin team-item_name($color) {
+  color: $color;
+  font-family: Inter-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.035em;
+}
+
+@mixin team-item_position($color) {
+  color: $color;
+  font-family: Inter-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+@mixin list {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin list_text {
+  font-family: Inter-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 166%;
+  letter-spacing: -0.035em;
+}
+
+@mixin list-item_box($backgroundColor, $color) {
+  margin-bottom: 11px;
+  padding: 16px 17px;
+  color: $color;
+  background-color: $backgroundColor;
+  @include list_text;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin list-item-box_checkmark($color) {
+  content: '✓';
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+  color: $color;
+  font-family: Inter-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 133%;
+  text-align: center;
+  letter-spacing: -0.035em;
+}
+
+@mixin list-item_dot($color) {
+  position: relative;
+  margin-bottom: 14px;
+  padding-left: 25px;
+  color: $color;
+  font-family: Inter-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 166%;
+  letter-spacing: -0.035em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+  }
+}
+
+@mixin text-quot_box($color, $borderColor) {
+  margin: 0;
+  padding-left: 33px;
+  border-left: 2px solid $borderColor;
+  color: $color;
+  font-family: Inter-Regular, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 33px;  
+  letter-spacing: -0.035em;
+}
