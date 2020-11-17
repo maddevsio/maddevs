@@ -1,16 +1,15 @@
 <template>
-  <!-- Добавить цикл подключающий изображение на основе его имени в медиа дериктории взятое из родительского компонента -->
   <picture>
     <source
-      class="multi-image"
-      :srcset="[require(`@/assets/img/Cases/webp/${fileName}.webp`) + ' ', require(`@/assets/img/Cases/webp/${fileNameRetina}.webp`) + ' 2x']"
+      class="image"
+      :srcset="[require(`@/assets/img/Cases/${pictureFolder}/webp/${fileName}.webp`) + ' ', require(`@/assets/img/Cases/${pictureFolder}/webp/${fileNameRetina}.webp`) + ' 2x']"
       type='image/webp'>
     >
     <img
-      class="multi-image"
-      :src="[require(`@/assets/img/Cases/jpg/${fileName}.jpg`)]"
-      :srcset="[require(`@/assets/img/Cases/jpg/${fileNameRetina}.jpg`) + ' 2x']"
-      alt=""
+      class="image"
+      :src="[require(`@/assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}.${fileExtension}`)]"
+      :srcset="[require(`@/assets/img/Cases/${pictureFolder}/${fileExtension}/${fileNameRetina}.${fileExtension}`) + ' 2x']"
+      :alt="alt"
       loading="lazy"
     >
   </picture>
@@ -21,20 +20,35 @@
 export default {
   name: 'Picture',
   props: {
+    pictureFolder: {
+      types: String,
+      default: '',
+      required: true
+    },
     fileName: {
       type: String,
-      default: ''
+      default: '',
+      required: true
     },
     fileNameRetina: {
+      type: String,
+      default: '',
+      required: true
+    },
+    fileExtension: {
+      type: String,
+      default: '',
+      required: true
+    },
+    alt: {
       type: String,
       default: ''
     }
   }
 };
 </script>
-s
-<style scoped>
-  .multi-image {
+<style lang="scss" scoped>
+  .image {
     width: 100%;
     height: 100%;
   }

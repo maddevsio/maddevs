@@ -52,8 +52,6 @@
         by Commercial bank Kyrgyzstan and Balance by Beeline telecommunication service provider have successfully
         integrated Namba Food API into their mobile apps.
       </TextParagraph>
-      <!--  Нужно передавать имя подключаемого изображения -->
-      <Picture/>
     </section>
     <section class="container_regular">
       <h2 class="title_h2">High-level system overview </h2>
@@ -62,11 +60,11 @@
         cycle of ordering goods online. Thus, an advanced set of software and hardware was required to maintain flawless
         work for all stakeholders, including end-users, couriers, team operators, cafes' and store managers.
       </TextParagraph>
-      <Picture/>
+      <!-- <Picture/> -->
     </section>
     <section class="container_regular">
       <h2 class="title_h2">Typical usage scenarios & user roles</h2>
-      <Picture/>
+      <!-- <Picture/> -->
       <TextParagraph>
         Namba Food involves several user journeys for different roles. Each user journey required different sets of
         functionalities and user interfaces.
@@ -93,11 +91,11 @@
         lifestyle of its customers. It was required to develop a convenient process for ordering products and make it
         stress-free.
       </TextParagraph>
-      <Picture/>
+      <!-- <Picture/> -->
       <TextQuote>
         Namba Food meticulously studied users' behavior and collected feedback to find the perfect market-fit.
       </TextQuote>
-      <Picture/>
+      <!-- <Picture/> -->
       <h3 class="title_h3 m-12_bottom">Simple ordering process for end-users</h3>
       <TextParagraph>
         Namba Food meticulously studied users' behavior and collected feedback to find the perfect market-fit.
@@ -108,11 +106,11 @@
         <li>Users receive a call from an operator to confirm the order or can tick the "no calls" checkbox.</li>
         <li>Courier delivers the order in a pre-estimated time.</li>
       </List>
-      <Picture/>
+      <!-- <Picture/> -->
     </section>
     <section class="container_regular">
       <h2 class="title_h2">Mobile application for couriers (Android)</h2>
-      <Picture/>
+      <!-- <Picture/> -->
       <TextParagraph>
         Android app for couriers enables them to receive new orders, assigned to them by operators via the control
         panel.
@@ -132,6 +130,13 @@
         In the admin panel, managers can configure discounts, set working days and hours for cafes, add new meal
         offerings, and do many other things enabling them to deliver users the best possible experience.¬
       </TextParagraph>
+      <Picture
+        pictureFolder="nambafood"
+        fileName="sjms-analytics"
+        fileNameRetina="sjms-analytics@2x" 
+        fileExtension="png" 
+        alt=""
+      />
       <h3 class="title_h3 m-12_bottom">Integrating new business with 1000+ products takes less than a few hours</h3>
       <TextParagraph>
         The scalability of Namba Food enables its managers to integrate new business partners into a system quickly.
@@ -175,9 +180,6 @@
           </TextParagraph>
         </div>
       </div>
-      <TextQuote>
-        Control panel enables operators to , manage items that were ordered from a shop or restaurant, and promo
-      </TextQuote>
     </section>
   </main>
 </template>
