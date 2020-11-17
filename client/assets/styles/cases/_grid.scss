@@ -1,0 +1,53 @@
+.container_regular {
+  max-width: 817px;
+  padding: 0 90px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container_middle {
+  max-width: 1026px;
+  padding: 0 90px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container_full {
+  max-width: 100%;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+$spaces: (
+  '12': 12px,
+  '24': 24px,
+  '48': 48px,
+  '72': 72px,
+  '96': 96px
+);
+
+  // loop, to style Legends
+@each $name, $variable in $spaces {
+// selector based on class name
+  .p-#{$name}_top {
+    padding-top: $variable;
+  }
+
+  .m-#{$name}_top {
+    margin-top: $variable;
+  }
+
+  .p-#{$name}_bottom {
+    padding-bottom: $variable;
+  }
+
+  .m-#{$name}_bottom {
+    margin-bottom: $variable;
+  }
+}
+
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

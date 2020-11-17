@@ -16,7 +16,6 @@ export default {
   .case_blockquote {
     display: flex;
     position: relative;
-    margin: 0;
     padding-left: 81px;
     @include quote_text($text-color--black-cases);
 
@@ -25,7 +24,9 @@ export default {
       position: absolute;
       top: 0;
       left: 0;
-      @include quote_icon;
+      width: 68px;
+      height: 68px;
+      @include red-quote;
     }
   }
 </style>
