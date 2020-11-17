@@ -275,6 +275,37 @@
           pictureFolder="nambafood"
         />
       </ListTeam>
+      <h3 class="title_h3 m-12_bottom">Transparent communication</h3>
+      <TextParagraph>
+        Weekly calls with the customer's business representatives and monthly meetings to see what can be
+        improved from a development/IT viewpoint. Our staff members also work on Namba Food premises several
+        days a week to keep in touch with the customer's employees. This keeps everyone on the same page. We
+        can collect the very recent business requirements and quickly respond to changes that a highly competitive
+        delivery market may throw at us.
+      </TextParagraph>
+      <h2 class="title_h2">Nationwide success and day to day improvements</h2>
+      <TextParagraph>
+        Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba
+        Foods' vision and understanding of its target audience, together, we were able to build a product that truly
+        solves customers' problems. The year-over-year growth rate is truly impressive. 
+      </TextParagraph>
+      <TextQuoteBox class="m-48_top m-48_bottom m-auto">
+        As the number of businesses using Namba Food  the service's yearly growth rate is about 50% for both revenue and deliveries made.
+      </TextQuoteBox>
+      <TextParagraph>
+        In 2017 Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.
+      </TextParagraph>
+      <!-- Тут будет три серых блока которые ещё не готовы -->
+      <TextQuote>
+        With their work, there was a notable
+        return on investment as the order grew by
+        53% YoY. Mad Devs Team always
+        surpasses expectations and is always
+        open to suggestions. The team's
+        competency and dedication enabled
+        prolonged partnership between two companies.
+      </TextQuote>
+      <!-- Тут будет блок с автором цитаты -->
     </section>
   </main>
 </template>
