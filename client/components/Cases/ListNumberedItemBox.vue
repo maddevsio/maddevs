@@ -14,8 +14,8 @@ export default {
   @import '../../assets/styles/cases/_mixins';
 
   .case_list-numbered_item {
-    list-style: none;
     @include list-item_box($bgcolor--white, $text-color--black-cases);
+    list-style: none;
 
     &::before {
       margin-right: 14px;

@@ -14,6 +14,9 @@ export default {
   @import '../../assets/styles/cases/_mixins';
 
   .case_list-team {
-    @include list_team;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 21px;
+    grid-row-gap: 71px;
   }
 </style>

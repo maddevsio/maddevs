@@ -17,6 +17,7 @@ export default {
     padding: 0;
     counter-reset: section;
     list-style-type: none;
-    @include list;
+    display: flex;
+    flex-direction: column;
   }
 </style>

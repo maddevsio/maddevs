@@ -13,9 +13,8 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/styles/cases/_mixins';
 
-  .case {
-    &_list {
-      @include list;
-    }
+  .case_list {
+    display: flex;
+    flex-direction: column;
   }
 </style>
