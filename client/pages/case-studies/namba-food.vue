@@ -290,7 +290,7 @@
         solves customers' problems. The year-over-year growth rate is truly impressive. 
       </TextParagraph>
       <TextQuoteBox class="m-48_top m-48_bottom m-auto">
-        As the number of businesses using Namba Food  the service's yearly growth rate is about 50% for both revenue and deliveries made.
+        As the number of businesses using Namba Food <span class="case_blockquote__text-modificator">the service's yearly growth rate is about 50% for both revenue and deliveries made.</span>
       </TextQuoteBox>
       <TextParagraph>
         In 2017 Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.
