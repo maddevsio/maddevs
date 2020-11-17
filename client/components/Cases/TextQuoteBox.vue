@@ -15,15 +15,9 @@ export default {
 
   .case_blockquote {
     &__box {
-      @include text-quot_box($text-color--quote-box, $border-color--red);
-    }
-
-    &__item {
-      padding-bottom: 24px;
-      
-      &:last-child {
-        padding-bottom: 0;
-      }
+      padding-left: 35px;
+      border-left: 2px solid $border-color--red;
+      @include italic_text($text-color--quote-box, 18px, 33px, -0.035em);
     }
   }
 </style>

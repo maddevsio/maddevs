@@ -1,6 +1,6 @@
 <template>
   <li class="case_team-item">
-    <img class="case_team-item__image"> <!-- Выставил временно, заменю на компонент Picture как только подготовлю его --> 
+    <img class="case_team-item__image"> <!-- Выставил временно, заменю на компонент Picture как только подготовлю его -->
     <div class="case_team-item__info">
       <p class="case_team-item__name">{{name}}</p>
       <p class="case_team-item__position">{{position}}</p>
@@ -26,7 +26,7 @@ export default {
 
 <style scoped lang="scss">
   @import '../../assets/styles/cases/_mixins';
-  
+
   .case_team-item {
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@ export default {
     }
 
     &__name {
-      @include team-item_name($text-color--black-cases); 
+      @include team-item_name($text-color--black-cases);
     }
 
     &__position {
