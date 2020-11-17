@@ -38,7 +38,7 @@ export default {
   }
 
   &_title {
-    @include title_h1($text-color--white);
+    @include title($text-color--white, 51.88px, -2px);
     text-align: center;
   }
 

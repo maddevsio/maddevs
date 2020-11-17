@@ -263,15 +263,19 @@ p {
 }
 
 .title_h2 {
-  @include title_h2($text-color--black-cases);
+  @include title($text-color--black-cases, 41.5px, -0.04em);
 }
 
 .title_h3 {
-  @include title_h3($text-color--black-cases);
+  @include title($text-color--black-cases, 33.2px, -0.04em);
 }
 
 .title_h4 {
-  @include title_h4($text-color--black-cases);
+  @include title($text-color--black-cases, 26.56px, -0.03em);
+}
+
+.title_h5 {
+  @include title($text-color--black-cases, 21.25px, -0.02em);
 }
 
 </style>

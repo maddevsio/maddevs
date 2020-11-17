@@ -14,6 +14,20 @@ export default {
   @import '../../assets/styles/cases/_mixins';
 
   .list-item_dot {
-    @include list-item_dot($text-color--black-cases);
+    position: relative;
+    margin-bottom: 14px;
+    padding-left: 25px;
+    @include default_text($text-color--black-cases, 17px, 166%, -0.035em);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: '\2022';
+      position: absolute;
+      left: 0;
+    }
+
   }
 </style>

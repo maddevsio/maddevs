@@ -38,15 +38,18 @@ export default {
     }
 
     &__name {
-      @include team-item_name($text-color--black-cases);
+      @include default_text($text-color--black-cases, 18px, 22px, -0.035em);
     }
 
     &__position {
-      @include team-item_position($text-color--black-cases);
+      @include default_text($text-color--black-cases, 13px, 20px, -0.02em);
     }
 
     &__image {
-      @include team-item_image;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      background-color: gainsboro; // Выставил временно, удалю как только настрою компонент Pictures
     }
   }
 </style>
