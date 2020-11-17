@@ -4,7 +4,6 @@
       class="image"
       :srcset="[require(`@/assets/img/Cases/${pictureFolder}/webp/${fileName}.webp`) + ' ', require(`@/assets/img/Cases/${pictureFolder}/webp/${fileNameRetina}.webp`) + ' 2x']"
       type='image/webp'>
-    >
     <img
       class="image"
       :src="[require(`@/assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}.${fileExtension}`)]"

@@ -17,7 +17,7 @@ export default {
     position: relative;
     margin-bottom: 14px;
     padding-left: 25px;
-    @include default_text($text-color--black-cases, 17px, 166%, -0.035em);
+    @include default_text($text-color--black-cases, 17px, 166%, -0.035em, normal);
 
     &:last-child {
       margin-bottom: 0;

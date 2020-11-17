@@ -52,7 +52,7 @@ export default {
     border: 0;
     cursor: pointer;
 
-    @include default_text($text-color--white, 18px, 30px, -0.035em);
+    @include default_text($text-color--white, 18px, 30px, -0.035em, normal);
   }
 }
 </style>

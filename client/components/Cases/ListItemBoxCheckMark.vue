@@ -24,7 +24,7 @@ export default {
         height: 24px;
         margin-right: 14px;
 
-        @include default_text($text-color--black-cases, 18px, 133%, -0.035em);
+        @include default_text($text-color--black-cases, 18px, 133%, -0.035em, normal);
       }
     }
   }

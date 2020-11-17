@@ -17,6 +17,6 @@ export default {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 21px;
-    grid-row-gap: 71px;
+    grid-row-gap: 69px;
   }
 </style>

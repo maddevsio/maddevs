@@ -13,11 +13,11 @@
   letter-spacing: $spacing;
 }
 
-@mixin default_text($color, $size, $height, $spacing) {
+@mixin default_text($color, $size, $height, $spacing, $weight) {
   color: $color;
   font-family: Inter-Regular, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: $weight;
   font-size: $size;
   line-height: $height;
   letter-spacing: $spacing;
@@ -37,7 +37,7 @@
   margin-bottom: 11px;
   padding: 16px 17px;
   background-color: $bgcolor--white;
-  @include default_text($text-color--black-cases, 17px, 166%, -0.035em);
+  @include default_text($text-color--black-cases, 17px, 166%, -0.035em, normal);
 
   &:last-child {
     margin-bottom: 0;

@@ -17,7 +17,7 @@ export default {
     display: flex;
     position: relative;
     padding-left: 81px;
-    @include default_text($text-color--black-cases, 38px, 155%, -0.02em);
+    @include default_text($text-color--black-cases, 38px, 155%, -0.02em, normal);
 
     &:before {
       content: '';
