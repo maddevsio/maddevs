@@ -236,7 +236,14 @@
         estimate the severity of an issue, and quickly resolve it.
       </TextParagraph>
       <h3 class="title_h3 m-12_bottom">Technologies used for the Namba Food project</h3>
-      <!-- Тут должен быть список технологий -->
+      <ListTechnologies>
+        <ListTechnologiesItem
+          v-for="(technologiesItem, i) in technologiesList"
+          :key="i"
+          :techName="technologiesItem.techName"
+          :className="technologiesItem.className"
+        />
+      </ListTechnologies>
       <h3 class="title_h3 m-12_bottom">Website and mobile apps infrastructure scheme</h3>
       <!-- Тут будет GIF изображение -->
       <TextParagraph>
@@ -323,6 +330,8 @@ import ListTeam from '@/components/Cases/ListTeam';
 import ListTeamItem from '@/components/Cases/ListTeamItem';
 import ListItemBoxCheckMark from '@/components/Cases/ListItemBoxCheckMark';
 import ListItemDot from '@/components/Cases/ListItemDot';
+import ListTechnologies from '@/components/Cases/ListTechnologies';
+import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem';
 
 export default {
   components: {
@@ -337,7 +346,9 @@ export default {
     ListTeam,
     ListTeamItem,
     ListItemBoxCheckMark,
-    ListItemDot
+    ListItemDot,
+    ListTechnologies,
+    ListTechnologiesItem
   },
   name: 'NambaFood',
   data() {
@@ -434,7 +445,7 @@ export default {
         },
         {
           techName: 'Docker',
-          className: 'devops-docker'
+          className: 'devops-docker case_technologies-item__docker'
         },
         {
           techName: 'Nginx',
@@ -482,7 +493,7 @@ export default {
         },
         {
           techName: 'Atlassian Jira',
-          className: 'pm-jira-assistant'
+          className: 'pm-jira-assistant-blue'
         },
         {
           techName: 'Grafana',
@@ -490,7 +501,7 @@ export default {
         },
         {
           techName: 'Sentry',
-          className: 'devops-sentry'
+          className: 'devops-sentry-dark'
         }
       ]
     };

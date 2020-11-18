@@ -21,23 +21,19 @@ export default {
   props: {
     pictureFolder: {
       types: String,
-      default: '',
-      required: true
+      default: ''
     },
     fileName: {
       type: String,
-      default: '',
-      required: true
+      default: ''
     },
     fileNameRetina: {
       type: String,
-      default: '',
-      required: true
+      default: ''
     },
     fileExtension: {
       type: String,
-      default: '',
-      required: true
+      default: ''
     },
     alt: {
       type: String,
