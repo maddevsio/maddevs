@@ -14,8 +14,6 @@ export default {
   @import '../../assets/styles/cases/_mixins';
 
   .case_list-technologies {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-row-gap: 57px;
+    @include grid(repeat(5, 1fr), auto, 0, 57px);
   }
 </style>

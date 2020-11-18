@@ -43,3 +43,11 @@
     margin-bottom: 0;
   }
 }
+
+@mixin grid($columnsTemplate, $rowsTemplate, $columnGap, $rowGap) {
+  display: grid;
+  grid-template-columns: $columnsTemplate;
+  grid-template-rows: $rowsTemplate;
+  grid-column-gap: $columnGap;
+  grid-row-gap: $rowGap;
+}
