@@ -418,6 +418,80 @@ export default {
           fileName: 'belek-abylov',
           fileExtension: 'jpg'
         }
+      ],
+      technologiesList: [
+        {
+          techName: 'MySQL',
+          className: 'backend-mysql'
+        },
+        {
+          techName: 'PHP Symfony2',
+          className: 'backend-symfony'
+        },
+        {
+          techName: 'Laravel',
+          className: 'backend-laravel'
+        },
+        {
+          techName: 'Docker',
+          className: 'devops-docker'
+        },
+        {
+          techName: 'Nginx',
+          className: 'devops-nginx'
+        },
+        {
+          techName: 'Redis',
+          className: 'backend-redis'
+        },
+        {
+          techName: 'Python (Django)',
+          className: 'backend-python'
+        },
+        {
+          techName: 'Golang',
+          className: 'backend-go'
+        },
+        {
+          techName: 'Kotlin',
+          className: 'mobile-kotlin'
+        },
+        {
+          techName: 'Java',
+          className: 'mobile-java'
+        },
+        {
+          techName: 'Swift',
+          className: 'mobile-swift'
+        },
+        {
+          techName: 'Firebase',
+          className: 'mobile-firebase'
+        },
+        {
+          techName: 'TestFlight',
+          className: 'mobile-test-flight'
+        },
+        {
+          techName: 'OpenStreetMap',
+          className: 'other-open-street-map'
+        },
+        {
+          techName: 'PHP',
+          className: 'backend-php'
+        },
+        {
+          techName: 'Atlassian Jira',
+          className: 'pm-jira-assistant'
+        },
+        {
+          techName: 'Grafana',
+          className: 'devops-grafana'
+        },
+        {
+          techName: 'Sentry',
+          className: 'devops-sentry'
+        }
       ]
     };
   },
