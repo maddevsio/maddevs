@@ -51,3 +51,10 @@
   grid-column-gap: $columnGap;
   grid-row-gap: $rowGap;
 }
+
+@mixin card($width, $height, $padding, $borderRadius) {
+  width: $width;
+  height: $height;
+  padding: $padding;
+  border-radius: $borderRadius;
+}

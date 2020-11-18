@@ -27,6 +27,13 @@ $spaces: (
   '96': 96px
 );
 
+$cardsBackground: (
+  'red': #ee6664,
+  'black': #111213,
+  'turquoise': #46A393,
+  'white': #f5f7f9
+);
+
   // loop, to style Legends
 @each $name, $variable in $spaces {
 // selector based on class name
@@ -44,6 +51,14 @@ $spaces: (
 
   .m-#{$name}_bottom {
     margin-bottom: $variable;
+  }
+}
+
+// loop, to style cards
+@each $name, $variable in $cardsBackground {
+  // selector based on class name
+  .background-color-#{$name} {
+    background-color: $variable;
   }
 }
 

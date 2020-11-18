@@ -64,7 +64,19 @@
     </section>
     <section class="container_regular">
       <h2 class="title_h2">Typical usage scenarios & user roles</h2>
-      <!-- <Picture/> -->
+      <ListUsageScenarios>
+        <Card v-for="(useСase, i) in usageScenarios" :key="i" :class="useСase.cardClassName">
+          <CardUseCase
+            :title="useСase.title"
+            :description="useСase.description"
+            :fileName="useСase.fileName"
+            :fileNameRetina="`${useСase.fileName}@2x`"
+            :fileExtension="useСase.fileExtension"
+            :alt="useСase.alt"
+            pictureFolder="nambafood"
+          />
+        </Card>
+      </ListUsageScenarios>
       <TextParagraph>
         Namba Food involves several user journeys for different roles. Each user journey required different sets of
         functionalities and user interfaces.
@@ -133,8 +145,8 @@
       <Picture
         pictureFolder="nambafood"
         fileName="sjms-analytics"
-        fileNameRetina="sjms-analytics@2x" 
-        fileExtension="png" 
+        fileNameRetina="sjms-analytics@2x"
+        fileExtension="png"
         alt=""
       />
       <h3 class="title_h3 m-12_bottom">Integrating new business with 1000+ products takes less than a few hours</h3>
@@ -332,6 +344,9 @@ import ListItemBoxCheckMark from '@/components/Cases/ListItemBoxCheckMark';
 import ListItemDot from '@/components/Cases/ListItemDot';
 import ListTechnologies from '@/components/Cases/ListTechnologies';
 import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem';
+import ListUsageScenarios from '@/components/Cases/unique-components/ListUsageScenarios';
+import Card from '@/components/Cases/Card';
+import CardUseCase from '@/components/Cases/unique-components/CardUseCase';
 
 export default {
   components: {
@@ -348,7 +363,10 @@ export default {
     ListItemBoxCheckMark,
     ListItemDot,
     ListTechnologies,
-    ListTechnologiesItem
+    ListTechnologiesItem,
+    ListUsageScenarios,
+    Card,
+    CardUseCase
   },
   name: 'NambaFood',
   data() {
@@ -503,7 +521,41 @@ export default {
           techName: 'Sentry',
           className: 'devops-sentry-dark'
         }
-      ]
+      ],
+      usageScenarios: [
+        {
+          title: 'Web-site, mobile application',
+          description: 'Easy-to-use interface and fast navigation for Namba Food users.',
+          cardClassName: 'background-color-red',
+          fileName: 'system-for-call-center',
+          fileExtension: 'png',
+          alt: ''
+        },
+        {
+          title: 'Application for deliverymen',
+          description: 'Allows to plan a route, get information about  orders in the instance.',
+          cardClassName: 'background-color-black',
+          fileName: 'system-for-call-center',
+          fileExtension: 'png',
+          alt: ''
+        },
+        {
+          title: 'Unified control system for call-center and delivery personnel',
+          description: 'Full control of the ordering process from order acceptance to status tracking.',
+          cardClassName: 'background-color-turquoise',
+          fileName: 'system-for-call-center',
+          fileExtension: 'png',
+          alt: ''
+        },
+        {
+          title: 'Control panel for managers',
+          description: 'Facilitates uploading the menu and updating information about services.',
+          cardClassName: 'background-color-white',
+          fileName: 'system-for-call-center',
+          fileExtension: 'png',
+          alt: ''
+        }
+      ] 
     };
   },
   head() {
@@ -552,5 +604,4 @@ p {
 .title_h5 {
   @include title($text-color--black-cases, 21.25px, -0.02em);
 }
-
 </style>
