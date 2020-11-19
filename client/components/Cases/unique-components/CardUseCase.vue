@@ -1,9 +1,21 @@
 <template>
   <div class="case_card-use-case">
-    <h4 class="case_card-use-case__title title_h4">{{title}}</h4>
-    <div class="case_card-use-case__description">
-      <TextParagraph>{{description}}</TextParagraph>
-      <div class="case_card-use-case__image">
+    <h4 
+      class="case_card-use-case__title title_h4" 
+      :class="`case_card-use-case__${classList.uniqueСlass}-title`"
+    >
+      {{title}}
+    </h4>
+    <div class="case_card-use-case__description-wrapper">
+      <TextParagraph 
+        class="case_card-use-case__paragraph" 
+        :class="`case_card-use-case__${classList.uniqueСlass}-paragraph`"
+      >
+        {{description}}
+      </TextParagraph>
+      <div 
+        :class="`case_card-use-case__${classList.uniqueСlass}-image`"
+      >
         <Picture
           :pictureFolder="pictureFolder"
           :fileName="fileName"
@@ -53,6 +65,9 @@ export default {
     alt: {
       type: String,
       default: ''
+    },
+    classList: {
+      type: Object
     }
   }
 };
@@ -65,22 +80,53 @@ export default {
     height: 100%;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+    margin-bottom: -35px;
+
+    &__description-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     &__title {
       margin-bottom: 11px;
     }
 
-    &__description {
-        display: flex;
-        flex: 2;
+    &__title,
+    &__paragraph {
+      color: $text-color--white;
     }
 
-    &__image {
+    &__white-card-title,
+    &__white-card-paragraph {
+      color: $text-color--black-cases;
+    }
+
+    &__red-card-image,
+    &__black-card-image,
+    &__turquoise-card-image,
+    &__white-card-image {
       position: relative;
-      right: -32px;
-      bottom: -42px;
-      margin-top: auto;
+      right: -33px;
+    }
+
+    &__red-card-image,
+    &__black-card-image {
+      height: 198px;
+      width: 140px;
+    }
+
+    &__turquoise-card-image,
+    &__white-card-image {
+      width: 166px;
+    }
+
+    &__turquoise-card-image {
+      height: 158px;
+    }
+
+    &__white-card-image {
+      height: 166px;
+      bottom: -25px;
     }
   }
 </style>

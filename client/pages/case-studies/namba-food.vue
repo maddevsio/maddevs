@@ -64,8 +64,8 @@
     </section>
     <section class="container_regular">
       <h2 class="title_h2">Typical usage scenarios & user roles</h2>
-      <ListUsageScenarios>
-        <Card v-for="(useСase, i) in usageScenarios" :key="i" :class="useСase.cardClassName">
+      <div class="case_usage-scenarios">
+        <Card v-for="(useСase, i) in usageScenarios" :key="i" :class="useСase.classList.cardColor">
           <CardUseCase
             :title="useСase.title"
             :description="useСase.description"
@@ -73,10 +73,11 @@
             :fileNameRetina="`${useСase.fileName}@2x`"
             :fileExtension="useСase.fileExtension"
             :alt="useСase.alt"
+            :classList="useСase.classList"
             pictureFolder="nambafood"
           />
         </Card>
-      </ListUsageScenarios>
+      </div>
       <TextParagraph>
         Namba Food involves several user journeys for different roles. Each user journey required different sets of
         functionalities and user interfaces.
@@ -344,7 +345,6 @@ import ListItemBoxCheckMark from '@/components/Cases/ListItemBoxCheckMark';
 import ListItemDot from '@/components/Cases/ListItemDot';
 import ListTechnologies from '@/components/Cases/ListTechnologies';
 import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem';
-import ListUsageScenarios from '@/components/Cases/unique-components/ListUsageScenarios';
 import Card from '@/components/Cases/Card';
 import CardUseCase from '@/components/Cases/unique-components/CardUseCase';
 
@@ -364,7 +364,6 @@ export default {
     ListItemDot,
     ListTechnologies,
     ListTechnologiesItem,
-    ListUsageScenarios,
     Card,
     CardUseCase
   },
@@ -526,23 +525,32 @@ export default {
         {
           title: 'Web-site, mobile application',
           description: 'Easy-to-use interface and fast navigation for Namba Food users.',
-          cardClassName: 'background-color-red',
-          fileName: 'system-for-call-center',
+          classList: {
+            cardColor: 'background-color-red',
+            uniqueСlass: 'red-card'
+          },
+          fileName: 'apple-iphone-xr-silver',
           fileExtension: 'png',
           alt: ''
         },
         {
           title: 'Application for deliverymen',
           description: 'Allows to plan a route, get information about  orders in the instance.',
-          cardClassName: 'background-color-black',
-          fileName: 'system-for-call-center',
+          classList: {
+            cardColor: 'background-color-black',
+            uniqueСlass: 'black-card'
+          },
+          fileName: 'samsung-galaxy-s20-cosmic-gray',
           fileExtension: 'png',
           alt: ''
         },
         {
           title: 'Unified control system for call-center and delivery personnel',
           description: 'Full control of the ordering process from order acceptance to status tracking.',
-          cardClassName: 'background-color-turquoise',
+          classList: {
+            cardColor: 'background-color-turquoise',
+            uniqueСlass: 'turquoise-card'
+          },
           fileName: 'system-for-call-center',
           fileExtension: 'png',
           alt: ''
@@ -550,8 +558,11 @@ export default {
         {
           title: 'Control panel for managers',
           description: 'Facilitates uploading the menu and updating information about services.',
-          cardClassName: 'background-color-white',
-          fileName: 'system-for-call-center',
+          classList: {
+            cardColor: 'background-color-white',
+            uniqueСlass: 'white-card'
+          },
+          fileName: 'sjms-analytics-mini',
           fileExtension: 'png',
           alt: ''
         }
@@ -603,5 +614,9 @@ p {
 
 .title_h5 {
   @include title($text-color--black-cases, 21.25px, -0.02em);
+}
+
+.case_usage-scenarios {
+  @include grid(repeat(2, 1fr), auto, 24px, 25px);
 }
 </style>
