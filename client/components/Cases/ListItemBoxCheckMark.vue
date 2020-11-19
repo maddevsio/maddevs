@@ -15,7 +15,7 @@ export default {
 
   .list-item {
     &_box {
-      @include list-item_box($bgcolor--white, $text-color--black-cases);
+      @include list-item_box($bgcolor--white, $text-color--black-cases, 8px);
 
       &::before {
         content: '✓';

@@ -20,9 +20,11 @@
 }
 
 $spaces: (
+  '8': 8px,
   '12': 12px,
   '24': 24px,
   '48': 48px,
+  '78': 78px,
   '72': 72px,
   '96': 96px
 );
@@ -31,7 +33,8 @@ $cardsBackground: (
   'red': #ee6664,
   'black': #111213,
   'turquoise': #46A393,
-  'white': #f5f7f9
+  'white': #f5f7f9,
+  'berry': #f55876
 );
 
   // loop, to style Legends

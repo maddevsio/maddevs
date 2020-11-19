@@ -33,9 +33,10 @@
   letter-spacing: $spacing;
 }
 
-@mixin list-item_box($backgroundColor, $color) {
+@mixin list-item_box($backgroundColor, $color, $borderRadius) {
   margin-bottom: 11px;
   padding: 16px 17px;
+  border-radius: $borderRadius;
   background-color: $bgcolor--white;
   @include default_text($text-color--black-cases, 17px, 166%, -0.035em, normal);
 
