@@ -327,16 +327,23 @@
         In 2017 Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.
       </TextParagraph>
       <!-- Тут будет три серых блока которые ещё не готовы -->
-      <TextQuote>
-        With their work, there was a notable
-        return on investment as the order grew by
-        53% YoY. Mad Devs Team always
-        surpasses expectations and is always
-        open to suggestions. The team's
-        competency and dedication enabled
-        prolonged partnership between two companies.
-      </TextQuote>
-      <!-- Тут будет блок с автором цитаты -->
+      <TextQuoteAuthor
+        class="text-align-center m-72_bottom"
+        authorName="Aziza Anarbekova"
+        authorPosition="Co-Founder, Namba Food"
+        fileName=""
+        fileNameRetina=""
+        fileExtension=""
+        alt=""
+        pictureFolder="nambafood"
+      >
+        Thanks to our close collaboration, we saw a notable
+        increase in the return on investment, as the number of
+        orders grew by 53% YoY. The Mad Devs Team always
+        surpasses expectations and stays open to suggestions. The
+        team's competency and dedication enabled prolonged
+        partnership between our companies.
+      </TextQuoteAuthor>
     </section>
   </main>
 </template>
@@ -359,6 +366,7 @@ import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem';
 import Card from '@/components/Cases/Card';
 import CardUseCase from '@/components/Cases/cards-content/CardUseCase';
 import CardsBusinessModelsGrid from '@/components/Cases/cards-content/CardsBusinessModelsGrid';
+import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
 
 export default {
   components: {
@@ -378,7 +386,8 @@ export default {
     ListTechnologiesItem,
     Card,
     CardUseCase,
-    CardsBusinessModelsGrid
+    CardsBusinessModelsGrid,
+    TextQuoteAuthor
   },
   name: 'NambaFood',
   data() {
