@@ -1,14 +1,14 @@
 <template>
   <li class="case_team-item">
-    <div class="case_team-item__image-wrap" v-if="fileName && fileNameRetina">
-      <Picture
-        :pictureFolder="pictureFolder"
-        :fileName="fileName"
-        :fileNameRetina="fileNameRetina"
-        :fileExtension="fileExtension"
-        :alt="alt"
-      />
-    </div>
+    <Picture
+      v-if="fileName && fileNameRetina"
+      :pictureFolder="pictureFolder"
+      :fileName="fileName"
+      :fileNameRetina="fileNameRetina"
+      :fileExtension="fileExtension"
+      :alt="alt"
+      class="case_team-item__image"
+    />
     <div class="case_team-item__default-image" v-else></div>
     <div class="case_team-item__info">
       <p class="case_team-item__name">{{name}}</p>
@@ -78,7 +78,7 @@ export default {
       @include default_text($text-color--black-cases, 13px, 20px, -0.02em, normal);
     }
 
-    &__image-wrap,
+    &__image,
     &__default-image {
       width: 40px;
       height: 40px;

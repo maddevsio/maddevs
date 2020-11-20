@@ -118,6 +118,8 @@
         In the admin panel, managers can configure discounts, set working days and hours for cafes, add new meal
         offerings, and do many other things enabling them to deliver users the best possible experience.
       </TextParagraph>
+    </section>
+    <section class="container_middle">
       <Picture
         pictureFolder="nambafood"
         fileName="sjms-analytics"
@@ -125,6 +127,8 @@
         fileExtension="png"
         alt=""
       />
+    </section>
+    <section class="container_regular">
       <TextParagraph>
         Integrating new business with 1000+ products takes less than a few hours.The scalability of Namba Food
         enables its managers to integrate new business partners into a system quickly. Managers prepare an Excel
@@ -363,73 +367,73 @@ export default {
           name: 'Zhanybek Kenzhaliev',
           position: 'DevOps Engineer',
           fileName: '',
-          fileExtension: 'jpg'
+          fileExtension: 'png'
         },
         {
           name: 'Gulbustan Baudunova',
           position: 'Back-end Developer',
           fileName: '',
-          fileExtension: 'jpg'
+          fileExtension: 'png'
         },
         {
           name: 'Tamara Mun',
           position: 'Delivery Manager',
           fileName: 'tamara-mun',
-          fileExtension: 'jpg'
+          fileExtension: 'png'
         },
         {
           name: 'Aidai Atakulova',
           position: 'Project Manager',
           fileName: 'aidai-atakulova',
-          fileExtension: 'jpg'
+          fileExtension: 'png'
         },
         {
           name: 'Baurzhan Omuraliev',
           position: 'Back-end Developer',
           fileName: 'baurzhan-omuraliev',
-          fileExtension: 'jpg'
+          fileExtension: 'png'
         },
         {
           name: 'Nakylai Taiirova',
           position: 'Back-end Developer',
           fileName: '',
-          fileExtension: 'jpg'
+          fileExtension: 'png'
         },
         {
           name: 'Akylbek Djumaliev',
           position: 'Back-end Developer',
           fileName: '',
-          fileExtension: 'jpg'
+          fileExtension: 'png'
         },
         {
           name: 'Stanislav Shcherbinin',
           position: 'Back-end Developer',
           fileName: '',
-          fileExtension: 'jpg'
+          fileExtension: 'png'
         },
         {
           name: 'Eldar Akkozov',
           position: 'Mobile Developer',
           fileName: '',
-          fileExtension: 'jpg'
+          fileExtension: 'png'
         },
         {
           name: 'Altynai Toktomuratova',
           position: 'Mobile Developer',
           fileName: '',
-          fileExtension: 'jpg'
+          fileExtension: 'png'
         },
         {
           name: 'Dmitrii Khalezin',
           position: 'DevOps Engineer',
           fileName: '',
-          fileExtension: 'jpg'
+          fileExtension: 'png'
         },
         {
           name: 'Belek Abylov',
           position: 'Back-end Developer',
           fileName: 'belek-abylov',
-          fileExtension: 'jpg'
+          fileExtension: 'png'
         }
       ],
       technologiesList: [
