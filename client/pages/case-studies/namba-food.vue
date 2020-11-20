@@ -243,6 +243,18 @@
         to keep track of services in Docker containers. Grafana shows how the load in the project is balanced,
         including disk space consumed, memory allocated, swap, load, container uptime, and other parameters.
       </TextParagraph>
+    </section>
+    <section class="container_middle">
+      <Picture
+        pictureFolder="nambafood"
+        fileName="grafana"
+        fileNameRetina="grafana@2x"
+        fileExtension="png"
+        alt=""
+        :boxShadow="true"
+      />
+    </section>
+    <section class="container_regular">
       <TextParagraph class="m-24_top">
         Monitoring also helps Mad Devs to prevent service timeouts. When the load grows, we can track spikes,
         estimate the severity of an issue, and quickly resolve it.
@@ -271,7 +283,8 @@
       <TextParagraph class="m-24_bottom">
         We at Mad Devs widely use pipelines. The deployment stage has been automated for the staging server, and deployment on the production server is done manually. The pipeline for the Namba Food system is displayed below.
       </TextParagraph>
-      <!-- Тут будет широкоформатное изображение -->
+    </section>
+    <section class="container_regular">
       <h3 class="title_h3 m-96_top m-24_bottom">Meet the team</h3>
       <TextParagraph class="m-48_bottom">
         There are currently three members in a core development team. During the pre-launch phase, a larger team
