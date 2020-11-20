@@ -2,10 +2,12 @@
   <picture>
     <source
       class="image"
+      :class="{'box-shadow': boxShadow}"
       :srcset="[require(`@/assets/img/Cases/${pictureFolder}/webp/${fileName}.webp`) + ' ', require(`@/assets/img/Cases/${pictureFolder}/webp/${fileNameRetina}.webp`) + ' 2x']"
       type='image/webp'>
     <img
       class="image"
+      :class="{'box-shadow': boxShadow}"
       :src="[require(`@/assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}.${fileExtension}`)]"
       :srcset="[require(`@/assets/img/Cases/${pictureFolder}/${fileExtension}/${fileNameRetina}.${fileExtension}`) + ' 2x']"
       :alt="alt"
@@ -38,6 +40,10 @@ export default {
     alt: {
       type: String,
       default: ''
+    },
+    boxShadow: {
+      type: Boolean,
+      default: false
     }
   }
 };
@@ -46,5 +52,9 @@ export default {
   .image {
     width: 100%;
     height: 100%;
+  }
+
+  .box-shadow {
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05), 0px 5.47001px 41.35px rgba(0, 0, 0, 0.1);
   }
 </style>

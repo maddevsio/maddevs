@@ -80,8 +80,8 @@ export default {
 
     &__image,
     &__default-image {
-      width: 40px;
-      height: 40px;
+      width: 40.5px;
+      height: 40.5px;
       margin-right: 10px;
     }
 

@@ -126,10 +126,11 @@
         fileNameRetina="sjms-analytics@2x"
         fileExtension="png"
         alt=""
+        :boxShadow="true"
       />
     </section>
     <section class="container_regular">
-      <TextParagraph>
+      <TextParagraph class="m-78_top">
         Integrating new business with 1000+ products takes less than a few hours.The scalability of Namba Food
         enables its managers to integrate new business partners into a system quickly. Managers prepare an Excel
         file with structured menu or products data.
@@ -224,14 +225,24 @@
         crossroads and addresses in a certain radius, and knows how to reverse geocoding and automatically
         update with new data from drivers.
       </TextParagraph>
-      <!-- <Picture/> -->
+    </section>
+    <section class="container_middle">
+      <Picture
+        pictureFolder="nambafood"
+        fileName="map"
+        fileNameRetina="map@2x"
+        fileExtension="png"
+        alt=""
+        :boxShadow="true"
+      />
+    </section>
+    <section class="container_regular">
       <h3 class="title_h3 m-96_top m-12_bottom">Grafana — Docker containers’ monitoring service</h3>
       <TextParagraph class="m-48_bottom">
         To monitor the stability of Namba Food software, Mad Devs has integrated Grafana. It allows our developers
         to keep track of services in Docker containers. Grafana shows how the load in the project is balanced,
         including disk space consumed, memory allocated, swap, load, container uptime, and other parameters.
       </TextParagraph>
-      <!-- <Picture/> -->
       <TextParagraph class="m-24_top">
         Monitoring also helps Mad Devs to prevent service timeouts. When the load grows, we can track spikes,
         estimate the severity of an issue, and quickly resolve it.
