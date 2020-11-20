@@ -345,11 +345,15 @@
         partnership between our companies.
       </TextQuoteAuthor>
     </section>
+    <Footer>
+      Namba Food <br> Top 1 Delivery Service in Central Asia 
+    </Footer>
   </main>
 </template>
 
 <script>
 import Header from '@/components/Cases/Header';
+import Footer from '@/components/Cases/Footer';
 import TextParagraph from '@/components/Cases/TextParagraph';
 import TextQuote from '@/components/Cases/TextQuote';
 import TextQuoteBox from '@/components/Cases/TextQuoteBox';
@@ -387,7 +391,8 @@ export default {
     Card,
     CardUseCase,
     CardsBusinessModelsGrid,
-    TextQuoteAuthor
+    TextQuoteAuthor,
+    Footer
   },
   name: 'NambaFood',
   data() {

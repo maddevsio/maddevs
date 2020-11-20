@@ -31,7 +31,7 @@ export default {
   }
 
   &_logotype {
-    @include nambafood;
+    @include nambafood-header;
     width: 127px;
     height: 114px;
     margin-bottom: 54px;
