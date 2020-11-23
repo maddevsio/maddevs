@@ -1,12 +1,12 @@
 <template>
   <div class="card-content">
     <h5 class="card-content_title title_h5">Delivery service Nambafood</h5>
-    <TextParagraph class="card-content_paragraph">
+    <TextParagraph class="card-content_paragraph m-24_bottom">
       For 5 years Namba Food actively
       evolves and monthly improves
       opportunities of software.
     </TextParagraph>
-    <div class="card-content_row">
+    <div class="card-content_row m-24_bottom">
       <TextParagraph class="card-content_paragraph card-content_paragraph--bold">
         Yearly increase in orders:
       </TextParagraph>
@@ -43,7 +43,6 @@ export default {
       @include default_text($text-color--black-lighter, 13px, 166%, -0.02em, normal);
 
       &--bold {
-        margin-top: 33px;
         margin-bottom: 10px;
         font-weight: 600;
       }

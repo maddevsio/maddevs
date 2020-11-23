@@ -39,7 +39,7 @@
         </TextParagraph>
       </Card>
       <CardsBusinessModelsGrid />
-      <Card class="background-color-white">
+      <Card class="background-color-silver">
         <h4 class="title_h4">Namba Food API</h4>
         <TextParagraph>
           Namba Food API allows businesses to integrate the API into any mobile payment application. Thus,
@@ -161,7 +161,7 @@
       </TextParagraph>
       <h3 class="title_h3 m-24_bottom">Control panel functionality for</h3>
       <div class="columns_container">
-        <Card class="background-color-white">
+        <Card class="background-color-silver">
           <h4 class="title_h3 m-12_bottom">Namba Food <br> managers</h4>
           <TextParagraph class="m-24_bottom">
             Control panel enables managers to have a
@@ -179,7 +179,7 @@
             <ListItemDot>Total accrued commission</ListItemDot>
           </List>
         </Card>
-        <Card class="background-color-white">
+        <Card class="background-color-silver">
           <h4 class="title_h3 m-12_bottom">Namba Food <br> operators</h4>
           <TextParagraph class="m-24_bottom">
             Control panel enables operators to,
@@ -338,13 +338,13 @@
         In 2017 Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.
       </TextParagraph>
       <div class="nationwide-cards">
-        <Card class="background-color-white" padding="24px">
+        <Card class="background-color-silver" padding="32px">
           <CardDeliveryServiceNambafood />
         </Card>
-        <Card class="background-color-white" padding="24px">
+        <Card class="background-color-silver" padding="32px">
           <CardRestaurantTalisman />
         </Card>
-        <Card class="background-color-white" padding="24px">
+        <Card class="background-color-silver" padding="32px">
           <CardNationwideNumbers />
         </Card>
       </div>
@@ -614,7 +614,7 @@ export default {
           title: 'Control panel for managers',
           description: 'Facilitates uploading the menu and updating informationabout services.',
           classList: {
-            cardColor: 'background-color-white',
+            cardColor: 'background-color-silver',
             uniqueСlass: 'white-card'
           },
           fileName: 'sjms-analytics-mini',
