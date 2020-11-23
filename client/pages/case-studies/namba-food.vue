@@ -337,7 +337,17 @@
       <TextParagraph class="m-48_bottom">
         In 2017 Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.
       </TextParagraph>
-      <!-- Тут будет три серых блока которые ещё не готовы -->
+      <div class="nationwide-cards">
+        <Card class="background-color-white">
+          <CardDeliveryServiceNambafood />
+        </Card>
+        <Card class="background-color-white">
+          <CardRestaurantTalisman />
+        </Card>
+        <Card class="background-color-white">
+          <CardDeliveryServiceNambafood />
+        </Card>
+      </div>
       <TextQuoteAuthor
         class="text-align-center m-72_bottom"
         authorName="Aziza Anarbekova"
@@ -382,6 +392,8 @@ import Card from '@/components/Cases/Card';
 import CardUseCase from '@/components/Cases/cards-content/CardUseCase';
 import CardsBusinessModelsGrid from '@/components/Cases/cards-content/CardsBusinessModelsGrid';
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
+import CardDeliveryServiceNambafood from '@/components/Cases/cards-content/CardDeliveryServiceNambafood';
+import CardRestaurantTalisman from '@/components/Cases/cards-content/CardRestaurantTalisman';
 
 export default {
   components: {
@@ -403,7 +415,9 @@ export default {
     CardUseCase,
     CardsBusinessModelsGrid,
     TextQuoteAuthor,
-    Footer
+    Footer,
+    CardDeliveryServiceNambafood,
+    CardRestaurantTalisman
   },
   name: 'NambaFood',
   data() {
@@ -660,6 +674,10 @@ p {
 
 .case_usage-scenarios {
   @include grid(repeat(2, 1fr), auto, 25px, 25px);
+}
+
+.nationwide-cards {
+  @include grid(repeat(3, 1fr), auto, 25px, 0);
 }
 
 .text-align-center {
