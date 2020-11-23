@@ -1,14 +1,17 @@
 <template>
-  <p class="case_paragraph">
+  <p class="case_paragraph" :style="`color: ${color}`">
     <slot></slot>
   </p>
 </template>
 
 <script>
 export default {
-  name: 'TextParagraph'
+  name: 'TextParagraph',
+  props: {
+    color: {
+      type: String,
+      default: ''
+    }
+  }
 };
 </script>
-
-<style scoped lang="scss">
-</style>

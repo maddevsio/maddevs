@@ -101,8 +101,8 @@
     </section>
     <div class="container_full background-color-black">
       <section class="container_regular p-48_top">
-        <h2 class="title_h2 text-align-center m-48_bottom">Android application for couriers</h2>
-        <TextParagraph class="text-align-center m-24_bottom">
+        <h2 class="title_h2 text-align-center m-48_bottom" :style="{color: '#f5f7f9'}">Android application for couriers</h2>
+        <TextParagraph color="#f5f7f9" class="text-align-center m-24_bottom">
           Android app for couriers enables them to receive new orders, assigned to them by operators via the control
           panel. After a courier is assigned to the order, their app receives a push notification and displays the
           order pick-up location. Having received the notification, the courier goes to pick up the order from a cafe or a shop
