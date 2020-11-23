@@ -1,12 +1,18 @@
 <template>
-  <div class="case_card">
+  <div class="case_card" :style="`padding: ${padding}`">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Card'
+  name: 'Card',
+  props: {
+    padding: {
+      type: String,
+      default: ''
+    }
+  }
 };
 </script>
 

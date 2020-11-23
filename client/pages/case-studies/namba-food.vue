@@ -338,14 +338,14 @@
         In 2017 Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.
       </TextParagraph>
       <div class="nationwide-cards">
-        <Card class="background-color-white">
+        <Card class="background-color-white" padding="24px">
           <CardDeliveryServiceNambafood />
         </Card>
-        <Card class="background-color-white">
+        <Card class="background-color-white" padding="24px">
           <CardRestaurantTalisman />
         </Card>
-        <Card class="background-color-white">
-          <CardDeliveryServiceNambafood />
+        <Card class="background-color-white" padding="24px">
+          <CardNationwideNumbers />
         </Card>
       </div>
       <TextQuoteAuthor
@@ -394,6 +394,8 @@ import CardsBusinessModelsGrid from '@/components/Cases/cards-content/CardsBusin
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
 import CardDeliveryServiceNambafood from '@/components/Cases/cards-content/CardDeliveryServiceNambafood';
 import CardRestaurantTalisman from '@/components/Cases/cards-content/CardRestaurantTalisman';
+import CardNationwideNumbers from '@/components/Cases/cards-content/CardNationwideNumbers';
+
 
 export default {
   components: {
@@ -417,7 +419,8 @@ export default {
     TextQuoteAuthor,
     Footer,
     CardDeliveryServiceNambafood,
-    CardRestaurantTalisman
+    CardRestaurantTalisman,
+    CardNationwideNumbers
   },
   name: 'NambaFood',
   data() {
