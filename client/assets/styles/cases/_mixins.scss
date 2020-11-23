@@ -34,7 +34,7 @@
 }
 
 @mixin list-item_box($backgroundColor, $color, $borderRadius) {
-  margin-bottom: 11px;
+  margin-bottom: 16px;
   padding: 16px 17px;
   border-radius: $borderRadius;
   background-color: $bgcolor--white;

@@ -3,7 +3,7 @@
     <Header/>
     <div class="animation_block"></div>
     <section class="container_regular m-48_top m-96_bottom">
-      <TextParagraph class="p-24_bottom">
+      <TextParagraph>
         Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users
         placing orders, and business owners work as a seamless system, ensuring a smooth delivery process for all
         types of goods. 
@@ -11,36 +11,23 @@
       <TextQuoteBox class="m-48_top m-48_bottom m-auto">
         Namba Food is a unique delivery service that combines speed, convenience, <br> and simplicity. 
       </TextQuoteBox>
-      <TextParagraph class="p-24_top">
+      <TextParagraph>
         Being first is hard. Namba Food is a story about success that took a global idea and successfully localized
         and integrated it into the daily lives of Kyrgyzstan's people. Since 2013 the company has been on a mission to
         bring value to both vendors and customers by conveniently delivering goods at the right time. 
       </TextParagraph>
     </section>
     <section class="container_regular">
-      <h2 class="title_h2 text-align-center">Multi-directional business model</h2>
-      <TextParagraph class="m-48_bottom text-align-center">
+      <h2 class="title_h2 text-align-center m-24_bottom">Multi-directional business model</h2>
+      <TextParagraph class="m-24_bottom text-align-center">
         Namba Food achieves complete synergy by diversifying to multi-directional business models.
       </TextParagraph>
       <Card class="background-color-black">
-        <h4 class="title_h4">Mini white label</h4>
-        <TextParagraph>
-          After business owners submit pictures and prices, the
-          Namba Food team creates a customized and branded
-          e-commerce website. Updates, support, and
-          maintenance are done by Namba Food, too.
-        </TextParagraph>
-        <h4 class="title_h4">Full white label</h4>
-        <TextParagraph>
-          Business partners can use Namba Food’s software
-          and business model, adjusting those to their needs,
-          scale, and region. Namba Food is responsible for its
-          maintenance and helps with management and marketing.
-        </TextParagraph>
+        <CardNinjaSushi />
       </Card>
       <CardsBusinessModelsGrid />
       <Card class="background-color-silver">
-        <h4 class="title_h4">Namba Food API</h4>
+        <h4 class="title_h4 m-8_bottom">Namba Food API</h4>
         <TextParagraph>
           Namba Food API allows businesses to integrate the API into any mobile payment application. Thus,
           end-users get the opportunity to quickly order goods & services without leaving the app using the
@@ -59,9 +46,10 @@
         flawless work for all stakeholders, including end-users, couriers, team operators, cafes' and store managers.
       </TextParagraph>
     </section>
-    <!-- GIF --->
+    <!-- Тут будет гифка, так как она ещё не готова, я просто отрисую серый блок ---> 
+    <div class="container_full background-color-silver grey-section"></div>
     <section class="container_regular">
-      <h2 class="title_h2 text-align-center m-24_bottom">Typical usage scenarios & user roles</h2>
+      <h2 class="title_h2 text-align-center m-96_top m-24_bottom">Typical usage scenarios & user roles</h2>
       <TextParagraph class="text-align-center m-48_bottom">
         Namba Food involves several user journeys for different roles. Each user journey required different sets of functionalities and user interfaces.
       </TextParagraph>
@@ -82,24 +70,43 @@
     </section>
     <section class="container_regular">
       <h2 class="title_h2 m-96_top m-24_bottom">Web-version & mobile application for end-users (Android, iOS)</h2>
-      <TextParagraph>
+      <TextParagraph class="m-48_bottom">
         Namba Food is not a simple catalog of goods and services as it aims to seamlessly blend into the modern, busy
         lifestyle of its customers. It was required to develop a convenient process for ordering products and make it
         stress-free.
       </TextParagraph>
-      <!-- Full screen iPhone picture -->
-      <h3 class="title_h3 m-96_top m-12_bottom">Simple ordering process for end-users</h3>
+    </section>
+    <!-- Full screen iPhone picture -->
+    <div class="container_full background-color-silver grey-section"></div>
+    <section class="container_regular">
+      <h3 class="title_h3 m-96_top m-24_bottom">Simple ordering process for end-users</h3>
       <TextParagraph class="m-24_bottom">
         Namba Food meticulously studied users' behavior and collected feedback to find the perfect market-fit.
       </TextParagraph>
-      <ListNumberedBox>
+      <ListNumberedBox class="m-72_bottom">
         <ListNumberedItemBox>Users go to the website and choose cafes and shops (+ orders can be placed via phone).</ListNumberedItemBox>
         <ListNumberedItemBox>Users save products to cart and checkout.</ListNumberedItemBox>
         <ListNumberedItemBox>Users receive a call from an operator to confirm the order or can tick the "no calls" checkbox.</ListNumberedItemBox>
         <ListNumberedItemBox>Courier delivers the order in a pre-estimated time.</ListNumberedItemBox>
       </ListNumberedBox>
     </section>
-    <div class="container_full background-color-black">
+    <section class="container_regular">
+      <h2 class="title_h2 m-24_bottom">Customers track order statuses</h2>
+      <TextParagraph class="m-24_bottom">
+        With the Namba Food delivery service's growing popularity, the load on customer support and its operators
+        grew exponentially.
+      </TextParagraph>
+      <TextParagraph class="m-24_bottom">
+        Customer support challenge: The lack of transparent status updates led to the majority of users calling to
+        check the delivery status. Business challenge: Continuously growing number of customer support team
+        occurred in high operational expenses.
+      </TextParagraph>
+      <TextParagraph class="m-96_bottom">
+        Thus, the Mad Devs team has developed a user-friendly Status feature. Therefore, customers can easily
+        track the progress on both mobile application and website.
+      </TextParagraph>
+    </section>
+    <div class="container_full background-color-black m-48_bottom">
       <section class="container_regular p-78_top">
         <h2 class="title_h2 text-align-center m-48_bottom" :style="{color: '#f5f7f9'}">Android application for couriers</h2>
         <TextParagraph color="#f5f7f9" class="text-align-center m-56_bottom">
@@ -130,7 +137,7 @@
         offerings, and do many other things enabling them to deliver users the best possible experience.
       </TextParagraph>
     </section>
-    <section class="container_middle">
+    <section class="container_middle m-72_bottom">
       <Picture
         pictureFolder="nambafood"
         fileName="sjms-analytics"
@@ -141,7 +148,7 @@
       />
     </section>
     <section class="container_regular">
-      <TextParagraph class="m-78_top">
+      <TextParagraph>
         Integrating new business with 1000+ products takes less than a few hours.The scalability of Namba Food
         enables its managers to integrate new business partners into a system quickly. Managers prepare an Excel
         file with structured menu or products data.
@@ -395,6 +402,7 @@ import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
 import CardDeliveryServiceNambafood from '@/components/Cases/cards-content/CardDeliveryServiceNambafood';
 import CardRestaurantTalisman from '@/components/Cases/cards-content/CardRestaurantTalisman';
 import CardNationwideNumbers from '@/components/Cases/cards-content/CardNationwideNumbers';
+import CardNinjaSushi from '@/components/Cases/cards-content/CardNinjaSushi';
 
 
 export default {
@@ -420,7 +428,8 @@ export default {
     Footer,
     CardDeliveryServiceNambafood,
     CardRestaurantTalisman,
-    CardNationwideNumbers
+    CardNationwideNumbers,
+    CardNinjaSushi
   },
   name: 'NambaFood',
   data() {
@@ -685,5 +694,10 @@ p {
 
 .text-align-center {
   text-align: center;
+}
+
+// Установил временно, в скором времени удалю 
+.grey-section {
+  height: 500px;
 }
 </style>

@@ -93,7 +93,7 @@ export default {
 
     &__title,
     &__paragraph {
-      color: $text-color--white;
+      color: $text-color--white-primary;
     }
 
     &__white-card-title,
@@ -126,7 +126,7 @@ export default {
 
     &__white-card-image {
       height: 166px;
-      bottom: -25px;
+      bottom: -23px;
     }
   }
 </style>

@@ -22,6 +22,6 @@ export default {
   .case_card {
     position: relative;
     overflow: hidden;
-    @include card(auto, auto, 35px 32px, 8px);
+    @include card(auto, auto, 32px, 8px);
   }
 </style>

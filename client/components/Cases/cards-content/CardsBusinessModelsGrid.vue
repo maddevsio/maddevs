@@ -1,6 +1,6 @@
 <template>
   <div class="case_business-models-grid">
-    <Card class="background-color-white case_business-models-grid__personal-card">
+    <Card class="background-color-silver case_business-models-grid__personal-card">
       <div class="case_business-models-grid__personal-image">
         <Picture
           pictureFolder="nambafood"
@@ -11,7 +11,7 @@
         />
       </div>
       <div class="case_business-models-grid__text-wrapper">
-        <h4 class="title_h4">Personal courier</h4>
+        <h4 class="m-8_bottom title_h4">Personal courier</h4>
         <TextParagraph>
           The personal courier service works 24/7,
           enabling quick delivery for both organizations and individuals. Regardless of
@@ -22,19 +22,19 @@
     </Card>
     <div class="case_business-models-grid__right-column">
       <Card class="background-color-turquoise">
-        <h4 class="title_h4">Outsource partners</h4>
-        <TextParagraph>
+        <h4 class="m-8_bottom title_h4" :style="{color: '#ffffff'}">Outsource partners</h4>
+        <TextParagraph color="#ffffff">
           Business running e-commerce websites,
           but wanting to outsource delivery service
           can benefit from Namba Food’s checkout
           page. It allows businesses to quickly
-          integrate delivery without occurring
+          integrate delivery without occurring <br>
           operational costs.
         </TextParagraph>
       </Card>
       <Card class="background-color-berry">
-        <h4 class="title_h4">Delivery of food and goods</h4>
-        <TextParagraph>
+        <h4 class="m-8_bottom title_h4" :style="{color: '#ffffff'}">Delivery of food and goods</h4>
+        <TextParagraph color="#ffffff">
           Namba Food's delivery service positions
           itself as an intermediary body between
           good & food service providers and customers.
@@ -77,8 +77,8 @@ export default {
 
     &__personal-image {
       width: auto;
-      max-height: 255px;
-      margin: -35px -32px 0;
+      height: 269px;
+      margin: -32px -32px 0;
     }
   }
 </style>

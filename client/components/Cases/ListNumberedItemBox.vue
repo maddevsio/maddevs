@@ -15,12 +15,12 @@ export default {
 
   .case_list-numbered_item {
     @include list-item_box($bgcolor--white, $text-color--black-cases, 8px);
-    list-style: none;
+    list-style-type: none;
 
     &::before {
       margin-right: 14px;
       counter-increment: section;
-      content: counters(section, "")
+      content: counter(section)'.';
     }
   }
 </style>
