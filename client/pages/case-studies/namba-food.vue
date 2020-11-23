@@ -337,7 +337,7 @@
       <TextParagraph class="m-48_bottom">
         In 2017 Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.
       </TextParagraph>
-      <div class="nationwide-cards">
+      <div class="nationwide-cards m-72_bottom">
         <Card class="background-color-silver" padding="32px">
           <CardDeliveryServiceNambafood />
         </Card>
@@ -349,7 +349,7 @@
         </Card>
       </div>
       <TextQuoteAuthor
-        class="text-align-center m-72_bottom"
+        class="text-align-center m-72_bottom p-48_top"
         authorName="Aziza Anarbekova"
         authorPosition="Co-Founder, Namba Food"
         fileName=""

@@ -57,7 +57,17 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     @include italic_text($text-color--black-cases, 30px, 166%, -0.02em);
+
+    &::before {
+      content: '';
+      width: 408px;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      background-color: $border-color--grey-20-percent;
+    }
 
     &__photo {
       width: 70px;
