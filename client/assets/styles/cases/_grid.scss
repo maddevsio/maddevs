@@ -29,7 +29,7 @@ $spaces: (
   '96': 96px
 );
 
-$cardsBackground: (
+$backgroundColors: (
   'red': #ee6664,
   'black': #111213,
   'turquoise': #46A393,
@@ -58,7 +58,7 @@ $cardsBackground: (
 }
 
 // loop, to style cards
-@each $name, $variable in $cardsBackground {
+@each $name, $variable in $backgroundColors {
   // selector based on class name
   .background-color-#{$name} {
     background-color: $variable;

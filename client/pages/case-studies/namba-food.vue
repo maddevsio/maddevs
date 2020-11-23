@@ -99,15 +99,26 @@
         <ListNumberedItemBox>Courier delivers the order in a pre-estimated time.</ListNumberedItemBox>
       </ListNumberedBox>
     </section>
-    <section class="container_regular">
-      <h2 class="title_h2 m-48_bottom">Android application for couriers</h2>
-      <TextParagraph>
-        Android app for couriers enables them to receive new orders, assigned to them by operators via the control
-        panel. After a courier is assigned to the order, their app receives a push notification and displays the order
-        pick-up location. Having received the notification, the courier goes to pick up the order from a cafe or a shop
-        and heads to the client.
-      </TextParagraph>
-    </section>
+    <div class="container_full background-color-black">
+      <section class="container_regular p-48_top">
+        <h2 class="title_h2 text-align-center m-48_bottom">Android application for couriers</h2>
+        <TextParagraph class="text-align-center m-24_bottom">
+          Android app for couriers enables them to receive new orders, assigned to them by operators via the control
+          panel. After a courier is assigned to the order, their app receives a push notification and displays the
+          order pick-up location. Having received the notification, the courier goes to pick up the order from a cafe or a shop
+          and heads to the client.
+        </TextParagraph>
+      </section>
+      <section class="container_middle">
+        <Picture
+          pictureFolder="nambafood"
+          fileName="androids"
+          fileNameRetina="androids@2x"
+          fileExtension="png"
+          alt=""
+        />
+      </section>
+    </div>
     <section class="container_regular">
       <h2 class="title_h2">Admin panel automates Namba Food’s scalability</h2>
       <TextQuoteBox class="m-48_top m-48_bottom">
