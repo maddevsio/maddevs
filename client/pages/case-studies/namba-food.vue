@@ -153,12 +153,12 @@
         enables its managers to integrate new business partners into a system quickly. Managers prepare an Excel
         file with structured menu or products data.
       </TextParagraph>
-      <TextQuote class="m-96_top m-96_bottom">
+      <TextQuote class="m-96_top m-96_bottom m-auto">
         Namba Food automatically categorizes the data inside the managers' dashboard panel. 4000+ products can be
         cataloged in a few clicks.
       </TextQuote>
       <h3 class="title_h3 m-12_bottom">Flexible catalog management</h3>
-      <TextParagraph class="m-72_bottom">
+      <TextParagraph class="m-96_bottom">
         Managing partners' content is straightforward, as managers can quickly turn on and turn off a position inside
         the
         catalog and change pictures and descriptions. Such flexibility enables business owners to make adjustments to
@@ -167,9 +167,9 @@
         temporarily turned off during the rest of the year.
       </TextParagraph>
       <h3 class="title_h3 m-24_bottom">Control panel functionality for</h3>
-      <div class="columns_container">
+      <div class="columns_container m-96_bottom">
         <Card class="background-color-silver">
-          <h4 class="title_h3 m-12_bottom">Namba Food <br> managers</h4>
+          <h4 class="title_h4 m-12_bottom">Namba Food <br> managers</h4>
           <TextParagraph class="m-24_bottom">
             Control panel enables managers to have a
             high-level overview of Namba Food daily,
@@ -187,7 +187,7 @@
           </List>
         </Card>
         <Card class="background-color-silver">
-          <h4 class="title_h3 m-12_bottom">Namba Food <br> operators</h4>
+          <h4 class="title_h4 m-12_bottom">Namba Food <br> operators</h4>
           <TextParagraph class="m-24_bottom">
             Control panel enables operators to,
             manage items that were ordered from a
@@ -206,15 +206,40 @@
       </div>
     </section>
     <section class="container_regular">
-      <h2 class="title_h2 m-96_top">Swift admin panel — intelligent delivery control</h2>
-      <!-- Тут должен быть слайдер -->
-      <TextParagraph class="m-48_top">
+      <h2 class="title_h2 m-24_bottom">Swift admin panel — intelligent delivery control</h2>
+    </section>
+    <!-- Тут должен быть слайдер -->
+    <div class="container_middle background-color-silver grey-section"></div>
+    <section class="container_regular">
+      <TextParagraph class="m-56_top">
         The Swift microservice-based admin panel receives order information from the control panel and helps the
         operators to overview and manage the processes of delivery. It displays orders by statuses as diagrams.
       </TextParagraph>
       <TextQuoteBox class="m-48_top m-48_bottom m-auto">
         Swift admin panel helps operators to stay in touch with a courier if there is an issue on the way.
       </TextQuoteBox>
+      <div class="delivery-control-cards m-72_bottom">
+        <Card class="background-color-silver" padding="16px">
+          <TextParagraph>
+            Track the couriers' locations on a map and statuses of all orders and couriers.
+          </TextParagraph>
+        </Card>
+        <Card class="background-color-silver" padding="16px">
+          <TextParagraph>
+            Extracts customers’ notes and communicates them to couriers.
+          </TextParagraph>
+        </Card>
+        <Card class="background-color-silver" padding="16px">
+          <TextParagraph>
+            Assign orders and prepare reports.
+          </TextParagraph>
+        </Card>
+        <Card class="background-color-silver" padding="16px">
+          <TextParagraph>
+            Call curriers using FreeSWITCH microservice.
+          </TextParagraph>
+        </Card>
+      </div>
       <h3 class="title_h3 m-12_bottom">Intelligent auto-assignment system for couriers management</h3>
       <!-- Тут должен быть цикл который отрисует четыре блока, блоки ещё не готовы -->
       <TextParagraph class="m-8_bottom">
@@ -286,8 +311,11 @@
           :className="technologiesItem.className"
         />
       </ListTechnologies>
-      <h3 class="title_h3  m-96_top m-24_bottom">Website and mobile apps infrastructure scheme</h3>
-      <!-- Тут будет GIF изображение -->
+      <h3 class="title_h3 m-107_top m-24_bottom">Website and mobile apps infrastructure scheme</h3>
+    </section>
+    <!-- Тут будет GIF изображение -->
+    <div class="container_full background-color-silver grey-section"></div>
+    <section class="container_regular">
       <TextParagraph class="m-24_top">
         A local hosting provider is used for hosting the infrastructure. When a system gets a request from the client,
         it is handled by the Nginx proxy. When the Mad Devs team is deploying a new version, we use the Nginx gen
@@ -297,11 +325,12 @@
       <TextParagraph class="m-24_top">
         All our services run in Docker containers, which simplifies the process of infrastructure maintenance and monitoring.
       </TextParagraph>
-      <h3 class="title_h3 m-96_top m-24_bottom">Pipelines</h3>
+      <h3 class="title_h3 m-96_top m-12_bottom">Pipelines</h3>
       <TextParagraph class="m-24_bottom">
         We at Mad Devs widely use pipelines. The deployment stage has been automated for the staging server, and deployment on the production server is done manually. The pipeline for the Namba Food system is displayed below.
       </TextParagraph>
     </section>
+    <div class="container_full background-color-silver grey-section"></div>
     <section class="container_regular">
       <h3 class="title_h3 m-96_top m-24_bottom">Meet the team</h3>
       <TextParagraph class="m-48_bottom">
@@ -690,6 +719,10 @@ p {
 
 .nationwide-cards {
   @include grid(repeat(3, 1fr), auto, 25px, 0);
+}
+
+.delivery-control-cards {
+  @include grid(repeat(2, 1fr), repeat(2, 1fr), 24px, 24px);
 }
 
 .text-align-center {

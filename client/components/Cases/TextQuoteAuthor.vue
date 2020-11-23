@@ -74,7 +74,7 @@ export default {
       height: 70px;
       margin-bottom: 4px;
       border-radius: 100%;
-      background-color: gainsboro;
+      background-color: #f4f4f4;
     }
 
     &__position {

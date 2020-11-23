@@ -86,7 +86,7 @@ export default {
     }
 
     &__default-image {
-      background-color: gainsboro;
+      background-color: #f4f4f4;
     }
   }
 </style>
