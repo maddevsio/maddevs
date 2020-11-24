@@ -226,8 +226,16 @@
     <section class="container_regular">
       <h2 class="title_h2 m-24_bottom">Swift admin panel — intelligent delivery control</h2>
     </section>
-    <!-- Тут должен быть слайдер -->
-    <div class="container_middle background-color-silver grey-section"></div>
+    <section class="container_middle">
+      <Picture
+        pictureFolder="nambafood"
+        fileName="slider"
+        fileNameRetina="slider@2x"
+        fileExtension="png"
+        alt=""
+        :boxShadow="true"
+      />
+    </section>
     <section class="container_regular">
       <TextParagraph class="m-56_top">
         The Swift microservice-based admin panel receives order information from the control panel and helps the
@@ -331,8 +339,17 @@
       </ListTechnologies>
       <h3 class="title_h3 m-107_top m-24_bottom">Website and mobile apps infrastructure scheme</h3>
     </section>
-    <!-- Тут будет GIF изображение -->
-    <div class="container_full background-color-silver grey-section"></div>
+    <section class="container_full background-color-silver">
+      <section class="container_full gif">
+        <Picture
+          pictureFolder="nambafood"
+          fileName="high-level-system-overview"
+          fileNameRetina="high-level-system-overview@2x"
+          fileExtension="png"
+          alt=""
+        />
+      </section>
+    </section>
     <section class="container_regular">
       <TextParagraph class="m-24_top">
         A local hosting provider is used for hosting the infrastructure. When a system gets a request from the client,
