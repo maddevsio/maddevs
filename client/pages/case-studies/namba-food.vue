@@ -223,7 +223,6 @@
     </section>
     <section class="container_regular">
       <h2 class="title_h2 m-96_top m-48_bottom">Swift admin panel — intelligent delivery control</h2>
-      <!-- Тут должен быть слайдер -->
     </section>
     <section class="container_middle">
       <Swiper
@@ -293,14 +292,10 @@
       </TextParagraph>
     </section>
     <section class="container_middle">
-      <Picture
-        pictureFolder="nambafood"
-        fileName="map"
-        fileNameRetina="map@2x"
-        fileExtension="png"
-        alt=""
-        :boxShadow="true"
-      />
+      <video id="map-video" class="box-shadow border-radius-video" width="100%" height="100%" controls>
+        <source src="../../assets/img/Cases/nambafood/video/map.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </section>
     <section class="container_regular">
       <h3 class="title_h3 m-96_top m-12_bottom">Grafana — Docker containers’ monitoring service</h3>
@@ -709,7 +704,8 @@ export default {
           pictureFolder: 'nambafood',
           fileExtension: 'jpg'
         }
-      ]
+      ],
+      videoIdList: ['map-video']
     };
   },
   head() {
@@ -727,6 +723,29 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    // Play/Pause HTML Video Based on Visibility
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 1.0
+    };
+    this.videoIdList.forEach(video => {
+      let callback = (entries, observer) => {
+        entries.forEach(entry => {
+          if(entry.target.id == video) {
+            if(entry.isIntersecting) {
+              entry.target.play();
+            } else {
+              entry.target.pause();
+            }
+          }
+        });
+      };
+      let observer = new IntersectionObserver(callback, options);
+      observer.observe(document.getElementById(video));
+    });
   }
 };
 </script>
@@ -777,6 +796,15 @@ p {
 
 .text-align-center {
   text-align: center;
+}
+
+.border-radius-video {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.box-shadow {
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05), 0px 5.47001px 41.35px rgba(0, 0, 0, 0.1);
 }
 
 .gif {
