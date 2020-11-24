@@ -518,7 +518,7 @@ export default {
         {
           name: 'Eldar Akkozov',
           position: 'Mobile Developer',
-          fileName: 'baurzhan-omuraliev',
+          fileName: 'eldar-akkozov',
           fileExtension: 'png'
         },
         {
