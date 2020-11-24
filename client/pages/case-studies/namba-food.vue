@@ -470,13 +470,13 @@ export default {
         {
           name: 'Zhanybek Kenzhaliev',
           position: 'DevOps Engineer',
-          fileName: '',
+          fileName: 'baurzhan-omuraliev',
           fileExtension: 'png'
         },
         {
           name: 'Gulbustan Baudunova',
           position: 'Back-end Developer',
-          fileName: '',
+          fileName: 'gulbustan-baudunova',
           fileExtension: 'png'
         },
         {
@@ -500,37 +500,37 @@ export default {
         {
           name: 'Nakylai Taiirova',
           position: 'Back-end Developer',
-          fileName: '',
+          fileName: 'nakylai-taiirova',
           fileExtension: 'png'
         },
         {
           name: 'Akylbek Djumaliev',
           position: 'Back-end Developer',
-          fileName: '',
+          fileName: 'baurzhan-omuraliev',
           fileExtension: 'png'
         },
         {
           name: 'Stanislav Shcherbinin',
           position: 'Back-end Developer',
-          fileName: '',
+          fileName: 'stanislav-shcherbinin',
           fileExtension: 'png'
         },
         {
           name: 'Eldar Akkozov',
           position: 'Mobile Developer',
-          fileName: '',
+          fileName: 'baurzhan-omuraliev',
           fileExtension: 'png'
         },
         {
           name: 'Altynai Toktomuratova',
           position: 'Mobile Developer',
-          fileName: '',
+          fileName: 'altynai-toktomuratova',
           fileExtension: 'png'
         },
         {
           name: 'Dmitrii Khalezin',
           position: 'DevOps Engineer',
-          fileName: '',
+          fileName: 'dmitrii-khalezin',
           fileExtension: 'png'
         },
         {
@@ -602,7 +602,7 @@ export default {
           className: 'backend-php'
         },
         {
-          techName: 'Atlassian Jira',
+          techName: 'Jira Assistant',
           className: 'pm-jira-assistant-blue'
         },
         {

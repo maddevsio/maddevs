@@ -67,6 +67,7 @@ export default {
     &__info-wrap {
       display: flex;
       flex-direction: column;
+      margin-top: 3px;
       margin-left: 10px;
     }
 
@@ -80,9 +81,9 @@ export default {
 
     &__image,
     &__default-image {
-      width: 40.5px;
-      height: 40.5px;
-      margin-right: 10px;
+      width: 52px;
+      height: 51px;
+      margin-right: 7.5px;
     }
 
     &__default-image {
