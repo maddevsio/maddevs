@@ -6,15 +6,15 @@
       <TextParagraph>
         Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users
         placing orders, and business owners work as a seamless system, ensuring a smooth delivery process for all
-        types of goods. 
+        types of goods.
       </TextParagraph>
       <TextQuoteBox class="m-48_top m-48_bottom m-auto">
-        Namba Food is a unique delivery service that combines speed, convenience, <br> and simplicity. 
+        Namba Food is a unique delivery service that combines speed, convenience, <br> and simplicity.
       </TextQuoteBox>
       <TextParagraph>
         Being first is hard. Namba Food is a story about success that took a global idea and successfully localized
         and integrated it into the daily lives of Kyrgyzstan's people. Since 2013 the company has been on a mission to
-        bring value to both vendors and customers by conveniently delivering goods at the right time. 
+        bring value to both vendors and customers by conveniently delivering goods at the right time.
       </TextParagraph>
     </section>
     <section class="container_regular">
@@ -23,9 +23,9 @@
         Namba Food achieves complete synergy by diversifying to multi-directional business models.
       </TextParagraph>
       <Card class="background-color-black">
-        <CardNinjaSushi />
+        <CardNinjaSushi/>
       </Card>
-      <CardsBusinessModelsGrid />
+      <CardsBusinessModelsGrid/>
       <Card class="background-color-silver">
         <h4 class="title_h4 m-8_bottom">Namba Food API</h4>
         <TextParagraph>
@@ -60,7 +60,8 @@
     <section class="container_regular">
       <h2 class="title_h2 text-align-center m-96_top m-24_bottom">Typical usage scenarios & user roles</h2>
       <TextParagraph class="text-align-center m-48_bottom">
-        Namba Food involves several user journeys for different roles. Each user journey required different sets of functionalities and user interfaces.
+        Namba Food involves several user journeys for different roles. Each user journey required different sets of
+        functionalities and user interfaces.
       </TextParagraph>
       <div class="case_usage-scenarios">
         <Card v-for="(useСase, i) in usageScenarios" :key="i" :class="useСase.classList.cardColor">
@@ -102,9 +103,12 @@
         Namba Food meticulously studied users' behavior and collected feedback to find the perfect market-fit.
       </TextParagraph>
       <ListNumberedBox class="m-72_bottom">
-        <ListNumberedItemBox>Users go to the website and choose cafes and shops (+ orders can be placed via phone).</ListNumberedItemBox>
+        <ListNumberedItemBox>Users go to the website and choose cafes and shops (+ orders can be placed via phone).
+        </ListNumberedItemBox>
         <ListNumberedItemBox>Users save products to cart and checkout.</ListNumberedItemBox>
-        <ListNumberedItemBox>Users receive a call from an operator to confirm the order or can tick the "no calls" checkbox.</ListNumberedItemBox>
+        <ListNumberedItemBox>Users receive a call from an operator to confirm the order or can tick the "no calls"
+          checkbox.
+        </ListNumberedItemBox>
         <ListNumberedItemBox>Courier delivers the order in a pre-estimated time.</ListNumberedItemBox>
       </ListNumberedBox>
     </section>
@@ -126,11 +130,13 @@
     </section>
     <div class="container_full background-color-black m-48_bottom">
       <section class="container_regular p-78_top">
-        <h2 class="title_h2 text-align-center m-48_bottom" :style="{color: '#f5f7f9'}">Android application for couriers</h2>
+        <h2 class="title_h2 text-align-center m-48_bottom" :style="{color: '#f5f7f9'}">Android application for
+          couriers</h2>
         <TextParagraph color="#f5f7f9" class="text-align-center m-56_bottom">
           Android app for couriers enables them to receive new orders, assigned to them by operators via the control
           panel. After a courier is assigned to the order, their app receives a push notification and displays the
-          order pick-up location. Having received the notification, the courier goes to pick up the order from a cafe or a shop
+          order pick-up location. Having received the notification, the courier goes to pick up the order from a cafe or
+          a shop
           and heads to the client.
         </TextParagraph>
       </section>
@@ -218,24 +224,22 @@
             Inside the panel, operators interact with
             clients by confirming their order and making
             sure that customers’ notes are taken into
-             the process.
+            the process.
           </TextParagraph>
         </Card>
       </div>
     </section>
     <section class="container_regular">
-      <h2 class="title_h2 m-24_bottom">Swift admin panel — intelligent delivery control</h2>
+      <h2 class="title_h2 m-96_top m-48_bottom">Swift admin panel — intelligent delivery control</h2>
+      <!-- Тут должен быть слайдер -->
     </section>
     <section class="container_middle">
-      <Picture
-        pictureFolder="nambafood"
-        fileName="slider"
-        fileNameRetina="slider@2x"
-        fileExtension="png"
-        alt=""
-        :boxShadow="true"
+      <Swiper
+        :components="swiperAdminPanel"
       />
     </section>
+    <!-- Тут должен быть слайдер -->
+    <div class="container_middle background-color-silver grey-section"></div>
     <section class="container_regular">
       <TextParagraph class="m-56_top">
         The Swift microservice-based admin panel receives order information from the control panel and helps the
@@ -274,8 +278,11 @@
       </TextParagraph>
       <List class="m-78_bottom">
         <ListItemDot>Location of a courier, a cafe/restaurant, and the end-user address.</ListItemDot>
-        <ListItemDot>Courier's number of orders delivered during the current shift and in the last 3 hours.</ListItemDot>
-        <ListItemDot>The system also considers the end-user location to suggest couriers, who are already carrying the order but will be done with the current order staying close to the next order's first pick-up point.</ListItemDot>
+        <ListItemDot>Courier's number of orders delivered during the current shift and in the last 3 hours.
+        </ListItemDot>
+        <ListItemDot>The system also considers the end-user location to suggest couriers, who are already carrying the
+          order but will be done with the current order staying close to the next order's first pick-up point.
+        </ListItemDot>
       </List>
       <h3 class="title_h3 m-12_bottom">Auto-assignment system under the hood</h3>
       <TextParagraph class="m-8_bottom">
@@ -355,14 +362,16 @@
         A local hosting provider is used for hosting the infrastructure. When a system gets a request from the client,
         it is handled by the Nginx proxy. When the Mad Devs team is deploying a new version, we use the Nginx gen
         server. The Nginx proxy sends requests to the website, which is in its turn connected to the MySQL
-        database, and Redis serves as an in-memory key-value storage.  
+        database, and Redis serves as an in-memory key-value storage.
       </TextParagraph>
       <TextParagraph class="m-24_top">
-        All our services run in Docker containers, which simplifies the process of infrastructure maintenance and monitoring.
+        All our services run in Docker containers, which simplifies the process of infrastructure maintenance and
+        monitoring.
       </TextParagraph>
       <h3 class="title_h3 m-96_top m-12_bottom">Pipelines</h3>
       <TextParagraph class="m-24_bottom">
-        We at Mad Devs widely use pipelines. The deployment stage has been automated for the staging server, and deployment on the production server is done manually. The pipeline for the Namba Food system is displayed below.
+        We at Mad Devs widely use pipelines. The deployment stage has been automated for the staging server, and
+        deployment on the production server is done manually. The pipeline for the Namba Food system is displayed below.
       </TextParagraph>
     </section>
     <section class="container_full background-color-silver">
@@ -410,7 +419,7 @@
       <TextParagraph>
         Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba
         Foods' vision and understanding of its target audience, together, we were able to build a product that truly
-        solves customers' problems. The year-over-year growth rate is truly impressive. 
+        solves customers' problems. The year-over-year growth rate is truly impressive.
       </TextParagraph>
       <TextQuoteBox class="m-48_top m-48_bottom m-auto">
         As the number of businesses using Namba Food <span class="case_blockquote__text-modificator">the service's yearly growth rate is about 50% for both revenue and deliveries made.</span>
@@ -420,13 +429,13 @@
       </TextParagraph>
       <div class="nationwide-cards m-72_bottom">
         <Card class="background-color-silver" padding="32px">
-          <CardDeliveryServiceNambafood />
+          <CardDeliveryServiceNambafood/>
         </Card>
         <Card class="background-color-silver" padding="32px">
-          <CardRestaurantTalisman />
+          <CardRestaurantTalisman/>
         </Card>
         <Card class="background-color-silver" padding="32px">
-          <CardNationwideNumbers />
+          <CardNationwideNumbers/>
         </Card>
       </div>
       <TextQuoteAuthor
@@ -448,7 +457,7 @@
       </TextQuoteAuthor>
     </section>
     <Footer>
-      Namba Food <br> Top 1 Delivery Service in Central Asia 
+      Namba Food <br> Top 1 Delivery Service in Central Asia
     </Footer>
   </main>
 </template>
@@ -478,6 +487,7 @@ import CardRestaurantTalisman from '@/components/Cases/cards-content/CardRestaur
 import CardNationwideNumbers from '@/components/Cases/cards-content/CardNationwideNumbers';
 import CardNinjaSushi from '@/components/Cases/cards-content/CardNinjaSushi';
 
+import Swiper from '@/components/Cases/Swiper';
 
 export default {
   components: {
@@ -503,6 +513,7 @@ export default {
     CardDeliveryServiceNambafood,
     CardRestaurantTalisman,
     CardNationwideNumbers,
+    Swiper,
     CardNinjaSushi
   },
   name: 'NambaFood',
@@ -704,7 +715,19 @@ export default {
           fileExtension: 'png',
           alt: ''
         }
-      ] 
+      ],
+      swiperAdminPanel: [
+        {
+          fileName: 'admin',
+          pictureFolder: 'nambafood',
+          fileExtension: 'jpg'
+        },
+        {
+          fileName: 'dashboard',
+          pictureFolder: 'nambafood',
+          fileExtension: 'jpg'
+        }
+      ]
     };
   },
   head() {
@@ -778,7 +801,7 @@ p {
   max-width: 1440px;
 }
 
-// Установил временно, в скором времени удалю 
+// Установил временно, в скором времени удалю
 .grey-section {
   height: 500px;
 }
