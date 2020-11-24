@@ -45,6 +45,7 @@ module.exports = {
     '~/plugins/vee-validate.js',
     '~/plugins/vue2-perfect-scrollbar.js',
     '~/plugins/vue-social-sharing.js',
+    { src: '~/plugins/vue-awesome-swiper', mode: 'client' },
     {
       src: '~/plugins/drift-chat.js',
       ssr: false
