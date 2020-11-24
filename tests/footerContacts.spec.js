@@ -14,12 +14,12 @@ describe('Footer contacts', () => {
     {
       name: 'WhatsApp',
       className: 'messenger-watsapp',
-      link: 'http://wa.me/996555771481'
+      link: 'https://wa.me/message/KPJAW6J7BF7EK1'
     },
     {
       name: 'Telegram',
       className: 'messenger-telegram',
-      link: 'https://t.me/mun_tamara/'
+      link: 'https://t.me/MadDevs_io'
     },
     {
       name: 'WeChat',
