@@ -9,7 +9,7 @@
         types of goods.
       </TextParagraph>
       <TextQuoteBox class="m-48_top m-48_bottom m-auto">
-        Namba Food is a unique delivery service that combines speed, convenience, <br> and simplicity.
+        Namba Food is a unique delivery service that combines speed, convenience, and simplicity.
       </TextQuoteBox>
       <TextParagraph>
         Being first is hard. Namba Food is a story about success that took a global idea and successfully localized
@@ -47,15 +47,7 @@
       </TextParagraph>
     </section>
     <section class="container_full background-color-silver">
-      <section class="container_full gif">
-        <Picture
-          pictureFolder="nambafood"
-          fileName="high-level-system-overview"
-          fileNameRetina="high-level-system-overview@2x"
-          fileExtension="png"
-          alt=""
-        />
-      </section>
+      <div class="gif high-level-system-overview-gif"></div>
     </section>
     <section class="container_regular">
       <h2 class="title_h2 text-align-center m-96_top m-24_bottom">Typical usage scenarios & user roles</h2>
@@ -152,7 +144,7 @@
     </div>
     <section class="container_regular">
       <h2 class="title_h2">Admin panel automates Namba Food’s scalability</h2>
-      <TextQuoteBox class="m-48_top m-48_bottom">
+      <TextQuoteBox class="m-48_top m-48_bottom m-auto">
         The built-in reporting functionality enables managers to have full control over the entire list of all business
         partners.
       </TextQuoteBox>
@@ -345,15 +337,7 @@
       <h3 class="title_h3 m-107_top m-24_bottom">Website and mobile apps infrastructure scheme</h3>
     </section>
     <section class="container_full background-color-silver">
-      <section class="container_full gif">
-        <Picture
-          pictureFolder="nambafood"
-          fileName="high-level-system-overview"
-          fileNameRetina="high-level-system-overview@2x"
-          fileExtension="png"
-          alt=""
-        />
-      </section>
+      <div class="gif website-and-mobile-apps-infrastructure-scheme-gif"></div>
     </section>
     <section class="container_regular">
       <TextParagraph class="m-24_top">
@@ -796,11 +780,19 @@ p {
 }
 
 .gif {
-  max-width: 1440px;
+  width: auto;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-// Установил временно, в скором времени удалю
-.grey-section {
-  height: 500px;
+.website-and-mobile-apps-infrastructure-scheme-gif {
+  height: 815px;
+  background-image: url('../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif');
+}
+
+.high-level-system-overview-gif {
+  height: 705px;
+  background-image: url('../../assets/img/Cases/nambafood/gif/high-leve-system-overview.gif');
 }
 </style>
