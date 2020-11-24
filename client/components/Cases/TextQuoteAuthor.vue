@@ -2,8 +2,15 @@
   <blockquote class="case_blockquote-author m-auto">
     <slot></slot>
     <div class="case_blockquote-author__author-info m-24_top">
-      <!-- Заменю на тег Picture как только подготовят реальную фотографию автора  -->
-      <div class="case_blockquote-author__photo m-auto"></div>
+      <div class="case_blockquote-author__photo m-auto">
+        <Picture
+          pictureFolder="nambafood"
+          fileName="aziza-anarbekova"
+          fileNameRetina="aziza-anarbekova@2x"
+          fileExtension="png"
+          alt=""
+        />
+      </div>
       <p class="case_blockquote-author__name">{{authorName}}</p>
       <p class="case_blockquote-author__position">{{authorPosition}}</p>
     </div>
@@ -70,7 +77,7 @@ export default {
     }
 
     &__photo {
-      width: 70px;
+      width: 71px;
       height: 70px;
       margin-bottom: 4px;
       border-radius: 100%;
