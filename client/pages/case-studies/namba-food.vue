@@ -46,8 +46,17 @@
         flawless work for all stakeholders, including end-users, couriers, team operators, cafes' and store managers.
       </TextParagraph>
     </section>
-    <!-- Тут будет гифка, так как она ещё не готова, я просто отрисую серый блок ---> 
-    <div class="container_full background-color-silver grey-section"></div>
+    <section class="container_full background-color-silver">
+      <section class="container_full gif">
+        <Picture
+          pictureFolder="nambafood"
+          fileName="high-level-system-overview"
+          fileNameRetina="high-level-system-overview@2x"
+          fileExtension="png"
+          alt=""
+        />
+      </section>
+    </section>
     <section class="container_regular">
       <h2 class="title_h2 text-align-center m-96_top m-24_bottom">Typical usage scenarios & user roles</h2>
       <TextParagraph class="text-align-center m-48_bottom">
@@ -76,8 +85,17 @@
         stress-free.
       </TextParagraph>
     </section>
-    <!-- Full screen iPhone picture -->
-    <div class="container_full background-color-silver grey-section"></div>
+    <section class="container_full background-color-silver">
+      <section class="container_full gif">
+        <Picture
+          pictureFolder="nambafood"
+          fileName="iphone-silver"
+          fileNameRetina="iphone-silver@2x"
+          fileExtension="png"
+          alt=""
+        />
+      </section>
+    </section>
     <section class="container_regular">
       <h3 class="title_h3 m-96_top m-24_bottom">Simple ordering process for end-users</h3>
       <TextParagraph class="m-24_bottom">
@@ -330,7 +348,17 @@
         We at Mad Devs widely use pipelines. The deployment stage has been automated for the staging server, and deployment on the production server is done manually. The pipeline for the Namba Food system is displayed below.
       </TextParagraph>
     </section>
-    <div class="container_full background-color-silver grey-section"></div>
+    <section class="container_full background-color-silver">
+      <section class="container_full gif">
+        <Picture
+          pictureFolder="nambafood"
+          fileName="pipelines"
+          fileNameRetina="pipelines@2x"
+          fileExtension="png"
+          alt=""
+        />
+      </section>
+    </section>
     <section class="container_regular">
       <h3 class="title_h3 m-96_top m-24_bottom">Meet the team</h3>
       <TextParagraph class="m-48_bottom">
@@ -727,6 +755,10 @@ p {
 
 .text-align-center {
   text-align: center;
+}
+
+.gif {
+  max-width: 1440px;
 }
 
 // Установил временно, в скором времени удалю 
