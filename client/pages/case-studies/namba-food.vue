@@ -79,15 +79,10 @@
       </TextParagraph>
     </section>
     <section class="container_full background-color-silver">
-      <section class="container_full gif">
-        <Picture
-          pictureFolder="nambafood"
-          fileName="iphone-silver"
-          fileNameRetina="iphone-silver@2x"
-          fileExtension="png"
-          alt=""
-        />
-      </section>
+      <video id="iphone-silver-video" class="full-screen-video" width="100%" height="100%" controls>
+        <source src="../../assets/img/Cases/nambafood/video/mobile-applications-for-end-users.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </section>
     <section class="container_regular">
       <h3 class="title_h3 m-96_top m-24_bottom">Simple ordering process for end-users</h3>
@@ -705,7 +700,7 @@ export default {
           fileExtension: 'jpg'
         }
       ],
-      videoIdList: ['map-video']
+      videoIdList: ['map-video', 'iphone-silver-video']
     };
   },
   head() {
@@ -798,13 +793,15 @@ p {
   text-align: center;
 }
 
+.full-screen-video {
+  display: block;
+  max-width: 1440px;
+  margin: auto;
+}
+
 .border-radius-video {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-}
-
-.box-shadow {
-  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05), 0px 5.47001px 41.35px rgba(0, 0, 0, 0.1);
 }
 
 .gif {
@@ -821,6 +818,10 @@ p {
 
 .high-level-system-overview-gif {
   height: 705px;
-  background-image: url('../../assets/img/Cases/nambafood/gif/high-leve-system-overview.gif');
+  background-image: url('../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif');
+}
+
+.box-shadow {
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05), 0px 5.47001px 41.35px rgba(0, 0, 0, 0.1);
 }
 </style>
