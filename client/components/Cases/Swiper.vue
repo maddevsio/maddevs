@@ -93,7 +93,7 @@ export default {
   &.gallery-thumbs .swiper-slide {
     width: 73px;
     height: 44px;
-    opacity: 0.4;
+    opacity: 0.2;
     cursor: pointer;
   }
 

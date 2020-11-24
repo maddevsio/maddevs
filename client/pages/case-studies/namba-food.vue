@@ -238,8 +238,6 @@
         :components="swiperAdminPanel"
       />
     </section>
-    <!-- Тут должен быть слайдер -->
-    <div class="container_middle background-color-silver grey-section"></div>
     <section class="container_regular">
       <TextParagraph class="m-56_top">
         The Swift microservice-based admin panel receives order information from the control panel and helps the
