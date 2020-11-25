@@ -1,6 +1,6 @@
 <template>
   <div class="header-wrapper">
-    <header ref="header" class="header" :class="$route.path === '/case-studies/namba-food' ? 'header-black-gradient' : ''">
+    <header ref="header" class="header" :class="$nuxt.$route.path === '/case-studies/namba-food' ? 'header-black-gradient' : ''">
       <div class="container">
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-7">
