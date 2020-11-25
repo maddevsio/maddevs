@@ -3,6 +3,9 @@
     <div class="case_logotype nambafood"></div>
     <h1 class="case_title">Namba Food: <br> Top 1 Delivery Service <br> in Central Asia</h1>
     <button type="button" class="case_more__button">Read our case studies ↓</button>
+    <video class="case_video" autoplay="true" loop="true" muted="muted">
+      <source src="../../assets/img/Cases/nambafood/video/nambafood-header-video.mp4" type="video/mp4">
+    </video>
   </section>
 </template>
 
@@ -24,10 +27,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../assets/img/Cases/nambafood/nambafood.gif");;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: red;
+    background-color: transparent;
   }
 
   &_logotype {
@@ -53,6 +53,14 @@ export default {
     cursor: pointer;
 
     @include default_text($text-color--white, 18px, 30px, -0.035em, normal);
+  }
+
+  &_video {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    background-color: $bgcolor--red;
+    z-index: -1;
   }
 }
 </style>

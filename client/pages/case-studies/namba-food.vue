@@ -79,7 +79,7 @@
       </TextParagraph>
     </section>
     <section class="container_full background-color-silver">
-      <video id="iphone-silver-video" class="full-screen-video" width="100%" height="100%" loop>
+      <video id="iphone-silver-video" class="full-screen-video" width="100%" height="100%" loop="true">
         <source src="../../assets/img/Cases/nambafood/video/mobile-applications-for-end-users.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -287,7 +287,7 @@
       </TextParagraph>
     </section>
     <section class="container_middle">
-      <video id="map-video" class="box-shadow border-radius-video" width="100%" height="100%" loop>
+      <video id="map-video" class="box-shadow border-radius-video" width="100%" height="100%" loop="true">
         <source src="../../assets/img/Cases/nambafood/video/map.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>

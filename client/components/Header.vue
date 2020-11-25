@@ -1,6 +1,6 @@
 <template>
   <div class="header-wrapper">
-    <header ref="header" class="header">
+    <header ref="header" class="header" :class="$route.path === '/case-studies/namba-food' ? 'header-black-gradient' : ''">
       <div class="container">
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-7">
@@ -182,6 +182,11 @@ export default {
     @media screen and (max-width: 991px) {
       display: none;
     }
+  }
+
+  .header-black-gradient {
+    height: 175px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.991353) 6.67%, rgba(0, 0, 0, 0.96449) 13.33%, rgba(0, 0, 0, 0.91834) 20%, rgba(0, 0, 0, 0.852589) 26.67%, rgba(0, 0, 0, 0.768225) 33.33%, rgba(0, 0, 0, 0.668116) 40%, rgba(0, 0, 0, 0.557309) 46.67%, rgba(0, 0, 0, 0.442691) 53.33%, rgba(0, 0, 0, 0.331884) 60%, rgba(0, 0, 0, 0.231775) 66.67%, rgba(0, 0, 0, 0.147411) 73.33%, rgba(0, 0, 0, 0.0816599) 80%, rgba(0, 0, 0, 0.03551) 86.67%, rgba(0, 0, 0, 0.0086472) 93.33%, rgba(0, 0, 0, 0) 100%);
   }
 
   .mobile-menu_is-open {
