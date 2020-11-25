@@ -64,11 +64,8 @@ export default {
     display: flex;
     align-items: center;
 
-    &__info-wrap {
-      display: flex;
-      flex-direction: column;
-      margin-top: 3px;
-      margin-left: 10px;
+    &__info {
+      margin-top: 4px;
     }
 
     &__name {

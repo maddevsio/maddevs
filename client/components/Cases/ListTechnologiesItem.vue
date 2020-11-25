@@ -42,7 +42,7 @@ export default {
     }
 
     &__tech-name {
-      @include default_text($text-color--black-cases, 14px, 171%, -0.035em, normal);
+      @include default_text($text-color--tech-label-black, 14px, 171%, -0.035em, normal);
     }
 
     &__docker {

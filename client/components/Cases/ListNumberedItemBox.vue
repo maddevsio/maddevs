@@ -14,7 +14,7 @@ export default {
   @import '../../assets/styles/cases/_mixins';
 
   .case_list-numbered_item {
-    @include list-item_box($bgcolor--white, $text-color--black-cases, 8px);
+    @include list-item_box($bgcolor--silver, $text-color--black-cases, 8px);
     list-style-type: none;
 
     &::before {

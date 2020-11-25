@@ -37,6 +37,7 @@ export default {
   .card-content {
     &_title {
       margin-bottom: 4px;
+      color: $text-color--black-lighter;
     }
 
     &_paragraph {

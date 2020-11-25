@@ -37,8 +37,8 @@
   margin-bottom: 16px;
   padding: 16px 17px;
   border-radius: $borderRadius;
-  background-color: $bgcolor--white;
-  @include default_text($text-color--black-cases, 17px, 166%, -0.035em, normal);
+  background-color: $backgroundColor;
+  @include default_text($color, 17px, 166%, -0.035em, normal);
 
   &:last-child {
     margin-bottom: 0;

@@ -45,7 +45,7 @@ export default {
     background-color: $bgcolor--black;
     border: 0;
     cursor: pointer;
-    @include default_text($text-color--white, 17px, 166%, -0.035em, normal);
+    @include default_text($text-color--white-primary, 17px, 166%, -0.035em, normal);
   }
 }
 </style>

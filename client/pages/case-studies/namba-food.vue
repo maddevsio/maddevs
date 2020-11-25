@@ -117,9 +117,9 @@
     </section>
     <div class="container_full background-color-black m-48_bottom">
       <section class="container_regular p-78_top">
-        <h2 class="title_h2 text-align-center m-48_bottom" :style="{color: '#f5f7f9'}">Android application for
+        <h2 class="title_h2 text-align-center m-48_bottom" :style="{color: '#ffffff'}">Android application for
           couriers</h2>
-        <TextParagraph color="#f5f7f9" class="text-align-center m-56_bottom">
+        <TextParagraph color="#ffffff" class="text-align-center m-56_bottom">
           Android app for couriers enables them to receive new orders, assigned to them by operators via the control
           panel. After a courier is assigned to the order, their app receives a push notification and displays the
           order pick-up location. Having received the notification, the courier goes to pick up the order from a cafe or
@@ -153,7 +153,7 @@
         pictureFolder="nambafood"
         fileName="sjms-analytics"
         fileNameRetina="sjms-analytics@2x"
-        fileExtension="png"
+        fileExtension="jpg"
         alt=""
         :boxShadow="true"
       />
@@ -280,7 +280,7 @@
       </List>
       <h3 class="title_h3 m-12_bottom">Geocoder Ariadna on ElasticSearch with OpenStreetMap</h3>
       <TextParagraph class="m-48_bottom">
-        Ariadna is in-house developed open-source geocoder based on ElasticSearch with OpenStreetMap
+        <a href="#" class="">Ariadna</a> is in-house developed open-source geocoder based on ElasticSearch with OpenStreetMap
         developed by Mad Devs, which searches for coordinates by synonyms and names of places, looking for
         crossroads and addresses in a certain radius, and knows how to reverse geocoding and automatically
         update with new data from drivers.
@@ -305,7 +305,7 @@
         pictureFolder="nambafood"
         fileName="grafana"
         fileNameRetina="grafana@2x"
-        fileExtension="png"
+        fileExtension="jpg"
         alt=""
         :boxShadow="true"
       />
@@ -347,12 +347,12 @@
       </TextParagraph>
     </section>
     <section class="container_full background-color-silver">
-      <section class="container_full gif">
+      <section class="container_full full-screen-image">
         <Picture
           pictureFolder="nambafood"
           fileName="pipelines"
           fileNameRetina="pipelines@2x"
-          fileExtension="png"
+          fileExtension="jpg"
           alt=""
         />
       </section>
@@ -496,9 +496,9 @@ export default {
       ogUrl: '',
       team: [
         {
-          name: 'Zhanybek Kenzhaliev',
-          position: 'DevOps Engineer',
-          fileName: 'baurzhan-omuraliev',
+          name: 'Vlad Andreev',
+          position: 'Team Lead',
+          fileName: 'vlad-andreev',
           fileExtension: 'png'
         },
         {
@@ -534,7 +534,7 @@ export default {
         {
           name: 'Akylbek Djumaliev',
           position: 'Back-end Developer',
-          fileName: 'baurzhan-omuraliev',
+          fileName: 'akylbek-djumaliev',
           fileExtension: 'png'
         },
         {
@@ -753,7 +753,8 @@ export default {
   height: 104px;
 }
 
-p {
+p,
+a {
   @include default_text($text-color--black-cases, 17px, 166%, -0.035em, normal);
 }
 
@@ -793,9 +794,12 @@ p {
   text-align: center;
 }
 
+.full-screen-video, .full-screen-image {
+  max-width: 1440px;
+}
+
 .full-screen-video {
   display: block;
-  max-width: 1440px;
   margin: auto;
 }
 
