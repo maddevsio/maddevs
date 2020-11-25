@@ -17,6 +17,7 @@
       </TextParagraph>
     </div>
     <div class="case_card-content_right-column">
+      <img src="../../../assets/img/Cases/nambafood/gif/multi-directional-business-model.gif" class="case_card-content_multi-directional-business-model-gif">
       <Picture
         pictureFolder="nambafood"
         fileName="ninja-sushi"
@@ -57,6 +58,14 @@ export default {
       position: relative;
       right: -32px;
       bottom: -39px;
+    }
+
+    &_multi-directional-business-model-gif {
+      width: auto;
+      height: 316px;
+      position: absolute;
+      bottom: 6px;
+      right: -231px;
     }
   }
 </style>
