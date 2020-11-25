@@ -280,14 +280,14 @@
       </List>
       <h3 class="title_h3 m-12_bottom">Geocoder Ariadna on ElasticSearch with OpenStreetMap</h3>
       <TextParagraph class="m-48_bottom">
-        <a href="#" class="">Ariadna</a> is in-house developed open-source geocoder based on ElasticSearch with OpenStreetMap
+        <a href="https://github.com/maddevsio/ariadna" target="_blank">Ariadna</a> is in-house developed open-source geocoder based on ElasticSearch with OpenStreetMap
         developed by Mad Devs, which searches for coordinates by synonyms and names of places, looking for
         crossroads and addresses in a certain radius, and knows how to reverse geocoding and automatically
         update with new data from drivers.
       </TextParagraph>
     </section>
     <section class="container_middle">
-      <video id="map-video" class="box-shadow border-radius-video" width="100%" height="100%" controls>
+      <video id="map-video" class="box-shadow border-radius-video" width="100%" height="100%">
         <source src="../../assets/img/Cases/nambafood/video/map.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
