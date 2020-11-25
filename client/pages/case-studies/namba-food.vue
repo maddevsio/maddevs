@@ -177,7 +177,7 @@
         business daily operators. For example, if a cafe offers a seasonal menu, the items from the summer menu can be
         temporarily turned off during the rest of the year.
       </TextParagraph>
-      <h3 class="title_h3 m-24_bottom">Control panel functionality for</h3>
+      <h3 class="title_h3 m-24_bottom">Control panel functionality</h3>
       <div class="columns_container m-96_bottom">
         <Card class="background-color-silver">
           <h4 class="title_h4 m-12_bottom">Namba Food <br> managers</h4>

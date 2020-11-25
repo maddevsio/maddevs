@@ -1,7 +1,7 @@
 <template>
   <section class="case_header">
     <div class="case_logotype nambafood"></div>
-    <h1 class="case_title">Namba Food: <br> Top 1 Delivery Service <br> in Central Asia</h1>
+    <h1 class="case_title">Namba Food <br> Top 1 Delivery Service <br> in Central Asia</h1>
     <button type="button" class="case_more__button">Read our case studies ↓</button>
     <video class="case_video" autoplay="true" loop="true" muted="muted">
       <source src="../../assets/img/Cases/nambafood/video/nambafood-header-video.mp4" type="video/mp4">

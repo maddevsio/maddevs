@@ -14,7 +14,7 @@
     <h5 class="card-content_title title_h5">2500</h5>
     <TextParagraph class="card-content_paragraph m-28_bottom">
       offered dishes on the website to
-      choose from
+      choose from.
     </TextParagraph>
     <h5 class="card-content_title title_h5">700 entrepreneurs</h5>
     <TextParagraph class="card-content_paragraph">
