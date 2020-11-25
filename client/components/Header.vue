@@ -1,6 +1,6 @@
 <template>
   <div class="header-wrapper">
-    <header ref="header" class="header" :class="$nuxt.$route.path === '/case-studies/namba-food' ? 'header-black-gradient' : ''">
+    <header ref="header" class="header" :class="{'header-black-gradient': headerBlackGradient}">
       <div class="container">
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-7">
@@ -49,8 +49,21 @@ export default {
     return {
       buttonInnerText: 'Contact me',
       selectedPhone: null,
-      modalWindowName: 'contact-me-modal'
+      modalWindowName: 'contact-me-modal',
+      headerBlackGradient: false
     };
+  },
+  created() {
+    if(this.$route.name === 'case-studies-namba-food') {
+      this.headerBlackGradient = true;
+    } else {
+      this.headerBlackGradient = false;
+    }
+  },
+  watch: {
+    '$route'() {
+      this.headerBlackGradient = false;
+    }
   },
   methods: {
     goToTopPage() {
