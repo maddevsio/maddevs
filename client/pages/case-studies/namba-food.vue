@@ -749,7 +749,9 @@ export default {
 
     // Add scroll listener
     window.addEventListener('scroll', () => {
-      this.scrollHandler();
+      if(this.$route.name === 'case-studies-namba-food') {
+        this.scrollHandler();
+      }
     });
   },
   methods: {
