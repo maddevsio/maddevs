@@ -79,10 +79,12 @@
       </TextParagraph>
     </section>
     <section class="container_full background-color-silver">
-      <video id="iphone-silver-video" class="full-screen-video" width="100%" height="100%" loop="true">
-        <source src="../../assets/img/Cases/nambafood/video/mobile-applications-for-end-users.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <div class="full-screen-phone-video-wrapper">
+        <video id="iphone-silver-video" class="full-screen-video" width="100%" height="100%" loop="true">
+          <source src="../../assets/img/Cases/nambafood/video/mobile-applications-for-end-users.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </section>
     <section class="container_regular">
       <h3 class="title_h3 m-96_top m-24_bottom">Simple ordering process for end-users</h3>
@@ -788,8 +790,29 @@ a {
   @include grid(repeat(2, 1fr), repeat(2, 1fr), 24px, 24px);
 }
 
-.text-align-center {
-  text-align: center;
+// Hide black borders at the video player
+.full-screen-phone-video-wrapper {
+  max-width: 1440px;
+  position: relative;
+  margin: auto;
+
+  &::before,
+  &::after {
+    content: '';
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: $bgcolor--silver;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
 }
 
 .full-screen-video, .full-screen-image {
@@ -825,5 +848,9 @@ a {
 
 .box-shadow {
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05), 0px 5.47001px 41.35px rgba(0, 0, 0, 0.1);
+}
+
+.text-align-center {
+  text-align: center;
 }
 </style>
