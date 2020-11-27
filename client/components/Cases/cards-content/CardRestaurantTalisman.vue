@@ -1,6 +1,6 @@
 <template>
   <div class="card-content">
-    <h5 class="card-content_title title_h5">Restaurant Talisman</h5>
+    <h5 class="card-content_title case_title_h5">Restaurant Talisman</h5>
     <TextParagraph class="card-content_paragraph">
       Restaurant Talisman
       successfully develops in market

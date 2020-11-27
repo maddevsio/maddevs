@@ -1,14 +1,14 @@
 <template>
   <div class="case_card-content">
     <div class="case_card-content_left-column">
-      <h4 class="title_h4 m-8_bottom" :style="{color: '#f5f7f9'}">Mini white label</h4>
+      <h4 class="case_title_h4 m-8_bottom" :style="{color: '#f5f7f9'}">Mini white label</h4>
       <TextParagraph class="case_card-content_paragraph" color="#f5f7f9">
         After business owners submit pictures and prices, the
         Namba Food team creates a customized and branded
         e-commerce website. Updates, support, and
         maintenance are done by Namba Food, too.
       </TextParagraph>
-      <h4 class="title_h4 m-8_bottom" :style="{color: '#f5f7f9'}">Full white label</h4>
+      <h4 class="case_title_h4 m-8_bottom" :style="{color: '#f5f7f9'}">Full white label</h4>
       <TextParagraph color="#f5f7f9">
         Business partners can use Namba Food’s software
         and business model, adjusting those to their needs,

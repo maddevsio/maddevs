@@ -1,7 +1,7 @@
 <template>
   <div class="case_card-use-case">
     <h4 
-      class="case_card-use-case__title title_h4" 
+      class="case_card-use-case__title case_title_h4" 
       :class="`case_card-use-case__${classList.uniqueСlass}-title`"
     >
       {{title}}

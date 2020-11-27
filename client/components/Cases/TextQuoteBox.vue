@@ -1,5 +1,5 @@
 <template>
-  <blockquote class="case_blockquote__box">
+  <blockquote class="case_blockquote-box">
     <slot></slot>
   </blockquote>
 </template>
@@ -13,11 +13,15 @@ export default {
 <style lang="scss" scoped>
   @import '../../assets/styles/cases/_mixins';
 
-  .case_blockquote {
-    &__box {
+  .case {
+    &_blockquote-box {
       padding-left: 35px;
       border-left: 2px solid $border-color--red;
       @include italic_text($text-color--quote-box, 18px, 33px, -0.035em);
+
+      @media screen and (max-width: 768px) {
+        @include italic_text($text-color--quote-box, 17px, 153%, -0.035em);
+      }
     }
 
     &__text-modificator {

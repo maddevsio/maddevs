@@ -2,7 +2,7 @@
   <main class="main case">
     <Header/>
     <section class="case_body" ref="caseBody">
-      <div class="animation_block"></div>
+      <div class="case_animation_block"></div>
       <section class="container_regular m-48_top m-96_bottom">
         <TextParagraph>
           Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users
@@ -19,8 +19,8 @@
         </TextParagraph>
       </section>
       <section class="container_regular">
-        <h2 class="title_h2 text-align-center m-24_bottom">Multi-directional business model</h2>
-        <TextParagraph class="m-24_bottom text-align-center">
+        <h2 class="case_title_h2 case_text-align-center m-24_bottom">Multi-directional business model</h2>
+        <TextParagraph class="m-24_bottom case_text-align-center">
           Namba Food achieves complete synergy by diversifying to multi-directional business models.
         </TextParagraph>
         <Card class="background-color-black">
@@ -28,7 +28,7 @@
         </Card>
         <CardsBusinessModelsGrid/>
         <Card class="background-color-silver">
-          <h4 class="title_h4 m-8_bottom">Namba Food API</h4>
+          <h4 class="case_title_h4 m-8_bottom">Namba Food API</h4>
           <TextParagraph>
             Namba Food API allows businesses to integrate the API into any mobile payment application. Thus,
             end-users get the opportunity to quickly order goods & services without leaving the app using the
@@ -40,7 +40,7 @@
         </Card>
       </section>
       <section class="container_regular">
-        <h2 class="title_h2 m-96_top  m-12_bottom text-align-center">High-level system overview</h2>
+        <h2 class="case_title_h2 m-96_top  m-12_bottom case_text-align-center">High-level system overview</h2>
         <TextParagraph class="m-48_bottom">
           Namba Food is more than a delivery service website. With a partial vertical integration, it covers the entire
           cycle of ordering goods online. Thus, an advanced set of software and hardware was required to maintain
@@ -48,11 +48,11 @@
         </TextParagraph>
       </section>
       <section class="container_full background-color-silver">
-        <div class="gif high-level-system-overview-gif"></div>
+        <div class="case_gif case_high-level-system-overview-gif"></div>
       </section>
       <section class="container_regular">
-        <h2 class="title_h2 text-align-center m-96_top m-24_bottom">Typical usage scenarios & user roles</h2>
-        <TextParagraph class="text-align-center m-48_bottom">
+        <h2 class="case_title_h2 case_text-align-center m-96_top m-24_bottom">Typical usage scenarios & user roles</h2>
+        <TextParagraph class="case_text-align-center m-48_bottom">
           Namba Food involves several user journeys for different roles. Each user journey required different sets of
           functionalities and user interfaces.
         </TextParagraph>
@@ -72,7 +72,7 @@
         </div>
       </section>
       <section class="container_regular">
-        <h2 class="title_h2 m-96_top m-24_bottom">Web-version & mobile application for end-users (Android, iOS)</h2>
+        <h2 class="case_title_h2 m-96_top m-24_bottom">Web-version & mobile application for end-users (Android, iOS)</h2>
         <TextParagraph class="m-48_bottom">
           Namba Food is not a simple catalog of goods and services as it aims to seamlessly blend into the modern, busy
           lifestyle of its customers. It was required to develop a convenient process for ordering products and make it
@@ -80,15 +80,15 @@
         </TextParagraph>
       </section>
       <section class="container_full background-color-silver">
-        <div class="full-screen-phone-video-wrapper">
-          <video id="iphone-silver-video" class="full-screen-video" width="100%" height="100%" loop="true" muted="true">
+        <div class="case_full-screen-phone-video-wrapper">
+          <video id="iphone-silver-video" class="case_full-screen-video" width="100%" height="100%" loop="true" muted="true">
             <source src="../../assets/img/Cases/nambafood/video/mobile-applications-for-end-users.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
       </section>
       <section class="container_regular">
-        <h3 class="title_h3 m-96_top m-24_bottom">Simple ordering process for end-users</h3>
+        <h3 class="case_title_h3 m-96_top m-24_bottom">Simple ordering process for end-users</h3>
         <TextParagraph class="m-24_bottom">
           Namba Food meticulously studied users' behavior and collected feedback to find the perfect market-fit.
         </TextParagraph>
@@ -103,7 +103,7 @@
         </ListNumberedBox>
       </section>
       <section class="container_regular">
-        <h2 class="title_h2 m-24_bottom">Customers track order statuses</h2>
+        <h2 class="case_title_h2 m-24_bottom">Customers track order statuses</h2>
         <TextParagraph class="m-24_bottom">
           With the Namba Food delivery service's growing popularity, the load on customer support and its operators
           grew exponentially.
@@ -120,9 +120,9 @@
       </section>
       <div class="container_full background-color-black m-48_bottom">
         <section class="container_regular p-78_top">
-          <h2 class="title_h2 text-align-center m-48_bottom" :style="{color: '#ffffff'}">Android application for
+          <h2 class="case_title_h2 case_text-align-center m-48_bottom" :style="{color: '#ffffff'}">Android application for
             couriers</h2>
-          <TextParagraph color="#ffffff" class="text-align-center m-56_bottom">
+          <TextParagraph color="#ffffff" class="case_text-align-center m-56_bottom">
             Android app for couriers enables them to receive new orders, assigned to them by operators via the control
             panel. After a courier is assigned to the order, their app receives a push notification and displays the
             order pick-up location. Having received the notification, the courier goes to pick up the order from a cafe or
@@ -141,7 +141,7 @@
         </section>
       </div>
       <section class="container_regular">
-        <h2 class="title_h2">Admin panel automates Namba Food’s scalability</h2>
+        <h2 class="case_title_h2">Admin panel automates Namba Food’s scalability</h2>
         <TextQuoteBox class="m-48_top m-48_bottom m-auto">
           The built-in reporting functionality enables managers to have full control over the entire list of all business
           partners.
@@ -171,7 +171,7 @@
           Namba Food automatically categorizes the data inside the managers' dashboard panel. 4000+ products can be
           cataloged in a few clicks.
         </TextQuote>
-        <h3 class="title_h3 m-12_bottom">Flexible catalog management</h3>
+        <h3 class="case_title_h3 m-12_bottom">Flexible catalog management</h3>
         <TextParagraph class="m-96_bottom">
           Managing partners' content is straightforward, as managers can quickly turn on and turn off a position inside
           the
@@ -180,10 +180,10 @@
           business daily operators. For example, if a cafe offers a seasonal menu, the items from the summer menu can be
           temporarily turned off during the rest of the year.
         </TextParagraph>
-        <h3 class="title_h3 m-24_bottom">Control panel functionality</h3>
-        <div class="columns_container m-96_bottom">
+        <h3 class="case_title_h3 m-24_bottom">Control panel functionality</h3>
+        <div class="case_columns_container m-96_bottom">
           <Card class="background-color-silver">
-            <h4 class="title_h4 m-12_bottom">Namba Food <br> managers</h4>
+            <h4 class="case_title_h4 m-12_bottom">Namba Food <br> managers</h4>
             <TextParagraph class="m-24_bottom">
               Control panel enables managers to have a
               high-level overview of Namba Food daily,
@@ -201,7 +201,7 @@
             </List>
           </Card>
           <Card class="background-color-silver">
-            <h4 class="title_h4 m-12_bottom">Namba Food <br> operators</h4>
+            <h4 class="case_title_h4 m-12_bottom">Namba Food <br> operators</h4>
             <TextParagraph class="m-24_bottom">
               Control panel enables operators to,
               manage items that were ordered from a
@@ -220,7 +220,7 @@
         </div>
       </section>
       <section class="container_regular">
-        <h2 class="title_h2 m-96_top m-48_bottom">Swift admin panel — intelligent delivery control</h2>
+        <h2 class="case_title_h2 m-96_top m-48_bottom">Swift admin panel — intelligent delivery control</h2>
       </section>
       <section class="container_middle">
         <Swiper
@@ -235,7 +235,7 @@
         <TextQuoteBox class="m-48_top m-48_bottom m-auto">
           Swift admin panel helps operators to stay in touch with a courier if there is an issue on the way.
         </TextQuoteBox>
-        <div class="delivery-control-cards m-72_bottom">
+        <div class="case_delivery-control-cards m-72_bottom">
           <Card class="background-color-silver" padding="16px">
             <TextParagraph>
               Track the couriers' locations on a map and statuses of all orders and couriers.
@@ -257,7 +257,7 @@
             </TextParagraph>
           </Card>
         </div>
-        <h3 class="title_h3 m-12_bottom">Intelligent auto-assignment system for couriers management</h3>
+        <h3 class="case_title_h3 m-12_bottom">Intelligent auto-assignment system for couriers management</h3>
         <!-- Тут должен быть цикл который отрисует четыре блока, блоки ещё не готовы -->
         <TextParagraph class="m-8_bottom">
           The intelligent auto-assignment of orders allows operators to assign couriers to orders taking into
@@ -271,7 +271,7 @@
             order but will be done with the current order staying close to the next order's first pick-up point.
           </ListItemDot>
         </List>
-        <h3 class="title_h3 m-12_bottom">Auto-assignment system under the hood</h3>
+        <h3 class="case_title_h3 m-12_bottom">Auto-assignment system under the hood</h3>
         <TextParagraph class="m-8_bottom">
           Three open-source solutions work as a cohesive and smart system together to perform auto-assignment of
           orders, which allows you to select the most suitable courier for each order, thereby reducing delivery time.
@@ -281,22 +281,22 @@
           <ListItemDot>ElasticSearch stores couriers’ current locations.</ListItemDot>
           <ListItemDot>OSMR is a routing engine for the shortest paths and road networks.</ListItemDot>
         </List>
-        <h3 class="title_h3 m-12_bottom">Geocoder Ariadna on ElasticSearch with OpenStreetMap</h3>
+        <h3 class="case_title_h3 m-12_bottom">Geocoder Ariadna on ElasticSearch with OpenStreetMap</h3>
         <TextParagraph class="m-48_bottom">
-          <a href="https://github.com/maddevsio/ariadna" target="_blank">Ariadna</a> is in-house developed open-source geocoder based on ElasticSearch with OpenStreetMap
+          <a href="https://github.com/maddevsio/ariadna" class="case_link" target="_blank">Ariadna</a> is in-house developed open-source geocoder based on ElasticSearch with OpenStreetMap
           developed by Mad Devs, which searches for coordinates by synonyms and names of places, looking for
           crossroads and addresses in a certain radius, and knows how to reverse geocoding and automatically
           update with new data from drivers.
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <video id="map-video" class="box-shadow border-radius-video" width="100%" height="100%" loop="true" muted="true">
+        <video id="map-video" class="case_box-shadow case_border-radius-video" width="100%" height="100%" loop="true" muted="true">
           <source src="../../assets/img/Cases/nambafood/video/map.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </section>
       <section class="container_regular">
-        <h3 class="title_h3 m-96_top m-12_bottom">Grafana — Docker containers’ monitoring service</h3>
+        <h3 class="case_title_h3 m-96_top m-12_bottom">Grafana — Docker containers’ monitoring service</h3>
         <TextParagraph class="m-48_bottom">
           To monitor the stability of Namba Food software, Mad Devs has integrated Grafana. It allows our developers
           to keep track of services in Docker containers. Grafana shows how the load in the project is balanced,
@@ -318,7 +318,7 @@
           Monitoring also helps Mad Devs to prevent service timeouts. When the load grows, we can track spikes,
           estimate the severity of an issue, and quickly resolve it.
         </TextParagraph>
-        <h3 class="title_h3 m-96_top m-48_bottom">Technologies used for the Namba Food project</h3>
+        <h3 class="case_title_h3 m-96_top m-48_bottom">Technologies used for the Namba Food project</h3>
         <ListTechnologies>
           <ListTechnologiesItem
             v-for="(technologiesItem, i) in technologiesList"
@@ -327,10 +327,10 @@
             :className="technologiesItem.className"
           />
         </ListTechnologies>
-        <h3 class="title_h3 m-107_top m-24_bottom">Website and mobile apps infrastructure scheme</h3>
+        <h3 class="case_title_h3 m-107_top m-24_bottom">Website and mobile apps infrastructure scheme</h3>
       </section>
       <section class="container_full background-color-silver">
-        <div class="gif website-and-mobile-apps-infrastructure-scheme-gif"></div>
+        <div class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"></div>
       </section>
       <section class="container_regular">
         <TextParagraph class="m-24_top">
@@ -343,14 +343,14 @@
           All our services run in Docker containers, which simplifies the process of infrastructure maintenance and
           monitoring.
         </TextParagraph>
-        <h3 class="title_h3 m-96_top m-12_bottom">Pipelines</h3>
+        <h3 class="case_title_h3 m-96_top m-12_bottom">Pipelines</h3>
         <TextParagraph class="m-24_bottom">
           We at Mad Devs widely use pipelines. The deployment stage has been automated for the staging server, and
           deployment on the production server is done manually. The pipeline for the Namba Food system is displayed below.
         </TextParagraph>
       </section>
       <section class="container_full background-color-silver">
-        <section class="container_full full-screen-image">
+        <section class="container_full case_full-screen-image">
           <Picture
             pictureFolder="nambafood"
             fileName="pipelines"
@@ -361,7 +361,7 @@
         </section>
       </section>
       <section class="container_regular">
-        <h3 class="title_h3 m-96_top m-24_bottom">Meet the team</h3>
+        <h3 class="case_title_h3 m-96_top m-24_bottom">Meet the team</h3>
         <TextParagraph class="m-48_bottom">
           There are currently three members in a core development team. During the pre-launch phase, a larger team
           had been working on the Namba Food project. There have been five full-timers and two part-timers working
@@ -380,7 +380,7 @@
             pictureFolder="nambafood"
           />
         </ListTeam>
-        <h4 class="title_h4 m-72_top m-12_bottom">Transparent communication</h4>
+        <h4 class="case_title_h4 m-72_top m-12_bottom">Transparent communication</h4>
         <TextParagraph>
           Weekly calls with the customer's business representatives and monthly meetings to see what can be
           improved from a development/IT viewpoint. Our staff members also work on Namba Food premises several
@@ -390,7 +390,7 @@
         </TextParagraph>
       </section>
       <section class="container_regular">
-        <h2 class="title_h2 m-96_top m-24_bottom">Nationwide success and day to day improvements</h2>
+        <h2 class="case_title_h2 m-96_top m-24_bottom">Nationwide success and day to day improvements</h2>
         <TextParagraph>
           Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba
           Foods' vision and understanding of its target audience, together, we were able to build a product that truly
@@ -402,7 +402,7 @@
         <TextParagraph class="m-48_bottom">
           In 2017 Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.
         </TextParagraph>
-        <div class="nationwide-cards m-72_bottom">
+        <div class="case_nationwide-cards m-72_bottom">
           <Card class="background-color-silver" padding="32px">
             <CardDeliveryServiceNambafood/>
           </Card>
@@ -414,7 +414,7 @@
           </Card>
         </div>
         <TextQuoteAuthor
-          class="text-align-center m-72_bottom p-48_top"
+          class="case_text-align-center m-72_bottom p-48_top"
           authorName="Aziza Anarbekova"
           authorPosition="Co-Founder, Namba Food"
           fileName=""
@@ -770,109 +770,112 @@ export default {
 <style lang="scss">
 @import "../../assets/styles/cases/base";
 @import "../../assets/styles/cases/mixins";
+@import "../../assets/styles/cases/media";
 
-.animation_block {
-  height: 104px;
-}
-
-p,
-a {
-  @include default_text($text-color--black-cases, 17px, 166%, -0.035em, normal);
-}
-
-.title_h2 {
-  @include title($text-color--black-cases, 41.5px, -0.04em);
-}
-
-.title_h3 {
-  @include title($text-color--black-cases, 33.2px, -0.04em);
-}
-
-.title_h4 {
-  @include title($text-color--black-cases, 26.56px, -0.03em);
-}
-
-.title_h5 {
-  @include title($text-color--black-cases, 21.25px, -0.02em);
-}
-
-.columns_container {
-  @include grid(repeat(2, 1fr), auto, 25px, 0);
-}
-
-.case_usage-scenarios {
-  @include grid(repeat(2, 1fr), auto, 25px, 25px);
-}
-
-.nationwide-cards {
-  @include grid(repeat(3, 1fr), auto, 25px, 0);
-}
-
-.delivery-control-cards {
-  @include grid(repeat(2, 1fr), repeat(2, 1fr), 24px, 24px);
-}
-
-// Hide black borders at the video player
-.full-screen-phone-video-wrapper {
-  max-width: 1440px;
-  position: relative;
-  margin: auto;
-
-  &::before,
-  &::after {
-    content: '';
-    width: 5px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    background-color: $bgcolor--silver;
+.case {
+  &_title_h2 {
+    @include title($text-color--black-cases, 41.5px, -0.04em);
   }
 
-  &::before {
-    left: 0;
+  &_title_h3 {
+    @include title($text-color--black-cases, 33.2px, -0.04em);
   }
 
-  &::after {
-    right: 0;
+  &_title_h4 {
+    @include title($text-color--black-cases, 26.56px, -0.03em);
   }
-}
 
-.full-screen-video, .full-screen-image {
-  max-width: 1440px;
-}
+  &_title_h5 {
+    @include title($text-color--black-cases, 21.25px, -0.02em);
+  }
 
-.full-screen-video {
-  display: block;
-  margin: auto;
-}
+  &_link {
+    @include default_text($text-color--black-cases, 17px, 166%, -0.035em, normal);
+  }
 
-.border-radius-video {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
+  &_delivery-control-cards {
+    @include grid(repeat(2, 1fr), repeat(2, 1fr), 24px, 24px);
+  }
 
-.gif {
-  width: auto;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+  &_columns_container {
+    @include grid(repeat(2, 1fr), auto, 25px, 0);
+  }
 
-.website-and-mobile-apps-infrastructure-scheme-gif {
-  height: 815px;
-  background-image: url('../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif');
-}
+  &_nationwide-cards {
+    @include grid(repeat(3, 1fr), auto, 25px, 0);
+  }
 
-.high-level-system-overview-gif {
-  height: 705px;
-  background-image: url('../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif');
-}
+  &_usage-scenarios {
+    @include grid(repeat(2, 1fr), auto, 25px, 25px);
+  }
 
-.box-shadow {
-  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05), 0px 5.47001px 41.35px rgba(0, 0, 0, 0.1);
-}
+  &_full-screen-phone-video-wrapper,
+  &_full-screen-video,
+  &_full-screen-image {
+    max-width: 1440px;
+  }
 
-.text-align-center {
-  text-align: center;
+  // Hide black borders at the video player
+  &_full-screen-phone-video-wrapper {
+    position: relative;
+    margin: auto;
+
+    &::before,
+    &::after {
+      content: '';
+      width: 5px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background-color: $bgcolor--silver;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  &_full-screen-video {
+    display: block;
+    margin: auto;
+  }
+
+  &_gif {
+    width: auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &_website-and-mobile-apps-infrastructure-scheme-gif {
+    height: 815px;
+    background-image: url('../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif');
+  }
+
+  &_high-level-system-overview-gif {
+    height: 705px;
+    background-image: url('../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif');
+  }
+
+  &_animation_block {
+    height: 104px;
+  }
+
+  &_border-radius-video {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &_box-shadow {
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05), 0px 5.47001px 41.35px rgba(0, 0, 0, 0.1);
+  }
+
+  &_text-align-center {
+    text-align: center;
+  }
 }
 </style>

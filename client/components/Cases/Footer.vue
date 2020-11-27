@@ -1,7 +1,7 @@
 <template>
   <section class="case_footer">
     <div class="case_logotype nambafood"></div>
-    <h2 class="case_title title_h2">
+    <h2 class="case_title case_title_h2">
       <slot></slot>
     </h2>
     <button type="button" class="case_next-project-button">Read next project</button>
