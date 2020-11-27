@@ -88,7 +88,7 @@
         </div>
       </section>
       <section class="container_regular">
-        <h3 class="case_title_h3 m-96_top m-24_bottom">Simple ordering process for end-users</h3>
+        <h2 class="case_title_h2 m-96_top m-24_bottom">Simple ordering process for end-users</h2>
         <TextParagraph class="m-24_bottom">
           Namba Food meticulously studied users' behavior and collected feedback to find the perfect market-fit.
         </TextParagraph>
@@ -168,8 +168,7 @@
           file with structured menu or products data.
         </TextParagraph>
         <TextQuote class="m-96_top m-96_bottom m-auto">
-          Namba Food automatically categorizes the data inside the managers' dashboard panel. 4000+ products can be
-          cataloged in a few clicks.
+          Namba Food automatically categorizes data inside the managers' dashboard panel. 4000+ products can be cataloged in a few clicks.
         </TextQuote>
         <h3 class="case_title_h3 m-12_bottom">Flexible catalog management</h3>
         <TextParagraph class="m-96_bottom">
@@ -397,7 +396,7 @@
           solves customers' problems. The year-over-year growth rate is truly impressive.
         </TextParagraph>
         <TextQuoteBox class="m-48_top m-48_bottom m-auto">
-          As the number of businesses using Namba Food <span class="case_blockquote__text-modificator">the service's yearly growth rate is about 50% for both revenue and deliveries made.</span>
+          As the number of businesses using Namba Food <span class="case_blockquote-box_text-modificator">the service's yearly growth rate is about 50% for both revenue and deliveries made.</span>
         </TextQuoteBox>
         <TextParagraph class="m-48_bottom">
           In 2017 Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.

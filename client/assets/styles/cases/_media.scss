@@ -1,5 +1,3 @@
-@import "./mixins";
-
 .container_regular,
 .container_middle {
   @media screen and (max-width: 576px) {
@@ -11,7 +9,7 @@
   }
 }
 
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container_regular
   .container_middle {
     padding: 0 56px;
@@ -20,6 +18,14 @@
   .case {
     &_title_h2 {
       @include title($text-color--black-cases, 25.63px, -0.034em); 
+    }
+
+    &_title_h3 {
+      @include title($text-color--black-cases, 22.78px, -1px); 
+    }
+
+    &_title_h4 {
+      @include title($text-color--black-cases, 20.25px, -1px); 
     }
 
     &_link {

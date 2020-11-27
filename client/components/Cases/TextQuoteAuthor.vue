@@ -11,7 +11,7 @@
           alt=""
         />
       </div>
-      <p class="case_blockquote-author__name">{{authorName}}</p>
+      <TextParagraph>{{authorName}}</TextParagraph>
       <p class="case_blockquote-author__position">{{authorPosition}}</p>
     </div>
   </blockquote>
@@ -19,10 +19,12 @@
 
 <script>
 import Picture from '@/components/Cases/Picture';
+import TextParagraph from '@/components/Cases/TextParagraph';
 export default {
   name: 'TextQuoteAuthor',
   components: {
-    Picture
+    Picture,
+    TextParagraph
   },
   props: {
     authorName: {
@@ -86,6 +88,20 @@ export default {
 
     &__position {
       @include default_text($text-color--grey-cases, 13px, 21.58px, -2%, normal);
+    }
+
+    @media screen and (max-width: 768px) {
+      @include italic_text($text-color--black-cases, 21px, 150%, -0.02em);
+
+      &::before {
+        width: 327px;
+      }
+    }
+
+    @media screen and (max-width: 370px) {
+      &::before {
+        width: 100%;
+      }
     }
   }
 </style>

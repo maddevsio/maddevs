@@ -28,5 +28,16 @@ export default {
       height: 68px;
       @include red-quote;
     }
+
+    @media screen and (max-width: 768px) {
+      padding-left: 37px;
+      @include default_text($text-color--black-cases, 24px, 150%, -0.02em, normal);
+
+      &:before {
+        width: 32px;
+        height: 33px;
+        top: 4px;
+      }
+    }
   }
 </style>
