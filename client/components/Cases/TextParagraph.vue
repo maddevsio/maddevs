@@ -10,13 +10,15 @@ export default {
   props: {
     color: {
       type: String,
-      default: ''
+      default: '#101113'
     }
   }
 };
 </script>
 
 <style lang="scss" scoped>
+  @import '../../assets/styles/cases/_mixins';
+
   .case {
     &_paragraph {
       @include default_text($text-color--black-cases, 17px, 166%, -0.035em, normal);

@@ -20,6 +20,7 @@ export default {
       @include italic_text($text-color--quote-box, 18px, 33px, -0.035em);
 
       @media screen and (max-width: 768px) {
+        padding-left: 24px;
         @include italic_text($text-color--quote-box, 17px, 153%, -0.035em);
       }
     }

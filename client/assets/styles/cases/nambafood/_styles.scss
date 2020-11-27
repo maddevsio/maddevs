@@ -1,0 +1,61 @@
+.case {
+  &_delivery-control-cards {
+    @include grid(repeat(2, 1fr), repeat(2, 1fr), 24px, 24px);
+  }
+
+  &_columns_container {
+    @include grid(repeat(2, 1fr), auto, 25px, 0);
+  }
+
+  &_nationwide-cards {
+    @include grid(repeat(3, 1fr), auto, 25px, 0);
+  }
+
+  &_usage-scenarios {
+    @include grid(repeat(2, 1fr), auto, 25px, 25px);
+  }
+
+  // Hide black borders at the video player
+  &_full-screen-phone-video-wrapper {
+    max-width: 1440px;
+    position: relative;
+    margin: auto;
+
+    &::before,
+    &::after {
+      content: '';
+      width: 5px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background-color: $bgcolor--silver;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  &_website-and-mobile-apps-infrastructure-scheme-gif {
+    height: 815px;
+    background-image: url('../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif');
+  }
+
+  &_high-level-system-overview-gif {
+    height: 705px;
+    background-image: url('../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif');
+  }
+
+  &_animation_block {
+    height: 104px;
+  }
+
+  &_border-radius-video {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
