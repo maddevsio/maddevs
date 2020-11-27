@@ -23,5 +23,9 @@ export default {
     position: relative;
     overflow: hidden;
     @include card(auto, auto, 32px, 8px);
+
+    @media screen and (max-width: 768px) {
+      @include card(auto, auto, 20px, 8px);
+    }
   }
 </style>

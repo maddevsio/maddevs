@@ -72,13 +72,55 @@ export default {
     &__personal-card {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
     }
 
     &__personal-image {
-      width: auto;
+      min-width: 397px;
       height: 269px;
-      margin: -32px -32px 0;
+      margin: -32px 0 0;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__text-wrapper {
+      margin-top: 40px;
+    }
+
+    @media screen and (max-width: 840px) {
+      margin: 20px 0;
+      @include grid(repeat(1, 1fr), auto, 0, 20px);
+
+      &__right-column {
+        grid-row-start: 1;
+        grid-row-gap: 20px;
+      }
+
+      &__personal-image {
+        height: auto;
+        margin: -32px -35px 0;
+        left: 0;
+        transform: none;
+      }
+
+      &__text-wrapper {
+        margin-top: 18px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      &__personal-image {
+        margin: -20px -23px 0;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      &__personal-image {
+        height: 282px;
+        margin: -20px 0 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 </style>
