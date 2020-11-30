@@ -73,7 +73,7 @@ export default {
     }
 
     &__position {
-      @include default_text($text-color--black-cases, 13px, 20px, -0.02em, normal);
+      @include default_text($text-color--grey-team-list, 13px, 20px, -0.02em, normal);
     }
 
     &__image,
@@ -100,7 +100,7 @@ export default {
       }
 
       &__position {
-        @include default_text($text-color--grey-team-list, 13px, 14px, -0.02em, normal);
+        line-height: 14px;
       }
 
       &__image,
