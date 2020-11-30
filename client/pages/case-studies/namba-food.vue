@@ -180,17 +180,17 @@
           temporarily turned off during the rest of the year.
         </TextParagraph>
         <h3 class="case_title_h3 m-24_bottom">Control panel functionality</h3>
-        <div class="case_columns_container m-96_bottom">
+        <div class="case_columns_container">
           <Card class="background-color-silver">
-            <h4 class="case_title_h4 m-12_bottom">Namba Food <br> managers</h4>
-            <TextParagraph class="m-24_bottom">
+            <h4 class="case_title_h4 m-12_bottom media-m-6_bottom case_control-panel-card-title">Namba Food <br> managers</h4>
+            <TextParagraph class="m-24_bottom media-m-12_bottom">
               Control panel enables managers to have a
               high-level overview of Namba Food daily,
               weekly, monthly, and yearly performance.
               Business owners receive automatically
               generated monthly reports to their email.
             </TextParagraph>
-            <TextParagraph class="m-8_bottom">
+            <TextParagraph class="m-8_bottom media-m-12_bottom">
               Detailed reports include information <br> such as:
             </TextParagraph>
             <List>
@@ -200,8 +200,8 @@
             </List>
           </Card>
           <Card class="background-color-silver">
-            <h4 class="case_title_h4 m-12_bottom">Namba Food <br> operators</h4>
-            <TextParagraph class="m-24_bottom">
+            <h4 class="case_title_h4 m-12_bottom media-m-6_bottom case_control-panel-card-title">Namba Food <br> operators</h4>
+            <TextParagraph class="m-24_bottom media-m-12_bottom">
               Control panel enables operators to,
               manage items that were ordered from a
               shop or restaurant, and promo codes. Such
