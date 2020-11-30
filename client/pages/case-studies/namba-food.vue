@@ -755,10 +755,9 @@ export default {
   },
   methods: {
     scrollHandler() {
-      const bodyPosition = this.$refs.caseBody.getBoundingClientRect() && this.$refs.caseBody.getBoundingClientRect().top;
-      if(bodyPosition <= 0 && this.header.classList.contains('header-black-gradient')) {
+      if(window.pageYOffset >= 10 && this.header.classList.contains('header-black-gradient')) {
         this.header.classList.remove('header-black-gradient');
-      } else if (bodyPosition >= 0 && !this.header.classList.contains('header-black-gradient')) {
+      } else if (window.pageYOffset <= 10 && !this.header.classList.contains('header-black-gradient')) {
         this.header.classList.add('header-black-gradient');
       }
     }
