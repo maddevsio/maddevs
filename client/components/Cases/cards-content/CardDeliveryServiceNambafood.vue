@@ -92,7 +92,7 @@ export default {
       }
     }
 
-    @media screen and (max-width: 520px) {
+    @media screen and (max-width: 470px) {
       &_rows-wrap {
         @include grid(repeat(1, 1fr), auto, 0, 0);
       }
