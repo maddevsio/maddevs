@@ -1,7 +1,7 @@
 <template>
   <div class="card-content">
     <h5 class="card-content_title case_title_h5">250</h5>
-    <TextParagraph class="card-content_paragraph m-28_bottom">
+    <TextParagraph class="card-content_paragraph m-28_bottom media-m-32_bottom">
       best cafe & restaurants of the city
       to suit all tastes + delivery of
       goods from stores and
@@ -12,7 +12,7 @@
       hand to hand, and much more.
     </TextParagraph>
     <h5 class="card-content_title case_title_h5">2500</h5>
-    <TextParagraph class="card-content_paragraph m-28_bottom">
+    <TextParagraph class="card-content_paragraph m-28_bottom media-m-32_bottom">
       offered dishes on the website to
       choose from.
     </TextParagraph>
@@ -29,7 +29,7 @@
 <script>
 import TextParagraph from '@/components/Cases/TextParagraph';
 export default {
-  name: 'CardDeliveryServiceNambafood',
+  name: 'CardNationwideNumbers',
   components: {
     TextParagraph
   }
@@ -47,6 +47,10 @@ export default {
 
     &_paragraph {
       @include default_text($text-color--black-lighter, 13px, 166%, -0.02em, normal);
+
+      @media screen and (max-width: 768px) {
+        @include default_text($text-color--black-lighter, 16px, 150%, -0.02em, normal);
+      }
     }
   }
 </style>
