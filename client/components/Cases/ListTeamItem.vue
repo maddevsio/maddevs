@@ -86,5 +86,48 @@ export default {
     &__default-image {
       background-color: #f4f4f4;
     }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &__info {
+        margin-top: 7px;
+      }
+
+      &__name {
+        @include default_text($text-color--black-cases, 14px, 16px, -0.02em, bold);
+      }
+
+      &__position {
+        @include default_text($text-color--grey-team-list, 13px, 14px, -0.02em, normal);
+      }
+
+      &__image,
+      &__default-image {
+        width: 50px;
+        height: 49px;
+      }
+    }
+
+    @media screen and (max-width: 360px) {
+      &__info {
+        margin-top: 5px;
+      }
+
+      &__name {
+        font-size: 12px;
+      }
+
+      &__position {
+        font-size: 11px;
+      }
+
+      &__image,
+      &__default-image {
+        width: 48px;
+        height: 47px;
+      }
+    }
   }
 </style>
