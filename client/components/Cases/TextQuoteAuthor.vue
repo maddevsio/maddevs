@@ -4,11 +4,10 @@
     <div class="case_blockquote-author__author-info m-24_top">
       <div class="case_blockquote-author__photo m-auto">
         <Picture
-          pictureFolder="nambafood"
-          fileName="aziza-anarbekova"
-          fileNameRetina="aziza-anarbekova@2x"
-          fileExtension="png"
-          alt=""
+          :pictureFolder="pictureFolder"
+          :fileName="fileName"
+          :fileExtension="fileExtension"
+          :alt="alt"
         />
       </div>
       <TextParagraph>{{authorName}}</TextParagraph>
@@ -40,10 +39,6 @@ export default {
       default: ''
     },
     fileName: {
-      type: String,
-      default: ''
-    },
-    fileNameRetina: {
       type: String,
       default: ''
     },

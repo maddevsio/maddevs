@@ -415,9 +415,8 @@
           class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
           authorName="Aziza Anarbekova"
           authorPosition="Co-Founder, Namba Food"
-          fileName=""
-          fileNameRetina=""
-          fileExtension=""
+          fileName="aziza-anarbekova"
+          fileExtension="png"
           alt=""
           pictureFolder="nambafood"
         >
