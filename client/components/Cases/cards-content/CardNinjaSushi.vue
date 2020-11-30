@@ -52,12 +52,14 @@ export default {
       margin-bottom: 41px;
     }
     
-    &_right-column{
-      max-width: 296px;
+    &_right-column {
+      width: 292px;
+      height: 388px;
+      margin-top: auto;
       margin-left: auto;
       position: relative;
       right: -32px;
-      bottom: -39px;
+      bottom: -42px;
     }
 
     &_multi-directional-business-model-gif {
@@ -65,7 +67,51 @@ export default {
       height: 316px;
       position: absolute;
       bottom: 6px;
-      right: -231px;
+      right: -232px;
+    }
+
+    @media screen and (max-width: 840px) {
+      @include grid(repeat(1, 1fr), auto, 0, 0);
+
+      &_left-column {
+        margin-bottom: 200px;
+      }
+
+      &_right-column {
+        width: 306px;
+        position: absolute;
+        right: -32px;
+        bottom: -190px;
+      }
+
+      &_multi-directional-business-model-gif {
+        right: -219px;
+        bottom: 4px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      &_right-column {
+        right: -20px;
+      }
+
+      &_paragraph {
+        margin-bottom: 24px;
+      }
+    }
+
+    @media screen and (max-width: 370px) {
+      &_right-column {
+        width: 270px;
+        height: 360px;
+        bottom: -163px;
+      }
+
+      &_multi-directional-business-model-gif {
+        height: 290px;
+        right: -211px;
+        bottom: 7px;
+      }
     }
   }
 </style>
