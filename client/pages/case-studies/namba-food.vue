@@ -235,26 +235,26 @@
           Swift admin panel helps operators to stay in touch with a courier if there is an issue on the way.
         </TextQuoteBox>
         <div class="case_delivery-control-cards m-72_bottom media-m-48_bottom">
-          <Card class="background-color-silver" padding="16px">
+          <div class="background-color-silver case_delivery-control-card">
             <TextParagraph>
               Track the couriers' locations on a map and statuses of all orders and couriers.
             </TextParagraph>
-          </Card>
-          <Card class="background-color-silver" padding="16px">
+          </div>
+          <div class="background-color-silver case_delivery-control-card">
             <TextParagraph>
               Extracts customers’ notes and communicates them to couriers.
             </TextParagraph>
-          </Card>
-          <Card class="background-color-silver" padding="16px">
+          </div>
+          <div class="background-color-silver case_delivery-control-card">
             <TextParagraph>
               Assign orders and prepare reports.
             </TextParagraph>
-          </Card>
-          <Card class="background-color-silver" padding="16px">
+          </div>
+          <div class="background-color-silver case_delivery-control-card">
             <TextParagraph>
               Call curriers using FreeSWITCH microservice.
             </TextParagraph>
-          </Card>
+          </div>
         </div>
         <h3 class="case_title_h3 m-12_bottom">Intelligent auto-assignment system for couriers management</h3>
         <TextParagraph class="m-8_bottom">

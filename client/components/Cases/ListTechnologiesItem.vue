@@ -50,5 +50,37 @@ export default {
         width: 70px;
       }
     }
+
+    @media screen and (max-width: 768px) {
+      &__tech-icon {
+        margin-bottom: 8px;
+
+        &::before {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &__docker {
+        &::before {
+          width: 50px;
+        }
+      }
+
+      &__tech-name {
+        @include default_text($text-color--tech-label-black, 8px, 163%, -0.02em, normal);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      &__tech-name {
+        width: 40px;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center;
+      }
+    }
   }
 </style>
