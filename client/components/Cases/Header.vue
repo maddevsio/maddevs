@@ -24,7 +24,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../assets/img/Cases/nambafood/gif/nambafood.gif");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../assets/img/Cases/nambafood/jpg/nambafood-logo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: red;
