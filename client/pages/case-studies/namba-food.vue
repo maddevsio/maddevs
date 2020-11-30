@@ -3,13 +3,13 @@
     <Header/>
     <section class="case_body" ref="caseBody">
       <div class="case_animation_block"></div>
-      <section class="container_regular m-48_top m-96_bottom">
+      <section class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom">
         <TextParagraph>
           Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users
           placing orders, and business owners work as a seamless system, ensuring a smooth delivery process for all
           types of goods.
         </TextParagraph>
-        <TextQuoteBox class="m-48_top m-48_bottom m-auto">
+        <TextQuoteBox class="m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto">
           Namba Food is a unique delivery service that combines speed, convenience, and simplicity.
         </TextQuoteBox>
         <TextParagraph>
@@ -19,7 +19,7 @@
         </TextParagraph>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 case_text-align-center m-24_bottom">Multi-directional business model</h2>
+        <h2 class="case_title_h2 case_text-align-center m-24_bottom media-m-12_bottom">Multi-directional business model</h2>
         <TextParagraph class="m-24_bottom case_text-align-center">
           Namba Food achieves complete synergy by diversifying to multi-directional business models.
         </TextParagraph>
@@ -40,8 +40,8 @@
         </Card>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-96_top  m-12_bottom case_text-align-center">High-level system overview</h2>
-        <TextParagraph class="m-48_bottom">
+        <h2 class="case_title_h2 m-96_top m-12_bottom media-m-48_top case_text-align-center">High-level system overview</h2>
+        <TextParagraph class="m-48_bottom media-m-24_bottom">
           Namba Food is more than a delivery service website. With a partial vertical integration, it covers the entire
           cycle of ordering goods online. Thus, an advanced set of software and hardware was required to maintain
           flawless work for all stakeholders, including end-users, couriers, team operators, cafes' and store managers.
@@ -51,8 +51,8 @@
         <div class="case_gif case_high-level-system-overview-gif"></div>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 case_text-align-center m-96_top m-24_bottom">Typical usage scenarios & user roles</h2>
-        <TextParagraph class="case_text-align-center m-48_bottom">
+        <h2 class="case_title_h2 case_text-align-center m-96_top m-24_bottom media-m-48_top media-m-12_bottom">Typical usage scenarios & user roles</h2>
+        <TextParagraph class="case_text-align-center m-48_bottom media-m-24_bottom">
           Namba Food involves several user journeys for different roles. Each user journey required different sets of
           functionalities and user interfaces.
         </TextParagraph>
@@ -72,8 +72,8 @@
         </div>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-96_top m-24_bottom">Web-version & mobile application for end-users (Android, iOS)</h2>
-        <TextParagraph class="m-48_bottom">
+        <h2 class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom">Web-version & mobile application for end-users (Android, iOS)</h2>
+        <TextParagraph class="m-48_bottom media-m-24_bottom">
           Namba Food is not a simple catalog of goods and services as it aims to seamlessly blend into the modern, busy
           lifestyle of its customers. It was required to develop a convenient process for ordering products and make it
           stress-free.
@@ -88,11 +88,11 @@
         </div>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-96_top m-24_bottom">Simple ordering process for end-users</h2>
+        <h2 class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom">Simple ordering process for end-users</h2>
         <TextParagraph class="m-24_bottom">
           Namba Food meticulously studied users' behavior and collected feedback to find the perfect market-fit.
         </TextParagraph>
-        <ListNumberedBox class="m-72_bottom">
+        <ListNumberedBox class="m-72_bottom media-m-48_bottom">
           <ListNumberedItemBox>Users go to the website and choose cafes and shops (+ orders can be placed via phone).
           </ListNumberedItemBox>
           <ListNumberedItemBox>Users save products to cart and checkout.</ListNumberedItemBox>
@@ -103,26 +103,26 @@
         </ListNumberedBox>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom">Customers track order statuses</h2>
-        <TextParagraph class="m-24_bottom">
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Customers track order statuses</h2>
+        <TextParagraph class="m-24_bottom media-m-12_bottom">
           With the Namba Food delivery service's growing popularity, the load on customer support and its operators
           grew exponentially.
         </TextParagraph>
-        <TextParagraph class="m-24_bottom">
+        <TextParagraph class="m-24_bottom media-m-12_bottom">
           Customer support challenge: The lack of transparent status updates led to the majority of users calling to
           check the delivery status. Business challenge: Continuously growing number of customer support team
           occurred in high operational expenses.
         </TextParagraph>
-        <TextParagraph class="m-96_bottom">
+        <TextParagraph class="m-96_bottom media-m-48_bottom">
           Thus, the Mad Devs team has developed a user-friendly Status feature. Therefore, customers can easily
           track the progress on both mobile application and website.
         </TextParagraph>
       </section>
       <div class="container_full background-color-black m-48_bottom">
-        <section class="container_regular p-78_top">
-          <h2 class="case_title_h2 case_text-align-center m-48_bottom" :style="{color: '#ffffff'}">Android application for
+        <section class="container_regular">
+          <h2 class="case_title_h2 case_text-align-center m-48_bottom p-78_top media-m-8_bottom media-p-38_top" :style="{color: '#ffffff'}">Android application for
             couriers</h2>
-          <TextParagraph color="#ffffff" class="case_text-align-center m-56_bottom">
+          <TextParagraph color="#ffffff" class="case_text-align-center m-56_bottom media-m-16_bottom">
             Android app for couriers enables them to receive new orders, assigned to them by operators via the control
             panel. After a courier is assigned to the order, their app receives a push notification and displays the
             order pick-up location. Having received the notification, the courier goes to pick up the order from a cafe or
@@ -142,7 +142,7 @@
       </div>
       <section class="container_regular">
         <h2 class="case_title_h2">Admin panel automates Namba Food’s scalability</h2>
-        <TextQuoteBox class="m-48_top m-48_bottom m-auto">
+        <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
           The built-in reporting functionality enables managers to have full control over the entire list of all business
           partners.
         </TextQuoteBox>
@@ -151,7 +151,7 @@
           offerings, and do many other things enabling them to deliver users the best possible experience.
         </TextParagraph>
       </section>
-      <section class="container_middle m-72_bottom">
+      <section class="container_middle m-72_bottom media-m-48_bottom">
         <Picture
           pictureFolder="nambafood"
           fileName="sjms-analytics"
@@ -167,11 +167,11 @@
           enables its managers to integrate new business partners into a system quickly. Managers prepare an Excel
           file with structured menu or products data.
         </TextParagraph>
-        <TextQuote class="m-96_top m-96_bottom m-auto">
+        <TextQuote class="m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom">
           Namba Food automatically categorizes data inside the managers' dashboard panel. 4000+ products can be cataloged in a few clicks.
         </TextQuote>
         <h3 class="case_title_h3 m-12_bottom">Flexible catalog management</h3>
-        <TextParagraph class="m-96_bottom">
+        <TextParagraph class="m-96_bottom media-m-48_bottom">
           Managing partners' content is straightforward, as managers can quickly turn on and turn off a position inside
           the
           catalog and change pictures and descriptions. Such flexibility enables business owners to make adjustments to
@@ -219,7 +219,7 @@
         </div>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-96_top m-48_bottom">Swift admin panel — intelligent delivery control</h2>
+        <h2 class="case_title_h2 m-96_top m-48_bottom media-m-48_top media-m-12_bottom">Swift admin panel — intelligent delivery control</h2>
       </section>
       <section class="container_middle">
         <Swiper
@@ -227,14 +227,14 @@
         />
       </section>
       <section class="container_regular">
-        <TextParagraph class="m-56_top">
+        <TextParagraph class="m-56_top media-m-24_top">
           The Swift microservice-based admin panel receives order information from the control panel and helps the
           operators to overview and manage the processes of delivery. It displays orders by statuses as diagrams.
         </TextParagraph>
-        <TextQuoteBox class="m-48_top m-48_bottom m-auto">
+        <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
           Swift admin panel helps operators to stay in touch with a courier if there is an issue on the way.
         </TextQuoteBox>
-        <div class="case_delivery-control-cards m-72_bottom">
+        <div class="case_delivery-control-cards m-72_bottom media-m-48_bottom">
           <Card class="background-color-silver" padding="16px">
             <TextParagraph>
               Track the couriers' locations on a map and statuses of all orders and couriers.
@@ -257,12 +257,11 @@
           </Card>
         </div>
         <h3 class="case_title_h3 m-12_bottom">Intelligent auto-assignment system for couriers management</h3>
-        <!-- Тут должен быть цикл который отрисует четыре блока, блоки ещё не готовы -->
         <TextParagraph class="m-8_bottom">
           The intelligent auto-assignment of orders allows operators to assign couriers to orders taking into
           consideration the following factors:
         </TextParagraph>
-        <List class="m-78_bottom">
+        <List class="m-78_bottom media-m-48_bottom">
           <ListItemDot>Location of a courier, a cafe/restaurant, and the end-user address.</ListItemDot>
           <ListItemDot>Courier's number of orders delivered during the current shift and in the last 3 hours.
           </ListItemDot>
@@ -275,7 +274,7 @@
           Three open-source solutions work as a cohesive and smart system together to perform auto-assignment of
           orders, which allows you to select the most suitable courier for each order, thereby reducing delivery time.
         </TextParagraph>
-        <List class="m-78_bottom">
+        <List class="m-78_bottom media-m-48_bottom">
           <ListItemDot>Ariadna parses open-source maps data and insert them to ElasticSearch.</ListItemDot>
           <ListItemDot>ElasticSearch stores couriers’ current locations.</ListItemDot>
           <ListItemDot>OSMR is a routing engine for the shortest paths and road networks.</ListItemDot>
@@ -295,7 +294,7 @@
         </video>
       </section>
       <section class="container_regular">
-        <h3 class="case_title_h3 m-96_top m-12_bottom">Grafana — Docker containers’ monitoring service</h3>
+        <h3 class="case_title_h3 m-96_top m-12_bottom media-m-48_top">Grafana — Docker containers’ monitoring service</h3>
         <TextParagraph class="m-48_bottom">
           To monitor the stability of Namba Food software, Mad Devs has integrated Grafana. It allows our developers
           to keep track of services in Docker containers. Grafana shows how the load in the project is balanced,
@@ -313,11 +312,11 @@
         />
       </section>
       <section class="container_regular">
-        <TextParagraph class="m-24_top">
+        <TextParagraph class="m-24_top media-m-48_top">
           Monitoring also helps Mad Devs to prevent service timeouts. When the load grows, we can track spikes,
           estimate the severity of an issue, and quickly resolve it.
         </TextParagraph>
-        <h3 class="case_title_h3 m-96_top m-48_bottom">Technologies used for the Namba Food project</h3>
+        <h3 class="case_title_h3 m-96_top m-48_bottom media-m-72_top media-m-24_bottom">Technologies used for the Namba Food project</h3>
         <ListTechnologies>
           <ListTechnologiesItem
             v-for="(technologiesItem, i) in technologiesList"
@@ -326,7 +325,7 @@
             :className="technologiesItem.className"
           />
         </ListTechnologies>
-        <h3 class="case_title_h3 m-107_top m-24_bottom">Website and mobile apps infrastructure scheme</h3>
+        <h3 class="case_title_h3 m-107_top m-24_bottom media-m-48_top">Website and mobile apps infrastructure scheme</h3>
       </section>
       <section class="container_full background-color-silver">
         <div class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"></div>
@@ -338,11 +337,11 @@
           server. The Nginx proxy sends requests to the website, which is in its turn connected to the MySQL
           database, and Redis serves as an in-memory key-value storage.
         </TextParagraph>
-        <TextParagraph class="m-24_top">
+        <TextParagraph class="m-24_top media-m-12_top">
           All our services run in Docker containers, which simplifies the process of infrastructure maintenance and
           monitoring.
         </TextParagraph>
-        <h3 class="case_title_h3 m-96_top m-12_bottom">Pipelines</h3>
+        <h3 class="case_title_h3 m-96_top m-12_bottom media-m-48_top">Pipelines</h3>
         <TextParagraph class="m-24_bottom">
           We at Mad Devs widely use pipelines. The deployment stage has been automated for the staging server, and
           deployment on the production server is done manually. The pipeline for the Namba Food system is displayed below.
@@ -360,8 +359,8 @@
         </section>
       </section>
       <section class="container_regular">
-        <h3 class="case_title_h3 m-96_top m-24_bottom">Meet the team</h3>
-        <TextParagraph class="m-48_bottom">
+        <h3 class="case_title_h3 m-96_top m-24_bottom media-m-48_top media-m-12_bottom">Meet the team</h3>
+        <TextParagraph class="m-48_bottom media-m-24_bottom">
           There are currently three members in a core development team. During the pre-launch phase, a larger team
           had been working on the Namba Food project. There have been five full-timers and two part-timers working
           closely with the customer on the project:
@@ -379,7 +378,7 @@
             pictureFolder="nambafood"
           />
         </ListTeam>
-        <h4 class="case_title_h4 m-72_top m-12_bottom">Transparent communication</h4>
+        <h4 class="case_title_h4 m-72_top m-12_bottom media-m-41_top">Transparent communication</h4>
         <TextParagraph>
           Weekly calls with the customer's business representatives and monthly meetings to see what can be
           improved from a development/IT viewpoint. Our staff members also work on Namba Food premises several
@@ -389,19 +388,19 @@
         </TextParagraph>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-96_top m-24_bottom">Nationwide success and day to day improvements</h2>
+        <h2 class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom">Nationwide success and day to day improvements</h2>
         <TextParagraph>
           Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba
           Foods' vision and understanding of its target audience, together, we were able to build a product that truly
           solves customers' problems. The year-over-year growth rate is truly impressive.
         </TextParagraph>
-        <TextQuoteBox class="m-48_top m-48_bottom m-auto">
+        <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
           As the number of businesses using Namba Food <span class="case_blockquote-box_text-modificator">the service's yearly growth rate is about 50% for both revenue and deliveries made.</span>
         </TextQuoteBox>
-        <TextParagraph class="m-48_bottom">
+        <TextParagraph class="m-48_bottom media-m-24_bottom">
           In 2017 Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.
         </TextParagraph>
-        <div class="case_nationwide-cards m-72_bottom">
+        <div class="case_nationwide-cards m-72_bottom media-m-48_bottom">
           <Card class="background-color-silver" padding="32px">
             <CardDeliveryServiceNambafood/>
           </Card>
@@ -413,7 +412,7 @@
           </Card>
         </div>
         <TextQuoteAuthor
-          class="case_text-align-center m-72_bottom p-48_top"
+          class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
           authorName="Aziza Anarbekova"
           authorPosition="Co-Founder, Namba Food"
           fileName=""

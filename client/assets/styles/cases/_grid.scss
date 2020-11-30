@@ -32,6 +32,17 @@ $spaces: (
   '107': 107px
 );
 
+$spacesMedia: (
+  '8': 8px,
+  '12': 12px,
+  '16': 16px,
+  '24': 24px,
+  '38': 38px,
+  '41': 41px,
+  '48': 48px,
+  '72': 72px
+);
+
 $backgroundColors: (
   'red': #ee6664,
   'black': #111213,
@@ -40,9 +51,9 @@ $backgroundColors: (
   'berry': #f55876
 );
 
-  // loop, to style Legends
+// loop, to style Legends
 @each $name, $variable in $spaces {
-// selector based on class name
+  // selector based on class name
   .p-#{$name}_top {
     padding-top: $variable;
   }
@@ -57,6 +68,27 @@ $backgroundColors: (
 
   .m-#{$name}_bottom {
     margin-bottom: $variable;
+  }
+}
+
+// loop, to style Legends on small screen
+@each $name, $variable in $spacesMedia {
+  @media screen and (max-width: 768px) {
+    .media-p-#{$name}_top {
+      padding-top: $variable;
+    }
+  
+    .media-m-#{$name}_top {
+      margin-top: $variable;
+    }
+  
+    .media-p-#{$name}_bottom {
+      padding-bottom: $variable;
+    }
+  
+    .media-m-#{$name}_bottom {
+      margin-bottom: $variable;
+    }
   }
 }
 
