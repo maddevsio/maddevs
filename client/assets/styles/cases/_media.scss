@@ -24,7 +24,8 @@
       @include title($text-color--black-cases, 22.78px, -1px); 
     }
 
-    &_title_h4 {
+    &_title_h4,
+    &_title_h5 {
       @include title($text-color--black-cases, 20.25px, -1px); 
     }
 

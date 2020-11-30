@@ -401,13 +401,13 @@
           In 2017 Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.
         </TextParagraph>
         <div class="case_nationwide-cards m-72_bottom media-m-48_bottom">
-          <Card class="background-color-silver" padding="32px">
+          <Card class="background-color-silver">
             <CardDeliveryServiceNambafood/>
           </Card>
-          <Card class="background-color-silver" padding="32px">
+          <Card class="background-color-silver case_restaurant-talisman-card">
             <CardRestaurantTalisman/>
           </Card>
-          <Card class="background-color-silver" padding="32px">
+          <Card class="background-color-silver">
             <CardNationwideNumbers/>
           </Card>
         </div>

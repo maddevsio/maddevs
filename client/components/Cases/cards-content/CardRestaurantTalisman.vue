@@ -9,7 +9,7 @@
       decided to actively promote in
       delivery.
     </TextParagraph>
-    <TextParagraph class="card-content_paragraph m-24_top m-24_bottom">
+    <TextParagraph class="card-content_paragraph m-24_top m-24_bottom media-m-48_top">
       By using NambaFood software
       only in a month, they got positive growth.
     </TextParagraph>
@@ -18,15 +18,15 @@
         <TextParagraph class="card-content_paragraph card-content_statistics-heading">
           IT expenses
         </TextParagraph>
-        <TextParagraph class="card-content_paragraph card-content_statistics-number">
+        <TextParagraph class="card-content_statistics-number">
           0<span>$</span>
         </TextParagraph>
       </div>
       <div class="card-content_statistics-item">
-        <TextParagraph class="card-content_paragraph card-content_statistics-heading">
+        <TextParagraph class="card-content_paragraph card-content_statistics-heading card-content_statistics-heading-increase-sales">
           Increase in <br> sales
         </TextParagraph>
-        <TextParagraph class="card-content_paragraph card-content_statistics-number">
+        <TextParagraph class="card-content_statistics-number">
           +236<span>%</span>
         </TextParagraph>
       </div>
@@ -34,7 +34,7 @@
         <TextParagraph class="card-content_paragraph card-content_statistics-heading">
           Increase in <br> amount of orders
         </TextParagraph>
-        <TextParagraph class="card-content_paragraph card-content_statistics-number">
+        <TextParagraph class="card-content_statistics-number">
           +142<span>%</span>
         </TextParagraph>
       </div>
@@ -90,6 +90,34 @@ export default {
 
       span {
         @include default_text($text-color--black-lighter, 17px, 28.22px, -0.035em, normal);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      &_paragraph {
+        @include default_text($text-color--black-lighter, 16px, 150%, -0.02em, normal);
+      }
+
+      &_statistics-heading {
+        @include default_text($text-color--black-lighter, 13px, 166%, -0.02em, normal);
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    @media screen and (max-width: 325px) {
+      &_statistics-heading {
+        br {
+          display: block;
+        }
+      }
+
+      &_statistics-heading-increase-sales {
+        br {
+          display: none;
+        }
       }
     }
   }
