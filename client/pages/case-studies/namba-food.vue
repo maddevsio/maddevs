@@ -702,7 +702,8 @@ export default {
         }
       ],
       videoIdList: ['map-video', 'iphone-silver-video'],
-      header: null
+      header: null,
+      mobileHeader: null
     };
   },
   head() {
@@ -723,6 +724,7 @@ export default {
   },
   mounted() {
     this.header = document.getElementsByClassName('header')[0];
+    this.mobileHeader = document.getElementsByClassName('mobile-header')[0];
 
     // Play/Pause HTML Video Based on Visibility
     const options = {
@@ -745,18 +747,24 @@ export default {
     });
 
     // Add scroll listener
-    window.addEventListener('scroll', () => {
-      if(this.$route.name === 'case-studies-namba-food') {
-        this.scrollHandler();
-      }
-    });
+    if(this.$route.name === 'case-studies-namba-food') {
+      window.addEventListener('scroll', () => {
+        if (window.screen.width > 991) {
+          this.scrollHandler(this.header);
+        } else {
+          this.scrollHandler(this.mobileHeader);
+        }
+      });
+    }
   },
   methods: {
-    scrollHandler() {
-      if(window.pageYOffset >= 10 && this.header.classList.contains('header-black-gradient')) {
-        this.header.classList.remove('header-black-gradient');
-      } else if (window.pageYOffset <= 10 && !this.header.classList.contains('header-black-gradient')) {
-        this.header.classList.add('header-black-gradient');
+    scrollHandler(header) {
+      if(window.pageYOffset >= 10 && header.classList.contains('header-black-gradient')) {
+        header.classList.remove('header-black-gradient');
+      } else if (window.pageYOffset <= 10 && !header.classList.contains('header-black-gradient')) {
+        if (!header.classList.contains('mobile-header--is-open')) {
+          header.classList.add('header-black-gradient');
+        }
       }
     }
   }

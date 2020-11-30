@@ -1,5 +1,10 @@
 <template>
-  <div class="mobile-header" :class="{ 'mobile-header--is-open': mobileHeaderIsOpen }">
+  <div class="mobile-header" 
+		:class="{
+			'mobile-header--is-open': mobileHeaderIsOpen,
+			'header-black-gradient': headerBlackGradient === true && mobileHeaderIsOpen === false
+		}"
+	>
 		<div class="mobile-header__top-line">
 			<router-link to="/" class="mobile-header__header-logo" @click.native="mobileHeaderIsOpen = false">
 				<headerLogo />
@@ -92,13 +97,22 @@ export default {
           className: 'messenger-wechat',
           link: 'https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc'
         }
-      ]
+      ],
+      headerBlackGradient: false
     };
   },
   watch: {
     '$route'() {
       this.mobileHeaderIsOpen = false;
+      this.headerBlackGradient = false;
       this.enableScrollOnBody();
+    }
+  },
+  created() {
+    if(this.$route.name === 'case-studies-namba-food') {
+      this.headerBlackGradient = true;
+    } else {
+      this.headerBlackGradient = false;
     }
   },
   methods: {
