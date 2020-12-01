@@ -82,7 +82,7 @@
       <section class="container_full background-color-silver">
         <div class="case_full-screen-phone-video-wrapper">
           <video id="iphone-silver-video" class="case_full-screen-video" width="100%" height="100%" loop="true" muted="true">
-            <source src="../../assets/img/Cases/nambafood/video/mobile-applications-for-end-users.mp4" type="video/mp4">
+            <source src="../../assets/video/mobile-applications-for-end-users.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -289,7 +289,7 @@
       </section>
       <section class="container_middle">
         <video id="map-video" class="case_box-shadow case_border-radius-video" width="100%" height="100%" loop="true" muted="true">
-          <source src="../../assets/img/Cases/nambafood/video/map.mp4" type="video/mp4">
+          <source src="../../assets/video/map.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </section>
@@ -347,12 +347,23 @@
           deployment on the production server is done manually. The pipeline for the Namba Food system is displayed below.
         </TextParagraph>
       </section>
-      <section class="container_full background-color-silver">
+      <section class="container_full background-color-silver case_pipelines-image-desktop">
         <section class="container_full case_full-screen-image">
           <Picture
             pictureFolder="nambafood"
             fileName="pipelines"
             fileNameRetina="pipelines@2x"
+            fileExtension="jpg"
+            alt=""
+          />
+        </section>
+      </section>
+      <section class="container_full case_pipelines-image-mobile">
+        <section class="container_full case_full-screen-image">
+          <Picture
+            pictureFolder="nambafood"
+            fileName="pipelines-mobile"
+            fileNameRetina="pipelines-mobile@2x"
             fileExtension="jpg"
             alt=""
           />
