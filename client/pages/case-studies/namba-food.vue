@@ -48,7 +48,7 @@
         </TextParagraph>
       </section>
       <section class="container_full background-color-silver">
-        <div class="case_gif case_high-level-system-overview-gif"></div>
+        <img src="../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif" class="case_gif case_high-level-system-overview-gif">
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 case_text-align-center m-96_top m-24_bottom media-m-48_top media-m-12_bottom">Typical usage scenarios & user roles</h2>
@@ -328,7 +328,7 @@
         <h3 class="case_title_h3 m-107_top m-24_bottom media-m-48_top">Website and mobile apps infrastructure scheme</h3>
       </section>
       <section class="container_full background-color-silver">
-        <div class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"></div>
+        <img src="../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif" class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif">
       </section>
       <section class="container_regular">
         <TextParagraph class="m-24_top">

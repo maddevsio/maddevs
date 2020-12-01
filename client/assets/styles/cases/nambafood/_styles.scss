@@ -40,16 +40,6 @@
     }
   }
 
-  &_website-and-mobile-apps-infrastructure-scheme-gif {
-    height: 815px;
-    background-image: url('../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif');
-  }
-
-  &_high-level-system-overview-gif {
-    height: 705px;
-    background-image: url('../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif');
-  }
-
   &_animation_block {
     height: 104px;
   }
@@ -68,6 +58,11 @@
     display: none;
     max-width: 375px;
     height: auto;
+  }
+
+  &_website-and-mobile-apps-infrastructure-scheme-gif,
+  &_high-level-system-overview-gif {
+    max-width: 817px;
   }
 
   @media screen and (max-width: 940px) {

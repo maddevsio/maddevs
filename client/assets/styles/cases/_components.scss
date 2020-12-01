@@ -20,20 +20,20 @@
   }
 
   &_full-screen-video,
-  &_full-screen-image {
+  &_full-screen-image,
+  &_gif {
     max-width: 1440px;
   }
 
-  &_full-screen-video {
+  &_full-screen-video,
+  &_gif {
     display: block;
     margin: auto;
   }
 
   &_gif {
-    width: auto;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
   }
 
   &_box-shadow {
