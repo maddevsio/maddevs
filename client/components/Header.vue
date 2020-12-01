@@ -54,7 +54,7 @@ export default {
     };
   },
   created() {
-    if($nuxt.$route.name === 'case-studies-namba-food') {
+    if(this.$nuxt.$route.name === 'case-studies-namba-food') {
       this.headerBlackGradient = true;
     } else {
       this.headerBlackGradient = false;
