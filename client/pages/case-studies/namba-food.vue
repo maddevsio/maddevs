@@ -770,12 +770,10 @@ export default {
   },
   methods: {
     scrollHandler(header) {
-      if(window.pageYOffset >= 10 && header.classList.contains('header-black-gradient')) {
-        header.classList.remove('header-black-gradient');
-      } else if (window.pageYOffset <= 10 && !header.classList.contains('header-black-gradient')) {
-        if (!header.classList.contains('mobile-header--is-open')) {
-          header.classList.add('header-black-gradient');
-        }
+      if(window.pageYOffset >= 10) {
+        header.classList.add('header-default');
+      } else {
+        header.classList.remove('header-default');
       }
     }
   }

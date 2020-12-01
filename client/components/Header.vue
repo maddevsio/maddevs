@@ -84,6 +84,7 @@ export default {
     position: fixed;
     z-index: 2;
     background-color: $bgcolor--black;
+    transition: background-color 0.5s ease;
 
     &__header-logo {
       width: 34px;
@@ -198,8 +199,26 @@ export default {
   }
 
   .header-black-gradient {
-    height: 175px;
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.991353) 6.67%, rgba(0, 0, 0, 0.96449) 13.33%, rgba(0, 0, 0, 0.91834) 20%, rgba(0, 0, 0, 0.852589) 26.67%, rgba(0, 0, 0, 0.768225) 33.33%, rgba(0, 0, 0, 0.668116) 40%, rgba(0, 0, 0, 0.557309) 46.67%, rgba(0, 0, 0, 0.442691) 53.33%, rgba(0, 0, 0, 0.331884) 60%, rgba(0, 0, 0, 0.231775) 66.67%, rgba(0, 0, 0, 0.147411) 73.33%, rgba(0, 0, 0, 0.0816599) 80%, rgba(0, 0, 0, 0.03551) 86.67%, rgba(0, 0, 0, 0.0086472) 93.33%, rgba(0, 0, 0, 0) 100%);
+    background-color: transparent;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 175px;
+      position: absolute;
+      top: 0;
+      background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.991353) 6.67%, rgba(0, 0, 0, 0.96449) 13.33%, rgba(0, 0, 0, 0.91834) 20%, rgba(0, 0, 0, 0.852589) 26.67%, rgba(0, 0, 0, 0.768225) 33.33%, rgba(0, 0, 0, 0.668116) 40%, rgba(0, 0, 0, 0.557309) 46.67%, rgba(0, 0, 0, 0.442691) 53.33%, rgba(0, 0, 0, 0.331884) 60%, rgba(0, 0, 0, 0.231775) 66.67%, rgba(0, 0, 0, 0.147411) 73.33%, rgba(0, 0, 0, 0.0816599) 80%, rgba(0, 0, 0, 0.03551) 86.67%, rgba(0, 0, 0, 0.0086472) 93.33%, rgba(0, 0, 0, 0) 100%);
+      z-index: -1;
+        transition: opacity .5s ease;
+    }
+  }
+
+  .header-default {
+    background-color: $bgcolor--black;
+
+    &::before {
+      opacity: 0;
+    }
   }
 
   .mobile-menu_is-open {
