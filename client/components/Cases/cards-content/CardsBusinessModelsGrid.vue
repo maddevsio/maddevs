@@ -75,8 +75,7 @@ export default {
     }
 
     &__personal-image {
-      min-width: 397px;
-      height: 269px;
+      min-width: 399px;
       margin: -32px 0 0;
       position: relative;
       left: 50%;
@@ -116,7 +115,6 @@ export default {
 
     @media screen and (max-width: 480px) {
       &__personal-image {
-        height: 282px;
         margin: -20px 0 0;
         left: 50%;
         transform: translateX(-50%);
