@@ -38,6 +38,19 @@ export default {
     flex-direction: column;
     position: relative;
 
+    &:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../../assets/img/Cases/nambafood/jpg/blank.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+
     &:after {
       content: '';
       display: block;
