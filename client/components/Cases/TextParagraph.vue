@@ -1,5 +1,5 @@
 <template>
-  <p class="case_paragraph" :style="`color: ${color}`">
+  <p class="case_paragraph" :style="textColor">
     <slot></slot>
   </p>
 </template>
@@ -10,7 +10,16 @@ export default {
   props: {
     color: {
       type: String,
-      default: '#101113'
+      default: ''
+    }
+  },
+  computed: {
+    textColor() {
+      if (this.$props.color) {
+        return `color: ${this.$props.color}`;
+      } else {
+        return null;
+      }
     }
   }
 };
