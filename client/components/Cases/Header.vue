@@ -1,5 +1,9 @@
 <template>
   <section class="case_header">
+    <video class="case_main-video" loop="true" muted="true" autoplay>
+      <source src="../../assets/img/Cases/nambafood/video/main.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
     <div class="case_logotype nambafood"></div>
     <h1 class="case_title">Namba Food <br> Top 1 Delivery Service <br> in Central Asia</h1>
     <button type="button" class="case_more__button">Read our case studies ↓</button>
@@ -17,6 +21,15 @@ export default {
 @import "../../assets/styles/cases/mixins";
 
 .case {
+  &_main-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+  }
+
   &_header {
     height: 100vh;
     display: flex;
@@ -24,10 +37,17 @@ export default {
     justify-content: center;
     flex-direction: column;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../assets/img/Cases/nambafood/jpg/nambafood-logo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: red;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, .2);
+    }
   }
 
   &_logotype {
