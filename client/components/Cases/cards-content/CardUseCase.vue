@@ -17,7 +17,7 @@
           :alt="alt"
         />
       </div>
-      <div class="card-use-case__mobile-picture">
+      <div class="card-use-case__mobile-picture" :class="`card-use-case__${classList.uniqueСlass}-mobile-picture`">
         <Picture
           :pictureFolder="pictureFolder"
           :fileName="`${fileName}-mobile`"
@@ -149,11 +149,29 @@ export default {
         align-items: center;
         margin-bottom: -33px;
       }
+
+      &__black-card-description-wrapper {
+        margin-bottom: -7.1vw;
+      }
+
+      &__white-card-mobile-picture {
+        margin-bottom: -6.4vw;
+      }
     }
 
     @media screen and (max-width: 768px) {
       &__description-wrapper {
         margin-bottom: -21px;
+      }
+
+      &__black-card-description-wrapper {
+        margin-bottom: -6.6vw;
+      }
+    }
+
+    @media screen and (max-width: 898px) {
+      &__white-card-mobile-picture {
+        margin-bottom: -5.9vw;
       }
     }
 
@@ -162,7 +180,12 @@ export default {
         max-width: 320px;
       }
 
-      &__white-card-description-wrapper {
+      &__black-card-description-wrapper {
+        margin-bottom: -21px;
+      }
+
+      &__white-card-description-wrapper,
+      &__white-card-mobile-picture {
         margin-bottom: 0;
       }
     }
