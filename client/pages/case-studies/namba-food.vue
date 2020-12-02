@@ -62,7 +62,6 @@
               :title="useСase.title"
               :description="useСase.description"
               :fileName="useСase.fileName"
-              :fileNameRetina="`${useСase.fileName}@2x`"
               :fileExtension="useСase.fileExtension"
               :alt="useСase.alt"
               :classList="useСase.classList"
@@ -470,7 +469,6 @@ import CardDeliveryServiceNambafood from '@/components/Cases/cards-content/CardD
 import CardRestaurantTalisman from '@/components/Cases/cards-content/CardRestaurantTalisman';
 import CardNationwideNumbers from '@/components/Cases/cards-content/CardNationwideNumbers';
 import CardNinjaSushi from '@/components/Cases/cards-content/CardNinjaSushi';
-
 import Swiper from '@/components/Cases/Swiper';
 
 export default {

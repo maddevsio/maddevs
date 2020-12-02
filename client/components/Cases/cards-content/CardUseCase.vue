@@ -1,25 +1,24 @@
 <template>
-  <div class="case_card-use-case">
-    <h4 
-      class="case_card-use-case__title case_title_h4" 
-      :class="`case_card-use-case__${classList.uniqueСlass}-title`"
-    >
+  <div class="card-use-case">
+    <h4 class="card-use-case__title case_title_h4" :class="`card-use-case__${classList.uniqueСlass}-title`">
       {{title}}
     </h4>
-    <div class="case_card-use-case__description-wrapper">
-      <TextParagraph 
-        class="case_card-use-case__paragraph" 
-        :class="`case_card-use-case__${classList.uniqueСlass}-paragraph`"
-      >
+    <div class="card-use-case__description-wrapper">
+      <TextParagraph class="card-use-case__paragraph" :class="`card-use-case__${classList.uniqueСlass}-paragraph`">
         {{description}}
       </TextParagraph>
-      <div 
-        :class="`case_card-use-case__${classList.uniqueСlass}-image`"
-      >
+      <div :class="`card-use-case__${classList.uniqueСlass}-image`" class="card-use-case__desktop-picture">
         <Picture
           :pictureFolder="pictureFolder"
           :fileName="fileName"
-          :fileNameRetina="fileNameRetina"
+          :fileExtension="fileExtension"
+          :alt="alt"
+        />
+      </div>
+      <div :class="`card-use-case__${classList.uniqueСlass}-image-mobile`" class="card-use-case__mobile-picture">
+        <Picture
+          :pictureFolder="pictureFolder"
+          :fileName="`${fileName}-mobile`"
           :fileExtension="fileExtension"
           :alt="alt"
         />
@@ -54,10 +53,6 @@ export default {
       type: String,
       default: ''
     },
-    fileNameRetina: {
-      type: String,
-      default: ''
-    },
     fileExtension: {
       type: String,
       default: ''
@@ -76,11 +71,12 @@ export default {
 <style scoped lang="scss">
   @import '../../../assets/styles/cases/_mixins';
 
-  .case_card-use-case {
+  .card-use-case {
     height: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: -35px;
+    position: relative;
 
     &__description-wrapper {
       display: grid;
@@ -127,6 +123,54 @@ export default {
     &__white-card-image {
       height: 166px;
       bottom: -23px;
+    }
+
+    &__mobile-picture {
+      display: none;
+    }
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 0;
+      text-align: center;
+
+      &__paragraph {
+        margin-bottom: 24px;
+      }
+
+      &__desktop-picture {
+        display: none;
+      }
+
+      &__mobile-picture {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      &__white-card-image-mobile,
+      &__black-card-image-mobile {
+        margin-bottom: -40px;
+      }
+
+      &__turquoise-card-image-mobile,
+      &__red-card-image-mobile {
+        margin-bottom: -35px;
+      }
+
+      &__description-wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    @media screen and (max-width: 835px) {
+      &__mobile-picture {
+        max-width: 387px;
+        margin-bottom: -40px;
+      }
     }
   }
 </style>
