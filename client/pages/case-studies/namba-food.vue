@@ -57,7 +57,7 @@
           functionalities and user interfaces.
         </TextParagraph>
         <div class="case_usage-scenarios">
-          <Card v-for="(useСase, i) in usageScenarios" :key="i" :class="useСase.classList.cardColor">
+          <Card v-for="(useСase, i) in usageScenarios" :key="i" class="case_usage-scenarios-card" :class="useСase.classList.cardColor">
             <CardUseCase
               :title="useСase.title"
               :description="useСase.description"
@@ -676,7 +676,7 @@ export default {
           alt: ''
         },
         {
-          title: 'Unified control system for call-center and delivery personnel',
+          title: 'Unified control system for <span>call-center</span> and delivery personnel',
           description: 'Full control of the ordering process from order acceptance to status tracking.',
           classList: {
             cardColor: 'background-color-turquoise',

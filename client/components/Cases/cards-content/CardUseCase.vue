@@ -1,13 +1,15 @@
 <template>
   <div class="card-use-case">
-    <h4 class="card-use-case__title case_title_h4" :class="`card-use-case__${classList.uniqueСlass}-title`">
-      {{title}}
-    </h4>
-    <div class="card-use-case__description-wrapper">
+    <client-only>
+      <h4 class="card-use-case__title case_title_h4" :class="`card-use-case__${classList.uniqueСlass}-title`" v-html="title">
+        {{title}}
+      </h4>
+    </client-only>
+    <div class="card-use-case__description-wrapper" :class="`card-use-case__${classList.uniqueСlass}-description-wrapper`">
       <TextParagraph class="card-use-case__paragraph" :class="`card-use-case__${classList.uniqueСlass}-paragraph`">
         {{description}}
       </TextParagraph>
-      <div :class="`card-use-case__${classList.uniqueСlass}-image`" class="card-use-case__desktop-picture">
+      <div :class="`card-use-case__${classList.uniqueСlass}-picture`" class="card-use-case__desktop-picture">
         <Picture
           :pictureFolder="pictureFolder"
           :fileName="fileName"
@@ -15,7 +17,7 @@
           :alt="alt"
         />
       </div>
-      <div :class="`card-use-case__${classList.uniqueСlass}-image-mobile`" class="card-use-case__mobile-picture">
+      <div class="card-use-case__mobile-picture">
         <Picture
           :pictureFolder="pictureFolder"
           :fileName="`${fileName}-mobile`"
@@ -75,12 +77,13 @@ export default {
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: -35px;
     position: relative;
 
     &__description-wrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      height: 100%;
+      margin-bottom: -40px;
     }
 
     &__title {
@@ -97,40 +100,31 @@ export default {
       color: $text-color--black-cases;
     }
 
-    &__red-card-image,
-    &__black-card-image,
-    &__turquoise-card-image,
-    &__white-card-image {
+    &__desktop-picture {
+      margin-top: auto;
       position: relative;
-      right: -33px;
+      right: -32px;
     }
 
-    &__red-card-image,
-    &__black-card-image {
-      height: 198px;
+    &__red-card-picture,
+    &__black-card-picture {
       width: 140px;
     }
 
-    &__turquoise-card-image,
-    &__white-card-image {
+    &__turquoise-card-picture,
+    &__white-card-picture {
       width: 166px;
-    }
-
-    &__turquoise-card-image {
-      height: 158px;
-    }
-
-    &__white-card-image {
-      height: 166px;
-      bottom: -23px;
     }
 
     &__mobile-picture {
       display: none;
     }
 
-    @media screen and (max-width: 1024px) {
-      margin-bottom: 0;
+    /deep/ span {
+      white-space: nowrap;
+    }
+
+    @media screen and (max-width: 1000px) {
       text-align: center;
 
       &__paragraph {
@@ -142,19 +136,9 @@ export default {
       }
 
       &__mobile-picture {
+        display: block;
         width: 100%;
         height: auto;
-        display: block;
-      }
-
-      &__white-card-image-mobile,
-      &__black-card-image-mobile {
-        margin-bottom: -40px;
-      }
-
-      &__turquoise-card-image-mobile,
-      &__red-card-image-mobile {
-        margin-bottom: -35px;
       }
 
       &__description-wrapper {
@@ -166,10 +150,19 @@ export default {
       }
     }
 
-    @media screen and (max-width: 835px) {
+    @media screen and (max-width: 768px) {
+      &__description-wrapper {
+        margin-bottom: -28px;
+      }
+    }
+
+    @media screen and (max-width: 620px) {
       &__mobile-picture {
-        max-width: 387px;
-        margin-bottom: -40px;
+        max-width: 320px;
+      }
+
+      &__white-card-description-wrapper {
+        margin-bottom: 0;
       }
     }
   }
