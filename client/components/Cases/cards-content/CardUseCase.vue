@@ -83,7 +83,7 @@ export default {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       height: 100%;
-      margin-bottom: -40px;
+      margin-bottom: -32px;
     }
 
     &__title {
@@ -147,12 +147,13 @@ export default {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: -33px;
       }
     }
 
     @media screen and (max-width: 768px) {
       &__description-wrapper {
-        margin-bottom: -28px;
+        margin-bottom: -21px;
       }
     }
 

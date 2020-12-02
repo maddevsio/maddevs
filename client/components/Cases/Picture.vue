@@ -48,6 +48,7 @@ export default {
   .image {
     width: 100%;
     height: auto;
+    display: block;
   }
 
   .box-shadow {
