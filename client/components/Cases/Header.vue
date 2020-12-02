@@ -27,6 +27,7 @@ export default {
     left: 0;
     z-index: -1;
     height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
@@ -68,11 +69,13 @@ export default {
     width: 127px;
     height: 114px;
     margin-bottom: 54px;
+    z-index: 1;
   }
 
   &_title {
     @include title($text-color--white, 51.88px, -2px);
     text-align: center;
+    z-index: 1;
   }
 
   &_more__button {
@@ -83,6 +86,7 @@ export default {
     width: 100%;
     background-color: $bgcolor--pink;
     border: 0;
+    z-index: 1;
     cursor: pointer;
 
     @include default_text($text-color--white, 18px, 30px, -0.035em, normal);
