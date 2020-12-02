@@ -6,6 +6,7 @@
           :pictureFolder="element.pictureFolder"
           :fileName="element.fileName"
           :fileExtension="element.fileExtension"
+          :lazyLoading="true"
           alt=""
         />
       </swiper-slide>
@@ -16,6 +17,7 @@
           :pictureFolder="element.pictureFolder"
           :fileName="element.fileName"
           :fileExtension="element.fileExtension"
+          :lazyLoading="true"
           alt=""
         />
       </swiper-slide>

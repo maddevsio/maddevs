@@ -24,6 +24,7 @@
         fileNameRetina="ninja-sushi@2x"
         fileExtension="png"
         alt=""
+        :lazyLoading="true"
       />
     </div>
   </div>

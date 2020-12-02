@@ -7,6 +7,7 @@
       :fileNameRetina="fileNameRetina"
       :fileExtension="fileExtension"
       :alt="alt"
+      :lazyLoading="true"
       class="case_team-item__image"
     />
     <div class="case_team-item__default-image" v-else></div>

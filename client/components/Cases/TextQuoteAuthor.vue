@@ -8,6 +8,7 @@
           :fileName="fileName"
           :fileExtension="fileExtension"
           :alt="alt"
+          :lazyLoading="true"
         />
       </div>
       <TextParagraph>{{authorName}}</TextParagraph>

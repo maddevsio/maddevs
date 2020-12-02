@@ -11,7 +11,7 @@
       :src="[require(`@/assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}.${fileExtension}`)]"
       :srcset="[require(`@/assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}@2x.${fileExtension}`) + ' 2x']"
       :alt="alt"
-      loading="lazy"
+      :loading="lazyLoading ? 'lazy' : ''"
     >
   </picture>
 </template>
@@ -36,6 +36,10 @@ export default {
     alt: {
       type: String,
       default: ''
+    },
+    lazyLoading: {
+      type: Boolean,
+      default: false
     },
     boxShadow: {
       type: Boolean,

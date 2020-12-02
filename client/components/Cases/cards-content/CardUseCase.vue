@@ -13,6 +13,7 @@
           :fileName="fileName"
           :fileExtension="fileExtension"
           :alt="alt"
+          :lazyLoading="true"
         />
       </div>
       <div class="card-use-case__mobile-picture" :class="`card-use-case__${classList.uniqueСlass}-mobile-picture`">
@@ -21,6 +22,7 @@
           :fileName="`${fileName}-mobile`"
           :fileExtension="fileExtension"
           :alt="alt"
+          :lazyLoading="false"
         />
       </div>
     </div>

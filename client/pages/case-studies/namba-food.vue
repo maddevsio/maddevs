@@ -136,6 +136,7 @@
             fileNameRetina="couriers-android-app@2x"
             fileExtension="png"
             alt=""
+            :lazyLoading="true"
           />
         </section>
       </div>
@@ -158,6 +159,7 @@
           fileExtension="jpg"
           alt=""
           :boxShadow="true"
+          :lazyLoading="true"
         />
       </section>
       <section class="container_regular">
@@ -308,6 +310,7 @@
           fileExtension="jpg"
           alt=""
           :boxShadow="true"
+          :lazyLoading="true"
         />
       </section>
       <section class="container_regular">
@@ -354,6 +357,7 @@
             fileNameRetina="pipelines@2x"
             fileExtension="jpg"
             alt=""
+            :lazyLoading="true"
           />
         </section>
       </section>
@@ -365,6 +369,7 @@
             fileNameRetina="pipelines-mobile@2x"
             fileExtension="jpg"
             alt=""
+            :lazyLoading="true"
           />
         </section>
       </section>

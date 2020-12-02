@@ -8,6 +8,7 @@
           fileNameRetina="personal@2x"
           fileExtension="png"
           alt=""
+          :lazyLoading="true"
         />
       </div>
       <div class="case_business-models-grid__text-wrapper">
