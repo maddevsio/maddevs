@@ -676,7 +676,7 @@ export default {
           alt: ''
         },
         {
-          title: 'Unified control system for <span>call-center</span> and curriers',
+          title: 'Unified control system for operators',
           description: 'Full control of the ordering process from order acceptance to status tracking.',
           classList: {
             cardColor: 'background-color-turquoise',
