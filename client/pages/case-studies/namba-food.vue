@@ -289,10 +289,12 @@
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <video id="map-video" class="case_box-shadow case_border-radius-video" width="100%" height="100%" loop="true" muted="true">
-          <source src="../../assets/video/map.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="case_map-video-wrapper">
+          <video id="map-video" class="case_map-video case_box-shadow" width="100%" height="100%" loop="true" muted="true">
+            <source src="../../assets/video/map.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </section>
       <section class="container_regular">
         <h3 class="case_title_h3 m-96_top m-12_bottom media-m-48_top">Grafana — Docker containers’ monitoring service</h3>

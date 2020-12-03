@@ -16,9 +16,13 @@
   }
 
   // Hide black borders at the video player
+  &_full-screen-phone-video-wrapper,
+  &_map-video-wrapper {
+    position: relative;
+  }
+
   &_full-screen-phone-video-wrapper {
     max-width: 1440px;
-    position: relative;
     margin: auto;
 
     &::before,
@@ -40,13 +44,23 @@
     }
   }
 
-  &_animation_block {
-    height: 104px;
-  }
-
-  &_border-radius-video {
+  &_map-video-wrapper {
+    position: relative;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: 6px;
+      background-color: $bgcolor--silver-transparent;
+    }
+  }
+
+  &_animation_block {
+    height: 104px;
   }
 
   &_delivery-control-card {
