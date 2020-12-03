@@ -33,6 +33,7 @@ export default {
 
   &_header {
     height: 100vh;
+    min-height: 568px;
     display: flex;
     align-items: center;
     justify-content: center;
