@@ -5,7 +5,7 @@
       Your browser does not support the video tag.
     </video>
     <div class="case_logotype nambafood"></div>
-    <h1 class="case_title">Namba Food <br> Top 1 Delivery Service <br> in Central Asia</h1>
+    <h1 class="case_title">Namba Food <br> Top 1 Delivery Service <br class="case_text-break"> in Central Asia</h1>
     <button type="button" class="case_more__button">Read our case studies ↓</button>
   </section>
 </template>
@@ -90,6 +90,32 @@ export default {
     cursor: pointer;
 
     @include default_text($text-color--white, 18px, 30px, -0.035em, normal);
+  }
+
+  @media screen and (max-width: 768px) {
+    &_title {
+      @include title($text-color--white, 35px, -1px);
+    }
+
+    &_more__button {
+      @include default_text($text-color--white, 16px, 150%, -0.02em, normal);
+    }
+
+    &_logotype {
+      width: 103.51px;
+      height: 92.75px;
+      margin-bottom: 46px;
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+    &_title {
+      max-width: 290px;
+    }
+
+    &_text-break {
+      display: none;
+    }
   }
 }
 </style>
