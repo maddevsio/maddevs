@@ -199,7 +199,7 @@ export default {
   }
 
   .header-black-gradient {
-    background-color: transparent;
+    background-color: transparent !important;
 
     &::before {
       content: '';
@@ -214,7 +214,7 @@ export default {
   }
 
   .header-default {
-    background-color: $bgcolor--black;
+    background-color: $bgcolor--black !important;
 
     &::before {
       opacity: 0;
