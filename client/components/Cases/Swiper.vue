@@ -1,28 +1,30 @@
 <template>
-  <div class="thumb-example">
+  <div class="swiper-container">
     <div class="swiper-frame"></div>
-    <swiper class="swiper gallery-top" :options="swiperOptionTop" ref="swiperTop">
-      <swiper-slide v-for="element in components" :key="element.fileName">
-        <Picture
-          :pictureFolder="element.pictureFolder"
-          :fileName="element.fileName"
-          :fileExtension="element.fileExtension"
-          :lazyLoading="true"
-          alt=""
-        />
-      </swiper-slide>
-    </swiper>
-    <swiper class="swiper gallery-thumbs" :options="swiperOptionThumbs" ref="swiperThumbs">
-      <swiper-slide v-for="element in components" :key="element.fileName">
-        <Picture
-          :pictureFolder="element.pictureFolder"
-          :fileName="element.fileName"
-          :fileExtension="element.fileExtension"
-          :lazyLoading="true"
-          alt=""
-        />
-      </swiper-slide>
-    </swiper>
+    <div class="thumb-example">
+      <swiper class="swiper gallery-top" :options="swiperOptionTop" ref="swiperTop">
+        <swiper-slide v-for="element in components" :key="element.fileName">
+          <Picture
+            :pictureFolder="element.pictureFolder"
+            :fileName="element.fileName"
+            :fileExtension="element.fileExtension"
+            :lazyLoading="true"
+            alt=""
+          />
+        </swiper-slide>
+      </swiper>
+      <swiper class="swiper gallery-thumbs" :options="swiperOptionThumbs" ref="swiperThumbs">
+        <swiper-slide v-for="element in components" :key="element.fileName">
+          <Picture
+            :pictureFolder="element.pictureFolder"
+            :fileName="element.fileName"
+            :fileExtension="element.fileExtension"
+            :lazyLoading="true"
+            alt=""
+          />
+        </swiper-slide>
+      </swiper>
+    </div>
   </div>
 </template>
 
@@ -104,6 +106,7 @@ export default {
 
 .swiper-frame {
   height: 17px;
+  width: 100%;
   @include swiperFrame;
 }
 </style>
