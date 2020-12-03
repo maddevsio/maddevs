@@ -1,5 +1,6 @@
 <template>
   <div class="thumb-example">
+    <div class="swiper-frame"></div>
     <swiper class="swiper gallery-top" :options="swiperOptionTop" ref="swiperTop">
       <swiper-slide v-for="element in components" :key="element.fileName">
         <Picture
@@ -78,9 +79,6 @@ export default {
 @import '../../assets/styles/cases/icons';
 
 .thumb-example {
-  padding-top: 17px;
-  @include swiperFrame;
-
   img {
     display: block;
   }
@@ -102,5 +100,10 @@ export default {
   &.gallery-thumbs .swiper-slide-active {
     opacity: 1;
   }
+}
+
+.swiper-frame {
+  height: 17px;
+  @include swiperFrame;
 }
 </style>
