@@ -1,6 +1,12 @@
 <template>
   <div class="swiper-container">
-    <div class="swiper-frame"></div>
+    <Picture
+      pictureFolder="nambafood"
+      fileName="swiper-frame"
+      fileExtension="jpg"
+      alt=""
+      :lazyLoading="true"
+    />
     <div class="thumb-example">
       <swiper class="swiper gallery-top" :options="swiperOptionTop" ref="swiperTop">
         <swiper-slide v-for="element in components" :key="element.fileName">
@@ -102,11 +108,5 @@ export default {
   &.gallery-thumbs .swiper-slide-active {
     opacity: 1;
   }
-}
-
-.swiper-frame {
-  height: 17px;
-  width: 100%;
-  @include swiperFrame;
 }
 </style>
