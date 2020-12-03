@@ -117,7 +117,7 @@
           track the progress on both mobile application and website.
         </TextParagraph>
       </section>
-      <div class="container_full background-color-black m-48_bottom">
+      <div class="container_full background-color-black m-48_bottom case_black-section">
         <section class="container_regular">
           <h2 class="case_title_h2 case_text-align-center m-48_bottom p-78_top media-m-8_bottom media-p-38_top" :style="{color: '#ffffff'}">Android application for
             couriers</h2>
@@ -129,16 +129,16 @@
             and heads to the client.
           </TextParagraph>
         </section>
-        <section class="container_middle">
+        <section class="container_middle case_couriers-android-app-wrapper">
           <Picture
             pictureFolder="nambafood"
             fileName="couriers-android-app"
-            fileNameRetina="couriers-android-app@2x"
             fileExtension="png"
             alt=""
             :lazyLoading="true"
           />
         </section>
+        <div class="case_black-gradient"></div>
       </div>
       <section class="container_regular">
         <h2 class="case_title_h2">Admin panel automates Namba Food’s scalability</h2>
