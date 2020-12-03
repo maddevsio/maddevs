@@ -23,26 +23,10 @@
   }
 
   &_full-screen-phone-video-wrapper {
-    max-width: 1440px;
     margin: auto;
-
-    &::before,
-    &::after {
-      content: '';
-      width: 5px;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      background-color: $bgcolor--silver;
-    }
-
-    &::before {
-      left: 0;
-    }
-
-    &::after {
-      right: 0;
-    }
+    width: 23%;
+    max-width: 340px;
+    min-width: 225px;
   }
 
   &_map-video-wrapper {
