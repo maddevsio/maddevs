@@ -289,8 +289,8 @@
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <div class="case_map-video-wrapper">
-          <video id="map-video" class="case_map-video case_box-shadow" width="100%" height="100%" loop="true" muted="true">
+        <div class="case_map-video-wrapper case_box-shadow">
+          <video id="map-video" class="case_map-video" width="100%" height="100%" loop="true" muted="true">
             <source src="../../assets/video/map.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>

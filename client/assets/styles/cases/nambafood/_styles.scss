@@ -45,7 +45,6 @@
   }
 
   &_map-video-wrapper {
-    position: relative;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 
@@ -54,9 +53,14 @@
       width: 100%;
       height: 2px;
       position: absolute;
-      bottom: 6px;
-      background-color: $bgcolor--silver-transparent;
+      bottom: 0;
+      background-color: $bgcolor--silver;
+      z-index: 1;
     }
+  }
+
+  &_map-video {
+    display: block;
   }
 
   &_animation_block {
