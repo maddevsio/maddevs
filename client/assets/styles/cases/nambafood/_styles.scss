@@ -22,13 +22,7 @@
     position: relative;
   }
 
-  &_full-screen-phone-video-wrapper {
-    margin: auto;
-    width: 23%;
-    max-width: 340px;
-    min-width: 225px;
-  }
-
+  &_full-screen-phone-video-wrapper,
   &_map-video-wrapper {
     &::before {
       content: '';
@@ -37,10 +31,26 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-image: url("../../assets/img/Cases/nambafood/jpg/map-blank.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       z-index: -1;
+    }
+  }
+
+  &_full-screen-phone-video-wrapper {
+    margin: auto;
+    width: 23%;
+    max-width: 340px;
+    min-width: 225px;
+
+    &::before {
+      background-image: url("../../assets/img/Cases/nambafood/png/iphone-video-preview.png");
+    }
+  }
+
+  &_map-video-wrapper {
+    &::before {
+      background-image: url("../../assets/img/Cases/nambafood/jpg/map-blank.jpg");
     }
   }
 
