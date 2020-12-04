@@ -1,6 +1,6 @@
 <template>
   <section class="case_header">
-    <video class="case_main-video" loop="true" muted="true" autoplay="true">
+    <video class="case_main-video" loop="true" muted="true" autoplay="true" playsinline>
       <source src="../../assets/img/Cases/nambafood/video/main.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
