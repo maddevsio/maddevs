@@ -80,7 +80,7 @@
       </section>
       <section class="container_full background-color-silver p-75_top p-75_bottom media-p-16_top media-p-16_bottom">
         <div class="case_full-screen-phone-video-wrapper">
-          <video id="iphone-silver-video" class="case_full-screen-video" width="100%" height="100%" loop="true" muted="true" playsinline>
+          <video id="iphone-silver-video" class="case_full-screen-video" width="100%" height="100%" loop="true" muted="true">
             <source src="../../assets/video/mobile-applications-for-end-users.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -290,7 +290,7 @@
       </section>
       <section class="container_middle">
         <div class="case_map-video-wrapper case_box-shadow">
-          <video id="map-video" class="case_map-video" width="100%" height="100%" loop="true" muted="true" playsinline>
+          <video id="map-video" class="case_map-video" width="100%" height="100%" loop="true" muted="true">
             <source src="../../assets/video/map.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
