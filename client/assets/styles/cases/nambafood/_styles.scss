@@ -44,6 +44,7 @@
     width: 23%;
     max-width: 340px;
     min-width: 225px;
+    z-index: 0;
 
     &::before {
       background-image: url("../../assets/img/Cases/nambafood/png/iphone-video-preview.png");
