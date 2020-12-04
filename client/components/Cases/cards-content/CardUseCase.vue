@@ -13,7 +13,7 @@
           :fileName="fileName"
           :fileExtension="fileExtension"
           :alt="alt"
-          :lazyLoading="true"
+          :lazyLoading="false"
         />
       </div>
       <div class="card-use-case__mobile-picture" :class="`card-use-case__${classList.uniqueСlass}-mobile-picture`">
