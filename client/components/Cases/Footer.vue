@@ -47,6 +47,10 @@ export default {
     @include default_text($text-color--white-primary, 17px, 166%, -0.035em, normal);
   }
 
+   /deep/ &_mobile-screen-break {
+      display: none;
+    }
+
   @media screen and (max-width: 768px) {
     &_footer {
       padding-top: 70px;
@@ -66,6 +70,12 @@ export default {
 
     &_next-project-button {
       @include default_text($text-color--white-primary, 16px, 150%, -0.02em, normal);
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    /deep/ &_mobile-screen-break {
+      display: block;
     }
   }
 }

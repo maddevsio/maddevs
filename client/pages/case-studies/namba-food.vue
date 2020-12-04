@@ -447,7 +447,7 @@
       </section>
     </section>
     <Footer>
-      Namba Food <br> Top 1 Delivery Service in Central Asia
+      Namba Food <br> Top 1 Delivery Service in <br class="case_mobile-screen-break"> Central Asia
     </Footer>
   </main>
 </template>
