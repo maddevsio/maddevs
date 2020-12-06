@@ -81,7 +81,7 @@ export default {
       margin-left: auto;
       position: relative;
       right: -32px;
-      bottom: -15px;
+      bottom: -38px;
     }
 
     &_macbook-frame {
