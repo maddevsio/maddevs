@@ -17,15 +17,20 @@
       </TextParagraph>
     </div>
     <div class="case_card-content_right-column">
-      <img src="../../../assets/img/Cases/nambafood/gif/multi-directional-business-model.gif" class="case_card-content_multi-directional-business-model-gif">
-      <Picture
-        pictureFolder="nambafood"
-        fileName="ninja-sushi"
-        fileNameRetina="ninja-sushi@2x"
-        fileExtension="png"
-        alt=""
-        :lazyLoading="true"
-      />
+      <picture>
+        <source
+          class="image"
+          :srcset="[require(`@/assets/img/Cases/nambafood/webp/ninja-sushi-slide.webp`) + ' ', require(`@/assets/img/Cases/nambafood/webp/ninja-sushi-slide@2x.webp`) + ' 2x']"
+          type='image/webp'
+          ref="source"
+        >
+        <img
+          class="image"
+          :src="[require('@/assets/img/Cases/nambafood/png/ninja-sushi-slide.png')]"
+          :srcset="[require(`@/assets/img/Cases/nambafood/png/ninja-sushi-slide@2x.png`) + ' 2x']"
+          ref="img"
+        >
+      </picture>
     </div>
   </div>
 </template>
@@ -39,6 +44,21 @@ export default {
   components: {
     TextParagraph,
     Picture
+  },
+  mounted() {
+    const img = this.$refs.img;
+    const source = this.$refs.source;
+    (() => { // function expression closure to contain variables
+      let i = 0;
+      const pictures = ['ninja-sushi-slide', 'sushi-room-slide', 'coffee-house-slide'];
+      function toggle() {
+        img.src = require(`@/assets/img/Cases/nambafood/png/${pictures[i]}.png`);
+        img.srcset = require(`@/assets/img/Cases/nambafood/png/${pictures[i]}@2x.png`) + ' 2x';
+        source.srcset = require(`@/assets/img/Cases/nambafood/webp/${pictures[i]}.webp`) + ' ', require(`@/assets/img/Cases/nambafood/webp/${pictures[i]}@2x.webp`) + ' 2x';
+        i = (i + 1) % pictures.length; // update the counter
+      }
+      setInterval(toggle, 1500);
+    })(); 
   }
 };
 </script>
