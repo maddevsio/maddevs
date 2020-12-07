@@ -97,7 +97,7 @@ export default {
       }
 
       &__name {
-        @include default_text($text-color--black-cases, 14px, 16px, -0.02em, bold);
+        @include default_text($text-color--black-cases, 14px, 16px, -0.035em, bold);
       }
 
       &__position {
