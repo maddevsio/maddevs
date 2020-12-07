@@ -76,7 +76,7 @@ exports[`Footer contacts renders correctly 1`] = `
       <li>
         <a
           class="footer-contacts__messenger-item-wrapper"
-          href="http://wa.me/996555771481"
+          href="https://wa.me/message/KPJAW6J7BF7EK1"
           target="__blank"
         >
           <span
@@ -93,7 +93,7 @@ exports[`Footer contacts renders correctly 1`] = `
       <li>
         <a
           class="footer-contacts__messenger-item-wrapper"
-          href="https://t.me/mun_tamara/"
+          href="https://t.me/MadDevs_io"
           target="__blank"
         >
           <span
