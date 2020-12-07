@@ -184,7 +184,6 @@ export default {
         margin-bottom: -21px;
       }
 
-      &__white-card-description-wrapper,
       &__white-card-mobile-picture {
         margin-bottom: 0;
       }
