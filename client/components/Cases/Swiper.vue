@@ -1,13 +1,13 @@
 <template>
-  <div class="swiper-container">
-    <Picture
-      pictureFolder="nambafood"
-      fileName="swiper-frame"
-      fileExtension="jpg"
-      alt=""
-      :lazyLoading="true"
-    />
-    <div class="thumb-example">
+  <div class="slider-content">
+    <div class="swiper-container thumb-example">
+      <Picture
+        pictureFolder="nambafood"
+        fileName="swiper-frame"
+        fileExtension="jpg"
+        alt=""
+        :lazyLoading="true"
+      />
       <swiper class="swiper gallery-top" :options="swiperOptionTop" ref="swiperTop">
         <swiper-slide v-for="element in components" :key="element.fileName">
           <Picture
@@ -19,18 +19,18 @@
           />
         </swiper-slide>
       </swiper>
-      <swiper class="swiper gallery-thumbs" :options="swiperOptionThumbs" ref="swiperThumbs">
-        <swiper-slide v-for="element in components" :key="element.fileName">
-          <Picture
-            :pictureFolder="element.pictureFolder"
-            :fileName="element.fileName"
-            :fileExtension="element.fileExtension"
-            :lazyLoading="true"
-            alt=""
-          />
-        </swiper-slide>
-      </swiper>
     </div>
+    <swiper class="swiper gallery-thumbs" :options="swiperOptionThumbs" ref="swiperThumbs">
+      <swiper-slide v-for="element in components" :key="element.fileName">
+        <Picture
+          :pictureFolder="element.pictureFolder"
+          :fileName="element.fileName"
+          :fileExtension="element.fileExtension"
+          :lazyLoading="true"
+          alt=""
+        />
+      </swiper-slide>
+    </swiper>
   </div>
 </template>
 
@@ -87,6 +87,8 @@ export default {
 @import '../../assets/styles/cases/icons';
 
 .thumb-example {
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05), 0px 5.47001px 41.35px rgba(0, 0, 0, 0.1);
+
   img {
     display: block;
   }
