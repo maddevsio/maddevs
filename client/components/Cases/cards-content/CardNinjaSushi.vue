@@ -27,8 +27,8 @@
         >
         <img
           class="case_card-content_image"
-          :src="[require('@/assets/img/Cases/nambafood/png/ninja-sushi-slide.png')]"
-          :srcset="[require(`@/assets/img/Cases/nambafood/png/ninja-sushi-slide@2x.png`) + ' 2x']"
+          :src="[require('@/assets/img/Cases/nambafood/jpg/ninja-sushi-slide.jpg')]"
+          :srcset="[require(`@/assets/img/Cases/nambafood/jpg/ninja-sushi-slide@2x.jpg`) + ' 2x']"
           ref="img"
         >
       </picture>
@@ -53,8 +53,8 @@ export default {
     let i = 0;
 
     function toggle() {
-      img.src = require(`@/assets/img/Cases/nambafood/png/${pictures[i]}.png`);
-      img.srcset = require(`@/assets/img/Cases/nambafood/png/${pictures[i]}@2x.png`) + ' 2x';
+      img.src = require(`@/assets/img/Cases/nambafood/jpg/${pictures[i]}.jpg`);
+      img.srcset = require(`@/assets/img/Cases/nambafood/jpg/${pictures[i]}@2x.jpg`) + ' 2x';
       source.srcset = require(`@/assets/img/Cases/nambafood/webp/${pictures[i]}.webp`) + ' ', require(`@/assets/img/Cases/nambafood/webp/${pictures[i]}@2x.webp`) + ' 2x';
       i = (i + 1) % pictures.length; // update the counter
     }
@@ -95,6 +95,7 @@ export default {
       position: relative;
       right: -34px;
       bottom: -59px;
+      border-radius: 4px;
     }
 
     @media screen and (max-width: 840px) {
