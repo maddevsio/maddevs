@@ -380,7 +380,7 @@ exports[`FAQ renders correctly 1`] = `
           
           <a
             class="faq__link faq__link"
-            href="https://t.me/mun_tamara/"
+            href="https://t.me/MadDevs_io"
             target="_blank"
           >
             Telegram
@@ -389,7 +389,7 @@ exports[`FAQ renders correctly 1`] = `
           
           <a
             class="faq__link faq__link"
-            href="http://wa.me/996555771481"
+            href="https://wa.me/message/KPJAW6J7BF7EK1"
             target="_blank"
           >
             Whatsapp
