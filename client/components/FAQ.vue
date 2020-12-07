@@ -69,8 +69,8 @@
           <li class="faq__list">
             Text message via 
             <a href="https://facebook.com/maddevsllc" class="faq__link faq__link" target="_blank">Facebook Messenger</a>, 
-            <a href="https://t.me/mun_tamara/" class="faq__link faq__link" target="_blank">Telegram</a>, 
-            <a href="http://wa.me/996555771481" class="faq__link faq__link" target="_blank">Whatsapp</a>, 
+            <a href="https://t.me/MadDevs_io" class="faq__link faq__link" target="_blank">Telegram</a>, 
+            <a href="https://wa.me/message/KPJAW6J7BF7EK1" class="faq__link faq__link" target="_blank">Whatsapp</a>, 
             or <a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc" class="faq__link faq__link" target="_blank">WeChat</a>.
           </li>
         </ul>
