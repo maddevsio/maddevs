@@ -15,7 +15,6 @@
     @include grid(repeat(2, 1fr), auto, 25px, 25px);
   }
 
-  // Hide black borders at the video player
   &_full-screen-phone-video-wrapper,
   &_map-video-wrapper,
   &_black-section {
@@ -92,6 +91,19 @@
     background: linear-gradient(0deg, #101113 32.51%, rgba(16, 17, 19, 0) 100%);
   }
 
+  &_black-section {
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 1220px) {
+    &_couriers-android-app-wrapper {
+      min-width: 1020px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
   @media screen and (max-width: 940px) {
     &_nationwide-cards {
       @include grid(repeat(1, 1fr), auto, 0, 20px);
@@ -151,14 +163,17 @@
         grid-row-start: 3;
       }
     }
-  }
 
-  @media screen and (max-width: 620px) {
+    &_black-section-content {
+      margin-bottom: -63px;
+    }
+
     &_couriers-android-app-wrapper {
       min-width: 701px;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
+    }
+
+    &_black-gradient {
+      min-height: 0;
     }
   }
 }

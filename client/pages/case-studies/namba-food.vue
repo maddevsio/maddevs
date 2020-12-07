@@ -118,27 +118,29 @@
         </TextParagraph>
       </section>
       <div class="container_full background-color-black m-48_bottom case_black-section">
-        <section class="container_regular">
-          <h2 class="case_title_h2 case_text-align-center m-48_bottom p-78_top media-m-8_bottom media-p-38_top" :style="{color: '#ffffff'}">Android application for
-            couriers</h2>
-          <TextParagraph color="#ffffff" class="case_text-align-center m-56_bottom media-m-16_bottom">
-            Android app for couriers enables them to receive new orders, assigned to them by operators via the control
-            panel. After a courier is assigned to the order, their app receives a push notification and displays the
-            order pick-up location. Having received the notification, the courier goes to pick up the order from a cafe or
-            a shop
-            and heads to the client.
-          </TextParagraph>
-        </section>
-        <section class="container_middle case_couriers-android-app-wrapper">
-          <Picture
-            pictureFolder="nambafood"
-            fileName="couriers-android-app"
-            fileExtension="png"
-            alt=""
-            :lazyLoading="true"
-          />
-        </section>
-        <div class="case_black-gradient"></div>
+        <div class="case_black-section-content">
+          <section class="container_regular">
+            <h2 class="case_title_h2 case_text-align-center m-48_bottom p-78_top media-m-8_bottom media-p-38_top" :style="{color: '#ffffff'}">Android application for
+              couriers</h2>
+            <TextParagraph color="#ffffff" class="case_text-align-center m-56_bottom media-m-16_bottom">
+              Android app for couriers enables them to receive new orders, assigned to them by operators via the control
+              panel. After a courier is assigned to the order, their app receives a push notification and displays the
+              order pick-up location. Having received the notification, the courier goes to pick up the order from a cafe or
+              a shop
+              and heads to the client.
+            </TextParagraph>
+          </section>
+          <section class="container_middle case_couriers-android-app-wrapper">
+            <Picture
+              pictureFolder="nambafood"
+              fileName="couriers-android-app"
+              fileExtension="png"
+              alt=""
+              :lazyLoading="true"
+            />
+          </section>
+          <div class="case_black-gradient"></div>
+        </div>
       </div>
       <section class="container_regular">
         <h2 class="case_title_h2">Admin panel automates Namba Food’s scalability</h2>
@@ -695,7 +697,7 @@ export default {
         },
         {
           title: 'Control panel for managers',
-          description: 'Facilitates uploading the menu and updating informationabout services.',
+          description: 'Facilitates uploading the menu and updating information about services.',
           classList: {
             cardColor: 'background-color-silver',
             uniqueСlass: 'white-card'
