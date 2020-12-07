@@ -35,17 +35,17 @@ export default {
     /deep/ p,
     /deep/ h1,
     /deep/ li {
-      color: $text-color--white;
+      color: $text-color--black-cases;
     }
 
     /deep/ h1,
     /deep/ li {
-      font-family: 'Poppins-Regular', sans-serif;
+      font-family: 'Inter-Regular', sans-serif;
     }
 
     /deep/ h1 {
-      margin-top: 60px;
-      font-size: 1.9em;
+      margin: 72px 0 48px;
+      font-size: 42px;
       font-weight: normal;
     }
 
@@ -58,15 +58,14 @@ export default {
       margin-bottom: 30px;
     }
 
-    /deep/ strong,
-    /deep/ p {
-      font-family: 'Poppins-Bold', sans-serif;
+    /deep/ strong {
+      font-family: 'Inter-Bold', sans-serif;
       font-weight: 700;
     }
 
     /deep/ p,
     /deep/ li {
-      font-size: 18px;
+      font-size: 17px;
       line-height: 129%;
       letter-spacing: -0.02em;
     }
@@ -74,7 +73,7 @@ export default {
 
     /deep/ p {
       margin: 25px 0;
-      font-family: 'Poppins-Regular', sans-serif;
+      font-family: 'Inter-Regular', sans-serif;
     }
 
     /deep/ em {
@@ -88,7 +87,7 @@ export default {
       overflow: auto;
       background: $bgcolor--grey-light;
       border-radius: 2px;
-      font-family: 'Poppins-Regular', sans-serif;
+      font-family: 'Inter-Regular', sans-serif;
       line-height: 24px;
     }
 
@@ -102,8 +101,8 @@ export default {
 
     /deep/ a {
       text-decoration: underline;
-      color: $text-color--white;
-      font-family: 'Poppins-Regular', sans-serif;
+      color: $text-color--black-cases;
+      font-family: 'Inter-Regular', sans-serif;
     }
   }
 </style>

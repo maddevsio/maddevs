@@ -1,53 +1,37 @@
 <template>
   <div class="blog-post">
-    <div class="blog-post__introduction-container">
-      <h1 class="blog-post__blog-title title">{{ $prismic.asText(document.title) }}</h1>
-      <p class="blog-post__blog-sub-title">{{ $prismic.asText(document.subtitle) }}</p>
-      <div class="blog-post__post-info">
-        <div class="blog-post__author">
-          <img :src="document.author_image.url" :alt="$prismic.asText(document.author)" class="blog-post__author-image" v-if="document.author_image.url !== undefined">
-          <div class="blog-post__none-image" v-else></div>
-          <div class="blog-post__author-info">
-            <p class="blog-post__author-name">{{ $prismic.asText(document.author) }}</p>
-            <p class="blog-post__data-of-creation">
-              <span class="blog-post__created-at">{{ formattedDate }}</span>
-            </p>
+    <div class="blog-post__background" />
+    <div class="blog-post__inner-container">
+      <div class="blog-post__introduction-container">
+        <h1 class="blog-post__blog-title title">{{ $prismic.asText(document.title) }}</h1>
+        <p class="blog-post__blog-sub-title">{{ $prismic.asText(document.subtitle) }}</p>
+        <div class="blog-post__post-info">
+          <div class="blog-post__author">
+            <img :src="document.author_image.url" :alt="$prismic.asText(document.author)" class="blog-post__author-image" v-if="document.author_image.url !== undefined">
+            <div class="blog-post__none-image" v-else></div>
+            <div class="blog-post__author-info">
+              <p class="blog-post__author-name">{{ $prismic.asText(document.author) }}</p>
+              <p class="blog-post__data-of-creation">
+                <span class="blog-post__author-title">{{ document.author_title }}</span>
+              </p>
+            </div>
+          </div>
+          <div class="blog-post__date-tag">
+            <div class="blog-post__date">{{ formattedDate }}</div>
+            <div class="blog-post__tag">{{ tags[0] }}</div>
           </div>
         </div>
-        <div class="blog-post__share">
-          <ShareNetwork
-            network="twitter"
-            :url="ogUrl"
-            :title="title"
-            class="blog-post__share-link blog-post__share-link--twitter"
-            target="_blank"
-          />
-          <ShareNetwork
-            network="facebook"
-            :url="ogUrl"
-            :title="title"
-            class="blog-post__share-link blog-post__share-link--facebook"
-            target="_blank"
-          />
-          <ShareNetwork
-            network="linkedin"
-            :url="ogUrl"
-            :title="title"
-            class="blog-post__share-link blog-post__share-link--linkedin"
-            target="_blank"
-          />
-        </div>
+        <img :src="document.introduction_image.url" class="blog-post__introduction-image" v-if="document.introduction_image.url !== undefined">
+        <p class="blog-post__introduction-paragraph">{{ $prismic.asText(document.introduction_paragraph) }}</p>
       </div>
-      <img :src="document.introduction_image.url" class="blog-post__introduction-image" v-if="document.introduction_image.url !== undefined">
-      <p class="blog-post__introduction-paragraph">{{ $prismic.asText(document.introduction_paragraph) }}</p>
+  <!--    <div class="blog-post__table-of-content" v-if="headingsList.length !== 0">-->
+  <!--      <p class="blog-post__table-of-content-title">Table of content:</p>-->
+  <!--      <ul class="blog-post__table-of-content-list">-->
+  <!--        <li v-for="(heading, i) in headingsList" :key="i" class="blog-post__table-of-content-list-item" @click="scrollToHeading(heading.headingName)">{{ heading.textContent }}</li>-->
+  <!--      </ul>-->
+  <!--    </div>-->
+      <slices-block :slices="slices" class="blog-post__text-container"/>
     </div>
-    <div class="blog-post__table-of-content" v-if="headingsList.length !== 0">
-      <p class="blog-post__table-of-content-title">Table of content:</p>
-      <ul class="blog-post__table-of-content-list">
-        <li v-for="(heading, i) in headingsList" :key="i" class="blog-post__table-of-content-list-item" @click="scrollToHeading(heading.headingName)">{{ heading.textContent }}</li>
-      </ul>
-    </div>
-    <slices-block :slices="slices" class="blog-post__text-container"/>
     <div v-if="recommendedPosts.length !== 0">
       <p class="blog-post__recommended-title">Recommended posts:</p>
       <div class="blog-post__recommended-posts-list">
@@ -110,6 +94,7 @@ export default {
     try {
       // Query to get post content
       const post = await $prismic.api.getByUID('post', params.uid);
+      console.log(post.data);
       // Query to get recomended posts
       if (post.tags.length) {
         recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', post.tags));
@@ -125,7 +110,8 @@ export default {
         document: post.data,
         slices: post.data.body,
         formattedDate: Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(post.data.date)),
-        recommendedPosts: recommendedPosts
+        recommendedPosts: recommendedPosts,
+        tags: post.tags
       };
     } catch (e) {
       // Returns error page
@@ -188,13 +174,24 @@ export default {
   @import '../../assets/styles/vars';
 
   .blog-post {
-    max-width: 1680px;
+    /*max-width: 1680px;*/
     margin: auto;
-    padding: 150px 250px 0;
-    background-color: $bgcolor--black;
+    /*padding: 150px 250px 0;*/
+    background-color: $bgcolor--white-clear;
+    position: relative;
+
+    &__background {
+      background-color: $bgcolor--black;
+      height: 683px;
+    }
+
+    &__inner-container {
+      max-width: 818px;
+      margin: -514px auto 0;
+    }
 
     &__blog-sub-title {
-      margin-bottom: 22px;
+      margin-bottom: 36px;
       font-family: 'Poppins-Regular', sans-serif;
       color: $text-color--grey;
       font-size: 20px;
@@ -205,7 +202,7 @@ export default {
 
     &__post-info {
       margin-top: 7px;
-      margin-bottom: 30px;
+      margin-bottom: 43px;
     }
 
     &__post-info,
@@ -223,11 +220,11 @@ export default {
       color: $text-color--white;
     }
 
-    &__created-at,
+    &__author-title,
     &__author-name {
       display: block;
-      font-size: 15px;
-      font-family: 'Poppins-Regular', sans-serif;
+      font-size: 13px;
+      font-family: 'Inter-Regular', sans-serif;
       line-height: 129%;
       letter-spacing: -0.02em;
     }
@@ -242,8 +239,8 @@ export default {
 
     &__author-image,
     &__none-image {
-      width: 52px;
-      height: 52px;
+      width: 30px;
+      height: 30px;
       border-radius: 100%;
     }
 
@@ -251,8 +248,28 @@ export default {
       background-color: $bgcolor--black-light;
     }
 
-    &__created-at {
-      color: $text-color--grey;
+    &__author-title {
+      color: $text-color--grey-pale;
+    }
+
+    &__date-tag {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      line-height: 22px;
+      font-family: 'Inter-Regular', sans-serif;
+
+      .blog-post__date {
+        color: $text-color--grey-pale;
+      }
+
+      .blog-post__tag {
+        color: $text-color--white-transparent;
+        background: #404143;
+        border-radius: 2px;
+        padding: 4px 16px;
+        margin-left: 24px;
+      }
     }
 
     &__recommended-post {
@@ -288,7 +305,8 @@ export default {
     }
 
     &__blog-title {
-      font-size: 55px;
+      font-size: 52px;
+      line-height: 67px;
       color: $text-color--white;
     }
 
@@ -321,10 +339,10 @@ export default {
     &__table-of-content-list-item,
     &__table-of-content-title {
       margin: 25px 0;
-      font-family: 'Poppins-Regular', sans-serif;
-      color: $text-color--white;
-      font-size: 18px;
-      line-height: 129%;
+      font-family: 'Inter-Regular', sans-serif;
+      color: $text-color--black-cases;
+      font-size: 17px;
+      line-height: 28px;
       letter-spacing: -0.02em;
       white-space: pre-wrap;
     }
@@ -388,7 +406,8 @@ export default {
     }
 
     &__introduction-image {
-      width: 100%;
+      width: 120%;
+      margin-left: -10%;
       height: auto;
     }
 
@@ -404,7 +423,7 @@ export default {
 
       span,
       p {
-        color: $text-color--white;
+        color: $text-color--black-cases;
       }
     }
 
