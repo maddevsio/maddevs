@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<section
+  class="case_footer container_full"
+>
+  <div
+    class="case_logotype nambafood"
+  />
+   
+  <h2
+    class="case_title case_title_h2"
+  >
+    Main Content
+  </h2>
+   
+  <button
+    class="case_next-project-button"
+    type="button"
+  >
+    Read next project
+  </button>
+</section>
+`;

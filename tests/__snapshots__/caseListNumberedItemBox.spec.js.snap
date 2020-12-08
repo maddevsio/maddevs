@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List numbered item box renders correctly 1`] = `
+<li
+  class="case_list-numbered_item"
+>
+  Main Content
+</li>
+`;
