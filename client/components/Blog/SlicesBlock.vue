@@ -8,8 +8,8 @@
         <text-slice :slice="slice"></text-slice>
       </template>
       <!-- Quote slice template -->
-      <template v-else-if="slice.slice_type === 'quote'">
-        <quote-slice :slice="slice"></quote-slice>
+      <template v-else-if="slice.slice_type === 'quote' || slice.slice_type === 'quote_large'">
+        <quote-slice :slice="slice"/>
       </template>
       <!-- Image with caption slice template -->
       <template v-else-if="slice.slice_type === 'image_with_caption'">
@@ -22,7 +22,7 @@
         <embed-slice :slice="slice"></embed-slice>
       </template>
       <template v-else-if="slice.slice_type === 'codeblock'">
-        <code-block-slice :slice="slice"></code-block-slice>
+        <code-block-slice :slice="slice"/>
       </template>
       <template v-else-if="slice.slice_type === 'divider'">
         <divider/>
@@ -61,10 +61,4 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  @import '../../assets/styles/_vars';
-
-  .quote {
-
-  }
-
 </style>
