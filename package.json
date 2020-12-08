@@ -34,7 +34,7 @@
     "nuxt": "^2.14.6",
     "request": "^2.88.2",
     "sendpulse-api": "^1.1.4",
-    "snyk": "^1.425.4",
+    "snyk": "^1.427.0",
     "swiper": "^5.4.5",
     "vee-validate": "^3.4.2",
     "vue-awesome-swiper": "^4.1.1",
