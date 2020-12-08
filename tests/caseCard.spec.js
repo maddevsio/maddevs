@@ -18,6 +18,7 @@ describe('Card component', () => {
     });
   });
 
+  // ------ IMPORTANT ----- //
   test('is Vue\'s instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
@@ -25,6 +26,7 @@ describe('Card component', () => {
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
+  // --------------------- //
 
   test('should pass correct props', () => {
     expect(wrapper.props('padding')).toEqual('16px');
