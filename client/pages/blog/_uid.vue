@@ -91,7 +91,6 @@ export default {
       if (post.tags.length) {
         recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', post.tags));
         recommendedPosts = recommendedPosts.results.filter(recommendedPost => recommendedPost.uid !== post.uid);
-        recommendedPosts.push(recommendedPosts[0]);
 
         if (recommendedPosts.length > 3) {
           recommendedPosts = recommendedPosts.slices(1, 4);
@@ -224,38 +223,6 @@ export default {
       }
     }
 
-    &__recommended-post {
-      width: 30%;
-      height: max-content;
-      margin-left: 20px;
-      padding: 10px;
-      border-radius: 3px;
-      background: $bgcolor--grey-light;
-      transition: 0.2s;
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &:hover {
-        background: #d7d7d7;
-      }
-    }
-
-    &__recommended-title {
-      margin-top: 65px;
-      margin-bottom: 30px;
-      font-size: 32px;
-      font-family: 'Poppins-Bold', sans-serif;
-      font-weight: 700;
-      color: $text-color--white;
-    }
-
-    &__recommended-posts-list {
-      display: flex;
-      padding-bottom: 30px;
-    }
-
     &__blog-title {
       font-size: 52px;
       line-height: 67px;
@@ -386,9 +353,29 @@ export default {
 
     &__recommended-posts-list {
       padding: 100px;
+      display: flex;
     }
 
     &__recommended-post {
+      width: 33.33333%;
+      height: max-content;
+      margin-left: 20px;
+      padding: 10px;
+      border-radius: 3px;
+      background: $bgcolor--grey-light;
+      transition: 0.2s;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover {
+        &,
+        /deep/ .tag {
+          background: #d7d7d7;
+        }
+      }
+
       /deep/ h2,
       /deep/ p {
         color: $text-color--black;

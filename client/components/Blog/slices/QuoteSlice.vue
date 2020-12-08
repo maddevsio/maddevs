@@ -24,6 +24,14 @@ export default {
     color: $text-color--black-cases;
     border-left: 2px solid $border-color--red;
     padding-left: 35px;
+
+    /deep/ p {
+      margin-bottom: 28px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .block-citation {
