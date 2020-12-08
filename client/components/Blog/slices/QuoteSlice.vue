@@ -1,7 +1,7 @@
 <template>
   <div class='post-part single'>
-    <blockquote class="block-quotation" v-html="$prismic.asHtml(slice.primary.quote)" v-if="slice.slice_type === 'quote'"/>
-    <text-quote v-if="slice.slice_type === 'quote_large'">{{ $prismic.asText(slice.primary.quote) }}</text-quote>
+      <blockquote class="block-quotation" v-html="$prismic.asHtml(slice.primary.quote)" v-if="slice.primary.quotation_design === 'border'"/>
+      <text-quote v-if="slice.primary.quotation_design === 'brackets'">{{ $prismic.asText(slice.primary.quote) }}</text-quote>
   </div>
 </template>
 

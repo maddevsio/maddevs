@@ -86,7 +86,6 @@ export default {
     try {
       // Query to get post content
       const post = await $prismic.api.getByUID('post', params.uid);
-      console.log(post.data);
       // Query to get recomended posts
       if (post.tags.length) {
         recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', post.tags));

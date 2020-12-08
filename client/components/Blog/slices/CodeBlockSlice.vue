@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     highlighter(code){
-      return highlight(code, Prism.languages[this.slice.primary.language[0].text], this.slice.primary.language[0].text);
+      return highlight(code, Prism.languages[this.slice.primary.language], this.slice.primary.language);
     }
   }
 };
@@ -60,6 +60,13 @@ export default {
     /deep/ .prism-editor__container,
     /deep/ .prism-editor__textarea {
       padding: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .code-sample {
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 </style>

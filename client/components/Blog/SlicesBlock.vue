@@ -8,7 +8,7 @@
         <text-slice :slice="slice"></text-slice>
       </template>
       <!-- Quote slice template -->
-      <template v-else-if="slice.slice_type === 'quote' || slice.slice_type === 'quote_large'">
+      <template v-else-if="slice.slice_type === 'quote'">
         <quote-slice :slice="slice"/>
       </template>
       <!-- Image with caption slice template -->
@@ -30,6 +30,9 @@
       <template v-else-if="slice.slice_type === 'ordered_list'">
         <ordered-list :slice="slice"/>
       </template>
+      <template v-else-if="slice.slice_type === 'doublecolumn_bordered'">
+        <double-column-bordered-slice :slice="slice"/>
+      </template>
     </section>
   </section>
 </template>
@@ -43,11 +46,13 @@ import CodeBlockSlice from './slices/CodeBlockSlice';
 import Divider from './Divider';
 import ImageAttributesSlice from './slices/ImageAttributesSlice';
 import OrderedList from './slices/OrderedList';
+import DoubleColumnBorderedSlice from './slices/DoubleColumnBorderedSlice';
 
 export default {
   props: ['slices'],
   name: 'slices-block',
   components: {
+    DoubleColumnBorderedSlice,
     OrderedList,
     ImageAttributesSlice,
     CodeBlockSlice,
