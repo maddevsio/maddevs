@@ -3,7 +3,7 @@
     <source
       class="image"
       :class="{'box-shadow': boxShadow}"
-      :srcset="[require(`../../assets/img/${pictureFolder}/webp/${fileName}.webp`) + ' ', require(`../../assets/img/Cases/${pictureFolder}/webp/${fileName}@2x.webp`) + ' 2x']"
+      :srcset="[require(`../../assets/img/Cases/${pictureFolder}/webp/${fileName}.webp`) + ' ', require(`../../assets/img/Cases/${pictureFolder}/webp/${fileName}@2x.webp`) + ' 2x']"
       type='image/webp'>
     <img
       class="image"
