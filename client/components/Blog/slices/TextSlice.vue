@@ -76,7 +76,7 @@ export default {
     /deep/ p,
     /deep/ li {
       font-size: 17px;
-      line-height: 129%;
+      line-height: 28px;
       letter-spacing: -0.02em;
     }
 
@@ -113,6 +113,31 @@ export default {
       text-decoration: underline;
       color: $text-color--black-cases;
       font-family: 'Inter-Regular', sans-serif;
+    }
+
+    /deep/ img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .textslice {
+
+      /deep/ h2 {
+        font-size: 26px;
+        line-height: 33px;
+      }
+
+      /deep/ h5 {
+        font-size: 20px;
+        line-height: 27px;
+      }
+
+      /deep/ p {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
   }
 </style>

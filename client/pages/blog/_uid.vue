@@ -26,7 +26,7 @@
     <div v-if="recommendedPosts.length !== 0" class="blog-post__recommended-posts">
       <div class="blog-post__recommended-posts-list">
         <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="blog-post__recommended-post">
-          <blog-widget :post="recommendedPost"></blog-widget>
+          <recommended-blog-widget :post="recommendedPost"/>
         </section>
       </div>
     </div>
@@ -38,15 +38,15 @@
 
 <script>
 import SlicesBlock from '@/components/Blog/SlicesBlock.vue';
-import BlogWidget from '@/components/Blog/BlogWidget.vue';
-import PostAuthor from '../../components/Blog/PostAuthor';
+import RecommendedBlogWidget from '@//components/Blog/RecommendedBlogWidget';
+import PostAuthor from '@/components/Blog/PostAuthor';
 
 export default {
   name: 'post',
   layout: 'default',
   components: {
     SlicesBlock,
-    BlogWidget,
+    RecommendedBlogWidget,
     PostAuthor
   },
   data() {
@@ -383,21 +383,74 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1080px) {
-    .blog-post {
-      padding: 150px 200px 0;
-    }
-  }
-
   @media only screen and (max-width: 1024px) {
     .blog-post {
-      padding: 150px 140px 0;
-    }
-  }
+      &__background {
+        display: none;
+      }
 
-  @media only screen and (max-width: 768px) {
-    .blog-post {
-      padding: 150px 2.8vw 0;
+      &__inner-container {
+        margin: 0;
+        max-width: none;
+      }
+
+      &__introduction-container {
+        padding-top: 120px;
+        background-color: $bgcolor--black;
+      }
+
+      &__introduction-image {
+        width: 100%;
+        margin: 0;
+        vertical-align: bottom;
+      }
+
+      &__blog-title {
+        padding: 0 24px;
+        font-size: 35px;
+        line-height: 45px;
+      }
+
+      &__post-info {
+        padding: 0 24px;
+        display: block;
+      }
+
+      &__date-tag {
+        justify-content: space-between;
+        margin-top: 19px;
+
+        .blog-post__date {
+          order: 2;
+        }
+
+        .blog-post__tag {
+          order: 1;
+          margin-left: 0;
+        }
+      }
+
+      &__text-container {
+        padding: 0 24px;
+      }
+
+      &__recommended-posts-list {
+        padding: 31px 24px;
+        display: block;
+      }
+
+      &__recommended-post {
+        width: calc(100% - 20px);
+        margin-bottom: 40px;
+
+        /deep/ .blog-post__author {
+          margin-top: 16px;
+        }
+
+        /deep/ .blog-post-meta {
+          display: none;
+        }
+      }
     }
   }
 </style>

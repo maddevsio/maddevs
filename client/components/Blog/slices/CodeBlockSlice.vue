@@ -49,11 +49,18 @@ export default {
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
   .code-sample {
-    background-color: whitesmoke;
-    padding: 25px;
     line-height: 22px;
     font-size: 17px;
     font-family: 'IBM Plex Mono', monospace;
+
+    /deep/ .prism-editor__container {
+      background-color: whitesmoke;
+    }
+
+    /deep/ .prism-editor__container,
+    /deep/ .prism-editor__textarea {
+      padding: 25px;
+    }
   }
 </style>
 

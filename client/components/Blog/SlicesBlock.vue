@@ -15,11 +15,20 @@
       <template v-else-if="slice.slice_type === 'image_with_caption'">
         <image-caption-slice :slice="slice"></image-caption-slice>
       </template>
+      <template v-else-if="slice.slice_type === 'image_with_attributes'">
+        <image-attributes-slice :slice="slice"/>
+      </template>
       <template v-else-if="slice.slice_type === 'embed'">
         <embed-slice :slice="slice"></embed-slice>
       </template>
       <template v-else-if="slice.slice_type === 'codeblock'">
         <code-block-slice :slice="slice"></code-block-slice>
+      </template>
+      <template v-else-if="slice.slice_type === 'divider'">
+        <divider/>
+      </template>
+      <template v-else-if="slice.slice_type === 'ordered_list'">
+        <ordered-list :slice="slice"/>
       </template>
     </section>
   </section>
@@ -31,16 +40,22 @@ import TextSlice from '~/components/Blog/slices/TextSlice.vue';
 import ImageCaptionSlice from '~/components/Blog/slices/ImageCaptionSlice.vue';
 import EmbedSlice from '~/components/Blog/slices/EmbedSlice.vue';
 import CodeBlockSlice from './slices/CodeBlockSlice';
+import Divider from './Divider';
+import ImageAttributesSlice from './slices/ImageAttributesSlice';
+import OrderedList from './slices/OrderedList';
 
 export default {
   props: ['slices'],
   name: 'slices-block',
   components: {
+    OrderedList,
+    ImageAttributesSlice,
     CodeBlockSlice,
     QuoteSlice,
     TextSlice,
     ImageCaptionSlice,
-    EmbedSlice
+    EmbedSlice,
+    Divider
   }
 };
 </script>
