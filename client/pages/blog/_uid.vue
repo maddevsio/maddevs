@@ -6,23 +6,14 @@
         <h1 class="blog-post__blog-title title">{{ $prismic.asText(document.title) }}</h1>
         <p class="blog-post__blog-sub-title">{{ $prismic.asText(document.subtitle) }}</p>
         <div class="blog-post__post-info">
-          <div class="blog-post__author">
-            <img :src="document.author_image.url" :alt="$prismic.asText(document.author)" class="blog-post__author-image" v-if="document.author_image.url !== undefined">
-            <div class="blog-post__none-image" v-else></div>
-            <div class="blog-post__author-info">
-              <p class="blog-post__author-name">{{ $prismic.asText(document.author) }}</p>
-              <p class="blog-post__data-of-creation">
-                <span class="blog-post__author-title">{{ document.author_title }}</span>
-              </p>
-            </div>
-          </div>
+          <post-author :document="document"/>
           <div class="blog-post__date-tag">
             <div class="blog-post__date">{{ formattedDate }}</div>
-            <div class="blog-post__tag">{{ tags[0] }}</div>
+            <div class="blog-post__tag" v-if="tags.length">{{ tags[0] }}</div>
           </div>
         </div>
         <img :src="document.introduction_image.url" class="blog-post__introduction-image" v-if="document.introduction_image.url !== undefined">
-        <p class="blog-post__introduction-paragraph">{{ $prismic.asText(document.introduction_paragraph) }}</p>
+        <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
       </div>
   <!--    <div class="blog-post__table-of-content" v-if="headingsList.length !== 0">-->
   <!--      <p class="blog-post__table-of-content-title">Table of content:</p>-->
@@ -32,8 +23,7 @@
   <!--    </div>-->
       <slices-block :slices="slices" class="blog-post__text-container"/>
     </div>
-    <div v-if="recommendedPosts.length !== 0">
-      <p class="blog-post__recommended-title">Recommended posts:</p>
+    <div v-if="recommendedPosts.length !== 0" class="blog-post__recommended-posts">
       <div class="blog-post__recommended-posts-list">
         <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="blog-post__recommended-post">
           <blog-widget :post="recommendedPost"></blog-widget>
@@ -49,13 +39,15 @@
 <script>
 import SlicesBlock from '@/components/Blog/SlicesBlock.vue';
 import BlogWidget from '@/components/Blog/BlogWidget.vue';
+import PostAuthor from '../../components/Blog/PostAuthor';
 
 export default {
   name: 'post',
   layout: 'default',
   components: {
     SlicesBlock,
-    BlogWidget
+    BlogWidget,
+    PostAuthor
   },
   data() {
     return {
@@ -99,6 +91,7 @@ export default {
       if (post.tags.length) {
         recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', post.tags));
         recommendedPosts = recommendedPosts.results.filter(recommendedPost => recommendedPost.uid !== post.uid);
+        recommendedPosts.push(recommendedPosts[0]);
 
         if (recommendedPosts.length > 3) {
           recommendedPosts = recommendedPosts.slices(1, 4);
@@ -205,51 +198,10 @@ export default {
       margin-bottom: 43px;
     }
 
-    &__post-info,
-    &__author {
+    &__post-info {
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-
-    &__author-info {
-      margin-left: 15px;
-    }
-
-    &__author-name {
-      color: $text-color--white;
-    }
-
-    &__author-title,
-    &__author-name {
-      display: block;
-      font-size: 13px;
-      font-family: 'Inter-Regular', sans-serif;
-      line-height: 129%;
-      letter-spacing: -0.02em;
-    }
-
-    &__author-name {
-      margin-bottom: 4px;
-    }
-
-    &__author-image {
-      object-fit: cover;
-    }
-
-    &__author-image,
-    &__none-image {
-      width: 30px;
-      height: 30px;
-      border-radius: 100%;
-    }
-
-    &__none-image {
-      background-color: $bgcolor--black-light;
-    }
-
-    &__author-title {
-      color: $text-color--grey-pale;
     }
 
     &__date-tag {
@@ -425,6 +377,15 @@ export default {
       p {
         color: $text-color--black-cases;
       }
+    }
+
+    &__recommended-posts {
+      background-color: $bgcolor--silver;
+      margin-top: 100px;
+    }
+
+    &__recommended-posts-list {
+      padding: 100px;
     }
 
     &__recommended-post {

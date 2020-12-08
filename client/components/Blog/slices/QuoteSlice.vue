@@ -1,8 +1,6 @@
 <template>
   <div class='post-part single'>
-    <blockquote class="block-quotation">
-      {{ $prismic.asText(slice.primary.quote) }}
-    </blockquote>
+    <blockquote class="block-quotation" v-html="$prismic.asHtml(slice.primary.quote)"/>
   </div>
 </template>
 
@@ -19,18 +17,13 @@ export default {
   .block-quotation {
     display: inline-block;
     font-style: italic;
-    font-size: 24px;
-    margin: 0;
-    font-family: 'Poppins-Regular', sans-serif;
-    color: $text-color--white;
-
-    &:before {
-      content: "« ";
-    }
-
-    &:after {
-      content: " »";
-    }
+    font-size: 17px;
+    line-height: 28px;
+    margin: 0 0 48px;
+    font-family: 'Inter-Regular', sans-serif;
+    color: $text-color--black-cases;
+    border-left: 2px solid $border-color--red;
+    padding-left: 35px;
   }
 
   .block-citation {

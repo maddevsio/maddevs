@@ -45,8 +45,18 @@ export default {
 
     /deep/ h1 {
       margin: 72px 0 48px;
-      font-size: 42px;
+      font-size: 1.9em;
       font-weight: normal;
+    }
+
+    /deep/ h2 {
+      font-size: 42px;
+      line-height: 54px;
+    }
+
+    /deep/ h5 {
+      font-size: 21px;
+      line-height: 28px;
     }
 
     /deep/ h2,

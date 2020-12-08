@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- Slice section template -->
-    <section v-for="(slice, index) in slices" :key="'slice-' + index">
+    <section v-for="(slice, index) in slices" :key="'slice-' + index" :class="slice.slice_type === 'quote' ? 'quote' : ''">
       <!-- Text slice template -->
       <template v-if="slice.slice_type === 'text'">
         <!-- Here :slice="slice" passes the data to the component -->
@@ -18,6 +18,9 @@
       <template v-else-if="slice.slice_type === 'embed'">
         <embed-slice :slice="slice"></embed-slice>
       </template>
+      <template v-else-if="slice.slice_type === 'codeblock'">
+        <code-block-slice :slice="slice"></code-block-slice>
+      </template>
     </section>
   </section>
 </template>
@@ -27,11 +30,13 @@ import QuoteSlice from '~/components/Blog/slices/QuoteSlice.vue';
 import TextSlice from '~/components/Blog/slices/TextSlice.vue';
 import ImageCaptionSlice from '~/components/Blog/slices/ImageCaptionSlice.vue';
 import EmbedSlice from '~/components/Blog/slices/EmbedSlice.vue';
+import CodeBlockSlice from './slices/CodeBlockSlice';
 
 export default {
   props: ['slices'],
   name: 'slices-block',
   components: {
+    CodeBlockSlice,
     QuoteSlice,
     TextSlice,
     ImageCaptionSlice,
@@ -39,3 +44,12 @@ export default {
   }
 };
 </script>
+
+<style scoped lang="scss">
+  @import '../../assets/styles/_vars';
+
+  .quote {
+
+  }
+
+</style>

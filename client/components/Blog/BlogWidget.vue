@@ -1,18 +1,27 @@
 <template>
   <nuxt-link :to="link">
     <div class="blog-post">
-      <h2 class="post-title title-md">{{ $prismic.asText(post.data.title) }}</h2>
-      <p class="blog-post-meta"><span class="created-at">{{ formattedDate }}</span></p>
+      <img :src="post.data.featured_image.url" alt="" class="blog-post__featured-image">
+      <h2 class="post-title">{{ $prismic.asText(post.data.title) }}</h2>
       <p>{{getFirstParagraph(post)}}</p>
+      <p class="blog-post-meta">
+        <span class="created-at">{{ formattedDate }}</span>
+        <span class="tag" v-if="post.tags.length">{{post.tags[0]}}</span>
+      </p>
+      <post-author :document="post.data" />
     </div>
   </nuxt-link>
 </template>
 
 <script>
 import linkResolver from '~/plugins/link-resolver.js';
+import PostAuthor from './PostAuthor';
 
 export default {
   props: ['post'],
+  components: {
+    PostAuthor
+  },
   data() {
     return {
       link: '',
@@ -71,22 +80,36 @@ export default {
     }
 
     span {
-      font-size: 17px;
-      line-height: 129%;
+      /*font-size: 17px;*/
+      /*line-height: 129%;*/
       letter-spacing: -0.02em;
     }
 
     a {
       text-decoration: none;
     }
+
+    &__featured-image {
+      max-width: 100%;
+      height: auto;
+    }
   }
 
   .post-title {
-    font-size: 32px;
+    font-size: 21px;
+    line-height: 28px;
     letter-spacing: -1px;
   }
 
   .blog-post-meta {
+    display: flex;
     margin-bottom: 10px;
+    font-size: 13px;
+    font-family: 'Inter-Regular', sans-serif;
+
+    .created-at {
+      margin-right: 40px;
+      color: $text-color--grey
+    }
   }
 </style>
