@@ -1,0 +1,2580 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Namba food renders correctly 1`] = `
+<main
+  class="main case"
+>
+  <section
+    class="case_header"
+  >
+    <video
+      autoplay="autoplay"
+      class="case_main-video"
+      loop="loop"
+      muted="muted"
+    >
+      <source
+        src="../../assets/img/Cases/nambafood/video/main.mp4"
+        type="video/mp4"
+      />
+      
+    Your browser does not support the video tag.
+  
+    </video>
+     
+    <div
+      class="case_logotype nambafood"
+    />
+     
+    <h1
+      class="case_title"
+    >
+      Namba Food 
+      <br />
+       Top 1 Delivery Service 
+      <br
+        class="case_text-break"
+      />
+       in Central Asia
+    </h1>
+     
+    <button
+      class="case_more__button"
+      type="button"
+    >
+      Read our case studies ↓
+    </button>
+  </section>
+   
+  <section
+    class="case_body"
+  >
+    <div
+      class="case_animation_block"
+    />
+     
+    <section
+      class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom"
+    >
+      <p
+        class="case_paragraph"
+      >
+        
+        Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users
+        placing orders, and business owners work as a seamless system, ensuring a smooth delivery process for all
+        types of goods.
+      
+      </p>
+       
+      <blockquote
+        class="case_blockquote-box m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
+      >
+        
+        Namba Food is a unique delivery service that combines speed, convenience, and simplicity.
+      
+      </blockquote>
+       
+      <p
+        class="case_paragraph"
+      >
+        
+        Being first is hard. Namba Food is a story about success that took a global idea and successfully localized
+        and integrated it into the daily lives of Kyrgyzstan's people. Since 2013 the company has been on a mission to
+        bring value to both vendors and customers by conveniently delivering goods at the right time.
+      
+      </p>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 case_text-align-center m-24_bottom media-m-12_bottom"
+      >
+        Multi-directional business model
+      </h2>
+       
+      <p
+        class="case_paragraph m-24_bottom case_text-align-center"
+      >
+        
+        Namba Food achieves complete synergy by diversifying to multi-directional business models.
+      
+      </p>
+       
+      <div
+        class="case_card background-color-black"
+      >
+        <div
+          class="case_card-content"
+        >
+          <div
+            class="case_card-content_left-column"
+          >
+            <h4
+              class="case_title_h4 m-8_bottom"
+              style="color: rgb(245, 247, 249);"
+            >
+              Mini white label
+            </h4>
+             
+            <p
+              class="case_paragraph case_card-content_paragraph"
+              style="color: rgb(245, 247, 249);"
+            >
+              
+      After business owners submit pictures and prices, the
+      Namba Food team creates a customized and branded
+      e-commerce website. Updates, support, and
+      maintenance are done by Namba Food, too.
+    
+            </p>
+             
+            <h4
+              class="case_title_h4 m-8_bottom"
+              style="color: rgb(245, 247, 249);"
+            >
+              Full white label
+            </h4>
+             
+            <p
+              class="case_paragraph"
+              style="color: rgb(245, 247, 249);"
+            >
+              
+      Business partners can use Namba Food’s software
+      and business model, adjusting those to their needs,
+      scale, and region. Namba Food is responsible for its
+      maintenance and helps with management and marketing.
+    
+            </p>
+          </div>
+           
+          <div
+            class="case_card-content_right-column"
+          >
+            <div
+              class="case_card-content_macbook-frame"
+            />
+             
+            <picture>
+              <source
+                class="case_card-content_image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                class="case_card-content_image"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+       
+      <div
+        class="case_business-models-grid"
+      >
+        <div
+          class="case_card background-color-silver case_business-models-grid__personal-card"
+        >
+          <div
+            class="case_business-models-grid__personal-image"
+          >
+            <picture
+              filenameretina="personal@2x"
+            >
+              <source
+                class="image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt=""
+                class="image"
+                loading="lazy"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
+          </div>
+           
+          <div
+            class="case_business-models-grid__text-wrapper"
+          >
+            <h4
+              class="m-8_bottom case_title_h4"
+            >
+              Personal courier
+            </h4>
+             
+            <p
+              class="case_paragraph"
+            >
+              
+        The personal courier service works 24/7,
+        enabling quick delivery for both organizations and individuals. Regardless of
+        products’ nature , personal couriers will
+        deliver it on time and, if needed, anonymously.
+      
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="case_business-models-grid__right-column"
+        >
+          <div
+            class="case_card background-color-turquoise"
+          >
+            <h4
+              class="m-8_bottom case_title_h4"
+              style="color: rgb(255, 255, 255);"
+            >
+              Outsource partners
+            </h4>
+             
+            <p
+              class="case_paragraph"
+              style="color: rgb(255, 255, 255);"
+            >
+              
+        Business running e-commerce websites,
+        but wanting to outsource delivery service
+        can benefit from Namba Food’s checkout
+        page. It allows businesses to quickly
+        integrate delivery without occurring 
+              <br />
+              
+        operational costs.
+      
+            </p>
+          </div>
+           
+          <div
+            class="case_card background-color-berry"
+          >
+            <h4
+              class="m-8_bottom case_title_h4"
+              style="color: rgb(255, 255, 255);"
+            >
+              Delivery of food and goods
+            </h4>
+             
+            <p
+              class="case_paragraph"
+              style="color: rgb(255, 255, 255);"
+            >
+              
+        Namba Food's delivery service positions
+        itself as an intermediary body between
+        good & food service providers and customers.
+      
+            </p>
+          </div>
+        </div>
+      </div>
+       
+      <div
+        class="case_card background-color-silver"
+      >
+        <h4
+          class="case_title_h4 m-8_bottom"
+        >
+          Namba Food API
+        </h4>
+         
+        <p
+          class="case_paragraph"
+        >
+          
+          Namba Food API allows businesses to integrate the API into any mobile payment application. Thus,
+          end-users get the opportunity to quickly order goods & services without leaving the app using the
+          payment system of the app itself. Such API benefits businesses as end-users use the payment
+          method defined by the mobile app. At the moment, Mbank by Commercial bank Kyrgyzstan and
+          Balance by Beeline telecommunication service provider have successfully integrated Namba Food
+          API into their mobile apps.
+        
+        </p>
+      </div>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-96_top m-12_bottom media-m-48_top case_text-align-center"
+      >
+        High-level system overview
+      </h2>
+       
+      <p
+        class="case_paragraph m-48_bottom media-m-24_bottom"
+      >
+        
+        Namba Food is more than a delivery service website. With a partial vertical integration, it covers the entire
+        cycle of ordering goods online. Thus, an advanced set of software and hardware was required to maintain
+        flawless work for all stakeholders, including end-users, couriers, team operators, cafes' and store managers.
+      
+      </p>
+    </section>
+     
+    <section
+      class="container_full background-color-silver"
+    >
+      <img
+        class="case_gif case_high-level-system-overview-gif"
+        src="../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif"
+      />
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 case_text-align-center m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
+      >
+        Typical usage scenarios & user roles
+      </h2>
+       
+      <p
+        class="case_paragraph case_text-align-center m-48_bottom media-m-24_bottom"
+      >
+        
+        Namba Food involves several user journeys for different roles. Each user journey required different sets of
+        functionalities and user interfaces.
+      
+      </p>
+       
+      <div
+        class="case_usage-scenarios"
+      >
+        <div
+          class="case_card case_usage-scenarios-card background-color-red"
+        >
+          <div
+            class="card-use-case"
+          >
+            <h4
+              class="card-use-case__title case_title_h4 card-use-case__red-card-title"
+            >
+              
+    Web-site, mobile application
+  
+            </h4>
+             
+            <div
+              class="card-use-case__description-wrapper card-use-case__red-card-description-wrapper"
+            >
+              <p
+                class="case_paragraph card-use-case__paragraph card-use-case__red-card-paragraph"
+              >
+                
+      Easy-to-use interface and fast navigation for Namba Food users.
+    
+              </p>
+               
+              <div
+                class="card-use-case__desktop-picture card-use-case__red-card-picture"
+              >
+                <picture>
+                  <source
+                    class="image"
+                    srcset="[object Object] ,[object Object] 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="image"
+                    loading=""
+                    src="[object Object]"
+                    srcset="[object Object] 2x"
+                  />
+                </picture>
+              </div>
+               
+              <div
+                class="card-use-case__mobile-picture card-use-case__red-card-mobile-picture"
+              >
+                <picture>
+                  <source
+                    class="image"
+                    srcset="[object Object] ,[object Object] 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="image"
+                    loading=""
+                    src="[object Object]"
+                    srcset="[object Object] 2x"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="case_card case_usage-scenarios-card background-color-black"
+        >
+          <div
+            class="card-use-case"
+          >
+            <h4
+              class="card-use-case__title case_title_h4 card-use-case__black-card-title"
+            >
+              
+    Application for deliverymen
+  
+            </h4>
+             
+            <div
+              class="card-use-case__description-wrapper card-use-case__black-card-description-wrapper"
+            >
+              <p
+                class="case_paragraph card-use-case__paragraph card-use-case__black-card-paragraph"
+              >
+                
+      Allows to plan a route, get information about  orders in the instance.
+    
+              </p>
+               
+              <div
+                class="card-use-case__desktop-picture card-use-case__black-card-picture"
+              >
+                <picture>
+                  <source
+                    class="image"
+                    srcset="[object Object] ,[object Object] 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="image"
+                    loading=""
+                    src="[object Object]"
+                    srcset="[object Object] 2x"
+                  />
+                </picture>
+              </div>
+               
+              <div
+                class="card-use-case__mobile-picture card-use-case__black-card-mobile-picture"
+              >
+                <picture>
+                  <source
+                    class="image"
+                    srcset="[object Object] ,[object Object] 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="image"
+                    loading=""
+                    src="[object Object]"
+                    srcset="[object Object] 2x"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="case_card case_usage-scenarios-card background-color-turquoise"
+        >
+          <div
+            class="card-use-case"
+          >
+            <h4
+              class="card-use-case__title case_title_h4 card-use-case__turquoise-card-title"
+            >
+              
+    Unified control system for operators
+  
+            </h4>
+             
+            <div
+              class="card-use-case__description-wrapper card-use-case__turquoise-card-description-wrapper"
+            >
+              <p
+                class="case_paragraph card-use-case__paragraph card-use-case__turquoise-card-paragraph"
+              >
+                
+      Full control of the ordering process from order acceptance to status tracking.
+    
+              </p>
+               
+              <div
+                class="card-use-case__desktop-picture card-use-case__turquoise-card-picture"
+              >
+                <picture>
+                  <source
+                    class="image"
+                    srcset="[object Object] ,[object Object] 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="image"
+                    loading=""
+                    src="[object Object]"
+                    srcset="[object Object] 2x"
+                  />
+                </picture>
+              </div>
+               
+              <div
+                class="card-use-case__mobile-picture card-use-case__turquoise-card-mobile-picture"
+              >
+                <picture>
+                  <source
+                    class="image"
+                    srcset="[object Object] ,[object Object] 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="image"
+                    loading=""
+                    src="[object Object]"
+                    srcset="[object Object] 2x"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="case_card case_usage-scenarios-card background-color-silver"
+        >
+          <div
+            class="card-use-case"
+          >
+            <h4
+              class="card-use-case__title case_title_h4 card-use-case__white-card-title"
+            >
+              
+    Control panel for managers
+  
+            </h4>
+             
+            <div
+              class="card-use-case__description-wrapper card-use-case__white-card-description-wrapper"
+            >
+              <p
+                class="case_paragraph card-use-case__paragraph card-use-case__white-card-paragraph"
+              >
+                
+      Facilitates uploading the menu and updating information about services.
+    
+              </p>
+               
+              <div
+                class="card-use-case__desktop-picture card-use-case__white-card-picture"
+              >
+                <picture>
+                  <source
+                    class="image"
+                    srcset="[object Object] ,[object Object] 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="image"
+                    loading=""
+                    src="[object Object]"
+                    srcset="[object Object] 2x"
+                  />
+                </picture>
+              </div>
+               
+              <div
+                class="card-use-case__mobile-picture card-use-case__white-card-mobile-picture"
+              >
+                <picture>
+                  <source
+                    class="image"
+                    srcset="[object Object] ,[object Object] 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="image"
+                    loading=""
+                    src="[object Object]"
+                    srcset="[object Object] 2x"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
+      >
+        Web-version & mobile application for end-users (Android, iOS)
+      </h2>
+       
+      <p
+        class="case_paragraph m-48_bottom media-m-24_bottom"
+      >
+        
+        Namba Food is not a simple catalog of goods and services as it aims to seamlessly blend into the modern, busy
+        lifestyle of its customers. It was required to develop a convenient process for ordering products and make it
+        stress-free.
+      
+      </p>
+    </section>
+     
+    <section
+      class="container_full background-color-silver p-75_top p-75_bottom media-p-16_top media-p-16_bottom"
+    >
+      <div
+        class="case_full-screen-phone-video-wrapper"
+      >
+        <video
+          class="case_full-screen-video"
+          height="100%"
+          id="iphone-silver-video"
+          loop="loop"
+          muted="muted"
+          width="100%"
+        >
+          <source
+            src="../../assets/video/mobile-applications-for-end-users.mp4"
+            type="video/mp4"
+          />
+          
+          Your browser does not support the video tag.
+        
+        </video>
+      </div>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
+      >
+        Simple ordering process for end-users
+      </h2>
+       
+      <p
+        class="case_paragraph m-24_bottom"
+      >
+        
+        Namba Food meticulously studied users' behavior and collected feedback to find the perfect market-fit.
+      
+      </p>
+       
+      <ol
+        class="case-list_numbered m-72_bottom media-m-48_bottom"
+      >
+        <li
+          class="case_list-numbered_item"
+        >
+          Users go to the website and choose cafes and shops (+ orders can be placed via phone).
+        
+        </li>
+         
+        <li
+          class="case_list-numbered_item"
+        >
+          Users save products to cart and checkout.
+        </li>
+         
+        <li
+          class="case_list-numbered_item"
+        >
+          Users receive a call from an operator to confirm the order or can tick the "no calls"
+          checkbox.
+        
+        </li>
+         
+        <li
+          class="case_list-numbered_item"
+        >
+          Courier delivers the order in a pre-estimated time.
+        </li>
+      </ol>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-24_bottom media-m-12_bottom"
+      >
+        Customers track order statuses
+      </h2>
+       
+      <p
+        class="case_paragraph m-24_bottom media-m-12_bottom"
+      >
+        
+        With the Namba Food delivery service's growing popularity, the load on customer support and its operators
+        grew exponentially.
+      
+      </p>
+       
+      <p
+        class="case_paragraph m-24_bottom media-m-12_bottom"
+      >
+        
+        Customer support challenge: The lack of transparent status updates led to the majority of users calling to
+        check the delivery status. Business challenge: Continuously growing number of customer support team
+        occurred in high operational expenses.
+      
+      </p>
+       
+      <p
+        class="case_paragraph m-96_bottom media-m-48_bottom"
+      >
+        
+        Thus, the Mad Devs team has developed a user-friendly Status feature. Therefore, customers can easily
+        track the progress on both mobile application and website.
+      
+      </p>
+    </section>
+     
+    <div
+      class="container_full background-color-black m-48_bottom case_black-section"
+    >
+      <div
+        class="case_black-section-content"
+      >
+        <section
+          class="container_regular"
+        >
+          <h2
+            class="case_title_h2 case_text-align-center m-48_bottom p-78_top media-m-8_bottom media-p-38_top"
+            style="color: rgb(255, 255, 255);"
+          >
+            Android application for
+            couriers
+          </h2>
+           
+          <p
+            class="case_paragraph case_text-align-center m-56_bottom media-m-16_bottom"
+            style="color: rgb(255, 255, 255);"
+          >
+            
+            Android app for couriers enables them to receive new orders, assigned to them by operators via the control
+            panel. After a courier is assigned to the order, their app receives a push notification and displays the
+            order pick-up location. Having received the notification, the courier goes to pick up the order from a cafe or
+            a shop
+            and heads to the client.
+          
+          </p>
+        </section>
+         
+        <section
+          class="container_middle case_couriers-android-app-wrapper"
+        >
+          <picture>
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt=""
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+        </section>
+         
+        <div
+          class="case_black-gradient"
+        />
+      </div>
+    </div>
+     
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2"
+      >
+        Admin panel automates Namba Food’s scalability
+      </h2>
+       
+      <blockquote
+        class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
+      >
+        
+        The built-in reporting functionality enables managers to have full control over the entire list of all business
+        partners.
+      
+      </blockquote>
+       
+      <p
+        class="case_paragraph m-48_bottom"
+      >
+        
+        In the admin panel, managers can configure discounts, set working days and hours for cafes, add new meal
+        offerings, and do many other things enabling them to deliver users the best possible experience.
+      
+      </p>
+    </section>
+     
+    <section
+      class="container_middle m-72_bottom media-m-48_bottom"
+    >
+      <picture
+        filenameretina="sjms-analytics@2x"
+      >
+        <source
+          class="image box-shadow"
+          srcset="[object Object] ,[object Object] 2x"
+          type="image/webp"
+        />
+         
+        <img
+          alt=""
+          class="image box-shadow"
+          loading="lazy"
+          src="[object Object]"
+          srcset="[object Object] 2x"
+        />
+      </picture>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <p
+        class="case_paragraph"
+      >
+        
+        Integrating new business with 1000+ products takes less than a few hours.The scalability of Namba Food
+        enables its managers to integrate new business partners into a system quickly. Managers prepare an Excel
+        file with structured menu or products data.
+      
+      </p>
+       
+      <blockquote
+        class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+      >
+        
+        Namba Food automatically categorizes data inside the managers' dashboard panel. 4000+ products can be cataloged in a few clicks.
+      
+      </blockquote>
+       
+      <h3
+        class="case_title_h3 m-12_bottom"
+      >
+        Flexible catalog management
+      </h3>
+       
+      <p
+        class="case_paragraph m-96_bottom media-m-48_bottom"
+      >
+        
+        Managing partners' content is straightforward, as managers can quickly turn on and turn off a position inside
+        the
+        catalog and change pictures and descriptions. Such flexibility enables business owners to make adjustments to
+        meet
+        business daily operators. For example, if a cafe offers a seasonal menu, the items from the summer menu can be
+        temporarily turned off during the rest of the year.
+      
+      </p>
+       
+      <h3
+        class="case_title_h3 m-24_bottom"
+      >
+        Control panel functionality
+      </h3>
+       
+      <div
+        class="case_columns_container"
+      >
+        <div
+          class="case_card background-color-silver"
+        >
+          <h4
+            class="case_title_h4 m-12_bottom media-m-6_bottom case_control-panel-card-title"
+          >
+            Namba Food 
+            <br />
+             managers
+          </h4>
+           
+          <p
+            class="case_paragraph m-24_bottom media-m-12_bottom"
+          >
+            
+            Control panel enables managers to have a
+            high-level overview of Namba Food daily,
+            weekly, monthly, and yearly performance.
+            Business owners receive automatically
+            generated monthly reports to their email.
+          
+          </p>
+           
+          <p
+            class="case_paragraph m-8_bottom media-m-12_bottom"
+          >
+            
+            Detailed reports include information 
+            <br />
+             such as:
+          
+          </p>
+           
+          <ul
+            class="case_list"
+          >
+            <li
+              class="list-item_dot"
+            >
+              Accrued revenue
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Total number of orders
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Total accrued commission
+            </li>
+          </ul>
+        </div>
+         
+        <div
+          class="case_card background-color-silver"
+        >
+          <h4
+            class="case_title_h4 m-12_bottom media-m-6_bottom case_control-panel-card-title"
+          >
+            Namba Food 
+            <br />
+             operators
+          </h4>
+           
+          <p
+            class="case_paragraph m-24_bottom media-m-12_bottom"
+          >
+            
+            Control panel enables operators to,
+            manage items that were ordered from a
+            shop or restaurant, and promo codes. Such
+            a panel makes it easy to overview orders'
+            statuses, make required corrections, and
+            cancel them if necessary.
+          
+          </p>
+           
+          <p
+            class="case_paragraph"
+          >
+            
+            Inside the panel, operators interact with
+            clients by confirming their order and making
+            sure that customers’ notes are taken into
+            the process.
+          
+          </p>
+        </div>
+      </div>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-96_top m-48_bottom media-m-48_top media-m-12_bottom"
+      >
+        Swift admin panel — intelligent delivery control
+      </h2>
+    </section>
+     
+    <section
+      class="container_middle"
+    >
+      <div
+        class="slider-content"
+      >
+        <div
+          class="swiper-container thumb-example"
+        >
+          <picture>
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt=""
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
+            style="cursor: grab;"
+          >
+            <div
+              class="swiper-wrapper"
+              style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+            >
+              <div
+                class="swiper-slide"
+              >
+                <picture>
+                  <source
+                    class="image"
+                    srcset="[object Object] ,[object Object] 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="image"
+                    loading="lazy"
+                    src="[object Object]"
+                    srcset="[object Object] 2x"
+                  />
+                </picture>
+              </div>
+              <div
+                class="swiper-slide"
+              >
+                <picture>
+                  <source
+                    class="image"
+                    srcset="[object Object] ,[object Object] 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="image"
+                    loading="lazy"
+                    src="[object Object]"
+                    srcset="[object Object] 2x"
+                  />
+                </picture>
+              </div>
+            </div>
+            <span
+              aria-atomic="true"
+              aria-live="assertive"
+              class="swiper-notification"
+            />
+          </div>
+        </div>
+         
+        <div
+          class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
+        >
+          <div
+            class="swiper-wrapper"
+            style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+          >
+            <div
+              class="swiper-slide"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt=""
+                  class="image"
+                  loading="lazy"
+                  src="[object Object]"
+                  srcset="[object Object] 2x"
+                />
+              </picture>
+            </div>
+            <div
+              class="swiper-slide"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt=""
+                  class="image"
+                  loading="lazy"
+                  src="[object Object]"
+                  srcset="[object Object] 2x"
+                />
+              </picture>
+            </div>
+          </div>
+          <span
+            aria-atomic="true"
+            aria-live="assertive"
+            class="swiper-notification"
+          />
+        </div>
+      </div>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <p
+        class="case_paragraph m-56_top media-m-24_top"
+      >
+        
+        The Swift microservice-based admin panel receives order information from the control panel and helps the
+        operators to overview and manage the processes of delivery. It displays orders by statuses as diagrams.
+      
+      </p>
+       
+      <blockquote
+        class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
+      >
+        
+        Swift admin panel helps operators to stay in touch with a courier if there is an issue on the way.
+      
+      </blockquote>
+       
+      <div
+        class="case_delivery-control-cards m-72_bottom media-m-48_bottom"
+      >
+        <div
+          class="background-color-silver case_delivery-control-card"
+        >
+          <p
+            class="case_paragraph"
+          >
+            
+            Track the couriers' locations on a map and statuses of all orders and couriers.
+          
+          </p>
+        </div>
+         
+        <div
+          class="background-color-silver case_delivery-control-card"
+        >
+          <p
+            class="case_paragraph"
+          >
+            
+            Extracts customers’ notes and communicates them to couriers.
+          
+          </p>
+        </div>
+         
+        <div
+          class="background-color-silver case_delivery-control-card"
+        >
+          <p
+            class="case_paragraph"
+          >
+            
+            Assign orders and prepare reports.
+          
+          </p>
+        </div>
+         
+        <div
+          class="background-color-silver case_delivery-control-card"
+        >
+          <p
+            class="case_paragraph"
+          >
+            
+            Call curriers using FreeSWITCH microservice.
+          
+          </p>
+        </div>
+      </div>
+       
+      <h3
+        class="case_title_h3 m-12_bottom"
+      >
+        Intelligent auto-assignment system for couriers management
+      </h3>
+       
+      <p
+        class="case_paragraph m-8_bottom"
+      >
+        
+        The intelligent auto-assignment of orders allows operators to assign couriers to orders taking into
+        consideration the following factors:
+      
+      </p>
+       
+      <ul
+        class="case_list m-78_bottom media-m-48_bottom"
+      >
+        <li
+          class="list-item_dot"
+        >
+          Location of a courier, a cafe/restaurant, and the end-user address.
+        </li>
+         
+        <li
+          class="list-item_dot"
+        >
+          Courier's number of orders delivered during the current shift and in the last 3 hours.
+        
+        </li>
+         
+        <li
+          class="list-item_dot"
+        >
+          The system also considers the end-user location to suggest couriers, who are already carrying the
+          order but will be done with the current order staying close to the next order's first pick-up point.
+        
+        </li>
+      </ul>
+       
+      <h3
+        class="case_title_h3 m-12_bottom"
+      >
+        Auto-assignment system under the hood
+      </h3>
+       
+      <p
+        class="case_paragraph m-8_bottom"
+      >
+        
+        Three open-source solutions work as a cohesive and smart system together to perform auto-assignment of
+        orders, which allows you to select the most suitable courier for each order, thereby reducing delivery time.
+      
+      </p>
+       
+      <ul
+        class="case_list m-78_bottom media-m-48_bottom"
+      >
+        <li
+          class="list-item_dot"
+        >
+          Ariadna parses open-source maps data and insert them to ElasticSearch.
+        </li>
+         
+        <li
+          class="list-item_dot"
+        >
+          ElasticSearch stores couriers’ current locations.
+        </li>
+         
+        <li
+          class="list-item_dot"
+        >
+          OSMR is a routing engine for the shortest paths and road networks.
+        </li>
+      </ul>
+       
+      <h3
+        class="case_title_h3 m-12_bottom"
+      >
+        Geocoder Ariadna on ElasticSearch with OpenStreetMap
+      </h3>
+       
+      <p
+        class="case_paragraph m-48_bottom"
+      >
+        <a
+          class="case_link"
+          href="https://github.com/maddevsio/ariadna"
+          target="_blank"
+        >
+          Ariadna
+        </a>
+         is in-house developed open-source geocoder based on ElasticSearch with OpenStreetMap
+        developed by Mad Devs, which searches for coordinates by synonyms and names of places, looking for
+        crossroads and addresses in a certain radius, and knows how to reverse geocoding and automatically
+        update with new data from drivers.
+      
+      </p>
+    </section>
+     
+    <section
+      class="container_middle"
+    >
+      <div
+        class="case_map-video-wrapper case_box-shadow"
+      >
+        <video
+          class="case_map-video"
+          height="100%"
+          id="map-video"
+          loop="loop"
+          muted="muted"
+          width="100%"
+        >
+          <source
+            src="../../assets/video/map.mp4"
+            type="video/mp4"
+          />
+          
+          Your browser does not support the video tag.
+        
+        </video>
+      </div>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <h3
+        class="case_title_h3 m-96_top m-12_bottom media-m-48_top"
+      >
+        Grafana — Docker containers’ monitoring service
+      </h3>
+       
+      <p
+        class="case_paragraph m-48_bottom"
+      >
+        
+        To monitor the stability of Namba Food software, Mad Devs has integrated Grafana. It allows our developers
+        to keep track of services in Docker containers. Grafana shows how the load in the project is balanced,
+        including disk space consumed, memory allocated, swap, load, container uptime, and other parameters.
+      
+      </p>
+    </section>
+     
+    <section
+      class="container_middle"
+    >
+      <picture
+        filenameretina="grafana@2x"
+      >
+        <source
+          class="image box-shadow"
+          srcset="[object Object] ,[object Object] 2x"
+          type="image/webp"
+        />
+         
+        <img
+          alt=""
+          class="image box-shadow"
+          loading="lazy"
+          src="[object Object]"
+          srcset="[object Object] 2x"
+        />
+      </picture>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <p
+        class="case_paragraph m-24_top media-m-48_top"
+      >
+        
+        Monitoring also helps Mad Devs to prevent service timeouts. When the load grows, we can track spikes,
+        estimate the severity of an issue, and quickly resolve it.
+      
+      </p>
+       
+      <h3
+        class="case_title_h3 m-96_top m-48_bottom media-m-72_top media-m-24_bottom"
+      >
+        Technologies used for the Namba Food project
+      </h3>
+       
+      <ul
+        class="case_list-technologies"
+      >
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon backend-mysql"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            MySQL
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon backend-symfony"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            PHP Symfony2
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon backend-laravel"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            Laravel
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon devops-docker case_technologies-item__docker"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            Docker
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon devops-nginx"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            Nginx
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon backend-redis"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            Redis
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon backend-python"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            Python (Django)
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon backend-go"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            Golang
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon mobile-kotlin"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            Kotlin
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon mobile-java"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            Java
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon mobile-swift"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            Swift
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon mobile-firebase"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            Firebase
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon mobile-test-flight"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            TestFlight
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon other-open-street-map"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            OpenStreetMap
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon backend-php"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            PHP
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon pm-jira-assistant-blue"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            Jira Assistant
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon devops-grafana"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            Grafana
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <div
+            class="case_technologies-item__tech-icon devops-sentry-dark"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            Sentry
+          </p>
+        </li>
+      </ul>
+       
+      <h3
+        class="case_title_h3 m-107_top m-24_bottom media-m-48_top"
+      >
+        Website and mobile apps infrastructure scheme
+      </h3>
+    </section>
+     
+    <section
+      class="container_full background-color-silver"
+    >
+      <img
+        class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"
+        src="../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif"
+      />
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <p
+        class="case_paragraph m-24_top"
+      >
+        
+        A local hosting provider is used for hosting the infrastructure. When a system gets a request from the client,
+        it is handled by the Nginx proxy. When the Mad Devs team is deploying a new version, we use the Nginx gen
+        server. The Nginx proxy sends requests to the website, which is in its turn connected to the MySQL
+        database, and Redis serves as an in-memory key-value storage.
+      
+      </p>
+       
+      <p
+        class="case_paragraph m-24_top media-m-12_top"
+      >
+        
+        All our services run in Docker containers, which simplifies the process of infrastructure maintenance and
+        monitoring.
+      
+      </p>
+       
+      <h3
+        class="case_title_h3 m-96_top m-12_bottom media-m-48_top"
+      >
+        Pipelines
+      </h3>
+       
+      <p
+        class="case_paragraph m-24_bottom"
+      >
+        
+        We at Mad Devs widely use pipelines. The deployment stage has been automated for the staging server, and
+        deployment on the production server is done manually. The pipeline for the Namba Food system is displayed below.
+      
+      </p>
+    </section>
+     
+    <section
+      class="container_full background-color-silver case_pipelines-image-desktop"
+    >
+      <section
+        class="container_full case_full-screen-image"
+      >
+        <picture
+          filenameretina="pipelines@2x"
+        >
+          <source
+            class="image"
+            srcset="[object Object] ,[object Object] 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt=""
+            class="image"
+            loading="lazy"
+            src="[object Object]"
+            srcset="[object Object] 2x"
+          />
+        </picture>
+      </section>
+    </section>
+     
+    <section
+      class="container_full case_pipelines-image-mobile"
+    >
+      <section
+        class="container_full case_full-screen-image"
+      >
+        <picture
+          filenameretina="pipelines-mobile@2x"
+        >
+          <source
+            class="image"
+            srcset="[object Object] ,[object Object] 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt=""
+            class="image"
+            loading="lazy"
+            src="[object Object]"
+            srcset="[object Object] 2x"
+          />
+        </picture>
+      </section>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <h3
+        class="case_title_h3 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
+      >
+        Meet the team
+      </h3>
+       
+      <p
+        class="case_paragraph m-48_bottom media-m-24_bottom"
+      >
+        
+        There are currently three members in a core development team. During the pre-launch phase, a larger team
+        had been working on the Namba Food project. There have been five full-timers and two part-timers working
+        closely with the customer on the project:
+      
+      </p>
+       
+      <ul
+        class="case_list-team"
+      >
+        <li
+          class="case_team-item"
+          filenameretina="vlad-andreev@2x"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Vlad Andreev"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Vlad Andreev
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              Team Lead
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+          filenameretina="gulbustan-baudunova@2x"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Gulbustan Baudunova"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Gulbustan Baudunova
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              Back-end Developer
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+          filenameretina="tamara-mun@2x"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Tamara Mun"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Tamara Mun
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              Delivery Manager
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+          filenameretina="aidai-atakulova@2x"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Aidai Atakulova"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Aidai Atakulova
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              Project Manager
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+          filenameretina="baurzhan-omuraliev@2x"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Baurzhan Omuraliev"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Baurzhan Omuraliev
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              Back-end Developer
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+          filenameretina="nakylai-taiirova@2x"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Nakylai Taiirova"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Nakylai Taiirova
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              Back-end Developer
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+          filenameretina="akylbek-djumaliev@2x"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Akylbek Djumaliev"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Akylbek Djumaliev
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              Back-end Developer
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+          filenameretina="stanislav-shcherbinin@2x"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Stanislav Shcherbinin"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Stanislav Shcherbinin
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              Back-end Developer
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+          filenameretina="eldar-akkozov@2x"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Eldar Akkozov"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Eldar Akkozov
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              Mobile Developer
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+          filenameretina="altynai-toktomuratova@2x"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Altynai Toktomuratova"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Altynai Toktomuratova
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              Mobile Developer
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+          filenameretina="dmitrii-khalezin@2x"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Dmitrii Khalezin"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Dmitrii Khalezin
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              DevOps Engineer
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+          filenameretina="belek-abylov@2x"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Belek Abylov"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Belek Abylov
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              Back-end Developer
+            </p>
+          </div>
+        </li>
+      </ul>
+       
+      <h4
+        class="case_title_h4 m-72_top m-12_bottom media-m-41_top"
+      >
+        Transparent communication
+      </h4>
+       
+      <p
+        class="case_paragraph"
+      >
+        
+        Weekly calls with the customer's business representatives and monthly meetings to see what can be
+        improved from a development/IT viewpoint. Our staff members also work on Namba Food premises several
+        days a week to keep in touch with the customer's employees. This keeps everyone on the same page. We
+        can collect the very recent business requirements and quickly respond to changes that a highly competitive
+        delivery market may throw at us.
+      
+      </p>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
+      >
+        Nationwide success and day to day improvements
+      </h2>
+       
+      <p
+        class="case_paragraph"
+      >
+        
+        Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba
+        Foods' vision and understanding of its target audience, together, we were able to build a product that truly
+        solves customers' problems. The year-over-year growth rate is truly impressive.
+      
+      </p>
+       
+      <blockquote
+        class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
+      >
+        
+        As the number of businesses using Namba Food 
+        <span
+          class="case_blockquote-box_text-modificator"
+        >
+          the service's yearly growth rate is about 50% for both revenue and deliveries made.
+        </span>
+      </blockquote>
+       
+      <p
+        class="case_paragraph m-48_bottom media-m-24_bottom"
+      >
+        
+        In 2017 Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.
+      
+      </p>
+       
+      <div
+        class="case_nationwide-cards m-72_bottom media-m-48_bottom"
+      >
+        <div
+          class="case_card background-color-silver"
+        >
+          <div
+            class="card-content"
+          >
+            <h5
+              class="card-content_title case_title_h5"
+            >
+              Delivery service Nambafood
+            </h5>
+             
+            <p
+              class="case_paragraph card-content_paragraph m-24_bottom"
+            >
+              
+    For 5 years Namba Food actively
+    evolves and monthly improves
+    opportunities of software.
+  
+            </p>
+             
+            <div
+              class="card-content_rows-wrap"
+            >
+              <div
+                class="card-content_row m-24_bottom"
+              >
+                <p
+                  class="case_paragraph card-content_paragraph card-content_paragraph--bold"
+                >
+                  
+        Yearly increase in orders:
+      
+                </p>
+                 
+                <div
+                  class="card-content_chart card-content_yearly-increase"
+                />
+              </div>
+               
+              <div
+                class="card-content_row"
+              >
+                <p
+                  class="case_paragraph card-content_paragraph card-content_paragraph--bold"
+                >
+                  
+        Increase in sales:
+      
+                </p>
+                 
+                <div
+                  class="card-content_chart card-content_increase-in-sales"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+         
+        <div
+          class="case_card background-color-silver case_restaurant-talisman-card"
+        >
+          <div
+            class="card-content"
+          >
+            <h5
+              class="card-content_title case_title_h5"
+            >
+              Restaurant Talisman
+            </h5>
+             
+            <p
+              class="case_paragraph card-content_paragraph"
+            >
+              
+    Restaurant Talisman
+    successfully develops in market
+    of Bishkek city. In 2018,
+    directorship of the restaurant
+    decided to actively promote in
+    delivery.
+  
+            </p>
+             
+            <p
+              class="case_paragraph card-content_paragraph m-24_top m-24_bottom media-m-48_top"
+            >
+              
+    By using NambaFood software
+    only in a month, they got positive growth.
+  
+            </p>
+             
+            <div
+              class="card-content_statistics"
+            >
+              <div
+                class="card-content_statistics-item"
+              >
+                <p
+                  class="case_paragraph card-content_paragraph card-content_statistics-heading"
+                >
+                  
+        IT expenses
+      
+                </p>
+                 
+                <p
+                  class="case_paragraph card-content_statistics-number"
+                >
+                  
+        0
+                  <span>
+                    $
+                  </span>
+                </p>
+              </div>
+               
+              <div
+                class="card-content_statistics-item"
+              >
+                <p
+                  class="case_paragraph card-content_paragraph card-content_statistics-heading card-content_statistics-heading-increase-sales"
+                >
+                  
+        Increase in 
+                  <br />
+                   sales
+      
+                </p>
+                 
+                <p
+                  class="case_paragraph card-content_statistics-number"
+                >
+                  
+        +236
+                  <span>
+                    %
+                  </span>
+                </p>
+              </div>
+               
+              <div
+                class="card-content_statistics-item"
+              >
+                <p
+                  class="case_paragraph card-content_paragraph card-content_statistics-heading"
+                >
+                  
+        Increase in 
+                  <br />
+                   amount of orders
+      
+                </p>
+                 
+                <p
+                  class="case_paragraph card-content_statistics-number"
+                >
+                  
+        +142
+                  <span>
+                    %
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+        <div
+          class="case_card background-color-silver"
+        >
+          <div
+            class="card-content"
+          >
+            <h5
+              class="card-content_title case_title_h5"
+            >
+              250
+            </h5>
+             
+            <p
+              class="case_paragraph card-content_paragraph m-28_bottom media-m-32_bottom"
+            >
+              
+    best cafe & restaurants of the city
+    to suit all tastes + delivery of
+    goods from stores and
+    markets, medicines from
+    pharmacies, personal
+    correspondence and important
+    documents, urgent packages from
+    hand to hand, and much more.
+  
+            </p>
+             
+            <h5
+              class="card-content_title case_title_h5"
+            >
+              2500
+            </h5>
+             
+            <p
+              class="case_paragraph card-content_paragraph m-28_bottom media-m-32_bottom"
+            >
+              
+    offered dishes on the website to
+    choose from.
+  
+            </p>
+             
+            <h5
+              class="card-content_title case_title_h5"
+            >
+              700 entrepreneurs
+            </h5>
+             
+            <p
+              class="case_paragraph card-content_paragraph"
+            >
+              
+    received help from NF in 4 years
+    and  increased their customer
+    base by increasing online sales
+    and providing marketing activity.
+  
+            </p>
+          </div>
+        </div>
+      </div>
+       
+      <blockquote
+        class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
+      >
+        
+        Thanks to our close collaboration, we saw a notable
+        increase in the return on investment, as the number of
+        orders grew by 53% YoY. The Mad Devs Team always
+        surpasses expectations and stays open to suggestions. The
+        team's competency and dedication enabled prolonged
+        partnership between our companies.
+       
+        <div
+          class="case_blockquote-author__author-info m-24_top"
+        >
+          <div
+            class="case_blockquote-author__photo m-auto"
+          >
+            <picture>
+              <source
+                class="image"
+                srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt=""
+                class="image"
+                loading="lazy"
+                src="[object Object]"
+                srcset="[object Object] 2x"
+              />
+            </picture>
+          </div>
+           
+          <p
+            class="case_paragraph case_blockquote-author__name"
+          >
+            Aziza Anarbekova
+          </p>
+           
+          <p
+            class="case_blockquote-author__position"
+          >
+            Co-Founder, Namba Food
+          </p>
+        </div>
+      </blockquote>
+    </section>
+  </section>
+</main>
+`;
