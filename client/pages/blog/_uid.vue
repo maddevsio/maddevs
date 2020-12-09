@@ -2,6 +2,29 @@
   <div class="blog-post">
     <div class="blog-post__background" />
     <div class="blog-post__inner-container">
+      <div class="blog-post__share">
+        <ShareNetwork
+          network="twitter"
+          :url="ogUrl"
+          :title="title"
+          class="blog-post__share-link blog-post__share-link--twitter"
+          target="_blank"
+        />
+        <ShareNetwork
+          network="facebook"
+          :url="ogUrl"
+          :title="title"
+          class="blog-post__share-link blog-post__share-link--facebook"
+          target="_blank"
+        />
+        <ShareNetwork
+          network="linkedin"
+          :url="ogUrl"
+          :title="title"
+          class="blog-post__share-link blog-post__share-link--linkedin"
+          target="_blank"
+        />
+      </div>
       <div class="blog-post__introduction-container">
         <h1 class="blog-post__blog-title title">{{ $prismic.asText(document.title) }}</h1>
         <p class="blog-post__blog-sub-title">{{ $prismic.asText(document.subtitle) }}</p>
@@ -116,7 +139,12 @@ export default {
 
     this.ogUrl = window.location.href;
     window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.shareButtonsScroll);
+    window.scroll();
     this.getAllHeadings();
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.shareButtonsScroll);
   },
   methods: {
     getAllHeadings() {
@@ -156,6 +184,19 @@ export default {
       } else {
         this.buttonIsActive = false;
       }
+    },
+    shareButtonsScroll() {
+      const shareButtons = document.querySelector('.blog-post__share');
+      if(window.pageYOffset < 650) {
+        const top = 750 - window.pageYOffset;
+        shareButtons.style.cssText = `top: ${top}px`;
+      } else if(window.pageYOffset > (
+        document.querySelector('.blog-post').offsetHeight - document.querySelector('.blog-post__recommended-posts').offsetHeight - document.querySelector('.blog-post__share').offsetHeight - 100
+      )) {
+        shareButtons.style.cssText = 'position: absolute; bottom: -100px; top: auto; left: -182px;';
+      } else {
+        shareButtons.style.cssText = 'top: 100px';
+      }
     }
   }
 };
@@ -179,6 +220,7 @@ export default {
     &__inner-container {
       max-width: 818px;
       margin: -514px auto 0;
+      position: relative;
     }
 
     &__blog-sub-title {
@@ -230,7 +272,11 @@ export default {
 
     &__share {
       display: flex;
-      margin-top: 20px;
+      position: fixed;
+      left: calc(50vw - 599px);
+      top: 750px;
+      flex-direction: column;
+      margin-top: 0;
     }
 
     &__share-link {
@@ -238,7 +284,7 @@ export default {
       height: 23px;
       display: block;
       background-repeat: no-repeat;
-      margin-left: 7px;
+      margin-bottom: 30px;
 
       &--linkedin {
         background-image: url('../../assets/img/common/lindekin-icon.svg');

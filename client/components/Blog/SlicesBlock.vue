@@ -43,7 +43,7 @@ import TextSlice from '~/components/Blog/slices/TextSlice.vue';
 import ImageCaptionSlice from '~/components/Blog/slices/ImageCaptionSlice.vue';
 import EmbedSlice from '~/components/Blog/slices/EmbedSlice.vue';
 import CodeBlockSlice from './slices/CodeBlockSlice';
-import Divider from './Divider';
+import Divider from './slices/DividerSlice';
 import ImageAttributesSlice from './slices/ImageAttributesSlice';
 import OrderedList from './slices/OrderedList';
 import DoubleColumnBorderedSlice from './slices/DoubleColumnBorderedSlice';

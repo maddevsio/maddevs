@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  @import '../../assets/styles/_vars.scss';
+  @import '@/assets/styles/_vars.scss';
 
   hr {
     border-bottom: none;

@@ -14,9 +14,9 @@ import { PrismEditor } from 'vue-prism-editor';
 import 'vue-prism-editor/dist/prismeditor.min.css';
 
 import 'prismjs';
-import {highlight} from 'prismjs';
-import 'prismjs/components/prism-clike';
-import 'prismjs/components/prism-javascript';
+import { highlight } from 'prismjs/components/prism-core.min';
+import 'prismjs/components/prism-clike.min';
+import 'prismjs/components/prism-javascript.min';
 import 'prismjs/components/prism-css.min';
 import 'prismjs/themes/prism.css';
 
@@ -30,14 +30,21 @@ export default {
   },
   data(){
     return {
-      code: this.slice.primary.code.reduce((prev, element) => prev + element.text, '')
+      code: ''
     };
+  },
+  mounted() {
+    this.code = this.slice.primary.code.reduce((prev, element) => prev + element.text, '');
   },
   components: {
     PrismEditor
   },
   methods: {
     highlighter(code){
+      if (!this.slice.primary.language) {
+        return '';
+      }
+
       return highlight(code, Prism.languages[this.slice.primary.language], this.slice.primary.language);
     }
   }
