@@ -2,15 +2,15 @@
   <div>
     <template v-if="$prismic.asText(url)">
       <div class='post-part single'>
-        <a class="block-img" :href="$prismic.asText(url)" :target="$prismic.asText(target)">
-          <prismic-image :field="img" :alt="$prismic.asText(alt)" :title="$prismic.asText(title)"/>
+        <a class="block-img" :href="$prismic.asText(url)" :target="target">
+          <prismic-image :field="img" :title="$prismic.asText(title)"/>
         </a>
       </div>
     </template>
     <template v-else>
       <div class='post-part single'>
         <p class="block-img">
-          <prismic-image :field="img" :alt="$prismic.asText(alt)" :title="$prismic.asText(title)"/>
+          <prismic-image :field="img" :title="$prismic.asText(title)"/>
         </p>
       </div>
     </template>
@@ -24,15 +24,14 @@ export default {
   data: function() {
     return {
       img: '',
-      alt: '',
       title: '',
       url: '',
       target: ''
     };
   },
   created() {
+    console.log('prismic log', this.$prismic);
     this.img = this.slice.primary.image;
-    this.alt = this.slice.primary.caption;
     this.title = this.slice.primary.title;
     this.url = this.slice.primary.url;
     this.target = this.slice.primary.target;

@@ -4,17 +4,17 @@
     <div class="blog-post__inner-container">
       <div class="blog-post__share">
         <ShareNetwork
-          network="twitter"
-          :url="ogUrl"
-          :title="title"
-          class="blog-post__share-link blog-post__share-link--twitter"
-          target="_blank"
-        />
-        <ShareNetwork
           network="facebook"
           :url="ogUrl"
           :title="title"
           class="blog-post__share-link blog-post__share-link--facebook"
+          target="_blank"
+        />
+        <ShareNetwork
+          network="twitter"
+          :url="ogUrl"
+          :title="title"
+          class="blog-post__share-link blog-post__share-link--twitter"
           target="_blank"
         />
         <ShareNetwork
@@ -105,6 +105,7 @@ export default {
     };
   },
   async asyncData({ $prismic, params, error }) {
+    console.log(params.uid, error);
     let recommendedPosts = [];
     try {
       // Query to get post content
@@ -188,12 +189,13 @@ export default {
     shareButtonsScroll() {
       const shareButtons = document.querySelector('.blog-post__share');
       if(window.pageYOffset < 650) {
-        const top = 750 - window.pageYOffset;
-        shareButtons.style.cssText = `top: ${top}px`;
+        shareButtons.style.cssText = 'position: absolute; top: 580px; left: -183px;';
       } else if(window.pageYOffset > (
-        document.querySelector('.blog-post').offsetHeight - document.querySelector('.blog-post__recommended-posts').offsetHeight - document.querySelector('.blog-post__share').offsetHeight - 100
+        document.querySelector('.blog-post').offsetHeight
+          - (document.querySelector('.blog-post__recommended-posts') ? document.querySelector('.blog-post__recommended-posts').offsetHeight : 0)
+          - document.querySelector('.blog-post__share').offsetHeight - 100
       )) {
-        shareButtons.style.cssText = 'position: absolute; bottom: -100px; top: auto; left: -182px;';
+        shareButtons.style.cssText = 'position: absolute; bottom: -100px; top: auto; left: -183px;';
       } else {
         shareButtons.style.cssText = 'top: 100px';
       }
@@ -285,6 +287,7 @@ export default {
       display: block;
       background-repeat: no-repeat;
       margin-bottom: 30px;
+      cursor: pointer;
 
       &--linkedin {
         background-image: url('../../assets/img/common/lindekin-icon.svg');
@@ -296,6 +299,10 @@ export default {
 
       &--facebook {
         background-image: url('../../assets/img/common/facebook-icon.svg');
+      }
+
+      &--instagram {
+        background-image: url('../../assets/img/common/instagram-icon.svg');
       }
     }
 
