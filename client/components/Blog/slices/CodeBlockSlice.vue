@@ -41,10 +41,6 @@ export default {
   },
   methods: {
     highlighter(code){
-      if (!this.slice.primary.language) {
-        return '';
-      }
-
       return highlight(code, Prism.languages[this.slice.primary.language], this.slice.primary.language);
     }
   }

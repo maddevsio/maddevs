@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image attribute slice component renders correctly 1`] = `
+<div>
+  <div
+    class="blog-header single"
+    style="background-image: url(https://images.prismic.io/superpupertest/4b27a325-c48e-4f20-943d-e40537291055_2020-12-08_14-11.png?auto=compress,format&rect=0,0,1231,306&w=1200&h=298);"
+  >
+    <div
+      class="wrapper"
+    >
+      <h1>
+        caption
+      </h1>
+    </div>
+  </div>
+</div>
+`;

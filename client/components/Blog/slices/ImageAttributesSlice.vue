@@ -30,7 +30,6 @@ export default {
     };
   },
   created() {
-    console.log('prismic log', this.$prismic);
     this.img = this.slice.primary.image;
     this.title = this.slice.primary.title;
     this.url = this.slice.primary.url;

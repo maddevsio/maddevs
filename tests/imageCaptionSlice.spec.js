@@ -1,7 +1,7 @@
 import {
   mount
 } from '@vue/test-utils';
-import ImageAttributesSlice from '../client/components/Blog/slices/ImageAttributesSlice';
+import ImageCaptionSlice from '../client/components/Blog/slices/ImageCaptionSlice';
 
 describe('Image attribute slice component', () => {
   let wrapper;
@@ -12,23 +12,17 @@ describe('Image attribute slice component', () => {
       image: {
         alt: 'alt text',
         copyright: null,
-        dimensions: {height:298, width:1200},
+        dimensions: {height: 298, width: 1200},
         url: 'https://images.prismic.io/superpupertest/4b27a325-c48e-4f20-943d-e40537291055_2020-12-08_14-11.png?auto=compress,format&rect=0,0,1231,306&w=1200&h=298'
       },
-      target: '_blank',
-      title: [{
-        spans: [],
-        text: 'Tired banner',
-        type: 'paragraph'
-      }],
-      url: 'https://blog.maddevs.io'
+      caption: 'caption'
     },
-    slice_label: null,
-    slice_type: 'image_with_attributes'
+    slice_label: 'image-full-width',
+    slice_type: 'image_with_caption'
   };
 
   beforeEach(() => {
-    wrapper = mount(ImageAttributesSlice, {
+    wrapper = mount(ImageCaptionSlice, {
       propsData: {slice},
       mocks: {
         $prismic: {
@@ -47,11 +41,11 @@ describe('Image attribute slice component', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
 
-  test('link has target attribute', () => {
-    expect(wrapper.find('.block-img').attributes('target')).toMatch('_blank');
+  test('h1 rendered', () => {
+    expect(wrapper.find('h1').text()).toBe(slice.primary.caption);
   });
 
-  test('link has href attribute', () => {
-    expect(wrapper.find('.block-img').attributes('href')).toMatch('https://blog.maddevs.io');
+  test('header contains image', () => {
+    expect(wrapper.find('.blog-header').attributes('style')).toMatch(`background-image: url(${slice.primary.image.url})`);
   });
 });
