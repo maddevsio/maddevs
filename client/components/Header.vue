@@ -6,7 +6,7 @@
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-7">
             <router-link :to="`/`" class="header__logo-icon">
-              <headerLogo class="header__header-logo"/>
+              <headerLogo class="header__header-logo" :isCasePage="isCasePage"/>
             </router-link>
             <nav class="header__header-routes_links">
               <router-link @click.native="goToTopPage" exact to="/" class="header__navigation-link">About</router-link>
@@ -96,7 +96,7 @@ export default {
     scrollHandler() {
       if(this.isCasePage && window.innerWidth > 991) {
         const opacity = 1.6 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.caseMoreButton.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
-        const opacityTextLogo = 0.8 - (this.$refs.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.$refs.overlay.offsetHeight;
+        const opacityTextLogo = 0.9 - (this.$refs.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.$refs.overlay.offsetHeight;
         this.$refs.overlay.style.opacity = opacity;
         this.logoText.style.opacity = opacityTextLogo;
       } else if(this.isCasePage && window.innerWidth < 991) {
