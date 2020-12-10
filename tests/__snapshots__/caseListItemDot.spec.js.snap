@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List item dot renders correctly 1`] = `
+<li
+  class="list-item_dot"
+>
+  Main Content
+</li>
+`;

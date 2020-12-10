@@ -42,12 +42,15 @@
     margin: 0 auto;
     width: 23%;
     max-width: 340px;
-    min-width: 225px;
     z-index: 0;
 
     &::before {
       background-image: url("../../assets/img/Cases/nambafood/png/iphone-video-preview.png");
     }
+  }
+
+  &_full-screen-video {
+    border-radius: 3.5416666666666665vw;
   }
 
   &_map-video-wrapper {
@@ -95,12 +98,28 @@
     overflow: hidden;
   }
 
+  @media screen and (min-width: 1440px) {
+    &_full-screen-video {
+      border-radius: 51px;
+    }
+  }
+
   @media screen and (max-width: 1220px) {
     &_couriers-android-app-wrapper {
       min-width: 1020px;
       position: relative;
       left: 50%;
       transform: translateX(-50%);
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    &_full-screen-phone-video-wrapper {
+      min-width: 225px;
+    }
+
+    &_full-screen-video {
+      border-radius: 36px;
     }
   }
 

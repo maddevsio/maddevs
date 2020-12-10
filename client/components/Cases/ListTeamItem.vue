@@ -1,16 +1,13 @@
 <template>
   <li class="case_team-item">
     <Picture
-      v-if="fileName && fileNameRetina"
       :pictureFolder="pictureFolder"
       :fileName="fileName"
-      :fileNameRetina="fileNameRetina"
       :fileExtension="fileExtension"
       :alt="alt"
       :lazyLoading="true"
       class="case_team-item__image"
     />
-    <div class="case_team-item__default-image" v-else></div>
     <div class="case_team-item__info">
       <p class="case_team-item__name">{{name}}</p>
       <p class="case_team-item__position">{{position}}</p>
@@ -39,10 +36,6 @@ export default {
       default: ''
     },
     fileName: {
-      type: String,
-      default: ''
-    },
-    fileNameRetina: {
       type: String,
       default: ''
     },
@@ -77,15 +70,10 @@ export default {
       @include default_text($text-color--grey-team-list, 13px, 20px, -0.02em, normal);
     }
 
-    &__image,
-    &__default-image {
+    &__image {
       width: 52px;
       height: 51px;
       margin-right: 7.5px;
-    }
-
-    &__default-image {
-      background-color: #f4f4f4;
     }
 
     @media screen and (max-width: 768px) {
@@ -104,8 +92,7 @@ export default {
         line-height: 14px;
       }
 
-      &__image,
-      &__default-image {
+      &__image {
         width: 50px;
         height: 49px;
       }
@@ -124,8 +111,7 @@ export default {
         font-size: 11px;
       }
 
-      &__image,
-      &__default-image {
+      &__image {
         width: 48px;
         height: 47px;
       }

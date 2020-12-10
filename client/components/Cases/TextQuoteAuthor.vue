@@ -11,7 +11,7 @@
           :lazyLoading="true"
         />
       </div>
-      <TextParagraph>{{authorName}}</TextParagraph>
+      <TextParagraph class="case_blockquote-author__name">{{authorName}}</TextParagraph>
       <p class="case_blockquote-author__position">{{authorPosition}}</p>
     </div>
   </blockquote>

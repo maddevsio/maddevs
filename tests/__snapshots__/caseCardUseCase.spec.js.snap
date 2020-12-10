@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardUseCase renders correctly 1`] = `
+<div
+  class="card-use-case"
+>
+  <h4
+    class="card-use-case__title case_title_h4 card-use-case__red-card-title"
+  >
+    
+    Web-site, mobile application
+  
+  </h4>
+   
+  <div
+    class="card-use-case__description-wrapper card-use-case__red-card-description-wrapper"
+  >
+    <p
+      class="case_paragraph card-use-case__paragraph card-use-case__red-card-paragraph"
+    >
+      
+      Easy-to-use interface and fast navigation for Namba Food users.
+    
+    </p>
+     
+    <div
+      class="card-use-case__desktop-picture card-use-case__red-card-picture"
+    >
+      <picture>
+        <source
+          class="image"
+          srcset="[object Object] ,[object Object] 2x"
+          type="image/webp"
+        />
+         
+        <img
+          alt=""
+          class="image"
+          loading=""
+          src="[object Object]"
+          srcset="[object Object] 2x"
+        />
+      </picture>
+    </div>
+     
+    <div
+      class="card-use-case__mobile-picture card-use-case__red-card-mobile-picture"
+    >
+      <picture>
+        <source
+          class="image"
+          srcset="[object Object] ,[object Object] 2x"
+          type="image/webp"
+        />
+         
+        <img
+          alt=""
+          class="image"
+          loading=""
+          src="[object Object]"
+          srcset="[object Object] 2x"
+        />
+      </picture>
+    </div>
+  </div>
+</div>
+`;

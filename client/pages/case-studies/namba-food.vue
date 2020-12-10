@@ -448,9 +448,9 @@
         </TextQuoteAuthor>
       </section>
     </section>
-    <Footer>
+    <!-- <Footer>
       Namba Food <br> Top 1 Delivery Service in <br class="case_mobile-screen-break"> Central Asia
-    </Footer>
+    </Footer> -->
   </main>
 </template>
 
@@ -765,7 +765,7 @@ export default {
     });
 
     // Add scroll listener
-    if(this.$nuxt.$route.name === 'case-studies-namba-food') {
+    if($nuxt.$route.name === 'case-studies-namba-food') {
       window.addEventListener('scroll', () => {
         if (window.screen.width > 991) {
           this.scrollHandler(this.header);
