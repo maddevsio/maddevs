@@ -30,7 +30,7 @@
         </div>
       </div>
     </header>
-    <mobileHeader :isCasePage="isCasePage"/>
+    <mobileHeader/>
   </div>
 </template>
 
@@ -94,11 +94,14 @@ export default {
       this.scrollTop = this.caseMoreButton.getBoundingClientRect().top - this.$refs.headerContainer.offsetHeight;
     },
     scrollHandler() {
-      if(this.isCasePage) {
-        const opacity = 1.3 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.caseMoreButton.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
-        const opacityTextLogo = 0.7 - (this.$refs.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.$refs.overlay.offsetHeight;
+      if(this.isCasePage && window.innerWidth > 991) {
+        const opacity = 1.6 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.caseMoreButton.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
+        const opacityTextLogo = 0.8 - (this.$refs.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.$refs.overlay.offsetHeight;
         this.$refs.overlay.style.opacity = opacity;
         this.logoText.style.opacity = opacityTextLogo;
+      } else {
+        const opacity = 1.7 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.caseMoreButton.getBoundingClientRect().height) - 60) / this.$refs.overlay.offsetHeight;
+        this.$refs.overlay.style.opacity = opacity;
       }
     }
   }

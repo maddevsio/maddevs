@@ -99,17 +99,12 @@ export default {
         }
       ],
       headerTransparent: false,
+      isCasePage: false,
       caseMoreButton: null,
       overlay: null,
       scrollTop: null,
       logoText: null
     };
-  },
-  props: {
-    isCasePage: {
-      type: Boolean,
-      default: false
-    }
   },
   watch: {
     '$route'() {
@@ -121,8 +116,10 @@ export default {
   created() {
     if(this.$nuxt.$route.name === 'case-studies-namba-food') {
       this.headerTransparent = true;
+      this.isCasePage = true;
     } else {
       this.headerTransparent = false;
+      this.isCasePage = false;
     }
   },
   mounted() {
@@ -158,13 +155,11 @@ export default {
     },
     getScrollTop() {
       this.scrollTop = this.caseMoreButton.getBoundingClientRect().top;
-      console.log(this.scrollTop);
     },
     scrollHandler() {
       if(this.isCasePage) {
-        const opacityTextLogo = 0.7 - (this.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.overlay.offsetHeight;
+        const opacityTextLogo = 1 - (this.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.overlay.offsetHeight;
         this.logoText.style.opacity = opacityTextLogo;
-        console.log(this.logoText.style.opacity);
       }
     }
   }
