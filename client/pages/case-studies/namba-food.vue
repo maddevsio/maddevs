@@ -719,9 +719,7 @@ export default {
           fileExtension: 'jpg'
         }
       ],
-      videoIdList: ['map-video', 'iphone-silver-video'],
-      header: null,
-      mobileHeader: null
+      videoIdList: ['map-video', 'iphone-silver-video']
     };
   },
   head() {
@@ -741,9 +739,6 @@ export default {
     };
   },
   mounted() {
-    this.header = document.getElementsByClassName('header')[0];
-    this.mobileHeader = document.getElementsByClassName('mobile-header')[0];
-
     // Play/Pause HTML Video Based on Visibility
     const options = {
       root: null,
@@ -763,26 +758,6 @@ export default {
       let observer = new IntersectionObserver(callback, options);
       observer.observe(document.getElementById(video));
     });
-
-    // Add scroll listener
-    if($nuxt.$route.name === 'case-studies-namba-food') {
-      window.addEventListener('scroll', () => {
-        if (window.screen.width > 991) {
-          this.scrollHandler(this.header);
-        } else {
-          this.scrollHandler(this.mobileHeader);
-        }
-      });
-    }
-  },
-  methods: {
-    scrollHandler(header) {
-      if(window.pageYOffset >= 10) {
-        header.classList.add('header-default');
-      } else {
-        header.classList.remove('header-default');
-      }
-    }
   }
 };
 </script>

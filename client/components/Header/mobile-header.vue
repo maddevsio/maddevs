@@ -2,12 +2,12 @@
   <div class="mobile-header" 
 		:class="{
 			'mobile-header--is-open': mobileHeaderIsOpen,
-			'header-black-gradient': headerBlackGradient === true && mobileHeaderIsOpen === false
+			'header-transparent': headerTransparent === true && mobileHeaderIsOpen === false
 		}"
 	>
 		<div class="mobile-header__top-line">
 			<router-link to="/" class="mobile-header__header-logo" @click.native="mobileHeaderIsOpen = false">
-				<headerLogo />
+				<headerLogo :scrollTop="scrollTop" :isCasePage="isCasePage" />
 			</router-link>
 			<div class="mobile-header__button-wrap">
 				<button class="mobile-header__toogle-btn" @click="toggleMobileHeader()" :class="mobileHeaderIsOpen ? 'mobile-header__close' : 'mobile-header__hamburger'"></button>
@@ -98,21 +98,43 @@ export default {
           link: 'https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc'
         }
       ],
-      headerBlackGradient: false
+      headerTransparent: false,
+      caseMoreButton: null,
+      overlay: null,
+      scrollTop: null,
+      logoText: null
     };
+  },
+  props: {
+    isCasePage: {
+      type: Boolean,
+      default: false
+    }
   },
   watch: {
     '$route'() {
       this.mobileHeaderIsOpen = false;
-      this.headerBlackGradient = false;
+      this.headerTransparent = false;
       this.enableScrollOnBody();
     }
   },
   created() {
     if(this.$nuxt.$route.name === 'case-studies-namba-food') {
-      this.headerBlackGradient = true;
+      this.headerTransparent = true;
     } else {
-      this.headerBlackGradient = false;
+      this.headerTransparent = false;
+    }
+  },
+  mounted() {
+    if(this.isCasePage) {
+      this.caseMoreButton = document.getElementsByClassName('case_more__button')[0];
+      this.overlay = document.getElementsByClassName('overlay')[0];
+      this.logoText = document.getElementsByClassName('header-logo-text')[1]; // Logo from mobile header
+		
+      this.getScrollTop();
+      window.addEventListener('scroll', () => {
+      	this.scrollHandler();
+      });
     }
   },
   methods: {
@@ -133,6 +155,17 @@ export default {
     },
     getIOSBottomBarHeight() {
       return Math.abs(window.innerHeight - window.outerHeight);
+    },
+    getScrollTop() {
+      this.scrollTop = this.caseMoreButton.getBoundingClientRect().top;
+      console.log(this.scrollTop);
+    },
+    scrollHandler() {
+      if(this.isCasePage) {
+        const opacityTextLogo = 0.7 - (this.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.overlay.offsetHeight;
+        this.logoText.style.opacity = opacityTextLogo;
+        console.log(this.logoText.style.opacity);
+      }
     }
   }
 };
