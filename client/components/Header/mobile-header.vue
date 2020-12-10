@@ -7,7 +7,7 @@
 	>
 		<div class="mobile-header__top-line">
 			<router-link to="/" class="mobile-header__header-logo" @click.native="mobileHeaderIsOpen = false">
-				<headerLogo :scrollTop="scrollTop" :isCasePage="isCasePage" />
+				<headerLogo />
 			</router-link>
 			<div class="mobile-header__button-wrap">
 				<button class="mobile-header__toogle-btn" @click="toggleMobileHeader()" :class="mobileHeaderIsOpen ? 'mobile-header__close' : 'mobile-header__hamburger'"></button>

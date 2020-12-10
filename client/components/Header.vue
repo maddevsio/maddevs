@@ -6,7 +6,7 @@
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-7">
             <router-link :to="`/`" class="header__logo-icon">
-              <headerLogo class="header__header-logo" :scrollTop="scrollTop" :isCasePage="isCasePage"/>
+              <headerLogo class="header__header-logo"/>
             </router-link>
             <nav class="header__header-routes_links">
               <router-link @click.native="goToTopPage" exact to="/" class="header__navigation-link">About</router-link>
@@ -99,7 +99,7 @@ export default {
         const opacityTextLogo = 0.8 - (this.$refs.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.$refs.overlay.offsetHeight;
         this.$refs.overlay.style.opacity = opacity;
         this.logoText.style.opacity = opacityTextLogo;
-      } else {
+      } else if(this.isCasePage && window.innerWidth < 991) {
         const opacity = 1.7 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.caseMoreButton.getBoundingClientRect().height) - 60) / this.$refs.overlay.offsetHeight;
         this.$refs.overlay.style.opacity = opacity;
       }
