@@ -251,22 +251,6 @@ describe('Namba food', () => {
     expect(wrapper.vm.$data).toEqual(data);
   });
 
-  test('scrollHandler should call classList method add()', () => {
-    Object.defineProperty(window, 'pageYOffset', {
-      value: 10
-    });
-    wrapper.vm.scrollHandler(mockedElementDOM);
-    expect(mockedElementDOM.classList.add).toBeCalled();
-  });
-
-  test('scrollHandler should call classList method remove()', () => {
-    Object.defineProperty(window, 'pageYOffset', {
-      value: 0
-    });
-    wrapper.vm.scrollHandler(mockedElementDOM);
-    expect(mockedElementDOM.classList.remove).toBeCalled();
-  });
-
   test('V-for should render elements in DOM', () => {
     const swiperSlideElems = wrapper.findAll('.swiper-slide');
     const usageScenariosCards = wrapper.findAll('.case_usage-scenarios-card');
