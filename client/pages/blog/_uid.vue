@@ -38,12 +38,6 @@
         <img :src="document.introduction_image.url" class="blog-post__introduction-image" v-if="document.introduction_image.url !== undefined">
         <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
       </div>
-  <!--    <div class="blog-post__table-of-content" v-if="headingsList.length !== 0">-->
-  <!--      <p class="blog-post__table-of-content-title">Table of content:</p>-->
-  <!--      <ul class="blog-post__table-of-content-list">-->
-  <!--        <li v-for="(heading, i) in headingsList" :key="i" class="blog-post__table-of-content-list-item" @click="scrollToHeading(heading.headingName)">{{ heading.textContent }}</li>-->
-  <!--      </ul>-->
-  <!--    </div>-->
       <slices-block :slices="slices" class="blog-post__text-container"/>
     </div>
     <div v-if="recommendedPosts.length !== 0" class="blog-post__recommended-posts">
