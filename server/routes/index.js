@@ -1,4 +1,4 @@
-const exec = require('child_process').exec;
+const shell = require('shelljs');
 const express = require('express');
 const router = express.Router();
 const sendpulse = require('sendpulse-api');
@@ -8,18 +8,6 @@ dotenv.config();
 const API_USER_ID = process.env.NODE_SENDPULSE_API_USER_ID;
 const API_KEY = process.env.NODE_SENDPULSE_API_KEY;
 const TOKEN_STORAGE = '/tmp/';
-
-async function callCommand(command) {
-  return new Promise((resolve, reject) => {
-    exec(command, (err, stdout, stderr) => {
-      if(err) {
-        reject(err);
-      } else {
-        resolve(stdout, stderr);
-      }
-    });
-  });
-}
 
 router.post('/send-email', (req, res) => {
   if (req.body.templateId === null || req.body.templateId === undefined) {
@@ -92,9 +80,7 @@ router.post('/prismic-hook', (req, res) => {
 
   // Document is published or unpublished
   if (req.body.type === 'api-update' && !!req.body.documents && req.body.documents.length) {
-    callCommand('npm run generate')
-      .then((stdout, stderr) => null)
-      .catch(err => null);
+    shell.exec('npm run generate', {async: true});
 
     res.status(200).json({
       status: 200,
