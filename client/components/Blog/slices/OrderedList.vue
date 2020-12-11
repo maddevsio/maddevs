@@ -7,15 +7,19 @@
 </template>
 
 <script>
-import ListNumberedBox from '../../Cases/ListNumberedBox';
-import ListNumberedItemBox from '../../Cases/ListNumberedItemBox';
+import ListNumberedBox from '@/components/Cases/ListNumberedBox';
+import ListNumberedItemBox from '@/components/Cases/ListNumberedItemBox';
 export default {
   name: 'OrderedList',
-  components: {ListNumberedItemBox, ListNumberedBox},
-  props: ['slice']
+  components: {
+    ListNumberedItemBox,
+    ListNumberedBox
+  },
+  props: {
+    slice: {
+      type: Object,
+      required: true
+    }
+  }
 };
 </script>
-
-<style scoped>
-
-</style>

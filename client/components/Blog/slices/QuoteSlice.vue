@@ -6,10 +6,17 @@
 </template>
 
 <script>
-import TextQuote from '../../Cases/TextQuote';
+import TextQuote from '@/components/Cases/TextQuote';
 export default {
-  components: {TextQuote},
-  props: ['slice'],
+  components: {
+    TextQuote
+  },
+  props: {
+    slice: {
+      type: Object,
+      required: true
+    }
+  },
   name: 'quote-slice'
 };
 </script>

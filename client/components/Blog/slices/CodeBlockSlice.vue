@@ -49,7 +49,6 @@ export default {
 
 <style scoped lang="scss">
   @import '../../../assets/styles/_vars';
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
   .code-sample {
     line-height: 22px;

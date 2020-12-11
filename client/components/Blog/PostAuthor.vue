@@ -28,7 +28,6 @@ export default {
   .blog-post {
     &__author {
       display: flex;
-      /*justify-content: space-between;*/
       align-items: center;
     }
 

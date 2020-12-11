@@ -14,11 +14,16 @@
 </template>
 
 <script>
-import linkResolver from '~/plugins/link-resolver.js';
+import linkResolver from '@/plugins/link-resolver.js';
 import PostAuthor from './PostAuthor';
 export default {
   name: 'RecommendedBlogWidget',
-  props: ['post'],
+  props: {
+    post: {
+      type: Object,
+      required: true
+    }
+  },
   components: {
     PostAuthor
   },
@@ -51,8 +56,7 @@ export default {
 
       if (firstParagraph.length > textLimit) {
         return limitedText.substr(0, limitedText.lastIndexOf(' ')) + '...';
-      }
-      else {
+      } else {
         return firstParagraph;
       }
     }
@@ -70,50 +74,50 @@ export default {
   .blog-post {
     color: $text-color--white;
 
-  p {
-    margin-top: 5px;
-  }
+    p {
+      margin-top: 5px;
+    }
 
-  p, span {
-    font-family: 'Poppins-Regular', sans-serif;
-  }
+    p, span {
+      font-family: 'Poppins-Regular', sans-serif;
+    }
 
-  span {
-    letter-spacing: -0.02em;
-  }
+    span {
+      letter-spacing: -0.02em;
+    }
 
-  a {
-    text-decoration: none;
-  }
+    a {
+      text-decoration: none;
+    }
 
-  &__featured-image {
-     max-width: 100%;
-     height: auto;
-   }
+    &__featured-image {
+      max-width: 100%;
+      height: auto;
+    }
 
-  .post-title {
-    font-size: 21px;
-    line-height: 28px;
-    letter-spacing: -1px;
-  }
+    .post-title {
+      font-size: 21px;
+      line-height: 28px;
+      letter-spacing: -1px;
+    }
 
-  .blog-post-meta {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-    font-size: 13px;
-    font-family: 'Inter-Regular', sans-serif;
+    .blog-post-meta {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      font-size: 13px;
+      font-family: 'Inter-Regular', sans-serif;
 
-  .created-at {
-    margin-right: 40px;
-    color: $text-color--grey
-  }
+      .created-at {
+        margin-right: 40px;
+        color: $text-color--grey
+      }
 
-  .tag {
-    background-color: $bgcolor--silver;
-    padding: 4px 16px;
-    transition: 0.2s;
-  }
-  }
+      .tag {
+        background-color: $bgcolor--silver;
+        padding: 4px 16px;
+        transition: 0.2s;
+      }
+    }
   }
 </style>

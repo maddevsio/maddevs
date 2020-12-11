@@ -211,7 +211,7 @@ export default {
     /*max-width: 1680px;*/
     margin: auto;
     /*padding: 150px 250px 0;*/
-    background-color: $bgcolor--white-clear;
+    background-color: $text-color--white-primary;
     position: relative;
 
     &__background {

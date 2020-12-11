@@ -20,8 +20,13 @@
 <script>
 export default {
   name: 'image-attributes-slice',
-  props: ['slice'],
-  data: function() {
+  props: {
+    slice: {
+      type: Object,
+      required: true
+    }
+  },
+  data() {
     return {
       img: '',
       title: '',
