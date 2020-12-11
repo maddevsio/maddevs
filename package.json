@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.2",
-    "@nuxtjs/gtm": "^2.3.2",
+    "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/prismic": "^1.2.4",
     "@nuxtjs/robots": "^2.4.2",
     "axios": "^0.21.0",
@@ -35,13 +35,13 @@
     "prismjs": "^1.22.0",
     "request": "^2.88.2",
     "sendpulse-api": "^1.1.4",
-    "snyk": "^1.425.4",
+    "snyk": "^1.427.0",
     "swiper": "^5.4.5",
-    "vee-validate": "^3.4.2",
+    "vee-validate": "^3.4.5",
     "vue-awesome-swiper": "^4.1.1",
     "vue-js-modal": "^2.0.0-rc.6",
+    "vue-social-sharing": "^3.0.3",
     "vue-prism-editor": "^1.2.2",
-    "vue-social-sharing": "^3.0.2",
     "vue2-perfect-scrollbar": "^1.5.0"
   },
   "devDependencies": {

@@ -1,8 +1,10 @@
 <template>
   <div class="card-use-case">
-    <h4 class="card-use-case__title case_title_h4" :class="`card-use-case__${classList.uniqueСlass}-title`">
-      {{title}}
-    </h4>
+    <client-only>
+      <h4 class="card-use-case__title case_title_h4" :class="`card-use-case__${classList.uniqueСlass}-title`" v-html="title">
+        {{title}}
+      </h4>
+    </client-only>
     <div class="card-use-case__description-wrapper" :class="`card-use-case__${classList.uniqueСlass}-description-wrapper`">
       <TextParagraph class="card-use-case__paragraph" :class="`card-use-case__${classList.uniqueСlass}-paragraph`">
         {{description}}
@@ -120,12 +122,26 @@ export default {
       display: none;
     }
 
+    &__turquoise-card-paragraph {
+      padding-bottom: 40px;
+    }
+
     /deep/ span {
       white-space: nowrap;
     }
 
     @media screen and (max-width: 1000px) {
       text-align: center;
+
+      &__title {
+        /deep/ br {
+          display: none;
+        }
+      }
+
+      &__turquoise-card-paragraph {
+        padding-bottom: 0;
+      }
 
       &__paragraph {
         margin-bottom: 24px;
