@@ -7,21 +7,21 @@
           network="facebook"
           :url="ogUrl"
           :title="title"
-          class="blog-post__share-link blog-post__share-link--facebook"
+          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
           target="_blank"
         />
         <ShareNetwork
           network="twitter"
           :url="ogUrl"
           :title="title"
-          class="blog-post__share-link blog-post__share-link--twitter"
+          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
           target="_blank"
         />
         <ShareNetwork
           network="linkedin"
           :url="ogUrl"
           :title="title"
-          class="blog-post__share-link blog-post__share-link--linkedin"
+          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
           target="_blank"
         />
       </div>
@@ -79,7 +79,8 @@ export default {
       ogUrl: '',
       featuredImage: '',
       headingsList: [],
-      buttonIsActive: false
+      buttonIsActive: false,
+      shareIcons: ['']
     };
   },
   head () {
@@ -206,6 +207,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/socialNetworkIcons';
 
   .blog-post {
     /*max-width: 1680px;*/
@@ -282,27 +284,26 @@ export default {
     }
 
     &__share-link {
-      width: 23px;
-      height: 23px;
+      width: 33px;
+      height: 33px;
       display: block;
       background-repeat: no-repeat;
       margin-bottom: 30px;
       cursor: pointer;
 
-      &--linkedin {
-        background-image: url('../../assets/img/common/lindekin-icon.svg');
-      }
+      &.icon-wrapper {
 
-      &--twitter {
-        background-image: url('../../assets/img/common/twitter-icon.svg');
-      }
+        &__facebook-icon {
+          @include social-network-facebook
+        }
 
-      &--facebook {
-        background-image: url('../../assets/img/common/facebook-icon.svg');
-      }
+        &__twitter-icon {
+          @include social-network-twitter
+        }
 
-      &--instagram {
-        background-image: url('../../assets/img/common/instagram-icon.svg');
+        &__linkedin-icon {
+          @include social-network-linkedin;
+        }
       }
     }
 

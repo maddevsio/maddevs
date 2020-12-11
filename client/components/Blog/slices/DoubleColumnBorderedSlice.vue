@@ -1,8 +1,8 @@
 <template>
   <div class="post-section-bordered">
     <div class="post-section-bordered__inner row">
-      <div class="column_1 col-12 col-lg-9" v-html="$prismic.asHtml(slice.primary.left_column)"/>
-      <div class="column_2 col-12 col-lg-3">
+      <div class="column_left col-12 col-lg-9" v-html="$prismic.asHtml(slice.primary.left_column)"/>
+      <div class="column_right col-12 col-lg-3">
         <prismic-image :field="slice.primary.right_column"/>
       </div>
     </div>
@@ -12,7 +12,12 @@
 <script>
 export default {
   name: 'DoubleColumnBorderedSlice',
-  props: ['slice']
+  props: {
+    slice: {
+      type: Object,
+      required: true
+    }
+  }
 };
 </script>
 
@@ -55,11 +60,11 @@ export default {
   @media only screen and (max-width: 1024px) {
     .post-section-bordered {
 
-      .column_1 {
+      .column_left {
         order: 2;
       }
 
-      .column_2 {
+      .column_right {
         order: 1;
         margin-bottom: 16px;
       }
