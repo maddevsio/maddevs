@@ -881,7 +881,7 @@ exports[`Index page renders correctly 1`] = `
       >
         <a
           class="single-project"
-          href="https://blog.maddevs.io/namba-food-top-1-delivery-service-in-central-asia-3df8ca4d436d?source=friends_link&sk=1dd67cc82dad8e4fae756b3a4d47f121"
+          href="/case-studies/namba-food"
           style="background: rgb(248, 247, 246);"
         >
           <div
@@ -1225,7 +1225,7 @@ exports[`Index page renders correctly 1`] = `
           >
             <a
               class="single-project"
-              href="https://blog.maddevs.io/namba-food-top-1-delivery-service-in-central-asia-3df8ca4d436d?source=friends_link&sk=1dd67cc82dad8e4fae756b3a4d47f121"
+              href="/case-studies/namba-food"
               style="background: rgb(248, 247, 246);"
             >
               <div
