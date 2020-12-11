@@ -4,13 +4,13 @@ exports[`CardUseCase renders correctly 1`] = `
 <div
   class="card-use-case"
 >
-  <h4
-    class="card-use-case__title case_title_h4 card-use-case__red-card-title"
-  >
-    
-    Web-site, mobile application
-  
-  </h4>
+  <client-only-stub>
+    <h4
+      class="card-use-case__title case_title_h4 card-use-case__red-card-title"
+    >
+      Web-site, mobile application
+    </h4>
+  </client-only-stub>
    
   <div
     class="card-use-case__description-wrapper card-use-case__red-card-description-wrapper"

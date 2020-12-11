@@ -19,10 +19,7 @@ exports[`CardNinjaSushi renders correctly 1`] = `
       style="color: rgb(245, 247, 249);"
     >
       
-      After business owners submit pictures and prices, the
-      Namba Food team creates a customized and branded
-      e-commerce website. Updates, support, and
-      maintenance are done by Namba Food, too.
+      After business owners submit images and prices, the Namba Food team creates a customised and branded e-commerce website. Updates, support and maintenance are also done by Namba Food.
     
     </p>
      
@@ -38,10 +35,7 @@ exports[`CardNinjaSushi renders correctly 1`] = `
       style="color: rgb(245, 247, 249);"
     >
       
-      Business partners can use Namba Food’s software
-      and business model, adjusting those to their needs,
-      scale, and region. Namba Food is responsible for its
-      maintenance and helps with management and marketing.
+      Business partners can use Namba Food’s software and business model, adjusting for their needs, scale and region. Namba Food is responsible for its maintenance and helps with management and marketing.
     
     </p>
   </div>

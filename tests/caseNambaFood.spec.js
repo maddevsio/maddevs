@@ -160,8 +160,8 @@ describe('Namba food', () => {
     ],
     usageScenarios: [
       {
-        title: 'Web-site, mobile application',
-        description: 'Easy-to-use interface and fast navigation for Namba Food users.',
+        title: 'Website, mobile <br> application',
+        description: 'Offers easy-to-use interface and fast navigation for Namba Food users.',
         classList: {
           cardColor: 'background-color-red',
           uniqueСlass: 'red-card'
@@ -171,8 +171,8 @@ describe('Namba food', () => {
         alt: ''
       },
       {
-        title: 'Application for deliverymen',
-        description: 'Allows to plan a route, get information about  orders in the instance.',
+        title: 'Application for <br> deliverymen',
+        description: 'Allows planning a route and quickly getting information about orders.',
         classList: {
           cardColor: 'background-color-black',
           uniqueСlass: 'black-card'
@@ -183,7 +183,7 @@ describe('Namba food', () => {
       },
       {
         title: 'Unified control system for operators',
-        description: 'Full control of the ordering process from order acceptance to status tracking.',
+        description: 'Includes full control of the ordering process from order acceptance to status tracking.',
         classList: {
           cardColor: 'background-color-turquoise',
           uniqueСlass: 'turquoise-card'
@@ -193,7 +193,7 @@ describe('Namba food', () => {
         alt: ''
       },
       {
-        title: 'Control panel for managers',
+        title: 'Control panel for <br> managers',
         description: 'Facilitates uploading the menu and updating information about services.',
         classList: {
           cardColor: 'background-color-silver',
@@ -221,20 +221,15 @@ describe('Namba food', () => {
     mobileHeader: undefined
   };
 
-  const mockedElementDOM = {
-    classList: {
-      add: jest.fn(),
-      remove: jest.fn() 
-    }
-  };
-
   beforeEach(() => {
     global.$nuxt = {
       $route: {
         name: null
       }
     };
-    wrapper = mount(NambaFood);
+    wrapper = mount(NambaFood, {
+      stubs: ['client-only']
+    });
   });
 
   // ------ IMPORTANT ----- //

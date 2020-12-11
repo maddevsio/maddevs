@@ -42,10 +42,7 @@ exports[`CardsBusinessModelsGrid renders correctly 1`] = `
         class="case_paragraph"
       >
         
-        The personal courier service works 24/7,
-        enabling quick delivery for both organizations and individuals. Regardless of
-        products’ nature , personal couriers will
-        deliver it on time and, if needed, anonymously.
+        The personal courier service works 24/7, enabling quick delivery for both organizations and individuals. Regardless of the product’s nature, personal couriers deliver it on time and, if needed, anonymously.
       
       </p>
     </div>
@@ -69,14 +66,9 @@ exports[`CardsBusinessModelsGrid renders correctly 1`] = `
         style="color: rgb(255, 255, 255);"
       >
         
-        Business running e-commerce websites,
-        but wanting to outsource delivery service
-        can benefit from Namba Food’s checkout
-        page. It allows businesses to quickly
-        integrate delivery without occurring 
+        Businesses running e-commerce websites, but wanting to outsource delivery services, can benefit from Namba Food’s checkout page, which allows businesses to quickly integrate delivery without incurring 
         <br />
-        
-        operational costs.
+         operational costs.
       
       </p>
     </div>
@@ -96,9 +88,7 @@ exports[`CardsBusinessModelsGrid renders correctly 1`] = `
         style="color: rgb(255, 255, 255);"
       >
         
-        Namba Food's delivery service positions
-        itself as an intermediary body between
-        good & food service providers and customers.
+        Namba Food's delivery service positions itself as an intermediary body between goods and food service providers and customers.
       
       </p>
     </div>

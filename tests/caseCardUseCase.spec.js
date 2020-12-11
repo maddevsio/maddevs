@@ -19,7 +19,8 @@ describe('CardUseCase', () => {
 
   beforeEach(() => {
     wrapper = mount(CardUseCase, {
-      propsData: props
+      propsData: props,
+      stubs: ['client-only']
     });
   });
 
