@@ -9,7 +9,7 @@ const API_USER_ID = process.env.NODE_SENDPULSE_API_USER_ID;
 const API_KEY = process.env.NODE_SENDPULSE_API_KEY;
 const TOKEN_STORAGE = '/tmp/';
 
-async function call(command) {
+async function callCommand(command) {
   return new Promise((resolve, reject) => {
     exec(command, (err, stdout, stderr) => {
       if(err) {
@@ -92,9 +92,9 @@ router.post('/prismic-hook', (req, res) => {
 
   // Document is published or unpublished
   if (req.body.type === 'api-update' && !!req.body.documents && req.body.documents.length) {
-    call('npm run generate')
-      .then((stdout, stderr) => console.log(stdout, stderr))
-      .catch(err => console.log('error', err));
+    callCommand('npm run generate')
+      .then((stdout, stderr) => null)
+      .catch(err => null);
 
     res.status(200).json({
       status: 200,
