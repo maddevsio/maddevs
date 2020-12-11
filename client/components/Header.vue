@@ -1,11 +1,12 @@
 <template>
   <div class="header-wrapper">
-    <header ref="header" class="header">
-      <div class="container">
+    <div class="overlay" v-if="headerTransparent" ref="overlay"></div>
+    <header ref="header" class="header" :class="{'header-transparent': headerTransparent}">
+      <div class="container" ref="headerContainer">
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-7">
             <router-link :to="`/`" class="header__logo-icon">
-              <headerLogo class="header__header-logo" />
+              <headerLogo class="header__header-logo" :isCasePage="isCasePage"/>
             </router-link>
             <nav class="header__header-routes_links">
               <router-link @click.native="goToTopPage" exact to="/" class="header__navigation-link">About</router-link>
@@ -29,7 +30,7 @@
         </div>
       </div>
     </header>
-    <mobileHeader />
+    <mobileHeader/>
   </div>
 </template>
 
@@ -49,12 +50,59 @@ export default {
     return {
       buttonInnerText: 'Contact me',
       selectedPhone: null,
-      modalWindowName: 'contact-me-modal'
+      modalWindowName: 'contact-me-modal',
+      headerTransparent: false,
+      scrollTop: null,
+      isCasePage: false,
+      caseMoreButton: null,
+      caseHeader: null,
+      logoText: null
     };
+  },
+  created() {
+    if(this.$nuxt.$route.name === 'case-studies-namba-food') {
+      this.headerTransparent = true;
+      this.isCasePage = true;
+    } else {
+      this.headerTransparent = false;
+      this.isCasePage = false;
+    }
+  },
+  mounted() {
+    if(this.isCasePage) {
+      this.caseMoreButton = document.getElementsByClassName('case_more__button')[0];
+      this.caseHeader = document.getElementsByClassName('case_header')[0];
+      this.logoText = document.getElementsByClassName('header-logo-text')[0];
+
+      this.getScrollTop();
+      window.addEventListener('scroll', () => {
+        this.scrollHandler();
+      });
+    }
+  },
+  watch: {
+    '$route'() {
+      this.headerTransparent = false;
+      this.isCasePage = false;
+    }
   },
   methods: {
     goToTopPage() {
       window.scrollTo(0, 0);
+    },
+    getScrollTop() {
+      this.scrollTop = this.caseMoreButton.getBoundingClientRect().top - this.$refs.headerContainer.offsetHeight;
+    },
+    scrollHandler() {
+      if(this.isCasePage && window.innerWidth > 991) {
+        const opacity = 1.6 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.caseMoreButton.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
+        const opacityTextLogo = 0.9 - (this.$refs.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.$refs.overlay.offsetHeight;
+        this.$refs.overlay.style.opacity = opacity;
+        this.logoText.style.opacity = opacityTextLogo;
+      } else if(this.isCasePage && window.innerWidth < 991) {
+        const opacity = 1.7 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.caseMoreButton.getBoundingClientRect().height) - 60) / this.$refs.overlay.offsetHeight;
+        this.$refs.overlay.style.opacity = opacity;
+      }
     }
   }
 };
@@ -181,6 +229,34 @@ export default {
 
     @media screen and (max-width: 991px) {
       display: none;
+    }
+  }
+
+  .header-transparent {
+    background-color: transparent !important;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 40px;
+    padding: 11px 0;
+    position: fixed;
+    z-index: 2;
+    background-color: $bgcolor--black;
+    opacity: 0;
+    transition: opacity 0.6s;
+
+    @media screen and (max-width: 991px) {
+      height: 48px;
+      padding: 0;
+    }
+  }
+
+  .header-default {
+    background-color: $bgcolor--black !important;
+
+    &::before {
+      opacity: 0;
     }
   }
 

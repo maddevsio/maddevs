@@ -1,23 +1,61 @@
 <template>
-  <!-- Добавить цикл подключающий изображение на основе его имени в медиа дериктории взятое из родительского компонента -->
   <picture>
     <source
-      type='image/webp'
-    >
+      class="image"
+      :class="{'box-shadow': boxShadow}"
+      :srcset="[require(`../../assets/img/Cases/${pictureFolder}/webp/${fileName}.webp`) + ' ', require(`../../assets/img/Cases/${pictureFolder}/webp/${fileName}@2x.webp`) + ' 2x']"
+      type='image/webp'>
     <img
-      src=""
-      alt=""
-      loading="lazy"
+      class="image"
+      :class="{'box-shadow': boxShadow}"
+      :src="[require(`../../assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}.${fileExtension}`)]"
+      :srcset="[require(`../../assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}@2x.${fileExtension}`) + ' 2x']"
+      :alt="alt"
+      :loading="lazyLoading ? 'lazy' : ''"
     >
   </picture>
 </template>
 
+
 <script>
 export default {
-  name: 'Picture'
+  name: 'Picture',
+  props: {
+    pictureFolder: {
+      types: String,
+      default: ''
+    },
+    fileName: {
+      type: String,
+      default: ''
+    },
+    fileExtension: {
+      type: String,
+      default: ''
+    },
+    alt: {
+      type: String,
+      default: ''
+    },
+    lazyLoading: {
+      type: Boolean,
+      default: false
+    },
+    boxShadow: {
+      type: Boolean,
+      default: false
+    }
+  }
 };
 </script>
-s
-<style scoped>
+<style lang="scss" scoped>
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
+  .box-shadow {
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05), 0px 5.47001px 41.35px rgba(0, 0, 0, 0.1);
+  }
 </style>

@@ -1,5 +1,7 @@
 @import "../_vars";
+@import "grid";
 
 .case {
-  background: $bgcolor--white;
+  background: #fff;
+  font-feature-settings: 'zero' off, 'ordn' off, 'ss02' off, 'ss05' off;
 }

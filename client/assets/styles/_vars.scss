@@ -1,5 +1,6 @@
 // ---------- Background  ------------ //
 $bgcolor--white: #f5f7f9;
+$bgcolor--white-transparent: rgba(245, 247, 249, 0.5);
 $bgcolor--black: #111213;
 $bgcolor--grey: #96969C;
 $bgcolor--grey-light: #f2f2f2;
@@ -11,17 +12,25 @@ $bgcolor--project-blue: #0E1B27;
 $bgcolor--project-orange: #FF6A01;
 $bgcolor--black-light: #ffffff1a;
 $bgcolor--white-darken: #fcfcfd;
+$bgcolor--pink: #cc0a6a;
+$bgcolor--silver: #f4f4f4;
 
 // ---------- Text ------------ //
 $text-color--white: #f5f7f9;
+$text-color--white-primary: #ffffff;
 $text-color--white-darken: #fcfcfd;
 $text-color--black: #000;
+$text-color--black-cases: #101113;
+$text-color--quote-box: #404143;
 $text-color--black-lighter: #111213;
 $text-color--grey: #96969c;
 $text-color--grey-light: #f2f2f2;
+$text-color--grey-cases: #cfcfd0;
 $text-color--red: #ec1c24;
 $text-color--red-opacity: rgba(236, 28, 36, 0.5);
 $text-color--grey-form-placeholder: #6E6E73;
+$text-color--grey-team-list: #a0a0a1;
+$text-color--tech-label-black: #232323;
 $text-stroke--white: 1.5px #f2f2f2;
 $text-stroke--red: 1.5px #ec1c24;
 $text-stroke--black: 1.5px #000;
@@ -37,6 +46,8 @@ $border-color--grey-dark-transparent: rgba(150, 150, 156, 0.2);
 $border-color--grey-light: #f2f2f2;
 $border-color--grey-dark: #3b3b3b;
 $border-color--grey-form: #333333;
+$border-color--grey-cases: #d7dde1;
+$border-color--grey-20-percent: #cfcfd0;
 
 // ---------- Border radius ------------ //
 $form-border-radius: 7px;

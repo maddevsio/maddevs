@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="case_list">
     <slot></slot>
   </ul>
 </template>
@@ -10,6 +10,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  @import '../../assets/styles/cases/_mixins';
 
+  .case_list {
+    display: flex;
+    flex-direction: column;
+  }
 </style>
