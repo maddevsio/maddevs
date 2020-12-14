@@ -37,14 +37,17 @@
         /> -->
       </section>
       <section class="container_regular">
-        <!-- <List></List> -->
+        <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">The challenges</h3>
+        <List class="m-48_bottom media-m-24_bottom">
+          <ListDashItemBox v-for="(text, i) in theChallenges" :key="i">{{text}}</ListDashItemBox>
+        </List>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-12_bottom">SJMC and Mad Devs partnership</h2>
+        <h2 class="case_title_h2 m-96_top media-m-72_top m-12_bottom">SJMC software</h2>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Transferring a project to another software partner is never easy for all parties involved. So, let us introduce you to the new era of the interpretive centres. And walk you through the complexity of the SJMC project.
         </TextParagraph>
-        <h3 class="case_title_h3 m-12_bottom">SJMC and Mad Devs partnership</h3>
+        <h3 class="case_title_h3 m-12_bottom">Multimedia Management IT Brain</h3>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Personalized experience at your own speed and language
         </TextParagraph>
@@ -315,6 +318,84 @@
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Automated testing of MMIT Brain via custom emulators</h2>
+        <TextParagraph class="m-6_bottom">
+          Auto-testing of MMIT Brain can be categorized into two categories:
+        </TextParagraph>
+        <List class="m-24_bottom">
+          <ListItemDot>Two internal information systems synchronization.</ListItemDot>
+          <ListItemDot>End to end testing to ensure seamless user experience of thousands of SJMC visitors.</ListItemDot>
+        </List>
+        <TextParagraph class="m-72_bottom media-m-48_bottom">
+          Testing the accuracy of new content and feature deployment is challenged by 5000 km distance to SJMC. Thus our back-end developers developed two emulation software systems that enable Mad Devs to test MMIT Brain without accumulating additional travel expenses.
+        </TextParagraph>
+        <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">1. Internal information systems synchronization</h3>
+        <TextParagraph>
+          Emulator code tests the interaction of two independent information systems that control multimedia software and intelligent infrastructure integrations.
+        </TextParagraph>
+        <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
+          Internal information systems synchronization emulator makes the infrastructure control system recognize the emulated hardware as real.
+        </TextQuoteBox>
+        <TextParagraph class="m-24_bottom media-m-12_bottom">
+          For example, in case of emergency and water leakage, a smart building control system that controls electricity has to communicate the emergency to multimedia software through MMIT Brain and turn off all multimedia computers to avoid closure.
+        </TextParagraph>
+        <TextParagraph class="m-72_bottom media-m-48_bottom">
+          Without such an emulator, Mad Devs developers wouldn`t be able to look at MMIT Brain code and understand whether the Brain has transferred the command from one system to another. Without such an emulator, the team would have been clueless regarding whether the command was successfully executed.
+        </TextParagraph>
+        <h3 class="case_title_h3 case_numbered-title">2. End-to-end testing using emulators of mobile applications</h3>
+        <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
+          Mobile applications emulator enables SJMC to run all possible user experiences on all possible virtual multimedia sites.
+        </TextQuoteBox>
+        <TextParagraph class="m-96_bottom media-m-72_bottom">
+          All possible interactions with WATCHOUT site multimedia computers and Unity PC including touch screens, multiple users watching simultaneously, and switching audio and subtitles languages usually last a minimum of 6 hours. The emulator for end to end testing accomplishes the tests in just 20 minutes.
+        </TextParagraph>
+      </section>
+      <section class="container_regular">
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Mad Devs trip to SJMC</h2>
+      </section>
+      <section class="container_full">
+        <!-- <Picture
+          pictureFolder=""
+          fileName=""
+          fileExtension=""
+          alt=""
+        /> -->
+      </section>
+      <section class="container_regular">
+        <TextParagraph class="m-48_top media-m-24_top m-24_bottom media-m-12_bottom">
+          In February of 2020, right before the contract’s deadline, Mad Devs team of eight people came to the Сentre located near the village of Villers-Bretonneux (Somme) in northern France.
+        </TextParagraph>
+        <TextParagraph class="m-8_bottom">
+          Although the small scale version of the Сentre was built inside Mad Devs office, the team was pursuing the following goals:
+        </TextParagraph>
+        <List class="m-96_bottom media-m-72_bottom">
+          <ListItemDot>Understand the complexity of SJMC hardware and software in person.</ListItemDot>
+          <ListItemDot>Uncover the potential risks and problems.</ListItemDot>
+          <ListItemDot>Deploy technical debts and test the changes.</ListItemDot>
+          <ListItemDot>Deploy new content on big scale screens and test the changes.</ListItemDot>
+        </List>
+        <!-- Заменить фотографии -->
+        <ListTeam class="m-96_bottom media-m-72_bottom">
+          <ListTeamItem
+            v-for="(teamMember, i) in team"
+            :key="i"
+            :name="teamMember.name"
+            :position="teamMember.position"
+            :fileName="teamMember.fileName"
+            :fileExtension="teamMember.fileExtension"
+            :alt="teamMember.name"
+            pictureFolder="nambafood"
+          />
+        </ListTeam>
+      </section>
+      <section class="container_regular">
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Ongoing partnership</h2>
+        <TextParagraph class="m-24_bottom media-m-12_bottom">
+          According to the internal CSAT survey, 98% of Mad Devs' customers find the company's service great value for money, and most of them stay with us for 3+ years. SJMC is no exception.
+        </TextParagraph>
+        <TextParagraph class="m-96_bottom media-m-72_bottom">
+          We are honored to extend our partnership to improve SJMC visitors' experience by introducing the iPaOS application for children. Such applications offer kids engaging content which allows children to discover the centre and its resources through a series of games. Moreover, Mad Devs is going to develop a sophisticated content management system that eventually is going to simplify the deployment of new content and enable the managers of the SJMC to make the required changes with ease.
+        </TextParagraph>
+        <!-- Тут будет секция Testimonials -->
       </section>
     </section>
   </main>
@@ -334,6 +415,7 @@ import ListItemBoxCheckMark from '@/components/Cases/ListItemBoxCheckMark';
 import ListItemDot from '@/components/Cases/ListItemDot';
 import ListTechnologies from '@/components/Cases/ListTechnologies';
 import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem';
+import ListDashItemBox from '@/components/Cases/ListDashItemBox';
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
 
 export default {
@@ -350,7 +432,8 @@ export default {
     ListItemBoxCheckMark,
     ListItemDot,
     ListTechnologies,
-    ListTechnologiesItem
+    ListTechnologiesItem,
+    ListDashItemBox
   },
   name: 'SirJohnMonashCentre',
   data() {
@@ -365,6 +448,15 @@ export default {
         'Develop a reporting system.',
         'Test the deployment of new content.',
         'Set up system monitoring.'
+      ],
+      theChallenges: [
+        '100MB of Documentation and 1M+ lines of code required months of onboarding.',
+        'The unique nature of software in a truly one of a kind technologically advanced centre.',
+        '450 units of hardware that are connected to operate as a coherent solution that delivers content to SJMC visitors in a personalized manner.',
+        '5000 km between SJMC and Mad Devs office.',
+        'The lockdown caused by the Covid19 pandemic made it difficult to check the deploy updates onsite.',
+        'Orchestrating seamless experience for 110K visitors annually.',
+        'Cooperating and communicating with numerous vendors working at SJMC.'
       ],
       technologiesList: [
         {
@@ -427,6 +519,80 @@ export default {
           techName: 'Prometheus',
           className: 'devops-prometheus'
         }
+      ],
+      team: [
+        {
+          name: 'Kirill Zinchenko',
+          position: 'Project Manager',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Ruslan Kasymov',
+          position: 'Logistics Manager',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Aleksandr Zhitov',
+          position: 'QA Manager',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Sergey Boyko',
+          position: 'QA Manager',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Vlad Andreev',
+          position: 'DevOps Developer',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Dmitri Khalezin',
+          position: 'DevOps Developer',
+          fileName: 'dmitrii-khalezin',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Kirill Avdeev',
+          position: 'Back-end Developer',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Andrew Minkin',
+          position: 'Back-end Developer',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Aleksandr Astashov',
+          position: 'Back-end Developer',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Stanislav Shcherbinin',
+          position: 'Back-end Developer',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Pavel Pushkarev',
+          position: 'Mobile Developer',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Rustom Kulbatyrov',
+          position: 'Mobile Developer',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        }
       ]
     };
   }
@@ -437,5 +603,6 @@ export default {
 @import "../../assets/styles/cases/base";
 @import "../../assets/styles/cases/mixins";
 @import "../../assets/styles/cases/components";
+@import "../../assets/styles/cases/sir-john-monash-centre/styles";
 @import "../../assets/styles/cases/media";
 </style>

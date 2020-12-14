@@ -1,0 +1,11 @@
+.case {
+  &_numbered-title {
+    margin-left: 41px;
+  }
+
+  @media screen and (max-width: 768px) {
+    &_numbered-title {
+      margin-left: 30px;
+    }
+  }
+}
