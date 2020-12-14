@@ -9,7 +9,7 @@ describe('CaseStudies component', () => {
     {
       projectName: 'nambafood',
       logoImg: 'nambafoodColored',
-      link: 'https://blog.maddevs.io/namba-food-top-1-delivery-service-in-central-asia-3df8ca4d436d?source=friends_link&sk=1dd67cc82dad8e4fae756b3a4d47f121',
+      link: '/case-studies/namba-food',
       contributionWidgetColors: ['#ec1c24', '#96969c'],
       projectBackground: 'nambafoodBackground',
       projectColor: '#f8f7f6',
