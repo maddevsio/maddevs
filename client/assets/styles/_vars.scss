@@ -19,6 +19,7 @@ $bgcolor--silver: #f4f4f4;
 $text-color--white: #f5f7f9;
 $text-color--white-primary: #ffffff;
 $text-color--white-darken: #fcfcfd;
+$text-color--white-transparent: rgba(255, 255, 255, 0.7);
 $text-color--black: #000;
 $text-color--black-cases: #101113;
 $text-color--quote-box: #404143;
@@ -26,6 +27,7 @@ $text-color--black-lighter: #111213;
 $text-color--grey: #96969c;
 $text-color--grey-light: #f2f2f2;
 $text-color--grey-cases: #cfcfd0;
+$text-color--grey-pale: #707072;
 $text-color--red: #ec1c24;
 $text-color--red-opacity: rgba(236, 28, 36, 0.5);
 $text-color--grey-form-placeholder: #6E6E73;
@@ -48,6 +50,7 @@ $border-color--grey-dark: #3b3b3b;
 $border-color--grey-form: #333333;
 $border-color--grey-cases: #d7dde1;
 $border-color--grey-20-percent: #cfcfd0;
+$border-color--silver: #f4f4f4;
 
 // ---------- Border radius ------------ //
 $form-border-radius: 7px;

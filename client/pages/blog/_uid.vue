@@ -1,58 +1,49 @@
 <template>
   <div class="blog-post">
-    <div class="blog-post__introduction-container">
-      <h1 class="blog-post__blog-title title">{{ $prismic.asText(document.title) }}</h1>
-      <p class="blog-post__blog-sub-title">{{ $prismic.asText(document.subtitle) }}</p>
-      <div class="blog-post__post-info">
-        <div class="blog-post__author">
-          <img :src="document.author_image.url" :alt="$prismic.asText(document.author)" class="blog-post__author-image" v-if="document.author_image.url !== undefined">
-          <div class="blog-post__none-image" v-else></div>
-          <div class="blog-post__author-info">
-            <p class="blog-post__author-name">{{ $prismic.asText(document.author) }}</p>
-            <p class="blog-post__data-of-creation">
-              <span class="blog-post__created-at">{{ formattedDate }}</span>
-            </p>
+    <div class="blog-post__background" />
+    <div class="blog-post__inner-container">
+      <div class="blog-post__share">
+        <ShareNetwork
+          network="facebook"
+          :url="ogUrl"
+          :title="title"
+          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
+          target="_blank"
+        />
+        <ShareNetwork
+          network="twitter"
+          :url="ogUrl"
+          :title="title"
+          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
+          target="_blank"
+        />
+        <ShareNetwork
+          network="linkedin"
+          :url="ogUrl"
+          :title="title"
+          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
+          target="_blank"
+        />
+      </div>
+      <div class="blog-post__introduction-container">
+        <h1 class="blog-post__blog-title title">{{ $prismic.asText(document.title) }}</h1>
+        <p class="blog-post__blog-sub-title">{{ $prismic.asText(document.subtitle) }}</p>
+        <div class="blog-post__post-info">
+          <post-author :document="document"/>
+          <div class="blog-post__date-tag">
+            <div class="blog-post__date">{{ formattedDate }}</div>
+            <div class="blog-post__tag" v-if="tags.length">{{ tags[0] }}</div>
           </div>
         </div>
-        <div class="blog-post__share">
-          <ShareNetwork
-            network="twitter"
-            :url="ogUrl"
-            :title="title"
-            class="blog-post__share-link blog-post__share-link--twitter"
-            target="_blank"
-          />
-          <ShareNetwork
-            network="facebook"
-            :url="ogUrl"
-            :title="title"
-            class="blog-post__share-link blog-post__share-link--facebook"
-            target="_blank"
-          />
-          <ShareNetwork
-            network="linkedin"
-            :url="ogUrl"
-            :title="title"
-            class="blog-post__share-link blog-post__share-link--linkedin"
-            target="_blank"
-          />
-        </div>
+        <img :src="document.introduction_image.url" class="blog-post__introduction-image" v-if="document.introduction_image.url !== undefined">
+        <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
       </div>
-      <img :src="document.introduction_image.url" class="blog-post__introduction-image" v-if="document.introduction_image.url !== undefined">
-      <p class="blog-post__introduction-paragraph">{{ $prismic.asText(document.introduction_paragraph) }}</p>
+      <slices-block :slices="slices" class="blog-post__text-container"/>
     </div>
-    <div class="blog-post__table-of-content" v-if="headingsList.length !== 0">
-      <p class="blog-post__table-of-content-title">Table of content:</p>
-      <ul class="blog-post__table-of-content-list">
-        <li v-for="(heading, i) in headingsList" :key="i" class="blog-post__table-of-content-list-item" @click="scrollToHeading(heading.headingName)">{{ heading.textContent }}</li>
-      </ul>
-    </div>
-    <slices-block :slices="slices" class="blog-post__text-container"/>
-    <div v-if="recommendedPosts.length !== 0">
-      <p class="blog-post__recommended-title">Recommended posts:</p>
+    <div v-if="recommendedPosts.length !== 0" class="blog-post__recommended-posts">
       <div class="blog-post__recommended-posts-list">
         <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="blog-post__recommended-post">
-          <blog-widget :post="recommendedPost"></blog-widget>
+          <recommended-blog-widget :post="recommendedPost"/>
         </section>
       </div>
     </div>
@@ -64,14 +55,16 @@
 
 <script>
 import SlicesBlock from '@/components/Blog/SlicesBlock.vue';
-import BlogWidget from '@/components/Blog/BlogWidget.vue';
+import RecommendedBlogWidget from '@//components/Blog/RecommendedBlogWidget';
+import PostAuthor from '@/components/Blog/PostAuthor';
 
 export default {
   name: 'post',
   layout: 'default',
   components: {
     SlicesBlock,
-    BlogWidget
+    RecommendedBlogWidget,
+    PostAuthor
   },
   data() {
     return {
@@ -80,7 +73,8 @@ export default {
       ogUrl: '',
       featuredImage: '',
       headingsList: [],
-      buttonIsActive: false
+      buttonIsActive: false,
+      shareIcons: ['']
     };
   },
   head () {
@@ -106,6 +100,7 @@ export default {
     };
   },
   async asyncData({ $prismic, params, error }) {
+    console.log(params.uid, error);
     let recommendedPosts = [];
     try {
       // Query to get post content
@@ -125,7 +120,8 @@ export default {
         document: post.data,
         slices: post.data.body,
         formattedDate: Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(post.data.date)),
-        recommendedPosts: recommendedPosts
+        recommendedPosts: recommendedPosts,
+        tags: post.tags
       };
     } catch (e) {
       // Returns error page
@@ -139,7 +135,12 @@ export default {
 
     this.ogUrl = window.location.href;
     window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.shareButtonsScroll);
+    window.scroll();
     this.getAllHeadings();
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.shareButtonsScroll);
   },
   methods: {
     getAllHeadings() {
@@ -179,6 +180,20 @@ export default {
       } else {
         this.buttonIsActive = false;
       }
+    },
+    shareButtonsScroll() {
+      const shareButtons = document.querySelector('.blog-post__share');
+      if(window.pageYOffset < 650) {
+        shareButtons.style.cssText = 'position: absolute; top: 580px; left: -183px;';
+      } else if(window.pageYOffset > (
+        document.querySelector('.blog-post').offsetHeight
+          - (document.querySelector('.blog-post__recommended-posts') ? document.querySelector('.blog-post__recommended-posts').offsetHeight : 0)
+          - document.querySelector('.blog-post__share').offsetHeight - 100
+      )) {
+        shareButtons.style.cssText = 'position: absolute; bottom: -100px; top: auto; left: -183px;';
+      } else {
+        shareButtons.style.cssText = 'top: 100px';
+      }
     }
   }
 };
@@ -186,15 +201,28 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/socialNetworkIcons';
 
   .blog-post {
-    max-width: 1680px;
+    /*max-width: 1680px;*/
     margin: auto;
-    padding: 150px 250px 0;
-    background-color: $bgcolor--black;
+    /*padding: 150px 250px 0;*/
+    background-color: $text-color--white-primary;
+    position: relative;
+
+    &__background {
+      background-color: $bgcolor--black;
+      height: 683px;
+    }
+
+    &__inner-container {
+      max-width: 818px;
+      margin: -514px auto 0;
+      position: relative;
+    }
 
     &__blog-sub-title {
-      margin-bottom: 22px;
+      margin-bottom: 36px;
       font-family: 'Poppins-Regular', sans-serif;
       color: $text-color--grey;
       font-size: 20px;
@@ -205,115 +233,71 @@ export default {
 
     &__post-info {
       margin-top: 7px;
-      margin-bottom: 30px;
+      margin-bottom: 43px;
     }
 
-    &__post-info,
-    &__author {
+    &__post-info {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    &__author-info {
-      margin-left: 15px;
-    }
-
-    &__author-name {
-      color: $text-color--white;
-    }
-
-    &__created-at,
-    &__author-name {
-      display: block;
-      font-size: 15px;
-      font-family: 'Poppins-Regular', sans-serif;
-      line-height: 129%;
-      letter-spacing: -0.02em;
-    }
-
-    &__author-name {
-      margin-bottom: 4px;
-    }
-
-    &__author-image {
-      object-fit: cover;
-    }
-
-    &__author-image,
-    &__none-image {
-      width: 52px;
-      height: 52px;
-      border-radius: 100%;
-    }
-
-    &__none-image {
-      background-color: $bgcolor--black-light;
-    }
-
-    &__created-at {
-      color: $text-color--grey;
-    }
-
-    &__recommended-post {
-      width: 30%;
-      height: max-content;
-      margin-left: 20px;
-      padding: 10px;
-      border-radius: 3px;
-      background: $bgcolor--grey-light;
-      transition: 0.2s;
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &:hover {
-        background: #d7d7d7;
-      }
-    }
-
-    &__recommended-title {
-      margin-top: 65px;
-      margin-bottom: 30px;
-      font-size: 32px;
-      font-family: 'Poppins-Bold', sans-serif;
-      font-weight: 700;
-      color: $text-color--white;
-    }
-
-    &__recommended-posts-list {
+    &__date-tag {
       display: flex;
-      padding-bottom: 30px;
+      align-items: center;
+      font-size: 13px;
+      line-height: 22px;
+      font-family: 'Inter-Regular', sans-serif;
+
+      .blog-post__date {
+        color: $text-color--grey-pale;
+      }
+
+      .blog-post__tag {
+        color: $text-color--white-transparent;
+        background: #404143;
+        border-radius: 2px;
+        padding: 4px 16px;
+        margin-left: 24px;
+      }
     }
 
     &__blog-title {
-      font-size: 55px;
+      font-size: 52px;
+      line-height: 67px;
       color: $text-color--white;
     }
 
     &__share {
       display: flex;
-      margin-top: 20px;
+      position: fixed;
+      left: calc(50vw - 599px);
+      top: 750px;
+      flex-direction: column;
+      margin-top: 0;
     }
 
     &__share-link {
-      width: 23px;
-      height: 23px;
+      width: 33px;
+      height: 33px;
       display: block;
       background-repeat: no-repeat;
-      margin-left: 7px;
+      margin-bottom: 30px;
+      cursor: pointer;
 
-      &--linkedin {
-        background-image: url('../../assets/img/common/lindekin-icon.svg');
-      }
+      &.icon-wrapper {
 
-      &--twitter {
-        background-image: url('../../assets/img/common/twitter-icon.svg');
-      }
+        &__facebook-icon {
+          @include social-network-facebook
+        }
 
-      &--facebook {
-        background-image: url('../../assets/img/common/facebook-icon.svg');
+        &__twitter-icon {
+          @include social-network-twitter
+        }
+
+        &__linkedin-icon {
+          @include social-network-linkedin;
+        }
       }
     }
 
@@ -321,10 +305,10 @@ export default {
     &__table-of-content-list-item,
     &__table-of-content-title {
       margin: 25px 0;
-      font-family: 'Poppins-Regular', sans-serif;
-      color: $text-color--white;
-      font-size: 18px;
-      line-height: 129%;
+      font-family: 'Inter-Regular', sans-serif;
+      color: $text-color--black-cases;
+      font-size: 17px;
+      line-height: 28px;
       letter-spacing: -0.02em;
       white-space: pre-wrap;
     }
@@ -388,7 +372,8 @@ export default {
     }
 
     &__introduction-image {
-      width: 100%;
+      width: 120%;
+      margin-left: -10%;
       height: auto;
     }
 
@@ -404,11 +389,40 @@ export default {
 
       span,
       p {
-        color: $text-color--white;
+        color: $text-color--black-cases;
       }
     }
 
+    &__recommended-posts {
+      background-color: $bgcolor--silver;
+      margin-top: 100px;
+    }
+
+    &__recommended-posts-list {
+      padding: 100px;
+      display: flex;
+    }
+
     &__recommended-post {
+      width: 33.33333%;
+      height: max-content;
+      margin-left: 20px;
+      padding: 10px;
+      border-radius: 3px;
+      background: $bgcolor--grey-light;
+      transition: 0.2s;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover {
+        &,
+        /deep/ .tag {
+          background: #d7d7d7;
+        }
+      }
+
       /deep/ h2,
       /deep/ p {
         color: $text-color--black;
@@ -416,21 +430,74 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1080px) {
-    .blog-post {
-      padding: 150px 200px 0;
-    }
-  }
-
   @media only screen and (max-width: 1024px) {
     .blog-post {
-      padding: 150px 140px 0;
-    }
-  }
+      &__background {
+        display: none;
+      }
 
-  @media only screen and (max-width: 768px) {
-    .blog-post {
-      padding: 150px 2.8vw 0;
+      &__inner-container {
+        margin: 0;
+        max-width: none;
+      }
+
+      &__introduction-container {
+        padding-top: 120px;
+        background-color: $bgcolor--black;
+      }
+
+      &__introduction-image {
+        width: 100%;
+        margin: 0;
+        vertical-align: bottom;
+      }
+
+      &__blog-title {
+        padding: 0 24px;
+        font-size: 35px;
+        line-height: 45px;
+      }
+
+      &__post-info {
+        padding: 0 24px;
+        display: block;
+      }
+
+      &__date-tag {
+        justify-content: space-between;
+        margin-top: 19px;
+
+        .blog-post__date {
+          order: 2;
+        }
+
+        .blog-post__tag {
+          order: 1;
+          margin-left: 0;
+        }
+      }
+
+      &__text-container {
+        padding: 0 24px;
+      }
+
+      &__recommended-posts-list {
+        padding: 31px 24px;
+        display: block;
+      }
+
+      &__recommended-post {
+        width: calc(100% - 20px);
+        margin-bottom: 40px;
+
+        /deep/ .blog-post__author {
+          margin-top: 16px;
+        }
+
+        /deep/ .blog-post-meta {
+          display: none;
+        }
+      }
     }
   }
 </style>
