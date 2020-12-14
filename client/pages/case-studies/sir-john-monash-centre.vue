@@ -162,6 +162,160 @@
           The limited space of SJMC creates a challenge to be able to detect each visitors' location and continuously refresh a list of available content nearby.
         </TextParagraph>
       </section>
+      <section class="container_middle">
+        <!-- <Picture
+          pictureFolder=""
+          fileName=""
+          fileExtension=""
+          alt=""
+        /> -->
+      </section>
+      <section class="container_regular">
+        <div class="case_column-container m-56_bottom media-m-24_bottom">
+          <div class="case_column-item">
+            <h4 class="case_title_h4 m-16_bottom">110,000 visitors</h4>
+            <TextParagraph>
+              On an annual basis move throughout the centre.
+            </TextParagraph>
+          </div>
+          <div class="case_column-item">
+            <h4 class="case_title_h4 m-16_bottom">
+              150 Bluetooth beacons
+            </h4>
+            <TextParagraph>
+              Determine the location of each smartphone to deliver the right content at the right time.
+            </TextParagraph>
+          </div>
+        </div>
+      </section>
+      <section class="container_regular">
+        <h2 class="case_title_h2 m-48_bottom media-m-24_bottom">Key goals for Mad Devs</h2>
+        <List class="m-96_bottom media-m-48_bottom">
+          <ListItemBoxCheckMark v-for="(text, i) in keyGoalsList" :key="i">
+            {{text}}
+          </ListItemBoxCheckMark>
+        </List>
+        <h3 class="case_title_h3 m-48_bottom media-m-24_bottom">Technology stack</h3>
+        <ListTechnologies class="m-107_bottom media-m-48_bottom">
+          <ListTechnologiesItem
+            v-for="(technologiesItem, i) in technologiesList"
+            :key="i"
+            :techName="technologiesItem.techName"
+            :className="technologiesItem.className"
+          />
+        </ListTechnologies>
+        <h3 class="case_title_h3 m-12_bottom">Custom small-scale version of SJMC in Mad Devs office</h3>
+        <TextParagraph class="m-24_bottom media-m-12_bottom">
+          Thousands of kilometers between SJMC and Mad Devs office required a unique approach to engineering partnership.
+        </TextParagraph>
+        <TextParagraph class="m-48_bottom media-m-24_bottom">
+          After purchasing the required equipment and reading code and documentation, in one month after understanding the complexity of SJMC, Mad Devs DevOps and back-end engineers have built a custom small-scale version of the SJMC complex multimedia environment. Thus, testing and deploying new content and changes in the MMIT Brain became possible even with kilometers away from real SJMC.
+        </TextParagraph>
+      </section>
+      <section class="container_full">
+        <!-- <Picture
+          pictureFolder=""
+          fileName=""
+          fileExtension=""
+          alt=""
+        /> -->
+      </section>
+      <section class="container_regular">
+        <h3 class="case_title_h3 m-72_top media-m-48_top m-12_bottom">Technical debt</h3>
+        <TextParagraph class="m-24_bottom media-m-12_bottom">
+          Although the previous vendors have developed incredible software, an independent organization prepared a detailed audit and evaluated deficiencies or areas for improvement.
+        </TextParagraph>
+        <TextParagraph class="m-72_bottom media-m-48_bottom">
+          The complexity of the system raises particular challenges for the Mad Devs team, as it had to submerge themselves into the full comprehensiveness of the MMIT Brain solution to be able to improve it. It took our team a month of onboarding and reading documentation before we could even fix a bug.
+        </TextParagraph>
+        <h3 class="case_title_h3 m-12_bottom">Code refactoring and optimization</h3>
+        <TextParagraph class="m-24_bottom media-m-12_bottom">
+          Refactoring SJMC code and covering it with the unit and integration tests improved the stability and usability of both mobile applications and MMIT Brain.
+        </TextParagraph>
+        <TextParagraph class="m-72_bottom media-m-48_bottom">
+          On top of that, by establishing an efficient testing process we significantly increased iOS and Android applications' 40% test coverage that ultimately prevented defect leakage. Moreover, after fighting 1000+ bugs and optimizing applications to support the latest mobile operating systems, Mad Devs engineers successfully finished the technical debt on time and have planned the deployment of the changes on site.
+        </TextParagraph>
+        <h3 class="case_title_h3 m-12_bottom">Analytics and user-friendly reports</h3>
+        <TextParagraph class="m-48_bottom media-m-24_bottom">
+          SJMC extensive data gathered from the Multimedia IT System is organized into user-friendly reports by Analytics feature. Such reports enabled the centre’s managers to easily track performance and report them directly to stakeholders.
+        </TextParagraph>
+      </section>
+      <section class="container_middle">
+        <!-- <Picture
+          pictureFolder=""
+          fileName=""
+          fileExtension=""
+          alt=""
+        /> -->
+      </section>
+      <section class="container_regular">
+        <TextParagraph class="m-48_top media-m-24_top m-8_bottom">
+          The analytics show the following metrics:
+        </TextParagraph>
+        <List class="m-107_bottom media-m-48_bottom">
+          <ListItemDot>Number of school groups visited.</ListItemDot>
+          <ListItemDot>Number of students visited.</ListItemDot>
+          <ListItemDot>Average visit time.</ListItemDot>
+          <ListItemDot>Average time spent on SJMC experience.</ListItemDot>
+          <ListItemDot>Popular stands by analyzing the duration of visitors listening/watching/interacting with content.</ListItemDot>
+          <ListItemDot>Average time visitors spend in each SJMC zone.</ListItemDot>
+          <ListItemDot>Detect popular stands by connection to them and by the length of listening.</ListItemDot>
+        </List>
+      </section>
+      <section class="container_regular">
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">SJMC System monitoring</h2>
+        <TextParagraph>
+          System monitoring is a proactive method to improve the quality of SJMC software and hardware by gathering data from 6 servers and 100+ BRIX multimedia computers highlighting areas that might need Mad Devs engineers' attention.
+        </TextParagraph>
+        <TextQuote class="m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom">
+          Sophisticated system monitoring is the fight life of defense against downtime.
+        </TextQuote>
+        <h3 class="case_title_h3 m-12_bottom">Grafana + Prometheus</h3>
+        <TextParagraph class="m-48_bottom media-m-24_bottom">
+          To achieve the maximum observability of the SJMC hardware Grafana, was used to build all the graphs of the current state. It enabled the Mad Devs team to configure the reports and alerts if any of the system components fails or is under high load or in case of any other problem.
+        </TextParagraph>
+      </section>
+      <section class="container_middle">
+        <!-- <Picture
+          pictureFolder=""
+          fileName=""
+          fileExtension=""
+          alt=""
+        /> -->
+      </section>
+      <section class="container_regular">
+        <TextParagraph class="m-72_bottom media-m-48_bottom">
+          Prometheus acts as the storage backend and exposes a wide variety of metrics gathered from 6 servers while Grafana acts as a visualization layer and works as the interface for analysis and visualization.
+        </TextParagraph>
+        <h3 class="case_title_h3 m-12_bottom">Elasticsearch+Kibana+Logstash</h3>
+        <TextParagraph class="m-48_bottom media-m-24_bottom">
+          Logstash ingests, transforms, and ships SJMC logging data from 100+ BRIX (multimedia computers). Previously unstructured logging data was scattered across hundreds of folders and wasn't properly monitored, which ultimately caused breakages and deterioration of expensive hardware. Now Logstash collects and transforms logging data by sending it to Elasticsearch. Elasticsearch enables SJMC to store, search, and analyze logged data with ease at scale.
+        </TextParagraph>
+      </section>
+      <section class="container_middle">
+        <!-- <Picture
+          pictureFolder=""
+          fileName=""
+          fileExtension=""
+          alt=""
+        /> -->
+      </section>
+      <section class="container_regular">
+        <TextParagraph class="m-72_bottom media-m-48_bottom">
+          Kibana pulls up logged data and creates user-friendly visualizations with charts, graphs, heatmaps, and more. It is easy to understand solutions to manage SJMC hardware in a single dashboard.
+        </TextParagraph>
+        <h3 class="case_title_h3 m-12_bottom">Continuous integration and continuous delivery</h3>
+        <TextParagraph class="m-72_bottom media-m-48_bottom">
+          Continious integration and continuous delivery (CI/CD) shortens the feedback cycle and allows Mad Devs engineers to minimize risks and increase productivity by configuring CI/CD for autotests running and automatic deployment.
+        </TextParagraph>
+        <h3 class="case_title_h3 m-12_bottom">Sentry</h3>
+        <TextParagraph class="m-96_bottom media-m-72_bottom">
+          Integration of Sentry provides the Mad Devs team with automated error tracking and shows us every fault that happens with the SJMC MMIT Brain by organizing its logs. Sentry enables the Mad Devs team to identify, prioritize, and reproduce each issue.
+        </TextParagraph>
+      </section>
+      <section class="container_regular">
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Automated testing of MMIT Brain via custom emulators</h2>
+      </section>
     </section>
   </main>
 </template>
@@ -198,7 +352,84 @@ export default {
     ListTechnologies,
     ListTechnologiesItem
   },
-  name: 'SirJohnMonashCentre'
+  name: 'SirJohnMonashCentre',
+  data() {
+    return {
+      keyGoalsList: [
+        'Understand the complexity of MMIT Brain software.',
+        'Build a small scale version of SJMC experience in 1 month.',
+        'Finish technical debt conducted by an independent auditor.',
+        'Cover the code with unit and integration tests.',
+        'Build a framework for automating E2E tests.',
+        'Deploy technical debt changes and improvements on site.',
+        'Develop a reporting system.',
+        'Test the deployment of new content.',
+        'Set up system monitoring.'
+      ],
+      technologiesList: [
+        {
+          techName: 'Go',
+          className: 'backend-go'
+        },
+        {
+          techName: 'Swift',
+          className: 'mobile-swift'
+        },
+        {
+          techName: 'Java for Android',
+          className: 'mobile-java'
+        },
+        {
+          techName: 'Unity',
+          className: 'other-unity'
+        },
+        {
+          techName: 'AWS',
+          className: 'infrastructure-aws'
+        },
+        {
+          techName: 'CodeCommit',
+          className: 'infrastructure-codecommit'
+        },
+        {
+          techName: 'Windows 10',
+          className: 'other-windows'
+        },
+        {
+          techName: 'iOS & Android',
+          className: 'mobile-ios-android case_technologies-item__mobile-ios-android'
+        },
+        {
+          techName: 'Ubuntu',
+          className: 'other-ubuntu'
+        },
+        {
+          techName: 'Ansible',
+          className: 'devops-ansible'
+        },
+        {
+          techName: 'Sentry',
+          className: 'devops-sentry-dark'
+        },
+        {
+          techName: 'Elasticsearch',
+          className: 'devops-elastic'
+        },
+        {
+          techName: 'Logstash',
+          className: 'devops-logstash'
+        },
+        {
+          techName: 'Kibana',
+          className: 'devops-kibana'
+        },
+        {
+          techName: 'Prometheus',
+          className: 'devops-prometheus'
+        }
+      ]
+    };
+  }
 };
 </script>
 
