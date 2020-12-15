@@ -60,7 +60,7 @@ export default {
     };
   },
   created() {
-    if(this.$nuxt.$route.name === 'case-studies-namba-food') {
+    if(this.$nuxt.$route.path.includes('/case-studies/')) {
       this.headerTransparent = true;
       this.isCasePage = true;
     } else {
