@@ -280,6 +280,11 @@ video {
     display: none!important;
     -webkit-appearance: none;
   }
+
+  &::-webkit-media-controls-container {
+    display: none!important;
+    -webkit-appearance: none;
+  }
 }
 
 // --------------- Global media styles ---------------- //
