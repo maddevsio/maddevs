@@ -70,7 +70,7 @@ export default {
 		&__main-title {
 			margin-bottom: 43px;
 			font-size: 62px;
-			font-family: 'Poppins-Bold', sans-serif;
+			font-family: 'Poppins', sans-serif;
       font-weight: 700;
 			line-height: 120%;
 			letter-spacing: -1px;
@@ -165,7 +165,7 @@ export default {
 	}
 
   @media screen and (max-width: 767px) {
-    .footer { 
+    .footer {
       &__main-title {
         font-size: 45px;
       }
@@ -184,7 +184,7 @@ export default {
       }
     }
 	}
-	
+
 	@media only screen and (max-width: 578px) {
 		.gdpr,
 		.privacy,

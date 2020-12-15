@@ -112,7 +112,7 @@ export default {
 			font-size: 16px;
 			line-height: 24px;
 			letter-spacing: -0.02em;
-			font-family: 'Poppins-Regular', sans-serif;
+			font-family: 'Poppins', sans-serif;
 		}
 
 		&__contact-title-flag {
@@ -134,7 +134,7 @@ export default {
       font-size: 34px;
       line-height: 100%;
       font-weight: 600;
-			font-family: 'Poppins-Medium', sans-serif;
+			font-family: 'Poppins', sans-serif;
 			letter-spacing: -1px;
 			border-bottom: 1px solid $text-color--red-opacity;
 			text-decoration: none;
@@ -258,7 +258,7 @@ export default {
           margin-bottom: 0;
         }
 			}
-			
+
 			&__messenger-telegram {
 				margin-left: 2px;
 			}

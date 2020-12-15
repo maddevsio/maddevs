@@ -49,7 +49,7 @@ exports[`FAQ page renders correctly 1`] = `
           >
             long-term
           </span>
-           projects. 
+           projects.
       
         </p>
          
@@ -105,7 +105,7 @@ exports[`FAQ page renders correctly 1`] = `
           >
             ultra-fast
           </span>
-           MVPs. 
+           MVPs.
       
         </p>
          
@@ -370,7 +370,7 @@ exports[`FAQ page renders correctly 1`] = `
             class="faq__list"
           >
             
-          Text message via 
+          Text message via
           
             <a
               class="faq__link faq__link"
@@ -379,7 +379,7 @@ exports[`FAQ page renders correctly 1`] = `
             >
               Facebook Messenger
             </a>
-            , 
+            ,
           
             <a
               class="faq__link faq__link"
@@ -388,7 +388,7 @@ exports[`FAQ page renders correctly 1`] = `
             >
               Telegram
             </a>
-            , 
+            ,
           
             <a
               class="faq__link faq__link"
@@ -397,7 +397,7 @@ exports[`FAQ page renders correctly 1`] = `
             >
               Whatsapp
             </a>
-            , 
+            ,
           or 
             <a
               class="faq__link faq__link"

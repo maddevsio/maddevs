@@ -70,7 +70,7 @@ export default {
     &-label {
       margin-top: 1px;
       color: $text-color--grey;
-      font-family: 'Poppins-Regular', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 22px;
       line-height: 24px;
       letter-spacing: -0.02em;

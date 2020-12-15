@@ -20,7 +20,7 @@ export default {
   .item-title {
     margin-bottom: 24px;
     font-size: 40px;
-    font-family: 'Poppins-Bold', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 120%;
     letter-spacing: -1px;
     color: $text-color--white;

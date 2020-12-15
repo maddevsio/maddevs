@@ -191,7 +191,7 @@ export default {
   color: $text-color--white
 
 .filter-title
-  font-family: 'Poppins-Bold', sans-serif
+  font-family: 'Poppins', sans-serif
   font-weight: 700
 
 .blog-description
@@ -254,13 +254,13 @@ export default {
   border: 1px solid $border-color--grey
   transition: 0.2s
   text-align: center
-  font-family: 'Poppins-Regular', sans-serif
+  font-family: 'Poppins', sans-serif
 
 .reset-filter
   width: 100%
   margin-top: 10px
   padding: 8px 7px
-  font-family: 'Poppins-Bold', sans-serif
+  font-family: 'Poppins', sans-serif
   font-weight: 700
   background-color: $bgcolor--red
   border: none

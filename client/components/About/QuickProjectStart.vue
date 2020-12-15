@@ -134,7 +134,7 @@ export default {
   }
 
   &__title {
-    font-family: 'Poppins-Bold', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 32px;
@@ -145,7 +145,7 @@ export default {
 
   &__description,
   &__button {
-    font-family: 'Poppins-Regular', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   &__description {

@@ -39,7 +39,7 @@ export default {
       h1 {
         margin-bottom: 10px;
         font-size: 18px;
-        font-family: 'Poppins-Bold', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 700;
         color: $text-color--white;
       }
@@ -52,7 +52,7 @@ export default {
 
       p {
         font-size: 16px;
-        font-family: 'Poppins-Regular', sans-serif;
+        font-family: 'Poppins', sans-serif;
         color: $text-color--grey;
       }
     }
