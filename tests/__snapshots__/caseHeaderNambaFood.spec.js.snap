@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header renders correctly 1`] = `
+exports[`HeaderNambaFood renders correctly 1`] = `
 <section
   class="case_header"
 >
@@ -24,7 +24,7 @@ exports[`Header renders correctly 1`] = `
   />
    
   <h1
-    class="case_title"
+    class="case_header-title"
   >
     Namba Food 
     <br />
@@ -40,7 +40,7 @@ exports[`Header renders correctly 1`] = `
   </h1>
    
   <button
-    class="case_more__button"
+    class="case_more-button case_more__button"
     type="button"
   >
     Read our case studies ↓

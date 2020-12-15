@@ -1,13 +1,13 @@
 import {
   mount
 } from '@vue/test-utils';
-import Header from '@/components/Cases/Header';
+import HeaderNambaFood from '@/components/Cases/HeaderNambaFood';
 
-describe('Header', () => {
+describe('HeaderNambaFood', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(Header);
+    wrapper = mount(HeaderNambaFood);
   });
 
   // ------ IMPORTANT ----- //

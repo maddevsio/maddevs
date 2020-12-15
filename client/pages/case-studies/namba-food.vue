@@ -1,6 +1,6 @@
 <template>
   <main class="main case">
-    <Header/>
+    <HeaderNambaFood />
     <section class="case_body" ref="caseBody">
       <div class="case_animation_block"></div>
       <section class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom">
@@ -382,7 +382,7 @@
 </template>
 
 <script>
-import Header from '@/components/Cases/Header';
+import HeaderNambaFood from '@/components/Cases/HeaderNambaFood';
 import Footer from '@/components/Cases/Footer';
 import TextParagraph from '@/components/Cases/TextParagraph';
 import TextQuote from '@/components/Cases/TextQuote';
@@ -409,7 +409,7 @@ import Swiper from '@/components/Cases/Swiper';
 
 export default {
   components: {
-    Header,
+    HeaderNambaFood,
     TextParagraph,
     TextQuote,
     TextQuoteBox,
