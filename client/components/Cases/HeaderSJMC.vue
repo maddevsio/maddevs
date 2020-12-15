@@ -5,7 +5,7 @@
       Your browser does not support the video tag.
     </video> -->
     <div class="case_logotype sjmc-header"></div>
-    <h1 class="case_header-title">Sir John Monash Centre’s <br> case</h1>
+    <h1 class="case_header-title">Sir John Monash <br class="case_mobile-break"> Centre’s <br class="case_desktop-break"> case</h1>
     <button class="case_play-button" type="button">
       <div class="case_play-icon"></div>
       View video about SJMC
@@ -67,6 +67,34 @@ export default {
 
   &_more__button {
     background-color: $bgcolor--gold;
+  }
+
+  &_mobile-break {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    &_logotype {
+      width: 149.12px;
+      height: 65.92px;
+      margin-bottom: 27px;
+    }
+
+    &_play-button {
+      margin-top: 25px;
+    }
+
+    &_play-icon {
+      margin-right: 11px
+    }
+
+    &_mobile-break {
+      display: block;
+    }
+
+    &_desktop-break {
+      display: none;
+    }
   }
 }
 </style>
