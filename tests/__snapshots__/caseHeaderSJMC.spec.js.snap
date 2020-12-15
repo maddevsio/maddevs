@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderSJMC renders correctly 1`] = `
+<section
+  class="case_header"
+>
+  <div
+    class="case_logotype sjmc-header"
+  />
+   
+  <h1
+    class="case_header-title"
+  >
+    Sir John Monash 
+    <br
+      class="case_mobile-break"
+    />
+     Centre’s 
+    <br
+      class="case_desktop-break"
+    />
+     case
+  </h1>
+   
+  <button
+    class="case_play-button"
+    type="button"
+  >
+    <div
+      class="case_play-icon"
+    />
+    
+    View video about SJMC
+  
+  </button>
+   
+  <button
+    class="case_more-button case_more__button"
+    type="button"
+  >
+    Read our case studies ↓
+  </button>
+</section>
+`;
