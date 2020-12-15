@@ -67,7 +67,7 @@ export default {
     }
 
     p, span {
-      font-family: 'Poppins-Regular', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     span {

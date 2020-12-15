@@ -4,7 +4,7 @@ body {
   min-width: 320px;
   transition: all .4s ease;
   background-color: #111213;
-  font-family: 'Poppins-Regular', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-feature-settings: 'zero' on, 'ordn' on, 'ss02' on, 'ss05' on;
 }
 
@@ -50,42 +50,42 @@ main {
   top: 0;
 }
 
+/* poppins-400normal - latin */
 @font-face {
-  font-family: 'Poppins-Regular';
+  font-family: 'Poppins';
   font-style: normal;
+  font-display: swap;
   font-weight: 400;
-  src: local(''),
-  url('../fonts/Poppins/poppins-v15-latin-regular.eot'),
-  url('../fonts/Poppins/poppins-v15-latin-regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Poppins/poppins-v15-latin-regular.woff2') format('woff2'),
-  url('../fonts/Poppins/poppins-v15-latin-regular.woff') format('woff'),
-  url('../fonts/Poppins/poppins-v15-latin-regular.ttf') format('truetype'),
-  url('../fonts/Poppins/poppins-v15-latin-regular.svg#Poppins') format('svg');
+  src:
+    url('../fonts/Poppins/poppins-latin-400.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Poppins/poppins-latin-400.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/Poppins/poppins-latin-400.otf') format('otf'); /* Fancy Font Features */
 }
 
+/* poppins-600normal - latin */
+/* Get a problem with this font weight - can't add font-features for it. HAve removed woff2 and woff formats and includes
+  font form Google-Font service. Doesn't do it for other font-weight - they are good;
+*/
 @font-face {
-  font-family: 'Poppins-Medium';
+  font-family: 'Poppins';
   font-style: normal;
+  font-display: swap;
   font-weight: 600;
-  src: local(''),
-  url('../fonts/Poppins/poppins-v15-latin-600.eot'),
-  url('../fonts/Poppins/poppins-v15-latin-600.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Poppins/poppins-v15-latin-600.woff2') format('woff2'),
-  url('../fonts/Poppins/poppins-v15-latin-600.woff') format('woff'),
-  url('../fonts/Poppins/poppins-v15-latin-600.ttf') format('truetype'),
-  url('../fonts/Poppins/poppins-v15-latin-600.svg#Poppins') format('svg');
+  src:
+    url('../fonts/Poppins/poppins-latin-600.ttf') format('ttf'),
+    url('../fonts/Poppins/poppins-latin-600.otf') format('otf');
 }
+
+/* poppins-700normal - latin */
 @font-face {
-  font-family: 'Poppins-Bold';
+  font-family: 'Poppins';
   font-style: normal;
+  font-display: swap;
   font-weight: 700;
-  src: local(''),
-  url('../fonts/Poppins/poppins-v15-latin-700.eot'),
-  url('../fonts/Poppins/poppins-v15-latin-700.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Poppins/poppins-v15-latin-700.woff2') format('woff2'),
-  url('../fonts/Poppins/poppins-v15-latin-700.woff') format('woff'),
-  url('../fonts/Poppins/poppins-v15-latin-700.ttf') format('truetype'),
-  url('../fonts/Poppins/poppins-v15-latin-700.svg#Poppins') format('svg');
+  src:
+    url('../fonts/Poppins/poppins-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Poppins/poppins-latin-700.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/Poppins/poppins-latin-700.otf') format('otf'); /* Fancy Font Features */
 }
 
 @font-face {
@@ -100,14 +100,4 @@ main {
   font-weight: 400;
   src: url('../fonts/Inter/Inter-Italic.woff2') format('woff2'), url('../fonts/Inter/Inter-Italic.woff') format('woff');
   font-display: auto;
-}
-
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-  url('../fonts/IBMPlexMono/IBMPlexMono.woff2') format('woff2'),
-  url('../fonts/IBMPlexMono/IBMPlexMono.woff') format('woff'),
-  url('../fonts/IBMPlexMono/IBMPlexMono.ttf') format('truetype');
 }

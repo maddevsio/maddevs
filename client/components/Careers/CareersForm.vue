@@ -210,7 +210,7 @@ export default {
     /deep/ .ui-radio-buttons {
       &::after {
         content: 'roles.';
-        font-family: 'Poppins-Regular', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 22px;
         line-height: 24px;
         letter-spacing: -0.02em;
@@ -253,7 +253,7 @@ export default {
   }
 
   &__form-description {
-    font-family: 'Poppins-Regular', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: $text-color--black-lighter;
     font-weight: 500;
 
@@ -303,7 +303,7 @@ export default {
   &__form-input,
   &__form-list-item {
     position: relative;
-    font-family: 'Poppins-Regular', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 22px;
     letter-spacing: -0.02em;
   }

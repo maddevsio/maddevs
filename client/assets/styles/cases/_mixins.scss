@@ -2,7 +2,7 @@
 @import "./icons";
 
 @mixin title($color, $size, $spacing) {
-  font-family: Poppins-Medium, sans-serif;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-feature-settings: 'zero' on, 'ordn' on, 'ss02' on, 'ss05' on;
 

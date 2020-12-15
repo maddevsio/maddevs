@@ -113,7 +113,7 @@ export default {
   &__description {
     text-align: center;
   }
-  
+
   &__main-title {
     @include h2_title;
     width: max-content;
@@ -123,7 +123,7 @@ export default {
 
   &__description {
     width: 680px;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins';
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.02em;
@@ -153,11 +153,11 @@ export default {
 
   @media only screen and (max-width: 834px) {
     padding-bottom: 82px;
-    
+
     &__text-content {
       margin-bottom: 20px;
     }
-       
+
     &__customers-list {
       grid-template-columns: repeat(5, 1fr);
     }

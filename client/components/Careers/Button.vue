@@ -16,7 +16,7 @@ export default {
   methods: {
     callback(e) {
       if (this.$props.disabled === false) {
-        this.$emit('click', e); 
+        this.$emit('click', e);
       }
     }
   }
@@ -31,7 +31,7 @@ export default {
   background-color: $button-bgcolor--red;
   color: $text-color--white;
   font-size: 16px;
-  font-family: 'Poppins-Regular', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 24px;
   letter-spacing: -0.02em;
   border-radius: 2px;

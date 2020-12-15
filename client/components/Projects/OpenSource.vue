@@ -95,7 +95,7 @@ export default {
   &__description,
   &__paragraph,
   &__github-link {
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins';
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.02em;
@@ -276,7 +276,7 @@ export default {
 
   @media only screen and (max-width: 834px) {
     padding-bottom: 80px;
-    
+
     &__top-text-content {
       margin-bottom: 30px;
     }
@@ -290,7 +290,7 @@ export default {
     &__github-wrap {
       margin-right: 0;
     }
-    
+
     &__github-icon,
     &__descktop-break {
       display: none;
