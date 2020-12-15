@@ -1,7 +1,8 @@
 <template>
   <main class="main case">
-    <Header/>
+    <HeaderSJMC />
     <section class="case_body">
+      <div class="case_animation_block"></div>
       <section class="container_regular">
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           Sir John Monash Centre (SJMC) tells the Australian and New Zealand army corps’ story of the Western Front in the words of those who served.
@@ -402,6 +403,7 @@
 </template>
 
 <script>
+import HeaderSJMC from '@/components/Cases/HeaderSJMC';
 import TextParagraph from '@/components/Cases/TextParagraph';
 import TextQuote from '@/components/Cases/TextQuote';
 import TextQuoteBox from '@/components/Cases/TextQuoteBox';
@@ -420,6 +422,7 @@ import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
 
 export default {
   components: {
+    HeaderSJMC,
     TextParagraph,
     TextQuote,
     TextQuoteBox,
