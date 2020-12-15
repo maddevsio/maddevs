@@ -72,7 +72,8 @@ export default {
   @import '../../assets/styles/_vars';
 
   .blog-post {
-    color: $text-color--white;
+    color: $text-color--black;
+    text-decoration: none;
 
     p {
       margin-top: 5px;

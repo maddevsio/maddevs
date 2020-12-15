@@ -1,31 +1,44 @@
 <template>
-  <section class="home container">
-    <div class="head-content">
-      <h1 class="blog-title title">
-        {{ homepageContent.headline }}
-      </h1>
-      <p class="blog-description title-md">{{ homepageContent.description }}</p>
-    </div>
+  <section class="home">
     <div class="body-content">
-      <div class="posts" v-if="posts && homepageContent">
-        <div v-if="posts.length !== 0" class="blog-main">
-          <section v-for="post in posts" :key="post.id" v-bind:post="post" class="blog-post-wrapper">
-            <blog-widget :post="post"></blog-widget>
-          </section>
-        </div>
-        <div v-else class="blog-main">
-          <p>No Posts published at this time.</p>
+      <div v-if="posts.length">
+        <featured-post :post="featuredPost" v-if="featuredPost" class="container"/>
+      </div>
+      <div class="latest-posts" v-if="posts && homepageContent">
+        <div class="container">
+          <div v-if="posts.length !== 0" class="latest-posts__wrapper">
+            <section v-for="post in posts" :key="post.id" :post="post" class="latest-posts__single-post">
+              <div class="single-post__wrapper">
+                <recommended-blog-widget :post="post"/>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
-      <div class="filter">
-        <p class="filter-title paragraph">Filter by tags:</p>
-        <ul class="filter-list" v-for="(tag, i) in tags" :key="i">
-          <li class="filter-item">
-            <input type="radio" :id="tag.inputId" name="Tag" class="radio-input">
-            <label :for="tag.inputId" class="filter-label" @click="getPostsByTag(tag.tagName)">{{ tag.tagName }}</label>
-          </li>
-        </ul>
-        <button class="reset-filter" @click="resetFilter()" v-if="filterIsActive">Reset filter</button>
+      <div class="customer-university">
+        <h1>Customer University</h1>
+      </div>
+      <div class="filtered-posts" v-if="posts.length">
+        <div class="container">
+          <div class="filter">
+            <ul class="filter-list">
+              <li class="filter-item__wrapper" v-for="(tag, i) in tags" :key="i">
+                <div class="filter-item">
+                  <input type="radio" :id="tag.inputId" name="Tag" class="radio-input">
+                  <label :for="tag.inputId" class="filter-label" @click="getPostsByTag(tag.tagName)">{{ tag.tagName }}</label>
+                </div>
+              </li>
+            </ul>
+            <button class="reset-filter" @click="resetFilter()" v-if="filterIsActive">Reset filter</button>
+          </div>
+          <div v-if="filteredPosts.length !== 0" class="filtered-posts__wrapper">
+            <section v-for="post in filteredPosts" :key="post.id" :post="post" class="filtered-posts__single-post">
+              <div class="single-post__wrapper">
+                <recommended-blog-widget :post="post"/>
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -33,19 +46,27 @@
 
 <script>
 import BlogWidget from '@/components/Blog/BlogWidget.vue';
+import RecommendedBlogWidget from '../../components/Blog/RecommendedBlogWidget';
+import FeaturedPost from '../../components/Blog/FeaturedPost';
+
+const POSTS_PAGE_SIZE = 3;
 
 export default {
   name: 'Blog',
   layout: 'default',
   components: {
-    BlogWidget
+    BlogWidget,
+    FeaturedPost,
+    RecommendedBlogWidget
   },
   data() {
     return {
       homepageContent: {},
       posts: [],
+      filteredPosts: [],
       tags: [],
       filterIsActive: false,
+      featuredPost: null,
       metaTitle: 'Blog',
       description: '',
       ogUrl: 'https://maddevs.io/blog'
@@ -88,10 +109,16 @@ export default {
     async getAllPosts() {
       const posts = await this.$prismic.api.query(
         this.$prismic.predicates.at('document.type', 'post'),
-        { orderings : '[my.post.date desc]' }
+        {
+          orderings : '[my.post.date desc]',
+          pageSize: POSTS_PAGE_SIZE,
+          page: 1
+        }
       );
       this.posts = posts.results;
+      this.featuredPost = posts.results[0];
       this.tags = this.getTagsFromPosts(posts.results);
+      this.getPostsByTag();
     },
 
     async getHomePageContent() {
@@ -105,13 +132,27 @@ export default {
     },
 
     async getPostsByTag(tag) {
-      const posts = await this.$prismic.api.query(this.$prismic.predicates.at('document.tags', [tag]));
+      if(!tag) {
+        this.filteredPosts = this.posts;
+        return;
+      }
 
-      if(posts !== null && posts.results.length !== 0) {
-        this.posts = posts.results;
+      const vm = this;
+      const page = this.filteredPosts.length / POSTS_PAGE_SIZE + 1;
+      console.log('page', page);
+
+      const posts = await this.$prismic.api.query(this.$prismic.predicates.at('document.tags', [tag]), {
+        page,
+        pageSize: POSTS_PAGE_SIZE,
+        orderings: '[my.post.date desc]'
+      });
+
+      if (posts !== null && posts.results.length !== 0) {
         this.filterIsActive = true;
+        posts.results.forEach(post => vm.filteredPosts.push(post));
+        this.filteredPosts = posts.results;
       } else {
-        this.posts = [];
+        this.filteredPosts = [];
       }
     },
 
@@ -153,18 +194,18 @@ export default {
     }
   }
 };
+
 </script>
 
 <style lang="sass" scoped>
 @import '../../assets/styles/_vars'
 
+.container
+  max-width: 1240px
+  margin: 0 auto
+
 .home
-  max-width: 1680px;
-  display: flex
-  flex-direction: column
-  margin: auto;
   padding-top: 100px
-  background-color: $bgcolor--black
 
   .blog-avatar
     height: 140px
@@ -174,12 +215,75 @@ export default {
     background-size: cover
     margin: 0 auto
 
-.head-content
-  margin: 60px auto;
+  .latest-posts
+    background-color: $text-color--white-primary
+    display: flex
+    justify-content: space-between
 
-.body-content
-  display: flex
-  justify-content: space-between
+    .latest-posts__wrapper
+      display: flex
+      flex-wrap: wrap
+      margin: 96px -10px 0
+
+      a
+        text-decoration: none
+
+      .latest-posts__single-post
+        width: 33.3333%
+        margin-bottom: 80px
+
+        .single-post__wrapper
+          padding: 0 10px
+
+
+
+  .customer-university
+    background-color: $border-color--grey-cases
+    padding: 350px 0
+
+    h1
+      color: $text-color--red
+      font-size: 62px
+      line-height: 74px
+      font-weight: 900
+      text-align: center
+
+  .filtered-posts
+    background-color: $text-color--white-primary
+    padding-top: 48px
+
+    .filter
+      margin-bottom: 48px
+
+      .filter-list
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+        margin: 0 -10px
+
+        .filter-item__wrapper
+          width: 16.6666%
+
+          .filter-item
+            padding: 0 10px
+
+    .filtered-posts__wrapper
+      display: flex
+      margin: 50px -10px 0
+      flex-wrap: wrap
+
+      a
+        text-decoration: none
+
+      .filtered-posts__single-post
+        width: 33.3333%
+
+        .single-post__wrapper
+          padding: 0 10px
+
+
+.head-content
+  margin: 60px auto
 
 .blog-title
   font-size: 76px
@@ -188,7 +292,7 @@ export default {
 .filter-title,
 .filter-label,
 .reset-filter
-  color: $text-color--white
+  color: $text-color--black
 
 .filter-title
   font-family: 'Poppins-Bold', sans-serif
@@ -224,7 +328,7 @@ export default {
     text-decoration: none
 
 .filter
-  min-width: 150px;
+  min-width: 150px
 
 .filter-list
   display: grid
@@ -241,20 +345,21 @@ export default {
 
 .filter-label,
 .reset-filter
-  font-size: 14px
   border-radius: 2px
   cursor: pointer
 
 
 .filter-label
   display: block
-  padding: 7px
+  padding: 47px 22px 22px
   box-shadow: none
-  background-color: transparent
-  border: 1px solid $border-color--grey
+  background-color: $bgcolor--silver
   transition: 0.2s
-  text-align: center
   font-family: 'Poppins-Regular', sans-serif
+  font-size: 18px
+  line-height: 22px
+  font-weight: 700
+  min-height: 44px
 
 .reset-filter
   width: 100%
