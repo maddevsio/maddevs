@@ -29,22 +29,6 @@ export default {
     height: 100%;
     width: 100%;
     object-fit: cover;
-
-    &::-webkit-media-controls-panel {
-      display: none!important;
-      -webkit-appearance: none;
-    }
-
-    &::-webkit-media-controls-play-button {
-      display: none!important;
-      -webkit-appearance: none;
-    }
-
-
-    &::-webkit-media-controls-start-playback-button {
-      display: none!important;
-      -webkit-appearance: none;
-    }
   }
 
   &_header {
