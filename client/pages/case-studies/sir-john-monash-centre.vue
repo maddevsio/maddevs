@@ -3,7 +3,7 @@
     <HeaderSJMC />
     <section class="case_body">
       <div class="case_animation_block"></div>
-      <section class="container_regular">
+      <section class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom">
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           Sir John Monash Centre (SJMC) tells the Australian and New Zealand army corps’ story of the Western Front in the words of those who served.
         </TextParagraph>
@@ -29,16 +29,17 @@
           Mad Devs team has successfully accomplished code refactoring as well as closing the technical debt. After that, system monitoring, new feature development, and maintenance lied on Mad Devs shoulders.
         </TextQuoteBox>
       </section>
-      <section class="container_full">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
+      <section class="container_full case_full-screen-img">
+        <Picture
+          pictureFolder="sjmc"
+          fileName="sjmc-team"
+          fileExtension="jpg"
           alt=""
-        /> -->
+          :lazyLoading="true"
+        />
       </section>
       <section class="container_regular">
-        <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">The challenges</h3>
+        <h3 class="case_title_h3 m-48_top media-m-24_top m-24_bottom media-m-12_bottom">The challenges</h3>
         <List class="m-48_bottom media-m-24_bottom">
           <ListDashItemBox v-for="(text, i) in theChallenges" :key="i">{{text}}</ListDashItemBox>
         </List>
@@ -54,12 +55,13 @@
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
+        <Picture
+          pictureFolder="sjmc"
+          fileName="multimedia-management"
+          fileExtension="jpg"
           alt=""
-        /> -->
+          :lazyLoading="true"
+        />
       </section>
       <section class="container_regular">
         <TextParagraph class="m-48_top media-m-24_top">
@@ -96,13 +98,16 @@
           Since existing available solutions had limitations and restrictions, Sir John Monash Centre hired an Australia-based IT company to create an integrated multimedia solution to coordinate and communicate with every piece of technology in the centre.
         </TextParagraph>
       </section>
-      <section class="container_full">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
-          alt=""
-        /> -->
+      <section class="container_full background-color-black-section">
+        <div class="container_full case_full-screen-img">
+          <Picture
+            pictureFolder="sjmc"
+            fileName="mobile-applications"
+            fileExtension="jpg"
+            alt=""
+            :lazyLoading="true"
+          />
+        </div>
       </section>
       <section class="container_regular">
         <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
@@ -115,19 +120,29 @@
           When visitors move around the Centre, the app will continually refresh a list of what content is available nearby and allow them to dictate their own experience.
         </TextParagraph>
       </section>
+      <section class="container_regular m-107_bottom media-m-48_bottom">
+        <Picture
+          pictureFolder="sjmc"
+          fileName="sjmc-map"
+          fileExtension="jpg"
+          alt=""
+          :lazyLoading="true"
+        />
+      </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-12_bottom">SJMC Hardware</h2>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Hundreds of pieces of equipment are master-mindedly organized to transform content stored in audio, video, subtitles format to interactive monitors.
         </TextParagraph>
       </section>
-      <section class="container_full">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
+      <section class="container_full case_full-screen-img m-78_bottom media-m-38_bottom">
+        <Picture
+          pictureFolder="sjmc"
+          fileName="immersive-gallery"
+          fileExtension="jpg"
           alt=""
-        /> -->
+          :lazyLoading="true"
+        />
       </section>
       <section class="container_regular">
         <h3 class="case_title_h3 m-12_bottom">WATCHOUT</h3>
@@ -136,26 +151,28 @@
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
+        <Picture
+          pictureFolder="sjmc"
+          fileName="watchout"
+          fileExtension="jpg"
           alt=""
-        /> -->
+          :lazyLoading="true"
+        />
       </section>
       <section class="container_regular">
-        <h3 class="case_title_h3 m-12_bottom">BRIX</h3>
+        <h3 class="case_title_h3 m-96_top media-m-48_top m-12_bottom">BRIX</h3>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Essentially BRIX is an ultra-compact multimedia computer that can be hung on a wall. The advanced graphics card simultaneously delivers heavy content to multiple monitors. Moreover, each BRIX is managed by MMIT Brain to work in synchronization with mobile applications.
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
+        <Picture
+          pictureFolder="sjmc"
+          fileName="brix"
+          fileExtension="jpg"
           alt=""
-        /> -->
+          :lazyLoading="true"
+        />
       </section>
       <section class="container_regular">
         <h3 class="case_title_h3 m-96_top media-m-48_top m-12_bottom">Bluetooth beacons</h3>
@@ -167,15 +184,16 @@
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
+        <Picture
+          pictureFolder="sjmc"
+          fileName="phone-video"
+          fileExtension="jpg"
           alt=""
-        /> -->
+          :lazyLoading="true"
+        />
       </section>
-      <section class="container_regular">
-        <div class="case_column-container m-56_bottom media-m-24_bottom">
+      <section class="container_regular m-56_top media-m-24_top m-107_bottom media-m-48_bottom">
+        <div class="case_column-container">
           <div class="case_column-item">
             <h4 class="case_title_h4 m-16_bottom">110,000 visitors</h4>
             <TextParagraph>
@@ -245,12 +263,14 @@
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
+        <Picture
+          pictureFolder="sjmc"
+          fileName="kibana-reports"
+          fileExtension="jpg"
           alt=""
-        /> -->
+          :boxShadow="true"
+          :lazyLoading="true"
+        />
       </section>
       <section class="container_regular">
         <TextParagraph class="m-48_top media-m-24_top m-8_bottom">
@@ -279,13 +299,15 @@
           To achieve the maximum observability of the SJMC hardware Grafana, was used to build all the graphs of the current state. It enabled the Mad Devs team to configure the reports and alerts if any of the system components fails or is under high load or in case of any other problem.
         </TextParagraph>
       </section>
-      <section class="container_middle">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
+      <section class="container_middle m-48_bottom media-m-24_bottom">
+        <Picture
+          pictureFolder="sjmc"
+          fileName="prometheus"
+          fileExtension="jpg"
           alt=""
-        /> -->
+          :boxShadow="true"
+          :lazyLoading="true"
+        />
       </section>
       <section class="container_regular">
         <TextParagraph class="m-72_bottom media-m-48_bottom">
@@ -296,13 +318,15 @@
           Logstash ingests, transforms, and ships SJMC logging data from 100+ BRIX (multimedia computers). Previously unstructured logging data was scattered across hundreds of folders and wasn't properly monitored, which ultimately caused breakages and deterioration of expensive hardware. Now Logstash collects and transforms logging data by sending it to Elasticsearch. Elasticsearch enables SJMC to store, search, and analyze logged data with ease at scale.
         </TextParagraph>
       </section>
-      <section class="container_middle">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
+      <section class="container_middle m-48_bottom media-m-24_bottom">
+        <Picture
+          pictureFolder="sjmc"
+          fileName="kibana"
+          fileExtension="jpg"
           alt=""
-        /> -->
+          :boxShadow="true"
+          :lazyLoading="true"
+        />
       </section>
       <section class="container_regular">
         <TextParagraph class="m-72_bottom media-m-48_bottom">
