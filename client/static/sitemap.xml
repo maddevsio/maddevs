@@ -47,11 +47,6 @@
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://peklo.maddevs.io/</loc>
-  <lastmod>2020-10-15T10:30:00+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
   <loc>https://blog.maddevs.io/</loc>
   <lastmod>2020-10-15T10:30:00+00:00</lastmod>
   <priority>0.90</priority>
@@ -80,6 +75,26 @@
   <loc>https://blog.maddevs.io/ru/home</loc>
   <lastmod>2020-10-15T10:30:00+00:00</lastmod>
   <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/log-collecting-with-elk-and-rsyslog-218b032b12f4</loc>
+  <lastmod>2020-10-15T10:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-to-test-a-web-product-manually-c019d6e8e2f3</loc>
+  <lastmod>2020-10-15T10:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/device-location-using-livedata-architecture-component-5380c020ea54</loc>
+  <lastmod>2020-10-15T10:30:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.maddevs.io/how-project-manager-stays-focused-fa86dcbc5c7a</loc>
+  <lastmod>2020-10-15T10:30:00+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://blog.maddevs.io/bullet-issues-tasks-that-kill-95f480a2429</loc>
