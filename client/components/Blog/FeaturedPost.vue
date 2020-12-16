@@ -1,7 +1,7 @@
 <template>
   <nuxt-link :to="link" class="featured-post">
     <div class="row featured-post__wrapper">
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6 featured-post__main">
         <h1 class="featured-post__title">{{ $prismic.asText(post.data.title) }}</h1>
         <p class="featured-post__paragraph">{{ getFirstParagraph() }}</p>
         <div class="featured-post__data d-flex justify-content-between">
@@ -108,6 +108,10 @@ export default {
     &__data {
       display: flex;
       justify-content: space-between;
+
+      /deep/ .blog-post__author-name {
+        color: $text-color--white-primary;
+      }
     }
 
     &__meta {
@@ -128,6 +132,46 @@ export default {
       img {
         max-width: 90%;
         height: auto;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .featured-post__main {
+      order: 2;
+
+      .featured-post__paragraph {
+        margin-bottom: 38px;
+      }
+
+      .featured-post__data {
+        display: block;
+
+        .featured-post__meta {
+          justify-content: space-between;
+
+          /deep/ .post-tag {
+            padding: 8px 16px;
+            line-height: 22px;
+            margin-left: 0;
+          }
+        }
+
+        /deep/ .blog-post__author {
+          margin-bottom: 16px;
+        }
+
+
+      }
+    }
+
+    .featured-post__image-wrapper {
+      order: 1;
+      margin-bottom: 16px;
+      text-align: center;
+
+      img  {
+        max-width: 100%;
       }
     }
   }

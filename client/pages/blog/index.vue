@@ -21,15 +21,17 @@
       <div class="filtered-posts" v-if="posts.length">
         <div class="container">
           <div class="filter">
-            <ul class="filter-list">
-              <li class="filter-item__wrapper" v-for="(tag, i) in tags" :key="i">
-                <div class="filter-item">
-                  <input type="radio" :id="tag.inputId" v-model="currentTag" :value="tag.tagName" name="Tag" class="radio-input">
-                  <label :for="tag.inputId" class="filter-label">{{ tag.tagName }}</label>
-                </div>
-              </li>
-            </ul>
-            <button class="reset-filter" @click="resetFilter()" v-if="filterIsActive">Reset filter</button>
+            <perfect-scrollbar :options="{swipeEasing: true, suppressScrollY: true, handlers: ['wheel', 'touch', 'drag-thumb']}">
+              <ul class="filter-list">
+                <li class="filter-item__wrapper" v-for="(tag, i) in tags" :key="i">
+                  <div class="filter-item">
+                    <input type="radio" :id="tag.inputId" v-model="currentTag" :value="tag.tagName" name="Tag" class="radio-input">
+                    <label :for="tag.inputId" class="filter-label">{{ tag.tagName }}</label>
+                  </div>
+                </li>
+              </ul>
+            </perfect-scrollbar>
+<!--            <button class="reset-filter" @click="resetFilter()" v-if="filterIsActive">Reset filter</button>-->
           </div>
           <div v-if="filteredPosts.length !== 0" class="filtered-posts__wrapper">
             <section v-for="(post, i) in filteredPostsToShow" :key="i" :post="post" class="filtered-posts__single-post">
@@ -425,6 +427,84 @@ export default {
 
     &__wrapper {
       text-align: center;
+    }
+  }
+
+  /deep/ .blog-post__author-name {
+    color: $text-color--black;
+  }
+
+  @media only screen and (max-width: 991px) {
+    .home {
+
+      .latest-posts .latest-posts__wrapper .latest-posts__single-post,
+      .filtered-posts .filtered-posts__wrapper .filtered-posts__single-post {
+        width: 100%;
+      }
+
+      .filtered-posts {
+
+        .filter {
+
+          .filter-list {
+            flex-wrap: nowrap;
+            margin: 0 -4px;
+
+            /deep/ .ps__rail-x {
+              display: none;
+            }
+
+            .filter-item__wrapper {
+              width: 148px;
+
+              .filter-item {
+                padding: 0 4px;
+              }
+
+              .filter-label {
+                font-size: 16px;
+                line-height: 19px;
+                padding: 16px;
+                min-height: 40px;
+              }
+            }
+          }
+        }
+
+        .filtered-posts__wrapper {
+          padding-bottom: 38px;
+
+          /deep/ .blog-post {
+            display: flex;
+            margin-bottom: 36px;
+
+            .blog-post__cover-image {
+              width: 124px;
+              height: 124px;
+              flex-shrink: 0;
+              margin-right: 16px;
+            }
+
+            .blog-post-meta {
+              margin: 8px 0;
+
+              .tag {
+                display: none;
+              }
+            }
+
+            .blog-post__paragraph {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .load-more-button {
+        padding: 12px 0;
+        margin-bottom: 24px;
+        width: 100%;
+      }
     }
   }
 </style>

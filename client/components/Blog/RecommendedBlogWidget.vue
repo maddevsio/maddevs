@@ -2,13 +2,15 @@
   <nuxt-link :to="link">
     <div class="blog-post">
       <div class="blog-post__cover-image" :style="`background-image: url(${post.data.featured_image.url})`"/>
-      <h2 class="post-title">{{ $prismic.asText(post.data.title) }}</h2>
-      <p>{{getFirstParagraph(post)}}</p>
-      <p class="blog-post-meta">
-        <span class="created-at">{{ formattedDate }}</span>
-        <span class="tag" v-if="post.tags.length">{{post.tags[0]}}</span>
-      </p>
-      <post-author :document="post.data" />
+      <div>
+        <h2 class="post-title">{{ $prismic.asText(post.data.title) }}</h2>
+        <p class="blog-post__paragraph">{{getFirstParagraph(post)}}</p>
+        <div class="blog-post-meta">
+          <span class="created-at">{{ formattedDate }}</span>
+          <span class="tag" v-if="post.tags.length">{{post.tags[0]}}</span>
+        </div>
+        <post-author :document="post.data" />
+      </div>
     </div>
   </nuxt-link>
 </template>
