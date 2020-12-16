@@ -1,7 +1,7 @@
 <template>
   <nuxt-link :to="link">
     <div class="blog-post">
-      <img :src="post.data.featured_image.url" alt="" class="blog-post__featured-image">
+      <div class="blog-post__cover-image" :style="`background-image: url(${post.data.featured_image.url})`"/>
       <h2 class="post-title">{{ $prismic.asText(post.data.title) }}</h2>
       <p>{{getFirstParagraph(post)}}</p>
       <p class="blog-post-meta">
@@ -36,7 +36,7 @@ export default {
   methods: {
     // Function to get the first paragraph of text in a blog post and limit the displayed text at 300 characters
     getFirstParagraph (post) {
-      const textLimit = 300;
+      const textLimit = 140;
       const slices = post.data.body;
       let firstParagraph = '';
       let haveFirstParagraph = false;
@@ -89,6 +89,13 @@ export default {
 
     a {
       text-decoration: none;
+    }
+
+    &__cover-image {
+      height: 220px;
+      background-position: center;
+      background-size: cover;
+      margin-bottom: 16px;
     }
 
     &__featured-image {
