@@ -440,6 +440,14 @@ export default {
       .latest-posts .latest-posts__wrapper .latest-posts__single-post,
       .filtered-posts .filtered-posts__wrapper .filtered-posts__single-post {
         width: 100%;
+        margin-bottom: 56px;
+      }
+
+      .latest-posts {
+
+        .latest-posts__wrapper {
+          margin-top: 29px;
+        }
       }
 
       .filtered-posts {
