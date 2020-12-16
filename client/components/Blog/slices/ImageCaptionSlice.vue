@@ -59,6 +59,6 @@ img
   font-size: 14px
   line-height: 129%
   letter-spacing: -0.02em
-  font-family: 'Poppins-Regular', sans-serif
+  font-family: 'Poppins', sans-serif
   color: $text-color--grey
 </style>

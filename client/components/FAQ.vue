@@ -8,7 +8,7 @@
       <div class="faq__content">
         <h3 id="how-many-people-work-at-your-company?" class="faq__sec-title faq__sec-title-first">How many people work at your company?</h3>
         <p class="faq__paragraph">
-          <span class="faq__nowrap">Mad Devs</span> currently is a 120+ person strong team of rock stars who are on a mission to deliver value to <span class="faq__nowrap">long-term</span> projects. 
+          <span class="faq__nowrap">Mad Devs</span> currently is a 120+ person strong team of rock stars who are on a mission to deliver value to <span class="faq__nowrap">long-term</span> projects.
         </p>
         <h3 id="what-time-zone-does-your-team-operate-in?" class="faq__sec-title">What time zone does your team operate in?</h3>
         <p class="faq__paragraph">
@@ -19,7 +19,7 @@
         </p>
         <h3 id="what-types-of-projects-you-do-not-work-on?" class="faq__sec-title">What types of projects you do NOT work on?</h3>
         <p class="faq__paragraph">
-          Mad Devs workflow is dedicated to the creation and maintenance of <span class="faq__nowrap">high-quality</span>, scalable systems intended for heavy workloads. We can’t help with requests for landing pages and <span class="faq__nowrap">ultra-fast</span> MVPs. 
+          Mad Devs workflow is dedicated to the creation and maintenance of <span class="faq__nowrap">high-quality</span>, scalable systems intended for heavy workloads. We can’t help with requests for landing pages and <span class="faq__nowrap">ultra-fast</span> MVPs.
         </p>
         <h3 id="where-can-i-find-the-project-portfolio-of-your-company?" class="faq__sec-title">Where can I find the project portfolio of your company?</h3>
         <p class="faq__paragraph">
@@ -67,10 +67,10 @@
           <li class="faq__list">Contact form</li>
           <li class="faq__list">Phone Call via <a class="faq__link faq__link" href="tel:+44 20 3984 8555">+44 20 3984 8555</a></li>
           <li class="faq__list">
-            Text message via 
-            <a href="https://facebook.com/maddevsllc" class="faq__link faq__link" target="_blank">Facebook Messenger</a>, 
-            <a href="https://t.me/MadDevs_io" class="faq__link faq__link" target="_blank">Telegram</a>, 
-            <a href="https://wa.me/message/KPJAW6J7BF7EK1" class="faq__link faq__link" target="_blank">Whatsapp</a>, 
+            Text message via
+            <a href="https://facebook.com/maddevsllc" class="faq__link faq__link" target="_blank">Facebook Messenger</a>,
+            <a href="https://t.me/MadDevs_io" class="faq__link faq__link" target="_blank">Telegram</a>,
+            <a href="https://wa.me/message/KPJAW6J7BF7EK1" class="faq__link faq__link" target="_blank">Whatsapp</a>,
             or <a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc" class="faq__link faq__link" target="_blank">WeChat</a>.
           </li>
         </ul>
@@ -135,7 +135,7 @@ export default {
     margin-top: -48px;
     padding-top: 96px;
     padding-bottom: 8px;
-    font-family: 'Poppins-Regular', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 24px;
     line-height: 136%;
     letter-spacing: 0;
@@ -158,7 +158,7 @@ export default {
 
   &__link,
   &__paragraph {
-    font-family: 'Poppins-Regular', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.02em;

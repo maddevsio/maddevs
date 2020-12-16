@@ -1,14 +1,22 @@
 <template>
   <div class='post-part single'>
-    <blockquote class="block-quotation">
-      {{ $prismic.asText(slice.primary.quote) }}
-    </blockquote>
+      <blockquote class="block-quotation" v-html="$prismic.asHtml(slice.primary.quote)" v-if="slice.primary.quotation_design === 'border'"/>
+      <text-quote v-if="slice.primary.quotation_design === 'brackets'">{{ $prismic.asText(slice.primary.quote) }}</text-quote>
   </div>
 </template>
 
 <script>
+import TextQuote from '@/components/Cases/TextQuote';
 export default {
-  props: ['slice'],
+  components: {
+    TextQuote
+  },
+  props: {
+    slice: {
+      type: Object,
+      required: true
+    }
+  },
   name: 'quote-slice'
 };
 </script>
@@ -19,17 +27,20 @@ export default {
   .block-quotation {
     display: inline-block;
     font-style: italic;
-    font-size: 24px;
-    margin: 0;
-    font-family: 'Poppins-Regular', sans-serif;
-    color: $text-color--white;
+    font-size: 17px;
+    line-height: 28px;
+    margin: 0 0 48px;
+    font-family: 'Inter-Regular', sans-serif;
+    color: $text-color--black-cases;
+    border-left: 2px solid $border-color--red;
+    padding-left: 35px;
 
-    &:before {
-      content: "« ";
-    }
+    /deep/ p {
+      margin-bottom: 28px;
 
-    &:after {
-      content: " »";
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
