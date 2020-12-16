@@ -446,13 +446,13 @@ export default {
 
         .filter {
 
+          /deep/ .ps__rail-x {
+            display: none;
+          }
+
           .filter-list {
             flex-wrap: nowrap;
             margin: 0 -4px;
-
-            /deep/ .ps__rail-x {
-              display: none;
-            }
 
             .filter-item__wrapper {
               width: 148px;
