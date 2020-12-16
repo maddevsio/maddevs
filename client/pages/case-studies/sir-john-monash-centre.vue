@@ -1,8 +1,9 @@
 <template>
   <main class="main case">
-    <Header/>
+    <HeaderSJMC />
     <section class="case_body">
-      <section class="container_regular">
+      <div class="case_animation_block"></div>
+      <section class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom">
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           Sir John Monash Centre (SJMC) tells the Australian and New Zealand army corps’ story of the Western Front in the words of those who served.
         </TextParagraph>
@@ -17,7 +18,7 @@
         </TextQuote>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-12_bottom">SJMC and Mad Devs partnership</h2>
+        <h2 class="case_title_h2 m-12_bottom">SJMC and Mad Devs partnership</h2>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           SJMC officially opened its doors on April 16th, 2018. The entire centre with its underground building and cutting-edge technologies was already developed and deployed by an Australia-based IT vendor. Thus, the SJMC and Mad Devs partnership was based on enhancements and preventative maintenance contracts.
         </TextParagraph>
@@ -28,34 +29,41 @@
           Mad Devs team has successfully accomplished code refactoring as well as closing the technical debt. After that, system monitoring, new feature development, and maintenance lied on Mad Devs shoulders.
         </TextQuoteBox>
       </section>
-      <section class="container_full">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
+      <section class="container_full case_full-screen-img">
+        <Picture
+          pictureFolder="sjmc"
+          fileName="sjmc-team"
+          fileExtension="jpg"
           alt=""
-        /> -->
+          :lazyLoading="true"
+        />
       </section>
       <section class="container_regular">
-        <!-- <List></List> -->
+        <h3 class="case_title_h3 m-48_top media-m-24_top m-24_bottom media-m-12_bottom">The challenges</h3>
+        <List class="m-48_bottom media-m-24_bottom">
+          <ListDashItemBox v-for="(text, i) in theChallenges" :key="i">{{text}}</ListDashItemBox>
+        </List>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-12_bottom">SJMC and Mad Devs partnership</h2>
+        <h2 class="case_title_h2 m-96_top media-m-72_top m-12_bottom">SJMC software</h2>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Transferring a project to another software partner is never easy for all parties involved. So, let us introduce you to the new era of the interpretive centres. And walk you through the complexity of the SJMC project.
         </TextParagraph>
-        <h3 class="case_title_h3 m-12_bottom">SJMC and Mad Devs partnership</h3>
+        <h3 class="case_title_h3 m-12_bottom">Multimedia Management IT Brain</h3>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Personalized experience at your own speed and language
         </TextParagraph>
       </section>
-      <section class="container_middle">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
-          alt=""
-        /> -->
+      <section class="container_full background-color-silver">
+        <div class="container_full case_full-screen-img">
+          <Picture
+            pictureFolder="sjmc"
+            fileName="multimedia-management"
+            fileExtension="jpg"
+            alt=""
+            :lazyLoading="true"
+          />
+        </div>
       </section>
       <section class="container_regular">
         <TextParagraph class="m-48_top media-m-24_top">
@@ -92,13 +100,16 @@
           Since existing available solutions had limitations and restrictions, Sir John Monash Centre hired an Australia-based IT company to create an integrated multimedia solution to coordinate and communicate with every piece of technology in the centre.
         </TextParagraph>
       </section>
-      <section class="container_full">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
-          alt=""
-        /> -->
+      <section class="container_full background-color-black-section">
+        <div class="container_full case_full-screen-img">
+          <Picture
+            pictureFolder="sjmc"
+            fileName="mobile-applications"
+            fileExtension="jpg"
+            alt=""
+            :lazyLoading="true"
+          />
+        </div>
       </section>
       <section class="container_regular">
         <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
@@ -111,19 +122,29 @@
           When visitors move around the Centre, the app will continually refresh a list of what content is available nearby and allow them to dictate their own experience.
         </TextParagraph>
       </section>
+      <section class="container_regular m-107_bottom media-m-48_bottom">
+        <Picture
+          pictureFolder="sjmc"
+          fileName="sjmc-map"
+          fileExtension="jpg"
+          alt=""
+          :lazyLoading="true"
+        />
+      </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-12_bottom">SJMC Hardware</h2>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Hundreds of pieces of equipment are master-mindedly organized to transform content stored in audio, video, subtitles format to interactive monitors.
         </TextParagraph>
       </section>
-      <section class="container_full">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
+      <section class="container_full case_full-screen-img m-78_bottom media-m-38_bottom">
+        <Picture
+          pictureFolder="sjmc"
+          fileName="immersive-gallery"
+          fileExtension="jpg"
           alt=""
-        /> -->
+          :lazyLoading="true"
+        />
       </section>
       <section class="container_regular">
         <h3 class="case_title_h3 m-12_bottom">WATCHOUT</h3>
@@ -131,27 +152,21 @@
           WATCHOUT is a multi-display production and presentation system that enables SJMC to arrange displays in unusual ways and create seamless images and videos. The absence of gaps between display surfaces is possible due to the WATCHOUT system that distributes the content and keeps everything in sync across all connected displays.
         </TextParagraph>
       </section>
-      <section class="container_middle">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
-          alt=""
-        /> -->
+      <section class="container_full background-color-silver">
+        <section class="container_middle">
+          <img src="../../assets/img/Cases/sjmc/gif/watchpax.gif" class="case_gif">
+        </section>
       </section>
       <section class="container_regular">
-        <h3 class="case_title_h3 m-12_bottom">BRIX</h3>
+        <h3 class="case_title_h3 m-96_top media-m-48_top m-12_bottom">BRIX</h3>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Essentially BRIX is an ultra-compact multimedia computer that can be hung on a wall. The advanced graphics card simultaneously delivers heavy content to multiple monitors. Moreover, each BRIX is managed by MMIT Brain to work in synchronization with mobile applications.
         </TextParagraph>
       </section>
-      <section class="container_middle">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
-          alt=""
-        /> -->
+      <section class="container_full background-color-silver">
+        <section class="container_middle">
+          <img src="../../assets/img/Cases/sjmc/gif/brix.gif" class="case_gif">
+        </section>
       </section>
       <section class="container_regular">
         <h3 class="case_title_h3 m-96_top media-m-48_top m-12_bottom">Bluetooth beacons</h3>
@@ -162,16 +177,16 @@
           The limited space of SJMC creates a challenge to be able to detect each visitors' location and continuously refresh a list of available content nearby.
         </TextParagraph>
       </section>
-      <section class="container_middle">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
-          alt=""
-        /> -->
+      <section class="container_full case_sjmc-phone-video-section background-color-black-primary">
+        <div class="case_sjmc-phone-video-wrapper case_full-screen-video">
+          <video width="100%" height="100%" controls="true">
+            <source src="../../assets/video/sjmc/bluetooth-beacons-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </section>
-      <section class="container_regular">
-        <div class="case_column-container m-56_bottom media-m-24_bottom">
+      <section class="container_regular m-56_top media-m-24_top m-107_bottom media-m-48_bottom">
+        <div class="case_column-container">
           <div class="case_column-item">
             <h4 class="case_title_h4 m-16_bottom">110,000 visitors</h4>
             <TextParagraph>
@@ -241,12 +256,14 @@
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
+        <Picture
+          pictureFolder="sjmc"
+          fileName="kibana-reports"
+          fileExtension="jpg"
           alt=""
-        /> -->
+          :boxShadow="true"
+          :lazyLoading="true"
+        />
       </section>
       <section class="container_regular">
         <TextParagraph class="m-48_top media-m-24_top m-8_bottom">
@@ -275,13 +292,15 @@
           To achieve the maximum observability of the SJMC hardware Grafana, was used to build all the graphs of the current state. It enabled the Mad Devs team to configure the reports and alerts if any of the system components fails or is under high load or in case of any other problem.
         </TextParagraph>
       </section>
-      <section class="container_middle">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
+      <section class="container_middle m-48_bottom media-m-24_bottom">
+        <Picture
+          pictureFolder="sjmc"
+          fileName="prometheus"
+          fileExtension="jpg"
           alt=""
-        /> -->
+          :boxShadow="true"
+          :lazyLoading="true"
+        />
       </section>
       <section class="container_regular">
         <TextParagraph class="m-72_bottom media-m-48_bottom">
@@ -292,13 +311,15 @@
           Logstash ingests, transforms, and ships SJMC logging data from 100+ BRIX (multimedia computers). Previously unstructured logging data was scattered across hundreds of folders and wasn't properly monitored, which ultimately caused breakages and deterioration of expensive hardware. Now Logstash collects and transforms logging data by sending it to Elasticsearch. Elasticsearch enables SJMC to store, search, and analyze logged data with ease at scale.
         </TextParagraph>
       </section>
-      <section class="container_middle">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
+      <section class="container_middle m-48_bottom media-m-24_bottom">
+        <Picture
+          pictureFolder="sjmc"
+          fileName="kibana"
+          fileExtension="jpg"
           alt=""
-        /> -->
+          :boxShadow="true"
+          :lazyLoading="true"
+        />
       </section>
       <section class="container_regular">
         <TextParagraph class="m-72_bottom media-m-48_bottom">
@@ -315,12 +336,91 @@
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Automated testing of MMIT Brain via custom emulators</h2>
+        <TextParagraph class="m-6_bottom">
+          Auto-testing of MMIT Brain can be categorized into two categories:
+        </TextParagraph>
+        <List class="m-24_bottom">
+          <ListItemDot>Two internal information systems synchronization.</ListItemDot>
+          <ListItemDot>End to end testing to ensure seamless user experience of thousands of SJMC visitors.</ListItemDot>
+        </List>
+        <TextParagraph class="m-72_bottom media-m-48_bottom">
+          Testing the accuracy of new content and feature deployment is challenged by 5000 km distance to SJMC. Thus our back-end developers developed two emulation software systems that enable Mad Devs to test MMIT Brain without accumulating additional travel expenses.
+        </TextParagraph>
+        <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">1. Internal information systems synchronization</h3>
+        <TextParagraph>
+          Emulator code tests the interaction of two independent information systems that control multimedia software and intelligent infrastructure integrations.
+        </TextParagraph>
+        <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
+          Internal information systems synchronization emulator makes the infrastructure control system recognize the emulated hardware as real.
+        </TextQuoteBox>
+        <TextParagraph class="m-24_bottom media-m-12_bottom">
+          For example, in case of emergency and water leakage, a smart building control system that controls electricity has to communicate the emergency to multimedia software through MMIT Brain and turn off all multimedia computers to avoid closure.
+        </TextParagraph>
+        <TextParagraph class="m-72_bottom media-m-48_bottom">
+          Without such an emulator, Mad Devs developers wouldn`t be able to look at MMIT Brain code and understand whether the Brain has transferred the command from one system to another. Without such an emulator, the team would have been clueless regarding whether the command was successfully executed.
+        </TextParagraph>
+        <h3 class="case_title_h3 case_numbered-title">2. End-to-end testing using emulators of mobile applications</h3>
+        <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
+          Mobile applications emulator enables SJMC to run all possible user experiences on all possible virtual multimedia sites.
+        </TextQuoteBox>
+        <TextParagraph class="m-96_bottom media-m-72_bottom">
+          All possible interactions with WATCHOUT site multimedia computers and Unity PC including touch screens, multiple users watching simultaneously, and switching audio and subtitles languages usually last a minimum of 6 hours. The emulator for end to end testing accomplishes the tests in just 20 minutes.
+        </TextParagraph>
+      </section>
+      <section class="container_regular">
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Mad Devs trip to SJMC</h2>
+      </section>
+      <section class="container_full">
+        <!-- <Picture
+          pictureFolder=""
+          fileName=""
+          fileExtension=""
+          alt=""
+        /> -->
+      </section>
+      <section class="container_regular">
+        <TextParagraph class="m-48_top media-m-24_top m-24_bottom media-m-12_bottom">
+          In February of 2020, right before the contract’s deadline, Mad Devs team of eight people came to the Сentre located near the village of Villers-Bretonneux (Somme) in northern France.
+        </TextParagraph>
+        <TextParagraph class="m-8_bottom">
+          Although the small scale version of the Сentre was built inside Mad Devs office, the team was pursuing the following goals:
+        </TextParagraph>
+        <List class="m-96_bottom media-m-72_bottom">
+          <ListItemDot>Understand the complexity of SJMC hardware and software in person.</ListItemDot>
+          <ListItemDot>Uncover the potential risks and problems.</ListItemDot>
+          <ListItemDot>Deploy technical debts and test the changes.</ListItemDot>
+          <ListItemDot>Deploy new content on big scale screens and test the changes.</ListItemDot>
+        </List>
+        <!-- Заменить фотографии -->
+        <ListTeam class="m-96_bottom media-m-72_bottom">
+          <ListTeamItem
+            v-for="(teamMember, i) in team"
+            :key="i"
+            :name="teamMember.name"
+            :position="teamMember.position"
+            :fileName="teamMember.fileName"
+            :fileExtension="teamMember.fileExtension"
+            :alt="teamMember.name"
+            pictureFolder="nambafood"
+          />
+        </ListTeam>
+      </section>
+      <section class="container_regular">
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Ongoing partnership</h2>
+        <TextParagraph class="m-24_bottom media-m-12_bottom">
+          According to the internal CSAT survey, 98% of Mad Devs' customers find the company's service great value for money, and most of them stay with us for 3+ years. SJMC is no exception.
+        </TextParagraph>
+        <TextParagraph class="m-96_bottom media-m-72_bottom">
+          We are honored to extend our partnership to improve SJMC visitors' experience by introducing the iPaOS application for children. Such applications offer kids engaging content which allows children to discover the centre and its resources through a series of games. Moreover, Mad Devs is going to develop a sophisticated content management system that eventually is going to simplify the deployment of new content and enable the managers of the SJMC to make the required changes with ease.
+        </TextParagraph>
+        <!-- Тут будет секция Testimonials -->
       </section>
     </section>
   </main>
 </template>
 
 <script>
+import HeaderSJMC from '@/components/Cases/HeaderSJMC';
 import TextParagraph from '@/components/Cases/TextParagraph';
 import TextQuote from '@/components/Cases/TextQuote';
 import TextQuoteBox from '@/components/Cases/TextQuoteBox';
@@ -334,10 +434,12 @@ import ListItemBoxCheckMark from '@/components/Cases/ListItemBoxCheckMark';
 import ListItemDot from '@/components/Cases/ListItemDot';
 import ListTechnologies from '@/components/Cases/ListTechnologies';
 import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem';
+import ListDashItemBox from '@/components/Cases/ListDashItemBox';
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
 
 export default {
   components: {
+    HeaderSJMC,
     TextParagraph,
     TextQuote,
     TextQuoteBox,
@@ -350,7 +452,8 @@ export default {
     ListItemBoxCheckMark,
     ListItemDot,
     ListTechnologies,
-    ListTechnologiesItem
+    ListTechnologiesItem,
+    ListDashItemBox
   },
   name: 'SirJohnMonashCentre',
   data() {
@@ -365,6 +468,15 @@ export default {
         'Develop a reporting system.',
         'Test the deployment of new content.',
         'Set up system monitoring.'
+      ],
+      theChallenges: [
+        '100MB of Documentation and 1M+ lines of code required months of onboarding.',
+        'The unique nature of software in a truly one of a kind technologically advanced centre.',
+        '450 units of hardware that are connected to operate as a coherent solution that delivers content to SJMC visitors in a personalized manner.',
+        '5000 km between SJMC and Mad Devs office.',
+        'The lockdown caused by the Covid19 pandemic made it difficult to check the deploy updates onsite.',
+        'Orchestrating seamless experience for 110K visitors annually.',
+        'Cooperating and communicating with numerous vendors working at SJMC.'
       ],
       technologiesList: [
         {
@@ -427,6 +539,80 @@ export default {
           techName: 'Prometheus',
           className: 'devops-prometheus'
         }
+      ],
+      team: [
+        {
+          name: 'Kirill Zinchenko',
+          position: 'Project Manager',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Ruslan Kasymov',
+          position: 'Logistics Manager',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Aleksandr Zhitov',
+          position: 'QA Manager',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Sergey Boyko',
+          position: 'QA Manager',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Vlad Andreev',
+          position: 'DevOps Developer',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Dmitri Khalezin',
+          position: 'DevOps Developer',
+          fileName: 'dmitrii-khalezin',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Kirill Avdeev',
+          position: 'Back-end Developer',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Andrew Minkin',
+          position: 'Back-end Developer',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Aleksandr Astashov',
+          position: 'Back-end Developer',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Stanislav Shcherbinin',
+          position: 'Back-end Developer',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Pavel Pushkarev',
+          position: 'Mobile Developer',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Rustom Kulbatyrov',
+          position: 'Mobile Developer',
+          fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        }
       ]
     };
   }
@@ -437,5 +623,6 @@ export default {
 @import "../../assets/styles/cases/base";
 @import "../../assets/styles/cases/mixins";
 @import "../../assets/styles/cases/components";
+@import "../../assets/styles/cases/sir-john-monash-centre/styles";
 @import "../../assets/styles/cases/media";
 </style>

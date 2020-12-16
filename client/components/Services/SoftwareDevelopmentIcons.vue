@@ -1,7 +1,7 @@
 <template>
   <ul class="icons-list">
-    <li 
-      class="icons-list__icon-item" 
+    <li
+      class="icons-list__icon-item"
       v-for="(icon, i) in icons"
       :key="i"
       :class="icon.className"
@@ -49,10 +49,10 @@ export default {
         height: 26px;
         display: block;
       }
-  
+
       span {
         white-space: nowrap;
-        font-family: 'Poppins-Regular', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 10px;
         line-height: 13px;
         letter-spacing: -0.02em;
@@ -85,7 +85,7 @@ export default {
           width: 20px;
           height: 20px;
         }
-  
+
         span {
           margin-top: 8px;
           margin-bottom: -3px;

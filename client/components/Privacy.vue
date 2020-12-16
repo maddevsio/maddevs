@@ -749,7 +749,7 @@ export default {
     max-width: 880px;
   }
 
-  &__paragraph, 
+  &__paragraph,
   &__list-wrap,
   &__term-title,
   &__term-description {
@@ -757,14 +757,14 @@ export default {
   }
 
   &__paragraph {
-    font-family: 'Poppins-Regular', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.02em;
   }
 
   &__paragraph-margin {
-    margin-top: 14px; 
+    margin-top: 14px;
   }
 
   &__list-wrap {
@@ -795,7 +795,7 @@ export default {
   &__sec-title {
     margin-top: 48px;
     margin-bottom: 8px;
-    font-family: 'Poppins-Regular', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 24px;
     line-height: 136%;
     letter-spacing: 0;
@@ -840,7 +840,7 @@ export default {
 
   &__break-main {
     margin: 25px 0;
-    font-family: 'Poppins-Regular', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 22px;
     line-height: 36px;
     letter-spacing: -0.035em;

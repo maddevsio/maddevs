@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const sendpulse = require('sendpulse-api');
 const dotenv = require('dotenv');
+const shell = require('shelljs');
 dotenv.config();
 
 const API_USER_ID = process.env.NODE_SENDPULSE_API_USER_ID;
@@ -67,6 +68,38 @@ router.post('/send-email', (req, res) => {
       sendpulse.smtpSendMail(answerGetter, email);
     });
   }
+});
+
+router.post('/prismic-hook', (req, res) => {
+  if (!req.body.domain || req.body.domain !== 'superpupertest') {
+    res.status(404).json({
+      status: 403,
+      message: 'Access forbidden'
+    });
+  }
+
+  // Document is published or unpublished
+  if (req.body.type === 'api-update' && !!req.body.documents && req.body.documents.length) {
+    shell.exec('npm run generate', {async: true});
+
+    res.status(200).json({
+      status: 200,
+      message: 'Success'
+    });
+  }
+
+  res.status(500).json({
+    status: 500,
+    message: 'error'
+  });
+});
+
+router.get('/ru', (req, res) => {
+  res.redirect(301, 'https://maddevs.io');
+});
+
+router.get('/en', (req, res) => {
+  res.redirect(301, 'https://maddevs.io');
 });
 
 module.exports = router;

@@ -1,5 +1,5 @@
 <template>
-  <div class="mobile-header" 
+  <div class="mobile-header"
     :class="{
       'mobile-header--is-open': mobileHeaderIsOpen,
       'header-transparent': headerTransparent === true && mobileHeaderIsOpen === false
@@ -122,7 +122,7 @@ export default {
       this.caseMoreButton = document.getElementsByClassName('case_more__button')[0];
       this.overlay = document.getElementsByClassName('overlay')[0];
       this.logoText = document.getElementsByClassName('header-logo-text')[1]; // Logo from mobile header
-    
+
       this.getScrollTop();
       window.addEventListener('scroll', () => {
         this.scrollHandler();
@@ -160,7 +160,7 @@ export default {
       }
     },
     setPageData() {
-      if(this.$nuxt.$route.name === 'case-studies-namba-food') {
+      if(this.$nuxt.$route.path.includes('/case-studies/')) {
         this.headerTransparent = true;
         this.isCasePage = true;
       } else {
@@ -195,7 +195,7 @@ export default {
       height: 60px;
       margin-top: 5px;
       margin-bottom: 55px;
-      font-family: 'Poppins-Regular', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 16px;
     }
 
@@ -247,7 +247,7 @@ export default {
     &__nav-link {
       padding: 14px 0;
       font-size: 32px;
-      font-family: 'Poppins-Medium', sans-serif;
+      font-family: 'Poppins', sans-serif;
       letter-spacing: -1px;
       line-height: 38px;
       text-decoration: none;
@@ -323,7 +323,7 @@ export default {
 
     &__contact-title,
     &__messenger-name {
-      font-family: 'Poppins-Regular', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     &__contact-title,
@@ -341,7 +341,7 @@ export default {
       font-size: 28px;
       line-height: 38px;
       letter-spacing: -1px;
-      font-family: 'Poppins-Medium', sans-serif;
+      font-family: 'Poppins', sans-serif;
       border-bottom: 1px solid $header-red-border-color;
       text-decoration: none;
     }

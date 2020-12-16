@@ -64,7 +64,7 @@ export default {
       color: $text-color--grey-light;
       font-size: 19px;
       line-height: 24px;
-      font-family: 'Poppins-Regular', sans-serif;;
+      font-family: 'Poppins', sans-serif;;
       letter-spacing: -0.04em;
       text-decoration: none;
       transition: 0.3s;

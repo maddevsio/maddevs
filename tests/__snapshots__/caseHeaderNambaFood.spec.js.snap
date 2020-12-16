@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderNambaFood renders correctly 1`] = `
+<section
+  class="case_header"
+>
+  <video
+    autoplay="autoplay"
+    class="case_main-video"
+    loop="loop"
+    muted="muted"
+  >
+    <source
+      src="../../assets/img/Cases/nambafood/video/main.mp4"
+      type="video/mp4"
+    />
+    
+    Your browser does not support the video tag.
+  
+  </video>
+   
+  <div
+    class="case_logotype nambafood"
+  />
+   
+  <h1
+    class="case_header-title"
+  >
+    Namba Food 
+    <br />
+     Top Delivery Service 
+    <br
+      class="case_text-break"
+    />
+     in 
+    <br
+      class="case_text-break-mobile"
+    />
+     Central Asia
+  </h1>
+   
+  <button
+    class="case_more-button case_more__button"
+    type="button"
+  >
+    Read our case studies ↓
+  </button>
+</section>
+`;

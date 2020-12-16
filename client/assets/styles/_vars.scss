@@ -14,6 +14,7 @@ $bgcolor--black-light: #ffffff1a;
 $bgcolor--white-darken: #fcfcfd;
 $bgcolor--pink: #cc0a6a;
 $bgcolor--silver: #f4f4f4;
+$bgcolor--gold: #b19a5a;
 
 // ---------- Text ------------ //
 $text-color--white: #f5f7f9;
@@ -111,7 +112,7 @@ $software-icon-background: #eef0f2;
 $our-valued-icon-background: #191A1B;
 
 @mixin h2_title {
-  font-family: 'Poppins-Bold', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 62px;
   line-height: 120%;
@@ -130,7 +131,7 @@ $our-valued-icon-background: #191A1B;
 }
 
 @mixin h3_title {
-  font-family: 'Poppins-Bold', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;

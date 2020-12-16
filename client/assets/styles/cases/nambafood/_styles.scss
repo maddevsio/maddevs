@@ -65,10 +65,6 @@
     border-top-right-radius: 3px;
   }
 
-  &_animation_block {
-    height: 104px;
-  }
-
   &_delivery-control-card {
     padding: 16px;
     border-radius: 8px;
@@ -160,11 +156,6 @@
 
     &_delivery-control-card {
       padding: 8px 20px
-    }
-
-    // Выставил временно
-    &_animation_block {
-      height: 0;
     }
 
     &_pipelines-image-desktop {

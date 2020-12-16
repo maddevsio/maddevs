@@ -87,7 +87,7 @@ export default {
   position: relative;
   z-index: 1;
   color: $text-color--grey;
-  font-family: 'Poppins-Regular', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-top: 26px;
   font-size: 16px;
   line-height: 24px;
