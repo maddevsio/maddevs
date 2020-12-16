@@ -56,22 +56,16 @@ export default {
 
       const limitedText = firstParagraph.substr(0, textLimit);
 
-      if (firstParagraph.length > textLimit) {
-        return limitedText.substr(0, limitedText.lastIndexOf(' ')) + '...';
-      } else {
-        return firstParagraph;
-      }
+      return firstParagraph.length > textLimit
+        ? limitedText.substr(0, limitedText.lastIndexOf(' ')) + '...'
+        : firstParagraph;
     }
   },
   computed: {
     formattedDate: function(){
-      const vm = this;
+      const date = this ? this.post.data.date : '';
 
-      if(vm === undefined) {
-        return '';
-      }
-
-      return Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(vm.post.data.date));
+      return Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(date));
     },
     link: function () {
       return linkResolver(this.post);
