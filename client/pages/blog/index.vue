@@ -194,196 +194,237 @@ export default {
 
 </script>
 
-<style lang="sass" scoped>
-@import '../../assets/styles/_vars'
+<style lang="scss" scoped>
+  @import '../../assets/styles/_vars';
 
-.container
-  max-width: 1240px
-  margin: 0 auto
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
 
-.home
-  padding-top: 100px
+  .home {
+    padding-top: 100px;
 
-  .blog-avatar
-    height: 140px
-    width: 140px
-    border-radius: 50%
-    background-position: center
-    background-size: cover
-    margin: 0 auto
+    .blog-avatar {
+      height: 140px;
+      width: 140px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
+      margin: 0 auto;
+    }
 
-  .latest-posts
-    background-color: $text-color--white-primary
-    display: flex
-    justify-content: space-between
+    .latest-posts {
+      background-color: $text-color--white-primary;
+      display: flex;
+      justify-content: space-between;
 
-    .latest-posts__wrapper
-      display: flex
-      flex-wrap: wrap
-      margin: 96px -10px 0
+      .latest-posts__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 96px -10px 0;
 
-      a
-        text-decoration: none
+        a {
+          text-decoration: none;
+        }
 
-      .latest-posts__single-post
-        width: 33.3333%
-        margin-bottom: 80px
+        .latest-posts__single-post {
+          width: 33.3333%;
+          margin-bottom: 80px;
 
-        .single-post__wrapper
-          padding: 0 10px
-
-
-
-  .customer-university
-    background-color: $border-color--grey-cases
-    padding: 350px 0
-
-    h1
-      color: $text-color--red
-      font-size: 62px
-      line-height: 74px
-      font-weight: 900
-      text-align: center
-
-  .filtered-posts
-    background-color: $text-color--white-primary
-    padding-top: 48px
-
-    .filter
-      margin-bottom: 48px
-
-      .filter-list
-        display: flex
-        flex-wrap: wrap
-        justify-content: flex-start
-        margin: 0 -10px
-
-        .filter-item__wrapper
-          width: 16.6666%
-
-          .filter-item
-            padding: 0 10px
-
-    .filtered-posts__wrapper
-      display: flex
-      margin: 50px -10px 0
-      flex-wrap: wrap
-      padding-bottom: 80px
-
-      a
-        text-decoration: none
-
-      .filtered-posts__single-post
-        width: 33.3333%
-
-        .single-post__wrapper
-          padding: 0 10px
+          .single-post__wrapper {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
 
 
-.head-content
-  margin: 60px auto
+    .customer-university {
 
-.blog-title
-  font-size: 76px
+      background-color: $border-color--grey-cases;
+      padding: 350px 0;
 
-.blog-title,
-.filter-title,
-.filter-label,
-.reset-filter
-  color: $text-color--black
+      h1 {
+        color: $text-color--red;
+        font-size: 62px;
+        line-height: 74px;
+        font-weight: 900;
+        text-align: center;
+      }
+    }
 
-.filter-title
-  font-family: 'Poppins-Bold', sans-serif
-  font-weight: 700
+    .filtered-posts {
+      background-color: $text-color--white-primary;
+      padding-top: 48px;
 
-.blog-description
-  margin: 10px 0
-  color: $text-color--grey
-  text-align: center
-  font-size: 46px
+      .filter {
 
-.blog-main
-  width: 85%;
-  display: flex
-  flex-direction: column
+        margin-bottom: 48px;
 
-  &.single img
-    width: 100%
-    height: auto
-  &.single a
-    text-decoration: none
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.8) 75%)
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.8) 75%)
-    background-repeat: repeat-x
-    background-size: 2px 2px
-    background-position: 0 23px
+        .filter-list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          margin: 0 -10px;
 
-.blog-post-wrapper
-  margin: 0
-  padding-bottom: 50px
+          .filter-item__wrapper {
+            width: 16.6666%;
 
-  a
-    text-decoration: none
+            .filter-item {
+              padding: 0 10px;
+            }
+          }
+        }
+      }
 
-.filter
-  min-width: 150px
+      .filtered-posts__wrapper {
+        display: flex;
+        margin: 50px -10px 0;
+        flex-wrap: wrap;
+        padding-bottom: 80px;
 
-.filter-list
-  display: grid
-  grid-template-columns: repeat(1, 100%)
-  grid-gap: 10px
-  margin-top: 10px
+        a {
+          text-decoration: none;
+        }
 
-.radio-input
-  display: none
+        .filtered-posts__single-post {
+          width: 33.3333%;
 
-.radio-input:checked + .filter-label, .filter-label:hover
-  border-color: $border-color--red
-  color: $text-color--red
-
-.filter-label,
-.reset-filter
-  border-radius: 2px
-  cursor: pointer
+          .single-post__wrapper {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
 
 
-.filter-label
-  display: block
-  padding: 47px 22px 22px
-  box-shadow: none
-  background-color: $bgcolor--silver
-  transition: 0.2s
-  font-family: 'Poppins-Regular', sans-serif
-  font-size: 18px
-  line-height: 22px
-  font-weight: 700
-  min-height: 44px
+  .head-content {
+    margin: 60px auto;
+  }
 
-.reset-filter
-  width: 100%
-  margin-top: 10px
-  padding: 8px 7px
-  font-family: 'Poppins-Bold', sans-serif
-  font-weight: 700
-  background-color: $bgcolor--red
-  border: none
+  .blog-title {
+    font-size: 76px;
+  }
 
-.reset-filter:active
-  background-color: #cc4247
-  border-color: #cc4247
+  .blog-title,
+  .filter-title,
+  .filter-label,
+  .reset-filter {
+    color: $text-color--black;
+  }
 
-.load-more-button
-  padding: 12px 156px
-  border: 1px solid $border-color--black
-  font-size: 16px
-  line-height: 26px
-  background-color: transparent
-  margin-bottom: 73px
-  cursor: pointer
+  .filter-title {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 700;
+  }
 
-  &:hover
-    color: $text-color--red
+  .blog-description {
+    margin: 10px 0;
+    color: $text-color--grey;
+    text-align: center;
+    font-size: 46px;
+  }
 
-.load-more-button__wrapper
-  text-align: center
+  .blog-main {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+
+    &.single img {
+      width: 100%;
+      height: auto;
+    }
+
+    &.single a {
+      text-decoration: none;
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.8) 75%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.8) 75%);
+      background-repeat: repeat-x;
+      background-size: 2px 2px;
+      background-position: 0 23px;
+    }
+  }
+
+  .blog-post-wrapper {
+    margin: 0;
+    padding-bottom: 50px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .filter {
+    min-width: 150px;
+  }
+
+  .filter-list {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-gap: 10px;
+    margin-top: 10px;
+  }
+
+  .radio-input {
+    display: none;
+  }
+
+  .radio-input:checked + .filter-label, .filter-label:hover {
+    border-color: $border-color--red;
+    color: $text-color--red;
+  }
+
+  .filter-label,
+  .reset-filter {
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .filter-label {
+    display: block;
+    padding: 47px 22px 22px;
+    box-shadow: none;
+    background-color: $bgcolor--silver;
+    transition: 0.2s;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    min-height: 44px;
+  }
+
+  .reset-filter {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 7px;
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 700;
+    background-color: $bgcolor--red;
+    border: none;
+  }
+
+  .reset-filter:active {
+    background-color: #cc4247;
+    border-color: #cc4247;
+  }
+
+  .load-more-button {
+    padding: 12px 156px;
+    border: 1px solid $border-color--black;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: transparent;
+    margin-bottom: 73px;
+    cursor: pointer;
+
+    &:hover {
+      color: $text-color--red;
+    }
+
+    &__wrapper {
+      text-align: center;
+    }
+  }
 </style>
