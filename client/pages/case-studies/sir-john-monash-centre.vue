@@ -54,14 +54,16 @@
           Personalized experience at your own speed and language
         </TextParagraph>
       </section>
-      <section class="container_middle">
-        <Picture
-          pictureFolder="sjmc"
-          fileName="multimedia-management"
-          fileExtension="jpg"
-          alt=""
-          :lazyLoading="true"
-        />
+      <section class="container_full background-color-silver">
+        <div class="container_full case_full-screen-img">
+          <Picture
+            pictureFolder="sjmc"
+            fileName="multimedia-management"
+            fileExtension="jpg"
+            alt=""
+            :lazyLoading="true"
+          />
+        </div>
       </section>
       <section class="container_regular">
         <TextParagraph class="m-48_top media-m-24_top">
@@ -150,14 +152,10 @@
           WATCHOUT is a multi-display production and presentation system that enables SJMC to arrange displays in unusual ways and create seamless images and videos. The absence of gaps between display surfaces is possible due to the WATCHOUT system that distributes the content and keeps everything in sync across all connected displays.
         </TextParagraph>
       </section>
-      <section class="container_middle">
-        <Picture
-          pictureFolder="sjmc"
-          fileName="watchout"
-          fileExtension="jpg"
-          alt=""
-          :lazyLoading="true"
-        />
+      <section class="container_full background-color-silver">
+        <section class="container_middle">
+          <img src="../../assets/img/Cases/sjmc/gif/watchpax.gif" class="case_gif">
+        </section>
       </section>
       <section class="container_regular">
         <h3 class="case_title_h3 m-96_top media-m-48_top m-12_bottom">BRIX</h3>
@@ -165,14 +163,10 @@
           Essentially BRIX is an ultra-compact multimedia computer that can be hung on a wall. The advanced graphics card simultaneously delivers heavy content to multiple monitors. Moreover, each BRIX is managed by MMIT Brain to work in synchronization with mobile applications.
         </TextParagraph>
       </section>
-      <section class="container_middle">
-        <Picture
-          pictureFolder="sjmc"
-          fileName="brix"
-          fileExtension="jpg"
-          alt=""
-          :lazyLoading="true"
-        />
+      <section class="container_full background-color-silver">
+        <section class="container_middle">
+          <img src="../../assets/img/Cases/sjmc/gif/brix.gif" class="case_gif">
+        </section>
       </section>
       <section class="container_regular">
         <h3 class="case_title_h3 m-96_top media-m-48_top m-12_bottom">Bluetooth beacons</h3>
