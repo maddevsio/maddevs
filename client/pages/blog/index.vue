@@ -6,8 +6,8 @@
       </div>
       <div class="latest-posts" v-if="posts && homepageContent">
         <div class="container">
-          <div v-if="posts.length !== 0" class="latest-posts__wrapper">
-            <section v-for="post in posts" :key="post.id" :post="post" class="latest-posts__single-post">
+          <div v-if="recentPosts.length !== 0" class="latest-posts__wrapper">
+            <section v-for="post in recentPosts" :key="post.id" :post="post" class="latest-posts__single-post">
               <div class="single-post__wrapper">
                 <recommended-blog-widget :post="post"/>
               </div>
@@ -15,28 +15,31 @@
           </div>
         </div>
       </div>
-      <div class="customer-university">
-        <h1>Customer University</h1>
-      </div>
+<!--      <div class="customer-university">-->
+<!--        <h1>Customer University</h1>-->
+<!--      </div>-->
       <div class="filtered-posts" v-if="posts.length">
         <div class="container">
           <div class="filter">
             <ul class="filter-list">
               <li class="filter-item__wrapper" v-for="(tag, i) in tags" :key="i">
                 <div class="filter-item">
-                  <input type="radio" :id="tag.inputId" name="Tag" class="radio-input">
-                  <label :for="tag.inputId" class="filter-label" @click="getPostsByTag(tag.tagName)">{{ tag.tagName }}</label>
+                  <input type="radio" :id="tag.inputId" v-model="currentTag" :value="tag.tagName" name="Tag" class="radio-input">
+                  <label :for="tag.inputId" class="filter-label">{{ tag.tagName }}</label>
                 </div>
               </li>
             </ul>
             <button class="reset-filter" @click="resetFilter()" v-if="filterIsActive">Reset filter</button>
           </div>
           <div v-if="filteredPosts.length !== 0" class="filtered-posts__wrapper">
-            <section v-for="post in filteredPosts" :key="post.id" :post="post" class="filtered-posts__single-post">
+            <section v-for="(post, i) in filteredPostsToShow" :key="i" :post="post" class="filtered-posts__single-post">
               <div class="single-post__wrapper">
                 <recommended-blog-widget :post="post"/>
               </div>
             </section>
+          </div>
+          <div class="load-more-button__wrapper" v-if="totalPages > page">
+            <button class="load-more-button" @click="incrementPage">See more</button>
           </div>
         </div>
       </div>
@@ -49,7 +52,7 @@ import BlogWidget from '@/components/Blog/BlogWidget.vue';
 import RecommendedBlogWidget from '../../components/Blog/RecommendedBlogWidget';
 import FeaturedPost from '../../components/Blog/FeaturedPost';
 
-const POSTS_PAGE_SIZE = 3;
+const POSTS_PAGE_SIZE = 6;
 
 export default {
   name: 'Blog',
@@ -63,10 +66,11 @@ export default {
     return {
       homepageContent: {},
       posts: [],
-      filteredPosts: [],
       tags: [],
       filterIsActive: false,
       featuredPost: null,
+      currentTag: null,
+      page: 1,
       metaTitle: 'Blog',
       description: '',
       ogUrl: 'https://maddevs.io/blog'
@@ -107,18 +111,12 @@ export default {
     },
 
     async getAllPosts() {
-      const posts = await this.$prismic.api.query(
-        this.$prismic.predicates.at('document.type', 'post'),
-        {
-          orderings : '[my.post.date desc]',
-          pageSize: POSTS_PAGE_SIZE,
-          page: 1
-        }
-      );
+      const posts = await this.$prismic.api.query(this.$prismic.predicates.at('document.type', 'post'), {orderings : '[my.post.date desc]'});
+
       this.posts = posts.results;
-      this.featuredPost = posts.results[0];
+      this.featuredPost = posts.results.find(post => post.tags.includes('Featured post'));
       this.tags = this.getTagsFromPosts(posts.results);
-      this.getPostsByTag();
+      this.currentTag = this.tags.length ? this.tags[0].tagName : null;
     },
 
     async getHomePageContent() {
@@ -131,33 +129,9 @@ export default {
       };
     },
 
-    async getPostsByTag(tag) {
-      if(!tag) {
-        this.filteredPosts = this.posts;
-        return;
-      }
-
-      const vm = this;
-      const page = this.filteredPosts.length / POSTS_PAGE_SIZE + 1;
-      console.log('page', page);
-
-      const posts = await this.$prismic.api.query(this.$prismic.predicates.at('document.tags', [tag]), {
-        page,
-        pageSize: POSTS_PAGE_SIZE,
-        orderings: '[my.post.date desc]'
-      });
-
-      if (posts !== null && posts.results.length !== 0) {
-        this.filterIsActive = true;
-        posts.results.forEach(post => vm.filteredPosts.push(post));
-        this.filteredPosts = posts.results;
-      } else {
-        this.filteredPosts = [];
-      }
-    },
-
     resetFilter() {
       this.filterIsActive = false;
+      this.currentTag = null;
       this.resetRadioInputs();
       this.getAllPosts();
     },
@@ -190,7 +164,30 @@ export default {
           inputId: tag.toLowerCase().replace(/\s/g , '-') // Replaced space on the dash
         });
       });
-      return tagsObjectList;
+      return tagsObjectList.filter(tag => tag.tagName !== 'Featured post');
+    },
+
+    incrementPage() {
+      this.page++;
+    }
+  },
+  computed: {
+    filteredPosts: function() {
+      return this.posts.filter(post => post.tags.includes(this.currentTag));
+    },
+    filteredPostsToShow: function() {
+      return this.filteredPosts.slice(0, POSTS_PAGE_SIZE * this.page);
+    },
+    recentPosts: function() {
+      return this.posts.slice(0, 5);
+    },
+    totalPages: function() {
+      return Math.ceil(this.filteredPosts.length / POSTS_PAGE_SIZE);
+    }
+  },
+  watch: {
+    currentTag: function() {
+      this.page = 1;
     }
   }
 };
@@ -271,6 +268,7 @@ export default {
       display: flex
       margin: 50px -10px 0
       flex-wrap: wrap
+      padding-bottom: 80px
 
       a
         text-decoration: none
@@ -373,4 +371,19 @@ export default {
 .reset-filter:active
   background-color: #cc4247
   border-color: #cc4247
+
+.load-more-button
+  padding: 12px 156px
+  border: 1px solid $border-color--black
+  font-size: 16px
+  line-height: 26px
+  background-color: transparent
+  margin-bottom: 73px
+  cursor: pointer
+
+  &:hover
+    color: $text-color--red
+
+.load-more-button__wrapper
+  text-align: center
 </style>

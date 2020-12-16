@@ -113,7 +113,6 @@ export default {
     &__meta {
       display: flex;
       align-items: center;
-      margin: 20px 0;
       font-size: 13px;
       font-family: 'Inter-Regular', sans-serif;
 
