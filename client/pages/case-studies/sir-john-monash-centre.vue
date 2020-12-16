@@ -177,14 +177,13 @@
           The limited space of SJMC creates a challenge to be able to detect each visitors' location and continuously refresh a list of available content nearby.
         </TextParagraph>
       </section>
-      <section class="container_middle">
-        <Picture
-          pictureFolder="sjmc"
-          fileName="phone-video"
-          fileExtension="jpg"
-          alt=""
-          :lazyLoading="true"
-        />
+      <section class="container_full case_sjmc-phone-video-section background-color-black-primary">
+        <div class="case_sjmc-phone-video-wrapper case_full-screen-video">
+          <video width="100%" height="100%" controls="true">
+            <source src="../../assets/video/sjmc/bluetooth-beacons-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </section>
       <section class="container_regular m-56_top media-m-24_top m-107_bottom media-m-48_bottom">
         <div class="case_column-container">

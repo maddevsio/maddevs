@@ -22,9 +22,44 @@
     max-width: 1440px;
   }
 
+  &_sjmc-phone-video-section {
+    position: relative;
+    padding: 60px 0;
+  }
+
+  &_sjmc-phone-video-wrapper {
+    width: 35%;
+    max-width: 505px;
+    min-width: 305px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: calc(100% + 10px);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url("../../assets/img/Cases/sjmc/png/bluetooth-beacons-video-background.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    @media screen and (max-width: 360px) {
+      min-width: 280px;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     &_numbered-title {
       margin-left: 30px;
+    }
+
+    &_sjmc-phone-video-section {
+      padding: 50px 0;
     }
   }
 }
