@@ -158,7 +158,7 @@ export default {
     &__header-phone,
     button {
       font-size: 16px;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Poppins-Regular', sans-serif;
       text-decoration: none;
       letter-spacing: -0.02em;
     }
@@ -169,7 +169,7 @@ export default {
       &::after {
         content: '↓';
         font-size: 17px;
-        font-family: 'Poppins', sans-serif;;
+        font-family: 'Poppins-Regular', sans-serif;
         color: transparent;
       }
     }

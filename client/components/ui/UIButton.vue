@@ -44,7 +44,7 @@ export default {
     border-radius: 4px;
     color: $text-color--white;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Bold', sans-serif;
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 24px;

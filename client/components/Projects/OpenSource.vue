@@ -95,7 +95,7 @@ export default {
   &__description,
   &__paragraph,
   &__github-link {
-    font-family: 'Poppins';
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.02em;

@@ -223,7 +223,7 @@ export default {
 
     &__blog-sub-title {
       margin-bottom: 36px;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Poppins-Regular', sans-serif;
       color: $text-color--grey;
       font-size: 20px;
       font-weight: bold;
@@ -326,7 +326,7 @@ export default {
       margin-top: 0;
       margin-bottom: -5px;
       font-size: 1.9em;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Poppins-Bold', sans-serif;
       font-weight: 700;
     }
 

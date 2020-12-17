@@ -33,7 +33,7 @@ export default {
       font-size: 40px;
       color: $text-color--red;
       letter-spacing: -1px;
-      font-family: 'Poppins', sans-serif;;
+      font-family: 'Poppins-Bold', sans-serif;;
       font-weight: 700;
     }
 
@@ -42,7 +42,7 @@ export default {
       font-size: 18px;
       color: $text-color--grey;
       letter-spacing: -0.03em;
-      font-family: 'Poppins', sans-serif;;
+      font-family: 'Poppins-Regular', sans-serif;
     }
 
     .close-modal {

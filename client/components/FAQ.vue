@@ -135,7 +135,7 @@ export default {
     margin-top: -48px;
     padding-top: 96px;
     padding-bottom: 8px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 24px;
     line-height: 136%;
     letter-spacing: 0;
@@ -158,7 +158,7 @@ export default {
 
   &__link,
   &__paragraph {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.02em;
