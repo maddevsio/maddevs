@@ -91,6 +91,7 @@
           :components="swiperMultimediaManagement"
           :swiperFrame="false"
           :boxShadow="false"
+          sliderDescription="Australia-based IT company to create integrated multimedia solutions."
         />
       </section>
       <section class="container_regular">

@@ -21,6 +21,9 @@
         </swiper-slide>
       </swiper>
     </div>
+    <p v-if="sliderDescription !== ''" class="slider-description">
+      {{sliderDescription}}
+    </p>
     <swiper class="swiper gallery-thumbs" :options="swiperOptionThumbs" ref="swiperThumbs">
       <swiper-slide v-for="element in components" :key="element.fileName">
         <Picture
@@ -87,6 +90,10 @@ export default {
     boxShadow: {
       type: Boolean,
       default: false
+    },
+    sliderDescription: {
+      type: String,
+      default: ''
     }
   }
 };
@@ -94,6 +101,7 @@ export default {
 
 <style lang="scss">
 @import '../../assets/styles/cases/icons';
+@import '../../assets/styles/cases/mixins';
 
 .thumb-example {
   img {
@@ -121,5 +129,11 @@ export default {
   &.gallery-thumbs .swiper-slide-active {
     opacity: 1;
   }
+}
+
+.slider-description {
+  margin: 9px 0;
+  text-align: center;
+  @include default_text($text-color--grey-img-description, 13px, 21.58px, -0.02em, normal);
 }
 </style>

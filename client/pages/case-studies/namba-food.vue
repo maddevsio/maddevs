@@ -184,6 +184,7 @@
           :components="swiperAdminPanel"
           :swiperFrame="true"
           :boxShadow="true"
+          sliderDescription=""
         />
       </section>
       <section class="container_regular">
