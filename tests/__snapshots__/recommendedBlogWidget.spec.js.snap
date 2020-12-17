@@ -14,7 +14,7 @@ exports[`Recommended blog widget component renders correctly 1`] = `
      
     <div>
       <h2
-        class="post-title"
+        class="blog-post__title"
       >
         The best practices for improving layout quality on your website
       </h2>
@@ -26,7 +26,7 @@ exports[`Recommended blog widget component renders correctly 1`] = `
       </p>
        
       <div
-        class="blog-post-meta"
+        class="blog-post__meta"
       >
         <span
           class="created-at"
