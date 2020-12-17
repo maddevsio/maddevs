@@ -15,9 +15,6 @@
           </div>
         </div>
       </div>
-<!--      <div class="customer-university">-->
-<!--        <h1>Customer University</h1>-->
-<!--      </div>-->
       <div class="filtered-posts" v-if="posts.length">
         <div class="container">
           <div class="filter">
@@ -31,7 +28,6 @@
                 </li>
               </ul>
             </perfect-scrollbar>
-<!--            <button class="reset-filter" @click="resetFilter()" v-if="filterIsActive">Reset filter</button>-->
           </div>
           <div v-if="filteredPosts.length !== 0" class="filtered-posts__wrapper">
             <section v-for="(post, i) in filteredPostsToShow" :key="i" :post="post" class="filtered-posts__single-post">
@@ -51,10 +47,8 @@
 
 <script>
 import BlogWidget from '@/components/Blog/BlogWidget.vue';
-import RecommendedBlogWidget from '../../components/Blog/RecommendedBlogWidget';
-import FeaturedPost from '../../components/Blog/FeaturedPost';
-
-const POSTS_PAGE_SIZE = 6;
+import RecommendedBlogWidget from '@/components/Blog/RecommendedBlogWidget';
+import FeaturedPost from '@/components/Blog/FeaturedPost';
 
 export default {
   name: 'Blog',
@@ -73,6 +67,7 @@ export default {
       featuredPost: null,
       currentTag: null,
       page: 1,
+      pageSize: 6,
       metaTitle: 'Blog',
       description: '',
       ogUrl: 'https://maddevs.io/blog'
@@ -113,7 +108,10 @@ export default {
     },
 
     async getAllPosts() {
-      const posts = await this.$prismic.api.query(this.$prismic.predicates.at('document.type', 'post'), {orderings : '[my.post.date desc]'});
+      const posts = await this.$prismic.api.query(
+        this.$prismic.predicates.at('document.type', 'post'),
+        {orderings : '[my.post.date desc]'}
+      );
 
       this.posts = posts.results;
       this.featuredPost = posts.results.find(post => post.tags.includes('Featured post'));
@@ -178,13 +176,13 @@ export default {
       return this.posts.filter(post => post.tags.includes(this.currentTag));
     },
     filteredPostsToShow: function() {
-      return this.filteredPosts.slice(0, POSTS_PAGE_SIZE * this.page);
+      return this.filteredPosts.slice(0, this.pageSize * this.page);
     },
     recentPosts: function() {
       return this.posts.slice(0, 5);
     },
     totalPages: function() {
-      return Math.ceil(this.filteredPosts.length / POSTS_PAGE_SIZE);
+      return Math.ceil(this.filteredPosts.length / this.pageSize);
     }
   },
   watch: {
@@ -241,7 +239,6 @@ export default {
       }
     }
 
-
     .customer-university {
 
       background-color: $border-color--grey-cases;
@@ -280,7 +277,7 @@ export default {
         }
       }
 
-      .filtered-posts__wrapper {
+      &__wrapper {
         display: flex;
         margin: 50px -10px 0;
         flex-wrap: wrap;
@@ -289,13 +286,13 @@ export default {
         a {
           text-decoration: none;
         }
+      }
 
-        .filtered-posts__single-post {
-          width: 33.3333%;
+      &__single-post {
+        width: 33.3333%;
 
-          .single-post__wrapper {
-            padding: 0 10px;
-          }
+        .single-post__wrapper {
+          padding: 0 10px;
         }
       }
     }
@@ -360,6 +357,10 @@ export default {
 
   .filter {
     min-width: 150px;
+
+    /deep/ .ps__rail-x {
+      display: none;
+    }
   }
 
   .filter-list {
@@ -445,7 +446,7 @@ export default {
 
       .latest-posts {
 
-        .latest-posts__wrapper {
+        &__wrapper {
           margin-top: 29px;
         }
       }
@@ -453,10 +454,6 @@ export default {
       .filtered-posts {
 
         .filter {
-
-          /deep/ .ps__rail-x {
-            display: none;
-          }
 
           .filter-list {
             flex-wrap: nowrap;
@@ -479,21 +476,21 @@ export default {
           }
         }
 
-        .filtered-posts__wrapper {
+        &__wrapper {
           padding-bottom: 38px;
 
           /deep/ .blog-post {
             display: flex;
             margin-bottom: 36px;
 
-            .blog-post__cover-image {
+            &__cover-image {
               width: 124px;
               height: 124px;
               flex-shrink: 0;
               margin-right: 16px;
             }
 
-            .blog-post-meta {
+            &__meta {
               margin: 8px 0;
 
               .tag {
@@ -501,7 +498,7 @@ export default {
               }
             }
 
-            .blog-post__paragraph {
+            &__paragraph {
               display: none;
             }
           }

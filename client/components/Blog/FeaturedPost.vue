@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import PostAuthor from './PostAuthor';
-import PostTag from './PostTag';
+import PostAuthor from '@/components/Blog/PostAuthor';
+import PostTag from '@/components/Blog/PostTag';
 import linkResolver from '@/plugins/link-resolver.js';
 
 export default {
@@ -79,7 +79,7 @@ export default {
 
   .featured-post {
     color: $text-color--white-primary;
-    text-decoration: none !important;
+    text-decoration: none;
     display: block;
 
     &__wrapper {
@@ -131,41 +131,42 @@ export default {
   }
 
   @media only screen and (max-width: 991px) {
-    .featured-post__main {
-      order: 2;
+    .featured-post {
 
-      .featured-post__paragraph {
+      &__main {
+        order: 2;
+      }
+
+      &__paragraph {
         margin-bottom: 38px;
       }
 
-      .featured-post__data {
+      &__data {
         display: block;
-
-        .featured-post__meta {
-          justify-content: space-between;
-
-          /deep/ .post-tag {
-            padding: 8px 16px;
-            line-height: 22px;
-            margin-left: 0;
-          }
-        }
 
         /deep/ .blog-post__author {
           margin-bottom: 16px;
         }
-
-
       }
-    }
 
-    .featured-post__image-wrapper {
-      order: 1;
-      margin-bottom: 16px;
-      text-align: center;
+      &__meta {
+        justify-content: space-between;
 
-      img  {
-        max-width: 100%;
+        /deep/ .post-tag {
+          padding: 8px 16px;
+          line-height: 22px;
+          margin-left: 0;
+        }
+      }
+
+      &__image-wrapper {
+        order: 1;
+        margin-bottom: 16px;
+        text-align: center;
+
+        img  {
+          max-width: 100%;
+        }
       }
     }
   }

@@ -3,9 +3,9 @@
     <div class="blog-post">
       <div class="blog-post__cover-image" :style="`background-image: url(${post.data.featured_image.url})`"/>
       <div>
-        <h2 class="post-title">{{ $prismic.asText(post.data.title) }}</h2>
+        <h2 class="blog-post__title">{{ $prismic.asText(post.data.title) }}</h2>
         <p class="blog-post__paragraph">{{getFirstParagraph(post)}}</p>
-        <div class="blog-post-meta">
+        <div class="blog-post__meta">
           <span class="created-at">{{ formattedDate }}</span>
           <span class="tag" v-if="post.tags.length">{{post.tags[0]}}</span>
         </div>
@@ -17,7 +17,7 @@
 
 <script>
 import linkResolver from '@/plugins/link-resolver.js';
-import PostAuthor from './PostAuthor';
+import PostAuthor from '@/components/Blog/PostAuthor';
 export default {
   name: 'RecommendedBlogWidget',
   props: {
@@ -105,13 +105,13 @@ export default {
       height: auto;
     }
 
-    .post-title {
+    &__title {
       font-size: 21px;
       line-height: 28px;
       letter-spacing: -1px;
     }
 
-    .blog-post-meta {
+    &__meta {
       display: flex;
       align-items: center;
       margin: 20px 0;
