@@ -971,7 +971,7 @@ exports[`Namba food renders correctly 1`] = `
         class="slider-content"
       >
         <div
-          class="swiper-container thumb-example"
+          class="swiper-container thumb-example box-shadow"
         >
           <picture>
             <source
@@ -1043,6 +1043,8 @@ exports[`Namba food renders correctly 1`] = `
             />
           </div>
         </div>
+         
+        <!---->
          
         <div
           class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
