@@ -1,21 +1,13 @@
 .case {
-  &_numbered-title {
-    margin-left: 41px;
-  }
-
   &_column-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 48px;
+    grid-column-gap: 40px;
 
     @media screen and (max-width: 790px) {
       grid-template-columns: repeat(1, 1fr);
-      grid-row-gap: 48px;
+      grid-row-gap: 25px;
     }
-  }
-
-  &_column-item {
-    max-width: 333px;
   }
 
   &_full-screen-img {
@@ -54,10 +46,6 @@
   }
 
   @media screen and (max-width: 768px) {
-    &_numbered-title {
-      margin-left: 30px;
-    }
-
     &_sjmc-phone-video-section {
       padding: 50px 0;
     }

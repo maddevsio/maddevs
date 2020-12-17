@@ -70,7 +70,7 @@ export default {
 		&__main-title {
 			margin-bottom: 43px;
 			font-size: 62px;
-			font-family: 'Poppins', sans-serif;
+			font-family: 'Poppins-Bold', sans-serif;
       font-weight: 700;
 			line-height: 120%;
 			letter-spacing: -1px;
