@@ -1,31 +1,45 @@
 <template>
-  <section class="home container">
-    <div class="head-content">
-      <h1 class="blog-title title">
-        {{ homepageContent.headline }}
-      </h1>
-      <p class="blog-description title-md">{{ homepageContent.description }}</p>
-    </div>
+  <section class="home">
     <div class="body-content">
-      <div class="posts" v-if="posts && homepageContent">
-        <div v-if="posts.length !== 0" class="blog-main">
-          <section v-for="post in posts" :key="post.id" v-bind:post="post" class="blog-post-wrapper">
-            <blog-widget :post="post"></blog-widget>
-          </section>
-        </div>
-        <div v-else class="blog-main">
-          <p>No Posts published at this time.</p>
+      <div v-if="posts.length">
+        <featured-post :post="featuredPost" v-if="featuredPost" class="container"/>
+      </div>
+      <div class="latest-posts" v-if="posts && homepageContent">
+        <div class="container">
+          <div v-if="recentPosts.length !== 0" class="latest-posts__wrapper">
+            <section v-for="post in recentPosts" :key="post.id" :post="post" class="latest-posts__single-post">
+              <div class="single-post__wrapper">
+                <recommended-blog-widget :post="post"/>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
-      <div class="filter">
-        <p class="filter-title paragraph">Filter by tags:</p>
-        <ul class="filter-list" v-for="(tag, i) in tags" :key="i">
-          <li class="filter-item">
-            <input type="radio" :id="tag.inputId" name="Tag" class="radio-input">
-            <label :for="tag.inputId" class="filter-label" @click="getPostsByTag(tag.tagName)">{{ tag.tagName }}</label>
-          </li>
-        </ul>
-        <button class="reset-filter" @click="resetFilter()" v-if="filterIsActive">Reset filter</button>
+      <div class="filtered-posts" v-if="posts.length">
+        <div class="container">
+          <div class="filter">
+            <perfect-scrollbar :options="{swipeEasing: true, suppressScrollY: true, handlers: ['wheel', 'touch', 'drag-thumb']}">
+              <ul class="filter-list">
+                <li class="filter-item__wrapper" v-for="(tag, i) in tags" :key="i">
+                  <div class="filter-item">
+                    <input type="radio" :id="tag.inputId" v-model="currentTag" :value="tag.tagName" name="Tag" class="radio-input">
+                    <label :for="tag.inputId" class="filter-label">{{ tag.tagName }}</label>
+                  </div>
+                </li>
+              </ul>
+            </perfect-scrollbar>
+          </div>
+          <div v-if="filteredPosts.length !== 0" class="filtered-posts__wrapper">
+            <section v-for="(post, i) in filteredPostsToShow" :key="i" :post="post" class="filtered-posts__single-post">
+              <div class="single-post__wrapper">
+                <recommended-blog-widget :post="post"/>
+              </div>
+            </section>
+          </div>
+          <div class="load-more-button__wrapper" v-if="totalPages > page">
+            <button class="load-more-button" @click="incrementPage">See more</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -33,12 +47,16 @@
 
 <script>
 import BlogWidget from '@/components/Blog/BlogWidget.vue';
+import RecommendedBlogWidget from '@/components/Blog/RecommendedBlogWidget';
+import FeaturedPost from '@/components/Blog/FeaturedPost';
 
 export default {
   name: 'Blog',
   layout: 'default',
   components: {
-    BlogWidget
+    BlogWidget,
+    FeaturedPost,
+    RecommendedBlogWidget
   },
   data() {
     return {
@@ -46,6 +64,10 @@ export default {
       posts: [],
       tags: [],
       filterIsActive: false,
+      featuredPost: null,
+      currentTag: null,
+      page: 1,
+      pageSize: 6,
       metaTitle: 'Blog',
       description: '',
       ogUrl: 'https://maddevs.io/blog'
@@ -88,10 +110,13 @@ export default {
     async getAllPosts() {
       const posts = await this.$prismic.api.query(
         this.$prismic.predicates.at('document.type', 'post'),
-        { orderings : '[my.post.date desc]' }
+        {orderings : '[my.post.date desc]'}
       );
+
       this.posts = posts.results;
+      this.featuredPost = posts.results.find(post => post.tags.includes('Featured post'));
       this.tags = this.getTagsFromPosts(posts.results);
+      this.currentTag = this.tags.length ? this.tags[0].tagName : null;
     },
 
     async getHomePageContent() {
@@ -104,19 +129,9 @@ export default {
       };
     },
 
-    async getPostsByTag(tag) {
-      const posts = await this.$prismic.api.query(this.$prismic.predicates.at('document.tags', [tag]));
-
-      if(posts !== null && posts.results.length !== 0) {
-        this.posts = posts.results;
-        this.filterIsActive = true;
-      } else {
-        this.posts = [];
-      }
-    },
-
     resetFilter() {
       this.filterIsActive = false;
+      this.currentTag = null;
       this.resetRadioInputs();
       this.getAllPosts();
     },
@@ -149,123 +164,352 @@ export default {
           inputId: tag.toLowerCase().replace(/\s/g , '-') // Replaced space on the dash
         });
       });
-      return tagsObjectList;
+      return tagsObjectList.filter(tag => tag.tagName !== 'Featured post');
+    },
+
+    incrementPage() {
+      this.page++;
+    }
+  },
+  computed: {
+    filteredPosts: function() {
+      return this.posts.filter(post => post.tags.includes(this.currentTag));
+    },
+    filteredPostsToShow: function() {
+      return this.filteredPosts.slice(0, this.pageSize * this.page);
+    },
+    recentPosts: function() {
+      return this.posts.slice(0, 5);
+    },
+    totalPages: function() {
+      return Math.ceil(this.filteredPosts.length / this.pageSize);
+    }
+  },
+  watch: {
+    currentTag: function() {
+      this.page = 1;
     }
   }
 };
+
 </script>
 
-<style lang="sass" scoped>
-@import '../../assets/styles/_vars'
+<style lang="scss" scoped>
+  @import '../../assets/styles/_vars';
 
-.home
-  max-width: 1680px;
-  display: flex
-  flex-direction: column
-  margin: auto;
-  padding-top: 100px
-  background-color: $bgcolor--black
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
 
-  .blog-avatar
-    height: 140px
-    width: 140px
-    border-radius: 50%
-    background-position: center
-    background-size: cover
-    margin: 0 auto
+  .home {
+    padding-top: 100px;
 
-.head-content
-  margin: 60px auto;
+    .blog-avatar {
+      height: 140px;
+      width: 140px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
+      margin: 0 auto;
+    }
 
-.body-content
-  display: flex
-  justify-content: space-between
+    .latest-posts {
+      background-color: $text-color--white-primary;
+      display: flex;
+      justify-content: space-between;
 
-.blog-title
-  font-size: 76px
+      .latest-posts__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 96px -10px 0;
 
-.blog-title,
-.filter-title,
-.filter-label,
-.reset-filter
-  color: $text-color--white
+        a {
+          text-decoration: none;
+        }
 
-.filter-title
-  font-family: 'Poppins-Regular', sans-serif
-  font-weight: 700
+        .latest-posts__single-post {
+          width: 33.3333%;
+          margin-bottom: 80px;
 
-.blog-description
-  margin: 10px 0
-  color: $text-color--grey
-  text-align: center
-  font-size: 46px
+          .single-post__wrapper {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
 
-.blog-main
-  width: 85%;
-  display: flex
-  flex-direction: column
+    .customer-university {
 
-  &.single img
-    width: 100%
-    height: auto
-  &.single a
-    text-decoration: none
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.8) 75%)
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.8) 75%)
-    background-repeat: repeat-x
-    background-size: 2px 2px
-    background-position: 0 23px
+      background-color: $border-color--grey-cases;
+      padding: 350px 0;
 
-.blog-post-wrapper
-  margin: 0
-  padding-bottom: 50px
+      h1 {
+        color: $text-color--red;
+        font-size: 62px;
+        line-height: 74px;
+        font-weight: 900;
+        text-align: center;
+      }
+    }
 
-  a
-    text-decoration: none
+    .filtered-posts {
+      background-color: $text-color--white-primary;
+      padding-top: 48px;
 
-.filter
-  min-width: 150px;
+      .filter {
 
-.filter-list
-  display: grid
-  grid-template-columns: repeat(1, 100%)
-  grid-gap: 10px
-  margin-top: 10px
+        margin-bottom: 48px;
 
-.radio-input
-  display: none
+        .filter-list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          margin: 0 -10px;
 
-.radio-input:checked + .filter-label, .filter-label:hover
-  border-color: $border-color--red
-  color: $text-color--red
+          .filter-item__wrapper {
+            width: 16.6666%;
 
-.filter-label,
-.reset-filter
-  font-size: 14px
-  border-radius: 2px
-  cursor: pointer
+            .filter-item {
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+
+      &__wrapper {
+        display: flex;
+        margin: 50px -10px 0;
+        flex-wrap: wrap;
+        padding-bottom: 80px;
+
+        a {
+          text-decoration: none;
+        }
+      }
+
+      &__single-post {
+        width: 33.3333%;
+
+        .single-post__wrapper {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
 
 
-.filter-label
-  display: block
-  padding: 7px
-  box-shadow: none
-  background-color: transparent
-  border: 1px solid $border-color--grey
-  transition: 0.2s
-  text-align: center
-  font-family: 'Poppins-Regular', sans-serif
+  .head-content {
+    margin: 60px auto;
+  }
 
-.reset-filter
-  width: 100%
-  margin-top: 10px
-  padding: 8px 7px
-  font-family: 'Poppins-Regular', sans-serif
-  font-weight: 700
-  background-color: $bgcolor--red
-  border: none
+  .blog-title {
+    font-size: 76px;
+  }
 
-.reset-filter:active
-  background-color: #cc4247
-  border-color: #cc4247
+  .blog-title,
+  .filter-title,
+  .filter-label,
+  .reset-filter {
+    color: $text-color--black;
+  }
+
+  .filter-title {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 700;
+  }
+
+  .blog-description {
+    margin: 10px 0;
+    color: $text-color--grey;
+    text-align: center;
+    font-size: 46px;
+  }
+
+  .blog-main {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+
+    &.single img {
+      width: 100%;
+      height: auto;
+    }
+
+    &.single a {
+      text-decoration: none;
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.8) 75%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.8) 75%);
+      background-repeat: repeat-x;
+      background-size: 2px 2px;
+      background-position: 0 23px;
+    }
+  }
+
+  .blog-post-wrapper {
+    margin: 0;
+    padding-bottom: 50px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .filter {
+    min-width: 150px;
+
+    /deep/ .ps__rail-x {
+      display: none;
+    }
+  }
+
+  .filter-list {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-gap: 10px;
+    margin-top: 10px;
+  }
+
+  .radio-input {
+    display: none;
+  }
+
+  .radio-input:checked + .filter-label, .filter-label:hover {
+    border-color: $border-color--red;
+    color: $text-color--red;
+  }
+
+  .filter-label,
+  .reset-filter {
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .filter-label {
+    display: block;
+    padding: 47px 22px 22px;
+    box-shadow: none;
+    background-color: $bgcolor--silver;
+    transition: 0.2s;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    min-height: 44px;
+  }
+
+  .reset-filter {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 7px;
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 700;
+    background-color: $bgcolor--red;
+    border: none;
+  }
+
+  .reset-filter:active {
+    background-color: #cc4247;
+    border-color: #cc4247;
+  }
+
+  .load-more-button {
+    padding: 12px 156px;
+    border: 1px solid $border-color--black;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: transparent;
+    margin-bottom: 73px;
+    cursor: pointer;
+
+    &:hover {
+      color: $text-color--red;
+    }
+
+    &__wrapper {
+      text-align: center;
+    }
+  }
+
+  /deep/ .blog-post__author-name {
+    color: $text-color--black;
+  }
+
+  @media only screen and (max-width: 991px) {
+    .home {
+
+      .latest-posts .latest-posts__wrapper .latest-posts__single-post,
+      .filtered-posts .filtered-posts__wrapper .filtered-posts__single-post {
+        width: 100%;
+        margin-bottom: 56px;
+      }
+
+      .latest-posts {
+
+        &__wrapper {
+          margin-top: 29px;
+        }
+      }
+
+      .filtered-posts {
+
+        .filter {
+
+          .filter-list {
+            flex-wrap: nowrap;
+            margin: 0 -4px;
+
+            .filter-item__wrapper {
+              width: 148px;
+
+              .filter-item {
+                padding: 0 4px;
+              }
+
+              .filter-label {
+                font-size: 16px;
+                line-height: 19px;
+                padding: 16px;
+                min-height: 40px;
+              }
+            }
+          }
+        }
+
+        &__wrapper {
+          padding-bottom: 38px;
+
+          /deep/ .blog-post {
+            display: flex;
+            margin-bottom: 36px;
+
+            &__cover-image {
+              width: 124px;
+              height: 124px;
+              flex-shrink: 0;
+              margin-right: 16px;
+            }
+
+            &__meta {
+              margin: 8px 0;
+
+              .tag {
+                display: none;
+              }
+            }
+
+            &__paragraph {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .load-more-button {
+        padding: 12px 0;
+        margin-bottom: 24px;
+        width: 100%;
+      }
+    }
+  }
 </style>

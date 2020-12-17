@@ -1,21 +1,23 @@
 <template>
   <nuxt-link :to="link">
     <div class="blog-post">
-      <img :src="post.data.featured_image.url" alt="" class="blog-post__featured-image">
-      <h2 class="post-title">{{ $prismic.asText(post.data.title) }}</h2>
-      <p>{{getFirstParagraph(post)}}</p>
-      <p class="blog-post-meta">
-        <span class="created-at">{{ formattedDate }}</span>
-        <span class="tag" v-if="post.tags.length">{{post.tags[0]}}</span>
-      </p>
-      <post-author :document="post.data" />
+      <div class="blog-post__cover-image" :style="`background-image: url(${post.data.featured_image.url})`"/>
+      <div>
+        <h2 class="blog-post__title">{{ $prismic.asText(post.data.title) }}</h2>
+        <p class="blog-post__paragraph">{{getFirstParagraph(post)}}</p>
+        <div class="blog-post__meta">
+          <span class="created-at">{{ formattedDate }}</span>
+          <span class="tag" v-if="post.tags.length">{{post.tags[0]}}</span>
+        </div>
+        <post-author :document="post.data" />
+      </div>
     </div>
   </nuxt-link>
 </template>
 
 <script>
 import linkResolver from '@/plugins/link-resolver.js';
-import PostAuthor from './PostAuthor';
+import PostAuthor from '@/components/Blog/PostAuthor';
 export default {
   name: 'RecommendedBlogWidget',
   props: {
@@ -36,7 +38,7 @@ export default {
   methods: {
     // Function to get the first paragraph of text in a blog post and limit the displayed text at 300 characters
     getFirstParagraph (post) {
-      const textLimit = 300;
+      const textLimit = 140;
       const slices = post.data.body;
       let firstParagraph = '';
       let haveFirstParagraph = false;
@@ -72,7 +74,8 @@ export default {
   @import '../../assets/styles/_vars';
 
   .blog-post {
-    color: $text-color--white;
+    color: $text-color--black;
+    text-decoration: none;
 
     p {
       margin-top: 5px;
@@ -90,18 +93,25 @@ export default {
       text-decoration: none;
     }
 
+    &__cover-image {
+      height: 220px;
+      background-position: center;
+      background-size: cover;
+      margin-bottom: 16px;
+    }
+
     &__featured-image {
       max-width: 100%;
       height: auto;
     }
 
-    .post-title {
+    &__title {
       font-size: 21px;
       line-height: 28px;
       letter-spacing: -1px;
     }
 
-    .blog-post-meta {
+    &__meta {
       display: flex;
       align-items: center;
       margin: 20px 0;
