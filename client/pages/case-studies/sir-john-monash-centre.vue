@@ -371,7 +371,7 @@
         </TextParagraph>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Mad Devs trip to SJMC</h2>
+        <h2 class="case_title_h2 m-24_bottom">Mad Devs’ trip to the SJMC</h2>
       </section>
       <section class="container_full">
         <!-- <Picture
@@ -382,20 +382,20 @@
         /> -->
       </section>
       <section class="container_regular">
-        <TextParagraph class="m-48_top media-m-24_top m-24_bottom media-m-12_bottom">
-          In February of 2020, right before the contract’s deadline, Mad Devs team of eight people came to the Сentre located near the village of Villers-Bretonneux (Somme) in northern France.
+        <TextParagraph class="m-56_top media-m-24_top m-24_bottom media-m-12_bottom">
+          In February 2020, just before the contract’s deadline, a Mad Devs’ team of eight travelled to the Сentre, which is located near the village of Villers-Bretonneux (Somme) in northern France.
         </TextParagraph>
-        <TextParagraph class="m-8_bottom">
-          Although the small scale version of the Сentre was built inside Mad Devs office, the team was pursuing the following goals:
+        <TextParagraph class="m-6_bottom">
+          Although the small-scale version of the Сentre was built inside Mad Devs’ office, the team was pursuing the following goals:
         </TextParagraph>
-        <List class="m-96_bottom media-m-72_bottom">
-          <ListItemDot>Understand the complexity of SJMC hardware and software in person.</ListItemDot>
-          <ListItemDot>Uncover the potential risks and problems.</ListItemDot>
-          <ListItemDot>Deploy technical debts and test the changes.</ListItemDot>
-          <ListItemDot>Deploy new content on big scale screens and test the changes.</ListItemDot>
+        <List class="m-56_bottom media-m-24_bottom">
+          <ListItemDot>Understand the complexity of the SJMC hardware and software in person</ListItemDot>
+          <ListItemDot>Uncover the potential risks and problems</ListItemDot>
+          <ListItemDot>Deploy technical debts and test the changes</ListItemDot>
+          <ListItemDot>Deploy new content on large scale screens and test the changes</ListItemDot>
         </List>
         <!-- Заменить фотографии -->
-        <ListTeam class="m-96_bottom media-m-72_bottom">
+        <ListTeam class="m-96_bottom media-m-24_bottom">
           <ListTeamItem
             v-for="(teamMember, i) in team"
             :key="i"
@@ -409,14 +409,25 @@
         </ListTeam>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Ongoing partnership</h2>
+        <h2 class="case_title_h2 m-12_bottom">Ongoing partnership</h2>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
-          According to the internal CSAT survey, 98% of Mad Devs' customers find the company's service great value for money, and most of them stay with us for 3+ years. SJMC is no exception.
+          According to the internal CSAT survey, 98% of Mad Devs' customers find the company's service great value for money, and most of them stay with us for 3+ years. The SJMC is no exception. 
         </TextParagraph>
-        <TextParagraph class="m-96_bottom media-m-72_bottom">
-          We are honored to extend our partnership to improve SJMC visitors' experience by introducing the iPaOS application for children. Such applications offer kids engaging content which allows children to discover the centre and its resources through a series of games. Moreover, Mad Devs is going to develop a sophisticated content management system that eventually is going to simplify the deployment of new content and enable the managers of the SJMC to make the required changes with ease.
+        <TextParagraph class="m-72_bottom media-m-48_bottom">
+          We are honoured to extend our partnership to improve the SJMC visitors' experience by introducing the iPaOS application for children. This application will offer engaging content which allows children to discover the centre and its resources through a series of educational games. Moreover, Mad Devs is going to develop a sophisticated content management system that is eventually going to simplify the deployment of new content and will enable the managers of the SJMC themselves to make the required changes with ease.
         </TextParagraph>
-        <!-- Тут будет секция Testimonials -->
+        <!-- Добавить нужное фото -->
+        <TextQuoteAuthor
+          class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
+          authorName="Wade Bartlett"
+          authorPosition="Former Technical and Operations Director, Sir John Monash Centre"
+          fileName="aziza-anarbekova"
+          fileExtension="png"
+          alt=""
+          pictureFolder="nambafood"
+        >
+          The Sir John Monash Centre operates within a bespoke multimedia framework, which requires high-level technical expertise to deliver the Centre's visitor experience. Mad Devs provide outstanding levels of support and development services across our multimedia and IT platforms, systems and languages. Always available to provide assistance when needed, Mad Devs are a highly-valued part of our wider operations.
+        </TextQuoteAuthor>
       </section>
     </section>
   </main>
@@ -446,6 +457,7 @@ export default {
     TextParagraph,
     TextQuote,
     TextQuoteBox,
+    TextQuoteAuthor,
     Picture,
     List,
     ListNumberedBox,
