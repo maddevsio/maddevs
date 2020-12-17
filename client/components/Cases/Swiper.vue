@@ -1,12 +1,13 @@
 <template>
   <div class="slider-content">
-    <div class="swiper-container thumb-example">
+    <div class="swiper-container thumb-example" :class="{'box-shadow': boxShadow}">
       <Picture
         pictureFolder="nambafood"
         fileName="swiper-frame"
         fileExtension="jpg"
         alt=""
         :lazyLoading="true"
+        v-if="swiperFrame"
       />
       <swiper class="swiper gallery-top" :options="swiperOptionTop" ref="swiperTop">
         <swiper-slide v-for="element in components" :key="element.fileName">
@@ -78,6 +79,14 @@ export default {
     components: {
       type: Array,
       required: true
+    },
+    swiperFrame: {
+      type: Boolean,
+      default: false
+    },
+    boxShadow: {
+      type: Boolean,
+      default: false
     }
   }
 };
@@ -87,11 +96,13 @@ export default {
 @import '../../assets/styles/cases/icons';
 
 .thumb-example {
-  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05), 0px 5.47001px 41.35px rgba(0, 0, 0, 0.1);
-
   img {
     display: block;
   }
+}
+
+.box-shadow {
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05), 0px 5.47001px 41.35px rgba(0, 0, 0, 0.1);
 }
 
 .swiper {

@@ -86,13 +86,12 @@
           <ListItemDot>Synchronises content storage and other multimedia computers.</ListItemDot>
         </List>
       </section>
-      <section class="container_full">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
-          alt=""
-        /> -->
+      <section class="container_full case_full-screen-slider">
+        <Swiper
+          :components="swiperMultimediaManagement"
+          :swiperFrame="false"
+          :boxShadow="false"
+        />
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-104_top media-m-48_top m-12_bottom">Mobile applications</h2>
@@ -230,13 +229,12 @@
           After purchasing the required equipment and reading code and documentation, in one month after understanding the complexity of the SJMC, Mad Devs’ DevOps and back-end engineers built a custom small-scale version of the SJMC complex multimedia environment. Thus, testing and deploying new content and changes in the Brain was made possible even kilometres away from the real SJMC.
         </TextParagraph>
       </section>
-      <section class="container_full">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
-          alt=""
-        /> -->
+      <section class="container_full case_full-screen-slider">
+        <Swiper
+          :components="swiperOfficeTeam"
+          :swiperFrame="false"
+          :boxShadow="false"
+        />
       </section>
       <section class="container_regular">
         <h3 class="case_title_h3 m-78_top media-m-48_top m-12_bottom">Technical debt</h3>
@@ -296,13 +294,10 @@
         </TextParagraph>
       </section>
       <section class="container_middle m-48_bottom media-m-24_bottom">
-        <Picture
-          pictureFolder="sjmc"
-          fileName="prometheus"
-          fileExtension="jpg"
-          alt=""
+        <Swiper
+          :components="swiperGrafanaPrometheus"
+          :swiperFrame="false"
           :boxShadow="true"
-          :lazyLoading="true"
         />
       </section>
       <section class="container_regular">
@@ -373,13 +368,12 @@
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom">Mad Devs’ trip to the SJMC</h2>
       </section>
-      <section class="container_full">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileExtension=""
-          alt=""
-        /> -->
+      <section class="container_full case_full-screen-slider">
+        <Swiper
+          :components="swiperMadDevsTrip"
+          :swiperFrame="false"
+          :boxShadow="false"
+        />
       </section>
       <section class="container_regular">
         <TextParagraph class="m-56_top media-m-24_top m-24_bottom media-m-12_bottom">
@@ -450,6 +444,7 @@ import ListTechnologies from '@/components/Cases/ListTechnologies';
 import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem';
 import ListDashItemBox from '@/components/Cases/ListDashItemBox';
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
+import Swiper from '@/components/Cases/Swiper';
 
 export default {
   components: {
@@ -468,7 +463,8 @@ export default {
     ListItemDot,
     ListTechnologies,
     ListTechnologiesItem,
-    ListDashItemBox
+    ListDashItemBox,
+    Swiper
   },
   name: 'SirJohnMonashCentre',
   data() {
@@ -630,6 +626,89 @@ export default {
           name: 'Rustom Kulbatyrov',
           position: 'Mobile Developer',
           fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        }
+      ],
+      swiperMultimediaManagement: [
+        {
+          fileName: 'multimedia-management-first-slide',
+          pictureFolder: 'sjmc',
+          fileExtension: 'png'
+        },
+        {
+          fileName: 'multimedia-management-second-slide',
+          pictureFolder: 'sjmc',
+          fileExtension: 'png'
+        }
+      ],
+      swiperOfficeTeam: [
+        {
+          fileName: 'office-team-first-slide',
+          pictureFolder: 'sjmc',
+          fileExtension: 'png'
+        },
+        {
+          fileName: 'office-team-second-slide',
+          pictureFolder: 'sjmc',
+          fileExtension: 'png'
+        },
+        {
+          fileName: 'office-team-third-slide',
+          pictureFolder: 'sjmc',
+          fileExtension: 'png'
+        },
+        {
+          fileName: 'office-team-fourth-slide',
+          pictureFolder: 'sjmc',
+          fileExtension: 'png'
+        },
+        {
+          fileName: 'office-team-fifth-slide',
+          pictureFolder: 'sjmc',
+          fileExtension: 'png'
+        },
+        {
+          fileName: 'office-team-sixth-slide',
+          pictureFolder: 'sjmc',
+          fileExtension: 'png'
+        }
+      ],
+      swiperGrafanaPrometheus: [
+        {
+          fileName: 'grafana-prometheus-first-slide',
+          pictureFolder: 'sjmc',
+          fileExtension: 'jpg'
+        },
+        {
+          fileName: 'grafana-prometheus-second-slide',
+          pictureFolder: 'sjmc',
+          fileExtension: 'jpg'
+        }
+      ],
+      swiperMadDevsTrip: [
+        {
+          fileName: 'mad-devs-trip-first-slide',
+          pictureFolder: 'sjmc',
+          fileExtension: 'png'
+        },
+        {
+          fileName: 'mad-devs-trip-second-slide',
+          pictureFolder: 'sjmc',
+          fileExtension: 'png'
+        },
+        {
+          fileName: 'mad-devs-trip-third-slide',
+          pictureFolder: 'sjmc',
+          fileExtension: 'png'
+        },
+        {
+          fileName: 'mad-devs-trip-fourth-slide',
+          pictureFolder: 'sjmc',
+          fileExtension: 'png'
+        },
+        {
+          fileName: 'mad-devs-trip-fifth-slide',
+          pictureFolder: 'sjmc',
           fileExtension: 'png'
         }
       ]

@@ -182,6 +182,8 @@
       <section class="container_middle">
         <Swiper
           :components="swiperAdminPanel"
+          :swiperFrame="true"
+          :boxShadow="true"
         />
       </section>
       <section class="container_regular">
