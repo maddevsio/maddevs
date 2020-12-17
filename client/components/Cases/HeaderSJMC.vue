@@ -73,19 +73,17 @@ export default {
     display: none;
   }
 
+  @media screen and (max-width: 1024px) {
+    &_play-button {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     &_logotype {
-      width: 149.12px;
-      height: 65.92px;
-      margin-bottom: 27px;
-    }
-
-    &_play-button {
-      margin-top: 25px;
-    }
-
-    &_play-icon {
-      margin-right: 11px
+      width: 212.08px;
+      height: 94.29px;
+      margin-bottom: 57px;
     }
 
     &_mobile-break {
