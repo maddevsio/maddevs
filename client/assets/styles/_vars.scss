@@ -112,7 +112,7 @@ $software-icon-background: #eef0f2;
 $our-valued-icon-background: #191A1B;
 
 @mixin h2_title {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins-Bold', sans-serif;
   font-weight: 700;
   font-size: 62px;
   line-height: 120%;
@@ -131,7 +131,7 @@ $our-valued-icon-background: #191A1B;
 }
 
 @mixin h3_title {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins-Bold', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;

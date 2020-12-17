@@ -123,7 +123,7 @@ export default {
 
   &__description {
     width: 680px;
-    font-family: 'Poppins';
+    font-family: 'Poppins-Regular';
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.02em;

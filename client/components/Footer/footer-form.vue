@@ -130,7 +130,7 @@ export default {
     &_email {
       /deep/ .v-placeholder-asterisk {
         font-size: 16px;
-        font-family: 'Poppins', sans-serif;;
+        font-family: 'Poppins-Regular', sans-serif;
         color: $text-color--grey-form-placeholder;
         left: 17px !important;
         top: 50% !important;
@@ -194,7 +194,7 @@ export default {
 
     .entry-field,
     .error-text {
-      font-family: 'Poppins', sans-serif;;
+      font-family: 'Poppins-Regular', sans-serif;
     }
 
     .error-text {

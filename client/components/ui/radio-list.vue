@@ -99,7 +99,7 @@ export default {
     &__radio-text_item {
       margin-left: 8px;
       color: $text-color--grey;
-      font-family: 'Poppins', sans-serif;;
+      font-family: 'Poppins-Regular', sans-serif;
       font-size: 16px;
       letter-spacing: -0.02em;
     }

@@ -116,7 +116,7 @@ export default {
   }
 
   &__paragraph {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Regular', sans-serif;
     font-weight: 400;
     font-size: 18px;
     letter-spacing: -0.02em;
