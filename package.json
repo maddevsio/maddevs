@@ -36,7 +36,7 @@
     "request": "^2.88.2",
     "sendpulse-api": "^1.1.4",
     "shelljs": "^0.8.4",
-    "snyk": "^1.427.0",
+    "snyk": "^1.431.1",
     "swiper": "^5.4.5",
     "vee-validate": "^3.4.5",
     "vue-awesome-swiper": "^4.1.1",
