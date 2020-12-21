@@ -181,8 +181,8 @@
         </TextParagraph>
       </section>
       <section class="container_full case_sjmc-phone-video-section background-color-black-primary">
-        <div class="case_sjmc-phone-video-wrapper case_full-screen-video">
-          <video width="100%" height="100%" controls="true">
+        <div class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video" ref="videoWrap" @click="videoSetState">
+          <video width="100%" height="100%" ref="video">
             <source src="../../assets/video/sjmc/bluetooth-beacons-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -714,6 +714,17 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    videoSetState() {
+      if (this.$refs.video.paused == true) {
+        this.$refs.video.play();
+        this.$refs.videoWrap.classList.remove('case_sjmc-phone-video-wrapper--on-pause');
+      } else {
+        this.$refs.video.pause();
+        this.$refs.videoWrap.classList.add('case_sjmc-phone-video-wrapper--on-pause');
+      }
+    }
   }
 };
 </script>

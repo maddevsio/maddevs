@@ -25,6 +25,7 @@
     max-width: 505px;
     min-width: 305px;
     position: relative;
+    cursor: pointer;
 
     &::before {
       content: '';
@@ -39,6 +40,23 @@
       background-repeat: no-repeat;
       background-size: cover;
       z-index: -1;
+    }
+
+    &--on-pause {
+      &::after {
+        content: '';
+        width: 10.41vw;
+        height: 10.41vw;
+        max-width: 150px;
+        max-height: 150px;
+        min-width: 86px;
+        min-height: 86px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include play-button-white;
+      }
     }
 
     @media screen and (max-width: 360px) {
