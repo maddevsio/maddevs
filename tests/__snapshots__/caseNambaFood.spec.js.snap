@@ -7,21 +7,6 @@ exports[`Namba food renders correctly 1`] = `
   <section
     class="case_header"
   >
-    <video
-      autoplay="autoplay"
-      class="case_main-video"
-      loop="loop"
-      muted="muted"
-    >
-      <source
-        src="../../assets/img/Cases/nambafood/video/main.mp4"
-        type="video/mp4"
-      />
-      
-    Your browser does not support the video tag.
-  
-    </video>
-     
     <div
       class="case_logotype nambafood"
     />
@@ -628,24 +613,7 @@ exports[`Namba food renders correctly 1`] = `
     >
       <div
         class="case_full-screen-phone-video-wrapper"
-      >
-        <video
-          class="case_full-screen-video"
-          height="100%"
-          id="iphone-silver-video"
-          loop="loop"
-          muted="muted"
-          width="100%"
-        >
-          <source
-            src="../../assets/video/mobile-applications-for-end-users.mp4"
-            type="video/mp4"
-          />
-          
-          Your browser does not support the video tag.
-        
-        </video>
-      </div>
+      />
     </section>
      
     <section
@@ -1272,24 +1240,7 @@ exports[`Namba food renders correctly 1`] = `
     >
       <div
         class="case_map-video-wrapper case_box-shadow"
-      >
-        <video
-          class="case_map-video"
-          height="100%"
-          id="map-video"
-          loop="loop"
-          muted="muted"
-          width="100%"
-        >
-          <source
-            src="../../assets/video/map.mp4"
-            type="video/mp4"
-          />
-          
-          Your browser does not support the video tag.
-        
-        </video>
-      </div>
+      />
     </section>
      
     <section

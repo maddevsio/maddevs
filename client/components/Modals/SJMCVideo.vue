@@ -2,10 +2,10 @@
   <modal :classes="['video_container']" name="SJMCVideo" ref="videoWrap">
     <div class="video-wrapper" @click="videoSetState">
       <div class="pause-icon" v-if="showIcon"></div>
-      <video class="main-video" loop="true" ref="video" autoplay="true">
+      <!-- <video class="main-video" loop="true" ref="video" autoplay="true">
         <source src="../../assets/video/sjmc/sjmc-modal-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
-      </video>
+      </video> -->
     </div>
     <button @click="closeModal" class="close-modal"></button>
   </modal>
