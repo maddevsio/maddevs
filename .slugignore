@@ -1,2 +1,5 @@
-client/assets/img
-client/assets/video
+*.png
+*.jpg
+*.webp
+*.mp4
+*.gif
