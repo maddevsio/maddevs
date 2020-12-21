@@ -715,6 +715,11 @@ export default {
       ]
     };
   },
+  mounted() {
+    this.$refs.video.onended = () => {
+      this.$refs.videoWrap.classList.add('case_sjmc-phone-video-wrapper--on-pause');
+    };
+  },
   methods: {
     videoSetState() {
       if (this.$refs.video.paused == true) {

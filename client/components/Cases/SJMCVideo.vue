@@ -1,24 +1,41 @@
 <template>
-  <modal :classes="['video_container']" name="SJMCVideo" ref="videoWrap">
+  <div ref="videoContainer" v-show="fullscreenModIsActive">
     <div class="video-wrapper" @click="videoSetState">
       <div class="pause-icon" v-if="showIcon"></div>
-      <video class="main-video" loop="true" ref="video" autoplay="true">
+      <video class="main-video" loop="true" ref="video">
         <source src="../../assets/video/sjmc/sjmc-modal-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
-    <button @click="closeModal" class="close-modal"></button>
-  </modal>
+    <button @click="exitFullscreen" class="exit"></button>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'SJMCVideo',
+  mounted() {
+    this.$refs.video.onended = () => {
+      this.showIcon = true;
+    };
+
+    // header sjmc event bus handler 
+    this.$nuxt.$on('open-fullscreen', () => {
+      this.$refs.videoContainer.requestFullscreen();
+      this.fullscreenModIsActive = true;
+    });
+
+    // exit fullscreen handler
+    document.addEventListener('fullscreenchange', () => {
+      if (document.fullscreenElement === null) {
+        this.fullscreenModIsActive = false;
+      }
+    });
+  },
   methods: {
-    closeModal() {
-      this.$modal.hide('SJMCVideo');
-      document.body.style.overflowY = 'scroll';
-      this.showIcon = false;
+    exitFullscreen() {
+      document.exitFullscreen();
+      this.fullscreenModIsActive = false;
     },
     videoSetState() {
       if (this.$refs.video.paused == true) {
@@ -32,6 +49,7 @@ export default {
   },
   data() {
     return {
+      fullscreenModIsActive: false,
       showIcon: false
     };
   }
@@ -40,13 +58,6 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/cases/_icons';
-
-  /deep/ .video_container {
-    width: 100% !important;
-    height: 100vh !important;
-    position: unset;
-    border-radius: 0;
-  }
 
   .main-video {
     position: absolute;
@@ -57,7 +68,7 @@ export default {
     object-fit: cover;
   }
  
-  .close-modal {
+  .exit {
     width: 24px;
     height: 24px;
     border: 0;

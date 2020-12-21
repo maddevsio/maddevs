@@ -1,30 +1,35 @@
 <template>
-  <section class="case_header">
-    <video class="case_main-video" loop="true" muted="true" autoplay="true">
-      <source src="../../assets/video/sjmc/sjmc-main-video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="case_logotype sjmc-header"></div>
-    <h1 class="case_header-title">Sir John Monash <br class="case_mobile-break"> Centre’s <br class="case_desktop-break"> case</h1>
-    <button class="case_play-button" type="button" @click="showModal()">
-      <div class="case_play-icon"></div>
-      View video about SJMC
-    </button>
-    <ButtonMore class="case_more__button">Read our case studies ↓</ButtonMore>
-  </section>
+  <div>
+    <section class="case_header">
+      <video class="case_main-video" loop="true" muted="true" autoplay="true">
+        <source src="../../assets/video/sjmc/sjmc-main-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="case_logotype sjmc-header"></div>
+      <h1 class="case_header-title">Sir John Monash <br class="case_mobile-break"> Centre’s <br class="case_desktop-break"> case</h1>
+      <button class="case_play-button" type="button" @click="openFullscreen()">
+        <div class="case_play-icon"></div>
+        View video about SJMC
+      </button>
+      <ButtonMore class="case_more__button">Read our case studies ↓</ButtonMore>
+    </section>
+    <SJMCVideo />
+  </div>
 </template>
 
 <script>
 import ButtonMore from '@/components/Cases/ButtonMore';
+import SJMCVideo from '@/components/Cases/SJMCVideo';
+
 export default {
   name: 'Header',
   components: {
-    ButtonMore
+    ButtonMore,
+    SJMCVideo
   },
   methods: {
-    showModal() {
-      this.$modal.show('SJMCVideo');
-      document.body.style.overflow = 'hidden';
+    openFullscreen() {
+      this.$nuxt.$emit('open-fullscreen');
     }
   }
 };
