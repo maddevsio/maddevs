@@ -14,11 +14,11 @@ exports[`Footer renders correctly 1`] = `
     Main Content
   </h2>
    
-  <button
+  <a
     class="case_next-project-button"
-    type="button"
+    href="/case-studies/namba-food"
   >
     Read next project
-  </button>
+  </a>
 </section>
 `;
