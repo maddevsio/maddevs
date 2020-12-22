@@ -147,14 +147,14 @@ export default {
   },
   computed: {
     filteredPosts: function() {
-      if (!this.currentTag) {
+      if (this.currentTag !== null) {
+        const currentTags = this.homepageContent.categories.find(tag => tag.title === this.currentTag);
+        currentTags.tags.push(currentTags.title);
+
+        return this.posts.filter(post => post.tags.some(tag => currentTags.tags.includes(tag)));
+      } else {
         return [];
       }
-
-      const currentTags = this.homepageContent.categories.find(tag => tag.title === this.currentTag);
-      currentTags.tags.push(currentTags.title);
-
-      return this.posts.filter(post => post.tags.some(tag => currentTags.tags.includes(tag)));
     },
     filteredPostsToShow: function() {
       return this.filteredPosts.slice(0, this.pageSize * this.page);
@@ -223,14 +223,15 @@ export default {
         width: 33.3333%;
         margin-bottom: 80px;
 
-        .single-post__wrapper {
-          padding: 0 10px;
+        .single-post {
+          &__wrapper {
+            padding: 0 10px;
 
-          .banner {
-
-            img {
-              max-width: 100%;
-              height: auto;
+            .banner {
+              img {
+                max-width: 100%;
+                height: auto;
+              }
             }
           }
         }

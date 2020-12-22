@@ -15,13 +15,7 @@ import 'vue-prism-editor/dist/prismeditor.min.css';
 
 import 'prismjs';
 import { highlight } from 'prismjs/components/prism-core.min';
-import 'prismjs/components/prism-clike.min';
-import 'prismjs/components/prism-javascript.min';
-import 'prismjs/components/prism-css.min';
-import 'prismjs/components/prism-markup.min';
-import 'prismjs/components/prism-java.min';
-import 'prismjs/components/prism-python.min';
-import 'prismjs/themes/prism.css';
+import '@/components/Blog/slices/CodeBlockSlice/highlights';
 
 export default {
   name: 'CodeblockSlice',
@@ -51,7 +45,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  @import '../../../assets/styles/_vars';
+  @import '../../../../assets/styles/_vars';
 
   .code-sample {
     line-height: 22px;
