@@ -89,7 +89,7 @@
       <section class="container_full case_full-screen-slider">
         <Swiper
           :components="swiperMultimediaManagement"
-          :swiperFrame="false"
+          :safariTopBar="false"
           :boxShadow="false"
           sliderDescription="Australia-based IT company to create integrated multimedia solutions."
         />
@@ -133,6 +133,9 @@
           alt=""
           :lazyLoading="true"
         />
+        <p class="case_image-description m-8_top">
+          Sir Jonh Monash Centre Site
+        </p>
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-56_top media-m-48_top m-12_bottom">SJMC Hardware</h2>
@@ -180,14 +183,17 @@
           The limited space in the SJMC made detecting each visitor’s location and continuously refreshing a list of available content nearby challenging.
         </TextParagraph>
       </section>
-      <section class="container_full case_sjmc-phone-video-section background-color-black-primary">
+      <!-- <section class="container_full case_sjmc-phone-video-section background-color-black-primary">
         <div class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video" ref="videoWrap" @click="videoSetState">
           <video width="100%" height="100%" ref="video">
             <source src="../../assets/video/sjmc/bluetooth-beacons-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
-      </section>
+      </section> -->
+      <p class="case_image-description m-34_top">
+        Sir Jonh Monash Centre Site
+      </p>
       <section class="container_regular m-56_top media-m-24_top m-96_bottom media-m-72_bottom">
         <div class="case_column-container">
           <div class="case_column-item">
@@ -233,7 +239,7 @@
       <section class="container_full case_full-screen-slider">
         <Swiper
           :components="swiperOfficeTeam"
-          :swiperFrame="false"
+          :safariTopBar="false"
           :boxShadow="false"
         />
       </section>
@@ -297,8 +303,9 @@
       <section class="container_middle m-48_bottom media-m-24_bottom">
         <Swiper
           :components="swiperGrafanaPrometheus"
-          :swiperFrame="false"
+          :safariTopBar="true"
           :boxShadow="true"
+          safariTopBarImage="safari-top-bar"
         />
       </section>
       <section class="container_regular">
@@ -372,7 +379,7 @@
       <section class="container_full case_full-screen-slider">
         <Swiper
           :components="swiperMadDevsTrip"
-          :swiperFrame="false"
+          :safariTopBar="false"
           :boxShadow="false"
         />
       </section>
@@ -424,6 +431,9 @@
           The Sir John Monash Centre operates within a bespoke multimedia framework, which requires high-level technical expertise to deliver the Centre's visitor experience. Mad Devs provide outstanding levels of support and development services across our multimedia and IT platforms, systems and languages. Always available to provide assistance when needed, Mad Devs are a highly-valued part of our wider operations.
         </TextQuoteAuthor>
       </section>
+      <Footer>
+        Namba Food <br> Top 1 Delivery Service in <br class="case_mobile-screen-break"> Central Asia
+      </Footer>
     </section>
   </main>
 </template>
@@ -446,6 +456,7 @@ import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem';
 import ListDashItemBox from '@/components/Cases/ListDashItemBox';
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
 import Swiper from '@/components/Cases/Swiper';
+import Footer from '@/components/Cases/Footer';
 
 export default {
   components: {
@@ -465,7 +476,8 @@ export default {
     ListTechnologies,
     ListTechnologiesItem,
     ListDashItemBox,
-    Swiper
+    Swiper,
+    Footer
   },
   name: 'SirJohnMonashCentre',
   data() {
@@ -634,44 +646,44 @@ export default {
         {
           fileName: 'multimedia-management-first-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'multimedia-management-second-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         }
       ],
       swiperOfficeTeam: [
         {
           fileName: 'office-team-first-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'office-team-second-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'office-team-third-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'office-team-fourth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'office-team-fifth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'office-team-sixth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         }
       ],
       swiperGrafanaPrometheus: [
@@ -690,27 +702,27 @@ export default {
         {
           fileName: 'mad-devs-trip-first-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'mad-devs-trip-second-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'mad-devs-trip-third-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'mad-devs-trip-fourth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'mad-devs-trip-fifth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         }
       ]
     };

@@ -15,6 +15,7 @@
     "lint-scss": "sass-lint client/assets/styles/*.scss --verbose",
     "precommit": "npm run lint",
     "heroku-postbuild": "npm run generate",
+    "heroku-cleanup": "rm -rf client",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
     "test": "jest --config=jest.config.develop.js && node ./jest_config/jest-coverage-badges.js -output './client/static'",

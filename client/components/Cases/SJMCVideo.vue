@@ -2,10 +2,10 @@
   <div ref="videoContainer" v-show="fullscreenModIsActive">
     <div class="video-wrapper" @click="videoSetState">
       <div class="pause-icon" v-if="showIcon"></div>
-      <video class="main-video" ref="video">
+      <!-- <video class="main-video" ref="video">
         <source src="../../assets/video/sjmc/sjmc-modal-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
-      </video>
+      </video> -->
     </div>
     <button @click="exitFullscreen" class="exit"></button>
   </div>
