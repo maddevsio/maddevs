@@ -634,44 +634,44 @@ export default {
         {
           fileName: 'multimedia-management-first-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'multimedia-management-second-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         }
       ],
       swiperOfficeTeam: [
         {
           fileName: 'office-team-first-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'office-team-second-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'office-team-third-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'office-team-fourth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'office-team-fifth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'office-team-sixth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         }
       ],
       swiperGrafanaPrometheus: [
@@ -690,27 +690,27 @@ export default {
         {
           fileName: 'mad-devs-trip-first-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'mad-devs-trip-second-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'mad-devs-trip-third-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'mad-devs-trip-fourth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         },
         {
           fileName: 'mad-devs-trip-fifth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'png'
+          fileExtension: 'jpg'
         }
       ]
     };
