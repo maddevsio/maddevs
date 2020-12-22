@@ -182,9 +182,10 @@
       <section class="container_middle">
         <Swiper
           :components="swiperAdminPanel"
-          :swiperFrame="true"
+          :safariTopBar="true"
           :boxShadow="true"
           sliderDescription=""
+          safariTopBarImage="swiper-frame"
         />
       </section>
       <section class="container_regular">
@@ -670,24 +671,24 @@ export default {
   },
   mounted() {
     // Play/Pause HTML Video Based on Visibility
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 1.0
-    };
-    this.videoIdList.forEach(video => {
-      let callback = (entries, observer) => {
-        entries.forEach(entry => {
-          if(entry.target.id == video) {
-            if(entry.isIntersecting) {
-              entry.target.play();
-            }
-          }
-        });
-      };
-      let observer = new IntersectionObserver(callback, options);
-      observer.observe(document.getElementById(video));
-    });
+    // const options = {
+    //   root: null,
+    //   rootMargin: '0px',
+    //   threshold: 1.0
+    // };
+    // this.videoIdList.forEach(video => {
+    //   let callback = (entries, observer) => {
+    //     entries.forEach(entry => {
+    //       if(entry.target.id == video) {
+    //         if(entry.isIntersecting) {
+    //           entry.target.play();
+    //         }
+    //       }
+    //     });
+    //   };
+    //   let observer = new IntersectionObserver(callback, options);
+    //   observer.observe(document.getElementById(video));
+    // });
   }
 };
 </script>

@@ -2,12 +2,12 @@
   <div class="slider-content">
     <div class="swiper-container thumb-example" :class="{'box-shadow': boxShadow}">
       <Picture
-        pictureFolder="nambafood"
-        fileName="swiper-frame"
+        pictureFolder="common"
+        :fileName="safariTopBarImage"
         fileExtension="jpg"
         alt=""
         :lazyLoading="true"
-        v-if="swiperFrame"
+        v-if="safariTopBar"
       />
       <swiper class="swiper gallery-top" :options="swiperOptionTop" ref="swiperTop">
         <swiper-slide v-for="element in components" :key="element.fileName">
@@ -83,15 +83,19 @@ export default {
       type: Array,
       required: true
     },
-    swiperFrame: {
-      type: Boolean,
-      default: false
-    },
     boxShadow: {
       type: Boolean,
       default: false
     },
     sliderDescription: {
+      type: String,
+      default: ''
+    },
+    safariTopBar: {
+      type: Boolean,
+      default: false
+    },
+    safariTopBarImage: {
       type: String,
       default: ''
     }

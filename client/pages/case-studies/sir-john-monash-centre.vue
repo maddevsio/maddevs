@@ -89,7 +89,7 @@
       <section class="container_full case_full-screen-slider">
         <Swiper
           :components="swiperMultimediaManagement"
-          :swiperFrame="false"
+          :safariTopBar="false"
           :boxShadow="false"
           sliderDescription="Australia-based IT company to create integrated multimedia solutions."
         />
@@ -233,7 +233,7 @@
       <section class="container_full case_full-screen-slider">
         <Swiper
           :components="swiperOfficeTeam"
-          :swiperFrame="false"
+          :safariTopBar="false"
           :boxShadow="false"
         />
       </section>
@@ -297,8 +297,9 @@
       <section class="container_middle m-48_bottom media-m-24_bottom">
         <Swiper
           :components="swiperGrafanaPrometheus"
-          :swiperFrame="false"
+          :safariTopBar="true"
           :boxShadow="true"
+          safariTopBarImage="safari-top-bar"
         />
       </section>
       <section class="container_regular">
@@ -372,7 +373,7 @@
       <section class="container_full case_full-screen-slider">
         <Swiper
           :components="swiperMadDevsTrip"
-          :swiperFrame="false"
+          :safariTopBar="false"
           :boxShadow="false"
         />
       </section>
