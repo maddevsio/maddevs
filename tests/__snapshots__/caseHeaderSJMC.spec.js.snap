@@ -1,59 +1,87 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HeaderSJMC renders correctly 1`] = `
-<section
-  class="case_header"
->
-  <video
-    autoplay="autoplay"
-    class="case_main-video"
-    loop="loop"
-    muted="muted"
+<div>
+  <section
+    class="case_header"
   >
-    <source
-      src="../../assets/video/sjmc/sjmc-main-video.mp4"
-      type="video/mp4"
-    />
+    <video
+      autoplay="autoplay"
+      class="case_main-video"
+      loop="loop"
+      muted="muted"
+    >
+      <source
+        src="../../assets/video/sjmc/sjmc-main-video.mp4"
+        type="video/mp4"
+      />
+      
+      Your browser does not support the video tag.
     
-    Your browser does not support the video tag.
-  
-  </video>
+    </video>
+     
+    <div
+      class="case_logotype sjmc-header"
+    />
+     
+    <h1
+      class="case_header-title"
+    >
+      Sir John Monash 
+      <br
+        class="case_mobile-break"
+      />
+       Centre’s 
+      <br
+        class="case_desktop-break"
+      />
+       case
+    </h1>
+     
+    <button
+      class="case_play-button"
+      type="button"
+    >
+      <div
+        class="case_play-icon"
+      />
+      
+      View video about SJMC
+    
+    </button>
+     
+    <button
+      class="case_more-button case_more__button"
+      type="button"
+    >
+      Read our case studies ↓
+    </button>
+  </section>
    
   <div
-    class="case_logotype sjmc-header"
-  />
-   
-  <h1
-    class="case_header-title"
-  >
-    Sir John Monash 
-    <br
-      class="case_mobile-break"
-    />
-     Centre’s 
-    <br
-      class="case_desktop-break"
-    />
-     case
-  </h1>
-   
-  <button
-    class="case_play-button"
-    type="button"
+    style="display: none;"
   >
     <div
-      class="case_play-icon"
-    />
+      class="video-wrapper"
+    >
+      <!---->
+       
+      <video
+        class="main-video"
+      >
+        <source
+          src="../../assets/video/sjmc/sjmc-modal-video.mp4"
+          type="video/mp4"
+        />
+        
+      Your browser does not support the video tag.
     
-    View video about SJMC
-  
-  </button>
-   
-  <button
-    class="case_more-button case_more__button"
-    type="button"
-  >
-    Read our case studies ↓
-  </button>
-</section>
+      </video>
+    </div>
+     
+    <button
+      class="exit"
+    />
+  </div>
+</div>
 `;

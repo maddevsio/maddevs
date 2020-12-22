@@ -7,7 +7,13 @@ describe('HeaderSJMC', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(HeaderSJMC);
+    wrapper = mount(HeaderSJMC, {
+      mocks: {
+        $nuxt: {
+          $on: jest.fn()
+        }
+      }
+    });
   });
 
   // ------ IMPORTANT ----- //
