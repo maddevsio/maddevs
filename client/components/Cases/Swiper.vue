@@ -1,12 +1,13 @@
 <template>
   <div class="slider-content">
-    <div class="swiper-container thumb-example">
+    <div class="swiper-container thumb-example" :class="{'box-shadow': boxShadow}">
       <Picture
-        pictureFolder="nambafood"
-        fileName="swiper-frame"
+        pictureFolder="common"
+        :fileName="safariTopBarImage"
         fileExtension="jpg"
         alt=""
         :lazyLoading="true"
+        v-if="safariTopBar"
       />
       <swiper class="swiper gallery-top" :options="swiperOptionTop" ref="swiperTop">
         <swiper-slide v-for="element in components" :key="element.fileName">
@@ -20,6 +21,9 @@
         </swiper-slide>
       </swiper>
     </div>
+    <p v-if="sliderDescription !== ''" class="slider-description">
+      {{sliderDescription}}
+    </p>
     <swiper class="swiper gallery-thumbs" :options="swiperOptionThumbs" ref="swiperThumbs">
       <swiper-slide v-for="element in components" :key="element.fileName">
         <Picture
@@ -78,6 +82,22 @@ export default {
     components: {
       type: Array,
       required: true
+    },
+    boxShadow: {
+      type: Boolean,
+      default: false
+    },
+    sliderDescription: {
+      type: String,
+      default: ''
+    },
+    safariTopBar: {
+      type: Boolean,
+      default: false
+    },
+    safariTopBarImage: {
+      type: String,
+      default: ''
     }
   }
 };
@@ -85,13 +105,16 @@ export default {
 
 <style lang="scss">
 @import '../../assets/styles/cases/icons';
+@import '../../assets/styles/cases/mixins';
 
 .thumb-example {
-  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05), 0px 5.47001px 41.35px rgba(0, 0, 0, 0.1);
-
   img {
     display: block;
   }
+}
+
+.box-shadow {
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05), 0px 5.47001px 41.35px rgba(0, 0, 0, 0.1);
 }
 
 .swiper {
@@ -110,5 +133,11 @@ export default {
   &.gallery-thumbs .swiper-slide-active {
     opacity: 1;
   }
+}
+
+.slider-description {
+  margin: 9px 0;
+  text-align: center;
+  @include default_text($text-color--grey-img-description, 13px, 21.58px, -0.02em, normal);
 }
 </style>

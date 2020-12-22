@@ -60,13 +60,7 @@ export default {
     };
   },
   created() {
-    if(this.$nuxt.$route.path.includes('/case-studies/')) {
-      this.headerTransparent = true;
-      this.isCasePage = true;
-    } else {
-      this.headerTransparent = false;
-      this.isCasePage = false;
-    }
+    this.setHeaderState();
   },
   mounted() {
     if(this.isCasePage) {
@@ -82,11 +76,19 @@ export default {
   },
   watch: {
     '$route'() {
-      this.headerTransparent = false;
-      this.isCasePage = false;
+      this.setHeaderState();
     }
   },
   methods: {
+    setHeaderState() {
+      if (this.$nuxt.$route.path.includes('/case-studies/')) {
+        this.headerTransparent = true;
+        this.isCasePage = true;
+      } else {
+        this.headerTransparent = false;
+        this.isCasePage = false;
+      }
+    },
     goToTopPage() {
       window.scrollTo(0, 0);
     },

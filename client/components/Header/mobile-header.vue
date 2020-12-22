@@ -108,10 +108,9 @@ export default {
   },
   watch: {
     '$route'() {
-      this.mobileHeaderIsOpen = false;
-      this.headerTransparent = false;
+      this.setPageData();
       this.enableScrollOnBody();
-      this.isCasePage = false;
+      this.mobileHeaderIsOpen = false;
     }
   },
   created() {

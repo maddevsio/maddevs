@@ -15,6 +15,7 @@
     "lint-scss": "sass-lint client/assets/styles/*.scss --verbose",
     "precommit": "npm run lint",
     "heroku-postbuild": "npm run generate",
+    "heroku-cleanup": "rm -rf client",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
     "test": "jest --config=jest.config.develop.js && node ./jest_config/jest-coverage-badges.js -output './client/static'",
@@ -42,7 +43,7 @@
     "vue-awesome-swiper": "^4.1.1",
     "vue-js-modal": "^2.0.0-rc.6",
     "vue-prism-editor": "^1.2.2",
-    "vue-social-sharing": "^3.0.3",
+    "vue-social-sharing": "^3.0.4",
     "vue2-perfect-scrollbar": "^1.5.0"
   },
   "devDependencies": {
