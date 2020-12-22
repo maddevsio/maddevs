@@ -18,6 +18,9 @@ import { highlight } from 'prismjs/components/prism-core.min';
 import 'prismjs/components/prism-clike.min';
 import 'prismjs/components/prism-javascript.min';
 import 'prismjs/components/prism-css.min';
+import 'prismjs/components/prism-markup.min';
+import 'prismjs/components/prism-java.min';
+import 'prismjs/components/prism-python.min';
 import 'prismjs/themes/prism.css';
 
 export default {
@@ -54,6 +57,7 @@ export default {
     line-height: 22px;
     font-size: 17px;
     font-family: 'IBM Plex Mono', monospace;
+    margin: 24px 0;
 
     /deep/ .prism-editor__container {
       background-color: whitesmoke;

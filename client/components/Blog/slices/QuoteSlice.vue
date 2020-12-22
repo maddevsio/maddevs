@@ -29,7 +29,7 @@ export default {
     font-style: italic;
     font-size: 17px;
     line-height: 28px;
-    margin: 0 0 48px;
+    margin: 24px 0;
     font-family: 'Inter-Regular', sans-serif;
     color: $text-color--black-cases;
     border-left: 2px solid $border-color--red;

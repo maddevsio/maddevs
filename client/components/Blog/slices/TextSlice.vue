@@ -86,12 +86,6 @@ export default {
       font-family: 'Inter-Regular', sans-serif;
     }
 
-    /deep/ em {
-        display: block;
-        padding: 5px 12px;
-        border-left: 3px solid $border-color--white;
-    }
-
     /deep/ pre {
       padding: 20px;
       overflow: auto;

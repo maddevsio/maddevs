@@ -47,9 +47,6 @@
         </section>
       </div>
     </div>
-    <button class="blog-post__back-to-list" @click="scrollToTop()" v-if="buttonIsActive">
-      <i/>
-    </button>
   </div>
 </template>
 
@@ -163,10 +160,6 @@ export default {
           behavior: 'smooth'
         }
       );
-    },
-    scrollToHeading(className) {
-      this.scrollTo(className);
-      this.buttonIsActive = true;
     },
     scrollToTop() {
       window.scrollTo({
@@ -381,10 +374,6 @@ export default {
       span {
         display: block;
         margin-bottom: 15px;
-      }
-
-      a {
-        text-decoration: none;
       }
 
       span,
