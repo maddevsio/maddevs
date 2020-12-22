@@ -133,6 +133,9 @@
           alt=""
           :lazyLoading="true"
         />
+        <p class="case_image-description m-8_top">
+          Sir Jonh Monash Centre Site
+        </p>
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-56_top media-m-48_top m-12_bottom">SJMC Hardware</h2>
@@ -188,6 +191,9 @@
           </video>
         </div>
       </section> -->
+      <p class="case_image-description m-34_top">
+        Sir Jonh Monash Centre Site
+      </p>
       <section class="container_regular m-56_top media-m-24_top m-96_bottom media-m-72_bottom">
         <div class="case_column-container">
           <div class="case_column-item">
@@ -425,6 +431,9 @@
           The Sir John Monash Centre operates within a bespoke multimedia framework, which requires high-level technical expertise to deliver the Centre's visitor experience. Mad Devs provide outstanding levels of support and development services across our multimedia and IT platforms, systems and languages. Always available to provide assistance when needed, Mad Devs are a highly-valued part of our wider operations.
         </TextQuoteAuthor>
       </section>
+      <Footer>
+        Namba Food <br> Top 1 Delivery Service in <br class="case_mobile-screen-break"> Central Asia
+      </Footer>
     </section>
   </main>
 </template>
@@ -447,6 +456,7 @@ import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem';
 import ListDashItemBox from '@/components/Cases/ListDashItemBox';
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
 import Swiper from '@/components/Cases/Swiper';
+import Footer from '@/components/Cases/Footer';
 
 export default {
   components: {
@@ -466,7 +476,8 @@ export default {
     ListTechnologies,
     ListTechnologiesItem,
     ListDashItemBox,
-    Swiper
+    Swiper,
+    Footer
   },
   name: 'SirJohnMonashCentre',
   data() {
