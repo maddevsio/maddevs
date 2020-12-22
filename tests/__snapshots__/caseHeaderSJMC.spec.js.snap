@@ -5,21 +5,6 @@ exports[`HeaderSJMC renders correctly 1`] = `
   <section
     class="case_header"
   >
-    <video
-      autoplay="autoplay"
-      class="case_main-video"
-      loop="loop"
-      muted="muted"
-    >
-      <source
-        src="../../assets/video/sjmc/sjmc-main-video.mp4"
-        type="video/mp4"
-      />
-      
-      Your browser does not support the video tag.
-    
-    </video>
-     
     <div
       class="case_logotype sjmc-header"
     />
@@ -58,30 +43,6 @@ exports[`HeaderSJMC renders correctly 1`] = `
     </button>
   </section>
    
-  <div
-    style="display: none;"
-  >
-    <div
-      class="video-wrapper"
-    >
-      <!---->
-       
-      <video
-        class="main-video"
-      >
-        <source
-          src="../../assets/video/sjmc/sjmc-modal-video.mp4"
-          type="video/mp4"
-        />
-        
-      Your browser does not support the video tag.
-    
-      </video>
-    </div>
-     
-    <button
-      class="exit"
-    />
-  </div>
+  <!---->
 </div>
 `;
