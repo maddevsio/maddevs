@@ -6,8 +6,24 @@ import HeaderSJMC from '@/components/Cases/HeaderSJMC';
 describe('HeaderSJMC', () => {
   let wrapper;
 
+  const VueVideoStub = { // Mock refs in child component
+    render: () => {},
+    methods: {
+      onended: () => {}
+    }
+  };
+
   beforeEach(() => {
-    wrapper = mount(HeaderSJMC);
+    wrapper = mount(HeaderSJMC, {
+      mocks: {
+        $nuxt: {
+          $on: jest.fn()
+        }
+      },
+      stubs: {
+        'SJMCVideo': VueVideoStub
+      }
+    });
   });
 
   // ------ IMPORTANT ----- //
