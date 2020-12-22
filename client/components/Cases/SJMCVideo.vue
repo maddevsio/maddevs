@@ -2,7 +2,7 @@
   <div ref="videoContainer" v-show="fullscreenModIsActive">
     <div class="video-wrapper" @click="videoSetState">
       <div class="pause-icon" v-if="showIcon"></div>
-      <video class="main-video" loop="true" ref="video">
+      <video class="main-video" ref="video">
         <source src="../../assets/video/sjmc/sjmc-modal-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -19,16 +19,27 @@ export default {
       this.showIcon = true;
     };
 
-    // header sjmc event bus handler 
+    // event bus handler 
     this.$nuxt.$on('open-fullscreen', () => {
       this.$refs.videoContainer.requestFullscreen();
       this.fullscreenModIsActive = true;
+
+      if (this.flagFirstStartVideo) {
+        this.$refs.video.play();
+        this.flagFirstStartVideo = false;
+      }
     });
 
     // exit fullscreen handler
     document.addEventListener('fullscreenchange', () => {
       if (document.fullscreenElement === null) {
         this.fullscreenModIsActive = false;
+
+        // Pause video when exit from fullscreen
+        if (this.$refs.video.paused == false) {
+          this.$refs.video.pause();
+          this.showIcon = true;
+        }
       }
     });
   },
@@ -50,7 +61,8 @@ export default {
   data() {
     return {
       fullscreenModIsActive: false,
-      showIcon: false
+      showIcon: false,
+      flagFirstStartVideo: true
     };
   }
 };
