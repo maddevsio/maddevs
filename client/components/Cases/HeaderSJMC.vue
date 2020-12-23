@@ -42,11 +42,13 @@ export default {
       return `${process.env.awsUrl}/sjmc/sjmc-main-video.b35a387.mp4`;
     }
   },
-  mounted() {
-    if(navigator.userAgent.match(/(iPhone)/i)) {
-      this.isIphone = true;
-    } else {
-      this.isIphone = false;
+  created() {
+    if (process.client) {
+      if(navigator.userAgent.match(/(iPhone)/i)) {
+        this.isIphone = true;
+      } else {
+        this.isIphone = false;
+      }
     }
   },
   methods: {

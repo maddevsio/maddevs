@@ -33,11 +33,13 @@ export default {
       return `${process.env.awsUrl}/main.ef19480.mp4`;
     }
   },
-  mounted() {
-    if(navigator.userAgent.match(/(iPhone)/i)) {
-      this.isIphone = true;
-    } else {
-      this.isIphone = false;
+  created() {
+    if (process.client) {
+      if(navigator.userAgent.match(/(iPhone)/i)) {
+        this.isIphone = true;
+      } else {
+        this.isIphone = false;
+      }
     }
   }
 };
