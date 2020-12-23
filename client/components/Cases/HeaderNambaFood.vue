@@ -1,6 +1,12 @@
 <template>
   <section class="case_header">
-    <video class="case_main-video" loop="true" muted="true" autoplay="true">
+    <video 
+      class="case_main-video" 
+      loop="true" 
+      muted="true" 
+      autoplay="true"
+      v-if="isNotIphone"
+    >
       <source :src="getPathToVideo" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -17,9 +23,21 @@ export default {
   components: {
     ButtonMore
   },
+  data() {
+    return {
+      isNotIphone: true
+    };
+  },
   computed: {
     getPathToVideo: () => {
       return `${process.env.awsUrl}/main.ef19480.mp4`;
+    }
+  },
+  mounted() {
+    if(navigator.userAgent.match(/(iPhone)/i)) {
+      this.isNotIphone = false;
+    } else {
+      this.isNotIphone = true;
     }
   }
 };
