@@ -66,6 +66,7 @@
       </section>
       <section class="container_full background-color-silver p-75_top p-75_bottom media-p-16_top media-p-16_bottom">
         <div class="case_full-screen-phone-video-wrapper">
+          <img src="../../assets/img/Cases/nambafood/png/iphone-video-preview.png" class="case_phone-ios-image" v-if="isIphone">
           <video 
             id="iphone-silver-video" 
             class="case_full-screen-video" 
@@ -73,12 +74,11 @@
             height="100%" 
             loop="true" 
             muted="true"
-            v-if="isNotIphone"
+            v-else
           >
             <source :src="getPathToPhoneVideo" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <img src="../../assets/img/Cases/nambafood/png/iphone-video-preview.png" class="case_phone-ios-image" v-else>
         </div>
       </section>
       <section class="container_regular">
@@ -252,7 +252,8 @@
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <div class="case_map-video-wrapper" :class="{'case_box-shadow': isNotIphone}">
+        <div class="case_map-video-wrapper" :class="{'case_box-shadow': !isIphone}">
+          <img src="../../assets/img/Cases/nambafood/jpg/map-blank.jpg" class="case_ios-map-video-image case_box-shadow" v-if="isIphone">
           <video 
             id="map-video" 
             class="case_map-video" 
@@ -260,12 +261,11 @@
             height="100%" 
             loop="true" 
             muted="true"
-            v-if="isNotIphone"
+            v-else
           >
             <source :src="getPathToMapVideo" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <img src="../../assets/img/Cases/nambafood/jpg/map-blank.jpg" class="case_ios-map-video-image case_box-shadow" v-else>
         </div>
       </section>
       <section class="container_regular">
@@ -669,7 +669,7 @@ export default {
         }
       ],
       videoIdList: ['map-video', 'iphone-silver-video'],
-      isNotIphone: true
+      isIphone: false
     };
   },
   head() {
@@ -718,9 +718,9 @@ export default {
     });
 
     if(navigator.userAgent.match(/(iPhone)/i)) {
-      this.isNotIphone = false;
+      this.isIphone = true;
     } else {
-      this.isNotIphone = true;
+      this.isIphone = false;
     }
   }
 };

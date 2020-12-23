@@ -5,7 +5,7 @@
         class="case_main-video" 
         loop="true" muted="true" 
         autoplay="true"
-        v-if="isNotIphone"
+        v-if="!isIphone"
       >
         <source :src="getPathToVideo" type="video/mp4">
         Your browser does not support the video tag.
@@ -34,7 +34,7 @@ export default {
   },
   data() {
     return {
-      isNotIphone: true
+      isIphone: false
     };
   },
   computed: {
@@ -44,9 +44,9 @@ export default {
   },
   mounted() {
     if(navigator.userAgent.match(/(iPhone)/i)) {
-      this.isNotIphone = false;
+      this.isIphone = true;
     } else {
-      this.isNotIphone = true;
+      this.isIphone = false;
     }
   },
   methods: {
