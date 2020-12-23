@@ -21,42 +21,15 @@
     position: relative;
   }
 
-  &_full-screen-phone-video-wrapper,
-  &_map-video-wrapper {
-    &::before {
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: -1;
-    }
-  }
-
   &_full-screen-phone-video-wrapper {
     margin: 0 auto;
     width: 23%;
     max-width: 340px;
     z-index: 0;
-
-    &::before {
-      background-image: url("../../assets/img/Cases/nambafood/png/iphone-video-preview.png");
-    }
   }
 
   &_full-screen-video {
     border-radius: 3.5416666666666665vw;
-  }
-
-  &_map-video-wrapper {
-    &::before {
-      background-image: url("../../assets/img/Cases/nambafood/jpg/map-blank.jpg");
-    }
   }
 
   &_map-video {
@@ -96,6 +69,18 @@
 
   &_couriers-android-app-wrapper {
     max-width: 1230px;
+  }
+
+  &_phone-ios-image {
+    width: 100%;
+    max-width: 331px;
+    max-height: 663px;
+  }
+
+  &_ios-map-video-image {
+    width: 100%;
+    max-width: 1026px;
+    max-height: 544px;
   }
 
   @media screen and (min-width: 1440px) {
