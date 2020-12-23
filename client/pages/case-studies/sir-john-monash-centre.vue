@@ -425,10 +425,10 @@
           class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
           authorName="Wade Bartlett"
           authorPosition="Former Technical and Operations Director, Sir John Monash Centre"
-          fileName="aziza-anarbekova"
+          fileName="wade-bartlett"
           fileExtension="png"
           alt=""
-          pictureFolder="nambafood"
+          pictureFolder="sjmc"
         >
           The Sir John Monash Centre operates within a bespoke multimedia framework, which requires high-level technical expertise to deliver the Centre's visitor experience. Mad Devs provide outstanding levels of support and development services across our multimedia and IT platforms, systems and languages. Always available to provide assistance when needed, Mad Devs are a highly-valued part of our wider operations.
         </TextQuoteAuthor>
