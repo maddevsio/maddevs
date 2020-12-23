@@ -190,7 +190,7 @@
             Your browser does not support the video tag.
           </video>
         </div> -->
-        <video width="331px" height="663px" controls muted >
+        <video width="331px" height="663px" controls muted playsinline>
           <source :src="getPathToPhoneVideo" type="video/mp4">
           Your browser does not support the video tag.
         </video>
