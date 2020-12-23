@@ -184,12 +184,16 @@
         </TextParagraph>
       </section>
       <section class="container_full case_sjmc-phone-video-section background-color-black-primary">
-        <div class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video" ref="videoWrap" @click="videoSetState">
+        <!-- <div class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video" ref="videoWrap" @click="videoSetState">
           <video width="100%" height="100%" ref="video" playsinline>
             <source :src="getPathToPhoneVideo" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-        </div>
+        </div> -->
+        <video width="331px" height="663px" controls="true">
+          <source :src="getPathToPhoneVideo" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </section>
       <section class="container_regular">
         <p class="case_image-description m-34_top media-m-24_top">
@@ -734,11 +738,11 @@ export default {
       return `${process.env.awsUrl}/bluetooth-beacons-video.9ca649c.mp4`;
     }
   },
-  mounted() {
-    this.$refs.video.onended = () => {
-      this.$refs.videoWrap.classList.add('case_sjmc-phone-video-wrapper--on-pause');
-    };
-  },
+  // mounted() {
+  //   this.$refs.video.onended = () => {
+  //     this.$refs.videoWrap.classList.add('case_sjmc-phone-video-wrapper--on-pause');
+  //   };
+  // },
   methods: {
     videoSetState() {
       if (this.$refs.video.paused == true) {
