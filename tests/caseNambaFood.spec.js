@@ -218,7 +218,8 @@ describe('Namba food', () => {
     ],
     videoIdList: ['map-video', 'iphone-silver-video'],
     header: undefined,
-    mobileHeader: undefined
+    mobileHeader: undefined,
+    isNotIphone: true
   };
 
   beforeEach(() => {
