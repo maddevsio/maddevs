@@ -185,15 +185,17 @@
       </section>
       <section class="container_full case_sjmc-phone-video-section background-color-black-primary">
         <div class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video" ref="videoWrap" @click="videoSetState">
-          <video width="100%" height="100%" ref="video">
+          <video width="100%" height="100%" ref="video" playsinline>
             <source :src="getPathToPhoneVideo" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
       </section>
-      <p class="case_image-description m-34_top">
-        Playback of content in the application when approaching the bluetooth beacons.
-      </p>
+      <section class="container_regular">
+        <p class="case_image-description m-34_top media-m-24_top">
+          Playback of content in the application when approaching the bluetooth beacons.
+        </p>
+      </section>
       <section class="container_regular m-56_top media-m-24_top m-96_bottom media-m-72_bottom">
         <div class="case_column-container">
           <div class="case_column-item">
