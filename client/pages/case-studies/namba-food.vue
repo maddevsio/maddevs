@@ -696,15 +696,6 @@ export default {
       return `${process.env.awsUrl}/map.c41e893.mp4`;
     }
   },
-  created() {
-    if (process.client) {
-      if(navigator.userAgent.match(/(iPhone)/i)) {
-        this.isIphone = true;
-      } else {
-        this.isIphone = false;
-      }
-    }
-  },
   mounted() {
     // Play/Pause HTML Video Based on Visibility
     const options = {
@@ -725,6 +716,12 @@ export default {
       let observer = new IntersectionObserver(callback, options);
       observer.observe(document.getElementById(video));
     });
+
+    if(navigator.userAgent.match(/(iPhone)/i)) {
+      this.isIphone = true;
+    } else {
+      this.isIphone = false;
+    }
   }
 };
 </script>
