@@ -44,6 +44,14 @@ export default (type, element, content, children) => {
     return result;
   }
 
+  if(type === Elements.paragraph) {
+    const processedChildren = children.map(child => child.replace(
+      /`([^`]*)`/g,
+      (match, p) => `<span class="inline-code">${p}</span>`
+    ));
+    return `<p>${processedChildren.join('')}</p>`;
+  }
+
   // Return null to stick with the default behavior for everything else
   return null;
 };

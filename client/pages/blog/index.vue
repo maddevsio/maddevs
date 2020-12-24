@@ -9,7 +9,12 @@
           <div v-if="recentPosts.length !== 0" class="latest-posts__wrapper">
             <section v-for="post in recentPosts" :key="post.id" :post="post" class="latest-posts__single-post">
               <div class="single-post__wrapper">
-                <recommended-blog-widget :post="post"/>
+                <div class="banner" v-if="post.id === 'banner'">
+                  <a :href="post.link.url" :target="post.link.target">
+                    <img :src="post.banner.url" :alt="post.id">
+                  </a>
+                </div>
+                <recommended-blog-widget :post="post" v-else/>
               </div>
             </section>
           </div>
@@ -20,10 +25,10 @@
           <div class="filter">
             <perfect-scrollbar :options="{swipeEasing: true, suppressScrollY: true, handlers: ['wheel', 'touch', 'drag-thumb']}">
               <ul class="filter-list">
-                <li class="filter-item__wrapper" v-for="(tag, i) in tags" :key="i">
+                <li class="filter-item__wrapper" v-for="(category, i) in homepageContent.categories" :key="i">
                   <div class="filter-item">
-                    <input type="radio" :id="tag.inputId" v-model="currentTag" :value="tag.tagName" name="Tag" class="radio-input">
-                    <label :for="tag.inputId" class="filter-label">{{ tag.tagName }}</label>
+                    <input type="radio" :id="category.title" v-model="currentTag" :value="category.title" name="Tag" class="radio-input">
+                    <label :for="category.title" class="filter-label">{{ category.title }}</label>
                   </div>
                 </li>
               </ul>
@@ -115,8 +120,6 @@ export default {
 
       this.posts = posts.results;
       this.featuredPost = posts.results.find(post => post.tags.includes('Featured post'));
-      this.tags = this.getTagsFromPosts(posts.results);
-      this.currentTag = this.tags.length ? this.tags[0].tagName : null;
     },
 
     async getHomePageContent() {
@@ -125,46 +128,21 @@ export default {
       this.homepageContent = {
         image: homepageContent.image.url,
         headline: homepageContent.headline[0].text,
-        description: homepageContent.description[0].text
+        description: homepageContent.description[0].text,
+        categories: this.getCategoriesFromPosts(homepageContent.categories),
+        banner: homepageContent.recent_posts_banner,
+        bannerLink: homepageContent.banner_link
       };
+      this.currentTag = this.homepageContent.categories[0].title;
     },
 
-    resetFilter() {
-      this.filterIsActive = false;
-      this.currentTag = null;
-      this.resetRadioInputs();
-      this.getAllPosts();
-    },
-
-    resetRadioInputs() {
-      const radioInput = document.getElementsByClassName('radio-input');
-
-      for(let i = 0; i < radioInput.length; i++) {
-        if (radioInput[i].checked) {
-          radioInput[i].checked = false;
-        }
-      }
-    },
-
-    getTagsFromPosts(posts) {
-      let totalTags = [];
-      let tagsObjectList = [];
-
-      posts.forEach(post => {
-        totalTags = totalTags.concat(post.tags);
+    getCategoriesFromPosts(prismicPostsCategories) {
+      return prismicPostsCategories.map(category => {
+        return {
+          title: this.$prismic.asText(category.category_title),
+          tags: category.tags.length ? this.$prismic.asText(category.tags).split(/, */g) : []
+        };
       });
-
-      // Remove duplicates
-      totalTags = totalTags.filter((tag, i) => i === totalTags.indexOf(tag));
-
-      // Create objects list and
-      totalTags.forEach(tag => {
-        tagsObjectList.push({
-          tagName: tag,
-          inputId: tag.toLowerCase().replace(/\s/g , '-') // Replaced space on the dash
-        });
-      });
-      return tagsObjectList.filter(tag => tag.tagName !== 'Featured post');
     },
 
     incrementPage() {
@@ -173,13 +151,29 @@ export default {
   },
   computed: {
     filteredPosts: function() {
-      return this.posts.filter(post => post.tags.includes(this.currentTag));
+      if (this.currentTag !== null) {
+        const currentTags = this.homepageContent.categories.find(tag => tag.title === this.currentTag);
+        currentTags.tags.push(currentTags.title);
+
+        return this.posts.filter(post => post.tags.some(tag => currentTags.tags.includes(tag)));
+      } else {
+        return [];
+      }
     },
     filteredPostsToShow: function() {
       return this.filteredPosts.slice(0, this.pageSize * this.page);
     },
     recentPosts: function() {
-      return this.posts.slice(0, 5);
+      const posts = this.posts.slice(0, 5);
+      if(posts.length) {
+        posts.splice(4, 0, {
+          id: 'banner',
+          banner: this.homepageContent.banner || {url: '#'},
+          link: this.homepageContent.bannerLink || {link_type: 'Web', target: '_self', url: '#'}
+        });
+      }
+
+      return posts;
     },
     totalPages: function() {
       return Math.ceil(this.filteredPosts.length / this.pageSize);
@@ -219,7 +213,7 @@ export default {
       display: flex;
       justify-content: space-between;
 
-      .latest-posts__wrapper {
+      &__wrapper {
         display: flex;
         flex-wrap: wrap;
         margin: 96px -10px 0;
@@ -227,13 +221,22 @@ export default {
         a {
           text-decoration: none;
         }
+      }
 
-        .latest-posts__single-post {
-          width: 33.3333%;
-          margin-bottom: 80px;
+      &__single-post {
+        width: 33.3333%;
+        margin-bottom: 80px;
 
-          .single-post__wrapper {
+        .single-post {
+          &__wrapper {
             padding: 0 10px;
+
+            .banner {
+              img {
+                max-width: 100%;
+                height: auto;
+              }
+            }
           }
         }
       }
@@ -256,14 +259,13 @@ export default {
     .filtered-posts {
       background-color: $text-color--white-primary;
       padding-top: 48px;
+      padding-bottom: 80px;
 
       .filter {
-
         margin-bottom: 48px;
 
         .filter-list {
           display: flex;
-          flex-wrap: wrap;
           justify-content: flex-start;
           margin: 0 -10px;
 
@@ -281,7 +283,6 @@ export default {
         display: flex;
         margin: 50px -10px 0;
         flex-wrap: wrap;
-        padding-bottom: 80px;
 
         a {
           text-decoration: none;
@@ -361,13 +362,6 @@ export default {
     /deep/ .ps__rail-x {
       display: none;
     }
-  }
-
-  .filter-list {
-    display: grid;
-    grid-template-columns: repeat(1, 100%);
-    grid-gap: 10px;
-    margin-top: 10px;
   }
 
   .radio-input {

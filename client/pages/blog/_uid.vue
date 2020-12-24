@@ -81,7 +81,7 @@ export default {
     return {
       title: this.title,
       meta: [
-        { name: 'description', content: this.document.subtitle.length !== 0 ? this.document.subtitle[0].text : ''},
+        { name: 'description', content: this.document.meta_description.length !== 0 ? this.$prismic.asText(this.document.meta_description) : ''},
         // Facebook / Open Graph
         { property: 'og:type', content: 'website'},
         { property: 'og:url', content: this.ogUrl},
@@ -164,10 +164,6 @@ export default {
         }
       );
     },
-    scrollToHeading(className) {
-      this.scrollTo(className);
-      this.buttonIsActive = true;
-    },
     scrollToTop() {
       window.scrollTo({
         top: 0,
@@ -204,11 +200,10 @@ export default {
   @import '../../assets/styles/socialNetworkIcons';
 
   .blog-post {
-    /*max-width: 1680px;*/
     margin: auto;
-    /*padding: 150px 250px 0;*/
     background-color: $text-color--white-primary;
     position: relative;
+    padding-bottom: 96px;
 
     &__background {
       background-color: $bgcolor--black;
@@ -342,8 +337,8 @@ export default {
     &__back-to-list {
       padding: 12px 14px 4px;
       position: fixed;
-      right: 38px;
-      bottom: 20px;
+      left: 38px;
+      bottom: 37px;
       background-color: transparent;
       border: 1px solid $border-color--red;
       border-radius: 2px;
@@ -378,13 +373,14 @@ export default {
     }
 
     /deep/ .textslice {
-      span {
-        display: block;
-        margin-bottom: 15px;
-      }
-
-      a {
-        text-decoration: none;
+      .inline-code {
+        font-family: 'IBM Plex Mono', monospace;
+        background: $bgcolor--grey-light;
+        padding: 0 4px;
+        border-radius: 3px;
+        display: inline-block;
+        font-size: 15px;
+        line-height: 129%;
       }
 
       span,
@@ -430,8 +426,18 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1199px) {
+    .blog-post {
+      &__share {
+        display: none;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1024px) {
     .blog-post {
+      padding-bottom: 48px;
+
       &__background {
         display: none;
       }

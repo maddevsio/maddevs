@@ -1,7 +1,9 @@
 <template>
   <div class="embed">
-    <prismic-embed :field="slice.items[0].embed"/>
-    <div class="embed__image" :style="{backgroundImage: `url(${slice.items[0].embed.thumbnail_url})`}" />
+    <prismic-embed :field="slice.items[0].embed" target="_blank"/>
+    <div class="embed__image-wrapper">
+      <div class="embed__image" :style="{backgroundImage: `url(${slice.items[0].embed.thumbnail_url})`}" />
+    </div>
   </div>
 </template>
 
@@ -22,11 +24,11 @@ export default {
   .embed {
     display: flex;
     margin: 25px 0;
-    border: 1px solid $border-color--grey;
+    border: 1px solid $border-color--silver;
 
-    /deep/ div {
+    /deep/ > div {
       display: flex;
-      padding: 10px;
+      padding: 24px 0 24px 24px;
 
       a {
         text-decoration: none;
@@ -37,11 +39,11 @@ export default {
       }
 
       h1 {
-        margin-bottom: 10px;
-        font-size: 18px;
+        margin-bottom: 6px;
+        font-size: 21px;
         font-family: 'Poppins-Bold', sans-serif;
-        font-weight: 700;
-        color: $text-color--white;
+        font-weight: 600;
+        color: $text-color--black-cases;
       }
 
       h1,
@@ -51,18 +53,22 @@ export default {
       }
 
       p {
-        font-size: 16px;
+        font-size: 13px;
         font-family: 'Poppins-Regular', sans-serif;
-        color: $text-color--grey;
+        color: $text-color--grey-pale;
       }
     }
 
     &__image {
       width: 100%;
-      padding: 0 !important;
       background-size: contain;
       background-position: right;
       background-repeat: no-repeat;
+
+      &-wrapper {
+        width: 33%;
+        padding: 24px !important;
+      }
     }
   }
 </style>
