@@ -81,7 +81,7 @@ export default {
     return {
       title: this.title,
       meta: [
-        { name: 'description', content: this.document.subtitle.length !== 0 ? this.document.subtitle[0].text : ''},
+        { name: 'description', content: this.document.meta_description.length !== 0 ? this.$prismic.asText(this.document.meta_description) : ''},
         // Facebook / Open Graph
         { property: 'og:type', content: 'website'},
         { property: 'og:url', content: this.ogUrl},
