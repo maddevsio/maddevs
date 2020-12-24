@@ -26,13 +26,7 @@ export default {
 
     // event bus handler 
     this.$nuxt.$on('open-fullscreen', () => {
-      this.$refs.videoContainer.requestFullscreen();
-      this.fullscreenModIsActive = true;
-
-      if (this.flagFirstStartVideo) {
-        this.$refs.video.play();
-        this.flagFirstStartVideo = false;
-      }
+      this.emitHandler();
     });
 
     // exit fullscreen handler
@@ -52,6 +46,15 @@ export default {
     exitFullscreen() {
       document.exitFullscreen();
       this.fullscreenModIsActive = false;
+    },
+    emitHandler() {
+      this.$refs.videoContainer.requestFullscreen();
+      this.fullscreenModIsActive = true;
+
+      if (this.flagFirstStartVideo) {
+        this.$refs.video.play();
+        this.flagFirstStartVideo = false;
+      }
     },
     videoSetState() {
       if (this.$refs.video.paused == true) {
