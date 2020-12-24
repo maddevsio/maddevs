@@ -373,9 +373,14 @@ export default {
     }
 
     /deep/ .textslice {
-      span {
-        display: block;
-        margin-bottom: 15px;
+      .inline-code {
+        font-family: 'IBM Plex Mono', monospace;
+        background: $bgcolor--grey-light;
+        padding: 0 4px;
+        border-radius: 3px;
+        display: inline-block;
+        font-size: 15px;
+        line-height: 129%;
       }
 
       span,
