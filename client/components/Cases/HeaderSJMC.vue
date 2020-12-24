@@ -11,7 +11,7 @@
         Your browser does not support the video tag.
       </video>
       <div class="case_logotype sjmc-header"></div>
-      <h1 class="case_header-title">Sir John Monash <br class="case_mobile-break"> Centre’s <br class="case_desktop-break"> case</h1>
+      <h1 class="case_header-title">The maintenance <br class="case_mobile-break"> of memory: <br> Sir John Monash <br class="case_mobile-break"> Centre</h1>
       <button class="case_play-button" type="button" @click="openFullscreen()">
         <div class="case_play-icon"></div>
         View video about SJMC
@@ -118,13 +118,11 @@ export default {
       height: 94.29px;
       margin-bottom: 57px;
     }
+  }
 
+  @media screen and (max-width: 520px) {
     &_mobile-break {
       display: block;
-    }
-
-    &_desktop-break {
-      display: none;
     }
   }
 }

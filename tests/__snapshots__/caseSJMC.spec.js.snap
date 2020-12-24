@@ -30,15 +30,17 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
       <h1
         class="case_header-title"
       >
-        Sir John Monash 
+        The maintenance 
         <br
           class="case_mobile-break"
         />
-         Centre’s 
+         of memory: 
+        <br />
+         Sir John Monash 
         <br
-          class="case_desktop-break"
+          class="case_mobile-break"
         />
-         case
+         Centre
       </h1>
        
       <button
