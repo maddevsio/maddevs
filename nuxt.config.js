@@ -121,5 +121,8 @@ module.exports = {
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
     preview: false
+  },
+  env: {
+    awsUrl: process.env.NODE_AWS_URL
   }
 };

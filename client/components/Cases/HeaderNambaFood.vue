@@ -1,9 +1,15 @@
 <template>
   <section class="case_header">
-    <!-- <video class="case_main-video" loop="true" muted="true" autoplay="true">
-      <source src="../../assets/img/Cases/nambafood/video/main.mp4" type="video/mp4">
+    <video 
+      class="case_main-video" 
+      loop="true" 
+      muted="true" 
+      autoplay="true"
+      v-if="!isIphone"
+    >
+      <source :src="getPathToVideo" type="video/mp4">
       Your browser does not support the video tag.
-    </video> -->
+    </video>
     <div class="case_logotype nambafood"></div>
     <h1 class="case_header-title">Namba Food <br> Top Delivery Service <br class="case_text-break"> in <br class="case_text-break-mobile"> Central Asia</h1>
     <ButtonMore class="case_more__button">Read our case studies ↓</ButtonMore>
@@ -16,6 +22,23 @@ export default {
   name: 'Header',
   components: {
     ButtonMore
+  },
+  data() {
+    return {
+      isIphone: false
+    };
+  },
+  computed: {
+    getPathToVideo: () => {
+      return `${process.env.awsUrl}/main.ef19480.mp4`;
+    }
+  },
+  mounted() {
+    if(navigator.userAgent.match(/(iPhone)/i)) {
+      this.isIphone = true;
+    } else {
+      this.isIphone = false;
+    }
   }
 };
 </script>

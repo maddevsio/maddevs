@@ -66,10 +66,19 @@
       </section>
       <section class="container_full background-color-silver p-75_top p-75_bottom media-p-16_top media-p-16_bottom">
         <div class="case_full-screen-phone-video-wrapper">
-          <!-- <video id="iphone-silver-video" class="case_full-screen-video" width="100%" height="100%" loop="true" muted="true">
-            <source src="../../assets/video/mobile-applications-for-end-users.mp4" type="video/mp4">
+          <img src="../../assets/img/Cases/nambafood/png/iphone-video-preview.png" class="case_phone-ios-image" v-if="isIphone">
+          <video 
+            id="iphone-silver-video" 
+            class="case_full-screen-video" 
+            width="100%" 
+            height="100%" 
+            loop="true" 
+            muted="true"
+            v-else
+          >
+            <source :src="getPathToPhoneVideo" type="video/mp4">
             Your browser does not support the video tag.
-          </video> -->
+          </video>
         </div>
       </section>
       <section class="container_regular">
@@ -243,11 +252,20 @@
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <div class="case_map-video-wrapper case_box-shadow">
-          <!-- <video id="map-video" class="case_map-video" width="100%" height="100%" loop="true" muted="true">
-            <source src="../../assets/video/map.mp4" type="video/mp4">
+        <div class="case_map-video-wrapper" :class="{'case_box-shadow': !isIphone}">
+          <img src="../../assets/img/Cases/nambafood/jpg/map-blank.jpg" class="case_ios-map-video-image case_box-shadow" v-if="isIphone">
+          <video 
+            id="map-video" 
+            class="case_map-video" 
+            width="100%" 
+            height="100%" 
+            loop="true" 
+            muted="true"
+            v-else
+          >
+            <source :src="getPathToMapVideo" type="video/mp4">
             Your browser does not support the video tag.
-          </video> -->
+          </video>
         </div>
       </section>
       <section class="container_regular">
@@ -650,7 +668,8 @@ export default {
           fileExtension: 'jpg'
         }
       ],
-      videoIdList: ['map-video', 'iphone-silver-video']
+      videoIdList: ['map-video', 'iphone-silver-video'],
+      isIphone: false
     };
   },
   head() {
@@ -669,26 +688,40 @@ export default {
       ]
     };
   },
+  computed: {
+    getPathToPhoneVideo: () => {
+      return `${process.env.awsUrl}/mobile-applications-for-end-users.faaab2d.mp4`;
+    },
+    getPathToMapVideo: () => {
+      return `${process.env.awsUrl}/map.c41e893.mp4`;
+    }
+  },
   mounted() {
     // Play/Pause HTML Video Based on Visibility
-    // const options = {
-    //   root: null,
-    //   rootMargin: '0px',
-    //   threshold: 1.0
-    // };
-    // this.videoIdList.forEach(video => {
-    //   let callback = (entries, observer) => {
-    //     entries.forEach(entry => {
-    //       if(entry.target.id == video) {
-    //         if(entry.isIntersecting) {
-    //           entry.target.play();
-    //         }
-    //       }
-    //     });
-    //   };
-    //   let observer = new IntersectionObserver(callback, options);
-    //   observer.observe(document.getElementById(video));
-    // });
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 1.0
+    };
+    this.videoIdList.forEach(video => {
+      let callback = (entries, observer) => {
+        entries.forEach(entry => {
+          if(entry.target.id == video) {
+            if(entry.isIntersecting) {
+              entry.target.play();
+            }
+          }
+        });
+      };
+      let observer = new IntersectionObserver(callback, options);
+      observer.observe(document.getElementById(video));
+    });
+
+    if(navigator.userAgent.match(/(iPhone)/i)) {
+      this.isIphone = true;
+    } else {
+      this.isIphone = false;
+    }
   }
 };
 </script>

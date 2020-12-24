@@ -15,6 +15,11 @@
     max-width: 1440px;
   }
 
+  &_image-description {
+    text-align: center;
+    @include default_text($text-color--grey-img-description, 13px, 21.58px, -0.02em, normal);
+  }
+
   &_sjmc-phone-video-section {
     position: relative;
     padding: 60px 0;
@@ -62,11 +67,6 @@
     @media screen and (max-width: 360px) {
       min-width: 280px;
     }
-  }
-
-  &_image-description {
-    text-align: center;
-    @include default_text($text-color--grey-img-description, 13px, 21.58px, -0.02em, normal);
   }
 
   @media screen and (max-width: 768px) {

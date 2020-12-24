@@ -183,17 +183,19 @@
           The limited space in the SJMC made detecting each visitor’s location and continuously refreshing a list of available content nearby challenging.
         </TextParagraph>
       </section>
-      <!-- <section class="container_full case_sjmc-phone-video-section background-color-black-primary">
+      <section class="container_full case_sjmc-phone-video-section background-color-black-primary">
         <div class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video" ref="videoWrap" @click="videoSetState">
-          <video width="100%" height="100%" ref="video">
-            <source src="../../assets/video/sjmc/bluetooth-beacons-video.mp4" type="video/mp4">
+          <video width="100%" height="100%" ref="video" playsinline>
+            <source :src="getPathToPhoneVideo" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
-      </section> -->
-      <p class="case_image-description m-34_top">
-        Sir Jonh Monash Centre Site
-      </p>
+      </section>
+      <section class="container_regular">
+        <p class="case_image-description m-34_top media-m-24_top">
+          Playback of content in the application when approaching the bluetooth beacons.
+        </p>
+      </section>
       <section class="container_regular m-56_top media-m-24_top m-96_bottom media-m-72_bottom">
         <div class="case_column-container">
           <div class="case_column-item">
@@ -423,16 +425,16 @@
           class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
           authorName="Wade Bartlett"
           authorPosition="Former Technical and Operations Director, Sir John Monash Centre"
-          fileName="aziza-anarbekova"
+          fileName="wade-bartlett"
           fileExtension="png"
           alt=""
-          pictureFolder="nambafood"
+          pictureFolder="sjmc"
         >
           The Sir John Monash Centre operates within a bespoke multimedia framework, which requires high-level technical expertise to deliver the Centre's visitor experience. Mad Devs provide outstanding levels of support and development services across our multimedia and IT platforms, systems and languages. Always available to provide assistance when needed, Mad Devs are a highly-valued part of our wider operations.
         </TextQuoteAuthor>
       </section>
       <Footer>
-        Namba Food <br> Top 1 Delivery Service in <br class="case_mobile-screen-break"> Central Asia
+        Namba Food <br> Top Delivery Service in <br class="case_mobile-screen-break"> Central Asia
       </Footer>
     </section>
   </main>
@@ -725,6 +727,16 @@ export default {
           fileExtension: 'jpg'
         }
       ]
+    };
+  },
+  computed: {
+    getPathToPhoneVideo: () => {
+      return `${process.env.awsUrl}/bluetooth-beacons-video.9ca649c.mp4`;
+    }
+  },
+  mounted() {
+    this.$refs.video.onended = () => {
+      this.$refs.videoWrap.classList.add('case_sjmc-phone-video-wrapper--on-pause');
     };
   },
   methods: {
