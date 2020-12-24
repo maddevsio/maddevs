@@ -434,7 +434,7 @@
         </TextQuoteAuthor>
       </section>
       <Footer>
-        Namba Food <br> Top 1 Delivery Service in <br class="case_mobile-screen-break"> Central Asia
+        Namba Food <br> Top Delivery Service in <br class="case_mobile-screen-break"> Central Asia
       </Footer>
     </section>
   </main>
