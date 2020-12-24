@@ -129,16 +129,20 @@ export default {
         image: homepageContent.image.url,
         headline: homepageContent.headline[0].text,
         description: homepageContent.description[0].text,
-        categories: homepageContent.categories.map(category => {
-          return {
-            title: this.$prismic.asText(category.category_title),
-            tags: category.tags.length ? this.$prismic.asText(category.tags).split(/, */g) : []
-          };
-        }),
+        categories: this.getCategoriesFromPosts(homepageContent.categories),
         banner: homepageContent.recent_posts_banner,
         bannerLink: homepageContent.banner_link
       };
       this.currentTag = this.homepageContent.categories[0].title;
+    },
+
+    getCategoriesFromPosts(prismicPostsCategories) {
+      return prismicPostsCategories.map(category => {
+        return {
+          title: this.$prismic.asText(category.category_title),
+          tags: category.tags.length ? this.$prismic.asText(category.tags).split(/, */g) : []
+        };
+      });
     },
 
     incrementPage() {
@@ -160,15 +164,14 @@ export default {
       return this.filteredPosts.slice(0, this.pageSize * this.page);
     },
     recentPosts: function() {
-      // const posts = this.posts.slice(0, 5);
-      const posts = this.posts;
-      // if(posts.length) {
-      //   posts.splice(4, 0, {
-      //     id: 'banner',
-      //     banner: this.homepageContent.banner || {url: '#'},
-      //     link: this.homepageContent.bannerLink || {link_type: 'Web', target: '_self', url: '#'}
-      //   });
-      // }
+      const posts = this.posts.slice(0, 5);
+      if(posts.length) {
+        posts.splice(4, 0, {
+          id: 'banner',
+          banner: this.homepageContent.banner || {url: '#'},
+          link: this.homepageContent.bannerLink || {link_type: 'Web', target: '_self', url: '#'}
+        });
+      }
 
       return posts;
     },
