@@ -13,5 +13,17 @@ exports[`QuoteSlice component renders correctly 1`] = `
   </blockquote>
    
   <!---->
+   
+  <div
+    class="author p-border"
+  >
+    <!---->
+     
+    <div
+      class="author__name"
+    >
+      John Doe
+    </div>
+  </div>
 </div>
 `;

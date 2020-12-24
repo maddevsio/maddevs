@@ -7,7 +7,14 @@ describe('QuoteSlice component', () => {
   const slice = {
     primary: {
       quotation_design: 'border',
-      quote: 'lorem ipsum dolor sit ame'
+      quote: 'lorem ipsum dolor sit ame',
+      name_of_the_author: 'John Doe',
+      portrait_author: {
+        mobile: {
+
+        },
+        url: ''
+      }
     }
   };
 
@@ -19,7 +26,8 @@ describe('QuoteSlice component', () => {
           asText: text => text,
           asHtml: html => `<p>${html}</p>`
         }
-      }
+      },
+      stubs: ['prismic-image']
     });
   });
 
