@@ -41,6 +41,7 @@
     "swiper": "^5.4.5",
     "vee-validate": "^3.4.5",
     "vue-awesome-swiper": "^4.1.1",
+    "vue-embed-gist": "^1.1.0",
     "vue-js-modal": "^2.0.0-rc.6",
     "vue-prism-editor": "^1.2.2",
     "vue-social-sharing": "^3.0.4",

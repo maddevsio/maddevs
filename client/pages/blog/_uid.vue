@@ -47,6 +47,9 @@
         </section>
       </div>
     </div>
+    <button class="blog-post__back-to-list" @click="scrollToTop()" v-if="buttonIsActive">
+      <i/>
+    </button>
   </div>
 </template>
 
@@ -197,11 +200,10 @@ export default {
   @import '../../assets/styles/socialNetworkIcons';
 
   .blog-post {
-    /*max-width: 1680px;*/
     margin: auto;
-    /*padding: 150px 250px 0;*/
     background-color: $text-color--white-primary;
     position: relative;
+    padding-bottom: 96px;
 
     &__background {
       background-color: $bgcolor--black;
@@ -335,8 +337,8 @@ export default {
     &__back-to-list {
       padding: 12px 14px 4px;
       position: fixed;
-      right: 38px;
-      bottom: 20px;
+      left: 38px;
+      bottom: 37px;
       background-color: transparent;
       border: 1px solid $border-color--red;
       border-radius: 2px;
@@ -419,8 +421,18 @@ export default {
     }
   }
 
+  @media only screen and (max-width: 1199px) {
+    .blog-post {
+      &__share {
+        display: none;
+      }
+    }
+  }
+
   @media only screen and (max-width: 1024px) {
     .blog-post {
+      padding-bottom: 48px;
+
       &__background {
         display: none;
       }

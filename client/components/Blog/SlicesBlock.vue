@@ -33,6 +33,9 @@
       <template v-else-if="slice.slice_type === 'doublecolumn_bordered'">
         <double-column-bordered-slice :slice="slice"/>
       </template>
+      <template v-else-if="slice.slice_type === 'github_gist'">
+        <github-gist-slice :slice="slice"/>
+      </template>
     </section>
   </section>
 </template>
@@ -47,6 +50,7 @@ import Divider from './slices/DividerSlice';
 import ImageAttributesSlice from './slices/ImageAttributesSlice';
 import OrderedList from './slices/OrderedList';
 import DoubleColumnBorderedSlice from './slices/DoubleColumnBorderedSlice';
+import GithubGistSlice from './slices/GithubGistSlice';
 
 export default {
   props: ['slices'],
@@ -60,7 +64,8 @@ export default {
     TextSlice,
     ImageCaptionSlice,
     EmbedSlice,
-    Divider
+    Divider,
+    GithubGistSlice
   }
 };
 </script>

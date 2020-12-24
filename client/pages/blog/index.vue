@@ -160,14 +160,15 @@ export default {
       return this.filteredPosts.slice(0, this.pageSize * this.page);
     },
     recentPosts: function() {
-      const posts = this.posts.slice(0, 5);
-      if(posts.length) {
-        posts.splice(4, 0, {
-          id: 'banner',
-          banner: this.homepageContent.banner || {url: '#'},
-          link: this.homepageContent.bannerLink || {link_type: 'Web', target: '_self', url: '#'}
-        });
-      }
+      // const posts = this.posts.slice(0, 5);
+      const posts = this.posts;
+      // if(posts.length) {
+      //   posts.splice(4, 0, {
+      //     id: 'banner',
+      //     banner: this.homepageContent.banner || {url: '#'},
+      //     link: this.homepageContent.bannerLink || {link_type: 'Web', target: '_self', url: '#'}
+      //   });
+      // }
 
       return posts;
     },
@@ -262,7 +263,6 @@ export default {
 
         .filter-list {
           display: flex;
-          flex-wrap: wrap;
           justify-content: flex-start;
           margin: 0 -10px;
 
@@ -359,13 +359,6 @@ export default {
     /deep/ .ps__rail-x {
       display: none;
     }
-  }
-
-  .filter-list {
-    display: grid;
-    grid-template-columns: repeat(1, 100%);
-    grid-gap: 10px;
-    margin-top: 10px;
   }
 
   .radio-input {

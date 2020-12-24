@@ -28,6 +28,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../../assets/styles/_vars';
+  @import '../../../assets/styles/cases/mixins';
 
   .textslice {
 
@@ -45,18 +46,23 @@ export default {
 
     /deep/ h1 {
       margin: 72px 0 48px;
-      font-size: 1.9em;
-      font-weight: normal;
+      @include title($text-color--black-cases, 52px, -0.04em);
     }
 
     /deep/ h2 {
-      font-size: 42px;
-      line-height: 54px;
+      @include title($text-color--black-cases, 41.5px, -0.04em);
+    }
+
+    /deep/ h3 {
+      @include title($text-color--black-cases, 33.2px, -0.04em);
+    }
+
+    /deep/ h4 {
+      @include title($text-color--black-cases, 26.56px, -0.03em);
     }
 
     /deep/ h5 {
-      font-size: 21px;
-      line-height: 28px;
+      @include title($text-color--black-cases, 21.25px, -0.02em);
     }
 
     /deep/ h2,
@@ -64,8 +70,8 @@ export default {
     /deep/ h4,
     /deep/ h5,
     /deep/ h6 {
-      margin-top: 40px;
-      margin-bottom: 30px;
+      margin-top: 72px;
+      margin-bottom: 48px;
     }
 
     /deep/ strong {
