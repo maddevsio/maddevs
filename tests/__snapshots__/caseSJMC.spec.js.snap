@@ -2250,7 +2250,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             />
              
             <img
-              alt="Ruslan Kasymov"
+              alt="Vlad Andreev"
               class="image"
               loading="lazy"
               src="[object Object]"
@@ -2264,13 +2264,13 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Ruslan Kasymov
+              Vlad Andreev
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Logistics Manager
+              DevOps Developer
             </p>
           </div>
         </li>
@@ -2361,7 +2361,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             />
              
             <img
-              alt="Vlad Andreev"
+              alt="Andrew Minkin"
               class="image"
               loading="lazy"
               src="[object Object]"
@@ -2375,13 +2375,13 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Vlad Andreev
+              Andrew Minkin
             </p>
              
             <p
               class="case_team-item__position"
             >
-              DevOps Developer
+              Back-end Developer
             </p>
           </div>
         </li>
@@ -2472,7 +2472,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             />
              
             <img
-              alt="Andrew Minkin"
+              alt="Stanislav Shcherbinin"
               class="image"
               loading="lazy"
               src="[object Object]"
@@ -2486,7 +2486,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Andrew Minkin
+              Stanislav Shcherbinin
             </p>
              
             <p
@@ -2546,7 +2546,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             />
              
             <img
-              alt="Stanislav Shcherbinin"
+              alt="Ruslan Kasymov"
               class="image"
               loading="lazy"
               src="[object Object]"
@@ -2560,13 +2560,13 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Stanislav Shcherbinin
+              Ruslan Kasymov
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Back-end Developer
+              Logistics Manager
             </p>
           </div>
         </li>
