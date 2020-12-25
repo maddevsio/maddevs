@@ -15,7 +15,7 @@ exports[`Form checkboxes renders correctly 1`] = `
      
     <a
       href="/privacy"
-      target="blank"
+      target="_blank"
     >
       Privacy Policy
     </a>
@@ -27,7 +27,7 @@ exports[`Form checkboxes renders correctly 1`] = `
       type="checkbox"
     />
      
-    <span
+    <div
       class="checkmark"
     />
   </label>
@@ -49,7 +49,7 @@ exports[`Form checkboxes renders correctly 1`] = `
       type="checkbox"
     />
      
-    <span
+    <div
       class="checkmark"
     />
   </label>

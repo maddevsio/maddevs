@@ -82,7 +82,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <a
                 href="https://teacherly.io/"
                 rel="nofollow"
-                target="blank"
+                target="_blank"
               >
                 <span
                   class="customer-testimonials__teacherly"
@@ -132,7 +132,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <a
                 href="https://veeqo.com/"
                 rel="nofollow"
-                target="blank"
+                target="_blank"
               >
                 <span
                   class="customer-testimonials__veeqo"
@@ -182,7 +182,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <a
                 href="https://guardrails.io/"
                 rel="nofollow"
-                target="blank"
+                target="_blank"
               >
                 <span
                   class="customer-testimonials__guardrails"

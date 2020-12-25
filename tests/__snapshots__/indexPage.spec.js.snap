@@ -883,6 +883,7 @@ exports[`Index page renders correctly 1`] = `
           class="single-project"
           href="/case-studies/namba-food"
           style="background: rgb(248, 247, 246);"
+          target="_self"
         >
           <div
             class="single-project__container"
@@ -964,6 +965,7 @@ exports[`Index page renders correctly 1`] = `
           class="single-project"
           href="https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f?source=friends_link&sk=0f492513f43ce5b4330c3cfa484378c5"
           style="background: rgb(86, 68, 142);"
+          target="_blank"
         >
           <div
             class="single-project__container single-project__container_white-letters-theme"
@@ -1045,6 +1047,7 @@ exports[`Index page renders correctly 1`] = `
           class="single-project"
           href="https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0"
           style="background: rgb(14, 27, 39);"
+          target="_blank"
         >
           <div
             class="single-project__container single-project__container_white-letters-theme"
@@ -1126,6 +1129,7 @@ exports[`Index page renders correctly 1`] = `
           class="single-project"
           href="https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5?source=friends_link&sk=3e3f75a7f35f0e4d9d447a19e015330a"
           style="background: rgb(255, 106, 1);"
+          target="_blank"
         >
           <div
             class="single-project__container"
@@ -1227,6 +1231,7 @@ exports[`Index page renders correctly 1`] = `
               class="single-project"
               href="/case-studies/namba-food"
               style="background: rgb(248, 247, 246);"
+              target="_self"
             >
               <div
                 class="single-project__container"
@@ -1312,6 +1317,7 @@ exports[`Index page renders correctly 1`] = `
               class="single-project"
               href="https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f?source=friends_link&sk=0f492513f43ce5b4330c3cfa484378c5"
               style="background: rgb(86, 68, 142);"
+              target="_blank"
             >
               <div
                 class="single-project__container single-project__container_white-letters-theme"
@@ -1397,6 +1403,7 @@ exports[`Index page renders correctly 1`] = `
               class="single-project"
               href="https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0"
               style="background: rgb(14, 27, 39);"
+              target="_blank"
             >
               <div
                 class="single-project__container single-project__container_white-letters-theme"
@@ -1482,6 +1489,7 @@ exports[`Index page renders correctly 1`] = `
               class="single-project"
               href="https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5?source=friends_link&sk=3e3f75a7f35f0e4d9d447a19e015330a"
               style="background: rgb(255, 106, 1);"
+              target="_blank"
             >
               <div
                 class="single-project__container"
@@ -1843,7 +1851,7 @@ exports[`Index page renders correctly 1`] = `
                 <a
                   href="https://teacherly.io/"
                   rel="nofollow"
-                  target="blank"
+                  target="_blank"
                 >
                   <span
                     class="customer-testimonials__teacherly"
@@ -1893,7 +1901,7 @@ exports[`Index page renders correctly 1`] = `
                 <a
                   href="https://veeqo.com/"
                   rel="nofollow"
-                  target="blank"
+                  target="_blank"
                 >
                   <span
                     class="customer-testimonials__veeqo"
@@ -1943,7 +1951,7 @@ exports[`Index page renders correctly 1`] = `
                 <a
                   href="https://guardrails.io/"
                   rel="nofollow"
-                  target="blank"
+                  target="_blank"
                 >
                   <span
                     class="customer-testimonials__guardrails"
@@ -2249,7 +2257,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             href="https://www.linkedin.com/in/marat-bediev-a973171b/"
             rel="nofollow"
-            target="blank"
+            target="_blank"
           />
         </div>
         <div
@@ -2298,7 +2306,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             href="https://www.linkedin.com/in/tamara-mun/"
             rel="nofollow"
-            target="blank"
+            target="_blank"
           />
         </div>
         <div
@@ -2347,7 +2355,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             href="https://www.linkedin.com/in/andrew-minkin-700a2523/"
             rel="nofollow"
-            target="blank"
+            target="_blank"
           />
         </div>
         <div
@@ -2396,7 +2404,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             href="https://www.linkedin.com/in/nakylai-taiirova-28bab859/"
             rel="nofollow"
-            target="blank"
+            target="_blank"
           />
         </div>
         <div
@@ -2445,7 +2453,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             href="https://www.linkedin.com/in/daria-utesheva-47804198/"
             rel="nofollow"
-            target="blank"
+            target="_blank"
           />
         </div>
         <div
@@ -2494,7 +2502,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             href="https://www.linkedin.com/in/nuradil-alymkulov/"
             rel="nofollow"
-            target="blank"
+            target="_blank"
           />
         </div>
         <div
@@ -2543,7 +2551,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             href="https://www.linkedin.com/in/alice-jang-b235b240/"
             rel="nofollow"
-            target="blank"
+            target="_blank"
           />
         </div>
         <div
@@ -2592,7 +2600,7 @@ exports[`Index page renders correctly 1`] = `
           <a
             href="https://www.linkedin.com/in/earthurkg/"
             rel="nofollow"
-            target="blank"
+            target="_blank"
           />
         </div>
       </div>

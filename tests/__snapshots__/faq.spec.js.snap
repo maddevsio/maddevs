@@ -357,7 +357,7 @@ exports[`FAQ renders correctly 1`] = `
           Phone Call via 
           <a
             class="faq__link faq__link"
-            href="tel:+44 20 3984 8555"
+            href="tel:+442039848555"
           >
             +44 20 3984 8555
           </a>

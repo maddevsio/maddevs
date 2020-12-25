@@ -2196,7 +2196,14 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph"
       >
         
-        Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision and understanding of its target audience, we were able to build a product that truly solves this customer’s problems. The year-over-year growth rate is hugely impressive.
+        Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision and understanding of its target audience, we were able to 
+        <router-link-stub
+          class="case_link"
+          to="/services#software-development"
+        >
+          build a product
+        </router-link-stub>
+         that truly solves this customer’s problems. The year-over-year growth rate is hugely impressive.
       
       </p>
        
