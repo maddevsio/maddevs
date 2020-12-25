@@ -354,7 +354,7 @@
             :fileNameRetina="`${teamMember.fileName}@2x`"
             :fileExtension="teamMember.fileExtension"
             :alt="teamMember.name"
-            pictureFolder="nambafood"
+            pictureFolder="common"
           />
         </ListTeam>
         <h4 class="case_title_h4 m-72_top m-12_bottom media-m-41_top">Transparent communication</h4>

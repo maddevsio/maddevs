@@ -408,7 +408,7 @@
             :fileName="teamMember.fileName"
             :fileExtension="teamMember.fileExtension"
             :alt="teamMember.name"
-            pictureFolder="nambafood"
+            pictureFolder="common"
           />
         </ListTeam>
       </section>
@@ -574,31 +574,31 @@ export default {
         {
           name: 'Kirill Zinchenko',
           position: 'Project Manager',
-          fileName: 'vlad-andreev',
-          fileExtension: 'png'
-        },
-        {
-          name: 'Ruslan Kasymov',
-          position: 'Logistics Manager',
-          fileName: 'vlad-andreev',
-          fileExtension: 'png'
-        },
-        {
-          name: 'Aleksandr Zhitov',
-          position: 'QA Manager',
-          fileName: 'vlad-andreev',
-          fileExtension: 'png'
-        },
-        {
-          name: 'Sergey Boyko',
-          position: 'QA Manager',
-          fileName: 'vlad-andreev',
+          fileName: 'zinchenko',
           fileExtension: 'png'
         },
         {
           name: 'Vlad Andreev',
           position: 'DevOps Developer',
           fileName: 'vlad-andreev',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Aleksandr Zhitov',
+          position: 'QA Manager',
+          fileName: 'zhitov',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Sergey Boyko',
+          position: 'QA Manager',
+          fileName: 'boyko',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Andrew Minkin',
+          position: 'Back-end Developer',
+          fileName: 'andrew-minkin',
           fileExtension: 'png'
         },
         {
@@ -610,37 +610,37 @@ export default {
         {
           name: 'Kirill Avdeev',
           position: 'Back-end Developer',
-          fileName: 'vlad-andreev',
-          fileExtension: 'png'
-        },
-        {
-          name: 'Andrew Minkin',
-          position: 'Back-end Developer',
-          fileName: 'vlad-andreev',
-          fileExtension: 'png'
-        },
-        {
-          name: 'Aleksandr Astashov',
-          position: 'Back-end Developer',
-          fileName: 'vlad-andreev',
+          fileName: 'avdeev',
           fileExtension: 'png'
         },
         {
           name: 'Stanislav Shcherbinin',
           position: 'Back-end Developer',
-          fileName: 'vlad-andreev',
+          fileName: 'stanislav-shcherbinin',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Aleksandr Astashov',
+          position: 'Back-end Developer',
+          fileName: 'astashov',
+          fileExtension: 'png'
+        },
+        {
+          name: 'Ruslan Kasymov',
+          position: 'Logistics Manager',
+          fileName: 'kasymov',
           fileExtension: 'png'
         },
         {
           name: 'Pavel Pushkarev',
           position: 'Mobile Developer',
-          fileName: 'vlad-andreev',
+          fileName: 'pushkarev',
           fileExtension: 'png'
         },
         {
           name: 'Rustom Kulbatyrov',
           position: 'Mobile Developer',
-          fileName: 'vlad-andreev',
+          fileName: 'kulbatyrov',
           fileExtension: 'png'
         }
       ],
