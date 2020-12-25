@@ -65,7 +65,7 @@
           <li class="faq__list">Live chat</li>
           <li class="faq__list">Direct mail to our Delivery Manager <span class="faq__nowrap">Tamara Mun</span> via <a class="faq__link" href="mailto:tamaramun@maddevs.io">tamaramun@maddevs.io</a></li>
           <li class="faq__list">Contact form</li>
-          <li class="faq__list">Phone Call via <a class="faq__link faq__link" href="tel:+44 20 3984 8555">+44 20 3984 8555</a></li>
+          <li class="faq__list">Phone Call via <a class="faq__link faq__link" href="tel:+442039848555">+44 20 3984 8555</a></li>
           <li class="faq__list">
             Text message via
             <a href="https://facebook.com/maddevsllc" class="faq__link faq__link" target="_blank">Facebook Messenger</a>,

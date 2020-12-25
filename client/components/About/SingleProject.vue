@@ -3,6 +3,7 @@
     :href="project.link"
     class="single-project"
     :style="{ background: project.projectColor }"
+    :target="project.targetBlank ? '_blank' : '_self'"
   >
     <div
       class="single-project__container"

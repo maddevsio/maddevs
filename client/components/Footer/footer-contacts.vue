@@ -10,13 +10,13 @@
 					<div class="footer-contacts__contact-title-flag"></div>
 					<p class="footer-contacts__contact-title">Call us:</p>
 				</div>
-				<a href="tel:+44 20 3984 8555" class="footer-contacts__contact-link footer-contacts__contact-phone-number">+44 20 3984 8555</a>
+				<a href="tel:+442039848555" class="footer-contacts__contact-link footer-contacts__contact-phone-number">+44 20 3984 8555</a>
 			</div>
 		</div>
 		<div class="footer-contacts__lists-wrapper">
 			<ul class="footer-contacts__messengers-list">
 				<li v-for="(messenger, i) in messengers" :key="i">
-					<a :href="messenger.link" target="__blank" class="footer-contacts__messenger-item-wrapper">
+					<a :href="messenger.link" target="_blank" class="footer-contacts__messenger-item-wrapper">
 						<span class="footer-contacts__messenger-item" :class="`footer-contacts__${messenger.className}`" />
 						<p class="footer-contacts__messenger-name">{{ messenger.name }}</p>
 					</a>

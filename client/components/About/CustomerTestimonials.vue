@@ -38,7 +38,7 @@
                 </span>
               </div>
               <div class="customer-testimonials__project">
-                <a :href="testimonial.link" target="blank" rel="nofollow">
+                <a :href="testimonial.link" target="_blank" rel="nofollow">
                   <span
                     :class="`customer-testimonials__${testimonial.customerProject}`"></span>
                 </a>

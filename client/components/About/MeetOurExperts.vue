@@ -12,7 +12,7 @@
             </div>
           </div>
           <i class="meet-our_experts__expert-linkedin-link"></i>
-          <a :href="expert.linkedin" class="" rel="nofollow" target="blank"></a>
+          <a :href="expert.linkedin" class="" rel="nofollow" target="_blank"></a>
         </div>
       </div>
     </div>

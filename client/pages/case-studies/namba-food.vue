@@ -365,7 +365,7 @@
       <section class="container_regular">
         <h2 class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom">Nationwide success and day-to-day improvements</h2>
         <TextParagraph>
-          Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision and understanding of its target audience, we were able to build a product that truly solves this customer’s problems. The year-over-year growth rate is hugely impressive.
+          Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision and understanding of its target audience, we were able to <router-link :to="`/services#software-development`" class="case_link">build a product</router-link> that truly solves this customer’s problems. The year-over-year growth rate is hugely impressive.
         </TextParagraph>
         <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
           As the number of businesses using Namba Food continues to increase, <span class="case_blockquote-box_text-modificator">the service's yearly growth rate is about 50% for both revenue and deliveries made.</span>
@@ -459,9 +459,9 @@ export default {
   name: 'NambaFood',
   data() {
     return {
-      title: 'Mad Devs Namba Food',
-      description: '',
-      ogUrl: '',
+      title: 'Mad Devs Case Study: Namba Food Top Delivery Service in Central Asia',
+      description: 'Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing orders, and business owners work as a seamless system, ensuring a smooth delivery process for all types of goods.',
+      ogUrl: 'https://maddevs.io/case-studies/namba-food/',
       team: [
         {
           name: 'Vlad Andreev',
@@ -684,6 +684,19 @@ export default {
         {
           property: 'og:image',
           content: 'https://maddevs.io/Open-Graph.png'
+        }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://maddevs.io/case-studies/namba-food/'
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: Namba Food Top Delivery Service in Central Asia", "description": "Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing orders, and business owners work as a seamless system, ensuring a smooth delivery process for all types of goods.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group Limited"}}'
         }
       ]
     };
