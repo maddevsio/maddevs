@@ -1,6 +1,6 @@
 <template>
   <div class="card-content">
-    <h5 class="card-content_title case_title_h5">Delivery service Nambafood</h5>
+    <h3 class="card-content_title case_title_h5">Delivery service Nambafood</h3>
     <TextParagraph class="card-content_paragraph m-24_bottom">
       For 5 years Namba Food actively
       evolves and monthly improves

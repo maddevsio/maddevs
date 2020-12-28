@@ -2,9 +2,9 @@
   <section id="privacy">
     <div class="container">
       <div class="privacy__header">
-        <h2 class="privacy__title">
+        <h1 class="privacy__title">
           Privacy Policy: Website <br> Acceptable Use Terms
-        </h2>
+        </h1>
         <div class="privacy__image"></div>
       </div>
       <div class="privacy__content">
@@ -39,9 +39,9 @@
           have a registered office at 103 Ibraimova str., Bishkek, 720011,
           Kyrgyz Republic.
         </p>
-        <h4 class="privacy__sec-title privacy__sec-title--first">
+        <h2 class="privacy__sec-title privacy__sec-title--first">
           By using our site you accept these terms
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           By using our site, you confirm that you accept the terms of this
           policy and that you agree to comply with them.
@@ -53,17 +53,17 @@
           We recommend that you print a copy of these terms for future
           reference.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           We may make changes to the terms of this policy
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           We amend these terms from time to time. Every time you wish to use our
           site, please check these terms to ensure you understand the terms that
           apply at that time.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Prohibited uses
-        </h4>
+        </h2>
         <p class="privacy__paragraph privacy__break">
           You may use our site only for lawful purposes. You may not use our
           site:
@@ -98,9 +98,9 @@
           site is stored, any software used in the provision of our site, or any
           equipment or network or software owned or used by any third party.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Breach of this policy
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           When we consider that a breach of this acceptable use policy has
           occurred, we may take such action as we deem appropriate.
@@ -133,9 +133,9 @@
           not limited to those described above, and we may take any other action
           we reasonably deem appropriate.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Which country's laws apply to any disputes?
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           If you are a consumer, please note that the terms of this policy, its
           subject matter and its formation are governed by English law. You and
@@ -148,9 +148,9 @@
           governed by English law. We both agree to the exclusive jurisdiction
           of the courts of England and Wales.
         </p>
-        <h4 class="privacy__sec-title privacy__sec-title">
+        <h2 class="privacy__sec-title privacy__sec-title">
           Cookie Policy
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           Our website uses cookies to distinguish you from other users of our
           website. This helps us to provide you with a good experience when you
@@ -179,9 +179,9 @@
           helps us to improve the way our website works, for example, by
           ensuring that users are finding what they are looking for easily.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Google Analytics
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           Google Analytics is a web analytics service offered by Google that
           tracks and reports website traffic. Google uses the data collected to
@@ -229,9 +229,9 @@
           essential cookies) you may not be able to access all or parts of our
           website.
         </p>
-        <h4 class="privacy__sec-title  privacy__sec-title">
+        <h2 class="privacy__sec-title  privacy__sec-title">
           Privacy Policy
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           We respect your privacy and are committed to protecting your personal
           data. This privacy policy will inform you as to how we look after your
@@ -326,21 +326,21 @@
             is the subject of Personal Data.
           </div>
         </div>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Information Collection and Use
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           We collect several different types of information for various purposes
           to provide and improve our service to you.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Types of Data Collected
-        </h4>
-        <h4
+        </h2>
+        <h2
           class="privacy__sec-title privacy__sec-title privacy__sec-title--multi-title"
         >
           Personal Data
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           While using our service, we may ask you to provide us with certain
           personally identifiable information that can be used to contact or
@@ -358,9 +358,9 @@
             Phone number
           </li>
         </ul>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Use of Data
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           <span class="privacy__nowrap">Mad Devs</span> Group Ltd uses the collected data for various purposes:
         </p>
@@ -389,10 +389,10 @@
             To detect, prevent and address technical issues
           </li>
         </ul>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Legal Basis for Processing Personal Data under the General Data
           Protection Regulation (GDPR)
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           If you are from the European Economic Area (EEA), <span class="privacy__nowrap">Mad Devs</span> Group Ltd
           legal basis for collecting and using the personal information
@@ -417,9 +417,9 @@
             To comply with the law
           </li>
         </ul>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Retention of Data
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           <span class="privacy__nowrap">Mad Devs</span> Group Ltd will retain your Personal Data only for as long as
           is necessary for the purposes set out in this Privacy Policy. We will
@@ -435,9 +435,9 @@
           improve the functionality of our service, or we are legally obligated
           to retain this data for longer periods.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Transfer of Data
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           We share your personal data within MadDevs companies. This will
           involve transferring your data outside the European Economic Area
@@ -490,16 +490,16 @@
             >European Commission: EU-US Privacy Shield</a
           >.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Marketing
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           We strive to provide you with choices regarding certain personal data
           uses, particularly around marketing and advertising.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Promotional offers from us
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           We may use your identity, contact details and information we hold
           about you to form a view on what we think you may want or need, or
@@ -511,9 +511,9 @@
           requested information from us or purchased services from us and you
           have not opted out of receiving that marketing.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Change of purpose
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           We will only use your personal data for the purposes for which we
           collected it, unless we reasonably consider that we need to use it for
@@ -532,21 +532,21 @@
           knowledge or consent, in compliance with the above rules, where this
           is required or permitted by law.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Disclosure of Data
-        </h4>
-        <h4 class="privacy__sec-title privacy__sec-title--multi-title">
+        </h2>
+        <h2 class="privacy__sec-title privacy__sec-title--multi-title">
           Disclosure for Law Enforcement
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           Under certain circumstances, <span class="privacy__nowrap">Mad Devs</span> Group Ltd may be required to
           disclose your Personal Data if required to do so by law or in response
           to valid requests by public authorities (e.g. a court or a government
           agency).
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Legal Requirements
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           <span class="privacy__nowrap">Mad Devs</span> Group Ltd may disclose your Personal Data in limited
           circumstances if such action is necessary to as follows:
@@ -569,9 +569,9 @@
             To protect against legal liability
           </li>
         </ul>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Security of Data
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           We have put in place appropriate security measures to prevent your
           personal data from being accidentally lost, used or accessed in an
@@ -586,10 +586,10 @@
           data breach and will notify you and any applicable regulator of a
           breach where we are legally required to do so.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Your Data Protection Rights under the General Data Protection
           Regulation (GDPR)
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           If you are a resident of the European Economic Area (EEA), you have
           certain data protection rights. <span class="privacy__nowrap">Mad Devs</span> Group Ltd aims to take
@@ -661,9 +661,9 @@
           Data. For more information, please contact your local data protection
           authority in the European Economic Area (EEA).
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           No fee usually required
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           You will not have to pay a fee to access your personal data (or to
           exercise any of the other rights). However, we may charge a reasonable
@@ -671,9 +671,9 @@
           Alternatively, we could refuse to comply with your request in these
           circumstances.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           What we may need from you
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           We may need to request specific information from you to help us
           confirm your identity and ensure your right to access your personal
@@ -683,18 +683,18 @@
           further information in relation to your request to speed up our
           response.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Time limit to respond
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           We try to respond to all legitimate requests within one month.
           Occasionally it could take us longer than a month if your request is
           particularly complex or you have made a number of requests. In this
           case, we will notify you and keep you updated.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Service Providers
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           We may employ third party companies and individuals to facilitate our
           Service ("Service Providers"), provide the Service on our behalf,
@@ -706,9 +706,9 @@
           these tasks on our behalf and are obligated not to disclose or use it
           for any other purpose.
         </p>
-        <h4 class="privacy__sec-title">
+        <h2 class="privacy__sec-title">
           Links to Other Sites
-        </h4>
+        </h2>
         <p class="privacy__paragraph">
           Our Service may contain links to other sites that are not operated by
           us. If you click a third party link, you will be directed to that

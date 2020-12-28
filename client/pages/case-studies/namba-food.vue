@@ -24,7 +24,7 @@
         </Card>
         <CardsBusinessModelsGrid/>
         <Card class="background-color-silver">
-          <h4 class="case_title_h4 m-8_bottom">Namba Food API</h4>
+          <h3 class="case_title_h4 m-8_bottom">Namba Food API</h3>
           <TextParagraph>
             Namba Food API allows businesses to integrate the API into any mobile payment application. As a result, end-users can quickly order goods and services without leaving the app using the app’s own payment system. Such API benefits businesses because end users use the payment method defined by the mobile app. At the moment, Mbank by Commercial Bank Kyrgyzstan and Balance by Beeline, a telecommunication service provider, have successfully integrated Namba Food API into their mobile apps.
           </TextParagraph>

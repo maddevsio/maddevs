@@ -10,7 +10,7 @@
             <div class="quickProjectStart__arrow-icon" :class="`quickProjectStart__arrow-icon_${item.title}`"/>
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
-            <h4 class="quickProjectStart__title">{{ item.title }}</h4>
+            <h3 class="quickProjectStart__title">{{ item.title }}</h3>
             <p class="quickProjectStart__description">{{ item.description }}</p>
           </div>
         </div>

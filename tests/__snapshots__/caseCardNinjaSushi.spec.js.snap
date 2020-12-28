@@ -7,12 +7,12 @@ exports[`CardNinjaSushi renders correctly 1`] = `
   <div
     class="case_card-content_left-column"
   >
-    <h4
+    <h3
       class="case_title_h4 m-8_bottom"
       style="color: rgb(245, 247, 249);"
     >
       Mini white label
-    </h4>
+    </h3>
      
     <p
       class="case_paragraph case_card-content_paragraph"
@@ -23,12 +23,12 @@ exports[`CardNinjaSushi renders correctly 1`] = `
     
     </p>
      
-    <h4
+    <h3
       class="case_title_h4 m-8_bottom"
       style="color: rgb(245, 247, 249);"
     >
       Full white label
-    </h4>
+    </h3>
      
     <p
       class="case_paragraph"

@@ -41,13 +41,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               class="single-project__logo-bg single-project__logo-bg--nambafoodColored"
             />
              
-            <h4
+            <h3
               class="single-project__sub-title"
             >
               
         Contactless Delivery Service
       
-            </h4>
+            </h3>
              
             <p
               class="single-project__paragraph paragraph"
@@ -123,13 +123,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               class="single-project__logo-bg single-project__logo-bg--teacherlyColored"
             />
              
-            <h4
+            <h3
               class="single-project__sub-title"
             >
               
         EdTech collaboration platform
       
-            </h4>
+            </h3>
              
             <p
               class="single-project__paragraph paragraph"
@@ -205,13 +205,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               class="single-project__logo-bg single-project__logo-bg--guardrailsColored"
             />
              
-            <h4
+            <h3
               class="single-project__sub-title"
             >
               
         Cloud cybersecurity service
       
-            </h4>
+            </h3>
              
             <p
               class="single-project__paragraph paragraph"
@@ -287,13 +287,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               class="single-project__logo-bg single-project__logo-bg--godeeColored"
             />
              
-            <h4
+            <h3
               class="single-project__sub-title"
             >
               
         Convenient shuttle bus service
       
-            </h4>
+            </h3>
              
             <p
               class="single-project__paragraph paragraph"
@@ -389,13 +389,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   class="single-project__logo-bg single-project__logo-bg--nambafoodColored"
                 />
                  
-                <h4
+                <h3
                   class="single-project__sub-title"
                 >
                   
         Contactless Delivery Service
       
-                </h4>
+                </h3>
                  
                 <p
                   class="single-project__paragraph paragraph"
@@ -475,13 +475,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   class="single-project__logo-bg single-project__logo-bg--teacherlyColored"
                 />
                  
-                <h4
+                <h3
                   class="single-project__sub-title"
                 >
                   
         EdTech collaboration platform
       
-                </h4>
+                </h3>
                  
                 <p
                   class="single-project__paragraph paragraph"
@@ -561,13 +561,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   class="single-project__logo-bg single-project__logo-bg--guardrailsColored"
                 />
                  
-                <h4
+                <h3
                   class="single-project__sub-title"
                 >
                   
         Cloud cybersecurity service
       
-                </h4>
+                </h3>
                  
                 <p
                   class="single-project__paragraph paragraph"
@@ -647,13 +647,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   class="single-project__logo-bg single-project__logo-bg--godeeColored"
                 />
                  
-                <h4
+                <h3
                   class="single-project__sub-title"
                 >
                   
         Convenient shuttle bus service
       
-                </h4>
+                </h3>
                  
                 <p
                   class="single-project__paragraph paragraph"

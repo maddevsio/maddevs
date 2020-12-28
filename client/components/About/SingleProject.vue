@@ -13,9 +13,9 @@
     >
       <div class="single-project__content-wrap">
         <span :class="`single-project__logo-bg single-project__logo-bg--${project.logoImg}`"/>
-        <h4 class="single-project__sub-title">
+        <h3 class="single-project__sub-title">
           {{ project.projectTitle }}
-        </h4>
+        </h3>
         <p class="single-project__paragraph paragraph">
           {{ project.projectDescription }}
         </p>

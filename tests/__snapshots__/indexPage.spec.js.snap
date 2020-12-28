@@ -895,13 +895,13 @@ exports[`Index page renders correctly 1`] = `
                 class="single-project__logo-bg single-project__logo-bg--nambafoodColored"
               />
                
-              <h4
+              <h3
                 class="single-project__sub-title"
               >
                 
         Contactless Delivery Service
       
-              </h4>
+              </h3>
                
               <p
                 class="single-project__paragraph paragraph"
@@ -977,13 +977,13 @@ exports[`Index page renders correctly 1`] = `
                 class="single-project__logo-bg single-project__logo-bg--teacherlyColored"
               />
                
-              <h4
+              <h3
                 class="single-project__sub-title"
               >
                 
         EdTech collaboration platform
       
-              </h4>
+              </h3>
                
               <p
                 class="single-project__paragraph paragraph"
@@ -1059,13 +1059,13 @@ exports[`Index page renders correctly 1`] = `
                 class="single-project__logo-bg single-project__logo-bg--guardrailsColored"
               />
                
-              <h4
+              <h3
                 class="single-project__sub-title"
               >
                 
         Cloud cybersecurity service
       
-              </h4>
+              </h3>
                
               <p
                 class="single-project__paragraph paragraph"
@@ -1141,13 +1141,13 @@ exports[`Index page renders correctly 1`] = `
                 class="single-project__logo-bg single-project__logo-bg--godeeColored"
               />
                
-              <h4
+              <h3
                 class="single-project__sub-title"
               >
                 
         Convenient shuttle bus service
       
-              </h4>
+              </h3>
                
               <p
                 class="single-project__paragraph paragraph"
@@ -1243,13 +1243,13 @@ exports[`Index page renders correctly 1`] = `
                     class="single-project__logo-bg single-project__logo-bg--nambafoodColored"
                   />
                    
-                  <h4
+                  <h3
                     class="single-project__sub-title"
                   >
                     
         Contactless Delivery Service
       
-                  </h4>
+                  </h3>
                    
                   <p
                     class="single-project__paragraph paragraph"
@@ -1329,13 +1329,13 @@ exports[`Index page renders correctly 1`] = `
                     class="single-project__logo-bg single-project__logo-bg--teacherlyColored"
                   />
                    
-                  <h4
+                  <h3
                     class="single-project__sub-title"
                   >
                     
         EdTech collaboration platform
       
-                  </h4>
+                  </h3>
                    
                   <p
                     class="single-project__paragraph paragraph"
@@ -1415,13 +1415,13 @@ exports[`Index page renders correctly 1`] = `
                     class="single-project__logo-bg single-project__logo-bg--guardrailsColored"
                   />
                    
-                  <h4
+                  <h3
                     class="single-project__sub-title"
                   >
                     
         Cloud cybersecurity service
       
-                  </h4>
+                  </h3>
                    
                   <p
                     class="single-project__paragraph paragraph"
@@ -1501,13 +1501,13 @@ exports[`Index page renders correctly 1`] = `
                     class="single-project__logo-bg single-project__logo-bg--godeeColored"
                   />
                    
-                  <h4
+                  <h3
                     class="single-project__sub-title"
                   >
                     
         Convenient shuttle bus service
       
-                  </h4>
+                  </h3>
                    
                   <p
                     class="single-project__paragraph paragraph"
@@ -1621,11 +1621,11 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="quickProjectStart__list-item-text-wrapper"
           >
-            <h4
+            <h3
               class="quickProjectStart__title"
             >
               contact
-            </h4>
+            </h3>
              
             <p
               class="quickProjectStart__description"
@@ -1652,11 +1652,11 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="quickProjectStart__list-item-text-wrapper"
           >
-            <h4
+            <h3
               class="quickProjectStart__title"
             >
               analysis
-            </h4>
+            </h3>
              
             <p
               class="quickProjectStart__description"
@@ -1683,11 +1683,11 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="quickProjectStart__list-item-text-wrapper"
           >
-            <h4
+            <h3
               class="quickProjectStart__title"
             >
               proposal
-            </h4>
+            </h3>
              
             <p
               class="quickProjectStart__description"
@@ -1714,11 +1714,11 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="quickProjectStart__list-item-text-wrapper"
           >
-            <h4
+            <h3
               class="quickProjectStart__title"
             >
               team
-            </h4>
+            </h3>
              
             <p
               class="quickProjectStart__description"
@@ -1745,11 +1745,11 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="quickProjectStart__list-item-text-wrapper"
           >
-            <h4
+            <h3
               class="quickProjectStart__title"
             >
               start
-            </h4>
+            </h3>
              
             <p
               class="quickProjectStart__description"

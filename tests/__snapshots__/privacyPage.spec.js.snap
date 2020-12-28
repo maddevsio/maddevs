@@ -13,7 +13,7 @@ exports[`Privacy page renders correctly 1`] = `
       <div
         class="privacy__header"
       >
-        <h2
+        <h1
           class="privacy__title"
         >
           
@@ -21,7 +21,7 @@ exports[`Privacy page renders correctly 1`] = `
           <br />
            Acceptable Use Terms
       
-        </h2>
+        </h1>
          
         <div
           class="privacy__image"
@@ -107,13 +107,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title privacy__sec-title--first"
         >
           
         By using our site you accept these terms
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -141,13 +141,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         We may make changes to the terms of this policy
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -159,13 +159,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Prohibited uses
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph privacy__break"
@@ -233,13 +233,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Breach of this policy
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -310,13 +310,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Which country's laws apply to any disputes?
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -340,13 +340,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title privacy__sec-title"
         >
           
         Cookie Policy
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -405,13 +405,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Google Analytics
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -490,13 +490,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title  privacy__sec-title"
         >
           
         Privacy Policy
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -685,13 +685,13 @@ exports[`Privacy page renders correctly 1`] = `
           </div>
         </div>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Information Collection and Use
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -702,21 +702,21 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Types of Data Collected
       
-        </h4>
+        </h2>
          
-        <h4
+        <h2
           class="privacy__sec-title privacy__sec-title privacy__sec-title--multi-title"
         >
           
         Personal Data
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -757,13 +757,13 @@ exports[`Privacy page renders correctly 1`] = `
           </li>
         </ul>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Use of Data
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -839,14 +839,14 @@ exports[`Privacy page renders correctly 1`] = `
           </li>
         </ul>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Legal Basis for Processing Personal Data under the General Data
         Protection Regulation (GDPR)
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -914,13 +914,13 @@ exports[`Privacy page renders correctly 1`] = `
           </li>
         </ul>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Retention of Data
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -955,13 +955,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Transfer of Data
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -1056,13 +1056,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Marketing
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -1073,13 +1073,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Promotional offers from us
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -1102,13 +1102,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Change of purpose
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -1143,21 +1143,21 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Disclosure of Data
       
-        </h4>
+        </h2>
          
-        <h4
+        <h2
           class="privacy__sec-title privacy__sec-title--multi-title"
         >
           
         Disclosure for Law Enforcement
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -1176,13 +1176,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Legal Requirements
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -1248,13 +1248,13 @@ exports[`Privacy page renders correctly 1`] = `
           </li>
         </ul>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Security of Data
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -1280,14 +1280,14 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Your Data Protection Rights under the General Data Protection
         Regulation (GDPR)
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -1431,13 +1431,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         No fee usually required
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -1451,13 +1451,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         What we may need from you
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -1473,13 +1473,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Time limit to respond
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -1492,13 +1492,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Service Providers
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"
@@ -1521,13 +1521,13 @@ exports[`Privacy page renders correctly 1`] = `
       
         </p>
          
-        <h4
+        <h2
           class="privacy__sec-title"
         >
           
         Links to Other Sites
       
-        </h4>
+        </h2>
          
         <p
           class="privacy__paragraph"

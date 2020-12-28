@@ -5,11 +5,11 @@ exports[`CardUseCase renders correctly 1`] = `
   class="card-use-case"
 >
   <client-only-stub>
-    <h4
+    <h3
       class="card-use-case__title case_title_h4 card-use-case__red-card-title"
     >
       Web-site, mobile application
-    </h4>
+    </h3>
   </client-only-stub>
    
   <div

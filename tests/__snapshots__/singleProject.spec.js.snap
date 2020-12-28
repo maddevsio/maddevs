@@ -17,13 +17,13 @@ exports[`CaseStudies component renders correctly 1`] = `
         class="single-project__logo-bg single-project__logo-bg--godeeColored"
       />
        
-      <h4
+      <h3
         class="single-project__sub-title"
       >
         
         Mass transportation company
       
-      </h4>
+      </h3>
        
       <p
         class="single-project__paragraph paragraph"
