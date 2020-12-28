@@ -57,13 +57,26 @@ module.exports = {
   ],
   generate: {
     async routes() {
+      const getPosts = async pageUrl => {
+        let posts = [];
+        const response = await axios.get(pageUrl);
+        posts = posts.concat(response.data.results);
+
+        if (response.data.next_page) {
+          posts = posts.concat(await getPosts(response.data.next_page));
+        }
+
+        return posts;
+      };
+
       const routes = ['/', '/services', '/projects', '/careers', '/gdpr', '/nda', '/privacy', '/faq', '/case-studies/namba-food', '/blog'];
+
       const prismicData = await axios.get(process.env.NODE_PRISMIC_API);
       const ref = prismicData.data.refs[0].ref;
-      const blogPosts = await axios.get(`${process.env.NODE_PRISMIC_API}/documents/search?ref=${ref}#format=json`);
-      const dynamicRoutes = blogPosts.data.results.map(blogPost => '/blog/' + blogPost.uid);
-      const allRoutes = routes.concat(dynamicRoutes);
-      return allRoutes;
+      const blogPosts = await getPosts(`${process.env.NODE_PRISMIC_API}/documents/search?ref=${ref}#format=json`);
+      const postRoutes = blogPosts.map(blogPost => '/blog/' + blogPost.uid);
+
+      return routes.concat(postRoutes);
     }
   },
   css: [
