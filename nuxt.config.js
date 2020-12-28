@@ -57,7 +57,7 @@ module.exports = {
   ],
   generate: {
     async routes() {
-      const routes = ['/', '/services', '/projects', '/careers', '/gdpr', '/nda', '/privacy', '/faq', '/case-studies/namba-food', '/blog'];
+      const routes = ['/', '/services', '/projects', '/careers', '/gdpr', '/nda', '/privacy', '/faq', '/case-studies/namba-food', '/blog', '/case-studies/sir-john-monash-centre'];
       const prismicData = await axios.get(process.env.NODE_PRISMIC_API);
       const ref = prismicData.data.refs[0].ref;
       const blogPosts = await axios.get(`${process.env.NODE_PRISMIC_API}/documents/search?ref=${ref}#format=json`);
@@ -101,7 +101,6 @@ module.exports = {
     '@/modules/static',
     '@/modules/crawler',
     '@nuxtjs/prismic'
-    // 'nuxt-lazy-load'
   ],
   gtm: {
     id: 'GTM-NNKVRF3',

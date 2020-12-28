@@ -69,9 +69,19 @@
     }
   }
 
+  &_mobile-break {
+    display: none;
+  }
+
   @media screen and (max-width: 768px) {
     &_sjmc-phone-video-section {
       padding: 50px 0;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    &_mobile-break {
+      display: block;
     }
   }
 }

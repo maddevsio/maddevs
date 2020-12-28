@@ -101,7 +101,7 @@ describe('SirJohnMonashCentre', () => {
       },
       {
         name: 'Vlad Andreev',
-        position: 'DevOps Developer',
+        position: 'DevOps Engineer',
         fileName: 'vlad-andreev',
         fileExtension: 'png'
       },
@@ -125,7 +125,7 @@ describe('SirJohnMonashCentre', () => {
       },
       {
         name: 'Dmitri Khalezin',
-        position: 'DevOps Developer',
+        position: 'DevOps Engineer',
         fileName: 'dmitrii-khalezin',
         fileExtension: 'png'
       },
@@ -155,13 +155,13 @@ describe('SirJohnMonashCentre', () => {
       },
       {
         name: 'Pavel Pushkarev',
-        position: 'Mobile Developer',
+        position: 'Mobile App Developer',
         fileName: 'pushkarev',
         fileExtension: 'png'
       },
       {
         name: 'Rustom Kulbatyrov',
-        position: 'Mobile Developer',
+        position: 'Mobile App Developer',
         fileName: 'kulbatyrov',
         fileExtension: 'png'
       }

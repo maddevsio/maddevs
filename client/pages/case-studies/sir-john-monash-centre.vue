@@ -47,7 +47,7 @@
       <section class="container_regular">
         <h2 class="case_title_h2 m-96_top media-m-48_top m-12_bottom">SJMC software</h2>
         <TextParagraph class="m-48_bottom">
-          The SJMC Software Transferring a project to another software partner is never easy for all parties involved. So, let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.
+          Transferring a project to another software partner is never easy for all parties involved. So, let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.
         </TextParagraph>
         <h3 class="case_title_h3 m-12_bottom">Multimedia Management IT Brain</h3>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
@@ -314,7 +314,7 @@
         <TextParagraph class="m-56_bottom media-m-24_bottom">
           Prometheus acts as the storage backend and exposes a wide variety of metrics gathered from 6 servers while Grafana acts as a visualisation layer and works as the interface for analysis and visualisation.
         </TextParagraph>
-        <h3 class="case_title_h3 m-12_bottom">Elasticsearch+Kibana+Logstash</h3>
+        <h3 class="case_title_h3 m-12_bottom">Elasticsearch+Kibana+<br class="case_mobile-break">Logstash</h3>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Logstash ingests, transforms, and ships SJMC logging data from 100+ BRIX (multimedia computers). Before unstructured logging data was scattered across hundreds of folders and was not properly monitored, which ultimately caused breakages and deterioration of expensive hardware. Now Logstash collects and transforms logging data by sending it to Elasticsearch. Elasticsearch enables the SJMC to store, search, and analyse logged data with ease at scale.
         </TextParagraph>
@@ -418,7 +418,7 @@
           According to the internal CSAT survey, 98% of Mad Devs' customers find the company's service great value for money, and most of them stay with us for 3+ years. The SJMC is no exception. 
         </TextParagraph>
         <TextParagraph class="m-72_bottom media-m-48_bottom">
-          We are honoured to extend our partnership to improve the SJMC visitors' experience by introducing the iPaOS application for children. This application will offer engaging content which allows children to discover the centre and its resources through a series of educational games. Moreover, Mad Devs is going to develop a sophisticated content management system that is eventually going to simplify the deployment of new content and will enable the managers of the SJMC themselves to make the required changes with ease.
+          We are honoured to extend our partnership to improve the SJMC visitors' experience by introducing the iPadOS application for children. This application will offer engaging content which allows children to discover the centre and its resources through a series of educational games. Moreover, Mad Devs is going to develop a sophisticated content management system that is eventually going to simplify the deployment of new content and will enable the managers of the SJMC themselves to make the required changes with ease.
         </TextParagraph>
         <!-- Добавить нужное фото -->
         <TextQuoteAuthor
@@ -579,7 +579,7 @@ export default {
         },
         {
           name: 'Vlad Andreev',
-          position: 'DevOps Developer',
+          position: 'DevOps Engineer',
           fileName: 'vlad-andreev',
           fileExtension: 'png'
         },
@@ -603,7 +603,7 @@ export default {
         },
         {
           name: 'Dmitri Khalezin',
-          position: 'DevOps Developer',
+          position: 'DevOps Engineer',
           fileName: 'dmitrii-khalezin',
           fileExtension: 'png'
         },
@@ -633,13 +633,13 @@ export default {
         },
         {
           name: 'Pavel Pushkarev',
-          position: 'Mobile Developer',
+          position: 'Mobile App Developer',
           fileName: 'pushkarev',
           fileExtension: 'png'
         },
         {
           name: 'Rustom Kulbatyrov',
-          position: 'Mobile Developer',
+          position: 'Mobile App Developer',
           fileName: 'kulbatyrov',
           fileExtension: 'png'
         }

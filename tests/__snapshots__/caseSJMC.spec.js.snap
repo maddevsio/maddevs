@@ -250,7 +250,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="case_paragraph m-48_bottom"
       >
         
-        The SJMC Software Transferring a project to another software partner is never easy for all parties involved. So, let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.
+        Transferring a project to another software partner is never easy for all parties involved. So, let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.
       
       </p>
        
@@ -361,135 +361,6 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
           Synchronises content storage and other multimedia computers.
         </li>
       </ul>
-    </section>
-     
-    <section
-      class="container_full case_full-screen-slider"
-    >
-      <div
-        class="slider-content"
-      >
-        <div
-          class="swiper-container thumb-example"
-        >
-          <!---->
-           
-          <div
-            class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
-            style="cursor: grab;"
-          >
-            <div
-              class="swiper-wrapper"
-              style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
-            >
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="[object Object] ,[object Object] 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt=""
-                    class="image"
-                    loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
-                  />
-                </picture>
-              </div>
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="[object Object] ,[object Object] 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt=""
-                    class="image"
-                    loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
-                  />
-                </picture>
-              </div>
-            </div>
-            <span
-              aria-atomic="true"
-              aria-live="assertive"
-              class="swiper-notification"
-            />
-          </div>
-        </div>
-         
-        <p
-          class="slider-description"
-        >
-          
-    Australia-based IT company to create integrated multimedia solutions.
-  
-        </p>
-         
-        <div
-          class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
-        >
-          <div
-            class="swiper-wrapper"
-            style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
-          >
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="[object Object] ,[object Object] 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt=""
-                  class="image"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
-                />
-              </picture>
-            </div>
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="[object Object] ,[object Object] 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt=""
-                  class="image"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
-                />
-              </picture>
-            </div>
-          </div>
-          <span
-            aria-atomic="true"
-            aria-live="assertive"
-            class="swiper-notification"
-          />
-        </div>
-      </div>
     </section>
      
     <section
@@ -1729,7 +1600,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
-        Elasticsearch+Kibana+Logstash
+        Elasticsearch+Kibana+
+        <br
+          class="case_mobile-break"
+        />
+        Logstash
       </h3>
        
       <p
@@ -2270,7 +2145,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__position"
             >
-              DevOps Developer
+              DevOps Engineer
             </p>
           </div>
         </li>
@@ -2418,7 +2293,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__position"
             >
-              DevOps Developer
+              DevOps Engineer
             </p>
           </div>
         </li>
@@ -2603,7 +2478,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__position"
             >
-              Mobile Developer
+              Mobile App Developer
             </p>
           </div>
         </li>
@@ -2640,7 +2515,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__position"
             >
-              Mobile Developer
+              Mobile App Developer
             </p>
           </div>
         </li>
@@ -2668,7 +2543,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="case_paragraph m-72_bottom media-m-48_bottom"
       >
         
-        We are honoured to extend our partnership to improve the SJMC visitors' experience by introducing the iPaOS application for children. This application will offer engaging content which allows children to discover the centre and its resources through a series of educational games. Moreover, Mad Devs is going to develop a sophisticated content management system that is eventually going to simplify the deployment of new content and will enable the managers of the SJMC themselves to make the required changes with ease.
+        We are honoured to extend our partnership to improve the SJMC visitors' experience by introducing the iPadOS application for children. This application will offer engaging content which allows children to discover the centre and its resources through a series of educational games. Moreover, Mad Devs is going to develop a sophisticated content management system that is eventually going to simplify the deployment of new content and will enable the managers of the SJMC themselves to make the required changes with ease.
       
       </p>
        
