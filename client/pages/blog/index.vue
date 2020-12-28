@@ -115,7 +115,7 @@ export default {
     async getAllPosts() {
       const posts = await this.$prismic.api.query(
         this.$prismic.predicates.at('document.type', 'post'),
-        {orderings : '[my.post.date desc]'}
+        {orderings : '[my.post.date desc]', pageSize: 100}
       );
 
       this.posts = posts.results;

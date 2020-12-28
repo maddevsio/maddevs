@@ -196,7 +196,43 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/cases/mixins';
   @import '../../assets/styles/socialNetworkIcons';
+
+  /deep/ h1 {
+    margin: 72px 0 48px;
+    @include title($text-color--black-cases, 52px, -0.04em);
+  }
+
+  /deep/ h2 {
+    @include title($text-color--black-cases, 41.5px, -0.04em);
+  }
+
+  /deep/ h3 {
+    @include title($text-color--black-cases, 33.2px, -0.04em);
+  }
+
+  /deep/ h4 {
+    @include title($text-color--black-cases, 26.56px, -0.03em);
+  }
+
+  /deep/ h5 {
+    @include title($text-color--black-cases, 21.25px, -0.02em);
+  }
+
+  /deep/ h2,
+  /deep/ h3,
+  /deep/ h4,
+  /deep/ h5,
+  /deep/ h6 {
+    margin-top: 72px;
+    margin-bottom: 48px;
+  }
+
+  /deep/ ul {
+    list-style: disc;
+    padding-left: 30px;
+  }
 
   .blog-post {
     margin: auto;
@@ -372,16 +408,6 @@ export default {
     }
 
     /deep/ .textslice {
-      .inline-code {
-        font-family: 'IBM Plex Mono', monospace;
-        background: $bgcolor--grey-light;
-        padding: 0 4px;
-        border-radius: 3px;
-        display: inline-block;
-        font-size: 15px;
-        line-height: 129%;
-      }
-
       span,
       p {
         color: $text-color--black-cases;
