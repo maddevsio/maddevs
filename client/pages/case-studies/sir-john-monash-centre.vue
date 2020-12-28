@@ -86,14 +86,14 @@
           <ListItemDot>Synchronises content storage and other multimedia computers.</ListItemDot>
         </List>
       </section>
-      <section class="container_full case_full-screen-slider">
+      <!-- <section class="container_full case_full-screen-slider">
         <Swiper
           :components="swiperMultimediaManagement"
           :safariTopBar="false"
           :boxShadow="false"
           sliderDescription="Australia-based IT company to create integrated multimedia solutions."
         />
-      </section>
+      </section> -->
       <section class="container_regular">
         <h2 class="case_title_h2 m-104_top media-m-48_top m-12_bottom">Mobile applications</h2>
         <TextParagraph class="m-48_bottom">

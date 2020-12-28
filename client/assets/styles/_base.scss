@@ -82,6 +82,8 @@ main {
   font-style: normal;
   font-weight: 600;
   src:
+    url('~assets/fonts/Poppins/Poppins-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+    url('~assets/fonts/Poppins/Poppins-Medium.woff') format('woff'), /* Modern Browsers */
     url('~assets/fonts/Poppins/Poppins-Medium.otf') format('otf'),
     url('~assets/fonts/Poppins/Poppins-Medium.ttf') format('ttf');
 }

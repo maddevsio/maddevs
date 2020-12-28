@@ -149,7 +149,7 @@ export default {
   }
 
   &__sub-title {
-    font-family: 'Poppins-Regular', sans-serif;
+    font-family: 'Poppins-Bold', sans-serif;
     font-size: 40px;
     line-height: 120%;
     letter-spacing: -1px;
