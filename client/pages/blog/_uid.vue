@@ -107,7 +107,6 @@ export default {
       // Query to get recomended posts
       if (post.tags.length) {
         recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', post.tags), {pageSize: 4});
-        console.log('recommendedPosts.results', recommendedPosts.results.length);
         recommendedPosts = recommendedPosts.results.filter(recommendedPost => recommendedPost.uid !== post.uid);
 
         if (recommendedPosts.length > 3) {
