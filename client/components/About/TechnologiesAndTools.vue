@@ -618,7 +618,7 @@ $tech_legends: (
 
   span {
     white-space: nowrap;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 11px;
     line-height: 13px;
     color: rgba(255, 255, 255, 0.25);

@@ -52,7 +52,7 @@ export default {
 
       span {
         white-space: nowrap;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins-Regular', sans-serif;
         font-size: 10px;
         line-height: 13px;
         letter-spacing: -0.02em;

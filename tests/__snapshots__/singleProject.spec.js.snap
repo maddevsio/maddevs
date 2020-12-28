@@ -5,6 +5,7 @@ exports[`CaseStudies component renders correctly 1`] = `
   class="single-project"
   href="https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5"
   style="background: rgb(255, 106, 1);"
+  target="_self"
 >
   <div
     class="single-project__container"
@@ -16,13 +17,13 @@ exports[`CaseStudies component renders correctly 1`] = `
         class="single-project__logo-bg single-project__logo-bg--godeeColored"
       />
        
-      <h4
+      <h3
         class="single-project__sub-title"
       >
         
         Mass transportation company
       
-      </h4>
+      </h3>
        
       <p
         class="single-project__paragraph paragraph"

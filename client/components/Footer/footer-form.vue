@@ -4,17 +4,17 @@
       <div class="fields-list">
         <ValidationProvider class="field-item" rules="max:50" v-slot="{ classes, errors }">
           <input type="text" class="entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
-          <span class="error-text">{{ errors[0] }}</span>
+          <div class="error-text">{{ errors[0] }}</div>
         </ValidationProvider>
         <ValidationProvider class="field-item footer-form_email" rules="email|required" v-slot="{ classes, errors }">
           <div v-PlaceholderAsterisk="'your@mail.com'">
             <input type="text" class="entry-field" :class="classes" v-model="email">
           </div>
-          <span class="error-text">{{ errors[0] }}</span>
+          <div class="error-text">{{ errors[0] }}</div>
         </ValidationProvider>
         <ValidationProvider class="field-item" rules="max:500" v-slot="{ classes, errors }">
           <textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescriber" />
-          <span class="error-text">{{ errors[0] }}</span>
+          <div class="error-text">{{ errors[0] }}</div>
         </ValidationProvider>
       </div>
       <FormCheckboxes
@@ -130,7 +130,7 @@ export default {
     &_email {
       /deep/ .v-placeholder-asterisk {
         font-size: 16px;
-        font-family: 'Poppins', sans-serif;;
+        font-family: 'Poppins-Regular', sans-serif;
         color: $text-color--grey-form-placeholder;
         left: 17px !important;
         top: 50% !important;
@@ -194,7 +194,7 @@ export default {
 
     .entry-field,
     .error-text {
-      font-family: 'Poppins', sans-serif;;
+      font-family: 'Poppins-Regular', sans-serif;
     }
 
     .error-text {

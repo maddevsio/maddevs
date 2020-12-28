@@ -1,7 +1,13 @@
 <template>
   <section class="case_header">
-    <video class="case_main-video" loop="true" muted="true" autoplay="true">
-      <source src="../../assets/img/Cases/nambafood/video/main.mp4" type="video/mp4">
+    <video 
+      class="case_main-video" 
+      loop="true" 
+      muted="true" 
+      autoplay="true"
+      v-if="!isIphone"
+    >
+      <source :src="getPathToVideo" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <div class="case_logotype nambafood"></div>
@@ -16,6 +22,23 @@ export default {
   name: 'Header',
   components: {
     ButtonMore
+  },
+  data() {
+    return {
+      isIphone: false
+    };
+  },
+  computed: {
+    getPathToVideo: () => {
+      return `${process.env.awsUrl}/main.ef19480.mp4`;
+    }
+  },
+  mounted() {
+    if(navigator.userAgent.match(/(iPhone)/i)) {
+      this.isIphone = true;
+    } else {
+      this.isIphone = false;
+    }
   }
 };
 </script>

@@ -43,22 +43,26 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-@import '../../../assets/styles/_vars'
+<style lang="scss" scoped>
+@import '../../../assets/styles/_vars';
 
-img
-  width: 100%
-  height: auto
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-.block-img
-  margin-bottom: 10px
+.block-img {
+  margin-bottom: 10px;
+  text-align: center;
+}
 
-.image-label
-  display: block
-  text-align: center
-  font-size: 14px
-  line-height: 129%
-  letter-spacing: -0.02em
-  font-family: 'Poppins', sans-serif
-  color: $text-color--grey
+.image-label {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  font-family: 'Poppins-Regular', sans-serif;
+  color: $text-color--grey;
+}
 </style>

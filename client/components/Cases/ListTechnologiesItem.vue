@@ -51,12 +51,6 @@ export default {
       }
     }
 
-    &__mobile-ios-android {
-      &::before {
-        width: 84px;
-      }
-    }
-
     @media screen and (max-width: 768px) {
       &__tech-icon {
         margin-bottom: 8px;
@@ -70,12 +64,6 @@ export default {
       &__docker {
         &::before {
           width: 50px;
-        }
-      }
-
-      &__mobile-ios-android {
-        &::before {
-          width: 64px;
         }
       }
 

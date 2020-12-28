@@ -11,11 +11,11 @@ exports[`FAQ renders correctly 1`] = `
     <div
       class="faq__header"
     >
-      <h2
+      <h1
         class="faq__title"
       >
         Frequently Asked Questions
-      </h2>
+      </h1>
        
       <div
         class="faq__image"
@@ -25,12 +25,12 @@ exports[`FAQ renders correctly 1`] = `
     <div
       class="faq__content"
     >
-      <h3
+      <h2
         class="faq__sec-title faq__sec-title-first"
         id="how-many-people-work-at-your-company?"
       >
         How many people work at your company?
-      </h3>
+      </h2>
        
       <p
         class="faq__paragraph"
@@ -50,12 +50,12 @@ exports[`FAQ renders correctly 1`] = `
       
       </p>
        
-      <h3
+      <h2
         class="faq__sec-title"
         id="what-time-zone-does-your-team-operate-in?"
       >
         What time zone does your team operate in?
-      </h3>
+      </h2>
        
       <p
         class="faq__paragraph"
@@ -79,12 +79,12 @@ exports[`FAQ renders correctly 1`] = `
       
       </p>
        
-      <h3
+      <h2
         class="faq__sec-title"
         id="what-types-of-projects-you-do-not-work-on?"
       >
         What types of projects you do NOT work on?
-      </h3>
+      </h2>
        
       <p
         class="faq__paragraph"
@@ -106,12 +106,12 @@ exports[`FAQ renders correctly 1`] = `
       
       </p>
        
-      <h3
+      <h2
         class="faq__sec-title"
         id="where-can-i-find-the-project-portfolio-of-your-company?"
       >
         Where can I find the project portfolio of your company?
-      </h3>
+      </h2>
        
       <p
         class="faq__paragraph"
@@ -155,7 +155,7 @@ exports[`FAQ renders correctly 1`] = `
       
       </p>
        
-      <h3
+      <h2
         class="faq__sec-title"
         id="what-details-do-you-need-from-me-to-discuss-my-project-&-start-work?"
       >
@@ -166,7 +166,7 @@ exports[`FAQ renders correctly 1`] = `
           project & start
         </span>
          work?
-      </h3>
+      </h2>
        
       <p
         class="faq__paragraph"
@@ -199,12 +199,12 @@ exports[`FAQ renders correctly 1`] = `
         </a>
       </p>
        
-      <h3
+      <h2
         class="faq__sec-title"
         id="how-much-does-software-development-cost?-how-do-you-charge?"
       >
         How much does software development cost? How do you charge?
-      </h3>
+      </h2>
        
       <p
         class="faq__paragraph"
@@ -226,12 +226,12 @@ exports[`FAQ renders correctly 1`] = `
       
       </p>
        
-      <h3
+      <h2
         class="faq__sec-title"
         id="how-can-i-control-my-project-budget?"
       >
         How can I control my project budget?
-      </h3>
+      </h2>
        
       <p
         class="faq__paragraph"
@@ -241,12 +241,12 @@ exports[`FAQ renders correctly 1`] = `
       
       </p>
        
-      <h3
+      <h2
         class="faq__sec-title"
         id="how-do-you-ensure-security-for-confidential-information?-do-you-work-under-nda?"
       >
         How do you ensure security for confidential information? Do you work under NDA?
-      </h3>
+      </h2>
        
       <p
         class="faq__paragraph"
@@ -272,12 +272,12 @@ exports[`FAQ renders correctly 1`] = `
         </a>
       </p>
        
-      <h3
+      <h2
         class="faq__sec-title"
         id="how-do-you-mitigate-the-risks-related-to-intellectual-property-ownership?"
       >
         How do you mitigate the risks related to intellectual property ownership?
-      </h3>
+      </h2>
        
       <p
         class="faq__paragraph"
@@ -303,12 +303,12 @@ exports[`FAQ renders correctly 1`] = `
       
       </p>
        
-      <h3
+      <h2
         class="faq__sec-title"
         id="what-if-my-question-is-not-answered-on-this-page?"
       >
         What if my question is not answered on this page?
-      </h3>
+      </h2>
        
       <p
         class="faq__paragraph"
@@ -357,7 +357,7 @@ exports[`FAQ renders correctly 1`] = `
           Phone Call via 
           <a
             class="faq__link faq__link"
-            href="tel:+44 20 3984 8555"
+            href="tel:+442039848555"
           >
             +44 20 3984 8555
           </a>

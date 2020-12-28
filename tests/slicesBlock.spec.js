@@ -25,7 +25,14 @@ describe('Slice block component', () => {
     {
       primary: {
         quotation_design: 'border',
-        quote: 'lorem ipsum dolor sit ame'
+        quote: 'lorem ipsum dolor sit ame',
+        name_of_the_author: 'John Doe',
+        portrait_author: {
+          mobile: {
+
+          },
+          url: ''
+        }
       },
       slice_type: 'quote'
     },

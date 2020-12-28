@@ -11,7 +11,7 @@ exports[`HeaderNambaFood renders correctly 1`] = `
     muted="muted"
   >
     <source
-      src="../../assets/img/Cases/nambafood/video/main.mp4"
+      src="undefined/main.ef19480.mp4"
       type="video/mp4"
     />
     

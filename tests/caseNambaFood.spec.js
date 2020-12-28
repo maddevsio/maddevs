@@ -7,9 +7,9 @@ import './__mocks__/intersectionObserverMock';
 describe('Namba food', () => {
   let wrapper;
   const data = {
-    title: 'Mad Devs Namba Food',
-    description: '',
-    ogUrl: '',
+    title: 'Mad Devs Case Study: Namba Food Top Delivery Service in Central Asia',
+    description: 'Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing orders, and business owners work as a seamless system, ensuring a smooth delivery process for all types of goods.',
+    ogUrl: 'https://maddevs.io/case-studies/namba-food/',
     team: [
       {
         name: 'Vlad Andreev',
@@ -217,8 +217,7 @@ describe('Namba food', () => {
       }
     ],
     videoIdList: ['map-video', 'iphone-silver-video'],
-    header: undefined,
-    mobileHeader: undefined
+    isIphone: false
   };
 
   beforeEach(() => {
@@ -228,7 +227,7 @@ describe('Namba food', () => {
       }
     };
     wrapper = mount(NambaFood, {
-      stubs: ['client-only']
+      stubs: ['client-only', 'router-link']
     });
   });
 

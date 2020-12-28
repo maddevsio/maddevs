@@ -17,7 +17,7 @@
                 <span class="modal-error-text error-text">{{ errors[0] }}</span>
               </ValidationProvider></label
             >
-            <h4 class="careers__form-description">
+            <h2 class="careers__form-description">
               I want to work for you as a
               <ValidationProvider rules="required" v-slot="{ classes, errors }">
                 <input
@@ -28,17 +28,17 @@
                 />
                 <span class="modal-error-text error-text">{{ errors[0] }}</span>
               </ValidationProvider>
-            </h4>
-            <h4 class="careers__form-description radio-buttons">
+            </h2>
+            <h2 class="careers__form-description radio-buttons">
               You can also consider me for <br> your other
-            </h4>
+            </h2>
             <ValidationProvider rules="required" v-slot="{ classes, errors }">
               <ul class="careers__position-list">
                 <UIRadioButtons ref="radioButtons" :radios="radioData" v-model="positionValue" />
               </ul>
               <span class="modal-error-text error-text posotion-error-text">{{ errors[0] }}</span>
             </ValidationProvider>
-            <h4 class="careers__form-description careers__form-description-email-title">
+            <h2 class="careers__form-description careers__form-description-email-title">
               Please reply to
               <ValidationProvider
                 rules="email|required"
@@ -52,10 +52,10 @@
                 />
                 <span class="modal-error-text error-text">{{ errors[0] }}</span>
               </ValidationProvider>
-            </h4>
-            <h4 class="careers__form-description">
+            </h2>
+            <h2 class="careers__form-description">
               To get more information on my <br> skills, please
-            </h4>
+            </h2>
             <ul class="careers__form-list">
               <li class="careers__form-list-item careers__form-list-item-linkedin">
                 – check out my
@@ -210,7 +210,7 @@ export default {
     /deep/ .ui-radio-buttons {
       &::after {
         content: 'roles.';
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins-Regular', sans-serif;
         font-size: 22px;
         line-height: 24px;
         letter-spacing: -0.02em;
@@ -253,7 +253,7 @@ export default {
   }
 
   &__form-description {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Regular', sans-serif;
     color: $text-color--black-lighter;
     font-weight: 500;
 
@@ -303,7 +303,7 @@ export default {
   &__form-input,
   &__form-list-item {
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 22px;
     letter-spacing: -0.02em;
   }

@@ -4,7 +4,7 @@
     <h2 class="case_title case_title_h2">
       <slot></slot>
     </h2>
-    <button type="button" class="case_next-project-button">Read next project</button>
+    <a href="/case-studies/namba-food" class="case_next-project-button">Read next project</a>
   </section>
 </template>
 
@@ -24,7 +24,17 @@ export default {
     align-items: center;
     padding-top: 85px;
     padding-bottom: 115px;
+    position: relative;
     background-color: $bgcolor--white-transparent;
+
+    &::before {
+      content: '';
+      width: calc(100% - 198px);
+      height: 2px;
+      position: absolute;
+      top: 0;
+      background-color: $border-color--grey-cases;
+    }
   }
 
   &_logotype {
@@ -44,17 +54,22 @@ export default {
     background-color: $bgcolor--black;
     border: 0;
     cursor: pointer;
+    text-decoration: none;
     @include default_text($text-color--white-primary, 17px, 166%, -0.035em, normal);
   }
 
-   /deep/ &_mobile-screen-break {
-      display: none;
-    }
+  /deep/ &_mobile-screen-break {
+    display: none;
+  }
 
   @media screen and (max-width: 768px) {
     &_footer {
       padding-top: 70px;
       padding-bottom: 100px;
+
+      &::before {
+        width: calc(100% - 99px);
+      }
     }
 
     &_logotype {

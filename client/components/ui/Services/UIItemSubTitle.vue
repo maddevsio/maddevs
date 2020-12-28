@@ -19,7 +19,7 @@ export default {
 
   .item-sub-title {
     font-size: 23px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Medium', sans-serif;
     line-height: 136%;
     letter-spacing: -1px;
     color: $remote-tech-staff-sub-title-grey;

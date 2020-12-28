@@ -1,30 +1,87 @@
 .case {
-  &_numbered-title {
-    margin-left: 41px;
-  }
-
   &_column-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 48px;
+    grid-column-gap: 40px;
 
     @media screen and (max-width: 790px) {
       grid-template-columns: repeat(1, 1fr);
-      grid-row-gap: 48px;
+      grid-row-gap: 25px;
     }
   }
 
-  &_column-item {
-    max-width: 333px;
-  }
-
-  &_full-screen-img {
+  &_full-screen-img,
+  &_full-screen-slider {
     max-width: 1440px;
   }
 
+  &_image-description {
+    text-align: center;
+    @include default_text($text-color--grey-img-description, 13px, 21.58px, -0.02em, normal);
+  }
+
+  &_sjmc-phone-video-section {
+    position: relative;
+    padding: 60px 0;
+  }
+
+  &_sjmc-phone-video-wrapper {
+    width: 23%;
+    max-width: 340px;
+    min-width: 225px;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      width: calc(100% + 10px);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url("../../assets/img/Cases/sjmc/png/bluetooth-beacons-video-background.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    &--on-pause {
+      &::after {
+        content: '';
+        width: 8vw;
+        height: 8vw;
+        max-width: 110px;
+        max-height: 110px;
+        min-width: 80px;
+        min-height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include play-button-white;
+      }
+    }
+
+    @media screen and (max-width: 360px) {
+      min-width: 280px;
+    }
+  }
+
+  &_mobile-break {
+    display: none;
+  }
+
   @media screen and (max-width: 768px) {
-    &_numbered-title {
-      margin-left: 30px;
+    &_sjmc-phone-video-section {
+      padding: 50px 0;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    &_mobile-break {
+      display: block;
     }
   }
 }

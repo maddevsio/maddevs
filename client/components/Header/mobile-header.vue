@@ -33,11 +33,11 @@
                 <div class="mobile-header__contact-title-flag"></div>
                 <p class="mobile-header__contact-title">Call us:</p>
               </div>
-              <a href="tel:+44 20 3984 8555" class="mobile-header__contact-link mobile-header__contact-phone-number">+44 20 3984 8555</a>
+              <a href="tel:+442039848555" class="mobile-header__contact-link mobile-header__contact-phone-number">+44 20 3984 8555</a>
             </div>
             <ul class="mobile-header__messengers-list">
               <li v-for="(messenger, i) in messengers" :key="i">
-                <a :href="messenger.link" target="__blank" class="mobile-header__messenger-item-wrapper">
+                <a :href="messenger.link" target="_blank" class="mobile-header__messenger-item-wrapper">
                   <span class="mobile-header__messenger-item" :class="`mobile-header__${messenger.className}`" />
                   <p class="mobile-header__messenger-name">{{ messenger.name }}</p>
                 </a>
@@ -108,10 +108,9 @@ export default {
   },
   watch: {
     '$route'() {
-      this.mobileHeaderIsOpen = false;
-      this.headerTransparent = false;
+      this.setPageData();
       this.enableScrollOnBody();
-      this.isCasePage = false;
+      this.mobileHeaderIsOpen = false;
     }
   },
   created() {
@@ -195,7 +194,7 @@ export default {
       height: 60px;
       margin-top: 5px;
       margin-bottom: 55px;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Poppins-Regular', sans-serif;
       font-size: 16px;
     }
 
@@ -247,7 +246,7 @@ export default {
     &__nav-link {
       padding: 14px 0;
       font-size: 32px;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Poppins-Regular', sans-serif;
       letter-spacing: -1px;
       line-height: 38px;
       text-decoration: none;
@@ -323,7 +322,7 @@ export default {
 
     &__contact-title,
     &__messenger-name {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Poppins-Regular', sans-serif;
     }
 
     &__contact-title,
@@ -341,7 +340,7 @@ export default {
       font-size: 28px;
       line-height: 38px;
       letter-spacing: -1px;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Poppins-Regular', sans-serif;
       border-bottom: 1px solid $header-red-border-color;
       text-decoration: none;
     }

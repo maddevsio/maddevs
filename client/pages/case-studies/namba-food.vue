@@ -24,7 +24,7 @@
         </Card>
         <CardsBusinessModelsGrid/>
         <Card class="background-color-silver">
-          <h4 class="case_title_h4 m-8_bottom">Namba Food API</h4>
+          <h3 class="case_title_h4 m-8_bottom">Namba Food API</h3>
           <TextParagraph>
             Namba Food API allows businesses to integrate the API into any mobile payment application. As a result, end-users can quickly order goods and services without leaving the app using the app’s own payment system. Such API benefits businesses because end users use the payment method defined by the mobile app. At the moment, Mbank by Commercial Bank Kyrgyzstan and Balance by Beeline, a telecommunication service provider, have successfully integrated Namba Food API into their mobile apps.
           </TextParagraph>
@@ -66,8 +66,17 @@
       </section>
       <section class="container_full background-color-silver p-75_top p-75_bottom media-p-16_top media-p-16_bottom">
         <div class="case_full-screen-phone-video-wrapper">
-          <video id="iphone-silver-video" class="case_full-screen-video" width="100%" height="100%" loop="true" muted="true">
-            <source src="../../assets/video/mobile-applications-for-end-users.mp4" type="video/mp4">
+          <img src="../../assets/img/Cases/nambafood/png/iphone-video-preview.png" class="case_phone-ios-image" v-if="isIphone">
+          <video 
+            id="iphone-silver-video" 
+            class="case_full-screen-video" 
+            width="100%" 
+            height="100%" 
+            loop="true" 
+            muted="true"
+            v-else
+          >
+            <source :src="getPathToPhoneVideo" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -182,6 +191,10 @@
       <section class="container_middle">
         <Swiper
           :components="swiperAdminPanel"
+          :safariTopBar="true"
+          :boxShadow="true"
+          sliderDescription=""
+          safariTopBarImage="swiper-frame"
         />
       </section>
       <section class="container_regular">
@@ -239,9 +252,18 @@
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <div class="case_map-video-wrapper case_box-shadow">
-          <video id="map-video" class="case_map-video" width="100%" height="100%" loop="true" muted="true">
-            <source src="../../assets/video/map.mp4" type="video/mp4">
+        <div class="case_map-video-wrapper" :class="{'case_box-shadow': !isIphone}">
+          <img src="../../assets/img/Cases/nambafood/jpg/map-blank.jpg" class="case_ios-map-video-image case_box-shadow" v-if="isIphone">
+          <video 
+            id="map-video" 
+            class="case_map-video" 
+            width="100%" 
+            height="100%" 
+            loop="true" 
+            muted="true"
+            v-else
+          >
+            <source :src="getPathToMapVideo" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -332,7 +354,7 @@
             :fileNameRetina="`${teamMember.fileName}@2x`"
             :fileExtension="teamMember.fileExtension"
             :alt="teamMember.name"
-            pictureFolder="nambafood"
+            pictureFolder="common"
           />
         </ListTeam>
         <h4 class="case_title_h4 m-72_top m-12_bottom media-m-41_top">Transparent communication</h4>
@@ -343,7 +365,7 @@
       <section class="container_regular">
         <h2 class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom">Nationwide success and day-to-day improvements</h2>
         <TextParagraph>
-          Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision and understanding of its target audience, we were able to build a product that truly solves this customer’s problems. The year-over-year growth rate is hugely impressive.
+          Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision and understanding of its target audience, we were able to <router-link :to="`/services#software-development`" class="case_link">build a product</router-link> that truly solves this customer’s problems. The year-over-year growth rate is hugely impressive.
         </TextParagraph>
         <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
           As the number of businesses using Namba Food continues to increase, <span class="case_blockquote-box_text-modificator">the service's yearly growth rate is about 50% for both revenue and deliveries made.</span>
@@ -437,9 +459,9 @@ export default {
   name: 'NambaFood',
   data() {
     return {
-      title: 'Mad Devs Namba Food',
-      description: '',
-      ogUrl: '',
+      title: 'Mad Devs Case Study: Namba Food Top Delivery Service in Central Asia',
+      description: 'Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing orders, and business owners work as a seamless system, ensuring a smooth delivery process for all types of goods.',
+      ogUrl: 'https://maddevs.io/case-studies/namba-food/',
       team: [
         {
           name: 'Vlad Andreev',
@@ -646,7 +668,8 @@ export default {
           fileExtension: 'jpg'
         }
       ],
-      videoIdList: ['map-video', 'iphone-silver-video']
+      videoIdList: ['map-video', 'iphone-silver-video'],
+      isIphone: false
     };
   },
   head() {
@@ -662,8 +685,29 @@ export default {
           property: 'og:image',
           content: 'https://maddevs.io/Open-Graph.png'
         }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://maddevs.io/case-studies/namba-food/'
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: Namba Food Top Delivery Service in Central Asia", "description": "Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing orders, and business owners work as a seamless system, ensuring a smooth delivery process for all types of goods.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group Limited"}}'
+        }
       ]
     };
+  },
+  computed: {
+    getPathToPhoneVideo: () => {
+      return `${process.env.awsUrl}/mobile-applications-for-end-users.faaab2d.mp4`;
+    },
+    getPathToMapVideo: () => {
+      return `${process.env.awsUrl}/map.c41e893.mp4`;
+    }
   },
   mounted() {
     // Play/Pause HTML Video Based on Visibility
@@ -685,6 +729,12 @@ export default {
       let observer = new IntersectionObserver(callback, options);
       observer.observe(document.getElementById(video));
     });
+
+    if(navigator.userAgent.match(/(iPhone)/i)) {
+      this.isIphone = true;
+    } else {
+      this.isIphone = false;
+    }
   }
 };
 </script>

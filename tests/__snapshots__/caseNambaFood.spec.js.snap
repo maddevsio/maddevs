@@ -14,7 +14,7 @@ exports[`Namba food renders correctly 1`] = `
       muted="muted"
     >
       <source
-        src="../../assets/img/Cases/nambafood/video/main.mp4"
+        src="undefined/main.ef19480.mp4"
         type="video/mp4"
       />
       
@@ -111,12 +111,12 @@ exports[`Namba food renders correctly 1`] = `
           <div
             class="case_card-content_left-column"
           >
-            <h4
+            <h3
               class="case_title_h4 m-8_bottom"
               style="color: rgb(245, 247, 249);"
             >
               Mini white label
-            </h4>
+            </h3>
              
             <p
               class="case_paragraph case_card-content_paragraph"
@@ -127,12 +127,12 @@ exports[`Namba food renders correctly 1`] = `
     
             </p>
              
-            <h4
+            <h3
               class="case_title_h4 m-8_bottom"
               style="color: rgb(245, 247, 249);"
             >
               Full white label
-            </h4>
+            </h3>
              
             <p
               class="case_paragraph"
@@ -199,11 +199,11 @@ exports[`Namba food renders correctly 1`] = `
           <div
             class="case_business-models-grid__text-wrapper"
           >
-            <h4
+            <h3
               class="m-8_bottom case_title_h4"
             >
               Personal courier
-            </h4>
+            </h3>
              
             <p
               class="case_paragraph"
@@ -221,12 +221,12 @@ exports[`Namba food renders correctly 1`] = `
           <div
             class="case_card background-color-turquoise"
           >
-            <h4
+            <h3
               class="m-8_bottom case_title_h4"
               style="color: rgb(255, 255, 255);"
             >
               Outsource partners
-            </h4>
+            </h3>
              
             <p
               class="case_paragraph"
@@ -243,12 +243,12 @@ exports[`Namba food renders correctly 1`] = `
           <div
             class="case_card background-color-berry"
           >
-            <h4
+            <h3
               class="m-8_bottom case_title_h4"
               style="color: rgb(255, 255, 255);"
             >
               Delivery of food and goods
-            </h4>
+            </h3>
              
             <p
               class="case_paragraph"
@@ -265,11 +265,11 @@ exports[`Namba food renders correctly 1`] = `
       <div
         class="case_card background-color-silver"
       >
-        <h4
+        <h3
           class="case_title_h4 m-8_bottom"
         >
           Namba Food API
-        </h4>
+        </h3>
          
         <p
           class="case_paragraph"
@@ -335,13 +335,13 @@ exports[`Namba food renders correctly 1`] = `
             class="card-use-case"
           >
             <client-only-stub>
-              <h4
+              <h3
                 class="card-use-case__title case_title_h4 card-use-case__red-card-title"
               >
                 Website, mobile 
                 <br />
                  application
-              </h4>
+              </h3>
             </client-only-stub>
              
             <div
@@ -404,13 +404,13 @@ exports[`Namba food renders correctly 1`] = `
             class="card-use-case"
           >
             <client-only-stub>
-              <h4
+              <h3
                 class="card-use-case__title case_title_h4 card-use-case__black-card-title"
               >
                 Application for 
                 <br />
                  deliverymen
-              </h4>
+              </h3>
             </client-only-stub>
              
             <div
@@ -473,11 +473,11 @@ exports[`Namba food renders correctly 1`] = `
             class="card-use-case"
           >
             <client-only-stub>
-              <h4
+              <h3
                 class="card-use-case__title case_title_h4 card-use-case__turquoise-card-title"
               >
                 Unified control system for operators
-              </h4>
+              </h3>
             </client-only-stub>
              
             <div
@@ -540,13 +540,13 @@ exports[`Namba food renders correctly 1`] = `
             class="card-use-case"
           >
             <client-only-stub>
-              <h4
+              <h3
                 class="card-use-case__title case_title_h4 card-use-case__white-card-title"
               >
                 Control panel for 
                 <br />
                  managers
-              </h4>
+              </h3>
             </client-only-stub>
              
             <div
@@ -638,7 +638,7 @@ exports[`Namba food renders correctly 1`] = `
           width="100%"
         >
           <source
-            src="../../assets/video/mobile-applications-for-end-users.mp4"
+            src="undefined/mobile-applications-for-end-users.faaab2d.mp4"
             type="video/mp4"
           />
           
@@ -971,7 +971,7 @@ exports[`Namba food renders correctly 1`] = `
         class="slider-content"
       >
         <div
-          class="swiper-container thumb-example"
+          class="swiper-container thumb-example box-shadow"
         >
           <picture>
             <source
@@ -1043,6 +1043,8 @@ exports[`Namba food renders correctly 1`] = `
             />
           </div>
         </div>
+         
+        <!---->
          
         <div
           class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
@@ -1280,7 +1282,7 @@ exports[`Namba food renders correctly 1`] = `
           width="100%"
         >
           <source
-            src="../../assets/video/map.mp4"
+            src="undefined/map.c41e893.mp4"
             type="video/mp4"
           />
           
@@ -2194,7 +2196,14 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph"
       >
         
-        Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision and understanding of its target audience, we were able to build a product that truly solves this customer’s problems. The year-over-year growth rate is hugely impressive.
+        Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision and understanding of its target audience, we were able to 
+        <router-link-stub
+          class="case_link"
+          to="/services#software-development"
+        >
+          build a product
+        </router-link-stub>
+         that truly solves this customer’s problems. The year-over-year growth rate is hugely impressive.
       
       </p>
        
@@ -2227,11 +2236,11 @@ exports[`Namba food renders correctly 1`] = `
           <div
             class="card-content"
           >
-            <h5
+            <h3
               class="card-content_title case_title_h5"
             >
               Delivery service Nambafood
-            </h5>
+            </h3>
              
             <p
               class="case_paragraph card-content_paragraph m-24_bottom"
@@ -2287,11 +2296,11 @@ exports[`Namba food renders correctly 1`] = `
           <div
             class="card-content"
           >
-            <h5
+            <h3
               class="card-content_title case_title_h5"
             >
               Restaurant Talisman
-            </h5>
+            </h3>
              
             <p
               class="case_paragraph card-content_paragraph"
@@ -2397,11 +2406,11 @@ exports[`Namba food renders correctly 1`] = `
           <div
             class="card-content"
           >
-            <h5
+            <h3
               class="card-content_title case_title_h5"
             >
               250
-            </h5>
+            </h3>
              
             <p
               class="case_paragraph card-content_paragraph m-28_bottom media-m-32_bottom"
@@ -2418,11 +2427,11 @@ exports[`Namba food renders correctly 1`] = `
   
             </p>
              
-            <h5
+            <h3
               class="card-content_title case_title_h5"
             >
               2500
-            </h5>
+            </h3>
              
             <p
               class="case_paragraph card-content_paragraph m-28_bottom media-m-32_bottom"
@@ -2433,11 +2442,11 @@ exports[`Namba food renders correctly 1`] = `
   
             </p>
              
-            <h5
+            <h3
               class="card-content_title case_title_h5"
             >
               700 entrepreneurs
-            </h5>
+            </h3>
              
             <p
               class="case_paragraph card-content_paragraph"

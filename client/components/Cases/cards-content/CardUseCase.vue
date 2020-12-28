@@ -1,9 +1,9 @@
 <template>
   <div class="card-use-case">
     <client-only>
-      <h4 class="card-use-case__title case_title_h4" :class="`card-use-case__${classList.uniqueСlass}-title`" v-html="title">
+      <h3 class="card-use-case__title case_title_h4" :class="`card-use-case__${classList.uniqueСlass}-title`" v-html="title">
         {{title}}
-      </h4>
+      </h3>
     </client-only>
     <div class="card-use-case__description-wrapper" :class="`card-use-case__${classList.uniqueСlass}-description-wrapper`">
       <TextParagraph class="card-use-case__paragraph" :class="`card-use-case__${classList.uniqueСlass}-paragraph`">

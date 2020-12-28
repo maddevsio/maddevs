@@ -1,6 +1,6 @@
 <template>
   <div class="form-checkboxes">
-    <label class="form-checkbox-label required" :for="`privacy-policy-${inputId}`">I confirm that I have read and accepted <span>Mad Devs’</span> <a href="/privacy" target="blank">Privacy Policy</a>
+    <label class="form-checkbox-label required" :for="`privacy-policy-${inputId}`">I confirm that I have read and accepted <span>Mad Devs’</span> <a href="/privacy" target="_blank">Privacy Policy</a>
       <input
         ref="privacyPolicy"
         class="form-checkbox-input"
@@ -9,7 +9,7 @@
         name="Privacy policy"
         @click="privacyCheckboxChangeState($event)"
       >
-      <span class="checkmark"></span>
+      <div class="checkmark"></div>
     </label>
     <label class="form-checkbox-label" :for="`marketing-communications-${inputId}`">I agree to get <span>Mad Devs’</span> discount offers and other marketing communications.
       <input
@@ -20,7 +20,7 @@
         name="Marketing communications"
         @click="discountOffersCheckboxChangeState($event)"
       >
-      <span class="checkmark"></span>
+      <div class="checkmark"></div>
     </label>
   </div>
 </template>

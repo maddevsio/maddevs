@@ -13,7 +13,7 @@ exports[`Nda page renders correctly 1`] = `
       <div
         class="nda__header"
       >
-        <h3
+        <h1
           class="nda__title"
         >
           <span
@@ -29,7 +29,7 @@ exports[`Nda page renders correctly 1`] = `
           >
             Mad Devs
           </span>
-        </h3>
+        </h1>
          
         <div
           class="nda__image"
@@ -96,11 +96,11 @@ exports[`Nda page renders correctly 1`] = `
       
         </p>
          
-        <h5
+        <h2
           class="nda__sec-title nda__sec-title--first"
         >
           Customer NDA Templates
-        </h5>
+        </h2>
          
         <p
           class="nda__paragraph"
@@ -121,7 +121,7 @@ exports[`Nda page renders correctly 1`] = `
       
         </p>
          
-        <h5
+        <h2
           class="nda__sec-title"
         >
           
@@ -131,7 +131,7 @@ exports[`Nda page renders correctly 1`] = `
           >
             Mad Devs
           </span>
-        </h5>
+        </h2>
          
         <p
           class="nda__paragraph nda__break-paragraph"

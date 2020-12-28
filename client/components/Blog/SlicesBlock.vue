@@ -33,6 +33,9 @@
       <template v-else-if="slice.slice_type === 'doublecolumn_bordered'">
         <double-column-bordered-slice :slice="slice"/>
       </template>
+      <template v-else-if="slice.slice_type === 'github_gist'">
+        <github-gist-slice :slice="slice"/>
+      </template>
     </section>
   </section>
 </template>
@@ -42,11 +45,12 @@ import QuoteSlice from '~/components/Blog/slices/QuoteSlice.vue';
 import TextSlice from '~/components/Blog/slices/TextSlice.vue';
 import ImageCaptionSlice from '~/components/Blog/slices/ImageCaptionSlice.vue';
 import EmbedSlice from '~/components/Blog/slices/EmbedSlice.vue';
-import CodeBlockSlice from './slices/CodeBlockSlice';
+import CodeBlockSlice from '@/components/Blog/slices/CodeBlockSlice/index.vue';
 import Divider from './slices/DividerSlice';
 import ImageAttributesSlice from './slices/ImageAttributesSlice';
 import OrderedList from './slices/OrderedList';
 import DoubleColumnBorderedSlice from './slices/DoubleColumnBorderedSlice';
+import GithubGistSlice from './slices/GithubGistSlice';
 
 export default {
   props: ['slices'],
@@ -60,7 +64,8 @@ export default {
     TextSlice,
     ImageCaptionSlice,
     EmbedSlice,
-    Divider
+    Divider,
+    GithubGistSlice
   }
 };
 </script>

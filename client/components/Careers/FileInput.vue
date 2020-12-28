@@ -73,7 +73,7 @@ export default {
   &__cv {
     min-width: max-content;
     color: $text-color--grey;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 22px;
     line-height: 24px;
     letter-spacing: -0.02em;

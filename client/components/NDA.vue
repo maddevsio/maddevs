@@ -2,9 +2,9 @@
   <section id="nda">
     <div class="container">
       <div class="nda__header">
-        <h3 class="nda__title">
+        <h1 class="nda__title">
           <span class="nda__nowrap">Non-Disclosure</span> Agreement <br> at <span class="nda__nowrap">Mad Devs</span>
-        </h3>
+        </h1>
         <div class="nda__image"></div>
       </div>
       <div class="nda__content">
@@ -22,7 +22,7 @@
             >rock@maddevs.io</a
           >.
         </p>
-        <h5 class="nda__sec-title nda__sec-title--first">Customer NDA Templates</h5>
+        <h2 class="nda__sec-title nda__sec-title--first">Customer NDA Templates</h2>
         <p class="nda__paragraph">
           Some of our customers have standard NDA templates  <span class="nda__nowrap">pre-approved</span> by their legal
           departments. If we are offered to sign such an agreement, we always proceed with it as the
@@ -31,9 +31,9 @@
           related to data protection, distribution, processing, or storage under NDA will be taken into
           consideration and applied in the process of work on the customer’s project.
         </p>
-        <h5 class="nda__sec-title">
+        <h2 class="nda__sec-title">
           Customer NDA Agreements Made Specifically for <span class="nda__nowrap">Mad Devs</span>
-        </h5>
+        </h2>
         <p class="nda__paragraph nda__break-paragraph">
           Many customers prefer to create a tailored NDA for <span class="nda__nowrap">Mad Devs</span> in collaboration with us. This
           practice is also very welcome. We are ready to explain how data will circulate within the new
@@ -97,7 +97,7 @@ export default {
   &__sec-title {
     margin-top: 48px;
     margin-bottom: 8px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 24px;
     line-height: 136%;
     letter-spacing: 0;
@@ -113,7 +113,7 @@ export default {
   }
 
   &__paragraph {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.02em;
@@ -126,7 +126,7 @@ export default {
 
   &__text {
     margin: 25px 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 22px;
     line-height: 36px;
     letter-spacing: -0.035em;

@@ -10,7 +10,7 @@ exports[`footer social network list renders correctly 1`] = `
     <a
       class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-github"
       href="https://github.com/maddevsio"
-      target="__blank"
+      target="_blank"
     />
   </li>
   <li
@@ -19,7 +19,7 @@ exports[`footer social network list renders correctly 1`] = `
     <a
       class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-facebook"
       href="https://www.facebook.com/maddevsllc"
-      target="__blank"
+      target="_blank"
     />
   </li>
   <li
@@ -28,7 +28,7 @@ exports[`footer social network list renders correctly 1`] = `
     <a
       class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-twitter"
       href="https://twitter.com/MadDevsIO"
-      target="__blank"
+      target="_blank"
     />
   </li>
   <li
@@ -37,7 +37,7 @@ exports[`footer social network list renders correctly 1`] = `
     <a
       class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-linkedin"
       href="https://www.linkedin.com/company/mad-devs"
-      target="__blank"
+      target="_blank"
     />
   </li>
   <li
@@ -46,7 +46,7 @@ exports[`footer social network list renders correctly 1`] = `
     <a
       class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-instagram"
       href="https://www.instagram.com/maddevsio"
-      target="__blank"
+      target="_blank"
     />
   </li>
   <li
@@ -55,7 +55,7 @@ exports[`footer social network list renders correctly 1`] = `
     <a
       class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-medium"
       href="https://blog.maddevs.io"
-      target="__blank"
+      target="_blank"
     />
   </li>
   <li
@@ -64,7 +64,7 @@ exports[`footer social network list renders correctly 1`] = `
     <a
       class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-behance"
       href="https://www.behance.net/maddevs"
-      target="__blank"
+      target="_blank"
     />
   </li>
   <li
@@ -73,7 +73,7 @@ exports[`footer social network list renders correctly 1`] = `
     <a
       class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-dev"
       href="https://dev.to/maddevs"
-      target="__blank"
+      target="_blank"
     />
   </li>
 </ul>

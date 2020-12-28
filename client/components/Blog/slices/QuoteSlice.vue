@@ -1,7 +1,22 @@
 <template>
   <div class='post-part single'>
-      <blockquote class="block-quotation" v-html="$prismic.asHtml(slice.primary.quote)" v-if="slice.primary.quotation_design === 'border'"/>
-      <text-quote v-if="slice.primary.quotation_design === 'brackets'">{{ $prismic.asText(slice.primary.quote) }}</text-quote>
+      <blockquote
+        class="block-quotation"
+        v-html="$prismic.asHtml(slice.primary.quote)"
+        v-if="slice.primary.quotation_design === 'border'"/>
+      <text-quote
+        class="post-quote"
+        v-if="slice.primary.quotation_design === 'brackets'">
+        {{ $prismic.asText(slice.primary.quote) }}
+      </text-quote>
+      <div
+        class="author"
+        :class="`p-${slice.primary.quotation_design}`">
+        <div class="author__image" v-if="slice.primary.portrait_author.url">
+          <prismic-image :field="slice.primary.portrait_author.mobile"/>
+        </div>
+        <div class="author__name" v-if="authorName">{{authorName}}</div>
+      </div>
   </div>
 </template>
 
@@ -17,7 +32,12 @@ export default {
       required: true
     }
   },
-  name: 'quote-slice'
+  name: 'quote-slice',
+  computed: {
+    authorName: function(){
+      return this.$prismic.asText(this.slice.primary.name_of_the_author);
+    }
+  }
 };
 </script>
 
@@ -29,7 +49,7 @@ export default {
     font-style: italic;
     font-size: 17px;
     line-height: 28px;
-    margin: 0 0 48px;
+    margin: 0 0 24px;
     font-family: 'Inter-Regular', sans-serif;
     color: $text-color--black-cases;
     border-left: 2px solid $border-color--red;
@@ -48,5 +68,47 @@ export default {
     display: inline-block;
     font-style: italic;
     border-left: solid #B4B4B4 4px;
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+
+    &.p {
+      &-border {
+        padding-left: 37px;
+      }
+
+      &-brackets {
+        padding-left: 62px;
+        margin-top: -26px;
+      }
+    }
+
+    &__image {
+      margin-right: 8px;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+    }
+
+    &__name {
+      font-family: 'Inter-Regular', sans-serif;
+      color: $text-color--grey-team-list;
+      font-style: italic;
+      font-size: 16px;
+      line-height: 166%;
+      letter-spacing: -0.035em;
+    }
+  }
+
+  /deep/ .post-quote {
+    margin-left: 0;
+    margin-right: 0;
   }
 </style>

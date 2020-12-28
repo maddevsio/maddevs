@@ -1,25 +1,58 @@
 <template>
-  <section class="case_header">
-    <!-- <video class="case_main-video" loop="true" muted="true" autoplay="true">
-      <source src="" type="video/mp4">
-      Your browser does not support the video tag.
-    </video> -->
-    <div class="case_logotype sjmc-header"></div>
-    <h1 class="case_header-title">Sir John Monash <br class="case_mobile-break"> Centre’s <br class="case_desktop-break"> case</h1>
-    <button class="case_play-button" type="button">
-      <div class="case_play-icon"></div>
-      View video about SJMC
-    </button>
-    <ButtonMore class="case_more__button">Read our case studies ↓</ButtonMore>
-  </section>
+  <div>
+    <section class="case_header">
+      <video
+        class="case_main-video" 
+        loop="true" muted="true" 
+        autoplay="true"
+        v-if="!isIphone"
+      >
+        <source :src="getPathToVideo" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="case_logotype sjmc-header"></div>
+      <h1 class="case_header-title">The maintenance <br class="case_mobile-break"> of memory: <br> Sir John Monash <br class="case_mobile-break"> Centre</h1>
+      <button class="case_play-button" type="button" @click="openFullscreen()">
+        <div class="case_play-icon"></div>
+        View video about SJMC
+      </button>
+      <ButtonMore class="case_more__button">Read our case studies ↓</ButtonMore>
+    </section>
+    <SJMCVideo />
+  </div>
 </template>
 
 <script>
 import ButtonMore from '@/components/Cases/ButtonMore';
+import SJMCVideo from '@/components/Cases/SJMCVideo';
+
 export default {
   name: 'Header',
   components: {
-    ButtonMore
+    ButtonMore,
+    SJMCVideo
+  },
+  data() {
+    return {
+      isIphone: false
+    };
+  },
+  computed: {
+    getPathToVideo: () => {
+      return `${process.env.awsUrl}/sjmc/sjmc-main-video.b35a387.mp4`;
+    }
+  },
+  mounted() {
+    if(navigator.userAgent.match(/(iPhone)/i)) {
+      this.isIphone = true;
+    } else {
+      this.isIphone = false;
+    }
+  },
+  methods: {
+    openFullscreen() {
+      this.$nuxt.$emit('open-fullscreen');
+    }
   }
 };
 </script>
@@ -73,27 +106,23 @@ export default {
     display: none;
   }
 
+  @media screen and (max-width: 1024px) {
+    &_play-button {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     &_logotype {
-      width: 149.12px;
-      height: 65.92px;
-      margin-bottom: 27px;
+      width: 212.08px;
+      height: 94.29px;
+      margin-bottom: 57px;
     }
+  }
 
-    &_play-button {
-      margin-top: 25px;
-    }
-
-    &_play-icon {
-      margin-right: 11px
-    }
-
+  @media screen and (max-width: 520px) {
     &_mobile-break {
       display: block;
-    }
-
-    &_desktop-break {
-      display: none;
     }
   }
 }

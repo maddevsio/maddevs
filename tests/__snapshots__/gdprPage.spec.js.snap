@@ -13,7 +13,7 @@ exports[`Gdpr page renders correctly 1`] = `
       <div
         class="gdpr__header"
       >
-        <h3
+        <h1
           class="gdpr__title"
         >
           <span
@@ -24,7 +24,7 @@ exports[`Gdpr page renders correctly 1`] = `
            GDPR 
           <br />
            Compliance Commitment
-        </h3>
+        </h1>
          
         <div
           class="gdpr__image"
@@ -59,11 +59,11 @@ exports[`Gdpr page renders correctly 1`] = `
       
         </p>
          
-        <h5
+        <h2
           class="gdpr__sec-title gdpr__sec-title--first"
         >
           Data Processing Documentation
-        </h5>
+        </h2>
          
         <p
           class="gdpr__paragraph"
@@ -101,13 +101,13 @@ exports[`Gdpr page renders correctly 1`] = `
       
         </p>
          
-        <h5
+        <h2
           class="gdpr__sec-title"
         >
           
         Privacy Policy
       
-        </h5>
+        </h2>
          
         <p
           class="gdpr__paragraph"
@@ -127,13 +127,13 @@ exports[`Gdpr page renders correctly 1`] = `
       
         </p>
          
-        <h5
+        <h2
           class="gdpr__sec-title"
         >
           
         Cookie Usage
       
-        </h5>
+        </h2>
          
         <p
           class="gdpr__paragraph"
@@ -145,13 +145,13 @@ exports[`Gdpr page renders correctly 1`] = `
       
         </p>
          
-        <h5
+        <h2
           class="gdpr__sec-title"
         >
           
         Marketing Communications
       
-        </h5>
+        </h2>
          
         <p
           class="gdpr__paragraph"
