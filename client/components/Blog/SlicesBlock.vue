@@ -36,6 +36,9 @@
       <template v-else-if="slice.slice_type === 'github_gist'">
         <github-gist-slice :slice="slice"/>
       </template>
+      <template v-else-if="slice.slice_type === 'image_gallery'">
+        <gallery-slice :slice="slice"/>
+      </template>
     </section>
   </section>
 </template>
@@ -51,6 +54,7 @@ import ImageAttributesSlice from './slices/ImageAttributesSlice';
 import OrderedList from './slices/OrderedList';
 import DoubleColumnBorderedSlice from './slices/DoubleColumnBorderedSlice';
 import GithubGistSlice from './slices/GithubGistSlice';
+import GallerySlice from './slices/GallerySlice';
 
 export default {
   props: ['slices'],
@@ -65,7 +69,8 @@ export default {
     ImageCaptionSlice,
     EmbedSlice,
     Divider,
-    GithubGistSlice
+    GithubGistSlice,
+    GallerySlice
   }
 };
 </script>
