@@ -100,18 +100,18 @@ export default {
     };
   },
   async asyncData({ $prismic, params, error }) {
-    console.log(params.uid, error);
     let recommendedPosts = [];
     try {
       // Query to get post content
       const post = await $prismic.api.getByUID('post', params.uid);
       // Query to get recomended posts
       if (post.tags.length) {
-        recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', post.tags));
+        recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', post.tags), {pageSize: 4});
+        console.log('recommendedPosts.results', recommendedPosts.results.length);
         recommendedPosts = recommendedPosts.results.filter(recommendedPost => recommendedPost.uid !== post.uid);
 
         if (recommendedPosts.length > 3) {
-          recommendedPosts = recommendedPosts.slices(1, 4);
+          recommendedPosts = recommendedPosts.slice(0, 3);
         }
       }
 
