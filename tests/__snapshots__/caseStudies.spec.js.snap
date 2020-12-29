@@ -29,6 +29,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         class="single-project"
         href="/case-studies/namba-food"
         style="background: rgb(248, 247, 246);"
+        target="_self"
       >
         <div
           class="single-project__container"
@@ -40,13 +41,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               class="single-project__logo-bg single-project__logo-bg--nambafoodColored"
             />
              
-            <h4
+            <h3
               class="single-project__sub-title"
             >
               
         Contactless Delivery Service
       
-            </h4>
+            </h3>
              
             <p
               class="single-project__paragraph paragraph"
@@ -110,6 +111,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         class="single-project"
         href="https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f?source=friends_link&sk=0f492513f43ce5b4330c3cfa484378c5"
         style="background: rgb(86, 68, 142);"
+        target="_blank"
       >
         <div
           class="single-project__container single-project__container_white-letters-theme"
@@ -121,13 +123,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               class="single-project__logo-bg single-project__logo-bg--teacherlyColored"
             />
              
-            <h4
+            <h3
               class="single-project__sub-title"
             >
               
         EdTech collaboration platform
       
-            </h4>
+            </h3>
              
             <p
               class="single-project__paragraph paragraph"
@@ -191,6 +193,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         class="single-project"
         href="https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0"
         style="background: rgb(14, 27, 39);"
+        target="_blank"
       >
         <div
           class="single-project__container single-project__container_white-letters-theme"
@@ -202,13 +205,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               class="single-project__logo-bg single-project__logo-bg--guardrailsColored"
             />
              
-            <h4
+            <h3
               class="single-project__sub-title"
             >
               
         Cloud cybersecurity service
       
-            </h4>
+            </h3>
              
             <p
               class="single-project__paragraph paragraph"
@@ -272,6 +275,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         class="single-project"
         href="https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5?source=friends_link&sk=3e3f75a7f35f0e4d9d447a19e015330a"
         style="background: rgb(255, 106, 1);"
+        target="_blank"
       >
         <div
           class="single-project__container"
@@ -283,13 +287,13 @@ exports[`CaseStudies component renders correctly 1`] = `
               class="single-project__logo-bg single-project__logo-bg--godeeColored"
             />
              
-            <h4
+            <h3
               class="single-project__sub-title"
             >
               
         Convenient shuttle bus service
       
-            </h4>
+            </h3>
              
             <p
               class="single-project__paragraph paragraph"
@@ -373,6 +377,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             class="single-project"
             href="/case-studies/namba-food"
             style="background: rgb(248, 247, 246);"
+            target="_self"
           >
             <div
               class="single-project__container"
@@ -384,13 +389,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   class="single-project__logo-bg single-project__logo-bg--nambafoodColored"
                 />
                  
-                <h4
+                <h3
                   class="single-project__sub-title"
                 >
                   
         Contactless Delivery Service
       
-                </h4>
+                </h3>
                  
                 <p
                   class="single-project__paragraph paragraph"
@@ -458,6 +463,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             class="single-project"
             href="https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f?source=friends_link&sk=0f492513f43ce5b4330c3cfa484378c5"
             style="background: rgb(86, 68, 142);"
+            target="_blank"
           >
             <div
               class="single-project__container single-project__container_white-letters-theme"
@@ -469,13 +475,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   class="single-project__logo-bg single-project__logo-bg--teacherlyColored"
                 />
                  
-                <h4
+                <h3
                   class="single-project__sub-title"
                 >
                   
         EdTech collaboration platform
       
-                </h4>
+                </h3>
                  
                 <p
                   class="single-project__paragraph paragraph"
@@ -543,6 +549,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             class="single-project"
             href="https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0"
             style="background: rgb(14, 27, 39);"
+            target="_blank"
           >
             <div
               class="single-project__container single-project__container_white-letters-theme"
@@ -554,13 +561,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   class="single-project__logo-bg single-project__logo-bg--guardrailsColored"
                 />
                  
-                <h4
+                <h3
                   class="single-project__sub-title"
                 >
                   
         Cloud cybersecurity service
       
-                </h4>
+                </h3>
                  
                 <p
                   class="single-project__paragraph paragraph"
@@ -628,6 +635,7 @@ exports[`CaseStudies component renders correctly 1`] = `
             class="single-project"
             href="https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5?source=friends_link&sk=3e3f75a7f35f0e4d9d447a19e015330a"
             style="background: rgb(255, 106, 1);"
+            target="_blank"
           >
             <div
               class="single-project__container"
@@ -639,13 +647,13 @@ exports[`CaseStudies component renders correctly 1`] = `
                   class="single-project__logo-bg single-project__logo-bg--godeeColored"
                 />
                  
-                <h4
+                <h3
                   class="single-project__sub-title"
                 >
                   
         Convenient shuttle bus service
       
-                </h4>
+                </h3>
                  
                 <p
                   class="single-project__paragraph paragraph"

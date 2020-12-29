@@ -4,11 +4,11 @@ exports[`CardRestaurantTalisman renders correctly 1`] = `
 <div
   class="card-content"
 >
-  <h5
+  <h3
     class="card-content_title case_title_h5"
   >
     Restaurant Talisman
-  </h5>
+  </h3>
    
   <p
     class="case_paragraph card-content_paragraph"

@@ -3,6 +3,7 @@
     :href="project.link"
     class="single-project"
     :style="{ background: project.projectColor }"
+    :target="project.targetBlank ? '_blank' : '_self'"
   >
     <div
       class="single-project__container"
@@ -12,9 +13,9 @@
     >
       <div class="single-project__content-wrap">
         <span :class="`single-project__logo-bg single-project__logo-bg--${project.logoImg}`"/>
-        <h4 class="single-project__sub-title">
+        <h3 class="single-project__sub-title">
           {{ project.projectTitle }}
-        </h4>
+        </h3>
         <p class="single-project__paragraph paragraph">
           {{ project.projectDescription }}
         </p>
@@ -148,7 +149,7 @@ export default {
   }
 
   &__sub-title {
-    font-family: 'Poppins-Regular', sans-serif;
+    font-family: 'Poppins-Bold', sans-serif;
     font-size: 40px;
     line-height: 120%;
     letter-spacing: -1px;

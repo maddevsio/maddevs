@@ -20,7 +20,7 @@ exports[`CardsBusinessModelsGrid renders correctly 1`] = `
         />
          
         <img
-          alt=""
+          alt="Namba Food Personal couriers."
           class="image"
           loading="lazy"
           src="[object Object]"
@@ -32,11 +32,11 @@ exports[`CardsBusinessModelsGrid renders correctly 1`] = `
     <div
       class="case_business-models-grid__text-wrapper"
     >
-      <h4
+      <h3
         class="m-8_bottom case_title_h4"
       >
         Personal courier
-      </h4>
+      </h3>
        
       <p
         class="case_paragraph"
@@ -54,12 +54,12 @@ exports[`CardsBusinessModelsGrid renders correctly 1`] = `
     <div
       class="case_card background-color-turquoise"
     >
-      <h4
+      <h3
         class="m-8_bottom case_title_h4"
         style="color: rgb(255, 255, 255);"
       >
         Outsource partners
-      </h4>
+      </h3>
        
       <p
         class="case_paragraph"
@@ -76,12 +76,12 @@ exports[`CardsBusinessModelsGrid renders correctly 1`] = `
     <div
       class="case_card background-color-berry"
     >
-      <h4
+      <h3
         class="m-8_bottom case_title_h4"
         style="color: rgb(255, 255, 255);"
       >
         Delivery of food and goods
-      </h4>
+      </h3>
        
       <p
         class="case_paragraph"

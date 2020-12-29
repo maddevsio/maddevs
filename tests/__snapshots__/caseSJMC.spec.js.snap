@@ -178,7 +178,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         />
          
         <img
-          alt=""
+          alt="The Mad Devs team in Sir John Monash Centre."
           class="image"
           loading="lazy"
           src="[object Object]"
@@ -250,7 +250,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="case_paragraph m-48_bottom"
       >
         
-        The SJMC Software Transferring a project to another software partner is never easy for all parties involved. So, let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.
+        Transferring a project to another software partner is never easy for all parties involved. So, let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.
       
       </p>
        
@@ -283,7 +283,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
           />
            
           <img
-            alt=""
+            alt="The SJMC Multimedia Management IT Brain."
             class="image"
             loading="lazy"
             src="[object Object]"
@@ -364,135 +364,6 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
     </section>
      
     <section
-      class="container_full case_full-screen-slider"
-    >
-      <div
-        class="slider-content"
-      >
-        <div
-          class="swiper-container thumb-example"
-        >
-          <!---->
-           
-          <div
-            class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
-            style="cursor: grab;"
-          >
-            <div
-              class="swiper-wrapper"
-              style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
-            >
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="[object Object] ,[object Object] 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt=""
-                    class="image"
-                    loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
-                  />
-                </picture>
-              </div>
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="[object Object] ,[object Object] 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt=""
-                    class="image"
-                    loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
-                  />
-                </picture>
-              </div>
-            </div>
-            <span
-              aria-atomic="true"
-              aria-live="assertive"
-              class="swiper-notification"
-            />
-          </div>
-        </div>
-         
-        <p
-          class="slider-description"
-        >
-          
-    Australia-based IT company to create integrated multimedia solutions.
-  
-        </p>
-         
-        <div
-          class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
-        >
-          <div
-            class="swiper-wrapper"
-            style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
-          >
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="[object Object] ,[object Object] 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt=""
-                  class="image"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
-                />
-              </picture>
-            </div>
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="[object Object] ,[object Object] 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt=""
-                  class="image"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
-                />
-              </picture>
-            </div>
-          </div>
-          <span
-            aria-atomic="true"
-            aria-live="assertive"
-            class="swiper-notification"
-          />
-        </div>
-      </div>
-    </section>
-     
-    <section
       class="container_regular"
     >
       <h2
@@ -524,7 +395,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
           />
            
           <img
-            alt=""
+            alt="The SJMC Mobile Applications."
             class="image"
             loading="lazy"
             src="[object Object]"
@@ -581,7 +452,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         />
          
         <img
-          alt=""
+          alt="Sir Jonh Monash Centre Map."
           class="image"
           loading="lazy"
           src="[object Object]"
@@ -627,7 +498,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         />
          
         <img
-          alt=""
+          alt="The SJMC Immersive Gallery."
           class="image"
           loading="lazy"
           src="[object Object]"
@@ -661,6 +532,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="container_middle"
       >
         <img
+          alt="WATCHOUT - Multi-Display Production and Presentation System."
           class="case_gif"
           src="../../assets/img/Cases/sjmc/gif/watchpax.gif"
         />
@@ -692,6 +564,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="container_middle"
       >
         <img
+          alt="Ultra-Compact Multimedia Computer - BRIX."
           class="case_gif"
           src="../../assets/img/Cases/sjmc/gif/brix.gif"
         />
@@ -1153,7 +1026,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1172,7 +1045,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1191,7 +1064,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1210,7 +1083,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1229,7 +1102,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1248,7 +1121,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1285,7 +1158,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1304,7 +1177,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1323,7 +1196,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1342,7 +1215,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1361,7 +1234,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1380,7 +1253,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1471,7 +1344,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         />
          
         <img
-          alt=""
+          alt="Kibana Reports for SJMC."
           class="image box-shadow"
           loading="lazy"
           src="[object Object]"
@@ -1595,7 +1468,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             />
              
             <img
-              alt=""
+              alt="Safari Top Bar."
               class="image"
               loading="lazy"
               src="[object Object]"
@@ -1622,7 +1495,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1641,7 +1514,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1678,7 +1551,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1697,7 +1570,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1729,7 +1602,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
-        Elasticsearch+Kibana+Logstash
+        Elasticsearch+Kibana+
+        <br
+          class="case_mobile-break"
+        />
+        Logstash
       </h3>
        
       <p
@@ -1943,7 +1820,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1962,7 +1839,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1981,7 +1858,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -2000,7 +1877,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -2019,7 +1896,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -2056,7 +1933,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -2075,7 +1952,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -2094,7 +1971,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -2113,7 +1990,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -2132,7 +2009,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -2250,7 +2127,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             />
              
             <img
-              alt="Ruslan Kasymov"
+              alt="Vlad Andreev"
               class="image"
               loading="lazy"
               src="[object Object]"
@@ -2264,13 +2141,13 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Ruslan Kasymov
+              Vlad Andreev
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Logistics Manager
+              DevOps Engineer
             </p>
           </div>
         </li>
@@ -2361,117 +2238,6 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             />
              
             <img
-              alt="Vlad Andreev"
-              class="image"
-              loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              Vlad Andreev
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              DevOps Developer
-            </p>
-          </div>
-        </li>
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image"
-              srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Dmitri Khalezin"
-              class="image"
-              loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              Dmitri Khalezin
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              DevOps Developer
-            </p>
-          </div>
-        </li>
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image"
-              srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Kirill Avdeev"
-              class="image"
-              loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              Kirill Avdeev
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              Back-end Developer
-            </p>
-          </div>
-        </li>
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image"
-              srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
-             
-            <img
               alt="Andrew Minkin"
               class="image"
               loading="lazy"
@@ -2509,7 +2275,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             />
              
             <img
-              alt="Aleksandr Astashov"
+              alt="Dmitri Khalezin"
               class="image"
               loading="lazy"
               src="[object Object]"
@@ -2523,7 +2289,44 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Aleksandr Astashov
+              Dmitri Khalezin
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              DevOps Engineer
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Kirill Avdeev"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Kirill Avdeev
             </p>
              
             <p
@@ -2583,6 +2386,80 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             />
              
             <img
+              alt="Aleksandr Astashov"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Aleksandr Astashov
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              Back-end Developer
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Ruslan Kasymov"
+              class="image"
+              loading="lazy"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              Ruslan Kasymov
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              Logistics Manager
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image"
+              srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
               alt="Pavel Pushkarev"
               class="image"
               loading="lazy"
@@ -2603,7 +2480,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__position"
             >
-              Mobile Developer
+              Mobile App Developer
             </p>
           </div>
         </li>
@@ -2640,7 +2517,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__position"
             >
-              Mobile Developer
+              Mobile App Developer
             </p>
           </div>
         </li>
@@ -2668,7 +2545,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="case_paragraph m-72_bottom media-m-48_bottom"
       >
         
-        We are honoured to extend our partnership to improve the SJMC visitors' experience by introducing the iPaOS application for children. This application will offer engaging content which allows children to discover the centre and its resources through a series of educational games. Moreover, Mad Devs is going to develop a sophisticated content management system that is eventually going to simplify the deployment of new content and will enable the managers of the SJMC themselves to make the required changes with ease.
+        We are honoured to extend our partnership to improve the SJMC visitors' experience by introducing the iPadOS application for children. This application will offer engaging content which allows children to discover the centre and its resources through a series of educational games. Moreover, Mad Devs is going to develop a sophisticated content management system that is eventually going to simplify the deployment of new content and will enable the managers of the SJMC themselves to make the required changes with ease.
       
       </p>
        

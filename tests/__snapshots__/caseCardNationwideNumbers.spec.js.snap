@@ -4,11 +4,11 @@ exports[`CardNationwideNumbers renders correctly 1`] = `
 <div
   class="card-content"
 >
-  <h5
+  <h3
     class="card-content_title case_title_h5"
   >
     250
-  </h5>
+  </h3>
    
   <p
     class="case_paragraph card-content_paragraph m-28_bottom media-m-32_bottom"
@@ -25,11 +25,11 @@ exports[`CardNationwideNumbers renders correctly 1`] = `
   
   </p>
    
-  <h5
+  <h3
     class="card-content_title case_title_h5"
   >
     2500
-  </h5>
+  </h3>
    
   <p
     class="case_paragraph card-content_paragraph m-28_bottom media-m-32_bottom"
@@ -40,11 +40,11 @@ exports[`CardNationwideNumbers renders correctly 1`] = `
   
   </p>
    
-  <h5
+  <h3
     class="card-content_title case_title_h5"
   >
     700 entrepreneurs
-  </h5>
+  </h3>
    
   <p
     class="case_paragraph card-content_paragraph"

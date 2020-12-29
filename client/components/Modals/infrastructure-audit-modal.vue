@@ -6,22 +6,22 @@
           <ValidationProvider class="modal-field-item field-item" rules="required|max:50" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Full Name</p>
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
-            <span class="modal-error-text error-text">{{ errors[0] }}</span>
+            <div class="modal-error-text error-text">{{ errors[0] }}</div>
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="email|required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Work email</p>
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
-            <span class="modal-error-text error-text">{{ errors[0] }}</span>
+            <div class="modal-error-text error-text">{{ errors[0] }}</div>
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="phone|max:50" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name">Phone number</p>
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
-            <span class="modal-error-text error-text">{{ errors[0] }}</span>
+            <div class="modal-error-text error-text">{{ errors[0] }}</div>
           </ValidationProvider>
           <ValidationProvider class="modal-field-item field-item" rules="max:300|required" v-slot="{ classes, errors }">
             <p class="modal-field-name field-name required">Company</p>
             <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="MyAwesomeCompany, Inc." v-model="company">
-            <span class="modal-error-text error-text">{{ errors[0] }}</span>
+            <div class="modal-error-text error-text">{{ errors[0] }}</div>
           </ValidationProvider>
           <RadioList 
             @getSelectedProjectHost="getSelectedProjectHost"

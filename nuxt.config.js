@@ -7,6 +7,9 @@ module.exports = {
   ** Headers of the page
   */
   head: {
+    htmlAttrs: {
+      lang: 'en'
+    },
     title: 'Mad Devs: Software & Mobile App Development Company',
     meta: [
       { charset: 'utf-8' },
@@ -114,7 +117,6 @@ module.exports = {
     '@/modules/static',
     '@/modules/crawler',
     '@nuxtjs/prismic'
-    // 'nuxt-lazy-load'
   ],
   gtm: {
     id: 'GTM-NNKVRF3',

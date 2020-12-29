@@ -1,11 +1,11 @@
 <template>
   <div class="case_card-content">
     <div class="case_card-content_left-column">
-      <h4 class="case_title_h4 m-8_bottom" :style="{color: '#f5f7f9'}">Mini white label</h4>
+      <h3 class="case_title_h4 m-8_bottom" :style="{color: '#f5f7f9'}">Mini white label</h3>
       <TextParagraph class="case_card-content_paragraph" color="#f5f7f9">
         After business owners submit images and prices, the Namba Food team creates a customised and branded e-commerce website. Updates, support and maintenance are also done by Namba Food.
       </TextParagraph>
-      <h4 class="case_title_h4 m-8_bottom" :style="{color: '#f5f7f9'}">Full white label</h4>
+      <h3 class="case_title_h4 m-8_bottom" :style="{color: '#f5f7f9'}">Full white label</h3>
       <TextParagraph color="#f5f7f9">
         Business partners can use Namba Food’s software and business model, adjusting for their needs, scale and region. Namba Food is responsible for its maintenance and helps with management and marketing.
       </TextParagraph>
@@ -43,13 +43,27 @@ export default {
   mounted() {
     const img = this.$refs.img;
     const source = this.$refs.source;
-    const pictures = ['ninja-sushi-slide', 'sushi-room-slide', 'coffee-house-slide'];
+    const pictures = [
+      {
+        img: 'ninja-sushi-slide',
+        alt: 'Namba Food Admin Panel.'
+      },
+      {
+        img: 'sushi-room-slide',
+        alt: 'Namba Food Admin Panel.'
+      },
+      {
+        img: 'coffee-house-slide',
+        alt: 'Namba Food Admin Panel.'
+      }
+    ];
     let i = 0;
 
     function toggle() {
-      img.src = require(`@/assets/img/Cases/nambafood/jpg/${pictures[i]}.jpg`);
-      img.srcset = require(`@/assets/img/Cases/nambafood/jpg/${pictures[i]}@2x.jpg`) + ' 2x';
-      source.srcset = require(`@/assets/img/Cases/nambafood/webp/${pictures[i]}.webp`) + ' ', require(`@/assets/img/Cases/nambafood/webp/${pictures[i]}@2x.webp`) + ' 2x';
+      img.src = require(`@/assets/img/Cases/nambafood/jpg/${pictures[i].img}.jpg`);
+      img.srcset = require(`@/assets/img/Cases/nambafood/jpg/${pictures[i].img}@2x.jpg`) + ' 2x';
+      img.alt = pictures[i].alt;
+      source.srcset = require(`@/assets/img/Cases/nambafood/webp/${pictures[i].img}.webp`) + ' ', require(`@/assets/img/Cases/nambafood/webp/${pictures[i].img}@2x.webp`) + ' 2x';
       i = (i + 1) % pictures.length; // update the counter
     }
     setInterval(toggle, 1500);

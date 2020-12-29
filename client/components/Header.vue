@@ -19,7 +19,7 @@
           <div class="header__right-content col-xl-6 col-lg-5">
             <div class="header__phone-wrapper">
               <span class="header__phone-flag" />
-              <a class="header__header-phone" href="tel:+44 20 3984 8555">+44 20 3984 8555</a>
+              <a class="header__header-phone" href="tel:+442039848555">+44 20 3984 8555</a>
             </div>
             <UIButtonModalTrigger
               :buttonInnerText="buttonInnerText"

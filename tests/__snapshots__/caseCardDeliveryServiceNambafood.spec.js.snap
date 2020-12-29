@@ -4,11 +4,11 @@ exports[`CardDeliveryServiceNambafood renders correctly 1`] = `
 <div
   class="card-content"
 >
-  <h5
+  <h3
     class="card-content_title case_title_h5"
   >
     Delivery service Nambafood
-  </h5>
+  </h3>
    
   <p
     class="case_paragraph card-content_paragraph m-24_bottom"

@@ -33,11 +33,11 @@
                 <div class="mobile-header__contact-title-flag"></div>
                 <p class="mobile-header__contact-title">Call us:</p>
               </div>
-              <a href="tel:+44 20 3984 8555" class="mobile-header__contact-link mobile-header__contact-phone-number">+44 20 3984 8555</a>
+              <a href="tel:+442039848555" class="mobile-header__contact-link mobile-header__contact-phone-number">+44 20 3984 8555</a>
             </div>
             <ul class="mobile-header__messengers-list">
               <li v-for="(messenger, i) in messengers" :key="i">
-                <a :href="messenger.link" target="__blank" class="mobile-header__messenger-item-wrapper">
+                <a :href="messenger.link" target="_blank" class="mobile-header__messenger-item-wrapper">
                   <span class="mobile-header__messenger-item" :class="`mobile-header__${messenger.className}`" />
                   <p class="mobile-header__messenger-name">{{ messenger.name }}</p>
                 </a>
@@ -193,7 +193,7 @@ export default {
       width: 100%;
       height: 60px;
       margin-top: 5px;
-      margin-bottom: 55px;
+      margin-bottom: 11px;
       font-family: 'Poppins-Regular', sans-serif;
       font-size: 16px;
     }
@@ -381,7 +381,12 @@ export default {
     }
 
     &__small-phone-content {
-      display: none;
+      margin-bottom: 25px;
+
+      /deep/ .footer-contacts__head-content,
+      /deep/ .footer-contacts__messengers-list {
+        display: none;
+      }
     }
 
     &--is-open {
@@ -436,8 +441,17 @@ export default {
       }
 
       &__small-phone-content {
-        display: block;
-        margin-bottom: 25px;
+        /deep/ .footer-contacts__head-content {
+          display: block;
+        }
+
+        /deep/ .footer-contacts__messengers-list {
+          display: grid;
+        }
+      }
+
+      &__modal-trigger-btn {
+        margin-bottom: 55px;
       }
 
       /deep/ .footer-contacts__head-content {
@@ -492,6 +506,14 @@ export default {
 
       &__nav-blog-link {
         padding-bottom: 25px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .mobile-header {
+      /deep/ .footer-contacts__social-network-list-desktop {
+        display: block;
       }
     }
   }

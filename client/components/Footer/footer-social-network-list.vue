@@ -1,7 +1,7 @@
 <template>
   <ul class="footerSocialNetworkList">
     <li v-for="(socialNetwork, i) in socialNetworkList" :key="i" class="footerSocialNetworkList__social-network-link-wrapper">
-      <a :href="socialNetwork.link" class="footerSocialNetworkList__social-network-link" :class="`footerSocialNetworkList__${socialNetwork.className}`" target="__blank"></a>
+      <a :href="socialNetwork.link" class="footerSocialNetworkList__social-network-link" :class="`footerSocialNetworkList__${socialNetwork.className}`" target="_blank"></a>
     </li>
   </ul>
 </template>

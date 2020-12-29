@@ -26,9 +26,9 @@
   }
 
   &_sjmc-phone-video-wrapper {
-    width: 35%;
-    max-width: 505px;
-    min-width: 305px;
+    width: 23%;
+    max-width: 340px;
+    min-width: 225px;
     position: relative;
     cursor: pointer;
 
@@ -50,12 +50,12 @@
     &--on-pause {
       &::after {
         content: '';
-        width: 10.41vw;
-        height: 10.41vw;
-        max-width: 150px;
-        max-height: 150px;
-        min-width: 86px;
-        min-height: 86px;
+        width: 8vw;
+        height: 8vw;
+        max-width: 110px;
+        max-height: 110px;
+        min-width: 80px;
+        min-height: 80px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -69,9 +69,19 @@
     }
   }
 
+  &_mobile-break {
+    display: none;
+  }
+
   @media screen and (max-width: 768px) {
     &_sjmc-phone-video-section {
       padding: 50px 0;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    &_mobile-break {
+      display: block;
     }
   }
 }
