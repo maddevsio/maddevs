@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import SwiperBlog from '../SwiperBlog';
+import SwiperBlog from '@/components/Blog/SwiperBlog';
 
 export default {
   name: 'GallerySlice',

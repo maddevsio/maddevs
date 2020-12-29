@@ -12,7 +12,7 @@
     </p>
     <swiper class="swiper gallery-thumbs" :options="swiperOptionThumbs" ref="swiperThumbs">
       <swiper-slide v-for="element in components" :key="element.fileName">
-        <prismic-image :field="element.gallery_image"/>
+        <prismic-image :field="element.gallery_image.Mobile" v-if="element.gallery_image.Mobile"/>
       </swiper-slide>
     </swiper>
   </div>
@@ -96,6 +96,11 @@ export default {
   }
 
   .swiper {
+    /deep/ img {
+      max-width: 100%;
+      height: auto;
+    }
+
     &.gallery-thumbs {
       box-sizing: border-box;
       padding: 8px 0;
