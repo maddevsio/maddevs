@@ -7,6 +7,9 @@ module.exports = {
   ** Headers of the page
   */
   head: {
+    htmlAttrs: {
+      lang: 'en'
+    },
     title: 'Mad Devs: Software & Mobile App Development Company',
     meta: [
       { charset: 'utf-8' },
