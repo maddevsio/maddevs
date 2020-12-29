@@ -9,6 +9,7 @@
 
 <script>
 import VueEmbedGist from 'vue-embed-gist';
+import 'vue-embed-gist/dist/vue-embed-gist.css';
 
 export default {
   name: 'GithubGistSlice',
@@ -31,7 +32,3 @@ export default {
   }
 };
 </script>
-
-<style>
-  @import "https://github.githubassets.com/assets/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css";
-</style>
