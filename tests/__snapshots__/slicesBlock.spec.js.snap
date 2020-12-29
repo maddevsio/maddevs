@@ -518,9 +518,9 @@ exports[`Slice block component Renders correctly 1`] = `
         <div
           class="wrapper"
         >
-          <h1>
+          <p>
             caption
-          </h1>
+          </p>
         </div>
       </div>
     </div>
@@ -551,6 +551,12 @@ exports[`Slice block component Renders correctly 1`] = `
     <ol
       class="case-list_numbered"
     >
+      <div>
+        <p>
+          list introduction
+        </p>
+      </div>
+       
       <li
         class="case_list-numbered_item"
       >

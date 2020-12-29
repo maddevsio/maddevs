@@ -9,9 +9,7 @@ exports[`Image attribute slice component renders correctly 1`] = `
     <div
       class="wrapper"
     >
-      <h1>
-        caption
-      </h1>
+      caption
     </div>
   </div>
 </div>

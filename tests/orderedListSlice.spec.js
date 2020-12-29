@@ -13,14 +13,18 @@ describe('OrderedListSlice component', () => {
       {list_item: 'list item 3'},
       {list_item: 'list item 4'},
       {list_item: 'list item 5'}
-    ]
+    ],
+    primary: {
+      list_introduction: 'list introduction'
+    }
   };
 
   beforeEach(() => {
     wrapper = mount(OrderedList, {
       mocks: {
         $prismic: {
-          asText: text => text
+          asText: text => text,
+          asHtml: text => text
         }
       },
       propsData: {slice}

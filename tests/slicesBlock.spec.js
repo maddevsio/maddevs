@@ -91,6 +91,9 @@ describe('Slice block component', () => {
         {list_item: 'list item 4'},
         {list_item: 'list item 5'}
       ],
+      primary: {
+        list_introduction: 'list introduction'
+      },
       slice_type: 'ordered_list'
     }
   ];

@@ -515,7 +515,7 @@ export default {
           margin-left: 0;
         }
       }
-      
+
       &__introduction-paragraph,
       &__text-container {
         padding: 0 24px;
