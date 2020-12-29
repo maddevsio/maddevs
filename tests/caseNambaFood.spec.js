@@ -15,73 +15,85 @@ describe('Namba food', () => {
         name: 'Vlad Andreev',
         position: 'Team Lead',
         fileName: 'vlad-andreev',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Vlad Andreev'
       },
       {
         name: 'Gulbustan Baudunova',
         position: 'Back-end Developer',
         fileName: 'gulbustan-baudunova',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Gulbustan Baudunova'
       },
       {
         name: 'Tamara Mun',
         position: 'Delivery Manager',
         fileName: 'tamara-mun',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Tamara Mun'
       },
       {
         name: 'Aidai Atakulova',
         position: 'Project Manager',
         fileName: 'aidai-atakulova',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Aidai Atakulova'
       },
       {
         name: 'Baurzhan Omuraliev',
         position: 'Back-end Developer',
         fileName: 'baurzhan-omuraliev',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Baurzhan Omuraliev'
       },
       {
         name: 'Nakylai Taiirova',
         position: 'Back-end Developer',
         fileName: 'nakylai-taiirova',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Nakylai Taiirova'
       },
       {
         name: 'Akylbek Djumaliev',
         position: 'Back-end Developer',
         fileName: 'akylbek-djumaliev',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Akylbek Djumaliev'
       },
       {
         name: 'Stanislav Shcherbinin',
         position: 'Back-end Developer',
         fileName: 'stanislav-shcherbinin',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Stanislav Shcherbinin'
       },
       {
         name: 'Eldar Akkozov',
         position: 'Mobile Developer',
         fileName: 'eldar-akkozov',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Eldar Akkozov'
       },
       {
         name: 'Altynai Toktomuratova',
         position: 'Mobile Developer',
         fileName: 'altynai-toktomuratova',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Altynai Toktomuratova'
       },
       {
         name: 'Dmitrii Khalezin',
         position: 'DevOps Engineer',
         fileName: 'dmitrii-khalezin',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Dmitrii Khalezin'
       },
       {
         name: 'Belek Abylov',
         position: 'Back-end Developer',
         fileName: 'belek-abylov',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Belek Abylov'
       }
     ],
     technologiesList: [
@@ -168,7 +180,7 @@ describe('Namba food', () => {
         },
         fileName: 'apple-iphone-xr-silver',
         fileExtension: 'png',
-        alt: ''
+        alt: 'Namba Food Mobile Application Main Page on Iphone for Users.'
       },
       {
         title: 'Application for <br> deliverymen',
@@ -179,7 +191,7 @@ describe('Namba food', () => {
         },
         fileName: 'samsung-galaxy-s20-cosmic-gray',
         fileExtension: 'png',
-        alt: ''
+        alt: 'Namba Food Mobile Application Main Page on Android for Deliverymen.'
       },
       {
         title: 'Unified control system for operators',
@@ -190,7 +202,7 @@ describe('Namba food', () => {
         },
         fileName: 'system-for-call-center',
         fileExtension: 'png',
-        alt: ''
+        alt: 'Namba Food Unified Control System for Operators on Desktop.'
       },
       {
         title: 'Control panel for <br> managers',
@@ -201,19 +213,21 @@ describe('Namba food', () => {
         },
         fileName: 'sjms-analytics-mini',
         fileExtension: 'png',
-        alt: ''
+        alt: 'Namba Food Control Panel for Managers on Desktop.'
       }
     ],
     swiperAdminPanel: [
       {
         fileName: 'admin',
         pictureFolder: 'nambafood',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'Namba Food Delivery Control Admin Panel.'
       },
       {
         fileName: 'dashboard',
         pictureFolder: 'nambafood',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'Namba Food Delivery Control Dashboard.'
       }
     ],
     videoIdList: ['map-video', 'iphone-silver-video'],

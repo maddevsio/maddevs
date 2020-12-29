@@ -178,7 +178,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         />
          
         <img
-          alt=""
+          alt="The Mad Devs team in Sir John Monash Centre."
           class="image"
           loading="lazy"
           src="[object Object]"
@@ -283,7 +283,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
           />
            
           <img
-            alt=""
+            alt="The SJMC Multimedia Management IT Brain."
             class="image"
             loading="lazy"
             src="[object Object]"
@@ -395,7 +395,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
           />
            
           <img
-            alt=""
+            alt="The SJMC Mobile Applications."
             class="image"
             loading="lazy"
             src="[object Object]"
@@ -452,7 +452,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         />
          
         <img
-          alt=""
+          alt="Sir Jonh Monash Centre Map."
           class="image"
           loading="lazy"
           src="[object Object]"
@@ -498,7 +498,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         />
          
         <img
-          alt=""
+          alt="The SJMC Immersive Gallery."
           class="image"
           loading="lazy"
           src="[object Object]"
@@ -532,6 +532,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="container_middle"
       >
         <img
+          alt="WATCHOUT - Multi-Display Production and Presentation System."
           class="case_gif"
           src="../../assets/img/Cases/sjmc/gif/watchpax.gif"
         />
@@ -563,6 +564,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="container_middle"
       >
         <img
+          alt="Ultra-Compact Multimedia Computer - BRIX."
           class="case_gif"
           src="../../assets/img/Cases/sjmc/gif/brix.gif"
         />
@@ -1024,7 +1026,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1043,7 +1045,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1062,7 +1064,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1081,7 +1083,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1100,7 +1102,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1119,7 +1121,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1156,7 +1158,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1175,7 +1177,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1194,7 +1196,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1213,7 +1215,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1232,7 +1234,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1251,7 +1253,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1342,7 +1344,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         />
          
         <img
-          alt=""
+          alt="Kibana Reports for SJMC."
           class="image box-shadow"
           loading="lazy"
           src="[object Object]"
@@ -1466,7 +1468,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             />
              
             <img
-              alt=""
+              alt="Safari Top Bar."
               class="image"
               loading="lazy"
               src="[object Object]"
@@ -1493,7 +1495,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1512,7 +1514,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1549,7 +1551,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1568,7 +1570,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1818,7 +1820,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1837,7 +1839,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1856,7 +1858,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1875,7 +1877,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1894,7 +1896,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1931,7 +1933,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1950,7 +1952,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1969,7 +1971,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1988,7 +1990,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -2007,7 +2009,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
