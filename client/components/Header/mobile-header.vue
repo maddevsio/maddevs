@@ -193,7 +193,7 @@ export default {
       width: 100%;
       height: 60px;
       margin-top: 5px;
-      margin-bottom: 55px;
+      margin-bottom: 11px;
       font-family: 'Poppins-Regular', sans-serif;
       font-size: 16px;
     }
@@ -381,7 +381,12 @@ export default {
     }
 
     &__small-phone-content {
-      display: none;
+      margin-bottom: 25px;
+
+      /deep/ .footer-contacts__head-content,
+      /deep/ .footer-contacts__messengers-list {
+        display: none;
+      }
     }
 
     &--is-open {
@@ -436,8 +441,17 @@ export default {
       }
 
       &__small-phone-content {
-        display: block;
-        margin-bottom: 25px;
+        /deep/ .footer-contacts__head-content {
+          display: block;
+        }
+
+        /deep/ .footer-contacts__messengers-list {
+          display: grid;
+        }
+      }
+
+      &__modal-trigger-btn {
+        margin-bottom: 55px;
       }
 
       /deep/ .footer-contacts__head-content {
@@ -492,6 +506,14 @@ export default {
 
       &__nav-blog-link {
         padding-bottom: 25px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .mobile-header {
+      /deep/ .footer-contacts__social-network-list-desktop {
+        display: block;
       }
     }
   }
