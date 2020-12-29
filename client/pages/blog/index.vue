@@ -426,8 +426,14 @@ export default {
     }
   }
 
-  /deep/ .blog-post__author-name {
-    color: $text-color--black;
+  .single-post {
+    &__wrapper {
+      /deep/ .blog-post {
+        &__author-name {
+          color: $text-color--black;
+        }
+      }
+    }
   }
 
   @media only screen and (max-width: 991px) {
