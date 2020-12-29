@@ -36,8 +36,8 @@
           </div>
         </div>
         <img :src="document.introduction_image.url" class="blog-post__introduction-image" v-if="document.introduction_image.url !== undefined">
-        <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
       </div>
+      <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
       <slices-block :slices="slices" class="blog-post__text-container"/>
     </div>
     <div v-if="recommendedPosts.length !== 0" class="blog-post__recommended-posts">
@@ -515,7 +515,8 @@ export default {
           margin-left: 0;
         }
       }
-
+      
+      &__introduction-paragraph,
       &__text-container {
         padding: 0 24px;
       }
