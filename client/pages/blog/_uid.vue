@@ -1,5 +1,5 @@
 <template>
-  <div class="blog-post">
+  <div class="blog-post" :class="recommendedPosts.length ? 'with-recommended' : ''">
     <div class="blog-post__background" />
     <div class="blog-post__inner-container">
       <div class="blog-post__share">
@@ -220,15 +220,6 @@ export default {
     @include title($text-color--black-cases, 21.25px, -0.02em);
   }
 
-  /deep/ h2,
-  /deep/ h3,
-  /deep/ h4,
-  /deep/ h5,
-  /deep/ h6 {
-    margin-top: 72px;
-    margin-bottom: 48px;
-  }
-
   /deep/ ul {
     list-style: disc;
     padding-left: 30px;
@@ -240,6 +231,10 @@ export default {
     position: relative;
     padding-bottom: 96px;
 
+    &.with-recommended {
+      padding-bottom: 0;
+    }
+
     &__background {
       background-color: $bgcolor--black;
       height: 683px;
@@ -249,6 +244,15 @@ export default {
       max-width: 818px;
       margin: -514px auto 0;
       position: relative;
+
+      /deep/ h2,
+      /deep/ h3,
+      /deep/ h4,
+      /deep/ h5,
+      /deep/ h6 {
+        margin-top: 72px;
+        margin-bottom: 48px;
+      }
     }
 
     &__blog-sub-title {

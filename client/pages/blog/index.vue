@@ -72,7 +72,7 @@ export default {
       featuredPost: null,
       currentTag: null,
       page: 1,
-      pageSize: 6,
+      pageSize: 12,
       metaTitle: 'Blog',
       description: '',
       ogUrl: 'https://maddevs.io/blog'
@@ -291,6 +291,7 @@ export default {
 
       &__single-post {
         width: 33.3333%;
+        margin-bottom: 48px;
 
         .single-post__wrapper {
           padding: 0 10px;
