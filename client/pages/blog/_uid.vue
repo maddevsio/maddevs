@@ -493,6 +493,10 @@ export default {
         line-height: 45px;
       }
 
+      &__blog-sub-title {
+        padding: 0 24px;
+      }
+
       &__post-info {
         padding: 0 24px;
         display: block;
