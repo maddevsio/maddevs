@@ -48,7 +48,8 @@ export default (type, element, content, children) => {
     const processedChildren = children.map(child => child.replace(
       /`([^`]*)`/g,
       (match, p) => `<span class="inline-code">${p}</span>`
-    ));
+    )
+      .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`));
     return `<p>${processedChildren.join('')}</p>`;
   }
 
