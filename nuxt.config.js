@@ -68,12 +68,10 @@ module.exports = {
         if (response.data.next_page) {
           posts = posts.concat(await getPosts(response.data.next_page));
         }
-
         return posts;
       };
 
-      const routes = ['/', '/services', '/projects', '/careers', '/gdpr', '/nda', '/privacy', '/faq', '/case-studies/namba-food', '/blog'];
-
+      const routes = ['/', '/services', '/projects', '/careers', '/gdpr', '/nda', '/privacy', '/faq', '/case-studies/namba-food', '/case-studies/sir-john-monash-centre', '/blog'];
       const prismicData = await axios.get(process.env.NODE_PRISMIC_API);
       const ref = prismicData.data.refs[0].ref;
       const blogPosts = await getPosts(`${process.env.NODE_PRISMIC_API}/documents/search?ref=${ref}#format=json`);
