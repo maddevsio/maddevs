@@ -13,9 +13,7 @@
           <prismic-image :field="img"/>
         </p>
         <template v-if="$prismic.asText(caption) != ''">
-          <p>
-            <span class="image-label">{{ $prismic.asText(caption) }}</span>
-          </p>
+          <p class="image-label">{{ $prismic.asText(caption) }}</p>
         </template>
       </div>
     </template>
@@ -47,6 +45,7 @@ export default {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 
 .block-img {
@@ -62,5 +61,6 @@ img {
   letter-spacing: -0.02em;
   font-family: 'Poppins-Regular', sans-serif;
   color: $text-color--grey;
+  margin-bottom: 12px;
 }
 </style>

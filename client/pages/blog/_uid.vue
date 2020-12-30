@@ -199,28 +199,28 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
-  @import '../../assets/styles/cases/mixins';
+  @import '../../assets/styles/blog/mixins';
   @import '../../assets/styles/socialNetworkIcons';
 
-  /deep/ h1 {
-    margin: 72px 0 48px;
-    @include title($text-color--black-cases, 52px, -0.04em);
-  }
-
   /deep/ h2 {
-    @include title($text-color--black-cases, 41.5px, -0.04em);
+    margin: 72px 0 12px;
+    @include title($text-color--black-cases, 32px, -0.04em);
   }
 
   /deep/ h3 {
-    @include title($text-color--black-cases, 33.2px, -0.04em);
+    @include title($text-color--black-cases, 26px, -0.04em);
   }
 
   /deep/ h4 {
-    @include title($text-color--black-cases, 26.56px, -0.03em);
+    @include title($text-color--black-cases, 21px, -0.04em);
   }
 
   /deep/ h5 {
-    @include title($text-color--black-cases, 21.25px, -0.02em);
+    @include title($text-color--black-cases, 17px, -0.04em);
+  }
+
+  /deep/ h6 {
+    @include title($text-color--black-cases, 14px, -0.04em);
   }
 
   /deep/ ul {
@@ -244,17 +244,16 @@ export default {
     }
 
     &__inner-container {
-      max-width: 818px;
+      max-width: 680px;
       margin: -514px auto 0;
       position: relative;
 
-      /deep/ h2,
       /deep/ h3,
       /deep/ h4,
       /deep/ h5,
       /deep/ h6 {
-        margin-top: 72px;
-        margin-bottom: 48px;
+        margin-top: 48px;
+        margin-bottom: 12px;
       }
     }
 
@@ -308,7 +307,7 @@ export default {
     &__share {
       display: flex;
       position: fixed;
-      left: calc(50vw - 599px);
+      left: calc(50vw - 531px);
       top: 750px;
       flex-direction: column;
       margin-top: 0;
