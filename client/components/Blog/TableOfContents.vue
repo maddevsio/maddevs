@@ -2,7 +2,7 @@
   <div class="table-of-contents">
     <div class="table-of-contents__title">Table of contents</div>
     <ol class="table-of-contents__list">
-      <li class="table-of-contents__list-item" v-for="link in content" :key="link.spans[0].data.url">
+      <li class="table-of-contents__list-item" v-for="link in content" :key="link.spans[0].data.url" v-if="link.type === 'list-item'">
         <a :href="link.spans[0].data.url" @click.prevent="scrollToSection">
           {{link.text}}
         </a>
