@@ -38,7 +38,7 @@ export default {
   methods: {
     // Function to get the first paragraph of text in a blog post and limit the displayed text at 300 characters
     getFirstParagraph (post) {
-      const textLimit = 140;
+      const textLimit = 150;
       const slices = post.data.body;
       let firstParagraph = '';
       let haveFirstParagraph = false;

@@ -1,5 +1,5 @@
 <template>
-  <div class="blog-post">
+  <div class="blog-post" :class="recommendedPosts.length ? 'with-recommended' : ''">
     <div class="blog-post__background" />
     <div class="blog-post__inner-container">
       <div class="blog-post__share">
@@ -36,8 +36,8 @@
           </div>
         </div>
         <img :src="document.introduction_image.url" class="blog-post__introduction-image" v-if="document.introduction_image.url !== undefined">
-        <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
       </div>
+      <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
       <slices-block :slices="slices" class="blog-post__text-container"/>
     </div>
     <div v-if="recommendedPosts.length !== 0" class="blog-post__recommended-posts">
@@ -100,18 +100,17 @@ export default {
     };
   },
   async asyncData({ $prismic, params, error }) {
-    console.log(params.uid, error);
     let recommendedPosts = [];
     try {
       // Query to get post content
       const post = await $prismic.api.getByUID('post', params.uid);
       // Query to get recomended posts
       if (post.tags.length) {
-        recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', post.tags));
+        recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', post.tags), {pageSize: 4});
         recommendedPosts = recommendedPosts.results.filter(recommendedPost => recommendedPost.uid !== post.uid);
 
         if (recommendedPosts.length > 3) {
-          recommendedPosts = recommendedPosts.slices(1, 4);
+          recommendedPosts = recommendedPosts.slice(0, 3);
         }
       }
 
@@ -197,13 +196,44 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
+  @import '../../assets/styles/cases/mixins';
   @import '../../assets/styles/socialNetworkIcons';
+
+  /deep/ h1 {
+    margin: 72px 0 48px;
+    @include title($text-color--black-cases, 52px, -0.04em);
+  }
+
+  /deep/ h2 {
+    @include title($text-color--black-cases, 41.5px, -0.04em);
+  }
+
+  /deep/ h3 {
+    @include title($text-color--black-cases, 33.2px, -0.04em);
+  }
+
+  /deep/ h4 {
+    @include title($text-color--black-cases, 26.56px, -0.03em);
+  }
+
+  /deep/ h5 {
+    @include title($text-color--black-cases, 21.25px, -0.02em);
+  }
+
+  /deep/ ul {
+    list-style: disc;
+    padding-left: 30px;
+  }
 
   .blog-post {
     margin: auto;
     background-color: $text-color--white-primary;
     position: relative;
     padding-bottom: 96px;
+
+    &.with-recommended {
+      padding-bottom: 0;
+    }
 
     &__background {
       background-color: $bgcolor--black;
@@ -214,6 +244,15 @@ export default {
       max-width: 818px;
       margin: -514px auto 0;
       position: relative;
+
+      /deep/ h2,
+      /deep/ h3,
+      /deep/ h4,
+      /deep/ h5,
+      /deep/ h6 {
+        margin-top: 72px;
+        margin-bottom: 48px;
+      }
     }
 
     &__blog-sub-title {
@@ -373,16 +412,6 @@ export default {
     }
 
     /deep/ .textslice {
-      .inline-code {
-        font-family: 'IBM Plex Mono', monospace;
-        background: $bgcolor--grey-light;
-        padding: 0 4px;
-        border-radius: 3px;
-        display: inline-block;
-        font-size: 15px;
-        line-height: 129%;
-      }
-
       span,
       p {
         color: $text-color--black-cases;
@@ -464,6 +493,10 @@ export default {
         line-height: 45px;
       }
 
+      &__blog-sub-title {
+        padding: 0 24px;
+      }
+
       &__post-info {
         padding: 0 24px;
         display: block;
@@ -483,6 +516,7 @@ export default {
         }
       }
 
+      &__introduction-paragraph,
       &__text-container {
         padding: 0 24px;
       }

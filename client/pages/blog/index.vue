@@ -72,7 +72,7 @@ export default {
       featuredPost: null,
       currentTag: null,
       page: 1,
-      pageSize: 6,
+      pageSize: 12,
       metaTitle: 'Blog',
       description: '',
       ogUrl: 'https://maddevs.io/blog'
@@ -115,7 +115,7 @@ export default {
     async getAllPosts() {
       const posts = await this.$prismic.api.query(
         this.$prismic.predicates.at('document.type', 'post'),
-        {orderings : '[my.post.date desc]'}
+        {orderings : '[my.post.date desc]', pageSize: 100}
       );
 
       this.posts = posts.results;
@@ -291,6 +291,7 @@ export default {
 
       &__single-post {
         width: 33.3333%;
+        margin-bottom: 48px;
 
         .single-post__wrapper {
           padding: 0 10px;
@@ -425,8 +426,14 @@ export default {
     }
   }
 
-  /deep/ .blog-post__author-name {
-    color: $text-color--black;
+  .single-post {
+    &__wrapper {
+      /deep/ .blog-post {
+        &__author-name {
+          color: $text-color--black;
+        }
+      }
+    }
   }
 
   @media only screen and (max-width: 991px) {

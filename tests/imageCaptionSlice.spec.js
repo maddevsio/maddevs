@@ -26,7 +26,8 @@ describe('Image attribute slice component', () => {
       propsData: {slice},
       mocks: {
         $prismic: {
-          asText: text => text
+          asText: text => text,
+          asHtml: html => html
         }
       },
       stubs: ['prismic-image']
@@ -41,8 +42,8 @@ describe('Image attribute slice component', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
 
-  test('h1 rendered', () => {
-    expect(wrapper.find('h1').text()).toBe(slice.primary.caption);
+  test('caption rendered', () => {
+    expect(wrapper.find('.wrapper').text()).toBe(slice.primary.caption);
   });
 
   test('header contains image', () => {

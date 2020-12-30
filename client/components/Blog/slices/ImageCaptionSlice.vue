@@ -3,9 +3,7 @@
     <template v-if="size === 'image-full-width'">
       <div class='blog-header single' :style="{ 'background-image': 'url(' + img.url + ')'}">
         <template v-if="$prismic.asText(caption) != ''">
-          <div class="wrapper">
-            <h1>{{ $prismic.asText(caption) }}</h1>
-          </div>
+          <div class="wrapper" v-html="$prismic.asHtml(caption)"/>
         </template>
       </div>
     </template>
