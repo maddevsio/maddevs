@@ -63,6 +63,10 @@ export default {
         a {
           text-decoration: none;
 
+          &:hover {
+            text-decoration: underline;
+          }
+
           &:visited {
             color: inherit;
           }
