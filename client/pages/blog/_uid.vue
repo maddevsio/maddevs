@@ -38,6 +38,7 @@
         <img :src="document.introduction_image.url" class="blog-post__introduction-image" v-if="document.introduction_image.url !== undefined">
       </div>
       <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
+      <table-of-contents :content="document.table_of_contents"/>
       <slices-block :slices="slices" class="blog-post__text-container"/>
     </div>
     <div v-if="recommendedPosts.length !== 0" class="blog-post__recommended-posts">
@@ -57,6 +58,7 @@
 import SlicesBlock from '@/components/Blog/SlicesBlock.vue';
 import RecommendedBlogWidget from '@//components/Blog/RecommendedBlogWidget';
 import PostAuthor from '@/components/Blog/PostAuthor';
+import TableOfContents from '@/components/Blog/TableOfContents';
 
 export default {
   name: 'post',
@@ -64,7 +66,8 @@ export default {
   components: {
     SlicesBlock,
     RecommendedBlogWidget,
-    PostAuthor
+    PostAuthor,
+    TableOfContents
   },
   data() {
     return {
