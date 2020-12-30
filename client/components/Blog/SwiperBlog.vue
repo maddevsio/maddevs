@@ -64,18 +64,6 @@ export default {
     boxShadow: {
       type: Boolean,
       default: false
-    },
-    sliderDescription: {
-      type: String,
-      default: ''
-    },
-    safariTopBar: {
-      type: Boolean,
-      default: false
-    },
-    safariTopBarImage: {
-      type: String,
-      default: ''
     }
   }
 };
