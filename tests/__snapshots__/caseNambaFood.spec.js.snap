@@ -2508,5 +2508,38 @@ exports[`Namba food renders correctly 1`] = `
       </blockquote>
     </section>
   </section>
+   
+  <section
+    class="case_footer container_full"
+  >
+    <div
+      class="case_logotype"
+    />
+     
+    <h2
+      class="case_title case_title_h2 case_title-namba-food-case"
+    >
+      
+    The maintenance 
+      <br
+        class="case_mobile-break"
+      />
+       of memory: 
+      <br />
+       Sir John Monash 
+      <br
+        class="case_mobile-break"
+      />
+       Centre
+  
+    </h2>
+     
+    <a
+      class="case_next-project-button"
+      href="/case-studies/sir-john-monash-centre"
+    >
+      Read next project
+    </a>
+  </section>
 </main>
 `;
