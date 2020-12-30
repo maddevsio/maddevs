@@ -6,6 +6,8 @@ import SirJohnMonashCentre from '../client/pages/case-studies/sir-john-monash-ce
 describe('SirJohnMonashCentre', () => {
   let wrapper;
   const data = {
+    title: 'Mad Devs Case Study: Australian National Memorial - Sir John Monash Centre',
+    description: 'The SJMC and Mad Devs partnership has been based on enhancements and preventative maintenance contracts. Transferring a project to another IT partner is never easy for all parties involved. Let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.',
     keyGoalsList: [
       'Understanding the complexity of the MMIT Brain software',
       'Building a small-scale version of the SJMC experience in 1 month',
@@ -284,7 +286,8 @@ describe('SirJohnMonashCentre', () => {
         $nuxt: {
           $on: jest.fn()
         }
-      }
+      },
+      stubs: ['router-link']
     });
     wrapper.vm.$refs = { 
       video: {

@@ -398,9 +398,10 @@
         </TextQuoteAuthor>
       </section>
     </section>
-    <!-- <Footer>
-      Namba Food <br> Top 1 Delivery Service in <br class="case_mobile-screen-break"> Central Asia
-    </Footer> -->
+    <Footer link="/case-studies/sir-john-monash-centre" className="namba-food-case">
+      <div class="case_logotype" slot="icon"></div>
+      The maintenance <br class="case_mobile-break"> of memory: <br> Sir John Monash <br class="case_mobile-break"> Centre
+    </Footer>
   </main>
 </template>
 
@@ -522,14 +523,14 @@ export default {
         },
         {
           name: 'Eldar Akkozov',
-          position: 'Mobile Developer',
+          position: 'Mobile App Developer',
           fileName: 'eldar-akkozov',
           fileExtension: 'png',
           alt: 'Eldar Akkozov'
         },
         {
           name: 'Altynai Toktomuratova',
-          position: 'Mobile Developer',
+          position: 'Mobile App Developer',
           fileName: 'altynai-toktomuratova',
           fileExtension: 'png',
           alt: 'Altynai Toktomuratova'

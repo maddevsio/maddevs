@@ -23,7 +23,7 @@
           The SJMC opened to the public on April 16th, 2018. The entire centre, including its half-sunken building and cutting-edge new technology, was developed and deployed by an Australian-based IT vendor. The SJMC and Mad Devs partnership has therefore been based on enhancements and preventative maintenance contracts.
         </TextParagraph>
         <TextParagraph>
-          After conducting an independent audit of a previous IT vendor, a list of technical debt was formed.
+          After conducting an <router-link :to="`/services#it-consulting`" class="case_link">independent audit</router-link> of a previous IT vendor, a list of technical debt was formed.
         </TextParagraph>
         <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top">
           The Mad Devs team has successfully accomplished code refactoring as well as closing the technical debt. After that, system monitoring, new feature development, and maintenance was placed on Mad Devs shoulders.
@@ -421,7 +421,6 @@
         <TextParagraph class="m-72_bottom media-m-48_bottom">
           We are honoured to extend our partnership to improve the SJMC visitors' experience by introducing the iPadOS application for children. This application will offer engaging content which allows children to discover the centre and its resources through a series of educational games. Moreover, Mad Devs is going to develop a sophisticated content management system that is eventually going to simplify the deployment of new content and will enable the managers of the SJMC themselves to make the required changes with ease.
         </TextParagraph>
-        <!-- Добавить нужное фото -->
         <TextQuoteAuthor
           class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
           authorName="Wade Bartlett"
@@ -434,7 +433,8 @@
           The Sir John Monash Centre operates within a bespoke multimedia framework, which requires high-level technical expertise to deliver the Centre's visitor experience. Mad Devs provide outstanding levels of support and development services across our multimedia and IT platforms, systems and languages. Always available to provide assistance when needed, Mad Devs are a highly-valued part of our wider operations.
         </TextQuoteAuthor>
       </section>
-      <Footer>
+      <Footer link="/case-studies/namba-food" className="sjmc-case">
+        <div class="case_logotype" slot="icon"></div>
         Namba Food <br> Top Delivery Service in <br class="case_mobile-screen-break"> Central Asia
       </Footer>
     </section>
@@ -485,6 +485,8 @@ export default {
   name: 'SirJohnMonashCentre',
   data() {
     return {
+      title: 'Mad Devs Case Study: Australian National Memorial - Sir John Monash Centre',
+      description: 'The SJMC and Mad Devs partnership has been based on enhancements and preventative maintenance contracts. Transferring a project to another IT partner is never easy for all parties involved. Let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.',
       keyGoalsList: [
         'Understanding the complexity of the MMIT Brain software',
         'Building a small-scale version of the SJMC experience in 1 month',
@@ -777,6 +779,35 @@ export default {
         this.$refs.videoWrap.classList.add('case_sjmc-phone-video-wrapper--on-pause');
       }
     }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {name: 'description', content: this.description},
+        {property: 'og:url', content: this.ogUrl},
+        {property: 'og:type', content: 'website'},
+        {property: 'og:title', content: this.title},
+        {property: 'og:description', content: this.description},
+        {
+          property: 'og:image',
+          content: 'https://maddevs.io/Open-Graph.png'
+        }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://maddevs.io/case-studies/sir-john-monash-centre/'
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: Australian National Memorial - Sir John Monash Centre", "description": "The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front during the First World War in the words of those who served. The SJMC and Mad Devs partnership has been based on enhancements and preventative maintenance contracts. Transferring a project to another IT partner is never easy for all parties involved. Let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group Limited"}}'
+        }
+      ]
+    };
   }
 };
 </script>

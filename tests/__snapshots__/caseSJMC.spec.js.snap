@@ -154,7 +154,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="case_paragraph"
       >
         
-        After conducting an independent audit of a previous IT vendor, a list of technical debt was formed.
+        After conducting an 
+        <router-link-stub
+          class="case_link"
+          to="/services#it-consulting"
+        >
+          independent audit
+        </router-link-stub>
+         of a previous IT vendor, a list of technical debt was formed.
       
       </p>
        
@@ -2597,11 +2604,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
       class="case_footer container_full"
     >
       <div
-        class="case_logotype nambafood"
+        class="case_logotype"
       />
        
       <h2
-        class="case_title case_title_h2"
+        class="case_title case_title_h2 case_title-sjmc-case"
       >
         
       Namba Food 

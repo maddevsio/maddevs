@@ -32,6 +32,12 @@ export default {
           property: 'og:image',
           content: 'https://maddevs.io/Open-Graph.png'
         }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://maddevs.io/privacy/'
+        }
       ]
     };
   }
