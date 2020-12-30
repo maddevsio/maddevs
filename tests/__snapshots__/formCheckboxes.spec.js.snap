@@ -9,9 +9,9 @@ exports[`Form checkboxes renders correctly 1`] = `
     for="privacy-policy-input id"
   >
     I confirm that I have read and accepted 
-    <span>
+    <div>
       Mad Devs’
-    </span>
+    </div>
      
     <a
       href="/privacy"
@@ -37,9 +37,9 @@ exports[`Form checkboxes renders correctly 1`] = `
     for="marketing-communications-input id"
   >
     I agree to get 
-    <span>
+    <div>
       Mad Devs’
-    </span>
+    </div>
      discount offers and other marketing communications.
     
     <input

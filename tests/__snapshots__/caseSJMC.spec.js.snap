@@ -154,7 +154,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="case_paragraph"
       >
         
-        After conducting an independent audit of a previous IT vendor, a list of technical debt was formed.
+        After conducting an 
+        <router-link-stub
+          class="case_link"
+          to="/services#it-consulting"
+        >
+          independent audit
+        </router-link-stub>
+         of a previous IT vendor, a list of technical debt was formed.
       
       </p>
        
