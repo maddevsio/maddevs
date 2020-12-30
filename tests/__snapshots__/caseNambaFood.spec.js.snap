@@ -2050,7 +2050,7 @@ exports[`Namba food renders correctly 1`] = `
             <p
               class="case_team-item__position"
             >
-              Mobile Developer
+              Mobile App Developer
             </p>
           </div>
         </li>
@@ -2088,7 +2088,7 @@ exports[`Namba food renders correctly 1`] = `
             <p
               class="case_team-item__position"
             >
-              Mobile Developer
+              Mobile App Developer
             </p>
           </div>
         </li>
