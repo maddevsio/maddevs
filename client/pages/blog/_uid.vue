@@ -35,7 +35,7 @@
             <div class="blog-post__tag" v-if="tags.length">{{ tags[0] }}</div>
           </div>
         </div>
-        <img :src="document.introduction_image.url" class="blog-post__introduction-image" v-if="document.introduction_image.url !== undefined">
+        <img :src="document.featured_image.url" class="blog-post__introduction-image" v-if="document.featured_image.url !== undefined">
       </div>
       <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
       <table-of-contents :content="document.table_of_contents" v-if="document.table_of_contents.length !== 0"/>
