@@ -187,7 +187,7 @@ exports[`Namba food renders correctly 1`] = `
               />
                
               <img
-                alt=""
+                alt="Namba Food Personal couriers."
                 class="image"
                 loading="lazy"
                 src="[object Object]"
@@ -303,6 +303,7 @@ exports[`Namba food renders correctly 1`] = `
       class="container_full background-color-silver"
     >
       <img
+        alt="Nambs Food High-level System Overview."
         class="case_gif case_high-level-system-overview-gif"
         src="../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif"
       />
@@ -366,7 +367,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Namba Food Mobile Application Main Page on Iphone for Users."
                     class="image"
                     loading=""
                     src="[object Object]"
@@ -386,7 +387,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Namba Food Mobile Application Main Page on Iphone for Users."
                     class="image"
                     loading=""
                     src="[object Object]"
@@ -435,7 +436,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Namba Food Mobile Application Main Page on Android for Deliverymen."
                     class="image"
                     loading=""
                     src="[object Object]"
@@ -455,7 +456,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Namba Food Mobile Application Main Page on Android for Deliverymen."
                     class="image"
                     loading=""
                     src="[object Object]"
@@ -502,7 +503,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Namba Food Unified Control System for Operators on Desktop."
                     class="image"
                     loading=""
                     src="[object Object]"
@@ -522,7 +523,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Namba Food Unified Control System for Operators on Desktop."
                     class="image"
                     loading=""
                     src="[object Object]"
@@ -571,7 +572,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Namba Food Control Panel for Managers on Desktop."
                     class="image"
                     loading=""
                     src="[object Object]"
@@ -591,7 +592,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Namba Food Control Panel for Managers on Desktop."
                     class="image"
                     loading=""
                     src="[object Object]"
@@ -767,7 +768,7 @@ exports[`Namba food renders correctly 1`] = `
             />
              
             <img
-              alt=""
+              alt="Namba Food Android Application for Couriers."
               class="image"
               loading="lazy"
               src="[object Object]"
@@ -821,7 +822,7 @@ exports[`Namba food renders correctly 1`] = `
         />
          
         <img
-          alt=""
+          alt="Namba Food Admin Panel on Desktop."
           class="image box-shadow"
           loading="lazy"
           src="[object Object]"
@@ -981,7 +982,7 @@ exports[`Namba food renders correctly 1`] = `
             />
              
             <img
-              alt=""
+              alt="Namba Food Admin Panel."
               class="image"
               loading="lazy"
               src="[object Object]"
@@ -1008,7 +1009,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Namba Food Delivery Control Admin Panel."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1027,7 +1028,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt=""
+                    alt="Namba Food Delivery Control Dashboard."
                     class="image"
                     loading="lazy"
                     src="[object Object]"
@@ -1064,7 +1065,7 @@ exports[`Namba food renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Namba Food Delivery Control Admin Panel."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1083,7 +1084,7 @@ exports[`Namba food renders correctly 1`] = `
                 />
                  
                 <img
-                  alt=""
+                  alt="Namba Food Delivery Control Dashboard."
                   class="image"
                   loading="lazy"
                   src="[object Object]"
@@ -1323,7 +1324,7 @@ exports[`Namba food renders correctly 1`] = `
         />
          
         <img
-          alt=""
+          alt="Grafana — Docker Containers’ Monitoring Service."
           class="image box-shadow"
           loading="lazy"
           src="[object Object]"
@@ -1599,6 +1600,7 @@ exports[`Namba food renders correctly 1`] = `
       class="container_full background-color-silver"
     >
       <img
+        alt="Nambs Food High-level System Overview."
         class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"
         src="../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif"
       />
@@ -1654,7 +1656,7 @@ exports[`Namba food renders correctly 1`] = `
           />
            
           <img
-            alt=""
+            alt="The Pipeline for the Namba Food System."
             class="image"
             loading="lazy"
             src="[object Object]"
@@ -1680,7 +1682,7 @@ exports[`Namba food renders correctly 1`] = `
           />
            
           <img
-            alt=""
+            alt="The Pipeline for the Namba Food System."
             class="image"
             loading="lazy"
             src="[object Object]"
@@ -2048,7 +2050,7 @@ exports[`Namba food renders correctly 1`] = `
             <p
               class="case_team-item__position"
             >
-              Mobile Developer
+              Mobile App Developer
             </p>
           </div>
         </li>
@@ -2086,7 +2088,7 @@ exports[`Namba food renders correctly 1`] = `
             <p
               class="case_team-item__position"
             >
-              Mobile Developer
+              Mobile App Developer
             </p>
           </div>
         </li>
@@ -2482,7 +2484,7 @@ exports[`Namba food renders correctly 1`] = `
               />
                
               <img
-                alt=""
+                alt="Aziza Anarbekova Namba Food Co-Founder."
                 class="image"
                 loading="lazy"
                 src="[object Object]"
@@ -2505,6 +2507,39 @@ exports[`Namba food renders correctly 1`] = `
         </div>
       </blockquote>
     </section>
+  </section>
+   
+  <section
+    class="case_footer container_full"
+  >
+    <div
+      class="case_logotype"
+    />
+     
+    <h2
+      class="case_title case_title_h2 case_title-namba-food-case"
+    >
+      
+    The maintenance 
+      <br
+        class="case_mobile-break"
+      />
+       of memory: 
+      <br />
+       Sir John Monash 
+      <br
+        class="case_mobile-break"
+      />
+       Centre
+  
+    </h2>
+     
+    <a
+      class="case_next-project-button"
+      href="/case-studies/sir-john-monash-centre"
+    >
+      Read next project
+    </a>
   </section>
 </main>
 `;

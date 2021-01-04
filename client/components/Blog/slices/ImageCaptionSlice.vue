@@ -3,9 +3,7 @@
     <template v-if="size === 'image-full-width'">
       <div class='blog-header single' :style="{ 'background-image': 'url(' + img.url + ')'}">
         <template v-if="$prismic.asText(caption) != ''">
-          <div class="wrapper">
-            <h1>{{ $prismic.asText(caption) }}</h1>
-          </div>
+          <div class="wrapper" v-html="$prismic.asHtml(caption)"/>
         </template>
       </div>
     </template>
@@ -15,9 +13,7 @@
           <prismic-image :field="img"/>
         </p>
         <template v-if="$prismic.asText(caption) != ''">
-          <p>
-            <span class="image-label">{{ $prismic.asText(caption) }}</span>
-          </p>
+          <p class="image-label">{{ $prismic.asText(caption) }}</p>
         </template>
       </div>
     </template>
@@ -49,6 +45,7 @@ export default {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 
 .block-img {
@@ -64,5 +61,6 @@ img {
   letter-spacing: -0.02em;
   font-family: 'Poppins-Regular', sans-serif;
   color: $text-color--grey;
+  margin-bottom: 12px;
 }
 </style>

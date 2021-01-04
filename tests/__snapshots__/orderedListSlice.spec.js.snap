@@ -4,6 +4,10 @@ exports[`OrderedListSlice component renders correctly 1`] = `
 <ol
   class="case-list_numbered"
 >
+  <div>
+    list introduction
+  </div>
+   
   <li
     class="case_list-numbered_item"
   >

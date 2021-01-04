@@ -5,7 +5,7 @@
       <div class="case_animation_block"></div>
       <section class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom">
         <TextParagraph class="m-24_bottom media-m-12_bottom">
-          The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front during the First World War in the words of those who served. 
+          The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front during the First World War in the words of those who served.
         </TextParagraph>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           There is much to learn from the Great War, however, ordinary history books often only explain events on a surface level. In contrast, using interactive multimedia installations and technologies, the 480-square metre interpretive centre takes visitors on a journey in the footsteps of ordinary soldiers who experienced extraordinary events.
@@ -18,12 +18,12 @@
         </TextQuote>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-12_bottom">SJMC and Mad Devs partnership</h2>
+        <h2 class="case_title_h2 m-12_bottom">The SJMC and Mad Devs partnership</h2>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           The SJMC opened to the public on April 16th, 2018. The entire centre, including its half-sunken building and cutting-edge new technology, was developed and deployed by an Australian-based IT vendor. The SJMC and Mad Devs partnership has therefore been based on enhancements and preventative maintenance contracts.
         </TextParagraph>
         <TextParagraph>
-          After conducting an independent audit of a previous IT vendor, a list of technical debt was formed.
+          After conducting an <router-link :to="`/services#it-consulting`" class="case_link">independent audit</router-link> of a previous IT vendor, a list of technical debt was formed.
         </TextParagraph>
         <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top">
           The Mad Devs team has successfully accomplished code refactoring as well as closing the technical debt. After that, system monitoring, new feature development, and maintenance was placed on Mad Devs shoulders.
@@ -34,7 +34,7 @@
           pictureFolder="sjmc"
           fileName="sjmc-team"
           fileExtension="jpg"
-          alt=""
+          alt="The Mad Devs team in Sir John Monash Centre."
           :lazyLoading="true"
         />
       </section>
@@ -45,13 +45,13 @@
         </List>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-96_top media-m-48_top m-12_bottom">SJMC software</h2>
+        <h2 class="case_title_h2 m-96_top media-m-48_top m-12_bottom">The SJMC Software</h2>
         <TextParagraph class="m-48_bottom">
           Transferring a project to another software partner is never easy for all parties involved. So, let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.
         </TextParagraph>
         <h3 class="case_title_h3 m-12_bottom">Multimedia Management IT Brain</h3>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
-          Personalized experience at your own speed and language
+          Personalised experience at your own speed and in your own language
         </TextParagraph>
       </section>
       <section class="container_full background-color-silver">
@@ -60,7 +60,7 @@
             pictureFolder="sjmc"
             fileName="multimedia-management"
             fileExtension="jpg"
-            alt=""
+            alt="The SJMC Multimedia Management IT Brain."
             :lazyLoading="true"
           />
         </div>
@@ -106,7 +106,7 @@
             pictureFolder="sjmc"
             fileName="mobile-applications"
             fileExtension="jpg"
-            alt=""
+            alt="The SJMC Mobile Applications."
             :lazyLoading="true"
           />
         </div>
@@ -130,7 +130,7 @@
           pictureFolder="sjmc"
           fileName="sjmc-map"
           fileExtension="jpg"
-          alt=""
+          alt="Sir Jonh Monash Centre Map."
           :lazyLoading="true"
         />
         <p class="case_image-description m-8_top">
@@ -148,7 +148,7 @@
           pictureFolder="sjmc"
           fileName="immersive-gallery"
           fileExtension="jpg"
-          alt=""
+          alt="The SJMC Immersive Gallery."
           :lazyLoading="true"
         />
       </section>
@@ -160,7 +160,7 @@
       </section>
       <section class="container_full background-color-silver">
         <section class="container_middle">
-          <img src="../../assets/img/Cases/sjmc/gif/watchpax.gif" class="case_gif">
+          <img src="../../assets/img/Cases/sjmc/gif/watchpax.gif" class="case_gif" alt="WATCHOUT - Multi-Display Production and Presentation System.">
         </section>
       </section>
       <section class="container_regular">
@@ -171,7 +171,7 @@
       </section>
       <section class="container_full background-color-silver">
         <section class="container_middle">
-          <img src="../../assets/img/Cases/sjmc/gif/brix.gif" class="case_gif">
+          <img src="../../assets/img/Cases/sjmc/gif/brix.gif" class="case_gif" alt="Ultra-Compact Multimedia Computer - BRIX.">
         </section>
       </section>
       <section class="container_regular">
@@ -199,7 +199,7 @@
       <section class="container_regular m-56_top media-m-24_top m-96_bottom media-m-72_bottom">
         <div class="case_column-container">
           <div class="case_column-item">
-            <h4 class="case_title_h4 m-8_bottom media-m-2_bottom">110,000 visitors</h4>
+            <h4 class="case_title_h4 m-8_bottom media-m-2_bottom">60,000 visitors</h4>
             <TextParagraph>
               On an annual basis move throughout the centre.
             </TextParagraph>
@@ -230,7 +230,7 @@
             :className="technologiesItem.className"
           />
         </ListTechnologies>
-        <h3 class="case_title_h3 m-12_bottom">Custom small-scale version of SJMC in Mad Devs office</h3>
+        <h3 class="case_title_h3 m-12_bottom">Custom small-scale version of the SJMC in Mad Devs’ office</h3>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           As thousands of kilometres separate the SJMC and Mad Devs’ office, a unique approach to the engineering partnership was required.
         </TextParagraph>
@@ -270,7 +270,7 @@
           pictureFolder="sjmc"
           fileName="kibana-reports"
           fileExtension="jpg"
-          alt=""
+          alt="Kibana Reports for SJMC."
           :boxShadow="true"
           :lazyLoading="true"
         />
@@ -308,6 +308,7 @@
           :safariTopBar="true"
           :boxShadow="true"
           safariTopBarImage="safari-top-bar"
+          safariTopBarAlt="Safari Top Bar."
         />
       </section>
       <section class="container_regular">
@@ -343,7 +344,7 @@
         </TextParagraph>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Automated testing of MMIT Brain via custom emulators</h2>
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Automated testing the MMIT Brain via custom emulators</h2>
         <TextParagraph class="m-6_bottom">
           Auto-testing of the MMIT Brain can be sorted into two categories:
         </TextParagraph>
@@ -367,7 +368,7 @@
         <TextParagraph class="m-72_bottom media-m-48_bottom">
           Without such an emulator, Mad Devs’ developers would not be able to look at the MMIT Brain code and understand whether the Brain has transferred the command from one system to another. Without such an emulator, the team would be clueless regarding whether the command had been successfully executed or not.
         </TextParagraph>
-        <h3 class="case_title_h3">2. End-to-end tests using emulators of mobile applications</h3>
+        <h3 class="case_title_h3">2. End to end tests using emulators of mobile applications</h3>
         <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
           A mobile applications emulator enables the SJMC to run all possible user experiences on all possible virtual multimedia sites.
         </TextQuoteBox>
@@ -415,12 +416,11 @@
       <section class="container_regular">
         <h2 class="case_title_h2 m-12_bottom">Ongoing partnership</h2>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
-          According to the internal CSAT survey, 98% of Mad Devs' customers find the company's service great value for money, and most of them stay with us for 3+ years. The SJMC is no exception. 
+          According to the internal CSAT survey, 98% of Mad Devs' customers find the company's service great value for money, and most of them stay with us for 3+ years. The SJMC is no exception.
         </TextParagraph>
         <TextParagraph class="m-72_bottom media-m-48_bottom">
           We are honoured to extend our partnership to improve the SJMC visitors' experience by introducing the iPadOS application for children. This application will offer engaging content which allows children to discover the centre and its resources through a series of educational games. Moreover, Mad Devs is going to develop a sophisticated content management system that is eventually going to simplify the deployment of new content and will enable the managers of the SJMC themselves to make the required changes with ease.
         </TextParagraph>
-        <!-- Добавить нужное фото -->
         <TextQuoteAuthor
           class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
           authorName="Wade Bartlett"
@@ -433,7 +433,8 @@
           The Sir John Monash Centre operates within a bespoke multimedia framework, which requires high-level technical expertise to deliver the Centre's visitor experience. Mad Devs provide outstanding levels of support and development services across our multimedia and IT platforms, systems and languages. Always available to provide assistance when needed, Mad Devs are a highly-valued part of our wider operations.
         </TextQuoteAuthor>
       </section>
-      <Footer>
+      <Footer link="/case-studies/namba-food" className="sjmc-case">
+        <div class="case_logotype" slot="icon"></div>
         Namba Food <br> Top Delivery Service in <br class="case_mobile-screen-break"> Central Asia
       </Footer>
     </section>
@@ -484,6 +485,8 @@ export default {
   name: 'SirJohnMonashCentre',
   data() {
     return {
+      title: 'Mad Devs Case Study: Australian National Memorial - Sir John Monash Centre',
+      description: 'The SJMC and Mad Devs partnership has been based on enhancements and preventative maintenance contracts. Transferring a project to another IT partner is never easy for all parties involved. Let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.',
       keyGoalsList: [
         'Understanding the complexity of the MMIT Brain software',
         'Building a small-scale version of the SJMC experience in 1 month',
@@ -496,7 +499,7 @@ export default {
         'Setting up system monitoring'
       ],
       theChallenges: [
-        '100MB of Documentation and 1M+ lines of code required months of onboarding.',
+        'The 100MB of documentation and 1M+ lines of code, which required months of onboarding.',
         'The unique nature of the software in a one-of-a-kind technologically advanced centre.',
         'The 450 units of hardware connected to operate as a coherent solution that delivers content to SJMC visitors in a personalised manner.',
         'The 5000 km distance between the SJMC and Mad Devs’ office.',
@@ -575,156 +578,183 @@ export default {
           name: 'Kirill Zinchenko',
           position: 'Project Manager',
           fileName: 'zinchenko',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Kirill Zinchenko'
         },
         {
           name: 'Vlad Andreev',
           position: 'DevOps Engineer',
           fileName: 'vlad-andreev',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Vlad Andreev'
         },
         {
           name: 'Aleksandr Zhitov',
           position: 'QA Manager',
           fileName: 'zhitov',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Aleksandr Zhitov'
         },
         {
           name: 'Sergey Boyko',
-          position: 'QA Manager',
+          position: 'QA Tester',
           fileName: 'boyko',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Sergey Boyko'
         },
         {
           name: 'Andrew Minkin',
           position: 'Back-end Developer',
           fileName: 'andrew-minkin',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Andrew Minkin'
         },
         {
           name: 'Dmitri Khalezin',
           position: 'DevOps Engineer',
           fileName: 'dmitrii-khalezin',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Dmitri Khalezin'
         },
         {
           name: 'Kirill Avdeev',
           position: 'Back-end Developer',
           fileName: 'avdeev',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Kirill Avdeev'
         },
         {
           name: 'Stanislav Shcherbinin',
           position: 'Back-end Developer',
           fileName: 'stanislav-shcherbinin',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Stanislav Shcherbinin'
         },
         {
           name: 'Aleksandr Astashov',
           position: 'Back-end Developer',
           fileName: 'astashov',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Aleksandr Astashov'
         },
         {
           name: 'Ruslan Kasymov',
           position: 'Logistics Manager',
           fileName: 'kasymov',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Ruslan Kasymov'
         },
         {
           name: 'Pavel Pushkarev',
           position: 'Mobile App Developer',
           fileName: 'pushkarev',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Pavel Pushkarev'
         },
         {
           name: 'Rustom Kulbatyrov',
           position: 'Mobile App Developer',
           fileName: 'kulbatyrov',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Rustom Kulbatyrov'
         }
       ],
       swiperMultimediaManagement: [
         {
           fileName: 'multimedia-management-first-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'Hardware System Which Monitors Lighting, Audio, Video and Special Effects for the SJMC.'
         },
         {
           fileName: 'multimedia-management-second-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'Hardware System Which Monitors Lighting, Audio, Video and Special Effects for the SJMC.'
         }
       ],
       swiperOfficeTeam: [
         {
           fileName: 'office-team-first-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
         },
         {
           fileName: 'office-team-second-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
         },
         {
           fileName: 'office-team-third-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
         },
         {
           fileName: 'office-team-fourth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
         },
         {
           fileName: 'office-team-fifth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
         },
         {
           fileName: 'office-team-sixth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
         }
       ],
       swiperGrafanaPrometheus: [
         {
           fileName: 'grafana-prometheus-first-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation.'
         },
         {
           fileName: 'grafana-prometheus-second-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation.'
         }
       ],
       swiperMadDevsTrip: [
         {
           fileName: 'mad-devs-trip-first-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'Mad Devs’ Team Trip to the SJMC.'
         },
         {
           fileName: 'mad-devs-trip-second-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'Mad Devs’ Team Trip to the SJMC.'
         },
         {
           fileName: 'mad-devs-trip-third-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'Mad Devs’ Team Trip to the SJMC.'
         },
         {
           fileName: 'mad-devs-trip-fourth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'Mad Devs’ Team Trip to the SJMC.'
         },
         {
           fileName: 'mad-devs-trip-fifth-slide',
           pictureFolder: 'sjmc',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'Mad Devs’ Team Trip to the SJMC.'
         }
       ]
     };
@@ -749,6 +779,35 @@ export default {
         this.$refs.videoWrap.classList.add('case_sjmc-phone-video-wrapper--on-pause');
       }
     }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {name: 'description', content: this.description},
+        {property: 'og:url', content: this.ogUrl},
+        {property: 'og:type', content: 'website'},
+        {property: 'og:title', content: this.title},
+        {property: 'og:description', content: this.description},
+        {
+          property: 'og:image',
+          content: 'https://maddevs.io/Open-Graph.png'
+        }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://maddevs.io/case-studies/sir-john-monash-centre/'
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: Australian National Memorial - Sir John Monash Centre", "description": "The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front during the First World War in the words of those who served. The SJMC and Mad Devs partnership has been based on enhancements and preventative maintenance contracts. Transferring a project to another IT partner is never easy for all parties involved. Let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group Limited"}}'
+        }
+      ]
+    };
   }
 };
 </script>

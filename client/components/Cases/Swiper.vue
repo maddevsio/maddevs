@@ -5,7 +5,7 @@
         pictureFolder="common"
         :fileName="safariTopBarImage"
         fileExtension="jpg"
-        alt=""
+        :alt="safariTopBarAlt"
         :lazyLoading="true"
         v-if="safariTopBar"
       />
@@ -16,7 +16,7 @@
             :fileName="element.fileName"
             :fileExtension="element.fileExtension"
             :lazyLoading="true"
-            alt=""
+            :alt="element.alt"
           />
         </swiper-slide>
       </swiper>
@@ -31,7 +31,7 @@
           :fileName="element.fileName"
           :fileExtension="element.fileExtension"
           :lazyLoading="true"
-          alt=""
+          :alt="element.alt"
         />
       </swiper-slide>
     </swiper>
@@ -96,6 +96,10 @@ export default {
       default: false
     },
     safariTopBarImage: {
+      type: String,
+      default: ''
+    },
+    safariTopBarAlt: {
       type: String,
       default: ''
     }

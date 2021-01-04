@@ -37,7 +37,7 @@
         </TextParagraph>
       </section>
       <section class="container_full background-color-silver">
-        <img src="../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif" class="case_gif case_high-level-system-overview-gif">
+        <img src="../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif" class="case_gif case_high-level-system-overview-gif" alt="Nambs Food High-level System Overview.">
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 case_text-align-center m-96_top m-24_bottom media-m-48_top media-m-12_bottom">Typical usage scenarios and user roles</h2>
@@ -120,7 +120,7 @@
               pictureFolder="nambafood"
               fileName="couriers-android-app"
               fileExtension="png"
-              alt=""
+              alt="Namba Food Android Application for Couriers."
               :lazyLoading="true"
             />
           </section>
@@ -142,7 +142,7 @@
           fileName="sjms-analytics"
           fileNameRetina="sjms-analytics@2x"
           fileExtension="jpg"
-          alt=""
+          alt="Namba Food Admin Panel on Desktop."
           :boxShadow="true"
           :lazyLoading="true"
         />
@@ -195,6 +195,7 @@
           :boxShadow="true"
           sliderDescription=""
           safariTopBarImage="swiper-frame"
+          safariTopBarAlt="Namba Food Admin Panel."
         />
       </section>
       <section class="container_regular">
@@ -280,7 +281,7 @@
           fileName="grafana"
           fileNameRetina="grafana@2x"
           fileExtension="jpg"
-          alt=""
+          alt="Grafana — Docker Containers’ Monitoring Service."
           :boxShadow="true"
           :lazyLoading="true"
         />
@@ -301,7 +302,7 @@
         <h3 class="case_title_h3 m-107_top m-24_bottom media-m-48_top">Website and mobile app infrastructure scheme</h3>
       </section>
       <section class="container_full background-color-silver">
-        <img src="../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif" class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif">
+        <img src="../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif" class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif" alt="Nambs Food High-level System Overview.">
       </section>
       <section class="container_regular">
         <TextParagraph class="m-24_top">
@@ -322,7 +323,7 @@
             fileName="pipelines"
             fileNameRetina="pipelines@2x"
             fileExtension="jpg"
-            alt=""
+            alt="The Pipeline for the Namba Food System."
             :lazyLoading="true"
           />
         </section>
@@ -334,7 +335,7 @@
             fileName="pipelines-mobile"
             fileNameRetina="pipelines-mobile@2x"
             fileExtension="jpg"
-            alt=""
+            alt="The Pipeline for the Namba Food System."
             :lazyLoading="true"
           />
         </section>
@@ -390,16 +391,17 @@
           authorPosition="Co-Founder, Namba Food"
           fileName="aziza-anarbekova"
           fileExtension="png"
-          alt=""
+          alt="Aziza Anarbekova Namba Food Co-Founder."
           pictureFolder="nambafood"
         >
           “Thanks to our close collaboration, we saw a notable increase in the return on investment, as the number of orders grew by 53% YoY. The Mad Devs Team always surpasses expectations and stays open to suggestions. The team's competency and dedication enabled the prolonged partnership between our companies.”
         </TextQuoteAuthor>
       </section>
     </section>
-    <!-- <Footer>
-      Namba Food <br> Top 1 Delivery Service in <br class="case_mobile-screen-break"> Central Asia
-    </Footer> -->
+    <Footer link="/case-studies/sir-john-monash-centre" className="namba-food-case">
+      <div class="case_logotype" slot="icon"></div>
+      The maintenance <br class="case_mobile-break"> of memory: <br> Sir John Monash <br class="case_mobile-break"> Centre
+    </Footer>
   </main>
 </template>
 
@@ -467,73 +469,85 @@ export default {
           name: 'Vlad Andreev',
           position: 'Team Lead',
           fileName: 'vlad-andreev',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Vlad Andreev'
         },
         {
           name: 'Gulbustan Baudunova',
           position: 'Back-end Developer',
           fileName: 'gulbustan-baudunova',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Gulbustan Baudunova'
         },
         {
           name: 'Tamara Mun',
           position: 'Delivery Manager',
           fileName: 'tamara-mun',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Tamara Mun'
         },
         {
           name: 'Aidai Atakulova',
           position: 'Project Manager',
           fileName: 'aidai-atakulova',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Aidai Atakulova'
         },
         {
           name: 'Baurzhan Omuraliev',
           position: 'Back-end Developer',
           fileName: 'baurzhan-omuraliev',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Baurzhan Omuraliev'
         },
         {
           name: 'Nakylai Taiirova',
           position: 'Back-end Developer',
           fileName: 'nakylai-taiirova',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Nakylai Taiirova'
         },
         {
           name: 'Akylbek Djumaliev',
           position: 'Back-end Developer',
           fileName: 'akylbek-djumaliev',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Akylbek Djumaliev'
         },
         {
           name: 'Stanislav Shcherbinin',
           position: 'Back-end Developer',
           fileName: 'stanislav-shcherbinin',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Stanislav Shcherbinin'
         },
         {
           name: 'Eldar Akkozov',
-          position: 'Mobile Developer',
+          position: 'Mobile App Developer',
           fileName: 'eldar-akkozov',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Eldar Akkozov'
         },
         {
           name: 'Altynai Toktomuratova',
-          position: 'Mobile Developer',
+          position: 'Mobile App Developer',
           fileName: 'altynai-toktomuratova',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Altynai Toktomuratova'
         },
         {
           name: 'Dmitrii Khalezin',
           position: 'DevOps Engineer',
           fileName: 'dmitrii-khalezin',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Dmitrii Khalezin'
         },
         {
           name: 'Belek Abylov',
           position: 'Back-end Developer',
           fileName: 'belek-abylov',
-          fileExtension: 'png'
+          fileExtension: 'png',
+          alt: 'Belek Abylov'
         }
       ],
       technologiesList: [
@@ -620,7 +634,7 @@ export default {
           },
           fileName: 'apple-iphone-xr-silver',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Namba Food Mobile Application Main Page on Iphone for Users.'
         },
         {
           title: 'Application for <br> deliverymen',
@@ -631,7 +645,7 @@ export default {
           },
           fileName: 'samsung-galaxy-s20-cosmic-gray',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Namba Food Mobile Application Main Page on Android for Deliverymen.'
         },
         {
           title: 'Unified control system for operators',
@@ -642,7 +656,7 @@ export default {
           },
           fileName: 'system-for-call-center',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Namba Food Unified Control System for Operators on Desktop.'
         },
         {
           title: 'Control panel for <br> managers',
@@ -653,19 +667,21 @@ export default {
           },
           fileName: 'sjms-analytics-mini',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Namba Food Control Panel for Managers on Desktop.'
         }
       ],
       swiperAdminPanel: [
         {
           fileName: 'admin',
           pictureFolder: 'nambafood',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'Namba Food Delivery Control Admin Panel.'
         },
         {
           fileName: 'dashboard',
           pictureFolder: 'nambafood',
-          fileExtension: 'jpg'
+          fileExtension: 'jpg',
+          alt: 'Namba Food Delivery Control Dashboard.'
         }
       ],
       videoIdList: ['map-video', 'iphone-silver-video'],

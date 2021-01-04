@@ -38,6 +38,12 @@ export default {
         { property: 'og:title', content: this.title },
         { property: 'og:description', content: this.description },
         { property: 'og:image', content: 'https://maddevs.io/Open-Graph.png' }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://maddevs.io/projects/'
+        }
       ]
     };
   }

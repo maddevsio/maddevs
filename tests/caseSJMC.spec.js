@@ -6,6 +6,8 @@ import SirJohnMonashCentre from '../client/pages/case-studies/sir-john-monash-ce
 describe('SirJohnMonashCentre', () => {
   let wrapper;
   const data = {
+    title: 'Mad Devs Case Study: Australian National Memorial - Sir John Monash Centre',
+    description: 'The SJMC and Mad Devs partnership has been based on enhancements and preventative maintenance contracts. Transferring a project to another IT partner is never easy for all parties involved. Let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.',
     keyGoalsList: [
       'Understanding the complexity of the MMIT Brain software',
       'Building a small-scale version of the SJMC experience in 1 month',
@@ -18,7 +20,7 @@ describe('SirJohnMonashCentre', () => {
       'Setting up system monitoring'
     ],
     theChallenges: [
-      '100MB of Documentation and 1M+ lines of code required months of onboarding.',
+      'The 100MB of documentation and 1M+ lines of code, which required months of onboarding.',
       'The unique nature of the software in a one-of-a-kind technologically advanced centre.',
       'The 450 units of hardware connected to operate as a coherent solution that delivers content to SJMC visitors in a personalised manner.',
       'The 5000 km distance between the SJMC and Mad Devs’ office.',
@@ -97,156 +99,183 @@ describe('SirJohnMonashCentre', () => {
         name: 'Kirill Zinchenko',
         position: 'Project Manager',
         fileName: 'zinchenko',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Kirill Zinchenko'
       },
       {
         name: 'Vlad Andreev',
         position: 'DevOps Engineer',
         fileName: 'vlad-andreev',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Vlad Andreev'
       },
       {
         name: 'Aleksandr Zhitov',
         position: 'QA Manager',
         fileName: 'zhitov',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Aleksandr Zhitov'
       },
       {
         name: 'Sergey Boyko',
-        position: 'QA Manager',
+        position: 'QA Tester',
         fileName: 'boyko',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Sergey Boyko'
       },
       {
         name: 'Andrew Minkin',
         position: 'Back-end Developer',
         fileName: 'andrew-minkin',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Andrew Minkin'
       },
       {
         name: 'Dmitri Khalezin',
         position: 'DevOps Engineer',
         fileName: 'dmitrii-khalezin',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Dmitri Khalezin'
       },
       {
         name: 'Kirill Avdeev',
         position: 'Back-end Developer',
         fileName: 'avdeev',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Kirill Avdeev'
       },
       {
         name: 'Stanislav Shcherbinin',
         position: 'Back-end Developer',
         fileName: 'stanislav-shcherbinin',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Stanislav Shcherbinin'
       },
       {
         name: 'Aleksandr Astashov',
         position: 'Back-end Developer',
         fileName: 'astashov',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Aleksandr Astashov'
       },
       {
         name: 'Ruslan Kasymov',
         position: 'Logistics Manager',
         fileName: 'kasymov',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Ruslan Kasymov'
       },
       {
         name: 'Pavel Pushkarev',
         position: 'Mobile App Developer',
         fileName: 'pushkarev',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Pavel Pushkarev'
       },
       {
         name: 'Rustom Kulbatyrov',
         position: 'Mobile App Developer',
         fileName: 'kulbatyrov',
-        fileExtension: 'png'
+        fileExtension: 'png',
+        alt: 'Rustom Kulbatyrov'
       }
     ],
     swiperMultimediaManagement: [
       {
         fileName: 'multimedia-management-first-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'Hardware System Which Monitors Lighting, Audio, Video and Special Effects for the SJMC.'
       },
       {
         fileName: 'multimedia-management-second-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'Hardware System Which Monitors Lighting, Audio, Video and Special Effects for the SJMC.'
       }
     ],
     swiperOfficeTeam: [
       {
         fileName: 'office-team-first-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
       },
       {
         fileName: 'office-team-second-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
       },
       {
         fileName: 'office-team-third-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
       },
       {
         fileName: 'office-team-fourth-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
       },
       {
         fileName: 'office-team-fifth-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
       },
       {
         fileName: 'office-team-sixth-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
       }
     ],
     swiperGrafanaPrometheus: [
       {
         fileName: 'grafana-prometheus-first-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation.'
       },
       {
         fileName: 'grafana-prometheus-second-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation.'
       }
     ],
     swiperMadDevsTrip: [
       {
         fileName: 'mad-devs-trip-first-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'Mad Devs’ Team Trip to the SJMC.'
       },
       {
         fileName: 'mad-devs-trip-second-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'Mad Devs’ Team Trip to the SJMC.'
       },
       {
         fileName: 'mad-devs-trip-third-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'Mad Devs’ Team Trip to the SJMC.'
       },
       {
         fileName: 'mad-devs-trip-fourth-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'Mad Devs’ Team Trip to the SJMC.'
       },
       {
         fileName: 'mad-devs-trip-fifth-slide',
         pictureFolder: 'sjmc',
-        fileExtension: 'jpg'
+        fileExtension: 'jpg',
+        alt: 'Mad Devs’ Team Trip to the SJMC.'
       }
     ]
   };
@@ -257,9 +286,10 @@ describe('SirJohnMonashCentre', () => {
         $nuxt: {
           $on: jest.fn()
         }
-      }
+      },
+      stubs: ['router-link']
     });
-    wrapper.vm.$refs = { 
+    wrapper.vm.$refs = {
       video: {
         paused: true,
         play: jest.fn(),
@@ -279,7 +309,7 @@ describe('SirJohnMonashCentre', () => {
   test('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
+
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });

@@ -69,13 +69,33 @@
     }
   }
 
-  &_mobile-break {
+  &_logotype {
+    @include nambafood-footer;
+    width: 115px;
+    height: 103px;
+    margin-bottom: 41px;
+  }
+
+  &_mobile-break,
+  &_mobile-screen-break { // Foooter text break
     display: none;
   }
 
   @media screen and (max-width: 768px) {
     &_sjmc-phone-video-section {
       padding: 50px 0;
+    }
+
+    &_logotype {
+      width: 91px;
+      height: 81px;
+      margin-bottom: 31px;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    &_mobile-screen-break {
+      display: block;
     }
   }
 

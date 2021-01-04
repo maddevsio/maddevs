@@ -1,9 +1,11 @@
 <template>
-  <div class="embed">
+  <div class="embed" :class="slice.items[0].embed.type">
     <prismic-embed :field="slice.items[0].embed" target="_blank"/>
-    <div class="embed__image-wrapper">
-      <div class="embed__image" :style="{backgroundImage: `url(${slice.items[0].embed.thumbnail_url})`}" />
-    </div>
+    <template v-if="slice.items[0].embed.type === 'link'">
+      <div class="embed__image-wrapper">
+        <div class="embed__image" :style="{backgroundImage: `url(${slice.items[0].embed.thumbnail_url})`}" />
+      </div>
+    </template>
   </div>
 </template>
 
@@ -15,35 +17,43 @@ export default {
       default: null
     }
   },
-  name: 'embed-slice'
+  name: 'embed-slice',
+  created() {
+    this.slice.items[0].embed.html = this.slice.items[0].embed.html
+      .replace('<h1>', '<div class="embed__title">')
+      .replace('</h1>', '</div>')
+      .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`)
+    ;
+
+    if (this.slice.items[0].embed.type === 'video') {
+      this.slice.items[0].embed.html = this.slice.items[0].embed.html.replace(/height="[0-9]*"/, 'height="500"').replace(/width="[0-9]*"/, 'width="100%"');
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
   @import '../../../assets/styles/_vars';
   .embed {
-    display: flex;
-    margin: 25px 0;
-    border: 1px solid $border-color--silver;
+
+    &.link {
+      display: flex;
+      margin: 25px 0;
+      border: 1px solid $border-color--silver;
+
+      /deep/ > div {
+        display: flex;
+        padding: 24px 0 24px 24px;
+      }
+    }
 
     /deep/ > div {
-      display: flex;
-      padding: 24px 0 24px 24px;
-
       a {
         text-decoration: none;
       }
 
       img {
         display: none;
-      }
-
-      h1 {
-        margin-bottom: 6px;
-        font-size: 21px;
-        font-family: 'Poppins-Bold', sans-serif;
-        font-weight: 600;
-        color: $text-color--black-cases;
       }
 
       h1,
@@ -59,10 +69,19 @@ export default {
       }
     }
 
+    /deep/ &__title {
+      margin-top: 0;
+      margin-bottom: 6px;
+      font-size: 21px;
+      font-family: 'Poppins-Bold', sans-serif;
+      font-weight: 600;
+      color: $text-color--black-cases;
+    }
+
     &__image {
       width: 100%;
-      background-size: contain;
-      background-position: right;
+      background-size: cover;
+      background-position: center;
       background-repeat: no-repeat;
 
       &-wrapper {

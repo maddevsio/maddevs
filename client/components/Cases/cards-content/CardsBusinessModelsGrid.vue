@@ -7,7 +7,7 @@
           fileName="personal"
           fileNameRetina="personal@2x"
           fileExtension="png"
-          alt=""
+          alt="Namba Food Personal couriers."
           :lazyLoading="true"
         />
       </div>
