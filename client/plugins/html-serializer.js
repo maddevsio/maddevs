@@ -44,11 +44,12 @@ export default (type, element, content, children) => {
     return result;
   }
 
-  if(type === Elements.paragraph) {
+  if(type === Elements.paragraph || type === Elements.list || type === Elements.paragraph || type === Elements.oList) {
     const processedChildren = children.map(child => child.replace(
       /`([^`]*)`/g,
       (match, p) => `<span class="inline-code">${p}</span>`
-    ));
+    )
+      .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`));
     return `<p>${processedChildren.join('')}</p>`;
   }
 
