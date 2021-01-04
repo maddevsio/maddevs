@@ -77,7 +77,8 @@ export default {
       featuredImage: '',
       headingsList: [],
       buttonIsActive: false,
-      shareIcons: ['']
+      shareIcons: [''],
+      jsonLd: []
     };
   },
   head () {
@@ -99,7 +100,9 @@ export default {
         { property: 'twitter:description', content: this.document.subtitle.length !== 0 ? this.document.subtitle[0].text : ''},
         { property: 'twitter:image:src', content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico' },
         { property: 'twitter:url', content: this.ogUrl}
-      ]
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: this.jsonLd
     };
   },
   async asyncData({ $prismic, params, error }) {
@@ -140,6 +143,7 @@ export default {
     window.addEventListener('scroll', this.shareButtonsScroll);
     window.scroll();
     this.getAllHeadings();
+    this.getLdScripts();
   },
   destroyed () {
     window.removeEventListener('scroll', this.shareButtonsScroll);
@@ -192,6 +196,14 @@ export default {
       } else {
         shareButtons.style.cssText = 'top: 100px';
       }
+    },
+    getLdScripts() {
+      this.jsonLd = this.document.schema_org_snippets.map(snippet => {
+        return {
+          type: 'application/ld+json',
+          innerHTML: this.$prismic.asText(snippet.single_snippet).replaceAll(/\n ?/g, '')
+        };
+      });
     }
   }
 };
