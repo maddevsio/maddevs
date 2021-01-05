@@ -125,7 +125,7 @@ module.exports = {
   },
   robots: {
     UserAgent: '*',
-    Disallow: ['/gdpr', '/privacy', '/nda'],
+    Disallow: ['/gdpr', '/privacy', '/nda', '/blog'],
     Sitemap: 'https://maddevs.io/sitemap.xml'
   },
   prismic: {
