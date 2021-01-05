@@ -1,28 +1,34 @@
 <template>
   <section class="home">
     <div class="body-content">
-      <div v-if="posts.length">
-        <featured-post :post="featuredPost" v-if="featuredPost" class="container"/>
-        <Skeleton v-else/>
-      </div>
+      <featured-post :post="featuredPost" v-if="loaded && featuredPost" class="container"/>
+      <skeleton-featured-post v-else class="container"/>
       <div class="latest-posts">
         <div class="container">
           <div class="latest-posts__wrapper">
-            <section v-for="post in recentPosts" :key="post.id" :post="post" class="latest-posts__single-post">
-              <div class="single-post__wrapper">
-                <Skeleton>
+            <template v-if="loaded">
+              <section v-for="post in recentPosts" :key="post.id" :post="post" class="latest-posts__single-post">
+                <div class="single-post__wrapper">
                   <div class="banner" v-if="post.id === 'banner'">
                     <a :href="post.link.url" :target="post.link.target">
                       <img :src="post.banner.url" :alt="post.id">
                     </a>
                   </div>
                   <recommended-blog-widget :post="post" v-else/>
-                </Skeleton>
-              </div>
-            </section>
+                </div>
+              </section>
+            </template>
+            <template v-else>
+              <section class="latest-posts__single-post" v-for="i in 6" :key="i">
+                <div class="single-post__wrapper">
+                  <skeleton-blog-widget/>
+                </div>
+              </section>
+            </template>
           </div>
         </div>
       </div>
+
       <div class="filtered-posts" v-if="posts.length">
         <div class="container">
           <div class="filter">
@@ -57,7 +63,8 @@
 import BlogWidget from '@/components/Blog/BlogWidget.vue';
 import RecommendedBlogWidget from '@/components/Blog/RecommendedBlogWidget';
 import FeaturedPost from '@/components/Blog/FeaturedPost';
-import { Skeleton } from 'vue-loading-skeleton';
+import SkeletonBlogWidget from '@/components/Blog/SkeletonBlogWidget';
+import SkeletonFeaturedPost from '@/components/Blog/SkeletonFeaturedPost';
 
 export default {
   name: 'Blog',
@@ -65,7 +72,9 @@ export default {
   components: {
     BlogWidget,
     FeaturedPost,
-    RecommendedBlogWidget
+    RecommendedBlogWidget,
+    SkeletonBlogWidget,
+    SkeletonFeaturedPost
   },
   data() {
     return {
@@ -78,9 +87,9 @@ export default {
       page: 1,
       pageSize: 12,
       metaTitle: 'Blog',
-      description: '',
       ogUrl: 'https://maddevs.io/blog',
-      jsonLd: []
+      jsonLd: [],
+      loaded: false
     };
   },
   created() {
@@ -90,19 +99,19 @@ export default {
     return {
       title: this.title,
       meta: [
-        { name: 'description', content: this.description },
+        { name: 'description', content: this.homepageContent.description || '' },
         // Facebook / Open Graph
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: this.ogUrl },
         { property: 'og:title', content: this.metaTitle },
-        { property: 'og:description', content: this.description },
+        { property: 'og:description', content: this.homepageContent.description || ''},
         { property: 'og:image', content: 'https://maddevs.io/Open-Graph.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         // Twitter / Twitter Card
         { property: 'twitter:card', content: 'summary' },
         { property: 'twitter:text:title', content: this.metaTitle },
-        { property: 'twitter:description', content: this.description },
+        { property: 'twitter:description', content: this.homepageContent.description || '' },
         { property: 'twitter:image:src', content: 'https://maddevs.io/Open-Graph.png' },
         { property: 'twitter:url', content: this.ogUrl }
       ],
@@ -127,6 +136,7 @@ export default {
 
       this.posts = posts.results;
       this.featuredPost = posts.results.find(post => post.tags.includes('Featured post'));
+      this.loaded = true;
     },
 
     async getHomePageContent() {
