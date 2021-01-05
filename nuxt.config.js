@@ -69,7 +69,7 @@ module.exports = {
       //   }
       //   return posts;
       // };
-      
+
       return ['/', '/services', '/projects', '/careers', '/gdpr', '/nda', '/privacy', '/faq', '/case-studies/namba-food', '/case-studies/sir-john-monash-centre'];
       // const prismicData = await axios.get(process.env.NODE_PRISMIC_API);
       // const ref = prismicData.data.refs[0].ref;
