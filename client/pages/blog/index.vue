@@ -3,18 +3,21 @@
     <div class="body-content">
       <div v-if="posts.length">
         <featured-post :post="featuredPost" v-if="featuredPost" class="container"/>
+        <Skeleton v-else/>
       </div>
-      <div class="latest-posts" v-if="posts && homepageContent">
+      <div class="latest-posts">
         <div class="container">
-          <div v-if="recentPosts.length !== 0" class="latest-posts__wrapper">
+          <div class="latest-posts__wrapper">
             <section v-for="post in recentPosts" :key="post.id" :post="post" class="latest-posts__single-post">
               <div class="single-post__wrapper">
-                <div class="banner" v-if="post.id === 'banner'">
-                  <a :href="post.link.url" :target="post.link.target">
-                    <img :src="post.banner.url" :alt="post.id">
-                  </a>
-                </div>
-                <recommended-blog-widget :post="post" v-else/>
+                <Skeleton>
+                  <div class="banner" v-if="post.id === 'banner'">
+                    <a :href="post.link.url" :target="post.link.target">
+                      <img :src="post.banner.url" :alt="post.id">
+                    </a>
+                  </div>
+                  <recommended-blog-widget :post="post" v-else/>
+                </Skeleton>
               </div>
             </section>
           </div>
@@ -54,6 +57,7 @@
 import BlogWidget from '@/components/Blog/BlogWidget.vue';
 import RecommendedBlogWidget from '@/components/Blog/RecommendedBlogWidget';
 import FeaturedPost from '@/components/Blog/FeaturedPost';
+import { Skeleton } from 'vue-loading-skeleton';
 
 export default {
   name: 'Blog',
