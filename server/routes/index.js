@@ -44,7 +44,7 @@ router.post('/send-email', (req, res) => {
           },
           'to': [{
             'name': 'Mad Devs team',
-            'email': 'hr@maddevs.io'
+            'email': req.body.variables.emailTo
           }],
           'attachments_binary': { [req.body.attachment.name]: req.body.attachment.base64 }
         };
@@ -61,7 +61,7 @@ router.post('/send-email', (req, res) => {
           },
           'to': [{
             'name': 'Mad Devs team',
-            'email': 'rock@maddevs.io'
+            'email': req.body.variables.emailTo
           }]
         };
       }
