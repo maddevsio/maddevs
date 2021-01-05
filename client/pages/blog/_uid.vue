@@ -240,6 +240,16 @@ export default {
     padding-left: 30px;
   }
 
+  /deep/ .inline-code {
+    font-family: 'IBM Plex Mono', monospace;
+    background: $bgcolor--grey-light;
+    padding: 0 4px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 129%;
+  }
+
   .blog-post {
     margin: auto;
     background-color: $text-color--white-primary;
