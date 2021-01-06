@@ -43,10 +43,6 @@ describe('Image attribute slice component', () => {
   });
 
   test('caption rendered', () => {
-    expect(wrapper.find('.wrapper').text()).toBe(slice.primary.caption);
-  });
-
-  test('header contains image', () => {
-    expect(wrapper.find('.blog-header').attributes('style')).toMatch(`background-image: url(${slice.primary.image.url})`);
+    expect(wrapper.find('.image-label').text()).toBe(slice.primary.caption);
   });
 });
