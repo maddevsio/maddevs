@@ -50,7 +50,24 @@ export default (type, element, content, children) => {
       (match, p) => `<span class="inline-code">${p}</span>`
     )
       .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`));
-    return `<p>${processedChildren.join('')}</p>`;
+    if (type === Elements.list || type === Elements.list) {
+      console.log(processedChildren, children);
+    }
+
+    let tag;
+    switch (type) {
+    case (Elements.list) :
+      tag = 'ul';
+      break;
+    case (Elements.oList) :
+      tag = 'ol';
+      break;
+    default:
+      tag = 'p';
+      break;
+    }
+
+    return `<${tag}>${processedChildren.join('')}</${tag}>`;
   }
 
   // Return null to stick with the default behavior for everything else
