@@ -88,16 +88,6 @@ export default {
       max-width: 100%;
       height: auto;
     }
-
-    .inline-code {
-      font-family: 'IBM Plex Mono', monospace;
-      background: $bgcolor--grey-light;
-      padding: 0 4px;
-      border-radius: 3px;
-      display: inline-block;
-      font-size: 15px;
-      line-height: 129%;
-    }
   }
 
   @media only screen and (max-width: 1024px) {

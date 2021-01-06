@@ -75,7 +75,6 @@ export default {
       description: '',
       ogUrl: '',
       featuredImage: '',
-      headingsList: [],
       buttonIsActive: false,
       shareIcons: [''],
       jsonLd: []
@@ -85,21 +84,24 @@ export default {
     return {
       title: this.title,
       meta: [
-        { name: 'description', content: this.document.meta_description.length !== 0 ? this.$prismic.asText(this.document.meta_description) : ''},
+        { name: 'description', content: this.$prismic.asText(this.document.meta_description)},
         // Facebook / Open Graph
         { property: 'og:type', content: 'website'},
         { property: 'og:url', content: this.ogUrl},
-        { property: 'og:title', content: this.document.title.length !== 0 ? this.document.title[0].text : ''},
-        { property: 'og:description', content: this.document.subtitle.length !== 0 ? this.document.subtitle[0].text : ''},
+        { property: 'og:title', content: this.title},
+        { property: 'og:description', content: this.$prismic.asText(this.document.meta_description)},
         { property: 'og:image', content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico'},
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         // Twitter / Twitter Card
         { property: 'twitter:card', content: 'summary' },
-        { property: 'twitter:text:title', content: this.document.title.length !== 0 ? this.document.title[0].text : '' },
-        { property: 'twitter:description', content: this.document.subtitle.length !== 0 ? this.document.subtitle[0].text : ''},
+        { property: 'twitter:text:title', content: this.title },
+        { property: 'twitter:description', content: this.$prismic.asText(this.document.meta_description)},
         { property: 'twitter:image:src', content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico' },
         { property: 'twitter:url', content: this.ogUrl}
+      ],
+      link: [
+        { rel: 'canonical', href: this.ogUrl}
       ],
       __dangerouslyDisableSanitizers: ['script'],
       script: this.jsonLd
@@ -134,33 +136,17 @@ export default {
     }
   },
   mounted() {
-    if (this.document.title.length !== 0) {
-      this.title = this.document.title[0].text;
-    }
-
+    this.title = this.$prismic.asText(this.document.meta_title) || this.document.title[0].text;
     this.ogUrl = window.location.href;
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('scroll', this.shareButtonsScroll);
     window.scroll();
-    this.getAllHeadings();
     this.getLdScripts();
   },
   destroyed () {
     window.removeEventListener('scroll', this.shareButtonsScroll);
   },
   methods: {
-    getAllHeadings() {
-      this.document.body.forEach(listItem => {
-        if(listItem.primary.text !== undefined) {
-          if(listItem.primary.text[0].type === 'heading1') {
-            this.headingsList.push({
-              textContent: listItem.primary.text[0].text,
-              headingName: listItem.primary.text[0].text.toLowerCase().replace(/\s/g , '-')
-            });
-          }
-        }
-      });
-    },
     scrollTo(className) {
       const element = document.getElementsByClassName(className);
       element[0].scrollIntoView(
@@ -238,6 +224,16 @@ export default {
   /deep/ ul {
     list-style: disc;
     padding-left: 30px;
+  }
+
+  /deep/ .inline-code {
+    font-family: 'IBM Plex Mono', monospace;
+    background: $bgcolor--grey-light;
+    padding: 0 4px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 129%;
   }
 
   .blog-post {

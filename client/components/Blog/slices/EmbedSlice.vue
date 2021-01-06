@@ -36,6 +36,10 @@ export default {
   @import '../../../assets/styles/_vars';
   .embed {
 
+    /deep/ iframe {
+      max-width: 100%;
+    }
+
     &.link {
       display: flex;
       margin: 25px 0;
