@@ -82,4 +82,11 @@ img {
     width: auto;
   }
 }
+
+/deep/ #silentbox-overlay {
+  &__embed {
+    width: 98%;
+    height: 96%;
+  }
+}
 </style>
