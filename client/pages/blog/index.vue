@@ -68,7 +68,7 @@ import SkeletonFeaturedPost from '@/components/Blog/SkeletonFeaturedPost';
 
 export default {
   name: 'Blog',
-  layout: 'default',
+  layout: 'Blog',
   components: {
     BlogWidget,
     FeaturedPost,

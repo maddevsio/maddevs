@@ -1,6 +1,6 @@
 <template>
   <div class="embed" :class="slice.items[0].embed.type">
-    <prismic-embed :field="slice.items[0].embed" target="_blank"/>
+    <prismic-embed :field="slice.items[0].embed" target="_blank" :class="`embed__${slice.items[0].embed.type}`"/>
     <template v-if="slice.items[0].embed.type === 'link'">
       <div class="embed__image-wrapper">
         <div class="embed__image" :style="{backgroundImage: `url(${slice.items[0].embed.thumbnail_url})`}" />
@@ -44,11 +44,6 @@ export default {
       display: flex;
       margin: 25px 0;
       border: 1px solid $border-color--silver;
-
-      /deep/ > div {
-        display: flex;
-        padding: 24px 0 24px 24px;
-      }
     }
 
     /deep/ > div {
@@ -73,6 +68,11 @@ export default {
       }
     }
 
+    &__link {
+      display: flex;
+      padding: 24px 0 24px 24px;
+    }
+
     /deep/ &__title {
       margin-top: 0;
       margin-bottom: 6px;
@@ -84,6 +84,7 @@ export default {
 
     &__image {
       width: 100%;
+      height: 100%;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -91,6 +92,28 @@ export default {
       &-wrapper {
         width: 33%;
         padding: 24px !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .embed {
+      &.link {
+        flex-wrap: wrap;
+      }
+
+      &__link {
+        order: 2;
+        width: 100%;
+        padding-right: 24px;
+      }
+      &__image {
+        height: 40vw;
+
+        &-wrapper {
+          order: 1;
+          width: 100%;
+        }
       }
     }
   }
