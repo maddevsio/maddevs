@@ -6,6 +6,8 @@ import SirJohnMonashCentre from '../client/pages/case-studies/sir-john-monash-ce
 describe('SirJohnMonashCentre', () => {
   let wrapper;
   const data = {
+    title: 'Mad Devs Case Study: Australian National Memorial - Sir John Monash Centre',
+    description: 'The SJMC and Mad Devs partnership has been based on enhancements and preventative maintenance contracts. Transferring a project to another IT partner is never easy for all parties involved. Let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.',
     keyGoalsList: [
       'Understanding the complexity of the MMIT Brain software',
       'Building a small-scale version of the SJMC experience in 1 month',
@@ -18,7 +20,7 @@ describe('SirJohnMonashCentre', () => {
       'Setting up system monitoring'
     ],
     theChallenges: [
-      '100MB of Documentation and 1M+ lines of code required months of onboarding.',
+      'The 100MB of documentation and 1M+ lines of code, which required months of onboarding.',
       'The unique nature of the software in a one-of-a-kind technologically advanced centre.',
       'The 450 units of hardware connected to operate as a coherent solution that delivers content to SJMC visitors in a personalised manner.',
       'The 5000 km distance between the SJMC and Mad Devs’ office.',
@@ -116,7 +118,7 @@ describe('SirJohnMonashCentre', () => {
       },
       {
         name: 'Sergey Boyko',
-        position: 'QA Manager',
+        position: 'QA Tester',
         fileName: 'boyko',
         fileExtension: 'png',
         alt: 'Sergey Boyko'
@@ -284,9 +286,10 @@ describe('SirJohnMonashCentre', () => {
         $nuxt: {
           $on: jest.fn()
         }
-      }
+      },
+      stubs: ['router-link']
     });
-    wrapper.vm.$refs = { 
+    wrapper.vm.$refs = {
       video: {
         paused: true,
         play: jest.fn(),
@@ -306,7 +309,7 @@ describe('SirJohnMonashCentre', () => {
   test('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
+
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });

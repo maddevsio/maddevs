@@ -104,7 +104,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="case_paragraph m-24_bottom media-m-12_bottom"
       >
         
-        The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front during the First World War in the words of those who served. 
+        The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front during the First World War in the words of those who served.
       
       </p>
        
@@ -139,7 +139,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
       <h2
         class="case_title_h2 m-12_bottom"
       >
-        SJMC and Mad Devs partnership
+        The SJMC and Mad Devs partnership
       </h2>
        
       <p
@@ -154,7 +154,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="case_paragraph"
       >
         
-        After conducting an independent audit of a previous IT vendor, a list of technical debt was formed.
+        After conducting an 
+        <router-link-stub
+          class="case_link"
+          to="/services#it-consulting"
+        >
+          independent audit
+        </router-link-stub>
+         of a previous IT vendor, a list of technical debt was formed.
       
       </p>
        
@@ -202,7 +209,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         <li
           class="list-item_box"
         >
-          100MB of Documentation and 1M+ lines of code required months of onboarding.
+          The 100MB of documentation and 1M+ lines of code, which required months of onboarding.
         </li>
         <li
           class="list-item_box"
@@ -243,7 +250,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
       <h2
         class="case_title_h2 m-96_top media-m-48_top m-12_bottom"
       >
-        SJMC software
+        The SJMC Software
       </h2>
        
       <p
@@ -264,7 +271,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="case_paragraph m-48_bottom media-m-24_bottom"
       >
         
-        Personalized experience at your own speed and language
+        Personalised experience at your own speed and in your own language
       
       </p>
     </section>
@@ -643,7 +650,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
           <h4
             class="case_title_h4 m-8_bottom media-m-2_bottom"
           >
-            110,000 visitors
+            60,000 visitors
           </h4>
            
           <p
@@ -976,7 +983,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
-        Custom small-scale version of SJMC in Mad Devs office
+        Custom small-scale version of the SJMC in Mad Devs’ office
       </h3>
        
       <p
@@ -1684,7 +1691,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
-        Automated testing of MMIT Brain via custom emulators
+        Automated testing the MMIT Brain via custom emulators
       </h2>
        
       <p
@@ -1760,7 +1767,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3"
       >
-        2. End-to-end tests using emulators of mobile applications
+        2. End to end tests using emulators of mobile applications
       </h3>
        
       <blockquote
@@ -2221,7 +2228,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__position"
             >
-              QA Manager
+              QA Tester
             </p>
           </div>
         </li>
@@ -2537,7 +2544,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="case_paragraph m-24_bottom media-m-12_bottom"
       >
         
-        According to the internal CSAT survey, 98% of Mad Devs' customers find the company's service great value for money, and most of them stay with us for 3+ years. The SJMC is no exception. 
+        According to the internal CSAT survey, 98% of Mad Devs' customers find the company's service great value for money, and most of them stay with us for 3+ years. The SJMC is no exception.
       
       </p>
        
@@ -2597,11 +2604,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
       class="case_footer container_full"
     >
       <div
-        class="case_logotype nambafood"
+        class="case_logotype"
       />
        
       <h2
-        class="case_title case_title_h2"
+        class="case_title case_title_h2 case_title-sjmc-case"
       >
         
       Namba Food 

@@ -187,9 +187,13 @@
   }
 
   a,
-  span {
+  div {
     color: $label-text--grey-dark;
     white-space: nowrap;
+  }
+
+  div {
+    display: inline;
   }
 }
 

@@ -1,16 +1,26 @@
 <template>
   <section class="case_footer container_full">
-    <div class="case_logotype nambafood"></div>
-    <h2 class="case_title case_title_h2">
+    <slot name="icon"></slot>
+    <h2 class="case_title case_title_h2" :class="`case_title-${className}`">
       <slot></slot>
     </h2>
-    <a href="/case-studies/namba-food" class="case_next-project-button">Read next project</a>
+    <a :href="link" class="case_next-project-button">Read next project</a>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  props: {
+    link: {
+      type: String,
+      defaul: ''
+    },
+    className: {
+      type: String,
+      default: ''
+    }
+  }
 };
 </script>
 
@@ -37,16 +47,16 @@ export default {
     }
   }
 
-  &_logotype {
-    @include nambafood-footer;
-    width: 115px;
-    height: 103px;
-    margin-bottom: 41px;
+  &_title {
+    text-align: center;
   }
 
-  &_title {
+  &_title-sjmc-case {
     margin-bottom: 51px;
-    text-align: center;
+  }
+
+  &_title-namba-food-case {
+    margin-bottom: 25px;
   }
 
   &_next-project-button {
@@ -56,10 +66,6 @@ export default {
     cursor: pointer;
     text-decoration: none;
     @include default_text($text-color--white-primary, 17px, 166%, -0.035em, normal);
-  }
-
-  /deep/ &_mobile-screen-break {
-    display: none;
   }
 
   @media screen and (max-width: 768px) {
@@ -72,25 +78,12 @@ export default {
       }
     }
 
-    &_logotype {
-      @include nambafood-footer;
-      width: 91px;
-      height: 81px;
-      margin-bottom: 31px;
-    }
-
-    &_title {
+    &_title-sjmc-case {
       margin-bottom: 41px;
     }
 
     &_next-project-button {
       @include default_text($text-color--white-primary, 16px, 150%, -0.02em, normal);
-    }
-  }
-
-  @media screen and (max-width: 420px) {
-    /deep/ &_mobile-screen-break {
-      display: block;
     }
   }
 }

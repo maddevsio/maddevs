@@ -19,7 +19,11 @@ export default {
   },
   name: 'embed-slice',
   created() {
-    this.slice.items[0].embed.html = this.slice.items[0].embed.html.replace('<h1>', '<div class="embed__title">').replace('</h1>', '</div>');
+    this.slice.items[0].embed.html = this.slice.items[0].embed.html
+      .replace('<h1>', '<div class="embed__title">')
+      .replace('</h1>', '</div>')
+      .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`)
+    ;
 
     if (this.slice.items[0].embed.type === 'video') {
       this.slice.items[0].embed.html = this.slice.items[0].embed.html.replace(/height="[0-9]*"/, 'height="500"').replace(/width="[0-9]*"/, 'width="100%"');
@@ -31,6 +35,10 @@ export default {
 <style lang="scss" scoped>
   @import '../../../assets/styles/_vars';
   .embed {
+
+    /deep/ iframe {
+      max-width: 100%;
+    }
 
     &.link {
       display: flex;
@@ -77,7 +85,7 @@ export default {
     &__image {
       width: 100%;
       background-size: cover;
-      background-position: right;
+      background-position: center;
       background-repeat: no-repeat;
 
       &-wrapper {

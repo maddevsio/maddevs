@@ -1,0 +1,11 @@
+@mixin title($color, $size, $spacing) {
+  font-family: 'Inter-Regular', sans-serif;
+  font-style: normal;
+  font-feature-settings: 'zero' on, 'ordn' on, 'ss02' on, 'ss05' on;
+
+  color: $color;
+  font-weight: 600;
+  font-size: $size;
+  line-height: 130%;
+  letter-spacing: $spacing;
+}

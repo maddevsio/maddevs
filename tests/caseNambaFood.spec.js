@@ -69,14 +69,14 @@ describe('Namba food', () => {
       },
       {
         name: 'Eldar Akkozov',
-        position: 'Mobile Developer',
+        position: 'Mobile App Developer',
         fileName: 'eldar-akkozov',
         fileExtension: 'png',
         alt: 'Eldar Akkozov'
       },
       {
         name: 'Altynai Toktomuratova',
-        position: 'Mobile Developer',
+        position: 'Mobile App Developer',
         fileName: 'altynai-toktomuratova',
         fileExtension: 'png',
         alt: 'Altynai Toktomuratova'

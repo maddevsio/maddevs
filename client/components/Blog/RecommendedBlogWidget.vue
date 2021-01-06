@@ -29,12 +29,6 @@ export default {
   components: {
     PostAuthor
   },
-  data() {
-    return {
-      link: '',
-      formattedDate: ''
-    };
-  },
   methods: {
     // Function to get the first paragraph of text in a blog post and limit the displayed text at 300 characters
     getFirstParagraph (post) {
@@ -63,9 +57,13 @@ export default {
       }
     }
   },
-  created() {
-    this.link = linkResolver(this.post);
-    this.formattedDate = Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(this.post.data.date));
+  computed: {
+    link: function(){
+      return linkResolver(this.post);
+    },
+    formattedDate: function() {
+      return Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(this.post.data.date));
+    }
   }
 };
 </script>
