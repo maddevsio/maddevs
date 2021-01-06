@@ -11,7 +11,6 @@
 </template>
 
 <script>
-// import VueSilentbox from 'vue-silentbox';
 
 export default {
   props: {
@@ -20,9 +19,6 @@ export default {
       required: true
     }
   },
-  // components: {
-  //   VueSilentbox
-  // },
   name: 'image-caption-slice',
   data: function() {
     return {

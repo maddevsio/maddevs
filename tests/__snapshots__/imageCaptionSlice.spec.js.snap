@@ -3,14 +3,21 @@
 exports[`Image attribute slice component renders correctly 1`] = `
 <div>
   <div
-    class="blog-header single"
-    style="background-image: url(https://images.prismic.io/superpupertest/4b27a325-c48e-4f20-943d-e40537291055_2020-12-08_14-11.png?auto=compress,format&rect=0,0,1231,306&w=1200&h=298);"
+    class="post-part single"
   >
-    <div
-      class="wrapper"
+    <p
+      class="block-img image-full-width"
+    >
+      <prismic-image-stub
+        field="[object Object]"
+      />
+    </p>
+     
+    <p
+      class="image-label"
     >
       caption
-    </div>
+    </p>
   </div>
 </div>
 `;
