@@ -467,24 +467,31 @@ export default {
 
   @media only screen and (max-width: 991px) {
     .home {
-
       .latest-posts .latest-posts__wrapper .latest-posts__single-post,
       .filtered-posts .filtered-posts__wrapper .filtered-posts__single-post {
         width: 100%;
+      }
+
+      .latest-posts .latest-posts__wrapper .latest-posts__single-post,
+      .filtered-posts .filtered-posts__wrapper {
         margin-bottom: 56px;
       }
 
-      .latest-posts {
+      .filtered-posts__single-post {
+        margin-bottom: 0;
+      }
 
+      .latest-posts {
         &__wrapper {
           margin-top: 29px;
         }
       }
 
       .filtered-posts {
+        padding-bottom: 0;
 
         .filter {
-
+          margin-bottom: 35px;
           .filter-list {
             flex-wrap: nowrap;
             margin: 0 -4px;
@@ -508,11 +515,12 @@ export default {
         }
 
         &__wrapper {
+          margin-top: 0;
           padding-bottom: 38px;
 
           /deep/ .blog-post {
             display: flex;
-            margin-bottom: 36px;
+            margin-bottom: 18px;
 
             &__cover-image {
               width: 124px;
@@ -527,10 +535,42 @@ export default {
               .tag {
                 display: none;
               }
+
+              .created-at {
+                font-size: 11px;
+                line-height: 16px;
+                letter-spacing: -0.02em;
+              }
             }
 
             &__paragraph {
               display: none;
+            }
+
+            &__title {
+              font-size: 15px;
+              line-height: 18.6px;
+              letter-spacing: -0.03em;
+            }
+
+            &__author {
+              align-items: unset;
+            }
+
+            &__author-image {
+              width: 20px;
+              height: 20px;
+            }
+
+            &__author-title, 
+            &__author-name {
+              font-size: 11px;
+              line-height: 16px;
+              letter-spacing: -0.02em;
+            }
+
+            &__author-name {
+              margin-bottom: 0;
             }
           }
         }
@@ -540,6 +580,22 @@ export default {
         padding: 12px 0;
         margin-bottom: 24px;
         width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .home {
+      .filtered-posts {
+        &__wrapper {
+          /deep/ .blog-post {
+            &__cover-image {
+              width: 120px;
+              height: 120px;
+              margin-right: 10px;
+            }
+          }
+        }
       }
     }
   }
