@@ -44,7 +44,7 @@ exports[`Featured post component renders correctly 1`] = `
               Alisa Manakova
             </p>
              
-            <p
+            <div
               class="blog-post__data-of-creation"
             >
               <span
@@ -52,7 +52,7 @@ exports[`Featured post component renders correctly 1`] = `
               >
                 Chief Strategy Officer
               </span>
-            </p>
+            </div>
           </div>
         </div>
          
