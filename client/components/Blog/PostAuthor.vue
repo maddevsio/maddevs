@@ -4,9 +4,9 @@
     <div class="blog-post__none-image" v-else></div>
     <div class="blog-post__author-info">
       <p class="blog-post__author-name">{{ $prismic.asText(document.author).substr(0, 100) }}</p>
-      <p class="blog-post__data-of-creation">
+      <div class="blog-post__data-of-creation">
         <span class="blog-post__author-title">{{ document.author_title }}</span>
-      </p>
+      </div>
     </div>
   </div>
 </template>
