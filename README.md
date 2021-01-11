@@ -25,4 +25,12 @@ $ npm start
 $ npm run generate
 ```
 
+## Deploy to the production server, follow the steps below 
+
+1. In the file `server/routes/server.js`, on lines 47 and 64, replace email from current, to `req.body.variables.emailTo`
+
+2. Create pull request from new-develop to master. If all checks passed successfully, you can merge new-develop to master
+
+3. After deploy, set old test email for staging in file `server/routes/server.js`
+
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
