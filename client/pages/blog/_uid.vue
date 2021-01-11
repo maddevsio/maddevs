@@ -197,7 +197,8 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
-  @import '../../assets/styles/blog/mixins';
+  @import '../../assets/styles/cases/mixins';
+  /*@import '../../assets/styles/blog/mixins';*/
   @import '../../assets/styles/socialNetworkIcons';
 
   /deep/ h2 {

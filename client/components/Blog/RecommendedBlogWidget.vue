@@ -105,8 +105,15 @@ export default {
 
     &__title {
       font-size: 21px;
-      line-height: 28px;
-      letter-spacing: -1px;
+      line-height: 130%;
+      letter-spacing: -0.02em;
+    }
+
+    &__paragraph {
+      font-size: 16px;
+      line-height: 166%;
+      letter-spacing: -0.035em;
+      font-family: 'Inter-Regular', sans-serif;
     }
 
     &__meta {
@@ -125,6 +132,7 @@ export default {
         background-color: $bgcolor--silver;
         padding: 4px 16px;
         transition: 0.2s;
+        line-height: 22px;
       }
     }
   }

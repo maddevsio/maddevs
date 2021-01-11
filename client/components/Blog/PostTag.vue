@@ -38,5 +38,10 @@ export default {
       background-color: $text-color--quote-box;
       color: $bgcolor--silver;
     }
+
+    .tag {
+      line-height: 22px;
+      font-size: 13px;
+    }
   }
 </style>

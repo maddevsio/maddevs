@@ -89,8 +89,9 @@ export default {
 
     &__title {
       font-size: 52px;
-      line-height: 67px;
+      line-height: 130%;
       margin-bottom: 15px;
+      letter-spacing: -2px;
     }
 
     &__paragraph {
