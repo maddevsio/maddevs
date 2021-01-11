@@ -57,7 +57,7 @@ export default {
 
 
     /deep/ p {
-      margin: 25px 0;
+      margin: 12px 0;
       font-family: 'Inter-Regular', sans-serif;
     }
 

@@ -134,12 +134,22 @@ export default {
   @media only screen and (max-width: 991px) {
     .featured-post {
 
+      &__wrapper {
+        margin-top: 0;
+        margin-bottom: 36px;
+      }
+
       &__main {
+        padding: 0;
+        margin-top: 0;
         order: 2;
       }
 
       &__paragraph {
         margin-bottom: 38px;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
       }
 
       &__data {
@@ -148,6 +158,10 @@ export default {
         /deep/ .blog-post__author {
           margin-bottom: 16px;
         }
+      }
+
+      &__title {
+        font-size: 35px;
       }
 
       &__meta {
@@ -161,8 +175,10 @@ export default {
       }
 
       &__image-wrapper {
+        padding: 0;
         order: 1;
-        margin-bottom: 16px;
+        margin-bottom: 17px;
+        margin-top: 0;
         text-align: center;
 
         img  {

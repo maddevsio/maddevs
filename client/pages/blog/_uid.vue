@@ -202,7 +202,6 @@ export default {
   @import '../../assets/styles/socialNetworkIcons';
 
   /deep/ h2 {
-    margin: 72px 0 12px;
     @include title($text-color--black-cases, 32px, -0.04em);
   }
 
@@ -257,6 +256,8 @@ export default {
       margin: -514px auto 0;
       position: relative;
 
+      /deep/ h1,
+      /deep/ h2,
       /deep/ h3,
       /deep/ h4,
       /deep/ h5,
@@ -264,16 +265,20 @@ export default {
         margin-top: 48px;
         margin-bottom: 12px;
       }
+
+      /deep/ p + p {
+        margin-top: 28px;
+      }
     }
 
     &__blog-sub-title {
       margin-bottom: 36px;
       font-family: 'Poppins-Regular', sans-serif;
-      color: $text-color--grey;
-      font-size: 20px;
-      font-weight: bold;
-      line-height: 129%;
+      color: $text-color--white-primary;
       letter-spacing: 0.2px;
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 28px;
     }
 
     &__post-info {
