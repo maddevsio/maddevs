@@ -117,7 +117,7 @@ export default {
       font-family: 'Inter-Regular', sans-serif;
 
       .created-at {
-        margin-right: 40px;
+        margin-right: 24px;
         color: $text-color--grey
       }
 

@@ -32,7 +32,7 @@ export default {
     }
 
     &__author-info {
-      margin-left: 15px;
+      margin-left: 9px;
     }
 
     &__author-name {
@@ -58,8 +58,8 @@ export default {
 
     &__author-image,
     &__none-image {
-      width: 30px;
-      height: 30px;
+      width: 36px;
+      height: 36px;
       border-radius: 100%;
     }
 
