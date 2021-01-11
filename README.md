@@ -24,6 +24,7 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
+For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
 ## Deploy to the production server 
 
@@ -32,5 +33,3 @@ $ npm run generate
 2. Create pull request from new-develop to master. If all checks passed successfully, you can merge new-develop to master
 
 3. After deploy, set old test email for staging in file `server/routes/server.js`
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
