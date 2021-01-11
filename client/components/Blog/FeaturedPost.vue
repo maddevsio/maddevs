@@ -83,8 +83,12 @@ export default {
     display: block;
 
     &__wrapper {
-      margin: 96px 0;
+      margin: 95px 0;
       align-items: center;
+    }
+
+    &__main {
+      margin-top: 0;
     }
 
     &__title {
@@ -123,10 +127,12 @@ export default {
 
     &__image-wrapper {
       text-align: right;
+      margin-top: 0;
 
       img {
         max-width: 90%;
         height: auto;
+        vertical-align: middle;
       }
     }
   }

@@ -409,7 +409,8 @@ export default {
   }
 
   .filter-label {
-    display: block;
+    display: flex;
+    align-items: flex-end;
     padding: 47px 22px 22px;
     box-shadow: none;
     background-color: $bgcolor--silver;

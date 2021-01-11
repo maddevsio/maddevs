@@ -267,7 +267,7 @@ export default {
       }
 
       /deep/ p + p {
-        margin-top: 28px;
+        margin-top: 24px;
       }
     }
 
