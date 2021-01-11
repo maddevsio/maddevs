@@ -488,18 +488,19 @@ export default {
             flex-wrap: nowrap;
             margin: 0 -4px;
 
-            .filter-item__wrapper {
+            .filter-item {
+              padding: 0 4px;
               width: 148px;
 
-              .filter-item {
-                padding: 0 4px;
-              }
+              &__wrapper {
+                width: auto;
 
-              .filter-label {
-                font-size: 16px;
-                line-height: 19px;
-                padding: 16px;
-                min-height: 40px;
+                .filter-label {
+                  font-size: 16px;
+                  line-height: 19px;
+                  padding: 16px;
+                  min-height: 40px;
+                }
               }
             }
           }
