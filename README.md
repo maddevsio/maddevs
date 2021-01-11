@@ -25,7 +25,7 @@ $ npm start
 $ npm run generate
 ```
 
-## Deploy to the production server, follow the steps below 
+## Deploy to the production server 
 
 1. In the file `server/routes/server.js`, on lines 47 and 64, replace email from current, to `req.body.variables.emailTo`
 
