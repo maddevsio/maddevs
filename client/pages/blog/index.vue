@@ -415,7 +415,7 @@ export default {
     box-shadow: none;
     background-color: $bgcolor--silver;
     transition: 0.2s;
-    font-family: 'Poppins-Regular', sans-serif;
+    font-family: 'Poppins-Medium', sans-serif;
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
@@ -562,7 +562,7 @@ export default {
               height: 20px;
             }
 
-            &__author-title, 
+            &__author-title,
             &__author-name {
               font-size: 11px;
               line-height: 16px;
