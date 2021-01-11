@@ -50,9 +50,6 @@ export default (type, element, content, children) => {
       (match, p) => `<span class="inline-code">${p}</span>`
     )
       .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`));
-    if (type === Elements.list || type === Elements.list) {
-      console.log(processedChildren, children);
-    }
 
     let tag;
     switch (type) {

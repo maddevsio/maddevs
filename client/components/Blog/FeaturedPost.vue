@@ -83,14 +83,19 @@ export default {
     display: block;
 
     &__wrapper {
-      margin: 96px 0;
+      margin: 95px 0;
       align-items: center;
+    }
+
+    &__main {
+      margin-top: 0;
     }
 
     &__title {
       font-size: 52px;
-      line-height: 67px;
+      line-height: 130%;
       margin-bottom: 15px;
+      letter-spacing: -2px;
     }
 
     &__paragraph {
@@ -127,10 +132,12 @@ export default {
 
     &__image-wrapper {
       text-align: right;
+      margin-top: 0;
 
       img {
         max-width: 90%;
         height: auto;
+        vertical-align: middle;
       }
     }
   }
@@ -138,12 +145,22 @@ export default {
   @media only screen and (max-width: 991px) {
     .featured-post {
 
+      &__wrapper {
+        margin-top: 0;
+        margin-bottom: 36px;
+      }
+
       &__main {
+        padding: 0;
+        margin-top: 0;
         order: 2;
       }
 
       &__paragraph {
         margin-bottom: 38px;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
       }
 
       &__data {
@@ -159,6 +176,10 @@ export default {
         }
       }
 
+      &__title {
+        font-size: 35px;
+      }
+
       &__meta {
         justify-content: space-between;
 
@@ -170,8 +191,10 @@ export default {
       }
 
       &__image-wrapper {
+        padding: 0;
         order: 1;
-        margin-bottom: 16px;
+        margin-bottom: 17px;
+        margin-top: 0;
         text-align: center;
 
         img  {

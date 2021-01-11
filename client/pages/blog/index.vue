@@ -296,13 +296,13 @@ export default {
           display: flex;
           justify-content: flex-start;
           margin: 0 -10px;
+        }
 
-          .filter-item__wrapper {
+        .filter-item {
+          padding: 0 10px;
+
+          &__wrapper {
             width: 16.6666%;
-
-            .filter-item {
-              padding: 0 10px;
-            }
           }
         }
       }
@@ -409,7 +409,8 @@ export default {
   }
 
   .filter-label {
-    display: block;
+    display: flex;
+    align-items: flex-end;
     padding: 47px 22px 22px;
     box-shadow: none;
     background-color: $bgcolor--silver;
@@ -495,18 +496,19 @@ export default {
             flex-wrap: nowrap;
             margin: 0 -4px;
 
-            .filter-item__wrapper {
+            .filter-item {
+              padding: 0 4px;
               width: 148px;
 
-              .filter-item {
-                padding: 0 4px;
-              }
+              &__wrapper {
+                width: auto;
 
-              .filter-label {
-                font-size: 16px;
-                line-height: 19px;
-                padding: 16px;
-                min-height: 40px;
+                .filter-label {
+                  font-size: 16px;
+                  line-height: 19px;
+                  padding: 16px;
+                  min-height: 40px;
+                }
               }
             }
           }

@@ -60,7 +60,6 @@ describe('Table of contents block in single post page', () => {
   });
 
   test('link replaced https', () => {
-    console.log(wrapper.find('li'));
     expect(wrapper.find('li').find('a').attributes('href')).toMatch(content[0].spans[0].data.url.replace('https://', ''));
   });
 });
