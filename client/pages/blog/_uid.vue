@@ -315,6 +315,7 @@ export default {
       font-size: 52px;
       line-height: 67px;
       color: $text-color--white;
+      font-family: 'Poppins-Medium', sans-serif;
     }
 
     &__share {

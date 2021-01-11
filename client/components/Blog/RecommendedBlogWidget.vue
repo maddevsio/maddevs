@@ -107,6 +107,7 @@ export default {
       font-size: 21px;
       line-height: 130%;
       letter-spacing: -0.02em;
+      font-family: 'Poppins-Medium', sans-serif;
     }
 
     &__paragraph {

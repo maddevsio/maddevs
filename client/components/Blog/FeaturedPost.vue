@@ -96,6 +96,7 @@ export default {
       line-height: 130%;
       margin-bottom: 15px;
       letter-spacing: -2px;
+      font-family: 'Poppins-Medium', sans-serif;
     }
 
     &__paragraph {
