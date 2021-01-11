@@ -296,13 +296,13 @@ export default {
           display: flex;
           justify-content: flex-start;
           margin: 0 -10px;
+        }
 
-          .filter-item__wrapper {
+        .filter-item {
+          padding: 0 10px;
+
+          &__wrapper {
             width: 16.6666%;
-
-            .filter-item {
-              padding: 0 10px;
-            }
           }
         }
       }
