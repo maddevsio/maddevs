@@ -201,7 +201,7 @@ export default {
   @import '../../assets/styles/socialNetworkIcons';
 
   /deep/ h2 {
-    margin: 72px 0 12px;
+    margin: 0 0 12px;
     @include title($text-color--black-cases, 32px, -0.04em);
   }
 
@@ -386,8 +386,8 @@ export default {
     &__back-to-list {
       padding: 12px 14px 4px;
       position: fixed;
-      left: 38px;
-      bottom: 37px;
+      left: 36px;
+      bottom: 12px;
       background-color: transparent;
       border: 1px solid $border-color--red;
       border-radius: 2px;
@@ -441,26 +441,27 @@ export default {
     &__recommended-post {
       width: 33.33333%;
       height: max-content;
-      margin-left: 20px;
-      padding: 10px;
       border-radius: 3px;
-      background: $bgcolor--grey-light;
       transition: 0.2s;
+      margin-right: 20px;
 
       &:first-child {
         margin-left: 0;
       }
 
-      &:hover {
-        &,
-        /deep/ .tag {
-          background: #d7d7d7;
-        }
+      &:last-child {
+        margin-right: 0;
       }
 
       /deep/ h2,
       /deep/ p {
         color: $text-color--black;
+      }
+
+      /deep/ .blog-post__meta {
+        .tag {
+          background-color: $bgcolor--white-primary;
+        }
       }
     }
   }
@@ -537,7 +538,8 @@ export default {
       }
 
       &__recommended-post {
-        width: calc(100% - 20px);
+        width: 100%;
+        margin-right: 0;
         margin-bottom: 40px;
 
         /deep/ .blog-post__author {
@@ -547,6 +549,10 @@ export default {
         /deep/ .blog-post-meta {
           display: none;
         }
+      }
+
+      &__back-to-list {
+        left: 24px;
       }
     }
   }
