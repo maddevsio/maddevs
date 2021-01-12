@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+
 body {
   margin: 0;
   padding: 0;
@@ -91,7 +93,7 @@ main {
 @font-face {
   font-family: 'Inter-Regular';
   font-weight: 400;
-  src: url('~assets/fonts/Inter/Inter-Regular.woff2') format('woff2'), url('~assets/fonts/Inter/Inter-Regular.woff') format('woff');
+  src: url('https://fonts.googleapis.com/css2?family=Inter');
   font-display: auto;
 }
 

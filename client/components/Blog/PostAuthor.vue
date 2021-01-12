@@ -43,7 +43,8 @@ export default {
     &__author-name {
       display: block;
       font-size: 13px;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
       line-height: 129%;
       letter-spacing: -0.02em;
     }

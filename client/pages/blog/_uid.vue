@@ -298,7 +298,8 @@ export default {
       align-items: center;
       font-size: 13px;
       line-height: 22px;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
 
       .blog-post__date {
         color: $text-color--grey-pale;
@@ -316,6 +317,7 @@ export default {
     &__blog-title {
       font-size: 52px;
       line-height: 67px;
+      letter-spacing: -2px;
       color: $text-color--white;
       font-family: 'Poppins-Medium', sans-serif;
     }
@@ -357,7 +359,8 @@ export default {
     &__table-of-content-list-item,
     &__table-of-content-title {
       margin: 25px 0;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
       color: $text-color--black-cases;
       font-size: 17px;
       line-height: 28px;
@@ -396,7 +399,7 @@ export default {
       position: fixed;
       left: 36px;
       bottom: 36px;
-      background-color: transparent;
+      background-color: $bgcolor--red;
       border: 1px solid $border-color--red;
       border-radius: 2px;
       transition: 0.2s;
@@ -405,20 +408,12 @@ export default {
       i {
         display: inline-block;
         padding: 4px;
-        border: solid $border-color--red;
+        border: solid $border-color--white;
         border-width: 0 3px 3px 0;
         transform: rotate(-135deg);
       }
 
       &:hover {
-        background-color: $bgcolor--red;
-
-        i {
-          border-color: $border-color--black;
-        }
-      }
-
-      &:active {
         background-color: $button-active--red;
       }
     }
@@ -514,6 +509,7 @@ export default {
         padding: 0 24px;
         font-size: 35px;
         line-height: 45px;
+        letter-spacing: -1px;
       }
 
       &__blog-sub-title {

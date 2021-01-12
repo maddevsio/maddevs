@@ -40,7 +40,8 @@ export default {
 
     /deep/ h1,
     /deep/ li {
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
     }
 
     /deep/ strong {
@@ -58,7 +59,8 @@ export default {
 
     /deep/ p {
       margin: 12px 0;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
     }
 
     /deep/ pre {
@@ -66,7 +68,8 @@ export default {
       overflow: auto;
       background: $bgcolor--grey-light;
       border-radius: 2px;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
       line-height: 24px;
     }
 
@@ -81,7 +84,8 @@ export default {
     /deep/ a {
       text-decoration: underline;
       color: $text-color--black-cases;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
     }
 
     /deep/ img {

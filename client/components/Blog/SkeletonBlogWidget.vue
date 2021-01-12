@@ -85,7 +85,8 @@ export default {
       display: flex;
       align-items: center;
       margin: 20px 0;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
 
       .created-at {
         margin-right: 40px;

@@ -104,7 +104,8 @@ export default {
       line-height: 28px;
       letter-spacing: -0.035em;
       margin-bottom: 44px;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
     }
 
     &__data {
@@ -125,7 +126,8 @@ export default {
       display: flex;
       align-items: center;
       font-size: 13px;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
 
       .created-at {
         margin-left: 24px;

@@ -53,7 +53,8 @@ export default {
     &__title {
       @include title($text-color--black-cases, 21px, -0.04em);
       margin-bottom: 20px;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
     }
 
     &__list {
@@ -62,7 +63,8 @@ export default {
 
       &-item {
         padding: 7px 0 12px;
-        font-family: 'Inter-Regular', sans-serif;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
 
         a {
           text-decoration: none;

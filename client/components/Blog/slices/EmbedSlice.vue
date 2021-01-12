@@ -80,6 +80,7 @@ export default {
       font-family: 'Poppins-Bold', sans-serif;
       font-weight: 600;
       color: $text-color--black-cases;
+      line-height: 27.34px;
     }
 
     &__image {
