@@ -467,6 +467,33 @@ export default {
     }
   }
 
+  @media screen and (max-width: 1200px) {
+    .home {
+      .filtered-posts {
+        .filter-list {
+          flex-wrap: nowrap;
+          margin: 0 -4px;
+
+          .filter-item {
+            padding: 0 4px;
+            width: 148px;
+
+            &__wrapper {
+              width: auto;
+
+              .filter-label {
+                font-size: 16px;
+                line-height: 19px;
+                padding: 16px;
+                min-height: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 991px) {
     .home {
       .latest-posts {
