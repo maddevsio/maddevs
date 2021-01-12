@@ -1,7 +1,8 @@
 @mixin title($color, $size, $spacing) {
-  font-family: 'Inter-Regular', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-feature-settings: 'zero' on, 'ordn' on, 'ss02' on, 'ss05' on;
+  font-weight: 400;
 
   color: $color;
   font-weight: 600;

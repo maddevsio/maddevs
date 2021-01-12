@@ -80,7 +80,8 @@ export default {
     }
 
     p, span {
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
     }
 
     span {
@@ -114,7 +115,8 @@ export default {
       font-size: 16px;
       line-height: 166%;
       letter-spacing: -0.035em;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
     }
 
     &__meta {
@@ -122,7 +124,8 @@ export default {
       align-items: center;
       margin: 20px 0;
       font-size: 13px;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
 
       .created-at {
         margin-right: 24px;

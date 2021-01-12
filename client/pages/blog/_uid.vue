@@ -298,7 +298,8 @@ export default {
       align-items: center;
       font-size: 13px;
       line-height: 22px;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
 
       .blog-post__date {
         color: $text-color--grey-pale;
@@ -357,7 +358,8 @@ export default {
     &__table-of-content-list-item,
     &__table-of-content-title {
       margin: 25px 0;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
       color: $text-color--black-cases;
       font-size: 17px;
       line-height: 28px;
