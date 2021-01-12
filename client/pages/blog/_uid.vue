@@ -62,7 +62,6 @@ import TableOfContents from '@/components/Blog/TableOfContents';
 
 export default {
   name: 'post',
-  layout: 'Blog',
   components: {
     SlicesBlock,
     RecommendedBlogWidget,
