@@ -438,7 +438,7 @@ export default {
 
     &__recommended-posts {
       background-color: $bgcolor--silver;
-      margin-top: 100px;
+      margin-top: 88px;
     }
 
     &__recommended-posts-list {
@@ -541,8 +541,12 @@ export default {
       }
 
       &__recommended-posts-list {
-        padding: 31px 24px;
         display: block;
+        padding: 31px 24px;
+      }
+
+      &__recommended-posts {
+        margin-top: 40px;
       }
 
       &__recommended-post {
