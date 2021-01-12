@@ -19,11 +19,12 @@ export default {
   },
   name: 'embed-slice',
   created() {
-    this.slice.items[0].embed.html = this.slice.items[0].embed.html
-      .replace('<h1>', '<div class="embed__title">')
-      .replace('</h1>', '</div>')
-      .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`)
-    ;
+    if(this.slice.items[0].embed.html) {
+      this.slice.items[0].embed.html = this.slice.items[0].embed.html
+        .replace('<h1>', '<div class="embed__title">')
+        .replace('</h1>', '</div>')
+        .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`);
+    }
 
     if (this.slice.items[0].embed.type === 'video') {
       this.slice.items[0].embed.html = this.slice.items[0].embed.html.replace(/height="[0-9]*"/, 'height="500"').replace(/width="[0-9]*"/, 'width="100%"');
