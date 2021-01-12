@@ -281,14 +281,16 @@ export default {
     }
 
     &__post-info {
-      margin-top: 7px;
-      margin-bottom: 43px;
-    }
-
-    &__post-info {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-top: 7px;
+      margin-bottom: 43px;
+
+      /deep/ .blog-post__author-image {
+        width: 30px;
+        height: 30px;
+      }
     }
 
     &__date-tag {
@@ -393,7 +395,7 @@ export default {
       padding: 12px 14px 4px;
       position: fixed;
       left: 36px;
-      bottom: 12px;
+      bottom: 36px;
       background-color: transparent;
       border: 1px solid $border-color--red;
       border-radius: 2px;
