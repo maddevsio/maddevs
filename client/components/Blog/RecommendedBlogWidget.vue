@@ -110,7 +110,6 @@ export default {
       font-family: 'Poppins-Medium', sans-serif;
       display: -webkit-box;
       max-width: 100%;
-      height: 54.6px;
       margin: 0 auto;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
