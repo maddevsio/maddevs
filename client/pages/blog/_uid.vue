@@ -114,7 +114,7 @@ export default {
       const post = await $prismic.api.getByUID('post', params.uid);
       // Query to get recomended posts
       if (post.tags.length) {
-        recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', post.tags), {pageSize: 4});
+        recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', [post.tags[0]]), {pageSize: 4});
         recommendedPosts = recommendedPosts.results.filter(recommendedPost => recommendedPost.uid !== post.uid);
 
         if (recommendedPosts.length > 3) {
@@ -471,6 +471,10 @@ export default {
           background-color: $bgcolor--white-primary;
         }
       }
+
+      /deep/ .blog-post__cover-image {
+        height: 15.2vw;
+      }
     }
   }
 
@@ -560,6 +564,10 @@ export default {
 
         /deep/ .blog-post-meta {
           display: none;
+        }
+
+        /deep/ .blog-post__cover-image {
+          height: 50.2vw;
         }
       }
 

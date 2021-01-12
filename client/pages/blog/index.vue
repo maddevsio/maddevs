@@ -260,6 +260,8 @@ export default {
             padding: 0 10px;
 
             .banner {
+              text-align: center;
+
               img {
                 max-width: 100%;
                 height: auto;
@@ -467,6 +469,14 @@ export default {
 
   @media only screen and (max-width: 991px) {
     .home {
+      .latest-posts {
+        &__single-post {
+          /deep/ .blog-post__cover-image {
+            height: 59vw;
+          }
+        }
+      }
+
       .latest-posts .latest-posts__wrapper .latest-posts__single-post,
       .filtered-posts .filtered-posts__wrapper .filtered-posts__single-post {
         width: 100%;
