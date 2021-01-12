@@ -260,6 +260,8 @@ export default {
             padding: 0 10px;
 
             .banner {
+              text-align: center;
+
               img {
                 max-width: 100%;
                 height: auto;
@@ -465,36 +467,16 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 991px) {
+  @media screen and (max-width: 1200px) {
     .home {
-      .latest-posts .latest-posts__wrapper .latest-posts__single-post,
-      .filtered-posts .filtered-posts__wrapper .filtered-posts__single-post {
-        width: 100%;
-      }
-
-      .latest-posts .latest-posts__wrapper .latest-posts__single-post,
       .filtered-posts {
-        margin-bottom: 56px;
-      }
-
-      .filtered-posts__single-post {
-        margin-bottom: 0;
-      }
-
-      .latest-posts {
-        &__wrapper {
-          margin-top: 29px;
-        }
-      }
-
-      .filtered-posts {
-        padding-bottom: 0;
 
         .filter {
-          margin-bottom: 35px;
+
           .filter-list {
             flex-wrap: nowrap;
             margin: 0 -4px;
+            justify-content: space-between;
 
             .filter-item {
               padding: 0 4px;
@@ -513,6 +495,42 @@ export default {
             }
           }
         }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .home {
+      .latest-posts {
+        &__single-post {
+          /deep/ .blog-post__cover-image {
+            height: 59vw;
+          }
+        }
+      }
+
+      .latest-posts .latest-posts__wrapper .latest-posts__single-post,
+      .filtered-posts .filtered-posts__wrapper .filtered-posts__single-post {
+        width: 100%;
+      }
+
+      .latest-posts .latest-posts__wrapper .latest-posts__single-post,
+      .filtered-posts .filtered-posts__wrapper {
+        margin-bottom: 56px;
+      }
+
+      .filtered-posts__single-post {
+        margin-bottom: 0;
+      }
+
+      .latest-posts {
+        &__wrapper {
+          margin-top: 29px;
+        }
+      }
+
+      .filtered-posts {
+        padding-bottom: 0;
 
         &__wrapper {
           margin-top: 0;
