@@ -80,7 +80,7 @@ export default {
     }
 
     p, span {
-      font-family: 'Poppins-Regular', sans-serif;
+      font-family: 'Inter-Regular', sans-serif;
     }
 
     span {

@@ -102,7 +102,9 @@ export default {
     &__paragraph {
       font-size: 17px;
       line-height: 28px;
+      letter-spacing: -0.035em;
       margin-bottom: 44px;
+      font-family: 'Inter-Regular', sans-serif;
     }
 
     &__data {
