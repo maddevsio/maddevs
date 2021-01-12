@@ -317,6 +317,7 @@ export default {
     &__blog-title {
       font-size: 52px;
       line-height: 67px;
+      letter-spacing: -2px;
       color: $text-color--white;
       font-family: 'Poppins-Medium', sans-serif;
     }
@@ -398,7 +399,7 @@ export default {
       position: fixed;
       left: 36px;
       bottom: 36px;
-      background-color: transparent;
+      background-color: $bgcolor--red;
       border: 1px solid $border-color--red;
       border-radius: 2px;
       transition: 0.2s;
@@ -407,20 +408,12 @@ export default {
       i {
         display: inline-block;
         padding: 4px;
-        border: solid $border-color--red;
+        border: solid $border-color--white;
         border-width: 0 3px 3px 0;
         transform: rotate(-135deg);
       }
 
       &:hover {
-        background-color: $bgcolor--red;
-
-        i {
-          border-color: $border-color--black;
-        }
-      }
-
-      &:active {
         background-color: $button-active--red;
       }
     }
@@ -512,6 +505,7 @@ export default {
         padding: 0 24px;
         font-size: 35px;
         line-height: 45px;
+        letter-spacing: -1px;
       }
 
       &__blog-sub-title {

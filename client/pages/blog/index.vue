@@ -287,7 +287,6 @@ export default {
     .filtered-posts {
       background-color: $text-color--white-primary;
       padding-top: 48px;
-      padding-bottom: 80px;
 
       .filter {
         margin-bottom: 48px;
@@ -443,6 +442,7 @@ export default {
     font-size: 16px;
     line-height: 26px;
     background-color: transparent;
+    margin-top: 36px;
     margin-bottom: 73px;
     cursor: pointer;
 
@@ -473,7 +473,7 @@ export default {
       }
 
       .latest-posts .latest-posts__wrapper .latest-posts__single-post,
-      .filtered-posts .filtered-posts__wrapper {
+      .filtered-posts {
         margin-bottom: 56px;
       }
 
@@ -516,11 +516,14 @@ export default {
 
         &__wrapper {
           margin-top: 0;
-          padding-bottom: 38px;
 
           /deep/ .blog-post {
             display: flex;
             margin-bottom: 18px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
 
             &__cover-image {
               width: 124px;
@@ -578,7 +581,7 @@ export default {
 
       .load-more-button {
         padding: 12px 0;
-        margin-bottom: 24px;
+        margin-bottom: 38px;
         width: 100%;
       }
     }
