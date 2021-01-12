@@ -470,22 +470,27 @@ export default {
   @media screen and (max-width: 1200px) {
     .home {
       .filtered-posts {
-        .filter-list {
-          flex-wrap: nowrap;
-          margin: 0 -4px;
 
-          .filter-item {
-            padding: 0 4px;
-            width: 148px;
+        .filter {
 
-            &__wrapper {
-              width: auto;
+          .filter-list {
+            flex-wrap: nowrap;
+            margin: 0 -4px;
+            justify-content: space-between;
 
-              .filter-label {
-                font-size: 16px;
-                line-height: 19px;
-                padding: 16px;
-                min-height: 40px;
+            .filter-item {
+              padding: 0 4px;
+              width: 148px;
+
+              &__wrapper {
+                width: auto;
+
+                .filter-label {
+                  font-size: 16px;
+                  line-height: 19px;
+                  padding: 16px;
+                  min-height: 40px;
+                }
               }
             }
           }
@@ -526,30 +531,6 @@ export default {
 
       .filtered-posts {
         padding-bottom: 0;
-
-        .filter {
-          margin-bottom: 35px;
-          .filter-list {
-            flex-wrap: nowrap;
-            margin: 0 -4px;
-
-            .filter-item {
-              padding: 0 4px;
-              width: 148px;
-
-              &__wrapper {
-                width: auto;
-
-                .filter-label {
-                  font-size: 16px;
-                  line-height: 19px;
-                  padding: 16px;
-                  min-height: 40px;
-                }
-              }
-            }
-          }
-        }
 
         &__wrapper {
           margin-top: 0;
