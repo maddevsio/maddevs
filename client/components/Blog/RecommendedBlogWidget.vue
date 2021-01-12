@@ -108,6 +108,14 @@ export default {
       line-height: 130%;
       letter-spacing: -0.02em;
       font-family: 'Poppins-Medium', sans-serif;
+      display: -webkit-box;
+      max-width: 100%;
+      height: 54.6px;
+      margin: 0 auto;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     &__paragraph {

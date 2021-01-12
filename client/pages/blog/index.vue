@@ -561,6 +561,7 @@ export default {
               font-size: 15px;
               line-height: 18.6px;
               letter-spacing: -0.03em;
+              height: 36.6px;
             }
 
             &__author {
