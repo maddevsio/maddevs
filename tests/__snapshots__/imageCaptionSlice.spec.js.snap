@@ -5,13 +5,13 @@ exports[`Image attribute slice component renders correctly 1`] = `
   <div
     class="post-part single"
   >
-    <p
+    <div
       class="block-img image-full-width"
     >
       <prismic-image-stub
         field="[object Object]"
       />
-    </p>
+    </div>
      
     <p
       class="image-label"
