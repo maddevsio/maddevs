@@ -38,7 +38,7 @@
         <img :src="document.featured_image.url" class="blog-post__introduction-image" v-if="document.featured_image.url !== undefined">
       </div>
       <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
-      <table-of-contents :content="document.table_of_contents" v-if="document.table_of_contents.length !== 0"/>
+      <table-of-contents :content="document.table_of_contents" v-if="$prismic.asText(document.table_of_contents)"/>
       <slices-block :slices="slices" class="blog-post__text-container"/>
     </div>
     <div v-if="recommendedPosts.length !== 0" class="blog-post__recommended-posts">
