@@ -56,7 +56,10 @@ module.exports = {
       src: '~/plugins/vue-js-modal.js',
       ssr: false
     },
-    '~/plugins/vue-silent-box.js'
+    {
+      src: '~/plugins/vue-silent-box.js',
+      ssr: false
+    }
   ],
   generate: {
     async routes() {
