@@ -271,7 +271,7 @@ export default {
 
     &__blog-sub-title {
       margin-bottom: 36px;
-      font-family: 'Poppins-Regular', sans-serif;
+      font-family: Inter, sans-serif;
       color: $text-color--white-primary;
       letter-spacing: 0.2px;
       font-size: 17px;
