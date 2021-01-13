@@ -32,3 +32,11 @@ export default {
   }
 };
 </script>
+
+<style scoped lang="scss">
+  /deep/ .gist {
+    .gist-meta {
+      font: 12px BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    }
+  }
+</style>
