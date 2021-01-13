@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class='post-part single'>
-      <p class="block-img" :class="size">
+      <div class="block-img" :class="size">
         <silent-box v-if="zoomEnabled" :gallery="[lightBoxImage]"/>
         <prismic-image v-else :field="img"/>
-      </p>
+      </div>
       <p class="image-label" v-if="caption">{{ caption }}</p>
     </div>
   </div>

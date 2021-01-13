@@ -9,9 +9,9 @@
     </template>
     <template v-else>
       <div class='post-part single'>
-        <p class="block-img">
+        <div class="block-img">
           <prismic-image :field="img" :title="$prismic.asText(title)"/>
-        </p>
+        </div>
       </div>
     </template>
   </div>
