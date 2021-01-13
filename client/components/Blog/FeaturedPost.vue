@@ -13,7 +13,13 @@
         </div>
       </div>
       <div class="col-12 col-lg-6 featured-post__image-wrapper">
-        <img :src="post.data.featured_image.url" alt="" class="featured-post__image">
+        <img
+          :src="post.data.featured_image.url"
+          :alt="post.data.featured_image.alt"
+          class="featured-post__image"
+          :width="post.data.featured_image.dimensions.width"
+          :height="post.data.featured_image.dimensions.height"
+        >
       </div>
     </div>
   </nuxt-link>
