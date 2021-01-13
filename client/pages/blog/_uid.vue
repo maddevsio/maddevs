@@ -42,7 +42,7 @@
       <slices-block :slices="slices" class="blog-post__text-container"/>
     </div>
     <div v-if="recommendedPosts.length !== 0" class="blog-post__recommended-posts">
-      <div class="blog-post__recommended-posts-list">
+      <div class="blog-post__recommended-posts-list container">
         <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="blog-post__recommended-post">
           <recommended-blog-widget :post="recommendedPost"/>
         </section>
@@ -467,7 +467,7 @@ export default {
       }
 
       /deep/ .blog-post__cover-image {
-        height: 15.2vw;
+        height: 220px;
       }
     }
   }
