@@ -1,5 +1,5 @@
 <template>
-  <div class="embed" :class="slice.items[0].embed.type">
+  <div class="embed" :class="slice.items[0].embed.type" v-if="slice.items.length">
     <prismic-embed :field="slice.items[0].embed" target="_blank" :class="`embed__${slice.items[0].embed.type}`"/>
     <template v-if="slice.items[0].embed.type === 'link'">
       <div class="embed__image-wrapper">
@@ -19,7 +19,11 @@ export default {
   },
   name: 'embed-slice',
   created() {
-    if(this.slice.items[0].embed.html) {
+    if (!this.slice.items.length) {
+      return;
+    }
+
+    if (this.slice.items[0].embed.html) {
       this.slice.items[0].embed.html = this.slice.items[0].embed.html
         .replace('<h1>', '<div class="embed__title">')
         .replace('</h1>', '</div>')
