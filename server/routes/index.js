@@ -94,12 +94,29 @@ router.post('/prismic-hook', (req, res) => {
   });
 });
 
-router.get('/ru', (req, res) => {
-  res.redirect(301, 'https://maddevs.io');
+const routes = [
+  {
+    from: '/ru',
+    to: 'https://maddevs.io'
+  },
+  {
+    from: '/en',
+    to: 'https://maddevs.io'
+  }
+];
+
+routes.forEach(route => {
+  router.get(route.from, (req, res) => {
+    res.redirect(301, route.to);
+  });
 });
 
-router.get('/en', (req, res) => {
-  res.redirect(301, 'https://maddevs.io');
-});
+// router.get('/ru', (req, res) => {
+//   res.redirect(301, 'https://maddevs.io');
+// });
+
+// router.get('/en', (req, res) => {
+//   res.redirect(301, 'https://maddevs.io');
+// });
 
 module.exports = router;
