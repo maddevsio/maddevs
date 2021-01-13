@@ -97,11 +97,11 @@ router.post('/prismic-hook', (req, res) => {
 const routes = [
   {
     from: '/ru',
-    to: 'https://maddevs.io'
+    to: 'https://maddevs.io/blog'
   },
   {
     from: '/en',
-    to: 'https://maddevs.io'
+    to: 'https://maddevs.io/services'
   }
 ];
 

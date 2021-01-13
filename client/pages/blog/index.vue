@@ -289,6 +289,7 @@ export default {
     .filtered-posts {
       background-color: $text-color--white-primary;
       padding-top: 48px;
+      padding-bottom: 20px;
 
       .filter {
         margin-bottom: 48px;
@@ -445,7 +446,7 @@ export default {
     line-height: 26px;
     background-color: transparent;
     margin-top: 36px;
-    margin-bottom: 73px;
+    margin-bottom: 53px;
     cursor: pointer;
 
     &:hover {
@@ -549,8 +550,6 @@ export default {
       }
 
       .filtered-posts {
-        padding-bottom: 0;
-
         &__wrapper {
           margin-top: 0;
 
@@ -619,7 +618,7 @@ export default {
       .load-more-button {
         padding: 12px 0;
         margin-top: 11px;
-        margin-bottom: 36px;
+        margin-bottom: 16px;
         width: 100%;
       }
     }
