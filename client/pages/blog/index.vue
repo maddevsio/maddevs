@@ -526,12 +526,20 @@ export default {
       }
 
       .latest-posts .latest-posts__wrapper .latest-posts__single-post,
-      .filtered-posts .filtered-posts__wrapper {
+      .filtered-posts {
         margin-bottom: 56px;
       }
 
-      .filtered-posts__single-post {
+      .filtered-posts__wrapper {
         margin-bottom: 0;
+      }
+
+      .filtered-posts__single-post {
+        margin-bottom: 16px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
 
       .latest-posts {
@@ -610,7 +618,8 @@ export default {
 
       .load-more-button {
         padding: 12px 0;
-        margin-bottom: 38px;
+        margin-top: 11px;
+        margin-bottom: 36px;
         width: 100%;
       }
     }
