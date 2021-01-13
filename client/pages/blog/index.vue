@@ -398,7 +398,7 @@ export default {
     display: none;
   }
 
-  .radio-input:checked + .filter-label, .filter-label:hover {
+  .radio-input:checked + .filter-label {
     border-color: $border-color--red;
     color: $text-color--red;
   }
@@ -494,6 +494,17 @@ export default {
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .home {
+      .filter-label {
+        &:hover {
+          border-color: $border-color--red;
+          color: $text-color--red;
         }
       }
     }
