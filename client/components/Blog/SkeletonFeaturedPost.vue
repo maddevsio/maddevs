@@ -35,10 +35,10 @@ export default {
 
   @keyframes SkeletonLoading {
     0% {
-      background-position: -200px 0;
+      background-position: -600px 0;
     }
     100% {
-      background-position: calc(200px + 100%) 0;
+      background-position: calc(600px + 100%) 0;
     }
   }
 
@@ -48,7 +48,7 @@ export default {
 
   .background-grey {
     background-color: $bgcolor--black-light;
-    background-image: linear-gradient(90deg, $bgcolor--black-light, $bgcolor--black-light, $bgcolor--black-light);
+    background-image: linear-gradient(90deg, $bgcolor--black-lighten, $bgcolor--black-lighten-pale, $bgcolor--black-lighten);
   }
 
   .featured-post {
@@ -57,7 +57,7 @@ export default {
     display: block;
 
     &__wrapper {
-      margin: 96px 0;
+      margin: 95px 0;
       align-items: center;
     }
 
@@ -75,6 +75,7 @@ export default {
 
     &__image-wrapper {
       text-align: right;
+      margin-top: 0;
     }
 
     &__image {

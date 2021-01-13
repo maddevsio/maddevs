@@ -42,7 +42,7 @@ export default {
 
   .background-grey {
     background-color: $bgcolor--silver;
-    background-image: linear-gradient(90deg, $bgcolor--white-darken, $bgcolor--silver, $bgcolor--white-darken);
+    background-image: linear-gradient(90deg, $bgcolor--grey-extra-dark, $bgcolor--silver, $bgcolor--grey-extra-dark);
   }
 
   .blog-post {
