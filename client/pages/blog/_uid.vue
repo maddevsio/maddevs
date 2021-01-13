@@ -491,6 +491,10 @@ export default {
       &__inner-container {
         margin: 0;
         max-width: none;
+
+        h1 {
+          margin-top: 0;
+        }
       }
 
       &__introduction-container {
