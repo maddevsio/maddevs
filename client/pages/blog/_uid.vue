@@ -38,11 +38,11 @@
         <img :src="document.featured_image.url" class="blog-post__introduction-image" v-if="document.featured_image.url !== undefined">
       </div>
       <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
-      <table-of-contents :content="document.table_of_contents" v-if="document.table_of_contents.length !== 0"/>
+      <table-of-contents :content="document.table_of_contents" v-if="$prismic.asText(document.table_of_contents)"/>
       <slices-block :slices="slices" class="blog-post__text-container"/>
     </div>
     <div v-if="recommendedPosts.length !== 0" class="blog-post__recommended-posts">
-      <div class="blog-post__recommended-posts-list">
+      <div class="blog-post__recommended-posts-list container">
         <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="blog-post__recommended-post">
           <recommended-blog-widget :post="recommendedPost"/>
         </section>
@@ -271,7 +271,7 @@ export default {
 
     &__blog-sub-title {
       margin-bottom: 36px;
-      font-family: 'Poppins-Regular', sans-serif;
+      font-family: Inter, sans-serif;
       color: $text-color--white-primary;
       letter-spacing: 0.2px;
       font-size: 17px;
@@ -467,7 +467,7 @@ export default {
       }
 
       /deep/ .blog-post__cover-image {
-        height: 15.2vw;
+        height: 220px;
       }
     }
   }
@@ -491,6 +491,10 @@ export default {
       &__inner-container {
         margin: 0;
         max-width: none;
+
+        h1 {
+          margin-top: 0;
+        }
       }
 
       &__introduction-container {
