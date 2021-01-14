@@ -1,0 +1,304 @@
+{
+  "list": [
+    {
+      "from": "https://blog.maddevs.io/linuxkit-as-a-ecs-instance-with-terraform-31a33116dbe2",
+      "to": "https://maddevs.io/blog/linuxkit-as-a-ecs-instance-with-terraform"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-we-built-a-failover-architecture-for-a-taxi-service-part-3-the-end-78b2215caa08",
+      "to": "https://maddevs.io/blog/how-we-built-a-failover-architecture-for-a-taxi-service-part-3-the-end"
+    },
+    {
+      "from": "https://blog.maddevs.io/reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer-43594faed19c",
+      "to": "https://maddevs.io/blog/reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer"
+    },
+    {
+      "from": "https://blog.maddevs.io/the-evolution-of-internship-721303ca6361",
+      "to": "https://maddevs.io/blog/the-evolution-of-internship"
+    },
+    {
+      "from": "https://blog.maddevs.io/you-want-to-develop-a-mobile-application-are-you-sure-9f274977c615",
+      "to": "https://maddevs.io/blog/you-want-to-develop-a-mobile-application-are-you-sure"
+    },
+    {
+      "from": "https://blog.maddevs.io/namba-food-bot-61b5be6acfec",
+      "to": "https://maddevs.io/blog/namba-food-bot"
+    },
+    {
+      "from": "https://blog.maddevs.io/best-architecture-for-the-react-project-149b377b379d",
+      "to": "https://maddevs.io/blog/best-architecture-for-the-react-project"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-can-programmer-grow-faster-d8fccdb5eb2c",
+      "to": "https://maddevs.io/blog/how-can-programmer-grow-faster"
+    },
+    {
+      "from": "https://blog.maddevs.io/comedian-17b0bb0ae8c7",
+      "to": "https://maddevs.io/blog/comedian"
+    },
+    {
+      "from": "https://blog.maddevs.io/go-rest-or-grpc-5eace88499bd",
+      "to": "https://maddevs.io/blog/go-rest-or-grpc"
+    },
+    {
+      "from": "https://blog.maddevs.io/mad-devs-climbs-clutchs-ranks-of-leading-web-developers-cloud-consultants-in-the-uk-950926f32252",
+      "to": "https://maddevs.io/blog/mad-devs-climbs-clutchs-ranks-of-leading-web-developers-cloud-consultants-in-the-uk"
+    },
+    {
+      "from": "https://blog.maddevs.io/daas-devops-as-a-service-wut-6e34ceb865ca",
+      "to": "https://maddevs.io/blog/devops-as-a-service"
+    },
+    {
+      "from": "https://blog.maddevs.io/terraform-hetzner-1df05267baf0",
+      "to": "https://maddevs.io/blog/terraform-hetzner"
+    },
+    {
+      "from": "https://blog.maddevs.io/the-difference-in-work-for-beginner-and-professional-developers-e45ddd5e5bfe",
+      "to": "https://maddevs.io/blog/the-difference-in-work-for-beginner-and-professional-developers"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-build-a-startup-with-an-outsource-team-a3b584c80bf8",
+      "to": "https://maddevs.io/blog/how-to-build-a-startup-with-an-outsource-team"
+    },
+    {
+      "from": "https://blog.maddevs.io/mad-fake-slack-945ea810a778",
+      "to": "https://maddevs.io/blog/mad-fake-slack"
+    },
+    {
+      "from": "https://blog.maddevs.io/top-3-best-ci-for-your-js-projects-with-puppeteer-tests-9395ff31d134",
+      "to": "https://maddevs.io/blog/top-3-best-ci-for-your-js-projects-with-puppeteer-tests"
+    },
+    {
+      "from": "https://blog.maddevs.io/internship-program-automation-wip-f1d5d976ea21",
+      "to": "https://maddevs.io/blog/internship-program-automation-wip"
+    },
+    {
+      "from": "https://blog.maddevs.io/code-climate-code-analysis-locally-using-vscode-remote-containers-b4efaf6bf26e",
+      "to": "https://maddevs.io/blog/code-climate-code-analysis-locally-using-vscode-remote-containers"
+    },
+    {
+      "from": "https://blog.maddevs.io/micronavigator-based-on-stm32f100-3cebc718f638",
+      "to": "https://maddevs.io/blog/micronavigator-based-on"
+    },
+    {
+      "from": "https://blog.maddevs.io/underestimating-go-c3b5eb497f9d",
+      "to": "https://maddevs.io/blog/underestimating-go"
+    },
+    {
+      "from": "https://blog.maddevs.io/the-nuances-of-testing-in-pair-cucumber-js-puppeteer-49c3ff2da44c",
+      "to": "https://maddevs.io/blog/the-nuances-of-testing-in-pair-cucumber-js-puppeteer"
+    },
+    {
+      "from": "https://blog.maddevs.io/view-colleagues-from-another-office-through-always-on-video-window-71b4cf6efbbe",
+      "to": "https://maddevs.io/blog/view-colleagues-from-another-office-through-always-on-video-window"
+    },
+    {
+      "from": "https://blog.maddevs.io/meet-glitch-com-429c423cf8e1",
+      "to": "https://maddevs.io/blog/meet-glitch-com"
+    },
+    {
+      "from": "https://blog.maddevs.io/web-app-deploy-to-glitch-com-b43470c32a2f",
+      "to": "https://maddevs.io/blog/web-app-deploy-to-glitch-com"
+    },
+    {
+      "from": "https://blog.maddevs.io/a-bit-about-event-delegation-in-react-3b92fb0a978b",
+      "to": "https://maddevs.io/blog/a-bit-about-event-delegation-in-react"
+    },
+    {
+      "from": "https://blog.maddevs.io/a-bit-about-event-delegation-in-pure-js-56f8356463ca",
+      "to": "https://maddevs.io/blog/a-bit-about-event-delegation-in-pure-js"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-stop-worrying-and-start-developing-for-raspberry-pi-with-qt-8df032f8a534",
+      "to": "https://maddevs.io/blog/how-to-stop-worrying-and-start-developing-for-raspberry-pi-with-qt"
+    },
+    {
+      "from": "https://blog.maddevs.io/guaranteed-delivery-with-grpc-streams-dc847ead7e6e",
+      "to": "https://maddevs.io/blog/guaranteed-delivery-with-grpc-streams"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-start-with-logging-in-golang-projects-part-1-3e3a708b75be",
+      "to": "https://maddevs.io/blog/how-to-start-with-logging-in-golang-projects-part-1"
+    },
+    {
+      "from": "https://blog.maddevs.io/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci-9805042bc0c",
+      "to": "https://maddevs.io/blog/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci"
+    },
+    {
+      "from": "https://blog.maddevs.io/testing-django-on-steroids-with-pytest-38fe11a3538c",
+      "to": "https://maddevs.io/blog/testing-django-on-steroids-with-pytest"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-start-with-logging-in-go-projects-part-2-1e57cc58f329",
+      "to": "https://maddevs.io/blog/how-to-start-with-logging-in-go-projects-part-2"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-good-engineering-culture-is-in-your-team-1ecd6f16da69",
+      "to": "https://maddevs.io/blog/how-good-engineering-culture-is-in-your-team"
+    },
+    {
+      "from": "https://blog.maddevs.io/introduction-to-pcb-prototyping-with-easyeda-part-i-project-creation-143563311253",
+      "to": "https://maddevs.io/blog/introduction-to-pcb-prototyping-with-easyeda-part-1-project-creation"
+    },
+    {
+      "from": "https://blog.maddevs.io/introduction-to-prototyping-with-easyeda-part-ii-simple-schematic-fecafe9839c7",
+      "to": "https://maddevs.io/blog/introduction-to-prototyping-with-easyeda-part-ii-simple-schematic"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-make-a-proper-description-for-a-pull-request-5e1cbe9fb374",
+      "to": "https://maddevs.io/blog/how-to-make-a-proper-description-for-a-pull-request"
+    },
+    {
+      "from": "https://blog.maddevs.io/leadership-lessons-i-learned-from-videogames-b1e749b5c25",
+      "to": "https://maddevs.io/blog/leadership-lessons-i-learned-from-videogames"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-memorize-information-better-when-you-study-2116b2b74839",
+      "to": "https://maddevs.io/blog/how-to-memorize-information-better-when-you-study"
+    },
+    {
+      "from": "https://blog.maddevs.io/running-postgres-as-a-build-requirement-in-teamcity-build-8c6413576e33",
+      "to": "https://maddevs.io/blog/running-postgres-as-a-build-requirement-in-teamcity-build"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-protect-your-eyes-from-strain-while-working-in-it-82ce9d3973bf",
+      "to": "https://maddevs.io/blog/how-to-protect-your-eyes-from-strain-while-working-in-it"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-automate-jira-mad-devs-experience-50c7836eec65",
+      "to": "https://maddevs.io/blog/how-to-automate-jira-mad-devs-experience"
+    },
+    {
+      "from": "https://blog.maddevs.io/avr-mcu-testing-f925e84b7023",
+      "to": "https://maddevs.io/blog/avr-mcu-testing"
+    },
+    {
+      "from": "https://blog.maddevs.io/running-geo-django-on-elasticbeanstalk-fd7b9862fb2c",
+      "to": "https://maddevs.io/blog/running-geo-django-on-elasticbeanstalk"
+    },
+    {
+      "from": "https://blog.maddevs.io/pm-mistakes-9b58814e8cc9",
+      "to": "https://maddevs.io/blog/pm-mistakes"
+    },
+    {
+      "from": "https://blog.maddevs.io/integration-of-stripe-connect-926daa2978d5",
+      "to": "https://maddevs.io/blog/integration-of-stripe-connect"
+    },
+    {
+      "from": "https://blog.maddevs.io/progressive-web-apps-practical-usage-guide-8f9ddfea1cb3",
+      "to": "https://maddevs.io/blog/progressive-web-apps-practical-usage-guide"
+    },
+    {
+      "from": "https://blog.maddevs.io/the-five-rules-when-we-work-with-jira-d6fdbf6accfd",
+      "to": "https://maddevs.io/blog/the-five-rules-when-we-work-with-jira"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-make-three-paid-eta-services-one-free-6edc6affface",
+      "to": "https://maddevs.io/blog/how-to-make-three-paid-eta-services-one-free"
+    },
+    {
+      "from": "https://blog.maddevs.io/visualization-as-a-method-of-drawing-the-readers-attention-1d8cc5cfd5dd",
+      "to": "https://maddevs.io/blog/visualization-as-a-method-of-drawing-the-readers-attention"
+    },
+    {
+      "from": "https://blog.maddevs.io/the-cost-of-errors-in-hardware-projects-7d73b0fd8465",
+      "to": "https://maddevs.io/blog/the-cost-of-errors-in-hardware-projects"
+    },
+    {
+      "from": "https://blog.maddevs.io/effective-refactoring-of-heavy-database-interface-2c355498afe7",
+      "to": "https://maddevs.io/blog/effective-refactoring-of-heavy-database-interface"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-ruin-a-relationship-with-the-client-a850df35b3",
+      "to": "https://maddevs.io/blog/how-to-ruin-a-relationship-with-the-client"
+    },
+    {
+      "from": "https://blog.maddevs.io/what-to-choose-to-implement-audio-video-calls-solution-using-webrtc-ff5421e49a57",
+      "to": "https://maddevs.io/blog/what-to-choose-to-implement-audio-video-calls-solution-using-webrtc"
+    },
+    {
+      "from": "https://blog.maddevs.io/functional-programming-principles-in-javascript-37339f7c9e60",
+      "to": "https://maddevs.io/blog/functional-programming-principles-in-javascript"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-automate-tasks-estimation-in-jira-720bacf6d75d",
+      "to": "https://maddevs.io/blog/how-to-automate-tasks-estimation-in-jira"
+    },
+    {
+      "from": "https://blog.maddevs.io/software-features-acceptance-process-by-clients-49948f783756",
+      "to": "https://maddevs.io/blog/software-features-acceptance-process-by-clients"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-communicate-with-client-to-build-a-successful-software-6a054b089f6f",
+      "to": "https://maddevs.io/blog/how-to-communicate-with-client-to-build-a-successful-software"
+    },
+    {
+      "from": "https://blog.maddevs.io/3-top-skills-every-successful-project-manager-needs-to-focus-on-70827595cb6e",
+      "to": "https://maddevs.io/blog/top-skills-every-successful-project-manager-needs-to-focus-on"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-start-as-a-tech-blogger-f66a3f54d47e",
+      "to": "https://maddevs.io/blog/how-to-start-as-a-tech-blogger"
+    },
+    {
+      "from": "https://blog.maddevs.io/its-not-just-a-layout-what-do-you-need-to-know-to-make-a-good-markup-ff178a1b2a95",
+      "to": "https://maddevs.io/blog/what-do-you-need-to-know-to-make-a-good-markup"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-become-a-software-developer-things-that-i-learned-in-the-it-company-103c40a31bec",
+      "to": "https://maddevs.io/blog/how-to-become-a-software-developer"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-make-better-use-of-sass-extensions-for-custom-css-variables-6bdf9069337e",
+      "to": "https://maddevs.io/blog/how-to-make-better-use-of-sass-extensions-for-custom-css-variables"
+    },
+    {
+      "from": "https://blog.maddevs.io/devops-engineers-in-mad-devs-449ded5221b6",
+      "to": "https://maddevs.io/blog/devops-engineers-in-mad-devs"
+    },
+    {
+      "from": "https://blog.maddevs.io/healthy-conflicts-in-software-development-projects-75e0cd63894c",
+      "to": "https://maddevs.io/blog/healthy-conflicts-in-software-development-projects"
+    },
+    {
+      "from": "https://blog.maddevs.io/manager-dos-and-donts-83e2293c413d",
+      "to": "https://maddevs.io/blog/manager-dos-and-donts"
+    },
+    {
+      "from": "https://blog.maddevs.io/bullet-issues-tasks-that-kill-95f480a2429",
+      "to": "https://maddevs.io/blog/bullet-issues-tasks-that-kill"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-project-manager-stays-focused-fa86dcbc5c7a",
+      "to": "https://maddevs.io/blog/how-project-manager-stays-focused"
+    },
+    {
+      "from": "https://blog.maddevs.io/device-location-using-livedata-architecture-component-5380c020ea54",
+      "to": "https://maddevs.io/blog/device-location-using-livedata-architecture-component"
+    },
+    {
+      "from": "https://blog.maddevs.io/how-to-test-a-web-product-manually-c019d6e8e2f3",
+      "to": "https://maddevs.io/blog/how-to-test-a-web-product-manually"
+    },
+    {
+      "from": "https://blog.maddevs.io/log-collecting-with-elk-and-rsyslog-218b032b12f4",
+      "to": "https://maddevs.io/blog/log-collecting-with-elk-and-rsyslog"
+    },
+    {
+      "from": "https://blog.maddevs.io/software-architecture-design-d08463fb04df",
+      "to": "https://maddevs.io/blog/software-architecture-design"
+    },
+    {
+      "from": "https://blog.maddevs.io/positive-and-negative-reinforcement-in-teaching-programming-b5dc1fcb042a",
+      "to": "https://maddevs.io/blog/positive-and-negative-reinforcement-in-teaching-programming"
+    },
+    {
+      "from": "/ru",
+      "to": "https://maddevs.io"
+    },
+    {
+      "from": "/en",
+      "to": "https://maddevs.io"
+    }
+  ]
+}
