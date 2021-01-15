@@ -33,7 +33,7 @@ app.use((req, res, next) => {
     if (match !== undefined && !!match.to) {
       res.redirect(match.to);
     } else {
-      res.sendStatus(404);
+      next();
     }
   } else {
     next();
