@@ -302,5 +302,562 @@
   {
     "from": "/",
     "to": "https://maddevs.io/blog"
+  },
+  {
+    "from": "/editorspick/home",
+    "to": "https://maddevs.io/blog/"
+  },
+  {
+    "from": "/technology/home",
+    "to": "https://maddevs.io/blog/"
+  },
+  {
+    "from": "/mad-vision/home",
+    "to": "https://maddevs.io/blog/"
+  },
+  {
+    "from": "/tech-events/home",
+    "to": "https://maddevs.io/blog/"
+  },
+  {
+    "from": "/projects/home",
+    "to": "https://maddevs.io/projects#case-studies"
+  },
+  {
+    "from": "/ru/home",
+    "to": "https://medium.com/maddevs-io/"
+  },
+  {
+    "from": "/vacancy/home",
+    "to": "https://medium.com/maddevs-io/job-openings/home"
+  },
+  {
+    "from": "/blog-maddevs-io-job-openings/home",
+    "to": "https://medium.com/maddevs-io/job-openings/home"
+  },
+  {
+    "from": "/ru-events/home",
+    "to": "https://medium.com/maddevs-io/events/home"
+  },
+  {
+    "from": "/ru-projects/home",
+    "to": "https://medium.com/maddevs-io/projects/home"
+  },
+  {
+    "from": "/managment/home",
+    "to": "https://medium.com/maddevs-io/managment/home"
+  },
+  {
+    "from": "/how-we-built-a-backend-system-for-uber-like-map-with-animated-cars-on-it-using-go-29d5dcd517a",
+    "to": "https://maddevs.io/blog/how-we-built-a-backend-system-for-uber-like-map-with-animated-cars-on-it-using-go"
+  },
+  {
+    "from": "/how-we-built-a-backend-system-for-uber-like-map-with-animated-cars-on-it-using-go-29d5dcd517a?source=friends_link&sk=e8ce9b159a8b5913f0b39d9a751c9b5d",
+    "to": "https://maddevs.io/blog/how-we-built-a-backend-system-for-uber-like-map-with-animated-cars-on-it-using-go"
+  },
+  {
+    "from": "/media-storage-on-multiple-django-924ba8282b79",
+    "to": "https://maddevs.io/blog/media-storage-on-multiple-django"
+  },
+  {
+    "from": "/media-storage-on-multiple-django-924ba8282b79?source=friends_link&sk=fd83fad987615088fcde1fc5cb07dffd",
+    "to": "https://maddevs.io/blog/media-storage-on-multiple-django"
+  },
+  {
+    "from": "/deploy-and-scale-wordpress-with-docker-cloud-swarm-mode-f780d4e735cb",
+    "to": "https://maddevs.io/blog/deploy-and-scale-wordpress-with-docker-cloud-swarm-mode"
+  },
+  {
+    "from": "/deploy-and-scale-wordpress-with-docker-cloud-swarm-mode-f780d4e735cb?source=friends_link&sk=ebcbee638acf7c337b2e64484994cb0b",
+    "to": "https://maddevs.io/blog/deploy-and-scale-wordpress-with-docker-cloud-swarm-mode"
+  },
+  {
+    "from": "/how-we-made-restreaming-from-youtube-using-go-dbe6eb1f1e0a",
+    "to": "https://maddevs.io/blog/how-we-made-restreaming-from-youtube-using-go"
+  },
+  {
+    "from": "/how-we-made-restreaming-from-youtube-using-go-dbe6eb1f1e0a?source=friends_link&sk=82aee53e9c03ceafafa18802e0bbd170",
+    "to": "https://maddevs.io/blog/how-we-made-restreaming-from-youtube-using-go"
+  },
+  {
+    "from": "/time-to-graphqlize-f61034d86e35",
+    "to": "https://maddevs.io/blog/time-to-graphqlize"
+  },
+  {
+    "from": "/time-to-graphqlize-f61034d86e35?source=friends_link&sk=d4dc6c9f30def2ecfa3af4a47f8364e9",
+    "to": "https://maddevs.io/blog/time-to-graphqlize"
+  },
+  {
+    "from": "/google-analytics-for-livestreams-b726275752e",
+    "to": "https://maddevs.io/blog/google-analytics-for-livestreams"
+  },
+  {
+    "from": "/google-analytics-for-livestreams-b726275752e?source=friends_link&sk=4fac5f93fc1c21c7a0a6043d7e24839f",
+    "to": "https://maddevs.io/blog/google-analytics-for-livestreams"
+  },
+  {
+    "from": "/working-with-the-mysql-in-go-58fcc951b41f",
+    "to": "https://maddevs.io/blog/working-with-the-mysql-in-go"
+  },
+  {
+    "from": "/working-with-the-mysql-in-go-58fcc951b41f?source=friends_link&sk=28d0f484b496b837d2cfd110cca50eef",
+    "to": "https://maddevs.io/blog/working-with-the-mysql-in-go"
+  },
+  {
+    "from": "/ariadna-opensource-geocoder-832f149f2981",
+    "to": "https://maddevs.io/blog/ariadna-opensource-geocoder"
+  },
+  {
+    "from": "/ariadna-opensource-geocoder-832f149f2981?source=friends_link&sk=554e098e65224fe49176898491665eea",
+    "to": "https://maddevs.io/blog/ariadna-opensource-geocoder"
+  },
+  {
+    "from": "/developer-education-experience-11494843a68d",
+    "to": "https://maddevs.io/blog/developer-education-experience"
+  },
+  {
+    "from": "/developer-education-experience-11494843a68d?source=friends_link&sk=25d9c0d84f003a41405584cedb6ecfb2",
+    "to": "https://maddevs.io/blog/developer-education-experience"
+  },
+  {
+    "from": "/hey-full-snack-developer-1eec707693fd",
+    "to": "https://maddevs.io/blog/hey-full-snack-developer"
+  },
+  {
+    "from": "/hey-full-snack-developer-1eec707693fd?source=friends_link&sk=ef94d0315da4853bd0c3cfde763d3648",
+    "to": "https://maddevs.io/blog/hey-full-snack-developer"
+  },
+  {
+    "from": "/how-we-built-failover-architecture-for-a-taxi-service-part-1-intro-e611eb33c115",
+    "to": "https://maddevs.io/blog/how-we-built-failover-architecture-for-a-taxi-service-part-1-intro"
+  },
+  {
+    "from": "/how-we-built-failover-architecture-for-a-taxi-service-part-1-intro-e611eb33c115?source=friends_link&sk=94fa9774333bbec0048b530a16193b4b",
+    "to": "https://maddevs.io/blog/how-we-built-failover-architecture-for-a-taxi-service-part-1-intro"
+  },
+  {
+    "from": "/how-we-built-failover-architecture-for-a-taxi-service-part-2-continued-ae1caf740e68",
+    "to": "https://maddevs.io/blog/how-we-built-failover-architecture-for-a-taxi-service-part-2-continued"
+
+  },
+  {
+    "from": "/how-we-built-failover-architecture-for-a-taxi-service-part-2-continued-ae1caf740e68?source=friends_link&sk=3789d246c698d5a3e246f929feb1f90f",
+    "to": "https://maddevs.io/blog/how-we-built-failover-architecture-for-a-taxi-service-part-2-continued"
+  },
+  {
+    "from": "/addled-deploy-13d728bd4a63",
+    "to": "https://maddevs.io/blog/addled-deploy"
+  },
+  {
+    "from": "/addled-deploy-13d728bd4a63?source=friends_link&sk=721ab368fbda21ec0100ee7c4672fb19",
+    "to": "https://maddevs.io/blog/addled-deploy"
+  },
+  {
+    "from": "/linuxkit-as-a-ecs-instance-with-terraform-31a33116dbe2?source=friends_link&sk=7df0870df90d861a5987e6b5797c7994",
+    "to": "https://maddevs.io/blog/linuxkit-as-a-ecs-instance-with-terraform"
+  },
+  {
+    "from": "/how-we-built-a-failover-architecture-for-a-taxi-service-part-3-the-end-78b2215caa08?source=friends_link&sk=6cd4d88ff947021446019eb5f8e7271f",
+    "to": "https://maddevs.io/blog/how-we-built-a-failover-architecture-for-a-taxi-service-part-3-the-end"
+  },
+  {
+    "from": "/reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer-43594faed19c?source=friends_link&sk=2b644f8deea5d86c0943cb9dab5eb70e",
+    "to": "https://maddevs.io/blog/reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer"
+  },
+  {
+    "from": "/the-evolution-of-internship-721303ca6361?source=friends_link&sk=a45fc9f974a9a2cf7aab06c312bad185",
+    "to": "https://maddevs.io/blog/the-evolution-of-internship"
+  },
+  {
+    "from": "/you-want-to-develop-a-mobile-application-are-you-sure-9f274977c615?source=friends_link&sk=c1c0eff43bd69a99c78c389a8a8db960",
+    "to": "https://maddevs.io/blog/you-want-to-develop-a-mobile-application-are-you-sure"
+  },
+  {
+    "from": "/namba-food-bot-61b5be6acfec?source=friends_link&sk=1be9dc80e2567ed1e1a2713466c1e8fe",
+    "to": "https://maddevs.io/blog/namba-food-bot"
+  },
+  {
+    "from": "/best-architecture-for-the-react-project-149b377b379d?source=friends_link&sk=573f09610a6358d4d6d51ee7e9fb5a45",
+    "to": "https://maddevs.io/blog/best-architecture-for-the-react-project"
+  },
+  {
+    "from": "/how-can-programmer-grow-faster-d8fccdb5eb2c?source=friends_link&sk=f018e40b749a8592686fa114bc03df5c",
+    "to": "https://maddevs.io/blog/how-can-programmer-grow-faster"
+  },
+  {
+    "from": "/comedian-17b0bb0ae8c7?source=friends_link&sk=da0f6ed251fbc86a219da51eb28d92c4",
+    "to": "https://maddevs.io/blog/comedian"
+  },
+  {
+    "from": "/go-rest-or-grpc-5eace88499bd?source=friends_link&sk=3bc86cb5fc4d2ab229f3451fd6e100f5",
+    "to": "https://maddevs.io/blog/go-rest-or-grpc"
+  },
+  {
+    "from": "/mad-devs-climbs-clutchs-ranks-of-leading-web-developers-cloud-consultants-in-the-uk-950926f32252?source=friends_link&sk=440ead7d3bf7cf187ac050f2a3dcef76",
+    "to": "https://maddevs.io/blog/mad-devs-climbs-clutchs-ranks-of-leading-web-developers-cloud-consultants-in-the-uk"
+  },
+  {
+    "from": "/daas-devops-as-a-service-wut-6e34ceb865ca?source=friends_link&sk=5f74ad6d24b8b1cecc353103c7825c42",
+    "to": "https://maddevs.io/blog/devops-as-a-service"
+  },
+  {
+    "from": "/terraform-hetzner-1df05267baf0?source=friends_link&sk=f37421ebf6a108e5d41ba9d1eddf83b5",
+    "to": "https://maddevs.io/blog/terraform-hetzner"
+  },
+  {
+    "from": "/the-difference-in-work-for-beginner-and-professional-developers-e45ddd5e5bfe?source=friends_link&sk=2f7fbe3b8621349c152c7532db04410b",
+    "to": "https://maddevs.io/blog/the-difference-in-work-for-beginner-and-professional-developers"
+  },
+  {
+    "from": "/how-to-build-a-startup-with-an-outsource-team-a3b584c80bf8?source=friends_link&sk=79c1298518f05f4ba75ac5a8d05c006d",
+    "to": "https://maddevs.io/blog/how-to-build-a-startup-with-an-outsource-team"
+  },
+  {
+    "from": "/mad-fake-slack-945ea810a778?source=friends_link&sk=fa6c97cb2c7398c9e005926a7f045564",
+    "to": "https://maddevs.io/blog/mad-fake-slack"
+  },
+  {
+    "from": "/top-3-best-ci-for-your-js-projects-with-puppeteer-tests-9395ff31d134?source=friends_link&sk=a044c5ef6b644007179feae54c6b3bf3",
+    "to": "https://maddevs.io/blog/top-3-best-ci-for-your-js-projects-with-puppeteer-tests"
+  },
+  {
+    "from": "/internship-program-automation-wip-f1d5d976ea21?source=friends_link&sk=45ca8d87c55a59440633c294ac75aa19",
+    "to": "https://maddevs.io/blog/internship-program-automation-wip"
+  },
+  {
+    "from": "/code-climate-code-analysis-locally-using-vscode-remote-containers-b4efaf6bf26e?source=friends_link&sk=38246ea752ab8b6b61ca001b00e06fc9",
+    "to": "https://maddevs.io/blog/code-climate-code-analysis-locally-using-vscode-remote-containers"
+  },
+  {
+    "from": "/micronavigator-based-on-stm32f100-3cebc718f638?source=friends_link&sk=858d2cfafc3b87adf79995331bdf6154",
+    "to": "https://maddevs.io/blog/micronavigator-based-on"
+  },
+  {
+    "from": "/underestimating-go-c3b5eb497f9d?source=friends_link&sk=9aa2238435e278b6a83feb2783c8167f",
+    "to": "https://maddevs.io/blog/underestimating-go"
+  },
+  {
+    "from": "/the-nuances-of-testing-in-pair-cucumber-js-puppeteer-49c3ff2da44c?source=friends_link&sk=67af8b681b3fecead6f36c268b003bec",
+    "to": "https://maddevs.io/blog/the-nuances-of-testing-in-pair-cucumber-js-puppeteer"
+  },
+  {
+    "from": "/view-colleagues-from-another-office-through-always-on-video-window-71b4cf6efbbe?source=friends_link&sk=6967ee8ca44ab1f26f444261ba650f8d",
+    "to": "https://maddevs.io/blog/view-colleagues-from-another-office-through-always-on-video-window"
+  },
+  {
+    "from": "/meet-glitch-com-429c423cf8e1?source=friends_link&sk=1139dad2bb6b7d9ee7b3209068bf04f9",
+    "to": "https://maddevs.io/blog/meet-glitch-com"
+  },
+  {
+    "from": "/web-app-deploy-to-glitch-com-b43470c32a2f?source=friends_link&sk=9ac6f596478df5209de433903fc84897",
+    "to": "https://maddevs.io/blog/web-app-deploy-to-glitch-com"
+  },
+  {
+    "from": "/a-bit-about-event-delegation-in-react-3b92fb0a978b?source=friends_link&sk=a8d9e27f4dec66fdafe5a6f408aa751d",
+    "to": "https://maddevs.io/blog/a-bit-about-event-delegation-in-react"
+  },
+  {
+    "from": "/a-bit-about-event-delegation-in-pure-js-56f8356463ca?source=friends_link&sk=4025f7342a240cc08ab4d1c0de456a5c",
+    "to": "https://maddevs.io/blog/a-bit-about-event-delegation-in-pure-js"
+  },
+  {
+    "from": "/how-to-stop-worrying-and-start-developing-for-raspberry-pi-with-qt-8df032f8a534?source=friends_link&sk=2bac39628922181872271fe358fa4cdc",
+    "to": "https://maddevs.io/blog/how-to-start-developing-for-raspberry-pi-with-qt"
+  },
+  {
+    "from": "/guaranteed-delivery-with-grpc-streams-dc847ead7e6e?source=friends_link&sk=a4be52cc0e4e96235e88f128caed05c7",
+    "to": "https://maddevs.io/blog/guaranteed-delivery-with-grpc-streams"
+  },
+  {
+    "from": "/how-to-start-with-logging-in-golang-projects-part-1-3e3a708b75be?source=friends_link&sk=b00bc9071228211bfbd6309e1be0124e",
+    "to": "https://maddevs.io/blog/how-to-start-with-logging-in-golang-projects-part-1"
+  },
+  {
+    "from": "/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci-9805042bc0c?source=friends_link&sk=070a52f4fc970bf0474f6ceb270c1651",
+    "to": "https://maddevs.io/blog/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci"
+  },
+  {
+    "from": "/testing-django-on-steroids-with-pytest-38fe11a3538c?source=friends_link&sk=91e2e3622756e309ddb80d0dcc076c6a",
+    "to": "https://maddevs.io/blog/testing-django-on-steroids-with-pytest"
+  },
+  {
+    "from": "/how-to-start-with-logging-in-go-projects-part-2-1e57cc58f329?source=friends_link&sk=51935cb603c3763c55ff99fe40c11c12",
+    "to": "https://maddevs.io/blog/how-to-start-with-logging-in-go-projects-part-2"
+  },
+  {
+    "from": "/how-good-engineering-culture-is-in-your-team-1ecd6f16da69?source=friends_link&sk=8a155232c85c881d9c214a7c87c272f4",
+    "to": "https://maddevs.io/blog/how-good-engineering-culture-is-in-your-team"
+  },
+  {
+    "from": "/introduction-to-pcb-prototyping-with-easyeda-part-i-project-creation-143563311253?source=friends_link&sk=27d475755a3259416bb9e91baa3b8f49",
+    "to": "https://maddevs.io/blog/introduction-to-pcb-prototyping-with-easyeda-part-1-project-creation"
+  },
+  {
+    "from": "/introduction-to-prototyping-with-easyeda-part-ii-simple-schematic-fecafe9839c7?source=friends_link&sk=0f257710a40a69d79241b689d1885ed9",
+    "to": "https://maddevs.io/blog/introduction-to-prototyping-with-easyeda-part-ii-simple-schematic"
+  },
+  {
+    "from": "/how-to-make-a-proper-description-for-a-pull-request-5e1cbe9fb374?source=friends_link&sk=2b9cc357b19fd10e18fb638ed7f22eec",
+    "to": "https://maddevs.io/blog/how-to-make-a-proper-description-for-a-pull-request"
+  },
+  {
+    "from": "/how-to-memorize-information-better-when-you-study-2116b2b74839",
+    "to": "https://maddevs.io/blog/how-to-memorize-information-better-when-you-study"
+  },
+  {
+    "from": "/running-postgres-as-a-build-requirement-in-teamcity-build-8c6413576e33",
+    "to": "https://maddevs.io/blog/running-postgres-as-a-build-requirement-in-teamcity-build"
+  },
+  {
+    "from": "/how-to-protect-your-eyes-from-strain-while-working-in-it-82ce9d3973bf",
+    "to": "https://maddevs.io/blog/how-to-protect-your-eyes-from-strain-while-working-in-it"
+  },
+  {
+    "from": "/how-to-automate-jira-mad-devs-experience-50c7836eec65?source=friends_link&sk=e3fb879ddacf5df9599251a94f99b2d1",
+    "to": "https://maddevs.io/blog/how-to-automate-jira-mad-devs-experience"
+  },
+  {
+    "from": "/avr-mcu-testing-f925e84b7023?source=friends_link&sk=f34cb696eddfb39f64c5d0a9cc966f19",
+    "to": "https://maddevs.io/blog/avr-mcu-testing"
+  },
+  {
+    "from": "/running-geo-django-on-elasticbeanstalk-fd7b9862fb2c?source=friends_link&sk=c82987a32efd53ed2952e0320eeba448",
+    "to": "https://maddevs.io/blog/running-geo-django-on-elasticbeanstalk"
+  },
+  {
+    "from": "/pm-mistakes-9b58814e8cc9?source=friends_link&sk=b10461d3f4b5d7babe3718676fe3d1c4",
+    "to": "https://maddevs.io/blog/pm-mistakes"
+  },
+  {
+    "from": "/integration-of-stripe-connect-926daa2978d5?source=friends_link&sk=66b3f5d21d2a575b98ced7babae9e8e5",
+    "to": "https://maddevs.io/blog/integration-of-stripe-connect"
+  },
+  {
+    "from": "/progressive-web-apps-practical-usage-guide-8f9ddfea1cb3?source=friends_link&sk=cd49b6a42f4488e952ff7ea3f44cc788",
+    "to": "https://maddevs.io/blog/progressive-web-apps-practical-usage-guide"
+  },
+  {
+    "from": "/the-five-rules-when-we-work-with-jira-d6fdbf6accfd?source=friends_link&sk=3cb7100dbc222a487c92ed5330a65fcc",
+    "to": "https://maddevs.io/blog/the-five-rules-when-we-work-with-jira"
+  },
+  {
+    "from": "/how-to-make-three-paid-eta-services-one-free-6edc6affface?source=friends_link&sk=a01fa3774b63d1e8b6c23f6fb5db717e",
+    "to": "https://maddevs.io/blog/how-to-make-three-paid-eta-services-one-free"
+  },
+  {
+    "from": "/visualization-as-a-method-of-drawing-the-readers-attention-1d8cc5cfd5dd?source=friends_link&sk=dca1f05b9c7497c1d7a713838606f28a",
+    "to": "https://maddevs.io/blog/visualization-as-a-method-of-drawing-the-readers-attention"
+  },
+  {
+    "from": "/the-cost-of-errors-in-hardware-projects-7d73b0fd8465?source=friends_link&sk=eb21eb69d892cb19c0f85f3e0276481e",
+    "to": "https://maddevs.io/blog/the-cost-of-errors-in-hardware-projects"
+  },
+  {
+    "from": "/effective-refactoring-of-heavy-database-interface-2c355498afe7?source=friends_link&sk=90d99e4b33c352950b090659273078f3",
+    "to": "https://maddevs.io/blog/effective-refactoring-of-heavy-database-interface"
+  },
+  {
+    "from": "/how-to-ruin-a-relationship-with-the-client-a850df35b3?source=friends_link&sk=c25b89dec2191b684f163c569eb72c6f",
+    "to": "https://maddevs.io/blog/how-to-ruin-a-relationship-with-the-client"
+  },
+  {
+    "from": "/what-to-choose-to-implement-audio-video-calls-solution-using-webrtc-ff5421e49a57?source=friends_link&sk=6bb96762811cb4c4e619284bf52629a6",
+    "to": "https://maddevs.io/blog/what-to-choose-to-implement-audio-video-calls-solution-using-webrtc"
+  },
+  {
+    "from": "/functional-programming-principles-in-javascript-37339f7c9e60?source=friends_link&sk=7ed82308783fb3f3c645d10e0c2fb176",
+    "to": "https://maddevs.io/blog/functional-programming-principles-in-javascript"
+  },
+  {
+    "from": "/how-to-automate-tasks-estimation-in-jira-720bacf6d75d?source=friends_link&sk=f57cc9a52560108f1a045e4a60e63281",
+    "to": "https://maddevs.io/blog/how-to-automate-tasks-estimation-in-jira"
+  },
+  {
+    "from": "/software-features-acceptance-process-by-clients-49948f783756?source=friends_link&sk=75e7b63f7086c00e389dc83c3d426c8e",
+    "to": "https://maddevs.io/blog/software-features-acceptance-process-by-clients"
+  },
+  {
+    "from": "/how-to-communicate-with-client-to-build-a-successful-software-6a054b089f6f?source=friends_link&sk=4fcf9634f2cf1b47fe109c9f33d18ddb",
+    "to": "https://maddevs.io/blog/how-to-communicate-with-client-to-build-a-successful-software"
+  },
+  {
+    "from": "/3-top-skills-every-successful-project-manager-needs-to-focus-on-70827595cb6e?source=friends_link&sk=0f5a4db2dfec97364adb8346169dd5b7",
+    "to": "https://maddevs.io/blog/top-skills-every-successful-project-manager-needs-to-focus-on"
+  },
+  {
+    "from": "/how-to-start-as-a-tech-blogger-f66a3f54d47e?source=friends_link&sk=9b66ed15741c36310a63b5eda4abeb0e",
+    "to": "https://maddevs.io/blog/how-to-start-as-a-tech-blogger"
+  },
+  {
+    "from": "/its-not-just-a-layout-what-do-you-need-to-know-to-make-a-good-markup-ff178a1b2a95?source=friends_link&sk=e73f9d45425c502b5c3a088d1fd2ddf7",
+    "to": "https://maddevs.io/blog/what-do-you-need-to-know-to-make-a-good-markup"
+  },
+  {
+    "from": "/how-to-become-a-software-developer-things-that-i-learned-in-the-it-company-103c40a31bec?source=friends_link&sk=47c3c0c913b948a1adb2ebbf7c4663d5",
+    "to": "https://maddevs.io/blog/how-to-become-a-software-developer"
+  },
+  {
+    "from": "/how-to-make-better-use-of-sass-extensions-for-custom-css-variables-6bdf9069337e?source=friends_link&sk=cc5b33b3ffad133412eef05650b2d93e",
+    "to": "https://maddevs.io/blog/how-to-make-better-use-of-sass-extensions-for-custom-css-variables"
+  },
+  {
+    "from": "/devops-engineers-in-mad-devs-449ded5221b6?source=friends_link&sk=2e0fa9326c958eddd0839178752f384e",
+    "to": "https://maddevs.io/blog/devops-engineers-in-mad-devs"
+  },
+  {
+    "from": "/healthy-conflicts-in-software-development-projects-75e0cd63894c?source=friends_link&sk=0b042a1770ebc60c20f8b65e831ce7f9",
+    "to": "https://maddevs.io/blog/healthy-conflicts-in-software-development-projects"
+  },
+  {
+    "from": "/manager-dos-and-donts-83e2293c413d?source=friends_link&sk=553e80d39aabcdf0dc47bac9779c7f73",
+    "to": "https://maddevs.io/blog/manager-dos-and-donts"
+  },
+  {
+    "from": "/bullet-issues-tasks-that-kill-95f480a2429?source=friends_link&sk=ac54ce08bb72960849b6d9fbfcd034ac",
+    "to": "https://maddevs.io/blog/bullet-issues-tasks-that-kill"
+  },
+  {
+    "from": "/how-project-manager-stays-focused-fa86dcbc5c7a?source=friends_link&sk=ca009cec370e54aed285c7ebff12fefe",
+    "to": "https://maddevs.io/blog/how-project-manager-stays-focused"
+  },
+  {
+    "from": "/device-location-using-livedata-architecture-component-5380c020ea54?source=friends_link&sk=ec0af252b9e79af83db55a126f8f43fe",
+    "to": "https://maddevs.io/blog/device-location-using-livedata-architecture-component"
+  },
+  {
+    "from": "/how-to-test-a-web-product-manually-c019d6e8e2f3?source=friends_link&sk=b08f7867584f17fbfe224175143c1fe4",
+    "to": "https://maddevs.io/blog/how-to-test-a-web-product-manually"
+  },
+  {
+    "from": "/log-collecting-with-elk-and-rsyslog-218b032b12f4?source=friends_link&sk=b67a43ff22a848b904b0349a88ae7042",
+    "to": "https://maddevs.io/blog/log-collecting-with-elk-and-rsyslog"
+  },
+  {
+    "from": "/software-architecture-design-d08463fb04df?source=friends_link&sk=20106a3ab3864d830ccddc813364e82b",
+    "to": "https://maddevs.io/blog/software-architecture-design"
+  },
+  {
+    "from": "/positive-and-negative-reinforcement-in-teaching-programming-b5dc1fcb042a?source=friends_link&sk=1e62dcbc7e3f987a8c862a2acccb30d7",
+    "to": "https://maddevs.io/blog/positive-and-negative-reinforcement-in-teaching-programming/"
+  },
+  {
+    "from": "/nastachku-2017-bdbdf83efb15",
+    "to": "https://medium.com/maddevs-io/nastachku-2017-bdbdf83efb15"
+  },
+  {
+    "from": "/bit-2017-bishkek-5509aeade425",
+    "to": "https://medium.com/maddevs-io/bit-2017-bishkek-5509aeade425"
+  },
+  {
+    "from": "/kolesa-web-conference-from-our-friends-in-almaty-62083fd36d75",
+    "to": "https://medium.com/maddevs-io/kolesa-web-conference-from-our-friends-in-almaty-62083fd36d75"
+  },
+  {
+    "from": "/op-2017-krakow-5f12d782f22c",
+    "to": "https://medium.com/maddevs-io/op-2017-krakow-5f12d782f22c"
+  },
+  {
+    "from": "/women-tech-makers-bishkek-c6e87c8e7001",
+    "to": "https://medium.com/maddevs-io/women-tech-makers-bishkek-c6e87c8e7001"
+  },
+  {
+    "from": "/computer-science-students-986396201919",
+    "to": "https://medium.com/maddevs-io/computer-science-students-986396201919"
+  },
+  {
+    "from": "/iotsploit-wins-she-loves-tech-pitching-competition-in-singapore-3c3b53078f49",
+    "to": "https://medium.com/maddevs-io/iotsploit-wins-she-loves-tech-pitching-competition-in-singapore-3c3b53078f49"
+  },
+  {
+    "from": "/learn-go-with-our-codelab-e635ba705af6",
+    "to": "https://medium.com/maddevs-io/learn-go-with-our-codelab-e635ba705af6"
+  },
+  {
+    "from": "/a-glance-at-devfest-siberia-2017-161c678de0f6",
+    "to": "https://medium.com/maddevs-io/a-glance-at-devfest-siberia-2017-161c678de0f6"
+  },
+  {
+    "from": "/positive-and-negative-reinforcement-in-teaching-programming-b5dc1fcb042a",
+    "to": "https://medium.com/maddevs-io/positive-and-negative-reinforcement-in-teaching-programming-b5dc1fcb042a"
+  },
+  {
+    "from": "/gophercon-russia-a-lot-of-warm-in-18-68747e8bff97",
+    "to": "https://medium.com/maddevs-io/gophercon-russia-a-lot-of-warm-in-18-68747e8bff97"
+  },
+  {
+    "from": "/mad-devs-icpc-northern-eurasia-the-2018-kyrgyzstan-subregional-contest-427be193ff5b",
+    "to": "https://medium.com/maddevs-io/mad-devs-icpc-northern-eurasia-the-2018-kyrgyzstan-subregional-contest-427be193ff5b"
+  },
+  {
+    "from": "/mad-devs-is-a-main-sponsor-of-google-developers-group-gdg-devfest-bishkek-2018-83d7f2abc19f",
+    "to": "https://medium.com/maddevs-io/mad-devs-is-a-main-sponsor-of-google-developers-group-gdg-devfest-bishkek-2018-83d7f2abc19f"
+  },
+  {
+    "from": "/namba-food-startup-e6564e66806d",
+    "to": "https://maddevs.io/case-studies/namba-food/"
+  },
+  {
+    "from": "/namba-food-startup-e6564e66806d?source=friends_link&sk=5baa5812251bab7b228c53758052d8ea",
+    "to": "https://maddevs.io/case-studies/namba-food/"
+  },
+  {
+    "from": "/silkroadexplore-cbdc1c5f157f",
+    "to": "https://medium.com/maddevs-io/silkroadexplore-cbdc1c5f157f"
+  },
+  {
+    "from": "/silkroadexplore-cbdc1c5f157f?source=friends_link&sk=ef2c64ed3308451b51b3f7b22b1a83fe",
+    "to": "https://medium.com/maddevs-io/silkroadexplore-cbdc1c5f157f"
+  },
+  {
+    "from": "/the-namba-project-1adea593dc83",
+    "to": "https://medium.com/maddevs-io/the-namba-project-1adea593dc83"
+  },
+  {
+    "from": "/the-namba-project-1adea593dc83?source=friends_link&sk=4a18ec55cc17c1896e2e09b0dfbe22a5",
+    "to": "https://medium.com/maddevs-io/the-namba-project-1adea593dc83"
+  },
+  {
+    "from": "/namba-taxi-development-and-integration-28b25cd0012a",
+    "to": "https://medium.com/maddevs-io/namba-taxi-development-and-integration-28b25cd0012a"
+  },
+  {
+    "from": "/namba-taxi-development-and-integration-28b25cd0012a?source=friends_link&sk=b5e875f7aed3e73bd23a0b430969f505",
+    "to": "https://medium.com/maddevs-io/namba-taxi-development-and-integration-28b25cd0012a"
+  },
+  {
+    "from": "/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5",
+    "to": "https://medium.com/maddevs-io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5"
+  },
+  {
+    "from": "/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5?source=friends_link&sk=3e3f75a7f35f0e4d9d447a19e015330a",
+    "to": "https://medium.com/maddevs-io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5"
+  },
+  {
+    "from": "/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b",
+    "to": "https://medium.com/maddevs-io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b"
+  },
+  {
+    "from": "/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0",
+    "to": "https://medium.com/maddevs-io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b"
+  },
+  {
+    "from": "/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f",
+    "to": "https://medium.com/maddevs-io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f"
+  },
+  {
+    "from": "/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f?source=friends_link&sk=0f492513f43ce5b4330c3cfa484378c5",
+    "to": "https://medium.com/maddevs-io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f"
+  },
+  {
+    "from": "/namba-food-top-1-delivery-service-in-central-asia-3df8ca4d436d",
+    "to": "https://maddevs.io/case-studies/namba-food/"
+  },
+  {
+    "from": "/namba-food-top-1-delivery-service-in-central-asia-3df8ca4d436d?source=friends_link&sk=1dd67cc82dad8e4fae756b3a4d47f121",
+    "to": "https://maddevs.io/case-studies/namba-food/"
+  },
+  {
+    "from": "/%D0%B4%D0%B5%D0%BB%D0%B0%D0%B5%D0%BC-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D1%81-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-go-ecf4b82c7625",
+    "to": "https://medium.com/maddevs-io/%D0%B4%D0%B5%D0%BB%D0%B0%D0%B5%D0%BC-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D1%81-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-go-ecf4b82c7625"
   }
 ]
