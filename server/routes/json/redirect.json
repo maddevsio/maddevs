@@ -298,5 +298,9 @@
   {
     "from": "/en",
     "to": "https://maddevs.io"
+  },
+  {
+    "from": "/",
+    "to": "https://maddevs.io/blog"
   }
 ]
