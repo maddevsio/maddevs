@@ -96,11 +96,11 @@ router.post('/prismic-hook', (req, res) => {
 });
 
 // Redirect logic
-redirect.list.forEach(link => {
-  router.get(link.from, (req, res) => {
-    res.redirect(301, link.to);
-  });  
-});
+// redirect.list.forEach(link => {
+//   router.get(link.from, (req, res) => {
+//     res.redirect(301, link.to);
+//   });
+// });
 
 router.get('https://blog.maddevs.co', (req, res) => {
   res.redirect(301, 'https://maddevs.co/blog');
