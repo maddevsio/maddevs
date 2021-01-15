@@ -56,9 +56,9 @@ export default {
 
   &_logotype {
     @include nambafood-header;
-    width: 127px;
-    height: 114px;
-    margin-bottom: 54px;
+    width: 259.44px;
+    height: 82px;
+    margin-bottom: 30px;
     z-index: 1;
   }
 
@@ -72,9 +72,9 @@ export default {
 
   @media screen and (max-width: 768px) {
     &_logotype {
-      width: 103.51px;
-      height: 92.75px;
-      margin-bottom: 46px;
+      width: 235.44px;
+      height: 60px;
+      margin-bottom: 20px;
     }
   }
 
