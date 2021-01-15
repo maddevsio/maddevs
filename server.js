@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const redirectList = require('./server/routes/json/redirect');
 
 const app = express();
 app.use(cors());
@@ -26,6 +27,19 @@ app.use((req, res, next) => {
   }
 });
 app.use(express.static(__dirname + '/dist'));
+app.use((req, res, next) => {
+  if (req.headers.host === 'blog.maddevs.co' || req.headers.host === 'blog.maddevs.io') {
+    const requestUrl = req.url.slice(-1) === '/' ? req.url.substr(0, req.url.length - 1) : req.url;
+    const match = redirectList.find(url => url.from === requestUrl);
+    if (match !== undefined && !!match.to) {
+      res.redirect(match.to);
+    } else {
+      res.sendStatus(404);
+    }
+  } else {
+    next();
+  }
+});
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
