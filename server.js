@@ -28,7 +28,7 @@ app.use((req, res, next) => {
 });
 app.use(express.static(__dirname + '/dist'));
 app.use((req, res, next) => {
-  if (req.headers.host === 'blog.maddevs.co' || req.headers.host === 'blog.maddevs.io') {
+  if (['blog.maddevs.co', 'blog.maddevs.io'].includes(req.headers.host)) {
     const requestUrl = req.url.slice(-1) === '/' ? req.url.substr(0, req.url.length - 1) : req.url;
     const match = redirectList.find(url => url.from === requestUrl);
     if (match !== undefined && !!match.to) {
