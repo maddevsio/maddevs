@@ -102,4 +102,8 @@ router.post('/prismic-hook', (req, res) => {
 //   });
 // });
 
+router.get('https://blog.maddevs.co', (req, res) => {
+  res.redirect(301, 'https://maddevs.co/blog');
+});  
+
 module.exports = router;
