@@ -1,307 +1,15 @@
 [
   {
-    "from": "/linuxkit-as-a-ecs-instance-with-terraform-31a33116dbe2",
-    "to": "https://maddevs.io/blog/linuxkit-as-a-ecs-instance-with-terraform"
-  },
-  {
-    "from": "/how-we-built-a-failover-architecture-for-a-taxi-service-part-3-the-end-78b2215caa08",
-    "to": "https://maddevs.io/blog/how-we-built-a-failover-architecture-for-a-taxi-service-part-3-the-end"
-  },
-  {
-    "from": "/reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer-43594faed19c",
-    "to": "https://maddevs.io/blog/reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer"
-  },
-  {
-    "from": "/the-evolution-of-internship-721303ca6361",
-    "to": "https://maddevs.io/blog/the-evolution-of-internship"
-  },
-  {
-    "from": "/you-want-to-develop-a-mobile-application-are-you-sure-9f274977c615",
-    "to": "https://maddevs.io/blog/you-want-to-develop-a-mobile-application-are-you-sure"
-  },
-  {
-    "from": "/namba-food-bot-61b5be6acfec",
-    "to": "https://maddevs.io/blog/namba-food-bot"
-  },
-  {
-    "from": "/best-architecture-for-the-react-project-149b377b379d",
-    "to": "https://maddevs.io/blog/best-architecture-for-the-react-project"
-  },
-  {
-    "from": "/how-can-programmer-grow-faster-d8fccdb5eb2c",
-    "to": "https://maddevs.io/blog/how-can-programmer-grow-faster"
-  },
-  {
-    "from": "/comedian-17b0bb0ae8c7",
-    "to": "https://maddevs.io/blog/comedian"
-  },
-  {
-    "from": "/go-rest-or-grpc-5eace88499bd",
-    "to": "https://maddevs.io/blog/go-rest-or-grpc"
-  },
-  {
-    "from": "/mad-devs-climbs-clutchs-ranks-of-leading-web-developers-cloud-consultants-in-the-uk-950926f32252",
-    "to": "https://maddevs.io/blog/mad-devs-climbs-clutchs-ranks-of-leading-web-developers-cloud-consultants-in-the-uk"
-  },
-  {
-    "from": "/daas-devops-as-a-service-wut-6e34ceb865ca",
-    "to": "https://maddevs.io/blog/devops-as-a-service"
-  },
-  {
-    "from": "/terraform-hetzner-1df05267baf0",
-    "to": "https://maddevs.io/blog/terraform-hetzner"
-  },
-  {
-    "from": "/the-difference-in-work-for-beginner-and-professional-developers-e45ddd5e5bfe",
-    "to": "https://maddevs.io/blog/the-difference-in-work-for-beginner-and-professional-developers"
-  },
-  {
-    "from": "/how-to-build-a-startup-with-an-outsource-team-a3b584c80bf8",
-    "to": "https://maddevs.io/blog/how-to-build-a-startup-with-an-outsource-team"
-  },
-  {
-    "from": "/mad-fake-slack-945ea810a778",
-    "to": "https://maddevs.io/blog/mad-fake-slack"
-  },
-  {
-    "from": "/top-3-best-ci-for-your-js-projects-with-puppeteer-tests-9395ff31d134",
-    "to": "https://maddevs.io/blog/top-3-best-ci-for-your-js-projects-with-puppeteer-tests"
-  },
-  {
-    "from": "/internship-program-automation-wip-f1d5d976ea21",
-    "to": "https://maddevs.io/blog/internship-program-automation-wip"
-  },
-  {
-    "from": "/code-climate-code-analysis-locally-using-vscode-remote-containers-b4efaf6bf26e",
-    "to": "https://maddevs.io/blog/code-climate-code-analysis-locally-using-vscode-remote-containers"
-  },
-  {
-    "from": "/micronavigator-based-on-stm32f100-3cebc718f638",
-    "to": "https://maddevs.io/blog/micronavigator-based-on"
-  },
-  {
-    "from": "/underestimating-go-c3b5eb497f9d",
-    "to": "https://maddevs.io/blog/underestimating-go"
-  },
-  {
-    "from": "/the-nuances-of-testing-in-pair-cucumber-js-puppeteer-49c3ff2da44c",
-    "to": "https://maddevs.io/blog/the-nuances-of-testing-in-pair-cucumber-js-puppeteer"
-  },
-  {
-    "from": "/view-colleagues-from-another-office-through-always-on-video-window-71b4cf6efbbe",
-    "to": "https://maddevs.io/blog/view-colleagues-from-another-office-through-always-on-video-window"
-  },
-  {
-    "from": "/meet-glitch-com-429c423cf8e1",
-    "to": "https://maddevs.io/blog/meet-glitch-com"
-  },
-  {
-    "from": "/web-app-deploy-to-glitch-com-b43470c32a2f",
-    "to": "https://maddevs.io/blog/web-app-deploy-to-glitch-com"
-  },
-  {
-    "from": "/a-bit-about-event-delegation-in-react-3b92fb0a978b",
-    "to": "https://maddevs.io/blog/a-bit-about-event-delegation-in-react"
-  },
-  {
-    "from": "/a-bit-about-event-delegation-in-pure-js-56f8356463ca",
-    "to": "https://maddevs.io/blog/a-bit-about-event-delegation-in-pure-js"
-  },
-  {
-    "from": "/how-to-stop-worrying-and-start-developing-for-raspberry-pi-with-qt-8df032f8a534",
-    "to": "https://maddevs.io/blog/how-to-stop-worrying-and-start-developing-for-raspberry-pi-with-qt"
-  },
-  {
-    "from": "/guaranteed-delivery-with-grpc-streams-dc847ead7e6e",
-    "to": "https://maddevs.io/blog/guaranteed-delivery-with-grpc-streams"
-  },
-  {
-    "from": "/how-to-start-with-logging-in-golang-projects-part-1-3e3a708b75be",
-    "to": "https://maddevs.io/blog/how-to-start-with-logging-in-golang-projects-part-1"
-  },
-  {
-    "from": "/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci-9805042bc0c",
-    "to": "https://maddevs.io/blog/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci"
-  },
-  {
-    "from": "/testing-django-on-steroids-with-pytest-38fe11a3538c",
-    "to": "https://maddevs.io/blog/testing-django-on-steroids-with-pytest"
-  },
-  {
-    "from": "/how-to-start-with-logging-in-go-projects-part-2-1e57cc58f329",
-    "to": "https://maddevs.io/blog/how-to-start-with-logging-in-go-projects-part-2"
-  },
-  {
-    "from": "/how-good-engineering-culture-is-in-your-team-1ecd6f16da69",
-    "to": "https://maddevs.io/blog/how-good-engineering-culture-is-in-your-team"
-  },
-  {
-    "from": "/introduction-to-pcb-prototyping-with-easyeda-part-i-project-creation-143563311253",
-    "to": "https://maddevs.io/blog/introduction-to-pcb-prototyping-with-easyeda-part-1-project-creation"
-  },
-  {
-    "from": "/introduction-to-prototyping-with-easyeda-part-ii-simple-schematic-fecafe9839c7",
-    "to": "https://maddevs.io/blog/introduction-to-prototyping-with-easyeda-part-ii-simple-schematic"
-  },
-  {
-    "from": "/how-to-make-a-proper-description-for-a-pull-request-5e1cbe9fb374",
-    "to": "https://maddevs.io/blog/how-to-make-a-proper-description-for-a-pull-request"
-  },
-  {
-    "from": "/leadership-lessons-i-learned-from-videogames-b1e749b5c25",
-    "to": "https://maddevs.io/blog/leadership-lessons-i-learned-from-videogames"
-  },
-  {
-    "from": "/how-to-memorize-information-better-when-you-study-2116b2b74839",
-    "to": "https://maddevs.io/blog/how-to-memorize-information-better-when-you-study"
-  },
-  {
-    "from": "/running-postgres-as-a-build-requirement-in-teamcity-build-8c6413576e33",
-    "to": "https://maddevs.io/blog/running-postgres-as-a-build-requirement-in-teamcity-build"
-  },
-  {
-    "from": "/how-to-protect-your-eyes-from-strain-while-working-in-it-82ce9d3973bf",
-    "to": "https://maddevs.io/blog/how-to-protect-your-eyes-from-strain-while-working-in-it"
-  },
-  {
-    "from": "/how-to-automate-jira-mad-devs-experience-50c7836eec65",
-    "to": "https://maddevs.io/blog/how-to-automate-jira-mad-devs-experience"
-  },
-  {
-    "from": "/avr-mcu-testing-f925e84b7023",
-    "to": "https://maddevs.io/blog/avr-mcu-testing"
-  },
-  {
-    "from": "/running-geo-django-on-elasticbeanstalk-fd7b9862fb2c",
-    "to": "https://maddevs.io/blog/running-geo-django-on-elasticbeanstalk"
-  },
-  {
-    "from": "/pm-mistakes-9b58814e8cc9",
-    "to": "https://maddevs.io/blog/pm-mistakes"
-  },
-  {
-    "from": "/integration-of-stripe-connect-926daa2978d5",
-    "to": "https://maddevs.io/blog/integration-of-stripe-connect"
-  },
-  {
-    "from": "/progressive-web-apps-practical-usage-guide-8f9ddfea1cb3",
-    "to": "https://maddevs.io/blog/progressive-web-apps-practical-usage-guide"
-  },
-  {
-    "from": "/the-five-rules-when-we-work-with-jira-d6fdbf6accfd",
-    "to": "https://maddevs.io/blog/the-five-rules-when-we-work-with-jira"
-  },
-  {
-    "from": "/how-to-make-three-paid-eta-services-one-free-6edc6affface",
-    "to": "https://maddevs.io/blog/how-to-make-three-paid-eta-services-one-free"
-  },
-  {
-    "from": "/visualization-as-a-method-of-drawing-the-readers-attention-1d8cc5cfd5dd",
-    "to": "https://maddevs.io/blog/visualization-as-a-method-of-drawing-the-readers-attention"
-  },
-  {
-    "from": "/the-cost-of-errors-in-hardware-projects-7d73b0fd8465",
-    "to": "https://maddevs.io/blog/the-cost-of-errors-in-hardware-projects"
-  },
-  {
-    "from": "/effective-refactoring-of-heavy-database-interface-2c355498afe7",
-    "to": "https://maddevs.io/blog/effective-refactoring-of-heavy-database-interface"
-  },
-  {
-    "from": "/how-to-ruin-a-relationship-with-the-client-a850df35b3",
-    "to": "https://maddevs.io/blog/how-to-ruin-a-relationship-with-the-client"
-  },
-  {
-    "from": "/what-to-choose-to-implement-audio-video-calls-solution-using-webrtc-ff5421e49a57",
-    "to": "https://maddevs.io/blog/what-to-choose-to-implement-audio-video-calls-solution-using-webrtc"
-  },
-  {
-    "from": "/functional-programming-principles-in-javascript-37339f7c9e60",
-    "to": "https://maddevs.io/blog/functional-programming-principles-in-javascript"
-  },
-  {
-    "from": "/how-to-automate-tasks-estimation-in-jira-720bacf6d75d",
-    "to": "https://maddevs.io/blog/how-to-automate-tasks-estimation-in-jira"
-  },
-  {
-    "from": "/software-features-acceptance-process-by-clients-49948f783756",
-    "to": "https://maddevs.io/blog/software-features-acceptance-process-by-clients"
-  },
-  {
-    "from": "/how-to-communicate-with-client-to-build-a-successful-software-6a054b089f6f",
-    "to": "https://maddevs.io/blog/how-to-communicate-with-client-to-build-a-successful-software"
-  },
-  {
-    "from": "/3-top-skills-every-successful-project-manager-needs-to-focus-on-70827595cb6e",
-    "to": "https://maddevs.io/blog/top-skills-every-successful-project-manager-needs-to-focus-on"
-  },
-  {
-    "from": "/how-to-start-as-a-tech-blogger-f66a3f54d47e",
-    "to": "https://maddevs.io/blog/how-to-start-as-a-tech-blogger"
-  },
-  {
-    "from": "/its-not-just-a-layout-what-do-you-need-to-know-to-make-a-good-markup-ff178a1b2a95",
-    "to": "https://maddevs.io/blog/what-do-you-need-to-know-to-make-a-good-markup"
-  },
-  {
-    "from": "/how-to-become-a-software-developer-things-that-i-learned-in-the-it-company-103c40a31bec",
-    "to": "https://maddevs.io/blog/how-to-become-a-software-developer"
-  },
-  {
-    "from": "/how-to-make-better-use-of-sass-extensions-for-custom-css-variables-6bdf9069337e",
-    "to": "https://maddevs.io/blog/how-to-make-better-use-of-sass-extensions-for-custom-css-variables"
-  },
-  {
-    "from": "/devops-engineers-in-mad-devs-449ded5221b6",
-    "to": "https://maddevs.io/blog/devops-engineers-in-mad-devs"
-  },
-  {
-    "from": "/healthy-conflicts-in-software-development-projects-75e0cd63894c",
-    "to": "https://maddevs.io/blog/healthy-conflicts-in-software-development-projects"
-  },
-  {
-    "from": "/manager-dos-and-donts-83e2293c413d",
-    "to": "https://maddevs.io/blog/manager-dos-and-donts"
-  },
-  {
-    "from": "/bullet-issues-tasks-that-kill-95f480a2429",
-    "to": "https://maddevs.io/blog/bullet-issues-tasks-that-kill"
-  },
-  {
-    "from": "/how-project-manager-stays-focused-fa86dcbc5c7a",
-    "to": "https://maddevs.io/blog/how-project-manager-stays-focused"
-  },
-  {
-    "from": "/device-location-using-livedata-architecture-component-5380c020ea54",
-    "to": "https://maddevs.io/blog/device-location-using-livedata-architecture-component"
-  },
-  {
-    "from": "/how-to-test-a-web-product-manually-c019d6e8e2f3",
-    "to": "https://maddevs.io/blog/how-to-test-a-web-product-manually"
-  },
-  {
-    "from": "/log-collecting-with-elk-and-rsyslog-218b032b12f4",
-    "to": "https://maddevs.io/blog/log-collecting-with-elk-and-rsyslog"
-  },
-  {
-    "from": "/software-architecture-design-d08463fb04df",
-    "to": "https://maddevs.io/blog/software-architecture-design"
-  },
-  {
-    "from": "/positive-and-negative-reinforcement-in-teaching-programming-b5dc1fcb042a",
-    "to": "https://maddevs.io/blog/positive-and-negative-reinforcement-in-teaching-programming"
+    "from": "/",
+    "to": "https://maddevs.io/blog/"
   },
   {
     "from": "/ru",
-    "to": "https://maddevs.io"
+    "to": "https://maddevs.io/"
   },
   {
     "from": "/en",
-    "to": "https://maddevs.io"
-  },
-  {
-    "from": "/",
-    "to": "https://maddevs.io/blog"
+    "to": "https://maddevs.io/"
   },
   {
     "from": "/editorspick/home",
@@ -438,7 +146,6 @@
   {
     "from": "/how-we-built-failover-architecture-for-a-taxi-service-part-2-continued-ae1caf740e68",
     "to": "https://maddevs.io/blog/how-we-built-failover-architecture-for-a-taxi-service-part-2-continued"
-
   },
   {
     "from": "/how-we-built-failover-architecture-for-a-taxi-service-part-2-continued-ae1caf740e68?source=friends_link&sk=3789d246c698d5a3e246f929feb1f90f",
@@ -453,155 +160,315 @@
     "to": "https://maddevs.io/blog/addled-deploy"
   },
   {
+    "from": "/linuxkit-as-a-ecs-instance-with-terraform-31a33116dbe2",
+    "to": "https://maddevs.io/blog/linuxkit-as-a-ecs-instance-with-terraform"
+  },
+  {
     "from": "/linuxkit-as-a-ecs-instance-with-terraform-31a33116dbe2?source=friends_link&sk=7df0870df90d861a5987e6b5797c7994",
     "to": "https://maddevs.io/blog/linuxkit-as-a-ecs-instance-with-terraform"
+  },
+  {
+    "from": "/how-we-built-a-failover-architecture-for-a-taxi-service-part-3-the-end-78b2215caa08",
+    "to": "https://maddevs.io/blog/how-we-built-a-failover-architecture-for-a-taxi-service-part-3-the-end"
   },
   {
     "from": "/how-we-built-a-failover-architecture-for-a-taxi-service-part-3-the-end-78b2215caa08?source=friends_link&sk=6cd4d88ff947021446019eb5f8e7271f",
     "to": "https://maddevs.io/blog/how-we-built-a-failover-architecture-for-a-taxi-service-part-3-the-end"
   },
   {
+    "from": "/reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer-43594faed19c",
+    "to": "https://maddevs.io/blog/reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer"
+  },
+  {
     "from": "/reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer-43594faed19c?source=friends_link&sk=2b644f8deea5d86c0943cb9dab5eb70e",
     "to": "https://maddevs.io/blog/reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer"
+  },
+  {
+    "from": "/the-evolution-of-internship-721303ca6361",
+    "to": "https://maddevs.io/blog/the-evolution-of-internship"
   },
   {
     "from": "/the-evolution-of-internship-721303ca6361?source=friends_link&sk=a45fc9f974a9a2cf7aab06c312bad185",
     "to": "https://maddevs.io/blog/the-evolution-of-internship"
   },
   {
+    "from": "/you-want-to-develop-a-mobile-application-are-you-sure-9f274977c615",
+    "to": "https://maddevs.io/blog/you-want-to-develop-a-mobile-application-are-you-sure"
+  },
+  {
     "from": "/you-want-to-develop-a-mobile-application-are-you-sure-9f274977c615?source=friends_link&sk=c1c0eff43bd69a99c78c389a8a8db960",
     "to": "https://maddevs.io/blog/you-want-to-develop-a-mobile-application-are-you-sure"
+  },
+  {
+    "from": "/namba-food-bot-61b5be6acfec",
+    "to": "https://maddevs.io/blog/namba-food-bot"
   },
   {
     "from": "/namba-food-bot-61b5be6acfec?source=friends_link&sk=1be9dc80e2567ed1e1a2713466c1e8fe",
     "to": "https://maddevs.io/blog/namba-food-bot"
   },
   {
+    "from": "/best-architecture-for-the-react-project-149b377b379d",
+    "to": "https://maddevs.io/blog/best-architecture-for-the-react-project"
+  },
+  {
     "from": "/best-architecture-for-the-react-project-149b377b379d?source=friends_link&sk=573f09610a6358d4d6d51ee7e9fb5a45",
     "to": "https://maddevs.io/blog/best-architecture-for-the-react-project"
+  },
+  {
+    "from": "/how-can-programmer-grow-faster-d8fccdb5eb2c",
+    "to": "https://maddevs.io/blog/how-can-programmer-grow-faster"
   },
   {
     "from": "/how-can-programmer-grow-faster-d8fccdb5eb2c?source=friends_link&sk=f018e40b749a8592686fa114bc03df5c",
     "to": "https://maddevs.io/blog/how-can-programmer-grow-faster"
   },
   {
+    "from": "/comedian-17b0bb0ae8c7",
+    "to": "https://maddevs.io/blog/comedian"
+  },
+  {
     "from": "/comedian-17b0bb0ae8c7?source=friends_link&sk=da0f6ed251fbc86a219da51eb28d92c4",
     "to": "https://maddevs.io/blog/comedian"
+  },
+  {
+    "from": "/go-rest-or-grpc-5eace88499bd",
+    "to": "https://maddevs.io/blog/go-rest-or-grpc"
   },
   {
     "from": "/go-rest-or-grpc-5eace88499bd?source=friends_link&sk=3bc86cb5fc4d2ab229f3451fd6e100f5",
     "to": "https://maddevs.io/blog/go-rest-or-grpc"
   },
   {
+    "from": "/mad-devs-climbs-clutchs-ranks-of-leading-web-developers-cloud-consultants-in-the-uk-950926f32252",
+    "to": "https://maddevs.io/blog/mad-devs-climbs-clutchs-ranks-of-leading-web-developers-cloud-consultants-in-the-uk"
+  },
+  {
     "from": "/mad-devs-climbs-clutchs-ranks-of-leading-web-developers-cloud-consultants-in-the-uk-950926f32252?source=friends_link&sk=440ead7d3bf7cf187ac050f2a3dcef76",
     "to": "https://maddevs.io/blog/mad-devs-climbs-clutchs-ranks-of-leading-web-developers-cloud-consultants-in-the-uk"
+  },
+  {
+    "from": "/daas-devops-as-a-service-wut-6e34ceb865ca",
+    "to": "https://maddevs.io/blog/devops-as-a-service"
   },
   {
     "from": "/daas-devops-as-a-service-wut-6e34ceb865ca?source=friends_link&sk=5f74ad6d24b8b1cecc353103c7825c42",
     "to": "https://maddevs.io/blog/devops-as-a-service"
   },
   {
+    "from": "/terraform-hetzner-1df05267baf0",
+    "to": "https://maddevs.io/blog/terraform-hetzner"
+  },
+  {
     "from": "/terraform-hetzner-1df05267baf0?source=friends_link&sk=f37421ebf6a108e5d41ba9d1eddf83b5",
     "to": "https://maddevs.io/blog/terraform-hetzner"
+  },
+  {
+    "from": "/the-difference-in-work-for-beginner-and-professional-developers-e45ddd5e5bfe",
+    "to": "https://maddevs.io/blog/the-difference-in-work-for-beginner-and-professional-developers"
   },
   {
     "from": "/the-difference-in-work-for-beginner-and-professional-developers-e45ddd5e5bfe?source=friends_link&sk=2f7fbe3b8621349c152c7532db04410b",
     "to": "https://maddevs.io/blog/the-difference-in-work-for-beginner-and-professional-developers"
   },
   {
+    "from": "/how-to-build-a-startup-with-an-outsource-team-a3b584c80bf8",
+    "to": "https://maddevs.io/blog/how-to-build-a-startup-with-an-outsource-team"
+  },
+  {
     "from": "/how-to-build-a-startup-with-an-outsource-team-a3b584c80bf8?source=friends_link&sk=79c1298518f05f4ba75ac5a8d05c006d",
     "to": "https://maddevs.io/blog/how-to-build-a-startup-with-an-outsource-team"
+  },
+  {
+    "from": "/mad-fake-slack-945ea810a778",
+    "to": "https://maddevs.io/blog/mad-fake-slack"
   },
   {
     "from": "/mad-fake-slack-945ea810a778?source=friends_link&sk=fa6c97cb2c7398c9e005926a7f045564",
     "to": "https://maddevs.io/blog/mad-fake-slack"
   },
   {
+    "from": "/top-3-best-ci-for-your-js-projects-with-puppeteer-tests-9395ff31d134",
+    "to": "https://maddevs.io/blog/top-3-best-ci-for-your-js-projects-with-puppeteer-tests"
+  },
+  {
     "from": "/top-3-best-ci-for-your-js-projects-with-puppeteer-tests-9395ff31d134?source=friends_link&sk=a044c5ef6b644007179feae54c6b3bf3",
     "to": "https://maddevs.io/blog/top-3-best-ci-for-your-js-projects-with-puppeteer-tests"
+  },
+  {
+    "from": "/internship-program-automation-wip-f1d5d976ea21",
+    "to": "https://maddevs.io/blog/internship-program-automation-wip"
   },
   {
     "from": "/internship-program-automation-wip-f1d5d976ea21?source=friends_link&sk=45ca8d87c55a59440633c294ac75aa19",
     "to": "https://maddevs.io/blog/internship-program-automation-wip"
   },
   {
+    "from": "/code-climate-code-analysis-locally-using-vscode-remote-containers-b4efaf6bf26e",
+    "to": "https://maddevs.io/blog/code-climate-code-analysis-locally-using-vscode-remote-containers"
+  },
+  {
     "from": "/code-climate-code-analysis-locally-using-vscode-remote-containers-b4efaf6bf26e?source=friends_link&sk=38246ea752ab8b6b61ca001b00e06fc9",
     "to": "https://maddevs.io/blog/code-climate-code-analysis-locally-using-vscode-remote-containers"
+  },
+  {
+    "from": "/micronavigator-based-on-stm32f100-3cebc718f638",
+    "to": "https://maddevs.io/blog/micronavigator-based-on"
   },
   {
     "from": "/micronavigator-based-on-stm32f100-3cebc718f638?source=friends_link&sk=858d2cfafc3b87adf79995331bdf6154",
     "to": "https://maddevs.io/blog/micronavigator-based-on"
   },
   {
+    "from": "/underestimating-go-c3b5eb497f9d",
+    "to": "https://maddevs.io/blog/underestimating-go"
+  },
+  {
     "from": "/underestimating-go-c3b5eb497f9d?source=friends_link&sk=9aa2238435e278b6a83feb2783c8167f",
     "to": "https://maddevs.io/blog/underestimating-go"
+  },
+  {
+    "from": "/the-nuances-of-testing-in-pair-cucumber-js-puppeteer-49c3ff2da44c",
+    "to": "https://maddevs.io/blog/the-nuances-of-testing-in-pair-cucumber-js-puppeteer"
   },
   {
     "from": "/the-nuances-of-testing-in-pair-cucumber-js-puppeteer-49c3ff2da44c?source=friends_link&sk=67af8b681b3fecead6f36c268b003bec",
     "to": "https://maddevs.io/blog/the-nuances-of-testing-in-pair-cucumber-js-puppeteer"
   },
   {
+    "from": "/view-colleagues-from-another-office-through-always-on-video-window-71b4cf6efbbe",
+    "to": "https://maddevs.io/blog/view-colleagues-from-another-office-through-always-on-video-window"
+  },
+  {
     "from": "/view-colleagues-from-another-office-through-always-on-video-window-71b4cf6efbbe?source=friends_link&sk=6967ee8ca44ab1f26f444261ba650f8d",
     "to": "https://maddevs.io/blog/view-colleagues-from-another-office-through-always-on-video-window"
+  },
+  {
+    "from": "/meet-glitch-com-429c423cf8e1",
+    "to": "https://maddevs.io/blog/meet-glitch-com"
   },
   {
     "from": "/meet-glitch-com-429c423cf8e1?source=friends_link&sk=1139dad2bb6b7d9ee7b3209068bf04f9",
     "to": "https://maddevs.io/blog/meet-glitch-com"
   },
   {
+    "from": "/web-app-deploy-to-glitch-com-b43470c32a2f",
+    "to": "https://maddevs.io/blog/web-app-deploy-to-glitch-com"
+  },
+  {
     "from": "/web-app-deploy-to-glitch-com-b43470c32a2f?source=friends_link&sk=9ac6f596478df5209de433903fc84897",
     "to": "https://maddevs.io/blog/web-app-deploy-to-glitch-com"
+  },
+  {
+    "from": "/a-bit-about-event-delegation-in-react-3b92fb0a978b",
+    "to": "https://maddevs.io/blog/a-bit-about-event-delegation-in-react"
   },
   {
     "from": "/a-bit-about-event-delegation-in-react-3b92fb0a978b?source=friends_link&sk=a8d9e27f4dec66fdafe5a6f408aa751d",
     "to": "https://maddevs.io/blog/a-bit-about-event-delegation-in-react"
   },
   {
+    "from": "/a-bit-about-event-delegation-in-pure-js-56f8356463ca",
+    "to": "https://maddevs.io/blog/a-bit-about-event-delegation-in-pure-js"
+  },
+  {
     "from": "/a-bit-about-event-delegation-in-pure-js-56f8356463ca?source=friends_link&sk=4025f7342a240cc08ab4d1c0de456a5c",
     "to": "https://maddevs.io/blog/a-bit-about-event-delegation-in-pure-js"
+  },
+  {
+    "from": "/how-to-stop-worrying-and-start-developing-for-raspberry-pi-with-qt-8df032f8a534",
+    "to": "https://maddevs.io/blog/how-to-start-developing-for-raspberry-pi-with-qt"
   },
   {
     "from": "/how-to-stop-worrying-and-start-developing-for-raspberry-pi-with-qt-8df032f8a534?source=friends_link&sk=2bac39628922181872271fe358fa4cdc",
     "to": "https://maddevs.io/blog/how-to-start-developing-for-raspberry-pi-with-qt"
   },
   {
+    "from": "/guaranteed-delivery-with-grpc-streams-dc847ead7e6e",
+    "to": "https://maddevs.io/blog/guaranteed-delivery-with-grpc-streams"
+  },
+  {
     "from": "/guaranteed-delivery-with-grpc-streams-dc847ead7e6e?source=friends_link&sk=a4be52cc0e4e96235e88f128caed05c7",
     "to": "https://maddevs.io/blog/guaranteed-delivery-with-grpc-streams"
+  },
+  {
+    "from": "/how-to-start-with-logging-in-golang-projects-part-1-3e3a708b75be",
+    "to": "https://maddevs.io/blog/how-to-start-with-logging-in-golang-projects-part-1"
   },
   {
     "from": "/how-to-start-with-logging-in-golang-projects-part-1-3e3a708b75be?source=friends_link&sk=b00bc9071228211bfbd6309e1be0124e",
     "to": "https://maddevs.io/blog/how-to-start-with-logging-in-golang-projects-part-1"
   },
   {
+    "from": "/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci-9805042bc0c",
+    "to": "https://maddevs.io/blog/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci"
+  },
+  {
     "from": "/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci-9805042bc0c?source=friends_link&sk=070a52f4fc970bf0474f6ceb270c1651",
     "to": "https://maddevs.io/blog/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci"
+  },
+  {
+    "from": "/testing-django-on-steroids-with-pytest-38fe11a3538c",
+    "to": "https://maddevs.io/blog/testing-django-on-steroids-with-pytest"
   },
   {
     "from": "/testing-django-on-steroids-with-pytest-38fe11a3538c?source=friends_link&sk=91e2e3622756e309ddb80d0dcc076c6a",
     "to": "https://maddevs.io/blog/testing-django-on-steroids-with-pytest"
   },
   {
+    "from": "/how-to-start-with-logging-in-go-projects-part-2-1e57cc58f329",
+    "to": "https://maddevs.io/blog/how-to-start-with-logging-in-go-projects-part-2"
+  },
+  {
     "from": "/how-to-start-with-logging-in-go-projects-part-2-1e57cc58f329?source=friends_link&sk=51935cb603c3763c55ff99fe40c11c12",
     "to": "https://maddevs.io/blog/how-to-start-with-logging-in-go-projects-part-2"
+  },
+  {
+    "from": "/how-good-engineering-culture-is-in-your-team-1ecd6f16da69",
+    "to": "https://maddevs.io/blog/how-good-engineering-culture-is-in-your-team"
   },
   {
     "from": "/how-good-engineering-culture-is-in-your-team-1ecd6f16da69?source=friends_link&sk=8a155232c85c881d9c214a7c87c272f4",
     "to": "https://maddevs.io/blog/how-good-engineering-culture-is-in-your-team"
   },
   {
+    "from": "/introduction-to-pcb-prototyping-with-easyeda-part-i-project-creation-143563311253",
+    "to": "https://maddevs.io/blog/introduction-to-pcb-prototyping-with-easyeda-part-1-project-creation"
+  },
+  {
     "from": "/introduction-to-pcb-prototyping-with-easyeda-part-i-project-creation-143563311253?source=friends_link&sk=27d475755a3259416bb9e91baa3b8f49",
     "to": "https://maddevs.io/blog/introduction-to-pcb-prototyping-with-easyeda-part-1-project-creation"
+  },
+  {
+    "from": "/introduction-to-prototyping-with-easyeda-part-ii-simple-schematic-fecafe9839c7",
+    "to": "https://maddevs.io/blog/introduction-to-prototyping-with-easyeda-part-ii-simple-schematic"
   },
   {
     "from": "/introduction-to-prototyping-with-easyeda-part-ii-simple-schematic-fecafe9839c7?source=friends_link&sk=0f257710a40a69d79241b689d1885ed9",
     "to": "https://maddevs.io/blog/introduction-to-prototyping-with-easyeda-part-ii-simple-schematic"
   },
   {
+    "from": "/how-to-make-a-proper-description-for-a-pull-request-5e1cbe9fb374",
+    "to": "https://maddevs.io/blog/how-to-make-a-proper-description-for-a-pull-request"
+  },
+  {
     "from": "/how-to-make-a-proper-description-for-a-pull-request-5e1cbe9fb374?source=friends_link&sk=2b9cc357b19fd10e18fb638ed7f22eec",
     "to": "https://maddevs.io/blog/how-to-make-a-proper-description-for-a-pull-request"
   },
   {
+    "from": "/leadership-lessons-i-learned-from-videogames-b1e749b5c25",
+    "to": "https://maddevs.io/blog/leadership-lessons-i-learned-from-videogames"
+  },
+  {
+    "from": "/leadership-lessons-i-learned-from-videogames-b1e749b5c25?source=friends_link&sk=cc902e260d4ac18d1f9bdfc93500da24",
+    "to": "https://maddevs.io/blog/leadership-lessons-i-learned-from-videogames"
+  },
+  {
     "from": "/how-to-memorize-information-better-when-you-study-2116b2b74839",
+    "to": "https://maddevs.io/blog/how-to-memorize-information-better-when-you-study"
+  },
+  {
+    "from": "/how-to-memorize-information-better-when-you-study-2116b2b74839?source=friends_link&sk=f776ddd16b0c969837e280309cce8639",
     "to": "https://maddevs.io/blog/how-to-memorize-information-better-when-you-study"
   },
   {
@@ -609,132 +476,268 @@
     "to": "https://maddevs.io/blog/running-postgres-as-a-build-requirement-in-teamcity-build"
   },
   {
+    "from": "/running-postgres-as-a-build-requirement-in-teamcity-build-8c6413576e33?source=friends_link&sk=b40939316bd5b625bc60d38e3ecfb951",
+    "to": "https://maddevs.io/blog/running-postgres-as-a-build-requirement-in-teamcity-build"
+  },
+  {
     "from": "/how-to-protect-your-eyes-from-strain-while-working-in-it-82ce9d3973bf",
     "to": "https://maddevs.io/blog/how-to-protect-your-eyes-from-strain-while-working-in-it"
+  },
+  {
+    "from": "/how-to-protect-your-eyes-from-strain-while-working-in-it-82ce9d3973bf?source=friends_link&sk=73435a7b7bb0e67fefded7bfec4c39af",
+    "to": "https://maddevs.io/blog/how-to-protect-your-eyes-from-strain-while-working-in-it"
+  },
+  {
+    "from": "/how-to-automate-jira-mad-devs-experience-50c7836eec65",
+    "to": "https://maddevs.io/blog/how-to-automate-jira-mad-devs-experience"
   },
   {
     "from": "/how-to-automate-jira-mad-devs-experience-50c7836eec65?source=friends_link&sk=e3fb879ddacf5df9599251a94f99b2d1",
     "to": "https://maddevs.io/blog/how-to-automate-jira-mad-devs-experience"
   },
   {
+    "from": "/avr-mcu-testing-f925e84b7023",
+    "to": "https://maddevs.io/blog/avr-mcu-testing"
+  },
+  {
     "from": "/avr-mcu-testing-f925e84b7023?source=friends_link&sk=f34cb696eddfb39f64c5d0a9cc966f19",
     "to": "https://maddevs.io/blog/avr-mcu-testing"
+  },
+  {
+    "from": "/running-geo-django-on-elasticbeanstalk-fd7b9862fb2c",
+    "to": "https://maddevs.io/blog/running-geo-django-on-elasticbeanstalk"
   },
   {
     "from": "/running-geo-django-on-elasticbeanstalk-fd7b9862fb2c?source=friends_link&sk=c82987a32efd53ed2952e0320eeba448",
     "to": "https://maddevs.io/blog/running-geo-django-on-elasticbeanstalk"
   },
   {
+    "from": "/pm-mistakes-9b58814e8cc9",
+    "to": "https://maddevs.io/blog/pm-mistakes"
+  },
+  {
     "from": "/pm-mistakes-9b58814e8cc9?source=friends_link&sk=b10461d3f4b5d7babe3718676fe3d1c4",
     "to": "https://maddevs.io/blog/pm-mistakes"
+  },
+  {
+    "from": "/integration-of-stripe-connect-926daa2978d5",
+    "to": "https://maddevs.io/blog/integration-of-stripe-connect"
   },
   {
     "from": "/integration-of-stripe-connect-926daa2978d5?source=friends_link&sk=66b3f5d21d2a575b98ced7babae9e8e5",
     "to": "https://maddevs.io/blog/integration-of-stripe-connect"
   },
   {
+    "from": "/progressive-web-apps-practical-usage-guide-8f9ddfea1cb3",
+    "to": "https://maddevs.io/blog/progressive-web-apps-practical-usage-guide"
+  },
+  {
     "from": "/progressive-web-apps-practical-usage-guide-8f9ddfea1cb3?source=friends_link&sk=cd49b6a42f4488e952ff7ea3f44cc788",
     "to": "https://maddevs.io/blog/progressive-web-apps-practical-usage-guide"
+  },
+  {
+    "from": "/the-five-rules-when-we-work-with-jira-d6fdbf6accfd",
+    "to": "https://maddevs.io/blog/the-five-rules-when-we-work-with-jira"
   },
   {
     "from": "/the-five-rules-when-we-work-with-jira-d6fdbf6accfd?source=friends_link&sk=3cb7100dbc222a487c92ed5330a65fcc",
     "to": "https://maddevs.io/blog/the-five-rules-when-we-work-with-jira"
   },
   {
+    "from": "/how-to-make-three-paid-eta-services-one-free-6edc6affface",
+    "to": "https://maddevs.io/blog/how-to-make-three-paid-eta-services-one-free"
+  },
+  {
     "from": "/how-to-make-three-paid-eta-services-one-free-6edc6affface?source=friends_link&sk=a01fa3774b63d1e8b6c23f6fb5db717e",
     "to": "https://maddevs.io/blog/how-to-make-three-paid-eta-services-one-free"
+  },
+  {
+    "from": "/visualization-as-a-method-of-drawing-the-readers-attention-1d8cc5cfd5dd",
+    "to": "https://maddevs.io/blog/visualization-as-a-method-of-drawing-the-readers-attention"
   },
   {
     "from": "/visualization-as-a-method-of-drawing-the-readers-attention-1d8cc5cfd5dd?source=friends_link&sk=dca1f05b9c7497c1d7a713838606f28a",
     "to": "https://maddevs.io/blog/visualization-as-a-method-of-drawing-the-readers-attention"
   },
   {
+    "from": "/the-cost-of-errors-in-hardware-projects-7d73b0fd8465",
+    "to": "https://maddevs.io/blog/the-cost-of-errors-in-hardware-projects"
+  },
+  {
     "from": "/the-cost-of-errors-in-hardware-projects-7d73b0fd8465?source=friends_link&sk=eb21eb69d892cb19c0f85f3e0276481e",
     "to": "https://maddevs.io/blog/the-cost-of-errors-in-hardware-projects"
+  },
+  {
+    "from": "/effective-refactoring-of-heavy-database-interface-2c355498afe7",
+    "to": "https://maddevs.io/blog/effective-refactoring-of-heavy-database-interface"
   },
   {
     "from": "/effective-refactoring-of-heavy-database-interface-2c355498afe7?source=friends_link&sk=90d99e4b33c352950b090659273078f3",
     "to": "https://maddevs.io/blog/effective-refactoring-of-heavy-database-interface"
   },
   {
+    "from": "/how-to-ruin-a-relationship-with-the-client-a850df35b3",
+    "to": "https://maddevs.io/blog/how-to-ruin-a-relationship-with-the-client"
+  },
+  {
     "from": "/how-to-ruin-a-relationship-with-the-client-a850df35b3?source=friends_link&sk=c25b89dec2191b684f163c569eb72c6f",
     "to": "https://maddevs.io/blog/how-to-ruin-a-relationship-with-the-client"
+  },
+  {
+    "from": "/what-to-choose-to-implement-audio-video-calls-solution-using-webrtc-ff5421e49a57",
+    "to": "https://maddevs.io/blog/what-to-choose-to-implement-audio-video-calls-solution-using-webrtc"
   },
   {
     "from": "/what-to-choose-to-implement-audio-video-calls-solution-using-webrtc-ff5421e49a57?source=friends_link&sk=6bb96762811cb4c4e619284bf52629a6",
     "to": "https://maddevs.io/blog/what-to-choose-to-implement-audio-video-calls-solution-using-webrtc"
   },
   {
+    "from": "/functional-programming-principles-in-javascript-37339f7c9e60",
+    "to": "https://maddevs.io/blog/functional-programming-principles-in-javascript"
+  },
+  {
     "from": "/functional-programming-principles-in-javascript-37339f7c9e60?source=friends_link&sk=7ed82308783fb3f3c645d10e0c2fb176",
     "to": "https://maddevs.io/blog/functional-programming-principles-in-javascript"
+  },
+  {
+    "from": "/how-to-automate-tasks-estimation-in-jira-720bacf6d75d",
+    "to": "https://maddevs.io/blog/how-to-automate-tasks-estimation-in-jira"
   },
   {
     "from": "/how-to-automate-tasks-estimation-in-jira-720bacf6d75d?source=friends_link&sk=f57cc9a52560108f1a045e4a60e63281",
     "to": "https://maddevs.io/blog/how-to-automate-tasks-estimation-in-jira"
   },
   {
+    "from": "/software-features-acceptance-process-by-clients-49948f783756",
+    "to": "https://maddevs.io/blog/software-features-acceptance-process-by-clients"
+  },
+  {
     "from": "/software-features-acceptance-process-by-clients-49948f783756?source=friends_link&sk=75e7b63f7086c00e389dc83c3d426c8e",
     "to": "https://maddevs.io/blog/software-features-acceptance-process-by-clients"
+  },
+  {
+    "from": "/how-to-communicate-with-client-to-build-a-successful-software-6a054b089f6f",
+    "to": "https://maddevs.io/blog/how-to-communicate-with-client-to-build-a-successful-software"
   },
   {
     "from": "/how-to-communicate-with-client-to-build-a-successful-software-6a054b089f6f?source=friends_link&sk=4fcf9634f2cf1b47fe109c9f33d18ddb",
     "to": "https://maddevs.io/blog/how-to-communicate-with-client-to-build-a-successful-software"
   },
   {
+    "from": "/3-top-skills-every-successful-project-manager-needs-to-focus-on-70827595cb6e",
+    "to": "https://maddevs.io/blog/top-skills-every-successful-project-manager-needs-to-focus-on"
+  },
+  {
     "from": "/3-top-skills-every-successful-project-manager-needs-to-focus-on-70827595cb6e?source=friends_link&sk=0f5a4db2dfec97364adb8346169dd5b7",
     "to": "https://maddevs.io/blog/top-skills-every-successful-project-manager-needs-to-focus-on"
+  },
+  {
+    "from": "/how-to-start-as-a-tech-blogger-f66a3f54d47e",
+    "to": "https://maddevs.io/blog/how-to-start-as-a-tech-blogger"
   },
   {
     "from": "/how-to-start-as-a-tech-blogger-f66a3f54d47e?source=friends_link&sk=9b66ed15741c36310a63b5eda4abeb0e",
     "to": "https://maddevs.io/blog/how-to-start-as-a-tech-blogger"
   },
   {
+    "from": "/its-not-just-a-layout-what-do-you-need-to-know-to-make-a-good-markup-ff178a1b2a95",
+    "to": "https://maddevs.io/blog/what-do-you-need-to-know-to-make-a-good-markup"
+  },
+  {
     "from": "/its-not-just-a-layout-what-do-you-need-to-know-to-make-a-good-markup-ff178a1b2a95?source=friends_link&sk=e73f9d45425c502b5c3a088d1fd2ddf7",
     "to": "https://maddevs.io/blog/what-do-you-need-to-know-to-make-a-good-markup"
+  },
+  {
+    "from": "/how-to-become-a-software-developer-things-that-i-learned-in-the-it-company-103c40a31bec",
+    "to": "https://maddevs.io/blog/how-to-become-a-software-developer"
   },
   {
     "from": "/how-to-become-a-software-developer-things-that-i-learned-in-the-it-company-103c40a31bec?source=friends_link&sk=47c3c0c913b948a1adb2ebbf7c4663d5",
     "to": "https://maddevs.io/blog/how-to-become-a-software-developer"
   },
   {
+    "from": "/how-to-make-better-use-of-sass-extensions-for-custom-css-variables-6bdf9069337e",
+    "to": "https://maddevs.io/blog/how-to-make-better-use-of-sass-extensions-for-custom-css-variables"
+  },
+  {
     "from": "/how-to-make-better-use-of-sass-extensions-for-custom-css-variables-6bdf9069337e?source=friends_link&sk=cc5b33b3ffad133412eef05650b2d93e",
     "to": "https://maddevs.io/blog/how-to-make-better-use-of-sass-extensions-for-custom-css-variables"
+  },
+  {
+    "from": "/devops-engineers-in-mad-devs-449ded5221b6",
+    "to": "https://maddevs.io/blog/devops-engineers-in-mad-devs"
   },
   {
     "from": "/devops-engineers-in-mad-devs-449ded5221b6?source=friends_link&sk=2e0fa9326c958eddd0839178752f384e",
     "to": "https://maddevs.io/blog/devops-engineers-in-mad-devs"
   },
   {
+    "from": "/healthy-conflicts-in-software-development-projects-75e0cd63894c",
+    "to": "https://maddevs.io/blog/healthy-conflicts-in-software-development-projects"
+  },
+  {
     "from": "/healthy-conflicts-in-software-development-projects-75e0cd63894c?source=friends_link&sk=0b042a1770ebc60c20f8b65e831ce7f9",
     "to": "https://maddevs.io/blog/healthy-conflicts-in-software-development-projects"
+  },
+  {
+    "from": "/manager-dos-and-donts-83e2293c413d",
+    "to": "https://maddevs.io/blog/manager-dos-and-donts"
   },
   {
     "from": "/manager-dos-and-donts-83e2293c413d?source=friends_link&sk=553e80d39aabcdf0dc47bac9779c7f73",
     "to": "https://maddevs.io/blog/manager-dos-and-donts"
   },
   {
+    "from": "/bullet-issues-tasks-that-kill-95f480a2429",
+    "to": "https://maddevs.io/blog/bullet-issues-tasks-that-kill"
+  },
+  {
     "from": "/bullet-issues-tasks-that-kill-95f480a2429?source=friends_link&sk=ac54ce08bb72960849b6d9fbfcd034ac",
     "to": "https://maddevs.io/blog/bullet-issues-tasks-that-kill"
+  },
+  {
+    "from": "/how-project-manager-stays-focused-fa86dcbc5c7a",
+    "to": "https://maddevs.io/blog/how-project-manager-stays-focused"
   },
   {
     "from": "/how-project-manager-stays-focused-fa86dcbc5c7a?source=friends_link&sk=ca009cec370e54aed285c7ebff12fefe",
     "to": "https://maddevs.io/blog/how-project-manager-stays-focused"
   },
   {
+    "from": "/device-location-using-livedata-architecture-component-5380c020ea54",
+    "to": "https://maddevs.io/blog/device-location-using-livedata-architecture-component"
+  },
+  {
     "from": "/device-location-using-livedata-architecture-component-5380c020ea54?source=friends_link&sk=ec0af252b9e79af83db55a126f8f43fe",
     "to": "https://maddevs.io/blog/device-location-using-livedata-architecture-component"
+  },
+  {
+    "from": "/how-to-test-a-web-product-manually-c019d6e8e2f3",
+    "to": "https://maddevs.io/blog/how-to-test-a-web-product-manually"
   },
   {
     "from": "/how-to-test-a-web-product-manually-c019d6e8e2f3?source=friends_link&sk=b08f7867584f17fbfe224175143c1fe4",
     "to": "https://maddevs.io/blog/how-to-test-a-web-product-manually"
   },
   {
+    "from": "/log-collecting-with-elk-and-rsyslog-218b032b12f4",
+    "to": "https://maddevs.io/blog/log-collecting-with-elk-and-rsyslog"
+  },
+  {
     "from": "/log-collecting-with-elk-and-rsyslog-218b032b12f4?source=friends_link&sk=b67a43ff22a848b904b0349a88ae7042",
     "to": "https://maddevs.io/blog/log-collecting-with-elk-and-rsyslog"
   },
   {
+    "from": "/software-architecture-design-d08463fb04df",
+    "to": "https://maddevs.io/blog/software-architecture-design"
+  },
+  {
     "from": "/software-architecture-design-d08463fb04df?source=friends_link&sk=20106a3ab3864d830ccddc813364e82b",
     "to": "https://maddevs.io/blog/software-architecture-design"
+  },
+  {
+    "from": "/positive-and-negative-reinforcement-in-teaching-programming-b5dc1fcb042a",
+    "to": "https://maddevs.io/blog/positive-and-negative-reinforcement-in-teaching-programming/"
   },
   {
     "from": "/positive-and-negative-reinforcement-in-teaching-programming-b5dc1fcb042a?source=friends_link&sk=1e62dcbc7e3f987a8c862a2acccb30d7",
@@ -861,844 +864,635 @@
     "to": "https://medium.com/maddevs-io/%D0%B4%D0%B5%D0%BB%D0%B0%D0%B5%D0%BC-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D1%81-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-go-ecf4b82c7625"
   },
   {
-    "from": "https://blog.maddevs.io/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D1%8B%D0%B9-%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%BC%D0%B5%D0%BD%D1%82-%D1%81%D0%B2%D0%BE%D0%B9-%D1%87%D1%83%D0%B6%D0%BE%D0%B9-%D1%81%D0%B2%D0%BE%D0%B9-917781fbb83d",
+    "from": "/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D1%8B%D0%B9-%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%BC%D0%B5%D0%BD%D1%82-%D1%81%D0%B2%D0%BE%D0%B9-%D1%87%D1%83%D0%B6%D0%BE%D0%B9-%D1%81%D0%B2%D0%BE%D0%B9-917781fbb83d",
     "to": "https://medium.com/maddevs-io/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BD%D1%8B%D0%B9-%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%BC%D0%B5%D0%BD%D1%82-%D1%81%D0%B2%D0%BE%D0%B9-%D1%87%D1%83%D0%B6%D0%BE%D0%B9-%D1%81%D0%B2%D0%BE%D0%B9-917781fbb83d"
   },
   {
-    "from": "https://blog.maddevs.io/%D1%82%D0%B5%D0%BA%D0%B2%D0%B8%D0%BC%D0%B5%D0%BD-164c29a222c3",
+    "from": "/%D1%82%D0%B5%D0%BA%D0%B2%D0%B8%D0%BC%D0%B5%D0%BD-164c29a222c3",
     "to": "https://medium.com/maddevs-io/%D1%82%D0%B5%D0%BA%D0%B2%D0%B8%D0%BC%D0%B5%D0%BD-164c29a222c3"
   },
   {
-    "from": "https://blog.maddevs.io/%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D1%8B-%D0%B2-%D0%B8%D1%82-%D0%BA%D0%BE%D0%B3%D0%BE-%D1%82%D1%83%D1%82-%D0%B1%D0%BE%D0%BC%D0%B1%D0%B0%D0%BD%D1%83%D0%BB%D0%BE-cdc606872143",
+    "from": "/%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D1%8B-%D0%B2-%D0%B8%D1%82-%D0%BA%D0%BE%D0%B3%D0%BE-%D1%82%D1%83%D1%82-%D0%B1%D0%BE%D0%BC%D0%B1%D0%B0%D0%BD%D1%83%D0%BB%D0%BE-cdc606872143",
     "to": "https://medium.com/maddevs-io/%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D1%8B-%D0%B2-%D0%B8%D1%82-%D0%BA%D0%BE%D0%B3%D0%BE-%D1%82%D1%83%D1%82-%D0%B1%D0%BE%D0%BC%D0%B1%D0%B0%D0%BD%D1%83%D0%BB%D0%BE-cdc606872143"
   },
   {
-    "from": "https://blog.maddevs.io/%D0%B2%D0%BD%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-ci-cd-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-screen-monitoring-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-http-travis-ci-org-14979e97bb91",
+    "from": "/%D0%B2%D0%BD%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-ci-cd-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-screen-monitoring-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-http-travis-ci-org-14979e97bb91",
     "to": "https://medium.com/maddevs-io/%D0%B2%D0%BD%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-ci-cd-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-screen-monitoring-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-http-travis-ci-org-14979e97bb91"
   },
   {
-    "from": "https://blog.maddevs.io/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-namba-%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-82a66d9b584e",
+    "from": "/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-namba-%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-82a66d9b584e",
     "to": "https://medium.com/maddevs-io/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-namba-%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%BE-82a66d9b584e"
   },
   {
-    "from": "https://blog.maddevs.io/%D0%BD%D0%B0%D0%BC%D0%B1%D0%B0-%D1%82%D0%B0%D0%BA%D1%81%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%B8-%D0%B2%D0%BD%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-f869bd100772",
+    "from": "/%D0%BD%D0%B0%D0%BC%D0%B1%D0%B0-%D1%82%D0%B0%D0%BA%D1%81%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%B8-%D0%B2%D0%BD%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-f869bd100772",
     "to": "https://medium.com/maddevs-io/%D0%BD%D0%B0%D0%BC%D0%B1%D0%B0-%D1%82%D0%B0%D0%BA%D1%81%D0%B8-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%B8-%D0%B2%D0%BD%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-f869bd100772"
   },
   {
-    "from": "https://blog.maddevs.io/%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-nambataxi-%D0%BF%D0%BE-%D1%8E%D0%B7%D0%B5%D1%80%D0%B0%D0%BC-%D0%B8-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D1%8B%D0%BC-%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC-2016-473da4c54136",
+    "from": "/%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-nambataxi-%D0%BF%D0%BE-%D1%8E%D0%B7%D0%B5%D1%80%D0%B0%D0%BC-%D0%B8-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D1%8B%D0%BC-%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC-2016-473da4c54136",
     "to": "https://medium.com/maddevs-io/%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-nambataxi-%D0%BF%D0%BE-%D1%8E%D0%B7%D0%B5%D1%80%D0%B0%D0%BC-%D0%B8-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D1%8B%D0%BC-%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC-2016-473da4c54136"
   },
   {
-    "from": "https://blog.maddevs.io/%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D1%82-full-snack-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA-315a8fdb13c2",
+    "from": "/%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D1%82-full-snack-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA-315a8fdb13c2",
     "to": "https://medium.com/maddevs-io/%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D1%82-full-snack-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA-315a8fdb13c2"
   },
   {
-    "from": "https://blog.maddevs.io/%D1%85%D0%B0%D0%BA%D0%B0%D1%82%D0%BE%D0%BD%D1%8B-%D0%B2-%D0%BA%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D1%82%D0%B0%D0%BD%D0%B5-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-957517947418",
+    "from": "/%D1%85%D0%B0%D0%BA%D0%B0%D1%82%D0%BE%D0%BD%D1%8B-%D0%B2-%D0%BA%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D1%82%D0%B0%D0%BD%D0%B5-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-957517947418",
     "to": "https://medium.com/maddevs-io/%D1%85%D0%B0%D0%BA%D0%B0%D1%82%D0%BE%D0%BD%D1%8B-%D0%B2-%D0%BA%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D1%82%D0%B0%D0%BD%D0%B5-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-957517947418"
   },
   {
-    "from": "https://blog.maddevs.io/%D0%B8%D0%BD%D0%B2%D0%B5%D1%81%D1%82%D0%BE%D1%80-%D0%B8%D0%BB%D0%B8-%D1%85%D0%BE%D0%B7%D1%8F%D0%B8%D0%BD-2050271173dc",
+    "from": "/%D0%B8%D0%BD%D0%B2%D0%B5%D1%81%D1%82%D0%BE%D1%80-%D0%B8%D0%BB%D0%B8-%D1%85%D0%BE%D0%B7%D1%8F%D0%B8%D0%BD-2050271173dc",
     "to": "https://medium.com/maddevs-io/%D0%B8%D0%BD%D0%B2%D0%B5%D1%81%D1%82%D0%BE%D1%80-%D0%B8%D0%BB%D0%B8-%D1%85%D0%BE%D0%B7%D1%8F%D0%B8%D0%BD-2050271173dc"
   },
   {
-    "from": "https://blog.maddevs.io/https-blog-maddevs-io-yourcast-tv-32915159be1c",
+    "from": "/https-blog-maddevs-io-yourcast-tv-32915159be1c",
     "to": "https://medium.com/maddevs-io/https-blog-maddevs-io-yourcast-tv-32915159be1c"
   },
   {
-    "from": "https://blog.maddevs.io/outsource-people-2016-a14b9c1f1c46",
+    "from": "/outsource-people-2016-a14b9c1f1c46",
     "to": "https://medium.com/maddevs-io/outsource-people-2016-a14b9c1f1c46"
   },
   {
-    "from": "https://blog.maddevs.io/highload-2015-%D0%BA%D0%B0%D0%BA-%D1%8D%D1%82%D0%BE-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%B8-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-5e1b539233b5",
+    "from": "/highload-2015-%D0%BA%D0%B0%D0%BA-%D1%8D%D1%82%D0%BE-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%B8-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-5e1b539233b5",
     "to": "https://medium.com/maddevs-io/highload-2015-%D0%BA%D0%B0%D0%BA-%D1%8D%D1%82%D0%BE-%D0%B1%D1%8B%D0%BB%D0%BE-%D0%B8-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-5e1b539233b5"
   },
   {
-    "from": "https://blog.maddevs.io/bullet-issues-336bb43e57e",
+    "from": "/bullet-issues-336bb43e57e",
     "to": "https://medium.com/maddevs-io/bullet-issues-336bb43e57e"
   },
   {
-    "from": "https://blog.maddevs.io/kyrgyzstan-vector-maps-ec906ff40335",
+    "from": "/kyrgyzstan-vector-maps-ec906ff40335",
     "to": "https://medium.com/maddevs-io/kyrgyzstan-vector-maps-ec906ff40335"
   },
   {
-    "from": "https://blog.maddevs.io/inversion-of-control-2cfbf0a494a0",
+    "from": "/inversion-of-control-2cfbf0a494a0",
     "to": "https://medium.com/maddevs-io/inversion-of-control-2cfbf0a494a0"
   },
   {
-    "from": "https://blog.maddevs.io/gdg-devfest-novosibirsk-cfb47b36baba",
+    "from": "/gdg-devfest-novosibirsk-cfb47b36baba",
     "to": "https://medium.com/maddevs-io/gdg-devfest-novosibirsk-cfb47b36baba"
   },
   {
-    "from": "https://blog.maddevs.io/fosdem-22c2f71302a",
+    "from": "/fosdem-22c2f71302a",
     "to": "https://medium.com/maddevs-io/fosdem-22c2f71302a"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/silkroadexplore-387cba95cfbc",
+    "to": "https://medium.com/maddevs-io/silkroadexplore-387cba95cfbc"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/inspire-developers-2017-c4d3d161ce00",
+    "to": "https://medium.com/maddevs-io/inspire-developers-2017-c4d3d161ce00"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/go-web-api-c949bd1362b0",
+    "to": "https://medium.com/maddevs-io/go-web-api-c949bd1362b0"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/the-calm-company-52b43ba86431",
+    "to": "https://medium.com/maddevs-io/the-calm-company-52b43ba86431"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/highload-2016-72cca9611c77",
+    "to": "https://medium.com/maddevs-io/highload-2016-72cca9611c77"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/ariadna-85ed0495e12b",
+    "to": "https://medium.com/maddevs-io/ariadna-85ed0495e12b"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/programmer-education-7e4634eaad87",
+    "to": "https://medium.com/maddevs-io/programmer-education-7e4634eaad87"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/design-in-1x-ccdb2df249b0",
+    "to": "https://medium.com/maddevs-io/design-in-1x-ccdb2df249b0"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/digital-nomad-is-normal-db43b463a855",
+    "to": "https://medium.com/maddevs-io/digital-nomad-is-normal-db43b463a855"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/developer-sysadmin-c7e828c25d99",
+    "to": "https://medium.com/maddevs-io/developer-sysadmin-c7e828c25d99"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/developer-burnout-ead63b949fca",
+    "to": "https://medium.com/maddevs-io/developer-burnout-ead63b949fca"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/money-in-open-source-64fa61e92237",
+    "to": "https://medium.com/maddevs-io/money-in-open-source-64fa61e92237"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/fosdem-2017-log-b5fa129bc044",
+    "to": "https://medium.com/maddevs-io/fosdem-2017-log-b5fa129bc044"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/what-i-want-other-parents-to-know-about-women-in-tech-df09b0d9eda",
+    "to": "https://medium.com/maddevs-io/what-i-want-other-parents-to-know-about-women-in-tech-df09b0d9eda"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/golang-codelab-d508bb671f40",
+    "to": "https://medium.com/maddevs-io/golang-codelab-d508bb671f40"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/continuous-deployment-with-docker-cloud-1f19ac454781",
+    "to": "https://medium.com/maddevs-io/continuous-deployment-with-docker-cloud-1f19ac454781"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/golang-mysql-9aa09cdbb666",
+    "to": "https://medium.com/maddevs-io/golang-mysql-9aa09cdbb666"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/introduction-to-grpc-6de0d9c0fe61",
+    "to": "https://medium.com/maddevs-io/introduction-to-grpc-6de0d9c0fe61"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/gdg-almaty-26404184a9ff",
+    "to": "https://medium.com/maddevs-io/gdg-almaty-26404184a9ff"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/stackoverflow-dns-1db680f2032e",
+    "to": "https://medium.com/maddevs-io/stackoverflow-dns-1db680f2032e"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/things-i-learned-managing-site-reliability-9795383795df",
+    "to": "https://medium.com/maddevs-io/things-i-learned-managing-site-reliability-9795383795df"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/docker-for-beginners-a2c9c73e7d3d",
+    "to": "https://medium.com/maddevs-io/docker-for-beginners-a2c9c73e7d3d"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/mahach-892d2a259b1b",
+    "to": "https://medium.com/maddevs-io/mahach-892d2a259b1b"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/rit-2017-f214aad7370c",
+    "to": "https://medium.com/maddevs-io/rit-2017-f214aad7370c"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/react-js-%D0%BA%D0%B0%D0%BA-%D0%BD%D0%B0%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C-material-ui-sortable-table-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%BE%D0%B9-drag-n-drop-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D0%BE-a77d521d1695",
+    "to": "https://medium.com/maddevs-io/react-js-%D0%BA%D0%B0%D0%BA-%D0%BD%D0%B0%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C-material-ui-sortable-table-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%BE%D0%B9-drag-n-drop-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D0%BE-a77d521d1695"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/highload-2015-1b1486e84920",
+    "to": "https://medium.com/maddevs-io/highload-2015-1b1486e84920"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/yandex-taxi-vs-namba-taxi-274d7174187f",
+    "to": "https://medium.com/maddevs-io/yandex-taxi-vs-namba-taxi-274d7174187f"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/remote-standup-afe649702171",
+    "to": "https://medium.com/maddevs-io/remote-standup-afe649702171"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/venture-features-81275bf5a622",
+    "to": "https://medium.com/maddevs-io/venture-features-81275bf5a622"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/addled-deploy-52d88d907cde",
+    "to": "https://medium.com/maddevs-io/addled-deploy-52d88d907cde"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/intern-motivation-bc5ca51edd7b",
+    "to": "https://medium.com/maddevs-io/intern-motivation-bc5ca51edd7b"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/internship-revolution-b9b3aa1c22ed",
+    "to": "https://medium.com/maddevs-io/internship-revolution-b9b3aa1c22ed"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/%D1%81%D0%B0%D0%BC%D1%8B%D0%B9-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-%D0%B4%D0%B5%D0%BF%D0%BB%D0%BE%D0%B8%D1%82%D1%8C-%D0%B3%D0%BE%D1%88%D0%BD%D1%8B%D0%B5-%D0%B1%D0%B8%D0%BD%D0%B0%D1%80%D0%BD%D0%B8%D0%BA%D0%B8-4e2f31f5947e",
+    "to": "https://medium.com/maddevs-io/%D1%81%D0%B0%D0%BC%D1%8B%D0%B9-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-%D0%B4%D0%B5%D0%BF%D0%BB%D0%BE%D0%B8%D1%82%D1%8C-%D0%B3%D0%BE%D1%88%D0%BD%D1%8B%D0%B5-%D0%B1%D0%B8%D0%BD%D0%B0%D1%80%D0%BD%D0%B8%D0%BA%D0%B8-4e2f31f5947e"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/securing-future-iots-5aa52764ab7f",
+    "to": "https://medium.com/maddevs-io/securing-future-iots-5aa52764ab7f"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/bitcoin-96376777823b",
+    "to": "https://medium.com/maddevs-io/bitcoin-96376777823b"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/%D0%BF%D0%BB%D0%B0%D0%B3%D0%B8%D0%BD-%D0%B4%D0%BB%D1%8F-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8-%D0%B2%D0%B5%D0%B1-%D0%BC%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D0%B3%D0%B0-must-have-%D0%B2-2017-18%D0%B3%D0%B3-4a4064ffb66",
+    "to": "https://medium.com/maddevs-io/%D0%BF%D0%BB%D0%B0%D0%B3%D0%B8%D0%BD-%D0%B4%D0%BB%D1%8F-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B8-%D0%B2%D0%B5%D0%B1-%D0%BC%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D0%B3%D0%B0-must-have-%D0%B2-2017-18%D0%B3%D0%B3-4a4064ffb66"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/us-vs-ca-6133e9dea998",
+    "to": "https://medium.com/maddevs-io/us-vs-ca-6133e9dea998"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/connection-pooling-for-rds-postgresql-with-terraform-cc530cf51af0",
+    "to": "https://medium.com/maddevs-io/connection-pooling-for-rds-postgresql-with-terraform-cc530cf51af0"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/juniour-communication-6fa9f22d88fa",
+    "to": "https://medium.com/maddevs-io/juniour-communication-6fa9f22d88fa"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/%D0%BD%D0%B5-%D0%BF%D0%B8%D1%88%D0%B8-%D0%BA%D0%BE%D0%B4-67830e4db38c",
+    "to": "https://medium.com/maddevs-io/%D0%BD%D0%B5-%D0%BF%D0%B8%D1%88%D0%B8-%D0%BA%D0%BE%D0%B4-67830e4db38c"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/we-hire-python-developers-fc6e3312d8b3",
+    "to": "https://medium.com/maddevs-io/we-hire-python-developers-fc6e3312d8b3"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/negative-motivation-for-interns-94871b8823e0",
+    "to": "https://medium.com/maddevs-io/negative-motivation-for-interns-94871b8823e0"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/golang-error-handling-18cf16758f81",
+    "to": "https://medium.com/maddevs-io/golang-error-handling-18cf16758f81"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/vscode-remote-python-interpreter-b05078cfae09",
+    "to": "https://medium.com/maddevs-io/vscode-remote-python-interpreter-b05078cfae09"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/%D0%BB%D1%83%D1%87%D1%88%D0%B0%D1%8F-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%BB%D1%8F-react-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-2f6f1feedc13",
+    "to": "https://medium.com/maddevs-io/%D0%BB%D1%83%D1%87%D1%88%D0%B0%D1%8F-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B4%D0%BB%D1%8F-react-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-2f6f1feedc13"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%B8%D1%81%D1%82%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D1%82%D0%BE%D0%BA%D0%B5%D0%BD%D0%B0-%D0%B2-firebase-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-%D0%BF%D1%80%D0%BE%D1%8F%D1%81%D0%BD%D1%8F%D0%B5%D0%BC-%D0%BD%D0%B5%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%BC%D0%BE%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-9e30efa03f8a",
+    "to": "https://medium.com/maddevs-io/%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%B8%D1%81%D1%82%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D1%82%D0%BE%D0%BA%D0%B5%D0%BD%D0%B0-%D0%B2-firebase-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-%D0%BF%D1%80%D0%BE%D1%8F%D1%81%D0%BD%D1%8F%D0%B5%D0%BC-%D0%BD%D0%B5%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%BC%D0%BE%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-9e30efa03f8a"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/vscode-django-pylint-17a4c0ae12c1",
+    "to": "https://medium.com/maddevs-io/vscode-django-pylint-17a4c0ae12c1"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/ru-reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer-b81f1026e06c",
+    "to": "https://medium.com/maddevs-io/ru-reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer-b81f1026e06c"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/gophercon-russia-%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D1%82%D0%B5%D0%BF%D0%BB%D0%B0-%D0%B2-18-9ab050d5cdee",
+    "to": "https://medium.com/maddevs-io/gophercon-russia-%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D1%82%D0%B5%D0%BF%D0%BB%D0%B0-%D0%B2-18-9ab050d5cdee"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%D1%83-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%B5%D0%B5-efddc74643ce",
+    "to": "https://medium.com/maddevs-io/%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%D1%83-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%B5%D0%B5-efddc74643ce"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/native-apps-vs-pwa-2da08fb923cb",
+    "to": "https://medium.com/maddevs-io/native-apps-vs-pwa-2da08fb923cb"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/namba-food-bot-bf7a15a871be",
+    "to": "https://medium.com/maddevs-io/namba-food-bot-bf7a15a871be"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/devops-%D1%8B-%D0%B2-mad-devs-b88e7495e40c",
+    "to": "https://medium.com/maddevs-io/devops-%D1%8B-%D0%B2-mad-devs-b88e7495e40c"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/design-for-elcard-mobile-9c83e17727a3",
+    "to": "https://medium.com/maddevs-io/design-for-elcard-mobile-9c83e17727a3"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/mad-talks-ip-from-aza-4da85618211e",
+    "to": "https://medium.com/maddevs-io/mad-talks-ip-from-aza-4da85618211e"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/comedian-624add6ae0e6",
+    "to": "https://medium.com/maddevs-io/comedian-624add6ae0e6"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/oshibki-pma-db8ee5ec362",
+    "to": "https://medium.com/maddevs-io/oshibki-pma-db8ee5ec362"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/k6-4e8768723c41",
+    "to": "https://medium.com/maddevs-io/k6-4e8768723c41"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/django-postgresql-search-68274ef48801",
+    "to": "https://medium.com/maddevs-io/django-postgresql-search-68274ef48801"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/pm-concentration-f472a2c280a5",
+    "to": "https://medium.com/maddevs-io/pm-concentration-f472a2c280a5"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/passing-aws-csa-exam-49561d816f9a",
+    "to": "https://medium.com/maddevs-io/passing-aws-csa-exam-49561d816f9a"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/customer-onboarding-67fe7999ce31",
+    "to": "https://medium.com/maddevs-io/customer-onboarding-67fe7999ce31"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/mad-devs-icpc-northern-eurasia-the-2018-kyrgyzstan-subregional-contest-89523d73b4ab",
+    "to": "https://medium.com/maddevs-io/mad-devs-icpc-northern-eurasia-the-2018-kyrgyzstan-subregional-contest-89523d73b4ab"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/mad-devs-google-developers-group-gdg-devfest-bishkek-2018-2006acbe94a4",
+    "to": "https://medium.com/maddevs-io/mad-devs-google-developers-group-gdg-devfest-bishkek-2018-2006acbe94a4"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/go-rest-%D0%B8%D0%BB%D0%B8-grpc-f5d52d7ffff6",
+    "to": "https://medium.com/maddevs-io/go-rest-%D0%B8%D0%BB%D0%B8-grpc-f5d52d7ffff6"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/%D0%B2%D1%80%D0%B5%D0%BC%D1%8F-%D0%B4%D0%BB%D1%8F-graphql-%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-2a31a6ac667c",
+    "to": "https://medium.com/maddevs-io/%D0%B2%D1%80%D0%B5%D0%BC%D1%8F-%D0%B4%D0%BB%D1%8F-graphql-%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-2a31a6ac667c"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/math-big-problems-in-go-28aa9f10958b",
+    "to": "https://medium.com/maddevs-io/math-big-problems-in-go-28aa9f10958b"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/investment-plan-for-developers-20bc784b3b72",
+    "to": "https://medium.com/maddevs-io/investment-plan-for-developers-20bc784b3b72"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/secrets-513d41eaaf43",
+    "to": "https://medium.com/maddevs-io/secrets-513d41eaaf43"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/golang-after-ruby-b515a43912ad",
+    "to": "https://medium.com/maddevs-io/golang-after-ruby-b515a43912ad"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/terrafom-hetzner-a2f22534514b",
+    "to": "https://medium.com/maddevs-io/terrafom-hetzner-a2f22534514b"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/%D1%81%D0%BA%D0%B0%D0%B6%D0%B8-%D0%BD%D0%B5%D1%82-%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B5-this-parent-parent-parent-%D0%B2-vue-js-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%B0%D1%85-96f230cb5758",
+    "to": "https://medium.com/maddevs-io/%D1%81%D0%BA%D0%B0%D0%B6%D0%B8-%D0%BD%D0%B5%D1%82-%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B5-this-parent-parent-parent-%D0%B2-vue-js-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%B0%D1%85-96f230cb5758"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/crm-like-a-god-aab144aada34",
+    "to": "https://medium.com/maddevs-io/crm-like-a-god-aab144aada34"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/why-most-beginners-projects-are-shit-f47d381649c2",
+    "to": "https://medium.com/maddevs-io/why-most-beginners-projects-are-shit-f47d381649c2"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/devops-as-a-sevice-b41e53ffe8e1",
+    "to": "https://medium.com/maddevs-io/devops-as-a-sevice-b41e53ffe8e1"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/go-ruby-js-vs-i-8b1346615a43",
+    "to": "https://medium.com/maddevs-io/go-ruby-js-vs-i-8b1346615a43"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/being-professional-at-work-455e21d6bf66",
+    "to": "https://medium.com/maddevs-io/being-professional-at-work-455e21d6bf66"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4-%D0%BD%D0%B0-slackclient-2-0-%D0%B8-%D1%84%D0%B5%D0%B9%D0%BA-%D1%81%D0%BB%D0%B0%D0%BA-%D0%B4%D0%BB%D1%8F-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2-%D0%B1%D0%BE%D1%82%D0%B0-bd04861d6e33",
+    "to": "https://medium.com/maddevs-io/%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4-%D0%BD%D0%B0-slackclient-2-0-%D0%B8-%D1%84%D0%B5%D0%B9%D0%BA-%D1%81%D0%BB%D0%B0%D0%BA-%D0%B4%D0%BB%D1%8F-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2-%D0%B1%D0%BE%D1%82%D0%B0-bd04861d6e33"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/professional-way-6bb28956f564",
+    "to": "https://medium.com/maddevs-io/professional-way-6bb28956f564"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/devs-and-business-5573ee07e756",
+    "to": "https://medium.com/maddevs-io/devs-and-business-5573ee07e756"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/vscode-remote-containers-a6c5672eb5e9",
+    "to": "https://medium.com/maddevs-io/vscode-remote-containers-a6c5672eb5e9"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/project-manager-wanted-b5741ebcdb69",
+    "to": "https://medium.com/maddevs-io/project-manager-wanted-b5741ebcdb69"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/mad-fake-slack-alpha-9ea22989958c",
+    "to": "https://medium.com/maddevs-io/mad-fake-slack-alpha-9ea22989958c"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/yandex-partnership-3e6857a332dd",
+    "to": "https://medium.com/maddevs-io/yandex-partnership-3e6857a332dd"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/top-3-ci-for-js-19bc55b2c5af",
+    "to": "https://medium.com/maddevs-io/top-3-ci-for-js-19bc55b2c5af"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/internship-program-automation-53cbd8b0e0f8",
+    "to": "https://medium.com/maddevs-io/internship-program-automation-53cbd8b0e0f8"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/qa-specialist-ef1814ad3b0d",
+    "to": "https://medium.com/maddevs-io/qa-specialist-ef1814ad3b0d"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/vscode-remote-containers-codeclimate-72526938352f",
+    "to": "https://medium.com/maddevs-io/vscode-remote-containers-codeclimate-72526938352f"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/software-development-hack-4e76e6634d29",
+    "to": "https://medium.com/maddevs-io/software-development-hack-4e76e6634d29"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/how-to-make-github-badges-c2fecf753613",
+    "to": "https://medium.com/maddevs-io/how-to-make-github-badges-c2fecf753613"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/ruby-rails-developer-df6450a48904",
+    "to": "https://medium.com/maddevs-io/ruby-rails-developer-df6450a48904"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/micronavigator-based-on-stm32f100-8eec4ba6049d",
+    "to": "https://medium.com/maddevs-io/micronavigator-based-on-stm32f100-8eec4ba6049d"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/standup-bots-for-slack-d514ca0296b2",
+    "to": "https://medium.com/maddevs-io/standup-bots-for-slack-d514ca0296b2"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/programmers-oath-646e6d3f2136",
+    "to": "https://medium.com/maddevs-io/programmers-oath-646e6d3f2136"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/cucumber-js-puppeteer-testing-in-pair-31d559b7b8bf-31d559b7b8bf",
+    "to": "https://medium.com/maddevs-io/cucumber-js-puppeteer-testing-in-pair-31d559b7b8bf-31d559b7b8bf"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/acceptance-testing-on-cucumber-js-and-puppeteer-b3660401fdf0",
+    "to": "https://medium.com/maddevs-io/acceptance-testing-on-cucumber-js-and-puppeteer-b3660401fdf0"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/senior-full-stack-js-developer-65eb42d065b1",
+    "to": "https://medium.com/maddevs-io/senior-full-stack-js-developer-65eb42d065b1"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/introduction-to-glitch-7e286f1df1c6",
+    "to": "https://medium.com/maddevs-io/introduction-to-glitch-7e286f1df1c6"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/node-js-apps-deploy-to-glitch-fa00598c219",
+    "to": "https://medium.com/maddevs-io/node-js-apps-deploy-to-glitch-fa00598c219"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/how-to-connect-remote-offices-e80d1b5e2cd9",
+    "to": "https://medium.com/maddevs-io/how-to-connect-remote-offices-e80d1b5e2cd9"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/event-delegation-with-react-44a2029f23e2",
+    "to": "https://medium.com/maddevs-io/event-delegation-with-react-44a2029f23e2"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0-%D0%B8-%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B2-golangconf-team-lead-meetup-south-devfest-4d93865a9440",
+    "to": "https://medium.com/maddevs-io/%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0-%D0%B8-%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B2-golangconf-team-lead-meetup-south-devfest-4d93865a9440"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/qt-development-for-raspberry-pi-715cc76b6753",
+    "to": "https://medium.com/maddevs-io/qt-development-for-raspberry-pi-715cc76b6753"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/building-new-public-transport-habits-in-vietnam-5f670ca81046",
+    "to": "https://medium.com/maddevs-io/building-new-public-transport-habits-in-vietnam-5f670ca81046"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/event-delegation-in-javascript-616289317850",
+    "to": "https://medium.com/maddevs-io/event-delegation-in-javascript-616289317850"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/designer-wanted-a82cbed193e",
+    "to": "https://medium.com/maddevs-io/designer-wanted-a82cbed193e"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-junior-devops-specialist-e60b5806bb7",
+    "to": "https://medium.com/maddevs-io/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-junior-devops-specialist-e60b5806bb7"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/golang-logging-7fdd3da5152f",
+    "to": "https://medium.com/maddevs-io/golang-logging-7fdd3da5152f"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/grpc-streaming-delivery-2f5c86160705",
+    "to": "https://medium.com/maddevs-io/grpc-streaming-delivery-2f5c86160705"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/middle-senior-mobile-developer-android-ios-1672d32ed83f",
+    "to": "https://medium.com/maddevs-io/middle-senior-mobile-developer-android-ios-1672d32ed83f"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/svg-css-variables-5cc7b53d0ebf",
+    "to": "https://medium.com/maddevs-io/svg-css-variables-5cc7b53d0ebf"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/hr-wanted-a70716a9a8a8",
+    "to": "https://medium.com/maddevs-io/hr-wanted-a70716a9a8a8"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci-d06f6c2f96dc",
+    "to": "https://medium.com/maddevs-io/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci-d06f6c2f96dc"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/junior-qa-tester-manual-6f478d3e08c",
+    "to": "https://medium.com/maddevs-io/junior-qa-tester-manual-6f478d3e08c"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/junior-intern-php-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA-103fc305e544",
+    "to": "https://medium.com/maddevs-io/junior-intern-php-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA-103fc305e544"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/project-manager-58dbe9aec708",
+    "to": "https://medium.com/maddevs-io/project-manager-58dbe9aec708"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/digital-marketing-manager-9f85c900cf28",
+    "to": "https://medium.com/maddevs-io/digital-marketing-manager-9f85c900cf28"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81-easyeda-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-e569350588ef",
+    "to": "https://medium.com/maddevs-io/%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81-easyeda-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-e569350588ef"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81-easyeda-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%B0%D1%8F-%D1%81%D1%85%D0%B5%D0%BC%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-8fa3f8ac3c5",
+    "to": "https://medium.com/maddevs-io/%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81-easyeda-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%B0%D1%8F-%D1%81%D1%85%D0%B5%D0%BC%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-8fa3f8ac3c5"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/%D0%BA%D0%B0%D0%BA-%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%82%D1%8C-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA-pull-request-e95ae0177212",
+    "to": "https://medium.com/maddevs-io/%D0%BA%D0%B0%D0%BA-%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%82%D1%8C-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA-pull-request-e95ae0177212"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/ru-how-to-memorize-information-better-when-you-study-2b80ee219056",
+    "to": "https://medium.com/maddevs-io/ru-how-to-memorize-information-better-when-you-study-2b80ee219056"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/kak-sohranit-zdorove-vashih-glaz-a829d4cb082a",
+    "to": "https://medium.com/maddevs-io/kak-sohranit-zdorove-vashih-glaz-a829d4cb082a"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/testirovanie-proshivok-mikrokontrollerov-avr-f079045419c",
+    "to": "https://medium.com/maddevs-io/testirovanie-proshivok-mikrokontrollerov-avr-f079045419c"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/opyt-vnedreniya-stripe-connect-v-e-commerce-proekty-b6c7a6458418",
+    "to": "https://medium.com/maddevs-io/opyt-vnedreniya-stripe-connect-v-e-commerce-proekty-b6c7a6458418"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/progressive-web-apps-prakticheskoe-rukovodstvo-cc2cd02bc6fe",
+    "to": "https://medium.com/maddevs-io/progressive-web-apps-prakticheskoe-rukovodstvo-cc2cd02bc6fe"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/kak-sdelat-tri-platnyh-servisa-eta-odnim-besplatnym-d09d7a9bcd1c",
+    "to": "https://medium.com/maddevs-io/kak-sdelat-tri-platnyh-servisa-eta-odnim-besplatnym-d09d7a9bcd1c"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/vizualizaciya-kak-metod-zavlecheniya-chitatelya-85760d89965d",
+    "to": "https://medium.com/maddevs-io/vizualizaciya-kak-metod-zavlecheniya-chitatelya-85760d89965d"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/cena-oshibki-v-hardware-proekte-1ed85127d247",
+    "to": "https://medium.com/maddevs-io/cena-oshibki-v-hardware-proekte-1ed85127d247"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/effektivnaya-peredelka-interfejsa-bazy-dannyh-9cabed7560f5",
+    "to": "https://medium.com/maddevs-io/effektivnaya-peredelka-interfejsa-bazy-dannyh-9cabed7560f5"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/kak-isportit-otnosheniya-s-klientom-f995b316108e",
+    "to": "https://medium.com/maddevs-io/kak-isportit-otnosheniya-s-klientom-f995b316108e"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/kak-avtomatizirovat-process-ocenki-zadach-v-jira-b476b7aee30f",
+    "to": "https://medium.com/maddevs-io/kak-avtomatizirovat-process-ocenki-zadach-v-jira-b476b7aee30f"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/chto-nuzhno-znat-chtoby-verstat-horosho-dc4626d3b5da",
+    "to": "https://medium.com/maddevs-io/chto-nuzhno-znat-chtoby-verstat-horosho-dc4626d3b5da"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/programmirovanie-s-nulya-7-urokov-kotorym-ya-nauchilas-za-god-v-it-f93785e0ed20",
+    "to": "https://medium.com/maddevs-io/programmirovanie-s-nulya-7-urokov-kotorym-ya-nauchilas-za-god-v-it-f93785e0ed20"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/lets-go-mad-devs-%D0%B8%D1%89%D0%B5%D1%82-golang-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0-1d486c5c0aa1",
+    "to": "https://medium.com/maddevs-io/lets-go-mad-devs-%D0%B8%D1%89%D0%B5%D1%82-golang-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0-1d486c5c0aa1"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/mad-devs-%D1%80%D0%B0%D0%B7%D1%8B%D1%81%D0%BA%D0%B8%D0%B2%D0%B0%D0%B5%D1%82-devops-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B2-38da4d1a0093",
+    "to": "https://medium.com/maddevs-io/mad-devs-%D1%80%D0%B0%D0%B7%D1%8B%D1%81%D0%BA%D0%B8%D0%B2%D0%B0%D0%B5%D1%82-devops-%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B2-38da4d1a0093"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/delaem-kartu-v-proekcii-merkatora-dlya-android-9f61408b899c",
+    "to": "https://medium.com/maddevs-io/delaem-kartu-v-proekcii-merkatora-dlya-android-9f61408b899c"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/mad-devs-ishet-middle-python-developer-bd01875e9afa",
+    "to": "https://medium.com/maddevs-io/mad-devs-ishet-middle-python-developer-bd01875e9afa"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/middle-it-recruiter-941248482416",
+    "to": "https://edium.com/maddevs-io/middle-it-recruiter-941248482416"
   },
   {
-    "from": "",
-    "to": ""
+    "from": "/middle-and-senior-android-developer-cc4fa2c61708",
+    "to": "https://medium.com/maddevs-io/middle-and-senior-android-developer-cc4fa2c61708"
   },
   {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
-  },
-  {
-    "from": "",
-    "to": ""
+    "from": "/middle-and-senior-ios-developers-f5eb41be694d",
+    "to": "https://medium.com/maddevs-io/middle-and-senior-ios-developers-f5eb41be694d"
   }
 ]
-
-
-
-
-
