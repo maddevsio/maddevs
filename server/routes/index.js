@@ -3,7 +3,6 @@ const router = express.Router();
 const sendpulse = require('sendpulse-api');
 const dotenv = require('dotenv');
 const shell = require('shelljs');
-const redirect = require('./json/redirect.json');
 dotenv.config();
 
 const API_USER_ID = process.env.NODE_SENDPULSE_API_USER_ID;
@@ -94,16 +93,5 @@ router.post('/prismic-hook', (req, res) => {
     message: 'error'
   });
 });
-
-// Redirect logic
-// redirect.list.forEach(link => {
-//   router.get(link.from, (req, res) => {
-//     res.redirect(301, link.to);
-//   });
-// });
-
-router.get('https://blog.maddevs.co', (req, res) => {
-  res.redirect(301, 'https://maddevs.co/blog');
-});  
 
 module.exports = router;
