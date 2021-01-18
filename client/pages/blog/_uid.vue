@@ -53,7 +53,6 @@ import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversit
 
 export default {
   name: 'post',
-  layout: 'blog',
   components: {
     SlicesBlock,
     RecommendedBlogWidget,
