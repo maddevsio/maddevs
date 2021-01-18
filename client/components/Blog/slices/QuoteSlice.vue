@@ -10,8 +10,10 @@
         {{ $prismic.asText(slice.primary.quote) }}
       </text-quote>
       <div
+        v-if="slice.primary.portrait_author.url || authorName"
         class="author"
-        :class="`p-${slice.primary.quotation_design}`">
+        :class="`p-${slice.primary.quotation_design}`"
+      >
         <div class="author__image" v-if="slice.primary.portrait_author.url">
           <prismic-image :field="slice.primary.portrait_author.mobile"/>
         </div>
@@ -49,8 +51,9 @@ export default {
     font-style: italic;
     font-size: 17px;
     line-height: 28px;
-    margin: 0 0 24px;
-    font-family: 'Inter-Regular', sans-serif;
+    margin: 24px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
     color: $text-color--black-cases;
     border-left: 2px solid $border-color--red;
     padding-left: 35px;
@@ -98,7 +101,8 @@ export default {
     }
 
     &__name {
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
       color: $text-color--grey-team-list;
       font-style: italic;
       font-size: 16px;

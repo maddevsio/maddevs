@@ -55,6 +55,10 @@ module.exports = {
     {
       src: '~/plugins/vue-js-modal.js',
       ssr: false
+    },
+    {
+      src: '~/plugins/vue-silent-box.js',
+      ssr: false
     }
   ],
   generate: {

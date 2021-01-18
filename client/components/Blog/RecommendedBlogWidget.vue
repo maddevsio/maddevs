@@ -80,7 +80,9 @@ export default {
     }
 
     p, span {
-      font-family: 'Poppins-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      opacity: 0.8;
     }
 
     span {
@@ -105,8 +107,24 @@ export default {
 
     &__title {
       font-size: 21px;
-      line-height: 28px;
-      letter-spacing: -1px;
+      line-height: 130%;
+      letter-spacing: -0.02em;
+      font-family: 'Poppins-Medium', sans-serif;
+      display: -webkit-box;
+      max-width: 100%;
+      margin: 0 auto;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &__paragraph {
+      font-size: 16px;
+      line-height: 166%;
+      letter-spacing: -0.035em;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
     }
 
     &__meta {
@@ -114,10 +132,11 @@ export default {
       align-items: center;
       margin: 20px 0;
       font-size: 13px;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
 
       .created-at {
-        margin-right: 40px;
+        margin-right: 24px;
         color: $text-color--grey
       }
 
@@ -125,6 +144,7 @@ export default {
         background-color: $bgcolor--silver;
         padding: 4px 16px;
         transition: 0.2s;
+        line-height: 22px;
       }
     }
   }

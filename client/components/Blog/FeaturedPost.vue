@@ -13,7 +13,13 @@
         </div>
       </div>
       <div class="col-12 col-lg-6 featured-post__image-wrapper">
-        <img :src="post.data.featured_image.url" alt="" class="featured-post__image">
+        <img
+          :src="post.data.featured_image.url"
+          :alt="post.data.featured_image.alt"
+          class="featured-post__image"
+          :width="post.data.featured_image.dimensions.width"
+          :height="post.data.featured_image.dimensions.height"
+        >
       </div>
     </div>
   </nuxt-link>
@@ -83,20 +89,29 @@ export default {
     display: block;
 
     &__wrapper {
-      margin: 96px 0;
+      margin: 95px 0;
       align-items: center;
+    }
+
+    &__main {
+      margin-top: 0;
     }
 
     &__title {
       font-size: 52px;
-      line-height: 67px;
+      line-height: 130%;
       margin-bottom: 15px;
+      letter-spacing: -2px;
+      font-family: 'Poppins-Medium', sans-serif;
     }
 
     &__paragraph {
       font-size: 17px;
       line-height: 28px;
+      letter-spacing: -0.035em;
       margin-bottom: 44px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
     }
 
     &__data {
@@ -106,13 +121,19 @@ export default {
       /deep/ .blog-post__author-name {
         color: $text-color--white-primary;
       }
+
+      /deep/ .blog-post__author-image {
+        width: 40px;
+        height: 40px;
+      }
     }
 
     &__meta {
       display: flex;
       align-items: center;
       font-size: 13px;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
 
       .created-at {
         margin-left: 24px;
@@ -122,10 +143,12 @@ export default {
 
     &__image-wrapper {
       text-align: right;
+      margin-top: 0;
 
       img {
         max-width: 90%;
         height: auto;
+        vertical-align: middle;
       }
     }
   }
@@ -133,12 +156,22 @@ export default {
   @media only screen and (max-width: 991px) {
     .featured-post {
 
+      &__wrapper {
+        margin-top: 0;
+        margin-bottom: 36px;
+      }
+
       &__main {
+        padding: 0;
+        margin-top: 0;
         order: 2;
       }
 
       &__paragraph {
         margin-bottom: 38px;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
       }
 
       &__data {
@@ -147,6 +180,15 @@ export default {
         /deep/ .blog-post__author {
           margin-bottom: 16px;
         }
+
+        /deep/ .blog-post__author-image {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      &__title {
+        font-size: 35px;
       }
 
       &__meta {
@@ -160,8 +202,10 @@ export default {
       }
 
       &__image-wrapper {
+        padding: 0;
         order: 1;
-        margin-bottom: 16px;
+        margin-bottom: 17px;
+        margin-top: 0;
         text-align: center;
 
         img  {

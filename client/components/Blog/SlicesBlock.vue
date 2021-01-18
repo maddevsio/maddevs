@@ -13,7 +13,7 @@
       </template>
       <!-- Image with caption slice template -->
       <template v-else-if="slice.slice_type === 'image_with_caption'">
-        <image-caption-slice :slice="slice"></image-caption-slice>
+        <image-caption-slice :slice="slice"/>
       </template>
       <template v-else-if="slice.slice_type === 'image_with_attributes'">
         <image-attributes-slice :slice="slice"/>

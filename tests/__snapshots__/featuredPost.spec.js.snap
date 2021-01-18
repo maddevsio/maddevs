@@ -44,7 +44,7 @@ exports[`Featured post component renders correctly 1`] = `
               Alisa Manakova
             </p>
              
-            <p
+            <div
               class="blog-post__data-of-creation"
             >
               <span
@@ -52,7 +52,7 @@ exports[`Featured post component renders correctly 1`] = `
               >
                 Chief Strategy Officer
               </span>
-            </p>
+            </div>
           </div>
         </div>
          
@@ -82,9 +82,10 @@ exports[`Featured post component renders correctly 1`] = `
       class="col-12 col-lg-6 featured-post__image-wrapper"
     >
       <img
-        alt=""
         class="featured-post__image"
+        height="380"
         src="https://images.prismic.io/superpupertest/e746f4e6-ce33-47b7-b828-5f315fea2bbb_1_bmF_K9TNqtHpHzUUiI_y5Q.jpeg?auto=compress,format"
+        width="700"
       />
     </div>
   </div>

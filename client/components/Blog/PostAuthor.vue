@@ -4,9 +4,9 @@
     <div class="blog-post__none-image" v-else></div>
     <div class="blog-post__author-info">
       <p class="blog-post__author-name">{{ $prismic.asText(document.author).substr(0, 100) }}</p>
-      <p class="blog-post__data-of-creation">
+      <div class="blog-post__data-of-creation">
         <span class="blog-post__author-title">{{ document.author_title }}</span>
-      </p>
+      </div>
     </div>
   </div>
 </template>
@@ -32,7 +32,7 @@ export default {
     }
 
     &__author-info {
-      margin-left: 15px;
+      margin-left: 9px;
     }
 
     &__author-name {
@@ -43,7 +43,8 @@ export default {
     &__author-name {
       display: block;
       font-size: 13px;
-      font-family: 'Inter-Regular', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
       line-height: 129%;
       letter-spacing: -0.02em;
     }
@@ -58,8 +59,8 @@ export default {
 
     &__author-image,
     &__none-image {
-      width: 30px;
-      height: 30px;
+      width: 36px;
+      height: 36px;
       border-radius: 100%;
     }
 

@@ -246,7 +246,7 @@ export default {
     &__nav-link {
       padding: 14px 0;
       font-size: 32px;
-      font-family: 'Poppins-Regular', sans-serif;
+      font-family: 'Poppins-Medium', sans-serif;
       letter-spacing: -1px;
       line-height: 38px;
       text-decoration: none;
