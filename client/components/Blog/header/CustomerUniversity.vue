@@ -1,14 +1,35 @@
 <template>
-  <div class="blog-post__introduction-container">
-    <h1 class="blog-post__blog-title title">{{ $prismic.asText(document.title) }}</h1>
-    <p class="blog-post__blog-sub-title">{{ $prismic.asText(document.subtitle) }}</p>
-    <img :src="document.featured_image.url" class="blog-post__introduction-image" v-if="document.featured_image.url">
-  </div>
+  <common-header
+    :title="$prismic.asText(document.title)"
+    :subtitle="$prismic.asText(document.subtitle)"
+    :coverImageUrl="document.featured_image.url"
+  >
+    <template v-slot:beforeTitle>
+      <div class="row">
+        <div class="col-6">
+          <div class="cluster__name">Cluster name</div>
+          <div class="cluster__navigation-select">
+            navigation-select
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="cluster__navigation-buttons">
+            navigation buttons
+          </div>
+        </div>
+      </div>
+    </template>
+  </common-header>
 </template>
 
 <script>
+import CommonHeader from '@/components/Blog/header/Common';
+
 export default {
   name: 'CustomerUniversity',
+  components: {
+    CommonHeader
+  },
   props: {
     document: {
       type: Object,
@@ -19,5 +40,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  
+
 </style>

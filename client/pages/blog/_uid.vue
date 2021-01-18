@@ -268,58 +268,6 @@ export default {
       }
     }
 
-    &__blog-sub-title {
-      margin-bottom: 36px;
-      font-family: Inter, sans-serif;
-      color: $text-color--white-primary;
-      letter-spacing: 0.2px;
-      font-size: 17px;
-      font-weight: 300;
-      line-height: 28px;
-    }
-
-    &__post-info {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 7px;
-      margin-bottom: 43px;
-
-      /deep/ .blog-post__author-image {
-        width: 30px;
-        height: 30px;
-      }
-    }
-
-    &__date-tag {
-      display: flex;
-      align-items: center;
-      font-size: 13px;
-      line-height: 22px;
-      font-family: 'Inter', sans-serif;
-      font-weight: 400;
-
-      .blog-post__date {
-        color: $text-color--grey-pale;
-      }
-
-      .blog-post__tag {
-        color: $text-color--white-transparent;
-        background: #404143;
-        border-radius: 2px;
-        padding: 4px 16px;
-        margin-left: 24px;
-      }
-    }
-
-    &__blog-title {
-      font-size: 52px;
-      line-height: 67px;
-      letter-spacing: -2px;
-      color: $text-color--white;
-      font-family: 'Poppins-Medium', sans-serif;
-    }
-
     &__share {
       display: flex;
       position: fixed;
@@ -416,12 +364,6 @@ export default {
       }
     }
 
-    &__introduction-image {
-      width: 120%;
-      margin-left: -10%;
-      height: auto;
-    }
-
     /deep/ .textslice {
       span,
       p {
@@ -493,47 +435,6 @@ export default {
 
         h1 {
           margin-top: 0;
-        }
-      }
-
-      &__introduction-container {
-        padding-top: 120px;
-        background-color: $bgcolor--black;
-      }
-
-      &__introduction-image {
-        width: 100%;
-        margin: 0;
-        vertical-align: bottom;
-      }
-
-      &__blog-title {
-        padding: 0 24px;
-        font-size: 35px;
-        line-height: 45px;
-        letter-spacing: -1px;
-      }
-
-      &__blog-sub-title {
-        padding: 0 24px;
-      }
-
-      &__post-info {
-        padding: 0 24px;
-        display: block;
-      }
-
-      &__date-tag {
-        justify-content: space-between;
-        margin-top: 19px;
-
-        .blog-post__date {
-          order: 2;
-        }
-
-        .blog-post__tag {
-          order: 1;
-          margin-left: 0;
         }
       }
 
