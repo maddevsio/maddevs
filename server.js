@@ -31,7 +31,7 @@ app.use((req, res, next) => {
     const requestUrl = req.url.slice(-1) === '/' && req.url.length > 1 ? req.url.substr(0, req.url.length - 1) : req.url;
     const match = redirectList.find(url => url.from === requestUrl);
     if (match !== undefined && !!match.to) {
-      res.redirect(match.to);
+      res.redirect(301, match.to);
     } else {
       next();
     }
