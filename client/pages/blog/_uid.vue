@@ -25,18 +25,8 @@
           target="_blank"
         />
       </div>
-      <div class="blog-post__introduction-container">
-        <h1 class="blog-post__blog-title title">{{ $prismic.asText(document.title) }}</h1>
-        <p class="blog-post__blog-sub-title">{{ $prismic.asText(document.subtitle) }}</p>
-        <div class="blog-post__post-info">
-          <post-author :document="document"/>
-          <div class="blog-post__date-tag">
-            <div class="blog-post__date">{{ formattedDate }}</div>
-            <div class="blog-post__tag" v-if="tags.length">{{ tags[0] }}</div>
-          </div>
-        </div>
-        <img :src="document.featured_image.url" class="blog-post__introduction-image" v-if="document.featured_image.url !== undefined">
-      </div>
+      <customer-university-header v-if="type === 'customer_university'" :document="document"/>
+      <blog-header v-else :document="document" :tags="tags" :date="formatterDate"/>
       <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
       <table-of-contents :content="document.table_of_contents" v-if="$prismic.asText(document.table_of_contents)"/>
       <slices-block :slices="slices" class="blog-post__text-container"/>
@@ -57,8 +47,9 @@
 <script>
 import SlicesBlock from '@/components/Blog/SlicesBlock.vue';
 import RecommendedBlogWidget from '@//components/Blog/RecommendedBlogWidget';
-import PostAuthor from '@/components/Blog/PostAuthor';
 import TableOfContents from '@/components/Blog/TableOfContents';
+import BlogHeader from '@/components/Blog/header/Blog';
+import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity';
 
 export default {
   name: 'post',
@@ -66,8 +57,9 @@ export default {
   components: {
     SlicesBlock,
     RecommendedBlogWidget,
-    PostAuthor,
-    TableOfContents
+    TableOfContents,
+    BlogHeader,
+    CustomerUniversityHeader
   },
   data() {
     return {
@@ -76,7 +68,8 @@ export default {
       featuredImage: '',
       buttonIsActive: false,
       shareIcons: [''],
-      jsonLd: []
+      jsonLd: [],
+      type: 'post'
     };
   },
   head () {
@@ -108,10 +101,15 @@ export default {
   },
   async asyncData({ $prismic, params, error }) {
     let recommendedPosts = [];
+    let type = 'blog';
     try {
       // Query to get post content
-      const post = await $prismic.api.getByUID('post', params.uid);
-      // Query to get recomended posts
+      let post = await $prismic.api.getByUID('post', params.uid);
+      if(post === undefined) {
+        post = await $prismic.api.getByUID('customer_university', params.uid);
+        type = 'customer_university';
+      }
+      // Query to get recommended posts
       if (post.tags.length) {
         recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', [post.tags[0]]), {pageSize: 4});
         recommendedPosts = recommendedPosts.results.filter(recommendedPost => recommendedPost.uid !== post.uid);
@@ -127,9 +125,11 @@ export default {
         slices: post.data.body,
         formattedDate: Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(post.data.date)),
         recommendedPosts: recommendedPosts,
-        tags: post.tags
+        tags: post.tags,
+        type
       };
     } catch (e) {
+      console.log(e);
       // Returns error page
       error({ statusCode: 404, message: 'Page not found' });
     }
