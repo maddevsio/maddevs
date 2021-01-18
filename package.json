@@ -22,7 +22,7 @@
     "test:staging": "jest --config=jest.config.staging.js"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.12.3",
+    "@nuxtjs/axios": "^5.12.4",
     "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/prismic": "^1.2.4",
     "@nuxtjs/robots": "^2.4.2",
@@ -32,12 +32,12 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jquery": "^3.5.1",
-    "nuxt": "^2.14.8",
+    "nuxt": "^2.14.11",
     "prismjs": "^1.22.0",
     "request": "^2.88.2",
     "sendpulse-api": "^1.1.4",
     "shelljs": "^0.8.4",
-    "snyk": "^1.431.1",
+    "snyk": "^1.434.4",
     "swiper": "^5.4.5",
     "vee-validate": "^3.4.5",
     "vue-awesome-swiper": "^4.1.1",

@@ -24,5 +24,12 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
-
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
+## Deploy to the production server 
+
+1. In file `server/routes/index.js`, on lines 47 and 64, replace email from current, to `req.body.variables.emailTo`
+
+2. Create pull request from new-develop to master. If all checks passed successfully, you can merge new-develop to master
+
+3. After deploy, set old test email for staging in file `server/routes/index.js`

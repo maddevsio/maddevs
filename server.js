@@ -26,20 +26,20 @@ app.use((req, res, next) => {
     res.redirect('https://' + req.headers.host + req.url);
   }
 });
-app.use(express.static(__dirname + '/dist'));
 app.use((req, res, next) => {
   if (['blog.maddevs.co', 'blog.maddevs.io'].includes(req.headers.host)) {
-    const requestUrl = req.url.slice(-1) === '/' ? req.url.substr(0, req.url.length - 1) : req.url;
+    const requestUrl = req.url.slice(-1) === '/' && req.url.length > 1 ? req.url.substr(0, req.url.length - 1) : req.url;
     const match = redirectList.find(url => url.from === requestUrl);
     if (match !== undefined && !!match.to) {
-      res.redirect(match.to);
+      res.redirect(301, match.to);
     } else {
-      res.sendStatus(404);
+      next();
     }
   } else {
     next();
   }
 });
+app.use(express.static(__dirname + '/dist'));
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
