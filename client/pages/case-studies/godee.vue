@@ -229,9 +229,14 @@
           Then all information, collected and processed by these services, is controlled via the Web Admin panel, which is connected to the PostgreSQL database, OSRM, Firebase and push notification services. We use Docker containers throughout the development process.
         </TextParagraph>
         <h3 class="case_title_h3 m-24_bottom">Technology stack</h3>
-        <!-- <ListTechnologies>
-          <ListTechnologiesItem></ListTechnologiesItem>
-        </ListTechnologies> -->
+        <ListTechnologies class="m-96_bottom">
+          <ListTechnologiesItem
+            v-for="(technologiesItem, i) in technologiesList"
+            :key="i"
+            :techName="technologiesItem.techName"
+            :className="technologiesItem.className"
+          />
+        </ListTechnologies>
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-12_bottom">Monitoring</h2>
@@ -350,8 +355,60 @@ export default {
       ],
       technologiesList: [
         {
-          techName: '',
-          className: ''
+          techName: 'Open Street Map',
+          className: 'other-open-street-map'
+        },
+        {
+          techName: 'Google Maps',
+          className: 'other-google-maps'
+        },
+        {
+          techName: 'PostgreSQL',
+          className: 'backend-postgresql'
+        },
+        {
+          techName: 'Docker',
+          className: 'devops-docker case_technologies-item__docker'
+        },
+        {
+          techName: 'Nginx',
+          className: 'devops-nginx'
+        },
+        {
+          techName: 'Redis',
+          className: 'backend-redis'
+        },
+        {
+          techName: 'Python (Django)',
+          className: 'backend-python'
+        },
+        {
+          techName: 'Golang',
+          className: 'backend-go'
+        },
+        {
+          techName: 'Kotlin',
+          className: 'mobile-kotlin'
+        },
+        {
+          techName: 'Atlassian',
+          className: 'pm-atlassian'
+        },
+        {
+          techName: 'Swift',
+          className: 'mobile-swift'
+        },
+        {
+          techName: 'Firebase',
+          className: 'mobile-firebase'
+        },
+        {
+          techName: 'TestFlight',
+          className: 'mobile-test-flight'
+        },
+        {
+          techName: 'Datadog',
+          className: 'infrastructure-datadog'
         }
       ]
     };
