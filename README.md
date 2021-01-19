@@ -66,4 +66,4 @@ $ aws s3 sync --acl public-read ./videos s3://maddevsio-videos/
 # upload a single file in bucket with read permissions set
 $ aws s3 cp --acl public-read ./videos/main.ef19480.mp4 s3://maddevsio-videos/
 ```
-To get access keys write merynes345@gmail.com
+For get access keys write merynes345@gmail.com
