@@ -274,9 +274,19 @@
       </section>
       <section class="container_regular m-72_bottom">
         <h2 class="case_title_h2 m-48_bottom">Meet the team</h2>
-        <!-- <ListTeam>
-          <ListTeamItem></ListTeamItem>
-        </ListTeam> -->
+        <ListTeam>
+          <ListTeamItem
+            v-for="(teamMember, i) in team"
+            :key="i"
+            :name="teamMember.name"
+            :position="teamMember.position"
+            :fileName="teamMember.fileName"
+            :fileNameRetina="`${teamMember.fileName}@2x`"
+            :fileExtension="teamMember.fileExtension"
+            :alt="teamMember.name"
+            pictureFolder="common"
+          />
+        </ListTeam>
         <TextQuoteAuthor
           class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
           authorName="Ruslan Karabukaev"
@@ -349,84 +359,84 @@ export default {
           name: 'Oleg Puzanov',
           position: 'CTO',
           fileName: 'oleg-puzanov',
-          fileExtension: 'jpg',
+          fileExtension: 'png',
           alt: ''
         },
         {
           name: 'Ruslan Kasymov',
           position: 'QA Engineer and PM',
-          fileName: 'ruslan-kasymov',
-          fileExtension: 'jpg',
+          fileName: 'kasymov',
+          fileExtension: 'png',
           alt: ''
         },
         {
           name: 'Rustom Kulbatyrov',
           position: 'Android Developer',
-          fileName: 'rustom-kulbatyrov',
-          fileExtension: 'jpg',
+          fileName: 'kulbatyrov',
+          fileExtension: 'png',
           alt: ''
         },
         {
           name: 'Vladimir Pan',
           position: 'QA Engineer',
           fileName: 'vladimir-pan',
-          fileExtension: 'jpg',
+          fileExtension: 'png',
           alt: ''
         },
         {
           name: 'Belek Abylov',
           position: 'Backend Developer',
           fileName: 'belek-abylov',
-          fileExtension: 'jpg',
+          fileExtension: 'png',
           alt: ''
         },
         {
           name: 'Bakhtiyar Ganyev',
           position: 'iOS Developer',
           fileName: 'bakhtiyar-ganyev',
-          fileExtension: 'jpg',
+          fileExtension: 'png',
           alt: ''
         },
         {
           name: 'Gennady Karev',
           position: 'Backend Developer',
           fileName: 'gennady-karev',
-          fileExtension: 'jpg',
+          fileExtension: 'png',
           alt: ''
         },
         {
           name: 'Aleksandr Krivov',
           position: 'Senior UX/UI Specialist',
           fileName: 'aleksandr-krivov',
-          fileExtension: 'jpg',
+          fileExtension: 'png',
           alt: ''
         },
         {
           name: 'Vlada Arevkova',
           position: 'UX/UI Specialist',
           fileName: 'vlada-arevkova',
-          fileExtension: 'jpg',
+          fileExtension: 'png',
           alt: ''
         },
         {
           name: 'Erik Sultanaliev',
           position: 'Backend Developer',
           fileName: 'erik-sultanaliev',
-          fileExtension: 'jpg',
+          fileExtension: 'png',
           alt: ''
         },
         {
           name: 'Myrzabek Kylychev',
           position: 'Android Developer',
           fileName: 'myrzabek-kylychev',
-          fileExtension: 'jpg',
+          fileExtension: 'png',
           alt: ''
         },
         {
           name: 'Pavel Pushkarev',
           position: 'iOS Developer',
-          fileName: 'pavel-pushkarev',
-          fileExtension: 'jpg',
+          fileName: 'pushkarev',
+          fileExtension: 'png',
           alt: ''
         }
       ],
