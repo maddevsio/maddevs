@@ -346,10 +346,87 @@ export default {
       ogUrl: 'https://maddevs.io/case-studies/godee/',
       team: [
         {
-          name: '',
-          position: '',
-          fileName: '',
-          fileExtension: '',
+          name: 'Oleg Puzanov',
+          position: 'CTO',
+          fileName: 'oleg-puzanov',
+          fileExtension: 'jpg',
+          alt: ''
+        },
+        {
+          name: 'Ruslan Kasymov',
+          position: 'QA Engineer and PM',
+          fileName: 'ruslan-kasymov',
+          fileExtension: 'jpg',
+          alt: ''
+        },
+        {
+          name: 'Rustom Kulbatyrov',
+          position: 'Android Developer',
+          fileName: 'rustom-kulbatyrov',
+          fileExtension: 'jpg',
+          alt: ''
+        },
+        {
+          name: 'Vladimir Pan',
+          position: 'QA Engineer',
+          fileName: 'vladimir-pan',
+          fileExtension: 'jpg',
+          alt: ''
+        },
+        {
+          name: 'Belek Abylov',
+          position: 'Backend Developer',
+          fileName: 'belek-abylov',
+          fileExtension: 'jpg',
+          alt: ''
+        },
+        {
+          name: 'Bakhtiyar Ganyev',
+          position: 'iOS Developer',
+          fileName: 'bakhtiyar-ganyev',
+          fileExtension: 'jpg',
+          alt: ''
+        },
+        {
+          name: 'Gennady Karev',
+          position: 'Backend Developer',
+          fileName: 'gennady-karev',
+          fileExtension: 'jpg',
+          alt: ''
+        },
+        {
+          name: 'Aleksandr Krivov',
+          position: 'Senior UX/UI Specialist',
+          fileName: 'aleksandr-krivov',
+          fileExtension: 'jpg',
+          alt: ''
+        },
+        {
+          name: 'Vlada Arevkova',
+          position: 'UX/UI Specialist',
+          fileName: 'vlada-arevkova',
+          fileExtension: 'jpg',
+          alt: ''
+        },
+        {
+          name: 'Erik Sultanaliev',
+          position: 'Backend Developer',
+          fileName: 'erik-sultanaliev',
+          fileExtension: 'jpg',
+          alt: ''
+        },
+        {
+          name: 'Myrzabek Kylychev',
+          position: 'Android Developer',
+          fileName: 'myrzabek-kylychev',
+          fileExtension: 'jpg',
+          alt: ''
+        },
+        {
+          name: 'Pavel Pushkarev',
+          position: 'iOS Developer',
+          fileName: 'pavel-pushkarev',
+          fileExtension: 'jpg',
           alt: ''
         }
       ],
