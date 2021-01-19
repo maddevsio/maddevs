@@ -1,0 +1,36 @@
+.case {
+  &_text-quote-break {
+    display: block;
+  }
+
+  &_logotype {
+    @include nambafood-footer;
+    width: 200px;
+    height: 63px;
+    margin-bottom: 33px;
+  }
+
+  &_mobile-screen-break { // Foooter text break
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    &_logotype {
+      width: 160px;
+      height: 60px;
+      margin-bottom: 25px;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    &_mobile-screen-break {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    &_mobile-break {
+      display: block;
+    }
+  }
+}
