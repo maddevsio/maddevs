@@ -13,7 +13,7 @@
               <router-link @click.native="goToTopPage" to="/services" class="header__navigation-link">Services</router-link>
               <router-link @click.native="goToTopPage" to="/projects" class="header__navigation-link">Projects</router-link>
               <router-link @click.native="goToTopPage" to="/careers" class="header__navigation-link">Careers</router-link>
-              <a href="https://blog.maddevs.io/" target="_blank" rel="noreferrer" class="header__navigation-link header__navigation-link-blog">Blog</a>
+              <router-link @click.native="goToTopPage" to="/blog" class="header__navigation-link header__navigation-link-blog">Blog</router-link>
             </nav>
           </div>
           <div class="header__right-content col-xl-6 col-lg-5">
@@ -173,12 +173,6 @@ export default {
         font-size: 17px;
         font-family: 'Poppins-Regular', sans-serif;
         color: transparent;
-      }
-    }
-
-    &__navigation-link-blog {
-      &::after {
-        content: '';
       }
     }
 
