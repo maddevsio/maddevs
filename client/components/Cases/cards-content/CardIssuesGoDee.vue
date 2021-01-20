@@ -1,0 +1,110 @@
+<template>
+  <div class="card-content">
+    <div class="card-content_card-description">
+      <div class="card-content_description-item card-content_description-item-motorbike">
+        <h4 class="case_title_h4 card-content_description-title">Motorbike</h4>
+        <TextParagraph class="card-content_paragraph">They are fast and affordable, but they are not always convenient for white-collar workers wearing suits to the office, especially on rainy days.</TextParagraph>
+      </div>
+      <div class="card-content_description-item">
+        <h4 class="case_title_h4 card-content_description-title">Taxi</h4>
+        <TextParagraph class="card-content_paragraph">Taxis are safer and more comfortable, but less accessible because they cost much more.</TextParagraph>
+      </div>
+    </div>
+    <div class="card-content_prices">
+      <h2 class="card-content_prices-title">
+        $300<span>/ month</span>
+      </h2>
+      <div class="card-content_price-item">
+        <TextParagraph class="card-content_price-heading">
+          The basic fee
+        </TextParagraph>
+        <TextParagraph class="card-content_price-number">
+          $0.51
+        </TextParagraph>
+      </div>
+      <div class="card-content_price-item">
+        <TextParagraph class="card-content_price-heading">
+          The kilometer price
+        </TextParagraph>
+        <TextParagraph class="card-content_price-number">
+          $0.56
+        </TextParagraph>
+      </div>
+      <div class="card-content_price-item">
+        <TextParagraph class="card-content_price-heading">
+          Average kilometers
+        </TextParagraph>
+        <TextParagraph class="card-content_price-number">
+          ~ 10
+        </TextParagraph>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import TextParagraph from '@/components/Cases/TextParagraph';
+export default {
+  name: 'CardIssuesGoDee',
+  components: {
+    TextParagraph
+  }
+};
+</script>
+
+<style scoped lang="scss">
+  @import '../../../assets/styles/cases/_mixins';
+
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+
+    &_description-title {
+      margin-bottom: 7px;
+    }
+
+    &_prices-title {
+      font-size: 80px;
+      line-height: 80px;
+      letter-spacing: -2px;
+      font-family: 'Poppins-Medium';
+      margin-bottom: 22px;
+
+      span {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: -1px;
+        font-family: 'Poppins-Regular';
+      }
+    }
+
+    &_card-description {
+      max-width: 401.45px;
+      padding-right: 40px;
+    }
+
+    &_prices {
+      width: 273px;
+    }
+
+    &_description-item-motorbike {
+      margin-bottom: 24px;
+    }
+
+    &_price-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:nth-child(3) {
+        border-top: 1px solid $border-color--grey-02-opacity;
+        border-bottom: 1px solid $border-color--grey-02-opacity;
+      }
+    }
+
+    &_price-heading,
+    &_price-number {
+      @include default_text($text-color--grey-pale, 15px, 44.25px, -0.035em, normal);
+    }
+  }
+</style>

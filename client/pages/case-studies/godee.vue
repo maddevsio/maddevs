@@ -29,8 +29,12 @@
         /> -->
       </section>
       <section class="container_regular">
-        <!-- <Card></Card> -->
-        <!-- <Card></Card> -->
+        <Card class="case_issues-godee-card background-color-silver">
+          <CardIssuesGoDee />
+        </Card>
+        <Card class="background-color-orange">
+          <CardSolutionGoDee />
+        </Card>
       </section>
       <section class="container_full m-48_top media-m-24_top m-96_bottom media-m-72_bottom">
         <iframe width="100%" height="509" src="https://www.youtube.com/embed/_XCRbXmTUwI" frameborder="0" allowfullscreen></iframe>
@@ -326,6 +330,8 @@ import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem';
 import Card from '@/components/Cases/Card';
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
 import Swiper from '@/components/Cases/Swiper';
+import CardIssuesGoDee from '@/components/Cases/cards-content/CardIssuesGoDee';
+import CardSolutionGoDee from '@/components/Cases/cards-content/CardSolutionGoDee';
 
 export default {
   components: {
@@ -346,7 +352,9 @@ export default {
     TextQuoteAuthor,
     Footer,
     Swiper,
-    HeaderNambaFood
+    HeaderNambaFood,
+    CardIssuesGoDee,
+    CardSolutionGoDee
   },
   name: 'NambaFood',
   data() {
