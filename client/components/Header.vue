@@ -56,7 +56,8 @@ export default {
       isCasePage: false,
       caseMoreButton: null,
       caseHeader: null,
-      logoText: null
+      logoText: null,
+      caseBody: null
     };
   },
   created() {
@@ -64,11 +65,16 @@ export default {
   },
   mounted() {
     if(this.isCasePage) {
-      this.caseMoreButton = document.getElementsByClassName('case_more__button')[0];
       this.caseHeader = document.getElementsByClassName('case_header')[0];
       this.logoText = document.getElementsByClassName('header-logo-text')[0];
 
-      this.getScrollTop();
+      if (!this.$nuxt.$route.path.includes('/godee')) {
+        this.caseMoreButton = document.getElementsByClassName('case_more__button')[0];
+        this.getScrollTop();
+      } else {
+        this.caseBody = document.getElementsByClassName('case_body')[0];
+      }
+
       window.addEventListener('scroll', () => {
         this.scrollHandler();
       });
@@ -96,6 +102,13 @@ export default {
       this.scrollTop = this.caseMoreButton.getBoundingClientRect().top - this.$refs.headerContainer.offsetHeight;
     },
     scrollHandler() {
+      if (!this.$nuxt.$route.path.includes('/godee')) {
+        this.setStylesForHeader();
+      } else {
+        this.setStylesForHeaderInGoDeeCase();
+      }
+    },
+    setStylesForHeader() { // От этой логики в скором времени можно будет избавиться, сейчас это костыль, так как не все хедеры в кейсах переверстаны под новый формат
       if(this.isCasePage && window.innerWidth > 991) {
         const opacity = 1.6 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.caseMoreButton.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
         const opacityTextLogo = 0.9 - (this.$refs.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.$refs.overlay.offsetHeight;
@@ -104,6 +117,14 @@ export default {
       } else if(this.isCasePage && window.innerWidth < 991) {
         const opacity = 1.7 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.caseMoreButton.getBoundingClientRect().height) - 60) / this.$refs.overlay.offsetHeight;
         this.$refs.overlay.style.opacity = opacity;
+      }
+    },
+    setStylesForHeaderInGoDeeCase() {
+      if(this.isCasePage && window.innerWidth > 991) {
+        this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
+        this.logoText.style.opacity = 0 - (this.$refs.overlay.offsetHeight - this.caseBody.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
+      } else if (this.isCasePage && window.innerWidth < 991) {
+        this.$refs.overlay.style.opacity = 3 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight; // Цифры 1 или 2 регулируют старт затемнения, чем больше цифра тем раньше начнеться затемнение, с тектом для логотипа работает в обратную сторону
       }
     }
   }

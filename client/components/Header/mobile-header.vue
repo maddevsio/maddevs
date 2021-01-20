@@ -103,7 +103,8 @@ export default {
       caseMoreButton: null,
       overlay: null,
       scrollTop: null,
-      logoText: null
+      logoText: null,
+      caseBody: null
     };
   },
   watch: {
@@ -118,15 +119,22 @@ export default {
   },
   mounted() {
     if(this.isCasePage) {
-      this.caseMoreButton = document.getElementsByClassName('case_more__button')[0];
       this.overlay = document.getElementsByClassName('overlay')[0];
+      this.caseHeader = document.getElementsByClassName('case_header')[0];
       this.logoText = document.getElementsByClassName('header-logo-text')[1]; // Logo from mobile header
 
-      this.getScrollTop();
+      if (!this.$nuxt.$route.path.includes('/godee')) {
+        this.caseMoreButton = document.getElementsByClassName('case_more__button')[0];
+        this.getScrollTop();
+      } else {
+        this.caseBody = document.getElementsByClassName('case_body')[0];
+      }
+
       window.addEventListener('scroll', () => {
         this.scrollHandler();
       });
     }
+    
   },
   methods: {
     toggleMobileHeader() {
@@ -153,9 +161,10 @@ export default {
       this.scrollTop = this.caseMoreButton.getBoundingClientRect().top;
     },
     scrollHandler() {
-      if(this.isCasePage) {
-        const opacityTextLogo = 1 - (this.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.overlay.offsetHeight;
-        this.logoText.style.opacity = opacityTextLogo;
+      if (this.isCasePage && !this.$nuxt.$route.path.includes('/godee')) {
+        this.setStylesForHeader();
+      } else {
+        this.setStylesForHeaderInGoDeeCase();
       }
     },
     setPageData() {
@@ -166,6 +175,14 @@ export default {
         this.headerTransparent = false;
         this.isCasePage = false;
       }
+    },
+    setStylesForHeader() {
+      const opacityTextLogo = 1 - (this.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.overlay.offsetHeight;
+      this.logoText.style.opacity = opacityTextLogo;
+    },
+    setStylesForHeaderInGoDeeCase() {
+      const opacityTextLogo = 0 - (this.overlay.offsetHeight - this.caseBody.getBoundingClientRect().top) / this.overlay.offsetHeight;
+      this.logoText.style.opacity = opacityTextLogo;
     }
   }
 };
