@@ -46,7 +46,7 @@
 <script>
 import TextParagraph from '@/components/Cases/TextParagraph';
 export default {
-  name: 'CardIssuesGoDee',
+  name: 'CardSolutionGoDee',
   components: {
     TextParagraph
   }
