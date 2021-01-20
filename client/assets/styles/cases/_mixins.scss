@@ -15,7 +15,7 @@
 
 @mixin default_text($color, $size, $height, $spacing, $weight) {
   color: $color;
-  font-family: Inter-Regular, sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: $weight;
   font-size: $size;
@@ -25,8 +25,8 @@
 
 @mixin italic_text($color, $size, $height, $spacing) {
   color: $color;
-  font-family: Inter-Italic, sans-serif;
-  font-style: normal;
+  font-family: Inter, sans-serif;
+  font-style: italic;
   font-weight: normal;
   font-size: $size;
   line-height: $height;

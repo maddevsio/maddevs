@@ -14,6 +14,10 @@
     display: none;
   }
 
+  &_issues-godee-card {
+    margin-bottom: 20px;
+  }
+
   @media screen and (max-width: 768px) {
     &_logotype {
       width: 160px;
