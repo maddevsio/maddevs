@@ -49,10 +49,10 @@ $ curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zi
 
 # authorization
 $ aws configure
-AWS Access Key ID [None]: Key
-AWS Secret Access Key [None]: Key
-Default region name [None]: us-west-1
-Default output format [None]: json
+AWS Access Key ID: Key
+AWS Secret Access Key: Key
+Default region name: us-west-1
+Default output format: json
 
 # view files in the bucket
 $ aws s3 ls s3://maddevsio-videos/
@@ -66,4 +66,4 @@ $ aws s3 sync --acl public-read ./videos s3://maddevsio-videos/
 # upload a single file in bucket with read permissions set
 $ aws s3 cp --acl public-read ./videos/main.ef19480.mp4 s3://maddevsio-videos/
 ```
-To get access keys write: merynes345@gmail.com
+For get access keys write merynes345@gmail.com
