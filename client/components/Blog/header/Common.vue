@@ -56,6 +56,7 @@ export default {
       width: 120%;
       margin-left: -10%;
       height: auto;
+      vertical-align: middle;
     }
   }
 

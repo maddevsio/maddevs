@@ -1,5 +1,5 @@
 <template>
-  <div class="blog-post" :class="recommendedPosts.length ? 'with-recommended' : ''">
+  <div class="blog-post" :class="recommendedPosts.length || type === 'customer_university' ? 'with-recommended' : ''">
     <div class="blog-post__background" />
     <div class="blog-post__inner-container">
       <div class="blog-post__share">
@@ -25,11 +25,26 @@
           target="_blank"
         />
       </div>
-      <customer-university-header v-if="type === 'customer_university'" :document="document"/>
-      <blog-header v-else :document="document" :tags="tags" :date="formatterDate"/>
+
+      <customer-university-header
+        v-if="type === 'customer_university'"
+        :document="document"
+        :id="id"
+        :postList="clusterPosts || []"
+        :clusterName="cluster ? $prismic.asText(cluster.primary.cluster_name) : ''"
+      />
+      <blog-header
+        v-else
+        :document="document"
+        :tags="tags"
+        :formattedDate="formattedDate"
+      />
+
       <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
-      <table-of-contents :content="document.table_of_contents" v-if="$prismic.asText(document.table_of_contents)"/>
-      <slices-block :slices="slices" class="blog-post__text-container"/>
+      <div class="blog-post__main-content">
+        <table-of-contents :content="document.table_of_contents" v-if="$prismic.asText(document.table_of_contents)"/>
+        <slices-block :slices="slices" class="blog-post__text-container"/>
+      </div>
     </div>
     <div v-if="recommendedPosts.length !== 0" class="blog-post__recommended-posts">
       <div class="blog-post__recommended-posts-list container">
@@ -38,6 +53,12 @@
         </section>
       </div>
     </div>
+    <cu-navigation
+      v-if="clusterPosts"
+      :cluster="cluster"
+      :clusterPosts="clusterPosts"
+      :id="id"
+    />
     <button class="blog-post__back-to-list" @click="scrollToTop()" v-if="buttonIsActive">
       <i/>
     </button>
@@ -50,6 +71,7 @@ import RecommendedBlogWidget from '@//components/Blog/RecommendedBlogWidget';
 import TableOfContents from '@/components/Blog/TableOfContents';
 import BlogHeader from '@/components/Blog/header/Blog';
 import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity';
+import CuNavigation from '@/components/Blog/CuNavigation';
 
 export default {
   name: 'post',
@@ -58,7 +80,8 @@ export default {
     RecommendedBlogWidget,
     TableOfContents,
     BlogHeader,
-    CustomerUniversityHeader
+    CustomerUniversityHeader,
+    CuNavigation
   },
   data() {
     return {
@@ -68,7 +91,8 @@ export default {
       buttonIsActive: false,
       shareIcons: [''],
       jsonLd: [],
-      type: 'post'
+      type: 'post',
+      cluster: null
     };
   },
   head () {
@@ -120,6 +144,7 @@ export default {
 
       // Returns data to be used in template
       return {
+        id: post.id,
         document: post.data,
         slices: post.data.body,
         formattedDate: Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(post.data.date)),
@@ -128,7 +153,6 @@ export default {
         type
       };
     } catch (e) {
-      console.log(e);
       // Returns error page
       error({ statusCode: 404, message: 'Page not found' });
     }
@@ -140,6 +164,9 @@ export default {
     window.addEventListener('scroll', this.shareButtonsScroll);
     window.scroll();
     this.getLdScripts();
+    if (this.type === 'customer_university') {
+      this.getClusterData();
+    }
   },
   destroyed () {
     window.removeEventListener('scroll', this.shareButtonsScroll);
@@ -188,6 +215,21 @@ export default {
           innerHTML: this.$prismic.asText(snippet.single_snippet).replaceAll(/\n ?/g, '')
         };
       });
+    },
+    getClusterData() {
+      this.$prismic.api.getSingle('cu_master')
+        .then(response => {
+          this.cluster = response.data.body.find(cluster => cluster.items.find(post => post.cu_post.id === this.id) !== undefined) || null;
+        });
+    }
+  },
+  computed: {
+    clusterPosts: function () {
+      if (this.cluster !== null) {
+        return this.cluster.items;
+      }
+
+      return null;
     }
   }
 };
@@ -247,6 +289,11 @@ export default {
       background-color: $bgcolor--black;
       height: 683px;
     }
+
+    /*&__main-content {*/
+    /*  max-width: 680px;*/
+    /*  margin: 0 auto;*/
+    /*}*/
 
     &__inner-container {
       max-width: 680px;
