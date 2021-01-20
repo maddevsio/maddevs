@@ -91,10 +91,6 @@ export default {
     id: {
       type: String,
       required: true
-    },
-    uid: {
-      type: String,
-      default: () => ''
     }
   },
   computed: {
