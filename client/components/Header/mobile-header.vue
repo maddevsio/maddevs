@@ -161,7 +161,7 @@ export default {
       this.scrollTop = this.caseMoreButton.getBoundingClientRect().top;
     },
     scrollHandler() {
-      if (this.isCasePage && !this.$nuxt.$route.path.includes('/godee')) {
+      if (!this.$nuxt.$route.path.includes('/godee')) {
         this.setStylesForHeader();
       } else {
         this.setStylesForHeaderInGoDeeCase();
@@ -177,12 +177,16 @@ export default {
       }
     },
     setStylesForHeader() {
-      const opacityTextLogo = 1 - (this.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.overlay.offsetHeight;
-      this.logoText.style.opacity = opacityTextLogo;
+      if (this.isCasePage) {
+        const opacityTextLogo = 1 - (this.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.overlay.offsetHeight;
+        this.logoText.style.opacity = opacityTextLogo;
+      }
     },
     setStylesForHeaderInGoDeeCase() {
-      const opacityTextLogo = 0 - (this.overlay.offsetHeight - this.caseBody.getBoundingClientRect().top) / this.overlay.offsetHeight;
-      this.logoText.style.opacity = opacityTextLogo;
+      if (this.isCasePage) {
+        const opacityTextLogo = 0 - (this.overlay.offsetHeight - this.caseBody.getBoundingClientRect().top) / this.overlay.offsetHeight;
+        this.logoText.style.opacity = opacityTextLogo;
+      }
     }
   }
 };

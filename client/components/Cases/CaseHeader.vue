@@ -1,15 +1,15 @@
 <template>
   <section class="case_header">
-    <!-- <video 
+    <video 
       class="case_main-video" 
       loop="true" 
       muted="true" 
       autoplay="true"
       v-if="!isIphone"
     >
-      <source :src="getPathToVideo" type="video/mp4">
+      <source :src="video" type="video/mp4">
       Your browser does not support the video tag.
-    </video> -->
+    </video>
     <div class="case_header-description">
       <div class="case_case-study-item">Case Study</div>
       <slot name="title"></slot>
@@ -30,17 +30,20 @@ export default {
     logo: {
       type: String,
       default: ''
+    },
+    videoName: {
+      type: String,
+      default: ''
     }
   },
   data() {
     return {
-      isIphone: false
+      isIphone: false,
+      video: ''
     };
   },
-  computed: {
-    getPathToVideo: () => {
-      return `${process.env.awsUrl}/main.ef19480.mp4`;
-    }
+  created() {
+    this.video = `${process.env.awsUrl}/${this.$props.videoName}`;
   },
   mounted() {
     if(navigator.userAgent.match(/(iPhone)/i)) {

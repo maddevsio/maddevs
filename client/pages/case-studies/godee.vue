@@ -1,6 +1,6 @@
 <template>
   <main class="main case">
-    <CaseHeader logo="godee">
+    <CaseHeader logo="godee" videoName="godee-case-main-video.mp4">
       <h1 class="case_header-title" slot="title">Convenient shuttle <br> bus service</h1>
       <p class="case_header-description" slot="description">
         Mad Devs helped GoDee with developing feature-rich software to re-invent <br> public mobility by building new smart ways of a daily commute.
