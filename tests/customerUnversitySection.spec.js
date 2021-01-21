@@ -11,7 +11,7 @@ describe('Customer University section component', () => {
       stubs: ['prismic-image'],
       mocks: {
         $prismic: {
-          asText: (smth) => ''
+          asText: smth => ''
         }
       }
     });
