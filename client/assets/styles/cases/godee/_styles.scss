@@ -18,23 +18,59 @@
     margin-bottom: 20px;
   }
 
-  @media screen and (max-width: 768px) {
-    &_logotype {
-      width: 160px;
-      height: 60px;
-      margin-bottom: 25px;
+  &_header-title {
+    margin-right: 155px;
+  }
+
+  &_godee-logo {
+    @include godee-logo;
+    width: 292px;
+    height: 130px;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 1250px) {
+    &_header-title {
+      margin-right: 80px;
     }
   }
 
-  @media screen and (max-width: 520px) {
-    &_mobile-screen-break {
-      display: block;
+  @media screen and (max-width: 1170px) {
+    &_header-title {
+      margin-right: 0;
+    }
+
+    &_godee-logo {
+      width: 619px;
+      background-position: left;
+      margin-bottom: 6px;
     }
   }
 
-  @media screen and (max-width: 420px) {
-    &_mobile-break {
-      display: block;
+  @media screen and (max-width: 655px) {
+    &_godee-logo {
+      width: 327px;
+      height: 65px;
+      margin-bottom: 20px;
+    }
+
+    &_header-description {
+      max-width: 327px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    &_header-description {
+      max-width: 270px;
+    }
+
+    &_godee-logo {
+      width: 270px;
+      margin-bottom: 10px;
     }
   }
 }

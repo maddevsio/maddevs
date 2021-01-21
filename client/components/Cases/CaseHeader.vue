@@ -60,7 +60,7 @@ export default {
   &_header {
     display: flex;
     flex-direction: row;
-    background-color: #111213;
+    background-color: #111213; // избавиться от этого
 
     &:after {
       display: none;
@@ -69,7 +69,6 @@ export default {
 
   &_header-title {
     @include title($text-color--white, 67.88px, -2px);
-    margin-right: 155px;
     margin-bottom: 10px;
     line-height: 112%;
     text-align: left;
@@ -89,11 +88,38 @@ export default {
     background-color: $bgcolor--red;
   }
 
-  &_godee-logo {
-    @include godee-logo;
-    width: 292px;
-    height: 130px;
-    z-index: 1;
+  @media screen and (max-width: 1170px) {
+    &_header {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media screen and (max-width: 655px) {
+    &_header-title {
+      @include title($text-color--white, 35px, -1px);
+      line-height: 130%;
+    }
+
+    &_header-description,
+    &_case-study-item {
+      @include default_text($text-color--white, 16px, 150%, -0.02em, normal);
+    }
+
+    &_case-study-item {
+      max-width: 85px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    &_header-title {
+      font-size: 30px;
+    }
+    
+    &_header-description,
+    &_case-study-item {
+      font-size: 13px;
+    }
   }
 }
 </style>
