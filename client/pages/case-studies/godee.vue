@@ -63,8 +63,8 @@
           <!-- <Card></Card> -->
         </div>
       </section>
-      <section class="container_full case_before-after-gif background-color-silver m-48_top media-m-24_top m-104_bottom">
-        <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif" alt="">
+      <section class="container_full case_before-after-gif-wrapper background-color-silver m-48_top media-m-24_top m-104_bottom">
+        <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="">
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom case_text-align-center">Development goals</h2> <!-- Выставить оступы на мобиле -->
@@ -186,7 +186,7 @@
           <span>If Pifia determines that a minibus is usually late due to increased traffic at 5:35 pm and not 5:30 pm, it alerts the route manager to shift the arrival time to 5:35 pm. Five minutes might sound minor, but these small optimizations add up.</span>
         </TextQuoteBox>
       </section>
-      <section class="container_full m-96_top m-92_bottom background-color-black-godee">
+      <section class="container_full m-96_top background-color-black-godee">
         <section class="container_regular">
           <div>
             <h2 class="case_title_h2 m-24_bottom">Route optimization</h2>
@@ -213,11 +213,11 @@
           </div>
         </section>
       </section>
-      <section class="container_regular">
-        <h2 class="case_title_h2 m-12_bottom case_text-align-center">Infrastructure scheme</h2>
-      </section>
-      <section class="container_full m-48_bottom">
-        <img src="" class="" alt="">
+      <section class="container_full case_infrastructure-scheme-wrapper  background-color-silver">
+        <section class="container_middle">
+          <h2 class="case_title_h2 m-12_bottom case_text-align-center">Infrastructure scheme</h2>
+          <img src="../../assets/img/Cases/godee/gif/infrastructure-scheme.gif" class="case_gif case_infrastructure-scheme-gif" alt="">
+        </section>
       </section>
       <section class="container_regular">
         <TextParagraph class="m-24_bottom media-m-12_bottom">

@@ -35,8 +35,21 @@
     z-index: 1;
   }
 
-  &_before-after-gif {
+  &_infrastructure-scheme-wrapper {
+    padding-top: 92px;
+    padding-bottom: 60px;
+  }
+
+  &_infrastructure-scheme-gif {
+    max-width: 645px;
+  }
+
+  &_before-after-gif-wrapper {
     padding: 3.47vw 0;
+  }
+
+  &_before-after-gif {
+    max-width: 1000px;
   }
 
   @media screen and (max-width: 1250px) {
@@ -55,6 +68,12 @@
       background-position: left;
       margin-bottom: 6px;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    &_infrastructure-scheme-wrapper {
+      padding: 48px 0;
+    }  
   }
 
   @media screen and (max-width: 655px) {
