@@ -1,6 +1,11 @@
 <template>
   <main class="main case">
-    <HeaderNambaFood />
+    <CaseHeader logo="godee" videoName="godee-case-main-video.mp4">
+      <h1 class="case_header-title" slot="title">Convenient shuttle <br> bus service</h1>
+      <p class="case_header-description" slot="description">
+        Mad Devs helped GoDee with developing feature-rich software to re-invent <br> public mobility by building new smart ways of a daily commute.
+      </p>
+    </CaseHeader>
     <section class="case_body">
       <div class="case_animation_block"></div>
       <section class="container_regular">
@@ -312,7 +317,7 @@
 </template>
 
 <script>
-import HeaderNambaFood from '@/components/Cases/HeaderNambaFood';
+import CaseHeader from '@/components/Cases/CaseHeader';
 import Footer from '@/components/Cases/Footer';
 import TextParagraph from '@/components/Cases/TextParagraph';
 import TextQuote from '@/components/Cases/TextQuote';
@@ -352,7 +357,7 @@ export default {
     TextQuoteAuthor,
     Footer,
     Swiper,
-    HeaderNambaFood,
+    CaseHeader,
     CardIssuesGoDee,
     CardSolutionGoDee
   },
