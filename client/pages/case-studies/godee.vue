@@ -55,12 +55,24 @@
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           Before investing a considerable amount of money in building software, hiring personnel and acquiring minibuses, GoDee wanted to develop an MVP to understand the market fit potential.
         </TextParagraph>
-        <TextParagraph>
+        <TextParagraph class="m-24_bottom">
           Although services such as GoDee exist in other parts of the world, simulating these programs in Ho Chi Minh City was pointless because the city’s commuting culture is quite different. That’s why user feedback was crucial to its improvement and key to its current rapid growth.
         </TextParagraph>
-        <div>
-          <!-- <Card></Card> -->
-          <!-- <Card></Card> -->
+        <div class="case_minimum-viable-product-cards">
+          <Card class="background-color-silver">
+            <CardGoDeeFeature title="Live chat feature" iconName="live-chat">
+              <TextParagraph>
+                Over the time period of three months, our integrated live chat feature collected extensive feedback from users to make white-collar workers’ commutes easier.
+              </TextParagraph>
+            </CardGoDeeFeature>
+          </Card>
+          <Card class="background-color-silver">
+            <CardGoDeeFeature title="Trip request" iconName="trip-request">
+              <TextParagraph>
+                This feature enabled GoDee to analyse the actual demand for travel to various Ho Chi Minh City districts.
+              </TextParagraph>
+            </CardGoDeeFeature>
+          </Card>
         </div>
       </section>
       <section class="container_full case_before-after-gif-wrapper background-color-silver m-48_top media-m-24_top m-104_bottom">
@@ -329,6 +341,7 @@ import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
 import Swiper from '@/components/Cases/Swiper';
 import CardIssuesGoDee from '@/components/Cases/cards-content/CardIssuesGoDee';
 import CardSolutionGoDee from '@/components/Cases/cards-content/CardSolutionGoDee';
+import CardGoDeeFeature from '@/components/Cases/cards-content/CardGoDeeFeature';
 
 export default {
   components: {
@@ -351,7 +364,8 @@ export default {
     Swiper,
     CaseHeader,
     CardIssuesGoDee,
-    CardSolutionGoDee
+    CardSolutionGoDee,
+    CardGoDeeFeature
   },
   name: 'NambaFood',
   data() {
