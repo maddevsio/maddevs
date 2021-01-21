@@ -203,6 +203,7 @@ export default {
 
   .featured-post {
     text-decoration: none;
+    display: block;
 
     &__date {
       @include label;
