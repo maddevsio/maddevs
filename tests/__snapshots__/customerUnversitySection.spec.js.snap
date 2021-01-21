@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Customer University section component Renders correctly 1`] = `
+<section
+  class="customer-university"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="customer-university__title"
+    >
+      
+      Customer
+      <br />
+       
+      <span>
+        University
+      </span>
+    </div>
+     
+    <div
+      class="d-flex justify-content-between"
+    >
+      <div
+        class="customer-university__featured-post w-50"
+      >
+        <!---->
+      </div>
+       
+      <div
+        class="w-50"
+      >
+        <div
+          class="customer-university__list-wrapper pl-2"
+        >
+          <h6
+            class="customer-university__list-title"
+          >
+            Series of articles:
+          </h6>
+           
+          <div />
+           
+          <div
+            class="customer-university__list-show-more-wrapper"
+          >
+            <button
+              class="customer-university__list-show-more"
+            >
+              
+              Browse all series
+            
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
