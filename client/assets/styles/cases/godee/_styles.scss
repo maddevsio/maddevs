@@ -35,6 +35,10 @@
     z-index: 1;
   }
 
+  &_before-after-gif {
+    padding: 3.47vw 0;
+  }
+
   @media screen and (max-width: 1250px) {
     &_header-title {
       margin-right: 80px;

@@ -63,16 +63,8 @@
           <!-- <Card></Card> -->
         </div>
       </section>
-      <section class="container_full m-48_top media-m-24_top m-104_bottom">  <!-- Выставить оступы на мобиле -->
-        <!-- <Picture 
-          pictureFolder=""
-          fileName=""
-          fileNameRetina=""
-          fileExtension=""
-          alt=""
-          :boxShadow="false"
-          :lazyLoading="true"
-        /> -->
+      <section class="container_full case_before-after-gif background-color-silver m-48_top media-m-24_top m-104_bottom">
+        <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif" alt="">
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom case_text-align-center">Development goals</h2> <!-- Выставить оступы на мобиле -->
