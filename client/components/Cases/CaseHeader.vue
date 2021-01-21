@@ -60,7 +60,6 @@ export default {
   &_header {
     display: flex;
     flex-direction: row;
-    background-color: #111213; // избавиться от этого
 
     &:after {
       display: none;
@@ -76,7 +75,7 @@ export default {
   }
 
   &_header-description {
-    color: $text-color--white;
+    @include default_text($text-color--white, 17px, 166%, -0.035em, normal);
   }
 
   &_case-study-item {
