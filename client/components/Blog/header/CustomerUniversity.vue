@@ -21,21 +21,13 @@
         <div class="col-6 mt-0">
           <div class="cluster-navigation__buttons">
             <a href="#">
-              <span class="arrow prev">
-                <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.67045 11L6.54545 10.125L2.94318 6.53409H12.2727V5.28409H2.94318L6.54545 1.68182L5.67045 0.818182L0.579545 5.90909L5.67045 11Z" fill="#CFCFD0"/>
-                </svg>
-              </span>
+              <span class="arrow prev"/>
               Previous
             </a>
             <span class="cluster-navigation__divider"/>
             <a href="#">
               Next
-              <span class="arrow next">
-                <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.60227 11L11.6932 5.90909L6.60227 0.818182L5.72727 1.69318L9.32955 5.28409H0V6.53409H9.32955L5.72727 10.1364L6.60227 11Z" fill="#CFCFD0"/>
-                </svg>
-              </span>
+              <span class="arrow next"/>
             </a>
           </div>
         </div>
@@ -118,6 +110,7 @@ export default {
 
 <style scoped lang="scss">
   @import '../../../assets/styles/vars';
+  @import '../../../assets/styles/commonIcons';
 
   .cluster-navigation {
     color: white;
@@ -198,14 +191,16 @@ export default {
         &:hover {
           color: $text-color--red;
 
-          svg {
-            path {
-              fill: $text-color--red;
-            }
+          .arrow {
+            @include arrow-icon-red;
           }
         }
 
         .arrow {
+          @include arrow-icon;
+          display: inline-block;
+          width: 12px;
+          height: 11px;
 
           &.prev {
             margin-right: 10px;
@@ -213,6 +208,7 @@ export default {
 
           &.next {
             margin-left: 10px;
+            transform: rotate(180deg);
           }
         }
       }
