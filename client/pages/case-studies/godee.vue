@@ -1,6 +1,11 @@
 <template>
   <main class="main case">
-    <HeaderNambaFood />
+    <CaseHeader logo="godee" videoName="godee-case-main-video.mp4">
+      <h1 class="case_header-title" slot="title">Convenient shuttle <br> bus service</h1>
+      <p class="case_header-description" slot="description">
+        Mad Devs helped GoDee with developing feature-rich software to re-invent <br> public mobility by building new smart ways of a daily commute.
+      </p>
+    </CaseHeader>
     <section class="case_body">
       <div class="case_animation_block"></div>
       <section class="container_regular">
@@ -50,24 +55,28 @@
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           Before investing a considerable amount of money in building software, hiring personnel and acquiring minibuses, GoDee wanted to develop an MVP to understand the market fit potential.
         </TextParagraph>
-        <TextParagraph>
+        <TextParagraph class="m-24_bottom">
           Although services such as GoDee exist in other parts of the world, simulating these programs in Ho Chi Minh City was pointless because the city’s commuting culture is quite different. That’s why user feedback was crucial to its improvement and key to its current rapid growth.
         </TextParagraph>
-        <div>
-          <!-- <Card></Card> -->
-          <!-- <Card></Card> -->
+        <div class="case_minimum-viable-product-cards">
+          <Card class="background-color-silver">
+            <CardGoDeeFeature title="Live chat feature" iconName="live-chat">
+              <TextParagraph>
+                Over the time period of three months, our integrated live chat feature collected extensive feedback from users to make white-collar workers’ commutes easier.
+              </TextParagraph>
+            </CardGoDeeFeature>
+          </Card>
+          <Card class="background-color-silver">
+            <CardGoDeeFeature title="Trip request" iconName="trip-request">
+              <TextParagraph>
+                This feature enabled GoDee to analyse the actual demand for travel to various Ho Chi Minh City districts.
+              </TextParagraph>
+            </CardGoDeeFeature>
+          </Card>
         </div>
       </section>
-      <section class="container_full m-48_top media-m-24_top m-104_bottom">  <!-- Выставить оступы на мобиле -->
-        <!-- <Picture 
-          pictureFolder=""
-          fileName=""
-          fileNameRetina=""
-          fileExtension=""
-          alt=""
-          :boxShadow="false"
-          :lazyLoading="true"
-        /> -->
+      <section class="container_full case_before-after-gif-wrapper background-color-silver m-48_top media-m-24_top m-104_bottom">
+        <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="">
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom case_text-align-center">Development goals</h2> <!-- Выставить оступы на мобиле -->
@@ -79,11 +88,45 @@
           <!-- <Card></Card> -->
         </div>
       </section>
-      <section class="container_regular">
-        <div>
-          <!-- <Card></Card> -->
-          <!-- <Card></Card> -->
-          <!-- <Card></Card> -->
+      <section class="container_full background-color-black-godee p-100_top p-100_bottom media-p-48_top media-p-48_bottom">
+        <div class="container_regular">
+          <div class="case_preview-cards">
+            <div class="case_preview-cards-top-cards-wrapper">
+              <Card class="background-color-godee-black-card">
+                <CardGoDeePreview
+                  className="application-for-passengers"
+                  title="Mobile application for passengers"
+                  description="Ticket booking process is intuitive — the passenger needs to select the pick up and drop off points, choose the departure time in the schedule, and book the ticket. The most suitable route will be found automatically."
+                  pictureFolder="godee"
+                  fileName="application-for-passengers-card"
+                  fileExtension="png"
+                  alt=""
+                />
+              </Card>
+              <Card class="background-color-godee-black-card">
+                <CardGoDeePreview 
+                  className="application-for-drivers"
+                  title="Mobile applications for drivers"
+                  description="An app for drivers enables them to pick up passengers from bus stops, according to their previously booked tickets."
+                  pictureFolder="godee"
+                  fileName="application-for-drivers-card"
+                  fileExtension="png"
+                  alt=""
+                />
+              </Card>
+            </div>
+            <Card class="background-color-godee-black-card">
+              <CardGoDeePreview 
+                className="godee-admin-panel"
+                title="Intelligent management panel"
+                description="Used to create routes, get reports and map current active routes."
+                pictureFolder="godee"
+                fileName="godee-admin-panel-card"
+                fileExtension="png"
+                alt=""
+              />
+            </Card>
+          </div>
         </div>
       </section>
       <section class="container_regular">
@@ -189,7 +232,7 @@
           <span>If Pifia determines that a minibus is usually late due to increased traffic at 5:35 pm and not 5:30 pm, it alerts the route manager to shift the arrival time to 5:35 pm. Five minutes might sound minor, but these small optimizations add up.</span>
         </TextQuoteBox>
       </section>
-      <section class="container_full m-96_top m-92_bottom background-color-black-godee">
+      <section class="container_full m-96_top background-color-black-godee">
         <section class="container_regular">
           <div>
             <h2 class="case_title_h2 m-24_bottom">Route optimization</h2>
@@ -216,11 +259,11 @@
           </div>
         </section>
       </section>
-      <section class="container_regular">
-        <h2 class="case_title_h2 m-12_bottom case_text-align-center">Infrastructure scheme</h2>
-      </section>
-      <section class="container_full m-48_bottom">
-        <img src="" class="" alt="">
+      <section class="container_full case_infrastructure-scheme-wrapper  background-color-silver">
+        <section class="container_middle">
+          <h2 class="case_title_h2 m-12_bottom case_text-align-center">Infrastructure scheme</h2>
+          <img src="../../assets/img/Cases/godee/gif/infrastructure-scheme.gif" class="case_gif case_infrastructure-scheme-gif" alt="">
+        </section>
       </section>
       <section class="container_regular">
         <TextParagraph class="m-24_bottom media-m-12_bottom">
@@ -312,7 +355,7 @@
 </template>
 
 <script>
-import HeaderNambaFood from '@/components/Cases/HeaderNambaFood';
+import CaseHeader from '@/components/Cases/CaseHeader';
 import Footer from '@/components/Cases/Footer';
 import TextParagraph from '@/components/Cases/TextParagraph';
 import TextQuote from '@/components/Cases/TextQuote';
@@ -332,6 +375,8 @@ import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
 import Swiper from '@/components/Cases/Swiper';
 import CardIssuesGoDee from '@/components/Cases/cards-content/CardIssuesGoDee';
 import CardSolutionGoDee from '@/components/Cases/cards-content/CardSolutionGoDee';
+import CardGoDeeFeature from '@/components/Cases/cards-content/CardGoDeeFeature';
+import CardGoDeePreview from '@/components/Cases/cards-content/CardGoDeePreview';
 
 export default {
   components: {
@@ -352,9 +397,11 @@ export default {
     TextQuoteAuthor,
     Footer,
     Swiper,
-    HeaderNambaFood,
+    CaseHeader,
     CardIssuesGoDee,
-    CardSolutionGoDee
+    CardSolutionGoDee,
+    CardGoDeeFeature,
+    CardGoDeePreview
   },
   name: 'NambaFood',
   data() {
