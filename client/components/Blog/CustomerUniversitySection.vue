@@ -5,9 +5,9 @@
         Customer<br>
         <span>University</span>
       </div>
-      <div class="d-flex justify-content-between">
-        <div class="customer-university__featured-post w-50">
-          <router-link :to="`/blog/${master.data.featured_cu.uid}`" class="featured-post pr-2" v-if="featured">
+      <div class="customer-university__wrapper">
+        <div class="customer-university__featured-post">
+          <router-link :to="`/blog/${master.data.featured_cu.uid}`" class="featured-post" v-if="featured">
             <h6 class="featured-post__date">{{ formattedDate }}</h6>
             <h2 class="featured-post__title">{{ $prismic.asText(featured.title) }}</h2>
             <p class="featured-post__text">{{ getFirstParagraph(featured) }}</p>
@@ -17,14 +17,14 @@
             </div>
           </router-link>
         </div>
-        <div class="w-50">
-          <div class="customer-university__list-wrapper pl-2">
+        <div class="customer-university__list">
+          <div class="customer-university__list-wrapper">
             <h6 class="customer-university__list-title">Series of articles:</h6>
             <div>
               <router-link
                 :to="cluster.items.length ? `/blog/${cluster.items[0].cu_post.uid}` : ''"
-                class="customer-university__list-item single-cluster d-flex"
-                v-for="(cluster, i) in clusters"
+                class="customer-university__list-item single-cluster"
+                v-for="(cluster, i) in clustersToShow"
                 :key="i"
               >
                 <div class="single-cluster__cover-wrapper">
@@ -42,6 +42,7 @@
               <button
                 class="customer-university__list-show-more"
                 @click="showMore"
+                v-if="clusters.length > 3 && !showAll"
               >
                 Browse all series
               </button>
@@ -77,16 +78,15 @@ export default {
     this.master = master;
   },
   methods: {
-    showMore: () => {
+    showMore: function() {
       this.showAll = true;
     },
     getFirstParagraph (post) {
-      const textLimit = 150;
       const slices = post.body;
       let firstParagraph = '';
       let haveFirstParagraph = false;
 
-      slices.map(function(slice) {
+      slices.map(slice => {
         if (!haveFirstParagraph && slice.slice_type == 'text') {
           slice.primary.text.forEach(function(block){
             if (block.type == 'paragraph' && !haveFirstParagraph) {
@@ -96,23 +96,29 @@ export default {
           });
         }
       });
+      return this.sliceParagraph(firstParagraph);
+    },
+    sliceParagraph(paragraph) {
+      const textLimit = 150;
+      const limitedText = paragraph.substr(0, textLimit);
 
-      const limitedText = firstParagraph.substr(0, textLimit);
-
-      if (firstParagraph.length > textLimit) {
+      if (paragraph.length > textLimit) {
         return limitedText.substr(0, limitedText.lastIndexOf(' ')) + '...';
       } else {
-        return firstParagraph;
+        return paragraph;
       }
     }
   },
   computed: {
     clusters: function() {
-      if(!this.master.data) {
+      if (this.master.data) {
+        return this.master.data.body;
+      } else {
         return [];
       }
-
-      return this.master.data.body;
+    },
+    clustersToShow: function() {
+      return this.showAll ? this.clusters : this.clusters.slice(0, 3);
     }
   }
 };
@@ -144,10 +150,6 @@ export default {
     width: 50%;
   }
 
-  .pr-2 {
-    padding-right: 60px;
-  }
-
   .pl-2 {
     padding-left: 60px;
   }
@@ -156,6 +158,11 @@ export default {
     background-color: $text-color--black-cases;
     padding: 90px 0;
 
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
     &__title {
       font-family: 'Poppins-Bold', sans-serif;
       font-style: normal;
@@ -163,7 +170,7 @@ export default {
       font-size: 120px;
       line-height: 101%;
       letter-spacing: -0.04em;
-      -webkit-text-stroke: 1.13px #A0A0A1;
+      -webkit-text-stroke: 1.13px $text-color--grey-team-list;
       color: $text-color--black-cases;
       margin-bottom: 100px;
 
@@ -171,6 +178,18 @@ export default {
         color: $bgcolor--silver;
         -webkit-text-stroke: unset;
       }
+    }
+
+    &__featured-post {
+      width: 50%;
+    }
+
+    &__list-wrapper {
+      padding-left: 60px;
+    }
+
+    &__list {
+      width: 50%;
     }
 
     &__list-title {
@@ -204,6 +223,7 @@ export default {
   .featured-post {
     text-decoration: none;
     display: block;
+    padding-right: 60px;
 
     &__date {
       @include label;
@@ -246,6 +266,7 @@ export default {
 
   .single-cluster {
     margin-bottom: 43px;
+    display: flex;
 
     &:last-child {
       margin-bottom: 0;
@@ -260,6 +281,7 @@ export default {
         width: 52.68%;
         margin-right: 20px;
         flex-shrink: 0;
+        text-align: center;
       }
     }
 
@@ -292,17 +314,12 @@ export default {
   }
 
   @media screen and (max-width: 1024px) {
-    .w-50 {
-      width: 100%;
-    }
-
-    .pl-2,
-    .pr-2 {
-      padding: 0;
-    }
-
     .customer-university {
       padding: 34px 0 69px;
+
+      &__wrapper {
+        display: block;
+      }
 
       &__title {
         font-size: 50px;
@@ -312,19 +329,31 @@ export default {
         margin-bottom: 38px;
       }
 
+      &__list {
+        width: 100%;
+
+        &-wrapper {
+          padding-left: 0;
+        }
+
+        &-show-more {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: -0.035em;
+          width: 100%;
+          border-color: rgba(236, 28, 36, 0.4);
+        }
+      }
+
       &__featured-post,
       &__list-title {
         display: none;
       }
+    }
 
-      &__list-show-more {
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 26px;
-        letter-spacing: -0.035em;
-        width: 100%;
-        border-color: rgba(236, 28, 36, 0.4);
-      }
+    .featured-post {
+      padding-right: 0;
     }
 
     .single-cluster {
