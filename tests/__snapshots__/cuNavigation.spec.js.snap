@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<div
+  class="cluster-navigation"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="cluster-navigation__title"
+    >
+      
+    </div>
+     
+    <div
+      class="cluster-navigation__inner"
+    >
+      <div
+        class="cluster-navigation__column cluster-navigation__column--left"
+      >
+        <router-link-stub
+          class="cluster-navigation__nav-item"
+          to="/blog/cu-test"
+        >
+          
+          Chapter 1
+        
+        </router-link-stub>
+      </div>
+       
+      <div
+        class="cluster-navigation__column cluster-navigation__column--right"
+      >
+        <router-link-stub
+          class="cluster-navigation__nav-item"
+          to="/blog/cu-test-2"
+        >
+          
+          Chapter 2
+        
+        </router-link-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;
