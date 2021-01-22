@@ -65,6 +65,26 @@
     @include grid(repeat(2, 1fr), auto, 20px, 0);
   }
 
+  &_real-time-eta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_real-time-eta-title {
+    color: $text-color--silver !important;
+  }
+
+  &_real-time-eta-text-content {
+    max-width: 398px;
+    padding-right: 40px;
+  }
+
+  &_phone-wrapper-eta-section {
+    min-width: 245px;
+    min-height: 475px;
+  }
+
   @media screen and (max-width: 1250px) {
     &_header-title {
       margin-right: 80px;
@@ -90,9 +110,22 @@
   }
 
   @media screen and (max-width: 768px) {
+    &_real-time-eta {
+      flex-direction: column;
+    }
+
     &_infrastructure-scheme-wrapper {
       padding: 48px 0;
-    }  
+    }
+
+    &_phone-wrapper-eta-section {
+      width: 327px;
+      height: 633px;
+    }
+
+    &_real-time-eta-text-content {
+      margin-bottom: 24px;
+    }
   }
 
   @media screen and (max-width: 655px) {
@@ -111,6 +144,12 @@
     }
   }
 
+  @media screen and (max-width: 520px) {
+    &_real-time-eta {
+      align-items: flex-start;
+    }
+  }
+
   @media screen and (max-width: 370px) {
     &_header-description {
       max-width: 270px;
@@ -119,6 +158,11 @@
     &_godee-logo {
       width: 270px;
       margin-bottom: 10px;
+    }
+
+    &_phone-wrapper-eta-section {
+      width: 270px;
+      height: 515px;
     }
   }
 }

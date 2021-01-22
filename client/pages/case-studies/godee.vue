@@ -232,30 +232,29 @@
           <span>If Pifia determines that a minibus is usually late due to increased traffic at 5:35 pm and not 5:30 pm, it alerts the route manager to shift the arrival time to 5:35 pm. Five minutes might sound minor, but these small optimizations add up.</span>
         </TextQuoteBox>
       </section>
-      <section class="container_full m-96_top background-color-black-godee">
-        <section class="container_regular">
-          <div>
-            <h2 class="case_title_h2 m-24_bottom">Route optimization</h2>
-            <TextParagraph class="m-24_bottom media-m-12_bottom">
+      <section class="container_full m-96_top p-104_top p-100_bottom media-p-41_top media-p-24_bottom background-color-black-godee">
+        <section class="container_regular case_real-time-eta">
+          <div class="case_real-time-eta-text-content">
+            <h2 class="case_title_h2 m-24_bottom case_real-time-eta-title">Real-time ETA</h2>
+            <TextParagraph class="m-24_bottom media-m-12_bottom" color="#a0a0a1">
               In addition, Pifia shows in real time the approximate late/early departures.
             </TextParagraph>
-            <TextParagraph class="m-24_bottom media-m-12_bottom">
+            <TextParagraph class="m-24_bottom media-m-12_bottom" color="#a0a0a1">
               Thus passengers who are waiting for the ride always know whether the bus is coming late and how long it will take.
             </TextParagraph>
-            <TextParagraph>
+            <TextParagraph color="#a0a0a1">
               The information is displayed on their mobile application.
             </TextParagraph>
           </div>
-          <div>
-            <!-- <Picture 
-              pictureFolder=""
-              fileName=""
-              fileNameRetina=""
-              fileExtension=""
+          <div class="case_phone-wrapper-eta-section">
+            <Picture 
+              pictureFolder="godee"
+              fileName="real-time-eta-phone"
+              fileExtension="png"
               alt=""
               :boxShadow="false"
               :lazyLoading="true"
-            /> -->
+            />
           </div>
         </section>
       </section>
