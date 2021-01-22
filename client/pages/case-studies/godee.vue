@@ -316,7 +316,9 @@
         <TextParagraph class="m-24_bottom">
           GoDee faced the challenge of changing people’s habits. To grow the user base, we needed to create an extremely helpful and hassle-free solution that offers an alternative to expensive taxis and inconvenient motorbikes. It was also key that it be predictable, affordable and ‘green’ by design.
         </TextParagraph>
-        <!-- <Card></Card> -->
+        <Card class="background-color-orange m-118_bottom media-m-48_bottom">
+          <CardGoDeeImpact />
+        </Card>
       </section>
       <section class="container_regular m-72_bottom">
         <h2 class="case_title_h2 m-48_bottom">Meet the team</h2>
@@ -376,6 +378,7 @@ import CardIssuesGoDee from '@/components/Cases/cards-content/CardIssuesGoDee';
 import CardSolutionGoDee from '@/components/Cases/cards-content/CardSolutionGoDee';
 import CardGoDeeFeature from '@/components/Cases/cards-content/CardGoDeeFeature';
 import CardGoDeePreview from '@/components/Cases/cards-content/CardGoDeePreview';
+import CardGoDeeImpact from '@/components/Cases/cards-content/CardGoDeeImpact';
 
 export default {
   components: {
@@ -400,7 +403,8 @@ export default {
     CardIssuesGoDee,
     CardSolutionGoDee,
     CardGoDeeFeature,
-    CardGoDeePreview
+    CardGoDeePreview,
+    CardGoDeeImpact
   },
   name: 'NambaFood',
   data() {
