@@ -134,7 +134,7 @@ export default {
       font-size: 16px;
       line-height: 166%;
       letter-spacing: -0.035em;
-      color: #A0A0A1;
+      color: $text-color--grey-team-list;
       margin-bottom: 24px;
     }
 
@@ -158,7 +158,7 @@ export default {
           line-height: 27px;
           font-size: 16px;
           padding: 12px 16px 12px 20px;
-          color: #101113;
+          color: $text-color--black-cases;
 
           &--selected {
             opacity: .4;
@@ -166,23 +166,23 @@ export default {
 
           &--highlight {
             background-color: #F4F4F4;
-            color: #101113;
+            color: $text-color--black-cases;
           }
         }
 
         &__selected {
-          color: #F4F4F4;
+          color: $bgcolor--silver;
         }
       }
 
       &.vs--open {
         /deep/ .vs {
           &__dropdown-toggle {
-            background: #F4F4F4;
+            background: $bgcolor--silver;
           }
 
           &__selected {
-            color: #101113
+            color: $text-color--black-cases
           }
         }
       }
@@ -192,7 +192,7 @@ export default {
       text-align: right;
 
       a {
-        color: #f4f4f4;
+        color: $bgcolor--silver;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
@@ -201,11 +201,11 @@ export default {
         font-weight: 400;
 
         &:hover {
-          color: #EC1C24;
+          color: $text-color--red;
 
           svg {
             path {
-              fill: #EC1C24;
+              fill: $text-color--red;
             }
           }
         }
@@ -227,7 +227,7 @@ export default {
       display: inline-block;
       height: 27px;
       width: 1px;
-      background-color: #C4C4C4;
+      background-color: $bgcolor--grey-pale;
       vertical-align: middle;
       margin: 0 40px;
     }

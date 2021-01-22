@@ -1,5 +1,5 @@
 <template>
-  <div class="blog-post" :class="recommendedPosts.length || type === 'customer_university' ? 'with-recommended' : ''">
+  <div class="blog-post" :class="wrapperClass">
     <div class="blog-post__background" />
     <div class="blog-post__inner-container">
       <div class="blog-post__share">
@@ -46,7 +46,7 @@
         <slices-block :slices="slices" class="blog-post__text-container"/>
       </div>
     </div>
-    <div v-if="recommendedPosts.length !== 0" class="blog-post__recommended-posts">
+    <div v-if="showRecommended" class="blog-post__recommended-posts">
       <div class="blog-post__recommended-posts-list container">
         <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="blog-post__recommended-post">
           <recommended-blog-widget :post="recommendedPost"/>
@@ -227,9 +227,15 @@ export default {
     clusterPosts: function () {
       if (this.cluster !== null) {
         return this.cluster.items;
+      } else {
+        return null;
       }
-
-      return null;
+    },
+    wrapperClass: function () {
+      return this.recommendedPosts.length || this.type === 'customer_university' ? 'with-recommended' : '';
+    },
+    showRecommended: function () {
+      return this.type !== 'customer_university' && this.recommendedPosts.length !== 0;
     }
   }
 };
@@ -289,11 +295,6 @@ export default {
       background-color: $bgcolor--black;
       height: 683px;
     }
-
-    /*&__main-content {*/
-    /*  max-width: 680px;*/
-    /*  margin: 0 auto;*/
-    /*}*/
 
     &__inner-container {
       max-width: 680px;

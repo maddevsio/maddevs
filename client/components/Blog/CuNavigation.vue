@@ -4,12 +4,12 @@
       <div class="cluster-navigation__title">{{ $prismic.asText(cluster.primary.read_more_text) }}</div>
       <div class="cluster-navigation__inner">
         <div class="cluster-navigation__column cluster-navigation__column--left">
-          <router-link :to="`/blog/${post.cu_post.uid}`" class="cluster-navigation__nav-item" :class="post.cu_post.id === id ? 'current' : ''" v-for="post in leftColumnPosts" :key="post.cu_post.id">
+          <router-link :to="`/blog/${post.cu_post.uid}`" class="cluster-navigation__nav-item" :class="isCurrent(post)" v-for="post in leftColumnPosts" :key="post.cu_post.id">
             {{ $prismic.asText(post.chapter_name) }}
           </router-link>
         </div>
         <div class="cluster-navigation__column cluster-navigation__column--right">
-          <router-link :to="`/blog/${post.cu_post.uid}`" class="cluster-navigation__nav-item" :class="post.cu_post.id === id ? 'current' : ''" v-for="post in rightColumnPosts" :key="post.cu_post.id">
+          <router-link :to="`/blog/${post.cu_post.uid}`" class="cluster-navigation__nav-item" :class="isCurrent(post)" v-for="post in rightColumnPosts" :key="post.cu_post.id">
             {{ $prismic.asText(post.chapter_name) }}
           </router-link>
         </div>
@@ -35,6 +35,11 @@ export default {
       required: true
     }
   },
+  methods: {
+    isCurrent(post) {
+      return post.cu_post.id === this.id ? 'current' : '';
+    }
+  },
   computed: {
     leftColumnPosts: function () {
       return this.clusterPosts.slice(0, Math.ceil(this.clusterPosts.length / 2));
@@ -47,8 +52,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  @import "../../assets/styles/vars";
+
   .cluster-navigation {
-    background: #F4F4F4;
+    background: $bgcolor--silver;
     padding: 77px 0 85px;
 
     .container {
@@ -58,12 +65,12 @@ export default {
     &__title {
       font-size: 26px;
       line-height: 130%;
-      font-family: Poppins, sans-serif;
+      font-family: 'Poppins-Medium', sans-serif;
       font-style: normal;
       font-weight: 600;
       text-align: center;
       letter-spacing: -0.04em;
-      color: #232323;
+      color: $text-color--tech-label-black;
       margin-bottom: 21px;
     }
 
@@ -78,9 +85,9 @@ export default {
 
     &__nav-item {
       text-decoration: none;
-      color: #101113;
+      color: $text-color--black-cases;
       display: block;
-      background: #FFFFFF;
+      background: $bgcolor--white-primary;
       border-radius: 8px;
       font-family: Inter, sans-serif;
       font-size: 16px;
