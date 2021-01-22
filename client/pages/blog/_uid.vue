@@ -1,5 +1,5 @@
 <template>
-  <div class="blog-post" :class="recommendedPosts.length ? 'with-recommended' : ''">
+  <div class="blog-post" :class="wrapperClass">
     <div class="blog-post__background" />
     <div class="blog-post__inner-container">
       <div class="blog-post__share">
@@ -25,29 +25,40 @@
           target="_blank"
         />
       </div>
-      <div class="blog-post__introduction-container">
-        <h1 class="blog-post__blog-title title">{{ $prismic.asText(document.title) }}</h1>
-        <p class="blog-post__blog-sub-title">{{ $prismic.asText(document.subtitle) }}</p>
-        <div class="blog-post__post-info">
-          <post-author :document="document"/>
-          <div class="blog-post__date-tag">
-            <div class="blog-post__date">{{ formattedDate }}</div>
-            <div class="blog-post__tag" v-if="tags.length">{{ tags[0] }}</div>
-          </div>
-        </div>
-        <img :src="document.featured_image.url" class="blog-post__introduction-image" v-if="document.featured_image.url !== undefined">
-      </div>
+
+      <customer-university-header
+        v-if="type === 'customer_university'"
+        :document="document"
+        :id="id"
+        :postList="clusterPosts || []"
+        :clusterName="cluster ? $prismic.asText(cluster.primary.cluster_name) : ''"
+      />
+      <blog-header
+        v-else
+        :document="document"
+        :tags="tags"
+        :formattedDate="formattedDate"
+      />
+
       <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
-      <table-of-contents :content="document.table_of_contents" v-if="$prismic.asText(document.table_of_contents)"/>
-      <slices-block :slices="slices" class="blog-post__text-container"/>
+      <div class="blog-post__main-content">
+        <table-of-contents :content="document.table_of_contents" v-if="$prismic.asText(document.table_of_contents)"/>
+        <slices-block :slices="slices" class="blog-post__text-container"/>
+      </div>
     </div>
-    <div v-if="recommendedPosts.length !== 0" class="blog-post__recommended-posts">
+    <div v-if="showRecommended" class="blog-post__recommended-posts">
       <div class="blog-post__recommended-posts-list container">
         <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="blog-post__recommended-post">
           <recommended-blog-widget :post="recommendedPost"/>
         </section>
       </div>
     </div>
+    <cu-navigation
+      v-if="clusterPosts"
+      :cluster="cluster"
+      :clusterPosts="clusterPosts"
+      :id="id"
+    />
     <button class="blog-post__back-to-list" @click="scrollToTop()" v-if="buttonIsActive">
       <i/>
     </button>
@@ -57,16 +68,20 @@
 <script>
 import SlicesBlock from '@/components/Blog/SlicesBlock.vue';
 import RecommendedBlogWidget from '@//components/Blog/RecommendedBlogWidget';
-import PostAuthor from '@/components/Blog/PostAuthor';
 import TableOfContents from '@/components/Blog/TableOfContents';
+import BlogHeader from '@/components/Blog/header/Blog';
+import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity';
+import CuNavigation from '@/components/Blog/CuNavigation';
 
 export default {
   name: 'post',
   components: {
     SlicesBlock,
     RecommendedBlogWidget,
-    PostAuthor,
-    TableOfContents
+    TableOfContents,
+    BlogHeader,
+    CustomerUniversityHeader,
+    CuNavigation
   },
   data() {
     return {
@@ -75,7 +90,9 @@ export default {
       featuredImage: '',
       buttonIsActive: false,
       shareIcons: [''],
-      jsonLd: []
+      jsonLd: [],
+      type: 'post',
+      cluster: null
     };
   },
   head () {
@@ -107,10 +124,15 @@ export default {
   },
   async asyncData({ $prismic, params, error }) {
     let recommendedPosts = [];
+    let type = 'blog';
     try {
       // Query to get post content
-      const post = await $prismic.api.getByUID('post', params.uid);
-      // Query to get recomended posts
+      let post = await $prismic.api.getByUID('post', params.uid);
+      if(post === undefined) {
+        post = await $prismic.api.getByUID('customer_university', params.uid);
+        type = 'customer_university';
+      }
+      // Query to get recommended posts
       if (post.tags.length) {
         recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', [post.tags[0]]), {pageSize: 4});
         recommendedPosts = recommendedPosts.results.filter(recommendedPost => recommendedPost.uid !== post.uid);
@@ -122,11 +144,13 @@ export default {
 
       // Returns data to be used in template
       return {
+        id: post.id,
         document: post.data,
         slices: post.data.body,
         formattedDate: Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(post.data.date)),
         recommendedPosts: recommendedPosts,
-        tags: post.tags
+        tags: post.tags,
+        type
       };
     } catch (e) {
       // Returns error page
@@ -140,6 +164,9 @@ export default {
     window.addEventListener('scroll', this.shareButtonsScroll);
     window.scroll();
     this.getLdScripts();
+    if (this.type === 'customer_university') {
+      this.getClusterData();
+    }
   },
   destroyed () {
     window.removeEventListener('scroll', this.shareButtonsScroll);
@@ -188,6 +215,27 @@ export default {
           innerHTML: this.$prismic.asText(snippet.single_snippet).replaceAll(/\n ?/g, '')
         };
       });
+    },
+    getClusterData() {
+      this.$prismic.api.getSingle('cu_master')
+        .then(response => {
+          this.cluster = response.data.body.find(cluster => cluster.items.find(post => post.cu_post.id === this.id) !== undefined) || null;
+        });
+    }
+  },
+  computed: {
+    clusterPosts: function () {
+      if (this.cluster !== null) {
+        return this.cluster.items;
+      } else {
+        return null;
+      }
+    },
+    wrapperClass: function () {
+      return this.recommendedPosts.length || this.type === 'customer_university' ? 'with-recommended' : '';
+    },
+    showRecommended: function () {
+      return this.type !== 'customer_university' && this.recommendedPosts.length !== 0;
     }
   }
 };
@@ -266,58 +314,6 @@ export default {
       /deep/ p + p {
         margin-top: 24px;
       }
-    }
-
-    &__blog-sub-title {
-      margin-bottom: 36px;
-      font-family: Inter, sans-serif;
-      color: $text-color--white-primary;
-      letter-spacing: 0.2px;
-      font-size: 17px;
-      font-weight: 300;
-      line-height: 28px;
-    }
-
-    &__post-info {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 7px;
-      margin-bottom: 43px;
-
-      /deep/ .blog-post__author-image {
-        width: 30px;
-        height: 30px;
-      }
-    }
-
-    &__date-tag {
-      display: flex;
-      align-items: center;
-      font-size: 13px;
-      line-height: 22px;
-      font-family: 'Inter', sans-serif;
-      font-weight: 400;
-
-      .blog-post__date {
-        color: $text-color--grey-pale;
-      }
-
-      .blog-post__tag {
-        color: $text-color--white-transparent;
-        background: #404143;
-        border-radius: 2px;
-        padding: 4px 16px;
-        margin-left: 24px;
-      }
-    }
-
-    &__blog-title {
-      font-size: 52px;
-      line-height: 67px;
-      letter-spacing: -2px;
-      color: $text-color--white;
-      font-family: 'Poppins-Medium', sans-serif;
     }
 
     &__share {
@@ -416,12 +412,6 @@ export default {
       }
     }
 
-    &__introduction-image {
-      width: 120%;
-      margin-left: -10%;
-      height: auto;
-    }
-
     /deep/ .textslice {
       span,
       p {
@@ -493,47 +483,6 @@ export default {
 
         h1 {
           margin-top: 0;
-        }
-      }
-
-      &__introduction-container {
-        padding-top: 120px;
-        background-color: $bgcolor--black;
-      }
-
-      &__introduction-image {
-        width: 100%;
-        margin: 0;
-        vertical-align: bottom;
-      }
-
-      &__blog-title {
-        padding: 0 24px;
-        font-size: 35px;
-        line-height: 45px;
-        letter-spacing: -1px;
-      }
-
-      &__blog-sub-title {
-        padding: 0 24px;
-      }
-
-      &__post-info {
-        padding: 0 24px;
-        display: block;
-      }
-
-      &__date-tag {
-        justify-content: space-between;
-        margin-top: 19px;
-
-        .blog-post__date {
-          order: 2;
-        }
-
-        .blog-post__tag {
-          order: 1;
-          margin-left: 0;
         }
       }
 
