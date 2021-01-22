@@ -103,15 +103,10 @@ export default {
       });
     },
     currentPost: function () {
-      const currentPost = this.postList.find(post => post.cu_post.id === this.id);
-      console.log('indexOf', this.postList.indexOf(currentPost));
-      return currentPost;
+      return this.postList.find(post => post.cu_post.id === this.id);
     }
   },
   methods: {
-    /**
-     * @param selectedPost: {label 'label', value: 'value'}
-     */
     handleChange(selectedPost) {
       if(this.currentPost && this.currentPost.cu_post.uid !== selectedPost.value) {
         this.$router.push({path: `/blog/${selectedPost.value}`});
