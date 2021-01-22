@@ -59,20 +59,7 @@ exports[`customer university header component Renders correctly 1`] = `
         >
           <span
             class="arrow prev"
-          >
-            <svg
-              fill="none"
-              height="11"
-              viewBox="0 0 13 11"
-              width="13"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5.67045 11L6.54545 10.125L2.94318 6.53409H12.2727V5.28409H2.94318L6.54545 1.68182L5.67045 0.818182L0.579545 5.90909L5.67045 11Z"
-                fill="#CFCFD0"
-              />
-            </svg>
-          </span>
+          />
           
             Previous
           
@@ -90,20 +77,7 @@ exports[`customer university header component Renders correctly 1`] = `
             
           <span
             class="arrow next"
-          >
-            <svg
-              fill="none"
-              height="11"
-              viewBox="0 0 12 11"
-              width="12"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6.60227 11L11.6932 5.90909L6.60227 0.818182L5.72727 1.69318L9.32955 5.28409H0V6.53409H9.32955L5.72727 10.1364L6.60227 11Z"
-                fill="#CFCFD0"
-              />
-            </svg>
-          </span>
+          />
         </a>
       </div>
     </div>
