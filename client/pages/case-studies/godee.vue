@@ -88,11 +88,45 @@
           <!-- <Card></Card> -->
         </div>
       </section>
-      <section class="container_regular">
-        <div>
-          <!-- <Card></Card> -->
-          <!-- <Card></Card> -->
-          <!-- <Card></Card> -->
+      <section class="container_full background-color-black-godee p-100_top p-100_bottom media-p-48_top media-p-48_bottom">
+        <div class="container_regular">
+          <div class="case_preview-cards">
+            <div class="case_preview-cards-top-cards-wrapper">
+              <Card class="background-color-godee-black-card">
+                <CardGoDeePreview
+                  className="application-for-passengers"
+                  title="Mobile application for passengers"
+                  description="Ticket booking process is intuitive — the passenger needs to select the pick up and drop off points, choose the departure time in the schedule, and book the ticket. The most suitable route will be found automatically."
+                  pictureFolder="godee"
+                  fileName="application-for-passengers-card"
+                  fileExtension="png"
+                  alt=""
+                />
+              </Card>
+              <Card class="background-color-godee-black-card">
+                <CardGoDeePreview 
+                  className="application-for-drivers"
+                  title="Mobile applications for drivers"
+                  description="An app for drivers enables them to pick up passengers from bus stops, according to their previously booked tickets."
+                  pictureFolder="godee"
+                  fileName="application-for-drivers-card"
+                  fileExtension="png"
+                  alt=""
+                />
+              </Card>
+            </div>
+            <Card class="background-color-godee-black-card">
+              <CardGoDeePreview 
+                className="godee-admin-panel"
+                title="Intelligent management panel"
+                description="Used to create routes, get reports and map current active routes."
+                pictureFolder="godee"
+                fileName="godee-admin-panel-card"
+                fileExtension="png"
+                alt=""
+              />
+            </Card>
+          </div>
         </div>
       </section>
       <section class="container_regular">
@@ -342,6 +376,7 @@ import Swiper from '@/components/Cases/Swiper';
 import CardIssuesGoDee from '@/components/Cases/cards-content/CardIssuesGoDee';
 import CardSolutionGoDee from '@/components/Cases/cards-content/CardSolutionGoDee';
 import CardGoDeeFeature from '@/components/Cases/cards-content/CardGoDeeFeature';
+import CardGoDeePreview from '@/components/Cases/cards-content/CardGoDeePreview';
 
 export default {
   components: {
@@ -365,7 +400,8 @@ export default {
     CaseHeader,
     CardIssuesGoDee,
     CardSolutionGoDee,
-    CardGoDeeFeature
+    CardGoDeeFeature,
+    CardGoDeePreview
   },
   name: 'NambaFood',
   data() {
