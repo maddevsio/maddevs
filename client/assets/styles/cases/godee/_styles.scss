@@ -96,6 +96,16 @@
     height: max-content;
   }
 
+  &_monitoring-section-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 21.25px;
+    line-height: 27.62px;
+    letter-spacing: -0.02em;
+    color: $text-color--black-cases;
+  }
+
   @media screen and (max-width: 1250px) {
     &_header-title {
       margin-right: 80px;
@@ -136,6 +146,12 @@
 
     &_real-time-eta-text-content {
       margin-bottom: 24px;
+    }
+
+    &_monitoring-section-bold {
+      font-size: 18px;
+      line-height: 24.3px;
+      letter-spacing: -1px;
     }
   }
 

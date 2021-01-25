@@ -7,12 +7,11 @@
       </p>
     </CaseHeader>
     <section class="case_body">
-      <div class="case_animation_block"></div>
       <section class="container_regular">
-        <TextParagraph>
+        <TextParagraph class="m-72_top media-m-24_top">
           GoDee is a reliable way to commute in Ho Chi Minh City, Vietnam. Its shuttle buses take express routes that link the city’s major districts and popular destinations. GoDee helps riders save time, money and the planet due to its lower ecological impact.
         </TextParagraph>
-        <TextQuote class="m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom">
+        <TextQuote class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom">
           The app-based system allows users to find a route, select the time, book a seat and pay for the ride online.
         </TextQuote>
       </section>
@@ -41,7 +40,7 @@
           <CardSolutionGoDee />
         </Card>
       </section>
-      <section class="container_full m-48_top media-m-24_top m-96_bottom media-m-72_bottom">
+      <section class="container_full m-60_top media-m-24_top m-96_bottom media-m-48_bottom">
         <iframe width="100%" height="509" src="https://www.youtube.com/embed/_XCRbXmTUwI" frameborder="0" allowfullscreen></iframe>
       </section>
       <section class="container_regular m-48_bottom">
@@ -75,10 +74,11 @@
           </Card>
         </div>
       </section>
-      <section class="container_full case_before-after-gif-wrapper background-color-silver m-48_top media-m-24_top m-104_bottom">
+      <section class="container_full case_before-after-gif-wrapper background-color-silver m-48_top media-m-20_top">
         <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="">
       </section>
-      <section class="container_regular p-96_bottom">
+      <p class="case_image-description m-12_top m-104_bottom media-m-48_bottom">GoDee 2018 and GoDee now</p>
+      <section class="container_regular p-96_bottom media-p-48_bottom">
         <h2 class="case_title_h2 m-24_bottom case_text-align-center">Development goals</h2> <!-- Выставить оступы на мобиле -->
         <div class="case_development-goals">
           <div class="case_development-goals-left-column">
@@ -167,7 +167,7 @@
         </div>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-12_bottom">Intelligent management panel</h2>
+        <h2 class="case_title_h2 m-96_top media-m-48_top m-12_bottom">Intelligent management panel</h2>
         <TextParagraph>
           GoDee's rapid growth since its early stages required easy-to-scale business processes and automated route management. Although, in theory, everything can be done with an army of sales representatives and route operators, GoDee wanted to automate routine operations so it could expand to other cities and countries.
         </TextParagraph>
@@ -175,17 +175,17 @@
           One manager and one customer support representative can manage more than ~2500 trip requests per month and ~25,000  passengers per month.
         </TextQuoteBox>
         <h3 class="case_title_h3 m-12_bottom">Smart route planning</h3>
-        <TextParagraph>
+        <TextParagraph class="case_paragraph--bold">
           How can we create profitable yet convenient user routes?
         </TextParagraph>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
-          Let users send trip requests and tell you what works for them. This feature was available initially through the MVP phase, and it enables GoDee route managers to build effective routes by understanding real commuter demand.
+          Let users send <span class="case_red-text">trip requests</span> and tell you what works for them. This feature was available initially through the MVP phase, and it enables GoDee route managers to build effective routes by understanding real commuter demand.
         </TextParagraph>
         <TextParagraph>
           Inside the application, users can submit a trip request with pick-up and drop-off locations at the desired time. The request is added to the list on the managers' dashboard.
         </TextParagraph>
       </section>
-      <section class="container_middle m-48_top media-m-24_top m-48_bottom media-m-24_bottom">  <!-- Выставить оступы на мобиле -->
+      <section class="container_middle">  <!-- Выставить оступы на мобиле -->
         <!-- <Picture 
           pictureFolder=""
           fileName=""
@@ -194,8 +194,9 @@
           alt=""
           :boxShadow="false"
           :lazyLoading="true"
+          class="m-48_top media-m-24_top m-48_bottom media-m-24_bottom"
         /> -->
-        <!-- <Card></Card> -->
+        <!-- <Card class="m-48_bottom media-m-24_bottom"></Card> -->
         <!-- <Picture 
           pictureFolder=""
           fileName=""
@@ -204,6 +205,7 @@
           alt=""
           :boxShadow="false"
           :lazyLoading="true"
+          class="m-72_bottom media-m-48_bottom"
         /> -->
       </section>
       <section class="container_regular">
@@ -227,7 +229,7 @@
         <TextParagraph class="m-12_bottom">
           The Trips Monitor dashboard displays the following information:
         </TextParagraph>
-        <ListNumberedBox class="m-96_bottom"> <!-- Выставить оступы на мобиле -->
+        <ListNumberedBox class="m-96_bottom media-m-48_bottom"> <!-- Выставить оступы на мобиле -->
           <ListNumberedItemBox>
             Drivers' locations on mini map in real-time
           </ListNumberedItemBox>
@@ -249,7 +251,7 @@
         </ListNumberedBox>
         <h3 class="case_title_h3">Route optimization</h3>
       </section>
-      <section class="container_middle m-24_top m-48_bottom media-m-24_bottom">
+      <section class="container_middle m-24_top media-m-12_top m-48_bottom media-m-24_bottom">
         <!-- <Picture 
           pictureFolder=""
           fileName=""
@@ -264,12 +266,12 @@
         <TextParagraph>
           With the help of detailed drivers' performance data, Mad Devs’ Pifia microservice enables route managers to optimize ETA (estimated time of arrival). Pifia shows more accurate arrival and departure times with just one click.
         </TextParagraph>
-        <TextQuoteBox class="m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto">
+        <TextQuoteBox class="m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto">
           <span class="case_text-quote-break m-24_bottom media-m-12_bottom">Examples of early and late departure times:</span>
           <span>If Pifia determines that a minibus is usually late due to increased traffic at 5:35 pm and not 5:30 pm, it alerts the route manager to shift the arrival time to 5:35 pm. Five minutes might sound minor, but these small optimizations add up.</span>
         </TextQuoteBox>
       </section>
-      <section class="container_full m-96_top p-104_top p-100_bottom media-p-41_top media-p-24_bottom background-color-black-godee">
+      <section class="container_full p-104_top p-100_bottom media-p-41_top media-p-24_bottom background-color-black-godee">
         <section class="container_regular case_real-time-eta">
           <div class="case_real-time-eta-text-content">
             <h2 class="case_title_h2 m-24_bottom case_real-time-eta-title">Real-time ETA</h2>
@@ -295,9 +297,9 @@
           </div>
         </section>
       </section>
-      <section class="container_full case_infrastructure-scheme-wrapper  background-color-silver">
+      <section class="container_full case_infrastructure-scheme-wrapper background-color-silver m-48_bottom media-m-24_bottom">
         <section class="container_middle">
-          <h2 class="case_title_h2 m-12_bottom case_text-align-center">Infrastructure scheme</h2>
+          <h2 class="case_title_h2 m-24_bottom case_text-align-center">Infrastructure scheme</h2>
           <img src="../../assets/img/Cases/godee/gif/infrastructure-scheme.gif" class="case_gif case_infrastructure-scheme-gif" alt="">
         </section>
       </section>
@@ -311,8 +313,8 @@
         <TextParagraph class="m-72_bottom media-m-48_bottom">
           Then all information, collected and processed by these services, is controlled via the Web Admin panel, which is connected to the PostgreSQL database, OSRM, Firebase and push notification services. We use Docker containers throughout the development process.
         </TextParagraph>
-        <h3 class="case_title_h3 m-24_bottom">Technology stack</h3>
-        <ListTechnologies class="m-96_bottom">
+        <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">Technology stack</h3>
+        <ListTechnologies class="m-96_bottom media-m-48_bottom">
           <ListTechnologiesItem
             v-for="(technologiesItem, i) in technologiesList"
             :key="i"
@@ -323,14 +325,14 @@
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-12_bottom">Monitoring</h2>
-        <TextParagraph class="m-48_bottom"> <!-- Выставить оступы на мобиле -->
+        <TextParagraph class="m-48_bottom media-m-12_bottom" > <!-- Выставить оступы на мобиле -->
           We believe that every production system requires proper monitoring. For this purpose, we use the Datadog service, which allows us to discover possible issues before they affect our users.
         </TextParagraph>
-        <TextParagraph class="m-12_bottom">
+        <p class="m-12_bottom case_monitoring-section-bold">
           Here is an example of our monitoring configuration for the GoDee project:
-        </TextParagraph>
+        </p>
       </section>
-      <section class="container_middle m-96_bottom media-m-72_bottom">
+      <section class="container_middle m-96_bottom media-m-48_bottom">
         <!-- <Picture 
           pictureFolder=""
           fileName=""
@@ -357,9 +359,9 @@
           <CardGoDeeImpact />
         </Card>
       </section>
-      <section class="container_regular m-72_bottom">
-        <h2 class="case_title_h2 m-48_bottom">Meet the team</h2>
-        <ListTeam>
+      <section class="container_regular m-72_bottom media-m-48_bottom">
+        <h2 class="case_title_h2 m-48_bottom media-m-24_bottom">Meet the team</h2>
+        <ListTeam class="m-72_bottom media-m-48_bottom">
           <ListTeamItem
             v-for="(teamMember, i) in team"
             :key="i"

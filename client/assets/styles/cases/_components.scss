@@ -98,6 +98,15 @@
     z-index: 1;
   }
 
+  &_image-description {
+    text-align: center;
+    @include default_text($text-color--grey-img-description, 13px, 21.58px, -0.02em, normal);
+  }
+
+  &_red-text {
+    color: $text-color--red;
+  }
+
   @media screen and (max-width: 768px) {
     &_header-title {
       @include title($text-color--white, 35px, -1px);
