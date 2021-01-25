@@ -16,7 +16,7 @@ exports[`customer university header component Renders correctly 1`] = `
     </div>
      
     <div
-      class="col-6 mt-0"
+      class="col-12 col-lg-5 mt-0 cluster-navigation__select-wrapper"
     >
       <v-select-stub
         autocomplete="off"
@@ -49,13 +49,14 @@ exports[`customer university header component Renders correctly 1`] = `
     </div>
      
     <div
-      class="col-6 mt-0"
+      class="col-12 col-lg-7 mt-0 cluster-navigation__buttons-wrapper"
     >
       <div
         class="cluster-navigation__buttons"
       >
-        <a
-          href="#"
+        <router-link
+          class="cluster-navigation__link disabled"
+          to="#"
         >
           <span
             class="arrow prev"
@@ -63,14 +64,15 @@ exports[`customer university header component Renders correctly 1`] = `
           
             Previous
           
-        </a>
+        </router-link>
          
         <span
           class="cluster-navigation__divider"
         />
          
-        <a
-          href="#"
+        <router-link
+          class="cluster-navigation__link"
+          to="/blog/cu-test-2"
         >
           
             Next
@@ -78,7 +80,7 @@ exports[`customer university header component Renders correctly 1`] = `
           <span
             class="arrow next"
           />
-        </a>
+        </router-link>
       </div>
     </div>
   </div>
