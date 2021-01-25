@@ -63,7 +63,7 @@ export default {
     }
 
     &__name {
-      @include default_text($text-color--black-cases, 18px, 22px, -0.035em, 500);
+      @include default_text($text-color--black-cases, 18px, 22px, -0.035em, 600);
     }
 
     &__position {
@@ -85,7 +85,7 @@ export default {
       }
 
       &__name {
-        @include default_text($text-color--black-cases, 14px, 16px, -0.035em, 500);
+        @include default_text($text-color--black-cases, 14px, 16px, -0.035em, 600);
       }
 
       &__position {
