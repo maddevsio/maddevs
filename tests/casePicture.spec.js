@@ -12,7 +12,8 @@ describe('Picture', () => {
     fileExtension: 'png',
     alt: 'alt',
     lazyLoading: true,
-    boxShadow: true
+    boxShadow: true,
+    borderRadius: false
   };
 
   beforeEach(() => {
