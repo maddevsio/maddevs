@@ -7,7 +7,7 @@
     <template v-slot:beforeTitle>
       <div class="row cluster-navigation">
         <div class="cluster-navigation__name">{{clusterName}}</div>
-        <div class="col-6 mt-0">
+        <div class="col-12 col-lg-5 mt-0 cluster-navigation__select-wrapper">
           <v-select
             class="cluster-navigation__select"
             :options="postOptions"
@@ -15,20 +15,28 @@
             :clearable="false"
             :filterable="false"
             :components="{OpenIndicator}"
-            :value="currentPost ? {label: $prismic.asText(currentPost.chapter_name), value: currentPost.cu_post.uid} : {label: '', value: ''}"
+            :value="currentPost ? {label: 'Explore the chapters', value: currentPost.cu_post.uid} : {label: 'Explore the chapters', value: ''}"
           />
         </div>
-        <div class="col-6 mt-0">
+        <div class="col-12 col-lg-7 mt-0 cluster-navigation__buttons-wrapper">
           <div class="cluster-navigation__buttons">
-            <a href="#">
+            <router-link
+              :to="prevArticleUrl"
+              class="cluster-navigation__link"
+              :class="prevArticleUrl === '#' ? 'disabled' : ''"
+            >
               <span class="arrow prev"/>
               Previous
-            </a>
+            </router-link>
             <span class="cluster-navigation__divider"/>
-            <a href="#">
+            <router-link
+              :to="nextArticleUrl"
+              class="cluster-navigation__link"
+              :class="nextArticleUrl === '#' ? 'disabled' : ''"
+            >
               Next
               <span class="arrow next"/>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
@@ -96,6 +104,27 @@ export default {
     },
     currentPost: function () {
       return this.postList.find(post => post.cu_post.id === this.id);
+    },
+    nextArticleUrl: function () {
+      if (this.currentPost && this.currentPostIndex < this.postList.length - 1) {
+        return `/blog/${this.postList[this.currentPostIndex + 1].cu_post.uid}`;
+      } else {
+        return '#';
+      }
+    },
+    prevArticleUrl: function () {
+      if (this.currentPost && this.currentPostIndex > 0) {
+        return `/blog/${this.postList[this.currentPostIndex - 1].cu_post.uid}`;
+      } else {
+        return '#';
+      }
+    },
+    currentPostIndex: function () {
+      if (this.currentPost) {
+        return this.postList.indexOf(this.currentPost);
+      } else {
+        return undefined;
+      }
     }
   },
   methods: {
@@ -140,6 +169,7 @@ export default {
           padding: 0;
           top: calc(100% + 6px);
           border-radius: 4px;
+          list-style: decimal inside !important;
         }
 
         &__dropdown-option {
@@ -147,6 +177,8 @@ export default {
           font-size: 16px;
           padding: 12px 16px 12px 20px;
           color: $text-color--black-cases;
+          display: list-item;
+          white-space: normal;
 
           &--selected {
             opacity: .4;
@@ -178,39 +210,44 @@ export default {
 
     &__buttons {
       text-align: right;
+    }
 
-      a {
-        color: $bgcolor--silver;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        line-height: 166%;
-        font-family: Inter, sans-serif;
-        font-weight: 400;
+    &__link {
+      color: $bgcolor--silver;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      line-height: 166%;
+      font-family: Inter, sans-serif;
+      font-weight: 400;
 
-        &:hover {
-          color: $text-color--red;
-
-          .arrow {
-            @include arrow-icon-red;
-          }
-        }
+      &:not(.disabled):hover {
+        color: $text-color--red;
 
         .arrow {
-          @include arrow-icon;
-          display: inline-block;
-          width: 12px;
-          height: 11px;
-
-          &.prev {
-            margin-right: 10px;
-          }
-
-          &.next {
-            margin-left: 10px;
-            transform: rotate(180deg);
-          }
+          @include arrow-icon-red;
         }
+      }
+
+      .arrow {
+        @include arrow-icon;
+        display: inline-block;
+        width: 12px;
+        height: 11px;
+
+        &.prev {
+          margin-right: 10px;
+        }
+
+        &.next {
+          margin-left: 10px;
+          transform: rotate(180deg);
+        }
+      }
+
+      &.disabled {
+        opacity: 0.2;
+        cursor: default;
       }
     }
 
@@ -226,5 +263,43 @@ export default {
 
   .mt-0 {
     margin-top: 0 !important;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .cluster-navigation {
+      padding: 0 24px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .cluster-navigation {
+      margin: 0;
+
+      &__name {
+        margin-bottom: 13.5px;
+        margin-top: 0;
+        padding: 0;
+      }
+
+      &__select {
+        &-wrapper {
+          margin-bottom: 25px;
+          padding: 0;
+        }
+      }
+
+      &__buttons {
+        display: flex;
+        justify-content: space-between;
+
+        &-wrapper {
+          padding: 0;
+        }
+      }
+
+      &__divider {
+        display: none;
+      }
+    }
   }
 </style>
