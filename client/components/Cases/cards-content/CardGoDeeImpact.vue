@@ -44,13 +44,23 @@ export default {
       text-align: center;
 
       &:first-child {
-        padding-right: 4.1vw;
+        padding-right: 43px;
         border-right: 1px solid $border-color--white-03-opacity;
       }
 
       &:last-child {
-        padding-left: 4.4vw;
+        padding-left: 43px;
         border-left: 1px solid $border-color--white-03-opacity;
+      }
+
+      @media screen and (max-width: 1440px) {
+        &:first-child {
+          padding-right: 4.1vw;
+        }
+
+        &:last-child {
+          padding-left: 4.4vw;
+        }
       }
     }
 

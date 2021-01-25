@@ -21,16 +21,15 @@
           Transportation has become a major issue in Vietnam cities due to the rapid increase (36%) in urbanization. With its slow, unairconditioned, overcrowded public transport, commuters living in the suburbs were left with only 3 other alternatives: personal cars, motorbikes and taxis.
         </TextParagraph>
       </section>
-      <section class="container_full m-48_top media-m-24_top m-48_bottom media-m-24_bottom">
-        <!-- <Picture
-          pictureFolder=""
-          fileName=""
-          fileNameRetina=""
-          fileExtension=""
+      <section class="container_full case_full-screen-image m-48_top media-m-24_top m-48_bottom media-m-24_bottom">
+        <Picture
+          pictureFolder="godee"
+          fileName="issues-and-solution"
+          fileExtension="jpg"
           alt=""
           :boxShadow="false"
           :lazyLoading="true"
-        /> -->
+        />
       </section>
       <section class="container_regular">
         <Card class="case_issues-godee-card background-color-silver">
@@ -40,8 +39,8 @@
           <CardSolutionGoDee />
         </Card>
       </section>
-      <section class="container_full m-60_top media-m-24_top m-96_bottom media-m-48_bottom">
-        <iframe width="100%" height="509" src="https://www.youtube.com/embed/_XCRbXmTUwI" frameborder="0" allowfullscreen></iframe>
+      <section class="container_full case_video-wrapper m-60_top media-m-24_top m-96_bottom media-m-48_bottom">
+        <iframe width="1440" height="809" src="https://www.youtube.com/embed/_XCRbXmTUwI" frameborder="0" allowfullscreen></iframe>
       </section>
       <section class="container_regular m-48_bottom">
         <h2 class="case_title_h2 m-12_bottom">Mad Devs & GoDee collaboration </h2>
@@ -185,45 +184,47 @@
           Inside the application, users can submit a trip request with pick-up and drop-off locations at the desired time. The request is added to the list on the managers' dashboard.
         </TextParagraph>
       </section>
-      <section class="container_middle">  <!-- Выставить оступы на мобиле -->
-        <!-- <Picture 
-          pictureFolder=""
-          fileName=""
-          fileNameRetina=""
-          fileExtension=""
-          alt=""
-          :boxShadow="false"
-          :lazyLoading="true"
-          class="m-48_top media-m-24_top m-48_bottom media-m-24_bottom"
-        /> -->
-        <!-- <Card class="m-48_bottom media-m-24_bottom"></Card> -->
-        <!-- <Picture 
-          pictureFolder=""
-          fileName=""
-          fileNameRetina=""
-          fileExtension=""
-          alt=""
-          :boxShadow="false"
-          :lazyLoading="true"
-          class="m-72_bottom media-m-48_bottom"
-        /> -->
+      <section class="container_middle">
+        <div class="case_image-wrapper m-48_top media-m-24_top m-48_bottom media-m-24_bottom">
+          <Picture 
+            pictureFolder="godee"
+            fileName="godee-admin-panel"
+            fileExtension="jpg"
+            alt=""
+            :boxShadow="true"
+            :lazyLoading="true"
+            :borderRadius="true"
+          />
+        </div>
+        <Card class="m-48_bottom media-m-24_bottom"></Card>
+        <div class="case_image-wrapper m-72_bottom media-m-48_bottom">
+          <Picture 
+            pictureFolder="godee"
+            fileName="trip-request-map"
+            fileExtension="jpg"
+            alt=""
+            :boxShadow="true"
+            :lazyLoading="true"
+            :borderRadius="true"
+          />
+        </div>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-12_bottom">Trips Monitor</h2>
+        <h3 class="case_title_h3 m-12_bottom">Trips Monitor</h3>
         <TextParagraph>
           The Trips Monitor feature enables operators to track every bus in real time and collect data on late or early arrivals. More importantly, the operator can contact drivers or passengers quickly if necessary.
         </TextParagraph>
       </section>
       <section class="container_middle m-48_top media-m-24_top m-48_bottom media-m-24_bottom">
-        <!-- <Picture 
-          pictureFolder=""
-          fileName=""
-          fileNameRetina=""
-          fileExtension=""
+        <Picture 
+          pictureFolder="godee"
+          fileName="trip-monitor"
+          fileExtension="jpg"
           alt=""
-          :boxShadow="false"
+          :boxShadow="true"
           :lazyLoading="true"
-        /> -->
+          :borderRadius="true"
+        />
       </section>
       <section class="container_regular">
         <TextParagraph class="m-12_bottom">
@@ -252,15 +253,15 @@
         <h3 class="case_title_h3">Route optimization</h3>
       </section>
       <section class="container_middle m-24_top media-m-12_top m-48_bottom media-m-24_bottom">
-        <!-- <Picture 
-          pictureFolder=""
-          fileName=""
-          fileNameRetina=""
-          fileExtension=""
+        <Picture 
+          pictureFolder="godee"
+          fileName="route-optimization"
+          fileExtension="jpg"
           alt=""
-          :boxShadow="false"
+          :boxShadow="true"
           :lazyLoading="true"
-        /> -->
+          :borderRadius="true"
+        />
       </section>
       <section class="container_regular">
         <TextParagraph>
@@ -333,15 +334,14 @@
         </p>
       </section>
       <section class="container_middle m-96_bottom media-m-48_bottom">
-        <!-- <Picture 
-          pictureFolder=""
-          fileName=""
-          fileNameRetina=""
-          fileExtension=""
+        <Picture 
+          pictureFolder="godee"
+          fileName="datadog"
+          fileExtension="jpg"
           alt=""
-          :boxShadow="false"
+          :boxShadow="true"
           :lazyLoading="true"
-        /> -->
+        />
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-12_bottom">Stable & scalable solution</h2>
@@ -378,10 +378,10 @@
           class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
           authorName="Ruslan Karabukaev"
           authorPosition="Co-founder of GoDee"
-          fileName="aziza-anarbekova"
+          fileName="ruslan-karabukaev"
           fileExtension="png"
-          alt="Aziza Anarbekova Namba Food Co-Founder."
-          pictureFolder="nambafood"
+          alt=""
+          pictureFolder="godee"
         >
           We built the platforms from scratch with the Mad Devs team, who dedicatedly supported and guided us to take proper action on several ideas and requirements. We have attracted 27,000 users so far, thanks to their continuous support for improvement and development.
         </TextQuoteAuthor>
