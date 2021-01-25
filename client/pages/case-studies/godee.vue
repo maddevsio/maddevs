@@ -78,14 +78,51 @@
       <section class="container_full case_before-after-gif-wrapper background-color-silver m-48_top media-m-24_top m-104_bottom">
         <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="">
       </section>
-      <section class="container_regular">
+      <section class="container_regular p-96_bottom">
         <h2 class="case_title_h2 m-24_bottom case_text-align-center">Development goals</h2> <!-- Выставить оступы на мобиле -->
-        <div>
-          <!-- <Card></Card> -->
-          <!-- <Card></Card> -->
-          <!-- <Card></Card> -->
-          <!-- <Card></Card> -->
-          <!-- <Card></Card> -->
+        <div class="case_development-goals">
+          <div class="case_development-goals-left-column">
+            <Card class="background-color-silver">
+              <CardGoDeeFeature title="GPS" iconName="gps">
+                <TextParagraph>
+                  We use GPS data to track buses, and we have developed an algorithm that predicts bus travel/arrival time using a geocoding service that also calculates delays related to traffic jams and their severity. This predictor functionality calculates the estimated arrival time on specific routes. It allows our passengers to check whether their requested bus will arrive on time, considering traffic jams.
+                </TextParagraph>
+              </CardGoDeeFeature>
+            </Card>
+            <Card class="background-color-silver">
+              <CardGoDeeFeature title="Payment method" iconName="payment-method">
+                <TextParagraph class="m-24_bottom media-m-12_bottom">
+                  Cashless payments are becoming more popular in Vietnam, so we have integrated Stripe service into GoDee, enabling passengers to pay with credit cards easily and quickly.
+                </TextParagraph>
+                <TextParagraph>
+                  We have also developed an API for flawless third-party service integration. Visa/Mastercard, AmEx, MoMo and JCB are integrated into the GoDee user app to facilitate cashless payments.
+                </TextParagraph>
+              </CardGoDeeFeature>
+            </Card>
+          </div>
+          <div class="case_development-goals-right-column">
+            <Card class="background-color-silver">
+              <CardGoDeeFeature title="Online time-tables & live location tracking" iconName="live-location-tacking">
+                <TextParagraph>
+                  To help make the GoDee app easier to use, we created a system that tracks bus locations in real time. This means that every user can book a seat as their bus approaches their location.
+                </TextParagraph>
+              </CardGoDeeFeature>
+            </Card>
+            <Card class="background-color-silver">
+              <CardGoDeeFeature title="Referrals" iconName="referrals">
+                <TextParagraph>
+                  To add to the commuter experience, inside the GoDee application, users can share referrals and get free rides as bonuses. After receiving a referral code from a referrer, the user can input the code from the booking confirmation as a promo code and enjoy one free ride. Meanwhile, referrers also receive a reward with "an “X" number of free rides.
+                </TextParagraph>
+              </CardGoDeeFeature>
+            </Card>
+            <Card class="background-color-silver">
+              <CardGoDeeFeature title="The best possible routes" iconName="possible-routes">
+                <TextParagraph>
+                  Depending on passengers’ requests, the system allows drivers to construct the best possible routes automatically. If there are no orders from passengers, drivers will skip stops along the route.
+                </TextParagraph>
+              </CardGoDeeFeature>
+            </Card>
+          </div>
         </div>
       </section>
       <section class="container_full background-color-black-godee p-100_top p-100_bottom media-p-48_top media-p-48_bottom">

@@ -44,6 +44,26 @@ export default {
       @include trip-request;
     }
 
+    &_gps-icon {
+      @include gps;
+    }
+
+    &_live-location-tacking-icon {
+      @include live-location-tacking;
+    }
+
+    &_payment-method-icon {
+      @include payment-method;
+    }
+
+    &_referrals-icon {
+      @include referrals;
+    }
+
+    &_possible-routes-icon {
+      @include possible-routes;
+    }
+
     @media screen and (max-width: 768px) {
       &_title,
       &_icon {

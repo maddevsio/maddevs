@@ -85,6 +85,17 @@
     min-height: 475px;
   }
 
+  &_development-goals {
+    @include grid(repeat(2, 1fr), auto, 24px, 0);
+  }
+
+  &_development-goals-left-column,
+  &_development-goals-right-column {
+    display: grid;
+    grid-row-gap: 24px;
+    height: max-content;
+  }
+
   @media screen and (max-width: 1250px) {
     &_header-title {
       margin-right: 80px;
