@@ -196,7 +196,7 @@
             :borderRadius="true"
           />
         </div>
-        <Card class="m-48_bottom media-m-24_bottom"></Card>
+        <!-- <Card class="m-48_bottom media-m-24_bottom"></Card> -->
         <div class="case_image-wrapper m-72_bottom media-m-48_bottom">
           <Picture 
             pictureFolder="godee"
