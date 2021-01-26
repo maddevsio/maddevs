@@ -122,7 +122,7 @@ export default {
     setStylesForHeaderInGoDeeCase() {
       if(this.isCasePage && window.innerWidth > 991) {
         this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
-        this.logoText.style.opacity = 0 - (this.$refs.overlay.offsetHeight - this.caseBody.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
+        this.logoText.style.opacity = -1 - (this.$refs.overlay.offsetHeight - this.caseBody.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
       } else if (this.isCasePage && window.innerWidth < 991) {
         this.$refs.overlay.style.opacity = 3 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight; // Цифры 1 или 2 регулируют старт затемнения, чем больше цифра тем раньше начнеться затемнение, с тектом для логотипа работает в обратную сторону
       }
