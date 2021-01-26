@@ -136,6 +136,8 @@
                   pictureFolder="godee"
                   fileName="application-for-passengers-card"
                   fileExtension="png"
+                  :mobileImage="false"
+                  mobileImageName=""
                   alt=""
                 />
               </Card>
@@ -147,6 +149,8 @@
                   pictureFolder="godee"
                   fileName="application-for-drivers-card"
                   fileExtension="png"
+                  :mobileImage="false"
+                  mobileImageName=""
                   alt=""
                 />
               </Card>
@@ -159,6 +163,8 @@
                 pictureFolder="godee"
                 fileName="godee-admin-panel-card"
                 fileExtension="png"
+                :mobileImage="true"
+                mobileImageName="godee-admin-panel-card-mobile"
                 alt=""
               />
             </Card>
