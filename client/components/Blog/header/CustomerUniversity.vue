@@ -170,11 +170,16 @@ export default {
           top: calc(100% + 6px);
           border-radius: 4px;
           list-style: decimal inside !important;
+          width: 420px;
         }
 
         &__dropdown-option {
-          line-height: 27px;
+          font-family: Inter, sans-serif;
+          font-style: normal;
+          font-weight: normal;
           font-size: 16px;
+          line-height: 160%;
+          letter-spacing: -0.02em;
           padding: 12px 16px 12px 20px;
           color: $text-color--black-cases;
           display: list-item;
@@ -299,6 +304,16 @@ export default {
 
       &__divider {
         display: none;
+      }
+
+      &__select {
+
+        /deep/ .vs {
+
+          &__dropdown-menu {
+            width: 100%;
+          }
+        }
       }
     }
   }
