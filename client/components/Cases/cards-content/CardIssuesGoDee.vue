@@ -106,5 +106,41 @@ export default {
     &_price-number {
       @include default_text($text-color--grey-pale, 15px, 44.25px, -0.035em, normal);
     }
+
+    @media screen and (max-width: 960px) {
+      flex-direction: column;
+
+      &_card-description {
+        max-width: 100%;
+        padding-right: 0;
+        padding-bottom: 29px;
+      }
+
+      &_prices {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      &_price-item {
+        &:nth-child(3) {
+          border-top: 0;
+          border-bottom: 0;
+        }
+      }
+    }
+
+    @media screen and (max-width: 360px) {
+      &_prices-title {
+        font-size: 70px;
+        line-height: 70px;
+        letter-spacing: -1px;
+
+        span {
+          font-size: 15px;
+          line-height: 21px;
+        }
+      }
+    }
   }
 </style>

@@ -77,9 +77,9 @@
         <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="">
       </section>
       <p class="case_image-description m-12_top m-104_bottom media-m-48_bottom">GoDee 2018 and GoDee now</p>
-      <section class="container_regular p-96_bottom media-p-48_bottom">
+      <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom case_text-align-center">Development goals</h2> <!-- Выставить оступы на мобиле -->
-        <div class="case_development-goals">
+        <div class="case_development-goals p-96_bottom media-p-48_bottom">
           <div class="case_development-goals-left-column">
             <Card class="background-color-silver">
               <CardGoDeeFeature title="GPS" iconName="gps">
@@ -136,6 +136,8 @@
                   pictureFolder="godee"
                   fileName="application-for-passengers-card"
                   fileExtension="png"
+                  :mobileImage="false"
+                  mobileImageName=""
                   alt=""
                 />
               </Card>
@@ -147,6 +149,8 @@
                   pictureFolder="godee"
                   fileName="application-for-drivers-card"
                   fileExtension="png"
+                  :mobileImage="false"
+                  mobileImageName=""
                   alt=""
                 />
               </Card>
@@ -159,6 +163,8 @@
                 pictureFolder="godee"
                 fileName="godee-admin-panel-card"
                 fileExtension="png"
+                :mobileImage="true"
+                mobileImageName="godee-admin-panel-card-mobile"
                 alt=""
               />
             </Card>
@@ -418,6 +424,7 @@ import CardSolutionGoDee from '@/components/Cases/cards-content/CardSolutionGoDe
 import CardGoDeeFeature from '@/components/Cases/cards-content/CardGoDeeFeature';
 import CardGoDeePreview from '@/components/Cases/cards-content/CardGoDeePreview';
 import CardGoDeeImpact from '@/components/Cases/cards-content/CardGoDeeImpact';
+import CardGoDeePrimsAlgorithm from '@/components/Cases/cards-content/CardGoDeePrimsAlgorithm';
 
 export default {
   components: {
@@ -443,7 +450,8 @@ export default {
     CardSolutionGoDee,
     CardGoDeeFeature,
     CardGoDeePreview,
-    CardGoDeeImpact
+    CardGoDeeImpact,
+    CardGoDeePrimsAlgorithm
   },
   name: 'NambaFood',
   data() {
