@@ -201,6 +201,7 @@ export default {
       } else if(window.pageYOffset > (
         document.querySelector('.blog-post').offsetHeight
           - (document.querySelector('.blog-post__recommended-posts') ? document.querySelector('.blog-post__recommended-posts').offsetHeight : 0)
+          - (document.querySelector('.blog-post > .cluster-navigation') ? document.querySelector('.blog-post > .cluster-navigation').offsetHeight - 24 : 0)
           - document.querySelector('.blog-post__share').offsetHeight - 100
       )) {
         shareButtons.style.cssText = 'position: absolute; bottom: -100px; top: auto; left: -183px;';
@@ -297,7 +298,7 @@ export default {
     }
 
     &__inner-container {
-      max-width: 680px;
+      max-width: 818px;
       margin: -514px auto 0;
       position: relative;
 
@@ -316,10 +317,15 @@ export default {
       }
     }
 
+    &__main-content {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
     &__share {
       display: flex;
       position: fixed;
-      left: calc(50vw - 531px);
+      left: calc(50vw - 599px);
       top: 750px;
       flex-direction: column;
       margin-top: 0;

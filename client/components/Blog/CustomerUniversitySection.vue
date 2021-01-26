@@ -168,15 +168,15 @@ export default {
       font-style: normal;
       font-weight: bold;
       font-size: 120px;
-      line-height: 101%;
+      line-height: 96%;
       letter-spacing: -0.04em;
       -webkit-text-stroke: 1.13px $text-color--grey-team-list;
       color: $text-color--black-cases;
-      margin-bottom: 100px;
+      margin-bottom: 78px;
 
       span {
         color: $bgcolor--silver;
-        -webkit-text-stroke: unset;
+        -webkit-text-stroke: 0;
       }
     }
 
@@ -203,7 +203,7 @@ export default {
       font-size: 16px;
       line-height: 26px;
       letter-spacing: -0.035em;
-      width: 52.68%;
+      width: 100%;
       padding: 12px;
       color: $text-color--red;
       border: 1px solid $text-color--red;

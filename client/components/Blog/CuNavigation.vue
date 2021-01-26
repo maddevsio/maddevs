@@ -57,6 +57,7 @@ export default {
   .cluster-navigation {
     background: $bgcolor--silver;
     padding: 77px 0 85px;
+    margin-top: 72px;
 
     .container {
       max-width: 924px;
@@ -100,6 +101,24 @@ export default {
       &.current {
         opacity: 0.5;
         cursor: default;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .cluster-navigation {
+      padding: 32px 0 39px;
+
+      &__title {
+        margin-bottom: 22px;
+      }
+
+      &__inner {
+        display: block;
+      }
+
+      &__column {
+        width: 100%;
       }
     }
   }
