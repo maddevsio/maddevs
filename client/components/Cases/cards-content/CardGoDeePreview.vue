@@ -100,6 +100,23 @@ export default {
       margin: 10px auto -32px;
     }
 
+    @media screen and (max-width: 825px) {
+      align-items: center;
+      text-align: center;
+
+      &_image-wrapper {
+        max-width: 306px;
+      }
+
+      &_image-wrapper-application-for-passengers {
+        margin-bottom: -51px;
+      }
+
+      &_image-wrapper-application-for-drivers {
+        margin-bottom: -127px;
+      }
+    }
+
     @media screen and (max-width: 768px) {
       &_title {
         margin-bottom: 8px;

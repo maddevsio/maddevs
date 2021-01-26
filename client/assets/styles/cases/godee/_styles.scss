@@ -160,6 +160,12 @@
     } 
   }
 
+  @media screen and (max-width: 825px) {
+    &_preview-cards-top-cards-wrapper {
+      @include grid(repeat(1, 1fr), auto, 0, 20px);
+    }
+  }
+
   @media screen and (max-width: 768px) {
     &_real-time-eta {
       flex-direction: column;

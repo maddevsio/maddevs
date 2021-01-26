@@ -63,6 +63,7 @@ export default {
   &_header {
     display: flex;
     flex-direction: row;
+    background-color: $bgcolor--black-opacity-07;
 
     &:after {
       display: none;

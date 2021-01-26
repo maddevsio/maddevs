@@ -196,7 +196,7 @@
             :borderRadius="true"
           />
         </div>
-        <Card class="m-48_bottom media-m-24_bottom"></Card>
+        <CardGoDeePrimsAlgorithm class="m-48_bottom media-m-24_bottom"></CardGoDeePrimsAlgorithm>
         <div class="case_image-wrapper m-72_bottom media-m-48_bottom">
           <Picture 
             pictureFolder="godee"
@@ -418,6 +418,7 @@ import CardSolutionGoDee from '@/components/Cases/cards-content/CardSolutionGoDe
 import CardGoDeeFeature from '@/components/Cases/cards-content/CardGoDeeFeature';
 import CardGoDeePreview from '@/components/Cases/cards-content/CardGoDeePreview';
 import CardGoDeeImpact from '@/components/Cases/cards-content/CardGoDeeImpact';
+import CardGoDeePrimsAlgorithm from '@/components/Cases/cards-content/CardGoDeePrimsAlgorithm';
 
 export default {
   components: {
@@ -443,7 +444,8 @@ export default {
     CardSolutionGoDee,
     CardGoDeeFeature,
     CardGoDeePreview,
-    CardGoDeeImpact
+    CardGoDeeImpact,
+    CardGoDeePrimsAlgorithm
   },
   name: 'NambaFood',
   data() {
