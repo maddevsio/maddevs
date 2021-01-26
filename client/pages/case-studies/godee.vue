@@ -77,9 +77,9 @@
         <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="">
       </section>
       <p class="case_image-description m-12_top m-104_bottom media-m-48_bottom">GoDee 2018 and GoDee now</p>
-      <section class="container_regular p-96_bottom media-p-48_bottom">
+      <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom case_text-align-center">Development goals</h2> <!-- Выставить оступы на мобиле -->
-        <div class="case_development-goals">
+        <div class="case_development-goals p-96_bottom media-p-48_bottom">
           <div class="case_development-goals-left-column">
             <Card class="background-color-silver">
               <CardGoDeeFeature title="GPS" iconName="gps">

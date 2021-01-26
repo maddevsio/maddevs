@@ -155,9 +155,15 @@
   }
 
   @media screen and (max-width: 880px) {
-    &_minimum-viable-product-cards {
+    &_minimum-viable-product-cards,
+    &_development-goals {
       @include grid(repeat(1, 1fr), auto, 0, 20px);
     } 
+
+    &_development-goals-left-column,
+    &_development-goals-right-column {
+      grid-row-gap: 20px;
+    }
   }
 
   @media screen and (max-width: 825px) {
