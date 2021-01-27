@@ -4,13 +4,15 @@
       <div class="cluster-navigation__title">{{ $prismic.asText(cluster.primary.read_more_text) }}</div>
       <div class="cluster-navigation__inner">
         <ol class="cluster-navigation__column cluster-navigation__column--left">
-          <router-link :to="`/blog/${post.cu_post.uid}`" class="cluster-navigation__nav-item" :class="isCurrent(post)" v-for="post in leftColumnPosts" :key="post.cu_post.id">
-            {{ $prismic.asText(post.chapter_name) }}
+          <router-link :to="`/blog/${post.cu_post.uid}`" class="cluster-navigation__nav-item" :class="isCurrent(post)" v-for="(post, index) in leftColumnPosts" :key="post.cu_post.id">
+            <div class="index">{{++index}}.</div>
+            <div class="label">{{ $prismic.asText(post.chapter_name) }}</div>
           </router-link>
         </ol>
         <ol class="cluster-navigation__column cluster-navigation__column--right" :start="leftColumnPosts.length + 1">
-          <router-link :to="`/blog/${post.cu_post.uid}`" class="cluster-navigation__nav-item" :class="isCurrent(post)" v-for="post in rightColumnPosts" :key="post.cu_post.id">
-            {{ $prismic.asText(post.chapter_name) }}
+          <router-link :to="`/blog/${post.cu_post.uid}`" class="cluster-navigation__nav-item" :class="isCurrent(post)" v-for="(post, index) in rightColumnPosts" :key="post.cu_post.id">
+            <span class="index">{{++index + leftColumnPosts.length}}.</span>
+            <div class="label">{{ $prismic.asText(post.chapter_name) }}</div>
           </router-link>
         </ol>
       </div>
@@ -89,7 +91,7 @@ export default {
     &__nav-item {
       text-decoration: none;
       color: $text-color--black-cases;
-      display: list-item;
+      display: flex;
       background: $bgcolor--white-primary;
       border-radius: 8px;
       font-family: Inter, sans-serif;
@@ -108,6 +110,18 @@ export default {
       &.current {
         opacity: 0.5;
         cursor: default;
+      }
+
+      .index {
+        margin-right: 10px;
+      }
+
+      .label {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
   }
