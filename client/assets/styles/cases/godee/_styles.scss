@@ -48,7 +48,13 @@
     padding: 50px 0;
 
     @media screen and (max-width: 995px) {
-      padding: 3.47vw 0;
+      padding-top: 31px;
+      padding-bottom: 38px;
+    }
+
+    @media screen and (max-width: 360px) {
+      padding-top: 21px;
+      padding-bottom: 38px;
     }
   }
 
@@ -195,6 +201,10 @@
       line-height: 24.3px;
       letter-spacing: -1px;
     }
+
+    &_issues-godee-card {
+      margin-bottom: 12px;
+    }  
   }
 
   @media screen and (max-width: 655px) {
@@ -214,6 +224,12 @@
   }
 
   @media screen and (max-width: 520px) {
+    &_mobile-screen-break {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
     &_real-time-eta {
       align-items: flex-start;
     }
