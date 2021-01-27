@@ -249,7 +249,7 @@ export default {
       line-height: 166%;
       letter-spacing: -0.035em;
       margin-bottom: 24px;
-      color: $text-color--grey-cases;
+      color: $text-color--grey-pale;
     }
 
     &__cover {
@@ -304,7 +304,7 @@ export default {
       font-size: 16px;
       line-height: 166%;
       letter-spacing: -0.035em;
-      color: $text-color--grey-cases;
+      color: $text-color--grey-pale;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;

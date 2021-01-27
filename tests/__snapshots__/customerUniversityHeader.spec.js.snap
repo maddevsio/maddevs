@@ -39,7 +39,6 @@ exports[`customer university header component Renders correctly 1`] = `
         options="[object Object],[object Object]"
         placeholder=""
         reduce="function(t){return t}"
-        searchable="true"
         searchinputqueryselector="[type=search]"
         selectable="function(t){return!0}"
         selectonkeycodes="13"
@@ -54,7 +53,7 @@ exports[`customer university header component Renders correctly 1`] = `
       <div
         class="cluster-navigation__buttons"
       >
-        <router-link
+        <router-link-stub
           class="cluster-navigation__link disabled"
           to="#"
         >
@@ -64,13 +63,13 @@ exports[`customer university header component Renders correctly 1`] = `
           
             Previous
           
-        </router-link>
+        </router-link-stub>
          
         <span
           class="cluster-navigation__divider"
         />
          
-        <router-link
+        <router-link-stub
           class="cluster-navigation__link"
           to="/blog/cu-test-2"
         >
@@ -80,7 +79,7 @@ exports[`customer university header component Renders correctly 1`] = `
           <span
             class="arrow next"
           />
-        </router-link>
+        </router-link-stub>
       </div>
     </div>
   </div>

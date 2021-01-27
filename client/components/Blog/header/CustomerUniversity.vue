@@ -14,6 +14,7 @@
             @option:selected="handleChange"
             :clearable="false"
             :filterable="false"
+            :searchable="false"
             :components="{OpenIndicator}"
             :value="currentPost ? {label: 'Explore the chapters', value: currentPost.cu_post.uid} : {label: 'Explore the chapters', value: ''}"
           />
@@ -169,8 +170,9 @@ export default {
           padding: 0;
           top: calc(100% + 6px);
           border-radius: 4px;
-          list-style: decimal inside !important;
+          list-style: decimal !important;
           width: 420px;
+          padding-left: 38px;
         }
 
         &__dropdown-option {
@@ -180,18 +182,34 @@ export default {
           font-size: 16px;
           line-height: 160%;
           letter-spacing: -0.02em;
-          padding: 12px 16px 12px 20px;
+          padding: 12px 16px 12px 10px;
           color: $text-color--black-cases;
           display: list-item;
           white-space: normal;
+          position: relative;
+
+          &:before {
+            content: '';
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: calc(100% + 40px);
+            background: #F4F4F4;
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+          }
 
           &--selected {
             opacity: .4;
           }
 
           &--highlight {
-            background-color: #F4F4F4;
-            color: $text-color--black-cases;
+            background-color: transparent;
+          }
+
+          &--highlight:before {
+            opacity: 1;
           }
         }
 
