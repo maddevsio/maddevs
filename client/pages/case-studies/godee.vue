@@ -49,7 +49,7 @@
         </TextParagraph>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-12_bottom">Minimum viable product MVP</h2>
+        <h3 class="case_title_h3 m-12_bottom">Minimum viable product MVP</h3>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           Before investing a considerable amount of money in building software, hiring personnel and acquiring minibuses, GoDee wanted to develop an MVP to understand the market fit potential.
         </TextParagraph>
@@ -191,7 +191,7 @@
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <div class="case_image-wrapper m-48_top media-m-24_top m-48_bottom media-m-24_bottom">
+        <div class="case_image-wrapper m-48_top media-m-24_top m-60_bottom media-m-24_bottom">
           <Picture 
             pictureFolder="godee"
             fileName="godee-admin-panel"
@@ -202,7 +202,7 @@
             :borderRadius="true"
           />
         </div>
-        <!-- <Card class="m-48_bottom media-m-24_bottom"></Card> -->
+        <!-- <CardGoDeePrimsAlgorithm class="m-48_bottom media-m-24_bottom"/> -->
         <div class="case_image-wrapper m-72_bottom media-m-48_bottom">
           <Picture 
             pictureFolder="godee"
@@ -236,7 +236,7 @@
         <TextParagraph class="m-12_bottom">
           The Trips Monitor dashboard displays the following information:
         </TextParagraph>
-        <ListNumberedBox class="m-96_bottom media-m-48_bottom"> <!-- Выставить оступы на мобиле -->
+        <ListNumberedBox class="m-96_bottom media-m-48_bottom">
           <ListNumberedItemBox>
             Drivers' locations on mini map in real-time
           </ListNumberedItemBox>
@@ -281,7 +281,7 @@
       <section class="container_full p-104_top p-100_bottom media-p-41_top media-p-24_bottom background-color-black-godee">
         <section class="container_regular case_real-time-eta">
           <div class="case_real-time-eta-text-content">
-            <h2 class="case_title_h2 m-24_bottom case_real-time-eta-title">Real-time ETA</h2>
+            <h2 class="case_title_h2 m-24_bottom media-m-8_bottom case_real-time-eta-title">Real-time ETA</h2>
             <TextParagraph class="m-24_bottom media-m-12_bottom" color="#a0a0a1">
               In addition, Pifia shows in real time the approximate late/early departures.
             </TextParagraph>

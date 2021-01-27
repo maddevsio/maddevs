@@ -161,11 +161,11 @@
   },
   {
     "from": "/linuxkit-as-a-ecs-instance-with-terraform-31a33116dbe2",
-    "to": "https://maddevs.io/blog/linuxkit-as-a-ecs-instance-with-terraform"
+    "to": "https://maddevs.io/blog/linuxkit-as-an-ecs-instance-with-terraform/"
   },
   {
     "from": "/linuxkit-as-a-ecs-instance-with-terraform-31a33116dbe2?source=friends_link&sk=7df0870df90d861a5987e6b5797c7994",
-    "to": "https://maddevs.io/blog/linuxkit-as-a-ecs-instance-with-terraform"
+    "to": "https://maddevs.io/blog/linuxkit-as-an-ecs-instance-with-terraform/"
   },
   {
     "from": "/how-we-built-a-failover-architecture-for-a-taxi-service-part-3-the-end-78b2215caa08",
@@ -225,11 +225,11 @@
   },
   {
     "from": "/comedian-17b0bb0ae8c7",
-    "to": "https://maddevs.io/blog/comedian"
+    "to": "https://maddevs.io/blog/comedian-slack-standup-bot/"
   },
   {
     "from": "/comedian-17b0bb0ae8c7?source=friends_link&sk=da0f6ed251fbc86a219da51eb28d92c4",
-    "to": "https://maddevs.io/blog/comedian"
+    "to": "https://maddevs.io/blog/comedian-slack-standup-bot/"
   },
   {
     "from": "/go-rest-or-grpc-5eace88499bd",
@@ -433,11 +433,11 @@
   },
   {
     "from": "/introduction-to-pcb-prototyping-with-easyeda-part-i-project-creation-143563311253",
-    "to": "https://maddevs.io/blog/introduction-to-pcb-prototyping-with-easyeda-part-1-project-creation"
+    "to": "https://maddevs.io/blog/introduction-to-pcb-prototyping-with-easyeda-part-i-project-creation"
   },
   {
     "from": "/introduction-to-pcb-prototyping-with-easyeda-part-i-project-creation-143563311253?source=friends_link&sk=27d475755a3259416bb9e91baa3b8f49",
-    "to": "https://maddevs.io/blog/introduction-to-pcb-prototyping-with-easyeda-part-1-project-creation"
+    "to": "https://maddevs.io/blog/introduction-to-pcb-prototyping-with-easyeda-part-i-project-creation"
   },
   {
     "from": "/introduction-to-prototyping-with-easyeda-part-ii-simple-schematic-fecafe9839c7",
@@ -521,11 +521,11 @@
   },
   {
     "from": "/integration-of-stripe-connect-926daa2978d5",
-    "to": "https://maddevs.io/blog/integration-of-stripe-connect"
+    "to": "https://maddevs.io/blog/integration-of-stripe-connect-into-your-project"
   },
   {
     "from": "/integration-of-stripe-connect-926daa2978d5?source=friends_link&sk=66b3f5d21d2a575b98ced7babae9e8e5",
-    "to": "https://maddevs.io/blog/integration-of-stripe-connect"
+    "to": "https://maddevs.io/blog/integration-of-stripe-connect-into-your-project"
   },
   {
     "from": "/progressive-web-apps-practical-usage-guide-8f9ddfea1cb3",
@@ -665,11 +665,11 @@
   },
   {
     "from": "/devops-engineers-in-mad-devs-449ded5221b6",
-    "to": "https://maddevs.io/blog/devops-engineers-in-mad-devs"
+    "to": "https://maddevs.io/blog/mad-devs-devops"
   },
   {
     "from": "/devops-engineers-in-mad-devs-449ded5221b6?source=friends_link&sk=2e0fa9326c958eddd0839178752f384e",
-    "to": "https://maddevs.io/blog/devops-engineers-in-mad-devs"
+    "to": "https://maddevs.io/blog/mad-devs-devops"
   },
   {
     "from": "/healthy-conflicts-in-software-development-projects-75e0cd63894c",
@@ -1488,12 +1488,36 @@
     "to": "https://medium.com/maddevs-io/mad-devs-ishet-middle-python-developer-bd01875e9afa"
   },
   {
-    "from": "/middle-it-recruiter-941248482416",
-    "to": "https://edium.com/maddevs-io/middle-it-recruiter-941248482416"
-  },
-  {
     "from": "/middle-and-senior-android-developer-cc4fa2c61708",
     "to": "https://medium.com/maddevs-io/middle-and-senior-android-developer-cc4fa2c61708"
+  },
+  {
+    "from": "/middle-python-developer",
+    "to": "https://maddevs.io/blog/middle-python-developer"
+  },
+  {
+    "from": "/middle-android-developer",
+    "to": "https://maddevs.io/blog/middle-android-developer"
+  },
+  {
+    "from": "/senior-android-developer",
+    "to": "https://maddevs.io/blog/senior-android-developer"
+  },
+  {
+    "from": "/senior-ios-developer",
+    "to": "https://maddevs.io/blog/senior-ios-developer"
+  },
+  {
+    "from": "/middle-ios-developer",
+    "to": "https://maddevs.io/blog/middle-ios-developer"
+  },
+  {
+    "from": "/mad-devs-devops",
+    "to": "https://maddevs.io/blog/mad-devs-devops"
+  },
+  {
+    "from": "/middle-it-recruiter-941248482416",
+    "to": "https://maddevs.io/blog/it-recruiter-middle-maddevs"
   },
   {
     "from": "/middle-and-senior-ios-developers-f5eb41be694d",

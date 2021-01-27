@@ -79,8 +79,6 @@ export default {
 
     &__column {
       width: 49.46%;
-      list-style: inside decimal;
-      padding: 0;
     }
 
     &__inner {
@@ -101,11 +99,6 @@ export default {
       margin-bottom: 11px;
       padding: 16px;
       min-height: 48px;
-      border: 1px solid transparent;
-
-      &:not(.current):hover {
-        border: 1px solid $text-color--grey-pale;
-      }
 
       &.current {
         opacity: 0.5;
