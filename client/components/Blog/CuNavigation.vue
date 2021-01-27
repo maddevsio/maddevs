@@ -3,16 +3,16 @@
     <div class="container">
       <div class="cluster-navigation__title">{{ $prismic.asText(cluster.primary.read_more_text) }}</div>
       <div class="cluster-navigation__inner">
-        <div class="cluster-navigation__column cluster-navigation__column--left">
+        <ol class="cluster-navigation__column cluster-navigation__column--left">
           <router-link :to="`/blog/${post.cu_post.uid}`" class="cluster-navigation__nav-item" :class="isCurrent(post)" v-for="post in leftColumnPosts" :key="post.cu_post.id">
             {{ $prismic.asText(post.chapter_name) }}
           </router-link>
-        </div>
-        <div class="cluster-navigation__column cluster-navigation__column--right">
+        </ol>
+        <ol class="cluster-navigation__column cluster-navigation__column--right" :start="leftColumnPosts.length + 1">
           <router-link :to="`/blog/${post.cu_post.uid}`" class="cluster-navigation__nav-item" :class="isCurrent(post)" v-for="post in rightColumnPosts" :key="post.cu_post.id">
             {{ $prismic.asText(post.chapter_name) }}
           </router-link>
-        </div>
+        </ol>
       </div>
     </div>
   </div>
@@ -77,6 +77,8 @@ export default {
 
     &__column {
       width: 49.46%;
+      list-style: inside decimal;
+      padding: 0;
     }
 
     &__inner {
@@ -87,7 +89,7 @@ export default {
     &__nav-item {
       text-decoration: none;
       color: $text-color--black-cases;
-      display: block;
+      display: list-item;
       background: $bgcolor--white-primary;
       border-radius: 8px;
       font-family: Inter, sans-serif;
@@ -97,6 +99,11 @@ export default {
       margin-bottom: 11px;
       padding: 16px;
       min-height: 48px;
+      border: 1px solid transparent;
+
+      &:not(.current):hover {
+        border: 1px solid $text-color--grey-pale;
+      }
 
       &.current {
         opacity: 0.5;
