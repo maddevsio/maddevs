@@ -23,9 +23,17 @@ exports[`Renders correctly 1`] = `
           class="cluster-navigation__nav-item"
           to="/blog/cu-test"
         >
-          
-          Chapter 1
-        
+          <div
+            class="index"
+          >
+            1.
+          </div>
+           
+          <div
+            class="label"
+          >
+            Chapter 1
+          </div>
         </router-link-stub>
       </ol>
        
@@ -37,9 +45,17 @@ exports[`Renders correctly 1`] = `
           class="cluster-navigation__nav-item"
           to="/blog/cu-test-2"
         >
-          
-          Chapter 2
-        
+          <span
+            class="index"
+          >
+            2.
+          </span>
+           
+          <div
+            class="label"
+          >
+            Chapter 2
+          </div>
         </router-link-stub>
       </ol>
     </div>

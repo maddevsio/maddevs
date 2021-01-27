@@ -39,7 +39,6 @@ exports[`customer university header component Renders correctly 1`] = `
         options="[object Object],[object Object]"
         placeholder=""
         reduce="function(t){return t}"
-        searchable="true"
         searchinputqueryselector="[type=search]"
         selectable="function(t){return!0}"
         selectonkeycodes="13"
