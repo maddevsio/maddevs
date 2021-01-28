@@ -23,7 +23,7 @@ export default {
     },
     coverImageUrl: {
       type: String,
-      required: true
+      default: ''
     }
   }
 };

@@ -76,7 +76,7 @@ describe('customer university header component', () => {
         }
       },
       propsData,
-      stubs: ['v-select', 'common-header']
+      stubs: ['v-select', 'common-header', 'router-link']
     });
   });
 
