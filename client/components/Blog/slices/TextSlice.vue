@@ -83,9 +83,9 @@ export default {
 
     /deep/ a {
       text-decoration: underline;
-      color: $text-color--black-cases;
-      font-family: 'Inter', sans-serif;
-      font-weight: 400;
+      color: inherit;
+      font-family: inherit;
+      font-weight: inherit;
     }
 
     /deep/ img {
