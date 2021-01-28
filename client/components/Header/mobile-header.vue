@@ -132,9 +132,13 @@ export default {
         this.caseBody = document.getElementsByClassName('case_body')[0];
         this.caseRoot = document.getElementsByClassName('main')[0];
         this.caseRoot.addEventListener('scroll', () => this.scrollHandlerGodeeCase());
-        this.setHeaderWidth();
       }
     }
+  },
+  destroyed() {
+    window.removeEventListener('scroll', () => this.scrollHandler());
+    window.addEventListener('resize', () => this.resizeHandler());
+    this.caseRoot.removeEventListener('scroll', () => this.scrollHandlerGodeeCase());
   },
   methods: {
     toggleMobileHeader() {
@@ -186,15 +190,6 @@ export default {
         const opacityTextLogo = 0 - (this.overlay.offsetHeight - this.caseBody.getBoundingClientRect().top) / this.overlay.offsetHeight;
         this.logoText.style.opacity = opacityTextLogo;
       }
-    },
-    setHeaderWidth() {
-      if(window.innerWidth < 991) {
-        this.resizeHandler(this.caseRoot.clientWidth);
-        window.addEventListener('resize', () => this.resizeHandler(this.caseRoot.clientWidth));
-      }
-    },
-    resizeHandler(currentWidth) {
-      this.$refs.mobileHeader.style.width = `${currentWidth}px`;
     }
   }
 };
