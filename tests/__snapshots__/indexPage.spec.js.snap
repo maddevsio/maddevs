@@ -963,8 +963,8 @@ exports[`Index page renders correctly 1`] = `
         </a>
         <a
           class="single-project"
-          href="https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f?source=friends_link&sk=0f492513f43ce5b4330c3cfa484378c5"
-          style="background: rgb(86, 68, 142);"
+          href="/case-studies/sir-john-monash-centre"
+          style="background: rgb(34, 31, 32);"
           target="_blank"
         >
           <div
@@ -974,14 +974,14 @@ exports[`Index page renders correctly 1`] = `
               class="single-project__content-wrap"
             >
               <span
-                class="single-project__logo-bg single-project__logo-bg--teacherlyColored"
+                class="single-project__logo-bg single-project__logo-bg--sjmcIcon"
               />
                
               <h3
                 class="single-project__sub-title"
               >
                 
-        EdTech collaboration platform
+        National WWII Multimedia Centre
       
               </h3>
                
@@ -989,7 +989,7 @@ exports[`Index page renders correctly 1`] = `
                 class="single-project__paragraph paragraph"
               >
                 
-        Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform.
+        Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.
       
               </p>
                
@@ -1034,7 +1034,7 @@ exports[`Index page renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="teacherlyBackground"
+                  alt="sjmcBackground"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
@@ -1315,8 +1315,8 @@ exports[`Index page renders correctly 1`] = `
           >
             <a
               class="single-project"
-              href="https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f?source=friends_link&sk=0f492513f43ce5b4330c3cfa484378c5"
-              style="background: rgb(86, 68, 142);"
+              href="/case-studies/sir-john-monash-centre"
+              style="background: rgb(34, 31, 32);"
               target="_blank"
             >
               <div
@@ -1326,14 +1326,14 @@ exports[`Index page renders correctly 1`] = `
                   class="single-project__content-wrap"
                 >
                   <span
-                    class="single-project__logo-bg single-project__logo-bg--teacherlyColored"
+                    class="single-project__logo-bg single-project__logo-bg--sjmcIcon"
                   />
                    
                   <h3
                     class="single-project__sub-title"
                   >
                     
-        EdTech collaboration platform
+        National WWII Multimedia Centre
       
                   </h3>
                    
@@ -1341,7 +1341,7 @@ exports[`Index page renders correctly 1`] = `
                     class="single-project__paragraph paragraph"
                   >
                     
-        Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform.
+        Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.
       
                   </p>
                    
@@ -1386,7 +1386,7 @@ exports[`Index page renders correctly 1`] = `
                     />
                      
                     <img
-                      alt="teacherlyBackground"
+                      alt="sjmcBackground"
                       loading="lazy"
                       src="[object Object]"
                       srcset="[object Object] 2x"
