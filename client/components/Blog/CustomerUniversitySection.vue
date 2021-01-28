@@ -237,7 +237,7 @@ export default {
       line-height: 130%;
       letter-spacing: -0.04em;
       font-feature-settings: 'zero' on, 'ordn' on, 'ss02' on, 'ss05' on;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
       color: $text-color--white-primary;
     }
 
@@ -248,7 +248,7 @@ export default {
       font-size: 16px;
       line-height: 166%;
       letter-spacing: -0.035em;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
       color: $text-color--grey-pale;
     }
 
@@ -258,14 +258,14 @@ export default {
       vertical-align: middle;
 
       &-wrapper {
-        margin-top: 29px;
+        margin-top: 33px;
         text-align: center;
       }
     }
   }
 
   .single-cluster {
-    margin-bottom: 43px;
+    margin-bottom: 31px;
     display: flex;
 
     &:last-child {
