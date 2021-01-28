@@ -57,7 +57,7 @@ export default {
       caseMoreButton: null,
       caseHeader: null,
       logoText: null,
-      caseBody: null,
+      caseFirstSection: null,
       caseRoot: null
     };
   },
@@ -74,7 +74,7 @@ export default {
         this.getScrollTop();
         window.addEventListener('scroll', () => this.scrollHandler());
       } else if(this.$nuxt.$route.path.includes('/godee')) {
-        this.caseBody = document.getElementsByClassName('case_body')[0];
+        this.caseFirstSection = document.getElementsByClassName('case_first-section')[0];
         this.caseRoot = document.getElementsByClassName('main')[0];
         this.caseRoot.addEventListener('scroll', () => this.scrollHandlerGodeeCase());
         this.setHeaderWidth();
@@ -128,7 +128,7 @@ export default {
     setStylesForHeaderInGoDeeCase() {
       if(this.isCasePage && window.innerWidth > 991) {
         this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (this.caseRoot.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
-        this.logoText.style.opacity = -1 - (this.$refs.overlay.offsetHeight - this.caseBody.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
+        this.logoText.style.opacity = -1 - (this.$refs.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
       } else if (this.isCasePage && window.innerWidth < 991) {
         this.$refs.overlay.style.opacity = 3 - (this.$refs.overlay.offsetHeight - (this.caseRoot.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight; // Цифры 1 или 2 регулируют старт затемнения, чем больше цифра тем раньше начнеться затемнение, с тектом для логотипа работает в обратную сторону
       }

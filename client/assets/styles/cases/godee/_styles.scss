@@ -136,32 +136,33 @@ body {
     overflow-y: auto;
     perspective: 300px;
   }
-  
+
   &_parallax-container {
-    overflow: hidden;
     height: 576px;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    transform-style: preserve-3d;
+    overflow: hidden;
   }
-  
+
   &_parallax-image-wrapper {
     position: relative;
     height: 100vh;
     transform-style: preserve-3d;
   }
-  
+
   &_parallax-image {
     position: absolute;
     top: 0;
     left: -5px;
     right: 0;
     bottom: 0;
-    z-index: 3;
     background: url('../../assets/img/Cases/godee/jpg/parallax.jpg');
     background-size: cover;
-    background-position: center;
     transform: translateZ(-300px) scale(2);
+    z-index: 3;
   }
 
   @media screen and (max-width: 1440px) {

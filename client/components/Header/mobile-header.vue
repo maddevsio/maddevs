@@ -105,7 +105,7 @@ export default {
       overlay: null,
       scrollTop: null,
       logoText: null,
-      caseBody: null
+      caseFirstSection: null
     };
   },
   watch: {
@@ -129,7 +129,7 @@ export default {
         this.getScrollTop();
         window.addEventListener('scroll', () => this.scrollHandler());
       } else if (this.$nuxt.$route.path.includes('/godee')) {
-        this.caseBody = document.getElementsByClassName('case_body')[0];
+        this.caseFirstSection = document.getElementsByClassName('case_first-section')[0];
         this.caseRoot = document.getElementsByClassName('main')[0];
         this.caseRoot.addEventListener('scroll', () => this.scrollHandlerGodeeCase());
       }
@@ -187,7 +187,7 @@ export default {
     },
     setStylesForHeaderInGoDeeCase() {
       if (this.isCasePage) {
-        const opacityTextLogo = 0 - (this.overlay.offsetHeight - this.caseBody.getBoundingClientRect().top) / this.overlay.offsetHeight;
+        const opacityTextLogo = 0 - (this.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top) / this.overlay.offsetHeight;
         this.logoText.style.opacity = opacityTextLogo;
       }
     }
