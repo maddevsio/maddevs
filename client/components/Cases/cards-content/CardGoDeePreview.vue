@@ -72,8 +72,8 @@ export default {
       default: false
     },
     mobileImageName: {
-      type: Boolean,
-      default: false
+      type: String,
+      default: ''
     }
   }
 };

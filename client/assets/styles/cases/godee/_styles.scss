@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .case {
   &_text-quote-break {
     display: block;
@@ -124,6 +128,45 @@
       width: 100%;
       height: 100%;
     }
+  }
+
+  &_parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+
+  &_parallax-container {
+    height: 576px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    overflow: hidden;
+  }
+
+  &_parallax-image-wrapper {
+    position: relative;
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  &_parallax-image {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    right: 0;
+    bottom: 0;
+    background: url('../../assets/img/Cases/godee/jpg/parallax.jpg');
+    background-size: cover;
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
   }
 
   @media screen and (max-width: 1440px) {
