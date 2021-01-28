@@ -134,6 +134,7 @@ body {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+    -webkit-perspective: 300px;
     perspective: 300px;
   }
 
@@ -143,6 +144,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     overflow: hidden;
   }
@@ -150,6 +152,7 @@ body {
   &_parallax-image-wrapper {
     position: relative;
     height: 100vh;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
 
@@ -161,6 +164,7 @@ body {
     bottom: 0;
     background: url('../../assets/img/Cases/godee/jpg/parallax.jpg');
     background-size: cover;
+    -webkit-transform: translateZ(-300px) scale(2);
     transform: translateZ(-300px) scale(2);
     z-index: 3;
   }
