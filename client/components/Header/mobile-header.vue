@@ -4,6 +4,7 @@
       'mobile-header--is-open': mobileHeaderIsOpen,
       'header-transparent': headerTransparent === true && mobileHeaderIsOpen === false
     }"
+    ref="mobileHeader"
   >
     <div class="mobile-header__top-line">
       <router-link to="/" class="mobile-header__header-logo" @click.native="mobileHeaderIsOpen = false">
@@ -126,15 +127,14 @@ export default {
       if (!this.$nuxt.$route.path.includes('/godee')) {
         this.caseMoreButton = document.getElementsByClassName('case_more__button')[0];
         this.getScrollTop();
-      } else {
+        window.addEventListener('scroll', () => this.scrollHandler());
+      } else if (this.$nuxt.$route.path.includes('/godee')) {
         this.caseBody = document.getElementsByClassName('case_body')[0];
+        this.caseRoot = document.getElementsByClassName('main')[0];
+        this.caseRoot.addEventListener('scroll', () => this.scrollHandlerGodeeCase());
+        this.setHeaderWidth();
       }
-
-      window.addEventListener('scroll', () => {
-        this.scrollHandler();
-      });
     }
-    
   },
   methods: {
     toggleMobileHeader() {
@@ -161,11 +161,10 @@ export default {
       this.scrollTop = this.caseMoreButton.getBoundingClientRect().top;
     },
     scrollHandler() {
-      if (!this.$nuxt.$route.path.includes('/godee')) {
-        this.setStylesForHeader();
-      } else {
-        this.setStylesForHeaderInGoDeeCase();
-      }
+      this.setStylesForHeader();
+    },
+    scrollHandlerGodeeCase() {
+      this.setStylesForHeaderInGoDeeCase();
     },
     setPageData() {
       if(this.$nuxt.$route.path.includes('/case-studies/')) {
@@ -187,6 +186,15 @@ export default {
         const opacityTextLogo = 0 - (this.overlay.offsetHeight - this.caseBody.getBoundingClientRect().top) / this.overlay.offsetHeight;
         this.logoText.style.opacity = opacityTextLogo;
       }
+    },
+    setHeaderWidth() {
+      if(window.innerWidth < 991) {
+        this.resizeHandler(this.caseRoot.clientWidth);
+        window.addEventListener('resize', () => this.resizeHandler(this.caseRoot.clientWidth));
+      }
+    },
+    resizeHandler(currentWidth) {
+      this.$refs.mobileHeader.style.width = `${currentWidth}px`;
     }
   }
 };

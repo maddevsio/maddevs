@@ -1,5 +1,5 @@
 <template>
-  <div class="header-wrapper">
+  <div class="header-wrapper" id="header">
     <div class="overlay" v-if="headerTransparent" ref="overlay"></div>
     <header ref="header" class="header" :class="{'header-transparent': headerTransparent}">
       <div class="container" ref="headerContainer">
@@ -57,7 +57,8 @@ export default {
       caseMoreButton: null,
       caseHeader: null,
       logoText: null,
-      caseBody: null
+      caseBody: null,
+      caseRoot: null
     };
   },
   created() {
@@ -71,13 +72,13 @@ export default {
       if (!this.$nuxt.$route.path.includes('/godee')) {
         this.caseMoreButton = document.getElementsByClassName('case_more__button')[0];
         this.getScrollTop();
-      } else {
+        window.addEventListener('scroll', () => this.scrollHandler());
+      } else if(this.$nuxt.$route.path.includes('/godee')) {
         this.caseBody = document.getElementsByClassName('case_body')[0];
+        this.caseRoot = document.getElementsByClassName('main')[0];
+        this.caseRoot.addEventListener('scroll', () => this.scrollHandlerGodeeCase());
+        this.setHeaderWidth();
       }
-
-      window.addEventListener('scroll', () => {
-        this.scrollHandler();
-      });
     }
   },
   watch: {
@@ -102,11 +103,10 @@ export default {
       this.scrollTop = this.caseMoreButton.getBoundingClientRect().top - this.$refs.headerContainer.offsetHeight;
     },
     scrollHandler() {
-      if (!this.$nuxt.$route.path.includes('/godee')) {
-        this.setStylesForHeader();
-      } else {
-        this.setStylesForHeaderInGoDeeCase();
-      }
+      this.setStylesForHeader();
+    },
+    scrollHandlerGodeeCase() {
+      this.setStylesForHeaderInGoDeeCase();
     },
     setStylesForHeader() { // От этой логики в скором времени можно будет избавиться, сейчас это костыль, так как не все хедеры в кейсах переверстаны под новый формат
       if(this.isCasePage && window.innerWidth > 991) {
@@ -121,11 +121,21 @@ export default {
     },
     setStylesForHeaderInGoDeeCase() {
       if(this.isCasePage && window.innerWidth > 991) {
-        this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
+        this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (this.caseRoot.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
         this.logoText.style.opacity = -1 - (this.$refs.overlay.offsetHeight - this.caseBody.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
       } else if (this.isCasePage && window.innerWidth < 991) {
-        this.$refs.overlay.style.opacity = 3 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight; // Цифры 1 или 2 регулируют старт затемнения, чем больше цифра тем раньше начнеться затемнение, с тектом для логотипа работает в обратную сторону
+        this.$refs.overlay.style.opacity = 3 - (this.$refs.overlay.offsetHeight - (this.caseRoot.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight; // Цифры 1 или 2 регулируют старт затемнения, чем больше цифра тем раньше начнеться затемнение, с тектом для логотипа работает в обратную сторону
       }
+    },
+    setHeaderWidth() {
+      if(window.innerWidth > 991) {
+        this.resizeHandler(this.caseRoot.clientWidth);
+        window.addEventListener('resize', () => this.resizeHandler(this.caseRoot.clientWidth));
+      }
+    },
+    resizeHandler(currentWidth) {
+      this.$refs.overlay.style.width = `${currentWidth}px`;
+      this.$refs.header.style.width = `${currentWidth}px`;
     }
   }
 };

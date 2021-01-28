@@ -1,5 +1,5 @@
 <template>
-  <main class="main case">
+  <main class="main case case_parallax">
     <CaseHeader logo="godee" videoName="godee-case-main-video.mp4">
       <h1 class="case_header-title" slot="title">Convenient shuttle <br> bus service</h1>
       <p class="case_header-description" slot="description">
@@ -21,16 +21,11 @@
           Transportation has become a major issue in Vietnam cities due to the rapid increase (36%) in urbanization. With its slow, unairconditioned, overcrowded public transport, commuters living in the suburbs were left with only 3 other alternatives: personal cars, motorbikes and taxis.
         </TextParagraph>
       </section>
-      <section class="container_full case_full-screen-image m-48_top media-m-24_top m-48_bottom media-m-24_bottom">
-        <Picture
-          pictureFolder="godee"
-          fileName="issues-and-solution"
-          fileExtension="jpg"
-          alt=""
-          :boxShadow="false"
-          :lazyLoading="true"
-        />
-      </section>
+      <div class="case_parallax-container m-48_top media-m-24_top m-48_bottom media-m-24_bottom">
+        <div class="case_parallax-image-wrapper">
+          <div class="case_parallax-image"></div>
+        </div>
+      </div>
       <section class="container_regular">
         <Card class="case_issues-godee-card background-color-silver">
           <CardIssuesGoDee />
