@@ -7,15 +7,7 @@
       </TextParagraph>
     </div>
     <div class="card-content_right-item">
-      <Picture 
-        pictureFolder="godee"
-        fileName="primalg"
-        fileExtension="jpg"
-        alt=""
-        :boxShadow="true"
-        :lazyLoading="true"
-        :borderRadius="true"
-      />
+      <img class="card-content_gif" src="../../../assets/img/Cases/godee/gif/primalg.gif" alt="">
     </div>
   </div>
 </template>
@@ -41,6 +33,11 @@ export default {
     justify-content: space-between;
     padding: 33px 118px 36px 104px;
     border-radius: 8px;
+
+    &_gif {
+      width: 100%;
+      height: 100%;
+    }
 
     &_left-item {
       width: 468px;
