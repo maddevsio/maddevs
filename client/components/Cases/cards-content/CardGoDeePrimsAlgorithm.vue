@@ -51,5 +51,45 @@ export default {
       max-width: 254px;
       max-height: 262px;
     }
+
+    @media screen and (max-width: 1160px) {
+      padding-left: 84px;
+      padding-right: 100px;
+    }
+
+    @media screen and (max-width: 1120px) {
+      padding-left: 33px;
+      padding-right: 33px;
+    }
+
+    @media screen and (max-width: 991px) {
+      &_right-item {
+        margin: 0;
+        max-width: 200px;
+        max-height: 200px;
+      }
+    }
+
+    @media screen and (max-width: 920px) {
+      flex-direction: column;
+      align-items: center;
+
+      &_left-item {
+        width: 100%;
+        text-align: center;
+      }
+
+      &_right-item {
+        margin-top: 24px;
+        max-width: 254px;
+        max-height: 262px;
+      }
+    }
+
+    @media screen and (max-width: 920px) {
+      &_left-item {
+        text-align: left;
+      }
+    }
   }
 </style>

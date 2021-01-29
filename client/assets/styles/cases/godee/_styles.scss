@@ -169,6 +169,13 @@ body {
     z-index: 3;
   }
 
+  &_safari-parallax-image {
+    height: 576px;
+    max-width: 1440px;
+    background: url('../../assets/img/Cases/godee/jpg/parallax.jpg') no-repeat center;
+    background-size: cover;
+  }
+
   @media screen and (max-width: 1440px) {
     &_video-wrapper {
       position: relative;

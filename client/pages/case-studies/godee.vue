@@ -20,11 +20,12 @@
         Transportation has become a major issue in Vietnam cities due to the rapid increase (36%) in urbanization. With its slow, unairconditioned, overcrowded public transport, commuters living in the suburbs were left with only 3 other alternatives: personal cars, motorbikes and taxis.
       </TextParagraph>
     </section>
-    <div class="case_parallax-container m-48_top media-m-24_top m-48_bottom media-m-24_bottom">
+    <div class="case_parallax-container m-48_top media-m-24_top m-48_bottom media-m-24_bottom" v-if="!isSafari">
       <div class="case_parallax-image-wrapper">
         <div class="case_parallax-image"></div>
       </div>
     </div>
+    <section class="container_full case_safari-parallax-image m-48_top media-m-24_top m-48_bottom media-m-24_bottom" v-else></section>
     <section class="container_regular">
       <Card class="case_issues-godee-card background-color-silver">
         <CardIssuesGoDee />
@@ -196,7 +197,7 @@
           :borderRadius="true"
         />
       </div>
-      <!-- <CardGoDeePrimsAlgorithm class="m-48_bottom media-m-24_bottom"/> -->
+      <CardGoDeePrimsAlgorithm class="m-48_bottom media-m-24_bottom"/>
       <div class="case_image-wrapper m-72_bottom media-m-48_bottom">
         <Picture 
           pictureFolder="godee"
@@ -216,7 +217,7 @@
       </TextParagraph>
     </section>
     <section class="container_middle m-48_top media-m-24_top m-48_bottom media-m-24_bottom">
-      <Picture 
+      <Picture
         pictureFolder="godee"
         fileName="trip-monitor"
         fileExtension="jpg"
@@ -595,7 +596,9 @@ export default {
           techName: 'Datadog',
           className: 'infrastructure-datadog'
         }
-      ]
+      ],
+      translateY: null,
+      isSafari: false
     };
   },
   head() {
@@ -624,8 +627,7 @@ export default {
           type: 'application/ld+json',
           innerHTML: ''
         }
-      ],
-      translateY: null
+      ]
     };
   },
   mounted() {
@@ -642,6 +644,12 @@ export default {
         previousScroll = currentScroll;
       }
     });
+
+    if(/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+      this.isSafari = true;
+    } else {
+      this.isSafari = false;
+    }
   },
   methods: {
     handleScrollDown() {
