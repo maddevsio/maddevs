@@ -345,7 +345,7 @@
       />
     </section>
     <section class="container_regular">
-      <h2 class="case_title_h2 m-12_bottom">Stable & scalable solution</h2>
+      <h2 class="case_title_h2 m-12_bottom">Stable & Scalable solution</h2>
       <TextParagraph class="m-24_bottom media-m-12_bottom">
         Transportation and logistics software has zero tolerance to downtime. Imagine hundreds of passengers not being able to book their tickets, drivers not knowing where to pick up/drop off passengers or operators seeing empty screens. 
       </TextParagraph>
