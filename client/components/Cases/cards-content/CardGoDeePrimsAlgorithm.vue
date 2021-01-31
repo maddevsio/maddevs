@@ -7,7 +7,7 @@
       </TextParagraph>
     </div>
     <div class="card-content_right-item">
-      <img class="card-content_gif" src="../../../assets/img/Cases/godee/gif/primalg.gif" alt="">
+      <Lottie :options="lottieOptions" @animCreated="handleAnimation" />
     </div>
   </div>
 </template>
@@ -15,12 +15,28 @@
 <script>
 import TextParagraph from '@/components/Cases/TextParagraph';
 import Picture from '@/components/Cases/Picture';
+import Lottie from 'vue-lottie/src/lottie.vue';
+import animationData from '@/assets/lottie/prim-algorithm.json';
 
 export default {
   name: 'CardGoDeePrimsAlgorithm',
   components: {
     TextParagraph,
-    Picture
+    Picture,
+    Lottie
+  },
+  data() {
+    return {
+      animation: null,
+      lottieOptions: {
+        animationData: animationData
+      }
+    };
+  },
+  methods: {
+    handleAnimation (animation) {
+      this.animation = animation;
+    }
   }
 };
 </script>
