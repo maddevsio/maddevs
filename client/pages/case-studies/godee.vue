@@ -198,16 +198,39 @@
         />
       </div>
       <CardGoDeePrimsAlgorithm class="m-48_bottom media-m-24_bottom"/>
-      <div class="case_image-wrapper m-72_bottom media-m-48_bottom">
+      <div class="case_video-wrapper-middle-container m-48_top media-m-24_top m-60_bottom media-m-24_bottom case_box-shadow">
         <Picture 
           pictureFolder="godee"
           fileName="trip-request-map"
           fileExtension="jpg"
           alt=""
-          :boxShadow="true"
+          :boxShadow="false"
           :lazyLoading="true"
           :borderRadius="true"
+          v-if="isIphone"
         />
+        <div class="case_video-flex-wrapper" v-else>
+          <Picture 
+            pictureFolder="common"
+            fileName="safari-top-bar-white"
+            fileExtension="jpg"
+            alt=""
+            :boxShadow="false"
+            :lazyLoading="true"
+            :borderRadius="true"
+          />
+          <video 
+            id="trip-request-map" 
+            class="case_video-middle-container case_trip-request-video" 
+            width="100%" 
+            height="100%" 
+            loop="true"
+            muted="true"
+          >
+            <source :src="getPathTripRequestMapVideo" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </section>
     <section class="container_regular">
@@ -217,15 +240,40 @@
       </TextParagraph>
     </section>
     <section class="container_middle m-48_top media-m-24_top m-48_bottom media-m-24_bottom">
-      <Picture
-        pictureFolder="godee"
-        fileName="trip-monitor"
-        fileExtension="jpg"
-        alt=""
-        :boxShadow="true"
-        :lazyLoading="true"
-        :borderRadius="true"
-      />
+      <div class="case_video-wrapper-middle-container case_box-shadow">
+        <Picture
+          pictureFolder="godee"
+          fileName="trip-monitor"
+          fileExtension="jpg"
+          alt=""
+          :boxShadow="true"
+          :lazyLoading="true"
+          :borderRadius="true"
+          v-if="isIphone"
+        />
+        <div class="case_video-flex-wrapper" v-else>
+          <Picture 
+            pictureFolder="common"
+            fileName="safari-top-bar-white"
+            fileExtension="jpg"
+            alt=""
+            :boxShadow="false"
+            :lazyLoading="true"
+            :borderRadius="true"
+          />
+          <video 
+            id="trip-monitor"
+            class="case_video-middle-container"
+            width="100%"
+            height="100%"
+            loop="true"
+            muted="true"
+          >
+            <source :src="getPathTripMonitorVideo" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </section>
     <section class="container_regular">
       <TextParagraph class="m-12_bottom">
@@ -254,15 +302,40 @@
       <h3 class="case_title_h3">Route optimization</h3>
     </section>
     <section class="container_middle m-24_top media-m-12_top m-48_bottom media-m-24_bottom">
-      <Picture 
-        pictureFolder="godee"
-        fileName="route-optimization"
-        fileExtension="jpg"
-        alt=""
-        :boxShadow="true"
-        :lazyLoading="true"
-        :borderRadius="true"
-      />
+      <div class="case_video-wrapper-middle-container case_box-shadow">
+        <Picture 
+          pictureFolder="godee"
+          fileName="route-optimization"
+          fileExtension="jpg"
+          alt=""
+          :boxShadow="false"
+          :lazyLoading="true"
+          :borderRadius="true"
+          v-if="isIphone"
+        />
+        <div class="case_video-flex-wrapper" v-else>
+          <Picture 
+            pictureFolder="common"
+            fileName="safari-top-bar-white"
+            fileExtension="jpg"
+            alt=""
+            :boxShadow="false"
+            :lazyLoading="true"
+            :borderRadius="true"
+          />
+          <video 
+            id="route-optimization" 
+            class="case_video-middle-container" 
+            width="100%" 
+            height="100%" 
+            loop="true" 
+            muted="true"
+          >
+            <source :src="getPathRouteOptimizationVideo" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </section>
     <section class="container_regular">
       <TextParagraph>
@@ -391,6 +464,8 @@
       <div class="case_logotype" slot="icon"></div>
       Namba Food <br> Top Delivery Service in <br class="case_mobile-screen-break"> Central Asia
     </Footer>
+    <!-- Добавил главный футер сайта, так как из-за того что скролл на странице находиться у элемента .main, нельзя доскроллить фо футера -->
+    <FooterMain class="background-color-black"/> 
   </main>
 </template>
 
@@ -419,6 +494,7 @@ import CardGoDeeFeature from '@/components/Cases/cards-content/CardGoDeeFeature'
 import CardGoDeePreview from '@/components/Cases/cards-content/CardGoDeePreview';
 import CardGoDeeImpact from '@/components/Cases/cards-content/CardGoDeeImpact';
 import CardGoDeePrimsAlgorithm from '@/components/Cases/cards-content/CardGoDeePrimsAlgorithm';
+import FooterMain from '@/components/Footer';
 
 export default {
   components: {
@@ -445,9 +521,39 @@ export default {
     CardGoDeeFeature,
     CardGoDeePreview,
     CardGoDeeImpact,
-    CardGoDeePrimsAlgorithm
+    CardGoDeePrimsAlgorithm,
+    FooterMain
   },
   name: 'NambaFood',
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {name: 'description', content: this.description},
+        {property: 'og:url', content: this.ogUrl},
+        {property: 'og:type', content: 'website'},
+        {property: 'og:title', content: this.title},
+        {property: 'og:description', content: this.description},
+        {
+          property: 'og:image',
+          content: 'https://maddevs.io/Open-Graph.png'
+        }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://maddevs.io/case-studies/godee/'
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: ''
+        }
+      ]
+    };
+  },
   data() {
     return {
       title: '',
@@ -597,44 +703,38 @@ export default {
           className: 'infrastructure-datadog'
         }
       ],
+      videoIdList: [
+        'trip-request-map',
+        'trip-monitor',
+        'route-optimization'
+      ],
       translateY: null,
-      isSafari: false
+      isSafari: false,
+      isIphone: false
     };
   },
-  head() {
-    return {
-      title: this.title,
-      meta: [
-        {name: 'description', content: this.description},
-        {property: 'og:url', content: this.ogUrl},
-        {property: 'og:type', content: 'website'},
-        {property: 'og:title', content: this.title},
-        {property: 'og:description', content: this.description},
-        {
-          property: 'og:image',
-          content: 'https://maddevs.io/Open-Graph.png'
-        }
-      ],
-      link: [
-        {
-          rel: 'canonical',
-          href: 'https://maddevs.io/case-studies/godee/'
-        }
-      ],
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [
-        {
-          type: 'application/ld+json',
-          innerHTML: ''
-        }
-      ]
-    };
+  computed: {
+    getPathTripRequestMapVideo: () => {
+      return `${process.env.awsUrl}/map-stops.mp4`;
+    },
+    getPathTripMonitorVideo: () => {
+      return `${process.env.awsUrl}/trip-monitor.mp4`;
+    },
+    getPathRouteOptimizationVideo: () => {
+      return `${process.env.awsUrl}/route-optimization.mp4`;
+    }
   },
   mounted() {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 1.0
+    };
     let previousScroll = 0;
     let currentScroll = 0;
+
     this.$refs.main.addEventListener('scroll', () => {
-      if (window.innerWidth > 880) { // На разрешении экрана 880 происходит перестройка стеки секции и анимация не должна больше отрабатывать
+      if (window.innerWidth > 880) { // На разрешении экрана 880 происходит перестройка секции и анимация не должна больше отрабатывать
         currentScroll = this.$refs.main.scrollTop; // Сохраняем позицию скролла и затем сравниваем её предедущей, чтобы понимать в какую сторону идет скроллинг 
         if (currentScroll > previousScroll) {
           this.handleScrollDown();
@@ -645,11 +745,32 @@ export default {
       }
     });
 
-    if(/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+    if(/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) { // Проверяем какой сейчас браузер чтобы на основе этих данных отрисовать блок
       this.isSafari = true;
     } else {
       this.isSafari = false;
     }
+
+    if(navigator.userAgent.match(/(iPhone)/i)) {
+      this.isIphone = true;
+    } else {
+      this.isIphone = false;
+    }
+
+    // Play/Pause HTML Video Based on Visibility
+    this.videoIdList.forEach(video => {
+      let callback = (entries, observer) => {
+        entries.forEach(entry => {
+          if(entry.target.id == video) {
+            if(entry.isIntersecting) {
+              entry.target.play();
+            }
+          }
+        });
+      };
+      let observer = new IntersectionObserver(callback, options);
+      observer.observe(document.getElementById(video));
+    });
   },
   methods: {
     handleScrollDown() {
@@ -659,18 +780,18 @@ export default {
         (this.$refs.cardsContainer.getBoundingClientRect().top - 62) < 0 &&
         leftColumnOffsetBottom > rightColumnOffsetBottom // Стратуем скрипт когда секция в зоне видимости и останавливаем когда левая и правая колонка выравниваються с друг другом по оси z
       ) {
-        this.$refs.cardsRightColumn.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.6)}px)`; // число 62 - это высота хедера, высчитываем её чтобы скрипт стартовал когда секция ещё не заехала за хедер 
-        this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.6)}px)`;
+        this.$refs.cardsRightColumn.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.5)}px)`; // число 62 - это высота хедера, высчитываем её чтобы скрипт стартовал когда секция ещё не заехала за хедер 
+        this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.5)}px)`;
         this.translateY = ((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.5); // Сохраняем текщее свойство transform для дальнейшего расчета в функции handleScrollUp()
       }
     },
     handleScrollUp() {
       if (
         (this.$refs.cardsContainer.getBoundingClientRect().top - 62) <= 0 && // Останавливаем скрипт когда контейнер достигает верха страницы чтобы правая колонка больше не смещалась и заняла свое изначальное положение
-        (this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.6 > this.translateY // Данное сравнение нужно для того чтобы избежать рывков карточек при скролле вверх, скрипт запускается в случае если текущий отступ контейнера карточек равен числу в переменной translateY таким образом мы избегаем рывков
+        (this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.5 > this.translateY // Данное сравнение нужно для того чтобы избежать рывков карточек при скролле вверх, скрипт запускается в случае если текущий отступ контейнера карточек равен числу в переменной translateY
       ) {
-        this.$refs.cardsRightColumn.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.6)}px)`;
-        this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.6)}px)`;
+        this.$refs.cardsRightColumn.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.5)}px)`;
+        this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.5)}px)`;
       }
     }
   }

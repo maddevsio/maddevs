@@ -176,6 +176,23 @@ body {
     background-size: cover;
   }
 
+  &_video-wrapper-middle-container {
+    overflow: hidden;
+  }
+
+  &_video-middle-container {
+    margin-bottom: -10px; // Скрываю черные полосы у видео
+  }
+
+  &_video-flex-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_trip-request-video {
+    width: calc(100% - -2px); // Скрывают черную полосу у видео с правой стороны
+  }
+
   @media screen and (max-width: 1440px) {
     &_video-wrapper {
       position: relative;
