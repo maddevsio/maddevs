@@ -76,7 +76,7 @@
       <p class="case_image-description m-12_top m-104_bottom media-m-48_bottom">GoDee 2018 and GoDee now</p>
       <section class="container_regular" ref="cardsContainer">
         <h2 class="case_title_h2 m-24_bottom case_text-align-center" ref="developmentGoalsTitle">Development goals</h2> <!-- Выставить оступы на мобиле -->
-        <div class="case_development-goals p-96_bottom media-p-48_bottom">
+        <div class="case_development-goals p-96_bottom media-p-48_bottom" ref="cardsGridContainer">
           <div class="case_development-goals-left-column" ref="cardsLeftColumn">
             <Card class="background-color-silver">
               <CardGoDeeFeature title="GPS" iconName="gps">
@@ -725,7 +725,10 @@ export default {
       ],
       translateY: null,
       isSafari: false,
-      isIphone: false
+      isIphone: false,
+      smoothness: 4,
+      cardsGridHeight: null,
+      newHeight: null
     };
   },
   computed: {
@@ -747,6 +750,7 @@ export default {
     };
     let previousScroll = 0;
     let currentScroll = 0;
+    this.cardsGridHeight = this.$refs.cardsGridContainer.getBoundingClientRect().height;
 
     this.$refs.main.addEventListener('scroll', () => {
       if (window.innerWidth > 880) { // На разрешении экрана 880 происходит перестройка секции и анимация не должна больше отрабатывать
@@ -795,18 +799,21 @@ export default {
         (this.$refs.cardsContainer.getBoundingClientRect().top - 62) < 0 &&
         leftColumnOffsetBottom > rightColumnOffsetBottom // Стратуем скрипт когда секция в зоне видимости и останавливаем когда левая и правая колонка выравниваються с друг другом по оси z
       ) {
-        this.$refs.cardsRightColumn.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.5)}px)`; // число 62 - это высота хедера, высчитываем её чтобы скрипт стартовал когда секция ещё не заехала за хедер 
-        this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.5)}px)`;
-        this.translateY = ((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.5); // Сохраняем текщее свойство transform для дальнейшего расчета в функции handleScrollUp()
+        this.$refs.cardsRightColumn.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`; // число 62 - это высота хедера, высчитываем её чтобы скрипт стартовал когда секция ещё не заехала за хедер 
+        this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`;
+        this.translateY = ((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness); // Сохраняем текщее свойство transform для дальнейшего расчета в функции handleScrollUp()
+        this.newHeight = this.cardsGridHeight - Math.abs(((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness - 96));
+        this.$refs.cardsGridContainer.style.height = `${this.newHeight}px`;
       }
     },
     handleScrollUp() {
       if (
         (this.$refs.cardsContainer.getBoundingClientRect().top - 62) <= 0 && // Останавливаем скрипт когда контейнер достигает верха страницы чтобы правая колонка больше не смещалась и заняла свое изначальное положение
-        (this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.5 > this.translateY // Данное сравнение нужно для того чтобы избежать рывков карточек при скролле вверх, скрипт запускается в случае если текущий отступ контейнера карточек равен числу в переменной translateY
+        (this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness > this.translateY // Данное сравнение нужно для того чтобы избежать рывков карточек при скролле вверх, скрипт запускается в случае если текущий отступ контейнера карточек равен числу в переменной translateY
       ) {
-        this.$refs.cardsRightColumn.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.5)}px)`;
-        this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / 3.5)}px)`;
+        this.$refs.cardsRightColumn.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`;
+        this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`;
+        this.$refs.cardsGridContainer.style.height = `${this.newHeight += 10}px`;
       }
     }
   }
