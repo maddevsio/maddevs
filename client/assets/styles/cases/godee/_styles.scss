@@ -172,7 +172,10 @@
     background-size: cover;
   }
 
-  &_html-video-wrapper {
+  &_html-video-wrapper,
+  &_image-wrapper {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     overflow: hidden;
   }
 

@@ -188,15 +188,24 @@
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <div class="case_image-wrapper m-48_top media-m-24_top m-60_bottom media-m-24_bottom">
+        <div class="case_image-wrapper m-48_top media-m-24_top m-60_bottom media-m-24_bottom case_box-shadow">
+          <Picture 
+            pictureFolder="common"
+            fileName="safari-top-bar-white"
+            fileExtension="jpg"
+            alt=""
+            :boxShadow="false"
+            :lazyLoading="true"
+            :borderRadius="false"
+          />
           <Picture 
             pictureFolder="godee"
             fileName="godee-admin-panel"
             fileExtension="jpg"
             alt=""
-            :boxShadow="true"
+            :boxShadow="false"
             :lazyLoading="true"
-            :borderRadius="true"
+            :borderRadius="false"
           />
         </div>
         <CardGoDeePrimsAlgorithm class="m-48_bottom media-m-24_bottom"/>
@@ -208,7 +217,7 @@
             alt=""
             :boxShadow="false"
             :lazyLoading="true"
-            :borderRadius="true"
+            :borderRadius="false"
             v-if="isIphone"
           />
           <div class="case_video-flex-wrapper" v-else>
@@ -219,7 +228,7 @@
               alt=""
               :boxShadow="false"
               :lazyLoading="true"
-              :borderRadius="true"
+              :borderRadius="false"
             />
             <video
               id="trip-request-map" 
@@ -250,7 +259,7 @@
             alt=""
             :boxShadow="true"
             :lazyLoading="true"
-            :borderRadius="true"
+            :borderRadius="false"
             v-if="isIphone"
           />
           <div class="case_video-flex-wrapper" v-else>
@@ -261,7 +270,7 @@
               alt=""
               :boxShadow="false"
               :lazyLoading="true"
-              :borderRadius="true"
+              :borderRadius="false"
             />
             <video 
               id="trip-monitor"
@@ -312,7 +321,7 @@
             alt=""
             :boxShadow="false"
             :lazyLoading="true"
-            :borderRadius="true"
+            :borderRadius="false"
             v-if="isIphone"
           />
           <div class="case_video-flex-wrapper" v-else>
@@ -323,7 +332,7 @@
               alt=""
               :boxShadow="false"
               :lazyLoading="true"
-              :borderRadius="true"
+              :borderRadius="false"
             />
             <video 
               id="route-optimization" 
