@@ -200,7 +200,7 @@
           />
         </div>
         <CardGoDeePrimsAlgorithm class="m-48_bottom media-m-24_bottom"/>
-        <div class="case_video-wrapper-middle-container m-48_top media-m-24_top m-60_bottom media-m-24_bottom case_box-shadow">
+        <div class="case_html-video-wrapper m-48_top media-m-24_top m-60_bottom media-m-24_bottom case_box-shadow">
           <Picture 
             pictureFolder="godee"
             fileName="trip-request-map"
@@ -221,9 +221,9 @@
               :lazyLoading="true"
               :borderRadius="true"
             />
-            <video 
+            <video
               id="trip-request-map" 
-              class="case_video-middle-container case_trip-request-video" 
+              class="case_html-video case_trip-request-video" 
               width="100%" 
               height="100%" 
               loop="true"
@@ -242,7 +242,7 @@
         </TextParagraph>
       </section>
       <section class="container_middle m-48_top media-m-24_top m-48_bottom media-m-24_bottom">
-        <div class="case_video-wrapper-middle-container case_box-shadow">
+        <div class="case_html-video-wrapper case_box-shadow">
           <Picture
             pictureFolder="godee"
             fileName="trip-monitor"
@@ -265,7 +265,7 @@
             />
             <video 
               id="trip-monitor"
-              class="case_video-middle-container"
+              class="case_html-video"
               width="100%"
               height="100%"
               loop="true"
@@ -304,7 +304,7 @@
         <h3 class="case_title_h3">Route optimization</h3>
       </section>
       <section class="container_middle m-24_top media-m-12_top m-48_bottom media-m-24_bottom">
-        <div class="case_video-wrapper-middle-container case_box-shadow">
+        <div class="case_html-video-wrapper case_box-shadow">
           <Picture 
             pictureFolder="godee"
             fileName="route-optimization"
@@ -327,7 +327,7 @@
             />
             <video 
               id="route-optimization" 
-              class="case_video-middle-container" 
+              class="case_html-video" 
               width="100%" 
               height="100%" 
               loop="true" 
@@ -733,8 +733,8 @@ export default {
   mounted() {
     const options = {
       root: null,
-      rootMargin: '0px',
-      threshold: 1.0
+      rootMargin: '0px 0px -2px 0px',
+      threshold: 0.8
     };
     let previousScroll = 0;
     let currentScroll = 0;

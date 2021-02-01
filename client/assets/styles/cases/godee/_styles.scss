@@ -172,12 +172,12 @@
     background-size: cover;
   }
 
-  &_video-wrapper-middle-container {
+  &_html-video-wrapper {
     overflow: hidden;
   }
 
-  &_video-middle-container {
-    margin-bottom: -10px; // Скрываю черные полосы у видео
+  &_html-video {
+    margin: 0px 0px -6px 0px;
   }
 
   &_video-flex-wrapper {
