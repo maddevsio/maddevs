@@ -77,19 +77,14 @@ export default {
         this.caseFirstSection = document.getElementsByClassName('case_first-section')[0];
         this.caseRoot = document.getElementsByClassName('main')[0];
         this.caseRoot.addEventListener('scroll', () => this.scrollHandlerGodeeCase());
-        this.setHeaderWidth();
+        this.resizeHandler();
+        window.addEventListener('resize', () => this.resizeHandler());
       }
     }
-  },
-  destroyed() {
-    window.removeEventListener('scroll', () => this.scrollHandler());
-    window.addEventListener('resize', () => this.resizeHandler());
-    this.caseRoot.removeEventListener('scroll', () => this.scrollHandlerGodeeCase());
   },
   watch: {
     '$route'() {
       this.setHeaderState();
-      document.documentElement.style.overflow = 'auto';
     }
   },
   methods: {
@@ -133,15 +128,12 @@ export default {
         this.$refs.overlay.style.opacity = 3 - (this.$refs.overlay.offsetHeight - (this.caseRoot.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight; // Цифры 1 или 2 регулируют старт затемнения, чем больше цифра тем раньше начнеться затемнение, с тектом для логотипа работает в обратную сторону
       }
     },
-    setHeaderWidth() { // Выставляем кастомную ширину для хедера так как на странице кейса GoDee хедер перекрывает скроллбар по причине того что находиться с ним на одном уровне
+    resizeHandler() {
+      let scrollBarWidth = this.caseRoot.offsetWidth - this.caseRoot.clientWidth;
       if(window.innerWidth > 991) {
-        this.resizeHandler(`${this.caseRoot.clientWidth}px`);
-        window.addEventListener('resize', () => this.resizeHandler(this.caseRoot.clientWidth));
+        this.$refs.header.style.width = `calc(100% - ${scrollBarWidth}px)` || '100%';
+        this.$refs.overlay.style.width = `calc(100% - ${scrollBarWidth}px)` || '100%';
       }
-    },
-    resizeHandler(currentWidth) {
-      this.$refs.overlay.style.width = currentWidth;
-      this.$refs.header.style.width = currentWidth;
     }
   }
 };

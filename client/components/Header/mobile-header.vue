@@ -135,11 +135,6 @@ export default {
       }
     }
   },
-  destroyed() {
-    window.removeEventListener('scroll', () => this.scrollHandler());
-    window.addEventListener('resize', () => this.resizeHandler());
-    this.caseRoot.removeEventListener('scroll', () => this.scrollHandlerGodeeCase());
-  },
   methods: {
     toggleMobileHeader() {
       this.mobileHeaderIsOpen = !this.mobileHeaderIsOpen;
