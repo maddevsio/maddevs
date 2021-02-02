@@ -9,7 +9,7 @@
         <div class="customer-university__featured-post">
           <router-link :to="`/blog/${master.data.featured_cu.uid}`" class="featured-post" v-if="featured">
             <h6 class="featured-post__date">{{ formattedDate }}</h6>
-            <h2 class="featured-post__title">{{ $prismic.asText(featured.title) }}</h2>
+            <h2 class="featured-post__title">{{ $prismic.asText(featured.title).replace(/^[0-9]*\. /, '') }}</h2>
             <p class="featured-post__text">{{ getFirstParagraph(featured) }}</p>
             <post-author :document="featured"/>
             <div class="featured-post__cover-wrapper">

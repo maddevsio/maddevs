@@ -20,15 +20,15 @@ describe('CaseStudies component', () => {
     },
     {
       projectName: 'teacherly',
-      logoImg: 'teacherlyColored',
-      link: 'https://blog.maddevs.io/teacherly-provides-collaboration-platform-to-70-000-teachers-88631cc5195f?source=friends_link&sk=0f492513f43ce5b4330c3cfa484378c5',
+      logoImg: 'sjmcIcon',
+      link: '/case-studies/sir-john-monash-centre',
       targetBlank: true,
-      contributionWidgetColors: ['#ec1c24', '#fff'],
-      projectBackground: 'teacherlyBackground',
-      projectColor: '#56448e',
-      projectTitle: 'EdTech collaboration platform',
+      contributionWidgetColors: ['#96969c', '#96969c'],
+      projectBackground: 'sjmcBackground',
+      projectColor: '#221F20',
+      projectTitle: 'National WWII Multimedia Centre',
       projectDescription:
-        'Mad Devs improved the collaboration experience for teachers and students by the feedback-driven development of the Teacherly educational platform.'
+        'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.'
     },
     {
       projectName: 'guardrails',
