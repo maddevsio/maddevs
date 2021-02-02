@@ -42,9 +42,9 @@ app.use((req, res, next) => {
 });
 app.use(express.static(__dirname + '/dist'));
 
-// app.get('/', (req, res) => {
-//   res.sendFile(path.join(__dirname + '/dist/index.html'));
-// });
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname + '/dist/index.html'));
+});
 
 app.use(function(req, res, next) { // Handle 404
   res.sendStatus(404);
