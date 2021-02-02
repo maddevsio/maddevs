@@ -33,6 +33,7 @@ app.use((req, res, next) => {
     if (match !== undefined && !!match.to) {
       res.redirect(301, match.to);
     } else {
+      // next();
       res.redirect(301, 'https://maddevs.io/blog');
     }
   } else {
@@ -41,12 +42,12 @@ app.use((req, res, next) => {
 });
 app.use(express.static(__dirname + '/dist'));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/dist/index.html'));
-});
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname + '/dist/index.html'));
+// });
 
-app.get('/asd', (req, res) => {
-  res.send(404);
+app.use(function(req, res, next) { // Handle 404
+  res.sendStatus(404);
 });
 
 app.listen(port, () => {
