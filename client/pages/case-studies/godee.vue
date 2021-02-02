@@ -761,6 +761,8 @@ export default {
           this.handleScrollUp();
         }
         previousScroll = currentScroll;
+      } else {
+        this.setDefaultStylesForCards();
       }
     });
 
@@ -817,6 +819,12 @@ export default {
           this.$refs.cardsGridContainer.style.height = `${this.newHeight += 4}px`;
         }
       }
+    },
+    setDefaultStylesForCards() {
+      this.cardsGridHeight = this.$refs.cardsGridContainer.getBoundingClientRect().height;
+      this.$refs.cardsRightColumn.style.transform = 'translateY(0px)';
+      this.$refs.developmentGoalsTitle.style.transform = 'translateY(0px)';
+      this.$refs.cardsGridContainer.style.height = '100%';
     }
   }
 };
