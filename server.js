@@ -45,6 +45,10 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
+app.get('/asd', (req, res) => {
+  res.send(404);
+});
+
 app.listen(port, () => {
   console.log('Server working on port: ' + port);
 });
