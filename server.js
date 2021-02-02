@@ -46,9 +46,9 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
-// app.use(function(req, res, next) { // Handle 404
-//   res.sendStatus(404);
-// });
+app.use(function(req, res, next) { // Handle 404
+  res.sendStatus(404);
+});
 
 app.listen(port, () => {
   console.log('Server working on port: ' + port);
