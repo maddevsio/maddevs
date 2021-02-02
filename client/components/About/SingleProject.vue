@@ -134,6 +134,10 @@ export default {
     &--teacherlyColored {
       @include teacherly-icon;
     }
+
+    &--sjmcIcon {
+      @include sjmc-icon;
+    }
   }
 
   &__content-wrap {
