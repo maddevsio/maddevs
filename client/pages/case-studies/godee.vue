@@ -813,7 +813,9 @@ export default {
       ) {
         this.$refs.cardsRightColumn.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`;
         this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`;
-        this.$refs.cardsGridContainer.style.height = `${this.newHeight += 4.5}px`;
+        if (this.cardsGridHeight > this.newHeight) {
+          this.$refs.cardsGridContainer.style.height = `${this.newHeight += 4}px`;
+        }
       }
     }
   }
