@@ -203,7 +203,7 @@ exports[`Projects page renders correctly 1`] = `
                 class="single-project__sub-title"
               >
                 
-        National WWII Multimedia Centre
+        National WWI Multimedia Centre
       
               </h3>
                
@@ -555,7 +555,7 @@ exports[`Projects page renders correctly 1`] = `
                     class="single-project__sub-title"
                   >
                     
-        National WWII Multimedia Centre
+        National WWI Multimedia Centre
       
                   </h3>
                    

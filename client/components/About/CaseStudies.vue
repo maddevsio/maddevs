@@ -86,7 +86,7 @@ export default {
           contributionWidgetColors: ['#96969c', '#96969c'],
           projectBackground: 'sjmcBackground',
           projectColor: '#221F20',
-          projectTitle: 'National WWII Multimedia Centre',
+          projectTitle: 'National WWI Multimedia Centre',
           projectDescription:
             'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.'
         },
