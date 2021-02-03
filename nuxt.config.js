@@ -81,7 +81,8 @@ module.exports = {
       const postRoutes = blogPosts.map(blogPost => '/blog/' + blogPost.uid);
 
       return routes.concat(postRoutes);
-    }
+    },
+    fallback: '404.html'
   },
   css: [
     {
