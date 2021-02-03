@@ -981,7 +981,7 @@ exports[`Index page renders correctly 1`] = `
                 class="single-project__sub-title"
               >
                 
-        National WWII Multimedia Centre
+        National WWI Multimedia Centre
       
               </h3>
                
@@ -1333,7 +1333,7 @@ exports[`Index page renders correctly 1`] = `
                     class="single-project__sub-title"
                   >
                     
-        National WWII Multimedia Centre
+        National WWI Multimedia Centre
       
                   </h3>
                    
