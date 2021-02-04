@@ -26,7 +26,7 @@ describe('CaseStudies component', () => {
       contributionWidgetColors: ['#96969c', '#96969c'],
       projectBackground: 'sjmcBackground',
       projectColor: '#221F20',
-      projectTitle: 'National WWI Multimedia Centre',
+      projectTitle: 'Australian National WWI Interpretive Centre',
       projectDescription:
         'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.'
     },
