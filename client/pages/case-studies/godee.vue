@@ -73,7 +73,7 @@
       <section class="container_full case_before-after-gif-wrapper background-color-silver m-48_top media-m-20_top">
         <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="">
       </section>
-      <p class="case_image-description m-12_top m-104_bottom media-m-48_bottom">GoDee 2018 and GoDee now</p>
+      <p class="case_image-description m-12_top m-104_bottom media-m-48_bottom">GoDee 2018 VS. GoDee {{ currentYear }}</p>
       <section class="container_regular" ref="cardsContainer">
         <h2 class="case_title_h2 m-24_bottom case_text-align-center" ref="developmentGoalsTitle">Development goals</h2> <!-- Выставить оступы на мобиле -->
         <div class="case_development-goals p-96_bottom media-p-48_bottom" ref="cardsGridContainer">
@@ -728,7 +728,8 @@ export default {
       isIphone: false,
       smoothness: 4,
       cardsGridHeight: null,
-      newHeight: null
+      newHeight: null,
+      currentYear: new Date().getFullYear()
     };
   },
   computed: {

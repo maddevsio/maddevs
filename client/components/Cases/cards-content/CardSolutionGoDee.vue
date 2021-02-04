@@ -28,7 +28,7 @@
           Trips a day
         </TextParagraph>
         <TextParagraph class="card-content_price-number">
-          $2
+          2
         </TextParagraph>
       </div>
       <div class="card-content_price-item">
