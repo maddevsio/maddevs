@@ -33,8 +33,7 @@ app.use((req, res, next) => {
     if (match !== undefined && !!match.to) {
       res.redirect(301, match.to);
     } else {
-      next();
-      // res.redirect(301, 'https://maddevs.io/blog');
+      res.redirect(301, 'https://maddevs.io/blog');
     }
   } else {
     next();
