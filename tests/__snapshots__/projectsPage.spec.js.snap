@@ -203,7 +203,7 @@ exports[`Projects page renders correctly 1`] = `
                 class="single-project__sub-title"
               >
                 
-        Australian National WWI Interpretive Centre
+        Australian National Interpretive Centre
       
               </h3>
                
@@ -555,7 +555,7 @@ exports[`Projects page renders correctly 1`] = `
                     class="single-project__sub-title"
                   >
                     
-        Australian National WWI Interpretive Centre
+        Australian National Interpretive Centre
       
                   </h3>
                    
