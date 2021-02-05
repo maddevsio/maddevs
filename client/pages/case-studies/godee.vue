@@ -779,7 +779,6 @@ export default {
       this.isIphone = false;
     }
 
-    // Play/Pause HTML Video Based on Visibility
     this.videoIdList.forEach(video => {
       let callback = (entries, observer) => {
         entries.forEach(entry => {
