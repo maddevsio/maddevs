@@ -18,6 +18,7 @@ selenium-debug.log
 *.ntvs*
 *.njsproj
 *.sln
+db.json
 client/assets/img/Home/png/copyright/mad_copy--dont_touche_big.png
 client/assets/img/Home/png/copyright/mad_copy--dont_touche.png
 

@@ -22,5 +22,14 @@ export const actions = {
         reject(err);
       });
     });
+  },
+  createNewLead() {
+    return new Promise((resolve, reject) => {
+      this.$axios.post('create-lead').then(res => {
+        resolve(res);
+      }).catch(err => {
+        reject(err);
+      });
+    });
   }
 };

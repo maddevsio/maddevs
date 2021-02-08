@@ -1,5 +1,5 @@
 <template>
-  <form class="footer-form form">
+  <!-- <form class="footer-form form">
     <ValidationObserver v-slot="{ invalid }" ref="form">
       <div class="fields-list">
         <ValidationProvider class="field-item" rules="max:50" v-slot="{ classes, errors }">
@@ -32,7 +32,12 @@
       />
     </ValidationObserver>
     <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
-  </form>
+  </form> -->
+  <button
+    class="ui-button--transparent-bgc submit-button"
+    @click="createLead"
+    type="button"
+  >Create Lead</button>
 </template>
 
 <script>
@@ -65,6 +70,14 @@ export default {
     modalTitle: 'Mad Devs Website Forms'
   }),
   methods: {
+    createLead() {
+      const data = {
+        name: 'Test name: ' + Math.random(0, 100)
+      };
+      this.$store.dispatch('createNewLead', data).then(res => {
+        console.log(res, '!!!!!');
+      });
+    },
     getPrivacyCheckboxState(privacyState) {
       this.agreeWithPrivacyPolicy = privacyState;
     },

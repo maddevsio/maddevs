@@ -3,7 +3,13 @@ const router = express.Router();
 const sendpulse = require('sendpulse-api');
 const dotenv = require('dotenv');
 const shell = require('shelljs');
+const axios = require('axios');
+const low = require('lowdb');
+const FileAsync = require('lowdb/adapters/FileAsync');
+
 dotenv.config();
+
+const adapter = new FileAsync('db.json');
 
 const API_USER_ID = process.env.NODE_SENDPULSE_API_USER_ID;
 const API_KEY = process.env.NODE_SENDPULSE_API_KEY;
@@ -93,5 +99,46 @@ router.post('/prismic-hook', (req, res) => {
     message: 'error'
   });
 });
+
+router.post('/create-lead', (req, res) => {
+  low(adapter).then(db => {
+    const token = db.get('access_token').value();
+    const data = [
+      {
+        name: 'Name: ' + Math.random(1, 100)
+      }
+    ];
+    let config = {
+      headers: {
+        'Authorization': 'Bearer ' + token
+      }
+    };
+    axios.post('https://denisoed.amocrm.ru/api/v4/leads', data, config).then((res) => {
+      res.status(200).json(res);
+    }).catch(err => {
+      if (err.response && err.response.status && err.response.status === 401) {
+        const data = {
+          "client_id": "71d61f61-fc0a-4b5a-80a6-cc9790a0fa80",
+          "client_secret": "0Edn0bCESOw1smOgKhLhRARW6Ov7Qbm3eSrBdFrJXSLvWE3BOygybOSMLqFgjWX3",
+          "grant_type": "refresh_token",
+          "refresh_token": process.env.NODE_AMOCRM_REFRESH_TOKEN,
+          "redirect_uri": "https://d3164645214f.ngrok.io"
+        };
+        updateAccessToken(data);
+      }
+      res.json(err);
+    });
+  });
+});
+
+function updateAccessToken(data) {
+  axios.post('https://denisoed.amocrm.ru/oauth2/access_token', data).then((res) => {
+    low(adapter).then(db => {
+      db.set('access_token', res.data.access_token).write();
+    });
+  }).catch(err => {
+    return err;
+  });
+};
 
 module.exports = router;

@@ -67,3 +67,35 @@ $ aws s3 sync --acl public-read ./videos s3://maddevsio-videos/
 $ aws s3 cp --acl public-read ./videos/main.ef19480.mp4 s3://maddevsio-videos/
 ```
 For get access keys write merynes345@gmail.com
+
+## Errors
+
+If you get this errors, please create `.env` file and set vars.
+
+Example `.env` var can you see in [.env.example](./.env.example) file
+
+```bash
+ FATAL  Cannot read property 'replace' of undefined                                                                                                                                        14:43:55
+
+  at ModuleContainer.install (node_modules/@nuxtjs/prismic/src/index.js:16:33)
+  at ModuleContainer.addModule (node_modules/@nuxt/core/dist/core.js:235:34)
+  at promise.then (node_modules/@nuxt/utils/dist/utils.js:1859:43)
+  at process._tickCallback (internal/process/next_tick.js:68:7)
+  at Function.Module.runMain (internal/modules/cjs/loader.js:834:11)
+  at startup (internal/bootstrap/node.js:283:19)
+  at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+
+
+   ╭────────────────────────────────────────────────────────────╮
+   │                                                            │
+   │   ✖ Nuxt Fatal Error                                       │
+   │                                                            │
+   │   TypeError: Cannot read property 'replace' of undefined   │
+   │                                                            │
+   ╰────────────────────────────────────────────────────────────╯
+
+npm ERR! code 1
+npm ERR! path /home/denisoed/projects/maddevs
+npm ERR! command failed
+npm ERR! command sh -c nuxt
+```
