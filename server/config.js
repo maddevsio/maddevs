@@ -1,0 +1,5 @@
+const AMOCRM_REFRESH_TOKEN = process.env.NODE_AMOCRM_REFRESH_TOKEN;
+
+module.exports = {
+  AMOCRM_REFRESH_TOKEN
+};
