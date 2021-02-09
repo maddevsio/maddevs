@@ -133,6 +133,9 @@ export default {
       if(window.innerWidth > 991) {
         this.$refs.header.style.width = `calc(100% - ${scrollBarWidth}px)` || '100%';
         this.$refs.overlay.style.width = `calc(100% - ${scrollBarWidth}px)` || '100%';
+      } else {
+        this.$refs.header.style.width = '100%';
+        this.$refs.overlay.style.width = '100%';
       }
     }
   }
