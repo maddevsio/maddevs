@@ -726,7 +726,7 @@ export default {
       translateY: null,
       isSafari: false,
       isIphone: false,
-      smoothness: 4,
+      smoothness: 5,
       cardsGridHeight: null,
       newHeight: null,
       currentYear: new Date().getFullYear()
@@ -806,7 +806,7 @@ export default {
         this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`;
         this.translateY = ((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness); // Сохраняем текщее свойство transform для дальнейшего расчета в функции handleScrollUp()
         this.newHeight = this.cardsGridHeight - Math.abs(((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness - 96));
-        this.$refs.cardsGridContainer.style.height = `${this.newHeight}px`;
+        // this.$refs.cardsGridContainer.style.height = `${this.newHeight}px`;
       }
     },
     handleScrollUp() {
@@ -817,7 +817,7 @@ export default {
         this.$refs.cardsRightColumn.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`;
         this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`;
         if (this.cardsGridHeight > this.newHeight) {
-          this.$refs.cardsGridContainer.style.height = `${this.newHeight += 4}px`;
+          // this.$refs.cardsGridContainer.style.height = `${this.newHeight += 3}px`;
         }
       }
     },
