@@ -400,7 +400,7 @@
           Then all information, collected and processed by these services, is controlled via the Web Admin panel, which is connected to the PostgreSQL database, OSRM, Firebase and push notification services. We use Docker containers throughout the development process.
         </TextParagraph>
         <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">Technology stack</h3>
-        <ListTechnologies class="m-96_bottom media-m-48_bottom">
+        <ListTechnologies class="m-96_bottom media-m-48_bottom case_list-technologies-godee">
           <ListTechnologiesItem
             v-for="(technologiesItem, i) in technologiesList"
             :key="i"
@@ -716,6 +716,50 @@ export default {
         {
           techName: 'Datadog',
           className: 'infrastructure-datadog'
+        },
+        {
+          techName: 'Android',
+          className: 'mobile-android-black-text'
+        },
+        {
+          techName: 'Suite',
+          className: 'devops-suite'
+        },
+        {
+          techName: 'Jira Software',
+          className: 'pm-jira'
+        },
+        {
+          techName: 'GRPC',
+          className: 'backend-grpc case_technologies-item__grpc'
+        },
+        {
+          techName: 'iOS',
+          className: 'mobile-apple-black'
+        },
+        {
+          techName: 'UptimeRobot',
+          className: 'other-uptime-robot case_technologies-item__uptime-robot'
+        },
+        {
+          techName: 'Mapbox',
+          className: 'frontend-mapbox'
+        },
+        {
+          techName: 'Vue JS',
+          className: 'frontend-vue'
+        },
+        {
+          techName: 'Sentry',
+          className: 'devops-sentry-dark'
+        },
+        {
+          techName: 'Here Traffic',
+          className: 'other-here'
+        },
+        {
+          techName: 'Basecamp',
+          className: 'pm-basecamp-transparent-bg'
         }
       ],
       videoIdList: [
