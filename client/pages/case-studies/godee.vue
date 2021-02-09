@@ -591,7 +591,7 @@ export default {
         },
         {
           name: 'Rustom Kulbatyrov',
-          position: 'Android Developer',
+          position: 'Senior Android Developer',
           fileName: 'kulbatyrov',
           fileExtension: 'png',
           alt: ''
@@ -605,7 +605,7 @@ export default {
         },
         {
           name: 'Belek Abylov',
-          position: 'Backend Developer',
+          position: 'Senior Backend Developer',
           fileName: 'belek-abylov',
           fileExtension: 'png',
           alt: ''
@@ -619,7 +619,7 @@ export default {
         },
         {
           name: 'Gennady Karev',
-          position: 'Backend Developer',
+          position: 'Senior Backend Developer',
           fileName: 'gennady-karev',
           fileExtension: 'png',
           alt: ''
@@ -654,7 +654,7 @@ export default {
         },
         {
           name: 'Pavel Pushkarev',
-          position: 'iOS Developer',
+          position: 'Senior iOS Developer',
           fileName: 'pushkarev',
           fileExtension: 'png',
           alt: ''
