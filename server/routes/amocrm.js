@@ -20,6 +20,8 @@ low(adapter).then(database => {
       access_token: 'xxx',
       refresh_token: _config_.AMOCRM_REFRESH_TOKEN
     }).write();
+  } else {
+    db.set('refresh_token', _config_.AMOCRM_REFRESH_TOKEN).write();
   }
 });
 // -- END init LowDB --- //
@@ -35,9 +37,9 @@ function refreshAccessToken() {
     refresh_token: db.get('refresh_token').value(),
     redirect_uri: _config_.AMOCRM_REDIRECT_URI
   };
-  return new Promise((resolve, reject) => {
-    const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
-    return axiosApiInstance.post(url, data).then(res => {
+  const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
+  return new Promise(function (resolve, reject) {
+    axiosApiInstance.post(url, data).then(res => {
       db.set('access_token', res.data.access_token).write();
       db.set('refresh_token', res.data.refresh_token).write();
       resolve(db.get('access_token').value());
@@ -48,7 +50,6 @@ function refreshAccessToken() {
 }
 
 function createLead(req, res) {
-  console.log('GOOOOOOO');
   const url = _config_.AMOCRM_API_URL + '/api/v4/leads';
   const data = [
     {
@@ -60,10 +61,8 @@ function createLead(req, res) {
       'Authorization': 'Bearer ' + db.get('access_token').value()
     }
   };
-  console.log('CREATING');
   return axiosApiInstance.post(url, data, config)
     .then(newCard => {
-      console.log('CREATED');
       res.status(200).json(newCard.data);
     })
     .catch(error => {
@@ -77,7 +76,11 @@ const processFailedQueue = (error = null) => {
   failedQueue = [];
 };
 
-const isAuthenticationError = error => error.response.status === 401;
+const isAccessTokenExpired = error => error.response.status === 401;
+const isRefreshTokenExpired = error => error.response.data.hint &&
+  error.response.data.hint === 'Token has been revoked';
+const isRefreshTokenInvalid = error => error.response.data.hint &&
+  error.response.data.hint === 'Cannot decrypt the refresh token';
 
 const handleAuthenticationError = async error => {
   if (error.config._retry) {
@@ -100,35 +103,46 @@ const handleAuthenticationError = async error => {
 
   return refreshAccessToken()
     .then(access_token => {
-      console.log('REFRESHED');
       processFailedQueue();
       originalRequest.headers.Authorization = 'Bearer ' + access_token;
       return axios(originalRequest);
     })
     .catch(error => {
       processFailedQueue(error);
-      return Promise.reject(error);
-    })
-    .then(() => {
-      isRefreshing = false;
+      return handleRefreshTokenInvalid();
     });
 };
 
 /**
- * This function will be called if the refresh token is invalid. 
+ * This functions will be called if the refresh token is invalid. 
  */
-const handleRefreshTokenError = error => {
-  console.log('Refresh token expired!');
-  return Promise.reject(error);
+const handleRefreshTokenInvalid = () => {
+  const respErr = {
+    status: 400,
+    detail: 'Refresh token invalid!'
+  };
+  return Promise.reject(respErr);
+};
+
+const handleRefreshTokenExpired = () => {
+  const respErr = {
+    status: 401,
+    detail: 'Refresh token expired!'
+  };
+  return Promise.reject(respErr);
 };
 
 axiosApiInstance.interceptors.response.use(response => {
   return response;
 }, function (error) {
-  console.log('ERROR');
-  if (error.response && isAuthenticationError(error)) {
-    return handleAuthenticationError(error)
-      .catch(error => handleRefreshTokenError(error));
+  if (error.response && isRefreshTokenInvalid(error)) {
+    return handleRefreshTokenInvalid();
+  }
+  if (error.response && isRefreshTokenExpired(error)) {
+    return handleRefreshTokenExpired();
+  }
+  if (error.response && isAccessTokenExpired(error)) {
+    return handleAuthenticationError(error);
   }
   return Promise.reject(error);
 });

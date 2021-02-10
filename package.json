@@ -72,5 +72,11 @@
     "sass-loader": "^7.3.1",
     "vue-jest": "^3.0.6"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run test"
+    }
+  },
   "snyk": true
 }
