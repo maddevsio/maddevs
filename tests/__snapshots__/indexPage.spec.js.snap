@@ -965,7 +965,7 @@ exports[`Index page renders correctly 1`] = `
           class="single-project"
           href="/case-studies/sir-john-monash-centre"
           style="background: rgb(34, 31, 32);"
-          target="_blank"
+          target="_self"
         >
           <div
             class="single-project__container single-project__container_white-letters-theme"
@@ -1127,9 +1127,9 @@ exports[`Index page renders correctly 1`] = `
         </a>
         <a
           class="single-project"
-          href="https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5?source=friends_link&sk=3e3f75a7f35f0e4d9d447a19e015330a"
+          href="/case-studies/godee"
           style="background: rgb(255, 106, 1);"
-          target="_blank"
+          target="_self"
         >
           <div
             class="single-project__container"
@@ -1317,7 +1317,7 @@ exports[`Index page renders correctly 1`] = `
               class="single-project"
               href="/case-studies/sir-john-monash-centre"
               style="background: rgb(34, 31, 32);"
-              target="_blank"
+              target="_self"
             >
               <div
                 class="single-project__container single-project__container_white-letters-theme"
@@ -1487,9 +1487,9 @@ exports[`Index page renders correctly 1`] = `
           >
             <a
               class="single-project"
-              href="https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5?source=friends_link&sk=3e3f75a7f35f0e4d9d447a19e015330a"
+              href="/case-studies/godee"
               style="background: rgb(255, 106, 1);"
-              target="_blank"
+              target="_self"
             >
               <div
                 class="single-project__container"
