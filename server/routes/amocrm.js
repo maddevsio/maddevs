@@ -13,7 +13,15 @@ const axiosApiInstance = axios.create();
 // --- Init LowDB --- //
 const adapter = new FileAsync(_config_.STORAGE_TOKEN);
 let db;
-(async () => db = await low(adapter))();
+low(adapter).then(database => {
+  db = database;
+  if (!db.get('refresh_token').value() && db.get('refresh_token').value() !== '') {
+    db.defaults({
+      access_token: 'xxx',
+      refresh_token: _config_.AMOCRM_REFRESH_TOKEN
+    }).write();
+  }
+});
 // -- END init LowDB --- //
 
 let isRefreshing = false;
@@ -24,7 +32,7 @@ function refreshAccessToken() {
     client_id: _config_.AMOCRM_CLIENT_ID,
     client_secret: _config_.AMOCRM_CLIENT_SECRET,
     grant_type: 'refresh_token',
-    refresh_token: db.get('refresh_token').value(), //_config_.AMOCRM_REFRESH_TOKEN
+    refresh_token: db.get('refresh_token').value(),
     redirect_uri: _config_.AMOCRM_REDIRECT_URI
   };
   return new Promise((resolve, reject) => {
@@ -39,9 +47,8 @@ function refreshAccessToken() {
   });
 }
 
-function createLead() {
+function createLead(req, res) {
   console.log('GOOOOOOO');
-  const token = db.get('access_token').value();
   const url = _config_.AMOCRM_API_URL + '/api/v4/leads';
   const data = [
     {
@@ -50,14 +57,17 @@ function createLead() {
   ];
   let config = {
     headers: {
-      'Authorization': 'Bearer ' + token
+      'Authorization': 'Bearer ' + db.get('access_token').value()
     }
   };
   console.log('CREATING');
   return axiosApiInstance.post(url, data, config)
-    .then(res => {
+    .then(newCard => {
       console.log('CREATED');
-      return res;
+      res.status(200).json(newCard.data);
+    })
+    .catch(error => {
+      res.status(500).json(error);
     });
 }
 
@@ -98,6 +108,9 @@ const handleAuthenticationError = async error => {
     .catch(error => {
       processFailedQueue(error);
       return Promise.reject(error);
+    })
+    .then(() => {
+      isRefreshing = false;
     });
 };
 
