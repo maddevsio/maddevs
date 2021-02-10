@@ -773,6 +773,9 @@ export default {
       smoothness: 5,
       cardsGridHeight: null,
       newHeight: null,
+      paddingBottom: 96,
+      headerHeight: 62,
+      heightHasBeenSet: false,
       currentYear: new Date().getFullYear()
     };
   },
@@ -843,26 +846,26 @@ export default {
       const leftColumnOffsetBottom = Math.abs(this.$refs.cardsLeftColumn.getBoundingClientRect().bottom - this.$refs.cardsContainer.getBoundingClientRect().bottom); // Получаем расстояние снизу отностильно родителя и переводим число в положительное 
       const rightColumnOffsetBottom = Math.abs(this.$refs.cardsRightColumn.getBoundingClientRect().bottom - this.$refs.cardsContainer.getBoundingClientRect().bottom); 
       if (
-        (this.$refs.cardsContainer.getBoundingClientRect().top - 62) < 0 &&
+        (this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) < 0 &&
         leftColumnOffsetBottom > rightColumnOffsetBottom // Стратуем скрипт когда секция в зоне видимости и останавливаем когда левая и правая колонка выравниваються с друг другом по оси z
       ) {
-        this.$refs.cardsRightColumn.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`; // число 62 - это высота хедера, высчитываем её чтобы скрипт стартовал когда секция ещё не заехала за хедер 
-        this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`;
-        this.translateY = ((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness); // Сохраняем текщее свойство transform для дальнейшего расчета в функции handleScrollUp()
-        this.newHeight = this.cardsGridHeight - Math.abs(((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness - 96));
-        // this.$refs.cardsGridContainer.style.height = `${this.newHeight}px`;
+        this.$refs.cardsRightColumn.style.transform = `translateY(${(this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) / this.smoothness}px)`;
+        this.$refs.developmentGoalsTitle.style.transform = `translateY(${(this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) / this.smoothness}px)`;
+        this.translateY = (this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) / this.smoothness; // Сохраняем текщее свойство transform для дальнейшего расчета в функции handleScrollUp()
+        this.newHeight = this.cardsGridHeight - Math.abs((this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) / this.smoothness - this.paddingBottom);
+        this.$refs.cardsGridContainer.style.height = `${this.newHeight}px`;
       }
     },
     handleScrollUp() {
       if (
-        (this.$refs.cardsContainer.getBoundingClientRect().top - 62) <= 0 && // Останавливаем скрипт когда контейнер достигает верха страницы чтобы правая колонка больше не смещалась и заняла свое изначальное положение
-        (this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness > this.translateY // Данное сравнение нужно для того чтобы избежать рывков карточек при скролле вверх, скрипт запускается в случае если текущий отступ контейнера карточек равен числу в переменной translateY
+        (this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) <= 0 && // Останавливаем скрипт когда контейнер достигает верха страницы чтобы правая колонка больше не смещалась и заняла свое изначальное положение
+        (this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) / this.smoothness > this.translateY // Данное сравнение нужно для того чтобы избежать рывков карточек при скролле вверх, скрипт запускается в случае если текущий отступ контейнера карточек равен числу в переменной translateY
       ) {
-        this.$refs.cardsRightColumn.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`;
-        this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`;
+        this.$refs.cardsRightColumn.style.transform = `translateY(${(this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) / this.smoothness}px)`;
+        this.$refs.developmentGoalsTitle.style.transform = `translateY(${(this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) / this.smoothness}px)`;
         if (this.cardsGridHeight > this.newHeight) {
-          // this.$refs.cardsGridContainer.style.height = `${this.newHeight += 3}px`;
-        }
+          this.$refs.cardsGridContainer.style.height = `${this.newHeight += 3}px`;
+        } 
       }
     },
     setDefaultStylesForCards() {
