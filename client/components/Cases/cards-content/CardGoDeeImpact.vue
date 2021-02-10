@@ -1,19 +1,19 @@
 <template>
   <div class="card-content">
     <div class="card-content_number-block">
-      <h3 class="card-content_title">60</h3>
+      <p class="card-content_title">60</p>
       <TextParagraph color="#ffffff">
         Total routes
       </TextParagraph>
     </div>
     <div class="card-content_number-block">
-      <h3 class="card-content_title">30</h3>
+      <p class="card-content_title">30</p>
       <TextParagraph color="#ffffff">
         Active routes
       </TextParagraph>
     </div>
     <div class="card-content_number-block">
-      <h3 class="card-content_title">25K</h3>
+      <p class="card-content_title">25K</p>
       <TextParagraph color="#ffffff">
         Passengers per month
       </TextParagraph>

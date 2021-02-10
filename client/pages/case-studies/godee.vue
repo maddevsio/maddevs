@@ -48,7 +48,7 @@
       <section class="container_regular">
         <h3 class="case_title_h3 m-12_bottom">Minimum viable product MVP</h3>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
-          Before investing a considerable amount of money in building software, hiring personnel and acquiring minibuses, GoDee wanted to develop an MVP to understand the market fit potential.
+          Before investing a considerable amount of money in building software, hiring personnel and acquiring minibuses, GoDee wanted to <router-link :to="`/services#software-development`" class="case_link">develop an MVP</router-link> to understand the market fit potential.
         </TextParagraph>
         <TextParagraph class="m-24_bottom">
           Although services such as GoDee exist in other parts of the world, simulating these programs in Ho Chi Minh City was pointless because the city’s commuting culture is quite different. That’s why user feedback was crucial to its improvement and key to its current rapid growth.
@@ -71,11 +71,11 @@
         </div>
       </section>
       <section class="container_full case_before-after-gif-wrapper background-color-silver m-48_top media-m-20_top">
-        <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="">
+        <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="GoDee 2018 and GoDee now.">
       </section>
       <p class="case_image-description m-12_top m-104_bottom media-m-48_bottom">GoDee 2018 VS. GoDee {{ currentYear }}</p>
       <section class="container_regular" ref="cardsContainer">
-        <h2 class="case_title_h2 m-24_bottom case_text-align-center" ref="developmentGoalsTitle">Development goals</h2> <!-- Выставить оступы на мобиле -->
+        <h3 class="case_title_h2 m-24_bottom case_text-align-center" ref="developmentGoalsTitle">Development goals</h3>
         <div class="case_development-goals p-96_bottom media-p-48_bottom" ref="cardsGridContainer">
           <div class="case_development-goals-left-column" ref="cardsLeftColumn">
             <Card class="background-color-silver">
@@ -107,7 +107,7 @@
             <Card class="background-color-silver">
               <CardGoDeeFeature title="Referrals" iconName="referrals">
                 <TextParagraph>
-                  To add to the commuter experience, inside the GoDee application, users can share referrals and get free rides as bonuses. After receiving a referral code from a referrer, the user can input the code from the booking confirmation as a promo code and enjoy one free ride. Meanwhile, referrers also receive a reward with "an “X" number of free rides.
+                  To add to the commuter experience, inside the shuttle bus application, users can share referrals and get free rides as bonuses. After receiving a referral code from a referrer, the user can input the code from the booking confirmation as a promo code and enjoy one free ride. Meanwhile, referrers also receive a reward with "an “X" number of free rides.
                 </TextParagraph>
               </CardGoDeeFeature>
             </Card>
@@ -135,20 +135,20 @@
                   fileExtension="png"
                   :mobileImage="false"
                   mobileImageName=""
-                  alt=""
+                  alt="GoDee: bus transit app for passengers"
                 />
               </Card>
               <Card class="background-color-godee-black-card">
                 <CardGoDeePreview 
                   className="application-for-drivers"
                   title="Mobile applications for drivers"
-                  description="An app for drivers enables them to pick up passengers from bus stops, according to their previously booked tickets."
+                  description="The drivers’ transit app enables them to pick up passengers from bus stops, according to their previously booked tickets."
                   pictureFolder="godee"
                   fileName="application-for-drivers-card"
                   fileExtension="png"
                   :mobileImage="false"
                   mobileImageName=""
-                  alt=""
+                  alt="GoDee: transportation app for drivers"
                 />
               </Card>
             </div>
@@ -162,14 +162,14 @@
                 fileExtension="png"
                 :mobileImage="true"
                 mobileImageName="godee-admin-panel-card-mobile"
-                alt=""
+                alt="GoDee: bus app management system"
               />
             </Card>
           </div>
         </div>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-96_top media-m-48_top m-12_bottom">Intelligent management panel</h2>
+        <h3 class="case_title_h2 m-96_top media-m-48_top m-12_bottom">Intelligent management panel</h3>
         <TextParagraph>
           GoDee's rapid growth since its early stages required easy-to-scale business processes and automated route management. Although, in theory, everything can be done with an army of sales representatives and route operators, GoDee wanted to automate routine operations so it could expand to other cities and countries.
         </TextParagraph>
@@ -184,7 +184,7 @@
           Let users send <span class="case_red-text">trip requests</span> and tell you what works for them. This feature was available initially through the MVP phase, and it enables GoDee route managers to build effective routes by understanding real commuter demand.
         </TextParagraph>
         <TextParagraph>
-          Inside the application, users can submit a trip request with pick-up and drop-off locations at the desired time. The request is added to the list on the managers' dashboard.
+          Inside the transportation application, users can submit a trip request with pick-up and drop-off locations at the desired time. The request is added to the list on the managers' dashboard.
         </TextParagraph>
       </section>
       <section class="container_middle">
@@ -193,7 +193,7 @@
             pictureFolder="common"
             fileName="safari-top-bar-white"
             fileExtension="jpg"
-            alt=""
+            alt="Safari Browser Top Bar White"
             :boxShadow="false"
             :lazyLoading="true"
             :borderRadius="false"
@@ -202,7 +202,7 @@
             pictureFolder="godee"
             fileName="godee-admin-panel"
             fileExtension="jpg"
-            alt=""
+            alt="Bus transit app admin panel"
             :boxShadow="false"
             :lazyLoading="true"
             :borderRadius="false"
@@ -225,7 +225,7 @@
               pictureFolder="common"
               fileName="safari-top-bar-white"
               fileExtension="jpg"
-              alt=""
+              alt="Safari Browser Top Bar White"
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
@@ -267,7 +267,7 @@
               pictureFolder="common"
               fileName="safari-top-bar-white"
               fileExtension="jpg"
-              alt=""
+              alt="Safari Browser Top Bar White"
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
@@ -318,7 +318,7 @@
             pictureFolder="godee"
             fileName="route-optimization"
             fileExtension="jpg"
-            alt=""
+            alt="Safari Browser Top Bar White"
             :boxShadow="false"
             :lazyLoading="true"
             :borderRadius="false"
@@ -329,7 +329,7 @@
               pictureFolder="common"
               fileName="safari-top-bar-white"
               fileExtension="jpg"
-              alt=""
+              alt="Safari Browser Top Bar White"
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
@@ -376,7 +376,7 @@
               pictureFolder="godee"
               fileName="real-time-eta-phone"
               fileExtension="png"
-              alt=""
+              alt="Transit app in Vietnam"
               :boxShadow="false"
               :lazyLoading="true"
             />
@@ -386,7 +386,7 @@
       <section class="container_full case_infrastructure-scheme-wrapper background-color-silver m-48_bottom media-m-24_bottom">
         <section class="container_middle">
           <h2 class="case_title_h2 m-24_bottom case_text-align-center">Infrastructure scheme</h2>
-          <img src="../../assets/img/Cases/godee/gif/infrastructure-scheme.gif" class="case_gif case_infrastructure-scheme-gif" alt="">
+          <img src="../../assets/img/Cases/godee/gif/infrastructure-scheme.gif" class="case_gif case_infrastructure-scheme-gif" alt="GoDee Infrastructure Scheme">
         </section>
       </section>
       <section class="container_regular">
@@ -423,7 +423,7 @@
           pictureFolder="godee"
           fileName="datadog"
           fileExtension="jpg"
-          alt=""
+          alt="Monitoring Configuration for transportation app"
           :boxShadow="true"
           :lazyLoading="true"
         />
@@ -465,7 +465,7 @@
           authorPosition="Co-founder of GoDee"
           fileName="ruslan-karabukaev"
           fileExtension="png"
-          alt=""
+          alt="Ruslan Karabukaev"
           pictureFolder="godee"
         >
           We built the platforms from scratch with the Mad Devs team, who dedicatedly supported and guided us to take proper action on several ideas and requirements. We have attracted 27,000 users so far, thanks to their continuous support for improvement and development.
@@ -540,39 +540,10 @@ export default {
   },
   name: 'GoDeeCase',
   layout: 'godee-case-layout',
-  head() {
-    return {
-      title: this.title,
-      meta: [
-        {name: 'description', content: this.description},
-        {property: 'og:url', content: this.ogUrl},
-        {property: 'og:type', content: 'website'},
-        {property: 'og:title', content: this.title},
-        {property: 'og:description', content: this.description},
-        {
-          property: 'og:image',
-          content: 'https://maddevs.io/Open-Graph.png'
-        }
-      ],
-      link: [
-        {
-          rel: 'canonical',
-          href: 'https://maddevs.io/case-studies/godee/'
-        }
-      ],
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [
-        {
-          type: 'application/ld+json',
-          innerHTML: ''
-        }
-      ]
-    };
-  },
   data() {
     return {
-      title: '',
-      description: '',
+      title: 'Mad Devs Case Study: GoDee - Convenient Shuttle Bus Service',
+      description: 'GoDee is a transportation app and management panel to commute in Ho Chi Minh City, Vietnam. Users can find routes, select the time, book seats and pay for the ride online.',
       ogUrl: 'https://maddevs.io/case-studies/godee/',
       team: [
         {
@@ -580,49 +551,49 @@ export default {
           position: 'CTO',
           fileName: 'oleg-puzanov',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Oleg Puzanov'
         },
         {
           name: 'Ruslan Kasymov',
           position: 'QA Engineer and PM',
           fileName: 'kasymov',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Ruslan Kasymov'
         },
         {
           name: 'Rustom Kulbatyrov',
           position: 'Senior Android <br class="case_position-mobile-break"> Developer',
           fileName: 'kulbatyrov',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Rustom Kulbatyrov'
         },
         {
           name: 'Vladimir Pan',
           position: 'QA Engineer',
           fileName: 'vladimir-pan',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Vladimir Pan'
         },
         {
           name: 'Belek Abylov',
           position: 'Senior Backend <br class="case_position-mobile-break"> Developer',
           fileName: 'belek-abylov',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Belek Abylov'
         },
         {
           name: 'Bakhtiyar Ganyev',
           position: 'iOS Developer',
           fileName: 'bakhtiyar-ganyev',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Bakhtiyar Ganyev'
         },
         {
           name: 'Gennady Karev',
           position: 'Senior Backend <br class="case_position-mobile-break"> Developer',
           fileName: 'gennady-karev',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Gennady Karev'
         },
         {
           name: 'Aleksandr Krivov',
@@ -636,28 +607,28 @@ export default {
           position: 'UX/UI Specialist',
           fileName: 'vlada-arevkova',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Vlada Arevkova'
         },
         {
           name: 'Erik Sultanaliev',
           position: 'Backend Developer',
           fileName: 'erik-sultanaliev',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Erik Sultanaliev'
         },
         {
           name: 'Myrzabek Kylychev',
           position: 'Android Developer',
           fileName: 'myrzabek-kylychev',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Myrzabek Kylychev'
         },
         {
           name: 'Pavel Pushkarev',
           position: 'Senior iOS Developer',
           fileName: 'pushkarev',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Pavel Pushkarev'
         }
       ],
       technologiesList: [
@@ -874,6 +845,35 @@ export default {
       this.$refs.developmentGoalsTitle.style.transform = 'translateY(0px)';
       this.$refs.cardsGridContainer.style.height = '100%';
     }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {name: 'description', content: this.description},
+        {property: 'og:url', content: this.ogUrl},
+        {property: 'og:type', content: 'website'},
+        {property: 'og:title', content: this.title},
+        {property: 'og:description', content: this.description},
+        {
+          property: 'og:image',
+          content: 'https://maddevs.io/Open-Graph.png'
+        }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://maddevs.io/case-studies/godee/'
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: GoDee - Convenient Shuttle Bus Service", "description": "GoDee is a reliable way to commute in Ho Chi Minh City, Vietnam. Its shuttle buses take express routes that link the city’s major districts and popular destinations. GoDee helps riders save time, money and the planet due to its lower ecological impact. The app-based system allows users to find a route, select the time, book a seat and pay for the ride online.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group Limited"}}'
+        }
+      ]
+    };
   }
 };
 </script>

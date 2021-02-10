@@ -19,7 +19,7 @@
         :pictureFolder="pictureFolder"
         :fileName="mobileImageName"
         :fileExtension="fileExtension"
-        :alt="alt"
+        alt="GoDee: bus app management control panel"
         :lazyLoading="false"
         v-if="mobileImage"
         :class="{'card-content_mobile-image': mobileImage}"
