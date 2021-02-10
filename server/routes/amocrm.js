@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 const axios = require('axios');
 const low = require('lowdb');
 const FileAsync = require('lowdb/adapters/FileAsync');
-const config = require('../config');
+const _config_ = require('../config');
 
 dotenv.config();
 
@@ -11,7 +11,7 @@ const router = express.Router();
 const axiosApiInstance = axios.create();
 
 // --- Init LowDB --- //
-const adapter = new FileAsync('db.json');
+const adapter = new FileAsync(_config_.STORAGE_TOKEN);
 let db;
 (async () => db = await low(adapter))();
 // -- END init LowDB --- //
@@ -21,14 +21,15 @@ let failedQueue = [];
 
 function refreshAccessToken() {
   const data = {
-    client_id: '71d61f61-fc0a-4b5a-80a6-cc9790a0fa80',
-    client_secret: '0Edn0bCESOw1smOgKhLhRARW6Ov7Qbm3eSrBdFrJXSLvWE3BOygybOSMLqFgjWX3',
+    client_id: _config_.AMOCRM_CLIENT_ID,
+    client_secret: _config_.AMOCRM_CLIENT_SECRET,
     grant_type: 'refresh_token',
-    refresh_token: config.AMOCRM_REFRESH_TOKEN,
-    redirect_uri: 'https://d3164645214f.ngrok.io'
+    refresh_token: db.get('refresh_token').value(), //_config_.AMOCRM_REFRESH_TOKEN
+    redirect_uri: _config_.AMOCRM_REDIRECT_URI
   };
   return new Promise((resolve, reject) => {
-    return axiosApiInstance.post('https://denisoed.amocrm.ru/oauth2/access_token', data).then(res => {
+    const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
+    return axiosApiInstance.post(url, data).then(res => {
       db.set('access_token', res.data.access_token).write();
       db.set('refresh_token', res.data.refresh_token).write();
       resolve(db.get('access_token').value());
@@ -41,6 +42,7 @@ function refreshAccessToken() {
 function createLead() {
   console.log('GOOOOOOO');
   const token = db.get('access_token').value();
+  const url = _config_.AMOCRM_API_URL + '/api/v4/leads';
   const data = [
     {
       name: 'Name: ' + Math.random(1, 100)
@@ -52,7 +54,7 @@ function createLead() {
     }
   };
   console.log('CREATING');
-  return axiosApiInstance.post('https://denisoed.amocrm.ru/api/v4/leads', data, config)
+  return axiosApiInstance.post(url, data, config)
     .then(res => {
       console.log('CREATED');
       return res;
