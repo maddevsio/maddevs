@@ -210,16 +210,18 @@
         </div>
         <CardGoDeePrimsAlgorithm class="m-48_bottom media-m-24_bottom"/>
         <div class="case_html-video-wrapper m-48_top media-m-24_top m-60_bottom media-m-24_bottom case_box-shadow">
-          <Picture 
-            pictureFolder="godee"
-            fileName="trip-request-map"
-            fileExtension="jpg"
-            alt=""
-            :boxShadow="false"
-            :lazyLoading="true"
-            :borderRadius="false"
-            v-if="isIphone"
-          />
+          <div class="case_video-flex-wrapper" v-if="isIphone">
+            <Picture 
+              pictureFolder="common"
+              fileName="safari-top-bar-white"
+              fileExtension="jpg"
+              alt="Safari Browser Top Bar White"
+              :boxShadow="false"
+              :lazyLoading="true"
+              :borderRadius="false"
+            />
+            <img src="../../assets/img/Cases/godee/jpg/trip-request-map.jpg" alt="Trip Request Map">
+          </div>
           <div class="case_video-flex-wrapper" v-else>
             <Picture 
               pictureFolder="common"
@@ -252,16 +254,18 @@
       </section>
       <section class="container_middle m-48_top media-m-24_top m-48_bottom media-m-24_bottom">
         <div class="case_html-video-wrapper case_box-shadow">
-          <Picture
-            pictureFolder="godee"
-            fileName="trip-monitor"
-            fileExtension="jpg"
-            alt=""
-            :boxShadow="true"
-            :lazyLoading="true"
-            :borderRadius="false"
-            v-if="isIphone"
-          />
+          <div class="case_video-flex-wrapper" v-if="isIphone">
+            <Picture 
+              pictureFolder="common"
+              fileName="safari-top-bar-white"
+              fileExtension="jpg"
+              alt="Safari Browser Top Bar White"
+              :boxShadow="false"
+              :lazyLoading="true"
+              :borderRadius="false"
+            />
+            <img src="../../assets/img/Cases/godee/jpg/trip-monitor.jpg" alt="Trip Monitor">
+          </div>
           <div class="case_video-flex-wrapper" v-else>
             <Picture 
               pictureFolder="common"
@@ -314,16 +318,18 @@
       </section>
       <section class="container_middle m-24_top media-m-12_top m-48_bottom media-m-24_bottom">
         <div class="case_html-video-wrapper case_box-shadow">
-          <Picture 
-            pictureFolder="godee"
-            fileName="route-optimization"
-            fileExtension="jpg"
-            alt="Safari Browser Top Bar White"
-            :boxShadow="false"
-            :lazyLoading="true"
-            :borderRadius="false"
-            v-if="isIphone"
-          />
+          <div class="case_video-flex-wrapper" v-if="isIphone">
+            <Picture 
+              pictureFolder="common"
+              fileName="safari-top-bar-white"
+              fileExtension="jpg"
+              alt="Safari Browser Top Bar White"
+              :boxShadow="false"
+              :lazyLoading="true"
+              :borderRadius="false"
+            />
+            <img src="../../assets/img/Cases/godee/jpg/route-optimization.jpg" alt="Route Optimization">
+          </div>
           <div class="case_video-flex-wrapper" v-else>
             <Picture 
               pictureFolder="common"
@@ -785,7 +791,7 @@ export default {
       }
     });
 
-    if(/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) { // Проверяем какой сейчас браузер чтобы на основе этих данных отрисовать блок
+    if(/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) { // Проверяем какой сейчас браузер чтобы на основе этих данных отрисовываем блок
       this.isSafari = true;
     } else {
       this.isSafari = false;
@@ -811,9 +817,6 @@ export default {
       let observer = new IntersectionObserver(callback, options);
       observer.observe(document.getElementById(video));
     });
-  },
-  destroyed() {
-    this.$refs.main.removeEventListener('scroll', () => {});
   },
   methods: {
     handleScrollDown() {
