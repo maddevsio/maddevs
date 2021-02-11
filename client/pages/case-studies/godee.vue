@@ -755,10 +755,10 @@ export default {
       return `${process.env.awsUrl}/map-stops.mp4`;
     },
     getPathTripMonitorVideo: () => {
-      return `${process.env.awsUrl}/trip-monitor.mp4`;
+      return `${process.env.awsUrl}/trip-monitor.f4a33e6.mp4`;
     },
     getPathRouteOptimizationVideo: () => {
-      return `${process.env.awsUrl}/route-optimization.mp4`;
+      return `${process.env.awsUrl}/route-optimization.f5a2ff0.mp4`;
     }
   },
   mounted() {
