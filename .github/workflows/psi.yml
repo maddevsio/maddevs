@@ -21,4 +21,5 @@ jobs:
     - run: node psi.js
       env:
         NODE_PAGESPEED_SLACK_WEBHOOK_URL: ${{ secrets.NODE_PAGESPEED_SLACK_WEBHOOK_URL }}
+        NODE_GOOGLEAPIS_KEY: ${{ secrets.NODE_GOOGLEAPIS_KEY }}
         CI: true
