@@ -1,4 +1,4 @@
 {
   "verbose": true,
-  "ignore": ["server/storage/"]
+  "ignore": ["server/storage/", "client/"]
 }

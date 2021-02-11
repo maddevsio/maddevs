@@ -39,7 +39,8 @@ function refreshAccessToken() {
   };
   const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
   return new Promise(function (resolve, reject) {
-    axiosApiInstance.post(url, data).then(res => {
+    // Don't use axiosApiInstance. Use new instance
+    axios.post(url, data).then(res => {
       db.set('access_token', res.data.access_token).write();
       db.set('refresh_token', res.data.refresh_token).write();
       resolve(db.get('access_token').value());
@@ -51,11 +52,7 @@ function refreshAccessToken() {
 
 function createLead(req, res) {
   const url = _config_.AMOCRM_API_URL + '/api/v4/leads';
-  const data = [
-    {
-      name: 'Name: ' + Math.random(1, 100)
-    }
-  ];
+  const data = req.body;
   let config = {
     headers: {
       'Authorization': 'Bearer ' + db.get('access_token').value()
@@ -105,7 +102,7 @@ const handleAuthenticationError = async error => {
     .then(access_token => {
       processFailedQueue();
       originalRequest.headers.Authorization = 'Bearer ' + access_token;
-      return axios(originalRequest);
+      return axiosApiInstance(originalRequest);
     })
     .catch(error => {
       processFailedQueue(error);
@@ -144,7 +141,7 @@ axiosApiInstance.interceptors.response.use(response => {
   if (error.response && isAccessTokenExpired(error)) {
     return handleAuthenticationError(error);
   }
-  return Promise.reject(error);
+  return Promise.reject(error.response.data);
 });
 
 // ------------ Routes ------------- //

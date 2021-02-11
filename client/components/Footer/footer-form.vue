@@ -1,5 +1,5 @@
 <template>
-  <!-- <form class="footer-form form">
+  <form class="footer-form form">
     <ValidationObserver v-slot="{ invalid }" ref="form">
       <div class="fields-list">
         <ValidationProvider class="field-item" rules="max:50" v-slot="{ classes, errors }">
@@ -32,12 +32,7 @@
       />
     </ValidationObserver>
     <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
-  </form> -->
-  <button
-    class="ui-button--transparent-bgc submit-button"
-    @click="createLead"
-    type="button"
-  >Create Lead</button>
+  </form>
 </template>
 
 <script>
@@ -71,11 +66,17 @@ export default {
   }),
   methods: {
     createLead() {
-      const data = {
-        name: 'Test name: ' + Math.random(0, 100)
-      };
+      const data = [{
+        name: this.fullName,
+        custom_fields_values: [
+          { field_id: 261281, values: [{ value: this.email }] }, // Email
+          { field_id: 261437, values: [{ value: this.projectDescriber }] } // Project Describer
+        ]
+      }];
       this.$store.dispatch('createNewLead', data).then(res => {
-        console.log(res, '!!!!!');
+        this.setStateForElements('Order a project now');
+      }).catch(() => {
+        this.setStateForElements('Order a project now');
       });
     },
     getPrivacyCheckboxState(privacyState) {
@@ -103,9 +104,9 @@ export default {
         };
         this.$store.dispatch('sendEmail', this.form).then(res => {
           this.onSubmit = false;
+          this.createLead();
           if (res.status === 200) {
             this.isEmailSent = true;
-            this.setStateForElements('Order a project now');
             this.resetForm();
             setTimeout(() => {
               this.isEmailSent = false;

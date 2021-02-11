@@ -12,7 +12,7 @@ export const actions = {
   sendEmail({commit}, payload) {
     const data = payload;
     return new Promise((resolve, reject) => {
-      this.$axios.post('send-email', data).then(res => {
+      this.$axios.post('sendpulse/send-email', data).then(res => {
         if (res.status === 200) {
           commit('SET_STATUS_FOR_SEND_EMAIL', true);
           resolve(res);
@@ -23,9 +23,10 @@ export const actions = {
       });
     });
   },
-  createNewLead() {
+  createNewLead({ commit }, payload) {
+    const data = payload;
     return new Promise((resolve, reject) => {
-      this.$axios.post('create-lead').then(res => {
+      this.$axios.post('amocrm/create-lead', data).then(res => {
         resolve(res);
       }).catch(err => {
         reject(err);
