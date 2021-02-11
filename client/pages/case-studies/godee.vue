@@ -220,7 +220,7 @@
               :lazyLoading="true"
               :borderRadius="false"
             />
-            <img src="../../assets/img/Cases/godee/jpg/trip-request-map.jpg" alt="Trip Request Map">
+            <img src="../../assets/img/Cases/godee/jpg/trip-request-map.jpg" class="case_img" alt="Trip Request Map">
           </div>
           <div class="case_video-flex-wrapper" v-else>
             <Picture 
@@ -264,7 +264,7 @@
               :lazyLoading="true"
               :borderRadius="false"
             />
-            <img src="../../assets/img/Cases/godee/jpg/trip-monitor.jpg" alt="Trip Monitor">
+            <img src="../../assets/img/Cases/godee/jpg/trip-monitor.jpg" class="case_img" alt="Trip Monitor">
           </div>
           <div class="case_video-flex-wrapper" v-else>
             <Picture 
@@ -328,7 +328,7 @@
               :lazyLoading="true"
               :borderRadius="false"
             />
-            <img src="../../assets/img/Cases/godee/jpg/route-optimization.jpg" alt="Route Optimization">
+            <img src="../../assets/img/Cases/godee/jpg/route-optimization.jpg" class="case_img" alt="Route Optimization">
           </div>
           <div class="case_video-flex-wrapper" v-else>
             <Picture 
