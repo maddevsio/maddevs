@@ -2,7 +2,7 @@
   <div class="card-content">
     <div class="card-content_card-description">
       <div class="card-content_description-item">
-        <h4 class="case_title_h4 card-content_description-title">Solution: GoDee</h4>
+        <h3 class="case_title_h4 card-content_description-title">Solution: GoDee</h3>
         <TextParagraph class="card-content_paragraph card-content_paragraph-first">
           GoDee’s founders decided to make buses smarter and more user-friendly. They tackled the problem by converting traditional buses into a modern service provider  offering a convenient and predictable ride that’s just one click away.
         </TextParagraph>
@@ -12,9 +12,9 @@
       </div>
     </div>
     <div class="card-content_prices">
-      <h2 class="card-content_prices-title">
+      <h4 class="card-content_prices-title">
         $65<span>/ month</span>
-      </h2>
+      </h4>
       <div class="card-content_price-item">
         <TextParagraph class="card-content_price-heading">
           One trip

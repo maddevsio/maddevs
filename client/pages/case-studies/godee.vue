@@ -48,7 +48,7 @@
       <section class="container_regular">
         <h3 class="case_title_h3 m-12_bottom">Minimum viable product MVP</h3>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
-          Before investing a considerable amount of money in building software, hiring personnel and acquiring minibuses, GoDee wanted to develop an MVP to understand the market fit potential.
+          Before investing a considerable amount of money in building software, hiring personnel and acquiring minibuses, GoDee wanted to <router-link :to="`/services#software-development`" class="case_link">develop an MVP</router-link> to understand the market fit potential.
         </TextParagraph>
         <TextParagraph class="m-24_bottom">
           Although services such as GoDee exist in other parts of the world, simulating these programs in Ho Chi Minh City was pointless because the city’s commuting culture is quite different. That’s why user feedback was crucial to its improvement and key to its current rapid growth.
@@ -71,12 +71,12 @@
         </div>
       </section>
       <section class="container_full case_before-after-gif-wrapper background-color-silver m-48_top media-m-20_top">
-        <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="">
+        <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="GoDee 2018 and GoDee now.">
       </section>
       <p class="case_image-description m-12_top m-104_bottom media-m-48_bottom">GoDee 2018 VS. GoDee {{ currentYear }}</p>
-      <section class="container_regular" ref="cardsContainer">
-        <h2 class="case_title_h2 m-24_bottom case_text-align-center" ref="developmentGoalsTitle">Development goals</h2> <!-- Выставить оступы на мобиле -->
-        <div class="case_development-goals p-96_bottom media-p-48_bottom" ref="cardsGridContainer">
+      <section class="container_regular" ref="cardsRootElem">
+        <h3 class="case_title_h2 m-24_bottom case_text-align-center" ref="developmentGoalsTitle">Development goals</h3>
+        <div class="case_development-goals p-96_bottom media-p-48_bottom" ref="cardsContainer">
           <div class="case_development-goals-left-column" ref="cardsLeftColumn">
             <Card class="background-color-silver">
               <CardGoDeeFeature title="GPS" iconName="gps">
@@ -107,7 +107,7 @@
             <Card class="background-color-silver">
               <CardGoDeeFeature title="Referrals" iconName="referrals">
                 <TextParagraph>
-                  To add to the commuter experience, inside the GoDee application, users can share referrals and get free rides as bonuses. After receiving a referral code from a referrer, the user can input the code from the booking confirmation as a promo code and enjoy one free ride. Meanwhile, referrers also receive a reward with "an “X" number of free rides.
+                  To add to the commuter experience, inside the shuttle bus application, users can share referrals and get free rides as bonuses. After receiving a referral code from a referrer, the user can input the code from the booking confirmation as a promo code and enjoy one free ride. Meanwhile, referrers also receive a reward with "an “X" number of free rides.
                 </TextParagraph>
               </CardGoDeeFeature>
             </Card>
@@ -135,20 +135,20 @@
                   fileExtension="png"
                   :mobileImage="false"
                   mobileImageName=""
-                  alt=""
+                  alt="GoDee: bus transit app for passengers"
                 />
               </Card>
               <Card class="background-color-godee-black-card">
                 <CardGoDeePreview 
                   className="application-for-drivers"
                   title="Mobile applications for drivers"
-                  description="An app for drivers enables them to pick up passengers from bus stops, according to their previously booked tickets."
+                  description="The drivers’ transit app enables them to pick up passengers from bus stops, according to their previously booked tickets."
                   pictureFolder="godee"
                   fileName="application-for-drivers-card"
                   fileExtension="png"
                   :mobileImage="false"
                   mobileImageName=""
-                  alt=""
+                  alt="GoDee: transportation app for drivers"
                 />
               </Card>
             </div>
@@ -162,14 +162,14 @@
                 fileExtension="png"
                 :mobileImage="true"
                 mobileImageName="godee-admin-panel-card-mobile"
-                alt=""
+                alt="GoDee: bus app management system"
               />
             </Card>
           </div>
         </div>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-96_top media-m-48_top m-12_bottom">Intelligent management panel</h2>
+        <h3 class="case_title_h2 m-96_top media-m-48_top m-12_bottom">Intelligent management panel</h3>
         <TextParagraph>
           GoDee's rapid growth since its early stages required easy-to-scale business processes and automated route management. Although, in theory, everything can be done with an army of sales representatives and route operators, GoDee wanted to automate routine operations so it could expand to other cities and countries.
         </TextParagraph>
@@ -184,7 +184,7 @@
           Let users send <span class="case_red-text">trip requests</span> and tell you what works for them. This feature was available initially through the MVP phase, and it enables GoDee route managers to build effective routes by understanding real commuter demand.
         </TextParagraph>
         <TextParagraph>
-          Inside the application, users can submit a trip request with pick-up and drop-off locations at the desired time. The request is added to the list on the managers' dashboard.
+          Inside the transportation application, users can submit a trip request with pick-up and drop-off locations at the desired time. The request is added to the list on the managers' dashboard.
         </TextParagraph>
       </section>
       <section class="container_middle">
@@ -193,7 +193,7 @@
             pictureFolder="common"
             fileName="safari-top-bar-white"
             fileExtension="jpg"
-            alt=""
+            alt="Safari Browser Top Bar White"
             :boxShadow="false"
             :lazyLoading="true"
             :borderRadius="false"
@@ -202,7 +202,7 @@
             pictureFolder="godee"
             fileName="godee-admin-panel"
             fileExtension="jpg"
-            alt=""
+            alt="Bus transit app admin panel"
             :boxShadow="false"
             :lazyLoading="true"
             :borderRadius="false"
@@ -210,22 +210,24 @@
         </div>
         <CardGoDeePrimsAlgorithm class="m-48_bottom media-m-24_bottom"/>
         <div class="case_html-video-wrapper m-48_top media-m-24_top m-60_bottom media-m-24_bottom case_box-shadow">
-          <Picture 
-            pictureFolder="godee"
-            fileName="trip-request-map"
-            fileExtension="jpg"
-            alt=""
-            :boxShadow="false"
-            :lazyLoading="true"
-            :borderRadius="false"
-            v-if="isIphone"
-          />
+          <div class="case_video-flex-wrapper" v-if="isIphone">
+            <Picture 
+              pictureFolder="common"
+              fileName="safari-top-bar-white"
+              fileExtension="jpg"
+              alt="Safari Browser Top Bar White"
+              :boxShadow="false"
+              :lazyLoading="true"
+              :borderRadius="false"
+            />
+            <img src="../../assets/img/Cases/godee/jpg/trip-request-map.jpg" class="case_img" alt="Trip Request Map">
+          </div>
           <div class="case_video-flex-wrapper" v-else>
             <Picture 
               pictureFolder="common"
               fileName="safari-top-bar-white"
               fileExtension="jpg"
-              alt=""
+              alt="Safari Browser Top Bar White"
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
@@ -252,22 +254,24 @@
       </section>
       <section class="container_middle m-48_top media-m-24_top m-48_bottom media-m-24_bottom">
         <div class="case_html-video-wrapper case_box-shadow">
-          <Picture
-            pictureFolder="godee"
-            fileName="trip-monitor"
-            fileExtension="jpg"
-            alt=""
-            :boxShadow="true"
-            :lazyLoading="true"
-            :borderRadius="false"
-            v-if="isIphone"
-          />
+          <div class="case_video-flex-wrapper" v-if="isIphone">
+            <Picture 
+              pictureFolder="common"
+              fileName="safari-top-bar-white"
+              fileExtension="jpg"
+              alt="Safari Browser Top Bar White"
+              :boxShadow="false"
+              :lazyLoading="true"
+              :borderRadius="false"
+            />
+            <img src="../../assets/img/Cases/godee/jpg/trip-monitor.jpg" class="case_img" alt="Trip Monitor">
+          </div>
           <div class="case_video-flex-wrapper" v-else>
             <Picture 
               pictureFolder="common"
               fileName="safari-top-bar-white"
               fileExtension="jpg"
-              alt=""
+              alt="Safari Browser Top Bar White"
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
@@ -314,22 +318,24 @@
       </section>
       <section class="container_middle m-24_top media-m-12_top m-48_bottom media-m-24_bottom">
         <div class="case_html-video-wrapper case_box-shadow">
-          <Picture 
-            pictureFolder="godee"
-            fileName="route-optimization"
-            fileExtension="jpg"
-            alt=""
-            :boxShadow="false"
-            :lazyLoading="true"
-            :borderRadius="false"
-            v-if="isIphone"
-          />
+          <div class="case_video-flex-wrapper" v-if="isIphone">
+            <Picture 
+              pictureFolder="common"
+              fileName="safari-top-bar-white"
+              fileExtension="jpg"
+              alt="Safari Browser Top Bar White"
+              :boxShadow="false"
+              :lazyLoading="true"
+              :borderRadius="false"
+            />
+            <img src="../../assets/img/Cases/godee/jpg/route-optimization.jpg" class="case_img" alt="Route Optimization">
+          </div>
           <div class="case_video-flex-wrapper" v-else>
             <Picture 
               pictureFolder="common"
               fileName="safari-top-bar-white"
               fileExtension="jpg"
-              alt=""
+              alt="Safari Browser Top Bar White"
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
@@ -376,7 +382,7 @@
               pictureFolder="godee"
               fileName="real-time-eta-phone"
               fileExtension="png"
-              alt=""
+              alt="Transit app in Vietnam"
               :boxShadow="false"
               :lazyLoading="true"
             />
@@ -386,7 +392,7 @@
       <section class="container_full case_infrastructure-scheme-wrapper background-color-silver m-48_bottom media-m-24_bottom">
         <section class="container_middle">
           <h2 class="case_title_h2 m-24_bottom case_text-align-center">Infrastructure scheme</h2>
-          <img src="../../assets/img/Cases/godee/gif/infrastructure-scheme.gif" class="case_gif case_infrastructure-scheme-gif" alt="">
+          <img src="../../assets/img/Cases/godee/gif/infrastructure-scheme.gif" class="case_gif case_infrastructure-scheme-gif" alt="GoDee Infrastructure Scheme">
         </section>
       </section>
       <section class="container_regular">
@@ -400,7 +406,7 @@
           Then all information, collected and processed by these services, is controlled via the Web Admin panel, which is connected to the PostgreSQL database, OSRM, Firebase and push notification services. We use Docker containers throughout the development process.
         </TextParagraph>
         <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">Technology stack</h3>
-        <ListTechnologies class="m-96_bottom media-m-48_bottom">
+        <ListTechnologies class="m-96_bottom media-m-48_bottom case_list-technologies-godee">
           <ListTechnologiesItem
             v-for="(technologiesItem, i) in technologiesList"
             :key="i"
@@ -423,7 +429,7 @@
           pictureFolder="godee"
           fileName="datadog"
           fileExtension="jpg"
-          alt=""
+          alt="Monitoring Configuration for transportation app"
           :boxShadow="true"
           :lazyLoading="true"
         />
@@ -465,7 +471,7 @@
           authorPosition="Co-founder of GoDee"
           fileName="ruslan-karabukaev"
           fileExtension="png"
-          alt=""
+          alt="Ruslan Karabukaev"
           pictureFolder="godee"
         >
           We built the platforms from scratch with the Mad Devs team, who dedicatedly supported and guided us to take proper action on several ideas and requirements. We have attracted 27,000 users so far, thanks to their continuous support for improvement and development.
@@ -540,39 +546,10 @@ export default {
   },
   name: 'GoDeeCase',
   layout: 'godee-case-layout',
-  head() {
-    return {
-      title: this.title,
-      meta: [
-        {name: 'description', content: this.description},
-        {property: 'og:url', content: this.ogUrl},
-        {property: 'og:type', content: 'website'},
-        {property: 'og:title', content: this.title},
-        {property: 'og:description', content: this.description},
-        {
-          property: 'og:image',
-          content: 'https://maddevs.io/Open-Graph.png'
-        }
-      ],
-      link: [
-        {
-          rel: 'canonical',
-          href: 'https://maddevs.io/case-studies/godee/'
-        }
-      ],
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [
-        {
-          type: 'application/ld+json',
-          innerHTML: ''
-        }
-      ]
-    };
-  },
   data() {
     return {
-      title: '',
-      description: '',
+      title: 'Mad Devs Case Study: GoDee - Convenient Shuttle Bus Service',
+      description: 'GoDee is a transportation app and management panel to commute in Ho Chi Minh City, Vietnam. Users can find routes, select the time, book seats and pay for the ride online.',
       ogUrl: 'https://maddevs.io/case-studies/godee/',
       team: [
         {
@@ -580,49 +557,49 @@ export default {
           position: 'CTO',
           fileName: 'oleg-puzanov',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Oleg Puzanov'
         },
         {
           name: 'Ruslan Kasymov',
           position: 'QA Engineer and PM',
           fileName: 'kasymov',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Ruslan Kasymov'
         },
         {
           name: 'Rustom Kulbatyrov',
-          position: 'Android Developer',
+          position: 'Senior Android <br class="case_position-mobile-break"> Developer',
           fileName: 'kulbatyrov',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Rustom Kulbatyrov'
         },
         {
           name: 'Vladimir Pan',
           position: 'QA Engineer',
           fileName: 'vladimir-pan',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Vladimir Pan'
         },
         {
           name: 'Belek Abylov',
-          position: 'Backend Developer',
+          position: 'Senior Backend <br class="case_position-mobile-break"> Developer',
           fileName: 'belek-abylov',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Belek Abylov'
         },
         {
           name: 'Bakhtiyar Ganyev',
           position: 'iOS Developer',
           fileName: 'bakhtiyar-ganyev',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Bakhtiyar Ganyev'
         },
         {
           name: 'Gennady Karev',
-          position: 'Backend Developer',
+          position: 'Senior Backend <br class="case_position-mobile-break"> Developer',
           fileName: 'gennady-karev',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Gennady Karev'
         },
         {
           name: 'Aleksandr Krivov',
@@ -636,28 +613,28 @@ export default {
           position: 'UX/UI Specialist',
           fileName: 'vlada-arevkova',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Vlada Arevkova'
         },
         {
           name: 'Erik Sultanaliev',
           position: 'Backend Developer',
           fileName: 'erik-sultanaliev',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Erik Sultanaliev'
         },
         {
           name: 'Myrzabek Kylychev',
           position: 'Android Developer',
           fileName: 'myrzabek-kylychev',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Myrzabek Kylychev'
         },
         {
           name: 'Pavel Pushkarev',
-          position: 'iOS Developer',
+          position: 'Senior iOS Developer',
           fileName: 'pushkarev',
           fileExtension: 'png',
-          alt: ''
+          alt: 'Pavel Pushkarev'
         }
       ],
       technologiesList: [
@@ -716,6 +693,50 @@ export default {
         {
           techName: 'Datadog',
           className: 'infrastructure-datadog'
+        },
+        {
+          techName: 'Android',
+          className: 'mobile-android-black-text'
+        },
+        {
+          techName: 'Suite',
+          className: 'devops-suite'
+        },
+        {
+          techName: 'Jira Software',
+          className: 'pm-jira'
+        },
+        {
+          techName: 'GRPC',
+          className: 'backend-grpc case_technologies-item__grpc'
+        },
+        {
+          techName: 'iOS',
+          className: 'mobile-apple-black'
+        },
+        {
+          techName: 'UptimeRobot',
+          className: 'other-uptime-robot case_technologies-item__uptime-robot'
+        },
+        {
+          techName: 'Mapbox',
+          className: 'frontend-mapbox'
+        },
+        {
+          techName: 'Vue JS',
+          className: 'frontend-vue'
+        },
+        {
+          techName: 'Sentry',
+          className: 'devops-sentry-dark'
+        },
+        {
+          techName: 'Here Traffic',
+          className: 'other-here'
+        },
+        {
+          techName: 'Basecamp',
+          className: 'pm-basecamp-transparent-bg'
         }
       ],
       videoIdList: [
@@ -726,9 +747,12 @@ export default {
       translateY: null,
       isSafari: false,
       isIphone: false,
-      smoothness: 4,
-      cardsGridHeight: null,
+      scrollSpeed: 5,
+      cardsContainerHeight: null,
       newHeight: null,
+      paddingBottom: 96,
+      headerHeight: 62,
+      heightHasBeenSet: false,
       currentYear: new Date().getFullYear()
     };
   },
@@ -737,10 +761,10 @@ export default {
       return `${process.env.awsUrl}/map-stops.mp4`;
     },
     getPathTripMonitorVideo: () => {
-      return `${process.env.awsUrl}/trip-monitor.mp4`;
+      return `${process.env.awsUrl}/trip-monitor.f4a33e6.mp4`;
     },
     getPathRouteOptimizationVideo: () => {
-      return `${process.env.awsUrl}/route-optimization.mp4`;
+      return `${process.env.awsUrl}/route-optimization.f5a2ff0.mp4`;
     }
   },
   mounted() {
@@ -751,7 +775,7 @@ export default {
     };
     let previousScroll = 0;
     let currentScroll = 0;
-    this.cardsGridHeight = this.$refs.cardsGridContainer.getBoundingClientRect().height;
+    this.cardsContainerHeight = this.$refs.cardsContainer.getBoundingClientRect().height;
 
     this.$refs.main.addEventListener('scroll', () => {
       if (window.innerWidth > 880) { // На разрешении экрана 880 происходит перестройка секции и анимация не должна больше отрабатывать
@@ -767,7 +791,7 @@ export default {
       }
     });
 
-    if(/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) { // Проверяем какой сейчас браузер чтобы на основе этих данных отрисовать блок
+    if(/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) { // Проверяем какой сейчас браузер чтобы на основе этих данных отрисовываем блок
       this.isSafari = true;
     } else {
       this.isSafari = false;
@@ -796,37 +820,66 @@ export default {
   },
   methods: {
     handleScrollDown() {
-      const leftColumnOffsetBottom = Math.abs(this.$refs.cardsLeftColumn.getBoundingClientRect().bottom - this.$refs.cardsContainer.getBoundingClientRect().bottom); // Получаем расстояние снизу отностильно родителя и переводим число в положительное 
-      const rightColumnOffsetBottom = Math.abs(this.$refs.cardsRightColumn.getBoundingClientRect().bottom - this.$refs.cardsContainer.getBoundingClientRect().bottom); 
+      const leftColumnOffsetBottom = Math.abs(this.$refs.cardsLeftColumn.getBoundingClientRect().bottom - this.$refs.cardsRootElem.getBoundingClientRect().bottom); // Получаем расстояние снизу отностильно родителя и переводим число в положительное 
+      const rightColumnOffsetBottom = Math.abs(this.$refs.cardsRightColumn.getBoundingClientRect().bottom - this.$refs.cardsRootElem.getBoundingClientRect().bottom); 
       if (
-        (this.$refs.cardsContainer.getBoundingClientRect().top - 62) < 0 &&
+        (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) < 0 &&
         leftColumnOffsetBottom > rightColumnOffsetBottom // Стратуем скрипт когда секция в зоне видимости и останавливаем когда левая и правая колонка выравниваються с друг другом по оси z
       ) {
-        this.$refs.cardsRightColumn.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`; // число 62 - это высота хедера, высчитываем её чтобы скрипт стартовал когда секция ещё не заехала за хедер 
-        this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`;
-        this.translateY = ((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness); // Сохраняем текщее свойство transform для дальнейшего расчета в функции handleScrollUp()
-        this.newHeight = this.cardsGridHeight - Math.abs(((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness - 96));
-        this.$refs.cardsGridContainer.style.height = `${this.newHeight}px`;
+        this.$refs.cardsRightColumn.style.transform = `translateY(${(this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed}px)`;
+        this.$refs.developmentGoalsTitle.style.transform = `translateY(${(this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed}px)`;
+        this.translateY = (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed; // Сохраняем текщее свойство transform для дальнейшего расчета в функции handleScrollUp()
+        this.newHeight = this.cardsContainerHeight - Math.abs((this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed - this.paddingBottom);
+        this.$refs.cardsContainer.style.height = `${this.newHeight}px`;
       }
     },
     handleScrollUp() {
       if (
-        (this.$refs.cardsContainer.getBoundingClientRect().top - 62) <= 0 && // Останавливаем скрипт когда контейнер достигает верха страницы чтобы правая колонка больше не смещалась и заняла свое изначальное положение
-        (this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness > this.translateY // Данное сравнение нужно для того чтобы избежать рывков карточек при скролле вверх, скрипт запускается в случае если текущий отступ контейнера карточек равен числу в переменной translateY
+        (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) <= 0 && // Останавливаем скрипт когда контейнер достигает верха страницы чтобы правая колонка больше не смещалась и заняла свое изначальное положение
+        (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed > this.translateY // Данное сравнение нужно для того чтобы избежать рывков карточек при скролле вверх, скрипт запускается в случае если текущий отступ контейнера карточек равен числу в переменной translateY
       ) {
-        this.$refs.cardsRightColumn.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`;
-        this.$refs.developmentGoalsTitle.style.transform = `translateY(${((this.$refs.cardsContainer.getBoundingClientRect().top - 62) / this.smoothness)}px)`;
-        if (this.cardsGridHeight > this.newHeight) {
-          this.$refs.cardsGridContainer.style.height = `${this.newHeight += 4}px`;
-        }
+        this.$refs.cardsRightColumn.style.transform = `translateY(${(this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed}px)`;
+        this.$refs.developmentGoalsTitle.style.transform = `translateY(${(this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed}px)`;
+        if (this.cardsContainerHeight > this.newHeight) {
+          this.$refs.cardsContainer.style.height = `${this.newHeight += 3}px`;
+        } 
       }
     },
     setDefaultStylesForCards() {
-      this.cardsGridHeight = this.$refs.cardsGridContainer.getBoundingClientRect().height;
+      this.cardsContainerHeight = this.$refs.cardsContainer.getBoundingClientRect().height;
       this.$refs.cardsRightColumn.style.transform = 'translateY(0px)';
       this.$refs.developmentGoalsTitle.style.transform = 'translateY(0px)';
-      this.$refs.cardsGridContainer.style.height = '100%';
+      this.$refs.cardsContainer.style.height = '100%';
     }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {name: 'description', content: this.description},
+        {property: 'og:url', content: this.ogUrl},
+        {property: 'og:type', content: 'website'},
+        {property: 'og:title', content: this.title},
+        {property: 'og:description', content: this.description},
+        {
+          property: 'og:image',
+          content: 'https://maddevs.io/Open-Graph.png'
+        }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://maddevs.io/case-studies/godee/'
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: GoDee - Convenient Shuttle Bus Service", "description": "GoDee is a reliable way to commute in Ho Chi Minh City, Vietnam. Its shuttle buses take express routes that link the city’s major districts and popular destinations. GoDee helps riders save time, money and the planet due to its lower ecological impact. The app-based system allows users to find a route, select the time, book a seat and pay for the ride online.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group Limited"}}'
+        }
+      ]
+    };
   }
 };
 </script>

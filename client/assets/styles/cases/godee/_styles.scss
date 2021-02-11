@@ -189,7 +189,15 @@
   }
 
   &_trip-request-video {
-    width: calc(100% - -2px); // Скрывают черную полосу у видео с правой стороны
+    width: calc(100% - -2px); // Скрываю черную полосу у видео с правой стороны
+  }
+
+  &_position-mobile-break {
+    display: none;
+
+    @media screen and (max-width: 620px) {
+      display: block;
+    }
   }
 
   @media screen and (max-width: 1440px) {

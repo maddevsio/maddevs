@@ -28,4 +28,10 @@ export default {
       @include grid(repeat(5, 1fr), auto, 5px, 33px);
     }
   }
+
+  .case_list-technologies-godee {
+    @media screen and (max-width: 768px) {
+      @include grid(repeat(5, 1fr), auto, 5px, 33px);
+    }
+  }
 </style>

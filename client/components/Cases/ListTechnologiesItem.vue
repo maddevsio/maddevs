@@ -45,9 +45,16 @@ export default {
       @include default_text($text-color--tech-label-black, 14px, 171%, -0.035em, normal);
     }
 
-    &__docker {
+    &__docker,
+    &__grpc {
       &::before {
         width: 70px;
+      }
+    }
+
+    &__uptime-robot {
+      &::before {
+        width: 92px;
       }
     }
 
@@ -61,9 +68,16 @@ export default {
         }
       }
 
-      &__docker {
+      &__docker,
+      &__grpc {
         &::before {
-          width: 50px;
+          width: 40px;
+        }
+      }
+
+      &__uptime-robot {
+        &::before {
+          width: 62px;
         }
       }
 

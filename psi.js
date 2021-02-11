@@ -1,13 +1,21 @@
-/* const request = require('request');
-const psi = require('psi');
+const request = require('request');
+const axios = require('axios');
+
 require('dotenv').config();
 
 (async () => {
   // Get the PageSpeed Insights report
   const webhookUrl = process.env.NODE_PAGESPEED_SLACK_WEBHOOK_URL;
+  const googleapisKey = process.env.NODE_GOOGLEAPIS_KEY;
+
   if (!webhookUrl) {
     throw new Error('Please add a slack webhookUrl in var NODE_PAGESPEED_SLACK_WEBHOOK_URL on your .env file');
   }
+
+  if (!googleapisKey) {
+    throw new Error('Please add a slack googleapisKey in var NODE_GOOGLEAPIS_KEY on your .env file');
+  }
+
   const getColorLargestContentfulPaint = ms => {
     // 0 - 2 seconds, green, fast;
     // 2 - 4 seconds orange, okay;
@@ -42,7 +50,7 @@ require('dotenv').config();
   };
   const createMessage = data => {
     const message = {
-      text: 'Simulate page load: https://maddevs.co',
+      text: 'Simulate page load: https://maddevs.io',
       attachments: [
         {
           text: `${data['first-contentful-paint'].title}: ${data['first-contentful-paint'].sec}`,
@@ -77,30 +85,28 @@ require('dotenv').config();
     };
     request(options);
   };
-  const {
-    data
-  } = await psi('https://maddevs.co');
+  const resp = await axios.get(`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://maddevs.io&key=${googleapisKey}`);
   const reportResult = {
     'first-contentful-paint': {
-      sec: data.lighthouseResult.audits['first-contentful-paint'].displayValue,
-      title: data.lighthouseResult.audits['first-contentful-paint'].title,
-      color: getColorLargestContentfulPaint(data.lighthouseResult.audits['first-contentful-paint'].numericValue)
+      sec: resp.data.lighthouseResult.audits['first-contentful-paint'].displayValue,
+      title: resp.data.lighthouseResult.audits['first-contentful-paint'].title,
+      color: getColorLargestContentfulPaint(resp.data.lighthouseResult.audits['first-contentful-paint'].numericValue)
     },
     interactive: {
-      sec: data.lighthouseResult.audits.interactive.displayValue,
-      title: data.lighthouseResult.audits.interactive.title,
-      color: getColorLargestContentfulPaint(data.lighthouseResult.audits.interactive.numericValue)
+      sec: resp.data.lighthouseResult.audits.interactive.displayValue,
+      title: resp.data.lighthouseResult.audits.interactive.title,
+      color: getColorLargestContentfulPaint(resp.data.lighthouseResult.audits.interactive.numericValue)
     },
     'total-blocking-time': {
-      sec: data.lighthouseResult.audits['total-blocking-time'].displayValue,
-      title: data.lighthouseResult.audits['total-blocking-time'].title,
-      color: getColorTotalBlockingTime(data.lighthouseResult.audits['total-blocking-time'].numericValue)
+      sec: resp.data.lighthouseResult.audits['total-blocking-time'].displayValue,
+      title: resp.data.lighthouseResult.audits['total-blocking-time'].title,
+      color: getColorTotalBlockingTime(resp.data.lighthouseResult.audits['total-blocking-time'].numericValue)
     },
     'cumulative-layout-shift': {
-      sec: data.lighthouseResult.audits['cumulative-layout-shift'].displayValue,
-      title: data.lighthouseResult.audits['cumulative-layout-shift'].title,
-      color: getColorCumulativeLayoutShift(data.lighthouseResult.audits['cumulative-layout-shift'].numericValue)
+      sec: resp.data.lighthouseResult.audits['cumulative-layout-shift'].displayValue,
+      title: resp.data.lighthouseResult.audits['cumulative-layout-shift'].title,
+      color: getColorCumulativeLayoutShift(resp.data.lighthouseResult.audits['cumulative-layout-shift'].numericValue)
     }
   };
   sendMessageToSlack(reportResult);
-})(); */
+})();
