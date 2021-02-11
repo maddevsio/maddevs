@@ -18,7 +18,8 @@
     "heroku-cleanup": "rm -rf client && rm -rf .nuxt",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
-    "test": "jest --config=jest.config.develop.js && node ./jest_config/jest-coverage-badges.js -output './client/static'",
+    "test": "jest --config=jest.config.develop.js",
+    "test:coverage": "jest --config=jest.config.develop.js && node ./jest_config/jest-coverage-badges.js -output './client/static'",
     "test:staging": "jest --config=jest.config.staging.js"
   },
   "dependencies": {
@@ -32,6 +33,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jquery": "^3.5.1",
+    "lowdb": "^1.0.0",
     "nuxt": "^2.14.12",
     "prismjs": "^1.23.0",
     "request": "^2.88.2",

@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const redirectList = require('./server/routes/json/redirect');
+const redirectList = require('./server/json/redirect');
 
 const app = express();
 app.use(cors());
