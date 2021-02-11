@@ -1,10 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer form renders correctly 1`] = `
-<button
-  class="ui-button--transparent-bgc submit-button"
-  type="button"
+<form
+  class="footer-form form"
 >
-  Create Lead
-</button>
+  <validationobserver-stub />
+   
+  <transition-stub
+    name="fade"
+  >
+    <!---->
+  </transition-stub>
+</form>
 `;

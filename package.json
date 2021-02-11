@@ -18,7 +18,8 @@
     "heroku-cleanup": "rm -rf client && rm -rf .nuxt",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
-    "test": "jest --config=jest.config.develop.js && node ./jest_config/jest-coverage-badges.js -output './client/static'",
+    "test": "jest --config=jest.config.develop.js",
+    "test:coverage": "jest --config=jest.config.develop.js && node ./jest_config/jest-coverage-badges.js -output './client/static'",
     "test:staging": "jest --config=jest.config.staging.js"
   },
   "dependencies": {
