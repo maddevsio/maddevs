@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardGoDeeFeature renders correctly 1`] = `
+<div
+  class="card-content"
+>
+  <div
+    class="card-content_icon card-content_-icon"
+  />
+   
+  <h4
+    class="case_title_h4 card-content_title"
+  >
+    
+  </h4>
+   
+</div>
+`;

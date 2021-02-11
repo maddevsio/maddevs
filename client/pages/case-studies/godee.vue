@@ -74,9 +74,9 @@
         <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="GoDee 2018 and GoDee now.">
       </section>
       <p class="case_image-description m-12_top m-104_bottom media-m-48_bottom">GoDee 2018 VS. GoDee {{ currentYear }}</p>
-      <section class="container_regular" ref="cardsContainer">
+      <section class="container_regular" ref="cardsRootElem">
         <h3 class="case_title_h2 m-24_bottom case_text-align-center" ref="developmentGoalsTitle">Development goals</h3>
-        <div class="case_development-goals p-96_bottom media-p-48_bottom" ref="cardsGridContainer">
+        <div class="case_development-goals p-96_bottom media-p-48_bottom" ref="cardsContainer">
           <div class="case_development-goals-left-column" ref="cardsLeftColumn">
             <Card class="background-color-silver">
               <CardGoDeeFeature title="GPS" iconName="gps">
@@ -741,8 +741,8 @@ export default {
       translateY: null,
       isSafari: false,
       isIphone: false,
-      smoothness: 5,
-      cardsGridHeight: null,
+      scrollSpeed: 5,
+      cardsContainerHeight: null,
       newHeight: null,
       paddingBottom: 96,
       headerHeight: 62,
@@ -769,7 +769,7 @@ export default {
     };
     let previousScroll = 0;
     let currentScroll = 0;
-    this.cardsGridHeight = this.$refs.cardsGridContainer.getBoundingClientRect().height;
+    this.cardsContainerHeight = this.$refs.cardsContainer.getBoundingClientRect().height;
 
     this.$refs.main.addEventListener('scroll', () => {
       if (window.innerWidth > 880) { // На разрешении экрана 880 происходит перестройка секции и анимация не должна больше отрабатывать
@@ -812,38 +812,41 @@ export default {
       observer.observe(document.getElementById(video));
     });
   },
+  destroyed() {
+    this.$refs.main.removeEventListener('scroll', () => {});
+  },
   methods: {
     handleScrollDown() {
-      const leftColumnOffsetBottom = Math.abs(this.$refs.cardsLeftColumn.getBoundingClientRect().bottom - this.$refs.cardsContainer.getBoundingClientRect().bottom); // Получаем расстояние снизу отностильно родителя и переводим число в положительное 
-      const rightColumnOffsetBottom = Math.abs(this.$refs.cardsRightColumn.getBoundingClientRect().bottom - this.$refs.cardsContainer.getBoundingClientRect().bottom); 
+      const leftColumnOffsetBottom = Math.abs(this.$refs.cardsLeftColumn.getBoundingClientRect().bottom - this.$refs.cardsRootElem.getBoundingClientRect().bottom); // Получаем расстояние снизу отностильно родителя и переводим число в положительное 
+      const rightColumnOffsetBottom = Math.abs(this.$refs.cardsRightColumn.getBoundingClientRect().bottom - this.$refs.cardsRootElem.getBoundingClientRect().bottom); 
       if (
-        (this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) < 0 &&
+        (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) < 0 &&
         leftColumnOffsetBottom > rightColumnOffsetBottom // Стратуем скрипт когда секция в зоне видимости и останавливаем когда левая и правая колонка выравниваються с друг другом по оси z
       ) {
-        this.$refs.cardsRightColumn.style.transform = `translateY(${(this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) / this.smoothness}px)`;
-        this.$refs.developmentGoalsTitle.style.transform = `translateY(${(this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) / this.smoothness}px)`;
-        this.translateY = (this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) / this.smoothness; // Сохраняем текщее свойство transform для дальнейшего расчета в функции handleScrollUp()
-        this.newHeight = this.cardsGridHeight - Math.abs((this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) / this.smoothness - this.paddingBottom);
-        this.$refs.cardsGridContainer.style.height = `${this.newHeight}px`;
+        this.$refs.cardsRightColumn.style.transform = `translateY(${(this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed}px)`;
+        this.$refs.developmentGoalsTitle.style.transform = `translateY(${(this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed}px)`;
+        this.translateY = (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed; // Сохраняем текщее свойство transform для дальнейшего расчета в функции handleScrollUp()
+        this.newHeight = this.cardsContainerHeight - Math.abs((this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed - this.paddingBottom);
+        this.$refs.cardsContainer.style.height = `${this.newHeight}px`;
       }
     },
     handleScrollUp() {
       if (
-        (this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) <= 0 && // Останавливаем скрипт когда контейнер достигает верха страницы чтобы правая колонка больше не смещалась и заняла свое изначальное положение
-        (this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) / this.smoothness > this.translateY // Данное сравнение нужно для того чтобы избежать рывков карточек при скролле вверх, скрипт запускается в случае если текущий отступ контейнера карточек равен числу в переменной translateY
+        (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) <= 0 && // Останавливаем скрипт когда контейнер достигает верха страницы чтобы правая колонка больше не смещалась и заняла свое изначальное положение
+        (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed > this.translateY // Данное сравнение нужно для того чтобы избежать рывков карточек при скролле вверх, скрипт запускается в случае если текущий отступ контейнера карточек равен числу в переменной translateY
       ) {
-        this.$refs.cardsRightColumn.style.transform = `translateY(${(this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) / this.smoothness}px)`;
-        this.$refs.developmentGoalsTitle.style.transform = `translateY(${(this.$refs.cardsContainer.getBoundingClientRect().top - this.headerHeight) / this.smoothness}px)`;
-        if (this.cardsGridHeight > this.newHeight) {
-          this.$refs.cardsGridContainer.style.height = `${this.newHeight += 3}px`;
+        this.$refs.cardsRightColumn.style.transform = `translateY(${(this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed}px)`;
+        this.$refs.developmentGoalsTitle.style.transform = `translateY(${(this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed}px)`;
+        if (this.cardsContainerHeight > this.newHeight) {
+          this.$refs.cardsContainer.style.height = `${this.newHeight += 3}px`;
         } 
       }
     },
     setDefaultStylesForCards() {
-      this.cardsGridHeight = this.$refs.cardsGridContainer.getBoundingClientRect().height;
+      this.cardsContainerHeight = this.$refs.cardsContainer.getBoundingClientRect().height;
       this.$refs.cardsRightColumn.style.transform = 'translateY(0px)';
       this.$refs.developmentGoalsTitle.style.transform = 'translateY(0px)';
-      this.$refs.cardsGridContainer.style.height = '100%';
+      this.$refs.cardsContainer.style.height = '100%';
     }
   },
   head() {
