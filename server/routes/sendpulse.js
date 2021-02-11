@@ -1,13 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const sendpulse = require('sendpulse-api');
-const dotenv = require('dotenv');
 
-dotenv.config();
-
-const API_USER_ID = process.env.NODE_SENDPULSE_API_USER_ID;
-const API_KEY = process.env.NODE_SENDPULSE_API_KEY;
-const TOKEN_STORAGE = '/tmp/';
+const _config_ = require('../config');
 
 router.post('/send-email', (req, res) => {
   if (req.body.templateId === null || req.body.templateId === undefined) {
@@ -26,7 +21,7 @@ router.post('/send-email', (req, res) => {
       message: 'variables key not found'
     });
   } else {
-    sendpulse.init(API_USER_ID, API_KEY, TOKEN_STORAGE, () => {
+    sendpulse.init(_config_.API_USER_ID, _config_.API_KEY, _config_.TOKEN_STORAGE, () => {
       const answerGetter = data => {
         res.json(data);
       };

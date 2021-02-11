@@ -1,11 +1,10 @@
 const express = require('express');
-const dotenv = require('dotenv');
 const axios = require('axios');
 const low = require('lowdb');
 const FileAsync = require('lowdb/adapters/FileAsync');
-const _config_ = require('../config');
+const sendMessageToSlack = require('../helpers/sendMessageToSlack');
 
-dotenv.config();
+const _config_ = require('../config');
 
 const router = express.Router();
 const axiosApiInstance = axios.create();
@@ -20,8 +19,6 @@ low(adapter).then(database => {
       access_token: 'xxx',
       refresh_token: _config_.AMOCRM_REFRESH_TOKEN
     }).write();
-  } else {
-    db.set('refresh_token', _config_.AMOCRM_REFRESH_TOKEN).write();
   }
 });
 // -- END init LowDB --- //
@@ -113,7 +110,15 @@ const handleAuthenticationError = async error => {
 /**
  * This functions will be called if the refresh token is invalid. 
  */
+const sendToSlack = () => {
+  const layout = {
+    text: 'AmoCRM: Refresh token invalid or expired!'
+  };
+  sendMessageToSlack(layout);
+};
+
 const handleRefreshTokenInvalid = () => {
+  db.set('refresh_token', _config_.AMOCRM_REFRESH_TOKEN).write();
   const respErr = {
     status: 400,
     detail: 'Refresh token invalid!'
@@ -122,6 +127,7 @@ const handleRefreshTokenInvalid = () => {
 };
 
 const handleRefreshTokenExpired = () => {
+  db.set('refresh_token', _config_.AMOCRM_REFRESH_TOKEN).write();
   const respErr = {
     status: 401,
     detail: 'Refresh token expired!'
@@ -141,7 +147,7 @@ axiosApiInstance.interceptors.response.use(response => {
   if (error.response && isAccessTokenExpired(error)) {
     return handleAuthenticationError(error);
   }
-  return Promise.reject(error.response.data);
+  return Promise.reject(error.response && error.response.data || error);
 });
 
 // ------------ Routes ------------- //
