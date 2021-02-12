@@ -863,7 +863,7 @@ export default {
         {property: 'og:description', content: this.description},
         {
           property: 'og:image',
-          content: 'https://maddevs.io/Open-Graph.png'
+          content: 'https://maddevs.io/godee.png'
         }
       ],
       link: [
