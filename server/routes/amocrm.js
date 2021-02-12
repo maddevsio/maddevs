@@ -1,61 +1,74 @@
 const express = require('express');
 const axios = require('axios');
-const low = require('lowdb');
-const FileAsync = require('lowdb/adapters/FileAsync');
 const sendMessageToSlack = require('../helpers/sendMessageToSlack');
+const scraper = require('../scraper');
+const storage = require('../helpers/storage');
 
 const _config_ = require('../config');
 
 const router = express.Router();
 const axiosApiInstance = axios.create();
 
-// --- Init LowDB --- //
-const adapter = new FileAsync(_config_.STORAGE_TOKEN);
-let db;
-low(adapter).then(database => {
-  db = database;
-  if (!db.get('refresh_token').value() && db.get('refresh_token').value() !== '') {
-    db.defaults({
-      access_token: 'xxx',
-      refresh_token: _config_.AMOCRM_REFRESH_TOKEN
-    }).write();
-  }
-});
-// -- END init LowDB --- //
-
 let isRefreshing = false;
 let failedQueue = [];
 
-function refreshAccessToken() {
+(async () => {
+  const token = await scraper();
+  console.log('Token ready!');
+  const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
+  const data = {
+    client_id: _config_.AMOCRM_CLIENT_ID,
+    client_secret: _config_.AMOCRM_CLIENT_SECRET,
+    grant_type: 'authorization_code',
+    code: token,
+    redirect_uri: _config_.AMOCRM_REDIRECT_URI
+  };
+  // Don't use axiosApiInstance. Use new instance
+  console.log('#####', data, url);
+  axios.post(url, data).then(res => {
+    const json = {
+      'access_token': res.data.access_token,
+      'refresh_token': res.data.refresh_token
+    };
+    storage.write(_config_.STORAGE_TOKEN, json);
+    return res.data;
+  }).catch(err => {
+    return err.response && err.response.data || err;
+  });
+})();
+
+const refreshAccessToken = () => {
+  const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
   const data = {
     client_id: _config_.AMOCRM_CLIENT_ID,
     client_secret: _config_.AMOCRM_CLIENT_SECRET,
     grant_type: 'refresh_token',
-    refresh_token: db.get('refresh_token').value(),
+    refresh_token: storage.read(_config_.STORAGE_TOKEN, 'access_token'),
     redirect_uri: _config_.AMOCRM_REDIRECT_URI
   };
-  const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
   return new Promise(function (resolve, reject) {
     // Don't use axiosApiInstance. Use new instance
     axios.post(url, data).then(res => {
-      db.set('access_token', res.data.access_token).write();
-      db.set('refresh_token', res.data.refresh_token).write();
-      resolve(db.get('access_token').value());
+      const json = {
+        'access_token': res.data.access_token,
+        'refresh_token': res.data.refresh_token
+      };
+      storage.write(_config_.STORAGE_TOKEN, json);
     }).catch(err => {
       reject(err);
     });
   });
 }
 
-function createLead(req, res) {
+const createLead = async (req, res) => {
+  const access_token = await storage.read(_config_.STORAGE_TOKEN, 'access_token');
   const url = _config_.AMOCRM_API_URL + '/api/v4/leads';
-  const data = req.body;
   let config = {
     headers: {
-      'Authorization': 'Bearer ' + db.get('access_token').value()
+      'Authorization': `Bearer ${access_token}`
     }
   };
-  return axiosApiInstance.post(url, data, config)
+  return axiosApiInstance.post(url, req.body, config)
     .then(newCard => {
       res.status(200).json(newCard.data);
     })
@@ -87,7 +100,7 @@ const handleAuthenticationError = async error => {
     return new Promise(function (resolve, reject) {
       failedQueue.push({ resolve, reject });
     }).then(() => {
-      originalRequest.headers.Authorization = db.get('access_token').value();
+      originalRequest.headers.Authorization = storage.read(_config_.STORAGE_TOKEN, 'access_token');
       return axiosApiInstance(originalRequest);
     }).catch(error => Promise.reject(error));
   }
@@ -110,28 +123,31 @@ const handleAuthenticationError = async error => {
 /**
  * This functions will be called if the refresh token is invalid. 
  */
-const sendToSlack = () => {
+const sendToSlack = (message) => {
+  const webhook = _config_.AMOCRM_SLACK_WEBHOOK_URL;
   const layout = {
-    text: 'AmoCRM: Refresh token invalid or expired!'
+    text: `AmoCRM: ${message}\nPlease update the auth token.`
   };
-  sendMessageToSlack(layout);
+  sendMessageToSlack(webhook, layout);
 };
 
 const handleRefreshTokenInvalid = () => {
-  db.set('refresh_token', _config_.AMOCRM_REFRESH_TOKEN).write();
+  const message = 'Refresh token invalid!';
   const respErr = {
     status: 400,
-    detail: 'Refresh token invalid!'
+    detail: message
   };
+  sendToSlack(message);
   return Promise.reject(respErr);
 };
 
 const handleRefreshTokenExpired = () => {
-  db.set('refresh_token', _config_.AMOCRM_REFRESH_TOKEN).write();
+  const message = 'Refresh token expired!';
   const respErr = {
     status: 401,
-    detail: 'Refresh token expired!'
+    detail: message
   };
+  sendToSlack(message);
   return Promise.reject(respErr);
 };
 
@@ -150,7 +166,7 @@ axiosApiInstance.interceptors.response.use(response => {
   return Promise.reject(error.response && error.response.data || error);
 });
 
-// ------------ Routes ------------- //
+// ------------ Routes -----------(();
 router.route('/create-lead').post(createLead);
 
 module.exports = router;

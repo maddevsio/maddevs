@@ -36,6 +36,7 @@
     "lowdb": "^1.0.0",
     "nuxt": "^2.14.12",
     "prismjs": "^1.23.0",
+    "puppeteer": "^7.0.4",
     "request": "^2.88.2",
     "sendpulse-api": "^1.1.4",
     "shelljs": "^0.8.4",
