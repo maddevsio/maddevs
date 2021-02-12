@@ -9,6 +9,4 @@ const runScraper = () => {
   return scraperController(browserInstance);
 };
 
-runScraper();
-
 module.exports = runScraper;

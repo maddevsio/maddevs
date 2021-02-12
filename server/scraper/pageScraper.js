@@ -25,9 +25,11 @@ const scraperObject = {
     
     // Modal with tokens
     await page.waitForSelector('.view-integration-modal__keys');
-    return await page.$$eval('.view-integration-modal__params-block', elements => {
-      console.log(elements[elements.length - 1]);
-      return elements[elements.length - 1].innerText;
+    const html = await page.$$eval('.view-integration-modal__params-block', elements => elements[elements.length - 1].innerHTML);
+    return new Promise(function (resolve, reject) {
+      html.replace(/data-clipboard-text="(.*?)"/g, (match, token) => {
+        resolve(token);
+      });
     });
   }
 };
