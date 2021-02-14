@@ -23,8 +23,10 @@ let failedQueue = [];
   // Don't use axiosApiInstance. Use new instance
   axios.post(url, data).then(res => {
     const json = {
-      'access_token': res.data.access_token,
-      'refresh_token': res.data.refresh_token
+      access_token: res.data.access_token,
+      refresh_token: res.data.refresh_token,
+      client_id: tokens.client_id,
+      client_secret: tokens.client_secret
     };
     storage.write(_config_.STORAGE_TOKEN, json);
     return res.data;
@@ -33,23 +35,24 @@ let failedQueue = [];
   });
 })();
 
-const refreshAccessToken = () => {
+const refreshAccessToken = async () => {
   const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
   const data = {
-    client_id: _config_.AMOCRM_CLIENT_ID,
-    client_secret: _config_.AMOCRM_CLIENT_SECRET,
+    client_id: await storage.read(_config_.STORAGE_TOKEN, 'client_id'),
+    client_secret: await storage.read(_config_.STORAGE_TOKEN, 'client_secret'),
     grant_type: 'refresh_token',
-    refresh_token: storage.read(_config_.STORAGE_TOKEN, 'access_token'),
+    refresh_token: await storage.read(_config_.STORAGE_TOKEN, 'refresh_token'),
     redirect_uri: _config_.AMOCRM_REDIRECT_URI
   };
-  return new Promise(function (resolve, reject) {
+  return new Promise((resolve, reject) => {
     // Don't use axiosApiInstance. Use new instance
-    axios.post(url, data).then(res => {
+    axios.post(url, data).then(async res => {
       const json = {
-        'access_token': res.data.access_token,
-        'refresh_token': res.data.refresh_token
+        access_token: res.data.access_token,
+        refresh_token: res.data.refresh_token
       };
-      storage.write(_config_.STORAGE_TOKEN, json);
+      await storage.write(_config_.STORAGE_TOKEN, json);
+      resolve(json);
     }).catch(err => {
       reject(err);
     });
@@ -66,11 +69,9 @@ const createNewLead = async (req, res) => {
   };
   return axiosApiInstance.post(url, req.body, config)
     .then(newCard => {
-      console.log(newCard);
       res.status(200).json(newCard.data);
     })
     .catch(error => {
-      console.log(error);
       res.status(500).json(error);
     });
 }
@@ -95,10 +96,10 @@ const handleAuthenticationError = async error => {
   const originalRequest = error.config;
 
   if (isRefreshing) {
-    return new Promise(function (resolve, reject) {
+    return new Promise((resolve, reject) => {
       failedQueue.push({ resolve, reject });
-    }).then(() => {
-      originalRequest.headers.Authorization = storage.read(_config_.STORAGE_TOKEN, 'access_token');
+    }).then(async () => {
+      originalRequest.headers.Authorization = await storage.read(_config_.STORAGE_TOKEN, 'access_token');
       return axiosApiInstance(originalRequest);
     }).catch(error => Promise.reject(error));
   }
@@ -107,9 +108,9 @@ const handleAuthenticationError = async error => {
   isRefreshing = true;
 
   return refreshAccessToken()
-    .then(access_token => {
+    .then(tokens => {
       processFailedQueue();
-      originalRequest.headers.Authorization = 'Bearer ' + access_token;
+      originalRequest.headers.Authorization = 'Bearer ' + tokens.access_token;
       return axiosApiInstance(originalRequest);
     })
     .catch(error => {
@@ -140,7 +141,6 @@ const handleRefreshTokenExpired = () => {
 axiosApiInstance.interceptors.response.use(response => {
   return response;
 }, function (error) {
-  console.log('!!!!!', error.response.data);
   if (error.response && isRefreshTokenInvalid(error)) {
     return handleRefreshTokenInvalid();
   }

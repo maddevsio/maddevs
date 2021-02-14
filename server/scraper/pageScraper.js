@@ -26,16 +26,16 @@ const scraper = async (browser) => {
   // Modal with tokens
   await page.waitForSelector('.view-integration-modal__keys');
 
-  // Get client id token
-  const client_id = new Promise(async (resolve, reject) => {
+  // Get client secret token
+  const client_secret = new Promise(async (resolve, reject) => {
     const html = await page.$$eval('.view-integration-modal__params-block', elements => elements[0].innerHTML);
     return html.replace(/data-clipboard-text="(.*?)"/g, (match, token) => {
       resolve(token);
     });
   });
 
-  // Get client secret token
-  const client_secret = new Promise(async (resolve, reject) => {
+  // Get client id token
+  const client_id = new Promise(async (resolve, reject) => {
     const html = await page.$$eval('.view-integration-modal__params-block', elements => elements[1].innerHTML);
     return html.replace(/data-clipboard-text="(.*?)"/g, (match, token) => {
       resolve(token);
