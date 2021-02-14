@@ -49,4 +49,6 @@ const sendEmail = (req, res) => {
   }
 };
 
-module.exports = sendEmail;
+module.exports = {
+  sendEmail
+};
