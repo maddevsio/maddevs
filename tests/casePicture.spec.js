@@ -13,7 +13,9 @@ describe('Picture', () => {
     alt: 'alt',
     lazyLoading: true,
     boxShadow: true,
-    borderRadius: false
+    borderRadius: false,
+    height: 0,
+    width: 0
   };
 
   beforeEach(() => {

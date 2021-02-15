@@ -37,9 +37,11 @@ exports[`CardGoDeePreview renders correctly 1`] = `
       <img
         alt="GoDee: bus transit app for passengers"
         class="image"
+        height="0"
         loading=""
         src="[object Object]"
         srcset="[object Object] 2x"
+        width="0"
       />
     </picture>
      

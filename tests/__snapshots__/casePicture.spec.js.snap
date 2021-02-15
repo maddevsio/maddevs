@@ -3,17 +3,19 @@
 exports[`Picture renders correctly 1`] = `
 <picture>
   <source
-    class="image box-shadow"
+    class="image box-shadow lazy-image"
     srcset="[object Object] ,[object Object] 2x"
     type="image/webp"
   />
    
   <img
     alt="alt"
-    class="image box-shadow"
+    class="image box-shadow lazy-image"
+    height="0"
     loading="lazy"
     src="[object Object]"
     srcset="[object Object] 2x"
+    width="0"
   />
 </picture>
 `;
