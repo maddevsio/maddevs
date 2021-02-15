@@ -44,19 +44,13 @@ const refreshAccessToken = async () => {
     refresh_token: await storage.read(_config_.STORAGE_TOKEN, 'refresh_token'),
     redirect_uri: _config_.AMOCRM_REDIRECT_URI
   };
-  return new Promise((resolve, reject) => {
-    // Don't use axiosApiInstance. Use new instance
-    axios.post(url, data).then(async res => {
-      const json = {
-        access_token: res.data.access_token,
-        refresh_token: res.data.refresh_token
-      };
-      await storage.write(_config_.STORAGE_TOKEN, json);
-      resolve(json);
-    }).catch(err => {
-      reject(err);
-    });
-  });
+  const res = await axios.post(url, data);
+  const json = {
+    access_token: res.data.access_token,
+    refresh_token: res.data.refresh_token
+  };
+  await storage.write(_config_.STORAGE_TOKEN, json);
+  return json;
 };
 
 const createNewLead = async (req, res) => {

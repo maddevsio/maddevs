@@ -2,6 +2,8 @@ const _config_ = require('../config');
 
 const scraper = async browser => {
   let page = await browser.newPage();
+  let result;
+
   console.log(`Navigating to ${_config_.AMOCRM_API_URL}...`);
 
   await page.goto(_config_.AMOCRM_API_URL);
@@ -50,19 +52,15 @@ const scraper = async browser => {
     });
   });
 
-  return Promise.all([client_id, client_secret, code])
-    .then(async () => {
-      await browser.close();
-      return {
-        client_id: await client_id,
-        client_secret: await client_secret,
-        code: await code
-      };
-    })
-    .catch(async err => {
-      await browser.close();
-      return err;
-    });
+  try {
+    const [clientIdR, clientSecretR, codeR] = await Promise.all([client_id, client_secret, code]);
+    result = { client_id: clientIdR, client_secret: clientSecretR, code: codeR };
+  } catch (err) {
+    result = err;
+  } finally {
+    await browser.close();
+  }
+  return result;
 };
 
 module.exports = scraper;
