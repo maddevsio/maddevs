@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const write = (path, data) => {
   return new Promise((resolve, reject) => {
-    fs.writeFile(path, JSON.stringify(data), 'utf8', (err) => {
+    fs.writeFile(path, JSON.stringify(data), 'utf8', err => {
       if (err) reject(err);
       resolve(true);
     });

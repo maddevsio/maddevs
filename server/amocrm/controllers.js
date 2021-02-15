@@ -57,7 +57,7 @@ const refreshAccessToken = async () => {
       reject(err);
     });
   });
-}
+};
 
 const createNewLead = async (req, res) => {
   const access_token = await storage.read(_config_.STORAGE_TOKEN, 'access_token');
@@ -74,7 +74,7 @@ const createNewLead = async (req, res) => {
     .catch(error => {
       res.status(500).json(error);
     });
-}
+};
 
 const processFailedQueue = (error = null) => {
   isRefreshing = false;

@@ -1,6 +1,6 @@
 const _config_ = require('../config');
 
-const scraper = async (browser) => {
+const scraper = async browser => {
   let page = await browser.newPage();
   console.log(`Navigating to ${_config_.AMOCRM_API_URL}...`);
 
