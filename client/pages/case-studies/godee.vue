@@ -136,6 +136,8 @@
                   :mobileImage="false"
                   mobileImageName=""
                   alt="GoDee: bus transit app for passengers"
+                  :width="334"
+                  :height="211"
                 />
               </Card>
               <Card class="background-color-godee-black-card">
@@ -149,6 +151,8 @@
                   :mobileImage="false"
                   mobileImageName=""
                   alt="GoDee: transportation app for drivers"
+                  :width="313"
+                  :height="280"
                 />
               </Card>
             </div>
@@ -163,6 +167,8 @@
                 :mobileImage="true"
                 mobileImageName="godee-admin-panel-card-mobile"
                 alt="GoDee: bus app management system"
+                :width="695"
+                :height="219"
               />
             </Card>
           </div>

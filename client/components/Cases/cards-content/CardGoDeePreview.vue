@@ -14,6 +14,8 @@
         :alt="alt"
         :lazyLoading="false"
         :class="{'card-content_desktop-image': mobileImage}"
+        :width="width"
+        :height="height"
       />
       <Picture
         :pictureFolder="pictureFolder"
@@ -23,6 +25,8 @@
         :lazyLoading="false"
         v-if="mobileImage"
         :class="{'card-content_mobile-image': mobileImage}"
+        :width="307"
+        :height="160"
       />
     </div>
   </div>
@@ -74,6 +78,14 @@ export default {
     mobileImageName: {
       type: String,
       default: ''
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
     }
   }
 };
