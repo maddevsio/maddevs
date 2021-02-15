@@ -71,7 +71,7 @@
         </div>
       </section>
       <section class="container_full case_before-after-gif-wrapper background-color-silver m-48_top media-m-20_top">
-        <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="GoDee 2018 and GoDee now.">
+        <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="GoDee 2018 and GoDee now." loading="lazy" width="1000" height="578.47">
       </section>
       <p class="case_image-description m-12_top m-104_bottom media-m-48_bottom">GoDee 2018 VS. GoDee {{ currentYear }}</p>
       <section class="container_regular" ref="cardsRootElem">
@@ -197,6 +197,8 @@
             :boxShadow="false"
             :lazyLoading="true"
             :borderRadius="false"
+            :width="1026"
+            :height="16.45"
           />
           <Picture 
             pictureFolder="godee"
@@ -206,6 +208,8 @@
             :boxShadow="false"
             :lazyLoading="true"
             :borderRadius="false"
+            :width="1026"
+            :height="672"
           />
         </div>
         <CardGoDeePrimsAlgorithm class="m-48_bottom media-m-24_bottom"/>
@@ -219,8 +223,10 @@
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
+              :width="1026"
+              :height="16.45"
             />
-            <img src="../../assets/img/Cases/godee/jpg/trip-request-map.jpg" class="case_img" alt="Trip Request Map">
+            <img src="../../assets/img/Cases/godee/jpg/trip-request-map.jpg" class="case_img" alt="Trip Request Map" loading="lazy" width="1028" height="483.81">
           </div>
           <div class="case_video-flex-wrapper" v-else>
             <Picture 
@@ -231,6 +237,8 @@
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
+              :width="1026"
+              :height="16.45"
             />
             <video
               id="trip-request-map" 
@@ -263,8 +271,10 @@
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
+              :width="1026"
+              :height="16.45"
             />
-            <img src="../../assets/img/Cases/godee/jpg/trip-monitor.jpg" class="case_img" alt="Trip Monitor">
+            <img src="../../assets/img/Cases/godee/jpg/trip-monitor.jpg" class="case_img" alt="Trip Monitor" loading="lazy" width="1028" height="483.81">
           </div>
           <div class="case_video-flex-wrapper" v-else>
             <Picture 
@@ -275,6 +285,8 @@
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
+              :width="1026"
+              :height="16.45"
             />
             <video 
               id="trip-monitor"
@@ -327,8 +339,10 @@
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
+              :width="1026"
+              :height="16.45"
             />
-            <img src="../../assets/img/Cases/godee/jpg/route-optimization.jpg" class="case_img" alt="Route Optimization">
+            <img src="../../assets/img/Cases/godee/jpg/route-optimization.jpg" class="case_img" alt="Route Optimization" loading="lazy" width="1028" height="483.81">
           </div>
           <div class="case_video-flex-wrapper" v-else>
             <Picture 
@@ -339,6 +353,8 @@
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
+              :width="1026"
+              :height="16.45"
             />
             <video 
               id="route-optimization" 
@@ -385,6 +401,8 @@
               alt="Transit app in Vietnam"
               :boxShadow="false"
               :lazyLoading="true"
+              :width="358.96"
+              :height="694.62"
             />
           </div>
         </section>
@@ -392,7 +410,7 @@
       <section class="container_full case_infrastructure-scheme-wrapper background-color-silver m-48_bottom media-m-24_bottom">
         <section class="container_middle">
           <h2 class="case_title_h2 m-24_bottom case_text-align-center">Infrastructure scheme</h2>
-          <img src="../../assets/img/Cases/godee/gif/infrastructure-scheme.gif" class="case_gif case_infrastructure-scheme-gif" alt="GoDee Infrastructure Scheme">
+          <img src="../../assets/img/Cases/godee/gif/infrastructure-scheme.gif" class="case_gif case_infrastructure-scheme-gif" alt="GoDee Infrastructure Scheme" loading="lazy" width="645" height="774.92">
         </section>
       </section>
       <section class="container_regular">
@@ -432,6 +450,8 @@
           alt="Monitoring Configuration for transportation app"
           :boxShadow="true"
           :lazyLoading="true"
+          :width="1028"
+          :height="463"
         />
       </section>
       <section class="container_regular">
