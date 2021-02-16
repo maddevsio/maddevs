@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const redirectList = require('./server/json/redirect');
+const routes = require('./server/routes');
 
 const app = express();
 app.use(cors());
@@ -13,7 +14,6 @@ const port = process.env.PORT || 5000;
 
 app.enable('trust proxy');
 
-const routes = require('./server/routes');
 app.use('/', routes);
 app.use(function applyXFrame(req, res, next) {
   res.set('X-Frame-Options', 'DENY');
