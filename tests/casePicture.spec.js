@@ -15,7 +15,8 @@ describe('Picture', () => {
     boxShadow: true,
     borderRadius: false,
     height: 0,
-    width: 0
+    width: 0,
+    backgroundColor: false
   };
 
   beforeEach(() => {

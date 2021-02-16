@@ -14,14 +14,14 @@ exports[`CardsBusinessModelsGrid renders correctly 1`] = `
         filenameretina="personal@2x"
       >
         <source
-          class="image lazy-image"
+          class="image"
           srcset="[object Object] ,[object Object] 2x"
           type="image/webp"
         />
          
         <img
           alt="Namba Food Personal couriers."
-          class="image lazy-image"
+          class="image"
           height="0"
           loading="lazy"
           src="[object Object]"

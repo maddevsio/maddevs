@@ -3,14 +3,14 @@
 exports[`Picture renders correctly 1`] = `
 <picture>
   <source
-    class="image box-shadow lazy-image"
+    class="image box-shadow"
     srcset="[object Object] ,[object Object] 2x"
     type="image/webp"
   />
    
   <img
     alt="alt"
-    class="image box-shadow lazy-image"
+    class="image box-shadow"
     height="0"
     loading="lazy"
     src="[object Object]"

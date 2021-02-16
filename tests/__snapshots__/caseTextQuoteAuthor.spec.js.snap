@@ -13,14 +13,14 @@ exports[`Text quote author renders correctly 1`] = `
     >
       <picture>
         <source
-          class="image lazy-image"
+          class="image"
           srcset="[object Object] ,[object Object] 2x"
           type="image/webp"
         />
          
         <img
           alt="alt"
-          class="image lazy-image"
+          class="image"
           height="0"
           loading="lazy"
           src="[object Object]"

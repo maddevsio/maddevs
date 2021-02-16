@@ -2,12 +2,12 @@
   <picture>
     <source
       class="image"
-      :class="{'box-shadow': boxShadow, 'border-radius': borderRadius, 'lazy-image': lazyLoading}"
+      :class="{'box-shadow': boxShadow, 'border-radius': borderRadius, 'grey-background': backgroundColor}"
       :srcset="[require(`../../assets/img/Cases/${pictureFolder}/webp/${fileName}.webp`) + ' ', require(`../../assets/img/Cases/${pictureFolder}/webp/${fileName}@2x.webp`) + ' 2x']"
       type='image/webp'>
     <img
       class="image"
-      :class="{'box-shadow': boxShadow, 'border-radius': borderRadius, 'lazy-image': lazyLoading}"
+      :class="{'box-shadow': boxShadow, 'border-radius': borderRadius, 'grey-background': backgroundColor}"
       :src="[require(`../../assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}.${fileExtension}`)]"
       :srcset="[require(`../../assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}@2x.${fileExtension}`) + ' 2x']"
       :alt="alt"
@@ -59,12 +59,16 @@ export default {
     height: {
       type: Number,
       default: 0
+    },
+    backgroundColor: {
+      type: Boolean,
+      default: false
     }
   },
   methods: {
     onImageLoad(event) {
-      if (event.target.classList.contains('lazy-image')) {
-        event.target.classList.remove('lazy-image');
+      if (event.target.classList.contains('grey-background')) {
+        event.target.classList.remove('grey-background');
       }
     }
   }
@@ -79,7 +83,7 @@ export default {
     display: block;
   }
 
-  .lazy-image {
+  .grey-background {
     background-color: $bgcolor--silver;
   }
 

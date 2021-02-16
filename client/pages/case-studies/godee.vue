@@ -205,6 +205,7 @@
             :borderRadius="false"
             :width="1026"
             :height="16.45"
+            :backgroundColor="true"
           />
           <Picture 
             pictureFolder="godee"
@@ -231,6 +232,7 @@
               :borderRadius="false"
               :width="1026"
               :height="16.45"
+              :backgroundColor="true"
             />
             <img src="../../assets/img/Cases/godee/jpg/trip-request-map.jpg" class="case_img" alt="Trip Request Map" loading="lazy" width="1028" height="483.81">
           </div>
@@ -245,6 +247,7 @@
               :borderRadius="false"
               :width="1026"
               :height="16.45"
+              :backgroundColor="true"
             />
             <video
               id="trip-request-map" 
@@ -279,6 +282,7 @@
               :borderRadius="false"
               :width="1026"
               :height="16.45"
+              :backgroundColor="true"
             />
             <img src="../../assets/img/Cases/godee/jpg/trip-monitor.jpg" class="case_img" alt="Trip Monitor" loading="lazy" width="1028" height="483.81">
           </div>
@@ -293,6 +297,7 @@
               :borderRadius="false"
               :width="1026"
               :height="16.45"
+              :backgroundColor="true"
             />
             <video 
               id="trip-monitor"
@@ -347,6 +352,7 @@
               :borderRadius="false"
               :width="1026"
               :height="16.45"
+              :backgroundColor="true"
             />
             <img src="../../assets/img/Cases/godee/jpg/route-optimization.jpg" class="case_img" alt="Route Optimization" loading="lazy" width="1028" height="483.81">
           </div>
@@ -361,6 +367,7 @@
               :borderRadius="false"
               :width="1026"
               :height="16.45"
+              :backgroundColor="true"
             />
             <video 
               id="route-optimization" 
@@ -409,6 +416,7 @@
               :lazyLoading="true"
               :width="358.96"
               :height="694.62"
+              :backgroundColor="false"
             />
           </div>
         </section>
@@ -458,6 +466,7 @@
           :lazyLoading="true"
           :width="1028"
           :height="463"
+          :backgroundColor="true"
         />
       </section>
       <section class="container_regular">

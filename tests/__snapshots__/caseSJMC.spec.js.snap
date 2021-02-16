@@ -179,14 +179,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
     >
       <picture>
         <source
-          class="image lazy-image"
+          class="image"
           srcset="[object Object] ,[object Object] 2x"
           type="image/webp"
         />
          
         <img
           alt="The Mad Devs team in Sir John Monash Centre."
-          class="image lazy-image"
+          class="image"
           height="0"
           loading="lazy"
           src="[object Object]"
@@ -286,14 +286,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
       >
         <picture>
           <source
-            class="image lazy-image"
+            class="image"
             srcset="[object Object] ,[object Object] 2x"
             type="image/webp"
           />
            
           <img
             alt="The SJMC Multimedia Management IT Brain."
-            class="image lazy-image"
+            class="image"
             height="0"
             loading="lazy"
             src="[object Object]"
@@ -400,14 +400,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
       >
         <picture>
           <source
-            class="image lazy-image"
+            class="image"
             srcset="[object Object] ,[object Object] 2x"
             type="image/webp"
           />
            
           <img
             alt="The SJMC Mobile Applications."
-            class="image lazy-image"
+            class="image"
             height="0"
             loading="lazy"
             src="[object Object]"
@@ -459,14 +459,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
     >
       <picture>
         <source
-          class="image lazy-image"
+          class="image"
           srcset="[object Object] ,[object Object] 2x"
           type="image/webp"
         />
          
         <img
           alt="Sir Jonh Monash Centre Map."
-          class="image lazy-image"
+          class="image"
           height="0"
           loading="lazy"
           src="[object Object]"
@@ -507,14 +507,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
     >
       <picture>
         <source
-          class="image lazy-image"
+          class="image"
           srcset="[object Object] ,[object Object] 2x"
           type="image/webp"
         />
          
         <img
           alt="The SJMC Immersive Gallery."
-          class="image lazy-image"
+          class="image"
           height="0"
           loading="lazy"
           src="[object Object]"
@@ -1037,14 +1037,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image lazy-image"
+                    class="image"
                     srcset="[object Object] ,[object Object] 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                    class="image lazy-image"
+                    class="image"
                     height="0"
                     loading="lazy"
                     src="[object Object]"
@@ -1058,14 +1058,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image lazy-image"
+                    class="image"
                     srcset="[object Object] ,[object Object] 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                    class="image lazy-image"
+                    class="image"
                     height="0"
                     loading="lazy"
                     src="[object Object]"
@@ -1079,14 +1079,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image lazy-image"
+                    class="image"
                     srcset="[object Object] ,[object Object] 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                    class="image lazy-image"
+                    class="image"
                     height="0"
                     loading="lazy"
                     src="[object Object]"
@@ -1100,14 +1100,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image lazy-image"
+                    class="image"
                     srcset="[object Object] ,[object Object] 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                    class="image lazy-image"
+                    class="image"
                     height="0"
                     loading="lazy"
                     src="[object Object]"
@@ -1121,14 +1121,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image lazy-image"
+                    class="image"
                     srcset="[object Object] ,[object Object] 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                    class="image lazy-image"
+                    class="image"
                     height="0"
                     loading="lazy"
                     src="[object Object]"
@@ -1142,14 +1142,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image lazy-image"
+                    class="image"
                     srcset="[object Object] ,[object Object] 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                    class="image lazy-image"
+                    class="image"
                     height="0"
                     loading="lazy"
                     src="[object Object]"
@@ -1181,14 +1181,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image lazy-image"
+                  class="image"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                  class="image lazy-image"
+                  class="image"
                   height="0"
                   loading="lazy"
                   src="[object Object]"
@@ -1202,14 +1202,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image lazy-image"
+                  class="image"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                  class="image lazy-image"
+                  class="image"
                   height="0"
                   loading="lazy"
                   src="[object Object]"
@@ -1223,14 +1223,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image lazy-image"
+                  class="image"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                  class="image lazy-image"
+                  class="image"
                   height="0"
                   loading="lazy"
                   src="[object Object]"
@@ -1244,14 +1244,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image lazy-image"
+                  class="image"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                  class="image lazy-image"
+                  class="image"
                   height="0"
                   loading="lazy"
                   src="[object Object]"
@@ -1265,14 +1265,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image lazy-image"
+                  class="image"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                  class="image lazy-image"
+                  class="image"
                   height="0"
                   loading="lazy"
                   src="[object Object]"
@@ -1286,14 +1286,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image lazy-image"
+                  class="image"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                  class="image lazy-image"
+                  class="image"
                   height="0"
                   loading="lazy"
                   src="[object Object]"
@@ -1379,14 +1379,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
     >
       <picture>
         <source
-          class="image box-shadow lazy-image"
+          class="image box-shadow"
           srcset="[object Object] ,[object Object] 2x"
           type="image/webp"
         />
          
         <img
           alt="Kibana Reports for SJMC."
-          class="image box-shadow lazy-image"
+          class="image box-shadow"
           height="0"
           loading="lazy"
           src="[object Object]"
@@ -1505,14 +1505,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         >
           <picture>
             <source
-              class="image lazy-image"
+              class="image"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Safari Top Bar."
-              class="image lazy-image"
+              class="image"
               height="0"
               loading="lazy"
               src="[object Object]"
@@ -1534,14 +1534,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image lazy-image"
+                    class="image"
                     srcset="[object Object] ,[object Object] 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
-                    class="image lazy-image"
+                    class="image"
                     height="0"
                     loading="lazy"
                     src="[object Object]"
@@ -1555,14 +1555,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image lazy-image"
+                    class="image"
                     srcset="[object Object] ,[object Object] 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
-                    class="image lazy-image"
+                    class="image"
                     height="0"
                     loading="lazy"
                     src="[object Object]"
@@ -1594,14 +1594,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image lazy-image"
+                  class="image"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
-                  class="image lazy-image"
+                  class="image"
                   height="0"
                   loading="lazy"
                   src="[object Object]"
@@ -1615,14 +1615,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image lazy-image"
+                  class="image"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
-                  class="image lazy-image"
+                  class="image"
                   height="0"
                   loading="lazy"
                   src="[object Object]"
@@ -1676,14 +1676,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
     >
       <picture>
         <source
-          class="image box-shadow lazy-image"
+          class="image box-shadow"
           srcset="[object Object] ,[object Object] 2x"
           type="image/webp"
         />
          
         <img
           alt=""
-          class="image box-shadow lazy-image"
+          class="image box-shadow"
           height="0"
           loading="lazy"
           src="[object Object]"
@@ -1869,14 +1869,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image lazy-image"
+                    class="image"
                     srcset="[object Object] ,[object Object] 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="Mad Devs’ Team Trip to the SJMC."
-                    class="image lazy-image"
+                    class="image"
                     height="0"
                     loading="lazy"
                     src="[object Object]"
@@ -1890,14 +1890,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image lazy-image"
+                    class="image"
                     srcset="[object Object] ,[object Object] 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="Mad Devs’ Team Trip to the SJMC."
-                    class="image lazy-image"
+                    class="image"
                     height="0"
                     loading="lazy"
                     src="[object Object]"
@@ -1911,14 +1911,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image lazy-image"
+                    class="image"
                     srcset="[object Object] ,[object Object] 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="Mad Devs’ Team Trip to the SJMC."
-                    class="image lazy-image"
+                    class="image"
                     height="0"
                     loading="lazy"
                     src="[object Object]"
@@ -1932,14 +1932,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image lazy-image"
+                    class="image"
                     srcset="[object Object] ,[object Object] 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="Mad Devs’ Team Trip to the SJMC."
-                    class="image lazy-image"
+                    class="image"
                     height="0"
                     loading="lazy"
                     src="[object Object]"
@@ -1953,14 +1953,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               >
                 <picture>
                   <source
-                    class="image lazy-image"
+                    class="image"
                     srcset="[object Object] ,[object Object] 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="Mad Devs’ Team Trip to the SJMC."
-                    class="image lazy-image"
+                    class="image"
                     height="0"
                     loading="lazy"
                     src="[object Object]"
@@ -1992,14 +1992,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image lazy-image"
+                  class="image"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Mad Devs’ Team Trip to the SJMC."
-                  class="image lazy-image"
+                  class="image"
                   height="0"
                   loading="lazy"
                   src="[object Object]"
@@ -2013,14 +2013,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image lazy-image"
+                  class="image"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Mad Devs’ Team Trip to the SJMC."
-                  class="image lazy-image"
+                  class="image"
                   height="0"
                   loading="lazy"
                   src="[object Object]"
@@ -2034,14 +2034,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image lazy-image"
+                  class="image"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Mad Devs’ Team Trip to the SJMC."
-                  class="image lazy-image"
+                  class="image"
                   height="0"
                   loading="lazy"
                   src="[object Object]"
@@ -2055,14 +2055,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image lazy-image"
+                  class="image"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Mad Devs’ Team Trip to the SJMC."
-                  class="image lazy-image"
+                  class="image"
                   height="0"
                   loading="lazy"
                   src="[object Object]"
@@ -2076,14 +2076,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image lazy-image"
+                  class="image"
                   srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Mad Devs’ Team Trip to the SJMC."
-                  class="image lazy-image"
+                  class="image"
                   height="0"
                   loading="lazy"
                   src="[object Object]"
@@ -2159,14 +2159,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image lazy-image"
+              class="image"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Kirill Zinchenko"
-              class="image lazy-image"
+              class="image"
               height="0"
               loading="lazy"
               src="[object Object]"
@@ -2198,14 +2198,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image lazy-image"
+              class="image"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Vlad Andreev"
-              class="image lazy-image"
+              class="image"
               height="0"
               loading="lazy"
               src="[object Object]"
@@ -2237,14 +2237,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image lazy-image"
+              class="image"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Aleksandr Zhitov"
-              class="image lazy-image"
+              class="image"
               height="0"
               loading="lazy"
               src="[object Object]"
@@ -2276,14 +2276,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image lazy-image"
+              class="image"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Sergey Boyko"
-              class="image lazy-image"
+              class="image"
               height="0"
               loading="lazy"
               src="[object Object]"
@@ -2315,14 +2315,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image lazy-image"
+              class="image"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Andrew Minkin"
-              class="image lazy-image"
+              class="image"
               height="0"
               loading="lazy"
               src="[object Object]"
@@ -2354,14 +2354,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image lazy-image"
+              class="image"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Dmitri Khalezin"
-              class="image lazy-image"
+              class="image"
               height="0"
               loading="lazy"
               src="[object Object]"
@@ -2393,14 +2393,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image lazy-image"
+              class="image"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Kirill Avdeev"
-              class="image lazy-image"
+              class="image"
               height="0"
               loading="lazy"
               src="[object Object]"
@@ -2432,14 +2432,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image lazy-image"
+              class="image"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Stanislav Shcherbinin"
-              class="image lazy-image"
+              class="image"
               height="0"
               loading="lazy"
               src="[object Object]"
@@ -2471,14 +2471,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image lazy-image"
+              class="image"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Aleksandr Astashov"
-              class="image lazy-image"
+              class="image"
               height="0"
               loading="lazy"
               src="[object Object]"
@@ -2510,14 +2510,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image lazy-image"
+              class="image"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Ruslan Kasymov"
-              class="image lazy-image"
+              class="image"
               height="0"
               loading="lazy"
               src="[object Object]"
@@ -2549,14 +2549,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image lazy-image"
+              class="image"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Pavel Pushkarev"
-              class="image lazy-image"
+              class="image"
               height="0"
               loading="lazy"
               src="[object Object]"
@@ -2588,14 +2588,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image lazy-image"
+              class="image"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Rustom Kulbatyrov"
-              class="image lazy-image"
+              class="image"
               height="0"
               loading="lazy"
               src="[object Object]"
@@ -2662,14 +2662,14 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
           >
             <picture>
               <source
-                class="image lazy-image"
+                class="image"
                 srcset="[object Object] ,[object Object] 2x"
                 type="image/webp"
               />
                
               <img
                 alt=""
-                class="image lazy-image"
+                class="image"
                 height="0"
                 loading="lazy"
                 src="[object Object]"
