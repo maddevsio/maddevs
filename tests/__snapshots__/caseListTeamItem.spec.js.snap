@@ -8,19 +8,19 @@ exports[`List team item renders correctly 1`] = `
     class="case_team-item__image"
   >
     <source
-      class="image"
+      class="image grey-background"
       srcset="[object Object] ,[object Object] 2x"
       type="image/webp"
     />
      
     <img
       alt="alt"
-      class="image"
-      height="0"
+      class="image grey-background"
+      height="50"
       loading="lazy"
       src="[object Object]"
       srcset="[object Object] 2x"
-      width="0"
+      width="50"
     />
   </picture>
    

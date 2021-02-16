@@ -104,7 +104,7 @@ export default {
         };
         this.$store.dispatch('sendEmail', this.form).then(res => {
           this.onSubmit = false;
-          this.createLead();
+          // this.createLead();
           if (res.status === 200) {
             this.isEmailSent = true;
             this.resetForm();

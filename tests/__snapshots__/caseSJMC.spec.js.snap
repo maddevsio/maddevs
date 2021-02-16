@@ -2159,19 +2159,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Kirill Zinchenko"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2198,19 +2198,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Vlad Andreev"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2237,19 +2237,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Aleksandr Zhitov"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2276,19 +2276,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Sergey Boyko"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2315,19 +2315,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Andrew Minkin"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2354,19 +2354,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Dmitri Khalezin"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2393,19 +2393,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Kirill Avdeev"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2432,19 +2432,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Stanislav Shcherbinin"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2471,19 +2471,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Aleksandr Astashov"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2510,19 +2510,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Ruslan Kasymov"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2549,19 +2549,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Pavel Pushkarev"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2588,19 +2588,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Rustom Kulbatyrov"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
