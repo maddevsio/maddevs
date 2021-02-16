@@ -9,31 +9,31 @@ const axiosApiInstance = axios.create();
 let isRefreshing = false;
 let failedQueue = [];
 
-// (async () => {
-//   const tokens = await scraper();
-//   console.log('Tokens ready!'); // For develop
-//   const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
-//   const data = {
-//     client_id: tokens.client_id,
-//     client_secret: tokens.client_secret,
-//     grant_type: 'authorization_code',
-//     code: tokens.code,
-//     redirect_uri: _config_.AMOCRM_REDIRECT_URI
-//   };
-//   // Don't use axiosApiInstance. Use new instance
-//   axios.post(url, data).then(res => {
-//     const json = {
-//       access_token: res.data.access_token,
-//       refresh_token: res.data.refresh_token,
-//       client_id: tokens.client_id,
-//       client_secret: tokens.client_secret
-//     };
-//     storage.write(_config_.STORAGE_TOKEN, json);
-//     return res.data;
-//   }).catch(err => {
-//     return err.response && err.response.data || err;
-//   });
-// })();
+(async () => {
+  const tokens = await scraper();
+  console.log('Tokens ready!'); // For develop
+  const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
+  const data = {
+    client_id: tokens.client_id,
+    client_secret: tokens.client_secret,
+    grant_type: 'authorization_code',
+    code: tokens.code,
+    redirect_uri: _config_.AMOCRM_REDIRECT_URI
+  };
+  // Don't use axiosApiInstance. Use new instance
+  axios.post(url, data).then(res => {
+    const json = {
+      access_token: res.data.access_token,
+      refresh_token: res.data.refresh_token,
+      client_id: tokens.client_id,
+      client_secret: tokens.client_secret
+    };
+    storage.write(_config_.STORAGE_TOKEN, json);
+    return res.data;
+  }).catch(err => {
+    return err.response && err.response.data || err;
+  });
+})();
 
 const refreshAccessToken = async () => {
   const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
