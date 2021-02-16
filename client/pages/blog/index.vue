@@ -108,14 +108,14 @@ export default {
         { property: 'og:url', content: this.ogUrl },
         { property: 'og:title', content: this.metaTitle },
         { property: 'og:description', content: this.homepageContent.description || ''},
-        { property: 'og:image', content: 'https://maddevs.io/Open-Graph.png' },
+        { property: 'og:image', content: 'https://maddevs.io/blog.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         // Twitter / Twitter Card
         { property: 'twitter:card', content: 'summary' },
         { property: 'twitter:text:title', content: this.metaTitle },
         { property: 'twitter:description', content: this.homepageContent.description || '' },
-        { property: 'twitter:image:src', content: 'https://maddevs.io/Open-Graph.png' },
+        { property: 'twitter:image:src', content: 'https://maddevs.io/blog.png' },
         { property: 'twitter:url', content: this.ogUrl }
       ],
       __dangerouslyDisableSanitizers: ['script'],

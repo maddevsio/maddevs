@@ -7,7 +7,6 @@ const AMOCRM_LOGIN = process.env.NODE_AMOCRM_LOGIN;
 const AMOCRM_PASSWORD = process.env.NODE_AMOCRM_PASSWORD;
 const AMOCRM_INTEGRATION_ID = process.env.NODE_AMOCRM_INTEGRATION_ID;
 const AMOCRM_REDIRECT_URI = process.env.NODE_AMOCRM_REDIRECT_URI;
-const STORAGE_TOKEN = 'server/storage/tokens.json';
 
 // Send pulse
 const API_USER_ID = process.env.NODE_SENDPULSE_API_USER_ID;
@@ -20,7 +19,6 @@ module.exports = {
   AMOCRM_PASSWORD,
   AMOCRM_INTEGRATION_ID,
   AMOCRM_REDIRECT_URI,
-  STORAGE_TOKEN,
   API_USER_ID,
   API_KEY,
   TOKEN_STORAGE

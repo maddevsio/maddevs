@@ -6,6 +6,9 @@
       :fileExtension="fileExtension"
       :alt="alt"
       :lazyLoading="true"
+      :width="50"
+      :height="50"
+      :backgroundColor="true"
       class="case_team-item__image"
     />
     <div class="case_team-item__info">

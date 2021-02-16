@@ -1758,19 +1758,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Vlad Andreev"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -1798,19 +1798,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Gulbustan Baudunova"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -1838,19 +1838,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Tamara Mun"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -1878,19 +1878,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Aidai Atakulova"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -1918,19 +1918,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Baurzhan Omuraliev"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -1958,19 +1958,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Nakylai Taiirova"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -1998,19 +1998,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Akylbek Djumaliev"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2038,19 +2038,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Stanislav Shcherbinin"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2078,19 +2078,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Eldar Akkozov"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2118,19 +2118,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Altynai Toktomuratova"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2158,19 +2158,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Dmitrii Khalezin"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
@@ -2198,19 +2198,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Belek Abylov"
-              class="image"
-              height="0"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
-              width="0"
+              width="50"
             />
           </picture>
            
