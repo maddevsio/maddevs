@@ -1,6 +1,5 @@
 const axios = require('axios');
 const scraper = require('../scraper');
-const storage = require('../helpers/storage');
 
 const _config_ = require('../config');
 
@@ -8,9 +7,11 @@ const axiosApiInstance = axios.create();
 
 let isRefreshing = false;
 let failedQueue = [];
+let tokens = {}; // amoCRM tokens
+let oauth_tokens = {}; // access & refresh tokens
 
 (async () => {
-  const tokens = await scraper();
+  tokens = await scraper();
   console.log('Tokens ready!'); // For develop
   const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
   const data = {
@@ -22,13 +23,10 @@ let failedQueue = [];
   };
   // Don't use axiosApiInstance. Use new instance
   axios.post(url, data).then(res => {
-    const json = {
+    oauth_tokens = {
       access_token: res.data.access_token,
-      refresh_token: res.data.refresh_token,
-      client_id: tokens.client_id,
-      client_secret: tokens.client_secret
+      refresh_token: res.data.refresh_token
     };
-    storage.write(_config_.STORAGE_TOKEN, json);
     return res.data;
   }).catch(err => {
     return err.response && err.response.data || err;
@@ -38,19 +36,18 @@ let failedQueue = [];
 const refreshAccessToken = async () => {
   const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
   const data = {
-    client_id: await storage.read(_config_.STORAGE_TOKEN, 'client_id'),
-    client_secret: await storage.read(_config_.STORAGE_TOKEN, 'client_secret'),
+    client_id: tokens.client_id,
+    client_secret: tokens.client_secret,
     grant_type: 'refresh_token',
-    refresh_token: await storage.read(_config_.STORAGE_TOKEN, 'refresh_token'),
+    refresh_token: oauth_tokens.refresh_token,
     redirect_uri: _config_.AMOCRM_REDIRECT_URI
   };
   try {
     const res = await axios.post(url, data);
-    const json = {
+    oauth_tokens = {
       access_token: res.data.access_token,
       refresh_token: res.data.refresh_token
     };
-    await storage.write(_config_.STORAGE_TOKEN, json);
     return json;
   } catch (error) {
     return error;
@@ -58,7 +55,7 @@ const refreshAccessToken = async () => {
 };
 
 const createNewLead = async (req, res) => {
-  const access_token = await storage.read(_config_.STORAGE_TOKEN, 'access_token');
+  const access_token = oauth_tokens.access_token;
   const url = _config_.AMOCRM_API_URL + '/api/v4/leads';
   let config = {
     headers: {
@@ -97,7 +94,7 @@ const handleAuthenticationError = async error => {
     return new Promise((resolve, reject) => {
       failedQueue.push({ resolve, reject });
     }).then(async () => {
-      originalRequest.headers.Authorization = await storage.read(_config_.STORAGE_TOKEN, 'access_token');
+      originalRequest.headers.Authorization = oauth_tokens.access_token;
       return axiosApiInstance(originalRequest);
     }).catch(error => Promise.reject(error));
   }
