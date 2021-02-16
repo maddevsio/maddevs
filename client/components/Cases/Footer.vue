@@ -51,7 +51,8 @@ export default {
     text-align: center;
   }
 
-  &_title-sjmc-case {
+  &_title-sjmc-case,
+  &_title-godee-case {
     margin-bottom: 51px;
   }
 
@@ -78,7 +79,8 @@ export default {
       }
     }
 
-    &_title-sjmc-case {
+    &_title-sjmc-case,
+    &_title-godee-case {
       margin-bottom: 41px;
     }
 

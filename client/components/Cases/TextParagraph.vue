@@ -35,6 +35,10 @@ export default {
       @media screen and (max-width: 768px) {
         @include default_text($text-color--black-cases, 16px, 150%, -0.02em, normal);
       }
+
+      &--bold {
+        font-weight: 700;  
+      }
     }
   }
 </style>

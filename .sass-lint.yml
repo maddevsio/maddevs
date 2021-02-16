@@ -55,3 +55,7 @@ rules:
   space-before-brace: 2
   trailing-semicolon: 2
   zero-unit: 0
+
+  no-css-comments: 0
+  no-url-protocols: 0
+  no-url-domains: 0

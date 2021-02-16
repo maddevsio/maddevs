@@ -121,7 +121,7 @@
               fileName="couriers-android-app"
               fileExtension="png"
               alt="Namba Food Android Application for Couriers."
-              :lazyLoading="true"
+              :lazyLoading="false"
             />
           </section>
           <div class="case_black-gradient"></div>

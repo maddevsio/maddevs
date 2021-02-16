@@ -65,6 +65,20 @@ export default {
     modalTitle: 'Mad Devs Website Forms'
   }),
   methods: {
+    createLead() {
+      const data = [{
+        name: this.fullName,
+        custom_fields_values: [
+          { field_id: 261281, values: [{ value: this.email }] }, // Email
+          { field_id: 261437, values: [{ value: this.projectDescriber }] } // Project Describer
+        ]
+      }];
+      this.$store.dispatch('createNewLead', data).then(res => {
+        this.setStateForElements('Order a project now');
+      }).catch(() => {
+        this.setStateForElements('Order a project now');
+      });
+    },
     getPrivacyCheckboxState(privacyState) {
       this.agreeWithPrivacyPolicy = privacyState;
     },
@@ -90,9 +104,9 @@ export default {
         };
         this.$store.dispatch('sendEmail', this.form).then(res => {
           this.onSubmit = false;
+          // this.createLead();
           if (res.status === 200) {
             this.isEmailSent = true;
-            this.setStateForElements('Order a project now');
             this.resetForm();
             setTimeout(() => {
               this.isEmailSent = false;

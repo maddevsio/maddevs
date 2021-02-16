@@ -30,9 +30,11 @@ exports[`Swiper renders correctly 1`] = `
             <img
               alt=""
               class="image"
+              height="0"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="0"
             />
           </picture>
         </div>
@@ -49,9 +51,11 @@ exports[`Swiper renders correctly 1`] = `
             <img
               alt=""
               class="image"
+              height="0"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="0"
             />
           </picture>
         </div>
@@ -86,9 +90,11 @@ exports[`Swiper renders correctly 1`] = `
           <img
             alt=""
             class="image"
+            height="0"
             loading="lazy"
             src="[object Object]"
             srcset="[object Object] 2x"
+            width="0"
           />
         </picture>
       </div>
@@ -105,9 +111,11 @@ exports[`Swiper renders correctly 1`] = `
           <img
             alt=""
             class="image"
+            height="0"
             loading="lazy"
             src="[object Object]"
             srcset="[object Object] 2x"
+            width="0"
           />
         </picture>
       </div>

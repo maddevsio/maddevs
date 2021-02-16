@@ -16,7 +16,6 @@ export default {
 
 <style lang="scss" scoped>
   @import '../assets/styles/_vars';
-
   .error-page {
     width: max-content;
     position: absolute;
@@ -29,7 +28,6 @@ export default {
     &__to-home-page {
       color: $text-color--white;
     }
-
     &__to-home-page {
       display: block;
       margin-top: 15px;

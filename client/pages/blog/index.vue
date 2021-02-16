@@ -29,6 +29,8 @@
         </div>
       </div>
 
+      <customer-university-section/>
+
       <div class="filtered-posts" v-if="posts.length">
         <div class="container">
           <div class="filter">
@@ -65,6 +67,7 @@ import RecommendedBlogWidget from '@/components/Blog/RecommendedBlogWidget';
 import FeaturedPost from '@/components/Blog/FeaturedPost';
 import SkeletonBlogWidget from '@/components/Blog/SkeletonBlogWidget';
 import SkeletonFeaturedPost from '@/components/Blog/SkeletonFeaturedPost';
+import CustomerUniversitySection from '@/components/Blog/CustomerUniversitySection';
 
 export default {
   name: 'Blog',
@@ -73,7 +76,8 @@ export default {
     FeaturedPost,
     RecommendedBlogWidget,
     SkeletonBlogWidget,
-    SkeletonFeaturedPost
+    SkeletonFeaturedPost,
+    CustomerUniversitySection
   },
   data() {
     return {
@@ -268,20 +272,6 @@ export default {
             }
           }
         }
-      }
-    }
-
-    .customer-university {
-
-      background-color: $border-color--grey-cases;
-      padding: 350px 0;
-
-      h1 {
-        color: $text-color--red;
-        font-size: 62px;
-        line-height: 74px;
-        font-weight: 900;
-        text-align: center;
       }
     }
 

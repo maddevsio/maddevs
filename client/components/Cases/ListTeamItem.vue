@@ -6,11 +6,14 @@
       :fileExtension="fileExtension"
       :alt="alt"
       :lazyLoading="true"
+      :width="50"
+      :height="50"
+      :backgroundColor="true"
       class="case_team-item__image"
     />
     <div class="case_team-item__info">
       <p class="case_team-item__name">{{name}}</p>
-      <p class="case_team-item__position">{{position}}</p>
+      <p class="case_team-item__position" v-html="position">{{position}}</p>
     </div>
   </li>
 </template>
@@ -63,7 +66,7 @@ export default {
     }
 
     &__name {
-      @include default_text($text-color--black-cases, 18px, 22px, -0.035em, bold);
+      @include default_text($text-color--black-cases, 18px, 22px, -0.035em, 600);
     }
 
     &__position {
@@ -85,7 +88,7 @@ export default {
       }
 
       &__name {
-        @include default_text($text-color--black-cases, 14px, 16px, -0.035em, bold);
+        @include default_text($text-color--black-cases, 14px, 16px, -0.035em, 600);
       }
 
       &__position {

@@ -8,6 +8,7 @@ $bgcolor--black-lighten: #222222;
 $bgcolor--black-lighten-pale: #202020;
 $bgcolor--grey: #96969C;
 $bgcolor--grey-light: #f2f2f2;
+$bgcolor--grey-pale: #c4c4c4;
 $bgcolor--grey-dark: #f4f5f7;
 $bgcolor--grey-extra-dark: #e7e7e7;
 $bgcolor--red: #ec1c24;
@@ -19,6 +20,7 @@ $bgcolor--white-darken: #fcfcfd;
 $bgcolor--pink: #cc0a6a;
 $bgcolor--silver: #f4f4f4;
 $bgcolor--gold: #b19a5a;
+$bgcolor--black-opacity-07: rgba(0, 0, 0, 0.7);
 
 // ---------- Text ------------ //
 $text-color--white: #f5f7f9;
@@ -39,9 +41,11 @@ $text-color--grey-form-placeholder: #6E6E73;
 $text-color--grey-team-list: #a0a0a1;
 $text-color--tech-label-black: #232323;
 $text-color--grey-img-description: #a4a8b4;
+$text-color--silver: #f4f4f4;
 $text-stroke--white: 1.5px #f2f2f2;
 $text-stroke--red: 1.5px #ec1c24;
 $text-stroke--black: 1.5px #000;
+
 
 // ---------- Border ------------ //
 $border-color--grey: #96969c;
@@ -57,6 +61,9 @@ $border-color--grey-form: #333333;
 $border-color--grey-cases: #d7dde1;
 $border-color--grey-20-percent: #cfcfd0;
 $border-color--silver: #f4f4f4;
+$border-color--grey-02-opacity: rgba(160, 160, 161, 0.2);
+$border-color--white-02-opacity: rgba(255, 255, 255, 0.2);
+$border-color--white-03-opacity: rgba(255, 255, 255, 0.3);
 
 // ---------- Border radius ------------ //
 $form-border-radius: 7px;

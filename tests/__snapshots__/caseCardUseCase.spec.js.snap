@@ -36,9 +36,11 @@ exports[`CardUseCase renders correctly 1`] = `
         <img
           alt=""
           class="image"
+          height="0"
           loading=""
           src="[object Object]"
           srcset="[object Object] 2x"
+          width="0"
         />
       </picture>
     </div>
@@ -56,9 +58,11 @@ exports[`CardUseCase renders correctly 1`] = `
         <img
           alt=""
           class="image"
+          height="0"
           loading=""
           src="[object Object]"
           srcset="[object Object] 2x"
+          width="0"
         />
       </picture>
     </div>

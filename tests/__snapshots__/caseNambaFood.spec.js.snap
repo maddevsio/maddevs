@@ -189,9 +189,11 @@ exports[`Namba food renders correctly 1`] = `
               <img
                 alt="Namba Food Personal couriers."
                 class="image"
+                height="0"
                 loading="lazy"
                 src="[object Object]"
                 srcset="[object Object] 2x"
+                width="0"
               />
             </picture>
           </div>
@@ -369,9 +371,11 @@ exports[`Namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food Mobile Application Main Page on Iphone for Users."
                     class="image"
+                    height="0"
                     loading=""
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -389,9 +393,11 @@ exports[`Namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food Mobile Application Main Page on Iphone for Users."
                     class="image"
+                    height="0"
                     loading=""
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -438,9 +444,11 @@ exports[`Namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food Mobile Application Main Page on Android for Deliverymen."
                     class="image"
+                    height="0"
                     loading=""
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -458,9 +466,11 @@ exports[`Namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food Mobile Application Main Page on Android for Deliverymen."
                     class="image"
+                    height="0"
                     loading=""
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -505,9 +515,11 @@ exports[`Namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food Unified Control System for Operators on Desktop."
                     class="image"
+                    height="0"
                     loading=""
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -525,9 +537,11 @@ exports[`Namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food Unified Control System for Operators on Desktop."
                     class="image"
+                    height="0"
                     loading=""
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -574,9 +588,11 @@ exports[`Namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food Control Panel for Managers on Desktop."
                     class="image"
+                    height="0"
                     loading=""
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -594,9 +610,11 @@ exports[`Namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food Control Panel for Managers on Desktop."
                     class="image"
+                    height="0"
                     loading=""
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -770,9 +788,11 @@ exports[`Namba food renders correctly 1`] = `
             <img
               alt="Namba Food Android Application for Couriers."
               class="image"
-              loading="lazy"
+              height="0"
+              loading=""
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="0"
             />
           </picture>
         </section>
@@ -824,9 +844,11 @@ exports[`Namba food renders correctly 1`] = `
         <img
           alt="Namba Food Admin Panel on Desktop."
           class="image box-shadow"
+          height="0"
           loading="lazy"
           src="[object Object]"
           srcset="[object Object] 2x"
+          width="0"
         />
       </picture>
     </section>
@@ -984,9 +1006,11 @@ exports[`Namba food renders correctly 1`] = `
             <img
               alt="Namba Food Admin Panel."
               class="image"
+              height="0"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="0"
             />
           </picture>
            
@@ -1011,9 +1035,11 @@ exports[`Namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food Delivery Control Admin Panel."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1030,9 +1056,11 @@ exports[`Namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food Delivery Control Dashboard."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1067,9 +1095,11 @@ exports[`Namba food renders correctly 1`] = `
                 <img
                   alt="Namba Food Delivery Control Admin Panel."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -1086,9 +1116,11 @@ exports[`Namba food renders correctly 1`] = `
                 <img
                   alt="Namba Food Delivery Control Dashboard."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -1326,9 +1358,11 @@ exports[`Namba food renders correctly 1`] = `
         <img
           alt="Grafana — Docker Containers’ Monitoring Service."
           class="image box-shadow"
+          height="0"
           loading="lazy"
           src="[object Object]"
           srcset="[object Object] 2x"
+          width="0"
         />
       </picture>
     </section>
@@ -1658,9 +1692,11 @@ exports[`Namba food renders correctly 1`] = `
           <img
             alt="The Pipeline for the Namba Food System."
             class="image"
+            height="0"
             loading="lazy"
             src="[object Object]"
             srcset="[object Object] 2x"
+            width="0"
           />
         </picture>
       </section>
@@ -1684,9 +1720,11 @@ exports[`Namba food renders correctly 1`] = `
           <img
             alt="The Pipeline for the Namba Food System."
             class="image"
+            height="0"
             loading="lazy"
             src="[object Object]"
             srcset="[object Object] 2x"
+            width="0"
           />
         </picture>
       </section>
@@ -1720,17 +1758,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Vlad Andreev"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -1758,17 +1798,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Gulbustan Baudunova"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -1796,17 +1838,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Tamara Mun"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -1834,17 +1878,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Aidai Atakulova"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -1872,17 +1918,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Baurzhan Omuraliev"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -1910,17 +1958,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Nakylai Taiirova"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -1948,17 +1998,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Akylbek Djumaliev"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -1986,17 +2038,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Stanislav Shcherbinin"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2024,17 +2078,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Eldar Akkozov"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2062,17 +2118,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Altynai Toktomuratova"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2100,17 +2158,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Dmitrii Khalezin"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2138,17 +2198,19 @@ exports[`Namba food renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Belek Abylov"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2486,9 +2548,11 @@ exports[`Namba food renders correctly 1`] = `
               <img
                 alt="Aziza Anarbekova Namba Food Co-Founder."
                 class="image"
+                height="0"
                 loading="lazy"
                 src="[object Object]"
                 srcset="[object Object] 2x"
+                width="0"
               />
             </picture>
           </div>

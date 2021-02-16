@@ -75,6 +75,17 @@ export default {
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
     },
+    createLead() {
+      const data = [{
+        name: this.fullName,
+        custom_fields_values: [
+          { field_id: 261281, values: [{ value: this.email }] }, // Email
+          { field_id: 261331, values: [{ value: this.company }] }, // Company
+          { field_id: 261333, values: [{ value: this.phoneNumber }] } // Phone
+        ]
+      }];
+      this.$store.dispatch('createNewLead', data);
+    },
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
         this.onSubmit = true;
@@ -94,6 +105,7 @@ export default {
         };
         this.$store.dispatch('sendEmail', this.form).then(res => {
           this.onSubmit = false;
+          // this.createLead();
           this.resetForm();
           if (res.status === 200) {
             this.$nuxt.$emit(this.modalName, true);

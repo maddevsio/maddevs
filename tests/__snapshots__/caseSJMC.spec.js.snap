@@ -187,9 +187,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         <img
           alt="The Mad Devs team in Sir John Monash Centre."
           class="image"
+          height="0"
           loading="lazy"
           src="[object Object]"
           srcset="[object Object] 2x"
+          width="0"
         />
       </picture>
     </section>
@@ -292,9 +294,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
           <img
             alt="The SJMC Multimedia Management IT Brain."
             class="image"
+            height="0"
             loading="lazy"
             src="[object Object]"
             srcset="[object Object] 2x"
+            width="0"
           />
         </picture>
       </div>
@@ -404,9 +408,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
           <img
             alt="The SJMC Mobile Applications."
             class="image"
+            height="0"
             loading="lazy"
             src="[object Object]"
             srcset="[object Object] 2x"
+            width="0"
           />
         </picture>
       </div>
@@ -461,9 +467,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         <img
           alt="Sir Jonh Monash Centre Map."
           class="image"
+          height="0"
           loading="lazy"
           src="[object Object]"
           srcset="[object Object] 2x"
+          width="0"
         />
       </picture>
        
@@ -507,9 +515,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         <img
           alt="The SJMC Immersive Gallery."
           class="image"
+          height="0"
           loading="lazy"
           src="[object Object]"
           srcset="[object Object] 2x"
+          width="0"
         />
       </picture>
     </section>
@@ -1035,9 +1045,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   <img
                     alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1054,9 +1066,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   <img
                     alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1073,9 +1087,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   <img
                     alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1092,9 +1108,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   <img
                     alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1111,9 +1129,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   <img
                     alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1130,9 +1150,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   <img
                     alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1167,9 +1189,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -1186,9 +1210,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -1205,9 +1231,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -1224,9 +1252,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -1243,9 +1273,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -1262,9 +1294,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -1353,9 +1387,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         <img
           alt="Kibana Reports for SJMC."
           class="image box-shadow"
+          height="0"
           loading="lazy"
           src="[object Object]"
           srcset="[object Object] 2x"
+          width="0"
         />
       </picture>
     </section>
@@ -1477,9 +1513,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             <img
               alt="Safari Top Bar."
               class="image"
+              height="0"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="0"
             />
           </picture>
            
@@ -1504,9 +1542,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   <img
                     alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1523,9 +1563,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   <img
                     alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1560,9 +1602,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -1579,9 +1623,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -1638,9 +1684,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         <img
           alt=""
           class="image box-shadow"
+          height="0"
           loading="lazy"
           src="[object Object]"
           srcset="[object Object] 2x"
+          width="0"
         />
       </picture>
     </section>
@@ -1829,9 +1877,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   <img
                     alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1848,9 +1898,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   <img
                     alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1867,9 +1919,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   <img
                     alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1886,9 +1940,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   <img
                     alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1905,9 +1961,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   <img
                     alt="Mad Devs’ Team Trip to the SJMC."
                     class="image"
+                    height="0"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="0"
                   />
                 </picture>
               </div>
@@ -1942,9 +2000,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -1961,9 +2021,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -1980,9 +2042,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -1999,9 +2063,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -2018,9 +2084,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Mad Devs’ Team Trip to the SJMC."
                   class="image"
+                  height="0"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="0"
                 />
               </picture>
             </div>
@@ -2091,17 +2159,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Kirill Zinchenko"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2128,17 +2198,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Vlad Andreev"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2165,17 +2237,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Aleksandr Zhitov"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2202,17 +2276,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Sergey Boyko"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2239,17 +2315,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Andrew Minkin"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2276,17 +2354,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Dmitri Khalezin"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2313,17 +2393,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Kirill Avdeev"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2350,17 +2432,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Stanislav Shcherbinin"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2387,17 +2471,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Aleksandr Astashov"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2424,17 +2510,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Ruslan Kasymov"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2461,17 +2549,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Pavel Pushkarev"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2498,17 +2588,19 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
             class="case_team-item__image"
           >
             <source
-              class="image"
+              class="image grey-background"
               srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Rustom Kulbatyrov"
-              class="image"
+              class="image grey-background"
+              height="50"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="50"
             />
           </picture>
            
@@ -2578,9 +2670,11 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               <img
                 alt=""
                 class="image"
+                height="0"
                 loading="lazy"
                 src="[object Object]"
                 srcset="[object Object] 2x"
+                width="0"
               />
             </picture>
           </div>
