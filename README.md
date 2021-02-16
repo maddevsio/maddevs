@@ -8,6 +8,14 @@
 ![Coverage functions](client/static/badge-functions.svg)
 ![Coverage lines](client/static/badge-lines.svg)
 
+## Requirements
+
+### Environment variables
+
+### Heroku
+
+To run puppeteer in heroku you need this buildpack https://github.com/jontewks/puppeteer-heroku-buildpack
+
 ## Build Setup
 
 ``` bash
