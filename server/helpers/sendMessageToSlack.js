@@ -5,12 +5,12 @@ const request = require('request');
 
 /**
  * Send message to Slack channel
- * @param {JSON} layout
+ * @param {String} webhook - https://hooks.slack.com/services/xxx/xxx
+ * @param {JSON} layout - { text: 'Hello world' }
  */
-const webhookUrl = process.env.NODE_PAGESPEED_SLACK_WEBHOOK_URL;
-function sendMessageToSlack(layout) {
+function sendMessageToSlack(webhook, layout) {
   const options = {
-    uri: webhookUrl,
+    uri: webhook,
     method: 'POST',
     json: layout,
     mrkdwn: true

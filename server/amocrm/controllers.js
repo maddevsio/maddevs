@@ -1,68 +1,78 @@
-const express = require('express');
 const axios = require('axios');
-const low = require('lowdb');
-const FileAsync = require('lowdb/adapters/FileAsync');
-const sendMessageToSlack = require('../helpers/sendMessageToSlack');
+const scraper = require('../scraper');
+const storage = require('../helpers/storage');
 
 const _config_ = require('../config');
 
-const router = express.Router();
 const axiosApiInstance = axios.create();
-
-// --- Init LowDB --- //
-const adapter = new FileAsync(_config_.STORAGE_TOKEN);
-let db;
-low(adapter).then(database => {
-  db = database;
-  if (!db.get('refresh_token').value() && db.get('refresh_token').value() !== '') {
-    db.defaults({
-      access_token: 'xxx',
-      refresh_token: _config_.AMOCRM_REFRESH_TOKEN
-    }).write();
-  }
-});
-// -- END init LowDB --- //
 
 let isRefreshing = false;
 let failedQueue = [];
 
-function refreshAccessToken() {
+(async () => {
+  const tokens = await scraper();
+  console.log('Tokens ready!'); // For develop
+  const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
   const data = {
-    client_id: _config_.AMOCRM_CLIENT_ID,
-    client_secret: _config_.AMOCRM_CLIENT_SECRET,
-    grant_type: 'refresh_token',
-    refresh_token: db.get('refresh_token').value(),
+    client_id: tokens.client_id,
+    client_secret: tokens.client_secret,
+    grant_type: 'authorization_code',
+    code: tokens.code,
     redirect_uri: _config_.AMOCRM_REDIRECT_URI
   };
-  const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
-  return new Promise(function (resolve, reject) {
-    // Don't use axiosApiInstance. Use new instance
-    axios.post(url, data).then(res => {
-      db.set('access_token', res.data.access_token).write();
-      db.set('refresh_token', res.data.refresh_token).write();
-      resolve(db.get('access_token').value());
-    }).catch(err => {
-      reject(err);
-    });
+  // Don't use axiosApiInstance. Use new instance
+  axios.post(url, data).then(res => {
+    const json = {
+      access_token: res.data.access_token,
+      refresh_token: res.data.refresh_token,
+      client_id: tokens.client_id,
+      client_secret: tokens.client_secret
+    };
+    storage.write(_config_.STORAGE_TOKEN, json);
+    return res.data;
+  }).catch(err => {
+    return err.response && err.response.data || err;
   });
-}
+})();
 
-function createLead(req, res) {
+const refreshAccessToken = async () => {
+  const url = _config_.AMOCRM_API_URL + '/oauth2/access_token';
+  const data = {
+    client_id: await storage.read(_config_.STORAGE_TOKEN, 'client_id'),
+    client_secret: await storage.read(_config_.STORAGE_TOKEN, 'client_secret'),
+    grant_type: 'refresh_token',
+    refresh_token: await storage.read(_config_.STORAGE_TOKEN, 'refresh_token'),
+    redirect_uri: _config_.AMOCRM_REDIRECT_URI
+  };
+  try {
+    const res = await axios.post(url, data);
+    const json = {
+      access_token: res.data.access_token,
+      refresh_token: res.data.refresh_token
+    };
+    await storage.write(_config_.STORAGE_TOKEN, json);
+    return json;
+  } catch (error) {
+    return error;
+  }
+};
+
+const createNewLead = async (req, res) => {
+  const access_token = await storage.read(_config_.STORAGE_TOKEN, 'access_token');
   const url = _config_.AMOCRM_API_URL + '/api/v4/leads';
-  const data = req.body;
   let config = {
     headers: {
-      'Authorization': 'Bearer ' + db.get('access_token').value()
+      'Authorization': `Bearer ${access_token}`
     }
   };
-  return axiosApiInstance.post(url, data, config)
+  return axiosApiInstance.post(url, req.body, config)
     .then(newCard => {
       res.status(200).json(newCard.data);
     })
     .catch(error => {
       res.status(500).json(error);
     });
-}
+};
 
 const processFailedQueue = (error = null) => {
   isRefreshing = false;
@@ -84,10 +94,10 @@ const handleAuthenticationError = async error => {
   const originalRequest = error.config;
 
   if (isRefreshing) {
-    return new Promise(function (resolve, reject) {
+    return new Promise((resolve, reject) => {
       failedQueue.push({ resolve, reject });
-    }).then(() => {
-      originalRequest.headers.Authorization = db.get('access_token').value();
+    }).then(async () => {
+      originalRequest.headers.Authorization = await storage.read(_config_.STORAGE_TOKEN, 'access_token');
       return axiosApiInstance(originalRequest);
     }).catch(error => Promise.reject(error));
   }
@@ -96,9 +106,9 @@ const handleAuthenticationError = async error => {
   isRefreshing = true;
 
   return refreshAccessToken()
-    .then(access_token => {
+    .then(tokens => {
       processFailedQueue();
-      originalRequest.headers.Authorization = 'Bearer ' + access_token;
+      originalRequest.headers.Authorization = 'Bearer ' + tokens.access_token;
       return axiosApiInstance(originalRequest);
     })
     .catch(error => {
@@ -110,15 +120,7 @@ const handleAuthenticationError = async error => {
 /**
  * This functions will be called if the refresh token is invalid. 
  */
-const sendToSlack = () => {
-  const layout = {
-    text: 'AmoCRM: Refresh token invalid or expired!'
-  };
-  sendMessageToSlack(layout);
-};
-
 const handleRefreshTokenInvalid = () => {
-  db.set('refresh_token', _config_.AMOCRM_REFRESH_TOKEN).write();
   const respErr = {
     status: 400,
     detail: 'Refresh token invalid!'
@@ -127,7 +129,6 @@ const handleRefreshTokenInvalid = () => {
 };
 
 const handleRefreshTokenExpired = () => {
-  db.set('refresh_token', _config_.AMOCRM_REFRESH_TOKEN).write();
   const respErr = {
     status: 401,
     detail: 'Refresh token expired!'
@@ -150,7 +151,6 @@ axiosApiInstance.interceptors.response.use(response => {
   return Promise.reject(error.response && error.response.data || error);
 });
 
-// ------------ Routes ------------- //
-router.route('/create-lead').post(createLead);
-
-module.exports = router;
+module.exports = {
+  createNewLead
+};

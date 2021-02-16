@@ -26,7 +26,7 @@ export const actions = {
   createNewLead({ commit }, payload) {
     const data = payload;
     return new Promise((resolve, reject) => {
-      this.$axios.post('amocrm/create-lead', data).then(res => {
+      this.$axios.post('amocrm/leads', data).then(res => {
         resolve(res);
       }).catch(err => {
         reject(err);
