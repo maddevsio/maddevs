@@ -39,7 +39,7 @@
     "request": "^2.88.2",
     "sendpulse-api": "^1.1.4",
     "shelljs": "^0.8.4",
-    "snyk": "^1.437.4",
+    "snyk": "^1.439.0",
     "swiper": "^5.4.5",
     "vee-validate": "^3.4.5",
     "vue-awesome-swiper": "^4.1.1",
@@ -48,7 +48,7 @@
     "vue-lottie": "^0.2.1",
     "vue-prism-editor": "^1.2.2",
     "vue-select": "^3.11.2",
-    "vue-silentbox": "^2.3.0",
+    "vue-silentbox": "^2.3.2",
     "vue-social-sharing": "^3.0.4",
     "vue2-perfect-scrollbar": "^1.5.0"
   },
