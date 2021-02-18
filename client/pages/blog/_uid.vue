@@ -95,27 +95,31 @@ export default {
       cluster: null
     };
   },
-  head() {
+  head () {
     return {
-      title: 'test',
+      title: this.$prismic.asText(this.document.meta_title) || this.document.title[0].text,
       meta: [
-        { name: 'description', content: 'test' },
+        { name: 'description', content: this.$prismic.asText(this.document.meta_description)},
         // Facebook / Open Graph
-        { property: 'og:url', content: 'https://maddevs.io/faq/' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: 'test' },
-        { property: 'og:description', content: 'test' },
-        {
-          property: 'og:image',
-          content: 'https://maddevs.io/Open-Graph.png'
-        }
+        { property: 'og:type', content: 'website'},
+        { property: 'og:url', content: this.ogUrl},
+        { property: 'og:title', content: this.$prismic.asText(this.document.meta_title) || this.document.title[0].text},
+        { property: 'og:description', content: this.$prismic.asText(this.document.meta_description)},
+        { property: 'og:image', content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico'},
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' }
+        // Twitter / Twitter Card
+        // { property: 'twitter:card', content: 'summary' },
+        // { property: 'twitter:text:title', content: this.$prismic.asText(this.document.meta_title) || this.document.title[0].text},
+        // { property: 'twitter:description', content: this.$prismic.asText(this.document.meta_description)},
+        // { property: 'twitter:image:src', content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico' },
+        // { property: 'twitter:url', content: this.ogUrl}
       ],
       link: [
-        {
-          rel: 'canonical',
-          href: 'https://maddevs.io/faq/'
-        }
+        { rel: 'canonical', href: this.ogUrl}
       ]
+      // __dangerouslyDisableSanitizers: ['script'],
+      // script: this.jsonLd
     };
   },
   async asyncData({ $prismic, params, error }) {
