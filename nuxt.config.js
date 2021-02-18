@@ -140,6 +140,7 @@ module.exports = {
     preview: false
   },
   env: {
-    awsUrl: process.env.NODE_AWS_URL
+    awsUrl: process.env.NODE_AWS_URL,
+    domain: process.env.NODE_DOMAIN
   }
 };
