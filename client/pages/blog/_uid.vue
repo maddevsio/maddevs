@@ -97,12 +97,14 @@ export default {
   },
   head () {
     return {
-      title: this.$prismic.asText(this.document.meta_title) || this.document.title[0].text,
+      // title: this.$prismic.asText(this.document.meta_title) || this.document.title[0].text,
+      title: 'test',
       meta: [
         { name: 'description', content: this.$prismic.asText(this.document.meta_description)},
         // Facebook / Open Graph
         { property: 'og:type', content: 'website'},
-        { property: 'og:url', content: this.ogUrl},
+        { property: 'og:url', content: 'https://maddevs.co/blog/the-difference-in-work-for-beginner-and-professional-developers/'},
+        // { property: 'og:title', content: this.$prismic.asText(this.document.meta_title) || this.document.title[0].text},
         { property: 'og:title', content: this.$prismic.asText(this.document.meta_title) || this.document.title[0].text},
         { property: 'og:description', content: this.$prismic.asText(this.document.meta_description)},
         { property: 'og:image', content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico'},
@@ -116,7 +118,8 @@ export default {
         // { property: 'twitter:url', content: this.ogUrl}
       ],
       link: [
-        { rel: 'canonical', href: this.ogUrl}
+        // { rel: 'canonical', href: this.ogUrl}
+        { rel: 'canonical', href: 'https://maddevs.co/blog/the-difference-in-work-for-beginner-and-professional-developers/'}
       ]
       // __dangerouslyDisableSanitizers: ['script'],
       // script: this.jsonLd
