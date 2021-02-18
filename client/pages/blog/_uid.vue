@@ -5,21 +5,21 @@
       <div class="blog-post__share">
         <ShareNetwork
           network="facebook"
-          :url="ogUrl"
+          :url="openGraphUrl"
           :title="title"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
           target="_blank"
         />
         <ShareNetwork
           network="twitter"
-          :url="ogUrl"
+          :url="openGraphUrl"
           :title="title"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
           target="_blank"
         />
         <ShareNetwork
           network="linkedin"
-          :url="ogUrl"
+          :url="openGraphUrl"
           :title="title"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
           target="_blank"
@@ -92,7 +92,8 @@ export default {
       shareIcons: [''],
       jsonLd: [],
       type: 'post',
-      cluster: null
+      cluster: null,
+      testVar: ''
     };
   },
   head () {
@@ -102,7 +103,7 @@ export default {
         { name: 'description', content: this.$prismic.asText(this.document.meta_description)},
         // Facebook / Open Graph
         { property: 'og:type', content: 'website'},
-        { property: 'og:url', content: 'https://maddevs.co'},
+        { property: 'og:url', content: this.openGraphUrl},
         { property: 'og:title', content: this.$prismic.asText(this.document.meta_title) || this.document.title[0].text},
         { property: 'og:description', content: this.$prismic.asText(this.document.meta_description)},
         { property: 'og:image', content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico'},
@@ -113,10 +114,10 @@ export default {
         { property: 'twitter:text:title', content: this.$prismic.asText(this.document.meta_title) || this.document.title[0].text},
         { property: 'twitter:description', content: this.$prismic.asText(this.document.meta_description)},
         { property: 'twitter:image:src', content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico' },
-        { property: 'twitter:url', content: 'https://maddevs.co'}
+        { property: 'twitter:url', content: this.openGraphUrl}
       ],
       link: [
-        { rel: 'canonical', href: 'https://maddevs.co'}
+        { rel: 'canonical', href: this.openGraphUrl}
       ],
       __dangerouslyDisableSanitizers: ['script'],
       script: this.jsonLd
@@ -125,6 +126,7 @@ export default {
   async asyncData({ $prismic, params, error }) {
     let recommendedPosts = [];
     let type = 'blog';
+    let openGraphUrl = `https://maddevs.co/blog/${params.uid}`;
     try {
       // Query to get post content
       let post = await $prismic.api.getByUID('post', params.uid);
@@ -150,7 +152,8 @@ export default {
         formattedDate: Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(post.data.date)),
         recommendedPosts: recommendedPosts,
         tags: post.tags,
-        type
+        type,
+        openGraphUrl
       };
     } catch (e) {
       // Returns error page
@@ -159,7 +162,6 @@ export default {
   },
   mounted() {
     this.title = this.$prismic.asText(this.document.meta_title) || this.document.title[0].text;
-    this.ogUrl = window.location.href;
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('scroll', this.shareButtonsScroll);
     window.scroll();
