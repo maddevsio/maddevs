@@ -187,7 +187,9 @@ export default {
     },
     focusInput() {
       this.$nextTick(async () => {
-        this.$refs.nameInput.focus();
+        if(this.$refs.nameInput && this.$refs.nameInput.focus()) {
+          this.$refs.nameInput.focus();
+        }
       });
     }
   }
