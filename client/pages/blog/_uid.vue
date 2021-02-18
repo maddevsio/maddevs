@@ -92,8 +92,7 @@ export default {
       shareIcons: [''],
       jsonLd: [],
       type: 'post',
-      cluster: null,
-      testVar: ''
+      cluster: null
     };
   },
   head () {
