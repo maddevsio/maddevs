@@ -36,11 +36,11 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 
 ## Deploy to the production server 
 
-1. In file `server/sendpulse/controllers.js`, on lines 47 and 64, replace email from current, to `req.body.variables.emailTo`
+1. In the file server/sendpulse/controllers.js, set new value for key `email` on line 38. New value: `req.body.variables.emailTo`
 
 2. Create pull request from new-develop to master. If all checks passed successfully, you can merge new-develop to master
 
-3. After deploy, set old test email for staging in file `server/sendpulse/controllers.js`
+3. After deploy, set old test email for staging in file server/sendpulse/controllers.js
 
 ## Instructions for working with video files
 
