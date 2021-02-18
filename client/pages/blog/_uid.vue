@@ -100,7 +100,7 @@ export default {
         { name: 'description', content: this.$prismic.asText(this.document.meta_description)},
         // Facebook / Open Graph
         { property: 'og:type', content: 'website'},
-        { property: 'og:url', content: `https://maddevs.co${$nuxt.$route.path}`},
+        { property: 'og:url', content: 'https://maddevs.co'},
         { property: 'og:title', content: this.$prismic.asText(this.document.meta_title) || this.document.title[0].text},
         { property: 'og:description', content: this.$prismic.asText(this.document.meta_description)},
         { property: 'og:image', content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico'},
@@ -111,13 +111,13 @@ export default {
         { property: 'twitter:text:title', content: this.$prismic.asText(this.document.meta_title) || this.document.title[0].text},
         { property: 'twitter:description', content: this.$prismic.asText(this.document.meta_description)},
         { property: 'twitter:image:src', content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico' },
-        { property: 'twitter:url', content: `https://maddevs.co${$nuxt.$route.path}`}
+        { property: 'twitter:url', content: 'https://maddevs.co'}
       ],
       link: [
-        { rel: 'canonical', href: `https://maddevs.co${$nuxt.$route.path}`}
-      ]
-      // __dangerouslyDisableSanitizers: ['script'],
-      // script: this.jsonLd
+        { rel: 'canonical', href: 'https://maddevs.co'}
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: this.jsonLd
     };
   },
   async asyncData({ $prismic, params, error }) {
