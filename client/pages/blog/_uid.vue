@@ -85,6 +85,8 @@ export default {
   },
   data() {
     return {
+      title: '',
+      ogUrl: '',
       featuredImage: '',
       buttonIsActive: false,
       shareIcons: [''],
@@ -156,6 +158,8 @@ export default {
     }
   },
   mounted() {
+    this.title = this.$prismic.asText(this.document.meta_title) || this.document.title[0].text;
+    this.ogUrl = window.location.href;
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('scroll', this.shareButtonsScroll);
     window.scroll();
