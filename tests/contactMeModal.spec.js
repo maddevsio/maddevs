@@ -11,7 +11,11 @@ describe('Contact me modal', () => {
       stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar'],
       mocks: {
         $store: {
-          dispatch: () => new Promise((rs, rj) => rs())
+          dispatch: () => new Promise((rs, rj) => rs({status: 200}))
+        },
+        $nuxt: {
+          $emit: jest.fn(),
+          $on: jest.fn()
         }
       }
     });
