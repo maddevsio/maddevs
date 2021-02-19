@@ -25,11 +25,13 @@
       <UIButton
         class="ui-button--transparent-bgc submit-button"
         name="Order a project now"
-        :disabled="invalid || !agreeWithPrivacyPolicy"
+        :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
         @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
         type="button"
         ref="submitButton"
-      />
+      >
+        {{buttonText}}
+      </UIButton>
     </ValidationObserver>
     <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
   </form>
@@ -50,6 +52,15 @@ export default {
   },
   directives: {
     PlaceholderAsterisk
+  },
+  computed: {
+    buttonText: function () {
+      if (this.onSubmit === true) {
+        return 'Waiting...';
+      } else {
+        return 'Order a project now';
+      }
+    }
   },
   data: () => ({
     form: null,
@@ -73,11 +84,6 @@ export default {
           { field_id: 261437, values: [{ value: this.projectDescriber }] } // Project Describer
         ]
       }];
-      this.$store.dispatch('createNewLead', data).then(res => {
-        this.setStateForElements('Order a project now');
-      }).catch(() => {
-        this.setStateForElements('Order a project now');
-      });
     },
     getPrivacyCheckboxState(privacyState) {
       this.agreeWithPrivacyPolicy = privacyState;
@@ -88,7 +94,6 @@ export default {
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
         this.onSubmit = true;
-        this.setStateForElements('Waiting...');
         this.form = {
           templateId: 305480, // Required
           variables: {
@@ -117,12 +122,7 @@ export default {
         });
       }
     },
-    setStateForElements(buttonText) {
-      this.$refs.submitButton.$el.innerText = buttonText;
-      this.$refs.form.$el.classList.toggle('freeze');
-    },
     resetForm() {
-      this.$refs.form.reset();
       this.$refs.checkboxes.reset();
       this.fullName = null;
       this.email = null;
@@ -130,6 +130,10 @@ export default {
       this.projectDescriber = '';
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
+
+      requestAnimationFrame(() => {
+        this.$refs.form.reset();
+      });
     }
   }
 };

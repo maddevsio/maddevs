@@ -31,11 +31,12 @@
           :inputId="inputId"
         />
         <UIButton
-          name="Get expert advice"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
-        />
+        >
+          Get expert advice
+        </UIButton>
       </div>
     </ValidationObserver>
   </ModalContainer>

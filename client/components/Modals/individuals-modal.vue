@@ -35,11 +35,12 @@
           :inputId="inputId"
         />
         <UIButton
-          name="Get individual proactive rockets"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
-        />
+        >
+          Get individual proactive rockets
+        </UIButton>
       </div>
     </ValidationObserver>
   </ModalContainer>

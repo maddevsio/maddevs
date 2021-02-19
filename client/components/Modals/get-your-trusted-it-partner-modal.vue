@@ -31,11 +31,12 @@
           :inputId="inputId"
         />
         <UIButton
-          name="Get your trusted IT partner"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
-        />
+        >
+          Get your trusted IT partner
+        </UIButton>
       </div>
     </ValidationObserver>
   </ModalContainer>

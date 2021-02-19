@@ -39,11 +39,12 @@
           :inputId="inputId"
         />
         <UIButton
-          name="Get an infrastructure audit"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
-        />
+        >
+          Get an infrastructure audit
+        </UIButton>
       </div>
     </ValidationObserver>
   </ModalContainer>

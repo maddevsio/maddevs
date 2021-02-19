@@ -4,7 +4,9 @@
     :class="{ 'ui-button--disabled': disabled }"
     @click="onClick"
     v-WaveAnimation="!disabled"
-  >{{ name }}</button>
+  >
+    <slot></slot>
+  </button>
 </template>
 
 <script>
@@ -16,10 +18,6 @@ export default {
     WaveAnimation
   },
   props: {
-    name: {
-      type: String,
-      default: 'Button'
-    },
     disabled: {
       type: Boolean,
       default: false

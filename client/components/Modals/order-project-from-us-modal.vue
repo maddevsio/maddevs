@@ -36,11 +36,12 @@
           :inputId="inputId"
         />
         <UIButton
-          name="Submit your project"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
-        />
+        >
+          Submit your project
+        </UIButton>
       </div>
     </ValidationObserver>
   </ModalContainer>

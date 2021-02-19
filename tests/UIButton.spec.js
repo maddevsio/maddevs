@@ -3,14 +3,16 @@ import {
 } from '@vue/test-utils';
 import UIButton from '@/components/ui/UIButton';
 
-describe('Ui button modal trigger', () => {
+describe('Ui button', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = mount(UIButton, {
       propsData: {
-        name: 'Button name',
         disabled: false
+      },
+      slots: {
+        default: 'button text'
       }
     });
   });
@@ -25,9 +27,8 @@ describe('Ui button modal trigger', () => {
   });
   // --------------------- //
 
-  test('Button slot renders a default button text', () => {
-    const button = wrapper.find('.ui-button');
-    expect(button.text()).toBe('Button name');
+  test('Slot should set text for button', () => {
+    expect(wrapper.html()).toContain('button text');
   });
 
   test('onClick should call $emit', () => {

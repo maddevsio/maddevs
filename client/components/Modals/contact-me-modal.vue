@@ -32,10 +32,11 @@
         />
         <UIButton
           class="modal-button"
-          name="Сontact Me"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-        />
+        >
+          Сontact Me
+        </UIButton>
       </div>
     </ValidationObserver>
   </ModalContainer>

@@ -21,11 +21,12 @@
           :inputId="inputId"
         />
         <UIButton
-          name="Get Case Studies"
           :disabled="invalid || !agreeWithPrivacyPolicy"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
-        />
+        >
+          Get Case Studies
+        </UIButton>
       </div>
     </ValidationObserver>
   </ModalContainer>
