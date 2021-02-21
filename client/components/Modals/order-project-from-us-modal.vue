@@ -36,11 +36,11 @@
           :inputId="inputId"
         />
         <UIButton
-          :disabled="invalid || !agreeWithPrivacyPolicy"
+          :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
         >
-          Submit your project
+          {{buttonText}}
         </UIButton>
       </div>
     </ValidationObserver>
@@ -58,6 +58,15 @@ export default {
     FormCheckboxes,
     ModalContainer,
     UIButton
+  },
+  computed: {
+    buttonText: function () {
+      if (this.onSubmit === true) {
+        return 'Waiting...';
+      } else {
+        return 'Submit your project';
+      }
+    }
   },
   data: () => ({
     modalName: 'order-project-from-us-modal',

@@ -21,11 +21,11 @@
           :inputId="inputId"
         />
         <UIButton
-          :disabled="invalid || !agreeWithPrivacyPolicy"
+          :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
         >
-          Get Case Studies
+         {{buttonText}} 
         </UIButton>
       </div>
     </ValidationObserver>
@@ -43,6 +43,15 @@ export default {
     FormCheckboxes,
     ModalContainer,
     UIButton
+  },
+  computed: {
+    buttonText: function () {
+      if (this.onSubmit === true) {
+        return 'Waiting...';
+      } else {
+        return 'Get Case Studies';
+      }
+    }
   },
   data: () => ({
     modalName: 'get-case-studies-modal',

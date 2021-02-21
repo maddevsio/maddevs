@@ -31,11 +31,11 @@
           :inputId="inputId"
         />
         <UIButton
-          :disabled="invalid || !agreeWithPrivacyPolicy"
+          :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
         >
-          Get your trusted IT partner
+          {{buttonText}}
         </UIButton>
       </div>
     </ValidationObserver>
@@ -53,6 +53,15 @@ export default {
     ModalContainer,
     FormCheckboxes,
     UIButton
+  },
+  computed: {
+    buttonText: function () {
+      if (this.onSubmit === true) {
+        return 'Waiting...';
+      } else {
+        return 'Get your trusted IT partner';
+      }
+    }
   },
   data: () => ({
     modalName: 'get-your-trusted-it-partner',

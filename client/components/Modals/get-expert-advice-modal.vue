@@ -31,11 +31,11 @@
           :inputId="inputId"
         />
         <UIButton
-          :disabled="invalid || !agreeWithPrivacyPolicy"
+          :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
         >
-          Get expert advice
+          {{buttonText}}
         </UIButton>
       </div>
     </ValidationObserver>
@@ -53,6 +53,15 @@ export default {
     FormCheckboxes,
     ModalContainer,
     UIButton
+  },
+  computed: {
+    buttonText: function () {
+      if (this.onSubmit === true) {
+        return 'Waiting...';
+      } else {
+        return 'Get expert advice';
+      }
+    }
   },
   data: () => ({
     modalName: 'get-expert-advice',
