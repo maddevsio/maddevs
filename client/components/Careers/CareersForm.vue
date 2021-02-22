@@ -131,6 +131,9 @@ export default {
       }
     }
   },
+  mounted() {
+    this.focusInput();
+  },
   methods: {
     onFileChanged(params) {
       params;
