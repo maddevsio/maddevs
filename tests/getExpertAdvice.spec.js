@@ -116,4 +116,14 @@ describe('Technology stack modal', () => {
       wrapper.vm.$data.isEmailSent
     ).toEqual(false);
   });
+
+  test('Computed buttonText should return Waiting...', () => {
+    wrapper.setData({ onSubmit: true });
+    expect(wrapper.vm.buttonText).toEqual('Waiting...');
+  });
+
+  test('Computed buttonText should return Get expert advice', () => {
+    wrapper.setData({ onSubmit: false });
+    expect(wrapper.vm.buttonText).toEqual('Get expert advice');
+  });
 });

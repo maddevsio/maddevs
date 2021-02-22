@@ -116,4 +116,14 @@ describe('Individuals modal', () => {
       wrapper.vm.$data.isEmailSent
     ).toEqual(false);
   });
+
+  test('Computed buttonText should return Waiting...', () => {
+    wrapper.setData({ onSubmit: true });
+    expect(wrapper.vm.buttonText).toEqual('Waiting...');
+  });
+
+  test('Computed buttonText should return Get individual proactive rockets', () => {
+    wrapper.setData({ onSubmit: false });
+    expect(wrapper.vm.buttonText).toEqual('Get individual proactive rockets');
+  });
 });

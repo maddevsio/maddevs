@@ -90,7 +90,7 @@ describe('Teams Modal', () => {
     expect(wrapper.vm.$data.form).toEqual(form);
   });
 
-  test('should rest values in data instances', () => {
+  test('should reset values in data instances', () => {
     // Set mock data for data instances
     wrapper.vm.$data.fullName = 'Name';
     wrapper.vm.$data.email = 'email@mail.com';
@@ -118,5 +118,15 @@ describe('Teams Modal', () => {
       wrapper.vm.$data.agreeWithPrivacyPolicy &&
       wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
+  });
+
+  test('Computed buttonText should return Waiting...', () => {
+    wrapper.setData({ onSubmit: true });
+    expect(wrapper.vm.buttonText).toEqual('Waiting...');
+  });
+
+  test('Computed buttonText should return Get a team of ultra fast coders', () => {
+    wrapper.setData({ onSubmit: false });
+    expect(wrapper.vm.buttonText).toEqual('Get a team of ultra fast coders');
   });
 });
