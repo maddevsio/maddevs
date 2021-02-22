@@ -24,12 +24,14 @@
       />
       <UIButton
         class="ui-button--transparent-bgc submit-button"
-        name="Order a project now"
-        :disabled="invalid || !agreeWithPrivacyPolicy"
         @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
         type="button"
         ref="submitButton"
-      />
+        :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
+        :loading="onSubmit"
+      >
+        Order a project now
+      </UIButton>
     </ValidationObserver>
     <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
   </form>
@@ -73,11 +75,6 @@ export default {
           { field_id: 261437, values: [{ value: this.projectDescriber }] } // Project Describer
         ]
       }];
-      this.$store.dispatch('createNewLead', data).then(res => {
-        this.setStateForElements('Order a project now');
-      }).catch(() => {
-        this.setStateForElements('Order a project now');
-      });
     },
     getPrivacyCheckboxState(privacyState) {
       this.agreeWithPrivacyPolicy = privacyState;
@@ -88,7 +85,6 @@ export default {
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
         this.onSubmit = true;
-        this.setStateForElements('Waiting...');
         this.form = {
           templateId: 305480, // Required
           variables: {
@@ -96,8 +92,8 @@ export default {
             email: this.email || '',
             emailTo: this.emailTo || '',
             projectDescriber: this.projectDescriber,
-            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers,
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
             subject: this.subject || '',
             modalTitle: this.modalTitle
           }
@@ -117,12 +113,7 @@ export default {
         });
       }
     },
-    setStateForElements(buttonText) {
-      this.$refs.submitButton.$el.innerText = buttonText;
-      this.$refs.form.$el.classList.toggle('freeze');
-    },
     resetForm() {
-      this.$refs.form.reset();
       this.$refs.checkboxes.reset();
       this.fullName = null;
       this.email = null;
@@ -130,6 +121,10 @@ export default {
       this.projectDescriber = '';
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
+
+      requestAnimationFrame(() => {
+        this.$refs.form.reset();
+      });
     }
   }
 };

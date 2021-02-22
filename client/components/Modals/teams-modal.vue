@@ -39,11 +39,13 @@
           :inputId="inputId"
         />
         <UIButton
-          name="Get a team of ultra fast coders"
-          :disabled="invalid || !agreeWithPrivacyPolicy || !selectedTeamSize"
+          :disabled="invalid || !agreeWithPrivacyPolicy || !selectedTeamSize || onSubmit"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy || selectedTeamSize)"
           class="modal-button"
-        />
+          :loading="onSubmit"
+        >
+          Get a team of ultra fast coders
+        </UIButton>
       </div>
     </ValidationObserver>
   </ModalContainer>

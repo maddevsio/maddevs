@@ -32,10 +32,12 @@
         />
         <UIButton
           class="modal-button"
-          name="Сontact Me"
-          :disabled="invalid || !agreeWithPrivacyPolicy"
+          :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-        />
+          :loading="onSubmit"
+        >
+          Сontact Me
+        </UIButton>
       </div>
     </ValidationObserver>
   </ModalContainer>

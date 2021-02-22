@@ -39,11 +39,13 @@
           :inputId="inputId"
         />
         <UIButton
-          name="Get an infrastructure audit"
-          :disabled="invalid || !agreeWithPrivacyPolicy"
+          :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
-        />
+          :loading="onSubmit"
+        >
+          Get an infrastructure audit
+        </UIButton>
       </div>
     </ValidationObserver>
   </ModalContainer>

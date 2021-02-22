@@ -12,7 +12,7 @@ describe('CareersForm component', () => {
     emailTo: 'hr@maddevs.io',
     selectedFile: null,
     linkedinProfile: null,
-    onSumbit: false,
+    onSubmit: false,
     form: '',
     radioData: [
       { type: 'senior', label: 'Senior,' },
