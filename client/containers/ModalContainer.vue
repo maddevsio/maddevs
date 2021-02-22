@@ -49,9 +49,11 @@ export default {
     handleOutsideClick() {
       this.isEmailSent = false;
       this.enableScrollOnBody();
+      this.$nuxt.$emit('resetForm');
     },
     closeModal() {
       this.$modal.hide(this.$props.name);
+      this.$nuxt.$emit('resetForm');
     },
     enableScrollOnBody() {
       const scrollY = document.body.style.top;

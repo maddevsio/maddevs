@@ -98,6 +98,12 @@ export default {
     subject: 'Marketing',
     modalTitle: 'Mad Devs Website Forms'
   }),
+  mounted() {
+    this.$nuxt.$on('resetForm', () => { // Reset checkboxes in form if user close modal 
+      this.agreeWithPrivacyPolicy = false;
+      this.agreeToGetMadDevsDiscountOffers = false;
+    });
+  },
   methods: {
     getPrivacyCheckboxState(privacyState) {
       this.agreeWithPrivacyPolicy = privacyState;
