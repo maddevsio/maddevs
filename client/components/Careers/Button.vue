@@ -1,6 +1,7 @@
 <template>
   <button id="careers-btn" class="button" :class="{ 'is-disabled': disabled }" @click="callback">
-    <slot></slot>
+    <span v-if="loading === true">Waiting...</span>
+    <slot v-else></slot>
   </button>
 </template>
 
@@ -8,6 +9,10 @@
 export default {
   name: 'Button',
   props: {
+    loading: {
+      type: Boolean,
+      default: false
+    },
     disabled: {
       type: Boolean,
       default: false

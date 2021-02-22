@@ -34,8 +34,9 @@
           class="modal-button"
           :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+          :loading="onSubmit"
         >
-          {{buttonText}}
+          Сontact Me
         </UIButton>
       </div>
     </ValidationObserver>
@@ -53,15 +54,6 @@ export default {
     FormCheckboxes,
     ModalContainer,
     UIButton
-  },
-  computed: {
-    buttonText: function () {
-      if (this.onSubmit === true) {
-        return 'Waiting...';
-      } else {
-        return 'Сontact Me';
-      }
-    }
   },
   data: () => ({
     modalName: 'contact-me-modal',

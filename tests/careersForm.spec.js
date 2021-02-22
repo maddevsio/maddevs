@@ -90,14 +90,4 @@ describe('CareersForm component', () => {
     const promise = new Promise((res, rej) => res());
     expect(wrapper.vm.toBase64(file)).toEqual(promise);
   });
-
-  test('Computed buttonText should return Waiting...', () => {
-    wrapper.setData({ onSubmit: true });
-    expect(wrapper.vm.buttonText).toEqual('Waiting...');
-  });
-
-  test('Computed buttonText should return I want to work for Mad Devs!', () => {
-    wrapper.setData({ onSubmit: false });
-    expect(wrapper.vm.buttonText).toEqual('I want to work for Mad Devs!');
-  });
 });

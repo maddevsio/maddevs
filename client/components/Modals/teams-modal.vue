@@ -42,8 +42,9 @@
           :disabled="invalid || !agreeWithPrivacyPolicy || !selectedTeamSize || onSubmit"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy || selectedTeamSize)"
           class="modal-button"
+          :loading="onSubmit"
         >
-          {{buttonText}}
+          Get a team of ultra fast coders
         </UIButton>
       </div>
     </ValidationObserver>
@@ -63,15 +64,6 @@ export default {
     RadioList,
     ModalContainer,
     UIButton
-  },
-  computed: {
-    buttonText: function () {
-      if (this.onSubmit === true) {
-        return 'Waiting...';
-      } else {
-        return 'Get a team of ultra fast coders';
-      }
-    }
   },
   data: () => ({
     form: null,

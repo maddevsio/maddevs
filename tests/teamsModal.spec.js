@@ -119,14 +119,4 @@ describe('Teams Modal', () => {
       wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
   });
-
-  test('Computed buttonText should return Waiting...', () => {
-    wrapper.setData({ onSubmit: true });
-    expect(wrapper.vm.buttonText).toEqual('Waiting...');
-  });
-
-  test('Computed buttonText should return Get a team of ultra fast coders', () => {
-    wrapper.setData({ onSubmit: false });
-    expect(wrapper.vm.buttonText).toEqual('Get a team of ultra fast coders');
-  });
 });

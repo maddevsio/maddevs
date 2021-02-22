@@ -38,8 +38,9 @@
           :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
+          :loading="onSubmit"
         >
-          {{buttonText}}
+          Get individual proactive rockets
         </UIButton>
       </div>
     </ValidationObserver>
@@ -57,15 +58,6 @@ export default {
     FormCheckboxes,
     ModalContainer,
     UIButton
-  },
-  computed: {
-    buttonText: function () {
-      if (this.onSubmit === true) {
-        return 'Waiting...';
-      } else {
-        return 'Get individual proactive rockets';
-      }
-    }
   },
   data: () => ({
     modalName: 'individuals-modal',

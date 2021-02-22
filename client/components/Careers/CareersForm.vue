@@ -78,7 +78,7 @@
                 </ValidationProvider>
               </li>
             </ul>
-            <Button type="submit" :disabled="invalid || onSubmit">{{buttonText}}</Button>
+            <Button type="submit" :disabled="invalid || onSubmit" :loading="onSubmit">I want to work for Mad Devs!</Button>
           </form>
         </ValidationObserver>
       </div>
@@ -121,15 +121,6 @@ export default {
       form: '',
       modalTitle: 'Mad Devs Website Carrers Form'
     };
-  },
-  computed: {
-    buttonText: function () {
-      if (this.onSubmit === true) {
-        return 'Waiting...';
-      } else {
-        return 'I want to work for Mad Devs!';
-      }
-    }
   },
   mounted() {
     this.focusInput();

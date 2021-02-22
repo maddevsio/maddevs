@@ -13,6 +13,7 @@ describe('Button component', () => {
         default: 'Btn text'
       },
       propsData: {
+        loading: false,
         disabled: false
       }
     });
@@ -78,5 +79,33 @@ describe('Button component', () => {
         disabled: false
       }
     });
+  });
+
+  test('Button should contain span with text Waiting...', () => {
+    wrapper = mount(Button, {
+      propsData: {
+        loading: true,
+        disabled: false
+      },
+      slots: {
+        default: 'Slot text'
+      }
+    });
+
+    expect(wrapper.find('span').text()).toEqual('Waiting...');
+  });
+
+  test('Button should contain slot text', () => {
+    wrapper = mount(Button, {
+      propsData: {
+        loading: false,
+        disabled: false
+      },
+      slots: {
+        default: 'Slot text'
+      }
+    });
+
+    expect(wrapper.text()).toEqual('Slot text');
   });
 });

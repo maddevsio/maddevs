@@ -113,14 +113,4 @@ describe('Get your trusted it partner modal', () => {
       wrapper.vm.$data.isEmailSent
     ).toEqual(false);
   });
-
-  test('Computed buttonText should return Waiting...', () => {
-    wrapper.setData({ onSubmit: true });
-    expect(wrapper.vm.buttonText).toEqual('Waiting...');
-  });
-
-  test('Computed buttonText should return Get your trusted IT partner', () => {
-    wrapper.setData({ onSubmit: false });
-    expect(wrapper.vm.buttonText).toEqual('Get your trusted IT partner');
-  });
 });

@@ -5,7 +5,8 @@
     @click="onClick"
     v-WaveAnimation="!disabled"
   >
-    <slot></slot>
+    <span v-if="loading === true">Waiting...</span>
+    <slot v-else></slot>
   </button>
 </template>
 
@@ -18,6 +19,10 @@ export default {
     WaveAnimation
   },
   props: {
+    loading: {
+      type: Boolean,
+      default: false
+    },
     disabled: {
       type: Boolean,
       default: false

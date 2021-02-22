@@ -24,13 +24,13 @@
       />
       <UIButton
         class="ui-button--transparent-bgc submit-button"
-        name="Order a project now"
-        :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
         @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
         type="button"
         ref="submitButton"
+        :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
+        :loading="onSubmit"
       >
-        {{buttonText}}
+        Order a project now
       </UIButton>
     </ValidationObserver>
     <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
@@ -52,15 +52,6 @@ export default {
   },
   directives: {
     PlaceholderAsterisk
-  },
-  computed: {
-    buttonText: function () {
-      if (this.onSubmit === true) {
-        return 'Waiting...';
-      } else {
-        return 'Order a project now';
-      }
-    }
   },
   data: () => ({
     form: null,

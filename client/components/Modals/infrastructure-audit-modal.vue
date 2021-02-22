@@ -42,8 +42,9 @@
           :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
+          :loading="onSubmit"
         >
-          {{buttonText}}
+          Get an infrastructure audit
         </UIButton>
       </div>
     </ValidationObserver>
@@ -63,15 +64,6 @@ export default {
     RadioList,
     ModalContainer,
     UIButton
-  },
-  computed: {
-    buttonText: function () {
-      if (this.onSubmit === true) {
-        return 'Waiting...';
-      } else {
-        return 'Get an infrastructure audit';
-      }
-    }
   },
   data: () => ({
     modalName: 'infrastructure-modal',
