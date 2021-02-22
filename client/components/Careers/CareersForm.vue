@@ -78,7 +78,7 @@
                 </ValidationProvider>
               </li>
             </ul>
-            <Button type="submit" :disabled="invalid || onSumbit">I want to work for Mad Devs!</Button>
+            <Button type="submit" :disabled="invalid || onSubmit">{{buttonText}}</Button>
           </form>
         </ValidationObserver>
       </div>
@@ -95,6 +95,12 @@ import SuccessModal from '@/components/Modals/success-modal';
 
 export default {
   name: 'CareersForm',
+  components: {
+    FileInput,
+    Button,
+    UIRadioButtons,
+    SuccessModal
+  },
   data() {
     return {
       fullName: null,
@@ -111,27 +117,27 @@ export default {
         { type: 'intern', label: 'Intern' }
       ],
       isEmailSent: false,
-      onSumbit: false,
+      onSubmit: false,
       form: '',
       modalTitle: 'Mad Devs Website Carrers Form'
     };
   },
-  mounted() {
-    this.focusInput();
-  },
-  components: {
-    FileInput,
-    Button,
-    UIRadioButtons,
-    SuccessModal
+  computed: {
+    buttonText: function () {
+      if (this.onSubmit === true) {
+        return 'Waiting...';
+      } else {
+        return 'I want to work for Mad Devs!';
+      }
+    }
   },
   methods: {
     onFileChanged(params) {
       params;
     },
     sendData(e) {
-      if (!this.errors && !this.onSumbit) {
-        this.onSumbit = true;
+      if (!this.errors && !this.onSubmit) {
+        this.onSubmit = true;
         //TODO: add ajax request
         this.toBase64(this.selectedFile).then(base64 => {
           this.form = {
@@ -152,7 +158,7 @@ export default {
             }
           };
           this.$store.dispatch('sendEmail', this.form).then(res => {
-            this.onSumbit = false;
+            this.onSubmit = false;
             if (res.status === 200) {
               this.isEmailSent = true;
               setTimeout(() => {

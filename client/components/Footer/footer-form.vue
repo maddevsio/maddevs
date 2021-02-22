@@ -101,8 +101,8 @@ export default {
             email: this.email || '',
             emailTo: this.emailTo || '',
             projectDescriber: this.projectDescriber,
-            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers,
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
             subject: this.subject || '',
             modalTitle: this.modalTitle
           }
