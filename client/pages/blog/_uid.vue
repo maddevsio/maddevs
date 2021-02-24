@@ -119,13 +119,19 @@ export default {
         { rel: 'canonical', href: this.openGraphUrl}
       ],
       __dangerouslyDisableSanitizers: ['script'],
-      script: this.jsonLd
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: this.jsonLd
+        }
+      ]
     };
   },
   async asyncData({ $prismic, params, error }) {
     let recommendedPosts = [];
     let type = 'blog';
     let openGraphUrl = `${process.env.domain}/blog/${params.uid}`;
+    let jsonLd;
     try {
       // Query to get post content
       let post = await $prismic.api.getByUID('post', params.uid);
@@ -143,6 +149,13 @@ export default {
         }
       }
 
+      // Query to get Schema.org markup
+      if (post.data.schema_org_snippets.length) {
+        jsonLd = post.data.schema_org_snippets[0].single_snippet[0].text;
+      } else {
+        console.log('Schema.org is not defined');
+      }
+
       // Returns data to be used in template
       return {
         id: post.id,
@@ -152,7 +165,8 @@ export default {
         recommendedPosts: recommendedPosts,
         tags: post.tags,
         type,
-        openGraphUrl
+        openGraphUrl,
+        jsonLd
       };
     } catch (e) {
       // Returns error page
@@ -164,7 +178,6 @@ export default {
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('scroll', this.shareButtonsScroll);
     window.scroll();
-    this.getLdScripts();
     if (this.type === 'customer_university') {
       this.getClusterData();
     }
@@ -209,14 +222,6 @@ export default {
       } else {
         shareButtons.style.cssText = 'top: 100px';
       }
-    },
-    getLdScripts() {
-      this.jsonLd = this.document.schema_org_snippets.map(snippet => {
-        return {
-          type: 'application/ld+json',
-          innerHTML: this.$prismic.asText(snippet.single_snippet).replaceAll(/\n ?/g, '')
-        };
-      });
     },
     getClusterData() {
       this.$prismic.api.getSingle('cu_master')
