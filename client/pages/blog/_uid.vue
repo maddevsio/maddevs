@@ -150,7 +150,11 @@ export default {
       }
 
       // Query to get Schema.org markup
-      if (post.data.schema_org_snippets.length) {
+      if (
+        post.data.schema_org_snippets.length &&
+        post.data.schema_org_snippets[0].single_snippet.length &&
+        post.data.schema_org_snippets[0].single_snippet[0].text
+      ) {
         jsonLd = post.data.schema_org_snippets[0].single_snippet[0].text;
       } else {
         console.log('Schema.org is not defined');
