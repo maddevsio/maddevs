@@ -116,7 +116,7 @@ export default {
     modalTitle: 'Mad Devs Website Forms'
   }),
   mounted() {
-    this.$nuxt.$on('resetForm', () => { // Reset checkboxes in form if user close modal 
+    this.$nuxt.$on('resetCheckboxesInForm', () => { // Reset checkboxes in form if user close modal 
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
     });
