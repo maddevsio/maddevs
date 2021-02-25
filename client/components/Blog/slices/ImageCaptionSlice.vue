@@ -38,7 +38,8 @@ export default {
     },
     lightBoxImage: function () {
       return {
-        src: this.img.url
+        src: this.img.url,
+        alt: this.img.alt
       };
     }
   }
