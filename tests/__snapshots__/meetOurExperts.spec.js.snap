@@ -28,7 +28,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           />
            
           <img
-            alt="Marat@2x"
+            alt="Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
             loading="lazy"
             src="[object Object]"
@@ -77,7 +77,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           />
            
           <img
-            alt="Tamara@2x"
+            alt="Tamara Mun - Delivery Manager at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
             loading="lazy"
             src="[object Object]"
@@ -126,7 +126,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           />
            
           <img
-            alt="Chuck@2x"
+            alt="Andrew \\"Сhuck\\" Minkin - CTO and Co-Founder at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
             loading="lazy"
             src="[object Object]"
@@ -175,7 +175,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           />
            
           <img
-            alt="Nakylai@2x"
+            alt="Nakylai Taiirova - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
             loading="lazy"
             src="[object Object]"
@@ -224,7 +224,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           />
            
           <img
-            alt="Daria@2x"
+            alt="Daria Utesheva - Head of HR Department at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
             loading="lazy"
             src="[object Object]"
@@ -273,7 +273,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           />
            
           <img
-            alt="Nuradil@2x"
+            alt="Nuradil Alymkulov - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
             loading="lazy"
             src="[object Object]"
@@ -322,7 +322,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           />
            
           <img
-            alt="Alice@2x"
+            alt="Alice Jang - Project Manager at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
             loading="lazy"
             src="[object Object]"
@@ -371,7 +371,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           />
            
           <img
-            alt="Arthur@2x"
+            alt="Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
             loading="lazy"
             src="[object Object]"

@@ -32,7 +32,7 @@
                   :src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)"
                   loading="lazy"
                   class="customer-testimonials__customer-image"
-                  :alt="testimonial.customerName">
+                  :alt="testimonial.alt">
                 <span class="customer-testimonials__customer-name paragraph-sm">
                   {{ testimonial.customerName }} <span>{{ testimonial.customerCountry }}</span>
                 </span>
@@ -63,7 +63,8 @@ export default {
           customerProject: 'teacherly',
           customerImageName: 'atif',
           testimonialText: 'Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.',
-          link: 'https://teacherly.io/'
+          link: 'https://teacherly.io/',
+          alt: 'Atif Mahmud - CEO and Founder at Teacherly.'
         },
         {
           customerName: 'Daniel Vartanov,',
@@ -71,7 +72,8 @@ export default {
           customerProject: 'veeqo',
           customerImageName: 'daniel',
           testimonialText: 'We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.',
-          link: 'https://veeqo.com/'
+          link: 'https://veeqo.com/',
+          alt: 'Daniel Vartanov - CTO at Veeqo.com.'
         },
         {
           customerName: 'Stefan Streichsbier,',
@@ -79,7 +81,8 @@ export default {
           customerProject: 'guardrails',
           customerImageName: 'stefan',
           testimonialText: 'I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.',
-          link: 'https://guardrails.io/'
+          link: 'https://guardrails.io/',
+          alt: 'Stefan Streichsbier - CEO and Founder at GuardRails.io.'
         }
       ]
     };

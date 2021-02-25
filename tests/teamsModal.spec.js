@@ -11,7 +11,11 @@ describe('Teams Modal', () => {
       stubs: ['modal', 'ValidationObserver', 'perfect-scrollbar'],
       mocks: {
         $store: {
-          dispatch: () => new Promise((rs, rj) => rs())
+          dispatch: () => new Promise((rs, rj) => rs({status: 200}))
+        },
+        $nuxt: {
+          $emit: jest.fn(),
+          $on: jest.fn()
         }
       }
     });
@@ -86,7 +90,7 @@ describe('Teams Modal', () => {
     expect(wrapper.vm.$data.form).toEqual(form);
   });
 
-  test('should rest values in data instances', () => {
+  test('should reset values in data instances', () => {
     // Set mock data for data instances
     wrapper.vm.$data.fullName = 'Name';
     wrapper.vm.$data.email = 'email@mail.com';

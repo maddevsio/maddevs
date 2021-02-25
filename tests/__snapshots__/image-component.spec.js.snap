@@ -9,7 +9,7 @@ exports[`Webp image component renders correctly 1`] = `
   />
    
   <img
-    alt="Marat@2x"
+    alt=""
     class="multi-image"
     loading="lazy"
     src="[object Object]"
