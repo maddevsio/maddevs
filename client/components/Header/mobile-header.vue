@@ -22,7 +22,7 @@
             <router-link class="mobile-header__nav-link" to="/services">Services</router-link>
             <router-link class="mobile-header__nav-link" to="/projects">Projects</router-link>
             <router-link class="mobile-header__nav-link" to="/careers">Careers</router-link>
-            <a href="https://blog.maddevs.io/" class="mobile-header__nav-link mobile-header__nav-blog-link" target="_blank" rel="noreferrer">Blog</a>
+            <router-link class="mobile-header__nav-link mobile-header__nav-blog-link" to="/blog">Blog</router-link>
           </nav>
           <div class="mobile-header__contacts mobile-header__large-phone-content">
             <div class="mobile-header__contact-item mobile-header__contact-item-email">

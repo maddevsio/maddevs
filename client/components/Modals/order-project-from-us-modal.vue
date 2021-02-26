@@ -36,11 +36,13 @@
           :inputId="inputId"
         />
         <UIButton
-          name="Submit your project"
-          :disabled="invalid || !agreeWithPrivacyPolicy"
+          :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
-        />
+          :loading="onSubmit"
+        >
+          Submit your project
+        </UIButton>
       </div>
     </ValidationObserver>
   </ModalContainer>
@@ -74,6 +76,12 @@ export default {
     form: '',
     modalTitle: 'Mad Devs Website Forms'
   }),
+  mounted() {
+    this.$nuxt.$on('resetCheckboxesInForm', () => { // Reset checkboxes in form if user close modal 
+      this.agreeWithPrivacyPolicy = false;
+      this.agreeToGetMadDevsDiscountOffers = false;
+    });
+  },
   methods: {
     getPrivacyCheckboxState(privacyState) {
       this.agreeWithPrivacyPolicy = privacyState;

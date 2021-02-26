@@ -174,7 +174,7 @@ exports[`Projects page renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="nambafoodBackground"
+                  alt="Namba Food Contactless Delivery Service\`s Logo."
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
@@ -256,7 +256,7 @@ exports[`Projects page renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="sjmcBackground"
+                  alt="General John Monash The Australian War Memorial\`s Logo."
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
@@ -338,7 +338,7 @@ exports[`Projects page renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="guardrailsBackground"
+                  alt="Guardrails Cloud CyberSecurity Services Logo."
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
@@ -424,7 +424,7 @@ exports[`Projects page renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="godeeBackground"
+                  alt="GoDee Bus Transportation Services Logo."
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
@@ -522,7 +522,7 @@ exports[`Projects page renders correctly 1`] = `
                     />
                      
                     <img
-                      alt="nambafoodBackground"
+                      alt="Namba Food Contactless Delivery Service\`s Logo."
                       loading="lazy"
                       src="[object Object]"
                       srcset="[object Object] 2x"
@@ -608,7 +608,7 @@ exports[`Projects page renders correctly 1`] = `
                     />
                      
                     <img
-                      alt="sjmcBackground"
+                      alt="General John Monash The Australian War Memorial\`s Logo."
                       loading="lazy"
                       src="[object Object]"
                       srcset="[object Object] 2x"
@@ -694,7 +694,7 @@ exports[`Projects page renders correctly 1`] = `
                     />
                      
                     <img
-                      alt="guardrailsBackground"
+                      alt="Guardrails Cloud CyberSecurity Services Logo."
                       loading="lazy"
                       src="[object Object]"
                       srcset="[object Object] 2x"
@@ -784,7 +784,7 @@ exports[`Projects page renders correctly 1`] = `
                     />
                      
                     <img
-                      alt="godeeBackground"
+                      alt="GoDee Bus Transportation Services Logo."
                       loading="lazy"
                       src="[object Object]"
                       srcset="[object Object] 2x"

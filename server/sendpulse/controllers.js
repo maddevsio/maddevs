@@ -35,7 +35,7 @@ const sendEmail = (req, res) => {
         },
         'to': [{
           'name': 'Mad Devs team',
-          'email': 'earthur@maddevs.io'
+          'email': req.body.variables.emailTo
         }]
       };
       if (req.body && req.body.attachment) {

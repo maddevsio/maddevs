@@ -78,7 +78,6 @@ exports[`CaseStudies component renders correctly 1`] = `
         />
          
         <img
-          alt="godeeBackground"
           loading="lazy"
           src="[object Object]"
           srcset="[object Object] 2x"

@@ -952,7 +952,7 @@ exports[`Index page renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="nambafoodBackground"
+                  alt="Namba Food Contactless Delivery Service\`s Logo."
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
@@ -1034,7 +1034,7 @@ exports[`Index page renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="sjmcBackground"
+                  alt="General John Monash The Australian War Memorial\`s Logo."
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
@@ -1116,7 +1116,7 @@ exports[`Index page renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="guardrailsBackground"
+                  alt="Guardrails Cloud CyberSecurity Services Logo."
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
@@ -1202,7 +1202,7 @@ exports[`Index page renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="godeeBackground"
+                  alt="GoDee Bus Transportation Services Logo."
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
@@ -1300,7 +1300,7 @@ exports[`Index page renders correctly 1`] = `
                     />
                      
                     <img
-                      alt="nambafoodBackground"
+                      alt="Namba Food Contactless Delivery Service\`s Logo."
                       loading="lazy"
                       src="[object Object]"
                       srcset="[object Object] 2x"
@@ -1386,7 +1386,7 @@ exports[`Index page renders correctly 1`] = `
                     />
                      
                     <img
-                      alt="sjmcBackground"
+                      alt="General John Monash The Australian War Memorial\`s Logo."
                       loading="lazy"
                       src="[object Object]"
                       srcset="[object Object] 2x"
@@ -1472,7 +1472,7 @@ exports[`Index page renders correctly 1`] = `
                     />
                      
                     <img
-                      alt="guardrailsBackground"
+                      alt="Guardrails Cloud CyberSecurity Services Logo."
                       loading="lazy"
                       src="[object Object]"
                       srcset="[object Object] 2x"
@@ -1562,7 +1562,7 @@ exports[`Index page renders correctly 1`] = `
                     />
                      
                     <img
-                      alt="godeeBackground"
+                      alt="GoDee Bus Transportation Services Logo."
                       loading="lazy"
                       src="[object Object]"
                       srcset="[object Object] 2x"
@@ -1828,7 +1828,7 @@ exports[`Index page renders correctly 1`] = `
                 class="customer-testimonials__profile"
               >
                 <img
-                  alt="Atif Mahmud,"
+                  alt="Atif Mahmud - CEO and Founder at Teacherly."
                   class="customer-testimonials__customer-image"
                   loading="lazy"
                   src="[object Object]"
@@ -1878,7 +1878,7 @@ exports[`Index page renders correctly 1`] = `
                 class="customer-testimonials__profile"
               >
                 <img
-                  alt="Daniel Vartanov,"
+                  alt="Daniel Vartanov - CTO at Veeqo.com."
                   class="customer-testimonials__customer-image"
                   loading="lazy"
                   src="[object Object]"
@@ -1928,7 +1928,7 @@ exports[`Index page renders correctly 1`] = `
                 class="customer-testimonials__profile"
               >
                 <img
-                  alt="Stefan Streichsbier,"
+                  alt="Stefan Streichsbier - CEO and Founder at GuardRails.io."
                   class="customer-testimonials__customer-image"
                   loading="lazy"
                   src="[object Object]"
@@ -2222,7 +2222,7 @@ exports[`Index page renders correctly 1`] = `
             />
              
             <img
-              alt="Marat@2x"
+              alt="Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
               loading="lazy"
               src="[object Object]"
@@ -2271,7 +2271,7 @@ exports[`Index page renders correctly 1`] = `
             />
              
             <img
-              alt="Tamara@2x"
+              alt="Tamara Mun - Delivery Manager at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
               loading="lazy"
               src="[object Object]"
@@ -2320,7 +2320,7 @@ exports[`Index page renders correctly 1`] = `
             />
              
             <img
-              alt="Chuck@2x"
+              alt="Andrew \\"Сhuck\\" Minkin - CTO and Co-Founder at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
               loading="lazy"
               src="[object Object]"
@@ -2369,7 +2369,7 @@ exports[`Index page renders correctly 1`] = `
             />
              
             <img
-              alt="Nakylai@2x"
+              alt="Nakylai Taiirova - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
               loading="lazy"
               src="[object Object]"
@@ -2418,7 +2418,7 @@ exports[`Index page renders correctly 1`] = `
             />
              
             <img
-              alt="Daria@2x"
+              alt="Daria Utesheva - Head of HR Department at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
               loading="lazy"
               src="[object Object]"
@@ -2467,7 +2467,7 @@ exports[`Index page renders correctly 1`] = `
             />
              
             <img
-              alt="Nuradil@2x"
+              alt="Nuradil Alymkulov - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
               loading="lazy"
               src="[object Object]"
@@ -2516,7 +2516,7 @@ exports[`Index page renders correctly 1`] = `
             />
              
             <img
-              alt="Alice@2x"
+              alt="Alice Jang - Project Manager at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
               loading="lazy"
               src="[object Object]"
@@ -2565,7 +2565,7 @@ exports[`Index page renders correctly 1`] = `
             />
              
             <img
-              alt="Arthur@2x"
+              alt="Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
               loading="lazy"
               src="[object Object]"

@@ -39,11 +39,13 @@
           :inputId="inputId"
         />
         <UIButton
-          name="Get an infrastructure audit"
-          :disabled="invalid || !agreeWithPrivacyPolicy"
+          :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
           @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
           class="modal-button"
-        />
+          :loading="onSubmit"
+        >
+          Get an infrastructure audit
+        </UIButton>
       </div>
     </ValidationObserver>
   </ModalContainer>
@@ -113,6 +115,12 @@ export default {
     form: '',
     modalTitle: 'Mad Devs Website Forms'
   }),
+  mounted() {
+    this.$nuxt.$on('resetCheckboxesInForm', () => { // Reset checkboxes in form if user close modal 
+      this.agreeWithPrivacyPolicy = false;
+      this.agreeToGetMadDevsDiscountOffers = false;
+    });
+  },
   methods: {
     getPrivacyCheckboxState(privacyState) {
       this.agreeWithPrivacyPolicy = privacyState;

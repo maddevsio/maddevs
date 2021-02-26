@@ -15,8 +15,8 @@ describe('CaseStudies component', () => {
       projectBackground: 'nambafoodBackground',
       projectColor: '#f8f7f6',
       projectTitle: 'Contactless Delivery Service',
-      projectDescription:
-        'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.'
+      projectDescription: 'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.',
+      alt: 'Namba Food Contactless Delivery Service`s Logo.'
     },
     {
       projectName: 'teacherly',
@@ -27,8 +27,8 @@ describe('CaseStudies component', () => {
       projectBackground: 'sjmcBackground',
       projectColor: '#221F20',
       projectTitle: 'Australian National Interpretive Centre',
-      projectDescription:
-        'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.'
+      projectDescription: 'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',
+      alt: 'General John Monash The Australian War Memorial`s Logo.'
     },
     {
       projectName: 'guardrails',
@@ -39,8 +39,8 @@ describe('CaseStudies component', () => {
       projectBackground: 'guardrailsBackground',
       projectColor: '#0e1b27',
       projectTitle: 'Cloud cybersecurity service',
-      projectDescription:
-        'Mad Devs was involved with Guardrails\' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.'
+      projectDescription: 'Mad Devs was involved with Guardrails\' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.',
+      alt: 'Guardrails Cloud CyberSecurity Services Logo.'
     },
     {
       projectName: 'godee',
@@ -51,7 +51,8 @@ describe('CaseStudies component', () => {
       projectBackground: 'godeeBackground',
       projectColor: '#ff6A01',
       projectTitle: 'Convenient shuttle bus service',
-      projectDescription: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.'
+      projectDescription: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
+      alt: 'GoDee Bus Transportation Services Logo.'
     }
   ];
 

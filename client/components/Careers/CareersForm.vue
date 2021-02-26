@@ -6,7 +6,7 @@
           <form @submit.prevent="handleSubmit(sendData)" class="careers__form">
             <label class="careers__form-name-label"
               >Hello, my name is
-              <ValidationProvider rules="required|max:50" v-slot="{ classes, errors }">
+              <ValidationProvider rules="required|max:50" v-slot="{errors}">
                 <input
                   class="careers__form-input careers__form-name-input"
                   type="text"
@@ -19,7 +19,7 @@
             >
             <h2 class="careers__form-description">
               I want to work for you as a
-              <ValidationProvider rules="required" v-slot="{ classes, errors }">
+              <ValidationProvider rules="required" v-slot="{errors}">
                 <input
                   class="careers__form-input careers__form-position-input"
                   type="text"
@@ -32,7 +32,7 @@
             <h2 class="careers__form-description radio-buttons">
               You can also consider me for <br> your other
             </h2>
-            <ValidationProvider rules="required" v-slot="{ classes, errors }">
+            <ValidationProvider rules="required" v-slot="{errors}">
               <ul class="careers__position-list">
                 <UIRadioButtons ref="radioButtons" :radios="radioData" v-model="positionValue" />
               </ul>
@@ -42,7 +42,7 @@
               Please reply to
               <ValidationProvider
                 rules="email|required"
-                v-slot="{ classes, errors }"
+                v-slot="{errors}"
               >
                 <input
                   class="careers__form-input careers__form-email-input"
@@ -69,7 +69,7 @@
               <li class="careers__form-list-item careers__file-attach">
                 <ValidationProvider
                   rules="ext:pdf,doc,docx|required|size:5000"
-                  v-slot="{ classes, errors }"
+                  v-slot="{errors}"
                 >
                   <FileInput v-model="selectedFile" @input="onFileChanged" ref="fileInput" />
                   <span class="modal-error-text error-text error-text-file-attach">{{
@@ -78,7 +78,7 @@
                 </ValidationProvider>
               </li>
             </ul>
-            <Button type="submit" :disabled="invalid">I want to work for Mad Devs!</Button>
+            <Button type="submit" :disabled="invalid || onSubmit" :loading="onSubmit">I want to work for Mad Devs!</Button>
           </form>
         </ValidationObserver>
       </div>
@@ -95,6 +95,12 @@ import SuccessModal from '@/components/Modals/success-modal';
 
 export default {
   name: 'CareersForm',
+  components: {
+    FileInput,
+    Button,
+    UIRadioButtons,
+    SuccessModal
+  },
   data() {
     return {
       fullName: null,
@@ -111,7 +117,7 @@ export default {
         { type: 'intern', label: 'Intern' }
       ],
       isEmailSent: false,
-      onSumbit: false,
+      onSubmit: false,
       form: '',
       modalTitle: 'Mad Devs Website Carrers Form'
     };
@@ -119,19 +125,13 @@ export default {
   mounted() {
     this.focusInput();
   },
-  components: {
-    FileInput,
-    Button,
-    UIRadioButtons,
-    SuccessModal
-  },
   methods: {
     onFileChanged(params) {
       params;
     },
     sendData(e) {
-      if (!this.errors && !this.onSumbit) {
-        this.onSumbit = true;
+      if (!this.errors && !this.onSubmit) {
+        this.onSubmit = true;
         //TODO: add ajax request
         this.toBase64(this.selectedFile).then(base64 => {
           this.form = {
@@ -152,7 +152,7 @@ export default {
             }
           };
           this.$store.dispatch('sendEmail', this.form).then(res => {
-            this.onSumbit = false;
+            this.onSubmit = false;
             if (res.status === 200) {
               this.isEmailSent = true;
               setTimeout(() => {
