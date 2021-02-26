@@ -81,7 +81,7 @@ export default {
       },
       alt: {
         type: String,
-        required: ''
+        default: ''
       }
     }
   },
