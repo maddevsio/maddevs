@@ -953,9 +953,11 @@ exports[`Index page renders correctly 1`] = `
                  
                 <img
                   alt="Namba Food Contactless Delivery Service\`s Logo."
+                  height="294"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="610"
                 />
               </picture>
             </div>
@@ -1035,9 +1037,11 @@ exports[`Index page renders correctly 1`] = `
                  
                 <img
                   alt="General John Monash The Australian War Memorial\`s Logo."
+                  height="294"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="610"
                 />
               </picture>
             </div>
@@ -1117,9 +1121,11 @@ exports[`Index page renders correctly 1`] = `
                  
                 <img
                   alt="Guardrails Cloud CyberSecurity Services Logo."
+                  height="294"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="610"
                 />
               </picture>
             </div>
@@ -1203,9 +1209,11 @@ exports[`Index page renders correctly 1`] = `
                  
                 <img
                   alt="GoDee Bus Transportation Services Logo."
+                  height="294"
                   loading="lazy"
                   src="[object Object]"
                   srcset="[object Object] 2x"
+                  width="610"
                 />
               </picture>
             </div>
@@ -1301,9 +1309,11 @@ exports[`Index page renders correctly 1`] = `
                      
                     <img
                       alt="Namba Food Contactless Delivery Service\`s Logo."
+                      height="294"
                       loading="lazy"
                       src="[object Object]"
                       srcset="[object Object] 2x"
+                      width="610"
                     />
                   </picture>
                 </div>
@@ -1387,9 +1397,11 @@ exports[`Index page renders correctly 1`] = `
                      
                     <img
                       alt="General John Monash The Australian War Memorial\`s Logo."
+                      height="294"
                       loading="lazy"
                       src="[object Object]"
                       srcset="[object Object] 2x"
+                      width="610"
                     />
                   </picture>
                 </div>
@@ -1473,9 +1485,11 @@ exports[`Index page renders correctly 1`] = `
                      
                     <img
                       alt="Guardrails Cloud CyberSecurity Services Logo."
+                      height="294"
                       loading="lazy"
                       src="[object Object]"
                       srcset="[object Object] 2x"
+                      width="610"
                     />
                   </picture>
                 </div>
@@ -1563,9 +1577,11 @@ exports[`Index page renders correctly 1`] = `
                      
                     <img
                       alt="GoDee Bus Transportation Services Logo."
+                      height="294"
                       loading="lazy"
                       src="[object Object]"
                       srcset="[object Object] 2x"
+                      width="610"
                     />
                   </picture>
                 </div>
@@ -1830,8 +1846,10 @@ exports[`Index page renders correctly 1`] = `
                 <img
                   alt="Atif Mahmud - CEO and Founder at Teacherly."
                   class="customer-testimonials__customer-image"
+                  height="42"
                   loading="lazy"
                   src="[object Object]"
+                  width="42"
                 />
                  
                 <span
@@ -1880,8 +1898,10 @@ exports[`Index page renders correctly 1`] = `
                 <img
                   alt="Daniel Vartanov - CTO at Veeqo.com."
                   class="customer-testimonials__customer-image"
+                  height="42"
                   loading="lazy"
                   src="[object Object]"
+                  width="42"
                 />
                  
                 <span
@@ -1930,8 +1950,10 @@ exports[`Index page renders correctly 1`] = `
                 <img
                   alt="Stefan Streichsbier - CEO and Founder at GuardRails.io."
                   class="customer-testimonials__customer-image"
+                  height="42"
                   loading="lazy"
                   src="[object Object]"
+                  width="42"
                 />
                  
                 <span
@@ -2224,9 +2246,11 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
+              height="401"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="295"
             />
           </picture>
            
@@ -2234,7 +2258,7 @@ exports[`Index page renders correctly 1`] = `
             class="meet-our_experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our_experts__expert-i294nfo"
             >
               <div
                 class="meet-our_experts__expert-name"
@@ -2273,9 +2297,11 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Tamara Mun - Delivery Manager at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
+              height="401"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="295"
             />
           </picture>
            
@@ -2283,7 +2309,7 @@ exports[`Index page renders correctly 1`] = `
             class="meet-our_experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our_experts__expert-i294nfo"
             >
               <div
                 class="meet-our_experts__expert-name"
@@ -2322,9 +2348,11 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Andrew \\"Сhuck\\" Minkin - CTO and Co-Founder at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
+              height="401"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="295"
             />
           </picture>
            
@@ -2332,7 +2360,7 @@ exports[`Index page renders correctly 1`] = `
             class="meet-our_experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our_experts__expert-i294nfo"
             >
               <div
                 class="meet-our_experts__expert-name"
@@ -2371,9 +2399,11 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Nakylai Taiirova - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
+              height="401"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="295"
             />
           </picture>
            
@@ -2381,7 +2411,7 @@ exports[`Index page renders correctly 1`] = `
             class="meet-our_experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our_experts__expert-i294nfo"
             >
               <div
                 class="meet-our_experts__expert-name"
@@ -2420,9 +2450,11 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Daria Utesheva - Head of HR Department at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
+              height="401"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="295"
             />
           </picture>
            
@@ -2430,7 +2462,7 @@ exports[`Index page renders correctly 1`] = `
             class="meet-our_experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our_experts__expert-i294nfo"
             >
               <div
                 class="meet-our_experts__expert-name"
@@ -2469,9 +2501,11 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Nuradil Alymkulov - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
+              height="401"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="295"
             />
           </picture>
            
@@ -2479,7 +2513,7 @@ exports[`Index page renders correctly 1`] = `
             class="meet-our_experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our_experts__expert-i294nfo"
             >
               <div
                 class="meet-our_experts__expert-name"
@@ -2518,9 +2552,11 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Alice Jang - Project Manager at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
+              height="401"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="295"
             />
           </picture>
            
@@ -2528,7 +2564,7 @@ exports[`Index page renders correctly 1`] = `
             class="meet-our_experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our_experts__expert-i294nfo"
             >
               <div
                 class="meet-our_experts__expert-name"
@@ -2567,9 +2603,11 @@ exports[`Index page renders correctly 1`] = `
             <img
               alt="Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company."
               class="multi-image"
+              height="401"
               loading="lazy"
               src="[object Object]"
               srcset="[object Object] 2x"
+              width="295"
             />
           </picture>
            
@@ -2577,7 +2615,7 @@ exports[`Index page renders correctly 1`] = `
             class="meet-our_experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our_experts__expert-i294nfo"
             >
               <div
                 class="meet-our_experts__expert-name"

@@ -99,9 +99,11 @@ exports[`CaseStudies component renders correctly 1`] = `
                
               <img
                 alt="Namba Food Contactless Delivery Service\`s Logo."
+                height="294"
                 loading="lazy"
                 src="[object Object]"
                 srcset="[object Object] 2x"
+                width="610"
               />
             </picture>
           </div>
@@ -181,9 +183,11 @@ exports[`CaseStudies component renders correctly 1`] = `
                
               <img
                 alt="General John Monash The Australian War Memorial\`s Logo."
+                height="294"
                 loading="lazy"
                 src="[object Object]"
                 srcset="[object Object] 2x"
+                width="610"
               />
             </picture>
           </div>
@@ -263,9 +267,11 @@ exports[`CaseStudies component renders correctly 1`] = `
                
               <img
                 alt="Guardrails Cloud CyberSecurity Services Logo."
+                height="294"
                 loading="lazy"
                 src="[object Object]"
                 srcset="[object Object] 2x"
+                width="610"
               />
             </picture>
           </div>
@@ -349,9 +355,11 @@ exports[`CaseStudies component renders correctly 1`] = `
                
               <img
                 alt="GoDee Bus Transportation Services Logo."
+                height="294"
                 loading="lazy"
                 src="[object Object]"
                 srcset="[object Object] 2x"
+                width="610"
               />
             </picture>
           </div>
@@ -447,9 +455,11 @@ exports[`CaseStudies component renders correctly 1`] = `
                    
                   <img
                     alt="Namba Food Contactless Delivery Service\`s Logo."
+                    height="294"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="610"
                   />
                 </picture>
               </div>
@@ -533,9 +543,11 @@ exports[`CaseStudies component renders correctly 1`] = `
                    
                   <img
                     alt="General John Monash The Australian War Memorial\`s Logo."
+                    height="294"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="610"
                   />
                 </picture>
               </div>
@@ -619,9 +631,11 @@ exports[`CaseStudies component renders correctly 1`] = `
                    
                   <img
                     alt="Guardrails Cloud CyberSecurity Services Logo."
+                    height="294"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="610"
                   />
                 </picture>
               </div>
@@ -709,9 +723,11 @@ exports[`CaseStudies component renders correctly 1`] = `
                    
                   <img
                     alt="GoDee Bus Transportation Services Logo."
+                    height="294"
                     loading="lazy"
                     src="[object Object]"
                     srcset="[object Object] 2x"
+                    width="610"
                   />
                 </picture>
               </div>
