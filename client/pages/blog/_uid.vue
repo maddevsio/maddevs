@@ -130,7 +130,7 @@ export default {
   async asyncData({ $prismic, params, error }) {
     let recommendedPosts = [];
     let type = 'blog';
-    let openGraphUrl = `${process.env.domain}/blog/${params.uid}`;
+    let openGraphUrl = `${process.env.domain}/blog/${params.uid}/`;
     let jsonLd;
     try {
       // Query to get post content
