@@ -13,7 +13,6 @@ app.use(bodyParser.urlencoded({ limit: '5mb', extended: true }));
 const port = process.env.PORT || 5000;
 
 app.enable('trust proxy');
-app.enable('strict routing');
 
 app.use('/', routes);
 app.use(function applyXFrame(req, res, next) {
@@ -41,14 +40,6 @@ app.use((req, res, next) => {
   }
 });
 app.use(express.static(__dirname + '/dist'));
-app.use(function (req, res, next) {
-  if (req.path.substr(-1) == '/' && req.path.length > 1) {
-    let query = req.url.slice(req.path.length);
-    res.redirect(301, req.path.slice(0, -1) + query);
-  } else {
-    next();
-  }
-});
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/index.html'));

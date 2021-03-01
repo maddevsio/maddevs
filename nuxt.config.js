@@ -102,6 +102,9 @@ module.exports = {
       }
     }
   },
+  router: {
+    trailingSlash: true
+  },
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/gtm',
