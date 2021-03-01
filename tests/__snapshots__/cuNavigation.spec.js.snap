@@ -21,7 +21,7 @@ exports[`Renders correctly 1`] = `
       >
         <router-link-stub
           class="cluster-navigation__nav-item"
-          to="/blog/cu-test"
+          to="/blog/cu-test/"
         >
           <div
             class="index"
@@ -43,7 +43,7 @@ exports[`Renders correctly 1`] = `
       >
         <router-link-stub
           class="cluster-navigation__nav-item"
-          to="/blog/cu-test-2"
+          to="/blog/cu-test-2/"
         >
           <span
             class="index"
