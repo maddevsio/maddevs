@@ -37,7 +37,7 @@ export default {
     return {
       title: 'Mad Devs: Custom Software Development Company',
       description: 'Mad Devs develops enterprise-level custom software solutions & mobile apps for finance, transportation, logistics, security, edtech, cloudtech & advertising industries.',
-      ogUrl: 'https://maddevs.co'
+      ogUrl: 'https://maddevs.io/'
     };
   },
   head () {
@@ -55,7 +55,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://maddevs.co'
+          href: 'https://maddevs.io/'
         }
       ],
       __dangerouslyDisableSanitizers: ['script'],
