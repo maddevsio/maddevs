@@ -40,6 +40,13 @@ app.use((req, res, next) => {
   }
 });
 app.use(express.static(__dirname + '/dist'));
+app.use(function(req, res, next) {
+  if(req.url.substr(-1) == '/' && req.url.length > 1) {
+    req.url.slice(0, -1);
+  } else {
+    next();
+  }
+});
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
