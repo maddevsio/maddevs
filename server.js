@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({ limit: '5mb', extended: true }));
 const port = process.env.PORT || 5000;
 
 app.enable('trust proxy');
+app.enable('strict routing');
 
 app.use('/', routes);
 app.use(function applyXFrame(req, res, next) {
