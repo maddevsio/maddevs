@@ -117,6 +117,12 @@ export default {
         { property: 'twitter:image:src', content: 'https://maddevs.io/blog.png' },
         { property: 'twitter:url', content: this.ogUrl }
       ],
+      link: [
+        {
+          rel: 'canonical',
+          href: this.ogUrl
+        }
+      ],
       __dangerouslyDisableSanitizers: ['script'],
       script: [
         {
