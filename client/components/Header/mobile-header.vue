@@ -19,10 +19,10 @@
         <div class="mobile-header__nav-wrap">
           <nav class="mobile-header__header-routes_links">
             <router-link class="mobile-header__nav-link" exact to="/">About</router-link>
-            <router-link class="mobile-header__nav-link" to="/services">Services</router-link>
-            <router-link class="mobile-header__nav-link" to="/projects">Projects</router-link>
-            <router-link class="mobile-header__nav-link" to="/careers">Careers</router-link>
-            <router-link class="mobile-header__nav-link mobile-header__nav-blog-link" to="/blog">Blog</router-link>
+            <router-link class="mobile-header__nav-link" to="/services/">Services</router-link>
+            <router-link class="mobile-header__nav-link" to="/projects/">Projects</router-link>
+            <router-link class="mobile-header__nav-link" to="/careers/">Careers</router-link>
+            <router-link class="mobile-header__nav-link mobile-header__nav-blog-link" to="/blog/">Blog</router-link>
           </nav>
           <div class="mobile-header__contacts mobile-header__large-phone-content">
             <div class="mobile-header__contact-item mobile-header__contact-item-email">

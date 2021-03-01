@@ -109,14 +109,14 @@ export default {
     },
     nextArticleUrl: function () {
       if (this.currentPost && this.currentPostIndex < this.postList.length - 1) {
-        return `/blog/${this.postList[this.currentPostIndex + 1].cu_post.uid}`;
+        return `/blog/${this.postList[this.currentPostIndex + 1].cu_post.uid}/`;
       } else {
         return '#';
       }
     },
     prevArticleUrl: function () {
       if (this.currentPost && this.currentPostIndex > 0) {
-        return `/blog/${this.postList[this.currentPostIndex - 1].cu_post.uid}`;
+        return `/blog/${this.postList[this.currentPostIndex - 1].cu_post.uid}/`;
       } else {
         return '#';
       }
@@ -132,7 +132,7 @@ export default {
   methods: {
     handleChange(selectedPost) {
       if(this.currentPost && this.currentPost.cu_post.uid !== selectedPost.value) {
-        this.$router.push({path: `/blog/${selectedPost.value}`});
+        this.$router.push({path: `/blog/${selectedPost.value}/`});
       }
     }
   }

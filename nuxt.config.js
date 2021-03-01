@@ -34,9 +34,6 @@ module.exports = {
     color: '#ec1c24',
     height: '3px'
   },
-  router: {
-    middleware: 'trailingSlashRedirect'
-  },
   plugins: [
     '~/plugins/vee-validate.js',
     '~/plugins/vue2-perfect-scrollbar.js',
