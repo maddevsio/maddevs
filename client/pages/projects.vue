@@ -25,7 +25,7 @@ export default {
     return {
       title: 'Mad Devs Portfolio: Key Clients, Case Studies and Open Source Projects',
       description: 'Check out our software engineering and mobile app development projects for companies from transportation, logistic, edtech, cloudtech, security, advertising, finance, and other industries.',
-      ogUrl: 'https://maddevs.io/projects'
+      ogUrl: 'https://maddevs.io/projects/'
     };
   },
   head() {

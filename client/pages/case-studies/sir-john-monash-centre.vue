@@ -785,7 +785,7 @@ export default {
       title: this.title,
       meta: [
         {name: 'description', content: this.description},
-        {property: 'og:url', content: this.ogUrl},
+        {property: 'og:url', content: 'https://maddevs.io/case-studies/sir-john-monash-centre/'},
         {property: 'og:type', content: 'website'},
         {property: 'og:title', content: this.title},
         {property: 'og:description', content: this.description},

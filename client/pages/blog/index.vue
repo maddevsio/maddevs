@@ -90,7 +90,7 @@ export default {
       page: 1,
       pageSize: 12,
       metaTitle: 'Blog',
-      ogUrl: 'https://maddevs.io/blog',
+      ogUrl: 'https://maddevs.io/blog/',
       loaded: false
     };
   },

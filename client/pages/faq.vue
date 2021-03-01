@@ -15,7 +15,7 @@ export default {
     return {
       title: 'Mad Devs: Frequently Asked Questions',
       description: 'FAQs. Have a question? Find answers on our Frequently asked questions page. Discover more about Mad Devs\' team, expertise, pricing, and more.',
-      ogUrl: 'https://maddevs.io/faq'
+      ogUrl: 'https://maddevs.io/faq/'
     };
   },
   head() {

@@ -28,7 +28,7 @@ export default {
     return {
       title: 'Mad Devs: Custom Software Development and Mobile App Creation Services',
       description: 'We deliver software engineering and mobile app development services, software testing and QA services, DevOps and IT consulting services to businesses of any size.',
-      ogUrl: 'https://maddevs.io/services'
+      ogUrl: 'https://maddevs.io/services/'
     };
   },
   head() {

@@ -55,7 +55,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://maddevs.io/'
+          href: 'https://maddevs.io'
         }
       ],
       __dangerouslyDisableSanitizers: ['script'],

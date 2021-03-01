@@ -15,7 +15,7 @@ export default {
     return {
       title: 'Mad Devs: Work Under NDA',
       description: 'Non-Disclosure Agreement at Mad Devs',
-      ogUrl: 'https://maddevs.io/nda'
+      ogUrl: 'https://maddevs.io/nda/'
     };
   },
   head() {
