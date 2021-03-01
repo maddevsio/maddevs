@@ -9,7 +9,7 @@ describe('CaseStudies component', () => {
     {
       projectName: 'nambafood',
       logoImg: 'nambafoodColored',
-      link: '/case-studies/namba-food',
+      link: '/case-studies/namba-food/',
       targetBlank: false,
       contributionWidgetColors: ['#ec1c24', '#96969c'],
       projectBackground: 'nambafoodBackground',
@@ -21,7 +21,7 @@ describe('CaseStudies component', () => {
     {
       projectName: 'teacherly',
       logoImg: 'sjmcIcon',
-      link: '/case-studies/sir-john-monash-centre',
+      link: '/case-studies/sir-john-monash-centre/',
       targetBlank: false,
       contributionWidgetColors: ['#96969c', '#96969c'],
       projectBackground: 'sjmcBackground',
@@ -45,7 +45,7 @@ describe('CaseStudies component', () => {
     {
       projectName: 'godee',
       logoImg: 'godeeColored',
-      link: '/case-studies/godee',
+      link: '/case-studies/godee/',
       targetBlank: false,
       contributionWidgetColors: ['#000', '#000'],
       projectBackground: 'godeeBackground',

@@ -103,7 +103,7 @@ exports[`Projects page renders correctly 1`] = `
       >
         <a
           class="single-project"
-          href="/case-studies/namba-food"
+          href="/case-studies/namba-food/"
           style="background: rgb(248, 247, 246);"
           target="_self"
         >
@@ -187,7 +187,7 @@ exports[`Projects page renders correctly 1`] = `
         </a>
         <a
           class="single-project"
-          href="/case-studies/sir-john-monash-centre"
+          href="/case-studies/sir-john-monash-centre/"
           style="background: rgb(34, 31, 32);"
           target="_self"
         >
@@ -355,7 +355,7 @@ exports[`Projects page renders correctly 1`] = `
         </a>
         <a
           class="single-project"
-          href="/case-studies/godee"
+          href="/case-studies/godee/"
           style="background: rgb(255, 106, 1);"
           target="_self"
         >
@@ -459,7 +459,7 @@ exports[`Projects page renders correctly 1`] = `
           >
             <a
               class="single-project"
-              href="/case-studies/namba-food"
+              href="/case-studies/namba-food/"
               style="background: rgb(248, 247, 246);"
               target="_self"
             >
@@ -547,7 +547,7 @@ exports[`Projects page renders correctly 1`] = `
           >
             <a
               class="single-project"
-              href="/case-studies/sir-john-monash-centre"
+              href="/case-studies/sir-john-monash-centre/"
               style="background: rgb(34, 31, 32);"
               target="_self"
             >
@@ -723,7 +723,7 @@ exports[`Projects page renders correctly 1`] = `
           >
             <a
               class="single-project"
-              href="/case-studies/godee"
+              href="/case-studies/godee/"
               style="background: rgb(255, 106, 1);"
               target="_self"
             >

@@ -30,6 +30,6 @@ describe('Index page', () => {
   test('Sets the correctly data', () => {
     expect(wrapper.vm.$data.title).toEqual('Mad Devs: Custom Software Development Company');
     expect(wrapper.vm.$data.description).toEqual('Mad Devs develops enterprise-level custom software solutions & mobile apps for finance, transportation, logistics, security, edtech, cloudtech & advertising industries.');
-    expect(wrapper.vm.$data.ogUrl).toEqual('https://maddevs.io');
+    expect(wrapper.vm.$data.ogUrl).toEqual('https://maddevs.co');
   });
 });
