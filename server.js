@@ -45,14 +45,6 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
-app.get('*', (req, res) => {
-  if (req.url.endsWith('/')) {
-    res.redirect('https://' + req.headers.host + req.url.slice(0, -1));
-  } else {
-    res.redirect('https://' + req.headers.host + req.url);
-  }
-});
-
 app.get('/ru', (req, res) => {
   res.redirect(301, 'https://maddevs.io/');
 });
