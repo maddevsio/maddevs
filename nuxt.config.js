@@ -103,7 +103,7 @@ module.exports = {
     }
   },
   router: {
-    trailingSlash: true
+    trailingSlash: false
   },
   modules: [
     '@nuxtjs/axios',
