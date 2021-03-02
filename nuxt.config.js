@@ -138,7 +138,7 @@ module.exports = {
   ],
   gtm: {
     id: 'GTM-NNKVRF3',
-    enabled: false, // Вернуть старые настройки 
+    enabled: true, // Вернуть старые настройки 
     scriptDefer: true
   },
   axios: {
