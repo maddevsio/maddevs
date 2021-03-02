@@ -6,7 +6,7 @@
         <div class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6" v-for="(expert, i) in experts" :key="i">
           <image-component :fileName="expert.image" :fileNameRetina="`${expert.image}@2x`" :alt="expert.alt" width="295" height="401"/>
           <div class="meet-our_experts__expert-bottom_content">
-            <div class="meet-our_experts__expert-i294nfo">
+            <div class="meet-our_experts__expert-info">
               <div class="meet-our_experts__expert-name">{{ expert.name }}</div>
               <div class="meet-our_experts__expert-position">{{ expert.position }}</div>
             </div>

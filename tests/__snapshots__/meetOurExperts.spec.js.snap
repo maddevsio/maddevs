@@ -42,7 +42,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           class="meet-our_experts__expert-bottom_content"
         >
           <div
-            class="meet-our_experts__expert-i294nfo"
+            class="meet-our_experts__expert-info"
           >
             <div
               class="meet-our_experts__expert-name"
@@ -93,7 +93,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           class="meet-our_experts__expert-bottom_content"
         >
           <div
-            class="meet-our_experts__expert-i294nfo"
+            class="meet-our_experts__expert-info"
           >
             <div
               class="meet-our_experts__expert-name"
@@ -144,7 +144,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           class="meet-our_experts__expert-bottom_content"
         >
           <div
-            class="meet-our_experts__expert-i294nfo"
+            class="meet-our_experts__expert-info"
           >
             <div
               class="meet-our_experts__expert-name"
@@ -195,7 +195,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           class="meet-our_experts__expert-bottom_content"
         >
           <div
-            class="meet-our_experts__expert-i294nfo"
+            class="meet-our_experts__expert-info"
           >
             <div
               class="meet-our_experts__expert-name"
@@ -246,7 +246,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           class="meet-our_experts__expert-bottom_content"
         >
           <div
-            class="meet-our_experts__expert-i294nfo"
+            class="meet-our_experts__expert-info"
           >
             <div
               class="meet-our_experts__expert-name"
@@ -297,7 +297,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           class="meet-our_experts__expert-bottom_content"
         >
           <div
-            class="meet-our_experts__expert-i294nfo"
+            class="meet-our_experts__expert-info"
           >
             <div
               class="meet-our_experts__expert-name"
@@ -348,7 +348,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           class="meet-our_experts__expert-bottom_content"
         >
           <div
-            class="meet-our_experts__expert-i294nfo"
+            class="meet-our_experts__expert-info"
           >
             <div
               class="meet-our_experts__expert-name"
@@ -399,7 +399,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
           class="meet-our_experts__expert-bottom_content"
         >
           <div
-            class="meet-our_experts__expert-i294nfo"
+            class="meet-our_experts__expert-info"
           >
             <div
               class="meet-our_experts__expert-name"
