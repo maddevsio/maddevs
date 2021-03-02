@@ -3,6 +3,7 @@ import axios from 'axios';
 
 module.exports = {
   srcDir: 'client/',
+  target: 'static',
   /*
   ** Headers of the page
   */
@@ -19,12 +20,6 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'sitemap', type: 'application/xml', href: 'https://maddevs.io/sitemap.xml' }
-    ],
-    script: [
-      {
-        src: 'https://widget.clutch.co/static/js/widget.js',
-        defer: true
-      }
     ]
   },
   /*
