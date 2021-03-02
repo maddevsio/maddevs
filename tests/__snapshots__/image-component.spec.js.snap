@@ -11,9 +11,11 @@ exports[`Webp image component renders correctly 1`] = `
   <img
     alt=""
     class="multi-image"
+    height="auto"
     loading="lazy"
     src="[object Object]"
     srcset="[object Object] 2x"
+    width="auto"
   />
 </picture>
 `;

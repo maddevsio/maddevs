@@ -32,7 +32,10 @@
                   :src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)"
                   loading="lazy"
                   class="customer-testimonials__customer-image"
-                  :alt="testimonial.alt">
+                  :alt="testimonial.alt"
+                  width="42"
+                  height="42"
+                >
                 <span class="customer-testimonials__customer-name paragraph-sm">
                   {{ testimonial.customerName }} <span>{{ testimonial.customerCountry }}</span>
                 </span>

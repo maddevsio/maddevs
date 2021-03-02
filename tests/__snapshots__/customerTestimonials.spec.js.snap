@@ -61,8 +61,10 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <img
                 alt="Atif Mahmud - CEO and Founder at Teacherly."
                 class="customer-testimonials__customer-image"
+                height="42"
                 loading="lazy"
                 src="[object Object]"
+                width="42"
               />
                
               <span
@@ -111,8 +113,10 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <img
                 alt="Daniel Vartanov - CTO at Veeqo.com."
                 class="customer-testimonials__customer-image"
+                height="42"
                 loading="lazy"
                 src="[object Object]"
+                width="42"
               />
                
               <span
@@ -161,8 +165,10 @@ exports[`Customer Testimonials renders correctly 1`] = `
               <img
                 alt="Stefan Streichsbier - CEO and Founder at GuardRails.io."
                 class="customer-testimonials__customer-image"
+                height="42"
                 loading="lazy"
                 src="[object Object]"
+                width="42"
               />
                
               <span

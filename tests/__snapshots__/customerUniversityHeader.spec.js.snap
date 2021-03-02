@@ -71,7 +71,7 @@ exports[`customer university header component Renders correctly 1`] = `
          
         <router-link-stub
           class="cluster-navigation__link"
-          to="/blog/cu-test-2"
+          to="/blog/cu-test-2/"
         >
           
             Next

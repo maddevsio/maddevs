@@ -34,7 +34,10 @@
             :src="[require(`@/assets/img/Studies/png/${project.projectBackground}.png`)]"
             :srcset="[require(`@/assets/img/Studies/png/${project.projectBackground}.png`) + ' 2x']"
             loading="lazy"
-            :alt="project.alt">
+            :alt="project.alt"
+            width="610"
+            height="294"
+          >
         </picture>
       </div>
     </div>
@@ -81,7 +84,7 @@ export default {
       },
       alt: {
         type: String,
-        required: ''
+        default: ''
       }
     }
   },
@@ -339,6 +342,7 @@ export default {
 
     img {
       width: 100%;
+      height: auto;
       position: absolute;
       bottom: 0;
     }

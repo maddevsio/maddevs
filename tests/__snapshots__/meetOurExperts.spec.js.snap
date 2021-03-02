@@ -30,9 +30,11 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
+            height="401"
             loading="lazy"
             src="[object Object]"
             srcset="[object Object] 2x"
+            width="295"
           />
         </picture>
          
@@ -79,9 +81,11 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Tamara Mun - Delivery Manager at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
+            height="401"
             loading="lazy"
             src="[object Object]"
             srcset="[object Object] 2x"
+            width="295"
           />
         </picture>
          
@@ -128,9 +132,11 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Andrew \\"Сhuck\\" Minkin - CTO and Co-Founder at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
+            height="401"
             loading="lazy"
             src="[object Object]"
             srcset="[object Object] 2x"
+            width="295"
           />
         </picture>
          
@@ -177,9 +183,11 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Nakylai Taiirova - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
+            height="401"
             loading="lazy"
             src="[object Object]"
             srcset="[object Object] 2x"
+            width="295"
           />
         </picture>
          
@@ -226,9 +234,11 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Daria Utesheva - Head of HR Department at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
+            height="401"
             loading="lazy"
             src="[object Object]"
             srcset="[object Object] 2x"
+            width="295"
           />
         </picture>
          
@@ -275,9 +285,11 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Nuradil Alymkulov - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
+            height="401"
             loading="lazy"
             src="[object Object]"
             srcset="[object Object] 2x"
+            width="295"
           />
         </picture>
          
@@ -324,9 +336,11 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Alice Jang - Project Manager at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
+            height="401"
             loading="lazy"
             src="[object Object]"
             srcset="[object Object] 2x"
+            width="295"
           />
         </picture>
          
@@ -373,9 +387,11 @@ exports[`Meet Our Experts renders correctly 1`] = `
           <img
             alt="Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company."
             class="multi-image"
+            height="401"
             loading="lazy"
             src="[object Object]"
             srcset="[object Object] 2x"
+            width="295"
           />
         </picture>
          

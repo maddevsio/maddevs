@@ -4,7 +4,7 @@
     <h1 class="blog-post__blog-title title">{{ title }}</h1>
     <p class="blog-post__blog-sub-title">{{ subtitle }}</p>
     <slot name="afterTitle"></slot>
-    <img :src="coverImageUrl" class="blog-post__introduction-image" v-if="coverImageUrl" alt="">
+    <img :src="coverImageUrl" class="blog-post__introduction-image" v-if="coverImageUrl" :alt="coverImageAltText">
   </div>
 </template>
 
@@ -22,6 +22,10 @@ export default {
       default: ''
     },
     coverImageUrl: {
+      type: String,
+      default: ''
+    },
+    coverImageAltText: {
       type: String,
       default: ''
     }

@@ -27,6 +27,7 @@ export default {
       this.slice.items[0].embed.html = this.slice.items[0].embed.html
         .replace('<h1>', '<div class="embed__title">')
         .replace('</h1>', '</div>')
+        .replace(/<img[^>]*>/g, '')
         .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`);
     }
 

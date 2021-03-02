@@ -2600,7 +2600,7 @@ exports[`Namba food renders correctly 1`] = `
      
     <a
       class="case_next-project-button"
-      href="/case-studies/sir-john-monash-centre"
+      href="/case-studies/sir-john-monash-centre/"
     >
       Read next project
     </a>

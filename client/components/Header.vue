@@ -10,10 +10,10 @@
             </router-link>
             <nav class="header__header-routes_links">
               <router-link @click.native="goToTopPage" exact to="/" class="header__navigation-link">About</router-link>
-              <router-link @click.native="goToTopPage" to="/services" class="header__navigation-link">Services</router-link>
-              <router-link @click.native="goToTopPage" to="/projects" class="header__navigation-link">Projects</router-link>
-              <router-link @click.native="goToTopPage" to="/careers" class="header__navigation-link">Careers</router-link>
-              <router-link @click.native="goToTopPage" to="/blog" class="header__navigation-link header__navigation-link-blog">Blog</router-link>
+              <router-link @click.native="goToTopPage" to="/services/" class="header__navigation-link">Services</router-link>
+              <router-link @click.native="goToTopPage" to="/projects/" class="header__navigation-link">Projects</router-link>
+              <router-link @click.native="goToTopPage" to="/careers/" class="header__navigation-link">Careers</router-link>
+              <router-link @click.native="goToTopPage" to="/blog/" class="header__navigation-link header__navigation-link-blog">Blog</router-link>
             </nav>
           </div>
           <div class="header__right-content col-xl-6 col-lg-5">

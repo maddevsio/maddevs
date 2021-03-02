@@ -90,8 +90,7 @@ export default {
       page: 1,
       pageSize: 12,
       metaTitle: 'Blog',
-      ogUrl: 'https://maddevs.io/blog',
-      jsonLd: [],
+      ogUrl: 'https://maddevs.io/blog/',
       loaded: false
     };
   },
@@ -117,6 +116,12 @@ export default {
         { property: 'twitter:description', content: this.homepageContent.description || '' },
         { property: 'twitter:image:src', content: 'https://maddevs.io/blog.png' },
         { property: 'twitter:url', content: this.ogUrl }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: this.ogUrl
+        }
       ],
       __dangerouslyDisableSanitizers: ['script'],
       script: [
@@ -159,8 +164,6 @@ export default {
         bannerLink: homepageContent.banner_link
       };
       this.currentTag = this.homepageContent.categories[0].title;
-
-      this.getLdScripts(homepageContent.schema_org_snippets);
     },
 
     getCategoriesFromPosts(prismicPostsCategories) {
@@ -174,15 +177,6 @@ export default {
 
     incrementPage() {
       this.page++;
-    },
-
-    getLdScripts(schemaOrgBlockContent) {
-      this.jsonLd = schemaOrgBlockContent.map(snippet => {
-        return {
-          type: 'application/ld+json',
-          innerHTML: this.$prismic.asText(snippet.single_snippet).replaceAll(/\n ?/g, '')
-        };
-      });
     }
   },
   computed: {

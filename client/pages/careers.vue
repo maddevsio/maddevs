@@ -19,7 +19,7 @@ export default {
     return {
       title: 'Mad Devs Careers: Work with Us',
       description: 'Join our team of 100+ staff members working on unique projects, master new IT skills, and build a fantastic career path in software engineering, DevOps, or mobile app development.',
-      ogUrl: 'https://maddevs.io/careers'
+      ogUrl: 'https://maddevs.io/careers/'
     };
   },
   head() {

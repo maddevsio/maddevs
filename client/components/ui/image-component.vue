@@ -8,7 +8,10 @@
     :srcset="[require(`@/assets/img/Home/png/experts/${fileNameRetina}.jpg`) + ' 2x']"
     loading="lazy"
     class="multi-image"
-    :alt="alt">
+    :alt="alt"
+    :width="width"
+    :height="height"
+  >
  </picture>
 </template>
 
@@ -27,6 +30,14 @@ export default {
     alt: {
       type: String,
       default: ''
+    },
+    width: {
+      type: String,
+      default: 'auto'
+    },
+    height: {
+      type: String,
+      default: 'auto'
     }
   }
 };

@@ -3,6 +3,7 @@
     :title="$prismic.asText(document.title)"
     :subtitle="$prismic.asText(document.subtitle)"
     :coverImageUrl="document.featured_image.url"
+    :coverImageAltText="document.featured_image.alt"
   >
     <template v-slot:afterTitle>
       <div class="blog-post__post-info">

@@ -16,7 +16,7 @@ export default {
     return {
       title: 'Mad Devs GDPR Compliance',
       description: 'Mad Devs’ General Data Protection Regulation (GDPR) Compliance Commitment.',
-      ogUrl: 'https://maddevs.io/gdpr'
+      ogUrl: 'https://maddevs.io/gdpr/'
     };
   },
   head() {

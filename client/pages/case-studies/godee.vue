@@ -512,7 +512,7 @@
           We built the platforms from scratch with the Mad Devs team, who dedicatedly supported and guided us to take proper action on several ideas and requirements. We have attracted 27,000 users so far, thanks to their continuous support for improvement and development.
         </TextQuoteAuthor>
       </section>
-      <Footer link="/case-studies/namba-food" className="godee-case">
+      <Footer link="/case-studies/namba-food/" className="godee-case">
         <div class="case_logotype" slot="icon"></div>
         Namba Food <br> Top Delivery Service in <br class="case_mobile-screen-break"> Central Asia
       </Footer>
