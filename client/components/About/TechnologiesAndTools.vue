@@ -23,13 +23,16 @@
           class="tech_container"
           :class="this.activeLegend"
         >
-          <div class="tech_item"
+          <DevOps />
+          <QA />
+          <Infrastructure />
+          <!-- <div class="tech_item"
                :key="index"
                :class="(`${item.technology}-${item.value} ${item.technology}`)"
                v-for="(item, index) in technologies"
           >
             <span>{{ item.title }}</span>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -37,8 +40,17 @@
 </template>
 
 <script>
+import DevOps from '@/components/About/TechnologiesAndTools/DevOps';
+import QA from '@/components/About/TechnologiesAndTools/QA';
+import Infrastructure from '@/components/About/TechnologiesAndTools/Infrastructure';
+
 export default {
   name: 'TechnologiesAndTools',
+  components: {
+    DevOps,
+    QA,
+    Infrastructure
+  },
   data() {
     return {
       legend: [
@@ -444,9 +456,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../../assets/styles/vars';
-@import '../../assets/styles/techIcons';
 
 // establish Technical legends colors
 $tech_legends: (

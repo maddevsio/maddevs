@@ -33,6 +33,7 @@ module.exports = {
     '~/plugins/vee-validate.js',
     '~/plugins/vue2-perfect-scrollbar.js',
     '~/plugins/vue-social-sharing.js',
+    '~/plugins/vue-fragment.js',
     {
       src: '~/plugins/drift-chat.js',
       ssr: false
