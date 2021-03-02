@@ -433,7 +433,7 @@
           The Sir John Monash Centre operates within a bespoke multimedia framework, which requires high-level technical expertise to deliver the Centre's visitor experience. Mad Devs provide outstanding levels of support and development services across our multimedia and IT platforms, systems and languages. Always available to provide assistance when needed, Mad Devs are a highly-valued part of our wider operations.
         </TextQuoteAuthor>
       </section>
-      <Footer link="/case-studies/namba-food" className="sjmc-case">
+      <Footer link="/case-studies/namba-food/" className="sjmc-case">
         <div class="case_logotype" slot="icon"></div>
         Namba Food <br> Top Delivery Service in <br class="case_mobile-screen-break"> Central Asia
       </Footer>

@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  name: 'QA'
+  name: 'Infrastructure'
 };
 </script>
 

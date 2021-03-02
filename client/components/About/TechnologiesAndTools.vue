@@ -25,14 +25,12 @@
         >
           <DevOps />
           <QA />
+          <Backend />
+          <Frontend />
+          <Mobile />
+          <PM />
           <Infrastructure />
-          <!-- <div class="tech_item"
-               :key="index"
-               :class="(`${item.technology}-${item.value} ${item.technology}`)"
-               v-for="(item, index) in technologies"
-          >
-            <span>{{ item.title }}</span>
-          </div> -->
+          <UxUi />
         </div>
       </div>
     </div>
@@ -42,14 +40,24 @@
 <script>
 import DevOps from '@/components/About/TechnologiesAndTools/DevOps';
 import QA from '@/components/About/TechnologiesAndTools/QA';
+import Backend from '@/components/About/TechnologiesAndTools/Backend';
+import Frontend from '@/components/About/TechnologiesAndTools/Frontend';
+import Mobile from '@/components/About/TechnologiesAndTools/Mobile';
+import PM from '@/components/About/TechnologiesAndTools/PM';
 import Infrastructure from '@/components/About/TechnologiesAndTools/Infrastructure';
+import UxUi from '@/components/About/TechnologiesAndTools/UxUi';
 
 export default {
   name: 'TechnologiesAndTools',
   components: {
     DevOps,
     QA,
-    Infrastructure
+    Infrastructure,
+    Mobile,
+    PM,
+    Backend,
+    UxUi,
+    Frontend
   },
   data() {
     return {
@@ -77,368 +85,6 @@ export default {
         },
         {
           value: 'UI/UX'
-        }
-      ],
-      technologies: [
-        {
-          title: 'Ansible',
-          value: 'ansible',
-          technology: 'devops'
-        },
-        {
-          title: 'Terraform',
-          value: 'terraform',
-          technology: 'devops'
-        },
-        {
-          title: 'CloudFormation',
-          value: 'cloud-formation',
-          technology: 'devops'
-        },
-        {
-          title: 'Jenkins',
-          value: 'jenkins',
-          technology: 'devops'
-        },
-        {
-          title: 'Bamboo',
-          value: 'bamboo',
-          technology: 'devops'
-        },
-        {
-          title: 'GitlabCI',
-          value: 'gitlab',
-          technology: 'devops'
-        },
-        {
-          title: 'TravisCI',
-          value: 'travis-ci',
-          technology: 'devops'
-        },
-        {
-          title: 'ELK',
-          value: 'elastic',
-          technology: 'devops'
-        },
-        {
-          title: 'CircleCI',
-          value: 'circle-ci',
-          technology: 'devops'
-        },
-        {
-          title: 'Sentry',
-          value: 'sentry',
-          technology: 'devops'
-        },
-        {
-          title: 'CloudWatch',
-          value: 'cloud-watch',
-          technology: 'devops'
-        },
-        {
-          title: 'Prometheus',
-          value: 'prometheus',
-          technology: 'devops'
-        },
-        {
-          title: 'AWS',
-          value: 'aws',
-          technology: 'infrastructure'
-        },
-        {
-          title: 'GCP',
-          value: 'gsp',
-          technology: 'infrastructure'
-        },
-        {
-          title: 'Digital Ocean',
-          value: 'digital-ocean',
-          technology: 'infrastructure'
-        },
-        {
-          title: 'Azure',
-          value: 'azure',
-          technology: 'infrastructure'
-        },
-        {
-          title: 'CloudNative',
-          value: 'cloud-native',
-          technology: 'infrastructure'
-        },
-        {
-          title: 'Heroku',
-          value: 'heroku',
-          technology: 'infrastructure'
-        },
-        {
-          title: 'Netlify',
-          value: 'netlify',
-          technology: 'infrastructure'
-        },
-        {
-          title: 'CloudFlare',
-          value: 'cloudflare',
-          technology: 'infrastructure'
-        },
-        {
-          title: 'Kotlin',
-          value: 'kotlin',
-          technology: 'mobile'
-        },
-        {
-          title: 'Java',
-          value: 'java',
-          technology: 'mobile'
-        },
-        {
-          title: 'Objective-C',
-          value: 'obj-c',
-          technology: 'mobile'
-        },
-        {
-          title: 'Swift',
-          value: 'swift',
-          technology: 'mobile'
-        },
-        {
-          title: 'IOS',
-          value: 'apple',
-          technology: 'mobile'
-        },
-        {
-          title: 'Android',
-          value: 'android',
-          technology: 'mobile'
-        },
-        {
-          title: 'Jira',
-          value: 'jira',
-          technology: 'pm'
-        },
-        {
-          title: 'Slack',
-          value: 'slack',
-          technology: 'pm'
-        },
-        {
-          title: 'Meet',
-          value: 'meet',
-          technology: 'pm'
-        },
-        {
-          title: 'Zoom',
-          value: 'zoom',
-          technology: 'pm'
-        },
-        {
-          title: 'Miro',
-          value: 'miro',
-          technology: 'pm'
-        },
-        {
-          title: 'Trello',
-          value: 'trello',
-          technology: 'pm'
-        },
-        {
-          title: 'Loom',
-          value: 'loom',
-          technology: 'pm'
-        },
-        {
-          title: 'Jira Assistant',
-          value: 'jira-assistant',
-          technology: 'pm'
-        },
-        {
-          title: 'Service Desk',
-          value: 'jira-service-desk',
-          technology: 'pm'
-        },
-        {
-          title: 'Basecamp',
-          value: 'basecamp',
-          technology: 'pm'
-        },
-        {
-          title: 'Notion',
-          value: 'notion',
-          technology: 'pm'
-        },
-        {
-          title: 'Zapier',
-          value: 'zapier',
-          technology: 'pm'
-        },
-        {
-          title: 'Python',
-          value: 'python',
-          technology: 'backend'
-        },
-        {
-          title: 'Go',
-          value: 'go',
-          technology: 'backend'
-        },
-        {
-          title: 'Node.js',
-          value: 'node',
-          technology: 'backend'
-        },
-        {
-          title: 'JavaScript',
-          value: 'js',
-          technology: 'backend'
-        },
-        {
-          title: 'TypeScript',
-          value: 'typescript',
-          technology: 'backend'
-        },
-        {
-          title: 'PHP',
-          value: 'php',
-          technology: 'backend'
-        },
-        {
-          title: 'Ruby',
-          value: 'ruby',
-          technology: 'backend'
-        },
-        {
-          title: 'C',
-          value: 'c',
-          technology: 'backend'
-        },
-        {
-          title: 'C++',
-          value: 'c-plus',
-          technology: 'backend'
-        },
-        {
-          title: 'Figma',
-          value: 'figma',
-          technology: 'uiux'
-        },
-        {
-          title: 'Adobe Suite',
-          value: 'adobe',
-          technology: 'uiux'
-        },
-        {
-          title: 'Sketch',
-          value: 'sketch',
-          technology: 'uiux'
-        },
-        {
-          title: 'InVision',
-          value: 'invision',
-          technology: 'uiux'
-        },
-        {
-          title: 'Zeplin',
-          value: 'zeplin',
-          technology: 'uiux'
-        },
-        {
-          title: 'Balsamic',
-          value: 'balsamic',
-          technology: 'uiux'
-        },
-        {
-          title: 'Principle',
-          value: 'principle-app',
-          technology: 'uiux'
-        },
-        {
-          title: 'PostCSS',
-          value: 'post-css',
-          technology: 'frontend'
-        },
-        {
-          title: 'TypeScript',
-          value: 'typescript',
-          technology: 'frontend'
-        },
-        {
-          title: 'Angular',
-          value: 'angular',
-          technology: 'frontend'
-        },
-        {
-          title: 'Webpack',
-          value: 'webpack',
-          technology: 'frontend'
-        },
-        {
-          title: 'Next.js',
-          value: 'next',
-          technology: 'frontend'
-        },
-        {
-          title: 'Nuxt.js',
-          value: 'nuxt',
-          technology: 'frontend'
-        },
-        {
-          title: 'JavaScript',
-          value: 'js',
-          technology: 'frontend'
-        },
-        {
-          title: 'React',
-          value: 'react',
-          technology: 'frontend'
-        },
-        {
-          title: 'Babel',
-          value: 'babel',
-          technology: 'frontend'
-        },
-        {
-          title: 'Vue',
-          value: 'vue',
-          technology: 'frontend'
-        },
-        {
-          title: 'SASS',
-          value: 'sass',
-          technology: 'frontend'
-        },
-        {
-          title: 'Jasmine',
-          value: 'jasmine',
-          technology: 'qa'
-        },
-        {
-          title: 'Selenoid',
-          value: 'selenoid',
-          technology: 'qa'
-        },
-        {
-          title: 'Appium',
-          value: 'appium',
-          technology: 'qa'
-        },
-        {
-          title: 'Cucumber',
-          value: 'cucumber',
-          technology: 'qa'
-        },
-        {
-          title: 'PyTest',
-          value: 'pytest',
-          technology: 'qa'
-        },
-        {
-          title: 'Selenium',
-          value: 'selenium',
-          technology: 'qa'
-        },
-        {
-          title: 'Selenium Grid',
-          value: 'selenium-grid',
-          technology: 'qa'
         }
       ],
       activeLegend: ''

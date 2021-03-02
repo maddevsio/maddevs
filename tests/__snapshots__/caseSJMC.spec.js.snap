@@ -2717,7 +2717,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
        
       <a
         class="case_next-project-button"
-        href="/case-studies/namba-food"
+        href="/case-studies/namba-food/"
       >
         Read next project
       </a>

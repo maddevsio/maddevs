@@ -398,7 +398,7 @@
         </TextQuoteAuthor>
       </section>
     </section>
-    <Footer link="/case-studies/sir-john-monash-centre" className="namba-food-case">
+    <Footer link="/case-studies/sir-john-monash-centre/" className="namba-food-case">
       <div class="case_logotype" slot="icon"></div>
       The maintenance <br class="case_mobile-break"> of memory: <br> Sir John Monash <br class="case_mobile-break"> Centre
     </Footer>
