@@ -112,7 +112,7 @@ module.exports = {
   ],
   gtm: {
     id: 'GTM-NNKVRF3',
-    enabled: true,
+    enabled: false,
     scriptDefer: true
   },
   axios: {
