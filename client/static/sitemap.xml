@@ -12,17 +12,17 @@
   <priority>1</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/services</loc>
+  <loc>https://maddevs.io/services/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/projects</loc>
+  <loc>https://maddevs.io/projects/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/careers</loc>
+  <loc>https://maddevs.io/careers/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.90</priority>
 </url>
@@ -32,12 +32,12 @@
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://gps.maddevs.io</loc>
+  <loc>https://gps.maddevs.io/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://gps.maddevs.io/en</loc>
+  <loc>https://gps.maddevs.io/en/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.90</priority>
 </url>
@@ -158,7 +158,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/blog/the-cost-of-errors-in-hardware-projects</loc>
+  <loc>https://maddevs.io/blog/the-cost-of-errors-in-hardware-projects/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -278,7 +278,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/blog/web-app-deploy-to-glitch-com</loc>
+  <loc>https://maddevs.io/blog/web-app-deploy-to-glitch-com/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -318,7 +318,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/blog/top-3-best-ci-for-your-js-projects-with-puppeteer-tests</loc>
+  <loc>https://maddevs.io/blog/top-3-best-ci-for-your-js-projects-with-puppeteer-tests/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -473,6 +473,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://maddevs.io/blog/how-to-set-up-automated-integration-tests-in-a-vue-application/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://maddevs.io/blog/mad-devs-ishet-senior-python-developer-v-proekt-clutch/</loc>
   <lastmod>2021-02-25T13:43:25+00:00</lastmod>
   <priority>0.7</priority>
@@ -498,42 +503,42 @@
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/blog/golang-middle-senior-developer-v-finteh-proekt</loc>
+  <loc>https://maddevs.io/blog/golang-middle-senior-developer-v-finteh-proekt/</loc>
   <lastmod>2021-02-25T13:43:25+00:00</lastmod>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/blog/middle-python-developer</loc>
+  <loc>https://maddevs.io/blog/middle-python-developer/</loc>
   <lastmod>2021-02-25T13:43:25+00:00</lastmod>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/blog/middle-android-developer</loc>
+  <loc>https://maddevs.io/blog/middle-android-developer/</loc>
   <lastmod>2021-02-25T13:43:25+00:00</lastmod>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/blog/senior-android-developer</loc>
+  <loc>https://maddevs.io/blog/senior-android-developer/</loc>
   <lastmod>2021-02-25T13:43:25+00:00</lastmod>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/blog/mad-devs-devops</loc>
+  <loc>https://maddevs.io/blog/mad-devs-devops/</loc>
   <lastmod>2021-02-25T13:43:25+00:00</lastmod>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/blog/middle-ios-developer</loc>
+  <loc>https://maddevs.io/blog/middle-ios-developer/</loc>
   <lastmod>2021-02-25T13:43:25+00:00</lastmod>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/blog/senior-ios-developer</loc>
+  <loc>https://maddevs.io/blog/senior-ios-developer/</loc>
   <lastmod>2021-02-25T13:43:25+00:00</lastmod>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/blog/mad-devs-ishet-golang-razrabotchika</loc>
+  <loc>https://maddevs.io/blog/mad-devs-ishet-golang-razrabotchika/</loc>
   <lastmod>2021-02-25T13:43:25+00:00</lastmod>
   <priority>0.7</priority>
 </url>
