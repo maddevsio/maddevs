@@ -52,7 +52,8 @@ module.exports = {
         }();
         drift.SNIPPET_VERSION = '0.3.1';
         drift.load('ihucnapgur9w');
-        `
+        `,
+        defer: true
       }
     ]
   },
