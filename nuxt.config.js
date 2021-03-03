@@ -3,6 +3,7 @@ import axios from 'axios';
 
 module.exports = {
   srcDir: 'client/',
+  target: 'static',
   /*
   ** Headers of the page
   */
@@ -68,6 +69,7 @@ module.exports = {
     '~/plugins/vee-validate.js',
     '~/plugins/vue2-perfect-scrollbar.js',
     '~/plugins/vue-social-sharing.js',
+    '~/plugins/vue-fragment.js',
     {
       src: '~/plugins/vue-js-modal.js',
       ssr: false
