@@ -24,14 +24,13 @@
           :class="this.activeLegend"
         >
           <DevOps />
-          <DevOps />
-          <DevOps />
-          <DevOps />
-          <DevOps />
-          <DevOps />
-          <DevOps />
-          <DevOps />
-          <DevOps />
+          <QA />
+          <Backend />
+          <Frontend />
+          <Mobile />
+          <PM />
+          <Infrastructure />
+          <UxUi />
         </div>
       </div>
     </div>
@@ -40,11 +39,25 @@
 
 <script>
 import DevOps from '@/components/About/TechnologiesAndTools/DevOps';
+import QA from '@/components/About/TechnologiesAndTools/QA';
+import Backend from '@/components/About/TechnologiesAndTools/Backend';
+import Frontend from '@/components/About/TechnologiesAndTools/Frontend';
+import Mobile from '@/components/About/TechnologiesAndTools/Mobile';
+import PM from '@/components/About/TechnologiesAndTools/PM';
+import Infrastructure from '@/components/About/TechnologiesAndTools/Infrastructure';
+import UxUi from '@/components/About/TechnologiesAndTools/UxUi';
 
 export default {
   name: 'TechnologiesAndTools',
   components: {
-    DevOps
+    DevOps,
+    QA,
+    Backend,
+    Frontend,
+    Mobile,
+    PM,
+    Infrastructure,
+    UxUi
   },
   data() {
     return {
@@ -260,6 +273,16 @@ $tech_legends: (
     justify-content: flex-end;
   }
 
+  svg {
+    width: 26px;
+    height: 26px;
+
+    @media screen and (max-width: 976px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   span {
     white-space: nowrap;
     font-family: 'Poppins-Regular', sans-serif;
@@ -288,18 +311,6 @@ $tech_legends: (
   @each $name, $color in $tech_legends {
     &.#{$name} {
       background: $color;
-
-      &::before {
-        content: '';
-        width: 26px;
-        height: 26px;
-        display: block;
-
-        @media screen and (max-width: 976px) {
-          width: 20px;
-          height: 20px;
-        }
-      }
     }
   }
 
@@ -422,7 +433,7 @@ $tech_legends: (
 
   // Done
   &.backend-c-plus {
-    order: 59;
+    order: 58;
 
     @include mediaMiddleScreen(25);
 
