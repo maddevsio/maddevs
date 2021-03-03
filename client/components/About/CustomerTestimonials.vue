@@ -88,27 +88,23 @@ export default {
           alt: 'Stefan Streichsbier - CEO and Founder at GuardRails.io.'
         }
       ],
-      widgetHasBeenLoaded: false
+      script: null
     };
   },
   mounted() {
-    window.addEventListener('scroll', () => this.scrollHandler());
-  },
-  methods: {
-    scrollHandler() {
-      if(!this.widgetHasBeenLoaded) {
-        this.initWidget();
-      }
-    },
-    initWidget() {
-      let script = document.createElement('script');
-      script.setAttribute('src', 'https://widget.clutch.co/static/js/widget.js');
-      document.body.appendChild(script);
-      script.onload = function() {
+    let clutchLoader = () => {
+      this.script = document.createElement('script');
+      this.script.setAttribute('src', 'https://widget.clutch.co/static/js/widget.js');
+      document.body.appendChild(this.script);
+      this.script.onload = function() {
         CLUTCHCO.Init();
       };
-      this.widgetHasBeenLoaded = true;
-    }
+      window.removeEventListener('scroll', clutchLoader);
+    };
+	  window.addEventListener('scroll', clutchLoader);
+  },
+  destroyed() {
+    this.script.remove();
   }
 };
 </script>
