@@ -89,7 +89,7 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
       <div
         class="tech_container"
       >
-        <fragment>
+        <fragment-stub>
           <div
             class="tech_item devops devops-ansible"
           >
@@ -792,9 +792,9 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
               Prometheus
             </span>
           </div>
-        </fragment>
+        </fragment-stub>
          
-        <fragment>
+        <fragment-stub>
           <div
             class="tech_item devops devops-ansible"
           >
@@ -1497,9 +1497,9 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
               Prometheus
             </span>
           </div>
-        </fragment>
+        </fragment-stub>
          
-        <fragment>
+        <fragment-stub>
           <div
             class="tech_item devops devops-ansible"
           >
@@ -2202,9 +2202,9 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
               Prometheus
             </span>
           </div>
-        </fragment>
+        </fragment-stub>
          
-        <fragment>
+        <fragment-stub>
           <div
             class="tech_item devops devops-ansible"
           >
@@ -2907,9 +2907,9 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
               Prometheus
             </span>
           </div>
-        </fragment>
+        </fragment-stub>
          
-        <fragment>
+        <fragment-stub>
           <div
             class="tech_item devops devops-ansible"
           >
@@ -3612,9 +3612,9 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
               Prometheus
             </span>
           </div>
-        </fragment>
+        </fragment-stub>
          
-        <fragment>
+        <fragment-stub>
           <div
             class="tech_item devops devops-ansible"
           >
@@ -4317,9 +4317,9 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
               Prometheus
             </span>
           </div>
-        </fragment>
+        </fragment-stub>
          
-        <fragment>
+        <fragment-stub>
           <div
             class="tech_item devops devops-ansible"
           >
@@ -5022,9 +5022,9 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
               Prometheus
             </span>
           </div>
-        </fragment>
+        </fragment-stub>
          
-        <fragment>
+        <fragment-stub>
           <div
             class="tech_item devops devops-ansible"
           >
@@ -5727,9 +5727,9 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
               Prometheus
             </span>
           </div>
-        </fragment>
+        </fragment-stub>
          
-        <fragment>
+        <fragment-stub>
           <div
             class="tech_item devops devops-ansible"
           >
@@ -6432,7 +6432,7 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
               Prometheus
             </span>
           </div>
-        </fragment>
+        </fragment-stub>
       </div>
     </div>
   </div>
