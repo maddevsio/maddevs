@@ -7,7 +7,9 @@ describe('TechnologiesAndTools', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(TechnologiesAndTools);
+    wrapper = mount(TechnologiesAndTools, {
+      stubs: ['fragment']
+    });
   });
 
   test('is a Vue instance', () => {
