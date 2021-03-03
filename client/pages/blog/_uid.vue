@@ -156,6 +156,7 @@ export default {
         post.data.schema_org_snippets[0].single_snippet[0].text
       ) {
         jsonLd = post.data.schema_org_snippets[0].single_snippet[0].text;
+        jsonLd = jsonLd.substring(jsonLd.indexOf('{'), jsonLd.lastIndexOf('}') + 1); // extracting only JSON object from a snippet without extra characters
       } else {
         console.log('Schema.org is not defined');
       }
