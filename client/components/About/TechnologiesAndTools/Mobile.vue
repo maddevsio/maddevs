@@ -1,27 +1,27 @@
 <template>
   <fragment>
     <div class="tech_item mobile mobile-kotlin">
-      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.0542 0L0 13.728V26L13.0347 12.9415L26 0H13.0542Z" fill="url(#paint0_linear)"/>
-        <path d="M0 26L13.0347 12.9426L26 26H0Z" fill="url(#paint1_linear)"/>
-        <path d="M0 0H13.0542L0 13.728V0Z" fill="url(#paint2_linear)"/>
+      <svg fill="none" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.0542 0L0 13.728V26L13.0347 12.9415L26 0H13.0542Z" fill="url(#c)"/>
+        <path d="M0 26L13.0347 12.9426L26 26H0Z" fill="url(#b)"/>
+        <path d="M0 0H13.0542L0 13.728V0Z" fill="url(#a)"/>
         <defs>
-        <linearGradient id="paint0_linear" x1="-4.37736" y1="23.9044" x2="19.8169" y2="-0.29016" gradientUnits="userSpaceOnUse">
-        <stop offset="0.108" stop-color="#C757BC"/>
-        <stop offset="0.173" stop-color="#CD5CA9"/>
-        <stop offset="0.492" stop-color="#E8744F"/>
-        <stop offset="0.716" stop-color="#F88316"/>
-        <stop offset="0.823" stop-color="#FF8900"/>
+        <linearGradient id="c" x1="-4.3774" x2="19.817" y1="23.904" y2="-.29016" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#C757BC" offset=".108"/>
+        <stop stop-color="#CD5CA9" offset=".173"/>
+        <stop stop-color="#E8744F" offset=".492"/>
+        <stop stop-color="#F88316" offset=".716"/>
+        <stop stop-color="#FF8900" offset=".823"/>
         </linearGradient>
-        <linearGradient id="paint1_linear" x1="8.29764" y1="30.6907" x2="11.7994" y2="16.8072" gradientUnits="userSpaceOnUse">
-        <stop offset="0.296" stop-color="#00AFFF"/>
-        <stop offset="0.694" stop-color="#5282FF"/>
-        <stop offset="1" stop-color="#945DFF"/>
+        <linearGradient id="b" x1="8.2976" x2="11.799" y1="30.691" y2="16.807" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#00AFFF" offset=".296"/>
+        <stop stop-color="#5282FF" offset=".694"/>
+        <stop stop-color="#945DFF" offset="1"/>
         </linearGradient>
-        <linearGradient id="paint2_linear" x1="-19.5943" y1="428.926" x2="522.982" y2="-37.6158" gradientUnits="userSpaceOnUse">
-        <stop offset="0.296" stop-color="#00AFFF"/>
-        <stop offset="0.694" stop-color="#5282FF"/>
-        <stop offset="1" stop-color="#945DFF"/>
+        <linearGradient id="a" x1="-19.594" x2="522.98" y1="428.93" y2="-37.616" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#00AFFF" offset=".296"/>
+        <stop stop-color="#5282FF" offset=".694"/>
+        <stop stop-color="#945DFF" offset="1"/>
         </linearGradient>
         </defs>
       </svg>

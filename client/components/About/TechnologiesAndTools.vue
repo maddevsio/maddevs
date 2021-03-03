@@ -273,6 +273,16 @@ $tech_legends: (
     justify-content: flex-end;
   }
 
+  svg {
+    width: 26px;
+    height: 26px;
+
+    @media screen and (max-width: 976px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   span {
     white-space: nowrap;
     font-family: 'Poppins-Regular', sans-serif;
@@ -301,18 +311,6 @@ $tech_legends: (
   @each $name, $color in $tech_legends {
     &.#{$name} {
       background: $color;
-
-      &::before {
-        content: '';
-        width: 26px;
-        height: 26px;
-        display: block;
-
-        @media screen and (max-width: 976px) {
-          width: 20px;
-          height: 20px;
-        }
-      }
     }
   }
 
@@ -435,7 +433,7 @@ $tech_legends: (
 
   // Done
   &.backend-c-plus {
-    order: 59;
+    order: 58;
 
     @include mediaMiddleScreen(25);
 
