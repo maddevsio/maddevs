@@ -53,7 +53,6 @@ export default {
 
 <style lang="scss" scoped>
 	@import '../assets/styles/vars';
-	@import '../assets/styles/_flagsIcons';
 
 	.footer {
 		padding-top: 100px;
