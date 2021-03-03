@@ -5,40 +5,6 @@ import footerSocialNetworkList from '@/components/Footer/footer-social-network-l
 
 describe('footer social network list', () => {
   let wrapper;
-  const socialNetworkListMock = [
-    {
-      className: 'social-network-github',
-      link: 'https://github.com/maddevsio'
-    },
-    {
-      className: 'social-network-facebook',
-      link: 'https://www.facebook.com/maddevsllc'
-    },
-    {
-      className: 'social-network-twitter',
-      link: 'https://twitter.com/MadDevsIO'
-    },
-    {
-      className: 'social-network-linkedin',
-      link: 'https://www.linkedin.com/company/mad-devs'
-    },
-    {
-      className: 'social-network-instagram',
-      link: 'https://www.instagram.com/maddevsio'
-    },
-    {
-      className: 'social-network-medium',
-      link: 'https://blog.maddevs.io'
-    },
-    {
-      className: 'social-network-behance',
-      link: 'https://www.behance.net/maddevs'
-    },
-    {
-      'className': 'social-network-dev',
-      'link': 'https://dev.to/maddevs'
-    }
-  ];
 
   beforeEach(() => {
     wrapper = mount(footerSocialNetworkList);
@@ -53,8 +19,4 @@ describe('footer social network list', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
   // --------------------- //
-
-  test('should check existence of data', () => {
-    expect(wrapper.vm.$data.socialNetworkList).toEqual(socialNetworkListMock);
-  });
 });
