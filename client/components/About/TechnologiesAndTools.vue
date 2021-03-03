@@ -24,14 +24,13 @@
           :class="this.activeLegend"
         >
           <DevOps />
-          <DevOps />
-          <DevOps />
-          <DevOps />
-          <DevOps />
-          <DevOps />
-          <DevOps />
-          <DevOps />
-          <DevOps />
+          <QA />
+          <Backend />
+          <Frontend />
+          <Mobile />
+          <PM />
+          <Infrastructure />
+          <UxUi />
         </div>
       </div>
     </div>
@@ -40,11 +39,25 @@
 
 <script>
 import DevOps from '@/components/About/TechnologiesAndTools/DevOps';
+import QA from '@/components/About/TechnologiesAndTools/QA';
+import Backend from '@/components/About/TechnologiesAndTools/Backend';
+import Frontend from '@/components/About/TechnologiesAndTools/Frontend';
+import Mobile from '@/components/About/TechnologiesAndTools/Mobile';
+import PM from '@/components/About/TechnologiesAndTools/PM';
+import Infrastructure from '@/components/About/TechnologiesAndTools/Infrastructure';
+import UxUi from '@/components/About/TechnologiesAndTools/UxUi';
 
 export default {
   name: 'TechnologiesAndTools',
   components: {
-    DevOps
+    DevOps,
+    QA,
+    Backend,
+    Frontend,
+    Mobile,
+    PM,
+    Infrastructure,
+    UxUi
   },
   data() {
     return {
