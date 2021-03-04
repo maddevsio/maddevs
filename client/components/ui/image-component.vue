@@ -4,8 +4,8 @@
     class="multi-image" :srcset="[require(`@/assets/img/Home/webp/experts/${fileName}.webp`) + ' ', require(`@/assets/img/Home/webp/experts/${fileNameRetina}.webp`) + ' 2x']"
     type='image/webp'>
   <img
-    :src="[require(`@/assets/img/Home/png/experts/${fileName}.jpg`)]"
-    :srcset="[require(`@/assets/img/Home/png/experts/${fileNameRetina}.jpg`) + ' 2x']"
+    :src="[require(`@/assets/img/Home/jpg/experts/${fileName}.jpg`)]"
+    :srcset="[require(`@/assets/img/Home/jpg/experts/${fileNameRetina}.jpg`) + ' 2x']"
     loading="lazy"
     class="multi-image"
     :alt="alt"
