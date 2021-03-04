@@ -6,7 +6,7 @@
     <slot name="afterTitle"></slot>
     <img
       :src="coverImageUrl"
-      class="blog-post__introduction-image"
+      :class="[('blog-post__introduction-image'), ['jpeg', 'jpg'].includes(coverImageExtension) && 'blog-post__introduction-image--with-background']"
       v-if="coverImageUrl"
       :alt="coverImageAltText"
       :width="coverImageWidth"
@@ -16,6 +16,8 @@
 </template>
 
 <script>
+import getExtension from '@/helpers/getExtension';
+
 export default {
   name: 'Common',
   props: {
@@ -43,6 +45,11 @@ export default {
     coverImageHeight: {
       type: Number,
       default: 533
+    }
+  },
+  computed: {
+    coverImageExtension: function() {
+      return getExtension(this.coverImageUrl);
     }
   }
 };
@@ -76,6 +83,9 @@ export default {
       margin-left: -10%;
       height: auto;
       vertical-align: middle;
+      &--with-background {
+        background-color: $bgcolor--silver;
+      }
     }
   }
 
