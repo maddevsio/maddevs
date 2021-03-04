@@ -104,7 +104,7 @@ export default {
 	  window.addEventListener('scroll', clutchLoader);
   },
   destroyed() {
-    if (this.script.remove()) {
+    if (this.script !== null) {
       this.script.remove();
     }
   }
