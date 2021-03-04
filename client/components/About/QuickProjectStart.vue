@@ -18,20 +18,26 @@
       <UIButtonModalTrigger
         class="quickProjectStart__button"
         :buttonInnerText="buttonInnerText"
-        :modalWindowName="modalWindowName"
+        @onClick="$refs.orderProjectFromUsModal.show()"
         :isRed="true"
       />
     </div>
+    <Modal ref="orderProjectFromUsModal">
+      <orderProjectFromUsModal />
+    </Modal>
   </section>
 </template>
 
 <script>
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
+import Modal from '@/containers/Modal';
 
 export default {
   name: 'QuickProjectStart',
   components: {
-    UIButtonModalTrigger
+    UIButtonModalTrigger,
+    Modal,
+    orderProjectFromUsModal: () => import('@/components/Modals/order-project-from-us-modal')
   },
   data() {
     return {

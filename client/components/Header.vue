@@ -39,7 +39,6 @@
 
 <script>
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
-import contactMeModal from '@/components/Modals/contact-me-modal';
 import mobileHeader from '@/components/Header/mobile-header';
 import headerLogo from '@/components/svg/headerLogo';
 import Modal from '@/containers/Modal';
@@ -48,7 +47,7 @@ export default {
   name: 'main-header',
   components: {
     UIButtonModalTrigger,
-    contactMeModal,
+    contactMeModal: () => import('@/components/Modals/contact-me-modal'),
     mobileHeader,
     headerLogo,
     Modal

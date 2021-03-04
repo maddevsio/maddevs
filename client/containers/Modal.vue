@@ -3,6 +3,7 @@
     <div
       v-if="isVisible"
       class="modal"
+      v-append-to-body
     >
       <transition name="made">
         <div v-if="isOverlay" class="modal_overlay" @click="close"></div>
@@ -50,6 +51,18 @@ export default {
       contentLoaded: false,
       isOverlay: false
     };
+  },
+  directives: {
+    appendToBody: {
+      inserted(el) {
+        document.body.appendChild(el);
+      },
+      unbind(el) {
+        if (el.parentNode) {
+          el.parentNode.removeChild(el);
+        }
+      }
+    }
   },
   beforeMount() {
     document.addEventListener('keydown', this.onKeydown);

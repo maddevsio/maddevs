@@ -3,44 +3,18 @@
     <Header/>
       <nuxt/>
     <Footer />
-    <client-only>
-      <ContactMeModal />
-      <TeamsModal />
-      <IndividualsModal />
-      <InfrastructureAuditModal />
-      <GetCaseStudiesModal />
-      <OrderProjectFromUsModal />
-      <GetYourTrustedItPartnerModal />
-      <GetExpertAdvice />
-    </client-only>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ContactMeModal from '@/components/Modals/contact-me-modal';
-import TeamsModal from '@/components/Modals/teams-modal';
-import IndividualsModal from '@/components/Modals/individuals-modal';
-import InfrastructureAuditModal from '@/components/Modals/infrastructure-audit-modal';
-import GetCaseStudiesModal from '@/components/Modals/get-case-studies-modal';
-import OrderProjectFromUsModal from '@/components/Modals/order-project-from-us-modal';
-import GetYourTrustedItPartnerModal from '@/components/Modals/get-your-trusted-it-partner-modal';
-import GetExpertAdvice from '@/components/Modals/get-expert-advice-modal';
 
 export default {
   name: 'Default',
   components: { 
     Header,
-    Footer,
-    ContactMeModal,
-    TeamsModal,
-    IndividualsModal,
-    InfrastructureAuditModal,
-    GetCaseStudiesModal,
-    OrderProjectFromUsModal,
-    GetYourTrustedItPartnerModal,
-    GetExpertAdvice
+    Footer
   },
   mounted() {
     this.$nextTick(() => {
