@@ -36,6 +36,7 @@
     "prismjs": "^1.23.0",
     "request": "^2.88.2",
     "sendpulse-api": "^1.1.4",
+    "simplebar-vue": "^1.6.0",
     "snyk": "^1.439.0",
     "swiper": "^5.4.5",
     "vee-validate": "^3.4.5",

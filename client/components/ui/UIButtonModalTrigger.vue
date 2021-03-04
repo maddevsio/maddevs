@@ -1,8 +1,12 @@
 <template>
   <button
     class="ui-button-modal-trigger"
-    :class="{ 'ui-button-modal-trigger--red': isRed, 'ui-button-modal-trigger--black': isBlack, 'ui-button-modal-trigger--grey': isGrey }"
-    @click="showModal()"
+    :class="{
+      'ui-button-modal-trigger--red': isRed,
+      'ui-button-modal-trigger--black': isBlack,
+      'ui-button-modal-trigger--grey': isGrey
+    }"
+    @click="showModal"
     v-WaveAnimation
   >
     {{ buttonInnerText }}
@@ -22,10 +26,6 @@ export default {
       type: String,
       default: 'Button Inner Text'
     },
-    modalWindowName: {
-      type: String,
-      default: ''
-    },
     isRed: {
       type: Boolean,
       default: false
@@ -39,32 +39,9 @@ export default {
       default: false
     }
   },
-  data() {
-    return {
-      scrollYPosition: null
-    };
-  },
-  mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
   methods: {
     showModal() {
-      this.$modal.show(this.$props.modalWindowName);
-      this.disableScrollOnBody();
-    },
-    disableScrollOnBody() {
-      // Disable body scroll in Safari for mobile devices
-      if (window.innerWidth <= 640) {
-        document.body.style.position = 'fixed';
-      }
-      document.body.style.top = `-${this.scrollYPosition}`;
-      document.body.style.overflow = 'hidden';
-    },
-    handleScroll() {
-      this.scrollYPosition = `${window.scrollY}px`;
+      this.$emit('onClick');
     }
   }
 };
