@@ -97,6 +97,7 @@ module.exports = {
       }
     }
   },
+  buildModules: ['nuxt-lazysizes'],
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/robots',
@@ -120,5 +121,16 @@ module.exports = {
   env: {
     awsUrl: process.env.NODE_AWS_URL,
     domain: process.env.NODE_DOMAIN
+  },
+  lazySizes: {
+    extendAssetUrls: undefined,
+    plugins: {
+      blurUp: false,
+      nativeLoading: false,
+      unveilhooks: false
+    },
+
+    srcAttr: 'data-src',
+    srcsetAttr: 'data-srcset'
   }
 };

@@ -29,9 +29,8 @@
             <div class="customer-testimonials__customer-info">
               <div class="customer-testimonials__profile">
                 <img
-                  :src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)"
-                  loading="lazy"
-                  class="customer-testimonials__customer-image"
+                  :data-src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)"
+                  class="customer-testimonials__customer-image lazyload"
                   :alt="testimonial.alt"
                   width="42"
                   height="42"
