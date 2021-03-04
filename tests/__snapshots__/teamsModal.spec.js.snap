@@ -8,17 +8,17 @@ exports[`Teams Modal renders correctly 1`] = `
     <div
       class="fields-list"
     >
-      <validationprovider
+      <validationprovider-stub
         class="modal-field-item field-item"
         rules="required|max:50"
       />
        
-      <validationprovider
+      <validationprovider-stub
         class="modal-field-item field-item"
         rules="email|required"
       />
        
-      <validationprovider
+      <validationprovider-stub
         class="modal-field-item field-item"
         rules="phone|max:50"
       />
@@ -101,7 +101,7 @@ exports[`Teams Modal renders correctly 1`] = `
         </div>
       </div>
        
-      <validationprovider
+      <validationprovider-stub
         class="modal-field-item field-item"
         rules="max:500"
       />
