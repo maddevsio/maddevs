@@ -1,25 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Contact me modal renders correctly 1`] = `
-<modal-stub
-  classes="modal_container"
-  height="auto"
-  name="get-case-studies-modal"
->
-  <button
-    class="close-modal"
+<validationobserver-stub>
+  <div
+    class="form"
   >
-    <img
-      alt="Close modal"
-      src="@/assets/img/common/close-icon.svg"
-    />
-  </button>
-   
-  <perfect-scrollbar-stub
-    class="modal_scrollbar modal-safari-only custom-scrollbar"
-    options="[object Object]"
-  >
-    <validationobserver-stub />
-  </perfect-scrollbar-stub>
-</modal-stub>
+    <div
+      class="fields-list"
+    >
+      <validationprovider-stub
+        class="modal-field-item field-item"
+        rules="required|max:50"
+      />
+       
+      <validationprovider-stub
+        class="modal-field-item field-item"
+        rules="email|required"
+      />
+    </div>
+     
+    <div
+      class="form-checkboxes"
+    >
+      <label
+        class="form-checkbox-label required"
+        for="privacy-policy-case-studies"
+      >
+        I confirm that I have read and accepted 
+        <div>
+          Mad Devs’
+        </div>
+         
+        <a
+          href="/privacy"
+          target="_blank"
+        >
+          Privacy Policy
+        </a>
+         
+        <input
+          class="form-checkbox-input"
+          id="privacy-policy-case-studies"
+          name="Privacy policy"
+          type="checkbox"
+        />
+         
+        <div
+          class="checkmark"
+        />
+      </label>
+       
+      <label
+        class="form-checkbox-label"
+        for="marketing-communications-case-studies"
+      >
+        I agree to get 
+        <div>
+          Mad Devs’
+        </div>
+         discount offers and other marketing communications.
+    
+        <input
+          class="form-checkbox-input"
+          id="marketing-communications-case-studies"
+          name="Marketing communications"
+          type="checkbox"
+        />
+         
+        <div
+          class="checkmark"
+        />
+      </label>
+    </div>
+     
+    <button
+      class="ui-button modal-button ui-button--disabled"
+    >
+      
+      Get Case Studies
+    
+    </button>
+  </div>
+</validationobserver-stub>
 `;
