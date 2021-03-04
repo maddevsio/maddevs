@@ -4,11 +4,21 @@
     <h1 class="blog-post__blog-title title">{{ title }}</h1>
     <p class="blog-post__blog-sub-title">{{ subtitle }}</p>
     <slot name="afterTitle"></slot>
-    <img :src="coverImageUrl" class="blog-post__introduction-image" v-if="coverImageUrl" :alt="coverImageAltText">
+    <img
+      :src="coverImageUrl"
+      class='blog-post__introduction-image'
+      :class="getImageClass"
+      v-if="coverImageUrl"
+      :alt="coverImageAltText"
+      :width="coverImageWidth"
+      :height="coverImageHeight"
+    >
   </div>
 </template>
 
 <script>
+import extractFileExtension from '@/helpers/extractFileExtension';
+
 export default {
   name: 'Common',
   props: {
@@ -28,6 +38,21 @@ export default {
     coverImageAltText: {
       type: String,
       default: ''
+    },
+    coverImageWidth: {
+      type: Number,
+      default: 982
+    },
+    coverImageHeight: {
+      type: Number,
+      default: 533
+    }
+  },
+  computed: {
+    getImageClass: function() {
+      const allowedExtensions = ['jpeg', 'jpg'];
+      const extension = extractFileExtension(this.coverImageUrl);
+      return allowedExtensions.includes(extension) ? 'blog-post__introduction-image--with-background' : '';
     }
   }
 };
@@ -61,6 +86,9 @@ export default {
       margin-left: -10%;
       height: auto;
       vertical-align: middle;
+      &--with-background {
+        background-color: $bgcolor--silver;
+      }
     }
   }
 
