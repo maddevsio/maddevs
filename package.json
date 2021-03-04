@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.5",
-    "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/prismic": "^1.2.4",
     "@nuxtjs/robots": "^2.4.2",
     "axios": "^0.21.1",

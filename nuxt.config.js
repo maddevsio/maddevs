@@ -21,12 +21,9 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'sitemap', type: 'application/xml', href: 'https://maddevs.io/sitemap.xml' }
     ],
-    script: [
+    script: [ // Init google tag manager
       {
-        innerHTML: 'window.intercomSettings = { app_id: "flwiq2ri" };'
-      },
-      {
-        innerHTML: '(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic("reattach_activator");ic("update",w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement("script");s.type="text/javascript";s.async=true;s.src="https://widget.intercom.io/widget/flwiq2ri";var x=d.getElementsByTagName("script")[0];d.body.appendChild(s);};if(w.attachEvent){w.attachEvent("onload",l);}else{w.addEventListener("load",l,false);}}})();'
+        innerHTML: '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start": new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src= "https://www.googletagmanager.com/gtm.js?id="+i+dl;w.onload = function () {d.body.appendChild(j)}; })(window,document,"script","dataLayer","GTM-NNKVRF3");'
       }
     ]
   },
@@ -102,17 +99,11 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/gtm',
     '@nuxtjs/robots',
     '@/modules/static',
     '@/modules/crawler',
     '@nuxtjs/prismic'
   ],
-  gtm: {
-    id: 'GTM-NNKVRF3',
-    enabled: true,
-    scriptDefer: true
-  },
   axios: {
     baseURL: process.env.NODE_API_URL
   },
