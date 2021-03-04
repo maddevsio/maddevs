@@ -37,7 +37,7 @@
       </a>
     </li>
     <li class="footerSocialNetworkList__social-network-link-wrapper">
-      <a href="https://blog.maddevs.io" class="footerSocialNetworkList__social-network-link" target="_blank">
+      <a href="https://medium.com/maddevs-io" class="footerSocialNetworkList__social-network-link" target="_blank">
         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M22.4859 21.0002C22.4859 25.9706 18.5715 30 13.7431 30C8.91469 30 5 25.9697 5 21.0002C5 16.0306 8.91439 12 13.7431 12C18.5718 12 22.4859 16.0297 22.4859 21.0002ZM32.077 21.0002C32.077 25.6788 30.1198 29.4731 27.7055 29.4731C25.2911 29.4731 23.3339 25.6788 23.3339 21.0002C23.3339 16.3215 25.2908 12.5272 27.7052 12.5272C30.1195 12.5272 32.077 16.3203 32.077 21.0002ZM36 21.0002C36 25.1911 35.3118 28.5906 34.4625 28.5906C33.6133 28.5906 32.9253 25.192 32.9253 21.0002C32.9253 16.8083 33.6136 13.4097 34.4625 13.4097C35.3115 13.4097 36 16.808 36 21.0002Z" fill="#A4A8B4"/>
         </svg>
