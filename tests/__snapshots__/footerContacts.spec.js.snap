@@ -367,7 +367,7 @@ exports[`Footer contacts renders correctly 1`] = `
         >
           <a
             class="footerSocialNetworkList__social-network-link"
-            href="https://blog.maddevs.io"
+            href="https://medium.com/maddevs-io"
             target="_blank"
           >
             <svg
