@@ -23,13 +23,16 @@
             </div>
             <UIButtonModalTrigger
               :buttonInnerText="buttonInnerText"
-              :modalWindowName="modalWindowName"
               :isRed="true"
+              @onClick="$refs.contactMeModal.show()"
             />
           </div>
         </div>
       </div>
     </header>
+    <Modal ref="contactMeModal">
+      <contactMeModal />
+    </Modal>
     <mobileHeader/>
   </div>
 </template>
@@ -38,13 +41,16 @@
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 import mobileHeader from '@/components/Header/mobile-header';
 import headerLogo from '@/components/svg/headerLogo';
+import Modal from '@/containers/Modal';
 
 export default {
   name: 'main-header',
   components: {
     UIButtonModalTrigger,
+    contactMeModal: () => import('@/components/Modals/contact-me-modal'),
     mobileHeader,
-    headerLogo
+    headerLogo,
+    Modal
   },
   data() {
     return {

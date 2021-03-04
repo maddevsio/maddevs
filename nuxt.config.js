@@ -36,13 +36,8 @@ module.exports = {
   },
   plugins: [
     '~/plugins/vee-validate.js',
-    '~/plugins/vue2-perfect-scrollbar.js',
     '~/plugins/vue-social-sharing.js',
     '~/plugins/vue-fragment.js',
-    {
-      src: '~/plugins/vue-js-modal.js',
-      ssr: false
-    },
     {
       src: '~/plugins/vue-silent-box.js',
       ssr: false
@@ -75,6 +70,9 @@ module.exports = {
     {
       src: '~/assets/styles/index.scss',
       lang: 'scss'
+    },
+    {
+      src: 'simplebar/dist/simplebar.min.css'
     }
   ],
   /*

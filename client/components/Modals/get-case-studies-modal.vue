@@ -1,48 +1,44 @@
 <template>
-  <ModalContainer :name="modalName" successModalID="get-case-studies-modal">
-    <ValidationObserver v-slot="{ invalid }">
-      <div class="form"> 
-        <div class="fields-list">
-          <ValidationProvider class="modal-field-item field-item" rules="required|max:50" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name required">Full Name</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
-            <div class="modal-error-text error-text">{{ errors[0] }}</div>
-          </ValidationProvider>
-          <ValidationProvider class="modal-field-item field-item" rules="email|required" v-slot="{ classes, errors }">
-            <p class="modal-field-name field-name required">Work email</p>
-            <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
-            <div class="modal-error-text error-text">{{ errors[0] }}</div>
-          </ValidationProvider>
-        </div>
-        <FormCheckboxes
-          ref="checkboxes"
-          @getPrivacyCheckboxState="getPrivacyCheckboxState"
-          @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
-          :inputId="inputId"
-        />
-        <UIButton
-          :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
-          @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-          class="modal-button"
-          :loading="onSubmit"
-        >
-          Get Case Studies
-        </UIButton>
+  <ValidationObserver v-slot="{ invalid }">
+    <div class="form"> 
+      <div class="fields-list">
+        <ValidationProvider class="modal-field-item field-item" rules="required|max:50" v-slot="{ classes, errors }">
+          <p class="modal-field-name field-name required">Full Name</p>
+          <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
+          <div class="modal-error-text error-text">{{ errors[0] }}</div>
+        </ValidationProvider>
+        <ValidationProvider class="modal-field-item field-item" rules="email|required" v-slot="{ classes, errors }">
+          <p class="modal-field-name field-name required">Work email</p>
+          <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
+          <div class="modal-error-text error-text">{{ errors[0] }}</div>
+        </ValidationProvider>
       </div>
-    </ValidationObserver>
-  </ModalContainer>
+      <FormCheckboxes
+        ref="checkboxes"
+        @getPrivacyCheckboxState="getPrivacyCheckboxState"
+        @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
+        :inputId="inputId"
+      />
+      <UIButton
+        :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
+        @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+        class="modal-button"
+        :loading="onSubmit"
+      >
+        Get Case Studies
+      </UIButton>
+    </div>
+  </ValidationObserver>
 </template>
 
 <script>
 import FormCheckboxes from '@/components/ui/form-checkboxes';
-import ModalContainer from '@/containers/ModalContainer';
 import UIButton from '@/components/ui/UIButton';
 
 export default {
   name: 'case-studies-modal',
   components: {
     FormCheckboxes,
-    ModalContainer,
     UIButton
   },
   data: () => ({
