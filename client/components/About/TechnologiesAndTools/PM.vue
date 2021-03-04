@@ -35,62 +35,24 @@
       <span>Slack</span>
     </div>
     <div class="tech_item pm pm-meet">
-      <svg width="256px" height="297px" viewBox="0 0 256 297" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-        <defs>
-          <linearGradient x1="26.0700788%" y1="68.0422365%" x2="74.9491057%" y2="19.2791755%" id="linearGradient-1">
-            <stop stop-color="#058B7E" offset="0%"></stop>
-            <stop stop-color="#058D80" offset="0%"></stop>
-            <stop stop-color="#058D7F" offset="100%"></stop>
-          </linearGradient>
-          <path d="M127.682686,0 C57.1657481,0 0,55.7909333 0,124.612267 C0,193.433916 57.1657481,249.224533 127.682686,249.224533 L127.954173,296.138272 C193.56002,258.867516 255.954173,209.119447 255.954173,124.612267 C255.954173,55.7909333 198.199941,0 127.682686,0 Z" id="path-2"></path>
-          <filter x="-0.4%" y="-0.3%" width="100.8%" height="100.7%" filterUnits="objectBoundingBox" id="filter-3">
-            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
-            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
-            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
-          </filter>
-          <path d="M127.682686,0 C57.1657481,0 0,55.7909333 0,124.612267 C0,193.433916 57.1657481,249.224533 127.682686,249.224533 L127.954173,296.138272 C193.56002,258.867516 255.954173,209.119447 255.954173,124.612267 C255.954173,55.7909333 198.199941,0 127.682686,0 Z" id="path-4"></path>
-          <filter x="-0.4%" y="-0.3%" width="100.8%" height="100.7%" filterUnits="objectBoundingBox" id="filter-5">
-            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
-            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
-          </filter>
-          <path d="M127.682686,0 C57.1657481,0 0,55.7909333 0,124.612267 C0,193.433916 57.1657481,249.224533 127.682686,249.224533 L127.954173,296.138272 C193.56002,258.867516 255.954173,209.119447 255.954173,124.612267 C255.954173,55.7909333 198.199941,0 127.682686,0 Z" id="path-6"></path>
-          <linearGradient x1="30.0482935%" y1="27.302306%" x2="81.9404293%" y2="84.6402399%" id="linearGradient-8">
-            <stop stop-color="#000000" offset="0%"></stop>
-            <stop stop-color="#D8D8D8" stop-opacity="0" offset="100%"></stop>
-          </linearGradient>
-          <path d="M55.5801916,128.105402 L55.5801916,162.34398 C55.5801916,171.382993 62.9757472,178.778548 72.0147595,178.778548 L157.030779,178.778548 C166.069792,178.778548 173.465347,171.382993 173.465347,162.34398 L173.465347,140.721146 L207.124606,174.380405 L207.124606,128.105402 L55.5801916,128.105402 Z" id="path-9"></path>
-          <filter x="-1.0%" y="-3.0%" width="102.6%" height="111.8%" filterUnits="objectBoundingBox" id="filter-10">
-            <feOffset dx="1" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
-          </filter>
-        </defs>
-        <g>
-          <path d="M127.682686,0 C57.1657481,0 0,55.7909333 0,124.612267 C0,193.433916 57.1657481,249.224533 127.682686,249.224533 L127.954173,296.138272 C193.56002,258.867516 255.954173,209.119447 255.954173,124.612267 C255.954173,55.7909333 198.199941,0 127.682686,0 Z" fill="url(#linearGradient-1)"></path>
-          <g fill="black" fill-opacity="1">
-            <use filter="url(#filter-3)" xlink:href="#path-2"></use>
-          </g>
-          <g fill="black" fill-opacity="1">
-            <use filter="url(#filter-5)" xlink:href="#path-4"></use>
-          </g>
-          <g>
-            <mask id="mask-7" fill="white">
-              <use xlink:href="#path-6"></use>
-            </mask>
-            <g></g>
-            <polygon fill-opacity="0.21" fill="url(#linearGradient-8)" mask="url(#mask-7)" points="58.3180642 168.559565 167.355101 281.283951 311.894914 175.618212 207.440593 81.6987654 185.106647 119.970765"></polygon>
-          </g>
-          <g>
-            <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
-            <use fill="#F6F6F6" fill-rule="evenodd" xlink:href="#path-9"></use>
-          </g>
-          <path d="M207.124638,128.105402 L207.124638,81.6989235 L173.465379,115.28644 L173.465379,93.8668247 C173.465379,84.8274963 166.069823,77.4322568 157.030811,77.4322568 L72.0147911,77.4322568 C62.9757788,77.4322568 55.5802232,84.8274963 55.5802232,93.8668247 L55.5802232,128.105402 L207.124638,128.105402 Z" fill="#E2E2E2"></path>
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0)">
+        <path d="M19.9574 0C10.4865 0 2.80881 7.51393 2.80881 16.7828C2.80881 26.0517 10.4865 33.5656 19.9574 33.5656L19.9939 39.8839C28.8051 34.8643 37.1851 28.1642 37.1851 16.7828C37.1851 7.51393 29.4283 0 19.9574 0Z" fill="#3B8B7F"/>
+        <path d="M30.6272 11.0031L30.6271 23.4854L26.1065 18.9522V21.8644C26.1065 23.0817 25.1132 24.0778 23.8992 24.0778H12.481C11.267 24.0778 10.2737 23.0817 10.2737 21.8644L10.2738 12.6418C10.2738 11.4244 11.2671 10.4284 12.4811 10.4284H23.8993C25.1132 10.4284 26.1065 11.4244 26.1065 12.6418V15.5267L30.6272 11.0031Z" fill="white"/>
         </g>
+        <defs>
+        <clipPath id="clip0">
+        <rect width="34.3824" height="40" fill="white" transform="translate(2.80881)"/>
+        </clipPath>
+        </defs>
       </svg>
       <span>Meet</span>
     </div>
     <div class="tech_item pm pm-zoom">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1329.08 1329.08" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><defs></defs><g id="Layer_x0020_1"><g id="_2116467169744"><path d="M664.54 0c367.02 0 664.54 297.52 664.54 664.54s-297.52 664.54-664.54 664.54S0 1031.56 0 664.54 297.52 0 664.54 0z" fill="#e5e5e4" fill-rule="nonzero"/><path fill="#fff" fill-rule:nonzero d="M664.54 12.94c359.87 0 651.6 291.73 651.6 651.6s-291.73 651.6-651.6 651.6-651.6-291.73-651.6-651.6 291.74-651.6 651.6-651.6z"/><path d="M664.54 65.21c331 0 599.33 268.33 599.33 599.33 0 331-268.33 599.33-599.33 599.33-331 0-599.33-268.33-599.33-599.33 0-331 268.33-599.33 599.33-599.33z" fill="#4a8cff" fill-rule="nonzero"/><path fill="#fff" fill-rule:nonzero d="M273.53 476.77v281.65c.25 63.69 52.27 114.95 115.71 114.69h410.55c11.67 0 21.06-9.39 21.06-20.81V570.65c-.25-63.69-52.27-114.95-115.7-114.69H294.6c-11.67 0-21.06 9.39-21.06 20.81zm573.45 109.87l169.5-123.82c14.72-12.18 26.13-9.14 26.13 12.94v377.56c0 25.12-13.96 22.08-26.13 12.94l-169.5-123.57V586.64z"/></g></g></svg>
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 37.5613C29.6989 37.5613 37.5614 29.6988 37.5614 19.9999C37.5614 10.301 29.6989 2.43848 20 2.43848C10.3011 2.43848 2.4386 10.301 2.4386 19.9999C2.4386 29.6988 10.3011 37.5613 20 37.5613ZM9.67209 13.68C9.1198 13.68 8.67209 14.1277 8.67209 14.68V22.4371C8.67209 24.6462 10.463 26.4371 12.6721 26.4371H23.9604C24.5126 26.4371 24.9604 25.9894 24.9604 25.4371V17.68C24.9604 15.4709 23.1695 13.68 20.9604 13.68H9.67209ZM25.6062 17.414V22.4726L30.7645 26.064C30.9303 26.1794 31.1574 26.0608 31.1574 25.8589V14.3172C31.1574 14.1196 30.939 14.0001 30.7726 14.1067L25.6062 17.414Z" fill="#338CFB"/>
+      </svg>
       <span>Zoom</span>
     </div>
     <div class="tech_item pm pm-miro">
