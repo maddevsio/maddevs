@@ -8,7 +8,7 @@ describe('Teams Modal', () => {
 
   beforeEach(() => {
     wrapper = mount(TeamsModal, {
-      stubs: ['modal', 'ValidationObserver', 'perfect-scrollbar'],
+      stubs: ['modal', 'ValidationObserver', 'ValidationProvider', 'perfect-scrollbar'],
       mocks: {
         $store: {
           dispatch: () => new Promise((rs, rj) => rs({status: 200}))

@@ -4,6 +4,8 @@
     :subtitle="$prismic.asText(document.subtitle)"
     :coverImageUrl="document.featured_image.url"
     :coverImageAltText="document.featured_image.alt"
+    :coverImageWidth="document.featured_image.dimensions.width"
+    :coverImageHeight="document.featured_image.dimensions.height"
   >
     <template v-slot:afterTitle>
       <div class="blog-post__post-info">
@@ -15,6 +17,7 @@
       </div>
     </template>
   </common-header>
+  
 </template>
 
 <script>

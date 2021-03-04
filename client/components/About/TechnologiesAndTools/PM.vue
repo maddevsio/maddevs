@@ -35,88 +35,23 @@
       <span>Slack</span>
     </div>
     <div class="tech_item pm pm-meet">
-      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0)">
-        <path d="M12.9728 0C6.81669 0 1.82617 4.88406 1.82617 10.9088C1.82617 16.9336 6.81669 21.8176 12.9728 21.8176L12.9965 25.9246C18.7238 22.6618 24.1707 18.3068 24.1707 10.9088C24.1707 4.88406 19.1288 0 12.9728 0Z" fill="url(#paint0_linear)"/>
-        <g filter="url(#filter0_i)">
-        <path d="M12.9728 0C6.81669 0 1.82617 4.88406 1.82617 10.9088C1.82617 16.9336 6.81669 21.8176 12.9728 21.8176L12.9965 25.9246C18.7238 22.6618 24.1707 18.3068 24.1707 10.9088C24.1707 4.88406 19.1288 0 12.9728 0Z" fill="black"/>
-        </g>
-        <g filter="url(#filter1_i)">
-        <path d="M12.9728 0C6.81669 0 1.82617 4.88406 1.82617 10.9088C1.82617 16.9336 6.81669 21.8176 12.9728 21.8176L12.9965 25.9246C18.7238 22.6618 24.1707 18.3068 24.1707 10.9088C24.1707 4.88406 19.1288 0 12.9728 0Z" fill="black"/>
-        </g>
-        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="24" height="26">
-        <path d="M12.9728 0C6.81669 0 1.82617 4.88406 1.82617 10.9088C1.82617 16.9336 6.81669 21.8176 12.9728 21.8176L12.9965 25.9246C18.7238 22.6618 24.1707 18.3068 24.1707 10.9088C24.1707 4.88406 19.1288 0 12.9728 0Z" fill="#3B8B7F"/>
-        </mask>
-        <g mask="url(#mask0)">
-        <path d="M12.9728 0C6.81669 0 1.82617 4.88406 1.82617 10.9088C1.82617 16.9336 6.81669 21.8176 12.9728 21.8176L12.9965 25.9246C18.7238 22.6618 24.1707 18.3068 24.1707 10.9088C24.1707 4.88406 19.1288 0 12.9728 0Z" fill="#3B8B7F"/>
-        <path d="M6.91699 14.7561L16.4358 24.6242L29.054 15.374L19.9353 7.1521L17.9855 10.5025L6.91699 14.7561Z" fill="url(#paint1_linear)" fill-opacity="0.21"/>
-        </g>
-        <g filter="url(#filter2_d)">
-        <path d="M6.67871 11.2146V14.2119C6.67871 15.0032 7.32434 15.6506 8.11343 15.6506H15.5353C16.3244 15.6506 16.97 15.0032 16.97 14.2119V12.319L19.9084 15.2656V11.2146H6.67871Z" fill="black"/>
-        </g>
-        <path d="M6.67871 11.2146V14.2119C6.67871 15.0032 7.32434 15.6506 8.11343 15.6506H15.5353C16.3244 15.6506 16.97 15.0032 16.97 14.2119V12.319L19.9084 15.2656V11.2146H6.67871Z" fill="#F6F6F6"/>
-        <path d="M19.9084 11.2146V7.15208L16.97 10.0924V8.21728C16.97 7.42596 16.3243 6.77856 15.5353 6.77856H8.11343C7.32434 6.77856 6.67871 7.42596 6.67871 8.21728V11.2146H19.9084Z" fill="#E2E2E2"/>
+        <path d="M19.9574 0C10.4865 0 2.80881 7.51393 2.80881 16.7828C2.80881 26.0517 10.4865 33.5656 19.9574 33.5656L19.9939 39.8839C28.8051 34.8643 37.1851 28.1642 37.1851 16.7828C37.1851 7.51393 29.4283 0 19.9574 0Z" fill="#3B8B7F"/>
+        <path d="M30.6272 11.0031L30.6271 23.4854L26.1065 18.9522V21.8644C26.1065 23.0817 25.1132 24.0778 23.8992 24.0778H12.481C11.267 24.0778 10.2737 23.0817 10.2737 21.8644L10.2738 12.6418C10.2738 11.4244 11.2671 10.4284 12.4811 10.4284H23.8993C25.1132 10.4284 26.1065 11.4244 26.1065 12.6418V15.5267L30.6272 11.0031Z" fill="white"/>
         </g>
         <defs>
-        <filter id="filter0_i" x="1.82617" y="0" width="22.3446" height="27.9246" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-        <feOffset dy="2"/>
-        <feGaussianBlur stdDeviation="2"/>
-        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.2 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
-        </filter>
-        <filter id="filter1_i" x="1.82617" y="-2" width="22.3446" height="27.9246" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-        <feOffset dy="-2"/>
-        <feGaussianBlur stdDeviation="2"/>
-        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-        <feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
-        </filter>
-        <filter id="filter2_d" x="3.67871" y="10.2146" width="21.2297" height="12.436" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-        <feOffset dx="1" dy="3"/>
-        <feGaussianBlur stdDeviation="2"/>
-        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-        </filter>
-        <linearGradient id="paint0_linear" x1="7.65142" y1="17.6397" x2="20.1801" y2="6.86675" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#058D80"/>
-        <stop offset="1" stop-color="#058D7F"/>
-        </linearGradient>
-        <linearGradient id="paint1_linear" x1="13.5688" y1="11.9224" x2="22.1882" y2="23.9892" gradientUnits="userSpaceOnUse">
-        <stop/>
-        <stop offset="1" stop-color="#D8D8D8" stop-opacity="0"/>
-        </linearGradient>
         <clipPath id="clip0">
-        <rect width="22.3486" height="26" fill="white" transform="translate(1.82617)"/>
+        <rect width="34.3824" height="40" fill="white" transform="translate(2.80881)"/>
         </clipPath>
         </defs>
       </svg>
       <span>Meet</span>
     </div>
     <div class="tech_item pm pm-zoom">
-      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12.9999 25.1648C19.7184 25.1648 25.1648 19.7184 25.1648 12.9999C25.1648 6.28138 19.7184 0.834961 12.9999 0.834961C6.28138 0.834961 0.834961 6.28138 0.834961 12.9999C0.834961 19.7184 6.28138 25.1648 12.9999 25.1648Z" fill="url(#paint0_linear)" stroke="url(#paint1_linear)" stroke-width="1.5"/>
-        <path d="M5.63672 9.54209C5.63672 9.1831 5.92773 8.89209 6.28672 8.89209H13.6241C15.06 8.89209 16.2241 10.0561 16.2241 11.4921V16.5342C16.2241 16.8932 15.9331 17.1842 15.5741 17.1842H8.23672C6.80078 17.1842 5.63672 16.0201 5.63672 14.5842V9.54209Z" fill="#F5F7F9"/>
-        <path d="M16.6439 14.6073V11.3192L20.002 9.16943C20.1102 9.10019 20.2521 9.17786 20.2521 9.30629V16.8084C20.2521 16.9396 20.1045 17.0167 19.9968 16.9417L16.6439 14.6073Z" fill="#F5F7F9"/>
-        <defs>
-        <linearGradient id="paint0_linear" x1="12.9999" y1="1.58496" x2="12.9999" y2="24.4148" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#58BEFB"/>
-        <stop offset="1" stop-color="#2477FB"/>
-        </linearGradient>
-        <linearGradient id="paint1_linear" x1="12.9999" y1="1.58496" x2="12.9999" y2="24.4148" gradientUnits="userSpaceOnUse">
-        <stop stop-color="white"/>
-        <stop offset="1" stop-color="#F4F4F4"/>
-        </linearGradient>
-        </defs>
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 37.5613C29.6989 37.5613 37.5614 29.6988 37.5614 19.9999C37.5614 10.301 29.6989 2.43848 20 2.43848C10.3011 2.43848 2.4386 10.301 2.4386 19.9999C2.4386 29.6988 10.3011 37.5613 20 37.5613ZM9.67209 13.68C9.1198 13.68 8.67209 14.1277 8.67209 14.68V22.4371C8.67209 24.6462 10.463 26.4371 12.6721 26.4371H23.9604C24.5126 26.4371 24.9604 25.9894 24.9604 25.4371V17.68C24.9604 15.4709 23.1695 13.68 20.9604 13.68H9.67209ZM25.6062 17.414V22.4726L30.7645 26.064C30.9303 26.1794 31.1574 26.0608 31.1574 25.8589V14.3172C31.1574 14.1196 30.939 14.0001 30.7726 14.1067L25.6062 17.414Z" fill="#338CFB"/>
       </svg>
       <span>Zoom</span>
     </div>

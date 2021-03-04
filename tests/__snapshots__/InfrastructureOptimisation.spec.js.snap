@@ -74,6 +74,7 @@ exports[`Infrastructure optimisation renders correctly 1`] = `
          
         <button
           class="ui-button-modal-trigger infrastructure-optimisation__button"
+          modalwindowname="infrastructure-modal"
         >
           
   Get an infrastructure audit

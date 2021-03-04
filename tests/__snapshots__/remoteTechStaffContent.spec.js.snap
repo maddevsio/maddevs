@@ -36,6 +36,7 @@ exports[`Remote tech staff content renders correctly 1`] = `
    
   <button
     class="ui-button-modal-trigger remoteTechStaffContent__ui-button-modal-trigger"
+    modalwindowname="Modal window name"
   >
     
   Button inner text
