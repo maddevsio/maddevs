@@ -4,7 +4,14 @@
     <h1 class="blog-post__blog-title title">{{ title }}</h1>
     <p class="blog-post__blog-sub-title">{{ subtitle }}</p>
     <slot name="afterTitle"></slot>
-    <img :src="coverImageUrl" class="blog-post__introduction-image" v-if="coverImageUrl" :alt="coverImageAltText">
+    <img
+      :src="coverImageUrl"
+      class="blog-post__introduction-image"
+      v-if="coverImageUrl"
+      :alt="coverImageAltText"
+      :width="coverImageWidth"
+      :height="coverImageHeight"
+    >
   </div>
 </template>
 
@@ -28,6 +35,14 @@ export default {
     coverImageAltText: {
       type: String,
       default: ''
+    },
+    coverImageWidth: {
+      type: Number,
+      default: 982
+    },
+    coverImageHeight: {
+      type: Number,
+      default: 533
     }
   }
 };
