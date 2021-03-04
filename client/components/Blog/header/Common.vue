@@ -6,7 +6,8 @@
     <slot name="afterTitle"></slot>
     <img
       :src="coverImageUrl"
-      :class="[('blog-post__introduction-image'), ['jpeg', 'jpg'].includes(coverImageExtension) && 'blog-post__introduction-image--with-background']"
+      class='blog-post__introduction-image'
+      :class="getImageClass"
       v-if="coverImageUrl"
       :alt="coverImageAltText"
       :width="coverImageWidth"
@@ -16,7 +17,7 @@
 </template>
 
 <script>
-import getExtension from '@/helpers/getExtension';
+import extractFileExtension from '@/helpers/extractFileExtension';
 
 export default {
   name: 'Common',
@@ -48,8 +49,10 @@ export default {
     }
   },
   computed: {
-    coverImageExtension: function() {
-      return getExtension(this.coverImageUrl);
+    getImageClass: function() {
+      const allowedExtensions = ['jpeg', 'jpg'];
+      const extension = extractFileExtension(this.coverImageUrl);
+      return allowedExtensions.includes(extension) ? 'blog-post__introduction-image--with-background' : '';
     }
   }
 };
