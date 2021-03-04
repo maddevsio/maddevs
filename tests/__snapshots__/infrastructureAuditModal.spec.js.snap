@@ -204,7 +204,7 @@ exports[`Infrastructure Audit Modal renders correctly 1`] = `
         </div>
          
         <a
-          href="/privacy"
+          href="/privacy/"
           target="_blank"
         >
           Privacy Policy

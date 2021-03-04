@@ -42,7 +42,7 @@ exports[`Get your trusted it partner modal renders correctly 1`] = `
         </div>
          
         <a
-          href="/privacy"
+          href="/privacy/"
           target="_blank"
         >
           Privacy Policy
