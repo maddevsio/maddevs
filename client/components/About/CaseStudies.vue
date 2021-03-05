@@ -22,34 +22,16 @@
         />
       </div>
     </div>
-    <div class="projects-mobile-slider">
-      <swiper class="swiper" :options="swiperOption">
-        <swiper-slide v-for="(project, i) in projects" :key="i">
-          <SingleProject :project="project" />
-        </swiper-slide>
-      </swiper>
-      <div class="swiper-pagination swiper-pagination--white" slot="pagination"/>
-    </div>
   </section>
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
-import 'swiper/css/swiper.css';
 import SingleProject from '@/components/About/SingleProject';
 
 export default {
   name: 'CaseStudies',
   components: {
-    Swiper,
-    SwiperSlide,
     SingleProject
-  },
-  beforeMount() {
-    // Set new params for slider
-    if (window.screen.width <= 480) {
-      this.swiperOption.slidesPerView = 1.05;
-    }
   },
   mounted() {
     if ($nuxt.$route.name) {
@@ -58,12 +40,6 @@ export default {
   },
   data() {
     return {
-      swiperOption: {
-        pagination: {
-          el: '.swiper-pagination--white'
-        },
-        slidesPerView: 1.20
-      },
       currentPageName: '',
       projects: [
         {
@@ -299,9 +275,5 @@ export default {
       right: 30px;
     }
   }
-}
-
-.projects-mobile-slider {
-  display: none;
 }
 </style>
