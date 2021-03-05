@@ -117,12 +117,18 @@ exports[`ItСonsulting component renders correctly 1`] = `
      
     <button
       class="ui-button-modal-trigger it-consulting__button ui-button-modal-trigger--black"
-      modalwindowname="get-expert-advice"
     >
       
   Get expert advice
 
     </button>
   </div>
+   
+  <transition-stub
+    mode="out-in"
+    name="main-fade"
+  >
+    <!---->
+  </transition-stub>
 </section>
 `;

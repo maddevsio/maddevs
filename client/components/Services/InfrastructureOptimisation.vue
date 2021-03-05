@@ -20,24 +20,32 @@
           </div>
           <UIButtonModalTrigger 
             :buttonInnerText="buttonInnerText"
-            :modalWindowName="modalWindowName"
+            @onClick="$refs.infrastructureAuditModal.show()"
             class="infrastructure-optimisation__button"
           />
         </div>
       </div>
     </div>
+
+    <Modal ref="infrastructureAuditModal">
+      <infrastructureAuditModal />
+    </Modal>
   </section>
 </template>
 
 <script>
 import InfrastructureContent from '@/components/Services/InfrastructureContent';
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
+import infrastructureAuditModal from '@/components/Modals/infrastructure-audit-modal';
+import Modal from '@/containers/Modal';
 
 export default {
   name: 'InfrastructureOptimisation',
   components: {
     InfrastructureContent,
-    UIButtonModalTrigger
+    UIButtonModalTrigger,
+    infrastructureAuditModal,
+    Modal
   },
   data() {
     return {
@@ -53,8 +61,7 @@ export default {
         paragraph: 'Our fire brigade can help you optimise resource consumption like we\'ve done for 75% of our customers. We’ll reconfigure and disable every option or service that is not necessary.',
         className: 'second-item'
       },
-      buttonInnerText: 'Get an infrastructure audit',
-      modalWindowName: 'infrastructure-modal'
+      buttonInnerText: 'Get an infrastructure audit'
     };
   }
 };

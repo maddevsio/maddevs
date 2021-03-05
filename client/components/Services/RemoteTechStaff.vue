@@ -8,7 +8,7 @@
           :subTitle="teams.subTitle" 
           :paragraph="teams.paragraph"
           :buttonInnerText="teams.buttonInnerText"
-          :modalWindowName="teams.modalWindowName"
+          @onClick="$refs.teamsModal.show()"
           :activeByDefault="teams.activeByDefault"
         />
         <RemoteTechStaffContent 
@@ -16,21 +16,34 @@
           :subTitle="individuals.subTitle" 
           :paragraph="individuals.paragraph"
           :buttonInnerText="individuals.buttonInnerText"
-          :modalWindowName="individuals.modalWindowName"
+          @onClick="$refs.individualsModal.show()"
           :activeByDefault="individuals.activeByDefault"
         />
       </div>
     </div>
+
+    <Modal ref="teamsModal">
+      <teamsModal />
+    </Modal>
+    <Modal ref="individualsModal">
+      <individualsModal />
+    </Modal>
   </section>
 </template>
 
 <script>
 import RemoteTechStaffContent from '@/components/Services/RemoteTechStaffContent';
+import teamsModal from '@/components/Modals/teams-modal';
+import individualsModal from '@/components/Modals/individuals-modal';
+import Modal from '@/containers/Modal';
 
 export default {
   name: 'RemoteTechStaff',
   components: {
-    RemoteTechStaffContent
+    RemoteTechStaffContent,
+    teamsModal,
+    individualsModal,
+    Modal
   },
   data() {
     return {
