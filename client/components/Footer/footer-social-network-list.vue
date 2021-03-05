@@ -34,7 +34,7 @@ export default {
         },
         {
           className: 'social-network-medium',
-          link: 'https://blog.maddevs.io'
+          link: 'https://medium.com/maddevs-io'
         },
         {
           className: 'social-network-behance',

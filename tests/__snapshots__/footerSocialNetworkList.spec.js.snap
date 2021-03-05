@@ -54,7 +54,7 @@ exports[`footer social network list renders correctly 1`] = `
   >
     <a
       class="footerSocialNetworkList__social-network-link footerSocialNetworkList__social-network-medium"
-      href="https://blog.maddevs.io"
+      href="https://medium.com/maddevs-io"
       target="_blank"
     />
   </li>
