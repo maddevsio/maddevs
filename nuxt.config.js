@@ -87,7 +87,7 @@ module.exports = {
       };
 
       if (to.hash) {
-        let el = await findEl(to.hash);
+        const el = await findEl(to.hash);
         if (Boolean(el)) return window.scrollTo(0, el.offsetTop);
       }
 
