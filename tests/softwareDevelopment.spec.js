@@ -127,7 +127,6 @@ describe('SoftwareDevelopment', () => {
         }
       ]
     },
-    modalWindowName: 'get-your-trusted-it-partner',
     buttonInnerText: 'Get your trusted IT partner'
   };
 

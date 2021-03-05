@@ -110,11 +110,6 @@ describe('CaseStudies component', () => {
     expect(wrapper.vm.$data.projects).toStrictEqual(projects);
   });
 
-  test('should render mobile slider', () => {
-    let mobileSlider = wrapper.findAll('.projects-mobile-slider');
-    expect(mobileSlider).toHaveLength(1);
-  });
-
   test('should render 4 single-projects in the project section', () => {
     let singleProjects = wrapper.findAll('.projects .single-project');
     expect(singleProjects).toHaveLength(4);
@@ -122,11 +117,11 @@ describe('CaseStudies component', () => {
 
   test('should have 16 projects including projects in the slider', () => {
     let sliderSingleProjects = wrapper.findAll('.single-project');
-    expect(sliderSingleProjects).toHaveLength(8);
+    expect(sliderSingleProjects).toHaveLength(4);
   });
 
   test('check that the specific images exists', () => {
     const img = wrapper.findAll('.single-project__logo-bg');
-    expect(img.length).toBe(8);
+    expect(img.length).toBe(4);
   });
 });

@@ -25,22 +25,30 @@
       <UIButtonModalTrigger 
         :buttonInnerText="buttonInnerText"
         :isBlack="true"
-        :modalWindowName="modalWindowName"
+        @onClick="$refs.getExpertAdviceModal.show()"
         class="it-consulting__button"
       />
     </div>
+
+    <Modal ref="getExpertAdviceModal">
+      <getExpertAdviceModal />
+    </Modal>
   </section>
 </template>
 
 <script>
 import ItConsultingContent from '@/components/Services/ItConsultingContent';
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
+import getExpertAdviceModal from '@/components/Modals/get-expert-advice-modal';
+import Modal from '@/containers/Modal';
 
 export default {
   name: 'ItConsulting',
   components: {
     ItConsultingContent,
-    UIButtonModalTrigger
+    UIButtonModalTrigger,
+    getExpertAdviceModal,
+    Modal
   },
   data() {
     return {
@@ -62,7 +70,6 @@ export default {
         paragraph: 'Hire good people and get rid of underperformers. Easier said than done, right? Get assessments for the skills and seniority level of your staff. Our positively mad engineers and PMs know how to do this.',
         className: 'third-item'
       },
-      modalWindowName: 'get-expert-advice',
       buttonInnerText: 'Get expert advice'
     };
   }

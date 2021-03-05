@@ -12,8 +12,7 @@ describe('Remote tech staff content', () => {
         title: 'Title',
         subTitle: 'Sub title',
         paragraph: 'Paragraph',
-        buttonInnerText: 'Button inner text',
-        modalWindowName: 'Modal window name'
+        buttonInnerText: 'Button inner text'
       }
     });
   });
@@ -33,6 +32,5 @@ describe('Remote tech staff content', () => {
     expect(wrapper.props().subTitle).toBe('Sub title');
     expect(wrapper.props().paragraph).toBe('Paragraph');
     expect(wrapper.props().buttonInnerText).toBe('Button inner text');
-    expect(wrapper.props().modalWindowName).toBe('Modal window name');
   });
 });

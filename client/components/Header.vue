@@ -15,10 +15,37 @@
               <router-link @click.native="goToTopPage" to="/careers/" class="header__navigation-link">Careers</router-link>
               <router-link @click.native="goToTopPage" to="/blog/" class="header__navigation-link header__navigation-link-blog">Blog</router-link>
             </nav>
+            <!-- Burget btn -->
+            <div class="header__burger" @click="isActiveMobileMenu = !isActiveMobileMenu">
+              <svg v-if="isActiveMobileMenu" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.807613 19.1924L19.1924 0.807623M19.1914 19.1924L0.806641 0.807617" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <svg v-else width="30" height="10" viewBox="0 0 30 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H30V1H0V0Z" fill="#F5F7F9"/>
+                <path d="M0 9H30V10H0V9Z" fill="#F5F7F9"/>
+              </svg>
+            </div>
+            <!-- END Burget btn -->
           </div>
           <div class="header__right-content col-xl-6 col-lg-5">
             <div class="header__phone-wrapper">
-              <span class="header__phone-flag" />
+
+              <!-- Flag uk -->
+              <svg class="header__phone-flag" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M0 0H18V14H0V0Z" fill="#41479B"/>
+                  <path d="M18 12.1771L11.3437 7.00001L18 1.82292V0H15.6563L9 5.17709L2.34375 0H0V1.82292L6.65625 7.00001L0 12.1771V14H2.34378L9 8.82293L15.6562 14H18V12.1771Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.90273e-05 0L0 8.16177e-05V0.729299L8.06248 7.00013L0 13.271V14H0.937653L8.99998 7.72929L17.0623 14H18.0001L18.3375 13.5335L9.93748 7.00013L18.3375 0.46678L17.9999 0H17.0626L8.99998 6.27096L0.93733 0H5.90273e-05Z" fill="#DC251C"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 4.66667V0H11.25V4.66667H18V9.33333H11.25V14H6.75V9.33333H0V4.66667H6.75Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.875 5.83333V0H10.125V5.83333H18V8.16667H10.125V14H7.875V8.16667H0V5.83333H7.875Z" fill="#DC251C"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="18" height="14" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
               <a class="header__header-phone" href="tel:+442039848555">+44 20 3984 8555</a>
             </div>
             <UIButtonModalTrigger
@@ -30,10 +57,18 @@
         </div>
       </div>
     </header>
+
+    <!-- Mobile header -->
+    <mobileHeader
+      v-if="isActiveMobileMenu"
+      @changed-page="isActiveMobileMenu = false"
+      @open-modal="$refs.contactMeModal.show()"
+    />
+    <!-- END Mobile header -->
+
     <Modal ref="contactMeModal">
       <contactMeModal />
     </Modal>
-    <mobileHeader/>
   </div>
 </template>
 
@@ -64,7 +99,8 @@ export default {
       caseHeader: null,
       logoText: null,
       caseFirstSection: null,
-      caseRoot: null
+      caseRoot: null,
+      isActiveMobileMenu: false
     };
   },
   created() {
@@ -150,15 +186,22 @@ export default {
 
 <style lang="scss" scoped>
   @import '../assets/styles/vars';
-  @import '../assets/styles/_flagsIcons';
 
   .header {
     width: 100%;
     height: 40px;
     padding: 11px 0;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     background-color: $bgcolor--black;
+
+    &__burger {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 25px;
+      padding: 10px;
+    }
 
     &__header-logo {
       width: 34px;
@@ -258,11 +301,6 @@ export default {
       display: block;
       width: 18px;
       height: 14px;
-      @include flag-uk;
-    }
-
-    @media screen and (max-width: 991px) {
-      display: none;
     }
   }
 
@@ -302,4 +340,60 @@ export default {
     z-index: 999;
   }
 
+  @media screen and (max-width: 991px) {
+    .header {
+      max-height: 26px;
+
+      &__burger {
+        display: block;
+      }
+
+      &__left-nav_bar {
+        margin-top: 0;
+      }
+
+      &__header-routes_links {
+        display: none;
+      }
+
+      &__right-content {
+        display: none;
+      }
+
+      &__header-logo {
+        width: 28px;
+        height: 49px;
+        margin-top: 20px;
+        margin-left: -55px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .header {
+      &__burger {
+        right: 10px;
+      }
+
+      &__header-logo {
+        margin-left: -40px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .header {
+      &__header-logo {
+        margin-left: -25px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+    .header {
+      &__header-logo {
+        margin-left: 0;
+      }
+    }
+  }
 </style>

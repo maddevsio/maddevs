@@ -35,9 +35,7 @@ exports[`Footer contacts renders correctly 1`] = `
         >
           <svg
             fill="none"
-            height="14"
             viewBox="0 0 18 14"
-            width="18"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g
@@ -119,9 +117,7 @@ exports[`Footer contacts renders correctly 1`] = `
         >
           <svg
             fill="none"
-            height="42"
             viewBox="0 0 42 42"
-            width="42"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -148,9 +144,7 @@ exports[`Footer contacts renders correctly 1`] = `
         >
           <svg
             fill="none"
-            height="42"
             viewBox="0 0 42 42"
-            width="42"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -184,9 +178,7 @@ exports[`Footer contacts renders correctly 1`] = `
         >
           <svg
             fill="none"
-            height="42"
             viewBox="0 0 42 42"
-            width="42"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -211,9 +203,7 @@ exports[`Footer contacts renders correctly 1`] = `
         >
           <svg
             fill="none"
-            height="42"
             viewBox="0 0 42 42"
-            width="42"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -252,9 +242,7 @@ exports[`Footer contacts renders correctly 1`] = `
           >
             <svg
               fill="none"
-              height="42"
               viewBox="0 0 42 42"
-              width="42"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -275,9 +263,7 @@ exports[`Footer contacts renders correctly 1`] = `
           >
             <svg
               fill="none"
-              height="42"
               viewBox="0 0 42 42"
-              width="42"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -298,9 +284,7 @@ exports[`Footer contacts renders correctly 1`] = `
           >
             <svg
               fill="none"
-              height="42"
               viewBox="0 0 42 42"
-              width="42"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -321,9 +305,7 @@ exports[`Footer contacts renders correctly 1`] = `
           >
             <svg
               fill="none"
-              height="42"
               viewBox="0 0 42 42"
-              width="42"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -344,9 +326,7 @@ exports[`Footer contacts renders correctly 1`] = `
           >
             <svg
               fill="none"
-              height="42"
               viewBox="0 0 42 42"
-              width="42"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -372,9 +352,7 @@ exports[`Footer contacts renders correctly 1`] = `
           >
             <svg
               fill="none"
-              height="42"
               viewBox="0 0 42 42"
-              width="42"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -395,9 +373,7 @@ exports[`Footer contacts renders correctly 1`] = `
           >
             <svg
               fill="none"
-              height="42"
               viewBox="0 0 42 42"
-              width="42"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -418,9 +394,7 @@ exports[`Footer contacts renders correctly 1`] = `
           >
             <svg
               fill="none"
-              height="42"
               viewBox="0 0 42 42"
-              width="42"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path

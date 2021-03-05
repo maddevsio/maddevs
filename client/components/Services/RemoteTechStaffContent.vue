@@ -15,7 +15,7 @@
     </div>
     <UIButtonModalTrigger 
       :buttonInnerText="buttonInnerText"
-      :modalWindowName="modalWindowName" 
+      @onClick="$emit('onClick')" 
       class="remoteTechStaffContent__ui-button-modal-trigger"
     />
   </div>
@@ -51,10 +51,6 @@ export default {
     buttonInnerText: {
       type: String,
       default: 'Button Inner Text'
-    },
-    modalWindowName: {
-      type: String,
-      default: 'Modal Window Name'
     },
     activeByDefault: {
       type: Boolean,

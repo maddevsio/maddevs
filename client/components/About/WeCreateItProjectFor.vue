@@ -27,7 +27,7 @@
         </div>
         <ul class="weCreateItProject__flags-list">
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="22" fill="white"/>
               <rect width="18" height="14" fill="#41479B"/>
               <rect x="18" width="14" height="2" fill="#DC251C"/>
@@ -57,7 +57,7 @@
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="24" fill="#41479B"/>
               <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="16">
               <rect width="20" height="16" fill="#C4C4C4"/>
@@ -79,20 +79,20 @@
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="24" fill="#E31D1C"/>
               <path d="M16.5 4.125L18.3522 9.82561H24.3462L19.497 13.3488L21.3492 19.0494L16.5 15.5262L11.6508 19.0494L13.503 13.3488L8.65378 9.82561H14.6478L16.5 4.125Z" fill="#FFD018"/>
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="24" fill="white"/>
               <rect width="10" height="24" fill="#41479B"/>
               <rect x="22" width="10" height="24" fill="#E51D1D"/>
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
               <path d="M0 0H32V24H0V0Z" fill="#41479B"/>
               <path d="M32 20.875L20.1667 12L32 3.12501V0H27.8333L16 8.87502L4.16666 0H0V3.125L11.8333 12L0 20.875V24H4.16672L16 15.125L27.8333 24H32V20.875Z" fill="white"/>
@@ -108,27 +108,27 @@
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="12" fill="#E31D1C"/>
               <rect y="12" width="32" height="12" fill="white"/>
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="24" fill="#272727"/>
               <rect y="8" width="32" height="8" fill="#E31D1C"/>
               <rect y="16" width="32" height="8" fill="#FFD018"/>
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect y="8" width="32" height="8" fill="white"/>
               <rect y="16" width="32" height="8" fill="#DC251C"/>
               <rect width="32" height="8" fill="#DC251C"/>
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
               <rect width="33" height="24.75" fill="#DC251C"/>
               <rect x="14.4375" y="4.125" width="4.125" height="16.5" fill="white"/>
@@ -142,7 +142,7 @@
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="24" fill="white"/>
               <rect x="8" width="24" height="8" transform="rotate(90 8 0)" fill="#E31D1C"/>
               <rect x="32" width="24" height="8" transform="rotate(90 32 0)" fill="#E31D1C"/>
@@ -150,21 +150,21 @@
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect y="8" width="31" height="8" fill="white"/>
               <rect width="31" height="10" fill="#A71B14"/>
               <rect y="14" width="31" height="10" fill="#A71B14"/>
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="24" fill="#65CCE8"/>
               <circle cx="18.2087" cy="8.62516" r="4.79167" fill="#FFD018"/>
               <rect x="1.91699" y="1.9165" width="1.91667" height="19.1667" fill="#FFD018"/>
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
               <rect width="32" height="24" fill="#3273D3"/>
               <rect x="10.417" width="4.16667" height="25" fill="#FFD018"/>
@@ -178,7 +178,7 @@
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
               <rect width="32" height="24" fill="white"/>
               <rect x="10.417" width="4.16667" height="25" fill="#41479B"/>
@@ -192,7 +192,7 @@
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect y="8" width="32" height="8" fill="white"/>
               <rect width="32" height="8" fill="#2B9F5A"/>
               <rect y="16" width="32" height="8" fill="#272727"/>
@@ -200,7 +200,7 @@
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
               <rect width="32" height="24" fill="#B82936"/>
               <rect x="10.417" width="4.16667" height="25" fill="white"/>
@@ -214,13 +214,13 @@
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="24" fill="white"/>
               <circle cx="16" cy="12" r="7" fill="#DC251C"/>
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
               <rect width="32" height="24" fill="#DC251C"/>
               <rect x="8.33301" width="8.33333" height="25" fill="white"/>
@@ -236,7 +236,7 @@
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
               <rect width="14.5833" height="25" fill="#2B9F5A"/>
               <rect x="14.583" width="18.75" height="25" fill="#DC251C"/>
@@ -252,13 +252,13 @@
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="24" fill="#671C3A"/>
               <rect width="10" height="24" fill="white"/>
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000195484 19.1151V4.89355L10.5886 12.0043L-0.00488281 19.1151H-0.000195484Z" fill="black"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M7.22266 24.004L19.1099 16.0073H35.9939V23.9993H7.22266V24.004Z" fill="#0000CC"/>
@@ -275,7 +275,7 @@
             </svg>
           </li>
           <li class="weCreateItProject__flag-item">
-            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect y="8" width="32" height="8" fill="white"/>
               <rect y="16" width="32" height="8" fill="#41479B"/>
               <rect width="32" height="8" fill="#DC251C"/>

@@ -333,12 +333,18 @@ exports[`SoftwareDevelopment renders correctly 1`] = `
      
     <button
       class="ui-button-modal-trigger software-development__button ui-button-modal-trigger--grey"
-      modalwindowname="get-your-trusted-it-partner"
     >
       
   Get your trusted IT partner
 
     </button>
   </div>
+   
+  <transition-stub
+    mode="out-in"
+    name="main-fade"
+  >
+    <!---->
+  </transition-stub>
 </section>
 `;
