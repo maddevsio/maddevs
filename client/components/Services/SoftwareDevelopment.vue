@@ -27,23 +27,31 @@
       </div>
       <UIButtonModalTrigger 
         :buttonInnerText="buttonInnerText"
-        :modalWindowName="modalWindowName"
         :isGrey="true"
+        @onClick="$refs.getYourTrustedItPartnerModal.show()"
         class="software-development__button"
       />
     </div>
+
+    <Modal ref="getYourTrustedItPartnerModal">
+      <getYourTrustedItPartnerModal />
+    </Modal>
   </section>
 </template>
 
 <script>
 import SoftwareDevelopmentContent from '@/components/Services/SoftwareDevelopmentContent';
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
+import getYourTrustedItPartnerModal from '@/components/Modals/get-your-trusted-it-partner-modal';
+import Modal from '@/containers/Modal';
 
 export default {
   name: 'SoftwareDevelopment',
   components: {
     SoftwareDevelopmentContent,
-    UIButtonModalTrigger
+    UIButtonModalTrigger,
+    getYourTrustedItPartnerModal,
+    Modal
   },
   data() {
     return {
@@ -167,7 +175,6 @@ export default {
           }
         ]
       },
-      modalWindowName: 'get-your-trusted-it-partner',
       buttonInnerText: 'Get your trusted IT partner'
     };
   }

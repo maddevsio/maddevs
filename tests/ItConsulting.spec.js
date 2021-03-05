@@ -22,7 +22,6 @@ describe('ItСonsulting component', () => {
       paragraph: 'Hire good people and get rid of underperformers. Easier said than done, right? Get assessments for the skills and seniority level of your staff. Our positively mad engineers and PMs know how to do this.',
       className: 'third-item'
     },
-    modalWindowName: 'get-expert-advice',
     buttonInnerText: 'Get expert advice'
   };
 

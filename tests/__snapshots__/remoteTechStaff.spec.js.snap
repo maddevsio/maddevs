@@ -56,7 +56,6 @@ exports[`Remote tech staff renders correctly 1`] = `
          
         <button
           class="ui-button-modal-trigger remoteTechStaffContent__ui-button-modal-trigger"
-          modalwindowname="teams-modal"
         >
           
   Get a team of ultra-fast coders
@@ -99,7 +98,6 @@ exports[`Remote tech staff renders correctly 1`] = `
          
         <button
           class="ui-button-modal-trigger remoteTechStaffContent__ui-button-modal-trigger"
-          modalwindowname="individuals-modal"
         >
           
   Get individual proactive rockets
@@ -108,5 +106,19 @@ exports[`Remote tech staff renders correctly 1`] = `
       </div>
     </div>
   </div>
+   
+  <transition-stub
+    mode="out-in"
+    name="main-fade"
+  >
+    <!---->
+  </transition-stub>
+   
+  <transition-stub
+    mode="out-in"
+    name="main-fade"
+  >
+    <!---->
+  </transition-stub>
 </section>
 `;
