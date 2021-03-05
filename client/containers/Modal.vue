@@ -11,10 +11,6 @@
       <transition name="fade">
         <div
           v-if="contentLoaded"
-          :style="{
-            'max-width': maxWidth,
-            width: maxWidth
-          }"
           class="modal_container"
         >
           <div class="modal_close" @click="close">
@@ -36,10 +32,6 @@ export default {
   name: 'Modal',
   components: { simplebar },
   props: {
-    maxWidth: {
-      type: String,
-      default: '530px'
-    },
     appendToBody: {
       type: Boolean,
       default: false
@@ -74,24 +66,24 @@ export default {
     close() {
       setTimeout(() => {
         this.isVisible = false;
+        this.enableScrollOnBody();
       }, 200);
       setTimeout(() => {
         this.contentLoaded = false;
       }, 50);
       setTimeout(() => {
         this.isOverlay = false;
-        this.enableScrollOnBody();
         this.$emit('on-close');
       }, 100);
     },
     show() {
+      this.disableScrollOnBody();
       this.isVisible = true;
       setTimeout(() => {
         this.contentLoaded = true;
       }, 50);
       setTimeout(() => {
         this.isOverlay = true;
-        this.disableScrollOnBody();
         this.$emit('on-show');
       }, 100);
     },
@@ -163,6 +155,8 @@ export default {
   }
 
   &_container {
+    width: 600px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -236,6 +230,27 @@ export default {
   .modal {
     .modal_close {
       margin-right: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .modal {
+    padding: 0;
+
+    &_container {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+
+    &_content {
+      padding: 0 10px;
+    }
+
+    /deep/ .simplebar-vertical {
+      right: 0;
     }
   }
 }

@@ -40,11 +40,15 @@ export default {
   },
   mounted() {
     this.mobileMenuScrollBar = document.getElementsByClassName('mobile-header__scrollbar')[0];
-    this.mobileMenuScrollBar.addEventListener('scroll', this.handleMobileMenuScroll);
+    if (this.mobileMenuScrollBar) {
+      this.mobileMenuScrollBar.addEventListener('scroll', this.handleMobileMenuScroll);
+    }
     window.addEventListener('scroll', this.handleWindowScroll);
   },
   destroyed() {
-    this.mobileMenuScrollBar.removeEventListener('scroll', this.handleMobileMenuScroll);
+    if (this.mobileMenuScrollBar) {
+      this.mobileMenuScrollBar.removeEventListener('scroll', this.handleMobileMenuScroll);
+    }
     window.removeEventListener('scroll', this.handleWindowScroll);
   },
   methods: {
