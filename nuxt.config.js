@@ -66,6 +66,34 @@ module.exports = {
     },
     fallback: '404.html'
   },
+  /*
+  ** Router configuration
+  */
+  router: {
+    /**
+    ** Custom scroll behavior - https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-router#scrollbehavior
+    ** https://zachcardoza.com/post/nuxtjs-smooth-scrolling-with-hash-links/ - solution which fixes the problem with incorrect scroll position when switching between routes
+    */
+    scrollBehavior: async (to, from, savedPosition) => {
+      if (savedPosition) return savedPosition;
+
+      /* eslint-disable no-param-reassign */
+      const findEl = async (hash, x = 1) => {
+        return document.querySelector(hash) ||
+          new Promise(resolve => {
+            if (x > 50) return resolve();
+            setTimeout(() => { resolve(findEl(hash, ++x)); }, 100);
+          });
+      };
+
+      if (to.hash) {
+        let el = await findEl(to.hash);
+        if (Boolean(el)) return window.scrollTo(0, el.offsetTop);
+      }
+
+      return { x: 0, y: 0 };
+    }
+  },
   css: [
     {
       src: '~/assets/styles/index.scss',
