@@ -190,1105 +190,200 @@ exports[`Index page renders correctly 1`] = `
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="white"
-                height="22"
-                width="32"
-              />
-               
-              <rect
-                fill="#41479B"
-                height="14"
-                width="18"
-              />
-               
-              <rect
-                fill="#DC251C"
-                height="2"
-                width="14"
-                x="18"
-              />
-               
-              <rect
-                fill="#DC251C"
-                height="2"
-                width="14"
-                x="18"
-                y="4"
-              />
-               
-              <rect
-                fill="#DC251C"
-                height="2"
-                width="14"
-                x="18"
-                y="8"
-              />
-               
-              <rect
-                fill="#DC251C"
-                height="2"
-                width="14"
-                x="18"
-                y="12"
-              />
-               
-              <rect
-                fill="#DC251C"
-                height="2"
-                width="32"
-                y="16"
-              />
-               
-              <rect
-                fill="#DC251C"
-                height="2"
-                width="32"
-                y="20"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="2"
-                y="2"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="6"
-                y="2"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="10"
-                y="2"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="14"
-                y="2"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="2"
-                y="6"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="6"
-                y="6"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="10"
-                y="6"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="4"
-                y="8"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="8"
-                y="8"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="12"
-                y="8"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="4"
-                y="4"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="8"
-                y="4"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="12"
-                y="4"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="14"
-                y="6"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="2"
-                y="10"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="6"
-                y="10"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="10"
-                y="10"
-              />
-               
-              <rect
-                fill="#C5D0EC"
-                height="2"
-                width="2"
-                x="14"
-                y="10"
-              />
-            </svg>
+            <img
+              alt="usa"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="#41479B"
-                height="24"
-                width="32"
-              />
-               
-              <mask
-                height="16"
-                id="mask0"
-                mask-type="alpha"
-                maskUnits="userSpaceOnUse"
-                width="20"
-                x="0"
-                y="0"
-              >
-                <rect
-                  fill="#C4C4C4"
-                  height="16"
-                  width="20"
-                />
-              </mask>
-               
-              <g
-                mask="url(#mask0)"
-              >
-                <path
-                  d="M22 -2.6665L-2 18.6668"
-                  stroke="white"
-                  stroke-width="5.15625"
-                />
-                 
-                <path
-                  d="M22 -2.6665L-2 18.6668"
-                  stroke="#DC251C"
-                  stroke-width="1.54688"
-                />
-                 
-                <path
-                  d="M-2 -2.6665L22 18.6668"
-                  stroke="white"
-                  stroke-width="5.15625"
-                />
-                 
-                <path
-                  d="M-2 -2.6665L22 18.6668"
-                  stroke="#DC251C"
-                  stroke-width="1.54688"
-                />
-                 
-                <path
-                  d="M10 0V16M0 8H20"
-                  stroke="white"
-                  stroke-width="6.1875"
-                />
-                 
-                <path
-                  d="M10 0V16M0 8H20"
-                  stroke="#DC251C"
-                  stroke-width="4.125"
-                />
-              </g>
-               
-              <circle
-                cx="25"
-                cy="5"
-                fill="white"
-                r="1"
-              />
-               
-              <circle
-                cx="23"
-                cy="11"
-                fill="white"
-                r="1"
-              />
-               
-              <circle
-                cx="29"
-                cy="9"
-                fill="white"
-                r="1"
-              />
-               
-              <circle
-                cx="27"
-                cy="13"
-                fill="white"
-                r="1"
-              />
-               
-              <circle
-                cx="25"
-                cy="19"
-                fill="white"
-                r="1"
-              />
-               
-              <path
-                d="M10.0078 16.4844L10.6583 18.0004L12.2194 17.5768L11.4695 19.0437L12.7656 20.0315L11.18 20.3447L11.2352 22L10.0078 20.9236L8.78047 22L8.83567 20.3447L7.25 20.0315L8.54617 19.0437L7.79622 17.5768L9.35732 18.0004L10.0078 16.4844Z"
-                fill="white"
-              />
-            </svg>
+            <img
+              alt="australia"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="#E31D1C"
-                height="24"
-                width="32"
-              />
-               
-              <path
-                d="M16.5 4.125L18.3522 9.82561H24.3462L19.497 13.3488L21.3492 19.0494L16.5 15.5262L11.6508 19.0494L13.503 13.3488L8.65378 9.82561H14.6478L16.5 4.125Z"
-                fill="#FFD018"
-              />
-            </svg>
+            <img
+              alt="vietnam"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="white"
-                height="24"
-                width="32"
-              />
-               
-              <rect
-                fill="#41479B"
-                height="24"
-                width="10"
-              />
-               
-              <rect
-                fill="#E51D1D"
-                height="24"
-                width="10"
-                x="22"
-              />
-            </svg>
+            <img
+              alt="france"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                clip-path="url(#clip0)"
-              >
-                <path
-                  d="M0 0H32V24H0V0Z"
-                  fill="#41479B"
-                />
-                 
-                <path
-                  d="M32 20.875L20.1667 12L32 3.12501V0H27.8333L16 8.87502L4.16666 0H0V3.125L11.8333 12L0 20.875V24H4.16672L16 15.125L27.8333 24H32V20.875Z"
-                  fill="white"
-                />
-                 
-                <path
-                  clip-rule="evenodd"
-                  d="M0 1.25002V0H1.66664L16 10.75L30.3333 0H32L32.6 0.8L17.6666 12L32.6 23.2L31.4375 24.75H31.3332L16 13.25L0.666694 24.75H0.562449L0 24.0001V22.75L14.3333 12L0 1.25002Z"
-                  fill="#DC251C"
-                  fill-rule="evenodd"
-                />
-                 
-                <path
-                  clip-rule="evenodd"
-                  d="M12 8V0H20V8H32V16H20V24H12V16H0V8H12Z"
-                  fill="white"
-                  fill-rule="evenodd"
-                />
-                 
-                <path
-                  clip-rule="evenodd"
-                  d="M14 10V0H18V10H32V14H18V24H14V14H0V10H14Z"
-                  fill="#DC251C"
-                  fill-rule="evenodd"
-                />
-              </g>
-               
-              <defs>
-                <clippath
-                  id="clip0"
-                >
-                  <rect
-                    fill="white"
-                    height="24"
-                    width="32"
-                  />
-                </clippath>
-              </defs>
-            </svg>
+            <img
+              alt="uk"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="#E31D1C"
-                height="12"
-                width="32"
-              />
-               
-              <rect
-                fill="white"
-                height="12"
-                width="32"
-                y="12"
-              />
-            </svg>
+            <img
+              alt="indonesia"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="#272727"
-                height="24"
-                width="32"
-              />
-               
-              <rect
-                fill="#E31D1C"
-                height="8"
-                width="32"
-                y="8"
-              />
-               
-              <rect
-                fill="#FFD018"
-                height="8"
-                width="32"
-                y="16"
-              />
-            </svg>
+            <img
+              alt="germany"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="white"
-                height="8"
-                width="32"
-                y="8"
-              />
-               
-              <rect
-                fill="#DC251C"
-                height="8"
-                width="32"
-                y="16"
-              />
-               
-              <rect
-                fill="#DC251C"
-                height="8"
-                width="32"
-              />
-            </svg>
+            <img
+              alt="austria"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                clip-path="url(#clip0)"
-              >
-                <rect
-                  fill="#DC251C"
-                  height="24.75"
-                  width="33"
-                />
-                 
-                <rect
-                  fill="white"
-                  height="16.5"
-                  width="4.125"
-                  x="14.4375"
-                  y="4.125"
-                />
-                 
-                <rect
-                  fill="white"
-                  height="16.5"
-                  transform="rotate(90 24.75 10.3125)"
-                  width="4.125"
-                  x="24.75"
-                  y="10.3125"
-                />
-              </g>
-               
-              <defs>
-                <clippath
-                  id="clip0"
-                >
-                  <rect
-                    fill="white"
-                    height="24"
-                    width="32"
-                  />
-                </clippath>
-              </defs>
-            </svg>
+            <img
+              alt="switzerland"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="white"
-                height="24"
-                width="32"
-              />
-               
-              <rect
-                fill="#E31D1C"
-                height="8"
-                transform="rotate(90 8 0)"
-                width="24"
-                x="8"
-              />
-               
-              <rect
-                fill="#E31D1C"
-                height="8"
-                transform="rotate(90 32 0)"
-                width="24"
-                x="32"
-              />
-               
-              <path
-                d="M13.8182 8.04808L16 5L18.1818 8.04808V10.6442L22 11.0769L19.2727 14.5385L17.0909 15.4038L16.1914 18.3691C16.134 18.5584 15.866 18.5584 15.8086 18.3691L14.9091 15.4038L12.7273 14.5385L10 11.0769L13.8182 10.6442V8.04808Z"
-                fill="#DC251C"
-              />
-            </svg>
+            <img
+              alt="canada"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 31 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="white"
-                height="8"
-                width="31"
-                y="8"
-              />
-               
-              <rect
-                fill="#A71B14"
-                height="10"
-                width="31"
-              />
-               
-              <rect
-                fill="#A71B14"
-                height="10"
-                width="31"
-                y="14"
-              />
-            </svg>
+            <img
+              alt="latvia"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="#65CCE8"
-                height="24"
-                width="32"
-              />
-               
-              <circle
-                cx="18.2087"
-                cy="8.62516"
-                fill="#FFD018"
-                r="4.79167"
-              />
-               
-              <rect
-                fill="#FFD018"
-                height="19.1667"
-                width="1.91667"
-                x="1.91699"
-                y="1.9165"
-              />
-            </svg>
+            <img
+              alt="kazakhstan"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                clip-path="url(#clip0)"
-              >
-                <rect
-                  fill="#3273D3"
-                  height="24"
-                  width="32"
-                />
-                 
-                <rect
-                  fill="#FFD018"
-                  height="25"
-                  width="4.16667"
-                  x="10.417"
-                />
-                 
-                <rect
-                  fill="#FFD018"
-                  height="33.3333"
-                  transform="rotate(90 33.333 10.4165)"
-                  width="4.16667"
-                  x="33.333"
-                  y="10.4165"
-                />
-              </g>
-               
-              <defs>
-                <clippath
-                  id="clip0"
-                >
-                  <rect
-                    fill="white"
-                    height="24"
-                    width="32"
-                  />
-                </clippath>
-              </defs>
-            </svg>
+            <img
+              alt="sweden"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                clip-path="url(#clip0)"
-              >
-                <rect
-                  fill="white"
-                  height="24"
-                  width="32"
-                />
-                 
-                <rect
-                  fill="#41479B"
-                  height="25"
-                  width="4.16667"
-                  x="10.417"
-                />
-                 
-                <rect
-                  fill="#41479B"
-                  height="33.3333"
-                  transform="rotate(90 33.333 10.4165)"
-                  width="4.16667"
-                  x="33.333"
-                  y="10.4165"
-                />
-              </g>
-               
-              <defs>
-                <clippath
-                  id="clip0"
-                >
-                  <rect
-                    fill="white"
-                    height="24"
-                    width="32"
-                  />
-                </clippath>
-              </defs>
-            </svg>
+            <img
+              alt="finland"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="white"
-                height="8"
-                width="32"
-                y="8"
-              />
-               
-              <rect
-                fill="#2B9F5A"
-                height="8"
-                width="32"
-              />
-               
-              <rect
-                fill="#272727"
-                height="8"
-                width="32"
-                y="16"
-              />
-               
-              <rect
-                fill="#DC251C"
-                height="24"
-                width="10"
-              />
-            </svg>
+            <img
+              alt="uae"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                clip-path="url(#clip0)"
-              >
-                <rect
-                  fill="#B82936"
-                  height="24"
-                  width="32"
-                />
-                 
-                <rect
-                  fill="white"
-                  height="25"
-                  width="4.16667"
-                  x="10.417"
-                />
-                 
-                <rect
-                  fill="white"
-                  height="33.3333"
-                  transform="rotate(90 33.333 10.4165)"
-                  width="4.16667"
-                  x="33.333"
-                  y="10.4165"
-                />
-              </g>
-               
-              <defs>
-                <clippath
-                  id="clip0"
-                >
-                  <rect
-                    fill="white"
-                    height="24"
-                    width="32"
-                  />
-                </clippath>
-              </defs>
-            </svg>
+            <img
+              alt="denmark"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="white"
-                height="24"
-                width="32"
-              />
-               
-              <circle
-                cx="16"
-                cy="12"
-                fill="#DC251C"
-                r="7"
-              />
-            </svg>
+            <img
+              alt="japan"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                clip-path="url(#clip0)"
-              >
-                <rect
-                  fill="#DC251C"
-                  height="24"
-                  width="32"
-                />
-                 
-                <rect
-                  fill="white"
-                  height="25"
-                  width="8.33333"
-                  x="8.33301"
-                />
-                 
-                <rect
-                  fill="white"
-                  height="33.3333"
-                  transform="rotate(90 33.333 8.3335)"
-                  width="8.33333"
-                  x="33.333"
-                  y="8.3335"
-                />
-                 
-                <rect
-                  fill="#41479B"
-                  height="25"
-                  width="4.16667"
-                  x="10.417"
-                />
-                 
-                <rect
-                  fill="#41479B"
-                  height="33.3333"
-                  transform="rotate(90 33.333 10.4165)"
-                  width="4.16667"
-                  x="33.333"
-                  y="10.4165"
-                />
-              </g>
-               
-              <defs>
-                <clippath
-                  id="clip0"
-                >
-                  <rect
-                    fill="white"
-                    height="24"
-                    width="32"
-                  />
-                </clippath>
-              </defs>
-            </svg>
+            <img
+              alt="norway"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                clip-path="url(#clip0)"
-              >
-                <rect
-                  fill="#2B9F5A"
-                  height="25"
-                  width="14.5833"
-                />
-                 
-                <rect
-                  fill="#DC251C"
-                  height="25"
-                  width="18.75"
-                  x="14.583"
-                />
-                 
-                <circle
-                  cx="14.583"
-                  cy="12.5"
-                  r="5.72917"
-                  stroke="#FFD018"
-                  stroke-width="1.04167"
-                />
-                 
-                <path
-                  d="M10.417 9.3335C10.417 8.78121 10.8647 8.3335 11.417 8.3335H17.7503C18.3026 8.3335 18.7503 8.78121 18.7503 9.3335V14.6668C18.7503 15.7714 17.8549 16.6668 16.7503 16.6668H12.417C11.3124 16.6668 10.417 15.7714 10.417 14.6668V9.3335Z"
-                  fill="#DC251C"
-                />
-                 
-                <path
-                  d="M12.5 10.4165H16.6667V12.5832C16.6667 13.6877 15.7712 14.5832 14.6667 14.5832H14.5C13.3954 14.5832 12.5 13.6877 12.5 12.5832V10.4165Z"
-                  fill="white"
-                />
-              </g>
-               
-              <defs>
-                <clippath
-                  id="clip0"
-                >
-                  <rect
-                    fill="white"
-                    height="24"
-                    width="32"
-                  />
-                </clippath>
-              </defs>
-            </svg>
+            <img
+              alt="portugal"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="#671C3A"
-                height="24"
-                width="32"
-              />
-               
-              <rect
-                fill="white"
-                height="24"
-                width="10"
-              />
-            </svg>
+            <img
+              alt="katar"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                clip-path="url(#clip0)"
-              >
-                <path
-                  clip-rule="evenodd"
-                  d="M-0.000195484 19.1151V4.89355L10.5886 12.0043L-0.00488281 19.1151H-0.000195484Z"
-                  fill="black"
-                  fill-rule="evenodd"
-                />
-                 
-                <path
-                  clip-rule="evenodd"
-                  d="M7.22266 24.004L19.1099 16.0073H35.9939V23.9993H7.22266V24.004Z"
-                  fill="#0000CC"
-                  fill-rule="evenodd"
-                />
-                 
-                <path
-                  clip-rule="evenodd"
-                  d="M6.46387 9.68548e-05H35.9945V8.00618H19.1058C19.1058 8.00618 6.61855 -0.0795889 6.46387 9.68548e-05Z"
-                  fill="#FF0000"
-                  fill-rule="evenodd"
-                />
-                 
-                <path
-                  clip-rule="evenodd"
-                  d="M-0.000195482 3V4.89371L10.5886 11.9998L-0.00488281 19.1153V21.0043L13.3308 12.0045L-0.00488281 3H-0.000195482Z"
-                  fill="#FFCC00"
-                  fill-rule="evenodd"
-                />
-                 
-                <path
-                  clip-rule="evenodd"
-                  d="M-0.000976562 2.99994V0H4.45205L18.5705 9.5623H35.9983V14.4466H18.5705L4.44737 23.9995H-0.000976562V21.0042L13.33 12.0044L0.00371077 2.99994H-0.000976562Z"
-                  fill="#009933"
-                  fill-rule="evenodd"
-                />
-                 
-                <path
-                  clip-rule="evenodd"
-                  d="M4.44824 0H7.22318L19.1104 8.00139H35.9945V9.5623H18.5714L4.44824 0.0046874V0ZM4.44824 24.0042H7.22318L19.1104 16.0075H35.9945V14.4513H18.5714L4.44824 23.9995V24.0042Z"
-                  fill="white"
-                  fill-rule="evenodd"
-                />
-              </g>
-               
-              <defs>
-                <clippath
-                  id="clip0"
-                >
-                  <rect
-                    fill="white"
-                    height="24"
-                    width="32"
-                  />
-                </clippath>
-              </defs>
-            </svg>
+            <img
+              alt="south_africa"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
-           
           <li
             class="weCreateItProject__flag-item"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 32 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                fill="white"
-                height="8"
-                width="32"
-                y="8"
-              />
-               
-              <rect
-                fill="#41479B"
-                height="8"
-                width="32"
-                y="16"
-              />
-               
-              <rect
-                fill="#DC251C"
-                height="8"
-                width="32"
-              />
-            </svg>
+            <img
+              alt="netherlands"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
           </li>
         </ul>
       </div>
@@ -1384,10 +479,37 @@ exports[`Index page renders correctly 1`] = `
           class="tech_container"
         >
           <div
+            class="tech_item devops-ansible devops"
+          >
+            <img
+              alt="Ansible"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
+            <span>
+              Ansible
+            </span>
+          </div>
+          <div
+            class="tech_item devops-terraform devops"
+          >
+            <img
+              alt="Terraform"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
+            <span>
+              Terraform
+            </span>
+          </div>
+          <div
             class="tech_item devops-cloud-formation devops"
           >
             <img
-              class="lazy"
+              alt="CloudFormation"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1399,7 +521,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item devops-jenkins devops"
           >
             <img
-              class="lazy"
+              alt="Jenkins"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1411,7 +534,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item devops-bamboo devops"
           >
             <img
-              class="lazy"
+              alt="Bamboo"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1423,7 +547,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item devops-gitlab devops"
           >
             <img
-              class="lazy"
+              alt="GitlabCI"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1435,7 +560,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item devops-travis-ci devops"
           >
             <img
-              class="lazy"
+              alt="TravisCI"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1447,7 +573,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item devops-elastic devops"
           >
             <img
-              class="lazy"
+              alt="ELK"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1456,10 +583,37 @@ exports[`Index page renders correctly 1`] = `
             </span>
           </div>
           <div
+            class="tech_item devops-circle-ci devops"
+          >
+            <img
+              alt="CircleCI"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
+            <span>
+              CircleCI
+            </span>
+          </div>
+          <div
+            class="tech_item devops-sentry devops"
+          >
+            <img
+              alt="Sentry"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
+            <span>
+              Sentry
+            </span>
+          </div>
+          <div
             class="tech_item devops-cloud-watch devops"
           >
             <img
-              class="lazy"
+              alt="CloudWatch"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1468,10 +622,24 @@ exports[`Index page renders correctly 1`] = `
             </span>
           </div>
           <div
+            class="tech_item devops-prometheus devops"
+          >
+            <img
+              alt="Prometheus"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
+            <span>
+              Prometheus
+            </span>
+          </div>
+          <div
             class="tech_item infrastructure-aws infrastructure"
           >
             <img
-              class="lazy"
+              alt="AWS"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1483,7 +651,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item infrastructure-gcp infrastructure"
           >
             <img
-              class="lazy"
+              alt="GCP"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1495,7 +664,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item infrastructure-digital-ocean infrastructure"
           >
             <img
-              class="lazy"
+              alt="Digital Ocean"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1507,7 +677,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item infrastructure-azure infrastructure"
           >
             <img
-              class="lazy"
+              alt="Azure"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1519,7 +690,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item infrastructure-cloud-native infrastructure"
           >
             <img
-              class="lazy"
+              alt="CloudNative"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1531,7 +703,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item infrastructure-heroku infrastructure"
           >
             <img
-              class="lazy"
+              alt="Heroku"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1543,7 +716,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item infrastructure-netlify infrastructure"
           >
             <img
-              class="lazy"
+              alt="Netlify"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1555,7 +729,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item infrastructure-cloudflare infrastructure"
           >
             <img
-              class="lazy"
+              alt="CloudFlare"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1567,7 +742,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item mobile-kotlin mobile"
           >
             <img
-              class="lazy"
+              alt="Kotlin"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1579,7 +755,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item mobile-java mobile"
           >
             <img
-              class="lazy"
+              alt="Java"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1591,7 +768,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item mobile-obj-c mobile"
           >
             <img
-              class="lazy"
+              alt="Objective-C"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1603,7 +781,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item mobile-swift mobile"
           >
             <img
-              class="lazy"
+              alt="Swift"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1615,7 +794,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item mobile-apple mobile"
           >
             <img
-              class="lazy"
+              alt="IOS"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1627,7 +807,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item mobile-android mobile"
           >
             <img
-              class="lazy"
+              alt="Android"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1639,7 +820,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item pm-jira pm"
           >
             <img
-              class="lazy"
+              alt="Jira"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1651,7 +833,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item pm-slack pm"
           >
             <img
-              class="lazy"
+              alt="Slack"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1663,7 +846,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item pm-meet pm"
           >
             <img
-              class="lazy"
+              alt="Meet"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1675,7 +859,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item pm-zoom pm"
           >
             <img
-              class="lazy"
+              alt="Zoom"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1687,7 +872,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item pm-miro pm"
           >
             <img
-              class="lazy"
+              alt="Miro"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1699,7 +885,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item pm-trello pm"
           >
             <img
-              class="lazy"
+              alt="Trello"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1711,7 +898,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item pm-loom pm"
           >
             <img
-              class="lazy"
+              alt="Loom"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1723,7 +911,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item pm-jira-assistant pm"
           >
             <img
-              class="lazy"
+              alt="Jira Assistant"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1735,7 +924,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item pm-service-desk pm"
           >
             <img
-              class="lazy"
+              alt="Service Desk"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1747,7 +937,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item pm-basecamp pm"
           >
             <img
-              class="lazy"
+              alt="Basecamp"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1759,7 +950,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item pm-notion pm"
           >
             <img
-              class="lazy"
+              alt="Notion"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1771,7 +963,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item pm-zapier pm"
           >
             <img
-              class="lazy"
+              alt="Zapier"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1783,7 +976,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item backend-python backend"
           >
             <img
-              class="lazy"
+              alt="Python"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1795,7 +989,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item backend-go backend"
           >
             <img
-              class="lazy"
+              alt="Go"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1807,7 +1002,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item backend-node backend"
           >
             <img
-              class="lazy"
+              alt="Node.js"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1819,7 +1015,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item backend-js backend"
           >
             <img
-              class="lazy"
+              alt="JavaScript"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1831,7 +1028,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item backend-typescript backend"
           >
             <img
-              class="lazy"
+              alt="TypeScript"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1843,7 +1041,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item backend-php backend"
           >
             <img
-              class="lazy"
+              alt="PHP"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1855,7 +1054,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item backend-ruby backend"
           >
             <img
-              class="lazy"
+              alt="Ruby"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1867,7 +1067,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item backend-c backend"
           >
             <img
-              class="lazy"
+              alt="C"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1879,7 +1080,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item backend-c-plus backend"
           >
             <img
-              class="lazy"
+              alt="C++"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1891,7 +1093,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item uiux-figma uiux"
           >
             <img
-              class="lazy"
+              alt="Figma"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1903,7 +1106,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item uiux-adobe uiux"
           >
             <img
-              class="lazy"
+              alt="Adobe Suite"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1915,7 +1119,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item uiux-sketch uiux"
           >
             <img
-              class="lazy"
+              alt="Sketch"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1927,7 +1132,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item uiux-invision uiux"
           >
             <img
-              class="lazy"
+              alt="InVision"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1939,7 +1145,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item uiux-zeplin uiux"
           >
             <img
-              class="lazy"
+              alt="Zeplin"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1951,7 +1158,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item uiux-balsamic uiux"
           >
             <img
-              class="lazy"
+              alt="Balsamic"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1963,7 +1171,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item uiux-principle-app uiux"
           >
             <img
-              class="lazy"
+              alt="Principle"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1975,7 +1184,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item frontend-post-css frontend"
           >
             <img
-              class="lazy"
+              alt="PostCSS"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1987,7 +1197,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item frontend-typescript frontend"
           >
             <img
-              class="lazy"
+              alt="TypeScript"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -1999,7 +1210,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item frontend-angular frontend"
           >
             <img
-              class="lazy"
+              alt="Angular"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -2011,7 +1223,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item frontend-webpack frontend"
           >
             <img
-              class="lazy"
+              alt="Webpack"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -2023,7 +1236,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item frontend-next frontend"
           >
             <img
-              class="lazy"
+              alt="Next.js"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -2035,7 +1249,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item frontend-nuxt frontend"
           >
             <img
-              class="lazy"
+              alt="Nuxt.js"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -2047,7 +1262,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item frontend-js frontend"
           >
             <img
-              class="lazy"
+              alt="JavaScript"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -2059,7 +1275,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item frontend-react frontend"
           >
             <img
-              class="lazy"
+              alt="React"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -2071,7 +1288,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item frontend-babel frontend"
           >
             <img
-              class="lazy"
+              alt="Babel"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -2080,10 +1298,24 @@ exports[`Index page renders correctly 1`] = `
             </span>
           </div>
           <div
+            class="tech_item frontend-vue frontend"
+          >
+            <img
+              alt="Vue"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
+            <span>
+              Vue
+            </span>
+          </div>
+          <div
             class="tech_item frontend-sass frontend"
           >
             <img
-              class="lazy"
+              alt="SASS"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -2095,7 +1327,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item qa-jasmine qa"
           >
             <img
-              class="lazy"
+              alt="Jasmine"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -2107,7 +1340,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item qa-selenoid qa"
           >
             <img
-              class="lazy"
+              alt="Selenoid"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -2119,7 +1353,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item qa-appium qa"
           >
             <img
-              class="lazy"
+              alt="Appium"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -2131,7 +1366,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item qa-cucumber qa"
           >
             <img
-              class="lazy"
+              alt="Cucumber"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -2140,10 +1376,24 @@ exports[`Index page renders correctly 1`] = `
             </span>
           </div>
           <div
+            class="tech_item qa-pytest qa"
+          >
+            <img
+              alt="PyTest"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
+            <span>
+              PyTest
+            </span>
+          </div>
+          <div
             class="tech_item qa-selenium qa"
           >
             <img
-              class="lazy"
+              alt="Selenium"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              
@@ -2155,7 +1405,8 @@ exports[`Index page renders correctly 1`] = `
             class="tech_item qa-selenium-grid qa"
           >
             <img
-              class="lazy"
+              alt="Selenium Grid"
+              class="svg_lazy"
               data-src="[object Object]"
             />
              

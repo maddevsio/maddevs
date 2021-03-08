@@ -90,10 +90,37 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
         class="tech_container"
       >
         <div
+          class="tech_item devops-ansible devops"
+        >
+          <img
+            alt="Ansible"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+           
+          <span>
+            Ansible
+          </span>
+        </div>
+        <div
+          class="tech_item devops-terraform devops"
+        >
+          <img
+            alt="Terraform"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+           
+          <span>
+            Terraform
+          </span>
+        </div>
+        <div
           class="tech_item devops-cloud-formation devops"
         >
           <img
-            class="lazy"
+            alt="CloudFormation"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -105,7 +132,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item devops-jenkins devops"
         >
           <img
-            class="lazy"
+            alt="Jenkins"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -117,7 +145,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item devops-bamboo devops"
         >
           <img
-            class="lazy"
+            alt="Bamboo"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -129,7 +158,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item devops-gitlab devops"
         >
           <img
-            class="lazy"
+            alt="GitlabCI"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -141,7 +171,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item devops-travis-ci devops"
         >
           <img
-            class="lazy"
+            alt="TravisCI"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -153,7 +184,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item devops-elastic devops"
         >
           <img
-            class="lazy"
+            alt="ELK"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -162,10 +194,37 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           </span>
         </div>
         <div
+          class="tech_item devops-circle-ci devops"
+        >
+          <img
+            alt="CircleCI"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+           
+          <span>
+            CircleCI
+          </span>
+        </div>
+        <div
+          class="tech_item devops-sentry devops"
+        >
+          <img
+            alt="Sentry"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+           
+          <span>
+            Sentry
+          </span>
+        </div>
+        <div
           class="tech_item devops-cloud-watch devops"
         >
           <img
-            class="lazy"
+            alt="CloudWatch"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -174,10 +233,24 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           </span>
         </div>
         <div
+          class="tech_item devops-prometheus devops"
+        >
+          <img
+            alt="Prometheus"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+           
+          <span>
+            Prometheus
+          </span>
+        </div>
+        <div
           class="tech_item infrastructure-aws infrastructure"
         >
           <img
-            class="lazy"
+            alt="AWS"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -189,7 +262,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item infrastructure-gcp infrastructure"
         >
           <img
-            class="lazy"
+            alt="GCP"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -201,7 +275,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item infrastructure-digital-ocean infrastructure"
         >
           <img
-            class="lazy"
+            alt="Digital Ocean"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -213,7 +288,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item infrastructure-azure infrastructure"
         >
           <img
-            class="lazy"
+            alt="Azure"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -225,7 +301,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item infrastructure-cloud-native infrastructure"
         >
           <img
-            class="lazy"
+            alt="CloudNative"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -237,7 +314,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item infrastructure-heroku infrastructure"
         >
           <img
-            class="lazy"
+            alt="Heroku"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -249,7 +327,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item infrastructure-netlify infrastructure"
         >
           <img
-            class="lazy"
+            alt="Netlify"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -261,7 +340,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item infrastructure-cloudflare infrastructure"
         >
           <img
-            class="lazy"
+            alt="CloudFlare"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -273,7 +353,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item mobile-kotlin mobile"
         >
           <img
-            class="lazy"
+            alt="Kotlin"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -285,7 +366,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item mobile-java mobile"
         >
           <img
-            class="lazy"
+            alt="Java"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -297,7 +379,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item mobile-obj-c mobile"
         >
           <img
-            class="lazy"
+            alt="Objective-C"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -309,7 +392,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item mobile-swift mobile"
         >
           <img
-            class="lazy"
+            alt="Swift"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -321,7 +405,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item mobile-apple mobile"
         >
           <img
-            class="lazy"
+            alt="IOS"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -333,7 +418,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item mobile-android mobile"
         >
           <img
-            class="lazy"
+            alt="Android"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -345,7 +431,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item pm-jira pm"
         >
           <img
-            class="lazy"
+            alt="Jira"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -357,7 +444,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item pm-slack pm"
         >
           <img
-            class="lazy"
+            alt="Slack"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -369,7 +457,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item pm-meet pm"
         >
           <img
-            class="lazy"
+            alt="Meet"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -381,7 +470,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item pm-zoom pm"
         >
           <img
-            class="lazy"
+            alt="Zoom"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -393,7 +483,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item pm-miro pm"
         >
           <img
-            class="lazy"
+            alt="Miro"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -405,7 +496,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item pm-trello pm"
         >
           <img
-            class="lazy"
+            alt="Trello"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -417,7 +509,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item pm-loom pm"
         >
           <img
-            class="lazy"
+            alt="Loom"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -429,7 +522,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item pm-jira-assistant pm"
         >
           <img
-            class="lazy"
+            alt="Jira Assistant"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -441,7 +535,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item pm-service-desk pm"
         >
           <img
-            class="lazy"
+            alt="Service Desk"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -453,7 +548,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item pm-basecamp pm"
         >
           <img
-            class="lazy"
+            alt="Basecamp"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -465,7 +561,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item pm-notion pm"
         >
           <img
-            class="lazy"
+            alt="Notion"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -477,7 +574,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item pm-zapier pm"
         >
           <img
-            class="lazy"
+            alt="Zapier"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -489,7 +587,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item backend-python backend"
         >
           <img
-            class="lazy"
+            alt="Python"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -501,7 +600,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item backend-go backend"
         >
           <img
-            class="lazy"
+            alt="Go"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -513,7 +613,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item backend-node backend"
         >
           <img
-            class="lazy"
+            alt="Node.js"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -525,7 +626,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item backend-js backend"
         >
           <img
-            class="lazy"
+            alt="JavaScript"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -537,7 +639,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item backend-typescript backend"
         >
           <img
-            class="lazy"
+            alt="TypeScript"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -549,7 +652,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item backend-php backend"
         >
           <img
-            class="lazy"
+            alt="PHP"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -561,7 +665,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item backend-ruby backend"
         >
           <img
-            class="lazy"
+            alt="Ruby"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -573,7 +678,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item backend-c backend"
         >
           <img
-            class="lazy"
+            alt="C"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -585,7 +691,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item backend-c-plus backend"
         >
           <img
-            class="lazy"
+            alt="C++"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -597,7 +704,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item uiux-figma uiux"
         >
           <img
-            class="lazy"
+            alt="Figma"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -609,7 +717,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item uiux-adobe uiux"
         >
           <img
-            class="lazy"
+            alt="Adobe Suite"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -621,7 +730,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item uiux-sketch uiux"
         >
           <img
-            class="lazy"
+            alt="Sketch"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -633,7 +743,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item uiux-invision uiux"
         >
           <img
-            class="lazy"
+            alt="InVision"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -645,7 +756,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item uiux-zeplin uiux"
         >
           <img
-            class="lazy"
+            alt="Zeplin"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -657,7 +769,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item uiux-balsamic uiux"
         >
           <img
-            class="lazy"
+            alt="Balsamic"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -669,7 +782,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item uiux-principle-app uiux"
         >
           <img
-            class="lazy"
+            alt="Principle"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -681,7 +795,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item frontend-post-css frontend"
         >
           <img
-            class="lazy"
+            alt="PostCSS"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -693,7 +808,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item frontend-typescript frontend"
         >
           <img
-            class="lazy"
+            alt="TypeScript"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -705,7 +821,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item frontend-angular frontend"
         >
           <img
-            class="lazy"
+            alt="Angular"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -717,7 +834,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item frontend-webpack frontend"
         >
           <img
-            class="lazy"
+            alt="Webpack"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -729,7 +847,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item frontend-next frontend"
         >
           <img
-            class="lazy"
+            alt="Next.js"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -741,7 +860,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item frontend-nuxt frontend"
         >
           <img
-            class="lazy"
+            alt="Nuxt.js"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -753,7 +873,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item frontend-js frontend"
         >
           <img
-            class="lazy"
+            alt="JavaScript"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -765,7 +886,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item frontend-react frontend"
         >
           <img
-            class="lazy"
+            alt="React"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -777,7 +899,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item frontend-babel frontend"
         >
           <img
-            class="lazy"
+            alt="Babel"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -786,10 +909,24 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           </span>
         </div>
         <div
+          class="tech_item frontend-vue frontend"
+        >
+          <img
+            alt="Vue"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+           
+          <span>
+            Vue
+          </span>
+        </div>
+        <div
           class="tech_item frontend-sass frontend"
         >
           <img
-            class="lazy"
+            alt="SASS"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -801,7 +938,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item qa-jasmine qa"
         >
           <img
-            class="lazy"
+            alt="Jasmine"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -813,7 +951,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item qa-selenoid qa"
         >
           <img
-            class="lazy"
+            alt="Selenoid"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -825,7 +964,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item qa-appium qa"
         >
           <img
-            class="lazy"
+            alt="Appium"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -837,7 +977,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item qa-cucumber qa"
         >
           <img
-            class="lazy"
+            alt="Cucumber"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -846,10 +987,24 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           </span>
         </div>
         <div
+          class="tech_item qa-pytest qa"
+        >
+          <img
+            alt="PyTest"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+           
+          <span>
+            PyTest
+          </span>
+        </div>
+        <div
           class="tech_item qa-selenium qa"
         >
           <img
-            class="lazy"
+            alt="Selenium"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
@@ -861,7 +1016,8 @@ exports[`TechnologiesAndTools renders correctly 1`] = `
           class="tech_item qa-selenium-grid qa"
         >
           <img
-            class="lazy"
+            alt="Selenium Grid"
+            class="svg_lazy"
             data-src="[object Object]"
           />
            
