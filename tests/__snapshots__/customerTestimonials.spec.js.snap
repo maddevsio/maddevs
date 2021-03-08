@@ -59,7 +59,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
               class="customer-testimonials__profile"
             >
               <img
-                alt="Atif Mahmud - CEO and Founder at Teacherly."
+                alt="Atif Mahmood - CEO and Founder at Teacherly."
                 class="customer-testimonials__customer-image lazyload"
                 data-src="[object Object]"
                 height="42"
@@ -70,7 +70,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
                 class="customer-testimonials__customer-name paragraph-sm"
               >
                 
-                Atif Mahmud, 
+                Atif Mahmood, 
                 <span>
                   The UK
                 </span>
