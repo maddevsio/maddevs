@@ -73,15 +73,15 @@ exports[`CaseStudies component renders correctly 1`] = `
       <picture>
         <source
           class="multi-image"
-          srcset="[object Object] ,[object Object] 2x"
+          data-srcset="[object Object] ,[object Object] 2x"
           type="image/webp"
         />
          
         <img
+          class="lazyload"
+          data-src="[object Object]"
+          data-srcset="[object Object] 2x"
           height="294"
-          loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
           width="610"
         />
       </picture>

@@ -4,17 +4,16 @@ exports[`Webp image component renders correctly 1`] = `
 <picture>
   <source
     class="multi-image"
-    srcset="[object Object] ,[object Object] 2x"
+    data-srcset="[object Object] ,[object Object] 2x"
     type="image/webp"
   />
    
   <img
     alt=""
-    class="multi-image"
+    class="multi-image lazyload"
+    data-src="[object Object]"
+    data-srcset="[object Object] 2x"
     height="auto"
-    loading="lazy"
-    src="[object Object]"
-    srcset="[object Object] 2x"
     width="auto"
   />
 </picture>

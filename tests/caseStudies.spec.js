@@ -13,6 +13,7 @@ describe('CaseStudies component', () => {
       targetBlank: false,
       contributionWidgetColors: ['#ec1c24', '#96969c'],
       projectBackground: 'nambafoodBackground',
+      fileExtension: 'png',
       projectColor: '#f8f7f6',
       projectTitle: 'Contactless Delivery Service',
       projectDescription: 'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.',
@@ -25,6 +26,7 @@ describe('CaseStudies component', () => {
       targetBlank: false,
       contributionWidgetColors: ['#96969c', '#96969c'],
       projectBackground: 'sjmcBackground',
+      fileExtension: 'jpg',
       projectColor: '#221F20',
       projectTitle: 'Australian National Interpretive Centre',
       projectDescription: 'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',
@@ -37,6 +39,7 @@ describe('CaseStudies component', () => {
       targetBlank: true,
       contributionWidgetColors: ['#96969c', '#96969c'],
       projectBackground: 'guardrailsBackground',
+      fileExtension: 'png',
       projectColor: '#0e1b27',
       projectTitle: 'Cloud cybersecurity service',
       projectDescription: 'Mad Devs was involved with Guardrails\' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.',
@@ -49,6 +52,7 @@ describe('CaseStudies component', () => {
       targetBlank: false,
       contributionWidgetColors: ['#000', '#000'],
       projectBackground: 'godeeBackground',
+      fileExtension: 'png',
       projectColor: '#ff6A01',
       projectTitle: 'Convenient shuttle bus service',
       projectDescription: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
@@ -106,11 +110,6 @@ describe('CaseStudies component', () => {
     expect(wrapper.vm.$data.projects).toStrictEqual(projects);
   });
 
-  test('should render mobile slider', () => {
-    let mobileSlider = wrapper.findAll('.projects-mobile-slider');
-    expect(mobileSlider).toHaveLength(1);
-  });
-
   test('should render 4 single-projects in the project section', () => {
     let singleProjects = wrapper.findAll('.projects .single-project');
     expect(singleProjects).toHaveLength(4);
@@ -118,11 +117,11 @@ describe('CaseStudies component', () => {
 
   test('should have 16 projects including projects in the slider', () => {
     let sliderSingleProjects = wrapper.findAll('.single-project');
-    expect(sliderSingleProjects).toHaveLength(8);
+    expect(sliderSingleProjects).toHaveLength(4);
   });
 
   test('check that the specific images exists', () => {
     const img = wrapper.findAll('.single-project__logo-bg');
-    expect(img.length).toBe(8);
+    expect(img.length).toBe(4);
   });
 });

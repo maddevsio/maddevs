@@ -26,9 +26,7 @@ exports[`Quick Project Start renders correctly 1`] = `
           <svg
             class="quickProjectStart__main-icon"
             fill="none"
-            height="32"
             viewBox="0 0 32 32"
-            width="32"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -42,9 +40,7 @@ exports[`Quick Project Start renders correctly 1`] = `
           <svg
             class="quickProjectStart__arrow-icon"
             fill="none"
-            height="49"
             viewBox="0 0 175 49"
-            width="175"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -83,9 +79,7 @@ exports[`Quick Project Start renders correctly 1`] = `
           <svg
             class="quickProjectStart__main-icon"
             fill="none"
-            height="31"
             viewBox="0 0 30 31"
-            width="30"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -99,9 +93,7 @@ exports[`Quick Project Start renders correctly 1`] = `
           <svg
             class="quickProjectStart__arrow-icon"
             fill="none"
-            height="49"
             viewBox="0 0 175 49"
-            width="175"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -140,9 +132,7 @@ exports[`Quick Project Start renders correctly 1`] = `
           <svg
             class="quickProjectStart__main-icon"
             fill="none"
-            height="32"
             viewBox="0 0 27 32"
-            width="27"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -156,9 +146,7 @@ exports[`Quick Project Start renders correctly 1`] = `
           <svg
             class="quickProjectStart__arrow-icon"
             fill="none"
-            height="49"
             viewBox="0 0 175 49"
-            width="175"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -197,9 +185,7 @@ exports[`Quick Project Start renders correctly 1`] = `
           <svg
             class="quickProjectStart__main-icon"
             fill="none"
-            height="35"
             viewBox="0 0 28 35"
-            width="28"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -213,9 +199,7 @@ exports[`Quick Project Start renders correctly 1`] = `
           <svg
             class="quickProjectStart__arrow-icon"
             fill="none"
-            height="49"
             viewBox="0 0 175 49"
-            width="175"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -254,9 +238,7 @@ exports[`Quick Project Start renders correctly 1`] = `
           <svg
             class="quickProjectStart__main-icon"
             fill="none"
-            height="31"
             viewBox="0 0 27 31"
-            width="27"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path

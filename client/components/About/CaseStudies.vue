@@ -22,34 +22,16 @@
         />
       </div>
     </div>
-    <div class="projects-mobile-slider">
-      <swiper class="swiper" :options="swiperOption">
-        <swiper-slide v-for="(project, i) in projects" :key="i">
-          <SingleProject :project="project" />
-        </swiper-slide>
-      </swiper>
-      <div class="swiper-pagination swiper-pagination--white" slot="pagination"/>
-    </div>
   </section>
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
-import 'swiper/css/swiper.css';
 import SingleProject from '@/components/About/SingleProject';
 
 export default {
   name: 'CaseStudies',
   components: {
-    Swiper,
-    SwiperSlide,
     SingleProject
-  },
-  beforeMount() {
-    // Set new params for slider
-    if (window.screen.width <= 480) {
-      this.swiperOption.slidesPerView = 1.05;
-    }
   },
   mounted() {
     if ($nuxt.$route.name) {
@@ -58,12 +40,6 @@ export default {
   },
   data() {
     return {
-      swiperOption: {
-        pagination: {
-          el: '.swiper-pagination--white'
-        },
-        slidesPerView: 1.20
-      },
       currentPageName: '',
       projects: [
         {
@@ -73,6 +49,7 @@ export default {
           targetBlank: false,
           contributionWidgetColors: ['#ec1c24', '#96969c'],
           projectBackground: 'nambafoodBackground',
+          fileExtension: 'png',
           projectColor: '#f8f7f6',
           projectTitle: 'Contactless Delivery Service',
           projectDescription: 'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.',
@@ -85,6 +62,7 @@ export default {
           targetBlank: false,
           contributionWidgetColors: ['#96969c', '#96969c'],
           projectBackground: 'sjmcBackground',
+          fileExtension: 'jpg',
           projectColor: '#221F20',
           projectTitle: 'Australian National Interpretive Centre',
           projectDescription: 'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',
@@ -97,6 +75,7 @@ export default {
           targetBlank: true,
           contributionWidgetColors: ['#96969c', '#96969c'],
           projectBackground: 'guardrailsBackground',
+          fileExtension: 'png',
           projectColor: '#0e1b27',
           projectTitle: 'Cloud cybersecurity service',
           projectDescription: 'Mad Devs was involved with Guardrails\' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.',
@@ -109,6 +88,7 @@ export default {
           targetBlank: false,
           contributionWidgetColors: ['#000', '#000'],
           projectBackground: 'godeeBackground',
+          fileExtension: 'png',
           projectColor: '#ff6A01',
           projectTitle: 'Convenient shuttle bus service',
           projectDescription: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
@@ -295,9 +275,5 @@ export default {
       right: 30px;
     }
   }
-}
-
-.projects-mobile-slider {
-  display: none;
 }
 </style>

@@ -28,12 +28,12 @@
         <picture>
           <source
             class="multi-image"
-            :srcset="[require(`@/assets/img/Studies/png/${project.projectBackground}.webp`) + ' ', require(`@/assets/img/Studies/png/${project.projectBackground}.webp`) + ' 2x']"
+            :data-srcset="[require(`@/assets/img/Studies/webp/${project.projectBackground}.webp`) + ' ', require(`@/assets/img/Studies/webp/${project.projectBackground}.webp`) + ' 2x']"
             type='image/webp'>
           <img
-            :src="[require(`@/assets/img/Studies/png/${project.projectBackground}.png`)]"
-            :srcset="[require(`@/assets/img/Studies/png/${project.projectBackground}.png`) + ' 2x']"
-            loading="lazy"
+            :data-src="[require(`@/assets/img/Studies/${project.fileExtension}/${project.projectBackground}.${project.fileExtension}`)]"
+            :data-srcset="[require(`@/assets/img/Studies/${project.fileExtension}/${project.projectBackground}.${project.fileExtension}`) + ' 2x']"
+            class="lazyload"
             :alt="project.alt"
             width="610"
             height="294"
@@ -83,6 +83,10 @@ export default {
         required: true
       },
       alt: {
+        type: String,
+        default: ''
+      },
+      fileExtension: {
         type: String,
         default: ''
       }
