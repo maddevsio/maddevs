@@ -1,3 +1,5 @@
+import blog from './modules/blog';
+
 export const state = () => ({
   contactMeFormStatus: false
 });
@@ -33,4 +35,8 @@ export const actions = {
       });
     });
   }
+};
+
+export const modules = {
+  blog
 };
