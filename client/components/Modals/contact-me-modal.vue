@@ -1,62 +1,73 @@
 <template>
-  <div>
-    <div class="form"> 
-      <div class="fields-list">
-        <div class="modal-field-item field-item">
-          <p class="modal-field-name field-name required">Full Name</p>
-          <input @input="$v.name.$touch" type="text" class="modal-entry-field entry-field" placeholder="John Smith" v-model="fullName">
-          <div v-if="$v.name.$dirty">
-            <span class="modal-error-text error-text" v-if="!$v.name.required">This field is required.</span>
-            <span class="modal-error-text error-text" v-if="!$v.name.maxLength">
-              Sorry, the number of characters in this field should not exceed 50.
-            </span>
-          </div>
+  <div class="form"> 
+    <div class="fields-list">
+      <div class="modal-field-item field-item">
+        <p class="modal-field-name field-name required">Full Name</p>
+        <input @input="$v.fullName.$touch" type="text" class="modal-entry-field entry-field" placeholder="John Smith" v-model="fullName">
+        <!-- Erros -->
+        <div v-if="$v.fullName.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.fullName.required">This field is required.</span>
+          <span class="modal-error-text error-text" v-if="!$v.fullName.maxLength">
+            Sorry, the number of characters in this field should not exceed 50.
+          </span>
         </div>
-        <div class="modal-field-item field-item">
-          <p class="modal-field-name field-name">Company</p>
-          <input @input="$v.company.$touch" type="text" class="modal-entry-field entry-field" placeholder="MyAwesomeCompany, Inc." v-model="company">
-          <div v-if="$v.company.$dirty">
-            <span class="modal-error-text error-text" v-if="!$v.company.maxLength">
-              Sorry, the number of characters in this field should not exceed 300.
-            </span>
-          </div>
-        </div>
-        <div class="modal-field-item field-item">
-          <p class="modal-field-name field-name required">Work email</p>
-          <input @input="$v.email.$touch" type="text" class="modal-entry-field entry-field" placeholder="your@mail.com" v-model="email">
-          <div v-if="$v.email.$dirty">
-            <span class="modal-error-text error-text" v-if="!$v.email.required">This field is required.</span>
-            <span class="modal-error-text error-text" v-if="!$v.email.email">
-              Invalid email address. Please use your work email.
-            </span>
-          </div>
-        </div>
-        <div class="modal-field-item field-item">
-          <p class="modal-field-name field-name">Phone number</p>
-          <input type="text" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
-          <div class="modal-error-text error-text">Error text</div>
-        </div>
+        <!-- End Erros -->
       </div>
-      <FormCheckboxes
-        ref="checkboxes"
-        v-on:getPrivacyCheckboxState="getPrivacyCheckboxState"
-        v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
-        :inputId="inputId"
-      />
-      <UIButton
-        class="modal-button"
-        :disabled="!agreeWithPrivacyPolicy || onSubmit"
-        @click="sendForm(agreeWithPrivacyPolicy)"
-        :loading="onSubmit"
-      >
-        Сontact Me
-      </UIButton>
+      <div class="modal-field-item field-item">
+        <p class="modal-field-name field-name">Company</p>
+        <input @input="$v.company.$touch" type="text" class="modal-entry-field entry-field" placeholder="MyAwesomeCompany, Inc." v-model="company">
+        <!-- Erros -->
+        <div v-if="$v.company.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.company.maxLength">
+            Sorry, the number of characters in this field should not exceed 300.
+          </span>
+        </div>
+        <!-- End Erros -->
+      </div>
+      <div class="modal-field-item field-item">
+        <p class="modal-field-name field-name required">Work email</p>
+        <input @input="$v.email.$touch" type="text" class="modal-entry-field entry-field" placeholder="your@mail.com" v-model="email">
+        <!-- Erros -->
+        <div v-if="$v.email.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.email.required">This field is required.</span>
+          <span class="modal-error-text error-text" v-if="!$v.email.email">
+            Invalid email address. Please use your work email.
+          </span>
+        </div>
+        <!-- End Erros -->
+      </div>
+      <div class="modal-field-item field-item">
+        <p class="modal-field-name field-name">Phone number</p>
+        <input @input="$v.phoneNumber.$touch" type="text" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
+        <!-- Erros -->
+        <div v-if="$v.phoneNumber.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.phoneNumber.phone">
+            Sorry, this field can only contain numbers and characters specific for phone numbers.
+          </span>
+        </div>
+        <!-- End Erros -->
+      </div>
     </div>
+    <FormCheckboxes
+      ref="checkboxes"
+      v-on:getPrivacyCheckboxState="getPrivacyCheckboxState"
+      v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
+      :inputId="inputId"
+    />
+    <UIButton
+      class="modal-button"
+      :disabled="!agreeWithPrivacyPolicy || onSubmit"
+      @click="sendForm(agreeWithPrivacyPolicy)"
+      :loading="onSubmit"
+    >
+      Сontact Me
+    </UIButton>
   </div>
 </template>
 
 <script>
 import { required, email, maxLength } from 'vuelidate/lib/validators';
+import { phone } from '@/helpers/validators';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import UIButton from '@/components/ui/UIButton';
 
@@ -67,7 +78,7 @@ export default {
     UIButton
   },
   validations: {
-    name: {
+    fullName: {
       required,
       maxLength: maxLength(50)
     },
@@ -77,7 +88,11 @@ export default {
     email: {
       required,
       email
-    }
+    },
+    phoneNumber: {
+      phone
+    },
+    validationGroup: ['fullName', 'company', 'email', 'phoneNumber']
   },
   data: () => ({
     modalName: 'contact-me-modal',

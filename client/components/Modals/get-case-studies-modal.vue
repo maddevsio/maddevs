@@ -1,37 +1,50 @@
 <template>
-  <ValidationObserver v-slot="{ invalid }">
-    <div class="form"> 
-      <div class="fields-list">
-        <ValidationProvider class="modal-field-item field-item" rules="required|max:50" v-slot="{ classes, errors }">
-          <p class="modal-field-name field-name required">Full Name</p>
-          <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
-          <div class="modal-error-text error-text">{{ errors[0] }}</div>
-        </ValidationProvider>
-        <ValidationProvider class="modal-field-item field-item" rules="email|required" v-slot="{ classes, errors }">
-          <p class="modal-field-name field-name required">Work email</p>
-          <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
-          <div class="modal-error-text error-text">{{ errors[0] }}</div>
-        </ValidationProvider>
+  <div class="form"> 
+    <div class="fields-list">
+      <div class="modal-field-item field-item" rules="required|max:50">
+        <p class="modal-field-name field-name required">Full Name</p>
+        <input @input="$v.fullName.$touch" type="text" class="modal-entry-field entry-field" placeholder="John Smith" v-model="fullName">
+        <!-- Erros -->
+        <div v-if="$v.fullName.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.fullName.required">This field is required.</span>
+          <span class="modal-error-text error-text" v-if="!$v.fullName.maxLength">
+            Sorry, the number of characters in this field should not exceed 50.
+          </span>
+        </div>
+        <!-- End Erros -->
       </div>
-      <FormCheckboxes
-        ref="checkboxes"
-        @getPrivacyCheckboxState="getPrivacyCheckboxState"
-        @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
-        :inputId="inputId"
-      />
-      <UIButton
-        :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
-        @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-        class="modal-button"
-        :loading="onSubmit"
-      >
-        Get Case Studies
-      </UIButton>
+      <div class="modal-field-item field-item" rules="email|required">
+        <p class="modal-field-name field-name required">Work email</p>
+        <input @input="$v.email.$touch" type="text" class="modal-entry-field entry-field" placeholder="your@mail.com" v-model="email">
+        <!-- Erros -->
+        <div v-if="$v.email.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.email.required">This field is required.</span>
+          <span class="modal-error-text error-text" v-if="!$v.email.email">
+            Invalid email address. Please use your work email.
+          </span>
+        </div>
+        <!-- End Errors -->
+      </div>
     </div>
-  </ValidationObserver>
+    <FormCheckboxes
+      ref="checkboxes"
+      @getPrivacyCheckboxState="getPrivacyCheckboxState"
+      @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
+      :inputId="inputId"
+    />
+    <UIButton
+      :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
+      @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+      class="modal-button"
+      :loading="onSubmit"
+    >
+      Get Case Studies
+    </UIButton>
+  </div>
 </template>
 
 <script>
+import { required, email, maxLength } from 'vuelidate/lib/validators';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import UIButton from '@/components/ui/UIButton';
 
@@ -40,6 +53,22 @@ export default {
   components: {
     FormCheckboxes,
     UIButton
+  },
+  validations: {
+    fullName: {
+      required,
+      maxLength: maxLength(50)
+    },
+    company: {
+      maxLength: maxLength(300)
+    },
+    email: {
+      required,
+      email
+    },
+    phoneNumber: {
+      phone
+    }
   },
   data: () => ({
     modalName: 'get-case-studies-modal',
