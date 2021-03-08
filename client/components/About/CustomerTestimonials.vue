@@ -60,13 +60,13 @@ export default {
     return {
       testimonials: [
         {
-          customerName: 'Atif Mahmud,',
+          customerName: 'Atif Mahmood,',
           customerCountry: 'The UK',
           customerProject: 'teacherly',
           customerImageName: 'atif',
           testimonialText: 'Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.',
           link: 'https://teacherly.io/',
-          alt: 'Atif Mahmud - CEO and Founder at Teacherly.'
+          alt: 'Atif Mahmood - CEO and Founder at Teacherly.'
         },
         {
           customerName: 'Daniel Vartanov,',
