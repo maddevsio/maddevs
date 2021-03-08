@@ -35,6 +35,7 @@ module.exports = {
     height: '3px'
   },
   plugins: [
+    '~/plugins/vuelidate.js',
     '~/plugins/vee-validate.js',
     '~/plugins/vue-social-sharing.js',
     '~/plugins/vue-fragment.js',
