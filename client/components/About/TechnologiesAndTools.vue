@@ -23,18 +23,16 @@
           class="tech_container"
           :class="this.activeLegend"
         >
-          <!-- <DevOps />
-          <QA />
-          <Backend />
-          <Frontend />
-          <Mobile />
-          <PM />
-          <Infrastructure />
-          <UxUi /> -->
-          <div class="tech_item" v-for="(item, index) in technologies" :key="index" :class="(`${item.technology}-${item.value} ${item.technology}`)">
+          <div
+            class="tech_item"
+            v-for="(item, index) in technologies"
+            :key="index"
+            :class="(`${item.technology}-${item.value} ${item.technology}`)"
+          >
             <img
               :data-src="require(`@/assets/img/Home/technologies/${item.value}.svg`)"
-              class="lazy"
+              class="svg_lazy"
+              :alt="item.title"
             >
             <span>{{item.title}}</span>
           </div>
@@ -45,27 +43,9 @@
 </template>
 
 <script>
-// import DevOps from '@/components/About/TechnologiesAndTools/DevOps';
-// import QA from '@/components/About/TechnologiesAndTools/QA';
-// import Backend from '@/components/About/TechnologiesAndTools/Backend';
-// import Frontend from '@/components/About/TechnologiesAndTools/Frontend';
-// import Mobile from '@/components/About/TechnologiesAndTools/Mobile';
-// import PM from '@/components/About/TechnologiesAndTools/PM';
-// import Infrastructure from '@/components/About/TechnologiesAndTools/Infrastructure';
-// import UxUi from '@/components/About/TechnologiesAndTools/UxUi';
 
 export default {
   name: 'TechnologiesAndTools',
-  // components: {
-  //   DevOps,
-  //   QA,
-  //   Backend,
-  //   Frontend,
-  //   Mobile,
-  //   PM,
-  //   Infrastructure,
-  //   UxUi
-  // },
   data() {
     return {
       legend: [
@@ -95,16 +75,16 @@ export default {
         }
       ],
       technologies: [
-        // {
-        //   item: 'Ansible',
-        //   value: 'ansible',
-        //   technology: 'devops'
-        // },
-        // {
-        //   title: 'Terraform',
-        //   value: 'terraform',
-        //   technology: 'devops'
-        // },
+        {
+          title: 'Ansible',
+          value: 'ansible',
+          technology: 'devops'
+        },
+        {
+          title: 'Terraform',
+          value: 'terraform',
+          technology: 'devops'
+        },
         {
           title: 'CloudFormation',
           value: 'cloud-formation',
@@ -135,26 +115,26 @@ export default {
           value: 'elastic',
           technology: 'devops'
         },
-        // {
-        //   title: 'CircleCI',
-        //   value: 'circle-ci',
-        //   technology: 'devops'
-        // },
-        // {
-        //   title: 'Sentry',
-        //   value: 'sentry',
-        //   technology: 'devops'
-        // },
+        {
+          title: 'CircleCI',
+          value: 'circle-ci',
+          technology: 'devops'
+        },
+        {
+          title: 'Sentry',
+          value: 'sentry',
+          technology: 'devops'
+        },
         {
           title: 'CloudWatch',
           value: 'cloud-watch',
           technology: 'devops'
         },
-        // {
-        //   title: 'Prometheus',
-        //   value: 'prometheus',
-        //   technology: 'devops'
-        // },
+        {
+          title: 'Prometheus',
+          value: 'prometheus',
+          technology: 'devops'
+        },
         {
           title: 'AWS',
           value: 'aws',
@@ -410,11 +390,11 @@ export default {
           value: 'babel',
           technology: 'frontend'
         },
-        // {
-        //   title: 'Vue',
-        //   value: 'vue',
-        //   technology: 'frontend'
-        // },
+        {
+          title: 'Vue',
+          value: 'vue',
+          technology: 'frontend'
+        },
         {
           title: 'SASS',
           value: 'sass',
@@ -440,11 +420,11 @@ export default {
           value: 'cucumber',
           technology: 'qa'
         },
-        // {
-        //   title: 'PyTest',
-        //   value: 'pytest',
-        //   technology: 'qa'
-        // },
+        {
+          title: 'PyTest',
+          value: 'pytest',
+          technology: 'qa'
+        },
         {
           title: 'Selenium',
           value: 'selenium',
@@ -642,7 +622,7 @@ $tech_legends: (
     justify-content: flex-end;
   }
 
-  svg {
+  img {
     width: 26px;
     height: 26px;
 
@@ -1045,7 +1025,7 @@ $tech_legends: (
   }
 
   // Done
-  &.infrastructure-gsp {
+  &.infrastructure-gcp {
     order: 8;
 
     @include mediaMobileScreen(14);
@@ -1155,7 +1135,7 @@ $tech_legends: (
   }
 
   // Done
-  &.pm-jira-service-desk {
+  &.pm-service-desk {
     order: 39;
 
     @include mediaMobileScreen(35);
