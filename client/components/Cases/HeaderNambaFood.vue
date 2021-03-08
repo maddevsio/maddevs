@@ -1,5 +1,5 @@
 <template>
-  <section class="case_header">
+  <section class="case_header" id="case-header">
     <video 
       class="case_main-video" 
       loop="true" 
@@ -12,7 +12,7 @@
     </video>
     <div class="case_logotype nambafood"></div>
     <h1 class="case_header-title">Namba Food <br> Top Delivery Service <br class="case_text-break"> in <br class="case_text-break-mobile"> Central Asia</h1>
-    <ButtonMore class="case_more__button">Read our case studies ↓</ButtonMore>
+    <ButtonMore class="case_more__button" id="read-our-case-btn">Read our case studies ↓</ButtonMore>
   </section>
 </template>
 
