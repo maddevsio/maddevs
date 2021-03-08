@@ -1,14 +1,14 @@
 <template>
   <div class="case_root">
     <HeaderMain />
-    <main class="main case case_parallax" id="scroll-container" ref="main">
+    <main class="case case_parallax" id="scroll-container" ref="main">
       <CaseHeader logo="godee" videoName="godee-case-main-video.mp4">
         <h1 class="case_header-title" slot="title">Convenient shuttle <br> bus service</h1>
         <p class="case_header-description" slot="description">
           Mad Devs helped GoDee with developing feature-rich software to re-invent <br> public mobility by building new smart ways of a daily commute.
         </p>
       </CaseHeader>
-      <section class="container_regular case_first-section">
+      <section class="container_regular" id="case-first-section">
         <TextParagraph class="m-72_top media-m-24_top">
           GoDee is a reliable way to commute in Ho Chi Minh City, Vietnam. Its shuttle buses take express routes that link the city’s major districts and popular destinations. GoDee helps riders save time, money and the planet due to its lower ecological impact.
         </TextParagraph>

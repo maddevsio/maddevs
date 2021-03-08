@@ -1,7 +1,7 @@
 <template>
   <div class="header-wrapper" id="header">
-    <div class="overlay" v-if="headerTransparent" ref="overlay"></div>
-    <header ref="header" class="header" :class="{'header-transparent': headerTransparent}">
+    <!-- <div class="overlay" ref="overlay"></div> -->
+    <header ref="header" class="header" :class="{'transparent': isCasePage}">
       <div class="container" ref="headerContainer">
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-7">
@@ -92,50 +92,42 @@ export default {
       buttonInnerText: 'Contact me',
       selectedPhone: null,
       modalWindowName: 'contact-me-modal',
-      headerTransparent: false,
+      headerIsTransparent: false,
       scrollTop: null,
       isCasePage: false,
-      caseMoreButton: null,
+      readOurCaseButton: null,
       caseHeader: null,
-      logoText: null,
-      caseFirstSection: null,
-      caseRoot: null,
+      headerWhiteLogoText: null,
+      caseGoDeeFirstSection: null,
+      caseGoDeeMainContainer: null,
       isActiveMobileMenu: false
     };
   },
   created() {
-    this.setHeaderState();
+    this.setDefaultStateForHeader();
   },
   mounted() {
-    if(this.isCasePage) {
-      this.caseHeader = document.getElementsByClassName('case_header')[0];
-      this.logoText = document.getElementsByClassName('header-logo-text')[0];
-
-      if (!this.$nuxt.$route.path.includes('/godee')) { // На данный момент верстка главныйх экранов в кейсах отличаеться, и поэтому пришлось через условия разделить логику работы хедера в кейсах 
-        this.caseMoreButton = document.getElementsByClassName('case_more__button')[0];
-        this.getScrollTop();
-        window.addEventListener('scroll', () => this.scrollHandler());
-      } else if(this.$nuxt.$route.path.includes('/godee')) {
-        this.caseFirstSection = document.getElementsByClassName('case_first-section')[0];
-        this.caseRoot = document.getElementsByClassName('main')[0];
-        this.caseRoot.addEventListener('scroll', () => this.scrollHandlerGodeeCase());
-        this.resizeHandler();
-        window.addEventListener('resize', () => this.resizeHandler());
-      }
-    }
+    // if(this.isCasePage) {
+    //   this.getHtmlElements();
+    //   if (this.$nuxt.$route.path.includes('/godee')) {
+    //     this.addEventListenersForGoDeeCase();
+    //     // this.setWidthForHeader();
+    //   } else {
+    //     this.getScrollTop();
+    //     window.addEventListener('scroll', () => this.scrollHandler()); // Add event listener for NF or SJMC case
+    //   }
+    // }
   },
   watch: {
     '$route'() {
-      this.setHeaderState();
+      this.setDefaultStateForHeader();
     }
   },
   methods: {
-    setHeaderState() { 
+    setDefaultStateForHeader() {
       if (this.$nuxt.$route.path.includes('/case-studies/')) {
-        this.headerTransparent = true;
         this.isCasePage = true;
       } else {
-        this.headerTransparent = false;
         this.isCasePage = false;
       }
     },
@@ -143,7 +135,8 @@ export default {
       window.scrollTo(0, 0);
     },
     getScrollTop() {
-      this.scrollTop = this.caseMoreButton.getBoundingClientRect().top - this.$refs.headerContainer.offsetHeight;
+      this.readOurCaseButton = document.getElementById('read-our-case-btn');
+      this.scrollTop = this.readOurCaseButton.getBoundingClientRect().top - this.$refs.headerContainer.offsetHeight;
     },
     scrollHandler() {
       this.setStylesForHeader();
@@ -151,34 +144,44 @@ export default {
     scrollHandlerGodeeCase() {
       this.setStylesForHeaderInGoDeeCase();
     },
-    setStylesForHeader() { // От этой логики в скором времени можно будет избавиться, сейчас это костыль, так как не все хедеры в кейсах переверстаны под новый формат
+    setStylesForHeader() {
       if(this.isCasePage && window.innerWidth > 991) {
-        const opacity = 1.6 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.caseMoreButton.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
-        const opacityTextLogo = 0.9 - (this.$refs.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.$refs.overlay.offsetHeight;
+        const opacity = 1.6 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.readOurCaseButton.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
+        const opacityTextLogo = 0.9 - (this.$refs.overlay.offsetHeight - this.readOurCaseButton.getBoundingClientRect().top + this.readOurCaseButton.getBoundingClientRect().height) / this.$refs.overlay.offsetHeight;
         this.$refs.overlay.style.opacity = opacity;
-        this.logoText.style.opacity = opacityTextLogo;
+        this.headerWhiteLogoText.style.opacity = opacityTextLogo;
       } else if(this.isCasePage && window.innerWidth < 991) {
-        const opacity = 1.7 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.caseMoreButton.getBoundingClientRect().height) - 60) / this.$refs.overlay.offsetHeight;
+        const opacity = 1.7 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.readOurCaseButton.getBoundingClientRect().height) - 60) / this.$refs.overlay.offsetHeight;
         this.$refs.overlay.style.opacity = opacity;
       }
     },
     setStylesForHeaderInGoDeeCase() {
       if(this.isCasePage && window.innerWidth > 991) {
-        this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (this.caseRoot.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
-        this.logoText.style.opacity = -1 - (this.$refs.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
+        this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (this.caseGoDeeMainContainer.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
+        this.headerWhiteLogoText.style.opacity = -1 - (this.$refs.overlay.offsetHeight - this.caseGoDeeFirstSection.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
       } else if (this.isCasePage && window.innerWidth < 991) {
-        this.$refs.overlay.style.opacity = 3 - (this.$refs.overlay.offsetHeight - (this.caseRoot.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight; // Цифры 1 или 2 регулируют старт затемнения, чем больше цифра тем раньше начнеться затемнение, с тектом для логотипа работает в обратную сторону
+        this.$refs.overlay.style.opacity = 3 - (this.$refs.overlay.offsetHeight - (this.caseGoDeeMainContainer.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight; // Цифры 1 или 2 регулируют старт затемнения, чем больше цифра тем раньше начнеться затемнение, с тектом для логотипа работает в обратную сторону
       }
     },
-    resizeHandler() {
-      let scrollBarWidth = this.caseRoot.offsetWidth - this.caseRoot.clientWidth;
-      if(window.innerWidth > 991) {
-        this.$refs.header.style.width = `calc(100% - ${scrollBarWidth}px)` || '100%';
-        this.$refs.overlay.style.width = `calc(100% - ${scrollBarWidth}px)` || '100%';
-      } else {
-        this.$refs.header.style.width = '100%';
-        this.$refs.overlay.style.width = '100%';
-      }
+    // setWidthForHeader() {
+    //   let scrollBarWidth = this.caseGoDeeMainContainer.offsetWidth - this.caseGoDeeMainContainer.clientWidth;
+    //   if(window.innerWidth >= 991) {
+    //     this.$refs.header.style.width = `calc(100% - ${scrollBarWidth}px)`;
+    //     this.$refs.overlay.style.width = `calc(100% - ${scrollBarWidth}px)`;
+    //   } else {
+    //     this.$refs.header.style.width = '100%';
+    //     this.$refs.overlay.style.width = '100%';
+    //   }
+    // },
+    addEventListenersForGoDeeCase() {
+      this.caseGoDeeFirstSection = document.getElementById('case-first-section');
+      this.caseGoDeeMainContainer = document.getElementById('scroll-container');
+      this.caseGoDeeMainContainer.addEventListener('scroll', () => this.scrollHandlerGodeeCase());
+      window.addEventListener('resize', () => this.setWidthForHeader());
+    },
+    getHtmlElements() {
+      this.caseHeader = document.getElementById('case-header');
+      this.headerWhiteLogoText = document.getElementById('header-logo-text');
     }
   }
 };
@@ -302,10 +305,10 @@ export default {
       width: 18px;
       height: 14px;
     }
-  }
 
-  .header-transparent {
-    background-color: transparent !important;
+    &.transparent {
+      background: transparent;
+    }
   }
 
   .overlay {
@@ -321,14 +324,6 @@ export default {
     @media screen and (max-width: 991px) {
       height: 48px;
       padding: 0;
-    }
-  }
-
-  .header-default {
-    background-color: $bgcolor--black !important;
-
-    &::before {
-      opacity: 0;
     }
   }
 
