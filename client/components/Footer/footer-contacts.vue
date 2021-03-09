@@ -31,7 +31,7 @@
 		<div class="footer-contacts__lists-wrapper">
 			<ul class="footer-contacts__messengers-list">
 				<li>
-					<a href="https://facebook.com/maddevsllc" target="_blank" class="footer-contacts__messenger-item-wrapper">
+					<a href="https://m.me/maddevsllc" target="_blank" class="footer-contacts__messenger-item-wrapper">
 						<svg viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4202 33V28.7257C10.7226 26.6885 9 23.5859 9 20.1111C9 13.9746 14.3726 9 21 9C27.6279 9 33 13.9746 33 20.1111C33 26.2472 27.6279 31.2222 21 31.2222C19.7636 31.2222 18.5702 31.0489 17.4476 30.7278L13.4202 33ZM13.248 23.8679L19.7196 17.0681L22.8257 20.2188L28.6499 17.0681L22.2149 23.8679L19.1377 20.6611L13.248 23.8679Z" fill="#A4A8B4"/>
             </svg>

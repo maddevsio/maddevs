@@ -1,11 +1,6 @@
 <template>
-  <simplebar class="mobile-header"
-    :class="{
-      'header-transparent': headerTransparent === true && mobileHeaderIsOpen === false
-    }"
-    ref="mobileHeader"
-  >
-    <div class="mobile-header__scrollbar safari_only container">
+  <div class="mobile-header" >
+    <div class="safari_only container mobile-header__mobile-menu-scollbar" id="mobile-header-scrollbar">
       <div class="mobile-header__content-wrap">
         <div class="mobile-header__nav-wrap">
           <nav class="mobile-header__header-routes_links">
@@ -90,11 +85,10 @@
         <footerContacts class="mobile-header__small-phone-content" />
       </div>
     </div>
-  </simplebar>
+  </div>
 </template>
 
 <script>
-import simplebar from 'simplebar-vue';
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 import footerSocialNetworkList from '@/components/Footer/footer-social-network-list';
 import footerContacts from '@/components/Footer/footer-contacts';
@@ -103,102 +97,23 @@ import headerLogo from '@/components/svg/headerLogo';
 export default {
   name: 'mobile-header',
   components: {
-    simplebar,
     UIButtonModalTrigger,
     footerSocialNetworkList,
     footerContacts,
-    headerLogo
+    headerLogo,
+    showLogoText: true
   },
   data() {
     return {
-      buttonInnerText: 'Contact me',
-      mobileHeaderIsOpen: false,
-      modalWindowName: 'contact-me-modal',
-      headerTransparent: false,
-      isCasePage: false,
-      caseMoreButton: null,
-      overlay: null,
-      scrollTop: null,
-      logoText: null,
-      caseFirstSection: null
+      buttonInnerText: 'Contact me'
     };
   },
-  created() {
-    this.setPageData();
-  },
-  mounted() {
-    if(this.isCasePage) {
-      this.overlay = document.getElementsByClassName('overlay')[0];
-      this.caseHeader = document.getElementsByClassName('case_header')[0];
-      this.logoText = document.getElementsByClassName('header-logo-text')[1]; // Logo from mobile header
-
-      if (!this.$nuxt.$route.path.includes('/godee')) {
-        this.caseMoreButton = document.getElementsByClassName('case_more__button')[0];
-        this.getScrollTop();
-        window.addEventListener('scroll', () => this.scrollHandler());
-      } else if (this.$nuxt.$route.path.includes('/godee')) {
-        this.caseFirstSection = document.getElementsByClassName('case_first-section')[0];
-        this.caseRoot = document.getElementsByClassName('main')[0];
-        this.caseRoot.addEventListener('scroll', () => this.scrollHandlerGodeeCase());
-      }
-    }
-  },
   methods: {
-    toggleMobileHeader() {
-      this.mobileHeaderIsOpen = !this.mobileHeaderIsOpen;
-      if(this.mobileHeaderIsOpen) {
-        this.disableScrollOnBody();
-        document.documentElement.style.setProperty('--mobile-header-ios-bar-size', `${this.getIOSBottomBarHeight()}px`);
-        this.isCasePage = false;
-      } else {
-        this.enableScrollOnBody();
-        this.setPageData();
-      }
-    },
-    enableScrollOnBody() {
-      document.body.classList.remove('scrollDisabled');
-    },
-    disableScrollOnBody() {
-      document.body.classList.add('scrollDisabled');
-    },
-    getIOSBottomBarHeight() {
-      return Math.abs(window.innerHeight - window.outerHeight);
-    },
-    getScrollTop() {
-      this.scrollTop = this.caseMoreButton.getBoundingClientRect().top;
-    },
-    scrollHandler() {
-      this.setStylesForHeader();
-    },
-    scrollHandlerGodeeCase() {
-      this.setStylesForHeaderInGoDeeCase();
-    },
-    setPageData() {
-      if(this.$nuxt.$route.path.includes('/case-studies/')) {
-        this.headerTransparent = true;
-        this.isCasePage = true;
-      } else {
-        this.headerTransparent = false;
-        this.isCasePage = false;
-      }
-    },
-    setStylesForHeader() {
-      if (this.isCasePage) {
-        const opacityTextLogo = 1 - (this.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.overlay.offsetHeight;
-        this.logoText.style.opacity = opacityTextLogo;
-      }
-    },
-    setStylesForHeaderInGoDeeCase() {
-      if (this.isCasePage) {
-        const opacityTextLogo = 0 - (this.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top) / this.overlay.offsetHeight;
-        this.logoText.style.opacity = opacityTextLogo;
-      }
-    },
     goToPage() {
-      this.setPageData();
-      this.enableScrollOnBody();
-      this.mobileHeaderIsOpen = false;
       this.$emit('changed-page');
+      if (document.body.classList.contains('scrollDisabled')) {
+        document.body.classList.remove('scrollDisabled');
+      }
     }
   }
 };
@@ -206,10 +121,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
-
-  :root {
-    --mobile-header-ios-bar-size: 0;
-  }
+  @import '../../assets/styles/modalWindows';
 
   .mobile-header {
     width: 100%;
@@ -414,6 +326,11 @@ export default {
       }
     }
 
+    &__mobile-menu-scollbar {
+      height: calc(100vh - 62px);
+      overflow: auto;
+    }
+
     @media screen and (max-width: 991px) {
       display: block;
       box-sizing: border-box;
@@ -509,13 +426,6 @@ export default {
       /deep/ .footer-contacts__social-network-list-desktop {
         display: block;
       }
-    }
-  }
-
-  // only for IOS
-  @media screen and (max-width: 991px) {
-    _::-webkit-full-page-media, _:future, :root .safari_only {
-      height: calc(100vh - var(--mobile-header-ios-bar-size)) !important;
     }
   }
 </style>

@@ -3,6 +3,7 @@
 exports[`HeaderNambaFood renders correctly 1`] = `
 <section
   class="case_header"
+  id="case-header"
 >
   <video
     autoplay="autoplay"
@@ -41,6 +42,7 @@ exports[`HeaderNambaFood renders correctly 1`] = `
    
   <button
     class="case_more-button case_more__button"
+    id="read-our-case-btn"
     type="button"
   >
     Read our case studies ↓

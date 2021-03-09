@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="case_header">
+    <section class="case_header" id="case-header">
       <video
         class="case_main-video" 
         loop="true" muted="true" 
@@ -16,7 +16,7 @@
         <div class="case_play-icon"></div>
         View video about SJMC
       </button>
-      <ButtonMore class="case_more__button">Read our case studies ↓</ButtonMore>
+      <ButtonMore class="case_more__button" id="read-our-case-btn">Read our case studies ↓</ButtonMore>
     </section>
     <SJMCVideo />
   </div>

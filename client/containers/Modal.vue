@@ -114,6 +114,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/styles/vars';
+@import '../assets/styles/modalWindows';
 
 .modal {
   width: 100%;
