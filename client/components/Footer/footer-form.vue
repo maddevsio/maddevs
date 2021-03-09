@@ -146,16 +146,13 @@ export default {
     },
     resetForm() {
       this.$refs.checkboxes.reset();
+      this.$v.$reset(); // Reset validation form
       this.fullName = null;
       this.email = null;
       this.form = null;
       this.projectDescriber = '';
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
-
-      requestAnimationFrame(() => {
-        this.$refs.form.reset();
-      });
     }
   }
 };

@@ -153,10 +153,10 @@ export default {
           this.onSubmit = false;
           this.resetForm();
           if (res.status === 200) {
-            this.$nuxt.$emit(this.modalName, true);
-          } else {
-            this.$nuxt.$emit(this.modalName, false);
+            this.$parent.$emit('success');
           }
+        }).catch(() => {
+          this.onSubmit = true;
         });
       }
     },

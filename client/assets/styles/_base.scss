@@ -51,6 +51,10 @@ main {
   opacity: 0;
 }
 
+.svg_lazy-fade {
+  transition: opacity 0.3s ease-in;
+}
+
 .scrollDisabled {
   width: 100%;
   position: fixed;

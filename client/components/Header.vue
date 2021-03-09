@@ -72,7 +72,7 @@
     <!-- END Mobile header -->
 
     <Modal ref="contactMeModal">
-      <contactMeModal />
+      <contactMeModal @success="$refs.contactMeModal.close()" />
     </Modal>
   </div>
 </template>

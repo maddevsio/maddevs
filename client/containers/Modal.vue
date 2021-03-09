@@ -16,8 +16,9 @@
           <div class="modal_close" @click="close">
             <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
           </div>
-          <simplebar class="modal_content" ref="content">
-            <slot />
+          <simplebar class="modal_content" ref="content" @success="openSuccessModal">
+            <SuccessMessage v-if="isSuccess" />
+            <slot v-else />
           </simplebar>
         </div>
       </transition>
@@ -27,10 +28,11 @@
 
 <script>
 import simplebar from 'simplebar-vue';
+import SuccessMessage from '@/components/Modals/success-message';
 
 export default {
   name: 'Modal',
-  components: { simplebar },
+  components: { simplebar, SuccessMessage },
   props: {
     appendToBody: {
       type: Boolean,
@@ -41,7 +43,8 @@ export default {
     return {
       isVisible: false,
       contentLoaded: false,
-      isOverlay: false
+      isOverlay: false,
+      isSuccess: false
     };
   },
   directives: {
@@ -63,6 +66,9 @@ export default {
     document.removeEventListener('keydown', this.onKeydown);
   },
   methods: {
+    openSuccessModal() {
+      this.isSuccess = true;
+    },
     close() {
       setTimeout(() => {
         this.isVisible = false;
@@ -74,6 +80,7 @@ export default {
       setTimeout(() => {
         this.isOverlay = false;
         this.$emit('on-close');
+        this.isSuccess = false;
       }, 100);
     },
     show() {

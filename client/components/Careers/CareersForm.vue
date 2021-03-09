@@ -190,7 +190,7 @@ export default {
       }
     },
     sendData() {
-      if (!$v.validationGroup.$invalid && !this.onSubmit) {
+      if (!this.$v.validationGroup.$invalid && !this.onSubmit) {
         this.onSubmit = true;
         // TODO: add ajax request
         this.toBase64(this.selectedFile).then(base64 => {
@@ -226,7 +226,7 @@ export default {
       }
     },
     resetForm() {
-      this.$refs.form.reset();
+      this.$v.$reset(); // Reset validation form
       this.$refs.fileInput.reset();
       this.$refs.radioButtons.reset();
       this.fullName = null;
