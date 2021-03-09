@@ -209,9 +209,11 @@ export default {
     },
     enableScrollOnBody() {
       document.body.classList.remove('scrollDisabled');
+      document.documentElement.classList.remove('scrollDisabled');
     },
     disableScrollOnBody() {
       document.body.classList.add('scrollDisabled');
+      document.documentElement.classList.add('scrollDisabled');
     },
     removeEventListeners() {
       if (this.$nuxt.$route.path.includes('/godee')) {
