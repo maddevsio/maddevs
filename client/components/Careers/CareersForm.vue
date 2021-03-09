@@ -2,10 +2,10 @@
   <section id="careers" class="careers">
     <div class="careers__container container">
       <div class="careers__wrapper">
-        <form @submit.prevent="handleSubmit(sendData)" class="careers__form">
+        <form @submit.prevent="sendData" class="careers__form">
           <label class="careers__form-name-label"
             >Hello, my name is
-            <div>
+            <span>
               <input
                 class="careers__form-input careers__form-name-input"
                 type="text"
@@ -22,11 +22,11 @@
                 </span>
               </div>
               <!-- End Erros -->
-            </div></label
-          >
+            </span>
+          </label>
           <h2 class="careers__form-description">
             I want to work for you as a
-            <div rules="required">
+            <span>
               <input
                 class="careers__form-input careers__form-position-input"
                 type="text"
@@ -39,7 +39,7 @@
                 <span class="modal-error-text error-text" v-if="!$v.positionTitle.required">This field is required.</span>
               </div>
               <!-- End Erros -->
-            </div>
+            </span>
           </h2>
           <h2 class="careers__form-description radio-buttons">
             You can also consider me for <br> your other
@@ -49,14 +49,14 @@
               <UIRadioButtons ref="radioButtons" :radios="radioData" v-model="positionValue" @change="$v.positionValue.$touch" />
             </ul>
             <!-- Erros -->
-            <div v-if="$v.positionTitle.$dirty">
+            <div v-if="$v.positionValue.$dirty">
               <span class="modal-error-text error-text posotion-error-text" v-if="!$v.positionValue.required">This field is required.</span>
             </div>
             <!-- End Erros -->
           </div>
           <h2 class="careers__form-description careers__form-description-email-title">
             Please reply to
-            <div>
+            <span>
               <input
                 class="careers__form-input careers__form-email-input"
                 type="email"
@@ -72,7 +72,7 @@
                 </span>
               </div>
               <!-- End Erros -->
-            </div>
+            </span>
           </h2>
           <h2 class="careers__form-description">
             To get more information on my <br> skills, please
@@ -95,7 +95,7 @@
                   <span class="modal-error-text error-text error-text-file-attach" v-if="!$v.selectedFile.required">
                     This field is required.
                   </span>
-                  <span class="modal-error-text error-text error-text-file-attach" v-if="!$v.selectedFile.ext">
+                  <span class="modal-error-text error-text error-text-file-attach" v-if="!$v.selectedFile.fileExt">
                     Please, upload a file with one of the following extensions: pdf, doc, docx.
                   </span>
                   <span class="modal-error-text error-text error-text-file-attach" v-if="!$v.selectedFile.fileSizeValidation">
@@ -189,8 +189,8 @@ export default {
         this.$v.selectedFile.$touch();
       }
     },
-    sendData(e) {
-      if (!this.errors && !this.onSubmit) {
+    sendData() {
+      if (!$v.validationGroup.$invalid && !this.onSubmit) {
         this.onSubmit = true;
         // TODO: add ajax request
         this.toBase64(this.selectedFile).then(base64 => {

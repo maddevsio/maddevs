@@ -14,17 +14,12 @@ export const fileSizeValidation = value =>  {
   if (!value) {
     return true;
   }
-  console.log(value.size);
   return (value.size < 5000000); // max 5md
 };
 
 export const fileExt = value =>  {
   if (!value) {
     return true;
-  }
-  var re = /(\.pdf|\.doc|\.docx)$/i;
-  if (!re.exec(value.name)) {
-    return false;
   }
   return true;
 };

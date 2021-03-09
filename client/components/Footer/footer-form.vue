@@ -2,7 +2,7 @@
   <form class="footer-form form">
     <div class="fields-list">
       <div class="field-item">
-        <input @input="$v.fullName.$touch" type="text" class="entry-field" placeholder="John Smith" v-model="fullName">
+        <input @input="$v.fullName.$touch" type="text" :class="{ 'invalid': $v.fullName.$error }" class="entry-field" placeholder="John Smith" v-model="fullName">
         <!-- Erros -->
         <div v-if="$v.fullName.$dirty">
           <span class="modal-error-text error-text" v-if="!$v.fullName.maxLength">
@@ -13,7 +13,7 @@
       </div>
       <div class="field-item footer-form_email">
         <div v-PlaceholderAsterisk="'your@mail.com'">
-          <input @input="$v.email.$touch" type="text" class="entry-field" v-model="email">
+          <input @input="$v.email.$touch" type="text" :class="{ 'invalid': $v.email.$error }" class="entry-field" v-model="email">
         </div>
         <!-- Erros -->
         <div v-if="$v.email.$dirty">
@@ -25,7 +25,7 @@
         <!-- End Erros -->
       </div>
       <div class="field-item">
-        <textarea @input="$v.projectDescriber.$touch" type="text" class="entry-field textarea" placeholder="Describe your project..." v-model="projectDescriber" />
+        <textarea @input="$v.projectDescriber.$touch" type="text" :class="{ 'invalid': $v.projectDescriber.$error }" class="entry-field textarea" placeholder="Describe your project..." v-model="projectDescriber" />
         <!-- Erros -->
         <div v-if="$v.projectDescriber.$dirty">
           <span class="modal-error-text error-text" v-if="!$v.projectDescriber.maxLength">

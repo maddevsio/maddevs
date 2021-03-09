@@ -19,7 +19,7 @@ exports[`CareersForm component renders correctly 1`] = `
         >
           Hello, my name is
           
-          <div>
+          <span>
             <input
               class="careers__form-input careers__form-name-input"
               placeholder="John Smith"
@@ -27,7 +27,7 @@ exports[`CareersForm component renders correctly 1`] = `
             />
              
             <!---->
-          </div>
+          </span>
         </label>
          
         <h2
@@ -36,9 +36,7 @@ exports[`CareersForm component renders correctly 1`] = `
           
           I want to work for you as a
           
-          <div
-            rules="required"
-          >
+          <span>
             <input
               class="careers__form-input careers__form-position-input"
               placeholder="desired position."
@@ -46,7 +44,7 @@ exports[`CareersForm component renders correctly 1`] = `
             />
              
             <!---->
-          </div>
+          </span>
         </h2>
          
         <h2
@@ -77,7 +75,7 @@ exports[`CareersForm component renders correctly 1`] = `
           
           Please reply to
           
-          <div>
+          <span>
             <input
               class="careers__form-input careers__form-email-input"
               placeholder="your@mail.com"
@@ -85,7 +83,7 @@ exports[`CareersForm component renders correctly 1`] = `
             />
              
             <!---->
-          </div>
+          </span>
         </h2>
          
         <h2
