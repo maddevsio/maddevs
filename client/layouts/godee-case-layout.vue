@@ -8,7 +8,7 @@
 import initDriftHelper from '@/helpers/initDrift';
 
 export default {
-  name: 'Default',
+  name: 'GoDeeLayout',
   mounted() {
     const scrollContainer = document.getElementById('scroll-container');
     let driftLoader = () => {

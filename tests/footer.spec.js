@@ -1,5 +1,10 @@
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Footer from '@/components/Footer';
+import Vuelidate from 'vuelidate';
+
+const localVue = createLocalVue();
+
+localVue.use(Vuelidate);
 
 describe('Footer', () => {
   let wrapper;
@@ -11,7 +16,7 @@ describe('Footer', () => {
       }
     };
     wrapper = shallowMount(Footer, {
-      stubs: ['ValidationProvider', 'ValidationObserver']
+      localVue
     });
   });
 

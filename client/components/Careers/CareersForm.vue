@@ -2,85 +2,118 @@
   <section id="careers" class="careers">
     <div class="careers__container container">
       <div class="careers__wrapper">
-        <ValidationObserver v-slot="{ handleSubmit, invalid }" ref="form">
-          <form @submit.prevent="handleSubmit(sendData)" class="careers__form">
-            <label class="careers__form-name-label"
-              >Hello, my name is
-              <ValidationProvider rules="required|max:50" v-slot="{errors}">
-                <input
-                  class="careers__form-input careers__form-name-input"
-                  type="text"
-                  placeholder="John Smith"
-                  v-model="fullName"
-                  ref="nameInput"
-                />
-                <span class="modal-error-text error-text">{{ errors[0] }}</span>
-              </ValidationProvider></label
-            >
-            <h2 class="careers__form-description">
-              I want to work for you as a
-              <ValidationProvider rules="required" v-slot="{errors}">
-                <input
-                  class="careers__form-input careers__form-position-input"
-                  type="text"
-                  placeholder="desired position."
-                  v-model="positionTitle"
-                />
-                <span class="modal-error-text error-text">{{ errors[0] }}</span>
-              </ValidationProvider>
-            </h2>
-            <h2 class="careers__form-description radio-buttons">
-              You can also consider me for <br> your other
-            </h2>
-            <ValidationProvider rules="required" v-slot="{errors}">
-              <ul class="careers__position-list">
-                <UIRadioButtons ref="radioButtons" :radios="radioData" v-model="positionValue" />
-              </ul>
-              <span class="modal-error-text error-text posotion-error-text">{{ errors[0] }}</span>
-            </ValidationProvider>
-            <h2 class="careers__form-description careers__form-description-email-title">
-              Please reply to
-              <ValidationProvider
-                rules="email|required"
-                v-slot="{errors}"
-              >
-                <input
-                  class="careers__form-input careers__form-email-input"
-                  type="email"
-                  placeholder="your@mail.com"
-                  v-model="email"
-                />
-                <span class="modal-error-text error-text">{{ errors[0] }}</span>
-              </ValidationProvider>
-            </h2>
-            <h2 class="careers__form-description">
-              To get more information on my <br> skills, please
-            </h2>
-            <ul class="careers__form-list">
-              <li class="careers__form-list-item careers__form-list-item-linkedin">
-                – check out my
-                <input
-                  class="careers__form-input careers__form-linkedin-input"
-                  type="text"
-                  placeholder="LinkedIn profile"
-                  v-model="linkedinProfile"
-                />
-              </li>
-              <li class="careers__form-list-item careers__file-attach">
-                <ValidationProvider
-                  rules="ext:pdf,doc,docx|required|size:5000"
-                  v-slot="{errors}"
-                >
-                  <FileInput v-model="selectedFile" @input="onFileChanged" ref="fileInput" />
-                  <span class="modal-error-text error-text error-text-file-attach">{{
-                    errors[0]
-                  }}</span>
-                </ValidationProvider>
-              </li>
+        <form @submit.prevent="sendData" class="careers__form">
+          <label class="careers__form-name-label"
+            >Hello, my name is
+            <span>
+              <input
+                class="careers__form-input careers__form-name-input"
+                type="text"
+                placeholder="John Smith"
+                v-model="fullName"
+                ref="nameInput"
+                @input="$v.fullName.$touch"
+              />
+              <!-- Erros -->
+              <div v-if="$v.fullName.$dirty">
+                <span class="modal-error-text error-text" v-if="!$v.fullName.required">This field is required.</span>
+                <span class="modal-error-text error-text" v-if="!$v.fullName.maxLength">
+                  Sorry, the number of characters in this field should not exceed 50.
+                </span>
+              </div>
+              <!-- End Erros -->
+            </span>
+          </label>
+          <h2 class="careers__form-description">
+            I want to work for you as a
+            <span>
+              <input
+                class="careers__form-input careers__form-position-input"
+                type="text"
+                placeholder="desired position."
+                v-model="positionTitle"
+                @input="$v.positionTitle.$touch"
+              />
+              <!-- Erros -->
+              <div v-if="$v.positionTitle.$dirty">
+                <span class="modal-error-text error-text" v-if="!$v.positionTitle.required">This field is required.</span>
+              </div>
+              <!-- End Erros -->
+            </span>
+          </h2>
+          <h2 class="careers__form-description radio-buttons">
+            You can also consider me for <br> your other
+          </h2>
+          <div>
+            <ul class="careers__position-list">
+              <UIRadioButtons ref="radioButtons" :radios="radioData" v-model="positionValue" @change="$v.positionValue.$touch" />
             </ul>
-            <Button type="submit" :disabled="invalid || onSubmit" :loading="onSubmit">I want to work for Mad Devs!</Button>
-          </form>
-        </ValidationObserver>
+            <!-- Erros -->
+            <div v-if="$v.positionValue.$dirty">
+              <span class="modal-error-text error-text posotion-error-text" v-if="!$v.positionValue.required">This field is required.</span>
+            </div>
+            <!-- End Erros -->
+          </div>
+          <h2 class="careers__form-description careers__form-description-email-title">
+            Please reply to
+            <span>
+              <input
+                class="careers__form-input careers__form-email-input"
+                type="email"
+                placeholder="your@mail.com"
+                v-model="email"
+                @input="$v.email.$touch"
+              />
+              <!-- Erros -->
+              <div v-if="$v.email.$dirty">
+                <span class="modal-error-text error-text" v-if="!$v.email.required">This field is required.</span>
+                <span class="modal-error-text error-text" v-if="!$v.email.email">
+                  Invalid email address. Please use your work email.
+                </span>
+              </div>
+              <!-- End Erros -->
+            </span>
+          </h2>
+          <h2 class="careers__form-description">
+            To get more information on my <br> skills, please
+          </h2>
+          <ul class="careers__form-list">
+            <li class="careers__form-list-item careers__form-list-item-linkedin">
+              – check out my
+              <input
+                class="careers__form-input careers__form-linkedin-input"
+                type="text"
+                placeholder="LinkedIn profile"
+                v-model="linkedinProfile"
+              />
+            </li>
+            <li class="careers__form-list-item careers__file-attach">
+              <div>
+                <FileInput v-model="selectedFile" @input="onFileChanged" ref="fileInput" />
+                <!-- Erros -->
+                <div v-if="$v.selectedFile.$dirty">
+                  <span class="modal-error-text error-text error-text-file-attach" v-if="!$v.selectedFile.required">
+                    This field is required.
+                  </span>
+                  <span class="modal-error-text error-text error-text-file-attach" v-if="!$v.selectedFile.fileExt">
+                    Please, upload a file with one of the following extensions: pdf, doc, docx.
+                  </span>
+                  <span class="modal-error-text error-text error-text-file-attach" v-if="!$v.selectedFile.fileSizeValidation">
+                    Sorry, file size has exceeded its max limit of 5MB.
+                  </span>
+                </div>
+                <!-- End Erros -->
+              </div>
+            </li>
+          </ul>
+          <Button
+            type="submit"
+            :disabled="$v.validationGroup.$invalid || onSubmit"
+            :loading="onSubmit"
+          >
+            I want to work for Mad Devs!
+          </Button>
+        </form>
       </div>
     </div>
     <SuccessModal :visibled="isEmailSent" id="career-modal" @onClose="resetForm" />
@@ -88,6 +121,8 @@
 </template>
 
 <script>
+import { required, email, maxLength } from 'vuelidate/lib/validators';
+import { fileSizeValidation, fileExt } from '@/helpers/validators';
 import FileInput from '@/components/Careers/FileInput';
 import Button from '@/components/Careers/Button';
 import UIRadioButtons from '@/components/ui/UIRadioButtons';
@@ -100,6 +135,28 @@ export default {
     Button,
     UIRadioButtons,
     SuccessModal
+  },
+  validations: {
+    fullName: {
+      required,
+      maxLength: maxLength(50)
+    },
+    positionTitle: {
+      required
+    },
+    positionValue: {
+      required
+    },
+    email: {
+      required,
+      email
+    },
+    selectedFile: {
+      required,
+      fileExt,
+      fileSizeValidation
+    },
+    validationGroup: ['fullName', 'email', 'positionTitle', 'positionValue', 'selectedFile']
   },
   data() {
     return {
@@ -128,11 +185,14 @@ export default {
   methods: {
     onFileChanged(params) {
       params;
+      if (this.$v && this.$v.selectedFile) {
+        this.$v.selectedFile.$touch();
+      }
     },
-    sendData(e) {
-      if (!this.errors && !this.onSubmit) {
+    sendData() {
+      if (!$v.validationGroup.$invalid && !this.onSubmit) {
         this.onSubmit = true;
-        //TODO: add ajax request
+        // TODO: add ajax request
         this.toBase64(this.selectedFile).then(base64 => {
           this.form = {
             templateId: 305491, // Required

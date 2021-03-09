@@ -1,5 +1,10 @@
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, createLocalVue } from '@vue/test-utils';
 import CareersForm from '@/components/Careers/CareersForm';
+import Vuelidate from 'vuelidate';
+
+const localVue = createLocalVue();
+
+localVue.use(Vuelidate);
 
 describe('CareersForm component', () => {
   let wrapper;
@@ -25,7 +30,7 @@ describe('CareersForm component', () => {
 
   beforeEach(() => {
     wrapper = shallowMount(CareersForm, {
-      stubs: ['ValidationProvider', 'ValidationObserver'],
+      localVue,
       mocks: {
         $refs: {
           nameInput: {

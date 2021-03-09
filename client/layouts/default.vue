@@ -18,7 +18,6 @@ export default {
     Footer
   },
   mounted() {
-    this.initSvgLazy();
     this.$nextTick(() => {
       try {
         const section = document.querySelector(window.location.hash);
@@ -35,26 +34,6 @@ export default {
       window.removeEventListener('scroll', scriptLoader);
     };
     window.addEventListener('scroll', scriptLoader);
-  },
-  methods: {
-    initSvgLazy() {
-      const lazyImages = [].slice.call(document.querySelectorAll('img.svg_lazy'));
-      if ('IntersectionObserver' in window) {
-        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-          entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-              let lazyImage = entry.target;
-              lazyImage.src = lazyImage.dataset.src;
-              lazyImage.classList.remove('svg_lazy');
-            }
-          });
-        });
-
-        lazyImages.forEach(function(lazyImage) {
-          lazyImageObserver.observe(lazyImage);
-        });
-      }
-    }
   }
 };
 </script>
