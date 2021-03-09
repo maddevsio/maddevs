@@ -35,9 +35,8 @@ module.exports = {
     height: '3px'
   },
   plugins: [
-    '~/plugins/vee-validate.js',
+    '~/plugins/vuelidate.js',
     '~/plugins/vue-social-sharing.js',
-    '~/plugins/vue-fragment.js',
     {
       src: '~/plugins/vue-silent-box.js',
       ssr: false

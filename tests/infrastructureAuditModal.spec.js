@@ -1,14 +1,21 @@
 import {
-  mount
+  mount,
+  createLocalVue
 } from '@vue/test-utils';
 import InfrastructureAuditModal from '@/components/Modals/infrastructure-audit-modal';
+import Vuelidate from 'vuelidate';
+
+const localVue = createLocalVue();
+
+localVue.use(Vuelidate);
 
 describe('Infrastructure Audit Modal', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = mount(InfrastructureAuditModal, {
-      stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar'],
+      localVue,
+      stubs: ['modal'],
       mocks: {
         $store: {
           dispatch: () => new Promise((rs, rj) => rs({status: 200}))
