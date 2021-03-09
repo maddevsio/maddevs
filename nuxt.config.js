@@ -101,8 +101,8 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/robots',
-    '@/modules/static',
-    '@/modules/crawler',
+    // '@/modules/static',
+    // '@/modules/crawler',
     '@nuxtjs/prismic'
   ],
   axios: {

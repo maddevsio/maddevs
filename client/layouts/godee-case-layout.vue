@@ -12,15 +12,10 @@ export default {
   mounted() {
     const scrollContainer = document.getElementById('scroll-container');
     let driftLoader = () => {
-      this.initDrift();
+      initDriftHelper();
       scrollContainer.removeEventListener('scroll', driftLoader);
     };
 	  scrollContainer.addEventListener('scroll', driftLoader);
-  },
-  methods: {
-    initDrift() {
-      initDriftHelper();
-    }
   }
 };
 </script>
