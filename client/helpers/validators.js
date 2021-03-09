@@ -21,5 +21,9 @@ export const fileExt = value =>  {
   if (!value) {
     return true;
   }
+  var re = /(\.pdf|\.doc|\.docx)$/i;
+  if (!re.exec(value.name)) {
+    return false;
+  }
   return true;
 };
