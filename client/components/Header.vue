@@ -6,7 +6,12 @@
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-7">
             <router-link :to="`/`" class="header__logo-icon">
-              <headerLogo class="header__header-logo" :showLogoTextProps="showLogoText" :isCasePageProps="isCasePage" :isActiveMobileMenuProps="isActiveMobileMenu"/>
+              <headerLogo
+                class="header__header-logo"
+                :showLogoTextProps="showLogoText"
+                :isCasePageProps="isCasePage"
+                :isActiveMobileMenuProps="isActiveMobileMenu"
+              />
             </router-link>
             <nav class="header__header-routes_links">
               <router-link @click.native="goToTopPage" exact to="/" class="header__navigation-link">About</router-link>
@@ -161,7 +166,6 @@ export default {
     setStylesForHeaderInGoDeeCase() {
       this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (this.caseGoDeeMainContainer.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
       this.headerWhiteLogoText.style.opacity = -1 - (this.$refs.overlay.offsetHeight - this.caseGoDeeFirstSection.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
-      console.log(this.headerWhiteLogoText.style.opacity);
     },
     setWidthForHeader() {
       let scrollBarWidth = this.caseGoDeeMainContainer.offsetWidth - this.caseGoDeeMainContainer.clientWidth;
