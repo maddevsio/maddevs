@@ -1,6 +1,6 @@
 <template>
-  <simplebar class="mobile-header" ref="mobileHeader">
-    <div class="mobile-header__scrollbar safari_only container">
+  <div class="mobile-header" >
+    <div class="safari_only container mobile-header__mobile-menu-scollbar" id="mobile-header-scrollbar">
       <div class="mobile-header__content-wrap">
         <div class="mobile-header__nav-wrap">
           <nav class="mobile-header__header-routes_links">
@@ -85,11 +85,10 @@
         <footerContacts class="mobile-header__small-phone-content" />
       </div>
     </div>
-  </simplebar>
+  </div>
 </template>
 
 <script>
-import simplebar from 'simplebar-vue';
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 import footerSocialNetworkList from '@/components/Footer/footer-social-network-list';
 import footerContacts from '@/components/Footer/footer-contacts';
@@ -98,11 +97,11 @@ import headerLogo from '@/components/svg/headerLogo';
 export default {
   name: 'mobile-header',
   components: {
-    simplebar,
     UIButtonModalTrigger,
     footerSocialNetworkList,
     footerContacts,
-    headerLogo
+    headerLogo,
+    showLogoText: true
   },
   data() {
     return {
@@ -112,6 +111,9 @@ export default {
   methods: {
     goToPage() {
       this.$emit('changed-page');
+      if (document.body.classList.contains('scrollDisabled')) {
+        document.body.classList.remove('scrollDisabled');
+      }
     }
   }
 };
@@ -322,6 +324,11 @@ export default {
       /deep/ .footer-contacts__messengers-list {
         display: none;
       }
+    }
+
+    &__mobile-menu-scollbar {
+      height: calc(100vh - 62px);
+      overflow: auto;
     }
 
     @media screen and (max-width: 991px) {

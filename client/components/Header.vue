@@ -6,7 +6,7 @@
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-7">
             <router-link :to="`/`" class="header__logo-icon">
-              <headerLogo class="header__header-logo" :isCasePage="isCasePage"/>
+              <headerLogo class="header__header-logo" :showLogoTextProps="showLogoText" :isCasePageProps="isCasePage" :isActiveMobileMenuProps="isActiveMobileMenu"/>
             </router-link>
             <nav class="header__header-routes_links">
               <router-link @click.native="goToTopPage" exact to="/" class="header__navigation-link">About</router-link>
@@ -60,7 +60,7 @@
 
     <!-- Mobile header -->
     <mobileHeader
-      v-if="isActiveMobileMenu"
+      v-show="isActiveMobileMenu"
       @changed-page="isActiveMobileMenu = false"
       @open-modal="$refs.contactMeModal.show()"
     />
@@ -100,7 +100,8 @@ export default {
       headerWhiteLogoText: null,
       caseGoDeeFirstSection: null,
       caseGoDeeMainContainer: null,
-      isActiveMobileMenu: false
+      isActiveMobileMenu: false,
+      showLogoText: true
     };
   },
   created() {
@@ -114,9 +115,9 @@ export default {
         this.setWidthForHeader();
       } else {
         this.getScrollTop();
-        window.addEventListener('scroll', this.scrollHandler);
       }
     }
+    window.addEventListener('scroll', this.scrollHandler);
   },
   watch: {
     '$route'() {
@@ -140,10 +141,16 @@ export default {
       this.scrollTop = this.readOurCaseButton.getBoundingClientRect().top - this.$refs.headerContainer.offsetHeight;
     },
     scrollHandler() {
-      this.setStylesForHeader();
+      if (this.$nuxt.$route.path.includes('/case-studies/') && !this.$nuxt.$route.path.includes('/godee')) {
+        this.setStylesForHeader();
+      }
+      this.changeLogoState(window.pageYOffset);
     },
     scrollHandlerGodeeCase() {
       this.setStylesForHeaderInGoDeeCase();
+    },
+    mobileMenuScrollHandler() {
+      this.changeLogoState(this.mobileHeaderScrollbar.scrollTop);
     },
     setStylesForHeader() {
       const opacity = 1.6 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.readOurCaseButton.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
@@ -154,6 +161,7 @@ export default {
     setStylesForHeaderInGoDeeCase() {
       this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (this.caseGoDeeMainContainer.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
       this.headerWhiteLogoText.style.opacity = -1 - (this.$refs.overlay.offsetHeight - this.caseGoDeeFirstSection.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
+      console.log(this.headerWhiteLogoText.style.opacity);
     },
     setWidthForHeader() {
       let scrollBarWidth = this.caseGoDeeMainContainer.offsetWidth - this.caseGoDeeMainContainer.clientWidth;
@@ -179,8 +187,20 @@ export default {
       this.isActiveMobileMenu = !this.isActiveMobileMenu;
       if(this.isActiveMobileMenu) {
         this.disableScrollOnBody();
+        this.$nextTick(() => {
+          this.mobileHeaderScrollbar = document.getElementById('mobile-header-scrollbar');
+          this.mobileHeaderScrollbar.addEventListener('scroll', this.mobileMenuScrollHandler);
+        });
       } else {
         this.enableScrollOnBody();
+        this.mobileHeaderScrollbar.removeEventListener('scroll', this.mobileMenuScrollHandler);
+      }
+    },
+    changeLogoState(scrollTop) {
+      if(scrollTop >= 10) {
+        this.showLogoText = false;
+      } else {
+        this.showLogoText = true;
       }
     },
     enableScrollOnBody() {
@@ -193,8 +213,6 @@ export default {
       if (this.$nuxt.$route.path.includes('/godee')) {
         window.removeEventListener('resize', this.setWidthForHeader);
         this.caseGoDeeMainContainer.removeEventListener('scroll', this.scrollHandlerGodeeCase);
-      } else {
-        window.removeEventListener('scroll', this.scrollHandler);
       }
     }
   }
