@@ -446,6 +446,14 @@ export default {
       } else {
         this.activeLegend = e;
       }
+      this.$nextTick(() => this.refreshSvg());
+    },
+    refreshSvg() {
+      const lazySvg = [].slice.call(document.querySelectorAll('img.svg_lazy'));
+      lazySvg.forEach(lazySvg => {
+        lazySvg.src = lazySvg.dataset.src;
+        lazySvg.classList.remove('svg_lazy');
+      });
     }
   }
 };

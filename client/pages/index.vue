@@ -69,8 +69,8 @@ export default {
     };
   },
   mounted() {
-    const lazyImages = [].slice.call(document.querySelectorAll('img.svg_lazy'));
-    initSvgLazyHelper(lazyImages);
+    const lazySvg = [].slice.call(document.querySelectorAll('img.svg_lazy'));
+    initSvgLazyHelper(lazySvg);
   }
 };
 </script>

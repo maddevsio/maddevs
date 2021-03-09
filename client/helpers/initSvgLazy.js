@@ -1,17 +1,17 @@
-export default function(lazyImages) {
+export default function(lazySvg) {
   if ('IntersectionObserver' in window) {
-    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+    let lazySvgObserver = new IntersectionObserver(function(entries, observer) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
-          let lazyImage = entry.target;
-          lazyImage.src = lazyImage.dataset.src;
-          lazyImage.classList.remove('svg_lazy');
+          let lazySvg = entry.target;
+          lazySvg.src = lazySvg.dataset.src;
+          lazySvg.classList.remove('svg_lazy');
         }
       });
     });
   
-    lazyImages.forEach(function(lazyImage) {
-      lazyImageObserver.observe(lazyImage);
+    lazySvg.forEach(function(lazySvg) {
+      lazySvgObserver.observe(lazySvg);
     });
   }
 }
