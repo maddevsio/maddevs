@@ -16,7 +16,7 @@
           <div class="modal_close" @click="close">
             <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
           </div>
-          <simplebar class="modal_content" ref="content">
+          <simplebar class="modal_content safari-only" ref="content">
             <slot />
           </simplebar>
         </div>
