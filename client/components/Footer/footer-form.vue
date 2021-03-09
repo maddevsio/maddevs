@@ -42,10 +42,10 @@
     />
     <UIButton
       class="ui-button--transparent-bgc submit-button"
-      @click="sendForm(agreeWithPrivacyPolicy)"
+      @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
       type="button"
       ref="submitButton"
-      :disabled="!agreeWithPrivacyPolicy || onSubmit"
+      :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
       :loading="onSubmit"
     >
       Order a project now

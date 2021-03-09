@@ -106,7 +106,13 @@
               </div>
             </li>
           </ul>
-          <Button type="submit" :disabled="onSubmit" :loading="onSubmit">I want to work for Mad Devs!</Button>
+          <Button
+            type="submit"
+            :disabled="$v.validationGroup.$invalid || onSubmit"
+            :loading="onSubmit"
+          >
+            I want to work for Mad Devs!
+          </Button>
         </form>
       </div>
     </div>

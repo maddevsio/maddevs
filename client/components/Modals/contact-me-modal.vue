@@ -56,8 +56,8 @@
     />
     <UIButton
       class="modal-button"
-      :disabled="!agreeWithPrivacyPolicy || onSubmit"
-      @click="sendForm(agreeWithPrivacyPolicy)"
+      @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
+      :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
       :loading="onSubmit"
     >
       Сontact Me

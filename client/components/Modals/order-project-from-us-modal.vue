@@ -70,8 +70,8 @@
       :inputId="inputId"
     />
     <UIButton
-      :disabled="!agreeWithPrivacyPolicy || onSubmit"
-      @click="sendForm(agreeWithPrivacyPolicy)"
+      :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
+      @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
       class="modal-button"
       :loading="onSubmit"
     >

@@ -65,8 +65,8 @@
       :inputId="inputId"
     />
     <UIButton
-      :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
-      @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+      :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
+      @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
       class="modal-button"
       :loading="onSubmit"
     >

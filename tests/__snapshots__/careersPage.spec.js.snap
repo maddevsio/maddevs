@@ -236,11 +236,13 @@ exports[`Careers page renders correctly 1`] = `
           </ul>
            
           <button
-            class="button"
+            class="button is-disabled"
             id="careers-btn"
             type="submit"
           >
-            I want to work for Mad Devs!
+            
+          I want to work for Mad Devs!
+        
           </button>
         </form>
       </div>
