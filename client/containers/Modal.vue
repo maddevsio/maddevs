@@ -16,7 +16,7 @@
           <div class="modal_close" @click="close">
             <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
           </div>
-          <simplebar class="modal_content" ref="content" @success="openSuccessModal">
+          <simplebar class="modal_content safari-only" ref="content" @success="openSuccessModal">
             <SuccessMessage v-if="isSuccess" />
             <slot v-else />
           </simplebar>
@@ -262,4 +262,6 @@ export default {
     }
   }
 }
+
+@include safari-only(80vh); // Выставляю правильную высоту для scroll контейнера, чтобы он учитывал нижнее меню в сафари на IOS
 </style>
