@@ -1,95 +1,145 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Get your trusted it partner modal renders correctly 1`] = `
-<validationobserver-stub>
+<div
+  class="form"
+>
   <div
-    class="form"
+    class="fields-list"
   >
     <div
-      class="fields-list"
+      class="modal-field-item field-item"
     >
-      <validationprovider-stub
-        class="modal-field-item field-item"
-        rules="required|max:50"
+      <p
+        class="modal-field-name field-name required"
+      >
+        Full Name
+      </p>
+       
+      <input
+        class="modal-entry-field entry-field"
+        placeholder="John Smith"
+        type="text"
       />
        
-      <validationprovider-stub
-        class="modal-field-item field-item"
-        rules="email|required"
-      />
-       
-      <validationprovider-stub
-        class="modal-field-item field-item"
-        rules="phone|max:50"
-      />
-       
-      <validationprovider-stub
-        class="modal-field-item field-item"
-        rules="max:500"
-      />
+      <!---->
     </div>
      
     <div
-      class="form-checkboxes"
+      class="modal-field-item field-item"
     >
-      <label
-        class="form-checkbox-label required"
-        for="privacy-policy-get-your-trusted-it-partner"
+      <p
+        class="modal-field-name field-name required"
       >
-        I confirm that I have read and accepted 
-        <div>
-          Mad Devs’
-        </div>
-         
-        <a
-          href="/privacy/"
-          target="_blank"
-        >
-          Privacy Policy
-        </a>
-         
-        <input
-          class="form-checkbox-input"
-          id="privacy-policy-get-your-trusted-it-partner"
-          name="Privacy policy"
-          type="checkbox"
-        />
-         
-        <div
-          class="checkmark"
-        />
-      </label>
+        Work email
+      </p>
        
-      <label
-        class="form-checkbox-label"
-        for="marketing-communications-get-your-trusted-it-partner"
-      >
-        I agree to get 
-        <div>
-          Mad Devs’
-        </div>
-         discount offers and other marketing communications.
-    
-        <input
-          class="form-checkbox-input"
-          id="marketing-communications-get-your-trusted-it-partner"
-          name="Marketing communications"
-          type="checkbox"
-        />
-         
-        <div
-          class="checkmark"
-        />
-      </label>
+      <input
+        class="modal-entry-field entry-field"
+        placeholder="your@mail.com"
+        type="text"
+      />
+       
+      <!---->
     </div>
      
-    <button
-      class="ui-button modal-button ui-button--disabled"
+    <div
+      class="modal-field-item field-item"
     >
-      
-      Get your trusted IT partner
-    
-    </button>
+      <p
+        class="modal-field-name field-name"
+      >
+        Phone number
+      </p>
+       
+      <input
+        class="modal-entry-field entry-field"
+        placeholder="+1 23X XXX-XXXX"
+        type="text"
+      />
+       
+      <!---->
+    </div>
+     
+    <div
+      class="modal-field-item field-item"
+    >
+      <p
+        class="modal-field-name field-name"
+      >
+        Expertise you are interested in
+      </p>
+       
+      <textarea
+        class="modal-entry-field entry-field textarea"
+        placeholder="I need assistance with..."
+        type="text"
+      />
+       
+      <!---->
+    </div>
   </div>
-</validationobserver-stub>
+   
+  <div
+    class="form-checkboxes"
+  >
+    <label
+      class="form-checkbox-label required"
+      for="privacy-policy-get-your-trusted-it-partner"
+    >
+      I confirm that I have read and accepted 
+      <div>
+        Mad Devs’
+      </div>
+       
+      <a
+        href="/privacy/"
+        target="_blank"
+      >
+        Privacy Policy
+      </a>
+       
+      <input
+        class="form-checkbox-input"
+        id="privacy-policy-get-your-trusted-it-partner"
+        name="Privacy policy"
+        type="checkbox"
+      />
+       
+      <div
+        class="checkmark"
+      />
+    </label>
+     
+    <label
+      class="form-checkbox-label"
+      for="marketing-communications-get-your-trusted-it-partner"
+    >
+      I agree to get 
+      <div>
+        Mad Devs’
+      </div>
+       discount offers and other marketing communications.
+    
+      <input
+        class="form-checkbox-input"
+        id="marketing-communications-get-your-trusted-it-partner"
+        name="Marketing communications"
+        type="checkbox"
+      />
+       
+      <div
+        class="checkmark"
+      />
+    </label>
+  </div>
+   
+  <button
+    class="ui-button modal-button ui-button--disabled"
+  >
+    
+    Get your trusted IT partner
+  
+  </button>
+</div>
 `;

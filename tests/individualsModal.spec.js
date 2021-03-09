@@ -1,14 +1,21 @@
 import {
-  mount
+  mount,
+  createLocalVue
 } from '@vue/test-utils';
 import IndividualsModal from '@/components/Modals/individuals-modal';
+import Vuelidate from 'vuelidate';
+
+const localVue = createLocalVue();
+
+localVue.use(Vuelidate);
 
 describe('Individuals modal', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = mount(IndividualsModal, {
-      stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar'],
+      localVue,
+      stubs: ['modal'],
       mocks: {
         $store: {
           dispatch: () => new Promise((rs, rj) => rs({status: 200}))

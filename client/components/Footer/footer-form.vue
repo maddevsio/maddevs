@@ -1,43 +1,61 @@
 <template>
   <form class="footer-form form">
-    <ValidationObserver v-slot="{ invalid }" ref="form">
-      <div class="fields-list">
-        <ValidationProvider class="field-item" rules="max:50" v-slot="{ classes, errors }">
-          <input type="text" class="entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
-          <div class="error-text">{{ errors[0] }}</div>
-        </ValidationProvider>
-        <ValidationProvider class="field-item footer-form_email" rules="email|required" v-slot="{ classes, errors }">
-          <div v-PlaceholderAsterisk="'your@mail.com'">
-            <input type="text" class="entry-field" :class="classes" v-model="email">
-          </div>
-          <div class="error-text">{{ errors[0] }}</div>
-        </ValidationProvider>
-        <ValidationProvider class="field-item" rules="max:500" v-slot="{ classes, errors }">
-          <textarea type="text" class="entry-field textarea" :class="classes" placeholder="Describe your project..." v-model="projectDescriber" />
-          <div class="error-text">{{ errors[0] }}</div>
-        </ValidationProvider>
+    <div class="fields-list">
+      <div class="field-item">
+        <input @input="$v.fullName.$touch" type="text" class="entry-field" placeholder="John Smith" v-model="fullName">
+        <!-- Erros -->
+        <div v-if="$v.fullName.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.fullName.maxLength">
+            Sorry, the number of characters in this field should not exceed 50.
+          </span>
+        </div>
+        <!-- End Erros -->
       </div>
-      <FormCheckboxes
-        ref="checkboxes"
-        @getPrivacyCheckboxState="getPrivacyCheckboxState"
-        @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
-      />
-      <UIButton
-        class="ui-button--transparent-bgc submit-button"
-        @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-        type="button"
-        ref="submitButton"
-        :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
-        :loading="onSubmit"
-      >
-        Order a project now
-      </UIButton>
-    </ValidationObserver>
+      <div class="field-item footer-form_email">
+        <div v-PlaceholderAsterisk="'your@mail.com'">
+          <input @input="$v.email.$touch" type="text" class="entry-field" v-model="email">
+        </div>
+        <!-- Erros -->
+        <div v-if="$v.email.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.email.required">This field is required.</span>
+          <span class="modal-error-text error-text" v-if="!$v.email.email">
+            Invalid email address. Please use your work email.
+          </span>
+        </div>
+        <!-- End Erros -->
+      </div>
+      <div class="field-item">
+        <textarea @input="$v.projectDescriber.$touch" type="text" class="entry-field textarea" placeholder="Describe your project..." v-model="projectDescriber" />
+        <!-- Erros -->
+        <div v-if="$v.projectDescriber.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.projectDescriber.maxLength">
+            Sorry, the number of characters in this field should not exceed 500.
+          </span>
+        </div>
+        <!-- End Erros -->
+      </div>
+    </div>
+    <FormCheckboxes
+      ref="checkboxes"
+      @getPrivacyCheckboxState="getPrivacyCheckboxState"
+      @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
+    />
+    <UIButton
+      class="ui-button--transparent-bgc submit-button"
+      @click="sendForm(agreeWithPrivacyPolicy)"
+      type="button"
+      ref="submitButton"
+      :disabled="!agreeWithPrivacyPolicy || onSubmit"
+      :loading="onSubmit"
+    >
+      Order a project now
+    </UIButton>
     <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
   </form>
 </template>
 
 <script>
+import { required, email, maxLength } from 'vuelidate/lib/validators';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import UIButton from '@/components/ui/UIButton';
 import SuccessModal from '@/components/Modals/success-modal';
@@ -52,6 +70,19 @@ export default {
   },
   directives: {
     PlaceholderAsterisk
+  },
+  validations: {
+    fullName: {
+      maxLength: maxLength(50)
+    },
+    email: {
+      required,
+      email
+    },
+    projectDescriber: {
+      maxLength: maxLength(500)
+    },
+    validationGroup: ['fullName', 'email', 'projectDescriber']
   },
   data: () => ({
     form: null,

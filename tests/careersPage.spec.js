@@ -1,7 +1,14 @@
 import {
-  mount
+  mount,
+  createLocalVue
 } from '@vue/test-utils';
 import CareersPage from '@/pages/careers';
+import Vuelidate from 'vuelidate';
+
+const localVue = createLocalVue();
+
+localVue.use(Vuelidate);
+
 
 describe('Careers page', () => {
   let wrapper;
@@ -13,7 +20,8 @@ describe('Careers page', () => {
       }
     };
     wrapper = mount(CareersPage, {
-      stubs: ['ValidationObserver', 'router-link']
+      localVue,
+      stubs: ['router-link']
     });
   });
 

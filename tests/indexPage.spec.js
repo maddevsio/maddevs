@@ -1,7 +1,13 @@
 import {
-  mount
+  mount,
+  createLocalVue
 } from '@vue/test-utils';
 import IndexPage from '@/pages/index';
+import Vuelidate from 'vuelidate';
+
+const localVue = createLocalVue();
+
+localVue.use(Vuelidate);
 
 describe('Index page', () => {
   let wrapper;
@@ -13,7 +19,8 @@ describe('Index page', () => {
       }
     };
     wrapper = mount(IndexPage, {
-      stubs: ['ValidationObserver', 'client-only', 'router-link', 'fragment']
+      localVue,
+      stubs: ['client-only', 'router-link']
     });
   });
 

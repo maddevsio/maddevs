@@ -44,7 +44,205 @@ exports[`Careers page renders correctly 1`] = `
       <div
         class="careers__wrapper"
       >
-        <validationobserver-stub />
+        <form
+          class="careers__form"
+        >
+          <label
+            class="careers__form-name-label"
+          >
+            Hello, my name is
+          
+            <div>
+              <input
+                class="careers__form-input careers__form-name-input"
+                placeholder="John Smith"
+                type="text"
+              />
+               
+              <!---->
+            </div>
+          </label>
+           
+          <h2
+            class="careers__form-description"
+          >
+            
+          I want to work for you as a
+          
+            <div
+              rules="required"
+            >
+              <input
+                class="careers__form-input careers__form-position-input"
+                placeholder="desired position."
+                type="text"
+              />
+               
+              <!---->
+            </div>
+          </h2>
+           
+          <h2
+            class="careers__form-description radio-buttons"
+          >
+            
+          You can also consider me for 
+            <br />
+             your other
+        
+          </h2>
+           
+          <div>
+            <ul
+              class="careers__position-list"
+            >
+              <div
+                class="ui-radio-buttons"
+              >
+                <div
+                  class="ui-radio-buttons_item"
+                >
+                  <div
+                    class="ui-radio-buttons_item-circle"
+                  />
+                   
+                  <div
+                    class="ui-radio-buttons_item-label"
+                  >
+                    Senior,
+                  </div>
+                </div>
+                <div
+                  class="ui-radio-buttons_item"
+                >
+                  <div
+                    class="ui-radio-buttons_item-circle"
+                  />
+                   
+                  <div
+                    class="ui-radio-buttons_item-label"
+                  >
+                    Middle,
+                  </div>
+                </div>
+                <div
+                  class="ui-radio-buttons_item"
+                >
+                  <div
+                    class="ui-radio-buttons_item-circle"
+                  />
+                   
+                  <div
+                    class="ui-radio-buttons_item-label"
+                  >
+                    Junior,
+                  </div>
+                </div>
+                <div
+                  class="ui-radio-buttons_item"
+                >
+                  <div
+                    class="ui-radio-buttons_item-circle"
+                  />
+                   
+                  <div
+                    class="ui-radio-buttons_item-label"
+                  >
+                    Intern
+                  </div>
+                </div>
+              </div>
+            </ul>
+             
+            <!---->
+          </div>
+           
+          <h2
+            class="careers__form-description careers__form-description-email-title"
+          >
+            
+          Please reply to
+          
+            <div>
+              <input
+                class="careers__form-input careers__form-email-input"
+                placeholder="your@mail.com"
+                type="email"
+              />
+               
+              <!---->
+            </div>
+          </h2>
+           
+          <h2
+            class="careers__form-description"
+          >
+            
+          To get more information on my 
+            <br />
+             skills, please
+        
+          </h2>
+           
+          <ul
+            class="careers__form-list"
+          >
+            <li
+              class="careers__form-list-item careers__form-list-item-linkedin"
+            >
+              
+            – check out my
+            
+              <input
+                class="careers__form-input careers__form-linkedin-input"
+                placeholder="LinkedIn profile"
+                type="text"
+              />
+            </li>
+             
+            <li
+              class="careers__form-list-item careers__file-attach"
+            >
+              <div>
+                <div
+                  class="file-input"
+                >
+                  <input
+                    accept=".pdf,.cv,.doc,.odt,.docx,.txt"
+                    class="file-input__uploader"
+                    id="file"
+                    name="file"
+                    type="file"
+                  />
+                   
+                  <span
+                    class="none-decorated-dash"
+                  >
+                    –
+                  </span>
+                   
+                  <label
+                    class="file-input__cv file-input__cv--attachable"
+                    for="file"
+                  >
+                    
+   find attached my CV
+                  </label>
+                </div>
+                 
+                <!---->
+              </div>
+            </li>
+          </ul>
+           
+          <button
+            class="button"
+            id="careers-btn"
+            type="submit"
+          >
+            I want to work for Mad Devs!
+          </button>
+        </form>
       </div>
     </div>
      

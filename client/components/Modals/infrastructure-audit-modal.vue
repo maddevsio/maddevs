@@ -1,55 +1,83 @@
 <template>
-  <ValidationObserver v-slot="{ invalid }">
-    <div class="form"> 
-      <div class="fields-list">
-        <ValidationProvider class="modal-field-item field-item" rules="required|max:50" v-slot="{ classes, errors }">
-          <p class="modal-field-name field-name required">Full Name</p>
-          <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="John Smith" v-model="fullName">
-          <div class="modal-error-text error-text">{{ errors[0] }}</div>
-        </ValidationProvider>
-        <ValidationProvider class="modal-field-item field-item" rules="email|required" v-slot="{ classes, errors }">
-          <p class="modal-field-name field-name required">Work email</p>
-          <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="your@mail.com" v-model="email">
-          <div class="modal-error-text error-text">{{ errors[0] }}</div>
-        </ValidationProvider>
-        <ValidationProvider class="modal-field-item field-item" rules="phone|max:50" v-slot="{ classes, errors }">
-          <p class="modal-field-name field-name">Phone number</p>
-          <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
-          <div class="modal-error-text error-text">{{ errors[0] }}</div>
-        </ValidationProvider>
-        <ValidationProvider class="modal-field-item field-item" rules="max:300|required" v-slot="{ classes, errors }">
-          <p class="modal-field-name field-name required">Company</p>
-          <input type="text" class="modal-entry-field entry-field" :class="classes" placeholder="MyAwesomeCompany, Inc." v-model="company">
-          <div class="modal-error-text error-text">{{ errors[0] }}</div>
-        </ValidationProvider>
-        <RadioList 
-          @getSelectedProjectHost="getSelectedProjectHost"
-          :inputId="inputId"
-          :fieldName="fieldName"
-          :emitMethodName="emitMethodName"
-          :options="options"
-          :sectionIsRequired="sectionIsRequired"
-        />
+  <div class="form"> 
+    <div class="fields-list">
+      <div class="modal-field-item field-item">
+        <p class="modal-field-name field-name required">Full Name</p>
+        <input @input="$v.fullName.$touch" type="text" class="modal-entry-field entry-field" placeholder="John Smith" v-model="fullName">
+        <!-- Erros -->
+        <div v-if="$v.fullName.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.fullName.required">This field is required.</span>
+          <span class="modal-error-text error-text" v-if="!$v.fullName.maxLength">
+            Sorry, the number of characters in this field should not exceed 50.
+          </span>
+        </div>
+        <!-- End Erros -->
       </div>
-      <FormCheckboxes
-        ref="checkboxes"
-        @getPrivacyCheckboxState="getPrivacyCheckboxState"
-        @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
+      <div class="modal-field-item field-item">
+        <p class="modal-field-name field-name required">Work email</p>
+        <input @input="$v.email.$touch" type="text" class="modal-entry-field entry-field" placeholder="your@mail.com" v-model="email">
+        <!-- Erros -->
+        <div v-if="$v.email.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.email.required">This field is required.</span>
+          <span class="modal-error-text error-text" v-if="!$v.email.email">
+            Invalid email address. Please use your work email.
+          </span>
+        </div>
+        <!-- End Erros -->
+      </div>
+      <div class="modal-field-item field-item">
+        <p class="modal-field-name field-name">Phone number</p>
+        <input @input="$v.phoneNumber.$touch" type="text" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
+        <!-- Erros -->
+        <div v-if="$v.phoneNumber.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.phoneNumber.required">This field is required.</span>
+          <span class="modal-error-text error-text" v-if="!$v.phoneNumber.maxLength">
+            Sorry, the number of characters in this field should not exceed 50.
+          </span>
+        </div>
+        <!-- End Erros -->
+      </div>
+      <div class="modal-field-item field-item">
+        <p class="modal-field-name field-name required">Company</p>
+        <input @input="$v.company.$touch" type="text" class="modal-entry-field entry-field" placeholder="MyAwesomeCompany, Inc." v-model="company">
+        <!-- Erros -->
+        <div v-if="$v.company.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.company.required">This field is required.</span>
+          <span class="modal-error-text error-text" v-if="!$v.company.maxLength">
+            Sorry, the number of characters in this field should not exceed 300.
+          </span>
+        </div>
+        <!-- End Erros -->
+      </div>
+      <RadioList 
+        @getSelectedProjectHost="getSelectedProjectHost"
         :inputId="inputId"
+        :fieldName="fieldName"
+        :emitMethodName="emitMethodName"
+        :options="options"
+        :sectionIsRequired="sectionIsRequired"
       />
-      <UIButton
-        :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
-        @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
-        class="modal-button"
-        :loading="onSubmit"
-      >
-        Get an infrastructure audit
-      </UIButton>
     </div>
-  </ValidationObserver>
+    <FormCheckboxes
+      ref="checkboxes"
+      @getPrivacyCheckboxState="getPrivacyCheckboxState"
+      @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
+      :inputId="inputId"
+    />
+    <UIButton
+      :disabled="invalid || !agreeWithPrivacyPolicy || onSubmit"
+      @click="sendForm(!invalid || agreeWithPrivacyPolicy)"
+      class="modal-button"
+      :loading="onSubmit"
+    >
+      Get an infrastructure audit
+    </UIButton>
+  </div>
 </template>
 
 <script>
+import { required, email, maxLength } from 'vuelidate/lib/validators';
+import { phone } from '@/helpers/validators';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import RadioList from '@/components/ui/radio-list';
 import UIButton from '@/components/ui/UIButton';
@@ -60,6 +88,25 @@ export default {
     FormCheckboxes,
     RadioList,
     UIButton
+  },
+  validations: {
+    fullName: {
+      required,
+      maxLength: maxLength(50)
+    },
+    company: {
+      required,
+      maxLength: maxLength(300)
+    },
+    email: {
+      required,
+      email
+    },
+    phoneNumber: {
+      phone,
+      maxLength: maxLength(50)
+    },
+    validationGroup: ['fullName', 'company', 'email', 'phoneNumber']
   },
   data: () => ({
     modalName: 'infrastructure-modal',
