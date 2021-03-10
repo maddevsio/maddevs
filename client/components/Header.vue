@@ -254,7 +254,7 @@ export default {
     &__header-logo {
       width: 34px;
       height: 58px;
-      margin: 5px -33px 0 -65px;
+      margin: -3px -33px 0 -65px;
     }
 
     &__left-nav_bar,
