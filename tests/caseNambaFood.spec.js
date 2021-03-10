@@ -7,8 +7,8 @@ import './__mocks__/intersectionObserverMock';
 describe('Namba food', () => {
   let wrapper;
   const data = {
-    title: 'Mad Devs Case Study: Namba Food Top Delivery Service in Central Asia',
-    description: 'Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing orders, and business owners work as a seamless system, ensuring a smooth delivery process for all types of goods.',
+    title: 'Mad Devs Case Study: Namba Food Top Delivery Service',
+    description: 'FoodTech Case Study. How to make a delivery app from scratch? Read Namba Food’s story of developing a custom software top delivery service in Central Asia.',
     ogUrl: 'https://maddevs.io/case-studies/namba-food/',
     team: [
       {
@@ -180,7 +180,7 @@ describe('Namba food', () => {
         },
         fileName: 'apple-iphone-xr-silver',
         fileExtension: 'png',
-        alt: 'Namba Food Mobile Application Main Page on Iphone for Users.'
+        alt: 'Namba Food: Food and Grocery Delivery App for Iphone.'
       },
       {
         title: 'Application for <br> deliverymen',
@@ -191,7 +191,7 @@ describe('Namba food', () => {
         },
         fileName: 'samsung-galaxy-s20-cosmic-gray',
         fileExtension: 'png',
-        alt: 'Namba Food Mobile Application Main Page on Android for Deliverymen.'
+        alt: 'Namba Food: Courier App for Android.'
       },
       {
         title: 'Unified control system for operators',
@@ -202,7 +202,7 @@ describe('Namba food', () => {
         },
         fileName: 'system-for-call-center',
         fileExtension: 'png',
-        alt: 'Namba Food Unified Control System for Operators on Desktop.'
+        alt: 'Namba Food: Admin Panel Which Help to Control and Track Food and Grocery Delivery.'
       },
       {
         title: 'Control panel for <br> managers',
@@ -213,7 +213,7 @@ describe('Namba food', () => {
         },
         fileName: 'sjms-analytics-mini',
         fileExtension: 'png',
-        alt: 'Namba Food Control Panel for Managers on Desktop.'
+        alt: 'Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery.'
       }
     ],
     swiperAdminPanel: [
@@ -221,7 +221,7 @@ describe('Namba food', () => {
         fileName: 'admin',
         pictureFolder: 'nambafood',
         fileExtension: 'jpg',
-        alt: 'Namba Food Delivery Control Admin Panel.'
+        alt: 'Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery.'
       },
       {
         fileName: 'dashboard',
