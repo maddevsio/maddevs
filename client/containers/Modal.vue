@@ -16,8 +16,9 @@
           <div class="modal_close" @click="close">
             <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
           </div>
-          <simplebar class="modal_content" ref="content">
-            <slot />
+          <simplebar class="modal_content safari-only" ref="content" @success="openSuccessModal">
+            <SuccessMessage v-if="isSuccess" />
+            <slot v-else />
           </simplebar>
         </div>
       </transition>
@@ -27,10 +28,11 @@
 
 <script>
 import simplebar from 'simplebar-vue';
+import SuccessMessage from '@/components/Modals/success-message';
 
 export default {
   name: 'Modal',
-  components: { simplebar },
+  components: { simplebar, SuccessMessage },
   props: {
     appendToBody: {
       type: Boolean,
@@ -41,7 +43,8 @@ export default {
     return {
       isVisible: false,
       contentLoaded: false,
-      isOverlay: false
+      isOverlay: false,
+      isSuccess: false
     };
   },
   directives: {
@@ -63,6 +66,9 @@ export default {
     document.removeEventListener('keydown', this.onKeydown);
   },
   methods: {
+    openSuccessModal() {
+      this.isSuccess = true;
+    },
     close() {
       setTimeout(() => {
         this.isVisible = false;
@@ -74,6 +80,7 @@ export default {
       setTimeout(() => {
         this.isOverlay = false;
         this.$emit('on-close');
+        this.isSuccess = false;
       }, 100);
     },
     show() {
@@ -93,18 +100,10 @@ export default {
       }
     },
     enableScrollOnBody() {
-      // Disable body scroll in Safari for mobile devices
-      if (window.innerWidth <= 640) {
-        document.body.style.position = 'initial';
-      }
       document.body.style.top = 'auto';
       document.body.style.overflow = 'auto';
     },
     disableScrollOnBody() {
-      // Disable body scroll in Safari for mobile devices
-      if (window.innerWidth <= 640) {
-        document.body.style.position = 'fixed';
-      }
       document.body.style.top = `-${window.scrollY}px`;
       document.body.style.overflow = 'hidden';
     }
@@ -114,7 +113,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/styles/vars';
-@import '../assets/styles/modalWindows';
 
 .modal {
   width: 100%;
@@ -248,11 +246,49 @@ export default {
 
     &_content {
       padding: 0 10px;
+      max-height: 85vh;
     }
 
     /deep/ .simplebar-vertical {
       right: 0;
     }
+  }
+}
+
+/* iphone 5 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+  _::-webkit-full-page-media, _:future, :root .safari-only {
+    max-height: calc(100vh - 177px) !important;
+  }
+}
+/* iphone 6, 6s, 7, 8 */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  _::-webkit-full-page-media, _:future, :root .safari-only {
+    max-height: calc(100vh - 177px) !important;
+  }
+}
+/* iphone 6+, 6s+, 7+, 8+ */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+  _::-webkit-full-page-media, _:future, :root .safari-only {
+    max-height: calc(100vh - 177px) !important;
+  }
+}
+/* iphone X , XS, 11 Pro */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  _::-webkit-full-page-media, _:future, :root .safari-only {
+    max-height: calc(100vh - 205px) !important;
+  }
+}
+/* iphone XR, 11 */
+@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio: 2) {
+  _::-webkit-full-page-media, _:future, :root .safari-only {
+    max-height: calc(100vh - 205px) !important;
+  }
+}
+/* iphone XS Max, 11 Pro Max */
+@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio: 3) {
+  _::-webkit-full-page-media, _:future, :root .safari-only {
+    max-height: calc(100vh - 205px) !important;
   }
 }
 </style>

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:400,500,600,700');
 
-
 body {
   margin: 0;
   padding: 0;
@@ -51,9 +50,14 @@ main {
   opacity: 0;
 }
 
+.svg_lazy-fade {
+  transition: opacity 0.3s ease-in;
+}
+
 .scrollDisabled {
   width: 100%;
   position: fixed;
+  overflow: hidden;
   top: 0;
 }
 

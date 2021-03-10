@@ -647,21 +647,44 @@ $tech_legends: (
     line-height: 13px;
     color: rgba(255, 255, 255, 0.25);
     margin-top: 15px;
+    display: block;
     width: 100%;
     max-width: 90px;
     text-overflow: ellipsis;
     text-align: center;
     overflow: hidden;
 
+    @media screen and (max-width: 1370px) {
+      max-width: 60px;
+    }
+
+    @media screen and (max-width: 1090px) {
+      max-width: 40px;
+    }
+
     @media screen and (max-width: 976px) {
       font-size: 8px;
       line-height: 13px;
       margin-top: 11px;
+      max-width: 65px;
+    }
+
+    @media screen and (max-width: 850px) {
+      max-width: 45px;
     }
 
     @media screen and (max-width: 668px) {
       margin-top: 9px;
       margin-bottom: 3px;
+      max-width: 25px;
+    }
+
+    @media screen and (max-width: 576px) {
+      max-width: 50px;
+    }
+
+    @media screen and (max-width: 420px) {
+      max-width: 30px;
     }
   }
 
