@@ -113,7 +113,7 @@ export default {
       this.$emit('changed-page');
       if (document.body.classList.contains('scrollDisabled') && document.documentElement.classList.contains('scrollDisabled')) {
         document.body.classList.remove('scrollDisabled');
-        document.documentElement.classList.add('scrollDisabled');
+        document.documentElement.classList.remove('scrollDisabled');
       }
     }
   }
@@ -432,37 +432,37 @@ export default {
   /* iphone 5 */
   @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
     _::-webkit-full-page-media, _:future, :root .safari-only {
-      max-height: calc(100vh - 177px) !important;
+      max-height: calc(100vh - 120px) !important;
     }
   }
   /* iphone 6, 6s, 7, 8 */
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
     _::-webkit-full-page-media, _:future, :root .safari-only {
-      max-height: calc(100vh - 177px) !important;
+      max-height: calc(100vh - 120px) !important;
     }
   }
   /* iphone 6+, 6s+, 7+, 8+ */
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
     _::-webkit-full-page-media, _:future, :root .safari-only {
-      max-height: calc(100vh - 177px) !important;
+      max-height: calc(100vh - 120px) !important;
     }
   }
   /* iphone X , XS, 11 Pro */
   @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     _::-webkit-full-page-media, _:future, :root .safari-only {
-      max-height: calc(100vh - 205px) !important;
+      max-height: calc(100vh - 157px) !important;
     }
   }
   /* iphone XR, 11 */
   @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio: 2) {
     _::-webkit-full-page-media, _:future, :root .safari-only {
-      max-height: calc(100vh - 205px) !important;
+      max-height: calc(100vh - 157px) !important;
     }
   }
   /* iphone XS Max, 11 Pro Max */
   @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio: 3) {
     _::-webkit-full-page-media, _:future, :root .safari-only {
-      max-height: calc(100vh - 205px) !important;
+      max-height: calc(100vh - 157px) !important;
     }
   }
 </style>
