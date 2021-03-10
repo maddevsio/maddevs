@@ -27,8 +27,8 @@ export default {
       state.posts = data;
       state.featuredPost = data.find(post => post.tags.includes('Featured post'));
     },
-    SET_POSTS_FILTER(state, filter) {
-      state.postsCategory = filter;
+    SET_POSTS_CATEGORY(state, category) {
+      state.postsCategory = category;
     },
     SET_POSTS_LOADED(state, value) {
       state.postsLoaded = value;
@@ -43,18 +43,18 @@ export default {
         const pageContent = (await this.$prismic.api.getSingle('blog_home')).data;
         commit('SET_BLOG_PAGE_CONTENT', pageContent);
         if (!Boolean(state.postsCategory)) {
-          commit('SET_POSTS_FILTER', state.blogPageContent.categories[0].title);
+          commit('SET_POSTS_CATEGORY', state.blogPageContent.categories[0].title);
         }
       } catch(err) {}
     },
     async getBlogPosts({commit}) {
       try {
-        const posts = await this.$prismic.api.query(
+        const posts = (await this.$prismic.api.query(
           this.$prismic.predicates.at('document.type', 'post'),
           {orderings : '[my.post.date desc]', pageSize: 100}
-        );
+        )).results;
 
-        commit('SET_POSTS', posts.results);
+        commit('SET_POSTS', posts);
         commit('SET_POSTS_LOADED', true);
       } catch(err) {}
     },
@@ -63,7 +63,7 @@ export default {
     },
     changePostsCategory({commit}, filter) {
       commit('SET_POSTS_PAGE', 1);
-      commit('SET_POSTS_FILTER', filter);
+      commit('SET_POSTS_CATEGORY', filter);
     }
   },
   getters: {
@@ -74,7 +74,7 @@ export default {
       return state.posts;
     },
     filteredPosts(state) {
-      if (state.postsCategory !== null) {
+      if (state.postsCategory !== null && state.blogPageContent.categories) {
         const currentCategory = state.blogPageContent.categories.find(tag => tag.title === state.postsCategory);
         const currentTags = [...currentCategory.tags, currentCategory.title];
 
