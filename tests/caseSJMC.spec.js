@@ -6,8 +6,8 @@ import SirJohnMonashCentre from '../client/pages/case-studies/sir-john-monash-ce
 describe('SirJohnMonashCentre', () => {
   let wrapper;
   const data = {
-    title: 'Mad Devs Case Study: Australian National Memorial - Sir John Monash Centre',
-    description: 'The SJMC and Mad Devs partnership has been based on enhancements and preventative maintenance contracts. Transferring a project to another IT partner is never easy for all parties involved. Let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.',
+    title: 'Mad Devs Case Study: Sir John Monash Centre',
+    description: 'BYOD Case Study. Read how Mad Devs enhanced and developed new features for the Sir John Monash Centre’s software, mobile applications, and technological debt.',
     keyGoalsList: [
       'Understanding the complexity of the MMIT Brain software',
       'Building a small-scale version of the SJMC experience in 1 month',
@@ -199,37 +199,37 @@ describe('SirJohnMonashCentre', () => {
         fileName: 'office-team-first-slide',
         pictureFolder: 'sjmc',
         fileExtension: 'jpg',
-        alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
+        alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
       },
       {
         fileName: 'office-team-second-slide',
         pictureFolder: 'sjmc',
         fileExtension: 'jpg',
-        alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
+        alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
       },
       {
         fileName: 'office-team-third-slide',
         pictureFolder: 'sjmc',
         fileExtension: 'jpg',
-        alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
+        alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
       },
       {
         fileName: 'office-team-fourth-slide',
         pictureFolder: 'sjmc',
         fileExtension: 'jpg',
-        alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
+        alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
       },
       {
         fileName: 'office-team-fifth-slide',
         pictureFolder: 'sjmc',
         fileExtension: 'jpg',
-        alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
+        alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
       },
       {
         fileName: 'office-team-sixth-slide',
         pictureFolder: 'sjmc',
         fileExtension: 'jpg',
-        alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
+        alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
       }
     ],
     swiperGrafanaPrometheus: [
@@ -237,13 +237,13 @@ describe('SirJohnMonashCentre', () => {
         fileName: 'grafana-prometheus-first-slide',
         pictureFolder: 'sjmc',
         fileExtension: 'jpg',
-        alt: 'Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation.'
+        alt: 'SJMC System Monitoring.'
       },
       {
         fileName: 'grafana-prometheus-second-slide',
         pictureFolder: 'sjmc',
         fileExtension: 'jpg',
-        alt: 'Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation.'
+        alt: 'SJMC System Monitoring.'
       }
     ],
     swiperMadDevsTrip: [

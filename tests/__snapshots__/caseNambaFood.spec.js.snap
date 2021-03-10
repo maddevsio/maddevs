@@ -2267,7 +2267,7 @@ exports[`Namba food renders correctly 1`] = `
           class="case_link"
           to="/services#software-development"
         >
-          https://maddevs.io/services/#software-development
+          build a product
         </router-link-stub>
          that truly solves this customer’s problems. The year-over-year growth rate is hugely impressive.
       
