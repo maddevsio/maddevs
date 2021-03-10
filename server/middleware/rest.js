@@ -1,11 +1,49 @@
 const sendpulse = require('sendpulse-api');
 const bodyParser = require('body-parser');
+const cors = require('cors');
+const redirectList = require('../json/redirect');
 const app = require('express')();
 
 const _config_ = require('../config');
 
+app.use(cors());
 app.use(bodyParser.json({ limit: '5mb' }));
 app.use(bodyParser.urlencoded({ limit: '5mb', extended: true }));
+
+app.enable('trust proxy');
+
+app.use(function applyXFrame(req, res, next) {
+  res.set('X-Frame-Options', 'DENY');
+  next();
+});
+app.use((req, res, next) => {
+  if (req.secure) {
+    next();
+  } else {
+    res.redirect('https://' + req.headers.host + req.url);
+  }
+});
+app.use((req, res, next) => {
+  if (['blog.maddevs.co', 'blog.maddevs.io'].includes(req.headers.host)) {
+    const requestUrl = req.url.slice(-1) === '/' && req.url.length > 1 ? req.url.substr(0, req.url.length - 1) : req.url;
+    const match = redirectList.find(url => url.from === requestUrl);
+    if (match !== undefined && !!match.to) {
+      res.redirect(301, match.to);
+    } else {
+      res.redirect(301, 'https://maddevs.io/blog');
+    }
+  } else {
+    next();
+  }
+});
+
+app.get('/ru', (req, res) => {
+  res.redirect(301, 'https://maddevs.io/');
+});
+
+app.get('/en', (req, res) => {
+  res.redirect(301, 'https://maddevs.io/');
+});
 
 app.post('/send-email', (req, res) => {
   if (req.body.templateId === null || req.body.templateId === undefined) {

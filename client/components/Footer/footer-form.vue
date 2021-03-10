@@ -88,7 +88,7 @@ export default {
     form: null,
     fullName: null,
     email: null,
-    emailTo: 'team@maddevs.io',
+    emailTo: 'team@maddevs.io', // Change for local test
     projectDescriber: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,

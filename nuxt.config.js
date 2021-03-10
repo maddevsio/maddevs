@@ -78,7 +78,7 @@ module.exports = {
   ** Server middlewares
   */
   serverMiddleware: [
-    { path: '/api', handler: '~/../server/middleware/sendPulse.js' }
+    { path: '/api', handler: '~/../server/middleware/rest.js' }
   ],
   /*
   ** Build configuration
@@ -109,7 +109,7 @@ module.exports = {
     '@nuxtjs/prismic'
   ],
   axios: {
-    baseURL: process.env.NODE_API_URL
+    baseURL: process.env.PORT || 5000
   },
   robots: {
     UserAgent: '*',
