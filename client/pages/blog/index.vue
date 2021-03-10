@@ -86,7 +86,8 @@ export default {
     return {
       pageSize: 12,
       metaTitle: 'Blog',
-      ogUrl: 'https://maddevs.io/blog/'
+      ogUrl: 'https://maddevs.io/blog/',
+      visitedPost: null
     };
   },
   created() {
@@ -138,6 +139,7 @@ export default {
     },
 
     handleFilterChange(e) {
+      this.visitedPost = null;
       this.changePostsCategory(e.target.value);
     }
   },
@@ -148,6 +150,20 @@ export default {
     },
     totalPages: function() {
       return Math.ceil(this.filteredPosts.length / this.pageSize);
+    }
+  },
+  beforeRouteEnter (to, from, next) {
+    next(vm => {
+      if (from.params.uid) vm.visitedPost = from.fullPath;
+    });
+  },
+  watch: {
+    filteredPosts: function() {
+      const prevPostLink = document.querySelector(`a[href='${this.visitedPost}']`);
+      if (prevPostLink && !prevPostLink.classList.contains('featured-post')) {
+        let offset = (prevPostLink.getBoundingClientRect().top + window.scrollY) - 150; // 150 - offset between the post and the top of screen
+        window.scrollTo(0, offset);
+      }
     }
   }
 };
