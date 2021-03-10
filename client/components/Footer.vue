@@ -37,16 +37,26 @@ export default {
     footerNavbarMobile,
     footerSocialNetWorkList
   },
-  mounted() {
-    if ($nuxt.$route.name) {
-      this.currentPageName = $nuxt.$route.name;
-    }
-  },
   data() {
     return {
       currentYear: new Date().getFullYear(),
       currentPageName: ''
     };
+  },
+  watch: {
+    '$route'() {
+      this.updateClassName();
+    }
+  },
+  mounted() {
+    this.updateClassName();
+  },
+  methods: {
+    updateClassName() {
+      if ($nuxt.$route.name) {
+        this.currentPageName = $nuxt.$route.name;
+      }
+    }
   }
 };
 </script>

@@ -188,7 +188,7 @@ export default {
 
     .fields-list {
       display: grid;
-      margin-bottom: 25px;
+      margin-bottom: 18px;
     }
 
     .form-checkboxes {
@@ -197,7 +197,7 @@ export default {
     }
 
     .field-item {
-      margin-bottom: 13px;
+      margin-bottom: 16px;
       display: flex;
       flex-direction: column;
 
