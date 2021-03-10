@@ -45,6 +45,7 @@ export default {
         {
           projectName: 'nambafood',
           logoImg: 'nambafood-icon',
+          logoWidth: 104,
           link: '/case-studies/namba-food/',
           targetBlank: false,
           contributionWidgetColors: ['#ec1c24', '#96969c'],
@@ -58,6 +59,7 @@ export default {
         {
           projectName: 'teacherly',
           logoImg: 'sjmc-icon',
+          logoWidth: 91.5,
           link: '/case-studies/sir-john-monash-centre/',
           targetBlank: false,
           contributionWidgetColors: ['#96969c', '#96969c'],
@@ -71,6 +73,7 @@ export default {
         {
           projectName: 'guardrails',
           logoImg: 'guardrails-icon',
+          logoWidth: 174,
           link: 'https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0',
           targetBlank: true,
           contributionWidgetColors: ['#96969c', '#96969c'],
@@ -84,6 +87,7 @@ export default {
         {
           projectName: 'godee',
           logoImg: 'godee-icon',
+          logoWidth: 121,
           link: '/case-studies/godee/',
           targetBlank: false,
           contributionWidgetColors: ['#000', '#000'],

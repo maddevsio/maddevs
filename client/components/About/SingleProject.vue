@@ -13,6 +13,8 @@
     >
       <div class="single-project__content-wrap">
         <img
+          :width="project.logoWidth"
+          height="41"
           :data-src="require(`@/assets/img/Home/svg/caseIcons/${project.logoImg}.svg`)"
           class="svg_lazy single-project__logo"
           :alt="project.alt"
