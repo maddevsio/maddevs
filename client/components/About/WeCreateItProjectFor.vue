@@ -108,6 +108,7 @@ export default {
     height: 23px;
 
     img {
+      display: block;
       width: 32px;
       height: 23px;
       transition: opacity 0.3s ease-in;
