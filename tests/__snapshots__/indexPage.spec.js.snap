@@ -188,71 +188,203 @@ exports[`Index page renders correctly 1`] = `
           class="weCreateItProject__flags-list"
         >
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-usa"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="usa"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-australia"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="australia"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-vietnam"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="vietnam"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-france"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="france"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-uk"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="uk"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-indonesia"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="indonesia"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-germany"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="germany"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-austria"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="austria"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-switzerland"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="switzerland"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-canada"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="canada"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-latvia"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="latvia"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-kazakhstan"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="kazakhstan"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-sweden"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="sweden"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-finland"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="finland"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-united-arab-emirates"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="uae"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-denmark"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="denmark"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-japan"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="japan"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-norway"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="norway"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-portugal"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="portugal"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-katar"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="katar"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-south-africa"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="south_africa"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
           <li
-            class="weCreateItProject__flag-item weCreateItProject__flag-netherlands"
-          />
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              alt="netherlands"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+          </li>
         </ul>
       </div>
     </div>
@@ -349,6 +481,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item devops-ansible devops"
           >
+            <img
+              alt="Ansible"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Ansible
             </span>
@@ -356,6 +494,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item devops-terraform devops"
           >
+            <img
+              alt="Terraform"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Terraform
             </span>
@@ -363,6 +507,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item devops-cloud-formation devops"
           >
+            <img
+              alt="CloudFormation"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               CloudFormation
             </span>
@@ -370,6 +520,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item devops-jenkins devops"
           >
+            <img
+              alt="Jenkins"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Jenkins
             </span>
@@ -377,6 +533,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item devops-bamboo devops"
           >
+            <img
+              alt="Bamboo"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Bamboo
             </span>
@@ -384,6 +546,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item devops-gitlab devops"
           >
+            <img
+              alt="GitlabCI"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               GitlabCI
             </span>
@@ -391,6 +559,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item devops-travis-ci devops"
           >
+            <img
+              alt="TravisCI"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               TravisCI
             </span>
@@ -398,6 +572,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item devops-elastic devops"
           >
+            <img
+              alt="ELK"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               ELK
             </span>
@@ -405,6 +585,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item devops-circle-ci devops"
           >
+            <img
+              alt="CircleCI"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               CircleCI
             </span>
@@ -412,6 +598,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item devops-sentry devops"
           >
+            <img
+              alt="Sentry"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Sentry
             </span>
@@ -419,6 +611,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item devops-cloud-watch devops"
           >
+            <img
+              alt="CloudWatch"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               CloudWatch
             </span>
@@ -426,6 +624,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item devops-prometheus devops"
           >
+            <img
+              alt="Prometheus"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Prometheus
             </span>
@@ -433,13 +637,25 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item infrastructure-aws infrastructure"
           >
+            <img
+              alt="AWS"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               AWS
             </span>
           </div>
           <div
-            class="tech_item infrastructure-gsp infrastructure"
+            class="tech_item infrastructure-gcp infrastructure"
           >
+            <img
+              alt="GCP"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               GCP
             </span>
@@ -447,6 +663,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item infrastructure-digital-ocean infrastructure"
           >
+            <img
+              alt="Digital Ocean"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Digital Ocean
             </span>
@@ -454,6 +676,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item infrastructure-azure infrastructure"
           >
+            <img
+              alt="Azure"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Azure
             </span>
@@ -461,6 +689,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item infrastructure-cloud-native infrastructure"
           >
+            <img
+              alt="CloudNative"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               CloudNative
             </span>
@@ -468,6 +702,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item infrastructure-heroku infrastructure"
           >
+            <img
+              alt="Heroku"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Heroku
             </span>
@@ -475,6 +715,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item infrastructure-netlify infrastructure"
           >
+            <img
+              alt="Netlify"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Netlify
             </span>
@@ -482,6 +728,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item infrastructure-cloudflare infrastructure"
           >
+            <img
+              alt="CloudFlare"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               CloudFlare
             </span>
@@ -489,6 +741,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item mobile-kotlin mobile"
           >
+            <img
+              alt="Kotlin"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Kotlin
             </span>
@@ -496,6 +754,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item mobile-java mobile"
           >
+            <img
+              alt="Java"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Java
             </span>
@@ -503,6 +767,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item mobile-obj-c mobile"
           >
+            <img
+              alt="Objective-C"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Objective-C
             </span>
@@ -510,6 +780,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item mobile-swift mobile"
           >
+            <img
+              alt="Swift"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Swift
             </span>
@@ -517,6 +793,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item mobile-apple mobile"
           >
+            <img
+              alt="IOS"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               IOS
             </span>
@@ -524,6 +806,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item mobile-android mobile"
           >
+            <img
+              alt="Android"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Android
             </span>
@@ -531,6 +819,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item pm-jira pm"
           >
+            <img
+              alt="Jira"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Jira
             </span>
@@ -538,6 +832,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item pm-slack pm"
           >
+            <img
+              alt="Slack"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Slack
             </span>
@@ -545,6 +845,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item pm-meet pm"
           >
+            <img
+              alt="Meet"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Meet
             </span>
@@ -552,6 +858,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item pm-zoom pm"
           >
+            <img
+              alt="Zoom"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Zoom
             </span>
@@ -559,6 +871,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item pm-miro pm"
           >
+            <img
+              alt="Miro"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Miro
             </span>
@@ -566,6 +884,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item pm-trello pm"
           >
+            <img
+              alt="Trello"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Trello
             </span>
@@ -573,6 +897,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item pm-loom pm"
           >
+            <img
+              alt="Loom"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Loom
             </span>
@@ -580,13 +910,25 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item pm-jira-assistant pm"
           >
+            <img
+              alt="Jira Assistant"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Jira Assistant
             </span>
           </div>
           <div
-            class="tech_item pm-jira-service-desk pm"
+            class="tech_item pm-service-desk pm"
           >
+            <img
+              alt="Service Desk"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Service Desk
             </span>
@@ -594,6 +936,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item pm-basecamp pm"
           >
+            <img
+              alt="Basecamp"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Basecamp
             </span>
@@ -601,6 +949,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item pm-notion pm"
           >
+            <img
+              alt="Notion"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Notion
             </span>
@@ -608,6 +962,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item pm-zapier pm"
           >
+            <img
+              alt="Zapier"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Zapier
             </span>
@@ -615,6 +975,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item backend-python backend"
           >
+            <img
+              alt="Python"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Python
             </span>
@@ -622,6 +988,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item backend-go backend"
           >
+            <img
+              alt="Go"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Go
             </span>
@@ -629,6 +1001,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item backend-node backend"
           >
+            <img
+              alt="Node.js"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Node.js
             </span>
@@ -636,6 +1014,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item backend-js backend"
           >
+            <img
+              alt="JavaScript"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               JavaScript
             </span>
@@ -643,6 +1027,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item backend-typescript backend"
           >
+            <img
+              alt="TypeScript"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               TypeScript
             </span>
@@ -650,6 +1040,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item backend-php backend"
           >
+            <img
+              alt="PHP"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               PHP
             </span>
@@ -657,6 +1053,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item backend-ruby backend"
           >
+            <img
+              alt="Ruby"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Ruby
             </span>
@@ -664,6 +1066,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item backend-c backend"
           >
+            <img
+              alt="C"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               C
             </span>
@@ -671,6 +1079,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item backend-c-plus backend"
           >
+            <img
+              alt="C++"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               C++
             </span>
@@ -678,6 +1092,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item uiux-figma uiux"
           >
+            <img
+              alt="Figma"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Figma
             </span>
@@ -685,6 +1105,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item uiux-adobe uiux"
           >
+            <img
+              alt="Adobe Suite"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Adobe Suite
             </span>
@@ -692,6 +1118,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item uiux-sketch uiux"
           >
+            <img
+              alt="Sketch"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Sketch
             </span>
@@ -699,6 +1131,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item uiux-invision uiux"
           >
+            <img
+              alt="InVision"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               InVision
             </span>
@@ -706,6 +1144,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item uiux-zeplin uiux"
           >
+            <img
+              alt="Zeplin"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Zeplin
             </span>
@@ -713,6 +1157,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item uiux-balsamic uiux"
           >
+            <img
+              alt="Balsamic"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Balsamic
             </span>
@@ -720,6 +1170,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item uiux-principle-app uiux"
           >
+            <img
+              alt="Principle"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Principle
             </span>
@@ -727,6 +1183,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item frontend-post-css frontend"
           >
+            <img
+              alt="PostCSS"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               PostCSS
             </span>
@@ -734,6 +1196,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item frontend-typescript frontend"
           >
+            <img
+              alt="TypeScript"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               TypeScript
             </span>
@@ -741,6 +1209,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item frontend-angular frontend"
           >
+            <img
+              alt="Angular"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Angular
             </span>
@@ -748,6 +1222,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item frontend-webpack frontend"
           >
+            <img
+              alt="Webpack"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Webpack
             </span>
@@ -755,6 +1235,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item frontend-next frontend"
           >
+            <img
+              alt="Next.js"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Next.js
             </span>
@@ -762,6 +1248,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item frontend-nuxt frontend"
           >
+            <img
+              alt="Nuxt.js"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Nuxt.js
             </span>
@@ -769,6 +1261,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item frontend-js frontend"
           >
+            <img
+              alt="JavaScript"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               JavaScript
             </span>
@@ -776,6 +1274,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item frontend-react frontend"
           >
+            <img
+              alt="React"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               React
             </span>
@@ -783,6 +1287,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item frontend-babel frontend"
           >
+            <img
+              alt="Babel"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Babel
             </span>
@@ -790,6 +1300,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item frontend-vue frontend"
           >
+            <img
+              alt="Vue"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Vue
             </span>
@@ -797,6 +1313,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item frontend-sass frontend"
           >
+            <img
+              alt="SASS"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               SASS
             </span>
@@ -804,6 +1326,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item qa-jasmine qa"
           >
+            <img
+              alt="Jasmine"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Jasmine
             </span>
@@ -811,6 +1339,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item qa-selenoid qa"
           >
+            <img
+              alt="Selenoid"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Selenoid
             </span>
@@ -818,6 +1352,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item qa-appium qa"
           >
+            <img
+              alt="Appium"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Appium
             </span>
@@ -825,6 +1365,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item qa-cucumber qa"
           >
+            <img
+              alt="Cucumber"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Cucumber
             </span>
@@ -832,6 +1378,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item qa-pytest qa"
           >
+            <img
+              alt="PyTest"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               PyTest
             </span>
@@ -839,6 +1391,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item qa-selenium qa"
           >
+            <img
+              alt="Selenium"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Selenium
             </span>
@@ -846,6 +1404,12 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="tech_item qa-selenium-grid qa"
           >
+            <img
+              alt="Selenium Grid"
+              class="svg_lazy"
+              data-src="[object Object]"
+            />
+             
             <span>
               Selenium Grid
             </span>
@@ -947,16 +1511,16 @@ exports[`Index page renders correctly 1`] = `
               <picture>
                 <source
                   class="multi-image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  data-srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Namba Food Contactless Delivery Service\`s Logo."
+                  class="lazyload"
+                  data-src="[object Object]"
+                  data-srcset="[object Object] 2x"
                   height="294"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
                   width="610"
                 />
               </picture>
@@ -1031,16 +1595,16 @@ exports[`Index page renders correctly 1`] = `
               <picture>
                 <source
                   class="multi-image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  data-srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="General John Monash The Australian War Memorial\`s Logo."
+                  class="lazyload"
+                  data-src="[object Object]"
+                  data-srcset="[object Object] 2x"
                   height="294"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
                   width="610"
                 />
               </picture>
@@ -1115,16 +1679,16 @@ exports[`Index page renders correctly 1`] = `
               <picture>
                 <source
                   class="multi-image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  data-srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Guardrails Cloud CyberSecurity Services Logo."
+                  class="lazyload"
+                  data-src="[object Object]"
+                  data-srcset="[object Object] 2x"
                   height="294"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
                   width="610"
                 />
               </picture>
@@ -1203,16 +1767,16 @@ exports[`Index page renders correctly 1`] = `
               <picture>
                 <source
                   class="multi-image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  data-srcset="[object Object] ,[object Object] 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="GoDee Bus Transportation Services Logo."
+                  class="lazyload"
+                  data-src="[object Object]"
+                  data-srcset="[object Object] 2x"
                   height="294"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
                   width="610"
                 />
               </picture>
@@ -1220,386 +1784,6 @@ exports[`Index page renders correctly 1`] = `
           </div>
         </a>
       </div>
-    </div>
-     
-    <div
-      class="projects-mobile-slider"
-    >
-      <div
-        class="swiper-container swiper swiper-container-initialized swiper-container-horizontal"
-      >
-        <div
-          class="swiper-wrapper"
-          style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
-        >
-          <div
-            class="swiper-slide"
-          >
-            <a
-              class="single-project"
-              href="/case-studies/namba-food/"
-              style="background: rgb(248, 247, 246);"
-              target="_self"
-            >
-              <div
-                class="single-project__container"
-              >
-                <div
-                  class="single-project__content-wrap"
-                >
-                  <span
-                    class="single-project__logo-bg single-project__logo-bg--nambafoodColored"
-                  />
-                   
-                  <h3
-                    class="single-project__sub-title"
-                  >
-                    
-        Contactless Delivery Service
-      
-                  </h3>
-                   
-                  <p
-                    class="single-project__paragraph paragraph"
-                  >
-                    
-        Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.
-      
-                  </p>
-                   
-                  <div
-                    class="contribution-widget"
-                  >
-                    <svg
-                      class="contribution-widget__img contribution-widget__img_nambafood"
-                      fill="none"
-                      viewBox="0 0 20 18"
-                    >
-                      <path
-                        clip-rule="evenodd"
-                        d="M18.5953 0.101606L10.0137 3.89286L1.4321 0.101606C0.8301 -0.214585 0 0.239607 0 1.05169V16.8817C0 17.4883 0.375465 17.9827 0.88497 17.9979C0.908393 18.0007 0.932093 18.0007 0.955516 17.9979H1.00647L6.63061 17.433L5.56535 15.9642C5.09975 15.3356 5.66412 14.7897 6.26141 15.002C6.38134 15.0445 6.51146 14.9884 6.62826 15.0179L5.21732 10.4138C5.21184 10.3979 5.20713 10.382 5.20243 10.3661L5.19146 10.3312V10.3206C5.15304 10.1337 5.18595 9.93963 5.28409 9.7744C5.38224 9.60918 5.53896 9.48397 5.72523 9.42196C5.9115 9.35995 6.1147 9.36536 6.29716 9.43717C6.47963 9.50899 6.62901 9.64234 6.71762 9.81253V9.81936C6.73094 9.84514 8.33627 13.6766 8.33627 13.6766C8.3737 13.4824 8.48149 13.3074 8.6403 13.1832C8.7991 13.0589 8.99851 12.9935 9.20268 12.9987C9.40686 13.0039 9.60242 13.0794 9.75424 13.2116C9.90605 13.3437 10.0042 13.5239 10.031 13.7198C10.0592 13.5182 10.1628 13.3335 10.322 13.2006C10.4812 13.0676 10.6852 12.9955 10.8956 12.9979C11.3149 12.9979 11.6402 13.3566 11.7131 13.7433L12.6671 11.1425C12.7331 10.9685 12.8602 10.8224 13.0263 10.7297C13.1923 10.637 13.3866 10.6037 13.5755 10.6354C13.7643 10.6672 13.9356 10.7621 14.0595 10.9035C14.1835 11.045 14.2521 11.224 14.2536 11.4094V11.4337L13.4039 17.4277L19.0218 17.9925H19.0727C19.0961 17.9954 19.1198 17.9954 19.1432 17.9925C19.6528 17.9774 20 17.486 20 16.8787V1.0479C19.9992 0.236575 19.1973 -0.214585 18.5953 0.101606Z"
-                        fill=""
-                        fill-rule="evenodd"
-                      />
-                    </svg>
-                     
-                    <span
-                      class="contribution-widget__content-mobile contribution-widget__content-mobile_nambafood"
-                    >
-                      contribution: Backend, Infrastructure
-                    </span>
-                     
-                    <span
-                      class="contribution-widget__content contribution-widget__content_nambafood"
-                    >
-                      contribution: Backend, Infrastructure, Frontend
-                    </span>
-                  </div>
-                </div>
-                 
-                <div
-                  class="single-project__background single-project__background_first-project"
-                >
-                  <picture>
-                    <source
-                      class="multi-image"
-                      srcset="[object Object] ,[object Object] 2x"
-                      type="image/webp"
-                    />
-                     
-                    <img
-                      alt="Namba Food Contactless Delivery Service\`s Logo."
-                      height="294"
-                      loading="lazy"
-                      src="[object Object]"
-                      srcset="[object Object] 2x"
-                      width="610"
-                    />
-                  </picture>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            class="swiper-slide"
-          >
-            <a
-              class="single-project"
-              href="/case-studies/sir-john-monash-centre/"
-              style="background: rgb(34, 31, 32);"
-              target="_self"
-            >
-              <div
-                class="single-project__container single-project__container_white-letters-theme"
-              >
-                <div
-                  class="single-project__content-wrap"
-                >
-                  <span
-                    class="single-project__logo-bg single-project__logo-bg--sjmcIcon"
-                  />
-                   
-                  <h3
-                    class="single-project__sub-title"
-                  >
-                    
-        Australian National Interpretive Centre
-      
-                  </h3>
-                   
-                  <p
-                    class="single-project__paragraph paragraph"
-                  >
-                    
-        Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.
-      
-                  </p>
-                   
-                  <div
-                    class="contribution-widget"
-                  >
-                    <svg
-                      class="contribution-widget__img contribution-widget__img_teacherly"
-                      fill="none"
-                      viewBox="0 0 20 18"
-                    >
-                      <path
-                        clip-rule="evenodd"
-                        d="M18.5953 0.101606L10.0137 3.89286L1.4321 0.101606C0.8301 -0.214585 0 0.239607 0 1.05169V16.8817C0 17.4883 0.375465 17.9827 0.88497 17.9979C0.908393 18.0007 0.932093 18.0007 0.955516 17.9979H1.00647L6.63061 17.433L5.56535 15.9642C5.09975 15.3356 5.66412 14.7897 6.26141 15.002C6.38134 15.0445 6.51146 14.9884 6.62826 15.0179L5.21732 10.4138C5.21184 10.3979 5.20713 10.382 5.20243 10.3661L5.19146 10.3312V10.3206C5.15304 10.1337 5.18595 9.93963 5.28409 9.7744C5.38224 9.60918 5.53896 9.48397 5.72523 9.42196C5.9115 9.35995 6.1147 9.36536 6.29716 9.43717C6.47963 9.50899 6.62901 9.64234 6.71762 9.81253V9.81936C6.73094 9.84514 8.33627 13.6766 8.33627 13.6766C8.3737 13.4824 8.48149 13.3074 8.6403 13.1832C8.7991 13.0589 8.99851 12.9935 9.20268 12.9987C9.40686 13.0039 9.60242 13.0794 9.75424 13.2116C9.90605 13.3437 10.0042 13.5239 10.031 13.7198C10.0592 13.5182 10.1628 13.3335 10.322 13.2006C10.4812 13.0676 10.6852 12.9955 10.8956 12.9979C11.3149 12.9979 11.6402 13.3566 11.7131 13.7433L12.6671 11.1425C12.7331 10.9685 12.8602 10.8224 13.0263 10.7297C13.1923 10.637 13.3866 10.6037 13.5755 10.6354C13.7643 10.6672 13.9356 10.7621 14.0595 10.9035C14.1835 11.045 14.2521 11.224 14.2536 11.4094V11.4337L13.4039 17.4277L19.0218 17.9925H19.0727C19.0961 17.9954 19.1198 17.9954 19.1432 17.9925C19.6528 17.9774 20 17.486 20 16.8787V1.0479C19.9992 0.236575 19.1973 -0.214585 18.5953 0.101606Z"
-                        fill=""
-                        fill-rule="evenodd"
-                      />
-                    </svg>
-                     
-                    <span
-                      class="contribution-widget__content-mobile contribution-widget__content-mobile_teacherly"
-                    >
-                      contribution: Backend, Infrastructure
-                    </span>
-                     
-                    <span
-                      class="contribution-widget__content contribution-widget__content_teacherly"
-                    >
-                      contribution: Backend, Infrastructure, Frontend
-                    </span>
-                  </div>
-                </div>
-                 
-                <div
-                  class="single-project__background"
-                >
-                  <picture>
-                    <source
-                      class="multi-image"
-                      srcset="[object Object] ,[object Object] 2x"
-                      type="image/webp"
-                    />
-                     
-                    <img
-                      alt="General John Monash The Australian War Memorial\`s Logo."
-                      height="294"
-                      loading="lazy"
-                      src="[object Object]"
-                      srcset="[object Object] 2x"
-                      width="610"
-                    />
-                  </picture>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            class="swiper-slide"
-          >
-            <a
-              class="single-project"
-              href="https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0"
-              style="background: rgb(14, 27, 39);"
-              target="_blank"
-            >
-              <div
-                class="single-project__container single-project__container_white-letters-theme"
-              >
-                <div
-                  class="single-project__content-wrap"
-                >
-                  <span
-                    class="single-project__logo-bg single-project__logo-bg--guardrailsColored"
-                  />
-                   
-                  <h3
-                    class="single-project__sub-title"
-                  >
-                    
-        Cloud cybersecurity service
-      
-                  </h3>
-                   
-                  <p
-                    class="single-project__paragraph paragraph"
-                  >
-                    
-        Mad Devs was involved with Guardrails' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.
-      
-                  </p>
-                   
-                  <div
-                    class="contribution-widget"
-                  >
-                    <svg
-                      class="contribution-widget__img contribution-widget__img_guardrails"
-                      fill="none"
-                      viewBox="0 0 20 18"
-                    >
-                      <path
-                        clip-rule="evenodd"
-                        d="M18.5953 0.101606L10.0137 3.89286L1.4321 0.101606C0.8301 -0.214585 0 0.239607 0 1.05169V16.8817C0 17.4883 0.375465 17.9827 0.88497 17.9979C0.908393 18.0007 0.932093 18.0007 0.955516 17.9979H1.00647L6.63061 17.433L5.56535 15.9642C5.09975 15.3356 5.66412 14.7897 6.26141 15.002C6.38134 15.0445 6.51146 14.9884 6.62826 15.0179L5.21732 10.4138C5.21184 10.3979 5.20713 10.382 5.20243 10.3661L5.19146 10.3312V10.3206C5.15304 10.1337 5.18595 9.93963 5.28409 9.7744C5.38224 9.60918 5.53896 9.48397 5.72523 9.42196C5.9115 9.35995 6.1147 9.36536 6.29716 9.43717C6.47963 9.50899 6.62901 9.64234 6.71762 9.81253V9.81936C6.73094 9.84514 8.33627 13.6766 8.33627 13.6766C8.3737 13.4824 8.48149 13.3074 8.6403 13.1832C8.7991 13.0589 8.99851 12.9935 9.20268 12.9987C9.40686 13.0039 9.60242 13.0794 9.75424 13.2116C9.90605 13.3437 10.0042 13.5239 10.031 13.7198C10.0592 13.5182 10.1628 13.3335 10.322 13.2006C10.4812 13.0676 10.6852 12.9955 10.8956 12.9979C11.3149 12.9979 11.6402 13.3566 11.7131 13.7433L12.6671 11.1425C12.7331 10.9685 12.8602 10.8224 13.0263 10.7297C13.1923 10.637 13.3866 10.6037 13.5755 10.6354C13.7643 10.6672 13.9356 10.7621 14.0595 10.9035C14.1835 11.045 14.2521 11.224 14.2536 11.4094V11.4337L13.4039 17.4277L19.0218 17.9925H19.0727C19.0961 17.9954 19.1198 17.9954 19.1432 17.9925C19.6528 17.9774 20 17.486 20 16.8787V1.0479C19.9992 0.236575 19.1973 -0.214585 18.5953 0.101606Z"
-                        fill=""
-                        fill-rule="evenodd"
-                      />
-                    </svg>
-                     
-                    <span
-                      class="contribution-widget__content-mobile contribution-widget__content-mobile_guardrails contribution-widget__content-mobile_nambafood"
-                    >
-                      contribution: Backend, Infrastructure
-                    </span>
-                     
-                    <span
-                      class="contribution-widget__content contribution-widget__content_guardrails contribution-widget__content_nambafood"
-                    >
-                      contribution: Backend, Infrastructure, Frontend
-                    </span>
-                  </div>
-                </div>
-                 
-                <div
-                  class="single-project__background single-project__background_guardrails"
-                >
-                  <picture>
-                    <source
-                      class="multi-image"
-                      srcset="[object Object] ,[object Object] 2x"
-                      type="image/webp"
-                    />
-                     
-                    <img
-                      alt="Guardrails Cloud CyberSecurity Services Logo."
-                      height="294"
-                      loading="lazy"
-                      src="[object Object]"
-                      srcset="[object Object] 2x"
-                      width="610"
-                    />
-                  </picture>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            class="swiper-slide"
-          >
-            <a
-              class="single-project"
-              href="/case-studies/godee/"
-              style="background: rgb(255, 106, 1);"
-              target="_self"
-            >
-              <div
-                class="single-project__container"
-              >
-                <div
-                  class="single-project__content-wrap"
-                >
-                  <span
-                    class="single-project__logo-bg single-project__logo-bg--godeeColored"
-                  />
-                   
-                  <h3
-                    class="single-project__sub-title"
-                  >
-                    
-        Convenient shuttle bus service
-      
-                  </h3>
-                   
-                  <p
-                    class="single-project__paragraph paragraph"
-                  >
-                    
-        Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.
-      
-                  </p>
-                   
-                  <div
-                    class="contribution-widget"
-                  >
-                    <svg
-                      class="contribution-widget__img contribution-widget__img_godee"
-                      fill="none"
-                      viewBox="0 0 20 18"
-                    >
-                      <path
-                        clip-rule="evenodd"
-                        d="M18.5953 0.101606L10.0137 3.89286L1.4321 0.101606C0.8301 -0.214585 0 0.239607 0 1.05169V16.8817C0 17.4883 0.375465 17.9827 0.88497 17.9979C0.908393 18.0007 0.932093 18.0007 0.955516 17.9979H1.00647L6.63061 17.433L5.56535 15.9642C5.09975 15.3356 5.66412 14.7897 6.26141 15.002C6.38134 15.0445 6.51146 14.9884 6.62826 15.0179L5.21732 10.4138C5.21184 10.3979 5.20713 10.382 5.20243 10.3661L5.19146 10.3312V10.3206C5.15304 10.1337 5.18595 9.93963 5.28409 9.7744C5.38224 9.60918 5.53896 9.48397 5.72523 9.42196C5.9115 9.35995 6.1147 9.36536 6.29716 9.43717C6.47963 9.50899 6.62901 9.64234 6.71762 9.81253V9.81936C6.73094 9.84514 8.33627 13.6766 8.33627 13.6766C8.3737 13.4824 8.48149 13.3074 8.6403 13.1832C8.7991 13.0589 8.99851 12.9935 9.20268 12.9987C9.40686 13.0039 9.60242 13.0794 9.75424 13.2116C9.90605 13.3437 10.0042 13.5239 10.031 13.7198C10.0592 13.5182 10.1628 13.3335 10.322 13.2006C10.4812 13.0676 10.6852 12.9955 10.8956 12.9979C11.3149 12.9979 11.6402 13.3566 11.7131 13.7433L12.6671 11.1425C12.7331 10.9685 12.8602 10.8224 13.0263 10.7297C13.1923 10.637 13.3866 10.6037 13.5755 10.6354C13.7643 10.6672 13.9356 10.7621 14.0595 10.9035C14.1835 11.045 14.2521 11.224 14.2536 11.4094V11.4337L13.4039 17.4277L19.0218 17.9925H19.0727C19.0961 17.9954 19.1198 17.9954 19.1432 17.9925C19.6528 17.9774 20 17.486 20 16.8787V1.0479C19.9992 0.236575 19.1973 -0.214585 18.5953 0.101606Z"
-                        fill=""
-                        fill-rule="evenodd"
-                      />
-                    </svg>
-                     
-                    <span
-                      class="contribution-widget__content-mobile contribution-widget__content-mobile_godee"
-                    >
-                      
-    contribution: Backend, Infrastructure, Mobile Apps
-  
-                    </span>
-                     
-                    <span
-                      class="contribution-widget__content contribution-widget__content_godee"
-                    >
-                      
-    contribution: Backend, Infrastructure, Mobile Apps
-  
-                    </span>
-                  </div>
-                </div>
-                 
-                <div
-                  class="single-project__background single-project__background_godee"
-                >
-                  <picture>
-                    <source
-                      class="multi-image"
-                      srcset="[object Object] ,[object Object] 2x"
-                      type="image/webp"
-                    />
-                     
-                    <img
-                      alt="GoDee Bus Transportation Services Logo."
-                      height="294"
-                      loading="lazy"
-                      src="[object Object]"
-                      srcset="[object Object] 2x"
-                      width="610"
-                    />
-                  </picture>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <span
-          aria-atomic="true"
-          aria-live="assertive"
-          class="swiper-notification"
-        />
-      </div>
-       
-      <div
-        class="swiper-pagination swiper-pagination--white"
-        slot="pagination"
-      />
     </div>
   </section>
    
@@ -1625,13 +1809,34 @@ exports[`Index page renders correctly 1`] = `
           <div
             class="quickProjectStart__icons-group"
           >
-            <div
-              class="quickProjectStart__main-icon quickProjectStart__quick-contact"
-            />
+            <svg
+              class="quickProjectStart__main-icon"
+              fill="none"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M31.3501 10.0956C30.6759 16.1297 30.2336 16.4802 23.6004 16.1303L19.0749 20.5085L18.7405 15.769C15.3773 15.3168 15.1303 14.2827 14.552 10.3635C13.5722 3.71764 13.8061 3.636 22.0736 2.7976C31.4096 1.85002 32.2407 2.12315 31.3501 10.0956ZM18.4916 31.2867C18.4916 31.2867 10.5687 31.5212 4.02404 19.9059C-2.5206 8.29096 1.89028 0.488647 1.89028 0.488647L8.03204 1.95789L7.9274 10.4281L5.57764 12.9617L10.3725 21.2217L13.7095 20.4866L20.7629 24.6087L18.4916 31.2867Z"
+                fill="#96969C"
+                fill-rule="evenodd"
+              />
+            </svg>
              
-            <div
-              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_contact"
-            />
+            <svg
+              class="quickProjectStart__arrow-icon"
+              fill="none"
+              viewBox="0 0 175 49"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M173.74 48C164.253 33.5609 151.402 21.7178 136.324 13.5197C121.247 5.32152 104.41 1.02137 87.3032 1.00008C70.1965 0.978786 53.3486 5.237 38.2517 13.3976C23.1549 21.5582 10.275 33.3692 0.75293 47.7847M173.74 48V41.9752M173.74 48L167.61 46.3266"
+                opacity="0.4"
+                stroke="#C8CFCF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
            
           <div
@@ -1650,19 +1855,41 @@ exports[`Index page renders correctly 1`] = `
             </p>
           </div>
         </div>
+         
         <div
           class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_analysis"
         >
           <div
             class="quickProjectStart__icons-group"
           >
-            <div
-              class="quickProjectStart__main-icon quickProjectStart__quick-analysis"
-            />
+            <svg
+              class="quickProjectStart__main-icon"
+              fill="none"
+              viewBox="0 0 30 31"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M15.7545 11.8281C20.6377 11.8281 20.607 19.6212 15.838 19.6212C10.616 19.6209 10.8521 11.8281 15.7545 11.8281ZM25.1948 26.7753C24.9356 27.019 24.6592 27.2175 24.3705 27.3836L24.0902 25.5617C24.1014 25.5517 24.1139 25.543 24.1251 25.5327C25.3878 24.3462 25.4256 22.3335 24.6976 20.0383C22.4851 21.3074 19.7788 22.2823 17.0806 22.8793C16.528 23.0016 15.9686 23.1055 15.4073 23.1981C16.462 24.0631 17.5254 24.796 18.5481 25.3348C18.926 24.6517 19.6182 24.151 20.6108 24.151C23.7318 24.151 23.712 29.1313 20.664 29.1313C19.1283 29.1313 18.3331 28.0765 18.2256 26.9378C16.5776 26.1353 14.8803 24.9174 13.28 23.4725C11.8473 23.6045 10.4355 23.6289 9.11739 23.5196C9.44315 26.1874 10.5504 27.78 11.9657 28.2616C13.1894 28.6781 14.5113 28.1396 15.7948 26.9114L17.1088 27.8164C15.376 29.6159 13.4387 30.5203 11.47 29.8505C8.94555 28.9919 7.80379 26.4535 7.55323 23.3178C4.55995 22.7823 2.29051 21.4247 1.78811 18.9491C1.71547 18.5912 1.68155 18.2406 1.67899 17.8973C-0.511728 16.9611 -0.0608476 13.1219 2.69019 13.1219C5.60827 13.1219 5.78011 17.4745 3.29915 18.0407C3.30491 18.2309 3.31611 18.42 3.35323 18.6029C3.67579 20.1924 5.22619 21.2148 7.49819 21.6834C7.51451 20.2673 7.68283 18.775 7.95835 17.2907C4.84091 12.5998 3.23355 7.41033 6.05243 4.76293C7.64539 3.26761 9.69435 3.13191 11.8576 3.8388L11.2147 5.3495C9.43707 4.86621 8.02491 5.15832 7.12251 6.00558C5.36283 7.65799 6.10779 11.2208 8.44155 15.1152C8.58171 14.5708 8.73115 14.0313 8.89531 13.5053C10.0812 9.70278 12.078 5.72483 14.4822 3.38091C14.0617 1.93606 14.8611 0.086792 16.7705 0.086792C19.8912 0.086792 19.8716 5.06708 16.8236 5.06708C16.2566 5.06708 15.7926 4.92102 15.4246 4.68238C13.3811 6.72517 11.5398 10.3271 10.3904 14.0139C10.0713 15.037 9.81947 16.0009 9.61691 16.917C10.2172 17.7663 10.8841 18.6196 11.6092 19.4618C12.31 20.276 13.0496 21.0561 13.8073 21.7803C14.7625 21.6627 15.7488 21.4952 16.7542 21.2726C19.446 20.6771 22.0806 19.7269 24.1337 18.5383C23.9648 18.148 23.7792 17.7533 23.576 17.3562L24.5225 15.7867C24.8684 16.4113 25.1792 17.0407 25.4572 17.6677C27.3145 16.298 28.392 14.6944 28.046 12.9875C27.6963 11.2639 26.0681 10.2238 23.8256 9.73018C23.7657 12.3244 23.2336 15.2041 22.4006 17.8996L20.5619 18.4448C20.671 18.1256 20.7779 17.8034 20.8803 17.4752C21.7267 14.7609 22.2531 11.9247 22.3001 9.48553C19.9049 9.23018 17.0668 9.45913 14.3804 10.0537C14.1888 10.0962 14.0137 10.1446 13.8275 10.1891L14.3622 8.38259C16.9376 7.84148 19.7478 7.60786 22.2524 7.85184C22.0995 6.02396 21.5974 4.54535 20.654 3.70745L20.9401 1.88993C22.7545 2.94642 23.615 5.25124 23.7952 8.07443C26.7782 8.65097 29.0867 10.0547 29.6115 12.6416C30.1222 15.1597 28.5811 17.395 26.0524 19.1774C27.0844 22.1841 27.0883 24.9972 25.1948 26.7753ZM10.4409 20.5597C10.0243 20.0761 9.61883 19.5765 9.22747 19.0658C9.08507 20.0945 9.01723 21.044 9.02139 21.9053C9.85915 21.9825 10.7638 22.0002 11.7168 21.9591C11.2784 21.5043 10.8515 21.037 10.4409 20.5597Z"
+                fill="#96969C"
+                fill-rule="evenodd"
+              />
+            </svg>
              
-            <div
-              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_analysis"
-            />
+            <svg
+              class="quickProjectStart__arrow-icon"
+              fill="none"
+              viewBox="0 0 175 49"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M173.74 48C164.253 33.5609 151.402 21.7178 136.324 13.5197C121.247 5.32152 104.41 1.02137 87.3032 1.00008C70.1965 0.978786 53.3486 5.237 38.2517 13.3976C23.1549 21.5582 10.275 33.3692 0.75293 47.7847M173.74 48V41.9752M173.74 48L167.61 46.3266"
+                opacity="0.4"
+                stroke="#C8CFCF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
            
           <div
@@ -1681,19 +1908,41 @@ exports[`Index page renders correctly 1`] = `
             </p>
           </div>
         </div>
+         
         <div
           class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_proposal"
         >
           <div
             class="quickProjectStart__icons-group"
           >
-            <div
-              class="quickProjectStart__main-icon quickProjectStart__quick-proposal"
-            />
+            <svg
+              class="quickProjectStart__main-icon"
+              fill="none"
+              viewBox="0 0 27 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M16.3861 31.8053L0.657227 28.9316L3.80068 0.410767L26.0287 3.71752L23.6396 26.1018L16.3861 31.8053ZM5.36626 2.72731L2.8614 27.2194L14.758 29.536L15.6969 23.2477L21.9586 23.9065L23.8368 5.37199L5.36626 2.72731ZM19.1465 10.3746L19.4438 8.05006L21.6821 8.38401L21.402 10.7252L19.1465 10.3746ZM20.8478 15.3554L18.5595 14.9652L18.8869 12.4066L21.1648 12.7038L20.8478 15.3554ZM20.2857 20.0484L17.9561 19.6858L18.2896 17.0778L20.6041 17.3863L20.2857 20.0484ZM14.3425 9.62758L14.675 7.33826L18.1813 7.86131L17.8051 10.1659L14.3425 9.62758ZM17.0643 14.7104L13.6889 14.1347L14.0316 11.7732L17.4703 12.2222L17.0643 14.7104ZM16.2949 19.4277L12.9956 18.9144L13.3575 16.4204L16.7124 16.8676L16.2949 19.4277ZM7.09584 8.50052L7.31246 6.23915L13.1282 7.1074L12.7985 9.38765L7.09584 8.50052ZM12.151 13.8719L6.67147 12.9372L6.87238 10.8378L12.4834 11.5706L12.151 13.8719ZM11.457 18.6752L6.2003 17.8578L6.42649 15.4973L11.8127 16.2153L11.457 18.6752Z"
+                fill="#96969C"
+                fill-rule="evenodd"
+              />
+            </svg>
              
-            <div
-              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_proposal"
-            />
+            <svg
+              class="quickProjectStart__arrow-icon"
+              fill="none"
+              viewBox="0 0 175 49"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M173.74 48C164.253 33.5609 151.402 21.7178 136.324 13.5197C121.247 5.32152 104.41 1.02137 87.3032 1.00008C70.1965 0.978786 53.3486 5.237 38.2517 13.3976C23.1549 21.5582 10.275 33.3692 0.75293 47.7847M173.74 48V41.9752M173.74 48L167.61 46.3266"
+                opacity="0.4"
+                stroke="#C8CFCF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
            
           <div
@@ -1712,19 +1961,41 @@ exports[`Index page renders correctly 1`] = `
             </p>
           </div>
         </div>
+         
         <div
           class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_team"
         >
           <div
             class="quickProjectStart__icons-group"
           >
-            <div
-              class="quickProjectStart__main-icon quickProjectStart__quick-team"
-            />
+            <svg
+              class="quickProjectStart__main-icon"
+              fill="none"
+              viewBox="0 0 28 35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M20.7634 34.203L19.9164 24.4576L24.6511 24.6762L23.7509 34.3467L20.7634 34.203ZM25.6994 17.0576L25.5445 22.8791L16.5503 21.7614L18.9416 16.868C17.9583 16.225 16.4805 14.9827 16.8607 13.5017C17.3672 11.5311 18.1512 8.77546 18.1512 8.77546L19.7666 7.90915C21.1852 8.96329 23.7762 8.95293 24.9765 7.96597L26.3669 8.75273C26.3669 8.75273 27.26 11.5943 27.8376 13.4847C28.27 14.9021 26.5848 16.3911 25.6994 17.0576ZM22.1695 0.204597C24.9887 0.204597 24.9381 3.23669 24.9381 6.11035L19.3528 6.09798C19.3532 3.5161 19.35 0.204597 22.1695 0.204597ZM10.6677 19.5017L11.2588 34.3885C11.2588 34.3885 8.63251 35.2691 8.45491 33.0064C8.29715 30.9977 7.08627 22.5679 7.08627 22.5679L6.15187 22.5111C6.15187 22.5111 5.26547 30.2688 4.88979 32.8173C4.51859 35.3343 1.92627 34.2925 1.92627 34.2925L2.78771 19.4279C2.78771 19.4279 -0.332928 16.8938 0.141952 14.6829C0.559552 12.7397 1.13203 9.36136 1.13203 9.36136C1.91251 8.54785 3.23795 8.0141 4.73299 7.76711L6.76115 10.7928L8.78387 7.78682C10.2056 8.03616 11.4901 8.54919 12.3218 9.33796C12.3218 9.33796 12.8005 12.8102 13.1919 14.7437C13.5826 16.6769 10.6677 19.5017 10.6677 19.5017ZM4.01459 2.99738C4.01459 -1.22288 9.84211 -0.474883 9.39123 3.28147C8.95699 6.89578 4.01459 7.27178 4.01459 2.99738Z"
+                fill="#96969C"
+                fill-rule="evenodd"
+              />
+            </svg>
              
-            <div
-              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_team"
-            />
+            <svg
+              class="quickProjectStart__arrow-icon"
+              fill="none"
+              viewBox="0 0 175 49"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M173.74 48C164.253 33.5609 151.402 21.7178 136.324 13.5197C121.247 5.32152 104.41 1.02137 87.3032 1.00008C70.1965 0.978786 53.3486 5.237 38.2517 13.3976C23.1549 21.5582 10.275 33.3692 0.75293 47.7847M173.74 48V41.9752M173.74 48L167.61 46.3266"
+                opacity="0.4"
+                stroke="#C8CFCF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
            
           <div
@@ -1743,19 +2014,26 @@ exports[`Index page renders correctly 1`] = `
             </p>
           </div>
         </div>
+         
         <div
           class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_start"
         >
           <div
             class="quickProjectStart__icons-group"
           >
-            <div
-              class="quickProjectStart__main-icon quickProjectStart__quick-start"
-            />
-             
-            <div
-              class="quickProjectStart__arrow-icon quickProjectStart__arrow-icon_start"
-            />
+            <svg
+              class="quickProjectStart__main-icon"
+              fill="none"
+              viewBox="0 0 27 31"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M22.9376 30.3498L20.0164 30.1235C20.0164 30.1235 22.9037 3.58559 23.1478 1.58158C23.3922 -0.422431 26.4535 -0.232047 26.3065 1.72188C26.1599 3.67581 22.9376 30.3498 22.9376 30.3498ZM10.0517 16.7937L11.3417 3.75094L20.9194 3.64788L19.2042 18.6857L10.0517 16.7937ZM0.201172 16.9635L5.35456 12.1847L0.346245 7.22376L8.90432 6.65197L7.97403 19.0404L0.201172 16.9635Z"
+                fill="#96969C"
+                fill-rule="evenodd"
+              />
+            </svg>
           </div>
            
           <div
@@ -1784,6 +2062,13 @@ exports[`Index page renders correctly 1`] = `
 
       </button>
     </div>
+     
+    <transition-stub
+      mode="out-in"
+      name="main-fade"
+    >
+      <!---->
+    </transition-stub>
   </section>
    
   <section
@@ -1844,11 +2129,10 @@ exports[`Index page renders correctly 1`] = `
                 class="customer-testimonials__profile"
               >
                 <img
-                  alt="Atif Mahmud - CEO and Founder at Teacherly."
-                  class="customer-testimonials__customer-image"
+                  alt="Atif Mahmood - CEO and Founder at Teacherly."
+                  class="customer-testimonials__customer-image lazyload"
+                  data-src="[object Object]"
                   height="42"
-                  loading="lazy"
-                  src="[object Object]"
                   width="42"
                 />
                  
@@ -1856,7 +2140,7 @@ exports[`Index page renders correctly 1`] = `
                   class="customer-testimonials__customer-name paragraph-sm"
                 >
                   
-                Atif Mahmud, 
+                Atif Mahmood, 
                   <span>
                     The UK
                   </span>
@@ -1897,10 +2181,9 @@ exports[`Index page renders correctly 1`] = `
               >
                 <img
                   alt="Daniel Vartanov - CTO at Veeqo.com."
-                  class="customer-testimonials__customer-image"
+                  class="customer-testimonials__customer-image lazyload"
+                  data-src="[object Object]"
                   height="42"
-                  loading="lazy"
-                  src="[object Object]"
                   width="42"
                 />
                  
@@ -1949,10 +2232,9 @@ exports[`Index page renders correctly 1`] = `
               >
                 <img
                   alt="Stefan Streichsbier - CEO and Founder at GuardRails.io."
-                  class="customer-testimonials__customer-image"
+                  class="customer-testimonials__customer-image lazyload"
+                  data-src="[object Object]"
                   height="42"
-                  loading="lazy"
-                  src="[object Object]"
                   width="42"
                 />
                  
@@ -2239,17 +2521,16 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
+              data-srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
+              class="multi-image lazyload"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
               height="401"
-              loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
               width="295"
             />
           </picture>
@@ -2290,17 +2571,16 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
+              data-srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Tamara Mun - Delivery Manager at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
+              class="multi-image lazyload"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
               height="401"
-              loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
               width="295"
             />
           </picture>
@@ -2341,17 +2621,16 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
+              data-srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Andrew \\"Сhuck\\" Minkin - CTO and Co-Founder at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
+              class="multi-image lazyload"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
               height="401"
-              loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
               width="295"
             />
           </picture>
@@ -2392,17 +2671,16 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
+              data-srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Nakylai Taiirova - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
+              class="multi-image lazyload"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
               height="401"
-              loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
               width="295"
             />
           </picture>
@@ -2443,17 +2721,16 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
+              data-srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Daria Utesheva - Head of HR Department at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
+              class="multi-image lazyload"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
               height="401"
-              loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
               width="295"
             />
           </picture>
@@ -2494,17 +2771,16 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
+              data-srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Nuradil Alymkulov - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
+              class="multi-image lazyload"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
               height="401"
-              loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
               width="295"
             />
           </picture>
@@ -2545,17 +2821,16 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
+              data-srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Alice Jang - Project Manager at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
+              class="multi-image lazyload"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
               height="401"
-              loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
               width="295"
             />
           </picture>
@@ -2596,17 +2871,16 @@ exports[`Index page renders correctly 1`] = `
           <picture>
             <source
               class="multi-image"
-              srcset="[object Object] ,[object Object] 2x"
+              data-srcset="[object Object] ,[object Object] 2x"
               type="image/webp"
             />
              
             <img
               alt="Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company."
-              class="multi-image"
+              class="multi-image lazyload"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
               height="401"
-              loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
               width="295"
             />
           </picture>

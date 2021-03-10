@@ -23,12 +23,18 @@
           class="tech_container"
           :class="this.activeLegend"
         >
-          <div class="tech_item"
-               :key="index"
-               :class="(`${item.technology}-${item.value} ${item.technology}`)"
-               v-for="(item, index) in technologies"
+          <div
+            class="tech_item"
+            v-for="(item, index) in technologies"
+            :key="index"
+            :class="(`${item.technology}-${item.value} ${item.technology}`)"
           >
-            <span>{{ item.title }}</span>
+            <img
+              :data-src="require(`@/assets/img/Home/technologies/${item.value}.svg`)"
+              class="svg_lazy"
+              :alt="item.title"
+            >
+            <span>{{item.title}}</span>
           </div>
         </div>
       </div>
@@ -37,6 +43,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'TechnologiesAndTools',
   data() {
@@ -135,7 +142,7 @@ export default {
         },
         {
           title: 'GCP',
-          value: 'gsp',
+          value: 'gcp',
           technology: 'infrastructure'
         },
         {
@@ -240,7 +247,7 @@ export default {
         },
         {
           title: 'Service Desk',
-          value: 'jira-service-desk',
+          value: 'service-desk',
           technology: 'pm'
         },
         {
@@ -439,14 +446,21 @@ export default {
       } else {
         this.activeLegend = e;
       }
+      this.$nextTick(() => this.refreshSvg());
+    },
+    refreshSvg() {
+      const lazySvg = [].slice.call(document.querySelectorAll('img.svg_lazy'));
+      lazySvg.forEach(lazySvg => {
+        lazySvg.src = lazySvg.dataset.src;
+        lazySvg.classList.remove('svg_lazy');
+      });
     }
   }
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../../assets/styles/vars';
-@import '../../assets/styles/techIcons';
 
 // establish Technical legends colors
 $tech_legends: (
@@ -616,6 +630,16 @@ $tech_legends: (
     justify-content: flex-end;
   }
 
+  img {
+    width: 26px;
+    height: 26px;
+
+    @media screen and (max-width: 976px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   span {
     white-space: nowrap;
     font-family: 'Poppins-Regular', sans-serif;
@@ -623,39 +647,50 @@ $tech_legends: (
     line-height: 13px;
     color: rgba(255, 255, 255, 0.25);
     margin-top: 15px;
+    display: block;
     width: 100%;
     max-width: 90px;
     text-overflow: ellipsis;
     text-align: center;
     overflow: hidden;
 
+    @media screen and (max-width: 1370px) {
+      max-width: 60px;
+    }
+
+    @media screen and (max-width: 1090px) {
+      max-width: 40px;
+    }
+
     @media screen and (max-width: 976px) {
       font-size: 8px;
       line-height: 13px;
       margin-top: 11px;
+      max-width: 65px;
+    }
+
+    @media screen and (max-width: 850px) {
+      max-width: 45px;
     }
 
     @media screen and (max-width: 668px) {
       margin-top: 9px;
       margin-bottom: 3px;
+      max-width: 25px;
+    }
+
+    @media screen and (max-width: 576px) {
+      max-width: 50px;
+    }
+
+    @media screen and (max-width: 420px) {
+      max-width: 30px;
     }
   }
 
   @each $name, $color in $tech_legends {
     &.#{$name} {
       background: $color;
-
-      &::before {
-        content: '';
-        width: 26px;
-        height: 26px;
-        display: block;
-
-        @media screen and (max-width: 976px) {
-          width: 20px;
-          height: 20px;
-        }
-      }
     }
   }
 
@@ -778,7 +813,7 @@ $tech_legends: (
 
   // Done
   &.backend-c-plus {
-    order: 59;
+    order: 58;
 
     @include mediaMiddleScreen(25);
 
@@ -1021,7 +1056,7 @@ $tech_legends: (
   }
 
   // Done
-  &.infrastructure-gsp {
+  &.infrastructure-gcp {
     order: 8;
 
     @include mediaMobileScreen(14);
@@ -1131,7 +1166,7 @@ $tech_legends: (
   }
 
   // Done
-  &.pm-jira-service-desk {
+  &.pm-service-desk {
     order: 39;
 
     @include mediaMobileScreen(35);

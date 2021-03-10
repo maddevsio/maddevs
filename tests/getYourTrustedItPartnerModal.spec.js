@@ -1,14 +1,21 @@
 import {
-  mount
+  mount,
+  createLocalVue
 } from '@vue/test-utils';
 import getYourTrustedItPartnerModal from '@/components/Modals/get-your-trusted-it-partner-modal';
+import Vuelidate from 'vuelidate';
+
+const localVue = createLocalVue();
+
+localVue.use(Vuelidate);
 
 describe('Get your trusted it partner modal', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = mount(getYourTrustedItPartnerModal, {
-      stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar'],
+      localVue,
+      stubs: ['modal'],
       mocks: {
         $store: {
           dispatch: () => new Promise((rs, rj) => rs({status: 200}))

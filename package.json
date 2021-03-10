@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.5",
-    "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/prismic": "^1.2.4",
     "@nuxtjs/robots": "^2.4.2",
     "axios": "^0.21.1",
@@ -33,21 +32,21 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "nuxt": "^2.14.12",
+    "nuxt-lazysizes": "^1.2.0",
     "prismjs": "^1.23.0",
     "request": "^2.88.2",
     "sendpulse-api": "^1.1.4",
-    "snyk": "^1.454.0",
+    "simplebar-vue": "^1.6.0",
+    "snyk": "^1.439.0",
     "swiper": "^5.4.5",
-    "vee-validate": "^3.4.5",
     "vue-awesome-swiper": "^4.1.1",
     "vue-embed-gist": "^1.1.0",
-    "vue-js-modal": "^2.0.0-rc.6",
     "vue-lottie": "^0.2.1",
     "vue-prism-editor": "^1.2.2",
     "vue-select": "^3.11.2",
     "vue-silentbox": "^2.3.2",
     "vue-social-sharing": "^3.0.4",
-    "vue2-perfect-scrollbar": "^1.5.0"
+    "vuelidate": "^0.7.6"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",

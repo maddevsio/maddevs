@@ -29,9 +29,8 @@
             <div class="customer-testimonials__customer-info">
               <div class="customer-testimonials__profile">
                 <img
-                  :src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)"
-                  loading="lazy"
-                  class="customer-testimonials__customer-image"
+                  :data-src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)"
+                  class="customer-testimonials__customer-image lazyload"
                   :alt="testimonial.alt"
                   width="42"
                   height="42"
@@ -61,13 +60,13 @@ export default {
     return {
       testimonials: [
         {
-          customerName: 'Atif Mahmud,',
+          customerName: 'Atif Mahmood,',
           customerCountry: 'The UK',
           customerProject: 'teacherly',
           customerImageName: 'atif',
           testimonialText: 'Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.',
           link: 'https://teacherly.io/',
-          alt: 'Atif Mahmud - CEO and Founder at Teacherly.'
+          alt: 'Atif Mahmood - CEO and Founder at Teacherly.'
         },
         {
           customerName: 'Daniel Vartanov,',
@@ -87,13 +86,26 @@ export default {
           link: 'https://guardrails.io/',
           alt: 'Stefan Streichsbier - CEO and Founder at GuardRails.io.'
         }
-      ]
+      ],
+      script: null
     };
   },
   mounted() {
-    setTimeout(() => {
-      CLUTCHCO.Init();
-    }, 0);
+    let clutchLoader = () => {
+      this.script = document.createElement('script');
+      this.script.setAttribute('src', 'https://widget.clutch.co/static/js/widget.js');
+      document.body.appendChild(this.script);
+      this.script.onload = function() {
+        CLUTCHCO.Init();
+      };
+      window.removeEventListener('scroll', clutchLoader);
+    };
+	  window.addEventListener('scroll', clutchLoader);
+  },
+  destroyed() {
+    if (this.script !== null) {
+      this.script.remove();
+    }
   }
 };
 </script>

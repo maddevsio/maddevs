@@ -1,14 +1,21 @@
 import {
-  mount
+  mount,
+  createLocalVue
 } from '@vue/test-utils';
 import footerForm from '@/components/Footer/footer-form';
+import Vuelidate from 'vuelidate';
+
+const localVue = createLocalVue();
+
+localVue.use(Vuelidate);
 
 describe('Footer form', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = mount(footerForm, {
-      stubs: ['ValidationObserver', 'ValidationProvider', 'modal'],
+      localVue,
+      stubs: ['modal'],
       mocks: {
         $store: {
           dispatch: () => new Promise((rs, rj) => rs())

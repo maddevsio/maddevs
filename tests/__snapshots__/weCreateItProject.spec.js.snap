@@ -101,71 +101,203 @@ exports[`We Create It Project For renders correctly 1`] = `
         class="weCreateItProject__flags-list"
       >
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-usa"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="usa"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-australia"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="australia"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-vietnam"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="vietnam"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-france"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="france"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-uk"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="uk"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-indonesia"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="indonesia"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-germany"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="germany"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-austria"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="austria"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-switzerland"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="switzerland"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-canada"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="canada"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-latvia"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="latvia"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-kazakhstan"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="kazakhstan"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-sweden"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="sweden"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-finland"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="finland"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-united-arab-emirates"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="uae"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-denmark"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="denmark"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-japan"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="japan"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-norway"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="norway"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-portugal"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="portugal"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-katar"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="katar"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-south-africa"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="south_africa"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
         <li
-          class="weCreateItProject__flag-item weCreateItProject__flag-netherlands"
-        />
+          class="weCreateItProject__flag-item"
+        >
+          <img
+            alt="netherlands"
+            class="svg_lazy"
+            data-src="[object Object]"
+          />
+        </li>
       </ul>
     </div>
   </div>

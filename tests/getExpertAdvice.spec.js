@@ -1,14 +1,21 @@
 import {
-  mount
+  mount,
+  createLocalVue
 } from '@vue/test-utils';
 import getExpertAdvice from '@/components/Modals/get-expert-advice-modal';
+import Vuelidate from 'vuelidate';
+
+const localVue = createLocalVue();
+
+localVue.use(Vuelidate);
 
 describe('Technology stack modal', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = mount(getExpertAdvice, {
-      stubs: ['ValidationProvider', 'ValidationObserver', 'modal', 'perfect-scrollbar'],
+      localVue,
+      stubs: ['modal'],
       mocks: {
         $store: {
           dispatch: () => new Promise((rs, rj) => rs({status: 200}))

@@ -34,7 +34,7 @@
       <div class="filtered-posts" v-if="posts.length">
         <div class="container">
           <div class="filter">
-            <perfect-scrollbar :options="{swipeEasing: true, suppressScrollY: true, handlers: ['wheel', 'touch', 'drag-thumb']}">
+            <simplebar>
               <ul class="filter-list">
                 <li class="filter-item__wrapper" v-for="(category, i) in homepageContent.categories" :key="i">
                   <div class="filter-item">
@@ -43,7 +43,7 @@
                   </div>
                 </li>
               </ul>
-            </perfect-scrollbar>
+            </simplebar>
           </div>
           <div v-if="filteredPosts.length !== 0" class="filtered-posts__wrapper">
             <section v-for="(post, i) in filteredPostsToShow" :key="i" :post="post" class="filtered-posts__single-post">
@@ -62,6 +62,7 @@
 </template>
 
 <script>
+import simplebar from 'simplebar-vue';
 import BlogWidget from '@/components/Blog/BlogWidget.vue';
 import RecommendedBlogWidget from '@/components/Blog/RecommendedBlogWidget';
 import FeaturedPost from '@/components/Blog/FeaturedPost';
@@ -72,6 +73,7 @@ import CustomerUniversitySection from '@/components/Blog/CustomerUniversitySecti
 export default {
   name: 'Blog',
   components: {
+    simplebar,
     BlogWidget,
     FeaturedPost,
     RecommendedBlogWidget,
@@ -279,20 +281,26 @@ export default {
       padding-top: 48px;
       padding-bottom: 20px;
 
+      /deep/ .simplebar-track {
+        display: none;
+      }
+
       .filter {
         margin-bottom: 48px;
 
         .filter-list {
           display: flex;
           justify-content: flex-start;
-          margin: 0 -10px;
         }
 
         .filter-item {
-          padding: 0 10px;
-
           &__wrapper {
-            width: 16.6666%;
+            width: calc(16.6666% - 16px);
+            margin-right: 20px;
+
+            &:last-child {
+              margin-right: 0;
+            }
           }
         }
       }
@@ -468,11 +476,11 @@ export default {
             justify-content: space-between;
 
             .filter-item {
-              padding: 0 4px;
               width: 148px;
 
               &__wrapper {
                 width: auto;
+                margin-right: 8px;
 
                 .filter-label {
                   font-size: 16px;

@@ -17,8 +17,7 @@ describe('Infrastructure optimisation', () => {
       paragraph: 'Our fire brigade can help you optimise resource consumption like we\'ve done for 75% of our customers. We’ll reconfigure and disable every option or service that is not necessary.',
       className: 'second-item'
     },
-    buttonInnerText: 'Get an infrastructure audit',
-    modalWindowName: 'infrastructure-modal'
+    buttonInnerText: 'Get an infrastructure audit'
   };
   beforeEach(() => {
     wrapper = mount(InfrastructureOptimisation);

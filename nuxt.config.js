@@ -3,6 +3,7 @@ import axios from 'axios';
 
 module.exports = {
   srcDir: 'client/',
+  target: 'static',
   /*
   ** Headers of the page
   */
@@ -20,10 +21,9 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'sitemap', type: 'application/xml', href: 'https://maddevs.io/sitemap.xml' }
     ],
-    script: [
+    script: [ // Init google tag manager
       {
-        src: 'https://widget.clutch.co/static/js/widget.js',
-        defer: true
+        innerHTML: '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start": new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src= "https://www.googletagmanager.com/gtm.js?id="+i+dl;w.onload = function () {d.body.appendChild(j)}; })(window,document,"script","dataLayer","GTM-NNKVRF3");'
       }
     ]
   },
@@ -35,17 +35,8 @@ module.exports = {
     height: '3px'
   },
   plugins: [
-    '~/plugins/vee-validate.js',
-    '~/plugins/vue2-perfect-scrollbar.js',
+    '~/plugins/vuelidate.js',
     '~/plugins/vue-social-sharing.js',
-    {
-      src: '~/plugins/drift-chat.js',
-      ssr: false
-    },
-    {
-      src: '~/plugins/vue-js-modal.js',
-      ssr: false
-    },
     {
       src: '~/plugins/vue-silent-box.js',
       ssr: false
@@ -78,6 +69,9 @@ module.exports = {
     {
       src: '~/assets/styles/index.scss',
       lang: 'scss'
+    },
+    {
+      src: 'simplebar/dist/simplebar.min.css'
     }
   ],
   /*
@@ -102,19 +96,12 @@ module.exports = {
       }
     }
   },
+  buildModules: ['nuxt-lazysizes'],
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/gtm',
     '@nuxtjs/robots',
-    '@/modules/static',
-    '@/modules/crawler',
     '@nuxtjs/prismic'
   ],
-  gtm: {
-    id: 'GTM-NNKVRF3',
-    enabled: true,
-    scriptDefer: true
-  },
   axios: {
     baseURL: process.env.NODE_API_URL
   },

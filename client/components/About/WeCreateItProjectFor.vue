@@ -26,8 +26,17 @@
           </div>
         </div>
         <ul class="weCreateItProject__flags-list">
-          <li v-for="(flag, i) in flags" :key="i" class="weCreateItProject__flag-item"
-              :class="`weCreateItProject__${flag}`"></li>
+          <li
+            v-for="(flag, i) in flags"
+            :key="i"
+            class="weCreateItProject__flag-item"
+          >
+            <img
+              :data-src="require(`@/assets/img/Home/flags/${flag}.svg`)"
+              class="svg_lazy"
+              :alt="flag"
+            >
+          </li>
         </ul>
       </div>
     </div>
@@ -41,28 +50,28 @@ export default {
   data() {
     return {
       flags: [ // if will be added or removed flag, need to change css grid, on line 94 and 178
-        'flag-usa',
-        'flag-australia',
-        'flag-vietnam',
-        'flag-france',
-        'flag-uk',
-        'flag-indonesia',
-        'flag-germany',
-        'flag-austria',
-        'flag-switzerland',
-        'flag-canada',
-        'flag-latvia',
-        'flag-kazakhstan',
-        'flag-sweden',
-        'flag-finland',
-        'flag-united-arab-emirates',
-        'flag-denmark',
-        'flag-japan',
-        'flag-norway',
-        'flag-portugal',
-        'flag-katar',
-        'flag-south-africa',
-        'flag-netherlands'
+        'usa',
+        'australia',
+        'vietnam',
+        'france',
+        'uk',
+        'indonesia',
+        'germany',
+        'austria',
+        'switzerland',
+        'canada',
+        'latvia',
+        'kazakhstan',
+        'sweden',
+        'finland',
+        'uae',
+        'denmark',
+        'japan',
+        'norway',
+        'portugal',
+        'katar',
+        'south_africa',
+        'netherlands'
       ]
     };
   }
@@ -71,7 +80,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
-@import '../../assets/styles/_flagsIcons';
 
 .weCreateItProject {
   &__content-wrapper {
@@ -98,6 +106,13 @@ export default {
     display: block;
     width: 32px;
     height: 23px;
+
+    img {
+      display: block;
+      width: 32px;
+      height: 23px;
+      transition: opacity 0.3s ease-in;
+    }
   }
 
   &__main-title,
@@ -122,94 +137,6 @@ export default {
     letter-spacing: -0.02em;
     line-height: 34px;
   }
-
-  &__flag-usa {
-    @include flag-usa;
-  }
-
-  &__flag-australia {
-    @include flag-australia;
-  }
-
-  &__flag-vietnam {
-    @include flag-vietnam;
-  }
-
-  &__flag-france {
-    @include flag-france;
-  }
-
-  &__flag-uk {
-    @include flag-uk;
-  }
-
-  &__flag-indonesia {
-    @include flag-indonesia;
-  }
-
-  &__flag-germany {
-    @include flag-germany;
-  }
-
-  &__flag-austria {
-    @include flag-austria;
-  }
-
-  &__flag-switzerland {
-    @include flag-switzerland;
-  }
-
-  &__flag-canada {
-    @include flag-canada;
-  }
-
-  &__flag-latvia {
-    @include flag-latvia;
-  }
-
-  &__flag-kazakhstan {
-    @include flag-kazakhstan;
-  }
-
-  &__flag-sweden {
-    @include flag-sweden;
-  }
-
-  &__flag-finland {
-    @include flag-finland;
-  }
-
-  &__flag-united-arab-emirates {
-    @include flag-united-arab-emirates;
-  }
-
-  &__flag-denmark {
-    @include flag-denmark;
-  }
-
-  &__flag-japan {
-    @include flag-japan;
-  }
-
-  &__flag-norway {
-    @include flag-norway;
-  }
-
-  &__flag-portugal {
-    @include flag-portugal;
-  }
-
-  &__flag-katar {
-    @include flag-katar;
-  }
-
-  &__flag-south-africa {
-    @include flag-south-africa;
-  }
-
-  &__flag-netherlands {
-    @include flag-netherlands;
-  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1270px) {
@@ -231,6 +158,11 @@ export default {
     &__flag-item {
       width: 21px;
       height: 15px;
+
+      img {
+        width: 21px;
+        height: 15px;
+      }
     }
   }
 }
@@ -300,6 +232,11 @@ export default {
     &__flag-item {
       width: 23px;
       height: 19px;
+
+      img {
+        width: 23px;
+        height: 19px;
+      }
     }
 
     &__projects-type_list {

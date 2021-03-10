@@ -1,28 +1,14 @@
 <template>
-  <div class="mobile-header"
-    :class="{
-      'mobile-header--is-open': mobileHeaderIsOpen,
-      'header-transparent': headerTransparent === true && mobileHeaderIsOpen === false
-    }"
-    ref="mobileHeader"
-  >
-    <div class="mobile-header__top-line">
-      <router-link to="/" class="mobile-header__header-logo" @click.native="mobileHeaderIsOpen = false">
-        <headerLogo :isCasePage="isCasePage" :mobileHeaderIsOpen="mobileHeaderIsOpen"/>
-      </router-link>
-      <div class="mobile-header__button-wrap">
-        <button class="mobile-header__toogle-btn" @click="toggleMobileHeader()" :class="mobileHeaderIsOpen ? 'mobile-header__close' : 'mobile-header__hamburger'"></button>
-      </div>
-    </div>
-    <div class="mobile-header__scrollbar safari_only container" v-show="mobileHeaderIsOpen">
+  <div class="mobile-header" >
+    <div class="safari-only container mobile-header__mobile-menu-scollbar" id="mobile-header-scrollbar">
       <div class="mobile-header__content-wrap">
         <div class="mobile-header__nav-wrap">
           <nav class="mobile-header__header-routes_links">
-            <router-link class="mobile-header__nav-link" exact to="/">About</router-link>
-            <router-link class="mobile-header__nav-link" to="/services/">Services</router-link>
-            <router-link class="mobile-header__nav-link" to="/projects/">Projects</router-link>
-            <router-link class="mobile-header__nav-link" to="/careers/">Careers</router-link>
-            <router-link class="mobile-header__nav-link mobile-header__nav-blog-link" to="/blog/">Blog</router-link>
+            <router-link @click.native="goToPage()" class="mobile-header__nav-link" exact to="/">About</router-link>
+            <router-link @click.native="goToPage()" class="mobile-header__nav-link" to="/services/">Services</router-link>
+            <router-link @click.native="goToPage()" class="mobile-header__nav-link" to="/projects/">Projects</router-link>
+            <router-link @click.native="goToPage()" class="mobile-header__nav-link" to="/careers/">Careers</router-link>
+            <router-link @click.native="goToPage()" class="mobile-header__nav-link mobile-header__nav-blog-link" to="/blog/">Blog</router-link>
           </nav>
           <div class="mobile-header__contacts mobile-header__large-phone-content">
             <div class="mobile-header__contact-item mobile-header__contact-item-email">
@@ -31,16 +17,60 @@
             </div>
             <div class="mobile-header__contact-item">
               <div class="mobile-header__contact-title-wrapper">
-                <div class="mobile-header__contact-title-flag"></div>
+
+                <!-- Flag uk -->
+                <svg class="mobile-header__contact-title-flag" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path d="M0 0H18V14H0V0Z" fill="#41479B"/>
+                    <path d="M18 12.1771L11.3437 7.00001L18 1.82292V0H15.6563L9 5.17709L2.34375 0H0V1.82292L6.65625 7.00001L0 12.1771V14H2.34378L9 8.82293L15.6562 14H18V12.1771Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.90273e-05 0L0 8.16177e-05V0.729299L8.06248 7.00013L0 13.271V14H0.937653L8.99998 7.72929L17.0623 14H18.0001L18.3375 13.5335L9.93748 7.00013L18.3375 0.46678L17.9999 0H17.0626L8.99998 6.27096L0.93733 0H5.90273e-05Z" fill="#DC251C"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 4.66667V0H11.25V4.66667H18V9.33333H11.25V14H6.75V9.33333H0V4.66667H6.75Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.875 5.83333V0H10.125V5.83333H18V8.16667H10.125V14H7.875V8.16667H0V5.83333H7.875Z" fill="#DC251C"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="18" height="14" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+
                 <p class="mobile-header__contact-title">Call us:</p>
               </div>
               <a href="tel:+442039848555" class="mobile-header__contact-link mobile-header__contact-phone-number">+44 20 3984 8555</a>
             </div>
             <ul class="mobile-header__messengers-list">
-              <li v-for="(messenger, i) in messengers" :key="i">
-                <a :href="messenger.link" target="_blank" class="mobile-header__messenger-item-wrapper">
-                  <span class="mobile-header__messenger-item" :class="`mobile-header__${messenger.className}`" />
-                  <p class="mobile-header__messenger-name">{{ messenger.name }}</p>
+              <li>
+                <a href="https://facebook.com/maddevsllc" target="_blank" class="mobile-header__messenger-item-wrapper">
+                  <svg class="mobile-header__messenger-item" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4202 33V28.7257C10.7226 26.6885 9 23.5859 9 20.1111C9 13.9746 14.3726 9 21 9C27.6279 9 33 13.9746 33 20.1111C33 26.2472 27.6279 31.2222 21 31.2222C19.7636 31.2222 18.5702 31.0489 17.4476 30.7278L13.4202 33ZM13.248 23.8679L19.7196 17.0681L22.8257 20.2188L28.6499 17.0681L22.2149 23.8679L19.1377 20.6611L13.248 23.8679Z" fill="#A4A8B4"/>
+                  </svg>
+                  <p class="mobile-header__messenger-name">Messenger</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/message/KPJAW6J7BF7EK1" target="_blank" class="mobile-header__messenger-item-wrapper">
+                  <svg class="mobile-header__messenger-item" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0501 9C24.2467 9.00137 27.247 10.2399 29.5031 12.4878C31.7592 14.7357 33.0012 17.7236 33 20.9011C32.9972 27.4584 27.6361 32.7938 21.0502 32.7938H21.0452C19.0453 32.7931 17.0802 32.2937 15.3348 31.3462L9 33L10.6953 26.8374C9.64948 25.0338 9.09934 22.9879 9.10014 20.8919C9.10279 14.3347 14.4635 9 21.0501 9ZM21.0462 30.7853H21.0502C26.5245 30.7853 30.98 26.351 30.9822 20.9006C30.9833 18.2593 29.9513 15.7759 28.0761 13.9075C26.2009 12.039 23.707 11.0095 21.0542 11.0086C15.5755 11.0086 11.12 15.4425 11.1178 20.8924C11.117 22.7603 11.6422 24.5793 12.6364 26.1529L12.8725 26.5271L11.8691 30.1747L15.6283 29.1934L15.991 29.4075C17.5159 30.3081 19.264 30.7847 21.0462 30.7853Z" fill="#A4A8B4"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0502 30.7853H21.0462C19.264 30.7847 17.5159 30.3081 15.991 29.4075L15.6283 29.1934L11.8691 30.1747L12.8725 26.5271L12.6364 26.1529C11.6422 24.5793 11.117 22.7603 11.1178 20.8924C11.12 15.4425 15.5755 11.0086 21.0542 11.0086C23.707 11.0095 26.2009 12.039 28.0761 13.9075C29.9513 15.7759 30.9833 18.2593 30.9822 20.9006C30.98 26.351 26.5245 30.7853 21.0502 30.7853ZM24.458 22.4153C24.7317 22.5145 26.1996 23.2334 26.4982 23.3821C26.7968 23.5309 26.9958 23.6053 27.0704 23.7291C27.145 23.853 27.145 24.448 26.8962 25.1422C26.6474 25.8363 25.4546 26.4699 24.8809 26.5552C24.3665 26.6317 23.7156 26.6637 23.0002 26.4375C22.5666 26.3004 22.0103 26.1177 21.2981 25.8115C18.3029 24.5242 16.3466 21.5228 16.1974 21.3245L16.1949 21.3211C16.0364 21.1107 14.9782 19.7052 14.9782 18.2505C14.9782 16.7879 15.7496 16.0689 16.0232 15.7714C16.297 15.4739 16.6204 15.3996 16.8194 15.3996C17.0185 15.3996 17.2178 15.4015 17.3918 15.4101C17.575 15.4192 17.8212 15.3409 18.0635 15.9202C18.3123 16.5152 18.9095 17.9779 18.9841 18.1267C19.0589 18.2754 19.1086 18.4489 19.0091 18.6472C18.9095 18.8455 18.8598 18.9696 18.7105 19.143C18.5611 19.3165 18.3968 19.5305 18.2626 19.6637C18.113 19.8118 17.9574 19.9726 18.1316 20.2701C18.3058 20.5677 18.905 21.5408 19.7926 22.3287C20.9331 23.3411 21.8951 23.655 22.1938 23.8036C22.4923 23.9525 22.6665 23.9275 22.8407 23.7293C23.0148 23.5309 23.5872 22.8617 23.7862 22.5642C23.9852 22.2667 24.1843 22.3163 24.458 22.4153Z" fill="#A4A8B4"/>
+                  </svg>
+                  <p class="mobile-header__messenger-name">WhatsApp</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/MadDevs_io" target="_blank" class="mobile-header__messenger-item-wrapper">
+                  <svg class="mobile-header__messenger-item" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5774 25.5186L26.5835 32.7003C27.7254 33.3124 28.5493 32.9954 28.8338 31.6706L32.9068 13.0247C33.3237 11.4006 32.2695 10.6637 31.1771 11.1455L7.26055 20.1045C5.62805 20.7407 5.63777 21.6255 6.96302 22.0197L13.1005 23.8808L27.3095 15.1723C27.9803 14.7771 28.5961 14.9894 28.0908 15.4251" fill="#A4A8B4"/>
+                  </svg>
+                  <p class="mobile-header__messenger-name">Telegram</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc" target="_blank" class="mobile-header__messenger-item-wrapper">
+                  <svg class="mobile-header__messenger-item" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.2636 17.3581C23.7547 17.4892 21.5729 18.2498 19.8016 19.9681C18.012 21.7042 17.1951 23.8315 17.4184 26.4687C16.4377 26.3472 15.5445 26.2136 14.6462 26.1379C14.336 26.1118 13.9678 26.1489 13.705 26.2972C12.8327 26.7894 11.9965 27.3451 11.0054 27.9646C11.1872 27.1421 11.3049 26.4218 11.5133 25.729C11.6666 25.2198 11.5956 24.9364 11.1265 24.6048C8.11467 22.4784 6.84511 19.2962 7.79521 16.0199C8.67422 12.989 10.8328 11.1509 13.7659 10.1927C17.7693 8.88498 22.2684 10.2189 24.7028 13.3973C25.582 14.5455 26.1211 15.8341 26.2636 17.3581ZM14.7164 16.3373C14.7396 15.738 14.2203 15.1982 13.6036 15.1801C12.9721 15.1616 12.4527 15.6442 12.4343 16.2664C12.4157 16.897 12.898 17.4024 13.534 17.4185C14.1646 17.4345 14.6931 16.9513 14.7164 16.3373ZM20.7411 15.1797C20.122 15.1911 19.5989 15.7183 19.6099 16.32C19.6212 16.9436 20.1344 17.4314 20.7709 17.4237C21.4091 17.4161 21.8931 16.923 21.8871 16.2863C21.8818 15.6612 21.371 15.1682 20.7411 15.1797Z" fill="#A4A8B4"/>
+                    <path d="M31.9007 32.9999C31.1063 32.6461 30.3775 32.1153 29.6016 32.0343C28.8287 31.9536 28.0162 32.3995 27.2076 32.4822C24.7444 32.7342 22.5377 32.0477 20.7181 30.365C17.2575 27.1641 17.752 22.2562 21.7558 19.6332C25.3142 17.3019 30.5328 18.0791 33.0417 21.3138C35.2311 24.1364 34.9738 27.8834 32.301 30.2546C31.5276 30.9409 31.2493 31.5056 31.7455 32.4104C31.8371 32.5774 31.8476 32.7889 31.9007 32.9999ZM22.8574 24.244C23.3631 24.2445 23.7796 23.8487 23.7987 23.3491C23.819 22.8203 23.3936 22.3767 22.864 22.3745C22.3397 22.3721 21.9004 22.8219 21.9187 23.3429C21.9359 23.8407 22.3552 24.2434 22.8574 24.244ZM28.6872 22.3765C28.1964 22.3731 27.7794 22.7749 27.7594 23.2707C27.7382 23.8009 28.1503 24.2363 28.675 24.2377C29.1826 24.2393 29.5836 23.8555 29.602 23.3505C29.6217 22.819 29.2094 22.3802 28.6872 22.3765Z" fill="#A4A8B4"/>
+                  </svg>
+                  <p class="mobile-header__messenger-name">WeChat</p>
                 </a>
               </li>
             </ul>
@@ -49,7 +79,7 @@
         <UIButtonModalTrigger
           :buttonInnerText="buttonInnerText"
           :isRed="true"
-          :modalWindowName="modalWindowName"
+          @onClick="$emit('open-modal')"
           class="mobile-header__modal-trigger-btn"
         />
         <footerContacts class="mobile-header__small-phone-content" />
@@ -70,120 +100,20 @@ export default {
     UIButtonModalTrigger,
     footerSocialNetworkList,
     footerContacts,
-    headerLogo
+    headerLogo,
+    showLogoText: true
   },
   data() {
     return {
-      buttonInnerText: 'Contact me',
-      mobileHeaderIsOpen: false,
-      modalWindowName: 'contact-me-modal',
-      messengers: [
-        {
-          name: 'Messenger',
-          className: 'messenger-facebook-messenger',
-          link: 'https://facebook.com/maddevsllc'
-        },
-        {
-          name: 'WhatsApp',
-          className: 'messenger-watsapp',
-          link: 'https://wa.me/message/KPJAW6J7BF7EK1'
-        },
-        {
-          name: 'Telegram',
-          className: 'messenger-telegram',
-          link: 'https://t.me/MadDevs_io'
-        },
-        {
-          name: 'WeChat',
-          className: 'messenger-wechat',
-          link: 'https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc'
-        }
-      ],
-      headerTransparent: false,
-      isCasePage: false,
-      caseMoreButton: null,
-      overlay: null,
-      scrollTop: null,
-      logoText: null,
-      caseFirstSection: null
+      buttonInnerText: 'Contact me'
     };
   },
-  watch: {
-    '$route'() {
-      this.setPageData();
-      this.enableScrollOnBody();
-      this.mobileHeaderIsOpen = false;
-    }
-  },
-  created() {
-    this.setPageData();
-  },
-  mounted() {
-    if(this.isCasePage) {
-      this.overlay = document.getElementsByClassName('overlay')[0];
-      this.caseHeader = document.getElementsByClassName('case_header')[0];
-      this.logoText = document.getElementsByClassName('header-logo-text')[1]; // Logo from mobile header
-
-      if (!this.$nuxt.$route.path.includes('/godee')) {
-        this.caseMoreButton = document.getElementsByClassName('case_more__button')[0];
-        this.getScrollTop();
-        window.addEventListener('scroll', () => this.scrollHandler());
-      } else if (this.$nuxt.$route.path.includes('/godee')) {
-        this.caseFirstSection = document.getElementsByClassName('case_first-section')[0];
-        this.caseRoot = document.getElementsByClassName('main')[0];
-        this.caseRoot.addEventListener('scroll', () => this.scrollHandlerGodeeCase());
-      }
-    }
-  },
   methods: {
-    toggleMobileHeader() {
-      this.mobileHeaderIsOpen = !this.mobileHeaderIsOpen;
-      if(this.mobileHeaderIsOpen) {
-        this.disableScrollOnBody();
-        document.documentElement.style.setProperty('--mobile-header-ios-bar-size', `${this.getIOSBottomBarHeight()}px`);
-        this.isCasePage = false;
-      } else {
-        this.enableScrollOnBody();
-        this.setPageData();
-      }
-    },
-    enableScrollOnBody() {
-      document.body.classList.remove('scrollDisabled');
-    },
-    disableScrollOnBody() {
-      document.body.classList.add('scrollDisabled');
-    },
-    getIOSBottomBarHeight() {
-      return Math.abs(window.innerHeight - window.outerHeight);
-    },
-    getScrollTop() {
-      this.scrollTop = this.caseMoreButton.getBoundingClientRect().top;
-    },
-    scrollHandler() {
-      this.setStylesForHeader();
-    },
-    scrollHandlerGodeeCase() {
-      this.setStylesForHeaderInGoDeeCase();
-    },
-    setPageData() {
-      if(this.$nuxt.$route.path.includes('/case-studies/')) {
-        this.headerTransparent = true;
-        this.isCasePage = true;
-      } else {
-        this.headerTransparent = false;
-        this.isCasePage = false;
-      }
-    },
-    setStylesForHeader() {
-      if (this.isCasePage) {
-        const opacityTextLogo = 1 - (this.overlay.offsetHeight - this.caseMoreButton.getBoundingClientRect().top + this.caseMoreButton.getBoundingClientRect().height) / this.overlay.offsetHeight;
-        this.logoText.style.opacity = opacityTextLogo;
-      }
-    },
-    setStylesForHeaderInGoDeeCase() {
-      if (this.isCasePage) {
-        const opacityTextLogo = 0 - (this.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top) / this.overlay.offsetHeight;
-        this.logoText.style.opacity = opacityTextLogo;
+    goToPage() {
+      this.$emit('changed-page');
+      if (document.body.classList.contains('scrollDisabled') && document.documentElement.classList.contains('scrollDisabled')) {
+        document.body.classList.remove('scrollDisabled');
+        document.documentElement.classList.remove('scrollDisabled');
       }
     }
   }
@@ -192,21 +122,16 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
-  @import '../../assets/styles/_messengerIcons';
-  @import '../../assets/styles/_flagsIcons';
-  @import '../../assets/styles/_headerIcons';
-
-  :root {
-    --mobile-header-ios-bar-size: 0;
-  }
 
   .mobile-header {
     width: 100%;
-    height: 48px;
-    display: none;
+    height: calc(100vh - 45px);
     position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $bgcolor--black;
+    margin-top: 45px;
     z-index: 2;
-    background-color: $bgcolor--black ;
 
     &__modal-trigger-btn {
       width: 100%;
@@ -284,8 +209,10 @@ export default {
     }
 
     &__toogle-btn {
+      width: 22px;
+      height: 22px;
       display: block;
-      margin-top: 9px;
+      margin-top: 12px;
       padding: 0;
       border: 0;
       box-shadow: none;
@@ -297,14 +224,6 @@ export default {
     &__close {
       width: 30px;
       height: 30px;
-    }
-
-    &__hamburger {
-      @include hamburger;
-    }
-
-    &__close {
-      @include close;
     }
 
     .nuxt-link-active {
@@ -369,7 +288,6 @@ export default {
       width: 18px;
       height: 14px;
       margin-right: 8px;
-      @include flag-uk;
     }
 
     &__contact-title,
@@ -408,39 +326,13 @@ export default {
       }
     }
 
-    &--is-open {
-      height: 100vh;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 999;
-      background: $bgcolor--black;
-
-      .mobile-header__scrollbar {
-        height: calc(100vh - 50px);
-        overflow: auto;
-      }
-    }
-
-    &__messenger-facebook-messenger {
-      @include messenger-facebook-messenger;
-    }
-
-    &__messenger-watsapp {
-      @include messenger-watsapp;
-    }
-
-    &__messenger-telegram {
-      @include messenger-telegram;
-    }
-
-    &__messenger-wechat {
-      @include messenger-wechat;
+    &__mobile-menu-scollbar {
+      height: calc(100vh - 62px);
+      overflow: auto;
     }
 
     @media screen and (max-width: 991px) {
       display: block;
-      margin-top: 0;
       box-sizing: border-box;
     }
   }
@@ -537,10 +429,40 @@ export default {
     }
   }
 
-  // only for IOS
-  @media screen and (max-width: 991px) {
-    _::-webkit-full-page-media, _:future, :root .safari_only {
-      height: calc(100vh - var(--mobile-header-ios-bar-size)) !important;
+  /* iphone 5 */
+  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+    _::-webkit-full-page-media, _:future, :root .safari-only {
+      max-height: calc(100vh - 120px) !important;
+    }
+  }
+  /* iphone 6, 6s, 7, 8 */
+  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    _::-webkit-full-page-media, _:future, :root .safari-only {
+      max-height: calc(100vh - 120px) !important;
+    }
+  }
+  /* iphone 6+, 6s+, 7+, 8+ */
+  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+    _::-webkit-full-page-media, _:future, :root .safari-only {
+      max-height: calc(100vh - 120px) !important;
+    }
+  }
+  /* iphone X , XS, 11 Pro */
+  @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    _::-webkit-full-page-media, _:future, :root .safari-only {
+      max-height: calc(100vh - 157px) !important;
+    }
+  }
+  /* iphone XR, 11 */
+  @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio: 2) {
+    _::-webkit-full-page-media, _:future, :root .safari-only {
+      max-height: calc(100vh - 157px) !important;
+    }
+  }
+  /* iphone XS Max, 11 Pro Max */
+  @media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio: 3) {
+    _::-webkit-full-page-media, _:future, :root .safari-only {
+      max-height: calc(100vh - 157px) !important;
     }
   }
 </style>

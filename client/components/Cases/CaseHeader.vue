@@ -1,5 +1,5 @@
 <template>
-  <section class="case_header">
+  <section class="case_header" id="case-header">
     <video 
       class="case_main-video" 
       loop="true" 

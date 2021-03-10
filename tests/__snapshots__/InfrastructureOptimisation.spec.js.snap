@@ -82,5 +82,12 @@ exports[`Infrastructure optimisation renders correctly 1`] = `
       </div>
     </div>
   </div>
+   
+  <transition-stub
+    mode="out-in"
+    name="main-fade"
+  >
+    <!---->
+  </transition-stub>
 </section>
 `;
