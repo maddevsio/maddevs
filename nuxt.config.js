@@ -3,7 +3,7 @@ import axios from 'axios';
 
 module.exports = {
   srcDir: 'client/',
-  target: 'static',
+  target: 'server',
   /*
   ** Headers of the page
   */
@@ -73,6 +73,12 @@ module.exports = {
     {
       src: 'simplebar/dist/simplebar.min.css'
     }
+  ],
+  /*
+  ** Server middlewares
+  */
+  serverMiddleware: [
+    { path: '/api', handler: '~/../server/middleware/sendPulse.js' }
   ],
   /*
   ** Build configuration
