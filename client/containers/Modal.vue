@@ -254,6 +254,7 @@ export default {
 
     &_content {
       padding: 0 10px;
+      max-height: 85vh;
     }
 
     /deep/ .simplebar-vertical {
