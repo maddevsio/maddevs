@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:400,500,600,700');
 
-
 body {
   margin: 0;
   padding: 0;
@@ -58,8 +57,8 @@ main {
 .scrollDisabled {
   width: 100%;
   position: fixed;
-  top: 0;
   overflow: hidden;
+  top: 0;
 }
 
 /* poppins-400normal - latin */
