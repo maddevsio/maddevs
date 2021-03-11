@@ -165,7 +165,7 @@ export default {
     filteredPosts: function() {
       const prevPostLink = document.querySelector(`a[href='${this.visitedPost}']`);
       if (prevPostLink && !prevPostLink.classList.contains('featured-post')) {
-        prevPostLink.scrollIntoView({ block: 'end' });
+        prevPostLink.scrollIntoView({ block: 'center' });
       }
     }
   }
