@@ -1,12 +1,12 @@
 <template>
   <section class="home">
     <div class="body-content">
-      <featured-post :post="featuredPost" v-if="loaded && featuredPost" class="container"/>
+      <featured-post :post="featuredPost" v-if="postsLoaded && featuredPost" class="container"/>
       <skeleton-featured-post v-else class="container"/>
       <div class="latest-posts">
         <div class="container">
           <div class="latest-posts__wrapper">
-            <template v-if="loaded">
+            <template v-if="postsLoaded">
               <section v-for="post in recentPosts" :key="post.id" :post="post" class="latest-posts__single-post">
                 <div class="single-post__wrapper">
                   <div class="banner" v-if="post.id === 'banner'">
@@ -31,14 +31,14 @@
 
       <customer-university-section/>
 
-      <div class="filtered-posts" v-if="posts.length">
+      <div class="filtered-posts" v-if="allPosts.length">
         <div class="container">
           <div class="filter">
             <simplebar>
               <ul class="filter-list">
-                <li class="filter-item__wrapper" v-for="(category, i) in homepageContent.categories" :key="i">
+                <li class="filter-item__wrapper" v-for="(category, i) in homePageContent.categories" :key="i">
                   <div class="filter-item">
-                    <input type="radio" :id="category.title" v-model="currentTag" :value="category.title" name="Tag" class="radio-input">
+                    <input type="radio" :id="category.title" :value="category.title" :checked="postsCategory === category.title" name="Tag" class="radio-input" @change="handleFilterChange">
                     <label :for="category.title" class="filter-label">{{ category.title }}</label>
                   </div>
                 </li>
@@ -52,8 +52,8 @@
               </div>
             </section>
           </div>
-          <div class="load-more-button__wrapper" v-if="totalPages > page">
-            <button class="load-more-button" @click="incrementPage">See more</button>
+          <div class="load-more-button__wrapper" v-if="totalPages > postsPage">
+            <button class="load-more-button" @click="getMorePosts">See more</button>
           </div>
         </div>
       </div>
@@ -62,6 +62,7 @@
 </template>
 
 <script>
+import {mapActions, mapGetters} from 'vuex';
 import simplebar from 'simplebar-vue';
 import BlogWidget from '@/components/Blog/BlogWidget.vue';
 import RecommendedBlogWidget from '@/components/Blog/RecommendedBlogWidget';
@@ -83,17 +84,10 @@ export default {
   },
   data() {
     return {
-      homepageContent: {},
-      posts: [],
-      tags: [],
-      filterIsActive: false,
-      featuredPost: null,
-      currentTag: null,
-      page: 1,
       pageSize: 12,
       metaTitle: 'Blog',
       ogUrl: 'https://maddevs.io/blog/',
-      loaded: false
+      visitedPost: null
     };
   },
   created() {
@@ -103,19 +97,19 @@ export default {
     return {
       title: this.title,
       meta: [
-        { name: 'description', content: this.homepageContent.description || '' },
+        { name: 'description', content: this.homePageContent.description || '' },
         // Facebook / Open Graph
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: this.ogUrl },
         { property: 'og:title', content: this.metaTitle },
-        { property: 'og:description', content: this.homepageContent.description || ''},
+        { property: 'og:description', content: this.homePageContent.description || ''},
         { property: 'og:image', content: 'https://maddevs.io/blog.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         // Twitter / Twitter Card
         { property: 'twitter:card', content: 'summary' },
         { property: 'twitter:text:title', content: this.metaTitle },
-        { property: 'twitter:description', content: this.homepageContent.description || '' },
+        { property: 'twitter:description', content: this.homePageContent.description || '' },
         { property: 'twitter:image:src', content: 'https://maddevs.io/blog.png' },
         { property: 'twitter:url', content: this.ogUrl }
       ],
@@ -135,85 +129,40 @@ export default {
     };
   },
   methods: {
+    ...mapActions(['getHomePageContent', 'getBlogPosts', 'getMorePosts', 'changePostsCategory']),
     getContent() {
       // Query to get blog home content
       this.getHomePageContent();
 
       // Query to get posts content to preview
-      this.getAllPosts();
+      this.getBlogPosts();
     },
 
-    async getAllPosts() {
-      const posts = await this.$prismic.api.query(
-        this.$prismic.predicates.at('document.type', 'post'),
-        {orderings : '[my.post.date desc]', pageSize: 100}
-      );
-
-      this.posts = posts.results;
-      this.featuredPost = posts.results.find(post => post.tags.includes('Featured post'));
-      this.loaded = true;
-    },
-
-    async getHomePageContent() {
-      const homepageContent = (await this.$prismic.api.getSingle('blog_home')).data;
-
-      this.homepageContent = {
-        image: homepageContent.image.url,
-        headline: homepageContent.headline[0].text,
-        description: homepageContent.description[0].text,
-        categories: this.getCategoriesFromPosts(homepageContent.categories),
-        banner: homepageContent.recent_posts_banner,
-        bannerLink: homepageContent.banner_link
-      };
-      this.currentTag = this.homepageContent.categories[0].title;
-    },
-
-    getCategoriesFromPosts(prismicPostsCategories) {
-      return prismicPostsCategories.map(category => {
-        return {
-          title: this.$prismic.asText(category.category_title),
-          tags: category.tags.length ? this.$prismic.asText(category.tags).split(/, */g) : []
-        };
-      });
-    },
-
-    incrementPage() {
-      this.page++;
+    handleFilterChange(e) {
+      this.visitedPost = null;
+      this.changePostsCategory(e.target.value);
     }
   },
   computed: {
-    filteredPosts: function() {
-      if (this.currentTag !== null) {
-        const currentTags = this.homepageContent.categories.find(tag => tag.title === this.currentTag);
-        currentTags.tags.push(currentTags.title);
-
-        return this.posts.filter(post => post.tags.some(tag => currentTags.tags.includes(tag)));
-      } else {
-        return [];
-      }
-    },
+    ...mapGetters(['homePageContent', 'allPosts', 'filteredPosts', 'recentPosts', 'featuredPost', 'postsCategory', 'postsLoaded', 'postsPage']),
     filteredPostsToShow: function() {
-      return this.filteredPosts.slice(0, this.pageSize * this.page);
-    },
-    recentPosts: function() {
-      const posts = this.posts.slice(0, 5);
-      if(posts.length) {
-        posts.splice(4, 0, {
-          id: 'banner',
-          banner: this.homepageContent.banner || {url: '#'},
-          link: this.homepageContent.bannerLink || {link_type: 'Web', target: '_self', url: '#'}
-        });
-      }
-
-      return posts;
+      return this.filteredPosts.slice(0, this.pageSize * this.postsPage);
     },
     totalPages: function() {
       return Math.ceil(this.filteredPosts.length / this.pageSize);
     }
   },
+  beforeRouteEnter (to, from, next) {
+    next(vm => {
+      if (from.params.uid) vm.visitedPost = from.fullPath;
+    });
+  },
   watch: {
-    currentTag: function() {
-      this.page = 1;
+    filteredPosts: function() {
+      const prevPostLink = document.querySelector(`a[href='${this.visitedPost}']`);
+      if (prevPostLink && !prevPostLink.classList.contains('featured-post')) {
+        prevPostLink.scrollIntoView({ block: 'end' });
+      }
     }
   }
 };
