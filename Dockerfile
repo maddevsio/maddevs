@@ -2,11 +2,11 @@ FROM node:12
 
 WORKDIR /app
 COPY package.json /app
-RUN npm install
+RUN npm ci
 COPY . /app
-RUN npm run generate
+RUN npm run build
 
 ENV PORT 3000
 EXPOSE 3000
 
-CMD ["node", "server.js"]
+CMD ["npm", "start"]
