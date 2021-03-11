@@ -14,7 +14,7 @@
     "lint-vue-scss": "sass-lint-vue components",
     "lint-scss": "sass-lint client/assets/styles/*.scss --verbose",
     "precommit": "npm run lint",
-    "heroku-postbuild": "npm run generate",
+    "heroku-postbuild": "npm run build",
     "heroku-cleanup": "rm -rf client && rm -rf .nuxt",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
