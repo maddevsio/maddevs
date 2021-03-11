@@ -518,8 +518,11 @@ exports[`Slice block component Renders correctly 1`] = `
           class="block-img image-full-width"
         >
           <prismic-image-stub
+            class=""
             field="[object Object]"
           />
+           
+          <!---->
         </div>
          
         <p
