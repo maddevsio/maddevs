@@ -64,6 +64,7 @@ main {
   font-family: 'Poppins-Regular';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src:
     url('~assets/fonts/Poppins/Poppins-Regular.woff2') format('woff2'), /* Super Modern Browsers */
     url('~assets/fonts/Poppins/Poppins-Regular.woff') format('woff'), /* Modern Browsers */
@@ -76,6 +77,7 @@ main {
   font-family: 'Poppins-Bold';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src:
     url('~assets/fonts/Poppins/Poppins-Bold.woff2') format('woff2'), /* Super Modern Browsers */
     url('~assets/fonts/Poppins/Poppins-Bold.woff') format('woff'), /* Modern Browsers */
@@ -90,6 +92,7 @@ main {
   font-family: 'Poppins-Medium';
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src:
     url('~assets/fonts/Poppins/Poppins-Medium.woff2') format('woff2'), /* Super Modern Browsers */
     url('~assets/fonts/Poppins/Poppins-Medium.woff') format('woff'), /* Modern Browsers */

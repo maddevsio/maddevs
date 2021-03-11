@@ -36,11 +36,7 @@ module.exports = {
   },
   plugins: [
     '~/plugins/vuelidate.js',
-    '~/plugins/vue-social-sharing.js',
-    {
-      src: '~/plugins/vue-silent-box.js',
-      ssr: false
-    }
+    '~/plugins/vue-social-sharing.js'
   ],
   generate: {
     async routes() {

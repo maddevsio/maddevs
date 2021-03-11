@@ -44,7 +44,6 @@
     "vue-lottie": "^0.2.1",
     "vue-prism-editor": "^1.2.2",
     "vue-select": "^3.11.2",
-    "vue-silentbox": "^2.3.2",
     "vue-social-sharing": "^3.0.4",
     "vuelidate": "^0.7.6"
   },
