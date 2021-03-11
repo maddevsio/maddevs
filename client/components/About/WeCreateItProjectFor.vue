@@ -32,6 +32,8 @@
             class="weCreateItProject__flag-item"
           >
             <img
+              width="32"
+              height="32"
               :data-src="require(`@/assets/img/Home/flags/${flag}.svg`)"
               class="svg_lazy"
               :alt="flag"

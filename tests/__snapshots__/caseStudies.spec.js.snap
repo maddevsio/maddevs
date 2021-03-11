@@ -37,8 +37,12 @@ exports[`CaseStudies component renders correctly 1`] = `
           <div
             class="single-project__content-wrap"
           >
-            <span
-              class="single-project__logo-bg single-project__logo-bg--nambafoodColored"
+            <img
+              alt="Namba Food Contactless Delivery Service\`s Logo."
+              class="svg_lazy single-project__logo"
+              data-src="[object Object]"
+              height="41"
+              width="104"
             />
              
             <h3
@@ -121,8 +125,12 @@ exports[`CaseStudies component renders correctly 1`] = `
           <div
             class="single-project__content-wrap"
           >
-            <span
-              class="single-project__logo-bg single-project__logo-bg--sjmcIcon"
+            <img
+              alt="General John Monash The Australian War Memorial\`s Logo."
+              class="svg_lazy single-project__logo"
+              data-src="[object Object]"
+              height="41"
+              width="91.5"
             />
              
             <h3
@@ -205,8 +213,12 @@ exports[`CaseStudies component renders correctly 1`] = `
           <div
             class="single-project__content-wrap"
           >
-            <span
-              class="single-project__logo-bg single-project__logo-bg--guardrailsColored"
+            <img
+              alt="Guardrails Cloud CyberSecurity Services Logo."
+              class="svg_lazy single-project__logo"
+              data-src="[object Object]"
+              height="41"
+              width="174"
             />
              
             <h3
@@ -289,8 +301,12 @@ exports[`CaseStudies component renders correctly 1`] = `
           <div
             class="single-project__content-wrap"
           >
-            <span
-              class="single-project__logo-bg single-project__logo-bg--godeeColored"
+            <img
+              alt="GoDee Bus Transportation Services Logo."
+              class="svg_lazy single-project__logo"
+              data-src="[object Object]"
+              height="41"
+              width="121"
             />
              
             <h3

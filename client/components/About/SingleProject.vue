@@ -12,7 +12,13 @@
       }"
     >
       <div class="single-project__content-wrap">
-        <span :class="`single-project__logo-bg single-project__logo-bg--${project.logoImg}`"/>
+        <img
+          :width="project.logoWidth"
+          height="41"
+          :data-src="require(`@/assets/img/Home/svg/caseIcons/${project.logoImg}.svg`)"
+          class="svg_lazy single-project__logo"
+          :alt="project.alt"
+        >
         <h3 class="single-project__sub-title">
           {{ project.projectTitle }}
         </h3>
@@ -117,7 +123,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
-@import '../../assets/styles/caseIcons';
 
 .single-project {
   position: relative;
@@ -126,29 +131,9 @@ export default {
   color: initial;
   display: block;
 
-  &__logo-bg {
+  &__logo {
     display: block;
-    height: 41px;
-
-    &--godeeColored {
-      @include godee-icon;
-    }
-
-    &--guardrailsColored {
-      @include guardrails-icon;
-    }
-
-    &--nambafoodColored {
-      @include nambafood-icon;
-    }
-
-    &--teacherlyColored {
-      @include teacherly-icon;
-    }
-
-    &--sjmcIcon {
-      @include sjmc-icon;
-    }
+    max-height: 41px;
   }
 
   &__content-wrap {

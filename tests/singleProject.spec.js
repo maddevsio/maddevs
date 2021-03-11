@@ -2,7 +2,6 @@ import {
   mount
 } from '@vue/test-utils';
 
-import jest from 'jest';
 import SingleProject from '@/components/About/SingleProject';
 
 describe('CaseStudies component', () => {
@@ -10,14 +9,17 @@ describe('CaseStudies component', () => {
   let props = {
     project: {
       projectName: 'godee',
-      logoImg: 'godeeColored',
-      link: 'https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5',
+      logoImg: 'godee-icon',
+      logoWidth: 121,
+      link: '/case-studies/godee/',
+      targetBlank: false,
       contributionWidgetColors: ['#000', '#000'],
       projectBackground: 'godeeBackground',
+      fileExtension: 'png',
       projectColor: '#ff6A01',
-      projectTitle: 'Mass transportation company',
-      projectDescription: 'Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.',
-      fileExtension: 'png'
+      projectTitle: 'Convenient shuttle bus service',
+      projectDescription: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
+      alt: 'GoDee Bus Transportation Services Logo.'
     }
   };
 

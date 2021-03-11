@@ -41,8 +41,14 @@
               </div>
               <div class="customer-testimonials__project">
                 <a :href="testimonial.link" target="_blank" rel="nofollow">
-                  <span
-                    :class="`customer-testimonials__${testimonial.customerProject}`"></span>
+                  <img
+                    :width="testimonial.logoWidth"
+                    height="31"
+                    :data-src="require(`@/assets/img/Home/svg/testimonials/${testimonial.customerProject}.svg`)"
+                    class="svg_lazy single-project__logo"
+                    :class="`customer-testimonials__${testimonial.customerProject}`"
+                    :alt="testimonial.alt"
+                  >
                 </a>
               </div>
             </div>
@@ -66,7 +72,8 @@ export default {
           customerImageName: 'atif',
           testimonialText: 'Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.',
           link: 'https://teacherly.io/',
-          alt: 'Atif Mahmood - CEO and Founder at Teacherly.'
+          alt: 'Atif Mahmood - CEO and Founder at Teacherly.',
+          logoWidth: 91
         },
         {
           customerName: 'Daniel Vartanov,',
@@ -75,7 +82,8 @@ export default {
           customerImageName: 'daniel',
           testimonialText: 'We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.',
           link: 'https://veeqo.com/',
-          alt: 'Daniel Vartanov - CTO at Veeqo.com.'
+          alt: 'Daniel Vartanov - CTO at Veeqo.com.',
+          logoWidth: 83
         },
         {
           customerName: 'Stefan Streichsbier,',
@@ -84,7 +92,8 @@ export default {
           customerImageName: 'stefan',
           testimonialText: 'I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.',
           link: 'https://guardrails.io/',
-          alt: 'Stefan Streichsbier - CEO and Founder at GuardRails.io.'
+          alt: 'Stefan Streichsbier - CEO and Founder at GuardRails.io.',
+          logoWidth: 160
         }
       ],
       script: null
@@ -112,7 +121,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
-@import '../../assets/styles/customerTestimonioalsIcons';
 
 .customer-testimonials {
   background-color: #f5f7f9;
@@ -332,7 +340,6 @@ export default {
   &__teacherly {
     width: 91px;
     height: 29px;
-    @include teacherly;
 
     @media screen and (max-width: 1169px) and (min-width: 768px) {
       width: 50px;
@@ -344,7 +351,6 @@ export default {
   &__veeqo {
     width: 83px;
     height: 31px;
-    @include veeqo;
 
     @media screen and (max-width: 1169px) and (min-width: 768px) {
       width: 43px;
@@ -356,7 +362,6 @@ export default {
   &__guardrails {
     width: 160px;
     height: 32px;
-    @include guardrails;
 
     @media screen and (max-width: 1169px) {
       width: 80px;

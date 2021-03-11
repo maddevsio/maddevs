@@ -85,8 +85,12 @@ exports[`Customer Testimonials renders correctly 1`] = `
                 rel="nofollow"
                 target="_blank"
               >
-                <span
-                  class="customer-testimonials__teacherly"
+                <img
+                  alt="Atif Mahmood - CEO and Founder at Teacherly."
+                  class="svg_lazy single-project__logo customer-testimonials__teacherly"
+                  data-src="[object Object]"
+                  height="31"
+                  width="91"
                 />
               </a>
             </div>
@@ -136,8 +140,12 @@ exports[`Customer Testimonials renders correctly 1`] = `
                 rel="nofollow"
                 target="_blank"
               >
-                <span
-                  class="customer-testimonials__veeqo"
+                <img
+                  alt="Daniel Vartanov - CTO at Veeqo.com."
+                  class="svg_lazy single-project__logo customer-testimonials__veeqo"
+                  data-src="[object Object]"
+                  height="31"
+                  width="83"
                 />
               </a>
             </div>
@@ -187,8 +195,12 @@ exports[`Customer Testimonials renders correctly 1`] = `
                 rel="nofollow"
                 target="_blank"
               >
-                <span
-                  class="customer-testimonials__guardrails"
+                <img
+                  alt="Stefan Streichsbier - CEO and Founder at GuardRails.io."
+                  class="svg_lazy single-project__logo customer-testimonials__guardrails"
+                  data-src="[object Object]"
+                  height="31"
+                  width="160"
                 />
               </a>
             </div>
