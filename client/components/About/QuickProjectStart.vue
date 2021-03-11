@@ -5,8 +5,8 @@
       <div class="quickProjectStart__content-list row">
         <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_contact">
           <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/contact.svg`)" alt="contact" class="quickProjectStart__main-icon svg_lazy">
-            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon svg_lazy">
+            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/contact.svg`)" alt="contact" class="quickProjectStart__main-icon img_lazy">
+            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon img_lazy">
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
             <h3 class="quickProjectStart__title">contact</h3>
@@ -15,8 +15,8 @@
         </div>
         <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_analysis">
           <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/analysis.svg`)" alt="analysis" class="quickProjectStart__main-icon svg_lazy">
-            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon svg_lazy">
+            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/analysis.svg`)" alt="analysis" class="quickProjectStart__main-icon img_lazy">
+            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon img_lazy">
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
             <h3 class="quickProjectStart__title">analysis</h3>
@@ -25,8 +25,8 @@
         </div>
         <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_proposal">
           <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/proposal.svg`)" alt="proposal" class="quickProjectStart__main-icon svg_lazy">
-            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon svg_lazy">
+            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/proposal.svg`)" alt="proposal" class="quickProjectStart__main-icon img_lazy">
+            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon img_lazy">
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
             <h3 class="quickProjectStart__title">proposal</h3>
@@ -35,8 +35,8 @@
         </div>
         <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_team">
           <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/team.svg`)" alt="team" class="quickProjectStart__main-icon svg_lazy">
-            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon svg_lazy">
+            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/team.svg`)" alt="team" class="quickProjectStart__main-icon img_lazy">
+            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon img_lazy">
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
             <h3 class="quickProjectStart__title">team</h3>
@@ -45,7 +45,7 @@
         </div>
         <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_start">
           <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/start.svg`)" alt="start" class="quickProjectStart__main-icon svg_lazy">
+            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/start.svg`)" alt="start" class="quickProjectStart__main-icon img_lazy">
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
             <h3 class="quickProjectStart__title">start</h3>

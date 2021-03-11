@@ -9,7 +9,7 @@
         <img
           width="42"
           height="42"
-          class="svg_lazy"
+          class="img_lazy"
           :data-src="require(`@/assets/img/Footer/svg/${socialNetwork.img}.svg`)"
           :alt="socialNetwork.alt"
         >

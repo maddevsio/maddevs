@@ -44,14 +44,4 @@ export default {
   .default-layout {
     background-color: $bgcolor--black;
   }
-
-  .page-scrollbar {
-    height: 100vh;
-    overflow: hidden;
-
-    /deep/ .ps__rail-y {
-      z-index: 999;
-      cursor: pointer;
-    }
-  }
 </style>

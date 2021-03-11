@@ -16,7 +16,7 @@
             height="24" 
             :data-src="require(`@/assets/img/Home/svg/team/linkedin.svg`)" 
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link svg_lazy"
+            class="meet-our_experts__expert-linkedin-link img_lazy"
           >
           <a :href="expert.linkedin" class="" rel="nofollow" target="_blank"></a>
         </div>

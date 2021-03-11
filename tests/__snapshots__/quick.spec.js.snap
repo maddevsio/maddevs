@@ -25,14 +25,14 @@ exports[`Quick Project Start renders correctly 1`] = `
         >
           <img
             alt="contact"
-            class="quickProjectStart__main-icon svg_lazy"
+            class="quickProjectStart__main-icon img_lazy"
             data-src="[object Object]"
             height="73"
             width="52"
           />
            
           <img
-            class="quickProjectStart__arrow-icon svg_lazy"
+            class="quickProjectStart__arrow-icon img_lazy"
             data-src="[object Object]"
           />
         </div>
@@ -62,14 +62,14 @@ exports[`Quick Project Start renders correctly 1`] = `
         >
           <img
             alt="analysis"
-            class="quickProjectStart__main-icon svg_lazy"
+            class="quickProjectStart__main-icon img_lazy"
             data-src="[object Object]"
             height="73"
             width="52"
           />
            
           <img
-            class="quickProjectStart__arrow-icon svg_lazy"
+            class="quickProjectStart__arrow-icon img_lazy"
             data-src="[object Object]"
           />
         </div>
@@ -99,14 +99,14 @@ exports[`Quick Project Start renders correctly 1`] = `
         >
           <img
             alt="proposal"
-            class="quickProjectStart__main-icon svg_lazy"
+            class="quickProjectStart__main-icon img_lazy"
             data-src="[object Object]"
             height="73"
             width="52"
           />
            
           <img
-            class="quickProjectStart__arrow-icon svg_lazy"
+            class="quickProjectStart__arrow-icon img_lazy"
             data-src="[object Object]"
           />
         </div>
@@ -136,14 +136,14 @@ exports[`Quick Project Start renders correctly 1`] = `
         >
           <img
             alt="team"
-            class="quickProjectStart__main-icon svg_lazy"
+            class="quickProjectStart__main-icon img_lazy"
             data-src="[object Object]"
             height="73"
             width="52"
           />
            
           <img
-            class="quickProjectStart__arrow-icon svg_lazy"
+            class="quickProjectStart__arrow-icon img_lazy"
             data-src="[object Object]"
           />
         </div>
@@ -173,7 +173,7 @@ exports[`Quick Project Start renders correctly 1`] = `
         >
           <img
             alt="start"
-            class="quickProjectStart__main-icon svg_lazy"
+            class="quickProjectStart__main-icon img_lazy"
             data-src="[object Object]"
             height="73"
             width="52"

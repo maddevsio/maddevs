@@ -59,7 +59,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
          
         <img
           alt="Linkedin"
-          class="meet-our_experts__expert-linkedin-link svg_lazy"
+          class="meet-our_experts__expert-linkedin-link img_lazy"
           data-src="[object Object]"
           height="24"
           width="24"
@@ -113,7 +113,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
          
         <img
           alt="Linkedin"
-          class="meet-our_experts__expert-linkedin-link svg_lazy"
+          class="meet-our_experts__expert-linkedin-link img_lazy"
           data-src="[object Object]"
           height="24"
           width="24"
@@ -167,7 +167,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
          
         <img
           alt="Linkedin"
-          class="meet-our_experts__expert-linkedin-link svg_lazy"
+          class="meet-our_experts__expert-linkedin-link img_lazy"
           data-src="[object Object]"
           height="24"
           width="24"
@@ -221,7 +221,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
          
         <img
           alt="Linkedin"
-          class="meet-our_experts__expert-linkedin-link svg_lazy"
+          class="meet-our_experts__expert-linkedin-link img_lazy"
           data-src="[object Object]"
           height="24"
           width="24"
@@ -275,7 +275,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
          
         <img
           alt="Linkedin"
-          class="meet-our_experts__expert-linkedin-link svg_lazy"
+          class="meet-our_experts__expert-linkedin-link img_lazy"
           data-src="[object Object]"
           height="24"
           width="24"
@@ -329,7 +329,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
          
         <img
           alt="Linkedin"
-          class="meet-our_experts__expert-linkedin-link svg_lazy"
+          class="meet-our_experts__expert-linkedin-link img_lazy"
           data-src="[object Object]"
           height="24"
           width="24"
@@ -383,7 +383,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
          
         <img
           alt="Linkedin"
-          class="meet-our_experts__expert-linkedin-link svg_lazy"
+          class="meet-our_experts__expert-linkedin-link img_lazy"
           data-src="[object Object]"
           height="24"
           width="24"
@@ -437,7 +437,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
          
         <img
           alt="Linkedin"
-          class="meet-our_experts__expert-linkedin-link svg_lazy"
+          class="meet-our_experts__expert-linkedin-link img_lazy"
           data-src="[object Object]"
           height="24"
           width="24"

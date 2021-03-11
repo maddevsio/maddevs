@@ -15,7 +15,7 @@ export default {
       initDriftHelper();
       scrollContainer.removeEventListener('scroll', driftLoader);
     };
-	  scrollContainer.addEventListener('scroll', driftLoader);
+    scrollContainer.addEventListener('scroll', driftLoader);
   }
 };
 </script>

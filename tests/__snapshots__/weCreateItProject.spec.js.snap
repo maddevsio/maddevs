@@ -105,7 +105,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="usa"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -116,7 +116,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="australia"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -127,7 +127,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="vietnam"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -138,7 +138,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="france"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -149,7 +149,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="uk"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -160,7 +160,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="indonesia"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -171,7 +171,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="germany"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -182,7 +182,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="austria"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -193,7 +193,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="switzerland"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -204,7 +204,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="canada"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -215,7 +215,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="latvia"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -226,7 +226,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="kazakhstan"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -237,7 +237,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="sweden"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -248,7 +248,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="finland"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -259,7 +259,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="uae"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -270,7 +270,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="denmark"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -281,7 +281,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="japan"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -292,7 +292,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="norway"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -303,7 +303,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="portugal"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -314,7 +314,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="katar"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -325,7 +325,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="south_africa"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"
@@ -336,7 +336,7 @@ exports[`We Create It Project For renders correctly 1`] = `
         >
           <img
             alt="netherlands"
-            class="svg_lazy"
+            class="img_lazy"
             data-src="[object Object]"
             height="32"
             width="32"

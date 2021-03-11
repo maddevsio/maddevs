@@ -12,7 +12,7 @@
               width="19"
               height="14"
               :data-src="require(`@/assets/img/Home/flags/uk.svg`)"
-              class="svg_lazy"
+              class="img_lazy"
               alt="United Kingdom"
             >
 					</div>
@@ -29,7 +29,7 @@
               width="42"
               height="42"
               :data-src="require(`@/assets/img/Footer/svg/messenger.svg`)"
-              class="svg_lazy"
+              class="img_lazy"
               alt="Messenger"
             >
 						<p class="footer-contacts__messenger-name">Messenger</p>
@@ -41,7 +41,7 @@
               width="42"
               height="42"
               :data-src="require(`@/assets/img/Footer/svg/whatsapp.svg`)"
-              class="svg_lazy"
+              class="img_lazy"
               alt="WhatsApp"
             >
 						<p class="footer-contacts__messenger-name">WhatsApp</p>
@@ -53,7 +53,7 @@
               width="42"
               height="42"
               :data-src="require(`@/assets/img/Footer/svg/telegram.svg`)"
-              class="svg_lazy"
+              class="img_lazy"
               alt="Telegram"
             >
 						<p class="footer-contacts__messenger-name">Telegram</p>
@@ -65,7 +65,7 @@
               width="42"
               height="42"
               :data-src="require(`@/assets/img/Footer/svg/wechat.svg`)"
-              class="svg_lazy"
+              class="img_lazy"
               alt="WeChat"
             >
 						<p class="footer-contacts__messenger-name">WeChat</p>

@@ -33,7 +33,7 @@
               width="26"
               height="26"
               :data-src="require(`@/assets/img/Home/svg/technologies/${item.value}.svg`)"
-              class="svg_lazy"
+              class="img_lazy"
               :alt="item.title"
             >
             <span>{{item.title}}</span>
@@ -451,10 +451,10 @@ export default {
       this.$nextTick(() => this.refreshSvg());
     },
     refreshSvg() {
-      const lazySvg = [].slice.call(document.querySelectorAll('img.svg_lazy'));
+      const lazySvg = [].slice.call(document.querySelectorAll('img.img_lazy'));
       lazySvg.forEach(lazySvg => {
         lazySvg.src = lazySvg.dataset.src;
-        lazySvg.classList.remove('svg_lazy');
+        lazySvg.classList.remove('img_lazy');
       });
     }
   }

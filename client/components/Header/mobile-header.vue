@@ -36,7 +36,7 @@
                     width="42"
                     height="42"
                     :data-src="require(`@/assets/img/Footer/svg/messenger.svg`)"
-                    class="svg_lazy"
+                    class="img_lazy"
                     alt="Messenger"
                   >
                   <p class="mobile-header__messenger-name">Messenger</p>
@@ -48,7 +48,7 @@
                     width="42"
                     height="42"
                     :data-src="require(`@/assets/img/Footer/svg/whatsapp.svg`)"
-                    class="svg_lazy"
+                    class="img_lazy"
                     alt="WhatsApp"
                   >
                   <p class="mobile-header__messenger-name">WhatsApp</p>
@@ -60,7 +60,7 @@
                     width="42"
                     height="42"
                     :data-src="require(`@/assets/img/Footer/svg/telegram.svg`)"
-                    class="svg_lazy"
+                    class="img_lazy"
                     alt="Telegram"
                   >
                   <p class="mobile-header__messenger-name">Telegram</p>
@@ -72,7 +72,7 @@
                     width="42"
                     height="42"
                     :data-src="require(`@/assets/img/Footer/svg/wechat.svg`)"
-                    class="svg_lazy"
+                    class="img_lazy"
                     alt="WeChat"
                   >
                   <p class="mobile-header__messenger-name">WeChat</p>

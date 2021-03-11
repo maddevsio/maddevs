@@ -16,7 +16,7 @@
           :width="project.logoWidth"
           height="41"
           :data-src="require(`@/assets/img/Home/svg/caseIcons/${project.logoImg}.svg`)"
-          class="svg_lazy single-project__logo"
+          class="img_lazy single-project__logo"
           :alt="project.alt"
         >
         <h3 class="single-project__sub-title">

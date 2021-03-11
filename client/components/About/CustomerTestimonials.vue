@@ -45,7 +45,7 @@
                     :width="testimonial.logoWidth"
                     height="31"
                     :data-src="require(`@/assets/img/Home/svg/testimonials/${testimonial.customerProject}.svg`)"
-                    class="svg_lazy single-project__logo"
+                    class="img_lazy single-project__logo"
                     :class="`customer-testimonials__${testimonial.customerProject}`"
                     :alt="testimonial.alt"
                   >
