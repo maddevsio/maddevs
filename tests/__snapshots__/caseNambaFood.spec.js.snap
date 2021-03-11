@@ -189,7 +189,7 @@ exports[`Namba food renders correctly 1`] = `
               />
                
               <img
-                alt="Namba Food Personal couriers."
+                alt="Namba Food: Food and Grocery Delivery Service Couriers."
                 class="image"
                 height="0"
                 loading="lazy"
@@ -307,7 +307,7 @@ exports[`Namba food renders correctly 1`] = `
       class="container_full background-color-silver"
     >
       <img
-        alt="Nambs Food High-level System Overview."
+        alt="Namba Food: Website and Mobile App Infrastructure Scheme."
         class="case_gif case_high-level-system-overview-gif"
         src="../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif"
       />
@@ -371,7 +371,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="Namba Food Mobile Application Main Page on Iphone for Users."
+                    alt="Namba Food: Food and Grocery Delivery App for Iphone."
                     class="image"
                     height="0"
                     loading=""
@@ -393,7 +393,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="Namba Food Mobile Application Main Page on Iphone for Users."
+                    alt="Namba Food: Food and Grocery Delivery App for Iphone."
                     class="image"
                     height="0"
                     loading=""
@@ -444,7 +444,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="Namba Food Mobile Application Main Page on Android for Deliverymen."
+                    alt="Namba Food: Courier App for Android."
                     class="image"
                     height="0"
                     loading=""
@@ -466,7 +466,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="Namba Food Mobile Application Main Page on Android for Deliverymen."
+                    alt="Namba Food: Courier App for Android."
                     class="image"
                     height="0"
                     loading=""
@@ -515,7 +515,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="Namba Food Unified Control System for Operators on Desktop."
+                    alt="Namba Food: Admin Panel Which Help to Control and Track Food and Grocery Delivery."
                     class="image"
                     height="0"
                     loading=""
@@ -537,7 +537,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="Namba Food Unified Control System for Operators on Desktop."
+                    alt="Namba Food: Admin Panel Which Help to Control and Track Food and Grocery Delivery."
                     class="image"
                     height="0"
                     loading=""
@@ -588,7 +588,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="Namba Food Control Panel for Managers on Desktop."
+                    alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
                     class="image"
                     height="0"
                     loading=""
@@ -610,7 +610,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="Namba Food Control Panel for Managers on Desktop."
+                    alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
                     class="image"
                     height="0"
                     loading=""
@@ -788,7 +788,7 @@ exports[`Namba food renders correctly 1`] = `
             />
              
             <img
-              alt="Namba Food Android Application for Couriers."
+              alt="Namba Food: Courier App for Android."
               class="image"
               height="0"
               loading=""
@@ -844,7 +844,7 @@ exports[`Namba food renders correctly 1`] = `
         />
          
         <img
-          alt="Namba Food Admin Panel on Desktop."
+          alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
           class="image box-shadow"
           height="0"
           loading="lazy"
@@ -1006,7 +1006,7 @@ exports[`Namba food renders correctly 1`] = `
             />
              
             <img
-              alt="Namba Food Admin Panel."
+              alt="Namba Food: Food and Grocery Delivery Service Website Header."
               class="image"
               height="0"
               loading="lazy"
@@ -1035,7 +1035,7 @@ exports[`Namba food renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="Namba Food Delivery Control Admin Panel."
+                    alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
                     class="image"
                     height="0"
                     loading="lazy"
@@ -1095,7 +1095,7 @@ exports[`Namba food renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="Namba Food Delivery Control Admin Panel."
+                  alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
                   class="image"
                   height="0"
                   loading="lazy"
@@ -1358,7 +1358,7 @@ exports[`Namba food renders correctly 1`] = `
         />
          
         <img
-          alt="Grafana — Docker Containers’ Monitoring Service."
+          alt="Namba Food: Software Stability Monitoring with Grafana."
           class="image box-shadow"
           height="0"
           loading="lazy"
@@ -1636,7 +1636,7 @@ exports[`Namba food renders correctly 1`] = `
       class="container_full background-color-silver"
     >
       <img
-        alt="Nambs Food High-level System Overview."
+        alt="Namba Food: Website and Mobile App Infrastructure Scheme."
         class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"
         src="../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif"
       />
@@ -1692,7 +1692,7 @@ exports[`Namba food renders correctly 1`] = `
           />
            
           <img
-            alt="The Pipeline for the Namba Food System."
+            alt="Namba Food: Automated Deployment Stage Scheme."
             class="image"
             height="0"
             loading="lazy"
@@ -1720,7 +1720,7 @@ exports[`Namba food renders correctly 1`] = `
           />
            
           <img
-            alt="The Pipeline for the Namba Food System."
+            alt="Namba Food: Automated Deployment Stage Scheme."
             class="image"
             height="0"
             loading="lazy"
@@ -2548,7 +2548,7 @@ exports[`Namba food renders correctly 1`] = `
               />
                
               <img
-                alt="Aziza Anarbekova Namba Food Co-Founder."
+                alt="Aziza Anarbekova Namba Food Delivery Service Co-Founder."
                 class="image"
                 height="0"
                 loading="lazy"

@@ -60,7 +60,7 @@
             pictureFolder="sjmc"
             fileName="multimedia-management"
             fileExtension="jpg"
-            alt="The SJMC Multimedia Management IT Brain."
+            alt="The SJMC: Multimedia Management System."
             :lazyLoading="true"
           />
         </div>
@@ -160,7 +160,7 @@
       </section>
       <section class="container_full background-color-silver">
         <section class="container_middle">
-          <img src="../../assets/img/Cases/sjmc/gif/watchpax.gif" class="case_gif" alt="WATCHOUT - Multi-Display Production and Presentation System.">
+          <img src="../../assets/img/Cases/sjmc/gif/watchpax.gif" class="case_gif" alt="WATCHOUT - Multi-Display Production and Presentation Software.">
         </section>
       </section>
       <section class="container_regular">
@@ -270,7 +270,7 @@
           pictureFolder="sjmc"
           fileName="kibana-reports"
           fileExtension="jpg"
-          alt="Kibana Reports for SJMC."
+          alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
           :boxShadow="true"
           :lazyLoading="true"
         />
@@ -325,7 +325,7 @@
           pictureFolder="sjmc"
           fileName="kibana"
           fileExtension="jpg"
-          alt=""
+          alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
           :boxShadow="true"
           :lazyLoading="true"
         />
@@ -427,7 +427,7 @@
           authorPosition="Former Technical and Operations Director, Sir John Monash Centre"
           fileName="wade-bartlett"
           fileExtension="png"
-          alt=""
+          alt="Wade Bartlett: Former Technical and Operations Director, Sir John Monash Centre."
           pictureFolder="sjmc"
         >
           The Sir John Monash Centre operates within a bespoke multimedia framework, which requires high-level technical expertise to deliver the Centre's visitor experience. Mad Devs provide outstanding levels of support and development services across our multimedia and IT platforms, systems and languages. Always available to provide assistance when needed, Mad Devs are a highly-valued part of our wider operations.
@@ -486,8 +486,8 @@ export default {
   name: 'SirJohnMonashCentre',
   data() {
     return {
-      title: 'Mad Devs Case Study: Australian National Memorial - Sir John Monash Centre',
-      description: 'The SJMC and Mad Devs partnership has been based on enhancements and preventative maintenance contracts. Transferring a project to another IT partner is never easy for all parties involved. Let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.',
+      title: 'Mad Devs Case Study: Sir John Monash Centre',
+      description: 'BYOD Case Study. Read how Mad Devs enhanced and developed new features for the Sir John Monash Centre’s software, mobile applications, and technological debt.',
       keyGoalsList: [
         'Understanding the complexity of the MMIT Brain software',
         'Building a small-scale version of the SJMC experience in 1 month',
@@ -679,37 +679,37 @@ export default {
           fileName: 'office-team-first-slide',
           pictureFolder: 'sjmc',
           fileExtension: 'jpg',
-          alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
+          alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
         },
         {
           fileName: 'office-team-second-slide',
           pictureFolder: 'sjmc',
           fileExtension: 'jpg',
-          alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
+          alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
         },
         {
           fileName: 'office-team-third-slide',
           pictureFolder: 'sjmc',
           fileExtension: 'jpg',
-          alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
+          alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
         },
         {
           fileName: 'office-team-fourth-slide',
           pictureFolder: 'sjmc',
           fileExtension: 'jpg',
-          alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
+          alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
         },
         {
           fileName: 'office-team-fifth-slide',
           pictureFolder: 'sjmc',
           fileExtension: 'jpg',
-          alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
+          alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
         },
         {
           fileName: 'office-team-sixth-slide',
           pictureFolder: 'sjmc',
           fileExtension: 'jpg',
-          alt: 'How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
+          alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.'
         }
       ],
       swiperGrafanaPrometheus: [
@@ -717,13 +717,13 @@ export default {
           fileName: 'grafana-prometheus-first-slide',
           pictureFolder: 'sjmc',
           fileExtension: 'jpg',
-          alt: 'Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation.'
+          alt: 'SJMC System Monitoring.'
         },
         {
           fileName: 'grafana-prometheus-second-slide',
           pictureFolder: 'sjmc',
           fileExtension: 'jpg',
-          alt: 'Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation.'
+          alt: 'SJMC System Monitoring.'
         }
       ],
       swiperMadDevsTrip: [
@@ -807,7 +807,7 @@ export default {
       script: [
         {
           type: 'application/ld+json',
-          innerHTML: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: Australian National Memorial - Sir John Monash Centre", "description": "The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front during the First World War in the words of those who served. The SJMC and Mad Devs partnership has been based on enhancements and preventative maintenance contracts. Transferring a project to another IT partner is never easy for all parties involved. Let us introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group Limited"}}'
+          innerHTML: '{"@context": "https://schema.org", "@type": "WebPage", "breadcrumb": "Projects > Case Studies > BYOD Solutions", "name": "Mad Devs Case Study: Sir John Monash Centre", "description": "BYOD Case Study. Read how Mad Devs enhanced and developed new features for the Sir John Monash Centre’s software, mobile applications, and technological debt.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group LTD"}}'
         }
       ]
     };

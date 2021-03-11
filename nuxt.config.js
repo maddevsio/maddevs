@@ -3,7 +3,13 @@ import axios from 'axios';
 
 module.exports = {
   srcDir: 'client/',
-  target: 'static',
+  target: 'server',
+  /*
+  ** Server settings
+  */
+  server: {
+    port: process.env.PORT || 3000
+  },
   /*
   ** Headers of the page
   */
@@ -61,6 +67,17 @@ module.exports = {
     },
     fallback: '404.html'
   },
+  /*
+  ** Router configuration
+  ** scrollBehavior - https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-router#scrollbehavior
+  */
+  router: {
+    scrollBehavior: (to, from, savedPosition) => {
+      if (savedPosition) return savedPosition;
+      if (to && to.hash) return { selector: to.hash };
+      return { x: 0, y: 0 };
+    }
+  },
   css: [
     {
       src: '~/assets/styles/index.scss',
@@ -69,6 +86,12 @@ module.exports = {
     {
       src: 'simplebar/dist/simplebar.min.css'
     }
+  ],
+  /*
+  ** Server middlewares
+  */
+  serverMiddleware: [
+    { path: '/api', handler: '~/../server/middleware/rest.js' }
   ],
   /*
   ** Build configuration
