@@ -294,7 +294,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
           />
            
           <img
-            alt="The SJMC Multimedia Management IT Brain."
+            alt="The SJMC: Multimedia Management System."
             class="image"
             height="0"
             loading="lazy"
@@ -551,7 +551,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         class="container_middle"
       >
         <img
-          alt="WATCHOUT - Multi-Display Production and Presentation System."
+          alt="WATCHOUT - Multi-Display Production and Presentation Software."
           class="case_gif"
           src="../../assets/img/Cases/sjmc/gif/watchpax.gif"
         />
@@ -1045,7 +1045,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                    alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     height="0"
                     loading="lazy"
@@ -1066,7 +1066,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                    alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     height="0"
                     loading="lazy"
@@ -1087,7 +1087,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                    alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     height="0"
                     loading="lazy"
@@ -1108,7 +1108,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                    alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     height="0"
                     loading="lazy"
@@ -1129,7 +1129,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                    alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     height="0"
                     loading="lazy"
@@ -1150,7 +1150,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                    alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                     class="image"
                     height="0"
                     loading="lazy"
@@ -1189,7 +1189,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                  alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   height="0"
                   loading="lazy"
@@ -1210,7 +1210,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                  alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   height="0"
                   loading="lazy"
@@ -1231,7 +1231,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                  alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   height="0"
                   loading="lazy"
@@ -1252,7 +1252,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                  alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   height="0"
                   loading="lazy"
@@ -1273,7 +1273,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                  alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   height="0"
                   loading="lazy"
@@ -1294,7 +1294,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="How Mad Devs’ DevOps and Back-end Engineers Built a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                  alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                   class="image"
                   height="0"
                   loading="lazy"
@@ -1387,7 +1387,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         />
          
         <img
-          alt="Kibana Reports for SJMC."
+          alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
           class="image box-shadow"
           height="0"
           loading="lazy"
@@ -1542,7 +1542,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
+                    alt="SJMC System Monitoring."
                     class="image"
                     height="0"
                     loading="lazy"
@@ -1563,7 +1563,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                   />
                    
                   <img
-                    alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
+                    alt="SJMC System Monitoring."
                     class="image"
                     height="0"
                     loading="lazy"
@@ -1602,7 +1602,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
+                  alt="SJMC System Monitoring."
                   class="image"
                   height="0"
                   loading="lazy"
@@ -1623,7 +1623,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="Prometheus Acts as the Storage Backend and Exposes a Wide Variety of Metrics Gathered from 6 Servers while Grafana Acts as a Visualisation Layer and Works as the Interface for Analysis and Visualisation."
+                  alt="SJMC System Monitoring."
                   class="image"
                   height="0"
                   loading="lazy"
@@ -1684,7 +1684,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         />
          
         <img
-          alt=""
+          alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
           class="image box-shadow"
           height="0"
           loading="lazy"
@@ -2670,7 +2670,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
               />
                
               <img
-                alt=""
+                alt="Wade Bartlett: Former Technical and Operations Director, Sir John Monash Centre."
                 class="image"
                 height="0"
                 loading="lazy"

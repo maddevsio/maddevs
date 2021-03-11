@@ -46,15 +46,15 @@ export default {
     const pictures = [
       {
         img: 'ninja-sushi-slide',
-        alt: 'Namba Food Admin Panel.'
+        alt: 'Namba Food: Sushi Room.'
       },
       {
         img: 'sushi-room-slide',
-        alt: 'Namba Food Admin Panel.'
+        alt: 'Namba Food: Sushi Room.'
       },
       {
         img: 'coffee-house-slide',
-        alt: 'Namba Food Admin Panel.'
+        alt: 'Namba Food: Coffee House.'
       }
     ];
     let i = 0;
