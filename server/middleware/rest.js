@@ -13,12 +13,10 @@ app.use(bodyParser.urlencoded({ limit: '5mb', extended: true }));
 app.enable('trust proxy');
 
 app.use(function applyXFrame(req, res, next) {
-  console.log('111111111', req.headers.host);
   res.set('X-Frame-Options', 'DENY');
   next();
 });
 app.use((req, res, next) => {
-  console.log('2222222222', req.headers.host);
   if (req.secure) {
     next();
   } else {
@@ -26,9 +24,7 @@ app.use((req, res, next) => {
   }
 });
 app.use((req, res, next) => {
-  console.log('hello', req.headers.host);
-
-  if (['eb1762d3c34f.ngrok.io', 'localhost:3000', 'blog.maddevs.co', 'blog.maddevs.io'].includes(req.headers.host)) {
+  if (['blog.maddevs.co', 'blog.maddevs.io'].includes(req.headers.host)) {
     const requestUrl = req.url.slice(-1) === '/' && req.url.length > 1 ? req.url.substr(0, req.url.length - 1) : req.url;
     const match = redirectList.find(url => url.from === requestUrl);
     if (match !== undefined && !!match.to) {
