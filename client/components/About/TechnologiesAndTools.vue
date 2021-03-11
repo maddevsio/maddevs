@@ -30,7 +30,9 @@
             :class="(`${item.technology}-${item.value} ${item.technology}`)"
           >
             <img
-              :data-src="require(`@/assets/img/Home/technologies/${item.value}.svg`)"
+              width="26"
+              height="26"
+              :data-src="require(`@/assets/img/Home/svg/technologies/${item.value}.svg`)"
               class="svg_lazy"
               :alt="item.title"
             >

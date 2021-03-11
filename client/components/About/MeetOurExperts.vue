@@ -11,7 +11,13 @@
               <div class="meet-our_experts__expert-position">{{ expert.position }}</div>
             </div>
           </div>
-          <i class="meet-our_experts__expert-linkedin-link"></i>
+          <img 
+            width="24"
+            height="24" 
+            :data-src="require(`@/assets/img/Home/svg/team/linkedin.svg`)" 
+            alt="Linkedin"
+            class="meet-our_experts__expert-linkedin-link svg_lazy"
+          >
           <a :href="expert.linkedin" class="" rel="nofollow" target="_blank"></a>
         </div>
       </div>
@@ -94,7 +100,6 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/styles/vars';
-  @import '../../assets/styles/_socialNetworkIcons';
 
   .meet-our_experts {
     padding-bottom: 100px;
@@ -161,7 +166,6 @@ export default {
       position: absolute;
       top: 16px;
       right: 28px;
-      @include social-network-linkedin-blue;
     }
 
     &__expert-name,
