@@ -67,17 +67,6 @@ module.exports = {
     },
     fallback: '404.html'
   },
-  /*
-  ** Router configuration
-  ** scrollBehavior - https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-router#scrollbehavior
-  */
-  router: {
-    scrollBehavior: (to, from, savedPosition) => {
-      if (savedPosition) return savedPosition;
-      if (to && to.hash) return { selector: to.hash };
-      return { x: 0, y: 0 };
-    }
-  },
   css: [
     {
       src: '~/assets/styles/index.scss',
