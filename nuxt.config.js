@@ -70,9 +70,9 @@ module.exports = {
   ** scrollBehavior - https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-router#scrollbehavior
   */
   router: {
-    scrollBehavior: async (to, from, savedPosition) => {
+    scrollBehavior: (to, from, savedPosition) => {
       if (savedPosition) return savedPosition;
-      if (to.hash) return { selector: to.hash };
+      if (to && to.hash) return { selector: to.hash };
       return { x: 0, y: 0 };
     }
   },

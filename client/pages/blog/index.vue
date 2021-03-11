@@ -160,10 +160,7 @@ export default {
   watch: {
     filteredPosts: function() {
       const prevPostLink = document.querySelector(`a[href='${this.visitedPost}']`);
-      if (prevPostLink && !prevPostLink.classList.contains('featured-post')) {
-        let offset = (prevPostLink.getBoundingClientRect().top + window.scrollY) - 150; // 150 - offset between the post and the top of screen
-        window.scrollTo(0, offset);
-      }
+      if (prevPostLink && !prevPostLink.classList.contains('featured-post')) prevPostLink.scrollIntoView({block: 'center'});
     }
   }
 };
