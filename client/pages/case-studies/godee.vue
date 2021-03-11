@@ -549,6 +549,7 @@ import CardGoDeeImpact from '@/components/Cases/cards-content/CardGoDeeImpact';
 import CardGoDeePrimsAlgorithm from '@/components/Cases/cards-content/CardGoDeePrimsAlgorithm';
 import FooterMain from '@/components/Footer';
 import HeaderMain from '@/components/Header';
+import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   components: {
@@ -852,6 +853,7 @@ export default {
       let observer = new IntersectionObserver(callback, options);
       observer.observe(document.getElementById(video));
     });
+    initImgLazyHelper();
   },
   methods: {
     handleScrollDown() {

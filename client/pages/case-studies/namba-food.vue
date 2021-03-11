@@ -430,6 +430,7 @@ import CardRestaurantTalisman from '@/components/Cases/cards-content/CardRestaur
 import CardNationwideNumbers from '@/components/Cases/cards-content/CardNationwideNumbers';
 import CardNinjaSushi from '@/components/Cases/cards-content/CardNinjaSushi';
 import Swiper from '@/components/Cases/Swiper';
+import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   components: {
@@ -751,7 +752,9 @@ export default {
     } else {
       this.isIphone = false;
     }
+    initImgLazyHelper();
   }
+
 };
 </script>
 

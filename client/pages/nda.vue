@@ -6,6 +6,8 @@
 
 <script>
 import NDA from '@/components/NDA';
+import initImgLazyHelper from '@/helpers/initImgLazy';
+
 export default {
   name: 'main-nda',
   components: {
@@ -47,6 +49,9 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    initImgLazyHelper();
   }
 };
 </script>

@@ -69,6 +69,7 @@ import FeaturedPost from '@/components/Blog/FeaturedPost';
 import SkeletonBlogWidget from '@/components/Blog/SkeletonBlogWidget';
 import SkeletonFeaturedPost from '@/components/Blog/SkeletonFeaturedPost';
 import CustomerUniversitySection from '@/components/Blog/CustomerUniversitySection';
+import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   name: 'Blog',
@@ -98,6 +99,9 @@ export default {
   },
   created() {
     this.getContent();
+  },
+  mounted() {
+    initImgLazyHelper();
   },
   head () {
     return {

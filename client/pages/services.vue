@@ -14,6 +14,7 @@ import RemoteTechStaff from '@/components/Services/RemoteTechStaff';
 import SoftwareDevelopment from '@/components/Services/SoftwareDevelopment';
 import InfrastructureOptimisation from '@/components/Services/InfrastructureOptimisation';
 import ItConsulting from '@/components/Services/ItСonsulting';
+import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   name: 'main-services',
@@ -56,6 +57,9 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    initImgLazyHelper();
   }
 };
 </script>

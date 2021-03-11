@@ -460,6 +460,7 @@ import ListDashItemBox from '@/components/Cases/ListDashItemBox';
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
 import Swiper from '@/components/Cases/Swiper';
 import Footer from '@/components/Cases/Footer';
+import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   components: {
@@ -768,6 +769,8 @@ export default {
     this.$refs.video.onended = () => {
       this.$refs.videoWrap.classList.add('case_sjmc-phone-video-wrapper--on-pause');
     };
+
+    initImgLazyHelper();
   },
   methods: {
     videoSetState() {

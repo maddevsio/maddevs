@@ -6,6 +6,7 @@
 
 <script>
 import FAQ from '@/components/FAQ';
+import initImgLazyHelper from '@/helpers/initImgLazy';
 export default {
   name: 'main-faq',
   components: {
@@ -47,6 +48,9 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    initImgLazyHelper();
   }
 };
 </script>

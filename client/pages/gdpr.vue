@@ -6,6 +6,7 @@
 
 <script>
 import GDPR from '@/components/GDPR';
+import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   name: 'main-gdpr',
@@ -47,6 +48,9 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    initImgLazyHelper();
   }
 };
 </script>

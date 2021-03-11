@@ -72,6 +72,7 @@ import TableOfContents from '@/components/Blog/TableOfContents';
 import BlogHeader from '@/components/Blog/header/Blog';
 import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity';
 import CuNavigation from '@/components/Blog/CuNavigation';
+import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   name: 'post',
@@ -186,6 +187,8 @@ export default {
     if (this.type === 'customer_university') {
       this.getClusterData();
     }
+
+    initImgLazyHelper();
   },
   destroyed () {
     window.removeEventListener('scroll', this.shareButtonsScroll);

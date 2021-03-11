@@ -14,7 +14,7 @@ export default function() {
         }
       });
     }, options);
-
+  
     lazyImg.forEach(function(lazyImg) {
       lazyImgObserver.observe(lazyImg);
     });
