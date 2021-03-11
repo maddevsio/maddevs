@@ -4,6 +4,9 @@ import axios from 'axios';
 module.exports = {
   srcDir: 'client/',
   target: 'server',
+  /*
+  ** Server settings
+  */
   server: {
     port: process.env.PORT || 5000
   },
