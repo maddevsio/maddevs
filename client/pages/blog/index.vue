@@ -36,7 +36,7 @@
           <div class="filter">
             <simplebar>
               <ul class="filter-list">
-                <li class="filter-item__wrapper" v-for="(category, i) in blogPageContent.categories" :key="i">
+                <li class="filter-item__wrapper" v-for="(category, i) in homePageContent.categories" :key="i">
                   <div class="filter-item">
                     <input type="radio" :id="category.title" :value="category.title" :checked="postsCategory === category.title" name="Tag" class="radio-input" @change="handleFilterChange">
                     <label :for="category.title" class="filter-label">{{ category.title }}</label>
@@ -97,19 +97,19 @@ export default {
     return {
       title: this.title,
       meta: [
-        { name: 'description', content: this.blogPageContent.description || '' },
+        { name: 'description', content: this.homePageContent.description || '' },
         // Facebook / Open Graph
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: this.ogUrl },
         { property: 'og:title', content: this.metaTitle },
-        { property: 'og:description', content: this.blogPageContent.description || ''},
+        { property: 'og:description', content: this.homePageContent.description || ''},
         { property: 'og:image', content: 'https://maddevs.io/blog.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         // Twitter / Twitter Card
         { property: 'twitter:card', content: 'summary' },
         { property: 'twitter:text:title', content: this.metaTitle },
-        { property: 'twitter:description', content: this.blogPageContent.description || '' },
+        { property: 'twitter:description', content: this.homePageContent.description || '' },
         { property: 'twitter:image:src', content: 'https://maddevs.io/blog.png' },
         { property: 'twitter:url', content: this.ogUrl }
       ],
@@ -129,10 +129,10 @@ export default {
     };
   },
   methods: {
-    ...mapActions(['getBlogPageContent', 'getBlogPosts', 'getMorePosts', 'changePostsCategory']),
+    ...mapActions(['getHomePageContent', 'getBlogPosts', 'getMorePosts', 'changePostsCategory']),
     getContent() {
       // Query to get blog home content
-      this.getBlogPageContent();
+      this.getHomePageContent();
 
       // Query to get posts content to preview
       this.getBlogPosts();
@@ -144,7 +144,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['blogPageContent', 'allPosts', 'filteredPosts', 'recentPosts', 'featuredPost', 'postsCategory', 'postsLoaded', 'postsPage']),
+    ...mapGetters(['homePageContent', 'allPosts', 'filteredPosts', 'recentPosts', 'featuredPost', 'postsCategory', 'postsLoaded', 'postsPage']),
     filteredPostsToShow: function() {
       return this.filteredPosts.slice(0, this.pageSize * this.postsPage);
     },
@@ -160,7 +160,9 @@ export default {
   watch: {
     filteredPosts: function() {
       const prevPostLink = document.querySelector(`a[href='${this.visitedPost}']`);
-      if (prevPostLink && !prevPostLink.classList.contains('featured-post')) prevPostLink.scrollIntoView({block: 'center'});
+      if (prevPostLink && !prevPostLink.classList.contains('featured-post')) {
+        prevPostLink.scrollIntoView({ block: 'end' });
+      }
     }
   }
 };

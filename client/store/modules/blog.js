@@ -1,6 +1,6 @@
 export default {
   state: () => ({
-    blogPageContent: {},
+    homePageContent: {},
     posts: [],
     featuredPost: null,
     postsCategory: null,
@@ -13,7 +13,7 @@ export default {
         title: this.$prismic.asText(category.category_title),
         tags: category.tags.length ? this.$prismic.asText(category.tags).split(/, */g) : []
       }));
-      state.blogPageContent = {
+      state.homePageContent = {
         image: data.image.url,
         headline: data.headline[0].text,
         description: data.description[0].text,
@@ -37,12 +37,12 @@ export default {
     }
   },
   actions: {
-    async getBlogPageContent({commit, state}) {
+    async getHomePageContent({commit, state}) {
       try {
         const pageContent = (await this.$prismic.api.getSingle('blog_home')).data;
         commit('SET_BLOG_PAGE_CONTENT', pageContent);
         if (!Boolean(state.postsCategory)) {
-          commit('SET_POSTS_CATEGORY', state.blogPageContent.categories[0].title);
+          commit('SET_POSTS_CATEGORY', state.homePageContent.categories[0].title);
         }
       } catch(err) {
         if (err) throw err;
@@ -70,15 +70,15 @@ export default {
     }
   },
   getters: {
-    blogPageContent(state) {
-      return state.blogPageContent;
+    homePageContent(state) {
+      return state.homePageContent;
     },
     allPosts(state) {
       return state.posts;
     },
     filteredPosts(state) {
-      if (state.postsCategory !== null && state.blogPageContent.categories) {
-        const currentCategory = state.blogPageContent.categories.find(tag => tag.title === state.postsCategory);
+      if (state.postsCategory !== null && state.homePageContent.categories) {
+        const currentCategory = state.homePageContent.categories.find(tag => tag.title === state.postsCategory);
         const currentTags = [...currentCategory.tags, currentCategory.title];
         return state.posts.filter(post => post.tags.some(tag => currentTags.includes(tag)));
       } else {
@@ -90,8 +90,8 @@ export default {
       if(posts.length) {
         posts.splice(4, 0, {
           id: 'banner',
-          banner: state.blogPageContent.banner || {url: '#'},
-          link: state.blogPageContent.bannerLink || {link_type: 'Web', target: '_self', url: '#'}
+          banner: state.homePageContent.banner || {url: '#'},
+          link: state.homePageContent.bannerLink || {link_type: 'Web', target: '_self', url: '#'}
         });
       }
       return posts;
