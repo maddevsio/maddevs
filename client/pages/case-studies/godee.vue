@@ -603,7 +603,7 @@ export default {
         },
         {
           name: 'Rustom Kulbatyrov',
-          position: 'Android <br class="case_position-mobile-break"> Developer',
+          position: 'Android Developer',
           fileName: 'kulbatyrov',
           fileExtension: 'png',
           alt: 'Rustom Kulbatyrov'
@@ -617,7 +617,7 @@ export default {
         },
         {
           name: 'Belek Abylov',
-          position: 'Backend <br class="case_position-mobile-break"> Developer',
+          position: 'Backend Developer',
           fileName: 'belek-abylov',
           fileExtension: 'png',
           alt: 'Belek Abylov'
@@ -631,7 +631,7 @@ export default {
         },
         {
           name: 'Gennady Karev',
-          position: 'Backend <br class="case_position-mobile-break"> Developer',
+          position: 'Backend Developer',
           fileName: 'gennady-karev',
           fileExtension: 'png',
           alt: 'Gennady Karev'

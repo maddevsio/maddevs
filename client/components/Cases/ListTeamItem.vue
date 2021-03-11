@@ -13,7 +13,7 @@
     />
     <div class="case_team-item__info">
       <p class="case_team-item__name">{{name}}</p>
-      <p class="case_team-item__position" v-html="position">{{position}}</p>
+      <p class="case_team-item__position">{{position}}</p>
     </div>
   </li>
 </template>
