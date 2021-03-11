@@ -80,7 +80,7 @@ module.exports = {
   ** Server middlewares
   */
   serverMiddleware: [
-    { path: '/api', handler: '~/../server/middleware/rest.js' }
+    { path: '/', handler: '~/../server/middleware/rest.js' }
   ],
   /*
   ** Build configuration
