@@ -109,7 +109,7 @@ module.exports = {
     '@nuxtjs/prismic'
   ],
   axios: {
-    baseURL: process.env.PORT || 5000
+    baseURL: process.env.NODE_API_URL
   },
   robots: {
     UserAgent: '*',

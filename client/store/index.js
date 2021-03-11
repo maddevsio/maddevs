@@ -18,7 +18,7 @@ export const actions = {
           resolve(res);
         }
       }).catch(err => {
-        commit(SET_STATUS_FOR_SEND_EMAIL, false);
+        commit('SET_STATUS_FOR_SEND_EMAIL', false);
         reject(err);
       });
     });

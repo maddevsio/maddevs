@@ -2,7 +2,6 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const redirectList = require('./server/json/redirect');
 const routes = require('./server/routes');
 
 const app = express();
@@ -19,26 +18,7 @@ app.use(function applyXFrame(req, res, next) {
   res.set('X-Frame-Options', 'DENY');
   next();
 });
-app.use((req, res, next) => {
-  if (req.secure) {
-    next();
-  } else {
-    res.redirect('https://' + req.headers.host + req.url);
-  }
-});
-app.use((req, res, next) => {
-  if (['blog.maddevs.co', 'blog.maddevs.io'].includes(req.headers.host)) {
-    const requestUrl = req.url.slice(-1) === '/' && req.url.length > 1 ? req.url.substr(0, req.url.length - 1) : req.url;
-    const match = redirectList.find(url => url.from === requestUrl);
-    if (match !== undefined && !!match.to) {
-      res.redirect(301, match.to);
-    } else {
-      res.redirect(301, 'https://maddevs.io/blog');
-    }
-  } else {
-    next();
-  }
-});
+
 app.use(express.static(__dirname + '/dist'));
 
 app.get('/', (req, res) => {
@@ -53,7 +33,7 @@ app.get('/en', (req, res) => {
   res.redirect(301, 'https://maddevs.io/');
 });
 
-app.use(function(req, res, next) { // Handle 404
+app.use(function(req, res) { // Handle 404
   res.sendFile(path.join(__dirname + '/dist/404.html'));
   res.status(404);
 });
