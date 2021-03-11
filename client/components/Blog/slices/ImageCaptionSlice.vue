@@ -2,8 +2,14 @@
   <div>
     <div class='post-part single'>
       <div class="block-img" :class="size">
-        <silent-box v-if="zoomEnabled" :gallery="[lightBoxImage]"/>
-        <prismic-image v-else :field="img"/>
+        <prismic-image
+          :field="img"
+          @click="openModal"
+          :class="{ 'block-img-zoom': zoomEnabled }"
+        />
+        <SimpleModal v-if="zoomEnabled" ref="zoom">
+          <prismic-image :field="img"/>
+        </SimpleModal>
       </div>
       <p class="image-label" v-if="caption">{{ caption }}</p>
     </div>
@@ -11,15 +17,17 @@
 </template>
 
 <script>
+import SimpleModal from '@/containers/SimpleModal';
 
 export default {
+  name: 'image-caption-slice',
+  components: { SimpleModal },
   props: {
     slice: {
       type: Object,
       required: true
     }
   },
-  name: 'image-caption-slice',
   data: function() {
     return {
       img: '',
@@ -42,6 +50,13 @@ export default {
         alt: this.img.alt
       };
     }
+  },
+  methods: {
+    openModal() {
+      if (this.slice && this.slice.primary.enable_zoom === 'enable') {
+        this.$refs.zoom.show();
+      }
+    }
   }
 };
 </script>
@@ -58,6 +73,10 @@ img {
 .block-img {
   margin-bottom: 10px;
   text-align: center;
+
+  &-zoom {
+    cursor: pointer;
+  }
 }
 
 .image-label {
@@ -69,22 +88,5 @@ img {
   font-family: 'Poppins-Regular', sans-serif;
   color: $text-color--grey;
   margin-bottom: 12px;
-}
-
-/deep/ .silentbox-item {
-  img {
-    max-width: 100%;
-    max-height: 70vh;
-    height: auto;
-    width: auto;
-  }
-}
-
-/deep/ #silentbox-overlay {
-  &__embed {
-    width: 98%;
-    height: 92%;
-    top: 0;
-  }
 }
 </style>
