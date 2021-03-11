@@ -13,7 +13,6 @@ export default {
         title: this.$prismic.asText(category.category_title),
         tags: category.tags.length ? this.$prismic.asText(category.tags).split(/, */g) : []
       }));
-
       state.blogPageContent = {
         image: data.image.url,
         headline: data.headline[0].text,
@@ -45,7 +44,9 @@ export default {
         if (!Boolean(state.postsCategory)) {
           commit('SET_POSTS_CATEGORY', state.blogPageContent.categories[0].title);
         }
-      } catch(err) {}
+      } catch(err) {
+        if (err) throw err;
+      }
     },
     async getBlogPosts({commit}) {
       try {
@@ -56,7 +57,9 @@ export default {
 
         commit('SET_POSTS', posts);
         commit('SET_POSTS_LOADED', true);
-      } catch(err) {}
+      } catch(err) {
+        if (err) throw err;
+      }
     },
     getMorePosts({commit, state}) {
       commit('SET_POSTS_PAGE', state.postsPage + 1);
@@ -77,7 +80,6 @@ export default {
       if (state.postsCategory !== null && state.blogPageContent.categories) {
         const currentCategory = state.blogPageContent.categories.find(tag => tag.title === state.postsCategory);
         const currentTags = [...currentCategory.tags, currentCategory.title];
-
         return state.posts.filter(post => post.tags.some(tag => currentTags.includes(tag)));
       } else {
         return [];
@@ -92,7 +94,6 @@ export default {
           link: state.blogPageContent.bannerLink || {link_type: 'Web', target: '_self', url: '#'}
         });
       }
-
       return posts;
     },
     featuredPost(state) {
