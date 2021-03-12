@@ -26,7 +26,7 @@ describe('Get your trusted it partner modal', () => {
         }
       }
     });
-    wrapper.vm.$refs = { 
+    wrapper.vm.$refs = {
       checkboxes: {
         reset: jest.fn()
       },
@@ -40,7 +40,7 @@ describe('Get your trusted it partner modal', () => {
   test('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
+
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
@@ -58,7 +58,7 @@ describe('Get your trusted it partner modal', () => {
 
   test('has a functions', () => {
     expect(
-      typeof getYourTrustedItPartnerModal.methods.getPrivacyCheckboxState && 
+      typeof getYourTrustedItPartnerModal.methods.getPrivacyCheckboxState &&
       typeof getYourTrustedItPartnerModal.methods.getDiscountOffersCheckboxState
     ).toBe('function');
   });
@@ -80,7 +80,7 @@ describe('Get your trusted it partner modal', () => {
         'agreeToGetMadDevsDiscountOffers': 'No',
         'agreeWithPrivacyPolicy': 'No',
         'email': '',
-        'emailTo': 'team@maddevs.io',
+        'emailTo': '',
         'fullName': '',
         'subject': 'Marketing',
         'phoneNumber': '',
