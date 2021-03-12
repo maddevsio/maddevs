@@ -125,6 +125,8 @@ module.exports = {
   },
   env: {
     awsUrl: process.env.NODE_AWS_URL,
-    domain: process.env.NODE_DOMAIN
+    domain: process.env.NODE_DOMAIN,
+    emailHR: process.env.NODE_EMAIL_HR,
+    emailContact: process.env.NODE_EMAIL_CONTACT
   }
 };

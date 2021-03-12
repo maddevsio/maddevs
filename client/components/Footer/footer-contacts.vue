@@ -3,7 +3,7 @@
 		<div class="footer-contacts__head-content">
 			<div class="footer-contacts__contact-item">
 				<p class="footer-contacts__contact-title">Text us:</p>
-				<a href="mailto:team@maddevs.io" class="footer-contacts__contact-link footer-contacts__contact-mail">team@maddevs.io</a>
+				<a :href="mailLink" class="footer-contacts__contact-link footer-contacts__contact-mail">{{mailLink}}</a>
 			</div>
 			<div class="footer-contacts__contact-item">
 				<div class="footer-contacts__contact-title-wrapper">
@@ -86,7 +86,10 @@ export default {
   name: 'footer-contacts',
   components: {
     footerSocialNetworkList
-  }
+  },
+  data: () => ({
+    mailLink: process.env.emailContact
+  })
 };
 </script>
 

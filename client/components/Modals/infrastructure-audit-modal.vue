@@ -1,5 +1,5 @@
 <template>
-  <div class="form"> 
+  <div class="form">
     <div class="fields-list">
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name required">Full Name</p>
@@ -51,7 +51,7 @@
         </div>
         <!-- End Erros -->
       </div>
-      <RadioList 
+      <RadioList
         @getSelectedProjectHost="getSelectedProjectHost"
         :inputId="inputId"
         :fieldName="fieldName"
@@ -114,7 +114,7 @@ export default {
     modalName: 'infrastructure-modal',
     fullName: null,
     email: null,
-    emailTo: 'team@maddevs.io',
+    emailTo: process.env.emailContact,
     phoneNumber: null,
     interesteMobileExpertise: null,
     selectedProjectHost: null,
@@ -161,7 +161,7 @@ export default {
     modalTitle: 'Mad Devs Website Forms'
   }),
   mounted() {
-    this.$nuxt.$on('resetCheckboxesInForm', () => { // Reset checkboxes in form if user close modal 
+    this.$nuxt.$on('resetCheckboxesInForm', () => { // Reset checkboxes in form if user close modal
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
     });
