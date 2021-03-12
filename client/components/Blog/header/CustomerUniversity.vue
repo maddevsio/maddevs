@@ -49,7 +49,6 @@
 <script>
 import CommonHeader from '@/components/Blog/header/Common';
 import VSelect from 'vue-select';
-import linkResolver from '@/plugins/link-resolver';
 import 'vue-select/dist/vue-select.css';
 
 export default {
@@ -109,14 +108,14 @@ export default {
     },
     nextArticleUrl: function () {
       if (this.currentPost && this.currentPostIndex < this.postList.length - 1) {
-        return `/blog/${this.postList[this.currentPostIndex + 1].cu_post.uid}/`;
+        return `/customer-university/${this.postList[this.currentPostIndex + 1].cu_post.uid}/`;
       } else {
         return '#';
       }
     },
     prevArticleUrl: function () {
       if (this.currentPost && this.currentPostIndex > 0) {
-        return `/blog/${this.postList[this.currentPostIndex - 1].cu_post.uid}/`;
+        return `/customer-university/${this.postList[this.currentPostIndex - 1].cu_post.uid}/`;
       } else {
         return '#';
       }
@@ -132,7 +131,7 @@ export default {
   methods: {
     handleChange(selectedPost) {
       if(this.currentPost && this.currentPost.cu_post.uid !== selectedPost.value) {
-        this.$router.push({path: `/blog/${selectedPost.value}/`});
+        this.$router.push({path: `/customer-university/${selectedPost.value}/`});
       }
     }
   }
