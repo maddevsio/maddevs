@@ -110,6 +110,13 @@ export default {
       mailLink: `mailto:${process.env.emailContact}`
     };
   },
+  created() {
+    if (process.client) {
+      if (document) {
+        this.$nextTick(() => this.refreshImg());
+      }
+    }
+  },
   methods: {
     goToPage() {
       this.$emit('changed-page');
@@ -117,6 +124,13 @@ export default {
         document.body.classList.remove('scrollDisabled');
         document.documentElement.classList.remove('scrollDisabled');
       }
+    },
+    refreshImg() {
+      const lazyImg = [].slice.call(document.querySelectorAll('img.img_lazy'));
+      lazyImg.forEach(lazyImg => {
+        lazyImg.src = lazyImg.dataset.src;
+        lazyImg.classList.remove('img_lazy');
+      });
     }
   }
 };
