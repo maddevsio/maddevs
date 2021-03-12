@@ -61,7 +61,10 @@ module.exports = {
       const prismicData = await axios.get(process.env.NODE_PRISMIC_API);
       const ref = prismicData.data.refs[0].ref;
       const blogPosts = await getPosts(`${process.env.NODE_PRISMIC_API}/documents/search?ref=${ref}#format=json`);
-      const postRoutes = blogPosts.map(blogPost => '/blog/' + blogPost.uid);
+      const postRoutes = blogPosts.map(blogPost => {
+        const urlPrefix = blogPost.type === 'customer_university' ? 'customer-university' : 'blog';
+        return `/${urlPrefix}/${blogPost.uid}`;
+      });
 
       return routes.concat(postRoutes);
     },
