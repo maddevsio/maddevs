@@ -7,7 +7,7 @@
       </div>
       <div class="customer-university__wrapper">
         <div class="customer-university__featured-post">
-          <router-link :to="`/blog/${master.data.featured_cu.uid}/`" class="featured-post" v-if="featured">
+          <router-link :to="`/customer-university/${master.data.featured_cu.uid}/`" class="featured-post" v-if="featured">
             <h6 class="featured-post__date">{{ formattedDate }}</h6>
             <h2 class="featured-post__title">{{ $prismic.asText(featured.title).replace(/^[0-9]*\. /, '') }}</h2>
             <p class="featured-post__text">{{ getFirstParagraph(featured) }}</p>
@@ -22,7 +22,7 @@
             <h6 class="customer-university__list-title">Series of articles:</h6>
             <div>
               <router-link
-                :to="cluster.items.length ? `/blog/${cluster.items[0].cu_post.uid}/` : ''"
+                :to="cluster.items.length ? `/customer-university/${cluster.items[0].cu_post.uid}/` : ''"
                 class="customer-university__list-item single-cluster"
                 v-for="(cluster, i) in clustersToShow"
                 :key="i"

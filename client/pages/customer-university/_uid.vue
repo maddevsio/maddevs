@@ -12,7 +12,7 @@ export default {
   },
   data() {
     return {
-      type: 'blog_post',
+      type: 'cu_post',
       title: '',
       jsonLd: '',
       cluster: null
@@ -52,11 +52,11 @@ export default {
   },
   async asyncData({ $prismic, params, error }) {
     let recommendedPosts = [];
-    let openGraphUrl = `${process.env.domain}/blog/${params.uid}/`;
+    let openGraphUrl = `${process.env.domain}/customer-university/${params.uid}/`;
     let jsonLd;
     try {
       // Query to get post content
-      let post = await $prismic.api.getByUID('post', params.uid);
+      let post = await $prismic.api.getByUID('customer_university', params.uid);
 
       // Query to get recommended posts
       if (post.tags.length) {
@@ -98,6 +98,15 @@ export default {
   },
   mounted() {
     this.title = this.$prismic.asText(this.document.meta_title) || this.document.title[0].text;
+    this.getClusterData();
+  },
+  methods: {
+    getClusterData() {
+      this.$prismic.api.getSingle('cu_master')
+        .then(response => {
+          this.cluster = response.data.body.find(cluster => cluster.items.find(post => post.cu_post.id === this.id) !== undefined) || null;
+        });
+    }
   },
   computed: {
     postData() {
