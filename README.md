@@ -126,6 +126,8 @@ NODE_AMOCRM_LOGIN=***
 NODE_AMOCRM_PASSWORD=***
 NODE_AMOCRM_INTEGRATION_ID=The id of the button that opens the popup with the tokens
 NODE_AMOCRM_REDIRECT_URI=We also specify it in the amoCRM settings
+NODE_EMAIL_HR=***
+NODE_EMAIL_CONTACT=***
 ```
 
 2. Run command for start server

@@ -14,7 +14,7 @@ describe('CareersForm component', () => {
     positionValue: null,
     positionTitle: null,
     email: null,
-    emailTo: 'hr@maddevs.io',
+    emailTo: undefined,
     selectedFile: null,
     linkedinProfile: null,
     onSubmit: false,
@@ -41,7 +41,7 @@ describe('CareersForm component', () => {
         onSumbit: false
       }
     });
-    wrapper.vm.$refs = { 
+    wrapper.vm.$refs = {
       form: {
         reset: jest.fn()
       },
