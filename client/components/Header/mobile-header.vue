@@ -13,7 +13,7 @@
           <div class="mobile-header__contacts mobile-header__large-phone-content">
             <div class="mobile-header__contact-item mobile-header__contact-item-email">
               <p class="mobile-header__contact-title">Text us:</p>
-              <a href="mailto:team@maddevs.io" class="mobile-header__contact-link mobile-header__contact-mail">team@maddevs.io</a>
+              <a :href="mailLink" class="mobile-header__contact-link mobile-header__contact-mail">{{mailLink}}</a>
             </div>
             <div class="mobile-header__contact-item">
               <div class="mobile-header__contact-title-wrapper">
@@ -35,8 +35,7 @@
                   <img
                     width="42"
                     height="42"
-                    :data-src="require(`@/assets/img/Footer/svg/messenger.svg`)"
-                    class="img_lazy"
+                    src="@/assets/img/Footer/svg/messenger.svg"
                     alt="Messenger"
                   >
                   <p class="mobile-header__messenger-name">Messenger</p>
@@ -47,8 +46,7 @@
                   <img
                     width="42"
                     height="42"
-                    :data-src="require(`@/assets/img/Footer/svg/whatsapp.svg`)"
-                    class="img_lazy"
+                    src="@/assets/img/Footer/svg/whatsapp.svg"
                     alt="WhatsApp"
                   >
                   <p class="mobile-header__messenger-name">WhatsApp</p>
@@ -59,8 +57,7 @@
                   <img
                     width="42"
                     height="42"
-                    :data-src="require(`@/assets/img/Footer/svg/telegram.svg`)"
-                    class="img_lazy"
+                    src="@/assets/img/Footer/svg/telegram.svg"
                     alt="Telegram"
                   >
                   <p class="mobile-header__messenger-name">Telegram</p>
@@ -71,8 +68,7 @@
                   <img
                     width="42"
                     height="42"
-                    :data-src="require(`@/assets/img/Footer/svg/wechat.svg`)"
-                    class="img_lazy"
+                    src="@/assets/img/Footer/svg/wechat.svg"
                     alt="WeChat"
                   >
                   <p class="mobile-header__messenger-name">WeChat</p>
@@ -110,8 +106,16 @@ export default {
   },
   data() {
     return {
-      buttonInnerText: 'Contact me'
+      buttonInnerText: 'Contact me',
+      mailLink: `mailto:${process.env.emailContact}`
     };
+  },
+  created() {
+    if (process.client) {
+      if (document) {
+        this.$nextTick(() => this.refreshImg());
+      }
+    }
   },
   methods: {
     goToPage() {
@@ -120,6 +124,13 @@ export default {
         document.body.classList.remove('scrollDisabled');
         document.documentElement.classList.remove('scrollDisabled');
       }
+    },
+    refreshImg() {
+      const lazyImg = [].slice.call(document.querySelectorAll('img.img_lazy'));
+      lazyImg.forEach(lazyImg => {
+        lazyImg.src = lazyImg.dataset.src;
+        lazyImg.classList.remove('img_lazy');
+      });
     }
   }
 };

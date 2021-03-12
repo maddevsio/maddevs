@@ -26,7 +26,7 @@ describe('Contact me modal', () => {
         }
       }
     });
-    wrapper.vm.$refs = { 
+    wrapper.vm.$refs = {
       checkboxes: {
         reset: jest.fn()
       },
@@ -40,7 +40,7 @@ describe('Contact me modal', () => {
   test('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
+
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
@@ -58,7 +58,7 @@ describe('Contact me modal', () => {
 
   test('has a functions', () => {
     expect(
-      typeof contactMeModal.methods.getPrivacyCheckboxState && 
+      typeof contactMeModal.methods.getPrivacyCheckboxState &&
       typeof contactMeModal.methods.getDiscountOffersCheckboxState
     ).toBe('function');
   });
@@ -80,7 +80,7 @@ describe('Contact me modal', () => {
         'agreeToGetMadDevsDiscountOffers': 'No',
         'agreeWithPrivacyPolicy': 'No',
         'email': '',
-        'emailTo': 'team@maddevs.io',
+        'emailTo': '',
         'fullName': '',
         'subject': 'Marketing',
         'company': '',

@@ -83,7 +83,7 @@ exports[`CaseStudies component renders correctly 1`] = `
          
         <img
           alt="GoDee Bus Transportation Services Logo."
-          class="lazyload"
+          class="img_lazy"
           data-src="[object Object]"
           data-srcset="[object Object] 2x"
           height="294"

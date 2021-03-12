@@ -1709,7 +1709,7 @@ exports[`Index page renders correctly 1`] = `
                  
                 <img
                   alt="Namba Food Contactless Delivery Service\`s Logo."
-                  class="lazyload"
+                  class="img_lazy"
                   data-src="[object Object]"
                   data-srcset="[object Object] 2x"
                   height="294"
@@ -1797,7 +1797,7 @@ exports[`Index page renders correctly 1`] = `
                  
                 <img
                   alt="General John Monash The Australian War Memorial\`s Logo."
-                  class="lazyload"
+                  class="img_lazy"
                   data-src="[object Object]"
                   data-srcset="[object Object] 2x"
                   height="294"
@@ -1885,7 +1885,7 @@ exports[`Index page renders correctly 1`] = `
                  
                 <img
                   alt="Guardrails Cloud CyberSecurity Services Logo."
-                  class="lazyload"
+                  class="img_lazy"
                   data-src="[object Object]"
                   data-srcset="[object Object] 2x"
                   height="294"
@@ -1977,7 +1977,7 @@ exports[`Index page renders correctly 1`] = `
                  
                 <img
                   alt="GoDee Bus Transportation Services Logo."
-                  class="lazyload"
+                  class="img_lazy"
                   data-src="[object Object]"
                   data-srcset="[object Object] 2x"
                   height="294"
@@ -2264,7 +2264,7 @@ exports[`Index page renders correctly 1`] = `
               >
                 <img
                   alt="Atif Mahmood - CEO and Founder at Teacherly."
-                  class="customer-testimonials__customer-image lazyload"
+                  class="customer-testimonials__customer-image img_lazy"
                   data-src="[object Object]"
                   height="42"
                   width="42"
@@ -2319,7 +2319,7 @@ exports[`Index page renders correctly 1`] = `
               >
                 <img
                   alt="Daniel Vartanov - CTO at Veeqo.com."
-                  class="customer-testimonials__customer-image lazyload"
+                  class="customer-testimonials__customer-image img_lazy"
                   data-src="[object Object]"
                   height="42"
                   width="42"
@@ -2374,7 +2374,7 @@ exports[`Index page renders correctly 1`] = `
               >
                 <img
                   alt="Stefan Streichsbier - CEO and Founder at GuardRails.io."
-                  class="customer-testimonials__customer-image lazyload"
+                  class="customer-testimonials__customer-image img_lazy"
                   data-src="[object Object]"
                   height="42"
                   width="42"
@@ -2673,7 +2673,7 @@ exports[`Index page renders correctly 1`] = `
              
             <img
               alt="Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image lazyload"
+              class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               height="401"
@@ -2727,7 +2727,7 @@ exports[`Index page renders correctly 1`] = `
              
             <img
               alt="Tamara Mun - Delivery Manager at Mad Devs Software and Mobile App Development Company."
-              class="multi-image lazyload"
+              class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               height="401"
@@ -2781,7 +2781,7 @@ exports[`Index page renders correctly 1`] = `
              
             <img
               alt="Andrew \\"Сhuck\\" Minkin - CTO and Co-Founder at Mad Devs Software and Mobile App Development Company."
-              class="multi-image lazyload"
+              class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               height="401"
@@ -2835,7 +2835,7 @@ exports[`Index page renders correctly 1`] = `
              
             <img
               alt="Nakylai Taiirova - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image lazyload"
+              class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               height="401"
@@ -2889,7 +2889,7 @@ exports[`Index page renders correctly 1`] = `
              
             <img
               alt="Daria Utesheva - Head of HR Department at Mad Devs Software and Mobile App Development Company."
-              class="multi-image lazyload"
+              class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               height="401"
@@ -2943,7 +2943,7 @@ exports[`Index page renders correctly 1`] = `
              
             <img
               alt="Nuradil Alymkulov - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
-              class="multi-image lazyload"
+              class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               height="401"
@@ -2997,7 +2997,7 @@ exports[`Index page renders correctly 1`] = `
              
             <img
               alt="Alice Jang - Project Manager at Mad Devs Software and Mobile App Development Company."
-              class="multi-image lazyload"
+              class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               height="401"
@@ -3051,7 +3051,7 @@ exports[`Index page renders correctly 1`] = `
              
             <img
               alt="Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company."
-              class="multi-image lazyload"
+              class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
               height="401"

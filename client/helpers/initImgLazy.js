@@ -9,6 +9,11 @@ export default function() {
         if (entry.isIntersecting) {
           let lazyImg = entry.target;
           lazyImg.src = lazyImg.dataset.src;
+
+          if (lazyImg.dataset.srcset) {
+            lazyImg.srcset = lazyImg.dataset.srcset;
+          }
+
           lazyImg.classList.remove('img_lazy');
           lazyImg.classList.add('img_lazy-fade');
         }

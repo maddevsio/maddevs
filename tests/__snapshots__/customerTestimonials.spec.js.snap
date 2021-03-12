@@ -60,7 +60,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
             >
               <img
                 alt="Atif Mahmood - CEO and Founder at Teacherly."
-                class="customer-testimonials__customer-image lazyload"
+                class="customer-testimonials__customer-image img_lazy"
                 data-src="[object Object]"
                 height="42"
                 width="42"
@@ -115,7 +115,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
             >
               <img
                 alt="Daniel Vartanov - CTO at Veeqo.com."
-                class="customer-testimonials__customer-image lazyload"
+                class="customer-testimonials__customer-image img_lazy"
                 data-src="[object Object]"
                 height="42"
                 width="42"
@@ -170,7 +170,7 @@ exports[`Customer Testimonials renders correctly 1`] = `
             >
               <img
                 alt="Stefan Streichsbier - CEO and Founder at GuardRails.io."
-                class="customer-testimonials__customer-image lazyload"
+                class="customer-testimonials__customer-image img_lazy"
                 data-src="[object Object]"
                 height="42"
                 width="42"

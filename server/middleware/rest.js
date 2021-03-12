@@ -16,13 +16,19 @@ app.use(function applyXFrame(req, res, next) {
   res.set('X-Frame-Options', 'DENY');
   next();
 });
+
 app.use((req, res, next) => {
-  if (req.secure) {
-    next();
+  if (process.env.NODE_ENV !== 'development') {
+    if (req.secure) {
+      next();
+    } else {
+      res.redirect('https://' + req.headers.host + req.url);
+    }
   } else {
-    res.redirect('https://' + req.headers.host + req.url);
+    next();
   }
 });
+
 app.use((req, res, next) => {
   if (['blog.maddevs.co', 'blog.maddevs.io'].includes(req.headers.host)) {
     const requestUrl = req.url.slice(-1) === '/' && req.url.length > 1 ? req.url.substr(0, req.url.length - 1) : req.url;

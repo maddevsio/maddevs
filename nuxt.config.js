@@ -27,9 +27,40 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'sitemap', type: 'application/xml', href: 'https://maddevs.io/sitemap.xml' }
     ],
-    script: [ // Init google tag manager
+    script: [ // Init google tag manager and yandex metrika
       {
-        innerHTML: '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start": new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src= "https://www.googletagmanager.com/gtm.js?id="+i+dl;w.onload = function () {d.body.appendChild(j)}; })(window,document,"script","dataLayer","GTM-NNKVRF3");'
+        innerHTML: `
+          window.onload = function () {
+            (function(w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js"
+              });
+              var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+              j.async = true;
+              j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+              d.body.appendChild(j);
+            })(window, document, "script", "dataLayer", "GTM-NNKVRF3");
+          
+            (function(m, e, t, r, i, k, a) {
+                m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+                };
+                m[i].l = 1 * new Date();
+                k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, e.body.appendChild(k)
+            })
+            (window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+            ym(67161793, 'init', {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true
+            });
+          }
+        `
       }
     ]
   },
@@ -95,19 +126,17 @@ module.exports = {
     vendor: ['axios'],
     followSymlinks: true,
     cache: true,
-    transpile: ['vee-validate/dist/rules'],
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
-          test: /\.(js|vue)$/,
+          test: /\.(js)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         });
       }
     }
   },
-  buildModules: ['nuxt-lazysizes'],
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/robots',
@@ -128,6 +157,8 @@ module.exports = {
   },
   env: {
     awsUrl: process.env.NODE_AWS_URL,
-    domain: process.env.NODE_DOMAIN
+    domain: process.env.NODE_DOMAIN,
+    emailHR: process.env.NODE_EMAIL_HR,
+    emailContact: process.env.NODE_EMAIL_CONTACT
   }
 };

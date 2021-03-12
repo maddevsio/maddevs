@@ -179,7 +179,7 @@ exports[`Projects page renders correctly 1`] = `
                  
                 <img
                   alt="Namba Food Contactless Delivery Service\`s Logo."
-                  class="lazyload"
+                  class="img_lazy"
                   data-src="[object Object]"
                   data-srcset="[object Object] 2x"
                   height="294"
@@ -267,7 +267,7 @@ exports[`Projects page renders correctly 1`] = `
                  
                 <img
                   alt="General John Monash The Australian War Memorial\`s Logo."
-                  class="lazyload"
+                  class="img_lazy"
                   data-src="[object Object]"
                   data-srcset="[object Object] 2x"
                   height="294"
@@ -355,7 +355,7 @@ exports[`Projects page renders correctly 1`] = `
                  
                 <img
                   alt="Guardrails Cloud CyberSecurity Services Logo."
-                  class="lazyload"
+                  class="img_lazy"
                   data-src="[object Object]"
                   data-srcset="[object Object] 2x"
                   height="294"
@@ -447,7 +447,7 @@ exports[`Projects page renders correctly 1`] = `
                  
                 <img
                   alt="GoDee Bus Transportation Services Logo."
-                  class="lazyload"
+                  class="img_lazy"
                   data-src="[object Object]"
                   data-srcset="[object Object] 2x"
                   height="294"

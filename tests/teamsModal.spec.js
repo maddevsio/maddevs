@@ -35,7 +35,7 @@ describe('Teams Modal', () => {
   test('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
+
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
@@ -58,8 +58,8 @@ describe('Teams Modal', () => {
 
   test('has a functions', () => {
     expect(
-      typeof TeamsModal.methods.getPrivacyCheckboxState && 
-      typeof TeamsModal.methods.getDiscountOffersCheckboxState && 
+      typeof TeamsModal.methods.getPrivacyCheckboxState &&
+      typeof TeamsModal.methods.getDiscountOffersCheckboxState &&
       typeof TeamsModal.methods.getTeamSize
     ).toBe('function');
   });
@@ -83,7 +83,7 @@ describe('Teams Modal', () => {
         'agreeToGetMadDevsDiscountOffers': 'No',
         'agreeWithPrivacyPolicy': 'No',
         'email': '',
-        'emailTo': 'team@maddevs.io',
+        'emailTo': '',
         'fullName': '',
         'phoneNumber': '',
         'projectDescription': '',

@@ -30,7 +30,7 @@
               <div class="customer-testimonials__profile">
                 <img
                   :data-src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)"
-                  class="customer-testimonials__customer-image lazyload"
+                  class="customer-testimonials__customer-image img_lazy"
                   :alt="testimonial.alt"
                   width="42"
                   height="42"

@@ -18,9 +18,8 @@ exports[`Footer contacts renders correctly 1`] = `
        
       <a
         class="footer-contacts__contact-link footer-contacts__contact-mail"
-        href="mailto:team@maddevs.io"
       >
-        team@maddevs.io
+        
       </a>
     </div>
      

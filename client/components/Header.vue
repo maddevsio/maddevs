@@ -56,7 +56,7 @@
 
     <!-- Mobile header -->
     <mobileHeader
-      v-show="isActiveMobileMenu"
+      v-if="isActiveMobileMenu"
       @changed-page="isActiveMobileMenu = false"
       @open-modal="$refs.contactMeModal.show()"
     />

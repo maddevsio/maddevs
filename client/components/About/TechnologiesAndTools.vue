@@ -448,9 +448,9 @@ export default {
       } else {
         this.activeLegend = e;
       }
-      this.$nextTick(() => this.refreshSvg());
+      this.$nextTick(() => this.refreshImg());
     },
-    refreshSvg() {
+    refreshImg() {
       const lazySvg = [].slice.call(document.querySelectorAll('img.img_lazy'));
       lazySvg.forEach(lazySvg => {
         lazySvg.src = lazySvg.dataset.src;

@@ -26,7 +26,7 @@ describe('Infrastructure Audit Modal', () => {
         }
       }
     });
-    wrapper.vm.$refs = { 
+    wrapper.vm.$refs = {
       checkboxes: {
         reset: jest.fn()
       },
@@ -40,7 +40,7 @@ describe('Infrastructure Audit Modal', () => {
   test('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
+
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
@@ -62,7 +62,7 @@ describe('Infrastructure Audit Modal', () => {
 
   test('has a functions', () => {
     expect(
-      typeof InfrastructureAuditModal.methods.getPrivacyCheckboxState && 
+      typeof InfrastructureAuditModal.methods.getPrivacyCheckboxState &&
       typeof InfrastructureAuditModal.methods.getDiscountOffersCheckboxState &&
       typeof InfrastructureAuditModal.methods.getSelectedProjectHost
     ).toBe('function');
@@ -87,7 +87,7 @@ describe('Infrastructure Audit Modal', () => {
         'agreeToGetMadDevsDiscountOffers': 'No',
         'agreeWithPrivacyPolicy': 'No',
         'email': '',
-        'emailTo': 'team@maddevs.io',
+        'emailTo': '',
         'fullName': '',
         'subject': 'Marketing',
         'phoneNumber': '',
