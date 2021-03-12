@@ -45,7 +45,7 @@ app.get('/en', (req, res) => {
   res.redirect(301, 'https://maddevs.io/');
 });
 
-app.post('/send-email', (req, res) => {
+app.post('/api/send-email', (req, res) => {
   if (req.body.templateId === null || req.body.templateId === undefined) {
     res.status(500).json({
       status: 500,
