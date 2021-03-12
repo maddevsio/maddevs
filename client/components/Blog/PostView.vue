@@ -85,7 +85,10 @@ export default {
     CuNavigation
   },
   props: {
-    type: String,
+    type: {
+      type: String,
+      default: () => 'blog'
+    },
     title: String,
     id: String,
     document: Object,
