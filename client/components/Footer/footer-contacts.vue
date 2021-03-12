@@ -89,7 +89,23 @@ export default {
   },
   data: () => ({
     mailLink: process.env.emailContact
-  })
+  }),
+  created() {
+    if (process.client) {
+      if (document) {
+        this.$nextTick(() => this.refreshImg());
+      }
+    }
+  },
+  methods: {
+    refreshImg() {
+      const lazyImg = [].slice.call(document.querySelectorAll('img.img_lazy'));
+      lazyImg.forEach(lazyImg => {
+        lazyImg.src = lazyImg.dataset.src;
+        lazyImg.classList.remove('img_lazy');
+      });
+    }
+  }
 };
 </script>
 
