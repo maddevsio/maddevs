@@ -134,7 +134,6 @@ module.exports = {
       }
     }
   },
-  buildModules: ['nuxt-lazysizes'],
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/robots',

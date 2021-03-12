@@ -39,7 +39,7 @@
           <img
             :data-src="[require(`@/assets/img/Studies/${project.fileExtension}/${project.projectBackground}.${project.fileExtension}`)]"
             :data-srcset="[require(`@/assets/img/Studies/${project.fileExtension}/${project.projectBackground}.${project.fileExtension}`) + ' 2x']"
-            class="lazyload"
+            class="img_lazy"
             :alt="project.alt"
             width="610"
             height="294"
