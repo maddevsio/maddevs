@@ -27,7 +27,7 @@
       </div>
 
       <customer-university-header
-        v-if="type === 'customer_university'"
+        v-if="type === 'cu_post'"
         :document="document"
         :id="id"
         :postList="clusterPosts || []"
@@ -87,7 +87,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: () => 'blog'
+      default: () => 'blog_post'
     },
     title: String,
     id: String,
@@ -162,10 +162,10 @@ export default {
       }
     },
     wrapperClass: function () {
-      return this.recommendedPosts.length || this.type === 'customer_university' ? 'with-recommended' : '';
+      return this.recommendedPosts.length || this.type === 'cu_post' ? 'with-recommended' : '';
     },
     showRecommended: function () {
-      return this.type !== 'customer_university' && this.recommendedPosts.length !== 0;
+      return this.type !== 'cu_post' && this.recommendedPosts.length !== 0;
     }
   }
 };

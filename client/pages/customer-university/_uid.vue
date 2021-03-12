@@ -12,7 +12,7 @@ export default {
   },
   data() {
     return {
-      type: 'customer_university',
+      type: 'cu_post',
       title: '',
       jsonLd: '',
       cluster: null

@@ -12,7 +12,7 @@ export default {
   },
   data() {
     return {
-      type: 'post',
+      type: 'blog_post',
       title: '',
       jsonLd: '',
       cluster: null
