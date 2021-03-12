@@ -93,7 +93,6 @@ module.exports = {
     vendor: ['axios'],
     followSymlinks: true,
     cache: true,
-    transpile: ['vee-validate/dist/rules'],
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
