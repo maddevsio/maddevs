@@ -1,6 +1,6 @@
 require('dotenv').config();
 import axios from 'axios';
-import initAnalyticsScript from './client/helpers/initAnalyticsScript.js';
+const initAnalyticsScript = require('./client/helpers/initAnalyticsScript.js');
 
 module.exports = {
   srcDir: 'client/',
