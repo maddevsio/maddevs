@@ -15,6 +15,7 @@
     "lint-scss": "sass-lint client/assets/styles/*.scss --verbose",
     "precommit": "npm run lint",
     "heroku-postbuild": "npm run build",
+    "heroku-cleanup": "ln client/favicon.ico ./favicon.ico; rm -rf dist; mkdir client; cp ./favicon.ico ./client/favicon.ico; rm favicon.ico",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
     "test": "jest --config=jest.config.develop.js",
