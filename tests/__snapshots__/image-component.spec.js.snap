@@ -10,7 +10,7 @@ exports[`Webp image component renders correctly 1`] = `
    
   <img
     alt=""
-    class="multi-image lazyload"
+    class="multi-image img_lazy"
     data-src="[object Object]"
     data-srcset="[object Object] 2x"
     height="auto"
