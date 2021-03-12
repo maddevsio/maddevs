@@ -271,6 +271,7 @@ export default {
       &.disabled {
         opacity: 0.2;
         cursor: default;
+        pointer-events: none;
       }
     }
 
