@@ -109,7 +109,7 @@ export default {
     }
   },
   computed: {
-    postData: function () {
+    postData() {
       return Object.assign({}, this.$data);
     }
   }

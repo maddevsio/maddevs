@@ -112,18 +112,10 @@ export default {
     initImgLazyHelper();
   },
   destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
     window.removeEventListener('scroll', this.shareButtonsScroll);
   },
   methods: {
-    scrollTo(className) {
-      const element = document.getElementsByClassName(className);
-      element[0].scrollIntoView(
-        {
-          block: 'center',
-          behavior: 'smooth'
-        }
-      );
-    },
     scrollToTop() {
       window.scrollTo({
         top: 0,
@@ -154,17 +146,17 @@ export default {
     }
   },
   computed: {
-    clusterPosts: function () {
+    clusterPosts() {
       if (this.cluster !== null) {
         return this.cluster.items;
       } else {
         return null;
       }
     },
-    wrapperClass: function () {
+    wrapperClass() {
       return this.recommendedPosts.length || this.type === 'cu_post' ? 'with-recommended' : '';
     },
-    showRecommended: function () {
+    showRecommended() {
       return this.type !== 'cu_post' && this.recommendedPosts.length !== 0;
     }
   }

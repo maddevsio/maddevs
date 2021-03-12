@@ -100,7 +100,7 @@ export default {
     this.title = this.$prismic.asText(this.document.meta_title) || this.document.title[0].text;
   },
   computed: {
-    postData: function() {
+    postData() {
       return Object.assign({}, this.$data);
     }
   }
