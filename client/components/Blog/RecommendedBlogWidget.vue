@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="link">
+  <nuxt-link :to="link" :class="isRecentPost && 'latest-post'">
     <div class="blog-post">
       <div class="blog-post__cover-image" :style="`background-image: url(${post.data.featured_image.url})`"/>
       <div>
@@ -21,6 +21,10 @@ import PostAuthor from '@/components/Blog/PostAuthor';
 export default {
   name: 'RecommendedBlogWidget',
   props: {
+    isRecentPost: {
+      type: Boolean,
+      default: () => false
+    },
     post: {
       type: Object,
       required: true

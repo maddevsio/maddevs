@@ -10,11 +10,11 @@
               <section v-for="post in recentPosts" :key="post.id" :post="post" class="latest-posts__single-post">
                 <div class="single-post__wrapper">
                   <div class="banner" v-if="post.id === 'banner'">
-                    <a :href="post.link.url" :target="post.link.target">
+                    <a :href="post.link.url" :target="post.link.target" class="latest-post">
                       <img :src="post.banner.url" :alt="post.id">
                     </a>
                   </div>
-                  <recommended-blog-widget :post="post" v-else/>
+                  <recommended-blog-widget :isRecentPost="true" :post="post" v-else/>
                 </div>
               </section>
             </template>
@@ -162,10 +162,12 @@ export default {
     });
   },
   watch: {
+    // Fixes scroll position for async filtered posts list
     filteredPosts: function() {
       const prevPostLink = document.querySelector(`a[href='${this.visitedPost}']`);
-      if (prevPostLink && !prevPostLink.classList.contains('featured-post')) {
-        prevPostLink.scrollIntoView({ block: 'center' });
+      if (prevPostLink && !prevPostLink.classList.contains('featured-post') && !prevPostLink.classList.contains('latest-post')) {
+        const linkPositionY = (prevPostLink.getBoundingClientRect().top + window.scrollY) - 250; // 250(px) - distance between post and top of screen
+        window.scrollTo(0, linkPositionY);
       }
     }
   }
