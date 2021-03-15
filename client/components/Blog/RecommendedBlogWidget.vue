@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="link" :class="isRecentPost && 'latest-post'">
+  <nuxt-link :to="link" :class="{ 'latest-post': isRecentPost }">
     <div class="blog-post">
       <div class="blog-post__cover-image" :style="`background-image: url(${post.data.featured_image.url})`"/>
       <div>
