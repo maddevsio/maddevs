@@ -164,11 +164,11 @@ export default {
   watch: {
     // Fixes scroll position for async filtered posts list
     filteredPosts: function() {
-      const prevLinkEl = document.querySelector(`a[href='${this.visitedPost}']`);
-      if (prevLinkEl && !prevLinkEl.classList.contains('featured-post') && !prevLinkEl.classList.contains('latest-post')) {
-        const postItemEl = prevLinkEl.parentNode; // single-post__wrapper
+      const visitedLinkEl = document.querySelector(`a[href='${this.visitedPost}']`);
+      if (visitedLinkEl && !visitedLinkEl.classList.contains('featured-post') && !visitedLinkEl.classList.contains('latest-post')) {
+        const postItemEl = visitedLinkEl.parentNode; // single-post__wrapper
         postItemEl.scrollIntoView({ block: 'start' });
-        window.scrollTo(0, window.scrollY - 200); // scroll for the distance between the post and the top of the screen
+        window.scrollTo(0, window.scrollY - 120); // scroll for the distance between the post and the top of the screen
       }
     }
   }
