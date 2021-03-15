@@ -20,7 +20,7 @@ describe('Index page', () => {
     };
     wrapper = mount(IndexPage, {
       localVue,
-      stubs: ['client-only', 'router-link']
+      stubs: ['client-only', 'nuxt-link']
     });
   });
 

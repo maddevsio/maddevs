@@ -241,7 +241,7 @@ describe('Namba food', () => {
       }
     };
     wrapper = mount(NambaFood, {
-      stubs: ['client-only', 'router-link']
+      stubs: ['client-only', 'nuxt-link']
     });
   });
 
