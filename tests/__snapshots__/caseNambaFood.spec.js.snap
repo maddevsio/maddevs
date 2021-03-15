@@ -15,7 +15,7 @@ exports[`Namba food renders correctly 1`] = `
       muted="muted"
     >
       <source
-        src="undefined/main.ef19480.mp4"
+        src="undefined/godee-case-main-video.mp4"
         type="video/mp4"
       />
       
@@ -24,36 +24,41 @@ exports[`Namba food renders correctly 1`] = `
     </video>
      
     <div
-      class="case_logotype nambafood"
+      class="case_header-description"
+    >
+      <div
+        class="case_case-study-item"
+      >
+        Case Study
+      </div>
+       
+      <h1
+        class="case_header-title"
+      >
+        Convenient shuttle 
+        <br />
+         bus service
+      </h1>
+       
+      <p
+        class="case_header-description"
+      >
+        
+      Mad Devs helped GoDee with developing feature-rich software to re-invent 
+        <br />
+         public mobility by building new smart ways of a daily commute.
+    
+      </p>
+    </div>
+     
+    <div
+      class="case_header-logo case_godee-logo"
     />
-     
-    <h1
-      class="case_header-title"
-    >
-      Namba Food 
-      <br />
-       Top Delivery Service 
-      <br
-        class="case_text-break"
-      />
-       in 
-      <br
-        class="case_text-break-mobile"
-      />
-       Central Asia
-    </h1>
-     
-    <button
-      class="case_more-button case_more__button"
-      id="read-our-case-btn"
-      type="button"
-    >
-      Read our case studies ↓
-    </button>
   </section>
    
   <section
     class="case_body"
+    id="case-first-section"
   >
     <div
       class="case_animation_block"
