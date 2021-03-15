@@ -91,8 +91,8 @@ export default {
       readOurCaseButton: null,
       caseHeader: null,
       headerWhiteLogoText: null,
-      caseGoDeeFirstSection: null,
-      caseGoDeeMainContainer: null,
+      caseFirstSection: null,
+      caseGoDeeScrollContainer: null,
       isActiveMobileMenu: false,
       showLogoText: true
     };
@@ -113,8 +113,8 @@ export default {
       this.caseHeader = document.getElementById('case-header');
       this.headerWhiteLogoText = document.getElementById('header-logo-text');
       this.readOurCaseButton = document.getElementById('read-our-case-btn');
-      this.caseGoDeeFirstSection = document.getElementById('case-first-section');
-      this.caseGoDeeMainContainer = document.getElementById('scroll-container');
+      this.caseFirstSection = document.getElementById('case-first-section');
+      this.caseGoDeeScrollContainer = document.getElementById('case-scroll-container');
     },
     enableScrollOnBody() {
       document.body.classList.remove('scrollDisabled');
@@ -149,10 +149,9 @@ export default {
         this.mobileHeaderScrollbar.removeEventListener('scroll', this.handleMobileMenuScroll);
       }
     },
-
     // Methods of case pages
     setWidthForHeader() {
-      let scrollBarWidth = this.caseGoDeeMainContainer.offsetWidth - this.caseGoDeeMainContainer.clientWidth;
+      let scrollBarWidth = this.caseGoDeeScrollContainer.offsetWidth - this.caseGoDeeScrollContainer.clientWidth;
       if(window.innerWidth >= 991) {
         this.$refs.header.style.width = `calc(100% - ${scrollBarWidth}px)`;
         this.$refs.overlay.style.width = `calc(100% - ${scrollBarWidth}px)`;
@@ -160,6 +159,16 @@ export default {
         this.$refs.header.style.width = '100%';
         this.$refs.overlay.style.width = '100%';
       }
+    },
+    setStylesForHeader() {
+      const opacity = 1.6 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.readOurCaseButton.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
+      const opacityTextLogo = 0.9 - (this.$refs.overlay.offsetHeight - this.readOurCaseButton.getBoundingClientRect().top + this.readOurCaseButton.getBoundingClientRect().height) / this.$refs.overlay.offsetHeight;
+      this.$refs.overlay.style.opacity = opacity;
+      this.headerWhiteLogoText.style.opacity = opacityTextLogo;
+    },
+    setStylesForHeaderInGoDeeCase() {
+      this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (this.caseGoDeeScrollContainer.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
+      this.headerWhiteLogoText.style.opacity = -1 - (this.$refs.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
     },
     handleScroll() {
       if (this.$nuxt.$route.path.includes('/case-studies/') && !this.$nuxt.$route.path.includes('/godee')) {
@@ -170,28 +179,18 @@ export default {
     handleGoDeeCaseScroll() {
       this.setStylesForHeaderInGoDeeCase();
     },
-    setStylesForHeader() {
-      const opacity = 1.6 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.readOurCaseButton.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
-      const opacityTextLogo = 0.9 - (this.$refs.overlay.offsetHeight - this.readOurCaseButton.getBoundingClientRect().top + this.readOurCaseButton.getBoundingClientRect().height) / this.$refs.overlay.offsetHeight;
-      this.$refs.overlay.style.opacity = opacity;
-      this.headerWhiteLogoText.style.opacity = opacityTextLogo;
-    },
-    setStylesForHeaderInGoDeeCase() {
-      this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (this.caseGoDeeMainContainer.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
-      this.headerWhiteLogoText.style.opacity = -1 - (this.$refs.overlay.offsetHeight - this.caseGoDeeFirstSection.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
-    },
     addEventListeners() {
       window.addEventListener('scroll', this.handleScroll);
       if (this.$nuxt.$route.path.includes('/godee')) {
         window.addEventListener('resize', this.setWidthForHeader);
-        this.caseGoDeeMainContainer.addEventListener('scroll', this.handleGoDeeCaseScroll);
+        this.caseGoDeeScrollContainer.addEventListener('scroll', this.handleGoDeeCaseScroll);
       }
     },
     removeEventListeners() {
       window.removeEventListener('scroll', this.handleScroll);
       if (this.$nuxt.$route.path.includes('/godee')) {
         window.removeEventListener('resize', this.setWidthForHeader);
-        this.caseGoDeeMainContainer.removeEventListener('scroll', this.handleGoDeeCaseScroll);
+        this.caseGoDeeScrollContainer.removeEventListener('scroll', this.handleGoDeeCaseScroll);
       }
     }
   },

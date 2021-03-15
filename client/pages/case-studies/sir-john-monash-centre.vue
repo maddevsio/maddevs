@@ -1,7 +1,7 @@
 <template>
   <main class="main case">
     <HeaderSJMC />
-    <section class="case_body">
+    <section class="case_body" id="case-first-section">
       <div class="case_animation_block"></div>
       <section class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom">
         <TextParagraph class="m-24_bottom media-m-12_bottom">
