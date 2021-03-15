@@ -286,7 +286,7 @@ exports[`Footer contacts renders correctly 1`] = `
             target="_blank"
           >
             <img
-              alt="DEV Community"
+              alt="DEV"
               class="img_lazy"
               data-src="[object Object]"
               height="42"
