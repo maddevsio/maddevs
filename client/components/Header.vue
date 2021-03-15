@@ -86,15 +86,13 @@ export default {
   data() {
     return {
       buttonInnerText: 'Contact me',
-      scrollTop: null,
+      showLogoText: true,
+      isActiveMobileMenu: false,
       isCasePage: false,
-      readOurCaseButton: null,
       caseHeader: null,
       headerWhiteLogoText: null,
       caseFirstSection: null,
-      caseGoDeeScrollContainer: null,
-      isActiveMobileMenu: false,
-      showLogoText: true
+      caseGoDeeScrollContainer: null
     };
   },
   created() {
@@ -112,7 +110,6 @@ export default {
     getDOMSelectors() {
       this.caseHeader = document.getElementById('case-header');
       this.headerWhiteLogoText = document.getElementById('header-logo-text');
-      this.readOurCaseButton = document.getElementById('read-our-case-btn');
       this.caseFirstSection = document.getElementById('case-first-section');
       this.caseGoDeeScrollContainer = document.getElementById('case-scroll-container');
     },
