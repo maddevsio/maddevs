@@ -73,6 +73,7 @@ export default {
   &_header-title {
     @include title($text-color--white, 67.88px, -2px);
     margin-bottom: 10px;
+    margin-right: 155px;
     line-height: 112%;
     text-align: left;
     z-index: 1;
@@ -91,9 +92,18 @@ export default {
     background-color: $bgcolor--red;
   }
 
+  @media screen and (max-width: 1250px) {
+    &_header-title {
+      margin-right: 80px;
+    }
+  }
+
   @media screen and (max-width: 1170px) {
     &_header {
       flex-direction: column-reverse;
+      &-title {
+        margin-right: 0;
+      }
     }
   }
 
@@ -101,6 +111,13 @@ export default {
     &_header-title {
       @include title($text-color--white, 35px, -1px);
       line-height: 130%;
+    }
+
+    &_header-description {
+      max-width: 327px;
+      br {
+        display: none;
+      }
     }
 
     &_header-description,
@@ -117,6 +134,10 @@ export default {
   @media screen and (max-width: 370px) {
     &_header-title {
       font-size: 30px;
+    }
+
+    &_header-description {
+      max-width: 270px;
     }
     
     &_header-description,
