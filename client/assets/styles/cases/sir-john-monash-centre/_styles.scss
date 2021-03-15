@@ -1,4 +1,10 @@
 .case {
+  &_header {
+    &:before {
+      background-image: url("../../assets/img/Cases/sjmc/jpg/sjmc-main-video-preview.jpg");
+    }
+  }
+  
   &_column-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
