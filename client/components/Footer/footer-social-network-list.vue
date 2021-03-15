@@ -62,7 +62,7 @@ export default {
         {
           href: 'https://dev.to/maddevs',
           img: 'devto',
-          alt: 'DEV Community'
+          alt: 'DEV'
         }
       ]
     };
@@ -96,6 +96,8 @@ export default {
       img {
         width: 42px;
         height: 42px;
+        display: block;
+        overflow: hidden;
       }
     }
   }

@@ -30,6 +30,13 @@ app.use((req, res, next) => {
 });
 
 app.use((req, res, next) => {
+  if (req.url[req.url.length - 1] !== '/' && req.method === 'GET') {
+    res.redirect(`https://${req.headers.host}${req.url}/`);
+  } else {
+    next();
+  }
+});
+app.use((req, res, next) => {
   if (['blog.maddevs.co', 'blog.maddevs.io'].includes(req.headers.host)) {
     const requestUrl = req.url.slice(-1) === '/' && req.url.length > 1 ? req.url.substr(0, req.url.length - 1) : req.url;
     const match = redirectList.find(url => url.from === requestUrl);
