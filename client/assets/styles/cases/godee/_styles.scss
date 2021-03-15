@@ -7,9 +7,6 @@
 
   &_godee-logo {
     @include godee-logo;
-    width: 292px;
-    height: 130px;
-    z-index: 1;
   }
 
   &_text-quote-break {
@@ -206,8 +203,6 @@
 
   @media screen and (max-width: 1170px) {
     &_godee-logo {
-      width: 619px;
-      background-position: left;
       margin-bottom: 6px;
     }
   }
@@ -261,8 +256,6 @@
 
   @media screen and (max-width: 655px) {
     &_godee-logo {
-      width: 327px;
-      height: 65px;
       margin-bottom: 20px;
     }
   }
@@ -281,7 +274,6 @@
 
   @media screen and (max-width: 370px) {
     &_godee-logo {
-      width: 270px;
       margin-bottom: 10px;
     }
 
