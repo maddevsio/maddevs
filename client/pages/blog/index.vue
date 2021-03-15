@@ -164,10 +164,11 @@ export default {
   watch: {
     // Fixes scroll position for async filtered posts list
     filteredPosts: function() {
-      const prevPostLink = document.querySelector(`a[href='${this.visitedPost}']`);
-      if (prevPostLink && !prevPostLink.classList.contains('featured-post') && !prevPostLink.classList.contains('latest-post')) {
-        const linkPositionY = (prevPostLink.getBoundingClientRect().top + window.scrollY) - 220; // 220(px) - distance between post and top of screen
-        window.scrollTo(0, linkPositionY);
+      const prevLinkEl = document.querySelector(`a[href='${this.visitedPost}']`);
+      if (prevLinkEl && !prevLinkEl.classList.contains('featured-post') && !prevLinkEl.classList.contains('latest-post')) {
+        const postItemEl = prevLinkEl.parentNode; // single-post__wrapper
+        postItemEl.scrollIntoView({ block: 'start' });
+        window.scrollTo(0, window.scrollY - 200); // scroll for the distance between the post and the top of the screen
       }
     }
   }
