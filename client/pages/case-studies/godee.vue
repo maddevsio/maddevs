@@ -1,7 +1,7 @@
 <template>
   <div class="case_root">
     <HeaderMain />
-    <main class="case case_parallax" id="scroll-container" ref="main">
+    <main class="case case_parallax" id="case-scroll-container" ref="main">
       <CaseHeader logo="godee" videoName="godee-case-main-video.mp4">
         <h1 class="case_header-title" slot="title">Convenient shuttle <br> bus service</h1>
         <p class="case_header-description" slot="description">

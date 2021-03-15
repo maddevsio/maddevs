@@ -86,117 +86,29 @@ export default {
   data() {
     return {
       buttonInnerText: 'Contact me',
-      selectedPhone: null,
-      modalWindowName: 'contact-me-modal',
-      headerIsTransparent: false,
-      scrollTop: null,
+      showLogoText: true,
+      isActiveMobileMenu: false,
       isCasePage: false,
-      readOurCaseButton: null,
       caseHeader: null,
       headerWhiteLogoText: null,
-      caseGoDeeFirstSection: null,
-      caseGoDeeMainContainer: null,
-      isActiveMobileMenu: false,
-      showLogoText: true
+      caseFirstSection: null,
+      caseGoDeeScrollContainer: null
     };
   },
   created() {
     this.setDefaultStateForHeader();
   },
   mounted() {
-    if(this.isCasePage) {
-      this.getHtmlElements();
-      if (this.$nuxt.$route.path.includes('/godee')) {
-        this.addEventListenersForGoDeeCase();
-        this.setWidthForHeader();
-      } else {
-        this.getScrollTop();
-      }
-    }
-    window.addEventListener('scroll', this.scrollHandler);
-  },
-  watch: {
-    '$route'() {
-      this.setDefaultStateForHeader();
-      this.removeEventListeners();
+    this.getDOMSelectors();
+    this.addEventListeners();
+    if(this.isCasePage && this.$nuxt.$route.path.includes('/godee')) {
+      this.setWidthForHeader();
     }
   },
   methods: {
-    setDefaultStateForHeader() {
-      if (this.$nuxt.$route.path.includes('/case-studies/')) {
-        this.isCasePage = true;
-      } else {
-        this.isCasePage = false;
-      }
-    },
+    // Base methods
     goToTopPage() {
       window.scrollTo(0, 0);
-    },
-    getScrollTop() {
-      this.readOurCaseButton = document.getElementById('read-our-case-btn');
-      this.scrollTop = this.readOurCaseButton.getBoundingClientRect().top - this.$refs.headerContainer.offsetHeight;
-    },
-    scrollHandler() {
-      if (this.$nuxt.$route.path.includes('/case-studies/') && !this.$nuxt.$route.path.includes('/godee')) {
-        this.setStylesForHeader();
-      }
-      this.changeLogoState(window.pageYOffset);
-    },
-    scrollHandlerGodeeCase() {
-      this.setStylesForHeaderInGoDeeCase();
-    },
-    mobileMenuScrollHandler() {
-      this.changeLogoState(this.mobileHeaderScrollbar.scrollTop);
-    },
-    setStylesForHeader() {
-      const opacity = 1.6 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.readOurCaseButton.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
-      const opacityTextLogo = 0.9 - (this.$refs.overlay.offsetHeight - this.readOurCaseButton.getBoundingClientRect().top + this.readOurCaseButton.getBoundingClientRect().height) / this.$refs.overlay.offsetHeight;
-      this.$refs.overlay.style.opacity = opacity;
-      this.headerWhiteLogoText.style.opacity = opacityTextLogo;
-    },
-    setStylesForHeaderInGoDeeCase() {
-      this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (this.caseGoDeeMainContainer.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
-      this.headerWhiteLogoText.style.opacity = -1 - (this.$refs.overlay.offsetHeight - this.caseGoDeeFirstSection.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
-    },
-    setWidthForHeader() {
-      let scrollBarWidth = this.caseGoDeeMainContainer.offsetWidth - this.caseGoDeeMainContainer.clientWidth;
-      if(window.innerWidth >= 991) {
-        this.$refs.header.style.width = `calc(100% - ${scrollBarWidth}px)`;
-        this.$refs.overlay.style.width = `calc(100% - ${scrollBarWidth}px)`;
-      } else {
-        this.$refs.header.style.width = '100%';
-        this.$refs.overlay.style.width = '100%';
-      }
-    },
-    addEventListenersForGoDeeCase() {
-      this.caseGoDeeFirstSection = document.getElementById('case-first-section');
-      this.caseGoDeeMainContainer = document.getElementById('scroll-container');
-      this.caseGoDeeMainContainer.addEventListener('scroll', this.scrollHandlerGodeeCase);
-      window.addEventListener('resize', this.setWidthForHeader);
-    },
-    getHtmlElements() {
-      this.caseHeader = document.getElementById('case-header');
-      this.headerWhiteLogoText = document.getElementById('header-logo-text');
-    },
-    toggleMobileMenu() {
-      this.isActiveMobileMenu = !this.isActiveMobileMenu;
-      if(this.isActiveMobileMenu) {
-        this.disableScrollOnBody();
-        this.$nextTick(() => {
-          this.mobileHeaderScrollbar = document.getElementById('mobile-header-scrollbar');
-          this.mobileHeaderScrollbar.addEventListener('scroll', this.mobileMenuScrollHandler);
-        });
-      } else {
-        this.enableScrollOnBody();
-        this.mobileHeaderScrollbar.removeEventListener('scroll', this.mobileMenuScrollHandler);
-      }
-    },
-    changeLogoState(scrollTop) {
-      if(scrollTop >= 10) {
-        this.showLogoText = false;
-      } else {
-        this.showLogoText = true;
-      }
     },
     enableScrollOnBody() {
       document.body.classList.remove('scrollDisabled');
@@ -206,11 +118,75 @@ export default {
       document.body.classList.add('scrollDisabled');
       document.documentElement.classList.add('scrollDisabled');
     },
+    setDefaultStateForHeader() {
+      this.isCasePage = this.$nuxt.$route.path.includes('/case-studies/');
+    },
+    changeLogoState(scrollTop) {
+      this.showLogoText = !(scrollTop >= 10);
+    },
+    handleMobileMenuScroll() {
+      this.changeLogoState(this.mobileHeaderScrollbar.scrollTop);
+    },
+    toggleMobileMenu() {
+      this.isActiveMobileMenu = !this.isActiveMobileMenu;
+      if(this.isActiveMobileMenu) {
+        this.disableScrollOnBody();
+        this.$nextTick(() => {
+          this.mobileHeaderScrollbar = document.getElementById('mobile-header-scrollbar');
+          this.mobileHeaderScrollbar.addEventListener('scroll', this.handleMobileMenuScroll);
+        });
+      } else {
+        this.enableScrollOnBody();
+        this.mobileHeaderScrollbar.removeEventListener('scroll', this.handleMobileMenuScroll);
+      }
+    },
+
+    // Methods of case pages
+    getDOMSelectors() {
+      this.caseHeader = document.getElementById('case-header');
+      this.headerWhiteLogoText = document.getElementById('header-logo-text');
+      this.caseFirstSection = document.getElementById('case-first-section');
+      this.caseGoDeeScrollContainer = document.getElementById('case-scroll-container');
+    },
+    setWidthForHeader() {
+      let scrollBarWidth = this.caseGoDeeScrollContainer.offsetWidth - this.caseGoDeeScrollContainer.clientWidth;
+      if(window.innerWidth >= 991) {
+        this.$refs.header.style.width = `calc(100% - ${scrollBarWidth}px)`;
+        this.$refs.overlay.style.width = `calc(100% - ${scrollBarWidth}px)`;
+      } else {
+        this.$refs.header.style.width = '100%';
+        this.$refs.overlay.style.width = '100%';
+      }
+    },
+    setStylesForHeader() {
+      const scrollFromTop = this.$nuxt.$route.path.includes('/godee') ? this.caseGoDeeScrollContainer.scrollTop : window.scrollY;
+      this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (scrollFromTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
+      this.headerWhiteLogoText.style.opacity = -1 - (this.$refs.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
+    },
+    scrollHandler() {
+      if (this.$nuxt.$route.path.includes('/case-studies/')) {
+        this.setStylesForHeader();
+      }
+      this.changeLogoState(window.pageYOffset);
+    },
+    addEventListeners() {
+      window.addEventListener('scroll', this.scrollHandler);
+      if (this.isCasePage && this.$nuxt.$route.path.includes('/godee')) {
+        window.addEventListener('resize', this.setWidthForHeader);
+        this.caseGoDeeScrollContainer.addEventListener('scroll', this.scrollHandler);
+      }
+    },
     removeEventListeners() {
       if (this.$nuxt.$route.path.includes('/godee')) {
         window.removeEventListener('resize', this.setWidthForHeader);
-        this.caseGoDeeMainContainer.removeEventListener('scroll', this.scrollHandlerGodeeCase);
+        this.caseGoDeeScrollContainer.removeEventListener('scroll', this.scrollHandler);
       }
+    }
+  },
+  watch: {
+    '$route'() {
+      this.setDefaultStateForHeader();
+      this.removeEventListeners();
     }
   }
 };
