@@ -167,6 +167,7 @@ export default {
     overflow: hidden;
     border-radius: 3px;
     background-color: $modal-bg-color;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.45);
     border-radius: 3px;
   }
 
