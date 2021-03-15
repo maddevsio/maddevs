@@ -70,12 +70,6 @@ export default {
     }
   }
 
-  &_header-logo {
-    width: 292px;
-    height: 130px;
-    z-index: 1;
-  }
-
   &_header-title {
     @include title($text-color--white, 67.88px, -2px);
     margin-bottom: 10px;
@@ -109,22 +103,12 @@ export default {
       flex-direction: column-reverse;
     }
 
-    &_header-logo {
-      width: 619px;
-      background-position: left;
-    }
-
     &_header-title {
       margin-right: 0;
     }
   }
 
   @media screen and (max-width: 655px) {
-    &_header-logo {
-      width: 327px;
-      height: 65px;
-    }
-
     &_header-title {
       @include title($text-color--white, 35px, -1px);
       line-height: 130%;
@@ -149,10 +133,6 @@ export default {
   }
 
   @media screen and (max-width: 370px) {
-    &_header-logo {
-      width: 270px;
-    }
-    
     &_header-title {
       font-size: 30px;
     }
