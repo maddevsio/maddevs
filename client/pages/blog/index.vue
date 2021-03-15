@@ -168,7 +168,7 @@ export default {
       if (visitedLinkEl && !visitedLinkEl.classList.contains('featured-post') && !visitedLinkEl.classList.contains('latest-post')) {
         const postItemEl = visitedLinkEl.parentNode; // single-post__wrapper
         postItemEl.scrollIntoView({ block: 'start' });
-        window.scrollTo(0, window.scrollY - 120); // scroll for the distance between the post and the top of the screen
+        window.scrollTo(0, window.scrollY - 120); // scroll for distance between the post and the top of the screen
       }
     }
   }
