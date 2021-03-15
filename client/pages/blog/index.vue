@@ -166,7 +166,7 @@ export default {
     filteredPosts: function() {
       const prevPostLink = document.querySelector(`a[href='${this.visitedPost}']`);
       if (prevPostLink && !prevPostLink.classList.contains('featured-post') && !prevPostLink.classList.contains('latest-post')) {
-        const linkPositionY = (prevPostLink.getBoundingClientRect().top + window.scrollY) - 200; // 250(px) - distance between post and top of screen
+        const linkPositionY = (prevPostLink.getBoundingClientRect().top + window.scrollY) - 180; // 180(px) - distance between post and top of screen
         window.scrollTo(0, linkPositionY);
       }
     }
