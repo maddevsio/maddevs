@@ -133,6 +133,12 @@ export default {
     changeLogoState(scrollTop) {
       this.showLogoText = !(scrollTop >= 10);
     },
+    handleScroll() {
+      if (this.$nuxt.$route.path.includes('/case-studies/')) {
+        this.setStylesForHeader();
+      }
+      this.changeLogoState(window.pageYOffset);
+    },
     handleMobileMenuScroll() {
       this.changeLogoState(this.mobileHeaderScrollbar.scrollTop);
     },
@@ -161,36 +167,21 @@ export default {
       }
     },
     setStylesForHeader() {
-      const opacity = 1.6 - (this.$refs.overlay.offsetHeight - (window.scrollY - this.caseHeader.getBoundingClientRect().height + this.readOurCaseButton.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
-      const opacityTextLogo = 0.9 - (this.$refs.overlay.offsetHeight - this.readOurCaseButton.getBoundingClientRect().top + this.readOurCaseButton.getBoundingClientRect().height) / this.$refs.overlay.offsetHeight;
-      this.$refs.overlay.style.opacity = opacity;
-      this.headerWhiteLogoText.style.opacity = opacityTextLogo;
-    },
-    setStylesForHeaderInGoDeeCase() {
-      this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (this.caseGoDeeScrollContainer.scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
+      const scrollTop = this.$nuxt.$route.path.includes('/godee') ? this.caseGoDeeScrollContainer.scrollTop : window.scrollY;
+      this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (scrollTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
       this.headerWhiteLogoText.style.opacity = -1 - (this.$refs.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
-    },
-    handleScroll() {
-      if (this.$nuxt.$route.path.includes('/case-studies/') && !this.$nuxt.$route.path.includes('/godee')) {
-        this.setStylesForHeader();
-      }
-      this.changeLogoState(window.pageYOffset);
-    },
-    handleGoDeeCaseScroll() {
-      this.setStylesForHeaderInGoDeeCase();
     },
     addEventListeners() {
       window.addEventListener('scroll', this.handleScroll);
       if (this.$nuxt.$route.path.includes('/godee')) {
         window.addEventListener('resize', this.setWidthForHeader);
-        this.caseGoDeeScrollContainer.addEventListener('scroll', this.handleGoDeeCaseScroll);
+        this.caseGoDeeScrollContainer.addEventListener('scroll', this.handleScroll);
       }
     },
     removeEventListeners() {
-      window.removeEventListener('scroll', this.handleScroll);
       if (this.$nuxt.$route.path.includes('/godee')) {
         window.removeEventListener('resize', this.setWidthForHeader);
-        this.caseGoDeeScrollContainer.removeEventListener('scroll', this.handleGoDeeCaseScroll);
+        this.caseGoDeeScrollContainer.removeEventListener('scroll', this.handleScroll);
       }
     }
   },
