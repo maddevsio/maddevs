@@ -7,8 +7,8 @@
 
   &_nambafood-logo {
     @include nambafood-header;
-    width: 259.44px;
-    height: 82px;
+    width: 292px;
+    height: 112px;
     z-index: 1;
   }
 
@@ -122,6 +122,14 @@
     }
   }
 
+  @media screen and (max-width: 1170px) {
+    &_nambafood-logo {
+      width: 635px;
+      margin-bottom: 38px;
+      background-position: -36px;
+    }
+  }
+
   @media screen and (max-width: 980px) {
     &_full-screen-phone-video-wrapper {
       min-width: 225px;
@@ -182,6 +190,15 @@
     }
   }
 
+  @media screen and (max-width: 655px) {
+    &_nambafood-logo {
+      width: 328px;
+      height: 65px;
+      background-position: -21px;
+      margin-bottom: 35px;
+    }
+  }
+
   @media screen and (max-width: 620px) {
     &_usage-scenarios {
       @include grid(repeat(1, 1fr), auto, 20px, 20px);
@@ -209,6 +226,13 @@
   @media screen and (max-width: 420px) {
     &_mobile-break {
       display: block;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    &_nambafood-logo {
+      width: 270px;
+      margin-bottom: 25px;
     }
   }
 }
