@@ -2,9 +2,12 @@ const sendpulse = require('sendpulse-api');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const redirectList = require('../json/redirect');
+const customerRedirectList = require('../json/customer-university.json');
 const app = require('express')();
 
 const _config_ = require('../config');
+
+const getRequestUrl = request => request.url.slice(-1) === '/' && request.url.length > 1 ? request.url.substr(0, request.url.length - 1) : request.url;
 
 app.use(cors());
 app.use(bodyParser.json({ limit: '5mb' }));
@@ -38,13 +41,21 @@ app.use((req, res, next) => {
 });
 app.use((req, res, next) => {
   if (['blog.maddevs.co', 'blog.maddevs.io'].includes(req.headers.host)) {
-    const requestUrl = req.url.slice(-1) === '/' && req.url.length > 1 ? req.url.substr(0, req.url.length - 1) : req.url;
-    const match = redirectList.find(url => url.from === requestUrl);
+    const match = redirectList.find(url => url.from === getRequestUrl(req));
     if (match !== undefined && !!match.to) {
       res.redirect(301, match.to);
     } else {
       res.redirect(301, 'https://maddevs.io/blog');
     }
+  } else {
+    next();
+  }
+});
+
+app.use((req, res, next) => {
+  const match = customerRedirectList.find(url => url.from === getRequestUrl(req));
+  if (match) {
+    res.redirect(301, match.to);
   } else {
     next();
   }
