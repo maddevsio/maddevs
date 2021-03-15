@@ -26,8 +26,9 @@
           {{ project.projectDescription }}
         </p>
         <ContributionWidget
-          :contributionWidgetColors="project.contributionWidgetColors"
           :projectName="project.projectName"
+          :contribution="project.contribution"
+          :maddevsLogo="project.maddevsLogo"
         />
       </div>
       <div class="single-project__background" :class="backgroundModifierClasses">
@@ -101,7 +102,7 @@ export default {
   computed: {
     isWhiteColored() {
       if (
-        this.project.projectName === 'teacherly' ||
+        this.project.projectName === 'sjmc' ||
         this.project.projectName === 'guardrails'
       ) {
         return true;
