@@ -1,4 +1,10 @@
 .case {
+  &_header {
+    &:before {
+      background-image: url("../../assets/img/Cases/nambafood/jpg/blank.jpg");
+    }
+  }
+  
   &_delivery-control-cards {
     @include grid(repeat(2, 1fr), repeat(2, 1fr), 24px, 24px);
   }
