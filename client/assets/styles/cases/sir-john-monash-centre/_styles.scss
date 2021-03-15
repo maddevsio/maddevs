@@ -4,6 +4,12 @@
       background-image: url("../../assets/img/Cases/sjmc/jpg/sjmc-main-video-preview.jpg");
     }
   }
+
+  &_sjmc-logo {
+    @include sjmc-header;
+    width: 278.36px;
+    height: 124.33px;
+  }
   
   &_column-container {
     display: grid;
