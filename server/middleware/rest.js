@@ -20,21 +20,23 @@ app.use(function applyXFrame(req, res, next) {
   next();
 });
 
-app.use((req, res, next) => {
-  if (process.env.NODE_ENV !== 'development') {
-    if (req.secure) {
-      next();
-    } else {
-      res.redirect('https://' + req.headers.host + req.url);
-    }
-  } else {
-    next();
-  }
-});
+// app.use((req, res, next) => {
+//   if (process.env.NODE_ENV !== 'development') {
+//     if (req.secure) {
+//       next();
+//     } else {
+//       res.redirect('https://' + req.headers.host + req.url);
+//     }
+//   } else {
+//     next();
+//   }
+// });
 
 app.use((req, res, next) => {
   if (req.url[req.url.length - 1] !== '/' && req.method === 'GET' && req.url !== '/sitemap.xml') {
     res.redirect(`https://${req.headers.host}${req.url}/`);
+  } else if(req.url === '/sitemap.xml') {
+    res.redirect(`https://${req.headers.host}${req.url}`);
   } else {
     next();
   }
