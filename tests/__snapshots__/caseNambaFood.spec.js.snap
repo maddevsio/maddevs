@@ -24,32 +24,36 @@ exports[`Namba food renders correctly 1`] = `
     </video>
      
     <div
-      class="case_logotype nambafood"
+      class="case_header-description"
+    >
+      <div
+        class="case_case-study-item"
+      >
+        Case Study
+      </div>
+       
+      <h1
+        class="case_header-title"
+      >
+        Namba Food
+        <br />
+         top delivery service
+      </h1>
+       
+      <p
+        class="case_header-description"
+      >
+        
+      FoodTech Case Study. How to make a delivery app from scratch? 
+        <br />
+         Read Namba Food’s story of developing a custom software top delivery service in Central Asia.
+    
+      </p>
+    </div>
+     
+    <div
+      class="case_header-logo case_nambafood-logo"
     />
-     
-    <h1
-      class="case_header-title"
-    >
-      Namba Food 
-      <br />
-       Top Delivery Service 
-      <br
-        class="case_text-break"
-      />
-       in 
-      <br
-        class="case_text-break-mobile"
-      />
-       Central Asia
-    </h1>
-     
-    <button
-      class="case_more-button case_more__button"
-      id="read-our-case-btn"
-      type="button"
-    >
-      Read our case studies ↓
-    </button>
   </section>
    
   <section
@@ -57,11 +61,11 @@ exports[`Namba food renders correctly 1`] = `
   >
     <div
       class="case_animation_block"
+      id="case-first-section"
     />
      
     <section
       class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom"
-      id="case-first-section"
     >
       <p
         class="case_paragraph"
