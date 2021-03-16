@@ -1,6 +1,6 @@
 <template>
   <section class="case_header" id="case-header">
-    <video 
+    <video
       class="case_main-video" 
       loop="true" 
       muted="true" 
@@ -10,13 +10,15 @@
       <source :src="video" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="case_header-description">
-      <div class="case_case-study-item">Case Study</div>
-      <slot name="title"></slot>
-      <slot name="description"></slot>
-      <slot name="actions"></slot>
+    <div class="case_header-content">
+      <div class="case_header-text">
+        <div class="case_case-study-item">Case Study</div>
+        <slot name="title"></slot>
+        <slot name="description"></slot>
+        <slot name="actions"></slot>
+      </div>
+      <div :class="`case_${logo}-logo`" class="case_header-logo"></div>
     </div>
-    <div class="case_header-logo" :class="`case_${logo}-logo`"></div>
   </section>
 </template>
 
@@ -63,7 +65,6 @@ export default {
 .case {
   &_header {
     display: flex;
-    flex-direction: row;
     background-color: $bgcolor--black-opacity-07;
 
     &:after {
@@ -71,17 +72,26 @@ export default {
     }
   }
 
-  &_header-title {
-    @include title($text-color--white, 67.88px, -2px);
-    margin-bottom: 10px;
-    margin-right: 155px;
-    line-height: 112%;
-    text-align: left;
+  &_header-content {
+    max-width: calc(100% - 48px);
+    display: flex;
+    align-items: center;
     z-index: 1;
   }
 
-  &_header-description {
+  &_header-text {
     @include default_text($text-color--white, 17px, 166%, -0.035em, normal);
+  }
+
+  &_header-title {
+    @include title($text-color--white, 67.88px, -2px);
+    line-height: 112%;
+    text-align: left;
+  }
+
+  &_header-description {
+    margin-top: 10px;
+    text-align: left;
   }
 
   &_case-study-item {
@@ -93,19 +103,9 @@ export default {
     background-color: $bgcolor--red;
   }
 
-  @media screen and (max-width: 1250px) {
-    &_header-title {
-      margin-right: 80px;
-    }
-  }
-
   @media screen and (max-width: 1170px) {
-    &_header {
+    &_header-content {
       flex-direction: column-reverse;
-    }
-
-    &_header-title {
-      margin-right: 0;
     }
   }
 
@@ -115,14 +115,7 @@ export default {
       line-height: 130%;
     }
 
-    &_header-description {
-      max-width: 327px;
-      br {
-        display: none;
-      }
-    }
-
-    &_header-description,
+    &_header-info,
     &_case-study-item {
       @include default_text($text-color--white, 16px, 150%, -0.02em, normal);
     }
@@ -137,12 +130,8 @@ export default {
     &_header-title {
       font-size: 30px;
     }
-
-    &_header-description {
-      max-width: 270px;
-    }
     
-    &_header-description,
+    &_header-text,
     &_case-study-item {
       font-size: 13px;
     }
