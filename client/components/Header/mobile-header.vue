@@ -13,7 +13,7 @@
           <div class="mobile-header__contacts mobile-header__large-phone-content">
             <div class="mobile-header__contact-item mobile-header__contact-item-email">
               <p class="mobile-header__contact-title">Text us:</p>
-              <a :href="mailLink" class="mobile-header__contact-link mobile-header__contact-mail">{{mailLink}}</a>
+              <a :href="`mailto:${mailLink}`" class="mobile-header__contact-link mobile-header__contact-mail">{{mailLink}}</a>
             </div>
             <div class="mobile-header__contact-item">
               <div class="mobile-header__contact-title-wrapper">
@@ -107,7 +107,7 @@ export default {
   data() {
     return {
       buttonInnerText: 'Contact me',
-      mailLink: `mailto:${process.env.emailContact}`
+      mailLink: process.env.emailContact
     };
   },
   created() {
