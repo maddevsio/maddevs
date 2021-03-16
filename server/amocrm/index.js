@@ -1,10 +1,26 @@
-const createNewLead = require('./createNewLead');
-const { refreshTokens } = require('./tokens');
+const { getToken, tokensTypes } = require('../tokens');
+const refreshCrmToken = require('./refreshCrmToken');
+const storeNewLead = require('./storeNewLead');
 
 async function createLead(req, res) {
-  const tokens = await refreshTokens();
-  const results = await createNewLead(req.body.variables, tokens);
-  return res.status(200).json(results);
+  try {
+    /**
+     * We need to refresh the current amocrm token 'cause we haven't an ability to refresh the access token after expiration
+     * So, we just refresh token before any request for our safety
+     * @see {@link https://www.amocrm.ru/developers/content/oauth/oauth}
+     */
+    await refreshCrmToken();
+    
+    const token = await getToken(tokensTypes.AMOCRM);
+    const success = await storeNewLead(req.body.variables, token);
+
+    return res.status(200).json({ success });
+  } catch(error) {
+    console.error(error);
+    return res.status(500).json({ message: 'Error during creating lead', details: error });
+  }
 }
 
-module.exports = createLead;
+module.exports = {
+  createLead
+};

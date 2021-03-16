@@ -4,7 +4,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const redirectList = require('../json/redirect');
 const customerRedirectList = require('../json/customer-university.json');
-const createLead = require('../amocrm');
+const { createLead } = require('../amocrm');
 const express = require('express');
 const _config_ = require('../config');
 
@@ -123,7 +123,6 @@ async function start() {
       }
     });
 
-    // route for handle and save leads in amoCRM
     app.post('/api/leads', createLead);
   } catch(err) {
     console.log(err);
