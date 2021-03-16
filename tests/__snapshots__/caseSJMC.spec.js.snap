@@ -157,12 +157,12 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
       >
         
         After conducting an 
-        <router-link-stub
+        <nuxt-link-stub
           class="case_link"
           to="/services#it-consulting"
         >
           independent audit
-        </router-link-stub>
+        </nuxt-link-stub>
          of a previous IT vendor, a list of technical debt was formed.
       
       </p>

@@ -20,7 +20,7 @@ describe('Projects page', () => {
     };
     wrapper = mount(ProjectsPage, {
       localVue,
-      stubs: ['router-link']
+      stubs: ['nuxt-link']
     });
   });
 

@@ -6,18 +6,24 @@
           Check out our <br> <span class="banner__main-title-white_part main-title-white_part"> 50+ <br class="banner__small-screen-break"> implemented <br> projects!</span>
         </h1>
       </div>
-      <navigationList />
+      <navigationList>
+        <navigationItem link="#case-studies" title="Case studies"/>
+        <navigationItem link="#customers" title="Our customers"/>
+        <navigationItem link="#open-source" title="Open-source pet projects"/>
+      </navigationList>
     </div>
   </div>
 </template>
 
 <script>
 import navigationList from '@/components/ui/navigation-list';
+import navigationItem from '@/components/ui/navigation-item';
 
 export default {
   name: 'ProjectsBanner',
   components: {
-    navigationList
+    navigationList,
+    navigationItem
   }
 };
 </script>
