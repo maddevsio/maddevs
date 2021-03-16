@@ -12,9 +12,7 @@ describe('Form checkboxes', () => {
         name: '/'
       }
     };
-    wrapper = mount(CareersBanner, {
-      stubs: ['router-link']
-    });
+    wrapper = mount(CareersBanner);
   });
 
   // ------ IMPORTANT ----- //
