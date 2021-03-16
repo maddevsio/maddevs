@@ -38,7 +38,7 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Phone number</p>
-        <input @input="$v.phoneNumber.$touch" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
+        <input @input="this.$v.phoneNumber.$touch" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
         <!-- Erros -->
         <div v-if="$v.phoneNumber.$dirty">
           <span class="modal-error-text error-text" v-if="!$v.phoneNumber.phone">
@@ -126,9 +126,9 @@ export default {
       const data = [{
         name: this.fullName,
         custom_fields_values: [
-          { field_id: 261281, values: [{ value: this.email }] }, // Email
-          { field_id: 261331, values: [{ value: this.company }] }, // Company
-          { field_id: 261333, values: [{ value: this.phoneNumber }] } // Phone
+          {field_id: 261281, values: [{value: this.email}]}, // Email
+          {field_id: 261331, values: [{value: this.company}]}, // Company
+          {field_id: 261333, values: [{value: this.phoneNumber}]} // Phone
         ]
       }];
       this.$store.dispatch('createNewLead', data);
