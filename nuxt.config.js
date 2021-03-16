@@ -114,7 +114,7 @@ module.exports = {
   ** Server middlewares
   */
   serverMiddleware: [
-    { path: '/', handler: '~/../server/middleware/rest.js' }
+    { path: '/', handler: '~/../server/index.js' }
   ],
   /*
   ** Build configuration

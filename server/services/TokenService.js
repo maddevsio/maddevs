@@ -1,5 +1,8 @@
 const mongoose = require('mongoose');
-const tokensTypes = require('./types');
+
+const tokensTypes = {
+  AMOCRM: 'amocrm'
+};
 
 const tokenSchema = new mongoose.Schema({
   type: String,
@@ -8,6 +11,7 @@ const tokenSchema = new mongoose.Schema({
 });
 
 const Token = mongoose.model('Token', tokenSchema);
+
 
 const getToken = async type => {
   try {

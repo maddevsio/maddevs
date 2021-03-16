@@ -1,6 +1,6 @@
-const { getToken, tokensTypes } = require('../tokens');
-const refreshCrmToken = require('./refreshCrmToken');
-const storeNewLead = require('./storeNewLead');
+// services
+const { getToken, tokensTypes } = require('../services/TokenService');
+const { refreshCrmToken, storeNewLead } = require('../services/LeadsService');
 
 async function createLead(req, res) {
   try {

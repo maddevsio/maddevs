@@ -1,8 +1,8 @@
 const axios = require('axios');
 const config = require('../config');
-const { getToken, saveToken, tokensTypes } = require('../tokens');
+const { getToken, saveToken, tokensTypes } = require('./TokenService');
 
-const refreshCrmToken = async () => {
+async function refreshCrmToken() {
   /**
    * We need to get refresh token for refresh access token
    */
@@ -31,6 +31,31 @@ const refreshCrmToken = async () => {
   await saveToken({ access, refresh }, tokensTypes.AMOCRM);
 
   return true;
+}
+
+const createLeadItem = ({ fullName, email }) => ([
+  {
+    name: `${fullName}, ${email}`,
+    price: 0
+  }
+]);
+
+const storeLead = async (body, token) => {
+  const url = config.AMOCRM_URL + '/api/v4/leads';
+  const headers = { 'Authorization': `Bearer ${token.access}` };
+  const requestConfig = { headers };
+
+  await axios.post(url, body, requestConfig);
+  return true;
 };
 
-module.exports = refreshCrmToken;
+const storeNewLead = async (rawData, token) => {
+  const leadItem = createLeadItem(rawData);
+  const success = await storeLead(leadItem, token);
+  return success;
+};
+
+module.exports = {
+  refreshCrmToken,
+  storeNewLead
+};
