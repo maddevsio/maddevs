@@ -17,8 +17,9 @@ const redirectToCustomerUrl = require('./middlewares/redirectToCustomerUrl');
 // config
 const config = require('./config');
 
-// router
-const router = require('./routes');
+// routers
+const webRouter = require('./routes/web');
+const apiRouter = require('./routes/api');
 
 
 function bootstrap() {
@@ -48,8 +49,9 @@ function bootstrap() {
   app.use(redirectToCorrectBlogUrl);
   app.use(redirectToCustomerUrl);
 
-  // router
-  app.use('/api', router);
+  // routers
+  app.use(webRouter);
+  app.use('/api', apiRouter);
 
   return app;
 }
