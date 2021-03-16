@@ -143,7 +143,7 @@ module.exports = {
     '@nuxtjs/prismic'
   ],
   axios: {
-    baseURL: process.env.NODE_API_URL
+    baseURL: '/'
   },
   robots: {
     UserAgent: '*',

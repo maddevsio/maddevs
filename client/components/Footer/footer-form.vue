@@ -50,7 +50,7 @@
     >
       Order a project now
     </UIButton>
-    <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
+    <SuccessModal :visibled="isEmailSent" id="footer-modal" />
   </form>
 </template>
 
@@ -115,7 +115,7 @@ export default {
     },
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
-        this.onSubmit = true;
+        // this.onSubmit = true;
         this.form = {
           templateId: 305480, // Required
           variables: {
@@ -129,12 +129,12 @@ export default {
             modalTitle: this.modalTitle
           }
         };
-        this.$store.dispatch('sendEmail', this.form).then(res => {
+        this.$store.dispatch('createNewLead', this.form).then(res => {
           this.onSubmit = false;
           // this.createLead();
           if (res.status === 200) {
             this.isEmailSent = true;
-            this.resetForm();
+            // this.resetForm();
             setTimeout(() => {
               this.isEmailSent = false;
             }, 3000);
