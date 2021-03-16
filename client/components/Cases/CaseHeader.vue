@@ -14,6 +14,7 @@
       <div class="case_case-study-item">Case Study</div>
       <slot name="title"></slot>
       <slot name="description"></slot>
+      <slot name="actions"></slot>
     </div>
     <div class="case_header-logo" :class="`case_${logo}-logo`"></div>
   </section>

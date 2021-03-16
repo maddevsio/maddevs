@@ -11,6 +11,25 @@
     height: 131.33px;
   }
 
+  &_play-button {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 59px;
+    padding: 0;
+    border: 0;
+    background: none;
+    @include default_text($text-color--white-primary, 13px, 166%, -0.02em, normal);
+    cursor: pointer;
+  }
+
+  &_play-icon {
+    @include play-header;
+    width: 14px;
+    height: 14px;
+    margin-right: 16px
+  }
+
   &_column-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

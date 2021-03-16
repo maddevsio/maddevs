@@ -1,11 +1,13 @@
 <template>
   <main class="main case">
     <CaseHeader logo="sjmc" videoName="sjmc/sjmc-main-video.b35a387.mp4">
-      <h1 class="case_header-title" slot="title">Sir John Monash <br /> Centre</h1>
-      <p class="case_header-description" slot="description">
-        Read how Mad Devs enhanced and developed new features for the <br /> Sir John Monash Centre’s software, mobile applications, and technological debt.
-      </p>
+      <h1 class="case_header-title" slot="title">The maintenance of memory: <br /> Sir John Monash Centre</h1>
+      <button class="case_play-button" type="button" @click="openFullscreen()" slot="actions">
+        <div class="case_play-icon"></div>
+        View video about SJMC
+      </button>
     </CaseHeader>
+    <SJMCVideo />
     <section class="case_body">
       <div class="case_animation_block" id="case-first-section"></div>
       <section class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom">
@@ -448,6 +450,7 @@
 
 <script>
 import CaseHeader from '@/components/Cases/CaseHeader';
+import SJMCVideo from '@/components/Cases/SJMCVideo';
 import TextParagraph from '@/components/Cases/TextParagraph';
 import TextQuote from '@/components/Cases/TextQuote';
 import TextQuoteBox from '@/components/Cases/TextQuoteBox';
@@ -470,6 +473,7 @@ import initImgLazyHelper from '@/helpers/initImgLazy';
 export default {
   components: {
     CaseHeader,
+    SJMCVideo,
     TextParagraph,
     TextQuote,
     TextQuoteBox,
@@ -778,6 +782,9 @@ export default {
     initImgLazyHelper();
   },
   methods: {
+    openFullscreen() {
+      this.$nuxt.$emit('open-fullscreen');
+    },
     videoSetState() {
       if (this.$refs.video.paused == true) {
         this.$refs.video.play();
