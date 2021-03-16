@@ -7,8 +7,10 @@
 
   &_sjmc-logo {
     @include sjmc-header;
-    width: 292px;
-    height: 131.33px;
+    width: 242px;
+    min-width: 242px;
+    height: 108px;
+    margin-left: 177px;
   }
 
   &_play-button {
@@ -107,9 +109,17 @@
     display: none;
   }
 
+  @media screen and (max-width: 1250px) {
+    &_sjmc-logo {
+      margin-left: 102px;
+    }
+  }
+
   @media screen and (max-width: 1170px) {
     &_sjmc-logo {
-      width: 594px;
+      margin-left: 0;
+      min-width: auto;
+      width: 100%;
       background-position: left;
       margin-bottom: 38px;
     }
@@ -129,7 +139,6 @@
 
   @media screen and (max-width: 655px) {
     &_sjmc-logo {
-      width: 327px;
       height: 65px;
       margin-bottom: 35px;
     }
@@ -149,7 +158,6 @@
 
   @media screen and (max-width: 370px) {
     &_sjmc-logo {
-      width: 270px;
       margin-bottom: 25px;
     }
   }
