@@ -7,9 +7,10 @@
 
   &_nambafood-logo {
     @include nambafood-header;
-    width: 292px;
-    height: 112px;
-    z-index: 1;
+    width: 259.44px;
+    min-width: 259.44px;
+    height: 82px;
+    margin-left: 164px;
   }
 
   &_delivery-control-cards {
@@ -113,6 +114,12 @@
     }
   }
 
+  @media screen and (max-width: 1250px) {
+    &_nambafood-logo {
+      margin-left: 90px;
+    }
+  }
+
   @media screen and (max-width: 1220px) {
     &_couriers-android-app-wrapper {
       min-width: 1020px;
@@ -124,9 +131,10 @@
 
   @media screen and (max-width: 1170px) {
     &_nambafood-logo {
-      width: 635px;
+      width: 100%;
+      margin-left: 0;
       margin-bottom: 38px;
-      background-position: -36px;
+      background-position: -26px;
     }
   }
 
@@ -192,7 +200,6 @@
 
   @media screen and (max-width: 655px) {
     &_nambafood-logo {
-      width: 328px;
       height: 65px;
       background-position: -21px;
       margin-bottom: 35px;
@@ -231,7 +238,6 @@
 
   @media screen and (max-width: 370px) {
     &_nambafood-logo {
-      width: 270px;
       margin-bottom: 25px;
     }
   }
