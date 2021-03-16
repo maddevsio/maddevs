@@ -3,7 +3,7 @@
     <CaseHeader logo="nambafood" videoName="main.ef19480.mp4">
       <h1 class="case_header-title" slot="title">Namba Food<br> top delivery service</h1>
       <p class="case_header-description" slot="description">
-        FoodTech Case Study. How to make a delivery app from scratch? <br> Read Namba Food’s story of developing a custom software top delivery service in Central Asia.
+        How to make a delivery app from scratch? <br> Read Namba Food’s story of developing a custom software top delivery service <br /> in Central Asia.
       </p>
     </CaseHeader>
     <section class="case_body" ref="caseBody">

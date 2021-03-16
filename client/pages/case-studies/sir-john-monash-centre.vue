@@ -3,7 +3,7 @@
     <CaseHeader logo="sjmc" videoName="sjmc/sjmc-main-video.b35a387.mp4">
       <h1 class="case_header-title" slot="title">Sir John Monash <br /> Centre</h1>
       <p class="case_header-description" slot="description">
-        BYOD Case Study. Read how Mad Devs enhanced and developed new features for the <br /> Sir John Monash Centre’s software, mobile applications, and technological debt.
+        Read how Mad Devs enhanced and developed new features for the <br /> Sir John Monash Centre’s software, mobile applications, and technological debt.
       </p>
     </CaseHeader>
     <section class="case_body">
