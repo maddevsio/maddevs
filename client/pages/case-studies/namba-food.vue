@@ -368,7 +368,7 @@
       <section class="container_regular">
         <h2 class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom">Nationwide success and day-to-day improvements</h2>
         <TextParagraph>
-          Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision and understanding of its target audience, we were able to <router-link :to="`/services#software-development`" class="case_link">build a product</router-link> that truly solves this customer’s problems. The year-over-year growth rate is hugely impressive.
+          Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision and understanding of its target audience, we were able to <nuxt-link :to="`/services#software-development`" class="case_link">build a product</nuxt-link> that truly solves this customer’s problems. The year-over-year growth rate is hugely impressive.
         </TextParagraph>
         <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
           As the number of businesses using Namba Food continues to increase, <span class="case_blockquote-box_text-modificator">the service's yearly growth rate is about 50% for both revenue and deliveries made.</span>

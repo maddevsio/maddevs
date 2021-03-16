@@ -48,7 +48,7 @@
       <section class="container_regular">
         <h3 class="case_title_h3 m-12_bottom">Minimum viable product MVP</h3>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
-          Before investing a considerable amount of money in building software, hiring personnel and acquiring minibuses, GoDee wanted to <router-link :to="`/services#software-development`" class="case_link">develop an MVP</router-link> to understand the market fit potential.
+          Before investing a considerable amount of money in building software, hiring personnel and acquiring minibuses, GoDee wanted to <nuxt-link :to="`/services#software-development`" class="case_link">develop an MVP</nuxt-link> to understand the market fit potential.
         </TextParagraph>
         <TextParagraph class="m-24_bottom">
           Although services such as GoDee exist in other parts of the world, simulating these programs in Ho Chi Minh City was pointless because the city’s commuting culture is quite different. That’s why user feedback was crucial to its improvement and key to its current rapid growth.

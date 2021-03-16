@@ -32,6 +32,26 @@
   <priority>0.90</priority>
 </url>
 <url>
+  <loc>https://maddevs.io/gdpr/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.07</priority>
+</url>
+<url>
+  <loc>	https://maddevs.io/nda/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.07</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/privacy/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.07</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/faq/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.07</priority>
+</url>
+<url>
   <loc>https://gps.maddevs.io/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.90</priority>
@@ -47,20 +67,94 @@
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://maddevs.co/case-studies/namba-food/</loc>
+  <loc>https://maddevs.io/case-studies/namba-food/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.90</priority>
 </url>
-
 <url>
-  <loc>https://maddevs.co/case-studies/sir-john-monash-centre/</loc>
+  <loc>https://maddevs.io/case-studies/sir-john-monash-centre/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
-  <priority>0.91</priority>
+  <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://maddevs.co/case-studies/godee/</loc>
+  <loc>https://maddevs.io/case-studies/godee/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
-  <priority>0.92</priority>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/customer-university/custom-software-development-pricing-strategies/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/customer-university/pricing-models-in-software-development/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/customer-university/differences-between-software-engineers-seniority-levels/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/customer-university/offshore-contractor-regions/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/customer-university/cooperation-models-with-software-companies/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/customer-university/why-it-projects-are-late-and-exceed-budgets/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/customer-university/red-flags-in-software-development/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/customer-university/software-maintenance-costs/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/customer-university/introduction-to-technical-debt/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/customer-university/mad-devs-software-price-estimation-principles/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/blog/fintech-and-software-development-opportunities-in-it/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/blog/how-to-deploy-a-project-on-heroku/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/blog/agile-team-structure/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/blog/how-to-set-up-automated-integration-tests-in-a-vue-application/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/blog/cold-app-start-on-android/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://maddevs.io/blog/log-collecting-with-elk-and-rsyslog/</loc>
@@ -98,7 +192,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://maddevs.co/blog/devops-engineers-at-mad-devs/</loc>
+  <loc>https://maddevs.io/blog/devops-engineers-at-mad-devs/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -208,11 +302,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/blog/how-to-automate-jira-mad-devs-experience/</loc>
-  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://maddevs.io/blog/running-postgres-as-a-build-requirement-in-teamcity-build/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.80</priority>
@@ -234,6 +323,11 @@
 </url>
 <url>
   <loc>https://maddevs.io/blog/introduction-to-prototyping-with-easyeda-part-ii-simple-schematic/</loc>
+  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://maddevs.io/blog/introduction-to-pcb-prototyping-with-easyeda-part-i-project-creation/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -278,7 +372,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://maddevs.io/blog/web-app-deploy-to-glitch-com/</loc>
+  <loc>https://maddevs.io/blog/web-app-deploy-to-glitch/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -469,11 +563,6 @@
 </url>
 <url>
   <loc>https://maddevs.io/blog/how-we-built-a-backend-system-for-uber-like-map-with-animated-cars-on-it-using-go/</loc>
-  <lastmod>2021-02-10T14:25:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://maddevs.io/blog/how-to-set-up-automated-integration-tests-in-a-vue-application/</loc>
   <lastmod>2021-02-10T14:25:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
