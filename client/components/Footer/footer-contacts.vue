@@ -88,7 +88,7 @@ export default {
     footerSocialNetworkList
   },
   data: () => ({
-    mailLink: process.env.emailContact
+    mailLink: `mailto:${process.env.emailContact}`
   })
 };
 </script>
