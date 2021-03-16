@@ -7,8 +7,8 @@
 
   &_sjmc-logo {
     @include sjmc-header;
-    width: 278.36px;
-    height: 124.33px;
+    width: 292px;
+    height: 131.33px;
   }
 
   &_column-container {
@@ -88,6 +88,14 @@
     display: none;
   }
 
+  @media screen and (max-width: 1170px) {
+    &_sjmc-logo {
+      width: 646px;
+      background-position: left;
+      margin-bottom: 38px;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     &_sjmc-phone-video-section {
       padding: 50px 0;
@@ -100,6 +108,14 @@
     }
   }
 
+  @media screen and (max-width: 655px) {
+    &_sjmc-logo {
+      width: 327px;
+      height: 65px;
+      margin-bottom: 35px;
+    }
+  }
+
   @media screen and (max-width: 520px) {
     &_mobile-screen-break {
       display: block;
@@ -109,6 +125,13 @@
   @media screen and (max-width: 420px) {
     &_mobile-break {
       display: block;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    &_sjmc-logo {
+      width: 270px;
+      margin-bottom: 25px;
     }
   }
 }
