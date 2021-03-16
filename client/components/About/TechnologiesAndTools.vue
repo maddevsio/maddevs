@@ -30,8 +30,10 @@
             :class="(`${item.technology}-${item.value} ${item.technology}`)"
           >
             <img
-              :data-src="require(`@/assets/img/Home/technologies/${item.value}.svg`)"
-              class="svg_lazy"
+              width="26"
+              height="26"
+              :data-src="require(`@/assets/img/Home/svg/technologies/${item.value}.svg`)"
+              class="img_lazy"
               :alt="item.title"
             >
             <span>{{item.title}}</span>
@@ -446,13 +448,13 @@ export default {
       } else {
         this.activeLegend = e;
       }
-      this.$nextTick(() => this.refreshSvg());
+      this.$nextTick(() => this.refreshImg());
     },
-    refreshSvg() {
-      const lazySvg = [].slice.call(document.querySelectorAll('img.svg_lazy'));
+    refreshImg() {
+      const lazySvg = [].slice.call(document.querySelectorAll('img.img_lazy'));
       lazySvg.forEach(lazySvg => {
         lazySvg.src = lazySvg.dataset.src;
-        lazySvg.classList.remove('svg_lazy');
+        lazySvg.classList.remove('img_lazy');
       });
     }
   }

@@ -126,29 +126,23 @@ NODE_AMOCRM_LOGIN=***
 NODE_AMOCRM_PASSWORD=***
 NODE_AMOCRM_INTEGRATION_ID=The id of the button that opens the popup with the tokens
 NODE_AMOCRM_REDIRECT_URI=We also specify it in the amoCRM settings
+NODE_EMAIL_HR=***
+NODE_EMAIL_CONTACT=***
 ```
 
 2. Run command for start server
 
 ```bash
-node server.js
+npm start
 ```
 
-If all goes well, the result will be
-
-```bash
-> node server.js
-Opening the browser......
-Server working on port: 5000
-Navigating to https://denisoed.amocrm.ru...
-Tokens ready!
-```
-
-3. The server will be up and available at http://localhost:5000
+3. The server will be up and available at http://localhost:3000
 
 4. Run a test request to create a new lead in postman
 
-* POST http://localhost:5000/amocrm/leads
+5. The middleware logic is connected in the server /middleware/rest.js file
+
+* POST http://localhost:3000/amocrm/leads
 * Body
 ```
 [

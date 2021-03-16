@@ -20,7 +20,7 @@ import QuickProjectStart from '@/components/About/QuickProjectStart';
 import CustomerTestimonials from '@/components/About/CustomerTestimonials';
 import CustomerRates from '@/components/About/CustomerRates';
 import MeetOurExperts from '@/components/About/MeetOurExperts';
-import initSvgLazyHelper from '@/helpers/initSvgLazy';
+import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   name: 'About',
@@ -69,8 +69,7 @@ export default {
     };
   },
   mounted() {
-    const lazySvg = [].slice.call(document.querySelectorAll('img.svg_lazy'));
-    initSvgLazyHelper(lazySvg);
+    initImgLazyHelper();
   }
 };
 </script>

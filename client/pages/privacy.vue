@@ -6,6 +6,7 @@
 
 <script>
 import Privacy from '@/components/Privacy';
+import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   name: 'main-privacy',
@@ -47,6 +48,9 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    initImgLazyHelper();
   }
 };
 </script>

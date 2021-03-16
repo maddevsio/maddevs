@@ -71,7 +71,7 @@
         </div>
       </section>
       <section class="container_full case_before-after-gif-wrapper background-color-silver m-48_top media-m-20_top">
-        <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="GoDee 2018 and GoDee now." loading="lazy" width="1000" height="578.47">
+        <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="GoDee Public Transportation App at 2018 and now." loading="lazy" width="1000" height="578.47">
       </section>
       <p class="case_image-description m-12_top m-104_bottom media-m-48_bottom">GoDee 2018 VS. GoDee {{ currentYear }}</p>
       <section class="container_regular" ref="cardsRootElem">
@@ -135,7 +135,7 @@
                   fileExtension="png"
                   :mobileImage="false"
                   mobileImageName=""
-                  alt="GoDee: bus transit app for passengers"
+                  alt="GoDee: Bus Transit App for Passengers."
                   :width="334"
                   :height="211"
                 />
@@ -150,7 +150,7 @@
                   fileExtension="png"
                   :mobileImage="false"
                   mobileImageName=""
-                  alt="GoDee: transportation app for drivers"
+                  alt="GoDee: Bus Drivers App."
                   :width="313"
                   :height="280"
                 />
@@ -166,7 +166,7 @@
                 fileExtension="png"
                 :mobileImage="true"
                 mobileImageName="godee-admin-panel-card-mobile"
-                alt="GoDee: bus app management system"
+                alt="GoDee: Bus App Management System."
                 :width="695"
                 :height="219"
               />
@@ -199,7 +199,7 @@
             pictureFolder="common"
             fileName="safari-top-bar-white"
             fileExtension="jpg"
-            alt="Safari Browser Top Bar White"
+            alt="GoDee: Safari Browser Top Bar White."
             :boxShadow="false"
             :lazyLoading="false"
             :borderRadius="false"
@@ -211,7 +211,7 @@
             pictureFolder="godee"
             fileName="godee-admin-panel"
             fileExtension="jpg"
-            alt="Bus transit app admin panel"
+            alt="GoDee: Bus Transit App Admin Panel."
             :boxShadow="false"
             :lazyLoading="false"
             :borderRadius="false"
@@ -226,7 +226,7 @@
               pictureFolder="common"
               fileName="safari-top-bar-white"
               fileExtension="jpg"
-              alt="Safari Browser Top Bar White"
+              alt="GoDee: Safari Browser Top Bar White."
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
@@ -241,7 +241,7 @@
               pictureFolder="common"
               fileName="safari-top-bar-white"
               fileExtension="jpg"
-              alt="Safari Browser Top Bar White"
+              alt="GoDee: Safari Browser Top Bar White."
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
@@ -276,7 +276,7 @@
               pictureFolder="common"
               fileName="safari-top-bar-white"
               fileExtension="jpg"
-              alt="Safari Browser Top Bar White"
+              alt="GoDee: Safari Browser Top Bar White."
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
@@ -291,7 +291,7 @@
               pictureFolder="common"
               fileName="safari-top-bar-white"
               fileExtension="jpg"
-              alt="Safari Browser Top Bar White"
+              alt="GoDee: Safari Browser Top Bar White."
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
@@ -346,7 +346,7 @@
               pictureFolder="common"
               fileName="safari-top-bar-white"
               fileExtension="jpg"
-              alt="Safari Browser Top Bar White"
+              alt="GoDee: Safari Browser Top Bar White."
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
@@ -361,7 +361,7 @@
               pictureFolder="common"
               fileName="safari-top-bar-white"
               fileExtension="jpg"
-              alt="Safari Browser Top Bar White"
+              alt="GoDee: Safari Browser Top Bar White."
               :boxShadow="false"
               :lazyLoading="true"
               :borderRadius="false"
@@ -411,7 +411,7 @@
               pictureFolder="godee"
               fileName="real-time-eta-phone"
               fileExtension="png"
-              alt="Transit app in Vietnam"
+              alt="GoDee: Bus Transit App in Vietnam."
               :boxShadow="false"
               :lazyLoading="true"
               :width="358.96"
@@ -424,7 +424,7 @@
       <section class="container_full case_infrastructure-scheme-wrapper background-color-silver m-48_bottom media-m-24_bottom">
         <section class="container_middle">
           <h2 class="case_title_h2 m-24_bottom case_text-align-center">Infrastructure scheme</h2>
-          <img src="../../assets/img/Cases/godee/gif/infrastructure-scheme.gif" class="case_gif case_infrastructure-scheme-gif" alt="GoDee Infrastructure Scheme" loading="lazy" width="645" height="774.92">
+          <img src="../../assets/img/Cases/godee/gif/infrastructure-scheme.gif" class="case_gif case_infrastructure-scheme-gif" alt="GoDee Mobile App Infrastructure Scheme." loading="lazy" width="645" height="774.92">
         </section>
       </section>
       <section class="container_regular">
@@ -461,7 +461,7 @@
           pictureFolder="godee"
           fileName="datadog"
           fileExtension="jpg"
-          alt="Monitoring Configuration for transportation app"
+          alt="GoDee: Monitoring Configuration for Transportation App."
           :boxShadow="true"
           :lazyLoading="true"
           :width="1028"
@@ -549,6 +549,7 @@ import CardGoDeeImpact from '@/components/Cases/cards-content/CardGoDeeImpact';
 import CardGoDeePrimsAlgorithm from '@/components/Cases/cards-content/CardGoDeePrimsAlgorithm';
 import FooterMain from '@/components/Footer';
 import HeaderMain from '@/components/Header';
+import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   components: {
@@ -584,7 +585,7 @@ export default {
   data() {
     return {
       title: 'Mad Devs Case Study: GoDee - Convenient Shuttle Bus Service',
-      description: 'GoDee is a transportation app and management panel to commute in Ho Chi Minh City, Vietnam. Users can find routes, select the time, book seats and pay for the ride online.',
+      description: 'Case Study Shuttle Bus Service. Read GoDee’s story on building a public transportation app for passengers and drivers and a monitoring system for admins in Vietnam.',
       ogUrl: 'https://maddevs.io/case-studies/godee/',
       team: [
         {
@@ -603,7 +604,7 @@ export default {
         },
         {
           name: 'Rustom Kulbatyrov',
-          position: 'Senior Android <br class="case_position-mobile-break"> Developer',
+          position: 'Android Developer',
           fileName: 'kulbatyrov',
           fileExtension: 'png',
           alt: 'Rustom Kulbatyrov'
@@ -617,7 +618,7 @@ export default {
         },
         {
           name: 'Belek Abylov',
-          position: 'Senior Backend <br class="case_position-mobile-break"> Developer',
+          position: 'Backend Developer',
           fileName: 'belek-abylov',
           fileExtension: 'png',
           alt: 'Belek Abylov'
@@ -631,14 +632,14 @@ export default {
         },
         {
           name: 'Gennady Karev',
-          position: 'Senior Backend <br class="case_position-mobile-break"> Developer',
+          position: 'Backend Developer',
           fileName: 'gennady-karev',
           fileExtension: 'png',
           alt: 'Gennady Karev'
         },
         {
           name: 'Aleksandr Krivov',
-          position: 'Senior UX/UI Specialist',
+          position: 'UX/UI Specialist',
           fileName: 'aleksandr-krivov',
           fileExtension: 'png',
           alt: ''
@@ -666,7 +667,7 @@ export default {
         },
         {
           name: 'Pavel Pushkarev',
-          position: 'Senior iOS Developer',
+          position: 'iOS Developer',
           fileName: 'pushkarev',
           fileExtension: 'png',
           alt: 'Pavel Pushkarev'
@@ -852,6 +853,7 @@ export default {
       let observer = new IntersectionObserver(callback, options);
       observer.observe(document.getElementById(video));
     });
+    initImgLazyHelper();
   },
   methods: {
     handleScrollDown() {
@@ -911,7 +913,7 @@ export default {
       script: [
         {
           type: 'application/ld+json',
-          innerHTML: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: GoDee - Convenient Shuttle Bus Service", "description": "GoDee is a reliable way to commute in Ho Chi Minh City, Vietnam. Its shuttle buses take express routes that link the city’s major districts and popular destinations. GoDee helps riders save time, money and the planet due to its lower ecological impact. The app-based system allows users to find a route, select the time, book a seat and pay for the ride online.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group Limited"}}'
+          innerHTML: '{"@context": "https://schema.org", "@type": "WebPage", "breadcrumb": "Projects > Case Studies > Transportation Solutions", "name": "Mad Devs Case Study: GoDee - Convenient Shuttle Bus Service", "description": "Case Study Shuttle Bus Service. Read GoDee’s story on building a public transportation app for passengers and drivers and a monitoring system for admins in Vietnam.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group LTD"}}'
         }
       ]
     };

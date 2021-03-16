@@ -164,7 +164,7 @@ export default {
       positionValue: null,
       positionTitle: null,
       email: null,
-      emailTo: 'hr@maddevs.io',
+      emailTo: process.env.emailHR,
       selectedFile: null,
       linkedinProfile: null,
       radioData: [

@@ -12,6 +12,7 @@ import ProjectsBanner from '@/components/Banner/ProjectsBanner';
 import CaseStudies from '@/components/About/CaseStudies';
 import Customers from '@/components/Projects/Customers';
 import OpenSource from '@/components/Projects/OpenSource';
+import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   name: 'main-projects',
@@ -53,6 +54,9 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    initImgLazyHelper();
   }
 };
 </script>

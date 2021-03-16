@@ -1,5 +1,5 @@
 <template>
-  <div class="form technology-stack"> 
+  <div class="form technology-stack">
     <div class="fields-list">
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name required">Full Name</p>
@@ -102,7 +102,7 @@ export default {
     modalName: 'get-expert-advice',
     fullName: null,
     email: null,
-    emailTo: 'team@maddevs.io',
+    emailTo: process.env.emailContact,
     phoneNumber: null,
     questionsOnItConsulting: null,
     agreeWithPrivacyPolicy: false,
@@ -114,7 +114,7 @@ export default {
     modalTitle: 'Mad Devs Website Forms'
   }),
   mounted() {
-    this.$nuxt.$on('resetCheckboxesInForm', () => { // Reset checkboxes in form if user close modal 
+    this.$nuxt.$on('resetCheckboxesInForm', () => { // Reset checkboxes in form if user close modal
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
     });

@@ -8,6 +8,7 @@
 <script>
 import CareersBanner from '@/components/Banner/CareersBanner';
 import Careers from '@/components/Careers/CareersForm';
+import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   name: 'main-careers',
@@ -50,6 +51,9 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    initImgLazyHelper();
   }
 };
 </script>

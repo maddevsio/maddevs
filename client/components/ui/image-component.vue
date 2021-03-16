@@ -6,7 +6,7 @@
   <img
     :data-src="[require(`@/assets/img/Home/jpg/experts/${fileName}.jpg`)]"
     :data-srcset="[require(`@/assets/img/Home/jpg/experts/${fileNameRetina}.jpg`) + ' 2x']"
-    class="multi-image lazyload"
+    class="multi-image img_lazy"
     :alt="alt"
     :width="width"
     :height="height"

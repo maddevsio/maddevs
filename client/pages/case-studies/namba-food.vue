@@ -37,7 +37,7 @@
         </TextParagraph>
       </section>
       <section class="container_full background-color-silver">
-        <img src="../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif" class="case_gif case_high-level-system-overview-gif" alt="Nambs Food High-level System Overview.">
+        <img src="../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif" class="case_gif case_high-level-system-overview-gif" alt="Namba Food: Website and Mobile App Infrastructure Scheme.">
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 case_text-align-center m-96_top m-24_bottom media-m-48_top media-m-12_bottom">Typical usage scenarios and user roles</h2>
@@ -120,7 +120,7 @@
               pictureFolder="nambafood"
               fileName="couriers-android-app"
               fileExtension="png"
-              alt="Namba Food Android Application for Couriers."
+              alt="Namba Food: Courier App for Android."
               :lazyLoading="false"
             />
           </section>
@@ -142,7 +142,7 @@
           fileName="sjms-analytics"
           fileNameRetina="sjms-analytics@2x"
           fileExtension="jpg"
-          alt="Namba Food Admin Panel on Desktop."
+          alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
           :boxShadow="true"
           :lazyLoading="true"
         />
@@ -195,7 +195,7 @@
           :boxShadow="true"
           sliderDescription=""
           safariTopBarImage="swiper-frame"
-          safariTopBarAlt="Namba Food Admin Panel."
+          safariTopBarAlt="Namba Food: Food and Grocery Delivery Service Website Header."
         />
       </section>
       <section class="container_regular">
@@ -281,7 +281,7 @@
           fileName="grafana"
           fileNameRetina="grafana@2x"
           fileExtension="jpg"
-          alt="Grafana — Docker Containers’ Monitoring Service."
+          alt="Namba Food: Software Stability Monitoring with Grafana."
           :boxShadow="true"
           :lazyLoading="true"
         />
@@ -302,7 +302,7 @@
         <h3 class="case_title_h3 m-107_top m-24_bottom media-m-48_top">Website and mobile app infrastructure scheme</h3>
       </section>
       <section class="container_full background-color-silver">
-        <img src="../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif" class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif" alt="Nambs Food High-level System Overview.">
+        <img src="../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif" class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif" alt="Namba Food: Website and Mobile App Infrastructure Scheme.">
       </section>
       <section class="container_regular">
         <TextParagraph class="m-24_top">
@@ -323,7 +323,7 @@
             fileName="pipelines"
             fileNameRetina="pipelines@2x"
             fileExtension="jpg"
-            alt="The Pipeline for the Namba Food System."
+            alt="Namba Food: Automated Deployment Stage Scheme."
             :lazyLoading="true"
           />
         </section>
@@ -335,7 +335,7 @@
             fileName="pipelines-mobile"
             fileNameRetina="pipelines-mobile@2x"
             fileExtension="jpg"
-            alt="The Pipeline for the Namba Food System."
+            alt="Namba Food: Automated Deployment Stage Scheme."
             :lazyLoading="true"
           />
         </section>
@@ -391,7 +391,7 @@
           authorPosition="Co-Founder, Namba Food"
           fileName="aziza-anarbekova"
           fileExtension="png"
-          alt="Aziza Anarbekova Namba Food Co-Founder."
+          alt="Aziza Anarbekova Namba Food Delivery Service Co-Founder."
           pictureFolder="nambafood"
         >
           “Thanks to our close collaboration, we saw a notable increase in the return on investment, as the number of orders grew by 53% YoY. The Mad Devs Team always surpasses expectations and stays open to suggestions. The team's competency and dedication enabled the prolonged partnership between our companies.”
@@ -430,6 +430,7 @@ import CardRestaurantTalisman from '@/components/Cases/cards-content/CardRestaur
 import CardNationwideNumbers from '@/components/Cases/cards-content/CardNationwideNumbers';
 import CardNinjaSushi from '@/components/Cases/cards-content/CardNinjaSushi';
 import Swiper from '@/components/Cases/Swiper';
+import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   components: {
@@ -461,8 +462,8 @@ export default {
   name: 'NambaFood',
   data() {
     return {
-      title: 'Mad Devs Case Study: Namba Food Top Delivery Service in Central Asia',
-      description: 'Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing orders, and business owners work as a seamless system, ensuring a smooth delivery process for all types of goods.',
+      title: 'Mad Devs Case Study: Namba Food Top Delivery Service',
+      description: 'FoodTech Case Study. How to make a delivery app from scratch? Read Namba Food’s story of developing a custom software top delivery service in Central Asia.',
       ogUrl: 'https://maddevs.io/case-studies/namba-food/',
       team: [
         {
@@ -634,7 +635,7 @@ export default {
           },
           fileName: 'apple-iphone-xr-silver',
           fileExtension: 'png',
-          alt: 'Namba Food Mobile Application Main Page on Iphone for Users.'
+          alt: 'Namba Food: Food and Grocery Delivery App for Iphone.'
         },
         {
           title: 'Application for <br> deliverymen',
@@ -645,7 +646,7 @@ export default {
           },
           fileName: 'samsung-galaxy-s20-cosmic-gray',
           fileExtension: 'png',
-          alt: 'Namba Food Mobile Application Main Page on Android for Deliverymen.'
+          alt: 'Namba Food: Courier App for Android.'
         },
         {
           title: 'Unified control system for operators',
@@ -656,7 +657,7 @@ export default {
           },
           fileName: 'system-for-call-center',
           fileExtension: 'png',
-          alt: 'Namba Food Unified Control System for Operators on Desktop.'
+          alt: 'Namba Food: Admin Panel Which Help to Control and Track Food and Grocery Delivery.'
         },
         {
           title: 'Control panel for <br> managers',
@@ -667,7 +668,7 @@ export default {
           },
           fileName: 'sjms-analytics-mini',
           fileExtension: 'png',
-          alt: 'Namba Food Control Panel for Managers on Desktop.'
+          alt: 'Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery.'
         }
       ],
       swiperAdminPanel: [
@@ -675,7 +676,7 @@ export default {
           fileName: 'admin',
           pictureFolder: 'nambafood',
           fileExtension: 'jpg',
-          alt: 'Namba Food Delivery Control Admin Panel.'
+          alt: 'Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery.'
         },
         {
           fileName: 'dashboard',
@@ -712,7 +713,7 @@ export default {
       script: [
         {
           type: 'application/ld+json',
-          innerHTML: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: Namba Food Top Delivery Service in Central Asia", "description": "Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing orders, and business owners work as a seamless system, ensuring a smooth delivery process for all types of goods.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group Limited"}}'
+          innerHTML: '{"@context": "https://schema.org", "@type": "WebPage", "breadcrumb": "Projects > Case Studies > FoodTech Solutions", "name": "Mad Devs Case Study: Namba Food Top Delivery Service", "description": "FoodTech Case Study. How to make a delivery app from scratch? Read Namba Food’s story of developing a custom software top delivery service in Central Asia.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group LTD"}}'
         }
       ]
     };
@@ -751,7 +752,9 @@ export default {
     } else {
       this.isIphone = false;
     }
+    initImgLazyHelper();
   }
+
 };
 </script>
 

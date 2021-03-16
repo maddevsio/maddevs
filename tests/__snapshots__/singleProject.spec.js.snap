@@ -3,7 +3,7 @@
 exports[`CaseStudies component renders correctly 1`] = `
 <a
   class="single-project"
-  href="https://blog.maddevs.io/building-new-public-transport-habits-in-vietnam-with-godee-f7c4da25efc5"
+  href="/case-studies/godee/"
   style="background: rgb(255, 106, 1);"
   target="_self"
 >
@@ -13,15 +13,19 @@ exports[`CaseStudies component renders correctly 1`] = `
     <div
       class="single-project__content-wrap"
     >
-      <span
-        class="single-project__logo-bg single-project__logo-bg--godeeColored"
+      <img
+        alt="GoDee Bus Transportation Services Logo."
+        class="img_lazy single-project__logo"
+        data-src="[object Object]"
+        height="41"
+        width="121"
       />
        
       <h3
         class="single-project__sub-title"
       >
         
-        Mass transportation company
+        Convenient shuttle bus service
       
       </h3>
        
@@ -29,7 +33,7 @@ exports[`CaseStudies component renders correctly 1`] = `
         class="single-project__paragraph paragraph"
       >
         
-        Mad Devs helped to automate bus transportation in Vietnam by creating feature-rich GoDee applications for both commuters and bus drivers.
+        Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.
       
       </p>
        
@@ -78,7 +82,8 @@ exports[`CaseStudies component renders correctly 1`] = `
         />
          
         <img
-          class="lazyload"
+          alt="GoDee Bus Transportation Services Logo."
+          class="img_lazy"
           data-src="[object Object]"
           data-srcset="[object Object] 2x"
           height="294"
