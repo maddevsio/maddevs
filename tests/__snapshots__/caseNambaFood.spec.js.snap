@@ -40,21 +40,9 @@ exports[`Namba food renders correctly 1`] = `
         >
           Namba Food
           <br />
-           top delivery service
+           Top Delivery Service
         </h1>
-         
-        <p
-          class="case_header-description"
-        >
           
-      How to make a delivery app from scratch? 
-          <br />
-           Read Namba Food’s story of developing a custom software top delivery service 
-          <br />
-           in Central Asia.
-    
-        </p>
-         
       </div>
        
       <div

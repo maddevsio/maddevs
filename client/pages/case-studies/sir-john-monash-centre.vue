@@ -1,7 +1,7 @@
 <template>
   <main class="main case">
     <CaseHeader logo="sjmc" videoName="sjmc/sjmc-main-video.b35a387.mp4">
-      <h1 class="case_header-title" slot="title">The maintenance of memory: <br /> Sir John Monash Centre</h1>
+      <h1 class="case_header-title" slot="title">The maintenance <br /> of memory: <br /> Sir John Monash Centre</h1>
       <button class="case_play-button" type="button" @click="openFullscreen()" slot="actions">
         <div class="case_play-icon"></div>
         View video about SJMC

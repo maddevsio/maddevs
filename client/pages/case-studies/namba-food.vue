@@ -1,10 +1,7 @@
 <template>
   <main class="main case">
     <CaseHeader logo="nambafood" videoName="main.ef19480.mp4">
-      <h1 class="case_header-title" slot="title">Namba Food<br> top delivery service</h1>
-      <p class="case_header-description" slot="description">
-        How to make a delivery app from scratch? <br> Read Namba Food’s story of developing a custom software top delivery service <br /> in Central Asia.
-      </p>
+      <h1 class="case_header-title" slot="title">Namba Food<br> Top Delivery Service</h1>
     </CaseHeader>
     <section class="case_body" ref="caseBody">
       <div class="case_animation_block" id="case-first-section"></div>

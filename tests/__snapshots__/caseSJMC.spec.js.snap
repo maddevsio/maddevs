@@ -38,7 +38,9 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
         <h1
           class="case_header-title"
         >
-          The maintenance of memory: 
+          The maintenance 
+          <br />
+           of memory: 
           <br />
            Sir John Monash Centre
         </h1>
