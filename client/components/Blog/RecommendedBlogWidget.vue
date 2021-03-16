@@ -96,7 +96,8 @@ export default {
     &__cover-image {
       height: 220px;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
       margin-bottom: 16px;
     }
 
