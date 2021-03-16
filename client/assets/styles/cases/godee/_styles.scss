@@ -8,8 +8,9 @@
   &_godee-logo {
     @include godee-logo;
     width: 292px;
+    min-width: 292px;
     height: 130px;
-    z-index: 1;
+    margin-left: 155px;
   }
 
   &_text-quote-break {
@@ -204,10 +205,16 @@
     }
   }
 
+  @media screen and (max-width: 1250px) {
+    &_godee-logo {
+      margin-left: 80px;
+    }
+  }
+
   @media screen and (max-width: 1170px) {
     &_godee-logo {
-      width: 620px;
       background-position: left;
+      margin-left: 0;
       margin-bottom: 6px;
     }
   }
@@ -261,7 +268,6 @@
 
   @media screen and (max-width: 655px) {
     &_godee-logo {
-      width: 327px;
       height: 65px;
       margin-bottom: 20px;
     }
@@ -281,7 +287,6 @@
 
   @media screen and (max-width: 370px) {
     &_godee-logo {
-      width: 270px;
       margin-bottom: 10px;
     }
 

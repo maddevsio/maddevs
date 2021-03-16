@@ -75,6 +75,7 @@ export default {
   &_header-content {
     max-width: calc(100% - 48px);
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     z-index: 1;
   }
@@ -106,10 +107,19 @@ export default {
   @media screen and (max-width: 1170px) {
     &_header-content {
       flex-direction: column-reverse;
+      align-items: flex-start;
     }
   }
 
   @media screen and (max-width: 655px) {
+    &_header-content {
+      max-width: 327px;
+
+      br {
+        display: none;
+      }
+    }
+
     &_header-title {
       @include title($text-color--white, 35px, -1px);
       line-height: 130%;
@@ -127,6 +137,10 @@ export default {
   }
 
   @media screen and (max-width: 370px) {
+    &_header-content {
+      max-width: 270px;
+    }
+
     &_header-title {
       font-size: 30px;
     }

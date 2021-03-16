@@ -24,38 +24,43 @@ exports[`Namba food renders correctly 1`] = `
     </video>
      
     <div
-      class="case_header-description"
+      class="case_header-content"
     >
       <div
-        class="case_case-study-item"
+        class="case_header-text"
       >
-        Case Study
+        <div
+          class="case_case-study-item"
+        >
+          Case Study
+        </div>
+         
+        <h1
+          class="case_header-title"
+        >
+          Namba Food
+          <br />
+           top delivery service
+        </h1>
+         
+        <p
+          class="case_header-description"
+        >
+          
+      How to make a delivery app from scratch? 
+          <br />
+           Read Namba Food’s story of developing a custom software top delivery service 
+          <br />
+           in Central Asia.
+    
+        </p>
+         
       </div>
        
-      <h1
-        class="case_header-title"
-      >
-        Namba Food
-        <br />
-         top delivery service
-      </h1>
-       
-      <p
-        class="case_header-description"
-      >
-        
-      How to make a delivery app from scratch? 
-        <br />
-         Read Namba Food’s story of developing a custom software top delivery service 
-        <br />
-         in Central Asia.
-    
-      </p>
+      <div
+        class="case_header-logo case_nambafood-logo"
+      />
     </div>
-     
-    <div
-      class="case_header-logo case_nambafood-logo"
-    />
   </section>
    
   <section

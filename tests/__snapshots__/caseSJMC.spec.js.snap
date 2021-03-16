@@ -24,37 +24,69 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
     </video>
      
     <div
-      class="case_header-description"
+      class="case_header-content"
     >
       <div
-        class="case_case-study-item"
+        class="case_header-text"
       >
-        Case Study
+        <div
+          class="case_case-study-item"
+        >
+          Case Study
+        </div>
+         
+        <h1
+          class="case_header-title"
+        >
+          The maintenance of memory: 
+          <br />
+           Sir John Monash Centre
+        </h1>
+          
+        <button
+          class="case_play-button"
+          type="button"
+        >
+          <div
+            class="case_play-icon"
+          />
+          
+      View video about SJMC
+    
+        </button>
       </div>
        
-      <h1
-        class="case_header-title"
-      >
-        Sir John Monash 
-        <br />
-         Centre
-      </h1>
+      <div
+        class="case_header-logo case_sjmc-logo"
+      />
+    </div>
+  </section>
+   
+  <div
+    style="display: none;"
+  >
+    <div
+      class="video-wrapper"
+    >
+      <!---->
        
-      <p
-        class="case_header-description"
+      <video
+        class="main-video"
       >
+        <source
+          src="undefined/sjmc/sjmc-modal-video.00bd869.mp4"
+          type="video/mp4"
+        />
         
-      Read how Mad Devs enhanced and developed new features for the 
-        <br />
-         Sir John Monash Centre’s software, mobile applications, and technological debt.
+      Your browser does not support the video tag.
     
-      </p>
+      </video>
     </div>
      
-    <div
-      class="case_header-logo case_sjmc-logo"
+    <button
+      class="exit"
     />
-  </section>
+  </div>
    
   <section
     class="case_body"
