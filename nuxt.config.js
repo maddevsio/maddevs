@@ -73,8 +73,8 @@ module.exports = {
     height: '3px'
   },
   plugins: [
-    'plugins/vuelidate.js',
-    'plugins/vue-social-sharing.js'
+    '~/plugins/vuelidate.js',
+    '~/plugins/vue-social-sharing.js'
   ],
   generate: {
     async routes() {
