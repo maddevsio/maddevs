@@ -33,7 +33,7 @@ app.use((req, res, next) => {
 });
 
 app.use((req, res, next) => {
-  if (req.url[req.url.length - 1] !== '/' && req.method === 'GET' && req.url !== '/sitemap.xml') {
+  if (req.url[req.url.length - 1] !== '/' && req.method === 'GET') {
     res.redirect(`https://${req.headers.host}${req.url}/`);
   } else {
     next();
@@ -68,6 +68,10 @@ app.get('/ru', (req, res) => {
 
 app.get('/en', (req, res) => {
   res.redirect(301, 'https://maddevs.io/');
+});
+
+app.get('/sitemap.xml', (req, res) => {
+  res.sendFile(process.cwd() + '/sitemap.xml');
 });
 
 app.post('/api/send-email', (req, res) => {
