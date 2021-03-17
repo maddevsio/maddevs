@@ -37,54 +37,6 @@
   }
 }
 
-.custom-scrollbar {
-  .ps__rail-y {
-    width: 8px;
-    background-color: transparent !important;
-    right: 4px !important;
-
-    &::before {
-      content: '';
-      width: 4px;
-      height: 100%;
-      position: absolute;
-      right: 0;
-      top: 0;
-      background-color: $white-02;
-      border-radius: 10px;
-      transition: all .3s ease;
-    }
-
-    .ps__thumb-y {
-      width: 4px !important;
-      right: 0;
-
-      &:active {
-        width: 8px !important;
-      }
-    }
-
-    &:hover,
-    &:active {
-      &::before {
-        content: '';
-        right: 2px;
-      }
-
-      .ps__thumb-y {
-        width: 8px !important;
-      }
-    }
-  }
-}
-
-.modal_scrollbar {
-
-  .ps__rail-y {
-    right: 2px !important;
-  }
-}
-
 .title-md {
   font-size: 40px;
   font-family: 'Poppins-Bold', sans-serif;

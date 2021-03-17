@@ -13,17 +13,24 @@
         </div>
       </div>
     </div>
-    <navigationList/>
+    <navigationList>
+      <navigationItem link="services/#remote-tech-staff" title="Remote Tech Staff"/>
+      <navigationItem link="services/#software-development" title="Software Development"/>
+      <navigationItem link="services/#infrastructure-optimisation" title="Infrastructure Optimization"/>
+      <navigationItem link="services/#it-consulting" title="IT Consulting"/>
+    </navigationList>
   </div>
 </template>
 
 <script>
 import navigationList from '@/components/ui/navigation-list';
+import navigationItem from '@/components/ui/navigation-item';
 
 export default {
   name: 'AboutBanner',
   components: {
-    navigationList
+    navigationList,
+    navigationItem
   }
 };
 </script>

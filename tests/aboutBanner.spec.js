@@ -13,7 +13,7 @@ describe('Form checkboxes', () => {
       }
     };
     wrapper = mount(AboutBanner, {
-      stubs: ['router-link']
+      stubs: ['nuxt-link']
     });
   });
 
