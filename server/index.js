@@ -25,6 +25,9 @@ const apiRouter = require('./routes/api');
 function bootstrap() {
   const app = express();
 
+
+  connect(config.DATABASE_URL, config.mongoConfig);
+
   /**
      * External middlewares
      */
@@ -44,19 +47,11 @@ function bootstrap() {
   app.use(redirectToCorrectBlogUrl);
   app.use(redirectToCustomerUrl);
 
-  
+  // routers
+  app.use(webRouter);
+  app.use('/api', apiRouter);
 
   return app;
 }
 
-async function configureDatabase(app) {
-  await connect(config.DATABASE_URL, config.mongoConfig);
-  // routers
-  app.use(webRouter);
-  app.use('/api', apiRouter);
-}
-
-const app = bootstrap();
-configureDatabase(app);
-
-module.exports = app;
+module.exports = bootstrap();
