@@ -160,8 +160,8 @@ export default {
     },
     setStylesForHeader() {
       const scrollFromTop = this.$nuxt.$route.path.includes('/godee') ? this.caseGoDeeScrollContainer.scrollTop : window.scrollY;
-      this.$refs.overlay.style.opacity = 2 - (this.$refs.overlay.offsetHeight - (scrollFromTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
-      this.headerWhiteLogoText.style.opacity = -1 - (this.$refs.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
+      this.$refs.overlay.style.opacity = 1.6 - (this.$refs.overlay.offsetHeight - (scrollFromTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
+      this.headerWhiteLogoText.style.opacity = - 0.4 - (this.$refs.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
     },
     scrollHandler() {
       if (this.$nuxt.$route.path.includes('/case-studies/')) {

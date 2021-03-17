@@ -125,6 +125,12 @@
     }
   }
 
+  @media screen and (max-width: 1024px) {
+    &_play-button {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     &_sjmc-phone-video-section {
       padding: 50px 0;
