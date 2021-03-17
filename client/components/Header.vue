@@ -150,18 +150,22 @@ export default {
     },
     setWidthForHeader() {
       let scrollBarWidth = this.caseGoDeeScrollContainer.offsetWidth - this.caseGoDeeScrollContainer.clientWidth;
-      if(window.innerWidth >= 991) {
-        this.$refs.header.style.width = `calc(100% - ${scrollBarWidth}px)`;
-        this.$refs.overlay.style.width = `calc(100% - ${scrollBarWidth}px)`;
-      } else {
-        this.$refs.header.style.width = '100%';
-        this.$refs.overlay.style.width = '100%';
+      if (this.$refs.header && this.$refs.overlay) {
+        if(window.innerWidth >= 991) {
+          this.$refs.header.style.width = `calc(100% - ${scrollBarWidth}px)`;
+          this.$refs.overlay.style.width = `calc(100% - ${scrollBarWidth}px)`;
+        } else {
+          this.$refs.header.style.width = '100%';
+          this.$refs.overlay.style.width = '100%';
+        }
       }
     },
     setStylesForHeader() {
       const scrollFromTop = this.$nuxt.$route.path.includes('/godee') ? this.caseGoDeeScrollContainer.scrollTop : window.scrollY;
-      this.$refs.overlay.style.opacity = 1.6 - (this.$refs.overlay.offsetHeight - (scrollFromTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
-      this.headerWhiteLogoText.style.opacity = - 0.4 - (this.$refs.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
+      if (this.$refs.overlay && this.headerWhiteLogoText) {
+        this.$refs.overlay.style.opacity = 1.6 - (this.$refs.overlay.offsetHeight - (scrollFromTop - this.caseHeader.getBoundingClientRect().height) - this.$refs.headerContainer.offsetHeight) / this.$refs.overlay.offsetHeight;
+        this.headerWhiteLogoText.style.opacity = - 0.4 - (this.$refs.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top) / this.$refs.overlay.offsetHeight;
+      }
     },
     scrollHandler() {
       if (this.$nuxt.$route.path.includes('/case-studies/')) {
