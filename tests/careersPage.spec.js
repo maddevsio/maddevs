@@ -20,8 +20,7 @@ describe('Careers page', () => {
       }
     };
     wrapper = mount(CareersPage, {
-      localVue,
-      stubs: ['router-link']
+      localVue
     });
   });
 

@@ -126,9 +126,9 @@ export default {
       const data = [{
         name: this.fullName,
         custom_fields_values: [
-          { field_id: 261281, values: [{ value: this.email }] }, // Email
-          { field_id: 261331, values: [{ value: this.company }] }, // Company
-          { field_id: 261333, values: [{ value: this.phoneNumber }] } // Phone
+          {field_id: 261281, values: [{value: this.email}]}, // Email
+          {field_id: 261331, values: [{value: this.company}]}, // Company
+          {field_id: 261333, values: [{value: this.phoneNumber}]} // Phone
         ]
       }];
       this.$store.dispatch('createNewLead', data);

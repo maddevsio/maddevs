@@ -190,7 +190,7 @@ export default {
 
   /deep/ ul {
     list-style: disc;
-    padding-left: 30px;
+    padding-left: 18px;
   }
 
   /deep/ .inline-code {

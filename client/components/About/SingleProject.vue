@@ -5,12 +5,7 @@
     :style="{ background: project.projectColor }"
     :target="project.targetBlank ? '_blank' : '_self'"
   >
-    <div
-      class="single-project__container"
-      :class="{
-        'single-project__container_white-letters-theme': isWhiteColored
-      }"
-    >
+    <div class="single-project__container" :class="colorTheme">
       <div class="single-project__content-wrap">
         <img
           :width="project.logoWidth"
@@ -26,8 +21,9 @@
           {{ project.projectDescription }}
         </p>
         <ContributionWidget
-          :contributionWidgetColors="project.contributionWidgetColors"
           :projectName="project.projectName"
+          :contribution="project.contribution"
+          :maddevsLogo="project.maddevsLogo"
         />
       </div>
       <div class="single-project__background" :class="backgroundModifierClasses">
@@ -72,10 +68,6 @@ export default {
         type: String,
         required: true
       },
-      contributionWidgetColors: {
-        type: Array,
-        required: true
-      },
       projectBackground: {
         type: String,
         required: true
@@ -99,23 +91,15 @@ export default {
     }
   },
   computed: {
-    isWhiteColored() {
-      if (
-        this.project.projectName === 'teacherly' ||
-        this.project.projectName === 'guardrails'
-      ) {
-        return true;
+    colorTheme() {
+      if (this.project.projectName === 'sjmc' || this.project.projectName === 'guardrails') {
+        return 'single-project_white-letters-theme';
+      } else {
+        return 'single-project_black-letters-theme';
       }
-      return false;
     },
     backgroundModifierClasses() {
-      return {
-        'single-project__background_first-project':
-          this.project.projectName === 'nambafood',
-        'single-project__background_guardrails':
-          this.project.projectName === 'guardrails',
-        'single-project__background_godee': this.project.projectName === 'godee'
-      };
+      return this.project.projectName === 'guardrails' ? 'single-project__background_guardrails' : '';
     }
   }
 };
@@ -154,7 +138,6 @@ export default {
     line-height: 120%;
     letter-spacing: -1px;
     margin-top: 34px;
-    color: #111213;
     margin-bottom: 16px;
 
     @media screen and (max-width: 1158px) {
@@ -234,72 +217,6 @@ export default {
     }
   }
 
-  .contribution-widget {
-    display: flex;
-    align-items: self-start;
-    position: relative;
-    z-index: 1;
-    color: $text-color--grey;
-    margin-top: 26px;
-
-    @media screen and (max-width: 768px) {
-      margin-top: 14px;
-    }
-
-    &__img {
-      &_black {
-        fill: $text-color--black;
-      }
-
-      &_red {
-        fill: $text-color--red;
-      }
-
-      &_gray {
-        fill: $text-color--grey;
-      }
-    }
-
-    &__content {
-      margin-left: 6px;
-
-      &-mobile {
-        display: none;
-      }
-
-      &_black {
-        color: $text-color--black;
-      }
-
-      &_white {
-        color: $text-color--white;
-      }
-
-      &_gray {
-        color: $text-color--grey;
-      }
-    }
-
-    @media only screen and (max-width: 576px) {
-      &__content {
-        display: none;
-
-        &-mobile {
-          display: block;
-          margin-left: 6px;
-
-          &_gray {
-            color: $text-color--black;
-          }
-
-          &_mobile-white {
-            color: $text-color--grey;
-          }
-        }
-      }
-    }
-  }
-
   &__background {
     height: 322px;
     width: 100%;
@@ -341,13 +258,12 @@ export default {
     }
   }
 
-  &__container_white-letters-theme {
-    .single-project {
-      &__sub-title,
-      &__paragraph {
-        color: $text-color--white;
-      }
-    }
+  &_white-letters-theme {
+    color: $text-color--white;
+  }
+
+  &_black-letters-theme {
+    color: $text-color--black-lighter;
   }
 }
 </style>
