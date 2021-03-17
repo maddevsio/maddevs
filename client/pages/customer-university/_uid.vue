@@ -46,7 +46,8 @@ export default {
         {
           type: 'application/ld+json',
           innerHTML: this.jsonLd
-        }
+        },
+        {src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en'}
       ]
     };
   },

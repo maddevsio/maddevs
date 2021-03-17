@@ -61,8 +61,7 @@ module.exports = {
             });
           }
         `
-      },
-      {src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en'}
+      }
     ]
   },
   /*
