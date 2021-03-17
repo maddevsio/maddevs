@@ -26,11 +26,6 @@ function bootstrap() {
   const app = express();
 
   /**
-   * MongoDB connection
-   */
-  connect(config.DATABASE_URL, config.mongoConfig);
-
-  /**
      * External middlewares
      */
   app.use(cors());
@@ -49,11 +44,19 @@ function bootstrap() {
   app.use(redirectToCorrectBlogUrl);
   app.use(redirectToCustomerUrl);
 
-  // routers
-  app.use(webRouter);
-  app.use('/api', apiRouter);
+  
 
   return app;
 }
 
-module.exports = bootstrap();
+async function configureDatabase(app) {
+  await connect(config.DATABASE_URL, config.mongoConfig);
+  // routers
+  app.use(webRouter);
+  app.use('/api', apiRouter);
+}
+
+const app = bootstrap();
+configureDatabase(app);
+
+module.exports = app;
