@@ -24,11 +24,11 @@ const apiRouter = require('./routes/api');
 
 function bootstrap() {
   const app = express();
-  
+
   /**
    * MongoDB connection
    */
-  connect(config.DATABASE_URL);
+  connect(config.DATABASE_URL, config.mongoConfig);
 
   /**
      * External middlewares
