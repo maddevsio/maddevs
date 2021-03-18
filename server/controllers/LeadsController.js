@@ -1,6 +1,6 @@
 // services
 const { getToken, tokensTypes } = require('../services/TokenService');
-const { refreshCrmToken, storeNewLead } = require('../services/LeadsService');
+const { refreshCrmToken, createNewLead } = require('../services/LeadsService');
 
 async function createLead(req, res) {
   try {
@@ -12,7 +12,7 @@ async function createLead(req, res) {
     await refreshCrmToken();
     
     const token = await getToken(tokensTypes.AMOCRM);
-    const success = await storeNewLead(req.body.variables, token);
+    const success = await createNewLead(req.body, token);
 
     return res.status(200).json({ success });
   } catch(error) {
