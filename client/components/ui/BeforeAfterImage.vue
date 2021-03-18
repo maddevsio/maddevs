@@ -86,7 +86,7 @@ export default {
         this.$refs.beforeImage.style.width = '50%';
         this.$refs.trackLine.style.left = '50%';
         this.$refs.trackLine.style.opacity = '1';
-      }, 3500);
+      }, 5000);
     }
   }
 };
