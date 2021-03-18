@@ -39,10 +39,18 @@ exports[`Namba food renders correctly 1`] = `
           class="case_header-title"
         >
           Namba Food
-          <br />
-           Top Delivery Service
         </h1>
+         
+        <p
+          class="case_header-description"
+        >
           
+      Mad Devs created the Namba Food delivery service from scratch. The solution 
+          <br />
+           orchestrates feature-rich apps for couriers, end-users, and business owners.
+    
+        </p>
+         
       </div>
        
       <div
