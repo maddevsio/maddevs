@@ -72,7 +72,6 @@ exports[`Contact me modal renders correctly 1`] = `
        
       <input
         class="modal-entry-field entry-field"
-        onchange="function () { [native code] }"
         placeholder="+1 23X XXX-XXXX"
         type="text"
       />
