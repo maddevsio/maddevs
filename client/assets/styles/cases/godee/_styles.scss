@@ -1,4 +1,18 @@
 .case {
+  &_header {
+    &:before {
+      background-image: url("../../assets/img/Cases/godee/jpg/godee-case-preview.jpg");
+    }
+  }
+
+  &_godee-logo {
+    @include godee-logo;
+    width: 292px;
+    min-width: 292px;
+    height: 130px;
+    margin-left: 155px;
+  }
+
   &_text-quote-break {
     display: block;
   }
@@ -17,24 +31,7 @@
   &_issues-godee-card {
     margin-bottom: 20px;
   }
-
-  &_header {
-    &:before {
-      background-image: url("../../assets/img/Cases/godee/jpg/godee-case-preview.jpg");
-    }
-  }
-
-  &_header-title {
-    margin-right: 155px;
-  }
-
-  &_godee-logo {
-    @include godee-logo;
-    width: 292px;
-    height: 130px;
-    z-index: 1;
-  }
-
+  
   &_infrastructure-scheme-wrapper {
     padding-top: 92px;
     padding-bottom: 60px;
@@ -209,18 +206,16 @@
   }
 
   @media screen and (max-width: 1250px) {
-    &_header-title {
-      margin-right: 80px;
+    &_godee-logo {
+      margin-left: 80px;
     }
   }
 
   @media screen and (max-width: 1170px) {
-    &_header-title {
-      margin-right: 0;
-    }
-
     &_godee-logo {
-      width: 619px;
+      margin-left: 0;
+      min-width: auto;
+      width: 100%;
       background-position: left;
       margin-bottom: 6px;
     }
@@ -275,17 +270,8 @@
 
   @media screen and (max-width: 655px) {
     &_godee-logo {
-      width: 327px;
       height: 65px;
       margin-bottom: 20px;
-    }
-
-    &_header-description {
-      max-width: 327px;
-
-      br {
-        display: none;
-      }
     }
   }
 
@@ -302,12 +288,7 @@
   }
 
   @media screen and (max-width: 370px) {
-    &_header-description {
-      max-width: 270px;
-    }
-
     &_godee-logo {
-      width: 270px;
       margin-bottom: 10px;
     }
 
