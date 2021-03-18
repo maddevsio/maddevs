@@ -1,20 +1,23 @@
 <template>
   <div class="comparsion-container" id="comparsion-container">
-    <div
-      class="comparsion-image_before"
-      id="comparsion-before"
-      ref="beforeImage"
-      :style="`background-image: url(${require(`@/assets/img/${beforeImageSrc}`)});`"
-    ></div>
-    <img
-      loading="lazy"
-      class="comparsion-image_after"
-      id="comparsion-after"
-      :src="require(`@/assets/img/${afterImageSrc}`)"
-      :alt="altText"
-      :width="baseWidth"
-      :height="baseHeight"
-    />
+    <div class="comparsion-track-line" id="comparsion-line" ref="trackLine"></div>
+    <div class="comparsion-view" id="comparsion-view">
+      <div
+        class="comparsion-image comparsion-image_before"
+        id="comparsion-before"
+        ref="beforeImage"
+        :style="`background-image: url(${require(`@/assets/img/${beforeImageSrc}`)});`"
+      ></div>
+      <img
+        loading="lazy"
+        class="comparsion-image comparsion-image_after"
+        id="comparsion-after"
+        :src="require(`@/assets/img/${afterImageSrc}`)"
+        :alt="altText"
+        :width="baseWidth"
+        :height="baseHeight"
+      />
+    </div>
   </div>
 </template>
 
@@ -46,14 +49,17 @@ export default {
   },
   data() {
     return {
-      imageContainer: null,
+      trackContainer: null,
+      trackLine: null,
       beforeImage: null,
       afterImage: null
     };
   },
   methods: {
     getDomElements() {
-      this.imageContainer = document.getElementById('comparsion-container');
+      this.trackContainer = document.getElementById('comparsion-container');
+      this.trackLine = document.getElementById('comparsion-line');
+      this.trackView = document.getElementById('comparsion-view');
       this.beforeImage = document.getElementById('comparsion-before');
       this.afterImage = document.getElementById('comparsion-after');
     },
@@ -61,29 +67,43 @@ export default {
       e.preventDefault();
       e.stopPropagation();
       this.$refs.beforeImage.style.transition = null;
-      const rect = this.afterImage.getBoundingClientRect();
-      const position = ((e.pageX - rect.left) / this.afterImage.offsetWidth)*100;
-      if (position >= 0 && position <= 100) this.$refs.beforeImage.style.width = `${position}%`;
+      this.$refs.trackLine.style.transition = '0.3s ease-out opacity';
+      this.$refs.trackLine.style.opacity = '0.3';
+      const trackContainerRect = this.trackContainer.getBoundingClientRect();
+      const afterImageRect = this.afterImage.getBoundingClientRect();
+      const beforeImagePosition = ((e.pageX - afterImageRect.left) / this.afterImage.offsetWidth) * 100;
+      const trackLinePosition = ((e.pageX - trackContainerRect.left) / this.trackContainer.offsetWidth) * 100;
+      if (beforeImagePosition >= 0 && beforeImagePosition <= 100) {
+        this.$refs.beforeImage.style.width = `${beforeImagePosition}%`;
+      }
+      if (trackLinePosition >= 0 && trackLinePosition <= 100) {
+        this.$refs.trackLine.style.left = `${trackLinePosition}%`;
+      }
     },
     trackLeave() {
       setTimeout(() => {
-        this.$refs.beforeImage.style.transition = '0.5s ease-out';
+        this.$refs.beforeImage.style.transition = '0.3s ease-out width';
+        this.$refs.trackLine.style.transition = '0.3s ease-out left, 0.3s ease-in opacity';
         this.$refs.beforeImage.style.width = '50%';
-      }, 3000);
+        this.$refs.trackLine.style.left = '50%';
+        this.$refs.trackLine.style.opacity = '1';
+      }, 5000);
     },
     addEventListeners() {
-      this.imageContainer.addEventListener('mousemove', this.trackLocation);
-      this.imageContainer.addEventListener('touchstart', this.trackLocation);
-      this.imageContainer.addEventListener('touchmove', this.trackLocation);
-      this.imageContainer.addEventListener('touchend', this.trackLeave);
-      this.imageContainer.addEventListener('mouseleave', this.trackLeave);
+      this.trackContainer.addEventListener('mousemove', this.trackLocation);
+      this.trackContainer.addEventListener('mousedown', this.trackLocation);
+      this.trackContainer.addEventListener('touchstart', this.trackLocation);
+      this.trackContainer.addEventListener('touchmove', this.trackLocation);
+      this.trackContainer.addEventListener('touchend', this.trackLeave);
+      this.trackContainer.addEventListener('mouseleave', this.trackLeave);
     },
     removeEventListeners() {
-      this.imageContainer.removeEventListener('mousemove', this.trackLocation);
-      this.imageContainer.removeEventListener('touchstart', this.trackLocation);
-      this.imageContainer.removeEventListener('touchmove', this.trackLocation);
-      this.imageContainer.addEventListener('touchend', this.trackLeave);
-      this.imageContainer.addEventListener('mouseleave', this.trackLeave);
+      this.trackContainer.removeEventListener('mousemove', this.trackLocation);
+      this.trackContainer.removeEventListener('mousedown', this.trackLocation);
+      this.trackContainer.removeEventListener('touchstart', this.trackLocation);
+      this.trackContainer.removeEventListener('touchmove', this.trackLocation);
+      this.trackContainer.addEventListener('touchend', this.trackLeave);
+      this.trackContainer.addEventListener('mouseleave', this.trackLeave);
     }
   },
   beforeDestroy() {
@@ -97,16 +117,35 @@ export default {
 
   .comparsion {
     &-container {
-      max-width: 100%;
       cursor: col-resize;
       position: relative;
-      font-size: 0;
+      padding: 20px 12px;
+      max-width: 100%;
       -webkit-touch-callout: none;
       -ms-touch-action: none;
       -webkit-user-select: none;
+      img {
+        display: block;
+      }
     }
 
+    &-track-line {
+      z-index: 2;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 2px;
+      height: 100%;
+      background-color: $bgcolor--red;
+    }
+
+    &-view {
+      position: relative;
+    }
+    
     &-image_before {
+      z-index: 1;
       position: absolute;
       top: 0;
       left: 0;
@@ -116,6 +155,7 @@ export default {
     }
 
     &-image_after {
+      z-index: -1;
       width: 100%;
       height: auto;      
     }
