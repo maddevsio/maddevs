@@ -38,7 +38,7 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Phone number</p>
-        <input @input="changeHandler" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" :value="phoneNumber">
+        <input @input="phoneChangeHandler" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" :value="phoneNumber">
         <!-- Erros -->
         <div v-if="$v.phoneNumber.$dirty">
           <span class="modal-error-text error-text" v-if="!$v.phoneNumber.phone">
@@ -70,9 +70,11 @@ import { required, email, maxLength } from 'vuelidate/lib/validators';
 import { phone } from '@/helpers/validators';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import UIButton from '@/components/ui/UIButton';
+import {phoneHandler} from '../../helpers/mixins';
 
 export default {
   name: 'ContactMe',
+  mixins: [phoneHandler],
   components: {
     FormCheckboxes,
     UIButton
@@ -99,7 +101,6 @@ export default {
     fullName: null,
     email: null,
     emailTo: process.env.emailContact,
-    phoneNumber: null,
     company: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
@@ -170,14 +171,6 @@ export default {
       this.company = null;
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
-    },
-    changeHandler (event) {
-      const newEvent = event;
-      const x = newEvent.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,4})(\d{0,3})(\d{0,4})(\d{0,15})/);
-      newEvent.target.value = !x[2] ? x[1] : '+' + x[1] + ' ' + x[2] + (x[3] ? '-' + x[3] : ' ') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
-
-      this.phoneNumber = newEvent.target.value;
-      this.$v.phoneNumber.$touch(newEvent);
     }
   }
 };
