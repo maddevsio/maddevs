@@ -4,92 +4,98 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
 <main
   class="main case"
 >
-  <div>
-    <section
-      class="case_header"
-      id="case-header"
+  <section
+    class="case_header"
+    id="case-header"
+  >
+    <video
+      autoplay="autoplay"
+      class="case_main-video"
+      loop="loop"
+      muted="muted"
     >
+      <source
+        src="undefined/sjmc/sjmc-main-video.b35a387.mp4"
+        type="video/mp4"
+      />
+      
+    Your browser does not support the video tag.
+  
+    </video>
+     
+    <div
+      class="case_header-content"
+    >
+      <div
+        class="case_header-text"
+      >
+        <div
+          class="case_case-study-item"
+        >
+          Case Study
+        </div>
+         
+        <h1
+          class="case_header-title"
+        >
+          Sir John Monash 
+          <br />
+           Centre
+        </h1>
+         
+        <p
+          class="case_header-description"
+        >
+          
+      The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front 
+          <br />
+           during the First World War in the words of those who served.
+    
+        </p>
+         
+        <button
+          class="case_play-button"
+          type="button"
+        >
+          <div
+            class="case_play-icon"
+          />
+          
+      View video about SJMC
+    
+        </button>
+      </div>
+       
+      <div
+        class="case_header-logo case_sjmc-logo"
+      />
+    </div>
+  </section>
+   
+  <div
+    style="display: none;"
+  >
+    <div
+      class="video-wrapper"
+    >
+      <!---->
+       
       <video
-        autoplay="autoplay"
-        class="case_main-video"
-        loop="loop"
-        muted="muted"
+        class="main-video"
       >
         <source
-          src="undefined/sjmc/sjmc-main-video.b35a387.mp4"
+          src="undefined/sjmc/sjmc-modal-video.00bd869.mp4"
           type="video/mp4"
         />
         
       Your browser does not support the video tag.
     
       </video>
-       
-      <div
-        class="case_logotype sjmc-header"
-      />
-       
-      <h1
-        class="case_header-title"
-      >
-        The maintenance 
-        <br
-          class="case_mobile-break"
-        />
-         of memory: 
-        <br />
-         Sir John Monash 
-        <br
-          class="case_mobile-break"
-        />
-         Centre
-      </h1>
-       
-      <button
-        class="case_play-button"
-        type="button"
-      >
-        <div
-          class="case_play-icon"
-        />
-        
-      View video about SJMC
-    
-      </button>
-       
-      <button
-        class="case_more-button case_more__button"
-        id="read-our-case-btn"
-        type="button"
-      >
-        Read our case studies ↓
-      </button>
-    </section>
-     
-    <div
-      style="display: none;"
-    >
-      <div
-        class="video-wrapper"
-      >
-        <!---->
-         
-        <video
-          class="main-video"
-        >
-          <source
-            src="undefined/sjmc/sjmc-modal-video.00bd869.mp4"
-            type="video/mp4"
-          />
-          
-      Your browser does not support the video tag.
-    
-        </video>
-      </div>
-       
-      <button
-        class="exit"
-      />
     </div>
+     
+    <button
+      class="exit"
+    />
   </div>
    
   <section
@@ -97,6 +103,7 @@ exports[`SirJohnMonashCentre renders correctly 1`] = `
   >
     <div
       class="case_animation_block"
+      id="case-first-section"
     />
      
     <section

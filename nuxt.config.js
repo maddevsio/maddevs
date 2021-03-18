@@ -44,7 +44,7 @@ module.exports = {
               j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
               d.body.appendChild(j);
             })(window, document, "script", "dataLayer", "GTM-NNKVRF3");
-          
+
             (function(m, e, t, r, i, k, a) {
                 m[i] = m[i] || function() {
                 (m[i].a = m[i].a || []).push(arguments)
@@ -124,6 +124,7 @@ module.exports = {
     ** Run ESLint on save
     */
     vendor: ['axios'],
+    transpile: [ 'swiper', 'dom7' ],
     followSymlinks: true,
     cache: true,
     extend (config, { isDev, isClient }) {

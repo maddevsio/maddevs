@@ -7,7 +7,8 @@
   >
     <template v-slot:beforeTitle>
       <div class="row cluster-navigation">
-        <div class="cluster-navigation__name">{{clusterName}}</div>
+        <div class="cluster-navigation__name" v-if="clusterName">{{ clusterName }}</div>
+        <div class="cluster-navigation__name" v-else>&zwnj;</div>
         <div class="col-12 col-lg-5 mt-0 cluster-navigation__select-wrapper">
           <v-select
             class="cluster-navigation__select"

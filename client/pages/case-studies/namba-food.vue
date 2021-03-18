@@ -1,8 +1,13 @@
 <template>
   <main class="main case">
-    <HeaderNambaFood />
+    <CaseHeader logo="nambafood" videoName="main.ef19480.mp4">
+      <h1 class="case_header-title" slot="title">Namba Food</h1>
+      <p class="case_header-description" slot="description">
+        Mad Devs created the Namba Food delivery service from scratch. The solution <br /> orchestrates feature-rich apps for couriers, end-users, and business owners.
+      </p>
+    </CaseHeader>
     <section class="case_body" ref="caseBody">
-      <div class="case_animation_block"></div>
+      <div class="case_animation_block" id="case-first-section"></div>
       <section class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom">
         <TextParagraph>
           Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for all types of goods.
@@ -406,7 +411,7 @@
 </template>
 
 <script>
-import HeaderNambaFood from '@/components/Cases/HeaderNambaFood';
+import CaseHeader from '@/components/Cases/CaseHeader';
 import Footer from '@/components/Cases/Footer';
 import TextParagraph from '@/components/Cases/TextParagraph';
 import TextQuote from '@/components/Cases/TextQuote';
@@ -434,7 +439,7 @@ import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   components: {
-    HeaderNambaFood,
+    CaseHeader,
     TextParagraph,
     TextQuote,
     TextQuoteBox,

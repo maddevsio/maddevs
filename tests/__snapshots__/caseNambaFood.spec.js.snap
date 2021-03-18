@@ -24,32 +24,39 @@ exports[`Namba food renders correctly 1`] = `
     </video>
      
     <div
-      class="case_logotype nambafood"
-    />
-     
-    <h1
-      class="case_header-title"
+      class="case_header-content"
     >
-      Namba Food 
-      <br />
-       Top Delivery Service 
-      <br
-        class="case_text-break"
+      <div
+        class="case_header-text"
+      >
+        <div
+          class="case_case-study-item"
+        >
+          Case Study
+        </div>
+         
+        <h1
+          class="case_header-title"
+        >
+          Namba Food
+        </h1>
+         
+        <p
+          class="case_header-description"
+        >
+          
+      Mad Devs created the Namba Food delivery service from scratch. The solution 
+          <br />
+           orchestrates feature-rich apps for couriers, end-users, and business owners.
+    
+        </p>
+         
+      </div>
+       
+      <div
+        class="case_header-logo case_nambafood-logo"
       />
-       in 
-      <br
-        class="case_text-break-mobile"
-      />
-       Central Asia
-    </h1>
-     
-    <button
-      class="case_more-button case_more__button"
-      id="read-our-case-btn"
-      type="button"
-    >
-      Read our case studies ↓
-    </button>
+    </div>
   </section>
    
   <section
@@ -57,6 +64,7 @@ exports[`Namba food renders correctly 1`] = `
   >
     <div
       class="case_animation_block"
+      id="case-first-section"
     />
      
     <section

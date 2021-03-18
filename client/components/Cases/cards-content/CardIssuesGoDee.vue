@@ -71,7 +71,7 @@ export default {
       margin-bottom: 22px;
 
       span {
-        font-size: 20px;
+        font-size: 19px;
         line-height: 26px;
         letter-spacing: -1px;
         font-family: 'Poppins-Regular';
