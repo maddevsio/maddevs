@@ -73,26 +73,6 @@ describe('Contact me modal', () => {
     ).toEqual(true);
   });
 
-  test('sendForm should add new object in $data.form', () => {
-    const form = {
-      'templateId': 303792,
-      'variables': {
-        'agreeToGetMadDevsDiscountOffers': 'No',
-        'agreeWithPrivacyPolicy': 'No',
-        'email': '',
-        'emailTo': '',
-        'fullName': '',
-        'subject': 'Marketing',
-        'company': '',
-        'phoneNumber': '',
-        'modalTitle': 'Mad Devs Website Forms'
-      }
-    };
-    expect(wrapper.vm.$data.form).toEqual(null);
-    wrapper.vm.sendForm(true);
-    expect(wrapper.vm.$data.form).toEqual(form);
-  });
-
   test('should rest values in data instances', () => {
     // Set mock data for data instances
     wrapper.vm.$data.fullName = 'Name';

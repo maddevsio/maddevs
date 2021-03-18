@@ -70,9 +70,9 @@ describe('Footer form', () => {
 
   test('should rest values in data instances', () => {
     // Set mock data for data instances
-    wrapper.vm.$data.fullName = 'Name';
+    wrapper.vm.$data.fullname = 'Name';
     wrapper.vm.$data.email = 'email@mail.com';
-    wrapper.vm.$data.projectDescriber = 'Project Describer';
+    wrapper.vm.$data.description = 'Project Describer';
     wrapper.vm.$data.form = {
       value1: 'value1',
       value2: 'value2'
@@ -83,11 +83,11 @@ describe('Footer form', () => {
 
     wrapper.vm.resetForm();
     expect(
-      wrapper.vm.$data.fullName &&
+      wrapper.vm.$data.fullname &&
       wrapper.vm.$data.email &&
       wrapper.vm.$data.form
     ).toEqual(null);
-    expect(wrapper.vm.$data.projectDescriber).toEqual('');
+    expect(wrapper.vm.$data.description).toEqual('');
     expect(
       wrapper.vm.$data.agreeWithPrivacyPolicy &&
       wrapper.vm.$data.agreeToGetMadDevsDiscountOffers &&
