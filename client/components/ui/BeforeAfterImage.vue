@@ -53,7 +53,8 @@ export default {
       trackLine: null,
       trackView: null,
       beforeImage: null,
-      afterImage: null
+      afterImage: null,
+      trackLeaveTimeout: null
     };
   },
   methods: {
@@ -67,6 +68,7 @@ export default {
     trackLocation(e) {
       e.preventDefault();
       e.stopPropagation();
+      clearTimeout(this.trackLeaveTimeout);
       this.$refs.beforeImage.style.transition = null;
       this.$refs.trackLine.style.transition = '0.3s ease-out opacity';
       this.$refs.trackLine.style.opacity = '0.3';
@@ -89,13 +91,13 @@ export default {
       }
     },
     trackLeave() {
-      setTimeout(() => {
+      this.trackLeaveTimeout = setTimeout(() => {
         this.$refs.beforeImage.style.transition = '0.3s ease-out width';
         this.$refs.trackLine.style.transition = '0.3s ease-out left, 0.3s ease-in opacity';
         this.$refs.beforeImage.style.width = '50%';
         this.$refs.trackLine.style.left = '50%';
         this.$refs.trackLine.style.opacity = '1';
-      }, 7500);
+      }, 4500);
     },
     addEventListeners() {
       this.trackContainer.addEventListener('mousemove', this.trackLocation);
@@ -127,8 +129,10 @@ export default {
     &-container {
       cursor: col-resize;
       position: relative;
-      padding: 20px 12px;
       max-width: 100%;
+      width: calc(100% + 48px);
+      margin-left: -24px;
+      padding: 20px 24px;
       -webkit-touch-callout: none;
       -ms-touch-action: none;
       -webkit-user-select: none;
@@ -167,6 +171,29 @@ export default {
       width: 100%;
       height: auto;      
     }
-  }
 
+    @media screen and (max-width: 768px) {
+      &-container {
+        width: calc(100% + 24px);
+        margin-left: -12px;
+        padding: 20px 12px;
+      }
+    }
+
+    @media screen and (max-width: 420px) {
+      &-container {
+        width: calc(100% + 12px);
+        margin-left: -6px;
+        padding: 20px 6px;
+      }
+    }
+
+    @media screen and (max-width: 370px) {
+      &-container {
+        width: calc(100% + 6px);
+        margin-left: -3px;
+        padding: 20px 3px;
+      }
+    }
+  }
 </style>
