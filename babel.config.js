@@ -6,14 +6,11 @@ module.exports = function (api) {
   if (api.env('test') && !api.caller(isBabelLoader)) {
     return {
       presets: [
-        [
-          '@babel/preset-env',
-          {
-            targets: {
-              node: 'current'
-            }
+        ['@babel/env', {
+          'targets': {
+            'ie': '11'
           }
-        ]
+        }]
       ]
     };
   }

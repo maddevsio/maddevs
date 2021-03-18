@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'navigationList',
+  name: 'navigationItem',
   props: {
     link: {
       type: String,
