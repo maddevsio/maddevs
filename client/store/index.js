@@ -25,10 +25,10 @@ export const actions = {
       });
     });
   },
-  createNewLead({ commit }, payload) {
-    const data = payload;
+
+  createNewLead(_, payload) {
     return new Promise((resolve, reject) => {
-      this.$axios.post('api/leads', data).then(res => {
+      this.$axios.post('api/leads', payload).then(res => {
         resolve(res);
       }).catch(err => {
         reject(err);
