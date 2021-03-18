@@ -83,7 +83,7 @@
 <script>
 import { required, email, maxLength } from 'vuelidate/lib/validators';
 import { phone } from '@/helpers/validators';
-import { phoneHandler } from '@/mixins/phoenHandler';
+import { phoneHandler } from '@/mixins/phoneHandler';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import UIButton from '@/components/ui/UIButton';
 
