@@ -11,6 +11,7 @@
     min-width: 242px;
     height: 108px;
     margin-left: 177px;
+    margin-top: -95px;
   }
 
   &_play-button {
@@ -117,6 +118,7 @@
 
   @media screen and (max-width: 1170px) {
     &_sjmc-logo {
+      margin-top: 0;
       margin-left: 0;
       min-width: auto;
       width: 100%;
