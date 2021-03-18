@@ -69,7 +69,7 @@ export default {
       setTimeout(() => {
         this.$refs.beforeImage.style.transition = '0.5s ease-out';
         this.$refs.beforeImage.style.width = '50%';
-      }, 1500);
+      }, 3000);
     },
     addEventListeners() {
       this.imageContainer.addEventListener('mousemove', this.trackLocation);
