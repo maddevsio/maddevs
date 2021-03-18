@@ -27,7 +27,7 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Phone number</p>
-        <input @input="$v.phoneNumber.$touch" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
+        <input @input="phoneChangeHandler" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" :value="phoneNumber">
         <!-- Erros -->
         <div v-if="$v.phoneNumber.$dirty">
           <span class="modal-error-text error-text" v-if="!$v.phoneNumber.maxLength">
@@ -71,6 +71,7 @@
 <script>
 import { required, email, maxLength } from 'vuelidate/lib/validators';
 import { phone } from '@/helpers/validators';
+import {phoneHandler} from '@/helpers/mixins';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import UIButton from '@/components/ui/UIButton';
 
@@ -80,6 +81,7 @@ export default {
     FormCheckboxes,
     UIButton
   },
+  mixins: [phoneHandler],
   validations: {
     fullName: {
       required,
@@ -103,7 +105,6 @@ export default {
     fullName: null,
     email: null,
     emailTo: process.env.emailContact,
-    phoneNumber: null,
     questionsOnItConsulting: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,

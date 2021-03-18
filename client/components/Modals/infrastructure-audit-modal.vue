@@ -27,7 +27,7 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Phone number</p>
-        <input @input="$v.phoneNumber.$touch" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
+        <input @input="phoneChangeHandler" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" :value="phoneNumber">
         <!-- Erros -->
         <div v-if="$v.phoneNumber.$dirty">
           <span class="modal-error-text error-text" v-if="!$v.phoneNumber.phone">
@@ -83,6 +83,7 @@ import { phone } from '@/helpers/validators';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import RadioList from '@/components/ui/radio-list';
 import UIButton from '@/components/ui/UIButton';
+import {phoneHandler} from '@/helpers/mixins';
 
 export default {
   name: 'infrastructure-audit',
@@ -91,6 +92,7 @@ export default {
     RadioList,
     UIButton
   },
+  mixins: [phoneHandler],
   validations: {
     fullName: {
       required,
@@ -115,7 +117,6 @@ export default {
     fullName: null,
     email: null,
     emailTo: process.env.emailContact,
-    phoneNumber: null,
     interesteMobileExpertise: null,
     selectedProjectHost: null,
     company: null,
