@@ -1,7 +1,10 @@
 <template>
   <main class="main case">
     <CaseHeader logo="nambafood" videoName="main.ef19480.mp4">
-      <h1 class="case_header-title" slot="title">Namba Food<br> Top Delivery Service</h1>
+      <h1 class="case_header-title" slot="title">Namba Food</h1>
+      <p class="case_header-description" slot="description">
+        Mad Devs created the Namba Food delivery service from scratch. The solution <br /> orchestrates feature-rich apps for couriers, end-users, and business owners.
+      </p>
     </CaseHeader>
     <section class="case_body" ref="caseBody">
       <div class="case_animation_block" id="case-first-section"></div>
