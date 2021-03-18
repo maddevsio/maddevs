@@ -51,6 +51,7 @@ export default {
     return {
       trackContainer: null,
       trackLine: null,
+      trackView: null,
       beforeImage: null,
       afterImage: null
     };
