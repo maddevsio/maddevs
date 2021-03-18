@@ -8,21 +8,18 @@
           :url="openGraphUrl"
           :title="title"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
-          target="_blank"
         />
         <ShareNetwork
           network="twitter"
           :url="openGraphUrl"
           :title="title"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
-          target="_blank"
         />
         <ShareNetwork
           network="linkedin"
           :url="openGraphUrl"
           :title="title"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
-          target="_blank"
         />
       </div>
 
