@@ -7,18 +7,25 @@
         </h1>
         <div class="banner__order-a-project-icon"></div>
       </div>
-      <navigationList/>
+      <navigationList>
+        <navigationItem link="#remote-tech-staff" title="Remote Tech Staff"/>
+        <navigationItem link="#software-development" title="Software Development"/>
+        <navigationItem link="#infrastructure-optimisation" title="Infrastructure Optimization"/>
+        <navigationItem link="#it-consulting" title="IT Consulting"/>
+      </navigationList>
     </div>
   </section>
 </template>
 
 <script>
 import navigationList from '@/components/ui/navigation-list';
+import navigationItem from '@/components/ui/navigation-item';
 
 export default {
   name: 'ServicesBanner',
   components: {
-    navigationList
+    navigationList,
+    navigationItem
   }
 };
 </script>

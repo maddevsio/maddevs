@@ -46,7 +46,9 @@ export default {
         {
           type: 'application/ld+json',
           innerHTML: this.jsonLd
-        }
+        },
+        // Need for supported Safari9 and IE11 https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Intl
+        {src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en'}
       ]
     };
   },

@@ -1,15 +1,16 @@
 <template>
   <div class="case_root">
     <HeaderMain />
-    <main class="case case_parallax" id="scroll-container" ref="main">
+    <main class="case case_parallax" id="case-scroll-container" ref="main">
       <CaseHeader logo="godee" videoName="godee-case-main-video.mp4">
         <h1 class="case_header-title" slot="title">Convenient shuttle <br> bus service</h1>
         <p class="case_header-description" slot="description">
           Mad Devs helped GoDee with developing feature-rich software to re-invent <br> public mobility by building new smart ways of a daily commute.
         </p>
       </CaseHeader>
-      <section class="container_regular" id="case-first-section">
-        <TextParagraph class="m-72_top media-m-24_top">
+      <div class="case_animation_block" id="case-first-section"></div>
+      <section class="container_regular">
+        <TextParagraph class="m-48_top media-m-24_top">
           GoDee is a reliable way to commute in Ho Chi Minh City, Vietnam. Its shuttle buses take express routes that link the city’s major districts and popular destinations. GoDee helps riders save time, money and the planet due to its lower ecological impact.
         </TextParagraph>
         <TextQuote class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom">
@@ -48,7 +49,7 @@
       <section class="container_regular">
         <h3 class="case_title_h3 m-12_bottom">Minimum viable product MVP</h3>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
-          Before investing a considerable amount of money in building software, hiring personnel and acquiring minibuses, GoDee wanted to <router-link :to="`/services#software-development`" class="case_link">develop an MVP</router-link> to understand the market fit potential.
+          Before investing a considerable amount of money in building software, hiring personnel and acquiring minibuses, GoDee wanted to <nuxt-link :to="`/services#software-development`" class="case_link">develop an MVP</nuxt-link> to understand the market fit potential.
         </TextParagraph>
         <TextParagraph class="m-24_bottom">
           Although services such as GoDee exist in other parts of the world, simulating these programs in Ho Chi Minh City was pointless because the city’s commuting culture is quite different. That’s why user feedback was crucial to its improvement and key to its current rapid growth.

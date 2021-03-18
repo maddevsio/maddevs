@@ -287,7 +287,7 @@ describe('SirJohnMonashCentre', () => {
           $on: jest.fn()
         }
       },
-      stubs: ['router-link']
+      stubs: ['nuxt-link']
     });
     wrapper.vm.$refs = {
       video: {

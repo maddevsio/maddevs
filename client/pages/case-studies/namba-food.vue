@@ -1,8 +1,13 @@
 <template>
   <main class="main case">
-    <HeaderNambaFood />
+    <CaseHeader logo="nambafood" videoName="main.ef19480.mp4">
+      <h1 class="case_header-title" slot="title">Namba Food</h1>
+      <p class="case_header-description" slot="description">
+        Mad Devs created the Namba Food delivery service from scratch. The solution <br /> orchestrates feature-rich apps for couriers, end-users, and business owners.
+      </p>
+    </CaseHeader>
     <section class="case_body" ref="caseBody">
-      <div class="case_animation_block"></div>
+      <div class="case_animation_block" id="case-first-section"></div>
       <section class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom">
         <TextParagraph>
           Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for all types of goods.
@@ -366,7 +371,7 @@
       <section class="container_regular">
         <h2 class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom">Nationwide success and day-to-day improvements</h2>
         <TextParagraph>
-          Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision and understanding of its target audience, we were able to <router-link :to="`/services#software-development`" class="case_link">build a product</router-link> that truly solves this customer’s problems. The year-over-year growth rate is hugely impressive.
+          Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision and understanding of its target audience, we were able to <nuxt-link :to="`/services#software-development`" class="case_link">build a product</nuxt-link> that truly solves this customer’s problems. The year-over-year growth rate is hugely impressive.
         </TextParagraph>
         <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
           As the number of businesses using Namba Food continues to increase, <span class="case_blockquote-box_text-modificator">the service's yearly growth rate is about 50% for both revenue and deliveries made.</span>
@@ -406,7 +411,7 @@
 </template>
 
 <script>
-import HeaderNambaFood from '@/components/Cases/HeaderNambaFood';
+import CaseHeader from '@/components/Cases/CaseHeader';
 import Footer from '@/components/Cases/Footer';
 import TextParagraph from '@/components/Cases/TextParagraph';
 import TextQuote from '@/components/Cases/TextQuote';
@@ -434,7 +439,7 @@ import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
   components: {
-    HeaderNambaFood,
+    CaseHeader,
     TextParagraph,
     TextQuote,
     TextQuoteBox,

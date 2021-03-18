@@ -133,6 +133,7 @@ export default {
 
       &__column {
         width: 100%;
+        padding: 0;
       }
     }
   }

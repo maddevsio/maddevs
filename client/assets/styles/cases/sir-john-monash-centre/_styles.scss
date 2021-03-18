@@ -1,4 +1,38 @@
 .case {
+  &_header {
+    &:before {
+      background-image: url("../../assets/img/Cases/sjmc/jpg/sjmc-main-video-preview.jpg");
+    }
+  }
+
+  &_sjmc-logo {
+    @include sjmc-header;
+    width: 242px;
+    min-width: 242px;
+    height: 108px;
+    margin-left: 177px;
+    margin-top: -95px;
+  }
+
+  &_play-button {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 59px;
+    padding: 0;
+    border: 0;
+    background: none;
+    @include default_text($text-color--white-primary, 13px, 166%, -0.02em, normal);
+    cursor: pointer;
+  }
+
+  &_play-icon {
+    @include play-header;
+    width: 14px;
+    height: 14px;
+    margin-right: 16px
+  }
+
   &_column-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -76,6 +110,29 @@
     display: none;
   }
 
+  @media screen and (max-width: 1250px) {
+    &_sjmc-logo {
+      margin-left: 102px;
+    }
+  }
+
+  @media screen and (max-width: 1170px) {
+    &_sjmc-logo {
+      margin-top: 0;
+      margin-left: 0;
+      min-width: auto;
+      width: 100%;
+      background-position: left;
+      margin-bottom: 38px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &_play-button {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     &_sjmc-phone-video-section {
       padding: 50px 0;
@@ -88,6 +145,13 @@
     }
   }
 
+  @media screen and (max-width: 655px) {
+    &_sjmc-logo {
+      height: 65px;
+      margin-bottom: 35px;
+    }
+  }
+
   @media screen and (max-width: 520px) {
     &_mobile-screen-break {
       display: block;
@@ -97,6 +161,12 @@
   @media screen and (max-width: 420px) {
     &_mobile-break {
       display: block;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    &_sjmc-logo {
+      margin-bottom: 25px;
     }
   }
 }
