@@ -9,7 +9,9 @@ export const phoneHandler = {
       newEvent.target.value = !x[2] ? x[1] : '+' + x[1] + ' ' + x[2] + (x[3] ? '-' + x[3] : ' ') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
 
       this.phoneNumber = newEvent.target.value;
-      this.$v.phoneNumber.$touch(newEvent);
+      this.$v && this.$v.phoneNumber.$touch(newEvent);
+
+      return event;
     }
   }
 };
