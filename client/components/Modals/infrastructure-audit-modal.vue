@@ -83,7 +83,7 @@ import { phone } from '@/helpers/validators';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import RadioList from '@/components/ui/radio-list';
 import UIButton from '@/components/ui/UIButton';
-import {phoneHandler} from '@/helpers/mixins';
+import {phoneHandler} from '@/mixins/phoenHandler';
 
 export default {
   name: 'infrastructure-audit',
