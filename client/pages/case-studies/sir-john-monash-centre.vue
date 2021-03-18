@@ -1,7 +1,10 @@
 <template>
   <main class="main case">
     <CaseHeader logo="sjmc" videoName="sjmc/sjmc-main-video.b35a387.mp4">
-      <h1 class="case_header-title" slot="title">The maintenance <br /> of memory: <br /> Sir John Monash Centre</h1>
+      <h1 class="case_header-title" slot="title">Sir John Monash <br /> Centre</h1>
+      <p class="case_header-description" slot="description">
+        The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front <br /> during the First World War in the words of those who served.
+      </p>
       <button class="case_play-button" type="button" @click="openFullscreen()" slot="actions">
         <div class="case_play-icon"></div>
         View video about SJMC
