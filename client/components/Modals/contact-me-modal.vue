@@ -3,11 +3,11 @@
     <div class="fields-list">
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name required">Full Name</p>
-        <input @input="$v.fullName.$touch" type="text" :class="{ 'invalid': $v.fullName.$error }" class="modal-entry-field entry-field" placeholder="John Smith" v-model="fullName">
+        <input @input="$v.fullname.$touch" type="text" :class="{ 'invalid': $v.fullname.$error }" class="modal-entry-field entry-field" placeholder="John Smith" v-model="fullname">
         <!-- Erros -->
-        <div v-if="$v.fullName.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.fullName.required">This field is required.</span>
-          <span class="modal-error-text error-text" v-if="!$v.fullName.maxLength">
+        <div v-if="$v.fullname.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.fullname.required">This field is required.</span>
+          <span class="modal-error-text error-text" v-if="!$v.fullname.maxLength">
             Sorry, the number of characters in this field should not exceed 50.
           </span>
         </div>
@@ -38,10 +38,10 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Phone number</p>
-        <input @input="$v.phoneNumber.$touch" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
+        <input @input="$v.phone.$touch" type="text" :class="{ 'invalid': $v.phone.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" v-model="phone">
         <!-- Erros -->
-        <div v-if="$v.phoneNumber.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.phoneNumber.phone">
+        <div v-if="$v.phone.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.phone.phone">
             Sorry, this field can only contain numbers and characters specific for phone numbers.
           </span>
         </div>
@@ -56,7 +56,7 @@
     />
     <UIButton
       class="modal-button"
-      @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
+      @click="submitForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
       :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
       :loading="onSubmit"
     >
@@ -78,7 +78,7 @@ export default {
     UIButton
   },
   validations: {
-    fullName: {
+    fullname: {
       required,
       maxLength: maxLength(50)
     },
@@ -89,17 +89,17 @@ export default {
       required,
       email
     },
-    phoneNumber: {
+    phone: {
       phone
     },
-    validationGroup: ['fullName', 'company', 'email', 'phoneNumber']
+    validationGroup: ['fullname', 'company', 'email', 'phone']
   },
   data: () => ({
     modalName: 'contact-me-modal',
-    fullName: null,
+    fullname: null,
     email: null,
     emailTo: process.env.emailContact,
-    phoneNumber: null,
+    phone: null,
     company: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
@@ -119,54 +119,52 @@ export default {
     getPrivacyCheckboxState(privacyState) {
       this.agreeWithPrivacyPolicy = privacyState;
     },
+
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
     },
-    createLead() {
-      const data = [{
-        name: this.fullName,
-        custom_fields_values: [
-          {field_id: 261281, values: [{value: this.email}]}, // Email
-          {field_id: 261331, values: [{value: this.company}]}, // Company
-          {field_id: 261333, values: [{value: this.phoneNumber}]} // Phone
-        ]
-      }];
-      this.$store.dispatch('createNewLead', data);
+
+    async submitForm(isValid) {
+      if(!isValid || this.onSubmit) return;
+
+      const data = {
+        // templateId: 305480, // It's template id for email
+        // emailTo: this.emailTo || '',
+        // agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
+        // agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
+        // subject: this.subject || '',
+        // modalTitle: this.modalTitle
+        fullname: this.fullname,
+        email: this.email || '',
+        company: this.company,
+        phone: this.phone || '',
+        type: 'contact-me'
+      };
+
+      await this.$store.dispatch('createNewLead', data);
+      
+      this.onSubmit = false;
+      this.resetForm();
+      this.$parent.$emit('success');
     },
-    sendForm(isValid) {
-      if (isValid === true && !this.onSubmit) {
-        this.onSubmit = true;
-        this.form = {
-          templateId: 303792, // Required
-          variables: {
-            fullName: this.fullName || '',
-            company: this.company || '',
-            email: this.email || '',
-            emailTo: this.emailTo || '',
-            phoneNumber: this.phoneNumber || '',
-            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
-            subject: this.subject || '',
-            modalTitle: this.modalTitle
-          }
-        };
-        this.$store.dispatch('sendEmail', this.form).then(res => {
-          this.onSubmit = false;
-          // this.createLead();
-          this.resetForm();
-          if (res.status === 200) {
-            this.$parent.$emit('success');
-          }
-        }).catch(() => {
-          this.onSubmit = true;
-        });
-      }
-    },
+
+    // createLead() {
+    //   const data = [{
+    //     name: this.fullname,
+    //     custom_fields_values: [
+    //       {field_id: 261281, values: [{value: this.email}]}, // Email
+    //       {field_id: 261331, values: [{value: this.company}]}, // Company
+    //       {field_id: 261333, values: [{value: this.phone}]} // Phone
+    //     ]
+    //   }];
+    //   this.$store.dispatch('createNewLead', data);
+    // },
+    
     resetForm() {
       this.$refs.checkboxes.reset();
-      this.fullName = null;
+      this.fullname = null;
       this.email = null;
-      this.phoneNumber = null;
+      this.phone = null;
       this.company = null;
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;

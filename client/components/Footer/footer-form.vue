@@ -2,10 +2,10 @@
   <form class="footer-form form">
     <div class="fields-list">
       <div class="field-item">
-        <input @input="$v.fullName.$touch" type="text" :class="{ 'invalid': $v.fullName.$error }" class="entry-field" placeholder="John Smith" v-model="fullName">
+        <input @input="$v.fullname.$touch" type="text" :class="{ 'invalid': $v.fullname.$error }" class="entry-field" placeholder="John Smith" v-model="fullname">
         <!-- Erros -->
-        <div v-if="$v.fullName.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.fullName.maxLength">
+        <div v-if="$v.fullname.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.fullname.maxLength">
             Sorry, the number of characters in this field should not exceed 50.
           </span>
         </div>
@@ -25,10 +25,10 @@
         <!-- End Erros -->
       </div>
       <div class="field-item">
-        <textarea @input="$v.projectDescriber.$touch" type="text" :class="{ 'invalid': $v.projectDescriber.$error }" class="entry-field textarea" placeholder="Describe your project..." v-model="projectDescriber" />
+        <textarea @input="$v.description.$touch" type="text" :class="{ 'invalid': $v.description.$error }" class="entry-field textarea" placeholder="Describe your project..." v-model="description" />
         <!-- Erros -->
-        <div v-if="$v.projectDescriber.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.projectDescriber.maxLength">
+        <div v-if="$v.description.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.description.maxLength">
             Sorry, the number of characters in this field should not exceed 500.
           </span>
         </div>
@@ -42,7 +42,7 @@
     />
     <UIButton
       class="ui-button--transparent-bgc submit-button"
-      @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
+      @click="submitForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
       type="button"
       ref="submitButton"
       :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
@@ -50,7 +50,7 @@
     >
       Order a project now
     </UIButton>
-    <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
+    <SuccessModal :visibled="isSuccess" id="footer-modal" @onClose="resetForm" />
   </form>
 </template>
 
@@ -72,85 +72,90 @@ export default {
     PlaceholderAsterisk
   },
   validations: {
-    fullName: {
+    fullname: {
       maxLength: maxLength(50)
     },
     email: {
       required,
       email
     },
-    projectDescriber: {
+    description: {
       maxLength: maxLength(500)
     },
-    validationGroup: ['fullName', 'email', 'projectDescriber']
+    validationGroup: ['fullname', 'email', 'description']
   },
   data: () => ({
     form: null,
-    fullName: null,
+    fullname: null,
     email: null,
     emailTo: process.env.emailContact,
-    projectDescriber: '',
+    description: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    isEmailSent: false,
+    isSuccess: false,
     onSubmit: false,
     subject: 'Marketing',
     modalTitle: 'Mad Devs Website Forms'
   }),
   methods: {
-    createLead() {
-      const data = [{
-        name: this.fullName,
-        custom_fields_values: [
-          { field_id: 261281, values: [{ value: this.email }] }, // Email
-          { field_id: 261437, values: [{ value: this.projectDescriber }] } // Project Describer
-        ]
-      }];
-    },
     getPrivacyCheckboxState(privacyState) {
       this.agreeWithPrivacyPolicy = privacyState;
     },
+
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
     },
-    sendForm(isValid) {
-      if (isValid === true && !this.onSubmit) {
-        this.onSubmit = true;
-        this.form = {
-          templateId: 305480, // Required
-          variables: {
-            fullName: this.fullName,
-            email: this.email || '',
-            emailTo: this.emailTo || '',
-            projectDescriber: this.projectDescriber,
-            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
-            subject: this.subject || '',
-            modalTitle: this.modalTitle
-          }
-        };
-        this.$store.dispatch('createNewLead', this.form).then(res => {
-          this.onSubmit = false;
-          // this.createLead();
-          if (res.status === 200) {
-            this.isEmailSent = true;
-            this.resetForm();
-            setTimeout(() => {
-              this.isEmailSent = false;
-            }, 3000);
-          } else {
-            this.isEmailSent = false;
-          }
-        });
-      }
+
+    // createLead() {
+    //   const data = [{
+    //     name: this.fullname,
+    //     custom_fields_values: [
+    //       { field_id: 261281, values: [{ value: this.email }] }, // Email
+    //       { field_id: 261437, values: [{ value: this.description }] } // Project Describer
+    //     ]
+    //   }];
+    // },
+
+    async submitForm(isValid) {
+      const SUCCESS_RESPONSE_STATUS = 200;
+
+
+      if(!isValid || this.onSubmit) return;
+
+      const data = {
+        // templateId: 305480, // It's template id for email
+        // emailTo: this.emailTo || '',
+        // agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
+        // agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
+        // subject: this.subject || '',
+        // modalTitle: this.modalTitle
+        fullname: this.fullname,
+        email: this.email || '',
+        description: this.description,
+        type: 'footer-form'
+      };
+
+      const response = await this.$store.dispatch('createNewLead', data);
+      
+      this.onSubmit = false;
+      this.resetForm();
+      
+      if(response.status === SUCCESS_RESPONSE_STATUS) {
+        this.isSuccess = true;
+        // TODO: Very dirty, need to fix
+        setTimeout(() => {
+          this.isSuccess = false;
+        }, 3000);
+      } else this.isSuccess = false;
     },
+    
     resetForm() {
       this.$refs.checkboxes.reset();
       this.$v.$reset(); // Reset validation form
-      this.fullName = null;
+      this.fullname = null;
       this.email = null;
       this.form = null;
-      this.projectDescriber = '';
+      this.description = '';
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
     }
