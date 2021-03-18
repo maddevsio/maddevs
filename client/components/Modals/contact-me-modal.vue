@@ -38,7 +38,7 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Phone number</p>
-        <input @input="changeHandler" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" :value="phoneNumber">
+        <input @input="changeHandler" type="text" :onchange="changeHandler" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" :value="phoneNumber">
         <!-- Erros -->
         <div v-if="$v.phoneNumber.$dirty">
           <span class="modal-error-text error-text" v-if="!$v.phoneNumber.phone">
@@ -172,10 +172,11 @@ export default {
       this.agreeToGetMadDevsDiscountOffers = false;
     },
     changeHandler (e) {
-      const x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,15})/);
-      e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+      const x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,4})(\d{0,3})(\d{0,4})(\d{0,15})/);
+      e.target.value = !x[2] ? x[1] : '+' + x[1] + ' ' + x[2] + (x[3] ? '-' + x[3] : ' ') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
 
-      this.$v.phone.$touch(e);
+      this.phoneNumber = e.target.value;
+      this.$v.phoneNumber.$touch(e);
     }
   }
 };
