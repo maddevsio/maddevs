@@ -71,6 +71,13 @@ export default {
       this.$refs.trackLine.style.opacity = '0.3';
       const trackContainerRect = this.trackContainer.getBoundingClientRect();
       const afterImageRect = this.afterImage.getBoundingClientRect();
+      /**
+      *  This calculation is the formula for finding the percentage of the total amount
+      *  e.pageX - cursor position from the left edge of the screen
+      *  afterImageRect.left - position of the afterImage element from the left edge of the screen
+      *  (e.pageX - afterImageRect.left) - this result is a part of the total amount of the picture width (unknown%)
+      *  this.trackContainer.offsetWidth - total amount of the picture width (100%)
+      */
       const beforeImagePosition = ((e.pageX - afterImageRect.left) / this.afterImage.offsetWidth) * 100;
       const trackLinePosition = ((e.pageX - trackContainerRect.left) / this.trackContainer.offsetWidth) * 100;
       if (beforeImagePosition >= 0 && beforeImagePosition <= 100) {
