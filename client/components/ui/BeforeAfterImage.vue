@@ -75,12 +75,14 @@ export default {
       this.imageContainer.addEventListener('mousemove', this.trackLocation);
       this.imageContainer.addEventListener('touchstart', this.trackLocation);
       this.imageContainer.addEventListener('touchmove', this.trackLocation);
+      this.imageContainer.addEventListener('touchend', this.trackLeave);
       this.imageContainer.addEventListener('mouseleave', this.trackLeave);
     },
     removeEventListeners() {
       this.imageContainer.removeEventListener('mousemove', this.trackLocation);
       this.imageContainer.removeEventListener('touchstart', this.trackLocation);
       this.imageContainer.removeEventListener('touchmove', this.trackLocation);
+      this.imageContainer.addEventListener('touchend', this.trackLeave);
       this.imageContainer.addEventListener('mouseleave', this.trackLeave);
     }
   },
