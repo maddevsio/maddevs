@@ -63,13 +63,13 @@ export default {
       this.$refs.beforeImage.style.transition = null;
       const rect = this.afterImage.getBoundingClientRect();
       const position = ((e.pageX - rect.left) / this.afterImage.offsetWidth)*100;
-      if (position > 0 && position < 100) this.$refs.beforeImage.style.width = `${position}%`;
+      if (position >= 0 && position <= 100) this.$refs.beforeImage.style.width = `${position}%`;
     },
     trackLeave() {
       setTimeout(() => {
         this.$refs.beforeImage.style.transition = '0.5s ease-out';
         this.$refs.beforeImage.style.width = '50%';
-      }, 2000);
+      }, 1500);
     },
     addEventListeners() {
       this.imageContainer.addEventListener('mousemove', this.trackLocation);
