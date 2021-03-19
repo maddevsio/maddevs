@@ -39,9 +39,6 @@
         :tags="tags"
         :formattedDate="formattedDate"
       />
-
-<!--      Hide introduction paragraph by ticket MR-2146-->
-<!--      <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>-->
       <div class="blog-post__main-content">
         <table-of-contents :content="document.table_of_contents" v-if="$prismic.asText(document.table_of_contents)"/>
         <slices-block :slices="slices" class="blog-post__text-container"/>
