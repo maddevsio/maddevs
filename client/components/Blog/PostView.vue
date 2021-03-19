@@ -36,8 +36,6 @@
         :tags="tags"
         :formattedDate="formattedDate"
       />
-
-      <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
       <div class="blog-post__main-content">
         <table-of-contents :content="document.table_of_contents" v-if="$prismic.asText(document.table_of_contents)"/>
         <slices-block :slices="slices" class="blog-post__text-container"/>
@@ -237,7 +235,7 @@ export default {
 
     &__main-content {
       max-width: 680px;
-      margin: 0 auto;
+      margin: 25px auto 0;
     }
 
     &__share {
