@@ -2,12 +2,12 @@
   <div
     ref="trackContainer"
     class="comparsion-container"
-    v-on:mousemove="trackLocation"
-    v-on:mousedown="trackLocation"
-    v-on:touchstart="trackLocation"
-    v-on:touchmove="trackLocation"
-    v-on:touchend="trackLeave"
-    v-on:mouseleave="trackLeave"
+    @mousemove="trackLocation"
+    @mousedown="trackLocation"
+    @touchstart="trackLocation"
+    @touchmove="trackLocation"
+    @touchend="trackLeave"
+    @mouseleave="trackLeave"
   >
     <div class="comparsion-track-line" ref="trackLine"></div>
     <div class="comparsion-view">
@@ -35,18 +35,24 @@ export default {
   props: {
     beforeImageSrc: {
       type: String,
-      default: ''
+      default: () => ''
     },
     afterImageSrc: {
       type: String,
-      default: ''
+      default: () => ''
     },
     altText: {
       type: String,
-      default: ''
+      default: () => ''
     },
-    baseWidth: String,
-    baseHeight: String
+    baseWidth: {
+      type: String,
+      default: () => ''
+    },
+    baseHeight: {
+      type: String,
+      default: () => ''
+    }
   },
   data() {
     return {
