@@ -7,7 +7,7 @@ const OUTPUT_VALUE = '+1 2345-678-90';
 describe('Phone Handler Mixin',   () => {
   const wrapper = mount(phoneHandler);
 
-  test('empty', () => {
+  test('If we pass an incorrect parameter. The function will work, but it will not make changes in the store', () => {
     expect(wrapper.vm.$data.phoneNumber).toBe(null);
     wrapper.vm.phoneChangeHandler([]);
     expect(wrapper.vm.$data.phoneNumber).toBe(null);
