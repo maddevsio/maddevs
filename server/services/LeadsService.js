@@ -10,6 +10,51 @@ const storeURLs = {
 };
 
 /**
+ * Public methods
+ */
+async function refreshCrmToken() {
+  /**
+   * We need to get refresh token for refresh access token
+   */
+  const currentToken = await getToken(tokensTypes.AMOCRM);
+  if(!currentToken) throw new Error('Current token not found');
+
+  const url = `${config.AMOCRM_URL}/oauth2/access_token`;
+  const body = {
+    client_id: config.AMOCRM_ID,
+    client_secret: config.AMOCRM_SECRET,
+    grant_type: 'refresh_token',
+    refresh_token: currentToken.refresh,
+    redirect_uri: config.AMOCRM_REDIRECT_URL
+  };
+
+  const { 
+    data: { 
+      access_token: access, 
+      refresh_token: refresh 
+    } 
+  } = await axios.post(url, body);
+
+  /**
+   * After getting refresh and access tokens from API, we need to save their
+   */
+  await saveToken({ access, refresh }, tokensTypes.AMOCRM);
+
+  return true;
+}
+
+async function createNewLead(rawData, token) {
+  const contact = await storeEntity(fromRawContact(rawData), 'contacts', token);
+  if(rawData.company) {
+    const company = await storeEntity(fromRawCompany(rawData), 'companies', token);
+    await linkCompanyWithContact({ company, contact }, token);
+  }
+  const lead = await storeEntity(fromRawLead(rawData, contact), 'leads', token);
+  if(rawData.description) await storeEntity(fromRawNote(rawData, lead), 'notes', token);
+  return true;
+}
+
+/**
  * Private pure getters
  */
 const getRequestConfig = token => ({ headers: { 'Authorization': `Bearer ${token.access}` } });
@@ -28,7 +73,7 @@ const buildCustomField = (field_id, value) => ({
 /**
  * Private fromRaw methods for transform data
  */
-const fromRawContact = ({ fullname: name, email, phone = 'No data' }) => {
+const fromRawContact = ({ fullname: name, email, phone }) => {
   const customFields = [];
   if(phone) customFields.push(buildCustomField(229497, phone));
   if(email) customFields.push(buildCustomField(229499, email));
@@ -85,50 +130,6 @@ async function linkCompanyWithContact({ company, contact }, token) {
   return getDataFromResponse(response, 'links');
 }
 
-/**
- * Public methods
- */
-async function createNewLead(rawData, token) {
-  const contact = await storeEntity(fromRawContact(rawData), 'contacts', token);
-  if(rawData.company) {
-    const company = await storeEntity(fromRawCompany(rawData), 'companies', token);
-    await linkCompanyWithContact({ company, contact }, token);
-  }
-  const lead = await storeEntity(fromRawLead(rawData, contact), 'leads', token);
-  if(rawData.description) await storeEntity(fromRawNote(rawData, lead), 'notes', token);
-  return true;
-}
-
-async function refreshCrmToken() {
-  /**
-   * We need to get refresh token for refresh access token
-   */
-  const currentToken = await getToken(tokensTypes.AMOCRM);
-  if(!currentToken) throw new Error('Current token not found');
-
-  const url = `${config.AMOCRM_URL}/oauth2/access_token`;
-  const body = {
-    client_id: config.AMOCRM_ID,
-    client_secret: config.AMOCRM_SECRET,
-    grant_type: 'refresh_token',
-    refresh_token: currentToken.refresh,
-    redirect_uri: config.AMOCRM_REDIRECT_URL
-  };
-
-  const { 
-    data: { 
-      access_token: access, 
-      refresh_token: refresh 
-    } 
-  } = await axios.post(url, body);
-
-  /**
-   * After getting refresh and access tokens from API, we need to save their
-   */
-  await saveToken({ access, refresh }, tokensTypes.AMOCRM);
-
-  return true;
-}
 
 module.exports = {
   createNewLead,
