@@ -56,6 +56,8 @@ export default {
   },
   data() {
     return {
+      beforeImageWidth: 50, // %
+      trackLinePosition: 50, // %
       trackLeaveTimeout: null
     };
   },
@@ -76,17 +78,19 @@ export default {
       *  (e.pageX - afterImageRect.left) - this result is a part of the total amount of the picture width (unknown%)
       *  this.$refs.afterImage.offsetWidth - total amount of the picture width (100%)
       */
-      const trackLinePosition = ((e.pageX - trackContainerRect.left) / this.$refs.trackContainer.offsetWidth) * 100;
-      const beforeImagePosition = ((e.pageX - afterImageRect.left) / this.$refs.afterImage.offsetWidth) * 100;
-      if (trackLinePosition >= 0 && trackLinePosition <= 100) {
-        this.$refs.trackLine.style.left = `${trackLinePosition}%`;
-      }
-      if (beforeImagePosition >= 0 && beforeImagePosition <= 100) {
-        this.$refs.beforeImage.style.width = `${beforeImagePosition}%`;
-      }
+      this.beforeImageWidth = ((e.pageX - afterImageRect.left) / this.$refs.afterImage.offsetWidth) * 100;
+      this.trackLinePosition = ((e.pageX - trackContainerRect.left) / this.$refs.trackContainer.offsetWidth) * 100;
+      this.$refs.beforeImage.style.width = `${this.beforeImageWidth}%`;
+      this.$refs.trackLine.style.left = `${this.trackLinePosition}%`;
+      if (this.beforeImageWidth > 100) this.$refs.beforeImage.style.width = '100%';
+      if (this.beforeImageWidth < 0) this.$refs.beforeImage.style.width = '0%';
+      if (this.trackLinePosition > 100) this.$refs.trackLine.style.left = '100%';
+      if (this.trackLinePosition < 0) this.$refs.trackLine.style.left = '0%';
     },
     trackLeave() {
       this.trackLeaveTimeout = setTimeout(() => {
+        this.beforeImageWidth = 50;
+        this.trackLinePosition = 50;
         this.$refs.beforeImage.style.transition = '0.3s ease-out width';
         this.$refs.trackLine.style.transition = '0.3s ease-out left, 0.3s ease-in opacity';
         this.$refs.beforeImage.style.width = '50%';
@@ -97,11 +101,8 @@ export default {
   },
   computed: {
     beforeImageStyle() {
-      if (this.$props.beforeImage) {
-        return `background-image: url(${require(`../../assets/img/${this.$props.beforeImage}`)});`;
-      } else {
-        return null;
-      }
+      if (this.$props.beforeImage) return `background-image: url(${require(`../../assets/img/${this.$props.beforeImage}`)});`;
+      return null;
     }
   }
 };
@@ -148,6 +149,7 @@ export default {
       left: 0;
       height: 100%;
       width: 50%;
+      max-width: 100%;
       background-size: cover;
     }
 
