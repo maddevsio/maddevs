@@ -41,7 +41,7 @@
     max-width: 645px;
   }
 
-  &_before-after-gif-wrapper {
+  &_before-after-wrapper {
     padding: 50px 0;
 
     @media screen and (max-width: 995px) {
@@ -54,11 +54,7 @@
       padding-bottom: 38px;
     }
   }
-
-  &_before-after-gif {
-    max-width: 1000px;
-  }
-
+  
   &_minimum-viable-product-cards {
     @include grid(repeat(2, 1fr), auto, 24px, 0);
   }
