@@ -2,6 +2,9 @@
 const { getToken, tokensTypes } = require('../services/TokenService');
 const { refreshCrmToken, createNewLead } = require('../services/LeadsService');
 
+// utilities
+const logError = require('../utils/logError');
+
 async function createLead(req, res) {
   try {
     /**
@@ -16,8 +19,8 @@ async function createLead(req, res) {
 
     return res.status(200).json({ success });
   } catch(error) {
-    console.error(error);
-    return res.status(500).json({ message: 'Error during creating lead', details: error });
+    logError(error, 'Error during creating lead');
+    return res.status(500).json({ success: false, message: 'Error during creating lead', details: error });
   }
 }
 
