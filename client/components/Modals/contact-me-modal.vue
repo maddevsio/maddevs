@@ -38,10 +38,10 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Phone number</p>
-        <input @input="$v.phone.$touch" type="text" :class="{ 'invalid': $v.phone.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" v-model="phone">
+        <input @input="phoneChangeHandler" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" v-model="phoneNumber">
         <!-- Erros -->
-        <div v-if="$v.phone.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.phone.phone">
+        <div v-if="$v.phoneNumber.$dirty">
+          <span class="modal-error-text error-text" v-if="!$v.phoneNumber.phone">
             Sorry, this field can only contain numbers and characters specific for phone numbers.
           </span>
         </div>
@@ -50,15 +50,14 @@
     </div>
     <FormCheckboxes
       ref="checkboxes"
-      v-on:getPrivacyCheckboxState="getPrivacyCheckboxState"
-      v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
-      :inputId="inputId"
+      v-on:getPrivacyCheckboxState="agreeWithPrivacyPolicy = $event"
+      v-on:getDiscountOffersCheckboxState="agreeToGetMadDevsDiscountOffers = $event"
+      inputId="contact-me"
     />
     <UIButton
       class="modal-button"
       @click="submitForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
-      :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
-      :loading="onSubmit"
+      :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy"
     >
       Сontact Me
     </UIButton>
@@ -66,6 +65,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 import { required, email, maxLength } from 'vuelidate/lib/validators';
 import { phone } from '@/helpers/validators';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
@@ -91,25 +91,18 @@ export default {
       required,
       email
     },
-    phone: {
+    phoneNumber: {
       phone
     },
-    validationGroup: ['fullname', 'company', 'email', 'phone']
+    validationGroup: ['fullname', 'company', 'email', 'phoneNumber']
   },
   data: () => ({
-    modalName: 'contact-me-modal',
-    fullname: null,
-    email: null,
-    emailTo: process.env.emailContact,
-    phone: null,
-    company: null,
+    fullname: '',
+    email: '',
+    phoneNumber: '',
+    company: '',
     agreeWithPrivacyPolicy: false,
-    agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'contact-me',
-    onSubmit: false,
-    subject: 'Marketing',
-    form: null,
-    modalTitle: 'Mad Devs Website Forms'
+    agreeToGetMadDevsDiscountOffers: false
   }),
   mounted() {
     this.$nuxt.$on('resetCheckboxesInForm', () => { // Reset checkboxes in form if user close modal
@@ -118,56 +111,47 @@ export default {
     });
   },
   methods: {
-    getPrivacyCheckboxState(privacyState) {
-      this.agreeWithPrivacyPolicy = privacyState;
-    },
+    ...mapActions(['sendEmail', 'createNewLead']),
 
-    getDiscountOffersCheckboxState(discountOffersState) {
-      this.agreeToGetMadDevsDiscountOffers = discountOffersState;
-    },
+    submitForm(isValid) {
+      if(!isValid) return;
 
-    async submitForm(isValid) {
-      if(!isValid || this.onSubmit) return;
-
-      const data = {
-        // templateId: 305480, // It's template id for email
-        // emailTo: this.emailTo || '',
-        // agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
-        // agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
-        // subject: this.subject || '',
-        // modalTitle: this.modalTitle
+      const lead = {
         fullname: this.fullname,
         email: this.email || '',
         company: this.company,
-        phone: this.phone || '',
+        phone: this.phoneNumber || '',
         type: 'contact-me'
       };
 
-      await this.$store.dispatch('createNewLead', data);
-      
-      this.onSubmit = false;
+      const email = {
+        templateId: 303792,
+        variables: {
+          fullName: this.fullname || '',
+          email: this.email || '',
+          company: this.company || '',
+          phoneNumber: this.phoneNumber || '',
+          emailTo: process.env.emailContact,
+          agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
+          agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
+          subject: 'Marketing',
+          modalTitle: 'Mad Devs Website Form'
+        }
+      };
+
+      this.createNewLead(lead);
+      this.sendEmail(email);
+
       this.resetForm();
       this.$parent.$emit('success');
     },
-
-    // createLead() {
-    //   const data = [{
-    //     name: this.fullname,
-    //     custom_fields_values: [
-    //       {field_id: 261281, values: [{value: this.email}]}, // Email
-    //       {field_id: 261331, values: [{value: this.company}]}, // Company
-    //       {field_id: 261333, values: [{value: this.phone}]} // Phone
-    //     ]
-    //   }];
-    //   this.$store.dispatch('createNewLead', data);
-    // },
     
     resetForm() {
       this.$refs.checkboxes.reset();
-      this.fullname = null;
-      this.email = null;
-      this.phone = null;
-      this.company = null;
+      this.fullname = '';
+      this.email = '';
+      this.phoneNumber = '';
+      this.company = '';
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
     }

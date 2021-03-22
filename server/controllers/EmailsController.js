@@ -7,16 +7,27 @@ function validate(req) {
     message: 'OK'
   };
 
-  if(!req.body.templateId) {
-    error.status = 500;
-    error.message = 'templateId key not found';
-  } else if(typeof req.body.templateId !== 'number') {
-    error.status = 500;
-    error.message = 'templateId key must be a number';
-  } else if(!req.body.variables) {
-    error.status = 500;
-    error.message = 'variables key not found';
-  }
+  const errors = {
+    templateId: {
+      message: 'templateId key not found or incorrect',
+      compareFn: value => !value || typeof value !== 'number'
+    },
+    variables: {
+      message: 'variables key not found',
+      compareFn: value => !value
+    }
+  };
+
+  Object.entries(errors).some(([key, { message, compareFn }]) => {
+    const isError = compareFn(req.body[key]);
+
+    if(isError) {
+      error.status = 500;
+      error.message = message;
+    }
+
+    return isError;
+  });
 
   return {
     isValid: error.status === 200,

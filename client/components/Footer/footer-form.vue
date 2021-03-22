@@ -37,16 +37,15 @@
     </div>
     <FormCheckboxes
       ref="checkboxes"
-      @getPrivacyCheckboxState="getPrivacyCheckboxState"
-      @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
+      @getPrivacyCheckboxState="agreeWithPrivacyPolicy = $event"
+      @getDiscountOffersCheckboxState="agreeToGetMadDevsDiscountOffers = $event"
     />
     <UIButton
       class="ui-button--transparent-bgc submit-button"
       @click="submitForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
       type="button"
       ref="submitButton"
-      :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
-      :loading="onSubmit"
+      :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy"
     >
       Order a project now
     </UIButton>
@@ -55,6 +54,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 import { required, email, maxLength } from 'vuelidate/lib/validators';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 import UIButton from '@/components/ui/UIButton';
@@ -85,68 +85,41 @@ export default {
     validationGroup: ['fullname', 'email', 'description']
   },
   data: () => ({
-    form: null,
-    fullname: null,
-    email: null,
-    emailTo: process.env.emailContact,
+    fullname: '',
+    email: '',
     description: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    isSuccess: false,
-    onSubmit: false,
-    subject: 'Marketing',
-    modalTitle: 'Mad Devs Website Forms'
+    isSuccess: false
   }),
   methods: {
-    getPrivacyCheckboxState(privacyState) {
-      this.agreeWithPrivacyPolicy = privacyState;
-    },
+    ...mapActions(['sendEmail', 'createNewLead']),
 
-    getDiscountOffersCheckboxState(discountOffersState) {
-      this.agreeToGetMadDevsDiscountOffers = discountOffersState;
-    },
+    submitForm(isValid) {
+      if(!isValid) return;
 
-    // createLead() {
-    //   const data = [{
-    //     name: this.fullname,
-    //     custom_fields_values: [
-    //       { field_id: 261281, values: [{ value: this.email }] }, // Email
-    //       { field_id: 261437, values: [{ value: this.description }] } // Project Describer
-    //     ]
-    //   }];
-    // },
-
-    async submitForm(isValid) {
-      const SUCCESS_RESPONSE_STATUS = 200;
-
-
-      if(!isValid || this.onSubmit) return;
-
-      const data = {
-        // templateId: 305480, // It's template id for email
-        // emailTo: this.emailTo || '',
-        // agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
-        // agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
-        // subject: this.subject || '',
-        // modalTitle: this.modalTitle
+      const lead = {
         fullname: this.fullname,
         email: this.email || '',
         description: this.description,
         type: 'footer-form'
       };
 
-      const response = await this.$store.dispatch('createNewLead', data);
-      
-      this.onSubmit = false;
+      const email = {
+        ...lead,
+        templateId: 305480,
+        emailTo: process.env.emailContact,
+        agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
+        agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers,
+        subject: 'Marketing',
+        modalTitle: 'Mad Devs Website Form'
+      };
+
+      this.createNewLead(lead);
+      this.sendEmail(email);
+
       this.resetForm();
-      
-      if(response.status === SUCCESS_RESPONSE_STATUS) {
-        this.isSuccess = true;
-        // TODO: Very dirty, need to fix
-        setTimeout(() => {
-          this.isSuccess = false;
-        }, 3000);
-      } else this.isSuccess = false;
+      this.isSuccess = true;
     },
     
     resetForm() {
