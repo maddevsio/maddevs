@@ -77,9 +77,9 @@
           <BeforeAfterImage
             :baseWidth="'1000'"
             :baseHeight="'578.47'"
-            :beforeImageSrc="'Cases/godee/png/application-before.png'"
-            :afterImageSrc="'Cases/godee/png/application-after.png'"
-            :altText="'GoDee Public Transportation App at 2018 and now.'"
+            :beforeImage="'Cases/godee/png/application-before.png'"
+            :afterImage="'Cases/godee/png/application-after.png'"
+            :alt="'GoDee Public Transportation App at 2018 and now.'"
           />
         </div>
       </section>

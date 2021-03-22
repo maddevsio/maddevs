@@ -14,14 +14,14 @@
       <div
         ref="beforeImage"
         class="comparsion-image_before"
-        :style="`background-image: url(${require(`@/assets/img/${beforeImageSrc}`)});`"
+        :style="beforeImageStyle"
       ></div>
       <img
         ref="afterImage"
         loading="lazy"
         class="comparsion-image_after"
-        :src="require(`@/assets/img/${afterImageSrc}`)"
-        :alt="altText"
+        :src="require(`../../assets/img/${afterImage}`)"
+        :alt="alt"
         :width="baseWidth"
         :height="baseHeight"
       />
@@ -33,23 +33,23 @@
 export default {
   name: 'BeforeAfterImage',
   props: {
-    beforeImageSrc: {
-      type: String,
-      default: () => ''
-    },
-    afterImageSrc: {
-      type: String,
-      default: () => ''
-    },
-    altText: {
-      type: String,
-      default: () => ''
-    },
     baseWidth: {
       type: String,
       default: () => ''
     },
     baseHeight: {
+      type: String,
+      default: () => ''
+    },
+    beforeImage: {
+      type: String,
+      default: () => ''
+    },
+    afterImage: {
+      type: String,
+      default: () => ''
+    },
+    alt: {
       type: String,
       default: () => ''
     }
@@ -66,7 +66,7 @@ export default {
       clearTimeout(this.trackLeaveTimeout);
       this.$refs.beforeImage.style.transition = null;
       this.$refs.trackLine.style.transition = '0.3s ease-out opacity';
-      this.$refs.trackLine.style.opacity = '0.3';
+      this.$refs.trackLine.style.opacity = '0.25';
       const trackContainerRect = this.$refs.trackContainer.getBoundingClientRect();
       const afterImageRect = this.$refs.afterImage.getBoundingClientRect();
       /**
@@ -93,6 +93,15 @@ export default {
         this.$refs.trackLine.style.left = '50%';
         this.$refs.trackLine.style.opacity = '1';
       }, 5000);
+    }
+  },
+  computed: {
+    beforeImageStyle() {
+      if (this.$props.beforeImage) {
+        return `background-image: url(${require(`../../assets/img/${this.$props.beforeImage}`)});`;
+      } else {
+        return null;
+      }
     }
   }
 };
