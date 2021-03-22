@@ -9,7 +9,7 @@
 <script>
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import initDriftHelper from '@/helpers/initDrift';
+import initIntercomHelper from '@/helpers/initIntercom';
 
 export default {
   name: 'Default',
@@ -30,7 +30,7 @@ export default {
       }
     });
     let scriptLoader = () => {
-      initDriftHelper();
+      initIntercomHelper();
       window.removeEventListener('scroll', scriptLoader);
     };
     window.addEventListener('scroll', scriptLoader);
