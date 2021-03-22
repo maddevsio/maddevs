@@ -20,7 +20,7 @@
         ref="afterImage"
         loading="lazy"
         class="comparsion-image_after"
-        :src="require(`../../assets/img/${afterImage}`)"
+        :src="afterImageSrc"
         :alt="afterImageAlt"
         :width="baseWidth"
         :height="baseHeight"
@@ -101,8 +101,10 @@ export default {
   },
   computed: {
     beforeImageStyle() {
-      if (this.$props.beforeImage) return `background-image: url(${require(`../../assets/img/${this.$props.beforeImage}`)});`;
-      return null;
+      return this.$props.beforeImage ? `background-image: url(${require(`../../assets/img/${this.$props.beforeImage}`)});` : null;
+    },
+    afterImageSrc() {
+      return this.$props.afterImage ? `${require(`../../assets/img/${this.$props.afterImage}`)}` : null;
     },
     afterImageAlt() {
       return this.$props.alt || null;
