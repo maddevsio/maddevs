@@ -92,6 +92,7 @@ export default {
     &__image {
       width: 100%;
       height: 100%;
+      min-width: 136px;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;

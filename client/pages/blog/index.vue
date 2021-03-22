@@ -48,7 +48,7 @@
           <div v-if="filteredPosts.length !== 0" class="filtered-posts__wrapper">
             <section v-for="(post, i) in filteredPostsToShow" :key="i" :post="post" class="filtered-posts__single-post">
               <div class="single-post__wrapper">
-                <recommended-blog-widget :post="post"/>
+                <recommended-blog-widget :post="post" className="filtered-post"/>
               </div>
             </section>
           </div>

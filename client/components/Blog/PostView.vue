@@ -44,7 +44,7 @@
     <div v-if="showRecommended" class="blog-post__recommended-posts">
       <div class="blog-post__recommended-posts-list container">
         <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="blog-post__recommended-post">
-          <recommended-blog-widget :post="recommendedPost"/>
+          <recommended-blog-widget :post="recommendedPost" className="recommended-post"/>
         </section>
       </div>
     </div>
