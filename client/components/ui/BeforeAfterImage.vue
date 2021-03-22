@@ -21,7 +21,7 @@
         loading="lazy"
         class="comparsion-image_after"
         :src="require(`../../assets/img/${afterImage}`)"
-        :alt="alt"
+        :alt="afterImageAlt"
         :width="baseWidth"
         :height="baseHeight"
       />
@@ -103,6 +103,9 @@ export default {
     beforeImageStyle() {
       if (this.$props.beforeImage) return `background-image: url(${require(`../../assets/img/${this.$props.beforeImage}`)});`;
       return null;
+    },
+    afterImageAlt() {
+      return this.$props.alt || null;
     }
   }
 };
@@ -123,12 +126,14 @@ export default {
       -ms-touch-action: none;
       -webkit-user-select: none;
       img {
+        width: 100%;
+        height: auto;
         display: block;
       }
     }
 
     &-track-line {
-      z-index: 2;
+      z-index: 3;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -139,11 +144,13 @@ export default {
     }
 
     &-view {
+      display: flex;
+      justify-content: center;
       position: relative;
     }
     
     &-image_before {
-      z-index: 1;
+      z-index: 2;
       position: absolute;
       top: 0;
       left: 0;
@@ -154,7 +161,7 @@ export default {
     }
 
     &-image_after {
-      z-index: -1;
+      z-index: 1;
       width: 100%;
       height: auto;      
     }
