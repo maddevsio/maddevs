@@ -35,23 +35,23 @@ export default {
   props: {
     baseWidth: {
       type: String,
-      default: () => ''
+      default: ''
     },
     baseHeight: {
       type: String,
-      default: () => ''
+      default: ''
     },
     beforeImage: {
       type: String,
-      default: () => ''
+      default: ''
     },
     afterImage: {
       type: String,
-      default: () => ''
+      default: ''
     },
     alt: {
       type: String,
-      default: () => ''
+      default: ''
     }
   },
   data() {
