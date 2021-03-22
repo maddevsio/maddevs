@@ -131,6 +131,7 @@ export default {
         width: 100%;
         height: auto;
         display: block;
+        margin: 0 auto;
       }
     }
 
@@ -146,8 +147,6 @@ export default {
     }
 
     &-view {
-      display: flex;
-      justify-content: center;
       position: relative;
     }
     
