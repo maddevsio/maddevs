@@ -157,7 +157,7 @@ export default {
       left: 0;
       height: 100%;
       width: 50%;
-      max-width: 100%;
+      max-width: calc(100% - 0.6px); // 0.6px - so that image_before does not jump on the 100% width size
       background-size: cover;
     }
 
