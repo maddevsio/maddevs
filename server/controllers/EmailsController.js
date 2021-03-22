@@ -2,33 +2,32 @@
 const { sendEmail } = require('../services/EmailsService');
 
 function validate(req) {
-  const results = {
+  const error = {
     status: 200,
     message: 'OK'
   };
 
   if(!req.body.templateId) {
-    results.status = 500;
-    results.message = 'templateId key not found';
+    error.status = 500;
+    error.message = 'templateId key not found';
   } else if(typeof req.body.templateId !== 'number') {
-    results.status = 500;
-    results.message = 'templateId key must be a number';
+    error.status = 500;
+    error.message = 'templateId key must be a number';
   } else if(!req.body.variables) {
-    results.status = 500;
-    results.message = 'variables key not found';
+    error.status = 500;
+    error.message = 'variables key not found';
   }
 
   return {
-    isValid: results.status === 200,
-    results
+    isValid: error.status === 200,
+    error
   };
 }
 
 function index(req, res) {
-  const { isValid, results } = validate();
-  if(!isValid) req.status(results.status).json(results);
-  const callback = data => res.json(data);
-  sendEmail(req, callback);
+  const { isValid, error } = validate(req);
+  if(!isValid) return res.status(error.status).json(error);
+  sendEmail(req, data => res.json(data));
 }
 
 module.exports = {
