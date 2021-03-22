@@ -1,24 +1,16 @@
-const mongoose = require('mongoose');
+const Token = require('../models/TokenModel');
+const logError = require('../utils/logError');
 
 const tokensTypes = {
   AMOCRM: 'amocrm'
 };
-
-const tokenSchema = new mongoose.Schema({
-  type: String,
-  refresh: String,
-  access: String
-});
-
-const Token = mongoose.model('Token', tokenSchema);
-
 
 const getToken = async type => {
   try {
     const token = await Token.findOne({ type });
     return token;
   } catch(error) {
-    console.error('Error during getting token', error);
+    logError(error, 'Error during getting token');
   }
 };
 
@@ -32,7 +24,7 @@ const saveToken = async ({ access, refresh }, type) => {
 
     return token;
   } catch(error) {
-    console.error('Error during save token', error);
+    logError(error, 'Error during save token');
   }
 };
 
