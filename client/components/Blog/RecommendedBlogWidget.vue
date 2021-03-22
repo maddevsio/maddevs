@@ -1,7 +1,7 @@
 <template>
   <nuxt-link :to="link" :class="{ 'latest-post': isRecentPost }">
     <div class="blog-post">
-      <div class="blog-post__cover-image" :style="`background-image: url(${post.data.featured_image.url})`"/>
+      <div class="blog-post__cover-image" :class="`blog-post__${className}-cover-image`" :style="`background-image: url(${post.data.featured_image.url})`"/>
       <div>
         <h2 class="blog-post__title">{{ $prismic.asText(post.data.title) }}</h2>
         <p class="blog-post__paragraph">{{getFirstParagraph(post)}}</p>
@@ -28,6 +28,10 @@ export default {
     post: {
       type: Object,
       required: true
+    },
+    className: {
+      type: String,
+      default: ''
     }
   },
   components: {
@@ -105,6 +109,10 @@ export default {
       margin-bottom: 16px;
     }
 
+    &__recommended-post-cover-image {
+      background-size: cover;
+    }
+
     &__featured-image {
       max-width: 100%;
       height: auto;
@@ -150,6 +158,19 @@ export default {
         padding: 4px 16px;
         transition: 0.2s;
         line-height: 22px;
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      &__recommended-post-cover-image {
+        background-size: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 991px) {
+      &__filtered-post-cover-image,
+      &__recommended-post-cover-image {
+        background-size: cover;
       }
     }
   }

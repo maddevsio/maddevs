@@ -12,7 +12,10 @@ describe('Recommended blog widget component', () => {
           asText: text => text[0].text
         }
       },
-      propsData: {post: blogPost},
+      propsData: {
+        post: blogPost,
+        className: 'test'
+      },
       stubs: ['nuxt-link']
     });
   });
