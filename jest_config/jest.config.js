@@ -20,7 +20,13 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     '<rootDir>/client/components/**/*.vue',
-    '<rootDir>/client/pages/*.vue'
+    '<rootDir>/client/pages/*.vue',
+    '<rootDir>/server/**/*.js'
+  ],
+  coveragePathIgnorePatterns: [
+    '<rootDir>/server/db',
+    '<rootDir>/server/routes',
+    '<rootDir>/server/index.js'
   ],
   coverageReporters: [
     'json-summary',
