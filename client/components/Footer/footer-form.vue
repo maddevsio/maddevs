@@ -106,16 +106,20 @@ export default {
       };
 
       const email = {
-        ...lead,
         templateId: 305480,
-        emailTo: process.env.emailContact,
-        agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy,
-        agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers,
-        subject: 'Marketing',
-        modalTitle: 'Mad Devs Website Form'
+        variables: {
+          fullName: this.fullname || '',
+          email: this.email || '',
+          emailTo: process.env.emailContact,
+          projectDescriber: this.description,
+          agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
+          agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
+          subject: 'Marketing',
+          modalTitle: 'Mad Devs Website Form'
+        }
       };
 
-      this.createNewLead();
+      this.createNewLead(lead);
       this.sendEmail(email);
 
       this.resetForm();
