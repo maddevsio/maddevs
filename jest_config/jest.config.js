@@ -20,7 +20,8 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     '<rootDir>/client/components/**/*.vue',
-    '<rootDir>/client/pages/*.vue'
+    '<rootDir>/client/pages/*.vue',
+    '<rootDir>/client/mixins/*.js'
   ],
   coverageReporters: [
     'json-summary',
