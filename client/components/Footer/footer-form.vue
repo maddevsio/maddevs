@@ -49,7 +49,7 @@
     >
       Order a project now
     </UIButton>
-    <SuccessModal :visibled="isSuccess" id="footer-modal" @onClose="resetForm" />
+    <SuccessModal :visibled="isSuccess" id="footer-modal" @onClose="isSuccess = false" />
   </form>
 </template>
 
@@ -115,7 +115,7 @@ export default {
         modalTitle: 'Mad Devs Website Form'
       };
 
-      this.createNewLead(lead);
+      this.createNewLead();
       this.sendEmail(email);
 
       this.resetForm();
