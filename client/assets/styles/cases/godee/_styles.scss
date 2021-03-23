@@ -127,7 +127,14 @@
     perspective: 300px;
   }
 
-  &_parallax-container {
+  &_content-layer {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+  }
+
+  &_parallax-layer {
+    z-index: -9;
     height: 576px;
     max-width: 1440px;
     margin-left: auto;
@@ -135,7 +142,6 @@
     position: relative;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    overflow: hidden;
   }
 
   &_parallax-image-wrapper {
@@ -153,16 +159,9 @@
     bottom: 0;
     background: url('../../assets/img/Cases/godee/jpg/parallax.jpg');
     background-size: cover;
+    background-position: center;
     -webkit-transform: translateZ(-300px) scale(2);
     transform: translateZ(-300px) scale(2);
-    z-index: 3;
-  }
-
-  &_safari-parallax-image {
-    height: 576px;
-    max-width: 1440px;
-    background: url('../../assets/img/Cases/godee/jpg/parallax.jpg') no-repeat center;
-    background-size: cover;
   }
 
   &_html-video-wrapper,
