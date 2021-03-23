@@ -53,19 +53,9 @@ describe('Footer form', () => {
 
   test('has a functions', () => {
     expect(
-      typeof footerForm.methods.getPrivacyCheckboxState && 
-      typeof footerForm.methods.getDiscountOffersCheckboxState
+      typeof footerForm.methods.submitForm && 
+      typeof footerForm.methods.resetForm
     ).toBe('function');
-  });
-
-  test('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true);
-    wrapper.vm.getDiscountOffersCheckboxState(true);
-
-    expect(
-      wrapper.vm.$data.agreeWithPrivacyPolicy &&
-      wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
-    ).toEqual(true);
   });
 
   test('should rest values in data instances', () => {

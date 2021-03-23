@@ -32,10 +32,12 @@ describe('EmailsService', () => {
         name: req.body.variables.modalTitle,
         email: 'marketing@maddevs.io'
       },
-      to: {
-        name: 'Mad Devs team',
-        email: req.body.variables.emailTo
-      }
+      to: [
+        {
+          name: 'Mad Devs team',
+          email: req.body.variables.emailTo
+        }
+      ]
     });
   });
 
@@ -56,10 +58,12 @@ describe('EmailsService', () => {
         name: req.body.variables.modalTitle,
         email: 'marketing@maddevs.io'
       },
-      to: {
-        name: 'Mad Devs team',
-        email: req.body.variables.emailTo
-      },
+      to: [
+        {
+          name: 'Mad Devs team',
+          email: req.body.variables.emailTo
+        }
+      ],
       attachments_binary: {
         name: 'base64'
       }

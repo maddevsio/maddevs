@@ -53,24 +53,14 @@ describe('Contact me modal', () => {
       defaultData.agreeWithPrivacyPolicy &&
       defaultData.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
-    expect(defaultData.inputId).toEqual('contact-me');
+    expect(defaultData.fullname).toBe('');
   });
 
   test('has a functions', () => {
     expect(
-      typeof contactMeModal.methods.getPrivacyCheckboxState &&
-      typeof contactMeModal.methods.getDiscountOffersCheckboxState
+      typeof contactMeModal.methods.submitForm &&
+      typeof contactMeModal.methods.resetForm
     ).toBe('function');
-  });
-
-  test('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true);
-    wrapper.vm.getDiscountOffersCheckboxState(true);
-
-    expect(
-      wrapper.vm.$data.agreeWithPrivacyPolicy &&
-      wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
-    ).toEqual(true);
   });
 
   test('should rest values in data instances', () => {
@@ -91,18 +81,16 @@ describe('Contact me modal', () => {
     wrapper.vm.resetForm();
     expect(
       wrapper.vm.$data.fullName &&
-      wrapper.vm.$data.email &&
-      wrapper.vm.$data.form
-    ).toEqual(null);
+      wrapper.vm.$data.email
+    ).toEqual('');
     expect(
       wrapper.vm.$data.projectDescriber &&
       wrapper.vm.$data.company &&
       wrapper.vm.$data.phoneNumber
-    ).toEqual(null);
+    ).toEqual('');
     expect(
       wrapper.vm.$data.agreeWithPrivacyPolicy &&
-      wrapper.vm.$data.agreeToGetMadDevsDiscountOffers &&
-      wrapper.vm.$data.isEmailSent
+      wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
     ).toEqual(false);
   });
 });
