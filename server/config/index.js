@@ -12,11 +12,18 @@ const mongoConfig = {
   useNewUrlParser: true
 };
 
+const sentryConfig = {
+  dsn: envs.SENTRY_DSN,
+  tracesSampleRate: 1.0,
+  environment: envs.NODE_ENV
+};
+
 module.exports = {
   ...envs,
   bodyParserJSONConfig,
   bodyParserURLEncodedConfig,
   mongoConfig,
   customerUniversityRedirects,
-  blogRedirects
+  blogRedirects,
+  sentryConfig
 };

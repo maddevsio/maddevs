@@ -3,6 +3,9 @@ const express = require('express');
 // db
 const { connect } = require('./db');
 
+// sentry
+const { configureSentry } = require('./sentry');
+
 // lib middlewares
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -24,32 +27,36 @@ const apiRouter = require('./routes/api');
 
 function bootstrap() {
   const app = express();
+  const Sentry = configureSentry(app);
 
-
+  // DB connect
   connect(config.DATABASE_URL, config.mongoConfig);
 
-  /**
-     * External middlewares
-     */
+  // Sentry handlers
+  app.use(Sentry.Handlers.requestHandler());
+  app.use(Sentry.Handlers.tracingHandler());
+
+  // External middlewares
   app.use(cors());
   app.use(bodyParser.json(config.bodyParserJSONConfig));
   app.use(bodyParser.urlencoded(config.bodyParserURLEncodedConfig));
 
-  /**
-     * Enable trust proxy
-     */
+  // Enable trust proxy
   app.enable('trust proxy');
 
-  // custom middlewares
+  // Custom middlewares
   app.use(applyXFrame);
   app.use(redirectToHttps);
   app.use(redirectToTrailingSlash);
   app.use(redirectToCorrectBlogUrl);
   app.use(redirectToCustomerUrl);
 
-  // routers
+  // Routers
   app.use(webRouter);
   app.use('/api', apiRouter);
+
+  // Errors handler
+  app.use(Sentry.Handlers.errorHandler());
 
   return app;
 }

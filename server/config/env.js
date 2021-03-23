@@ -15,6 +15,12 @@ const SENDPULSE_API_KEY = process.env.NODE_SENDPULSE_API_KEY;
 const SENDPULSE_API_USER_ID = process.env.NODE_SENDPULSE_API_USER_ID;
 const SENDPULSE_TOKEN_STORAGE = '/tmp/';
 
+// Sentry
+const SENTRY_DSN = process.env.NODE_SENTRY_DSN;
+
+// Other
+const NODE_ENV = process.env.NODE_ENV;
+
 module.exports = {
   AMOCRM_SECRET,
   AMOCRM_ID,
@@ -23,5 +29,7 @@ module.exports = {
   DATABASE_URL,
   SENDPULSE_API_USER_ID,
   SENDPULSE_API_KEY,
-  SENDPULSE_TOKEN_STORAGE
+  SENDPULSE_TOKEN_STORAGE,
+  SENTRY_DSN,
+  NODE_ENV
 };
