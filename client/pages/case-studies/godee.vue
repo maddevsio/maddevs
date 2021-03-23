@@ -71,8 +71,17 @@
           </Card>
         </div>
       </section>
-      <section class="container_full case_before-after-gif-wrapper background-color-silver m-48_top media-m-20_top">
-        <img src="../../assets/img/Cases/godee/gif/before-after.gif" class="case_gif case_before-after-gif" alt="GoDee Public Transportation App at 2018 and now." loading="lazy" width="1000" height="578.47">
+      <section class="container_full case_before-after-wrapper background-color-silver m-48_top media-m-20_top">
+        <h2 class="case_title_h2 m-24_bottom case_text-align-center">Before & After</h2>
+        <div class="container_regular">
+          <BeforeAfterImage
+            :baseWidth="'1000'"
+            :baseHeight="'578.47'"
+            :beforeImage="'Cases/godee/png/application-before.png'"
+            :afterImage="'Cases/godee/png/application-after.png'"
+            :alt="'GoDee Public Transportation App at 2018 and now.'"
+          />
+        </div>
       </section>
       <p class="case_image-description m-12_top m-104_bottom media-m-48_bottom">GoDee 2018 VS. GoDee {{ currentYear }}</p>
       <section class="container_regular" ref="cardsRootElem">
@@ -550,6 +559,7 @@ import CardGoDeeImpact from '@/components/Cases/cards-content/CardGoDeeImpact';
 import CardGoDeePrimsAlgorithm from '@/components/Cases/cards-content/CardGoDeePrimsAlgorithm';
 import FooterMain from '@/components/Footer';
 import HeaderMain from '@/components/Header';
+import BeforeAfterImage from '@/components/ui/BeforeAfterImage';
 import initImgLazyHelper from '@/helpers/initImgLazy';
 
 export default {
@@ -579,7 +589,8 @@ export default {
     CardGoDeeImpact,
     CardGoDeePrimsAlgorithm,
     FooterMain,
-    HeaderMain
+    HeaderMain,
+    BeforeAfterImage
   },
   name: 'GoDeeCase',
   layout: 'godee-case-layout',
