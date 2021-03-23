@@ -796,7 +796,6 @@ export default {
         'route-optimization'
       ],
       translateY: null,
-      isSafari: false,
       isIphone: false,
       scrollSpeed: 5,
       cardsContainerHeight: null,
@@ -841,12 +840,6 @@ export default {
         this.setDefaultStylesForCards();
       }
     });
-
-    if(/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) { // Проверяем какой сейчас браузер чтобы на основе этих данных отрисовываем блок
-      this.isSafari = true;
-    } else {
-      this.isSafari = false;
-    }
 
     if(navigator.userAgent.match(/(iPhone)/i)) {
       this.isIphone = true;
