@@ -19,10 +19,12 @@ function buildEmail({ body: { variables, templateId, attachment } }) {
       name: variables.modalTitle,
       email: 'marketing@maddevs.io'
     },
-    to: {
-      name: 'Mad Devs team',
-      email: variables.emailTo
-    }
+    to: [
+      {
+        name: 'Mad Devs team',
+        email: variables.emailTo
+      }
+    ]
   };
 
   if(attachment) email.attachments_binary = { [attachment.name]: attachment.base64 };
