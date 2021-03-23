@@ -27,7 +27,7 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Phone number</p>
-        <input @input="phoneChangeHandler" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" :value="phoneNumber">
+        <input @input="phoneChangeHandler" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+X XXX XXX-XXXX" :value="phoneNumber">
         <!-- Erros -->
         <div v-if="$v.phoneNumber.$dirty">
           <span class="modal-error-text error-text" v-if="!$v.phoneNumber.phone">
