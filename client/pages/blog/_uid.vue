@@ -83,6 +83,7 @@ export default {
       // Returns data to be used in template
       return {
         id: post.id,
+        uid: post.uid,
         document: post.data,
         slices: post.data.body,
         formattedDate: Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(post.data.date)),
@@ -103,6 +104,18 @@ export default {
     postData() {
       return Object.assign({}, this.$data);
     }
+  },
+  beforeRouteEnter (to, from, next) {
+    next(vm => {
+      /**
+       * Prismic saves all previous UID and they both still resolve
+       * This condition checks the current uid and redirects to it
+       * https://community.prismic.io/t/when-does-cache-expire-uid-history/874 - about this issue
+       */
+      if (to.params.uid !== vm.uid && typeof vm.uid === 'string') {
+        next({ path: `/blog/${vm.uid}/` });
+      }
+    });
   }
 };
 </script>
