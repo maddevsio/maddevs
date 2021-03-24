@@ -3,9 +3,11 @@ const config = require('../config');
 const { getToken, saveToken, tokensTypes } = require('./TokenService');
 
 const customFieldIds = {
-  phone: 229497,
-  email: 229499,
-  description: Number(config.AMOCRM_DESCRIPTION_FIELD_ID)
+  phone: Number(config.AMOCRM_PHONE_FIELD_ID),
+  email: Number(config.AMOCRM_EMAIL_FIELD_ID),
+  sourceKey: Number(config.AMOCRM_SOURCE_FIELD_ID),
+  sourceValue: Number(config.AMOCRM_SOURCE_FIELD_VALUE),
+  userId: Number(config.AMOCRM_RESPONSIBLE_USER_ID)
 };
 
 const storeURLs = {
@@ -36,8 +38,8 @@ async function refreshCrmToken() {
 
   const { 
     data: { 
-      access_token: access, 
-      refresh_token: refresh 
+      access_token: access,
+      refresh_token: refresh
     } 
   } = await axios.post(url, body);
 
@@ -52,7 +54,13 @@ async function refreshCrmToken() {
 async function createNewLead(rawData, token) {
   const contact = await storeEntity(fromRawContact(rawData), 'contacts', token);
   const company = await storeEntity(fromRawCompany(rawData), 'companies', token);
-  await storeEntity(fromRawLead(rawData, contact, company), 'leads', token);
+  if(company && contact) {
+    await linkCompanyWithContact({ company, contact }, token);
+  }
+  const lead = await storeEntity(fromRawLead(rawData, contact), 'leads', token);
+  if(rawData.description) {
+    await storeEntity(fromRawNote(rawData, lead), 'notes', token);
+  }
   return true;
 }
 
@@ -90,18 +98,25 @@ const fromRawContact = ({ fullname, email, phone }) => {
   ];
 };
 
-const fromRawCompany = ({ company }) => ([{ name: company }]);
+const fromRawCompany = ({ company }) => company ? [{ name: company }] : null;
 
-const fromRawLead = ({ fullname, company, description }, { id: contactId }, { id: companyId }) => {
-  const customFields = [];
-  if(description) customFields.push(buildCustomField(customFieldIds.description, description));
+const fromRawLead = ({ fullname, company: companyName }, contact, company) => {
+  const _embedded = {};
+  const contacts = contact && contact.id ? [{ id: contact.id }] : null;
+  const companies = company && company.id ? [{ id: company.id }] : null;
+
+  if(contacts) _embedded.contacts = contacts;
+  if(companies) _embedded.companies = companies;
 
   return [
     {
-      name: `${company || fullname}`,
+      name: `${companyName || fullname}`,
       price: 0,
-      _embedded: { contacts: [{ id: contactId }], companies: [{ id: companyId }] },
-      custom_fields_values: [...customFields]
+      responsible_user_id: customFieldIds.userId,
+      _embedded: { contacts, companies },
+      custom_fields_values: [
+        buildCustomField(customFieldIds.sourceKey, customFieldIds.sourceValue)
+      ]
     }
   ];
 };
@@ -118,6 +133,9 @@ const fromRawNote = ({ description: text }, { id: entity_id }) => ([
  * Private async methods
  */
 async function storeEntity(entity, entityType, token) {
+
+  if(!entity) return null;
+
   const url = storeURLs[entityType];
   const requestConfig = getRequestConfig(token);
 
@@ -125,6 +143,20 @@ async function storeEntity(entity, entityType, token) {
   return getDataFromResponse(response, entityType);
 }
 
+async function linkCompanyWithContact({ company, contact }, token) {
+  const url = `${config.AMOCRM_URL}/api/v4/companies/${company.id}/link`;
+  const requestConfig = getRequestConfig(token);
+
+  const body = [
+    {
+      to_entity_id: contact.id,
+      to_entity_type: 'contacts'
+    }
+  ];
+
+  const response = await axios.post(url, body, requestConfig);
+  return getDataFromResponse(response, 'links');
+}
 
 module.exports = {
   createNewLead,
