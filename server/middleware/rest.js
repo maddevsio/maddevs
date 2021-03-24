@@ -2,8 +2,8 @@ const sendpulse = require('sendpulse-api');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const redirectList = require('../json/redirect');
-const blogRedirectList = require('../json/blog.json');
-const customerRedirectList = require('../json/customer-university.json');
+const blogRedirectList = require('../json/blog');
+const customerRedirectList = require('../json/customer-university');
 const app = require('express')();
 
 const _config_ = require('../config');
