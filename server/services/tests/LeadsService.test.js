@@ -77,7 +77,7 @@ describe('LeadsService', () => {
 
     const success = await leadsService.createNewLead(body, token);
     expect(success).toBeTruthy();
-    expect(axiosPost).toBeCalledTimes(5);
+    expect(axiosPost).toBeCalledTimes(4);
   });
 
   test('createNewLead with minimal data', async () => {
@@ -110,6 +110,6 @@ describe('LeadsService', () => {
 
     const success = await leadsService.createNewLead(body, token);
     expect(success).toBeTruthy();
-    expect(axiosPost).toBeCalledTimes(2);
+    expect(axiosPost).toBeCalledTimes(3);
   });
 });
