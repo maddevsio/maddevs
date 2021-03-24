@@ -7,7 +7,7 @@
 <script>
 export default {
   name: 'TextQuoteBox',
-};
+}
 </script>
 
 <style lang="scss" scoped>

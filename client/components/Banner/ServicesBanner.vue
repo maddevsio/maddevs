@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import navigationList from '@/components/ui/navigation-list';
-import navigationItem from '@/components/ui/navigation-item';
+import navigationList from '@/components/ui/navigation-list'
+import navigationItem from '@/components/ui/navigation-item'
 
 export default {
   name: 'ServicesBanner',
@@ -28,7 +28,7 @@ export default {
     navigationList,
     navigationItem,
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

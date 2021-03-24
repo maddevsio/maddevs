@@ -7,7 +7,7 @@
 <script>
 export default {
   name: 'ListTeam',
-};
+}
 </script>
 
 <style scoped lang="scss">

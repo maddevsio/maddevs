@@ -7,7 +7,7 @@
 <script>
 export default {
   name: 'ListNumberedBox',
-};
+}
 </script>
 
 <style scoped lang="scss">

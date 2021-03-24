@@ -1,6 +1,6 @@
-import axios from 'axios';
+import axios from 'axios'
 
-require('dotenv').config();
+require('dotenv').config()
 
 module.exports = {
   srcDir: 'client/',
@@ -78,15 +78,15 @@ module.exports = {
   generate: {
     async routes() {
       const getPosts = async pageUrl => {
-        let posts = [];
-        const response = await axios.get(pageUrl);
-        posts = posts.concat(response.data.results);
+        let posts = []
+        const response = await axios.get(pageUrl)
+        posts = posts.concat(response.data.results)
 
         if (response.data.next_page) {
-          posts = posts.concat(await getPosts(response.data.next_page));
+          posts = posts.concat(await getPosts(response.data.next_page))
         }
-        return posts;
-      };
+        return posts
+      }
 
       const routes = [
         '/',
@@ -100,16 +100,16 @@ module.exports = {
         '/case-studies/namba-food',
         '/case-studies/sir-john-monash-centre',
         '/blog',
-      ];
-      const prismicData = await axios.get(process.env.NODE_PRISMIC_API);
-      const { ref } = prismicData.data.refs[0];
-      const blogPosts = await getPosts(`${process.env.NODE_PRISMIC_API}/documents/search?ref=${ref}#format=json`);
+      ]
+      const prismicData = await axios.get(process.env.NODE_PRISMIC_API)
+      const { ref } = prismicData.data.refs[0]
+      const blogPosts = await getPosts(`${process.env.NODE_PRISMIC_API}/documents/search?ref=${ref}#format=json`)
       const postRoutes = blogPosts.map(blogPost => {
-        const urlPrefix = blogPost.type === 'customer_university' ? 'customer-university' : 'blog';
-        return `/${urlPrefix}/${blogPost.uid}`;
-      });
+        const urlPrefix = blogPost.type === 'customer_university' ? 'customer-university' : 'blog'
+        return `/${urlPrefix}/${blogPost.uid}`
+      })
 
-      return routes.concat(postRoutes);
+      return routes.concat(postRoutes)
     },
     fallback: '404.html',
   },
@@ -144,7 +144,7 @@ module.exports = {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/,
-        });
+        })
       }
     },
   },
@@ -168,4 +168,4 @@ module.exports = {
     emailHR: process.env.NODE_EMAIL_HR,
     emailContact: process.env.NODE_EMAIL_CONTACT,
   },
-};
+}

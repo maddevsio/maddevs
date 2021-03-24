@@ -40,9 +40,9 @@
 </template>
 
 <script>
-import Card from '@/components/Cases/Card';
-import TextParagraph from '@/components/Cases/TextParagraph';
-import Picture from '@/components/Cases/Picture';
+import Card from '@/components/Cases/Card'
+import TextParagraph from '@/components/Cases/TextParagraph'
+import Picture from '@/components/Cases/Picture'
 
 export default {
   name: 'CardsBusinessModelsGrid',
@@ -51,7 +51,7 @@ export default {
     TextParagraph,
     Picture,
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import SwiperBlog from '@/components/Blog/SwiperBlog';
+import SwiperBlog from '@/components/Blog/SwiperBlog'
 
 export default {
   name: 'GallerySlice',
@@ -23,10 +23,10 @@ export default {
 
   computed: {
     galleryTitle() {
-      return this.$prismic.asText(this.slice.primary.name_of_the_gallery);
+      return this.$prismic.asText(this.slice.primary.name_of_the_gallery)
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

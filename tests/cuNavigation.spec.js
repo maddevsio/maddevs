@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import CuNavigation from '../client/components/Blog/CuNavigation';
+import { mount } from '@vue/test-utils'
+import CuNavigation from '../client/components/Blog/CuNavigation'
 
 describe('cuNavigation', () => {
-  let wrapper;
+  let wrapper
 
   const clusterPosts = [
     {
@@ -43,7 +43,7 @@ describe('cuNavigation', () => {
         uid: 'cu-test-2',
       },
     },
-  ];
+  ]
 
   beforeEach(() => {
     wrapper = mount(CuNavigation, {
@@ -64,14 +64,14 @@ describe('cuNavigation', () => {
           asText: text => text[0].text,
         },
       },
-    });
-  });
+    })
+  })
 
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-});
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

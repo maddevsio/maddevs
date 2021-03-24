@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import SimpleModal from '@/containers/SimpleModal';
+import SimpleModal from '@/containers/SimpleModal'
 
 export default {
   name: 'ImageCaptionSlice',
@@ -30,36 +30,36 @@ export default {
       img: '',
       caption: '',
       size: '',
-    };
+    }
   },
 
   computed: {
     zoomEnabled() {
-      return this.slice.primary.enable_zoom === 'enable';
+      return this.slice.primary.enable_zoom === 'enable'
     },
 
     lightBoxImage() {
       return {
         src: this.img.url,
         alt: this.img.alt,
-      };
+      }
     },
   },
 
   created() {
-    this.img = this.slice.primary.image;
-    this.caption = this.$prismic.asText(this.slice.primary.caption);
-    this.size = this.slice.slice_label;
+    this.img = this.slice.primary.image
+    this.caption = this.$prismic.asText(this.slice.primary.caption)
+    this.size = this.slice.slice_label
   },
 
   methods: {
     openModal() {
       if (this.slice && this.slice.primary.enable_zoom === 'enable') {
-        this.$refs.zoom.show();
+        this.$refs.zoom.show()
       }
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

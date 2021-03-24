@@ -1,18 +1,18 @@
-import { mount } from '@vue/test-utils';
-import DividerSlice from '../client/components/Blog/slices/DividerSlice';
+import { mount } from '@vue/test-utils'
+import DividerSlice from '../client/components/Blog/slices/DividerSlice'
 
 describe('divider slice component', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(DividerSlice);
-  });
+    wrapper = mount(DividerSlice)
+  })
 
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-});
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

@@ -7,7 +7,7 @@
 <script>
 export default {
   name: 'ListTechnologies',
-};
+}
 </script>
 
 <style scoped lang="scss">

@@ -1,9 +1,9 @@
-import { mount } from '@vue/test-utils';
-import NambaFood from '../client/pages/case-studies/namba-food';
-import './__mocks__/intersectionObserverMock';
+import { mount } from '@vue/test-utils'
+import NambaFood from '../client/pages/case-studies/namba-food'
+import './__mocks__/intersectionObserverMock'
 
 describe('namba food', () => {
-  let wrapper;
+  let wrapper
   const data = {
     title: 'Mad Devs Case Study: Namba Food Top Delivery Service',
     description:
@@ -231,41 +231,41 @@ describe('namba food', () => {
     ],
     videoIdList: ['map-video', 'iphone-silver-video'],
     isIphone: false,
-  };
+  }
 
   beforeEach(() => {
     global.$nuxt = {
       $route: {
         name: null,
       },
-    };
+    }
     wrapper = mount(NambaFood, {
       stubs: ['client-only', 'nuxt-link'],
-    });
-  });
+    })
+  })
 
   // ------ IMPORTANT ----- //
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
 
   it('sets the correctly data', () => {
-    expect(wrapper.vm.$data).toEqual(data);
-  });
+    expect(wrapper.vm.$data).toEqual(data)
+  })
 
   it('v-for should render elements in DOM', () => {
-    const swiperSlideElems = wrapper.findAll('.swiper-slide');
-    const usageScenariosCards = wrapper.findAll('.case_usage-scenarios-card');
-    const technologiesItems = wrapper.findAll('.case_technologies-item');
-    const teamItems = wrapper.findAll('.case_team-item');
-    expect(swiperSlideElems).toHaveLength(data.swiperAdminPanel.length * data.swiperAdminPanel.length); // У слайдера есть блок с превью изображениями, поэтому нужно удваивать цифру
-    expect(usageScenariosCards).toHaveLength(data.usageScenarios.length);
-    expect(technologiesItems).toHaveLength(data.technologiesList.length);
-    expect(teamItems).toHaveLength(data.team.length);
-  });
-});
+    const swiperSlideElems = wrapper.findAll('.swiper-slide')
+    const usageScenariosCards = wrapper.findAll('.case_usage-scenarios-card')
+    const technologiesItems = wrapper.findAll('.case_technologies-item')
+    const teamItems = wrapper.findAll('.case_team-item')
+    expect(swiperSlideElems).toHaveLength(data.swiperAdminPanel.length * data.swiperAdminPanel.length) // У слайдера есть блок с превью изображениями, поэтому нужно удваивать цифру
+    expect(usageScenariosCards).toHaveLength(data.usageScenarios.length)
+    expect(technologiesItems).toHaveLength(data.technologiesList.length)
+    expect(teamItems).toHaveLength(data.team.length)
+  })
+})

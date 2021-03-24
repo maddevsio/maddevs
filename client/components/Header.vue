@@ -101,10 +101,10 @@
 </template>
 
 <script>
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
-import mobileHeader from '@/components/Header/mobile-header';
-import headerLogo from '@/components/svg/headerLogo';
-import Modal from '@/containers/Modal';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import mobileHeader from '@/components/Header/mobile-header'
+import headerLogo from '@/components/svg/headerLogo'
+import Modal from '@/containers/Modal'
 
 export default {
   name: 'MainHeader',
@@ -126,87 +126,87 @@ export default {
       headerWhiteLogoText: null,
       caseFirstSection: null,
       caseGoDeeScrollContainer: null,
-    };
+    }
   },
 
   watch: {
     $route() {
-      this.setDefaultStateForHeader();
-      this.removeEventListeners();
+      this.setDefaultStateForHeader()
+      this.removeEventListeners()
     },
   },
 
   created() {
-    this.setDefaultStateForHeader();
+    this.setDefaultStateForHeader()
   },
 
   mounted() {
-    this.getDOMSelectors();
-    this.addEventListeners();
+    this.getDOMSelectors()
+    this.addEventListeners()
     if (this.isCasePage && this.$nuxt.$route.path.includes('/godee')) {
-      this.setWidthForHeader();
+      this.setWidthForHeader()
     }
   },
 
   methods: {
     // Base methods
     goToTopPage() {
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 0)
     },
 
     enableScrollOnBody() {
-      document.body.classList.remove('scrollDisabled');
-      document.documentElement.classList.remove('scrollDisabled');
+      document.body.classList.remove('scrollDisabled')
+      document.documentElement.classList.remove('scrollDisabled')
     },
 
     disableScrollOnBody() {
-      document.body.classList.add('scrollDisabled');
-      document.documentElement.classList.add('scrollDisabled');
+      document.body.classList.add('scrollDisabled')
+      document.documentElement.classList.add('scrollDisabled')
     },
 
     setDefaultStateForHeader() {
-      this.isCasePage = this.$nuxt.$route.path.includes('/case-studies/');
+      this.isCasePage = this.$nuxt.$route.path.includes('/case-studies/')
     },
 
     changeLogoState(scrollTop) {
-      this.showLogoText = !(scrollTop >= 10);
+      this.showLogoText = !(scrollTop >= 10)
     },
 
     handleMobileMenuScroll() {
-      this.changeLogoState(this.mobileHeaderScrollbar.scrollTop);
+      this.changeLogoState(this.mobileHeaderScrollbar.scrollTop)
     },
 
     toggleMobileMenu() {
-      this.isActiveMobileMenu = !this.isActiveMobileMenu;
+      this.isActiveMobileMenu = !this.isActiveMobileMenu
       if (this.isActiveMobileMenu) {
-        this.disableScrollOnBody();
+        this.disableScrollOnBody()
         this.$nextTick(() => {
-          this.mobileHeaderScrollbar = document.getElementById('mobile-header-scrollbar');
-          this.mobileHeaderScrollbar.addEventListener('scroll', this.handleMobileMenuScroll);
-        });
+          this.mobileHeaderScrollbar = document.getElementById('mobile-header-scrollbar')
+          this.mobileHeaderScrollbar.addEventListener('scroll', this.handleMobileMenuScroll)
+        })
       } else {
-        this.enableScrollOnBody();
-        this.mobileHeaderScrollbar.removeEventListener('scroll', this.handleMobileMenuScroll);
+        this.enableScrollOnBody()
+        this.mobileHeaderScrollbar.removeEventListener('scroll', this.handleMobileMenuScroll)
       }
     },
 
     // Methods of case pages
     getDOMSelectors() {
-      this.caseHeader = document.getElementById('case-header');
-      this.headerWhiteLogoText = document.getElementById('header-logo-text');
-      this.caseFirstSection = document.getElementById('case-first-section');
-      this.caseGoDeeScrollContainer = document.getElementById('case-scroll-container');
+      this.caseHeader = document.getElementById('case-header')
+      this.headerWhiteLogoText = document.getElementById('header-logo-text')
+      this.caseFirstSection = document.getElementById('case-first-section')
+      this.caseGoDeeScrollContainer = document.getElementById('case-scroll-container')
     },
 
     setWidthForHeader() {
-      const scrollBarWidth = this.caseGoDeeScrollContainer.offsetWidth - this.caseGoDeeScrollContainer.clientWidth;
+      const scrollBarWidth = this.caseGoDeeScrollContainer.offsetWidth - this.caseGoDeeScrollContainer.clientWidth
       if (this.$refs.header && this.$refs.overlay) {
         if (window.innerWidth >= 991) {
-          this.$refs.header.style.width = `calc(100% - ${scrollBarWidth}px)`;
-          this.$refs.overlay.style.width = `calc(100% - ${scrollBarWidth}px)`;
+          this.$refs.header.style.width = `calc(100% - ${scrollBarWidth}px)`
+          this.$refs.overlay.style.width = `calc(100% - ${scrollBarWidth}px)`
         } else {
-          this.$refs.header.style.width = '100%';
-          this.$refs.overlay.style.width = '100%';
+          this.$refs.header.style.width = '100%'
+          this.$refs.overlay.style.width = '100%'
         }
       }
     },
@@ -214,44 +214,44 @@ export default {
     setStylesForHeader() {
       const scrollFromTop = this.$nuxt.$route.path.includes('/godee')
         ? this.caseGoDeeScrollContainer.scrollTop
-        : window.scrollY;
+        : window.scrollY
       if (this.$refs.overlay && this.headerWhiteLogoText) {
         this.$refs.overlay.style.opacity =
           1.6 -
           (this.$refs.overlay.offsetHeight -
             (scrollFromTop - this.caseHeader.getBoundingClientRect().height) -
             this.$refs.headerContainer.offsetHeight) /
-            this.$refs.overlay.offsetHeight;
+            this.$refs.overlay.offsetHeight
         this.headerWhiteLogoText.style.opacity =
           -0.4 -
           (this.$refs.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top) /
-            this.$refs.overlay.offsetHeight;
+            this.$refs.overlay.offsetHeight
       }
     },
 
     scrollHandler() {
       if (this.$nuxt.$route.path.includes('/case-studies/')) {
-        this.setStylesForHeader();
+        this.setStylesForHeader()
       }
-      this.changeLogoState(window.pageYOffset);
+      this.changeLogoState(window.pageYOffset)
     },
 
     addEventListeners() {
-      window.addEventListener('scroll', this.scrollHandler);
+      window.addEventListener('scroll', this.scrollHandler)
       if (this.isCasePage && this.$nuxt.$route.path.includes('/godee')) {
-        window.addEventListener('resize', this.setWidthForHeader);
-        this.caseGoDeeScrollContainer.addEventListener('scroll', this.scrollHandler);
+        window.addEventListener('resize', this.setWidthForHeader)
+        this.caseGoDeeScrollContainer.addEventListener('scroll', this.scrollHandler)
       }
     },
 
     removeEventListeners() {
       if (this.$nuxt.$route.path.includes('/godee')) {
-        window.removeEventListener('resize', this.setWidthForHeader);
-        this.caseGoDeeScrollContainer.removeEventListener('scroll', this.scrollHandler);
+        window.removeEventListener('resize', this.setWidthForHeader)
+        this.caseGoDeeScrollContainer.removeEventListener('scroll', this.scrollHandler)
       }
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

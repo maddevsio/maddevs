@@ -7,7 +7,7 @@
 <script>
 export default {
   name: 'TextQuote',
-};
+}
 </script>
 
 <style lang="scss" scoped>

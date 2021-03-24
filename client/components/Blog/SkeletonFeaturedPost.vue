@@ -20,7 +20,7 @@
 <script>
 export default {
   name: 'SkeletonFeaturedPost',
-};
+}
 </script>
 
 <style scoped lang="scss">

@@ -69,18 +69,18 @@ export default {
 
   computed: {
     showLogoText() {
-      return this.$props.showLogoTextProps;
+      return this.$props.showLogoTextProps
     },
 
     isCasePage() {
-      return this.$props.isCasePageProps;
+      return this.$props.isCasePageProps
     },
 
     isActiveMobileMenu() {
-      return this.$props.isActiveMobileMenuProps;
+      return this.$props.isActiveMobileMenuProps
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

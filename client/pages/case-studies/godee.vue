@@ -623,30 +623,30 @@
 </template>
 
 <script>
-import CaseHeader from '@/components/Cases/CaseHeader';
-import Footer from '@/components/Cases/Footer';
-import TextParagraph from '@/components/Cases/TextParagraph';
-import TextQuote from '@/components/Cases/TextQuote';
-import TextQuoteBox from '@/components/Cases/TextQuoteBox';
-import Picture from '@/components/Cases/Picture';
-import ListNumberedBox from '@/components/Cases/ListNumberedBox';
-import ListNumberedItemBox from '@/components/Cases/ListNumberedItemBox';
-import ListTeam from '@/components/Cases/ListTeam';
-import ListTeamItem from '@/components/Cases/ListTeamItem';
-import ListTechnologies from '@/components/Cases/ListTechnologies';
-import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem';
-import Card from '@/components/Cases/Card';
-import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
-import CardIssuesGoDee from '@/components/Cases/cards-content/CardIssuesGoDee';
-import CardSolutionGoDee from '@/components/Cases/cards-content/CardSolutionGoDee';
-import CardGoDeeFeature from '@/components/Cases/cards-content/CardGoDeeFeature';
-import CardGoDeePreview from '@/components/Cases/cards-content/CardGoDeePreview';
-import CardGoDeeImpact from '@/components/Cases/cards-content/CardGoDeeImpact';
-import CardGoDeePrimsAlgorithm from '@/components/Cases/cards-content/CardGoDeePrimsAlgorithm';
-import FooterMain from '@/components/Footer';
-import HeaderMain from '@/components/Header';
-import BeforeAfterImage from '@/components/ui/BeforeAfterImage';
-import initImgLazyHelper from '@/helpers/initImgLazy';
+import CaseHeader from '@/components/Cases/CaseHeader'
+import Footer from '@/components/Cases/Footer'
+import TextParagraph from '@/components/Cases/TextParagraph'
+import TextQuote from '@/components/Cases/TextQuote'
+import TextQuoteBox from '@/components/Cases/TextQuoteBox'
+import Picture from '@/components/Cases/Picture'
+import ListNumberedBox from '@/components/Cases/ListNumberedBox'
+import ListNumberedItemBox from '@/components/Cases/ListNumberedItemBox'
+import ListTeam from '@/components/Cases/ListTeam'
+import ListTeamItem from '@/components/Cases/ListTeamItem'
+import ListTechnologies from '@/components/Cases/ListTechnologies'
+import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
+import Card from '@/components/Cases/Card'
+import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
+import CardIssuesGoDee from '@/components/Cases/cards-content/CardIssuesGoDee'
+import CardSolutionGoDee from '@/components/Cases/cards-content/CardSolutionGoDee'
+import CardGoDeeFeature from '@/components/Cases/cards-content/CardGoDeeFeature'
+import CardGoDeePreview from '@/components/Cases/cards-content/CardGoDeePreview'
+import CardGoDeeImpact from '@/components/Cases/cards-content/CardGoDeeImpact'
+import CardGoDeePrimsAlgorithm from '@/components/Cases/cards-content/CardGoDeePrimsAlgorithm'
+import FooterMain from '@/components/Footer'
+import HeaderMain from '@/components/Header'
+import BeforeAfterImage from '@/components/ui/BeforeAfterImage'
+import initImgLazyHelper from '@/helpers/initImgLazy'
 
 export default {
   name: 'GoDeeCase',
@@ -884,7 +884,7 @@ export default {
       headerHeight: 62,
       heightHasBeenSet: false,
       currentYear: new Date().getFullYear(),
-    };
+    }
   },
 
   head() {
@@ -917,7 +917,7 @@ export default {
             '{"@context": "https://schema.org", "@type": "WebPage", "breadcrumb": "Projects > Case Studies > Transportation Solutions", "name": "Mad Devs Case Study: GoDee - Convenient Shuttle Bus Service", "description": "Case Study Shuttle Bus Service. Read GoDee’s story on building a public transportation app for passengers and drivers and a monitoring system for admins in Vietnam.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group LTD"}}',
         },
       ],
-    };
+    }
   },
 
   computed: {
@@ -931,30 +931,30 @@ export default {
       root: null,
       rootMargin: '0px 0px -2px 0px',
       threshold: 0.8,
-    };
-    let previousScroll = 0;
-    let currentScroll = 0;
-    this.cardsContainerHeight = this.$refs.cardsContainer.getBoundingClientRect().height;
+    }
+    let previousScroll = 0
+    let currentScroll = 0
+    this.cardsContainerHeight = this.$refs.cardsContainer.getBoundingClientRect().height
 
     this.$refs.main.addEventListener('scroll', () => {
       if (window.innerWidth > 880) {
         // На разрешении экрана 880 происходит перестройка секции и анимация не должна больше отрабатывать
-        currentScroll = this.$refs.main.scrollTop; // Сохраняем позицию скролла и затем сравниваем её предедущей, чтобы понимать в какую сторону идет скроллинг
+        currentScroll = this.$refs.main.scrollTop // Сохраняем позицию скролла и затем сравниваем её предедущей, чтобы понимать в какую сторону идет скроллинг
         if (currentScroll > previousScroll) {
-          this.handleScrollDown();
+          this.handleScrollDown()
         } else {
-          this.handleScrollUp();
+          this.handleScrollUp()
         }
-        previousScroll = currentScroll;
+        previousScroll = currentScroll
       } else {
-        this.setDefaultStylesForCards();
+        this.setDefaultStylesForCards()
       }
-    });
+    })
 
     if (navigator.userAgent.match(/(iPhone)/i)) {
-      this.isIphone = true;
+      this.isIphone = true
     } else {
-      this.isIphone = false;
+      this.isIphone = false
     }
 
     // Play/Pause HTML Video Based on Visibility
@@ -963,15 +963,15 @@ export default {
         entries.forEach(entry => {
           if (entry.target.id === video) {
             if (entry.isIntersecting) {
-              entry.target.play();
+              entry.target.play()
             }
           }
-        });
-      };
-      const observer = new IntersectionObserver(callback, options);
-      observer.observe(document.getElementById(video));
-    });
-    initImgLazyHelper();
+        })
+      }
+      const observer = new IntersectionObserver(callback, options)
+      observer.observe(document.getElementById(video))
+    })
+    initImgLazyHelper()
   },
 
   methods: {
@@ -979,29 +979,29 @@ export default {
       const leftColumnOffsetBottom = Math.abs(
         this.$refs.cardsLeftColumn.getBoundingClientRect().bottom -
           this.$refs.cardsRootElem.getBoundingClientRect().bottom,
-      ); // Получаем расстояние снизу отностильно родителя и переводим число в положительное
+      ) // Получаем расстояние снизу отностильно родителя и переводим число в положительное
       const rightColumnOffsetBottom = Math.abs(
         this.$refs.cardsRightColumn.getBoundingClientRect().bottom -
           this.$refs.cardsRootElem.getBoundingClientRect().bottom,
-      );
+      )
       if (
         this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight < 0 &&
         leftColumnOffsetBottom > rightColumnOffsetBottom // Стратуем скрипт когда секция в зоне видимости и останавливаем когда левая и правая колонка выравниваються с друг другом по оси z
       ) {
         this.$refs.cardsRightColumn.style.transform = `translateY(${
           (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed
-        }px)`;
+        }px)`
         this.$refs.developmentGoalsTitle.style.transform = `translateY(${
           (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed
-        }px)`;
-        this.translateY = (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed; // Сохраняем текщее свойство transform для дальнейшего расчета в функции handleScrollUp()
+        }px)`
+        this.translateY = (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed // Сохраняем текщее свойство transform для дальнейшего расчета в функции handleScrollUp()
         this.newHeight =
           this.cardsContainerHeight -
           Math.abs(
             (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed -
               this.paddingBottom,
-          );
-        this.$refs.cardsContainer.style.height = `${this.newHeight}px`;
+          )
+        this.$refs.cardsContainer.style.height = `${this.newHeight}px`
       }
     },
 
@@ -1012,24 +1012,24 @@ export default {
       ) {
         this.$refs.cardsRightColumn.style.transform = `translateY(${
           (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed
-        }px)`;
+        }px)`
         this.$refs.developmentGoalsTitle.style.transform = `translateY(${
           (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed
-        }px)`;
+        }px)`
         if (this.cardsContainerHeight > this.newHeight) {
-          this.$refs.cardsContainer.style.height = `${(this.newHeight += 3)}px`;
+          this.$refs.cardsContainer.style.height = `${(this.newHeight += 3)}px`
         }
       }
     },
 
     setDefaultStylesForCards() {
-      this.cardsContainerHeight = this.$refs.cardsContainer.getBoundingClientRect().height;
-      this.$refs.cardsRightColumn.style.transform = 'translateY(0px)';
-      this.$refs.developmentGoalsTitle.style.transform = 'translateY(0px)';
-      this.$refs.cardsContainer.style.height = '100%';
+      this.cardsContainerHeight = this.$refs.cardsContainer.getBoundingClientRect().height
+      this.$refs.cardsRightColumn.style.transform = 'translateY(0px)'
+      this.$refs.developmentGoalsTitle.style.transform = 'translateY(0px)'
+      this.$refs.cardsContainer.style.height = '100%'
     },
   },
-};
+}
 </script>
 
 <style lang="scss">

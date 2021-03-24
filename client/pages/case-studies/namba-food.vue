@@ -520,30 +520,30 @@
 </template>
 
 <script>
-import CaseHeader from '@/components/Cases/CaseHeader';
-import Footer from '@/components/Cases/Footer';
-import TextParagraph from '@/components/Cases/TextParagraph';
-import TextQuote from '@/components/Cases/TextQuote';
-import TextQuoteBox from '@/components/Cases/TextQuoteBox';
-import Picture from '@/components/Cases/Picture';
-import List from '@/components/Cases/List';
-import ListNumberedBox from '@/components/Cases/ListNumberedBox';
-import ListNumberedItemBox from '@/components/Cases/ListNumberedItemBox';
-import ListTeam from '@/components/Cases/ListTeam';
-import ListTeamItem from '@/components/Cases/ListTeamItem';
-import ListItemDot from '@/components/Cases/ListItemDot';
-import ListTechnologies from '@/components/Cases/ListTechnologies';
-import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem';
-import Card from '@/components/Cases/Card';
-import CardUseCase from '@/components/Cases/cards-content/CardUseCase';
-import CardsBusinessModelsGrid from '@/components/Cases/cards-content/CardsBusinessModelsGrid';
-import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
-import CardDeliveryServiceNambafood from '@/components/Cases/cards-content/CardDeliveryServiceNambafood';
-import CardRestaurantTalisman from '@/components/Cases/cards-content/CardRestaurantTalisman';
-import CardNationwideNumbers from '@/components/Cases/cards-content/CardNationwideNumbers';
-import CardNinjaSushi from '@/components/Cases/cards-content/CardNinjaSushi';
-import Swiper from '@/components/Cases/Swiper';
-import initImgLazyHelper from '@/helpers/initImgLazy';
+import CaseHeader from '@/components/Cases/CaseHeader'
+import Footer from '@/components/Cases/Footer'
+import TextParagraph from '@/components/Cases/TextParagraph'
+import TextQuote from '@/components/Cases/TextQuote'
+import TextQuoteBox from '@/components/Cases/TextQuoteBox'
+import Picture from '@/components/Cases/Picture'
+import List from '@/components/Cases/List'
+import ListNumberedBox from '@/components/Cases/ListNumberedBox'
+import ListNumberedItemBox from '@/components/Cases/ListNumberedItemBox'
+import ListTeam from '@/components/Cases/ListTeam'
+import ListTeamItem from '@/components/Cases/ListTeamItem'
+import ListItemDot from '@/components/Cases/ListItemDot'
+import ListTechnologies from '@/components/Cases/ListTechnologies'
+import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
+import Card from '@/components/Cases/Card'
+import CardUseCase from '@/components/Cases/cards-content/CardUseCase'
+import CardsBusinessModelsGrid from '@/components/Cases/cards-content/CardsBusinessModelsGrid'
+import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
+import CardDeliveryServiceNambafood from '@/components/Cases/cards-content/CardDeliveryServiceNambafood'
+import CardRestaurantTalisman from '@/components/Cases/cards-content/CardRestaurantTalisman'
+import CardNationwideNumbers from '@/components/Cases/cards-content/CardNationwideNumbers'
+import CardNinjaSushi from '@/components/Cases/cards-content/CardNinjaSushi'
+import Swiper from '@/components/Cases/Swiper'
+import initImgLazyHelper from '@/helpers/initImgLazy'
 
 export default {
   name: 'NambaFood',
@@ -810,7 +810,7 @@ export default {
 
       videoIdList: ['map-video', 'iphone-silver-video'],
       isIphone: false,
-    };
+    }
   },
 
   head() {
@@ -843,7 +843,7 @@ export default {
             '{"@context": "https://schema.org", "@type": "WebPage", "breadcrumb": "Projects > Case Studies > FoodTech Solutions", "name": "Mad Devs Case Study: Namba Food Top Delivery Service", "description": "FoodTech Case Study. How to make a delivery app from scratch? Read Namba Food’s story of developing a custom software top delivery service in Central Asia.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group LTD"}}',
         },
       ],
-    };
+    }
   },
 
   computed: {
@@ -857,29 +857,29 @@ export default {
       root: null,
       rootMargin: '0px',
       threshold: 1.0,
-    };
+    }
     this.videoIdList.forEach(video => {
       const callback = entries => {
         entries.forEach(entry => {
           if (entry.target.id === video) {
             if (entry.isIntersecting) {
-              entry.target.play();
+              entry.target.play()
             }
           }
-        });
-      };
-      const observer = new IntersectionObserver(callback, options);
-      observer.observe(document.getElementById(video));
-    });
+        })
+      }
+      const observer = new IntersectionObserver(callback, options)
+      observer.observe(document.getElementById(video))
+    })
 
     if (navigator.userAgent.match(/(iPhone)/i)) {
-      this.isIphone = true;
+      this.isIphone = true
     } else {
-      this.isIphone = false;
+      this.isIphone = false
     }
-    initImgLazyHelper();
+    initImgLazyHelper()
   },
-};
+}
 </script>
 
 <style lang="scss">

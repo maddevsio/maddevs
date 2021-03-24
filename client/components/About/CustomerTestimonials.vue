@@ -101,28 +101,28 @@ export default {
       ],
 
       script: null,
-    };
+    }
   },
 
   mounted() {
     const clutchLoader = () => {
-      this.script = document.createElement('script');
-      this.script.setAttribute('src', 'https://widget.clutch.co/static/js/widget.js');
-      document.body.appendChild(this.script);
+      this.script = document.createElement('script')
+      this.script.setAttribute('src', 'https://widget.clutch.co/static/js/widget.js')
+      document.body.appendChild(this.script)
       this.script.onload = () => {
-        window.CLUTCHCO.Init();
-      };
-      window.removeEventListener('scroll', clutchLoader);
-    };
-    window.addEventListener('scroll', clutchLoader);
+        window.CLUTCHCO.Init()
+      }
+      window.removeEventListener('scroll', clutchLoader)
+    }
+    window.addEventListener('scroll', clutchLoader)
   },
 
   destroyed() {
     if (this.script !== null) {
-      this.script.remove();
+      this.script.remove()
     }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

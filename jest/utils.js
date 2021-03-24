@@ -1,13 +1,13 @@
 function findArgument(name, defaultOutput) {
-  if (!name) return defaultOutput;
+  if (!name) return defaultOutput
 
-  const index = process.argv.findIndex(a => a.match(name));
-  if (index < 0) return defaultOutput;
+  const index = process.argv.findIndex(a => a.match(name))
+  if (index < 0) return defaultOutput
 
   try {
-    return process.argv[index + 1];
+    return process.argv[index + 1]
   } catch (e) {
-    return defaultOutput;
+    return defaultOutput
   }
 }
 
@@ -25,17 +25,17 @@ function getColor(coverage, type = 'str') {
       hash: '#00ff00',
       str: 'brightgreen',
     },
-  };
+  }
 
-  let color;
-  if (coverage < 80) color = colors.bad;
-  else if (coverage < 90) color = colors.good;
-  else color = colors.perfect;
+  let color
+  if (coverage < 80) color = colors.bad
+  else if (coverage < 90) color = colors.good
+  else color = colors.perfect
 
-  return color[type];
+  return color[type]
 }
 
 module.exports = {
   findArgument,
   getColor,
-};
+}

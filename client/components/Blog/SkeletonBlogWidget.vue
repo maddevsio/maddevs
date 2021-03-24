@@ -21,7 +21,7 @@
 <script>
 export default {
   name: 'SkeletonBlogWidget',
-};
+}
 </script>
 
 <style lang="scss" scoped>

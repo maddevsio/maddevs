@@ -26,9 +26,9 @@
 </template>
 
 <script>
-import PostAuthor from '@/components/Blog/PostAuthor';
-import PostTag from '@/components/Blog/PostTag';
-import linkResolver from '@/plugins/link-resolver.js';
+import PostAuthor from '@/components/Blog/PostAuthor'
+import PostTag from '@/components/Blog/PostTag'
+import linkResolver from '@/plugins/link-resolver.js'
 
 export default {
   name: 'FeaturedPost',
@@ -46,42 +46,42 @@ export default {
 
   computed: {
     formattedDate() {
-      const date = this ? this.post.data.date : '';
+      const date = this ? this.post.data.date : ''
 
-      return Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(date));
+      return Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(date))
     },
 
     link() {
-      return linkResolver(this.post);
+      return linkResolver(this.post)
     },
   },
 
   methods: {
     getFirstParagraph() {
-      const textLimit = 200;
-      const slices = this.post.data.body;
-      let firstParagraph = '';
-      let haveFirstParagraph = false;
+      const textLimit = 200
+      const slices = this.post.data.body
+      let firstParagraph = ''
+      let haveFirstParagraph = false
 
       slices.forEach(slice => {
         if (!haveFirstParagraph && slice.slice_type === 'text') {
           slice.primary.text.forEach(block => {
             if (block.type === 'paragraph' && !haveFirstParagraph) {
-              firstParagraph += block.text;
-              haveFirstParagraph = true;
+              firstParagraph += block.text
+              haveFirstParagraph = true
             }
-          });
+          })
         }
-      });
+      })
 
-      const limitedText = firstParagraph.substr(0, textLimit);
+      const limitedText = firstParagraph.substr(0, textLimit)
 
       return firstParagraph.length > textLimit
         ? `${limitedText.substr(0, limitedText.lastIndexOf(' '))}...`
-        : firstParagraph;
+        : firstParagraph
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

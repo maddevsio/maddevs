@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import ContributionWidget from '@/components/About/ContributionWidget';
+import ContributionWidget from '@/components/About/ContributionWidget'
 
 export default {
   name: 'SingleProject',
@@ -84,16 +84,16 @@ export default {
   computed: {
     colorTheme() {
       if (this.project.projectName === 'sjmc' || this.project.projectName === 'guardrails') {
-        return 'single-project_white-letters-theme';
+        return 'single-project_white-letters-theme'
       }
-      return 'single-project_black-letters-theme';
+      return 'single-project_black-letters-theme'
     },
 
     backgroundModifierClasses() {
-      return this.project.projectName === 'guardrails' ? 'single-project__background_guardrails' : '';
+      return this.project.projectName === 'guardrails' ? 'single-project__background_guardrails' : ''
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

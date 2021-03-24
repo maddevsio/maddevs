@@ -1,20 +1,20 @@
-import { mount } from '@vue/test-utils';
-import CardDeliveryServiceNambafood from '@/components/Cases/cards-content/CardDeliveryServiceNambafood';
+import { mount } from '@vue/test-utils'
+import CardDeliveryServiceNambafood from '@/components/Cases/cards-content/CardDeliveryServiceNambafood'
 
 describe('cardDeliveryServiceNambafood', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(CardDeliveryServiceNambafood);
-  });
+    wrapper = mount(CardDeliveryServiceNambafood)
+  })
 
   // ------ IMPORTANT ----- //
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
-});
+})

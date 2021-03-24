@@ -432,30 +432,30 @@ export default {
       ],
 
       activeLegend: '',
-    };
+    }
   },
 
   methods: {
     selectLegend(e) {
       if (e === this.activeLegend) {
-        this.activeLegend = '';
+        this.activeLegend = ''
       } else {
-        this.activeLegend = e;
+        this.activeLegend = e
       }
-      this.$nextTick(() => this.refreshImg());
+      this.$nextTick(() => this.refreshImg())
     },
 
     refreshImg() {
-      const lazySvg = [].slice.call(document.querySelectorAll('img.img_lazy'));
+      const lazySvg = [].slice.call(document.querySelectorAll('img.img_lazy'))
       lazySvg.forEach(svg => {
         /* eslint-disable */
         svg.src = svg.dataset.src;
         svg.classList.remove('img_lazy');
         /* eslint-enable */
-      });
+      })
     },
   },
-};
+}
 </script>
 
 <style lang="scss">

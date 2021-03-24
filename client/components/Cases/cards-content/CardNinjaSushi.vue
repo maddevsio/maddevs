@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph';
+import TextParagraph from '@/components/Cases/TextParagraph'
 
 export default {
   name: 'CardNinjaSushi',
@@ -45,8 +45,8 @@ export default {
   },
 
   mounted() {
-    const { img } = this.$refs;
-    const { source } = this.$refs;
+    const { img } = this.$refs
+    const { source } = this.$refs
     const pictures = [
       {
         img: 'ninja-sushi-slide',
@@ -60,20 +60,20 @@ export default {
         img: 'coffee-house-slide',
         alt: 'Namba Food: Coffee House.',
       },
-    ];
-    let i = 0;
+    ]
+    let i = 0
 
     function toggle() {
-      img.src = require(`@/assets/img/Cases/nambafood/jpg/${pictures[i].img}.jpg`);
-      img.srcset = `${require(`@/assets/img/Cases/nambafood/jpg/${pictures[i].img}@2x.jpg`)} 2x`;
-      img.alt = pictures[i].alt;
+      img.src = require(`@/assets/img/Cases/nambafood/jpg/${pictures[i].img}.jpg`)
+      img.srcset = `${require(`@/assets/img/Cases/nambafood/jpg/${pictures[i].img}@2x.jpg`)} 2x`
+      img.alt = pictures[i].alt
       source.srcset = `${require(`@/assets/img/Cases/nambafood/webp/${pictures[i].img}.webp`)}, 
-      ${require(`@/assets/img/Cases/nambafood/webp/${pictures[i].img}@2x.webp`)} 2x`;
-      i = (i + 1) % pictures.length; // update the counter
+      ${require(`@/assets/img/Cases/nambafood/webp/${pictures[i].img}@2x.webp`)} 2x`
+      i = (i + 1) % pictures.length // update the counter
     }
-    setInterval(toggle, 1500);
+    setInterval(toggle, 1500)
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

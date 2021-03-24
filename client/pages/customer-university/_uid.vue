@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import PostView from '@/components/Blog/PostView';
+import PostView from '@/components/Blog/PostView'
 
 export default {
   name: 'Post',
@@ -12,22 +12,22 @@ export default {
   },
 
   async asyncData({ $prismic, params, error }) {
-    let recommendedPosts = [];
-    const openGraphUrl = `${process.env.domain}/customer-university/${params.uid}/`;
-    let jsonLd;
+    let recommendedPosts = []
+    const openGraphUrl = `${process.env.domain}/customer-university/${params.uid}/`
+    let jsonLd
     try {
       // Query to get post content
-      const post = await $prismic.api.getByUID('customer_university', params.uid);
+      const post = await $prismic.api.getByUID('customer_university', params.uid)
 
       // Query to get recommended posts
       if (post.tags.length) {
         recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', [post.tags[0]]), {
           pageSize: 4,
-        });
-        recommendedPosts = recommendedPosts.results.filter(recommendedPost => recommendedPost.uid !== post.uid);
+        })
+        recommendedPosts = recommendedPosts.results.filter(recommendedPost => recommendedPost.uid !== post.uid)
 
         if (recommendedPosts.length > 3) {
-          recommendedPosts = recommendedPosts.slice(0, 3);
+          recommendedPosts = recommendedPosts.slice(0, 3)
         }
       }
 
@@ -37,8 +37,8 @@ export default {
         post.data.schema_org_snippets[0].single_snippet.length &&
         post.data.schema_org_snippets[0].single_snippet[0].text
       ) {
-        jsonLd = post.data.schema_org_snippets[0].single_snippet[0].text;
-        jsonLd = jsonLd.substring(jsonLd.indexOf('{'), jsonLd.lastIndexOf('}') + 1); // extracting only JSON object from a snippet without extra characters
+        jsonLd = post.data.schema_org_snippets[0].single_snippet[0].text
+        jsonLd = jsonLd.substring(jsonLd.indexOf('{'), jsonLd.lastIndexOf('}') + 1) // extracting only JSON object from a snippet without extra characters
       } else {
         // eslint-disable-next-line
         console.log('Schema.org is not defined');
@@ -57,10 +57,10 @@ export default {
         tags: post.tags,
         openGraphUrl,
         jsonLd,
-      };
+      }
     } catch (e) {
       // Returns error page
-      return error({ statusCode: 404, message: 'Page not found' });
+      return error({ statusCode: 404, message: 'Page not found' })
     }
   },
 
@@ -70,7 +70,7 @@ export default {
       title: '',
       jsonLd: '',
       cluster: null,
-    };
+    }
   },
 
   head() {
@@ -116,18 +116,18 @@ export default {
         // Need for supported Safari9 and IE11 https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Intl
         { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en' },
       ],
-    };
+    }
   },
 
   computed: {
     postData() {
-      return { ...this.$data };
+      return { ...this.$data }
     },
   },
 
   mounted() {
-    this.title = this.$prismic.asText(this.document.meta_title) || this.document.title[0].text;
-    this.getClusterData();
+    this.title = this.$prismic.asText(this.document.meta_title) || this.document.title[0].text
+    this.getClusterData()
   },
 
   methods: {
@@ -135,9 +135,9 @@ export default {
       this.$prismic.api.getSingle('cu_master').then(response => {
         this.cluster =
           response.data.body.find(cluster => cluster.items.find(post => post.cu_post.id === this.id) !== undefined) ||
-          null;
-      });
+          null
+      })
     },
   },
-};
+}
 </script>

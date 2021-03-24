@@ -1,13 +1,13 @@
-import { mount, createLocalVue } from '@vue/test-utils';
-import OrderProjectFromUsModal from '@/components/Modals/order-project-from-us-modal';
-import Vuelidate from 'vuelidate';
+import { mount, createLocalVue } from '@vue/test-utils'
+import OrderProjectFromUsModal from '@/components/Modals/order-project-from-us-modal'
+import Vuelidate from 'vuelidate'
 
-const localVue = createLocalVue();
+const localVue = createLocalVue()
 
-localVue.use(Vuelidate);
+localVue.use(Vuelidate)
 
 describe('order Project From Us Modal', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
     wrapper = mount(OrderProjectFromUsModal, {
@@ -22,7 +22,7 @@ describe('order Project From Us Modal', () => {
           $on: jest.fn(),
         },
       },
-    });
+    })
     wrapper.vm.$refs = {
       checkboxes: {
         reset: jest.fn(),
@@ -30,39 +30,39 @@ describe('order Project From Us Modal', () => {
       form: {
         reset: jest.fn(),
       },
-    };
-  });
+    }
+  })
 
   // ------ IMPORTANT ----- //
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
 
   it('sets the correct default data', () => {
-    expect(typeof OrderProjectFromUsModal.data).toBe('function');
-    const defaultData = OrderProjectFromUsModal.data();
-    expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false);
-    expect(defaultData.inputId).toEqual('order-project-from-us');
-  });
+    expect(typeof OrderProjectFromUsModal.data).toBe('function')
+    const defaultData = OrderProjectFromUsModal.data()
+    expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
+    expect(defaultData.inputId).toEqual('order-project-from-us')
+  })
 
   it('has a functions', () => {
     expect(
       typeof OrderProjectFromUsModal.methods.getPrivacyCheckboxState &&
         typeof OrderProjectFromUsModal.methods.getDiscountOffersCheckboxState,
-    ).toBe('function');
-  });
+    ).toBe('function')
+  })
 
   it('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true);
-    wrapper.vm.getDiscountOffersCheckboxState(true);
+    wrapper.vm.getPrivacyCheckboxState(true)
+    wrapper.vm.getDiscountOffersCheckboxState(true)
 
-    expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true);
-  });
+    expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true)
+  })
 
   it('sendForm should add new object in $data.form', () => {
     const form = {
@@ -79,39 +79,39 @@ describe('order Project From Us Modal', () => {
         projectDescription: '',
         modalTitle: 'Mad Devs Website Forms',
       },
-    };
-    expect(wrapper.vm.$data.form).toEqual('');
-    wrapper.vm.sendForm(true);
-    expect(wrapper.vm.$data.form).toEqual(form);
-  });
+    }
+    expect(wrapper.vm.$data.form).toEqual('')
+    wrapper.vm.sendForm(true)
+    expect(wrapper.vm.$data.form).toEqual(form)
+  })
 
   it('should rest values in data instances', () => {
     // Set mock data for data instances
-    wrapper.vm.$data.fullName = 'Name';
-    wrapper.vm.$data.email = 'email@mail.com';
-    wrapper.vm.$data.projectDescriber = 'Project Describer';
+    wrapper.vm.$data.fullName = 'Name'
+    wrapper.vm.$data.email = 'email@mail.com'
+    wrapper.vm.$data.projectDescriber = 'Project Describer'
     wrapper.vm.$data.form = {
       value1: 'value1',
       value2: 'value2',
-    };
-    wrapper.vm.$data.projectDescription = 'test';
-    wrapper.vm.$data.company = 'test';
-    wrapper.vm.$data.agreeWithPrivacyPolicy = true;
-    wrapper.vm.$data.agreeToGetMadDevsDiscountOffers = true;
-    wrapper.vm.$data.isEmailSent = true;
+    }
+    wrapper.vm.$data.projectDescription = 'test'
+    wrapper.vm.$data.company = 'test'
+    wrapper.vm.$data.agreeWithPrivacyPolicy = true
+    wrapper.vm.$data.agreeToGetMadDevsDiscountOffers = true
+    wrapper.vm.$data.isEmailSent = true
 
-    wrapper.vm.resetForm();
+    wrapper.vm.resetForm()
     expect(
       wrapper.vm.$data.fullName &&
         wrapper.vm.$data.email &&
         wrapper.vm.$data.form &&
         wrapper.vm.$data.projectDescription &&
         wrapper.vm.$data.company,
-    ).toBeNull();
+    ).toBeNull()
     expect(
       wrapper.vm.$data.agreeWithPrivacyPolicy &&
         wrapper.vm.$data.agreeToGetMadDevsDiscountOffers &&
         wrapper.vm.$data.isEmailSent,
-    ).toEqual(false);
-  });
-});
+    ).toEqual(false)
+  })
+})

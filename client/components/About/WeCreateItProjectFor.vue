@@ -90,9 +90,9 @@ export default {
         'south_africa',
         'netherlands',
       ],
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

@@ -53,7 +53,7 @@
 <script>
 export default {
   name: 'NDA',
-};
+}
 </script>
 
 <style lang="scss" scoped>

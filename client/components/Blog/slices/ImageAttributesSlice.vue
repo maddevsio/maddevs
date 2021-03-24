@@ -33,16 +33,16 @@ export default {
       title: '',
       url: '',
       target: '',
-    };
+    }
   },
 
   created() {
-    this.img = this.slice.primary.image;
-    this.title = this.slice.primary.title;
-    this.url = this.slice.primary.url;
-    this.target = this.slice.primary.target;
+    this.img = this.slice.primary.image
+    this.title = this.slice.primary.title
+    this.url = this.slice.primary.url
+    this.target = this.slice.primary.target
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

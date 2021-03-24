@@ -17,12 +17,12 @@ export default {
   computed: {
     textColor() {
       if (this.$props.color) {
-        return `color: ${this.$props.color}`;
+        return `color: ${this.$props.color}`
       }
-      return null;
+      return null
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

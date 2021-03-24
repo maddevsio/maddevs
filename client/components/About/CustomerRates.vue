@@ -82,9 +82,9 @@ export default {
           description: 'open-source projects on GitHub.',
         },
       ],
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

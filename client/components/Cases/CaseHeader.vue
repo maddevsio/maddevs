@@ -35,21 +35,21 @@ export default {
     return {
       isIphone: false,
       video: '',
-    };
+    }
   },
 
   created() {
-    this.video = `${process.env.awsUrl}/${this.$props.videoName}`;
+    this.video = `${process.env.awsUrl}/${this.$props.videoName}`
   },
 
   mounted() {
     if (navigator.userAgent.match(/(iPhone)/i)) {
-      this.isIphone = true;
+      this.isIphone = true
     } else {
-      this.isIphone = false;
+      this.isIphone = false
     }
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

@@ -5,7 +5,7 @@
 <script>
 export default {
   name: 'Divider',
-};
+}
 </script>
 
 <style scoped lang="scss">

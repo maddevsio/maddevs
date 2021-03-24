@@ -54,10 +54,10 @@ export default {
 
   methods: {
     sendSelectedValue(value) {
-      this.$emit(this.emitMethodName, value);
+      this.$emit(this.emitMethodName, value)
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

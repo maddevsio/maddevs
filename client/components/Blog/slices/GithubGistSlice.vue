@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import VueEmbedGist from 'vue-embed-gist';
-import 'vue-embed-gist/dist/vue-embed-gist.css';
+import VueEmbedGist from 'vue-embed-gist'
+import 'vue-embed-gist/dist/vue-embed-gist.css'
 
 export default {
   name: 'GithubGistSlice',
@@ -28,13 +28,13 @@ export default {
   data() {
     return {
       isMounted: false,
-    };
+    }
   },
 
   mounted() {
-    this.isMounted = true;
+    this.isMounted = true
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

@@ -9,7 +9,7 @@
 <script>
 export default {
   name: 'FooterPrismic',
-};
+}
 </script>
 
 <style lang="scss" scoped>

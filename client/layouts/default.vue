@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import initIntercomHelper from '@/helpers/initIntercom';
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import initIntercomHelper from '@/helpers/initIntercom'
 
 export default {
   name: 'Default',
@@ -21,22 +21,22 @@ export default {
   mounted() {
     this.$nextTick(() => {
       try {
-        const section = document.querySelector(window.location.hash);
+        const section = document.querySelector(window.location.hash)
         if (section) {
-          section.scrollIntoView({ block: 'start' });
+          section.scrollIntoView({ block: 'start' })
         }
-        return true;
+        return true
       } catch {
-        return false;
+        return false
       }
-    });
+    })
     const scriptLoader = () => {
-      initIntercomHelper();
-      window.removeEventListener('scroll', scriptLoader);
-    };
-    window.addEventListener('scroll', scriptLoader);
+      initIntercomHelper()
+      window.removeEventListener('scroll', scriptLoader)
+    }
+    window.addEventListener('scroll', scriptLoader)
   },
-};
+}
 </script>
 
 <style lang='scss' scoped>

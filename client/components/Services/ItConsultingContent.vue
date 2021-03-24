@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import UIParagraph from '@/components/ui/Services/UIParagraph';
-import UIItemTitle from '@/components/ui/Services/UIItemTitle';
-import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle';
+import UIParagraph from '@/components/ui/Services/UIParagraph'
+import UIItemTitle from '@/components/ui/Services/UIItemTitle'
+import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle'
 
 export default {
   name: 'ItConsultingContent',
@@ -49,7 +49,7 @@ export default {
       default: '',
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

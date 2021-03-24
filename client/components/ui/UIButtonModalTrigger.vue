@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import WaveAnimation from '@/directives/WaveAnimation';
+import WaveAnimation from '@/directives/WaveAnimation'
 
 export default {
   name: 'UIButtonModalTrigger',
@@ -46,10 +46,10 @@ export default {
 
   methods: {
     showModal() {
-      this.$emit('onClick');
+      this.$emit('onClick')
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

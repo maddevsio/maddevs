@@ -22,4 +22,4 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['<rootDir>/client/components/**/*.vue', '<rootDir>/client/pages/*.vue'],
   coverageReporters: ['json-summary', 'text', 'lcov'],
-};
+}

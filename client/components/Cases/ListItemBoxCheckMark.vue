@@ -7,7 +7,7 @@
 <script>
 export default {
   name: 'ListItemBoxCheckMark',
-};
+}
 </script>
 
 <style scoped lang="scss">

@@ -75,11 +75,11 @@
 </template>
 
 <script>
-import { required, email, maxLength } from 'vuelidate/lib/validators';
-import FormCheckboxes from '@/components/ui/form-checkboxes';
-import UIButton from '@/components/ui/UIButton';
-import SuccessModal from '@/components/Modals/success-modal';
-import PlaceholderAsterisk from '@/directives/PlaceholderAsterisk';
+import { required, email, maxLength } from 'vuelidate/lib/validators'
+import FormCheckboxes from '@/components/ui/form-checkboxes'
+import UIButton from '@/components/ui/UIButton'
+import SuccessModal from '@/components/Modals/success-modal'
+import PlaceholderAsterisk from '@/directives/PlaceholderAsterisk'
 
 export default {
   name: 'FooterForm',
@@ -127,16 +127,16 @@ export default {
   methods: {
     createLead() {},
     getPrivacyCheckboxState(privacyState) {
-      this.agreeWithPrivacyPolicy = privacyState;
+      this.agreeWithPrivacyPolicy = privacyState
     },
 
     getDiscountOffersCheckboxState(discountOffersState) {
-      this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+      this.agreeToGetMadDevsDiscountOffers = discountOffersState
     },
 
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
-        this.onSubmit = true;
+        this.onSubmit = true
         this.form = {
           templateId: 305480, // Required
           variables: {
@@ -149,35 +149,35 @@ export default {
             subject: this.subject || '',
             modalTitle: this.modalTitle,
           },
-        };
+        }
         this.$store.dispatch('sendEmail', this.form).then(res => {
-          this.onSubmit = false;
+          this.onSubmit = false
           // this.createLead();
           if (res.status === 200) {
-            this.isEmailSent = true;
-            this.resetForm();
+            this.isEmailSent = true
+            this.resetForm()
             setTimeout(() => {
-              this.isEmailSent = false;
-            }, 3000);
+              this.isEmailSent = false
+            }, 3000)
           } else {
-            this.isEmailSent = false;
+            this.isEmailSent = false
           }
-        });
+        })
       }
     },
 
     resetForm() {
-      this.$refs.checkboxes.reset();
-      this.$v.$reset(); // Reset validation form
-      this.fullName = null;
-      this.email = null;
-      this.form = null;
-      this.projectDescriber = '';
-      this.agreeWithPrivacyPolicy = false;
-      this.agreeToGetMadDevsDiscountOffers = false;
+      this.$refs.checkboxes.reset()
+      this.$v.$reset() // Reset validation form
+      this.fullName = null
+      this.email = null
+      this.form = null
+      this.projectDescriber = ''
+      this.agreeWithPrivacyPolicy = false
+      this.agreeToGetMadDevsDiscountOffers = false
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

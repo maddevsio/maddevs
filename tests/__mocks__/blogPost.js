@@ -94,4 +94,4 @@ export default {
   tags: ['markup'],
   type: 'post',
   uid: 'its-not-just-a-layout-what-do-you-need-to-know-to',
-};
+}

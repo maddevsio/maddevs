@@ -1,13 +1,13 @@
-import { mount, createLocalVue } from '@vue/test-utils';
-import footerForm from '@/components/Footer/footer-form';
-import Vuelidate from 'vuelidate';
+import { mount, createLocalVue } from '@vue/test-utils'
+import footerForm from '@/components/Footer/footer-form'
+import Vuelidate from 'vuelidate'
 
-const localVue = createLocalVue();
+const localVue = createLocalVue()
 
-localVue.use(Vuelidate);
+localVue.use(Vuelidate)
 
 describe('footer form', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
     wrapper = mount(footerForm, {
@@ -18,7 +18,7 @@ describe('footer form', () => {
           dispatch: () => new Promise(resolve => resolve()),
         },
       },
-    });
+    })
     wrapper.vm.$refs = {
       checkboxes: {
         reset: jest.fn(),
@@ -26,58 +26,58 @@ describe('footer form', () => {
       form: {
         reset: jest.fn(),
       },
-    };
-  });
+    }
+  })
 
   // ------ IMPORTANT ----- //
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
 
   it('sets the correct default data', () => {
-    expect(typeof footerForm.data).toBe('function');
-    const defaultData = footerForm.data();
-    expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false);
-  });
+    expect(typeof footerForm.data).toBe('function')
+    const defaultData = footerForm.data()
+    expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
+  })
 
   it('has a functions', () => {
     expect(
       typeof footerForm.methods.getPrivacyCheckboxState && typeof footerForm.methods.getDiscountOffersCheckboxState,
-    ).toBe('function');
-  });
+    ).toBe('function')
+  })
 
   it('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true);
-    wrapper.vm.getDiscountOffersCheckboxState(true);
+    wrapper.vm.getPrivacyCheckboxState(true)
+    wrapper.vm.getDiscountOffersCheckboxState(true)
 
-    expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true);
-  });
+    expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true)
+  })
 
   it('should rest values in data instances', () => {
     // Set mock data for data instances
-    wrapper.vm.$data.fullName = 'Name';
-    wrapper.vm.$data.email = 'email@mail.com';
-    wrapper.vm.$data.projectDescriber = 'Project Describer';
+    wrapper.vm.$data.fullName = 'Name'
+    wrapper.vm.$data.email = 'email@mail.com'
+    wrapper.vm.$data.projectDescriber = 'Project Describer'
     wrapper.vm.$data.form = {
       value1: 'value1',
       value2: 'value2',
-    };
-    wrapper.vm.$data.agreeWithPrivacyPolicy = true;
-    wrapper.vm.$data.agreeToGetMadDevsDiscountOffers = true;
-    wrapper.vm.$data.isEmailSent = true;
+    }
+    wrapper.vm.$data.agreeWithPrivacyPolicy = true
+    wrapper.vm.$data.agreeToGetMadDevsDiscountOffers = true
+    wrapper.vm.$data.isEmailSent = true
 
-    wrapper.vm.resetForm();
-    expect(wrapper.vm.$data.fullName && wrapper.vm.$data.email && wrapper.vm.$data.form).toBeNull();
-    expect(wrapper.vm.$data.projectDescriber).toEqual('');
+    wrapper.vm.resetForm()
+    expect(wrapper.vm.$data.fullName && wrapper.vm.$data.email && wrapper.vm.$data.form).toBeNull()
+    expect(wrapper.vm.$data.projectDescriber).toEqual('')
     expect(
       wrapper.vm.$data.agreeWithPrivacyPolicy &&
         wrapper.vm.$data.agreeToGetMadDevsDiscountOffers &&
         wrapper.vm.$data.isEmailSent,
-    ).toEqual(false);
-  });
-});
+    ).toEqual(false)
+  })
+})

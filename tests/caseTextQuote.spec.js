@@ -1,28 +1,28 @@
-import { mount } from '@vue/test-utils';
-import TextQuote from '@/components/Cases/TextQuote';
+import { mount } from '@vue/test-utils'
+import TextQuote from '@/components/Cases/TextQuote'
 
 describe('text quote', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
     wrapper = mount(TextQuote, {
       slots: {
         default: 'Main Content',
       },
-    });
-  });
+    })
+  })
 
   // ------ IMPORTANT ----- //
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
 
   it('should have correct data in slot', () => {
-    expect(wrapper.html()).toContain('Main Content');
-  });
-});
+    expect(wrapper.html()).toContain('Main Content')
+  })
+})

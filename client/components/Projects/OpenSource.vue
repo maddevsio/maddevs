@@ -71,9 +71,9 @@ export default {
           description: 'A <span>security-monitoring</span> solution for Ethereum smart contracts.',
         },
       ],
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

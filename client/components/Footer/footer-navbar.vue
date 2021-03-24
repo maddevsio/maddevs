@@ -16,9 +16,9 @@ export default {
   data() {
     return {
       currentYear: new Date().getFullYear(),
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

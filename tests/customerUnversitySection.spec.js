@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import CustomerUniversitySection from '../client/components/Blog/CustomerUniversitySection';
+import { mount } from '@vue/test-utils'
+import CustomerUniversitySection from '../client/components/Blog/CustomerUniversitySection'
 
 describe('customer University section component', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
     wrapper = mount(CustomerUniversitySection, {
@@ -12,14 +12,14 @@ describe('customer University section component', () => {
           asText: () => '',
         },
       },
-    });
-  });
+    })
+  })
 
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-});
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

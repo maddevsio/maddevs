@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import TableOfContents from '@/components/Blog/TableOfContents';
+import { mount } from '@vue/test-utils'
+import TableOfContents from '@/components/Blog/TableOfContents'
 
 describe('table of contents block in single post page', () => {
-  let wrapper;
+  let wrapper
 
   const content = [
     {
@@ -35,31 +35,31 @@ describe('table of contents block in single post page', () => {
       text: 'Main',
       type: 'list-item',
     },
-  ];
+  ]
 
   beforeEach(() => {
     wrapper = mount(TableOfContents, {
       propsData: { content },
-    });
-  });
+    })
+  })
 
   // ------ IMPORTANT ----- //
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
 
   it('ordered list rendered', () => {
-    expect(wrapper.find('ol').exists()).toBeTruthy();
-  });
+    expect(wrapper.find('ol').exists()).toBeTruthy()
+  })
 
   it('link replaced https', () => {
     expect(wrapper.find('li').find('a').attributes('href')).toMatch(
       content[0].spans[0].data.url.replace('https://', ''),
-    );
-  });
-});
+    )
+  })
+})

@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import ImageComponent from '@/components/ui/image-component';
+import ImageComponent from '@/components/ui/image-component'
 
 export default {
   name: 'MeetOurExperts',
@@ -106,9 +106,9 @@ export default {
           alt: 'Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company.',
         },
       ],
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

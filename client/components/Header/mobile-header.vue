@@ -91,8 +91,8 @@
 </template>
 
 <script>
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
-import footerContacts from '@/components/Footer/footer-contacts';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import footerContacts from '@/components/Footer/footer-contacts'
 
 export default {
   name: 'MobileHeader',
@@ -105,40 +105,40 @@ export default {
     return {
       buttonInnerText: 'Contact me',
       mailLink: process.env.emailContact,
-    };
+    }
   },
 
   created() {
     if (process.client) {
       if (document) {
-        this.$nextTick(() => this.refreshImg());
+        this.$nextTick(() => this.refreshImg())
       }
     }
   },
 
   methods: {
     goToPage() {
-      this.$emit('changed-page');
+      this.$emit('changed-page')
       if (
         document.body.classList.contains('scrollDisabled') &&
         document.documentElement.classList.contains('scrollDisabled')
       ) {
-        document.body.classList.remove('scrollDisabled');
-        document.documentElement.classList.remove('scrollDisabled');
+        document.body.classList.remove('scrollDisabled')
+        document.documentElement.classList.remove('scrollDisabled')
       }
     },
 
     refreshImg() {
-      const lazyImg = [].slice.call(document.querySelectorAll('img.img_lazy'));
+      const lazyImg = [].slice.call(document.querySelectorAll('img.img_lazy'))
       lazyImg.forEach(img => {
         /* eslint-disable */
         img.src = img.dataset.src;
         img.classList.remove('img_lazy');
         /* eslint-enable */
-      });
+      })
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

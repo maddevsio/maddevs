@@ -131,12 +131,12 @@
 </template>
 
 <script>
-import { required, email, maxLength } from 'vuelidate/lib/validators';
-import { fileSizeValidation, fileExt } from '@/helpers/validators';
-import FileInput from '@/components/Careers/FileInput';
-import Button from '@/components/Careers/Button';
-import UIRadioButtons from '@/components/ui/UIRadioButtons';
-import SuccessModal from '@/components/Modals/success-modal';
+import { required, email, maxLength } from 'vuelidate/lib/validators'
+import { fileSizeValidation, fileExt } from '@/helpers/validators'
+import FileInput from '@/components/Careers/FileInput'
+import Button from '@/components/Careers/Button'
+import UIRadioButtons from '@/components/ui/UIRadioButtons'
+import SuccessModal from '@/components/Modals/success-modal'
 
 export default {
   name: 'CareersForm',
@@ -195,23 +195,23 @@ export default {
       onSubmit: false,
       form: '',
       modalTitle: 'Mad Devs Website Carrers Form',
-    };
+    }
   },
 
   mounted() {
-    this.focusInput();
+    this.focusInput()
   },
 
   methods: {
     onFileChanged() {
       if (this.$v && this.$v.selectedFile) {
-        this.$v.selectedFile.$touch();
+        this.$v.selectedFile.$touch()
       }
     },
 
     sendData() {
       if (!this.$v.validationGroup.$invalid && !this.onSubmit) {
-        this.onSubmit = true;
+        this.onSubmit = true
         // TODO: add ajax request
         this.toBase64(this.selectedFile).then(base64 => {
           this.form = {
@@ -230,53 +230,53 @@ export default {
               base64: base64.replace(/^data:(.*,)?/, ''),
               name: this.selectedFile.name,
             },
-          };
+          }
           this.$store.dispatch('sendEmail', this.form).then(res => {
-            this.onSubmit = false;
+            this.onSubmit = false
             if (res.status === 200) {
-              this.isEmailSent = true;
+              this.isEmailSent = true
               setTimeout(() => {
-                this.resetForm();
-              }, 3000);
+                this.resetForm()
+              }, 3000)
             } else {
-              this.isEmailSent = false;
+              this.isEmailSent = false
             }
-          });
-        });
+          })
+        })
       }
     },
 
     resetForm() {
-      this.$v.$reset(); // Reset validation form
-      this.$refs.fileInput.reset();
-      this.$refs.radioButtons.reset();
-      this.fullName = null;
-      this.positionValue = null;
-      this.positionTitle = null;
-      this.email = null;
-      this.selectedFile = null;
-      this.linkedinProfile = null;
-      this.isEmailSent = false;
+      this.$v.$reset() // Reset validation form
+      this.$refs.fileInput.reset()
+      this.$refs.radioButtons.reset()
+      this.fullName = null
+      this.positionValue = null
+      this.positionTitle = null
+      this.email = null
+      this.selectedFile = null
+      this.linkedinProfile = null
+      this.isEmailSent = false
     },
 
     toBase64(file) {
       return new Promise((resolve, reject) => {
-        const reader = new FileReader();
-        reader.readAsDataURL(file);
-        reader.onload = () => resolve(reader.result);
-        reader.onerror = error => reject(error);
-      });
+        const reader = new FileReader()
+        reader.readAsDataURL(file)
+        reader.onload = () => resolve(reader.result)
+        reader.onerror = error => reject(error)
+      })
     },
 
     focusInput() {
       this.$nextTick(() => {
         if (this.$refs.nameInput && this.$refs.nameInput.focus()) {
-          this.$refs.nameInput.focus();
+          this.$refs.nameInput.focus()
         }
-      });
+      })
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

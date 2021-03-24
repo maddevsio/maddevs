@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import ItСonsulting from '@/components/Services/ItСonsulting.vue';
+import { mount } from '@vue/test-utils'
+import ItСonsulting from '@/components/Services/ItСonsulting.vue'
 
 describe('itСonsulting component', () => {
-  let wrapper;
+  let wrapper
   const data = {
     TechnologyStack: {
       title: 'Technology <br> Stack',
@@ -26,22 +26,22 @@ describe('itСonsulting component', () => {
       className: 'third-item',
     },
     buttonInnerText: 'Get expert advice',
-  };
+  }
 
   beforeEach(() => {
     wrapper = mount(ItСonsulting, {
       stubs: ['client-only'],
-    });
-  });
+    })
+  })
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
 
   it('should check existence of data', () => {
-    expect(wrapper.vm.$data).toStrictEqual(data);
-  });
-});
+    expect(wrapper.vm.$data).toStrictEqual(data)
+  })
+})

@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import Picture from '@/components/Cases/Picture';
-import TextParagraph from '@/components/Cases/TextParagraph';
+import Picture from '@/components/Cases/Picture'
+import TextParagraph from '@/components/Cases/TextParagraph'
 
 export default {
   name: 'TextQuoteAuthor',
@@ -59,7 +59,7 @@ export default {
       default: '',
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

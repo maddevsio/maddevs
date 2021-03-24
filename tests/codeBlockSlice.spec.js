@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import CodeBlockSlice from '../client/components/Blog/slices/CodeBlockSlice';
+import { mount } from '@vue/test-utils'
+import CodeBlockSlice from '../client/components/Blog/slices/CodeBlockSlice'
 
 describe('code block slice component', () => {
-  let wrapper;
+  let wrapper
 
   const slice = {
     items: [{}],
@@ -19,19 +19,19 @@ describe('code block slice component', () => {
     },
     slice_label: null,
     slice_type: 'codeblock',
-  };
+  }
 
   beforeEach(() => {
     wrapper = mount(CodeBlockSlice, {
       propsData: { slice },
-    });
-  });
+    })
+  })
 
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-});
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import Swiper from '@/components/Cases/Swiper';
+import { mount } from '@vue/test-utils'
+import Swiper from '@/components/Cases/Swiper'
 
 describe('swiper', () => {
-  let wrapper;
+  let wrapper
   const props = {
     components: [
       {
@@ -16,22 +16,22 @@ describe('swiper', () => {
         fileExtension: 'jpg',
       },
     ],
-  };
+  }
 
   beforeEach(() => {
     wrapper = mount(Swiper, {
       propsData: props,
-    });
-  });
+    })
+  })
 
   // ------ IMPORTANT ----- //
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
 
   it('sets the correctly data', () => {
@@ -40,7 +40,7 @@ describe('swiper', () => {
       loopedSlides: 0,
       spaceBetween: 10,
       grabCursor: true,
-    });
+    })
     expect(wrapper.vm.$data.swiperOptionThumbs).toEqual({
       loop: false,
       loopedSlides: 0,
@@ -49,6 +49,6 @@ describe('swiper', () => {
       slidesPerView: 'auto',
       touchRatio: 0.1,
       slideToClickedSlide: true,
-    });
-  });
-});
+    })
+  })
+})

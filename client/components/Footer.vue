@@ -22,11 +22,11 @@
 </template>
 
 <script>
-import footerForm from '@/components/Footer/footer-form';
-import footerContacts from '@/components/Footer/footer-contacts';
-import footerNavbar from '@/components/Footer/footer-navbar';
-import footerNavbarMobile from '@/components/Footer/footer-navbar-mobile';
-import footerSocialNetWorkList from '@/components/Footer/footer-social-network-list';
+import footerForm from '@/components/Footer/footer-form'
+import footerContacts from '@/components/Footer/footer-contacts'
+import footerNavbar from '@/components/Footer/footer-navbar'
+import footerNavbarMobile from '@/components/Footer/footer-navbar-mobile'
+import footerSocialNetWorkList from '@/components/Footer/footer-social-network-list'
 
 export default {
   name: 'Footer',
@@ -42,27 +42,27 @@ export default {
     return {
       currentYear: new Date().getFullYear(),
       currentPageName: '',
-    };
+    }
   },
 
   watch: {
     $route() {
-      this.updateClassName();
+      this.updateClassName()
     },
   },
 
   mounted() {
-    this.updateClassName();
+    this.updateClassName()
   },
 
   methods: {
     updateClassName() {
       if ($nuxt.$route.name) {
-        this.currentPageName = $nuxt.$route.name;
+        this.currentPageName = $nuxt.$route.name
       }
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

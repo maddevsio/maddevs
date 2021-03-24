@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import TextParagraph from '@/components/Cases/TextParagraph';
+import { mount } from '@vue/test-utils'
+import TextParagraph from '@/components/Cases/TextParagraph'
 
 describe('text paragraph', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
     wrapper = mount(TextParagraph, {
@@ -12,25 +12,25 @@ describe('text paragraph', () => {
       slots: {
         default: 'Main Content',
       },
-    });
-  });
+    })
+  })
 
   // ------ IMPORTANT ----- //
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
 
   it('should have correct data in slot', () => {
-    expect(wrapper.html()).toContain('Main Content');
-  });
+    expect(wrapper.html()).toContain('Main Content')
+  })
 
   it('should have correct style', () => {
-    const paragraph = wrapper.find('.case_paragraph');
-    expect(paragraph.element.style.getPropertyValue('color')).toEqual('rgb(0, 0, 0)');
-  });
-});
+    const paragraph = wrapper.find('.case_paragraph')
+    expect(paragraph.element.style.getPropertyValue('color')).toEqual('rgb(0, 0, 0)')
+  })
+})

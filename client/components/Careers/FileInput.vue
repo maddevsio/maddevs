@@ -29,36 +29,36 @@ export default {
   data() {
     return {
       selectedFile: null,
-    };
+    }
   },
 
   computed: {
     selectedFileName() {
-      const ending = '...';
-      const fileName = this.selectedFile.name;
+      const ending = '...'
+      const fileName = this.selectedFile.name
       if (fileName) {
         if (fileName.length > 25) {
-          return fileName.substring(0, 25) + ending;
+          return fileName.substring(0, 25) + ending
         }
-        return fileName;
+        return fileName
       }
-      return '';
+      return ''
     },
   },
 
   methods: {
     onFileChanged(event) {
-      const [file] = event.target.files;
-      this.selectedFile = file;
-      this.$emit('input', file);
+      const [file] = event.target.files
+      this.selectedFile = file
+      this.$emit('input', file)
     },
 
     reset() {
-      this.selectedFile = null;
-      this.$refs.fileInput.value = null;
+      this.selectedFile = null
+      this.$refs.fileInput.value = null
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

@@ -17,15 +17,15 @@ export default {
   data() {
     return {
       className: '',
-    };
+    }
   },
 
   mounted() {
     if (this.$props.slice.primary.text[0].type === 'heading1') {
-      this.className = this.$props.slice.primary.text[0].text.toLowerCase().replace(/\s/g, '-');
+      this.className = this.$props.slice.primary.text[0].text.toLowerCase().replace(/\s/g, '-')
     }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

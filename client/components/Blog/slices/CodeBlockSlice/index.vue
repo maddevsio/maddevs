@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import { PrismEditor } from 'vue-prism-editor';
-import 'vue-prism-editor/dist/prismeditor.min.css';
+import { PrismEditor } from 'vue-prism-editor'
+import 'vue-prism-editor/dist/prismeditor.min.css'
 
-import 'prismjs';
-import { highlight } from 'prismjs/components/prism-core.min';
-import '@/components/Blog/slices/CodeBlockSlice/highlights';
+import 'prismjs'
+import { highlight } from 'prismjs/components/prism-core.min'
+import '@/components/Blog/slices/CodeBlockSlice/highlights'
 
 export default {
   name: 'CodeblockSlice',
@@ -28,19 +28,19 @@ export default {
   data() {
     return {
       code: '',
-    };
+    }
   },
 
   mounted() {
-    this.code = this.slice.primary.code.reduce((prev, element) => prev + element.text, '');
+    this.code = this.slice.primary.code.reduce((prev, element) => prev + element.text, '')
   },
 
   methods: {
     highlighter(code) {
-      return highlight(code, window.Prism.languages[this.slice.primary.language], this.slice.primary.language);
+      return highlight(code, window.Prism.languages[this.slice.primary.language], this.slice.primary.language)
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

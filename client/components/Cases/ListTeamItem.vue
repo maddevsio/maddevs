@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import Picture from '@/components/Cases/Picture';
+import Picture from '@/components/Cases/Picture'
 
 export default {
   name: 'ListTeamItem',
@@ -58,7 +58,7 @@ export default {
       default: '',
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

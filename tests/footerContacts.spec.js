@@ -1,20 +1,20 @@
-import { mount } from '@vue/test-utils';
-import FooterContacts from '@/components/Footer/footer-contacts';
+import { mount } from '@vue/test-utils'
+import FooterContacts from '@/components/Footer/footer-contacts'
 
 describe('footer contacts', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(FooterContacts);
-  });
+    wrapper = mount(FooterContacts)
+  })
 
   // ------ IMPORTANT ----- //
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
-});
+})

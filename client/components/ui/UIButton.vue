@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import WaveAnimation from '@/directives/WaveAnimation';
+import WaveAnimation from '@/directives/WaveAnimation'
 
 export default {
   name: 'UIButton',
@@ -28,10 +28,10 @@ export default {
 
   methods: {
     onClick() {
-      if (!this.disabled) this.$emit('click');
+      if (!this.disabled) this.$emit('click')
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import Customer from '@/components/Projects/Customer';
+import Customer from '@/components/Projects/Customer'
 
 export default {
   name: 'Customers',
@@ -84,9 +84,9 @@ export default {
           className: 'peklo-icon',
         },
       ],
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

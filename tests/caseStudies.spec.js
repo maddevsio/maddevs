@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import CaseStudies from '@/components/About/CaseStudies';
+import { mount } from '@vue/test-utils'
+import CaseStudies from '@/components/About/CaseStudies'
 
 describe('caseStudies component', () => {
-  let wrapper;
+  let wrapper
   const projects = [
     {
       projectName: 'nambafood',
@@ -69,70 +69,70 @@ describe('caseStudies component', () => {
       contribution: 'Backend, Infrastructure, Mobile Apps',
       alt: 'GoDee Bus Transportation Services Logo.',
     },
-  ];
+  ]
 
   beforeEach(() => {
     const $route = {
       path: '/',
-    };
+    }
 
     global.$nuxt = {
       $route: {
         name: '/',
       },
-    };
+    }
 
     wrapper = mount(CaseStudies, {
       mocks: {
         $route,
       },
-    });
-  });
+    })
+  })
 
   it("is Vue's instance", () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
 
   it("correctly sets the current page's default name", () => {
-    expect(wrapper.vm.$data.currentPageName).toBe('/');
-  });
+    expect(wrapper.vm.$data.currentPageName).toBe('/')
+  })
 
   it("correctly sets the current page's name", () => {
     const $route = {
       path: '/projects',
-    };
+    }
 
     wrapper = mount(CaseStudies, {
       mocks: {
         $route,
       },
-    });
+    })
 
-    wrapper.vm.$data.currentPageName = 'projects';
-    expect(wrapper.vm.$route.path).toBe('/projects');
-    expect(wrapper.vm.$data.currentPageName).toBe('projects');
-  });
+    wrapper.vm.$data.currentPageName = 'projects'
+    expect(wrapper.vm.$route.path).toBe('/projects')
+    expect(wrapper.vm.$data.currentPageName).toBe('projects')
+  })
 
   it('should check existence of data', () => {
-    expect(wrapper.vm.$data.projects).toStrictEqual(projects);
-  });
+    expect(wrapper.vm.$data.projects).toStrictEqual(projects)
+  })
 
   it('should render 4 single-projects in the project section', () => {
-    const singleProjects = wrapper.findAll('.projects .single-project');
-    expect(singleProjects).toHaveLength(4);
-  });
+    const singleProjects = wrapper.findAll('.projects .single-project')
+    expect(singleProjects).toHaveLength(4)
+  })
 
   it('should have 16 projects including projects in the slider', () => {
-    const sliderSingleProjects = wrapper.findAll('.single-project');
-    expect(sliderSingleProjects).toHaveLength(4);
-  });
+    const sliderSingleProjects = wrapper.findAll('.single-project')
+    expect(sliderSingleProjects).toHaveLength(4)
+  })
 
   it('check that the specific images exists', () => {
-    const img = wrapper.findAll('.single-project__logo');
-    expect(img).toHaveLength(4);
-  });
-});
+    const img = wrapper.findAll('.single-project__logo')
+    expect(img).toHaveLength(4)
+  })
+})

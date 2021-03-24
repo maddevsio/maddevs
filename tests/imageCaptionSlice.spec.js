@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import ImageCaptionSlice from '../client/components/Blog/slices/ImageCaptionSlice';
+import { mount } from '@vue/test-utils'
+import ImageCaptionSlice from '../client/components/Blog/slices/ImageCaptionSlice'
 
 describe('image attribute slice component', () => {
-  let wrapper;
+  let wrapper
 
   const slice = {
     items: [{}],
@@ -18,7 +18,7 @@ describe('image attribute slice component', () => {
     },
     slice_label: 'image-full-width',
     slice_type: 'image_with_caption',
-  };
+  }
 
   beforeEach(() => {
     wrapper = mount(ImageCaptionSlice, {
@@ -30,18 +30,18 @@ describe('image attribute slice component', () => {
         },
       },
       stubs: ['prismic-image'],
-    });
-  });
+    })
+  })
 
   it('is vue component', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
 
   it('caption rendered', () => {
-    expect(wrapper.find('.image-label').text()).toBe(slice.primary.caption);
-  });
-});
+    expect(wrapper.find('.image-label').text()).toBe(slice.primary.caption)
+  })
+})

@@ -97,11 +97,11 @@
 </template>
 
 <script>
-import { required, email, maxLength } from 'vuelidate/lib/validators';
-import { phone } from '@/helpers/validators';
-import FormCheckboxes from '@/components/ui/form-checkboxes';
-import UIButton from '@/components/ui/UIButton';
-import { phoneHandler } from '@/mixins/phoneHandler';
+import { required, email, maxLength } from 'vuelidate/lib/validators'
+import { phone } from '@/helpers/validators'
+import FormCheckboxes from '@/components/ui/form-checkboxes'
+import UIButton from '@/components/ui/UIButton'
+import { phoneHandler } from '@/mixins/phoneHandler'
 
 export default {
   name: 'GetYourTrustedItPartner',
@@ -152,23 +152,23 @@ export default {
   mounted() {
     this.$nuxt.$on('resetCheckboxesInForm', () => {
       // Reset checkboxes in form if user close modal
-      this.agreeWithPrivacyPolicy = false;
-      this.agreeToGetMadDevsDiscountOffers = false;
-    });
+      this.agreeWithPrivacyPolicy = false
+      this.agreeToGetMadDevsDiscountOffers = false
+    })
   },
 
   methods: {
     getPrivacyCheckboxState(privacyState) {
-      this.agreeWithPrivacyPolicy = privacyState;
+      this.agreeWithPrivacyPolicy = privacyState
     },
 
     getDiscountOffersCheckboxState(discountOffersState) {
-      this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+      this.agreeToGetMadDevsDiscountOffers = discountOffersState
     },
 
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
-        this.onSubmit = true;
+        this.onSubmit = true
         this.form = {
           templateId: 304629, // Required
           variables: {
@@ -182,31 +182,31 @@ export default {
             subject: this.subject || '',
             modalTitle: this.modalTitle,
           },
-        };
+        }
         this.$store
           .dispatch('sendEmail', this.form)
           .then(res => {
-            this.onSubmit = false;
-            this.resetForm();
+            this.onSubmit = false
+            this.resetForm()
             if (res.status === 200) {
-              this.$parent.$emit('success');
+              this.$parent.$emit('success')
             }
           })
           .catch(() => {
-            this.onSubmit = true;
-          });
+            this.onSubmit = true
+          })
       }
     },
 
     resetForm() {
-      this.$refs.checkboxes.reset();
-      this.fullName = null;
-      this.email = null;
-      this.phoneNumber = null;
-      this.needAssistanceWith = null;
-      this.agreeWithPrivacyPolicy = false;
-      this.agreeToGetMadDevsDiscountOffers = false;
+      this.$refs.checkboxes.reset()
+      this.fullName = null
+      this.email = null
+      this.phoneNumber = null
+      this.needAssistanceWith = null
+      this.agreeWithPrivacyPolicy = false
+      this.agreeToGetMadDevsDiscountOffers = false
     },
   },
-};
+}
 </script>

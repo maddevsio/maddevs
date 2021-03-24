@@ -29,22 +29,22 @@ export default {
         // eslint-disable-next-line
         link.spans[0].data.url = link.spans[0].data.url.replace('https://', '');
       }
-    });
+    })
   },
 
   methods: {
     scrollToSection(e) {
-      const id = e.target.getAttribute('href') ? e.target.getAttribute('href').replace('#', '') : null;
-      const element = document.getElementById(id);
+      const id = e.target.getAttribute('href') ? e.target.getAttribute('href').replace('#', '') : null
+      const element = document.getElementById(id)
       if (element !== null) {
         window.scrollTo({
           top: element.offsetTop + 180,
           behavior: 'smooth',
-        });
+        })
       }
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

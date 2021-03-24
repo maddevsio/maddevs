@@ -1,9 +1,9 @@
-import { mount } from '@vue/test-utils';
+import { mount } from '@vue/test-utils'
 
-import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
+import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
 
 describe('text quote author', () => {
-  let wrapper;
+  let wrapper
   const props = {
     authorName: 'Author name',
     authorPosition: 'Author position',
@@ -11,7 +11,7 @@ describe('text quote author', () => {
     fileName: 'apple-iphone-xr-silver',
     fileExtension: 'png',
     alt: 'alt',
-  };
+  }
 
   beforeEach(() => {
     wrapper = mount(TextQuoteAuthor, {
@@ -19,31 +19,31 @@ describe('text quote author', () => {
       slots: {
         default: 'Main Content',
       },
-    });
-  });
+    })
+  })
 
   // ------ IMPORTANT ----- //
   it("is Vue's instance", () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
 
   it('should pass correct props', () => {
-    expect(wrapper.props()).toEqual(props);
-  });
+    expect(wrapper.props()).toEqual(props)
+  })
 
   it('should have correct content in child elements', () => {
-    const authorName = wrapper.find('.case_blockquote-author__name');
-    const authorPosition = wrapper.find('.case_blockquote-author__position');
-    expect(authorName.text()).toEqual('Author name');
-    expect(authorPosition.text()).toEqual('Author position');
-  });
+    const authorName = wrapper.find('.case_blockquote-author__name')
+    const authorPosition = wrapper.find('.case_blockquote-author__position')
+    expect(authorName.text()).toEqual('Author name')
+    expect(authorPosition.text()).toEqual('Author position')
+  })
 
   it('should have correct data in slot', () => {
-    expect(wrapper.html()).toContain('Main Content');
-  });
-});
+    expect(wrapper.html()).toContain('Main Content')
+  })
+})

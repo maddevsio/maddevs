@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import ImageAttributesSlice from '../client/components/Blog/slices/ImageAttributesSlice';
+import { mount } from '@vue/test-utils'
+import ImageAttributesSlice from '../client/components/Blog/slices/ImageAttributesSlice'
 
 describe('image attribute slice component', () => {
-  let wrapper;
+  let wrapper
 
   const slice = {
     items: [{}],
@@ -26,7 +26,7 @@ describe('image attribute slice component', () => {
     },
     slice_label: null,
     slice_type: 'image_with_attributes',
-  };
+  }
 
   beforeEach(() => {
     wrapper = mount(ImageAttributesSlice, {
@@ -37,22 +37,22 @@ describe('image attribute slice component', () => {
         },
       },
       stubs: ['prismic-image'],
-    });
-  });
+    })
+  })
 
   it('is vue component', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
 
   it('link has target attribute', () => {
-    expect(wrapper.find('.block-img').attributes('target')).toMatch('_blank');
-  });
+    expect(wrapper.find('.block-img').attributes('target')).toMatch('_blank')
+  })
 
   it('link has href attribute', () => {
-    expect(wrapper.find('.block-img').attributes('href')).toMatch('https://blog.maddevs.io');
-  });
-});
+    expect(wrapper.find('.block-img').attributes('href')).toMatch('https://blog.maddevs.io')
+  })
+})

@@ -1,20 +1,20 @@
-import { mount } from '@vue/test-utils';
-import CardIssuesGoDee from '@/components/Cases/cards-content/CardIssuesGoDee';
+import { mount } from '@vue/test-utils'
+import CardIssuesGoDee from '@/components/Cases/cards-content/CardIssuesGoDee'
 
 describe('cardIssuesGoDee', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(CardIssuesGoDee);
-  });
+    wrapper = mount(CardIssuesGoDee)
+  })
 
   // ------ IMPORTANT ----- //
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
-});
+})

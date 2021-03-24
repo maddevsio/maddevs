@@ -92,7 +92,7 @@
 </template>
 
 <script>
-import footerSocialNetworkList from '@/components/Footer/footer-social-network-list';
+import footerSocialNetworkList from '@/components/Footer/footer-social-network-list'
 
 export default {
   name: 'FooterContacts',
@@ -103,7 +103,7 @@ export default {
   data: () => ({
     mailLink: process.env.emailContact,
   }),
-};
+}
 </script>
 
 <style lang="scss" scoped>

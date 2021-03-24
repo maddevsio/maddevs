@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import CustomerUniversity from '../client/components/Blog/header/CustomerUniversity';
+import { mount } from '@vue/test-utils'
+import CustomerUniversity from '../client/components/Blog/header/CustomerUniversity'
 
 describe('customer university header component', () => {
-  let wrapper;
+  let wrapper
 
   const propsData = {
     document: {
@@ -73,7 +73,7 @@ describe('customer university header component', () => {
     ],
     clusterName: 'Pricing strategies in custom software development',
     id: 'YAGi7REAACMAgV8d',
-  };
+  }
 
   beforeEach(() => {
     wrapper = mount(CustomerUniversity, {
@@ -84,14 +84,14 @@ describe('customer university header component', () => {
       },
       propsData,
       stubs: ['v-select', 'common-header', 'router-link'],
-    });
-  });
+    })
+  })
 
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-});
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

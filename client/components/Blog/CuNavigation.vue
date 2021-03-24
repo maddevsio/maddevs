@@ -54,20 +54,20 @@ export default {
 
   computed: {
     leftColumnPosts() {
-      return this.clusterPosts.slice(0, Math.ceil(this.clusterPosts.length / 2));
+      return this.clusterPosts.slice(0, Math.ceil(this.clusterPosts.length / 2))
     },
 
     rightColumnPosts() {
-      return this.clusterPosts.slice(Math.ceil(this.clusterPosts.length / 2));
+      return this.clusterPosts.slice(Math.ceil(this.clusterPosts.length / 2))
     },
   },
 
   methods: {
     isCurrent(post) {
-      return post.cu_post.id === this.id ? 'current' : '';
+      return post.cu_post.id === this.id ? 'current' : ''
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

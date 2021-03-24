@@ -84,11 +84,11 @@ export default {
   methods: {
     onImageLoad(event) {
       if (event.target.classList.contains('grey-background')) {
-        event.target.classList.remove('grey-background');
+        event.target.classList.remove('grey-background')
       }
     },
   },
-};
+}
 </script>
 <style lang="scss" scoped>
 @import '../../assets/styles/_vars';

@@ -113,8 +113,8 @@
 </template>
 
 <script>
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
-import Modal from '@/containers/Modal';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import Modal from '@/containers/Modal'
 
 export default {
   name: 'QuickProjectStart',
@@ -128,9 +128,9 @@ export default {
     return {
       modalWindowName: 'order-project-from-us-modal',
       buttonInnerText: 'Submit your project',
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

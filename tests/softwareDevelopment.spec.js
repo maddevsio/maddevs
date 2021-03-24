@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import SoftwareDevelopment from '@/components/Services/SoftwareDevelopment';
+import { mount } from '@vue/test-utils'
+import SoftwareDevelopment from '@/components/Services/SoftwareDevelopment'
 
 describe('softwareDevelopment', () => {
-  let wrapper;
+  let wrapper
 
   const mockedData = {
     backend: {
@@ -129,23 +129,23 @@ describe('softwareDevelopment', () => {
       ],
     },
     buttonInnerText: 'Get your trusted IT partner',
-  };
+  }
 
   beforeEach(() => {
     wrapper = mount(SoftwareDevelopment, {
       stubs: ['client-only'],
-    });
-  });
+    })
+  })
 
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
 
   it('should check existence of data', () => {
-    expect(wrapper.vm.$data).toStrictEqual(mockedData);
-  });
-});
+    expect(wrapper.vm.$data).toStrictEqual(mockedData)
+  })
+})

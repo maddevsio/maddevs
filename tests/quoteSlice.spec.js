@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import QuoteSlice from '../client/components/Blog/slices/QuoteSlice';
+import { mount } from '@vue/test-utils'
+import QuoteSlice from '../client/components/Blog/slices/QuoteSlice'
 
 describe('quoteSlice component', () => {
-  let wrapper;
+  let wrapper
 
   const slice = {
     primary: {
@@ -14,7 +14,7 @@ describe('quoteSlice component', () => {
         url: '',
       },
     },
-  };
+  }
 
   beforeEach(() => {
     wrapper = mount(QuoteSlice, {
@@ -26,18 +26,18 @@ describe('quoteSlice component', () => {
         },
       },
       stubs: ['prismic-image'],
-    });
-  });
+    })
+  })
 
   it('is a Vue component', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
 
   it('renders text', () => {
-    expect(wrapper.text()).toMatch(slice.primary.quote);
-  });
-});
+    expect(wrapper.text()).toMatch(slice.primary.quote)
+  })
+})

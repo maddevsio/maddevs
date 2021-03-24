@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import TextQuote from '@/components/Cases/TextQuote';
+import TextQuote from '@/components/Cases/TextQuote'
 
 export default {
   name: 'QuoteSlice',
@@ -39,10 +39,10 @@ export default {
 
   computed: {
     authorName() {
-      return this.$prismic.asText(this.slice.primary.name_of_the_author);
+      return this.$prismic.asText(this.slice.primary.name_of_the_author)
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

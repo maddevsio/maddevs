@@ -489,7 +489,7 @@
 <script>
 export default {
   name: 'Privacy',
-};
+}
 </script>
 
 <style lang="scss" scoped>

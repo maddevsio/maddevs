@@ -1,5 +1,5 @@
 function isBabelLoader(caller) {
-  return caller && caller.name === 'babel-loader';
+  return caller && caller.name === 'babel-loader'
 }
 
 module.exports = api => {
@@ -15,7 +15,7 @@ module.exports = api => {
           },
         ],
       ],
-    };
+    }
   }
-  return {};
-};
+  return {}
+}

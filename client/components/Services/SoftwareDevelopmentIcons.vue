@@ -15,7 +15,7 @@ export default {
       default: Function,
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

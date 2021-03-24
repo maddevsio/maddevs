@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import simplebar from 'simplebar-vue';
-import SuccessMessage from '@/components/Modals/success-message';
+import simplebar from 'simplebar-vue'
+import SuccessMessage from '@/components/Modals/success-message'
 
 export default {
   name: 'Modal',
@@ -29,12 +29,12 @@ export default {
   directives: {
     appendToBody: {
       inserted(el) {
-        document.body.appendChild(el);
+        document.body.appendChild(el)
       },
 
       unbind(el) {
         if (el.parentNode) {
-          el.parentNode.removeChild(el);
+          el.parentNode.removeChild(el)
         }
       },
     },
@@ -53,66 +53,66 @@ export default {
       contentLoaded: false,
       isOverlay: false,
       isSuccess: false,
-    };
+    }
   },
 
   beforeMount() {
-    document.addEventListener('keydown', this.onKeydown);
+    document.addEventListener('keydown', this.onKeydown)
   },
 
   beforeDestroy() {
-    document.removeEventListener('keydown', this.onKeydown);
+    document.removeEventListener('keydown', this.onKeydown)
   },
 
   methods: {
     openSuccessModal() {
-      this.isSuccess = true;
+      this.isSuccess = true
     },
 
     close() {
       setTimeout(() => {
-        this.isVisible = false;
-        this.enableScrollOnBody();
-      }, 200);
+        this.isVisible = false
+        this.enableScrollOnBody()
+      }, 200)
       setTimeout(() => {
-        this.contentLoaded = false;
-      }, 50);
+        this.contentLoaded = false
+      }, 50)
       setTimeout(() => {
-        this.isOverlay = false;
-        this.$emit('on-close');
-        this.isSuccess = false;
-      }, 100);
+        this.isOverlay = false
+        this.$emit('on-close')
+        this.isSuccess = false
+      }, 100)
     },
 
     show() {
-      this.disableScrollOnBody();
-      this.isVisible = true;
+      this.disableScrollOnBody()
+      this.isVisible = true
       setTimeout(() => {
-        this.contentLoaded = true;
-      }, 50);
+        this.contentLoaded = true
+      }, 50)
       setTimeout(() => {
-        this.isOverlay = true;
-        this.$emit('on-show');
-      }, 100);
+        this.isOverlay = true
+        this.$emit('on-show')
+      }, 100)
     },
 
     onKeydown(e) {
       if (e.keyCode === 27) {
-        this.close();
+        this.close()
       }
     },
 
     enableScrollOnBody() {
-      document.body.style.top = 'auto';
-      document.body.style.overflow = 'auto';
+      document.body.style.top = 'auto'
+      document.body.style.overflow = 'auto'
     },
 
     disableScrollOnBody() {
-      document.body.style.top = `-${window.scrollY}px`;
-      document.body.style.overflow = 'hidden';
+      document.body.style.top = `-${window.scrollY}px`
+      document.body.style.overflow = 'hidden'
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

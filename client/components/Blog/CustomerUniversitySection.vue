@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import PostAuthor from '@/components/Blog/PostAuthor';
+import PostAuthor from '@/components/Blog/PostAuthor'
 
 export default {
   name: 'CustomerUniversitySection',
@@ -71,67 +71,67 @@ export default {
       featured: null,
       formattedDate: '',
       showAll: false,
-    };
+    }
   },
 
   async fetch() {
-    const master = await this.$prismic.api.getSingle('cu_master');
+    const master = await this.$prismic.api.getSingle('cu_master')
     if (master.data.featured_cu.uid) {
-      this.featured = (await this.$prismic.api.getByUID('customer_university', master.data.featured_cu.uid)).data;
+      this.featured = (await this.$prismic.api.getByUID('customer_university', master.data.featured_cu.uid)).data
       this.formattedDate = Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(
         new Date(this.featured.date),
-      );
+      )
     }
-    this.master = master;
+    this.master = master
   },
 
   computed: {
     clusters() {
       if (this.master.data) {
-        return this.master.data.body;
+        return this.master.data.body
       }
-      return [];
+      return []
     },
 
     clustersToShow() {
-      return this.showAll ? this.clusters : this.clusters.slice(0, 3);
+      return this.showAll ? this.clusters : this.clusters.slice(0, 3)
     },
   },
 
   methods: {
     showMore() {
-      this.showAll = true;
+      this.showAll = true
     },
 
     getFirstParagraph(post) {
-      const slices = post.body;
-      let firstParagraph = '';
-      let haveFirstParagraph = false;
+      const slices = post.body
+      let firstParagraph = ''
+      let haveFirstParagraph = false
 
       slices.forEach(slice => {
         if (!haveFirstParagraph && slice.slice_type === 'text') {
           slice.primary.text.forEach(block => {
             if (block.type === 'paragraph' && !haveFirstParagraph) {
-              firstParagraph += block.text;
-              haveFirstParagraph = true;
+              firstParagraph += block.text
+              haveFirstParagraph = true
             }
-          });
+          })
         }
-      });
-      return this.sliceParagraph(firstParagraph);
+      })
+      return this.sliceParagraph(firstParagraph)
     },
 
     sliceParagraph(paragraph) {
-      const textLimit = 150;
-      const limitedText = paragraph.substr(0, textLimit);
+      const textLimit = 150
+      const limitedText = paragraph.substr(0, textLimit)
 
       if (paragraph.length > textLimit) {
-        return `${limitedText.substr(0, limitedText.lastIndexOf(' '))}...`;
+        return `${limitedText.substr(0, limitedText.lastIndexOf(' '))}...`
       }
-      return paragraph;
+      return paragraph
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

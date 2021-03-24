@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import Customers from '@/components/Projects/Customers';
+import { mount } from '@vue/test-utils'
+import Customers from '@/components/Projects/Customers'
 
 describe('customers component', () => {
-  let wrapper;
+  let wrapper
   const customers = [
     {
       className: 'godee-icon',
@@ -58,21 +58,21 @@ describe('customers component', () => {
     {
       className: 'peklo-icon',
     },
-  ];
+  ]
 
   beforeEach(() => {
-    wrapper = mount(Customers);
-  });
+    wrapper = mount(Customers)
+  })
 
   it("is Vue's instance", () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
 
   it('should check existence of data', () => {
-    expect(wrapper.vm.$data.customers).toStrictEqual(customers);
-  });
-});
+    expect(wrapper.vm.$data.customers).toStrictEqual(customers)
+  })
+})

@@ -7,7 +7,7 @@
 <script>
 export default {
   name: 'ListItemDot',
-};
+}
 </script>
 
 <style scoped lang="scss">

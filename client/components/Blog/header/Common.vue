@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import extractFileExtension from '@/helpers/extractFileExtension';
+import extractFileExtension from '@/helpers/extractFileExtension'
 
 export default {
   name: 'Common',
@@ -56,12 +56,12 @@ export default {
 
   computed: {
     getImageClass() {
-      const allowedExtensions = ['jpeg', 'jpg'];
-      const extension = extractFileExtension(this.coverImageUrl);
-      return allowedExtensions.includes(extension) ? 'blog-post__introduction-image--with-background' : '';
+      const allowedExtensions = ['jpeg', 'jpg']
+      const extension = extractFileExtension(this.coverImageUrl)
+      return allowedExtensions.includes(extension) ? 'blog-post__introduction-image--with-background' : ''
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

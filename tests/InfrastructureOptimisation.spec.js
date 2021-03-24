@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import InfrastructureOptimisation from '@/components/Services/InfrastructureOptimisation';
+import { mount } from '@vue/test-utils'
+import InfrastructureOptimisation from '@/components/Services/InfrastructureOptimisation'
 
 describe('infrastructure optimisation', () => {
-  let wrapper;
+  let wrapper
   const props = {
     whatMakes: {
       title: 'What makes us stand out from others?',
@@ -19,19 +19,19 @@ describe('infrastructure optimisation', () => {
       className: 'second-item',
     },
     buttonInnerText: 'Get an infrastructure audit',
-  };
+  }
   beforeEach(() => {
-    wrapper = mount(InfrastructureOptimisation);
-  });
+    wrapper = mount(InfrastructureOptimisation)
+  })
   // ------ IMPORTANT ----- //
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
   it('sets correct data', () => {
-    expect(wrapper.vm.$data).toEqual(props);
-  });
-});
+    expect(wrapper.vm.$data).toEqual(props)
+  })
+})

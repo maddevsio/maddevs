@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import ListNumberedBox from '@/components/Cases/ListNumberedBox';
-import ListNumberedItemBox from '@/components/Cases/ListNumberedItemBox';
+import ListNumberedBox from '@/components/Cases/ListNumberedBox'
+import ListNumberedItemBox from '@/components/Cases/ListNumberedItemBox'
 
 export default {
   name: 'OrderedList',
@@ -27,8 +27,8 @@ export default {
 
   computed: {
     hasListIntroduction() {
-      return this.slice.primary.list_introduction && this.slice.primary.list_introduction.length !== 0;
+      return this.slice.primary.list_introduction && this.slice.primary.list_introduction.length !== 0
     },
   },
-};
+}
 </script>

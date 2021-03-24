@@ -5,33 +5,33 @@
  */
 export default async (to, from, savedPosition) => {
   if (savedPosition) {
-    return savedPosition;
+    return savedPosition
   }
 
   const findEl = async (hash, x) => {
-    const X = x;
+    const X = x
     return (
       document.querySelector(hash) ||
       new Promise(resolve => {
         if (X > 50) {
-          return resolve();
+          return resolve()
         }
         setTimeout(() => {
-          resolve(findEl(hash, X + 1 || 1));
-        }, 100);
+          resolve(findEl(hash, X + 1 || 1))
+        }, 100)
 
-        return null;
+        return null
       })
-    );
-  };
-
-  if (to.hash) {
-    const el = await findEl(to.hash);
-    if ('scrollBehavior' in document.documentElement.style) {
-      return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' });
-    }
-    return window.scrollTo(0, el.offsetTop);
+    )
   }
 
-  return { x: 0, y: 0 };
-};
+  if (to.hash) {
+    const el = await findEl(to.hash)
+    if ('scrollBehavior' in document.documentElement.style) {
+      return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
+    }
+    return window.scrollTo(0, el.offsetTop)
+  }
+
+  return { x: 0, y: 0 }
+}

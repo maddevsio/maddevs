@@ -66,7 +66,7 @@
 <script>
 export default {
   name: 'GDPR',
-};
+}
 </script>
 
 <style lang="scss" scoped>

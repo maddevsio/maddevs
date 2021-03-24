@@ -2,14 +2,14 @@
 
 global.IntersectionObserver = class IntersectionObserver {
   observe() {
-    return null;
+    return null
   }
 
   disconnect() {
-    return null;
+    return null
   }
 
   unobserve() {
-    return null;
+    return null
   }
-};
+}

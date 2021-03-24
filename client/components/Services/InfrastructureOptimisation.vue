@@ -37,10 +37,10 @@
 </template>
 
 <script>
-import InfrastructureContent from '@/components/Services/InfrastructureContent';
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
-import infrastructureAuditModal from '@/components/Modals/infrastructure-audit-modal';
-import Modal from '@/containers/Modal';
+import InfrastructureContent from '@/components/Services/InfrastructureContent'
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import infrastructureAuditModal from '@/components/Modals/infrastructure-audit-modal'
+import Modal from '@/containers/Modal'
 
 export default {
   name: 'InfrastructureOptimisation',
@@ -72,9 +72,9 @@ export default {
       },
 
       buttonInnerText: 'Get an infrastructure audit',
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

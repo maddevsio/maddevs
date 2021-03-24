@@ -32,10 +32,10 @@
 </template>
 
 <script>
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
-import UIParagraph from '@/components/ui/Services/UIParagraph';
-import UIItemTitle from '@/components/ui/Services/UIItemTitle';
-import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import UIParagraph from '@/components/ui/Services/UIParagraph'
+import UIItemTitle from '@/components/ui/Services/UIItemTitle'
+import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle'
 
 export default {
   name: 'RemoteTechStaffContent',
@@ -76,28 +76,28 @@ export default {
   data() {
     return {
       teamsItem: null,
-    };
+    }
   },
 
   mounted() {
-    const [teamsItem] = document.getElementsByClassName('remoteTechStaffContent__tech-staff-teams');
-    this.teamsItem = teamsItem;
+    const [teamsItem] = document.getElementsByClassName('remoteTechStaffContent__tech-staff-teams')
+    this.teamsItem = teamsItem
   },
 
   methods: {
     handleMouseOver(currentElement) {
       if (currentElement !== 'Teams') {
-        this.teamsItem.classList.remove('remoteTechStaffContent__tech-staff-active');
+        this.teamsItem.classList.remove('remoteTechStaffContent__tech-staff-active')
       }
     },
 
     handleMouseOut(currentElement) {
       if (currentElement !== 'Teams') {
-        this.teamsItem.classList.add('remoteTechStaffContent__tech-staff-active');
+        this.teamsItem.classList.add('remoteTechStaffContent__tech-staff-active')
       }
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

@@ -52,9 +52,9 @@
 </template>
 
 <script>
-import CommonHeader from '@/components/Blog/header/Common';
-import VSelect from 'vue-select';
-import 'vue-select/dist/vue-select.css';
+import CommonHeader from '@/components/Blog/header/Common'
+import VSelect from 'vue-select'
+import 'vue-select/dist/vue-select.css'
 
 export default {
   name: 'CustomerUniversity',
@@ -101,7 +101,7 @@ export default {
             },
           }),
       },
-    };
+    }
   },
 
   computed: {
@@ -109,43 +109,43 @@ export default {
       return this.postList.map(post => ({
         label: this.$prismic.asText(post.chapter_name),
         value: post.cu_post.uid,
-      }));
+      }))
     },
 
     currentPost() {
-      return this.postList.find(post => post.cu_post.id === this.id);
+      return this.postList.find(post => post.cu_post.id === this.id)
     },
 
     nextArticleUrl() {
       if (this.currentPost && this.currentPostIndex < this.postList.length - 1) {
-        return `/customer-university/${this.postList[this.currentPostIndex + 1].cu_post.uid}/`;
+        return `/customer-university/${this.postList[this.currentPostIndex + 1].cu_post.uid}/`
       }
-      return '#';
+      return '#'
     },
 
     prevArticleUrl() {
       if (this.currentPost && this.currentPostIndex > 0) {
-        return `/customer-university/${this.postList[this.currentPostIndex - 1].cu_post.uid}/`;
+        return `/customer-university/${this.postList[this.currentPostIndex - 1].cu_post.uid}/`
       }
-      return '#';
+      return '#'
     },
 
     currentPostIndex() {
       if (this.currentPost) {
-        return this.postList.indexOf(this.currentPost);
+        return this.postList.indexOf(this.currentPost)
       }
-      return undefined;
+      return undefined
     },
   },
 
   methods: {
     handleChange(selectedPost) {
       if (this.currentPost && this.currentPost.cu_post.uid !== selectedPost.value) {
-        this.$router.push({ path: `/customer-university/${selectedPost.value}/` });
+        this.$router.push({ path: `/customer-university/${selectedPost.value}/` })
       }
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

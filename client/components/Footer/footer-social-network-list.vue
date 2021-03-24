@@ -65,9 +65,9 @@ export default {
           alt: 'DEV',
         },
       ],
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

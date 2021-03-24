@@ -24,10 +24,10 @@
 </template>
 
 <script>
-import UIParagraph from '@/components/ui/Services/UIParagraph';
-import UIItemTitle from '@/components/ui/Services/UIItemTitle';
-import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle';
-import SoftwareDevelopmentIcons from '@/components/Services/SoftwareDevelopmentIcons';
+import UIParagraph from '@/components/ui/Services/UIParagraph'
+import UIItemTitle from '@/components/ui/Services/UIItemTitle'
+import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle'
+import SoftwareDevelopmentIcons from '@/components/Services/SoftwareDevelopmentIcons'
 
 export default {
   name: 'SoftwareDevelopmentContent',
@@ -64,7 +64,7 @@ export default {
       default: Function,
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

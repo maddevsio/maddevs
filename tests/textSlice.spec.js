@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import TextSlice from '../client/components/Blog/slices/TextSlice';
+import { mount } from '@vue/test-utils'
+import TextSlice from '../client/components/Blog/slices/TextSlice'
 
 describe('text slice component', () => {
-  let wrapper;
+  let wrapper
 
   const slice = {
     primary: {
@@ -13,20 +13,20 @@ describe('text slice component', () => {
         },
       ],
     },
-  };
+  }
 
   beforeEach(() => {
     wrapper = mount(TextSlice, {
       propsData: { slice },
       stubs: ['prismic-rich-text'],
-    });
-  });
+    })
+  })
 
   it('is a Vue component', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-});
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

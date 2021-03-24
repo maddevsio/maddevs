@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import SuccessMessage from '@/components/Modals/success-message';
+import SuccessMessage from '@/components/Modals/success-message'
 
 export default {
   name: 'SuccessModal',
@@ -34,10 +34,10 @@ export default {
 
   methods: {
     onClose() {
-      this.$emit('onClose');
+      this.$emit('onClose')
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

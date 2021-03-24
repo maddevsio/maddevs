@@ -26,20 +26,20 @@ export default {
   data() {
     return {
       active: null,
-    };
+    }
   },
 
   methods: {
     setActive(index, payload) {
-      this.active = index;
-      this.$emit('input', payload);
+      this.active = index
+      this.$emit('input', payload)
     },
 
     reset() {
-      this.active = null;
+      this.active = null
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

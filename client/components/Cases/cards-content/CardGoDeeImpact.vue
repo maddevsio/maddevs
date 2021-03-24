@@ -16,14 +16,14 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph';
+import TextParagraph from '@/components/Cases/TextParagraph'
 
 export default {
   name: 'CardGoDeeImpact',
   components: {
     TextParagraph,
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

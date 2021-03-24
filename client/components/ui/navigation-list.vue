@@ -12,15 +12,15 @@ export default {
   data() {
     return {
       currentPageName: '',
-    };
+    }
   },
 
   mounted() {
     if ($nuxt.$route.name) {
-      this.currentPageName = $nuxt.$route.name;
+      this.currentPageName = $nuxt.$route.name
     }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

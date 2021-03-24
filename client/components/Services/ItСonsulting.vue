@@ -37,10 +37,10 @@
 </template>
 
 <script>
-import ItConsultingContent from '@/components/Services/ItConsultingContent';
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
-import getExpertAdviceModal from '@/components/Modals/get-expert-advice-modal';
-import Modal from '@/containers/Modal';
+import ItConsultingContent from '@/components/Services/ItConsultingContent'
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import getExpertAdviceModal from '@/components/Modals/get-expert-advice-modal'
+import Modal from '@/containers/Modal'
 
 export default {
   name: 'ItConsulting',
@@ -81,9 +81,9 @@ export default {
       },
 
       buttonInnerText: 'Get expert advice',
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

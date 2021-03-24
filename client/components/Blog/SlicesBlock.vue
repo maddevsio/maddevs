@@ -51,18 +51,18 @@
 </template>
 
 <script>
-import CodeBlockSlice from '@/components/Blog/slices/CodeBlockSlice/index.vue';
-import SectionIdSlice from '@/components/Blog/slices/SectionIdSlice';
-import QuoteSlice from '~/components/Blog/slices/QuoteSlice.vue';
-import TextSlice from '~/components/Blog/slices/TextSlice.vue';
-import ImageCaptionSlice from '~/components/Blog/slices/ImageCaptionSlice.vue';
-import EmbedSlice from '~/components/Blog/slices/EmbedSlice.vue';
-import Divider from './slices/DividerSlice';
-import ImageAttributesSlice from './slices/ImageAttributesSlice';
-import OrderedList from './slices/OrderedList';
-import DoubleColumnBorderedSlice from './slices/DoubleColumnBorderedSlice';
-import GithubGistSlice from './slices/GithubGistSlice';
-import GallerySlice from './slices/GallerySlice';
+import CodeBlockSlice from '@/components/Blog/slices/CodeBlockSlice/index.vue'
+import SectionIdSlice from '@/components/Blog/slices/SectionIdSlice'
+import QuoteSlice from '~/components/Blog/slices/QuoteSlice.vue'
+import TextSlice from '~/components/Blog/slices/TextSlice.vue'
+import ImageCaptionSlice from '~/components/Blog/slices/ImageCaptionSlice.vue'
+import EmbedSlice from '~/components/Blog/slices/EmbedSlice.vue'
+import Divider from './slices/DividerSlice'
+import ImageAttributesSlice from './slices/ImageAttributesSlice'
+import OrderedList from './slices/OrderedList'
+import DoubleColumnBorderedSlice from './slices/DoubleColumnBorderedSlice'
+import GithubGistSlice from './slices/GithubGistSlice'
+import GallerySlice from './slices/GallerySlice'
 
 export default {
   name: 'SlicesBlock',
@@ -87,5 +87,5 @@ export default {
       required: true,
     },
   },
-};
+}
 </script>

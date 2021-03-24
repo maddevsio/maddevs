@@ -7,7 +7,7 @@
 <script>
 export default {
   name: 'ListDashItemBox',
-};
+}
 </script>
 
 <style scoped lang="scss">

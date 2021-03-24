@@ -1,9 +1,9 @@
-import { mount } from '@vue/test-utils';
-import FeaturedPost from '../client/components/Blog/FeaturedPost';
-import blogPost from './__mocks__/blogPost';
+import { mount } from '@vue/test-utils'
+import FeaturedPost from '../client/components/Blog/FeaturedPost'
+import blogPost from './__mocks__/blogPost'
 
 describe('featured post component', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
     wrapper = mount(FeaturedPost, {
@@ -16,14 +16,14 @@ describe('featured post component', () => {
           asText: text => text[0].text,
         },
       },
-    });
-  });
+    })
+  })
 
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-});
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

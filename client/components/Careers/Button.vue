@@ -23,11 +23,11 @@ export default {
   methods: {
     callback(e) {
       if (this.$props.disabled === false) {
-        this.$emit('click', e);
+        this.$emit('click', e)
       }
     },
   },
-};
+}
 </script>
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';

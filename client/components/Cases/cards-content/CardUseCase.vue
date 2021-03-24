@@ -39,8 +39,8 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph';
-import Picture from '@/components/Cases/Picture';
+import TextParagraph from '@/components/Cases/TextParagraph'
+import Picture from '@/components/Cases/Picture'
 
 export default {
   name: 'CardUseCase',
@@ -85,7 +85,7 @@ export default {
       default: () => ({}),
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph';
-import Lottie from 'vue-lottie/src/lottie.vue';
-import animationData from '@/assets/lottie/prim-algorithm.json';
+import TextParagraph from '@/components/Cases/TextParagraph'
+import Lottie from 'vue-lottie/src/lottie.vue'
+import animationData from '@/assets/lottie/prim-algorithm.json'
 
 export default {
   name: 'CardGoDeePrimsAlgorithm',
@@ -33,15 +33,15 @@ export default {
       lottieOptions: {
         animationData,
       },
-    };
+    }
   },
 
   methods: {
     handleAnimation(animation) {
-      this.animation = animation;
+      this.animation = animation
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

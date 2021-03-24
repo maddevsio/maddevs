@@ -1,9 +1,9 @@
-import { mount } from '@vue/test-utils';
+import { mount } from '@vue/test-utils'
 
-import SingleProject from '@/components/About/SingleProject';
+import SingleProject from '@/components/About/SingleProject'
 
 describe('caseStudies component', () => {
-  let wrapper;
+  let wrapper
   let props = {
     project: {
       projectName: 'godee',
@@ -21,21 +21,21 @@ describe('caseStudies component', () => {
       contribution: 'Backend, Infrastructure, Mobile Apps',
       alt: 'GoDee Bus Transportation Services Logo.',
     },
-  };
+  }
 
   beforeEach(() => {
     wrapper = mount(SingleProject, {
       propsData: props,
-    });
-  });
+    })
+  })
 
   it("is Vue's instance", () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
 
   it('.single-project__container should contain single-project_white-letters-theme class if colorTheme computed value will be true', () => {
     props = {
@@ -43,15 +43,15 @@ describe('caseStudies component', () => {
         ...props.project,
         projectName: 'sjmc',
       },
-    };
+    }
 
     wrapper = mount(SingleProject, {
       propsData: props,
-    });
+    })
 
-    const container = wrapper.findAll('.single-project__container').at(0);
-    expect(container.classes()).toContain('single-project_white-letters-theme');
-  });
+    const container = wrapper.findAll('.single-project__container').at(0)
+    expect(container.classes()).toContain('single-project_white-letters-theme')
+  })
 
   it('.single-project__container should not contain single-project_white-letters-theme class if colorTheme computed value will be false', () => {
     props = {
@@ -59,19 +59,19 @@ describe('caseStudies component', () => {
         ...props.project,
         projectName: 'nambafood',
       },
-    };
+    }
 
     wrapper = mount(SingleProject, {
       propsData: props,
-    });
+    })
 
-    const container = wrapper.findAll('.single-project__container').at(0);
-    expect(container.classes()).not.toContain('single-project_white-letters-theme');
-  });
+    const container = wrapper.findAll('.single-project__container').at(0)
+    expect(container.classes()).not.toContain('single-project_white-letters-theme')
+  })
 
   it('shoud pass correct props', () => {
-    expect(wrapper.props().project).toStrictEqual(props.project);
-  });
+    expect(wrapper.props().project).toStrictEqual(props.project)
+  })
 
   it('shoud add single-project__background_guardrails class to .single-project__background if projectName will be guardrails', () => {
     props = {
@@ -79,14 +79,14 @@ describe('caseStudies component', () => {
         ...props.project,
         projectName: 'guardrails',
       },
-    };
+    }
 
     wrapper = mount(SingleProject, {
       propsData: props,
-    });
-    const background = wrapper.findAll('.single-project__background').at(0);
-    expect(background.classes()).toContain('single-project__background_guardrails');
-  });
+    })
+    const background = wrapper.findAll('.single-project__background').at(0)
+    expect(background.classes()).toContain('single-project__background_guardrails')
+  })
 
   it('should not add class for card if projectName not equal guardrails', () => {
     props = {
@@ -94,13 +94,13 @@ describe('caseStudies component', () => {
         ...props.project,
         projectName: 'godee',
       },
-    };
+    }
 
     wrapper = mount(SingleProject, {
       propsData: props,
-    });
+    })
 
-    const background = wrapper.findAll('.single-project__background').at(0);
-    expect(background.classes()).not.toContain('single-project__background_guardrails');
-  });
-});
+    const background = wrapper.findAll('.single-project__background').at(0)
+    expect(background.classes()).not.toContain('single-project__background_guardrails')
+  })
+})

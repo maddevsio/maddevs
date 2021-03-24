@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import PostAuthor from '@/components/Blog/PostAuthor';
-import CommonHeader from '@/components/Blog/header/Common';
+import PostAuthor from '@/components/Blog/PostAuthor'
+import CommonHeader from '@/components/Blog/header/Common'
 
 export default {
   name: 'Blog',
@@ -46,7 +46,7 @@ export default {
       required: true,
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

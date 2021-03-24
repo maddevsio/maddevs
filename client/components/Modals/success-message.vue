@@ -21,10 +21,10 @@ export default {
   name: 'SuccessMessage',
   methods: {
     close() {
-      this.$emit('close', true);
+      this.$emit('close', true)
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

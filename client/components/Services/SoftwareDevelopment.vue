@@ -40,10 +40,10 @@
 </template>
 
 <script>
-import SoftwareDevelopmentContent from '@/components/Services/SoftwareDevelopmentContent';
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
-import getYourTrustedItPartnerModal from '@/components/Modals/get-your-trusted-it-partner-modal';
-import Modal from '@/containers/Modal';
+import SoftwareDevelopmentContent from '@/components/Services/SoftwareDevelopmentContent'
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import getYourTrustedItPartnerModal from '@/components/Modals/get-your-trusted-it-partner-modal'
+import Modal from '@/containers/Modal'
 
 export default {
   name: 'SoftwareDevelopment',
@@ -186,9 +186,9 @@ export default {
       },
 
       buttonInnerText: 'Get your trusted IT partner',
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

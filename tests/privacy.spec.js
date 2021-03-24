@@ -1,17 +1,17 @@
-import { mount } from '@vue/test-utils';
-import Privacy from '@/components/Privacy';
+import { mount } from '@vue/test-utils'
+import Privacy from '@/components/Privacy'
 
 describe('privacy', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(Privacy);
-  });
+    wrapper = mount(Privacy)
+  })
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-});
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

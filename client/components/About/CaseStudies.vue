@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import SingleProject from '@/components/About/SingleProject';
+import SingleProject from '@/components/About/SingleProject'
 
 export default {
   name: 'CaseStudies',
@@ -99,15 +99,15 @@ export default {
           alt: 'GoDee Bus Transportation Services Logo.',
         },
       ],
-    };
+    }
   },
 
   mounted() {
     if ($nuxt.$route.name) {
-      this.currentPageName = $nuxt.$route.name;
+      this.currentPageName = $nuxt.$route.name
     }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

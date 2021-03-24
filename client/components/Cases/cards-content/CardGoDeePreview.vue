@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph';
-import Picture from '@/components/Cases/Picture';
+import TextParagraph from '@/components/Cases/TextParagraph'
+import Picture from '@/components/Cases/Picture'
 
 export default {
   name: 'CardGoDeePreview',
@@ -99,7 +99,7 @@ export default {
       default: 0,
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

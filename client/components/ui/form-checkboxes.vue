@@ -43,17 +43,17 @@ export default {
 
   methods: {
     privacyCheckboxChangeState(e) {
-      this.$emit('getPrivacyCheckboxState', e.target.checked);
+      this.$emit('getPrivacyCheckboxState', e.target.checked)
     },
 
     discountOffersCheckboxChangeState(e) {
-      this.$emit('getDiscountOffersCheckboxState', e.target.checked);
+      this.$emit('getDiscountOffersCheckboxState', e.target.checked)
     },
 
     reset() {
-      this.$refs.privacyPolicy.checked = false;
-      this.$refs.marketingCommunications.checked = false;
+      this.$refs.privacyPolicy.checked = false
+      this.$refs.marketingCommunications.checked = false
     },
   },
-};
+}
 </script>

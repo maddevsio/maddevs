@@ -1,10 +1,10 @@
-import { mount } from '@vue/test-utils';
-import SirJohnMonashCentre from '../client/pages/case-studies/sir-john-monash-centre';
+import { mount } from '@vue/test-utils'
+import SirJohnMonashCentre from '../client/pages/case-studies/sir-john-monash-centre'
 
-global.document.exitFullscreen = () => {};
+global.document.exitFullscreen = () => {}
 
 describe('sirJohnMonashCentre', () => {
-  let wrapper;
+  let wrapper
   const data = {
     title: 'Mad Devs Case Study: Sir John Monash Centre',
     description:
@@ -279,7 +279,7 @@ describe('sirJohnMonashCentre', () => {
         alt: 'Mad Devs’ Team Trip to the SJMC.',
       },
     ],
-  };
+  }
 
   beforeEach(() => {
     wrapper = mount(SirJohnMonashCentre, {
@@ -289,7 +289,7 @@ describe('sirJohnMonashCentre', () => {
         },
       },
       stubs: ['nuxt-link'],
-    });
+    })
     wrapper.vm.$refs = {
       video: {
         paused: true,
@@ -303,40 +303,40 @@ describe('sirJohnMonashCentre', () => {
           add: jest.fn(),
         },
       },
-    };
-  });
+    }
+  })
 
   // ------ IMPORTANT ----- //
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
 
   it('sets the correctly data', () => {
-    expect(wrapper.vm.$data).toEqual(data);
-  });
+    expect(wrapper.vm.$data).toEqual(data)
+  })
 
   it('videoSetState function should call play and remove functions', () => {
-    const spyPlay = jest.spyOn(wrapper.vm.$refs.video, 'play');
-    const spyRemove = jest.spyOn(wrapper.vm.$refs.videoWrap.classList, 'remove');
-    wrapper.vm.videoSetState();
-    expect(spyPlay && spyRemove).toHaveBeenCalledWith('case_sjmc-phone-video-wrapper--on-pause');
-    spyPlay.mockReset();
-    spyRemove.mockReset();
-  });
+    const spyPlay = jest.spyOn(wrapper.vm.$refs.video, 'play')
+    const spyRemove = jest.spyOn(wrapper.vm.$refs.videoWrap.classList, 'remove')
+    wrapper.vm.videoSetState()
+    expect(spyPlay && spyRemove).toHaveBeenCalledWith('case_sjmc-phone-video-wrapper--on-pause')
+    spyPlay.mockReset()
+    spyRemove.mockReset()
+  })
 
   it('videoSetState function should call pause and add functions', () => {
-    wrapper.vm.$refs.video.paused = false;
+    wrapper.vm.$refs.video.paused = false
 
-    const spyPause = jest.spyOn(wrapper.vm.$refs.video, 'pause');
-    const spyAdd = jest.spyOn(wrapper.vm.$refs.videoWrap.classList, 'add');
-    wrapper.vm.videoSetState();
-    expect(spyPause && spyAdd).toHaveBeenCalledWith('case_sjmc-phone-video-wrapper--on-pause');
-    spyPause.mockReset();
-    spyAdd.mockReset();
-  });
-});
+    const spyPause = jest.spyOn(wrapper.vm.$refs.video, 'pause')
+    const spyAdd = jest.spyOn(wrapper.vm.$refs.videoWrap.classList, 'add')
+    wrapper.vm.videoSetState()
+    expect(spyPause && spyAdd).toHaveBeenCalledWith('case_sjmc-phone-video-wrapper--on-pause')
+    spyPause.mockReset()
+    spyAdd.mockReset()
+  })
+})

@@ -48,7 +48,7 @@ export default {
       default: 'auto',
     },
   },
-};
+}
 </script>
 
 <style>

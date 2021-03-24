@@ -35,10 +35,10 @@
 </template>
 
 <script>
-import RemoteTechStaffContent from '@/components/Services/RemoteTechStaffContent';
-import teamsModal from '@/components/Modals/teams-modal';
-import individualsModal from '@/components/Modals/individuals-modal';
-import Modal from '@/containers/Modal';
+import RemoteTechStaffContent from '@/components/Services/RemoteTechStaffContent'
+import teamsModal from '@/components/Modals/teams-modal'
+import individualsModal from '@/components/Modals/individuals-modal'
+import Modal from '@/containers/Modal'
 
 export default {
   name: 'RemoteTechStaff',
@@ -72,9 +72,9 @@ export default {
         modalWindowName: 'individuals-modal',
         activeByDefault: false,
       },
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

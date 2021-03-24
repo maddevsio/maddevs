@@ -56,13 +56,13 @@
 </template>
 
 <script>
-import SlicesBlock from '@/components/Blog/SlicesBlock.vue';
-import TableOfContents from '@/components/Blog/TableOfContents';
-import BlogHeader from '@/components/Blog/header/Blog';
-import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity';
-import CuNavigation from '@/components/Blog/CuNavigation';
-import initImgLazyHelper from '@/helpers/initImgLazy';
-import RecommendedBlogWidget from '@//components/Blog/RecommendedBlogWidget';
+import SlicesBlock from '@/components/Blog/SlicesBlock.vue'
+import TableOfContents from '@/components/Blog/TableOfContents'
+import BlogHeader from '@/components/Blog/header/Blog'
+import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity'
+import CuNavigation from '@/components/Blog/CuNavigation'
+import initImgLazyHelper from '@/helpers/initImgLazy'
+import RecommendedBlogWidget from '@//components/Blog/RecommendedBlogWidget'
 
 export default {
   name: 'PostView',
@@ -135,36 +135,36 @@ export default {
   data() {
     return {
       buttonIsActive: false,
-    };
+    }
   },
 
   computed: {
     clusterPosts() {
       if (this.cluster !== null) {
-        return this.cluster.items;
+        return this.cluster.items
       }
-      return null;
+      return null
     },
 
     wrapperClass() {
-      return this.recommendedPosts.length || this.type === 'cu_post' ? 'with-recommended' : '';
+      return this.recommendedPosts.length || this.type === 'cu_post' ? 'with-recommended' : ''
     },
 
     showRecommended() {
-      return this.type !== 'cu_post' && this.recommendedPosts.length !== 0;
+      return this.type !== 'cu_post' && this.recommendedPosts.length !== 0
     },
   },
 
   mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-    window.addEventListener('scroll', this.shareButtonsScroll);
-    window.scroll();
-    initImgLazyHelper();
+    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('scroll', this.shareButtonsScroll)
+    window.scroll()
+    initImgLazyHelper()
   },
 
   destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
-    window.removeEventListener('scroll', this.shareButtonsScroll);
+    window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener('scroll', this.shareButtonsScroll)
   },
 
   methods: {
@@ -172,21 +172,21 @@ export default {
       window.scrollTo({
         top: 0,
         behavior: 'smooth',
-      });
+      })
     },
 
     handleScroll(e) {
       if (e.target.scrollingElement.scrollTop !== 0) {
-        this.buttonIsActive = true;
+        this.buttonIsActive = true
       } else {
-        this.buttonIsActive = false;
+        this.buttonIsActive = false
       }
     },
 
     shareButtonsScroll() {
-      const shareButtons = document.querySelector('.blog-post__share');
+      const shareButtons = document.querySelector('.blog-post__share')
       if (window.pageYOffset < 650) {
-        shareButtons.style.cssText = 'position: absolute; top: 580px; left: -183px;';
+        shareButtons.style.cssText = 'position: absolute; top: 580px; left: -183px;'
       } else if (
         window.pageYOffset >
         document.querySelector('.blog-post').offsetHeight -
@@ -199,13 +199,13 @@ export default {
           document.querySelector('.blog-post__share').offsetHeight -
           100
       ) {
-        shareButtons.style.cssText = 'position: absolute; bottom: -100px; top: auto; left: -183px;';
+        shareButtons.style.cssText = 'position: absolute; bottom: -100px; top: auto; left: -183px;'
       } else {
-        shareButtons.style.cssText = 'top: 100px';
+        shareButtons.style.cssText = 'top: 100px'
       }
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

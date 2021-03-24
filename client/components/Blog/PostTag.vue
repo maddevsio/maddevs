@@ -18,7 +18,7 @@ export default {
       default: 'light',
     },
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

@@ -13,7 +13,7 @@
 <script>
 export default {
   layout: 'error-layout',
-};
+}
 </script>
 
 <style lang="scss" scoped>

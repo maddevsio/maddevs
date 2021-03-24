@@ -553,24 +553,24 @@
 </template>
 
 <script>
-import CaseHeader from '@/components/Cases/CaseHeader';
-import SJMCVideo from '@/components/Cases/SJMCVideo';
-import TextParagraph from '@/components/Cases/TextParagraph';
-import TextQuote from '@/components/Cases/TextQuote';
-import TextQuoteBox from '@/components/Cases/TextQuoteBox';
-import Picture from '@/components/Cases/Picture';
-import List from '@/components/Cases/List';
-import ListTeam from '@/components/Cases/ListTeam';
-import ListTeamItem from '@/components/Cases/ListTeamItem';
-import ListItemBoxCheckMark from '@/components/Cases/ListItemBoxCheckMark';
-import ListItemDot from '@/components/Cases/ListItemDot';
-import ListTechnologies from '@/components/Cases/ListTechnologies';
-import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem';
-import ListDashItemBox from '@/components/Cases/ListDashItemBox';
-import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor';
-import Swiper from '@/components/Cases/Swiper';
-import Footer from '@/components/Cases/Footer';
-import initImgLazyHelper from '@/helpers/initImgLazy';
+import CaseHeader from '@/components/Cases/CaseHeader'
+import SJMCVideo from '@/components/Cases/SJMCVideo'
+import TextParagraph from '@/components/Cases/TextParagraph'
+import TextQuote from '@/components/Cases/TextQuote'
+import TextQuoteBox from '@/components/Cases/TextQuoteBox'
+import Picture from '@/components/Cases/Picture'
+import List from '@/components/Cases/List'
+import ListTeam from '@/components/Cases/ListTeam'
+import ListTeamItem from '@/components/Cases/ListTeamItem'
+import ListItemBoxCheckMark from '@/components/Cases/ListItemBoxCheckMark'
+import ListItemDot from '@/components/Cases/ListItemDot'
+import ListTechnologies from '@/components/Cases/ListTechnologies'
+import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
+import ListDashItemBox from '@/components/Cases/ListDashItemBox'
+import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
+import Swiper from '@/components/Cases/Swiper'
+import Footer from '@/components/Cases/Footer'
+import initImgLazyHelper from '@/helpers/initImgLazy'
 
 export default {
   name: 'SirJohnMonashCentre',
@@ -877,7 +877,7 @@ export default {
           alt: 'Mad Devs’ Team Trip to the SJMC.',
         },
       ],
-    };
+    }
   },
 
   head() {
@@ -910,7 +910,7 @@ export default {
             '{"@context": "https://schema.org", "@type": "WebPage", "breadcrumb": "Projects > Case Studies > BYOD Solutions", "name": "Mad Devs Case Study: Sir John Monash Centre", "description": "BYOD Case Study. Read how Mad Devs enhanced and developed new features for the Sir John Monash Centre’s software, mobile applications, and technological debt.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group LTD"}}',
         },
       ],
-    };
+    }
   },
 
   computed: {
@@ -919,28 +919,28 @@ export default {
 
   mounted() {
     this.$refs.video.onended = () => {
-      this.$refs.videoWrap.classList.add('case_sjmc-phone-video-wrapper--on-pause');
-    };
+      this.$refs.videoWrap.classList.add('case_sjmc-phone-video-wrapper--on-pause')
+    }
 
-    initImgLazyHelper();
+    initImgLazyHelper()
   },
 
   methods: {
     openFullscreen() {
-      this.$nuxt.$emit('open-fullscreen');
+      this.$nuxt.$emit('open-fullscreen')
     },
 
     videoSetState() {
       if (this.$refs.video.paused) {
-        this.$refs.video.play();
-        this.$refs.videoWrap.classList.remove('case_sjmc-phone-video-wrapper--on-pause');
+        this.$refs.video.play()
+        this.$refs.videoWrap.classList.remove('case_sjmc-phone-video-wrapper--on-pause')
       } else {
-        this.$refs.video.pause();
-        this.$refs.videoWrap.classList.add('case_sjmc-phone-video-wrapper--on-pause');
+        this.$refs.video.pause()
+        this.$refs.videoWrap.classList.add('case_sjmc-phone-video-wrapper--on-pause')
       }
     },
   },
-};
+}
 </script>
 
 <style lang="scss">

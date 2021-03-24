@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils';
-import CardGoDeePreview from '@/components/Cases/cards-content/CardGoDeePreview';
+import { mount } from '@vue/test-utils'
+import CardGoDeePreview from '@/components/Cases/cards-content/CardGoDeePreview'
 
 describe('cardGoDeePreview', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
     wrapper = mount(CardGoDeePreview, {
@@ -14,16 +14,16 @@ describe('cardGoDeePreview', () => {
         mobileImageName: '',
         alt: 'GoDee: bus transit app for passengers',
       },
-    });
-  });
+    })
+  })
 
   // ------ IMPORTANT ----- //
   it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
   it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
-});
+})
