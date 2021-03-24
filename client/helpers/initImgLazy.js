@@ -1,27 +1,27 @@
-export default function() {
+export default () => {
   const lazyImg = [].slice.call(document.querySelectorAll('img.img_lazy'));
   if ('IntersectionObserver' in window) {
     const options = {
-      threshold: 1
+      threshold: 1,
     };
-    let lazyImgObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
+    const lazyImgObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
-          let lazyImg = entry.target;
-          lazyImg.src = lazyImg.dataset.src;
+          const { target } = entry;
+          target.src = target.dataset.src;
 
-          if (lazyImg.dataset.srcset) {
-            lazyImg.srcset = lazyImg.dataset.srcset;
+          if (target.dataset.srcset) {
+            target.srcset = target.dataset.srcset;
           }
 
-          lazyImg.classList.remove('img_lazy');
-          lazyImg.classList.add('img_lazy-fade');
+          target.classList.remove('img_lazy');
+          target.classList.add('img_lazy-fade');
         }
       });
     }, options);
-  
-    lazyImg.forEach(function(lazyImg) {
-      lazyImgObserver.observe(lazyImg);
+
+    lazyImg.forEach(img => {
+      lazyImgObserver.observe(img);
     });
   }
-}
+};

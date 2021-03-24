@@ -1,28 +1,26 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import ServicesBanner from '@/components/Banner/ServicesBanner';
 
-describe('Form checkboxes', () => {
+describe('form checkboxes', () => {
   let wrapper;
 
   beforeEach(() => {
     global.$nuxt = {
       $route: {
-        name: '/'
-      }
+        name: '/',
+      },
     };
     wrapper = mount(ServicesBanner, {
-      stubs: ['nuxt-link']
+      stubs: ['nuxt-link'],
     });
   });
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
-  test('renders correctly', () => {
+
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
   // --------------------- //

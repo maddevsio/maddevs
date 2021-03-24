@@ -5,19 +5,19 @@
         <div class="main-title-wrapper col-xxl-7 col-xl-7 col-lg-7">
           <h1 class="banner-main_title">
             <span class="main-title-black_part">Mad Devs</span>
-            <span class="main-title-white_part"><br>Engineering<br>Your Growth</span>
+            <span class="main-title-white_part"><br />Engineering<br />Your Growth</span>
           </h1>
         </div>
         <div class="icon-item col-xxl-4 col-xl-5 col-lg-5">
-          <div class="animation-img-wrap"/>
+          <div class="animation-img-wrap" />
         </div>
       </div>
     </div>
     <navigationList>
-      <navigationItem link="services/#remote-tech-staff" title="Remote Tech Staff"/>
-      <navigationItem link="services/#software-development" title="Software Development"/>
-      <navigationItem link="services/#infrastructure-optimisation" title="Infrastructure Optimization"/>
-      <navigationItem link="services/#it-consulting" title="IT Consulting"/>
+      <navigationItem link="services/#remote-tech-staff" title="Remote Tech Staff" />
+      <navigationItem link="services/#software-development" title="Software Development" />
+      <navigationItem link="services/#infrastructure-optimisation" title="Infrastructure Optimization" />
+      <navigationItem link="services/#it-consulting" title="IT Consulting" />
     </navigationList>
   </div>
 </template>
@@ -30,8 +30,8 @@ export default {
   name: 'AboutBanner',
   components: {
     navigationList,
-    navigationItem
-  }
+    navigationItem,
+  },
 };
 </script>
 
@@ -152,7 +152,6 @@ export default {
   }
 }
 
-
 @media only screen and (max-width: 1140px) {
   .animation-img-wrap {
     width: 238px;
@@ -164,7 +163,6 @@ export default {
     }
   }
 }
-
 
 @media only screen and (max-width: 970px) {
   .animation-img-wrap {

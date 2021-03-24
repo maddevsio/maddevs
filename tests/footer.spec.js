@@ -6,26 +6,26 @@ const localVue = createLocalVue();
 
 localVue.use(Vuelidate);
 
-describe('Footer', () => {
+describe('footer', () => {
   let wrapper;
 
   beforeEach(() => {
     global.$nuxt = {
       $route: {
-        name: '/'
-      }
+        name: '/',
+      },
     };
     wrapper = shallowMount(Footer, {
-      localVue
+      localVue,
     });
   });
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
 
-  test('renders correctly', () => {
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
   // --------------------- //
@@ -34,66 +34,66 @@ describe('Footer', () => {
     expect(wrapper.vm.$data.currentPageName).toBe('/');
   });
 
-  test('correctly sets the current pages name and class', () => {
+  it('correctly sets the current pages name and class', () => {
     const $route = {
-      path: '/gdpr'
+      path: '/gdpr',
     };
 
     wrapper = shallowMount(Footer, {
       mocks: {
-        $route
-      }
+        $route,
+      },
     });
 
     wrapper.vm.$data.currentPageName = 'gdpr';
     expect(wrapper.vm.$route.path).toBe('/gdpr');
     expect(wrapper.vm.$data.currentPageName).toBe('gdpr');
 
-    let wrapperClass = wrapper.findAll('.gdpr');
+    const wrapperClass = wrapper.findAll('.gdpr');
     expect(wrapperClass).toEqual({
-      selector: '.gdpr'
+      selector: '.gdpr',
     });
   });
 
-  test('correctly sets the current pages name to /nda and class', () => {
+  it('correctly sets the current pages name to /nda and class', () => {
     const $route = {
-      path: '/nda'
+      path: '/nda',
     };
 
     wrapper = shallowMount(Footer, {
       mocks: {
-        $route
-      }
+        $route,
+      },
     });
 
     wrapper.vm.$data.currentPageName = 'nda';
     expect(wrapper.vm.$route.path).toBe('/nda');
     expect(wrapper.vm.$data.currentPageName).toBe('nda');
 
-    let wrapperClass = wrapper.findAll('.nda');
+    const wrapperClass = wrapper.findAll('.nda');
     expect(wrapperClass).toEqual({
-      selector: '.nda'
+      selector: '.nda',
     });
   });
 
-  test('correctly sets the current pages name to /privacy and class', () => {
+  it('correctly sets the current pages name to /privacy and class', () => {
     const $route = {
-      path: '/privacy'
+      path: '/privacy',
     };
 
     wrapper = shallowMount(Footer, {
       mocks: {
-        $route
-      }
+        $route,
+      },
     });
 
     wrapper.vm.$data.currentPageName = 'privacy';
     expect(wrapper.vm.$route.path).toBe('/privacy');
     expect(wrapper.vm.$data.currentPageName).toBe('privacy');
 
-    let wrapperClass = wrapper.findAll('.privacy');
+    const wrapperClass = wrapper.findAll('.privacy');
     expect(wrapperClass).toEqual({
-      selector: '.privacy'
+      selector: '.privacy',
     });
   });
 });

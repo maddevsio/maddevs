@@ -9,5 +9,5 @@ function getCacheKey() {
 
 module.exports = {
   process,
-  getCacheKey
+  getCacheKey,
 };

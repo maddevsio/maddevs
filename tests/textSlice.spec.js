@@ -1,7 +1,7 @@
-import {mount} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import TextSlice from '../client/components/Blog/slices/TextSlice';
 
-describe('Text slice component', () => {
+describe('text slice component', () => {
   let wrapper;
 
   const slice = {
@@ -9,24 +9,24 @@ describe('Text slice component', () => {
       text: [
         {
           type: 'heading1',
-          text: 'sample text'
-        }
-      ]
-    }
+          text: 'sample text',
+        },
+      ],
+    },
   };
 
   beforeEach(() => {
     wrapper = mount(TextSlice, {
-      propsData: {slice},
-      stubs: ['prismic-rich-text']
+      propsData: { slice },
+      stubs: ['prismic-rich-text'],
     });
   });
 
-  test('is a Vue component', () => {
+  it('is a Vue component', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
 
-  test('renders correctly', () => {
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
 });

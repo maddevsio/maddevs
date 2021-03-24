@@ -1,5 +1,5 @@
 <template>
-  <button id="careers-btn" class="button" :class="{ 'is-disabled': disabled }" @click="callback">
+  <button id="careers-btn" :class="{ 'is-disabled': disabled }" class="button" @click="callback">
     <span v-if="loading === true">Waiting...</span>
     <slot v-else></slot>
   </button>
@@ -11,20 +11,22 @@ export default {
   props: {
     loading: {
       type: Boolean,
-      default: false
+      default: false,
     },
+
     disabled: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
+
   methods: {
     callback(e) {
       if (this.$props.disabled === false) {
         this.$emit('click', e);
       }
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>

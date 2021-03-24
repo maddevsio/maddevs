@@ -1,25 +1,31 @@
 <template>
   <div class="form-checkboxes">
-    <label class="form-checkbox-label required" :for="`privacy-policy-${inputId}`">I confirm that I have read and accepted <div>Mad Devs’</div> <a href="/privacy/" target="_blank">Privacy Policy</a>
+    <label :for="`privacy-policy-${inputId}`" class="form-checkbox-label required"
+      >I confirm that I have read and accepted
+      <div>Mad Devs’</div>
+      <a href="/privacy/" target="_blank">Privacy Policy</a>
       <input
+        :id="`privacy-policy-${inputId}`"
         ref="privacyPolicy"
         class="form-checkbox-input"
-        :id="`privacy-policy-${inputId}`" 
         type="checkbox"
         name="Privacy policy"
         @click="privacyCheckboxChangeState($event)"
-      >
+      />
       <div class="checkmark"></div>
     </label>
-    <label class="form-checkbox-label" :for="`marketing-communications-${inputId}`">I agree to get <div>Mad Devs’</div> discount offers and other marketing communications.
+    <label :for="`marketing-communications-${inputId}`" class="form-checkbox-label"
+      >I agree to get
+      <div>Mad Devs’</div>
+      discount offers and other marketing communications.
       <input
+        :id="`marketing-communications-${inputId}`"
         ref="marketingCommunications"
         class="form-checkbox-input"
-        :id="`marketing-communications-${inputId}`"
         type="checkbox"
         name="Marketing communications"
         @click="discountOffersCheckboxChangeState($event)"
-      >
+      />
       <div class="checkmark"></div>
     </label>
   </div>
@@ -31,20 +37,23 @@ export default {
   props: {
     inputId: {
       type: String,
-      default: 'input-id'
-    }
+      default: 'input-id',
+    },
   },
+
   methods: {
     privacyCheckboxChangeState(e) {
       this.$emit('getPrivacyCheckboxState', e.target.checked);
     },
+
     discountOffersCheckboxChangeState(e) {
       this.$emit('getDiscountOffersCheckboxState', e.target.checked);
     },
+
     reset() {
       this.$refs.privacyPolicy.checked = false;
       this.$refs.marketingCommunications.checked = false;
-    }
-  }
+    },
+  },
 };
 </script>

@@ -1,44 +1,42 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import CardUseCase from '@/components/Cases/cards-content/CardUseCase';
 
-describe('CardUseCase', () => {
+describe('cardUseCase', () => {
   let wrapper;
-  let props = {
+  const props = {
     title: 'Web-site, mobile application',
     description: 'Easy-to-use interface and fast navigation for Namba Food users.',
     classList: {
-      uniqueСlass: 'red-card'
+      uniqueСlass: 'red-card',
     },
     fileName: 'apple-iphone-xr-silver',
     fileExtension: 'png',
     pictureFolder: '',
-    alt: ''
+    alt: '',
   };
 
   beforeEach(() => {
     wrapper = mount(CardUseCase, {
       propsData: props,
-      stubs: ['client-only']
+      stubs: ['client-only'],
     });
   });
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
-  test('renders correctly', () => {
+
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
   // --------------------- //
 
-  test('should pass correct props', () => {
+  it('should pass correct props', () => {
     expect(wrapper.props()).toEqual(props);
   });
-  
-  test('child elements have props data', () => {
+
+  it('child elements have props data', () => {
     const title = wrapper.find('.card-use-case__title');
     const descriptionWrapper = wrapper.find('.card-use-case__description-wrapper');
     const paragraph = wrapper.find('.card-use-case__paragraph');
@@ -53,4 +51,3 @@ describe('CardUseCase', () => {
     expect(mobilePicture.classes()).toContain('card-use-case__red-card-mobile-picture');
   });
 });
-

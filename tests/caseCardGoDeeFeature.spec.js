@@ -1,9 +1,7 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import CardGoDeeFeature from '@/components/Cases/cards-content/CardGoDeeFeature';
 
-describe('CardGoDeeFeature', () => {
+describe('cardGoDeeFeature', () => {
   let wrapper;
 
   beforeEach(() => {
@@ -11,11 +9,11 @@ describe('CardGoDeeFeature', () => {
   });
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
 
-  test('renders correctly', () => {
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
   // --------------------- //

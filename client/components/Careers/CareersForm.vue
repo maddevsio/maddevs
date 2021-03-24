@@ -2,22 +2,22 @@
   <section id="careers" class="careers">
     <div class="careers__container container">
       <div class="careers__wrapper">
-        <form @submit.prevent="sendData" class="careers__form">
+        <form class="careers__form" @submit.prevent="sendData">
           <label class="careers__form-name-label"
             >Hello, my name is
             <span>
               <input
+                ref="nameInput"
+                v-model="fullName"
                 class="careers__form-input careers__form-name-input"
                 type="text"
                 placeholder="John Smith"
-                v-model="fullName"
-                ref="nameInput"
                 @input="$v.fullName.$touch"
               />
               <!-- Erros -->
               <div v-if="$v.fullName.$dirty">
-                <span class="modal-error-text error-text" v-if="!$v.fullName.required">This field is required.</span>
-                <span class="modal-error-text error-text" v-if="!$v.fullName.maxLength">
+                <span v-if="!$v.fullName.required" class="modal-error-text error-text">This field is required.</span>
+                <span v-if="!$v.fullName.maxLength" class="modal-error-text error-text">
                   Sorry, the number of characters in this field should not exceed 50.
                 </span>
               </div>
@@ -28,29 +28,39 @@
             I want to work for you as a
             <span>
               <input
+                v-model="positionTitle"
                 class="careers__form-input careers__form-position-input"
                 type="text"
                 placeholder="desired position."
-                v-model="positionTitle"
                 @input="$v.positionTitle.$touch"
               />
               <!-- Erros -->
               <div v-if="$v.positionTitle.$dirty">
-                <span class="modal-error-text error-text" v-if="!$v.positionTitle.required">This field is required.</span>
+                <span v-if="!$v.positionTitle.required" class="modal-error-text error-text"
+                  >This field is required.</span
+                >
               </div>
               <!-- End Erros -->
             </span>
           </h2>
           <h2 class="careers__form-description radio-buttons">
-            You can also consider me for <br> your other
+            You can also consider me for <br />
+            your other
           </h2>
           <div>
             <ul class="careers__position-list">
-              <UIRadioButtons ref="radioButtons" :radios="radioData" v-model="positionValue" @change="$v.positionValue.$touch" />
+              <UIRadioButtons
+                ref="radioButtons"
+                v-model="positionValue"
+                :radios="radioData"
+                @change="$v.positionValue.$touch"
+              />
             </ul>
             <!-- Erros -->
             <div v-if="$v.positionValue.$dirty">
-              <span class="modal-error-text error-text posotion-error-text" v-if="!$v.positionValue.required">This field is required.</span>
+              <span v-if="!$v.positionValue.required" class="modal-error-text error-text posotion-error-text"
+                >This field is required.</span
+              >
             </div>
             <!-- End Erros -->
           </div>
@@ -58,16 +68,16 @@
             Please reply to
             <span>
               <input
+                v-model="email"
                 class="careers__form-input careers__form-email-input"
                 type="email"
                 placeholder="your@mail.com"
-                v-model="email"
                 @input="$v.email.$touch"
               />
               <!-- Erros -->
               <div v-if="$v.email.$dirty">
-                <span class="modal-error-text error-text" v-if="!$v.email.required">This field is required.</span>
-                <span class="modal-error-text error-text" v-if="!$v.email.email">
+                <span v-if="!$v.email.required" class="modal-error-text error-text">This field is required.</span>
+                <span v-if="!$v.email.email" class="modal-error-text error-text">
                   Invalid email address. Please use your work email.
                 </span>
               </div>
@@ -75,30 +85,34 @@
             </span>
           </h2>
           <h2 class="careers__form-description">
-            To get more information on my <br> skills, please
+            To get more information on my <br />
+            skills, please
           </h2>
           <ul class="careers__form-list">
             <li class="careers__form-list-item careers__form-list-item-linkedin">
               – check out my
               <input
+                v-model="linkedinProfile"
                 class="careers__form-input careers__form-linkedin-input"
                 type="text"
                 placeholder="LinkedIn profile"
-                v-model="linkedinProfile"
               />
             </li>
             <li class="careers__form-list-item careers__file-attach">
               <div>
-                <FileInput v-model="selectedFile" @input="onFileChanged" ref="fileInput" />
+                <FileInput ref="fileInput" v-model="selectedFile" @input="onFileChanged" />
                 <!-- Erros -->
                 <div v-if="$v.selectedFile.$dirty">
-                  <span class="modal-error-text error-text error-text-file-attach" v-if="!$v.selectedFile.required">
+                  <span v-if="!$v.selectedFile.required" class="modal-error-text error-text error-text-file-attach">
                     This field is required.
                   </span>
-                  <span class="modal-error-text error-text error-text-file-attach" v-if="!$v.selectedFile.fileExt">
+                  <span v-if="!$v.selectedFile.fileExt" class="modal-error-text error-text error-text-file-attach">
                     Please, upload a file with one of the following extensions: pdf, doc, docx.
                   </span>
-                  <span class="modal-error-text error-text error-text-file-attach" v-if="!$v.selectedFile.fileSizeValidation">
+                  <span
+                    v-if="!$v.selectedFile.fileSizeValidation"
+                    class="modal-error-text error-text error-text-file-attach"
+                  >
                     Sorry, file size has exceeded its max limit of 5MB.
                   </span>
                 </div>
@@ -106,17 +120,13 @@
               </div>
             </li>
           </ul>
-          <Button
-            type="submit"
-            :disabled="$v.validationGroup.$invalid || onSubmit"
-            :loading="onSubmit"
-          >
+          <Button :disabled="$v.validationGroup.$invalid || onSubmit" :loading="onSubmit" type="submit">
             I want to work for Mad Devs!
           </Button>
         </form>
       </div>
     </div>
-    <SuccessModal :visibled="isEmailSent" id="career-modal" @onClose="resetForm" />
+    <SuccessModal id="career-modal" :visibled="isEmailSent" @onClose="resetForm" />
   </section>
 </template>
 
@@ -134,30 +144,37 @@ export default {
     FileInput,
     Button,
     UIRadioButtons,
-    SuccessModal
+    SuccessModal,
   },
+
   validations: {
     fullName: {
       required,
-      maxLength: maxLength(50)
+      maxLength: maxLength(50),
     },
+
     positionTitle: {
-      required
+      required,
     },
+
     positionValue: {
-      required
+      required,
     },
+
     email: {
       required,
-      email
+      email,
     },
+
     selectedFile: {
       required,
       fileExt,
-      fileSizeValidation
+      fileSizeValidation,
     },
-    validationGroup: ['fullName', 'email', 'positionTitle', 'positionValue', 'selectedFile']
+
+    validationGroup: ['fullName', 'email', 'positionTitle', 'positionValue', 'selectedFile'],
   },
+
   data() {
     return {
       fullName: null,
@@ -171,24 +188,27 @@ export default {
         { type: 'senior', label: 'Senior,' },
         { type: 'middle', label: 'Middle,' },
         { type: 'junior', label: 'Junior,' },
-        { type: 'intern', label: 'Intern' }
+        { type: 'intern', label: 'Intern' },
       ],
+
       isEmailSent: false,
       onSubmit: false,
       form: '',
-      modalTitle: 'Mad Devs Website Carrers Form'
+      modalTitle: 'Mad Devs Website Carrers Form',
     };
   },
+
   mounted() {
     this.focusInput();
   },
+
   methods: {
-    onFileChanged(params) {
-      params;
+    onFileChanged() {
       if (this.$v && this.$v.selectedFile) {
         this.$v.selectedFile.$touch();
       }
     },
+
     sendData() {
       if (!this.$v.validationGroup.$invalid && !this.onSubmit) {
         this.onSubmit = true;
@@ -204,12 +224,12 @@ export default {
               positionValue: this.positionValue.type,
               positionTitle: this.positionTitle,
               subject: `Job Candidate Application for ${this.positionTitle}`,
-              modalTitle: this.modalTitle
+              modalTitle: this.modalTitle,
             },
-            attachment:{
+            attachment: {
               base64: base64.replace(/^data:(.*,)?/, ''),
-              name: this.selectedFile.name
-            }
+              name: this.selectedFile.name,
+            },
           };
           this.$store.dispatch('sendEmail', this.form).then(res => {
             this.onSubmit = false;
@@ -225,6 +245,7 @@ export default {
         });
       }
     },
+
     resetForm() {
       this.$v.$reset(); // Reset validation form
       this.$refs.fileInput.reset();
@@ -237,6 +258,7 @@ export default {
       this.linkedinProfile = null;
       this.isEmailSent = false;
     },
+
     toBase64(file) {
       return new Promise((resolve, reject) => {
         const reader = new FileReader();
@@ -245,14 +267,15 @@ export default {
         reader.onerror = error => reject(error);
       });
     },
+
     focusInput() {
       this.$nextTick(() => {
-        if(this.$refs.nameInput && this.$refs.nameInput.focus()) {
+        if (this.$refs.nameInput && this.$refs.nameInput.focus()) {
           this.$refs.nameInput.focus();
         }
       });
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -403,7 +426,7 @@ export default {
   }
 
   @media only screen and (max-width: 630px) {
-     &__position-list {
+    &__position-list {
       /deep/ .ui-radio-buttons {
         &::after {
           position: absolute;

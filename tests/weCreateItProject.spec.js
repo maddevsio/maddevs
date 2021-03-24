@@ -1,9 +1,7 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import WeCreateItProjectFor from '@/components/About/WeCreateItProjectFor';
 
-describe('We Create It Project For', () => {
+describe('we Create It Project For', () => {
   let wrapper;
 
   beforeEach(() => {
@@ -11,11 +9,11 @@ describe('We Create It Project For', () => {
   });
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
-  test('renders correctly', () => {
+
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
   // --------------------- //

@@ -1,9 +1,7 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import TableOfContents from '@/components/Blog/TableOfContents';
 
-describe('Table of contents block in single post page', () => {
+describe('table of contents block in single post page', () => {
   let wrapper;
 
   const content = [
@@ -12,54 +10,56 @@ describe('Table of contents block in single post page', () => {
         {
           data: {
             lunk_type: 'Web',
-            url: 'https://#gallery'
+            url: 'https://#gallery',
           },
           start: 0,
           end: 7,
-          type: 'hyperlink'
-        }
+          type: 'hyperlink',
+        },
       ],
       text: 'Gallery',
-      type: 'list-item'
+      type: 'list-item',
     },
     {
       spans: [
         {
           data: {
             lunk_type: 'Web',
-            url: 'https://#main'
+            url: 'https://#main',
           },
           start: 0,
           end: 7,
-          type: 'hyperlink'
-        }
+          type: 'hyperlink',
+        },
       ],
       text: 'Main',
-      type: 'list-item'
-    }
+      type: 'list-item',
+    },
   ];
 
   beforeEach(() => {
     wrapper = mount(TableOfContents, {
-      propsData: {content}
+      propsData: { content },
     });
   });
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
 
-  test('renders correctly', () => {
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
   // --------------------- //
 
-  test('ordered list rendered', () => {
+  it('ordered list rendered', () => {
     expect(wrapper.find('ol').exists()).toBeTruthy();
   });
 
-  test('link replaced https', () => {
-    expect(wrapper.find('li').find('a').attributes('href')).toMatch(content[0].spans[0].data.url.replace('https://', ''));
+  it('link replaced https', () => {
+    expect(wrapper.find('li').find('a').attributes('href')).toMatch(
+      content[0].spans[0].data.url.replace('https://', ''),
+    );
   });
 });

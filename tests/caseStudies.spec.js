@@ -1,9 +1,7 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import CaseStudies from '@/components/About/CaseStudies';
 
-describe('CaseStudies component', () => {
+describe('caseStudies component', () => {
   let wrapper;
   const projects = [
     {
@@ -17,9 +15,10 @@ describe('CaseStudies component', () => {
       fileExtension: 'png',
       projectColor: '#f8f7f6',
       projectTitle: 'Contactless Delivery Service',
-      projectDescription: 'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.',
+      projectDescription:
+        'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.',
       contribution: 'Backend, Infrastructure, Frontend',
-      alt: 'Namba Food Contactless Delivery Service`s Logo.'
+      alt: 'Namba Food Contactless Delivery Service`s Logo.',
     },
     {
       projectName: 'sjmc',
@@ -32,24 +31,27 @@ describe('CaseStudies component', () => {
       fileExtension: 'jpg',
       projectColor: '#221F20',
       projectTitle: 'Australian National Interpretive Centre',
-      projectDescription: 'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',
+      projectDescription:
+        'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',
       contribution: 'Backend, Infrastructure, Frontend',
-      alt: 'General John Monash The Australian War Memorial`s Logo.'
+      alt: 'General John Monash The Australian War Memorial`s Logo.',
     },
     {
       projectName: 'guardrails',
       logoImg: 'guardrails-icon',
       logoWidth: 174,
       maddevsLogo: 'md-logo-white',
-      link: 'https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0',
+      link:
+        'https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0',
       targetBlank: true,
       projectBackground: 'guardrailsBackground',
       fileExtension: 'png',
       projectColor: '#0e1b27',
       projectTitle: 'Cloud cybersecurity service',
-      projectDescription: 'Mad Devs was involved with Guardrails\' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.',
+      projectDescription:
+        "Mad Devs was involved with Guardrails' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.",
       contribution: 'Backend, Infrastructure, Frontend',
-      alt: 'Guardrails Cloud CyberSecurity Services Logo.'
+      alt: 'Guardrails Cloud CyberSecurity Services Logo.',
     },
     {
       projectName: 'godee',
@@ -62,51 +64,52 @@ describe('CaseStudies component', () => {
       fileExtension: 'png',
       projectColor: '#ff6A01',
       projectTitle: 'Convenient shuttle bus service',
-      projectDescription: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
+      projectDescription:
+        'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
       contribution: 'Backend, Infrastructure, Mobile Apps',
-      alt: 'GoDee Bus Transportation Services Logo.'
-    }
+      alt: 'GoDee Bus Transportation Services Logo.',
+    },
   ];
 
   beforeEach(() => {
     const $route = {
-      path: '/'
+      path: '/',
     };
 
     global.$nuxt = {
       $route: {
-        name: '/'
-      }
+        name: '/',
+      },
     };
 
     wrapper = mount(CaseStudies, {
       mocks: {
-        $route
-      }
+        $route,
+      },
     });
   });
 
-  test('is Vue\'s instance', () => {
+  it("is Vue's instance", () => {
     expect(wrapper.exists()).toBeTruthy();
   });
 
-  test('renders correctly', () => {
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
 
-  test('correctly sets the current page\'s default name', () => {
+  it("correctly sets the current page's default name", () => {
     expect(wrapper.vm.$data.currentPageName).toBe('/');
   });
 
-  test('correctly sets the current page\'s name', () => {
+  it("correctly sets the current page's name", () => {
     const $route = {
-      path: '/projects'
+      path: '/projects',
     };
 
     wrapper = mount(CaseStudies, {
       mocks: {
-        $route
-      }
+        $route,
+      },
     });
 
     wrapper.vm.$data.currentPageName = 'projects';
@@ -114,22 +117,22 @@ describe('CaseStudies component', () => {
     expect(wrapper.vm.$data.currentPageName).toBe('projects');
   });
 
-  test('should check existence of data', () => {
+  it('should check existence of data', () => {
     expect(wrapper.vm.$data.projects).toStrictEqual(projects);
   });
 
-  test('should render 4 single-projects in the project section', () => {
-    let singleProjects = wrapper.findAll('.projects .single-project');
+  it('should render 4 single-projects in the project section', () => {
+    const singleProjects = wrapper.findAll('.projects .single-project');
     expect(singleProjects).toHaveLength(4);
   });
 
-  test('should have 16 projects including projects in the slider', () => {
-    let sliderSingleProjects = wrapper.findAll('.single-project');
+  it('should have 16 projects including projects in the slider', () => {
+    const sliderSingleProjects = wrapper.findAll('.single-project');
     expect(sliderSingleProjects).toHaveLength(4);
   });
 
-  test('check that the specific images exists', () => {
+  it('check that the specific images exists', () => {
     const img = wrapper.findAll('.single-project__logo');
-    expect(img.length).toBe(4);
+    expect(img).toHaveLength(4);
   });
 });

@@ -1,7 +1,7 @@
 <template>
-  <div class='default-layout'>
-    <Header/>
-      <nuxt/>
+  <div class="default-layout">
+    <Header />
+    <nuxt />
     <Footer />
   </div>
 </template>
@@ -13,10 +13,11 @@ import initIntercomHelper from '@/helpers/initIntercom';
 
 export default {
   name: 'Default',
-  components: { 
+  components: {
     Header,
-    Footer
+    Footer,
   },
+
   mounted() {
     this.$nextTick(() => {
       try {
@@ -29,19 +30,19 @@ export default {
         return false;
       }
     });
-    let scriptLoader = () => {
+    const scriptLoader = () => {
       initIntercomHelper();
       window.removeEventListener('scroll', scriptLoader);
     };
     window.addEventListener('scroll', scriptLoader);
-  }
+  },
 };
 </script>
 
 <style lang='scss' scoped>
-  @import '../assets/styles/_vars';
+@import '../assets/styles/_vars';
 
-  .default-layout {
-    background-color: $bgcolor--black;
-  }
+.default-layout {
+  background-color: $bgcolor--black;
+}
 </style>

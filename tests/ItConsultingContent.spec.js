@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils';
 import ItConsultingContent from '@/components/Services/ItConsultingContent.vue';
 
-describe('ItConsultingContent component', () => {
+describe('itConsultingContent component', () => {
   let wrapper;
 
   beforeEach(() => {
@@ -10,20 +10,20 @@ describe('ItConsultingContent component', () => {
       propsData: {
         title: 'Title',
         subTitle: 'Sub title',
-        paragraph: 'Paragraph'
-      }
+        paragraph: 'Paragraph',
+      },
     });
   });
 
-  test('is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
 
-  test('renders correctly', () => {
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
 
-  test('correctly passed props data', () => {
+  it('correctly passed props data', () => {
     expect(wrapper.props().title).toBe('Title');
     expect(wrapper.props().subTitle).toBe('Sub title');
     expect(wrapper.props().paragraph).toBe('Paragraph');

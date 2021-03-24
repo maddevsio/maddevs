@@ -1,47 +1,45 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import FormCheckboxes from '@/components/ui/form-checkboxes';
 
-describe('Form checkboxes', () => {
+describe('form checkboxes', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = mount(FormCheckboxes, {
       propsData: {
-        inputId: 'input id'
-      }
+        inputId: 'input id',
+      },
     });
   });
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
-  test('renders correctly', () => {
+
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
   // --------------------- //
 
   it('has a functions', () => {
     expect(
-      typeof FormCheckboxes.methods.privacyCheckboxChangeState && 
-      typeof FormCheckboxes.methods.discountOffersCheckboxChangeState
+      typeof FormCheckboxes.methods.privacyCheckboxChangeState &&
+        typeof FormCheckboxes.methods.discountOffersCheckboxChangeState,
     ).toBe('function');
   });
 
-  test('emits called with arguments', () => {
+  it('emits called with arguments', () => {
     const firstCheckbox = {
       target: {
-        checked: true
-      }
+        checked: true,
+      },
     };
 
     const secondCheckbox = {
       target: {
-        checked: false
-      }
+        checked: false,
+      },
     };
 
     wrapper.vm.privacyCheckboxChangeState(firstCheckbox);
@@ -52,7 +50,7 @@ describe('Form checkboxes', () => {
     expect(wrapper.emitted().getDiscountOffersCheckboxState).toEqual([[false]]);
   });
 
-  test('correctly props data', () => {
+  it('correctly props data', () => {
     expect(wrapper.props().inputId).toBe('input id');
   });
 });

@@ -1,9 +1,7 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import GdprPage from '@/pages/gdpr';
 
-describe('Gdpr page', () => {
+describe('gdpr page', () => {
   let wrapper;
 
   beforeEach(() => {
@@ -11,18 +9,20 @@ describe('Gdpr page', () => {
   });
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
-  test('renders correctly', () => {
+
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
   // --------------------- //
 
-  test('Sets the correctly data', () => {
+  it('sets the correctly data', () => {
     expect(wrapper.vm.$data.title).toEqual('Mad Devs GDPR Compliance');
-    expect(wrapper.vm.$data.description).toEqual('Mad Devs’ General Data Protection Regulation (GDPR) Compliance Commitment.');
+    expect(wrapper.vm.$data.description).toEqual(
+      'Mad Devs’ General Data Protection Regulation (GDPR) Compliance Commitment.',
+    );
     expect(wrapper.vm.$data.ogUrl).toEqual('https://maddevs.io/gdpr/');
   });
 });

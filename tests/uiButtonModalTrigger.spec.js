@@ -1,9 +1,7 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
 
-describe('Ui button modal trigger', () => {
+describe('ui button modal trigger', () => {
   let wrapper;
 
   beforeEach(() => {
@@ -11,31 +9,31 @@ describe('Ui button modal trigger', () => {
       propsData: {
         buttonInnerText: 'Some button name',
         modalWindowName: 'Some modal window name',
-        isRed: true
+        isRed: true,
       },
       mocks: {
         $modal: {
-          show: jest.fn()
+          show: jest.fn(),
         },
         $nuxt: {
-          $emit: jest.fn()
-        }
-      }
+          $emit: jest.fn(),
+        },
+      },
     });
   });
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
-  test('renders correctly', () => {
+
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
   // --------------------- //
 
-  test('sets the correctly button name and contains new class --red', () => {
-    let button = wrapper.find('.ui-button-modal-trigger');
+  it('sets the correctly button name and contains new class --red', () => {
+    const button = wrapper.find('.ui-button-modal-trigger');
     expect(button.text()).toBe('Some button name');
     expect(button.classes()).toContain('ui-button-modal-trigger--red');
   });

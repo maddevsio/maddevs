@@ -3,11 +3,18 @@
     <div class="fields-list">
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name required">Full Name</p>
-        <input @input="$v.fullName.$touch" type="text" :class="{ 'invalid': $v.fullName.$error }" class="modal-entry-field entry-field" placeholder="John Smith" v-model="fullName">
+        <input
+          v-model="fullName"
+          :class="{ invalid: $v.fullName.$error }"
+          type="text"
+          class="modal-entry-field entry-field"
+          placeholder="John Smith"
+          @input="$v.fullName.$touch"
+        />
         <!-- Erros -->
         <div v-if="$v.fullName.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.fullName.required">This field is required.</span>
-          <span class="modal-error-text error-text" v-if="!$v.fullName.maxLength">
+          <span v-if="!$v.fullName.required" class="modal-error-text error-text">This field is required.</span>
+          <span v-if="!$v.fullName.maxLength" class="modal-error-text error-text">
             Sorry, the number of characters in this field should not exceed 50.
           </span>
         </div>
@@ -15,11 +22,18 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name required">Work email</p>
-        <input @input="$v.email.$touch" type="text" :class="{ 'invalid': $v.email.$error }" class="modal-entry-field entry-field" placeholder="your@mail.com" v-model="email">
+        <input
+          v-model="email"
+          :class="{ invalid: $v.email.$error }"
+          type="text"
+          class="modal-entry-field entry-field"
+          placeholder="your@mail.com"
+          @input="$v.email.$touch"
+        />
         <!-- Erros -->
         <div v-if="$v.email.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.email.required">This field is required.</span>
-          <span class="modal-error-text error-text" v-if="!$v.email.email">
+          <span v-if="!$v.email.required" class="modal-error-text error-text">This field is required.</span>
+          <span v-if="!$v.email.email" class="modal-error-text error-text">
             Invalid email address. Please use your work email.
           </span>
         </div>
@@ -27,32 +41,46 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Phone number</p>
-        <input @input="phoneChangeHandler" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" :value="phoneNumber">
+        <input
+          :class="{ invalid: $v.phoneNumber.$error }"
+          :value="phoneNumber"
+          type="text"
+          class="modal-entry-field entry-field"
+          placeholder="+1 23X XXX-XXXX"
+          @input="phoneChangeHandler"
+        />
         <!-- Erros -->
         <div v-if="$v.phoneNumber.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.phoneNumber.phone">
+          <span v-if="!$v.phoneNumber.phone" class="modal-error-text error-text">
             Sorry, this field can only contain numbers and characters specific for phone numbers.
           </span>
-          <span class="modal-error-text error-text" v-if="!$v.phoneNumber.maxLength">
+          <span v-if="!$v.phoneNumber.maxLength" class="modal-error-text error-text">
             Sorry, the number of characters in this field should not exceed 50.
           </span>
         </div>
         <!-- End Erros -->
       </div>
       <RadioList
-        @getTeamSize="getTeamSize"
-        :inputId="inputId"
-        :fieldName="fieldName"
-        :emitMethodName="emitMethodName"
+        :input-id="inputId"
+        :field-name="fieldName"
+        :emit-method-name="emitMethodName"
         :options="options"
-        :sectionIsRequired="sectionIsRequired"
+        :section-is-required="sectionIsRequired"
+        @getTeamSize="getTeamSize"
       />
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Project description</p>
-        <textarea @input="$v.projectDescription.$touch" type="text" :class="{ 'invalid': $v.projectDescription.$error }" class="modal-entry-field entry-field textarea" placeholder="Describe your project..." v-model="projectDescription"/>
+        <textarea
+          v-model="projectDescription"
+          :class="{ invalid: $v.projectDescription.$error }"
+          type="text"
+          class="modal-entry-field entry-field textarea"
+          placeholder="Describe your project..."
+          @input="$v.projectDescription.$touch"
+        />
         <!-- Erros -->
         <div v-if="$v.projectDescription.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.projectDescription.maxLength">
+          <span v-if="!$v.projectDescription.maxLength" class="modal-error-text error-text">
             Sorry, the number of characters in this field should not exceed 500.
           </span>
         </div>
@@ -61,15 +89,15 @@
     </div>
     <FormCheckboxes
       ref="checkboxes"
+      :input-id="inputId"
       @getPrivacyCheckboxState="getPrivacyCheckboxState"
       @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
-      :inputId="inputId"
     />
     <UIButton
       :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || !selectedTeamSize || onSubmit"
-      @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy || selectedTeamSize)"
-      class="modal-button"
       :loading="onSubmit"
+      class="modal-button"
+      @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy || selectedTeamSize)"
     >
       Get a team of ultra fast coders
     </UIButton>
@@ -85,31 +113,37 @@ import RadioList from '@/components/ui/radio-list';
 import UIButton from '@/components/ui/UIButton';
 
 export default {
-  name: 'frontend-modal',
+  name: 'FrontendModal',
   components: {
     FormCheckboxes,
     RadioList,
-    UIButton
+    UIButton,
   },
+
   mixins: [phoneHandler],
   validations: {
     fullName: {
       required,
-      maxLength: maxLength(50)
+      maxLength: maxLength(50),
     },
+
     projectDescription: {
-      maxLength: maxLength(500)
+      maxLength: maxLength(500),
     },
+
     email: {
       required,
-      email
+      email,
     },
+
     phoneNumber: {
       phone,
-      maxLength: maxLength(50)
+      maxLength: maxLength(50),
     },
-    validationGroup: ['fullName', 'email', 'phoneNumber', 'projectDescription']
+
+    validationGroup: ['fullName', 'email', 'phoneNumber', 'projectDescription'],
   },
+
   data: () => ({
     form: null,
     modalName: 'teams-modal',
@@ -127,37 +161,44 @@ export default {
     options: [
       {
         id: 'less-five',
-        text: 'Less than 5'
+        text: 'Less than 5',
       },
       {
         id: 'from-five-to-ten',
-        text: 'From 5 to 10'
+        text: 'From 5 to 10',
       },
       {
         id: 'more-than-ten',
-        text: 'More than 10'
-      }
+        text: 'More than 10',
+      },
     ],
+
     onSubmit: false,
     subject: 'Marketing',
-    modalTitle: 'Mad Devs Website Forms'
+    modalTitle: 'Mad Devs Website Forms',
   }),
+
   mounted() {
-    this.$nuxt.$on('resetCheckboxesInForm', () => { // Reset checkboxes in form if user close modal
+    this.$nuxt.$on('resetCheckboxesInForm', () => {
+      // Reset checkboxes in form if user close modal
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
     });
   },
+
   methods: {
     getPrivacyCheckboxState(privacyState) {
       this.agreeWithPrivacyPolicy = privacyState;
     },
+
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
     },
+
     getTeamSize(teamSize) {
       this.selectedTeamSize = teamSize;
     },
+
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
         this.onSubmit = true;
@@ -173,20 +214,24 @@ export default {
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
             subject: this.subject || '',
-            modalTitle: this.modalTitle
-          }
+            modalTitle: this.modalTitle,
+          },
         };
-        this.$store.dispatch('sendEmail', this.form).then(res => {
-          this.onSubmit = false;
-          this.resetForm();
-          if (res.status === 200) {
-            this.$parent.$emit('success');
-          }
-        }).catch(() => {
-          this.onSubmit = true;
-        });
+        this.$store
+          .dispatch('sendEmail', this.form)
+          .then(res => {
+            this.onSubmit = false;
+            this.resetForm();
+            if (res.status === 200) {
+              this.$parent.$emit('success');
+            }
+          })
+          .catch(() => {
+            this.onSubmit = true;
+          });
       }
     },
+
     resetForm() {
       this.$refs.checkboxes.reset();
       this.fullName = null;
@@ -197,7 +242,7 @@ export default {
       this.form = null;
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
-    }
-  }
+    },
+  },
 };
 </script>

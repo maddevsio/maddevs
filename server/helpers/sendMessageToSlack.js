@@ -1,3 +1,4 @@
+/* eslint-disable */
 const request = require('request');
 
 // Slack message layouts
@@ -13,7 +14,7 @@ function sendMessageToSlack(webhook, layout) {
     uri: webhook,
     method: 'POST',
     json: layout,
-    mrkdwn: true
+    mrkdwn: true,
   };
   request(options);
 }

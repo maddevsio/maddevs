@@ -1,80 +1,78 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import Customers from '@/components/Projects/Customers';
 
-describe('Customers component', () => {
+describe('customers component', () => {
   let wrapper;
-  let customers = [
+  const customers = [
     {
-      className: 'godee-icon'
+      className: 'godee-icon',
     },
     {
-      className: 'guardrails-icon'
+      className: 'guardrails-icon',
     },
     {
-      className: 'teacherly-icon'
+      className: 'teacherly-icon',
     },
     {
-      className: 'triggermesh-icon'
+      className: 'triggermesh-icon',
     },
     {
-      className: 'clutch-icon'
+      className: 'clutch-icon',
     },
     {
-      className: 'eatigo-icon'
+      className: 'eatigo-icon',
     },
     {
-      className: 'veeqo-icon'
+      className: 'veeqo-icon',
     },
     {
-      className: 'admitad-icon'
+      className: 'admitad-icon',
     },
     {
-      className: 'iotsploit-icon'
+      className: 'iotsploit-icon',
     },
     {
-      className: 'sir-jonas-icon'
+      className: 'sir-jonas-icon',
     },
     {
-      className: 'progressay-icon'
+      className: 'progressay-icon',
     },
     {
-      className: 'kickoico-icon'
+      className: 'kickoico-icon',
     },
     {
-      className: 'nambafood-icon'
+      className: 'nambafood-icon',
     },
     {
-      className: 'showmebishkek-icon'
+      className: 'showmebishkek-icon',
     },
     {
-      className: 'mythril-icon'
+      className: 'mythril-icon',
     },
     {
-      className: 'seso-icon'
+      className: 'seso-icon',
     },
     {
-      className: 'tengri-icon'
+      className: 'tengri-icon',
     },
     {
-      className: 'peklo-icon'
-    }
+      className: 'peklo-icon',
+    },
   ];
 
   beforeEach(() => {
     wrapper = mount(Customers);
   });
 
-  test('is Vue\'s instance', () => {
+  it("is Vue's instance", () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
-  test('renders correctly', () => {
+
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
 
-  test('should check existence of data', () => {
+  it('should check existence of data', () => {
     expect(wrapper.vm.$data.customers).toStrictEqual(customers);
   });
 });

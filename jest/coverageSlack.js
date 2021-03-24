@@ -7,7 +7,7 @@ const messages = {
   emptyEnv: 'Please add a slack webhookUrl in var NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL on your .env file',
   getErrorText: failed => `<!here> Just a quick heads up, *${failed}* tests have failed :(
   Please take a look.`,
-  passedText: 'All tests have passed'
+  passedText: 'All tests have passed',
 };
 
 function getTotalCoveragePercentage(percentages) {
@@ -17,10 +17,10 @@ function getTotalCoveragePercentage(percentages) {
 
 function createMessage(failedCount, vars) {
   const totalCoveragePercentage = getTotalCoveragePercentage([
-    vars.statements.coverage, 
-    vars.branches.coverage, 
-    vars.lines.coverage, 
-    vars.functions.coverage
+    vars.statements.coverage,
+    vars.branches.coverage,
+    vars.lines.coverage,
+    vars.functions.coverage,
   ]);
 
   const message = {
@@ -28,25 +28,25 @@ function createMessage(failedCount, vars) {
     attachments: [
       {
         text: `*Total coverage percentage*: ${totalCoveragePercentage}%`,
-        color: getColor(totalCoveragePercentage, 'hash')
+        color: getColor(totalCoveragePercentage, 'hash'),
       },
       {
         text: `Statements: ${vars.statements.coverage}%`,
-        color: vars.statements.color
+        color: vars.statements.color,
       },
       {
         text: `Branches: ${vars.branches.coverage}%`,
-        color: vars.branches.color
+        color: vars.branches.color,
       },
       {
         text: `Lines: ${vars.lines.coverage}%`,
-        color: vars.lines.color
+        color: vars.lines.color,
       },
       {
         text: `Functions: ${vars.functions.coverage}%`,
-        color: vars.functions.color
-      }
-    ]
+        color: vars.functions.color,
+      },
+    ],
   };
   return message;
 }
@@ -58,9 +58,9 @@ function sendMessageToSlack(reportResults, testResults, webhookUrl) {
     method: 'POST',
     json: {
       text: resultMessage.text,
-      attachments: resultMessage.attachments
+      attachments: resultMessage.attachments,
     },
-    mrkdwn: true
+    mrkdwn: true,
   };
   request(options);
 }
@@ -77,10 +77,13 @@ function readCoverageReport(data) {
 
       return [key, { coverage, color }];
     })
-    .reduce((acc, [key, value]) => ({
-      ...acc,
-      [key]: value
-    }), {});
+    .reduce(
+      (acc, [key, value]) => ({
+        ...acc,
+        [key]: value,
+      }),
+      {},
+    );
 
   return results;
 }

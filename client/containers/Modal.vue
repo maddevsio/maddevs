@@ -1,22 +1,15 @@
 <template>
   <transition name="main-fade" mode="out-in">
-    <div
-      v-if="isVisible"
-      class="modal"
-      v-append-to-body
-    >
+    <div v-if="isVisible" v-append-to-body class="modal">
       <transition name="made">
         <div v-if="isOverlay" class="modal_overlay" @click="close"></div>
       </transition>
       <transition name="fade">
-        <div
-          v-if="contentLoaded"
-          class="modal_container"
-        >
+        <div v-if="contentLoaded" class="modal_container">
           <div class="modal_close" @click="close">
-            <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
+            <img src="@/assets/img/common/close-icon.svg" alt="Close modal" />
           </div>
-          <simplebar class="modal_content safari-only" ref="content" @success="openSuccessModal">
+          <simplebar ref="content" class="modal_content safari-only" @success="openSuccessModal">
             <SuccessMessage v-if="isSuccess" />
             <slot v-else />
           </simplebar>
@@ -33,42 +26,49 @@ import SuccessMessage from '@/components/Modals/success-message';
 export default {
   name: 'Modal',
   components: { simplebar, SuccessMessage },
-  props: {
-    appendToBody: {
-      type: Boolean,
-      default: false
-    }
-  },
-  data() {
-    return {
-      isVisible: false,
-      contentLoaded: false,
-      isOverlay: false,
-      isSuccess: false
-    };
-  },
   directives: {
     appendToBody: {
       inserted(el) {
         document.body.appendChild(el);
       },
+
       unbind(el) {
         if (el.parentNode) {
           el.parentNode.removeChild(el);
         }
-      }
-    }
+      },
+    },
   },
+
+  props: {
+    appendToBody: {
+      type: Boolean,
+      default: false,
+    },
+  },
+
+  data() {
+    return {
+      isVisible: false,
+      contentLoaded: false,
+      isOverlay: false,
+      isSuccess: false,
+    };
+  },
+
   beforeMount() {
     document.addEventListener('keydown', this.onKeydown);
   },
+
   beforeDestroy() {
     document.removeEventListener('keydown', this.onKeydown);
   },
+
   methods: {
     openSuccessModal() {
       this.isSuccess = true;
     },
+
     close() {
       setTimeout(() => {
         this.isVisible = false;
@@ -83,6 +83,7 @@ export default {
         this.isSuccess = false;
       }, 100);
     },
+
     show() {
       this.disableScrollOnBody();
       this.isVisible = true;
@@ -94,20 +95,23 @@ export default {
         this.$emit('on-show');
       }, 100);
     },
+
     onKeydown(e) {
       if (e.keyCode === 27) {
         this.close();
       }
     },
+
     enableScrollOnBody() {
       document.body.style.top = 'auto';
       document.body.style.overflow = 'auto';
     },
+
     disableScrollOnBody() {
       document.body.style.top = `-${window.scrollY}px`;
       document.body.style.overflow = 'hidden';
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -258,37 +262,49 @@ export default {
 
 /* iphone 5 */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
-  _::-webkit-full-page-media, _:future, :root .safari-only {
+  _::-webkit-full-page-media,
+  _:future,
+  :root .safari-only {
     max-height: calc(100vh - 177px) !important;
   }
 }
 /* iphone 6, 6s, 7, 8 */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-  _::-webkit-full-page-media, _:future, :root .safari-only {
+  _::-webkit-full-page-media,
+  _:future,
+  :root .safari-only {
     max-height: calc(100vh - 177px) !important;
   }
 }
 /* iphone 6+, 6s+, 7+, 8+ */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
-  _::-webkit-full-page-media, _:future, :root .safari-only {
+  _::-webkit-full-page-media,
+  _:future,
+  :root .safari-only {
     max-height: calc(100vh - 177px) !important;
   }
 }
 /* iphone X , XS, 11 Pro */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  _::-webkit-full-page-media, _:future, :root .safari-only {
+  _::-webkit-full-page-media,
+  _:future,
+  :root .safari-only {
     max-height: calc(100vh - 205px) !important;
   }
 }
 /* iphone XR, 11 */
-@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio: 2) {
-  _::-webkit-full-page-media, _:future, :root .safari-only {
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  _::-webkit-full-page-media,
+  _:future,
+  :root .safari-only {
     max-height: calc(100vh - 205px) !important;
   }
 }
 /* iphone XS Max, 11 Pro Max */
-@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio: 3) {
-  _::-webkit-full-page-media, _:future, :root .safari-only {
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  _::-webkit-full-page-media,
+  _:future,
+  :root .safari-only {
     max-height: calc(100vh - 205px) !important;
   }
 }

@@ -1,9 +1,7 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import CustomerUniversitySection from '../client/components/Blog/CustomerUniversitySection';
 
-describe('Customer University section component', () => {
+describe('customer University section component', () => {
   let wrapper;
 
   beforeEach(() => {
@@ -11,17 +9,17 @@ describe('Customer University section component', () => {
       stubs: ['prismic-image'],
       mocks: {
         $prismic: {
-          asText: smth => ''
-        }
-      }
+          asText: () => '',
+        },
+      },
     });
   });
 
-  test('Is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
 
-  test('Renders correctly', () => {
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
 });

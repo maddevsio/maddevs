@@ -1,19 +1,19 @@
 <template>
   <a
     :href="project.link"
-    class="single-project"
     :style="{ background: project.projectColor }"
     :target="project.targetBlank ? '_blank' : '_self'"
+    class="single-project"
   >
-    <div class="single-project__container" :class="colorTheme">
+    <div :class="colorTheme" class="single-project__container">
       <div class="single-project__content-wrap">
         <img
           :width="project.logoWidth"
-          height="41"
           :data-src="require(`@/assets/img/Home/svg/caseIcons/${project.logoImg}.svg`)"
-          class="img_lazy single-project__logo"
           :alt="project.alt"
-        >
+          height="41"
+          class="img_lazy single-project__logo"
+        />
         <h3 class="single-project__sub-title">
           {{ project.projectTitle }}
         </h3>
@@ -21,25 +21,34 @@
           {{ project.projectDescription }}
         </p>
         <ContributionWidget
-          :projectName="project.projectName"
+          :project-name="project.projectName"
           :contribution="project.contribution"
-          :maddevsLogo="project.maddevsLogo"
+          :maddevs-logo="project.maddevsLogo"
         />
       </div>
-      <div class="single-project__background" :class="backgroundModifierClasses">
+      <div :class="backgroundModifierClasses" class="single-project__background">
         <picture>
           <source
+            :data-srcset="[
+              require(`@/assets/img/Studies/webp/${project.projectBackground}.webp`) + ' ',
+              require(`@/assets/img/Studies/webp/${project.projectBackground}.webp`) + ' 2x',
+            ]"
             class="multi-image"
-            :data-srcset="[require(`@/assets/img/Studies/webp/${project.projectBackground}.webp`) + ' ', require(`@/assets/img/Studies/webp/${project.projectBackground}.webp`) + ' 2x']"
-            type='image/webp'>
+            type="image/webp"
+          />
           <img
-            :data-src="[require(`@/assets/img/Studies/${project.fileExtension}/${project.projectBackground}.${project.fileExtension}`)]"
-            :data-srcset="[require(`@/assets/img/Studies/${project.fileExtension}/${project.projectBackground}.${project.fileExtension}`) + ' 2x']"
-            class="img_lazy"
+            :data-src="[
+              require(`@/assets/img/Studies/${project.fileExtension}/${project.projectBackground}.${project.fileExtension}`),
+            ]"
+            :data-srcset="[
+              require(`@/assets/img/Studies/${project.fileExtension}/${project.projectBackground}.${project.fileExtension}`) +
+                ' 2x',
+            ]"
             :alt="project.alt"
+            class="img_lazy"
             width="610"
             height="294"
-          >
+          />
         </picture>
       </div>
     </div>
@@ -52,56 +61,38 @@ import ContributionWidget from '@/components/About/ContributionWidget';
 export default {
   name: 'SingleProject',
   components: {
-    ContributionWidget
+    ContributionWidget,
   },
+
   props: {
     project: {
-      projectName: {
-        type: String,
-        required: true
-      },
-      logoImg: {
-        type: String,
-        required: true
-      },
-      link: {
-        type: String,
-        required: true
-      },
-      projectBackground: {
-        type: String,
-        required: true
-      },
-      projectColor: {
-        type: String,
-        required: true
-      },
-      projectTitle: {
-        type: String,
-        required: true
-      },
-      alt: {
-        type: String,
-        default: ''
-      },
-      fileExtension: {
-        type: String,
-        default: ''
-      }
-    }
+      type: Object,
+      required: true,
+      default: () => ({
+        projectName: '',
+        logoImg: '',
+        link: '',
+        projectBackground: '',
+        projectColor: '',
+        projectTitle: '',
+        alt: '',
+        fileExtension: '',
+      }),
+    },
   },
+
   computed: {
     colorTheme() {
       if (this.project.projectName === 'sjmc' || this.project.projectName === 'guardrails') {
         return 'single-project_white-letters-theme';
-      } else {
-        return 'single-project_black-letters-theme';
       }
+      return 'single-project_black-letters-theme';
     },
+
     backgroundModifierClasses() {
       return this.project.projectName === 'guardrails' ? 'single-project__background_guardrails' : '';
-    }
-  }
+    },
+  },
 };
 </script>
 

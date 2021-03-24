@@ -1,17 +1,17 @@
 import { mount } from '@vue/test-utils';
 import FAQ from '@/components/FAQ';
 
-describe('FAQ', () => {
+describe('fAQ', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = mount(FAQ);
   });
-  test('is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
 
-  test('renders correctly', () => {
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
 });

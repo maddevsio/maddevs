@@ -1,14 +1,14 @@
 <template>
   <footer class="footer">
     <a href="https://prismic.io" target="_blank" rel="noopener">
-      <img class="logo" src="../assets/img/prismic-logo.svg" alt="Prismic">
+      <img class="logo" src="../assets/img/prismic-logo.svg" alt="Prismic" />
     </a>
   </footer>
 </template>
 
 <script>
 export default {
-  name: 'FooterPrismic'
+  name: 'FooterPrismic',
 };
 </script>
 
@@ -18,7 +18,7 @@ export default {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
-  border-top: 1px solid #DADADA;
+  border-top: 1px solid #dadada;
 
   .logo {
     width: 100px;

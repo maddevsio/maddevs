@@ -8,32 +8,32 @@ export default {
   props: {
     itemSubTitle: {
       type: String,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-  @import '../../../assets/styles/vars';
+@import '../../../assets/styles/vars';
 
-  .item-sub-title {
-    font-size: 23px;
-    font-family: 'Poppins-Medium', sans-serif;
-    line-height: 136%;
-    letter-spacing: -1px;
-    color: $remote-tech-staff-sub-title-grey;
+.item-sub-title {
+  font-size: 23px;
+  font-family: 'Poppins-Medium', sans-serif;
+  line-height: 136%;
+  letter-spacing: -1px;
+  color: $remote-tech-staff-sub-title-grey;
 
-    /deep/ span {
-      white-space: nowrap;
-    }
-
-    @media screen and (max-width: 1280px) {
-      font-size: 20px;
-    }
-
-    @media only screen and (max-width: 834px) {
-      font-size: 18px;
-    }
+  /deep/ span {
+    white-space: nowrap;
   }
+
+  @media screen and (max-width: 1280px) {
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: 834px) {
+    font-size: 18px;
+  }
+}
 </style>

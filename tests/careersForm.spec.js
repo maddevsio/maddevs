@@ -6,7 +6,7 @@ const localVue = createLocalVue();
 
 localVue.use(Vuelidate);
 
-describe('CareersForm component', () => {
+describe('careersForm component', () => {
   let wrapper;
   const data = {
     isEmailSent: false,
@@ -23,9 +23,9 @@ describe('CareersForm component', () => {
       { type: 'senior', label: 'Senior,' },
       { type: 'middle', label: 'Middle,' },
       { type: 'junior', label: 'Junior,' },
-      { type: 'intern', label: 'Intern' }
+      { type: 'intern', label: 'Intern' },
     ],
-    modalTitle: 'Mad Devs Website Carrers Form'
+    modalTitle: 'Mad Devs Website Carrers Form',
   };
 
   beforeEach(() => {
@@ -34,65 +34,61 @@ describe('CareersForm component', () => {
       mocks: {
         $refs: {
           nameInput: {
-            focus: jest.fn()
-          }
+            focus: jest.fn(),
+          },
         },
         errors: false,
-        onSumbit: false
-      }
+        onSumbit: false,
+      },
     });
     wrapper.vm.$refs = {
       form: {
-        reset: jest.fn()
+        reset: jest.fn(),
       },
       fileInput: {
-        reset: jest.fn()
+        reset: jest.fn(),
       },
       radioButtons: {
-        reset: jest.fn()
-      }
+        reset: jest.fn(),
+      },
     };
     wrapper.vm.$nextTick();
   });
 
-  test('is Vue instance', () => {
+  it('is Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
 
-  test('renders correctly', () => {
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
 
-  test('should check existence of data', () => {
+  it('should check existence of data', () => {
     expect(wrapper.vm.$data).toStrictEqual(data);
   });
 
-  test('onFileChanged method should set correct position', () => {
+  it('onFileChanged method should set correct position', () => {
     const newPositionValue = null;
     CareersForm.methods.onFileChanged(newPositionValue);
     expect(wrapper.vm.$data.positionValue).toStrictEqual(newPositionValue);
   });
 
-  test('should rest values in data instances', () => {
+  it('should rest values in data instances', () => {
     // Set mock data for data instances
     wrapper.vm.$data.fullName = 'Name';
     wrapper.vm.$data.email = 'email@mail.com';
     wrapper.vm.$data.form = {
       value1: 'value1',
-      value2: 'value2'
+      value2: 'value2',
     };
 
     wrapper.vm.resetForm();
-    expect(
-      wrapper.vm.$data.fullName &&
-      wrapper.vm.$data.email &&
-      wrapper.vm.$data.form
-    ).toEqual(null);
+    expect(wrapper.vm.$data.fullName && wrapper.vm.$data.email && wrapper.vm.$data.form).toBeNull();
   });
 
-  test('toBase64 should return promise', () => {
+  it('toBase64 should return promise', () => {
     const file = new Blob(['testing'], { type: 'application/pdf' });
-    const promise = new Promise((res, rej) => res());
+    const promise = new Promise(resolve => resolve());
     expect(wrapper.vm.toBase64(file)).toEqual(promise);
   });
 });

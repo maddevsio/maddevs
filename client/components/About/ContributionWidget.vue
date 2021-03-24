@@ -1,14 +1,14 @@
 <template>
   <div class="contribution-widget">
     <img
+      :data-src="require(`@/assets/img/Home/svg/caseIcons/${maddevsLogo}.svg`)"
       width="20"
       height="18"
-      :data-src="require(`@/assets/img/Home/svg/caseIcons/${maddevsLogo}.svg`)"
       class="contribution-widget__img img_lazy"
       alt="Mad Devs logo"
-    >
-    <span class="contribution-widget__content" :class="`contribution-widget__content_${projectName}`">
-      contribution: {{contribution}}
+    />
+    <span :class="`contribution-widget__content_${projectName}`" class="contribution-widget__content">
+      contribution: {{ contribution }}
     </span>
   </div>
 </template>
@@ -19,17 +19,19 @@ export default {
   props: {
     projectName: {
       type: String,
-      required: true
+      required: true,
     },
+
     contribution: {
       type: String,
-      default: ''
+      default: '',
     },
+
     maddevsLogo: {
       type: String,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 };
 </script>
 

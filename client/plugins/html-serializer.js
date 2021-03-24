@@ -3,10 +3,10 @@
  * https://prismic.io/docs/vuejs/beyond-the-api/html-serializer
  */
 
-import linkResolver from './link-resolver';
 import prismicDOM from 'prismic-dom';
+import linkResolver from './link-resolver';
 
-const Elements = prismicDOM.RichText.Elements;
+const { Elements } = prismicDOM.RichText;
 
 export default (type, element, content, children) => {
   // Generate links to Prismic Documents as <router-link> components
@@ -44,24 +44,24 @@ export default (type, element, content, children) => {
     return result;
   }
 
-  if(type === Elements.paragraph || type === Elements.list || type === Elements.paragraph || type === Elements.oList) {
-    const processedChildren = children.map(child => child.replace(
-      /`([^`]*)`/g,
-      (match, p) => `<span class="inline-code">${p}</span>`
-    )
-      .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`));
+  if (type === Elements.paragraph || type === Elements.list || type === Elements.paragraph || type === Elements.oList) {
+    const processedChildren = children.map(child =>
+      child
+        .replace(/`([^`]*)`/g, (match, p) => `<span class="inline-code">${p}</span>`)
+        .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`),
+    );
 
     let tag;
     switch (type) {
-    case (Elements.list) :
-      tag = 'ul';
-      break;
-    case (Elements.oList) :
-      tag = 'ol';
-      break;
-    default:
-      tag = 'p';
-      break;
+      case Elements.list:
+        tag = 'ul';
+        break;
+      case Elements.oList:
+        tag = 'ol';
+        break;
+      default:
+        tag = 'p';
+        break;
     }
 
     return `<${tag}>${processedChildren.join('')}</${tag}>`;

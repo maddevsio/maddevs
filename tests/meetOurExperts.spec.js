@@ -1,9 +1,7 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import MeetOurExperts from '@/components/About/MeetOurExperts.vue';
 
-describe('Meet Our Experts', () => {
+describe('meet Our Experts', () => {
   let wrapper;
 
   beforeEach(() => {
@@ -11,21 +9,21 @@ describe('Meet Our Experts', () => {
   });
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
-  test('renders correctly', () => {
+
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
   // --------------------- //
 
-  test('experts must contain eight elements', () => {
+  it('experts must contain eight elements', () => {
     expect(wrapper.vm.$data.experts).toHaveLength(8);
   });
 
-  test('correctly length of elements in DOM', () => {
-    let contentItems = wrapper.findAll('.meet-our_experts__expert-item');
+  it('correctly length of elements in DOM', () => {
+    const contentItems = wrapper.findAll('.meet-our_experts__expert-item');
     expect(contentItems).toHaveLength(8);
   });
 });

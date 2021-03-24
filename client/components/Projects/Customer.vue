@@ -1,6 +1,6 @@
 <template>
   <div class="icon-wrapper">
-    <div class="icon-wrapper__icon" :class="`icon-wrapper__${customer.className}`"></div> 
+    <div :class="`icon-wrapper__${customer.className}`" class="icon-wrapper__icon"></div>
   </div>
 </template>
 
@@ -9,13 +9,13 @@ export default {
   name: 'Customer',
   props: {
     customer: {
-      className: {
-        type: String,
-        require: true,
-        default: ''
-      }
-    }
-  }
+      type: Object,
+      required: true,
+      default: () => ({
+        className: '',
+      }),
+    },
+  },
 };
 </script>
 
@@ -29,7 +29,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $our-valued-icon-background; 
+  background-color: $our-valued-icon-background;
 
   &__icon {
     width: 143px;

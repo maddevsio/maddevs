@@ -3,41 +3,56 @@
     <div class="container">
       <div class="weCreateItProject__content-wrapper">
         <h2 class="weCreateItProject__main-title">
-          We create <br> IT projects for:
+          We create <br />
+          IT projects for:
         </h2>
         <div class="weCreateItProject__projects-type_list row gy-0">
           <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="weCreateItProject__paragraph">Content Streaming <br> Transportation</p>
+            <p class="weCreateItProject__paragraph">
+              Content Streaming <br />
+              Transportation
+            </p>
           </div>
           <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="weCreateItProject__paragraph">HealthTech <br> IoTs</p>
+            <p class="weCreateItProject__paragraph">
+              HealthTech <br />
+              IoTs
+            </p>
           </div>
           <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="weCreateItProject__paragraph">E-Commerce <br> AdTech</p>
+            <p class="weCreateItProject__paragraph">
+              E-Commerce <br />
+              AdTech
+            </p>
           </div>
           <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="weCreateItProject__paragraph">E-Learning <br> FinTech</p>
+            <p class="weCreateItProject__paragraph">
+              E-Learning <br />
+              FinTech
+            </p>
           </div>
           <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="weCreateItProject__paragraph">Serverless <br> BYOD</p>
+            <p class="weCreateItProject__paragraph">
+              Serverless <br />
+              BYOD
+            </p>
           </div>
           <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="weCreateItProject__paragraph">Blockchain <br> FoodTech</p>
+            <p class="weCreateItProject__paragraph">
+              Blockchain <br />
+              FoodTech
+            </p>
           </div>
         </div>
         <ul class="weCreateItProject__flags-list">
-          <li
-            v-for="(flag, i) in flags"
-            :key="i"
-            class="weCreateItProject__flag-item"
-          >
+          <li v-for="(flag, i) in flags" :key="i" class="weCreateItProject__flag-item">
             <img
+              :data-src="require(`@/assets/img/Home/flags/${flag}.svg`)"
+              :alt="flag"
               width="32"
               height="32"
-              :data-src="require(`@/assets/img/Home/flags/${flag}.svg`)"
               class="img_lazy"
-              :alt="flag"
-            >
+            />
           </li>
         </ul>
       </div>
@@ -46,12 +61,12 @@
 </template>
 
 <script>
-
 export default {
   name: 'WeCreateItProjectFor',
   data() {
     return {
-      flags: [ // if will be added or removed flag, need to change css grid, on line 94 and 178
+      flags: [
+        // if will be added or removed flag, need to change css grid, on line 94 and 178
         'usa',
         'australia',
         'vietnam',
@@ -73,10 +88,10 @@ export default {
         'portugal',
         'katar',
         'south_africa',
-        'netherlands'
-      ]
+        'netherlands',
+      ],
     };
-  }
+  },
 };
 </script>
 

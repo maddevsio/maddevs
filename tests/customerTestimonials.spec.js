@@ -1,23 +1,21 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import CustomerTestimonials from '@/components/About/CustomerTestimonials';
 
-describe('Customer Testimonials', () => {
+describe('customer Testimonials', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = mount(CustomerTestimonials, {
-      stubs: ['client-only']
+      stubs: ['client-only'],
     });
   });
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
-  
-  test('renders correctly', () => {
+
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
   // --------------------- //
@@ -30,17 +28,17 @@ describe('Customer Testimonials', () => {
     expect(typeof CustomerTestimonials.data).toBe('function');
   });
 
-  it('Widget show in DOM when page load', () => {
-    let widget = wrapper.findAll('.clutch-widget');
+  it('widget show in DOM when page load', () => {
+    const widget = wrapper.findAll('.clutch-widget');
     expect(widget).toBeTruthy();
   });
 
-  test('itemsTextContent must contain three elements', () => {
+  it('itemsTextContent must contain three elements', () => {
     expect(wrapper.vm.$data.testimonials).toHaveLength(3);
   });
 
-  test('correctly length of elements in DOM', () => {
-    let contentItems = wrapper.findAll('.customer-testimonials__testimonials-item');
+  it('correctly length of elements in DOM', () => {
+    const contentItems = wrapper.findAll('.customer-testimonials__testimonials-item');
     expect(contentItems).toHaveLength(3);
   });
 });

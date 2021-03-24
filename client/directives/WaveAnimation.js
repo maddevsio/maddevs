@@ -45,7 +45,7 @@ const WaveAnimation = {
     if (el) {
       el.removeEventListener('click', startAnimation);
     }
-  }
+  },
 };
 
 export default WaveAnimation;

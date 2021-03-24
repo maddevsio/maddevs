@@ -1,6 +1,4 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import CustomerUniversity from '../client/components/Blog/header/CustomerUniversity';
 
 describe('customer university header component', () => {
@@ -13,28 +11,35 @@ describe('customer university header component', () => {
         copyright: null,
         dimensions: {
           height: 452,
-          width: 780
+          width: 780,
         },
-        url: 'https://images.prismic.io/superpupertest/82f90d05-8c22-49c1-bf1e-8721a0e3eda6_Constructing+a+Map+in+the+Mercator+Projection+for+Android.png?auto=compress,format'
+        url:
+          'https://images.prismic.io/superpupertest/82f90d05-8c22-49c1-bf1e-8721a0e3eda6_Constructing+a+Map+in+the+Mercator+Projection+for+Android.png?auto=compress,format',
       },
-      subtitle: [{
-        spans: [],
-        text: 'adadadad',
-        type: 'heading1'
-      }],
-      title: [{
-        spans: [],
-        text: 'adadadad',
-        type: 'heading1'
-      }]
+      subtitle: [
+        {
+          spans: [],
+          text: 'adadadad',
+          type: 'heading1',
+        },
+      ],
+      title: [
+        {
+          spans: [],
+          text: 'adadadad',
+          type: 'heading1',
+        },
+      ],
     },
     postList: [
       {
-        chapter_name: [{
-          spans: [],
-          text: 'Chapter 1',
-          type: 'heading1'
-        }],
+        chapter_name: [
+          {
+            spans: [],
+            text: 'Chapter 1',
+            type: 'heading1',
+          },
+        ],
         cu_post: {
           id: 'YAGi7REAACMAgV8d',
           isBroken: false,
@@ -43,15 +48,17 @@ describe('customer university header component', () => {
           slug: 'adadadad',
           tags: [],
           type: 'customer_university',
-          uid: 'cu-test'
-        }
+          uid: 'cu-test',
+        },
       },
       {
-        chapter_name: [{
-          spans: [],
-          text: 'Chapter 2',
-          type: 'heading1'
-        }],
+        chapter_name: [
+          {
+            spans: [],
+            text: 'Chapter 2',
+            type: 'heading1',
+          },
+        ],
         cu_post: {
           id: 'YAGi7REAACMAgV8d',
           isBroken: false,
@@ -60,31 +67,31 @@ describe('customer university header component', () => {
           slug: 'adadadadaa',
           tags: [],
           type: 'customer_university',
-          uid: 'cu-test-2'
-        }
-      }
+          uid: 'cu-test-2',
+        },
+      },
     ],
     clusterName: 'Pricing strategies in custom software development',
-    id: 'YAGi7REAACMAgV8d'
+    id: 'YAGi7REAACMAgV8d',
   };
 
   beforeEach(() => {
     wrapper = mount(CustomerUniversity, {
       mocks: {
         $prismic: {
-          asText: text => text[0].text
-        }
+          asText: text => text[0].text,
+        },
       },
       propsData,
-      stubs: ['v-select', 'common-header', 'router-link']
+      stubs: ['v-select', 'common-header', 'router-link'],
     });
   });
 
-  test('Is a Vue instance', () => {
+  it('is a Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy();
   });
 
-  test('Renders correctly', () => {
+  it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
   });
 });

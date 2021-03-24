@@ -1,13 +1,7 @@
 <template>
-  <section class="case_header" id="case-header">
-    <video
-      class="case_main-video" 
-      loop="true" 
-      muted="true" 
-      autoplay="true"
-      v-if="!isIphone"
-    >
-      <source :src="video" type="video/mp4">
+  <section id="case-header" class="case_header">
+    <video v-if="!isIphone" class="case_main-video" loop="true" muted="true" autoplay="true">
+      <source :src="video" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <div class="case_header-content">
@@ -23,44 +17,44 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph';
 export default {
   name: 'Header',
-  components: {
-    TextParagraph
-  },
   props: {
     logo: {
       type: String,
-      default: ''
+      default: '',
     },
+
     videoName: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
+
   data() {
     return {
       isIphone: false,
-      video: ''
+      video: '',
     };
   },
+
   created() {
     this.video = `${process.env.awsUrl}/${this.$props.videoName}`;
   },
+
   mounted() {
-    if(navigator.userAgent.match(/(iPhone)/i)) {
+    if (navigator.userAgent.match(/(iPhone)/i)) {
       this.isIphone = true;
     } else {
       this.isIphone = false;
     }
-  }
+  },
 };
 </script>
 
 <style scoped lang="scss">
-@import "../../assets/styles/cases/header";
-@import "../../assets/styles/cases/mixins";
+@import '../../assets/styles/cases/header';
+@import '../../assets/styles/cases/mixins';
 
 .case {
   &_header {
@@ -144,7 +138,7 @@ export default {
     &_header-title {
       font-size: 30px;
     }
-    
+
     &_header-text,
     &_case-study-item {
       font-size: 13px;

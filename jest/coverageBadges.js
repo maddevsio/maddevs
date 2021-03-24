@@ -71,6 +71,7 @@ const getBadgeByKey = report => key => {
     }
     mkdirp(outputPath, folderError => {
       if (folderError) {
+        // eslint-disable-next-line
         console.error(`Could not create output directory ${folderError}`);
       } else {
         writeBadgeInFolder(key, res);

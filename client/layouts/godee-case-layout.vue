@@ -1,6 +1,6 @@
 <template>
   <div class="godee-case-layout">
-    <nuxt/>
+    <nuxt />
   </div>
 </template>
 
@@ -11,12 +11,12 @@ export default {
   name: 'GoDeeLayout',
   mounted() {
     const scrollContainer = document.getElementById('case-scroll-container');
-    let driftLoader = () => {
+    const driftLoader = () => {
       initIntercomHelper();
       scrollContainer.removeEventListener('scroll', driftLoader);
     };
     scrollContainer.addEventListener('scroll', driftLoader);
-  }
+  },
 };
 </script>
 

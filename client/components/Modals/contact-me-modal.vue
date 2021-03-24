@@ -3,11 +3,18 @@
     <div class="fields-list">
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name required">Full Name</p>
-        <input @input="$v.fullName.$touch" type="text" :class="{ 'invalid': $v.fullName.$error }" class="modal-entry-field entry-field" placeholder="John Smith" v-model="fullName">
+        <input
+          v-model="fullName"
+          :class="{ invalid: $v.fullName.$error }"
+          type="text"
+          class="modal-entry-field entry-field"
+          placeholder="John Smith"
+          @input="$v.fullName.$touch"
+        />
         <!-- Erros -->
         <div v-if="$v.fullName.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.fullName.required">This field is required.</span>
-          <span class="modal-error-text error-text" v-if="!$v.fullName.maxLength">
+          <span v-if="!$v.fullName.required" class="modal-error-text error-text">This field is required.</span>
+          <span v-if="!$v.fullName.maxLength" class="modal-error-text error-text">
             Sorry, the number of characters in this field should not exceed 50.
           </span>
         </div>
@@ -15,10 +22,17 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Company</p>
-        <input @input="$v.company.$touch" type="text" :class="{ 'invalid': $v.company.$error }" class="modal-entry-field entry-field" placeholder="MyAwesomeCompany, Inc." v-model="company">
+        <input
+          v-model="company"
+          :class="{ invalid: $v.company.$error }"
+          type="text"
+          class="modal-entry-field entry-field"
+          placeholder="MyAwesomeCompany, Inc."
+          @input="$v.company.$touch"
+        />
         <!-- Erros -->
         <div v-if="$v.company.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.company.maxLength">
+          <span v-if="!$v.company.maxLength" class="modal-error-text error-text">
             Sorry, the number of characters in this field should not exceed 300.
           </span>
         </div>
@@ -26,11 +40,18 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name required">Work email</p>
-        <input @input="$v.email.$touch" type="text" :class="{ 'invalid': $v.email.$error }" class="modal-entry-field entry-field" placeholder="your@mail.com" v-model="email">
+        <input
+          v-model="email"
+          :class="{ invalid: $v.email.$error }"
+          type="text"
+          class="modal-entry-field entry-field"
+          placeholder="your@mail.com"
+          @input="$v.email.$touch"
+        />
         <!-- Erros -->
         <div v-if="$v.email.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.email.required">This field is required.</span>
-          <span class="modal-error-text error-text" v-if="!$v.email.email">
+          <span v-if="!$v.email.required" class="modal-error-text error-text">This field is required.</span>
+          <span v-if="!$v.email.email" class="modal-error-text error-text">
             Invalid email address. Please use your work email.
           </span>
         </div>
@@ -38,10 +59,17 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Phone number</p>
-        <input @input="phoneChangeHandler" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" :value="phoneNumber">
+        <input
+          :class="{ invalid: $v.phoneNumber.$error }"
+          :value="phoneNumber"
+          type="text"
+          class="modal-entry-field entry-field"
+          placeholder="+1 23X XXX-XXXX"
+          @input="phoneChangeHandler"
+        />
         <!-- Erros -->
         <div v-if="$v.phoneNumber.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.phoneNumber.phone">
+          <span v-if="!$v.phoneNumber.phone" class="modal-error-text error-text">
             Sorry, this field can only contain numbers and characters specific for phone numbers.
           </span>
         </div>
@@ -50,15 +78,15 @@
     </div>
     <FormCheckboxes
       ref="checkboxes"
-      v-on:getPrivacyCheckboxState="getPrivacyCheckboxState"
-      v-on:getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
-      :inputId="inputId"
+      :input-id="inputId"
+      @getPrivacyCheckboxState="getPrivacyCheckboxState"
+      @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
     />
     <UIButton
-      class="modal-button"
-      @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
       :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
       :loading="onSubmit"
+      class="modal-button"
+      @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
     >
       Сontact Me
     </UIButton>
@@ -74,28 +102,34 @@ import { phoneHandler } from '@/mixins/phoneHandler';
 
 export default {
   name: 'ContactMe',
-  mixins: [phoneHandler],
   components: {
     FormCheckboxes,
-    UIButton
+    UIButton,
   },
+
+  mixins: [phoneHandler],
   validations: {
     fullName: {
       required,
-      maxLength: maxLength(50)
+      maxLength: maxLength(50),
     },
+
     company: {
-      maxLength: maxLength(300)
+      maxLength: maxLength(300),
     },
+
     email: {
       required,
-      email
+      email,
     },
+
     phoneNumber: {
-      phone
+      phone,
     },
-    validationGroup: ['fullName', 'company', 'email', 'phoneNumber']
+
+    validationGroup: ['fullName', 'company', 'email', 'phoneNumber'],
   },
+
   data: () => ({
     modalName: 'contact-me-modal',
     fullName: null,
@@ -108,32 +142,40 @@ export default {
     onSubmit: false,
     subject: 'Marketing',
     form: null,
-    modalTitle: 'Mad Devs Website Forms'
+    modalTitle: 'Mad Devs Website Forms',
   }),
+
   mounted() {
-    this.$nuxt.$on('resetCheckboxesInForm', () => { // Reset checkboxes in form if user close modal
+    this.$nuxt.$on('resetCheckboxesInForm', () => {
+      // Reset checkboxes in form if user close modal
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
     });
   },
+
   methods: {
     getPrivacyCheckboxState(privacyState) {
       this.agreeWithPrivacyPolicy = privacyState;
     },
+
     getDiscountOffersCheckboxState(discountOffersState) {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
     },
+
     createLead() {
-      const data = [{
-        name: this.fullName,
-        custom_fields_values: [
-          {field_id: 261281, values: [{value: this.email}]}, // Email
-          {field_id: 261331, values: [{value: this.company}]}, // Company
-          {field_id: 261333, values: [{value: this.phoneNumber}]} // Phone
-        ]
-      }];
+      const data = [
+        {
+          name: this.fullName,
+          custom_fields_values: [
+            { field_id: 261281, values: [{ value: this.email }] }, // Email
+            { field_id: 261331, values: [{ value: this.company }] }, // Company
+            { field_id: 261333, values: [{ value: this.phoneNumber }] }, // Phone
+          ],
+        },
+      ];
       this.$store.dispatch('createNewLead', data);
     },
+
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
         this.onSubmit = true;
@@ -148,21 +190,25 @@ export default {
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
             subject: this.subject || '',
-            modalTitle: this.modalTitle
-          }
+            modalTitle: this.modalTitle,
+          },
         };
-        this.$store.dispatch('sendEmail', this.form).then(res => {
-          this.onSubmit = false;
-          // this.createLead();
-          this.resetForm();
-          if (res.status === 200) {
-            this.$parent.$emit('success');
-          }
-        }).catch(() => {
-          this.onSubmit = true;
-        });
+        this.$store
+          .dispatch('sendEmail', this.form)
+          .then(res => {
+            this.onSubmit = false;
+            // this.createLead();
+            this.resetForm();
+            if (res.status === 200) {
+              this.$parent.$emit('success');
+            }
+          })
+          .catch(() => {
+            this.onSubmit = true;
+          });
       }
     },
+
     resetForm() {
       this.$refs.checkboxes.reset();
       this.fullName = null;
@@ -171,7 +217,7 @@ export default {
       this.company = null;
       this.agreeWithPrivacyPolicy = false;
       this.agreeToGetMadDevsDiscountOffers = false;
-    }
-  }
+    },
+  },
 };
 </script>

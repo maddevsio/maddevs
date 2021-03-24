@@ -44,7 +44,7 @@ const PlaceholderAsterisk = {
     if (el) {
       el.removeEventListener('input', listenInputEvent);
     }
-  }
+  },
 };
 
 export default PlaceholderAsterisk;

@@ -2,41 +2,33 @@
   <section id="technologies-and-tools" class="technologies-and_tools">
     <div class="container">
       <div class="technologies-and_tools__content-wrap">
-        <h2 class="technologies-and_tools__main-title">
-          Technologies <span>&</span>&nbsp;<span>Tools</span>
-        </h2>
-        <div
-          class="tech_legend"
-          :class="(`tech_legend-${this.activeLegend}`)"
-        >
+        <h2 class="technologies-and_tools__main-title">Technologies <span>&</span>&nbsp;<span>Tools</span></h2>
+        <div :class="`tech_legend-${activeLegend}`" class="tech_legend">
           <div
             v-for="(item, key) in legend"
-            @click="selectLegend(`${item.value.replace(/\W/g, '').toLowerCase()}`)"
             :key="key"
+            :class="`legend-${item.value.replace(/\W/g, '').toLowerCase()}`"
             class="tech_legend__item"
-            :class="(`legend-${item.value.replace(/\W/g, '').toLowerCase()}`)"
+            @click="selectLegend(`${item.value.replace(/\W/g, '').toLowerCase()}`)"
           >
             {{ item.value }}
           </div>
         </div>
-        <div
-          class="tech_container"
-          :class="this.activeLegend"
-        >
+        <div :class="activeLegend" class="tech_container">
           <div
-            class="tech_item"
             v-for="(item, index) in technologies"
             :key="index"
-            :class="(`${item.technology}-${item.value} ${item.technology}`)"
+            :class="`${item.technology}-${item.value} ${item.technology}`"
+            class="tech_item"
           >
             <img
+              :data-src="require(`@/assets/img/Home/svg/technologies/${item.value}.svg`)"
+              :alt="item.title"
               width="26"
               height="26"
-              :data-src="require(`@/assets/img/Home/svg/technologies/${item.value}.svg`)"
               class="img_lazy"
-              :alt="item.title"
-            >
-            <span>{{item.title}}</span>
+            />
+            <span>{{ item.title }}</span>
           </div>
         </div>
       </div>
@@ -45,402 +37,404 @@
 </template>
 
 <script>
-
 export default {
   name: 'TechnologiesAndTools',
   data() {
     return {
       legend: [
         {
-          value: 'DevOps'
+          value: 'DevOps',
         },
         {
-          value: 'QA'
+          value: 'QA',
         },
         {
-          value: 'Backend'
+          value: 'Backend',
         },
         {
-          value: 'Frontend'
+          value: 'Frontend',
         },
         {
-          value: 'Mobile'
+          value: 'Mobile',
         },
         {
-          value: 'PM'
+          value: 'PM',
         },
         {
-          value: 'Infrastructure'
+          value: 'Infrastructure',
         },
         {
-          value: 'UI/UX'
-        }
+          value: 'UI/UX',
+        },
       ],
+
       technologies: [
         {
           title: 'Ansible',
           value: 'ansible',
-          technology: 'devops'
+          technology: 'devops',
         },
         {
           title: 'Terraform',
           value: 'terraform',
-          technology: 'devops'
+          technology: 'devops',
         },
         {
           title: 'CloudFormation',
           value: 'cloud-formation',
-          technology: 'devops'
+          technology: 'devops',
         },
         {
           title: 'Jenkins',
           value: 'jenkins',
-          technology: 'devops'
+          technology: 'devops',
         },
         {
           title: 'Bamboo',
           value: 'bamboo',
-          technology: 'devops'
+          technology: 'devops',
         },
         {
           title: 'GitlabCI',
           value: 'gitlab',
-          technology: 'devops'
+          technology: 'devops',
         },
         {
           title: 'TravisCI',
           value: 'travis-ci',
-          technology: 'devops'
+          technology: 'devops',
         },
         {
           title: 'ELK',
           value: 'elastic',
-          technology: 'devops'
+          technology: 'devops',
         },
         {
           title: 'CircleCI',
           value: 'circle-ci',
-          technology: 'devops'
+          technology: 'devops',
         },
         {
           title: 'Sentry',
           value: 'sentry',
-          technology: 'devops'
+          technology: 'devops',
         },
         {
           title: 'CloudWatch',
           value: 'cloud-watch',
-          technology: 'devops'
+          technology: 'devops',
         },
         {
           title: 'Prometheus',
           value: 'prometheus',
-          technology: 'devops'
+          technology: 'devops',
         },
         {
           title: 'AWS',
           value: 'aws',
-          technology: 'infrastructure'
+          technology: 'infrastructure',
         },
         {
           title: 'GCP',
           value: 'gcp',
-          technology: 'infrastructure'
+          technology: 'infrastructure',
         },
         {
           title: 'Digital Ocean',
           value: 'digital-ocean',
-          technology: 'infrastructure'
+          technology: 'infrastructure',
         },
         {
           title: 'Azure',
           value: 'azure',
-          technology: 'infrastructure'
+          technology: 'infrastructure',
         },
         {
           title: 'CloudNative',
           value: 'cloud-native',
-          technology: 'infrastructure'
+          technology: 'infrastructure',
         },
         {
           title: 'Heroku',
           value: 'heroku',
-          technology: 'infrastructure'
+          technology: 'infrastructure',
         },
         {
           title: 'Netlify',
           value: 'netlify',
-          technology: 'infrastructure'
+          technology: 'infrastructure',
         },
         {
           title: 'CloudFlare',
           value: 'cloudflare',
-          technology: 'infrastructure'
+          technology: 'infrastructure',
         },
         {
           title: 'Kotlin',
           value: 'kotlin',
-          technology: 'mobile'
+          technology: 'mobile',
         },
         {
           title: 'Java',
           value: 'java',
-          technology: 'mobile'
+          technology: 'mobile',
         },
         {
           title: 'Objective-C',
           value: 'obj-c',
-          technology: 'mobile'
+          technology: 'mobile',
         },
         {
           title: 'Swift',
           value: 'swift',
-          technology: 'mobile'
+          technology: 'mobile',
         },
         {
           title: 'IOS',
           value: 'apple',
-          technology: 'mobile'
+          technology: 'mobile',
         },
         {
           title: 'Android',
           value: 'android',
-          technology: 'mobile'
+          technology: 'mobile',
         },
         {
           title: 'Jira',
           value: 'jira',
-          technology: 'pm'
+          technology: 'pm',
         },
         {
           title: 'Slack',
           value: 'slack',
-          technology: 'pm'
+          technology: 'pm',
         },
         {
           title: 'Meet',
           value: 'meet',
-          technology: 'pm'
+          technology: 'pm',
         },
         {
           title: 'Zoom',
           value: 'zoom',
-          technology: 'pm'
+          technology: 'pm',
         },
         {
           title: 'Miro',
           value: 'miro',
-          technology: 'pm'
+          technology: 'pm',
         },
         {
           title: 'Trello',
           value: 'trello',
-          technology: 'pm'
+          technology: 'pm',
         },
         {
           title: 'Loom',
           value: 'loom',
-          technology: 'pm'
+          technology: 'pm',
         },
         {
           title: 'Jira Assistant',
           value: 'jira-assistant',
-          technology: 'pm'
+          technology: 'pm',
         },
         {
           title: 'Service Desk',
           value: 'service-desk',
-          technology: 'pm'
+          technology: 'pm',
         },
         {
           title: 'Basecamp',
           value: 'basecamp',
-          technology: 'pm'
+          technology: 'pm',
         },
         {
           title: 'Notion',
           value: 'notion',
-          technology: 'pm'
+          technology: 'pm',
         },
         {
           title: 'Zapier',
           value: 'zapier',
-          technology: 'pm'
+          technology: 'pm',
         },
         {
           title: 'Python',
           value: 'python',
-          technology: 'backend'
+          technology: 'backend',
         },
         {
           title: 'Go',
           value: 'go',
-          technology: 'backend'
+          technology: 'backend',
         },
         {
           title: 'Node.js',
           value: 'node',
-          technology: 'backend'
+          technology: 'backend',
         },
         {
           title: 'JavaScript',
           value: 'js',
-          technology: 'backend'
+          technology: 'backend',
         },
         {
           title: 'TypeScript',
           value: 'typescript',
-          technology: 'backend'
+          technology: 'backend',
         },
         {
           title: 'PHP',
           value: 'php',
-          technology: 'backend'
+          technology: 'backend',
         },
         {
           title: 'Ruby',
           value: 'ruby',
-          technology: 'backend'
+          technology: 'backend',
         },
         {
           title: 'C',
           value: 'c',
-          technology: 'backend'
+          technology: 'backend',
         },
         {
           title: 'C++',
           value: 'c-plus',
-          technology: 'backend'
+          technology: 'backend',
         },
         {
           title: 'Figma',
           value: 'figma',
-          technology: 'uiux'
+          technology: 'uiux',
         },
         {
           title: 'Adobe Suite',
           value: 'adobe',
-          technology: 'uiux'
+          technology: 'uiux',
         },
         {
           title: 'Sketch',
           value: 'sketch',
-          technology: 'uiux'
+          technology: 'uiux',
         },
         {
           title: 'InVision',
           value: 'invision',
-          technology: 'uiux'
+          technology: 'uiux',
         },
         {
           title: 'Zeplin',
           value: 'zeplin',
-          technology: 'uiux'
+          technology: 'uiux',
         },
         {
           title: 'Balsamic',
           value: 'balsamic',
-          technology: 'uiux'
+          technology: 'uiux',
         },
         {
           title: 'Principle',
           value: 'principle-app',
-          technology: 'uiux'
+          technology: 'uiux',
         },
         {
           title: 'PostCSS',
           value: 'post-css',
-          technology: 'frontend'
+          technology: 'frontend',
         },
         {
           title: 'TypeScript',
           value: 'typescript',
-          technology: 'frontend'
+          technology: 'frontend',
         },
         {
           title: 'Angular',
           value: 'angular',
-          technology: 'frontend'
+          technology: 'frontend',
         },
         {
           title: 'Webpack',
           value: 'webpack',
-          technology: 'frontend'
+          technology: 'frontend',
         },
         {
           title: 'Next.js',
           value: 'next',
-          technology: 'frontend'
+          technology: 'frontend',
         },
         {
           title: 'Nuxt.js',
           value: 'nuxt',
-          technology: 'frontend'
+          technology: 'frontend',
         },
         {
           title: 'JavaScript',
           value: 'js',
-          technology: 'frontend'
+          technology: 'frontend',
         },
         {
           title: 'React',
           value: 'react',
-          technology: 'frontend'
+          technology: 'frontend',
         },
         {
           title: 'Babel',
           value: 'babel',
-          technology: 'frontend'
+          technology: 'frontend',
         },
         {
           title: 'Vue',
           value: 'vue',
-          technology: 'frontend'
+          technology: 'frontend',
         },
         {
           title: 'SASS',
           value: 'sass',
-          technology: 'frontend'
+          technology: 'frontend',
         },
         {
           title: 'Jasmine',
           value: 'jasmine',
-          technology: 'qa'
+          technology: 'qa',
         },
         {
           title: 'Selenoid',
           value: 'selenoid',
-          technology: 'qa'
+          technology: 'qa',
         },
         {
           title: 'Appium',
           value: 'appium',
-          technology: 'qa'
+          technology: 'qa',
         },
         {
           title: 'Cucumber',
           value: 'cucumber',
-          technology: 'qa'
+          technology: 'qa',
         },
         {
           title: 'PyTest',
           value: 'pytest',
-          technology: 'qa'
+          technology: 'qa',
         },
         {
           title: 'Selenium',
           value: 'selenium',
-          technology: 'qa'
+          technology: 'qa',
         },
         {
           title: 'Selenium Grid',
           value: 'selenium-grid',
-          technology: 'qa'
-        }
+          technology: 'qa',
+        },
       ],
-      activeLegend: ''
+
+      activeLegend: '',
     };
   },
+
   methods: {
     selectLegend(e) {
       if (e === this.activeLegend) {
@@ -450,14 +444,17 @@ export default {
       }
       this.$nextTick(() => this.refreshImg());
     },
+
     refreshImg() {
       const lazySvg = [].slice.call(document.querySelectorAll('img.img_lazy'));
-      lazySvg.forEach(lazySvg => {
-        lazySvg.src = lazySvg.dataset.src;
-        lazySvg.classList.remove('img_lazy');
+      lazySvg.forEach(svg => {
+        /* eslint-disable */
+        svg.src = svg.dataset.src;
+        svg.classList.remove('img_lazy');
+        /* eslint-enable */
       });
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -496,7 +493,7 @@ $tech_legends: (
 
   &__item {
     margin-right: 31px;
-    color: #938F95;
+    color: #938f95;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.02em;
@@ -506,7 +503,7 @@ $tech_legends: (
     position: relative;
 
     &::before {
-      content: "";
+      content: '';
       display: inline-block;
       width: 16px;
       min-width: 16px;
@@ -516,7 +513,7 @@ $tech_legends: (
     }
 
     &::after {
-      content: "";
+      content: '';
       display: inline-block;
       position: absolute;
       width: 8px;
@@ -526,9 +523,9 @@ $tech_legends: (
       margin-right: 8px;
       top: 7px;
       left: 4px;
-      background: #938F95;
+      background: #938f95;
       opacity: 0;
-      transition: opacity .2s;
+      transition: opacity 0.2s;
     }
 
     &:last-child {
@@ -558,7 +555,7 @@ $tech_legends: (
     &__item {
       margin-right: 9px;
       margin-left: 9px;
-      color: #938F95;
+      color: #938f95;
       font-size: 12px;
       line-height: 18px;
       display: flex;
@@ -607,7 +604,7 @@ $tech_legends: (
     // selector based on class name
     &.#{$name} {
       .tech_item:not(.#{$name}) {
-        opacity: .4;
+        opacity: 0.4;
       }
     }
   }
@@ -621,7 +618,7 @@ $tech_legends: (
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition: opacity .2s linear;
+  transition: opacity 0.2s linear;
 
   @media screen and (max-width: 976px) {
     height: 74px;
