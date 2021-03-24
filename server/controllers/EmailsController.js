@@ -39,7 +39,6 @@ function index(req, res) {
   const { isValid, error } = validate(req);
   if(!isValid) return res.status(error.status).json(error);
   sendEmail(req, data => {
-    console.log(data);
     res.json(data);
   });
 }

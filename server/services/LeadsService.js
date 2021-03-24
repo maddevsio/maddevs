@@ -45,11 +45,9 @@ async function refreshCrmToken() {
 
 async function createNewLead(rawData, token) {
   const contact = await storeEntity(fromRawContact(rawData), 'contacts', token);
-  if(rawData.company) {
-    const company = await storeEntity(fromRawCompany(rawData), 'companies', token);
-    await linkCompanyWithContact({ company, contact }, token);
-  }
-  const lead = await storeEntity(fromRawLead(rawData, contact), 'leads', token);
+  const company = await storeEntity(fromRawCompany(rawData), 'companies', token);
+
+  const lead = await storeEntity(fromRawLead(rawData, contact, company), 'leads', token);
   if(rawData.description) await storeEntity(fromRawNote(rawData, lead), 'notes', token);
   return true;
 }
@@ -73,8 +71,10 @@ const buildCustomField = (field_id, value) => ({
 /**
  * Private fromRaw methods for transform data
  */
-const fromRawContact = ({ fullname: name, email, phone }) => {
+const fromRawContact = ({ fullname, email, phone }) => {
   const customFields = [];
+
+  const name = fullname;
   if(phone) customFields.push(buildCustomField(229497, phone));
   if(email) customFields.push(buildCustomField(229499, email));
 
@@ -88,11 +88,11 @@ const fromRawContact = ({ fullname: name, email, phone }) => {
 
 const fromRawCompany = ({ company }) => ([{ name: company }]);
 
-const fromRawLead = ({ fullname, company }, { id }) => ([
+const fromRawLead = ({ fullname, company }, { id: contactId }, { id: companyId}) => ([
   {
     name: `${company || fullname}`,
     price: 0,
-    _embedded: { contacts: [{ id }] }
+    _embedded: { contacts: [{ id: contactId }], companies: [{ id: companyId }] }
   }
 ]);
 
@@ -113,21 +113,6 @@ async function storeEntity(entity, entityType, token) {
 
   const response = await axios.post(url, entity, requestConfig);
   return getDataFromResponse(response, entityType);
-}
-
-async function linkCompanyWithContact({ company, contact }, token) {
-  const url = `${config.AMOCRM_URL}/api/v4/companies/${company.id}/link`;
-  const requestConfig = getRequestConfig(token);
-
-  const body = [
-    {
-      to_entity_id: contact.id,
-      to_entity_type: 'contacts'
-    }
-  ];
-
-  const response = await axios.post(url, body, requestConfig);
-  return getDataFromResponse(response, 'links');
 }
 
 
