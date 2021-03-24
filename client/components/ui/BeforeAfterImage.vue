@@ -1,5 +1,6 @@
 <template>
   <div
+    data-testid="track-img"
     ref="trackContainer"
     class="comparsion-container"
     @mousemove="trackLocation"
@@ -149,7 +150,7 @@ export default {
     &-view {
       position: relative;
     }
-    
+
     &-image_before {
       z-index: 2;
       position: absolute;
@@ -164,7 +165,7 @@ export default {
     &-image_after {
       z-index: 1;
       width: 100%;
-      height: auto;      
+      height: auto;
     }
 
     @media screen and (max-width: 768px) {
