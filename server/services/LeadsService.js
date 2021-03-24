@@ -2,6 +2,12 @@ const axios = require('axios');
 const config = require('../config');
 const { getToken, saveToken, tokensTypes } = require('./TokenService');
 
+const customFieldIds = {
+  phone: 229497,
+  email: 229499,
+  description: Number(config.AMOCRM_DESCRIPTION_FIELD_ID)
+};
+
 const storeURLs = {
   contacts: `${config.AMOCRM_URL}/api/v4/contacts`,
   companies: `${config.AMOCRM_URL}/api/v4/companies`,
@@ -46,9 +52,7 @@ async function refreshCrmToken() {
 async function createNewLead(rawData, token) {
   const contact = await storeEntity(fromRawContact(rawData), 'contacts', token);
   const company = await storeEntity(fromRawCompany(rawData), 'companies', token);
-
-  const lead = await storeEntity(fromRawLead(rawData, contact, company), 'leads', token);
-  if(rawData.description) await storeEntity(fromRawNote(rawData, lead), 'notes', token);
+  await storeEntity(fromRawLead(rawData, contact, company), 'leads', token);
   return true;
 }
 
@@ -75,8 +79,8 @@ const fromRawContact = ({ fullname, email, phone }) => {
   const customFields = [];
 
   const name = fullname;
-  if(phone) customFields.push(buildCustomField(229497, phone));
-  if(email) customFields.push(buildCustomField(229499, email));
+  if(phone) customFields.push(buildCustomField(customFieldIds.phone, phone));
+  if(email) customFields.push(buildCustomField(customFieldIds.email, email));
 
   return [
     {
@@ -88,13 +92,19 @@ const fromRawContact = ({ fullname, email, phone }) => {
 
 const fromRawCompany = ({ company }) => ([{ name: company }]);
 
-const fromRawLead = ({ fullname, company }, { id: contactId }, { id: companyId}) => ([
-  {
-    name: `${company || fullname}`,
-    price: 0,
-    _embedded: { contacts: [{ id: contactId }], companies: [{ id: companyId }] }
-  }
-]);
+const fromRawLead = ({ fullname, company, description }, { id: contactId }, { id: companyId }) => {
+  const customFields = [];
+  if(description) customFields.push(buildCustomField(customFieldIds.description, description));
+
+  return [
+    {
+      name: `${company || fullname}`,
+      price: 0,
+      _embedded: { contacts: [{ id: contactId }], companies: [{ id: companyId }] },
+      custom_fields_values: [...customFields]
+    }
+  ];
+};
 
 const fromRawNote = ({ description: text }, { id: entity_id }) => ([
   {

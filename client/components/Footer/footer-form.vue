@@ -29,7 +29,7 @@
         <!-- Erros -->
         <div v-if="$v.description.$dirty">
           <span class="modal-error-text error-text" v-if="!$v.description.maxLength">
-            Sorry, the number of characters in this field should not exceed 500.
+            Sorry, the number of characters in this field should not exceed 256.
           </span>
         </div>
         <!-- End Erros -->
@@ -80,7 +80,7 @@ export default {
       email
     },
     description: {
-      maxLength: maxLength(500)
+      maxLength: maxLength(256)
     },
     validationGroup: ['fullname', 'email', 'description']
   },
