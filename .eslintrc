@@ -1,0 +1,40 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "extends": [
+    "plugin:vue/recommended",
+    "plugin:prettier-vue/recommended"
+  ],
+  "rules": {
+    "no-unused-vars": [
+      "error"
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "import/prefer-default-export": 0,
+    "camelcase": "off",
+    "no-console": "off",
+    "no-debugger": "off",
+    "prettier-vue/prettier": [
+      "error",
+      {
+        "tabWidth": 2,
+        "printWidth": 120,
+        "singleQuote": true,
+        "semi": true,
+        "trailingComma": "all",
+        "tabs": false,
+        "arrowParens": "avoid"
+      }
+    ]
+  }
+}
