@@ -26,7 +26,6 @@ export default {
 
   .success-message {
     background-color: $modal-bg-color;
-    padding: 30px 60px;
 
     &__title {
       padding-top: 28px;
@@ -48,12 +47,6 @@ export default {
     .close-modal {
       top: 29px;
       right: 17px;
-    }
-  }
-
-  @media only screen and (max-height: 700px) {
-    .success-message {
-      padding: 30px 40px;
     }
   }
 </style>
