@@ -5,14 +5,14 @@
 </template>
 
 <script>
-import initDriftHelper from '@/helpers/initDrift';
+import initIntercomHelper from '@/helpers/initIntercom';
 
 export default {
   name: 'GoDeeLayout',
   mounted() {
     const scrollContainer = document.getElementById('case-scroll-container');
     let driftLoader = () => {
-      initDriftHelper();
+      initIntercomHelper();
       scrollContainer.removeEventListener('scroll', driftLoader);
     };
     scrollContainer.addEventListener('scroll', driftLoader);

@@ -21,7 +21,8 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'yandex-verification', content: '1cce4e9bf6ebcdff' }
+      { name: 'yandex-verification', content: '1cce4e9bf6ebcdff' },
+      { name: 'facebook-domain-verification', content: 'gjmbb6g9th5cxl6awr0dx598t7ruz3' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

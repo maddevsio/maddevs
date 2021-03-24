@@ -1,81 +1,60 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { render, fireEvent, screen } from '@testing-library/vue';
 import UIButton from '@/components/ui/UIButton';
 
-describe('Ui button', () => {
-  let wrapper;
-
-  beforeEach(() => {
-    wrapper = mount(UIButton, {
-      propsData: {
-        loading: false,
-        disabled: false
-      },
+describe('UIButton component', () => {
+  test('should render correctly with slot', () => {
+    const { container } = render(UIButton, {
       slots: {
-        default: 'button text'
+        default: 'It is a button'
       }
     });
+
+    expect(screen.getByText('It is a button')).not.toBeNull();
+    expect(container).toMatchSnapshot();    
   });
 
-  // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
-  
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-  // --------------------- //
+  test('should render correctly without slot', () => {
+    const { container } = render(UIButton);
 
-  test('Slot should set text for button', () => {
-    expect(wrapper.html()).toContain('button text');
+    expect(screen.queryByText('It is a button')).toBeNull();
+    expect(container).toMatchSnapshot(); 
   });
 
-  test('onClick should call $emit', () => {
-    wrapper.vm.onClick();
-    expect(wrapper.emitted().click).toBeTruthy();
+  test('should render correctly with loading prop', () => {
+    const { container } = render(UIButton, {
+      props: {
+        loading: true
+      }
+    });
+
+    expect(screen.queryByText('Waiting...')).not.toBeNull();
+    expect(container).toMatchSnapshot(); 
   });
 
-  test('if this.$props.disabled equal false, onClick should not call $emit and button should contain new class', () => {
-    wrapper = mount(UIButton, {
-      propsData: {
-        loading: false,
+  test('should correctly handle click', async () => {
+    const { emitted } = render(UIButton, {
+      slots: {
+        default: 'Button'
+      }
+    });
+
+    const btn = screen.getByText('Button');
+    await fireEvent.click(btn);
+    expect(emitted().click.length).toBe(1);
+  });
+
+  test('should not handle click if disabled', async () => {
+    const { emitted } = render(UIButton, {
+      props: {
         disabled: true
-      }
-    });
-    wrapper.vm.onClick();
-    expect(wrapper.emitted().click).toBeFalsy();
-
-    const button = wrapper.find('.ui-button');
-    expect(button.classes()).toContain('ui-button--disabled');
-  });
-
-  test('Button should contain span with text Waiting...', () => {
-    wrapper = mount(UIButton, {
-      propsData: {
-        loading: true,
-        disabled: false
       },
       slots: {
-        default: 'Slot text'
+        default: 'Button'
       }
     });
 
-    expect(wrapper.find('span').text()).toEqual('Waiting...');
-  });
-
-  test('Button should contain slot text', () => {
-    wrapper = mount(UIButton, {
-      propsData: {
-        loading: false,
-        disabled: false
-      },
-      slots: {
-        default: 'Slot text'
-      }
-    });
-
-    expect(wrapper.text()).toEqual('Slot text');
+    const btn = screen.getByText('Button');
+    await fireEvent.click(btn);
+    expect(emitted().click).not.toBeDefined();
   });
 });
