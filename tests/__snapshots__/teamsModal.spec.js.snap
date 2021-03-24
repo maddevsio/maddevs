@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Teams Modal renders correctly 1`] = `
+exports[`teams Modal renders correctly 1`] = `
 <div
   class="form"
 >
@@ -67,7 +67,7 @@ exports[`Teams Modal renders correctly 1`] = `
       <div
         class="radio-buttons__field-name field-name required"
       >
-        Expected team size​
+        Expected team size
       </div>
        
       <div
@@ -165,7 +165,8 @@ exports[`Teams Modal renders correctly 1`] = `
       class="form-checkbox-label required"
       for="privacy-policy-teams"
     >
-      I confirm that I have read and accepted 
+      I confirm that I have read and accepted
+    
       <div>
         Mad Devs’
       </div>
@@ -193,11 +194,13 @@ exports[`Teams Modal renders correctly 1`] = `
       class="form-checkbox-label"
       for="marketing-communications-teams"
     >
-      I agree to get 
+      I agree to get
+    
       <div>
         Mad Devs’
       </div>
-       discount offers and other marketing communications.
+      
+    discount offers and other marketing communications.
     
       <input
         class="form-checkbox-input"

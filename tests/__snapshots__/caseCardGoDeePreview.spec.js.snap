@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardGoDeePreview renders correctly 1`] = `
+exports[`cardGoDeePreview renders correctly 1`] = `
 <div
   class="card-content card-content_"
 >

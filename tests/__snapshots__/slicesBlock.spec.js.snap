@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Slice block component Renders correctly 1`] = `
+exports[`slice block component renders correctly 1`] = `
 <section>
   <section
     class=""

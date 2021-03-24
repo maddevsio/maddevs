@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Meet Our Experts renders correctly 1`] = `
+exports[`meet Our Experts renders correctly 1`] = `
 <section
   class="meet-our_experts"
   id="meet-our-experts"

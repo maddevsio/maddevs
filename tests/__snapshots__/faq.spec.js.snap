@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FAQ renders correctly 1`] = `
+exports[`fAQ renders correctly 1`] = `
 <section
   class="faq"
   id="faq"
@@ -29,7 +29,9 @@ exports[`FAQ renders correctly 1`] = `
         class="faq__sec-title faq__sec-title-first"
         id="how-many-people-work-at-your-company?"
       >
+        
         How many people work at your company?
+      
       </h2>
        
       <p
@@ -40,7 +42,8 @@ exports[`FAQ renders correctly 1`] = `
         >
           Mad Devs
         </span>
-         currently is a 120+ person strong team of rock stars who are on a mission to deliver value to 
+         currently is a 120+ person strong team of rock stars who are on a
+        mission to deliver value to 
         <span
           class="faq__nowrap"
         >
@@ -54,14 +57,17 @@ exports[`FAQ renders correctly 1`] = `
         class="faq__sec-title"
         id="what-time-zone-does-your-team-operate-in?"
       >
+        
         What time zone does your team operate in?
+      
       </h2>
        
       <p
         class="faq__paragraph"
       >
         
-        We generally work in +6 and +3 UTC from 9 AM to 6 PM, but we have early birds and night owls allowing us to adjust to customers from the US, the UK, South East Asia, and Oceania.
+        We generally work in +6 and +3 UTC from 9 AM to 6 PM, but we have early birds and night owls allowing us to
+        adjust to customers from the US, the UK, South East Asia, and Oceania.
       
       </p>
        
@@ -69,7 +75,9 @@ exports[`FAQ renders correctly 1`] = `
         class="faq__paragraph faq__paragraph-margin"
       >
         
-        Our development workflows are devised around asynchronous communication, leveraging automatic reporting drilled down to every task instance or team member. Daily standups, work logs, and 
+        Our development workflows are devised around asynchronous communication, leveraging automatic reporting
+        drilled down to every task instance or team member. Daily standups, work logs, and
+        
         <span
           class="faq__nowrap"
         >
@@ -83,20 +91,24 @@ exports[`FAQ renders correctly 1`] = `
         class="faq__sec-title"
         id="what-types-of-projects-you-do-not-work-on?"
       >
+        
         What types of projects you do NOT work on?
+      
       </h2>
        
       <p
         class="faq__paragraph"
       >
         
-        Mad Devs workflow is dedicated to the creation and maintenance of 
+        Mad Devs workflow is dedicated to the creation and maintenance of
+        
         <span
           class="faq__nowrap"
         >
           high-quality
         </span>
-        , scalable systems intended for heavy workloads. We can’t help with requests for landing pages and 
+        , scalable systems intended for heavy workloads. We can’t help
+        with requests for landing pages and 
         <span
           class="faq__nowrap"
         >
@@ -110,14 +122,17 @@ exports[`FAQ renders correctly 1`] = `
         class="faq__sec-title"
         id="where-can-i-find-the-project-portfolio-of-your-company?"
       >
+        
         Where can I find the project portfolio of your company?
+      
       </h2>
        
       <p
         class="faq__paragraph"
       >
         
-        Since 2016, our team has delivered to customers 50+ projects in FinTech, Transportation, HealthTech, AdTech, EdTech, and 
+        Since 2016, our team has delivered to customers 50+ projects in FinTech, Transportation, HealthTech, AdTech,
+        EdTech, and 
         <span
           class="faq__nowrap"
         >
@@ -137,13 +152,16 @@ exports[`FAQ renders correctly 1`] = `
         >
           Mad Devs
         </span>
-         team has worked with Clutch.co, Teacherly, Guardrails, GoDee, 
+         team has worked with Clutch.co, Teacherly, Guardrails, GoDee,
+        
         <span
           class="faq__nowrap"
         >
           Sir John Monash Centre
         </span>
-        , Eatigo, Alfabank, Admitad, Triggermesh, and many other companies ensuring that hundreds of thousands of people enjoy apps and services they use on a daily basis.
+        , Eatigo, Alfabank, Admitad, Triggermesh, and many
+        other companies ensuring that hundreds of thousands of people enjoy apps and services they use on a daily
+        basis.
       
       </p>
        
@@ -159,6 +177,7 @@ exports[`FAQ renders correctly 1`] = `
         class="faq__sec-title"
         id="what-details-do-you-need-from-me-to-discuss-my-project-&-start-work?"
       >
+        
         What details do you need from me to discuss my 
         <span
           class="faq__nowrap"
@@ -166,13 +185,16 @@ exports[`FAQ renders correctly 1`] = `
           project & start
         </span>
          work?
+      
       </h2>
        
       <p
         class="faq__paragraph"
       >
         
-        Simply submit your project idea to us via our contact form. We will contact you to clarify further requirements and prepare the project time & cost estimates. For more details, you can get in touch with our delivery manager 
+        Simply submit your project idea to us via our contact form. We will contact you to clarify further
+        requirements and prepare the project time & cost estimates. For more details, you can get in touch with our
+        delivery manager 
         <span
           class="faq__nowrap"
         >
@@ -185,7 +207,8 @@ exports[`FAQ renders correctly 1`] = `
         >
           tamaramun@maddevs.io
         </a>
-        , or schedule a meeting at 
+        , or schedule a meeting at
+        
         <a
           class="faq__link"
           href="https://calendly.com/tamaramun"
@@ -203,20 +226,26 @@ exports[`FAQ renders correctly 1`] = `
         class="faq__sec-title"
         id="how-much-does-software-development-cost?-how-do-you-charge?"
       >
+        
         How much does software development cost? How do you charge?
+      
       </h2>
        
       <p
         class="faq__paragraph"
       >
         
-        Our pricing has always been transparent. We charge our customers on a 
+        Our pricing has always been transparent. We charge our customers on a
+        
         <span
           class="faq__nowrap"
         >
           ‘Time & Material’
         </span>
-         basis which makes the costs predictable as there are known rates for each specialist, from developer to PM. This ensures great control over budget and provides the required level of flexibility as the projects’ scope can be easily corrected on the go. Thus, in the end, together we deliver a product that truly solves 
+         basis which makes the costs predictable as there are known
+        rates for each specialist, from developer to PM. This ensures great control over budget and provides the
+        required level of flexibility as the projects’ scope can be easily corrected on the go. Thus, in the end,
+        together we deliver a product that truly solves 
         <span
           class="faq__nowrap"
         >
@@ -237,7 +266,10 @@ exports[`FAQ renders correctly 1`] = `
         class="faq__paragraph"
       >
         
-        You will have full control over your budget with our detailed monthly invoice. Weekly and daily reports cover the team’s contribution to your project in addition to individual performance reports that tell you what each of the specialists you hired has accomplished. Thus, with all information in your hands, the right adjustments in priorities of cost control factors can be implemented.
+        You will have full control over your budget with our detailed monthly invoice. Weekly and daily reports cover
+        the team’s contribution to your project in addition to individual performance reports that tell you what each
+        of the specialists you hired has accomplished. Thus, with all information in your hands, the right adjustments
+        in priorities of cost control factors can be implemented.
       
       </p>
        
@@ -245,7 +277,9 @@ exports[`FAQ renders correctly 1`] = `
         class="faq__sec-title"
         id="how-do-you-ensure-security-for-confidential-information?-do-you-work-under-nda?"
       >
+        
         How do you ensure security for confidential information? Do you work under NDA?
+      
       </h2>
        
       <p
@@ -256,13 +290,16 @@ exports[`FAQ renders correctly 1`] = `
         >
           Mad Devs
         </span>
-         always works under the NDA of our own, however, if you have a 
+         always works under the NDA of our own, however, if you have a
+        
         <span
           class="faq__nowrap"
         >
           non-disclosure
         </span>
-         agreement on your side, we can consider your contract, too. Please read more about work under NDA in the corresponding section of our website: 
+         agreement on your side, we can consider your contract, too.
+        Please read more about work under NDA in the corresponding section of our website:
+        
         <a
           class="faq__link"
           href="https://maddevs.io/nda/"
@@ -276,14 +313,24 @@ exports[`FAQ renders correctly 1`] = `
         class="faq__sec-title"
         id="how-do-you-mitigate-the-risks-related-to-intellectual-property-ownership?"
       >
+        
         How do you mitigate the risks related to intellectual property ownership?
+      
       </h2>
        
       <p
         class="faq__paragraph"
       >
-        
         Intellectual Property is wholly owned by you and your company.
+      </p>
+       
+      <p
+        class="faq__paragraph faq__paragraph-margin"
+      >
+        
+        After you sign a contract with us, you will become the owner of the repository, the project environment,
+        Slack, hosting, and etc. The team only manages this and adjusts the processes in accordance with the
+        regulations of the company.
       
       </p>
        
@@ -291,15 +338,8 @@ exports[`FAQ renders correctly 1`] = `
         class="faq__paragraph faq__paragraph-margin"
       >
         
-        After you sign a contract with us, you will become the owner of the repository, the project environment, Slack, hosting, and etc. The team only manages this and adjusts the processes in accordance with the regulations of the company.
-      
-      </p>
-       
-      <p
-        class="faq__paragraph faq__paragraph-margin"
-      >
-        
-        You have these accesses from the very beginning of the project, but it is important to remember that according to the contract you become a full owner only after paying for all the hours worked by the team.
+        You have these accesses from the very beginning of the project, but it is important to remember that according
+        to the contract you become a full owner only after paying for all the hours worked by the team.
       
       </p>
        
@@ -307,14 +347,17 @@ exports[`FAQ renders correctly 1`] = `
         class="faq__sec-title"
         id="what-if-my-question-is-not-answered-on-this-page?"
       >
+        
         What if my question is not answered on this page?
+      
       </h2>
        
       <p
         class="faq__paragraph"
       >
         
-        Please don’t hesitate to contact us directly with any questions you may have. You have a number of options to use:
+        Please don’t hesitate to contact us directly with any questions you may have. You have a number of options to
+        use:
       
       </p>
        
@@ -330,13 +373,15 @@ exports[`FAQ renders correctly 1`] = `
         <li
           class="faq__list"
         >
+          
           Direct mail to our Delivery Manager 
           <span
             class="faq__nowrap"
           >
             Tamara Mun
           </span>
-           via 
+           via
+          
           <a
             class="faq__link"
             href="mailto:tamaramun@maddevs.io"
@@ -354,6 +399,7 @@ exports[`FAQ renders correctly 1`] = `
         <li
           class="faq__list"
         >
+          
           Phone Call via 
           <a
             class="faq__link faq__link"
@@ -376,8 +422,7 @@ exports[`FAQ renders correctly 1`] = `
           >
             Facebook Messenger
           </a>
-          ,
-          
+          , 
           <a
             class="faq__link faq__link"
             href="https://t.me/MadDevs_io"
@@ -394,8 +439,8 @@ exports[`FAQ renders correctly 1`] = `
           >
             Whatsapp
           </a>
-          ,
-          or 
+          , or
+          
           <a
             class="faq__link faq__link"
             href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"

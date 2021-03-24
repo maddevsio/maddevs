@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Renders correctly 1`] = `
+exports[`cuNavigation renders correctly 1`] = `
 <div
   class="cluster-navigation"
 >

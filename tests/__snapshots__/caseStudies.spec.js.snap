@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CaseStudies component renders correctly 1`] = `
+exports[`caseStudies component renders correctly 1`] = `
 <section
   class="case-studies"
   id="case-studies"
@@ -15,7 +15,8 @@ exports[`CaseStudies component renders correctly 1`] = `
         
         Case 
         <!---->
-         Studies
+        
+        Studies
       
       </h2>
        

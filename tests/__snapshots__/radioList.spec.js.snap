@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Radio buttons list renders correctly 1`] = `
+exports[`radio buttons list renders correctly 1`] = `
 <div
   class="radio-buttons"
 >
   <div
     class="radio-buttons__field-name field-name required"
   >
-    field name​
+    field name
   </div>
    
   <div

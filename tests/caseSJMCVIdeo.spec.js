@@ -1,6 +1,8 @@
 import { mount } from '@vue/test-utils';
 import SJMCVideo from '@/components/Cases/SJMCVideo';
 
+global.document.exitFullscreen = () => {};
+
 describe('sJMCVideo', () => {
   let wrapper;
   const VueVideoStub = {
