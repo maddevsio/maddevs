@@ -6,18 +6,18 @@
 
 <script>
 export default {
-  name: 'ListNumberedBox'
-};
+  name: 'ListNumberedBox',
+}
 </script>
 
 <style scoped lang="scss">
-  @import '../../assets/styles/cases/_mixins';
+@import '../../assets/styles/cases/_mixins';
 
-  .case-list_numbered {
-    padding: 0;
-    counter-reset: section;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-  }
+.case-list_numbered {
+  padding: 0;
+  counter-reset: section;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
 </style>

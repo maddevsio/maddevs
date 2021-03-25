@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Remote tech staff content renders correctly 1`] = `
+exports[`remote tech staff content renders correctly 1`] = `
 <div
   class="remoteTechStaffContent__tech-staff remoteTechStaffContent__tech-staff-title"
 >

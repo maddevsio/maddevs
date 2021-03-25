@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Code block slice component Renders correctly 1`] = `
+exports[`code block slice component renders correctly 1`] = `
 <div
   class="post-part single"
 >

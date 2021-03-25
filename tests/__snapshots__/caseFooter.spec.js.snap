@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer renders correctly 1`] = `
+exports[`footer renders correctly 1`] = `
 <section
   class="case_footer container_full"
 >
@@ -13,6 +13,7 @@ exports[`Footer renders correctly 1`] = `
    
   <a
     class="case_next-project-button"
+    href=""
   >
     Read next project
   </a>

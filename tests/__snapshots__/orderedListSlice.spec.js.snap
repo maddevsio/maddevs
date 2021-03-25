@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OrderedListSlice component renders correctly 1`] = `
+exports[`orderedListSlice component renders correctly 1`] = `
 <ol
   class="case-list_numbered"
 >

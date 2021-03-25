@@ -1,3 +1,4 @@
+/* eslint-disable */
 const puppeteer = require('puppeteer');
 
 async function startBrowser() {
@@ -7,7 +8,7 @@ async function startBrowser() {
     browser = await puppeteer.launch({
       headless: true,
       args: ['--disable-setuid-sandbox', '--no-sandbox', '--disable-extensions'],
-      ignoreHTTPSErrors: true
+      ignoreHTTPSErrors: true,
     });
   } catch (err) {
     console.log('Could not create a browser instance => : ', err);
@@ -16,5 +17,5 @@ async function startBrowser() {
 }
 
 module.exports = {
-  startBrowser
+  startBrowser,
 };

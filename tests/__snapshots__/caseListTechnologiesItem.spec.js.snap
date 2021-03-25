@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`List technologies item renders correctly 1`] = `
+exports[`list technologies item renders correctly 1`] = `
 <li
   class="case_technologies-item"
 >

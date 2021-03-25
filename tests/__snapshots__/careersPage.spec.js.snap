@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Careers page renders correctly 1`] = `
+exports[`careers page renders correctly 1`] = `
 <main
   class="main"
 >
@@ -16,15 +16,19 @@ exports[`Careers page renders correctly 1`] = `
         <h1
           class="banner__banner-main_title banner-main_title"
         >
-          Look! 
+          
+        Look! 
           <br />
-           A new 
+          
+        A new 
           <span>
             Mad Devs'
           </span>
            
           <br />
-           ranger is here!
+          
+        ranger is here!
+      
         </h1>
          
         <div
@@ -86,7 +90,8 @@ exports[`Careers page renders correctly 1`] = `
             
           You can also consider me for 
             <br />
-             your other
+            
+          your other
         
           </h2>
            
@@ -178,7 +183,8 @@ exports[`Careers page renders correctly 1`] = `
             
           To get more information on my 
             <br />
-             skills, please
+            
+          skills, please
         
           </h2>
            
@@ -224,7 +230,7 @@ exports[`Careers page renders correctly 1`] = `
                     for="file"
                   >
                     
-   find attached my CV
+    find attached my CV
                   </label>
                 </div>
                  

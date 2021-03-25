@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer renders correctly 1`] = `
+exports[`footer renders correctly 1`] = `
 <footer
   class="footer /"
 >

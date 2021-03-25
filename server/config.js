@@ -1,4 +1,6 @@
+/* eslint-disable */
 const dotenv = require('dotenv');
+
 dotenv.config();
 
 // Amo CRM
@@ -21,5 +23,5 @@ module.exports = {
   AMOCRM_REDIRECT_URI,
   API_USER_ID,
   API_KEY,
-  TOKEN_STORAGE
+  TOKEN_STORAGE,
 };

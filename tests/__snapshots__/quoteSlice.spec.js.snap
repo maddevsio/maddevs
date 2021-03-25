@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`QuoteSlice component renders correctly 1`] = `
+exports[`quoteSlice component renders correctly 1`] = `
 <div
   class="post-part single"
 >

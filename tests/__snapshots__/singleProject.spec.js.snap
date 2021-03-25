@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CaseStudies component renders correctly 1`] = `
+exports[`caseStudies component renders correctly 1`] = `
 <a
   class="single-project"
   href="/case-studies/godee/"

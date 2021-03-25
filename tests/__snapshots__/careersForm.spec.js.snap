@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CareersForm component renders correctly 1`] = `
+exports[`careersForm component renders correctly 1`] = `
 <section
   class="careers"
   id="careers"
@@ -53,7 +53,8 @@ exports[`CareersForm component renders correctly 1`] = `
           
           You can also consider me for 
           <br />
-           your other
+          
+          your other
         
         </h2>
          
@@ -92,7 +93,8 @@ exports[`CareersForm component renders correctly 1`] = `
           
           To get more information on my 
           <br />
-           skills, please
+          
+          skills, please
         
         </h2>
          
