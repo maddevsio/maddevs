@@ -1,18 +1,18 @@
-import {
-  mount
-} from '@vue/test-utils';
-import CuNavigation from '../client/components/Blog/CuNavigation';
+import { mount } from '@vue/test-utils'
+import CuNavigation from '../client/components/Blog/CuNavigation'
 
-describe('', () => {
-  let wrapper;
+describe('cuNavigation', () => {
+  let wrapper
 
   const clusterPosts = [
     {
-      chapter_name: [{
-        spans: [],
-        text: 'Chapter 1',
-        type: 'heading1'
-      }],
+      chapter_name: [
+        {
+          spans: [],
+          text: 'Chapter 1',
+          type: 'heading1',
+        },
+      ],
       cu_post: {
         id: 'YAGi7REAACMAgV8d',
         isBroken: false,
@@ -21,15 +21,17 @@ describe('', () => {
         slug: 'adadadad',
         tags: [],
         type: 'customer_university',
-        uid: 'cu-test'
-      }
+        uid: 'cu-test',
+      },
     },
     {
-      chapter_name: [{
-        spans: [],
-        text: 'Chapter 2',
-        type: 'heading1'
-      }],
+      chapter_name: [
+        {
+          spans: [],
+          text: 'Chapter 2',
+          type: 'heading1',
+        },
+      ],
       cu_post: {
         id: 'YAGi7REAACMAgV8d',
         isBroken: false,
@@ -38,10 +40,10 @@ describe('', () => {
         slug: 'adadadadaa',
         tags: [],
         type: 'customer_university',
-        uid: 'cu-test-2'
-      }
-    }
-  ];
+        uid: 'cu-test-2',
+      },
+    },
+  ]
 
   beforeEach(() => {
     wrapper = mount(CuNavigation, {
@@ -52,24 +54,24 @@ describe('', () => {
           items: clusterPosts,
           primary: {
             cluster_name: 'Pricing strategies in custom software development',
-            read_more_text: 'Read more about pricing strategies'
-          }
+            read_more_text: 'Read more about pricing strategies',
+          },
         },
-        id: '123qweasd'
+        id: '123qweasd',
       },
       mocks: {
         $prismic: {
-          asText: text => text[0].text
-        }
-      }
-    });
-  });
+          asText: text => text[0].text,
+        },
+      },
+    })
+  })
 
-  test('Is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
-  test('Renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-});
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

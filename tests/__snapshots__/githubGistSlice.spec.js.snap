@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Github gist component renders correctly 1`] = `
+exports[`github gist component renders correctly 1`] = `
 <div>
   <vue-embed-gist-stub
     file="file.php"

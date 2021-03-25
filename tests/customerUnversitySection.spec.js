@@ -1,27 +1,25 @@
-import {
-  mount
-} from '@vue/test-utils';
-import CustomerUniversitySection from '../client/components/Blog/CustomerUniversitySection';
+import { mount } from '@vue/test-utils'
+import CustomerUniversitySection from '../client/components/Blog/CustomerUniversitySection'
 
-describe('Customer University section component', () => {
-  let wrapper;
+describe('customer University section component', () => {
+  let wrapper
 
   beforeEach(() => {
     wrapper = mount(CustomerUniversitySection, {
       stubs: ['prismic-image'],
       mocks: {
         $prismic: {
-          asText: smth => ''
-        }
-      }
-    });
-  });
+          asText: () => '',
+        },
+      },
+    })
+  })
 
-  test('Is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
-  test('Renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-});
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

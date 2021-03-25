@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Get your trusted it partner modal renders correctly 1`] = `
+exports[`get your trusted it partner modal renders correctly 1`] = `
 <div
   class="form"
 >
@@ -87,7 +87,8 @@ exports[`Get your trusted it partner modal renders correctly 1`] = `
       class="form-checkbox-label required"
       for="privacy-policy-get-your-trusted-it-partner"
     >
-      I confirm that I have read and accepted 
+      I confirm that I have read and accepted
+    
       <div>
         Mad Devs’
       </div>
@@ -115,11 +116,13 @@ exports[`Get your trusted it partner modal renders correctly 1`] = `
       class="form-checkbox-label"
       for="marketing-communications-get-your-trusted-it-partner"
     >
-      I agree to get 
+      I agree to get
+    
       <div>
         Mad Devs’
       </div>
-       discount offers and other marketing communications.
+      
+    discount offers and other marketing communications.
     
       <input
         class="form-checkbox-input"

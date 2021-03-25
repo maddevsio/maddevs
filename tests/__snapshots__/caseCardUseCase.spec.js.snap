@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardUseCase renders correctly 1`] = `
+exports[`cardUseCase renders correctly 1`] = `
 <div
   class="card-use-case"
 >

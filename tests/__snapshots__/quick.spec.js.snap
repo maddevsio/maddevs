@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Quick Project Start renders correctly 1`] = `
+exports[`quick Project Start renders correctly 1`] = `
 <section
   class="quickProjectStart"
   id="quickProjectStart"
@@ -123,7 +123,9 @@ exports[`Quick Project Start renders correctly 1`] = `
           <p
             class="quickProjectStart__description"
           >
+            
             We will provide you with our free, non-binding bid or a tailored proposal.
+          
           </p>
         </div>
       </div>
@@ -192,7 +194,9 @@ exports[`Quick Project Start renders correctly 1`] = `
           <p
             class="quickProjectStart__description"
           >
+            
             You will get to know the team and we’ll start the project work.
+          
           </p>
         </div>
       </div>

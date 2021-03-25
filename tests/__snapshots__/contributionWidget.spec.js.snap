@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContributionWidget component renders correctly 1`] = `
+exports[`contributionWidget component renders correctly 1`] = `
 <div
   class="contribution-widget"
 >

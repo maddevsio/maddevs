@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Form checkboxes renders correctly 1`] = `
+exports[`form checkboxes renders correctly 1`] = `
 <div
   class="banner-container"
 >
@@ -13,15 +13,19 @@ exports[`Form checkboxes renders correctly 1`] = `
       <h1
         class="banner__banner-main_title banner-main_title"
       >
+        
         Look! 
         <br />
-         A new 
+        
+        A new 
         <span>
           Mad Devs'
         </span>
          
         <br />
-         ranger is here!
+        
+        ranger is here!
+      
       </h1>
        
       <div
