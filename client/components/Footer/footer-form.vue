@@ -114,38 +114,37 @@ export default {
       this.agreeToGetMadDevsDiscountOffers = discountOffersState;
     },
     sendForm(isValid) {
-      this.isEmailSent = true;
-      // if (isValid === true && !this.onSubmit) {
-      //   this.onSubmit = true;
-      //   this.form = {
-      //     templateId: 305480, // Required
-      //     variables: {
-      //       fullName: this.fullName,
-      //       email: this.email || '',
-      //       emailTo: this.emailTo || '',
-      //       projectDescriber: this.projectDescriber,
-      //       agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
-      //       agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
-      //       subject: this.subject || '',
-      //       modalTitle: this.modalTitle
-      //     }
-      //   };
-      //   this.$store.dispatch('sendEmail', this.form).then(res => {
-      //     this.onSubmit = false;
-      //     // this.createLead();
-      //     if (res.status === 200) {
-      //       this.isEmailSent = true;
-      //       this.disableScrollOnBody();
-      //       this.resetForm();
-      //       setTimeout(() => {
-      //         this.isEmailSent = false;
-      //         this.enableScrollOnBody();
-      //       }, 3000);
-      //     } else {
-      //       this.isEmailSent = false;
-      //     }
-      //   });
-      // }
+      if (isValid === true && !this.onSubmit) {
+        this.onSubmit = true;
+        this.form = {
+          templateId: 305480, // Required
+          variables: {
+            fullName: this.fullName,
+            email: this.email || '',
+            emailTo: this.emailTo || '',
+            projectDescriber: this.projectDescriber,
+            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
+            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
+            subject: this.subject || '',
+            modalTitle: this.modalTitle
+          }
+        };
+        this.$store.dispatch('sendEmail', this.form).then(res => {
+          this.onSubmit = false;
+          // this.createLead();
+          if (res.status === 200) {
+            this.isEmailSent = true;
+            this.disableScrollOnBody();
+            this.resetForm();
+            setTimeout(() => {
+              this.isEmailSent = false;
+              this.enableScrollOnBody();
+            }, 3000);
+          } else {
+            this.isEmailSent = false;
+          }
+        });
+      }
     },
     resetForm() {
       this.$refs.checkboxes.reset();
