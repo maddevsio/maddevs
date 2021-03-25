@@ -32,6 +32,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             class="multi-image img_lazy"
             data-src="[object Object]"
             data-srcset="[object Object] 2x"
+            data-testid="test-multi-image"
             height="401"
             width="295"
           />
@@ -86,6 +87,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             class="multi-image img_lazy"
             data-src="[object Object]"
             data-srcset="[object Object] 2x"
+            data-testid="test-multi-image"
             height="401"
             width="295"
           />
@@ -140,6 +142,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             class="multi-image img_lazy"
             data-src="[object Object]"
             data-srcset="[object Object] 2x"
+            data-testid="test-multi-image"
             height="401"
             width="295"
           />
@@ -194,6 +197,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             class="multi-image img_lazy"
             data-src="[object Object]"
             data-srcset="[object Object] 2x"
+            data-testid="test-multi-image"
             height="401"
             width="295"
           />
@@ -248,6 +252,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             class="multi-image img_lazy"
             data-src="[object Object]"
             data-srcset="[object Object] 2x"
+            data-testid="test-multi-image"
             height="401"
             width="295"
           />
@@ -302,6 +307,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             class="multi-image img_lazy"
             data-src="[object Object]"
             data-srcset="[object Object] 2x"
+            data-testid="test-multi-image"
             height="401"
             width="295"
           />
@@ -356,6 +362,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             class="multi-image img_lazy"
             data-src="[object Object]"
             data-srcset="[object Object] 2x"
+            data-testid="test-multi-image"
             height="401"
             width="295"
           />
@@ -410,6 +417,7 @@ exports[`Meet Our Experts renders correctly 1`] = `
             class="multi-image img_lazy"
             data-src="[object Object]"
             data-srcset="[object Object] 2x"
+            data-testid="test-multi-image"
             height="401"
             width="295"
           />
