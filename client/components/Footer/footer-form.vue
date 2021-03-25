@@ -155,8 +155,10 @@ export default {
           // this.createLead();
           if (res.status === 200) {
             this.isEmailSent = true
+            this.disableScrollOnBody()
             this.resetForm()
             setTimeout(() => {
+              this.enableScrollOnBody()
               this.isEmailSent = false
             }, 3000)
           } else {
@@ -175,6 +177,16 @@ export default {
       this.projectDescriber = ''
       this.agreeWithPrivacyPolicy = false
       this.agreeToGetMadDevsDiscountOffers = false
+    },
+
+    enableScrollOnBody() {
+      document.body.style.top = 'auto'
+      document.body.style.overflow = 'auto'
+    },
+
+    disableScrollOnBody() {
+      document.body.style.top = `-${window.scrollY}px`
+      document.body.style.overflow = 'hidden'
     },
   },
 }

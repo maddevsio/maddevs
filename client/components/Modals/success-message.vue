@@ -1,5 +1,5 @@
 <template>
-  <section id="success-message" class="success-message">
+  <section id="success-message" class="success-message" :class="className">
     <div class="success-message__conten-wrapper">
       <img src="@/assets/img/common/success-message-hand.svg" alt="Hand" />
       <div class="success-message__text-content">
@@ -19,6 +19,13 @@
 <script>
 export default {
   name: 'SuccessMessage',
+  props: {
+    className: {
+      type: String,
+      default: '',
+    },
+  },
+
   methods: {
     close() {
       this.$emit('close', true)
@@ -32,7 +39,6 @@ export default {
 
 .success-message {
   background-color: $modal-bg-color;
-  padding: 30px 60px;
 
   &__title {
     padding-top: 28px;
@@ -57,9 +63,21 @@ export default {
   }
 }
 
-@media only screen and (max-height: 700px) {
+.success-modal {
+  &_success-message {
+    padding: 30px 60px;
+  }
+}
+
+@media screen and (max-width: 640px) {
   .success-message {
-    padding: 30px 40px;
+    padding: 0 40px;
+  }
+
+  .success-modal {
+    &_success-message {
+      padding-top: 70px;
+    }
   }
 }
 </style>

@@ -11,6 +11,19 @@ export default {
     PostView,
   },
 
+  beforeRouteEnter(to, from, next) {
+    next(vm => {
+      /**
+       * Prismic saves all previous UID and they both still resolve
+       * This condition checks the current uid and redirects to it
+       * https://community.prismic.io/t/when-does-cache-expire-uid-history/874 - about this issue
+       */
+      if (to.params.uid !== vm.uid && typeof vm.uid === 'string') {
+        next({ path: `/customer-university/${vm.uid}/` })
+      }
+    })
+  },
+
   async asyncData({ $prismic, params, error }) {
     let recommendedPosts = []
     const openGraphUrl = `${process.env.domain}/customer-university/${params.uid}/`
@@ -47,6 +60,7 @@ export default {
       // Returns data to be used in template
       return {
         id: post.id,
+        uid: post.uid,
         document: post.data,
         slices: post.data.body,
         formattedDate: Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(
@@ -122,21 +136,6 @@ export default {
   computed: {
     postData() {
       return { ...this.$data }
-    },
-  },
-
-  mounted() {
-    this.title = this.$prismic.asText(this.document.meta_title) || this.document.title[0].text
-    this.getClusterData()
-  },
-
-  methods: {
-    getClusterData() {
-      this.$prismic.api.getSingle('cu_master').then(response => {
-        this.cluster =
-          response.data.body.find(cluster => cluster.items.find(post => post.cu_post.id === this.id) !== undefined) ||
-          null
-      })
     },
   },
 }
