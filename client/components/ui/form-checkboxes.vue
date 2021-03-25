@@ -4,7 +4,8 @@
       <input
         ref="privacyPolicy"
         class="form-checkbox-input"
-        :id="`privacy-policy-${inputId}`" 
+        data-testid="test-privacy-policy-checkbox-input"
+        :id="`privacy-policy-${inputId}`"
         type="checkbox"
         name="Privacy policy"
         @click="privacyCheckboxChangeState($event)"
@@ -15,6 +16,7 @@
       <input
         ref="marketingCommunications"
         class="form-checkbox-input"
+        data-testid="test-form-checkbox-input"
         :id="`marketing-communications-${inputId}`"
         type="checkbox"
         name="Marketing communications"
@@ -40,10 +42,6 @@ export default {
     },
     discountOffersCheckboxChangeState(e) {
       this.$emit('getDiscountOffersCheckboxState', e.target.checked);
-    },
-    reset() {
-      this.$refs.privacyPolicy.checked = false;
-      this.$refs.marketingCommunications.checked = false;
     }
   }
 };
