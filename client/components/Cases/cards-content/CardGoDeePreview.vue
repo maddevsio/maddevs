@@ -1,180 +1,191 @@
 <template>
-  <div class="card-content" :class="`card-content_${className}`">
+  <div :class="`card-content_${className}`" class="card-content">
     <div class="card-content_text-wrapper">
-      <h4 class="case_title_h4 card-content_title">{{title}}</h4>
+      <h4 class="case_title_h4 card-content_title">{{ title }}</h4>
       <TextParagraph class="card-content_description">
-        {{description}}
+        {{ description }}
       </TextParagraph>
     </div>
-    <div class="card-content_image-wrapper" :class="`card-content_image-wrapper-${className}`">
+    <div :class="`card-content_image-wrapper-${className}`" class="card-content_image-wrapper">
       <Picture
-        :pictureFolder="pictureFolder"
-        :fileName="fileName"
-        :fileExtension="fileExtension"
+        :picture-folder="pictureFolder"
+        :file-name="fileName"
+        :file-extension="fileExtension"
         :alt="alt"
-        :lazyLoading="false"
-        :class="{'card-content_desktop-image': mobileImage}"
+        :lazy-loading="false"
+        :class="{ 'card-content_desktop-image': mobileImage }"
         :width="width"
         :height="height"
       />
       <Picture
-        :pictureFolder="pictureFolder"
-        :fileName="mobileImageName"
-        :fileExtension="fileExtension"
-        alt="GoDee: bus app management control panel"
-        :lazyLoading="false"
         v-if="mobileImage"
-        :class="{'card-content_mobile-image': mobileImage}"
+        :picture-folder="pictureFolder"
+        :file-name="mobileImageName"
+        :file-extension="fileExtension"
+        :lazy-loading="false"
+        :class="{ 'card-content_mobile-image': mobileImage }"
         :width="307"
         :height="160"
+        alt="GoDee: bus app management control panel"
       />
     </div>
   </div>
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph';
-import Picture from '@/components/Cases/Picture';
+import TextParagraph from '@/components/Cases/TextParagraph'
+import Picture from '@/components/Cases/Picture'
 
 export default {
   name: 'CardGoDeePreview',
   components: {
     TextParagraph,
-    Picture
+    Picture,
   },
+
   props: {
     title: {
       type: String,
-      default: ''
+      default: '',
     },
+
     description: {
       type: String,
-      default: ''
+      default: '',
     },
+
     fileName: {
       type: String,
-      default: ''
+      default: '',
     },
+
     pictureFolder: {
       type: String,
-      default: ''
+      default: '',
     },
+
     fileExtension: {
       type: String,
-      default: ''
+      default: '',
     },
+
     alt: {
       type: String,
-      default: ''
+      default: '',
     },
+
     className: {
       type: String,
-      default: ''
+      default: '',
     },
+
     mobileImage: {
       type: Boolean,
-      default: false
+      default: false,
     },
+
     mobileImageName: {
       type: String,
-      default: ''
+      default: '',
     },
+
     width: {
       type: Number,
-      default: 0
+      default: 0,
     },
+
     height: {
       type: Number,
-      default: 0
-    }
-  }
-};
+      default: 0,
+    },
+  },
+}
 </script>
 
 <style scoped lang="scss">
-  @import '../../../assets/styles/cases/_mixins';
+@import '../../../assets/styles/cases/_mixins';
 
-  .card-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-    &_godee-admin-panel {
-      text-align: center;
-    }
+  &_godee-admin-panel {
+    text-align: center;
+  }
 
-    &_title {
-      margin-bottom: 10px;
-      color: $text-color--white-primary;
-    }
+  &_title {
+    margin-bottom: 10px;
+    color: $text-color--white-primary;
+  }
 
-    &_description {
-      color: $text-color--grey-team-list;
-    }
+  &_description {
+    color: $text-color--grey-team-list;
+  }
 
-    &_image-wrapper {
-      margin-bottom: -32px;
+  &_image-wrapper {
+    margin-bottom: -32px;
+  }
+
+  &_image-wrapper-application-for-passengers {
+    max-width: 341px;
+  }
+
+  &_image-wrapper-application-for-drivers {
+    max-width: 313px;
+  }
+
+  &_image-wrapper-godee-admin-panel {
+    max-width: 695px;
+    margin: 10px auto -32px;
+  }
+
+  &_mobile-image {
+    display: none;
+  }
+
+  @media screen and (max-width: 825px) {
+    align-items: center;
+    text-align: center;
+
+    &_image-wrapper-application-for-passengers,
+    &_image-wrapper-application-for-drivers {
+      max-width: 306px;
     }
 
     &_image-wrapper-application-for-passengers {
-      max-width: 341px;
+      margin-top: 20px;
+      margin-bottom: -51px;
     }
 
     &_image-wrapper-application-for-drivers {
-      max-width: 313px;
+      margin-bottom: -127px;
     }
 
     &_image-wrapper-godee-admin-panel {
-      max-width: 695px;
-      margin: 10px auto -32px;
+      margin-top: 24px;
     }
+  }
 
-    &_mobile-image {
+  @media screen and (max-width: 768px) {
+    &_title {
+      margin-bottom: 8px;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    &_desktop-image {
       display: none;
     }
 
-    @media screen and (max-width: 825px) {
-      align-items: center;
-      text-align: center;
-
-      &_image-wrapper-application-for-passengers,
-      &_image-wrapper-application-for-drivers {
-        max-width: 306px;
-      }
-
-      &_image-wrapper-application-for-passengers {
-        margin-top: 20px;
-        margin-bottom: -51px;
-      }
-
-      &_image-wrapper-application-for-drivers {
-        margin-bottom: -127px;
-      }
-
-      &_image-wrapper-godee-admin-panel {
-        margin-top: 24px;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-      &_title {
-        margin-bottom: 8px;
-      }
-    }
-
-    @media screen and (max-width: 640px) {
-      &_desktop-image {
-        display: none;
-      }
-
-      &_mobile-image {
-        display: block;
-      }
-    }
-
-    @media screen and (max-width: 420px) {
-      text-align: left;
+    &_mobile-image {
+      display: block;
     }
   }
+
+  @media screen and (max-width: 420px) {
+    text-align: left;
+  }
+}
 </style>

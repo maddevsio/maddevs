@@ -1,5 +1,5 @@
 <template>
-  <div :id="$prismic.asText(slice.primary.id)"/>
+  <div :id="$prismic.asText(slice.primary.id)" />
 </template>
 
 <script>
@@ -8,8 +8,8 @@ export default {
   props: {
     slice: {
       type: Object,
-      required: true
-    }
-  }
-};
+      required: true,
+    },
+  },
+}
 </script>

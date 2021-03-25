@@ -1,30 +1,37 @@
 <template>
   <div class="card-use-case">
     <client-only>
-      <h3 class="card-use-case__title case_title_h4" :class="`card-use-case__${classList.uniqueСlass}-title`" v-html="title">
-        {{title}}
+      <h3
+        :class="`card-use-case__${classList.uniqueСlass}-title`"
+        class="card-use-case__title case_title_h4"
+        v-html="title"
+      >
+        {{ title }}
       </h3>
     </client-only>
-    <div class="card-use-case__description-wrapper" :class="`card-use-case__${classList.uniqueСlass}-description-wrapper`">
-      <TextParagraph class="card-use-case__paragraph" :class="`card-use-case__${classList.uniqueСlass}-paragraph`">
-        {{description}}
+    <div
+      :class="`card-use-case__${classList.uniqueСlass}-description-wrapper`"
+      class="card-use-case__description-wrapper"
+    >
+      <TextParagraph :class="`card-use-case__${classList.uniqueСlass}-paragraph`" class="card-use-case__paragraph">
+        {{ description }}
       </TextParagraph>
       <div :class="`card-use-case__${classList.uniqueСlass}-picture`" class="card-use-case__desktop-picture">
         <Picture
-          :pictureFolder="pictureFolder"
-          :fileName="fileName"
-          :fileExtension="fileExtension"
+          :picture-folder="pictureFolder"
+          :file-name="fileName"
+          :file-extension="fileExtension"
           :alt="alt"
-          :lazyLoading="false"
+          :lazy-loading="false"
         />
       </div>
-      <div class="card-use-case__mobile-picture" :class="`card-use-case__${classList.uniqueСlass}-mobile-picture`">
+      <div :class="`card-use-case__${classList.uniqueСlass}-mobile-picture`" class="card-use-case__mobile-picture">
         <Picture
-          :pictureFolder="pictureFolder"
-          :fileName="`${fileName}-mobile`"
-          :fileExtension="fileExtension"
+          :picture-folder="pictureFolder"
+          :file-name="`${fileName}-mobile`"
+          :file-extension="fileExtension"
           :alt="alt"
-          :lazyLoading="false"
+          :lazy-loading="false"
         />
       </div>
     </div>
@@ -32,177 +39,186 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph';
-import Picture from '@/components/Cases/Picture';
+import TextParagraph from '@/components/Cases/TextParagraph'
+import Picture from '@/components/Cases/Picture'
+
 export default {
   name: 'CardUseCase',
   components: {
     TextParagraph,
-    Picture
+    Picture,
   },
+
   props: {
     title: {
       type: String,
-      default: ''
+      default: '',
     },
+
     description: {
       type: String,
-      default: ''
+      default: '',
     },
+
     pictureFolder: {
       type: String,
-      default: ''
+      default: '',
     },
+
     fileName: {
       type: String,
-      default: ''
+      default: '',
     },
+
     fileExtension: {
       type: String,
-      default: ''
+      default: '',
     },
+
     alt: {
       type: String,
-      default: ''
+      default: '',
     },
+
     classList: {
-      type: Object
-    }
-  }
-};
+      type: Object,
+      default: () => ({}),
+    },
+  },
+}
 </script>
 
 <style scoped lang="scss">
-  @import '../../../assets/styles/cases/_mixins';
+@import '../../../assets/styles/cases/_mixins';
 
-  .card-use-case {
+.card-use-case {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__description-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    margin-bottom: -32px;
+  }
 
-    &__description-wrapper {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      height: 100%;
-      margin-bottom: -32px;
-    }
+  &__title {
+    margin-bottom: 11px;
+  }
+
+  &__title,
+  &__paragraph {
+    color: $text-color--white-primary;
+  }
+
+  &__white-card-title,
+  &__white-card-paragraph {
+    color: $text-color--black-cases;
+  }
+
+  &__desktop-picture {
+    margin-top: auto;
+    position: relative;
+    right: -32px;
+  }
+
+  &__red-card-picture,
+  &__black-card-picture {
+    width: 140px;
+  }
+
+  &__turquoise-card-picture,
+  &__white-card-picture {
+    width: 166px;
+  }
+
+  &__mobile-picture {
+    display: none;
+  }
+
+  &__turquoise-card-paragraph {
+    padding-bottom: 40px;
+  }
+
+  /deep/ span {
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 1000px) {
+    text-align: center;
 
     &__title {
-      margin-bottom: 11px;
-    }
-
-    &__title,
-    &__paragraph {
-      color: $text-color--white-primary;
-    }
-
-    &__white-card-title,
-    &__white-card-paragraph {
-      color: $text-color--black-cases;
-    }
-
-    &__desktop-picture {
-      margin-top: auto;
-      position: relative;
-      right: -32px;
-    }
-
-    &__red-card-picture,
-    &__black-card-picture {
-      width: 140px;
-    }
-
-    &__turquoise-card-picture,
-    &__white-card-picture {
-      width: 166px;
-    }
-
-    &__mobile-picture {
-      display: none;
+      /deep/ br {
+        display: none;
+      }
     }
 
     &__turquoise-card-paragraph {
-      padding-bottom: 40px;
+      padding-bottom: 0;
     }
 
-    /deep/ span {
-      white-space: nowrap;
+    &__paragraph {
+      margin-bottom: 24px;
     }
 
-    @media screen and (max-width: 1000px) {
-      text-align: center;
-
-      &__title {
-        /deep/ br {
-          display: none;
-        }
-      }
-
-      &__turquoise-card-paragraph {
-        padding-bottom: 0;
-      }
-
-      &__paragraph {
-        margin-bottom: 24px;
-      }
-
-      &__desktop-picture {
-        display: none;
-      }
-
-      &__mobile-picture {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-
-      &__description-wrapper {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: -33px;
-      }
-
-      &__black-card-description-wrapper {
-        margin-bottom: -7.1vw;
-      }
-
-      &__white-card-mobile-picture {
-        margin-bottom: -6.4vw;
-      }
+    &__desktop-picture {
+      display: none;
     }
 
-    @media screen and (max-width: 768px) {
-      &__description-wrapper {
-        margin-bottom: -21px;
-      }
-
-      &__black-card-description-wrapper {
-        margin-bottom: -6.6vw;
-      }
+    &__mobile-picture {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
-    @media screen and (max-width: 898px) {
-      &__white-card-mobile-picture {
-        margin-bottom: -5.9vw;
-      }
+    &__description-wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: -33px;
     }
 
-    @media screen and (max-width: 620px) {
-      &__mobile-picture {
-        max-width: 320px;
-      }
+    &__black-card-description-wrapper {
+      margin-bottom: -7.1vw;
+    }
 
-      &__black-card-description-wrapper {
-        margin-bottom: -21px;
-      }
-
-      &__white-card-mobile-picture {
-        margin-bottom: 0;
-      }
+    &__white-card-mobile-picture {
+      margin-bottom: -6.4vw;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    &__description-wrapper {
+      margin-bottom: -21px;
+    }
+
+    &__black-card-description-wrapper {
+      margin-bottom: -6.6vw;
+    }
+  }
+
+  @media screen and (max-width: 898px) {
+    &__white-card-mobile-picture {
+      margin-bottom: -5.9vw;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    &__mobile-picture {
+      max-width: 320px;
+    }
+
+    &__black-card-description-wrapper {
+      margin-bottom: -21px;
+    }
+
+    &__white-card-mobile-picture {
+      margin-bottom: 0;
+    }
+  }
+}
 </style>

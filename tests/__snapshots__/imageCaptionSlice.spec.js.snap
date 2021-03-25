@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image attribute slice component renders correctly 1`] = `
+exports[`image attribute slice component renders correctly 1`] = `
 <div>
   <div
     class="post-part single"

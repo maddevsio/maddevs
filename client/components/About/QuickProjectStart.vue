@@ -5,8 +5,17 @@
       <div class="quickProjectStart__content-list row">
         <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_contact">
           <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/contact.svg`)" alt="contact" class="quickProjectStart__main-icon img_lazy">
-            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon img_lazy">
+            <img
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/contact.svg`)"
+              width="52"
+              height="73"
+              alt="contact"
+              class="quickProjectStart__main-icon img_lazy"
+            />
+            <img
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)"
+              class="quickProjectStart__arrow-icon img_lazy"
+            />
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
             <h3 class="quickProjectStart__title">contact</h3>
@@ -15,8 +24,17 @@
         </div>
         <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_analysis">
           <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/analysis.svg`)" alt="analysis" class="quickProjectStart__main-icon img_lazy">
-            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon img_lazy">
+            <img
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/analysis.svg`)"
+              width="52"
+              height="73"
+              alt="analysis"
+              class="quickProjectStart__main-icon img_lazy"
+            />
+            <img
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)"
+              class="quickProjectStart__arrow-icon img_lazy"
+            />
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
             <h3 class="quickProjectStart__title">analysis</h3>
@@ -25,18 +43,38 @@
         </div>
         <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_proposal">
           <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/proposal.svg`)" alt="proposal" class="quickProjectStart__main-icon img_lazy">
-            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon img_lazy">
+            <img
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/proposal.svg`)"
+              width="52"
+              height="73"
+              alt="proposal"
+              class="quickProjectStart__main-icon img_lazy"
+            />
+            <img
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)"
+              class="quickProjectStart__arrow-icon img_lazy"
+            />
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
             <h3 class="quickProjectStart__title">proposal</h3>
-            <p class="quickProjectStart__description">We will provide you with our free, non-binding bid or a tailored proposal.</p>
+            <p class="quickProjectStart__description">
+              We will provide you with our free, non-binding bid or a tailored proposal.
+            </p>
           </div>
         </div>
         <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_team">
           <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/team.svg`)" alt="team" class="quickProjectStart__main-icon img_lazy">
-            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon img_lazy">
+            <img
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/team.svg`)"
+              width="52"
+              height="73"
+              alt="team"
+              class="quickProjectStart__main-icon img_lazy"
+            />
+            <img
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)"
+              class="quickProjectStart__arrow-icon img_lazy"
+            />
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
             <h3 class="quickProjectStart__title">team</h3>
@@ -45,19 +83,27 @@
         </div>
         <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_start">
           <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/start.svg`)" alt="start" class="quickProjectStart__main-icon img_lazy">
+            <img
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/start.svg`)"
+              width="52"
+              height="73"
+              alt="start"
+              class="quickProjectStart__main-icon img_lazy"
+            />
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
             <h3 class="quickProjectStart__title">start</h3>
-            <p class="quickProjectStart__description">You will get to know the team and we’ll start the project work.</p>
+            <p class="quickProjectStart__description">
+              You will get to know the team and we’ll start the project work.
+            </p>
           </div>
         </div>
       </div>
       <UIButtonModalTrigger
+        :button-inner-text="buttonInnerText"
+        :is-red="true"
         class="quickProjectStart__button"
-        :buttonInnerText="buttonInnerText"
         @onClick="$refs.orderProjectFromUsModal.show()"
-        :isRed="true"
       />
     </div>
     <Modal ref="orderProjectFromUsModal">
@@ -67,23 +113,24 @@
 </template>
 
 <script>
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
-import Modal from '@/containers/Modal';
+import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import Modal from '@/containers/Modal'
 
 export default {
   name: 'QuickProjectStart',
   components: {
     UIButtonModalTrigger,
     Modal,
-    orderProjectFromUsModal: () => import('@/components/Modals/order-project-from-us-modal')
+    orderProjectFromUsModal: () => import('@/components/Modals/order-project-from-us-modal'),
   },
+
   data() {
     return {
       modalWindowName: 'order-project-from-us-modal',
-      buttonInnerText: 'Submit your project'
-    };
-  }
-};
+      buttonInnerText: 'Submit your project',
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -214,7 +261,6 @@ export default {
     }
   }
 }
-
 
 @media only screen and (max-width: 767px) {
   .quickProjectStart {

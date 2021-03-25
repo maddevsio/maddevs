@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Customer component renders correctly 1`] = `
+exports[`customer component renders correctly 1`] = `
 <div
   class="icon-wrapper"
 >

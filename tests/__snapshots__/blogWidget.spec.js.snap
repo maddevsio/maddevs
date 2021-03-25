@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Recommended blog widget component renders correctly 1`] = `
+exports[`recommended blog widget component renders correctly 1`] = `
 <nuxt-link-stub
   to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
 >

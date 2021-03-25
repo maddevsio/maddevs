@@ -1,7 +1,7 @@
 function switchLanguage(_, res) {
-  res.redirect(301, 'https://maddevs.io/');
+  res.redirect(301, 'https://maddevs.io/')
 }
 
 module.exports = {
-  switchLanguage
-};
+  switchLanguage,
+}

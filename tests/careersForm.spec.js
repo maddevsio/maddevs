@@ -1,13 +1,13 @@
-import { shallowMount, createLocalVue } from '@vue/test-utils';
-import CareersForm from '@/components/Careers/CareersForm';
-import Vuelidate from 'vuelidate';
+import { shallowMount, createLocalVue } from '@vue/test-utils'
+import CareersForm from '@/components/Careers/CareersForm'
+import Vuelidate from 'vuelidate'
 
-const localVue = createLocalVue();
+const localVue = createLocalVue()
 
-localVue.use(Vuelidate);
+localVue.use(Vuelidate)
 
-describe('CareersForm component', () => {
-  let wrapper;
+describe('careersForm component', () => {
+  let wrapper
   const data = {
     isEmailSent: false,
     fullName: null,
@@ -23,10 +23,10 @@ describe('CareersForm component', () => {
       { type: 'senior', label: 'Senior,' },
       { type: 'middle', label: 'Middle,' },
       { type: 'junior', label: 'Junior,' },
-      { type: 'intern', label: 'Intern' }
+      { type: 'intern', label: 'Intern' },
     ],
-    modalTitle: 'Mad Devs Website Carrers Form'
-  };
+    modalTitle: 'Mad Devs Website Carrers Form',
+  }
 
   beforeEach(() => {
     wrapper = shallowMount(CareersForm, {
@@ -34,65 +34,61 @@ describe('CareersForm component', () => {
       mocks: {
         $refs: {
           nameInput: {
-            focus: jest.fn()
-          }
+            focus: jest.fn(),
+          },
         },
         errors: false,
-        onSumbit: false
-      }
-    });
+        onSumbit: false,
+      },
+    })
     wrapper.vm.$refs = {
       form: {
-        reset: jest.fn()
+        reset: jest.fn(),
       },
       fileInput: {
-        reset: jest.fn()
+        reset: jest.fn(),
       },
       radioButtons: {
-        reset: jest.fn()
-      }
-    };
-    wrapper.vm.$nextTick();
-  });
+        reset: jest.fn(),
+      },
+    }
+    wrapper.vm.$nextTick()
+  })
 
-  test('is Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+  it('is Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
 
-  test('should check existence of data', () => {
-    expect(wrapper.vm.$data).toStrictEqual(data);
-  });
+  it('should check existence of data', () => {
+    expect(wrapper.vm.$data).toStrictEqual(data)
+  })
 
-  test('onFileChanged method should set correct position', () => {
-    const newPositionValue = null;
-    CareersForm.methods.onFileChanged(newPositionValue);
-    expect(wrapper.vm.$data.positionValue).toStrictEqual(newPositionValue);
-  });
+  it('onFileChanged method should set correct position', () => {
+    const newPositionValue = null
+    CareersForm.methods.onFileChanged(newPositionValue)
+    expect(wrapper.vm.$data.positionValue).toStrictEqual(newPositionValue)
+  })
 
-  test('should rest values in data instances', () => {
+  it('should rest values in data instances', () => {
     // Set mock data for data instances
-    wrapper.vm.$data.fullName = 'Name';
-    wrapper.vm.$data.email = 'email@mail.com';
+    wrapper.vm.$data.fullName = 'Name'
+    wrapper.vm.$data.email = 'email@mail.com'
     wrapper.vm.$data.form = {
       value1: 'value1',
-      value2: 'value2'
-    };
+      value2: 'value2',
+    }
 
-    wrapper.vm.resetForm();
-    expect(
-      wrapper.vm.$data.fullName &&
-      wrapper.vm.$data.email &&
-      wrapper.vm.$data.form
-    ).toEqual(null);
-  });
+    wrapper.vm.resetForm()
+    expect(wrapper.vm.$data.fullName && wrapper.vm.$data.email && wrapper.vm.$data.form).toBeNull()
+  })
 
-  test('toBase64 should return promise', () => {
-    const file = new Blob(['testing'], { type: 'application/pdf' });
-    const promise = new Promise((res, rej) => res());
-    expect(wrapper.vm.toBase64(file)).toEqual(promise);
-  });
-});
+  it('toBase64 should return promise', () => {
+    const file = new Blob(['testing'], { type: 'application/pdf' })
+    const promise = new Promise(resolve => resolve())
+    expect(wrapper.vm.toBase64(file)).toEqual(promise)
+  })
+})

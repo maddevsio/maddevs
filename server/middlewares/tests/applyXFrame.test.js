@@ -1,16 +1,18 @@
-import applyXFrame from '../applyXFrame';
+import applyXFrame from '../applyXFrame'
 
-test('applyXFrame', () => {
-  const req = {};
+describe('applyXFrame', () => {
+  it('simple', () => {
+    const req = {}
 
-  const res = {
-    set: jest.fn()
-  };
+    const res = {
+      set: jest.fn(),
+    }
 
-  const next = jest.fn();
+    const next = jest.fn()
 
-  applyXFrame(req, res, next);
+    applyXFrame(req, res, next)
 
-  expect(res.set).toBeCalledWith('X-Frame-Options', 'DENY');
-  expect(next).toBeCalledTimes(1);
-});
+    expect(res.set).toHaveBeenCalledWith('X-Frame-Options', 'DENY')
+    expect(next).toHaveBeenCalledTimes(1)
+  })
+})

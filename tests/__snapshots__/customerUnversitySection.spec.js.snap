@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Customer University section component Renders correctly 1`] = `
+exports[`customer University section component renders correctly 1`] = `
 <section
   class="customer-university"
 >

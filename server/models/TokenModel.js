@@ -1,11 +1,11 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 const tokenSchema = new mongoose.Schema({
   type: String,
   refresh: String,
-  access: String
-});
+  access: String,
+})
 
-const Token = mongoose.model('Token', tokenSchema);
+const Token = mongoose.model('Token', tokenSchema)
 
-module.exports = Token;
+module.exports = Token

@@ -1,15 +1,15 @@
-global.IntersectionObserver = class IntersectionObserver {
-  constructor() {}
+/* eslint-disable class-methods-use-this */
 
+global.IntersectionObserver = class IntersectionObserver {
   observe() {
-    return null;
+    return null
   }
 
   disconnect() {
-    return null;
+    return null
   }
 
   unobserve() {
-    return null;
+    return null
   }
-};
+}

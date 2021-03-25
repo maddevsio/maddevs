@@ -1,13 +1,13 @@
-import * as controller from '../LanguageController';
+import * as controller from '../LanguageController'
 
-describe('LanguageController', () => {
-  const req = {};
+describe('languageController', () => {
+  const req = {}
   const res = {
-    redirect: jest.fn()
-  };
+    redirect: jest.fn(),
+  }
 
-  test('switchLanguage should redirect to main page', () => {
-    controller.switchLanguage(req, res);
-    expect(res.redirect).toBeCalledWith(301, 'https://maddevs.io/');
-  });
-});
+  it('switchLanguage should redirect to main page', () => {
+    controller.switchLanguage(req, res)
+    expect(res.redirect).toHaveBeenCalledWith(301, 'https://maddevs.io/')
+  })
+})

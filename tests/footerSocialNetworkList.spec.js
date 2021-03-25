@@ -1,22 +1,20 @@
-import {
-  mount
-} from '@vue/test-utils';
-import footerSocialNetworkList from '@/components/Footer/footer-social-network-list';
+import { mount } from '@vue/test-utils'
+import footerSocialNetworkList from '@/components/Footer/footer-social-network-list'
 
 describe('footer social network list', () => {
-  let wrapper;
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(footerSocialNetworkList);
-  });
+    wrapper = mount(footerSocialNetworkList)
+  })
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
-  
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
+
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
-});
+})

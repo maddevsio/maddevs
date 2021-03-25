@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`We Create It Project For renders correctly 1`] = `
+exports[`we Create It Project For renders correctly 1`] = `
 <section
   class="weCreateItProject"
   id="weCreateItProject"
@@ -17,7 +17,8 @@ exports[`We Create It Project For renders correctly 1`] = `
         
         We create 
         <br />
-         IT projects for:
+        
+        IT projects for:
       
       </h2>
        
@@ -30,9 +31,12 @@ exports[`We Create It Project For renders correctly 1`] = `
           <p
             class="weCreateItProject__paragraph"
           >
+            
             Content Streaming 
             <br />
-             Transportation
+            
+            Transportation
+          
           </p>
         </div>
          
@@ -42,9 +46,12 @@ exports[`We Create It Project For renders correctly 1`] = `
           <p
             class="weCreateItProject__paragraph"
           >
+            
             HealthTech 
             <br />
-             IoTs
+            
+            IoTs
+          
           </p>
         </div>
          
@@ -54,9 +61,12 @@ exports[`We Create It Project For renders correctly 1`] = `
           <p
             class="weCreateItProject__paragraph"
           >
+            
             E-Commerce 
             <br />
-             AdTech
+            
+            AdTech
+          
           </p>
         </div>
          
@@ -66,9 +76,12 @@ exports[`We Create It Project For renders correctly 1`] = `
           <p
             class="weCreateItProject__paragraph"
           >
+            
             E-Learning 
             <br />
-             FinTech
+            
+            FinTech
+          
           </p>
         </div>
          
@@ -78,9 +91,12 @@ exports[`We Create It Project For renders correctly 1`] = `
           <p
             class="weCreateItProject__paragraph"
           >
+            
             Serverless 
             <br />
-             BYOD
+            
+            BYOD
+          
           </p>
         </div>
          
@@ -90,9 +106,12 @@ exports[`We Create It Project For renders correctly 1`] = `
           <p
             class="weCreateItProject__paragraph"
           >
+            
             Blockchain 
             <br />
-             FoodTech
+            
+            FoodTech
+          
           </p>
         </div>
       </div>

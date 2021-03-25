@@ -3,90 +3,90 @@
     <div class="container">
       <div class="customers__text-content">
         <h2 class="customers__main-title">Our valued customers</h2>
-        <p class="customers__description">Due to our NDAs and confidentiality requirements, we cannot disclose details for all of our customers. These are a few of the companies we work with.</p>
+        <p class="customers__description">
+          Due to our NDAs and confidentiality requirements, we cannot disclose details for all of our customers. These
+          are a few of the companies we work with.
+        </p>
       </div>
       <div class="customers__customers-list">
-        <Customer
-          v-for="(customer, i) in customers"
-          :key="i"
-          :customer="customer"
-        />
+        <Customer v-for="(customer, i) in customers" :key="i" :customer="customer" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import Customer from '@/components/Projects/Customer';
+import Customer from '@/components/Projects/Customer'
 
 export default {
   name: 'Customers',
   components: {
-    Customer
+    Customer,
   },
+
   data() {
     return {
       buttonInnerText: 'Order a project from us',
       modalWindowName: 'order-project-from-us-modal',
       customers: [
         {
-          className: 'godee-icon'
+          className: 'godee-icon',
         },
         {
-          className: 'guardrails-icon'
+          className: 'guardrails-icon',
         },
         {
-          className: 'teacherly-icon'
+          className: 'teacherly-icon',
         },
         {
-          className: 'triggermesh-icon'
+          className: 'triggermesh-icon',
         },
         {
-          className: 'clutch-icon'
+          className: 'clutch-icon',
         },
         {
-          className: 'eatigo-icon'
+          className: 'eatigo-icon',
         },
         {
-          className: 'veeqo-icon'
+          className: 'veeqo-icon',
         },
         {
-          className: 'admitad-icon'
+          className: 'admitad-icon',
         },
         {
-          className: 'iotsploit-icon'
+          className: 'iotsploit-icon',
         },
         {
-          className: 'sir-jonas-icon'
+          className: 'sir-jonas-icon',
         },
         {
-          className: 'progressay-icon'
+          className: 'progressay-icon',
         },
         {
-          className: 'kickoico-icon'
+          className: 'kickoico-icon',
         },
         {
-          className: 'nambafood-icon'
+          className: 'nambafood-icon',
         },
         {
-          className: 'showmebishkek-icon'
+          className: 'showmebishkek-icon',
         },
         {
-          className: 'mythril-icon'
+          className: 'mythril-icon',
         },
         {
-          className: 'seso-icon'
+          className: 'seso-icon',
         },
         {
-          className: 'tengri-icon'
+          className: 'tengri-icon',
         },
         {
-          className: 'peklo-icon'
-        }
-      ]
-    };
-  }
-};
+          className: 'peklo-icon',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>

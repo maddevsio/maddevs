@@ -12,86 +12,86 @@
 
 <script>
 export default {
-  name: 'footer-navbar',
+  name: 'FooterNavbar',
   data() {
     return {
-      currentYear: new Date().getFullYear()
-    };
-  }
-};
+      currentYear: new Date().getFullYear(),
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/vars';
+@import '../../assets/styles/vars';
 
-  .footer-navbar {
-		width: max-content;
-    margin-top: 64px;
+.footer-navbar {
+  width: max-content;
+  margin-top: 64px;
 
-    &__nav-list {
-			display: flex;
-		}
-
-		&__nav-item,
-		&__company-name {
-			font-size: 16px;
-      line-height: 24px;
-			color: $text-color--grey;
-			letter-spacing:  -0.02em;
-		}
-
-		&__company-name {
-			margin-bottom: 6px;
-		}
-
-		&__nav-item {
-			margin-right: 26px;
-			text-decoration: underline;
-			text-decoration-color: $footer--text-decoration-color;
-
-			&:last-child {
-				margin-right: 0;
-			}
-		}
+  &__nav-list {
+    display: flex;
   }
 
-  @media only screen and (max-width: 1320px) {
-		.footer-navbar {
-			width: initial;
-			margin-top: 40px;
+  &__nav-item,
+  &__company-name {
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-color--grey;
+    letter-spacing: -0.02em;
+  }
 
-			&__nav-list {
-				flex-wrap: wrap;
-			}
+  &__company-name {
+    margin-bottom: 6px;
+  }
 
-			&__nav-item,
-			&__company-name {
-				margin-bottom: 3px;
-			}
+  &__nav-item {
+    margin-right: 26px;
+    text-decoration: underline;
+    text-decoration-color: $footer--text-decoration-color;
 
-			&__nav-item {
-				&:nth-child(1) {
-					width: 100%;
-				}
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 
-				&:nth-child(2),
-				&:nth-child(3) {
-					margin-right: 15px;
-				}
+@media only screen and (max-width: 1320px) {
+  .footer-navbar {
+    width: initial;
+    margin-top: 40px;
 
-				&:nth-child(4) {
-					margin-left: 0;
-					margin-bottom: 0;
-				}
-			}
-		}
-	}
+    &__nav-list {
+      flex-wrap: wrap;
+    }
 
-  @media only screen and (max-width: 991px) {
-		.footer-navbar {
-			&__nav-list {
-				flex-direction: column;
-			}
-		}
-	}
+    &__nav-item,
+    &__company-name {
+      margin-bottom: 3px;
+    }
+
+    &__nav-item {
+      &:nth-child(1) {
+        width: 100%;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-right: 15px;
+      }
+
+      &:nth-child(4) {
+        margin-left: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .footer-navbar {
+    &__nav-list {
+      flex-direction: column;
+    }
+  }
+}
 </style>

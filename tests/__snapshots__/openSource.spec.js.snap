@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CaseStudies component renders correctly 1`] = `
+exports[`caseStudies component renders correctly 1`] = `
 <section
   class="open-source"
   id="open-source"
@@ -32,11 +32,14 @@ exports[`CaseStudies component renders correctly 1`] = `
           <br
             class="open-source__descktop-break"
           />
-           the community via 
+          
+          the community via
+          
           <span
             class="open-source__mobile-icon-wrapper"
           >
-            GitHub. 
+            GitHub.
+            
             <a
               class="open-source__github-icon-mobile"
               href="https://github.com/maddevsio"

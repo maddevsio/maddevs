@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ItСonsulting component renders correctly 1`] = `
+exports[`itСonsulting component renders correctly 1`] = `
 <section
   class="it-consulting"
   id="it-consulting"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Table of contents block in single post page renders correctly 1`] = `
+exports[`table of contents block in single post page renders correctly 1`] = `
 <div
   class="table-of-contents"
 >
@@ -20,8 +20,8 @@ exports[`Table of contents block in single post page renders correctly 1`] = `
         href="#gallery"
       >
         
-        Gallery
-      
+          Gallery
+        
       </a>
     </li>
     <li
@@ -31,8 +31,8 @@ exports[`Table of contents block in single post page renders correctly 1`] = `
         href="#main"
       >
         
-        Main
-      
+          Main
+        
       </a>
     </li>
   </ol>

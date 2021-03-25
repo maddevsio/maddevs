@@ -1,39 +1,37 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils'
 
-import Customer from '@/components/Projects/Customer';
-import Customers from '@/components/Projects/Customers';
+import Customer from '@/components/Projects/Customer'
+import Customers from '@/components/Projects/Customers'
 
-describe('Customer component', () => {
-  let wrapper;
-  let props = {
+describe('customer component', () => {
+  let wrapper
+  const props = {
     customer: {
       imgName: 'godee',
-      industry: 'Transportation'
-    }
-  };
+      industry: 'Transportation',
+    },
+  }
 
   beforeEach(() => {
     wrapper = mount(Customer, {
       propsData: props,
-      parentComponent: Customers
-    });
-  });
+      parentComponent: Customers,
+    })
+  })
 
-  test('is Vue\'s instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+  it("is Vue's instance", () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
 
-  test('should have Customers parent component ', () => {
-    expect(wrapper.vm.$parent.$options.name).toBe('Customers');
-  });
+  it('should have Customers parent component', () => {
+    expect(wrapper.vm.$parent.$options.name).toBe('Customers')
+  })
 
-  test('should pass correct props', () => {
-    expect(wrapper.props().customer).toStrictEqual(props.customer);
-  });
-});
+  it('should pass correct props', () => {
+    expect(wrapper.props().customer).toStrictEqual(props.customer)
+  })
+})
