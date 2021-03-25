@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-console */
 const mkdirp = require('mkdirp')
 const { get } = require('https')
 const { readFile, writeFile } = require('fs')
@@ -74,7 +75,6 @@ const getBadgeByKey = report => key => {
       await mkdirp(outputPath)
       writeBadgeInFolder(key, res)
     } catch (error) {
-      // eslint-disalbe-next-line
       console.error(`Could not create output directory ${error}`)
     }
   })
