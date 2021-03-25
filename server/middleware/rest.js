@@ -2,7 +2,8 @@ const sendpulse = require('sendpulse-api');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const redirectList = require('../json/redirect');
-const customerRedirectList = require('../json/customer-university.json');
+const blogRedirectList = require('../json/blog');
+const customerRedirectList = require('../json/customer-university');
 const app = require('express')();
 
 const _config_ = require('../config');
@@ -54,7 +55,8 @@ app.use((req, res, next) => {
 });
 
 app.use((req, res, next) => {
-  const match = customerRedirectList.find(url => url.from === getRequestUrl(req));
+  const postsRedirectList = [...blogRedirectList, ...customerRedirectList];
+  const match = postsRedirectList.find(url => url.from === getRequestUrl(req));
   if (match) {
     res.redirect(301, match.to);
   } else {

@@ -142,7 +142,7 @@ export default {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 25px 15px 12px;
+    padding: 25px 25px 12px;
     cursor: pointer;
     z-index: 1;
     background-color: transparent;

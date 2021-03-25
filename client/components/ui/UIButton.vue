@@ -30,9 +30,7 @@ export default {
   },
   methods: {
     onClick() {
-      if (this.$props.disabled === false) {
-        this.$emit('click');
-      }
+      if(!this.disabled) this.$emit('click');
     }
   }
 };

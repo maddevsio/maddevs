@@ -8,21 +8,18 @@
           :url="openGraphUrl"
           :title="title"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
-          target="_blank"
         />
         <ShareNetwork
           network="twitter"
           :url="openGraphUrl"
           :title="title"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
-          target="_blank"
         />
         <ShareNetwork
           network="linkedin"
           :url="openGraphUrl"
           :title="title"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
-          target="_blank"
         />
       </div>
 
@@ -39,8 +36,6 @@
         :tags="tags"
         :formattedDate="formattedDate"
       />
-
-      <div class="blog-post__introduction-paragraph" v-html="$prismic.asHtml(document.introduction_paragraph)"/>
       <div class="blog-post__main-content">
         <table-of-contents :content="document.table_of_contents" v-if="$prismic.asText(document.table_of_contents)"/>
         <slices-block :slices="slices" class="blog-post__text-container"/>
@@ -49,7 +44,7 @@
     <div v-if="showRecommended" class="blog-post__recommended-posts">
       <div class="blog-post__recommended-posts-list container">
         <section v-for="recommendedPost in recommendedPosts" :key="recommendedPost.id" :post="recommendedPost" class="blog-post__recommended-post">
-          <recommended-blog-widget :post="recommendedPost"/>
+          <recommended-blog-widget :post="recommendedPost" className="recommended-post"/>
         </section>
       </div>
     </div>
@@ -240,7 +235,7 @@ export default {
 
     &__main-content {
       max-width: 680px;
-      margin: 0 auto;
+      margin: 25px auto 0;
     }
 
     &__share {
