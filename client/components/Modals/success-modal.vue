@@ -5,7 +5,7 @@
         <button class="close-modal" @click="onClose" type="button">
           <img src="@/assets/img/common/close-icon.svg" alt="Close modal">
         </button>
-        <SuccessMessage class="success-modal__success-message"/>
+        <SuccessMessage className="success-modal_success-message"/>
       </div>
     </div>
   </transition>
@@ -57,10 +57,6 @@ export default {
       position: relative;
     }
 
-    &__success-message {
-      padding: 30px 60px;
-    }
-
     .close-modal {
       position: absolute;
       top: 30px;
@@ -78,10 +74,6 @@ export default {
 
       &_content {
         width: 100%;
-      }
-
-      &__success-message {
-        padding-top: 70px;
       }
     }
   }
