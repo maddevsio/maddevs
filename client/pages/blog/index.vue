@@ -95,11 +95,11 @@ export default {
   },
   mounted() {
     initImgLazyHelper();
-    if (window.localStorage.getItem('prevScrollY')) {
+    if (window.sessionStorage.getItem('prevScrollY')) {
       this.$nextTick(() => {
         // filtered posts are rendered in the markup not immediately. Added a little delay
         setTimeout(() => {
-          window.scrollTo(0, window.localStorage.getItem('prevScrollY'));
+          window.scrollTo(0, window.sessionStorage.getItem('prevScrollY'));
         }, 100);
       });
     }

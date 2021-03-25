@@ -4,10 +4,10 @@
 export default function ({ app }) {
   app.router.beforeEach((to, from, next) => {
     if (from.name === 'blog' && (to.name === 'blog-uid' || to.name === 'customer-university-uid')) {
-      window.localStorage.setItem('prevScrollY', window.scrollY);
+      window.sessionStorage.setItem('prevScrollY', window.scrollY);
     } else {
-      if (to.name !== 'blog' && window.localStorage.getItem('prevScrollY')) {
-        window.localStorage.removeItem('prevScrollY');
+      if (to.name !== 'blog' && window.sessionStorage.getItem('prevScrollY')) {
+        window.sessionStorage.removeItem('prevScrollY');
       }
     }
     next();
