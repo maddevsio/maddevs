@@ -102,6 +102,7 @@ module.exports = {
     },
     fallback: '404.html'
   },
+  router: { middleware: ['beforeRouteChange'] },
   css: [
     {
       src: '~/assets/styles/index.scss',
