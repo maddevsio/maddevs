@@ -138,5 +138,20 @@ export default {
       return { ...this.$data }
     },
   },
+
+  mounted() {
+    this.title = this.$prismic.asText(this.document.meta_title) || this.document.title[0].text
+    this.getClusterData()
+  },
+
+  methods: {
+    getClusterData() {
+      this.$prismic.api.getSingle('cu_master').then(response => {
+        this.cluster =
+          response.data.body.find(cluster => cluster.items.find(post => post.cu_post.id === this.id) !== undefined) ||
+          null
+      })
+    },
+  },
 }
 </script>
