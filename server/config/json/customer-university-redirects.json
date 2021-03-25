@@ -42,5 +42,9 @@
   {
     "from": "/blog/mad-devs-software-price-estimation-principles",
     "to": "https://maddevs.io/customer-university/mad-devs-software-price-estimation-principles/"
+  },
+  {
+    "from": "/blog/web-app-deploy-to-glitch-com",
+    "to": "https://maddevs.io/blog/web-app-deploy-to-glitch/"
   }
 ]
