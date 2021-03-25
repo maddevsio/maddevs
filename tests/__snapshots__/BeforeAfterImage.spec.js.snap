@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BeforeAfterImage component renders correctly 1`] = `
-<div class="comparsion-container">
-  <div class="comparsion-track-line"></div>
+<div data-testid="track-img" class="comparsion-container">
+  <div data-testid="test-comparsion-track-line" class="comparsion-track-line"></div>
   <div class="comparsion-view">
-    <div class="comparsion-image_before"></div> <img loading="lazy" src="[object Object]" alt="GoDee Public Transportation App at 2018 and now." width="1000" height="578.47" class="comparsion-image_after">
+    <div data-testid="test-comparsion-image_before" class="comparsion-image_before"></div> <img data-testid="test-comparsion-image_after" loading="lazy" src="[object Object]" alt="GoDee Public Transportation App at 2018 and now." width="1000" height="578.47" class="comparsion-image_after">
   </div>
 </div>
 `;
