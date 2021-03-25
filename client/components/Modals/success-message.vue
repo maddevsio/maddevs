@@ -51,7 +51,7 @@ export default {
 
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 640px) {
     .success-message {
       padding: 0 40px;
     }
