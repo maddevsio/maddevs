@@ -97,6 +97,7 @@ export default {
     initImgLazyHelper();
     if (window.localStorage.getItem('prevScrollY')) {
       this.$nextTick(() => {
+        // filtered posts are rendered in the markup not immediately. Added a little delay
         setTimeout(() => {
           window.scrollTo(0, window.localStorage.getItem('prevScrollY'));
         }, 100);

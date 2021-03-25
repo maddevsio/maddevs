@@ -1,3 +1,6 @@
+/**
+ * https://nuxtjs.org/examples/middleware-router
+ */
 export default function ({ app }) {
   app.router.beforeEach((to, from, next) => {
     if (from.name === 'blog' && (to.name === 'blog-uid' || to.name === 'customer-university-uid')) {
