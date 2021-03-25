@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UIParagraph component should render correctly 1`] = `
+<div>
+  <p
+    class="paragraph"
+  >
+    some title
+  </p>
+</div>
+`;
