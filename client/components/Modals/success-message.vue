@@ -48,5 +48,12 @@ export default {
       top: 29px;
       right: 17px;
     }
+
+  }
+
+  @media screen and (max-width: 640px) {
+    .success-message {
+      padding: 0 40px;
+    }
   }
 </style>
