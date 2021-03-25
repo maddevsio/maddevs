@@ -6,7 +6,7 @@ const props = {
   isRed: true
 };
 
-describe('UIButton component', () => {
+describe('UIButton Modal Trigger component', () => {
   test('should render correctly with slot', () => {
     const {container} = render(UIButtonModalTrigger, {
       props

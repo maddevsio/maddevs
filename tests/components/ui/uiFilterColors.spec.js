@@ -5,7 +5,7 @@ const props = {
   radios: [{label: 'some label'}]
 };
 
-describe('UIButton component', () => {
+describe('ui filter colour component', () => {
   test('should render correctly', () => {
     const { container } = render(UIFilterColors, {
       props
@@ -22,7 +22,7 @@ describe('UIButton component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  test('should not handle click if disabled', async () => {
+  test('should not handle click disabled', async () => {
     const { emitted } = render(UIFilterColors, {
       props
     });
