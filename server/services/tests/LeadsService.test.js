@@ -37,11 +37,11 @@ describe('leadsService', () => {
     expect(success).toBeTruthy()
   })
 
-  it('refreshCrmToken without current token', async () => {
+  it('refreshCrmToken without current token', () => {
     const getTokenEmpty = jest.fn(() => null)
-    await tokenService.getToken.mockImplementation(getTokenEmpty)
+    tokenService.getToken.mockImplementation(getTokenEmpty)
     // eslint-disable-next-line
-    expect(await leadsService.refreshCrmToken()).rejects.toThrow('Current token not found')
+    expect(leadsService.refreshCrmToken).rejects.toThrow('Current token not found')
   })
 
   it('createNewLead', async () => {
