@@ -3,7 +3,7 @@
     <HeaderMain />
     <main id="case-scroll-container" ref="main" class="case case_parallax">
       <div class="case_content-layer p-48_bottom media-p-24_bottom">
-        <CaseHeader :headerLogo="headerLogo" video-name="godee-case-main-video.mp4">
+        <CaseHeader :header-logo="headerLogo" video-name="godee-case-main-video.mp4">
           <h1 slot="title" class="case_header-title">
             Convenient shuttle <br />
             bus service

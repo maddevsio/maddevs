@@ -1,6 +1,6 @@
 <template>
   <main class="main case">
-    <CaseHeader :headerLogo="headerLogo" video-name="main.ef19480.mp4">
+    <CaseHeader :header-logo="headerLogo" video-name="main.ef19480.mp4">
       <h1 slot="title" class="case_header-title">Namba Food</h1>
       <p slot="description" class="case_header-description">
         Mad Devs created the Namba Food delivery service from scratch. The solution <br />
