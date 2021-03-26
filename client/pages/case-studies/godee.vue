@@ -3,7 +3,7 @@
     <HeaderMain />
     <main id="case-scroll-container" ref="main" class="case case_parallax">
       <div class="case_content-layer p-48_bottom media-p-24_bottom">
-        <CaseHeader logo="godee" video-name="godee-case-main-video.mp4">
+        <CaseHeader :headerLogo="headerLogo" video-name="godee-case-main-video.mp4">
           <h1 slot="title" class="case_header-title">
             Convenient shuttle <br />
             bus service
@@ -884,6 +884,13 @@ export default {
       headerHeight: 62,
       heightHasBeenSet: false,
       currentYear: new Date().getFullYear(),
+      headerLogo: {
+        width: 293,
+        height: 130,
+        pictureFolder: 'godee',
+        fileName: 'godee-logo',
+        alt: '',
+      },
     }
   },
 
