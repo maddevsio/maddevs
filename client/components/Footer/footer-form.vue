@@ -3,16 +3,16 @@
     <div class="fields-list">
       <div class="field-item">
         <input
-          v-model="fullName"
-          :class="{ invalid: $v.fullName.$error }"
+          v-model="fullname"
           type="text"
+          :class="{ invalid: $v.fullname.$error }"
           class="entry-field"
           placeholder="John Smith"
-          @input="$v.fullName.$touch"
+          @input="$v.fullname.$touch"
         />
         <!-- Erros -->
-        <div v-if="$v.fullName.$dirty">
-          <span v-if="!$v.fullName.maxLength" class="modal-error-text error-text">
+        <div v-if="$v.fullname.$dirty">
+          <span v-if="!$v.fullname.maxLength" class="modal-error-text error-text">
             Sorry, the number of characters in this field should not exceed 50.
           </span>
         </div>
@@ -39,17 +39,17 @@
       </div>
       <div class="field-item">
         <textarea
-          v-model="projectDescriber"
-          :class="{ invalid: $v.projectDescriber.$error }"
+          v-model="description"
           type="text"
+          :class="{ invalid: $v.description.$error }"
           class="entry-field textarea"
           placeholder="Describe your project..."
-          @input="$v.projectDescriber.$touch"
+          @input="$v.description.$touch"
         />
         <!-- Erros -->
-        <div v-if="$v.projectDescriber.$dirty">
-          <span v-if="!$v.projectDescriber.maxLength" class="modal-error-text error-text">
-            Sorry, the number of characters in this field should not exceed 500.
+        <div v-if="$v.description.$dirty">
+          <span v-if="!$v.description.maxLength" class="modal-error-text error-text">
+            Sorry, the number of characters in this field should not exceed 256.
           </span>
         </div>
         <!-- End Erros -->
@@ -57,24 +57,24 @@
     </div>
     <FormCheckboxes
       ref="checkboxes"
-      @getPrivacyCheckboxState="getPrivacyCheckboxState"
-      @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
+      @getPrivacyCheckboxState="agreeWithPrivacyPolicy = $event"
+      @getDiscountOffersCheckboxState="agreeToGetMadDevsDiscountOffers = $event"
     />
     <UIButton
       ref="submitButton"
-      :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
-      :loading="onSubmit"
       class="ui-button--transparent-bgc submit-button"
       type="button"
-      @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
+      :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy"
+      @click="submitForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
     >
       Order a project now
     </UIButton>
-    <SuccessModal id="footer-modal" :visibled="isEmailSent" @onClose="resetForm" />
+    <SuccessModal id="footer-modal" :visibled="isSuccess" @onClose="handleModalClose" />
   </form>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import { required, email, maxLength } from 'vuelidate/lib/validators'
 import FormCheckboxes from '@/components/ui/form-checkboxes'
 import UIButton from '@/components/ui/UIButton'
@@ -94,7 +94,7 @@ export default {
   },
 
   validations: {
-    fullName: {
+    fullname: {
       maxLength: maxLength(50),
     },
 
@@ -103,80 +103,71 @@ export default {
       email,
     },
 
-    projectDescriber: {
-      maxLength: maxLength(500),
+    description: {
+      maxLength: maxLength(256),
     },
 
-    validationGroup: ['fullName', 'email', 'projectDescriber'],
+    validationGroup: ['fullname', 'email', 'description'],
   },
 
   data: () => ({
-    form: null,
-    fullName: null,
-    email: null,
-    emailTo: process.env.emailContact,
-    projectDescriber: '',
+    fullname: '',
+    email: '',
+    description: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    isEmailSent: false,
-    onSubmit: false,
-    subject: 'Marketing',
-    modalTitle: 'Mad Devs Website Forms',
+    isSuccess: false,
   }),
 
   methods: {
-    createLead() {},
-    getPrivacyCheckboxState(privacyState) {
-      this.agreeWithPrivacyPolicy = privacyState
-    },
+    ...mapActions(['sendEmail', 'createNewLead']),
 
-    getDiscountOffersCheckboxState(discountOffersState) {
-      this.agreeToGetMadDevsDiscountOffers = discountOffersState
-    },
+    submitForm(isValid) {
+      if (!isValid) return
 
-    sendForm(isValid) {
-      if (isValid === true && !this.onSubmit) {
-        this.onSubmit = true
-        this.form = {
-          templateId: 305480, // Required
-          variables: {
-            fullName: this.fullName,
-            email: this.email || '',
-            emailTo: this.emailTo || '',
-            projectDescriber: this.projectDescriber,
-            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
-            subject: this.subject || '',
-            modalTitle: this.modalTitle,
-          },
-        }
-        this.$store.dispatch('sendEmail', this.form).then(res => {
-          this.onSubmit = false
-          // this.createLead();
-          if (res.status === 200) {
-            this.isEmailSent = true
-            this.disableScrollOnBody()
-            this.resetForm()
-            setTimeout(() => {
-              this.enableScrollOnBody()
-              this.isEmailSent = false
-            }, 3000)
-          } else {
-            this.isEmailSent = false
-          }
-        })
+      const lead = {
+        fullname: this.fullname,
+        email: this.email || '',
+        description: this.description,
+        type: 'footer-form',
       }
+
+      const emailToSent = {
+        templateId: 305480,
+        variables: {
+          fullName: this.fullname || '',
+          email: this.email || '',
+          emailTo: process.env.emailContact,
+          projectDescriber: this.description,
+          agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
+          agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
+          subject: 'Marketing',
+          modalTitle: 'Mad Devs Website Form',
+        },
+      }
+
+      this.createNewLead(lead)
+      this.sendEmail(emailToSent)
+
+      this.resetForm()
+      this.disableScrollOnBody()
+      this.isSuccess = true
     },
 
     resetForm() {
       this.$refs.checkboxes.reset()
       this.$v.$reset() // Reset validation form
-      this.fullName = null
+      this.fullname = null
       this.email = null
       this.form = null
-      this.projectDescriber = ''
+      this.description = ''
       this.agreeWithPrivacyPolicy = false
       this.agreeToGetMadDevsDiscountOffers = false
+    },
+
+    handleModalClose() {
+      this.isSuccess = false
+      this.enableScrollOnBody()
     },
 
     enableScrollOnBody() {

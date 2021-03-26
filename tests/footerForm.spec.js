@@ -46,23 +46,14 @@ describe('footer form', () => {
   })
 
   it('has a functions', () => {
-    expect(
-      typeof footerForm.methods.getPrivacyCheckboxState && typeof footerForm.methods.getDiscountOffersCheckboxState,
-    ).toBe('function')
-  })
-
-  it('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true)
-    wrapper.vm.getDiscountOffersCheckboxState(true)
-
-    expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true)
+    expect(typeof footerForm.methods.submitForm && typeof footerForm.methods.resetForm).toBe('function')
   })
 
   it('should rest values in data instances', () => {
     // Set mock data for data instances
-    wrapper.vm.$data.fullName = 'Name'
+    wrapper.vm.$data.fullname = 'Name'
     wrapper.vm.$data.email = 'email@mail.com'
-    wrapper.vm.$data.projectDescriber = 'Project Describer'
+    wrapper.vm.$data.description = 'Project Describer'
     wrapper.vm.$data.form = {
       value1: 'value1',
       value2: 'value2',
@@ -72,8 +63,8 @@ describe('footer form', () => {
     wrapper.vm.$data.isEmailSent = true
 
     wrapper.vm.resetForm()
-    expect(wrapper.vm.$data.fullName && wrapper.vm.$data.email && wrapper.vm.$data.form).toBeNull()
-    expect(wrapper.vm.$data.projectDescriber).toEqual('')
+    expect(wrapper.vm.$data.fullname && wrapper.vm.$data.email && wrapper.vm.$data.form).toBeNull()
+    expect(wrapper.vm.$data.description).toEqual('')
     expect(
       wrapper.vm.$data.agreeWithPrivacyPolicy &&
         wrapper.vm.$data.agreeToGetMadDevsDiscountOffers &&
