@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import CardsBusinessModelsGrid from '@/components/Cases/cards-content/CardsBusinessModelsGrid'
+import CardsBusinessModelsGrid from '@/components/Cases/cards/namba-food/CardsBusinessModelsGrid'
 
 describe('cardsBusinessModelsGrid', () => {
   let wrapper
