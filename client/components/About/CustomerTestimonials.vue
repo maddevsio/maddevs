@@ -103,6 +103,7 @@ export default {
     let clutchLoader = () => {
       this.script = document.createElement('script');
       this.script.setAttribute('src', 'https://widget.clutch.co/static/js/widget.js');
+      this.script.setAttribute('data-testid', 'test-clutch-script');
       document.body.appendChild(this.script);
       this.script.onload = function() {
         CLUTCHCO.Init();
