@@ -1,6 +1,6 @@
 <template>
   <main class="main case">
-    <CaseHeader logo="sjmc" video-name="sjmc/sjmc-main-video.b35a387.mp4">
+    <CaseHeader :header-logo="headerLogo" video-name="sjmc/sjmc-main-video.b35a387.mp4">
       <h1 slot="title" class="case_header-title">
         Sir John Monash <br />
         Centre
@@ -877,6 +877,14 @@ export default {
           alt: 'Mad Devs’ Team Trip to the SJMC.',
         },
       ],
+
+      headerLogo: {
+        width: 242,
+        height: 110,
+        pictureFolder: 'sjmc',
+        fileName: 'sjmc-logo',
+        alt: '',
+      },
     }
   },
 
