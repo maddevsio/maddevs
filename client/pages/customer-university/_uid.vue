@@ -33,7 +33,7 @@ export default {
       const post = await $prismic.api.getByUID('customer_university', params.uid)
 
       // Query to get recommended posts
-      if (post.tags.length) {
+      if (post.tags && post.tags.length) {
         recommendedPosts = await $prismic.api.query($prismic.predicates.at('document.tags', [post.tags[0]]), {
           pageSize: 4,
         })
@@ -46,6 +46,7 @@ export default {
 
       // Query to get Schema.org markup
       if (
+        post.data.schema_org_snippets &&
         post.data.schema_org_snippets.length &&
         post.data.schema_org_snippets[0].single_snippet.length &&
         post.data.schema_org_snippets[0].single_snippet[0].text
@@ -82,6 +83,7 @@ export default {
     return {
       type: 'cu_post',
       title: '',
+      description: '',
       jsonLd: '',
       cluster: null,
     }
@@ -89,17 +91,17 @@ export default {
 
   head() {
     return {
-      title: this.$prismic.asText(this.document.meta_title) || this.document.title[0].text,
+      title: this.title,
       meta: [
-        { name: 'description', content: this.$prismic.asText(this.document.meta_description) },
+        { name: 'description', content: this.description },
         // Facebook / Open Graph
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: this.openGraphUrl },
         {
           property: 'og:title',
-          content: this.$prismic.asText(this.document.meta_title) || this.document.title[0].text,
+          content: this.title,
         },
-        { property: 'og:description', content: this.$prismic.asText(this.document.meta_description) },
+        { property: 'og:description', content: this.description },
         {
           property: 'og:image',
           content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico',
@@ -110,9 +112,9 @@ export default {
         { property: 'twitter:card', content: 'summary' },
         {
           property: 'twitter:text:title',
-          content: this.$prismic.asText(this.document.meta_title) || this.document.title[0].text,
+          content: this.title,
         },
-        { property: 'twitter:description', content: this.$prismic.asText(this.document.meta_description) },
+        { property: 'twitter:description', content: this.description },
         {
           property: 'twitter:image:src',
           content: this.document.featured_image.url ? this.document.featured_image.url : '/favicon.ico',
@@ -141,6 +143,7 @@ export default {
 
   mounted() {
     this.title = this.$prismic.asText(this.document.meta_title) || this.document.title[0].text
+    this.description = this.$prismic.asText(this.document.meta_description)
     this.getClusterData()
   },
 
