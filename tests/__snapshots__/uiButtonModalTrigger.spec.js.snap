@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Ui button modal trigger renders correctly 1`] = `
+exports[`ui button modal trigger renders correctly 1`] = `
 <button
   class="ui-button-modal-trigger ui-button-modal-trigger--red"
   modalwindowname="Some modal window name"

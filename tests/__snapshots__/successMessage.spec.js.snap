@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Success message renders correctly 1`] = `
+exports[`success message renders correctly 1`] = `
 <section
   class="success-message"
   id="success-message"
@@ -19,17 +19,23 @@ exports[`Success message renders correctly 1`] = `
       <div
         class="success-message__title"
       >
+        
         Thanks for your 
         <br />
-         interest in Mad Devs
+        
+        interest in Mad Devs
+      
       </div>
        
       <div
         class="success-message__info-text"
       >
+        
         The form has been submitted. 
         <br />
-         We will contact you as soon as possible.
+        
+        We will contact you as soon as possible.
+      
       </div>
     </div>
   </div>

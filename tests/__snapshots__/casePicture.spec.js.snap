@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Picture renders correctly 1`] = `
+exports[`picture renders correctly 1`] = `
 <picture>
   <source
     class="image box-shadow"

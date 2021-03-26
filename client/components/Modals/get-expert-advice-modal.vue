@@ -3,11 +3,18 @@
     <div class="fields-list">
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name required">Full Name</p>
-        <input @input="$v.fullName.$touch" type="text" :class="{ 'invalid': $v.fullName.$error }" class="modal-entry-field entry-field" placeholder="John Smith" v-model="fullName">
+        <input
+          v-model="fullName"
+          :class="{ invalid: $v.fullName.$error }"
+          type="text"
+          class="modal-entry-field entry-field"
+          placeholder="John Smith"
+          @input="$v.fullName.$touch"
+        />
         <!-- Erros -->
         <div v-if="$v.fullName.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.fullName.required">This field is required.</span>
-          <span class="modal-error-text error-text" v-if="!$v.fullName.maxLength">
+          <span v-if="!$v.fullName.required" class="modal-error-text error-text">This field is required.</span>
+          <span v-if="!$v.fullName.maxLength" class="modal-error-text error-text">
             Sorry, the number of characters in this field should not exceed 50.
           </span>
         </div>
@@ -15,11 +22,18 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name required">Work email</p>
-        <input @input="$v.email.$touch" type="text" :class="{ 'invalid': $v.email.$error }" class="modal-entry-field entry-field" placeholder="your@mail.com" v-model="email">
+        <input
+          v-model="email"
+          :class="{ invalid: $v.email.$error }"
+          type="text"
+          class="modal-entry-field entry-field"
+          placeholder="your@mail.com"
+          @input="$v.email.$touch"
+        />
         <!-- Erros -->
         <div v-if="$v.email.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.email.required">This field is required.</span>
-          <span class="modal-error-text error-text" v-if="!$v.email.email">
+          <span v-if="!$v.email.required" class="modal-error-text error-text">This field is required.</span>
+          <span v-if="!$v.email.email" class="modal-error-text error-text">
             Invalid email address. Please use your work email.
           </span>
         </div>
@@ -27,24 +41,38 @@
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Phone number</p>
-        <input @input="phoneChangeHandler" type="text" :class="{ 'invalid': $v.phoneNumber.$error }" class="modal-entry-field entry-field" placeholder="+1 23X XXX-XXXX" :value="phoneNumber">
+        <input
+          :class="{ invalid: $v.phoneNumber.$error }"
+          :value="phoneNumber"
+          type="text"
+          class="modal-entry-field entry-field"
+          placeholder="+1 23X XXX-XXXX"
+          @input="phoneChangeHandler"
+        />
         <!-- Erros -->
         <div v-if="$v.phoneNumber.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.phoneNumber.maxLength">
+          <span v-if="!$v.phoneNumber.maxLength" class="modal-error-text error-text">
             Sorry, the number of characters in this field should not exceed 50.
           </span>
-          <span class="modal-error-text error-text" v-if="!$v.phoneNumber.phone">
+          <span v-if="!$v.phoneNumber.phone" class="modal-error-text error-text">
             Sorry, this field can only contain numbers and characters specific for phone numbers.
           </span>
         </div>
         <!-- End Errors -->
       </div>
       <div class="modal-field-item field-item">
-        <p class="modal-field-name field-name">Your questions on IT consulting​</p>
-        <textarea @input="$v.questionsOnItConsulting.$touch" type="text" :class="{ 'invalid': $v.questionsOnItConsulting.$error }" class="modal-entry-field entry-field textarea" placeholder="Tell us how we can help you…" v-model="questionsOnItConsulting"/>
+        <p class="modal-field-name field-name">Your questions on IT consulting</p>
+        <textarea
+          v-model="questionsOnItConsulting"
+          :class="{ invalid: $v.questionsOnItConsulting.$error }"
+          type="text"
+          class="modal-entry-field entry-field textarea"
+          placeholder="Tell us how we can help you…"
+          @input="$v.questionsOnItConsulting.$touch"
+        />
         <!-- Erros -->
         <div v-if="$v.questionsOnItConsulting.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.questionsOnItConsulting.maxLength">
+          <span v-if="!$v.questionsOnItConsulting.maxLength" class="modal-error-text error-text">
             Sorry, the number of characters in this field should not exceed 500.
           </span>
         </div>
@@ -53,15 +81,15 @@
     </div>
     <FormCheckboxes
       ref="checkboxes"
+      :input-id="inputId"
       @getPrivacyCheckboxState="getPrivacyCheckboxState"
       @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
-      :inputId="inputId"
     />
     <UIButton
       :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
-      @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
-      class="modal-button"
       :loading="onSubmit"
+      class="modal-button"
+      @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
     >
       Get expert advice
     </UIButton>
@@ -69,37 +97,43 @@
 </template>
 
 <script>
-import { required, email, maxLength } from 'vuelidate/lib/validators';
-import { phone } from '@/helpers/validators';
-import { phoneHandler } from '@/mixins/phoneHandler';
-import FormCheckboxes from '@/components/ui/form-checkboxes';
-import UIButton from '@/components/ui/UIButton';
+import { required, email, maxLength } from 'vuelidate/lib/validators'
+import { phone } from '@/helpers/validators'
+import { phoneHandler } from '@/mixins/phoneHandler'
+import FormCheckboxes from '@/components/ui/form-checkboxes'
+import UIButton from '@/components/ui/UIButton'
 
 export default {
   name: 'GetExpertAdvice',
   components: {
     FormCheckboxes,
-    UIButton
+    UIButton,
   },
+
   mixins: [phoneHandler],
   validations: {
     fullName: {
       required,
-      maxLength: maxLength(50)
+      maxLength: maxLength(50),
     },
+
     email: {
       required,
-      email
+      email,
     },
+
     phoneNumber: {
       phone,
-      maxLength: maxLength(50)
+      maxLength: maxLength(50),
     },
+
     questionsOnItConsulting: {
-      maxLength: maxLength(500)
+      maxLength: maxLength(500),
     },
-    validationGroup: ['fullName', 'email', 'phoneNumber', 'questionsOnItConsulting']
+
+    validationGroup: ['fullName', 'email', 'phoneNumber', 'questionsOnItConsulting'],
   },
+
   data: () => ({
     modalName: 'get-expert-advice',
     fullName: null,
@@ -112,24 +146,29 @@ export default {
     onSubmit: false,
     subject: 'Marketing',
     form: '',
-    modalTitle: 'Mad Devs Website Forms'
+    modalTitle: 'Mad Devs Website Forms',
   }),
+
   mounted() {
-    this.$nuxt.$on('resetCheckboxesInForm', () => { // Reset checkboxes in form if user close modal
-      this.agreeWithPrivacyPolicy = false;
-      this.agreeToGetMadDevsDiscountOffers = false;
-    });
+    this.$nuxt.$on('resetCheckboxesInForm', () => {
+      // Reset checkboxes in form if user close modal
+      this.agreeWithPrivacyPolicy = false
+      this.agreeToGetMadDevsDiscountOffers = false
+    })
   },
+
   methods: {
     getPrivacyCheckboxState(privacyState) {
-      this.agreeWithPrivacyPolicy = privacyState;
+      this.agreeWithPrivacyPolicy = privacyState
     },
+
     getDiscountOffersCheckboxState(discountOffersState) {
-      this.agreeToGetMadDevsDiscountOffers = discountOffersState;
+      this.agreeToGetMadDevsDiscountOffers = discountOffersState
     },
+
     sendForm(isValid) {
       if (isValid === true && !this.onSubmit) {
-        this.onSubmit = true;
+        this.onSubmit = true
         this.form = {
           templateId: 304641, // Required
           variables: {
@@ -141,29 +180,33 @@ export default {
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
             subject: this.subject || '',
-            modalTitle: this.modalTitle
-          }
-        };
-        this.$store.dispatch('sendEmail', this.form).then(res => {
-          this.onSubmit = false;
-          this.resetForm();
-          if (res.status === 200) {
-            this.$parent.$emit('success');
-          }
-        }).catch(() => {
-          this.onSubmit = true;
-        });
+            modalTitle: this.modalTitle,
+          },
+        }
+        this.$store
+          .dispatch('sendEmail', this.form)
+          .then(res => {
+            this.onSubmit = false
+            this.resetForm()
+            if (res.status === 200) {
+              this.$parent.$emit('success')
+            }
+          })
+          .catch(() => {
+            this.onSubmit = true
+          })
       }
     },
+
     resetForm() {
-      this.$refs.checkboxes.reset();
-      this.fullName = null;
-      this.email = null;
-      this.phoneNumber = null;
-      this.questionsOnItConsulting = null;
-      this.agreeWithPrivacyPolicy = false;
-      this.agreeToGetMadDevsDiscountOffers = false;
-    }
-  }
-};
+      this.$refs.checkboxes.reset()
+      this.fullName = null
+      this.email = null
+      this.phoneNumber = null
+      this.questionsOnItConsulting = null
+      this.agreeWithPrivacyPolicy = false
+      this.agreeToGetMadDevsDiscountOffers = false
+    },
+  },
+}
 </script>

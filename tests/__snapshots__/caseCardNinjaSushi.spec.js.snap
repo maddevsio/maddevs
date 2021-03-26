@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardNinjaSushi renders correctly 1`] = `
+exports[`cardNinjaSushi renders correctly 1`] = `
 <div
   class="case_card-content"
 >
@@ -19,7 +19,8 @@ exports[`CardNinjaSushi renders correctly 1`] = `
       style="color: rgb(245, 247, 249);"
     >
       
-      After business owners submit images and prices, the Namba Food team creates a customised and branded e-commerce website. Updates, support and maintenance are also done by Namba Food.
+      After business owners submit images and prices, the Namba Food team creates a customised and branded e-commerce
+      website. Updates, support and maintenance are also done by Namba Food.
     
     </p>
      
@@ -35,7 +36,8 @@ exports[`CardNinjaSushi renders correctly 1`] = `
       style="color: rgb(245, 247, 249);"
     >
       
-      Business partners can use Namba Food’s software and business model, adjusting for their needs, scale and region. Namba Food is responsible for its maintenance and helps with management and marketing.
+      Business partners can use Namba Food’s software and business model, adjusting for their needs, scale and region.
+      Namba Food is responsible for its maintenance and helps with management and marketing.
     
     </p>
   </div>

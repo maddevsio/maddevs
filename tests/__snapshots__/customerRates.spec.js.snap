@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Customer Rates renders correctly 1`] = `
+exports[`customer Rates renders correctly 1`] = `
 <section
   class="customer-rates"
   id="customer-rates"
@@ -16,7 +16,8 @@ exports[`Customer Rates renders correctly 1`] = `
       </span>
        
       <br />
-       customer   
+      
+      customer   
       <span
         class="customer-rates__title-icon"
       >
@@ -42,11 +43,14 @@ exports[`Customer Rates renders correctly 1`] = `
           <p
             class="customer-rates__description customer-rates__description-top-row"
           >
+            
             recommend us 
             <br
               class="customer-rates__line-break"
             />
-             to others.
+            
+            to others.
+          
           </p>
         </div>
       </div>
@@ -66,11 +70,14 @@ exports[`Customer Rates renders correctly 1`] = `
           <p
             class="customer-rates__description customer-rates__description-top-row"
           >
+            
             stay with us for 
             <br
               class="customer-rates__line-break"
             />
-             more than 2 years.
+            
+            more than 2 years.
+          
           </p>
         </div>
       </div>
@@ -90,11 +97,14 @@ exports[`Customer Rates renders correctly 1`] = `
           <p
             class="customer-rates__description customer-rates__description-top-row"
           >
+            
             are satisfied with 
             <br
               class="customer-rates__line-break"
             />
-             our pricing.
+            
+            our pricing.
+          
           </p>
         </div>
       </div>
@@ -127,7 +137,9 @@ exports[`Customer Rates renders correctly 1`] = `
             <p
               class="customer-rates__description customer-rates__description-bottom-row"
             >
+              
               US dollars raised by 5 customer startups in 2019.
+            
             </p>
           </div>
         </div>
@@ -146,7 +158,9 @@ exports[`Customer Rates renders correctly 1`] = `
             <p
               class="customer-rates__description customer-rates__description-bottom-row"
             >
+              
               of customers are now paying 50% less for IT infrastructure.
+            
             </p>
           </div>
         </div>
@@ -165,7 +179,9 @@ exports[`Customer Rates renders correctly 1`] = `
             <p
               class="customer-rates__description customer-rates__description-bottom-row"
             >
+              
               tech bloggers and conference speakers in our team.
+            
             </p>
           </div>
         </div>
@@ -184,7 +200,9 @@ exports[`Customer Rates renders correctly 1`] = `
             <p
               class="customer-rates__description customer-rates__description-bottom-row"
             >
+              
               projects delivered to customers by our team.
+            
             </p>
           </div>
         </div>
@@ -203,7 +221,9 @@ exports[`Customer Rates renders correctly 1`] = `
             <p
               class="customer-rates__description customer-rates__description-bottom-row"
             >
+              
               staff members work for Mad Devs.
+            
             </p>
           </div>
         </div>
@@ -222,7 +242,9 @@ exports[`Customer Rates renders correctly 1`] = `
             <p
               class="customer-rates__description customer-rates__description-bottom-row"
             >
+              
               open-source projects on GitHub.
+            
             </p>
           </div>
         </div>

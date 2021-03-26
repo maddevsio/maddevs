@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Featured post component renders correctly 1`] = `
+exports[`featured post component renders correctly 1`] = `
 <nuxt-link-stub
   class="featured-post"
   to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"

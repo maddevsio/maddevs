@@ -1,36 +1,36 @@
 <template>
   <div class="slider-content">
-    <div class="swiper-container thumb-example" :class="{'box-shadow': boxShadow}">
+    <div :class="{ 'box-shadow': boxShadow }" class="swiper-container thumb-example">
       <Picture
-        pictureFolder="common"
-        :fileName="safariTopBarImage"
-        fileExtension="jpg"
-        :alt="safariTopBarAlt"
-        :lazyLoading="true"
         v-if="safariTopBar"
+        :file-name="safariTopBarImage"
+        :alt="safariTopBarAlt"
+        :lazy-loading="true"
+        picture-folder="common"
+        file-extension="jpg"
       />
-      <swiper class="swiper gallery-top" :options="swiperOptionTop" ref="swiperTop">
+      <swiper ref="swiperTop" :options="swiperOptionTop" class="swiper gallery-top">
         <swiper-slide v-for="element in components" :key="element.fileName">
           <Picture
-            :pictureFolder="element.pictureFolder"
-            :fileName="element.fileName"
-            :fileExtension="element.fileExtension"
-            :lazyLoading="true"
+            :picture-folder="element.pictureFolder"
+            :file-name="element.fileName"
+            :file-extension="element.fileExtension"
+            :lazy-loading="true"
             :alt="element.alt"
           />
         </swiper-slide>
       </swiper>
     </div>
     <p v-if="sliderDescription !== ''" class="slider-description">
-      {{sliderDescription}}
+      {{ sliderDescription }}
     </p>
-    <swiper class="swiper gallery-thumbs" :options="swiperOptionThumbs" ref="swiperThumbs">
+    <swiper ref="swiperThumbs" :options="swiperOptionThumbs" class="swiper gallery-thumbs">
       <swiper-slide v-for="element in components" :key="element.fileName">
         <Picture
-          :pictureFolder="element.pictureFolder"
-          :fileName="element.fileName"
-          :fileExtension="element.fileExtension"
-          :lazyLoading="true"
+          :picture-folder="element.pictureFolder"
+          :file-name="element.fileName"
+          :file-extension="element.fileExtension"
+          :lazy-loading="true"
           :alt="element.alt"
         />
       </swiper-slide>
@@ -39,26 +39,60 @@
 </template>
 
 <script>
-import {Swiper, SwiperSlide} from 'vue-awesome-swiper';
-import 'swiper/css/swiper.css';
-import Picture from '@/components/Cases/Picture';
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
+import Picture from '@/components/Cases/Picture'
 
 export default {
-  name: 'swiper-example-default',
+  name: 'SwiperExampleDefault',
   title: 'Swiper',
   components: {
     Swiper,
     SwiperSlide,
-    Picture
+    Picture,
   },
+
+  props: {
+    components: {
+      type: Array,
+      required: true,
+    },
+
+    boxShadow: {
+      type: Boolean,
+      default: false,
+    },
+
+    sliderDescription: {
+      type: String,
+      default: '',
+    },
+
+    safariTopBar: {
+      type: Boolean,
+      default: false,
+    },
+
+    safariTopBarImage: {
+      type: String,
+      default: '',
+    },
+
+    safariTopBarAlt: {
+      type: String,
+      default: '',
+    },
+  },
+
   data() {
     return {
       swiperOptionTop: {
         loop: false,
         loopedSlides: 0, // looped slides should be the same
         spaceBetween: 10,
-        grabCursor: true
+        grabCursor: true,
       },
+
       swiperOptionThumbs: {
         loop: false,
         loopedSlides: 0, // looped slides should be the same
@@ -66,45 +100,20 @@ export default {
         centeredSlides: true,
         slidesPerView: 'auto',
         touchRatio: 0.1,
-        slideToClickedSlide: true
-      }
-    };
+        slideToClickedSlide: true,
+      },
+    }
   },
+
   mounted() {
     this.$nextTick(() => {
-      const swiperTop = this.$refs.swiperTop.$swiper;
-      const swiperThumbs = this.$refs.swiperThumbs.$swiper;
-      swiperTop.controller.control = swiperThumbs;
-      swiperThumbs.controller.control = swiperTop;
-    });
+      const swiperTop = this.$refs.swiperTop.$swiper
+      const swiperThumbs = this.$refs.swiperThumbs.$swiper
+      swiperTop.controller.control = swiperThumbs
+      swiperThumbs.controller.control = swiperTop
+    })
   },
-  props: {
-    components: {
-      type: Array,
-      required: true
-    },
-    boxShadow: {
-      type: Boolean,
-      default: false
-    },
-    sliderDescription: {
-      type: String,
-      default: ''
-    },
-    safariTopBar: {
-      type: Boolean,
-      default: false
-    },
-    safariTopBarImage: {
-      type: String,
-      default: ''
-    },
-    safariTopBarAlt: {
-      type: String,
-      default: ''
-    }
-  }
-};
+}
 </script>
 
 <style lang="scss">

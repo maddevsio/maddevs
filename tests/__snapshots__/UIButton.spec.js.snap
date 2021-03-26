@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`UIButton component should render correctly with loading prop 1`] = `
+exports[`uIButton component should render correctly with loading prop 1`] = `
 <div>
   <button
     class="ui-button"
@@ -16,7 +16,7 @@ exports[`UIButton component should render correctly with loading prop 1`] = `
 </div>
 `;
 
-exports[`UIButton component should render correctly with slot 1`] = `
+exports[`uIButton component should render correctly with slot 1`] = `
 <div>
   <button
     class="ui-button"
@@ -30,7 +30,7 @@ exports[`UIButton component should render correctly with slot 1`] = `
 </div>
 `;
 
-exports[`UIButton component should render correctly without slot 1`] = `
+exports[`uIButton component should render correctly without slot 1`] = `
 <div>
   <button
     class="ui-button"

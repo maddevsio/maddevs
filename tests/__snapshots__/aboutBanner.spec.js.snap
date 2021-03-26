@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Form checkboxes renders correctly 1`] = `
+exports[`form checkboxes renders correctly 1`] = `
 <div
   class="banner-container"
 >

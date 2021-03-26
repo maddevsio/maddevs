@@ -2,10 +2,17 @@
   <form class="footer-form form">
     <div class="fields-list">
       <div class="field-item">
-        <input @input="$v.fullName.$touch" type="text" :class="{ 'invalid': $v.fullName.$error }" class="entry-field" placeholder="John Smith" v-model="fullName">
+        <input
+          v-model="fullname"
+          type="text"
+          :class="{ invalid: $v.fullname.$error }"
+          class="entry-field"
+          placeholder="John Smith"
+          @input="$v.fullname.$touch"
+        />
         <!-- Erros -->
-        <div v-if="$v.fullName.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.fullName.maxLength">
+        <div v-if="$v.fullname.$dirty">
+          <span v-if="!$v.fullname.maxLength" class="modal-error-text error-text">
             Sorry, the number of characters in this field should not exceed 50.
           </span>
         </div>
@@ -13,23 +20,36 @@
       </div>
       <div class="field-item footer-form_email">
         <div v-PlaceholderAsterisk="'your@mail.com'">
-          <input @input="$v.email.$touch" type="text" :class="{ 'invalid': $v.email.$error }" class="entry-field" v-model="email">
+          <input
+            v-model="email"
+            :class="{ invalid: $v.email.$error }"
+            type="text"
+            class="entry-field"
+            @input="$v.email.$touch"
+          />
         </div>
         <!-- Erros -->
         <div v-if="$v.email.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.email.required">This field is required.</span>
-          <span class="modal-error-text error-text" v-if="!$v.email.email">
+          <span v-if="!$v.email.required" class="modal-error-text error-text">This field is required.</span>
+          <span v-if="!$v.email.email" class="modal-error-text error-text">
             Invalid email address. Please use your work email.
           </span>
         </div>
         <!-- End Erros -->
       </div>
       <div class="field-item">
-        <textarea @input="$v.projectDescriber.$touch" type="text" :class="{ 'invalid': $v.projectDescriber.$error }" class="entry-field textarea" placeholder="Describe your project..." v-model="projectDescriber" />
+        <textarea
+          v-model="description"
+          type="text"
+          :class="{ invalid: $v.description.$error }"
+          class="entry-field textarea"
+          placeholder="Describe your project..."
+          @input="$v.description.$touch"
+        />
         <!-- Erros -->
-        <div v-if="$v.projectDescriber.$dirty">
-          <span class="modal-error-text error-text" v-if="!$v.projectDescriber.maxLength">
-            Sorry, the number of characters in this field should not exceed 500.
+        <div v-if="$v.description.$dirty">
+          <span v-if="!$v.description.maxLength" class="modal-error-text error-text">
+            Sorry, the number of characters in this field should not exceed 256.
           </span>
         </div>
         <!-- End Erros -->
@@ -37,247 +57,242 @@
     </div>
     <FormCheckboxes
       ref="checkboxes"
-      @getPrivacyCheckboxState="getPrivacyCheckboxState"
-      @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
+      @getPrivacyCheckboxState="agreeWithPrivacyPolicy = $event"
+      @getDiscountOffersCheckboxState="agreeToGetMadDevsDiscountOffers = $event"
     />
     <UIButton
-      class="ui-button--transparent-bgc submit-button"
-      @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
-      type="button"
       ref="submitButton"
-      :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
-      :loading="onSubmit"
+      class="ui-button--transparent-bgc submit-button"
+      type="button"
+      :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy"
+      @click="submitForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
     >
       Order a project now
     </UIButton>
-    <SuccessModal :visibled="isEmailSent" id="footer-modal" @onClose="resetForm" />
+    <SuccessModal id="footer-modal" :visibled="isSuccess" @onClose="handleModalClose" />
   </form>
 </template>
 
 <script>
-import { required, email, maxLength } from 'vuelidate/lib/validators';
-import FormCheckboxes from '@/components/ui/form-checkboxes';
-import UIButton from '@/components/ui/UIButton';
-import SuccessModal from '@/components/Modals/success-modal';
-import PlaceholderAsterisk from '@/directives/PlaceholderAsterisk';
+import { mapActions } from 'vuex'
+import { required, email, maxLength } from 'vuelidate/lib/validators'
+import FormCheckboxes from '@/components/ui/form-checkboxes'
+import UIButton from '@/components/ui/UIButton'
+import SuccessModal from '@/components/Modals/success-modal'
+import PlaceholderAsterisk from '@/directives/PlaceholderAsterisk'
 
 export default {
-  name: 'footer-form',
+  name: 'FooterForm',
   components: {
     FormCheckboxes,
     UIButton,
-    SuccessModal
+    SuccessModal,
   },
+
   directives: {
-    PlaceholderAsterisk
+    PlaceholderAsterisk,
   },
+
   validations: {
-    fullName: {
-      maxLength: maxLength(50)
+    fullname: {
+      maxLength: maxLength(50),
     },
+
     email: {
       required,
-      email
+      email,
     },
-    projectDescriber: {
-      maxLength: maxLength(500)
+
+    description: {
+      maxLength: maxLength(256),
     },
-    validationGroup: ['fullName', 'email', 'projectDescriber']
+
+    validationGroup: ['fullname', 'email', 'description'],
   },
+
   data: () => ({
-    form: null,
-    fullName: null,
-    email: null,
-    emailTo: process.env.emailContact,
-    projectDescriber: '',
+    fullname: '',
+    email: '',
+    description: '',
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    isEmailSent: false,
-    onSubmit: false,
-    subject: 'Marketing',
-    modalTitle: 'Mad Devs Website Forms'
+    isSuccess: false,
   }),
+
   methods: {
-    createLead() {
-      const data = [{
-        name: this.fullName,
-        custom_fields_values: [
-          { field_id: 261281, values: [{ value: this.email }] }, // Email
-          { field_id: 261437, values: [{ value: this.projectDescriber }] } // Project Describer
-        ]
-      }];
-    },
-    getPrivacyCheckboxState(privacyState) {
-      this.agreeWithPrivacyPolicy = privacyState;
-    },
-    getDiscountOffersCheckboxState(discountOffersState) {
-      this.agreeToGetMadDevsDiscountOffers = discountOffersState;
-    },
-    sendForm(isValid) {
-      if (isValid === true && !this.onSubmit) {
-        this.onSubmit = true;
-        this.form = {
-          templateId: 305480, // Required
-          variables: {
-            fullName: this.fullName,
-            email: this.email || '',
-            emailTo: this.emailTo || '',
-            projectDescriber: this.projectDescriber,
-            agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
-            agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
-            subject: this.subject || '',
-            modalTitle: this.modalTitle
-          }
-        };
-        this.$store.dispatch('sendEmail', this.form).then(res => {
-          this.onSubmit = false;
-          // this.createLead();
-          if (res.status === 200) {
-            this.isEmailSent = true;
-            this.disableScrollOnBody();
-            this.resetForm();
-            setTimeout(() => {
-              this.isEmailSent = false;
-              this.enableScrollOnBody();
-            }, 3000);
-          } else {
-            this.isEmailSent = false;
-          }
-        });
+    ...mapActions(['sendEmail', 'createNewLead']),
+
+    submitForm(isValid) {
+      if (!isValid) return
+
+      const lead = {
+        fullname: this.fullname,
+        email: this.email || '',
+        description: this.description,
+        type: 'footer-form',
       }
+
+      const emailToSent = {
+        templateId: 305480,
+        variables: {
+          fullName: this.fullname || '',
+          email: this.email || '',
+          emailTo: process.env.emailContact,
+          projectDescriber: this.description,
+          agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
+          agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
+          subject: 'Marketing',
+          modalTitle: 'Mad Devs Website Form',
+        },
+      }
+
+      this.createNewLead(lead)
+      this.sendEmail(emailToSent)
+
+      this.resetForm()
+      this.disableScrollOnBody()
+      this.isSuccess = true
     },
+
     resetForm() {
-      this.$refs.checkboxes.reset();
-      this.$v.$reset(); // Reset validation form
-      this.fullName = null;
-      this.email = null;
-      this.form = null;
-      this.projectDescriber = '';
-      this.agreeWithPrivacyPolicy = false;
-      this.agreeToGetMadDevsDiscountOffers = false;
+      this.$refs.checkboxes.reset()
+      this.$v.$reset() // Reset validation form
+      this.fullname = null
+      this.email = null
+      this.form = null
+      this.description = ''
+      this.agreeWithPrivacyPolicy = false
+      this.agreeToGetMadDevsDiscountOffers = false
     },
+
+    handleModalClose() {
+      this.isSuccess = false
+      this.enableScrollOnBody()
+    },
+
     enableScrollOnBody() {
-      document.body.style.top = 'auto';
-      document.body.style.overflow = 'auto';
+      document.body.style.top = 'auto'
+      document.body.style.overflow = 'auto'
     },
+
     disableScrollOnBody() {
-      document.body.style.top = `-${window.scrollY}px`;
-      document.body.style.overflow = 'hidden';
-    }
-  }
-};
+      document.body.style.top = `-${window.scrollY}px`
+      document.body.style.overflow = 'hidden'
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/vars';
+@import '../../assets/styles/vars';
 
-	.footer-form {
+.footer-form {
+  width: 100%;
+
+  &_email {
+    /deep/ .v-placeholder-asterisk {
+      font-size: 16px;
+      font-family: 'Poppins-Regular', sans-serif;
+      color: $text-color--grey-form-placeholder;
+      left: 17px !important;
+      top: 50% !important;
+      transform: translateY(-50%);
+    }
+  }
+
+  .submit-button {
     width: 100%;
+    height: 64px;
+  }
 
-    &_email {
-      /deep/ .v-placeholder-asterisk {
-        font-size: 16px;
-        font-family: 'Poppins-Regular', sans-serif;
-        color: $text-color--grey-form-placeholder;
-        left: 17px !important;
-        top: 50% !important;
-        transform: translateY(-50%);
-      }
-    }
+  .textarea {
+    height: 192px;
+    max-height: 192px;
+    padding: 22px 10px;
+  }
 
-		.submit-button {
+  .fields-list {
+    display: grid;
+    margin-bottom: 18px;
+  }
+
+  .form-checkboxes {
+    margin-top: 10px;
+    margin-bottom: 22px;
+  }
+
+  .field-item {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+
+    > div {
       width: 100%;
-      height: 64px;
-		}
-
-		.textarea {
-      height: 192px;
-      max-height: 192px;
-      padding: 22px 10px;
     }
 
-    .fields-list {
-      display: grid;
-      margin-bottom: 18px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .entry-field {
+    padding: 12px 19px 13px;
+    border: 1px solid $border-color--grey-form;
+    border-radius: 4px;
+    background-color: transparent;
+    color: $text-color--white-darken;
+    font-size: 16px;
+    line-height: 27px;
+
+    &::placeholder {
+      color: $text-color--grey-form-placeholder;
     }
 
-    .form-checkboxes {
-      margin-top: 10px;
-      margin-bottom: 22px;
+    &.textarea {
+      font-size: 16px;
+      line-height: 27px;
     }
+  }
 
+  .entry-field,
+  .error-text {
+    font-family: 'Poppins-Regular', sans-serif;
+  }
+
+  .error-text {
+    font-size: 14px;
+  }
+
+  .invalid {
+    border-color: $input-invalid--bg;
+  }
+
+  /deep/ .form-checkbox-label {
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+  }
+}
+
+.freeze {
+  pointer-events: none;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1320px) {
+  .footer-form .error-text {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .footer-form {
     .field-item {
-      margin-bottom: 16px;
-      display: flex;
-      flex-direction: column;
-
-      > div {
-        width: 100%;
-      }
-
       &:last-child {
         margin-bottom: 0;
       }
     }
-
-    .entry-field {
-      padding: 12px 19px 13px;
-      border: 1px solid $border-color--grey-form;
-      border-radius: 4px;
-      background-color: transparent;
-      color: $text-color--white-darken;
-      font-size: 16px;
-      line-height: 27px;
-
-      &::placeholder {
-        color: $text-color--grey-form-placeholder;
-      }
-
-      &.textarea {
-        font-size: 16px;
-        line-height: 27px;
-      }
-    }
-
-    .entry-field,
-    .error-text {
-      font-family: 'Poppins-Regular', sans-serif;
-    }
-
-    .error-text {
-      font-size: 14px;
-    }
-
-    .invalid {
-      border-color: $input-invalid--bg;
-    }
-
-    /deep/ .form-checkbox-label {
-      padding-left: 30px;
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: -0.02em;
-    }
   }
-
-  .freeze {
-    pointer-events: none;
-    user-select: none;
-  }
-
-  @media only screen and (max-width: 1320px) {
-		.footer-form .error-text {
-      font-size: 13px;
-    }
-  }
-
-  @media only screen and (max-width: 991px) {
-		.footer-form {
-      .field-item {
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
+}
 </style>
