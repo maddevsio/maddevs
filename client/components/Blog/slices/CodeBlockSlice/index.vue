@@ -9,7 +9,7 @@ import { PrismEditor } from 'vue-prism-editor'
 import 'vue-prism-editor/dist/prismeditor.min.css'
 
 import 'prismjs'
-import { highlight } from 'prismjs/components/prism-core.min'
+import Prism from 'prismjs/components/prism-core.min'
 import '@/components/Blog/slices/CodeBlockSlice/highlights'
 
 export default {
@@ -37,7 +37,7 @@ export default {
 
   methods: {
     highlighter(code) {
-      return highlight(code, window.Prism.languages[this.slice.primary.language], this.slice.primary.language)
+      return Prism.highlight(code, Prism.languages[this.slice.primary.language], this.slice.primary.language)
     },
   },
 }

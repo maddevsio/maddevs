@@ -125,7 +125,7 @@ module.exports = {
   /*
    ** Server middlewares
    */
-  serverMiddleware: [{ path: '/', handler: '~/../server/middleware/rest.js' }],
+  serverMiddleware: [{ path: '/', handler: '~/../server/index.js' }],
   /*
    ** Build configuration
    */
@@ -150,7 +150,7 @@ module.exports = {
   },
   modules: ['@nuxtjs/axios', '@nuxtjs/robots', '@nuxtjs/prismic'],
   axios: {
-    baseURL: process.env.NODE_API_URL,
+    baseURL: '/',
   },
   robots: {
     UserAgent: '*',

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-console */
 const mkdirp = require('mkdirp')
 const { get } = require('https')
 const { readFile, writeFile } = require('fs')
@@ -26,6 +27,8 @@ const findArgument = (argName, defaultOutput) => {
 
 const outputPath = findArgument('output', './coverage')
 const inputPath = findArgument('input', './coverage/coverage-summary.json')
+
+console.log(outputPath, inputPath, 'log')
 
 const getColour = coverage => {
   if (coverage < 80) return 'red'
@@ -65,18 +68,15 @@ const writeBadgeInFolder = (key, res) => {
 const getBadgeByKey = report => key => {
   const url = getBadge(report, key)
 
-  download(url, (err, res) => {
-    if (err) {
-      throw err
+  download(url, async (err, res) => {
+    if (err) throw err
+
+    try {
+      await mkdirp(outputPath)
+      writeBadgeInFolder(key, res)
+    } catch (error) {
+      console.error(`Could not create output directory ${error}`)
     }
-    mkdirp(outputPath, folderError => {
-      if (folderError) {
-        // eslint-disable-next-line
-        console.error(`Could not create output directory ${folderError}`);
-      } else {
-        writeBadgeInFolder(key, res)
-      }
-    })
   })
 }
 

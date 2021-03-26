@@ -20,6 +20,11 @@ module.exports = {
   },
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
   collectCoverage: true,
-  collectCoverageFrom: ['<rootDir>/client/components/**/*.vue', '<rootDir>/client/pages/*.vue'],
+  collectCoverageFrom: [
+    '<rootDir>/client/components/**/*.vue',
+    '<rootDir>/client/pages/*.vue',
+    '<rootDir>/server/**/*.js',
+  ],
+  coveragePathIgnorePatterns: ['<rootDir>/server/db', '<rootDir>/server/routes', '<rootDir>/server/index.js'],
   coverageReporters: ['json-summary', 'text', 'lcov'],
 }
