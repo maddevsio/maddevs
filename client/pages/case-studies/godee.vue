@@ -322,7 +322,7 @@
                 loop="true"
                 muted="true"
               >
-                <source :src="getPathTripRequestMapVideo" type="video/mp4" />
+                <source :src="getMediaFromS3('/videos/map-stops.mp4')" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -373,7 +373,7 @@
                 alt="GoDee: Safari Browser Top Bar White."
               />
               <video id="trip-monitor" class="case_html-video" width="100%" height="100%" loop="true" muted="true">
-                <source :src="getPathTripMonitorVideo" type="video/mp4" />
+                <source :src="getMediaFromS3('/videos/trip-monitor.f4a33e6.mp4')" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -440,7 +440,7 @@
                 loop="true"
                 muted="true"
               >
-                <source :src="getPathRouteOptimizationVideo" type="video/mp4" />
+                <source :src="getMediaFromS3('/videos/route-optimization.f5a2ff0.mp4')" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -918,12 +918,6 @@ export default {
         },
       ],
     }
-  },
-
-  computed: {
-    getPathTripRequestMapVideo: () => `${process.env.awsUrl}/map-stops.mp4`,
-    getPathTripMonitorVideo: () => `${process.env.awsUrl}/trip-monitor.f4a33e6.mp4`,
-    getPathRouteOptimizationVideo: () => `${process.env.awsUrl}/route-optimization.f5a2ff0.mp4`,
   },
 
   mounted() {

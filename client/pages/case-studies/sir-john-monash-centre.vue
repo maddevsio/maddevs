@@ -250,7 +250,7 @@
           @click="videoSetState"
         >
           <video ref="video" width="100%" height="100%" playsinline>
-            <source :src="getPathToPhoneVideo" type="video/mp4" />
+            <source :src="getMediaFromS3('/videos/bluetooth-beacons-video.9ca649c.mp4')" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -911,10 +911,6 @@ export default {
         },
       ],
     }
-  },
-
-  computed: {
-    getPathToPhoneVideo: () => `${process.env.awsUrl}/bluetooth-beacons-video.9ca649c.mp4`,
   },
 
   mounted() {

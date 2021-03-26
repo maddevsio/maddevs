@@ -117,7 +117,7 @@
             loop="true"
             muted="true"
           >
-            <source :src="getPathToPhoneVideo" type="video/mp4" />
+            <source :src="getMediaFromS3('/videos/mobile-applications-for-end-users.faaab2d.mp4')" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -341,7 +341,7 @@
             class="case_ios-map-video-image case_box-shadow"
           />
           <video v-else id="map-video" class="case_map-video" width="100%" height="100%" loop="true" muted="true">
-            <source :src="getPathToMapVideo" type="video/mp4" />
+            <source :src="getMediaFromS3('/videos/map.c41e893.mp4')" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -844,11 +844,6 @@ export default {
         },
       ],
     }
-  },
-
-  computed: {
-    getPathToPhoneVideo: () => `${process.env.awsUrl}/mobile-applications-for-end-users.faaab2d.mp4`,
-    getPathToMapVideo: () => `${process.env.awsUrl}/map.c41e893.mp4`,
   },
 
   mounted() {

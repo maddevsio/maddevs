@@ -1,7 +1,7 @@
 <template>
   <section id="case-header" class="case_header">
     <video v-if="!isIphone" class="case_main-video" loop="true" muted="true" autoplay="true">
-      <source :src="video" type="video/mp4" />
+      <source :src="getMediaFromS3($props.videoName)" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <div class="case_header-content">
@@ -34,12 +34,7 @@ export default {
   data() {
     return {
       isIphone: false,
-      video: '',
     }
-  },
-
-  created() {
-    this.video = `${process.env.awsUrl}/${this.$props.videoName}`
   },
 
   mounted() {

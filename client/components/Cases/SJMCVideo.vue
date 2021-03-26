@@ -3,8 +3,8 @@
     <div class="video-wrapper" @click="videoSetState">
       <div v-if="showIcon" class="pause-icon"></div>
       <video ref="video" class="main-video">
-        <source :src="getPathToVideo" type="video/mp4" />
-        Your browser does not support the video tag.
+        <source :src="getMediaFromS3('/videos/sjmc/sjmc-modal-video.00bd869.mp4')" type="video/mp4" />
+        Your browser does not support the video tag!!!.
       </video>
     </div>
     <button class="exit" @click="exitFullscreen"></button>
@@ -23,7 +23,7 @@ export default {
   },
 
   computed: {
-    getPathToVideo: () => `${process.env.awsUrl}/sjmc/sjmc-modal-video.00bd869.mp4`,
+    getPathToVideo: () => `${process.env.awsUrl}/videos/sjmc/sjmc-modal-video.00bd869.mp4`,
   },
 
   mounted() {
