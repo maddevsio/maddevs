@@ -6,7 +6,6 @@
   }
 
   &_nambafood-logo {
-    @include nambafood-header;
     width: 259px;
     min-width: 259px;
     height: 82px;
@@ -131,11 +130,10 @@
 
   @media screen and (max-width: 1170px) {
     &_nambafood-logo {
-      margin-left: 0;
+      width: 208px;
       min-width: auto;
-      width: 100%;
+      margin-left: 0;
       margin-bottom: 38px;
-      background-position: -26px;
     }
   }
 
@@ -201,6 +199,7 @@
 
   @media screen and (max-width: 655px) {
     &_nambafood-logo {
+      width: 164px;
       height: 65px;
       background-position: -21px;
       margin-bottom: 35px;
