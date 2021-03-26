@@ -90,12 +90,6 @@ export default {
     CustomerUniversitySection,
   },
 
-  beforeRouteEnter(to, from, next) {
-    next(vm => {
-      if (from.params.uid) vm.visitedPost = from.fullPath
-    })
-  },
-
   data() {
     return {
       pageSize: 12,
@@ -172,6 +166,14 @@ export default {
 
   mounted() {
     initImgLazyHelper()
+    if (window.sessionStorage.getItem('prevScrollY')) {
+      this.$nextTick(() => {
+        // filtered posts are rendered in the markup not immediately. Added a small delay
+        setTimeout(() => {
+          window.scrollTo(0, window.sessionStorage.getItem('prevScrollY'))
+        }, 100)
+      })
+    }
   },
 
   methods: {
