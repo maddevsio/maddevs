@@ -1,31 +1,17 @@
-import {
-  mount
-} from '@vue/test-utils';
 import MeetOurExperts from '@/components/About/MeetOurExperts.vue';
+import {render, screen} from '@testing-library/vue';
 
 describe('Meet Our Experts', () => {
-  let wrapper;
-
-  beforeEach(() => {
-    wrapper = mount(MeetOurExperts);
-  });
-
-  // ------ IMPORTANT ----- //
   test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
-  
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-  // --------------------- //
+    const { container } = render(MeetOurExperts);
 
-  test('experts must contain eight elements', () => {
-    expect(wrapper.vm.$data.experts).toHaveLength(8);
+    expect(screen.getByText('Meet our experts')).not.toBeNull();
+    expect(container).toMatchSnapshot();
   });
 
   test('correctly length of elements in DOM', () => {
-    let contentItems = wrapper.findAll('.meet-our_experts__expert-item');
-    expect(contentItems).toHaveLength(8);
+    const { container } = render(MeetOurExperts);
+
+    expect(container.querySelectorAll('.meet-our_experts__expert-item')).toHaveLength(8);
   });
 });
