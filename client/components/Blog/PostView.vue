@@ -425,10 +425,6 @@ export default {
         background-color: $bgcolor--white-primary;
       }
     }
-
-    /deep/ .blog-post__cover-image {
-      height: 220px;
-    }
   }
 }
 
@@ -482,10 +478,6 @@ export default {
 
       /deep/ .blog-post-meta {
         display: none;
-      }
-
-      /deep/ .blog-post__cover-image {
-        height: 50.2vw;
       }
     }
 
