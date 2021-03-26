@@ -1,9 +1,9 @@
 <template>
   <main class="main">
     <AboutBanner />
-    <WeCreateItProjectFor />
+    <WeCreateItProjectsFor />
     <TechnologiesAndTools />
-    <CaseStudies />
+    <CaseStudies type="index" />
     <QuickProjectStart />
     <CustomerTestimonials />
     <CustomerRates />
@@ -13,7 +13,7 @@
 
 <script>
 import AboutBanner from '@/components/Banner/AboutBanner'
-import WeCreateItProjectFor from '@/components/About/WeCreateItProjectFor'
+import WeCreateItProjectsFor from '@/components/About/WeCreateItProjectsFor'
 import TechnologiesAndTools from '@/components/About/TechnologiesAndTools'
 import CaseStudies from '@/components/About/CaseStudies'
 import QuickProjectStart from '@/components/About/QuickProjectStart'
@@ -26,7 +26,7 @@ export default {
   name: 'About',
   components: {
     AboutBanner,
-    WeCreateItProjectFor,
+    WeCreateItProjectsFor,
     TechnologiesAndTools,
     CustomerTestimonials,
     CaseStudies,

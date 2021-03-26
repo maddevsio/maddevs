@@ -7,48 +7,23 @@
           IT projects for:
         </h2>
         <div class="weCreateItProject__projects-type_list row gy-0">
-          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
+          <div
+            v-for="[first, second] in industriesEntries"
+            :key="first"
+            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+          >
             <p class="weCreateItProject__paragraph">
-              Content Streaming <br />
-              Transportation
-            </p>
-          </div>
-          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="weCreateItProject__paragraph">
-              HealthTech <br />
-              IoTs
-            </p>
-          </div>
-          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="weCreateItProject__paragraph">
-              E-Commerce <br />
-              AdTech
-            </p>
-          </div>
-          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="weCreateItProject__paragraph">
-              E-Learning <br />
-              FinTech
-            </p>
-          </div>
-          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="weCreateItProject__paragraph">
-              Serverless <br />
-              BYOD
-            </p>
-          </div>
-          <div class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
-            <p class="weCreateItProject__paragraph">
-              Blockchain <br />
-              FoodTech
+              {{ first }}
+              <br />
+              {{ second }}
             </p>
           </div>
         </div>
         <ul class="weCreateItProject__flags-list">
-          <li v-for="(flag, i) in flags" :key="i" class="weCreateItProject__flag-item">
+          <li v-for="country in countries" :key="country" class="weCreateItProject__flag-item">
             <img
-              :data-src="require(`@/assets/img/Home/flags/${flag}.svg`)"
-              :alt="flag"
+              :data-src="require(`@/assets/img/Home/flags/${country}.svg`)"
+              :alt="country"
               width="32"
               height="32"
               class="img_lazy"
@@ -61,35 +36,16 @@
 </template>
 
 <script>
+import { countries, industriesEntries } from '@/data/projectsFor'
+
 export default {
   name: 'WeCreateItProjectFor',
+
   data() {
     return {
-      flags: [
-        // if will be added or removed flag, need to change css grid, on line 94 and 178
-        'usa',
-        'australia',
-        'vietnam',
-        'france',
-        'uk',
-        'indonesia',
-        'germany',
-        'austria',
-        'switzerland',
-        'canada',
-        'latvia',
-        'kazakhstan',
-        'sweden',
-        'finland',
-        'uae',
-        'denmark',
-        'japan',
-        'norway',
-        'portugal',
-        'katar',
-        'south_africa',
-        'netherlands',
-      ],
+      // if will be added or removed country, need to change css grid, on line 94 and 178
+      countries,
+      industriesEntries,
     }
   },
 }

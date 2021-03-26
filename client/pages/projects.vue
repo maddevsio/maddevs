@@ -1,7 +1,7 @@
 <template>
   <main class="main">
     <ProjectsBanner />
-    <CaseStudies />
+    <CaseStudies type="projects" />
     <Customers />
     <OpenSource />
   </main>

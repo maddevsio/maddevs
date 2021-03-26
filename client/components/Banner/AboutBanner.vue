@@ -13,24 +13,29 @@
         </div>
       </div>
     </div>
-    <navigationList>
-      <navigationItem link="services/#remote-tech-staff" title="Remote Tech Staff" />
-      <navigationItem link="services/#software-development" title="Software Development" />
-      <navigationItem link="services/#infrastructure-optimisation" title="Infrastructure Optimization" />
-      <navigationItem link="services/#it-consulting" title="IT Consulting" />
-    </navigationList>
+    <NavigationList>
+      <NavigationItem v-for="item in navigation" :key="item.title" :link="item.link" :title="item.title" />
+    </NavigationList>
   </div>
 </template>
 
 <script>
-import navigationList from '@/components/ui/navigation-list'
-import navigationItem from '@/components/ui/navigation-item'
+import NavigationList from '@/components/ui/navigation-list'
+import NavigationItem from '@/components/ui/navigation-item'
+
+import { aboutBannerNavigation as navigation } from '@/data/navigation'
 
 export default {
   name: 'AboutBanner',
   components: {
-    navigationList,
-    navigationItem,
+    NavigationList,
+    NavigationItem,
+  },
+
+  data() {
+    return {
+      navigation,
+    }
   },
 }
 </script>

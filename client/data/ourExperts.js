@@ -1,0 +1,58 @@
+export const experts = [
+  {
+    name: 'Marat Bediev',
+    position: 'Senior DevOps Engineer',
+    image: 'Marat',
+    linkedin: 'https://www.linkedin.com/in/marat-bediev-a973171b/',
+    alt: 'Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company.',
+  },
+  {
+    name: 'Tamara Mun',
+    position: 'Delivery Manager',
+    image: 'Tamara',
+    linkedin: 'https://www.linkedin.com/in/tamara-mun/',
+    alt: 'Tamara Mun - Delivery Manager at Mad Devs Software and Mobile App Development Company.',
+  },
+  {
+    name: 'Andrew "Chuck" Minkin',
+    position: 'CTO, Co-Founder',
+    image: 'Chuck',
+    linkedin: 'https://www.linkedin.com/in/andrew-minkin-700a2523/',
+    alt: 'Andrew "Сhuck" Minkin - CTO and Co-Founder at Mad Devs Software and Mobile App Development Company.',
+  },
+  {
+    name: 'Nakylai Taiirova',
+    position: 'Senior Full-Stack Developer',
+    image: 'Nakylai',
+    linkedin: 'https://www.linkedin.com/in/nakylai-taiirova-28bab859/',
+    alt: 'Nakylai Taiirova - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company.',
+  },
+  {
+    name: 'Daria Utesheva',
+    position: 'Head of HR Department',
+    image: 'Daria',
+    linkedin: 'https://www.linkedin.com/in/daria-utesheva-47804198/',
+    alt: 'Daria Utesheva - Head of HR Department at Mad Devs Software and Mobile App Development Company.',
+  },
+  {
+    name: 'Nuradil Alymkulov',
+    position: 'Senior Full-Stack Developer',
+    image: 'Nuradil',
+    linkedin: 'https://www.linkedin.com/in/nuradil-alymkulov/',
+    alt: 'Nuradil Alymkulov - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company.',
+  },
+  {
+    name: 'Alice Jang',
+    position: 'Project Manager',
+    image: 'Alice',
+    linkedin: 'https://www.linkedin.com/in/alice-jang-b235b240/',
+    alt: 'Alice Jang - Project Manager at Mad Devs Software and Mobile App Development Company.',
+  },
+  {
+    name: 'Arthur Elizavetenkov',
+    position: 'Project Manager',
+    image: 'Arthur',
+    linkedin: 'https://www.linkedin.com/in/earthurkg/',
+    alt: 'Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company.',
+  },
+]
