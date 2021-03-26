@@ -646,7 +646,8 @@ import CardGoDeePrimsAlgorithm from '@/components/Cases/cards-content/CardGoDeeP
 import FooterMain from '@/components/Footer'
 import HeaderMain from '@/components/Header'
 import BeforeAfterImage from '@/components/ui/BeforeAfterImage'
-import initImgLazyHelper from '@/helpers/initImgLazy'
+import { getMetadata, buildHead } from '@/data/seo'
+import initLazyLoadMixin from '@/mixins/initLazyLoad'
 
 export default {
   name: 'GoDeeCase',
@@ -676,14 +677,11 @@ export default {
     BeforeAfterImage,
   },
 
-  layout: 'godee-case-layout',
+  mixins: [initLazyLoadMixin],
+
+  layout: 'godee',
   data() {
     return {
-      title: 'Mad Devs Case Study: GoDee - Convenient Shuttle Bus Service',
-      description:
-        'Case Study Shuttle Bus Service. Read GoDee’s story on building a public transportation app for passengers and drivers and a monitoring system for admins in Vietnam.',
-
-      ogUrl: 'https://maddevs.io/case-studies/godee/',
       team: [
         {
           name: 'Oleg Puzanov',
@@ -888,36 +886,10 @@ export default {
   },
 
   head() {
-    return {
-      title: this.title,
-      meta: [
-        { name: 'description', content: this.description },
-        { property: 'og:url', content: this.ogUrl },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: this.title },
-        { property: 'og:description', content: this.description },
-        {
-          property: 'og:image',
-          content: 'https://maddevs.io/godee.png',
-        },
-      ],
-
-      link: [
-        {
-          rel: 'canonical',
-          href: 'https://maddevs.io/case-studies/godee/',
-        },
-      ],
-
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [
-        {
-          type: 'application/ld+json',
-          innerHTML:
-            '{"@context": "https://schema.org", "@type": "WebPage", "breadcrumb": "Projects > Case Studies > Transportation Solutions", "name": "Mad Devs Case Study: GoDee - Convenient Shuttle Bus Service", "description": "Case Study Shuttle Bus Service. Read GoDee’s story on building a public transportation app for passengers and drivers and a monitoring system for admins in Vietnam.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group LTD"}}',
-        },
-      ],
-    }
+    return buildHead({
+      ...getMetadata('godee'),
+      image: 'https://maddevs.io/godee.png',
+    })
   },
 
   computed: {
@@ -971,7 +943,6 @@ export default {
       const observer = new IntersectionObserver(callback, options)
       observer.observe(document.getElementById(video))
     })
-    initImgLazyHelper()
   },
 
   methods: {

@@ -17,7 +17,7 @@
         <div :class="categoryToClass(activeCategory)" class="tech_container">
           <div
             v-for="technology in technologies"
-            :key="technology.value"
+            :key="`${technology.value} ${technology.category}`"
             :class="`${technology.category}-${technology.value} ${technology.category}`"
             class="tech_item"
           >

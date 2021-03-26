@@ -543,7 +543,8 @@ import CardRestaurantTalisman from '@/components/Cases/cards-content/CardRestaur
 import CardNationwideNumbers from '@/components/Cases/cards-content/CardNationwideNumbers'
 import CardNinjaSushi from '@/components/Cases/cards-content/CardNinjaSushi'
 import Swiper from '@/components/Cases/Swiper'
-import initImgLazyHelper from '@/helpers/initImgLazy'
+import { getMetadata, buildHead } from '@/data/seo'
+import initLazyLoadMixin from '@/mixins/initLazyLoad'
 
 export default {
   name: 'NambaFood',
@@ -573,13 +574,10 @@ export default {
     CardNinjaSushi,
   },
 
+  mixins: [initLazyLoadMixin],
+
   data() {
     return {
-      title: 'Mad Devs Case Study: Namba Food Top Delivery Service',
-      description:
-        'FoodTech Case Study. How to make a delivery app from scratch? Read Namba Food’s story of developing a custom software top delivery service in Central Asia.',
-
-      ogUrl: 'https://maddevs.io/case-studies/namba-food/',
       team: [
         {
           name: 'Vlad Andreev',
@@ -814,36 +812,10 @@ export default {
   },
 
   head() {
-    return {
-      title: this.title,
-      meta: [
-        { name: 'description', content: this.description },
-        { property: 'og:url', content: this.ogUrl },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: this.title },
-        { property: 'og:description', content: this.description },
-        {
-          property: 'og:image',
-          content: 'https://maddevs.io/namba-food.png',
-        },
-      ],
-
-      link: [
-        {
-          rel: 'canonical',
-          href: 'https://maddevs.io/case-studies/namba-food/',
-        },
-      ],
-
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [
-        {
-          type: 'application/ld+json',
-          innerHTML:
-            '{"@context": "https://schema.org", "@type": "WebPage", "breadcrumb": "Projects > Case Studies > FoodTech Solutions", "name": "Mad Devs Case Study: Namba Food Top Delivery Service", "description": "FoodTech Case Study. How to make a delivery app from scratch? Read Namba Food’s story of developing a custom software top delivery service in Central Asia.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group LTD"}}',
-        },
-      ],
-    }
+    return buildHead({
+      ...getMetadata('nambafood'),
+      image: 'https://maddevs.io/namba-food.png',
+    })
   },
 
   computed: {
@@ -877,7 +849,6 @@ export default {
     } else {
       this.isIphone = false
     }
-    initImgLazyHelper()
   },
 }
 </script>
