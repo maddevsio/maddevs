@@ -166,10 +166,10 @@
           number of new features were added to improve the existing services:
         </TextParagraph>
         <List>
-          <ListDashItemBox>Full-text search across the movie and TV series databases</ListDashItemBox>
-          <ListDashItemBox>A history of interactions with various movies and TV channels.</ListDashItemBox>
-          <ListDashItemBox>Suggestions to resume incompletely watched videos.</ListDashItemBox>
-          <ListDashItemBox>Lists of favourites for both watched and desired content.</ListDashItemBox>
+          <ListHyphenItemBox>Full-text search across the movie and TV series databases</ListHyphenItemBox>
+          <ListHyphenItemBox>A history of interactions with various movies and TV channels.</ListHyphenItemBox>
+          <ListHyphenItemBox>Suggestions to resume incompletely watched videos.</ListHyphenItemBox>
+          <ListHyphenItemBox>Lists of favourites for both watched and desired content.</ListHyphenItemBox>
         </List>
       </section>
       <section class="container_full">
@@ -242,7 +242,7 @@ import TextQuoteBox from '@/components/Cases/TextQuoteBox'
 // import ListTeamItem from '@/components/Cases/ListTeamItem'
 // import ListTechnologies from '@/components/Cases/ListTechnologies'
 // import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
-import ListDashItemBox from '@/components/Cases/ListDashItemBox'
+import ListHyphenItemBox from '@/components/Cases/ListHyphenItemBox'
 // import Card from '@/components/Cases/Card'
 // import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
 
@@ -261,7 +261,7 @@ export default {
     // ListTeamItem,
     // ListTechnologies,
     // ListTechnologiesItem,
-    ListDashItemBox,
+    ListHyphenItemBox,
     // Card,
     // TextQuoteAuthor,
   },
