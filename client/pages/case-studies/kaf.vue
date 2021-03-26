@@ -11,7 +11,7 @@
         groups feeling homesick.
       </p>
     </CaseHeader>
-    <section id="case-first-section" class="case_body">
+    <section id="case-first-section" class="case_body p-48_top media-p-24_top">
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">OTT-like video streaming platform & online cinema</h2>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
@@ -35,7 +35,9 @@
           Being a small, highly customised video streaming and online cinema platform, the service remains popular, with
           its audience sharing new feature requests for Mad Devs.
         </TextParagraph>
-        <!--- Карточка --->
+        <div class="m-96_bottom media-m-48_bottom">
+          <!-- Тут будет карточка -->
+        </div>
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Supported gadgets</h2>
@@ -43,11 +45,13 @@
           The platform is available on any device and remains equally friendly to both web and mobile users. Since 2016,
           the project has been continuously improving to provide more options for each category of viewers.
         </TextParagraph>
-        <!--- Карточки --->
+        <div class="m-107_bottom media-m-68_bottom">
+          <!-- Карточки -->
+        </div>
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom">Technology stack</h2>
-        <!-- <ListTechnologies class="m-107_bottom media-m-48_bottom">
+        <!-- <ListTechnologies class="m-96_bottom media-m-48_bottom">
           <ListTechnologiesItem
             v-for="(technologiesItem, i) in technologiesList"
             :key="i"
@@ -57,8 +61,10 @@
         </ListTechnologies> -->
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-48_bottom media-m-12_bottom">Key project milestones</h2>
-        <!--- Карточки --->
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Key project milestones</h2>
+        <div class="m-96_bottom media-m-48_bottom">
+          <!-- Карточки -->
+        </div>
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Phase 1: Online cinema</h2>
@@ -78,16 +84,18 @@
         <h3 class="case_title_h3 m-12_bottom">TV shows & TV series</h3>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom">Phase 2: Live streaming technology</h2>
-        <TextParagraph class="m-48_bottom media-m-24_bottom">
+        <h2 class="case_title_h2 m-24_bottom media-m-20_bottom">Phase 2: Live streaming technology</h2>
+        <TextParagraph class="m-48_bottom media-m-20_bottom">
           To provide viewers with access to their favourite TV channels, the platform needed to emulate the TV
           experience. To add live-streaming technology, Mad Devs leveraged its existing open-source project,
           Yourcast.tv.
         </TextParagraph>
       </section>
       <section class="container_full">
-        <!--- Секция с анимацией --->
-        <!--- Ссылки --->
+        <div class="m-60_bottom media-m-48_bottom">
+          <!--- Секция с анимацией --->
+          <!--- Ссылки --->
+        </div>
       </section>
       <section class="container_regular">
         <h3 class="case_title_h3">TV shows & TV series</h3>
@@ -103,13 +111,15 @@
           selection of TV channel streams on their devices. HBO, Showtime and other TV channels were seamlessly added to
           the list of available options.
         </TextParagraph>
-        <TextParagraph class="m-48_bottom media-m-24_bottom">
+        <TextParagraph class="m-48_bottom">
           Technically, Django was used for storing stream entries for the Live TV service. The admin created the entries
           that the platform’s Live TV service then pulled down from Django.
         </TextParagraph>
       </section>
       <section class="container_full">
-        <!--- Lottie --->
+        <div class="m-96_bottom media-m-48_bottom">
+          <!--- Lottie --->
+        </div>
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Phase 3: Redesign & optimisations</h2>
@@ -126,7 +136,12 @@
         </TextParagraph>
       </section>
       <section class="container_full">
-        <!--- Lottie --->
+        <div>
+          <!--- Lottie --->
+        </div>
+        <TextParagraph class="m-104_bottom media-m-48_bottom case_text-align-center">
+          Full Platform Architecture:
+        </TextParagraph>
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Phase 4: Video on demand</h2>
@@ -137,9 +152,11 @@
         </TextParagraph>
       </section>
       <section class="container_full">
-        <!--- Lottie --->
+        <div class="m-96_bottom media-m-48_bottom">
+          <!--- Lottie --->
+        </div>
       </section>
-      <section class="container_regular">
+      <section class="container_regular m-48_bottom media-m-24_bottom">
         <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
           Phase 5: User authorisation & personalised experience
         </h2>
@@ -148,7 +165,7 @@
           each user, the project started to provide a more personalised experience based on people’s preferences. A
           number of new features were added to improve the existing services:
         </TextParagraph>
-        <List class="m-48_bottom media-m-24_bottom">
+        <List>
           <ListDashItemBox>Full-text search across the movie and TV series databases</ListDashItemBox>
           <ListDashItemBox>A history of interactions with various movies and TV channels.</ListDashItemBox>
           <ListDashItemBox>Suggestions to resume incompletely watched videos.</ListDashItemBox>
@@ -156,7 +173,9 @@
         </List>
       </section>
       <section class="container_full">
-        <!--- Телефон --->
+        <div class="m-48_bottom media-m-24_bottom">
+          <!--- Телефон --->
+        </div>
       </section>
       <section class="container_regular">
         <TextParagraph class="m-72_bottom media-m-48_bottom">
@@ -174,7 +193,7 @@
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-48_bottom media-m-38_bottom">Meet the team</h2>
-        <!-- <ListTeam>
+        <!-- <ListTeam class="m-72_bottom media-m-48_bottom">
           <ListTeamItem
             v-for="(teamMember, i) in team"
             :key="i"
