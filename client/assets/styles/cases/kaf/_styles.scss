@@ -20,6 +20,12 @@
     }
   }
 
+  @media screen and (max-width: 1220px) {
+    &_kaf-logo {
+      margin-left: 31px;
+    }
+  }
+
   @media screen and (max-width: 1170px) {
     &_kaf-logo {
       margin-bottom: 38px;
@@ -32,6 +38,12 @@
       width: 249px;
       height: 51px;
       margin-bottom: 31px;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    &_kaf-logo {
+      margin-bottom: 25px;
     }
   }
 }
