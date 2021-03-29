@@ -69,7 +69,7 @@ exports[`projects page renders correctly 1`] = `
   </div>
    
   <section
-    class="case-studies"
+    class="case-studies case-studies--projects"
     id="case-studies"
   >
     <div
@@ -77,17 +77,19 @@ exports[`projects page renders correctly 1`] = `
     >
       <div>
         <h2
-          class="case-studies__main-title case-studies__main-title-"
+          class="case-studies__main-title case-studies__main-title-projects"
         >
           
         Case 
-          <!---->
+          <br />
           
         Studies
       
         </h2>
          
-        <!---->
+        <div
+          class="case-studies__fire-icon"
+        />
       </div>
        
       <div

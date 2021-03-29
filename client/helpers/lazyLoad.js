@@ -18,8 +18,10 @@ function initializeLazyLoad() {
     threshold: 1,
   }
 
-  const observer = new IntersectionObserver(observerCallback, options)
-  images.forEach(image => observer.observe(image))
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(observerCallback, options)
+    images.forEach(image => observer.observe(image))
+  }
 }
 
 export default initializeLazyLoad

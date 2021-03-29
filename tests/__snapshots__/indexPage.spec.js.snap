@@ -58,21 +58,18 @@ exports[`index page renders correctly 1`] = `
         >
           Remote Tech Staff
         </nuxt-link-stub>
-         
         <nuxt-link-stub
           class="navigation-item"
           to="services/#software-development"
         >
           Software Development
         </nuxt-link-stub>
-         
         <nuxt-link-stub
           class="navigation-item"
           to="services/#infrastructure-optimisation"
         >
           Infrastructure Optimization
         </nuxt-link-stub>
-         
         <nuxt-link-stub
           class="navigation-item"
           to="services/#it-consulting"
@@ -114,14 +111,14 @@ exports[`index page renders correctly 1`] = `
               class="weCreateItProject__paragraph"
             >
               
-            Content Streaming 
+            Content Streaming
+            
               <br />
               
             Transportation
           
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
@@ -129,14 +126,14 @@ exports[`index page renders correctly 1`] = `
               class="weCreateItProject__paragraph"
             >
               
-            HealthTech 
+            HealthTech
+            
               <br />
               
             IoTs
           
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
@@ -144,14 +141,14 @@ exports[`index page renders correctly 1`] = `
               class="weCreateItProject__paragraph"
             >
               
-            E-Commerce 
+            E-Commerce
+            
               <br />
               
             AdTech
           
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
@@ -159,14 +156,14 @@ exports[`index page renders correctly 1`] = `
               class="weCreateItProject__paragraph"
             >
               
-            E-Learning 
+            E-Learning
+            
               <br />
               
             FinTech
           
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
@@ -174,14 +171,14 @@ exports[`index page renders correctly 1`] = `
               class="weCreateItProject__paragraph"
             >
               
-            Serverless 
+            Serverless
+            
               <br />
               
             BYOD
           
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
@@ -189,7 +186,8 @@ exports[`index page renders correctly 1`] = `
               class="weCreateItProject__paragraph"
             >
               
-            Blockchain 
+            Blockchain
+            
               <br />
               
             FoodTech
@@ -478,7 +476,7 @@ exports[`index page renders correctly 1`] = `
             class="tech_legend__item legend-devops"
           >
             
-          DevOps
+          devOps
         
           </div>
           <div
@@ -1629,7 +1627,7 @@ exports[`index page renders correctly 1`] = `
     >
       <div>
         <h2
-          class="case-studies__main-title case-studies__main-title-"
+          class="case-studies__main-title case-studies__main-title-index"
         >
           
         Case 
@@ -2017,7 +2015,6 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
         </div>
-         
         <div
           class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_analysis"
         >
@@ -2054,7 +2051,6 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
         </div>
-         
         <div
           class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_proposal"
         >
@@ -2087,13 +2083,10 @@ exports[`index page renders correctly 1`] = `
             <p
               class="quickProjectStart__description"
             >
-              
-            We will provide you with our free, non-binding bid or a tailored proposal.
-          
+              We will provide you with our free, non-binding bid or a tailored proposal.
             </p>
           </div>
         </div>
-         
         <div
           class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_team"
         >
@@ -2130,7 +2123,6 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
         </div>
-         
         <div
           class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_start"
         >
@@ -2144,6 +2136,8 @@ exports[`index page renders correctly 1`] = `
               height="73"
               width="52"
             />
+             
+            <!---->
           </div>
            
           <div
@@ -2158,9 +2152,7 @@ exports[`index page renders correctly 1`] = `
             <p
               class="quickProjectStart__description"
             >
-              
-            You will get to know the team and we’ll start the project work.
-          
+              You will get to know the team and we’ll start the project work.Submit your project request or project idea to us.
             </p>
           </div>
         </div>
@@ -2434,7 +2426,8 @@ exports[`index page renders correctly 1`] = `
               class="customer-rates__description customer-rates__description-top-row"
             >
               
-            recommend us 
+            recommend us
+            
               <br
                 class="customer-rates__line-break"
               />
@@ -2444,7 +2437,6 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
         </div>
-         
         <div
           class="col-xl-4 col-md-4"
         >
@@ -2461,7 +2453,8 @@ exports[`index page renders correctly 1`] = `
               class="customer-rates__description customer-rates__description-top-row"
             >
               
-            stay with us for 
+            stay with us for
+            
               <br
                 class="customer-rates__line-break"
               />
@@ -2471,7 +2464,6 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
         </div>
-         
         <div
           class="col-xl-4 col-md-4"
         >
@@ -2488,7 +2480,8 @@ exports[`index page renders correctly 1`] = `
               class="customer-rates__description customer-rates__description-top-row"
             >
               
-            are satisfied with 
+            are satisfied with
+            
               <br
                 class="customer-rates__line-break"
               />

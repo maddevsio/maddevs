@@ -6,9 +6,6 @@ global.document.exitFullscreen = () => {}
 describe('sirJohnMonashCentre', () => {
   let wrapper
   const data = {
-    title: 'Mad Devs Case Study: Sir John Monash Centre',
-    description:
-      'BYOD Case Study. Read how Mad Devs enhanced and developed new features for the Sir John Monash Centre’s software, mobile applications, and technological debt.',
     keyGoalsList: [
       'Understanding the complexity of the MMIT Brain software',
       'Building a small-scale version of the SJMC experience in 1 month',

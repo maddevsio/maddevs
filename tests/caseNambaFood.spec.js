@@ -5,10 +5,6 @@ import './__mocks__/intersectionObserverMock'
 describe('namba food', () => {
   let wrapper
   const data = {
-    title: 'Mad Devs Case Study: Namba Food Top Delivery Service',
-    description:
-      'FoodTech Case Study. How to make a delivery app from scratch? Read Namba Food’s story of developing a custom software top delivery service in Central Asia.',
-    ogUrl: 'https://maddevs.io/case-studies/namba-food/',
     team: [
       {
         name: 'Vlad Andreev',
