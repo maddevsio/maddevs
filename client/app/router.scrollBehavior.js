@@ -1,37 +1,48 @@
-/*
- ** scrollBehavior configuration - https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-router#scrollbehavior
- **
- ** Nuxt.js Smooth Scrolling with Hash Links https://zachcardoza.com/post/nuxtjs-smooth-scrolling-with-hash-links/
- */
-export default async (to, from, savedPosition) => {
-  if (savedPosition) {
-    return savedPosition
+if (process.client) {
+  if ('scrollRestoration' in window.history) {
+    window.history.scrollRestoration = 'manual'
+    // reset scrollRestoration to auto when leaving page, allowing page reload
+    // and back-navigation from other pages to use the browser to restore the
+    // scrolling position.
+    window.addEventListener('beforeunload', () => {
+      window.history.scrollRestoration = 'auto'
+    })
+    // Setting scrollRestoration to manual again when returning to this page.
+    window.addEventListener('load', () => {
+      window.history.scrollRestoration = 'manual'
+    })
   }
+}
 
-  const findEl = async (hash, x) => {
-    const X = x
-    return (
-      document.querySelector(hash) ||
-      new Promise(resolve => {
-        if (X > 50) {
-          return resolve()
+export default function (to, from, savedPosition) {
+  let position = savedPosition || { x: 0, y: 0 }
+  // triggerScroll is only fired when a new component is loaded
+  if (to.path === from.path && to.hash !== from.hash) {
+    $nuxt.$nextTick(() => $nuxt.$emit('triggerScroll'))
+  }
+  return new Promise(resolve => {
+    // wait for the out transition to complete (if necessary)
+    $nuxt.$once('triggerScroll', () => {
+      // coords will be used if no selector is provided,
+      // or if the selector didn't match any element.
+      if (to.hash) {
+        let { hash } = to
+        // CSS.escape() is not supported with IE and Edge.
+        if (typeof window.CSS !== 'undefined' && typeof window.CSS.escape !== 'undefined') {
+          hash = `#${window.CSS.escape(hash.substr(1))}`
         }
-        setTimeout(() => {
-          resolve(findEl(hash, X + 1 || 1))
-        }, 100)
-
-        return null
-      })
-    )
-  }
-
-  if (to.hash) {
-    const el = await findEl(to.hash)
-    if ('scrollBehavior' in document.documentElement.style) {
-      return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
-    }
-    return window.scrollTo(0, el.offsetTop)
-  }
-
-  return { x: 0, y: 0 }
+        try {
+          if (document.querySelector(hash)) {
+            // scroll to anchor by returning the selector
+            position = { selector: hash }
+          }
+        } catch (e) {
+          console.warn(
+            'Failed to save scroll position. Please add CSS.escape() polyfill (https://github.com/mathiasbynens/CSS.escape).',
+          )
+        }
+      }
+      resolve(position)
+    })
+  })
 }
