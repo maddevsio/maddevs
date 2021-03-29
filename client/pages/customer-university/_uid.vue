@@ -64,6 +64,8 @@ export default {
         uid: post.uid,
         document: post.data,
         slices: post.data.body,
+        title: $prismic.asText(post.data.meta_title) || post.data.title[0].text,
+        description: $prismic.asText(post.data.meta_description),
         formattedDate: Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(
           new Date(post.data.date),
         ),
@@ -142,8 +144,6 @@ export default {
   },
 
   mounted() {
-    this.title = this.$prismic.asText(this.document.meta_title) || this.document.title[0].text
-    this.description = this.$prismic.asText(this.document.meta_description)
     this.getClusterData()
   },
 
