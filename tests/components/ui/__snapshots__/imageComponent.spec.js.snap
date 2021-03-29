@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Webp image component is Vue's instance 1`] = `
+exports[`webp image component is Vue's instance 1`] = `
 <div>
   <picture>
     <source

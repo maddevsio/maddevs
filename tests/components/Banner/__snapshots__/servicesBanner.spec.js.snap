@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Services banner is a Vue instance 1`] = `
+exports[`services banner is a Vue instance 1`] = `
 <div>
   <section
     class="banner banner-container"

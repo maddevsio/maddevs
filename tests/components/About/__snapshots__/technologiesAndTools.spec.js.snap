@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Technologies and tools should render correctly with slot 1`] = `
+exports[`technologies and tools should render correctly with slot 1`] = `
 <div>
   <section
     class="technologies-and_tools"
@@ -15,8 +15,7 @@ exports[`Technologies and tools should render correctly with slot 1`] = `
         <h2
           class="technologies-and_tools__main-title"
         >
-          
-        Technologies 
+          Technologies 
           <span>
             &
           </span>

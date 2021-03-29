@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContributionWidget component is Vue's instance and renders correctly 1`] = `
+exports[`contributionWidget component is Vue's instance and renders correctly 1`] = `
 <div>
   <div
     class="contribution-widget"

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header Blog is a Vue instance 1`] = `
+exports[`header Blog is a Vue instance 1`] = `
 <div>
   <div
     class="blog-post__introduction-container"

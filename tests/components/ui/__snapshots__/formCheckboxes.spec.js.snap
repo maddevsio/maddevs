@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FormCheckboxes component should render correctly with id prop 1`] = `
+exports[`formCheckboxes component should render correctly with id prop 1`] = `
 <div>
   <div
     class="form-checkboxes"
@@ -9,7 +9,8 @@ exports[`FormCheckboxes component should render correctly with id prop 1`] = `
       class="form-checkbox-label required"
       for="privacy-policy-some-id"
     >
-      I confirm that I have read and accepted 
+      I confirm that I have read and accepted
+    
       <div>
         Mad Devs’
       </div>
@@ -38,11 +39,13 @@ exports[`FormCheckboxes component should render correctly with id prop 1`] = `
       class="form-checkbox-label"
       for="marketing-communications-some-id"
     >
-      I agree to get 
+      I agree to get
+    
       <div>
         Mad Devs’
       </div>
-       discount offers and other marketing communications.
+      
+    discount offers and other marketing communications.
     
       <input
         class="form-checkbox-input"
@@ -60,7 +63,7 @@ exports[`FormCheckboxes component should render correctly with id prop 1`] = `
 </div>
 `;
 
-exports[`FormCheckboxes component should render correctly with slot 1`] = `
+exports[`formCheckboxes component should render correctly with slot 1`] = `
 <div>
   <div
     class="form-checkboxes"
@@ -69,7 +72,8 @@ exports[`FormCheckboxes component should render correctly with slot 1`] = `
       class="form-checkbox-label required"
       for="privacy-policy-input-id"
     >
-      I confirm that I have read and accepted 
+      I confirm that I have read and accepted
+    
       <div>
         Mad Devs’
       </div>
@@ -98,11 +102,13 @@ exports[`FormCheckboxes component should render correctly with slot 1`] = `
       class="form-checkbox-label"
       for="marketing-communications-input-id"
     >
-      I agree to get 
+      I agree to get
+    
       <div>
         Mad Devs’
       </div>
-       discount offers and other marketing communications.
+      
+    discount offers and other marketing communications.
     
       <input
         class="form-checkbox-input"
