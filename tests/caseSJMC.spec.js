@@ -279,6 +279,13 @@ describe('sirJohnMonashCentre', () => {
         alt: 'Mad Devs’ Team Trip to the SJMC.',
       },
     ],
+    headerLogo: {
+      width: 242,
+      height: 110,
+      pictureFolder: 'sjmc',
+      fileName: 'sjmc-logo',
+      alt: '',
+    },
   }
 
   beforeEach(() => {

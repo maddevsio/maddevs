@@ -231,6 +231,13 @@ describe('namba food', () => {
     ],
     videoIdList: ['map-video', 'iphone-silver-video'],
     isIphone: false,
+    headerLogo: {
+      width: 259,
+      height: 82,
+      pictureFolder: 'nambafood',
+      fileName: 'nambafood-logo',
+      alt: '',
+    },
   }
 
   beforeEach(() => {

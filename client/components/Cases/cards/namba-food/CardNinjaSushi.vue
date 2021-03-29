@@ -77,8 +77,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/cases/_mixins';
-@import '../../../assets/styles/cases/_icons';
+@import '../../../../assets/styles/cases/_mixins';
+@import '../../../../assets/styles/cases/_icons';
 
 .case_card-content {
   @include grid(repeat(2, 1fr), auto, 0, 0);
