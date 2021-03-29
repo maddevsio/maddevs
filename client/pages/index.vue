@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import AboutBanner from '@/components/Banner/AboutBanner'
+import AboutBanner from '@/components/core/banners/AboutBanner'
 import WeCreateItProjectsFor from '@/components/About/WeCreateItProjectsFor'
 import TechnologiesAndTools from '@/components/About/TechnologiesAndTools'
 import CaseStudies from '@/components/About/CaseStudies'

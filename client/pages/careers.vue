@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import CareersBanner from '@/components/Banner/CareersBanner'
+import CareersBanner from '@/components/core/banners/CareersBanner'
 import Careers from '@/components/Careers/CareersForm'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoad'

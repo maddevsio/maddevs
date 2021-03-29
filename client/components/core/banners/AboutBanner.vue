@@ -73,7 +73,7 @@ export default {
   position: relative;
   width: 359px;
   height: 438px;
-  background-image: url('../../assets/img/Home/svg/stars-banner-logo.svg');
+  background-image: url('../../../assets/img/Home/svg/stars-banner-logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -81,7 +81,7 @@ export default {
     content: '';
     position: absolute;
     z-index: 99;
-    background: url('../../assets/sprites/sprite_tech.svg');
+    background: url('../../../assets/sprites/sprite_tech.svg');
     top: 19%;
     right: 24.2%;
     width: calc(1720px / 30);
@@ -99,7 +99,7 @@ export default {
 .main-title-black_part {
   &:after {
     content: '';
-    background-image: url('../../assets/img/Home/svg/stars-banner-logo.svg');
+    background-image: url('../../../assets/img/Home/svg/stars-banner-logo.svg');
     background-size: contain;
     background-repeat: no-repeat;
     width: 76px;
@@ -123,7 +123,7 @@ export default {
     position: relative;
     width: 359px;
     height: 438px;
-    background-image: url('../../assets/img/Home/svg/stars-banner-logo.svg');
+    background-image: url('../../../assets/img/Home/svg/stars-banner-logo.svg');
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -137,7 +137,7 @@ export default {
 
     &::before {
       content: '';
-      background: url('../../assets/sprites/sprite_tech_small.svg');
+      background: url('../../../assets/sprites/sprite_tech_small.svg');
       right: 26%;
       width: calc(1200px / 30);
       height: 40px;

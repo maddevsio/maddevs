@@ -20,8 +20,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/_vars';
-@import '../../assets/styles/_careersIcons';
+@import '../../../assets/styles/_vars';
+@import '../../../assets/styles/_careersIcons';
 
 .banner {
   &__main-title-wrapper {

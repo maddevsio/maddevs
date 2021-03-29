@@ -15,6 +15,7 @@
 
 <script>
 import UINavigation from '@/components/shared/UINavigation'
+import { servicesBannerNavigation as navigation } from '@/data/navigation'
 
 export default {
   name: 'ServicesBanner',
@@ -24,31 +25,14 @@ export default {
 
   data() {
     return {
-      navigation: [
-        {
-          link: '#remote-tech-staff',
-          title: 'Remote Tech Staff',
-        },
-        {
-          link: '#software-development',
-          title: 'Software Development',
-        },
-        {
-          link: '#infrastructure-optimisation',
-          title: 'Infrastructure Optimization',
-        },
-        {
-          link: '#it-consulting',
-          title: 'IT Consulting',
-        },
-      ],
+      navigation,
     }
   },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/_servicesBannerIcons';
+@import '../../../assets/styles/_servicesBannerIcons';
 
 .banner {
   &__banner-content {

@@ -17,6 +17,40 @@ export const aboutBannerNavigation = [
   },
 ]
 
+export const projectsBannerNavigation = [
+  {
+    link: '#case-studies',
+    title: 'Case studies',
+  },
+  {
+    link: '#customers',
+    title: 'Our customers',
+  },
+  {
+    link: '#open-source',
+    title: 'Open-source pet projects',
+  },
+]
+
+export const servicesBannerNavigation = [
+  {
+    link: '#remote-tech-staff',
+    title: 'Remote Tech Staff',
+  },
+  {
+    link: '#software-development',
+    title: 'Software Development',
+  },
+  {
+    link: '#infrastructure-optimisation',
+    title: 'Infrastructure Optimization',
+  },
+  {
+    link: '#it-consulting',
+    title: 'IT Consulting',
+  },
+]
+
 export const headerNavigation = [
   {
     exact: true,

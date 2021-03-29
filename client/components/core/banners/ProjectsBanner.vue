@@ -20,6 +20,7 @@
 
 <script>
 import UINavigation from '@/components/shared/UINavigation'
+import { projectsBannerNavigation as navigation } from '@/data/navigation'
 
 export default {
   name: 'ProjectsBanner',
@@ -29,20 +30,7 @@ export default {
 
   data() {
     return {
-      navigation: [
-        {
-          link: '#case-studies',
-          title: 'Case studies',
-        },
-        {
-          link: '#customers',
-          title: 'Our customers',
-        },
-        {
-          link: '#open-source',
-          title: 'Open-source pet projects',
-        },
-      ],
+      navigation,
     }
   },
 }

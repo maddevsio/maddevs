@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import ProjectsBanner from '@/components/Banner/ProjectsBanner'
+import ProjectsBanner from '@/components/core/banners/ProjectsBanner'
 import CaseStudies from '@/components/About/CaseStudies'
 import Customers from '@/components/Projects/Customers'
 import OpenSource from '@/components/Projects/OpenSource'

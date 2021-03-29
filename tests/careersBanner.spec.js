@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import CareersBanner from '@/components/Banner/CareersBanner'
+import CareersBanner from '@/components/core/banners/CareersBanner'
 
 describe('form checkboxes', () => {
   let wrapper

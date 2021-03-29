@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import ServicesBanner from '@/components/Banner/ServicesBanner'
+import ServicesBanner from '@/components/core/banners/ServicesBanner'
 import RemoteTechStaff from '@/components/Services/RemoteTechStaff'
 import SoftwareDevelopment from '@/components/Services/SoftwareDevelopment'
 import InfrastructureOptimisation from '@/components/Services/InfrastructureOptimisation'
