@@ -74,7 +74,7 @@ describe('customer university header component', () => {
     id: 'YAGi7REAACMAgV8d',
   }
 
-  it('is a Vue instance with default props', () => {
+  it('is a Vue instance withk default props', () => {
     const { container } = render(CustomerUniversity, {
       props,
       mocks: {
