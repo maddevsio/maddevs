@@ -76,11 +76,7 @@
               />
               <a class="header__header-phone" href="tel:+442039848555">+44 20 3984 8555</a>
             </div>
-            <UIButtonModalTrigger
-              :button-inner-text="buttonInnerText"
-              :is-red="true"
-              @onClick="$refs.contactMeModal.show()"
-            />
+            <UIModalTriggerButton label="Contact me" color="red" @click="$refs.contactMeModal.show()" />
           </div>
         </div>
       </div>
@@ -101,7 +97,7 @@
 </template>
 
 <script>
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import mobileHeader from '@/components/Header/mobile-header'
 import headerLogo from '@/components/svg/headerLogo'
 import Modal from '@/containers/Modal'
@@ -109,7 +105,7 @@ import Modal from '@/containers/Modal'
 export default {
   name: 'MainHeader',
   components: {
-    UIButtonModalTrigger,
+    UIModalTriggerButton,
     contactMeModal: () => import('@/components/Modals/contact-me-modal'),
     mobileHeader,
     headerLogo,
@@ -118,7 +114,6 @@ export default {
 
   data() {
     return {
-      buttonInnerText: 'Contact me',
       showLogoText: true,
       isActiveMobileMenu: false,
       isCasePage: false,

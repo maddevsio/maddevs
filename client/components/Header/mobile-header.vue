@@ -78,11 +78,11 @@
             </ul>
           </div>
         </div>
-        <UIButtonModalTrigger
-          :button-inner-text="buttonInnerText"
-          :is-red="true"
+        <UIModalTriggerButton
+          label="Contact me"
+          color="red"
           class="mobile-header__modal-trigger-btn"
-          @onClick="$emit('open-modal')"
+          @click="$emit('open-modal')"
         />
         <footerContacts class="mobile-header__small-phone-content" />
       </div>
@@ -91,19 +91,18 @@
 </template>
 
 <script>
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import footerContacts from '@/components/Footer/footer-contacts'
 
 export default {
   name: 'MobileHeader',
   components: {
-    UIButtonModalTrigger,
+    UIModalTriggerButton,
     footerContacts,
   },
 
   data() {
     return {
-      buttonInnerText: 'Contact me',
       mailLink: process.env.emailContact,
     }
   },

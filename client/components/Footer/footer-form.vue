@@ -55,11 +55,7 @@
         <!-- End Erros -->
       </div>
     </div>
-    <FormCheckboxes
-      ref="checkboxes"
-      @getPrivacyCheckboxState="agreeWithPrivacyPolicy = $event"
-      @getDiscountOffersCheckboxState="agreeToGetMadDevsDiscountOffers = $event"
-    />
+    <UIFormCheckboxes ref="checkboxes" @change="handleCheckboxesChange" />
     <UIButton
       ref="submitButton"
       class="ui-button--transparent-bgc submit-button"
@@ -76,15 +72,15 @@
 <script>
 import { mapActions } from 'vuex'
 import { required, email, maxLength } from 'vuelidate/lib/validators'
-import FormCheckboxes from '@/components/ui/form-checkboxes'
-import UIButton from '@/components/ui/UIButton'
+import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
+import UIButton from '@/components/shared/UIButton'
 import SuccessModal from '@/components/Modals/success-modal'
 import PlaceholderAsterisk from '@/directives/PlaceholderAsterisk'
 
 export default {
   name: 'FooterForm',
   components: {
-    FormCheckboxes,
+    UIFormCheckboxes,
     UIButton,
     SuccessModal,
   },
@@ -163,6 +159,11 @@ export default {
       this.description = ''
       this.agreeWithPrivacyPolicy = false
       this.agreeToGetMadDevsDiscountOffers = false
+    },
+
+    handleCheckboxesChange({ privacy, discountOffers }) {
+      this.agreeWithPrivacyPolicy = privacy
+      this.agreeToGetMadDevsDiscountOffers = discountOffers
     },
 
     handleModalClose() {

@@ -29,11 +29,11 @@
           </div>
         </div>
       </div>
-      <UIButtonModalTrigger
-        :button-inner-text="buttonInnerText"
-        :is-red="true"
+      <UIModalTriggerButton
+        label="Submit your project"
+        color="red"
         class="quickProjectStart__button"
-        @onClick="$refs.orderProjectFromUs.show()"
+        @click="$refs.orderProjectFromUs.show()"
       />
     </div>
     <Modal ref="orderProjectFromUs">
@@ -44,13 +44,13 @@
 
 <script>
 import { steps } from '@/data/quickProjectStart'
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import Modal from '@/containers/Modal'
 
 export default {
   name: 'QuickProjectStart',
   components: {
-    UIButtonModalTrigger,
+    UIModalTriggerButton,
     Modal,
     OrderProjectFromUs: () => import('@/components/Modals/order-project-from-us-modal'),
   },
@@ -59,7 +59,6 @@ export default {
     return {
       steps,
       modalWindowName: 'order-project-from-us-modal',
-      buttonInnerText: 'Submit your project',
     }
   },
 }

@@ -52,7 +52,7 @@
               <UIRadioButtons
                 ref="radioButtons"
                 v-model="positionValue"
-                :radios="radioData"
+                :options="grades"
                 @change="$v.positionValue.$touch"
               />
             </ul>
@@ -135,7 +135,7 @@ import { required, email, maxLength } from 'vuelidate/lib/validators'
 import { fileSizeValidation, fileExt } from '@/helpers/validators'
 import FileInput from '@/components/Careers/FileInput'
 import Button from '@/components/Careers/Button'
-import UIRadioButtons from '@/components/ui/UIRadioButtons'
+import UIRadioButtons from '@/components/shared/UIRadioButtons'
 import SuccessModal from '@/components/Modals/success-modal'
 
 export default {
@@ -184,11 +184,11 @@ export default {
       emailTo: process.env.emailHR,
       selectedFile: null,
       linkedinProfile: null,
-      radioData: [
-        { type: 'senior', label: 'Senior,' },
-        { type: 'middle', label: 'Middle,' },
-        { type: 'junior', label: 'Junior,' },
-        { type: 'intern', label: 'Intern' },
+      grades: [
+        { value: 'senior', label: 'Senior,' },
+        { value: 'middle', label: 'Middle,' },
+        { value: 'junior', label: 'Junior,' },
+        { value: 'intern', label: 'Intern' },
       ],
 
       isEmailSent: false,

@@ -79,12 +79,7 @@
         <!-- End Errors -->
       </div>
     </div>
-    <FormCheckboxes
-      ref="checkboxes"
-      :input-id="inputId"
-      @getPrivacyCheckboxState="getPrivacyCheckboxState"
-      @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
-    />
+    <UIFormCheckboxes :id="'get-your-trusted-it-partner'" ref="checkboxes" @change="handleCheckboxesChange" />
     <UIButton
       :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
       :loading="onSubmit"
@@ -99,14 +94,14 @@
 <script>
 import { required, email, maxLength } from 'vuelidate/lib/validators'
 import { phone } from '@/helpers/validators'
-import FormCheckboxes from '@/components/ui/form-checkboxes'
-import UIButton from '@/components/ui/UIButton'
+import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
+import UIButton from '@/components/shared/UIButton'
 import { phoneHandler } from '@/mixins/phoneHandler'
 
 export default {
   name: 'GetYourTrustedItPartner',
   components: {
-    FormCheckboxes,
+    UIFormCheckboxes,
     UIButton,
   },
 
@@ -142,7 +137,6 @@ export default {
     needAssistanceWith: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    inputId: 'get-your-trusted-it-partner',
     onSubmit: false,
     subject: 'Marketing',
     form: '',
@@ -158,12 +152,9 @@ export default {
   },
 
   methods: {
-    getPrivacyCheckboxState(privacyState) {
-      this.agreeWithPrivacyPolicy = privacyState
-    },
-
-    getDiscountOffersCheckboxState(discountOffersState) {
-      this.agreeToGetMadDevsDiscountOffers = discountOffersState
+    handleCheckboxesChange({ privacy, discountOffers }) {
+      this.agreeWithPrivacyPolicy = privacy
+      this.agreeToGetMadDevsDiscountOffers = discountOffers
     },
 
     sendForm(isValid) {

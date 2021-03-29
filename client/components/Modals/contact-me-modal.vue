@@ -76,9 +76,10 @@
         <!-- End Erros -->
       </div>
     </div>
-    <FormCheckboxes
+    <UIFormCheckboxes
+      :id="'contact-me'"
       ref="checkboxes"
-      input-id="contact-me"
+      @change="handleCheckboxesChange"
       @getPrivacyCheckboxState="agreeWithPrivacyPolicy = $event"
       @getDiscountOffersCheckboxState="agreeToGetMadDevsDiscountOffers = $event"
     />
@@ -96,14 +97,14 @@
 import { mapActions } from 'vuex'
 import { required, email, maxLength } from 'vuelidate/lib/validators'
 import { phone } from '@/helpers/validators'
-import FormCheckboxes from '@/components/ui/form-checkboxes'
-import UIButton from '@/components/ui/UIButton'
+import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
+import UIButton from '@/components/shared/UIButton'
 import { phoneHandler } from '@/mixins/phoneHandler'
 
 export default {
   name: 'ContactMe',
   components: {
-    FormCheckboxes,
+    UIFormCheckboxes,
     UIButton,
   },
 
@@ -191,6 +192,11 @@ export default {
       this.company = ''
       this.agreeWithPrivacyPolicy = false
       this.agreeToGetMadDevsDiscountOffers = false
+    },
+
+    handleCheckboxesChange({ privacy, discountOffers }) {
+      this.agreeWithPrivacyPolicy = privacy
+      this.agreeToGetMadDevsDiscountOffers = discountOffers
     },
   },
 }

@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils'
 
-import RadioList from '@/components/ui/radio-list'
+import RadioList from '@/components/shared/UIRadioList'
 
 describe('radio buttons list', () => {
   let wrapper

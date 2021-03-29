@@ -22,11 +22,11 @@
           :class-name="TeamHeadcount.className"
         />
       </div>
-      <UIButtonModalTrigger
-        :button-inner-text="buttonInnerText"
-        :is-black="true"
+      <UIModalTriggerButton
+        label="Get expert advice"
+        color="black"
         class="it-consulting__button"
-        @onClick="$refs.getExpertAdviceModal.show()"
+        @click="$refs.getExpertAdviceModal.show()"
       />
     </div>
 
@@ -38,7 +38,7 @@
 
 <script>
 import ItConsultingContent from '@/components/Services/ItConsultingContent'
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import getExpertAdviceModal from '@/components/Modals/get-expert-advice-modal'
 import Modal from '@/containers/Modal'
 
@@ -46,7 +46,7 @@ export default {
   name: 'ItConsulting',
   components: {
     ItConsultingContent,
-    UIButtonModalTrigger,
+    UIModalTriggerButton,
     getExpertAdviceModal,
     Modal,
   },
@@ -79,8 +79,6 @@ export default {
 
         className: 'third-item',
       },
-
-      buttonInnerText: 'Get expert advice',
     }
   },
 }

@@ -2,14 +2,14 @@
   <button
     v-WaveAnimation
     :class="{
-      'ui-button-modal-trigger--red': isRed,
-      'ui-button-modal-trigger--black': isBlack,
-      'ui-button-modal-trigger--grey': isGrey,
+      'ui-button-modal-trigger--red': color === 'red',
+      'ui-button-modal-trigger--black': color === 'black',
+      'ui-button-modal-trigger--grey': color === 'grey',
     }"
     class="ui-button-modal-trigger"
     @click="showModal"
   >
-    {{ buttonInnerText }}
+    {{ label }}
   </button>
 </template>
 
@@ -17,36 +17,26 @@
 import WaveAnimation from '@/directives/WaveAnimation'
 
 export default {
-  name: 'UIButtonModalTrigger',
+  name: 'UIModalTriggerButton',
   directives: {
     WaveAnimation,
   },
 
   props: {
-    buttonInnerText: {
+    label: {
       type: String,
-      default: 'Button Inner Text',
+      default: 'Label',
     },
 
-    isRed: {
-      type: Boolean,
-      default: false,
-    },
-
-    isBlack: {
-      type: Boolean,
-      default: false,
-    },
-
-    isGrey: {
-      type: Boolean,
-      default: false,
+    color: {
+      type: String,
+      default: '',
     },
   },
 
   methods: {
     showModal() {
-      this.$emit('onClick')
+      this.$emit('click')
     },
   },
 }

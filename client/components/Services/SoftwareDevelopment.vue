@@ -25,11 +25,11 @@
           :icons="mobile.icons"
         />
       </div>
-      <UIButtonModalTrigger
-        :button-inner-text="buttonInnerText"
-        :is-grey="true"
+      <UIModalTriggerButton
+        label="Get your trusted IT partner"
+        color="grey"
         class="software-development__button"
-        @onClick="$refs.getYourTrustedItPartnerModal.show()"
+        @click="$refs.getYourTrustedItPartnerModal.show()"
       />
     </div>
 
@@ -41,7 +41,7 @@
 
 <script>
 import SoftwareDevelopmentContent from '@/components/Services/SoftwareDevelopmentContent'
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import getYourTrustedItPartnerModal from '@/components/Modals/get-your-trusted-it-partner-modal'
 import Modal from '@/containers/Modal'
 
@@ -49,7 +49,7 @@ export default {
   name: 'SoftwareDevelopment',
   components: {
     SoftwareDevelopmentContent,
-    UIButtonModalTrigger,
+    UIModalTriggerButton,
     getYourTrustedItPartnerModal,
     Modal,
   },
@@ -184,8 +184,6 @@ export default {
           },
         ],
       },
-
-      buttonInnerText: 'Get your trusted IT partner',
     }
   },
 }

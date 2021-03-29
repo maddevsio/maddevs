@@ -21,10 +21,10 @@
               :class-name="upToSaving.className"
             />
           </div>
-          <UIButtonModalTrigger
-            :button-inner-text="buttonInnerText"
+          <UIModalTriggerButton
+            label="Get an infrastructure audit"
             class="infrastructure-optimisation__button"
-            @onClick="$refs.infrastructureAuditModal.show()"
+            @click="$refs.infrastructureAuditModal.show()"
           />
         </div>
       </div>
@@ -38,7 +38,7 @@
 
 <script>
 import InfrastructureContent from '@/components/Services/InfrastructureContent'
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import infrastructureAuditModal from '@/components/Modals/infrastructure-audit-modal'
 import Modal from '@/containers/Modal'
 
@@ -46,7 +46,7 @@ export default {
   name: 'InfrastructureOptimisation',
   components: {
     InfrastructureContent,
-    UIButtonModalTrigger,
+    UIModalTriggerButton,
     infrastructureAuditModal,
     Modal,
   },
@@ -70,8 +70,6 @@ export default {
 
         className: 'second-item',
       },
-
-      buttonInnerText: 'Get an infrastructure audit',
     }
   },
 }

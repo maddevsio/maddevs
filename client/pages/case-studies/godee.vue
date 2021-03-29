@@ -99,7 +99,7 @@
         <section class="container_full case_before-after-wrapper background-color-silver m-48_top media-m-20_top">
           <h2 class="case_title_h2 m-24_bottom case_text-align-center">Before & After</h2>
           <div class="container_regular">
-            <BeforeAfterImage
+            <UIBeforeAfterImage
               :base-width="'1000'"
               :base-height="'578.47'"
               :before-image="'Cases/godee/png/application-before.png'"
@@ -645,7 +645,7 @@ import CardGoDeeImpact from '@/components/Cases/cards-content/CardGoDeeImpact'
 import CardGoDeePrimsAlgorithm from '@/components/Cases/cards-content/CardGoDeePrimsAlgorithm'
 import FooterMain from '@/components/Footer'
 import HeaderMain from '@/components/Header'
-import BeforeAfterImage from '@/components/ui/BeforeAfterImage'
+import UIBeforeAfterImage from '@/components/shared/UIBeforeAfterImage'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoad'
 
@@ -674,7 +674,7 @@ export default {
     CardGoDeePrimsAlgorithm,
     FooterMain,
     HeaderMain,
-    BeforeAfterImage,
+    UIBeforeAfterImage,
   },
 
   mixins: [initLazyLoadMixin],

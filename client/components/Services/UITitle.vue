@@ -1,21 +1,17 @@
 <template>
-  <h3 class="item-title">{{ itemTitle }}</h3>
+  <h3 class="item-title">
+    <slot />
+  </h3>
 </template>
 
 <script>
 export default {
-  name: 'UIItemTitle',
-  props: {
-    itemTitle: {
-      type: String,
-      default: '',
-    },
-  },
+  name: 'UITitle',
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
+@import '../../assets/styles/vars';
 
 .item-title {
   margin-bottom: 24px;

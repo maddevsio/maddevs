@@ -1,22 +1,22 @@
 <template>
   <div class="radio-buttons">
-    <div :class="{ required: sectionIsRequired }" class="radio-buttons__field-name field-name">{{ fieldName }}</div>
+    <div :class="{ required: required }" class="radio-buttons__field-name field-name">{{ label }}</div>
     <div class="radio-buttons__radio-list">
       <label
-        v-for="(option, i) in options"
-        :key="i"
-        :for="`${option.id}-${inputId}`"
+        v-for="option in options"
+        :key="option.value"
+        :for="`${option.value}-${id}`"
         class="radio-buttons__radio-label"
       >
         <input
-          :id="`${option.id}-${inputId}`"
-          :name="inputId"
+          :id="`${option.value}-${id}`"
+          :name="id"
           class="radio-buttons__radio-input"
           type="radio"
-          @click="sendSelectedValue(option.text)"
+          @click="handleSelect(option)"
         />
         <span class="radio-buttons__checkmark-radio"></span>
-        <p class="radio-buttons__radio-text_item">{{ option.text }}</p>
+        <p class="radio-buttons__radio-text_item">{{ option.label }}</p>
       </label>
     </div>
   </div>
@@ -24,37 +24,32 @@
 
 <script>
 export default {
-  name: 'RadioList',
+  name: 'UIRadioList',
   props: {
-    inputId: {
+    id: {
       type: String,
       default: 'input-id',
     },
 
     options: {
       type: Array,
-      default: Function,
+      default: () => [],
     },
 
-    emitMethodName: {
+    label: {
       type: String,
-      default: 'method name',
+      default: 'Label',
     },
 
-    fieldName: {
-      type: String,
-      default: 'field name',
-    },
-
-    sectionIsRequired: {
+    required: {
       type: Boolean,
       default: false,
     },
   },
 
   methods: {
-    sendSelectedValue(value) {
-      this.$emit(this.emitMethodName, value)
+    handleSelect(option) {
+      this.$emit('select', option)
     },
   },
 }

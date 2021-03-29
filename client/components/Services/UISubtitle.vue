@@ -1,21 +1,17 @@
 <template>
-  <h4 class="item-sub-title">{{ itemSubTitle }}</h4>
+  <h4 class="item-sub-title">
+    <slot />
+  </h4>
 </template>
 
 <script>
 export default {
-  name: 'UIItemSubTitle',
-  props: {
-    itemSubTitle: {
-      type: String,
-      default: '',
-    },
-  },
+  name: 'UISubtitle',
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
+@import '../../assets/styles/vars';
 
 .item-sub-title {
   font-size: 23px;

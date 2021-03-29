@@ -1,23 +1,23 @@
 <template>
-  <div v-if="radios && radios.length" class="ui-radio-buttons">
+  <div v-if="options && options.length" class="ui-radio-buttons">
     <div
-      v-for="(item, i) of radios"
-      :key="i"
-      :class="{ 'ui-radio-buttons_item--active': active === i }"
+      v-for="option of options"
+      :key="option.value"
+      :class="{ 'ui-radio-buttons_item--active': active === option.value }"
       class="ui-radio-buttons_item"
-      @click="setActive(i, item)"
+      @click="setActive(option)"
     >
       <div class="ui-radio-buttons_item-circle"></div>
-      <div class="ui-radio-buttons_item-label">{{ item.label }}</div>
+      <div class="ui-radio-buttons_item-label">{{ option.label }}</div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'UIFilterColors',
+  name: 'UIRadioButtons',
   props: {
-    radios: {
+    options: {
       type: Array,
       default: () => [],
     },
@@ -30,9 +30,9 @@ export default {
   },
 
   methods: {
-    setActive(index, payload) {
-      this.active = index
-      this.$emit('input', payload)
+    setActive(option) {
+      this.active = option.value
+      this.$emit('input', option)
     },
 
     reset() {

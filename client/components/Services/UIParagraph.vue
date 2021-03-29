@@ -1,21 +1,17 @@
 <template>
-  <p class="paragraph">{{ paragraph }}</p>
+  <p class="paragraph">
+    <slot />
+  </p>
 </template>
 
 <script>
 export default {
   name: 'UIParagraph',
-  props: {
-    paragraph: {
-      type: String,
-      default: '',
-    },
-  },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
+@import '../../assets/styles/vars';
 
 .paragraph {
   font-size: 16px;

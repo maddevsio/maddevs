@@ -3,19 +3,18 @@
     <div class="content-item__content-wrapper">
       <div class="content-item__text-content">
         <client-only>
-          <UIItemTitle :item-title="title" class="content-item__title" />
-          <UIItemSubTitle :item-sub-title="subTitle" class="content-item__sub-title" />
+          <UITitle class="content-item__title">{{ title }}</UITitle>
+          <UISubtitle class="content-item__sub-title">{{ subTitle }}</UISubtitle>
           <UIParagraph
-            :paragraph="firstParagraph"
             :class="`content-item__paragraph-${title.toLowerCase()}`"
             class="content-item__paragraph content-item__paragraph-first"
             v-html="firstParagraph"
-          />
-          <UIParagraph
-            :paragraph="secondParagraph"
-            class="content-item__paragraph content-item__paragraph-second"
-            v-html="secondParagraph"
-          />
+          >
+            {{ firstParagraph }}
+          </UIParagraph>
+          <UIParagraph class="content-item__paragraph content-item__paragraph-second" v-html="secondParagraph">
+            {{ secondParagraph }}
+          </UIParagraph>
         </client-only>
       </div>
       <SoftwareDevelopmentIcons :icons="icons" />
@@ -24,16 +23,16 @@
 </template>
 
 <script>
-import UIParagraph from '@/components/ui/Services/UIParagraph'
-import UIItemTitle from '@/components/ui/Services/UIItemTitle'
-import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle'
+import UIParagraph from '@/components/services/UIParagraph'
+import UITitle from '@/components/services/UITitle'
+import UISubtitle from '@/components/services/UISubtitle'
 import SoftwareDevelopmentIcons from '@/components/Services/SoftwareDevelopmentIcons'
 
 export default {
   name: 'SoftwareDevelopmentContent',
   components: {
-    UIItemTitle,
-    UIItemSubTitle,
+    UITitle,
+    UISubtitle,
     UIParagraph,
     SoftwareDevelopmentIcons,
   },

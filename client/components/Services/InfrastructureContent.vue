@@ -1,25 +1,25 @@
 <template>
   <div class="content-item">
-    <UIItemTitle :item-title="title" :class="`content-item__title-${className}`" class="content-item__title" />
-    <UIItemSubTitle
-      :item-sub-title="subTitle"
-      :class="`content-item__sub-title-${className}`"
-      class="content-item__sub-title"
-    />
-    <UIParagraph :paragraph="paragraph" class="content-item__paragraph" />
+    <UITitle :class="`content-item__title-${className}`" class="content-item__title">
+      {{ title }}
+    </UITitle>
+    <UISubtitle :class="`content-item__sub-title-${className}`" class="content-item__sub-title">
+      {{ subTitle }}
+    </UISubtitle>
+    <UIParagraph class="content-item__paragraph">{{ paragraph }}</UIParagraph>
   </div>
 </template>
 
 <script>
-import UIParagraph from '@/components/ui/Services/UIParagraph'
-import UIItemTitle from '@/components/ui/Services/UIItemTitle'
-import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle'
+import UIParagraph from '@/components/services/UIParagraph'
+import UITitle from '@/components/services/UITitle'
+import UISubtitle from '@/components/services/UISubtitle'
 
 export default {
   name: 'InfrastructureContent',
   components: {
-    UIItemTitle,
-    UIItemSubTitle,
+    UITitle,
+    UISubtitle,
     UIParagraph,
   },
 

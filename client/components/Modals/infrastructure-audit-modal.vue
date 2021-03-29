@@ -80,20 +80,14 @@
         <!-- End Erros -->
       </div>
       <RadioList
-        :input-id="inputId"
-        :field-name="fieldName"
-        :emit-method-name="emitMethodName"
+        :id="'infrastructure-audit'"
+        label="Where is your project hosted?"
         :options="options"
-        :section-is-required="sectionIsRequired"
-        @getSelectedProjectHost="getSelectedProjectHost"
+        :required="false"
+        @select="getSelectedProjectHost"
       />
     </div>
-    <FormCheckboxes
-      ref="checkboxes"
-      :input-id="inputId"
-      @getPrivacyCheckboxState="getPrivacyCheckboxState"
-      @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
-    />
+    <UIFormCheckboxes :id="'infrastructure-audit'" ref="checkboxes" @change="handleCheckboxesChange" />
     <UIButton
       :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
       :loading="onSubmit"
@@ -108,15 +102,15 @@
 <script>
 import { required, email, maxLength } from 'vuelidate/lib/validators'
 import { phone } from '@/helpers/validators'
-import FormCheckboxes from '@/components/ui/form-checkboxes'
-import RadioList from '@/components/ui/radio-list'
-import UIButton from '@/components/ui/UIButton'
+import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
+import RadioList from '@/components/shared/UIRadioList'
+import UIButton from '@/components/shared/UIButton'
 import { phoneHandler } from '@/mixins/phoneHandler'
 
 export default {
   name: 'InfrastructureAudit',
   components: {
-    FormCheckboxes,
+    UIFormCheckboxes,
     RadioList,
     UIButton,
   },
@@ -156,38 +150,34 @@ export default {
     company: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    sectionIsRequired: false,
-    inputId: 'infrastructure-audit',
-    fieldName: 'Where is your project hosted?',
-    emitMethodName: 'getSelectedProjectHost',
     options: [
       {
-        id: 'on-premises',
-        text: 'On-premises',
+        value: 'on-premises',
+        label: 'On-premises',
       },
       {
-        id: 'amazon',
-        text: 'Amazon Web Services',
+        value: 'amazon',
+        label: 'Amazon Web Services',
       },
       {
-        id: 'google-cloud',
-        text: 'Google Cloud Platform',
+        value: 'google-cloud',
+        label: 'Google Cloud Platform',
       },
       {
-        id: 'microsoft-azure',
-        text: 'Microsoft Azure',
+        value: 'microsoft-azure',
+        label: 'Microsoft Azure',
       },
       {
-        id: 'heroku',
-        text: 'Heroku',
+        value: 'heroku',
+        label: 'Heroku',
       },
       {
-        id: 'digital-ocean',
-        text: 'Digital Ocean',
+        value: 'digital-ocean',
+        label: 'Digital Ocean',
       },
       {
-        id: 'other',
-        text: 'Other',
+        value: 'other',
+        label: 'Other',
       },
     ],
 
@@ -206,12 +196,9 @@ export default {
   },
 
   methods: {
-    getPrivacyCheckboxState(privacyState) {
-      this.agreeWithPrivacyPolicy = privacyState
-    },
-
-    getDiscountOffersCheckboxState(discountOffersState) {
-      this.agreeToGetMadDevsDiscountOffers = discountOffersState
+    handleCheckboxesChange({ privacy, discountOffers }) {
+      this.agreeWithPrivacyPolicy = privacy
+      this.agreeToGetMadDevsDiscountOffers = discountOffers
     },
 
     getSelectedProjectHost(projectHost) {
@@ -229,7 +216,7 @@ export default {
             email: this.email || '',
             emailTo: this.emailTo || '',
             phoneNumber: this.phoneNumber || '',
-            selectedProjectHost: this.selectedProjectHost || '',
+            selectedProjectHost: this.selectedProjectHost ? this.selectedProjectHost.label || '' : '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
             subject: this.subject || '',

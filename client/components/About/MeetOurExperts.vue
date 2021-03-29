@@ -8,7 +8,7 @@
           :key="expert.name"
           class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
         >
-          <ImageComponent
+          <UIImage
             :file-name="expert.image"
             :file-name-retina="`${expert.image}@2x`"
             :alt="expert.alt"
@@ -36,13 +36,13 @@
 </template>
 
 <script>
-import ImageComponent from '@/components/ui/image-component'
+import UIImage from '@/components/shared/UIImage'
 import { experts } from '@/data/ourExperts'
 
 export default {
   name: 'MeetOurExperts',
   components: {
-    ImageComponent,
+    UIImage,
   },
 
   data() {

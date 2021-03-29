@@ -10,39 +10,42 @@
   >
     <div class="remoteTechStaffContent__content_wrapper">
       <div class="remoteTechStaffContent__text-wrap">
-        <UIItemTitle :item-title="title" />
-        <UIItemSubTitle :item-sub-title="subTitle" class="remoteTechStaffContent__item-sub-title" />
+        <UITitle>{{ title }}</UITitle>
+        <UISubtitle class="remoteTechStaffContent__item-sub-title">
+          {{ subTitle }}
+        </UISubtitle>
         <UIParagraph
-          :paragraph="paragraph"
           :class="`remoteTechStaffContent__${title.toLowerCase()}-paragraph`"
           class="remoteTechStaffContent__paragraph"
-        />
+        >
+          {{ paragraph }}
+        </UIParagraph>
         <div
           :class="`remoteTechStaffContent__${title.toLowerCase()}-icon`"
           class="remoteTechStaffContent__item-icon"
         ></div>
       </div>
     </div>
-    <UIButtonModalTrigger
-      :button-inner-text="buttonInnerText"
+    <UIModalTriggerButton
+      :label="buttonInnerText"
       class="remoteTechStaffContent__ui-button-modal-trigger"
-      @onClick="$emit('onClick')"
+      @click="$emit('onClick')"
     />
   </div>
 </template>
 
 <script>
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
-import UIParagraph from '@/components/ui/Services/UIParagraph'
-import UIItemTitle from '@/components/ui/Services/UIItemTitle'
-import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle'
+import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
+import UIParagraph from '@/components/services/UIParagraph'
+import UITitle from '@/components/services/UITitle'
+import UISubtitle from '@/components/services/UISubtitle'
 
 export default {
   name: 'RemoteTechStaffContent',
   components: {
-    UIButtonModalTrigger,
-    UIItemTitle,
-    UIItemSubTitle,
+    UIModalTriggerButton,
+    UITitle,
+    UISubtitle,
     UIParagraph,
   },
 

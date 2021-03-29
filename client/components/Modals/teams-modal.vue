@@ -60,14 +60,7 @@
         </div>
         <!-- End Erros -->
       </div>
-      <RadioList
-        :input-id="inputId"
-        :field-name="fieldName"
-        :emit-method-name="emitMethodName"
-        :options="options"
-        :section-is-required="sectionIsRequired"
-        @getTeamSize="getTeamSize"
-      />
+      <RadioList :id="'teams'" label="Expected team size" :options="options" :required="true" @select="getTeamSize" />
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Project description</p>
         <textarea
@@ -87,12 +80,7 @@
         <!-- End Erros -->
       </div>
     </div>
-    <FormCheckboxes
-      ref="checkboxes"
-      :input-id="inputId"
-      @getPrivacyCheckboxState="getPrivacyCheckboxState"
-      @getDiscountOffersCheckboxState="getDiscountOffersCheckboxState"
-    />
+    <UIFormCheckboxes :id="'teams'" ref="checkboxes" @change="handleCheckboxesChange" />
     <UIButton
       :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || !selectedTeamSize || onSubmit"
       :loading="onSubmit"
@@ -108,14 +96,14 @@
 import { required, email, maxLength } from 'vuelidate/lib/validators'
 import { phone } from '@/helpers/validators'
 import { phoneHandler } from '@/mixins/phoneHandler'
-import FormCheckboxes from '@/components/ui/form-checkboxes'
-import RadioList from '@/components/ui/radio-list'
-import UIButton from '@/components/ui/UIButton'
+import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
+import RadioList from '@/components/shared/UIRadioList'
+import UIButton from '@/components/shared/UIButton'
 
 export default {
   name: 'FrontendModal',
   components: {
-    FormCheckboxes,
+    UIFormCheckboxes,
     RadioList,
     UIButton,
   },
@@ -154,22 +142,18 @@ export default {
     projectDescription: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
-    sectionIsRequired: true,
-    inputId: 'teams',
-    fieldName: 'Expected team size',
-    emitMethodName: 'getTeamSize',
     options: [
       {
-        id: 'less-five',
-        text: 'Less than 5',
+        value: 'less-five',
+        label: 'Less than 5',
       },
       {
-        id: 'from-five-to-ten',
-        text: 'From 5 to 10',
+        value: 'from-five-to-ten',
+        label: 'From 5 to 10',
       },
       {
-        id: 'more-than-ten',
-        text: 'More than 10',
+        value: 'more-than-ten',
+        label: 'More than 10',
       },
     ],
 
@@ -187,12 +171,9 @@ export default {
   },
 
   methods: {
-    getPrivacyCheckboxState(privacyState) {
-      this.agreeWithPrivacyPolicy = privacyState
-    },
-
-    getDiscountOffersCheckboxState(discountOffersState) {
-      this.agreeToGetMadDevsDiscountOffers = discountOffersState
+    handleCheckboxesChange({ privacy, discountOffers }) {
+      this.agreeWithPrivacyPolicy = privacy
+      this.agreeToGetMadDevsDiscountOffers = discountOffers
     },
 
     getTeamSize(teamSize) {
@@ -206,7 +187,7 @@ export default {
           templateId: 304637, // Required
           variables: {
             fullName: this.fullName || '',
-            selectedTeamSize: this.selectedTeamSize || '',
+            selectedTeamSize: this.selectedTeamSize ? this.selectedTeamSize.label || '' : '',
             projectDescription: this.projectDescription || '',
             email: this.email || '',
             emailTo: this.emailTo || '',

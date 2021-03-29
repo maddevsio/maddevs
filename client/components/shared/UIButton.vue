@@ -1,6 +1,11 @@
 <template>
-  <button v-WaveAnimation="!disabled" :class="{ 'ui-button--disabled': disabled }" class="ui-button" @click="onClick">
-    <span v-if="loading === true">Waiting...</span>
+  <button
+    v-WaveAnimation="!disabled"
+    :class="{ 'ui-button--disabled': disabled }"
+    class="ui-button"
+    @click="handleClick"
+  >
+    <span v-if="loading">Waiting...</span>
     <slot v-else></slot>
   </button>
 </template>
@@ -27,7 +32,7 @@ export default {
   },
 
   methods: {
-    onClick() {
+    handleClick() {
       if (!this.disabled) this.$emit('click')
     },
   },
