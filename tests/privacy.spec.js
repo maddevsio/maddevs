@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Privacy from '@/components/Privacy'
+import Privacy from '@/components/core/Privacy'
 
 describe('privacy', () => {
   let wrapper

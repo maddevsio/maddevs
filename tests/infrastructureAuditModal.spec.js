@@ -47,11 +47,7 @@ describe('infrastructure Audit Modal', () => {
     expect(typeof InfrastructureAuditModal.data).toBe('function')
     const defaultData = InfrastructureAuditModal.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
-    expect(defaultData.inputId).toEqual('infrastructure-audit')
     expect(defaultData.options).toHaveLength(7)
-    expect(defaultData.fieldName).toEqual('Where is your project hosted?')
-    expect(defaultData.emitMethodName).toEqual('getSelectedProjectHost')
-    expect(defaultData.sectionIsRequired).toEqual(false)
   })
 
   it('has a functions', () => {
@@ -63,8 +59,7 @@ describe('infrastructure Audit Modal', () => {
   })
 
   it('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true)
-    wrapper.vm.getDiscountOffersCheckboxState(true)
+    wrapper.vm.handleCheckboxesChange({ privacy: true, discountOffers: true })
     wrapper.vm.getSelectedProjectHost('Digital Ocean')
 
     expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true)

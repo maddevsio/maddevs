@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`footer social network list renders correctly 1`] = `
+exports[`footerSocialNetworks renders correctly 1`] = `
 <ul
   class="footerSocialNetworkList"
 >

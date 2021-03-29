@@ -63,7 +63,7 @@ exports[`careersForm component renders correctly 1`] = `
             class="careers__position-list"
           >
             <uiradiobuttons-stub
-              radios="[object Object],[object Object],[object Object],[object Object]"
+              options="[object Object],[object Object],[object Object],[object Object]"
             />
           </ul>
            

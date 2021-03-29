@@ -10,7 +10,7 @@ exports[`caseStudies component renders correctly 1`] = `
   >
     <div>
       <h2
-        class="case-studies__main-title case-studies__main-title-index"
+        class="case-studies__main-title case-studies__main-title-undefined"
       >
         
         Case 

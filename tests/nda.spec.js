@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import NDA from '@/components/NDA'
+import NDA from '@/components/core/NDA'
 
 describe('nDA', () => {
   let wrapper

@@ -1,43 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`success message renders correctly 1`] = `
-<section
-  class="success-message"
-  id="success-message"
+<transition-stub
+  name="fade"
 >
-  <div
-    class="success-message__conten-wrapper"
-  >
-    <img
-      alt="Hand"
-      src="@/assets/img/common/success-message-hand.svg"
-    />
-     
-    <div
-      class="success-message__text-content"
-    >
-      <div
-        class="success-message__title"
-      >
-        
-        Thanks for your 
-        <br />
-        
-        interest in Mad Devs
-      
-      </div>
-       
-      <div
-        class="success-message__info-text"
-      >
-        
-        The form has been submitted. 
-        <br />
-        
-        We will contact you as soon as possible.
-      
-      </div>
-    </div>
-  </div>
-</section>
+  <!---->
+</transition-stub>
 `;

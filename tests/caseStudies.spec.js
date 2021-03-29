@@ -19,6 +19,9 @@ describe('caseStudies component', () => {
       mocks: {
         $route,
       },
+      props: {
+        type: 'index',
+      },
     })
   })
 

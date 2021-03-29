@@ -19,13 +19,17 @@ exports[`remote tech staff content renders correctly 1`] = `
       <h4
         class="item-sub-title remoteTechStaffContent__item-sub-title"
       >
+        
         Sub title
+      
       </h4>
        
       <p
         class="paragraph remoteTechStaffContent__paragraph remoteTechStaffContent__title-paragraph"
       >
+        
         Paragraph
+      
       </p>
        
       <div

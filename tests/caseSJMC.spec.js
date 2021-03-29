@@ -285,7 +285,7 @@ describe('sirJohnMonashCentre', () => {
           $on: jest.fn(),
         },
       },
-      stubs: ['nuxt-link'],
+      stubs: ['nuxt-link', 'NuxtLink'],
     })
     wrapper.vm.$refs = {
       video: {

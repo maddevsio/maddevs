@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import FooterContacts from '@/components/core/Footer/footer-contacts'
+import FooterContacts from '@/components/core/Footer/FooterContacts'
 
 describe('footer contacts', () => {
   let wrapper

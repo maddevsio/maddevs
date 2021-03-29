@@ -1,8 +1,8 @@
 import { mount } from '@vue/test-utils'
 
-import ImageComponent from '@/components/ui/image-component'
+import UIImage from '@/components/shared/UIImage'
 
-describe('webp image component', () => {
+describe('uIImage component', () => {
   let wrapper
   const props = {
     fileName: 'Marat',
@@ -10,7 +10,7 @@ describe('webp image component', () => {
   }
 
   beforeEach(() => {
-    wrapper = mount(ImageComponent, {
+    wrapper = mount(UIImage, {
       propsData: props,
     })
   })

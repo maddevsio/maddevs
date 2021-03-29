@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils'
-import BeforeAfterImage from '@/components/ui/BeforeAfterImage'
+import UIBeforeAfterImage from '@/components/shared/UIBeforeAfterImage'
 
-describe('beforeAfterImage component', () => {
+describe('uIBeforeAfterImage component', () => {
   let wrapper
   const props = {
     baseWidth: '1000',
@@ -12,7 +12,7 @@ describe('beforeAfterImage component', () => {
   }
 
   beforeEach(() => {
-    wrapper = mount(BeforeAfterImage, {
+    wrapper = mount(UIBeforeAfterImage, {
       propsData: props,
     })
   })

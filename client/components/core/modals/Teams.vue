@@ -134,7 +134,6 @@ export default {
 
   data: () => ({
     form: null,
-    modalName: 'teams-modal',
     fullName: null,
     email: null,
     emailTo: process.env.emailContact,

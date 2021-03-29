@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`beforeAfterImage component renders correctly 1`] = `
+exports[`uIBeforeAfterImage component renders correctly 1`] = `
 <div class="comparsion-container">
   <div class="comparsion-track-line"></div>
   <div class="comparsion-view">

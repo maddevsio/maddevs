@@ -130,7 +130,6 @@ export default {
   },
 
   data: () => ({
-    modalName: 'get-your-trusted-it-partner',
     fullName: null,
     email: null,
     emailTo: process.env.emailContact,

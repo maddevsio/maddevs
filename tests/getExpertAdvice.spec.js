@@ -6,7 +6,7 @@ const localVue = createLocalVue()
 
 localVue.use(Vuelidate)
 
-describe('technology stack modal', () => {
+describe('getExpertAdvice modal', () => {
   let wrapper
 
   beforeEach(() => {
@@ -47,20 +47,14 @@ describe('technology stack modal', () => {
     expect(typeof getExpertAdvice.data).toBe('function')
     const defaultData = getExpertAdvice.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
-    expect(defaultData.inputId).toEqual('get-expert-advice')
   })
 
   it('has a functions', () => {
-    expect(
-      typeof getExpertAdvice.methods.getPrivacyCheckboxState &&
-        typeof getExpertAdvice.methods.getDiscountOffersCheckboxState,
-    ).toBe('function')
+    expect(typeof getExpertAdvice.methods.handleCheckboxesChange).toBe('function')
   })
 
   it('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true)
-    wrapper.vm.getDiscountOffersCheckboxState(true)
-
+    wrapper.vm.handleCheckboxesChange({ privacy: true, discountOffers: true })
     expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true)
   })
 

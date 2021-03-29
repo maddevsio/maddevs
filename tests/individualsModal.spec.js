@@ -47,20 +47,14 @@ describe('individuals modal', () => {
     expect(typeof IndividualsModal.data).toBe('function')
     const defaultData = IndividualsModal.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
-    expect(defaultData.inputId).toEqual('individuals')
   })
 
   it('has a functions', () => {
-    expect(
-      typeof IndividualsModal.methods.getPrivacyCheckboxState &&
-        typeof IndividualsModal.methods.getDiscountOffersCheckboxState,
-    ).toBe('function')
+    expect(typeof IndividualsModal.methods.handleCheckboxesChange).toBe('function')
   })
 
   it('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true)
-    wrapper.vm.getDiscountOffersCheckboxState(true)
-
+    wrapper.vm.handleCheckboxesChange({ privacy: true, discountOffers: true })
     expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true)
   })
 

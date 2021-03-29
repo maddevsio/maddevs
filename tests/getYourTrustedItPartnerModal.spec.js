@@ -47,20 +47,14 @@ describe('get your trusted it partner modal', () => {
     expect(typeof getYourTrustedItPartnerModal.data).toBe('function')
     const defaultData = getYourTrustedItPartnerModal.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
-    expect(defaultData.inputId).toEqual('get-your-trusted-it-partner')
   })
 
   it('has a functions', () => {
-    expect(
-      typeof getYourTrustedItPartnerModal.methods.getPrivacyCheckboxState &&
-        typeof getYourTrustedItPartnerModal.methods.getDiscountOffersCheckboxState,
-    ).toBe('function')
+    expect(typeof getYourTrustedItPartnerModal.methods.handleCheckboxesChange).toBe('function')
   })
 
   it('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true)
-    wrapper.vm.getDiscountOffersCheckboxState(true)
-
+    wrapper.vm.handleCheckboxesChange({ privacy: true, discountOffers: true })
     expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true)
   })
 

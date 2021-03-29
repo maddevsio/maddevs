@@ -1,15 +1,16 @@
 import { mount } from '@vue/test-utils'
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
+import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 
 describe('ui button modal trigger', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(UIButtonModalTrigger, {
+    wrapper = mount(UIModalTriggerButton, {
       propsData: {
-        buttonInnerText: 'Some button name',
-        modalWindowName: 'Some modal window name',
-        isRed: true,
+        color: 'red',
+      },
+      slots: {
+        default: 'Some button name',
       },
       mocks: {
         $modal: {
@@ -34,7 +35,7 @@ describe('ui button modal trigger', () => {
 
   it('sets the correctly button name and contains new class --red', () => {
     const button = wrapper.find('.ui-button-modal-trigger')
-    expect(button.text()).toBe('Some button name')
+    expect(button.text()).toBe('Label')
     expect(button.classes()).toContain('ui-button-modal-trigger--red')
   })
 })

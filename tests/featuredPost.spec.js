@@ -10,7 +10,7 @@ describe('featured post component', () => {
       propsData: {
         post: blogPost,
       },
-      stubs: ['nuxt-link'],
+      stubs: ['nuxt-link', 'NuxtLink'],
       mocks: {
         $prismic: {
           asText: text => text[0].text,

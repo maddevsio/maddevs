@@ -141,7 +141,6 @@ export default {
   },
 
   data: () => ({
-    modalName: 'infrastructure-modal',
     fullName: null,
     email: null,
     emailTo: process.env.emailContact,

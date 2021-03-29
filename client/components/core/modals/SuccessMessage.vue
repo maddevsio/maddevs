@@ -44,11 +44,6 @@ export default {
     letter-spacing: -0.03em;
     font-family: 'Poppins-Regular', sans-serif;
   }
-
-  .close-modal {
-    top: 29px;
-    right: 17px;
-  }
 }
 
 .success-modal {

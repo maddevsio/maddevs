@@ -11,7 +11,7 @@ describe('form checkboxes', () => {
       },
     }
     wrapper = mount(ProjectsBanner, {
-      stubs: ['nuxt-link'],
+      stubs: ['nuxt-link', 'NuxtLink'],
     })
   })
 

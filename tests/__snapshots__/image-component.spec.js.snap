@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`webp image component renders correctly 1`] = `
+exports[`uIImage component renders correctly 1`] = `
 <picture>
   <source
     class="multi-image"

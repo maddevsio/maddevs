@@ -42,12 +42,8 @@ describe('teams Modal', () => {
     expect(typeof TeamsModal.data).toBe('function')
     const defaultData = TeamsModal.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
-    expect(defaultData.inputId).toEqual('teams')
     expect(defaultData.selectedTeamSize).toBeNull()
     expect(defaultData.options).toHaveLength(3)
-    expect(defaultData.fieldName).toEqual('Expected team size')
-    expect(defaultData.emitMethodName).toEqual('getTeamSize')
-    expect(defaultData.sectionIsRequired).toEqual(true)
   })
 
   it('has a functions', () => {
@@ -59,8 +55,7 @@ describe('teams Modal', () => {
   })
 
   it('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true)
-    wrapper.vm.getDiscountOffersCheckboxState(true)
+    wrapper.vm.handleCheckboxesChange({ privacy: true, discountOffers: true })
     wrapper.vm.getTeamSize('Less than 5')
 
     expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true)

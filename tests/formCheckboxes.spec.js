@@ -1,13 +1,13 @@
 import { mount } from '@vue/test-utils'
-import FormCheckboxes from '@/components/ui/form-checkboxes'
+import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
 
 describe('form checkboxes', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(FormCheckboxes, {
+    wrapper = mount(UIFormCheckboxes, {
       propsData: {
-        inputId: 'input id',
+        id: 'input id',
       },
     })
   })
@@ -22,13 +22,6 @@ describe('form checkboxes', () => {
   })
   // --------------------- //
 
-  it('has a functions', () => {
-    expect(
-      typeof FormCheckboxes.methods.privacyCheckboxChangeState &&
-        typeof FormCheckboxes.methods.discountOffersCheckboxChangeState,
-    ).toBe('function')
-  })
-
   it('emits called with arguments', () => {
     const firstCheckbox = {
       target: {
@@ -42,15 +35,12 @@ describe('form checkboxes', () => {
       },
     }
 
-    wrapper.vm.privacyCheckboxChangeState(firstCheckbox)
-    wrapper.vm.discountOffersCheckboxChangeState(secondCheckbox)
-
+    wrapper.vm.handleChange(firstCheckbox)
+    wrapper.vm.handleChange(secondCheckbox)
     expect(wrapper.emitted()).toBeTruthy()
-    expect(wrapper.emitted().getPrivacyCheckboxState).toEqual([[true]])
-    expect(wrapper.emitted().getDiscountOffersCheckboxState).toEqual([[false]])
   })
 
   it('correctly props data', () => {
-    expect(wrapper.props().inputId).toBe('input id')
+    expect(wrapper.props().id).toBe('input id')
   })
 })
