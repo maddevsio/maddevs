@@ -1,6 +1,6 @@
 <template>
   <main class="case">
-    <CaseHeader :headerLogo="headerLogo" video-name="">
+    <CaseHeader :header-logo="headerLogo" video-name="">
       <h1 slot="title" class="case_header-title">
         The Evolution <br />
         of Yourcast.TV
@@ -235,16 +235,8 @@ import Footer from '@/components/Cases/Footer'
 import TextParagraph from '@/components/Cases/TextParagraph'
 import TextQuote from '@/components/Cases/TextQuote'
 import TextQuoteBox from '@/components/Cases/TextQuoteBox'
-// import Picture from '@/components/Cases/Picture'
-// import ListNumberedBox from '@/components/Cases/ListNumberedBox'
-// import ListNumberedItemBox from '@/components/Cases/ListNumberedItemBox'
-// import ListTeam from '@/components/Cases/ListTeam'
-// import ListTeamItem from '@/components/Cases/ListTeamItem'
-// import ListTechnologies from '@/components/Cases/ListTechnologies'
-// import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
+import List from '@/components/Cases/List'
 import ListHyphenItemBox from '@/components/Cases/ListHyphenItemBox'
-// import Card from '@/components/Cases/Card'
-// import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
 
 export default {
   name: 'KafCase',
@@ -254,34 +246,12 @@ export default {
     TextParagraph,
     TextQuote,
     TextQuoteBox,
-    // Picture,
-    // ListNumberedBox,
-    // ListNumberedItemBox,
-    // ListTeam,
-    // ListTeamItem,
-    // ListTechnologies,
-    // ListTechnologiesItem,
+    List,
     ListHyphenItemBox,
-    // Card,
-    // TextQuoteAuthor,
   },
 
   data() {
     return {
-      title: '',
-      description: '',
-      ogUrl: '',
-      team: [
-        {
-          name: '',
-          position: '',
-          fileName: '',
-          fileExtension: '',
-          alt: '',
-        },
-      ],
-
-      technologiesList: [],
       headerLogo: {
         width: 387,
         height: 81.23,
