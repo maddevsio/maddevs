@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardProjectInNumbers renders correctly 1`] = `
+exports[`сardProjectInNumbers renders correctly 1`] = `
 <div
   class="card-content"
 >
