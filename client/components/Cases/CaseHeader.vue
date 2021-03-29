@@ -92,7 +92,6 @@ export default {
 .case {
   &_header {
     display: flex;
-    background-color: $bgcolor--black-opacity-07;
 
     &:after {
       display: none;

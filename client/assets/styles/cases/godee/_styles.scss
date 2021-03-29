@@ -1,5 +1,7 @@
 .case {
   &_header {
+    background-color: $bgcolor--black-opacity-07;
+
     &:before {
       background-image: url("../../assets/img/Cases/godee/jpg/godee-case-preview.jpg");
     }

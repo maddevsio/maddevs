@@ -1,6 +1,6 @@
 <template>
   <main class="case">
-    <CaseHeader logo="godee" video-name="">
+    <CaseHeader :headerLogo="headerLogo" video-name="">
       <h1 slot="title" class="case_header-title">
         The Evolution <br />
         of Yourcast.TV
@@ -282,6 +282,13 @@ export default {
       ],
 
       technologiesList: [],
+      headerLogo: {
+        width: 387,
+        height: 81.23,
+        pictureFolder: 'kaf',
+        fileName: 'kaf-logo',
+        alt: '',
+      },
     }
   },
 }
