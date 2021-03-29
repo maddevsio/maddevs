@@ -1,22 +1,12 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { render, screen } from '@testing-library/vue';
 import WeCreateItProjectFor from '@/components/About/WeCreateItProjectFor';
 
-describe('We Create It Project For', () => {
-  let wrapper;
 
-  beforeEach(() => {
-    wrapper = mount(WeCreateItProjectFor);
-  });
+describe('Technologies and tools', () => {
+  test('should render correctly with slot', () => {
+    const {container} = render(WeCreateItProjectFor);
 
-  // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
+    expect(screen.getByTestId('test-weCreateItProject')).not.toBeNull();
+    expect(container).toMatchSnapshot();
   });
-  
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-  // --------------------- //
 });
