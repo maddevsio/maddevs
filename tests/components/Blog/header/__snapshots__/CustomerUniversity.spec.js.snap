@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`customer university header component is a Vue instance with default props 1`] = `
+exports[`customer university header component is a Vue instance withk default props 1`] = `
 <div>
   <common-header-stub
     coverimageheight="533"
