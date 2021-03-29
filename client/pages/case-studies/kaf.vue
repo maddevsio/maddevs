@@ -36,7 +36,9 @@
           its audience sharing new feature requests for Mad Devs.
         </TextParagraph>
         <div class="m-96_bottom media-m-48_bottom">
-          <!-- Тут будет карточка -->
+          <Card class="background-color-purple">
+            <CardProjectInNumbers />
+          </Card>
         </div>
       </section>
       <section class="container_regular">
@@ -237,6 +239,8 @@ import TextQuote from '@/components/Cases/TextQuote'
 import TextQuoteBox from '@/components/Cases/TextQuoteBox'
 import List from '@/components/Cases/List'
 import ListHyphenItemBox from '@/components/Cases/ListHyphenItemBox'
+import Card from '@/components/Cases/Card'
+import CardProjectInNumbers from '@/components/Cases/cards/kaf/CardProjectInNumbers'
 
 export default {
   name: 'KafCase',
@@ -248,6 +252,8 @@ export default {
     TextQuoteBox,
     List,
     ListHyphenItemBox,
+    CardProjectInNumbers,
+    Card,
   },
 
   data() {
