@@ -460,6 +460,7 @@ export default {
     &__introduction-paragraph,
     &__text-container {
       padding: 0 24px;
+      word-break: break-word;
     }
 
     &__recommended-posts-list {

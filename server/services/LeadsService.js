@@ -8,7 +8,7 @@ const customFieldIds = {
   phone: Number(config.AMOCRM_PHONE_FIELD_ID),
   email: Number(config.AMOCRM_EMAIL_FIELD_ID),
   sourceKey: Number(config.AMOCRM_SOURCE_FIELD_ID),
-  sourceValue: Number(config.AMOCRM_SOURCE_FIELD_VALUE),
+  sourceValue: config.AMOCRM_SOURCE_FIELD_VALUE,
   userId: Number(config.AMOCRM_RESPONSIBLE_USER_ID),
 }
 
