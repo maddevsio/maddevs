@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils'
 import Kaf from '../client/pages/case-studies/kaf'
 
-describe('namba food', () => {
+describe('kaf', () => {
   let wrapper
   const data = {
     headerLogo: {
