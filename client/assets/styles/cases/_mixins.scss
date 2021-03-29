@@ -39,6 +39,7 @@
   padding: $padding;
   border-radius: $borderRadius;
   background-color: $backgroundColor;
+  list-style-type: none;
 
   &:last-child {
     margin-bottom: 0;
