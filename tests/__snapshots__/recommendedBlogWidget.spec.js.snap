@@ -3,6 +3,7 @@
 exports[`recommended blog widget component renders correctly 1`] = `
 <nuxt-link-stub
   class=""
+  classname="test"
   to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
 >
   <div

@@ -37,11 +37,6 @@ export default {
       type: Object,
       required: true,
     },
-
-    className: {
-      type: String,
-      default: '',
-    },
   },
 
   computed: {
