@@ -1,5 +1,5 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils'
-import Footer from '@/components/Footer'
+import Footer from '@/components/core/Footer/Footer'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()

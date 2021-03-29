@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Privacy from '@/components/Privacy'
+import Privacy from '@/components/core/Privacy'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoad'
 

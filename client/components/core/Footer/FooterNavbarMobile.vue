@@ -2,21 +2,27 @@
   <div class="footer-navbar-mobile">
     <p class="footer-navbar-mobile__company-name">© Mad Devs - {{ currentYear }}</p>
     <div class="footer-navbar-mobile__nav-list">
-      <a href="/gdpr/" target="_blank" class="footer-navbar-mobile__nav-link">GDPR Compliance Commitment</a>
-      <a href="/nda/" target="_blank" class="footer-navbar-mobile__nav-link">Non-Disclosure Agreement (NDA)</a>
-      <a href="/privacy/" target="_blank" class="footer-navbar-mobile__nav-link footer-navbar-mobile__nav-link-privacy"
-        >Privacy Policy</a
+      <a
+        v-for="item in navigation"
+        :key="item.link"
+        :href="item.link"
+        target="_blank"
+        class="footer-navbar-mobile__nav-link"
       >
-      <a href="/faq/" target="_blank" class="footer-navbar-mobile__nav-link">FAQ</a>
+        {{ item.title }}
+      </a>
     </div>
   </div>
 </template>
 
 <script>
+import { footerNavigation as navigation } from '@/data/navigation'
+
 export default {
   name: 'FooterNavbarMobile',
   data() {
     return {
+      navigation,
       currentYear: new Date().getFullYear(),
     }
   },
@@ -24,7 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
+@import '../../../assets/styles/vars';
 
 .footer-navbar-mobile {
   margin-top: 40px;

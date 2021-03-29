@@ -27,87 +27,47 @@
     </div>
     <div class="footer-contacts__lists-wrapper">
       <ul class="footer-contacts__messengers-list">
-        <li>
-          <a href="https://m.me/maddevsllc" target="_blank" class="footer-contacts__messenger-item-wrapper">
+        <li v-for="messenger in messengers" :key="messenger.key">
+          <a :href="messenger.url" target="_blank" class="footer-contacts__messenger-item-wrapper">
             <img
-              :data-src="require(`@/assets/img/Footer/svg/messenger.svg`)"
+              :data-src="require(`@/assets/img/Footer/svg/${messenger.key}.svg`)"
               width="42"
               height="42"
               class="img_lazy"
-              alt="Messenger"
+              :alt="messenger.label"
             />
-            <p class="footer-contacts__messenger-name">Messenger</p>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://wa.me/message/KPJAW6J7BF7EK1"
-            target="_blank"
-            class="footer-contacts__messenger-item-wrapper"
-          >
-            <img
-              :data-src="require(`@/assets/img/Footer/svg/whatsapp.svg`)"
-              width="42"
-              height="42"
-              class="img_lazy"
-              alt="WhatsApp"
-            />
-            <p class="footer-contacts__messenger-name">WhatsApp</p>
-          </a>
-        </li>
-        <li>
-          <a href="https://t.me/MadDevs_io" target="_blank" class="footer-contacts__messenger-item-wrapper">
-            <img
-              :data-src="require(`@/assets/img/Footer/svg/telegram.svg`)"
-              width="42"
-              height="42"
-              class="img_lazy"
-              alt="Telegram"
-            />
-            <p class="footer-contacts__messenger-name">Telegram</p>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
-            target="_blank"
-            class="footer-contacts__messenger-item-wrapper"
-          >
-            <img
-              :data-src="require(`@/assets/img/Footer/svg/wechat.svg`)"
-              width="42"
-              height="42"
-              class="img_lazy"
-              alt="WeChat"
-            />
-            <p class="footer-contacts__messenger-name">WeChat</p>
+            <p class="footer-contacts__messenger-name">{{ messenger.label }}</p>
           </a>
         </li>
       </ul>
       <div class="footer-contacts__social-network-list-desktop">
-        <footerSocialNetworkList />
+        <FooterSocialNetworks />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import footerSocialNetworkList from '@/components/Footer/footer-social-network-list'
+import { messengers } from '@/data/messengers'
+import FooterSocialNetworks from '@/components/core/Footer/FooterSocialNetworks'
 
 export default {
   name: 'FooterContacts',
   components: {
-    footerSocialNetworkList,
+    FooterSocialNetworks,
   },
 
-  data: () => ({
-    mailLink: process.env.emailContact,
-  }),
+  data() {
+    return {
+      messengers,
+      mailLink: process.env.emailContact,
+    }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
+@import '../../../assets/styles/vars';
 
 @mixin contacts-head-content {
   &__head-content {

@@ -141,8 +141,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/styles/vars';
-@import '../assets/styles/_commonIcons';
+@import '../../assets/styles/vars';
+@import '../../assets/styles/_commonIcons';
 
 .faq {
   position: relative;

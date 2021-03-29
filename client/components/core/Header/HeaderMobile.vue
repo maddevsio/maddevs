@@ -4,27 +4,23 @@
       <div class="mobile-header__content-wrap">
         <div class="mobile-header__nav-wrap">
           <nav class="mobile-header__header-routes_links">
-            <router-link class="mobile-header__nav-link" exact to="/" @click.native="goToPage()">About</router-link>
-            <router-link class="mobile-header__nav-link" to="/services/" @click.native="goToPage()"
-              >Services</router-link
+            <RouterLink
+              v-for="{ title, link, exact } in navigation"
+              :key="link"
+              :exact="exact"
+              class="mobile-header__nav-link"
+              :to="link"
+              @click.native="goToPage"
             >
-            <router-link class="mobile-header__nav-link" to="/projects/" @click.native="goToPage()"
-              >Projects</router-link
-            >
-            <router-link class="mobile-header__nav-link" to="/careers/" @click.native="goToPage()">Careers</router-link>
-            <router-link
-              class="mobile-header__nav-link mobile-header__nav-blog-link"
-              to="/blog/"
-              @click.native="goToPage()"
-              >Blog</router-link
-            >
+              {{ title }}
+            </RouterLink>
           </nav>
           <div class="mobile-header__contacts mobile-header__large-phone-content">
             <div class="mobile-header__contact-item mobile-header__contact-item-email">
               <p class="mobile-header__contact-title">Text us:</p>
-              <a :href="`mailto:${mailLink}`" class="mobile-header__contact-link mobile-header__contact-mail">{{
-                mailLink
-              }}</a>
+              <a :href="`mailto:${mailLink}`" class="mobile-header__contact-link mobile-header__contact-mail">
+                {{ mailLink }}
+              </a>
             </div>
             <div class="mobile-header__contact-item">
               <div class="mobile-header__contact-title-wrapper">
@@ -38,41 +34,20 @@
                 />
                 <p class="mobile-header__contact-title">Call us:</p>
               </div>
-              <a href="tel:+442039848555" class="mobile-header__contact-link mobile-header__contact-phone-number"
-                >+44 20 3984 8555</a
-              >
+              <a href="tel:+442039848555" class="mobile-header__contact-link mobile-header__contact-phone-number">
+                +44 20 3984 8555
+              </a>
             </div>
             <ul class="mobile-header__messengers-list">
-              <li>
-                <a href="https://facebook.com/maddevsllc" target="_blank" class="mobile-header__messenger-item-wrapper">
-                  <img width="42" height="42" src="@/assets/img/Footer/svg/messenger.svg" alt="Messenger" />
-                  <p class="mobile-header__messenger-name">Messenger</p>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/message/KPJAW6J7BF7EK1"
-                  target="_blank"
-                  class="mobile-header__messenger-item-wrapper"
-                >
-                  <img width="42" height="42" src="@/assets/img/Footer/svg/whatsapp.svg" alt="WhatsApp" />
-                  <p class="mobile-header__messenger-name">WhatsApp</p>
-                </a>
-              </li>
-              <li>
-                <a href="https://t.me/MadDevs_io" target="_blank" class="mobile-header__messenger-item-wrapper">
-                  <img width="42" height="42" src="@/assets/img/Footer/svg/telegram.svg" alt="Telegram" />
-                  <p class="mobile-header__messenger-name">Telegram</p>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
-                  target="_blank"
-                  class="mobile-header__messenger-item-wrapper"
-                >
-                  <img width="42" height="42" src="@/assets/img/Footer/svg/wechat.svg" alt="WeChat" />
-                  <p class="mobile-header__messenger-name">WeChat</p>
+              <li v-for="messenger in messengers" :key="messenger.key">
+                <a :href="messenger.url" target="_blank" class="mobile-header__messenger-item-wrapper">
+                  <img
+                    width="42"
+                    height="42"
+                    :src="require(`@/assets/img/Footer/svg/${messenger.key}.svg`)"
+                    :alt="messenger.label"
+                  />
+                  <p class="mobile-header__messenger-name">{{ messenger.label }}</p>
                 </a>
               </li>
             </ul>
@@ -84,25 +59,29 @@
           class="mobile-header__modal-trigger-btn"
           @click="$emit('open-modal')"
         />
-        <footerContacts class="mobile-header__small-phone-content" />
+        <FooterContacts class="mobile-header__small-phone-content" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { headerNavigation as navigation } from '@/data/navigation'
+import { messengers } from '@/data/messengers'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
-import footerContacts from '@/components/Footer/footer-contacts'
+import FooterContacts from '@/components/core/Footer/FooterContacts'
 
 export default {
   name: 'MobileHeader',
   components: {
     UIModalTriggerButton,
-    footerContacts,
+    FooterContacts,
   },
 
   data() {
     return {
+      navigation,
+      messengers,
       mailLink: process.env.emailContact,
     }
   },
@@ -136,12 +115,16 @@ export default {
         /* eslint-enable */
       })
     },
+
+    getImageUrl(messenger) {
+      return require(`@/assets/img/Footer/svg/${messenger.key}.svg`)
+    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
+@import '../../../assets/styles/vars';
 
 .mobile-header {
   width: 100%;
@@ -216,11 +199,10 @@ export default {
     text-decoration: none;
     color: $text-color--white;
     border-bottom: 1px solid $header-grey-border-color;
-  }
-
-  &__nav-blog-link {
-    padding-bottom: 54px;
-    border-bottom: 0;
+    &:last-child {
+      padding-bottom: 54px;
+      border-bottom: 0;
+    }
   }
 
   &__social-network_links {

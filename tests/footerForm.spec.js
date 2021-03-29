@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import footerForm from '@/components/Footer/footer-form'
+import footerForm from '@/components/core/Footer/footer-form'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()

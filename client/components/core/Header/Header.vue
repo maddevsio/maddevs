@@ -5,31 +5,25 @@
       <div ref="headerContainer" class="container">
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-7">
-            <router-link :to="`/`" class="header__logo-icon">
-              <headerLogo
-                :show-logo-text-props="showLogoText"
-                :is-case-page-props="isCasePage"
-                :is-active-mobile-menu-props="isActiveMobileMenu"
+            <RouterLink :to="`/`" class="header__logo-icon">
+              <HeaderLogo
+                :is-show-text="showLogoText"
+                :is-case-page="isCasePage"
+                :is-active-mobile-menu="isActiveMobileMenu"
                 class="header__header-logo"
               />
-            </router-link>
+            </RouterLink>
             <nav class="header__header-routes_links">
-              <router-link exact to="/" class="header__navigation-link" @click.native="goToTopPage">About</router-link>
-              <router-link to="/services/" class="header__navigation-link" @click.native="goToTopPage"
-                >Services</router-link
-              >
-              <router-link to="/projects/" class="header__navigation-link" @click.native="goToTopPage"
-                >Projects</router-link
-              >
-              <router-link to="/careers/" class="header__navigation-link" @click.native="goToTopPage"
-                >Careers</router-link
-              >
-              <router-link
-                to="/blog/"
-                class="header__navigation-link header__navigation-link-blog"
+              <RouterLink
+                v-for="{ title, link, exact } in navigation"
+                :key="link"
+                :exact="exact"
+                class="header__navigation-link"
+                :to="link"
                 @click.native="goToTopPage"
-                >Blog</router-link
               >
+                {{ title }}
+              </RouterLink>
             </nav>
             <!-- Burget btn -->
             <div class="header__burger" @click="toggleMobileMenu">
@@ -83,7 +77,7 @@
     </header>
 
     <!-- Mobile header -->
-    <mobileHeader
+    <HeaderMobile
       v-if="isActiveMobileMenu"
       @changed-page="isActiveMobileMenu = false"
       @open-modal="$refs.contactMeModal.show()"
@@ -91,29 +85,31 @@
     <!-- END Mobile header -->
 
     <Modal ref="contactMeModal">
-      <contactMeModal @success="$refs.contactMeModal.close()" />
+      <ContactMeModal @success="$refs.contactMeModal.close()" />
     </Modal>
   </div>
 </template>
 
 <script>
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
-import mobileHeader from '@/components/Header/mobile-header'
-import headerLogo from '@/components/svg/headerLogo'
+import HeaderMobile from '@/components/core/Header/HeaderMobile'
+import HeaderLogo from '@/components/core/Header/HeaderLogo'
 import Modal from '@/containers/Modal'
+import { headerNavigation as navigation } from '@/data/navigation'
 
 export default {
   name: 'MainHeader',
   components: {
     UIModalTriggerButton,
-    contactMeModal: () => import('@/components/Modals/contact-me-modal'),
-    mobileHeader,
-    headerLogo,
+    ContactMeModal: () => import('@/components/Modals/contact-me-modal'),
+    HeaderMobile,
+    HeaderLogo,
     Modal,
   },
 
   data() {
     return {
+      navigation,
       showLogoText: true,
       isActiveMobileMenu: false,
       isCasePage: false,
@@ -250,7 +246,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/styles/vars';
+@import '../../../assets/styles/vars';
 
 .header {
   width: 100%;

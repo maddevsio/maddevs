@@ -2,19 +2,21 @@
   <div class="footer-navbar">
     <p class="footer-navbar__company-name">© Mad Devs - {{ currentYear }}</p>
     <div class="footer-navbar__nav-list">
-      <a href="/gdpr/" target="_blank" class="footer-navbar__nav-item">GDPR Compliance Commitment</a>
-      <a href="/nda/" target="_blank" class="footer-navbar__nav-item">Non-Disclosure Agreement (NDA)</a>
-      <a href="/privacy/" target="_blank" class="footer-navbar__nav-item">Privacy Policy</a>
-      <a href="/faq/" target="_blank" class="footer-navbar__nav-item">FAQ</a>
+      <a v-for="item in navigation" :key="item.link" :href="item.link" target="_blank" class="footer-navbar__nav-item">
+        {{ item.title }}
+      </a>
     </div>
   </div>
 </template>
 
 <script>
+import { footerNavigation as navigation } from '@/data/navigation'
+
 export default {
   name: 'FooterNavbar',
   data() {
     return {
+      navigation,
       currentYear: new Date().getFullYear(),
     }
   },
@@ -22,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
+@import '../../../assets/styles/vars';
 
 .footer-navbar {
   width: max-content;

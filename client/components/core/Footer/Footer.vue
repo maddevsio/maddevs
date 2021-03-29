@@ -1,47 +1,46 @@
 <template>
-  <footer :class="`footer ${currentPageName}`">
+  <footer :class="`footer ${pageName}`">
     <div class="container">
       <div class="footer__content row">
         <div class="footer__left-content col-xl-8 col-lg-7 col-md-6">
           <h2 class="footer__main-title">Get In Touch</h2>
-          <footerContacts />
-          <footerNavbar class="footer__navbar-desktop" />
+          <FooterContacts />
+          <FooterNavbar class="footer__navbar-desktop" />
         </div>
         <div class="footer__form-wrap col-xl-4 col-lg-5 col-md-5">
-          <footerForm />
+          <FooterForm />
         </div>
       </div>
       <div class="footer__mobile-content footer__social-network-list-mobile">
-        <footerSocialNetWorkList />
+        <FooterSocialNetworks />
       </div>
       <div class="footer__mobile-content">
-        <footerNavbarMobile />
+        <FooterNavbarMobile />
       </div>
     </div>
   </footer>
 </template>
 
 <script>
-import footerForm from '@/components/Footer/footer-form'
-import footerContacts from '@/components/Footer/footer-contacts'
-import footerNavbar from '@/components/Footer/footer-navbar'
-import footerNavbarMobile from '@/components/Footer/footer-navbar-mobile'
-import footerSocialNetWorkList from '@/components/Footer/footer-social-network-list'
+import FooterForm from '@/components/core/Footer/FooterForm'
+import FooterContacts from '@/components/core/Footer/FooterContacts'
+import FooterNavbar from '@/components/core/Footer/FooterNavbar'
+import FooterNavbarMobile from '@/components/core/Footer/FooterNavbarMobile'
+import FooterSocialNetworks from '@/components/core/Footer/FooterSocialNetworks'
 
 export default {
   name: 'Footer',
   components: {
-    footerForm,
-    footerContacts,
-    footerNavbar,
-    footerNavbarMobile,
-    footerSocialNetWorkList,
+    FooterForm,
+    FooterContacts,
+    FooterNavbar,
+    FooterNavbarMobile,
+    FooterSocialNetworks,
   },
 
   data() {
     return {
-      currentYear: new Date().getFullYear(),
-      currentPageName: '',
+      pageName: '',
     }
   },
 
@@ -58,7 +57,7 @@ export default {
   methods: {
     updateClassName() {
       if ($nuxt.$route.name) {
-        this.currentPageName = $nuxt.$route.name
+        this.pageName = $nuxt.$route.name
       }
     },
   },
@@ -66,7 +65,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/styles/vars';
+@import '../../../assets/styles/vars';
 
 .footer {
   padding-top: 100px;

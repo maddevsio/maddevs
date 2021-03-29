@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import footerSocialNetworkList from '@/components/Footer/footer-social-network-list'
+import footerSocialNetworkList from '@/components/core/Footer/footer-social-network-list'
 
 describe('footer social network list', () => {
   let wrapper

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import GDPR from '@/components/GDPR'
+import GDPR from '@/components/core/GDPR'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoad'
 

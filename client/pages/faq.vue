@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import FAQ from '@/components/FAQ'
+import FAQ from '@/components/core/FAQ'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoad'
 

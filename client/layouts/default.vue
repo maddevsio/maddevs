@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import Header from '@/components/core/Header/Header'
+import Footer from '@/components/core/Footer/Footer'
 import initIntercom from '@/helpers/intercom'
 
 export default {
