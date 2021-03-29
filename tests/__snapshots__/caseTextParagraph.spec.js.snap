@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Text paragraph renders correctly 1`] = `
+exports[`text paragraph renders correctly 1`] = `
 <p
   class="case_paragraph"
   style="color: rgb(0, 0, 0);"

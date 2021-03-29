@@ -1,45 +1,40 @@
-import {render, screen} from '@testing-library/vue';
-import CaseStudies from '@/components/About/CaseStudies';
+import { render, screen } from '@testing-library/vue'
+import CaseStudies from '@/components/About/CaseStudies'
 
-
-describe('UIButton component', () => {
-
+describe('uIButton component', () => {
   const $route = {
-    path: '/'
-  };
+    path: '/',
+  }
 
   global.$nuxt = {
-    $route: {
-    }
-  };
+    $route: {},
+  }
 
-
-  test('should render correctly case studies', () => {
-    const {container} = render(CaseStudies, {
+  it('should render correctly case studies', () => {
+    const { container } = render(CaseStudies, {
       mocks: {
-        $route
-      }
-    });
+        $route,
+      },
+    })
 
-    expect(screen.getByText('Convenient shuttle bus service')).not.toBeNull();
-    expect(container).toMatchSnapshot();
-  });
+    expect(screen.getByText('Convenient shuttle bus service')).not.toBeNull()
+    expect(container).toMatchSnapshot()
+  })
 
-
-  test('should render correctly with slot', () => {
+  it('should render correctly with slot', () => {
     global.$nuxt = {
       $route: {
-        name: 'project'
-      }
-    };
-    const {container, emitted, html} = render(CaseStudies, {
+        name: 'project',
+      },
+    }
+    const { container } = render(CaseStudies, {
       mocks: {
         $route: {
-          path: '/project'
-        }
-      }
-    });
+          path: '/project',
+        },
+      },
+    })
 
-    expect(container).toMatchSnapshot();
-  });
-});
+    expect(container).toMatchSnapshot()
+  })
+})

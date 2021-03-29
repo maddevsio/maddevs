@@ -1,22 +1,20 @@
-import {
-  mount
-} from '@vue/test-utils';
-import CardNinjaSushi from '@/components/Cases/cards-content/CardNinjaSushi';
+import { mount } from '@vue/test-utils'
+import CardNinjaSushi from '@/components/Cases/cards/namba-food/CardNinjaSushi'
 
-describe('CardNinjaSushi', () => {
-  let wrapper;
+describe('cardNinjaSushi', () => {
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(CardNinjaSushi);
-  });
+    wrapper = mount(CardNinjaSushi)
+  })
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
-  
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
+
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
-});
+})

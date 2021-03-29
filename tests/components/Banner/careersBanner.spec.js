@@ -1,19 +1,19 @@
-import CareersBanner from '@/components/Banner/CareersBanner';
-import {render, screen} from '@testing-library/vue';
+import CareersBanner from '@/components/Banner/CareersBanner'
+import { render, screen } from '@testing-library/vue'
 
-describe('Career banner', () => {
+describe('career banner', () => {
   global.$nuxt = {
     $route: {
-      name: '/'
-    }
-  };
+      name: '/',
+    },
+  }
 
-  test('is a Vue instance', () => {
-    const {container} = render(CareersBanner, {
-      stubs: ['nuxt-link']
-    });
+  it('is a Vue instance', () => {
+    const { container } = render(CareersBanner, {
+      stubs: ['nuxt-link'],
+    })
 
-    expect(screen.getByText('Mad Devs\'')).not.toBeNull();
-    expect(container).toMatchSnapshot();
-  });
-});
+    expect(screen.getByText("Mad Devs'")).not.toBeNull()
+    expect(container).toMatchSnapshot()
+  })
+})

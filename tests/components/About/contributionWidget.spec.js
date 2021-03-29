@@ -1,28 +1,27 @@
-import { render, screen } from '@testing-library/vue';
-import ContributionWidget from '@/components/About/ContributionWidget';
+import { render, screen } from '@testing-library/vue'
+import ContributionWidget from '@/components/About/ContributionWidget'
 
-describe('ContributionWidget component', () => {
+describe('contributionWidget component', () => {
   const props = {
     projectName: 'nambafood',
     contribution: 'contribution text',
-    maddevsLogo: 'md-logo-black'
-  };
+    maddevsLogo: 'md-logo-black',
+  }
 
-  test('is Vue\'s instance and renders correctly', () => {
+  it("is Vue's instance and renders correctly", () => {
     const { container } = render(ContributionWidget, {
-      props
-    });
+      props,
+    })
 
-    expect(screen.getByText(`contribution: ${props.contribution}`)).not.toBeNull();
-    expect(container).toMatchSnapshot();
-  });
+    expect(screen.getByText(`contribution: ${props.contribution}`)).not.toBeNull()
+    expect(container).toMatchSnapshot()
+  })
 
-
-  test('span should contain projectName in class', () => {
+  it('span should contain projectName in class', () => {
     const { container } = render(ContributionWidget, {
-      props
-    });
+      props,
+    })
 
-    expect(container.outerHTML).toContain('contribution-widget__content_nambafood');
-  });
-});
+    expect(container.outerHTML).toContain('contribution-widget__content_nambafood')
+  })
+})

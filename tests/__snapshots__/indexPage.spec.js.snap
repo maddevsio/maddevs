@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Index page renders correctly 1`] = `
+exports[`index page renders correctly 1`] = `
 <main
   class="main"
 >
@@ -100,7 +100,8 @@ exports[`Index page renders correctly 1`] = `
           
         We create 
           <br />
-           IT projects for:
+          
+        IT projects for:
       
         </h2>
          
@@ -113,9 +114,12 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="weCreateItProject__paragraph"
             >
-              Content Streaming 
+              
+            Content Streaming 
               <br />
-               Transportation
+              
+            Transportation
+          
             </p>
           </div>
            
@@ -125,9 +129,12 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="weCreateItProject__paragraph"
             >
-              HealthTech 
+              
+            HealthTech 
               <br />
-               IoTs
+              
+            IoTs
+          
             </p>
           </div>
            
@@ -137,9 +144,12 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="weCreateItProject__paragraph"
             >
-              E-Commerce 
+              
+            E-Commerce 
               <br />
-               AdTech
+              
+            AdTech
+          
             </p>
           </div>
            
@@ -149,9 +159,12 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="weCreateItProject__paragraph"
             >
-              E-Learning 
+              
+            E-Learning 
               <br />
-               FinTech
+              
+            FinTech
+          
             </p>
           </div>
            
@@ -161,9 +174,12 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="weCreateItProject__paragraph"
             >
-              Serverless 
+              
+            Serverless 
               <br />
-               BYOD
+              
+            BYOD
+          
             </p>
           </div>
            
@@ -173,9 +189,12 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="weCreateItProject__paragraph"
             >
-              Blockchain 
+              
+            Blockchain 
               <br />
-               FoodTech
+              
+            FoodTech
+          
             </p>
           </div>
         </div>
@@ -443,8 +462,7 @@ exports[`Index page renders correctly 1`] = `
         <h2
           class="technologies-and_tools__main-title"
         >
-          
-        Technologies 
+          Technologies 
           <span>
             &
           </span>
@@ -1625,7 +1643,8 @@ exports[`Index page renders correctly 1`] = `
           
         Case 
           <!---->
-           Studies
+          
+        Studies
       
         </h2>
          
@@ -2077,7 +2096,9 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="quickProjectStart__description"
             >
-              We will provide you with our free, non-binding bid or a tailored proposal.
+              
+            We will provide you with our free, non-binding bid or a tailored proposal.
+          
             </p>
           </div>
         </div>
@@ -2146,7 +2167,9 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="quickProjectStart__description"
             >
-              You will get to know the team and we’ll start the project work.
+              
+            You will get to know the team and we’ll start the project work.
+          
             </p>
           </div>
         </div>
@@ -2179,9 +2202,7 @@ exports[`Index page renders correctly 1`] = `
       <h2
         class="customer-testimonials__title"
       >
-        
-      Customer Testimonials
-    
+        Customer Testimonials
       </h2>
        
       <div
@@ -2394,7 +2415,8 @@ exports[`Index page renders correctly 1`] = `
         </span>
          
         <br />
-         customer   
+        
+      customer   
         <span
           class="customer-rates__title-icon"
         >
@@ -2420,11 +2442,14 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="customer-rates__description customer-rates__description-top-row"
             >
-              recommend us 
+              
+            recommend us 
               <br
                 class="customer-rates__line-break"
               />
-               to others.
+              
+            to others.
+          
             </p>
           </div>
         </div>
@@ -2444,11 +2469,14 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="customer-rates__description customer-rates__description-top-row"
             >
-              stay with us for 
+              
+            stay with us for 
               <br
                 class="customer-rates__line-break"
               />
-               more than 2 years.
+              
+            more than 2 years.
+          
             </p>
           </div>
         </div>
@@ -2468,11 +2496,14 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="customer-rates__description customer-rates__description-top-row"
             >
-              are satisfied with 
+              
+            are satisfied with 
               <br
                 class="customer-rates__line-break"
               />
-               our pricing.
+              
+            our pricing.
+          
             </p>
           </div>
         </div>
@@ -2505,7 +2536,9 @@ exports[`Index page renders correctly 1`] = `
               <p
                 class="customer-rates__description customer-rates__description-bottom-row"
               >
-                US dollars raised by 5 customer startups in 2019.
+                
+              US dollars raised by 5 customer startups in 2019.
+            
               </p>
             </div>
           </div>
@@ -2524,7 +2557,9 @@ exports[`Index page renders correctly 1`] = `
               <p
                 class="customer-rates__description customer-rates__description-bottom-row"
               >
-                of customers are now paying 50% less for IT infrastructure.
+                
+              of customers are now paying 50% less for IT infrastructure.
+            
               </p>
             </div>
           </div>
@@ -2543,7 +2578,9 @@ exports[`Index page renders correctly 1`] = `
               <p
                 class="customer-rates__description customer-rates__description-bottom-row"
               >
-                tech bloggers and conference speakers in our team.
+                
+              tech bloggers and conference speakers in our team.
+            
               </p>
             </div>
           </div>
@@ -2562,7 +2599,9 @@ exports[`Index page renders correctly 1`] = `
               <p
                 class="customer-rates__description customer-rates__description-bottom-row"
               >
-                projects delivered to customers by our team.
+                
+              projects delivered to customers by our team.
+            
               </p>
             </div>
           </div>
@@ -2581,7 +2620,9 @@ exports[`Index page renders correctly 1`] = `
               <p
                 class="customer-rates__description customer-rates__description-bottom-row"
               >
-                staff members work for Mad Devs.
+                
+              staff members work for Mad Devs.
+            
               </p>
             </div>
           </div>
@@ -2600,7 +2641,9 @@ exports[`Index page renders correctly 1`] = `
               <p
                 class="customer-rates__description customer-rates__description-bottom-row"
               >
-                open-source projects on GitHub.
+                
+              open-source projects on GitHub.
+            
               </p>
             </div>
           </div>

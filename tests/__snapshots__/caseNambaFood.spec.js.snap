@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Namba food renders correctly 1`] = `
+exports[`namba food renders correctly 1`] = `
 <main
   class="main case"
 >
@@ -47,14 +47,19 @@ exports[`Namba food renders correctly 1`] = `
           
       Mad Devs created the Namba Food delivery service from scratch. The solution 
           <br />
-           orchestrates feature-rich apps for couriers, end-users, and business owners.
+          
+      orchestrates feature-rich apps for couriers, end-users, and business owners.
     
         </p>
          
       </div>
        
-      <div
+      <img
+        alt=""
         class="case_header-logo case_nambafood-logo"
+        height="82"
+        src="[object Object]"
+        width="259"
       />
     </div>
   </section>
@@ -74,7 +79,9 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph"
       >
         
-        Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing orders and business owners work as a seamless system, ensuring a smooth delivery process for all types of goods.
+        Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing
+        orders and business owners work as a seamless system, ensuring a smooth delivery process for all types of
+        goods.
       
       </p>
        
@@ -90,7 +97,9 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph"
       >
         
-        Being first is hard. Namba Food’s success story focuses on how they took a global idea and successfully localised and integrated it into the daily lives of Kyrgyzstan's people. Since 2013, the company has been on a mission to bring value to both vendors and customers by conveniently delivering goods at the right time.
+        Being first is hard. Namba Food’s success story focuses on how they took a global idea and successfully
+        localised and integrated it into the daily lives of Kyrgyzstan's people. Since 2013, the company has been on a
+        mission to bring value to both vendors and customers by conveniently delivering goods at the right time.
       
       </p>
     </section>
@@ -101,7 +110,9 @@ exports[`Namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 case_text-align-center m-24_bottom media-m-12_bottom"
       >
+        
         Multi-directional business model
+      
       </h2>
        
       <p
@@ -133,7 +144,8 @@ exports[`Namba food renders correctly 1`] = `
               style="color: rgb(245, 247, 249);"
             >
               
-      After business owners submit images and prices, the Namba Food team creates a customised and branded e-commerce website. Updates, support and maintenance are also done by Namba Food.
+      After business owners submit images and prices, the Namba Food team creates a customised and branded e-commerce
+      website. Updates, support and maintenance are also done by Namba Food.
     
             </p>
              
@@ -149,7 +161,8 @@ exports[`Namba food renders correctly 1`] = `
               style="color: rgb(245, 247, 249);"
             >
               
-      Business partners can use Namba Food’s software and business model, adjusting for their needs, scale and region. Namba Food is responsible for its maintenance and helps with management and marketing.
+      Business partners can use Namba Food’s software and business model, adjusting for their needs, scale and region.
+      Namba Food is responsible for its maintenance and helps with management and marketing.
     
             </p>
           </div>
@@ -188,7 +201,7 @@ exports[`Namba food renders correctly 1`] = `
             class="case_business-models-grid__personal-image"
           >
             <picture
-              filenameretina="personal@2x"
+              file-name-retina="personal@2x"
             >
               <source
                 class="image"
@@ -221,7 +234,8 @@ exports[`Namba food renders correctly 1`] = `
               class="case_paragraph"
             >
               
-        The personal courier service works 24/7, enabling quick delivery for both organizations and individuals. Regardless of the product’s nature, personal couriers deliver it on time and, if needed, anonymously.
+        The personal courier service works 24/7, enabling quick delivery for both organizations and individuals.
+        Regardless of the product’s nature, personal couriers deliver it on time and, if needed, anonymously.
       
             </p>
           </div>
@@ -245,9 +259,11 @@ exports[`Namba food renders correctly 1`] = `
               style="color: rgb(255, 255, 255);"
             >
               
-        Businesses running e-commerce websites, but wanting to outsource delivery services, can benefit from Namba Food’s checkout page, which allows businesses to quickly integrate delivery without incurring 
+        Businesses running e-commerce websites, but wanting to outsource delivery services, can benefit from Namba
+        Food’s checkout page, which allows businesses to quickly integrate delivery without incurring 
               <br />
-               operational costs.
+              
+        operational costs.
       
             </p>
           </div>
@@ -267,7 +283,8 @@ exports[`Namba food renders correctly 1`] = `
               style="color: rgb(255, 255, 255);"
             >
               
-        Namba Food's delivery service positions itself as an intermediary body between goods and food service providers and customers.
+        Namba Food's delivery service positions itself as an intermediary body between goods and food service
+        providers and customers.
       
             </p>
           </div>
@@ -287,7 +304,11 @@ exports[`Namba food renders correctly 1`] = `
           class="case_paragraph"
         >
           
-          Namba Food API allows businesses to integrate the API into any mobile payment application. As a result, end-users can quickly order goods and services without leaving the app using the app’s own payment system. Such API benefits businesses because end users use the payment method defined by the mobile app. At the moment, Mbank by Commercial Bank Kyrgyzstan and Balance by Beeline, a telecommunication service provider, have successfully integrated Namba Food API into their mobile apps.
+          Namba Food API allows businesses to integrate the API into any mobile payment application. As a result,
+          end-users can quickly order goods and services without leaving the app using the app’s own payment system.
+          Such API benefits businesses because end users use the payment method defined by the mobile app. At the
+          moment, Mbank by Commercial Bank Kyrgyzstan and Balance by Beeline, a telecommunication service provider,
+          have successfully integrated Namba Food API into their mobile apps.
         
         </p>
       </div>
@@ -299,14 +320,19 @@ exports[`Namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-96_top m-12_bottom media-m-48_top case_text-align-center"
       >
+        
         High-level system overview
+      
       </h2>
        
       <p
         class="case_paragraph m-48_bottom media-m-24_bottom"
       >
         
-        Namba Food is more than a delivery service website. With a partial vertical integration, it covers the entire cycle of ordering goods online. This means that an advanced set of software and hardware was required to maintain flawless work for all stakeholders, including end-users, couriers, team operators, and cafe and store managers.
+        Namba Food is more than a delivery service website. With a partial vertical integration, it covers the entire
+        cycle of ordering goods online. This means that an advanced set of software and hardware was required to
+        maintain flawless work for all stakeholders, including end-users, couriers, team operators, and cafe and store
+        managers.
       
       </p>
     </section>
@@ -327,14 +353,17 @@ exports[`Namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 case_text-align-center m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
       >
+        
         Typical usage scenarios and user roles
+      
       </h2>
        
       <p
         class="case_paragraph case_text-align-center m-48_bottom media-m-24_bottom"
       >
         
-        Namba Food involves several user journeys for different roles. Each user journey required different sets of functionalities and user interfaces.
+        Namba Food involves several user journeys for different roles. Each user journey required different sets of
+        functionalities and user interfaces.
       
       </p>
        
@@ -640,14 +669,18 @@ exports[`Namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
       >
+        
         Web version and mobile applications for end-users
+      
       </h2>
        
       <p
         class="case_paragraph m-48_bottom media-m-24_bottom"
       >
         
-        Namba Food is not a simple catalogue of goods and services, as it aims to seamlessly blend into the modern, busy lifestyle of its customers. Developing a convenient process for ordering products and making it stress-free was key.
+        Namba Food is not a simple catalogue of goods and services, as it aims to seamlessly blend into the modern,
+        busy lifestyle of its customers. Developing a convenient process for ordering products and making it
+        stress-free was key.
       
       </p>
     </section>
@@ -683,7 +716,9 @@ exports[`Namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
       >
+        
         Simple ordering process for end-users
+      
       </h2>
        
       <p
@@ -738,7 +773,8 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph m-24_bottom media-m-12_bottom"
       >
         
-        As Namba Food’s delivery service grew more popular, the load on customer support and its operators increased exponentially.
+        As Namba Food’s delivery service grew more popular, the load on customer support and its operators increased
+        exponentially.
       
       </p>
        
@@ -746,7 +782,9 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph m-24_bottom media-m-12_bottom"
       >
         
-        Customer support challenge: The lack of transparent status updates led to the majority of users calling to check the delivery status. Business challenge: A continuously growing number of customer support teams occurred in high operational expenses.
+        Customer support challenge: The lack of transparent status updates led to the majority of users calling to
+        check the delivery status. Business challenge: A continuously growing number of customer support teams
+        occurred in high operational expenses.
       
       </p>
        
@@ -754,7 +792,8 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph m-96_bottom media-m-48_bottom"
       >
         
-        Solution: The Mad Devs team has developed a user-friendly status feature that allows customers to easily track progress on both the mobile app and website.
+        Solution: The Mad Devs team has developed a user-friendly status feature that allows customers to easily track
+        progress on both the mobile app and website.
       
       </p>
     </section>
@@ -772,7 +811,9 @@ exports[`Namba food renders correctly 1`] = `
             class="case_title_h2 case_text-align-center m-48_bottom p-78_top media-m-8_bottom media-p-38_top"
             style="color: rgb(255, 255, 255);"
           >
+            
             Android application for couriers
+          
           </h2>
            
           <p
@@ -780,7 +821,10 @@ exports[`Namba food renders correctly 1`] = `
             style="color: rgb(255, 255, 255);"
           >
             
-            The Android app for couriers enables them to receive new orders assigned to them by operators via the control panel. After a courier is assigned to the order, their app receives a push notification and displays the order pick-up location. After getting the notification, the courier picks up the order from a cafe or a shop and heads to the client.
+            The Android app for couriers enables them to receive new orders assigned to them by operators via the
+            control panel. After a courier is assigned to the order, their app receives a push notification and
+            displays the order pick-up location. After getting the notification, the courier picks up the order from a
+            cafe or a shop and heads to the client.
           
           </p>
         </section>
@@ -826,7 +870,8 @@ exports[`Namba food renders correctly 1`] = `
         class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
       >
         
-        The built-in reporting functionality enables managers to have full control over the entire list of business partners.
+        The built-in reporting functionality enables managers to have full control over the entire list of business
+        partners.
       
       </blockquote>
        
@@ -834,7 +879,8 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph m-48_bottom"
       >
         
-        In the admin panel, managers can configure discounts, set working days and hours for cafes, add new meal offerings and do many other things enabling them to deliver users the best possible experience.
+        In the admin panel, managers can configure discounts, set working days and hours for cafes, add new meal
+        offerings and do many other things enabling them to deliver users the best possible experience.
       
       </p>
     </section>
@@ -843,7 +889,7 @@ exports[`Namba food renders correctly 1`] = `
       class="container_middle m-72_bottom media-m-48_bottom"
     >
       <picture
-        filenameretina="sjms-analytics@2x"
+        file-name-retina="sjms-analytics@2x"
       >
         <source
           class="image box-shadow"
@@ -870,7 +916,9 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph"
       >
         
-        Integrating new business with 1000+ products takes less than a few hours. The scalability of Namba Food enables its managers to integrate new business partners into a system quickly. Managers prepare an Excel file with structured menu or product data.
+        Integrating new business with 1000+ products takes less than a few hours. The scalability of Namba Food
+        enables its managers to integrate new business partners into a system quickly. Managers prepare an Excel file
+        with structured menu or product data.
       
       </p>
        
@@ -878,7 +926,8 @@ exports[`Namba food renders correctly 1`] = `
         class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
       >
         
-        Namba Food automatically categorises data inside the managers' dashboard panel. More than 4000 products can be catalogued in a few clicks.
+        Namba Food automatically categorises data inside the managers' dashboard panel. More than 4000 products can be
+        catalogued in a few clicks.
       
       </blockquote>
        
@@ -892,7 +941,10 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph m-96_bottom media-m-48_bottom"
       >
         
-        Managing partners' content is straightforward, as managers can quickly turn on or off a position inside the catalogue and change pictures and descriptions. Such flexibility enables business owners to meet daily business needs. For example, if a cafe offers a seasonal menu, the items from the summer menu can be temporarily turned off during the rest of the year.
+        Managing partners' content is straightforward, as managers can quickly turn on or off a position inside the
+        catalogue and change pictures and descriptions. Such flexibility enables business owners to meet daily
+        business needs. For example, if a cafe offers a seasonal menu, the items from the summer menu can be
+        temporarily turned off during the rest of the year.
       
       </p>
        
@@ -911,16 +963,20 @@ exports[`Namba food renders correctly 1`] = `
           <h4
             class="case_title_h4 m-12_bottom media-m-6_bottom case_control-panel-card-title"
           >
+            
             Namba Food 
             <br />
-             managers
+            
+            managers
+          
           </h4>
            
           <p
             class="case_paragraph m-24_bottom media-m-12_bottom"
           >
             
-            The control panel gives managers a high-level overview of Namba Food’s daily, weekly, monthly and yearly performance. Business owners receive automatically generated monthly reports to their email.
+            The control panel gives managers a high-level overview of Namba Food’s daily, weekly, monthly and yearly
+            performance. Business owners receive automatically generated monthly reports to their email.
           
           </p>
            
@@ -930,7 +986,8 @@ exports[`Namba food renders correctly 1`] = `
             
             Detailed reports include information 
             <br />
-             such as:
+            
+            such as:
           
           </p>
            
@@ -963,16 +1020,21 @@ exports[`Namba food renders correctly 1`] = `
           <h4
             class="case_title_h4 m-12_bottom media-m-6_bottom case_control-panel-card-title"
           >
+            
             Namba Food 
             <br />
-             operators
+            
+            operators
+          
           </h4>
            
           <p
             class="case_paragraph m-24_bottom media-m-12_bottom"
           >
             
-            The control panel enables operators to manage promo codes and items ordered from a shop or restaurant. The panel makes it easy to get an order status overview, make required corrections and cancel orders if necessary.
+            The control panel enables operators to manage promo codes and items ordered from a shop or restaurant. The
+            panel makes it easy to get an order status overview, make required corrections and cancel orders if
+            necessary.
           
           </p>
            
@@ -980,7 +1042,8 @@ exports[`Namba food renders correctly 1`] = `
             class="case_paragraph"
           >
             
-            Within the panel, operators interact with clients by confirming orders and ensuring that customers’ notes are communicated during the process.
+            Within the panel, operators interact with clients by confirming orders and ensuring that customers’ notes
+            are communicated during the process.
           
           </p>
         </div>
@@ -993,7 +1056,9 @@ exports[`Namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-96_top m-48_bottom media-m-48_top media-m-12_bottom"
       >
+        
         Swift admin panel — intelligent delivery control
+      
       </h2>
     </section>
      
@@ -1151,7 +1216,8 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph m-56_top media-m-24_top"
       >
         
-        The Swift microservice-based admin panel receives order information from the control panel and helps the operators to overview and manage the delivery processes. It displays orders by statuses as diagrams.
+        The Swift microservice-based admin panel receives order information from the control panel and helps the
+        operators to overview and manage the delivery processes. It displays orders by statuses as diagrams.
       
       </p>
        
@@ -1184,9 +1250,7 @@ exports[`Namba food renders correctly 1`] = `
           <p
             class="case_paragraph"
           >
-            
-            Extract customers’ notes and communicate them to couriers.
-          
+             Extract customers’ notes and communicate them to couriers. 
           </p>
         </div>
          
@@ -1196,9 +1260,7 @@ exports[`Namba food renders correctly 1`] = `
           <p
             class="case_paragraph"
           >
-            
-            Assign orders and prepare reports.
-          
+             Assign orders and prepare reports. 
           </p>
         </div>
          
@@ -1208,9 +1270,7 @@ exports[`Namba food renders correctly 1`] = `
           <p
             class="case_paragraph"
           >
-            
-            Call curriers using Free SWITCH microservice.
-          
+             Call curriers using Free SWITCH microservice. 
           </p>
         </div>
       </div>
@@ -1225,7 +1285,8 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph m-8_bottom"
       >
         
-        The intelligent auto-assignment of orders allows operators to assign couriers to orders, taking into consideration the following factors:
+        The intelligent auto-assignment of orders allows operators to assign couriers to orders, taking into
+        consideration the following factors:
       
       </p>
        
@@ -1248,7 +1309,8 @@ exports[`Namba food renders correctly 1`] = `
         <li
           class="list-item_dot"
         >
-          End-user location in relation to couriers, who are already carrying the order, and in relation to the next order’s pick-up point with the current order.
+          End-user location in relation to couriers, who are already carrying the order, and in relation to the next
+          order’s pick-up point with the current order.
         
         </li>
       </ul>
@@ -1263,7 +1325,8 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph m-8_bottom"
       >
         
-        Three open-source solutions work together as a cohesive and smart system to perform auto-assignment of orders. This allows you to select the most suitable courier for each order, which reduces delivery time.
+        Three open-source solutions work together as a cohesive and smart system to perform auto-assignment of orders.
+        This allows you to select the most suitable courier for each order, which reduces delivery time.
       
       </p>
        
@@ -1305,7 +1368,10 @@ exports[`Namba food renders correctly 1`] = `
         >
           Ariadna
         </a>
-         is an open-source geocoder based on ElasticSearch with OpenStreetMap, in-house developed. The tool searches for coordinates by synonyms and names of places, looking for crossroads and addresses in a certain radius, and knows how to reverse geocoding and automatically update with new data from drivers.
+         is an open-source
+        geocoder based on ElasticSearch with OpenStreetMap, in-house developed. The tool searches for coordinates by
+        synonyms and names of places, looking for crossroads and addresses in a certain radius, and knows how to
+        reverse geocoding and automatically update with new data from drivers.
       
       </p>
     </section>
@@ -1341,14 +1407,18 @@ exports[`Namba food renders correctly 1`] = `
       <h3
         class="case_title_h3 m-96_top m-12_bottom media-m-48_top"
       >
+        
         Grafana — Docker containers’ monitoring service
+      
       </h3>
        
       <p
         class="case_paragraph m-48_bottom"
       >
         
-        To monitor the stability of Namba Food software, Mad Devs has integrated Grafana. It allows our developers to keep track of services in Docker containers. Grafana shows how the load in the project is balanced, including disk space consumed, memory allocated, swap, load, container uptime and other parameters.
+        To monitor the stability of Namba Food software, Mad Devs has integrated Grafana. It allows our developers to
+        keep track of services in Docker containers. Grafana shows how the load in the project is balanced, including
+        disk space consumed, memory allocated, swap, load, container uptime and other parameters.
       
       </p>
     </section>
@@ -1357,7 +1427,7 @@ exports[`Namba food renders correctly 1`] = `
       class="container_middle"
     >
       <picture
-        filenameretina="grafana@2x"
+        file-name-retina="grafana@2x"
       >
         <source
           class="image box-shadow"
@@ -1384,14 +1454,17 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph m-24_top media-m-48_top"
       >
         
-        Monitoring also helps Mad Devs to prevent service timeouts. When the load grows, we can track spikes, estimate the severity of an issue and quickly resolve it.
+        Monitoring also helps Mad Devs to prevent service timeouts. When the load grows, we can track spikes, estimate
+        the severity of an issue and quickly resolve it.
       
       </p>
        
       <h3
         class="case_title_h3 m-96_top m-48_bottom media-m-72_top media-m-24_bottom"
       >
+        
         Technologies used for the Namba Food project
+      
       </h3>
        
       <ul
@@ -1657,7 +1730,10 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph m-24_top"
       >
         
-        A local hosting provider is used to host the infrastructure. When a system receives a request from the client, it is handled by the Nginx proxy. When the Mad Devs team deploys a new version, we use the Nginx Gen server. The Nginx proxy sends requests to the website, which is in turn connected to the MySQL database, and Redis serves as an in-memory key-value storage.
+        A local hosting provider is used to host the infrastructure. When a system receives a request from the client,
+        it is handled by the Nginx proxy. When the Mad Devs team deploys a new version, we use the Nginx Gen server.
+        The Nginx proxy sends requests to the website, which is in turn connected to the MySQL database, and Redis
+        serves as an in-memory key-value storage.
       
       </p>
        
@@ -1665,7 +1741,8 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph m-24_top media-m-12_top"
       >
         
-        All our services run in Docker containers, which simplifies the process of infrastructure maintenance and monitoring.
+        All our services run in Docker containers, which simplifies the process of infrastructure maintenance and
+        monitoring.
       
       </p>
        
@@ -1679,7 +1756,9 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph m-24_bottom"
       >
         
-        At Mad Devs, we widely use pipelines. The deployment stage has been automated for the staging server, and deployment on the production server is done manually. The pipeline for the Namba Food system is displayed below.
+        At Mad Devs, we widely use pipelines. The deployment stage has been automated for the staging server, and
+        deployment on the production server is done manually. The pipeline for the Namba Food system is displayed
+        below.
       
       </p>
     </section>
@@ -1691,7 +1770,7 @@ exports[`Namba food renders correctly 1`] = `
         class="container_full case_full-screen-image"
       >
         <picture
-          filenameretina="pipelines@2x"
+          file-name-retina="pipelines@2x"
         >
           <source
             class="image"
@@ -1719,7 +1798,7 @@ exports[`Namba food renders correctly 1`] = `
         class="container_full case_full-screen-image"
       >
         <picture
-          filenameretina="pipelines-mobile@2x"
+          file-name-retina="pipelines-mobile@2x"
         >
           <source
             class="image"
@@ -1753,7 +1832,9 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph m-48_bottom media-m-24_bottom"
       >
         
-        There are now three members on the core development team; during the pre-launch phase, a larger team worked on the Namba Food project. Over the course of the project, five full-time employees and two part-timers have worked closely with the customer:
+        There are now three members on the core development team; during the pre-launch phase, a larger team worked on
+        the Namba Food project. Over the course of the project, five full-time employees and two part-timers have
+        worked closely with the customer:
       
       </p>
        
@@ -1762,7 +1843,7 @@ exports[`Namba food renders correctly 1`] = `
       >
         <li
           class="case_team-item"
-          filenameretina="vlad-andreev@2x"
+          file-name-retina="vlad-andreev@2x"
         >
           <picture
             class="case_team-item__image"
@@ -1802,7 +1883,7 @@ exports[`Namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          filenameretina="gulbustan-baudunova@2x"
+          file-name-retina="gulbustan-baudunova@2x"
         >
           <picture
             class="case_team-item__image"
@@ -1842,7 +1923,7 @@ exports[`Namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          filenameretina="tamara-mun@2x"
+          file-name-retina="tamara-mun@2x"
         >
           <picture
             class="case_team-item__image"
@@ -1882,7 +1963,7 @@ exports[`Namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          filenameretina="aidai-atakulova@2x"
+          file-name-retina="aidai-atakulova@2x"
         >
           <picture
             class="case_team-item__image"
@@ -1922,7 +2003,7 @@ exports[`Namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          filenameretina="baurzhan-omuraliev@2x"
+          file-name-retina="baurzhan-omuraliev@2x"
         >
           <picture
             class="case_team-item__image"
@@ -1962,7 +2043,7 @@ exports[`Namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          filenameretina="nakylai-taiirova@2x"
+          file-name-retina="nakylai-taiirova@2x"
         >
           <picture
             class="case_team-item__image"
@@ -2002,7 +2083,7 @@ exports[`Namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          filenameretina="akylbek-djumaliev@2x"
+          file-name-retina="akylbek-djumaliev@2x"
         >
           <picture
             class="case_team-item__image"
@@ -2042,7 +2123,7 @@ exports[`Namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          filenameretina="stanislav-shcherbinin@2x"
+          file-name-retina="stanislav-shcherbinin@2x"
         >
           <picture
             class="case_team-item__image"
@@ -2082,7 +2163,7 @@ exports[`Namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          filenameretina="eldar-akkozov@2x"
+          file-name-retina="eldar-akkozov@2x"
         >
           <picture
             class="case_team-item__image"
@@ -2122,7 +2203,7 @@ exports[`Namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          filenameretina="altynai-toktomuratova@2x"
+          file-name-retina="altynai-toktomuratova@2x"
         >
           <picture
             class="case_team-item__image"
@@ -2162,7 +2243,7 @@ exports[`Namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          filenameretina="dmitrii-khalezin@2x"
+          file-name-retina="dmitrii-khalezin@2x"
         >
           <picture
             class="case_team-item__image"
@@ -2202,7 +2283,7 @@ exports[`Namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          filenameretina="belek-abylov@2x"
+          file-name-retina="belek-abylov@2x"
         >
           <picture
             class="case_team-item__image"
@@ -2252,7 +2333,11 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph"
       >
         
-        Weekly calls with the customer's business representatives and monthly meetings to see what could be improved from a development/IT viewpoint. Our staff members also work on the Namba Food premises several days a week to keep in touch with the customer's employees. This keeps everyone on the same page. We can collect the most recent business requirements and quickly respond to changes that a highly competitive delivery market may throw at us.
+        Weekly calls with the customer's business representatives and monthly meetings to see what could be improved
+        from a development/IT viewpoint. Our staff members also work on the Namba Food premises several days a week to
+        keep in touch with the customer's employees. This keeps everyone on the same page. We can collect the most
+        recent business requirements and quickly respond to changes that a highly competitive delivery market may
+        throw at us.
       
       </p>
     </section>
@@ -2263,21 +2348,26 @@ exports[`Namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
       >
+        
         Nationwide success and day-to-day improvements
+      
       </h2>
        
       <p
         class="case_paragraph"
       >
         
-        Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision and understanding of its target audience, we were able to 
+        Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s
+        vision and understanding of its target audience, we were able to
+        
         <nuxt-link-stub
           class="case_link"
           to="/services#software-development"
         >
           build a product
         </nuxt-link-stub>
-         that truly solves this customer’s problems. The year-over-year growth rate is hugely impressive.
+         that truly
+        solves this customer’s problems. The year-over-year growth rate is hugely impressive.
       
       </p>
        
@@ -2285,7 +2375,8 @@ exports[`Namba food renders correctly 1`] = `
         class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
       >
         
-        As the number of businesses using Namba Food continues to increase, 
+        As the number of businesses using Namba Food continues to increase,
+        
         <span
           class="case_blockquote-box_text-modificator"
         >
@@ -2297,7 +2388,8 @@ exports[`Namba food renders correctly 1`] = `
         class="case_paragraph m-48_bottom media-m-24_bottom"
       >
         
-        In 2017, Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.
+        In 2017, Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT
+        forum.
       
       </p>
        
@@ -2320,9 +2412,7 @@ exports[`Namba food renders correctly 1`] = `
               class="case_paragraph card-content_paragraph m-24_bottom"
             >
               
-    For 5 years Namba Food actively
-    evolves and monthly improves
-    opportunities of software.
+    For 5 years Namba Food actively evolves and monthly improves opportunities of software.
   
             </p>
              
@@ -2351,9 +2441,7 @@ exports[`Namba food renders correctly 1`] = `
                 <p
                   class="case_paragraph card-content_paragraph card-content_paragraph--bold"
                 >
-                  
-        Increase in sales:
-      
+                   Increase in sales: 
                 </p>
                  
                 <div
@@ -2380,12 +2468,8 @@ exports[`Namba food renders correctly 1`] = `
               class="case_paragraph card-content_paragraph"
             >
               
-    Restaurant Talisman
-    successfully develops in market
-    of Bishkek city. In 2018,
-    directorship of the restaurant
-    decided to actively promote in
-    delivery.
+    Restaurant Talisman successfully develops in market of Bishkek city. In 2018, directorship of the restaurant
+    decided to actively promote in delivery.
   
             </p>
              
@@ -2393,8 +2477,7 @@ exports[`Namba food renders correctly 1`] = `
               class="case_paragraph card-content_paragraph m-24_top m-24_bottom media-m-48_top"
             >
               
-    By using NambaFood software
-    only in a month, they got positive growth.
+    By using NambaFood software only in a month, they got positive growth.
   
             </p>
              
@@ -2407,16 +2490,13 @@ exports[`Namba food renders correctly 1`] = `
                 <p
                   class="case_paragraph card-content_paragraph card-content_statistics-heading"
                 >
-                  
-        IT expenses
-      
+                   IT expenses 
                 </p>
                  
                 <p
                   class="case_paragraph card-content_statistics-number"
                 >
-                  
-        0
+                   0
                   <span>
                     $
                   </span>
@@ -2432,15 +2512,15 @@ exports[`Namba food renders correctly 1`] = `
                   
         Increase in 
                   <br />
-                   sales
+                  
+        sales
       
                 </p>
                  
                 <p
                   class="case_paragraph card-content_statistics-number"
                 >
-                  
-        +236
+                   +236
                   <span>
                     %
                   </span>
@@ -2456,15 +2536,15 @@ exports[`Namba food renders correctly 1`] = `
                   
         Increase in 
                   <br />
-                   amount of orders
+                  
+        amount of orders
       
                 </p>
                  
                 <p
                   class="case_paragraph card-content_statistics-number"
                 >
-                  
-        +142
+                   +142
                   <span>
                     %
                   </span>
@@ -2490,14 +2570,8 @@ exports[`Namba food renders correctly 1`] = `
               class="case_paragraph card-content_paragraph m-28_bottom media-m-32_bottom"
             >
               
-    best cafe & restaurants of the city
-    to suit all tastes + delivery of
-    goods from stores and
-    markets, medicines from
-    pharmacies, personal
-    correspondence and important
-    documents, urgent packages from
-    hand to hand, and much more.
+    best cafe & restaurants of the city to suit all tastes + delivery of goods from stores and markets, medicines from
+    pharmacies, personal correspondence and important documents, urgent packages from hand to hand, and much more.
   
             </p>
              
@@ -2511,8 +2585,7 @@ exports[`Namba food renders correctly 1`] = `
               class="case_paragraph card-content_paragraph m-28_bottom media-m-32_bottom"
             >
               
-    offered dishes on the website to
-    choose from.
+    offered dishes on the website to choose from.
   
             </p>
              
@@ -2526,10 +2599,8 @@ exports[`Namba food renders correctly 1`] = `
               class="case_paragraph card-content_paragraph"
             >
               
-    received help from NF in 4 years
-    and  increased their customer
-    base by increasing online sales
-    and providing marketing activity.
+    received help from NF in 4 years and increased their customer base by increasing online sales and providing
+    marketing activity.
   
             </p>
           </div>
@@ -2540,7 +2611,9 @@ exports[`Namba food renders correctly 1`] = `
         class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
       >
         
-        “Thanks to our close collaboration, we saw a notable increase in the return on investment, as the number of orders grew by 53% YoY. The Mad Devs Team always surpasses expectations and stays open to suggestions. The team's competency and dedication enabled the prolonged partnership between our companies.”
+        “Thanks to our close collaboration, we saw a notable increase in the return on investment, as the number of
+        orders grew by 53% YoY. The Mad Devs Team always surpasses expectations and stays open to suggestions. The
+        team's competency and dedication enabled the prolonged partnership between our companies.”
        
         <div
           class="case_blockquote-author__author-info m-24_top"
@@ -2598,13 +2671,16 @@ exports[`Namba food renders correctly 1`] = `
       <br
         class="case_mobile-break"
       />
-       of memory: 
+      
+    of memory: 
       <br />
-       Sir John Monash 
+      
+    Sir John Monash 
       <br
         class="case_mobile-break"
       />
-       Centre
+      
+    Centre
   
     </h2>
      

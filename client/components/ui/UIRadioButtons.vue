@@ -1,10 +1,10 @@
 <template>
-  <div class="ui-radio-buttons" v-if="radios && radios.length">
+  <div v-if="radios && radios.length" class="ui-radio-buttons">
     <div
       v-for="(item, i) of radios"
       :key="i"
-      class="ui-radio-buttons_item"
       :class="{ 'ui-radio-buttons_item--active': active === i }"
+      class="ui-radio-buttons_item"
       @click="setActive(i, item)"
     >
       <div class="ui-radio-buttons_item-circle"></div>
@@ -19,21 +19,27 @@ export default {
   props: {
     radios: {
       type: Array,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
+
   data() {
     return {
-      active: null
-    };
+      active: null,
+    }
   },
+
   methods: {
     setActive(index, payload) {
-      this.active = index;
-      this.$emit('input', payload);
-    }
-  }
-};
+      this.active = index
+      this.$emit('input', payload)
+    },
+
+    reset() {
+      this.active = null
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

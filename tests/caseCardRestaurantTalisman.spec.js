@@ -1,22 +1,20 @@
-import {
-  mount
-} from '@vue/test-utils';
-import CardRestaurantTalisman from '@/components/Cases/cards-content/CardRestaurantTalisman';
+import { mount } from '@vue/test-utils'
+import CardRestaurantTalisman from '@/components/Cases/cards/namba-food/CardRestaurantTalisman'
 
-describe('CardRestaurantTalisman', () => {
-  let wrapper;
+describe('cardRestaurantTalisman', () => {
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(CardRestaurantTalisman);
-  });
+    wrapper = mount(CardRestaurantTalisman)
+  })
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
-  
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
+
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
-});
+})

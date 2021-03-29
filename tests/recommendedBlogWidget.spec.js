@@ -1,30 +1,30 @@
-import {mount} from '@vue/test-utils';
-import RecommendedBlogWidget from '../client/components/Blog/RecommendedBlogWidget';
-import blogPost from './__mocks__/blogPost';
+import { mount } from '@vue/test-utils'
+import RecommendedBlogWidget from '../client/components/Blog/RecommendedBlogWidget'
+import blogPost from './__mocks__/blogPost'
 
-describe('Recommended blog widget component', () => {
-  let wrapper;
+describe('recommended blog widget component', () => {
+  let wrapper
 
   beforeEach(() => {
     wrapper = mount(RecommendedBlogWidget, {
       mocks: {
         $prismic: {
-          asText: text => text[0].text
-        }
+          asText: text => text[0].text,
+        },
       },
       propsData: {
         post: blogPost,
-        className: 'test'
+        className: 'test',
       },
-      stubs: ['nuxt-link']
-    });
-  });
+      stubs: ['nuxt-link'],
+    })
+  })
 
-  test('is a Vue component', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+  it('is a Vue component', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-});
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

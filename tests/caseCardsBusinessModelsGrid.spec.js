@@ -1,22 +1,20 @@
-import {
-  mount
-} from '@vue/test-utils';
-import CardsBusinessModelsGrid from '@/components/Cases/cards-content/CardsBusinessModelsGrid';
+import { mount } from '@vue/test-utils'
+import CardsBusinessModelsGrid from '@/components/Cases/cards/namba-food/CardsBusinessModelsGrid'
 
-describe('CardsBusinessModelsGrid', () => {
-  let wrapper;
+describe('cardsBusinessModelsGrid', () => {
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(CardsBusinessModelsGrid);
-  });
+    wrapper = mount(CardsBusinessModelsGrid)
+  })
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
-  
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
+
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
-});
+})

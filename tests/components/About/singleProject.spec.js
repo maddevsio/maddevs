@@ -1,11 +1,9 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils'
 
-import SingleProject from '@/components/About/SingleProject';
+import SingleProject from '@/components/About/SingleProject'
 
-describe('CaseStudies component', () => {
-  let wrapper;
+describe('caseStudies component', () => {
+  let wrapper
   let props = {
     project: {
       projectName: 'godee',
@@ -18,90 +16,91 @@ describe('CaseStudies component', () => {
       fileExtension: 'png',
       projectColor: '#ff6A01',
       projectTitle: 'Convenient shuttle bus service',
-      projectDescription: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
+      projectDescription:
+        'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
       contribution: 'Backend, Infrastructure, Mobile Apps',
-      alt: 'GoDee Bus Transportation Services Logo.'
-    }
-  };
+      alt: 'GoDee Bus Transportation Services Logo.',
+    },
+  }
 
   beforeEach(() => {
     wrapper = mount(SingleProject, {
-      propsData: props
-    });
-  });
+      propsData: props,
+    })
+  })
 
-  test('is Vue\'s instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+  it("is Vue's instance", () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
 
-  test('.single-project__container should contain single-project_white-letters-theme class if colorTheme computed value will be true', () => {
+  it('.single-project__container should contain single-project_white-letters-theme class if colorTheme computed value will be true', () => {
     props = {
       project: {
         ...props.project,
-        projectName: 'sjmc'
-      }
-    };
+        projectName: 'sjmc',
+      },
+    }
 
     wrapper = mount(SingleProject, {
-      propsData: props
-    });
+      propsData: props,
+    })
 
-    const container = wrapper.findAll('.single-project__container').at(0);
-    expect(container.classes()).toContain('single-project_white-letters-theme');
-  });
+    const container = wrapper.findAll('.single-project__container').at(0)
+    expect(container.classes()).toContain('single-project_white-letters-theme')
+  })
 
-  test('.single-project__container should not contain single-project_white-letters-theme class if colorTheme computed value will be false', () => {
+  it('.single-project__container should not contain single-project_white-letters-theme class if colorTheme computed value will be false', () => {
     props = {
       project: {
         ...props.project,
-        projectName: 'nambafood'
-      }
-    };
+        projectName: 'nambafood',
+      },
+    }
 
     wrapper = mount(SingleProject, {
-      propsData: props
-    });
-    
-    const container = wrapper.findAll('.single-project__container').at(0);
-    expect(container.classes()).not.toContain('single-project_white-letters-theme');
-  });
+      propsData: props,
+    })
 
-  test('shoud pass correct props', () => {
-    expect(wrapper.props().project).toStrictEqual(props.project);
-  });
+    const container = wrapper.findAll('.single-project__container').at(0)
+    expect(container.classes()).not.toContain('single-project_white-letters-theme')
+  })
 
-  test('shoud add single-project__background_guardrails class to .single-project__background if projectName will be guardrails', () => {
+  it('shoud pass correct props', () => {
+    expect(wrapper.props().project).toStrictEqual(props.project)
+  })
+
+  it('shoud add single-project__background_guardrails class to .single-project__background if projectName will be guardrails', () => {
     props = {
       project: {
         ...props.project,
-        projectName: 'guardrails'
-      }
-    };
+        projectName: 'guardrails',
+      },
+    }
 
     wrapper = mount(SingleProject, {
-      propsData: props
-    });
-    const background = wrapper.findAll('.single-project__background').at(0);
-    expect(background.classes()).toContain('single-project__background_guardrails');
-  });
+      propsData: props,
+    })
+    const background = wrapper.findAll('.single-project__background').at(0)
+    expect(background.classes()).toContain('single-project__background_guardrails')
+  })
 
-  test('should not add class for card if projectName not equal guardrails', () => {
+  it('should not add class for card if projectName not equal guardrails', () => {
     props = {
       project: {
         ...props.project,
-        projectName: 'godee'
-      }
-    };
+        projectName: 'godee',
+      },
+    }
 
     wrapper = mount(SingleProject, {
-      propsData: props
-    });
+      propsData: props,
+    })
 
-    const background = wrapper.findAll('.single-project__background').at(0);
-    expect(background.classes()).not.toContain('single-project__background_guardrails');
-  });
-});
+    const background = wrapper.findAll('.single-project__background').at(0)
+    expect(background.classes()).not.toContain('single-project__background_guardrails')
+  })
+})

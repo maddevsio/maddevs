@@ -1,22 +1,20 @@
-import {
-  mount
-} from '@vue/test-utils';
-import CardNationwideNumbers from '@/components/Cases/cards-content/CardNationwideNumbers';
+import { mount } from '@vue/test-utils'
+import CardNationwideNumbers from '@/components/Cases/cards/namba-food/CardNationwideNumbers'
 
-describe('CardNationwideNumbers', () => {
-  let wrapper;
+describe('cardNationwideNumbers', () => {
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(CardNationwideNumbers);
-  });
+    wrapper = mount(CardNationwideNumbers)
+  })
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
-  
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
+
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
-});
+})

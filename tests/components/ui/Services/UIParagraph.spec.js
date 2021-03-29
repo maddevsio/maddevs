@@ -1,17 +1,17 @@
-import { render, screen } from '@testing-library/vue';
-import UIParagraph from '@/components/ui/Services/UIParagraph';
+import { render, screen } from '@testing-library/vue'
+import UIParagraph from '@/components/ui/Services/UIParagraph'
 
 const props = {
-  paragraph: 'some title'
-};
+  paragraph: 'some title',
+}
 
-describe('UIParagraph component', () => {
-  test('should render correctly', () => {
+describe('uIParagraph component', () => {
+  it('should render correctly', () => {
     const { container } = render(UIParagraph, {
-      props
-    });
+      props,
+    })
 
-    expect(screen.getByText(props.paragraph)).not.toBeNull();
-    expect(container).toMatchSnapshot();
-  });
-});
+    expect(screen.getByText(props.paragraph)).not.toBeNull()
+    expect(container).toMatchSnapshot()
+  })
+})

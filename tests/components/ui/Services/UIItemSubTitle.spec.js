@@ -1,17 +1,17 @@
-import { render, screen } from '@testing-library/vue';
-import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle';
+import { render, screen } from '@testing-library/vue'
+import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle'
 
 const props = {
-  itemSubTitle: 'some title'
-};
+  itemSubTitle: 'some title',
+}
 
-describe('UIButton component', () => {
-  test('should render correctly with slot', () => {
+describe('uIButton component', () => {
+  it('should render correctly with slot', () => {
     const { container } = render(UIItemSubTitle, {
-      props
-    });
+      props,
+    })
 
-    expect(screen.getByText(props.itemSubTitle)).not.toBeNull();
-    expect(container).toMatchSnapshot();
-  });
-});
+    expect(screen.getByText(props.itemSubTitle)).not.toBeNull()
+    expect(container).toMatchSnapshot()
+  })
+})

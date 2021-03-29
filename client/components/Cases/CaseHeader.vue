@@ -1,13 +1,7 @@
 <template>
-  <section class="case_header" id="case-header">
-    <video
-      class="case_main-video" 
-      loop="true" 
-      muted="true" 
-      autoplay="true"
-      v-if="!isIphone"
-    >
-      <source :src="video" type="video/mp4">
+  <section id="case-header" class="case_header">
+    <video v-if="!isIphone" class="case_main-video" loop="true" muted="true" autoplay="true">
+      <source :src="video" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <div class="case_header-content">
@@ -17,55 +11,87 @@
         <slot name="description"></slot>
         <slot name="actions"></slot>
       </div>
-      <div :class="`case_${logo}-logo`" class="case_header-logo"></div>
+      <img
+        :width="headerLogo.width"
+        :height="headerLogo.height"
+        :src="require(`@/assets/img/Cases/${headerLogo.pictureFolder}/svg/${headerLogo.fileName}.svg`)"
+        :alt="headerLogo.alt"
+        :class="`case_${headerLogo.fileName}`"
+        class="case_header-logo"
+      />
     </div>
   </section>
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph';
 export default {
   name: 'Header',
-  components: {
-    TextParagraph
-  },
+
   props: {
-    logo: {
-      type: String,
-      default: ''
+    headerLogo: {
+      type: Object,
+      default: () => {},
+
+      width: {
+        type: Number,
+        default: 0,
+      },
+
+      height: {
+        type: Number,
+        default: 0,
+      },
+
+      pictureFolder: {
+        type: String,
+        default: '',
+      },
+
+      fileName: {
+        type: String,
+        default: '',
+      },
+
+      alt: {
+        type: String,
+        default: '',
+      },
     },
+
     videoName: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
+
   data() {
     return {
       isIphone: false,
-      video: ''
-    };
-  },
-  created() {
-    this.video = `${process.env.awsUrl}/${this.$props.videoName}`;
-  },
-  mounted() {
-    if(navigator.userAgent.match(/(iPhone)/i)) {
-      this.isIphone = true;
-    } else {
-      this.isIphone = false;
+      video: '',
     }
-  }
-};
+  },
+
+  created() {
+    this.video = `${process.env.awsUrl}/${this.$props.videoName}`
+  },
+
+  mounted() {
+    if (navigator.userAgent.match(/(iPhone)/i)) {
+      this.isIphone = true
+    } else {
+      this.isIphone = false
+    }
+  },
+}
 </script>
 
 <style scoped lang="scss">
-@import "../../assets/styles/cases/header";
-@import "../../assets/styles/cases/mixins";
+@import '../../assets/styles/cases/header';
+@import '../../assets/styles/cases/mixins';
 
 .case {
   &_header {
     display: flex;
-    background-color: $bgcolor--black-opacity-07;
 
     &:after {
       display: none;
@@ -144,7 +170,7 @@ export default {
     &_header-title {
       font-size: 30px;
     }
-    
+
     &_header-text,
     &_case-study-item {
       font-size: 13px;

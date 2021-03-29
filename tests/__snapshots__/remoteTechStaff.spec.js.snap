@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Remote tech staff renders correctly 1`] = `
+exports[`remote tech staff renders correctly 1`] = `
 <section
   class="remoteTechStaff main-parent-item"
   id="remote-tech-staff"
@@ -11,11 +11,14 @@ exports[`Remote tech staff renders correctly 1`] = `
     <h2
       class="remoteTechStaff__main-title"
     >
+      
       Remote 
       <br
         class="remoteTechStaff__small-screen-break"
       />
-       Tech Staff
+      
+      Tech Staff
+    
     </h2>
      
     <div

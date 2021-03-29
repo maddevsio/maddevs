@@ -1,19 +1,19 @@
-import AboutBanner from '@/components/Banner/AboutBanner';
-import {render, screen} from '@testing-library/vue';
+import AboutBanner from '@/components/Banner/AboutBanner'
+import { render, screen } from '@testing-library/vue'
 
-describe('About banner', () => {
+describe('about banner', () => {
   global.$nuxt = {
     $route: {
-      name: '/'
-    }
-  };
+      name: '/',
+    },
+  }
 
-  test('is a Vue instance', () => {
-    const {container} = render(AboutBanner, {
-      stubs: ['nuxt-link']
-    });
+  it('is a Vue instance', () => {
+    const { container } = render(AboutBanner, {
+      stubs: ['nuxt-link'],
+    })
 
-    expect(screen.getByText('Mad Devs')).not.toBeNull();
-    expect(container).toMatchSnapshot();
-  });
-});
+    expect(screen.getByText('Mad Devs')).not.toBeNull()
+    expect(container).toMatchSnapshot()
+  })
+})

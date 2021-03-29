@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Text quote box renders correctly 1`] = `
+exports[`text quote box renders correctly 1`] = `
 <blockquote
   class="case_blockquote-box"
 >
