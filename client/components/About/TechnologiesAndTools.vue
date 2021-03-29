@@ -13,6 +13,7 @@
             v-for="(item, key) in legend"
             @click="selectLegend(`${item.value.replace(/\W/g, '').toLowerCase()}`)"
             :key="key"
+            data-testid="test-tech_legend__item"
             class="tech_legend__item"
             :class="(`legend-${item.value.replace(/\W/g, '').toLowerCase()}`)"
           >
