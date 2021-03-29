@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`code block slice component is a Vue instance 1`] = `
+<div>
+  <div
+    class="post-part single"
+  >
+    <div
+      class="prism-editor-wrapper code-sample"
+    >
+      <div
+        class="prism-editor__container"
+      >
+        <textarea
+          autocapitalize="off"
+          autocomplete="off"
+          autocorrect="off"
+          class="prism-editor__textarea prism-editor__textarea--empty"
+          data-gramm="false"
+          data-testid="textarea"
+          placeholder=""
+          readonly="readonly"
+          spellcheck="false"
+        />
+        <pre
+          class="prism-editor__editor"
+          data-testid="preview"
+        >
+          <br />
+        </pre>
+      </div>
+    </div>
+  </div>
+</div>
+`;
