@@ -8,6 +8,7 @@ body {
   background-color: #111213;
   font-family: 'Poppins-Regular', sans-serif;
   font-feature-settings: 'zero' on, 'ordn' on, 'ss02' on, 'ss05' on;
+  overflow-y: overlay; // removes the black line near scrollbar when Chrome browser is scaled > 100%
 }
 
 h1,
