@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import OrderProjectFromUsModal from '@/components/Modals/order-project-from-us-modal'
+import OrderProjectFromUsModal from '@/components/core/modals/OrderProjectFromUs'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()

@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import SimpleModal from '@/containers/SimpleModal'
+import SimpleModal from '@/components/Blog/SimpleModal'
 
 export default {
   name: 'ImageCaptionSlice',

@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import IndividualsModal from '@/components/Modals/individuals-modal'
+import IndividualsModal from '@/components/core/modals/Individuals'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()

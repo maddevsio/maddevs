@@ -94,14 +94,14 @@
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import HeaderMobile from '@/components/core/Header/HeaderMobile'
 import HeaderLogo from '@/components/core/Header/HeaderLogo'
-import Modal from '@/containers/Modal'
+import Modal from '@/components/core/Modal'
 import { headerNavigation as navigation } from '@/data/navigation'
 
 export default {
   name: 'MainHeader',
   components: {
     UIModalTriggerButton,
-    ContactMeModal: () => import('@/components/Modals/contact-me-modal'),
+    ContactMeModal: () => import('@/components/core/modals/ContactMe'),
     HeaderMobile,
     HeaderLogo,
     Modal,

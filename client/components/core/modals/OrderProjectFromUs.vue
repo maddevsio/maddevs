@@ -118,7 +118,7 @@ import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
 import UIButton from '@/components/shared/UIButton'
 
 export default {
-  name: 'OrderProjectFromUsModal',
+  name: 'OrderProjectFromUs',
   components: {
     UIFormCheckboxes,
     UIButton,

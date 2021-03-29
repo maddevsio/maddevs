@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import getYourTrustedItPartnerModal from '@/components/Modals/get-your-trusted-it-partner-modal'
+import getYourTrustedItPartnerModal from '@/components/core/modals/GetYourTrustedItPartner'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()

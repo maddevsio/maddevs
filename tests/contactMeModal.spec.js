@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import contactMeModal from '@/components/Modals/contact-me-modal'
+import contactMeModal from '@/components/core/modals/ContactMe'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()

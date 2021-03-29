@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import InfrastructureAuditModal from '@/components/Modals/infrastructure-audit-modal'
+import InfrastructureAuditModal from '@/components/core/modals/InfrastructureAudit'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()

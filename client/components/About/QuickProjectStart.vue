@@ -45,14 +45,14 @@
 <script>
 import { steps } from '@/data/quickProjectStart'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
-import Modal from '@/containers/Modal'
+import Modal from '@/components/core/Modal'
 
 export default {
   name: 'QuickProjectStart',
   components: {
     UIModalTriggerButton,
     Modal,
-    OrderProjectFromUs: () => import('@/components/Modals/order-project-from-us-modal'),
+    OrderProjectFromUs: () => import('@/components/core/modals/OrderProjectFromUs'),
   },
 
   data() {

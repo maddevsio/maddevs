@@ -42,8 +42,8 @@
 <script>
 import SoftwareDevelopmentContent from '@/components/Services/SoftwareDevelopmentContent'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
-import getYourTrustedItPartnerModal from '@/components/Modals/get-your-trusted-it-partner-modal'
-import Modal from '@/containers/Modal'
+import getYourTrustedItPartnerModal from '@/components/core/modals/GetYourTrustedItPartner'
+import Modal from '@/components/core/Modal'
 
 export default {
   name: 'SoftwareDevelopment',

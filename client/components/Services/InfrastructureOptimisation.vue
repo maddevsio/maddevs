@@ -39,8 +39,8 @@
 <script>
 import InfrastructureContent from '@/components/Services/InfrastructureContent'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
-import infrastructureAuditModal from '@/components/Modals/infrastructure-audit-modal'
-import Modal from '@/containers/Modal'
+import infrastructureAuditModal from '@/components/core/modals/InfrastructureAudit'
+import Modal from '@/components/core/Modal'
 
 export default {
   name: 'InfrastructureOptimisation',

@@ -126,7 +126,7 @@
         </form>
       </div>
     </div>
-    <SuccessModal id="career-modal" :visibled="isEmailSent" @onClose="resetForm" />
+    <SuccessModal id="career-modal" :visibled="isEmailSent" @close="resetForm" />
   </section>
 </template>
 
@@ -136,7 +136,7 @@ import { fileSizeValidation, fileExt } from '@/helpers/validators'
 import FileInput from '@/components/Careers/FileInput'
 import Button from '@/components/Careers/Button'
 import UIRadioButtons from '@/components/shared/UIRadioButtons'
-import SuccessModal from '@/components/Modals/success-modal'
+import SuccessModal from '@/components/core/modals/Success'
 
 export default {
   name: 'CareersForm',

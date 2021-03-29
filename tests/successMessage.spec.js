@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils'
 
-import SuccessModal from '@/components/Modals/success-message'
+import SuccessModal from '@/components/core/modals/Success'
 
 describe('success message', () => {
   let wrapper

@@ -2,16 +2,17 @@
   <transition name="main-fade" mode="out-in">
     <div v-if="isVisible" v-append-to-body class="modal">
       <transition name="made">
-        <div v-if="isOverlay" class="modal_overlay"></div>
+        <div v-if="isOverlay" class="modal_overlay" @click="close"></div>
       </transition>
       <transition name="fade">
         <div v-if="contentLoaded" class="modal_container">
           <div class="modal_close" @click="close">
             <img src="@/assets/img/common/close-icon.svg" alt="Close modal" />
           </div>
-          <div ref="content" class="modal_content safari-only" @click="close">
-            <slot />
-          </div>
+          <simplebar ref="content" class="modal_content safari-only" @success="openSuccessModal">
+            <SuccessMessage v-if="isSuccess" />
+            <slot v-else />
+          </simplebar>
         </div>
       </transition>
     </div>
@@ -19,8 +20,12 @@
 </template>
 
 <script>
+import simplebar from 'simplebar-vue'
+import SuccessMessage from '@/components/core/modals/SuccessMessage'
+
 export default {
   name: 'Modal',
+  components: { simplebar, SuccessMessage },
   directives: {
     appendToBody: {
       inserted(el) {
@@ -47,6 +52,7 @@ export default {
       isVisible: false,
       contentLoaded: false,
       isOverlay: false,
+      isSuccess: false,
     }
   },
 
@@ -59,6 +65,10 @@ export default {
   },
 
   methods: {
+    openSuccessModal() {
+      this.isSuccess = true
+    },
+
     close() {
       setTimeout(() => {
         this.isVisible = false
@@ -70,6 +80,7 @@ export default {
       setTimeout(() => {
         this.isOverlay = false
         this.$emit('on-close')
+        this.isSuccess = false
       }, 100)
     },
 
@@ -105,7 +116,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/styles/vars';
+@import '../../assets/styles/vars';
 
 .modal {
   width: 100%;
@@ -117,6 +128,7 @@ export default {
   bottom: 0;
   z-index: 10000000;
   background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 15px;
   overflow: hidden;
   box-sizing: border-box;
 
@@ -132,8 +144,9 @@ export default {
 
   &_close {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 0;
+    right: 0;
+    padding: 25px 25px 12px;
     cursor: pointer;
     z-index: 1;
     background-color: transparent;
@@ -145,39 +158,27 @@ export default {
   }
 
   &_container {
-    width: 100%;
-    height: 100%;
+    width: 600px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     position: relative;
     z-index: 12;
     margin: auto;
+    padding: 70px 0 53px;
     box-sizing: border-box;
     transition: top 0.4s ease;
     overflow: hidden;
-    padding: 20px 15px;
     border-radius: 3px;
+    background-color: $modal-bg-color;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.45);
     border-radius: 3px;
   }
 
   &_content {
-    width: 100%;
-    height: 100%;
-    position: relative;
-
-    /deep/ img {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #000;
-      box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.45);
-      cursor: default;
-      display: block;
-      margin: auto;
-      max-height: 100%;
-      max-width: 100%;
-    }
+    max-height: 80vh;
+    padding: 0 60px;
+    box-sizing: border-box;
   }
 
   /deep/ .fade-enter-active,
@@ -246,6 +247,11 @@ export default {
       max-width: 100%;
       height: 100%;
       margin: 0;
+    }
+
+    &_content {
+      padding: 0 10px;
+      max-height: 85vh;
     }
 
     /deep/ .simplebar-vertical {

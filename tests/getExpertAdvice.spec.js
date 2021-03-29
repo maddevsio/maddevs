@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import getExpertAdvice from '@/components/Modals/get-expert-advice-modal'
+import getExpertAdvice from '@/components/core/modals/GetExpertAdvice'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()

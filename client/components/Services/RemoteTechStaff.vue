@@ -36,9 +36,9 @@
 
 <script>
 import RemoteTechStaffContent from '@/components/Services/RemoteTechStaffContent'
-import teamsModal from '@/components/Modals/teams-modal'
-import individualsModal from '@/components/Modals/individuals-modal'
-import Modal from '@/containers/Modal'
+import teamsModal from '@/components/core/modals/Teams'
+import individualsModal from '@/components/core/modals/Individuals'
+import Modal from '@/components/core/Modal'
 
 export default {
   name: 'RemoteTechStaff',

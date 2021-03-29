@@ -2,17 +2,17 @@
   <transition name="fade">
     <div v-if="visibled" :id="id" class="success-modal">
       <div class="success-modal_content">
-        <button class="close-modal" type="button" @click="onClose">
+        <button class="close-modal" type="button" @click="handleClose">
           <img src="@/assets/img/common/close-icon.svg" alt="Close modal" />
         </button>
-        <SuccessMessage class-name="success-modal_success-message" />
+        <SuccessMessage class="success-modal_success-message" />
       </div>
     </div>
   </transition>
 </template>
 
 <script>
-import SuccessMessage from '@/components/Modals/success-message'
+import SuccessMessage from '@/components/core/modals/SuccessMessage'
 
 export default {
   name: 'SuccessModal',
@@ -33,15 +33,15 @@ export default {
   },
 
   methods: {
-    onClose() {
-      this.$emit('onClose')
+    handleClose() {
+      this.$emit('close')
     },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
+@import '../../../assets/styles/vars';
 
 .success-modal {
   width: 514.16px;

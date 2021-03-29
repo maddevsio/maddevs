@@ -31,7 +31,7 @@
     </div>
 
     <Modal ref="getExpertAdviceModal">
-      <getExpertAdviceModal />
+      <GetExpertAdviceModal />
     </Modal>
   </section>
 </template>
@@ -39,15 +39,15 @@
 <script>
 import ItConsultingContent from '@/components/Services/ItConsultingContent'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
-import getExpertAdviceModal from '@/components/Modals/get-expert-advice-modal'
-import Modal from '@/containers/Modal'
+import GetExpertAdviceModal from '@/components/core/modals/GetExpertAdvice'
+import Modal from '@/components/core/Modal'
 
 export default {
   name: 'ItConsulting',
   components: {
     ItConsultingContent,
     UIModalTriggerButton,
-    getExpertAdviceModal,
+    GetExpertAdviceModal,
     Modal,
   },
 
