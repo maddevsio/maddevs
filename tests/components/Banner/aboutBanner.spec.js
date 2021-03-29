@@ -1,7 +1,7 @@
 import AboutBanner from '@/components/Banner/AboutBanner';
 import {render, screen} from '@testing-library/vue';
 
-describe('Form checkboxes', () => {
+describe('About banner', () => {
   global.$nuxt = {
     $route: {
       name: '/'

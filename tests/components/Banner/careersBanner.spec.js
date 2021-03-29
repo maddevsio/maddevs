@@ -1,27 +1,19 @@
-import {
-  mount
-} from '@vue/test-utils';
 import CareersBanner from '@/components/Banner/CareersBanner';
+import {render, screen} from '@testing-library/vue';
 
-describe('Form checkboxes', () => {
-  let wrapper;
+describe('Career banner', () => {
+  global.$nuxt = {
+    $route: {
+      name: '/'
+    }
+  };
 
-  beforeEach(() => {
-    global.$nuxt = {
-      $route: {
-        name: '/'
-      }
-    };
-    wrapper = mount(CareersBanner);
-  });
-
-  // ------ IMPORTANT ----- //
   test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
+    const {container} = render(CareersBanner, {
+      stubs: ['nuxt-link']
+    });
+
+    expect(screen.getByText('Mad Devs\'')).not.toBeNull();
+    expect(container).toMatchSnapshot();
   });
-  
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-  // --------------------- //
 });

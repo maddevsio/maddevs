@@ -1,29 +1,19 @@
-import {
-  mount
-} from '@vue/test-utils';
 import ProjectsBanner from '@/components/Banner/ProjectsBanner';
+import {render, screen} from '@testing-library/vue';
 
-describe('Form checkboxes', () => {
-  let wrapper;
+describe('Project banner', () => {
+  global.$nuxt = {
+    $route: {
+      name: '/'
+    }
+  };
 
-  beforeEach(() => {
-    global.$nuxt = {
-      $route: {
-        name: '/'
-      }
-    };
-    wrapper = mount(ProjectsBanner, {
+  test('is a Vue instance', () => {
+    const {container} = render(ProjectsBanner, {
       stubs: ['nuxt-link']
     });
-  });
 
-  // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
+    expect(screen.getByText('Check out our')).not.toBeNull();
+    expect(container).toMatchSnapshot();
   });
-  
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-  // --------------------- //
 });
