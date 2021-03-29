@@ -1,6 +1,6 @@
 <template>
   <main class="main case">
-    <CaseHeader logo="sjmc" video-name="sjmc/sjmc-main-video.b35a387.mp4">
+    <CaseHeader :header-logo="headerLogo" video-name="sjmc/sjmc-main-video.b35a387.mp4">
       <h1 slot="title" class="case_header-title">
         Sir John Monash <br />
         Centre
@@ -66,7 +66,7 @@
       <section class="container_regular">
         <h3 class="case_title_h3 m-48_top m-12_bottom">The challenges</h3>
         <List>
-          <ListDashItemBox v-for="(text, i) in theChallenges" :key="i">{{ text }}</ListDashItemBox>
+          <ListHyphenItemBox v-for="(text, i) in theChallenges" :key="i">{{ text }}</ListHyphenItemBox>
         </List>
       </section>
       <section class="container_regular">
@@ -566,7 +566,7 @@ import ListItemBoxCheckMark from '@/components/Cases/ListItemBoxCheckMark'
 import ListItemDot from '@/components/Cases/ListItemDot'
 import ListTechnologies from '@/components/Cases/ListTechnologies'
 import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
-import ListDashItemBox from '@/components/Cases/ListDashItemBox'
+import ListHyphenItemBox from '@/components/Cases/ListHyphenItemBox'
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
 import Swiper from '@/components/Cases/Swiper'
 import Footer from '@/components/Cases/Footer'
@@ -589,7 +589,7 @@ export default {
     ListItemDot,
     ListTechnologies,
     ListTechnologiesItem,
-    ListDashItemBox,
+    ListHyphenItemBox,
     Swiper,
     Footer,
   },
@@ -877,6 +877,14 @@ export default {
           alt: 'Mad Devs’ Team Trip to the SJMC.',
         },
       ],
+
+      headerLogo: {
+        width: 242,
+        height: 110,
+        pictureFolder: 'sjmc',
+        fileName: 'sjmc-logo',
+        alt: '',
+      },
     }
   },
 
