@@ -32,8 +32,6 @@ export default {
 @import '../../../assets/styles/_vars';
 
 .textslice {
-  word-break: break-word;
-
   /deep/ strong,
   /deep/ p,
   /deep/ h1,
