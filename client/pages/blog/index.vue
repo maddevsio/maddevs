@@ -495,14 +495,6 @@ export default {
 
 @media only screen and (max-width: 991px) {
   .home {
-    .latest-posts {
-      &__single-post {
-        /deep/ .blog-post__cover-image {
-          height: 59vw;
-        }
-      }
-    }
-
     .latest-posts .latest-posts__wrapper .latest-posts__single-post,
     .filtered-posts .filtered-posts__wrapper .filtered-posts__single-post {
       width: 100%;
@@ -537,15 +529,15 @@ export default {
 
         /deep/ .blog-post {
           display: flex;
+          align-items: flex-start;
           margin-bottom: 18px;
 
           &:last-child {
             margin-bottom: 0;
           }
 
-          &__cover-image {
+          &__image {
             width: 124px;
-            height: 124px;
             flex-shrink: 0;
             margin-right: 16px;
           }
@@ -611,9 +603,8 @@ export default {
     .filtered-posts {
       &__wrapper {
         /deep/ .blog-post {
-          &__cover-image {
+          &__image {
             width: 120px;
-            height: 120px;
             margin-right: 10px;
           }
         }
