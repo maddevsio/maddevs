@@ -2,22 +2,23 @@
   <section id="careers" class="careers">
     <div class="careers__container container">
       <div class="careers__wrapper">
-        <form class="careers__form" @submit.prevent="sendData">
+        <form class="careers__form" @submit.prevent="submitForm">
           <label class="careers__form-name-label"
             >Hello, my name is
             <span>
               <input
                 ref="nameInput"
-                v-model="fullName"
+                v-model="name"
+                autofocus
                 class="careers__form-input careers__form-name-input"
                 type="text"
                 placeholder="John Smith"
-                @input="$v.fullName.$touch"
+                @input="$v.name.$touch"
               />
               <!-- Erros -->
-              <div v-if="$v.fullName.$dirty">
-                <span v-if="!$v.fullName.required" class="modal-error-text error-text">This field is required.</span>
-                <span v-if="!$v.fullName.maxLength" class="modal-error-text error-text">
+              <div v-if="$v.name.$dirty">
+                <span v-if="!$v.name.required" class="modal-error-text error-text">This field is required.</span>
+                <span v-if="!$v.name.maxLength" class="modal-error-text error-text">
                   Sorry, the number of characters in this field should not exceed 50.
                 </span>
               </div>
@@ -28,17 +29,15 @@
             I want to work for you as a
             <span>
               <input
-                v-model="positionTitle"
+                v-model="position"
                 class="careers__form-input careers__form-position-input"
                 type="text"
                 placeholder="desired position."
-                @input="$v.positionTitle.$touch"
+                @input="$v.position.$touch"
               />
               <!-- Erros -->
-              <div v-if="$v.positionTitle.$dirty">
-                <span v-if="!$v.positionTitle.required" class="modal-error-text error-text"
-                  >This field is required.</span
-                >
+              <div v-if="$v.position.$dirty">
+                <span v-if="!$v.position.required" class="modal-error-text error-text">This field is required.</span>
               </div>
               <!-- End Erros -->
             </span>
@@ -49,16 +48,11 @@
           </h2>
           <div>
             <ul class="careers__position-list">
-              <UIRadioButtons
-                ref="radioButtons"
-                v-model="positionValue"
-                :options="grades"
-                @change="$v.positionValue.$touch"
-              />
+              <UIRadioButtons ref="radioButtons" v-model="grade" :options="grades" @change="$v.grade.$touch" />
             </ul>
             <!-- Erros -->
-            <div v-if="$v.positionValue.$dirty">
-              <span v-if="!$v.positionValue.required" class="modal-error-text error-text posotion-error-text"
+            <div v-if="$v.grade.$dirty">
+              <span v-if="!$v.grade.required" class="modal-error-text error-text posotion-error-text"
                 >This field is required.</span
               >
             </div>
@@ -92,7 +86,7 @@
             <li class="careers__form-list-item careers__form-list-item-linkedin">
               – check out my
               <input
-                v-model="linkedinProfile"
+                v-model="linkedin"
                 class="careers__form-input careers__form-linkedin-input"
                 type="text"
                 placeholder="LinkedIn profile"
@@ -100,19 +94,16 @@
             </li>
             <li class="careers__form-list-item careers__file-attach">
               <div>
-                <FileInput ref="fileInput" v-model="selectedFile" @input="onFileChanged" />
+                <FileInput ref="fileInput" v-model="cvFile" @input="handleFileSelect" />
                 <!-- Erros -->
-                <div v-if="$v.selectedFile.$dirty">
-                  <span v-if="!$v.selectedFile.required" class="modal-error-text error-text error-text-file-attach">
+                <div v-if="$v.cvFile.$dirty">
+                  <span v-if="!$v.cvFile.required" class="modal-error-text error-text error-text-file-attach">
                     This field is required.
                   </span>
-                  <span v-if="!$v.selectedFile.fileExt" class="modal-error-text error-text error-text-file-attach">
+                  <span v-if="!$v.cvFile.fileExt" class="modal-error-text error-text error-text-file-attach">
                     Please, upload a file with one of the following extensions: pdf, doc, docx.
                   </span>
-                  <span
-                    v-if="!$v.selectedFile.fileSizeValidation"
-                    class="modal-error-text error-text error-text-file-attach"
-                  >
+                  <span v-if="!$v.cvFile.fileSizeValidation" class="modal-error-text error-text error-text-file-attach">
                     Sorry, file size has exceeded its max limit of 5MB.
                   </span>
                 </div>
@@ -120,13 +111,16 @@
               </div>
             </li>
           </ul>
-          <Button :disabled="$v.validationGroup.$invalid || onSubmit" :loading="onSubmit" type="submit">
-            I want to work for Mad Devs!
-          </Button>
+          <Button :disabled="$v.validationGroup.$invalid" type="submit"> I want to work for Mad Devs! </Button>
         </form>
       </div>
     </div>
-    <SuccessModal id="career-modal" :visibled="isEmailSent" @close="resetForm" />
+    <SuccessModal
+      id="career-modal"
+      :display-time="3000"
+      :visibled="isShowSuccessModal"
+      @close="isShowSuccessModal = false"
+    />
   </section>
 </template>
 
@@ -148,16 +142,16 @@ export default {
   },
 
   validations: {
-    fullName: {
+    name: {
       required,
       maxLength: maxLength(50),
     },
 
-    positionTitle: {
+    position: {
       required,
     },
 
-    positionValue: {
+    grade: {
       required,
     },
 
@@ -166,24 +160,23 @@ export default {
       email,
     },
 
-    selectedFile: {
+    cvFile: {
       required,
       fileExt,
       fileSizeValidation,
     },
 
-    validationGroup: ['fullName', 'email', 'positionTitle', 'positionValue', 'selectedFile'],
+    validationGroup: ['name', 'email', 'position', 'grade', 'cvFile'],
   },
 
   data() {
     return {
-      fullName: null,
-      positionValue: null,
-      positionTitle: null,
+      name: null,
+      position: null,
+      grade: null,
       email: null,
-      emailTo: process.env.emailHR,
-      selectedFile: null,
-      linkedinProfile: null,
+      cvFile: null,
+      linkedin: null,
       grades: [
         { value: 'senior', label: 'Senior,' },
         { value: 'middle', label: 'Middle,' },
@@ -191,72 +184,59 @@ export default {
         { value: 'intern', label: 'Intern' },
       ],
 
-      isEmailSent: false,
-      onSubmit: false,
+      isShowSuccessModal: false,
       form: '',
-      modalTitle: 'Mad Devs Website Carrers Form',
     }
   },
 
-  mounted() {
-    this.focusInput()
-  },
-
   methods: {
-    onFileChanged() {
-      if (this.$v && this.$v.selectedFile) {
-        this.$v.selectedFile.$touch()
+    handleFileSelect() {
+      if (this.$v && this.$v.cvFile) {
+        this.$v.cvFile.$touch()
       }
     },
 
-    sendData() {
-      if (!this.$v.validationGroup.$invalid && !this.onSubmit) {
-        this.onSubmit = true
-        // TODO: add ajax request
-        this.toBase64(this.selectedFile).then(base64 => {
-          this.form = {
-            templateId: 305491, // Required
-            variables: {
-              fullName: this.fullName,
-              email: this.email,
-              emailTo: this.emailTo,
-              linkedinProfile: this.linkedinProfile,
-              positionValue: this.positionValue.type,
-              positionTitle: this.positionTitle,
-              subject: `Job Candidate Application for ${this.positionTitle}`,
-              modalTitle: this.modalTitle,
-            },
-            attachment: {
-              base64: base64.replace(/^data:(.*,)?/, ''),
-              name: this.selectedFile.name,
-            },
-          }
-          this.$store.dispatch('sendEmail', this.form).then(res => {
-            this.onSubmit = false
-            if (res.status === 200) {
-              this.isEmailSent = true
-              setTimeout(() => {
-                this.resetForm()
-              }, 3000)
-            } else {
-              this.isEmailSent = false
-            }
-          })
-        })
-      }
+    async submitForm() {
+      if (this.$v.validationGroup.$invalid) return
+
+      const emailToSent = await this.buildEmail()
+      this.$store.dispatch('sendEmail', emailToSent)
+      this.isShowSuccessModal = true
+      this.resetForm()
     },
 
     resetForm() {
       this.$v.$reset() // Reset validation form
       this.$refs.fileInput.reset()
       this.$refs.radioButtons.reset()
-      this.fullName = null
-      this.positionValue = null
-      this.positionTitle = null
+      this.name = null
+      this.grade = null
+      this.position = null
       this.email = null
-      this.selectedFile = null
-      this.linkedinProfile = null
-      this.isEmailSent = false
+      this.cvFile = null
+      this.linkedin = null
+    },
+
+    async buildEmail() {
+      const base64File = await this.toBase64(this.cvFile)
+      return {
+        templateId: 305491, // Required
+        variables: {
+          fullName: this.name,
+          email: this.email,
+          emailTo: process.env.emailHR,
+          linkedinProfile: this.linkedin,
+          positionValue: this.grade.type,
+          positionTitle: this.position,
+          subject: `Job Candidate Application for ${this.position}`,
+          modalTitle: 'Mad Devs Website Carrers Form',
+        },
+
+        attachment: {
+          base64: base64File.replace(/^data:(.*,)?/, ''),
+          name: this.cvFile.name,
+        },
+      }
     },
 
     toBase64(file) {
@@ -265,14 +245,6 @@ export default {
         reader.readAsDataURL(file)
         reader.onload = () => resolve(reader.result)
         reader.onerror = error => reject(error)
-      })
-    },
-
-    focusInput() {
-      this.$nextTick(() => {
-        if (this.$refs.nameInput && this.$refs.nameInput.focus()) {
-          this.$refs.nameInput.focus()
-        }
       })
     },
   },

@@ -65,7 +65,7 @@
     >
       Order a project now
     </UIButton>
-    <SuccessModal id="footer-modal" :visibled="isSuccess" @close="handleModalClose" />
+    <SuccessModal id="footer-modal" :display-time="3000" :visibled="isSuccess" @close="handleModalClose" />
   </form>
 </template>
 

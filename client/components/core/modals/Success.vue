@@ -30,6 +30,24 @@ export default {
       type: String,
       default: null,
     },
+
+    displayTime: {
+      type: Number,
+      default: 0,
+    },
+  },
+
+  data() {
+    return {
+      timeout: null,
+    }
+  },
+
+  watch: {
+    visibled(value) {
+      if (value && this.displayTime) this.timeout = setTimeout(this.handleClose, this.displayTime)
+      if (!value) this.timeout = null
+    },
   },
 
   methods: {
