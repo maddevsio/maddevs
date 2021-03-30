@@ -9,14 +9,14 @@
         <div v-if="type === 'projects'" class="case-studies__fire-icon"></div>
       </div>
       <div class="projects">
-        <SingleProject v-for="(project, i) in projects" :key="i" :project="project" />
+        <SingleProject v-for="project in projects" :key="project.name" v-bind="project" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import SingleProject from '@/components/About/SingleProject'
+import SingleProject from '@/components/core/SingleProject'
 import { preview as projects } from '@/data/caseStudies'
 
 export default {

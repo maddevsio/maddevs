@@ -1,4 +1,25 @@
-export const percentages = [
+export const customers = [
+  'godee',
+  'guardrails',
+  'teacherly',
+  'triggermesh',
+  'clutch',
+  'eatigo',
+  'veeqo',
+  'admitad',
+  'iotsploit',
+  'sir-jonas',
+  'progressay',
+  'kickoico',
+  'nambafood',
+  'showmebishkek',
+  'mythril',
+  'seso',
+  'tengri',
+  'peklo',
+]
+
+export const ratesPercentages = [
   {
     percent: 92,
     description: 'recommend us',

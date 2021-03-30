@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import { percentages, keyMetricks } from '@/data/customerRates'
+import { ratesPercentages as percentages, keyMetricks } from '@/data/customers'
 
 export default {
   name: 'CustomerRates',

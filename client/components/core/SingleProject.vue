@@ -1,50 +1,47 @@
 <template>
-  <a
-    :href="project.link"
-    :style="{ background: project.projectColor }"
-    :target="project.targetBlank ? '_blank' : '_self'"
-    class="single-project"
-  >
+  <a :href="link" :style="{ background: color }" :target="isBlank ? '_blank' : '_self'" class="single-project">
     <div :class="colorTheme" class="single-project__container">
       <div class="single-project__content-wrap">
         <img
-          :width="project.logoWidth"
-          :data-src="require(`@/assets/img/Home/svg/caseIcons/${project.logoImg}.svg`)"
-          :alt="project.alt"
+          :width="logoWidth"
+          :data-src="require(`@/assets/img/Home/svg/caseIcons/${logo}.svg`)"
+          :alt="alt"
           height="41"
           class="img_lazy single-project__logo"
         />
         <h3 class="single-project__sub-title">
-          {{ project.projectTitle }}
+          {{ title }}
         </h3>
         <p class="single-project__paragraph paragraph">
-          {{ project.projectDescription }}
+          {{ description }}
         </p>
-        <ContributionWidget
-          :project-name="project.projectName"
-          :contribution="project.contribution"
-          :maddevs-logo="project.maddevsLogo"
-        />
+        <div class="contribution-widget">
+          <img
+            :data-src="require(`@/assets/img/Home/svg/caseIcons/${mdLogo}.svg`)"
+            width="20"
+            height="18"
+            class="contribution-widget__img img_lazy"
+            alt="Mad Devs logo"
+          />
+          <span :class="`contribution-widget__content_${name}`" class="contribution-widget__content">
+            contribution: {{ contribution }}
+          </span>
+        </div>
       </div>
       <div :class="backgroundModifierClasses" class="single-project__background">
         <picture>
           <source
             :data-srcset="[
-              require(`@/assets/img/Studies/webp/${project.projectBackground}.webp`) + ' ',
-              require(`@/assets/img/Studies/webp/${project.projectBackground}.webp`) + ' 2x',
+              require(`@/assets/img/Studies/webp/${background}.webp`) + ' ',
+              require(`@/assets/img/Studies/webp/${background}.webp`) + ' 2x',
             ]"
             class="multi-image"
             type="image/webp"
           />
           <img
-            :data-src="[
-              require(`@/assets/img/Studies/${project.fileExtension}/${project.projectBackground}.${project.fileExtension}`),
-            ]"
-            :data-srcset="[
-              require(`@/assets/img/Studies/${project.fileExtension}/${project.projectBackground}.${project.fileExtension}`) +
-                ' 2x',
-            ]"
-            :alt="project.alt"
+            :data-src="[require(`@/assets/img/Studies/${extension}/${background}.${extension}`)]"
+            :data-srcset="[require(`@/assets/img/Studies/${extension}/${background}.${extension}`) + ' 2x']"
+            :alt="alt"
             class="img_lazy"
             width="610"
             height="294"
@@ -56,41 +53,84 @@
 </template>
 
 <script>
-import ContributionWidget from '@/components/About/ContributionWidget'
-
 export default {
   name: 'SingleProject',
-  components: {
-    ContributionWidget,
-  },
 
   props: {
-    project: {
-      type: Object,
-      required: true,
-      default: () => ({
-        projectName: '',
-        logoImg: '',
-        link: '',
-        projectBackground: '',
-        projectColor: '',
-        projectTitle: '',
-        alt: '',
-        fileExtension: '',
-      }),
+    name: {
+      type: String,
+      default: 'Project',
+    },
+
+    logo: {
+      type: String,
+      default: 'godee-icon',
+    },
+
+    logoWidth: {
+      type: Number,
+      default: 121,
+    },
+
+    mdLogo: {
+      type: String,
+      default: 'md-logo-black',
+    },
+
+    link: {
+      type: String,
+      default: '/case-studies/godee/',
+    },
+
+    isBlank: {
+      type: Boolean,
+      default: false,
+    },
+
+    background: {
+      type: String,
+      default: 'godeeBackground',
+    },
+
+    extension: {
+      type: String,
+      default: 'png',
+    },
+
+    color: {
+      type: String,
+      default: '#ff6A01',
+    },
+
+    title: {
+      type: String,
+      default: 'Convenient shuttle bus service',
+    },
+
+    description: {
+      type: String,
+      default: '',
+    },
+
+    contribution: {
+      type: String,
+      default: 'Backend, Infrastructure, Mobile Apps',
+    },
+
+    alt: {
+      type: String,
+      default: 'GoDee Bus Transportation Services Logo.',
     },
   },
 
   computed: {
     colorTheme() {
-      if (this.project.projectName === 'sjmc' || this.project.projectName === 'guardrails') {
-        return 'single-project_white-letters-theme'
-      }
+      if (this.name === 'sjmc' || this.name === 'guardrails') return 'single-project_white-letters-theme'
       return 'single-project_black-letters-theme'
     },
 
     backgroundModifierClasses() {
-      return this.project.projectName === 'guardrails' ? 'single-project__background_guardrails' : ''
+      return this.name === 'guardrails' ? 'single-project__background_guardrails' : ''
     },
   },
 }
@@ -255,6 +295,58 @@ export default {
 
   &_black-letters-theme {
     color: $text-color--black-lighter;
+  }
+}
+
+.contribution-widget {
+  display: flex;
+  align-items: self-start;
+  position: relative;
+  z-index: 1;
+  color: $text-color--grey;
+  font-family: 'Poppins-Regular', sans-serif;
+  margin-top: 26px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 14px;
+  }
+
+  @media screen and (max-width: 650px) {
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  @media screen and (max-width: 608px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__img {
+    width: 20px;
+    height: 18px;
+    margin-top: 2px;
+  }
+
+  &__content {
+    margin-left: 8px;
+
+    &_godee,
+    &_nambafood {
+      color: $text-color--black;
+    }
+
+    &_guardrails,
+    &_sjmc {
+      color: $text-color--white-darken;
+    }
   }
 }
 </style>
