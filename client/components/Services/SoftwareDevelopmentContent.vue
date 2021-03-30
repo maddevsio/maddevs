@@ -22,9 +22,9 @@
 </template>
 
 <script>
-import UIParagraph from '@/components/services/UIParagraph'
-import UITitle from '@/components/services/UITitle'
-import UISubtitle from '@/components/services/UISubtitle'
+import UIParagraph from '@/components/Services/UIParagraph'
+import UITitle from '@/components/Services/UITitle'
+import UISubtitle from '@/components/Services/UISubtitle'
 import SoftwareDevelopmentIcons from '@/components/Services/SoftwareDevelopmentIcons'
 
 export default {
