@@ -5,7 +5,11 @@ describe('cardNinjaSushi', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(CardNinjaSushi)
+    wrapper = mount(CardNinjaSushi, {
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
+    })
   })
 
   // ------ IMPORTANT ----- //

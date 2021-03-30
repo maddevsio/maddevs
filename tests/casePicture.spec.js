@@ -20,6 +20,9 @@ describe('picture', () => {
   beforeEach(() => {
     wrapper = mount(Picture, {
       propsData: props,
+      mocks: {
+        getMediaFromS3: () => 's3 image url',
+      },
     })
   })
 

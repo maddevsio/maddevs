@@ -6,6 +6,9 @@ describe('cardGoDeePreview', () => {
 
   beforeEach(() => {
     wrapper = mount(CardGoDeePreview, {
+      mocks: {
+        getMediaFromS3: () => 's3 image url',
+      },
       propsData: {
         pictureFolder: 'godee',
         fileName: 'application-for-passengers-card',

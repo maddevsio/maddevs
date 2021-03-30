@@ -241,6 +241,9 @@ describe('namba food', () => {
     }
     wrapper = mount(NambaFood, {
       stubs: ['client-only', 'nuxt-link'],
+      mocks: {
+        getMediaFromS3: () => 's3 image url',
+      },
     })
   })
 

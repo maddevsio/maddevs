@@ -3,7 +3,11 @@
     <HeaderMain />
     <main id="case-scroll-container" ref="main" class="case case_parallax">
       <div class="case_content-layer p-48_bottom media-p-24_bottom">
-        <CaseHeader logo="godee" video-name="godee-case-main-video.mp4">
+        <CaseHeader
+          logo="godee"
+          video-name="/videos/godee-case-main-video.mp4"
+          video-fallback-path="/images/Cases/godee/jpg/godee-case-preview.jpg"
+        >
           <h1 slot="title" class="case_header-title">
             Convenient shuttle <br />
             bus service
@@ -35,7 +39,10 @@
       </div>
       <div class="case_parallax-layer">
         <div class="case_parallax-image-wrapper">
-          <div class="case_parallax-image"></div>
+          <div
+            class="case_parallax-image"
+            :style="{ backgroundImage: `url(${getMediaFromS3('/images/Cases/godee/jpg/parallax.jpg')})` }"
+          ></div>
         </div>
       </div>
       <div class="case_content-layer p-48_top media-p-24_top">
@@ -293,7 +300,7 @@
                 alt="GoDee: Safari Browser Top Bar White."
               />
               <img
-                src="../../assets/img/Cases/godee/jpg/trip-request-map.jpg"
+                :src="getMediaFromS3('/images/Cases/godee/jpg/trip-request-map.jpg')"
                 class="case_img"
                 alt="Trip Request Map"
                 loading="lazy"
@@ -351,7 +358,7 @@
                 alt="GoDee: Safari Browser Top Bar White."
               />
               <img
-                src="../../assets/img/Cases/godee/jpg/trip-monitor.jpg"
+                :src="getMediaFromS3('/images/Cases/godee/jpg/trip-monitor.jpg')"
                 class="case_img"
                 alt="Trip Monitor"
                 loading="lazy"
@@ -411,7 +418,7 @@
                 alt="GoDee: Safari Browser Top Bar White."
               />
               <img
-                src="../../assets/img/Cases/godee/jpg/route-optimization.jpg"
+                :src="getMediaFromS3('/images/Cases/godee/jpg/route-optimization.jpg')"
                 class="case_img"
                 alt="Route Optimization"
                 loading="lazy"
@@ -499,7 +506,7 @@
           <section class="container_middle">
             <h2 class="case_title_h2 m-24_bottom case_text-align-center">Infrastructure scheme</h2>
             <img
-              src="../../assets/img/Cases/godee/gif/infrastructure-scheme.gif"
+              :src="getMediaFromS3('/images/Cases/godee/gif/infrastructure-scheme.gif')"
               class="case_gif case_infrastructure-scheme-gif"
               alt="GoDee Mobile App Infrastructure Scheme."
               loading="lazy"

@@ -1,10 +1,4 @@
 .case {
-  &_header {
-    &:before {
-      background-image: url("../../assets/img/Cases/godee/jpg/godee-case-preview.jpg");
-    }
-  }
-
   &_godee-logo {
     @include godee-logo;
     width: 292px;
@@ -157,7 +151,6 @@
     left: -5px;
     right: 0;
     bottom: 0;
-    background: url('../../assets/img/Cases/godee/jpg/parallax.jpg');
     background-size: cover;
     background-position: center;
     -webkit-transform: translateZ(-300px) scale(2);

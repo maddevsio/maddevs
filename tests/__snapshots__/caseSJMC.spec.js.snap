@@ -8,6 +8,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
     class="case_header"
     id="case-header"
   >
+    <div
+      class="case_main-video_fallback"
+    />
+     
     <video
       autoplay="autoplay"
       class="case_main-video"
@@ -15,7 +19,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       muted="muted"
     >
       <source
-        src="undefined/sjmc/sjmc-main-video.b35a387.mp4"
+        src="s3 image url"
         type="video/mp4"
       />
       
@@ -88,11 +92,11 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         class="main-video"
       >
         <source
-          src="undefined/sjmc/sjmc-modal-video.00bd869.mp4"
+          src="s3 image url"
           type="video/mp4"
         />
         
-      Your browser does not support the video tag.
+      Your browser does not support the video tag!!!.
     
       </video>
     </div>
@@ -204,7 +208,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <picture>
         <source
           class="image"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="s3 image url ,s3 image url 2x"
           type="image/webp"
         />
          
@@ -213,8 +217,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="image"
           height="0"
           loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="s3 image url"
+          srcset="s3 image url 2x"
           width="0"
         />
       </picture>
@@ -312,7 +316,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         <picture>
           <source
             class="image"
-            srcset="[object Object] ,[object Object] 2x"
+            srcset="s3 image url ,s3 image url 2x"
             type="image/webp"
           />
            
@@ -321,8 +325,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             class="image"
             height="0"
             loading="lazy"
-            src="[object Object]"
-            srcset="[object Object] 2x"
+            src="s3 image url"
+            srcset="s3 image url 2x"
             width="0"
           />
         </picture>
@@ -438,7 +442,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         <picture>
           <source
             class="image"
-            srcset="[object Object] ,[object Object] 2x"
+            srcset="s3 image url ,s3 image url 2x"
             type="image/webp"
           />
            
@@ -447,8 +451,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             class="image"
             height="0"
             loading="lazy"
-            src="[object Object]"
-            srcset="[object Object] 2x"
+            src="s3 image url"
+            srcset="s3 image url 2x"
             width="0"
           />
         </picture>
@@ -503,7 +507,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <picture>
         <source
           class="image"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="s3 image url ,s3 image url 2x"
           type="image/webp"
         />
          
@@ -512,8 +516,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="image"
           height="0"
           loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="s3 image url"
+          srcset="s3 image url 2x"
           width="0"
         />
       </picture>
@@ -550,7 +554,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <picture>
         <source
           class="image"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="s3 image url ,s3 image url 2x"
           type="image/webp"
         />
          
@@ -559,8 +563,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="image"
           height="0"
           loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="s3 image url"
+          srcset="s3 image url 2x"
           width="0"
         />
       </picture>
@@ -596,7 +600,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         <img
           alt="WATCHOUT - Multi-Display Production and Presentation Software."
           class="case_gif"
-          src="../../assets/img/Cases/sjmc/gif/watchpax.gif"
+          src="s3 image url"
         />
       </section>
     </section>
@@ -630,7 +634,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         <img
           alt="Ultra-Compact Multimedia Computer - BRIX."
           class="case_gif"
-          src="../../assets/img/Cases/sjmc/gif/brix.gif"
+          src="s3 image url"
         />
       </section>
     </section>
@@ -669,18 +673,25 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <div
         class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video"
       >
+        <div
+          class="case_sjmc-phone-video-wrapper_fallback"
+        />
+         
         <video
           height="100%"
           playsinline=""
           width="100%"
         >
           <source
-            src="undefined/bluetooth-beacons-video.9ca649c.mp4"
+            src="s3 image url"
             type="video/mp4"
           />
           
           Your browser does not support the video tag.
-        
+          
+          <img
+            src="s3 image url"
+          />
         </video>
       </div>
     </section>
@@ -1087,7 +1098,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -1096,8 +1107,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -1108,7 +1119,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -1117,8 +1128,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -1129,7 +1140,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -1138,8 +1149,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -1150,7 +1161,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -1159,8 +1170,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -1171,7 +1182,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -1180,8 +1191,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -1192,7 +1203,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -1201,8 +1212,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -1231,7 +1242,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -1240,8 +1251,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -1252,7 +1263,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -1261,8 +1272,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -1273,7 +1284,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -1282,8 +1293,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -1294,7 +1305,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -1303,8 +1314,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -1315,7 +1326,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -1324,8 +1335,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -1336,7 +1347,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -1345,8 +1356,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -1438,7 +1449,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <picture>
         <source
           class="image box-shadow"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="s3 image url ,s3 image url 2x"
           type="image/webp"
         />
          
@@ -1447,8 +1458,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="image box-shadow"
           height="0"
           loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="s3 image url"
+          srcset="s3 image url 2x"
           width="0"
         />
       </picture>
@@ -1570,7 +1581,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <picture>
             <source
               class="image"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -1579,8 +1590,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="image"
               height="0"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="0"
             />
           </picture>
@@ -1599,7 +1610,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -1608,8 +1619,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -1620,7 +1631,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -1629,8 +1640,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -1659,7 +1670,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -1668,8 +1679,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -1680,7 +1691,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -1689,8 +1700,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -1746,7 +1757,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <picture>
         <source
           class="image box-shadow"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="s3 image url ,s3 image url 2x"
           type="image/webp"
         />
          
@@ -1755,8 +1766,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="image box-shadow"
           height="0"
           loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="s3 image url"
+          srcset="s3 image url 2x"
           width="0"
         />
       </picture>
@@ -1956,7 +1967,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -1965,8 +1976,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -1977,7 +1988,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -1986,8 +1997,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -1998,7 +2009,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -2007,8 +2018,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -2019,7 +2030,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -2028,8 +2039,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -2040,7 +2051,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -2049,8 +2060,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -2079,7 +2090,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -2088,8 +2099,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -2100,7 +2111,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -2109,8 +2120,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -2121,7 +2132,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -2130,8 +2141,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -2142,7 +2153,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -2151,8 +2162,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -2163,7 +2174,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -2172,8 +2183,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -2248,7 +2259,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2257,8 +2268,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2287,7 +2298,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2296,8 +2307,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2326,7 +2337,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2335,8 +2346,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2365,7 +2376,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2374,8 +2385,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2404,7 +2415,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2413,8 +2424,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2443,7 +2454,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2452,8 +2463,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2482,7 +2493,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2491,8 +2502,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2521,7 +2532,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2530,8 +2541,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2560,7 +2571,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2569,8 +2580,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2599,7 +2610,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2608,8 +2619,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2638,7 +2649,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2647,8 +2658,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2677,7 +2688,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2686,8 +2697,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2759,7 +2770,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <picture>
               <source
                 class="image"
-                srcset="[object Object] ,[object Object] 2x"
+                srcset="s3 image url ,s3 image url 2x"
                 type="image/webp"
               />
                
@@ -2768,8 +2779,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="image"
                 height="0"
                 loading="lazy"
-                src="[object Object]"
-                srcset="[object Object] 2x"
+                src="s3 image url"
+                srcset="s3 image url 2x"
                 width="0"
               />
             </picture>

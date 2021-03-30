@@ -5,7 +5,11 @@ describe('cardsBusinessModelsGrid', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(CardsBusinessModelsGrid)
+    wrapper = mount(CardsBusinessModelsGrid, {
+      mocks: {
+        getMediaFromS3: () => 's3 image url',
+      },
+    })
   })
 
   // ------ IMPORTANT ----- //

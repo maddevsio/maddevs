@@ -14,7 +14,7 @@ exports[`text quote author renders correctly 1`] = `
       <picture>
         <source
           class="image"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="s3 image url ,s3 image url 2x"
           type="image/webp"
         />
          
@@ -23,8 +23,8 @@ exports[`text quote author renders correctly 1`] = `
           class="image"
           height="0"
           loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="s3 image url"
+          srcset="s3 image url 2x"
           width="0"
         />
       </picture>

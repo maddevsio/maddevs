@@ -1,6 +1,10 @@
 <template>
   <main class="main case">
-    <CaseHeader logo="sjmc" video-name="sjmc/sjmc-main-video.b35a387.mp4">
+    <CaseHeader
+      logo="sjmc"
+      video-name="/videos/sjmc/sjmc-main-video.b35a387.mp4"
+      video-fallback-path="/images/Cases/sjmc/jpg/sjmc-main-video-preview.jpg"
+    >
       <h1 slot="title" class="case_header-title">
         Sir John Monash <br />
         Centre
@@ -209,7 +213,7 @@
       <section class="container_full background-color-silver">
         <section class="container_middle">
           <img
-            src="../../assets/img/Cases/sjmc/gif/watchpax.gif"
+            :src="getMediaFromS3('/images/Cases/sjmc/gif/watchpax.gif')"
             class="case_gif"
             alt="WATCHOUT - Multi-Display Production and Presentation Software."
           />
@@ -226,7 +230,7 @@
       <section class="container_full background-color-silver">
         <section class="container_middle">
           <img
-            src="../../assets/img/Cases/sjmc/gif/brix.gif"
+            :src="getMediaFromS3('/images/Cases/sjmc/gif/brix.gif')"
             class="case_gif"
             alt="Ultra-Compact Multimedia Computer - BRIX."
           />
@@ -249,9 +253,20 @@
           class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video"
           @click="videoSetState"
         >
+          <!-- Video fallback -->
+          <div
+            class="case_sjmc-phone-video-wrapper_fallback"
+            :style="{
+              backgroundImage: `url(${getMediaFromS3(
+                '/images/Cases/sjmc/png/bluetooth-beacons-video-background.png',
+              )})`,
+            }"
+          ></div>
+          <!-- End video fallback -->
           <video ref="video" width="100%" height="100%" playsinline>
             <source :src="getMediaFromS3('/videos/bluetooth-beacons-video.9ca649c.mp4')" type="video/mp4" />
             Your browser does not support the video tag.
+            <img :src="getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')" />
           </video>
         </div>
       </section>
