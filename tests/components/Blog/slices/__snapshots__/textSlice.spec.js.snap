@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`text slice component is a Vue instance 1`] = `
+<div>
+  <div
+    class="post-part single"
+  >
+    <prismic-rich-text-stub
+      class="textslice"
+      field="[object Object]"
+    />
+  </div>
+</div>
+`;
