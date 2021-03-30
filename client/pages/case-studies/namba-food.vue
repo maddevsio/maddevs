@@ -1,6 +1,6 @@
 <template>
   <main class="main case">
-    <CaseHeader logo="nambafood" video-name="main.ef19480.mp4">
+    <CaseHeader :header-logo="headerLogo" video-name="main.ef19480.mp4">
       <h1 slot="title" class="case_header-title">Namba Food</h1>
       <p slot="description" class="case_header-description">
         Mad Devs created the Namba Food delivery service from scratch. The solution <br />
@@ -535,13 +535,13 @@ import ListItemDot from '@/components/Cases/ListItemDot'
 import ListTechnologies from '@/components/Cases/ListTechnologies'
 import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
 import Card from '@/components/Cases/Card'
-import CardUseCase from '@/components/Cases/cards-content/CardUseCase'
-import CardsBusinessModelsGrid from '@/components/Cases/cards-content/CardsBusinessModelsGrid'
+import CardUseCase from '@/components/Cases/cards/namba-food/CardUseCase'
+import CardsBusinessModelsGrid from '@/components/Cases/cards/namba-food/CardsBusinessModelsGrid'
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
-import CardDeliveryServiceNambafood from '@/components/Cases/cards-content/CardDeliveryServiceNambafood'
-import CardRestaurantTalisman from '@/components/Cases/cards-content/CardRestaurantTalisman'
-import CardNationwideNumbers from '@/components/Cases/cards-content/CardNationwideNumbers'
-import CardNinjaSushi from '@/components/Cases/cards-content/CardNinjaSushi'
+import CardDeliveryServiceNambafood from '@/components/Cases/cards/namba-food/CardDeliveryServiceNambafood'
+import CardRestaurantTalisman from '@/components/Cases/cards/namba-food/CardRestaurantTalisman'
+import CardNationwideNumbers from '@/components/Cases/cards/namba-food/CardNationwideNumbers'
+import CardNinjaSushi from '@/components/Cases/cards/namba-food/CardNinjaSushi'
 import Swiper from '@/components/Cases/Swiper'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoad'
@@ -808,6 +808,13 @@ export default {
 
       videoIdList: ['map-video', 'iphone-silver-video'],
       isIphone: false,
+      headerLogo: {
+        width: 259,
+        height: 82,
+        pictureFolder: 'nambafood',
+        fileName: 'nambafood-logo',
+        alt: '',
+      },
     }
   },
 

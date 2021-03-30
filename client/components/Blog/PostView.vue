@@ -426,10 +426,6 @@ export default {
         background-color: $bgcolor--white-primary;
       }
     }
-
-    /deep/ .blog-post__cover-image {
-      height: 220px;
-    }
   }
 }
 
@@ -461,6 +457,7 @@ export default {
     &__introduction-paragraph,
     &__text-container {
       padding: 0 24px;
+      word-break: break-word;
     }
 
     &__recommended-posts-list {
@@ -483,10 +480,6 @@ export default {
 
       /deep/ .blog-post-meta {
         display: none;
-      }
-
-      /deep/ .blog-post__cover-image {
-        height: 50.2vw;
       }
     }
 
