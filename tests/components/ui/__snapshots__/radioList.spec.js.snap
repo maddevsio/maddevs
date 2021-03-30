@@ -1,60 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`radio buttons list renders correctly 1`] = `
-<div
-  class="radio-buttons"
->
+exports[`radio buttons list should correctly render 1`] = `
+<div>
   <div
-    class="radio-buttons__field-name field-name required"
+    class="radio-buttons"
   >
-    field name
-  </div>
-   
-  <div
-    class="radio-buttons__radio-list"
-  >
-    <label
-      class="radio-buttons__radio-label"
-      for="digital-ocean-input id"
+    <div
+      class="radio-buttons__field-name field-name required"
     >
-      <input
-        class="radio-buttons__radio-input"
-        id="digital-ocean-input id"
-        name="input id"
-        type="radio"
-      />
-       
-      <span
-        class="radio-buttons__checkmark-radio"
-      />
-       
-      <p
-        class="radio-buttons__radio-text_item"
-      >
-        Digital Ocean
-      </p>
-    </label>
-    <label
-      class="radio-buttons__radio-label"
-      for="other-input id"
+      field name
+    </div>
+     
+    <div
+      class="radio-buttons__radio-list"
     >
-      <input
-        class="radio-buttons__radio-input"
-        id="other-input id"
-        name="input id"
-        type="radio"
-      />
-       
-      <span
-        class="radio-buttons__checkmark-radio"
-      />
-       
-      <p
-        class="radio-buttons__radio-text_item"
+      <label
+        class="radio-buttons__radio-label"
+        for="digital-ocean-input id"
       >
-        Other
-      </p>
-    </label>
+        <input
+          class="radio-buttons__radio-input"
+          data-testid="test-radio-buttons"
+          id="digital-ocean-input id"
+          name="input id"
+          type="radio"
+        />
+         
+        <span
+          class="radio-buttons__checkmark-radio"
+        />
+         
+        <p
+          class="radio-buttons__radio-text_item"
+        >
+          Digital Ocean
+        </p>
+      </label>
+      <label
+        class="radio-buttons__radio-label"
+        for="other-input id"
+      >
+        <input
+          class="radio-buttons__radio-input"
+          data-testid="test-radio-buttons"
+          id="other-input id"
+          name="input id"
+          type="radio"
+        />
+         
+        <span
+          class="radio-buttons__checkmark-radio"
+        />
+         
+        <p
+          class="radio-buttons__radio-text_item"
+        >
+          Other
+        </p>
+      </label>
+    </div>
   </div>
 </div>
 `;

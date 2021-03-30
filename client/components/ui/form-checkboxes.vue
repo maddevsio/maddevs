@@ -51,11 +51,6 @@ export default {
     discountOffersCheckboxChangeState(e) {
       this.$emit('getDiscountOffersCheckboxState', e.target.checked)
     },
-
-    reset() {
-      this.$refs.privacyPolicy.checked = false
-      this.$refs.marketingCommunications.checked = false
-    },
   },
 }
 </script>

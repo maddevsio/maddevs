@@ -11,6 +11,7 @@
         <input
           :id="`${option.id}-${inputId}`"
           :name="inputId"
+          data-testid="test-radio-buttons"
           class="radio-buttons__radio-input"
           type="radio"
           @click="sendSelectedValue(option.text)"

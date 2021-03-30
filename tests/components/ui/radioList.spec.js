@@ -1,9 +1,7 @@
-import { mount } from '@vue/test-utils'
-
 import RadioList from '@/components/ui/radio-list'
+import { fireEvent, render, screen } from '@testing-library/vue'
 
 describe('radio buttons list', () => {
-  let wrapper
   const props = {
     inputId: 'input id',
     emitMethodName: 'methodName',
@@ -21,54 +19,25 @@ describe('radio buttons list', () => {
     ],
   }
 
-  beforeEach(() => {
-    wrapper = mount(RadioList, {
-      propsData: props,
+  it('should correctly render', async () => {
+    const { container } = render(RadioList, {
+      props,
     })
+
+    expect(container).toMatchSnapshot()
   })
 
-  // ------ IMPORTANT ----- //
-  it("is Vue's instance", () => {
-    expect(wrapper.exists()).toBeTruthy()
-  })
+  it('should correctly call function on click', async () => {
+    const { emitted } = render(RadioList, {
+      props,
+    })
 
-  it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot()
-  })
-  // --------------------- //
+    const elements = screen.getAllByTestId('test-radio-buttons')
+    fireEvent.click(elements[0])
+    fireEvent.click(elements[1])
 
-  it('has a functions', () => {
-    expect(typeof RadioList.methods.sendSelectedValue).toBe('function')
-  })
-
-  it('correctly props data', () => {
-    expect(wrapper.props().inputId).toBe(props.inputId)
-    expect(wrapper.props().emitMethodName).toBe(props.emitMethodName)
-    expect(wrapper.props().fieldName).toBe(props.fieldName)
-    expect(wrapper.props().sectionIsRequired).toBe(props.sectionIsRequired)
-    expect(wrapper.props().options).toBe(props.options)
-  })
-
-  it('options must contain three elements', () => {
-    expect(wrapper.vm.$props.options).toHaveLength(2)
-  })
-
-  it('correctly length of elements in DOM', () => {
-    const contentItems = wrapper.findAll('.radio-buttons__radio-label')
-    expect(contentItems).toHaveLength(2)
-  })
-
-  it('emits called with arguments', () => {
-    const selectedValue = 'Digital Ocean'
-
-    wrapper.vm.sendSelectedValue(selectedValue)
-
-    expect(wrapper.emitted()).toBeTruthy()
-    expect(wrapper.emitted()[props.emitMethodName]).toEqual([[selectedValue]])
-  })
-
-  it('has class if sectionIsRequired equal true', () => {
-    const div = wrapper.find('.radio-buttons__field-name')
-    expect(div.classes()).toContain('required')
+    expect(emitted().methodName).toHaveLength(2)
+    expect(emitted().methodName[0][0]).toBe(props.options[0].text)
+    expect(emitted().methodName[1][0]).toBe(props.options[1].text)
   })
 })
