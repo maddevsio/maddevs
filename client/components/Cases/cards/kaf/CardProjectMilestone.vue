@@ -99,5 +99,22 @@ export default {
     margin-right: 30px;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+
+    &_lottie {
+      min-width: 51px;
+      max-width: 51px;
+      height: 51px;
+      margin-right: 0;
+    }
+
+    &_title {
+      margin-top: 16px;
+    }
+  }
 }
 </style>

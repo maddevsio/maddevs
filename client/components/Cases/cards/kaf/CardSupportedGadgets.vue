@@ -133,6 +133,12 @@ export default {
     }
   }
 
+  @media screen and (min-width: 375px) and (max-width: 870px) {
+    &_gadget-picture-wrapp-mobile-iphonex {
+      max-width: 260px;
+    }
+  }
+
   @media screen and (max-width: 375px) {
     height: 350px;
     align-items: flex-start;
