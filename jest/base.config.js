@@ -14,10 +14,11 @@ module.exports = {
     // process js with `babel-jest`
     '^.+\\.js$': '<rootDir>/node_modules/babel-jest',
     // process `*.vue` files with `vue-jest`
-    '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest',
+    '^[^.]+.vue$': '<rootDir>/node_modules/vue-jest',
     // process `*.svg` files with `imgTransform.js`
     '\\.(svg|png|webp|jpg)$': '<rootDir>/jest/imgTransformer.js',
   },
+  transformIgnorePatterns: [`/node_modules/(?!vue-lottie)`],
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
   collectCoverage: true,
   collectCoverageFrom: [
@@ -27,4 +28,5 @@ module.exports = {
   ],
   coveragePathIgnorePatterns: ['<rootDir>/server/db', '<rootDir>/server/routes', '<rootDir>/server/index.js'],
   coverageReporters: ['json-summary', 'text', 'lcov'],
+  setupFiles: ['jest-canvas-mock'],
 }
