@@ -36,7 +36,7 @@
           its audience sharing new feature requests for Mad Devs.
         </TextParagraph>
         <div class="m-96_bottom media-m-48_bottom">
-          <Card class="background-color-purple" padding="32px 20px">
+          <Card class="background-color-purple-dark" padding="32px 20px">
             <CardProjectInNumbers />
           </Card>
         </div>
@@ -47,8 +47,10 @@
           The platform is available on any device and remains equally friendly to both web and mobile users. Since 2016,
           the project has been continuously improving to provide more options for each category of viewers.
         </TextParagraph>
-        <div class="m-107_bottom media-m-68_bottom">
-          <!-- Карточки -->
+        <div class="m-107_bottom media-m-68_bottom case_supported-gadgets">
+          <Card v-for="(gadget, i) in supportedGadgets" :key="i" :class="`background-color-${gadget.cardColor}`">
+            <CardSupportedGadgets :gadget="gadget" />
+          </Card>
         </div>
       </section>
       <section class="container_regular">
@@ -241,6 +243,7 @@ import List from '@/components/Cases/List'
 import ListHyphenItemBox from '@/components/Cases/ListHyphenItemBox'
 import Card from '@/components/Cases/Card'
 import CardProjectInNumbers from '@/components/Cases/cards/kaf/CardProjectInNumbers'
+import CardSupportedGadgets from '@/components/Cases/cards/kaf/CardSupportedGadgets'
 
 export default {
   name: 'KafCase',
@@ -254,6 +257,7 @@ export default {
     ListHyphenItemBox,
     CardProjectInNumbers,
     Card,
+    CardSupportedGadgets,
   },
 
   data() {
@@ -265,6 +269,33 @@ export default {
         fileName: 'kaf-logo',
         alt: '',
       },
+
+      supportedGadgets: [
+        {
+          title: 'Laptops',
+          width: 735,
+          height: 449,
+          fileName: 'macbook-pro',
+          alt: 'Laptops',
+          cardColor: 'purple-light',
+        },
+        {
+          title: 'Smartphones',
+          width: 312,
+          height: 627,
+          fileName: 'iphonex',
+          alt: 'Smartphones',
+          cardColor: 'black-primary-bg',
+        },
+        {
+          title: 'Tablets',
+          width: 518,
+          height: 374,
+          fileName: 'ipad-pro',
+          alt: 'Tablets',
+          cardColor: 'purple-dark',
+        },
+      ],
     }
   },
 }
