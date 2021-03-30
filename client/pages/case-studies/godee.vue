@@ -3,7 +3,7 @@
     <HeaderMain />
     <main id="case-scroll-container" ref="main" class="case case_parallax">
       <div class="case_content-layer p-48_bottom media-p-24_bottom">
-        <CaseHeader logo="godee" video-name="godee-case-main-video.mp4">
+        <CaseHeader :header-logo="headerLogo" video-name="godee-case-main-video.mp4">
           <h1 slot="title" class="case_header-title">
             Convenient shuttle <br />
             bus service
@@ -637,12 +637,12 @@ import ListTechnologies from '@/components/Cases/ListTechnologies'
 import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
 import Card from '@/components/Cases/Card'
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
-import CardIssuesGoDee from '@/components/Cases/cards-content/CardIssuesGoDee'
-import CardSolutionGoDee from '@/components/Cases/cards-content/CardSolutionGoDee'
-import CardGoDeeFeature from '@/components/Cases/cards-content/CardGoDeeFeature'
-import CardGoDeePreview from '@/components/Cases/cards-content/CardGoDeePreview'
-import CardGoDeeImpact from '@/components/Cases/cards-content/CardGoDeeImpact'
-import CardGoDeePrimsAlgorithm from '@/components/Cases/cards-content/CardGoDeePrimsAlgorithm'
+import CardIssuesGoDee from '@/components/Cases/cards/godee/CardIssuesGoDee'
+import CardSolutionGoDee from '@/components/Cases/cards/godee/CardSolutionGoDee'
+import CardGoDeeFeature from '@/components/Cases/cards/godee/CardGoDeeFeature'
+import CardGoDeePreview from '@/components/Cases/cards/godee/CardGoDeePreview'
+import CardGoDeeImpact from '@/components/Cases/cards/godee/CardGoDeeImpact'
+import CardGoDeePrimsAlgorithm from '@/components/Cases/cards/godee/CardGoDeePrimsAlgorithm'
 import FooterMain from '@/components/Footer'
 import HeaderMain from '@/components/Header'
 import BeforeAfterImage from '@/components/ui/BeforeAfterImage'
@@ -884,6 +884,13 @@ export default {
       headerHeight: 62,
       heightHasBeenSet: false,
       currentYear: new Date().getFullYear(),
+      headerLogo: {
+        width: 293,
+        height: 130,
+        pictureFolder: 'godee',
+        fileName: 'godee-logo',
+        alt: '',
+      },
     }
   },
 
