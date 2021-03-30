@@ -133,7 +133,7 @@ import UIRadioButtons from '@/components/shared/UIRadioButtons'
 import SuccessModal from '@/components/core/modals/Success'
 
 export default {
-  name: 'CareersForm',
+  name: 'Careers',
   components: {
     FileInput,
     Button,

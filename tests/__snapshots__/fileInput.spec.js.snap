@@ -24,6 +24,7 @@ exports[`fileInput component renders correctly 1`] = `
   >
     
     find attached my CV
+  
   </label>
 </div>
 `;

@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import CaseStudies from '@/components/About/CaseStudies'
+import CaseStudies from '@/components/core/CaseStudies'
 
 describe('caseStudies component', () => {
   let wrapper

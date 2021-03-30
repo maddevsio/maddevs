@@ -1,26 +1,24 @@
 import { mount } from '@vue/test-utils'
 
-import SingleProject from '@/components/About/SingleProject'
+import SingleProject from '@/components/core/SingleProject'
 
 describe('caseStudies component', () => {
   let wrapper
   let props = {
-    project: {
-      projectName: 'godee',
-      logoImg: 'godee-icon',
-      logoWidth: 121,
-      maddevsLogo: 'md-logo-black',
-      link: '/case-studies/godee/',
-      targetBlank: false,
-      projectBackground: 'godeeBackground',
-      fileExtension: 'png',
-      projectColor: '#ff6A01',
-      projectTitle: 'Convenient shuttle bus service',
-      projectDescription:
-        'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
-      contribution: 'Backend, Infrastructure, Mobile Apps',
-      alt: 'GoDee Bus Transportation Services Logo.',
-    },
+    name: 'godee',
+    logo: 'godee-icon',
+    logoWidth: 121,
+    mdLogo: 'md-logo-black',
+    link: '/case-studies/godee/',
+    isBlank: false,
+    background: 'godeeBackground',
+    extension: 'png',
+    color: '#ff6A01',
+    title: 'Convenient shuttle bus service',
+    description:
+      'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
+    contribution: 'Backend, Infrastructure, Mobile Apps',
+    alt: 'GoDee Bus Transportation Services Logo.',
   }
 
   beforeEach(() => {
@@ -39,10 +37,8 @@ describe('caseStudies component', () => {
 
   it('.single-project__container should contain single-project_white-letters-theme class if colorTheme computed value will be true', () => {
     props = {
-      project: {
-        ...props.project,
-        projectName: 'sjmc',
-      },
+      ...props,
+      name: 'sjmc',
     }
 
     wrapper = mount(SingleProject, {
@@ -55,10 +51,8 @@ describe('caseStudies component', () => {
 
   it('.single-project__container should not contain single-project_white-letters-theme class if colorTheme computed value will be false', () => {
     props = {
-      project: {
-        ...props.project,
-        projectName: 'nambafood',
-      },
+      ...props,
+      name: 'nambafood',
     }
 
     wrapper = mount(SingleProject, {
@@ -70,15 +64,13 @@ describe('caseStudies component', () => {
   })
 
   it('shoud pass correct props', () => {
-    expect(wrapper.props().project).toStrictEqual(props.project)
+    expect(wrapper.props()).toStrictEqual(props)
   })
 
   it('shoud add single-project__background_guardrails class to .single-project__background if projectName will be guardrails', () => {
     props = {
-      project: {
-        ...props.project,
-        projectName: 'guardrails',
-      },
+      ...props,
+      name: 'guardrails',
     }
 
     wrapper = mount(SingleProject, {
@@ -90,10 +82,8 @@ describe('caseStudies component', () => {
 
   it('should not add class for card if projectName not equal guardrails', () => {
     props = {
-      project: {
-        ...props.project,
-        projectName: 'godee',
-      },
+      ...props,
+      name: 'godee',
     }
 
     wrapper = mount(SingleProject, {

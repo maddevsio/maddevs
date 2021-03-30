@@ -1703,8 +1703,8 @@ exports[`index page renders correctly 1`] = `
                   class="contribution-widget__content contribution-widget__content_nambafood"
                 >
                   
-    contribution: Backend, Infrastructure, Frontend
-  
+          contribution: Backend, Infrastructure, Frontend
+        
                 </span>
               </div>
             </div>
@@ -1782,8 +1782,8 @@ exports[`index page renders correctly 1`] = `
                   class="contribution-widget__content contribution-widget__content_sjmc"
                 >
                   
-    contribution: Backend, Infrastructure, Frontend
-  
+          contribution: Backend, Infrastructure, Frontend
+        
                 </span>
               </div>
             </div>
@@ -1861,8 +1861,8 @@ exports[`index page renders correctly 1`] = `
                   class="contribution-widget__content contribution-widget__content_guardrails"
                 >
                   
-    contribution: Backend, Infrastructure, Frontend
-  
+          contribution: Backend, Infrastructure, Frontend
+        
                 </span>
               </div>
             </div>
@@ -1940,8 +1940,8 @@ exports[`index page renders correctly 1`] = `
                   class="contribution-widget__content contribution-widget__content_godee"
                 >
                   
-    contribution: Backend, Infrastructure, Mobile Apps
-  
+          contribution: Backend, Infrastructure, Mobile Apps
+        
                 </span>
               </div>
             </div>

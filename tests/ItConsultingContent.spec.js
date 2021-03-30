@@ -9,7 +9,7 @@ describe('itConsultingContent component', () => {
       stubs: ['client-only'],
       propsData: {
         title: 'Title',
-        subTitle: 'Sub title',
+        subtitle: 'Sub title',
         paragraph: 'Paragraph',
       },
     })
@@ -25,7 +25,7 @@ describe('itConsultingContent component', () => {
 
   it('correctly passed props data', () => {
     expect(wrapper.props().title).toBe('Title')
-    expect(wrapper.props().subTitle).toBe('Sub title')
+    expect(wrapper.props().subtitle).toBe('Sub title')
     expect(wrapper.props().paragraph).toBe('Paragraph')
   })
 })

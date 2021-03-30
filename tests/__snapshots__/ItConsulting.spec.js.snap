@@ -19,6 +19,7 @@ exports[`itСonsulting component renders correctly 1`] = `
     >
       <div
         class="it-consulting-item col-xl-4 col-lg-4"
+        type="technology-stack"
       >
         <div
           class="it-consulting-item__text-content"
@@ -46,15 +47,15 @@ exports[`itСonsulting component renders correctly 1`] = `
               class="paragraph it-consulting-item__paragraph"
             >
               
-        We’ll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.
+        We'll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.
       
             </p>
           </client-only-stub>
         </div>
       </div>
-       
       <div
         class="it-consulting-item col-xl-4 col-lg-4"
+        type="process-audit"
       >
         <div
           class="it-consulting-item__text-content"
@@ -87,9 +88,9 @@ exports[`itСonsulting component renders correctly 1`] = `
           </client-only-stub>
         </div>
       </div>
-       
       <div
         class="it-consulting-item col-xl-4 col-lg-4"
+        type="team-headcount"
       >
         <div
           class="it-consulting-item__text-content"

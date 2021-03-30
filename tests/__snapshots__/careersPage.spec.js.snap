@@ -58,6 +58,7 @@ exports[`careers page renders correctly 1`] = `
           
             <span>
               <input
+                autofocus="autofocus"
                 class="careers__form-input careers__form-name-input"
                 placeholder="John Smith"
                 type="text"
@@ -231,6 +232,7 @@ exports[`careers page renders correctly 1`] = `
                   >
                     
     find attached my CV
+  
                   </label>
                 </div>
                  
@@ -244,9 +246,7 @@ exports[`careers page renders correctly 1`] = `
             id="careers-btn"
             type="submit"
           >
-            
-          I want to work for Mad Devs!
-        
+             I want to work for Mad Devs! 
           </button>
         </form>
       </div>

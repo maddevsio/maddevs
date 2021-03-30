@@ -1,5 +1,5 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils'
-import CareersForm from '@/components/Careers/CareersForm'
+import CareersForm from '@/components/Careers/Careers'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -42,12 +42,6 @@ describe('careersForm component', () => {
 
   it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot()
-  })
-
-  it('onFileChanged method should set correct position', () => {
-    const newPositionValue = null
-    CareersForm.methods.onFileChanged(newPositionValue)
-    expect(wrapper.vm.$data.positionValue).toStrictEqual(newPositionValue)
   })
 
   it('should rest values in data instances', () => {

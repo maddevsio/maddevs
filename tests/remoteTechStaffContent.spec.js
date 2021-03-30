@@ -8,9 +8,9 @@ describe('remote tech staff content', () => {
     wrapper = mount(RemoteTechStaffContent, {
       propsData: {
         title: 'Title',
-        subTitle: 'Sub title',
+        subtitle: 'Sub title',
         paragraph: 'Paragraph',
-        buttonInnerText: 'Button inner text',
+        buttonLabel: 'Button inner text',
       },
     })
   })
@@ -27,8 +27,8 @@ describe('remote tech staff content', () => {
 
   it('correctly props data', () => {
     expect(wrapper.props().title).toBe('Title')
-    expect(wrapper.props().subTitle).toBe('Sub title')
+    expect(wrapper.props().subtitle).toBe('Sub title')
     expect(wrapper.props().paragraph).toBe('Paragraph')
-    expect(wrapper.props().buttonInnerText).toBe('Button inner text')
+    expect(wrapper.props().buttonLabel).toBe('Button inner text')
   })
 })
