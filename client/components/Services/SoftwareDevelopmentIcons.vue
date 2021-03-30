@@ -12,7 +12,7 @@ export default {
   props: {
     icons: {
       type: Array,
-      default: Function,
+      default: () => [],
     },
   },
 }

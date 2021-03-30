@@ -3,24 +3,7 @@
     <div class="container">
       <h2 class="it-consulting__main-title">IT Consulting</h2>
       <div class="it-consulting__content row">
-        <ItConsultingContent
-          :title="TechnologyStack.title"
-          :sub-title="TechnologyStack.subTitle"
-          :paragraph="TechnologyStack.paragraph"
-          :class-name="TechnologyStack.className"
-        />
-        <ItConsultingContent
-          :title="ProcessAudit.title"
-          :sub-title="ProcessAudit.subTitle"
-          :paragraph="ProcessAudit.paragraph"
-          :class-name="ProcessAudit.className"
-        />
-        <ItConsultingContent
-          :title="TeamHeadcount.title"
-          :sub-title="TeamHeadcount.subTitle"
-          :paragraph="TeamHeadcount.paragraph"
-          :class-name="TeamHeadcount.className"
-        />
+        <ItConsultingContent v-for="type in consultungTypes" :key="type.type" v-bind="type" />
       </div>
       <UIModalTriggerButton
         label="Get expert advice"
@@ -41,6 +24,7 @@ import ItConsultingContent from '@/components/Services/ItConsultingContent'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import GetExpertAdviceModal from '@/components/core/modals/GetExpertAdvice'
 import Modal from '@/components/core/Modal'
+import { consultungTypes } from '@/data/itConsulting'
 
 export default {
   name: 'ItConsulting',
@@ -53,32 +37,7 @@ export default {
 
   data() {
     return {
-      TechnologyStack: {
-        title: 'Technology <br> Stack',
-        subTitle: 'Tired of the slow and <span>hard-to-maintain</span> technology that your previous team used?',
-        paragraph:
-          'We’ll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.',
-
-        className: 'first-item',
-      },
-
-      ProcessAudit: {
-        title: 'Process <br> Audit',
-        subTitle: 'Have to constantly deal with extended deadlines and <span>mess-ups?</span>',
-        paragraph:
-          'Your process probably just lacks transparency and reasonable control. We know how to avoid this and check who does what right now.',
-
-        className: 'second-item',
-      },
-
-      TeamHeadcount: {
-        title: 'Team <br> Headcount',
-        subTitle: 'Is your team too big or too small and therefore causing trouble?',
-        paragraph:
-          'Hire good people and get rid of underperformers. Easier said than done, right? Get assessments for the skills and seniority level of your staff. Our positively mad engineers and PMs know how to do this.',
-
-        className: 'third-item',
-      },
+      consultungTypes,
     }
   },
 }

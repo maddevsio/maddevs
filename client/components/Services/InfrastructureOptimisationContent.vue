@@ -4,7 +4,7 @@
       {{ title }}
     </UITitle>
     <UISubtitle :class="`content-item__sub-title-${className}`" class="content-item__sub-title">
-      {{ subTitle }}
+      {{ subtitle }}
     </UISubtitle>
     <UIParagraph class="content-item__paragraph">{{ paragraph }}</UIParagraph>
   </div>
@@ -16,7 +16,7 @@ import UITitle from '@/components/services/UITitle'
 import UISubtitle from '@/components/services/UISubtitle'
 
 export default {
-  name: 'InfrastructureContent',
+  name: 'InfrastructureOptimisationContent',
   components: {
     UITitle,
     UISubtitle,
@@ -29,7 +29,7 @@ export default {
       default: '',
     },
 
-    subTitle: {
+    subtitle: {
       type: String,
       default: '',
     },

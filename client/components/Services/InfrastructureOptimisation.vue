@@ -8,17 +8,10 @@
         </h2>
         <div class="infrastructure-optimisation__content">
           <div class="infrastructure-optimisation__text-content">
-            <InfrastructureContent
-              :title="whatMakes.title"
-              :sub-title="whatMakes.subTitle"
-              :paragraph="whatMakes.paragraph"
-              :class-name="whatMakes.className"
-            />
-            <InfrastructureContent
-              :title="upToSaving.title"
-              :sub-title="upToSaving.subTitle"
-              :paragraph="upToSaving.paragraph"
-              :class-name="upToSaving.className"
+            <InfrastructureOptimisationContent
+              v-for="item in infrastructureOptimisation"
+              :key="item.type"
+              v-bind="item"
             />
           </div>
           <UIModalTriggerButton
@@ -31,45 +24,30 @@
     </div>
 
     <Modal ref="infrastructureAuditModal">
-      <infrastructureAuditModal />
+      <InfrastructureAuditModal />
     </Modal>
   </section>
 </template>
 
 <script>
-import InfrastructureContent from '@/components/Services/InfrastructureContent'
+import InfrastructureOptimisationContent from '@/components/Services/InfrastructureOptimisationContent'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
-import infrastructureAuditModal from '@/components/core/modals/InfrastructureAudit'
+import InfrastructureAuditModal from '@/components/core/modals/InfrastructureAudit'
 import Modal from '@/components/core/Modal'
+import { infrastructureOptimisation } from '@/data/infrastructureOptimisation'
 
 export default {
   name: 'InfrastructureOptimisation',
   components: {
-    InfrastructureContent,
+    InfrastructureOptimisationContent,
     UIModalTriggerButton,
-    infrastructureAuditModal,
+    InfrastructureAuditModal,
     Modal,
   },
 
   data() {
     return {
-      whatMakes: {
-        title: 'What makes us stand out from others?',
-        subTitle: 'Optimising teams don’t care for tomorrow’s traffic peaks? We care!',
-        paragraph:
-          "We don't just have experience with infrastructure management tools, our team helped develop some of them. We know where to get the cheapest price and the best service.",
-
-        className: 'first-item',
-      },
-
-      upToSaving: {
-        title: 'Up to 50% savings on infrastructure',
-        subTitle: 'Pay-as-you-go receipts from your cloud providers make you curse them?',
-        paragraph:
-          "Our fire brigade can help you optimise resource consumption like we've done for 75% of our customers. We’ll reconfigure and disable every option or service that is not necessary.",
-
-        className: 'second-item',
-      },
+      infrastructureOptimisation,
     }
   },
 }

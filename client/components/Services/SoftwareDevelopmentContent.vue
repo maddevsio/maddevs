@@ -4,16 +4,15 @@
       <div class="content-item__text-content">
         <client-only>
           <UITitle class="content-item__title">{{ title }}</UITitle>
-          <UISubtitle class="content-item__sub-title">{{ subTitle }}</UISubtitle>
+          <UISubtitle class="content-item__sub-title">{{ subtitle }}</UISubtitle>
           <UIParagraph
-            :class="`content-item__paragraph-${title.toLowerCase()}`"
-            class="content-item__paragraph content-item__paragraph-first"
-            v-html="firstParagraph"
+            v-for="paragraph in paragraphs"
+            :key="paragraph"
+            :class="`content-item__paragraph-${type}`"
+            class="content-item__paragraph"
+            v-html="paragraph"
           >
-            {{ firstParagraph }}
-          </UIParagraph>
-          <UIParagraph class="content-item__paragraph content-item__paragraph-second" v-html="secondParagraph">
-            {{ secondParagraph }}
+            {{ paragraph }}
           </UIParagraph>
         </client-only>
       </div>
@@ -38,24 +37,24 @@ export default {
   },
 
   props: {
+    type: {
+      type: String,
+      default: '',
+    },
+
     title: {
       type: String,
       default: '',
     },
 
-    subTitle: {
+    subtitle: {
       type: String,
       default: '',
     },
 
-    firstParagraph: {
-      type: String,
-      default: '',
-    },
-
-    secondParagraph: {
-      type: String,
-      default: '',
+    paragraphs: {
+      type: Array,
+      default: () => [],
     },
 
     icons: {
@@ -97,15 +96,14 @@ export default {
     }
   }
 
-  &__paragraph-first {
+  &__paragraph {
     margin-bottom: 30px;
-  }
+    &:last-child {
+      margin-bottom: 22px;
 
-  &__paragraph-second {
-    margin-bottom: 22px;
-
-    @media screen and (min-width: 400px) and (max-width: 991px) {
-      margin-bottom: 11px;
+      @media screen and (min-width: 400px) and (max-width: 991px) {
+        margin-bottom: 11px;
+      }
     }
   }
 

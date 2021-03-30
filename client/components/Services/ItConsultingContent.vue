@@ -8,9 +8,9 @@
         <UISubtitle
           :class="`it-consulting-item__sub-title-${className}`"
           class="it-consulting-item__sub-title"
-          v-html="subTitle"
+          v-html="subtitle"
         >
-          {{ subTitle }}
+          {{ subtitle }}
         </UISubtitle>
         <UIParagraph class="it-consulting-item__paragraph">
           {{ paragraph }}
@@ -39,7 +39,7 @@ export default {
       default: '',
     },
 
-    subTitle: {
+    subtitle: {
       type: String,
       default: '',
     },

@@ -3,27 +3,7 @@
     <div class="container">
       <h2 class="software-development__main-title">Software Development</h2>
       <div class="software-development__content row">
-        <SoftwareDevelopmentContent
-          :title="backend.title"
-          :sub-title="backend.subTitle"
-          :first-paragraph="backend.firstParagraph"
-          :second-paragraph="backend.secondParagraph"
-          :icons="backend.icons"
-        />
-        <SoftwareDevelopmentContent
-          :title="frontend.title"
-          :sub-title="frontend.subTitle"
-          :first-paragraph="frontend.firstParagraph"
-          :second-paragraph="frontend.secondParagraph"
-          :icons="frontend.icons"
-        />
-        <SoftwareDevelopmentContent
-          :title="mobile.title"
-          :sub-title="mobile.subTitle"
-          :first-paragraph="mobile.firstParagraph"
-          :second-paragraph="mobile.secondParagraph"
-          :icons="mobile.icons"
-        />
+        <SoftwareDevelopmentContent v-for="category in developmentCategories" :key="category.type" v-bind="category" />
       </div>
       <UIModalTriggerButton
         label="Get your trusted IT partner"
@@ -34,7 +14,7 @@
     </div>
 
     <Modal ref="getYourTrustedItPartnerModal">
-      <getYourTrustedItPartnerModal />
+      <GetYourTrustedItPartnerModal />
     </Modal>
   </section>
 </template>
@@ -42,148 +22,22 @@
 <script>
 import SoftwareDevelopmentContent from '@/components/Services/SoftwareDevelopmentContent'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
-import getYourTrustedItPartnerModal from '@/components/core/modals/GetYourTrustedItPartner'
+import GetYourTrustedItPartnerModal from '@/components/core/modals/GetYourTrustedItPartner'
 import Modal from '@/components/core/Modal'
+import { developmentCategories } from '@/data/softwareDevelopment'
 
 export default {
   name: 'SoftwareDevelopment',
   components: {
     SoftwareDevelopmentContent,
     UIModalTriggerButton,
-    getYourTrustedItPartnerModal,
+    GetYourTrustedItPartnerModal,
     Modal,
   },
 
   data() {
     return {
-      backend: {
-        title: 'Backend',
-        subTitle: "Your MVP doesn't work as expected after launch?",
-        firstParagraph:
-          "Let our positively mad team rescue you and create sensible server logic for your project. We'll cure your growth pains like good doctors – just tell us about them and only focus on your business.",
-
-        secondParagraph: 'At Mad Devs we know everything about:',
-        icons: [
-          {
-            title: 'Python',
-            className: 'backend-python',
-          },
-          {
-            title: 'Go',
-            className: 'backend-go',
-          },
-          {
-            title: 'Node.js',
-            className: 'backend-node',
-          },
-          {
-            title: 'C',
-            className: 'backend-c',
-          },
-          {
-            title: 'TypeScript',
-            className: 'frontend-typescript',
-          },
-          {
-            title: 'PHP',
-            className: 'backend-php',
-          },
-          {
-            title: 'Ruby',
-            className: 'backend-ruby',
-          },
-          {
-            title: 'C++',
-            className: 'backend-c-plus',
-          },
-        ],
-      },
-
-      frontend: {
-        title: 'Frontend',
-        subTitle: 'Your users get lost in lousy interfaces?',
-        firstParagraph:
-          'Our wizards will take your UX magic to the next level where everything is intuitive and <span>user-friendly.</span> <span>Mad Devs</span> strive to get involved with <span>well-polished</span> projects that will live a long life.',
-
-        secondParagraph: 'We work with the best <span>present-day</span> frontend stack:',
-        icons: [
-          {
-            title: 'JavaScript',
-            className: 'frontend-js',
-          },
-          {
-            title: 'React',
-            className: 'frontend-react',
-          },
-          {
-            title: 'Babel',
-            className: 'frontend-babel',
-          },
-          {
-            title: 'Vue',
-            className: 'frontend-vue',
-          },
-          {
-            title: 'PostCSS',
-            className: 'frontend-post-css',
-          },
-          {
-            title: 'Angular',
-            className: 'frontend-angular',
-          },
-          {
-            title: 'Nuxt.js',
-            className: 'frontend-nuxt',
-          },
-          {
-            title: 'SASS',
-            className: 'frontend-sass',
-          },
-        ],
-      },
-
-      mobile: {
-        title: 'Mobile',
-        subTitle: 'Your app is slow and unable to survive a demo?',
-        firstParagraph:
-          "We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you'll be ecstatic to use yourself.",
-
-        secondParagraph: 'We do both iOS and Android development using the following languages and frameworks:',
-        icons: [
-          {
-            title: 'Android',
-            className: 'mobile-android',
-          },
-          {
-            title: 'Kotlin',
-            className: 'mobile-kotlin',
-          },
-          {
-            title: 'Java',
-            className: 'mobile-java',
-          },
-          {
-            title: 'Firebase',
-            className: 'mobile-firebase',
-          },
-          {
-            title: 'iOS',
-            className: 'mobile-apple',
-          },
-          {
-            title: 'Objective-C',
-            className: 'mobile-obj-c',
-          },
-          {
-            title: 'Swift',
-            className: 'mobile-swift',
-          },
-          {
-            title: 'Flutter',
-            className: 'mobile-flutter',
-          },
-        ],
-      },
+      developmentCategories,
     }
   },
 }
