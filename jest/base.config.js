@@ -14,7 +14,7 @@ module.exports = {
     // process js with `babel-jest`
     '^.+\\.js$': '<rootDir>/node_modules/babel-jest',
     // process `*.vue` files with `vue-jest`
-    '^[^.]+.vue$': '<rootDir>/node_modules/vue-jest',
+    '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest',
     // process `*.svg` files with `imgTransform.js`
     '\\.(svg|png|webp|jpg)$': '<rootDir>/jest/imgTransformer.js',
   },
