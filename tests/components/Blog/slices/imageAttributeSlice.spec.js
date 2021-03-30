@@ -1,9 +1,7 @@
-import { mount } from '@vue/test-utils'
-import ImageAttributesSlice from '../client/components/Blog/slices/ImageAttributesSlice'
+import { render } from '@testing-library/vue'
+import ImageAttributesSlice from '../../../../client/components/Blog/slices/ImageAttributesSlice'
 
 describe('image attribute slice component', () => {
-  let wrapper
-
   const slice = {
     items: [{}],
     primary: {
@@ -28,31 +26,18 @@ describe('image attribute slice component', () => {
     slice_type: 'image_with_attributes',
   }
 
-  beforeEach(() => {
-    wrapper = mount(ImageAttributesSlice, {
-      propsData: { slice },
+  it('is a Vue instance', () => {
+    const { container } = render(ImageAttributesSlice, {
+      props: {
+        slice,
+      },
       mocks: {
         $prismic: {
-          asText: text => text,
+          asText: name => name,
         },
       },
-      stubs: ['prismic-image'],
     })
-  })
 
-  it('is vue component', () => {
-    expect(wrapper.exists()).toBeTruthy()
-  })
-
-  it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot()
-  })
-
-  it('link has target attribute', () => {
-    expect(wrapper.find('.block-img').attributes('target')).toMatch('_blank')
-  })
-
-  it('link has href attribute', () => {
-    expect(wrapper.find('.block-img').attributes('href')).toMatch('https://blog.maddevs.io')
+    expect(container).toMatchSnapshot()
   })
 })

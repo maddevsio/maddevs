@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Galary slice component is a Vue instance 1`] = `
+exports[`galary slice component is a Vue instance 1`] = `
 <div>
   <div
     class="gallery-slice"
