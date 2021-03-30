@@ -1,6 +1,6 @@
 <template>
   <div :class="theme" class="post-tag">
-    <span class="tag">{{ tag }}</span>
+    <span data-testid="test-tag" class="tag">{{ tag }}</span>
   </div>
 </template>
 

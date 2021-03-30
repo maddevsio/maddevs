@@ -65,6 +65,7 @@ exports[`featured post component is a Vue instance 1`] = `
             >
               <span
                 class="tag"
+                data-testid="test-tag"
               >
                 markup
               </span>
