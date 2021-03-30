@@ -46,7 +46,7 @@ export default function scrollBehavior(to, from, savedPosition) {
       }
 
       // section with filtered posts is rendered with a small delay, then offset heigh of the blog page changes
-      if (to.name === 'blog') return setTimeout(() => resolve(position), 20)
+      if (to.name === 'blog') return setTimeout(() => resolve(position), 50)
 
       return resolve(position)
     })
