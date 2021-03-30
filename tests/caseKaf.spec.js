@@ -11,6 +11,33 @@ describe('kaf', () => {
       fileName: 'kaf-logo',
       alt: '',
     },
+
+    supportedGadgets: [
+      {
+        title: 'Laptops',
+        width: 735,
+        height: 449,
+        fileName: 'macbook-pro',
+        alt: 'Laptops',
+        cardColor: 'purple-medium',
+      },
+      {
+        title: 'Smartphones',
+        width: 312,
+        height: 627,
+        fileName: 'iphonex',
+        alt: 'Smartphones',
+        cardColor: 'black-primary-bg',
+      },
+      {
+        title: 'Tablets',
+        width: 518,
+        height: 374,
+        fileName: 'ipad-pro',
+        alt: 'Tablets',
+        cardColor: 'purple-dark',
+      },
+    ],
   }
 
   beforeEach(() => {

@@ -66,8 +66,12 @@
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Key project milestones</h2>
-        <div class="m-96_bottom media-m-48_bottom">
-          <!-- Карточки -->
+        <div class="m-96_bottom media-m-48_bottom case_key-project-milestones">
+          <CardProjectMilestone
+            v-for="(projectMilestone, i) in keyProjectMilestones"
+            :key="i"
+            :project-milestone="projectMilestone"
+          />
         </div>
       </section>
       <section class="container_regular">
@@ -244,6 +248,7 @@ import ListHyphenItemBox from '@/components/Cases/ListHyphenItemBox'
 import Card from '@/components/Cases/Card'
 import CardProjectInNumbers from '@/components/Cases/cards/kaf/CardProjectInNumbers'
 import CardSupportedGadgets from '@/components/Cases/cards/kaf/CardSupportedGadgets'
+import CardProjectMilestone from '@/components/Cases/cards/kaf/CardProjectMilestone'
 
 export default {
   name: 'KafCase',
@@ -258,6 +263,7 @@ export default {
     CardProjectInNumbers,
     Card,
     CardSupportedGadgets,
+    CardProjectMilestone,
   },
 
   data() {
@@ -277,7 +283,7 @@ export default {
           height: 449,
           fileName: 'macbook-pro',
           alt: 'Laptops',
-          cardColor: 'purple-light',
+          cardColor: 'purple-medium',
         },
         {
           title: 'Smartphones',
@@ -294,6 +300,39 @@ export default {
           fileName: 'ipad-pro',
           alt: 'Tablets',
           cardColor: 'purple-dark',
+        },
+      ],
+
+      keyProjectMilestones: [
+        {
+          title: '2016',
+          description:
+            'A database of movies with descriptions transformed into online cinema with a basic content management functionality.',
+
+          backgroundColor: 'purple-light',
+        },
+        {
+          title: '2017',
+          description: 'Live video streaming of popular TV channels became available.',
+          backgroundColor: 'purple-primary',
+        },
+        {
+          title: '2018',
+          description: 'The project was redesigned to optimise resource consumption.',
+          backgroundColor: 'purple-medium',
+        },
+        {
+          lottieFileName: '',
+          title: '2019',
+          description: 'Added Video on Demand functionality.',
+          backgroundColor: 'purple-dark',
+        },
+        {
+          title: '2020',
+          description:
+            'User authorisation ensured a more personalised experience for each user. Custom filters, such as ‘favourites’, ‘already watched’ and ‘search’, made the service more viewer-friendly.',
+
+          backgroundColor: 'black-primary-bg',
         },
       ],
     }

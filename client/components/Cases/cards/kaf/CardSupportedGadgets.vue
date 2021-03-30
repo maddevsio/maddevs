@@ -149,7 +149,7 @@ export default {
     }
 
     &_gadget-picture-wrapp-mobile-iphonex {
-      width: 322px;
+      width: 342px;
     }
 
     &_gadget-picture-wrapp-mobile-ipad-pro {
