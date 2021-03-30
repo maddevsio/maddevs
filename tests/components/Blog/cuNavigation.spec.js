@@ -1,9 +1,7 @@
-import { mount } from '@vue/test-utils'
-import CuNavigation from '../client/components/Blog/CuNavigation'
+import { render } from '@testing-library/vue'
+import CuNavigation from '../../../client/components/Blog/CuNavigation'
 
 describe('cuNavigation', () => {
-  let wrapper
-
   const clusterPosts = [
     {
       chapter_name: [
@@ -45,10 +43,10 @@ describe('cuNavigation', () => {
     },
   ]
 
-  beforeEach(() => {
-    wrapper = mount(CuNavigation, {
+  it('is a Vue instance', () => {
+    const { container, html } = render(CuNavigation, {
       stubs: ['router-link'],
-      propsData: {
+      props: {
         clusterPosts,
         cluster: {
           items: clusterPosts,
@@ -65,13 +63,31 @@ describe('cuNavigation', () => {
         },
       },
     })
+
+    expect(html()).not.toContain('current')
+    expect(container).toMatchSnapshot()
   })
 
-  it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy()
-  })
-
-  it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot()
+  it('is a Vue instance with equal id', () => {
+    const { html } = render(CuNavigation, {
+      stubs: ['router-link'],
+      props: {
+        clusterPosts,
+        cluster: {
+          items: clusterPosts,
+          primary: {
+            cluster_name: 'Pricing strategies in custom software development',
+            read_more_text: 'Read more about pricing strategies',
+          },
+        },
+        id: 'YAGi7REAACMAgV8d',
+      },
+      mocks: {
+        $prismic: {
+          asText: text => text[0].text,
+        },
+      },
+    })
+    expect(html()).toContain('current')
   })
 })
