@@ -527,6 +527,7 @@ exports[`slice block component renders correctly 1`] = `
          
         <p
           class="image-label"
+          data-testid="test-image-label"
         >
           caption
         </p>
