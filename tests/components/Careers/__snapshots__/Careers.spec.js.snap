@@ -1,43 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`careers page renders correctly 1`] = `
-<main
-  class="main"
->
-  <div
-    class="banner-container"
-  >
-    <div
-      class="banner__banner-content banner-content"
-    >
-      <div
-        class="banner__main-title-wrapper main-title-wrapper container"
-      >
-        <h1
-          class="banner__banner-main_title banner-main_title banner-main_title-test"
-        >
-          
-        Look! 
-          <br />
-          
-        A new 
-          <span>
-            Mad Devs'
-          </span>
-           
-          <br />
-          
-        ranger is here!
-      
-        </h1>
-         
-        <div
-          class="banner__logo"
-        />
-      </div>
-    </div>
-  </div>
-   
+exports[`Careers component should render correctly 1`] = `
+<div>
   <section
     class="careers"
     id="careers"
@@ -271,5 +235,5 @@ exports[`careers page renders correctly 1`] = `
       <!---->
     </transition-stub>
   </section>
-</main>
+</div>
 `;
