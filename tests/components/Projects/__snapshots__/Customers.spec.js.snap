@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`customers component should render correctly without slot 1`] = `
+exports[`Customers component should render correctly 1`] = `
 <div>
   <section
     class="customers"
