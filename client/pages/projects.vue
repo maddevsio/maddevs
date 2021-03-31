@@ -13,7 +13,7 @@ import CaseStudies from '@/components/core/CaseStudies'
 import Customers from '@/components/Projects/Customers'
 import OpenSource from '@/components/Projects/OpenSource'
 import { getMetadata, buildHead } from '@/data/seo'
-import initLazyLoadMixin from '@/mixins/initLazyLoad'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'MainProjects',

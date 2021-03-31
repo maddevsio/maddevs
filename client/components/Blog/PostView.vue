@@ -61,7 +61,7 @@ import TableOfContents from '@/components/Blog/TableOfContents'
 import BlogHeader from '@/components/Blog/header/Blog'
 import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity'
 import CuNavigation from '@/components/Blog/CuNavigation'
-import initLazyLoadMixin from '@/mixins/initLazyLoad'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import RecommendedBlogWidget from '@//components/Blog/RecommendedBlogWidget'
 
 export default {

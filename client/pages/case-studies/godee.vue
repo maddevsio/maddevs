@@ -647,7 +647,7 @@ import FooterMain from '@/components/core/Footer/Footer'
 import HeaderMain from '@/components/core/Header/Header'
 import UIBeforeAfterImage from '@/components/shared/UIBeforeAfterImage'
 import { getMetadata, buildHead } from '@/data/seo'
-import initLazyLoadMixin from '@/mixins/initLazyLoad'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'GoDeeCase',

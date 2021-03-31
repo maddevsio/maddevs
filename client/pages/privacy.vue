@@ -7,7 +7,7 @@
 <script>
 import Privacy from '@/components/core/Privacy'
 import { getMetadata, buildHead } from '@/data/seo'
-import initLazyLoadMixin from '@/mixins/initLazyLoad'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'MainPrivacy',

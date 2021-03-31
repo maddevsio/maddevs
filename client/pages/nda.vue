@@ -7,7 +7,7 @@
 <script>
 import NDA from '@/components/core/NDA'
 import { getMetadata, buildHead } from '@/data/seo'
-import initLazyLoadMixin from '@/mixins/initLazyLoad'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'MainNda',

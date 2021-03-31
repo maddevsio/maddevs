@@ -105,7 +105,7 @@ import { phone } from '@/helpers/validators'
 import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
 import RadioList from '@/components/shared/UIRadioList'
 import UIButton from '@/components/shared/UIButton'
-import { phoneHandler } from '@/mixins/phoneHandler'
+import phoneHandlerMixin from '@/mixins/phoneHandlerMixin'
 
 export default {
   name: 'InfrastructureAudit',
@@ -115,7 +115,7 @@ export default {
     UIButton,
   },
 
-  mixins: [phoneHandler],
+  mixins: [phoneHandlerMixin],
   validations: {
     fullName: {
       required,

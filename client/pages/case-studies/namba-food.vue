@@ -544,7 +544,7 @@ import CardNationwideNumbers from '@/components/Cases/cards/namba-food/CardNatio
 import CardNinjaSushi from '@/components/Cases/cards/namba-food/CardNinjaSushi'
 import Swiper from '@/components/Cases/Swiper'
 import { getMetadata, buildHead } from '@/data/seo'
-import initLazyLoadMixin from '@/mixins/initLazyLoad'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'NambaFood',

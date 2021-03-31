@@ -1,4 +1,4 @@
-export const phoneHandler = {
+const phoneHandlerMixin = {
   data: () => ({
     phoneNumber: null,
   }),
@@ -19,3 +19,5 @@ export const phoneHandler = {
     },
   },
 }
+
+export default phoneHandlerMixin

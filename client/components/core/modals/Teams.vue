@@ -95,7 +95,7 @@
 <script>
 import { required, email, maxLength } from 'vuelidate/lib/validators'
 import { phone } from '@/helpers/validators'
-import { phoneHandler } from '@/mixins/phoneHandler'
+import phoneHandlerMixin from '@/mixins/phoneHandlerMixin'
 import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
 import RadioList from '@/components/shared/UIRadioList'
 import UIButton from '@/components/shared/UIButton'
@@ -108,7 +108,7 @@ export default {
     UIButton,
   },
 
-  mixins: [phoneHandler],
+  mixins: [phoneHandlerMixin],
   validations: {
     fullName: {
       required,

@@ -571,7 +571,7 @@ import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
 import Swiper from '@/components/Cases/Swiper'
 import Footer from '@/components/Cases/Footer'
 import { getMetadata, buildHead } from '@/data/seo'
-import initLazyLoadMixin from '@/mixins/initLazyLoad'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'SirJohnMonashCentre',

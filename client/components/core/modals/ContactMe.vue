@@ -99,7 +99,7 @@ import { required, email, maxLength } from 'vuelidate/lib/validators'
 import { phone } from '@/helpers/validators'
 import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
 import UIButton from '@/components/shared/UIButton'
-import { phoneHandler } from '@/mixins/phoneHandler'
+import phoneHandlerMixin from '@/mixins/phoneHandlerMixin'
 
 export default {
   name: 'ContactMe',
@@ -108,7 +108,7 @@ export default {
     UIButton,
   },
 
-  mixins: [phoneHandler],
+  mixins: [phoneHandlerMixin],
   validations: {
     fullname: {
       required,
