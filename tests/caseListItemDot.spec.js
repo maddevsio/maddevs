@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import ListItemDot from '@/components/Cases/ListItemDot'
+import ListItemDot from '@/components/Cases/shared/ListItemDot'
 
 describe('list item dot', () => {
   let wrapper

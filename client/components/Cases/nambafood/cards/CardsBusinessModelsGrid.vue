@@ -40,9 +40,9 @@
 </template>
 
 <script>
-import Card from '@/components/Cases/Card'
-import TextParagraph from '@/components/Cases/TextParagraph'
-import Picture from '@/components/Cases/Picture'
+import Card from '@/components/Cases/shared/Card'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import Picture from '@/components/Cases/shared/Picture'
 
 export default {
   name: 'CardsBusinessModelsGrid',

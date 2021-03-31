@@ -41,7 +41,7 @@
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
-import Picture from '@/components/Cases/Picture'
+import Picture from '@/components/Cases/shared/Picture'
 
 export default {
   name: 'SwiperExampleDefault',
@@ -117,8 +117,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../assets/styles/cases/icons';
-@import '../../assets/styles/cases/mixins';
+@import '../../../assets/styles/cases/icons';
+@import '../../../assets/styles/cases/mixins';
 
 .thumb-example {
   img {

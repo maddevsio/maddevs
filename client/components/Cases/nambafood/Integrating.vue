@@ -56,11 +56,11 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import TextQuote from '@/components/Cases/TextQuote'
-import Card from '@/components/Cases/Card'
-import List from '@/components/Cases/List'
-import ListItemDot from '@/components/Cases/ListItemDot'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextQuote from '@/components/Cases/shared/TextQuote'
+import Card from '@/components/Cases/shared/Card'
+import List from '@/components/Cases/shared/List'
+import ListItemDot from '@/components/Cases/shared/ListItemDot'
 
 export default {
   name: 'Integrating',

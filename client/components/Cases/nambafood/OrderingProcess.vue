@@ -20,9 +20,9 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import ListNumberedBox from '@/components/Cases/ListNumberedBox'
-import ListNumberedItemBox from '@/components/Cases/ListNumberedItemBox'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import ListNumberedBox from '@/components/Cases/shared/ListNumberedBox'
+import ListNumberedItemBox from '@/components/Cases/shared/ListNumberedItemBox'
 
 export default {
   name: 'OrderingProcess',

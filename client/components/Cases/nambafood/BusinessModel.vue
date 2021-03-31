@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import Card from '@/components/Cases/Card'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import Card from '@/components/Cases/shared/Card'
 import CardsBusinessModelsGrid from '@/components/Cases/nambafood/cards/CardsBusinessModelsGrid'
 import CardNinjaSushi from '@/components/Cases/nambafood/cards/CardNinjaSushi'
 

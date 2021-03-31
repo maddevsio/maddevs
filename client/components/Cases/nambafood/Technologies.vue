@@ -19,9 +19,9 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import ListTechnologies from '@/components/Cases/ListTechnologies'
-import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import ListTechnologies from '@/components/Cases/shared/ListTechnologies'
+import ListTechnologiesItem from '@/components/Cases/shared/ListTechnologiesItem'
 import { technologies } from '@/data/caseNambafood'
 
 export default {

@@ -1,6 +1,6 @@
 <template>
   <main class="main case">
-    <CaseHeader :header-logo="headerLogo" video-name="main.ef19480.mp4">
+    <CaseHeader :logo="logo" video-name="main.ef19480.mp4">
       <h1 slot="title" class="case_header-title">Namba Food</h1>
       <p slot="description" class="case_header-description">
         Mad Devs created the Namba Food delivery service from scratch. The solution <br />
@@ -19,9 +19,9 @@
 </template>
 
 <script>
-import CaseHeader from '@/components/Cases/CaseHeader'
+import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import Main from '@/components/Cases/nambafood/Main'
-import Footer from '@/components/Cases/Footer'
+import Footer from '@/components/Cases/shared/CaseFooter'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
@@ -37,11 +37,11 @@ export default {
 
   data() {
     return {
-      headerLogo: {
+      logo: {
         width: 259,
         height: 82,
-        pictureFolder: 'nambafood',
-        fileName: 'nambafood-logo',
+        folder: 'nambafood',
+        file: 'nambafood-logo',
         alt: '',
       },
     }

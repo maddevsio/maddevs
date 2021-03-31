@@ -12,11 +12,11 @@
         <slot name="actions"></slot>
       </div>
       <img
-        :width="headerLogo.width"
-        :height="headerLogo.height"
-        :src="require(`@/assets/img/Cases/${headerLogo.pictureFolder}/svg/${headerLogo.fileName}.svg`)"
-        :alt="headerLogo.alt"
-        :class="`case_${headerLogo.fileName}`"
+        :width="logo.width"
+        :height="logo.height"
+        :src="require(`@/assets/img/Cases/${logo.folder}/svg/${logo.file}.svg`)"
+        :alt="logo.alt"
+        :class="`case_${logo.file}`"
         class="case_header-logo"
       />
     </div>
@@ -28,7 +28,7 @@ export default {
   name: 'Header',
 
   props: {
-    headerLogo: {
+    logo: {
       type: Object,
       default: () => {},
 
@@ -42,12 +42,12 @@ export default {
         default: 0,
       },
 
-      pictureFolder: {
+      folder: {
         type: String,
         default: '',
       },
 
-      fileName: {
+      file: {
         type: String,
         default: '',
       },
@@ -86,8 +86,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/styles/cases/header';
-@import '../../assets/styles/cases/mixins';
+@import '../../../assets/styles/cases/header';
+@import '../../../assets/styles/cases/mixins';
 
 .case {
   &_header {

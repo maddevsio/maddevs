@@ -1,6 +1,6 @@
 <template>
   <main class="case">
-    <CaseHeader :header-logo="headerLogo" video-name="">
+    <CaseHeader :logo="logo" video-name="">
       <h1 slot="title" class="case_header-title">
         The Evolution <br />
         of Yourcast.TV
@@ -230,13 +230,13 @@
 </template>
 
 <script>
-import CaseHeader from '@/components/Cases/CaseHeader'
-import Footer from '@/components/Cases/Footer'
-import TextParagraph from '@/components/Cases/TextParagraph'
-import TextQuote from '@/components/Cases/TextQuote'
-import TextQuoteBox from '@/components/Cases/TextQuoteBox'
-import List from '@/components/Cases/List'
-import ListHyphenItemBox from '@/components/Cases/ListHyphenItemBox'
+import CaseHeader from '@/components/Cases/shared/CaseHeader'
+import Footer from '@/components/Cases/shared/CaseFooter'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextQuote from '@/components/Cases/shared/TextQuote'
+import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
+import List from '@/components/Cases/shared/List'
+import ListHyphenItemBox from '@/components/Cases/shared/ListHyphenItemBox'
 
 export default {
   name: 'KafCase',
@@ -252,11 +252,11 @@ export default {
 
   data() {
     return {
-      headerLogo: {
+      logo: {
         width: 387,
         height: 81.23,
-        pictureFolder: 'kaf',
-        fileName: 'kaf-logo',
+        folder: 'kaf',
+        file: 'kaf-logo',
         alt: '',
       },
     }

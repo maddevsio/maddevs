@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils'
 
-import Picture from '@/components/Cases/Picture'
+import Picture from '@/components/Cases/shared/Picture'
 
 describe('picture', () => {
   let wrapper

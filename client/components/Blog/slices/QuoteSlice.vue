@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import TextQuote from '@/components/Cases/TextQuote'
+import TextQuote from '@/components/Cases/shared/TextQuote'
 
 export default {
   name: 'QuoteSlice',

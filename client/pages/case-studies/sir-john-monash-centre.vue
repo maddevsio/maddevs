@@ -1,6 +1,6 @@
 <template>
   <main class="main case">
-    <CaseHeader :header-logo="headerLogo" video-name="sjmc/sjmc-main-video.b35a387.mp4">
+    <CaseHeader :logo="logo" video-name="sjmc/sjmc-main-video.b35a387.mp4">
       <h1 slot="title" class="case_header-title">
         Sir John Monash <br />
         Centre
@@ -553,23 +553,23 @@
 </template>
 
 <script>
-import CaseHeader from '@/components/Cases/CaseHeader'
+import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import SJMCVideo from '@/components/Cases/SJMCVideo'
-import TextParagraph from '@/components/Cases/TextParagraph'
-import TextQuote from '@/components/Cases/TextQuote'
-import TextQuoteBox from '@/components/Cases/TextQuoteBox'
-import Picture from '@/components/Cases/Picture'
-import List from '@/components/Cases/List'
-import ListTeam from '@/components/Cases/ListTeam'
-import ListTeamItem from '@/components/Cases/ListTeamItem'
-import ListItemBoxCheckMark from '@/components/Cases/ListItemBoxCheckMark'
-import ListItemDot from '@/components/Cases/ListItemDot'
-import ListTechnologies from '@/components/Cases/ListTechnologies'
-import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
-import ListHyphenItemBox from '@/components/Cases/ListHyphenItemBox'
-import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
-import Swiper from '@/components/Cases/Swiper'
-import Footer from '@/components/Cases/Footer'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextQuote from '@/components/Cases/shared/TextQuote'
+import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
+import Picture from '@/components/Cases/shared/Picture'
+import List from '@/components/Cases/shared/List'
+import ListTeam from '@/components/Cases/shared/ListTeam'
+import ListTeamItem from '@/components/Cases/shared/ListTeamItem'
+import ListItemBoxCheckMark from '@/components/Cases/shared/ListItemBoxCheckMark'
+import ListItemDot from '@/components/Cases/shared/ListItemDot'
+import ListTechnologies from '@/components/Cases/shared/ListTechnologies'
+import ListTechnologiesItem from '@/components/Cases/shared/ListTechnologiesItem'
+import ListHyphenItemBox from '@/components/Cases/shared/ListHyphenItemBox'
+import TextQuoteAuthor from '@/components/Cases/shared/TextQuoteAuthor'
+import Swiper from '@/components/Cases/shared/Swiper'
+import Footer from '@/components/Cases/shared/CaseFooter'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
@@ -877,11 +877,11 @@ export default {
         },
       ],
 
-      headerLogo: {
+      logo: {
         width: 242,
         height: 110,
-        pictureFolder: 'sjmc',
-        fileName: 'sjmc-logo',
+        folder: 'sjmc',
+        file: 'sjmc-logo',
         alt: '',
       },
     }

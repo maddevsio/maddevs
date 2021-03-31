@@ -29,8 +29,8 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import Card from '@/components/Cases/Card'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import Card from '@/components/Cases/shared/Card'
 import CardUseCase from '@/components/Cases/nambafood/cards/CardUseCase'
 import { usageScenarios } from '@/data/caseNambafood'
 

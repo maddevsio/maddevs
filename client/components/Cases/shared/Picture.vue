@@ -3,17 +3,17 @@
     <source
       :class="{ 'box-shadow': boxShadow, 'border-radius': borderRadius, 'grey-background': backgroundColor }"
       :srcset="[
-        require(`../../assets/img/Cases/${pictureFolder}/webp/${fileName}.webp`) + ' ',
-        require(`../../assets/img/Cases/${pictureFolder}/webp/${fileName}@2x.webp`) + ' 2x',
+        require(`../../../assets/img/Cases/${pictureFolder}/webp/${fileName}.webp`) + ' ',
+        require(`../../../assets/img/Cases/${pictureFolder}/webp/${fileName}@2x.webp`) + ' 2x',
       ]"
       class="image"
       type="image/webp"
     />
     <img
       :class="{ 'box-shadow': boxShadow, 'border-radius': borderRadius, 'grey-background': backgroundColor }"
-      :src="[require(`../../assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}.${fileExtension}`)]"
+      :src="[require(`../../../assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}.${fileExtension}`)]"
       :srcset="[
-        require(`../../assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}@2x.${fileExtension}`) + ' 2x',
+        require(`../../../assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}@2x.${fileExtension}`) + ' 2x',
       ]"
       :alt="alt"
       :loading="lazyLoading ? 'lazy' : ''"
@@ -91,7 +91,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '../../assets/styles/_vars';
+@import '../../../assets/styles/_vars';
 
 .image {
   width: 100%;

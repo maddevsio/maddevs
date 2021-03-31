@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/styles/cases/_mixins';
+@import '../../../assets/styles/cases/_mixins';
 
 .case_card {
   position: relative;

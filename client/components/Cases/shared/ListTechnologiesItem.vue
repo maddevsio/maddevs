@@ -23,8 +23,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/styles/cases/_mixins';
-@import '../../assets/styles/_techIcons';
+@import '../../../assets/styles/cases/_mixins';
+@import '../../../assets/styles/_techIcons';
 
 .case_technologies-item {
   display: flex;

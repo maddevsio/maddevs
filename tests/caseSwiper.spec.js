@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Swiper from '@/components/Cases/Swiper'
+import Swiper from '@/components/Cases/shared/Swiper'
 
 describe('swiper', () => {
   let wrapper

@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import Picture from '@/components/Cases/Picture'
-import TextParagraph from '@/components/Cases/TextParagraph'
+import Picture from '@/components/Cases/shared/Picture'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
 
 export default {
   name: 'TextQuoteAuthor',
@@ -63,7 +63,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/cases/_mixins';
+@import '../../../assets/styles/cases/_mixins';
 
 .case_blockquote-author {
   display: flex;

@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import Picture from '@/components/Cases/Picture'
+import Picture from '@/components/Cases/shared/Picture'
 
 export default {
   name: 'ListTeamItem',
@@ -62,7 +62,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/styles/cases/_mixins';
+@import '../../../assets/styles/cases/_mixins';
 
 .case_team-item {
   display: flex;

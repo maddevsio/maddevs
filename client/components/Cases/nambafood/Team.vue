@@ -30,9 +30,9 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import ListTeam from '@/components/Cases/ListTeam'
-import ListTeamItem from '@/components/Cases/ListTeamItem'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import ListTeam from '@/components/Cases/shared/ListTeam'
+import ListTeamItem from '@/components/Cases/shared/ListTeamItem'
 import { team } from '@/data/caseNambafood'
 
 export default {

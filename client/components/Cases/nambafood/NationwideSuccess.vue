@@ -46,10 +46,10 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import TextQuoteBox from '@/components/Cases/TextQuoteBox'
-import Card from '@/components/Cases/Card'
-import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
+import Card from '@/components/Cases/shared/Card'
+import TextQuoteAuthor from '@/components/Cases/shared/TextQuoteAuthor'
 import CardDeliveryServiceNambafood from '@/components/Cases/nambafood/cards/CardDeliveryServiceNambafood'
 import CardRestaurantTalisman from '@/components/Cases/nambafood/cards/CardRestaurantTalisman'
 import CardNationwideNumbers from '@/components/Cases/nambafood/cards/CardNationwideNumbers'

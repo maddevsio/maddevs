@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import ListNumberedBox from '@/components/Cases/ListNumberedBox'
-import ListNumberedItemBox from '@/components/Cases/ListNumberedItemBox'
+import ListNumberedBox from '@/components/Cases/shared/ListNumberedBox'
+import ListNumberedItemBox from '@/components/Cases/shared/ListNumberedItemBox'
 
 export default {
   name: 'OrderedList',

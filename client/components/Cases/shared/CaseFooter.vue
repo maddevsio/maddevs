@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/styles/cases/mixins';
+@import '../../../assets/styles/cases/mixins';
 
 .case {
   &_footer {

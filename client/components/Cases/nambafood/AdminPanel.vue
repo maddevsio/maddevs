@@ -26,9 +26,9 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import TextQuoteBox from '@/components/Cases/TextQuoteBox'
-import Picture from '@/components/Cases/Picture'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
+import Picture from '@/components/Cases/shared/Picture'
 
 export default {
   name: 'AdminPanel',

@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/styles/cases/_mixins';
+@import '../../../assets/styles/cases/_mixins';
 
 .case_list-technologies {
   @include grid(repeat(5, 1fr), auto, 0, 57px);

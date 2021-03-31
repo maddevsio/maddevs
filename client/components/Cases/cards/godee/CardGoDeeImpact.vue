@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
 
 export default {
   name: 'CardGoDeeImpact',

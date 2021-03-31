@@ -39,8 +39,8 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import Picture from '@/components/Cases/Picture'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import Picture from '@/components/Cases/shared/Picture'
 
 export default {
   name: 'CardUseCase',

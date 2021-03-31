@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/styles/cases/_mixins';
+@import '../../../assets/styles/cases/_mixins';
 
 .case_list-numbered_item {
   @include list-item_box($bgcolor--silver, 16px 17px 16px 40px, 8px);

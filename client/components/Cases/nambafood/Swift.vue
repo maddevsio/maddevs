@@ -89,11 +89,11 @@
 </template>
 
 <script>
-import Swiper from '@/components/Cases/Swiper'
-import TextParagraph from '@/components/Cases/TextParagraph'
-import TextQuoteBox from '@/components/Cases/TextQuoteBox'
-import List from '@/components/Cases/List'
-import ListItemDot from '@/components/Cases/ListItemDot'
+import Swiper from '@/components/Cases/shared/Swiper'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
+import List from '@/components/Cases/shared/List'
+import ListItemDot from '@/components/Cases/shared/ListItemDot'
 import { adminPanel } from '@/data/caseNambafood'
 
 export default {

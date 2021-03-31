@@ -3,7 +3,7 @@
     <HeaderMain />
     <main id="case-scroll-container" ref="main" class="case case_parallax">
       <div class="case_content-layer p-48_bottom media-p-24_bottom">
-        <CaseHeader :header-logo="headerLogo" video-name="godee-case-main-video.mp4">
+        <CaseHeader :logo="logo" video-name="godee-case-main-video.mp4">
           <h1 slot="title" class="case_header-title">
             Convenient shuttle <br />
             bus service
@@ -623,20 +623,20 @@
 </template>
 
 <script>
-import CaseHeader from '@/components/Cases/CaseHeader'
-import Footer from '@/components/Cases/Footer'
-import TextParagraph from '@/components/Cases/TextParagraph'
-import TextQuote from '@/components/Cases/TextQuote'
-import TextQuoteBox from '@/components/Cases/TextQuoteBox'
-import Picture from '@/components/Cases/Picture'
-import ListNumberedBox from '@/components/Cases/ListNumberedBox'
-import ListNumberedItemBox from '@/components/Cases/ListNumberedItemBox'
-import ListTeam from '@/components/Cases/ListTeam'
-import ListTeamItem from '@/components/Cases/ListTeamItem'
-import ListTechnologies from '@/components/Cases/ListTechnologies'
-import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
-import Card from '@/components/Cases/Card'
-import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
+import CaseHeader from '@/components/Cases/shared/CaseHeader'
+import Footer from '@/components/Cases/shared/CaseFooter'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextQuote from '@/components/Cases/shared/TextQuote'
+import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
+import Picture from '@/components/Cases/shared/Picture'
+import ListNumberedBox from '@/components/Cases/shared/ListNumberedBox'
+import ListNumberedItemBox from '@/components/Cases/shared/ListNumberedItemBox'
+import ListTeam from '@/components/Cases/shared/ListTeam'
+import ListTeamItem from '@/components/Cases/shared/ListTeamItem'
+import ListTechnologies from '@/components/Cases/shared/ListTechnologies'
+import ListTechnologiesItem from '@/components/Cases/shared/ListTechnologiesItem'
+import Card from '@/components/Cases/shared/Card'
+import TextQuoteAuthor from '@/components/Cases/shared/TextQuoteAuthor'
 import CardIssuesGoDee from '@/components/Cases/cards/godee/CardIssuesGoDee'
 import CardSolutionGoDee from '@/components/Cases/cards/godee/CardSolutionGoDee'
 import CardGoDeeFeature from '@/components/Cases/cards/godee/CardGoDeeFeature'
@@ -882,11 +882,11 @@ export default {
       headerHeight: 62,
       heightHasBeenSet: false,
       currentYear: new Date().getFullYear(),
-      headerLogo: {
+      logo: {
         width: 293,
         height: 130,
-        pictureFolder: 'godee',
-        fileName: 'godee-logo',
+        folder: 'godee',
+        file: 'godee-logo',
         alt: '',
       },
     }

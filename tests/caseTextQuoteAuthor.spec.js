@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils'
 
-import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
+import TextQuoteAuthor from '@/components/Cases/shared/TextQuoteAuthor'
 
 describe('text quote author', () => {
   let wrapper

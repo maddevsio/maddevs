@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils'
 
-import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
+import ListTechnologiesItem from '@/components/Cases/shared/ListTechnologiesItem'
 
 describe('list technologies item', () => {
   let wrapper
