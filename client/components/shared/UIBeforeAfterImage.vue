@@ -1,6 +1,7 @@
 <template>
   <div
     ref="trackContainer"
+    data-testid="track-img"
     class="comparsion-container"
     @mousemove="trackLocation"
     @mousedown="trackLocation"
@@ -9,11 +10,17 @@
     @touchend="trackLeave"
     @mouseleave="trackLeave"
   >
-    <div ref="trackLine" class="comparsion-track-line"></div>
+    <div ref="trackLine" data-testid="test-comparsion-track-line" class="comparsion-track-line"></div>
     <div class="comparsion-view">
-      <div ref="beforeImage" :style="beforeImageStyle" class="comparsion-image_before"></div>
+      <div
+        ref="beforeImage"
+        data-testid="test-comparsion-image_before"
+        :style="beforeImageStyle"
+        class="comparsion-image_before"
+      ></div>
       <img
         ref="afterImage"
+        data-testid="test-comparsion-image_after"
         :src="afterImageSrc"
         :alt="afterImageAlt"
         :width="baseWidth"

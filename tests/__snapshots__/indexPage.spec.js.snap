@@ -91,6 +91,7 @@ exports[`index page renders correctly 1`] = `
    
   <section
     class="weCreateItProject"
+    data-testid="test-weCreateItProject"
     id="weCreateItProject"
   >
     <div
@@ -483,6 +484,7 @@ exports[`index page renders correctly 1`] = `
         >
           <div
             class="tech_legend__item legend-devops"
+            data-testid="test-tech_legend__item"
           >
             
           devOps
@@ -490,6 +492,7 @@ exports[`index page renders correctly 1`] = `
           </div>
           <div
             class="tech_legend__item legend-qa"
+            data-testid="test-tech_legend__item"
           >
             
           QA
@@ -497,6 +500,7 @@ exports[`index page renders correctly 1`] = `
           </div>
           <div
             class="tech_legend__item legend-backend"
+            data-testid="test-tech_legend__item"
           >
             
           Backend
@@ -504,6 +508,7 @@ exports[`index page renders correctly 1`] = `
           </div>
           <div
             class="tech_legend__item legend-frontend"
+            data-testid="test-tech_legend__item"
           >
             
           Frontend
@@ -511,6 +516,7 @@ exports[`index page renders correctly 1`] = `
           </div>
           <div
             class="tech_legend__item legend-mobile"
+            data-testid="test-tech_legend__item"
           >
             
           Mobile
@@ -518,6 +524,7 @@ exports[`index page renders correctly 1`] = `
           </div>
           <div
             class="tech_legend__item legend-pm"
+            data-testid="test-tech_legend__item"
           >
             
           PM
@@ -525,6 +532,7 @@ exports[`index page renders correctly 1`] = `
           </div>
           <div
             class="tech_legend__item legend-infrastructure"
+            data-testid="test-tech_legend__item"
           >
             
           Infrastructure
@@ -532,6 +540,7 @@ exports[`index page renders correctly 1`] = `
           </div>
           <div
             class="tech_legend__item legend-uiux"
+            data-testid="test-tech_legend__item"
           >
             
           UI/UX
@@ -2676,6 +2685,7 @@ exports[`index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
@@ -2730,6 +2740,7 @@ exports[`index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
@@ -2784,6 +2795,7 @@ exports[`index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
@@ -2838,6 +2850,7 @@ exports[`index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
@@ -2892,6 +2905,7 @@ exports[`index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
@@ -2946,6 +2960,7 @@ exports[`index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
@@ -3000,6 +3015,7 @@ exports[`index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
@@ -3054,6 +3070,7 @@ exports[`index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />

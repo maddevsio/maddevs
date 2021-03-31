@@ -7,7 +7,7 @@
           <prismic-image :field="img" />
         </SimpleModal>
       </div>
-      <p v-if="caption" class="image-label">{{ caption }}</p>
+      <p v-if="caption" data-testid="test-image-label" class="image-label">{{ caption }}</p>
     </div>
   </div>
 </template>
@@ -36,13 +36,6 @@ export default {
   computed: {
     zoomEnabled() {
       return this.slice.primary.enable_zoom === 'enable'
-    },
-
-    lightBoxImage() {
-      return {
-        src: this.img.url,
-        alt: this.img.alt,
-      }
     },
   },
 

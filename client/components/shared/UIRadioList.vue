@@ -10,6 +10,7 @@
       >
         <input
           :id="`${option.value}-${id}`"
+          data-testid="test-radio-buttons"
           :name="id"
           class="radio-buttons__radio-input"
           type="radio"

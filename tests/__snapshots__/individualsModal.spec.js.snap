@@ -118,6 +118,7 @@ exports[`individuals modal renders correctly 1`] = `
        
       <input
         class="form-checkbox-input"
+        data-testid="test-privacy-policy-checkbox-input"
         id="privacy-policy-individuals"
         name="Privacy policy"
         type="checkbox"
@@ -142,6 +143,7 @@ exports[`individuals modal renders correctly 1`] = `
     
       <input
         class="form-checkbox-input"
+        data-testid="test-form-checkbox-input"
         id="marketing-communications-individuals"
         name="Marketing communications"
         type="checkbox"

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UITitle should render correctly with slot 1`] = `
+<div>
+  <h3
+    class="item-title"
+  >
+    Default slot
+  </h3>
+</div>
+`;

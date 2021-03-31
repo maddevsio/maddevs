@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`header Common is a Vue instance 1`] = `
+<div>
+  <div
+    class="blog-post__introduction-container"
+  >
+     
+    <h1
+      class="blog-post__blog-title title"
+    >
+      some title
+    </h1>
+     
+    <p
+      class="blog-post__blog-sub-title"
+    >
+      
+    </p>
+      
+    <img
+      alt=""
+      class="blog-post__introduction-image blog-post__introduction-image--with-background"
+      height="533"
+      src="some-url.jpg"
+      width="982"
+    />
+  </div>
+</div>
+`;

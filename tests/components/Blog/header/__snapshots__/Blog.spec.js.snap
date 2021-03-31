@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`header Blog is a Vue instance 1`] = `
+<div>
+  <div
+    class="blog-post__introduction-container"
+  >
+     
+    <h1
+      class="blog-post__blog-title title"
+    >
+      Three reasons why your project needs a senior developer
+    </h1>
+     
+    <p
+      class="blog-post__blog-sub-title"
+    >
+      
+    </p>
+     
+    <div
+      class="blog-post__post-info"
+    >
+      <div
+        class="blog-post__author"
+      >
+        <img
+          alt="Tamara Mun"
+          class="blog-post__author-image"
+          src="https://images.prismic.io/superpupertest/c3b0ca2f-b28b-455c-b75b-fa880ee66c82_01.jpeg?auto=compress,format"
+        />
+         
+        <div
+          class="blog-post__author-info"
+        >
+          <p
+            class="blog-post__author-name"
+          >
+            Tamara Mun
+          </p>
+           
+          <div
+            class="blog-post__data-of-creation"
+          >
+            <span
+              class="blog-post__author-title"
+            >
+              Delivery manager
+            </span>
+          </div>
+        </div>
+      </div>
+       
+      <div
+        class="blog-post__date-tag"
+      >
+        <div
+          class="blog-post__date"
+        >
+          Mar 23, 2021
+        </div>
+         
+        <div
+          class="blog-post__tag"
+        >
+          Project Management
+        </div>
+      </div>
+    </div>
+     
+    <img
+      alt="Why Your Project Needs a Senior Developer."
+      class="blog-post__introduction-image blog-post__introduction-image--with-background"
+      height="1086"
+      src="https://images.prismic.io/superpupertest/7d7f267a-a36f-4e21-bbd5-af537be3a022_Frame+1941.jpg?auto=compress,format"
+      width="2000"
+    />
+  </div>
+</div>
+`;
