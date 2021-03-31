@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`slice block component should render correctly 1`] = `
+<div>
+  <section>
+    <section
+      class=""
+    >
+      <div
+        class="post-part single"
+      >
+        <prismic-rich-text-stub
+          class="textslice"
+          field="[object Object]"
+        />
+      </div>
+    </section>
+    <section
+      class="quote"
+    >
+      <div
+        class="post-part single"
+      >
+        <blockquote
+          class="block-quotation"
+        >
+          <p>
+            lorem ipsum dolor sit ame
+          </p>
+        </blockquote>
+         
+        <!---->
+         
+        <div
+          class="author p-border"
+        >
+          <!---->
+           
+          <div
+            class="author__name"
+          >
+            John Doe
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class=""
+    >
+      <div
+        class="post-part single"
+      >
+        <div
+          class="prism-editor-wrapper code-sample"
+        >
+          <div
+            class="prism-editor__container"
+          >
+            <textarea
+              autocapitalize="off"
+              autocomplete="off"
+              autocorrect="off"
+              class="prism-editor__textarea prism-editor__textarea--empty"
+              data-gramm="false"
+              data-testid="textarea"
+              placeholder=""
+              readonly="readonly"
+              spellcheck="false"
+            />
+            <pre
+              class="prism-editor__editor"
+              data-testid="preview"
+            >
+              <br />
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class=""
+    >
+      <div>
+        <div
+          class="post-part single"
+        >
+          <div
+            class="block-img image-full-width"
+          >
+            <prismic-image-stub
+              class=""
+              field="[object Object]"
+            />
+             
+            <!---->
+          </div>
+           
+          <p
+            class="image-label"
+            data-testid="test-image-label"
+          >
+            caption
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class=""
+    >
+      <div>
+        <div
+          class="post-part single"
+        >
+          <a
+            class="block-img"
+            href="https://blog.maddevs.io"
+            target="_blank"
+          >
+            <prismic-image-stub
+              field="[object Object]"
+              title="[object Object]"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section
+      class=""
+    >
+      <ol
+        class="case-list_numbered"
+      >
+        <div>
+          <p>
+            list introduction
+          </p>
+        </div>
+         
+        <li
+          class="case_list-numbered_item"
+        >
+          
+    list item 1
+  
+        </li>
+        <li
+          class="case_list-numbered_item"
+        >
+          
+    list item 2
+  
+        </li>
+        <li
+          class="case_list-numbered_item"
+        >
+          
+    list item 3
+  
+        </li>
+        <li
+          class="case_list-numbered_item"
+        >
+          
+    list item 4
+  
+        </li>
+        <li
+          class="case_list-numbered_item"
+        >
+          
+    list item 5
+  
+        </li>
+      </ol>
+    </section>
+  </section>
+</div>
+`;

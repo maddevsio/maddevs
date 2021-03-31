@@ -1,15 +1,7 @@
-import { mount } from '@vue/test-utils'
-import SlicesBlock from '../client/components/Blog/SlicesBlock'
-import CodeBlockSlice from '../client/components/Blog/slices/CodeBlockSlice'
-import OrderedList from '../client/components/Blog/slices/OrderedList'
-import ImageAttributesSlice from '../client/components/Blog/slices/ImageAttributesSlice'
-import ImageCaptionSlice from '../client/components/Blog/slices/ImageCaptionSlice'
-import QuoteSlice from '../client/components/Blog/slices/QuoteSlice'
-import TextSlice from '../client/components/Blog/slices/TextSlice'
+import { render } from '@testing-library/vue'
+import SlicesBlock from '../../../client/components/Blog/SlicesBlock'
 
 describe('slice block component', () => {
-  let wrapper
-
   const slices = [
     {
       primary: {
@@ -103,9 +95,9 @@ describe('slice block component', () => {
     },
   ]
 
-  beforeEach(() => {
-    wrapper = mount(SlicesBlock, {
-      propsData: { slices },
+  it('should render correctly', () => {
+    const { container } = render(SlicesBlock, {
+      props: { slices },
       mocks: {
         $prismic: {
           asText: text => text,
@@ -114,22 +106,7 @@ describe('slice block component', () => {
       },
       stubs: ['prismic-image', 'prismic-rich-text'],
     })
-  })
 
-  it('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy()
-  })
-
-  it('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot()
-  })
-
-  it('contains components', () => {
-    expect(wrapper.findComponent(CodeBlockSlice).exists()).toBeTruthy()
-    expect(wrapper.findComponent(OrderedList).exists()).toBeTruthy()
-    expect(wrapper.findComponent(ImageAttributesSlice).exists()).toBeTruthy()
-    expect(wrapper.findComponent(ImageCaptionSlice).exists()).toBeTruthy()
-    expect(wrapper.findComponent(QuoteSlice).exists()).toBeTruthy()
-    expect(wrapper.findComponent(TextSlice).exists()).toBeTruthy()
+    expect(container).toMatchSnapshot()
   })
 })
