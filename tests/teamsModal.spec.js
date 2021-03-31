@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import TeamsModal from '@/components/core/modals/Teams'
+import ModalTeams from '@/components/core/modals/ModalTeams'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -10,7 +10,7 @@ describe('teams Modal', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(TeamsModal, {
+    wrapper = mount(ModalTeams, {
       localVue,
       stubs: ['modal'],
       mocks: {
@@ -39,8 +39,8 @@ describe('teams Modal', () => {
   // --------------------- //
 
   it('sets the correct default data', () => {
-    expect(typeof TeamsModal.data).toBe('function')
-    const defaultData = TeamsModal.data()
+    expect(typeof ModalTeams.data).toBe('function')
+    const defaultData = ModalTeams.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
     expect(defaultData.selectedTeamSize).toBeNull()
     expect(defaultData.options).toHaveLength(3)
@@ -48,9 +48,9 @@ describe('teams Modal', () => {
 
   it('has a functions', () => {
     expect(
-      typeof TeamsModal.methods.getPrivacyCheckboxState &&
-        typeof TeamsModal.methods.getDiscountOffersCheckboxState &&
-        typeof TeamsModal.methods.getTeamSize,
+      typeof ModalTeams.methods.getPrivacyCheckboxState &&
+        typeof ModalTeams.methods.getDiscountOffersCheckboxState &&
+        typeof ModalTeams.methods.getTeamSize,
     ).toBe('function')
   })
 

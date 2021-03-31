@@ -115,7 +115,7 @@
         </form>
       </div>
     </div>
-    <SuccessModal
+    <ModalSuccess
       id="career-modal"
       :display-time="3000"
       :visibled="isShowSuccessModal"
@@ -130,7 +130,7 @@ import { fileSizeValidation, fileExt } from '@/helpers/validators'
 import FileInput from '@/components/Careers/FileInput'
 import Button from '@/components/Careers/Button'
 import UIRadioButtons from '@/components/shared/UIRadioButtons'
-import SuccessModal from '@/components/core/modals/Success'
+import ModalSuccess from '@/components/core/modals/ModalSuccess'
 
 export default {
   name: 'Careers',
@@ -138,7 +138,7 @@ export default {
     FileInput,
     Button,
     UIRadioButtons,
-    SuccessModal,
+    ModalSuccess,
   },
 
   validations: {

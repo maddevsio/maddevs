@@ -65,7 +65,7 @@
     >
       Order a project now
     </UIButton>
-    <SuccessModal id="footer-modal" :display-time="3000" :visibled="isSuccess" @close="handleModalClose" />
+    <ModalSuccess id="footer-modal" :display-time="3000" :visibled="isSuccess" @close="handleModalClose" />
   </form>
 </template>
 
@@ -74,7 +74,7 @@ import { mapActions } from 'vuex'
 import { required, email, maxLength } from 'vuelidate/lib/validators'
 import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
 import UIButton from '@/components/shared/UIButton'
-import SuccessModal from '@/components/core/modals/Success'
+import ModalSuccess from '@/components/core/modals/ModalSuccess'
 import PlaceholderAsterisk from '@/directives/PlaceholderAsterisk'
 
 export default {
@@ -82,7 +82,7 @@ export default {
   components: {
     UIFormCheckboxes,
     UIButton,
-    SuccessModal,
+    ModalSuccess,
   },
 
   directives: {

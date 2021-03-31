@@ -11,39 +11,39 @@
           :hovered="hovered === 'teams'"
           @mouseover="handleMouseOver"
           @mouseout="handleMouseOut"
-          @click="$refs.teamsModal.show()"
+          @click="$refs.modalTeams.show()"
         />
         <RemoteTechStaffContent
           v-bind="individuals"
           :hovered="hovered === 'individuals'"
           @mouseover="handleMouseOver"
           @mouseout="handleMouseOut"
-          @click="$refs.individualsModal.show()"
+          @click="$refs.modalIndividuals.show()"
         />
       </div>
     </div>
 
-    <Modal ref="teamsModal">
-      <TeamsModal />
+    <Modal ref="modalTeams">
+      <ModalTeams />
     </Modal>
-    <Modal ref="individualsModal">
-      <IndividualsModal />
+    <Modal ref="modalIndividuals">
+      <ModalIndividuals />
     </Modal>
   </section>
 </template>
 
 <script>
 import RemoteTechStaffContent from '@/components/Services/RemoteTechStaffContent'
-import TeamsModal from '@/components/core/modals/Teams'
-import IndividualsModal from '@/components/core/modals/Individuals'
+import ModalTeams from '@/components/core/modals/ModalTeams'
+import ModalIndividuals from '@/components/core/modals/ModalIndividuals'
 import Modal from '@/components/core/Modal'
 
 export default {
   name: 'RemoteTechStaff',
   components: {
     RemoteTechStaffContent,
-    TeamsModal,
-    IndividualsModal,
+    ModalTeams,
+    ModalIndividuals,
     Modal,
   },
 

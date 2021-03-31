@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import OrderProjectFromUsModal from '@/components/core/modals/OrderProjectFromUs'
+import ModalOrderProjectFromUs from '@/components/core/modals/ModalOrderProjectFromUs'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -10,7 +10,7 @@ describe('order Project From Us Modal', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(OrderProjectFromUsModal, {
+    wrapper = mount(ModalOrderProjectFromUs, {
       localVue,
       stubs: ['modal'],
       mocks: {
@@ -44,12 +44,12 @@ describe('order Project From Us Modal', () => {
   // --------------------- //
 
   it('sets the correct default data', () => {
-    const defaultData = OrderProjectFromUsModal.data()
+    const defaultData = ModalOrderProjectFromUs.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
   })
 
   it('has a functions', () => {
-    expect(typeof OrderProjectFromUsModal.methods.handleCheckboxesChange).toBe('function')
+    expect(typeof ModalOrderProjectFromUs.methods.handleCheckboxesChange).toBe('function')
   })
 
   it('call functions with params and change variables state', () => {

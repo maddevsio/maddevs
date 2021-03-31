@@ -1,12 +1,12 @@
 import { mount } from '@vue/test-utils'
 
-import SuccessModal from '@/components/core/modals/Success'
+import ModalSuccess from '@/components/core/modals/ModalSuccess'
 
 describe('success message', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(SuccessModal)
+    wrapper = mount(ModalSuccess)
   })
 
   it("is Vue's instance", () => {

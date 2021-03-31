@@ -70,7 +70,7 @@
               />
               <a class="header__header-phone" href="tel:+442039848555">+44 20 3984 8555</a>
             </div>
-            <UIModalTriggerButton label="Contact me" color="red" @click="$refs.contactMeModal.show()" />
+            <UIModalTriggerButton label="Contact me" color="red" @click="$refs.modalContactMe.show()" />
           </div>
         </div>
       </div>
@@ -80,12 +80,12 @@
     <HeaderMobile
       v-if="isActiveMobileMenu"
       @changed-page="isActiveMobileMenu = false"
-      @open-modal="$refs.contactMeModal.show()"
+      @open-modal="$refs.modalContactMe.show()"
     />
     <!-- END Mobile header -->
 
-    <Modal ref="contactMeModal">
-      <ContactMeModal @success="$refs.contactMeModal.close()" />
+    <Modal ref="modalContactMe">
+      <ModalContactMe @success="$refs.modalContactMe.close()" />
     </Modal>
   </div>
 </template>
@@ -101,7 +101,7 @@ export default {
   name: 'MainHeader',
   components: {
     UIModalTriggerButton,
-    ContactMeModal: () => import('@/components/core/modals/ContactMe'),
+    ModalContactMe: () => import('@/components/core/modals/ModalContactMe'),
     HeaderMobile,
     HeaderLogo,
     Modal,

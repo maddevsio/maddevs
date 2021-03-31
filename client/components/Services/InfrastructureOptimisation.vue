@@ -17,14 +17,14 @@
           <UIModalTriggerButton
             label="Get an infrastructure audit"
             class="infrastructure-optimisation__button"
-            @click="$refs.infrastructureAuditModal.show()"
+            @click="$refs.modalInfrastructureAudit.show()"
           />
         </div>
       </div>
     </div>
 
-    <Modal ref="infrastructureAuditModal">
-      <InfrastructureAuditModal />
+    <Modal ref="modalInfrastructureAudit">
+      <ModalInfrastructureAudit />
     </Modal>
   </section>
 </template>
@@ -32,7 +32,7 @@
 <script>
 import InfrastructureOptimisationContent from '@/components/Services/InfrastructureOptimisationContent'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
-import InfrastructureAuditModal from '@/components/core/modals/InfrastructureAudit'
+import ModalInfrastructureAudit from '@/components/core/modals/ModalInfrastructureAudit'
 import Modal from '@/components/core/Modal'
 import { infrastructureOptimisation } from '@/data/infrastructureOptimisation'
 
@@ -41,7 +41,7 @@ export default {
   components: {
     InfrastructureOptimisationContent,
     UIModalTriggerButton,
-    InfrastructureAuditModal,
+    ModalInfrastructureAudit,
     Modal,
   },
 

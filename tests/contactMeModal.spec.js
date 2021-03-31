@@ -1,16 +1,16 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import contactMeModal from '@/components/core/modals/ContactMe'
+import ModalContactMe from '@/components/core/modals/ModalContactMe'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
 
 localVue.use(Vuelidate)
 
-describe('contact me modal', () => {
+describe('modalContactMe', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(contactMeModal, {
+    wrapper = mount(ModalContactMe, {
       localVue,
       stubs: ['modal'],
       mocks: {
@@ -44,14 +44,14 @@ describe('contact me modal', () => {
   // --------------------- //
 
   it('sets the correct default data', () => {
-    expect(typeof contactMeModal.data).toBe('function')
-    const defaultData = contactMeModal.data()
+    expect(typeof ModalContactMe.data).toBe('function')
+    const defaultData = ModalContactMe.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
     expect(defaultData.fullname).toBe('')
   })
 
   it('has a functions', () => {
-    expect(typeof contactMeModal.methods.submitForm && typeof contactMeModal.methods.resetForm).toBe('function')
+    expect(typeof ModalContactMe.methods.submitForm && typeof ModalContactMe.methods.resetForm).toBe('function')
   })
 
   it('should rest values in data instances', () => {

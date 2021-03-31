@@ -9,12 +9,12 @@
         label="Get your trusted IT partner"
         color="grey"
         class="software-development__button"
-        @click="$refs.getYourTrustedItPartnerModal.show()"
+        @click="$refs.modalGetYourTrustedItPartner.show()"
       />
     </div>
 
-    <Modal ref="getYourTrustedItPartnerModal">
-      <GetYourTrustedItPartnerModal />
+    <Modal ref="modalGetYourTrustedItPartner">
+      <ModalGetYourTrustedItPartner />
     </Modal>
   </section>
 </template>
@@ -22,7 +22,7 @@
 <script>
 import SoftwareDevelopmentContent from '@/components/Services/SoftwareDevelopmentContent'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
-import GetYourTrustedItPartnerModal from '@/components/core/modals/GetYourTrustedItPartner'
+import ModalGetYourTrustedItPartner from '@/components/core/modals/ModalGetYourTrustedItPartner'
 import Modal from '@/components/core/Modal'
 import { developmentCategories } from '@/data/softwareDevelopment'
 
@@ -31,7 +31,7 @@ export default {
   components: {
     SoftwareDevelopmentContent,
     UIModalTriggerButton,
-    GetYourTrustedItPartnerModal,
+    ModalGetYourTrustedItPartner,
     Modal,
   },
 

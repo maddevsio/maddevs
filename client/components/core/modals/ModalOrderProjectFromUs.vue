@@ -18,7 +18,26 @@
             Sorry, the number of characters in this field should not exceed 50.
           </span>
         </div>
-        <!-- End Errors -->
+        <!-- End Erros -->
+      </div>
+      <div class="modal-field-item field-item">
+        <p class="modal-field-name field-name required">Company</p>
+        <input
+          v-model="company"
+          :class="{ invalid: $v.company.$error }"
+          type="text"
+          class="modal-entry-field entry-field"
+          placeholder="MyAwesomeCompany, Inc."
+          @input="$v.company.$touch"
+        />
+        <!-- Erros -->
+        <div v-if="$v.company.$dirty">
+          <span v-if="!$v.company.required" class="modal-error-text error-text">This field is required.</span>
+          <span v-if="!$v.company.maxLength" class="modal-error-text error-text">
+            Sorry, the number of characters in this field should not exceed 300.
+          </span>
+        </div>
+        <!-- End Erros -->
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name required">Work email</p>
@@ -37,7 +56,7 @@
             Invalid email address. Please use your work email.
           </span>
         </div>
-        <!-- End Errors -->
+        <!-- End Erros -->
       </div>
       <div class="modal-field-item field-item">
         <p class="modal-field-name field-name">Phone number</p>
@@ -58,35 +77,35 @@
             Sorry, the number of characters in this field should not exceed 50.
           </span>
         </div>
-        <!-- End Errors -->
+        <!-- End Erros -->
       </div>
       <div class="modal-field-item field-item">
-        <p class="modal-field-name field-name">Expertise you are interested in</p>
+        <p class="modal-field-name field-name">Project description</p>
         <textarea
-          v-model="needAssistanceWith"
-          :class="{ invalid: $v.needAssistanceWith.$error }"
+          v-model="projectDescription"
+          :class="{ invalid: $v.projectDescription.$error }"
           type="text"
           class="modal-entry-field entry-field textarea"
-          placeholder="I need assistance with..."
-          @input="$v.needAssistanceWith.$touch"
+          placeholder="Describe your project..."
+          @input="$v.projectDescription.$touch"
         />
         <!-- Erros -->
-        <div v-if="$v.needAssistanceWith.$dirty">
-          <span v-if="!$v.needAssistanceWith.maxLength" class="modal-error-text error-text">
+        <div v-if="$v.projectDescription.$dirty">
+          <span v-if="!$v.projectDescription.maxLength" class="modal-error-text error-text">
             Sorry, the number of characters in this field should not exceed 500.
           </span>
         </div>
-        <!-- End Errors -->
+        <!-- End Erros -->
       </div>
     </div>
-    <UIFormCheckboxes :id="'get-your-trusted-it-partner'" ref="checkboxes" @change="handleCheckboxesChange" />
+    <UIFormCheckboxes :id="'order-project-from-us'" ref="checkboxes" @change="handleCheckboxesChange" />
     <UIButton
       :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
       :loading="onSubmit"
       class="modal-button"
       @click="sendForm(!$v.validationGroup.$invalid || agreeWithPrivacyPolicy)"
     >
-      Get your trusted IT partner
+      Submit your project
     </UIButton>
   </div>
 </template>
@@ -94,12 +113,12 @@
 <script>
 import { required, email, maxLength } from 'vuelidate/lib/validators'
 import { phone } from '@/helpers/validators'
+import phoneHandlerMixin from '@/mixins/phoneHandlerMixin'
 import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
 import UIButton from '@/components/shared/UIButton'
-import phoneHandlerMixin from '@/mixins/phoneHandlerMixin'
 
 export default {
-  name: 'GetYourTrustedItPartner',
+  name: 'ModalOrderProjectFromUs',
   components: {
     UIFormCheckboxes,
     UIButton,
@@ -112,7 +131,12 @@ export default {
       maxLength: maxLength(50),
     },
 
-    needAssistanceWith: {
+    company: {
+      required,
+      maxLength: maxLength(300),
+    },
+
+    projectDescription: {
       maxLength: maxLength(500),
     },
 
@@ -126,14 +150,16 @@ export default {
       maxLength: maxLength(50),
     },
 
-    validationGroup: ['fullName', 'needAssistanceWith', 'email', 'phoneNumber'],
+    validationGroup: ['fullName', 'company', 'email', 'phoneNumber', 'projectDescription'],
   },
 
   data: () => ({
+    modalName: 'order-project-from-us-modal',
     fullName: null,
     email: null,
     emailTo: process.env.emailContact,
-    needAssistanceWith: null,
+    company: null,
+    projectDescription: null,
     agreeWithPrivacyPolicy: false,
     agreeToGetMadDevsDiscountOffers: false,
     onSubmit: false,
@@ -160,13 +186,14 @@ export default {
       if (isValid === true && !this.onSubmit) {
         this.onSubmit = true
         this.form = {
-          templateId: 304629, // Required
+          templateId: 304632, // Required
           variables: {
             fullName: this.fullName || '',
+            company: this.company || '',
             email: this.email || '',
             emailTo: this.emailTo || '',
             phoneNumber: this.phoneNumber || '',
-            needAssistanceWith: this.needAssistanceWith || '',
+            projectDescription: this.projectDescription || '',
             agreeWithPrivacyPolicy: this.agreeWithPrivacyPolicy ? 'Yes' : 'No',
             agreeToGetMadDevsDiscountOffers: this.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
             subject: this.subject || '',
@@ -193,7 +220,8 @@ export default {
       this.fullName = null
       this.email = null
       this.phoneNumber = null
-      this.needAssistanceWith = null
+      this.company = null
+      this.projectDescription = null
       this.agreeWithPrivacyPolicy = false
       this.agreeToGetMadDevsDiscountOffers = false
     },

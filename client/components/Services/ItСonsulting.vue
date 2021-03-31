@@ -9,12 +9,12 @@
         label="Get expert advice"
         color="black"
         class="it-consulting__button"
-        @click="$refs.getExpertAdviceModal.show()"
+        @click="$refs.modalGetExpertAdvice.show()"
       />
     </div>
 
-    <Modal ref="getExpertAdviceModal">
-      <GetExpertAdviceModal />
+    <Modal ref="modalGetExpertAdvice">
+      <ModalGetExpertAdvice />
     </Modal>
   </section>
 </template>
@@ -22,7 +22,7 @@
 <script>
 import ItConsultingContent from '@/components/Services/ItConsultingContent'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
-import GetExpertAdviceModal from '@/components/core/modals/GetExpertAdvice'
+import ModalGetExpertAdvice from '@/components/core/modals/ModalGetExpertAdvice'
 import Modal from '@/components/core/Modal'
 import { consultungTypes } from '@/data/itConsulting'
 
@@ -31,7 +31,7 @@ export default {
   components: {
     ItConsultingContent,
     UIModalTriggerButton,
-    GetExpertAdviceModal,
+    ModalGetExpertAdvice,
     Modal,
   },
 

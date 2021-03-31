@@ -15,7 +15,7 @@
 import SuccessMessage from '@/components/core/modals/SuccessMessage'
 
 export default {
-  name: 'SuccessModal',
+  name: 'ModalSuccess',
   components: {
     SuccessMessage,
   },

@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import IndividualsModal from '@/components/core/modals/Individuals'
+import ModalIndividuals from '@/components/core/modals/ModalIndividuals'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -10,7 +10,7 @@ describe('individuals modal', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(IndividualsModal, {
+    wrapper = mount(ModalIndividuals, {
       localVue,
       stubs: ['modal'],
       mocks: {
@@ -44,13 +44,13 @@ describe('individuals modal', () => {
   // --------------------- //
 
   it('sets the correct default data', () => {
-    expect(typeof IndividualsModal.data).toBe('function')
-    const defaultData = IndividualsModal.data()
+    expect(typeof ModalIndividuals.data).toBe('function')
+    const defaultData = ModalIndividuals.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
   })
 
   it('has a functions', () => {
-    expect(typeof IndividualsModal.methods.handleCheckboxesChange).toBe('function')
+    expect(typeof ModalIndividuals.methods.handleCheckboxesChange).toBe('function')
   })
 
   it('call functions with params and change variables state', () => {

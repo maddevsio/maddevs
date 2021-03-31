@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import getExpertAdvice from '@/components/core/modals/GetExpertAdvice'
+import ModalGetExpertAdvice from '@/components/core/modals/ModalGetExpertAdvice'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -10,7 +10,7 @@ describe('getExpertAdvice modal', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(getExpertAdvice, {
+    wrapper = mount(ModalGetExpertAdvice, {
       localVue,
       stubs: ['modal'],
       mocks: {
@@ -44,13 +44,13 @@ describe('getExpertAdvice modal', () => {
   // --------------------- //
 
   it('sets the correct default data', () => {
-    expect(typeof getExpertAdvice.data).toBe('function')
-    const defaultData = getExpertAdvice.data()
+    expect(typeof ModalGetExpertAdvice.data).toBe('function')
+    const defaultData = ModalGetExpertAdvice.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
   })
 
   it('has a functions', () => {
-    expect(typeof getExpertAdvice.methods.handleCheckboxesChange).toBe('function')
+    expect(typeof ModalGetExpertAdvice.methods.handleCheckboxesChange).toBe('function')
   })
 
   it('call functions with params and change variables state', () => {

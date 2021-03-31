@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import getYourTrustedItPartnerModal from '@/components/core/modals/GetYourTrustedItPartner'
+import ModalGetYourTrustedItPartner from '@/components/core/modals/ModalGetYourTrustedItPartner'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -10,7 +10,7 @@ describe('get your trusted it partner modal', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(getYourTrustedItPartnerModal, {
+    wrapper = mount(ModalGetYourTrustedItPartner, {
       localVue,
       stubs: ['modal'],
       mocks: {
@@ -44,13 +44,13 @@ describe('get your trusted it partner modal', () => {
   // --------------------- //
 
   it('sets the correct default data', () => {
-    expect(typeof getYourTrustedItPartnerModal.data).toBe('function')
-    const defaultData = getYourTrustedItPartnerModal.data()
+    expect(typeof ModalGetYourTrustedItPartner.data).toBe('function')
+    const defaultData = ModalGetYourTrustedItPartner.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
   })
 
   it('has a functions', () => {
-    expect(typeof getYourTrustedItPartnerModal.methods.handleCheckboxesChange).toBe('function')
+    expect(typeof ModalGetYourTrustedItPartner.methods.handleCheckboxesChange).toBe('function')
   })
 
   it('call functions with params and change variables state', () => {

@@ -33,11 +33,11 @@
         label="Submit your project"
         color="red"
         class="quickProjectStart__button"
-        @click="$refs.orderProjectFromUs.show()"
+        @click="$refs.modalOrderProjectFromUs.show()"
       />
     </div>
-    <Modal ref="orderProjectFromUs">
-      <OrderProjectFromUs />
+    <Modal ref="modalOrderProjectFromUs">
+      <ModalOrderProjectFromUs />
     </Modal>
   </section>
 </template>
@@ -52,7 +52,7 @@ export default {
   components: {
     UIModalTriggerButton,
     Modal,
-    OrderProjectFromUs: () => import('@/components/core/modals/OrderProjectFromUs'),
+    ModalOrderProjectFromUs: () => import('@/components/core/modals/ModalOrderProjectFromUs'),
   },
 
   data() {

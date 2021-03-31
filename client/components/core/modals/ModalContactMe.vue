@@ -102,7 +102,7 @@ import UIButton from '@/components/shared/UIButton'
 import phoneHandlerMixin from '@/mixins/phoneHandlerMixin'
 
 export default {
-  name: 'ContactMe',
+  name: 'ModalContactMe',
   components: {
     UIFormCheckboxes,
     UIButton,

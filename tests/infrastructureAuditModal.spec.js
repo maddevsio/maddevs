@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import InfrastructureAuditModal from '@/components/core/modals/InfrastructureAudit'
+import ModalInfrastructureAudit from '@/components/core/modals/ModalInfrastructureAudit'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -10,7 +10,7 @@ describe('infrastructure Audit Modal', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(InfrastructureAuditModal, {
+    wrapper = mount(ModalInfrastructureAudit, {
       localVue,
       stubs: ['modal'],
       mocks: {
@@ -44,17 +44,17 @@ describe('infrastructure Audit Modal', () => {
   // --------------------- //
 
   it('sets the correct default data', () => {
-    expect(typeof InfrastructureAuditModal.data).toBe('function')
-    const defaultData = InfrastructureAuditModal.data()
+    expect(typeof ModalInfrastructureAudit.data).toBe('function')
+    const defaultData = ModalInfrastructureAudit.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
     expect(defaultData.options).toHaveLength(7)
   })
 
   it('has a functions', () => {
     expect(
-      typeof InfrastructureAuditModal.methods.getPrivacyCheckboxState &&
-        typeof InfrastructureAuditModal.methods.getDiscountOffersCheckboxState &&
-        typeof InfrastructureAuditModal.methods.getSelectedProjectHost,
+      typeof ModalInfrastructureAudit.methods.getPrivacyCheckboxState &&
+        typeof ModalInfrastructureAudit.methods.getDiscountOffersCheckboxState &&
+        typeof ModalInfrastructureAudit.methods.getSelectedProjectHost,
     ).toBe('function')
   })
 
