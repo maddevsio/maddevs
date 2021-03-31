@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`careersForm component Render correctly 1`] = `
+exports[`Careers component should render correctly 1`] = `
 <div>
   <section
     class="careers"
