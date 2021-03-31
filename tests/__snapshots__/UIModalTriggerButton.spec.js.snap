@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ui button modal trigger renders correctly 1`] = `
+<button
+  class="ui-button-modal-trigger ui-button-modal-trigger--red"
+>
+  
+  Label
+
+</button>
+`;

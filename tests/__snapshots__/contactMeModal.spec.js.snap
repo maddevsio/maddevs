@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`contact me modal renders correctly 1`] = `
+exports[`modalContactMe renders correctly 1`] = `
 <div
   class="form"
 >

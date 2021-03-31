@@ -3,33 +3,33 @@
     <div class="container">
       <div class="technologies-and_tools__content-wrap">
         <h2 class="technologies-and_tools__main-title">Technologies <span>&</span>&nbsp;<span>Tools</span></h2>
-        <div :class="`tech_legend-${activeLegend}`" class="tech_legend">
+        <div :class="`tech_legend-${categoryToClass(activeCategory)}`" class="tech_legend">
           <div
-            v-for="(item, key) in legend"
-            :key="key"
+            v-for="category in categories"
+            :key="category"
             data-testid="test-tech_legend__item"
-            :class="`legend-${item.value.replace(/\W/g, '').toLowerCase()}`"
+            :class="`legend-${categoryToClass(category)}`"
             class="tech_legend__item"
-            @click="selectLegend(`${item.value.replace(/\W/g, '').toLowerCase()}`)"
+            @click="setActiveCategory(category)"
           >
-            {{ item.value }}
+            {{ category }}
           </div>
         </div>
-        <div :class="activeLegend" class="tech_container">
+        <div :class="categoryToClass(activeCategory)" class="tech_container">
           <div
-            v-for="(item, index) in technologies"
-            :key="index"
-            :class="`${item.technology}-${item.value} ${item.technology}`"
+            v-for="technology in technologies"
+            :key="`${technology.value} ${technology.category}`"
+            :class="`${technology.category}-${technology.value} ${technology.category}`"
             class="tech_item"
           >
             <img
-              :data-src="require(`@/assets/img/Home/svg/technologies/${item.value}.svg`)"
-              :alt="item.title"
+              :data-src="require(`@/assets/img/Home/svg/technologies/${technology.value}.svg`)"
+              :alt="technology.title"
               width="26"
               height="26"
               class="img_lazy"
             />
-            <span>{{ item.title }}</span>
+            <span>{{ technology.title }}</span>
           </div>
         </div>
       </div>
@@ -38,422 +38,29 @@
 </template>
 
 <script>
+import { categories, technologies } from '@/data/technologiesAndTools'
+import refreshLazyImages from '@/helpers/refreshLazyImages'
+
 export default {
   name: 'TechnologiesAndTools',
   data() {
     return {
-      legend: [
-        {
-          value: 'DevOps',
-        },
-        {
-          value: 'QA',
-        },
-        {
-          value: 'Backend',
-        },
-        {
-          value: 'Frontend',
-        },
-        {
-          value: 'Mobile',
-        },
-        {
-          value: 'PM',
-        },
-        {
-          value: 'Infrastructure',
-        },
-        {
-          value: 'UI/UX',
-        },
-      ],
-
-      technologies: [
-        {
-          title: 'Ansible',
-          value: 'ansible',
-          technology: 'devops',
-        },
-        {
-          title: 'Terraform',
-          value: 'terraform',
-          technology: 'devops',
-        },
-        {
-          title: 'CloudFormation',
-          value: 'cloud-formation',
-          technology: 'devops',
-        },
-        {
-          title: 'Jenkins',
-          value: 'jenkins',
-          technology: 'devops',
-        },
-        {
-          title: 'Bamboo',
-          value: 'bamboo',
-          technology: 'devops',
-        },
-        {
-          title: 'GitlabCI',
-          value: 'gitlab',
-          technology: 'devops',
-        },
-        {
-          title: 'TravisCI',
-          value: 'travis-ci',
-          technology: 'devops',
-        },
-        {
-          title: 'ELK',
-          value: 'elastic',
-          technology: 'devops',
-        },
-        {
-          title: 'CircleCI',
-          value: 'circle-ci',
-          technology: 'devops',
-        },
-        {
-          title: 'Sentry',
-          value: 'sentry',
-          technology: 'devops',
-        },
-        {
-          title: 'CloudWatch',
-          value: 'cloud-watch',
-          technology: 'devops',
-        },
-        {
-          title: 'Prometheus',
-          value: 'prometheus',
-          technology: 'devops',
-        },
-        {
-          title: 'AWS',
-          value: 'aws',
-          technology: 'infrastructure',
-        },
-        {
-          title: 'GCP',
-          value: 'gcp',
-          technology: 'infrastructure',
-        },
-        {
-          title: 'Digital Ocean',
-          value: 'digital-ocean',
-          technology: 'infrastructure',
-        },
-        {
-          title: 'Azure',
-          value: 'azure',
-          technology: 'infrastructure',
-        },
-        {
-          title: 'CloudNative',
-          value: 'cloud-native',
-          technology: 'infrastructure',
-        },
-        {
-          title: 'Heroku',
-          value: 'heroku',
-          technology: 'infrastructure',
-        },
-        {
-          title: 'Netlify',
-          value: 'netlify',
-          technology: 'infrastructure',
-        },
-        {
-          title: 'CloudFlare',
-          value: 'cloudflare',
-          technology: 'infrastructure',
-        },
-        {
-          title: 'Kotlin',
-          value: 'kotlin',
-          technology: 'mobile',
-        },
-        {
-          title: 'Java',
-          value: 'java',
-          technology: 'mobile',
-        },
-        {
-          title: 'Objective-C',
-          value: 'obj-c',
-          technology: 'mobile',
-        },
-        {
-          title: 'Swift',
-          value: 'swift',
-          technology: 'mobile',
-        },
-        {
-          title: 'IOS',
-          value: 'apple',
-          technology: 'mobile',
-        },
-        {
-          title: 'Android',
-          value: 'android',
-          technology: 'mobile',
-        },
-        {
-          title: 'Jira',
-          value: 'jira',
-          technology: 'pm',
-        },
-        {
-          title: 'Slack',
-          value: 'slack',
-          technology: 'pm',
-        },
-        {
-          title: 'Meet',
-          value: 'meet',
-          technology: 'pm',
-        },
-        {
-          title: 'Zoom',
-          value: 'zoom',
-          technology: 'pm',
-        },
-        {
-          title: 'Miro',
-          value: 'miro',
-          technology: 'pm',
-        },
-        {
-          title: 'Trello',
-          value: 'trello',
-          technology: 'pm',
-        },
-        {
-          title: 'Loom',
-          value: 'loom',
-          technology: 'pm',
-        },
-        {
-          title: 'Jira Assistant',
-          value: 'jira-assistant',
-          technology: 'pm',
-        },
-        {
-          title: 'Service Desk',
-          value: 'service-desk',
-          technology: 'pm',
-        },
-        {
-          title: 'Basecamp',
-          value: 'basecamp',
-          technology: 'pm',
-        },
-        {
-          title: 'Notion',
-          value: 'notion',
-          technology: 'pm',
-        },
-        {
-          title: 'Zapier',
-          value: 'zapier',
-          technology: 'pm',
-        },
-        {
-          title: 'Python',
-          value: 'python',
-          technology: 'backend',
-        },
-        {
-          title: 'Go',
-          value: 'go',
-          technology: 'backend',
-        },
-        {
-          title: 'Node.js',
-          value: 'node',
-          technology: 'backend',
-        },
-        {
-          title: 'JavaScript',
-          value: 'js',
-          technology: 'backend',
-        },
-        {
-          title: 'TypeScript',
-          value: 'typescript',
-          technology: 'backend',
-        },
-        {
-          title: 'PHP',
-          value: 'php',
-          technology: 'backend',
-        },
-        {
-          title: 'Ruby',
-          value: 'ruby',
-          technology: 'backend',
-        },
-        {
-          title: 'C',
-          value: 'c',
-          technology: 'backend',
-        },
-        {
-          title: 'C++',
-          value: 'c-plus',
-          technology: 'backend',
-        },
-        {
-          title: 'Figma',
-          value: 'figma',
-          technology: 'uiux',
-        },
-        {
-          title: 'Adobe Suite',
-          value: 'adobe',
-          technology: 'uiux',
-        },
-        {
-          title: 'Sketch',
-          value: 'sketch',
-          technology: 'uiux',
-        },
-        {
-          title: 'InVision',
-          value: 'invision',
-          technology: 'uiux',
-        },
-        {
-          title: 'Zeplin',
-          value: 'zeplin',
-          technology: 'uiux',
-        },
-        {
-          title: 'Balsamic',
-          value: 'balsamic',
-          technology: 'uiux',
-        },
-        {
-          title: 'Principle',
-          value: 'principle-app',
-          technology: 'uiux',
-        },
-        {
-          title: 'PostCSS',
-          value: 'post-css',
-          technology: 'frontend',
-        },
-        {
-          title: 'TypeScript',
-          value: 'typescript',
-          technology: 'frontend',
-        },
-        {
-          title: 'Angular',
-          value: 'angular',
-          technology: 'frontend',
-        },
-        {
-          title: 'Webpack',
-          value: 'webpack',
-          technology: 'frontend',
-        },
-        {
-          title: 'Next.js',
-          value: 'next',
-          technology: 'frontend',
-        },
-        {
-          title: 'Nuxt.js',
-          value: 'nuxt',
-          technology: 'frontend',
-        },
-        {
-          title: 'JavaScript',
-          value: 'js',
-          technology: 'frontend',
-        },
-        {
-          title: 'React',
-          value: 'react',
-          technology: 'frontend',
-        },
-        {
-          title: 'Babel',
-          value: 'babel',
-          technology: 'frontend',
-        },
-        {
-          title: 'Vue',
-          value: 'vue',
-          technology: 'frontend',
-        },
-        {
-          title: 'SASS',
-          value: 'sass',
-          technology: 'frontend',
-        },
-        {
-          title: 'Jasmine',
-          value: 'jasmine',
-          technology: 'qa',
-        },
-        {
-          title: 'Selenoid',
-          value: 'selenoid',
-          technology: 'qa',
-        },
-        {
-          title: 'Appium',
-          value: 'appium',
-          technology: 'qa',
-        },
-        {
-          title: 'Cucumber',
-          value: 'cucumber',
-          technology: 'qa',
-        },
-        {
-          title: 'PyTest',
-          value: 'pytest',
-          technology: 'qa',
-        },
-        {
-          title: 'Selenium',
-          value: 'selenium',
-          technology: 'qa',
-        },
-        {
-          title: 'Selenium Grid',
-          value: 'selenium-grid',
-          technology: 'qa',
-        },
-      ],
-
-      activeLegend: '',
+      activeCategory: '',
+      categories,
+      technologies,
     }
   },
 
   methods: {
-    selectLegend(e) {
-      if (e === this.activeLegend) {
-        this.activeLegend = ''
-      } else {
-        this.activeLegend = e
-      }
-      this.$nextTick(() => this.refreshImg())
+    refreshLazyImages,
+
+    setActiveCategory(category) {
+      this.activeCategory = category === this.activeCategory ? '' : category
+      this.$nextTick(() => this.refreshLazyImages())
     },
 
-    refreshImg() {
-      const lazySvg = [].slice.call(document.querySelectorAll('img.img_lazy'))
-      lazySvg.forEach(svg => {
-        /* eslint-disable */
-        svg.src = svg.dataset.src;
-        svg.classList.remove('img_lazy');
-        /* eslint-enable */
-      })
+    categoryToClass(category) {
+      return category.replace(/\W/g, '').toLowerCase()
     },
   },
 }
@@ -694,14 +301,12 @@ $tech_legends: (
     }
   }
 
-  // Done
   &.qa-jasmine {
     order: 72;
 
     @include mediaMiddleScreen(54);
   }
 
-  // Done
   &.qa-selenoid {
     order: 70;
 
@@ -710,33 +315,28 @@ $tech_legends: (
     @include mediaMobileScreen(44);
   }
 
-  // Done
   &.qa-appium {
     order: 47;
 
     @include mediaMiddleScreen(50);
   }
 
-  // Done
   &.qa-cucumber {
     order: 48;
 
     @include mediaMiddleScreen(51);
   }
 
-  // Done
   &.qa-test-ng {
     order: 99;
   }
 
-  // Done
   &.qa-pytest {
     order: 71;
 
     @include mediaMiddleScreen(53);
   }
 
-  // Done
   &.qa-selenium {
     order: 60;
 
@@ -745,7 +345,6 @@ $tech_legends: (
     @include mediaMobileScreen(58);
   }
 
-  // Done
   &.qa-selenium-grid {
     order: 59;
 
@@ -754,14 +353,12 @@ $tech_legends: (
     @include mediaMobileScreen(57);
   }
 
-  // Done
   &.backend-python {
     order: 31;
 
     @include mediaMiddleScreen(32);
   }
 
-  // Done
   &.backend-go {
     order: 32;
 
@@ -770,7 +367,6 @@ $tech_legends: (
     @include mediaMobileScreen(32);
   }
 
-  // Done
   &.backend-node {
     order: 33;
 
@@ -779,7 +375,6 @@ $tech_legends: (
     @include mediaMobileScreen(53);
   }
 
-  // Done
   &.backend-js {
     order: 34;
 
@@ -788,21 +383,18 @@ $tech_legends: (
     @include mediaMobileScreen(44);
   }
 
-  // Done
   &.backend-typescript {
     order: 43;
 
     @include mediaMiddleScreen(36);
   }
 
-  // Done
   &.backend-php {
     order: 44;
 
     @include mediaMiddleScreen(41);
   }
 
-  // Done
   &.backend-ruby {
     order: 45;
 
@@ -811,7 +403,6 @@ $tech_legends: (
     @include mediaMobileScreen(52);
   }
 
-  // Done
   &.backend-c-plus {
     order: 58;
 
@@ -820,7 +411,6 @@ $tech_legends: (
     @include mediaMobileScreen(44);
   }
 
-  // Done
   &.backend-c {
     order: 46;
 
@@ -829,7 +419,6 @@ $tech_legends: (
     @include mediaMobileScreen(44);
   }
 
-  // Done
   &.mobile-kotlin {
     order: 11;
 
@@ -838,21 +427,18 @@ $tech_legends: (
     @include mediaMobileScreen(16);
   }
 
-  // Done
   &.mobile-java {
     order: 12;
 
     @include mediaMiddleScreen(22);
   }
 
-  // Done
   &.mobile-obj-c {
     order: 35;
 
     @include mediaMiddleScreen(23);
   }
 
-  // Done
   &.mobile-swift {
     order: 23;
 
@@ -861,14 +447,12 @@ $tech_legends: (
     @include mediaMobileScreen(17);
   }
 
-  // Done
   &.mobile-apple {
     order: 36;
 
     @include mediaMiddleScreen(24);
   }
 
-  // Done
   &.mobile-android {
     order: 24;
 
@@ -877,7 +461,6 @@ $tech_legends: (
     @include mediaMobileScreen(18);
   }
 
-  // Done
   &.frontend-js {
     order: 65;
 
@@ -886,7 +469,6 @@ $tech_legends: (
     @include mediaMobileScreen(66);
   }
 
-  // Done
   &.frontend-react {
     order: 66;
 
@@ -895,7 +477,6 @@ $tech_legends: (
     @include mediaMobileScreen(67);
   }
 
-  // Done
   &.frontend-babel {
     order: 67;
 
@@ -904,7 +485,6 @@ $tech_legends: (
     @include mediaMobileScreen(68);
   }
 
-  // Done
   &.frontend-vue {
     order: 68;
 
@@ -913,28 +493,24 @@ $tech_legends: (
     @include mediaMobileScreen(69);
   }
 
-  // Done
   &.frontend-webpack {
     order: 55;
 
     @include mediaMiddleScreen(63);
   }
 
-  // Done
   &.frontend-next {
     order: 56;
 
     @include mediaMiddleScreen(64);
   }
 
-  // Done
   &.frontend-nuxt {
     order: 57;
 
     @include mediaMiddleScreen(65);
   }
 
-  // Done
   &.frontend-sass {
     order: 69;
 
@@ -943,58 +519,48 @@ $tech_legends: (
     @include mediaMobileScreen(70);
   }
 
-  // Done
   &.frontend-post-css {
     order: 52;
 
     @include mediaMiddleScreen(60);
   }
 
-  // Done
   &.frontend-typescript {
     order: 53;
 
     @include mediaMiddleScreen(61);
   }
 
-  // Done
   &.frontend-angular {
     order: 54;
 
     @include mediaMiddleScreen(62);
   }
 
-  // Done
   &.devops-ansible {
     order: 1;
   }
 
-  // Done
   &.devops-terraform {
     order: 2;
   }
 
-  // Done
   &.devops-cloud-formation {
     order: 3;
   }
 
-  // Done
   &.devops-jenkins {
     order: 4;
   }
 
-  // Done
   &.devops-bamboo {
     order: 5;
   }
 
-  // Done
   &.devops-gitlab {
     order: 6;
   }
 
-  // Done
   &.devops-travis-ci {
     order: 13;
 
@@ -1003,7 +569,6 @@ $tech_legends: (
     @include mediaMobileScreen(7);
   }
 
-  // Done
   &.devops-circle-ci {
     order: 14;
 
@@ -1012,7 +577,6 @@ $tech_legends: (
     @include mediaMobileScreen(8);
   }
 
-  // Done
   &.devops-elastic {
     order: 15;
 
@@ -1021,7 +585,6 @@ $tech_legends: (
     @include mediaMobileScreen(9);
   }
 
-  // Done
   &.devops-sentry {
     order: 16;
 
@@ -1030,7 +593,6 @@ $tech_legends: (
     @include mediaMobileScreen(10);
   }
 
-  // Done
   &.devops-cloud-watch {
     order: 17;
 
@@ -1039,7 +601,6 @@ $tech_legends: (
     @include mediaMobileScreen(11);
   }
 
-  // Done
   &.devops-prometheus {
     order: 18;
 
@@ -1048,28 +609,24 @@ $tech_legends: (
     @include mediaMobileScreen(12);
   }
 
-  // Done
   &.infrastructure-aws {
     order: 7;
 
     @include mediaMobileScreen(13);
   }
 
-  // Done
   &.infrastructure-gcp {
     order: 8;
 
     @include mediaMobileScreen(14);
   }
 
-  // Done
   &.infrastructure-digital-ocean {
     order: 9;
 
     @include mediaMobileScreen(15);
   }
 
-  // Done
   &.infrastructure-azure {
     order: 10;
 
@@ -1078,7 +635,6 @@ $tech_legends: (
     @include mediaMobileScreen(26);
   }
 
-  // Done
   &.infrastructure-heroku {
     order: 20;
 
@@ -1087,7 +643,6 @@ $tech_legends: (
     @include mediaMobileScreen(20);
   }
 
-  // Done
   &.infrastructure-netlify {
     order: 21;
 
@@ -1096,7 +651,6 @@ $tech_legends: (
     @include mediaMobileScreen(21);
   }
 
-  // Done
   &.infrastructure-cloudflare {
     order: 22;
 
@@ -1105,7 +659,6 @@ $tech_legends: (
     @include mediaMobileScreen(25);
   }
 
-  // Done
   &.infrastructure-cloud-native {
     order: 19;
 
@@ -1114,35 +667,30 @@ $tech_legends: (
     @include mediaMobileScreen(19);
   }
 
-  // Done
   &.pm-jira {
     order: 25;
 
     @include mediaMiddleScreen(28);
   }
 
-  // Done
   &.pm-slack {
     order: 26;
 
     @include mediaMiddleScreen(29);
   }
 
-  // Done
   &.pm-meet {
     order: 27;
 
     @include mediaMiddleScreen(30);
   }
 
-  // Done
   &.pm-zoom {
     order: 28;
 
     @include mediaMiddleScreen(31);
   }
 
-  // Done
   &.pm-miro {
     order: 29;
 
@@ -1151,35 +699,30 @@ $tech_legends: (
     @include mediaMobileScreen(43);
   }
 
-  // Done
   &.pm-jira-assistant {
     order: 38;
 
     @include mediaMobileScreen(34);
   }
 
-  // Done
   &.pm-loom {
     order: 37;
 
     @include mediaMobileScreen(33);
   }
 
-  // Done
   &.pm-service-desk {
     order: 39;
 
     @include mediaMobileScreen(35);
   }
 
-  // Done
   &.pm-basecamp {
     order: 40;
 
     @include mediaMobileScreen(36);
   }
 
-  // Done
   &.pm-trello {
     order: 30;
 
@@ -1188,7 +731,6 @@ $tech_legends: (
     @include mediaMobileScreen(42);
   }
 
-  // Done
   &.pm-notion {
     order: 41;
 
@@ -1197,7 +739,6 @@ $tech_legends: (
     @include mediaMobileScreen(43);
   }
 
-  // Done
   &.pm-zapier {
     order: 42;
 
@@ -1206,7 +747,6 @@ $tech_legends: (
     @include mediaMobileScreen(44);
   }
 
-  // Done
   &.uiux-figma {
     order: 49;
 
@@ -1215,7 +755,6 @@ $tech_legends: (
     @include mediaMobileScreen(99);
   }
 
-  // Done
   &.uiux-sketch {
     order: 51;
 
@@ -1224,7 +763,6 @@ $tech_legends: (
     @include mediaMobileScreen(99);
   }
 
-  // Done
   &.uiux-adobe {
     order: 50;
 
@@ -1233,12 +771,10 @@ $tech_legends: (
     @include mediaMobileScreen(99);
   }
 
-  // Done
   &.uiux-frame {
     order: 99;
   }
 
-  // Done
   &.uiux-invision {
     order: 61;
 
@@ -1247,7 +783,6 @@ $tech_legends: (
     @include mediaMobileScreen(99);
   }
 
-  // Done
   &.uiux-zeplin {
     order: 62;
 
@@ -1256,7 +791,6 @@ $tech_legends: (
     @include mediaMobileScreen(99);
   }
 
-  // Done
   &.uiux-balsamic {
     order: 63;
 
@@ -1265,7 +799,6 @@ $tech_legends: (
     @include mediaMobileScreen(99);
   }
 
-  // Done
   &.uiux-principle-app {
     order: 64;
 
@@ -1274,27 +807,22 @@ $tech_legends: (
     @include mediaMobileScreen(99);
   }
 
-  // Done
   &.other-confluence {
     order: 99;
   }
 
-  // Done
   &.other-teamcity {
     order: 99;
   }
 
-  // Done
   &.other-aws-code {
     order: 99;
   }
 
-  // Done
   &.other-team {
     order: 99;
   }
 
-  // Done
   &.other-skype {
     order: 99;
   }

@@ -1,16 +1,16 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import getExpertAdvice from '@/components/Modals/get-expert-advice-modal'
+import ModalGetExpertAdvice from '@/components/core/modals/ModalGetExpertAdvice'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
 
 localVue.use(Vuelidate)
 
-describe('technology stack modal', () => {
+describe('getExpertAdvice modal', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(getExpertAdvice, {
+    wrapper = mount(ModalGetExpertAdvice, {
       localVue,
       stubs: ['modal'],
       mocks: {
@@ -44,23 +44,17 @@ describe('technology stack modal', () => {
   // --------------------- //
 
   it('sets the correct default data', () => {
-    expect(typeof getExpertAdvice.data).toBe('function')
-    const defaultData = getExpertAdvice.data()
+    expect(typeof ModalGetExpertAdvice.data).toBe('function')
+    const defaultData = ModalGetExpertAdvice.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
-    expect(defaultData.inputId).toEqual('get-expert-advice')
   })
 
   it('has a functions', () => {
-    expect(
-      typeof getExpertAdvice.methods.getPrivacyCheckboxState &&
-        typeof getExpertAdvice.methods.getDiscountOffersCheckboxState,
-    ).toBe('function')
+    expect(typeof ModalGetExpertAdvice.methods.handleCheckboxesChange).toBe('function')
   })
 
   it('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true)
-    wrapper.vm.getDiscountOffersCheckboxState(true)
-
+    wrapper.vm.handleCheckboxesChange({ privacy: true, discountOffers: true })
     expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true)
   })
 
