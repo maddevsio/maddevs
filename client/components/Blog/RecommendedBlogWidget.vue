@@ -108,6 +108,7 @@ export default {
   }
 
   &__image {
+    display: block;
     max-width: 100%;
     height: auto;
     margin-bottom: 16px;

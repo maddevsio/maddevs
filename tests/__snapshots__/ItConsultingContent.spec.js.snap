@@ -23,7 +23,9 @@ exports[`itConsultingContent component renders correctly 1`] = `
       <p
         class="paragraph it-consulting-item__paragraph"
       >
+        
         Paragraph
+      
       </p>
     </client-only-stub>
   </div>

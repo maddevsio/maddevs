@@ -17,7 +17,7 @@ describe('index page', () => {
     }
     wrapper = mount(IndexPage, {
       localVue,
-      stubs: ['client-only', 'nuxt-link'],
+      stubs: ['client-only', 'nuxt-link', 'NuxtLink'],
     })
   })
 
@@ -30,12 +30,4 @@ describe('index page', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
   // --------------------- //
-
-  it('sets the correctly data', () => {
-    expect(wrapper.vm.$data.title).toEqual('Mad Devs: Custom Software Development Company')
-    expect(wrapper.vm.$data.description).toEqual(
-      'Mad Devs develops enterprise-level custom software solutions & mobile apps for finance, transportation, logistics, security, edtech, cloudtech & advertising industries.',
-    )
-    expect(wrapper.vm.$data.ogUrl).toEqual('https://maddevs.io/')
-  })
 })

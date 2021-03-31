@@ -16,13 +16,13 @@
         </div>
       </div>
       <div class="open-source__projects row">
-        <div v-for="(openSource, i) in openSources" :key="i" class="col-xl-4 col-lg-4 col-md-6">
-          <div :class="`open-source__project-${openSource.projectName}`" class="open-source__project">
-            <a :href="openSource.link" class="open-source__project-link" target="_blank">
+        <div v-for="project in projects" :key="project.name" class="col-xl-4 col-lg-4 col-md-6">
+          <div :class="`open-source__project-${project.name}`" class="open-source__project">
+            <a :href="project.link" class="open-source__project-link" target="_blank">
               <div class="open-source__content-wrap">
-                <div :class="`open-source__icon open-source__${openSource.projectName}`"></div>
+                <div :class="`open-source__icon open-source__${project.name}`"></div>
               </div>
-              <p class="open-source__paragraph" v-html="openSource.description">{{ openSource.description }}</p>
+              <p class="open-source__paragraph" v-html="project.description">{{ project.description }}</p>
             </a>
           </div>
         </div>
@@ -33,44 +33,14 @@
 </template>
 
 <script>
+import { projects } from '@/data/openSource'
+
 export default {
   name: 'OpenSource',
+
   data() {
     return {
-      openSources: [
-        {
-          projectName: 'mad-location',
-          link: 'https://github.com/maddevsio/mad-location-manager',
-          description: 'А library for GPS and accelerometer data "fusion" with a Kalman filter.',
-        },
-        {
-          projectName: 'comedian',
-          link: 'https://github.com/maddevsio/comedian',
-          description:
-            'A <span>team-management</span> system leveraging Slack and Telegram bot functionalities to enable remote standups and track daily performance.',
-        },
-        {
-          projectName: 'ariadna',
-          link: 'https://github.com/maddevsio/ariadna',
-          description:
-            'An <span>open-source</span> geocoder, built on top of ElasticSearch, for fast geocoding and better search for CIS countries.',
-        },
-        {
-          projectName: 'id-match',
-          link: 'https://github.com/maddevsio/idmatch',
-          description: 'An open source tool enabling ID cards recognition to ensure security on your premises.',
-        },
-        {
-          projectName: 'your-cast',
-          link: 'https://github.com/maddevsio/yourcast.tv',
-          description: 'A solution to create lists of YouTube videos and stream them online in just a few seconds.',
-        },
-        {
-          projectName: 'heimdall',
-          link: 'https://github.com/maddevsio/heimdall',
-          description: 'A <span>security-monitoring</span> solution for Ethereum smart contracts.',
-        },
-      ],
+      projects,
     }
   },
 }

@@ -3,84 +3,41 @@
     <div class="container">
       <h2 class="it-consulting__main-title">IT Consulting</h2>
       <div class="it-consulting__content row">
-        <ItConsultingContent
-          :title="TechnologyStack.title"
-          :sub-title="TechnologyStack.subTitle"
-          :paragraph="TechnologyStack.paragraph"
-          :class-name="TechnologyStack.className"
-        />
-        <ItConsultingContent
-          :title="ProcessAudit.title"
-          :sub-title="ProcessAudit.subTitle"
-          :paragraph="ProcessAudit.paragraph"
-          :class-name="ProcessAudit.className"
-        />
-        <ItConsultingContent
-          :title="TeamHeadcount.title"
-          :sub-title="TeamHeadcount.subTitle"
-          :paragraph="TeamHeadcount.paragraph"
-          :class-name="TeamHeadcount.className"
-        />
+        <ItConsultingContent v-for="type in consultungTypes" :key="type.type" v-bind="type" />
       </div>
-      <UIButtonModalTrigger
-        :button-inner-text="buttonInnerText"
-        :is-black="true"
+      <UIModalTriggerButton
+        label="Get expert advice"
+        color="black"
         class="it-consulting__button"
-        @onClick="$refs.getExpertAdviceModal.show()"
+        @click="$refs.modalGetExpertAdvice.show()"
       />
     </div>
 
-    <Modal ref="getExpertAdviceModal">
-      <getExpertAdviceModal />
+    <Modal ref="modalGetExpertAdvice">
+      <ModalGetExpertAdvice />
     </Modal>
   </section>
 </template>
 
 <script>
 import ItConsultingContent from '@/components/Services/ItConsultingContent'
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
-import getExpertAdviceModal from '@/components/Modals/get-expert-advice-modal'
-import Modal from '@/containers/Modal'
+import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
+import ModalGetExpertAdvice from '@/components/core/modals/ModalGetExpertAdvice'
+import Modal from '@/components/core/Modal'
+import { consultungTypes } from '@/data/itConsulting'
 
 export default {
   name: 'ItConsulting',
   components: {
     ItConsultingContent,
-    UIButtonModalTrigger,
-    getExpertAdviceModal,
+    UIModalTriggerButton,
+    ModalGetExpertAdvice,
     Modal,
   },
 
   data() {
     return {
-      TechnologyStack: {
-        title: 'Technology <br> Stack',
-        subTitle: 'Tired of the slow and <span>hard-to-maintain</span> technology that your previous team used?',
-        paragraph:
-          'We’ll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.',
-
-        className: 'first-item',
-      },
-
-      ProcessAudit: {
-        title: 'Process <br> Audit',
-        subTitle: 'Have to constantly deal with extended deadlines and <span>mess-ups?</span>',
-        paragraph:
-          'Your process probably just lacks transparency and reasonable control. We know how to avoid this and check who does what right now.',
-
-        className: 'second-item',
-      },
-
-      TeamHeadcount: {
-        title: 'Team <br> Headcount',
-        subTitle: 'Is your team too big or too small and therefore causing trouble?',
-        paragraph:
-          'Hire good people and get rid of underperformers. Easier said than done, right? Get assessments for the skills and seniority level of your staff. Our positively mad engineers and PMs know how to do this.',
-
-        className: 'third-item',
-      },
-
-      buttonInnerText: 'Get expert advice',
+      consultungTypes,
     }
   },
 }

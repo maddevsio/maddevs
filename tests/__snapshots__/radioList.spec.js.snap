@@ -7,7 +7,7 @@ exports[`radio buttons list renders correctly 1`] = `
   <div
     class="radio-buttons__field-name field-name required"
   >
-    field name
+    Label
   </div>
    
   <div
@@ -15,11 +15,11 @@ exports[`radio buttons list renders correctly 1`] = `
   >
     <label
       class="radio-buttons__radio-label"
-      for="digital-ocean-input id"
+      for="undefined-input id"
     >
       <input
         class="radio-buttons__radio-input"
-        id="digital-ocean-input id"
+        id="undefined-input id"
         name="input id"
         type="radio"
       />
@@ -31,16 +31,16 @@ exports[`radio buttons list renders correctly 1`] = `
       <p
         class="radio-buttons__radio-text_item"
       >
-        Digital Ocean
+        
       </p>
     </label>
     <label
       class="radio-buttons__radio-label"
-      for="other-input id"
+      for="undefined-input id"
     >
       <input
         class="radio-buttons__radio-input"
-        id="other-input id"
+        id="undefined-input id"
         name="input id"
         type="radio"
       />
@@ -52,7 +52,7 @@ exports[`radio buttons list renders correctly 1`] = `
       <p
         class="radio-buttons__radio-text_item"
       >
-        Other
+        
       </p>
     </label>
   </div>
