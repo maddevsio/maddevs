@@ -365,14 +365,42 @@ export default {
       }
     }
 
-    &__featured-post,
+    &__featured-post {
+      width: 100%;
+      margin-bottom: 31px;
+    }
+
     &__list-title {
       display: none;
     }
   }
 
   .featured-post {
+    display: flex;
+    flex-direction: column;
     padding-right: 0;
+
+    &__date,
+    .blog-post__author {
+      display: none;
+    }
+
+    &__title {
+      order: 1;
+      margin-bottom: 6px;
+      font-size: 22.78px;
+    }
+
+    &__text {
+      order: 2;
+      margin-bottom: 0;
+    }
+
+    &__cover-wrapper {
+      order: 0;
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
   }
 
   .single-cluster {
