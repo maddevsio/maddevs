@@ -1,11 +1,11 @@
 import { mount } from '@vue/test-utils'
-import Kaf from '../client/pages/case-studies/kaf'
+import PhaseUserAuthorisation from '../client/components/Cases/Kaf/PhaseUserAuthorisation'
 
-describe('kaf', () => {
+describe('phase user authorisation', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(Kaf)
+    wrapper = mount(PhaseUserAuthorisation)
   })
 
   // ------ IMPORTANT ----- //

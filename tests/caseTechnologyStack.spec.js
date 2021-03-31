@@ -1,11 +1,11 @@
 import { mount } from '@vue/test-utils'
-import Kaf from '../client/pages/case-studies/kaf'
+import TechnologyStack from '../client/components/Cases/Kaf/TechnologyStack'
 
-describe('kaf', () => {
+describe('technology stack', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(Kaf)
+    wrapper = mount(TechnologyStack)
   })
 
   // ------ IMPORTANT ----- //

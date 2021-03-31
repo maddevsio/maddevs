@@ -16,7 +16,7 @@
     </CaseHeader>
     <SJMCVideo />
     <section class="case_body">
-      <div id="case-first-section" class="case_animation_block"></div>
+      <div id="case-body" class="case_animation_block"></div>
       <section class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom">
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front during the First World War in
