@@ -3,6 +3,7 @@
     <input
       id="file"
       ref="fileInput"
+      data-testid="test-file"
       class="file-input__uploader"
       type="file"
       name="file"
@@ -10,7 +11,12 @@
       @change="handleFileSelect"
     />
     <span class="none-decorated-dash">–</span>
-    <label :class="`file-input__cv--${selectedFile ? 'selected' : 'attachable'}`" class="file-input__cv" for="file">
+    <label
+      data-testid="test-file-label"
+      :class="`file-input__cv--${selectedFile ? 'selected' : 'attachable'}`"
+      class="file-input__cv"
+      for="file"
+    >
       {{ selectedFilename }}
     </label>
   </div>
@@ -41,11 +47,6 @@ export default {
       const [file] = event.target.files
       this.selectedFile = file
       this.$emit('input', file)
-    },
-
-    reset() {
-      this.selectedFile = null
-      this.$refs.fileInput.value = null
     },
   },
 }

@@ -94,7 +94,7 @@
             </li>
             <li class="careers__form-list-item careers__file-attach">
               <div>
-                <FileInput ref="fileInput" v-model="cvFile" @input="handleFileSelect" />
+                <FileInput ref="fileInput" v-model="cvFile" data-testid="test-fileInput" @input="handleFileSelect" />
                 <!-- Erros -->
                 <div v-if="$v.cvFile.$dirty">
                   <span v-if="!$v.cvFile.required" class="modal-error-text error-text error-text-file-attach">

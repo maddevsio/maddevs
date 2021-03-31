@@ -32,23 +32,3 @@ exports[`Button component should render correctly without slot 1`] = `
   />
 </div>
 `;
-
-exports[`UIButton component should render correctly with slot 1`] = `
-<div>
-  <button
-    class="button"
-    id="careers-btn"
-  >
-    It is a button
-  </button>
-</div>
-`;
-
-exports[`UIButton component should render correctly without slot 1`] = `
-<div>
-  <button
-    class="button"
-    id="careers-btn"
-  />
-</div>
-`;
