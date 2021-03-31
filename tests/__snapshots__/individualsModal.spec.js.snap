@@ -54,7 +54,7 @@ exports[`individuals modal renders correctly 1`] = `
        
       <input
         class="modal-entry-field entry-field"
-        placeholder="+1 23X XXX-XXXX"
+        placeholder="+X XXX XXX-XXXX"
         type="text"
       />
        

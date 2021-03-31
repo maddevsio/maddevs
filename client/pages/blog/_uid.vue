@@ -97,6 +97,7 @@ export default {
       meta: [
         { name: 'description', content: this.description },
         // Facebook / Open Graph
+        { property: 'og:site_name', content: 'Mad Devs: Software & Mobile App Development Company' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: this.openGraphUrl },
         {
@@ -111,7 +112,7 @@ export default {
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         // Twitter / Twitter Card
-        { property: 'twitter:card', content: 'summary' },
+        { property: 'twitter:card', content: 'summary_large_image' },
         {
           property: 'twitter:text:title',
           content: this.title,
