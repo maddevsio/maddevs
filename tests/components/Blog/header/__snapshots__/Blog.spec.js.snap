@@ -9,13 +9,17 @@ exports[`header Blog is a Vue instance 1`] = `
     <h1
       class="blog-post__blog-title title"
     >
-      Three reasons why your project needs a senior developer
+      
+    Three reasons why your project needs a senior developer
+  
     </h1>
      
     <p
       class="blog-post__blog-sub-title"
     >
       
+    
+  
     </p>
      
     <div
@@ -36,7 +40,9 @@ exports[`header Blog is a Vue instance 1`] = `
           <p
             class="blog-post__author-name"
           >
-            Tamara Mun
+            
+      Tamara Mun
+    
           </p>
            
           <div
@@ -57,13 +63,17 @@ exports[`header Blog is a Vue instance 1`] = `
         <div
           class="blog-post__date"
         >
+          
           Mar 23, 2021
+        
         </div>
          
         <div
           class="blog-post__tag"
         >
+          
           Project Management
+        
         </div>
       </div>
     </div>

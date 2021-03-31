@@ -39,7 +39,9 @@ exports[`slice block component should render correctly 1`] = `
           <div
             class="author__name"
           >
-            John Doe
+            
+      John Doe
+    
           </div>
         </div>
       </div>
@@ -99,7 +101,9 @@ exports[`slice block component should render correctly 1`] = `
             class="image-label"
             data-testid="test-image-label"
           >
-            caption
+            
+      caption
+    
           </p>
         </div>
       </div>

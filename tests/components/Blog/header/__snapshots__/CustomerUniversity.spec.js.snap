@@ -15,7 +15,9 @@ exports[`customer university header component is a Vue instance withk default pr
       <div
         class="cluster-navigation__name"
       >
+        
         ‌
+      
       </div>
        
       <div

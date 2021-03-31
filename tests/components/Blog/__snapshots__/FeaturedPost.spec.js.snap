@@ -15,13 +15,17 @@ exports[`featured post component is a Vue instance 1`] = `
         <h1
           class="featured-post__title"
         >
-          The best practices for improving layout quality on your website
+          
+        The best practices for improving layout quality on your website
+      
         </h1>
          
         <p
           class="featured-post__paragraph"
         >
-          Let’s start with a partial list of how a valid and semantic layout can improve any project:
+          
+        Let’s start with a partial list of how a valid and semantic layout can improve any project:
+      
         </p>
          
         <div
@@ -42,7 +46,9 @@ exports[`featured post component is a Vue instance 1`] = `
               <p
                 class="blog-post__author-name"
               >
-                Alisa Manakova
+                
+      Alisa Manakova
+    
               </p>
                
               <div

@@ -21,7 +21,9 @@ exports[`image attribute slice component is a Vue instance 1`] = `
         class="image-label"
         data-testid="test-image-label"
       >
-        caption
+        
+      caption
+    
       </p>
     </div>
   </div>

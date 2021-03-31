@@ -23,7 +23,9 @@ exports[`quoteSlice component is a Vue instance 1`] = `
       <div
         class="author__name"
       >
-        John Doe
+        
+      John Doe
+    
       </div>
     </div>
   </div>
