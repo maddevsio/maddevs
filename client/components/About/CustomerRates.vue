@@ -55,7 +55,7 @@ export default {
   background-color: $bgcolor--white-darken;
   // margins and paddings for removing the dark line between sections, that appears when Chome browser is scaled > 100%
   margin: -1px 0 -1px;
-  padding: 2px 0;
+  padding: 1px 0;
 
   &__main-title-wrapper {
     display: flex;
