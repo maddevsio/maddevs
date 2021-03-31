@@ -509,11 +509,11 @@
         </TextQuoteAuthor>
       </section>
     </section>
-    <Footer link="/case-studies/sir-john-monash-centre/" class-name="namba-food-case">
-      <div slot="icon" class="case_logotype"></div>
-      The maintenance <br class="case_mobile-break" />
+    <Footer link="/case-studies/sir-john-monash-centre/" class-name="sjmc">
+      <div slot="icon" class="case_logotype-sjmc"></div>
+      The maintenance <br class="case_mobile-break-sjmc" />
       of memory: <br />
-      Sir John Monash <br class="case_mobile-break" />
+      Sir John Monash <br class="case_mobile-break-sjmc" />
       Centre
     </Footer>
   </main>

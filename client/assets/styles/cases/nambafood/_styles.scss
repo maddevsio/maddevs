@@ -97,17 +97,6 @@
     max-height: 544px;
   }
 
-  &_logotype {
-    @include sjmc-footer;
-    width: 253px;
-    height: 113px;
-    margin-bottom: 35px;
-  }
-
-  &_mobile-break {
-    display: none;
-  }
-
   @media screen and (min-width: 1440px) {
     &_full-screen-video {
       border-radius: 51px;
@@ -189,12 +178,6 @@
     &_pipelines-image-mobile {
       display: block;
     }
-
-    &_logotype {
-      width: 212px;
-      height: 94px;
-      margin-bottom: 25px;
-    }
   }
 
   @media screen and (max-width: 655px) {
@@ -226,12 +209,6 @@
 
     &_black-gradient {
       min-height: 0;
-    }
-  }
-
-  @media screen and (max-width: 420px) {
-    &_mobile-break {
-      display: block;
     }
   }
 

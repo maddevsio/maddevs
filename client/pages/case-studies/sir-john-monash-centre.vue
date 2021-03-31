@@ -542,10 +542,10 @@
           provide assistance when needed, Mad Devs are a highly-valued part of our wider operations.
         </TextQuoteAuthor>
       </section>
-      <Footer link="/case-studies/namba-food/" class-name="sjmc-case">
-        <div slot="icon" class="case_logotype"></div>
+      <Footer link="/case-studies/namba-food/" class-name="namba-food">
+        <div slot="icon" class="case_logotype-namba-food"></div>
         Namba Food <br />
-        Top Delivery Service in <br class="case_mobile-screen-break" />
+        Top Delivery Service in <br class="case_mobile-break-namba-food" />
         Central Asia
       </Footer>
     </section>

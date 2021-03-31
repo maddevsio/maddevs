@@ -32,8 +32,24 @@
 </template>
 
 <script>
+import ListTeam from '@/components/Cases/ListTeam'
+import ListTeamItem from '@/components/Cases/ListTeamItem'
+import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
+import { team } from '@/data/kafCase'
+
 export default {
   name: 'MeetTheTeam',
+  components: {
+    ListTeam,
+    ListTeamItem,
+    TextQuoteAuthor,
+  },
+
+  data() {
+    return {
+      team,
+    }
+  },
 }
 </script>
 
