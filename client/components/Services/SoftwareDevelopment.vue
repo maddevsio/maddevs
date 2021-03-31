@@ -1,9 +1,18 @@
 <template>
-  <section id="software-development" class="software-development">
+  <section
+    id="software-development"
+    class="software-development"
+  >
     <div class="container">
-      <h2 class="software-development__main-title">Software Development</h2>
+      <h2 class="software-development__main-title">
+        Software Development
+      </h2>
       <div class="software-development__content row">
-        <SoftwareDevelopmentContent v-for="category in developmentCategories" :key="category.type" v-bind="category" />
+        <SoftwareDevelopmentContent
+          v-for="category in developmentCategories"
+          :key="category.type"
+          v-bind="category"
+        />
       </div>
       <UIModalTriggerButton
         label="Get your trusted IT partner"

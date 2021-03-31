@@ -7,7 +7,7 @@
       ]"
       class="multi-image"
       type="image/webp"
-    />
+    >
     <img
       :data-src="[require(`@/assets/img/Home/jpg/experts/${fileName}.jpg`)]"
       :data-srcset="[require(`@/assets/img/Home/jpg/experts/${fileNameRetina}.jpg`) + ' 2x']"
@@ -16,7 +16,7 @@
       :width="width"
       :height="height"
       class="multi-image img_lazy"
-    />
+    >
   </picture>
 </template>
 

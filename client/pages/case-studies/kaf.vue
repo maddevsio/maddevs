@@ -1,19 +1,33 @@
 <template>
   <main class="case">
-    <CaseHeader :header-logo="headerLogo" video-name="">
-      <h1 slot="title" class="case_header-title">
-        The Evolution <br />
+    <CaseHeader
+      :header-logo="headerLogo"
+      video-name=""
+    >
+      <h1
+        slot="title"
+        class="case_header-title"
+      >
+        The Evolution <br>
         of Yourcast.TV
       </h1>
-      <p slot="description" class="case_header-description">
-        Mad Devs developed a secure and private video streaming service and live <br />
-        video broadcasting cinema to provide entertainment experience to isolated <br />
+      <p
+        slot="description"
+        class="case_header-description"
+      >
+        Mad Devs developed a secure and private video streaming service and live <br>
+        video broadcasting cinema to provide entertainment experience to isolated <br>
         groups feeling homesick.
       </p>
     </CaseHeader>
-    <section id="case-first-section" class="case_body p-48_top media-p-24_top">
+    <section
+      id="case-first-section"
+      class="case_body p-48_top media-p-24_top"
+    >
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">OTT-like video streaming platform & online cinema</h2>
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
+          OTT-like video streaming platform & online cinema
+        </h2>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           A custom video streaming solution* was created to provide the ultimate entertainment experience to isolated
           groups of people feeling homesick. Access and the ability to securely watch familiar and up-to-date content on
@@ -30,7 +44,9 @@
         </TextQuote>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Project in numbers</h2>
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
+          Project in numbers
+        </h2>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Being a small, highly customised video streaming and online cinema platform, the service remains popular, with
           its audience sharing new feature requests for Mad Devs.
@@ -40,7 +56,9 @@
         </div>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Supported gadgets</h2>
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
+          Supported gadgets
+        </h2>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           The platform is available on any device and remains equally friendly to both web and mobile users. Since 2016,
           the project has been continuously improving to provide more options for each category of viewers.
@@ -50,7 +68,9 @@
         </div>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom">Technology stack</h2>
+        <h2 class="case_title_h2 m-24_bottom">
+          Technology stack
+        </h2>
         <!-- <ListTechnologies class="m-96_bottom media-m-48_bottom">
           <ListTechnologiesItem
             v-for="(technologiesItem, i) in technologiesList"
@@ -61,13 +81,17 @@
         </ListTechnologies> -->
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Key project milestones</h2>
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
+          Key project milestones
+        </h2>
         <div class="m-96_bottom media-m-48_bottom">
           <!-- Карточки -->
         </div>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Phase 1: Online cinema</h2>
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
+          Phase 1: Online cinema
+        </h2>
         <TextParagraph class="m-24_bottom">
           Initially, it was decided to create a movie library with previews, duration information, etc. Purchasing
           videos was the easiest part. Pulling a good description for each movie from an external source eliminated the
@@ -81,10 +105,14 @@
         <TextQuote class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom">
           Mad Devs integrated the platform with Plex Media Server, which provides free movie descriptions via an API.
         </TextQuote>
-        <h3 class="case_title_h3 m-12_bottom">TV shows & TV series</h3>
+        <h3 class="case_title_h3 m-12_bottom">
+          TV shows & TV series
+        </h3>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom media-m-20_bottom">Phase 2: Live streaming technology</h2>
+        <h2 class="case_title_h2 m-24_bottom media-m-20_bottom">
+          Phase 2: Live streaming technology
+        </h2>
         <TextParagraph class="m-48_bottom media-m-20_bottom">
           To provide viewers with access to their favourite TV channels, the platform needed to emulate the TV
           experience. To add live-streaming technology, Mad Devs leveraged its existing open-source project,
@@ -98,7 +126,9 @@
         </div>
       </section>
       <section class="container_regular">
-        <h3 class="case_title_h3">TV shows & TV series</h3>
+        <h3 class="case_title_h3">
+          TV shows & TV series
+        </h3>
         <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
           Yourcast.tv by Mad Devs is used to create TV-like streams using YouTube video content. All you need is to
           create a list of YouTube videos that you want to stream. The streaming starts a few seconds after you save
@@ -122,7 +152,9 @@
         </div>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Phase 3: Redesign & optimisations</h2>
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
+          Phase 3: Redesign & optimisations
+        </h2>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           To reduce traffic while re-streaming movies and TV series, Mad Devs used Nimble Streamer and Nimble
           Transcoder. As the source provided maximum quality, re-streaming of the ‘heavy’ content was overly expensive.
@@ -144,7 +176,9 @@
         </TextParagraph>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Phase 4: Video on demand</h2>
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
+          Phase 4: Video on demand
+        </h2>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Video on Demand (VoD) functionality was added to the platform in 2019. To adapt it to the most current VoD
           standards, Mad Devs leveraged Nimble Streamer and Nimble Transcoder. The viewers received access to the
@@ -183,7 +217,9 @@
           iteration and borrows best practices from leading over-the-top (OTT) providers to make end users happier. The
           project is progressing towards a modern entertainment platform.
         </TextParagraph>
-        <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">Plans for similar projects</h3>
+        <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">
+          Plans for similar projects
+        </h3>
         <TextParagraph class="m-96_bottom media-m-48_bottom">
           The platform will remain the one-and-only NDA-protected project. However, Yourcast.TV is fully open source and
           can serve as a foundation for other video streaming services, assuming monetisation through subscription or
@@ -192,7 +228,9 @@
         </TextParagraph>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-48_bottom media-m-38_bottom">Meet the team</h2>
+        <h2 class="case_title_h2 m-48_bottom media-m-38_bottom">
+          Meet the team
+        </h2>
         <!-- <ListTeam class="m-72_bottom media-m-48_bottom">
           <ListTeamItem
             v-for="(teamMember, i) in team"
@@ -219,11 +257,17 @@
         </TextQuoteAuthor> -->
       </section>
     </section>
-    <Footer link="/case-studies/sir-john-monash-centre/" class-name="kaf-case">
-      <div slot="icon" class="case_logotype"></div>
-      The maintenance <br class="case_mobile-break" />
-      of memory: <br />
-      Sir John Monash <br class="case_mobile-break" />
+    <Footer
+      link="/case-studies/sir-john-monash-centre/"
+      class-name="kaf-case"
+    >
+      <div
+        slot="icon"
+        class="case_logotype"
+      />
+      The maintenance <br class="case_mobile-break">
+      of memory: <br>
+      Sir John Monash <br class="case_mobile-break">
       Centre
     </Footer>
   </main>

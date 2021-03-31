@@ -13,10 +13,16 @@
       :class="`card-use-case__${classList.uniqueСlass}-description-wrapper`"
       class="card-use-case__description-wrapper"
     >
-      <TextParagraph :class="`card-use-case__${classList.uniqueСlass}-paragraph`" class="card-use-case__paragraph">
+      <TextParagraph
+        :class="`card-use-case__${classList.uniqueСlass}-paragraph`"
+        class="card-use-case__paragraph"
+      >
         {{ description }}
       </TextParagraph>
-      <div :class="`card-use-case__${classList.uniqueСlass}-picture`" class="card-use-case__desktop-picture">
+      <div
+        :class="`card-use-case__${classList.uniqueСlass}-picture`"
+        class="card-use-case__desktop-picture"
+      >
         <Picture
           :picture-folder="pictureFolder"
           :file-name="fileName"
@@ -25,7 +31,10 @@
           :lazy-loading="false"
         />
       </div>
-      <div :class="`card-use-case__${classList.uniqueСlass}-mobile-picture`" class="card-use-case__mobile-picture">
+      <div
+        :class="`card-use-case__${classList.uniqueСlass}-mobile-picture`"
+        class="card-use-case__mobile-picture"
+      >
         <Picture
           :picture-folder="pictureFolder"
           :file-name="`${fileName}-mobile`"

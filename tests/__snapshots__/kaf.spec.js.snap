@@ -32,7 +32,9 @@ exports[`namba food renders correctly 1`] = `
         <div
           class="case_case-study-item"
         >
-          Case Study
+          
+        Case Study
+      
         </div>
          
         <h1
@@ -82,7 +84,9 @@ exports[`namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
+        
         OTT-like video streaming platform & online cinema
+      
       </h2>
        
       <p
@@ -121,7 +125,9 @@ exports[`namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
+        
         Project in numbers
+      
       </h2>
        
       <p
@@ -144,7 +150,9 @@ exports[`namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
+        
         Supported gadgets
+      
       </h2>
        
       <p
@@ -167,7 +175,9 @@ exports[`namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom"
       >
+        
         Technology stack
+      
       </h2>
     </section>
      
@@ -177,7 +187,9 @@ exports[`namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
+        
         Key project milestones
+      
       </h2>
        
       <div
@@ -191,7 +203,9 @@ exports[`namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
+        
         Phase 1: Online cinema
+      
       </h2>
        
       <p
@@ -223,7 +237,9 @@ exports[`namba food renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
+        
         TV shows & TV series
+      
       </h3>
     </section>
      
@@ -233,7 +249,9 @@ exports[`namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-20_bottom"
       >
+        
         Phase 2: Live streaming technology
+      
       </h2>
        
       <p
@@ -261,7 +279,9 @@ exports[`namba food renders correctly 1`] = `
       <h3
         class="case_title_h3"
       >
+        
         TV shows & TV series
+      
       </h3>
        
       <blockquote
@@ -314,7 +334,9 @@ exports[`namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
+        
         Phase 3: Redesign & optimisations
+      
       </h2>
        
       <p
@@ -359,7 +381,9 @@ exports[`namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
+        
         Phase 4: Video on demand
+      
       </h2>
        
       <p
@@ -455,7 +479,9 @@ exports[`namba food renders correctly 1`] = `
       <h3
         class="case_title_h3 m-24_bottom media-m-12_bottom"
       >
+        
         Plans for similar projects
+      
       </h3>
        
       <p
@@ -476,7 +502,9 @@ exports[`namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-48_bottom media-m-38_bottom"
       >
+        
         Meet the team
+      
       </h2>
     </section>
   </section>

@@ -11,10 +11,16 @@
         <UISubtitle class="remoteTechStaffContent__item-sub-title">
           {{ subtitle }}
         </UISubtitle>
-        <UIParagraph :class="`remoteTechStaffContent__${type}-paragraph`" class="remoteTechStaffContent__paragraph">
+        <UIParagraph
+          :class="`remoteTechStaffContent__${type}-paragraph`"
+          class="remoteTechStaffContent__paragraph"
+        >
           {{ paragraph }}
         </UIParagraph>
-        <div :class="`remoteTechStaffContent__${type}-icon`" class="remoteTechStaffContent__item-icon"></div>
+        <div
+          :class="`remoteTechStaffContent__${type}-icon`"
+          class="remoteTechStaffContent__item-icon"
+        />
       </div>
     </div>
     <UIModalTriggerButton

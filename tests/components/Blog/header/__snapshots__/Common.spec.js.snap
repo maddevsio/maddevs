@@ -9,13 +9,17 @@ exports[`header Common is a Vue instance 1`] = `
     <h1
       class="blog-post__blog-title title"
     >
-      some title
+      
+    some title
+  
     </h1>
      
     <p
       class="blog-post__blog-sub-title"
     >
       
+    
+  
     </p>
       
     <img

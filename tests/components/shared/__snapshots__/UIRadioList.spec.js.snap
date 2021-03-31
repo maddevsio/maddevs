@@ -8,7 +8,9 @@ exports[`UIRadioList list should correctly render 1`] = `
     <div
       class="radio-buttons__field-name field-name required"
     >
-      field name
+      
+    field name
+  
     </div>
      
     <div
@@ -71,7 +73,9 @@ exports[`UIRadioList list should correctly render with default props 1`] = `
     <div
       class="radio-buttons__field-name field-name"
     >
-      Label
+      
+    Label
+  
     </div>
      
     <div

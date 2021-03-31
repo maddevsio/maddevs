@@ -1,7 +1,14 @@
 <template>
   <div class="logo-wrapper">
-    <svg v-if="isCasePage" viewBox="0 0 256 446">
-      <g v-show="isActiveMobileMenu" fill="none" fill-rule="evenodd">
+    <svg
+      v-if="isCasePage"
+      viewBox="0 0 256 446"
+    >
+      <g
+        v-show="isActiveMobileMenu"
+        fill="none"
+        fill-rule="evenodd"
+      >
         <transition name="fade">
           <path
             v-if="isShowText"
@@ -15,7 +22,11 @@
           d="M237.23 1.34l-109.48 50-109.48-50C10.59-2.83 0 3.16 0 13.87v208.77c0 8 4.79 14.52 11.29 14.72a3.6 3.6 0 0 0 .9 0h.65l71.75-7.45L71 210.54c-5.94-8.29 1.26-15.49 8.88-12.69 1.53.56 3.19-.18 4.68.21l-18-60.72c-.07-.21-.13-.42-.19-.63l-.14-.46v-.14a10.39 10.39 0 0 1 19.47-6.7v.09c.17.34 20.65 50.87 20.65 50.87a10.95 10.95 0 0 1 21.62.57 11 11 0 0 1 11.03-9.52c5.35 0 9.5 4.73 10.43 9.83l12.17-34.3a10.44 10.44 0 0 1 20.24 3.52v.32L171 229.84l71.67 7.45h.65a3.6 3.6 0 0 0 .9 0c6.5-.2 10.93-6.68 10.93-14.69V13.82c-.01-10.7-10.24-16.65-17.92-12.48z"
         />
       </g>
-      <g v-show="!isActiveMobileMenu" fill="none" fill-rule="evenodd">
+      <g
+        v-show="!isActiveMobileMenu"
+        fill="none"
+        fill-rule="evenodd"
+      >
         <path
           id="header-logo-text"
           fill="#fff"
@@ -28,8 +39,14 @@
         />
       </g>
     </svg>
-    <svg v-else viewBox="0 0 256 446">
-      <g fill="none" fill-rule="evenodd">
+    <svg
+      v-else
+      viewBox="0 0 256 446"
+    >
+      <g
+        fill="none"
+        fill-rule="evenodd"
+      >
         <transition name="fade">
           <path
             v-if="isShowText"

@@ -7,7 +7,9 @@ exports[`cardNationwideNumbers renders correctly 1`] = `
   <h3
     class="card-content_title case_title_h5"
   >
+    
     250
+  
   </h3>
    
   <p
@@ -22,7 +24,9 @@ exports[`cardNationwideNumbers renders correctly 1`] = `
   <h3
     class="card-content_title case_title_h5"
   >
+    
     2500
+  
   </h3>
    
   <p
@@ -36,7 +40,9 @@ exports[`cardNationwideNumbers renders correctly 1`] = `
   <h3
     class="card-content_title case_title_h5"
   >
+    
     700 entrepreneurs
+  
   </h3>
    
   <p

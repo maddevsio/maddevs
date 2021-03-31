@@ -1,8 +1,14 @@
 <template>
   <div class="table-of-contents">
-    <div class="table-of-contents__title">Table of contents</div>
+    <div class="table-of-contents__title">
+      Table of contents
+    </div>
     <ol class="table-of-contents__list">
-      <li v-for="(link, index) in content" :key="index" class="table-of-contents__list-item">
+      <li
+        v-for="(link, index) in content"
+        :key="index"
+        class="table-of-contents__list-item"
+      >
         <template v-if="link.type === 'list-item'">
           <a
             data-testid="test-link-table"

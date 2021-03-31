@@ -46,10 +46,10 @@ export default {
 
       // Query to get Schema.org markup
       if (
-        post.data.schema_org_snippets &&
-        post.data.schema_org_snippets.length &&
-        post.data.schema_org_snippets[0].single_snippet.length &&
-        post.data.schema_org_snippets[0].single_snippet[0].text
+        post.data.schema_org_snippets
+        && post.data.schema_org_snippets.length
+        && post.data.schema_org_snippets[0].single_snippet.length
+        && post.data.schema_org_snippets[0].single_snippet[0].text
       ) {
         jsonLd = post.data.schema_org_snippets[0].single_snippet[0].text
         jsonLd = jsonLd.substring(jsonLd.indexOf('{'), jsonLd.lastIndexOf('}') + 1) // extracting only JSON object from a snippet without extra characters
@@ -151,9 +151,8 @@ export default {
   methods: {
     getClusterData() {
       this.$prismic.api.getSingle('cu_master').then(response => {
-        this.cluster =
-          response.data.body.find(cluster => cluster.items.find(post => post.cu_post.id === this.id) !== undefined) ||
-          null
+        this.cluster = response.data.body
+          .find(cluster => cluster.items.find(post => post.cu_post.id === this.id) !== undefined) || null
       })
     },
   },

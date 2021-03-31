@@ -17,6 +17,7 @@ exports[`careersForm component renders correctly 1`] = `
         <label
           class="careers__form-name-label"
         >
+          
           Hello, my name is
           
           <span>
@@ -130,7 +131,9 @@ exports[`careersForm component renders correctly 1`] = `
           disabled="true"
           type="submit"
         >
-           I want to work for Mad Devs! 
+          
+          I want to work for Mad Devs!
+        
         </button-stub>
       </form>
     </div>

@@ -1,6 +1,8 @@
 <template>
   <div class="gallery-slice">
-    <h3 v-if="galleryTitle">{{ galleryTitle }}</h3>
+    <h3 v-if="galleryTitle">
+      {{ galleryTitle }}
+    </h3>
     <swiper-blog :components="slice.items" />
   </div>
 </template>

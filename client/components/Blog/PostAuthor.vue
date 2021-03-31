@@ -5,10 +5,15 @@
       :src="document.author_image.url"
       :alt="$prismic.asText(document.author)"
       class="blog-post__author-image"
+    >
+    <div
+      v-else
+      class="blog-post__none-image"
     />
-    <div v-else class="blog-post__none-image"></div>
     <div class="blog-post__author-info">
-      <p class="blog-post__author-name">{{ $prismic.asText(document.author).substr(0, 100) }}</p>
+      <p class="blog-post__author-name">
+        {{ $prismic.asText(document.author).substr(0, 100) }}
+      </p>
       <div class="blog-post__data-of-creation">
         <span class="blog-post__author-title">{{ document.author_title }}</span>
       </div>

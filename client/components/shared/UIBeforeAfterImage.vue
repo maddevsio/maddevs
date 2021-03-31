@@ -10,14 +10,18 @@
     @touchend="trackLeave"
     @mouseleave="trackLeave"
   >
-    <div ref="trackLine" data-testid="test-comparsion-track-line" class="comparsion-track-line"></div>
+    <div
+      ref="trackLine"
+      data-testid="test-comparsion-track-line"
+      class="comparsion-track-line"
+    />
     <div class="comparsion-view">
       <div
         ref="beforeImage"
         data-testid="test-comparsion-image_before"
         :style="beforeImageStyle"
         class="comparsion-image_before"
-      ></div>
+      />
       <img
         ref="afterImage"
         data-testid="test-comparsion-image_after"
@@ -27,7 +31,7 @@
         :height="baseHeight"
         loading="lazy"
         class="comparsion-image_after"
-      />
+      >
     </div>
   </div>
 </template>

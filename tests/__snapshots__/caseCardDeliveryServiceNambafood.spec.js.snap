@@ -7,7 +7,9 @@ exports[`cardDeliveryServiceNambafood renders correctly 1`] = `
   <h3
     class="card-content_title case_title_h5"
   >
+    
     Delivery service Nambafood
+  
   </h3>
    
   <p
@@ -43,7 +45,9 @@ exports[`cardDeliveryServiceNambafood renders correctly 1`] = `
       <p
         class="case_paragraph card-content_paragraph card-content_paragraph--bold"
       >
-         Increase in sales: 
+        
+        Increase in sales:
+      
       </p>
        
       <div

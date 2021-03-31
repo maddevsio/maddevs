@@ -3,10 +3,10 @@
     <div class="container">
       <div class="gdpr__header">
         <h1 class="gdpr__title">
-          <span class="gdpr__nowrap">Mad Devs’</span> GDPR <br />
+          <span class="gdpr__nowrap">Mad Devs’</span> GDPR <br>
           Compliance Commitment
         </h1>
-        <div class="gdpr__image"></div>
+        <div class="gdpr__image" />
       </div>
       <div class="gdpr__content">
         <p class="gdpr__text--first gdpr__text">
@@ -19,38 +19,57 @@
           optimization departments have worked with projects requiring full GDPR compliance, and if you need help with
           any personal data to be properly collected, modified, stored, and processed, please let us know.
         </p>
-        <h2 class="gdpr__sec-title gdpr__sec-title--first">Data Processing Documentation</h2>
+        <h2 class="gdpr__sec-title gdpr__sec-title--first">
+          Data Processing Documentation
+        </h2>
         <p class="gdpr__paragraph">
           Under the terms of GDPR, <span class="gdpr__nowrap">Mad Devs</span> is a Data Processor. In case you are a
           Data Controller according to the official GDPR terminology, our legal department is ready to provide written
           consent for the processing of any personal data of individuals from the European Union and European Economic
           Area. We are also ready to provide our
-          <a class="gdpr__link" href="https://gdpr.eu/what-is-data-processing-agreement/" target="_blank"
-            >Data Processing Addendum (DPA)</a
-          >
-          <br />
+          <a
+            class="gdpr__link"
+            href="https://gdpr.eu/what-is-data-processing-agreement/"
+            target="_blank"
+          >Data Processing Addendum (DPA)</a>
+          <br>
           upon your request. Please notify our management via
-          <a class="gdpr__link" href="mailto:rock@maddevs.io">rock@maddevs.io</a>
+          <a
+            class="gdpr__link"
+            href="mailto:rock@maddevs.io"
+          >rock@maddevs.io</a>
           to get help.
         </p>
-        <h2 class="gdpr__sec-title">Privacy Policy</h2>
+        <h2 class="gdpr__sec-title">
+          Privacy Policy
+        </h2>
         <p class="gdpr__paragraph">
           For your convenience, our Privacy Policy is available on our website in PDF format, you can also download it
           to your computer if needed. If you have any questions or concerns related to this document, please let us know
           via
-          <a class="gdpr__link" href="mailto:rock@maddevs.io">rock@maddevs.io</a>.
+          <a
+            class="gdpr__link"
+            href="mailto:rock@maddevs.io"
+          >rock@maddevs.io</a>.
         </p>
-        <h2 class="gdpr__sec-title">Cookie Usage</h2>
+        <h2 class="gdpr__sec-title">
+          Cookie Usage
+        </h2>
         <p class="gdpr__paragraph">
           Our website uses cookies to help us define your core interests and make you relevant service offerings. The
           “Accept” button on our pop-up notification will enable you to accept cookies.
         </p>
-        <h2 class="gdpr__sec-title">Marketing Communications</h2>
+        <h2 class="gdpr__sec-title">
+          Marketing Communications
+        </h2>
         <p class="gdpr__paragraph">
           To get information on our recent blog posts, hottest discounts, and newest services, you can subscribe to the
           <span class="gdpr__nowrap">Mad Devs</span> Newsletter. You can unsubscribe at any time. If you want to make
           sure that your data has been amended or deleted, please contact us via
-          <a class="gdpr__link" href="mailto:rock@maddevs.io">rock@maddevs.io</a>.
+          <a
+            class="gdpr__link"
+            href="mailto:rock@maddevs.io"
+          >rock@maddevs.io</a>.
         </p>
         <p class="gdpr__paragraph gdpr__paragraph--bold">
           We appreciate your collaboration and openness with regard to any legal issues!

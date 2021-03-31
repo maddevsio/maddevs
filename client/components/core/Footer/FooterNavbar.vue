@@ -1,8 +1,16 @@
 <template>
   <div class="footer-navbar">
-    <p class="footer-navbar__company-name">© Mad Devs - {{ currentYear }}</p>
+    <p class="footer-navbar__company-name">
+      © Mad Devs - {{ currentYear }}
+    </p>
     <div class="footer-navbar__nav-list">
-      <a v-for="item in navigation" :key="item.link" :href="item.link" target="_blank" class="footer-navbar__nav-item">
+      <a
+        v-for="item in navigation"
+        :key="item.link"
+        :href="item.link"
+        target="_blank"
+        class="footer-navbar__nav-item"
+      >
         {{ item.title }}
       </a>
     </div>

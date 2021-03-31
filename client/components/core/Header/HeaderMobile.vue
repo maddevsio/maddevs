@@ -1,6 +1,9 @@
 <template>
   <div class="mobile-header">
-    <div id="mobile-header-scrollbar" class="safari-only container mobile-header__mobile-menu-scollbar">
+    <div
+      id="mobile-header-scrollbar"
+      class="safari-only container mobile-header__mobile-menu-scollbar"
+    >
       <div class="mobile-header__content-wrap">
         <div class="mobile-header__nav-wrap">
           <nav class="mobile-header__header-routes_links">
@@ -17,8 +20,13 @@
           </nav>
           <div class="mobile-header__contacts mobile-header__large-phone-content">
             <div class="mobile-header__contact-item mobile-header__contact-item-email">
-              <p class="mobile-header__contact-title">Text us:</p>
-              <a :href="`mailto:${mailLink}`" class="mobile-header__contact-link mobile-header__contact-mail">
+              <p class="mobile-header__contact-title">
+                Text us:
+              </p>
+              <a
+                :href="`mailto:${mailLink}`"
+                class="mobile-header__contact-link mobile-header__contact-mail"
+              >
                 {{ mailLink }}
               </a>
             </div>
@@ -31,22 +39,34 @@
                   src="@/assets/img/Home/flags/uk.svg"
                   class="mobile-header__contact-title-flag"
                   alt="United Kingdom"
-                />
-                <p class="mobile-header__contact-title">Call us:</p>
+                >
+                <p class="mobile-header__contact-title">
+                  Call us:
+                </p>
               </div>
-              <a href="tel:+442039848555" class="mobile-header__contact-link mobile-header__contact-phone-number">
+              <a
+                href="tel:+442039848555"
+                class="mobile-header__contact-link mobile-header__contact-phone-number"
+              >
                 +44 20 3984 8555
               </a>
             </div>
             <ul class="mobile-header__messengers-list">
-              <li v-for="messenger in messengers" :key="messenger.key">
-                <a :href="messenger.url" target="_blank" class="mobile-header__messenger-item-wrapper">
+              <li
+                v-for="messenger in messengers"
+                :key="messenger.key"
+              >
+                <a
+                  :href="messenger.url"
+                  target="_blank"
+                  class="mobile-header__messenger-item-wrapper"
+                >
                   <img
                     width="42"
                     height="42"
                     :src="require(`@/assets/img/Footer/svg/${messenger.key}.svg`)"
                     :alt="messenger.label"
-                  />
+                  >
                   <p class="mobile-header__messenger-name">{{ messenger.label }}</p>
                 </a>
               </li>
@@ -98,8 +118,8 @@ export default {
     goToPage() {
       this.$emit('changed-page')
       if (
-        document.body.classList.contains('scrollDisabled') &&
-        document.documentElement.classList.contains('scrollDisabled')
+        document.body.classList.contains('scrollDisabled')
+        && document.documentElement.classList.contains('scrollDisabled')
       ) {
         document.body.classList.remove('scrollDisabled')
         document.documentElement.classList.remove('scrollDisabled')
@@ -479,4 +499,3 @@ export default {
   }
 }
 </style>
-

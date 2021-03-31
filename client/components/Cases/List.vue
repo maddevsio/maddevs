@@ -1,6 +1,6 @@
 <template>
   <ul class="case_list">
-    <slot></slot>
+    <slot />
   </ul>
 </template>
 

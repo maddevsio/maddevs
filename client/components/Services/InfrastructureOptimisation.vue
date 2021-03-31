@@ -1,9 +1,12 @@
 <template>
-  <section id="infrastructure-optimisation" class="infrastructure-optimisation">
+  <section
+    id="infrastructure-optimisation"
+    class="infrastructure-optimisation"
+  >
     <div class="container">
       <div class="infrastructure-optimisation__content-wrapper">
         <h2 class="infrastructure-optimisation__main-title">
-          Infrastructure <br class="infrastructure-optimisation__small-screen-break" />
+          Infrastructure <br class="infrastructure-optimisation__small-screen-break">
           Optimisation
         </h2>
         <div class="infrastructure-optimisation__content">

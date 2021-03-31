@@ -17,7 +17,9 @@ exports[`text slice component is a Vue instance 1`] = `
       <p
         class="blog-post__author-name"
       >
-        some-author
+        
+      some-author
+    
       </p>
        
       <div
