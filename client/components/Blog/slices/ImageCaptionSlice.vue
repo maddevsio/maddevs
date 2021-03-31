@@ -19,6 +19,7 @@
       </div>
       <p
         v-if="caption"
+        data-testid="test-image-label"
         class="image-label"
       >
         {{ caption }}
@@ -51,13 +52,6 @@ export default {
   computed: {
     zoomEnabled() {
       return this.slice.primary.enable_zoom === 'enable'
-    },
-
-    lightBoxImage() {
-      return {
-        src: this.img.url,
-        alt: this.img.alt,
-      }
     },
   },
 

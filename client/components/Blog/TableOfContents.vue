@@ -11,6 +11,7 @@
       >
         <template v-if="link.type === 'list-item'">
           <a
+            data-testid="test-link-table"
             :href="link.spans.length ? link.spans[0].data.url : null"
             @click.prevent="scrollToSection"
           >

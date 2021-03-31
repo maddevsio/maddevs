@@ -1,6 +1,7 @@
 <template>
   <div
     ref="trackContainer"
+    data-testid="track-img"
     class="comparsion-container"
     @mousemove="trackLocation"
     @mousedown="trackLocation"
@@ -11,16 +12,19 @@
   >
     <div
       ref="trackLine"
+      data-testid="test-comparsion-track-line"
       class="comparsion-track-line"
     />
     <div class="comparsion-view">
       <div
         ref="beforeImage"
+        data-testid="test-comparsion-image_before"
         :style="beforeImageStyle"
         class="comparsion-image_before"
       />
       <img
         ref="afterImage"
+        data-testid="test-comparsion-image_after"
         :src="afterImageSrc"
         :alt="afterImageAlt"
         :width="baseWidth"

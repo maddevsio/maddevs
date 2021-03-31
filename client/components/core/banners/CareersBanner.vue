@@ -2,7 +2,7 @@
   <div class="banner-container">
     <div class="banner__banner-content banner-content">
       <div class="banner__main-title-wrapper main-title-wrapper container">
-        <h1 class="banner__banner-main_title banner-main_title">
+        <h1 class="banner__banner-main_title banner-main_title banner-main_title-test">
           Look! <br>
           A new <span>Mad Devs'</span> <br>
           ranger is here!

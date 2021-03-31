@@ -60,7 +60,7 @@ exports[`infrastructure Audit Modal renders correctly 1`] = `
        
       <input
         class="modal-entry-field entry-field"
-        placeholder="+1 23X XXX-XXXX"
+        placeholder="+X XXX XXX-XXXX"
         type="text"
       />
        
@@ -107,6 +107,7 @@ exports[`infrastructure Audit Modal renders correctly 1`] = `
         >
           <input
             class="radio-buttons__radio-input"
+            data-testid="test-radio-buttons"
             id="on-premises-infrastructure-audit"
             name="infrastructure-audit"
             type="radio"
@@ -128,6 +129,7 @@ exports[`infrastructure Audit Modal renders correctly 1`] = `
         >
           <input
             class="radio-buttons__radio-input"
+            data-testid="test-radio-buttons"
             id="amazon-infrastructure-audit"
             name="infrastructure-audit"
             type="radio"
@@ -149,6 +151,7 @@ exports[`infrastructure Audit Modal renders correctly 1`] = `
         >
           <input
             class="radio-buttons__radio-input"
+            data-testid="test-radio-buttons"
             id="google-cloud-infrastructure-audit"
             name="infrastructure-audit"
             type="radio"
@@ -170,6 +173,7 @@ exports[`infrastructure Audit Modal renders correctly 1`] = `
         >
           <input
             class="radio-buttons__radio-input"
+            data-testid="test-radio-buttons"
             id="microsoft-azure-infrastructure-audit"
             name="infrastructure-audit"
             type="radio"
@@ -191,6 +195,7 @@ exports[`infrastructure Audit Modal renders correctly 1`] = `
         >
           <input
             class="radio-buttons__radio-input"
+            data-testid="test-radio-buttons"
             id="heroku-infrastructure-audit"
             name="infrastructure-audit"
             type="radio"
@@ -212,6 +217,7 @@ exports[`infrastructure Audit Modal renders correctly 1`] = `
         >
           <input
             class="radio-buttons__radio-input"
+            data-testid="test-radio-buttons"
             id="digital-ocean-infrastructure-audit"
             name="infrastructure-audit"
             type="radio"
@@ -233,6 +239,7 @@ exports[`infrastructure Audit Modal renders correctly 1`] = `
         >
           <input
             class="radio-buttons__radio-input"
+            data-testid="test-radio-buttons"
             id="other-infrastructure-audit"
             name="infrastructure-audit"
             type="radio"
@@ -274,6 +281,7 @@ exports[`infrastructure Audit Modal renders correctly 1`] = `
        
       <input
         class="form-checkbox-input"
+        data-testid="test-privacy-policy-checkbox-input"
         id="privacy-policy-infrastructure-audit"
         name="Privacy policy"
         type="checkbox"
@@ -298,6 +306,7 @@ exports[`infrastructure Audit Modal renders correctly 1`] = `
     
       <input
         class="form-checkbox-input"
+        data-testid="test-form-checkbox-input"
         id="marketing-communications-infrastructure-audit"
         name="Marketing communications"
         type="checkbox"

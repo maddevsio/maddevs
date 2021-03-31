@@ -60,7 +60,7 @@ exports[`teams Modal renders correctly 1`] = `
        
       <input
         class="modal-entry-field entry-field"
-        placeholder="+1 23X XXX-XXXX"
+        placeholder="+X XXX XXX-XXXX"
         type="text"
       />
        
@@ -87,6 +87,7 @@ exports[`teams Modal renders correctly 1`] = `
         >
           <input
             class="radio-buttons__radio-input"
+            data-testid="test-radio-buttons"
             id="less-five-teams"
             name="teams"
             type="radio"
@@ -108,6 +109,7 @@ exports[`teams Modal renders correctly 1`] = `
         >
           <input
             class="radio-buttons__radio-input"
+            data-testid="test-radio-buttons"
             id="from-five-to-ten-teams"
             name="teams"
             type="radio"
@@ -129,6 +131,7 @@ exports[`teams Modal renders correctly 1`] = `
         >
           <input
             class="radio-buttons__radio-input"
+            data-testid="test-radio-buttons"
             id="more-than-ten-teams"
             name="teams"
             type="radio"
@@ -190,6 +193,7 @@ exports[`teams Modal renders correctly 1`] = `
        
       <input
         class="form-checkbox-input"
+        data-testid="test-privacy-policy-checkbox-input"
         id="privacy-policy-teams"
         name="Privacy policy"
         type="checkbox"
@@ -214,6 +218,7 @@ exports[`teams Modal renders correctly 1`] = `
     
       <input
         class="form-checkbox-input"
+        data-testid="test-form-checkbox-input"
         id="marketing-communications-teams"
         name="Marketing communications"
         type="checkbox"

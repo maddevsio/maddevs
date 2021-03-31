@@ -2,6 +2,7 @@
   <section
     id="weCreateItProject"
     class="weCreateItProject"
+    data-testid="test-weCreateItProject"
   >
     <div class="container">
       <div class="weCreateItProject__content-wrapper">

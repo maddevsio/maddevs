@@ -1,13 +1,18 @@
 <template>
   <nuxt-link :to="link">
     <div class="blog-post">
-      <h2 class="post-title title-md">
+      <h2
+        data-testid="test-post-title"
+        class="post-title title-md"
+      >
         {{ $prismic.asText(post.data.title) }}
       </h2>
       <p class="blog-post-meta">
         <span class="created-at">{{ formattedDate }}</span>
       </p>
-      <p>{{ getFirstParagraph(post) }}</p>
+      <p data-testid="test-first-paragraph">
+        {{ getFirstParagraph(post) }}
+      </p>
     </div>
   </nuxt-link>
 </template>

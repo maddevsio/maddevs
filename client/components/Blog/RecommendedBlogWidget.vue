@@ -16,7 +16,10 @@
         >
           {{ $prismic.asText(post.data.title) }}
         </h2>
-        <p class="blog-post__paragraph">
+        <p
+          class="blog-post__paragraph"
+          data-testid="test-blog-post"
+        >
           {{ getFirstParagraph(post) }}
         </p>
         <div class="blog-post__meta">

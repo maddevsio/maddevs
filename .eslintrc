@@ -37,6 +37,7 @@
     "jest/no-hooks": "off",
     "jest/prefer-strict-equal": "off",
     "jest/no-mocks-import": "off",
+    "jest/lowercase-name": "off",
     "import/no-unresolved": "off",
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",

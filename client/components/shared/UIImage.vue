@@ -12,6 +12,7 @@
       :data-src="[require(`@/assets/img/Home/jpg/experts/${fileName}.jpg`)]"
       :data-srcset="[require(`@/assets/img/Home/jpg/experts/${fileNameRetina}.jpg`) + ' 2x']"
       :alt="alt"
+      data-testid="test-multi-image"
       :width="width"
       :height="height"
       class="multi-image img_lazy"

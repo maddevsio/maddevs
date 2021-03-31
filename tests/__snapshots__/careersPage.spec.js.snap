@@ -14,7 +14,7 @@ exports[`careers page renders correctly 1`] = `
         class="banner__main-title-wrapper main-title-wrapper container"
       >
         <h1
-          class="banner__banner-main_title banner-main_title"
+          class="banner__banner-main_title banner-main_title banner-main_title-test"
         >
           
         Look! 

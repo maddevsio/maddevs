@@ -80,7 +80,7 @@ exports[`modalContactMe renders correctly 1`] = `
        
       <input
         class="modal-entry-field entry-field"
-        placeholder="+1 23X XXX-XXXX"
+        placeholder="+X XXX XXX-XXXX"
         type="text"
       />
        
@@ -110,6 +110,7 @@ exports[`modalContactMe renders correctly 1`] = `
        
       <input
         class="form-checkbox-input"
+        data-testid="test-privacy-policy-checkbox-input"
         id="privacy-policy-contact-me"
         name="Privacy policy"
         type="checkbox"
@@ -134,6 +135,7 @@ exports[`modalContactMe renders correctly 1`] = `
     
       <input
         class="form-checkbox-input"
+        data-testid="test-form-checkbox-input"
         id="marketing-communications-contact-me"
         name="Marketing communications"
         type="checkbox"
