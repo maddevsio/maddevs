@@ -7,6 +7,7 @@
           <div
             v-for="category in categories"
             :key="category"
+            data-testid="test-tech_legend__item"
             :class="`legend-${categoryToClass(category)}`"
             class="tech_legend__item"
             @click="setActiveCategory(category)"

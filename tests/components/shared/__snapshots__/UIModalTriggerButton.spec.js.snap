@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UIModalTriggerButton should render correctly with slot 1`] = `
+<div>
+  <button
+    class="ui-button-modal-trigger ui-button-modal-trigger--red"
+  >
+    
+  Some button name
+
+  </button>
+</div>
+`;

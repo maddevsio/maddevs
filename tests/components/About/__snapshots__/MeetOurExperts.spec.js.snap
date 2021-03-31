@@ -1,0 +1,465 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MeetOurExperts is a Vue instance 1`] = `
+<div>
+  <section
+    class="meet-our_experts"
+    id="meet-our-experts"
+  >
+    <div
+      class="container"
+    >
+      <h3
+        class="meet-our_experts__main-title"
+      >
+        Meet our experts
+      </h3>
+       
+      <div
+        class="meet-our_experts__experts-list row"
+      >
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              data-srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company."
+              class="multi-image img_lazy"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
+              height="401"
+              width="295"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Marat Bediev
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                Senior DevOps Engineer
+              </div>
+            </div>
+          </div>
+           
+          <img
+            alt="Linkedin"
+            class="meet-our_experts__expert-linkedin-link img_lazy"
+            data-src="[object Object]"
+            height="24"
+            width="24"
+          />
+           
+          <a
+            href="https://www.linkedin.com/in/marat-bediev-a973171b/"
+            rel="nofollow"
+            target="_blank"
+          />
+        </div>
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              data-srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Tamara Mun - Delivery Manager at Mad Devs Software and Mobile App Development Company."
+              class="multi-image img_lazy"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
+              height="401"
+              width="295"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Tamara Mun
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                Delivery Manager
+              </div>
+            </div>
+          </div>
+           
+          <img
+            alt="Linkedin"
+            class="meet-our_experts__expert-linkedin-link img_lazy"
+            data-src="[object Object]"
+            height="24"
+            width="24"
+          />
+           
+          <a
+            href="https://www.linkedin.com/in/tamara-mun/"
+            rel="nofollow"
+            target="_blank"
+          />
+        </div>
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              data-srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Andrew \\"Сhuck\\" Minkin - CTO and Co-Founder at Mad Devs Software and Mobile App Development Company."
+              class="multi-image img_lazy"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
+              height="401"
+              width="295"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Andrew "Chuck" Minkin
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                CTO, Co-Founder
+              </div>
+            </div>
+          </div>
+           
+          <img
+            alt="Linkedin"
+            class="meet-our_experts__expert-linkedin-link img_lazy"
+            data-src="[object Object]"
+            height="24"
+            width="24"
+          />
+           
+          <a
+            href="https://www.linkedin.com/in/andrew-minkin-700a2523/"
+            rel="nofollow"
+            target="_blank"
+          />
+        </div>
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              data-srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Nakylai Taiirova - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
+              class="multi-image img_lazy"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
+              height="401"
+              width="295"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Nakylai Taiirova
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                Senior Full-Stack Developer
+              </div>
+            </div>
+          </div>
+           
+          <img
+            alt="Linkedin"
+            class="meet-our_experts__expert-linkedin-link img_lazy"
+            data-src="[object Object]"
+            height="24"
+            width="24"
+          />
+           
+          <a
+            href="https://www.linkedin.com/in/nakylai-taiirova-28bab859/"
+            rel="nofollow"
+            target="_blank"
+          />
+        </div>
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              data-srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Daria Utesheva - Head of HR Department at Mad Devs Software and Mobile App Development Company."
+              class="multi-image img_lazy"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
+              height="401"
+              width="295"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Daria Utesheva
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                Head of HR Department
+              </div>
+            </div>
+          </div>
+           
+          <img
+            alt="Linkedin"
+            class="meet-our_experts__expert-linkedin-link img_lazy"
+            data-src="[object Object]"
+            height="24"
+            width="24"
+          />
+           
+          <a
+            href="https://www.linkedin.com/in/daria-utesheva-47804198/"
+            rel="nofollow"
+            target="_blank"
+          />
+        </div>
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              data-srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Nuradil Alymkulov - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
+              class="multi-image img_lazy"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
+              height="401"
+              width="295"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Nuradil Alymkulov
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                Senior Full-Stack Developer
+              </div>
+            </div>
+          </div>
+           
+          <img
+            alt="Linkedin"
+            class="meet-our_experts__expert-linkedin-link img_lazy"
+            data-src="[object Object]"
+            height="24"
+            width="24"
+          />
+           
+          <a
+            href="https://www.linkedin.com/in/nuradil-alymkulov/"
+            rel="nofollow"
+            target="_blank"
+          />
+        </div>
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              data-srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Alice Jang - Project Manager at Mad Devs Software and Mobile App Development Company."
+              class="multi-image img_lazy"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
+              height="401"
+              width="295"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Alice Jang
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                Project Manager
+              </div>
+            </div>
+          </div>
+           
+          <img
+            alt="Linkedin"
+            class="meet-our_experts__expert-linkedin-link img_lazy"
+            data-src="[object Object]"
+            height="24"
+            width="24"
+          />
+           
+          <a
+            href="https://www.linkedin.com/in/alice-jang-b235b240/"
+            rel="nofollow"
+            target="_blank"
+          />
+        </div>
+        <div
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <picture>
+            <source
+              class="multi-image"
+              data-srcset="[object Object] ,[object Object] 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company."
+              class="multi-image img_lazy"
+              data-src="[object Object]"
+              data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
+              height="401"
+              width="295"
+            />
+          </picture>
+           
+          <div
+            class="meet-our_experts__expert-bottom_content"
+          >
+            <div
+              class="meet-our_experts__expert-info"
+            >
+              <div
+                class="meet-our_experts__expert-name"
+              >
+                Arthur Elizavetenkov
+              </div>
+               
+              <div
+                class="meet-our_experts__expert-position"
+              >
+                Project Manager
+              </div>
+            </div>
+          </div>
+           
+          <img
+            alt="Linkedin"
+            class="meet-our_experts__expert-linkedin-link img_lazy"
+            data-src="[object Object]"
+            height="24"
+            width="24"
+          />
+           
+          <a
+            href="https://www.linkedin.com/in/earthurkg/"
+            rel="nofollow"
+            target="_blank"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

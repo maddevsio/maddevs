@@ -4,7 +4,11 @@
     <ol class="table-of-contents__list">
       <li v-for="(link, index) in content" :key="index" class="table-of-contents__list-item">
         <template v-if="link.type === 'list-item'">
-          <a :href="link.spans.length ? link.spans[0].data.url : null" @click.prevent="scrollToSection">
+          <a
+            data-testid="test-link-table"
+            :href="link.spans.length ? link.spans[0].data.url : null"
+            @click.prevent="scrollToSection"
+          >
             {{ link.text }}
           </a>
         </template>
