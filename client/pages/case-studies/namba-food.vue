@@ -682,7 +682,7 @@ export default {
         },
         {
           techName: 'Docker',
-          className: 'devops-docker case_technologies-item__docker',
+          className: 'devops-docker',
         },
         {
           techName: 'Nginx',

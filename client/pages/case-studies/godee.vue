@@ -786,7 +786,7 @@ export default {
         },
         {
           techName: 'Docker',
-          className: 'devops-docker case_technologies-item__docker',
+          className: 'devops-docker',
         },
         {
           techName: 'Nginx',
@@ -842,7 +842,7 @@ export default {
         },
         {
           techName: 'GRPC',
-          className: 'backend-grpc case_technologies-item__grpc',
+          className: 'backend-grpc',
         },
         {
           techName: 'iOS',
@@ -850,7 +850,7 @@ export default {
         },
         {
           techName: 'UptimeRobot',
-          className: 'other-uptime-robot case_technologies-item__uptime-robot',
+          className: 'other-uptime-robot',
         },
         {
           techName: 'Mapbox',

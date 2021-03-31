@@ -55,14 +55,14 @@
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom">Technology stack</h2>
-        <!-- <ListTechnologies class="m-96_bottom media-m-48_bottom">
+        <ListTechnologies class="m-96_bottom media-m-48_bottom">
           <ListTechnologiesItem
             v-for="(technologiesItem, i) in technologiesList"
             :key="i"
             :tech-name="technologiesItem.techName"
             :class-name="technologiesItem.className"
           />
-        </ListTechnologies> -->
+        </ListTechnologies>
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Key project milestones</h2>
@@ -249,6 +249,8 @@ import Card from '@/components/Cases/Card'
 import CardProjectInNumbers from '@/components/Cases/cards/kaf/CardProjectInNumbers'
 import CardSupportedGadgets from '@/components/Cases/cards/kaf/CardSupportedGadgets'
 import CardProjectMilestone from '@/components/Cases/cards/kaf/CardProjectMilestone'
+import ListTechnologies from '@/components/Cases/ListTechnologies'
+import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
 
 export default {
   name: 'KafCase',
@@ -264,6 +266,8 @@ export default {
     Card,
     CardSupportedGadgets,
     CardProjectMilestone,
+    ListTechnologies,
+    ListTechnologiesItem,
   },
 
   data() {
@@ -333,6 +337,41 @@ export default {
             'User authorisation ensured a more personalised experience for each user. Custom filters, such as ‘favourites’, ‘already watched’ and ‘search’, made the service more viewer-friendly.',
 
           backgroundColor: 'black-primary-bg',
+        },
+      ],
+
+      technologiesList: [
+        {
+          techName: 'Golang',
+          className: 'backend-go',
+        },
+        {
+          techName: 'Django',
+          className: 'backend-django',
+        },
+        {
+          techName: 'PostgreSQL',
+          className: 'backend-postgresql',
+        },
+        {
+          techName: 'Nimble Streamer',
+          className: 'other-nimble',
+        },
+        {
+          techName: 'Plex Media Server',
+          className: 'other-plex',
+        },
+        {
+          techName: 'jQuery',
+          className: 'frontend-jquery',
+        },
+        {
+          techName: 'Video.js',
+          className: 'frontend-video-js',
+        },
+        {
+          techName: 'Nginx',
+          className: 'devops-nginx-txt',
         },
       ],
     }
