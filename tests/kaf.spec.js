@@ -4,11 +4,11 @@ import Kaf from '../client/pages/case-studies/kaf'
 describe('namba food', () => {
   let wrapper
   const data = {
-    headerLogo: {
+    logo: {
       width: 387,
       height: 81.23,
-      pictureFolder: 'kaf',
-      fileName: 'kaf-logo',
+      folder: 'kaf',
+      file: 'kaf-logo',
       alt: '',
     },
   }

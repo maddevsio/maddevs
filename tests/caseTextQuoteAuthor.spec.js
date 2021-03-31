@@ -5,12 +5,11 @@ import TextQuoteAuthor from '@/components/Cases/shared/TextQuoteAuthor'
 describe('text quote author', () => {
   let wrapper
   const props = {
-    authorName: 'Author name',
-    authorPosition: 'Author position',
-    pictureFolder: 'nambafood',
-    fileName: 'apple-iphone-xr-silver',
-    fileExtension: 'png',
-    alt: 'alt',
+    author: 'Author name',
+    position: 'Author position',
+    folder: 'nambafood',
+    file: 'apple-iphone-xr-silver',
+    extension: 'png',
   }
 
   beforeEach(() => {

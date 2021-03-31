@@ -5,16 +5,16 @@ import Picture from '@/components/Cases/shared/Picture'
 describe('picture', () => {
   let wrapper
   const props = {
-    pictureFolder: 'nambafood',
-    fileName: 'apple-iphone-xr-silver',
-    fileExtension: 'png',
+    folder: 'nambafood',
+    file: 'apple-iphone-xr-silver',
+    extension: 'png',
     alt: 'alt',
-    lazyLoading: true,
-    boxShadow: true,
-    borderRadius: false,
+    lazy: true,
+    shadow: true,
+    radius: false,
     height: 0,
     width: 0,
-    backgroundColor: false,
+    background: false,
   }
 
   beforeEach(() => {

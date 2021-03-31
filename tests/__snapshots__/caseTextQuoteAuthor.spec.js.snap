@@ -19,7 +19,7 @@ exports[`text quote author renders correctly 1`] = `
         />
          
         <img
-          alt="alt"
+          alt="Author name"
           class="image"
           height="0"
           loading="lazy"

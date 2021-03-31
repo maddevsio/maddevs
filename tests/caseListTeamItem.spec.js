@@ -7,10 +7,11 @@ describe('list team item', () => {
   const props = {
     name: 'Name',
     position: 'Position',
-    pictureFolder: 'nambafood',
-    fileName: 'apple-iphone-xr-silver',
-    fileExtension: 'png',
-    alt: 'alt',
+    image: {
+      folder: 'nambafood',
+      file: 'apple-iphone-xr-silver',
+      extension: 'png',
+    },
   }
 
   beforeEach(() => {
