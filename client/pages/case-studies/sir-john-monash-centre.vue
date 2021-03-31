@@ -882,7 +882,7 @@ export default {
         height: 110,
         pictureFolder: 'sjmc',
         fileName: 'sjmc-logo',
-        alt: '',
+        alt: 'SJMC logo',
       },
     }
   },

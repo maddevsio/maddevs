@@ -813,7 +813,7 @@ export default {
         height: 82,
         pictureFolder: 'nambafood',
         fileName: 'nambafood-logo',
-        alt: '',
+        alt: 'Namba Food logo',
       },
     }
   },

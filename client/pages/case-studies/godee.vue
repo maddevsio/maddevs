@@ -887,7 +887,7 @@ export default {
         height: 130,
         pictureFolder: 'godee',
         fileName: 'godee-logo',
-        alt: '',
+        alt: 'GoDee logo',
       },
     }
   },

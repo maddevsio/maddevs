@@ -232,7 +232,7 @@ describe('namba food', () => {
       height: 82,
       pictureFolder: 'nambafood',
       fileName: 'nambafood-logo',
-      alt: '',
+      alt: 'Namba Food logo',
     },
   }
 
