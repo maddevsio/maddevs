@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`infrastructure optimisation should render correctly with slot 1`] = `
+exports[`infrastructure optimisation should render correctly 1`] = `
 <div>
   <section
     class="infrastructure-optimisation"
