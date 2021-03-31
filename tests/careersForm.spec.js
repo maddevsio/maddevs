@@ -1,5 +1,5 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils'
-import CareersForm from '@/components/Careers/CareersForm'
+import CareersForm from '@/components/Careers/Careers'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -8,25 +8,6 @@ localVue.use(Vuelidate)
 
 describe('careersForm component', () => {
   let wrapper
-  const data = {
-    isEmailSent: false,
-    fullName: null,
-    positionValue: null,
-    positionTitle: null,
-    email: null,
-    emailTo: undefined,
-    selectedFile: null,
-    linkedinProfile: null,
-    onSubmit: false,
-    form: '',
-    radioData: [
-      { type: 'senior', label: 'Senior,' },
-      { type: 'middle', label: 'Middle,' },
-      { type: 'junior', label: 'Junior,' },
-      { type: 'intern', label: 'Intern' },
-    ],
-    modalTitle: 'Mad Devs Website Carrers Form',
-  }
 
   beforeEach(() => {
     wrapper = shallowMount(CareersForm, {
@@ -61,16 +42,6 @@ describe('careersForm component', () => {
 
   it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot()
-  })
-
-  it('should check existence of data', () => {
-    expect(wrapper.vm.$data).toStrictEqual(data)
-  })
-
-  it('onFileChanged method should set correct position', () => {
-    const newPositionValue = null
-    CareersForm.methods.onFileChanged(newPositionValue)
-    expect(wrapper.vm.$data.positionValue).toStrictEqual(newPositionValue)
   })
 
   it('should rest values in data instances', () => {
