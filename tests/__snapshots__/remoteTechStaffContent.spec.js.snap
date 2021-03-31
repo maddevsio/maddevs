@@ -2,7 +2,7 @@
 
 exports[`remote tech staff content renders correctly 1`] = `
 <div
-  class="remoteTechStaffContent__tech-staff remoteTechStaffContent__tech-staff-title"
+  class="remoteTechStaffContent__tech-staff remoteTechStaffContent__tech-staff-teams"
 >
   <div
     class="remoteTechStaffContent__content_wrapper"
@@ -19,17 +19,21 @@ exports[`remote tech staff content renders correctly 1`] = `
       <h4
         class="item-sub-title remoteTechStaffContent__item-sub-title"
       >
+        
         Sub title
+      
       </h4>
        
       <p
-        class="paragraph remoteTechStaffContent__paragraph remoteTechStaffContent__title-paragraph"
+        class="paragraph remoteTechStaffContent__paragraph remoteTechStaffContent__teams-paragraph"
       >
+        
         Paragraph
+      
       </p>
        
       <div
-        class="remoteTechStaffContent__item-icon remoteTechStaffContent__title-icon"
+        class="remoteTechStaffContent__item-icon remoteTechStaffContent__teams-icon"
       />
     </div>
   </div>

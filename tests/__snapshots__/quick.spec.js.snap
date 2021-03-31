@@ -53,7 +53,6 @@ exports[`quick Project Start renders correctly 1`] = `
           </p>
         </div>
       </div>
-       
       <div
         class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_analysis"
       >
@@ -90,7 +89,6 @@ exports[`quick Project Start renders correctly 1`] = `
           </p>
         </div>
       </div>
-       
       <div
         class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_proposal"
       >
@@ -123,13 +121,10 @@ exports[`quick Project Start renders correctly 1`] = `
           <p
             class="quickProjectStart__description"
           >
-            
             We will provide you with our free, non-binding bid or a tailored proposal.
-          
           </p>
         </div>
       </div>
-       
       <div
         class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_team"
       >
@@ -166,7 +161,6 @@ exports[`quick Project Start renders correctly 1`] = `
           </p>
         </div>
       </div>
-       
       <div
         class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_start"
       >
@@ -180,6 +174,8 @@ exports[`quick Project Start renders correctly 1`] = `
             height="73"
             width="52"
           />
+           
+          <!---->
         </div>
          
         <div
@@ -194,9 +190,7 @@ exports[`quick Project Start renders correctly 1`] = `
           <p
             class="quickProjectStart__description"
           >
-            
-            You will get to know the team and we’ll start the project work.
-          
+            You will get to know the team and we’ll start the project work.Submit your project request or project idea to us.
           </p>
         </div>
       </div>

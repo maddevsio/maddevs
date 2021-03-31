@@ -77,7 +77,7 @@ import FeaturedPost from '@/components/Blog/FeaturedPost'
 import SkeletonBlogWidget from '@/components/Blog/SkeletonBlogWidget'
 import SkeletonFeaturedPost from '@/components/Blog/SkeletonFeaturedPost'
 import CustomerUniversitySection from '@/components/Blog/CustomerUniversitySection'
-import initImgLazyHelper from '@/helpers/initImgLazy'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'Blog',
@@ -90,18 +90,13 @@ export default {
     CustomerUniversitySection,
   },
 
-  beforeRouteEnter(to, from, next) {
-    next(vm => {
-      if (from.params.uid) vm.visitedPost = from.fullPath
-    })
-  },
+  mixins: [initLazyLoadMixin],
 
   data() {
     return {
       pageSize: 12,
       metaTitle: 'Blog',
       ogUrl: 'https://maddevs.io/blog/',
-      visitedPost: null,
     }
   },
 
@@ -167,28 +162,8 @@ export default {
     },
   },
 
-  watch: {
-    // Fixes scroll position for async filtered posts list
-    filteredPosts() {
-      const visitedLinkEl = document.querySelector(`a[href='${this.visitedPost}']`)
-      if (
-        visitedLinkEl &&
-        !visitedLinkEl.classList.contains('featured-post') &&
-        !visitedLinkEl.classList.contains('latest-post')
-      ) {
-        const postItemEl = visitedLinkEl.parentNode // single-post__wrapper
-        postItemEl.scrollIntoView({ block: 'start' })
-        window.scrollTo(0, window.scrollY - 120) // scroll for distance between the post and the top of the screen
-      }
-    },
-  },
-
   created() {
     this.getContent()
-  },
-
-  mounted() {
-    initImgLazyHelper()
   },
 
   methods: {
@@ -202,7 +177,6 @@ export default {
     },
 
     handleFilterChange(e) {
-      this.visitedPost = null
       this.changePostsCategory(e.target.value)
     },
   },
@@ -495,14 +469,6 @@ export default {
 
 @media only screen and (max-width: 991px) {
   .home {
-    .latest-posts {
-      &__single-post {
-        /deep/ .blog-post__cover-image {
-          height: 59vw;
-        }
-      }
-    }
-
     .latest-posts .latest-posts__wrapper .latest-posts__single-post,
     .filtered-posts .filtered-posts__wrapper .filtered-posts__single-post {
       width: 100%;
@@ -537,15 +503,15 @@ export default {
 
         /deep/ .blog-post {
           display: flex;
+          align-items: flex-start;
           margin-bottom: 18px;
 
           &:last-child {
             margin-bottom: 0;
           }
 
-          &__cover-image {
+          &__image {
             width: 124px;
-            height: 124px;
             flex-shrink: 0;
             margin-right: 16px;
           }
@@ -611,9 +577,8 @@ export default {
     .filtered-posts {
       &__wrapper {
         /deep/ .blog-post {
-          &__cover-image {
+          &__image {
             width: 120px;
-            height: 120px;
             margin-right: 10px;
           }
         }

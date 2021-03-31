@@ -17,12 +17,4 @@ describe('gdpr page', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
   // --------------------- //
-
-  it('sets the correctly data', () => {
-    expect(wrapper.vm.$data.title).toEqual('Mad Devs GDPR Compliance')
-    expect(wrapper.vm.$data.description).toEqual(
-      'Mad Devs’ General Data Protection Regulation (GDPR) Compliance Commitment.',
-    )
-    expect(wrapper.vm.$data.ogUrl).toEqual('https://maddevs.io/gdpr/')
-  })
 })

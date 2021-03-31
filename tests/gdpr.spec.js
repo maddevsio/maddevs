@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import GDPR from '@/components/GDPR'
+import GDPR from '@/components/core/GDPR'
 
 describe('gDPR', () => {
   let wrapper
