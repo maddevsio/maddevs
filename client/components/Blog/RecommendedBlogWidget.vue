@@ -10,7 +10,7 @@
         class="blog-post__image"
         width="400"
         height="220"
-      />
+      >
       <div>
         <h2
           class="blog-post__title"

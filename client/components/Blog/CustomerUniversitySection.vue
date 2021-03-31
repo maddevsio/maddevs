@@ -13,11 +13,20 @@
             class="featured-post"
           >
             <span class="featured-post__date">{{ formattedDate }}</span>
-            <h2 class="featured-post__title">{{ $prismic.asText(featured.title).replace(/^[0-9]*\. /, '') }}</h2>
-            <p class="featured-post__text">{{ getFirstParagraph(featured) }}</p>
+            <h2 class="featured-post__title">
+              {{ $prismic.asText(featured.title).replace(/^[0-9]*\. /, '') }}
+            </h2>
+            <p class="featured-post__text">
+              {{ getFirstParagraph(featured) }}
+            </p>
             <post-author :document="featured" />
             <div class="featured-post__cover-wrapper">
-              <prismic-image :field="featured.featured_image" class="featured-post__cover" width="560" height="347" />
+              <prismic-image
+                :field="featured.featured_image"
+                class="featured-post__cover"
+                width="560"
+                height="347"
+              />
             </div>
           </router-link>
         </div>
