@@ -11,6 +11,7 @@
       <div class="remoteTechStaff__tech-staff-items">
         <RemoteTechStaffContent
           v-bind="teams"
+          data-testid="test-term"
           :hovered="hovered === 'teams'"
           @mouseover="handleMouseOver"
           @mouseout="handleMouseOut"
