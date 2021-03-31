@@ -20,7 +20,7 @@
       <img
         :width="headerLogo.width"
         :height="headerLogo.height"
-        :src="require(`@/assets/img/Cases/${headerLogo.pictureFolder}/svg/${headerLogo.fileName}.svg`)"
+        :src="getMediaFromS3(`/images/Cases/${headerLogo.pictureFolder}/svg/${headerLogo.fileName}.svg`)"
         :alt="headerLogo.alt"
         :class="`case_${headerLogo.fileName}`"
         class="case_header-logo"

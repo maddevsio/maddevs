@@ -1,6 +1,6 @@
 <template>
   <main class="case">
-    <CaseHeader :header-logo="headerLogo" video-name="">
+    <CaseHeader :header-logo="headerLogo" video-name="" video-fallback-path="/images/Cases/kaf/png/banner-bg.png">
       <h1 slot="title" class="case_header-title">
         The Evolution <br />
         of Yourcast.TV
