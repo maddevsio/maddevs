@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UIBeforeAfterImage component should render correctly with slot 1`] = `
+<div>
+  <div
+    class="comparsion-container"
+    data-testid="track-img"
+  >
+    <div
+      class="comparsion-track-line"
+      data-testid="test-comparsion-track-line"
+    />
+     
+    <div
+      class="comparsion-view"
+    >
+      <div
+        class="comparsion-image_before"
+        data-testid="test-comparsion-image_before"
+      />
+       
+      <img
+        class="comparsion-image_after"
+        data-testid="test-comparsion-image_after"
+        height=""
+        loading="lazy"
+        width=""
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,8 +1,8 @@
 import { render, fireEvent, screen } from '@testing-library/vue'
 import TechnologiesAndTools from '@/components/About/TechnologiesAndTools'
 
-describe('technologies and tools', () => {
-  it('should render correctly with slot', () => {
+describe('TechnologiesAndTools', () => {
+  it('should render correctly', () => {
     const { container } = render(TechnologiesAndTools)
 
     expect(screen.getByText('Ansible')).not.toBeNull()

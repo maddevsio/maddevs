@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`customer Rates is a Vue instance 1`] = `
+exports[`CustomerRates should render correctly 1`] = `
 <div>
   <section
     class="customer-rates"
@@ -45,7 +45,8 @@ exports[`customer Rates is a Vue instance 1`] = `
               class="customer-rates__description customer-rates__description-top-row"
             >
               
-            recommend us 
+            recommend us
+            
               <br
                 class="customer-rates__line-break"
               />
@@ -55,7 +56,6 @@ exports[`customer Rates is a Vue instance 1`] = `
             </p>
           </div>
         </div>
-         
         <div
           class="col-xl-4 col-md-4"
         >
@@ -72,7 +72,8 @@ exports[`customer Rates is a Vue instance 1`] = `
               class="customer-rates__description customer-rates__description-top-row"
             >
               
-            stay with us for 
+            stay with us for
+            
               <br
                 class="customer-rates__line-break"
               />
@@ -82,7 +83,6 @@ exports[`customer Rates is a Vue instance 1`] = `
             </p>
           </div>
         </div>
-         
         <div
           class="col-xl-4 col-md-4"
         >
@@ -99,7 +99,8 @@ exports[`customer Rates is a Vue instance 1`] = `
               class="customer-rates__description customer-rates__description-top-row"
             >
               
-            are satisfied with 
+            are satisfied with
+            
               <br
                 class="customer-rates__line-break"
               />

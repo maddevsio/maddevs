@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`technologies and tools should render correctly with slot 1`] = `
+exports[`TechnologiesAndTools should render correctly 1`] = `
 <div>
   <section
     class="technologies-and_tools"
@@ -33,7 +33,7 @@ exports[`technologies and tools should render correctly with slot 1`] = `
             data-testid="test-tech_legend__item"
           >
             
-          DevOps
+          devOps
         
           </div>
           <div

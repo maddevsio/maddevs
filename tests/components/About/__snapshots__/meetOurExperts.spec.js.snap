@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`meet Our Experts is a Vue instance 1`] = `
+exports[`MeetOurExperts is a Vue instance 1`] = `
 <div>
   <section
     class="meet-our_experts"

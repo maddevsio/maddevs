@@ -1,8 +1,8 @@
 import CustomerTestimonials from '@/components/About/CustomerTestimonials'
 import { fireEvent, render, screen } from '@testing-library/vue'
 
-describe('customer Testimonials', () => {
-  it('is a Vue instance', () => {
+describe('CustomerTestimonials', () => {
+  it('should render correctly', () => {
     const { container } = render(CustomerTestimonials, {
       stubs: ['client-only'],
     })

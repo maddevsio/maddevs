@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`technologies and tools should render correctly with slot 1`] = `
+exports[`WeCreateItProjectsFor should render correctly 1`] = `
 <div>
   <section
     class="weCreateItProject"
@@ -34,14 +34,14 @@ exports[`technologies and tools should render correctly with slot 1`] = `
               class="weCreateItProject__paragraph"
             >
               
-            Content Streaming 
+            Content Streaming
+            
               <br />
               
             Transportation
           
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
@@ -49,14 +49,14 @@ exports[`technologies and tools should render correctly with slot 1`] = `
               class="weCreateItProject__paragraph"
             >
               
-            HealthTech 
+            HealthTech
+            
               <br />
               
             IoTs
           
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
@@ -64,14 +64,14 @@ exports[`technologies and tools should render correctly with slot 1`] = `
               class="weCreateItProject__paragraph"
             >
               
-            E-Commerce 
+            E-Commerce
+            
               <br />
               
             AdTech
           
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
@@ -79,14 +79,14 @@ exports[`technologies and tools should render correctly with slot 1`] = `
               class="weCreateItProject__paragraph"
             >
               
-            E-Learning 
+            E-Learning
+            
               <br />
               
             FinTech
           
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
@@ -94,14 +94,14 @@ exports[`technologies and tools should render correctly with slot 1`] = `
               class="weCreateItProject__paragraph"
             >
               
-            Serverless 
+            Serverless
+            
               <br />
               
             BYOD
           
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
@@ -109,7 +109,8 @@ exports[`technologies and tools should render correctly with slot 1`] = `
               class="weCreateItProject__paragraph"
             >
               
-            Blockchain 
+            Blockchain
+            
               <br />
               
             FoodTech
