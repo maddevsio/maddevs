@@ -2010,11 +2010,11 @@ exports[`kaf renders correctly 1`] = `
         class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
       >
         
-        While working on this project, we acquired extensive hands-on experience in building modern livestreaming and
-        VoD services. We were amazed by the abundance of open-source tools available for building great OTT platforms
-        and online movies. Yourcast.TV was the beginning; however, we now see that this internal project could become
-        a cornerstone for many enterprise-level solutions.
-       
+    While working on this project, we acquired extensive hands-on experience in building modern livestreaming and VoD
+    services. We were amazed by the abundance of open-source tools available for building great OTT platforms and
+    online movies. Yourcast.TV was the beginning; however, we now see that this internal project could become a
+    cornerstone for many enterprise-level solutions.
+   
         <div
           class="case_blockquote-author__author-info m-24_top"
         >
@@ -2060,16 +2060,16 @@ exports[`kaf renders correctly 1`] = `
     class="case_footer container_full"
   >
     <div
-      class="case_logotype"
+      class="case_logotype-sjmc"
     />
      
     <h2
-      class="case_title case_title_h2 case_title-kaf-case"
+      class="case_title case_title_h2 case_title-sjmc"
     >
       
     The maintenance 
       <br
-        class="case_mobile-break"
+        class="case_mobile-break-sjmc"
       />
       
     of memory: 
@@ -2077,7 +2077,7 @@ exports[`kaf renders correctly 1`] = `
       
     Sir John Monash 
       <br
-        class="case_mobile-break"
+        class="case_mobile-break-sjmc"
       />
       
     Centre
