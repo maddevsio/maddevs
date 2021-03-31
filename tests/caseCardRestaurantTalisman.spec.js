@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import CardRestaurantTalisman from '@/components/Cases/cards-content/CardRestaurantTalisman'
+import CardRestaurantTalisman from '@/components/Cases/cards/namba-food/CardRestaurantTalisman'
 
 describe('cardRestaurantTalisman', () => {
   let wrapper

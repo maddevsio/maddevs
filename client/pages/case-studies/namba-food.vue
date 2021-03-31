@@ -1,7 +1,7 @@
 <template>
   <main class="main case">
     <CaseHeader
-      logo="nambafood"
+      :header-logo="headerLogo"
       video-name="/videos/main.ef19480.mp4"
       video-fallback-path="/images/Cases/nambafood/jpg/blank.jpg"
     >
@@ -539,15 +539,16 @@ import ListItemDot from '@/components/Cases/ListItemDot'
 import ListTechnologies from '@/components/Cases/ListTechnologies'
 import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
 import Card from '@/components/Cases/Card'
-import CardUseCase from '@/components/Cases/cards-content/CardUseCase'
-import CardsBusinessModelsGrid from '@/components/Cases/cards-content/CardsBusinessModelsGrid'
+import CardUseCase from '@/components/Cases/cards/namba-food/CardUseCase'
+import CardsBusinessModelsGrid from '@/components/Cases/cards/namba-food/CardsBusinessModelsGrid'
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
-import CardDeliveryServiceNambafood from '@/components/Cases/cards-content/CardDeliveryServiceNambafood'
-import CardRestaurantTalisman from '@/components/Cases/cards-content/CardRestaurantTalisman'
-import CardNationwideNumbers from '@/components/Cases/cards-content/CardNationwideNumbers'
-import CardNinjaSushi from '@/components/Cases/cards-content/CardNinjaSushi'
+import CardDeliveryServiceNambafood from '@/components/Cases/cards/namba-food/CardDeliveryServiceNambafood'
+import CardRestaurantTalisman from '@/components/Cases/cards/namba-food/CardRestaurantTalisman'
+import CardNationwideNumbers from '@/components/Cases/cards/namba-food/CardNationwideNumbers'
+import CardNinjaSushi from '@/components/Cases/cards/namba-food/CardNinjaSushi'
 import Swiper from '@/components/Cases/Swiper'
-import initImgLazyHelper from '@/helpers/initImgLazy'
+import { getMetadata, buildHead } from '@/data/seo'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'NambaFood',
@@ -577,13 +578,10 @@ export default {
     CardNinjaSushi,
   },
 
+  mixins: [initLazyLoadMixin],
+
   data() {
     return {
-      title: 'Mad Devs Case Study: Namba Food Top Delivery Service',
-      description:
-        'FoodTech Case Study. How to make a delivery app from scratch? Read Namba Food’s story of developing a custom software top delivery service in Central Asia.',
-
-      ogUrl: 'https://maddevs.io/case-studies/namba-food/',
       team: [
         {
           name: 'Vlad Andreev',
@@ -814,40 +812,21 @@ export default {
 
       videoIdList: ['map-video', 'iphone-silver-video'],
       isIphone: false,
+      headerLogo: {
+        width: 259,
+        height: 82,
+        pictureFolder: 'nambafood',
+        fileName: 'nambafood-logo',
+        alt: '',
+      },
     }
   },
 
   head() {
-    return {
-      title: this.title,
-      meta: [
-        { name: 'description', content: this.description },
-        { property: 'og:url', content: this.ogUrl },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: this.title },
-        { property: 'og:description', content: this.description },
-        {
-          property: 'og:image',
-          content: 'https://maddevs.io/namba-food.png',
-        },
-      ],
-
-      link: [
-        {
-          rel: 'canonical',
-          href: 'https://maddevs.io/case-studies/namba-food/',
-        },
-      ],
-
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [
-        {
-          type: 'application/ld+json',
-          innerHTML:
-            '{"@context": "https://schema.org", "@type": "WebPage", "breadcrumb": "Projects > Case Studies > FoodTech Solutions", "name": "Mad Devs Case Study: Namba Food Top Delivery Service", "description": "FoodTech Case Study. How to make a delivery app from scratch? Read Namba Food’s story of developing a custom software top delivery service in Central Asia.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group LTD"}}',
-        },
-      ],
-    }
+    return buildHead({
+      ...getMetadata('nambafood'),
+      image: 'https://maddevs.io/namba-food.png',
+    })
   },
 
   mounted() {
@@ -876,7 +855,6 @@ export default {
     } else {
       this.isIphone = false
     }
-    initImgLazyHelper()
   },
 }
 </script>

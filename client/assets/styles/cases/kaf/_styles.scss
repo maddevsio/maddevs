@@ -1,0 +1,49 @@
+.case {
+  &_header {
+    background: $bgcolor--kaf-banner;
+
+    &:before {
+      background-image: url("../../assets/img/Cases/kaf/png/banner-bg.png");
+      z-index: 1; // place picture above the background gradient
+    }
+  }
+
+  &_kaf-logo {
+    width: 387px;
+    height: 82px;
+    margin-left: 101px;
+  }
+  
+  @media screen and (max-width: 1320px) {
+    &_kaf-logo {
+      margin-left: 51px;
+    }
+  }
+
+  @media screen and (max-width: 1220px) {
+    &_kaf-logo {
+      margin-left: 31px;
+    }
+  }
+
+  @media screen and (max-width: 1170px) {
+    &_kaf-logo {
+      margin-bottom: 38px;
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 655px) {
+    &_kaf-logo {
+      width: 249px;
+      height: 51px;
+      margin-bottom: 31px;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    &_kaf-logo {
+      margin-bottom: 25px;
+    }
+  }
+}

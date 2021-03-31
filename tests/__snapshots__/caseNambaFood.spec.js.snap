@@ -58,8 +58,12 @@ exports[`namba food renders correctly 1`] = `
          
       </div>
        
-      <div
+      <img
+        alt=""
         class="case_header-logo case_nambafood-logo"
+        height="82"
+        src="[object Object]"
+        width="259"
       />
     </div>
   </section>

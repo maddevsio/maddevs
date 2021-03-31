@@ -17,7 +17,14 @@
         <slot name="description"></slot>
         <slot name="actions"></slot>
       </div>
-      <div :class="`case_${logo}-logo`" class="case_header-logo"></div>
+      <img
+        :width="headerLogo.width"
+        :height="headerLogo.height"
+        :src="require(`@/assets/img/Cases/${headerLogo.pictureFolder}/svg/${headerLogo.fileName}.svg`)"
+        :alt="headerLogo.alt"
+        :class="`case_${headerLogo.fileName}`"
+        class="case_header-logo"
+      />
     </div>
   </section>
 </template>
@@ -25,10 +32,36 @@
 <script>
 export default {
   name: 'Header',
+
   props: {
-    logo: {
-      type: String,
-      default: '',
+    headerLogo: {
+      type: Object,
+      default: () => {},
+
+      width: {
+        type: Number,
+        default: 0,
+      },
+
+      height: {
+        type: Number,
+        default: 0,
+      },
+
+      pictureFolder: {
+        type: String,
+        default: '',
+      },
+
+      fileName: {
+        type: String,
+        default: '',
+      },
+
+      alt: {
+        type: String,
+        default: '',
+      },
     },
 
     videoName: {
@@ -65,7 +98,6 @@ export default {
 .case {
   &_header {
     display: flex;
-    background-color: $bgcolor--black-opacity-07;
 
     &:after {
       display: none;

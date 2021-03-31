@@ -5,10 +5,6 @@ import './__mocks__/intersectionObserverMock'
 describe('namba food', () => {
   let wrapper
   const data = {
-    title: 'Mad Devs Case Study: Namba Food Top Delivery Service',
-    description:
-      'FoodTech Case Study. How to make a delivery app from scratch? Read Namba Food’s story of developing a custom software top delivery service in Central Asia.',
-    ogUrl: 'https://maddevs.io/case-studies/namba-food/',
     team: [
       {
         name: 'Vlad Andreev',
@@ -231,6 +227,13 @@ describe('namba food', () => {
     ],
     videoIdList: ['map-video', 'iphone-silver-video'],
     isIphone: false,
+    headerLogo: {
+      width: 259,
+      height: 82,
+      pictureFolder: 'nambafood',
+      fileName: 'nambafood-logo',
+      alt: '',
+    },
   }
 
   beforeEach(() => {
@@ -240,7 +243,7 @@ describe('namba food', () => {
       },
     }
     wrapper = mount(NambaFood, {
-      stubs: ['client-only', 'nuxt-link'],
+      stubs: ['client-only', 'nuxt-link', 'NuxtLink'],
       mocks: {
         getMediaFromS3: () => 's3 image url',
       },

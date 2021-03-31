@@ -1,11 +1,11 @@
 import { mount } from '@vue/test-utils'
-import footerSocialNetworkList from '@/components/Footer/footer-social-network-list'
+import FooterSocialNetworks from '@/components/core/Footer/FooterSocialNetworks'
 
-describe('footer social network list', () => {
+describe('footerSocialNetworks', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(footerSocialNetworkList)
+    wrapper = mount(FooterSocialNetworks)
   })
 
   // ------ IMPORTANT ----- //

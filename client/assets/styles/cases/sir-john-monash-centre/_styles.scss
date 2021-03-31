@@ -1,9 +1,11 @@
 .case {
+  &_header {
+    background-color: $bgcolor--black-opacity-07;
+  }
+
   &_sjmc-logo {
-    @include sjmc-header;
     width: 242px;
-    min-width: 242px;
-    height: 108px;
+    height: 110px;
     margin-left: 177px;
     margin-top: -95px;
   }
@@ -117,9 +119,6 @@
     &_sjmc-logo {
       margin-top: 0;
       margin-left: 0;
-      min-width: auto;
-      width: 100%;
-      background-position: left;
       margin-bottom: 38px;
     }
   }
@@ -144,6 +143,7 @@
 
   @media screen and (max-width: 655px) {
     &_sjmc-logo {
+      width: 143px;
       height: 65px;
       margin-bottom: 35px;
     }

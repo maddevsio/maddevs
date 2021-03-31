@@ -74,8 +74,12 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         </button>
       </div>
        
-      <div
+      <img
+        alt=""
         class="case_header-logo case_sjmc-logo"
+        height="110"
+        src="[object Object]"
+        width="242"
       />
     </div>
   </section>

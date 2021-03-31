@@ -1,8 +1,10 @@
 .case {
+  &_header {
+    background-color: $bgcolor--black-opacity-07;
+  }
+
   &_nambafood-logo {
-    @include nambafood-header;
     width: 259px;
-    min-width: 259px;
     height: 82px;
     margin-left: 164px;
   }
@@ -125,11 +127,9 @@
 
   @media screen and (max-width: 1170px) {
     &_nambafood-logo {
+      width: 208px;
       margin-left: 0;
-      min-width: auto;
-      width: 100%;
       margin-bottom: 38px;
-      background-position: -26px;
     }
   }
 
@@ -195,8 +195,8 @@
 
   @media screen and (max-width: 655px) {
     &_nambafood-logo {
+      width: 164px;
       height: 65px;
-      background-position: -21px;
       margin-bottom: 35px;
     }
   }

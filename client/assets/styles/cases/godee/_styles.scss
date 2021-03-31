@@ -1,8 +1,10 @@
 .case {
+  &_header {
+    background-color: $bgcolor--black-opacity-07;
+  }
+
   &_godee-logo {
-    @include godee-logo;
     width: 292px;
-    min-width: 292px;
     height: 130px;
     margin-left: 155px;
   }
@@ -201,10 +203,8 @@
 
   @media screen and (max-width: 1170px) {
     &_godee-logo {
+      width: 293px;
       margin-left: 0;
-      min-width: auto;
-      width: 100%;
-      background-position: left;
       margin-bottom: 6px;
     }
   }
@@ -258,6 +258,7 @@
 
   @media screen and (max-width: 655px) {
     &_godee-logo {
+      width: 147px;
       height: 65px;
       margin-bottom: 20px;
     }

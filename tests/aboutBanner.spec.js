@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import AboutBanner from '@/components/Banner/AboutBanner'
+import AboutBanner from '@/components/core/banners/AboutBanner'
 
 describe('form checkboxes', () => {
   let wrapper
@@ -11,7 +11,7 @@ describe('form checkboxes', () => {
       },
     }
     wrapper = mount(AboutBanner, {
-      stubs: ['nuxt-link'],
+      stubs: ['nuxt-link', 'NuxtLink'],
     })
   })
 

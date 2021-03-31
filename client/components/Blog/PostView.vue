@@ -61,7 +61,7 @@ import TableOfContents from '@/components/Blog/TableOfContents'
 import BlogHeader from '@/components/Blog/header/Blog'
 import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity'
 import CuNavigation from '@/components/Blog/CuNavigation'
-import initImgLazyHelper from '@/helpers/initImgLazy'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import RecommendedBlogWidget from '@//components/Blog/RecommendedBlogWidget'
 
 export default {
@@ -74,6 +74,8 @@ export default {
     CustomerUniversityHeader,
     CuNavigation,
   },
+
+  mixins: [initLazyLoadMixin],
 
   props: {
     type: {
@@ -159,7 +161,6 @@ export default {
     window.addEventListener('scroll', this.handleScroll)
     window.addEventListener('scroll', this.shareButtonsScroll)
     window.scroll()
-    initImgLazyHelper()
   },
 
   destroyed() {
@@ -425,10 +426,6 @@ export default {
         background-color: $bgcolor--white-primary;
       }
     }
-
-    /deep/ .blog-post__cover-image {
-      height: 220px;
-    }
   }
 }
 
@@ -460,6 +457,7 @@ export default {
     &__introduction-paragraph,
     &__text-container {
       padding: 0 24px;
+      word-break: break-word;
     }
 
     &__recommended-posts-list {
@@ -482,10 +480,6 @@ export default {
 
       /deep/ .blog-post-meta {
         display: none;
-      }
-
-      /deep/ .blog-post__cover-image {
-        height: 50.2vw;
       }
     }
 

@@ -1,13 +1,11 @@
 <template>
   <nuxt-link :to="link" :class="{ 'latest-post': isRecentPost }">
     <div class="blog-post">
-      <div
-        :class="`blog-post__${className}-cover-image`"
-        :style="`background-image: url(${post.data.featured_image.url})`"
-        class="blog-post__cover-image"
-      />
+      <img :src="post.data.featured_image.url" :alt="post.data.featured_image.alt" class="blog-post__image" />
       <div>
-        <h2 class="blog-post__title">{{ $prismic.asText(post.data.title) }}</h2>
+        <h2 class="blog-post__title" :title="$prismic.asText(post.data.title)">
+          {{ $prismic.asText(post.data.title) }}
+        </h2>
         <p class="blog-post__paragraph">{{ getFirstParagraph(post) }}</p>
         <div class="blog-post__meta">
           <span class="created-at">{{ formattedDate }}</span>
@@ -38,11 +36,6 @@ export default {
     post: {
       type: Object,
       required: true,
-    },
-
-    className: {
-      type: String,
-      default: '',
     },
   },
 
@@ -114,16 +107,11 @@ export default {
     text-decoration: none;
   }
 
-  &__cover-image {
-    height: 220px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 16px;
-  }
-
-  &__recommended-post-cover-image {
-    background-size: cover;
   }
 
   &__featured-image {
@@ -139,7 +127,7 @@ export default {
     display: -webkit-box;
     max-width: 100%;
     margin: 0 auto;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -171,19 +159,6 @@ export default {
       padding: 4px 16px;
       transition: 0.2s;
       line-height: 22px;
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    &__recommended-post-cover-image {
-      background-size: 100%;
-    }
-  }
-
-  @media only screen and (max-width: 991px) {
-    &__filtered-post-cover-image,
-    &__recommended-post-cover-image {
-      background-size: cover;
     }
   }
 }

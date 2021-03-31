@@ -1,11 +1,11 @@
 import { mount } from '@vue/test-utils'
-import WeCreateItProjectFor from '@/components/About/WeCreateItProjectFor'
+import WeCreateItProjectsFor from '@/components/About/WeCreateItProjectsFor'
 
 describe('we Create It Project For', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(WeCreateItProjectFor)
+    wrapper = mount(WeCreateItProjectsFor)
   })
 
   // ------ IMPORTANT ----- //

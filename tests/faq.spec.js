@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import FAQ from '@/components/FAQ'
+import FAQ from '@/components/core/FAQ'
 
 describe('fAQ', () => {
   let wrapper

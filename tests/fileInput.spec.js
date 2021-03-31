@@ -1,32 +1,25 @@
 import { mount } from '@vue/test-utils'
 
 import FileInput from '@/components/Careers/FileInput'
-import CareersForm from '@/components/Careers/CareersForm'
+import Careers from '@/components/Careers/Careers'
 
 describe('fileInput component', () => {
   let wrapper
-  const data = {
-    selectedFile: null,
-  }
 
   beforeEach(() => {
-    wrapper = mount(FileInput, { parentComponent: CareersForm })
+    wrapper = mount(FileInput, { parentComponent: Careers })
   })
 
   it('is Vue instance', () => {
     expect(wrapper.exists()).toBeTruthy()
   })
 
-  it('should have CareersForm parent component', () => {
-    expect(wrapper.vm.$parent.$options.name).toBe('CareersForm')
+  it('should have Careers parent component', () => {
+    expect(wrapper.vm.$parent.$options.name).toBe('Careers')
   })
 
   it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot()
-  })
-
-  it('should check existence of data', () => {
-    expect(wrapper.vm.$data).toStrictEqual(data)
   })
 
   it('should  render .file-input__cv--attachable if !selectedFile', () => {
@@ -59,7 +52,7 @@ describe('fileInput component', () => {
         files: [file],
       },
     }
-    localWrapper.vm.onFileChanged(event)
+    localWrapper.vm.handleFileSelect(event)
     expect(localWrapper.vm.$data.selectedFile).toEqual({ size: 100, type: 'text', name: 'mockedFile.doc' })
   })
 })

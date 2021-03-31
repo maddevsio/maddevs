@@ -6,9 +6,6 @@ global.document.exitFullscreen = () => {}
 describe('sirJohnMonashCentre', () => {
   let wrapper
   const data = {
-    title: 'Mad Devs Case Study: Sir John Monash Centre',
-    description:
-      'BYOD Case Study. Read how Mad Devs enhanced and developed new features for the Sir John Monash Centre’s software, mobile applications, and technological debt.',
     keyGoalsList: [
       'Understanding the complexity of the MMIT Brain software',
       'Building a small-scale version of the SJMC experience in 1 month',
@@ -279,6 +276,13 @@ describe('sirJohnMonashCentre', () => {
         alt: 'Mad Devs’ Team Trip to the SJMC.',
       },
     ],
+    headerLogo: {
+      width: 242,
+      height: 110,
+      pictureFolder: 'sjmc',
+      fileName: 'sjmc-logo',
+      alt: '',
+    },
   }
 
   beforeEach(() => {
@@ -289,7 +293,7 @@ describe('sirJohnMonashCentre', () => {
         },
         getMediaFromS3: () => 's3 image url',
       },
-      stubs: ['nuxt-link'],
+      stubs: ['nuxt-link', 'NuxtLink'],
     })
     wrapper.vm.$refs = {
       video: {
