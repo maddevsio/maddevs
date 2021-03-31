@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils'
-import CardProjectInNumbers from '@/components/Cases/cards/kaf/CardProjectInNumbers'
+import CardProjectInNumbers from '@/components/Cases/Kaf/CardProjectInNumbers'
 
-describe('сardProjectInNumbers', () => {
+describe('сard project in numbers', () => {
   let wrapper
 
   beforeEach(() => {

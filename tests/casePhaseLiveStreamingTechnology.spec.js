@@ -1,15 +1,11 @@
 import { mount } from '@vue/test-utils'
-import Kaf from '../client/pages/case-studies/kaf'
+import PhaseLiveStreamingTechnology from '../client/components/Cases/Kaf/PhaseLiveStreamingTechnology'
 
-describe('kaf', () => {
+describe('phase live streaming technology', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(Kaf, {
-      mocks: {
-        getMediaFromS3: () => 'img.jpg',
-      },
-    })
+    wrapper = mount(PhaseLiveStreamingTechnology)
   })
 
   // ------ IMPORTANT ----- //

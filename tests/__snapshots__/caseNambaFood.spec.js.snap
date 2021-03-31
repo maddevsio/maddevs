@@ -73,7 +73,7 @@ exports[`namba food renders correctly 1`] = `
   >
     <div
       class="case_animation_block"
-      id="case-first-section"
+      id="case-body"
     />
      
     <section

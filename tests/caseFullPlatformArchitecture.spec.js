@@ -1,15 +1,11 @@
 import { mount } from '@vue/test-utils'
-import Kaf from '../client/pages/case-studies/kaf'
+import FullPlatformArchitecture from '../client/components/Cases/Kaf/FullPlatformArchitecture'
 
-describe('kaf', () => {
+describe('full platform architecture', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(Kaf, {
-      mocks: {
-        getMediaFromS3: () => 'img.jpg',
-      },
-    })
+    wrapper = mount(FullPlatformArchitecture)
   })
 
   // ------ IMPORTANT ----- //

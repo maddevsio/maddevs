@@ -1,15 +1,11 @@
 import { mount } from '@vue/test-utils'
-import Kaf from '../client/pages/case-studies/kaf'
+import KeyProjectMilestones from '../client/components/Cases/Kaf/KeyProjectMilestones'
 
-describe('kaf', () => {
+describe('key project milestones', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(Kaf, {
-      mocks: {
-        getMediaFromS3: () => 'img.jpg',
-      },
-    })
+    wrapper = mount(KeyProjectMilestones)
   })
 
   // ------ IMPORTANT ----- //

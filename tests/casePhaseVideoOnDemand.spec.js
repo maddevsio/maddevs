@@ -1,15 +1,11 @@
 import { mount } from '@vue/test-utils'
-import Kaf from '../client/pages/case-studies/kaf'
+import PhaseVideoOnDemand from '../client/components/Cases/Kaf/PhaseVideoOnDemand'
 
-describe('kaf', () => {
+describe('phase video on demand', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(Kaf, {
-      mocks: {
-        getMediaFromS3: () => 'img.jpg',
-      },
-    })
+    wrapper = mount(PhaseVideoOnDemand)
   })
 
   // ------ IMPORTANT ----- //
