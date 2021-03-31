@@ -11,8 +11,15 @@
       <div class="blog-post__post-info">
         <post-author :document="document" />
         <div class="blog-post__date-tag">
-          <div class="blog-post__date">{{ formattedDate }}</div>
-          <div v-if="tags.length" class="blog-post__tag">{{ tags[0] }}</div>
+          <div class="blog-post__date">
+            {{ formattedDate }}
+          </div>
+          <div
+            v-if="tags.length"
+            class="blog-post__tag"
+          >
+            {{ tags[0] }}
+          </div>
         </div>
       </div>
     </template>

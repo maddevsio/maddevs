@@ -15,7 +15,9 @@ exports[`UIRadioButtons should render correctly 1`] = `
       <div
         class="ui-radio-buttons_item-label"
       >
-        some label
+        
+      some label
+    
       </div>
     </div>
   </div>

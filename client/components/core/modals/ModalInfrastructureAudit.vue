@@ -2,7 +2,9 @@
   <div class="form">
     <div class="fields-list">
       <div class="modal-field-item field-item">
-        <p class="modal-field-name field-name required">Full Name</p>
+        <p class="modal-field-name field-name required">
+          Full Name
+        </p>
         <input
           v-model="fullName"
           :class="{ invalid: $v.fullName.$error }"
@@ -10,18 +12,26 @@
           class="modal-entry-field entry-field"
           placeholder="John Smith"
           @input="$v.fullName.$touch"
-        />
+        >
         <!-- Erros -->
         <div v-if="$v.fullName.$dirty">
-          <span v-if="!$v.fullName.required" class="modal-error-text error-text">This field is required.</span>
-          <span v-if="!$v.fullName.maxLength" class="modal-error-text error-text">
+          <span
+            v-if="!$v.fullName.required"
+            class="modal-error-text error-text"
+          >This field is required.</span>
+          <span
+            v-if="!$v.fullName.maxLength"
+            class="modal-error-text error-text"
+          >
             Sorry, the number of characters in this field should not exceed 50.
           </span>
         </div>
         <!-- End Erros -->
       </div>
       <div class="modal-field-item field-item">
-        <p class="modal-field-name field-name required">Work email</p>
+        <p class="modal-field-name field-name required">
+          Work email
+        </p>
         <input
           v-model="email"
           :class="{ invalid: $v.email.$error }"
@@ -29,18 +39,26 @@
           class="modal-entry-field entry-field"
           placeholder="your@mail.com"
           @input="$v.email.$touch"
-        />
+        >
         <!-- Erros -->
         <div v-if="$v.email.$dirty">
-          <span v-if="!$v.email.required" class="modal-error-text error-text">This field is required.</span>
-          <span v-if="!$v.email.email" class="modal-error-text error-text">
+          <span
+            v-if="!$v.email.required"
+            class="modal-error-text error-text"
+          >This field is required.</span>
+          <span
+            v-if="!$v.email.email"
+            class="modal-error-text error-text"
+          >
             Invalid email address. Please use your work email.
           </span>
         </div>
         <!-- End Erros -->
       </div>
       <div class="modal-field-item field-item">
-        <p class="modal-field-name field-name">Phone number</p>
+        <p class="modal-field-name field-name">
+          Phone number
+        </p>
         <input
           :class="{ invalid: $v.phoneNumber.$error }"
           :value="phoneNumber"
@@ -48,20 +66,28 @@
           class="modal-entry-field entry-field"
           placeholder="+X XXX XXX-XXXX"
           @input="phoneChangeHandler"
-        />
+        >
         <!-- Erros -->
         <div v-if="$v.phoneNumber.$dirty">
-          <span v-if="!$v.phoneNumber.phone" class="modal-error-text error-text">
+          <span
+            v-if="!$v.phoneNumber.phone"
+            class="modal-error-text error-text"
+          >
             Sorry, this field can only contain numbers and characters specific for phone numbers.
           </span>
-          <span v-if="!$v.phoneNumber.maxLength" class="modal-error-text error-text">
+          <span
+            v-if="!$v.phoneNumber.maxLength"
+            class="modal-error-text error-text"
+          >
             Sorry, the number of characters in this field should not exceed 50.
           </span>
         </div>
         <!-- End Erros -->
       </div>
       <div class="modal-field-item field-item">
-        <p class="modal-field-name field-name required">Company</p>
+        <p class="modal-field-name field-name required">
+          Company
+        </p>
         <input
           v-model="company"
           :class="{ invalid: $v.company.$error }"
@@ -69,11 +95,17 @@
           class="modal-entry-field entry-field"
           placeholder="MyAwesomeCompany, Inc."
           @input="$v.company.$touch"
-        />
+        >
         <!-- Erros -->
         <div v-if="$v.company.$dirty">
-          <span v-if="!$v.company.required" class="modal-error-text error-text">This field is required.</span>
-          <span v-if="!$v.company.maxLength" class="modal-error-text error-text">
+          <span
+            v-if="!$v.company.required"
+            class="modal-error-text error-text"
+          >This field is required.</span>
+          <span
+            v-if="!$v.company.maxLength"
+            class="modal-error-text error-text"
+          >
             Sorry, the number of characters in this field should not exceed 300.
           </span>
         </div>
@@ -87,7 +119,11 @@
         @select="getSelectedProjectHost"
       />
     </div>
-    <UIFormCheckboxes :id="'infrastructure-audit'" ref="checkboxes" @change="handleCheckboxesChange" />
+    <UIFormCheckboxes
+      :id="'infrastructure-audit'"
+      ref="checkboxes"
+      @change="handleCheckboxesChange"
+    />
     <UIButton
       :disabled="$v.validationGroup.$invalid || !agreeWithPrivacyPolicy || onSubmit"
       :loading="onSubmit"

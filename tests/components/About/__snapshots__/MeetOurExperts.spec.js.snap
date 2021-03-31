@@ -12,7 +12,9 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
       <h3
         class="meet-our_experts__main-title"
       >
-        Meet our experts
+        
+      Meet our experts
+    
       </h3>
        
       <div
@@ -48,13 +50,17 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Marat Bediev
+                
+              Marat Bediev
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                Senior DevOps Engineer
+                
+              Senior DevOps Engineer
+            
               </div>
             </div>
           </div>
@@ -103,13 +109,17 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Tamara Mun
+                
+              Tamara Mun
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                Delivery Manager
+                
+              Delivery Manager
+            
               </div>
             </div>
           </div>
@@ -158,13 +168,17 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Andrew "Chuck" Minkin
+                
+              Andrew "Chuck" Minkin
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                CTO, Co-Founder
+                
+              CTO, Co-Founder
+            
               </div>
             </div>
           </div>
@@ -213,13 +227,17 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Nakylai Taiirova
+                
+              Nakylai Taiirova
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                Senior Full-Stack Developer
+                
+              Senior Full-Stack Developer
+            
               </div>
             </div>
           </div>
@@ -268,13 +286,17 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Daria Utesheva
+                
+              Daria Utesheva
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                Head of HR Department
+                
+              Head of HR Department
+            
               </div>
             </div>
           </div>
@@ -323,13 +345,17 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Nuradil Alymkulov
+                
+              Nuradil Alymkulov
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                Senior Full-Stack Developer
+                
+              Senior Full-Stack Developer
+            
               </div>
             </div>
           </div>
@@ -378,13 +404,17 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Alice Jang
+                
+              Alice Jang
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                Project Manager
+                
+              Project Manager
+            
               </div>
             </div>
           </div>
@@ -433,13 +463,17 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Arthur Elizavetenkov
+                
+              Arthur Elizavetenkov
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                Project Manager
+                
+              Project Manager
+            
               </div>
             </div>
           </div>

@@ -1,6 +1,11 @@
 <template>
   <div class="post-part single">
-    <prism-editor v-model="code" :highlight="highlighter" class="code-sample" readonly />
+    <prism-editor
+      v-model="code"
+      :highlight="highlighter"
+      class="code-sample"
+      readonly
+    />
   </div>
 </template>
 
@@ -69,4 +74,3 @@ export default {
   }
 }
 </style>
-

@@ -45,7 +45,7 @@ export const preview = [
     color: '#0e1b27',
     title: 'Cloud cybersecurity service',
     description:
-      "Mad Devs was involved with Guardrails' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.",
+      'Mad Devs was involved with Guardrails\' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.',
 
     contribution: 'Backend, Infrastructure, Frontend',
     alt: 'Guardrails Cloud CyberSecurity Services Logo.',

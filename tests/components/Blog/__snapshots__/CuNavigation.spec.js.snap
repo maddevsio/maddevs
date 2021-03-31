@@ -12,6 +12,8 @@ exports[`cuNavigation is a Vue instance 1`] = `
         class="cluster-navigation__title"
       >
         
+      
+    
       </div>
        
       <div
@@ -27,13 +29,17 @@ exports[`cuNavigation is a Vue instance 1`] = `
             <div
               class="index"
             >
-              1.
+              
+            1.
+          
             </div>
              
             <div
               class="label"
             >
-              Chapter 1
+              
+            Chapter 1
+          
             </div>
           </router-link-stub>
         </ol>
@@ -55,7 +61,9 @@ exports[`cuNavigation is a Vue instance 1`] = `
             <div
               class="label"
             >
-              Chapter 2
+              
+            Chapter 2
+          
             </div>
           </router-link-stub>
         </ol>

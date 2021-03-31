@@ -1,6 +1,14 @@
 <template>
-  <a :href="link" :style="{ background: color }" :target="isBlank ? '_blank' : '_self'" class="single-project">
-    <div :class="colorTheme" class="single-project__container">
+  <a
+    :href="link"
+    :style="{ background: color }"
+    :target="isBlank ? '_blank' : '_self'"
+    class="single-project"
+  >
+    <div
+      :class="colorTheme"
+      class="single-project__container"
+    >
       <div class="single-project__content-wrap">
         <img
           :width="logoWidth"
@@ -8,7 +16,7 @@
           :alt="alt"
           height="41"
           class="img_lazy single-project__logo"
-        />
+        >
         <h3 class="single-project__sub-title">
           {{ title }}
         </h3>
@@ -22,13 +30,19 @@
             height="18"
             class="contribution-widget__img img_lazy"
             alt="Mad Devs logo"
-          />
-          <span :class="`contribution-widget__content_${name}`" class="contribution-widget__content">
+          >
+          <span
+            :class="`contribution-widget__content_${name}`"
+            class="contribution-widget__content"
+          >
             contribution: {{ contribution }}
           </span>
         </div>
       </div>
-      <div :class="backgroundModifierClasses" class="single-project__background">
+      <div
+        :class="backgroundModifierClasses"
+        class="single-project__background"
+      >
         <picture>
           <source
             :data-srcset="[
@@ -37,7 +51,7 @@
             ]"
             class="multi-image"
             type="image/webp"
-          />
+          >
           <img
             :data-src="[require(`@/assets/img/Studies/${extension}/${background}.${extension}`)]"
             :data-srcset="[require(`@/assets/img/Studies/${extension}/${background}.${extension}`) + ' 2x']"
@@ -45,7 +59,7 @@
             class="img_lazy"
             width="610"
             height="294"
-          />
+          >
         </picture>
       </div>
     </div>

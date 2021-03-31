@@ -436,7 +436,9 @@ exports[`projects page renders correctly 1`] = `
         <h2
           class="customers__main-title"
         >
-          Our valued customers
+          
+        Our valued customers
+      
         </h2>
          
         <p
@@ -595,7 +597,9 @@ exports[`projects page renders correctly 1`] = `
         <h3
           class="open-source__main-title"
         >
-          Our code - available in open source - is used by many other companies.
+          
+        Our code - available in open source - is used by many other companies.
+      
         </h3>
          
         <div

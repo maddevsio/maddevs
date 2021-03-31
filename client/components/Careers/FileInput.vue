@@ -9,7 +9,7 @@
       name="file"
       :accept="acceptedExtensions"
       @change="handleFileSelect"
-    />
+    >
     <span class="none-decorated-dash">–</span>
     <label
       data-testid="test-file-label"

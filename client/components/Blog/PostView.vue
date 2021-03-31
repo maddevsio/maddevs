@@ -1,5 +1,8 @@
 <template>
-  <div :class="wrapperClass" class="blog-post">
+  <div
+    :class="wrapperClass"
+    class="blog-post"
+  >
     <div class="blog-post__background" />
     <div class="blog-post__inner-container">
       <div class="blog-post__share">
@@ -30,13 +33,27 @@
         :post-list="clusterPosts || []"
         :cluster-name="cluster ? $prismic.asText(cluster.primary.cluster_name) : ''"
       />
-      <blog-header v-else :document="document" :tags="tags" :formatted-date="formattedDate" />
+      <blog-header
+        v-else
+        :document="document"
+        :tags="tags"
+        :formatted-date="formattedDate"
+      />
       <div class="blog-post__main-content">
-        <table-of-contents v-if="$prismic.asText(document.table_of_contents)" :content="document.table_of_contents" />
-        <slices-block :slices="slices" class="blog-post__text-container" />
+        <table-of-contents
+          v-if="$prismic.asText(document.table_of_contents)"
+          :content="document.table_of_contents"
+        />
+        <slices-block
+          :slices="slices"
+          class="blog-post__text-container"
+        />
       </div>
     </div>
-    <div v-if="showRecommended" class="blog-post__recommended-posts">
+    <div
+      v-if="showRecommended"
+      class="blog-post__recommended-posts"
+    >
       <div class="blog-post__recommended-posts-list container">
         <section
           v-for="recommendedPost in recommendedPosts"
@@ -44,12 +61,24 @@
           :post="recommendedPost"
           class="blog-post__recommended-post"
         >
-          <recommended-blog-widget :post="recommendedPost" class-name="recommended-post" />
+          <recommended-blog-widget
+            :post="recommendedPost"
+            class-name="recommended-post"
+          />
         </section>
       </div>
     </div>
-    <cu-navigation v-if="clusterPosts" :id="id" :cluster="cluster" :cluster-posts="clusterPosts" />
-    <button v-if="buttonIsActive" class="blog-post__back-to-list" @click="scrollToTop()">
+    <cu-navigation
+      v-if="clusterPosts"
+      :id="id"
+      :cluster="cluster"
+      :cluster-posts="clusterPosts"
+    />
+    <button
+      v-if="buttonIsActive"
+      class="blog-post__back-to-list"
+      @click="scrollToTop()"
+    >
       <i />
     </button>
   </div>
@@ -189,16 +218,16 @@ export default {
       if (window.pageYOffset < 650) {
         shareButtons.style.cssText = 'position: absolute; top: 580px; left: -183px;'
       } else if (
-        window.pageYOffset >
-        document.querySelector('.blog-post').offsetHeight -
-          (document.querySelector('.blog-post__recommended-posts')
+        window.pageYOffset
+        > document.querySelector('.blog-post').offsetHeight
+          - (document.querySelector('.blog-post__recommended-posts')
             ? document.querySelector('.blog-post__recommended-posts').offsetHeight
-            : 0) -
-          (document.querySelector('.blog-post > .cluster-navigation')
+            : 0)
+          - (document.querySelector('.blog-post > .cluster-navigation')
             ? document.querySelector('.blog-post > .cluster-navigation').offsetHeight - 24
-            : 0) -
-          document.querySelector('.blog-post__share').offsetHeight -
-          100
+            : 0)
+          - document.querySelector('.blog-post__share').offsetHeight
+          - 100
       ) {
         shareButtons.style.cssText = 'position: absolute; bottom: -100px; top: auto; left: -183px;'
       } else {

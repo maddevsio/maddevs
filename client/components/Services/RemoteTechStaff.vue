@@ -1,8 +1,11 @@
 <template>
-  <section id="remote-tech-staff" class="remoteTechStaff main-parent-item">
+  <section
+    id="remote-tech-staff"
+    class="remoteTechStaff main-parent-item"
+  >
     <div class="container">
       <h2 class="remoteTechStaff__main-title">
-        Remote <br class="remoteTechStaff__small-screen-break" />
+        Remote <br class="remoteTechStaff__small-screen-break">
         Tech Staff
       </h2>
       <div class="remoteTechStaff__tech-staff-items">
@@ -63,7 +66,7 @@ export default {
         title: 'Individuals',
         subtitle: 'Seeing one, two, five guys working on a minor thing? Ha!',
         paragraph:
-          "We are NOT going to bring you more people than you actually need. We'll just send one or two of our rangers to your frontier, and you'll enjoy peace of mind about IT.",
+          'We are NOT going to bring you more people than you actually need. We\'ll just send one or two of our rangers to your frontier, and you\'ll enjoy peace of mind about IT.',
 
         buttonLabel: 'Get individual proactive rockets',
         type: 'individuals',
