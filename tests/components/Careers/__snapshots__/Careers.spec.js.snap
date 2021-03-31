@@ -175,7 +175,6 @@ exports[`careersForm component Render correctly 1`] = `
               <div>
                 <div
                   class="file-input"
-                  data-testid="test-fileInput"
                 >
                   <input
                     accept=".pdf,.cv,.doc,.odt,.docx,.txt"
