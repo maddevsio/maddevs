@@ -7,8 +7,8 @@ const localVue = createLocalVue()
 
 localVue.use(Vuelidate)
 
-describe('careersForm component', () => {
-  it('Render correctly', () => {
+describe('Careers component', () => {
+  it('should render correctly', () => {
     const { container } = render(Careers, {
       localVue,
     })
