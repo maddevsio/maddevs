@@ -65,7 +65,7 @@
           :value="phoneNumber"
           type="text"
           class="modal-entry-field entry-field"
-          placeholder="+1 23X XXX-XXXX"
+          placeholder="+X XXX XXX-XXXX"
           @input="phoneChangeHandler"
         />
         <!-- Erros -->
