@@ -14,7 +14,11 @@ describe('namba food', () => {
   }
 
   beforeEach(() => {
-    wrapper = mount(Kaf)
+    wrapper = mount(Kaf, {
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
+    })
   })
 
   // ------ IMPORTANT ----- //

@@ -8,6 +8,11 @@ exports[`namba food renders correctly 1`] = `
     class="case_header"
     id="case-header"
   >
+    <div
+      class="case_main-video_fallback"
+      style="background-image: url(img.jpg);"
+    />
+     
     <video
       autoplay="autoplay"
       class="case_main-video"
@@ -15,7 +20,7 @@ exports[`namba food renders correctly 1`] = `
       muted="muted"
     >
       <source
-        src="undefined/"
+        src="img.jpg"
         type="video/mp4"
       />
       
