@@ -2,8 +2,13 @@
   <div class="footer-contacts">
     <div class="footer-contacts__head-content">
       <div class="footer-contacts__contact-item">
-        <p class="footer-contacts__contact-title">Text us:</p>
-        <a :href="`mailto:${mailLink}`" class="footer-contacts__contact-link footer-contacts__contact-mail">{{
+        <p class="footer-contacts__contact-title">
+          Text us:
+        </p>
+        <a
+          :href="`mailto:${mailLink}`"
+          class="footer-contacts__contact-link footer-contacts__contact-mail"
+        >{{
           mailLink
         }}</a>
       </div>
@@ -16,26 +21,36 @@
               height="14"
               class="img_lazy"
               alt="United Kingdom"
-            />
+            >
           </div>
-          <p class="footer-contacts__contact-title">Call us:</p>
+          <p class="footer-contacts__contact-title">
+            Call us:
+          </p>
         </div>
-        <a href="tel:+442039848555" class="footer-contacts__contact-link footer-contacts__contact-phone-number"
-          >+44 20 3984 8555</a
-        >
+        <a
+          href="tel:+442039848555"
+          class="footer-contacts__contact-link footer-contacts__contact-phone-number"
+        >+44 20 3984 8555</a>
       </div>
     </div>
     <div class="footer-contacts__lists-wrapper">
       <ul class="footer-contacts__messengers-list">
-        <li v-for="messenger in messengers" :key="messenger.key">
-          <a :href="messenger.url" target="_blank" class="footer-contacts__messenger-item-wrapper">
+        <li
+          v-for="messenger in messengers"
+          :key="messenger.key"
+        >
+          <a
+            :href="messenger.url"
+            target="_blank"
+            class="footer-contacts__messenger-item-wrapper"
+          >
             <img
               :data-src="require(`@/assets/img/Footer/svg/${messenger.key}.svg`)"
               width="42"
               height="42"
               class="img_lazy"
               :alt="messenger.label"
-            />
+            >
             <p class="footer-contacts__messenger-name">{{ messenger.label }}</p>
           </a>
         </li>

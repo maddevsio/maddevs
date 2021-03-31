@@ -2,32 +2,54 @@
   <div class="card-content">
     <div class="card-content_card-description">
       <div class="card-content_description-item card-content_description-item-motorbike">
-        <h3 class="case_title_h4 card-content_description-title">Motorbike</h3>
-        <TextParagraph class="card-content_paragraph"
-          >They are fast and affordable, but they are not always convenient for white-collar workers wearing suits to
-          the office, especially on rainy days.</TextParagraph
+        <h3 class="case_title_h4 card-content_description-title">
+          Motorbike
+        </h3>
+        <TextParagraph
+          class="card-content_paragraph"
         >
+          They are fast and affordable, but they are not always convenient for white-collar workers wearing suits to
+          the office, especially on rainy days.
+        </TextParagraph>
       </div>
       <div class="card-content_description-item">
-        <h3 class="case_title_h4 card-content_description-title">Taxi</h3>
-        <TextParagraph class="card-content_paragraph"
-          >Taxis are safer and more comfortable, but less accessible because they cost much more.</TextParagraph
+        <h3 class="case_title_h4 card-content_description-title">
+          Taxi
+        </h3>
+        <TextParagraph
+          class="card-content_paragraph"
         >
+          Taxis are safer and more comfortable, but less accessible because they cost much more.
+        </TextParagraph>
       </div>
     </div>
     <div class="card-content_prices">
-      <h4 class="card-content_prices-title">$300<span>/ month</span></h4>
+      <h4 class="card-content_prices-title">
+        $300<span>/ month</span>
+      </h4>
       <div class="card-content_price-item">
-        <TextParagraph class="card-content_price-heading"> The basic fee </TextParagraph>
-        <TextParagraph class="card-content_price-number"> $0.51 </TextParagraph>
+        <TextParagraph class="card-content_price-heading">
+          The basic fee
+        </TextParagraph>
+        <TextParagraph class="card-content_price-number">
+          $0.51
+        </TextParagraph>
       </div>
       <div class="card-content_price-item">
-        <TextParagraph class="card-content_price-heading"> The kilometer price </TextParagraph>
-        <TextParagraph class="card-content_price-number"> $0.56 </TextParagraph>
+        <TextParagraph class="card-content_price-heading">
+          The kilometer price
+        </TextParagraph>
+        <TextParagraph class="card-content_price-number">
+          $0.56
+        </TextParagraph>
       </div>
       <div class="card-content_price-item">
-        <TextParagraph class="card-content_price-heading"> Average kilometers </TextParagraph>
-        <TextParagraph class="card-content_price-number"> ~ 10 </TextParagraph>
+        <TextParagraph class="card-content_price-heading">
+          Average kilometers
+        </TextParagraph>
+        <TextParagraph class="card-content_price-number">
+          ~ 10
+        </TextParagraph>
       </div>
     </div>
   </div>

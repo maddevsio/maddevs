@@ -37,7 +37,9 @@ exports[`cardsBusinessModelsGrid renders correctly 1`] = `
       <h3
         class="m-8_bottom case_title_h4"
       >
+        
         Personal courier
+      
       </h3>
        
       <p
@@ -61,7 +63,9 @@ exports[`cardsBusinessModelsGrid renders correctly 1`] = `
         class="m-8_bottom case_title_h4"
         style="color: rgb(255, 255, 255);"
       >
+        
         Outsource partners
+      
       </h3>
        
       <p
@@ -85,7 +89,9 @@ exports[`cardsBusinessModelsGrid renders correctly 1`] = `
         class="m-8_bottom case_title_h4"
         style="color: rgb(255, 255, 255);"
       >
+        
         Delivery of food and goods
+      
       </h3>
        
       <p

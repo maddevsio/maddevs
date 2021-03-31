@@ -1,3 +1,4 @@
+// eslint-disalbe quotes
 export const blogDoc = {
   meta_title: [
     {
@@ -10,7 +11,7 @@ export const blogDoc = {
     {
       type: 'paragraph',
       text:
-        "How projects benefit from senior developers' participation? This article explains why you need senior developers on the IT team you're working with.",
+        'How projects benefit from senior developers\' participation? This article explains why you need senior developers on the IT team you\'re working with.',
       spans: [],
     },
   ],
@@ -135,7 +136,7 @@ export const blogDoc = {
             thumbnail_width: null,
             thumbnail_height: null,
             html:
-              "<div data-type='website'><a href='https://maddevs.io/customer-university/differences-between-software-engineers-seniority-levels/' target='_blank' target='_blank'><div class='embed__title'>How Developer Seniority Level Matter to the Cost of Software Development | Mad Devs Customer University</div><p>One of the main factors of the software development cost is the software developer seniority level. Here, we figure out what these levels are and how they affect the price.</p></a></div>",
+              '<div data-type=\'website\'><a href=\'https://maddevs.io/customer-university/differences-between-software-engineers-seniority-levels/\' target=\'_blank\' target=\'_blank\'><div class=\'embed__title\'>How Developer Seniority Level Matter to the Cost of Software Development | Mad Devs Customer University</div><p>One of the main factors of the software development cost is the software developer seniority level. Here, we figure out what these levels are and how they affect the price.</p></a></div>',
           },
         },
       ],
@@ -486,7 +487,7 @@ export const blogDoc = {
             thumbnail_width: null,
             thumbnail_height: null,
             html:
-              "<div data-type='website'><a href='https://maddevs.io/customer-university/pricing-models-in-software-development/' target='_blank' target='_blank'><div class='embed__title'>Pricing Models in Custom Software Development | Mad Devs Customer University</div><p>The pricing model in IT needs to be assessed in various contexts, including your business’s size and specific characteristics, and your willingness to take the risk. In this publication, Mad Devs answer your questions about pricing models with clarity and transparency.</p></a></div>",
+              '<div data-type=\'website\'><a href=\'https://maddevs.io/customer-university/pricing-models-in-software-development/\' target=\'_blank\' target=\'_blank\'><div class=\'embed__title\'>Pricing Models in Custom Software Development | Mad Devs Customer University</div><p>The pricing model in IT needs to be assessed in various contexts, including your business’s size and specific characteristics, and your willingness to take the risk. In this publication, Mad Devs answer your questions about pricing models with clarity and transparency.</p></a></div>',
           },
         },
       ],

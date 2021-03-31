@@ -14,7 +14,7 @@ export const meta = {
   faq: {
     title: 'Mad Devs: Frequently Asked Questions',
     description:
-      "FAQs. Have a question? Find answers on our Frequently asked questions page. Discover more about Mad Devs' team, expertise, pricing, and more.",
+      'FAQs. Have a question? Find answers on our Frequently asked questions page. Discover more about Mad Devs\' team, expertise, pricing, and more.',
     url: 'https://maddevs.io/faq/',
   },
   gdpr: {
@@ -65,7 +65,9 @@ export const meta = {
 
 export const getMetadata = key => meta[key] || {}
 
-export const buildHead = ({ title, description, url, image = 'https://maddevs.io/Open-Graph.png' }) => ({
+export const buildHead = ({
+  title, description, url, image = 'https://maddevs.io/Open-Graph.png',
+}) => ({
   title,
   meta: [
     { name: 'description', content: description },

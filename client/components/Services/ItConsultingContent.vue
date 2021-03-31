@@ -2,7 +2,10 @@
   <div class="it-consulting-item col-xl-4 col-lg-4">
     <div class="it-consulting-item__text-content">
       <client-only>
-        <UITitle class="it-consulting-item__title" v-html="title">
+        <UITitle
+          class="it-consulting-item__title"
+          v-html="title"
+        >
           {{ title }}
         </UITitle>
         <UISubtitle

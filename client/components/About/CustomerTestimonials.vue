@@ -1,7 +1,12 @@
 <template>
-  <section id="customer-testimonials" class="customer-testimonials">
+  <section
+    id="customer-testimonials"
+    class="customer-testimonials"
+  >
     <div class="container">
-      <h2 class="customer-testimonials__title">Customer Testimonials</h2>
+      <h2 class="customer-testimonials__title">
+        Customer Testimonials
+      </h2>
       <div class="customer-testimonials__content-wrap">
         <div class="customer-testimonials__widget-col">
           <client-only>
@@ -14,12 +19,16 @@
                 data-expandifr="true"
                 data-height="auto"
                 data-clutchcompany-id="258762"
-              ></div>
+              />
             </div>
           </client-only>
         </div>
         <div class="customer-testimonials__testimonials-list">
-          <div v-for="(testimonial, i) in testimonials" :key="i" class="customer-testimonials__testimonials-item">
+          <div
+            v-for="(testimonial, i) in testimonials"
+            :key="i"
+            class="customer-testimonials__testimonials-item"
+          >
             <blockquote class="customer-testimonials__testimonials-text paragraph-md">
               {{ testimonial.testimonialText }}
             </blockquote>
@@ -31,13 +40,17 @@
                   class="customer-testimonials__customer-image img_lazy"
                   width="42"
                   height="42"
-                />
+                >
                 <span class="customer-testimonials__customer-name paragraph-sm">
                   {{ testimonial.customerName }} <span>{{ testimonial.customerCountry }}</span>
                 </span>
               </div>
               <div class="customer-testimonials__project">
-                <a :href="testimonial.link" target="_blank" rel="nofollow">
+                <a
+                  :href="testimonial.link"
+                  target="_blank"
+                  rel="nofollow"
+                >
                   <img
                     :width="testimonial.logoWidth"
                     :data-src="require(`@/assets/img/Home/svg/testimonials/${testimonial.customerProject}.svg`)"
@@ -45,7 +58,7 @@
                     :alt="testimonial.alt"
                     height="31"
                     class="img_lazy single-project__logo"
-                  />
+                  >
                 </a>
               </div>
             </div>

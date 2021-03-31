@@ -1,7 +1,12 @@
 <template>
-  <section id="quickProjectStart" class="quickProjectStart">
+  <section
+    id="quickProjectStart"
+    class="quickProjectStart"
+  >
     <div class="container">
-      <h2 class="quickProjectStart__main-title">Quick Project Start</h2>
+      <h2 class="quickProjectStart__main-title">
+        Quick Project Start
+      </h2>
       <div class="quickProjectStart__content-list row">
         <div
           v-for="(step, idx) in steps"
@@ -16,16 +21,20 @@
               width="52"
               height="73"
               class="quickProjectStart__main-icon img_lazy"
-            />
+            >
             <img
               v-if="idx !== steps.length - 1"
               :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)"
               class="quickProjectStart__arrow-icon img_lazy"
-            />
+            >
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
-            <h3 class="quickProjectStart__title">{{ step.name }}</h3>
-            <p class="quickProjectStart__description">{{ step.description }}</p>
+            <h3 class="quickProjectStart__title">
+              {{ step.name }}
+            </h3>
+            <p class="quickProjectStart__description">
+              {{ step.description }}
+            </p>
           </div>
         </div>
       </div>

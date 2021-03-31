@@ -9,10 +9,13 @@
           class="entry-field"
           placeholder="John Smith"
           @input="$v.fullname.$touch"
-        />
+        >
         <!-- Erros -->
         <div v-if="$v.fullname.$dirty">
-          <span v-if="!$v.fullname.maxLength" class="modal-error-text error-text">
+          <span
+            v-if="!$v.fullname.maxLength"
+            class="modal-error-text error-text"
+          >
             Sorry, the number of characters in this field should not exceed 50.
           </span>
         </div>
@@ -26,12 +29,18 @@
             type="text"
             class="entry-field"
             @input="$v.email.$touch"
-          />
+          >
         </div>
         <!-- Erros -->
         <div v-if="$v.email.$dirty">
-          <span v-if="!$v.email.required" class="modal-error-text error-text">This field is required.</span>
-          <span v-if="!$v.email.email" class="modal-error-text error-text">
+          <span
+            v-if="!$v.email.required"
+            class="modal-error-text error-text"
+          >This field is required.</span>
+          <span
+            v-if="!$v.email.email"
+            class="modal-error-text error-text"
+          >
             Invalid email address. Please use your work email.
           </span>
         </div>
@@ -48,14 +57,20 @@
         />
         <!-- Erros -->
         <div v-if="$v.description.$dirty">
-          <span v-if="!$v.description.maxLength" class="modal-error-text error-text">
+          <span
+            v-if="!$v.description.maxLength"
+            class="modal-error-text error-text"
+          >
             Sorry, the number of characters in this field should not exceed 256.
           </span>
         </div>
         <!-- End Erros -->
       </div>
     </div>
-    <UIFormCheckboxes ref="checkboxes" @change="handleCheckboxesChange" />
+    <UIFormCheckboxes
+      ref="checkboxes"
+      @change="handleCheckboxesChange"
+    />
     <UIButton
       ref="submitButton"
       class="ui-button--transparent-bgc submit-button"
@@ -65,7 +80,12 @@
     >
       Order a project now
     </UIButton>
-    <ModalSuccess id="footer-modal" :display-time="3000" :visibled="isSuccess" @close="handleModalClose" />
+    <ModalSuccess
+      id="footer-modal"
+      :display-time="3000"
+      :visibled="isSuccess"
+      @close="handleModalClose"
+    />
   </form>
 </template>
 

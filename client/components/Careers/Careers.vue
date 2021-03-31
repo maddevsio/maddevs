@@ -1,10 +1,18 @@
 <template>
-  <section id="careers" class="careers">
+  <section
+    id="careers"
+    class="careers"
+  >
     <div class="careers__container container">
       <div class="careers__wrapper">
-        <form class="careers__form" @submit.prevent="submitForm">
-          <label class="careers__form-name-label"
-            >Hello, my name is
+        <form
+          class="careers__form"
+          @submit.prevent="submitForm"
+        >
+          <label
+            class="careers__form-name-label"
+          >
+            Hello, my name is
             <span>
               <input
                 ref="nameInput"
@@ -14,11 +22,17 @@
                 type="text"
                 placeholder="John Smith"
                 @input="$v.name.$touch"
-              />
+              >
               <!-- Erros -->
               <div v-if="$v.name.$dirty">
-                <span v-if="!$v.name.required" class="modal-error-text error-text">This field is required.</span>
-                <span v-if="!$v.name.maxLength" class="modal-error-text error-text">
+                <span
+                  v-if="!$v.name.required"
+                  class="modal-error-text error-text"
+                >This field is required.</span>
+                <span
+                  v-if="!$v.name.maxLength"
+                  class="modal-error-text error-text"
+                >
                   Sorry, the number of characters in this field should not exceed 50.
                 </span>
               </div>
@@ -34,27 +48,36 @@
                 type="text"
                 placeholder="desired position."
                 @input="$v.position.$touch"
-              />
+              >
               <!-- Erros -->
               <div v-if="$v.position.$dirty">
-                <span v-if="!$v.position.required" class="modal-error-text error-text">This field is required.</span>
+                <span
+                  v-if="!$v.position.required"
+                  class="modal-error-text error-text"
+                >This field is required.</span>
               </div>
               <!-- End Erros -->
             </span>
           </h2>
           <h2 class="careers__form-description radio-buttons">
-            You can also consider me for <br />
+            You can also consider me for <br>
             your other
           </h2>
           <div>
             <ul class="careers__position-list">
-              <UIRadioButtons ref="radioButtons" v-model="grade" :options="grades" @change="$v.grade.$touch" />
+              <UIRadioButtons
+                ref="radioButtons"
+                v-model="grade"
+                :options="grades"
+                @change="$v.grade.$touch"
+              />
             </ul>
             <!-- Erros -->
             <div v-if="$v.grade.$dirty">
-              <span v-if="!$v.grade.required" class="modal-error-text error-text posotion-error-text"
-                >This field is required.</span
-              >
+              <span
+                v-if="!$v.grade.required"
+                class="modal-error-text error-text posotion-error-text"
+              >This field is required.</span>
             </div>
             <!-- End Erros -->
           </div>
@@ -67,11 +90,17 @@
                 type="email"
                 placeholder="your@mail.com"
                 @input="$v.email.$touch"
-              />
+              >
               <!-- Erros -->
               <div v-if="$v.email.$dirty">
-                <span v-if="!$v.email.required" class="modal-error-text error-text">This field is required.</span>
-                <span v-if="!$v.email.email" class="modal-error-text error-text">
+                <span
+                  v-if="!$v.email.required"
+                  class="modal-error-text error-text"
+                >This field is required.</span>
+                <span
+                  v-if="!$v.email.email"
+                  class="modal-error-text error-text"
+                >
                   Invalid email address. Please use your work email.
                 </span>
               </div>
@@ -79,7 +108,7 @@
             </span>
           </h2>
           <h2 class="careers__form-description">
-            To get more information on my <br />
+            To get more information on my <br>
             skills, please
           </h2>
           <ul class="careers__form-list">
@@ -90,20 +119,33 @@
                 class="careers__form-input careers__form-linkedin-input"
                 type="text"
                 placeholder="LinkedIn profile"
-              />
+              >
             </li>
             <li class="careers__form-list-item careers__file-attach">
               <div>
-                <FileInput ref="fileInput" v-model="cvFile" @input="handleFileSelect" />
+                <FileInput
+                  ref="fileInput"
+                  v-model="cvFile"
+                  @input="handleFileSelect"
+                />
                 <!-- Erros -->
                 <div v-if="$v.cvFile.$dirty">
-                  <span v-if="!$v.cvFile.required" class="modal-error-text error-text error-text-file-attach">
+                  <span
+                    v-if="!$v.cvFile.required"
+                    class="modal-error-text error-text error-text-file-attach"
+                  >
                     This field is required.
                   </span>
-                  <span v-if="!$v.cvFile.fileExt" class="modal-error-text error-text error-text-file-attach">
+                  <span
+                    v-if="!$v.cvFile.fileExt"
+                    class="modal-error-text error-text error-text-file-attach"
+                  >
                     Please, upload a file with one of the following extensions: pdf, doc, docx.
                   </span>
-                  <span v-if="!$v.cvFile.fileSizeValidation" class="modal-error-text error-text error-text-file-attach">
+                  <span
+                    v-if="!$v.cvFile.fileSizeValidation"
+                    class="modal-error-text error-text error-text-file-attach"
+                  >
                     Sorry, file size has exceeded its max limit of 5MB.
                   </span>
                 </div>
@@ -111,7 +153,12 @@
               </div>
             </li>
           </ul>
-          <Button :disabled="$v.validationGroup.$invalid" type="submit"> I want to work for Mad Devs! </Button>
+          <Button
+            :disabled="$v.validationGroup.$invalid"
+            type="submit"
+          >
+            I want to work for Mad Devs!
+          </Button>
         </form>
       </div>
     </div>

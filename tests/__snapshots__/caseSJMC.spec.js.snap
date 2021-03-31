@@ -32,7 +32,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         <div
           class="case_case-study-item"
         >
-          Case Study
+          
+        Case Study
+      
         </div>
          
         <h1
@@ -162,7 +164,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h2
         class="case_title_h2 m-12_bottom"
       >
+        
         The SJMC and Mad Devs partnership
+      
       </h2>
        
       <p
@@ -185,7 +189,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_link"
           to="/services#it-consulting"
         >
+          
           independent audit
+        
         </nuxt-link-stub>
          of a previous IT
         vendor, a list of technical debt was formed.
@@ -230,7 +236,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-48_top m-12_bottom"
       >
+        
         The challenges
+      
       </h3>
        
       <ul
@@ -239,37 +247,51 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         <li
           class="list-item_box"
         >
+          
           The 100MB of documentation and 1M+ lines of code, which required months of onboarding.
+        
         </li>
         <li
           class="list-item_box"
         >
+          
           The unique nature of the software in a one-of-a-kind technologically advanced centre.
+        
         </li>
         <li
           class="list-item_box"
         >
+          
           The 450 units of hardware connected to operate as a coherent solution that delivers content to SJMC visitors in a personalised manner.
+        
         </li>
         <li
           class="list-item_box"
         >
+          
           The 5000 km distance between the SJMC and Mad Devs’ office.
+        
         </li>
         <li
           class="list-item_box"
         >
+          
           The lockdown caused by the Covid19 pandemic, which made it difficult to check the deploy updates.
+        
         </li>
         <li
           class="list-item_box"
         >
+          
           Orchestrating a seamless experience for 110K visitors annually.
+        
         </li>
         <li
           class="list-item_box"
         >
+          
           Cooperating and communicating with numerous vendors working at SJMC.
+        
         </li>
       </ul>
     </section>
@@ -280,7 +302,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h2
         class="case_title_h2 m-96_top media-m-48_top m-12_bottom"
       >
+        
         The SJMC Software
+      
       </h2>
        
       <p
@@ -295,7 +319,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
+        
         Multimedia Management IT Brain
+      
       </h3>
        
       <p
@@ -385,8 +411,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         <li
           class="list-item_dot"
         >
+          
           Delivers content to mobile applications and synchronises subtitles and audio on multimedia screens in 3
           languages (German, English, and French).
+        
         </li>
          
         <li
@@ -421,7 +449,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h2
         class="case_title_h2 m-104_top media-m-48_top m-12_bottom"
       >
+        
         Mobile applications
+      
       </h2>
        
       <p
@@ -525,7 +555,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <p
         class="case_image-description m-8_top"
       >
+        
         Sir Jonh Monash Centre Site
+      
       </p>
     </section>
      
@@ -535,7 +567,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h2
         class="case_title_h2 m-56_top media-m-48_top m-12_bottom"
       >
+        
         SJMC Hardware
+      
       </h2>
        
       <p
@@ -576,7 +610,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-48_top m-12_bottom"
       >
+        
         WATCHOUT
+      
       </h3>
        
       <p
@@ -611,7 +647,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-96_top media-m-48_top m-12_bottom"
       >
+        
         BRIX
+      
       </h3>
        
       <p
@@ -645,7 +683,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-96_top media-m-48_top m-12_bottom"
       >
+        
         Bluetooth beacons
+      
       </h3>
        
       <p
@@ -713,7 +753,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <h4
             class="case_title_h4 m-8_bottom media-m-2_bottom"
           >
+            
             60,000 visitors
+          
           </h4>
            
           <p
@@ -729,7 +771,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <h4
             class="case_title_h4 m-8_bottom media-m-2_bottom"
           >
+            
             150 Bluetooth beacons
+          
           </h4>
            
           <p
@@ -749,7 +793,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h2
         class="case_title_h2 m-48_bottom media-m-24_bottom"
       >
+        
         Key goals for Mad Devs
+      
       </h2>
        
       <ul
@@ -823,7 +869,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-48_bottom media-m-24_bottom"
       >
+        
         Technology stack
+      
       </h3>
        
       <ul
@@ -839,7 +887,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Go
+            
+    Go
+  
           </p>
         </li>
         <li
@@ -852,7 +902,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Swift
+            
+    Swift
+  
           </p>
         </li>
         <li
@@ -865,7 +917,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Java for Android
+            
+    Java for Android
+  
           </p>
         </li>
         <li
@@ -878,7 +932,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Unity
+            
+    Unity
+  
           </p>
         </li>
         <li
@@ -891,7 +947,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            AWS
+            
+    AWS
+  
           </p>
         </li>
         <li
@@ -904,7 +962,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            CodeCommit
+            
+    CodeCommit
+  
           </p>
         </li>
         <li
@@ -917,7 +977,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Windows 10
+            
+    Windows 10
+  
           </p>
         </li>
         <li
@@ -930,7 +992,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            iOS
+            
+    iOS
+  
           </p>
         </li>
         <li
@@ -943,7 +1007,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Android
+            
+    Android
+  
           </p>
         </li>
         <li
@@ -956,7 +1022,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Ubuntu
+            
+    Ubuntu
+  
           </p>
         </li>
         <li
@@ -969,7 +1037,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Ansible
+            
+    Ansible
+  
           </p>
         </li>
         <li
@@ -982,7 +1052,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Sentry
+            
+    Sentry
+  
           </p>
         </li>
         <li
@@ -995,7 +1067,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Elasticsearch
+            
+    Elasticsearch
+  
           </p>
         </li>
         <li
@@ -1008,7 +1082,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Logstash
+            
+    Logstash
+  
           </p>
         </li>
         <li
@@ -1021,7 +1097,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Kibana
+            
+    Kibana
+  
           </p>
         </li>
         <li
@@ -1034,7 +1112,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Prometheus
+            
+    Prometheus
+  
           </p>
         </li>
       </ul>
@@ -1042,7 +1122,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
+        
         Custom small-scale version of the SJMC in Mad Devs’ office
+      
       </h3>
        
       <p
@@ -1371,7 +1453,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-78_top media-m-48_top m-12_bottom"
       >
+        
         Technical debt
+      
       </h3>
        
       <p
@@ -1396,7 +1480,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
+        
         Code refactoring and optimization
+      
       </h3>
        
       <p
@@ -1422,7 +1508,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
+        
         Analytics and user-friendly reports
+      
       </h3>
        
       <p
@@ -1499,15 +1587,19 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         <li
           class="list-item_dot"
         >
+          
           The average length of time of the SJMC Experience – i.e. time between connections to first and last
           site
+        
         </li>
          
         <li
           class="list-item_dot"
         >
+          
           Popular stands, by analysing the longevity of visitors listening to/watching/interacting with
           content
+        
         </li>
          
         <li
@@ -1524,7 +1616,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h2
         class="case_title_h2 m-12_bottom"
       >
+        
         SJMC System monitoring
+      
       </h2>
        
       <p
@@ -1548,7 +1642,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
+        
         Grafana + Prometheus
+      
       </h3>
        
       <p
@@ -1724,11 +1820,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
+        
         Elasticsearch+Kibana+
         <br
           class="case_mobile-break"
         />
         Logstash
+      
       </h3>
        
       <p
@@ -1781,7 +1879,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
+        
         Continuous integration and delivery (CI/CD)
+      
       </h3>
        
       <p
@@ -1796,7 +1896,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
+        
         Sentry
+      
       </h3>
        
       <p
@@ -1841,7 +1943,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         <li
           class="list-item_dot"
         >
+          
           End to end testing to ensure seamless user experience for thousands of SJMC visitors.
+        
         </li>
       </ul>
        
@@ -1858,7 +1962,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
+        
         1. Internal information systems synchronization
+      
       </h3>
        
       <p
@@ -1902,7 +2008,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h3
         class="case_title_h3"
       >
+        
         2. End to end tests using emulators of mobile applications
+      
       </h3>
        
       <blockquote
@@ -1931,7 +2039,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom"
       >
+        
         Mad Devs’ trip to the SJMC
+      
       </h2>
     </section>
      
@@ -2273,13 +2383,17 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Kirill Zinchenko
+              
+      Kirill Zinchenko
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Project Manager
+              
+      Project Manager
+    
             </p>
           </div>
         </li>
@@ -2312,13 +2426,17 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Vlad Andreev
+              
+      Vlad Andreev
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              DevOps Engineer
+              
+      DevOps Engineer
+    
             </p>
           </div>
         </li>
@@ -2351,13 +2469,17 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Aleksandr Zhitov
+              
+      Aleksandr Zhitov
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              QA Manager
+              
+      QA Manager
+    
             </p>
           </div>
         </li>
@@ -2390,13 +2512,17 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Sergey Boyko
+              
+      Sergey Boyko
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              QA Tester
+              
+      QA Tester
+    
             </p>
           </div>
         </li>
@@ -2429,13 +2555,17 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Andrew Minkin
+              
+      Andrew Minkin
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Back-end Developer
+              
+      Back-end Developer
+    
             </p>
           </div>
         </li>
@@ -2468,13 +2598,17 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Dmitri Khalezin
+              
+      Dmitri Khalezin
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              DevOps Engineer
+              
+      DevOps Engineer
+    
             </p>
           </div>
         </li>
@@ -2507,13 +2641,17 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Kirill Avdeev
+              
+      Kirill Avdeev
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Back-end Developer
+              
+      Back-end Developer
+    
             </p>
           </div>
         </li>
@@ -2546,13 +2684,17 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Stanislav Shcherbinin
+              
+      Stanislav Shcherbinin
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Back-end Developer
+              
+      Back-end Developer
+    
             </p>
           </div>
         </li>
@@ -2585,13 +2727,17 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Aleksandr Astashov
+              
+      Aleksandr Astashov
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Back-end Developer
+              
+      Back-end Developer
+    
             </p>
           </div>
         </li>
@@ -2624,13 +2770,17 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Ruslan Kasymov
+              
+      Ruslan Kasymov
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Logistics Manager
+              
+      Logistics Manager
+    
             </p>
           </div>
         </li>
@@ -2663,13 +2813,17 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Pavel Pushkarev
+              
+      Pavel Pushkarev
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Mobile App Developer
+              
+      Mobile App Developer
+    
             </p>
           </div>
         </li>
@@ -2702,13 +2856,17 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Rustom Kulbatyrov
+              
+      Rustom Kulbatyrov
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Mobile App Developer
+              
+      Mobile App Developer
+    
             </p>
           </div>
         </li>
@@ -2721,7 +2879,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <h2
         class="case_title_h2 m-12_bottom"
       >
+        
         Ongoing partnership
+      
       </h2>
        
       <p
@@ -2782,13 +2942,17 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <p
             class="case_paragraph case_blockquote-author__name"
           >
-            Wade Bartlett
+            
+      Wade Bartlett
+    
           </p>
            
           <p
             class="case_blockquote-author__position"
           >
-            Former Technical and Operations Director, Sir John Monash Centre
+            
+      Former Technical and Operations Director, Sir John Monash Centre
+    
           </p>
         </div>
       </blockquote>

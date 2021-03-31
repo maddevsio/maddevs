@@ -54,7 +54,8 @@ exports[`careers page renders correctly 1`] = `
           <label
             class="careers__form-name-label"
           >
-            Hello, my name is
+            
+          Hello, my name is
           
             <span>
               <input
@@ -113,7 +114,9 @@ exports[`careers page renders correctly 1`] = `
                   <div
                     class="ui-radio-buttons_item-label"
                   >
-                    Senior,
+                    
+      Senior,
+    
                   </div>
                 </div>
                 <div
@@ -126,7 +129,9 @@ exports[`careers page renders correctly 1`] = `
                   <div
                     class="ui-radio-buttons_item-label"
                   >
-                    Middle,
+                    
+      Middle,
+    
                   </div>
                 </div>
                 <div
@@ -139,7 +144,9 @@ exports[`careers page renders correctly 1`] = `
                   <div
                     class="ui-radio-buttons_item-label"
                   >
-                    Junior,
+                    
+      Junior,
+    
                   </div>
                 </div>
                 <div
@@ -152,7 +159,9 @@ exports[`careers page renders correctly 1`] = `
                   <div
                     class="ui-radio-buttons_item-label"
                   >
-                    Intern
+                    
+      Intern
+    
                   </div>
                 </div>
               </div>
@@ -215,6 +224,7 @@ exports[`careers page renders correctly 1`] = `
                   <input
                     accept=".pdf,.cv,.doc,.odt,.docx,.txt"
                     class="file-input__uploader"
+                    data-testid="test-file"
                     id="file"
                     name="file"
                     type="file"
@@ -228,6 +238,7 @@ exports[`careers page renders correctly 1`] = `
                    
                   <label
                     class="file-input__cv file-input__cv--attachable"
+                    data-testid="test-file-label"
                     for="file"
                   >
                     
@@ -246,7 +257,9 @@ exports[`careers page renders correctly 1`] = `
             id="careers-btn"
             type="submit"
           >
-             I want to work for Mad Devs! 
+            
+          I want to work for Mad Devs!
+        
           </button>
         </form>
       </div>

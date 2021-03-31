@@ -2,7 +2,7 @@
   <section class="customer-university">
     <div class="container">
       <div class="customer-university__title">
-        Customer<br />
+        Customer<br>
         <span>University</span>
       </div>
       <div class="customer-university__wrapper">
@@ -40,8 +40,12 @@
                   />
                 </div>
                 <div class="single-cluster__data">
-                  <h3 class="single-cluster__title">{{ $prismic.asText(cluster.primary.cluster_name) }}</h3>
-                  <div class="single-cluster__description">{{ $prismic.asText(cluster.primary.description) }}</div>
+                  <h3 class="single-cluster__title">
+                    {{ $prismic.asText(cluster.primary.cluster_name) }}
+                  </h3>
+                  <div class="single-cluster__description">
+                    {{ $prismic.asText(cluster.primary.description) }}
+                  </div>
                 </div>
               </router-link>
             </div>

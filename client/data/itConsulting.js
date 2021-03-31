@@ -3,7 +3,7 @@ export const consultungTypes = [
     type: 'technology-stack',
     title: 'Technology <br> Stack',
     subtitle: 'Tired of the slow and <span>hard-to-maintain</span> technology that your previous team used?',
-    paragraph: `We'll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.`,
+    paragraph: 'We\'ll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.',
     className: 'first-item',
   },
   {

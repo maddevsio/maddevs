@@ -3,7 +3,9 @@
     <div class="container">
       <div class="footer__content row">
         <div class="footer__left-content col-xl-8 col-lg-7 col-md-6">
-          <h2 class="footer__main-title">Get In Touch</h2>
+          <h2 class="footer__main-title">
+            Get In Touch
+          </h2>
           <FooterContacts />
           <FooterNavbar class="footer__navbar-desktop" />
         </div>

@@ -3,10 +3,10 @@
     <div class="container">
       <div class="nda__header">
         <h1 class="nda__title">
-          <span class="nda__nowrap">Non-Disclosure</span> Agreement <br />
+          <span class="nda__nowrap">Non-Disclosure</span> Agreement <br>
           at <span class="nda__nowrap">Mad Devs</span>
         </h1>
-        <div class="nda__image"></div>
+        <div class="nda__image" />
       </div>
       <div class="nda__content">
         <p class="nda__text nda__text--first">
@@ -21,9 +21,14 @@
           Even if our customer doesn’t have an NDA in place, we will protect their business secrets and any of the
           competitive advantages we create for them by our <span class="nda__nowrap">non-disclosure</span> agreement. If
           you want to get familiar with this document, please send us a request via
-          <a class="nda__link nda__link--head-text" href="mailto:rock@maddevs.io">rock@maddevs.io</a>.
+          <a
+            class="nda__link nda__link--head-text"
+            href="mailto:rock@maddevs.io"
+          >rock@maddevs.io</a>.
         </p>
-        <h2 class="nda__sec-title nda__sec-title--first">Customer NDA Templates</h2>
+        <h2 class="nda__sec-title nda__sec-title--first">
+          Customer NDA Templates
+        </h2>
         <p class="nda__paragraph">
           Some of our customers have standard NDA templates <span class="nda__nowrap">pre-approved</span> by their legal
           departments. If we are offered to sign such an agreement, we always proceed with it as the customer knows
@@ -44,7 +49,10 @@
         <p class="nda__paragraph nda__paragraph-margin">
           Our company has experience of working with NDA agreements of any kind and complexity. If you have more
           specific questions please contact us via
-          <a class="nda__link nda__link--paragraph" href="mailto:rock@maddevs.io">rock@maddevs.io</a>.
+          <a
+            class="nda__link nda__link--paragraph"
+            href="mailto:rock@maddevs.io"
+          >rock@maddevs.io</a>.
         </p>
       </div>
     </div>

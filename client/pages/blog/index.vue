@@ -1,25 +1,55 @@
 <template>
   <section class="home">
     <div class="body-content">
-      <featured-post v-if="postsLoaded && featuredPost" :post="featuredPost" class="container" />
-      <skeleton-featured-post v-else class="container" />
+      <featured-post
+        v-if="postsLoaded && featuredPost"
+        :post="featuredPost"
+        class="container"
+      />
+      <skeleton-featured-post
+        v-else
+        class="container"
+      />
       <div class="latest-posts">
         <div class="container">
           <div class="latest-posts__wrapper">
             <template v-if="postsLoaded">
-              <section v-for="post in recentPosts" :key="post.id" :post="post" class="latest-posts__single-post">
+              <section
+                v-for="post in recentPosts"
+                :key="post.id"
+                :post="post"
+                class="latest-posts__single-post"
+              >
                 <div class="single-post__wrapper">
-                  <div v-if="post.id === 'banner'" class="banner">
-                    <a :href="post.link.url" :target="post.link.target" class="latest-post">
-                      <img :src="post.banner.url" :alt="post.id" />
+                  <div
+                    v-if="post.id === 'banner'"
+                    class="banner"
+                  >
+                    <a
+                      :href="post.link.url"
+                      :target="post.link.target"
+                      class="latest-post"
+                    >
+                      <img
+                        :src="post.banner.url"
+                        :alt="post.id"
+                      >
                     </a>
                   </div>
-                  <recommended-blog-widget v-else :is-recent-post="true" :post="post" />
+                  <recommended-blog-widget
+                    v-else
+                    :is-recent-post="true"
+                    :post="post"
+                  />
                 </div>
               </section>
             </template>
             <template v-else>
-              <section v-for="i in 6" :key="i" class="latest-posts__single-post">
+              <section
+                v-for="i in 6"
+                :key="i"
+                class="latest-posts__single-post"
+              >
                 <div class="single-post__wrapper">
                   <skeleton-blog-widget />
                 </div>
@@ -31,12 +61,19 @@
 
       <customer-university-section />
 
-      <div v-if="allPosts.length" class="filtered-posts">
+      <div
+        v-if="allPosts.length"
+        class="filtered-posts"
+      >
         <div class="container">
           <div class="filter">
             <simplebar>
               <ul class="filter-list">
-                <li v-for="(category, i) in homePageContent.categories" :key="i" class="filter-item__wrapper">
+                <li
+                  v-for="(category, i) in homePageContent.categories"
+                  :key="i"
+                  class="filter-item__wrapper"
+                >
                   <div class="filter-item">
                     <input
                       :id="category.title"
@@ -46,22 +83,44 @@
                       name="Tag"
                       class="radio-input"
                       @change="handleFilterChange"
-                    />
-                    <label :for="category.title" class="filter-label">{{ category.title }}</label>
+                    >
+                    <label
+                      :for="category.title"
+                      class="filter-label"
+                    >{{ category.title }}</label>
                   </div>
                 </li>
               </ul>
             </simplebar>
           </div>
-          <div v-if="filteredPosts.length !== 0" class="filtered-posts__wrapper">
-            <section v-for="(post, i) in filteredPostsToShow" :key="i" :post="post" class="filtered-posts__single-post">
+          <div
+            v-if="filteredPosts.length !== 0"
+            class="filtered-posts__wrapper"
+          >
+            <section
+              v-for="(post, i) in filteredPostsToShow"
+              :key="i"
+              :post="post"
+              class="filtered-posts__single-post"
+            >
               <div class="single-post__wrapper">
-                <recommended-blog-widget :post="post" class-name="filtered-post" />
+                <recommended-blog-widget
+                  :post="post"
+                  class-name="filtered-post"
+                />
               </div>
             </section>
           </div>
-          <div v-if="totalPages > postsPage" class="load-more-button__wrapper">
-            <button class="load-more-button" @click="getMorePosts">See more</button>
+          <div
+            v-if="totalPages > postsPage"
+            class="load-more-button__wrapper"
+          >
+            <button
+              class="load-more-button"
+              @click="getMorePosts"
+            >
+              See more
+            </button>
           </div>
         </div>
       </div>
@@ -159,6 +218,22 @@ export default {
 
     totalPages() {
       return Math.ceil(this.filteredPosts.length / this.pageSize)
+    },
+  },
+
+  watch: {
+    // Fixes scroll position for async filtered posts list
+    filteredPosts() {
+      const visitedLinkEl = document.querySelector(`a[href='${this.visitedPost}']`)
+      if (
+        visitedLinkEl
+        && !visitedLinkEl.classList.contains('featured-post')
+        && !visitedLinkEl.classList.contains('latest-post')
+      ) {
+        const postItemEl = visitedLinkEl.parentNode // single-post__wrapper
+        postItemEl.scrollIntoView({ block: 'start' })
+        window.scrollTo(0, window.scrollY - 120) // scroll for distance between the post and the top of the screen
+      }
     },
   },
 

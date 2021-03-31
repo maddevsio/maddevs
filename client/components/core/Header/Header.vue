@@ -1,11 +1,27 @@
 <template>
-  <div id="header" class="header-wrapper">
-    <div id="overlay" ref="overlay"></div>
-    <header ref="header" :class="{ transparent: isCasePage && !isActiveMobileMenu }" class="header">
-      <div ref="headerContainer" class="container">
+  <div
+    id="header"
+    class="header-wrapper"
+  >
+    <div
+      id="overlay"
+      ref="overlay"
+    />
+    <header
+      ref="header"
+      :class="{ transparent: isCasePage && !isActiveMobileMenu }"
+      class="header"
+    >
+      <div
+        ref="headerContainer"
+        class="container"
+      >
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-7">
-            <RouterLink :to="`/`" class="header__logo-icon">
+            <RouterLink
+              :to="`/`"
+              class="header__logo-icon"
+            >
               <HeaderLogo
                 :is-show-text="showLogoText"
                 :is-case-page="isCasePage"
@@ -26,7 +42,10 @@
               </RouterLink>
             </nav>
             <!-- Burget btn -->
-            <div class="header__burger" @click="toggleMobileMenu">
+            <div
+              class="header__burger"
+              @click="toggleMobileMenu"
+            >
               <svg
                 v-if="isActiveMobileMenu"
                 class="header__burger--close"
@@ -52,8 +71,14 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M0 0H30V1H0V0Z" fill="#F5F7F9" />
-                <path d="M0 9H30V10H0V9Z" fill="#F5F7F9" />
+                <path
+                  d="M0 0H30V1H0V0Z"
+                  fill="#F5F7F9"
+                />
+                <path
+                  d="M0 9H30V10H0V9Z"
+                  fill="#F5F7F9"
+                />
               </svg>
             </div>
             <!-- END Burget btn -->
@@ -67,10 +92,17 @@
                 src="@/assets/img/Home/flags/uk.svg"
                 class="header__phone-flag"
                 alt="United Kingdom"
-              />
-              <a class="header__header-phone" href="tel:+442039848555">+44 20 3984 8555</a>
+              >
+              <a
+                class="header__header-phone"
+                href="tel:+442039848555"
+              >+44 20 3984 8555</a>
             </div>
-            <UIModalTriggerButton label="Contact me" color="red" @click="$refs.modalContactMe.show()" />
+            <UIModalTriggerButton
+              label="Contact me"
+              color="red"
+              @click="$refs.contactMeModal.show()"
+            />
           </div>
         </div>
       </div>
@@ -207,16 +239,14 @@ export default {
         ? this.caseGoDeeScrollContainer.scrollTop
         : window.scrollY
       if (this.$refs.overlay && this.headerWhiteLogoText) {
-        this.$refs.overlay.style.opacity =
-          1.6 -
-          (this.$refs.overlay.offsetHeight -
-            (scrollFromTop - this.caseHeader.getBoundingClientRect().height) -
-            this.$refs.headerContainer.offsetHeight) /
-            this.$refs.overlay.offsetHeight
-        this.headerWhiteLogoText.style.opacity =
-          -0.4 -
-          (this.$refs.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top) /
-            this.$refs.overlay.offsetHeight
+        this.$refs.overlay.style.opacity = 1.6
+          - (this.$refs.overlay.offsetHeight
+            - (scrollFromTop - this.caseHeader.getBoundingClientRect().height)
+            - this.$refs.headerContainer.offsetHeight)
+            / this.$refs.overlay.offsetHeight
+        this.headerWhiteLogoText.style.opacity = -0.4
+          - (this.$refs.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top)
+            / this.$refs.overlay.offsetHeight
       }
     },
 

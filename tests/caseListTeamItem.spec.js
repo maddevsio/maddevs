@@ -20,7 +20,7 @@ describe('list team item', () => {
   })
 
   // ------ IMPORTANT ----- //
-  it("is Vue's instance", () => {
+  it('is Vue\'s instance', () => {
     expect(wrapper.exists()).toBeTruthy()
   })
 

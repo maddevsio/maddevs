@@ -1,9 +1,17 @@
 <template>
-  <section id="technologies-and-tools" class="technologies-and_tools">
+  <section
+    id="technologies-and-tools"
+    class="technologies-and_tools"
+  >
     <div class="container">
       <div class="technologies-and_tools__content-wrap">
-        <h2 class="technologies-and_tools__main-title">Technologies <span>&</span>&nbsp;<span>Tools</span></h2>
-        <div :class="`tech_legend-${categoryToClass(activeCategory)}`" class="tech_legend">
+        <h2 class="technologies-and_tools__main-title">
+          Technologies <span>&</span>&nbsp;<span>Tools</span>
+        </h2>
+        <div
+          :class="`tech_legend-${categoryToClass(activeCategory)}`"
+          class="tech_legend"
+        >
           <div
             v-for="category in categories"
             :key="category"
@@ -15,7 +23,10 @@
             {{ category }}
           </div>
         </div>
-        <div :class="categoryToClass(activeCategory)" class="tech_container">
+        <div
+          :class="categoryToClass(activeCategory)"
+          class="tech_container"
+        >
           <div
             v-for="technology in technologies"
             :key="`${technology.value} ${technology.category}`"
@@ -28,7 +39,7 @@
               width="26"
               height="26"
               class="img_lazy"
-            />
+            >
             <span>{{ technology.title }}</span>
           </div>
         </div>

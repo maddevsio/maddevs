@@ -1,5 +1,8 @@
 <template>
-  <nuxt-link :to="link" :class="{ 'latest-post': isRecentPost }">
+  <nuxt-link
+    :to="link"
+    :class="{ 'latest-post': isRecentPost }"
+  >
     <div class="blog-post">
       <img
         :src="post.data.featured_image.url"
@@ -9,13 +12,24 @@
         height="220"
       />
       <div>
-        <h2 class="blog-post__title" :title="$prismic.asText(post.data.title)">
+        <h2
+          class="blog-post__title"
+          :title="$prismic.asText(post.data.title)"
+        >
           {{ $prismic.asText(post.data.title) }}
         </h2>
-        <p class="blog-post__paragraph" data-testid="test-blog-post">{{ getFirstParagraph(post) }}</p>
+        <p
+          class="blog-post__paragraph"
+          data-testid="test-blog-post"
+        >
+          {{ getFirstParagraph(post) }}
+        </p>
         <div class="blog-post__meta">
           <span class="created-at">{{ formattedDate }}</span>
-          <span v-if="post.tags.length" class="tag">{{ post.tags[0] }}</span>
+          <span
+            v-if="post.tags.length"
+            class="tag"
+          >{{ post.tags[0] }}</span>
         </div>
         <post-author :document="post.data" />
       </div>

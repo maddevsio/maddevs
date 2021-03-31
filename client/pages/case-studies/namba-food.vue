@@ -1,14 +1,31 @@
 <template>
   <main class="main case">
-    <CaseHeader :header-logo="headerLogo" video-name="main.ef19480.mp4">
-      <h1 slot="title" class="case_header-title">Namba Food</h1>
-      <p slot="description" class="case_header-description">
-        Mad Devs created the Namba Food delivery service from scratch. The solution <br />
+    <CaseHeader
+      :header-logo="headerLogo"
+      video-name="main.ef19480.mp4"
+    >
+      <h1
+        slot="title"
+        class="case_header-title"
+      >
+        Namba Food
+      </h1>
+      <p
+        slot="description"
+        class="case_header-description"
+      >
+        Mad Devs created the Namba Food delivery service from scratch. The solution <br>
         orchestrates feature-rich apps for couriers, end-users, and business owners.
       </p>
     </CaseHeader>
-    <section ref="caseBody" class="case_body">
-      <div id="case-first-section" class="case_animation_block"></div>
+    <section
+      ref="caseBody"
+      class="case_body"
+    >
+      <div
+        id="case-first-section"
+        class="case_animation_block"
+      />
       <section class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom">
         <TextParagraph>
           Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing
@@ -36,7 +53,9 @@
         </Card>
         <CardsBusinessModelsGrid />
         <Card class="background-color-silver">
-          <h3 class="case_title_h4 m-8_bottom">Namba Food API</h3>
+          <h3 class="case_title_h4 m-8_bottom">
+            Namba Food API
+          </h3>
           <TextParagraph>
             Namba Food API allows businesses to integrate the API into any mobile payment application. As a result,
             end-users can quickly order goods and services without leaving the app using the app’s own payment system.
@@ -62,7 +81,7 @@
           src="../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif"
           class="case_gif case_high-level-system-overview-gif"
           alt="Namba Food: Website and Mobile App Infrastructure Scheme."
-        />
+        >
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 case_text-align-center m-96_top m-24_bottom media-m-48_top media-m-12_bottom">
@@ -107,7 +126,7 @@
             v-if="isIphone"
             src="../../assets/img/Cases/nambafood/png/iphone-video-preview.png"
             class="case_phone-ios-image"
-          />
+          >
           <video
             v-else
             id="iphone-silver-video"
@@ -117,7 +136,10 @@
             loop="true"
             muted="true"
           >
-            <source :src="getPathToPhoneVideo" type="video/mp4" />
+            <source
+              :src="getPathToPhoneVideo"
+              type="video/mp4"
+            >
             Your browser does not support the video tag.
           </video>
         </div>
@@ -130,18 +152,20 @@
           Namba Food meticulously studied users' behaviours and collected feedback to find the perfect market fit.
         </TextParagraph>
         <ListNumberedBox class="m-72_bottom media-m-48_bottom">
-          <ListNumberedItemBox
-            >Users go to the website and choose cafes and shops (+ orders can be placed via phone).
+          <ListNumberedItemBox>
+            Users go to the website and choose cafes and shops (+ orders can be placed via phone).
           </ListNumberedItemBox>
           <ListNumberedItemBox>Users save products to cart and check out.</ListNumberedItemBox>
-          <ListNumberedItemBox
-            >Users receive a call from an operator to confirm the order or can tick the "no calls" checkbox.
+          <ListNumberedItemBox>
+            Users receive a call from an operator to confirm the order or can tick the "no calls" checkbox.
           </ListNumberedItemBox>
           <ListNumberedItemBox>Courier delivers the order at a pre-estimated time.</ListNumberedItemBox>
         </ListNumberedBox>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Customers track order statuses</h2>
+        <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
+          Customers track order statuses
+        </h2>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           As Namba Food’s delivery service grew more popular, the load on customer support and its operators increased
           exponentially.
@@ -165,7 +189,10 @@
             >
               Android application for couriers
             </h2>
-            <TextParagraph color="#ffffff" class="case_text-align-center m-56_bottom media-m-16_bottom">
+            <TextParagraph
+              color="#ffffff"
+              class="case_text-align-center m-56_bottom media-m-16_bottom"
+            >
               The Android app for couriers enables them to receive new orders assigned to them by operators via the
               control panel. After a courier is assigned to the order, their app receives a push notification and
               displays the order pick-up location. After getting the notification, the courier picks up the order from a
@@ -181,11 +208,13 @@
               alt="Namba Food: Courier App for Android."
             />
           </section>
-          <div class="case_black-gradient"></div>
+          <div class="case_black-gradient" />
         </div>
       </div>
       <section class="container_regular">
-        <h2 class="case_title_h2">Admin panel automates Namba Food’s scalability</h2>
+        <h2 class="case_title_h2">
+          Admin panel automates Namba Food’s scalability
+        </h2>
         <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
           The built-in reporting functionality enables managers to have full control over the entire list of business
           partners.
@@ -216,18 +245,22 @@
           Namba Food automatically categorises data inside the managers' dashboard panel. More than 4000 products can be
           catalogued in a few clicks.
         </TextQuote>
-        <h3 class="case_title_h3 m-12_bottom">Flexible catalogue management</h3>
+        <h3 class="case_title_h3 m-12_bottom">
+          Flexible catalogue management
+        </h3>
         <TextParagraph class="m-96_bottom media-m-48_bottom">
           Managing partners' content is straightforward, as managers can quickly turn on or off a position inside the
           catalogue and change pictures and descriptions. Such flexibility enables business owners to meet daily
           business needs. For example, if a cafe offers a seasonal menu, the items from the summer menu can be
           temporarily turned off during the rest of the year.
         </TextParagraph>
-        <h3 class="case_title_h3 m-24_bottom">Control panel functionality</h3>
+        <h3 class="case_title_h3 m-24_bottom">
+          Control panel functionality
+        </h3>
         <div class="case_columns_container">
           <Card class="background-color-silver">
             <h4 class="case_title_h4 m-12_bottom media-m-6_bottom case_control-panel-card-title">
-              Namba Food <br />
+              Namba Food <br>
               managers
             </h4>
             <TextParagraph class="m-24_bottom media-m-12_bottom">
@@ -235,7 +268,7 @@
               performance. Business owners receive automatically generated monthly reports to their email.
             </TextParagraph>
             <TextParagraph class="m-8_bottom media-m-12_bottom">
-              Detailed reports include information <br />
+              Detailed reports include information <br>
               such as:
             </TextParagraph>
             <List>
@@ -246,7 +279,7 @@
           </Card>
           <Card class="background-color-silver">
             <h4 class="case_title_h4 m-12_bottom media-m-6_bottom case_control-panel-card-title">
-              Namba Food <br />
+              Namba Food <br>
               operators
             </h4>
             <TextParagraph class="m-24_bottom media-m-12_bottom">
@@ -300,22 +333,26 @@
             <TextParagraph> Call curriers using Free SWITCH microservice. </TextParagraph>
           </div>
         </div>
-        <h3 class="case_title_h3 m-12_bottom">Intelligent auto-assignment system for courier management</h3>
+        <h3 class="case_title_h3 m-12_bottom">
+          Intelligent auto-assignment system for courier management
+        </h3>
         <TextParagraph class="m-8_bottom">
           The intelligent auto-assignment of orders allows operators to assign couriers to orders, taking into
           consideration the following factors:
         </TextParagraph>
         <List class="m-78_bottom media-m-48_bottom">
           <ListItemDot>Location of a courier, a cafe/restaurant and the end-user address.</ListItemDot>
-          <ListItemDot
-            >Courier's number of orders delivered during the current shift and in the last three hours.
+          <ListItemDot>
+            Courier's number of orders delivered during the current shift and in the last three hours.
           </ListItemDot>
-          <ListItemDot
-            >End-user location in relation to couriers, who are already carrying the order, and in relation to the next
+          <ListItemDot>
+            End-user location in relation to couriers, who are already carrying the order, and in relation to the next
             order’s pick-up point with the current order.
           </ListItemDot>
         </List>
-        <h3 class="case_title_h3 m-12_bottom">Auto-assignment system under the hood</h3>
+        <h3 class="case_title_h3 m-12_bottom">
+          Auto-assignment system under the hood
+        </h3>
         <TextParagraph class="m-8_bottom">
           Three open-source solutions work together as a cohesive and smart system to perform auto-assignment of orders.
           This allows you to select the most suitable courier for each order, which reduces delivery time.
@@ -325,23 +362,43 @@
           <ListItemDot>ElasticSearch stores couriers’ current locations.</ListItemDot>
           <ListItemDot>OSMR is a routing engine for the shortest paths and road networks.</ListItemDot>
         </List>
-        <h3 class="case_title_h3 m-12_bottom">Geocoder Ariadna on ElasticSearch with OpenStreetMap</h3>
+        <h3 class="case_title_h3 m-12_bottom">
+          Geocoder Ariadna on ElasticSearch with OpenStreetMap
+        </h3>
         <TextParagraph class="m-48_bottom">
-          <a href="https://github.com/maddevsio/ariadna" class="case_link" target="_blank">Ariadna</a> is an open-source
+          <a
+            href="https://github.com/maddevsio/ariadna"
+            class="case_link"
+            target="_blank"
+          >Ariadna</a> is an open-source
           geocoder based on ElasticSearch with OpenStreetMap, in-house developed. The tool searches for coordinates by
           synonyms and names of places, looking for crossroads and addresses in a certain radius, and knows how to
           reverse geocoding and automatically update with new data from drivers.
         </TextParagraph>
       </section>
       <section class="container_middle">
-        <div :class="{ 'case_box-shadow': !isIphone }" class="case_map-video-wrapper">
+        <div
+          :class="{ 'case_box-shadow': !isIphone }"
+          class="case_map-video-wrapper"
+        >
           <img
             v-if="isIphone"
             src="../../assets/img/Cases/nambafood/jpg/map-blank.jpg"
             class="case_ios-map-video-image case_box-shadow"
-          />
-          <video v-else id="map-video" class="case_map-video" width="100%" height="100%" loop="true" muted="true">
-            <source :src="getPathToMapVideo" type="video/mp4" />
+          >
+          <video
+            v-else
+            id="map-video"
+            class="case_map-video"
+            width="100%"
+            height="100%"
+            loop="true"
+            muted="true"
+          >
+            <source
+              :src="getPathToMapVideo"
+              type="video/mp4"
+            >
             Your browser does not support the video tag.
           </video>
         </div>
@@ -383,14 +440,16 @@
             :class-name="technologiesItem.className"
           />
         </ListTechnologies>
-        <h3 class="case_title_h3 m-107_top m-24_bottom media-m-48_top">Website and mobile app infrastructure scheme</h3>
+        <h3 class="case_title_h3 m-107_top m-24_bottom media-m-48_top">
+          Website and mobile app infrastructure scheme
+        </h3>
       </section>
       <section class="container_full background-color-silver">
         <img
           src="../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif"
           class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"
           alt="Namba Food: Website and Mobile App Infrastructure Scheme."
-        />
+        >
       </section>
       <section class="container_regular">
         <TextParagraph class="m-24_top">
@@ -403,7 +462,9 @@
           All our services run in Docker containers, which simplifies the process of infrastructure maintenance and
           monitoring.
         </TextParagraph>
-        <h3 class="case_title_h3 m-96_top m-12_bottom media-m-48_top">Pipelines</h3>
+        <h3 class="case_title_h3 m-96_top m-12_bottom media-m-48_top">
+          Pipelines
+        </h3>
         <TextParagraph class="m-24_bottom">
           At Mad Devs, we widely use pipelines. The deployment stage has been automated for the staging server, and
           deployment on the production server is done manually. The pipeline for the Namba Food system is displayed
@@ -435,7 +496,9 @@
         </section>
       </section>
       <section class="container_regular">
-        <h3 class="case_title_h3 m-96_top m-24_bottom media-m-48_top media-m-12_bottom">Meet the team</h3>
+        <h3 class="case_title_h3 m-96_top m-24_bottom media-m-48_top media-m-12_bottom">
+          Meet the team
+        </h3>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           There are now three members on the core development team; during the pre-launch phase, a larger team worked on
           the Namba Food project. Over the course of the project, five full-time employees and two part-timers have
@@ -454,7 +517,9 @@
             picture-folder="common"
           />
         </ListTeam>
-        <h4 class="case_title_h4 m-72_top m-12_bottom media-m-41_top">Transparent communication</h4>
+        <h4 class="case_title_h4 m-72_top m-12_bottom media-m-41_top">
+          Transparent communication
+        </h4>
         <TextParagraph>
           Weekly calls with the customer's business representatives and monthly meetings to see what could be improved
           from a development/IT viewpoint. Our staff members also work on the Namba Food premises several days a week to
@@ -470,14 +535,19 @@
         <TextParagraph>
           Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s
           vision and understanding of its target audience, we were able to
-          <nuxt-link :to="`/services#software-development`" class="case_link">build a product</nuxt-link> that truly
+          <nuxt-link
+            :to="`/services#software-development`"
+            class="case_link"
+          >
+            build a product
+          </nuxt-link> that truly
           solves this customer’s problems. The year-over-year growth rate is hugely impressive.
         </TextParagraph>
         <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
           As the number of businesses using Namba Food continues to increase,
-          <span class="case_blockquote-box_text-modificator"
-            >the service's yearly growth rate is about 50% for both revenue and deliveries made.</span
-          >
+          <span
+            class="case_blockquote-box_text-modificator"
+          >the service's yearly growth rate is about 50% for both revenue and deliveries made.</span>
         </TextQuoteBox>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           In 2017, Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT
@@ -509,11 +579,17 @@
         </TextQuoteAuthor>
       </section>
     </section>
-    <Footer link="/case-studies/sir-john-monash-centre/" class-name="namba-food-case">
-      <div slot="icon" class="case_logotype"></div>
-      The maintenance <br class="case_mobile-break" />
-      of memory: <br />
-      Sir John Monash <br class="case_mobile-break" />
+    <Footer
+      link="/case-studies/sir-john-monash-centre/"
+      class-name="namba-food-case"
+    >
+      <div
+        slot="icon"
+        class="case_logotype"
+      />
+      The maintenance <br class="case_mobile-break">
+      of memory: <br>
+      Sir John Monash <br class="case_mobile-break">
       Centre
     </Footer>
   </main>

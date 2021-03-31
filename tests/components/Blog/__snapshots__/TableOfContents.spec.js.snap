@@ -8,7 +8,9 @@ exports[`table of contents block in single post page should render correctly 1`]
     <div
       class="table-of-contents__title"
     >
-      Table of contents
+      
+    Table of contents
+  
     </div>
      
     <ol

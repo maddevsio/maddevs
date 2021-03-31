@@ -1,16 +1,28 @@
 <template>
-  <section id="customers" class="customers">
+  <section
+    id="customers"
+    class="customers"
+  >
     <div class="container">
       <div class="customers__text-content">
-        <h2 class="customers__main-title">Our valued customers</h2>
+        <h2 class="customers__main-title">
+          Our valued customers
+        </h2>
         <p class="customers__description">
           Due to our NDAs and confidentiality requirements, we cannot disclose details for all of our customers. These
           are a few of the companies we work with.
         </p>
       </div>
       <div class="customers__customers-list">
-        <div v-for="customer in customers" :key="customer" class="icon-wrapper">
-          <div :class="`icon-wrapper__${customer}-icon`" class="icon-wrapper__icon"></div>
+        <div
+          v-for="customer in customers"
+          :key="customer"
+          class="icon-wrapper"
+        >
+          <div
+            :class="`icon-wrapper__${customer}-icon`"
+            class="icon-wrapper__icon"
+          />
         </div>
       </div>
     </div>

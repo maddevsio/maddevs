@@ -1,15 +1,29 @@
 <template>
-  <section id="case-studies" :class="{ 'case-studies--projects': type === 'projects' }" class="case-studies">
+  <section
+    id="case-studies"
+    :class="{ 'case-studies--projects': type === 'projects' }"
+    class="case-studies"
+  >
     <div class="container">
       <div>
-        <h2 :class="`case-studies__main-title-${type}`" class="case-studies__main-title">
-          Case <br v-if="type === 'projects'" />
+        <h2
+          :class="`case-studies__main-title-${type}`"
+          class="case-studies__main-title"
+        >
+          Case <br v-if="type === 'projects'">
           Studies
         </h2>
-        <div v-if="type === 'projects'" class="case-studies__fire-icon"></div>
+        <div
+          v-if="type === 'projects'"
+          class="case-studies__fire-icon"
+        />
       </div>
       <div class="projects">
-        <SingleProject v-for="project in projects" :key="project.name" v-bind="project" />
+        <SingleProject
+          v-for="project in projects"
+          :key="project.name"
+          v-bind="project"
+        />
       </div>
     </div>
   </section>

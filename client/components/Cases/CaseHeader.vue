@@ -1,15 +1,29 @@
 <template>
-  <section id="case-header" class="case_header">
-    <video v-if="!isIphone" class="case_main-video" loop="true" muted="true" autoplay="true">
-      <source :src="video" type="video/mp4" />
+  <section
+    id="case-header"
+    class="case_header"
+  >
+    <video
+      v-if="!isIphone"
+      class="case_main-video"
+      loop="true"
+      muted="true"
+      autoplay="true"
+    >
+      <source
+        :src="video"
+        type="video/mp4"
+      >
       Your browser does not support the video tag.
     </video>
     <div class="case_header-content">
       <div class="case_header-text">
-        <div class="case_case-study-item">Case Study</div>
-        <slot name="title"></slot>
-        <slot name="description"></slot>
-        <slot name="actions"></slot>
+        <div class="case_case-study-item">
+          Case Study
+        </div>
+        <slot name="title" />
+        <slot name="description" />
+        <slot name="actions" />
       </div>
       <img
         :width="headerLogo.width"
@@ -18,7 +32,7 @@
         :alt="headerLogo.alt"
         :class="`case_${headerLogo.fileName}`"
         class="case_header-logo"
-      />
+      >
     </div>
   </section>
 </template>

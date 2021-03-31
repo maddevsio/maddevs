@@ -10,14 +10,18 @@ exports[`cardGoDeeImpact renders correctly 1`] = `
     <p
       class="card-content_title"
     >
+      
       60
+    
     </p>
      
     <p
       class="case_paragraph"
       style="color: rgb(255, 255, 255);"
     >
-       Total routes 
+      
+      Total routes
+    
     </p>
   </div>
    
@@ -27,14 +31,18 @@ exports[`cardGoDeeImpact renders correctly 1`] = `
     <p
       class="card-content_title"
     >
+      
       30
+    
     </p>
      
     <p
       class="case_paragraph"
       style="color: rgb(255, 255, 255);"
     >
-       Active routes 
+      
+      Active routes
+    
     </p>
   </div>
    
@@ -44,14 +52,18 @@ exports[`cardGoDeeImpact renders correctly 1`] = `
     <p
       class="card-content_title"
     >
+      
       25K
+    
     </p>
      
     <p
       class="case_paragraph"
       style="color: rgb(255, 255, 255);"
     >
-       Passengers per month 
+      
+      Passengers per month
+    
     </p>
   </div>
 </div>
