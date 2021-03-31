@@ -18,6 +18,7 @@ module.exports = {
     // process `*.svg` files with `imgTransform.js`
     '\\.(svg|png|webp|jpg)$': '<rootDir>/jest/imgTransformer.js',
   },
+  transformIgnorePatterns: [`/node_modules/(?!vue-lottie)`],
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
   collectCoverage: true,
   collectCoverageFrom: [
@@ -27,4 +28,5 @@ module.exports = {
   ],
   coveragePathIgnorePatterns: ['<rootDir>/server/db', '<rootDir>/server/routes', '<rootDir>/server/index.js'],
   coverageReporters: ['json-summary', 'text', 'lcov'],
+  setupFiles: ['jest-canvas-mock'],
 }
