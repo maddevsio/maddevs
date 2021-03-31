@@ -1,38 +1,44 @@
-import { render } from '@testing-library/vue'
-import BlogWidget from '../../../client/components/Blog/BlogWidget'
+import RecommendedBlogWidget from '@/components/Blog/RecommendedBlogWidget'
+import { render, screen } from '@testing-library/vue'
 import blogPost from '../../__mocks__/blogPost'
 import blogPostWithLongTitle from '../../__mocks__/blogPostWithLongTitle'
 
-const BLOG_POST_TEXT_LIMIT = 300
+const BLOG_POST_TEXT_LIMIT = 150
 
 describe('recommended blog widget component', () => {
-  it('is a Vue instance', () => {
-    const { getByTestId } = render(BlogWidget, {
+  it('should render correctly with slot', () => {
+    const { container } = render(RecommendedBlogWidget, {
       mocks: {
         $prismic: {
           asText: text => text[0].text,
         },
       },
-      propsData: { post: blogPost },
+      props: {
+        post: blogPost,
+        className: 'test',
+      },
       stubs: ['nuxt-link'],
     })
 
-    expect(getByTestId('test-post-title').textContent).toBe(blogPost.data.title[0].text)
+    expect(container).toMatchSnapshot()
   })
 
   it('render with very long title', () => {
-    const { getByTestId } = render(BlogWidget, {
+    render(RecommendedBlogWidget, {
       mocks: {
         $prismic: {
           asText: text => text[0].text,
         },
       },
-      propsData: { post: blogPostWithLongTitle },
+      props: {
+        post: blogPostWithLongTitle,
+        className: 'test-long',
+      },
       stubs: ['nuxt-link'],
     })
 
     const limitedText = blogPostWithLongTitle.data.body[0].primary.text[0].text.substr(0, BLOG_POST_TEXT_LIMIT)
-    expect(getByTestId('test-first-paragraph').textContent).toBe(
+    expect(screen.getByTestId('test-blog-post').textContent).toBe(
       `${limitedText.substr(0, limitedText.lastIndexOf(' '))}...`,
     )
   })

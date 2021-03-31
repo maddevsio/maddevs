@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import FeaturedPost from '../../../client/components/Blog/FeaturedPost'
+import FeaturedPost from '@/components/Blog/FeaturedPost'
 import blogPost from '../../__mocks__/blogPost'
 
 describe('featured post component', () => {
