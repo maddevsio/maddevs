@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`skeleton blog widget component should render correctly  1`] = `
+exports[`skeleton blog widget component should render correctly 1`] = `
 <div>
   <div
     class="blog-post"
