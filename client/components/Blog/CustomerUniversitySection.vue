@@ -12,18 +12,18 @@
             :to="`/customer-university/${master.data.featured_cu.uid}/`"
             class="featured-post"
           >
-            <h6 class="featured-post__date">{{ formattedDate }}</h6>
+            <span class="featured-post__date">{{ formattedDate }}</span>
             <h2 class="featured-post__title">{{ $prismic.asText(featured.title).replace(/^[0-9]*\. /, '') }}</h2>
             <p class="featured-post__text">{{ getFirstParagraph(featured) }}</p>
             <post-author :document="featured" />
             <div class="featured-post__cover-wrapper">
-              <prismic-image :field="featured.featured_image" class="featured-post__cover" />
+              <prismic-image :field="featured.featured_image" class="featured-post__cover" width="560" height="347" />
             </div>
           </router-link>
         </div>
         <div class="customer-university__list">
           <div class="customer-university__list-wrapper">
-            <h6 class="customer-university__list-title">Series of articles:</h6>
+            <span class="customer-university__list-title">Series of articles:</span>
             <div>
               <router-link
                 v-for="(cluster, i) in clustersToShow"
@@ -32,7 +32,12 @@
                 class="customer-university__list-item single-cluster"
               >
                 <div class="single-cluster__cover-wrapper">
-                  <prismic-image :field="cluster.primary.cover_image" class="single-cluster__cover" />
+                  <prismic-image
+                    :field="cluster.primary.cover_image"
+                    class="single-cluster__cover"
+                    width="295"
+                    height="183"
+                  />
                 </div>
                 <div class="single-cluster__data">
                   <h3 class="single-cluster__title">{{ $prismic.asText(cluster.primary.cluster_name) }}</h3>
@@ -203,6 +208,7 @@ export default {
   }
 
   &__list-title {
+    display: block;
     @include label;
   }
 
@@ -236,6 +242,7 @@ export default {
   padding-right: 60px;
 
   &__date {
+    display: block;
     @include label;
   }
 
@@ -263,6 +270,7 @@ export default {
   }
 
   &__cover {
+    width: 100%;
     max-width: 100%;
     height: auto;
     vertical-align: middle;
@@ -283,6 +291,7 @@ export default {
   }
 
   &__cover {
+    width: 100%;
     max-width: 100%;
     height: auto;
     vertical-align: middle;

@@ -35,11 +35,11 @@ exports[`customer University section component is a Vue instance 1`] = `
           <div
             class="customer-university__list-wrapper"
           >
-            <h6
+            <span
               class="customer-university__list-title"
             >
               Series of articles:
-            </h6>
+            </span>
              
             <div />
              

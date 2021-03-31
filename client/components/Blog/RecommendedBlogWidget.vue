@@ -1,7 +1,13 @@
 <template>
   <nuxt-link :to="link" :class="{ 'latest-post': isRecentPost }">
     <div class="blog-post">
-      <img :src="post.data.featured_image.url" :alt="post.data.featured_image.alt" class="blog-post__image" />
+      <img
+        :src="post.data.featured_image.url"
+        :alt="post.data.featured_image.alt"
+        class="blog-post__image"
+        width="400"
+        height="220"
+      />
       <div>
         <h2 class="blog-post__title" :title="$prismic.asText(post.data.title)">
           {{ $prismic.asText(post.data.title) }}
@@ -109,6 +115,7 @@ export default {
 
   &__image {
     display: block;
+    width: 100%;
     max-width: 100%;
     height: auto;
     margin-bottom: 16px;
