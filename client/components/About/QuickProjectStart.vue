@@ -3,87 +3,65 @@
     <div class="container">
       <h2 class="quickProjectStart__main-title">Quick Project Start</h2>
       <div class="quickProjectStart__content-list row">
-        <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_contact">
+        <div
+          v-for="(step, idx) in steps"
+          :key="step.name"
+          :class="`quickProjectStart__list-item_${step.name}`"
+          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2"
+        >
           <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/contact.svg`)" alt="contact" class="quickProjectStart__main-icon img_lazy">
-            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon img_lazy">
+            <img
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/${step.name}.svg`)"
+              :alt="step.name"
+              width="52"
+              height="73"
+              class="quickProjectStart__main-icon img_lazy"
+            />
+            <img
+              v-if="idx !== steps.length - 1"
+              :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)"
+              class="quickProjectStart__arrow-icon img_lazy"
+            />
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">
-            <h3 class="quickProjectStart__title">contact</h3>
-            <p class="quickProjectStart__description">Submit your project request or project idea to us.</p>
-          </div>
-        </div>
-        <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_analysis">
-          <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/analysis.svg`)" alt="analysis" class="quickProjectStart__main-icon img_lazy">
-            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon img_lazy">
-          </div>
-          <div class="quickProjectStart__list-item-text-wrapper">
-            <h3 class="quickProjectStart__title">analysis</h3>
-            <p class="quickProjectStart__description">We will contact you to clarify your project requirements.</p>
-          </div>
-        </div>
-        <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_proposal">
-          <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/proposal.svg`)" alt="proposal" class="quickProjectStart__main-icon img_lazy">
-            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon img_lazy">
-          </div>
-          <div class="quickProjectStart__list-item-text-wrapper">
-            <h3 class="quickProjectStart__title">proposal</h3>
-            <p class="quickProjectStart__description">We will provide you with our free, non-binding bid or a tailored proposal.</p>
-          </div>
-        </div>
-        <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_team">
-          <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/team.svg`)" alt="team" class="quickProjectStart__main-icon img_lazy">
-            <img :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)" class="quickProjectStart__arrow-icon img_lazy">
-          </div>
-          <div class="quickProjectStart__list-item-text-wrapper">
-            <h3 class="quickProjectStart__title">team</h3>
-            <p class="quickProjectStart__description">We will assemble and prepare a team for your project.</p>
-          </div>
-        </div>
-        <div class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_start">
-          <div class="quickProjectStart__icons-group">
-            <img width="52" height="73" :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/start.svg`)" alt="start" class="quickProjectStart__main-icon img_lazy">
-          </div>
-          <div class="quickProjectStart__list-item-text-wrapper">
-            <h3 class="quickProjectStart__title">start</h3>
-            <p class="quickProjectStart__description">You will get to know the team and we’ll start the project work.</p>
+            <h3 class="quickProjectStart__title">{{ step.name }}</h3>
+            <p class="quickProjectStart__description">{{ step.description }}</p>
           </div>
         </div>
       </div>
-      <UIButtonModalTrigger
+      <UIModalTriggerButton
+        label="Submit your project"
+        color="red"
         class="quickProjectStart__button"
-        :buttonInnerText="buttonInnerText"
-        @onClick="$refs.orderProjectFromUsModal.show()"
-        :isRed="true"
+        @click="$refs.modalOrderProjectFromUs.show()"
       />
     </div>
-    <Modal ref="orderProjectFromUsModal">
-      <orderProjectFromUsModal />
+    <Modal ref="modalOrderProjectFromUs">
+      <ModalOrderProjectFromUs />
     </Modal>
   </section>
 </template>
 
 <script>
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger';
-import Modal from '@/containers/Modal';
+import { steps } from '@/data/quickProjectStart'
+import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
+import Modal from '@/components/core/Modal'
 
 export default {
   name: 'QuickProjectStart',
   components: {
-    UIButtonModalTrigger,
+    UIModalTriggerButton,
     Modal,
-    orderProjectFromUsModal: () => import('@/components/Modals/order-project-from-us-modal')
+    ModalOrderProjectFromUs: () => import('@/components/core/modals/ModalOrderProjectFromUs'),
   },
+
   data() {
     return {
+      steps,
       modalWindowName: 'order-project-from-us-modal',
-      buttonInnerText: 'Submit your project'
-    };
-  }
-};
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -214,7 +192,6 @@ export default {
     }
   }
 }
-
 
 @media only screen and (max-width: 767px) {
   .quickProjectStart {

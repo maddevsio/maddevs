@@ -1,17 +1,17 @@
-import { mount } from '@vue/test-utils';
-import GDPR from '@/components/GDPR';
+import { mount } from '@vue/test-utils'
+import GDPR from '@/components/core/GDPR'
 
-describe('GDPR', () => {
-  let wrapper;
+describe('gDPR', () => {
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(GDPR);
-  });
-  test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    wrapper = mount(GDPR)
+  })
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-});
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

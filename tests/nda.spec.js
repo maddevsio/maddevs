@@ -1,17 +1,17 @@
-import { mount } from '@vue/test-utils';
-import NDA from '@/components/NDA';
+import { mount } from '@vue/test-utils'
+import NDA from '@/components/core/NDA'
 
-describe('NDA', () => {
-  let wrapper;
+describe('nDA', () => {
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(NDA);
-  });
-  test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+    wrapper = mount(NDA)
+  })
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-});
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

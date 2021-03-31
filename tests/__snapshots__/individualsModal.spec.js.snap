@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Individuals modal renders correctly 1`] = `
+exports[`individuals modal renders correctly 1`] = `
 <div
   class="form"
 >
@@ -103,7 +103,8 @@ exports[`Individuals modal renders correctly 1`] = `
       class="form-checkbox-label required"
       for="privacy-policy-individuals"
     >
-      I confirm that I have read and accepted 
+      I confirm that I have read and accepted
+    
       <div>
         Mad Devs’
       </div>
@@ -117,6 +118,7 @@ exports[`Individuals modal renders correctly 1`] = `
        
       <input
         class="form-checkbox-input"
+        data-testid="test-privacy-policy-checkbox-input"
         id="privacy-policy-individuals"
         name="Privacy policy"
         type="checkbox"
@@ -131,14 +133,17 @@ exports[`Individuals modal renders correctly 1`] = `
       class="form-checkbox-label"
       for="marketing-communications-individuals"
     >
-      I agree to get 
+      I agree to get
+    
       <div>
         Mad Devs’
       </div>
-       discount offers and other marketing communications.
+      
+    discount offers and other marketing communications.
     
       <input
         class="form-checkbox-input"
+        data-testid="test-form-checkbox-input"
         id="marketing-communications-individuals"
         name="Marketing communications"
         type="checkbox"

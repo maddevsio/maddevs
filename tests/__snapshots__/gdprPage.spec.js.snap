@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Gdpr page renders correctly 1`] = `
+exports[`gdpr page renders correctly 1`] = `
 <main
   class="main"
 >
@@ -23,7 +23,9 @@ exports[`Gdpr page renders correctly 1`] = `
           </span>
            GDPR 
           <br />
-           Compliance Commitment
+          
+        Compliance Commitment
+      
         </h1>
          
         <div
@@ -38,10 +40,9 @@ exports[`Gdpr page renders correctly 1`] = `
           class="gdpr__text--first gdpr__text"
         >
           
-        We are committed to staying compliant with the General Data Protection Regulation (GDPR)
-        for the sake of our customers, partners, and staff. Personally identifiable information that
-        belongs to EU citizens is subject to rules, restrictions, and limitations stated in GDPR dated
-        May 25, 2018.
+        We are committed to staying compliant with the General Data Protection Regulation (GDPR) for the sake of our
+        customers, partners, and staff. Personally identifiable information that belongs to EU citizens is subject to
+        rules, restrictions, and limitations stated in GDPR dated May 25, 2018.
       
         </p>
          
@@ -53,9 +54,9 @@ exports[`Gdpr page renders correctly 1`] = `
           >
             Important note.
           </span>
-           Our software development and infrastructure optimization departments
-        have worked with projects requiring full GDPR compliance, and if you need help with any
-        personal data to be properly collected, modified, stored, and processed, please let us know.
+           Our software development and infrastructure
+        optimization departments have worked with projects requiring full GDPR compliance, and if you need help with
+        any personal data to be properly collected, modified, stored, and processed, please let us know.
       
         </p>
          
@@ -75,10 +76,11 @@ exports[`Gdpr page renders correctly 1`] = `
           >
             Mad Devs
           </span>
-           is a Data Processor. In case you are a Data Controller
-        according to the official GDPR terminology, our legal department is ready to provide written
-        consent for the processing of any personal data of individuals from the European Union and
-        European Economic Area. We are also ready to provide our 
+           is a Data Processor. In case you are a
+        Data Controller according to the official GDPR terminology, our legal department is ready to provide written
+        consent for the processing of any personal data of individuals from the European Union and European Economic
+        Area. We are also ready to provide our
+        
           <a
             class="gdpr__link"
             href="https://gdpr.eu/what-is-data-processing-agreement/"
@@ -88,7 +90,8 @@ exports[`Gdpr page renders correctly 1`] = `
           </a>
            
           <br />
-           upon your request. Please notify our management via
+          
+        upon your request. Please notify our management via
         
           <a
             class="gdpr__link"
@@ -104,18 +107,16 @@ exports[`Gdpr page renders correctly 1`] = `
         <h2
           class="gdpr__sec-title"
         >
-          
-        Privacy Policy
-      
+          Privacy Policy
         </h2>
          
         <p
           class="gdpr__paragraph"
         >
           
-        For your convenience, our Privacy Policy is available on our website in PDF format, you can
-        also download it to your computer if needed. If you have any questions or concerns related
-        to this document, please let us know via
+        For your convenience, our Privacy Policy is available on our website in PDF format, you can also download it
+        to your computer if needed. If you have any questions or concerns related to this document, please let us know
+        via
         
           <a
             class="gdpr__link"
@@ -130,35 +131,30 @@ exports[`Gdpr page renders correctly 1`] = `
         <h2
           class="gdpr__sec-title"
         >
-          
-        Cookie Usage
-      
+          Cookie Usage
         </h2>
          
         <p
           class="gdpr__paragraph"
         >
           
-        Our website uses cookies to help us define your core interests and make you relevant
-        service offerings. The “Accept” button on our pop-up notification will enable you to accept
-        cookies.
+        Our website uses cookies to help us define your core interests and make you relevant service offerings. The
+        “Accept” button on our pop-up notification will enable you to accept cookies.
       
         </p>
          
         <h2
           class="gdpr__sec-title"
         >
-          
-        Marketing Communications
-      
+          Marketing Communications
         </h2>
          
         <p
           class="gdpr__paragraph"
         >
           
-        To get information on our recent blog posts, hottest discounts, and newest services, you can
-        subscribe to the 
+        To get information on our recent blog posts, hottest discounts, and newest services, you can subscribe to the
+        
           <span
             class="gdpr__nowrap"
           >

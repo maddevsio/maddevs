@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UIParagraph should render correctly 1`] = `
+<div>
+  <p
+    class="paragraph"
+  >
+    Default slot
+  </p>
+</div>
+`;

@@ -1,20 +1,18 @@
-import {
-  mount
-} from '@vue/test-utils';
-import RemoteTechStaff from '@/components/Services/RemoteTechStaff';
+import { mount } from '@vue/test-utils'
+import RemoteTechStaff from '@/components/Services/RemoteTechStaff'
 
-describe('Remote tech staff', () => {
-  let wrapper;
+describe('remote tech staff', () => {
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(RemoteTechStaff);
-  });
+    wrapper = mount(RemoteTechStaff)
+  })
 
-  test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
-  
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-});
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
+
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

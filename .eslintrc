@@ -1,0 +1,72 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "plugins": [
+    "vue",
+    "jest"
+  ],
+  "parserOptions": {
+    "parser": "@babel/eslint-parser"
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:vue/recommended",
+    "plugin:prettier-vue/recommended",
+    "plugin:jest/all"
+  ],
+  "rules": {
+    "jest/prefer-expect-assertions": "off",
+    "jest/no-hooks": "off",
+    "jest/prefer-strict-equal": "off",
+    "jest/no-mocks-import": "off",
+    "jest/lowercase-name": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-dynamic-require": "off",
+    "global-require": "off",
+    "vue/no-v-html": "off",
+    "vue/new-line-between-multi-line-property": [
+      "error",
+      {
+        "minLineOfMultilineProperty": 2
+      }
+    ],
+    "no-param-reassign": "off",
+    "no-unused-vars": [
+      "error"
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "import/prefer-default-export": 0,
+    "prettier-vue/prettier": [
+      "error",
+      {
+        "tabWidth": 2,
+        "printWidth": 120,
+        "singleQuote": true,
+        "semi": false,
+        "trailingComma": "all",
+        "tabs": false,
+        "arrowParens": "avoid",
+        "bracketSpacing": true
+      }
+    ]
+  },
+  "settings": {
+    "import/extensions": [
+      ".js",
+      ".vue"
+    ]
+  },
+  "globals": {
+    "$nuxt": true
+  }
+}

@@ -1,13 +1,13 @@
 function process() {
-  return 'module.exports = {};';
+  return 'module.exports = {};'
 }
 
 function getCacheKey() {
   // The output is always the same.
-  return 'svgTransform';
+  return 'svgTransform'
 }
 
 module.exports = {
   process,
-  getCacheKey
-};
+  getCacheKey,
+}

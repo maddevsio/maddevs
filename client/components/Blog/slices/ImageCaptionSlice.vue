@@ -1,64 +1,58 @@
 <template>
   <div>
-    <div class='post-part single'>
-      <div class="block-img" :class="size">
-        <prismic-image
-          :field="img"
-          @click="openModal"
-          :class="{ 'block-img-zoom': zoomEnabled }"
-        />
+    <div class="post-part single">
+      <div :class="size" class="block-img">
+        <prismic-image :field="img" :class="{ 'block-img-zoom': zoomEnabled }" @click="openModal" />
         <SimpleModal v-if="zoomEnabled" ref="zoom">
-          <prismic-image :field="img"/>
+          <prismic-image :field="img" />
         </SimpleModal>
       </div>
-      <p class="image-label" v-if="caption">{{ caption }}</p>
+      <p v-if="caption" data-testid="test-image-label" class="image-label">{{ caption }}</p>
     </div>
   </div>
 </template>
 
 <script>
-import SimpleModal from '@/containers/SimpleModal';
+import SimpleModal from '@/components/Blog/SimpleModal'
 
 export default {
-  name: 'image-caption-slice',
+  name: 'ImageCaptionSlice',
   components: { SimpleModal },
   props: {
     slice: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
-  data: function() {
+
+  data() {
     return {
       img: '',
       caption: '',
-      size: ''
-    };
-  },
-  created() {
-    this.img = this.slice.primary.image;
-    this.caption = this.$prismic.asText(this.slice.primary.caption);
-    this.size = this.slice.slice_label;
-  },
-  computed: {
-    zoomEnabled: function () {
-      return this.slice.primary.enable_zoom === 'enable';
-    },
-    lightBoxImage: function () {
-      return {
-        src: this.img.url,
-        alt: this.img.alt
-      };
+      size: '',
     }
   },
+
+  computed: {
+    zoomEnabled() {
+      return this.slice.primary.enable_zoom === 'enable'
+    },
+  },
+
+  created() {
+    this.img = this.slice.primary.image
+    this.caption = this.$prismic.asText(this.slice.primary.caption)
+    this.size = this.slice.slice_label
+  },
+
   methods: {
     openModal() {
       if (this.slice && this.slice.primary.enable_zoom === 'enable') {
-        this.$refs.zoom.show();
+        this.$refs.zoom.show()
       }
-    }
-  }
-};
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

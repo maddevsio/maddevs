@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardRestaurantTalisman renders correctly 1`] = `
+exports[`cardRestaurantTalisman renders correctly 1`] = `
 <div
   class="card-content"
 >
@@ -14,12 +14,8 @@ exports[`CardRestaurantTalisman renders correctly 1`] = `
     class="case_paragraph card-content_paragraph"
   >
     
-    Restaurant Talisman
-    successfully develops in market
-    of Bishkek city. In 2018,
-    directorship of the restaurant
-    decided to actively promote in
-    delivery.
+    Restaurant Talisman successfully develops in market of Bishkek city. In 2018, directorship of the restaurant
+    decided to actively promote in delivery.
   
   </p>
    
@@ -27,8 +23,7 @@ exports[`CardRestaurantTalisman renders correctly 1`] = `
     class="case_paragraph card-content_paragraph m-24_top m-24_bottom media-m-48_top"
   >
     
-    By using NambaFood software
-    only in a month, they got positive growth.
+    By using NambaFood software only in a month, they got positive growth.
   
   </p>
    
@@ -41,16 +36,13 @@ exports[`CardRestaurantTalisman renders correctly 1`] = `
       <p
         class="case_paragraph card-content_paragraph card-content_statistics-heading"
       >
-        
-        IT expenses
-      
+         IT expenses 
       </p>
        
       <p
         class="case_paragraph card-content_statistics-number"
       >
-        
-        0
+         0
         <span>
           $
         </span>
@@ -66,15 +58,15 @@ exports[`CardRestaurantTalisman renders correctly 1`] = `
         
         Increase in 
         <br />
-         sales
+        
+        sales
       
       </p>
        
       <p
         class="case_paragraph card-content_statistics-number"
       >
-        
-        +236
+         +236
         <span>
           %
         </span>
@@ -90,15 +82,15 @@ exports[`CardRestaurantTalisman renders correctly 1`] = `
         
         Increase in 
         <br />
-         amount of orders
+        
+        amount of orders
       
       </p>
        
       <p
         class="case_paragraph card-content_statistics-number"
       >
-        
-        +142
+         +142
         <span>
           %
         </span>

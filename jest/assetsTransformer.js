@@ -1,9 +1,9 @@
-const path = require('path');
+const path = require('path')
 
-function process(src, filename, config, options) {
-  return 'module.exports = ' + JSON.stringify(path.basename(filename)) + ';';
+function process(_, filename) {
+  return `module.exports = ${JSON.stringify(path.basename(filename))};`
 }
 
 module.exports = {
-  process
-};
+  process,
+}

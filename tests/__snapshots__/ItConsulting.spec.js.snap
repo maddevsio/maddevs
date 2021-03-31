@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ItСonsulting component renders correctly 1`] = `
+exports[`itСonsulting component renders correctly 1`] = `
 <section
   class="it-consulting"
   id="it-consulting"
@@ -19,6 +19,7 @@ exports[`ItСonsulting component renders correctly 1`] = `
     >
       <div
         class="it-consulting-item col-xl-4 col-lg-4"
+        type="technology-stack"
       >
         <div
           class="it-consulting-item__text-content"
@@ -45,14 +46,16 @@ exports[`ItСonsulting component renders correctly 1`] = `
             <p
               class="paragraph it-consulting-item__paragraph"
             >
-              We’ll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.
+              
+        We'll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.
+      
             </p>
           </client-only-stub>
         </div>
       </div>
-       
       <div
         class="it-consulting-item col-xl-4 col-lg-4"
+        type="process-audit"
       >
         <div
           class="it-consulting-item__text-content"
@@ -78,14 +81,16 @@ exports[`ItСonsulting component renders correctly 1`] = `
             <p
               class="paragraph it-consulting-item__paragraph"
             >
-              Your process probably just lacks transparency and reasonable control. We know how to avoid this and check who does what right now.
+              
+        Your process probably just lacks transparency and reasonable control. We know how to avoid this and check who does what right now.
+      
             </p>
           </client-only-stub>
         </div>
       </div>
-       
       <div
         class="it-consulting-item col-xl-4 col-lg-4"
+        type="team-headcount"
       >
         <div
           class="it-consulting-item__text-content"
@@ -108,7 +113,9 @@ exports[`ItСonsulting component renders correctly 1`] = `
             <p
               class="paragraph it-consulting-item__paragraph"
             >
-              Hire good people and get rid of underperformers. Easier said than done, right? Get assessments for the skills and seniority level of your staff. Our positively mad engineers and PMs know how to do this.
+              
+        Hire good people and get rid of underperformers. Easier said than done, right? Get assessments for the skills and seniority level of your staff. Our positively mad engineers and PMs know how to do this.
+      
             </p>
           </client-only-stub>
         </div>

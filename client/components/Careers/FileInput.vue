@@ -1,24 +1,18 @@
 <template>
   <div class="file-input">
     <input
+      id="file"
       ref="fileInput"
       class="file-input__uploader"
       type="file"
-      @change="onFileChanged"
       name="file"
-      accept=".pdf,.cv,.doc,.odt,.docx,.txt"
-      id="file"
+      :accept="acceptedExtensions"
+      @change="handleFileSelect"
     />
     <span class="none-decorated-dash">–</span>
-    <label
-      class="file-input__cv"
-      :class="{
-        'file-input__cv--selected': selectedFile,
-        'file-input__cv--attachable': !selectedFile
-      }"
-      for="file"
-    >
-     {{ selectedFile ? selectedFileName : 'find attached my CV' }}</label>
+    <label :class="`file-input__cv--${selectedFile ? 'selected' : 'attachable'}`" class="file-input__cv" for="file">
+      {{ selectedFilename }}
+    </label>
   </div>
 </template>
 
@@ -27,33 +21,34 @@ export default {
   name: 'FileInput',
   data() {
     return {
-      selectedFile: null
-    };
-  },
-  methods: {
-    onFileChanged(event) {
-      this.selectedFile = event.target.files[0];
-      this.$emit('input', this.selectedFile);
-    },
-    reset() {
-      this.selectedFile = null;
-      this.$refs.fileInput.value = null;
+      acceptedExtensions: '.pdf,.cv,.doc,.odt,.docx,.txt',
+      selectedFile: null,
     }
   },
+
   computed: {
-    selectedFileName() {
-      const ending = '...';
-      let fileName = this.selectedFile.name;
-      if (fileName) {
-        if (fileName.length > 25) {
-          return fileName.substring(0, 25) + ending;
-        }
-        return fileName;
-      }
-      return '';
-    }
-  }
-};
+    selectedFilename() {
+      if (!this.selectedFile) return 'find attached my CV'
+      const { name } = this.selectedFile
+      if (!name) return ''
+      if (name.length > 25) return `${name.substring(0, 25)}...`
+      return name
+    },
+  },
+
+  methods: {
+    handleFileSelect(event) {
+      const [file] = event.target.files
+      this.selectedFile = file
+      this.$emit('input', file)
+    },
+
+    reset() {
+      this.selectedFile = null
+      this.$refs.fileInput.value = null
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

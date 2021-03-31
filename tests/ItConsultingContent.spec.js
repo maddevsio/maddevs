@@ -1,31 +1,31 @@
-import { mount } from '@vue/test-utils';
-import ItConsultingContent from '@/components/Services/ItConsultingContent.vue';
+import { mount } from '@vue/test-utils'
+import ItConsultingContent from '@/components/Services/ItConsultingContent.vue'
 
-describe('ItConsultingContent component', () => {
-  let wrapper;
+describe('itConsultingContent component', () => {
+  let wrapper
 
   beforeEach(() => {
     wrapper = mount(ItConsultingContent, {
       stubs: ['client-only'],
       propsData: {
         title: 'Title',
-        subTitle: 'Sub title',
-        paragraph: 'Paragraph'
-      }
-    });
-  });
+        subtitle: 'Sub title',
+        paragraph: 'Paragraph',
+      },
+    })
+  })
 
-  test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
 
-  test('correctly passed props data', () => {
-    expect(wrapper.props().title).toBe('Title');
-    expect(wrapper.props().subTitle).toBe('Sub title');
-    expect(wrapper.props().paragraph).toBe('Paragraph');
-  });
-});
+  it('correctly passed props data', () => {
+    expect(wrapper.props().title).toBe('Title')
+    expect(wrapper.props().subtitle).toBe('Sub title')
+    expect(wrapper.props().paragraph).toBe('Paragraph')
+  })
+})

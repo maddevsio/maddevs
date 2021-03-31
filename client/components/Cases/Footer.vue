@@ -1,7 +1,7 @@
 <template>
   <section class="case_footer container_full">
     <slot name="icon"></slot>
-    <h2 class="case_title case_title_h2" :class="`case_title-${className}`">
+    <h2 :class="`case_title-${className}`" class="case_title case_title_h2">
       <slot></slot>
     </h2>
     <a :href="link" class="case_next-project-button">Read next project</a>
@@ -14,18 +14,19 @@ export default {
   props: {
     link: {
       type: String,
-      defaul: ''
+      default: '',
     },
+
     className: {
       type: String,
-      default: ''
-    }
-  }
-};
+      default: '',
+    },
+  },
+}
 </script>
 
 <style scoped lang="scss">
-@import "../../assets/styles/cases/mixins";
+@import '../../assets/styles/cases/mixins';
 
 .case {
   &_footer {

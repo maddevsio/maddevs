@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardGoDeeImpact renders correctly 1`] = `
+exports[`cardGoDeeImpact renders correctly 1`] = `
 <div
   class="card-content"
 >
@@ -17,9 +17,7 @@ exports[`CardGoDeeImpact renders correctly 1`] = `
       class="case_paragraph"
       style="color: rgb(255, 255, 255);"
     >
-      
-      Total routes
-    
+       Total routes 
     </p>
   </div>
    
@@ -36,9 +34,7 @@ exports[`CardGoDeeImpact renders correctly 1`] = `
       class="case_paragraph"
       style="color: rgb(255, 255, 255);"
     >
-      
-      Active routes
-    
+       Active routes 
     </p>
   </div>
    
@@ -55,9 +51,7 @@ exports[`CardGoDeeImpact renders correctly 1`] = `
       class="case_paragraph"
       style="color: rgb(255, 255, 255);"
     >
-      
-      Passengers per month
-    
+       Passengers per month 
     </p>
   </div>
 </div>

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`List team renders correctly 1`] = `
+exports[`list team renders correctly 1`] = `
 <ul
   class="case_list-team"
 >

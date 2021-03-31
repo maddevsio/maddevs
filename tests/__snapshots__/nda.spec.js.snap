@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NDA renders correctly 1`] = `
+exports[`nDA renders correctly 1`] = `
 <section
   id="nda"
 >
@@ -20,7 +20,8 @@ exports[`NDA renders correctly 1`] = `
         </span>
          Agreement 
         <br />
-         at 
+        
+        at 
         <span
           class="nda__nowrap"
         >
@@ -40,28 +41,30 @@ exports[`NDA renders correctly 1`] = `
         class="nda__text nda__text--first"
       >
         
-        All staff members, including contractors and consultants working for 
+        All staff members, including contractors and consultants working for
+        
         <span
           class="nda__nowrap"
         >
           Mad Devs
         </span>
-        , are obliged
-        to sign a 
+        , are obliged to sign a
+        
         <span
           class="nda__nowrap"
         >
           non-disclosure
         </span>
-         agreement before getting access to our internal systems. This is
-        one of our standard onboarding practices for the employee’s day one. At 
+         agreement before getting access to our internal systems. This
+        is one of our standard onboarding practices for the employee’s day one. At
+        
         <span
           class="nda__nowrap"
         >
           Mad Devs
         </span>
-        , we
-        understand how important it is to protect our technology and process 
+        , we understand how important it is to protect our technology and
+        process 
         <span
           class="nda__nowrap"
         >
@@ -73,15 +76,15 @@ exports[`NDA renders correctly 1`] = `
         class="nda__text"
       >
         
-        Even if our customer doesn’t have an NDA in place, we will protect their business secrets
-        and any of the competitive advantages we create for them by our 
+        Even if our customer doesn’t have an NDA in place, we will protect their business secrets and any of the
+        competitive advantages we create for them by our 
         <span
           class="nda__nowrap"
         >
           non-disclosure
         </span>
-         agreement.
-        If you want to get familiar with this document, please send us a request via
+         agreement. If
+        you want to get familiar with this document, please send us a request via
         
         <a
           class="nda__link nda__link--head-text"
@@ -103,18 +106,18 @@ exports[`NDA renders correctly 1`] = `
         class="nda__paragraph"
       >
         
-        Some of our customers have standard NDA templates  
+        Some of our customers have standard NDA templates 
         <span
           class="nda__nowrap"
         >
           pre-approved
         </span>
          by their legal
-        departments. If we are offered to sign such an agreement, we always proceed with it as the
-        customer knows their industry better. If a customer offers us some additional instructions or
-        training on confidential information in their organization, we eagerly agree. Any requirements
-        related to data protection, distribution, processing, or storage under NDA will be taken into
-        consideration and applied in the process of work on the customer’s project.
+        departments. If we are offered to sign such an agreement, we always proceed with it as the customer knows
+        their industry better. If a customer offers us some additional instructions or training on confidential
+        information in their organization, we eagerly agree. Any requirements related to data protection,
+        distribution, processing, or storage under NDA will be taken into consideration and applied in the process of
+        work on the customer’s project.
       
       </p>
        
@@ -140,11 +143,10 @@ exports[`NDA renders correctly 1`] = `
         >
           Mad Devs
         </span>
-         in collaboration with us. This
-        practice is also very welcome. We are ready to explain how data will circulate within the new
-        system, list the tools that we use, and describe the process our team follows. We are used to
-        talking with the customer’s legal department and take efforts aimed at the protection of
-        confidential information.
+         in collaboration
+        with us. This practice is also very welcome. We are ready to explain how data will circulate within the new
+        system, list the tools that we use, and describe the process our team follows. We are used to talking with the
+        customer’s legal department and take efforts aimed at the protection of confidential information.
       
       </p>
        
@@ -152,8 +154,8 @@ exports[`NDA renders correctly 1`] = `
         class="nda__paragraph nda__paragraph-margin"
       >
         
-        Our company has experience of working with NDA agreements of any kind and complexity.
-        If you have more specific questions please contact us via
+        Our company has experience of working with NDA agreements of any kind and complexity. If you have more
+        specific questions please contact us via
         
         <a
           class="nda__link nda__link--paragraph"

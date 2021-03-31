@@ -3,22 +3,32 @@
     <div class="container">
       <h3 class="meet-our_experts__main-title">Meet our experts</h3>
       <div class="meet-our_experts__experts-list row">
-        <div class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6" v-for="(expert, i) in experts" :key="i">
-          <image-component :fileName="expert.image" :fileNameRetina="`${expert.image}@2x`" :alt="expert.alt" width="295" height="401"/>
+        <div
+          v-for="expert in experts"
+          :key="expert.name"
+          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+        >
+          <UIImage
+            :file-name="expert.image"
+            :file-name-retina="`${expert.image}@2x`"
+            :alt="expert.alt"
+            width="295"
+            height="401"
+          />
           <div class="meet-our_experts__expert-bottom_content">
             <div class="meet-our_experts__expert-info">
               <div class="meet-our_experts__expert-name">{{ expert.name }}</div>
               <div class="meet-our_experts__expert-position">{{ expert.position }}</div>
             </div>
           </div>
-          <img 
+          <img
+            :data-src="require(`@/assets/img/Home/svg/team/linkedin.svg`)"
             width="24"
-            height="24" 
-            :data-src="require(`@/assets/img/Home/svg/team/linkedin.svg`)" 
+            height="24"
             alt="Linkedin"
             class="meet-our_experts__expert-linkedin-link img_lazy"
-          >
-          <a :href="expert.linkedin" class="" rel="nofollow" target="_blank"></a>
+          />
+          <a :href="expert.linkedin" rel="nofollow" target="_blank"></a>
         </div>
       </div>
     </div>
@@ -26,244 +36,189 @@
 </template>
 
 <script>
-import ImageComponent from '@/components/ui/image-component';
+import UIImage from '@/components/shared/UIImage'
+import { experts } from '@/data/ourExperts'
 
 export default {
   name: 'MeetOurExperts',
   components: {
-    ImageComponent
+    UIImage,
   },
+
   data() {
     return {
-      experts: [
-        {
-          name: 'Marat Bediev',
-          position: 'Senior DevOps Engineer',
-          image: 'Marat',
-          linkedin: 'https://www.linkedin.com/in/marat-bediev-a973171b/',
-          alt: 'Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company.'
-        },
-        {
-          name: 'Tamara Mun',
-          position: 'Delivery Manager',
-          image: 'Tamara',
-          linkedin: 'https://www.linkedin.com/in/tamara-mun/',
-          alt: 'Tamara Mun - Delivery Manager at Mad Devs Software and Mobile App Development Company.'
-        },
-        {
-          name: 'Andrew "Chuck" Minkin',
-          position: 'CTO, Co-Founder',
-          image: 'Chuck',
-          linkedin: 'https://www.linkedin.com/in/andrew-minkin-700a2523/',
-          alt: 'Andrew "Сhuck" Minkin - CTO and Co-Founder at Mad Devs Software and Mobile App Development Company.'
-        },
-        {
-          name: 'Nakylai Taiirova',
-          position: 'Senior Full-Stack Developer',
-          image: 'Nakylai',
-          linkedin: 'https://www.linkedin.com/in/nakylai-taiirova-28bab859/',
-          alt: 'Nakylai Taiirova - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company.'
-        },
-        {
-          name: 'Daria Utesheva',
-          position: 'Head of HR Department',
-          image: 'Daria',
-          linkedin: 'https://www.linkedin.com/in/daria-utesheva-47804198/',
-          alt: 'Daria Utesheva - Head of HR Department at Mad Devs Software and Mobile App Development Company.'
-        },
-        {
-          name: 'Nuradil Alymkulov',
-          position: 'Senior Full-Stack Developer',
-          image: 'Nuradil',
-          linkedin: 'https://www.linkedin.com/in/nuradil-alymkulov/',
-          alt: 'Nuradil Alymkulov - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company.'
-        },
-        {
-          name: 'Alice Jang',
-          position: 'Project Manager',
-          image: 'Alice',
-          linkedin: 'https://www.linkedin.com/in/alice-jang-b235b240/',
-          alt: 'Alice Jang - Project Manager at Mad Devs Software and Mobile App Development Company.'
-        },
-        {
-          name: 'Arthur Elizavetenkov',
-          position: 'Project Manager',
-          image: 'Arthur',
-          linkedin: 'https://www.linkedin.com/in/earthurkg/',
-          alt: 'Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company.'
-        }
-      ]
-    };
-  }
-};
+      experts,
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/vars';
+@import '../../assets/styles/vars';
 
-  .meet-our_experts {
-    padding-bottom: 100px;
-    background-color: $bgcolor--white-darken;
+.meet-our_experts {
+  padding-bottom: 100px;
+  background-color: $bgcolor--white-darken;
 
-    @media screen and (max-width: 834px) {
-      padding-bottom: 76px;
-    }
+  @media screen and (max-width: 834px) {
+    padding-bottom: 76px;
+  }
 
-    @media screen and (max-width: 578px) {
-      padding-bottom: 67px;
-    }
+  @media screen and (max-width: 578px) {
+    padding-bottom: 67px;
+  }
 
-    &__main-title {
-      @include h3_title;
-      text-align: center;
-      color: $text-color--black-lighter;
-    }
+  &__main-title {
+    @include h3_title;
+    text-align: center;
+    color: $text-color--black-lighter;
+  }
 
-    &__expert-item {
-      position: relative;
+  &__expert-item {
+    position: relative;
 
-      &:hover {
-        a {
-          border: 1px solid $border-color--red;
-        }
-
-        .meet-our_experts__expert {
-          &-name,
-          &-position {
-            color: $text-color--white;
-            background: $bgcolor--red;
-          }
-        }
-      }
-
+    &:hover {
       a {
-        transition: all .1s;
-        position: absolute;
-        top: 0;
-        left: calc(var(--bs-gutter-x) / 2);
-        width: calc(100% - var(--bs-gutter-x));
-        height: calc(100% - 1px);
+        border: 1px solid $border-color--red;
+      }
+
+      .meet-our_experts__expert {
+        &-name,
+        &-position {
+          color: $text-color--white;
+          background: $bgcolor--red;
+        }
       }
     }
 
-    &__expert-bottom_content {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
+    a {
+      transition: all 0.1s;
       position: absolute;
-      bottom: 18px;
+      top: 0;
+      left: calc(var(--bs-gutter-x) / 2);
+      width: calc(100% - var(--bs-gutter-x));
+      height: calc(100% - 1px);
     }
+  }
 
-    &__expert-info {
-      margin-left: 16px;
-    }
+  &__expert-bottom_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 18px;
+  }
 
-    &__expert-linkedin-link {
-      width: 24px;
-      height: 24px;
-      display: block;
-      position: absolute;
-      top: 16px;
-      right: 28px;
-    }
+  &__expert-info {
+    margin-left: 16px;
+  }
 
+  &__expert-linkedin-link {
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 28px;
+  }
+
+  &__expert-name,
+  &__expert-position {
+    width: max-content;
+    padding: 4px 8px;
+    background-color: $bgcolor--white-darken;
+    letter-spacing: -0.02em;
+    transition: all 0.1s;
+  }
+
+  &__expert-name {
+    font-size: 17px;
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 700;
+  }
+
+  &__expert-position {
+    font-size: 14px;
+    font-family: 'Poppins-Regular', sans-serif;
+  }
+
+  @media only screen and (max-width: 1180px) {
     &__expert-name,
     &__expert-position {
-      width: max-content;
-      padding: 4px 8px;
-      background-color: $bgcolor--white-darken;
-      letter-spacing: -0.02em;
-      transition: all .1s;
+      padding: 3px 4px;
     }
 
     &__expert-name {
-      font-size: 17px;
-      font-family: 'Poppins-Bold', sans-serif;
-      font-weight: 700;
+      font-size: 13px;
     }
 
     &__expert-position {
-      font-size: 14px;
-      font-family: 'Poppins-Regular', sans-serif;
+      font-size: 10px;
     }
 
-    @media only screen and (max-width: 1180px) {
-      &__expert-name,
-      &__expert-position {
-        padding: 3px 4px;
-      }
-
-      &__expert-name {
-        font-size: 13px;
-      }
-
-      &__expert-position {
-        font-size: 10px;
-      }
-
-      &__expert-info {
-        margin-left: 12px;
-      }
-
-      &__expert-linkedin-link {
-        width: 16px;
-        height: 16px;
-      }
+    &__expert-info {
+      margin-left: 12px;
     }
 
-    @media only screen and (max-width: 1024px) {
-      &__expert-name,
-      &__expert-position {
-        padding: 2px 3px;
-      }
-
-      &__expert-name {
-        font-size: 10px;
-      }
-
-      &__expert-position {
-        font-size: 9px;
-      }
-
-      &__expert-info {
-        margin-left: 8px;
-      }
-
-      &__expert-linkedin-link {
-        top: 8px;
-        right: 20px;
-      }
-    }
-
-    @media screen and (max-width: 767px) {
-      &__expert-name {
-        font-size: 13px;
-      }
-
-      &__expert-position {
-        font-size: 11px;
-      }
-    }
-
-    @media screen and (max-width: 385px) {
-      &__expert-name {
-        font-size: 11px;
-      }
-
-      &__expert-position {
-        font-size: 9px;
-      }
-    }
-
-    @media screen and (max-width: 374px) {
-      &__expert-name {
-        font-size: 9px;
-      }
-
-      &__expert-position {
-        font-size: 8px;
-      }
+    &__expert-linkedin-link {
+      width: 16px;
+      height: 16px;
     }
   }
+
+  @media only screen and (max-width: 1024px) {
+    &__expert-name,
+    &__expert-position {
+      padding: 2px 3px;
+    }
+
+    &__expert-name {
+      font-size: 10px;
+    }
+
+    &__expert-position {
+      font-size: 9px;
+    }
+
+    &__expert-info {
+      margin-left: 8px;
+    }
+
+    &__expert-linkedin-link {
+      top: 8px;
+      right: 20px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__expert-name {
+      font-size: 13px;
+    }
+
+    &__expert-position {
+      font-size: 11px;
+    }
+  }
+
+  @media screen and (max-width: 385px) {
+    &__expert-name {
+      font-size: 11px;
+    }
+
+    &__expert-position {
+      font-size: 9px;
+    }
+  }
+
+  @media screen and (max-width: 374px) {
+    &__expert-name {
+      font-size: 9px;
+    }
+
+    &__expert-position {
+      font-size: 8px;
+    }
+  }
+}
 </style>

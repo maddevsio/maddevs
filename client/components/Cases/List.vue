@@ -6,15 +6,15 @@
 
 <script>
 export default {
-  name: 'List'
-};
+  name: 'List',
+}
 </script>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/cases/_mixins';
+@import '../../assets/styles/cases/_mixins';
 
-  .case_list {
-    display: flex;
-    flex-direction: column;
-  }
+.case_list {
+  display: flex;
+  flex-direction: column;
+}
 </style>

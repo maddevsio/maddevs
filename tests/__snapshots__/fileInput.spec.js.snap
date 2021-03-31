@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FileInput component renders correctly 1`] = `
+exports[`fileInput component renders correctly 1`] = `
 <div
   class="file-input"
 >
@@ -23,7 +23,8 @@ exports[`FileInput component renders correctly 1`] = `
     for="file"
   >
     
-   find attached my CV
+    find attached my CV
+  
   </label>
 </div>
 `;

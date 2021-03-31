@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Customers component renders correctly 1`] = `
+exports[`customers component renders correctly 1`] = `
 <section
   class="customers"
   id="customers"
@@ -20,7 +20,10 @@ exports[`Customers component renders correctly 1`] = `
       <p
         class="customers__description"
       >
-        Due to our NDAs and confidentiality requirements, we cannot disclose details for all of our customers. These are a few of the companies we work with.
+        
+        Due to our NDAs and confidentiality requirements, we cannot disclose details for all of our customers. These
+        are a few of the companies we work with.
+      
       </p>
     </div>
      

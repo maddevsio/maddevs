@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardDeliveryServiceNambafood renders correctly 1`] = `
+exports[`cardDeliveryServiceNambafood renders correctly 1`] = `
 <div
   class="card-content"
 >
@@ -14,9 +14,7 @@ exports[`CardDeliveryServiceNambafood renders correctly 1`] = `
     class="case_paragraph card-content_paragraph m-24_bottom"
   >
     
-    For 5 years Namba Food actively
-    evolves and monthly improves
-    opportunities of software.
+    For 5 years Namba Food actively evolves and monthly improves opportunities of software.
   
   </p>
    
@@ -45,9 +43,7 @@ exports[`CardDeliveryServiceNambafood renders correctly 1`] = `
       <p
         class="case_paragraph card-content_paragraph card-content_paragraph--bold"
       >
-        
-        Increase in sales:
-      
+         Increase in sales: 
       </p>
        
       <div

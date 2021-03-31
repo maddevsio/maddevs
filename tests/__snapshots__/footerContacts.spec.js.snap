@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer contacts renders correctly 1`] = `
+exports[`footer contacts renders correctly 1`] = `
 <div
   class="footer-contacts"
 >
@@ -67,7 +67,7 @@ exports[`Footer contacts renders correctly 1`] = `
       <li>
         <a
           class="footer-contacts__messenger-item-wrapper"
-          href="https://m.me/maddevsllc"
+          href="https://facebook.com/maddevsllc"
           target="_blank"
         >
           <img
@@ -85,7 +85,6 @@ exports[`Footer contacts renders correctly 1`] = `
           </p>
         </a>
       </li>
-       
       <li>
         <a
           class="footer-contacts__messenger-item-wrapper"
@@ -107,7 +106,6 @@ exports[`Footer contacts renders correctly 1`] = `
           </p>
         </a>
       </li>
-       
       <li>
         <a
           class="footer-contacts__messenger-item-wrapper"
@@ -129,7 +127,6 @@ exports[`Footer contacts renders correctly 1`] = `
           </p>
         </a>
       </li>
-       
       <li>
         <a
           class="footer-contacts__messenger-item-wrapper"

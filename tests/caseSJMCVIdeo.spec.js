@@ -1,79 +1,79 @@
-import {
-  mount
-} from '@vue/test-utils';
-import SJMCVideo from '@/components/Cases/SJMCVideo';
+import { mount } from '@vue/test-utils'
+import SJMCVideo from '@/components/Cases/SJMCVideo'
 
-describe('SJMCVideo', () => {
-  let wrapper;
+global.document.exitFullscreen = () => {}
+
+describe('sJMCVideo', () => {
+  let wrapper
   const VueVideoStub = {
     render: () => {},
     methods: {
-      onended: () => {}
-    }
-  };
+      onended: () => {},
+    },
+  }
 
   beforeEach(() => {
     wrapper = mount(SJMCVideo, {
       mocks: {
         $nuxt: {
-          $on: jest.fn()
-        }
+          $on: jest.fn(),
+        },
       },
       stubs: {
-        'SJMCVideo': VueVideoStub
-      }
-    });
-    wrapper.vm.$refs = { 
+        SJMCVideo: VueVideoStub,
+      },
+    })
+    wrapper.vm.$refs = {
       video: {
         paused: true,
         pause: jest.fn(),
         play: jest.fn(),
-        onended: jest.fn()
+        onended: jest.fn(),
       },
       videoContainer: {
-        requestFullscreen: jest.fn()
-      }
-    };
-    global.document.exitFullscreen = jest.fn();
-  });
+        requestFullscreen: jest.fn(),
+      },
+    }
+    jest.spyOn(global.document, 'exitFullscreen').mockImplementation()
+  })
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
-  
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
+
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
 
-  test('videoSetState function should call play', () => {
-    const spyPlay = jest.spyOn(wrapper.vm.$refs.video, 'play');
-    wrapper.vm.videoSetState();
-    expect(spyPlay).toHaveBeenCalled();
-    spyPlay.mockReset();
-  });
+  it('videoSetState function should call play', () => {
+    const spyPlay = jest.spyOn(wrapper.vm.$refs.video, 'play')
+    wrapper.vm.videoSetState()
+    expect(spyPlay).toHaveBeenCalledWith()
+    spyPlay.mockReset()
+  })
 
-  test('videoSetState function should call pause', () => {
-    wrapper.vm.$refs.video.paused = false;
-    const spyPause = jest.spyOn(wrapper.vm.$refs.video, 'pause');
-    wrapper.vm.videoSetState();
-    expect(spyPause).toHaveBeenCalled();
-    spyPause.mockReset();
-  });
+  it('videoSetState function should call pause', () => {
+    wrapper.vm.$refs.video.paused = false
+    const spyPause = jest.spyOn(wrapper.vm.$refs.video, 'pause')
+    wrapper.vm.videoSetState()
+    expect(spyPause).toHaveBeenCalledWith()
+    spyPause.mockReset()
+  })
 
-  test('exitFullscreen should change fullscreenModIsActive value', () => {
-    wrapper.vm.$data.fullscreenModIsActive = true;
-    wrapper.vm.exitFullscreen();
-    expect(wrapper.vm.$data.fullscreenModIsActive).toEqual(false);
-  });
+  it('exitFullscreen should change fullscreenModIsActive value', () => {
+    wrapper.vm.$data.fullscreenModIsActive = true
+    wrapper.vm.exitFullscreen()
+    expect(wrapper.vm.$data.fullscreenModIsActive).toEqual(false)
+  })
 
-  test('emitHandler should change fullscreenModIsActive value', () => {
-    const spyRequestFullscreen = jest.spyOn(wrapper.vm.$refs.videoContainer, 'requestFullscreen');
-    wrapper.vm.$data.fullscreenModIsActive = false;
-    wrapper.vm.emitHandler();
-    expect(spyRequestFullscreen).toHaveBeenCalled();
-    expect(wrapper.vm.$data.fullscreenModIsActive).toEqual(true);
-    spyRequestFullscreen.mockReset();
-  });
-});
+  it('emitHandler should change fullscreenModIsActive value', () => {
+    const spyRequestFullscreen = jest.spyOn(wrapper.vm.$refs.videoContainer, 'requestFullscreen')
+    wrapper.vm.$data.fullscreenModIsActive = false
+    wrapper.vm.emitHandler()
+    expect(spyRequestFullscreen).toHaveBeenCalledWith()
+    expect(wrapper.vm.$data.fullscreenModIsActive).toEqual(true)
+    spyRequestFullscreen.mockReset()
+  })
+})

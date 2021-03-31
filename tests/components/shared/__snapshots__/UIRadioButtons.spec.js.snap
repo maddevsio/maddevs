@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UIRadioButtons should render correctly 1`] = `
+<div>
+  <div
+    class="ui-radio-buttons"
+  >
+    <div
+      class="ui-radio-buttons_item"
+    >
+      <div
+        class="ui-radio-buttons_item-circle"
+      />
+       
+      <div
+        class="ui-radio-buttons_item-label"
+      >
+        some label
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UIRadioButtons should render correctly with empty array 1`] = `
+<div>
+  <!---->
+</div>
+`;

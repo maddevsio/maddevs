@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ItConsultingContent component renders correctly 1`] = `
+exports[`itConsultingContent component renders correctly 1`] = `
 <div
   class="it-consulting-item col-xl-4 col-lg-4"
 >
@@ -23,7 +23,9 @@ exports[`ItConsultingContent component renders correctly 1`] = `
       <p
         class="paragraph it-consulting-item__paragraph"
       >
+        
         Paragraph
+      
       </p>
     </client-only-stub>
   </div>

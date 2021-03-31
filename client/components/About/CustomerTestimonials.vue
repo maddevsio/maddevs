@@ -1,9 +1,7 @@
 <template>
   <section id="customer-testimonials" class="customer-testimonials">
     <div class="container">
-      <h2 class="customer-testimonials__title">
-        Customer Testimonials
-      </h2>
+      <h2 class="customer-testimonials__title">Customer Testimonials</h2>
       <div class="customer-testimonials__content-wrap">
         <div class="customer-testimonials__widget-col">
           <client-only>
@@ -15,14 +13,13 @@
                 data-widget-type="4"
                 data-expandifr="true"
                 data-height="auto"
-                data-clutchcompany-id="258762">
-              </div>
+                data-clutchcompany-id="258762"
+              ></div>
             </div>
           </client-only>
         </div>
         <div class="customer-testimonials__testimonials-list">
-          <div class="customer-testimonials__testimonials-item"
-               v-for="(testimonial, i) in testimonials" :key="i">
+          <div v-for="(testimonial, i) in testimonials" :key="i" class="customer-testimonials__testimonials-item">
             <blockquote class="customer-testimonials__testimonials-text paragraph-md">
               {{ testimonial.testimonialText }}
             </blockquote>
@@ -30,11 +27,11 @@
               <div class="customer-testimonials__profile">
                 <img
                   :data-src="require(`@/assets/img/Home/png/customers/${testimonial.customerImageName}.png`)"
-                  class="customer-testimonials__customer-image img_lazy"
                   :alt="testimonial.alt"
+                  class="customer-testimonials__customer-image img_lazy"
                   width="42"
                   height="42"
-                >
+                />
                 <span class="customer-testimonials__customer-name paragraph-sm">
                   {{ testimonial.customerName }} <span>{{ testimonial.customerCountry }}</span>
                 </span>
@@ -43,12 +40,12 @@
                 <a :href="testimonial.link" target="_blank" rel="nofollow">
                   <img
                     :width="testimonial.logoWidth"
-                    height="31"
                     :data-src="require(`@/assets/img/Home/svg/testimonials/${testimonial.customerProject}.svg`)"
-                    class="img_lazy single-project__logo"
                     :class="`customer-testimonials__${testimonial.customerProject}`"
                     :alt="testimonial.alt"
-                  >
+                    height="31"
+                    class="img_lazy single-project__logo"
+                  />
                 </a>
               </div>
             </div>
@@ -60,63 +57,35 @@
 </template>
 
 <script>
+import { customerTestimonials as testimonials } from '@/data/customerTestimonials'
+
 export default {
   name: 'CustomerTestimonials',
   data() {
     return {
-      testimonials: [
-        {
-          customerName: 'Atif Mahmood,',
-          customerCountry: 'The UK',
-          customerProject: 'teacherly',
-          customerImageName: 'atif',
-          testimonialText: 'Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.',
-          link: 'https://teacherly.io/',
-          alt: 'Atif Mahmood - CEO and Founder at Teacherly.',
-          logoWidth: 91
-        },
-        {
-          customerName: 'Daniel Vartanov,',
-          customerCountry: 'The UK',
-          customerProject: 'veeqo',
-          customerImageName: 'daniel',
-          testimonialText: 'We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.',
-          link: 'https://veeqo.com/',
-          alt: 'Daniel Vartanov - CTO at Veeqo.com.',
-          logoWidth: 83
-        },
-        {
-          customerName: 'Stefan Streichsbier,',
-          customerCountry: 'Singapore',
-          customerProject: 'guardrails',
-          customerImageName: 'stefan',
-          testimonialText: 'I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.',
-          link: 'https://guardrails.io/',
-          alt: 'Stefan Streichsbier - CEO and Founder at GuardRails.io.',
-          logoWidth: 160
-        }
-      ],
-      script: null
-    };
-  },
-  mounted() {
-    let clutchLoader = () => {
-      this.script = document.createElement('script');
-      this.script.setAttribute('src', 'https://widget.clutch.co/static/js/widget.js');
-      document.body.appendChild(this.script);
-      this.script.onload = function() {
-        CLUTCHCO.Init();
-      };
-      window.removeEventListener('scroll', clutchLoader);
-    };
-	  window.addEventListener('scroll', clutchLoader);
-  },
-  destroyed() {
-    if (this.script !== null) {
-      this.script.remove();
+      testimonials,
+      script: null,
     }
-  }
-};
+  },
+
+  mounted() {
+    const clutchLoader = () => {
+      this.script = document.createElement('script')
+      this.script.setAttribute('src', 'https://widget.clutch.co/static/js/widget.js')
+      this.script.setAttribute('data-testid', 'test-clutch-script')
+      document.body.appendChild(this.script)
+      this.script.onload = () => {
+        window.CLUTCHCO.Init()
+      }
+      window.removeEventListener('scroll', clutchLoader)
+    }
+    window.addEventListener('scroll', clutchLoader)
+  },
+
+  destroyed() {
+    if (this.script && this.script.remove) this.script.remove()
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -165,11 +134,11 @@ export default {
       margin-bottom: 62px;
 
       @media screen and (max-width: 1169px) {
-        margin-bottom: 0  ;
+        margin-bottom: 0;
       }
 
       @media screen and (max-width: 767px) {
-        border-bottom: 1px solid #D7DDE1;
+        border-bottom: 1px solid #d7dde1;
         margin-bottom: 24px;
         padding-bottom: 24px;
 

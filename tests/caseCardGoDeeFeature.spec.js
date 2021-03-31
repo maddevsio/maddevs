@@ -1,22 +1,20 @@
-import {
-  mount
-} from '@vue/test-utils';
-import CardGoDeeFeature from '@/components/Cases/cards-content/CardGoDeeFeature';
+import { mount } from '@vue/test-utils'
+import CardGoDeeFeature from '@/components/Cases/cards/godee/CardGoDeeFeature'
 
-describe('CardGoDeeFeature', () => {
-  let wrapper;
+describe('cardGoDeeFeature', () => {
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(CardGoDeeFeature);
-  });
+    wrapper = mount(CardGoDeeFeature)
+  })
 
   // ------ IMPORTANT ----- //
-  test('is a Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
   // --------------------- //
-});
+})

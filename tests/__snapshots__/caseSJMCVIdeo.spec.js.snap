@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SJMCVideo renders correctly 1`] = `
+exports[`sJMCVideo renders correctly 1`] = `
 <div
   style="display: none;"
 >

@@ -1,47 +1,53 @@
 <template>
-  <div class='default-layout'>
-    <Header/>
-      <nuxt/>
+  <div class="default-layout">
+    <Header />
+    <Nuxt />
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import initIntercomHelper from '@/helpers/initIntercom';
+import Header from '@/components/core/Header/Header'
+import Footer from '@/components/core/Footer/Footer'
+import initIntercom from '@/helpers/intercom'
 
 export default {
   name: 'Default',
-  components: { 
+  components: {
     Header,
-    Footer
+    Footer,
   },
+
   mounted() {
-    this.$nextTick(() => {
-      try {
-        const section = document.querySelector(window.location.hash);
-        if (section) {
-          section.scrollIntoView({ block: 'start' });
+    this.initHashLinks()
+    this.loadIntercomScript()
+  },
+
+  methods: {
+    initHashLinks() {
+      this.$nextTick(() => {
+        if (window.location.hash) {
+          const section = document.querySelector(window.location.hash)
+          if (section) section.scrollIntoView({ block: 'start' })
         }
-        return true;
-      } catch {
-        return false;
+      })
+    },
+
+    loadIntercomScript() {
+      const scriptLoader = () => {
+        initIntercom()
+        window.removeEventListener('scroll', scriptLoader)
       }
-    });
-    let scriptLoader = () => {
-      initIntercomHelper();
-      window.removeEventListener('scroll', scriptLoader);
-    };
-    window.addEventListener('scroll', scriptLoader);
-  }
-};
+      window.addEventListener('scroll', scriptLoader)
+    },
+  },
+}
 </script>
 
 <style lang='scss' scoped>
-  @import '../assets/styles/_vars';
+@import '../assets/styles/_vars';
 
-  .default-layout {
-    background-color: $bgcolor--black;
-  }
+.default-layout {
+  background-color: $bgcolor--black;
+}
 </style>

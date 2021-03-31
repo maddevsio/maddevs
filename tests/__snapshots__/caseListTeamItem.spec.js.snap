@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`List team item renders correctly 1`] = `
+exports[`list team item renders correctly 1`] = `
 <li
   class="case_team-item"
 >

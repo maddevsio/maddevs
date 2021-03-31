@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Careers page renders correctly 1`] = `
+exports[`careers page renders correctly 1`] = `
 <main
   class="main"
 >
@@ -14,17 +14,21 @@ exports[`Careers page renders correctly 1`] = `
         class="banner__main-title-wrapper main-title-wrapper container"
       >
         <h1
-          class="banner__banner-main_title banner-main_title"
+          class="banner__banner-main_title banner-main_title banner-main_title-test"
         >
-          Look! 
+          
+        Look! 
           <br />
-           A new 
+          
+        A new 
           <span>
             Mad Devs'
           </span>
            
           <br />
-           ranger is here!
+          
+        ranger is here!
+      
         </h1>
          
         <div
@@ -54,6 +58,7 @@ exports[`Careers page renders correctly 1`] = `
           
             <span>
               <input
+                autofocus="autofocus"
                 class="careers__form-input careers__form-name-input"
                 placeholder="John Smith"
                 type="text"
@@ -86,7 +91,8 @@ exports[`Careers page renders correctly 1`] = `
             
           You can also consider me for 
             <br />
-             your other
+            
+          your other
         
           </h2>
            
@@ -178,7 +184,8 @@ exports[`Careers page renders correctly 1`] = `
             
           To get more information on my 
             <br />
-             skills, please
+            
+          skills, please
         
           </h2>
            
@@ -224,7 +231,8 @@ exports[`Careers page renders correctly 1`] = `
                     for="file"
                   >
                     
-   find attached my CV
+    find attached my CV
+  
                   </label>
                 </div>
                  
@@ -238,9 +246,7 @@ exports[`Careers page renders correctly 1`] = `
             id="careers-btn"
             type="submit"
           >
-            
-          I want to work for Mad Devs!
-        
+             I want to work for Mad Devs! 
           </button>
         </form>
       </div>

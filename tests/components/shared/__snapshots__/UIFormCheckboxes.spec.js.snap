@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UIFormCheckboxes should render correctly with id prop 1`] = `
+<div>
+  <div
+    class="form-checkboxes"
+  >
+    <label
+      class="form-checkbox-label required"
+      for="privacy-policy-custom-id"
+    >
+      I confirm that I have read and accepted
+    
+      <div>
+        Mad Devs’
+      </div>
+       
+      <a
+        href="/privacy/"
+        target="_blank"
+      >
+        Privacy Policy
+      </a>
+       
+      <input
+        class="form-checkbox-input"
+        data-testid="test-privacy-policy-checkbox-input"
+        id="privacy-policy-custom-id"
+        name="Privacy policy"
+        type="checkbox"
+      />
+       
+      <div
+        class="checkmark"
+      />
+    </label>
+     
+    <label
+      class="form-checkbox-label"
+      for="marketing-communications-custom-id"
+    >
+      I agree to get
+    
+      <div>
+        Mad Devs’
+      </div>
+      
+    discount offers and other marketing communications.
+    
+      <input
+        class="form-checkbox-input"
+        data-testid="test-form-checkbox-input"
+        id="marketing-communications-custom-id"
+        name="Marketing communications"
+        type="checkbox"
+      />
+       
+      <div
+        class="checkmark"
+      />
+    </label>
+  </div>
+</div>
+`;
+
+exports[`UIFormCheckboxes should render correctly with slot 1`] = `
+<div>
+  <div
+    class="form-checkboxes"
+  >
+    <label
+      class="form-checkbox-label required"
+      for="privacy-policy-input-id"
+    >
+      I confirm that I have read and accepted
+    
+      <div>
+        Mad Devs’
+      </div>
+       
+      <a
+        href="/privacy/"
+        target="_blank"
+      >
+        Privacy Policy
+      </a>
+       
+      <input
+        class="form-checkbox-input"
+        data-testid="test-privacy-policy-checkbox-input"
+        id="privacy-policy-input-id"
+        name="Privacy policy"
+        type="checkbox"
+      />
+       
+      <div
+        class="checkmark"
+      />
+    </label>
+     
+    <label
+      class="form-checkbox-label"
+      for="marketing-communications-input-id"
+    >
+      I agree to get
+    
+      <div>
+        Mad Devs’
+      </div>
+      
+    discount offers and other marketing communications.
+    
+      <input
+        class="form-checkbox-input"
+        data-testid="test-form-checkbox-input"
+        id="marketing-communications-input-id"
+        name="Marketing communications"
+        type="checkbox"
+      />
+       
+      <div
+        class="checkmark"
+      />
+    </label>
+  </div>
+</div>
+`;

@@ -1,111 +1,111 @@
-import { mount } from '@vue/test-utils';
+import { mount } from '@vue/test-utils'
 
-import Button from '@/components/Careers/Button';
-import CareersForm from '@/components/Careers/CareersForm';
+import Button from '@/components/Careers/Button'
+import CareersForm from '@/components/Careers/Careers'
 
-describe('Button component', () => {
-  let wrapper;
+describe('button component', () => {
+  let wrapper
 
   beforeEach(() => {
     wrapper = mount(Button, {
       parentComponent: CareersForm,
       slots: {
-        default: 'Btn text'
+        default: 'Btn text',
       },
       propsData: {
         loading: false,
-        disabled: false
-      }
-    });
-  });
+        disabled: false,
+      },
+    })
+  })
 
-  test('is Vue instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+  it('is Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
-  test('Button slot renders a default button text', () => {
-    const btn = wrapper.find('.button');
-    expect(btn.text()).toBe('Btn text');
-  });
+  it('button slot renders a default button text', () => {
+    const btn = wrapper.find('.button')
+    expect(btn.text()).toBe('Btn text')
+  })
 
-  test('should have CareersForm parent component ', () => {
-    expect(wrapper.vm.$parent.$options.name).toBe('CareersForm');
-  });
+  it('should have CareersForm parent component', () => {
+    expect(wrapper.vm.$parent.$options.name).toBe('Careers')
+  })
 
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
 
-  test('should test click emit', () => {
-    wrapper = mount(Button);
-    wrapper.vm.$emit('click');
-    expect(wrapper.emitted().click).toBeTruthy();
-    expect(wrapper.emitted().click.length).toBe(1);
-  });
+  it('should test click emit', () => {
+    wrapper = mount(Button)
+    wrapper.vm.$emit('click')
+    expect(wrapper.emitted().click).toBeTruthy()
+    expect(wrapper.emitted().click).toHaveLength(1)
+  })
 
-  test('should test click emit', () => {
-    wrapper = mount(Button);
-    wrapper.vm.$emit('click');
-    expect(wrapper.find('#careers-btn').exists()).toBe(true);
-    const button = wrapper.find('#careers-btn');
-    button.trigger('click');
-    expect(wrapper.emitted().click).toBeTruthy();
-    expect(wrapper.emitted().click.length).toBe(2);
-  });
+  it('should test click emit 2 times', () => {
+    wrapper = mount(Button)
+    wrapper.vm.$emit('click')
+    expect(wrapper.find('#careers-btn').exists()).toBe(true)
+    const button = wrapper.find('#careers-btn')
+    button.trigger('click')
+    expect(wrapper.emitted().click).toBeTruthy()
+    expect(wrapper.emitted().click).toHaveLength(2)
+  })
 
-  test('correctly sets props and recognizes click event', () => {
+  it('correctly sets props and recognizes click event', () => {
     wrapper = mount(Button, {
       parentComponent: CareersForm,
       slots: {
-        default: 'Btn text'
+        default: 'Btn text',
       },
       propsData: {
-        disabled: true
-      }
-    });
+        disabled: true,
+      },
+    })
 
-    expect(wrapper.props().disabled).toBe(true);
-    expect(wrapper.find('#careers-btn').exists()).toBe(true);
-    const button = wrapper.find('#careers-btn');
-    button.trigger('click');
-    expect(wrapper.emitted().click).toBeFalsy();
+    expect(wrapper.props().disabled).toBe(true)
+    expect(wrapper.find('#careers-btn').exists()).toBe(true)
+    const button = wrapper.find('#careers-btn')
+    button.trigger('click')
+    expect(wrapper.emitted().click).toBeFalsy()
 
     wrapper = mount(Button, {
       parentComponent: CareersForm,
       slots: {
-        default: 'Btn text'
+        default: 'Btn text',
       },
       propsData: {
-        disabled: false
-      }
-    });
-  });
+        disabled: false,
+      },
+    })
+  })
 
-  test('Button should contain span with text Waiting...', () => {
+  it('button should contain span with text Waiting...', () => {
     wrapper = mount(Button, {
       propsData: {
         loading: true,
-        disabled: false
+        disabled: false,
       },
       slots: {
-        default: 'Slot text'
-      }
-    });
+        default: 'Slot text',
+      },
+    })
 
-    expect(wrapper.find('span').text()).toEqual('Waiting...');
-  });
+    expect(wrapper.find('span').text()).toEqual('Waiting...')
+  })
 
-  test('Button should contain slot text', () => {
+  it('button should contain slot text', () => {
     wrapper = mount(Button, {
       propsData: {
         loading: false,
-        disabled: false
+        disabled: false,
       },
       slots: {
-        default: 'Slot text'
-      }
-    });
+        default: 'Slot text',
+      },
+    })
 
-    expect(wrapper.text()).toEqual('Slot text');
-  });
-});
+    expect(wrapper.text()).toEqual('Slot text')
+  })
+})

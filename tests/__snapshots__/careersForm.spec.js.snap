@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CareersForm component renders correctly 1`] = `
+exports[`careersForm component renders correctly 1`] = `
 <section
   class="careers"
   id="careers"
@@ -21,6 +21,7 @@ exports[`CareersForm component renders correctly 1`] = `
           
           <span>
             <input
+              autofocus="autofocus"
               class="careers__form-input careers__form-name-input"
               placeholder="John Smith"
               type="text"
@@ -53,7 +54,8 @@ exports[`CareersForm component renders correctly 1`] = `
           
           You can also consider me for 
           <br />
-           your other
+          
+          your other
         
         </h2>
          
@@ -62,7 +64,7 @@ exports[`CareersForm component renders correctly 1`] = `
             class="careers__position-list"
           >
             <uiradiobuttons-stub
-              radios="[object Object],[object Object],[object Object],[object Object]"
+              options="[object Object],[object Object],[object Object],[object Object]"
             />
           </ul>
            
@@ -92,7 +94,8 @@ exports[`CareersForm component renders correctly 1`] = `
           
           To get more information on my 
           <br />
-           skills, please
+          
+          skills, please
         
         </h2>
          
@@ -127,15 +130,14 @@ exports[`CareersForm component renders correctly 1`] = `
           disabled="true"
           type="submit"
         >
-          
-          I want to work for Mad Devs!
-        
+           I want to work for Mad Devs! 
         </button-stub>
       </form>
     </div>
   </div>
    
-  <successmodal-stub
+  <modalsuccess-stub
+    displaytime="3000"
     id="career-modal"
   />
 </section>

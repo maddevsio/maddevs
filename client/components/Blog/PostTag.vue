@@ -1,7 +1,7 @@
 <template>
-    <div class="post-tag" :class="theme">
-      <span class="tag">{{ tag }}</span>
-    </div>
+  <div :class="theme" class="post-tag">
+    <span data-testid="test-tag" class="tag">{{ tag }}</span>
+  </div>
 </template>
 
 <script>
@@ -10,38 +10,39 @@ export default {
   props: {
     tag: {
       type: String,
-      required: true
+      required: true,
     },
+
     theme: {
       type: String,
-      default: 'light'
-    }
-  }
-};
+      default: 'light',
+    },
+  },
+}
 </script>
 
 <style scoped lang="scss">
-  @import '../../assets/styles/_vars';
+@import '../../assets/styles/_vars';
 
-  .post-tag {
-    border-radius: 2px;
-    padding: 4px 16px;
-    margin-left: 24px;
-    transition: 0.2s;
+.post-tag {
+  border-radius: 2px;
+  padding: 4px 16px;
+  margin-left: 24px;
+  transition: 0.2s;
 
-    &.light {
-      background-color: $bgcolor--silver;
-      color: $text-color--black;
-    }
-
-    &.dark {
-      background-color: $text-color--quote-box;
-      color: $bgcolor--silver;
-    }
-
-    .tag {
-      line-height: 22px;
-      font-size: 13px;
-    }
+  &.light {
+    background-color: $bgcolor--silver;
+    color: $text-color--black;
   }
+
+  &.dark {
+    background-color: $text-color--quote-box;
+    color: $bgcolor--silver;
+  }
+
+  .tag {
+    line-height: 22px;
+    font-size: 13px;
+  }
+}
 </style>

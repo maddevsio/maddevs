@@ -1,30 +1,19 @@
-import {
-  mount
-} from '@vue/test-utils';
+import { mount } from '@vue/test-utils'
 
-import SuccessModal from '@/components/Modals/success-message';
+import ModalSuccess from '@/components/core/modals/ModalSuccess'
 
-describe('Success message', () => {
-  let wrapper;
+describe('success message', () => {
+  let wrapper
 
   beforeEach(() => {
-    wrapper = mount(SuccessModal);
-  });
+    wrapper = mount(ModalSuccess)
+  })
 
-  test('is Vue\'s instance', () => {
-    expect(wrapper.exists()).toBeTruthy();
-  });
+  it("is Vue's instance", () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
 
-  test('renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot();
-  });
-
-  test('should call close emit twice', () => {
-    expect(wrapper.emitted().close).toBeFalsy();
-    wrapper.vm.close();
-    expect(wrapper.emitted().close.length).toBe(1);
-    wrapper.vm.$emit('close');
-    expect(wrapper.emitted().close).toBeTruthy();
-    expect(wrapper.emitted().close.length).toBe(2);
-  });
-});
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
+})

@@ -5,19 +5,24 @@
         <h3 class="open-source__main-title">Our code - available in open source - is used by many other companies.</h3>
         <div class="open-source__github-wrap">
           <p class="open-source__description">
-            70+ of <span>Mad Devs'</span> pet projects have been shared with <br class="open-source__descktop-break"> the community via <span class="open-source__mobile-icon-wrapper">GitHub. <a class="open-source__github-icon-mobile" href="https://github.com/maddevsio" target="_blank"></a></span>
+            70+ of <span>Mad Devs'</span> pet projects have been shared with <br class="open-source__descktop-break" />
+            the community via
+            <span class="open-source__mobile-icon-wrapper"
+              >GitHub.
+              <a class="open-source__github-icon-mobile" href="https://github.com/maddevsio" target="_blank"></a
+            ></span>
           </p>
           <a class="open-source__github-icon" href="https://github.com/maddevsio" target="_blank"></a>
         </div>
       </div>
       <div class="open-source__projects row">
-        <div class="col-xl-4 col-lg-4 col-md-6" v-for="(openSource, i) in openSources" :key="i">
-          <div class="open-source__project" :class="`open-source__project-${openSource.projectName}`">
-            <a class="open-source__project-link" :href="openSource.link" target="_blank">
+        <div v-for="project in projects" :key="project.name" class="col-xl-4 col-lg-4 col-md-6">
+          <div :class="`open-source__project-${project.name}`" class="open-source__project">
+            <a :href="project.link" class="open-source__project-link" target="_blank">
               <div class="open-source__content-wrap">
-                <div :class="`open-source__icon open-source__${openSource.projectName}`"></div>
+                <div :class="`open-source__icon open-source__${project.name}`"></div>
               </div>
-              <p class="open-source__paragraph" v-html="openSource.description">{{ openSource.description }}</p>
+              <p class="open-source__paragraph" v-html="project.description">{{ project.description }}</p>
             </a>
           </div>
         </div>
@@ -28,45 +33,17 @@
 </template>
 
 <script>
+import { projects } from '@/data/openSource'
+
 export default {
   name: 'OpenSource',
+
   data() {
     return {
-      openSources: [
-        {
-          projectName: 'mad-location',
-          link: 'https://github.com/maddevsio/mad-location-manager',
-          description: 'А library for GPS and accelerometer data "fusion" with a Kalman filter.'
-        },
-        {
-          projectName: 'comedian',
-          link: 'https://github.com/maddevsio/comedian',
-          description: 'A <span>team-management</span> system leveraging Slack and Telegram bot functionalities to enable remote standups and track daily performance.'
-        },
-        {
-          projectName: 'ariadna',
-          link: 'https://github.com/maddevsio/ariadna',
-          description: 'An <span>open-source</span> geocoder, built on top of ElasticSearch, for fast geocoding and better search for CIS countries.'
-        },
-        {
-          projectName: 'id-match',
-          link: 'https://github.com/maddevsio/idmatch',
-          description: 'An open source tool enabling ID cards recognition to ensure security on your premises.'
-        },
-        {
-          projectName: 'your-cast',
-          link: 'https://github.com/maddevsio/yourcast.tv',
-          description: 'A solution to create lists of YouTube videos and stream them online in just a few seconds.'
-        },
-        {
-          projectName: 'heimdall',
-          link: 'https://github.com/maddevsio/heimdall',
-          description: 'A <span>security-monitoring</span> solution for Ethereum smart contracts.'
-        }
-      ]
-    };
-  }
-};
+      projects,
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -174,7 +151,7 @@ export default {
     background-color: $bgcolor--white-darken;
     transition: 0.4s;
 
-    &:hover  {
+    &:hover {
       .open-source__paragraph {
         color: $text-color--white-darken;
       }
@@ -229,7 +206,7 @@ export default {
     &:hover {
       background-color: $project-hover-bg-color--pink;
 
-      .open-source__your-cast  {
+      .open-source__your-cast {
         @include your-cast-white;
       }
     }

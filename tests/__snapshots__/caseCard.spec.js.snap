@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card component renders correctly 1`] = `
+exports[`card component renders correctly 1`] = `
 <div
   class="case_card"
   style="padding: 16px;"

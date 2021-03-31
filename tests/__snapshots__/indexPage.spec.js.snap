@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Index page renders correctly 1`] = `
+exports[`index page renders correctly 1`] = `
 <main
   class="main"
 >
@@ -52,39 +52,46 @@ exports[`Index page renders correctly 1`] = `
       <nav
         class="navigation-list navigation-list-"
       >
-        <nuxt-link-stub
+        <nuxtlink-stub
           class="navigation-item"
           to="services/#remote-tech-staff"
         >
-          Remote Tech Staff
-        </nuxt-link-stub>
-         
-        <nuxt-link-stub
+          
+      Remote Tech Staff
+    
+        </nuxtlink-stub>
+        <nuxtlink-stub
           class="navigation-item"
           to="services/#software-development"
         >
-          Software Development
-        </nuxt-link-stub>
-         
-        <nuxt-link-stub
+          
+      Software Development
+    
+        </nuxtlink-stub>
+        <nuxtlink-stub
           class="navigation-item"
           to="services/#infrastructure-optimisation"
         >
-          Infrastructure Optimization
-        </nuxt-link-stub>
-         
-        <nuxt-link-stub
+          
+      Infrastructure Optimization
+    
+        </nuxtlink-stub>
+        <nuxtlink-stub
           class="navigation-item"
           to="services/#it-consulting"
         >
-          IT Consulting
-        </nuxt-link-stub>
+          
+      IT Consulting
+    
+        </nuxtlink-stub>
+         
       </nav>
     </div>
   </div>
    
   <section
     class="weCreateItProject"
+    data-testid="test-weCreateItProject"
     id="weCreateItProject"
   >
     <div
@@ -99,7 +106,8 @@ exports[`Index page renders correctly 1`] = `
           
         We create 
           <br />
-           IT projects for:
+          
+        IT projects for:
       
         </h2>
          
@@ -112,69 +120,88 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="weCreateItProject__paragraph"
             >
-              Content Streaming 
+              
+            Content Streaming
+            
               <br />
-               Transportation
+              
+            Transportation
+          
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
             <p
               class="weCreateItProject__paragraph"
             >
-              HealthTech 
+              
+            HealthTech
+            
               <br />
-               IoTs
+              
+            IoTs
+          
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
             <p
               class="weCreateItProject__paragraph"
             >
-              E-Commerce 
+              
+            E-Commerce
+            
               <br />
-               AdTech
+              
+            AdTech
+          
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
             <p
               class="weCreateItProject__paragraph"
             >
-              E-Learning 
+              
+            E-Learning
+            
               <br />
-               FinTech
+              
+            FinTech
+          
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
             <p
               class="weCreateItProject__paragraph"
             >
-              Serverless 
+              
+            Serverless
+            
               <br />
-               BYOD
+              
+            BYOD
+          
             </p>
           </div>
-           
           <div
             class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
           >
             <p
               class="weCreateItProject__paragraph"
             >
-              Blockchain 
+              
+            Blockchain
+            
               <br />
-               FoodTech
+              
+            FoodTech
+          
             </p>
           </div>
         </div>
@@ -442,8 +469,7 @@ exports[`Index page renders correctly 1`] = `
         <h2
           class="technologies-and_tools__main-title"
         >
-          
-        Technologies 
+          Technologies 
           <span>
             &
           </span>
@@ -458,13 +484,15 @@ exports[`Index page renders correctly 1`] = `
         >
           <div
             class="tech_legend__item legend-devops"
+            data-testid="test-tech_legend__item"
           >
             
-          DevOps
+          devOps
         
           </div>
           <div
             class="tech_legend__item legend-qa"
+            data-testid="test-tech_legend__item"
           >
             
           QA
@@ -472,6 +500,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
           <div
             class="tech_legend__item legend-backend"
+            data-testid="test-tech_legend__item"
           >
             
           Backend
@@ -479,6 +508,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
           <div
             class="tech_legend__item legend-frontend"
+            data-testid="test-tech_legend__item"
           >
             
           Frontend
@@ -486,6 +516,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
           <div
             class="tech_legend__item legend-mobile"
+            data-testid="test-tech_legend__item"
           >
             
           Mobile
@@ -493,6 +524,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
           <div
             class="tech_legend__item legend-pm"
+            data-testid="test-tech_legend__item"
           >
             
           PM
@@ -500,6 +532,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
           <div
             class="tech_legend__item legend-infrastructure"
+            data-testid="test-tech_legend__item"
           >
             
           Infrastructure
@@ -507,6 +540,7 @@ exports[`Index page renders correctly 1`] = `
           </div>
           <div
             class="tech_legend__item legend-uiux"
+            data-testid="test-tech_legend__item"
           >
             
           UI/UX
@@ -1611,12 +1645,13 @@ exports[`Index page renders correctly 1`] = `
     >
       <div>
         <h2
-          class="case-studies__main-title case-studies__main-title-"
+          class="case-studies__main-title case-studies__main-title-index"
         >
           
         Case 
           <!---->
-           Studies
+          
+        Studies
       
         </h2>
          
@@ -1677,8 +1712,8 @@ exports[`Index page renders correctly 1`] = `
                   class="contribution-widget__content contribution-widget__content_nambafood"
                 >
                   
-    contribution: Backend, Infrastructure, Frontend
-  
+          contribution: Backend, Infrastructure, Frontend
+        
                 </span>
               </div>
             </div>
@@ -1756,8 +1791,8 @@ exports[`Index page renders correctly 1`] = `
                   class="contribution-widget__content contribution-widget__content_sjmc"
                 >
                   
-    contribution: Backend, Infrastructure, Frontend
-  
+          contribution: Backend, Infrastructure, Frontend
+        
                 </span>
               </div>
             </div>
@@ -1835,8 +1870,8 @@ exports[`Index page renders correctly 1`] = `
                   class="contribution-widget__content contribution-widget__content_guardrails"
                 >
                   
-    contribution: Backend, Infrastructure, Frontend
-  
+          contribution: Backend, Infrastructure, Frontend
+        
                 </span>
               </div>
             </div>
@@ -1914,8 +1949,8 @@ exports[`Index page renders correctly 1`] = `
                   class="contribution-widget__content contribution-widget__content_godee"
                 >
                   
-    contribution: Backend, Infrastructure, Mobile Apps
-  
+          contribution: Backend, Infrastructure, Mobile Apps
+        
                 </span>
               </div>
             </div>
@@ -1998,7 +2033,6 @@ exports[`Index page renders correctly 1`] = `
             </p>
           </div>
         </div>
-         
         <div
           class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_analysis"
         >
@@ -2035,7 +2069,6 @@ exports[`Index page renders correctly 1`] = `
             </p>
           </div>
         </div>
-         
         <div
           class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_proposal"
         >
@@ -2072,7 +2105,6 @@ exports[`Index page renders correctly 1`] = `
             </p>
           </div>
         </div>
-         
         <div
           class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_team"
         >
@@ -2109,7 +2141,6 @@ exports[`Index page renders correctly 1`] = `
             </p>
           </div>
         </div>
-         
         <div
           class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_start"
         >
@@ -2123,6 +2154,8 @@ exports[`Index page renders correctly 1`] = `
               height="73"
               width="52"
             />
+             
+            <!---->
           </div>
            
           <div
@@ -2137,7 +2170,7 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="quickProjectStart__description"
             >
-              You will get to know the team and we’ll start the project work.
+              You will get to know the team and we’ll start the project work.Submit your project request or project idea to us.
             </p>
           </div>
         </div>
@@ -2170,9 +2203,7 @@ exports[`Index page renders correctly 1`] = `
       <h2
         class="customer-testimonials__title"
       >
-        
-      Customer Testimonials
-    
+        Customer Testimonials
       </h2>
        
       <div
@@ -2385,7 +2416,8 @@ exports[`Index page renders correctly 1`] = `
         </span>
          
         <br />
-         customer   
+        
+      customer   
         <span
           class="customer-rates__title-icon"
         >
@@ -2411,15 +2443,18 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="customer-rates__description customer-rates__description-top-row"
             >
-              recommend us 
+              
+            recommend us
+            
               <br
                 class="customer-rates__line-break"
               />
-               to others.
+              
+            to others.
+          
             </p>
           </div>
         </div>
-         
         <div
           class="col-xl-4 col-md-4"
         >
@@ -2435,15 +2470,18 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="customer-rates__description customer-rates__description-top-row"
             >
-              stay with us for 
+              
+            stay with us for
+            
               <br
                 class="customer-rates__line-break"
               />
-               more than 2 years.
+              
+            more than 2 years.
+          
             </p>
           </div>
         </div>
-         
         <div
           class="col-xl-4 col-md-4"
         >
@@ -2459,11 +2497,15 @@ exports[`Index page renders correctly 1`] = `
             <p
               class="customer-rates__description customer-rates__description-top-row"
             >
-              are satisfied with 
+              
+            are satisfied with
+            
               <br
                 class="customer-rates__line-break"
               />
-               our pricing.
+              
+            our pricing.
+          
             </p>
           </div>
         </div>
@@ -2496,7 +2538,9 @@ exports[`Index page renders correctly 1`] = `
               <p
                 class="customer-rates__description customer-rates__description-bottom-row"
               >
-                US dollars raised by 5 customer startups in 2019.
+                
+              US dollars raised by 5 customer startups in 2019.
+            
               </p>
             </div>
           </div>
@@ -2515,7 +2559,9 @@ exports[`Index page renders correctly 1`] = `
               <p
                 class="customer-rates__description customer-rates__description-bottom-row"
               >
-                of customers are now paying 50% less for IT infrastructure.
+                
+              of customers are now paying 50% less for IT infrastructure.
+            
               </p>
             </div>
           </div>
@@ -2534,7 +2580,9 @@ exports[`Index page renders correctly 1`] = `
               <p
                 class="customer-rates__description customer-rates__description-bottom-row"
               >
-                tech bloggers and conference speakers in our team.
+                
+              tech bloggers and conference speakers in our team.
+            
               </p>
             </div>
           </div>
@@ -2553,7 +2601,9 @@ exports[`Index page renders correctly 1`] = `
               <p
                 class="customer-rates__description customer-rates__description-bottom-row"
               >
-                projects delivered to customers by our team.
+                
+              projects delivered to customers by our team.
+            
               </p>
             </div>
           </div>
@@ -2572,7 +2622,9 @@ exports[`Index page renders correctly 1`] = `
               <p
                 class="customer-rates__description customer-rates__description-bottom-row"
               >
-                staff members work for Mad Devs.
+                
+              staff members work for Mad Devs.
+            
               </p>
             </div>
           </div>
@@ -2591,7 +2643,9 @@ exports[`Index page renders correctly 1`] = `
               <p
                 class="customer-rates__description customer-rates__description-bottom-row"
               >
-                open-source projects on GitHub.
+                
+              open-source projects on GitHub.
+            
               </p>
             </div>
           </div>
@@ -2631,6 +2685,7 @@ exports[`Index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
@@ -2685,6 +2740,7 @@ exports[`Index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
@@ -2739,6 +2795,7 @@ exports[`Index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
@@ -2793,6 +2850,7 @@ exports[`Index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
@@ -2847,6 +2905,7 @@ exports[`Index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
@@ -2901,6 +2960,7 @@ exports[`Index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
@@ -2955,6 +3015,7 @@ exports[`Index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
@@ -3009,6 +3070,7 @@ exports[`Index page renders correctly 1`] = `
               class="multi-image img_lazy"
               data-src="[object Object]"
               data-srcset="[object Object] 2x"
+              data-testid="test-multi-image"
               height="401"
               width="295"
             />
