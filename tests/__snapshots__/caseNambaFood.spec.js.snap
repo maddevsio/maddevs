@@ -113,7 +113,9 @@ exports[`namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 case_text-align-center m-24_bottom media-m-12_bottom"
       >
-        Multi-directional business model
+        
+    Multi-directional business model
+  
       </h2>
        
       <p
@@ -307,8 +309,8 @@ exports[`namba food renders correctly 1`] = `
           class="case_title_h4 m-8_bottom"
         >
           
-          Namba Food API
-        
+      Namba Food API
+    
         </h3>
          
         <p
@@ -751,7 +753,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_list-numbered_item"
         >
           
-          Users go to the website and choose cafes and shops (+ orders can be placed via phone).
+      Users go to the website and choose cafes and shops (+ orders can be placed via phone).
     
         </li>
          
@@ -765,7 +767,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_list-numbered_item"
         >
           
-          Users receive a call from an operator to confirm the order or can tick the "no calls" checkbox.
+      Users receive a call from an operator to confirm the order or can tick the "no calls" checkbox.
     
         </li>
          
@@ -784,8 +786,8 @@ exports[`namba food renders correctly 1`] = `
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
         
-        Customers track order statuses
-      
+    Customers track order statuses
+  
       </h2>
        
       <p
@@ -883,7 +885,9 @@ exports[`namba food renders correctly 1`] = `
         <h2
           class="case_title_h2"
         >
-          Admin panel automates Namba Food’s scalability
+          
+      Admin panel automates Namba Food’s scalability
+    
         </h2>
          
         <blockquote
@@ -954,8 +958,8 @@ exports[`namba food renders correctly 1`] = `
         class="case_title_h3 m-12_bottom"
       >
         
-        Flexible catalogue management
-      
+    Flexible catalogue management
+  
       </h3>
        
       <p
@@ -973,8 +977,8 @@ exports[`namba food renders correctly 1`] = `
         class="case_title_h3 m-24_bottom"
       >
         
-        Control panel functionality
-      
+    Control panel functionality
+  
       </h3>
        
       <div
@@ -1301,7 +1305,9 @@ exports[`namba food renders correctly 1`] = `
         <h3
           class="case_title_h3 m-12_bottom"
         >
-          Intelligent auto-assignment system for courier management
+          
+      Intelligent auto-assignment system for courier management
+    
         </h3>
          
         <p
@@ -1325,14 +1331,16 @@ exports[`namba food renders correctly 1`] = `
           <li
             class="list-item_dot"
           >
-            Courier's number of orders delivered during the current shift and in the last three hours.
+            
+        Courier's number of orders delivered during the current shift and in the last three hours.
       
           </li>
            
           <li
             class="list-item_dot"
           >
-            End-user location in relation to couriers, who are already carrying the order, and in relation to the next
+            
+        End-user location in relation to couriers, who are already carrying the order, and in relation to the next
         order’s pick-up point with the current order.
       
           </li>
@@ -1341,7 +1349,9 @@ exports[`namba food renders correctly 1`] = `
         <h3
           class="case_title_h3 m-12_bottom"
         >
-          Auto-assignment system under the hood
+          
+      Auto-assignment system under the hood
+    
         </h3>
          
         <p
@@ -1378,7 +1388,9 @@ exports[`namba food renders correctly 1`] = `
         <h3
           class="case_title_h3 m-12_bottom"
         >
-          Geocoder Ariadna on ElasticSearch with OpenStreetMap
+          
+      Geocoder Ariadna on ElasticSearch with OpenStreetMap
+    
         </h3>
          
         <p
@@ -1432,7 +1444,9 @@ exports[`namba food renders correctly 1`] = `
         <h3
           class="case_title_h3 m-96_top m-12_bottom media-m-48_top"
         >
-          Grafana — Docker containers’ monitoring service
+          
+      Grafana — Docker containers’ monitoring service
+    
         </h3>
          
         <p
@@ -1820,7 +1834,9 @@ exports[`namba food renders correctly 1`] = `
         <h3
           class="case_title_h3 m-96_top m-12_bottom media-m-48_top"
         >
-          Pipelines
+          
+      Pipelines
+    
         </h3>
          
         <p
@@ -1893,8 +1909,8 @@ exports[`namba food renders correctly 1`] = `
         class="case_title_h3 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
       >
         
-        Meet the team
-      
+    Meet the team
+  
       </h3>
        
       <p
@@ -2432,8 +2448,8 @@ exports[`namba food renders correctly 1`] = `
         class="case_title_h4 m-72_top m-12_bottom media-m-41_top"
       >
         
-        Transparent communication
-      
+    Transparent communication
+  
       </h4>
        
       <p
@@ -2471,8 +2487,8 @@ exports[`namba food renders correctly 1`] = `
           to="/services#software-development"
         >
           
-          build a product
-        
+      build a product
+    
         </nuxt-link-stub>
          that truly solves
     this customer’s problems. The year-over-year growth rate is hugely impressive.
