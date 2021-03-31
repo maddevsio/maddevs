@@ -1,6 +1,7 @@
 .case {
-  &_header {
+  &_header::before {
     background: $bgcolor--kaf-banner;
+    z-index: -1 !important;
   }
 
   &_kaf-logo {
