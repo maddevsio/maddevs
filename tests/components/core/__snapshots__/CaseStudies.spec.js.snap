@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-<<<<<<< HEAD:tests/components/core/__snapshots__/CaseStudies.spec.js.snap
 exports[`CaseStudies should render correctly 1`] = `
-=======
-exports[`caseStudies component should render correctly case studies 1`] = `
->>>>>>> 79750acd1b2a361386a15cae717a4311d869dc02:tests/components/About/__snapshots__/CaseStudies.spec.js.snap
 <div>
   <section
     class="case-studies"
@@ -353,11 +349,7 @@ exports[`caseStudies component should render correctly case studies 1`] = `
 </div>
 `;
 
-<<<<<<< HEAD:tests/components/core/__snapshots__/CaseStudies.spec.js.snap
 exports[`CaseStudies should render correctly with type=projects 1`] = `
-=======
-exports[`caseStudies component should render correctly with slot 1`] = `
->>>>>>> 79750acd1b2a361386a15cae717a4311d869dc02:tests/components/About/__snapshots__/CaseStudies.spec.js.snap
 <div>
   <section
     class="case-studies case-studies--projects"
