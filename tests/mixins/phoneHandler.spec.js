@@ -1,7 +1,7 @@
 import { createLocalVue, shallowMount } from '@vue/test-utils'
-import contactMeModal from '@/components/Modals/contact-me-modal'
 import Vuelidate from 'vuelidate'
-import { phoneHandler } from '../../client/mixins/phoneHandler'
+import ModalContactMe from '@/components/core/modals/ModalContactMe'
+import phoneHandlerMixin from '@/mixins/phoneHandlerMixin'
 
 const localVue = createLocalVue()
 
@@ -14,9 +14,9 @@ describe('Phone Handler Mixin', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = shallowMount(contactMeModal, {
+    wrapper = shallowMount(ModalContactMe, {
       localVue,
-      mixins: [phoneHandler],
+      mixins: [phoneHandlerMixin],
       mocks: {
         $nuxt: {
           $emit: jest.fn(),
