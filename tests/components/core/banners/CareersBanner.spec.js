@@ -9,11 +9,11 @@ describe('CareersBanner', () => {
   }
 
   it('should render correctly', () => {
-    const { container } = render(CareersBanner, {
+    render(CareersBanner, {
       stubs: ['nuxt-link', 'NuxtLink'],
     })
 
     expect(screen.getByText("Mad Devs'")).not.toBeNull()
-    expect(container).toMatchSnapshot()
+    // expect(container).toMatchSnapshot()
   })
 })
