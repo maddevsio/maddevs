@@ -201,7 +201,7 @@
       </section>
       <section class="container_regular">
         <h2 class="case_title_h2 m-48_bottom media-m-38_bottom">Meet the team</h2>
-        <!-- <ListTeam class="m-72_bottom media-m-48_bottom">
+        <ListTeam class="m-72_bottom media-m-48_bottom">
           <ListTeamItem
             v-for="(teamMember, i) in team"
             :key="i"
@@ -213,18 +213,21 @@
             :alt="teamMember.name"
             picture-folder="common"
           />
-        </ListTeam> -->
-        <!-- <TextQuoteAuthor
+        </ListTeam>
+        <TextQuoteAuthor
           class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
           author-name="Andrew Minkin"
           author-position="CTO, Mad Devs"
           file-name="andrew-minkin"
           file-extension="png"
-          alt=""
-          picture-folder="nambafood"
+          alt="Andrew Minkin"
+          picture-folder="common"
         >
-          While working on this project, we acquired extensive hands-on experience in building modern livestreaming and VoD services. We were amazed by the abundance of open-source tools available for building great OTT platforms and online movies. Yourcast.TV was the beginning; however, we now see that this internal project could become a cornerstone for many enterprise-level solutions.
-        </TextQuoteAuthor> -->
+          While working on this project, we acquired extensive hands-on experience in building modern livestreaming and
+          VoD services. We were amazed by the abundance of open-source tools available for building great OTT platforms
+          and online movies. Yourcast.TV was the beginning; however, we now see that this internal project could become
+          a cornerstone for many enterprise-level solutions.
+        </TextQuoteAuthor>
       </section>
     </section>
     <Footer link="/case-studies/sir-john-monash-centre/" class-name="kaf-case">
@@ -251,6 +254,9 @@ import CardSupportedGadgets from '@/components/Cases/cards/kaf/CardSupportedGadg
 import CardProjectMilestone from '@/components/Cases/cards/kaf/CardProjectMilestone'
 import ListTechnologies from '@/components/Cases/ListTechnologies'
 import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
+import ListTeam from '@/components/Cases/ListTeam'
+import ListTeamItem from '@/components/Cases/ListTeamItem'
+import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
 
 export default {
   name: 'KafCase',
@@ -268,6 +274,9 @@ export default {
     CardProjectMilestone,
     ListTechnologies,
     ListTechnologiesItem,
+    ListTeam,
+    ListTeamItem,
+    TextQuoteAuthor,
   },
 
   data() {
@@ -372,6 +381,44 @@ export default {
         {
           techName: 'Nginx',
           className: 'devops-nginx-txt',
+        },
+      ],
+
+      team: [
+        {
+          name: 'Rinat Shcherba',
+          position: 'Backend Developer',
+          fileName: 'andrew-minkin',
+          fileExtension: 'png',
+          alt: 'Rinat Shcherba',
+        },
+        {
+          name: 'Daniyar Chambylov',
+          position: 'Backend Developer',
+          fileName: 'andrew-minkin',
+          fileExtension: 'png',
+          alt: 'Daniyar Chambylov',
+        },
+        {
+          name: 'Vladimir Shebarshov',
+          position: 'Frontend Developer',
+          fileName: 'andrew-minkin',
+          fileExtension: 'png',
+          alt: 'Vladimir Shebarshov',
+        },
+        {
+          name: 'Andrew Minkin',
+          position: 'Tech Lead',
+          fileName: 'andrew-minkin',
+          fileExtension: 'png',
+          alt: 'Andrew Minkin',
+        },
+        {
+          name: 'Erik Sultanaliev',
+          position: 'Backend Developer',
+          fileName: 'erik-sultanaliev',
+          fileExtension: 'png',
+          alt: 'Erik Sultanaliev',
         },
       ],
     }
