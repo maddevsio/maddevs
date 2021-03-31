@@ -65,6 +65,8 @@ export default {
         uid: post.uid,
         document: post.data,
         slices: post.data.body,
+        title: $prismic.asText(post.data.meta_title) || post.data.title[0].text,
+        description: $prismic.asText(post.data.meta_description),
         formattedDate: Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(
           new Date(post.data.date),
         ),
@@ -95,6 +97,7 @@ export default {
       meta: [
         { name: 'description', content: this.description },
         // Facebook / Open Graph
+        { property: 'og:site_name', content: 'Mad Devs: Software & Mobile App Development Company' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: this.openGraphUrl },
         {
@@ -109,7 +112,7 @@ export default {
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         // Twitter / Twitter Card
-        { property: 'twitter:card', content: 'summary' },
+        { property: 'twitter:card', content: 'summary_large_image' },
         {
           property: 'twitter:text:title',
           content: this.title,
@@ -137,11 +140,6 @@ export default {
     postData() {
       return { ...this.$data }
     },
-  },
-
-  mounted() {
-    this.title = this.$prismic.asText(this.document.meta_title) || this.document.title[0].text
-    this.description = this.$prismic.asText(this.document.meta_description)
   },
 }
 </script>
