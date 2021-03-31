@@ -1,12 +1,20 @@
 <template>
-  <div :class="`card-content_${className}`" class="card-content">
+  <div
+    :class="`card-content_${className}`"
+    class="card-content"
+  >
     <div class="card-content_text-wrapper">
-      <h4 class="case_title_h4 card-content_title">{{ title }}</h4>
+      <h4 class="case_title_h4 card-content_title">
+        {{ title }}
+      </h4>
       <TextParagraph class="card-content_description">
         {{ description }}
       </TextParagraph>
     </div>
-    <div :class="`card-content_image-wrapper-${className}`" class="card-content_image-wrapper">
+    <div
+      :class="`card-content_image-wrapper-${className}`"
+      class="card-content_image-wrapper"
+    >
       <Picture
         :folder="pictureFolder"
         :file="fileName"

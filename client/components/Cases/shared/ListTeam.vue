@@ -1,6 +1,6 @@
 <template>
   <ul class="case_list-team">
-    <slot></slot>
+    <slot />
   </ul>
 </template>
 

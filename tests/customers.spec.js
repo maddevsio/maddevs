@@ -8,7 +8,7 @@ describe('customers component', () => {
     wrapper = mount(Customers)
   })
 
-  it("is Vue's instance", () => {
+  it('is Vue\'s instance', () => {
     expect(wrapper.exists()).toBeTruthy()
   })
 

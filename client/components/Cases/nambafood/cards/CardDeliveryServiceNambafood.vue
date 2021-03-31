@@ -1,6 +1,8 @@
 <template>
   <div class="card-content">
-    <h3 class="card-content_title case_title_h5">Delivery service Nambafood</h3>
+    <h3 class="card-content_title case_title_h5">
+      Delivery service Nambafood
+    </h3>
     <TextParagraph class="card-content_paragraph m-24_bottom">
       For 5 years Namba Food actively evolves and monthly improves opportunities of software.
     </TextParagraph>
@@ -9,11 +11,13 @@
         <TextParagraph class="card-content_paragraph card-content_paragraph--bold">
           Yearly increase in orders:
         </TextParagraph>
-        <div class="card-content_chart card-content_yearly-increase"></div>
+        <div class="card-content_chart card-content_yearly-increase" />
       </div>
       <div class="card-content_row">
-        <TextParagraph class="card-content_paragraph card-content_paragraph--bold"> Increase in sales: </TextParagraph>
-        <div class="card-content_chart card-content_increase-in-sales"></div>
+        <TextParagraph class="card-content_paragraph card-content_paragraph--bold">
+          Increase in sales:
+        </TextParagraph>
+        <div class="card-content_chart card-content_increase-in-sales" />
       </div>
     </div>
   </div>

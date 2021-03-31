@@ -1,6 +1,8 @@
 <template>
   <div class="card-content">
-    <h3 class="card-content_title case_title_h5">Restaurant Talisman</h3>
+    <h3 class="card-content_title case_title_h5">
+      Restaurant Talisman
+    </h3>
     <TextParagraph class="card-content_paragraph">
       Restaurant Talisman successfully develops in market of Bishkek city. In 2018, directorship of the restaurant
       decided to actively promote in delivery.
@@ -10,24 +12,32 @@
     </TextParagraph>
     <div class="card-content_statistics">
       <div class="card-content_statistics-item">
-        <TextParagraph class="card-content_paragraph card-content_statistics-heading"> IT expenses </TextParagraph>
-        <TextParagraph class="card-content_statistics-number"> 0<span>$</span> </TextParagraph>
+        <TextParagraph class="card-content_paragraph card-content_statistics-heading">
+          IT expenses
+        </TextParagraph>
+        <TextParagraph class="card-content_statistics-number">
+          0<span>$</span>
+        </TextParagraph>
       </div>
       <div class="card-content_statistics-item">
         <TextParagraph
           class="card-content_paragraph card-content_statistics-heading card-content_statistics-heading-increase-sales"
         >
-          Increase in <br />
+          Increase in <br>
           sales
         </TextParagraph>
-        <TextParagraph class="card-content_statistics-number"> +236<span>%</span> </TextParagraph>
+        <TextParagraph class="card-content_statistics-number">
+          +236<span>%</span>
+        </TextParagraph>
       </div>
       <div class="card-content_statistics-item">
         <TextParagraph class="card-content_paragraph card-content_statistics-heading">
-          Increase in <br />
+          Increase in <br>
           amount of orders
         </TextParagraph>
-        <TextParagraph class="card-content_statistics-number"> +142<span>%</span> </TextParagraph>
+        <TextParagraph class="card-content_statistics-number">
+          +142<span>%</span>
+        </TextParagraph>
       </div>
     </div>
   </div>

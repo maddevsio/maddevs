@@ -1,6 +1,9 @@
 <template>
-  <p :style="textColor" class="case_paragraph">
-    <slot></slot>
+  <p
+    :style="textColor"
+    class="case_paragraph"
+  >
+    <slot />
   </p>
 </template>
 

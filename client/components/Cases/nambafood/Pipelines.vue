@@ -1,7 +1,9 @@
 <template>
   <section>
     <section class="container_regular">
-      <h3 class="case_title_h3 m-96_top m-12_bottom media-m-48_top">Pipelines</h3>
+      <h3 class="case_title_h3 m-96_top m-12_bottom media-m-48_top">
+        Pipelines
+      </h3>
       <TextParagraph class="m-24_bottom">
         At Mad Devs, we widely use pipelines. The deployment stage has been automated for the staging server, and
         deployment on the production server is done manually. The pipeline for the Namba Food system is displayed below.

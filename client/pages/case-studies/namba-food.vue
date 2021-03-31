@@ -1,18 +1,35 @@
 <template>
   <main class="main case">
-    <CaseHeader :logo="logo" video-name="main.ef19480.mp4">
-      <h1 slot="title" class="case_header-title">Namba Food</h1>
-      <p slot="description" class="case_header-description">
-        Mad Devs created the Namba Food delivery service from scratch. The solution <br />
+    <CaseHeader
+      :logo="logo"
+      video-name="main.ef19480.mp4"
+    >
+      <h1
+        slot="title"
+        class="case_header-title"
+      >
+        Namba Food
+      </h1>
+      <p
+        slot="description"
+        class="case_header-description"
+      >
+        Mad Devs created the Namba Food delivery service from scratch. The solution <br>
         orchestrates feature-rich apps for couriers, end-users, and business owners.
       </p>
     </CaseHeader>
     <Main />
-    <Footer link="/case-studies/sir-john-monash-centre/" class-name="namba-food-case">
-      <div slot="icon" class="case_logotype"></div>
-      The maintenance <br class="case_mobile-break" />
-      of memory: <br />
-      Sir John Monash <br class="case_mobile-break" />
+    <Footer
+      link="/case-studies/sir-john-monash-centre/"
+      class-name="namba-food-case"
+    >
+      <div
+        slot="icon"
+        class="case_logotype"
+      />
+      The maintenance <br class="case_mobile-break">
+      of memory: <br>
+      Sir John Monash <br class="case_mobile-break">
       Centre
     </Footer>
   </main>

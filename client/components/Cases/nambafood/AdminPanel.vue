@@ -1,7 +1,9 @@
 <template>
   <section>
     <section class="container_regular">
-      <h2 class="case_title_h2">Admin panel automates Namba Food’s scalability</h2>
+      <h2 class="case_title_h2">
+        Admin panel automates Namba Food’s scalability
+      </h2>
       <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
         The built-in reporting functionality enables managers to have full control over the entire list of business
         partners.

@@ -8,7 +8,7 @@
       ]"
       class="image"
       type="image/webp"
-    />
+    >
     <img
       :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
       :src="[require(`../../../assets/img/Cases/${folder}/${extension}/${file}.${extension}`)]"
@@ -19,10 +19,9 @@
       :height="height"
       class="image"
       @load="onImageLoad($event)"
-    />
+    >
   </picture>
 </template>
-
 
 <script>
 export default {

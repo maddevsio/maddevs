@@ -8,9 +8,13 @@
       name="file"
       :accept="acceptedExtensions"
       @change="handleFileSelect"
-    />
+    >
     <span class="none-decorated-dash">–</span>
-    <label :class="`file-input__cv--${selectedFile ? 'selected' : 'attachable'}`" class="file-input__cv" for="file">
+    <label
+      :class="`file-input__cv--${selectedFile ? 'selected' : 'attachable'}`"
+      class="file-input__cv"
+      for="file"
+    >
       {{ selectedFilename }}
     </label>
   </div>

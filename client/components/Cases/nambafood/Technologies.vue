@@ -8,7 +8,11 @@
       Technologies used for the Namba Food project
     </h3>
     <ListTechnologies>
-      <ListTechnologiesItem v-for="technology in technologies" :key="technology.name" v-bind="technology" />
+      <ListTechnologiesItem
+        v-for="technology in technologies"
+        :key="technology.name"
+        v-bind="technology"
+      />
     </ListTechnologies>
   </section>
 </template>

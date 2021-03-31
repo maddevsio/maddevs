@@ -6,14 +6,19 @@
     <TextParagraph>
       Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision
       and understanding of its target audience, we were able to
-      <nuxt-link :to="`/services#software-development`" class="case_link">build a product</nuxt-link> that truly solves
+      <nuxt-link
+        :to="`/services#software-development`"
+        class="case_link"
+      >
+        build a product
+      </nuxt-link> that truly solves
       this customer’s problems. The year-over-year growth rate is hugely impressive.
     </TextParagraph>
     <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
       As the number of businesses using Namba Food continues to increase,
-      <span class="case_blockquote-box_text-modificator"
-        >the service's yearly growth rate is about 50% for both revenue and deliveries made.</span
-      >
+      <span
+        class="case_blockquote-box_text-modificator"
+      >the service's yearly growth rate is about 50% for both revenue and deliveries made.</span>
     </TextQuoteBox>
     <TextParagraph class="m-48_bottom media-m-24_bottom">
       In 2017, Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.

@@ -32,13 +32,17 @@ exports[`namba food renders correctly 1`] = `
         <div
           class="case_case-study-item"
         >
-          Case Study
+          
+        Case Study
+      
         </div>
          
         <h1
           class="case_header-title"
         >
-          Namba Food
+          
+      Namba Food
+    
         </h1>
          
         <p
@@ -133,7 +137,9 @@ exports[`namba food renders correctly 1`] = `
               class="case_title_h4 m-8_bottom"
               style="color: rgb(245, 247, 249);"
             >
-              Mini white label
+              
+      Mini white label
+    
             </h3>
              
             <p
@@ -150,7 +156,9 @@ exports[`namba food renders correctly 1`] = `
               class="case_title_h4 m-8_bottom"
               style="color: rgb(245, 247, 249);"
             >
-              Full white label
+              
+      Full white label
+    
             </h3>
              
             <p
@@ -222,7 +230,9 @@ exports[`namba food renders correctly 1`] = `
             <h3
               class="m-8_bottom case_title_h4"
             >
-              Personal courier
+              
+        Personal courier
+      
             </h3>
              
             <p
@@ -246,7 +256,9 @@ exports[`namba food renders correctly 1`] = `
               class="m-8_bottom case_title_h4"
               style="color: rgb(255, 255, 255);"
             >
-              Outsource partners
+              
+        Outsource partners
+      
             </h3>
              
             <p
@@ -270,7 +282,9 @@ exports[`namba food renders correctly 1`] = `
               class="m-8_bottom case_title_h4"
               style="color: rgb(255, 255, 255);"
             >
-              Delivery of food and goods
+              
+        Delivery of food and goods
+      
             </h3>
              
             <p
@@ -292,7 +306,9 @@ exports[`namba food renders correctly 1`] = `
         <h3
           class="case_title_h4 m-8_bottom"
         >
+          
           Namba Food API
+        
         </h3>
          
         <p
@@ -734,6 +750,7 @@ exports[`namba food renders correctly 1`] = `
         <li
           class="case_list-numbered_item"
         >
+          
           Users go to the website and choose cafes and shops (+ orders can be placed via phone).
     
         </li>
@@ -747,6 +764,7 @@ exports[`namba food renders correctly 1`] = `
         <li
           class="case_list-numbered_item"
         >
+          
           Users receive a call from an operator to confirm the order or can tick the "no calls" checkbox.
     
         </li>
@@ -765,7 +783,9 @@ exports[`namba food renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
+        
         Customers track order statuses
+      
       </h2>
        
       <p
@@ -933,7 +953,9 @@ exports[`namba food renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
+        
         Flexible catalogue management
+      
       </h3>
        
       <p
@@ -950,7 +972,9 @@ exports[`namba food renders correctly 1`] = `
       <h3
         class="case_title_h3 m-24_bottom"
       >
+        
         Control panel functionality
+      
       </h3>
        
       <div
@@ -1478,7 +1502,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            MySQL
+            
+    MySQL
+  
           </p>
         </li>
         <li
@@ -1491,7 +1517,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            PHP Symfony2
+            
+    PHP Symfony2
+  
           </p>
         </li>
         <li
@@ -1504,7 +1532,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Laravel
+            
+    Laravel
+  
           </p>
         </li>
         <li
@@ -1517,7 +1547,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Docker
+            
+    Docker
+  
           </p>
         </li>
         <li
@@ -1530,7 +1562,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Nginx
+            
+    Nginx
+  
           </p>
         </li>
         <li
@@ -1543,7 +1577,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Redis
+            
+    Redis
+  
           </p>
         </li>
         <li
@@ -1556,7 +1592,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Python (Django)
+            
+    Python (Django)
+  
           </p>
         </li>
         <li
@@ -1569,7 +1607,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Golang
+            
+    Golang
+  
           </p>
         </li>
         <li
@@ -1582,7 +1622,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Kotlin
+            
+    Kotlin
+  
           </p>
         </li>
         <li
@@ -1595,7 +1637,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Java
+            
+    Java
+  
           </p>
         </li>
         <li
@@ -1608,7 +1652,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Swift
+            
+    Swift
+  
           </p>
         </li>
         <li
@@ -1621,7 +1667,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Firebase
+            
+    Firebase
+  
           </p>
         </li>
         <li
@@ -1634,7 +1682,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            TestFlight
+            
+    TestFlight
+  
           </p>
         </li>
         <li
@@ -1647,7 +1697,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            OpenStreetMap
+            
+    OpenStreetMap
+  
           </p>
         </li>
         <li
@@ -1660,7 +1712,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            PHP
+            
+    PHP
+  
           </p>
         </li>
         <li
@@ -1673,7 +1727,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Jira Assistant
+            
+    Jira Assistant
+  
           </p>
         </li>
         <li
@@ -1686,7 +1742,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Grafana
+            
+    Grafana
+  
           </p>
         </li>
         <li
@@ -1699,7 +1757,9 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_technologies-item__tech-name"
           >
-            Sentry
+            
+    Sentry
+  
           </p>
         </li>
       </ul>
@@ -1832,7 +1892,9 @@ exports[`namba food renders correctly 1`] = `
       <h3
         class="case_title_h3 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
       >
+        
         Meet the team
+      
       </h3>
        
       <p
@@ -1877,13 +1939,17 @@ exports[`namba food renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Vlad Andreev
+              
+      Vlad Andreev
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Team Lead
+              
+      Team Lead
+    
             </p>
           </div>
         </li>
@@ -1916,13 +1982,17 @@ exports[`namba food renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Gulbustan Baudunova
+              
+      Gulbustan Baudunova
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Back-end Developer
+              
+      Back-end Developer
+    
             </p>
           </div>
         </li>
@@ -1955,13 +2025,17 @@ exports[`namba food renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Tamara Mun
+              
+      Tamara Mun
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Delivery Manager
+              
+      Delivery Manager
+    
             </p>
           </div>
         </li>
@@ -1994,13 +2068,17 @@ exports[`namba food renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Aidai Atakulova
+              
+      Aidai Atakulova
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Project Manager
+              
+      Project Manager
+    
             </p>
           </div>
         </li>
@@ -2033,13 +2111,17 @@ exports[`namba food renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Baurzhan Omuraliev
+              
+      Baurzhan Omuraliev
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Back-end Developer
+              
+      Back-end Developer
+    
             </p>
           </div>
         </li>
@@ -2072,13 +2154,17 @@ exports[`namba food renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Nakylai Taiirova
+              
+      Nakylai Taiirova
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Back-end Developer
+              
+      Back-end Developer
+    
             </p>
           </div>
         </li>
@@ -2111,13 +2197,17 @@ exports[`namba food renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Akylbek Djumaliev
+              
+      Akylbek Djumaliev
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Back-end Developer
+              
+      Back-end Developer
+    
             </p>
           </div>
         </li>
@@ -2150,13 +2240,17 @@ exports[`namba food renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Stanislav Shcherbinin
+              
+      Stanislav Shcherbinin
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Back-end Developer
+              
+      Back-end Developer
+    
             </p>
           </div>
         </li>
@@ -2189,13 +2283,17 @@ exports[`namba food renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Eldar Akkozov
+              
+      Eldar Akkozov
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Mobile App Developer
+              
+      Mobile App Developer
+    
             </p>
           </div>
         </li>
@@ -2228,13 +2326,17 @@ exports[`namba food renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Altynai Toktomuratova
+              
+      Altynai Toktomuratova
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Mobile App Developer
+              
+      Mobile App Developer
+    
             </p>
           </div>
         </li>
@@ -2267,13 +2369,17 @@ exports[`namba food renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Dmitrii Khalezin
+              
+      Dmitrii Khalezin
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              DevOps Engineer
+              
+      DevOps Engineer
+    
             </p>
           </div>
         </li>
@@ -2306,13 +2412,17 @@ exports[`namba food renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Belek Abylov
+              
+      Belek Abylov
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Back-end Developer
+              
+      Back-end Developer
+    
             </p>
           </div>
         </li>
@@ -2321,7 +2431,9 @@ exports[`namba food renders correctly 1`] = `
       <h4
         class="case_title_h4 m-72_top m-12_bottom media-m-41_top"
       >
+        
         Transparent communication
+      
       </h4>
        
       <p
@@ -2358,7 +2470,9 @@ exports[`namba food renders correctly 1`] = `
           class="case_link"
           to="/services#software-development"
         >
+          
           build a product
+        
         </nuxt-link-stub>
          that truly solves
     this customer’s problems. The year-over-year growth rate is hugely impressive.
@@ -2398,7 +2512,9 @@ exports[`namba food renders correctly 1`] = `
             <h3
               class="card-content_title case_title_h5"
             >
-              Delivery service Nambafood
+              
+    Delivery service Nambafood
+  
             </h3>
              
             <p
@@ -2434,7 +2550,9 @@ exports[`namba food renders correctly 1`] = `
                 <p
                   class="case_paragraph card-content_paragraph card-content_paragraph--bold"
                 >
-                   Increase in sales: 
+                  
+        Increase in sales:
+      
                 </p>
                  
                 <div
@@ -2454,7 +2572,9 @@ exports[`namba food renders correctly 1`] = `
             <h3
               class="card-content_title case_title_h5"
             >
-              Restaurant Talisman
+              
+    Restaurant Talisman
+  
             </h3>
              
             <p
@@ -2483,13 +2603,16 @@ exports[`namba food renders correctly 1`] = `
                 <p
                   class="case_paragraph card-content_paragraph card-content_statistics-heading"
                 >
-                   IT expenses 
+                  
+        IT expenses
+      
                 </p>
                  
                 <p
                   class="case_paragraph card-content_statistics-number"
                 >
-                   0
+                  
+        0
                   <span>
                     $
                   </span>
@@ -2513,7 +2636,8 @@ exports[`namba food renders correctly 1`] = `
                 <p
                   class="case_paragraph card-content_statistics-number"
                 >
-                   +236
+                  
+        +236
                   <span>
                     %
                   </span>
@@ -2537,7 +2661,8 @@ exports[`namba food renders correctly 1`] = `
                 <p
                   class="case_paragraph card-content_statistics-number"
                 >
-                   +142
+                  
+        +142
                   <span>
                     %
                   </span>
@@ -2556,7 +2681,9 @@ exports[`namba food renders correctly 1`] = `
             <h3
               class="card-content_title case_title_h5"
             >
-              250
+              
+    250
+  
             </h3>
              
             <p
@@ -2571,7 +2698,9 @@ exports[`namba food renders correctly 1`] = `
             <h3
               class="card-content_title case_title_h5"
             >
-              2500
+              
+    2500
+  
             </h3>
              
             <p
@@ -2585,7 +2714,9 @@ exports[`namba food renders correctly 1`] = `
             <h3
               class="card-content_title case_title_h5"
             >
-              700 entrepreneurs
+              
+    700 entrepreneurs
+  
             </h3>
              
             <p
@@ -2637,13 +2768,17 @@ exports[`namba food renders correctly 1`] = `
           <p
             class="case_paragraph case_blockquote-author__name"
           >
-            Aziza Anarbekova
+            
+      Aziza Anarbekova
+    
           </p>
            
           <p
             class="case_blockquote-author__position"
           >
-            Co-Founder, Namba Food
+            
+      Co-Founder, Namba Food
+    
           </p>
         </div>
       </blockquote>

@@ -7,12 +7,12 @@
       Namba Food meticulously studied users' behaviours and collected feedback to find the perfect market fit.
     </TextParagraph>
     <ListNumberedBox class="m-72_bottom media-m-48_bottom">
-      <ListNumberedItemBox
-        >Users go to the website and choose cafes and shops (+ orders can be placed via phone).
+      <ListNumberedItemBox>
+        Users go to the website and choose cafes and shops (+ orders can be placed via phone).
       </ListNumberedItemBox>
       <ListNumberedItemBox>Users save products to cart and check out.</ListNumberedItemBox>
-      <ListNumberedItemBox
-        >Users receive a call from an operator to confirm the order or can tick the "no calls" checkbox.
+      <ListNumberedItemBox>
+        Users receive a call from an operator to confirm the order or can tick the "no calls" checkbox.
       </ListNumberedItemBox>
       <ListNumberedItemBox>Courier delivers the order at a pre-estimated time.</ListNumberedItemBox>
     </ListNumberedBox>

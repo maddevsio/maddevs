@@ -1,7 +1,12 @@
 <template>
   <li class="case_technologies-item">
-    <div :class="className" class="case_technologies-item__tech-icon"></div>
-    <p class="case_technologies-item__tech-name">{{ name }}</p>
+    <div
+      :class="className"
+      class="case_technologies-item__tech-icon"
+    />
+    <p class="case_technologies-item__tech-name">
+      {{ name }}
+    </p>
   </li>
 </template>
 

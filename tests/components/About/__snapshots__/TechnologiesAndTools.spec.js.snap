@@ -15,7 +15,8 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
         <h2
           class="technologies-and_tools__main-title"
         >
-          Technologies 
+          
+        Technologies 
           <span>
             &
           </span>

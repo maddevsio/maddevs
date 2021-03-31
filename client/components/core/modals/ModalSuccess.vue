@@ -1,9 +1,20 @@
 <template>
   <transition name="fade">
-    <div v-if="visibled" :id="id" class="success-modal">
+    <div
+      v-if="visibled"
+      :id="id"
+      class="success-modal"
+    >
       <div class="success-modal_content">
-        <button class="close-modal" type="button" @click="handleClose">
-          <img src="@/assets/img/common/close-icon.svg" alt="Close modal" />
+        <button
+          class="close-modal"
+          type="button"
+          @click="handleClose"
+        >
+          <img
+            src="@/assets/img/common/close-icon.svg"
+            alt="Close modal"
+          >
         </button>
         <SuccessMessage class="success-modal_success-message" />
       </div>

@@ -1,13 +1,29 @@
 <template>
   <div>
     <div class="post-part single">
-      <div :class="size" class="block-img">
-        <prismic-image :field="img" :class="{ 'block-img-zoom': zoomEnabled }" @click="openModal" />
-        <SimpleModal v-if="zoomEnabled" ref="zoom">
+      <div
+        :class="size"
+        class="block-img"
+      >
+        <prismic-image
+          :field="img"
+          :class="{ 'block-img-zoom': zoomEnabled }"
+          @click="openModal"
+        />
+        <SimpleModal
+          v-if="zoomEnabled"
+          ref="zoom"
+        >
           <prismic-image :field="img" />
         </SimpleModal>
       </div>
-      <p v-if="caption" data-testid="test-image-label" class="image-label">{{ caption }}</p>
+      <p
+        v-if="caption"
+        data-testid="test-image-label"
+        class="image-label"
+      >
+        {{ caption }}
+      </p>
     </div>
   </div>
 </template>

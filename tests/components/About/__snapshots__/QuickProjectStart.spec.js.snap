@@ -11,7 +11,9 @@ exports[`QuickProjectStart renders correctly 1`] = `
     <h2
       class="quickProjectStart__main-title"
     >
+      
       Quick Project Start
+    
     </h2>
      
     <div
@@ -43,13 +45,17 @@ exports[`QuickProjectStart renders correctly 1`] = `
           <h3
             class="quickProjectStart__title"
           >
+            
             contact
+          
           </h3>
            
           <p
             class="quickProjectStart__description"
           >
+            
             Submit your project request or project idea to us.
+          
           </p>
         </div>
       </div>
@@ -79,13 +85,17 @@ exports[`QuickProjectStart renders correctly 1`] = `
           <h3
             class="quickProjectStart__title"
           >
+            
             analysis
+          
           </h3>
            
           <p
             class="quickProjectStart__description"
           >
+            
             We will contact you to clarify your project requirements.
+          
           </p>
         </div>
       </div>
@@ -115,13 +125,17 @@ exports[`QuickProjectStart renders correctly 1`] = `
           <h3
             class="quickProjectStart__title"
           >
+            
             proposal
+          
           </h3>
            
           <p
             class="quickProjectStart__description"
           >
+            
             We will provide you with our free, non-binding bid or a tailored proposal.
+          
           </p>
         </div>
       </div>
@@ -151,13 +165,17 @@ exports[`QuickProjectStart renders correctly 1`] = `
           <h3
             class="quickProjectStart__title"
           >
+            
             team
+          
           </h3>
            
           <p
             class="quickProjectStart__description"
           >
+            
             We will assemble and prepare a team for your project.
+          
           </p>
         </div>
       </div>
@@ -184,13 +202,17 @@ exports[`QuickProjectStart renders correctly 1`] = `
           <h3
             class="quickProjectStart__title"
           >
+            
             start
+          
           </h3>
            
           <p
             class="quickProjectStart__description"
           >
+            
             You will get to know the team and we’ll start the project work.Submit your project request or project idea to us.
+          
           </p>
         </div>
       </div>

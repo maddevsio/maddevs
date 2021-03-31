@@ -9,18 +9,22 @@
       Namba Food automatically categorises data inside the managers' dashboard panel. More than 4000 products can be
       catalogued in a few clicks.
     </TextQuote>
-    <h3 class="case_title_h3 m-12_bottom">Flexible catalogue management</h3>
+    <h3 class="case_title_h3 m-12_bottom">
+      Flexible catalogue management
+    </h3>
     <TextParagraph class="m-96_bottom media-m-48_bottom">
       Managing partners' content is straightforward, as managers can quickly turn on or off a position inside the
       catalogue and change pictures and descriptions. Such flexibility enables business owners to meet daily business
       needs. For example, if a cafe offers a seasonal menu, the items from the summer menu can be temporarily turned off
       during the rest of the year.
     </TextParagraph>
-    <h3 class="case_title_h3 m-24_bottom">Control panel functionality</h3>
+    <h3 class="case_title_h3 m-24_bottom">
+      Control panel functionality
+    </h3>
     <div class="case_columns_container">
       <Card class="background-color-silver">
         <h4 class="case_title_h4 m-12_bottom media-m-6_bottom case_control-panel-card-title">
-          Namba Food <br />
+          Namba Food <br>
           managers
         </h4>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
@@ -28,7 +32,7 @@
           performance. Business owners receive automatically generated monthly reports to their email.
         </TextParagraph>
         <TextParagraph class="m-8_bottom media-m-12_bottom">
-          Detailed reports include information <br />
+          Detailed reports include information <br>
           such as:
         </TextParagraph>
         <List>
@@ -39,7 +43,7 @@
       </Card>
       <Card class="background-color-silver">
         <h4 class="case_title_h4 m-12_bottom media-m-6_bottom case_control-panel-card-title">
-          Namba Food <br />
+          Namba Food <br>
           operators
         </h4>
         <TextParagraph class="m-24_bottom media-m-12_bottom">

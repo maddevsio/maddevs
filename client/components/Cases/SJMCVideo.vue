@@ -1,13 +1,31 @@
 <template>
-  <div v-show="fullscreenModIsActive" ref="videoContainer">
-    <div class="video-wrapper" @click="videoSetState">
-      <div v-if="showIcon" class="pause-icon"></div>
-      <video ref="video" class="main-video">
-        <source :src="getPathToVideo" type="video/mp4" />
+  <div
+    v-show="fullscreenModIsActive"
+    ref="videoContainer"
+  >
+    <div
+      class="video-wrapper"
+      @click="videoSetState"
+    >
+      <div
+        v-if="showIcon"
+        class="pause-icon"
+      />
+      <video
+        ref="video"
+        class="main-video"
+      >
+        <source
+          :src="getPathToVideo"
+          type="video/mp4"
+        >
         Your browser does not support the video tag.
       </video>
     </div>
-    <button class="exit" @click="exitFullscreen"></button>
+    <button
+      class="exit"
+      @click="exitFullscreen"
+    />
   </div>
 </template>
 

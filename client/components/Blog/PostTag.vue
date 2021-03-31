@@ -1,6 +1,12 @@
 <template>
-  <div :class="theme" class="post-tag">
-    <span data-testid="test-tag" class="tag">{{ tag }}</span>
+  <div
+    :class="theme"
+    class="post-tag"
+  >
+    <span
+      data-testid="test-tag"
+      class="tag"
+    >{{ tag }}</span>
   </div>
 </template>
 

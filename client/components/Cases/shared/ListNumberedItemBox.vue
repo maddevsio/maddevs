@@ -1,6 +1,6 @@
 <template>
   <li class="case_list-numbered_item">
-    <slot></slot>
+    <slot />
   </li>
 </template>
 

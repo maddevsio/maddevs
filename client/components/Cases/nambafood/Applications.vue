@@ -16,7 +16,7 @@
           v-if="isIphone"
           src="../../../assets/img/Cases/nambafood/png/iphone-video-preview.png"
           class="case_phone-ios-image"
-        />
+        >
         <video
           v-else
           id="iphone-silver-video"
@@ -26,7 +26,10 @@
           loop="true"
           muted="true"
         >
-          <source :src="getPathToPhoneVideo" type="video/mp4" />
+          <source
+            :src="getPathToPhoneVideo"
+            type="video/mp4"
+          >
           Your browser does not support the video tag.
         </video>
       </div>

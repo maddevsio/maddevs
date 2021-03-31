@@ -60,7 +60,9 @@ exports[`gDPR renders correctly 1`] = `
       <h2
         class="gdpr__sec-title gdpr__sec-title--first"
       >
+        
         Data Processing Documentation
+      
       </h2>
        
       <p
@@ -104,7 +106,9 @@ exports[`gDPR renders correctly 1`] = `
       <h2
         class="gdpr__sec-title"
       >
+        
         Privacy Policy
+      
       </h2>
        
       <p
@@ -128,7 +132,9 @@ exports[`gDPR renders correctly 1`] = `
       <h2
         class="gdpr__sec-title"
       >
+        
         Cookie Usage
+      
       </h2>
        
       <p
@@ -143,7 +149,9 @@ exports[`gDPR renders correctly 1`] = `
       <h2
         class="gdpr__sec-title"
       >
+        
         Marketing Communications
+      
       </h2>
        
       <p

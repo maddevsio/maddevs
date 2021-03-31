@@ -1,6 +1,8 @@
 <template>
   <section class="container_regular">
-    <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Customers track order statuses</h2>
+    <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
+      Customers track order statuses
+    </h2>
     <TextParagraph class="m-24_bottom media-m-12_bottom">
       As Namba Food’s delivery service grew more popular, the load on customer support and its operators increased
       exponentially.

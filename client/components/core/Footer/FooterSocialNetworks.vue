@@ -5,14 +5,18 @@
       :key="network.key"
       class="footerSocialNetworkList__social-network-link-wrapper"
     >
-      <a :href="network.url" class="footerSocialNetworkList__social-network-link" target="_blank">
+      <a
+        :href="network.url"
+        class="footerSocialNetworkList__social-network-link"
+        target="_blank"
+      >
         <img
           :data-src="require(`@/assets/img/Footer/svg/${network.key}.svg`)"
           :alt="network.title"
           width="42"
           height="42"
           class="img_lazy"
-        />
+        >
       </a>
     </li>
   </ul>

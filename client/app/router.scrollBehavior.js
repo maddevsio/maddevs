@@ -33,8 +33,7 @@ export default function scrollBehavior(to, from, savedPosition) {
       if (to.hash) {
         let { hash } = to
         // CSS.escape() is not supported with IE and Edge.
-        if (typeof window.CSS !== 'undefined' && typeof window.CSS.escape !== 'undefined')
-          hash = `#${window.CSS.escape(hash.substr(1))}`
+        if (typeof window.CSS !== 'undefined' && typeof window.CSS.escape !== 'undefined') { hash = `#${window.CSS.escape(hash.substr(1))}` }
         try {
           if (document.querySelector(hash)) position = { selector: hash }
         } catch (e) {

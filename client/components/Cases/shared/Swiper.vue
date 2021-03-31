@@ -1,6 +1,9 @@
 <template>
   <div class="slider-content">
-    <div :class="{ 'box-shadow': boxShadow }" class="swiper-container thumb-example">
+    <div
+      :class="{ 'box-shadow': boxShadow }"
+      class="swiper-container thumb-example"
+    >
       <Picture
         v-if="safariTopBar"
         :file="safariTopBarImage"
@@ -9,8 +12,15 @@
         folder="common"
         extension="jpg"
       />
-      <swiper ref="swiperTop" :options="swiperOptionTop" class="swiper gallery-top">
-        <swiper-slide v-for="element in components" :key="element.fileName">
+      <swiper
+        ref="swiperTop"
+        :options="swiperOptionTop"
+        class="swiper gallery-top"
+      >
+        <swiper-slide
+          v-for="element in components"
+          :key="element.fileName"
+        >
           <Picture
             :folder="element.pictureFolder"
             :file="element.fileName"
@@ -21,11 +31,21 @@
         </swiper-slide>
       </swiper>
     </div>
-    <p v-if="sliderDescription !== ''" class="slider-description">
+    <p
+      v-if="sliderDescription !== ''"
+      class="slider-description"
+    >
       {{ sliderDescription }}
     </p>
-    <swiper ref="swiperThumbs" :options="swiperOptionThumbs" class="swiper gallery-thumbs">
-      <swiper-slide v-for="element in components" :key="element.fileName">
+    <swiper
+      ref="swiperThumbs"
+      :options="swiperOptionThumbs"
+      class="swiper gallery-thumbs"
+    >
+      <swiper-slide
+        v-for="element in components"
+        :key="element.fileName"
+      >
         <Picture
           :folder="element.pictureFolder"
           :file="element.fileName"

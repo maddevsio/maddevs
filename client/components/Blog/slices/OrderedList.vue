@@ -1,7 +1,13 @@
 <template>
   <list-numbered-box>
-    <div v-if="hasListIntroduction" v-html="$prismic.asHtml(slice.primary.list_introduction)" />
-    <list-numbered-item-box v-for="(item, index) in slice.items" :key="index">
+    <div
+      v-if="hasListIntroduction"
+      v-html="$prismic.asHtml(slice.primary.list_introduction)"
+    />
+    <list-numbered-item-box
+      v-for="(item, index) in slice.items"
+      :key="index"
+    >
       {{ $prismic.asText(item.list_item) }}
     </list-numbered-item-box>
   </list-numbered-box>

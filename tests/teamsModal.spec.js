@@ -48,9 +48,9 @@ describe('teams Modal', () => {
 
   it('has a functions', () => {
     expect(
-      typeof ModalTeams.methods.getPrivacyCheckboxState &&
-        typeof ModalTeams.methods.getDiscountOffersCheckboxState &&
-        typeof ModalTeams.methods.getTeamSize,
+      typeof ModalTeams.methods.getPrivacyCheckboxState
+        && typeof ModalTeams.methods.getDiscountOffersCheckboxState
+        && typeof ModalTeams.methods.getTeamSize,
     ).toBe('function')
   })
 
@@ -99,12 +99,12 @@ describe('teams Modal', () => {
 
     wrapper.vm.resetForm()
     expect(
-      wrapper.vm.$data.fullName &&
-        wrapper.vm.$data.email &&
-        wrapper.vm.$data.phoneNumber &&
-        wrapper.vm.$data.selectedTeamSize &&
-        wrapper.vm.$data.projectDescription &&
-        wrapper.vm.$data.form,
+      wrapper.vm.$data.fullName
+        && wrapper.vm.$data.email
+        && wrapper.vm.$data.phoneNumber
+        && wrapper.vm.$data.selectedTeamSize
+        && wrapper.vm.$data.projectDescription
+        && wrapper.vm.$data.form,
     ).toBeNull()
 
     expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(false)

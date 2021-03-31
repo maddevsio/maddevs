@@ -102,7 +102,9 @@ exports[`nda page renders correctly 1`] = `
         <h2
           class="nda__sec-title nda__sec-title--first"
         >
-          Customer NDA Templates
+          
+        Customer NDA Templates
+      
         </h2>
          
         <p

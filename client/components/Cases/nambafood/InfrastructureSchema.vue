@@ -10,7 +10,7 @@
         src="../../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif"
         class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"
         alt="Namba Food: Website and Mobile App Infrastructure Scheme."
-      />
+      >
     </section>
     <section class="container_regular">
       <TextParagraph class="m-24_top">

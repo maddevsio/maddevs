@@ -1,6 +1,6 @@
 <template>
   <ol class="case-list_numbered">
-    <slot></slot>
+    <slot />
   </ol>
 </template>
 

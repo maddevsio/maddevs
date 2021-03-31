@@ -1,12 +1,22 @@
 <template>
   <blockquote class="case_blockquote-author m-auto">
-    <slot></slot>
+    <slot />
     <div class="case_blockquote-author__author-info m-24_top">
       <div class="case_blockquote-author__photo m-auto">
-        <Picture :folder="folder" :file="file" :extension="extension" :alt="author" :lazy="true" />
+        <Picture
+          :folder="folder"
+          :file="file"
+          :extension="extension"
+          :alt="author"
+          :lazy="true"
+        />
       </div>
-      <TextParagraph class="case_blockquote-author__name">{{ author }}</TextParagraph>
-      <p class="case_blockquote-author__position">{{ position }}</p>
+      <TextParagraph class="case_blockquote-author__name">
+        {{ author }}
+      </TextParagraph>
+      <p class="case_blockquote-author__position">
+        {{ position }}
+      </p>
     </div>
   </blockquote>
 </template>

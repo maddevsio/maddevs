@@ -39,22 +39,26 @@
           <TextParagraph> Call curriers using Free SWITCH microservice. </TextParagraph>
         </div>
       </div>
-      <h3 class="case_title_h3 m-12_bottom">Intelligent auto-assignment system for courier management</h3>
+      <h3 class="case_title_h3 m-12_bottom">
+        Intelligent auto-assignment system for courier management
+      </h3>
       <TextParagraph class="m-8_bottom">
         The intelligent auto-assignment of orders allows operators to assign couriers to orders, taking into
         consideration the following factors:
       </TextParagraph>
       <List class="m-78_bottom media-m-48_bottom">
         <ListItemDot>Location of a courier, a cafe/restaurant and the end-user address.</ListItemDot>
-        <ListItemDot
-          >Courier's number of orders delivered during the current shift and in the last three hours.
+        <ListItemDot>
+          Courier's number of orders delivered during the current shift and in the last three hours.
         </ListItemDot>
-        <ListItemDot
-          >End-user location in relation to couriers, who are already carrying the order, and in relation to the next
+        <ListItemDot>
+          End-user location in relation to couriers, who are already carrying the order, and in relation to the next
           order’s pick-up point with the current order.
         </ListItemDot>
       </List>
-      <h3 class="case_title_h3 m-12_bottom">Auto-assignment system under the hood</h3>
+      <h3 class="case_title_h3 m-12_bottom">
+        Auto-assignment system under the hood
+      </h3>
       <TextParagraph class="m-8_bottom">
         Three open-source solutions work together as a cohesive and smart system to perform auto-assignment of orders.
         This allows you to select the most suitable courier for each order, which reduces delivery time.
@@ -64,23 +68,43 @@
         <ListItemDot>ElasticSearch stores couriers’ current locations.</ListItemDot>
         <ListItemDot>OSMR is a routing engine for the shortest paths and road networks.</ListItemDot>
       </List>
-      <h3 class="case_title_h3 m-12_bottom">Geocoder Ariadna on ElasticSearch with OpenStreetMap</h3>
+      <h3 class="case_title_h3 m-12_bottom">
+        Geocoder Ariadna on ElasticSearch with OpenStreetMap
+      </h3>
       <TextParagraph class="m-48_bottom">
-        <a href="https://github.com/maddevsio/ariadna" class="case_link" target="_blank">Ariadna</a> is an open-source
+        <a
+          href="https://github.com/maddevsio/ariadna"
+          class="case_link"
+          target="_blank"
+        >Ariadna</a> is an open-source
         geocoder based on ElasticSearch with OpenStreetMap, in-house developed. The tool searches for coordinates by
         synonyms and names of places, looking for crossroads and addresses in a certain radius, and knows how to reverse
         geocoding and automatically update with new data from drivers.
       </TextParagraph>
     </section>
     <section class="container_middle">
-      <div :class="{ 'case_box-shadow': !isIphone }" class="case_map-video-wrapper">
+      <div
+        :class="{ 'case_box-shadow': !isIphone }"
+        class="case_map-video-wrapper"
+      >
         <img
           v-if="isIphone"
           src="../../../assets/img/Cases/nambafood/jpg/map-blank.jpg"
           class="case_ios-map-video-image case_box-shadow"
-        />
-        <video v-else id="map-video" class="case_map-video" width="100%" height="100%" loop="true" muted="true">
-          <source :src="getPathToMapVideo" type="video/mp4" />
+        >
+        <video
+          v-else
+          id="map-video"
+          class="case_map-video"
+          width="100%"
+          height="100%"
+          loop="true"
+          muted="true"
+        >
+          <source
+            :src="getPathToMapVideo"
+            type="video/mp4"
+          >
           Your browser does not support the video tag.
         </video>
       </div>

@@ -11,7 +11,9 @@
         />
       </div>
       <div class="case_business-models-grid__text-wrapper">
-        <h3 class="m-8_bottom case_title_h4">Personal courier</h3>
+        <h3 class="m-8_bottom case_title_h4">
+          Personal courier
+        </h3>
         <TextParagraph>
           The personal courier service works 24/7, enabling quick delivery for both organizations and individuals.
           Regardless of the product’s nature, personal couriers deliver it on time and, if needed, anonymously.
@@ -20,15 +22,25 @@
     </Card>
     <div class="case_business-models-grid__right-column">
       <Card class="background-color-turquoise">
-        <h3 :style="{ color: '#ffffff' }" class="m-8_bottom case_title_h4">Outsource partners</h3>
+        <h3
+          :style="{ color: '#ffffff' }"
+          class="m-8_bottom case_title_h4"
+        >
+          Outsource partners
+        </h3>
         <TextParagraph color="#ffffff">
           Businesses running e-commerce websites, but wanting to outsource delivery services, can benefit from Namba
-          Food’s checkout page, which allows businesses to quickly integrate delivery without incurring <br />
+          Food’s checkout page, which allows businesses to quickly integrate delivery without incurring <br>
           operational costs.
         </TextParagraph>
       </Card>
       <Card class="background-color-berry">
-        <h3 :style="{ color: '#ffffff' }" class="m-8_bottom case_title_h4">Delivery of food and goods</h3>
+        <h3
+          :style="{ color: '#ffffff' }"
+          class="m-8_bottom case_title_h4"
+        >
+          Delivery of food and goods
+        </h3>
         <TextParagraph color="#ffffff">
           Namba Food's delivery service positions itself as an intermediary body between goods and food service
           providers and customers.

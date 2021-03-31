@@ -30,13 +30,17 @@ exports[`list team item renders correctly 1`] = `
     <p
       class="case_team-item__name"
     >
+      
       Name
+    
     </p>
      
     <p
       class="case_team-item__position"
     >
+      
       Position
+    
     </p>
   </div>
 </li>

@@ -1,6 +1,12 @@
 <template>
-  <section ref="caseBody" class="case_body">
-    <div id="case-first-section" class="case_animation_block"></div>
+  <section
+    ref="caseBody"
+    class="case_body"
+  >
+    <div
+      id="case-first-section"
+      class="case_animation_block"
+    />
     <About />
     <BusinessModel />
     <SystemOverview />
