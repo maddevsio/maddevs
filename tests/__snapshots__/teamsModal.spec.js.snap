@@ -13,7 +13,9 @@ exports[`teams Modal renders correctly 1`] = `
       <p
         class="modal-field-name field-name required"
       >
+        
         Full Name
+      
       </p>
        
       <input
@@ -31,7 +33,9 @@ exports[`teams Modal renders correctly 1`] = `
       <p
         class="modal-field-name field-name required"
       >
+        
         Work email
+      
       </p>
        
       <input
@@ -49,7 +53,9 @@ exports[`teams Modal renders correctly 1`] = `
       <p
         class="modal-field-name field-name"
       >
+        
         Phone number
+      
       </p>
        
       <input
@@ -67,7 +73,9 @@ exports[`teams Modal renders correctly 1`] = `
       <div
         class="radio-buttons__field-name field-name required"
       >
-        Expected team size
+        
+    Expected team size
+  
       </div>
        
       <div
@@ -145,7 +153,9 @@ exports[`teams Modal renders correctly 1`] = `
       <p
         class="modal-field-name field-name"
       >
+        
         Project description
+      
       </p>
        
       <textarea

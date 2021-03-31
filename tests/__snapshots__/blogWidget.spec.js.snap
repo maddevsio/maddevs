@@ -10,7 +10,9 @@ exports[`recommended blog widget component renders correctly 1`] = `
     <h2
       class="post-title title-md"
     >
+      
       The best practices for improving layout quality on your website
+    
     </h2>
      
     <p

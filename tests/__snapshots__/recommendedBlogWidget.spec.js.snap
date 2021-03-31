@@ -27,7 +27,9 @@ exports[`recommended blog widget component renders correctly 1`] = `
       <p
         class="blog-post__paragraph"
       >
+        
         Let’s start with a partial list of how a valid and semantic layout can improve any project:
+      
       </p>
        
       <div
@@ -61,7 +63,9 @@ exports[`recommended blog widget component renders correctly 1`] = `
           <p
             class="blog-post__author-name"
           >
-            Alisa Manakova
+            
+      Alisa Manakova
+    
           </p>
            
           <div

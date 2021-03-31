@@ -37,7 +37,9 @@ exports[`customer Rates renders correctly 1`] = `
           <p
             class="customer-rates__number-item customer-rates__number-item-top-row"
           >
+            
             92%
+          
           </p>
            
           <p
@@ -64,7 +66,9 @@ exports[`customer Rates renders correctly 1`] = `
           <p
             class="customer-rates__number-item customer-rates__number-item-top-row"
           >
+            
             87%
+          
           </p>
            
           <p
@@ -91,7 +95,9 @@ exports[`customer Rates renders correctly 1`] = `
           <p
             class="customer-rates__number-item customer-rates__number-item-top-row"
           >
+            
             98%
+          
           </p>
            
           <p
@@ -117,7 +123,9 @@ exports[`customer Rates renders correctly 1`] = `
       <h3
         class="customer-rates__section-sub-title"
       >
+        
         Mad Devs' key metrics:
+      
       </h3>
        
       <div
@@ -132,7 +140,9 @@ exports[`customer Rates renders correctly 1`] = `
             <p
               class="customer-rates__number-item customer-rates__number-item-bottom-row"
             >
+              
               10M+
+            
             </p>
              
             <p
@@ -153,7 +163,9 @@ exports[`customer Rates renders correctly 1`] = `
             <p
               class="customer-rates__number-item customer-rates__number-item-bottom-row"
             >
+              
               75%
+            
             </p>
              
             <p
@@ -174,7 +186,9 @@ exports[`customer Rates renders correctly 1`] = `
             <p
               class="customer-rates__number-item customer-rates__number-item-bottom-row"
             >
+              
               30+
+            
             </p>
              
             <p
@@ -195,7 +209,9 @@ exports[`customer Rates renders correctly 1`] = `
             <p
               class="customer-rates__number-item customer-rates__number-item-bottom-row"
             >
+              
               50+
+            
             </p>
              
             <p
@@ -216,7 +232,9 @@ exports[`customer Rates renders correctly 1`] = `
             <p
               class="customer-rates__number-item customer-rates__number-item-bottom-row"
             >
+              
               100+
+            
             </p>
              
             <p
@@ -237,7 +255,9 @@ exports[`customer Rates renders correctly 1`] = `
             <p
               class="customer-rates__number-item customer-rates__number-item-bottom-row"
             >
+              
               70+
+            
             </p>
              
             <p

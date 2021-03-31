@@ -13,7 +13,9 @@ exports[`modalContactMe renders correctly 1`] = `
       <p
         class="modal-field-name field-name required"
       >
+        
         Full Name
+      
       </p>
        
       <input
@@ -31,7 +33,9 @@ exports[`modalContactMe renders correctly 1`] = `
       <p
         class="modal-field-name field-name"
       >
+        
         Company
+      
       </p>
        
       <input
@@ -49,7 +53,9 @@ exports[`modalContactMe renders correctly 1`] = `
       <p
         class="modal-field-name field-name required"
       >
+        
         Work email
+      
       </p>
        
       <input
@@ -67,7 +73,9 @@ exports[`modalContactMe renders correctly 1`] = `
       <p
         class="modal-field-name field-name"
       >
+        
         Phone number
+      
       </p>
        
       <input

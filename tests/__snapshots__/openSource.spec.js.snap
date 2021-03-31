@@ -14,7 +14,9 @@ exports[`caseStudies component renders correctly 1`] = `
       <h3
         class="open-source__main-title"
       >
+        
         Our code - available in open source - is used by many other companies.
+      
       </h3>
        
       <div

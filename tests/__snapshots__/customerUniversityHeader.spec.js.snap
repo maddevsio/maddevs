@@ -14,7 +14,9 @@ exports[`customer university header component renders correctly 1`] = `
     <div
       class="cluster-navigation__name"
     >
-      Pricing strategies in custom software development
+      
+        Pricing strategies in custom software development
+      
     </div>
      
     <div

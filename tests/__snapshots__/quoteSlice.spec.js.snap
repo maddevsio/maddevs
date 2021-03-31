@@ -22,7 +22,9 @@ exports[`quoteSlice component renders correctly 1`] = `
     <div
       class="author__name"
     >
+      
       John Doe
+    
     </div>
   </div>
 </div>

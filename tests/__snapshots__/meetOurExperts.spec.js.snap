@@ -11,7 +11,9 @@ exports[`meet Our Experts renders correctly 1`] = `
     <h3
       class="meet-our_experts__main-title"
     >
+      
       Meet our experts
+    
     </h3>
      
     <div
@@ -46,13 +48,17 @@ exports[`meet Our Experts renders correctly 1`] = `
             <div
               class="meet-our_experts__expert-name"
             >
+              
               Marat Bediev
+            
             </div>
              
             <div
               class="meet-our_experts__expert-position"
             >
+              
               Senior DevOps Engineer
+            
             </div>
           </div>
         </div>
@@ -100,13 +106,17 @@ exports[`meet Our Experts renders correctly 1`] = `
             <div
               class="meet-our_experts__expert-name"
             >
+              
               Tamara Mun
+            
             </div>
              
             <div
               class="meet-our_experts__expert-position"
             >
+              
               Delivery Manager
+            
             </div>
           </div>
         </div>
@@ -154,13 +164,17 @@ exports[`meet Our Experts renders correctly 1`] = `
             <div
               class="meet-our_experts__expert-name"
             >
+              
               Andrew "Chuck" Minkin
+            
             </div>
              
             <div
               class="meet-our_experts__expert-position"
             >
+              
               CTO, Co-Founder
+            
             </div>
           </div>
         </div>
@@ -208,13 +222,17 @@ exports[`meet Our Experts renders correctly 1`] = `
             <div
               class="meet-our_experts__expert-name"
             >
+              
               Nakylai Taiirova
+            
             </div>
              
             <div
               class="meet-our_experts__expert-position"
             >
+              
               Senior Full-Stack Developer
+            
             </div>
           </div>
         </div>
@@ -262,13 +280,17 @@ exports[`meet Our Experts renders correctly 1`] = `
             <div
               class="meet-our_experts__expert-name"
             >
+              
               Daria Utesheva
+            
             </div>
              
             <div
               class="meet-our_experts__expert-position"
             >
+              
               Head of HR Department
+            
             </div>
           </div>
         </div>
@@ -316,13 +338,17 @@ exports[`meet Our Experts renders correctly 1`] = `
             <div
               class="meet-our_experts__expert-name"
             >
+              
               Nuradil Alymkulov
+            
             </div>
              
             <div
               class="meet-our_experts__expert-position"
             >
+              
               Senior Full-Stack Developer
+            
             </div>
           </div>
         </div>
@@ -370,13 +396,17 @@ exports[`meet Our Experts renders correctly 1`] = `
             <div
               class="meet-our_experts__expert-name"
             >
+              
               Alice Jang
+            
             </div>
              
             <div
               class="meet-our_experts__expert-position"
             >
+              
               Project Manager
+            
             </div>
           </div>
         </div>
@@ -424,13 +454,17 @@ exports[`meet Our Experts renders correctly 1`] = `
             <div
               class="meet-our_experts__expert-name"
             >
+              
               Arthur Elizavetenkov
+            
             </div>
              
             <div
               class="meet-our_experts__expert-position"
             >
+              
               Project Manager
+            
             </div>
           </div>
         </div>

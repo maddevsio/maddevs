@@ -7,7 +7,9 @@ exports[`radio buttons list renders correctly 1`] = `
   <div
     class="radio-buttons__field-name field-name required"
   >
+    
     Label
+  
   </div>
    
   <div

@@ -19,7 +19,9 @@ exports[`image attribute slice component renders correctly 1`] = `
     <p
       class="image-label"
     >
+      
       caption
+    
     </p>
   </div>
 </div>

@@ -11,6 +11,8 @@ exports[`cuNavigation renders correctly 1`] = `
       class="cluster-navigation__title"
     >
       
+      
+    
     </div>
      
     <div
@@ -26,13 +28,17 @@ exports[`cuNavigation renders correctly 1`] = `
           <div
             class="index"
           >
+            
             1.
+          
           </div>
            
           <div
             class="label"
           >
+            
             Chapter 1
+          
           </div>
         </router-link-stub>
       </ol>
@@ -54,7 +60,9 @@ exports[`cuNavigation renders correctly 1`] = `
           <div
             class="label"
           >
+            
             Chapter 2
+          
           </div>
         </router-link-stub>
       </ol>

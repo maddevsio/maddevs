@@ -468,7 +468,8 @@ exports[`index page renders correctly 1`] = `
         <h2
           class="technologies-and_tools__main-title"
         >
-          Technologies 
+          
+        Technologies 
           <span>
             &
           </span>
@@ -1982,7 +1983,9 @@ exports[`index page renders correctly 1`] = `
       <h2
         class="quickProjectStart__main-title"
       >
-        Quick Project Start
+        
+      Quick Project Start
+    
       </h2>
        
       <div
@@ -2014,13 +2017,17 @@ exports[`index page renders correctly 1`] = `
             <h3
               class="quickProjectStart__title"
             >
-              contact
+              
+            contact
+          
             </h3>
              
             <p
               class="quickProjectStart__description"
             >
-              Submit your project request or project idea to us.
+              
+            Submit your project request or project idea to us.
+          
             </p>
           </div>
         </div>
@@ -2050,13 +2057,17 @@ exports[`index page renders correctly 1`] = `
             <h3
               class="quickProjectStart__title"
             >
-              analysis
+              
+            analysis
+          
             </h3>
              
             <p
               class="quickProjectStart__description"
             >
-              We will contact you to clarify your project requirements.
+              
+            We will contact you to clarify your project requirements.
+          
             </p>
           </div>
         </div>
@@ -2086,13 +2097,17 @@ exports[`index page renders correctly 1`] = `
             <h3
               class="quickProjectStart__title"
             >
-              proposal
+              
+            proposal
+          
             </h3>
              
             <p
               class="quickProjectStart__description"
             >
-              We will provide you with our free, non-binding bid or a tailored proposal.
+              
+            We will provide you with our free, non-binding bid or a tailored proposal.
+          
             </p>
           </div>
         </div>
@@ -2122,13 +2137,17 @@ exports[`index page renders correctly 1`] = `
             <h3
               class="quickProjectStart__title"
             >
-              team
+              
+            team
+          
             </h3>
              
             <p
               class="quickProjectStart__description"
             >
-              We will assemble and prepare a team for your project.
+              
+            We will assemble and prepare a team for your project.
+          
             </p>
           </div>
         </div>
@@ -2155,13 +2174,17 @@ exports[`index page renders correctly 1`] = `
             <h3
               class="quickProjectStart__title"
             >
-              start
+              
+            start
+          
             </h3>
              
             <p
               class="quickProjectStart__description"
             >
-              You will get to know the team and we’ll start the project work.Submit your project request or project idea to us.
+              
+            You will get to know the team and we’ll start the project work.Submit your project request or project idea to us.
+          
             </p>
           </div>
         </div>
@@ -2194,7 +2217,9 @@ exports[`index page renders correctly 1`] = `
       <h2
         class="customer-testimonials__title"
       >
-        Customer Testimonials
+        
+      Customer Testimonials
+    
       </h2>
        
       <div
@@ -2428,7 +2453,9 @@ exports[`index page renders correctly 1`] = `
             <p
               class="customer-rates__number-item customer-rates__number-item-top-row"
             >
-              92%
+              
+            92%
+          
             </p>
              
             <p
@@ -2455,7 +2482,9 @@ exports[`index page renders correctly 1`] = `
             <p
               class="customer-rates__number-item customer-rates__number-item-top-row"
             >
-              87%
+              
+            87%
+          
             </p>
              
             <p
@@ -2482,7 +2511,9 @@ exports[`index page renders correctly 1`] = `
             <p
               class="customer-rates__number-item customer-rates__number-item-top-row"
             >
-              98%
+              
+            98%
+          
             </p>
              
             <p
@@ -2508,7 +2539,9 @@ exports[`index page renders correctly 1`] = `
         <h3
           class="customer-rates__section-sub-title"
         >
-          Mad Devs' key metrics:
+          
+        Mad Devs' key metrics:
+      
         </h3>
          
         <div
@@ -2523,7 +2556,9 @@ exports[`index page renders correctly 1`] = `
               <p
                 class="customer-rates__number-item customer-rates__number-item-bottom-row"
               >
-                10M+
+                
+              10M+
+            
               </p>
                
               <p
@@ -2544,7 +2579,9 @@ exports[`index page renders correctly 1`] = `
               <p
                 class="customer-rates__number-item customer-rates__number-item-bottom-row"
               >
-                75%
+                
+              75%
+            
               </p>
                
               <p
@@ -2565,7 +2602,9 @@ exports[`index page renders correctly 1`] = `
               <p
                 class="customer-rates__number-item customer-rates__number-item-bottom-row"
               >
-                30+
+                
+              30+
+            
               </p>
                
               <p
@@ -2586,7 +2625,9 @@ exports[`index page renders correctly 1`] = `
               <p
                 class="customer-rates__number-item customer-rates__number-item-bottom-row"
               >
-                50+
+                
+              50+
+            
               </p>
                
               <p
@@ -2607,7 +2648,9 @@ exports[`index page renders correctly 1`] = `
               <p
                 class="customer-rates__number-item customer-rates__number-item-bottom-row"
               >
-                100+
+                
+              100+
+            
               </p>
                
               <p
@@ -2628,7 +2671,9 @@ exports[`index page renders correctly 1`] = `
               <p
                 class="customer-rates__number-item customer-rates__number-item-bottom-row"
               >
-                70+
+                
+              70+
+            
               </p>
                
               <p
@@ -2655,7 +2700,9 @@ exports[`index page renders correctly 1`] = `
       <h3
         class="meet-our_experts__main-title"
       >
-        Meet our experts
+        
+      Meet our experts
+    
       </h3>
        
       <div
@@ -2690,13 +2737,17 @@ exports[`index page renders correctly 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Marat Bediev
+                
+              Marat Bediev
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                Senior DevOps Engineer
+                
+              Senior DevOps Engineer
+            
               </div>
             </div>
           </div>
@@ -2744,13 +2795,17 @@ exports[`index page renders correctly 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Tamara Mun
+                
+              Tamara Mun
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                Delivery Manager
+                
+              Delivery Manager
+            
               </div>
             </div>
           </div>
@@ -2798,13 +2853,17 @@ exports[`index page renders correctly 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Andrew "Chuck" Minkin
+                
+              Andrew "Chuck" Minkin
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                CTO, Co-Founder
+                
+              CTO, Co-Founder
+            
               </div>
             </div>
           </div>
@@ -2852,13 +2911,17 @@ exports[`index page renders correctly 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Nakylai Taiirova
+                
+              Nakylai Taiirova
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                Senior Full-Stack Developer
+                
+              Senior Full-Stack Developer
+            
               </div>
             </div>
           </div>
@@ -2906,13 +2969,17 @@ exports[`index page renders correctly 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Daria Utesheva
+                
+              Daria Utesheva
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                Head of HR Department
+                
+              Head of HR Department
+            
               </div>
             </div>
           </div>
@@ -2960,13 +3027,17 @@ exports[`index page renders correctly 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Nuradil Alymkulov
+                
+              Nuradil Alymkulov
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                Senior Full-Stack Developer
+                
+              Senior Full-Stack Developer
+            
               </div>
             </div>
           </div>
@@ -3014,13 +3085,17 @@ exports[`index page renders correctly 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Alice Jang
+                
+              Alice Jang
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                Project Manager
+                
+              Project Manager
+            
               </div>
             </div>
           </div>
@@ -3068,13 +3143,17 @@ exports[`index page renders correctly 1`] = `
               <div
                 class="meet-our_experts__expert-name"
               >
-                Arthur Elizavetenkov
+                
+              Arthur Elizavetenkov
+            
               </div>
                
               <div
                 class="meet-our_experts__expert-position"
               >
-                Project Manager
+                
+              Project Manager
+            
               </div>
             </div>
           </div>
