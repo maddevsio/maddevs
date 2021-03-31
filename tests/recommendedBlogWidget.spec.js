@@ -16,7 +16,7 @@ describe('recommended blog widget component', () => {
         post: blogPost,
         className: 'test',
       },
-      stubs: ['nuxt-link'],
+      stubs: ['nuxt-link', 'NuxtLink'],
     })
   })
 

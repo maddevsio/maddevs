@@ -1,11 +1,11 @@
 import { mount } from '@vue/test-utils'
-import { phoneHandler } from '../../client/mixins/phoneHandler'
+import phoneHandlerMixin from '@/mixins/phoneHandlerMixin'
 
 const INPUT_VALUE = 'zzzzz1234567890aaaa'
 const OUTPUT_VALUE = '+1 2345-678-90'
 
 describe('phone Handler Mixin', () => {
-  const wrapper = mount(phoneHandler)
+  const wrapper = mount(phoneHandlerMixin)
 
   it('if we pass an incorrect parameter. The function will work, but it will not make changes in the store', () => {
     expect(wrapper.vm.$data.phoneNumber).toBeNull()

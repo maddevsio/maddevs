@@ -17,10 +17,4 @@ describe('privacy page', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
   // --------------------- //
-
-  it('sets the correctly data', () => {
-    expect(wrapper.vm.$data.title).toEqual('Mad Devs Privacy Policy')
-    expect(wrapper.vm.$data.description).toEqual('Mad Devs’ Privacy Policy: Website Acceptable Use Terms.')
-    expect(wrapper.vm.$data.ogUrl).toEqual('https://maddevs.io/privacy/')
-  })
 })
