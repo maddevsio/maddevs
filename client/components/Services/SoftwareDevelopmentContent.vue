@@ -3,8 +3,12 @@
     <div class="content-item__content-wrapper">
       <div class="content-item__text-content">
         <client-only>
-          <UITitle class="content-item__title">{{ title }}</UITitle>
-          <UISubtitle class="content-item__sub-title">{{ subtitle }}</UISubtitle>
+          <UITitle class="content-item__title">
+            {{ title }}
+          </UITitle>
+          <UISubtitle class="content-item__sub-title">
+            {{ subtitle }}
+          </UISubtitle>
           <UIParagraph
             v-for="paragraph in paragraphs"
             :key="paragraph"

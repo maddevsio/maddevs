@@ -1,5 +1,8 @@
 <template>
-  <div :class="theme" class="post-tag">
+  <div
+    :class="theme"
+    class="post-tag"
+  >
     <span class="tag">{{ tag }}</span>
   </div>
 </template>

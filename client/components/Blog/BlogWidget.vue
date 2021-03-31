@@ -1,7 +1,9 @@
 <template>
   <nuxt-link :to="link">
     <div class="blog-post">
-      <h2 class="post-title title-md">{{ $prismic.asText(post.data.title) }}</h2>
+      <h2 class="post-title title-md">
+        {{ $prismic.asText(post.data.title) }}
+      </h2>
       <p class="blog-post-meta">
         <span class="created-at">{{ formattedDate }}</span>
       </p>

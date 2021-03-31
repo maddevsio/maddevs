@@ -1,5 +1,8 @@
 <template>
-  <div v-if="options && options.length" class="ui-radio-buttons">
+  <div
+    v-if="options && options.length"
+    class="ui-radio-buttons"
+  >
     <div
       v-for="option of options"
       :key="option.value"
@@ -7,8 +10,10 @@
       class="ui-radio-buttons_item"
       @click="setActive(option)"
     >
-      <div class="ui-radio-buttons_item-circle"></div>
-      <div class="ui-radio-buttons_item-label">{{ option.label }}</div>
+      <div class="ui-radio-buttons_item-circle" />
+      <div class="ui-radio-buttons_item-label">
+        {{ option.label }}
+      </div>
     </div>
   </div>
 </template>

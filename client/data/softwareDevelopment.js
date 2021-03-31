@@ -2,9 +2,9 @@ export const developmentCategories = [
   {
     type: 'backend',
     title: 'Backend',
-    subtitle: `Your MVP doesn't work as expected after launch?`,
+    subtitle: 'Your MVP doesn\'t work as expected after launch?',
     paragraphs: [
-      `Let our positively mad team rescue you and create sensible server logic for your project. We'll cure your growth pains like good doctors – just tell us about them and only focus on your business.`,
+      'Let our positively mad team rescue you and create sensible server logic for your project. We\'ll cure your growth pains like good doctors – just tell us about them and only focus on your business.',
       'At Mad Devs we know everything about:',
     ],
     icons: [
@@ -90,7 +90,7 @@ export const developmentCategories = [
     title: 'Mobile',
     subtitle: 'Your app is slow and unable to survive a demo?',
     paragraphs: [
-      `We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you'll be ecstatic to use yourself.`,
+      'We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you\'ll be ecstatic to use yourself.',
       'We do both iOS and Android development using the following languages and frameworks:',
     ],
     icons: [

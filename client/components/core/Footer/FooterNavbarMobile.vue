@@ -1,6 +1,8 @@
 <template>
   <div class="footer-navbar-mobile">
-    <p class="footer-navbar-mobile__company-name">© Mad Devs - {{ currentYear }}</p>
+    <p class="footer-navbar-mobile__company-name">
+      © Mad Devs - {{ currentYear }}
+    </p>
     <div class="footer-navbar-mobile__nav-list">
       <a
         v-for="item in navigation"

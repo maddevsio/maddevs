@@ -3,10 +3,10 @@
     <div class="banner__banner-content banner-content">
       <div class="banner__title-wrapper container">
         <h1 class="banner__banner-main_title banner-main_title">
-          Your Trusted <br />
+          Your Trusted <br>
           <span class="banner__main-title-white_part main-title-white_part">IT Partner</span>
         </h1>
-        <div class="banner__order-a-project-icon"></div>
+        <div class="banner__order-a-project-icon" />
       </div>
       <UINavigation :navigation="navigation" />
     </div>

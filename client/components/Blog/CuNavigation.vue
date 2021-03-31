@@ -1,7 +1,12 @@
 <template>
-  <div v-if="clusterPosts" class="cluster-navigation">
+  <div
+    v-if="clusterPosts"
+    class="cluster-navigation"
+  >
     <div class="container">
-      <div class="cluster-navigation__title">{{ $prismic.asText(cluster.primary.read_more_text) }}</div>
+      <div class="cluster-navigation__title">
+        {{ $prismic.asText(cluster.primary.read_more_text) }}
+      </div>
       <div class="cluster-navigation__inner">
         <ol class="cluster-navigation__column cluster-navigation__column--left">
           <router-link
@@ -11,11 +16,18 @@
             :class="isCurrent(post)"
             class="cluster-navigation__nav-item"
           >
-            <div class="index">{{ ++index }}.</div>
-            <div class="label">{{ $prismic.asText(post.chapter_name) }}</div>
+            <div class="index">
+              {{ ++index }}.
+            </div>
+            <div class="label">
+              {{ $prismic.asText(post.chapter_name) }}
+            </div>
           </router-link>
         </ol>
-        <ol :start="leftColumnPosts.length + 1" class="cluster-navigation__column cluster-navigation__column--right">
+        <ol
+          :start="leftColumnPosts.length + 1"
+          class="cluster-navigation__column cluster-navigation__column--right"
+        >
           <router-link
             v-for="(post, index) in rightColumnPosts"
             :key="post.cu_post.id"
@@ -24,7 +36,9 @@
             class="cluster-navigation__nav-item"
           >
             <span class="index">{{ ++index + leftColumnPosts.length }}.</span>
-            <div class="label">{{ $prismic.asText(post.chapter_name) }}</div>
+            <div class="label">
+              {{ $prismic.asText(post.chapter_name) }}
+            </div>
           </router-link>
         </ol>
       </div>

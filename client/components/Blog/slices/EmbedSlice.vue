@@ -1,9 +1,20 @@
 <template>
-  <div v-if="slice.items.length" :class="slice.items[0].embed.type" class="embed">
-    <prismic-embed :field="slice.items[0].embed" :class="`embed__${slice.items[0].embed.type}`" target="_blank" />
+  <div
+    v-if="slice.items.length"
+    :class="slice.items[0].embed.type"
+    class="embed"
+  >
+    <prismic-embed
+      :field="slice.items[0].embed"
+      :class="`embed__${slice.items[0].embed.type}`"
+      target="_blank"
+    />
     <template v-if="slice.items[0].embed.type === 'link'">
       <div class="embed__image-wrapper">
-        <div :style="{ backgroundImage: `url(${slice.items[0].embed.thumbnail_url})` }" class="embed__image" />
+        <div
+          :style="{ backgroundImage: `url(${slice.items[0].embed.thumbnail_url})` }"
+          class="embed__image"
+        />
       </div>
     </template>
   </div>

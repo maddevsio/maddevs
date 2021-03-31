@@ -1,15 +1,14 @@
-const observerCallback = entries =>
-  entries.forEach(({ isIntersecting, target }) => {
-    if (!isIntersecting) return
+const observerCallback = entries => entries.forEach(({ isIntersecting, target }) => {
+  if (!isIntersecting) return
 
-    target.src = target.dataset.src
-    if (target.dataset.srcset) {
-      target.srcset = target.dataset.srcset
-    }
+  target.src = target.dataset.src
+  if (target.dataset.srcset) {
+    target.srcset = target.dataset.srcset
+  }
 
-    target.classList.remove('img_lazy')
-    target.classList.add('img_lazy-fade')
-  })
+  target.classList.remove('img_lazy')
+  target.classList.add('img_lazy-fade')
+})
 
 function initializeLazyLoad() {
   const images = Array.from(document.querySelectorAll('img.img_lazy'))

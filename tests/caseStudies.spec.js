@@ -25,7 +25,7 @@ describe('caseStudies component', () => {
     })
   })
 
-  it("is Vue's instance", () => {
+  it('is Vue\'s instance', () => {
     expect(wrapper.exists()).toBeTruthy()
   })
 

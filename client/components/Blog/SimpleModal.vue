@@ -1,15 +1,38 @@
 <template>
-  <transition name="main-fade" mode="out-in">
-    <div v-if="isVisible" v-append-to-body class="modal">
+  <transition
+    name="main-fade"
+    mode="out-in"
+  >
+    <div
+      v-if="isVisible"
+      v-append-to-body
+      class="modal"
+    >
       <transition name="made">
-        <div v-if="isOverlay" class="modal_overlay"></div>
+        <div
+          v-if="isOverlay"
+          class="modal_overlay"
+        />
       </transition>
       <transition name="fade">
-        <div v-if="contentLoaded" class="modal_container">
-          <div class="modal_close" @click="close">
-            <img src="@/assets/img/common/close-icon.svg" alt="Close modal" />
+        <div
+          v-if="contentLoaded"
+          class="modal_container"
+        >
+          <div
+            class="modal_close"
+            @click="close"
+          >
+            <img
+              src="@/assets/img/common/close-icon.svg"
+              alt="Close modal"
+            >
           </div>
-          <div ref="content" class="modal_content safari-only" @click="close">
+          <div
+            ref="content"
+            class="modal_content safari-only"
+            @click="close"
+          >
             <slot />
           </div>
         </div>

@@ -2,7 +2,7 @@
   <div class="blog-post">
     <div class="blog-post__cover-image animated background-grey" />
     <div>
-      <h2 class="blog-post__title animated background-grey"></h2>
+      <h2 class="blog-post__title animated background-grey" />
       <p class="blog-post__paragraph background-grey animated" />
       <div class="blog-post__meta">
         <span class="created-at background-grey" />

@@ -1,9 +1,14 @@
 <template>
   <div class="form-checkboxes">
-    <label :for="`privacy-policy-${id}`" class="form-checkbox-label required"
-      >I confirm that I have read and accepted
+    <label
+      :for="`privacy-policy-${id}`"
+      class="form-checkbox-label required"
+    >I confirm that I have read and accepted
       <div>Mad Devs’</div>
-      <a href="/privacy/" target="_blank">Privacy Policy</a>
+      <a
+        href="/privacy/"
+        target="_blank"
+      >Privacy Policy</a>
       <input
         :id="`privacy-policy-${id}`"
         v-model="privacy"
@@ -11,11 +16,13 @@
         type="checkbox"
         name="Privacy policy"
         @change="handleChange($event, 'privacy')"
-      />
-      <div class="checkmark"></div>
+      >
+      <div class="checkmark" />
     </label>
-    <label :for="`marketing-communications-${id}`" class="form-checkbox-label"
-      >I agree to get
+    <label
+      :for="`marketing-communications-${id}`"
+      class="form-checkbox-label"
+    >I agree to get
       <div>Mad Devs’</div>
       discount offers and other marketing communications.
       <input
@@ -25,8 +32,8 @@
         type="checkbox"
         name="Marketing communications"
         @change="handleChange($event, 'discountOffers')"
-      />
-      <div class="checkmark"></div>
+      >
+      <div class="checkmark" />
     </label>
   </div>
 </template>

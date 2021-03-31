@@ -1,9 +1,18 @@
 <template>
-  <section id="it-consulting" class="it-consulting">
+  <section
+    id="it-consulting"
+    class="it-consulting"
+  >
     <div class="container">
-      <h2 class="it-consulting__main-title">IT Consulting</h2>
+      <h2 class="it-consulting__main-title">
+        IT Consulting
+      </h2>
       <div class="it-consulting__content row">
-        <ItConsultingContent v-for="type in consultungTypes" :key="type.type" v-bind="type" />
+        <ItConsultingContent
+          v-for="type in consultungTypes"
+          :key="type.type"
+          v-bind="type"
+        />
       </div>
       <UIModalTriggerButton
         label="Get expert advice"
