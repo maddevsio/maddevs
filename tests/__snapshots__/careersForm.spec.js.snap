@@ -136,7 +136,7 @@ exports[`careersForm component renders correctly 1`] = `
     </div>
   </div>
    
-  <successmodal-stub
+  <modalsuccess-stub
     displaytime="3000"
     id="career-modal"
   />
