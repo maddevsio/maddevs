@@ -77,6 +77,7 @@ import FeaturedPost from '@/components/Blog/FeaturedPost'
 import SkeletonBlogWidget from '@/components/Blog/SkeletonBlogWidget'
 import SkeletonFeaturedPost from '@/components/Blog/SkeletonFeaturedPost'
 import CustomerUniversitySection from '@/components/Blog/CustomerUniversitySection'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'Blog',
@@ -88,6 +89,8 @@ export default {
     SkeletonFeaturedPost,
     CustomerUniversitySection,
   },
+
+  mixins: [initLazyLoadMixin],
 
   data() {
     return {
