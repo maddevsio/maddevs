@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import OrderProjectFromUsModal from '@/components/Modals/order-project-from-us-modal'
+import ModalOrderProjectFromUs from '@/components/core/modals/ModalOrderProjectFromUs'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -10,7 +10,7 @@ describe('order Project From Us Modal', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(OrderProjectFromUsModal, {
+    wrapper = mount(ModalOrderProjectFromUs, {
       localVue,
       stubs: ['modal'],
       mocks: {
@@ -44,23 +44,16 @@ describe('order Project From Us Modal', () => {
   // --------------------- //
 
   it('sets the correct default data', () => {
-    expect(typeof OrderProjectFromUsModal.data).toBe('function')
-    const defaultData = OrderProjectFromUsModal.data()
+    const defaultData = ModalOrderProjectFromUs.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
-    expect(defaultData.inputId).toEqual('order-project-from-us')
   })
 
   it('has a functions', () => {
-    expect(
-      typeof OrderProjectFromUsModal.methods.getPrivacyCheckboxState &&
-        typeof OrderProjectFromUsModal.methods.getDiscountOffersCheckboxState,
-    ).toBe('function')
+    expect(typeof ModalOrderProjectFromUs.methods.handleCheckboxesChange).toBe('function')
   })
 
   it('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true)
-    wrapper.vm.getDiscountOffersCheckboxState(true)
-
+    wrapper.vm.handleCheckboxesChange({ privacy: true, discountOffers: true })
     expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true)
   })
 

@@ -1,14 +1,13 @@
 import { mount } from '@vue/test-utils'
 
-import RadioList from '@/components/ui/radio-list'
+import RadioList from '@/components/shared/UIRadioList'
 
 describe('radio buttons list', () => {
   let wrapper
   const props = {
-    inputId: 'input id',
-    emitMethodName: 'methodName',
-    fieldName: 'field name',
-    sectionIsRequired: true,
+    id: 'input id',
+    label: 'Label',
+    required: true,
     options: [
       {
         id: 'digital-ocean',
@@ -38,15 +37,14 @@ describe('radio buttons list', () => {
   // --------------------- //
 
   it('has a functions', () => {
-    expect(typeof RadioList.methods.sendSelectedValue).toBe('function')
+    expect(typeof RadioList.methods.handleSelect).toBe('function')
   })
 
   it('correctly props data', () => {
-    expect(wrapper.props().inputId).toBe(props.inputId)
-    expect(wrapper.props().emitMethodName).toBe(props.emitMethodName)
-    expect(wrapper.props().fieldName).toBe(props.fieldName)
-    expect(wrapper.props().sectionIsRequired).toBe(props.sectionIsRequired)
+    expect(wrapper.props().id).toBe(props.id)
     expect(wrapper.props().options).toBe(props.options)
+    expect(wrapper.props().label).toBe(props.label)
+    expect(wrapper.props().required).toBe(props.required)
   })
 
   it('options must contain three elements', () => {
@@ -61,10 +59,10 @@ describe('radio buttons list', () => {
   it('emits called with arguments', () => {
     const selectedValue = 'Digital Ocean'
 
-    wrapper.vm.sendSelectedValue(selectedValue)
+    wrapper.vm.handleSelect(selectedValue)
 
     expect(wrapper.emitted()).toBeTruthy()
-    expect(wrapper.emitted()[props.emitMethodName]).toEqual([[selectedValue]])
+    expect(wrapper.emitted().select).toEqual([[selectedValue]])
   })
 
   it('has class if sectionIsRequired equal true', () => {

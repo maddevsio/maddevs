@@ -570,7 +570,8 @@ import ListHyphenItemBox from '@/components/Cases/ListHyphenItemBox'
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
 import Swiper from '@/components/Cases/Swiper'
 import Footer from '@/components/Cases/Footer'
-import initImgLazyHelper from '@/helpers/initImgLazy'
+import { getMetadata, buildHead } from '@/data/seo'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'SirJohnMonashCentre',
@@ -594,12 +595,10 @@ export default {
     Footer,
   },
 
+  mixins: [initLazyLoadMixin],
+
   data() {
     return {
-      title: 'Mad Devs Case Study: Sir John Monash Centre',
-      description:
-        'BYOD Case Study. Read how Mad Devs enhanced and developed new features for the Sir John Monash Centre’s software, mobile applications, and technological debt.',
-
       keyGoalsList: [
         'Understanding the complexity of the MMIT Brain software',
         'Building a small-scale version of the SJMC experience in 1 month',
@@ -889,36 +888,10 @@ export default {
   },
 
   head() {
-    return {
-      title: this.title,
-      meta: [
-        { name: 'description', content: this.description },
-        { property: 'og:url', content: 'https://maddevs.io/case-studies/sir-john-monash-centre/' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: this.title },
-        { property: 'og:description', content: this.description },
-        {
-          property: 'og:image',
-          content: 'https://maddevs.io/sir-john-monash-centre.png',
-        },
-      ],
-
-      link: [
-        {
-          rel: 'canonical',
-          href: 'https://maddevs.io/case-studies/sir-john-monash-centre/',
-        },
-      ],
-
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [
-        {
-          type: 'application/ld+json',
-          innerHTML:
-            '{"@context": "https://schema.org", "@type": "WebPage", "breadcrumb": "Projects > Case Studies > BYOD Solutions", "name": "Mad Devs Case Study: Sir John Monash Centre", "description": "BYOD Case Study. Read how Mad Devs enhanced and developed new features for the Sir John Monash Centre’s software, mobile applications, and technological debt.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group LTD"}}',
-        },
-      ],
-    }
+    return buildHead({
+      ...getMetadata('sjmc'),
+      image: 'https://maddevs.io/sir-john-monash-centre.png',
+    })
   },
 
   computed: {
@@ -929,8 +902,6 @@ export default {
     this.$refs.video.onended = () => {
       this.$refs.videoWrap.classList.add('case_sjmc-phone-video-wrapper--on-pause')
     }
-
-    initImgLazyHelper()
   },
 
   methods: {

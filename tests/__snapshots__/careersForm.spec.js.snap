@@ -21,6 +21,7 @@ exports[`careersForm component renders correctly 1`] = `
           
           <span>
             <input
+              autofocus="autofocus"
               class="careers__form-input careers__form-name-input"
               placeholder="John Smith"
               type="text"
@@ -63,7 +64,7 @@ exports[`careersForm component renders correctly 1`] = `
             class="careers__position-list"
           >
             <uiradiobuttons-stub
-              radios="[object Object],[object Object],[object Object],[object Object]"
+              options="[object Object],[object Object],[object Object],[object Object]"
             />
           </ul>
            
@@ -129,15 +130,14 @@ exports[`careersForm component renders correctly 1`] = `
           disabled="true"
           type="submit"
         >
-          
-          I want to work for Mad Devs!
-        
+           I want to work for Mad Devs! 
         </button-stub>
       </form>
     </div>
   </div>
    
-  <successmodal-stub
+  <modalsuccess-stub
+    displaytime="3000"
     id="career-modal"
   />
 </section>

@@ -1,5 +1,5 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils'
-import Footer from '@/components/Footer'
+import Footer from '@/components/core/Footer/Footer'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -31,7 +31,7 @@ describe('footer', () => {
   // --------------------- //
 
   it('correctly sets the route when mounted', () => {
-    expect(wrapper.vm.$data.currentPageName).toBe('/')
+    expect(wrapper.vm.$data.pageName).toBe('/')
   })
 
   it('correctly sets the current pages name and class', () => {
