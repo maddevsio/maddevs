@@ -1,0 +1,699 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`caseStudies component should render correctly case studies 1`] = `
+<div>
+  <section
+    class="case-studies"
+    id="case-studies"
+  >
+    <div
+      class="container"
+    >
+      <div>
+        <h2
+          class="case-studies__main-title case-studies__main-title-"
+        >
+          
+        Case 
+          <!---->
+          
+        Studies
+      
+        </h2>
+         
+        <!---->
+      </div>
+       
+      <div
+        class="projects"
+      >
+        <a
+          class="single-project"
+          href="/case-studies/namba-food/"
+          style="background: rgb(248, 247, 246);"
+          target="_self"
+        >
+          <div
+            class="single-project__container single-project_black-letters-theme"
+          >
+            <div
+              class="single-project__content-wrap"
+            >
+              <img
+                alt="Namba Food Contactless Delivery Service\`s Logo."
+                class="img_lazy single-project__logo"
+                data-src="[object Object]"
+                height="41"
+                width="104"
+              />
+               
+              <h3
+                class="single-project__sub-title"
+              >
+                
+        Contactless Delivery Service
+      
+              </h3>
+               
+              <p
+                class="single-project__paragraph paragraph"
+              >
+                
+        Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.
+      
+              </p>
+               
+              <div
+                class="contribution-widget"
+              >
+                <img
+                  alt="Mad Devs logo"
+                  class="contribution-widget__img img_lazy"
+                  data-src="[object Object]"
+                  height="18"
+                  width="20"
+                />
+                 
+                <span
+                  class="contribution-widget__content contribution-widget__content_nambafood"
+                >
+                  
+    contribution: Backend, Infrastructure, Frontend
+  
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="single-project__background"
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  data-srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Namba Food Contactless Delivery Service\`s Logo."
+                  class="img_lazy"
+                  data-src="[object Object]"
+                  data-srcset="[object Object] 2x"
+                  height="294"
+                  width="610"
+                />
+              </picture>
+            </div>
+          </div>
+        </a>
+        <a
+          class="single-project"
+          href="/case-studies/sir-john-monash-centre/"
+          style="background: rgb(34, 31, 32);"
+          target="_self"
+        >
+          <div
+            class="single-project__container single-project_white-letters-theme"
+          >
+            <div
+              class="single-project__content-wrap"
+            >
+              <img
+                alt="General John Monash The Australian War Memorial\`s Logo."
+                class="img_lazy single-project__logo"
+                data-src="[object Object]"
+                height="41"
+                width="91.5"
+              />
+               
+              <h3
+                class="single-project__sub-title"
+              >
+                
+        Australian National Interpretive Centre
+      
+              </h3>
+               
+              <p
+                class="single-project__paragraph paragraph"
+              >
+                
+        Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.
+      
+              </p>
+               
+              <div
+                class="contribution-widget"
+              >
+                <img
+                  alt="Mad Devs logo"
+                  class="contribution-widget__img img_lazy"
+                  data-src="[object Object]"
+                  height="18"
+                  width="20"
+                />
+                 
+                <span
+                  class="contribution-widget__content contribution-widget__content_sjmc"
+                >
+                  
+    contribution: Backend, Infrastructure, Frontend
+  
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="single-project__background"
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  data-srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="General John Monash The Australian War Memorial\`s Logo."
+                  class="img_lazy"
+                  data-src="[object Object]"
+                  data-srcset="[object Object] 2x"
+                  height="294"
+                  width="610"
+                />
+              </picture>
+            </div>
+          </div>
+        </a>
+        <a
+          class="single-project"
+          href="https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0"
+          style="background: rgb(14, 27, 39);"
+          target="_blank"
+        >
+          <div
+            class="single-project__container single-project_white-letters-theme"
+          >
+            <div
+              class="single-project__content-wrap"
+            >
+              <img
+                alt="Guardrails Cloud CyberSecurity Services Logo."
+                class="img_lazy single-project__logo"
+                data-src="[object Object]"
+                height="41"
+                width="174"
+              />
+               
+              <h3
+                class="single-project__sub-title"
+              >
+                
+        Cloud cybersecurity service
+      
+              </h3>
+               
+              <p
+                class="single-project__paragraph paragraph"
+              >
+                
+        Mad Devs was involved with Guardrails' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.
+      
+              </p>
+               
+              <div
+                class="contribution-widget"
+              >
+                <img
+                  alt="Mad Devs logo"
+                  class="contribution-widget__img img_lazy"
+                  data-src="[object Object]"
+                  height="18"
+                  width="20"
+                />
+                 
+                <span
+                  class="contribution-widget__content contribution-widget__content_guardrails"
+                >
+                  
+    contribution: Backend, Infrastructure, Frontend
+  
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="single-project__background single-project__background_guardrails"
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  data-srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Guardrails Cloud CyberSecurity Services Logo."
+                  class="img_lazy"
+                  data-src="[object Object]"
+                  data-srcset="[object Object] 2x"
+                  height="294"
+                  width="610"
+                />
+              </picture>
+            </div>
+          </div>
+        </a>
+        <a
+          class="single-project"
+          href="/case-studies/godee/"
+          style="background: rgb(255, 106, 1);"
+          target="_self"
+        >
+          <div
+            class="single-project__container single-project_black-letters-theme"
+          >
+            <div
+              class="single-project__content-wrap"
+            >
+              <img
+                alt="GoDee Bus Transportation Services Logo."
+                class="img_lazy single-project__logo"
+                data-src="[object Object]"
+                height="41"
+                width="121"
+              />
+               
+              <h3
+                class="single-project__sub-title"
+              >
+                
+        Convenient shuttle bus service
+      
+              </h3>
+               
+              <p
+                class="single-project__paragraph paragraph"
+              >
+                
+        Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.
+      
+              </p>
+               
+              <div
+                class="contribution-widget"
+              >
+                <img
+                  alt="Mad Devs logo"
+                  class="contribution-widget__img img_lazy"
+                  data-src="[object Object]"
+                  height="18"
+                  width="20"
+                />
+                 
+                <span
+                  class="contribution-widget__content contribution-widget__content_godee"
+                >
+                  
+    contribution: Backend, Infrastructure, Mobile Apps
+  
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="single-project__background"
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  data-srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="GoDee Bus Transportation Services Logo."
+                  class="img_lazy"
+                  data-src="[object Object]"
+                  data-srcset="[object Object] 2x"
+                  height="294"
+                  width="610"
+                />
+              </picture>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`caseStudies component should render correctly with slot 1`] = `
+<div>
+  <section
+    class="case-studies"
+    id="case-studies"
+  >
+    <div
+      class="container"
+    >
+      <div>
+        <h2
+          class="case-studies__main-title case-studies__main-title-"
+        >
+          
+        Case 
+          <!---->
+          
+        Studies
+      
+        </h2>
+         
+        <!---->
+      </div>
+       
+      <div
+        class="projects"
+      >
+        <a
+          class="single-project"
+          href="/case-studies/namba-food/"
+          style="background: rgb(248, 247, 246);"
+          target="_self"
+        >
+          <div
+            class="single-project__container single-project_black-letters-theme"
+          >
+            <div
+              class="single-project__content-wrap"
+            >
+              <img
+                alt="Namba Food Contactless Delivery Service\`s Logo."
+                class="img_lazy single-project__logo"
+                data-src="[object Object]"
+                height="41"
+                width="104"
+              />
+               
+              <h3
+                class="single-project__sub-title"
+              >
+                
+        Contactless Delivery Service
+      
+              </h3>
+               
+              <p
+                class="single-project__paragraph paragraph"
+              >
+                
+        Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.
+      
+              </p>
+               
+              <div
+                class="contribution-widget"
+              >
+                <img
+                  alt="Mad Devs logo"
+                  class="contribution-widget__img img_lazy"
+                  data-src="[object Object]"
+                  height="18"
+                  width="20"
+                />
+                 
+                <span
+                  class="contribution-widget__content contribution-widget__content_nambafood"
+                >
+                  
+    contribution: Backend, Infrastructure, Frontend
+  
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="single-project__background"
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  data-srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Namba Food Contactless Delivery Service\`s Logo."
+                  class="img_lazy"
+                  data-src="[object Object]"
+                  data-srcset="[object Object] 2x"
+                  height="294"
+                  width="610"
+                />
+              </picture>
+            </div>
+          </div>
+        </a>
+        <a
+          class="single-project"
+          href="/case-studies/sir-john-monash-centre/"
+          style="background: rgb(34, 31, 32);"
+          target="_self"
+        >
+          <div
+            class="single-project__container single-project_white-letters-theme"
+          >
+            <div
+              class="single-project__content-wrap"
+            >
+              <img
+                alt="General John Monash The Australian War Memorial\`s Logo."
+                class="img_lazy single-project__logo"
+                data-src="[object Object]"
+                height="41"
+                width="91.5"
+              />
+               
+              <h3
+                class="single-project__sub-title"
+              >
+                
+        Australian National Interpretive Centre
+      
+              </h3>
+               
+              <p
+                class="single-project__paragraph paragraph"
+              >
+                
+        Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.
+      
+              </p>
+               
+              <div
+                class="contribution-widget"
+              >
+                <img
+                  alt="Mad Devs logo"
+                  class="contribution-widget__img img_lazy"
+                  data-src="[object Object]"
+                  height="18"
+                  width="20"
+                />
+                 
+                <span
+                  class="contribution-widget__content contribution-widget__content_sjmc"
+                >
+                  
+    contribution: Backend, Infrastructure, Frontend
+  
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="single-project__background"
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  data-srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="General John Monash The Australian War Memorial\`s Logo."
+                  class="img_lazy"
+                  data-src="[object Object]"
+                  data-srcset="[object Object] 2x"
+                  height="294"
+                  width="610"
+                />
+              </picture>
+            </div>
+          </div>
+        </a>
+        <a
+          class="single-project"
+          href="https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0"
+          style="background: rgb(14, 27, 39);"
+          target="_blank"
+        >
+          <div
+            class="single-project__container single-project_white-letters-theme"
+          >
+            <div
+              class="single-project__content-wrap"
+            >
+              <img
+                alt="Guardrails Cloud CyberSecurity Services Logo."
+                class="img_lazy single-project__logo"
+                data-src="[object Object]"
+                height="41"
+                width="174"
+              />
+               
+              <h3
+                class="single-project__sub-title"
+              >
+                
+        Cloud cybersecurity service
+      
+              </h3>
+               
+              <p
+                class="single-project__paragraph paragraph"
+              >
+                
+        Mad Devs was involved with Guardrails' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.
+      
+              </p>
+               
+              <div
+                class="contribution-widget"
+              >
+                <img
+                  alt="Mad Devs logo"
+                  class="contribution-widget__img img_lazy"
+                  data-src="[object Object]"
+                  height="18"
+                  width="20"
+                />
+                 
+                <span
+                  class="contribution-widget__content contribution-widget__content_guardrails"
+                >
+                  
+    contribution: Backend, Infrastructure, Frontend
+  
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="single-project__background single-project__background_guardrails"
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  data-srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Guardrails Cloud CyberSecurity Services Logo."
+                  class="img_lazy"
+                  data-src="[object Object]"
+                  data-srcset="[object Object] 2x"
+                  height="294"
+                  width="610"
+                />
+              </picture>
+            </div>
+          </div>
+        </a>
+        <a
+          class="single-project"
+          href="/case-studies/godee/"
+          style="background: rgb(255, 106, 1);"
+          target="_self"
+        >
+          <div
+            class="single-project__container single-project_black-letters-theme"
+          >
+            <div
+              class="single-project__content-wrap"
+            >
+              <img
+                alt="GoDee Bus Transportation Services Logo."
+                class="img_lazy single-project__logo"
+                data-src="[object Object]"
+                height="41"
+                width="121"
+              />
+               
+              <h3
+                class="single-project__sub-title"
+              >
+                
+        Convenient shuttle bus service
+      
+              </h3>
+               
+              <p
+                class="single-project__paragraph paragraph"
+              >
+                
+        Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.
+      
+              </p>
+               
+              <div
+                class="contribution-widget"
+              >
+                <img
+                  alt="Mad Devs logo"
+                  class="contribution-widget__img img_lazy"
+                  data-src="[object Object]"
+                  height="18"
+                  width="20"
+                />
+                 
+                <span
+                  class="contribution-widget__content contribution-widget__content_godee"
+                >
+                  
+    contribution: Backend, Infrastructure, Mobile Apps
+  
+                </span>
+              </div>
+            </div>
+             
+            <div
+              class="single-project__background"
+            >
+              <picture>
+                <source
+                  class="multi-image"
+                  data-srcset="[object Object] ,[object Object] 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="GoDee Bus Transportation Services Logo."
+                  class="img_lazy"
+                  data-src="[object Object]"
+                  data-srcset="[object Object] 2x"
+                  height="294"
+                  width="610"
+                />
+              </picture>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+`;
