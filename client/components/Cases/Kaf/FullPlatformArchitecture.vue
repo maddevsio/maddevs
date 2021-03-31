@@ -1,8 +1,6 @@
 <template>
   <section class="container_full">
-    <div>
-      <!--- Тут будет лотти анимация --->
-    </div>
+    <div class="lottie-animation"></div>
     <TextParagraph class="m-104_bottom media-m-48_bottom case_text-align-center">
       Full Platform Architecture:
     </TextParagraph>
@@ -19,5 +17,3 @@ export default {
   },
 }
 </script>
-
-<style></style>

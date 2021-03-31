@@ -1563,7 +1563,9 @@ exports[`kaf renders correctly 1`] = `
     <section
       class="container_full"
     >
-      <div />
+      <div
+        class="lottie-animation"
+      />
        
       <p
         class="case_paragraph m-104_bottom media-m-48_bottom case_text-align-center"
