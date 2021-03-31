@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils'
 
 import Button from '@/components/Careers/Button'
-import CareersForm from '@/components/Careers/CareersForm'
+import CareersForm from '@/components/Careers/Careers'
 
 describe('button component', () => {
   let wrapper
@@ -29,7 +29,7 @@ describe('button component', () => {
   })
 
   it('should have CareersForm parent component', () => {
-    expect(wrapper.vm.$parent.$options.name).toBe('CareersForm')
+    expect(wrapper.vm.$parent.$options.name).toBe('Careers')
   })
 
   it('renders correctly', () => {

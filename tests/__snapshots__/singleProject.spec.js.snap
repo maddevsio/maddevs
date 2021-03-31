@@ -52,8 +52,8 @@ exports[`caseStudies component renders correctly 1`] = `
           class="contribution-widget__content contribution-widget__content_godee"
         >
           
-    contribution: Backend, Infrastructure, Mobile Apps
-  
+          contribution: Backend, Infrastructure, Mobile Apps
+        
         </span>
       </div>
     </div>

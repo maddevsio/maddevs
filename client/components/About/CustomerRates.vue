@@ -6,30 +6,13 @@
         customer&nbsp;&nbsp;&nbsp;<span class="customer-rates__title-icon">rates:</span>
       </h2>
       <div class="customer-rates__top-row row">
-        <div class="col-xl-4 col-md-4">
+        <div v-for="item in percentages" :key="item.percent" class="col-xl-4 col-md-4">
           <div class="customer-rates__rates-block customer-rates__rates-block-top-row">
-            <p class="customer-rates__number-item customer-rates__number-item-top-row">92%</p>
+            <p class="customer-rates__number-item customer-rates__number-item-top-row">{{ item.percent }}%</p>
             <p class="customer-rates__description customer-rates__description-top-row">
-              recommend us <br class="customer-rates__line-break" />
-              to others.
-            </p>
-          </div>
-        </div>
-        <div class="col-xl-4 col-md-4">
-          <div class="customer-rates__rates-block customer-rates__rates-block-top-row">
-            <p class="customer-rates__number-item customer-rates__number-item-top-row">87%</p>
-            <p class="customer-rates__description customer-rates__description-top-row">
-              stay with us for <br class="customer-rates__line-break" />
-              more than 2 years.
-            </p>
-          </div>
-        </div>
-        <div class="col-xl-4 col-md-4">
-          <div class="customer-rates__rates-block customer-rates__rates-block-top-row">
-            <p class="customer-rates__number-item customer-rates__number-item-top-row">98%</p>
-            <p class="customer-rates__description customer-rates__description-top-row">
-              are satisfied with <br class="customer-rates__line-break" />
-              our pricing.
+              {{ item.description }}
+              <br class="customer-rates__line-break" />
+              {{ item.descriptionSecond }}
             </p>
           </div>
         </div>
@@ -37,11 +20,11 @@
       <div class="customer-rates__bottom-row">
         <h3 class="customer-rates__section-sub-title">Mad Devs' key metrics:</h3>
         <div class="row">
-          <div v-for="(contentItem, i) in bottomTextContent" :key="i" class="col-xl-2 col-lg-4 col-md-4 col-6">
+          <div v-for="metrick in keyMetricks" :key="metrick.number" class="col-xl-2 col-lg-4 col-md-4 col-6">
             <div class="customer-rates__rates-block customer-rates__rates-block-bottom-row">
-              <p class="customer-rates__number-item customer-rates__number-item-bottom-row">{{ contentItem.number }}</p>
+              <p class="customer-rates__number-item customer-rates__number-item-bottom-row">{{ metrick.number }}</p>
               <p class="customer-rates__description customer-rates__description-bottom-row">
-                {{ contentItem.description }}
+                {{ metrick.description }}
               </p>
             </div>
           </div>
@@ -52,36 +35,14 @@
 </template>
 
 <script>
+import { ratesPercentages as percentages, keyMetricks } from '@/data/customers'
+
 export default {
   name: 'CustomerRates',
   data() {
     return {
-      bottomTextContent: [
-        {
-          number: '10M+',
-          description: 'US dollars raised by 5 customer startups in 2019.',
-        },
-        {
-          number: '75%',
-          description: 'of customers are now paying 50% less for IT infrastructure.',
-        },
-        {
-          number: '30+',
-          description: 'tech bloggers and conference speakers in our team.',
-        },
-        {
-          number: '50+',
-          description: 'projects delivered to customers by our team.',
-        },
-        {
-          number: '100+',
-          description: 'staff members work for Mad Devs.',
-        },
-        {
-          number: '70+',
-          description: 'open-source projects on GitHub.',
-        },
-      ],
+      percentages,
+      keyMetricks,
     }
   },
 }
@@ -92,6 +53,9 @@ export default {
 
 .customer-rates {
   background-color: $bgcolor--white-darken;
+  // margins and paddings for removing the dark line between sections, that appears when Chome browser is scaled > 100%
+  margin: -1px 0;
+  padding: 1px 0;
 
   &__main-title-wrapper {
     display: flex;

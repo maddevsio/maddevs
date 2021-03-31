@@ -13,7 +13,7 @@ describe('recommended blog widget component', () => {
         },
       },
       propsData: { post: blogPost },
-      stubs: ['nuxt-link'],
+      stubs: ['nuxt-link', 'NuxtLink'],
     })
   })
 

@@ -77,7 +77,7 @@ import FeaturedPost from '@/components/Blog/FeaturedPost'
 import SkeletonBlogWidget from '@/components/Blog/SkeletonBlogWidget'
 import SkeletonFeaturedPost from '@/components/Blog/SkeletonFeaturedPost'
 import CustomerUniversitySection from '@/components/Blog/CustomerUniversitySection'
-import initImgLazyHelper from '@/helpers/initImgLazy'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'Blog',
@@ -90,18 +90,13 @@ export default {
     CustomerUniversitySection,
   },
 
-  beforeRouteEnter(to, from, next) {
-    next(vm => {
-      if (from.params.uid) vm.visitedPost = from.fullPath
-    })
-  },
+  mixins: [initLazyLoadMixin],
 
   data() {
     return {
       pageSize: 12,
       metaTitle: 'Blog',
       ogUrl: 'https://maddevs.io/blog/',
-      visitedPost: null,
     }
   },
 
@@ -167,28 +162,8 @@ export default {
     },
   },
 
-  watch: {
-    // Fixes scroll position for async filtered posts list
-    filteredPosts() {
-      const visitedLinkEl = document.querySelector(`a[href='${this.visitedPost}']`)
-      if (
-        visitedLinkEl &&
-        !visitedLinkEl.classList.contains('featured-post') &&
-        !visitedLinkEl.classList.contains('latest-post')
-      ) {
-        const postItemEl = visitedLinkEl.parentNode // single-post__wrapper
-        postItemEl.scrollIntoView({ block: 'start' })
-        window.scrollTo(0, window.scrollY - 120) // scroll for distance between the post and the top of the screen
-      }
-    },
-  },
-
   created() {
     this.getContent()
-  },
-
-  mounted() {
-    initImgLazyHelper()
   },
 
   methods: {
@@ -202,7 +177,6 @@ export default {
     },
 
     handleFilterChange(e) {
-      this.visitedPost = null
       this.changePostsCategory(e.target.value)
     },
   },

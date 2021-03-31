@@ -17,7 +17,7 @@ describe('projects page', () => {
     }
     wrapper = mount(ProjectsPage, {
       localVue,
-      stubs: ['nuxt-link'],
+      stubs: ['nuxt-link', 'NuxtLink'],
     })
   })
 
@@ -30,12 +30,4 @@ describe('projects page', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
   // --------------------- //
-
-  it('sets the correctly data', () => {
-    expect(wrapper.vm.$data.title).toEqual('Mad Devs Portfolio: Key Clients, Case Studies and Open Source Projects')
-    expect(wrapper.vm.$data.description).toEqual(
-      'Check out our software engineering and mobile app development projects for companies from transportation, logistic, edtech, cloudtech, security, advertising, finance, and other industries.',
-    )
-    expect(wrapper.vm.$data.ogUrl).toEqual('https://maddevs.io/projects/')
-  })
 })

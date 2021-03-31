@@ -13,7 +13,7 @@
             public mobility by building new smart ways of a daily commute.
           </p>
         </CaseHeader>
-        <div id="case-first-section" class="case_animation_block"></div>
+        <div id="case-body" class="case_animation_block"></div>
         <section class="container_regular">
           <TextParagraph class="m-48_top media-m-24_top">
             GoDee is a reliable way to commute in Ho Chi Minh City, Vietnam. Its shuttle buses take express routes that
@@ -99,7 +99,7 @@
         <section class="container_full case_before-after-wrapper background-color-silver m-48_top media-m-20_top">
           <h2 class="case_title_h2 m-24_bottom case_text-align-center">Before & After</h2>
           <div class="container_regular">
-            <BeforeAfterImage
+            <UIBeforeAfterImage
               :base-width="'1000'"
               :base-height="'578.47'"
               :before-image="'Cases/godee/png/application-before.png'"
@@ -643,10 +643,11 @@ import CardGoDeeFeature from '@/components/Cases/cards/godee/CardGoDeeFeature'
 import CardGoDeePreview from '@/components/Cases/cards/godee/CardGoDeePreview'
 import CardGoDeeImpact from '@/components/Cases/cards/godee/CardGoDeeImpact'
 import CardGoDeePrimsAlgorithm from '@/components/Cases/cards/godee/CardGoDeePrimsAlgorithm'
-import FooterMain from '@/components/Footer'
-import HeaderMain from '@/components/Header'
-import BeforeAfterImage from '@/components/ui/BeforeAfterImage'
-import initImgLazyHelper from '@/helpers/initImgLazy'
+import FooterMain from '@/components/core/Footer/Footer'
+import HeaderMain from '@/components/core/Header/Header'
+import UIBeforeAfterImage from '@/components/shared/UIBeforeAfterImage'
+import { getMetadata, buildHead } from '@/data/seo'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'GoDeeCase',
@@ -673,17 +674,14 @@ export default {
     CardGoDeePrimsAlgorithm,
     FooterMain,
     HeaderMain,
-    BeforeAfterImage,
+    UIBeforeAfterImage,
   },
 
-  layout: 'godee-case-layout',
+  mixins: [initLazyLoadMixin],
+
+  layout: 'godee',
   data() {
     return {
-      title: 'Mad Devs Case Study: GoDee - Convenient Shuttle Bus Service',
-      description:
-        'Case Study Shuttle Bus Service. Read GoDee’s story on building a public transportation app for passengers and drivers and a monitoring system for admins in Vietnam.',
-
-      ogUrl: 'https://maddevs.io/case-studies/godee/',
       team: [
         {
           name: 'Oleg Puzanov',
@@ -895,36 +893,10 @@ export default {
   },
 
   head() {
-    return {
-      title: this.title,
-      meta: [
-        { name: 'description', content: this.description },
-        { property: 'og:url', content: this.ogUrl },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: this.title },
-        { property: 'og:description', content: this.description },
-        {
-          property: 'og:image',
-          content: 'https://maddevs.io/godee.png',
-        },
-      ],
-
-      link: [
-        {
-          rel: 'canonical',
-          href: 'https://maddevs.io/case-studies/godee/',
-        },
-      ],
-
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [
-        {
-          type: 'application/ld+json',
-          innerHTML:
-            '{"@context": "https://schema.org", "@type": "WebPage", "breadcrumb": "Projects > Case Studies > Transportation Solutions", "name": "Mad Devs Case Study: GoDee - Convenient Shuttle Bus Service", "description": "Case Study Shuttle Bus Service. Read GoDee’s story on building a public transportation app for passengers and drivers and a monitoring system for admins in Vietnam.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group LTD"}}',
-        },
-      ],
-    }
+    return buildHead({
+      ...getMetadata('godee'),
+      image: 'https://maddevs.io/godee.png',
+    })
   },
 
   computed: {
@@ -978,7 +950,6 @@ export default {
       const observer = new IntersectionObserver(callback, options)
       observer.observe(document.getElementById(video))
     })
-    initImgLazyHelper()
   },
 
   methods: {
