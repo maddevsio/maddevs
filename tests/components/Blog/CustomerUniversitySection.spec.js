@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import CustomerUniversitySection from '../../../client/components/Blog/CustomerUniversitySection'
+import CustomerUniversitySection from '@/components/Blog/CustomerUniversitySection'
 
 describe('customer University section component', () => {
   it('is a Vue instance', () => {

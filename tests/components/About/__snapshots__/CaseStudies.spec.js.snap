@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`uIButton component should render correctly case studies 1`] = `
+exports[`CaseStudies component should render correctly case studies 1`] = `
 <div>
   <section
     class="case-studies"
@@ -349,7 +349,7 @@ exports[`uIButton component should render correctly case studies 1`] = `
 </div>
 `;
 
-exports[`uIButton component should render correctly with slot 1`] = `
+exports[`CaseStudies component should render correctly with slot 1`] = `
 <div>
   <section
     class="case-studies"

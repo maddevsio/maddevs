@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/vue'
-import BlogWidget from '../../../client/components/Blog/BlogWidget'
+import BlogWidget from '@/components/Blog/BlogWidget'
 import blogPost from '../../__mocks__/blogPost'
 import blogPostWithLongTitle from '../../__mocks__/blogPostWithLongTitle'
 

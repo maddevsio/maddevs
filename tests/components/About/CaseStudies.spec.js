@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/vue'
 import CaseStudies from '@/components/About/CaseStudies'
 
-describe('uIButton component', () => {
+describe('caseStudies component', () => {
   const $route = {
     path: '/',
   }

@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import CuNavigation from '../../../client/components/Blog/CuNavigation'
+import CuNavigation from '@/components/Blog/CuNavigation'
 
 describe('cuNavigation', () => {
   const clusterPosts = [
