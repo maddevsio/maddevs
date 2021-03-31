@@ -3,16 +3,10 @@
     <slot></slot>
     <div class="case_blockquote-author__author-info m-24_top">
       <div class="case_blockquote-author__photo m-auto">
-        <Picture
-          :picture-folder="pictureFolder"
-          :file-name="fileName"
-          :file-extension="fileExtension"
-          :alt="alt"
-          :lazy-loading="true"
-        />
+        <Picture :folder="folder" :file="file" :extension="extension" :alt="author" :lazy="true" />
       </div>
-      <TextParagraph class="case_blockquote-author__name">{{ authorName }}</TextParagraph>
-      <p class="case_blockquote-author__position">{{ authorPosition }}</p>
+      <TextParagraph class="case_blockquote-author__name">{{ author }}</TextParagraph>
+      <p class="case_blockquote-author__position">{{ position }}</p>
     </div>
   </blockquote>
 </template>
@@ -29,32 +23,27 @@ export default {
   },
 
   props: {
-    authorName: {
+    author: {
       type: String,
       default: '',
     },
 
-    authorPosition: {
+    position: {
       type: String,
       default: '',
     },
 
-    pictureFolder: {
+    folder: {
       type: String,
       default: '',
     },
 
-    fileName: {
+    file: {
       type: String,
       default: '',
     },
 
-    fileExtension: {
-      type: String,
-      default: '',
-    },
-
-    alt: {
+    extension: {
       type: String,
       default: '',
     },

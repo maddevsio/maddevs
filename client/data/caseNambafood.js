@@ -143,73 +143,85 @@ export const team = [
   {
     name: 'Vlad Andreev',
     position: 'Team Lead',
-    fileName: 'vlad-andreev',
-    fileExtension: 'png',
+    image: {
+      file: 'vlad-andreev',
+    },
   },
   {
     name: 'Gulbustan Baudunova',
     position: 'Back-end Developer',
-    fileName: 'gulbustan-baudunova',
-    fileExtension: 'png',
+    image: {
+      file: 'gulbustan-baudunova',
+    },
   },
   {
     name: 'Tamara Mun',
     position: 'Delivery Manager',
-    fileName: 'tamara-mun',
-    fileExtension: 'png',
+    image: {
+      file: 'tamara-mun',
+    },
   },
   {
     name: 'Aidai Atakulova',
     position: 'Project Manager',
-    fileName: 'aidai-atakulova',
-    fileExtension: 'png',
+    image: {
+      file: 'aidai-atakulova',
+    },
   },
   {
     name: 'Baurzhan Omuraliev',
     position: 'Back-end Developer',
-    fileName: 'baurzhan-omuraliev',
-    fileExtension: 'png',
+    image: {
+      file: 'baurzhan-omuraliev',
+    },
   },
   {
     name: 'Nakylai Taiirova',
     position: 'Back-end Developer',
-    fileName: 'nakylai-taiirova',
-    fileExtension: 'png',
+    image: {
+      file: 'nakylai-taiirova',
+    },
   },
   {
     name: 'Akylbek Djumaliev',
     position: 'Back-end Developer',
-    fileName: 'akylbek-djumaliev',
-    fileExtension: 'png',
+    image: {
+      file: 'akylbek-djumaliev',
+    },
   },
   {
     name: 'Stanislav Shcherbinin',
     position: 'Back-end Developer',
-    fileName: 'stanislav-shcherbinin',
-    fileExtension: 'png',
+    image: {
+      file: 'stanislav-shcherbinin',
+    },
   },
   {
     name: 'Eldar Akkozov',
     position: 'Mobile App Developer',
-    fileName: 'eldar-akkozov',
-    fileExtension: 'png',
+    image: {
+      file: 'eldar-akkozov',
+    },
   },
   {
     name: 'Altynai Toktomuratova',
     position: 'Mobile App Developer',
-    fileName: 'altynai-toktomuratova',
-    fileExtension: 'png',
+    image: {
+      file: 'altynai-toktomuratova',
+    },
   },
   {
     name: 'Dmitrii Khalezin',
     position: 'DevOps Engineer',
-    fileName: 'dmitrii-khalezin',
-    fileExtension: 'png',
+    image: {
+      file: 'dmitrii-khalezin',
+    },
   },
   {
     name: 'Belek Abylov',
     position: 'Back-end Developer',
-    fileName: 'belek-abylov',
-    fileExtension: 'png',
+    image: {
+      file: 'belek-abylov',
+    },
   },
 ]

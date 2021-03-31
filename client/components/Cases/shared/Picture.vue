@@ -1,22 +1,20 @@
 <template>
   <picture>
     <source
-      :class="{ 'box-shadow': boxShadow, 'border-radius': borderRadius, 'grey-background': backgroundColor }"
+      :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
       :srcset="[
-        require(`../../../assets/img/Cases/${pictureFolder}/webp/${fileName}.webp`) + ' ',
-        require(`../../../assets/img/Cases/${pictureFolder}/webp/${fileName}@2x.webp`) + ' 2x',
+        require(`../../../assets/img/Cases/${folder}/webp/${file}.webp`) + ' ',
+        require(`../../../assets/img/Cases/${folder}/webp/${file}@2x.webp`) + ' 2x',
       ]"
       class="image"
       type="image/webp"
     />
     <img
-      :class="{ 'box-shadow': boxShadow, 'border-radius': borderRadius, 'grey-background': backgroundColor }"
-      :src="[require(`../../../assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}.${fileExtension}`)]"
-      :srcset="[
-        require(`../../../assets/img/Cases/${pictureFolder}/${fileExtension}/${fileName}@2x.${fileExtension}`) + ' 2x',
-      ]"
+      :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
+      :src="[require(`../../../assets/img/Cases/${folder}/${extension}/${file}.${extension}`)]"
+      :srcset="[require(`../../../assets/img/Cases/${folder}/${extension}/${file}@2x.${extension}`) + ' 2x']"
       :alt="alt"
-      :loading="lazyLoading ? 'lazy' : ''"
+      :loading="lazy ? 'lazy' : ''"
       :width="width"
       :height="height"
       class="image"
@@ -30,17 +28,17 @@
 export default {
   name: 'Picture',
   props: {
-    pictureFolder: {
+    folder: {
       type: String,
       default: '',
     },
 
-    fileName: {
+    file: {
       type: String,
       default: '',
     },
 
-    fileExtension: {
+    extension: {
       type: String,
       default: '',
     },
@@ -50,17 +48,17 @@ export default {
       default: '',
     },
 
-    lazyLoading: {
+    lazy: {
       type: Boolean,
       default: false,
     },
 
-    boxShadow: {
+    shadow: {
       type: Boolean,
       default: false,
     },
 
-    borderRadius: {
+    radius: {
       type: Boolean,
       default: false,
     },
@@ -75,7 +73,7 @@ export default {
       default: 0,
     },
 
-    backgroundColor: {
+    background: {
       type: Boolean,
       default: false,
     },

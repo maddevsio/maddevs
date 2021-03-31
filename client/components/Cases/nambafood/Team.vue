@@ -7,17 +7,7 @@
       closely with the customer:
     </TextParagraph>
     <ListTeam>
-      <ListTeamItem
-        v-for="member in team"
-        :key="member.name"
-        :name="member.name"
-        :position="member.position"
-        :file-name="member.fileName"
-        :file-name-retina="`${member.fileName}@2x`"
-        :file-extension="member.fileExtension"
-        :alt="member.name"
-        picture-folder="common"
-      />
+      <ListTeamItem v-for="member in team" :key="member.name" v-bind="member" />
     </ListTeam>
     <h4 class="case_title_h4 m-72_top m-12_bottom media-m-41_top">Transparent communication</h4>
     <TextParagraph>

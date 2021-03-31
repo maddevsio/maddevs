@@ -1,7 +1,7 @@
 <template>
   <li class="case_technologies-item">
     <div :class="className" class="case_technologies-item__tech-icon"></div>
-    <p class="case_technologies-item__tech-name">{{ techName }}</p>
+    <p class="case_technologies-item__tech-name">{{ name }}</p>
   </li>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
   name: 'ListTechnologiesItem',
   props: {
-    techName: {
+    name: {
       type: String,
       default: '',
     },

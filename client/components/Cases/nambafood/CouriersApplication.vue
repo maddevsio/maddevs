@@ -17,10 +17,10 @@
       </section>
       <section class="container_middle case_couriers-android-app-wrapper">
         <Picture
-          :lazy-loading="false"
-          picture-folder="nambafood"
-          file-name="couriers-android-app"
-          file-extension="png"
+          :lazy="false"
+          folder="nambafood"
+          file="couriers-android-app"
+          extension="png"
           alt="Namba Food: Courier App for Android."
         />
       </section>

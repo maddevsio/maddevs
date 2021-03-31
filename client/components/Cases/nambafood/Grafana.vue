@@ -10,12 +10,11 @@
     </section>
     <section class="container_middle">
       <Picture
-        :box-shadow="true"
-        :lazy-loading="true"
-        picture-folder="nambafood"
-        file-name="grafana"
-        file-name-retina="grafana@2x"
-        file-extension="jpg"
+        :shadow="true"
+        :lazy="true"
+        folder="nambafood"
+        file="grafana"
+        extension="jpg"
         alt="Namba Food: Software Stability Monitoring with Grafana."
       />
     </section>

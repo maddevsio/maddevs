@@ -10,11 +10,10 @@
     <section class="container_full background-color-silver case_pipelines-image-desktop">
       <section class="container_full case_full-screen-image">
         <Picture
-          :lazy-loading="true"
-          picture-folder="nambafood"
-          file-name="pipelines"
-          file-name-retina="pipelines@2x"
-          file-extension="jpg"
+          :lazy="true"
+          folder="nambafood"
+          file="pipelines"
+          extension="jpg"
           alt="Namba Food: Automated Deployment Stage Scheme."
         />
       </section>
@@ -22,11 +21,10 @@
     <section class="container_full case_pipelines-image-mobile">
       <section class="container_full case_full-screen-image">
         <Picture
-          :lazy-loading="true"
-          picture-folder="nambafood"
-          file-name="pipelines-mobile"
-          file-name-retina="pipelines-mobile@2x"
-          file-extension="jpg"
+          :lazy="true"
+          folder="nambafood"
+          file="pipelines-mobile"
+          extension="jpg"
           alt="Namba Food: Automated Deployment Stage Scheme."
         />
       </section>

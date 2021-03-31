@@ -31,12 +31,12 @@
     </div>
     <TextQuoteAuthor
       class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
-      author-name="Aziza Anarbekova"
-      author-position="Co-Founder, Namba Food"
-      file-name="aziza-anarbekova"
-      file-extension="png"
+      author="Aziza Anarbekova"
+      position="Co-Founder, Namba Food"
+      file="aziza-anarbekova"
+      extension="png"
       alt="Aziza Anarbekova Namba Food Delivery Service Co-Founder."
-      picture-folder="nambafood"
+      folder="nambafood"
     >
       “Thanks to our close collaboration, we saw a notable increase in the return on investment, as the number of orders
       grew by 53% YoY. The Mad Devs Team always surpasses expectations and stays open to suggestions. The team's

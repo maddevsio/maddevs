@@ -3,19 +3,19 @@
     <div :class="{ 'box-shadow': boxShadow }" class="swiper-container thumb-example">
       <Picture
         v-if="safariTopBar"
-        :file-name="safariTopBarImage"
+        :file="safariTopBarImage"
         :alt="safariTopBarAlt"
-        :lazy-loading="true"
-        picture-folder="common"
-        file-extension="jpg"
+        :lazy="true"
+        folder="common"
+        extension="jpg"
       />
       <swiper ref="swiperTop" :options="swiperOptionTop" class="swiper gallery-top">
         <swiper-slide v-for="element in components" :key="element.fileName">
           <Picture
-            :picture-folder="element.pictureFolder"
-            :file-name="element.fileName"
-            :file-extension="element.fileExtension"
-            :lazy-loading="true"
+            :folder="element.pictureFolder"
+            :file="element.fileName"
+            :extension="element.fileExtension"
+            :lazy="true"
             :alt="element.alt"
           />
         </swiper-slide>
@@ -27,10 +27,10 @@
     <swiper ref="swiperThumbs" :options="swiperOptionThumbs" class="swiper gallery-thumbs">
       <swiper-slide v-for="element in components" :key="element.fileName">
         <Picture
-          :picture-folder="element.pictureFolder"
-          :file-name="element.fileName"
-          :file-extension="element.fileExtension"
-          :lazy-loading="true"
+          :folder="element.pictureFolder"
+          :file="element.fileName"
+          :extension="element.fileExtension"
+          :lazy="true"
           :alt="element.alt"
         />
       </swiper-slide>

@@ -17,21 +17,15 @@
         {{ description }}
       </TextParagraph>
       <div :class="`card-use-case__${classList.uniqueСlass}-picture`" class="card-use-case__desktop-picture">
-        <Picture
-          :picture-folder="pictureFolder"
-          :file-name="fileName"
-          :file-extension="fileExtension"
-          :alt="alt"
-          :lazy-loading="false"
-        />
+        <Picture :folder="pictureFolder" :file="fileName" :extension="fileExtension" :alt="alt" :lazy="false" />
       </div>
       <div :class="`card-use-case__${classList.uniqueСlass}-mobile-picture`" class="card-use-case__mobile-picture">
         <Picture
-          :picture-folder="pictureFolder"
-          :file-name="`${fileName}-mobile`"
-          :file-extension="fileExtension"
+          :folder="pictureFolder"
+          :file="`${fileName}-mobile`"
+          :extension="fileExtension"
           :alt="alt"
-          :lazy-loading="false"
+          :lazy="false"
         />
       </div>
     </div>

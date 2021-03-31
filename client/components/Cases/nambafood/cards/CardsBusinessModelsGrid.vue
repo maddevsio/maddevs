@@ -3,11 +3,10 @@
     <Card class="background-color-silver case_business-models-grid__personal-card">
       <div class="case_business-models-grid__personal-image">
         <Picture
-          :lazy-loading="true"
-          picture-folder="nambafood"
-          file-name="personal"
-          file-name-retina="personal@2x"
-          file-extension="png"
+          :lazy="true"
+          folder="nambafood"
+          file="personal"
+          extension="png"
           alt="Namba Food: Food and Grocery Delivery Service Couriers."
         />
       </div>

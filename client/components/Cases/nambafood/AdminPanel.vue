@@ -13,12 +13,11 @@
     </section>
     <section class="container_middle m-72_bottom media-m-48_bottom">
       <Picture
-        :box-shadow="true"
-        :lazy-loading="true"
-        picture-folder="nambafood"
-        file-name="sjms-analytics"
-        file-name-retina="sjms-analytics@2x"
-        file-extension="jpg"
+        :shadow="true"
+        :lazy="true"
+        folder="nambafood"
+        file="sjms-analytics"
+        extension="jpg"
         alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
       />
     </section>

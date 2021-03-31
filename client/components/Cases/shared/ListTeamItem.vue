@@ -1,14 +1,14 @@
 <template>
   <li class="case_team-item">
     <Picture
-      :picture-folder="pictureFolder"
-      :file-name="fileName"
-      :file-extension="fileExtension"
-      :alt="alt"
-      :lazy-loading="true"
+      :folder="image.folder || 'common'"
+      :file="image.file"
+      :extension="image.extension || 'png'"
+      :alt="name"
+      :lazy="true"
       :width="50"
       :height="50"
-      :background-color="true"
+      :background="true"
       class="case_team-item__image"
     />
     <div class="case_team-item__info">
@@ -38,24 +38,24 @@ export default {
       default: '',
     },
 
-    pictureFolder: {
-      type: String,
-      default: '',
-    },
+    image: {
+      type: Object,
+      required: true,
 
-    fileName: {
-      type: String,
-      default: '',
-    },
+      folder: {
+        type: String,
+        default: '',
+      },
 
-    fileExtension: {
-      type: String,
-      default: '',
-    },
+      file: {
+        type: String,
+        default: '',
+      },
 
-    alt: {
-      type: String,
-      default: '',
+      extension: {
+        type: String,
+        default: '',
+      },
     },
   },
 }
