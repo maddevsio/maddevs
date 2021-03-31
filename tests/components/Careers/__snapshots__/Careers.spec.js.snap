@@ -18,7 +18,8 @@ exports[`Careers component should render correctly 1`] = `
           <label
             class="careers__form-name-label"
           >
-            Hello, my name is
+            
+          Hello, my name is
           
             <span>
               <input
@@ -77,7 +78,9 @@ exports[`Careers component should render correctly 1`] = `
                   <div
                     class="ui-radio-buttons_item-label"
                   >
-                    Senior,
+                    
+      Senior,
+    
                   </div>
                 </div>
                 <div
@@ -90,7 +93,9 @@ exports[`Careers component should render correctly 1`] = `
                   <div
                     class="ui-radio-buttons_item-label"
                   >
-                    Middle,
+                    
+      Middle,
+    
                   </div>
                 </div>
                 <div
@@ -103,7 +108,9 @@ exports[`Careers component should render correctly 1`] = `
                   <div
                     class="ui-radio-buttons_item-label"
                   >
-                    Junior,
+                    
+      Junior,
+    
                   </div>
                 </div>
                 <div
@@ -116,7 +123,9 @@ exports[`Careers component should render correctly 1`] = `
                   <div
                     class="ui-radio-buttons_item-label"
                   >
-                    Intern
+                    
+      Intern
+    
                   </div>
                 </div>
               </div>
@@ -212,7 +221,9 @@ exports[`Careers component should render correctly 1`] = `
             id="careers-btn"
             type="submit"
           >
-             I want to work for Mad Devs! 
+            
+          I want to work for Mad Devs!
+        
           </button>
         </form>
       </div>
