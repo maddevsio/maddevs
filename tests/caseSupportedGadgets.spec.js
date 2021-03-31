@@ -5,7 +5,11 @@ describe('supported gadgets', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(SupportedGadgets)
+    wrapper = mount(SupportedGadgets, {
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
+    })
   })
 
   // ------ IMPORTANT ----- //

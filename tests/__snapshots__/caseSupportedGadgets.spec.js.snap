@@ -42,7 +42,7 @@ exports[`supported gadgets renders correctly 1`] = `
           >
             <source
               class="image"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -51,8 +51,8 @@ exports[`supported gadgets renders correctly 1`] = `
               class="image"
               height="449"
               loading=""
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="735"
             />
           </picture>
@@ -64,7 +64,7 @@ exports[`supported gadgets renders correctly 1`] = `
           <picture>
             <source
               class="image"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -73,8 +73,8 @@ exports[`supported gadgets renders correctly 1`] = `
               class="image"
               height="449"
               loading=""
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="735"
             />
           </picture>
@@ -101,7 +101,7 @@ exports[`supported gadgets renders correctly 1`] = `
           >
             <source
               class="image"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -110,8 +110,8 @@ exports[`supported gadgets renders correctly 1`] = `
               class="image"
               height="627"
               loading=""
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="312"
             />
           </picture>
@@ -123,7 +123,7 @@ exports[`supported gadgets renders correctly 1`] = `
           <picture>
             <source
               class="image"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -132,8 +132,8 @@ exports[`supported gadgets renders correctly 1`] = `
               class="image"
               height="627"
               loading=""
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="312"
             />
           </picture>
@@ -160,7 +160,7 @@ exports[`supported gadgets renders correctly 1`] = `
           >
             <source
               class="image"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -169,8 +169,8 @@ exports[`supported gadgets renders correctly 1`] = `
               class="image"
               height="374"
               loading=""
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="518"
             />
           </picture>
@@ -182,7 +182,7 @@ exports[`supported gadgets renders correctly 1`] = `
           <picture>
             <source
               class="image"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -191,8 +191,8 @@ exports[`supported gadgets renders correctly 1`] = `
               class="image"
               height="374"
               loading=""
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="518"
             />
           </picture>
