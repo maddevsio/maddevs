@@ -2,7 +2,7 @@
 
 exports[`card project milestone renders correctly 1`] = `
 <div
-  class="card background-color-backgroundColor"
+  class="card background-color-background"
 >
   <div
     class="card_lottie"

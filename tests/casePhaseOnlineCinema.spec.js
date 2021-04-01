@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import PhaseOnlineCinema from '../client/components/Cases/Kaf/PhaseOnlineCinema'
+import PhaseOnlineCinema from '../client/components/Cases/kaf/PhaseOnlineCinema'
 
 describe('phase online cinema', () => {
   let wrapper

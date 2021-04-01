@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import SupportedGadgets from '../client/components/Cases/Kaf/SupportedGadgets'
+import SupportedGadgets from '../client/components/Cases/kaf/SupportedGadgets'
 
 describe('supported gadgets', () => {
   let wrapper

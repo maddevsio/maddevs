@@ -1,20 +1,20 @@
 <template>
   <div class="card-content">
     <h4 class="card-content_title case_title_h4">
-      {{ gadget.title }}
+      {{ title }}
     </h4>
     <div
       class="card-content_gadget-picture-wrapp"
-      :class="`card-content_gadget-picture-wrapp-${gadget.fileName}-card`"
+      :class="`card-content_gadget-picture-wrapp-${file}-card`"
     >
       <Picture
         :lazy-loading="false"
         :box-shadow="false"
         :background-color="false"
-        :width="gadget.width"
-        :height="gadget.height"
-        :file-name="`${gadget.fileName}-card`"
-        :alt="gadget.alt"
+        :width="width"
+        :height="height"
+        :file-name="`${file}-card`"
+        :alt="alt"
         picture-folder="kaf"
         file-extension="png"
         class="card-content_picture"
@@ -22,16 +22,16 @@
     </div>
     <div
       class="card-content_gadget-picture-wrapp-mobile"
-      :class="`card-content_gadget-picture-wrapp-mobile-${gadget.fileName}`"
+      :class="`card-content_gadget-picture-wrapp-mobile-${file}`"
     >
       <Picture
         :lazy-loading="false"
         :box-shadow="false"
         :background-color="false"
-        :width="gadget.width"
-        :height="gadget.height"
-        :file-name="gadget.fileName"
-        :alt="gadget.alt"
+        :width="width"
+        :height="height"
+        :file-name="file"
+        :alt="alt"
         picture-folder="kaf"
         file-extension="png"
       />
@@ -49,34 +49,29 @@ export default {
   },
 
   props: {
-    gadget: {
-      type: Object,
-      default: () => {},
+    title: {
+      type: String,
+      default: '',
+    },
 
-      title: {
-        type: String,
-        default: '',
-      },
+    width: {
+      type: Number,
+      default: 0,
+    },
 
-      width: {
-        type: Number,
-        default: 0,
-      },
+    height: {
+      type: Number,
+      default: 0,
+    },
 
-      height: {
-        type: Number,
-        default: 0,
-      },
+    file: {
+      type: String,
+      default: '',
+    },
 
-      fileName: {
-        type: String,
-        default: '',
-      },
-
-      alt: {
-        type: String,
-        default: '',
-      },
+    alt: {
+      type: String,
+      default: '',
     },
   },
 }
