@@ -17,6 +17,9 @@ exports[`card supported gadgets renders correctly 1`] = `
   >
     <picture
       class="card-content_picture"
+      file-extension="png"
+      file-name="macbook-pro-card"
+      picture-folder="kaf"
     >
       <source
         class="image"
@@ -39,7 +42,11 @@ exports[`card supported gadgets renders correctly 1`] = `
   <div
     class="card-content_gadget-picture-wrapp-mobile card-content_gadget-picture-wrapp-mobile-macbook-pro"
   >
-    <picture>
+    <picture
+      file-extension="png"
+      file-name="macbook-pro"
+      picture-folder="kaf"
+    >
       <source
         class="image"
         srcset="img.jpg ,img.jpg 2x"

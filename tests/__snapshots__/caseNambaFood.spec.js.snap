@@ -75,9 +75,13 @@ exports[`namba food renders correctly 1`] = `
   <section
     class="case_body"
   >
+    <div
+      class="case_animation_block"
+      id="case-first-section"
+    />
+     
     <section
       class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom"
-      id="case-first-section"
     >
       <p
         class="case_paragraph"
@@ -354,32 +358,12 @@ exports[`namba food renders correctly 1`] = `
       <section
         class="container_full background-color-silver"
       >
-<<<<<<< HEAD
         <img
           alt="Namba Food: Website and Mobile App Infrastructure Scheme."
           class="case_gif case_high-level-system-overview-gif"
-          src="../../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif"
+          src="s3 image url"
         />
       </section>
-=======
-        
-        Namba Food is more than a delivery service website. With a partial vertical integration, it covers the entire
-        cycle of ordering goods online. This means that an advanced set of software and hardware was required to
-        maintain flawless work for all stakeholders, including end-users, couriers, team operators, and cafe and store
-        managers.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_full background-color-silver"
-    >
-      <img
-        alt="Namba Food: Website and Mobile App Infrastructure Scheme."
-        class="case_gif case_high-level-system-overview-gif"
-        src="s3 image url"
-      />
->>>>>>> ea8ea48f15ffb5bf6fd9c3a2fb64115a28e7b768
     </section>
      
     <section
@@ -727,7 +711,6 @@ exports[`namba food renders correctly 1`] = `
         <div
           class="case_full-screen-phone-video-wrapper"
         >
-<<<<<<< HEAD
           <video
             class="case_full-screen-video"
             height="100%"
@@ -737,7 +720,7 @@ exports[`namba food renders correctly 1`] = `
             width="100%"
           >
             <source
-              src="undefined/mobile-applications-for-end-users.faaab2d.mp4"
+              src="s3 image url"
               type="video/mp4"
             />
             
@@ -746,17 +729,6 @@ exports[`namba food renders correctly 1`] = `
           </video>
         </div>
       </section>
-=======
-          <source
-            src="s3 image url"
-            type="video/mp4"
-          />
-          
-          Your browser does not support the video tag.
-        
-        </video>
-      </div>
->>>>>>> ea8ea48f15ffb5bf6fd9c3a2fb64115a28e7b768
     </section>
      
     <section
@@ -944,11 +916,10 @@ exports[`namba food renders correctly 1`] = `
       <section
         class="container_middle m-72_bottom media-m-48_bottom"
       >
-<<<<<<< HEAD
         <picture>
           <source
             class="image box-shadow"
-            srcset="[object Object] ,[object Object] 2x"
+            srcset="s3 image url ,s3 image url 2x"
             type="image/webp"
           />
            
@@ -957,30 +928,12 @@ exports[`namba food renders correctly 1`] = `
             class="image box-shadow"
             height="0"
             loading="lazy"
-            src="[object Object]"
-            srcset="[object Object] 2x"
+            src="s3 image url"
+            srcset="s3 image url 2x"
             width="0"
           />
         </picture>
       </section>
-=======
-        <source
-          class="image box-shadow"
-          srcset="s3 image url ,s3 image url 2x"
-          type="image/webp"
-        />
-         
-        <img
-          alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
-          class="image box-shadow"
-          height="0"
-          loading="lazy"
-          src="s3 image url"
-          srcset="s3 image url 2x"
-          width="0"
-        />
-      </picture>
->>>>>>> ea8ea48f15ffb5bf6fd9c3a2fb64115a28e7b768
     </section>
      
     <section
@@ -1146,14 +1099,13 @@ exports[`namba food renders correctly 1`] = `
         <div
           class="slider-content"
         >
-<<<<<<< HEAD
           <div
             class="swiper-container thumb-example box-shadow"
           >
             <picture>
               <source
                 class="image"
-                srcset="[object Object] ,[object Object] 2x"
+                srcset="s3 image url ,s3 image url 2x"
                 type="image/webp"
               />
                
@@ -1162,8 +1114,8 @@ exports[`namba food renders correctly 1`] = `
                 class="image"
                 height="0"
                 loading="lazy"
-                src="[object Object]"
-                srcset="[object Object] 2x"
+                src="s3 image url"
+                srcset="s3 image url 2x"
                 width="0"
               />
             </picture>
@@ -1182,7 +1134,7 @@ exports[`namba food renders correctly 1`] = `
                   <picture>
                     <source
                       class="image"
-                      srcset="[object Object] ,[object Object] 2x"
+                      srcset="s3 image url ,s3 image url 2x"
                       type="image/webp"
                     />
                      
@@ -1191,8 +1143,8 @@ exports[`namba food renders correctly 1`] = `
                       class="image"
                       height="0"
                       loading="lazy"
-                      src="[object Object]"
-                      srcset="[object Object] 2x"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -1203,7 +1155,7 @@ exports[`namba food renders correctly 1`] = `
                   <picture>
                     <source
                       class="image"
-                      srcset="[object Object] ,[object Object] 2x"
+                      srcset="s3 image url ,s3 image url 2x"
                       type="image/webp"
                     />
                      
@@ -1212,8 +1164,8 @@ exports[`namba food renders correctly 1`] = `
                       class="image"
                       height="0"
                       loading="lazy"
-                      src="[object Object]"
-                      srcset="[object Object] 2x"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -1228,25 +1180,6 @@ exports[`namba food renders correctly 1`] = `
           </div>
            
           <!---->
-=======
-          <picture>
-            <source
-              class="image"
-              srcset="s3 image url ,s3 image url 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Namba Food: Food and Grocery Delivery Service Website Header."
-              class="image"
-              height="0"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="0"
-            />
-          </picture>
->>>>>>> ea8ea48f15ffb5bf6fd9c3a2fb64115a28e7b768
            
           <div
             class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
@@ -1336,7 +1269,6 @@ exports[`namba food renders correctly 1`] = `
             <p
               class="case_paragraph"
             >
-<<<<<<< HEAD
               
           Track the couriers' locations on a map and provide statuses of all orders and couriers.
         
@@ -1351,47 +1283,6 @@ exports[`namba food renders correctly 1`] = `
             >
                Extract customers’ notes and communicate them to couriers. 
             </p>
-=======
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Namba Food Delivery Control Dashboard."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
->>>>>>> ea8ea48f15ffb5bf6fd9c3a2fb64115a28e7b768
           </div>
            
           <div
@@ -1539,7 +1430,7 @@ exports[`namba food renders correctly 1`] = `
             width="100%"
           >
             <source
-              src="undefined/map.c41e893.mp4"
+              src="s3 image url"
               type="video/mp4"
             />
             
@@ -1557,13 +1448,6 @@ exports[`namba food renders correctly 1`] = `
         <h3
           class="case_title_h3 m-96_top m-12_bottom media-m-48_top"
         >
-<<<<<<< HEAD
-=======
-          <source
-            src="s3 image url"
-            type="video/mp4"
-          />
->>>>>>> ea8ea48f15ffb5bf6fd9c3a2fb64115a28e7b768
           
       Grafana — Docker containers’ monitoring service
     
@@ -1583,11 +1467,10 @@ exports[`namba food renders correctly 1`] = `
       <section
         class="container_middle"
       >
-<<<<<<< HEAD
         <picture>
           <source
             class="image box-shadow"
-            srcset="[object Object] ,[object Object] 2x"
+            srcset="s3 image url ,s3 image url 2x"
             type="image/webp"
           />
            
@@ -1596,30 +1479,12 @@ exports[`namba food renders correctly 1`] = `
             class="image box-shadow"
             height="0"
             loading="lazy"
-            src="[object Object]"
-            srcset="[object Object] 2x"
+            src="s3 image url"
+            srcset="s3 image url 2x"
             width="0"
           />
         </picture>
       </section>
-=======
-        <source
-          class="image box-shadow"
-          srcset="s3 image url ,s3 image url 2x"
-          type="image/webp"
-        />
-         
-        <img
-          alt="Namba Food: Software Stability Monitoring with Grafana."
-          class="image box-shadow"
-          height="0"
-          loading="lazy"
-          src="s3 image url"
-          srcset="s3 image url 2x"
-          width="0"
-        />
-      </picture>
->>>>>>> ea8ea48f15ffb5bf6fd9c3a2fb64115a28e7b768
     </section>
      
     <section
@@ -1916,27 +1781,6 @@ exports[`namba food renders correctly 1`] = `
           </p>
         </li>
       </ul>
-<<<<<<< HEAD
-=======
-       
-      <h3
-        class="case_title_h3 m-107_top m-24_bottom media-m-48_top"
-      >
-        
-        Website and mobile app infrastructure scheme
-      
-      </h3>
-    </section>
-     
-    <section
-      class="container_full background-color-silver"
-    >
-      <img
-        alt="Namba Food: Website and Mobile App Infrastructure Scheme."
-        class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"
-        src="s3 image url"
-      />
->>>>>>> ea8ea48f15ffb5bf6fd9c3a2fb64115a28e7b768
     </section>
      
     <section>
@@ -1958,7 +1802,7 @@ exports[`namba food renders correctly 1`] = `
         <img
           alt="Namba Food: Website and Mobile App Infrastructure Scheme."
           class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"
-          src="../../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif"
+          src="s3 image url"
         />
       </section>
        
@@ -1994,7 +1838,6 @@ exports[`namba food renders correctly 1`] = `
         <h3
           class="case_title_h3 m-96_top m-12_bottom media-m-48_top"
         >
-<<<<<<< HEAD
           
       Pipelines
     
@@ -2008,24 +1851,6 @@ exports[`namba food renders correctly 1`] = `
       deployment on the production server is done manually. The pipeline for the Namba Food system is displayed below.
     
         </p>
-=======
-          <source
-            class="image"
-            srcset="s3 image url ,s3 image url 2x"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Namba Food: Automated Deployment Stage Scheme."
-            class="image"
-            height="0"
-            loading="lazy"
-            src="s3 image url"
-            srcset="s3 image url 2x"
-            width="0"
-          />
-        </picture>
->>>>>>> ea8ea48f15ffb5bf6fd9c3a2fb64115a28e7b768
       </section>
        
       <section
@@ -2034,11 +1859,10 @@ exports[`namba food renders correctly 1`] = `
         <section
           class="container_full case_full-screen-image"
         >
-<<<<<<< HEAD
           <picture>
             <source
               class="image"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2047,8 +1871,8 @@ exports[`namba food renders correctly 1`] = `
               class="image"
               height="0"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="0"
             />
           </picture>
@@ -2064,7 +1888,7 @@ exports[`namba food renders correctly 1`] = `
           <picture>
             <source
               class="image"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2073,30 +1897,12 @@ exports[`namba food renders correctly 1`] = `
               class="image"
               height="0"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="0"
             />
           </picture>
         </section>
-=======
-          <source
-            class="image"
-            srcset="s3 image url ,s3 image url 2x"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Namba Food: Automated Deployment Stage Scheme."
-            class="image"
-            height="0"
-            loading="lazy"
-            src="s3 image url"
-            srcset="s3 image url 2x"
-            width="0"
-          />
-        </picture>
->>>>>>> ea8ea48f15ffb5bf6fd9c3a2fb64115a28e7b768
       </section>
     </section>
      
