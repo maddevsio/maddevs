@@ -109,16 +109,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
     />
   </div>
    
-  <section
-    class="case_body"
-  >
-    <div
-      class="case_animation_block"
-      id="case-first-section"
-    />
-     
+  <section>
     <section
       class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom"
+      id="case-first-section"
     >
       <p
         class="case_paragraph m-24_bottom media-m-12_bottom"

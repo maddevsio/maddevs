@@ -1,17 +1,8 @@
 import { mount } from '@vue/test-utils'
 import Kaf from '../client/pages/case-studies/kaf'
 
-describe('namba food', () => {
+describe('kaf', () => {
   let wrapper
-  const data = {
-    headerLogo: {
-      width: 387,
-      height: 81.23,
-      pictureFolder: 'kaf',
-      fileName: 'kaf-logo',
-      alt: '',
-    },
-  }
 
   beforeEach(() => {
     wrapper = mount(Kaf)
@@ -26,8 +17,4 @@ describe('namba food', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
   // --------------------- //
-
-  it('sets the correctly data', () => {
-    expect(wrapper.vm.$data).toEqual(data)
-  })
 })
