@@ -4,11 +4,9 @@ import CardProjectMilestone from '@/components/Cases/kaf/CardProjectMilestone'
 describe('card project milestone', () => {
   let wrapper
   const props = {
-    projectMilestone: {
-      title: '2016',
-      description: 'description',
-      backgroundColor: 'backgroundColor',
-    },
+    title: '2016',
+    description: 'description',
+    background: 'background',
   }
 
   beforeEach(() => {

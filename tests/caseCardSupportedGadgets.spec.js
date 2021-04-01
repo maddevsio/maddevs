@@ -4,13 +4,11 @@ import CardSupportedGadgets from '@/components/Cases/kaf/CardSupportedGadgets'
 describe('card supported gadgets', () => {
   let wrapper
   const props = {
-    gadget: {
-      title: 'title',
-      width: 0,
-      height: 0,
-      fileName: 'macbook-pro',
-      alt: 'alt',
-    },
+    title: 'title',
+    width: 0,
+    height: 0,
+    file: 'macbook-pro',
+    alt: 'alt',
   }
 
   beforeEach(() => {
