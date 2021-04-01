@@ -26,11 +26,10 @@
             public mobility by building new smart ways of a daily commute.
           </p>
         </CaseHeader>
-        <div
+        <section
           id="case-first-section"
-          class="case_animation_block"
-        />
-        <section class="container_regular">
+          class="container_regular"
+        >
           <TextParagraph class="m-48_top media-m-24_top">
             GoDee is a reliable way to commute in Ho Chi Minh City, Vietnam. Its shuttle buses take express routes that
             link the city’s major districts and popular destinations. GoDee helps riders save time, money and the planet
@@ -237,7 +236,7 @@
           </div>
         </section>
         <section
-          class="container_full background-color-black-godee p-100_top p-100_bottom media-p-48_top media-p-48_bottom"
+          class="container_full background-color-black-primary-bg p-100_top p-100_bottom media-p-48_top media-p-48_bottom"
         >
           <div class="container_regular">
             <div class="case_preview-cards">
@@ -569,7 +568,7 @@
           </TextQuoteBox>
         </section>
         <section
-          class="container_full p-104_top p-100_bottom media-p-41_top media-p-24_bottom background-color-black-godee"
+          class="container_full p-104_top p-100_bottom media-p-41_top media-p-24_bottom background-color-black-primary-bg"
         >
           <section class="container_regular case_real-time-eta">
             <div class="case_real-time-eta-text-content">
