@@ -5,14 +5,17 @@ describe('UIBeforeAfterImage component', () => {
   const props = {
     baseWidth: '1000',
     baseHeight: '578.47',
-    beforeImage: '../../../client/assets/img/Cases/godee/png/application-before.png',
-    afterImage: '../../../client/assets/img/Cases/godee/png/application-before.png',
+    beforeImage: '/images/Cases/godee/png/application-before.png',
+    afterImage: '/images/Cases/godee/png/application-before.png',
     alt: 'GoDee Public Transportation App at 2018 and now.',
   }
 
   it('should render correctly with slot', () => {
     const { container } = render(BeforeAfterImage, {
       stubs: ['nuxt-link', 'NuxtLink', 'prismic-image'],
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
     })
 
     expect(container).toMatchSnapshot()
@@ -21,6 +24,9 @@ describe('UIBeforeAfterImage component', () => {
   it('should correctly change opacity when handle mouse move over', async () => {
     render(BeforeAfterImage, {
       stubs: ['nuxt-link', 'NuxtLink', 'prismic-image'],
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
     })
 
     const hover = screen.getByTestId('track-img')
@@ -32,6 +38,9 @@ describe('UIBeforeAfterImage component', () => {
   it('should correctly change styles after 2500ms when mouseLeave', async () => {
     render(BeforeAfterImage, {
       stubs: ['nuxt-link', 'NuxtLink', 'prismic-image'],
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
     })
 
     const hover = screen.getByTestId('track-img')
@@ -48,6 +57,9 @@ describe('UIBeforeAfterImage component', () => {
     render(BeforeAfterImage, {
       props,
       stubs: ['nuxt-link', 'NuxtLink', 'prismic-image'],
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
     })
 
     const { alt, width, height } = screen.getByTestId('test-comparsion-image_after')

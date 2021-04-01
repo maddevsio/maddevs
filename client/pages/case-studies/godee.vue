@@ -8,8 +8,9 @@
     >
       <div class="case_content-layer p-48_bottom media-p-24_bottom">
         <CaseHeader
-          :header-logo="headerLogo"
-          video-name="godee-case-main-video.mp4"
+          :logo="logo"
+          video-name="/videos/godee-case-main-video.mp4"
+          video-fallback-path="/images/Cases/godee/jpg/godee-case-preview.jpg"
         >
           <h1
             slot="title"
@@ -26,11 +27,10 @@
             public mobility by building new smart ways of a daily commute.
           </p>
         </CaseHeader>
-        <div
+        <section
           id="case-first-section"
-          class="case_animation_block"
-        />
-        <section class="container_regular">
+          class="container_regular"
+        >
           <TextParagraph class="m-48_top media-m-24_top">
             GoDee is a reliable way to commute in Ho Chi Minh City, Vietnam. Its shuttle buses take express routes that
             link the city’s major districts and popular destinations. GoDee helps riders save time, money and the planet
@@ -53,7 +53,10 @@
       </div>
       <div class="case_parallax-layer">
         <div class="case_parallax-image-wrapper">
-          <div class="case_parallax-image" />
+          <div
+            class="case_parallax-image"
+            :style="{ backgroundImage: `url(${getMediaFromS3('/images/Cases/godee/jpg/parallax.jpg')})` }"
+          />
         </div>
       </div>
       <div class="case_content-layer p-48_top media-p-24_top">
@@ -137,9 +140,9 @@
             <UIBeforeAfterImage
               :base-width="'1000'"
               :base-height="'578.47'"
-              :before-image="'Cases/godee/png/application-before.png'"
-              :after-image="'Cases/godee/png/application-after.png'"
-              :alt="'GoDee Public Transportation App at 2018 and now.'"
+              before-image="/images/Cases/godee/png/application-before.png"
+              after-image="/images/Cases/godee/png/application-after.png"
+              alt="GoDee Public Transportation App at 2018 and now."
             />
           </div>
         </section>
@@ -237,7 +240,7 @@
           </div>
         </section>
         <section
-          class="container_full background-color-black-godee p-100_top p-100_bottom media-p-48_top media-p-48_bottom"
+          class="container_full background-color-black-primary-bg p-100_top p-100_bottom media-p-48_top media-p-48_bottom"
         >
           <div class="container_regular">
             <div class="case_preview-cards">
@@ -323,26 +326,26 @@
         <section class="container_middle">
           <div class="case_image-wrapper m-48_top media-m-24_top m-60_bottom media-m-24_bottom case_box-shadow">
             <Picture
-              :box-shadow="false"
-              :lazy-loading="false"
-              :border-radius="false"
+              :shadow="false"
+              :lazy="false"
+              :radius="false"
               :width="1026"
               :height="16.45"
-              :background-color="true"
-              picture-folder="common"
-              file-name="safari-top-bar-white"
-              file-extension="jpg"
+              :background="true"
+              folder="common"
+              file="safari-top-bar-white"
+              extension="jpg"
               alt="GoDee: Safari Browser Top Bar White."
             />
             <Picture
-              :box-shadow="false"
-              :lazy-loading="false"
-              :border-radius="false"
+              :shadow="false"
+              :lazy="false"
+              :radius="false"
               :width="1026"
               :height="672"
-              picture-folder="godee"
-              file-name="godee-admin-panel"
-              file-extension="jpg"
+              folder="godee"
+              file="godee-admin-panel"
+              extension="jpg"
               alt="GoDee: Bus Transit App Admin Panel."
             />
           </div>
@@ -353,19 +356,19 @@
               class="case_video-flex-wrapper"
             >
               <Picture
-                :box-shadow="false"
-                :lazy-loading="true"
-                :border-radius="false"
+                :shadow="false"
+                :lazy="true"
+                :radius="false"
                 :width="1026"
                 :height="16.45"
-                :background-color="true"
-                picture-folder="common"
-                file-name="safari-top-bar-white"
-                file-extension="jpg"
+                :background="true"
+                folder="common"
+                file="safari-top-bar-white"
+                extension="jpg"
                 alt="GoDee: Safari Browser Top Bar White."
               />
               <img
-                src="../../assets/img/Cases/godee/jpg/trip-request-map.jpg"
+                :src="getMediaFromS3('/images/Cases/godee/jpg/trip-request-map.jpg')"
                 class="case_img"
                 alt="Trip Request Map"
                 loading="lazy"
@@ -378,15 +381,15 @@
               class="case_video-flex-wrapper"
             >
               <Picture
-                :box-shadow="false"
-                :lazy-loading="true"
-                :border-radius="false"
+                :shadow="false"
+                :lazy="true"
+                :radius="false"
                 :width="1026"
                 :height="16.45"
-                :background-color="true"
-                picture-folder="common"
-                file-name="safari-top-bar-white"
-                file-extension="jpg"
+                :background="true"
+                folder="common"
+                file="safari-top-bar-white"
+                extension="jpg"
                 alt="GoDee: Safari Browser Top Bar White."
               />
               <video
@@ -398,7 +401,7 @@
                 muted="true"
               >
                 <source
-                  :src="getPathTripRequestMapVideo"
+                  :src="getMediaFromS3('/videos/map-stops.mp4')"
                   type="video/mp4"
                 >
                 Your browser does not support the video tag.
@@ -422,19 +425,19 @@
               class="case_video-flex-wrapper"
             >
               <Picture
-                :box-shadow="false"
-                :lazy-loading="true"
-                :border-radius="false"
+                :shadow="false"
+                :lazy="true"
+                :radius="false"
                 :width="1026"
                 :height="16.45"
-                :background-color="true"
-                picture-folder="common"
-                file-name="safari-top-bar-white"
-                file-extension="jpg"
+                :background="true"
+                folder="common"
+                file="safari-top-bar-white"
+                extension="jpg"
                 alt="GoDee: Safari Browser Top Bar White."
               />
               <img
-                src="../../assets/img/Cases/godee/jpg/trip-monitor.jpg"
+                :src="getMediaFromS3('/images/Cases/godee/jpg/trip-monitor.jpg')"
                 class="case_img"
                 alt="Trip Monitor"
                 loading="lazy"
@@ -447,15 +450,15 @@
               class="case_video-flex-wrapper"
             >
               <Picture
-                :box-shadow="false"
-                :lazy-loading="true"
-                :border-radius="false"
+                :shadow="false"
+                :lazy="true"
+                :radius="false"
                 :width="1026"
                 :height="16.45"
-                :background-color="true"
-                picture-folder="common"
-                file-name="safari-top-bar-white"
-                file-extension="jpg"
+                :background="true"
+                folder="common"
+                file="safari-top-bar-white"
+                extension="jpg"
                 alt="GoDee: Safari Browser Top Bar White."
               />
               <video
@@ -467,7 +470,7 @@
                 muted="true"
               >
                 <source
-                  :src="getPathTripMonitorVideo"
+                  :src="getMediaFromS3('/videos/trip-monitor.f4a33e6.mp4')"
                   type="video/mp4"
                 >
                 Your browser does not support the video tag.
@@ -500,19 +503,19 @@
               class="case_video-flex-wrapper"
             >
               <Picture
-                :box-shadow="false"
-                :lazy-loading="true"
-                :border-radius="false"
+                :shadow="false"
+                :lazy="true"
+                :radius="false"
                 :width="1026"
                 :height="16.45"
-                :background-color="true"
-                picture-folder="common"
-                file-name="safari-top-bar-white"
-                file-extension="jpg"
+                :background="true"
+                folder="common"
+                file="safari-top-bar-white"
+                extension="jpg"
                 alt="GoDee: Safari Browser Top Bar White."
               />
               <img
-                src="../../assets/img/Cases/godee/jpg/route-optimization.jpg"
+                :src="getMediaFromS3('/images/Cases/godee/jpg/route-optimization.jpg')"
                 class="case_img"
                 alt="Route Optimization"
                 loading="lazy"
@@ -525,15 +528,15 @@
               class="case_video-flex-wrapper"
             >
               <Picture
-                :box-shadow="false"
-                :lazy-loading="true"
-                :border-radius="false"
+                :shadow="false"
+                :lazy="true"
+                :radius="false"
                 :width="1026"
                 :height="16.45"
-                :background-color="true"
-                picture-folder="common"
-                file-name="safari-top-bar-white"
-                file-extension="jpg"
+                :background="true"
+                folder="common"
+                file="safari-top-bar-white"
+                extension="jpg"
                 alt="GoDee: Safari Browser Top Bar White."
               />
               <video
@@ -545,7 +548,7 @@
                 muted="true"
               >
                 <source
-                  :src="getPathRouteOptimizationVideo"
+                  :src="getMediaFromS3('/videos/route-optimization.f5a2ff0.mp4')"
                   type="video/mp4"
                 >
                 Your browser does not support the video tag.
@@ -569,7 +572,7 @@
           </TextQuoteBox>
         </section>
         <section
-          class="container_full p-104_top p-100_bottom media-p-41_top media-p-24_bottom background-color-black-godee"
+          class="container_full p-104_top p-100_bottom media-p-41_top media-p-24_bottom background-color-black-primary-bg"
         >
           <section class="container_regular case_real-time-eta">
             <div class="case_real-time-eta-text-content">
@@ -595,14 +598,14 @@
             </div>
             <div class="case_phone-wrapper-eta-section">
               <Picture
-                :box-shadow="false"
-                :lazy-loading="true"
+                :shadow="false"
+                :lazy="true"
                 :width="358.96"
                 :height="694.62"
-                :background-color="false"
-                picture-folder="godee"
-                file-name="real-time-eta-phone"
-                file-extension="png"
+                :background="false"
+                folder="godee"
+                file="real-time-eta-phone"
+                extension="png"
                 alt="GoDee: Bus Transit App in Vietnam."
               />
             </div>
@@ -616,7 +619,7 @@
               Infrastructure scheme
             </h2>
             <img
-              src="../../assets/img/Cases/godee/gif/infrastructure-scheme.gif"
+              :src="getMediaFromS3('/images/Cases/godee/gif/infrastructure-scheme.gif')"
               class="case_gif case_infrastructure-scheme-gif"
               alt="GoDee Mobile App Infrastructure Scheme."
               loading="lazy"
@@ -644,10 +647,9 @@
           </h3>
           <ListTechnologies class="m-96_bottom media-m-48_bottom case_list-technologies-godee">
             <ListTechnologiesItem
-              v-for="(technologiesItem, i) in technologiesList"
-              :key="i"
-              :tech-name="technologiesItem.techName"
-              :class-name="technologiesItem.className"
+              v-for="technology in technologies"
+              :key="technology.name"
+              v-bind="technology"
             />
           </ListTechnologies>
         </section>
@@ -666,14 +668,14 @@
         </section>
         <section class="container_middle m-96_bottom media-m-48_bottom">
           <Picture
-            :box-shadow="true"
-            :lazy-loading="true"
+            :shadow="true"
+            :lazy="true"
             :width="1028"
             :height="463"
-            :background-color="true"
-            picture-folder="godee"
-            file-name="datadog"
-            file-extension="jpg"
+            :background="true"
+            folder="godee"
+            file="datadog"
+            extension="jpg"
             alt="GoDee: Monitoring Configuration for Transportation App."
           />
         </section>
@@ -711,25 +713,19 @@
           </h2>
           <ListTeam class="m-72_bottom media-m-48_bottom">
             <ListTeamItem
-              v-for="(teamMember, i) in team"
-              :key="i"
-              :name="teamMember.name"
-              :position="teamMember.position"
-              :file-name="teamMember.fileName"
-              :file-name-retina="`${teamMember.fileName}@2x`"
-              :file-extension="teamMember.fileExtension"
-              :alt="teamMember.name"
-              picture-folder="common"
+              v-for="member in team"
+              :key="member.name"
+              v-bind="member"
             />
           </ListTeam>
           <TextQuoteAuthor
             class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
-            author-name="Ruslan Karabukaev"
-            author-position="Co-founder of GoDee"
-            file-name="ruslan-karabukaev"
-            file-extension="png"
+            author="Ruslan Karabukaev"
+            position="Co-founder of GoDee"
+            file="ruslan-karabukaev"
+            extension="png"
             alt="Ruslan Karabukaev"
-            picture-folder="godee"
+            folder="godee"
           >
             We built the platforms from scratch with the Mad Devs team, who dedicatedly supported and guided us to take
             proper action on several ideas and requirements. We have attracted 27,000 users so far, thanks to their
@@ -756,20 +752,20 @@
 </template>
 
 <script>
-import CaseHeader from '@/components/Cases/CaseHeader'
-import Footer from '@/components/Cases/Footer'
-import TextParagraph from '@/components/Cases/TextParagraph'
-import TextQuote from '@/components/Cases/TextQuote'
-import TextQuoteBox from '@/components/Cases/TextQuoteBox'
-import Picture from '@/components/Cases/Picture'
-import ListNumberedBox from '@/components/Cases/ListNumberedBox'
-import ListNumberedItemBox from '@/components/Cases/ListNumberedItemBox'
-import ListTeam from '@/components/Cases/ListTeam'
-import ListTeamItem from '@/components/Cases/ListTeamItem'
-import ListTechnologies from '@/components/Cases/ListTechnologies'
-import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
-import Card from '@/components/Cases/Card'
-import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
+import CaseHeader from '@/components/Cases/shared/CaseHeader'
+import Footer from '@/components/Cases/shared/CaseFooter'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextQuote from '@/components/Cases/shared/TextQuote'
+import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
+import Picture from '@/components/Cases/shared/Picture'
+import ListNumberedBox from '@/components/Cases/shared/ListNumberedBox'
+import ListNumberedItemBox from '@/components/Cases/shared/ListNumberedItemBox'
+import ListTeam from '@/components/Cases/shared/ListTeam'
+import ListTeamItem from '@/components/Cases/shared/ListTeamItem'
+import ListTechnologies from '@/components/Cases/shared/ListTechnologies'
+import ListTechnologiesItem from '@/components/Cases/shared/ListTechnologiesItem'
+import Card from '@/components/Cases/shared/Card'
+import TextQuoteAuthor from '@/components/Cases/shared/TextQuoteAuthor'
 import CardIssuesGoDee from '@/components/Cases/cards/godee/CardIssuesGoDee'
 import CardSolutionGoDee from '@/components/Cases/cards/godee/CardSolutionGoDee'
 import CardGoDeeFeature from '@/components/Cases/cards/godee/CardGoDeeFeature'
@@ -819,188 +815,188 @@ export default {
         {
           name: 'Oleg Puzanov',
           position: 'CTO',
-          fileName: 'oleg-puzanov',
-          fileExtension: 'png',
-          alt: 'Oleg Puzanov',
+          image: {
+            file: 'oleg-puzanov',
+          },
         },
         {
           name: 'Ruslan Kasymov',
           position: 'QA Engineer and PM',
-          fileName: 'kasymov',
-          fileExtension: 'png',
-          alt: 'Ruslan Kasymov',
+          image: {
+            file: 'kasymov',
+          },
         },
         {
           name: 'Rustom Kulbatyrov',
           position: 'Android Developer',
-          fileName: 'kulbatyrov',
-          fileExtension: 'png',
-          alt: 'Rustom Kulbatyrov',
+          image: {
+            file: 'kulbatyrov',
+          },
         },
         {
           name: 'Vladimir Pan',
           position: 'QA Engineer',
-          fileName: 'vladimir-pan',
-          fileExtension: 'png',
-          alt: 'Vladimir Pan',
+          image: {
+            file: 'vladimir-pan',
+          },
         },
         {
           name: 'Belek Abylov',
           position: 'Backend Developer',
-          fileName: 'belek-abylov',
-          fileExtension: 'png',
-          alt: 'Belek Abylov',
+          image: {
+            file: 'belek-abylov',
+          },
         },
         {
           name: 'Bakhtiyar Ganyev',
           position: 'iOS Developer',
-          fileName: 'bakhtiyar-ganyev',
-          fileExtension: 'png',
-          alt: 'Bakhtiyar Ganyev',
+          image: {
+            file: 'bakhtiyar-ganyev',
+          },
         },
         {
           name: 'Gennady Karev',
           position: 'Backend Developer',
-          fileName: 'gennady-karev',
-          fileExtension: 'png',
-          alt: 'Gennady Karev',
+          image: {
+            file: 'gennady-karev',
+          },
         },
         {
           name: 'Aleksandr Krivov',
           position: 'UX/UI Specialist',
-          fileName: 'aleksandr-krivov',
-          fileExtension: 'png',
-          alt: '',
+          image: {
+            file: 'aleksandr-krivov',
+          },
         },
         {
           name: 'Vlada Arevkova',
           position: 'UX/UI Specialist',
-          fileName: 'vlada-arevkova',
-          fileExtension: 'png',
-          alt: 'Vlada Arevkova',
+          image: {
+            file: 'vlada-arevkova',
+          },
         },
         {
           name: 'Erik Sultanaliev',
           position: 'Backend Developer',
-          fileName: 'erik-sultanaliev',
-          fileExtension: 'png',
-          alt: 'Erik Sultanaliev',
+          image: {
+            file: 'erik-sultanaliev',
+          },
         },
         {
           name: 'Myrzabek Kylychev',
           position: 'Android Developer',
-          fileName: 'myrzabek-kylychev',
-          fileExtension: 'png',
-          alt: 'Myrzabek Kylychev',
+          image: {
+            file: 'myrzabek-kylychev',
+          },
         },
         {
           name: 'Pavel Pushkarev',
           position: 'iOS Developer',
-          fileName: 'pushkarev',
-          fileExtension: 'png',
-          alt: 'Pavel Pushkarev',
+          image: {
+            file: 'pushkarev',
+          },
         },
       ],
 
-      technologiesList: [
+      technologies: [
         {
-          techName: 'Open Street Map',
+          name: 'Open Street Map',
           className: 'other-open-street-map',
         },
         {
-          techName: 'Google Maps',
+          name: 'Google Maps',
           className: 'other-google-maps',
         },
         {
-          techName: 'PostgreSQL',
+          name: 'PostgreSQL',
           className: 'backend-postgresql',
         },
         {
-          techName: 'Docker',
+          name: 'Docker',
           className: 'devops-docker case_technologies-item__docker',
         },
         {
-          techName: 'Nginx',
+          name: 'Nginx',
           className: 'devops-nginx',
         },
         {
-          techName: 'Redis',
+          name: 'Redis',
           className: 'backend-redis',
         },
         {
-          techName: 'Python (Django)',
+          name: 'Python (Django)',
           className: 'backend-python',
         },
         {
-          techName: 'Golang',
+          name: 'Golang',
           className: 'backend-go',
         },
         {
-          techName: 'Kotlin',
+          name: 'Kotlin',
           className: 'mobile-kotlin',
         },
         {
-          techName: 'Atlassian',
+          name: 'Atlassian',
           className: 'pm-atlassian',
         },
         {
-          techName: 'Swift',
+          name: 'Swift',
           className: 'mobile-swift',
         },
         {
-          techName: 'Firebase',
+          name: 'Firebase',
           className: 'mobile-firebase',
         },
         {
-          techName: 'TestFlight',
+          name: 'TestFlight',
           className: 'mobile-test-flight',
         },
         {
-          techName: 'Datadog',
+          name: 'Datadog',
           className: 'infrastructure-datadog',
         },
         {
-          techName: 'Android',
+          name: 'Android',
           className: 'mobile-android-black-text',
         },
         {
-          techName: 'Suite',
+          name: 'Suite',
           className: 'devops-suite',
         },
         {
-          techName: 'Jira Software',
+          name: 'Jira Software',
           className: 'pm-jira',
         },
         {
-          techName: 'GRPC',
+          name: 'GRPC',
           className: 'backend-grpc case_technologies-item__grpc',
         },
         {
-          techName: 'iOS',
+          name: 'iOS',
           className: 'mobile-apple-black',
         },
         {
-          techName: 'UptimeRobot',
+          name: 'UptimeRobot',
           className: 'other-uptime-robot case_technologies-item__uptime-robot',
         },
         {
-          techName: 'Mapbox',
+          name: 'Mapbox',
           className: 'frontend-mapbox',
         },
         {
-          techName: 'Vue JS',
+          name: 'Vue JS',
           className: 'frontend-vue',
         },
         {
-          techName: 'Sentry',
+          name: 'Sentry',
           className: 'devops-sentry-dark',
         },
         {
-          techName: 'Here Traffic',
+          name: 'Here Traffic',
           className: 'other-here',
         },
         {
-          techName: 'Basecamp',
+          name: 'Basecamp',
           className: 'pm-basecamp-transparent-bg',
         },
       ],
@@ -1015,11 +1011,11 @@ export default {
       headerHeight: 62,
       heightHasBeenSet: false,
       currentYear: new Date().getFullYear(),
-      headerLogo: {
+      logo: {
         width: 293,
         height: 130,
-        pictureFolder: 'godee',
-        fileName: 'godee-logo',
+        folder: 'godee',
+        file: 'godee-logo',
         alt: '',
       },
     }
@@ -1030,12 +1026,6 @@ export default {
       ...getMetadata('godee'),
       image: 'https://maddevs.io/godee.png',
     })
-  },
-
-  computed: {
-    getPathTripRequestMapVideo: () => `${process.env.awsUrl}/map-stops.mp4`,
-    getPathTripMonitorVideo: () => `${process.env.awsUrl}/trip-monitor.f4a33e6.mp4`,
-    getPathRouteOptimizationVideo: () => `${process.env.awsUrl}/route-optimization.f5a2ff0.mp4`,
   },
 
   mounted() {

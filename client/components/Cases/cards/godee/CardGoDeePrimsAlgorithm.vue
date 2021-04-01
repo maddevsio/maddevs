@@ -21,9 +21,9 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import Lottie from 'vue-lottie/src/lottie.vue'
-import animationData from '@/assets/lottie/prim-algorithm.json'
+import animationData from '@/assets/lottie/godee/prim-algorithm.json'
 
 export default {
   name: 'CardGoDeePrimsAlgorithm',

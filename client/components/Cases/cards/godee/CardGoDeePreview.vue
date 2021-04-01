@@ -16,21 +16,21 @@
       class="card-content_image-wrapper"
     >
       <Picture
-        :picture-folder="pictureFolder"
-        :file-name="fileName"
-        :file-extension="fileExtension"
+        :folder="pictureFolder"
+        :file="fileName"
+        :extension="fileExtension"
         :alt="alt"
-        :lazy-loading="false"
+        :lazy="false"
         :class="{ 'card-content_desktop-image': mobileImage }"
         :width="width"
         :height="height"
       />
       <Picture
         v-if="mobileImage"
-        :picture-folder="pictureFolder"
-        :file-name="mobileImageName"
-        :file-extension="fileExtension"
-        :lazy-loading="false"
+        :folder="pictureFolder"
+        :file="mobileImageName"
+        :extension="fileExtension"
+        :lazy="false"
         :class="{ 'card-content_mobile-image': mobileImage }"
         :width="307"
         :height="160"
@@ -41,8 +41,8 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import Picture from '@/components/Cases/Picture'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import Picture from '@/components/Cases/shared/Picture'
 
 export default {
   name: 'CardGoDeePreview',

@@ -4,7 +4,7 @@ exports[`picture renders correctly 1`] = `
 <picture>
   <source
     class="image box-shadow"
-    srcset="[object Object] ,[object Object] 2x"
+    srcset="s3 image url ,s3 image url 2x"
     type="image/webp"
   />
    
@@ -13,8 +13,8 @@ exports[`picture renders correctly 1`] = `
     class="image box-shadow"
     height="0"
     loading="lazy"
-    src="[object Object]"
-    srcset="[object Object] 2x"
+    src="s3 image url"
+    srcset="s3 image url 2x"
     width="0"
   />
 </picture>

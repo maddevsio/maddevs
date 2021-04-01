@@ -1,11 +1,15 @@
 import { mount } from '@vue/test-utils'
-import CardsBusinessModelsGrid from '@/components/Cases/cards/namba-food/CardsBusinessModelsGrid'
+import CardsBusinessModelsGrid from '@/components/Cases/nambafood/cards/CardsBusinessModelsGrid'
 
 describe('cardsBusinessModelsGrid', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(CardsBusinessModelsGrid)
+    wrapper = mount(CardsBusinessModelsGrid, {
+      mocks: {
+        getMediaFromS3: () => 's3 image url',
+      },
+    })
   })
 
   // ------ IMPORTANT ----- //

@@ -16,7 +16,7 @@
         class="main-video"
       >
         <source
-          :src="getPathToVideo"
+          :src="getMediaFromS3('/videos/sjmc/sjmc-modal-video.00bd869.mp4')"
           type="video/mp4"
         >
         Your browser does not support the video tag.
@@ -38,10 +38,6 @@ export default {
       showIcon: false,
       flagFirstStartVideo: true,
     }
-  },
-
-  computed: {
-    getPathToVideo: () => `${process.env.awsUrl}/sjmc/sjmc-modal-video.00bd869.mp4`,
   },
 
   mounted() {
