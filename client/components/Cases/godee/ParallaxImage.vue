@@ -14,7 +14,3 @@ export default {
   name: 'ParallaxImage',
 }
 </script>
-
-<style>
-
-</style>
