@@ -27,11 +27,10 @@
             public mobility by building new smart ways of a daily commute.
           </p>
         </CaseHeader>
-        <div
+        <section
           id="case-first-section"
-          class="case_animation_block"
-        />
-        <section class="container_regular">
+          class="container_regular"
+        >
           <TextParagraph class="m-48_top media-m-24_top">
             GoDee is a reliable way to commute in Ho Chi Minh City, Vietnam. Its shuttle buses take express routes that
             link the city’s major districts and popular destinations. GoDee helps riders save time, money and the planet

@@ -5,8 +5,8 @@ describe('UIBeforeAfterImage component', () => {
   const props = {
     baseWidth: '1000',
     baseHeight: '578.47',
-    beforeImage: '../../../client/assets/img/Cases/godee/png/application-before.png',
-    afterImage: '../../../client/assets/img/Cases/godee/png/application-before.png',
+    beforeImage: '/images/Cases/godee/png/application-before.png',
+    afterImage: '/images/Cases/godee/png/application-before.png',
     alt: 'GoDee Public Transportation App at 2018 and now.',
   }
 

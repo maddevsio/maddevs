@@ -81,10 +81,10 @@ exports[`kaf renders correctly 1`] = `
    
   <section
     class="case_body p-48_top media-p-24_top"
-    id="case-body"
   >
     <section
       class="container_regular"
+      id="case-first-section"
     >
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"

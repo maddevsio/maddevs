@@ -1,8 +1,6 @@
 <template>
   <section class="container_regular">
-    <h2
-      class="case_title_h2 m-24_bottom media-m-12_bottom"
-    >
+    <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
       Phase 1: Online cinema
     </h2>
     <TextParagraph class="m-24_bottom">
@@ -13,9 +11,7 @@
     <TextQuote class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom">
       Mad Devs integrated the platform with Plex Media Server, which provides free movie descriptions via an API.
     </TextQuote>
-    <h3
-      class="case_title_h3 m-12_bottom"
-    >
+    <h3 class="case_title_h3 m-12_bottom">
       TV shows & TV series
     </h3>
   </section>

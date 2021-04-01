@@ -1,17 +1,13 @@
 <template>
   <section class="container_regular">
-    <h2
-      class="case_title_h2 m-24_bottom media-m-20_bottom"
-    >
+    <h2 class="case_title_h2 m-24_bottom media-m-20_bottom">
       Phase 2: Live streaming technology
     </h2>
     <TextParagraph class="m-48_bottom media-m-20_bottom">
       To provide viewers with access to their favourite TV channels, the platform needed to emulate the TV experience.
       To add live-streaming technology, Mad Devs leveraged its existing open-source project, Yourcast.tv.
     </TextParagraph>
-    <h3
-      class="case_title_h3"
-    >
+    <h3 class="case_title_h3">
       TV shows & TV series
     </h3>
     <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">

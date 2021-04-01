@@ -21,11 +21,8 @@
         groups feeling homesick.
       </p>
     </CaseHeader>
-    <section
-      id="case-body"
-      class="case_body p-48_top media-p-24_top"
-    >
-      <AboutKaf />
+    <section class="case_body p-48_top media-p-24_top">
+      <AboutKaf id="case-first-section" />
       <ProjectInNumbers />
       <SupportedGadgets />
       <TechnologyStack />

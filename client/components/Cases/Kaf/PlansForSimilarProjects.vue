@@ -5,9 +5,7 @@
       and borrows best practices from leading over-the-top (OTT) providers to make end users happier. The project is
       progressing towards a modern entertainment platform.
     </TextParagraph>
-    <h3
-      class="case_title_h3 m-24_bottom media-m-12_bottom"
-    >
+    <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">
       Plans for similar projects
     </h3>
     <TextParagraph class="m-96_bottom media-m-48_bottom">

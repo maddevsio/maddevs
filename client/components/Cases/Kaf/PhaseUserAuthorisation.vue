@@ -1,8 +1,6 @@
 <template>
   <section class="container_regular m-48_bottom media-m-24_bottom">
-    <h2
-      class="case_title_h2 m-24_bottom media-m-12_bottom"
-    >
+    <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
       Phase 5: User authorisation & personalised experience
     </h2>
     <TextParagraph class="m-24_bottom">

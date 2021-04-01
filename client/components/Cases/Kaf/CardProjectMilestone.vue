@@ -14,14 +14,10 @@
       />
     </div>
     <div class="card_text-content">
-      <h4
-        class="case_title_h4 card_title"
-      >
+      <h4 class="case_title_h4 card_title">
         {{ projectMilestone.title }}
       </h4>
-      <TextParagraph
-        class="card_paragraph"
-      >
+      <TextParagraph class="card_paragraph">
         {{ projectMilestone.description }}
       </TextParagraph>
     </div>

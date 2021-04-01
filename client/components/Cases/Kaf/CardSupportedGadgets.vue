@@ -1,8 +1,6 @@
 <template>
   <div class="card-content">
-    <h4
-      class="card-content_title case_title_h4"
-    >
+    <h4 class="card-content_title case_title_h4">
       {{ gadget.title }}
     </h4>
     <div
