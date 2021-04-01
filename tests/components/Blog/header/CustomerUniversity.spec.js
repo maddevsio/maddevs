@@ -82,7 +82,7 @@ describe('customer university header component', () => {
           asText: text => text[0].text,
         },
       },
-      stubs: ['v-select', 'common-header', 'router-link'],
+      stubs: ['prismic-image', 'common-header', 'router-link'],
     })
     expect(container).toMatchSnapshot()
   })
@@ -99,7 +99,7 @@ describe('customer university header component', () => {
           asText: text => text[0].text,
         },
       },
-      stubs: ['v-select', 'common-header', 'router-link'],
+      stubs: ['prismic-image', 'common-header', 'router-link'],
     })
     expect(screen.getByText(clusterName)).not.toBeNull()
   })

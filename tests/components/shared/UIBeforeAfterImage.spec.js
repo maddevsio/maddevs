@@ -11,13 +11,17 @@ describe('UIBeforeAfterImage component', () => {
   }
 
   it('should render correctly with slot', () => {
-    const { container } = render(BeforeAfterImage)
+    const { container } = render(BeforeAfterImage, {
+      stubs: ['nuxt-link', 'NuxtLink'],
+    })
 
     expect(container).toMatchSnapshot()
   })
 
   it('should correctly change opacity when handle mouse move over', async () => {
-    render(BeforeAfterImage)
+    render(BeforeAfterImage, {
+      stubs: ['nuxt-link', 'NuxtLink'],
+    })
 
     const hover = screen.getByTestId('track-img')
     expect(screen.getByTestId('test-comparsion-track-line').style.opacity).toBe('')
@@ -26,7 +30,9 @@ describe('UIBeforeAfterImage component', () => {
   })
 
   it('should correctly change styles after 2500ms when mouseLeave', async () => {
-    render(BeforeAfterImage)
+    render(BeforeAfterImage, {
+      stubs: ['nuxt-link', 'NuxtLink'],
+    })
 
     const hover = screen.getByTestId('track-img')
     await fireEvent.mouseLeave(hover)
@@ -41,6 +47,7 @@ describe('UIBeforeAfterImage component', () => {
   it('should correctly change alt by properties', async () => {
     render(BeforeAfterImage, {
       props,
+      stubs: ['nuxt-link', 'NuxtLink'],
     })
 
     const { alt, width, height } = screen.getByTestId('test-comparsion-image_after')
