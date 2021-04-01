@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`blog widget component is a Vue instance 1`] = `
+<div>
+  <nuxt-link-stub
+    to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
+  >
+    <div
+      class="blog-post"
+    >
+      <h2
+        class="post-title title-md"
+        data-testid="test-post-title"
+      >
+        
+      The best practices for improving layout quality on your website
+    
+      </h2>
+       
+      <p
+        class="blog-post-meta"
+      >
+        <span
+          class="created-at"
+        >
+          Aug 25, 2020
+        </span>
+      </p>
+       
+      <p
+        data-testid="test-first-paragraph"
+      >
+        
+      Let’s start with a partial list of how a valid and semantic layout can improve any project:
+    
+      </p>
+    </div>
+  </nuxt-link-stub>
+</div>
+`;
+
+exports[`blog widget component render with very long title 1`] = `
+<div>
+  <nuxt-link-stub
+    to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
+  >
+    <div
+      class="blog-post"
+    >
+      <h2
+        class="post-title title-md"
+        data-testid="test-post-title"
+      >
+        
+      The best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your website
+    
+      </h2>
+       
+      <p
+        class="blog-post-meta"
+      >
+        <span
+          class="created-at"
+        >
+          Aug 25, 2020
+        </span>
+      </p>
+       
+      <p
+        data-testid="test-first-paragraph"
+      >
+        
+      Let’s start with a partial list of how a valid and semantic layout can improve any project:The best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices...
+    
+      </p>
+    </div>
+  </nuxt-link-stub>
+</div>
+`;

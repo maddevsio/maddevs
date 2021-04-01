@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import footerForm from '@/components/Footer/footer-form'
+import footerForm from '@/components/core/Footer/FooterForm'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -66,9 +66,9 @@ describe('footer form', () => {
     expect(wrapper.vm.$data.fullname && wrapper.vm.$data.email && wrapper.vm.$data.form).toBeNull()
     expect(wrapper.vm.$data.description).toEqual('')
     expect(
-      wrapper.vm.$data.agreeWithPrivacyPolicy &&
-        wrapper.vm.$data.agreeToGetMadDevsDiscountOffers &&
-        wrapper.vm.$data.isEmailSent,
+      wrapper.vm.$data.agreeWithPrivacyPolicy
+        && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
+        && wrapper.vm.$data.isEmailSent,
     ).toEqual(false)
   })
 })

@@ -1,6 +1,9 @@
 <template>
-  <div :style="`padding: ${padding}`" class="case_card">
-    <slot></slot>
+  <div
+    :style="`padding: ${padding}`"
+    class="case_card"
+  >
+    <slot />
   </div>
 </template>
 

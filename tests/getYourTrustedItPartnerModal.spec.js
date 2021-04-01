@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import getYourTrustedItPartnerModal from '@/components/Modals/get-your-trusted-it-partner-modal'
+import ModalGetYourTrustedItPartner from '@/components/core/modals/ModalGetYourTrustedItPartner'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -10,7 +10,7 @@ describe('get your trusted it partner modal', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(getYourTrustedItPartnerModal, {
+    wrapper = mount(ModalGetYourTrustedItPartner, {
       localVue,
       stubs: ['modal'],
       mocks: {
@@ -44,23 +44,17 @@ describe('get your trusted it partner modal', () => {
   // --------------------- //
 
   it('sets the correct default data', () => {
-    expect(typeof getYourTrustedItPartnerModal.data).toBe('function')
-    const defaultData = getYourTrustedItPartnerModal.data()
+    expect(typeof ModalGetYourTrustedItPartner.data).toBe('function')
+    const defaultData = ModalGetYourTrustedItPartner.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
-    expect(defaultData.inputId).toEqual('get-your-trusted-it-partner')
   })
 
   it('has a functions', () => {
-    expect(
-      typeof getYourTrustedItPartnerModal.methods.getPrivacyCheckboxState &&
-        typeof getYourTrustedItPartnerModal.methods.getDiscountOffersCheckboxState,
-    ).toBe('function')
+    expect(typeof ModalGetYourTrustedItPartner.methods.handleCheckboxesChange).toBe('function')
   })
 
   it('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true)
-    wrapper.vm.getDiscountOffersCheckboxState(true)
-
+    wrapper.vm.handleCheckboxesChange({ privacy: true, discountOffers: true })
     expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true)
   })
 
@@ -100,15 +94,15 @@ describe('get your trusted it partner modal', () => {
 
     wrapper.vm.resetForm()
     expect(
-      wrapper.vm.$data.fullName &&
-        wrapper.vm.$data.email &&
-        wrapper.vm.$data.form &&
-        wrapper.vm.$data.needAssistanceWith,
+      wrapper.vm.$data.fullName
+        && wrapper.vm.$data.email
+        && wrapper.vm.$data.form
+        && wrapper.vm.$data.needAssistanceWith,
     ).toBeNull()
     expect(
-      wrapper.vm.$data.agreeWithPrivacyPolicy &&
-        wrapper.vm.$data.agreeToGetMadDevsDiscountOffers &&
-        wrapper.vm.$data.isEmailSent,
+      wrapper.vm.$data.agreeWithPrivacyPolicy
+        && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
+        && wrapper.vm.$data.isEmailSent,
     ).toEqual(false)
   })
 })

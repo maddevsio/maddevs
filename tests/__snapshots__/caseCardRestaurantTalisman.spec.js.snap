@@ -7,7 +7,9 @@ exports[`cardRestaurantTalisman renders correctly 1`] = `
   <h3
     class="card-content_title case_title_h5"
   >
+    
     Restaurant Talisman
+  
   </h3>
    
   <p
@@ -36,13 +38,16 @@ exports[`cardRestaurantTalisman renders correctly 1`] = `
       <p
         class="case_paragraph card-content_paragraph card-content_statistics-heading"
       >
-         IT expenses 
+        
+        IT expenses
+      
       </p>
        
       <p
         class="case_paragraph card-content_statistics-number"
       >
-         0
+        
+        0
         <span>
           $
         </span>
@@ -66,7 +71,8 @@ exports[`cardRestaurantTalisman renders correctly 1`] = `
       <p
         class="case_paragraph card-content_statistics-number"
       >
-         +236
+        
+        +236
         <span>
           %
         </span>
@@ -90,7 +96,8 @@ exports[`cardRestaurantTalisman renders correctly 1`] = `
       <p
         class="case_paragraph card-content_statistics-number"
       >
-         +142
+        
+        +142
         <span>
           %
         </span>

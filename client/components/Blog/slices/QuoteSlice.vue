@@ -5,7 +5,10 @@
       class="block-quotation"
       v-html="$prismic.asHtml(slice.primary.quote)"
     />
-    <text-quote v-if="slice.primary.quotation_design === 'brackets'" class="post-quote">
+    <text-quote
+      v-if="slice.primary.quotation_design === 'brackets'"
+      class="post-quote"
+    >
       {{ $prismic.asText(slice.primary.quote) }}
     </text-quote>
     <div
@@ -13,10 +16,18 @@
       :class="`p-${slice.primary.quotation_design}`"
       class="author"
     >
-      <div v-if="slice.primary.portrait_author.url" class="author__image">
+      <div
+        v-if="slice.primary.portrait_author.url"
+        class="author__image"
+      >
         <prismic-image :field="slice.primary.portrait_author.mobile" />
       </div>
-      <div v-if="authorName" class="author__name">{{ authorName }}</div>
+      <div
+        v-if="authorName"
+        class="author__name"
+      >
+        {{ authorName }}
+      </div>
     </div>
   </div>
 </template>

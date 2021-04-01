@@ -32,45 +32,58 @@ exports[`infrastructure optimisation renders correctly 1`] = `
         >
           <div
             class="content-item"
+            type="whatMakes"
           >
             <h3
               class="item-title content-item__title content-item__title-first-item"
             >
-              What makes us stand out from others?
+              
+    What makes us stand out from others?
+  
             </h3>
              
             <h4
               class="item-sub-title content-item__sub-title content-item__sub-title-first-item"
             >
-              Optimising teams don’t care for tomorrow’s traffic peaks? We care!
+              
+    Optimising teams don’t care for tomorrow’s traffic peaks? We care!
+  
             </h4>
              
             <p
               class="paragraph content-item__paragraph"
             >
-              We don't just have experience with infrastructure management tools, our team helped develop some of them. We know where to get the cheapest price and the best service.
+              
+    We don't just have experience with infrastructure management tools, our team helped develop some of them. We know where to get the cheapest price and the best service.
+  
             </p>
           </div>
-           
           <div
             class="content-item"
+            type="upToSaving"
           >
             <h3
               class="item-title content-item__title content-item__title-second-item"
             >
-              Up to 50% savings on infrastructure
+              
+    Up to 50% savings on infrastructure
+  
             </h3>
              
             <h4
               class="item-sub-title content-item__sub-title content-item__sub-title-second-item"
             >
-              Pay-as-you-go receipts from your cloud providers make you curse them?
+              
+    Pay-as-you-go receipts from your cloud providers make you curse them?
+  
             </h4>
              
             <p
               class="paragraph content-item__paragraph"
             >
-              Our fire brigade can help you optimise resource consumption like we've done for 75% of our customers. We’ll reconfigure and disable every option or service that is not necessary.
+              
+    Our fire brigade can help you optimise resource consumption like we've done for 75% of our customers. We’ll reconfigure and disable every option or service that is not necessary.
+  
             </p>
           </div>
         </div>

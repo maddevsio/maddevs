@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import IndividualsModal from '@/components/Modals/individuals-modal'
+import ModalIndividuals from '@/components/core/modals/ModalIndividuals'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -10,7 +10,7 @@ describe('individuals modal', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(IndividualsModal, {
+    wrapper = mount(ModalIndividuals, {
       localVue,
       stubs: ['modal'],
       mocks: {
@@ -44,23 +44,17 @@ describe('individuals modal', () => {
   // --------------------- //
 
   it('sets the correct default data', () => {
-    expect(typeof IndividualsModal.data).toBe('function')
-    const defaultData = IndividualsModal.data()
+    expect(typeof ModalIndividuals.data).toBe('function')
+    const defaultData = ModalIndividuals.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
-    expect(defaultData.inputId).toEqual('individuals')
   })
 
   it('has a functions', () => {
-    expect(
-      typeof IndividualsModal.methods.getPrivacyCheckboxState &&
-        typeof IndividualsModal.methods.getDiscountOffersCheckboxState,
-    ).toBe('function')
+    expect(typeof ModalIndividuals.methods.handleCheckboxesChange).toBe('function')
   })
 
   it('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true)
-    wrapper.vm.getDiscountOffersCheckboxState(true)
-
+    wrapper.vm.handleCheckboxesChange({ privacy: true, discountOffers: true })
     expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true)
   })
 
@@ -102,16 +96,16 @@ describe('individuals modal', () => {
 
     wrapper.vm.resetForm()
     expect(
-      wrapper.vm.$data.fullName &&
-        wrapper.vm.$data.email &&
-        wrapper.vm.$data.form &&
-        wrapper.vm.$data.interestedExpertise &&
-        wrapper.vm.$data.projectDescription,
+      wrapper.vm.$data.fullName
+        && wrapper.vm.$data.email
+        && wrapper.vm.$data.form
+        && wrapper.vm.$data.interestedExpertise
+        && wrapper.vm.$data.projectDescription,
     ).toBeNull()
     expect(
-      wrapper.vm.$data.agreeWithPrivacyPolicy &&
-        wrapper.vm.$data.agreeToGetMadDevsDiscountOffers &&
-        wrapper.vm.$data.isEmailSent,
+      wrapper.vm.$data.agreeWithPrivacyPolicy
+        && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
+        && wrapper.vm.$data.isEmailSent,
     ).toEqual(false)
   })
 })

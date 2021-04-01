@@ -1,48 +1,48 @@
 <template>
   <div
-    :class="[
-      `remoteTechStaffContent__tech-staff-${title.toLowerCase()}`,
-      activeByDefault === true ? 'remoteTechStaffContent__tech-staff-active' : '',
-    ]"
+    :class="[`remoteTechStaffContent__tech-staff-${type}`, hovered ? 'remoteTechStaffContent__tech-staff-active' : '']"
     class="remoteTechStaffContent__tech-staff"
-    @mouseover="handleMouseOver(title)"
-    @mouseout="handleMouseOut(title)"
+    @mouseover="$emit('mouseover', type)"
+    @mouseout="$emit('mouseout', type)"
   >
     <div class="remoteTechStaffContent__content_wrapper">
       <div class="remoteTechStaffContent__text-wrap">
-        <UIItemTitle :item-title="title" />
-        <UIItemSubTitle :item-sub-title="subTitle" class="remoteTechStaffContent__item-sub-title" />
+        <UITitle>{{ title }}</UITitle>
+        <UISubtitle class="remoteTechStaffContent__item-sub-title">
+          {{ subtitle }}
+        </UISubtitle>
         <UIParagraph
-          :paragraph="paragraph"
-          :class="`remoteTechStaffContent__${title.toLowerCase()}-paragraph`"
+          :class="`remoteTechStaffContent__${type}-paragraph`"
           class="remoteTechStaffContent__paragraph"
-        />
+        >
+          {{ paragraph }}
+        </UIParagraph>
         <div
-          :class="`remoteTechStaffContent__${title.toLowerCase()}-icon`"
+          :class="`remoteTechStaffContent__${type}-icon`"
           class="remoteTechStaffContent__item-icon"
-        ></div>
+        />
       </div>
     </div>
-    <UIButtonModalTrigger
-      :button-inner-text="buttonInnerText"
+    <UIModalTriggerButton
+      :label="buttonLabel"
       class="remoteTechStaffContent__ui-button-modal-trigger"
-      @onClick="$emit('onClick')"
+      @click="$emit('click')"
     />
   </div>
 </template>
 
 <script>
-import UIButtonModalTrigger from '@/components/ui/UIButtonModalTrigger'
-import UIParagraph from '@/components/ui/Services/UIParagraph'
-import UIItemTitle from '@/components/ui/Services/UIItemTitle'
-import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle'
+import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
+import UIParagraph from '@/components/Services/UIParagraph'
+import UITitle from '@/components/Services/UITitle'
+import UISubtitle from '@/components/Services/UISubtitle'
 
 export default {
   name: 'RemoteTechStaffContent',
   components: {
-    UIButtonModalTrigger,
-    UIItemTitle,
-    UIItemSubTitle,
+    UIModalTriggerButton,
+    UITitle,
+    UISubtitle,
     UIParagraph,
   },
 
@@ -52,7 +52,7 @@ export default {
       default: 'Title',
     },
 
-    subTitle: {
+    subtitle: {
       type: String,
       default: 'Sub Title',
     },
@@ -62,39 +62,19 @@ export default {
       default: 'Paragraph',
     },
 
-    buttonInnerText: {
+    buttonLabel: {
       type: String,
       default: 'Button Inner Text',
     },
 
-    activeByDefault: {
+    hovered: {
       type: Boolean,
       default: null,
     },
-  },
 
-  data() {
-    return {
-      teamsItem: null,
-    }
-  },
-
-  mounted() {
-    const [teamsItem] = document.getElementsByClassName('remoteTechStaffContent__tech-staff-teams')
-    this.teamsItem = teamsItem
-  },
-
-  methods: {
-    handleMouseOver(currentElement) {
-      if (currentElement !== 'Teams') {
-        this.teamsItem.classList.remove('remoteTechStaffContent__tech-staff-active')
-      }
-    },
-
-    handleMouseOut(currentElement) {
-      if (currentElement !== 'Teams') {
-        this.teamsItem.classList.add('remoteTechStaffContent__tech-staff-active')
-      }
+    type: {
+      type: String,
+      default: 'teams',
     },
   },
 }

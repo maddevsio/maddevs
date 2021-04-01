@@ -13,14 +13,18 @@ exports[`cardIssuesGoDee renders correctly 1`] = `
       <h3
         class="case_title_h4 card-content_description-title"
       >
+        
         Motorbike
+      
       </h3>
        
       <p
         class="case_paragraph card-content_paragraph"
       >
+        
         They are fast and affordable, but they are not always convenient for white-collar workers wearing suits to
         the office, especially on rainy days.
+      
       </p>
     </div>
      
@@ -30,13 +34,17 @@ exports[`cardIssuesGoDee renders correctly 1`] = `
       <h3
         class="case_title_h4 card-content_description-title"
       >
+        
         Taxi
+      
       </h3>
        
       <p
         class="case_paragraph card-content_paragraph"
       >
+        
         Taxis are safer and more comfortable, but less accessible because they cost much more.
+      
       </p>
     </div>
   </div>
@@ -47,6 +55,7 @@ exports[`cardIssuesGoDee renders correctly 1`] = `
     <h4
       class="card-content_prices-title"
     >
+      
       $300
       <span>
         / month
@@ -59,13 +68,17 @@ exports[`cardIssuesGoDee renders correctly 1`] = `
       <p
         class="case_paragraph card-content_price-heading"
       >
-         The basic fee 
+        
+        The basic fee
+      
       </p>
        
       <p
         class="case_paragraph card-content_price-number"
       >
-         $0.51 
+        
+        $0.51
+      
       </p>
     </div>
      
@@ -75,13 +88,17 @@ exports[`cardIssuesGoDee renders correctly 1`] = `
       <p
         class="case_paragraph card-content_price-heading"
       >
-         The kilometer price 
+        
+        The kilometer price
+      
       </p>
        
       <p
         class="case_paragraph card-content_price-number"
       >
-         $0.56 
+        
+        $0.56
+      
       </p>
     </div>
      
@@ -91,13 +108,17 @@ exports[`cardIssuesGoDee renders correctly 1`] = `
       <p
         class="case_paragraph card-content_price-heading"
       >
-         Average kilometers 
+        
+        Average kilometers
+      
       </p>
        
       <p
         class="case_paragraph card-content_price-number"
       >
-         ~ 10 
+        
+        ~ 10
+      
       </p>
     </div>
   </div>

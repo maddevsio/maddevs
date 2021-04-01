@@ -13,7 +13,9 @@ exports[`footer contacts renders correctly 1`] = `
       <p
         class="footer-contacts__contact-title"
       >
+        
         Text us:
+      
       </p>
        
       <a
@@ -45,7 +47,9 @@ exports[`footer contacts renders correctly 1`] = `
         <p
           class="footer-contacts__contact-title"
         >
+          
           Call us:
+        
         </p>
       </div>
        
@@ -67,7 +71,7 @@ exports[`footer contacts renders correctly 1`] = `
       <li>
         <a
           class="footer-contacts__messenger-item-wrapper"
-          href="https://m.me/maddevsllc"
+          href="https://facebook.com/maddevsllc"
           target="_blank"
         >
           <img
@@ -85,7 +89,6 @@ exports[`footer contacts renders correctly 1`] = `
           </p>
         </a>
       </li>
-       
       <li>
         <a
           class="footer-contacts__messenger-item-wrapper"
@@ -107,7 +110,6 @@ exports[`footer contacts renders correctly 1`] = `
           </p>
         </a>
       </li>
-       
       <li>
         <a
           class="footer-contacts__messenger-item-wrapper"
@@ -129,7 +131,6 @@ exports[`footer contacts renders correctly 1`] = `
           </p>
         </a>
       </li>
-       
       <li>
         <a
           class="footer-contacts__messenger-item-wrapper"

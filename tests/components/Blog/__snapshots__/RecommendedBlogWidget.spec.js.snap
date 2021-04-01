@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`recommended blog widget component render with very long title 1`] = `
+<div>
+  <nuxt-link-stub
+    class=""
+    classname="test-long"
+    to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
+  >
+    <div
+      class="blog-post"
+    >
+      <img
+        class="blog-post__image"
+        src="https://images.prismic.io/superpupertest/e746f4e6-ce33-47b7-b828-5f315fea2bbb_1_bmF_K9TNqtHpHzUUiI_y5Q.jpeg?auto=compress,format"
+      />
+       
+      <div>
+        <h2
+          class="blog-post__title"
+          title="The best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your website"
+        >
+          
+        The best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your website
+      
+        </h2>
+         
+        <p
+          class="blog-post__paragraph"
+          data-testid="test-blog-post"
+        >
+          
+        Let’s start with a partial list of how a valid and semantic layout can improve any project:The best practices for improving layout quality on your...
+      
+        </p>
+         
+        <div
+          class="blog-post__meta"
+        >
+          <span
+            class="created-at"
+          >
+            Aug 25, 2020
+          </span>
+           
+          <span
+            class="tag"
+          >
+            markup
+          </span>
+        </div>
+         
+        <div
+          class="blog-post__author"
+        >
+          <img
+            alt="Alisa Manakova"
+            class="blog-post__author-image"
+            src="https://images.prismic.io/superpupertest/255624bf-6a97-48ff-a3b6-337434ba4d33_2_orMuDx-7_VWwpnRL1Q1rxw.jpeg?auto=compress,format"
+          />
+           
+          <div
+            class="blog-post__author-info"
+          >
+            <p
+              class="blog-post__author-name"
+            >
+              
+      Alisa Manakova
+    
+            </p>
+             
+            <div
+              class="blog-post__data-of-creation"
+            >
+              <span
+                class="blog-post__author-title"
+              >
+                Chief Strategy Officer
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nuxt-link-stub>
+</div>
+`;
+
+exports[`recommended blog widget component should render correctly with slot 1`] = `
+<div>
+  <nuxt-link-stub
+    class=""
+    classname="test"
+    to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
+  >
+    <div
+      class="blog-post"
+    >
+      <img
+        class="blog-post__image"
+        src="https://images.prismic.io/superpupertest/e746f4e6-ce33-47b7-b828-5f315fea2bbb_1_bmF_K9TNqtHpHzUUiI_y5Q.jpeg?auto=compress,format"
+      />
+       
+      <div>
+        <h2
+          class="blog-post__title"
+          title="The best practices for improving layout quality on your website"
+        >
+          
+        The best practices for improving layout quality on your website
+      
+        </h2>
+         
+        <p
+          class="blog-post__paragraph"
+          data-testid="test-blog-post"
+        >
+          
+        Let’s start with a partial list of how a valid and semantic layout can improve any project:
+      
+        </p>
+         
+        <div
+          class="blog-post__meta"
+        >
+          <span
+            class="created-at"
+          >
+            Aug 25, 2020
+          </span>
+           
+          <span
+            class="tag"
+          >
+            markup
+          </span>
+        </div>
+         
+        <div
+          class="blog-post__author"
+        >
+          <img
+            alt="Alisa Manakova"
+            class="blog-post__author-image"
+            src="https://images.prismic.io/superpupertest/255624bf-6a97-48ff-a3b6-337434ba4d33_2_orMuDx-7_VWwpnRL1Q1rxw.jpeg?auto=compress,format"
+          />
+           
+          <div
+            class="blog-post__author-info"
+          >
+            <p
+              class="blog-post__author-name"
+            >
+              
+      Alisa Manakova
+    
+            </p>
+             
+            <div
+              class="blog-post__data-of-creation"
+            >
+              <span
+                class="blog-post__author-title"
+              >
+                Chief Strategy Officer
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nuxt-link-stub>
+</div>
+`;

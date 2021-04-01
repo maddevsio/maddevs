@@ -1,51 +1,52 @@
 <template>
-  <section id="remote-tech-staff" class="remoteTechStaff main-parent-item">
+  <section
+    id="remote-tech-staff"
+    class="remoteTechStaff main-parent-item"
+  >
     <div class="container">
       <h2 class="remoteTechStaff__main-title">
-        Remote <br class="remoteTechStaff__small-screen-break" />
+        Remote <br class="remoteTechStaff__small-screen-break">
         Tech Staff
       </h2>
       <div class="remoteTechStaff__tech-staff-items">
         <RemoteTechStaffContent
-          :title="teams.title"
-          :sub-title="teams.subTitle"
-          :paragraph="teams.paragraph"
-          :button-inner-text="teams.buttonInnerText"
-          :active-by-default="teams.activeByDefault"
-          @onClick="$refs.teamsModal.show()"
+          v-bind="teams"
+          :hovered="hovered === 'teams'"
+          @mouseover="handleMouseOver"
+          @mouseout="handleMouseOut"
+          @click="$refs.modalTeams.show()"
         />
         <RemoteTechStaffContent
-          :title="individuals.title"
-          :sub-title="individuals.subTitle"
-          :paragraph="individuals.paragraph"
-          :button-inner-text="individuals.buttonInnerText"
-          :active-by-default="individuals.activeByDefault"
-          @onClick="$refs.individualsModal.show()"
+          v-bind="individuals"
+          :hovered="hovered === 'individuals'"
+          @mouseover="handleMouseOver"
+          @mouseout="handleMouseOut"
+          @click="$refs.modalIndividuals.show()"
         />
       </div>
     </div>
 
-    <Modal ref="teamsModal">
-      <teamsModal />
+    <Modal ref="modalTeams">
+      <ModalTeams />
     </Modal>
-    <Modal ref="individualsModal">
-      <individualsModal />
+    <Modal ref="modalIndividuals">
+      <ModalIndividuals />
     </Modal>
   </section>
 </template>
 
 <script>
 import RemoteTechStaffContent from '@/components/Services/RemoteTechStaffContent'
-import teamsModal from '@/components/Modals/teams-modal'
-import individualsModal from '@/components/Modals/individuals-modal'
-import Modal from '@/containers/Modal'
+import ModalTeams from '@/components/core/modals/ModalTeams'
+import ModalIndividuals from '@/components/core/modals/ModalIndividuals'
+import Modal from '@/components/core/Modal'
 
 export default {
   name: 'RemoteTechStaff',
   components: {
     RemoteTechStaffContent,
-    teamsModal,
-    individualsModal,
+    ModalTeams,
+    ModalIndividuals,
     Modal,
   },
 
@@ -53,26 +54,37 @@ export default {
     return {
       teams: {
         title: 'Teams',
-        subTitle: 'Tired of 20 or 30 people not delivering you any features?',
+        subtitle: 'Tired of 20 or 30 people not delivering you any features?',
         paragraph:
           'How about only dealing with smart heads and capable hands? Enjoy our proactive rockets who will ask you to get them more work.',
 
-        buttonInnerText: 'Get a team of ultra-fast coders',
-        modalWindowName: 'teams-modal',
-        activeByDefault: true,
+        buttonLabel: 'Get a team of ultra-fast coders',
+        type: 'teams',
       },
 
       individuals: {
         title: 'Individuals',
-        subTitle: 'Seeing one, two, five guys working on a minor thing? Ha!',
+        subtitle: 'Seeing one, two, five guys working on a minor thing? Ha!',
         paragraph:
-          "We are NOT going to bring you more people than you actually need. We'll just send one or two of our rangers to your frontier, and you'll enjoy peace of mind about IT.",
+          'We are NOT going to bring you more people than you actually need. We\'ll just send one or two of our rangers to your frontier, and you\'ll enjoy peace of mind about IT.',
 
-        buttonInnerText: 'Get individual proactive rockets',
-        modalWindowName: 'individuals-modal',
-        activeByDefault: false,
+        buttonLabel: 'Get individual proactive rockets',
+        type: 'individuals',
       },
+
+      hovered: 'teams',
     }
+  },
+
+  methods: {
+    handleMouseOver(type) {
+      this.hovered = type
+    },
+
+    handleMouseOut() {
+      // teams is hovered by default
+      this.hovered = 'teams'
+    },
   },
 }
 </script>

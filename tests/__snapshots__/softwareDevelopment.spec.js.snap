@@ -11,7 +11,9 @@ exports[`softwareDevelopment renders correctly 1`] = `
     <h2
       class="software-development__main-title"
     >
+      
       Software Development
+    
     </h2>
      
     <div
@@ -30,23 +32,26 @@ exports[`softwareDevelopment renders correctly 1`] = `
               <h3
                 class="item-title content-item__title"
               >
-                Backend
+                
+          Backend
+        
               </h3>
                
               <h4
                 class="item-sub-title content-item__sub-title"
               >
-                Your MVP doesn't work as expected after launch?
+                
+          Your MVP doesn't work as expected after launch?
+        
               </h4>
                
               <p
-                class="paragraph content-item__paragraph content-item__paragraph-first content-item__paragraph-backend"
+                class="paragraph content-item__paragraph content-item__paragraph-backend"
               >
                 Let our positively mad team rescue you and create sensible server logic for your project. We'll cure your growth pains like good doctors – just tell us about them and only focus on your business.
               </p>
-               
               <p
-                class="paragraph content-item__paragraph content-item__paragraph-second"
+                class="paragraph content-item__paragraph content-item__paragraph-backend"
               >
                 At Mad Devs we know everything about:
               </p>
@@ -115,7 +120,6 @@ exports[`softwareDevelopment renders correctly 1`] = `
           </ul>
         </div>
       </div>
-       
       <div
         class="content-item col-xl-4 col-lg-4"
       >
@@ -129,17 +133,21 @@ exports[`softwareDevelopment renders correctly 1`] = `
               <h3
                 class="item-title content-item__title"
               >
-                Frontend
+                
+          Frontend
+        
               </h3>
                
               <h4
                 class="item-sub-title content-item__sub-title"
               >
-                Your users get lost in lousy interfaces?
+                
+          Your users get lost in lousy interfaces?
+        
               </h4>
                
               <p
-                class="paragraph content-item__paragraph content-item__paragraph-first content-item__paragraph-frontend"
+                class="paragraph content-item__paragraph content-item__paragraph-frontend"
               >
                 Our wizards will take your UX magic to the next level where everything is intuitive and 
                 <span>
@@ -155,9 +163,8 @@ exports[`softwareDevelopment renders correctly 1`] = `
                 </span>
                  projects that will live a long life.
               </p>
-               
               <p
-                class="paragraph content-item__paragraph content-item__paragraph-second"
+                class="paragraph content-item__paragraph content-item__paragraph-frontend"
               >
                 We work with the best 
                 <span>
@@ -230,7 +237,6 @@ exports[`softwareDevelopment renders correctly 1`] = `
           </ul>
         </div>
       </div>
-       
       <div
         class="content-item col-xl-4 col-lg-4"
       >
@@ -244,23 +250,26 @@ exports[`softwareDevelopment renders correctly 1`] = `
               <h3
                 class="item-title content-item__title"
               >
-                Mobile
+                
+          Mobile
+        
               </h3>
                
               <h4
                 class="item-sub-title content-item__sub-title"
               >
-                Your app is slow and unable to survive a demo?
+                
+          Your app is slow and unable to survive a demo?
+        
               </h4>
                
               <p
-                class="paragraph content-item__paragraph content-item__paragraph-first content-item__paragraph-mobile"
+                class="paragraph content-item__paragraph content-item__paragraph-mobile"
               >
                 We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you'll be ecstatic to use yourself.
               </p>
-               
               <p
-                class="paragraph content-item__paragraph content-item__paragraph-second"
+                class="paragraph content-item__paragraph content-item__paragraph-mobile"
               >
                 We do both iOS and Android development using the following languages and frameworks:
               </p>

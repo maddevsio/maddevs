@@ -1,7 +1,9 @@
 <template>
   <div class="card-content background-color-silver">
     <div class="card-content_left-item">
-      <h4 class="case_title_h4 m-12_bottom card-content_description-title">Prim's algorithm</h4>
+      <h4 class="case_title_h4 m-12_bottom card-content_description-title">
+        Prim's algorithm
+      </h4>
       <TextParagraph>
         Prim's algorithm is used to effectively connect the dots on a map. This is how a trip request list is
         transformed into a map, where new potential routes are displayed for easier overview. The algorithm connects the
@@ -10,7 +12,10 @@
       </TextParagraph>
     </div>
     <div class="card-content_right-item">
-      <Lottie :options="lottieOptions" @animCreated="handleAnimation" />
+      <Lottie
+        :options="lottieOptions"
+        @animCreated="handleAnimation"
+      />
     </div>
   </div>
 </template>
@@ -18,7 +23,7 @@
 <script>
 import TextParagraph from '@/components/Cases/TextParagraph'
 import Lottie from 'vue-lottie/src/lottie.vue'
-import animationData from '@/assets/lottie/prim-algorithm.json'
+import animationData from '@/assets/lottie/godee/prim-algorithm.json'
 
 export default {
   name: 'CardGoDeePrimsAlgorithm',

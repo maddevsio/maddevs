@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import TeamsModal from '@/components/Modals/teams-modal'
+import ModalTeams from '@/components/core/modals/ModalTeams'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -10,7 +10,7 @@ describe('teams Modal', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(TeamsModal, {
+    wrapper = mount(ModalTeams, {
       localVue,
       stubs: ['modal'],
       mocks: {
@@ -39,28 +39,23 @@ describe('teams Modal', () => {
   // --------------------- //
 
   it('sets the correct default data', () => {
-    expect(typeof TeamsModal.data).toBe('function')
-    const defaultData = TeamsModal.data()
+    expect(typeof ModalTeams.data).toBe('function')
+    const defaultData = ModalTeams.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
-    expect(defaultData.inputId).toEqual('teams')
     expect(defaultData.selectedTeamSize).toBeNull()
     expect(defaultData.options).toHaveLength(3)
-    expect(defaultData.fieldName).toEqual('Expected team size')
-    expect(defaultData.emitMethodName).toEqual('getTeamSize')
-    expect(defaultData.sectionIsRequired).toEqual(true)
   })
 
   it('has a functions', () => {
     expect(
-      typeof TeamsModal.methods.getPrivacyCheckboxState &&
-        typeof TeamsModal.methods.getDiscountOffersCheckboxState &&
-        typeof TeamsModal.methods.getTeamSize,
+      typeof ModalTeams.methods.getPrivacyCheckboxState
+        && typeof ModalTeams.methods.getDiscountOffersCheckboxState
+        && typeof ModalTeams.methods.getTeamSize,
     ).toBe('function')
   })
 
   it('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true)
-    wrapper.vm.getDiscountOffersCheckboxState(true)
+    wrapper.vm.handleCheckboxesChange({ privacy: true, discountOffers: true })
     wrapper.vm.getTeamSize('Less than 5')
 
     expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true)
@@ -104,12 +99,12 @@ describe('teams Modal', () => {
 
     wrapper.vm.resetForm()
     expect(
-      wrapper.vm.$data.fullName &&
-        wrapper.vm.$data.email &&
-        wrapper.vm.$data.phoneNumber &&
-        wrapper.vm.$data.selectedTeamSize &&
-        wrapper.vm.$data.projectDescription &&
-        wrapper.vm.$data.form,
+      wrapper.vm.$data.fullName
+        && wrapper.vm.$data.email
+        && wrapper.vm.$data.phoneNumber
+        && wrapper.vm.$data.selectedTeamSize
+        && wrapper.vm.$data.projectDescription
+        && wrapper.vm.$data.form,
     ).toBeNull()
 
     expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(false)

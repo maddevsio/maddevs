@@ -1,89 +1,43 @@
 <template>
-  <section id="customers" class="customers">
+  <section
+    id="customers"
+    class="customers"
+  >
     <div class="container">
       <div class="customers__text-content">
-        <h2 class="customers__main-title">Our valued customers</h2>
+        <h2 class="customers__main-title">
+          Our valued customers
+        </h2>
         <p class="customers__description">
           Due to our NDAs and confidentiality requirements, we cannot disclose details for all of our customers. These
           are a few of the companies we work with.
         </p>
       </div>
       <div class="customers__customers-list">
-        <Customer v-for="(customer, i) in customers" :key="i" :customer="customer" />
+        <div
+          v-for="customer in customers"
+          :key="customer"
+          class="icon-wrapper"
+        >
+          <div
+            :class="`icon-wrapper__${customer}-icon`"
+            class="icon-wrapper__icon"
+          />
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import Customer from '@/components/Projects/Customer'
+import { customers } from '@/data/customers'
 
 export default {
   name: 'Customers',
-  components: {
-    Customer,
-  },
 
   data() {
     return {
-      buttonInnerText: 'Order a project from us',
-      modalWindowName: 'order-project-from-us-modal',
-      customers: [
-        {
-          className: 'godee-icon',
-        },
-        {
-          className: 'guardrails-icon',
-        },
-        {
-          className: 'teacherly-icon',
-        },
-        {
-          className: 'triggermesh-icon',
-        },
-        {
-          className: 'clutch-icon',
-        },
-        {
-          className: 'eatigo-icon',
-        },
-        {
-          className: 'veeqo-icon',
-        },
-        {
-          className: 'admitad-icon',
-        },
-        {
-          className: 'iotsploit-icon',
-        },
-        {
-          className: 'sir-jonas-icon',
-        },
-        {
-          className: 'progressay-icon',
-        },
-        {
-          className: 'kickoico-icon',
-        },
-        {
-          className: 'nambafood-icon',
-        },
-        {
-          className: 'showmebishkek-icon',
-        },
-        {
-          className: 'mythril-icon',
-        },
-        {
-          className: 'seso-icon',
-        },
-        {
-          className: 'tengri-icon',
-        },
-        {
-          className: 'peklo-icon',
-        },
-      ],
+      customers,
     }
   },
 }
@@ -91,6 +45,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
+@import '../../assets/styles/_ourValuedIcons';
 
 .customers {
   padding-bottom: 108px;
@@ -194,6 +149,102 @@ export default {
   @media only screen and (max-width: 360px) {
     &__customers-list {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+.icon-wrapper {
+  min-height: 111px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $our-valued-icon-background;
+
+  &__icon {
+    width: 143px;
+    height: 64px;
+    display: block;
+  }
+
+  &__godee-icon {
+    @include godee-icon;
+  }
+
+  &__guardrails-icon {
+    @include guardrails-icon;
+  }
+
+  &__teacherly-icon {
+    @include teacherly-icon;
+  }
+
+  &__triggermesh-icon {
+    @include triggermesh-icon;
+  }
+
+  &__clutch-icon {
+    @include clutch-icon;
+  }
+
+  &__eatigo-icon {
+    @include eatigo-icon;
+  }
+
+  &__veeqo-icon {
+    @include veeqo-icon;
+  }
+
+  &__admitad-icon {
+    @include admitad-icon;
+  }
+
+  &__iotsploit-icon {
+    @include iotsploit-icon;
+  }
+
+  &__sir-jonas-icon {
+    @include sir-jonas-icon;
+  }
+
+  &__progressay-icon {
+    @include progressay-icon;
+  }
+
+  &__kickoico-icon {
+    @include kickoico-icon;
+  }
+
+  &__nambafood-icon {
+    @include nambafood-icon;
+  }
+
+  &__showmebishkek-icon {
+    @include showmebishkek-icon;
+  }
+
+  &__mythril-icon {
+    @include mythril-icon;
+  }
+
+  &__seso-icon {
+    @include seso-icon;
+  }
+
+  &__tengri-icon {
+    @include tengri-icon;
+  }
+
+  &__peklo-icon {
+    @include peklo-icon;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    min-height: 81px;
+
+    &__icon {
+      width: 75px;
+      height: 33px;
     }
   }
 }

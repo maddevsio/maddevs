@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import InfrastructureAuditModal from '@/components/Modals/infrastructure-audit-modal'
+import ModalInfrastructureAudit from '@/components/core/modals/ModalInfrastructureAudit'
 import Vuelidate from 'vuelidate'
 
 const localVue = createLocalVue()
@@ -10,7 +10,7 @@ describe('infrastructure Audit Modal', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(InfrastructureAuditModal, {
+    wrapper = mount(ModalInfrastructureAudit, {
       localVue,
       stubs: ['modal'],
       mocks: {
@@ -44,27 +44,22 @@ describe('infrastructure Audit Modal', () => {
   // --------------------- //
 
   it('sets the correct default data', () => {
-    expect(typeof InfrastructureAuditModal.data).toBe('function')
-    const defaultData = InfrastructureAuditModal.data()
+    expect(typeof ModalInfrastructureAudit.data).toBe('function')
+    const defaultData = ModalInfrastructureAudit.data()
     expect(defaultData.agreeWithPrivacyPolicy && defaultData.agreeToGetMadDevsDiscountOffers).toEqual(false)
-    expect(defaultData.inputId).toEqual('infrastructure-audit')
     expect(defaultData.options).toHaveLength(7)
-    expect(defaultData.fieldName).toEqual('Where is your project hosted?')
-    expect(defaultData.emitMethodName).toEqual('getSelectedProjectHost')
-    expect(defaultData.sectionIsRequired).toEqual(false)
   })
 
   it('has a functions', () => {
     expect(
-      typeof InfrastructureAuditModal.methods.getPrivacyCheckboxState &&
-        typeof InfrastructureAuditModal.methods.getDiscountOffersCheckboxState &&
-        typeof InfrastructureAuditModal.methods.getSelectedProjectHost,
+      typeof ModalInfrastructureAudit.methods.getPrivacyCheckboxState
+        && typeof ModalInfrastructureAudit.methods.getDiscountOffersCheckboxState
+        && typeof ModalInfrastructureAudit.methods.getSelectedProjectHost,
     ).toBe('function')
   })
 
   it('call functions with params and change variables state', () => {
-    wrapper.vm.getPrivacyCheckboxState(true)
-    wrapper.vm.getDiscountOffersCheckboxState(true)
+    wrapper.vm.handleCheckboxesChange({ privacy: true, discountOffers: true })
     wrapper.vm.getSelectedProjectHost('Digital Ocean')
 
     expect(wrapper.vm.$data.agreeWithPrivacyPolicy && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers).toEqual(true)
@@ -109,16 +104,16 @@ describe('infrastructure Audit Modal', () => {
 
     wrapper.vm.resetForm()
     expect(
-      wrapper.vm.$data.fullName &&
-        wrapper.vm.$data.email &&
-        wrapper.vm.$data.form &&
-        wrapper.vm.$data.selectedProjectHost &&
-        wrapper.vm.$data.company,
+      wrapper.vm.$data.fullName
+        && wrapper.vm.$data.email
+        && wrapper.vm.$data.form
+        && wrapper.vm.$data.selectedProjectHost
+        && wrapper.vm.$data.company,
     ).toBeNull()
     expect(
-      wrapper.vm.$data.agreeWithPrivacyPolicy &&
-        wrapper.vm.$data.agreeToGetMadDevsDiscountOffers &&
-        wrapper.vm.$data.isEmailSent,
+      wrapper.vm.$data.agreeWithPrivacyPolicy
+        && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
+        && wrapper.vm.$data.isEmailSent,
     ).toEqual(false)
   })
 })

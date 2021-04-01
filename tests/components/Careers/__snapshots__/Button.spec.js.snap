@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component should render correctly with loading prop 1`] = `
+<div>
+  <button
+    class="button"
+    id="careers-btn"
+  >
+    <span>
+      Waiting...
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render correctly with slot 1`] = `
+<div>
+  <button
+    class="button"
+    id="careers-btn"
+  >
+    It is a button
+  </button>
+</div>
+`;
+
+exports[`Button component should render correctly without slot 1`] = `
+<div>
+  <button
+    class="button"
+    id="careers-btn"
+  />
+</div>
+`;

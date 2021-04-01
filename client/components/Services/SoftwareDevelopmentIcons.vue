@@ -1,6 +1,11 @@
 <template>
   <ul class="icons-list">
-    <li v-for="(icon, i) in icons" :key="i" :class="icon.className" class="icons-list__icon-item">
+    <li
+      v-for="(icon, i) in icons"
+      :key="i"
+      :class="icon.className"
+      class="icons-list__icon-item"
+    >
       <span>{{ icon.title }}</span>
     </li>
   </ul>
@@ -12,7 +17,7 @@ export default {
   props: {
     icons: {
       type: Array,
-      default: Function,
+      default: () => [],
     },
   },
 }

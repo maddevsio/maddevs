@@ -1,7 +1,12 @@
 <template>
-  <button id="careers-btn" :class="{ 'is-disabled': disabled }" class="button" @click="callback">
+  <button
+    id="careers-btn"
+    :class="{ 'is-disabled': disabled }"
+    class="button"
+    @click="handleClick"
+  >
     <span v-if="loading === true">Waiting...</span>
-    <slot v-else></slot>
+    <slot v-else />
   </button>
 </template>
 
@@ -21,10 +26,8 @@ export default {
   },
 
   methods: {
-    callback(e) {
-      if (this.$props.disabled === false) {
-        this.$emit('click', e)
-      }
+    handleClick(e) {
+      if (!this.disabled) this.$emit('click', e)
     },
   },
 }

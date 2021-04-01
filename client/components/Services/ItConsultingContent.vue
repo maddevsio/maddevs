@@ -2,29 +2,37 @@
   <div class="it-consulting-item col-xl-4 col-lg-4">
     <div class="it-consulting-item__text-content">
       <client-only>
-        <UIItemTitle :item-title="title" class="it-consulting-item__title" v-html="title" />
-        <UIItemSubTitle
-          :item-sub-title="subTitle"
+        <UITitle
+          class="it-consulting-item__title"
+          v-html="title"
+        >
+          {{ title }}
+        </UITitle>
+        <UISubtitle
           :class="`it-consulting-item__sub-title-${className}`"
           class="it-consulting-item__sub-title"
-          v-html="subTitle"
-        />
-        <UIParagraph :paragraph="paragraph" class="it-consulting-item__paragraph" />
+          v-html="subtitle"
+        >
+          {{ subtitle }}
+        </UISubtitle>
+        <UIParagraph class="it-consulting-item__paragraph">
+          {{ paragraph }}
+        </UIParagraph>
       </client-only>
     </div>
   </div>
 </template>
 
 <script>
-import UIParagraph from '@/components/ui/Services/UIParagraph'
-import UIItemTitle from '@/components/ui/Services/UIItemTitle'
-import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle'
+import UIParagraph from '@/components/Services/UIParagraph'
+import UITitle from '@/components/Services/UITitle'
+import UISubtitle from '@/components/Services/UISubtitle'
 
 export default {
   name: 'ItConsultingContent',
   components: {
-    UIItemTitle,
-    UIItemSubTitle,
+    UITitle,
+    UISubtitle,
     UIParagraph,
   },
 
@@ -34,7 +42,7 @@ export default {
       default: '',
     },
 
-    subTitle: {
+    subtitle: {
       type: String,
       default: '',
     },

@@ -16,7 +16,9 @@ exports[`footer renders correctly 1`] = `
         <h2
           class="footer__main-title"
         >
+          
           Get In Touch
+        
         </h2>
          
         <footercontacts-stub />
@@ -36,7 +38,7 @@ exports[`footer renders correctly 1`] = `
     <div
       class="footer__mobile-content footer__social-network-list-mobile"
     >
-      <footersocialnetworklist-stub />
+      <footersocialnetworks-stub />
     </div>
      
     <div

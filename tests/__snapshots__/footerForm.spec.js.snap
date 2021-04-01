@@ -78,6 +78,7 @@ exports[`footer form renders correctly 1`] = `
        
       <input
         class="form-checkbox-input"
+        data-testid="test-privacy-policy-checkbox-input"
         id="privacy-policy-input-id"
         name="Privacy policy"
         type="checkbox"
@@ -102,6 +103,7 @@ exports[`footer form renders correctly 1`] = `
     
       <input
         class="form-checkbox-input"
+        data-testid="test-form-checkbox-input"
         id="marketing-communications-input-id"
         name="Marketing communications"
         type="checkbox"

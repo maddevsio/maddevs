@@ -1,19 +1,35 @@
 <template>
   <div>
     <div class="post-part single">
-      <div :class="size" class="block-img">
-        <prismic-image :field="img" :class="{ 'block-img-zoom': zoomEnabled }" @click="openModal" />
-        <SimpleModal v-if="zoomEnabled" ref="zoom">
+      <div
+        :class="size"
+        class="block-img"
+      >
+        <prismic-image
+          :field="img"
+          :class="{ 'block-img-zoom': zoomEnabled }"
+          @click="openModal"
+        />
+        <SimpleModal
+          v-if="zoomEnabled"
+          ref="zoom"
+        >
           <prismic-image :field="img" />
         </SimpleModal>
       </div>
-      <p v-if="caption" class="image-label">{{ caption }}</p>
+      <p
+        v-if="caption"
+        data-testid="test-image-label"
+        class="image-label"
+      >
+        {{ caption }}
+      </p>
     </div>
   </div>
 </template>
 
 <script>
-import SimpleModal from '@/containers/SimpleModal'
+import SimpleModal from '@/components/Blog/SimpleModal'
 
 export default {
   name: 'ImageCaptionSlice',
@@ -36,13 +52,6 @@ export default {
   computed: {
     zoomEnabled() {
       return this.slice.primary.enable_zoom === 'enable'
-    },
-
-    lightBoxImage() {
-      return {
-        src: this.img.url,
-        alt: this.img.alt,
-      }
     },
   },
 

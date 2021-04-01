@@ -1,18 +1,41 @@
 <template>
   <div class="slider-content">
-    <div :class="{ 'box-shadow': boxShadow }" class="swiper-container thumb-example">
-      <swiper ref="swiperTop" :options="swiperOptionTop" class="swiper gallery-top">
-        <swiper-slide v-for="(element, index) in components" :key="index">
+    <div
+      :class="{ 'box-shadow': boxShadow }"
+      class="swiper-container thumb-example"
+    >
+      <swiper
+        ref="swiperTop"
+        :options="swiperOptionTop"
+        class="swiper gallery-top"
+      >
+        <swiper-slide
+          v-for="(element, index) in components"
+          :key="index"
+        >
           <prismic-image :field="element.gallery_image" />
         </swiper-slide>
       </swiper>
     </div>
-    <p v-if="sliderDescription !== ''" class="slider-description">
+    <p
+      v-if="sliderDescription !== ''"
+      class="slider-description"
+    >
       {{ sliderDescription }}
     </p>
-    <swiper ref="swiperThumbs" :options="swiperOptionThumbs" class="swiper gallery-thumbs">
-      <swiper-slide v-for="element in components" :key="element.fileName">
-        <prismic-image v-if="element.gallery_image.Mobile" :field="element.gallery_image.Mobile" />
+    <swiper
+      ref="swiperThumbs"
+      :options="swiperOptionThumbs"
+      class="swiper gallery-thumbs"
+    >
+      <swiper-slide
+        v-for="element in components"
+        :key="element.fileName"
+      >
+        <prismic-image
+          v-if="element.gallery_image.Mobile"
+          :field="element.gallery_image.Mobile"
+        />
       </swiper-slide>
     </swiper>
   </div>

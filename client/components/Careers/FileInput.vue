@@ -3,23 +3,22 @@
     <input
       id="file"
       ref="fileInput"
+      data-testid="test-file"
       class="file-input__uploader"
       type="file"
       name="file"
-      accept=".pdf,.cv,.doc,.odt,.docx,.txt"
-      @change="onFileChanged"
-    />
+      :accept="acceptedExtensions"
+      @change="handleFileSelect"
+    >
     <span class="none-decorated-dash">–</span>
     <label
-      :class="{
-        'file-input__cv--selected': selectedFile,
-        'file-input__cv--attachable': !selectedFile,
-      }"
+      data-testid="test-file-label"
+      :class="`file-input__cv--${selectedFile ? 'selected' : 'attachable'}`"
       class="file-input__cv"
       for="file"
     >
-      {{ selectedFile ? selectedFileName : 'find attached my CV' }}</label
-    >
+      {{ selectedFilename }}
+    </label>
   </div>
 </template>
 
@@ -28,34 +27,26 @@ export default {
   name: 'FileInput',
   data() {
     return {
+      acceptedExtensions: '.pdf,.cv,.doc,.odt,.docx,.txt',
       selectedFile: null,
     }
   },
 
   computed: {
-    selectedFileName() {
-      const ending = '...'
-      const fileName = this.selectedFile.name
-      if (fileName) {
-        if (fileName.length > 25) {
-          return fileName.substring(0, 25) + ending
-        }
-        return fileName
-      }
-      return ''
+    selectedFilename() {
+      if (!this.selectedFile) return 'find attached my CV'
+      const { name } = this.selectedFile
+      if (!name) return ''
+      if (name.length > 25) return `${name.substring(0, 25)}...`
+      return name
     },
   },
 
   methods: {
-    onFileChanged(event) {
+    handleFileSelect(event) {
       const [file] = event.target.files
       this.selectedFile = file
       this.$emit('input', file)
-    },
-
-    reset() {
-      this.selectedFile = null
-      this.$refs.fileInput.value = null
     },
   },
 }
