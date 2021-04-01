@@ -1,16 +1,17 @@
 import { mount } from '@vue/test-utils'
 
-import ListTeamItem from '@/components/Cases/ListTeamItem'
+import ListTeamItem from '@/components/Cases/shared/ListTeamItem'
 
 describe('list team item', () => {
   let wrapper
   const props = {
     name: 'Name',
     position: 'Position',
-    pictureFolder: 'nambafood',
-    fileName: 'apple-iphone-xr-silver',
-    fileExtension: 'png',
-    alt: 'alt',
+    image: {
+      folder: 'nambafood',
+      file: 'apple-iphone-xr-silver',
+      extension: 'png',
+    },
   }
 
   beforeEach(() => {

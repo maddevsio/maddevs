@@ -1,7 +1,7 @@
 <template>
   <main class="case">
     <CaseHeader
-      :header-logo="headerLogo"
+      :logo="logo"
       video-name=""
       video-fallback-path="/images/Cases/kaf/png/banner-bg.png"
     >
@@ -39,8 +39,8 @@
 </template>
 
 <script>
-import CaseHeader from '@/components/Cases/CaseHeader'
-import Footer from '@/components/Cases/Footer'
+import CaseHeader from '@/components/Cases/shared/CaseHeader'
+import Footer from '@/components/Cases/shared/CaseFooter'
 import Main from '@/components/Cases/kaf/Main'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
@@ -56,11 +56,11 @@ export default {
 
   data() {
     return {
-      headerLogo: {
+      logo: {
         width: 387,
         height: 81.23,
-        pictureFolder: 'kaf',
-        fileName: 'kaf-logo',
+        folder: 'kaf',
+        file: 'kaf-logo',
         alt: '',
       },
     }

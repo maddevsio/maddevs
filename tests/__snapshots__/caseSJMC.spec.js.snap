@@ -2907,6 +2907,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       </p>
        
       <blockquote
+        alt="Wade Bartlett: Former Technical and Operations Director, Sir John Monash Centre."
         class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
       >
         
@@ -2929,7 +2930,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               />
                
               <img
-                alt="Wade Bartlett: Former Technical and Operations Director, Sir John Monash Centre."
+                alt="Wade Bartlett"
                 class="image"
                 height="0"
                 loading="lazy"

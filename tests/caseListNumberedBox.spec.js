@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import ListNumberedBox from '@/components/Cases/ListNumberedBox'
+import ListNumberedBox from '@/components/Cases/shared/ListNumberedBox'
 
 describe('list numbered box', () => {
   let wrapper

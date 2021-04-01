@@ -14,7 +14,7 @@ exports[`list team item renders correctly 1`] = `
     />
      
     <img
-      alt="alt"
+      alt="Name"
       class="image grey-background"
       height="50"
       loading="lazy"

@@ -10,9 +10,7 @@ exports[`cardsBusinessModelsGrid renders correctly 1`] = `
     <div
       class="case_business-models-grid__personal-image"
     >
-      <picture
-        file-name-retina="personal@2x"
-      >
+      <picture>
         <source
           class="image"
           srcset="s3 image url ,s3 image url 2x"
