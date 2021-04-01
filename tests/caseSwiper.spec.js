@@ -21,6 +21,9 @@ describe('swiper', () => {
   beforeEach(() => {
     wrapper = mount(Swiper, {
       propsData: props,
+      mocks: {
+        getMediaFromS3: () => 's3 image url',
+      },
     })
   })
 

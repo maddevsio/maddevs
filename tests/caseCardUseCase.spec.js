@@ -18,6 +18,9 @@ describe('cardUseCase', () => {
   beforeEach(() => {
     wrapper = mount(CardUseCase, {
       propsData: props,
+      mocks: {
+        getMediaFromS3: () => 's3 image url',
+      },
       stubs: ['client-only'],
     })
   })

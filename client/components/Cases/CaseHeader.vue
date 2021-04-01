@@ -3,6 +3,12 @@
     id="case-header"
     class="case_header"
   >
+    <!-- Image placeholder fallback for Video -->
+    <div
+      class="case_main-video_fallback"
+      :style="{ backgroundImage: `url(${getMediaFromS3(videoFallbackPath)})` }"
+    />
+    <!-- End Image placeholder fallback for Video -->
     <video
       v-if="!isIphone"
       class="case_main-video"
@@ -11,7 +17,7 @@
       autoplay="true"
     >
       <source
-        :src="video"
+        :src="getMediaFromS3($props.videoName)"
         type="video/mp4"
       >
       Your browser does not support the video tag.
@@ -28,7 +34,7 @@
       <img
         :width="headerLogo.width"
         :height="headerLogo.height"
-        :src="require(`@/assets/img/Cases/${headerLogo.pictureFolder}/svg/${headerLogo.fileName}.svg`)"
+        :src="getMediaFromS3(`/images/Cases/${headerLogo.pictureFolder}/svg/${headerLogo.fileName}.svg`)"
         :alt="headerLogo.alt"
         :class="`case_${headerLogo.fileName}`"
         class="case_header-logo"
@@ -76,17 +82,17 @@ export default {
       type: String,
       default: '',
     },
+
+    videoFallbackPath: {
+      type: String,
+      default: '',
+    },
   },
 
   data() {
     return {
       isIphone: false,
-      video: '',
     }
-  },
-
-  created() {
-    this.video = `${process.env.awsUrl}/${this.$props.videoName}`
   },
 
   mounted() {
@@ -106,6 +112,16 @@ export default {
 .case {
   &_header {
     display: flex;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
 
     &:after {
       display: none;
@@ -142,6 +158,18 @@ export default {
     letter-spacing: -0.035em;
     text-align: center;
     background-color: $bgcolor--red;
+  }
+
+  &_main-video_fallback {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
   }
 
   @media screen and (max-width: 1170px) {

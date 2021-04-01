@@ -2,7 +2,8 @@
   <main class="main case">
     <CaseHeader
       :header-logo="headerLogo"
-      video-name="main.ef19480.mp4"
+      video-name="/videos/main.ef19480.mp4"
+      video-fallback-path="/images/Cases/nambafood/jpg/blank.jpg"
     >
       <h1
         slot="title"
@@ -77,7 +78,7 @@
       </section>
       <section class="container_full background-color-silver">
         <img
-          src="../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif"
+          :src="getMediaFromS3('/images/Cases/nambafood/gif/high-level-system-overview.gif')"
           class="case_gif case_high-level-system-overview-gif"
           alt="Namba Food: Website and Mobile App Infrastructure Scheme."
         >
@@ -123,7 +124,7 @@
         <div class="case_full-screen-phone-video-wrapper">
           <img
             v-if="isIphone"
-            src="../../assets/img/Cases/nambafood/png/iphone-video-preview.png"
+            :src="getMediaFromS3('/images/Cases/nambafood/png/iphone-video-preview.png')"
             class="case_phone-ios-image"
           >
           <video
@@ -136,7 +137,7 @@
             muted="true"
           >
             <source
-              :src="getPathToPhoneVideo"
+              :src="getMediaFromS3('/videos/mobile-applications-for-end-users.faaab2d.mp4')"
               type="video/mp4"
             >
             Your browser does not support the video tag.
@@ -382,7 +383,7 @@
         >
           <img
             v-if="isIphone"
-            src="../../assets/img/Cases/nambafood/jpg/map-blank.jpg"
+            :src="getMediaFromS3('/images/Cases/nambafood/jpg/map-blank.jpg')"
             class="case_ios-map-video-image case_box-shadow"
           >
           <video
@@ -395,7 +396,7 @@
             muted="true"
           >
             <source
-              :src="getPathToMapVideo"
+              :src="getMediaFromS3('/videos/map.c41e893.mp4')"
               type="video/mp4"
             >
             Your browser does not support the video tag.
@@ -445,7 +446,7 @@
       </section>
       <section class="container_full background-color-silver">
         <img
-          src="../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif"
+          :src="getMediaFromS3('/images/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif')"
           class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"
           alt="Namba Food: Website and Mobile App Infrastructure Scheme."
         >
@@ -898,11 +899,6 @@ export default {
       ...getMetadata('nambafood'),
       image: 'https://maddevs.io/namba-food.png',
     })
-  },
-
-  computed: {
-    getPathToPhoneVideo: () => `${process.env.awsUrl}/mobile-applications-for-end-users.faaab2d.mp4`,
-    getPathToMapVideo: () => `${process.env.awsUrl}/map.c41e893.mp4`,
   },
 
   mounted() {
