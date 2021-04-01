@@ -45,6 +45,8 @@ import InfrastructureSchema from '@/components/Cases/nambafood/InfrastructureSch
 import Pipelines from '@/components/Cases/nambafood/Pipelines'
 import Team from '@/components/Cases/nambafood/Team'
 import NationwideSuccess from '@/components/Cases/nambafood/NationwideSuccess'
+import isIphoneMixin from '@/mixins/isIphoneMixin'
+import autoplayVideoMixin from '@/mixins/autoplayVideoMixin'
 
 export default {
   name: 'Main',
@@ -68,46 +70,6 @@ export default {
     NationwideSuccess,
   },
 
-  data() {
-    return {
-      isIphone: false,
-    }
-  },
-
-  mounted() {
-    this.checkNavigatior()
-    this.setupAutoplay()
-  },
-
-  methods: {
-    checkNavigatior() {
-      if (navigator.userAgent.match(/(iPhone)/i)) {
-        this.isIphone = true
-      } else {
-        this.isIphone = false
-      }
-    },
-
-    setupAutoplay() {
-      const videoIds = ['map-video', 'iphone-silver-video']
-      videoIds.forEach(video => {
-        const callback = entries => {
-          entries.forEach(entry => {
-            if (entry.target.id === video) {
-              if (entry.isIntersecting) {
-                entry.target.play()
-              }
-            }
-          })
-        }
-        const observer = new IntersectionObserver(callback, {
-          root: null,
-          rootMargin: '0px',
-          threshold: 1.0,
-        })
-        observer.observe(document.getElementById(video))
-      })
-    },
-  },
+  mixins: [isIphoneMixin, autoplayVideoMixin(['map-video', 'iphone-silver-video'])],
 }
 </script>
