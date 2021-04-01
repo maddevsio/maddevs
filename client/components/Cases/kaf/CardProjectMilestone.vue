@@ -1,12 +1,12 @@
 <template>
   <div
     class="card"
-    :class="`background-color-${projectMilestone.backgroundColor}`"
+    :class="`background-color-${background}`"
+    @mouseover="play"
+    @mouseout="pause"
   >
     <div
       class="card_lottie"
-      @mouseover="play"
-      @mouseout="pause"
     >
       <Lottie
         :options="lottieOptions"
@@ -15,10 +15,10 @@
     </div>
     <div class="card_text-content">
       <h4 class="case_title_h4 card_title">
-        {{ projectMilestone.title }}
+        {{ title }}
       </h4>
       <TextParagraph class="card_paragraph">
-        {{ projectMilestone.description }}
+        {{ description }}
       </TextParagraph>
     </div>
   </div>
@@ -36,24 +36,19 @@ export default {
   },
 
   props: {
-    projectMilestone: {
-      type: Object,
-      default: () => {},
+    title: {
+      type: String,
+      default: '',
+    },
 
-      title: {
-        type: String,
-        default: '',
-      },
+    description: {
+      type: String,
+      default: '',
+    },
 
-      description: {
-        type: String,
-        default: '',
-      },
-
-      backgroundColor: {
-        type: String,
-        default: '',
-      },
+    background: {
+      type: String,
+      default: '',
     },
   },
 
@@ -66,7 +61,7 @@ export default {
   computed: {
     lottieOptions() {
       return {
-        animationData: require(`@/assets/lottie/kaf/${this.$props.projectMilestone.title}.json`),
+        animationData: require(`@/assets/lottie/kaf/${this.$props.title}.json`),
         autoplay: false,
       }
     },
@@ -96,6 +91,7 @@ export default {
   align-items: center;
   padding: 20px 30px;
   border-radius: 8px;
+  cursor: pointer;
 
   &_title,
   &_paragraph {
@@ -111,7 +107,6 @@ export default {
     max-width: 61px;
     height: 61px;
     margin-right: 30px;
-    cursor: pointer;
   }
 
   @media screen and (max-width: 768px) {

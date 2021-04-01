@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import PlansForSimilarProjects from '../client/components/Cases/Kaf/PlansForSimilarProjects'
+import PlansForSimilarProjects from '../client/components/Cases/kaf/PlansForSimilarProjects'
 
 describe('plans for similar projects', () => {
   let wrapper

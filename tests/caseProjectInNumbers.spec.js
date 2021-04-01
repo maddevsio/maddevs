@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import ProjectInNumbers from '../client/components/Cases/Kaf/ProjectInNumbers'
+import ProjectInNumbers from '../client/components/Cases/kaf/ProjectInNumbers'
 
 describe('project in numbers', () => {
   let wrapper

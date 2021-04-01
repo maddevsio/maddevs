@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import PhaseUserAuthorisation from '../client/components/Cases/Kaf/PhaseUserAuthorisation'
+import PhaseUserAuthorisation from '../client/components/Cases/kaf/PhaseUserAuthorisation'
 
 describe('phase user authorisation', () => {
   let wrapper

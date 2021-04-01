@@ -5,17 +5,19 @@
     </h2>
     <div class="m-96_bottom media-m-48_bottom case_key-project-milestones">
       <CardProjectMilestone
-        v-for="(projectMilestone, i) in keyProjectMilestones"
-        :key="i"
-        :project-milestone="projectMilestone"
+        v-for="projectMilestone in keyProjectMilestones"
+        :key="projectMilestone.title"
+        :title="projectMilestone.title"
+        :description="projectMilestone.description"
+        :background="projectMilestone.background"
       />
     </div>
   </section>
 </template>
 
 <script>
-import CardProjectMilestone from '@/components/Cases/Kaf/CardProjectMilestone'
-import { keyProjectMilestones } from '@/data/kafCase'
+import CardProjectMilestone from '@/components/Cases/kaf/CardProjectMilestone'
+import { keyProjectMilestones } from '@/data/caseKaf'
 
 export default {
   name: 'KeyProjectMilestones',

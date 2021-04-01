@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import WatchWhatYouLikeVideo from '../client/components/Cases/Kaf/WatchWhatYouLikeVideo'
+import WatchWhatYouLikeVideo from '../client/components/Cases/kaf/WatchWhatYouLikeVideo'
 
 describe('phase online cinema', () => {
   let wrapper

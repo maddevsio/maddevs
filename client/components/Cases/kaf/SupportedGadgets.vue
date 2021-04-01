@@ -9,11 +9,17 @@
     </TextParagraph>
     <div class="m-107_bottom media-m-68_bottom case_supported-gadgets">
       <Card
-        v-for="(gadget, i) in supportedGadgets"
-        :key="i"
-        :class="`background-color-${gadget.cardColor}`"
+        v-for="gadget in supportedGadgets"
+        :key="gadget.title"
+        :class="`background-color-${gadget.color}`"
       >
-        <CardSupportedGadgets :gadget="gadget" />
+        <CardSupportedGadgets
+          :title="gadget.title"
+          :width="gadget.width"
+          :height="gadget.height"
+          :file="gadget.file"
+          :alt="gadget.alt"
+        />
       </Card>
     </div>
   </section>
@@ -21,9 +27,9 @@
 
 <script>
 import Card from '@/components/Cases/Card'
-import CardSupportedGadgets from '@/components/Cases/Kaf/CardSupportedGadgets'
+import CardSupportedGadgets from '@/components/Cases/kaf/CardSupportedGadgets'
 import TextParagraph from '@/components/Cases/TextParagraph'
-import { supportedGadgets } from '@/data/kafCase'
+import { supportedGadgets } from '@/data/caseKaf'
 
 export default {
   name: 'SupportedGadgets',

@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import CardSupportedGadgets from '@/components/Cases/Kaf/CardSupportedGadgets'
+import CardSupportedGadgets from '@/components/Cases/kaf/CardSupportedGadgets'
 
 describe('card supported gadgets', () => {
   let wrapper

@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import AboutKaf from '../client/components/Cases/Kaf/AboutKaf'
+import AboutKaf from '../client/components/Cases/kaf/AboutKaf'
 
 describe('about kaf', () => {
   let wrapper
