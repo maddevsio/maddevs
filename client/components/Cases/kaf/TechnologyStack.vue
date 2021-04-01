@@ -17,7 +17,7 @@
 <script>
 import ListTechnologies from '@/components/Cases/ListTechnologies'
 import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
-import { technologies } from '@/data/kafCase'
+import { technologies } from '@/data/caseKaf'
 
 export default {
   name: 'TechnologyStack',

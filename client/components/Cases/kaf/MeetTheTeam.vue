@@ -37,7 +37,7 @@
 import ListTeam from '@/components/Cases/ListTeam'
 import ListTeamItem from '@/components/Cases/ListTeamItem'
 import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
-import { team } from '@/data/kafCase'
+import { team } from '@/data/caseKaf'
 
 export default {
   name: 'MeetTheTeam',

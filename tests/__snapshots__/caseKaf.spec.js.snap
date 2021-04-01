@@ -467,104 +467,120 @@ exports[`kaf renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
+            class="case_technologies-item__tech-icon backend-go"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
-            Golang
+            
+    Golang
+  
           </p>
         </li>
         <li
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon case_technologies-item__backend-django backend-django"
+            class="case_technologies-item__tech-icon backend-django"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
-            Django
+            
+    Django
+  
           </p>
         </li>
         <li
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon case_technologies-item__backend-postgresql backend-postgresql"
+            class="case_technologies-item__tech-icon backend-postgresql"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
-            PostgreSQL
+            
+    PostgreSQL
+  
           </p>
         </li>
         <li
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon case_technologies-item__other-nimble other-nimble"
+            class="case_technologies-item__tech-icon other-nimble"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
-            Nimble Streamer
+            
+    Nimble Streamer
+  
           </p>
         </li>
         <li
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon case_technologies-item__other-plex other-plex"
+            class="case_technologies-item__tech-icon other-plex"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
-            Plex Media Server
+            
+    Plex Media Server
+  
           </p>
         </li>
         <li
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon case_technologies-item__frontend-jquery frontend-jquery"
+            class="case_technologies-item__tech-icon frontend-jquery"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
-            jQuery
+            
+    jQuery
+  
           </p>
         </li>
         <li
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon case_technologies-item__frontend-video-js frontend-video-js"
+            class="case_technologies-item__tech-icon frontend-video-js"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
-            Video.js
+            
+    Video.js
+  
           </p>
         </li>
         <li
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon case_technologies-item__devops-nginx-txt devops-nginx-txt"
+            class="case_technologies-item__tech-icon devops-nginx-txt"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
-            Nginx
+            
+    Nginx
+  
           </p>
         </li>
       </ul>
@@ -1902,13 +1918,17 @@ exports[`kaf renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Rinat Shcherba
+              
+      Rinat Shcherba
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Backend Developer
+              
+      Backend Developer
+    
             </p>
           </div>
         </li>
@@ -1942,13 +1962,17 @@ exports[`kaf renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Daniyar Chambylov
+              
+      Daniyar Chambylov
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Backend Developer
+              
+      Backend Developer
+    
             </p>
           </div>
         </li>
@@ -1982,13 +2006,17 @@ exports[`kaf renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Vladimir Shebarshov
+              
+      Vladimir Shebarshov
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Frontend Developer
+              
+      Frontend Developer
+    
             </p>
           </div>
         </li>
@@ -2022,13 +2050,17 @@ exports[`kaf renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Andrew Minkin
+              
+      Andrew Minkin
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Tech Lead
+              
+      Tech Lead
+    
             </p>
           </div>
         </li>
@@ -2062,13 +2094,17 @@ exports[`kaf renders correctly 1`] = `
             <p
               class="case_team-item__name"
             >
-              Erik Sultanaliev
+              
+      Erik Sultanaliev
+    
             </p>
              
             <p
               class="case_team-item__position"
             >
-              Backend Developer
+              
+      Backend Developer
+    
             </p>
           </div>
         </li>
@@ -2111,13 +2147,17 @@ exports[`kaf renders correctly 1`] = `
           <p
             class="case_paragraph case_blockquote-author__name"
           >
-            Andrew Minkin
+            
+      Andrew Minkin
+    
           </p>
            
           <p
             class="case_blockquote-author__position"
           >
-            CTO, Mad Devs
+            
+      CTO, Mad Devs
+    
           </p>
         </div>
       </blockquote>
