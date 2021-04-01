@@ -17,6 +17,9 @@ describe('list team item', () => {
   beforeEach(() => {
     wrapper = mount(ListTeamItem, {
       propsData: props,
+      mocks: {
+        getMediaFromS3: () => 's3 image url',
+      },
     })
   })
 

@@ -2,7 +2,8 @@
   <main class="main case">
     <CaseHeader
       :logo="logo"
-      video-name="main.ef19480.mp4"
+      video-name="/videos/main.ef19480.mp4"
+      video-fallback-path="/images/Cases/nambafood/jpg/blank.jpg"
     >
       <h1
         slot="title"

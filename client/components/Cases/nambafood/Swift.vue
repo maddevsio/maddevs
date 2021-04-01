@@ -89,7 +89,7 @@
       >
         <img
           v-if="isIphone"
-          src="../../../assets/img/Cases/nambafood/jpg/map-blank.jpg"
+          :src="getMediaFromS3('/images/Cases/nambafood/jpg/map-blank.jpg')"
           class="case_ios-map-video-image case_box-shadow"
         >
         <video
@@ -102,7 +102,7 @@
           muted="true"
         >
           <source
-            :src="getPathToMapVideo"
+            :src="getMediaFromS3('/videos/map.c41e893.mp4')"
             type="video/mp4"
           >
           Your browser does not support the video tag.
@@ -142,10 +142,6 @@ export default {
     return {
       adminPanel,
     }
-  },
-
-  computed: {
-    getPathToMapVideo: () => `${process.env.awsUrl}/map.c41e893.mp4`,
   },
 }
 </script>

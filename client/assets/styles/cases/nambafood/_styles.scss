@@ -1,10 +1,6 @@
 .case {
-  &_header {
+  &_header::before {
     background-color: $bgcolor--black-opacity-07;
-
-    &:before {
-      background-image: url("../../assets/img/Cases/nambafood/jpg/blank.jpg");
-    }
   }
 
   &_nambafood-logo {
