@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Picture component Picture component 1`] = `
+<div>
+  <picture>
+    <source
+      class="image box-shadow"
+      srcset="[object Object] ,[object Object] 2x"
+      type="image/webp"
+    />
+     
+    <img
+      alt="alt"
+      class="image box-shadow"
+      height="0"
+      loading="lazy"
+      src="[object Object]"
+      srcset="[object Object] 2x"
+      width="0"
+    />
+  </picture>
+</div>
+`;
