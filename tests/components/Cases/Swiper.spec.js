@@ -16,7 +16,7 @@ const props = {
   ],
 }
 
-describe('Swiper component', () => {
+describe('should render correctly', () => {
   it('Picture component', () => {
     const { container } = render(Swiper, {
       props,

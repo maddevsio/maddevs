@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`list team should render correctly 1`] = `
+exports[`ListTeam component should render correctly 1`] = `
 <div>
   <ul
     class="case_list-team"

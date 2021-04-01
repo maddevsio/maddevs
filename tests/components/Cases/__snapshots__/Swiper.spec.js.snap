@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`swiper Picture component 1`] = `
+exports[`should render correctly Picture component 1`] = `
 <div>
   <div
     class="slider-content"

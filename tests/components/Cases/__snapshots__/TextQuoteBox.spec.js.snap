@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextQuoteBox should render correctly 1`] = `
+<div>
+  <blockquote
+    class="case_blockquote-box"
+  >
+    Main Content
+  </blockquote>
+</div>
+`;

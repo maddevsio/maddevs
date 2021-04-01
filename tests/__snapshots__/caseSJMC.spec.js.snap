@@ -11,6 +11,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
     <video
       autoplay="autoplay"
       class="case_main-video"
+      data-testid="test-case_main-video"
       loop="loop"
       muted="muted"
     >

@@ -15,7 +15,7 @@ describe('Picture component', () => {
     backgroundColor: false,
   }
 
-  it('Picture component', () => {
+  it('should render correctly', () => {
     const { container } = render(Picture, {
       props,
     })
