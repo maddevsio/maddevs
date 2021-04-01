@@ -37,7 +37,9 @@ exports[`kaf renders correctly 1`] = `
         <div
           class="case_case-study-item"
         >
-          Case Study
+          
+        Case Study
+      
         </div>
          
         <h1
@@ -87,7 +89,9 @@ exports[`kaf renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
-        OTT-like video streaming platform & online cinema
+        
+    OTT-like video streaming platform & online cinema
+  
       </h2>
        
       <p
@@ -126,7 +130,9 @@ exports[`kaf renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
-        Project in numbers
+        
+    Project in numbers
+  
       </h2>
        
       <p
@@ -154,7 +160,9 @@ exports[`kaf renders correctly 1`] = `
               <p
                 class="card-content_title"
               >
-                7500
+                
+      7500
+    
               </p>
                
               <p
@@ -175,7 +183,9 @@ exports[`kaf renders correctly 1`] = `
               <p
                 class="card-content_title"
               >
-                6000+
+                
+      6000+
+    
               </p>
                
               <p
@@ -197,13 +207,17 @@ exports[`kaf renders correctly 1`] = `
               <p
                 class="card-content_title"
               >
-                500
+                
+      500
+    
               </p>
                
               <p
                 class="case_paragraph card-content_paragraph"
               >
-                 viewers per day 
+                
+      viewers per day
+    
               </p>
             </div>
              
@@ -213,13 +227,17 @@ exports[`kaf renders correctly 1`] = `
               <p
                 class="card-content_title"
               >
-                280–300
+                
+      280–300
+    
               </p>
                
               <p
                 class="case_paragraph card-content_paragraph"
               >
-                 concurrent viewers 
+                
+      concurrent viewers
+    
               </p>
             </div>
           </div>
@@ -233,7 +251,9 @@ exports[`kaf renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
-        Supported gadgets
+        
+    Supported gadgets
+  
       </h2>
        
       <p
@@ -257,7 +277,9 @@ exports[`kaf renders correctly 1`] = `
             <h4
               class="card-content_title case_title_h4"
             >
-              Laptops
+              
+    Laptops
+  
             </h4>
              
             <div
@@ -316,7 +338,9 @@ exports[`kaf renders correctly 1`] = `
             <h4
               class="card-content_title case_title_h4"
             >
-              Smartphones
+              
+    Smartphones
+  
             </h4>
              
             <div
@@ -375,7 +399,9 @@ exports[`kaf renders correctly 1`] = `
             <h4
               class="card-content_title case_title_h4"
             >
-              Tablets
+              
+    Tablets
+  
             </h4>
              
             <div
@@ -434,7 +460,9 @@ exports[`kaf renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom"
       >
-        Technology stack
+        
+    Technology stack
+  
       </h2>
     </section>
      
@@ -444,7 +472,9 @@ exports[`kaf renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
-        Key project milestones
+        
+    Key project milestones
+  
       </h2>
        
       <div
@@ -571,13 +601,17 @@ exports[`kaf renders correctly 1`] = `
             <h4
               class="case_title_h4 card_title"
             >
-              2016
+              
+      2016
+    
             </h4>
              
             <p
               class="case_paragraph card_paragraph"
             >
-              A database of movies with descriptions transformed into online cinema with a basic content management functionality.
+              
+      A database of movies with descriptions transformed into online cinema with a basic content management functionality.
+    
             </p>
           </div>
         </div>
@@ -1036,13 +1070,17 @@ exports[`kaf renders correctly 1`] = `
             <h4
               class="case_title_h4 card_title"
             >
-              2017
+              
+      2017
+    
             </h4>
              
             <p
               class="case_paragraph card_paragraph"
             >
-              Live video streaming of popular TV channels became available.
+              
+      Live video streaming of popular TV channels became available.
+    
             </p>
           </div>
         </div>
@@ -1207,13 +1245,17 @@ exports[`kaf renders correctly 1`] = `
             <h4
               class="case_title_h4 card_title"
             >
-              2018
+              
+      2018
+    
             </h4>
              
             <p
               class="case_paragraph card_paragraph"
             >
-              The project was redesigned to optimise resource consumption.
+              
+      The project was redesigned to optimise resource consumption.
+    
             </p>
           </div>
         </div>
@@ -1312,13 +1354,17 @@ exports[`kaf renders correctly 1`] = `
             <h4
               class="case_title_h4 card_title"
             >
-              2019
+              
+      2019
+    
             </h4>
              
             <p
               class="case_paragraph card_paragraph"
             >
-              Added Video on Demand functionality.
+              
+      Added Video on Demand functionality.
+    
             </p>
           </div>
         </div>
@@ -1427,13 +1473,17 @@ exports[`kaf renders correctly 1`] = `
             <h4
               class="case_title_h4 card_title"
             >
-              2020
+              
+      2020
+    
             </h4>
              
             <p
               class="case_paragraph card_paragraph"
             >
-              User authorisation ensured a more personalised experience for each user. Custom filters, such as ‘favourites’, ‘already watched’ and ‘search’, made the service more viewer-friendly.
+              
+      User authorisation ensured a more personalised experience for each user. Custom filters, such as ‘favourites’, ‘already watched’ and ‘search’, made the service more viewer-friendly.
+    
             </p>
           </div>
         </div>
@@ -1446,7 +1496,9 @@ exports[`kaf renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
-        Phase 1: Online cinema
+        
+    Phase 1: Online cinema
+  
       </h2>
        
       <p
@@ -1470,7 +1522,9 @@ exports[`kaf renders correctly 1`] = `
       <h3
         class="case_title_h3 m-12_bottom"
       >
-        TV shows & TV series
+        
+    TV shows & TV series
+  
       </h3>
     </section>
      
@@ -1480,7 +1534,9 @@ exports[`kaf renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-20_bottom"
       >
-        Phase 2: Live streaming technology
+        
+    Phase 2: Live streaming technology
+  
       </h2>
        
       <p
@@ -1495,7 +1551,9 @@ exports[`kaf renders correctly 1`] = `
       <h3
         class="case_title_h3"
       >
-        TV shows & TV series
+        
+    TV shows & TV series
+  
       </h3>
        
       <blockquote
@@ -1540,7 +1598,9 @@ exports[`kaf renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
-        Phase 3: Redesign & optimisations
+        
+    Phase 3: Redesign & optimisations
+  
       </h2>
        
       <p
@@ -1587,7 +1647,9 @@ exports[`kaf renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
-        Phase 4: Video on demand
+        
+    Phase 4: Video on demand
+  
       </h2>
        
       <p
@@ -1607,7 +1669,9 @@ exports[`kaf renders correctly 1`] = `
       <h2
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
-        Phase 5: User authorisation & personalised experience
+        
+    Phase 5: User authorisation & personalised experience
+  
       </h2>
        
       <p
@@ -1673,7 +1737,9 @@ exports[`kaf renders correctly 1`] = `
       <h3
         class="case_title_h3 m-24_bottom media-m-12_bottom"
       >
-        Plans for similar projects
+        
+    Plans for similar projects
+  
       </h3>
        
       <p
@@ -1694,7 +1760,9 @@ exports[`kaf renders correctly 1`] = `
       <h2
         class="case_title_h2 m-48_bottom media-m-38_bottom"
       >
-        Meet the team
+        
+    Meet the team
+  
       </h2>
     </section>
   </section>

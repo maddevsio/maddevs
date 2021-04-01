@@ -102,7 +102,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           type="video/mp4"
         />
         
-      Your browser does not support the video tag!!!.
+      Your browser does not support the video tag.
     
       </video>
     </div>
@@ -117,7 +117,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
   >
     <div
       class="case_animation_block"
-      id="case-body"
+      id="case-first-section"
     />
      
     <section
@@ -717,10 +717,6 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <div
         class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video"
       >
-        <div
-          class="case_sjmc-phone-video-wrapper_fallback"
-        />
-         
         <video
           height="100%"
           playsinline=""

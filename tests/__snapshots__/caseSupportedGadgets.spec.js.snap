@@ -7,7 +7,9 @@ exports[`supported gadgets renders correctly 1`] = `
   <h2
     class="case_title_h2 m-24_bottom media-m-12_bottom"
   >
+    
     Supported gadgets
+  
   </h2>
    
   <p
@@ -31,7 +33,9 @@ exports[`supported gadgets renders correctly 1`] = `
         <h4
           class="card-content_title case_title_h4"
         >
-          Laptops
+          
+    Laptops
+  
         </h4>
          
         <div
@@ -90,7 +94,9 @@ exports[`supported gadgets renders correctly 1`] = `
         <h4
           class="card-content_title case_title_h4"
         >
-          Smartphones
+          
+    Smartphones
+  
         </h4>
          
         <div
@@ -149,7 +155,9 @@ exports[`supported gadgets renders correctly 1`] = `
         <h4
           class="card-content_title case_title_h4"
         >
-          Tablets
+          
+    Tablets
+  
         </h4>
          
         <div

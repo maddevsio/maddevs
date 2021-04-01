@@ -7,7 +7,9 @@ exports[`key project milestones renders correctly 1`] = `
   <h2
     class="case_title_h2 m-24_bottom media-m-12_bottom"
   >
+    
     Key project milestones
+  
   </h2>
    
   <div
@@ -134,13 +136,17 @@ exports[`key project milestones renders correctly 1`] = `
         <h4
           class="case_title_h4 card_title"
         >
-          2016
+          
+      2016
+    
         </h4>
          
         <p
           class="case_paragraph card_paragraph"
         >
-          A database of movies with descriptions transformed into online cinema with a basic content management functionality.
+          
+      A database of movies with descriptions transformed into online cinema with a basic content management functionality.
+    
         </p>
       </div>
     </div>
@@ -599,13 +605,17 @@ exports[`key project milestones renders correctly 1`] = `
         <h4
           class="case_title_h4 card_title"
         >
-          2017
+          
+      2017
+    
         </h4>
          
         <p
           class="case_paragraph card_paragraph"
         >
-          Live video streaming of popular TV channels became available.
+          
+      Live video streaming of popular TV channels became available.
+    
         </p>
       </div>
     </div>
@@ -770,13 +780,17 @@ exports[`key project milestones renders correctly 1`] = `
         <h4
           class="case_title_h4 card_title"
         >
-          2018
+          
+      2018
+    
         </h4>
          
         <p
           class="case_paragraph card_paragraph"
         >
-          The project was redesigned to optimise resource consumption.
+          
+      The project was redesigned to optimise resource consumption.
+    
         </p>
       </div>
     </div>
@@ -875,13 +889,17 @@ exports[`key project milestones renders correctly 1`] = `
         <h4
           class="case_title_h4 card_title"
         >
-          2019
+          
+      2019
+    
         </h4>
          
         <p
           class="case_paragraph card_paragraph"
         >
-          Added Video on Demand functionality.
+          
+      Added Video on Demand functionality.
+    
         </p>
       </div>
     </div>
@@ -990,13 +1008,17 @@ exports[`key project milestones renders correctly 1`] = `
         <h4
           class="case_title_h4 card_title"
         >
-          2020
+          
+      2020
+    
         </h4>
          
         <p
           class="case_paragraph card_paragraph"
         >
-          User authorisation ensured a more personalised experience for each user. Custom filters, such as ‘favourites’, ‘already watched’ and ‘search’, made the service more viewer-friendly.
+          
+      User authorisation ensured a more personalised experience for each user. Custom filters, such as ‘favourites’, ‘already watched’ and ‘search’, made the service more viewer-friendly.
+    
         </p>
       </div>
     </div>
