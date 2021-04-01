@@ -2,7 +2,9 @@
   <div class="form">
     <div class="fields-list">
       <div class="modal-field-item field-item">
-        <p class="modal-field-name field-name required">Full Name</p>
+        <p class="modal-field-name field-name required">
+          Full Name
+        </p>
         <input
           v-model="fullname"
           type="text"
@@ -10,18 +12,26 @@
           class="modal-entry-field entry-field"
           placeholder="John Smith"
           @input="$v.fullname.$touch"
-        />
+        >
         <!-- Erros -->
         <div v-if="$v.fullname.$dirty">
-          <span v-if="!$v.fullname.required" class="modal-error-text error-text">This field is required.</span>
-          <span v-if="!$v.fullname.maxLength" class="modal-error-text error-text">
+          <span
+            v-if="!$v.fullname.required"
+            class="modal-error-text error-text"
+          >This field is required.</span>
+          <span
+            v-if="!$v.fullname.maxLength"
+            class="modal-error-text error-text"
+          >
             Sorry, the number of characters in this field should not exceed 50.
           </span>
         </div>
         <!-- End Erros -->
       </div>
       <div class="modal-field-item field-item">
-        <p class="modal-field-name field-name">Company</p>
+        <p class="modal-field-name field-name">
+          Company
+        </p>
         <input
           v-model="company"
           :class="{ invalid: $v.company.$error }"
@@ -29,17 +39,22 @@
           class="modal-entry-field entry-field"
           placeholder="MyAwesomeCompany, Inc."
           @input="$v.company.$touch"
-        />
+        >
         <!-- Erros -->
         <div v-if="$v.company.$dirty">
-          <span v-if="!$v.company.maxLength" class="modal-error-text error-text">
+          <span
+            v-if="!$v.company.maxLength"
+            class="modal-error-text error-text"
+          >
             Sorry, the number of characters in this field should not exceed 300.
           </span>
         </div>
         <!-- End Erros -->
       </div>
       <div class="modal-field-item field-item">
-        <p class="modal-field-name field-name required">Work email</p>
+        <p class="modal-field-name field-name required">
+          Work email
+        </p>
         <input
           v-model="email"
           :class="{ invalid: $v.email.$error }"
@@ -47,29 +62,40 @@
           class="modal-entry-field entry-field"
           placeholder="your@mail.com"
           @input="$v.email.$touch"
-        />
+        >
         <!-- Erros -->
         <div v-if="$v.email.$dirty">
-          <span v-if="!$v.email.required" class="modal-error-text error-text">This field is required.</span>
-          <span v-if="!$v.email.email" class="modal-error-text error-text">
+          <span
+            v-if="!$v.email.required"
+            class="modal-error-text error-text"
+          >This field is required.</span>
+          <span
+            v-if="!$v.email.email"
+            class="modal-error-text error-text"
+          >
             Invalid email address. Please use your work email.
           </span>
         </div>
         <!-- End Erros -->
       </div>
       <div class="modal-field-item field-item">
-        <p class="modal-field-name field-name">Phone number</p>
+        <p class="modal-field-name field-name">
+          Phone number
+        </p>
         <input
           v-model="phoneNumber"
           type="text"
           :class="{ invalid: $v.phoneNumber.$error }"
           class="modal-entry-field entry-field"
-          placeholder="+1 23X XXX-XXXX"
+          placeholder="+X XXX XXX-XXXX"
           @input="phoneChangeHandler"
-        />
+        >
         <!-- Erros -->
         <div v-if="$v.phoneNumber.$dirty">
-          <span v-if="!$v.phoneNumber.phone" class="modal-error-text error-text">
+          <span
+            v-if="!$v.phoneNumber.phone"
+            class="modal-error-text error-text"
+          >
             Sorry, this field can only contain numbers and characters specific for phone numbers.
           </span>
         </div>

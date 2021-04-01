@@ -17,7 +17,9 @@ exports[`fAQ page renders correctly 1`] = `
         <h1
           class="faq__title"
         >
-          Frequently Asked Questions
+          
+        Frequently Asked Questions
+      
         </h1>
          
         <div
@@ -262,7 +264,9 @@ exports[`fAQ page renders correctly 1`] = `
           class="faq__sec-title"
           id="how-can-i-control-my-project-budget?"
         >
-          How can I control my project budget?
+          
+        How can I control my project budget?
+      
         </h2>
          
         <p
@@ -324,7 +328,9 @@ exports[`fAQ page renders correctly 1`] = `
         <p
           class="faq__paragraph"
         >
-          Intellectual Property is wholly owned by you and your company.
+          
+        Intellectual Property is wholly owned by you and your company.
+      
         </p>
          
         <p
@@ -370,7 +376,9 @@ exports[`fAQ page renders correctly 1`] = `
           <li
             class="faq__list"
           >
-            Live chat
+            
+          Live chat
+        
           </li>
            
           <li
@@ -396,7 +404,9 @@ exports[`fAQ page renders correctly 1`] = `
           <li
             class="faq__list"
           >
-            Contact form
+            
+          Contact form
+        
           </li>
            
           <li

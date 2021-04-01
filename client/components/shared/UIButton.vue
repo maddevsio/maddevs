@@ -6,7 +6,7 @@
     @click="handleClick"
   >
     <span v-if="loading">Waiting...</span>
-    <slot v-else></slot>
+    <slot v-else />
   </button>
 </template>
 

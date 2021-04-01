@@ -1,7 +1,18 @@
 <template>
-  <div :class="`navigation-wrap-${pageName}`" class="navigation-wrap container">
-    <nav :class="`navigation-list-${pageName}`" class="navigation-list">
-      <NuxtLink v-for="option in navigation" :key="option.title" :to="option.link" class="navigation-item">
+  <div
+    :class="`navigation-wrap-${pageName}`"
+    class="navigation-wrap container"
+  >
+    <nav
+      :class="`navigation-list-${pageName}`"
+      class="navigation-list"
+    >
+      <NuxtLink
+        v-for="option in navigation"
+        :key="option.title"
+        :to="option.link"
+        class="navigation-item"
+      >
         {{ option.title }}
       </NuxtLink>
       <slot />

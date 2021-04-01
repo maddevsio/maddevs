@@ -1,12 +1,20 @@
 <template>
   <div class="content-item">
-    <UITitle :class="`content-item__title-${className}`" class="content-item__title">
+    <UITitle
+      :class="`content-item__title-${className}`"
+      class="content-item__title"
+    >
       {{ title }}
     </UITitle>
-    <UISubtitle :class="`content-item__sub-title-${className}`" class="content-item__sub-title">
+    <UISubtitle
+      :class="`content-item__sub-title-${className}`"
+      class="content-item__sub-title"
+    >
       {{ subtitle }}
     </UISubtitle>
-    <UIParagraph class="content-item__paragraph">{{ paragraph }}</UIParagraph>
+    <UIParagraph class="content-item__paragraph">
+      {{ paragraph }}
+    </UIParagraph>
   </div>
 </template>
 

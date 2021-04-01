@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`table of contents block in single post page should render correctly 1`] = `
+<div>
+  <div
+    class="table-of-contents"
+  >
+    <div
+      class="table-of-contents__title"
+    >
+      
+    Table of contents
+  
+    </div>
+     
+    <ol
+      class="table-of-contents__list"
+    >
+      <li
+        class="table-of-contents__list-item"
+      >
+        <a
+          data-testid="test-link-table"
+          href="#gallery"
+        >
+          
+          Gallery
+        
+        </a>
+      </li>
+      <li
+        class="table-of-contents__list-item"
+      >
+        <a
+          data-testid="test-link-table"
+          href="#main"
+        >
+          
+          Main
+        
+        </a>
+      </li>
+    </ol>
+  </div>
+</div>
+`;

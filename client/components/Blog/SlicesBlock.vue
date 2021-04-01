@@ -9,7 +9,7 @@
       <!-- Text slice template -->
       <template v-if="slice.slice_type === 'text'">
         <!-- Here :slice="slice" passes the data to the component -->
-        <text-slice :slice="slice"></text-slice>
+        <text-slice :slice="slice" />
       </template>
       <!-- Quote slice template -->
       <template v-else-if="slice.slice_type === 'quote'">
@@ -23,7 +23,7 @@
         <image-attributes-slice :slice="slice" />
       </template>
       <template v-else-if="slice.slice_type === 'embed'">
-        <embed-slice :slice="slice"></embed-slice>
+        <embed-slice :slice="slice" />
       </template>
       <template v-else-if="slice.slice_type === 'codeblock'">
         <code-block-slice :slice="slice" />

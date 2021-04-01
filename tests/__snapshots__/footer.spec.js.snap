@@ -16,7 +16,9 @@ exports[`footer renders correctly 1`] = `
         <h2
           class="footer__main-title"
         >
+          
           Get In Touch
+        
         </h2>
          
         <footercontacts-stub />

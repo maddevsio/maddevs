@@ -1,6 +1,6 @@
 <template>
   <li class="list-item_box">
-    <slot></slot>
+    <slot />
   </li>
 </template>
 

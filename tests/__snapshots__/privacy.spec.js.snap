@@ -41,6 +41,7 @@ exports[`privacy renders correctly 1`] = `
       <p
         class="privacy__text privacy__break-main"
       >
+        
         We are 
         <span
           class="privacy__nowrap"
@@ -48,6 +49,7 @@ exports[`privacy renders correctly 1`] = `
           Mad Devs
         </span>
          Group Ltd.
+      
       </p>
        
       <p
@@ -102,7 +104,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title privacy__sec-title--first"
       >
+        
         By using our site you accept these terms
+      
       </h2>
        
       <p
@@ -133,7 +137,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         We may make changes to the terms of this policy
+      
       </h2>
        
       <p
@@ -148,7 +154,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Prohibited uses
+      
       </h2>
        
       <p
@@ -212,7 +220,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Breach of this policy
+      
       </h2>
        
       <p
@@ -239,19 +249,25 @@ exports[`privacy renders correctly 1`] = `
         <li
           class="privacy__list"
         >
+          
           Immediate, temporary or permanent withdrawal of your right to use our site.
+        
         </li>
          
         <li
           class="privacy__list"
         >
+          
           Issue of a warning to you.
+        
         </li>
          
         <li
           class="privacy__list"
         >
+          
           Legal action against you.
+        
         </li>
          
         <li
@@ -277,7 +293,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Which country's laws apply to any disputes?
+      
       </h2>
        
       <p
@@ -303,7 +321,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title privacy__sec-title"
       >
+        
         Cookie Policy
+      
       </h2>
        
       <p
@@ -327,7 +347,9 @@ exports[`privacy renders correctly 1`] = `
       <p
         class="privacy__paragraph privacy__paragraph-margin"
       >
+        
         We use the following cookies:
+      
       </p>
        
       <p
@@ -361,7 +383,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Google Analytics
+      
       </h2>
        
       <p
@@ -434,7 +458,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title privacy__sec-title"
       >
+        
         Privacy Policy
+      
       </h2>
        
       <p
@@ -508,7 +534,9 @@ exports[`privacy renders correctly 1`] = `
         <div
           class="privacy__term-title"
         >
+          
           Personal Data
+        
         </div>
          
         <div
@@ -527,7 +555,9 @@ exports[`privacy renders correctly 1`] = `
         <div
           class="privacy__term-title"
         >
+          
           Usage Data
+        
         </div>
          
         <div
@@ -546,7 +576,9 @@ exports[`privacy renders correctly 1`] = `
         <div
           class="privacy__term-title"
         >
+          
           Data Controller
+        
         </div>
          
         <div
@@ -566,7 +598,9 @@ exports[`privacy renders correctly 1`] = `
         <div
           class="privacy__term-title"
         >
+          
           Data Processors (or Service Providers)
+        
         </div>
          
         <div
@@ -586,7 +620,9 @@ exports[`privacy renders correctly 1`] = `
         <div
           class="privacy__term-title"
         >
+          
           Data Subject (or User)
+        
         </div>
          
         <div
@@ -601,7 +637,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Information Collection and Use
+      
       </h2>
        
       <p
@@ -616,13 +654,17 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Types of Data Collected
+      
       </h2>
        
       <h2
         class="privacy__sec-title privacy__sec-title privacy__sec-title--multi-title"
       >
+        
         Personal Data
+      
       </h2>
        
       <p
@@ -641,26 +683,34 @@ exports[`privacy renders correctly 1`] = `
         <li
           class="privacy__list"
         >
+          
           Email address
+        
         </li>
          
         <li
           class="privacy__list"
         >
+          
           First name and last name
+        
         </li>
          
         <li
           class="privacy__list"
         >
+          
           Phone number
+        
         </li>
       </ul>
        
       <h2
         class="privacy__sec-title"
       >
+        
         Use of Data
+      
       </h2>
        
       <p
@@ -681,13 +731,17 @@ exports[`privacy renders correctly 1`] = `
         <li
           class="privacy__list"
         >
+          
           To provide and maintain our service
+        
         </li>
          
         <li
           class="privacy__list"
         >
+          
           To notify you about changes to our service
+        
         </li>
          
         <li
@@ -701,25 +755,33 @@ exports[`privacy renders correctly 1`] = `
         <li
           class="privacy__list"
         >
+          
           To provide customer support
+        
         </li>
          
         <li
           class="privacy__list"
         >
+          
           To gather analysis or valuable information so that we can improve our service
+        
         </li>
          
         <li
           class="privacy__list"
         >
+          
           To monitor the usage of our service
+        
         </li>
          
         <li
           class="privacy__list"
         >
+          
           To detect, prevent and address technical issues
+        
         </li>
       </ul>
        
@@ -765,13 +827,17 @@ exports[`privacy renders correctly 1`] = `
         <li
           class="privacy__list"
         >
+          
           We need to perform a contract with you
+        
         </li>
          
         <li
           class="privacy__list"
         >
+          
           You have given us permission to do so
+        
         </li>
          
         <li
@@ -785,14 +851,18 @@ exports[`privacy renders correctly 1`] = `
         <li
           class="privacy__list"
         >
+          
           To comply with the law
+        
         </li>
       </ul>
        
       <h2
         class="privacy__sec-title"
       >
+        
         Retention of Data
+      
       </h2>
        
       <p
@@ -828,7 +898,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Transfer of Data
+      
       </h2>
        
       <p
@@ -921,7 +993,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Marketing
+      
       </h2>
        
       <p
@@ -936,7 +1010,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Promotional offers from us
+      
       </h2>
        
       <p
@@ -961,7 +1037,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Change of purpose
+      
       </h2>
        
       <p
@@ -996,13 +1074,17 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Disclosure of Data
+      
       </h2>
        
       <h2
         class="privacy__sec-title privacy__sec-title--multi-title"
       >
+        
         Disclosure for Law Enforcement
+      
       </h2>
        
       <p
@@ -1024,7 +1106,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Legal Requirements
+      
       </h2>
        
       <p
@@ -1046,7 +1130,9 @@ exports[`privacy renders correctly 1`] = `
         <li
           class="privacy__list"
         >
+          
           To comply with a legal obligation
+        
         </li>
          
         <li
@@ -1066,26 +1152,34 @@ exports[`privacy renders correctly 1`] = `
         <li
           class="privacy__list"
         >
+          
           To prevent or investigate possible wrongdoing in connection with our service
+        
         </li>
          
         <li
           class="privacy__list"
         >
+          
           To protect the personal safety of users of our service or the public
+        
         </li>
          
         <li
           class="privacy__list"
         >
+          
           To protect against legal liability
+        
         </li>
       </ul>
        
       <h2
         class="privacy__sec-title"
       >
+        
         Security of Data
+      
       </h2>
        
       <p
@@ -1250,7 +1344,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         No fee usually required
+      
       </h2>
        
       <p
@@ -1266,7 +1362,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         What we may need from you
+      
       </h2>
        
       <p
@@ -1283,7 +1381,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Time limit to respond
+      
       </h2>
        
       <p
@@ -1299,7 +1399,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Service Providers
+      
       </h2>
        
       <p
@@ -1323,7 +1425,9 @@ exports[`privacy renders correctly 1`] = `
       <h2
         class="privacy__sec-title"
       >
+        
         Links to Other Sites
+      
       </h2>
        
       <p

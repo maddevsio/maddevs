@@ -16,19 +16,49 @@
   "extends": [
     "airbnb-base",
     "plugin:vue/recommended",
-    "plugin:prettier-vue/recommended",
     "plugin:jest/all"
   ],
   "rules": {
+    "no-tabs": ["error"],
+    "semi": ["error", "never"],
+    "quotes": ["error", "single"],
+    "max-len": "off",
+    "vue/max-len": ["warn", {
+      "code": 120,
+      "tabWidth": 2,
+      "ignoreComments": true,
+      "ignoreTrailingComments": true,
+      "ignoreUrls": true,
+      "ignoreStrings": true,
+      "ignoreHTMLAttributeValues": true,
+      "ignoreHTMLTextContents": true
+    }],
     "jest/prefer-expect-assertions": "off",
     "jest/no-hooks": "off",
     "jest/prefer-strict-equal": "off",
     "jest/no-mocks-import": "off",
+    "jest/lowercase-name": "off",
     "import/no-unresolved": "off",
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
     "import/no-dynamic-require": "off",
     "global-require": "off",
+    "vue/attribute-hyphenation": [
+      "error",
+      "always"
+    ],
+    "vue/multiline-html-element-content-newline": ["error"],
+    "vue/singleline-html-element-content-newline": ["error"],
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": 1,
+        "multiline": {
+          "max": 1,
+          "allowFirstLine": false
+        }
+      }
+    ],
     "vue/no-v-html": "off",
     "vue/new-line-between-multi-line-property": [
       "error",
@@ -44,20 +74,7 @@
       "error",
       "as-needed"
     ],
-    "import/prefer-default-export": 0,
-    "prettier-vue/prettier": [
-      "error",
-      {
-        "tabWidth": 2,
-        "printWidth": 120,
-        "singleQuote": true,
-        "semi": false,
-        "trailingComma": "all",
-        "tabs": false,
-        "arrowParens": "avoid",
-        "bracketSpacing": true
-      }
-    ]
+    "import/prefer-default-export": 0
   },
   "settings": {
     "import/extensions": [

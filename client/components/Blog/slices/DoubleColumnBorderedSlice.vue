@@ -1,7 +1,10 @@
 <template>
   <div class="post-section-bordered">
     <div class="post-section-bordered__inner row">
-      <div class="column_left col-12 col-lg-9" v-html="$prismic.asHtml(slice.primary.left_column)" />
+      <div
+        class="column_left col-12 col-lg-9"
+        v-html="$prismic.asHtml(slice.primary.left_column)"
+      />
       <div class="column_right col-12 col-lg-3">
         <prismic-image :field="slice.primary.right_column" />
       </div>

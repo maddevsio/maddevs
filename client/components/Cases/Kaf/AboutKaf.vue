@@ -1,6 +1,8 @@
 <template>
   <section class="container_regular">
-    <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">OTT-like video streaming platform & online cinema</h2>
+    <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
+      OTT-like video streaming platform & online cinema
+    </h2>
     <TextParagraph class="m-24_bottom media-m-12_bottom">
       A custom video streaming solution* was created to provide the ultimate entertainment experience to isolated groups
       of people feeling homesick. Access and the ability to securely watch familiar and up-to-date content on any device

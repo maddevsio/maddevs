@@ -1,6 +1,11 @@
 <template>
   <div class="radio-buttons">
-    <div :class="{ required: required }" class="radio-buttons__field-name field-name">{{ label }}</div>
+    <div
+      :class="{ required: required }"
+      class="radio-buttons__field-name field-name"
+    >
+      {{ label }}
+    </div>
     <div class="radio-buttons__radio-list">
       <label
         v-for="option in options"
@@ -10,12 +15,13 @@
       >
         <input
           :id="`${option.value}-${id}`"
+          data-testid="test-radio-buttons"
           :name="id"
           class="radio-buttons__radio-input"
           type="radio"
           @click="handleSelect(option)"
-        />
-        <span class="radio-buttons__checkmark-radio"></span>
+        >
+        <span class="radio-buttons__checkmark-radio" />
         <p class="radio-buttons__radio-text_item">{{ option.label }}</p>
       </label>
     </div>

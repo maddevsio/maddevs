@@ -1,18 +1,27 @@
 <template>
   <main class="case">
-    <CaseHeader :header-logo="headerLogo" video-name="">
-      <h1 slot="title" class="case_header-title">
-        The Evolution <br />
+    <CaseHeader
+      :header-logo="headerLogo"
+      video-name=""
+    >
+      <h1
+        slot="title"
+        class="case_header-title"
+      >
+        The Evolution <br>
         of Yourcast.TV
       </h1>
-      <p slot="description" class="case_header-description">
-        Mad Devs developed a secure and private video streaming service and live <br />
-        video broadcasting cinema to provide entertainment experience to isolated <br />
+      <p
+        slot="description"
+        class="case_header-description"
+      >
+        Mad Devs developed a secure and private video streaming service and live <br>
+        video broadcasting cinema to provide entertainment experience to isolated <br>
         groups feeling homesick.
       </p>
     </CaseHeader>
-    <section id="case-body" class="case_body p-48_top media-p-24_top">
-      <AboutKaf />
+    <section class="case_body p-48_top media-p-24_top">
+      <AboutKaf id="case-first-section" />
       <ProjectInNumbers />
       <SupportedGadgets />
       <TechnologyStack />
@@ -27,11 +36,17 @@
       <PlansForSimilarProjects />
       <MeetTheTeam />
     </section>
-    <Footer link="/case-studies/sir-john-monash-centre/" class-name="kaf-case">
-      <div slot="icon" class="case_logotype"></div>
-      The maintenance <br class="case_mobile-break" />
-      of memory: <br />
-      Sir John Monash <br class="case_mobile-break" />
+    <Footer
+      link="/case-studies/sir-john-monash-centre/"
+      class-name="kaf-case"
+    >
+      <div
+        slot="icon"
+        class="case_logotype"
+      />
+      The maintenance <br class="case_mobile-break">
+      of memory: <br>
+      Sir John Monash <br class="case_mobile-break">
       Centre
     </Footer>
   </main>

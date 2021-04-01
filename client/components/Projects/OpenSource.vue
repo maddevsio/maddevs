@@ -1,33 +1,64 @@
 <template>
-  <section id="open-source" class="open-source">
+  <section
+    id="open-source"
+    class="open-source"
+  >
     <div class="container">
       <div class="open-source__top-text-content">
-        <h3 class="open-source__main-title">Our code - available in open source - is used by many other companies.</h3>
+        <h3 class="open-source__main-title">
+          Our code - available in open source - is used by many other companies.
+        </h3>
         <div class="open-source__github-wrap">
           <p class="open-source__description">
-            70+ of <span>Mad Devs'</span> pet projects have been shared with <br class="open-source__descktop-break" />
+            70+ of <span>Mad Devs'</span> pet projects have been shared with <br class="open-source__descktop-break">
             the community via
-            <span class="open-source__mobile-icon-wrapper"
-              >GitHub.
-              <a class="open-source__github-icon-mobile" href="https://github.com/maddevsio" target="_blank"></a
-            ></span>
+            <span
+              class="open-source__mobile-icon-wrapper"
+            >GitHub.
+              <a
+                class="open-source__github-icon-mobile"
+                href="https://github.com/maddevsio"
+                target="_blank"
+              /></span>
           </p>
-          <a class="open-source__github-icon" href="https://github.com/maddevsio" target="_blank"></a>
+          <a
+            class="open-source__github-icon"
+            href="https://github.com/maddevsio"
+            target="_blank"
+          />
         </div>
       </div>
       <div class="open-source__projects row">
-        <div v-for="project in projects" :key="project.name" class="col-xl-4 col-lg-4 col-md-6">
-          <div :class="`open-source__project-${project.name}`" class="open-source__project">
-            <a :href="project.link" class="open-source__project-link" target="_blank">
+        <div
+          v-for="project in projects"
+          :key="project.name"
+          class="col-xl-4 col-lg-4 col-md-6"
+        >
+          <div
+            :class="`open-source__project-${project.name}`"
+            class="open-source__project"
+          >
+            <a
+              :href="project.link"
+              class="open-source__project-link"
+              target="_blank"
+            >
               <div class="open-source__content-wrap">
-                <div :class="`open-source__icon open-source__${project.name}`"></div>
+                <div :class="`open-source__icon open-source__${project.name}`" />
               </div>
-              <p class="open-source__paragraph" v-html="project.description">{{ project.description }}</p>
+              <p
+                class="open-source__paragraph"
+                v-html="project.description"
+              >{{ project.description }}</p>
             </a>
           </div>
         </div>
       </div>
-      <a class="open-source__github-link" href="https://github.com/maddevsio" target="_blank">View more on GitHub</a>
+      <a
+        class="open-source__github-link"
+        href="https://github.com/maddevsio"
+        target="_blank"
+      >View more on GitHub</a>
     </div>
   </section>
 </template>

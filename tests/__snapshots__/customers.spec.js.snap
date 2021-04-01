@@ -14,7 +14,9 @@ exports[`customers component renders correctly 1`] = `
       <h2
         class="customers__main-title"
       >
+        
         Our valued customers
+      
       </h2>
        
       <p

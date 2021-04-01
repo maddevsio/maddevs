@@ -1,0 +1,1186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TechnologiesAndTools should render correctly 1`] = `
+<div>
+  <section
+    class="technologies-and_tools"
+    id="technologies-and-tools"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="technologies-and_tools__content-wrap"
+      >
+        <h2
+          class="technologies-and_tools__main-title"
+        >
+          
+        Technologies 
+          <span>
+            &
+          </span>
+           
+          <span>
+            Tools
+          </span>
+        </h2>
+         
+        <div
+          class="tech_legend tech_legend-"
+        >
+          <div
+            class="tech_legend__item legend-devops"
+            data-testid="test-tech_legend__item"
+          >
+            
+          devOps
+        
+          </div>
+          <div
+            class="tech_legend__item legend-qa"
+            data-testid="test-tech_legend__item"
+          >
+            
+          QA
+        
+          </div>
+          <div
+            class="tech_legend__item legend-backend"
+            data-testid="test-tech_legend__item"
+          >
+            
+          Backend
+        
+          </div>
+          <div
+            class="tech_legend__item legend-frontend"
+            data-testid="test-tech_legend__item"
+          >
+            
+          Frontend
+        
+          </div>
+          <div
+            class="tech_legend__item legend-mobile"
+            data-testid="test-tech_legend__item"
+          >
+            
+          Mobile
+        
+          </div>
+          <div
+            class="tech_legend__item legend-pm"
+            data-testid="test-tech_legend__item"
+          >
+            
+          PM
+        
+          </div>
+          <div
+            class="tech_legend__item legend-infrastructure"
+            data-testid="test-tech_legend__item"
+          >
+            
+          Infrastructure
+        
+          </div>
+          <div
+            class="tech_legend__item legend-uiux"
+            data-testid="test-tech_legend__item"
+          >
+            
+          UI/UX
+        
+          </div>
+        </div>
+         
+        <div
+          class="tech_container"
+        >
+          <div
+            class="tech_item devops-ansible devops"
+          >
+            <img
+              alt="Ansible"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Ansible
+            </span>
+          </div>
+          <div
+            class="tech_item devops-terraform devops"
+          >
+            <img
+              alt="Terraform"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Terraform
+            </span>
+          </div>
+          <div
+            class="tech_item devops-cloud-formation devops"
+          >
+            <img
+              alt="CloudFormation"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              CloudFormation
+            </span>
+          </div>
+          <div
+            class="tech_item devops-jenkins devops"
+          >
+            <img
+              alt="Jenkins"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Jenkins
+            </span>
+          </div>
+          <div
+            class="tech_item devops-bamboo devops"
+          >
+            <img
+              alt="Bamboo"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Bamboo
+            </span>
+          </div>
+          <div
+            class="tech_item devops-gitlab devops"
+          >
+            <img
+              alt="GitlabCI"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              GitlabCI
+            </span>
+          </div>
+          <div
+            class="tech_item devops-travis-ci devops"
+          >
+            <img
+              alt="TravisCI"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              TravisCI
+            </span>
+          </div>
+          <div
+            class="tech_item devops-elastic devops"
+          >
+            <img
+              alt="ELK"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              ELK
+            </span>
+          </div>
+          <div
+            class="tech_item devops-circle-ci devops"
+          >
+            <img
+              alt="CircleCI"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              CircleCI
+            </span>
+          </div>
+          <div
+            class="tech_item devops-sentry devops"
+          >
+            <img
+              alt="Sentry"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Sentry
+            </span>
+          </div>
+          <div
+            class="tech_item devops-cloud-watch devops"
+          >
+            <img
+              alt="CloudWatch"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              CloudWatch
+            </span>
+          </div>
+          <div
+            class="tech_item devops-prometheus devops"
+          >
+            <img
+              alt="Prometheus"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Prometheus
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-aws infrastructure"
+          >
+            <img
+              alt="AWS"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              AWS
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-gcp infrastructure"
+          >
+            <img
+              alt="GCP"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              GCP
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-digital-ocean infrastructure"
+          >
+            <img
+              alt="Digital Ocean"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Digital Ocean
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-azure infrastructure"
+          >
+            <img
+              alt="Azure"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Azure
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-cloud-native infrastructure"
+          >
+            <img
+              alt="CloudNative"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              CloudNative
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-heroku infrastructure"
+          >
+            <img
+              alt="Heroku"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Heroku
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-netlify infrastructure"
+          >
+            <img
+              alt="Netlify"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Netlify
+            </span>
+          </div>
+          <div
+            class="tech_item infrastructure-cloudflare infrastructure"
+          >
+            <img
+              alt="CloudFlare"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              CloudFlare
+            </span>
+          </div>
+          <div
+            class="tech_item mobile-kotlin mobile"
+          >
+            <img
+              alt="Kotlin"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Kotlin
+            </span>
+          </div>
+          <div
+            class="tech_item mobile-java mobile"
+          >
+            <img
+              alt="Java"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Java
+            </span>
+          </div>
+          <div
+            class="tech_item mobile-obj-c mobile"
+          >
+            <img
+              alt="Objective-C"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Objective-C
+            </span>
+          </div>
+          <div
+            class="tech_item mobile-swift mobile"
+          >
+            <img
+              alt="Swift"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Swift
+            </span>
+          </div>
+          <div
+            class="tech_item mobile-apple mobile"
+          >
+            <img
+              alt="IOS"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              IOS
+            </span>
+          </div>
+          <div
+            class="tech_item mobile-android mobile"
+          >
+            <img
+              alt="Android"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Android
+            </span>
+          </div>
+          <div
+            class="tech_item pm-jira pm"
+          >
+            <img
+              alt="Jira"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Jira
+            </span>
+          </div>
+          <div
+            class="tech_item pm-slack pm"
+          >
+            <img
+              alt="Slack"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Slack
+            </span>
+          </div>
+          <div
+            class="tech_item pm-meet pm"
+          >
+            <img
+              alt="Meet"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Meet
+            </span>
+          </div>
+          <div
+            class="tech_item pm-zoom pm"
+          >
+            <img
+              alt="Zoom"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Zoom
+            </span>
+          </div>
+          <div
+            class="tech_item pm-miro pm"
+          >
+            <img
+              alt="Miro"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Miro
+            </span>
+          </div>
+          <div
+            class="tech_item pm-trello pm"
+          >
+            <img
+              alt="Trello"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Trello
+            </span>
+          </div>
+          <div
+            class="tech_item pm-loom pm"
+          >
+            <img
+              alt="Loom"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Loom
+            </span>
+          </div>
+          <div
+            class="tech_item pm-jira-assistant pm"
+          >
+            <img
+              alt="Jira Assistant"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Jira Assistant
+            </span>
+          </div>
+          <div
+            class="tech_item pm-service-desk pm"
+          >
+            <img
+              alt="Service Desk"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Service Desk
+            </span>
+          </div>
+          <div
+            class="tech_item pm-basecamp pm"
+          >
+            <img
+              alt="Basecamp"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Basecamp
+            </span>
+          </div>
+          <div
+            class="tech_item pm-notion pm"
+          >
+            <img
+              alt="Notion"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Notion
+            </span>
+          </div>
+          <div
+            class="tech_item pm-zapier pm"
+          >
+            <img
+              alt="Zapier"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Zapier
+            </span>
+          </div>
+          <div
+            class="tech_item backend-python backend"
+          >
+            <img
+              alt="Python"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Python
+            </span>
+          </div>
+          <div
+            class="tech_item backend-go backend"
+          >
+            <img
+              alt="Go"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Go
+            </span>
+          </div>
+          <div
+            class="tech_item backend-node backend"
+          >
+            <img
+              alt="Node.js"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Node.js
+            </span>
+          </div>
+          <div
+            class="tech_item backend-js backend"
+          >
+            <img
+              alt="JavaScript"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              JavaScript
+            </span>
+          </div>
+          <div
+            class="tech_item backend-typescript backend"
+          >
+            <img
+              alt="TypeScript"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              TypeScript
+            </span>
+          </div>
+          <div
+            class="tech_item backend-php backend"
+          >
+            <img
+              alt="PHP"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              PHP
+            </span>
+          </div>
+          <div
+            class="tech_item backend-ruby backend"
+          >
+            <img
+              alt="Ruby"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Ruby
+            </span>
+          </div>
+          <div
+            class="tech_item backend-c backend"
+          >
+            <img
+              alt="C"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              C
+            </span>
+          </div>
+          <div
+            class="tech_item backend-c-plus backend"
+          >
+            <img
+              alt="C++"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              C++
+            </span>
+          </div>
+          <div
+            class="tech_item uiux-figma uiux"
+          >
+            <img
+              alt="Figma"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Figma
+            </span>
+          </div>
+          <div
+            class="tech_item uiux-adobe uiux"
+          >
+            <img
+              alt="Adobe Suite"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Adobe Suite
+            </span>
+          </div>
+          <div
+            class="tech_item uiux-sketch uiux"
+          >
+            <img
+              alt="Sketch"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Sketch
+            </span>
+          </div>
+          <div
+            class="tech_item uiux-invision uiux"
+          >
+            <img
+              alt="InVision"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              InVision
+            </span>
+          </div>
+          <div
+            class="tech_item uiux-zeplin uiux"
+          >
+            <img
+              alt="Zeplin"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Zeplin
+            </span>
+          </div>
+          <div
+            class="tech_item uiux-balsamic uiux"
+          >
+            <img
+              alt="Balsamic"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Balsamic
+            </span>
+          </div>
+          <div
+            class="tech_item uiux-principle-app uiux"
+          >
+            <img
+              alt="Principle"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Principle
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-post-css frontend"
+          >
+            <img
+              alt="PostCSS"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              PostCSS
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-typescript frontend"
+          >
+            <img
+              alt="TypeScript"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              TypeScript
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-angular frontend"
+          >
+            <img
+              alt="Angular"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Angular
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-webpack frontend"
+          >
+            <img
+              alt="Webpack"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Webpack
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-next frontend"
+          >
+            <img
+              alt="Next.js"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Next.js
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-nuxt frontend"
+          >
+            <img
+              alt="Nuxt.js"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Nuxt.js
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-js frontend"
+          >
+            <img
+              alt="JavaScript"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              JavaScript
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-react frontend"
+          >
+            <img
+              alt="React"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              React
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-babel frontend"
+          >
+            <img
+              alt="Babel"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Babel
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-vue frontend"
+          >
+            <img
+              alt="Vue"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Vue
+            </span>
+          </div>
+          <div
+            class="tech_item frontend-sass frontend"
+          >
+            <img
+              alt="SASS"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              SASS
+            </span>
+          </div>
+          <div
+            class="tech_item qa-jasmine qa"
+          >
+            <img
+              alt="Jasmine"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Jasmine
+            </span>
+          </div>
+          <div
+            class="tech_item qa-selenoid qa"
+          >
+            <img
+              alt="Selenoid"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Selenoid
+            </span>
+          </div>
+          <div
+            class="tech_item qa-appium qa"
+          >
+            <img
+              alt="Appium"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Appium
+            </span>
+          </div>
+          <div
+            class="tech_item qa-cucumber qa"
+          >
+            <img
+              alt="Cucumber"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Cucumber
+            </span>
+          </div>
+          <div
+            class="tech_item qa-pytest qa"
+          >
+            <img
+              alt="PyTest"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              PyTest
+            </span>
+          </div>
+          <div
+            class="tech_item qa-selenium qa"
+          >
+            <img
+              alt="Selenium"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Selenium
+            </span>
+          </div>
+          <div
+            class="tech_item qa-selenium-grid qa"
+          >
+            <img
+              alt="Selenium Grid"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="26"
+              width="26"
+            />
+             
+            <span>
+              Selenium Grid
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

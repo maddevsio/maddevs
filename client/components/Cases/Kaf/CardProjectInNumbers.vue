@@ -1,27 +1,39 @@
 <template>
   <div class="card-content">
     <div class="card-content_column-item">
-      <p class="card-content_title">7500</p>
+      <p class="card-content_title">
+        7500
+      </p>
       <TextParagraph class="card-content_paragraph">
-        viewers in the <br />
+        viewers in the <br>
         database
       </TextParagraph>
     </div>
     <div class="card-content_column-item">
-      <p class="card-content_title">6000+</p>
+      <p class="card-content_title">
+        6000+
+      </p>
       <TextParagraph class="card-content_paragraph">
         active / current
-        <br />
+        <br>
         viewers
       </TextParagraph>
     </div>
     <div class="card-content_column-item">
-      <p class="card-content_title">500</p>
-      <TextParagraph class="card-content_paragraph"> viewers per day </TextParagraph>
+      <p class="card-content_title">
+        500
+      </p>
+      <TextParagraph class="card-content_paragraph">
+        viewers per day
+      </TextParagraph>
     </div>
     <div class="card-content_column-item">
-      <p class="card-content_title">280–300</p>
-      <TextParagraph class="card-content_paragraph"> concurrent viewers </TextParagraph>
+      <p class="card-content_title">
+        280–300
+      </p>
+      <TextParagraph class="card-content_paragraph">
+        concurrent viewers
+      </TextParagraph>
     </div>
   </div>
 </template>

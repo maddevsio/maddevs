@@ -52,9 +52,9 @@ describe('infrastructure Audit Modal', () => {
 
   it('has a functions', () => {
     expect(
-      typeof ModalInfrastructureAudit.methods.getPrivacyCheckboxState &&
-        typeof ModalInfrastructureAudit.methods.getDiscountOffersCheckboxState &&
-        typeof ModalInfrastructureAudit.methods.getSelectedProjectHost,
+      typeof ModalInfrastructureAudit.methods.getPrivacyCheckboxState
+        && typeof ModalInfrastructureAudit.methods.getDiscountOffersCheckboxState
+        && typeof ModalInfrastructureAudit.methods.getSelectedProjectHost,
     ).toBe('function')
   })
 
@@ -104,16 +104,16 @@ describe('infrastructure Audit Modal', () => {
 
     wrapper.vm.resetForm()
     expect(
-      wrapper.vm.$data.fullName &&
-        wrapper.vm.$data.email &&
-        wrapper.vm.$data.form &&
-        wrapper.vm.$data.selectedProjectHost &&
-        wrapper.vm.$data.company,
+      wrapper.vm.$data.fullName
+        && wrapper.vm.$data.email
+        && wrapper.vm.$data.form
+        && wrapper.vm.$data.selectedProjectHost
+        && wrapper.vm.$data.company,
     ).toBeNull()
     expect(
-      wrapper.vm.$data.agreeWithPrivacyPolicy &&
-        wrapper.vm.$data.agreeToGetMadDevsDiscountOffers &&
-        wrapper.vm.$data.isEmailSent,
+      wrapper.vm.$data.agreeWithPrivacyPolicy
+        && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
+        && wrapper.vm.$data.isEmailSent,
     ).toEqual(false)
   })
 })
