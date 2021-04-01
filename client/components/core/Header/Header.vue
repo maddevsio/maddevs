@@ -217,7 +217,7 @@ export default {
     getDOMSelectors() {
       this.caseHeader = document.getElementById('case-header')
       this.headerWhiteLogoText = document.getElementById('header-logo-text')
-      this.caseFirstSection = document.getElementById('case-body')
+      this.caseFirstSection = document.getElementById('case-first-section')
       this.caseGoDeeScrollContainer = document.getElementById('case-scroll-container')
     },
 

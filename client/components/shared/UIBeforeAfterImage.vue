@@ -77,12 +77,12 @@ export default {
   computed: {
     beforeImageStyle() {
       return this.$props.beforeImage
-        ? `background-image: url(${require(`../../assets/img/${this.$props.beforeImage}`)});`
+        ? `background-image: url(${this.getMediaFromS3(this.$props.beforeImage)});`
         : null
     },
 
     afterImageSrc() {
-      return this.$props.afterImage ? `${require(`../../assets/img/${this.$props.afterImage}`)}` : null
+      return this.$props.afterImage ? this.getMediaFromS3(this.$props.afterImage) : null
     },
 
     afterImageAlt() {
