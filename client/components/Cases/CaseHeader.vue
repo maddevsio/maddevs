@@ -6,6 +6,7 @@
     <video
       v-if="!isIphone"
       class="case_main-video"
+      data-testid="test-case_main-video"
       loop="true"
       muted="true"
       autoplay="true"
