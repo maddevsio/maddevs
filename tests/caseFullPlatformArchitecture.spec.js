@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import FullPlatformArchitecture from '../client/components/Cases/kaf/FullPlatformArchitecture'
+import FullPlatformArchitecture from '../client/components/Cases/yourcast/FullPlatformArchitecture'
 
 describe('full platform architecture', () => {
   let wrapper

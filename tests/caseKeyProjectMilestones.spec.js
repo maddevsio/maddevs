@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import KeyProjectMilestones from '../client/components/Cases/kaf/KeyProjectMilestones'
+import KeyProjectMilestones from '../client/components/Cases/yourcast/KeyProjectMilestones'
 
 describe('key project milestones', () => {
   let wrapper

@@ -61,7 +61,7 @@ export default {
   computed: {
     lottieOptions() {
       return {
-        animationData: require(`@/assets/lottie/kaf/${this.$props.title}.json`),
+        animationData: require(`@/assets/lottie/yourcast/${this.$props.title}.json`),
         autoplay: false,
       }
     },

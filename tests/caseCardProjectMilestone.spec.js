@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import CardProjectMilestone from '@/components/Cases/kaf/CardProjectMilestone'
+import CardProjectMilestone from '@/components/Cases/yourcast/CardProjectMilestone'
 
 describe('card project milestone', () => {
   let wrapper

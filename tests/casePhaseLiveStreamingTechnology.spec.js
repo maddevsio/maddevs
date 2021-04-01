@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import PhaseLiveStreamingTechnology from '../client/components/Cases/kaf/PhaseLiveStreamingTechnology'
+import PhaseLiveStreamingTechnology from '../client/components/Cases/yourcast/PhaseLiveStreamingTechnology'
 
 describe('phase live streaming technology', () => {
   let wrapper

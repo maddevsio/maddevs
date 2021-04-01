@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils'
-import AboutKaf from '../client/components/Cases/kaf/AboutKaf'
+import AboutKaf from '../client/components/Cases/yourcast/AboutKaf'
 
-describe('about kaf', () => {
+describe('about yourcast', () => {
   let wrapper
 
   beforeEach(() => {

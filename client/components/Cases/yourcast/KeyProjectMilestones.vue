@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import CardProjectMilestone from '@/components/Cases/kaf/CardProjectMilestone'
-import { keyProjectMilestones } from '@/data/caseKaf'
+import CardProjectMilestone from '@/components/Cases/yourcast/CardProjectMilestone'
+import { keyProjectMilestones } from '@/data/caseYourcast'
 
 export default {
   name: 'KeyProjectMilestones',

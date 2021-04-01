@@ -27,9 +27,9 @@
 
 <script>
 import Card from '@/components/Cases/Card'
-import CardSupportedGadgets from '@/components/Cases/kaf/CardSupportedGadgets'
+import CardSupportedGadgets from '@/components/Cases/yourcast/CardSupportedGadgets'
 import TextParagraph from '@/components/Cases/TextParagraph'
-import { supportedGadgets } from '@/data/caseKaf'
+import { supportedGadgets } from '@/data/caseYourcast'
 
 export default {
   name: 'SupportedGadgets',

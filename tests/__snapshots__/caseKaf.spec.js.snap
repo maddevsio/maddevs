@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`kaf renders correctly 1`] = `
+exports[`yourcast renders correctly 1`] = `
 <main
   class="case"
 >
@@ -1770,7 +1770,7 @@ exports[`kaf renders correctly 1`] = `
     />
      
     <h2
-      class="case_title case_title_h2 case_title-kaf-case"
+      class="case_title case_title_h2 case_title-yourcast-case"
     >
       
     The maintenance 

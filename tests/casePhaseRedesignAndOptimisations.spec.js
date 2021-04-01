@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import PhaseRedesignAndOptimisations from '../client/components/Cases/kaf/PhaseRedesignAndOptimisations'
+import PhaseRedesignAndOptimisations from '../client/components/Cases/yourcast/PhaseRedesignAndOptimisations'
 
 describe('phase redesign and optimisations', () => {
   let wrapper

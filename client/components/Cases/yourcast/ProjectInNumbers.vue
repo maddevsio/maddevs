@@ -20,7 +20,7 @@
 
 <script>
 import Card from '@/components/Cases/Card'
-import CardProjectInNumbers from '@/components/Cases/kaf/CardProjectInNumbers'
+import CardProjectInNumbers from '@/components/Cases/yourcast/CardProjectInNumbers'
 import TextParagraph from '@/components/Cases/TextParagraph'
 
 export default {

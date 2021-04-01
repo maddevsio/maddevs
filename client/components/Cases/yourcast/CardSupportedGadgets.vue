@@ -15,7 +15,7 @@
         :height="height"
         :file-name="`${file}-card`"
         :alt="alt"
-        picture-folder="kaf"
+        picture-folder="yourcast"
         file-extension="png"
         class="card-content_picture"
       />
@@ -32,7 +32,7 @@
         :height="height"
         :file-name="file"
         :alt="alt"
-        picture-folder="kaf"
+        picture-folder="yourcast"
         file-extension="png"
       />
     </div>

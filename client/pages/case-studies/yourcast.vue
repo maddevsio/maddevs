@@ -23,7 +23,7 @@
     <Main />
     <Footer
       link="/case-studies/sir-john-monash-centre/"
-      class-name="kaf-case"
+      class-name="yourcast-case"
     >
       <div
         slot="icon"
@@ -40,11 +40,11 @@
 <script>
 import CaseHeader from '@/components/Cases/CaseHeader'
 import Footer from '@/components/Cases/Footer'
-import Main from '@/components/Cases/kaf/Main'
+import Main from '@/components/Cases/yourcast/Main'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
-  name: 'CaseKaf',
+  name: 'CaseYourcast',
   components: {
     CaseHeader,
     Footer,
@@ -58,8 +58,8 @@ export default {
       headerLogo: {
         width: 387,
         height: 81.23,
-        pictureFolder: 'kaf',
-        fileName: 'kaf-logo',
+        pictureFolder: 'yourcast',
+        fileName: 'yourcast-logo',
         alt: '',
       },
     }
@@ -71,6 +71,6 @@ export default {
 @import '../../assets/styles/cases/base';
 @import '../../assets/styles/cases/mixins';
 @import '../../assets/styles/cases/components';
-@import '../../assets/styles/cases/kaf/styles';
+@import '../../assets/styles/cases/yourcast/styles';
 @import '../../assets/styles/cases/media';
 </style>

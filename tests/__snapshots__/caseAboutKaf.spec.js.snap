@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`about kaf renders correctly 1`] = `
+exports[`about yourcast renders correctly 1`] = `
 <section
   class="container_regular"
 >
