@@ -39,8 +39,8 @@
 </template>
 
 <script>
-import CaseHeader from '@/components/Cases/CaseHeader'
-import Footer from '@/components/Cases/Footer'
+import CaseHeader from '@/components/Cases/shared/CaseHeader'
+import Footer from '@/components/Cases/shared/CaseFooter'
 import Main from '@/components/Cases/kaf/Main'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 

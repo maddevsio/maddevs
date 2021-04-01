@@ -18,9 +18,9 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import List from '@/components/Cases/List'
-import ListHyphenItemBox from '@/components/Cases/ListHyphenItemBox'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import List from '@/components/Cases/shared/List'
+import ListHyphenItemBox from '@/components/Cases/shared/ListHyphenItemBox'
 
 export default {
   name: 'PhaseUserAuthorisation',
