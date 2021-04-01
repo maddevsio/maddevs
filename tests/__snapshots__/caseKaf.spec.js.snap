@@ -8,6 +8,11 @@ exports[`kaf renders correctly 1`] = `
     class="case_header"
     id="case-header"
   >
+    <div
+      class="case_main-video_fallback"
+      style="background-image: url(img.jpg);"
+    />
+     
     <video
       autoplay="autoplay"
       class="case_main-video"
@@ -16,7 +21,7 @@ exports[`kaf renders correctly 1`] = `
       muted="muted"
     >
       <source
-        src="undefined/"
+        src="img.jpg"
         type="video/mp4"
       />
       
@@ -69,7 +74,7 @@ exports[`kaf renders correctly 1`] = `
         alt=""
         class="case_header-logo case_kaf-logo"
         height="81.23"
-        src="[object Object]"
+        src="img.jpg"
         width="387"
       />
     </div>
@@ -286,7 +291,7 @@ exports[`kaf renders correctly 1`] = `
               >
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
@@ -295,8 +300,8 @@ exports[`kaf renders correctly 1`] = `
                   class="image"
                   height="449"
                   loading=""
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
                   width="735"
                 />
               </picture>
@@ -308,7 +313,7 @@ exports[`kaf renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
@@ -317,8 +322,8 @@ exports[`kaf renders correctly 1`] = `
                   class="image"
                   height="449"
                   loading=""
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
                   width="735"
                 />
               </picture>
@@ -347,7 +352,7 @@ exports[`kaf renders correctly 1`] = `
               >
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
@@ -356,8 +361,8 @@ exports[`kaf renders correctly 1`] = `
                   class="image"
                   height="627"
                   loading=""
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
                   width="312"
                 />
               </picture>
@@ -369,7 +374,7 @@ exports[`kaf renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
@@ -378,8 +383,8 @@ exports[`kaf renders correctly 1`] = `
                   class="image"
                   height="627"
                   loading=""
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
                   width="312"
                 />
               </picture>
@@ -408,7 +413,7 @@ exports[`kaf renders correctly 1`] = `
               >
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
@@ -417,8 +422,8 @@ exports[`kaf renders correctly 1`] = `
                   class="image"
                   height="374"
                   loading=""
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
                   width="518"
                 />
               </picture>
@@ -430,7 +435,7 @@ exports[`kaf renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
@@ -439,8 +444,8 @@ exports[`kaf renders correctly 1`] = `
                   class="image"
                   height="374"
                   loading=""
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
                   width="518"
                 />
               </picture>

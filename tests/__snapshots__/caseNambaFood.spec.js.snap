@@ -8,6 +8,10 @@ exports[`namba food renders correctly 1`] = `
     class="case_header"
     id="case-header"
   >
+    <div
+      class="case_main-video_fallback"
+    />
+     
     <video
       autoplay="autoplay"
       class="case_main-video"
@@ -16,7 +20,7 @@ exports[`namba food renders correctly 1`] = `
       muted="muted"
     >
       <source
-        src="undefined/main.ef19480.mp4"
+        src="s3 image url"
         type="video/mp4"
       />
       
@@ -63,7 +67,7 @@ exports[`namba food renders correctly 1`] = `
         alt=""
         class="case_header-logo case_nambafood-logo"
         height="82"
-        src="[object Object]"
+        src="s3 image url"
         width="259"
       />
     </div>
@@ -182,14 +186,14 @@ exports[`namba food renders correctly 1`] = `
             <picture>
               <source
                 class="case_card-content_image"
-                srcset="[object Object] ,[object Object] 2x"
+                srcset="s3 image url ,s3 image url 2x"
                 type="image/webp"
               />
                
               <img
                 class="case_card-content_image"
-                src="[object Object]"
-                srcset="[object Object] 2x"
+                src="s3 image url"
+                srcset="s3 image url 2x"
               />
             </picture>
           </div>
@@ -210,7 +214,7 @@ exports[`namba food renders correctly 1`] = `
             >
               <source
                 class="image"
-                srcset="[object Object] ,[object Object] 2x"
+                srcset="s3 image url ,s3 image url 2x"
                 type="image/webp"
               />
                
@@ -219,8 +223,8 @@ exports[`namba food renders correctly 1`] = `
                 class="image"
                 height="0"
                 loading="lazy"
-                src="[object Object]"
-                srcset="[object Object] 2x"
+                src="s3 image url"
+                srcset="s3 image url 2x"
                 width="0"
               />
             </picture>
@@ -356,7 +360,7 @@ exports[`namba food renders correctly 1`] = `
       <img
         alt="Namba Food: Website and Mobile App Infrastructure Scheme."
         class="case_gif case_high-level-system-overview-gif"
-        src="../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif"
+        src="s3 image url"
       />
     </section>
      
@@ -416,7 +420,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -425,8 +429,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -438,7 +442,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -447,8 +451,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -489,7 +493,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -498,8 +502,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -511,7 +515,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -520,8 +524,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -560,7 +564,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -569,8 +573,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -582,7 +586,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -591,8 +595,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -633,7 +637,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -642,8 +646,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -655,7 +659,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -664,8 +668,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -713,7 +717,7 @@ exports[`namba food renders correctly 1`] = `
           width="100%"
         >
           <source
-            src="undefined/mobile-applications-for-end-users.faaab2d.mp4"
+            src="s3 image url"
             type="video/mp4"
           />
           
@@ -852,7 +856,7 @@ exports[`namba food renders correctly 1`] = `
           <picture>
             <source
               class="image"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -861,8 +865,8 @@ exports[`namba food renders correctly 1`] = `
               class="image"
               height="0"
               loading=""
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="0"
             />
           </picture>
@@ -912,7 +916,7 @@ exports[`namba food renders correctly 1`] = `
       >
         <source
           class="image box-shadow"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="s3 image url ,s3 image url 2x"
           type="image/webp"
         />
          
@@ -921,8 +925,8 @@ exports[`namba food renders correctly 1`] = `
           class="image box-shadow"
           height="0"
           loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="s3 image url"
+          srcset="s3 image url 2x"
           width="0"
         />
       </picture>
@@ -1097,7 +1101,7 @@ exports[`namba food renders correctly 1`] = `
           <picture>
             <source
               class="image"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -1106,8 +1110,8 @@ exports[`namba food renders correctly 1`] = `
               class="image"
               height="0"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="0"
             />
           </picture>
@@ -1126,7 +1130,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -1135,8 +1139,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -1147,7 +1151,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -1156,8 +1160,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -1186,7 +1190,7 @@ exports[`namba food renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -1195,8 +1199,8 @@ exports[`namba food renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -1207,7 +1211,7 @@ exports[`namba food renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="s3 image url ,s3 image url 2x"
                   type="image/webp"
                 />
                  
@@ -1216,8 +1220,8 @@ exports[`namba food renders correctly 1`] = `
                   class="image"
                   height="0"
                   loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -1422,7 +1426,7 @@ exports[`namba food renders correctly 1`] = `
           width="100%"
         >
           <source
-            src="undefined/map.c41e893.mp4"
+            src="s3 image url"
             type="video/mp4"
           />
           
@@ -1462,7 +1466,7 @@ exports[`namba food renders correctly 1`] = `
       >
         <source
           class="image box-shadow"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="s3 image url ,s3 image url 2x"
           type="image/webp"
         />
          
@@ -1471,8 +1475,8 @@ exports[`namba food renders correctly 1`] = `
           class="image box-shadow"
           height="0"
           loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="s3 image url"
+          srcset="s3 image url 2x"
           width="0"
         />
       </picture>
@@ -1788,7 +1792,7 @@ exports[`namba food renders correctly 1`] = `
       <img
         alt="Namba Food: Website and Mobile App Infrastructure Scheme."
         class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"
-        src="../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif"
+        src="s3 image url"
       />
     </section>
      
@@ -1845,7 +1849,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <source
             class="image"
-            srcset="[object Object] ,[object Object] 2x"
+            srcset="s3 image url ,s3 image url 2x"
             type="image/webp"
           />
            
@@ -1854,8 +1858,8 @@ exports[`namba food renders correctly 1`] = `
             class="image"
             height="0"
             loading="lazy"
-            src="[object Object]"
-            srcset="[object Object] 2x"
+            src="s3 image url"
+            srcset="s3 image url 2x"
             width="0"
           />
         </picture>
@@ -1873,7 +1877,7 @@ exports[`namba food renders correctly 1`] = `
         >
           <source
             class="image"
-            srcset="[object Object] ,[object Object] 2x"
+            srcset="s3 image url ,s3 image url 2x"
             type="image/webp"
           />
            
@@ -1882,8 +1886,8 @@ exports[`namba food renders correctly 1`] = `
             class="image"
             height="0"
             loading="lazy"
-            src="[object Object]"
-            srcset="[object Object] 2x"
+            src="s3 image url"
+            srcset="s3 image url 2x"
             width="0"
           />
         </picture>
@@ -1923,7 +1927,7 @@ exports[`namba food renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -1932,8 +1936,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -1967,7 +1971,7 @@ exports[`namba food renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -1976,8 +1980,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2011,7 +2015,7 @@ exports[`namba food renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2020,8 +2024,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2055,7 +2059,7 @@ exports[`namba food renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2064,8 +2068,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2099,7 +2103,7 @@ exports[`namba food renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2108,8 +2112,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2143,7 +2147,7 @@ exports[`namba food renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2152,8 +2156,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2187,7 +2191,7 @@ exports[`namba food renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2196,8 +2200,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2231,7 +2235,7 @@ exports[`namba food renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2240,8 +2244,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2275,7 +2279,7 @@ exports[`namba food renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2284,8 +2288,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2319,7 +2323,7 @@ exports[`namba food renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2328,8 +2332,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2363,7 +2367,7 @@ exports[`namba food renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2372,8 +2376,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2407,7 +2411,7 @@ exports[`namba food renders correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2416,8 +2420,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2766,7 +2770,7 @@ exports[`namba food renders correctly 1`] = `
             <picture>
               <source
                 class="image"
-                srcset="[object Object] ,[object Object] 2x"
+                srcset="s3 image url ,s3 image url 2x"
                 type="image/webp"
               />
                
@@ -2775,8 +2779,8 @@ exports[`namba food renders correctly 1`] = `
                 class="image"
                 height="0"
                 loading="lazy"
-                src="[object Object]"
-                srcset="[object Object] 2x"
+                src="s3 image url"
+                srcset="s3 image url 2x"
                 width="0"
               />
             </picture>

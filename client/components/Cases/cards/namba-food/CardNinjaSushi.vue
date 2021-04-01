@@ -29,18 +29,18 @@
       <div class="case_card-content_macbook-frame" />
       <picture>
         <source
+          v-if="source"
           ref="source"
-          :srcset="[
-            require(`@/assets/img/Cases/nambafood/webp/ninja-sushi-slide.webp`) + ' ',
-            require(`@/assets/img/Cases/nambafood/webp/ninja-sushi-slide@2x.webp`) + ' 2x',
-          ]"
+          :srcset="[source.x1 + ' ', source.x2 + ' 2x']"
           class="case_card-content_image"
           type="image/webp"
         >
         <img
+          v-if="img"
           ref="img"
-          :src="[require('@/assets/img/Cases/nambafood/jpg/ninja-sushi-slide.jpg')]"
-          :srcset="[require(`@/assets/img/Cases/nambafood/jpg/ninja-sushi-slide@2x.jpg`) + ' 2x']"
+          :src="[img.x1]"
+          :srcset="[img.x2 + ' 2x']"
+          :alt="img.alt"
           class="case_card-content_image"
         >
       </picture>
@@ -57,34 +57,53 @@ export default {
     TextParagraph,
   },
 
-  mounted() {
-    const { img } = this.$refs
-    const { source } = this.$refs
-    const pictures = [
-      {
-        img: 'ninja-sushi-slide',
-        alt: 'Namba Food: Sushi Room.',
+  data() {
+    return {
+      imgIndex: 0,
+      img: {
+        x1: this.getMediaFromS3('/images/Cases/nambafood/webp/ninja-sushi-slide.webp'),
+        x2: this.getMediaFromS3('/images/Cases/nambafood/webp/ninja-sushi-slide@2x.webp'),
+        alt: null,
       },
-      {
-        img: 'sushi-room-slide',
-        alt: 'Namba Food: Sushi Room.',
-      },
-      {
-        img: 'coffee-house-slide',
-        alt: 'Namba Food: Coffee House.',
-      },
-    ]
-    let i = 0
 
-    function toggle() {
-      img.src = require(`@/assets/img/Cases/nambafood/jpg/${pictures[i].img}.jpg`)
-      img.srcset = `${require(`@/assets/img/Cases/nambafood/jpg/${pictures[i].img}@2x.jpg`)} 2x`
-      img.alt = pictures[i].alt
-      source.srcset = `${require(`@/assets/img/Cases/nambafood/webp/${pictures[i].img}.webp`)}, 
-      ${require(`@/assets/img/Cases/nambafood/webp/${pictures[i].img}@2x.webp`)} 2x`
-      i = (i + 1) % pictures.length // update the counter
+      source: {
+        x1: this.getMediaFromS3('/images/Cases/nambafood/jpg/ninja-sushi-slide.jpg'),
+        x2: this.getMediaFromS3('/images/Cases/nambafood/jpg/ninja-sushi-slide@2x.jpg'),
+      },
     }
-    setInterval(toggle, 1500)
+  },
+
+  mounted() {
+    setInterval(this.toggleImages, 1500)
+  },
+
+  destroyed() {
+    clearInterval(this.toggleImages)
+  },
+
+  methods: {
+    toggleImages() {
+      const pictures = [
+        {
+          img: 'ninja-sushi-slide',
+          alt: 'Namba Food: Sushi Room.',
+        },
+        {
+          img: 'sushi-room-slide',
+          alt: 'Namba Food: Sushi Room.',
+        },
+        {
+          img: 'coffee-house-slide',
+          alt: 'Namba Food: Coffee House.',
+        },
+      ]
+      this.img.x1 = this.getMediaFromS3(`/images/Cases/nambafood/jpg/${pictures[this.imgIndex].img}.jpg`)
+      this.img.x2 = this.getMediaFromS3(`/images/Cases/nambafood/jpg/${pictures[this.imgIndex].img}@2x.jpg`)
+      this.img.alt = pictures[this.imgIndex].alt
+      this.source.x1 = this.getMediaFromS3(`/images/Cases/nambafood/webp/${pictures[this.imgIndex].img}.webp`)
+      this.source.x2 = this.getMediaFromS3(`/images/Cases/nambafood/webp/${pictures[this.imgIndex].img}@2x.webp`)
+      this.imgIndex = (this.imgIndex + 1) % pictures.length // update the counter
+    },
   },
 }
 </script>

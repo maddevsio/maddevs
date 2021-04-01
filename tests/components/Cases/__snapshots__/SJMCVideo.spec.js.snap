@@ -13,7 +13,7 @@ exports[`SJMCVideo component renders correctly 1`] = `
       class="main-video"
     >
       <source
-        src="undefined/sjmc/sjmc-modal-video.00bd869.mp4"
+        src="s3 image url"
         type="video/mp4"
       />
       

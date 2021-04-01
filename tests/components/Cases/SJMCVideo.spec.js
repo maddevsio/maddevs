@@ -18,6 +18,7 @@ describe('SJMCVideo component', () => {
         $nuxt: {
           $on: jest.fn(),
         },
+        getMediaFromS3: () => 's3 image url',
       },
       stubs: {
         SJMCVideo: VueVideoStub,

@@ -9,7 +9,8 @@
       <div class="case_content-layer p-48_bottom media-p-24_bottom">
         <CaseHeader
           :header-logo="headerLogo"
-          video-name="godee-case-main-video.mp4"
+          video-name="/videos/godee-case-main-video.mp4"
+          video-fallback-path="/images/Cases/godee/jpg/godee-case-preview.jpg"
         >
           <h1
             slot="title"
@@ -52,7 +53,10 @@
       </div>
       <div class="case_parallax-layer">
         <div class="case_parallax-image-wrapper">
-          <div class="case_parallax-image" />
+          <div
+            class="case_parallax-image"
+            :style="{ backgroundImage: `url(${getMediaFromS3('/images/Cases/godee/jpg/parallax.jpg')})` }"
+          />
         </div>
       </div>
       <div class="case_content-layer p-48_top media-p-24_top">
@@ -136,9 +140,9 @@
             <UIBeforeAfterImage
               :base-width="'1000'"
               :base-height="'578.47'"
-              :before-image="'Cases/godee/png/application-before.png'"
-              :after-image="'Cases/godee/png/application-after.png'"
-              :alt="'GoDee Public Transportation App at 2018 and now.'"
+              before-image="/images/Cases/godee/png/application-before.png"
+              after-image="/images/Cases/godee/png/application-after.png"
+              alt="GoDee Public Transportation App at 2018 and now."
             />
           </div>
         </section>
@@ -364,7 +368,7 @@
                 alt="GoDee: Safari Browser Top Bar White."
               />
               <img
-                src="../../assets/img/Cases/godee/jpg/trip-request-map.jpg"
+                :src="getMediaFromS3('/images/Cases/godee/jpg/trip-request-map.jpg')"
                 class="case_img"
                 alt="Trip Request Map"
                 loading="lazy"
@@ -397,7 +401,7 @@
                 muted="true"
               >
                 <source
-                  :src="getPathTripRequestMapVideo"
+                  :src="getMediaFromS3('/videos/map-stops.mp4')"
                   type="video/mp4"
                 >
                 Your browser does not support the video tag.
@@ -433,7 +437,7 @@
                 alt="GoDee: Safari Browser Top Bar White."
               />
               <img
-                src="../../assets/img/Cases/godee/jpg/trip-monitor.jpg"
+                :src="getMediaFromS3('/images/Cases/godee/jpg/trip-monitor.jpg')"
                 class="case_img"
                 alt="Trip Monitor"
                 loading="lazy"
@@ -466,7 +470,7 @@
                 muted="true"
               >
                 <source
-                  :src="getPathTripMonitorVideo"
+                  :src="getMediaFromS3('/videos/trip-monitor.f4a33e6.mp4')"
                   type="video/mp4"
                 >
                 Your browser does not support the video tag.
@@ -511,7 +515,7 @@
                 alt="GoDee: Safari Browser Top Bar White."
               />
               <img
-                src="../../assets/img/Cases/godee/jpg/route-optimization.jpg"
+                :src="getMediaFromS3('/images/Cases/godee/jpg/route-optimization.jpg')"
                 class="case_img"
                 alt="Route Optimization"
                 loading="lazy"
@@ -544,7 +548,7 @@
                 muted="true"
               >
                 <source
-                  :src="getPathRouteOptimizationVideo"
+                  :src="getMediaFromS3('/videos/route-optimization.f5a2ff0.mp4')"
                   type="video/mp4"
                 >
                 Your browser does not support the video tag.
@@ -615,7 +619,7 @@
               Infrastructure scheme
             </h2>
             <img
-              src="../../assets/img/Cases/godee/gif/infrastructure-scheme.gif"
+              :src="getMediaFromS3('/images/Cases/godee/gif/infrastructure-scheme.gif')"
               class="case_gif case_infrastructure-scheme-gif"
               alt="GoDee Mobile App Infrastructure Scheme."
               loading="lazy"
@@ -1029,12 +1033,6 @@ export default {
       ...getMetadata('godee'),
       image: 'https://maddevs.io/godee.png',
     })
-  },
-
-  computed: {
-    getPathTripRequestMapVideo: () => `${process.env.awsUrl}/map-stops.mp4`,
-    getPathTripMonitorVideo: () => `${process.env.awsUrl}/trip-monitor.f4a33e6.mp4`,
-    getPathRouteOptimizationVideo: () => `${process.env.awsUrl}/route-optimization.f5a2ff0.mp4`,
   },
 
   mounted() {

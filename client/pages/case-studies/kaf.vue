@@ -3,6 +3,7 @@
     <CaseHeader
       :header-logo="headerLogo"
       video-name=""
+      video-fallback-path="/images/Cases/kaf/png/banner-bg.png"
     >
       <h1
         slot="title"
