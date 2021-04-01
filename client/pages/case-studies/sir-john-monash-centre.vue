@@ -2,7 +2,7 @@
   <main class="main case">
     <CaseHeader
       :header-logo="headerLogo"
-      video-name="sjmc/sjmc-main-video.b35a387.mp4"
+      video-name="/videos/sjmc/sjmc-main-video.b35a387.mp4"
       video-fallback-path="/images/Cases/sjmc/jpg/sjmc-main-video-preview.jpg"
     >
       <h1
