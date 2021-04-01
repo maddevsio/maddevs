@@ -11,7 +11,9 @@ exports[`softwareDevelopment renders correctly 1`] = `
     <h2
       class="software-development__main-title"
     >
+      
       Software Development
+    
     </h2>
      
     <div
@@ -30,13 +32,17 @@ exports[`softwareDevelopment renders correctly 1`] = `
               <h3
                 class="item-title content-item__title"
               >
-                Backend
+                
+          Backend
+        
               </h3>
                
               <h4
                 class="item-sub-title content-item__sub-title"
               >
-                Your MVP doesn't work as expected after launch?
+                
+          Your MVP doesn't work as expected after launch?
+        
               </h4>
                
               <p
@@ -127,13 +133,17 @@ exports[`softwareDevelopment renders correctly 1`] = `
               <h3
                 class="item-title content-item__title"
               >
-                Frontend
+                
+          Frontend
+        
               </h3>
                
               <h4
                 class="item-sub-title content-item__sub-title"
               >
-                Your users get lost in lousy interfaces?
+                
+          Your users get lost in lousy interfaces?
+        
               </h4>
                
               <p
@@ -240,13 +250,17 @@ exports[`softwareDevelopment renders correctly 1`] = `
               <h3
                 class="item-title content-item__title"
               >
-                Mobile
+                
+          Mobile
+        
               </h3>
                
               <h4
                 class="item-sub-title content-item__sub-title"
               >
-                Your app is slow and unable to survive a demo?
+                
+          Your app is slow and unable to survive a demo?
+        
               </h4>
                
               <p

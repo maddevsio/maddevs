@@ -1,9 +1,7 @@
 import RecommendedBlogWidget from '@/components/Blog/RecommendedBlogWidget'
-import { render, screen } from '@testing-library/vue'
+import { render } from '@testing-library/vue'
 import blogPost from '../../__mocks__/blogPost'
 import blogPostWithLongTitle from '../../__mocks__/blogPostWithLongTitle'
-
-const BLOG_POST_TEXT_LIMIT = 150
 
 describe('recommended blog widget component', () => {
   it('should render correctly with slot', () => {
@@ -24,7 +22,7 @@ describe('recommended blog widget component', () => {
   })
 
   it('render with very long title', () => {
-    render(RecommendedBlogWidget, {
+    const { container } = render(RecommendedBlogWidget, {
       mocks: {
         $prismic: {
           asText: text => text[0].text,
@@ -37,9 +35,6 @@ describe('recommended blog widget component', () => {
       stubs: ['nuxt-link'],
     })
 
-    const limitedText = blogPostWithLongTitle.data.body[0].primary.text[0].text.substr(0, BLOG_POST_TEXT_LIMIT)
-    expect(screen.getByTestId('test-blog-post').textContent).toBe(
-      `${limitedText.substr(0, limitedText.lastIndexOf(' '))}...`,
-    )
+    expect(container).toMatchSnapshot()
   })
 })

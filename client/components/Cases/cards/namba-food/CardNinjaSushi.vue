@@ -1,19 +1,32 @@
 <template>
   <div class="case_card-content">
     <div class="case_card-content_left-column">
-      <h3 :style="{ color: '#f5f7f9' }" class="case_title_h4 m-8_bottom">Mini white label</h3>
-      <TextParagraph class="case_card-content_paragraph" color="#f5f7f9">
+      <h3
+        :style="{ color: '#f5f7f9' }"
+        class="case_title_h4 m-8_bottom"
+      >
+        Mini white label
+      </h3>
+      <TextParagraph
+        class="case_card-content_paragraph"
+        color="#f5f7f9"
+      >
         After business owners submit images and prices, the Namba Food team creates a customised and branded e-commerce
         website. Updates, support and maintenance are also done by Namba Food.
       </TextParagraph>
-      <h3 :style="{ color: '#f5f7f9' }" class="case_title_h4 m-8_bottom">Full white label</h3>
+      <h3
+        :style="{ color: '#f5f7f9' }"
+        class="case_title_h4 m-8_bottom"
+      >
+        Full white label
+      </h3>
       <TextParagraph color="#f5f7f9">
         Business partners can use Namba Food’s software and business model, adjusting for their needs, scale and region.
         Namba Food is responsible for its maintenance and helps with management and marketing.
       </TextParagraph>
     </div>
     <div class="case_card-content_right-column">
-      <div class="case_card-content_macbook-frame"></div>
+      <div class="case_card-content_macbook-frame" />
       <picture>
         <source
           v-if="source"
@@ -21,7 +34,7 @@
           :srcset="[source.x1 + ' ', source.x2 + ' 2x']"
           class="case_card-content_image"
           type="image/webp"
-        />
+        >
         <img
           v-if="img"
           ref="img"
@@ -29,7 +42,7 @@
           :srcset="[img.x2 + ' 2x']"
           :alt="img.alt"
           class="case_card-content_image"
-        />
+        >
       </picture>
     </div>
   </div>

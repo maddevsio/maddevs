@@ -11,7 +11,9 @@ exports[`cardNinjaSushi renders correctly 1`] = `
       class="case_title_h4 m-8_bottom"
       style="color: rgb(245, 247, 249);"
     >
+      
       Mini white label
+    
     </h3>
      
     <p
@@ -28,7 +30,9 @@ exports[`cardNinjaSushi renders correctly 1`] = `
       class="case_title_h4 m-8_bottom"
       style="color: rgb(245, 247, 249);"
     >
+      
       Full white label
+    
     </h3>
      
     <p

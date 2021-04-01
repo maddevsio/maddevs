@@ -1,6 +1,10 @@
 <template>
   <section class="container_regular">
-    <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Phase 3: Redesign & optimisations</h2>
+    <h2
+      class="case_title_h2 m-24_bottom media-m-12_bottom"
+    >
+      Phase 3: Redesign & optimisations
+    </h2>
     <TextParagraph class="m-24_bottom media-m-12_bottom">
       To reduce traffic while re-streaming movies and TV series, Mad Devs used Nimble Streamer and Nimble Transcoder. As
       the source provided maximum quality, re-streaming of the ‘heavy’ content was overly expensive. To maintain high
@@ -25,5 +29,3 @@ export default {
   },
 }
 </script>
-
-<style></style>

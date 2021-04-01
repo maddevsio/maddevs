@@ -1,7 +1,14 @@
 <template>
   <div class="card-content">
-    <h4 class="card-content_title case_title_h4">{{ gadget.title }}</h4>
-    <div class="card-content_gadget-picture-wrapp" :class="`card-content_gadget-picture-wrapp-${gadget.fileName}-card`">
+    <h4
+      class="card-content_title case_title_h4"
+    >
+      {{ gadget.title }}
+    </h4>
+    <div
+      class="card-content_gadget-picture-wrapp"
+      :class="`card-content_gadget-picture-wrapp-${gadget.fileName}-card`"
+    >
       <Picture
         :lazy-loading="false"
         :box-shadow="false"

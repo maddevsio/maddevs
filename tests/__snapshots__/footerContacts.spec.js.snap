@@ -13,7 +13,9 @@ exports[`footer contacts renders correctly 1`] = `
       <p
         class="footer-contacts__contact-title"
       >
+        
         Text us:
+      
       </p>
        
       <a
@@ -45,7 +47,9 @@ exports[`footer contacts renders correctly 1`] = `
         <p
           class="footer-contacts__contact-title"
         >
+          
           Call us:
+        
         </p>
       </div>
        

@@ -1,6 +1,6 @@
 <template>
   <blockquote class="case_blockquote">
-    <slot></slot>
+    <slot />
   </blockquote>
 </template>
 

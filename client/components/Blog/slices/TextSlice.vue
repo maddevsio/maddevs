@@ -1,6 +1,10 @@
 <template>
   <div class="post-part single">
-    <prismic-rich-text :class="className" :field="slice.primary.text" class="textslice" />
+    <prismic-rich-text
+      :class="className"
+      :field="slice.primary.text"
+      class="textslice"
+    />
   </div>
 </template>
 

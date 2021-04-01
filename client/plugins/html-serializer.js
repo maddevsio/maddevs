@@ -45,11 +45,9 @@ export default (type, element, content, children) => {
   }
 
   if (type === Elements.paragraph || type === Elements.list || type === Elements.paragraph || type === Elements.oList) {
-    const processedChildren = children.map(child =>
-      child
-        .replace(/`([^`]*)`/g, (match, p) => `<span class="inline-code">${p}</span>`)
-        .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`),
-    )
+    const processedChildren = children.map(child => child
+      .replace(/`([^`]*)`/g, (match, p) => `<span class="inline-code">${p}</span>`)
+      .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`))
 
     let tag
     switch (type) {

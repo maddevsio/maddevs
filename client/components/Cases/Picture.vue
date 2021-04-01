@@ -8,7 +8,7 @@
       ]"
       class="image"
       type="image/webp"
-    />
+    >
     <img
       :class="{ 'box-shadow': boxShadow, 'border-radius': borderRadius, 'grey-background': backgroundColor }"
       :src="[getMediaFromS3(`/images/Cases/${pictureFolder}/${fileExtension}/${fileName}.${fileExtension}`)]"
@@ -21,10 +21,9 @@
       :height="height"
       class="image"
       @load="onImageLoad($event)"
-    />
+    >
   </picture>
 </template>
-
 
 <script>
 export default {

@@ -1,12 +1,20 @@
 <template>
   <section class="container_regular">
-    <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">Supported gadgets</h2>
+    <h2
+      class="case_title_h2 m-24_bottom media-m-12_bottom"
+    >
+      Supported gadgets
+    </h2>
     <TextParagraph class="m-48_bottom media-m-24_bottom">
       The platform is available on any device and remains equally friendly to both web and mobile users. Since 2016, the
       project has been continuously improving to provide more options for each category of viewers.
     </TextParagraph>
     <div class="m-107_bottom media-m-68_bottom case_supported-gadgets">
-      <Card v-for="(gadget, i) in supportedGadgets" :key="i" :class="`background-color-${gadget.cardColor}`">
+      <Card
+        v-for="(gadget, i) in supportedGadgets"
+        :key="i"
+        :class="`background-color-${gadget.cardColor}`"
+      >
         <CardSupportedGadgets :gadget="gadget" />
       </Card>
     </div>

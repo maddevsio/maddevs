@@ -12,7 +12,9 @@ exports[`CustomerTestimonials should render correctly 1`] = `
       <h2
         class="customer-testimonials__title"
       >
-        Customer Testimonials
+        
+      Customer Testimonials
+    
       </h2>
        
       <div

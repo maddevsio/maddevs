@@ -66,9 +66,9 @@ describe('footer form', () => {
     expect(wrapper.vm.$data.fullname && wrapper.vm.$data.email && wrapper.vm.$data.form).toBeNull()
     expect(wrapper.vm.$data.description).toEqual('')
     expect(
-      wrapper.vm.$data.agreeWithPrivacyPolicy &&
-        wrapper.vm.$data.agreeToGetMadDevsDiscountOffers &&
-        wrapper.vm.$data.isEmailSent,
+      wrapper.vm.$data.agreeWithPrivacyPolicy
+        && wrapper.vm.$data.agreeToGetMadDevsDiscountOffers
+        && wrapper.vm.$data.isEmailSent,
     ).toEqual(false)
   })
 })

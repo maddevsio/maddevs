@@ -1,23 +1,36 @@
 <template>
   <div class="case_root">
     <HeaderMain />
-    <main id="case-scroll-container" ref="main" class="case case_parallax">
+    <main
+      id="case-scroll-container"
+      ref="main"
+      class="case case_parallax"
+    >
       <div class="case_content-layer p-48_bottom media-p-24_bottom">
         <CaseHeader
           :header-logo="headerLogo"
           video-name="/videos/godee-case-main-video.mp4"
           video-fallback-path="/images/Cases/godee/jpg/godee-case-preview.jpg"
         >
-          <h1 slot="title" class="case_header-title">
-            Convenient shuttle <br />
+          <h1
+            slot="title"
+            class="case_header-title"
+          >
+            Convenient shuttle <br>
             bus service
           </h1>
-          <p slot="description" class="case_header-description">
-            Mad Devs helped GoDee with developing feature-rich software to re-invent <br />
+          <p
+            slot="description"
+            class="case_header-description"
+          >
+            Mad Devs helped GoDee with developing feature-rich software to re-invent <br>
             public mobility by building new smart ways of a daily commute.
           </p>
         </CaseHeader>
-        <div id="case-body" class="case_animation_block"></div>
+        <div
+          id="case-first-section"
+          class="case_animation_block"
+        />
         <section class="container_regular">
           <TextParagraph class="m-48_top media-m-24_top">
             GoDee is a reliable way to commute in Ho Chi Minh City, Vietnam. Its shuttle buses take express routes that
@@ -29,7 +42,9 @@
           </TextQuote>
         </section>
         <section class="container_regular">
-          <h2 class="case_title_h2 m-12_bottom">Issues and solution</h2>
+          <h2 class="case_title_h2 m-12_bottom">
+            Issues and solution
+          </h2>
           <TextParagraph>
             Transportation has become a major issue in Vietnam cities due to the rapid increase (36%) in urbanization.
             With its slow, unairconditioned, overcrowded public transport, commuters living in the suburbs were left
@@ -42,7 +57,7 @@
           <div
             class="case_parallax-image"
             :style="{ backgroundImage: `url(${getMediaFromS3('/images/Cases/godee/jpg/parallax.jpg')})` }"
-          ></div>
+          />
         </div>
       </div>
       <div class="case_content-layer p-48_top media-p-24_top">
@@ -61,10 +76,12 @@
             src="https://www.youtube.com/embed/_XCRbXmTUwI"
             frameborder="0"
             allowfullscreen
-          ></iframe>
+          />
         </section>
         <section class="container_regular m-48_bottom">
-          <h2 class="case_title_h2 m-12_bottom">Mad Devs & GoDee collaboration</h2>
+          <h2 class="case_title_h2 m-12_bottom">
+            Mad Devs & GoDee collaboration
+          </h2>
           <TextParagraph>
             Mad Devs consulted with GoDee in the project’s early stages to assist with the technology stack choice and
             step-by-step planning. Then, several of our positively mad developers worked on GoDee’s smart urban bus
@@ -72,11 +89,18 @@
           </TextParagraph>
         </section>
         <section class="container_regular">
-          <h3 class="case_title_h3 m-12_bottom">Minimum viable product MVP</h3>
+          <h3 class="case_title_h3 m-12_bottom">
+            Minimum viable product MVP
+          </h3>
           <TextParagraph class="m-24_bottom media-m-12_bottom">
             Before investing a considerable amount of money in building software, hiring personnel and acquiring
             minibuses, GoDee wanted to
-            <nuxt-link :to="`/services#software-development`" class="case_link">develop an MVP</nuxt-link> to understand
+            <nuxt-link
+              :to="`/services#software-development`"
+              class="case_link"
+            >
+              develop an MVP
+            </nuxt-link> to understand
             the market fit potential.
           </TextParagraph>
           <TextParagraph class="m-24_bottom">
@@ -86,7 +110,10 @@
           </TextParagraph>
           <div class="case_minimum-viable-product-cards">
             <Card class="background-color-silver">
-              <CardGoDeeFeature title="Live chat feature" icon-name="live-chat">
+              <CardGoDeeFeature
+                title="Live chat feature"
+                icon-name="live-chat"
+              >
                 <TextParagraph>
                   Over the time period of three months, our integrated live chat feature collected extensive feedback
                   from users to make white-collar workers’ commutes easier.
@@ -94,7 +121,10 @@
               </CardGoDeeFeature>
             </Card>
             <Card class="background-color-silver">
-              <CardGoDeeFeature title="Trip request" icon-name="trip-request">
+              <CardGoDeeFeature
+                title="Trip request"
+                icon-name="trip-request"
+              >
                 <TextParagraph>
                   This feature enabled GoDee to analyse the actual demand for travel to various Ho Chi Minh City
                   districts.
@@ -104,7 +134,9 @@
           </div>
         </section>
         <section class="container_full case_before-after-wrapper background-color-silver m-48_top media-m-20_top">
-          <h2 class="case_title_h2 m-24_bottom case_text-align-center">Before & After</h2>
+          <h2 class="case_title_h2 m-24_bottom case_text-align-center">
+            Before & After
+          </h2>
           <div class="container_regular">
             <UIBeforeAfterImage
               :base-width="'1000'"
@@ -118,14 +150,29 @@
         <p class="case_image-description m-12_top m-104_bottom media-m-48_bottom">
           GoDee 2018 VS. GoDee {{ currentYear }}
         </p>
-        <section ref="cardsRootElem" class="container_regular">
-          <h3 ref="developmentGoalsTitle" class="case_title_h2 m-24_bottom case_text-align-center">
+        <section
+          ref="cardsRootElem"
+          class="container_regular"
+        >
+          <h3
+            ref="developmentGoalsTitle"
+            class="case_title_h2 m-24_bottom case_text-align-center"
+          >
             Development goals
           </h3>
-          <div ref="cardsContainer" class="case_development-goals p-96_bottom media-p-48_bottom">
-            <div ref="cardsLeftColumn" class="case_development-goals-left-column">
+          <div
+            ref="cardsContainer"
+            class="case_development-goals p-96_bottom media-p-48_bottom"
+          >
+            <div
+              ref="cardsLeftColumn"
+              class="case_development-goals-left-column"
+            >
               <Card class="background-color-silver">
-                <CardGoDeeFeature title="GPS" icon-name="gps">
+                <CardGoDeeFeature
+                  title="GPS"
+                  icon-name="gps"
+                >
                   <TextParagraph>
                     We use GPS data to track buses, and we have developed an algorithm that predicts bus travel/arrival
                     time using a geocoding service that also calculates delays related to traffic jams and their
@@ -136,7 +183,10 @@
                 </CardGoDeeFeature>
               </Card>
               <Card class="background-color-silver">
-                <CardGoDeeFeature title="Payment method" icon-name="payment-method">
+                <CardGoDeeFeature
+                  title="Payment method"
+                  icon-name="payment-method"
+                >
                   <TextParagraph class="m-24_bottom media-m-12_bottom">
                     Cashless payments are becoming more popular in Vietnam, so we have integrated Stripe service into
                     GoDee, enabling passengers to pay with credit cards easily and quickly.
@@ -148,9 +198,15 @@
                 </CardGoDeeFeature>
               </Card>
             </div>
-            <div ref="cardsRightColumn" class="case_development-goals-right-column">
+            <div
+              ref="cardsRightColumn"
+              class="case_development-goals-right-column"
+            >
               <Card class="background-color-silver">
-                <CardGoDeeFeature title="Online time-tables & live location tracking" icon-name="live-location-tacking">
+                <CardGoDeeFeature
+                  title="Online time-tables & live location tracking"
+                  icon-name="live-location-tacking"
+                >
                   <TextParagraph>
                     To help make the GoDee app easier to use, we created a system that tracks bus locations in real
                     time. This means that every user can book a seat as their bus approaches their location.
@@ -158,7 +214,10 @@
                 </CardGoDeeFeature>
               </Card>
               <Card class="background-color-silver">
-                <CardGoDeeFeature title="Referrals" icon-name="referrals">
+                <CardGoDeeFeature
+                  title="Referrals"
+                  icon-name="referrals"
+                >
                   <TextParagraph>
                     To add to the commuter experience, inside the shuttle bus application, users can share referrals and
                     get free rides as bonuses. After receiving a referral code from a referrer, the user can input the
@@ -168,7 +227,10 @@
                 </CardGoDeeFeature>
               </Card>
               <Card class="background-color-silver">
-                <CardGoDeeFeature title="The best possible routes" icon-name="possible-routes">
+                <CardGoDeeFeature
+                  title="The best possible routes"
+                  icon-name="possible-routes"
+                >
                   <TextParagraph>
                     Depending on passengers’ requests, the system allows drivers to construct the best possible routes
                     automatically. If there are no orders from passengers, drivers will skip stops along the route.
@@ -234,7 +296,9 @@
           </div>
         </section>
         <section class="container_regular">
-          <h3 class="case_title_h2 m-96_top media-m-48_top m-12_bottom">Intelligent management panel</h3>
+          <h3 class="case_title_h2 m-96_top media-m-48_top m-12_bottom">
+            Intelligent management panel
+          </h3>
           <TextParagraph>
             GoDee's rapid growth since its early stages required easy-to-scale business processes and automated route
             management. Although, in theory, everything can be done with an army of sales representatives and route
@@ -244,7 +308,9 @@
             One manager and one customer support representative can manage more than ~2500 trip requests per month and
             ~25,000 passengers per month.
           </TextQuoteBox>
-          <h3 class="case_title_h3 m-12_bottom">Smart route planning</h3>
+          <h3 class="case_title_h3 m-12_bottom">
+            Smart route planning
+          </h3>
           <TextParagraph class="case_paragraph--bold">
             How can we create profitable yet convenient user routes?
           </TextParagraph>
@@ -286,7 +352,10 @@
           </div>
           <CardGoDeePrimsAlgorithm class="m-48_bottom media-m-24_bottom" />
           <div class="case_html-video-wrapper m-48_top media-m-24_top m-60_bottom media-m-24_bottom case_box-shadow">
-            <div v-if="isIphone" class="case_video-flex-wrapper">
+            <div
+              v-if="isIphone"
+              class="case_video-flex-wrapper"
+            >
               <Picture
                 :box-shadow="false"
                 :lazy-loading="true"
@@ -306,9 +375,12 @@
                 loading="lazy"
                 width="1028"
                 height="483.81"
-              />
+              >
             </div>
-            <div v-else class="case_video-flex-wrapper">
+            <div
+              v-else
+              class="case_video-flex-wrapper"
+            >
               <Picture
                 :box-shadow="false"
                 :lazy-loading="true"
@@ -329,14 +401,19 @@
                 loop="true"
                 muted="true"
               >
-                <source :src="getMediaFromS3('/videos/map-stops.mp4')" type="video/mp4" />
+                <source
+                  :src="getMediaFromS3('/videos/map-stops.mp4')"
+                  type="video/mp4"
+                >
                 Your browser does not support the video tag.
               </video>
             </div>
           </div>
         </section>
         <section class="container_regular">
-          <h3 class="case_title_h3 m-12_bottom">Trips Monitor</h3>
+          <h3 class="case_title_h3 m-12_bottom">
+            Trips Monitor
+          </h3>
           <TextParagraph>
             The Trips Monitor feature enables operators to track every bus in real time and collect data on late or
             early arrivals. More importantly, the operator can contact drivers or passengers quickly if necessary.
@@ -344,7 +421,10 @@
         </section>
         <section class="container_middle m-48_top media-m-24_top m-48_bottom media-m-24_bottom">
           <div class="case_html-video-wrapper case_box-shadow">
-            <div v-if="isIphone" class="case_video-flex-wrapper">
+            <div
+              v-if="isIphone"
+              class="case_video-flex-wrapper"
+            >
               <Picture
                 :box-shadow="false"
                 :lazy-loading="true"
@@ -364,9 +444,12 @@
                 loading="lazy"
                 width="1028"
                 height="483.81"
-              />
+              >
             </div>
-            <div v-else class="case_video-flex-wrapper">
+            <div
+              v-else
+              class="case_video-flex-wrapper"
+            >
               <Picture
                 :box-shadow="false"
                 :lazy-loading="true"
@@ -379,8 +462,18 @@
                 file-extension="jpg"
                 alt="GoDee: Safari Browser Top Bar White."
               />
-              <video id="trip-monitor" class="case_html-video" width="100%" height="100%" loop="true" muted="true">
-                <source :src="getMediaFromS3('/videos/trip-monitor.f4a33e6.mp4')" type="video/mp4" />
+              <video
+                id="trip-monitor"
+                class="case_html-video"
+                width="100%"
+                height="100%"
+                loop="true"
+                muted="true"
+              >
+                <source
+                  :src="getMediaFromS3('/videos/trip-monitor.f4a33e6.mp4')"
+                  type="video/mp4"
+                >
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -400,11 +493,16 @@
             <ListNumberedItemBox> Number of passengers assigned to each stop and driver </ListNumberedItemBox>
             <ListNumberedItemBox> Historical information through filters </ListNumberedItemBox>
           </ListNumberedBox>
-          <h3 class="case_title_h3">Route optimization</h3>
+          <h3 class="case_title_h3">
+            Route optimization
+          </h3>
         </section>
         <section class="container_middle m-24_top media-m-12_top m-48_bottom media-m-24_bottom">
           <div class="case_html-video-wrapper case_box-shadow">
-            <div v-if="isIphone" class="case_video-flex-wrapper">
+            <div
+              v-if="isIphone"
+              class="case_video-flex-wrapper"
+            >
               <Picture
                 :box-shadow="false"
                 :lazy-loading="true"
@@ -424,9 +522,12 @@
                 loading="lazy"
                 width="1028"
                 height="483.81"
-              />
+              >
             </div>
-            <div v-else class="case_video-flex-wrapper">
+            <div
+              v-else
+              class="case_video-flex-wrapper"
+            >
               <Picture
                 :box-shadow="false"
                 :lazy-loading="true"
@@ -447,7 +548,10 @@
                 loop="true"
                 muted="true"
               >
-                <source :src="getMediaFromS3('/videos/route-optimization.f5a2ff0.mp4')" type="video/mp4" />
+                <source
+                  :src="getMediaFromS3('/videos/route-optimization.f5a2ff0.mp4')"
+                  type="video/mp4"
+                >
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -460,14 +564,12 @@
             one click.
           </TextParagraph>
           <TextQuoteBox class="m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto">
-            <span class="case_text-quote-break m-24_bottom media-m-12_bottom"
-              >Examples of early and late departure times:</span
-            >
             <span
-              >If Pifia determines that a minibus is usually late due to increased traffic at 5:35 pm and not 5:30 pm,
+              class="case_text-quote-break m-24_bottom media-m-12_bottom"
+            >Examples of early and late departure times:</span>
+            <span>If Pifia determines that a minibus is usually late due to increased traffic at 5:35 pm and not 5:30 pm,
               it alerts the route manager to shift the arrival time to 5:35 pm. Five minutes might sound minor, but
-              these small optimizations add up.</span
-            >
+              these small optimizations add up.</span>
           </TextQuoteBox>
         </section>
         <section
@@ -475,15 +577,25 @@
         >
           <section class="container_regular case_real-time-eta">
             <div class="case_real-time-eta-text-content">
-              <h2 class="case_title_h2 m-24_bottom media-m-8_bottom case_real-time-eta-title">Real-time ETA</h2>
-              <TextParagraph class="m-24_bottom media-m-12_bottom" color="#a0a0a1">
+              <h2 class="case_title_h2 m-24_bottom media-m-8_bottom case_real-time-eta-title">
+                Real-time ETA
+              </h2>
+              <TextParagraph
+                class="m-24_bottom media-m-12_bottom"
+                color="#a0a0a1"
+              >
                 In addition, Pifia shows in real time the approximate late/early departures.
               </TextParagraph>
-              <TextParagraph class="m-24_bottom media-m-12_bottom" color="#a0a0a1">
+              <TextParagraph
+                class="m-24_bottom media-m-12_bottom"
+                color="#a0a0a1"
+              >
                 Thus passengers who are waiting for the ride always know whether the bus is coming late and how long it
                 will take.
               </TextParagraph>
-              <TextParagraph color="#a0a0a1"> The information is displayed on their mobile application. </TextParagraph>
+              <TextParagraph color="#a0a0a1">
+                The information is displayed on their mobile application.
+              </TextParagraph>
             </div>
             <div class="case_phone-wrapper-eta-section">
               <Picture
@@ -504,7 +616,9 @@
           class="container_full case_infrastructure-scheme-wrapper background-color-silver m-48_bottom media-m-24_bottom"
         >
           <section class="container_middle">
-            <h2 class="case_title_h2 m-24_bottom case_text-align-center">Infrastructure scheme</h2>
+            <h2 class="case_title_h2 m-24_bottom case_text-align-center">
+              Infrastructure scheme
+            </h2>
             <img
               :src="getMediaFromS3('/images/Cases/godee/gif/infrastructure-scheme.gif')"
               class="case_gif case_infrastructure-scheme-gif"
@@ -512,7 +626,7 @@
               loading="lazy"
               width="645"
               height="774.92"
-            />
+            >
           </section>
         </section>
         <section class="container_regular">
@@ -529,7 +643,9 @@
             which is connected to the PostgreSQL database, OSRM, Firebase and push notification services. We use Docker
             containers throughout the development process.
           </TextParagraph>
-          <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">Technology stack</h3>
+          <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">
+            Technology stack
+          </h3>
           <ListTechnologies class="m-96_bottom media-m-48_bottom case_list-technologies-godee">
             <ListTechnologiesItem
               v-for="(technologiesItem, i) in technologiesList"
@@ -540,7 +656,9 @@
           </ListTechnologies>
         </section>
         <section class="container_regular">
-          <h2 class="case_title_h2 m-12_bottom">Monitoring</h2>
+          <h2 class="case_title_h2 m-12_bottom">
+            Monitoring
+          </h2>
           <TextParagraph class="m-48_bottom media-m-12_bottom">
             <!-- Выставить оступы на мобиле -->
             We believe that every production system requires proper monitoring. For this purpose, we use the Datadog
@@ -564,7 +682,9 @@
           />
         </section>
         <section class="container_regular">
-          <h2 class="case_title_h2 m-12_bottom">Stable & Scalable solution</h2>
+          <h2 class="case_title_h2 m-12_bottom">
+            Stable & Scalable solution
+          </h2>
           <TextParagraph class="m-24_bottom media-m-12_bottom">
             Transportation and logistics software has zero tolerance to downtime. Imagine hundreds of passengers not
             being able to book their tickets, drivers not knowing where to pick up/drop off passengers or operators
@@ -577,7 +697,9 @@
             economies of scale. Thus, increased demand from Ho Chi Minh citizens is backed up by GoDee's unchanging low
             cost for infrastructure.
           </TextParagraph>
-          <h2 class="case_title_h2 m-12_bottom">Impact</h2>
+          <h2 class="case_title_h2 m-12_bottom">
+            Impact
+          </h2>
           <TextParagraph class="m-24_bottom">
             GoDee faced the challenge of changing people’s habits. To grow the user base, we needed to create an
             extremely helpful and hassle-free solution that offers an alternative to expensive taxis and inconvenient
@@ -588,7 +710,9 @@
           </Card>
         </section>
         <section class="container_regular m-72_bottom media-m-48_bottom">
-          <h2 class="case_title_h2 m-48_bottom media-m-24_bottom">Meet the team</h2>
+          <h2 class="case_title_h2 m-48_bottom media-m-24_bottom">
+            Meet the team
+          </h2>
           <ListTeam class="m-72_bottom media-m-48_bottom">
             <ListTeamItem
               v-for="(teamMember, i) in team"
@@ -617,10 +741,16 @@
           </TextQuoteAuthor>
         </section>
       </div>
-      <Footer link="/case-studies/namba-food/" class-name="godee-case">
-        <div slot="icon" class="case_logotype"></div>
-        Namba Food <br />
-        Top Delivery Service in <br class="case_mobile-screen-break" />
+      <Footer
+        link="/case-studies/namba-food/"
+        class-name="godee-case"
+      >
+        <div
+          slot="icon"
+          class="case_logotype"
+        />
+        Namba Food <br>
+        Top Delivery Service in <br class="case_mobile-screen-break">
         Central Asia
       </Footer>
       <!-- Добавил главный футер сайта, так как из-за того что скролл на странице находиться у элемента .main, нельзя доскроллить фо футера -->
@@ -956,16 +1086,16 @@ export default {
   methods: {
     handleScrollDown() {
       const leftColumnOffsetBottom = Math.abs(
-        this.$refs.cardsLeftColumn.getBoundingClientRect().bottom -
-          this.$refs.cardsRootElem.getBoundingClientRect().bottom,
+        this.$refs.cardsLeftColumn.getBoundingClientRect().bottom
+          - this.$refs.cardsRootElem.getBoundingClientRect().bottom,
       ) // Получаем расстояние снизу отностильно родителя и переводим число в положительное
       const rightColumnOffsetBottom = Math.abs(
-        this.$refs.cardsRightColumn.getBoundingClientRect().bottom -
-          this.$refs.cardsRootElem.getBoundingClientRect().bottom,
+        this.$refs.cardsRightColumn.getBoundingClientRect().bottom
+          - this.$refs.cardsRootElem.getBoundingClientRect().bottom,
       )
       if (
-        this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight < 0 &&
-        leftColumnOffsetBottom > rightColumnOffsetBottom // Стратуем скрипт когда секция в зоне видимости и останавливаем когда левая и правая колонка выравниваються с друг другом по оси z
+        this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight < 0
+        && leftColumnOffsetBottom > rightColumnOffsetBottom // Стратуем скрипт когда секция в зоне видимости и останавливаем когда левая и правая колонка выравниваються с друг другом по оси z
       ) {
         this.$refs.cardsRightColumn.style.transform = `translateY(${
           (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed
@@ -974,11 +1104,10 @@ export default {
           (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed
         }px)`
         this.translateY = (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed // Сохраняем текщее свойство transform для дальнейшего расчета в функции handleScrollUp()
-        this.newHeight =
-          this.cardsContainerHeight -
-          Math.abs(
-            (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed -
-              this.paddingBottom,
+        this.newHeight = this.cardsContainerHeight
+          - Math.abs(
+            (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed
+              - this.paddingBottom,
           )
         this.$refs.cardsContainer.style.height = `${this.newHeight}px`
       }
@@ -986,8 +1115,9 @@ export default {
 
     handleScrollUp() {
       if (
-        this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight <= 0 && // Останавливаем скрипт когда контейнер достигает верха страницы чтобы правая колонка больше не смещалась и заняла свое изначальное положение
-        (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed > this.translateY // Данное сравнение нужно для того чтобы избежать рывков карточек при скролле вверх, скрипт запускается в случае если текущий отступ контейнера карточек равен числу в переменной translateY
+        this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight <= 0 // Останавливаем скрипт когда контейнер достигает верха страницы чтобы правая колонка больше не смещалась и заняла свое изначальное положение
+        // eslint-disable-next-line
+        && (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed > this.translateY // Данное сравнение нужно для того чтобы избежать рывков карточек при скролле вверх, скрипт запускается в случае если текущий отступ контейнера карточек равен числу в переменной translateY
       ) {
         this.$refs.cardsRightColumn.style.transform = `translateY(${
           (this.$refs.cardsRootElem.getBoundingClientRect().top - this.headerHeight) / this.scrollSpeed

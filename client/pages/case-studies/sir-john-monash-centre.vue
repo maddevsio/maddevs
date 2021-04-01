@@ -2,25 +2,39 @@
   <main class="main case">
     <CaseHeader
       :header-logo="headerLogo"
-      video-name="/videos/sjmc/sjmc-main-video.b35a387.mp4"
+      video-name="sjmc/sjmc-main-video.b35a387.mp4"
       video-fallback-path="/images/Cases/sjmc/jpg/sjmc-main-video-preview.jpg"
     >
-      <h1 slot="title" class="case_header-title">
-        Sir John Monash <br />
+      <h1
+        slot="title"
+        class="case_header-title"
+      >
+        Sir John Monash <br>
         Centre
       </h1>
-      <p slot="description" class="case_header-description">
-        The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front <br />
+      <p
+        slot="description"
+        class="case_header-description"
+      >
+        The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front <br>
         during the First World War in the words of those who served.
       </p>
-      <button slot="actions" class="case_play-button" type="button" @click="openFullscreen()">
-        <div class="case_play-icon"></div>
+      <button
+        slot="actions"
+        class="case_play-button"
+        type="button"
+        @click="openFullscreen()"
+      >
+        <div class="case_play-icon" />
         View video about SJMC
       </button>
     </CaseHeader>
     <SJMCVideo />
     <section class="case_body">
-      <div id="case-body" class="case_animation_block"></div>
+      <div
+        id="case-first-section"
+        class="case_animation_block"
+      />
       <section class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom">
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front during the First World War in
@@ -42,7 +56,9 @@
         </TextQuote>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-12_bottom">The SJMC and Mad Devs partnership</h2>
+        <h2 class="case_title_h2 m-12_bottom">
+          The SJMC and Mad Devs partnership
+        </h2>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           The SJMC opened to the public on April 16th, 2018. The entire centre, including its half-sunken building and
           cutting-edge new technology, was developed and deployed by an Australian-based IT vendor. The SJMC and Mad
@@ -50,7 +66,12 @@
         </TextParagraph>
         <TextParagraph>
           After conducting an
-          <nuxt-link :to="`/services#it-consulting`" class="case_link">independent audit</nuxt-link> of a previous IT
+          <nuxt-link
+            :to="`/services#it-consulting`"
+            class="case_link"
+          >
+            independent audit
+          </nuxt-link> of a previous IT
           vendor, a list of technical debt was formed.
         </TextParagraph>
         <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top">
@@ -68,18 +89,29 @@
         />
       </section>
       <section class="container_regular">
-        <h3 class="case_title_h3 m-48_top m-12_bottom">The challenges</h3>
+        <h3 class="case_title_h3 m-48_top m-12_bottom">
+          The challenges
+        </h3>
         <List>
-          <ListHyphenItemBox v-for="(text, i) in theChallenges" :key="i">{{ text }}</ListHyphenItemBox>
+          <ListHyphenItemBox
+            v-for="(text, i) in theChallenges"
+            :key="i"
+          >
+            {{ text }}
+          </ListHyphenItemBox>
         </List>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-96_top media-m-48_top m-12_bottom">The SJMC Software</h2>
+        <h2 class="case_title_h2 m-96_top media-m-48_top m-12_bottom">
+          The SJMC Software
+        </h2>
         <TextParagraph class="m-48_bottom">
           Transferring a project to another software partner is never easy for all parties involved. So, let us
           introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.
         </TextParagraph>
-        <h3 class="case_title_h3 m-12_bottom">Multimedia Management IT Brain</h3>
+        <h3 class="case_title_h3 m-12_bottom">
+          Multimedia Management IT Brain
+        </h3>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Personalised experience at your own speed and in your own language
         </TextParagraph>
@@ -120,10 +152,10 @@
           functions the MMIT Brain performs.
         </TextParagraph>
         <List class="m-56_bottom media-m-32_bottom">
-          <ListItemDot
-            >Delivers content to mobile applications and synchronises subtitles and audio on multimedia screens in 3
-            languages (German, English, and French).</ListItemDot
-          >
+          <ListItemDot>
+            Delivers content to mobile applications and synchronises subtitles and audio on multimedia screens in 3
+            languages (German, English, and French).
+          </ListItemDot>
           <ListItemDot>Orchestrates the experience of multiple SJMC visitors to avoid interference.</ListItemDot>
           <ListItemDot>Performs interaction between two internal information systems.</ListItemDot>
           <ListItemDot>Enables content managers to deploy and modify new content.</ListItemDot>
@@ -139,7 +171,9 @@
         />
       </section> -->
       <section class="container_regular">
-        <h2 class="case_title_h2 m-104_top media-m-48_top m-12_bottom">Mobile applications</h2>
+        <h2 class="case_title_h2 m-104_top media-m-48_top m-12_bottom">
+          Mobile applications
+        </h2>
         <TextParagraph class="m-48_bottom">
           The world-class BYOD technology solution ensures that visitors are immersed in soldiers' personal histories.
         </TextParagraph>
@@ -183,10 +217,14 @@
           file-extension="jpg"
           alt="Sir Jonh Monash Centre Map."
         />
-        <p class="case_image-description m-8_top">Sir Jonh Monash Centre Site</p>
+        <p class="case_image-description m-8_top">
+          Sir Jonh Monash Centre Site
+        </p>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-56_top media-m-48_top m-12_bottom">SJMC Hardware</h2>
+        <h2 class="case_title_h2 m-56_top media-m-48_top m-12_bottom">
+          SJMC Hardware
+        </h2>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Hundreds of pieces of equipment are master-mindedly organised to transform content stored in audio, video, and
           subtitles format to interactive monitors that are run on multiple servers.
@@ -202,7 +240,9 @@
         />
       </section>
       <section class="container_regular">
-        <h3 class="case_title_h3 m-48_top m-12_bottom">WATCHOUT</h3>
+        <h3 class="case_title_h3 m-48_top m-12_bottom">
+          WATCHOUT
+        </h3>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           WATCHOUT is a multi-display production and presentation system that enables the SJMC to arrange displays in
           unusual ways and create seamless images and videos. The absence of gaps between display surfaces is possible
@@ -216,11 +256,13 @@
             :src="getMediaFromS3('/images/Cases/sjmc/gif/watchpax.gif')"
             class="case_gif"
             alt="WATCHOUT - Multi-Display Production and Presentation Software."
-          />
+          >
         </section>
       </section>
       <section class="container_regular">
-        <h3 class="case_title_h3 m-96_top media-m-48_top m-12_bottom">BRIX</h3>
+        <h3 class="case_title_h3 m-96_top media-m-48_top m-12_bottom">
+          BRIX
+        </h3>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Essentially, BRIX is an ultra-compact multimedia computer that can be hung on a wall. The advanced graphics
           card delivers heavy content to multiple monitors simultaneously. Moreover, each BRIX is managed by the MMIT
@@ -233,11 +275,13 @@
             :src="getMediaFromS3('/images/Cases/sjmc/gif/brix.gif')"
             class="case_gif"
             alt="Ultra-Compact Multimedia Computer - BRIX."
-          />
+          >
         </section>
       </section>
       <section class="container_regular">
-        <h3 class="case_title_h3 m-96_top media-m-48_top m-12_bottom">Bluetooth beacons</h3>
+        <h3 class="case_title_h3 m-96_top media-m-48_top m-12_bottom">
+          Bluetooth beacons
+        </h3>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           The mobile application’s positioning algorithm collects the location data of each user via 150 Bluetooth
           beacons located all over the centre.
@@ -253,20 +297,18 @@
           class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video"
           @click="videoSetState"
         >
-          <!-- Video fallback -->
-          <div
-            class="case_sjmc-phone-video-wrapper_fallback"
-            :style="{
-              backgroundImage: `url(${getMediaFromS3(
-                '/images/Cases/sjmc/png/bluetooth-beacons-video-background.png',
-              )})`,
-            }"
-          ></div>
-          <!-- End video fallback -->
-          <video ref="video" width="100%" height="100%" playsinline>
-            <source :src="getMediaFromS3('/videos/bluetooth-beacons-video.9ca649c.mp4')" type="video/mp4" />
+          <video
+            ref="video"
+            width="100%"
+            height="100%"
+            playsinline
+          >
+            <source
+              :src="getMediaFromS3('/videos/bluetooth-beacons-video.9ca649c.mp4')"
+              type="video/mp4"
+            >
             Your browser does not support the video tag.
-            <img :src="getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')" />
+            <img :src="getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')">
           </video>
         </div>
       </section>
@@ -278,11 +320,15 @@
       <section class="container_regular m-56_top media-m-24_top m-96_bottom media-m-72_bottom">
         <div class="case_column-container">
           <div class="case_column-item">
-            <h4 class="case_title_h4 m-8_bottom media-m-2_bottom">60,000 visitors</h4>
+            <h4 class="case_title_h4 m-8_bottom media-m-2_bottom">
+              60,000 visitors
+            </h4>
             <TextParagraph> On an annual basis move throughout the centre. </TextParagraph>
           </div>
           <div class="case_column-item">
-            <h4 class="case_title_h4 m-8_bottom media-m-2_bottom">150 Bluetooth beacons</h4>
+            <h4 class="case_title_h4 m-8_bottom media-m-2_bottom">
+              150 Bluetooth beacons
+            </h4>
             <TextParagraph>
               Determine the location of each smartphone to deliver the right content at the right time.
             </TextParagraph>
@@ -290,13 +336,20 @@
         </div>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-48_bottom media-m-24_bottom">Key goals for Mad Devs</h2>
+        <h2 class="case_title_h2 m-48_bottom media-m-24_bottom">
+          Key goals for Mad Devs
+        </h2>
         <List class="m-96_bottom media-m-48_bottom">
-          <ListItemBoxCheckMark v-for="(text, i) in keyGoalsList" :key="i">
+          <ListItemBoxCheckMark
+            v-for="(text, i) in keyGoalsList"
+            :key="i"
+          >
             {{ text }}
           </ListItemBoxCheckMark>
         </List>
-        <h3 class="case_title_h3 m-48_bottom media-m-24_bottom">Technology stack</h3>
+        <h3 class="case_title_h3 m-48_bottom media-m-24_bottom">
+          Technology stack
+        </h3>
         <ListTechnologies class="m-107_bottom media-m-48_bottom">
           <ListTechnologiesItem
             v-for="(technologiesItem, i) in technologiesList"
@@ -305,7 +358,9 @@
             :class-name="technologiesItem.className"
           />
         </ListTechnologies>
-        <h3 class="case_title_h3 m-12_bottom">Custom small-scale version of the SJMC in Mad Devs’ office</h3>
+        <h3 class="case_title_h3 m-12_bottom">
+          Custom small-scale version of the SJMC in Mad Devs’ office
+        </h3>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           As thousands of kilometres separate the SJMC and Mad Devs’ office, a unique approach to the engineering
           partnership was required.
@@ -318,10 +373,16 @@
         </TextParagraph>
       </section>
       <section class="container_full case_full-screen-slider">
-        <Swiper :components="swiperOfficeTeam" :safari-top-bar="false" :box-shadow="false" />
+        <Swiper
+          :components="swiperOfficeTeam"
+          :safari-top-bar="false"
+          :box-shadow="false"
+        />
       </section>
       <section class="container_regular">
-        <h3 class="case_title_h3 m-78_top media-m-48_top m-12_bottom">Technical debt</h3>
+        <h3 class="case_title_h3 m-78_top media-m-48_top m-12_bottom">
+          Technical debt
+        </h3>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           Although the previous vendors have developed incredible software, an independent organisation prepared a
           detailed audit and evaluated deficiencies or areas of improvement.
@@ -331,7 +392,9 @@
           themselves into the full comprehensiveness of the Brain solution to be able to improve it. It took our team a
           month of onboarding and reading documentation before we could fix even a minor issue.
         </TextParagraph>
-        <h3 class="case_title_h3 m-12_bottom">Code refactoring and optimization</h3>
+        <h3 class="case_title_h3 m-12_bottom">
+          Code refactoring and optimization
+        </h3>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           Refactoring the SJMC code and covering it with the unit and integration tests improved the stability and
           usability of both mobile applications and the MMIT Brain.
@@ -342,7 +405,9 @@
           defects and optimising applications to support the latest mobile operating systems, Mad Devs’ engineers
           successfully finished the technical debt on time and planned the deployment of the changes on site.
         </TextParagraph>
-        <h3 class="case_title_h3 m-12_bottom">Analytics and user-friendly reports</h3>
+        <h3 class="case_title_h3 m-12_bottom">
+          Analytics and user-friendly reports
+        </h3>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Extensive SJMC data gathered from the Multimedia IT System is organised into user-friendly reports by an
           Analytics feature. Such reports enabled the Centre’s managers to easily track performance and report directly
@@ -368,19 +433,21 @@
           <ListItemDot>Number of school groups</ListItemDot>
           <ListItemDot>Number of students</ListItemDot>
           <ListItemDot>Average visit time – i.e. time detected on-site</ListItemDot>
-          <ListItemDot
-            >The average length of time of the SJMC Experience – i.e. time between connections to first and last
-            site</ListItemDot
-          >
-          <ListItemDot
-            >Popular stands, by analysing the longevity of visitors listening to/watching/interacting with
-            content</ListItemDot
-          >
+          <ListItemDot>
+            The average length of time of the SJMC Experience – i.e. time between connections to first and last
+            site
+          </ListItemDot>
+          <ListItemDot>
+            Popular stands, by analysing the longevity of visitors listening to/watching/interacting with
+            content
+          </ListItemDot>
           <ListItemDot>Average time visitors spend in each SJMC zone</ListItemDot>
         </List>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-12_bottom">SJMC System monitoring</h2>
+        <h2 class="case_title_h2 m-12_bottom">
+          SJMC System monitoring
+        </h2>
         <TextParagraph>
           System monitoring is a proactive method to improve the quality of SJMC software and hardware by gathering data
           from 6 servers and 100+ BRIX multimedia computers highlighting areas that might need Mad Devs’ engineers'
@@ -389,7 +456,9 @@
         <TextQuote class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom">
           Sophisticated system monitoring is the fight life of defence against downtime.
         </TextQuote>
-        <h3 class="case_title_h3 m-12_bottom">Grafana + Prometheus</h3>
+        <h3 class="case_title_h3 m-12_bottom">
+          Grafana + Prometheus
+        </h3>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           To achieve maximum observability of the SJMC hardware Grafana was used to build all the graphs for the current
           state. It enables the Mad Devs team to configure the reports and alerts if any of the system components fail
@@ -410,7 +479,9 @@
           Prometheus acts as the storage backend and exposes a wide variety of metrics gathered from 6 servers while
           Grafana acts as a visualisation layer and works as the interface for analysis and visualisation.
         </TextParagraph>
-        <h3 class="case_title_h3 m-12_bottom">Elasticsearch+Kibana+<br class="case_mobile-break" />Logstash</h3>
+        <h3 class="case_title_h3 m-12_bottom">
+          Elasticsearch+Kibana+<br class="case_mobile-break">Logstash
+        </h3>
         <TextParagraph class="m-48_bottom media-m-24_bottom">
           Logstash ingests, transforms, and ships SJMC logging data from 100+ BRIX (multimedia computers). Before
           unstructured logging data was scattered across hundreds of folders and was not properly monitored, which
@@ -434,12 +505,16 @@
           Kibana pulls up logged data and creates user-friendly visualizations with charts, graphs, heatmaps, and more.
           It is easy to understand solutions to manage SJMC hardware in a single dashboard.
         </TextParagraph>
-        <h3 class="case_title_h3 m-12_bottom">Continuous integration and delivery (CI/CD)</h3>
+        <h3 class="case_title_h3 m-12_bottom">
+          Continuous integration and delivery (CI/CD)
+        </h3>
         <TextParagraph class="m-72_bottom media-m-48_bottom">
           CI/CD shortens the feedback cycle and allows Mad Devs’ engineers to minimise risks and increase productivity
           by configuring CI/CD for autotest running and automatic deployment.
         </TextParagraph>
-        <h3 class="case_title_h3 m-12_bottom">Sentry</h3>
+        <h3 class="case_title_h3 m-12_bottom">
+          Sentry
+        </h3>
         <TextParagraph class="m-96_bottom media-m-72_bottom">
           Integration of Sentry provides the Mad Devs team with automated error tracking and shows us every fault that
           happens with the SJMC MMIT Brain by organising its logs. Sentry enables the Mad Devs team to identify,
@@ -455,16 +530,18 @@
         </TextParagraph>
         <List class="m-32_bottom">
           <ListItemDot>The synchronisation of two internal information systems.</ListItemDot>
-          <ListItemDot
-            >End to end testing to ensure seamless user experience for thousands of SJMC visitors.</ListItemDot
-          >
+          <ListItemDot>
+            End to end testing to ensure seamless user experience for thousands of SJMC visitors.
+          </ListItemDot>
         </List>
         <TextParagraph class="m-72_bottom media-m-48_bottom">
           Testing the accuracy of new content and feature deployment is a challenge due to the 5000 km distance that
           separate Mad Devs’ office and the SJMC. Thus, our back-end developers developed two types of emulation
           software that enables Mad Devs to test the MMIT Brain without accumulating additional travel expenses.
         </TextParagraph>
-        <h3 class="case_title_h3 m-12_bottom">1. Internal information systems synchronization</h3>
+        <h3 class="case_title_h3 m-12_bottom">
+          1. Internal information systems synchronization
+        </h3>
         <TextParagraph>
           The emulator code tests the interaction of two independent information systems that control multimedia
           software and intelligent infrastructure integrations.
@@ -483,7 +560,9 @@
           whether the Brain has transferred the command from one system to another. Without such an emulator, the team
           would be clueless regarding whether the command had been successfully executed or not.
         </TextParagraph>
-        <h3 class="case_title_h3">2. End to end tests using emulators of mobile applications</h3>
+        <h3 class="case_title_h3">
+          2. End to end tests using emulators of mobile applications
+        </h3>
         <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
           A mobile applications emulator enables the SJMC to run all possible user experiences on all possible virtual
           multimedia sites.
@@ -495,10 +574,16 @@
         </TextParagraph>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-24_bottom">Mad Devs’ trip to the SJMC</h2>
+        <h2 class="case_title_h2 m-24_bottom">
+          Mad Devs’ trip to the SJMC
+        </h2>
       </section>
       <section class="container_full case_full-screen-slider">
-        <Swiper :components="swiperMadDevsTrip" :safari-top-bar="false" :box-shadow="false" />
+        <Swiper
+          :components="swiperMadDevsTrip"
+          :safari-top-bar="false"
+          :box-shadow="false"
+        />
       </section>
       <section class="container_regular">
         <TextParagraph class="m-56_top media-m-24_top m-24_bottom media-m-12_bottom">
@@ -530,7 +615,9 @@
         </ListTeam>
       </section>
       <section class="container_regular">
-        <h2 class="case_title_h2 m-12_bottom">Ongoing partnership</h2>
+        <h2 class="case_title_h2 m-12_bottom">
+          Ongoing partnership
+        </h2>
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           According to the internal CSAT survey, 98% of Mad Devs' customers find the company's service great value for
           money, and most of them stay with us for 3+ years. The SJMC is no exception.
@@ -557,10 +644,16 @@
           provide assistance when needed, Mad Devs are a highly-valued part of our wider operations.
         </TextQuoteAuthor>
       </section>
-      <Footer link="/case-studies/namba-food/" class-name="sjmc-case">
-        <div slot="icon" class="case_logotype"></div>
-        Namba Food <br />
-        Top Delivery Service in <br class="case_mobile-screen-break" />
+      <Footer
+        link="/case-studies/namba-food/"
+        class-name="sjmc-case"
+      >
+        <div
+          slot="icon"
+          class="case_logotype"
+        />
+        Namba Food <br>
+        Top Delivery Service in <br class="case_mobile-screen-break">
         Central Asia
       </Footer>
     </section>

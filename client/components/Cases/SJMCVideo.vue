@@ -1,13 +1,31 @@
 <template>
-  <div v-show="fullscreenModIsActive" ref="videoContainer">
-    <div class="video-wrapper" @click="videoSetState">
-      <div v-if="showIcon" class="pause-icon"></div>
-      <video ref="video" class="main-video">
-        <source :src="getMediaFromS3('/videos/sjmc/sjmc-modal-video.00bd869.mp4')" type="video/mp4" />
-        Your browser does not support the video tag!!!.
+  <div
+    v-show="fullscreenModIsActive"
+    ref="videoContainer"
+  >
+    <div
+      class="video-wrapper"
+      @click="videoSetState"
+    >
+      <div
+        v-if="showIcon"
+        class="pause-icon"
+      />
+      <video
+        ref="video"
+        class="main-video"
+      >
+        <source
+          :src="getMediaFromS3('/videos/sjmc/sjmc-modal-video.00bd869.mp4')"
+          type="video/mp4"
+        >
+        Your browser does not support the video tag.
       </video>
     </div>
-    <button class="exit" @click="exitFullscreen"></button>
+    <button
+      class="exit"
+      @click="exitFullscreen"
+    />
   </div>
 </template>
 
@@ -20,10 +38,6 @@ export default {
       showIcon: false,
       flagFirstStartVideo: true,
     }
-  },
-
-  computed: {
-    getPathToVideo: () => `${process.env.awsUrl}/videos/sjmc/sjmc-modal-video.00bd869.mp4`,
   },
 
   mounted() {
