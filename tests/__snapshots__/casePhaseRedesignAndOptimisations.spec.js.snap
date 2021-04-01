@@ -7,7 +7,9 @@ exports[`phase redesign and optimisations renders correctly 1`] = `
   <h2
     class="case_title_h2 m-24_bottom media-m-12_bottom"
   >
+    
     Phase 3: Redesign & optimisations
+  
   </h2>
    
   <p
