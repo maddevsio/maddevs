@@ -13,7 +13,7 @@
     </section>
     <section class="container_full background-color-silver">
       <img
-        src="../../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif"
+        :src="getMediaFromS3('/images/Cases/nambafood/gif/high-level-system-overview.gif')"
         class="case_gif case_high-level-system-overview-gif"
         alt="Namba Food: Website and Mobile App Infrastructure Scheme."
       >
@@ -31,5 +31,3 @@ export default {
   },
 }
 </script>
-
-<style></style>

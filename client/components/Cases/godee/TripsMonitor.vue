@@ -28,7 +28,7 @@
             alt="GoDee: Safari Browser Top Bar White."
           />
           <img
-            src="../../../assets/img/Cases/godee/jpg/trip-monitor.jpg"
+            :src="getMediaFromS3('/images/Cases/godee/jpg/trip-monitor.jpg')"
             class="case_img"
             alt="Trip Monitor"
             loading="lazy"
@@ -61,7 +61,7 @@
             muted="true"
           >
             <source
-              :src="getPathTripMonitorVideo"
+              :src="getMediaFromS3('/videos/trip-monitor.f4a33e6.mp4')"
               type="video/mp4"
             >
             Your browser does not support the video tag.
@@ -112,10 +112,6 @@ export default {
     return {
       tripsMonitorInfo,
     }
-  },
-
-  computed: {
-    getPathTripMonitorVideo: () => `${process.env.awsUrl}/trip-monitor.f4a33e6.mp4`,
   },
 }
 </script>

@@ -8,7 +8,7 @@
           Infrastructure scheme
         </h2>
         <img
-          src="../../../assets/img/Cases/godee/gif/infrastructure-scheme.gif"
+          :src="getMediaFromS3('/images/Cases/godee/gif/infrastructure-scheme.gif')"
           class="case_gif case_infrastructure-scheme-gif"
           alt="GoDee Mobile App Infrastructure Scheme."
           loading="lazy"

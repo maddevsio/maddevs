@@ -24,7 +24,7 @@
             alt="GoDee: Safari Browser Top Bar White."
           />
           <img
-            src="../../../assets/img/Cases/godee/jpg/route-optimization.jpg"
+            :src="getMediaFromS3('/images/Cases/godee/jpg/route-optimization.jpg')"
             class="case_img"
             alt="Route Optimization"
             loading="lazy"
@@ -57,7 +57,7 @@
             muted="true"
           >
             <source
-              :src="getPathRouteOptimizationVideo"
+              :src="getMediaFromS3('/videos/route-optimization.f5a2ff0.mp4')"
               type="video/mp4"
             >
             Your browser does not support the video tag.
@@ -101,10 +101,6 @@ export default {
       type: Boolean,
       required: true,
     },
-  },
-
-  computed: {
-    getPathRouteOptimizationVideo: () => `${process.env.awsUrl}/route-optimization.f5a2ff0.mp4`,
   },
 }
 </script>

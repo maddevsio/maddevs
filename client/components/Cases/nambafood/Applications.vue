@@ -14,7 +14,7 @@
       <div class="case_full-screen-phone-video-wrapper">
         <img
           v-if="isIphone"
-          src="../../../assets/img/Cases/nambafood/png/iphone-video-preview.png"
+          :src="getMediaFromS3('/images/Cases/nambafood/png/iphone-video-preview.png')"
           class="case_phone-ios-image"
         >
         <video
@@ -27,7 +27,7 @@
           muted="true"
         >
           <source
-            :src="getPathToPhoneVideo"
+            :src="getMediaFromS3('/videos/mobile-applications-for-end-users.faaab2d.mp4')"
             type="video/mp4"
           >
           Your browser does not support the video tag.
@@ -53,11 +53,5 @@ export default {
       default: false,
     },
   },
-
-  computed: {
-    getPathToPhoneVideo: () => `${process.env.awsUrl}/mobile-applications-for-end-users.faaab2d.mp4`,
-  },
 }
 </script>
-
-<style></style>

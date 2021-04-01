@@ -9,7 +9,8 @@
       <div class="case_content-layer p-48_bottom media-p-24_bottom">
         <CaseHeader
           :logo="logo"
-          video-name="godee-case-main-video.mp4"
+          video-name="/videos/godee-case-main-video.mp4"
+          video-fallback-path="/images/Cases/godee/jpg/godee-case-preview.jpg"
         >
           <h1
             slot="title"

@@ -73,5 +73,3 @@ export default {
   mixins: [isIphoneMixin, autoplayVideoMixin(['map-video', 'iphone-silver-video'])],
 }
 </script>
-
-<style></style>

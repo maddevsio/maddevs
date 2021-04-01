@@ -9,6 +9,7 @@ module.exports = {
    ** Server settings
    */
   server: {
+    host: process.env.HOST || '0', // https://debbie.codes/blog/nuxt-configure-server-to-see-site-on-mobile/
     port: process.env.PORT || 3000,
   },
   /*
@@ -74,7 +75,7 @@ module.exports = {
     color: '#ec1c24',
     height: '3px',
   },
-  plugins: ['~/plugins/vuelidate.js', '~/plugins/vue-social-sharing.js'],
+  plugins: ['~/plugins/vuelidate.js', '~/plugins/vue-social-sharing.js', '~/plugins/get-media-from-s3.js'],
   generate: {
     async routes() {
       const getPosts = async pageUrl => {
@@ -163,7 +164,7 @@ module.exports = {
     preview: false,
   },
   env: {
-    awsUrl: process.env.NODE_AWS_URL,
+    s3PublicUrl: process.env.NODE_S3_PUBLIC_URL,
     domain: process.env.NODE_DOMAIN,
     emailHR: process.env.NODE_EMAIL_HR,
     emailContact: process.env.NODE_EMAIL_CONTACT,

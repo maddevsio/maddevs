@@ -3,16 +3,18 @@
     <source
       :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
       :srcset="[
-        require(`../../../assets/img/Cases/${folder}/webp/${file}.webp`) + ' ',
-        require(`../../../assets/img/Cases/${folder}/webp/${file}@2x.webp`) + ' 2x',
+        getMediaFromS3(`/images/Cases/${folder}/webp/${file}.webp`) + ' ',
+        getMediaFromS3(`/images/Cases/${folder}/webp/${file}@2x.webp`) + ' 2x',
       ]"
       class="image"
       type="image/webp"
     >
     <img
       :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
-      :src="[require(`../../../assets/img/Cases/${folder}/${extension}/${file}.${extension}`)]"
-      :srcset="[require(`../../../assets/img/Cases/${folder}/${extension}/${file}@2x.${extension}`) + ' 2x']"
+      :src="[getMediaFromS3(`/images/Cases/${folder}/${extension}/${file}.${extension}`)]"
+      :srcset="[
+        getMediaFromS3(`/images/Cases/${folder}/${extension}/${file}@2x.${extension}`) + ' 2x',
+      ]"
       :alt="alt"
       :loading="lazy ? 'lazy' : ''"
       :width="width"

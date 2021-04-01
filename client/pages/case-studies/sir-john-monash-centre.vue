@@ -2,7 +2,8 @@
   <main class="main case">
     <CaseHeader
       :logo="logo"
-      video-name="sjmc/sjmc-main-video.b35a387.mp4"
+      video-name="/videos/sjmc/sjmc-main-video.b35a387.mp4"
+      video-fallback-path="/images/Cases/sjmc/jpg/sjmc-main-video-preview.jpg"
     >
       <h1
         slot="title"
@@ -29,12 +30,11 @@
       </button>
     </CaseHeader>
     <SJMCVideo />
-    <section class="case_body">
-      <div
+    <section>
+      <section
         id="case-first-section"
-        class="case_animation_block"
-      />
-      <section class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom">
+        class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom"
+      >
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front during the First World War in
           the words of those who served.
@@ -252,7 +252,7 @@
       <section class="container_full background-color-silver">
         <section class="container_middle">
           <img
-            src="../../assets/img/Cases/sjmc/gif/watchpax.gif"
+            :src="getMediaFromS3('/images/Cases/sjmc/gif/watchpax.gif')"
             class="case_gif"
             alt="WATCHOUT - Multi-Display Production and Presentation Software."
           >
@@ -271,7 +271,7 @@
       <section class="container_full background-color-silver">
         <section class="container_middle">
           <img
-            src="../../assets/img/Cases/sjmc/gif/brix.gif"
+            :src="getMediaFromS3('/images/Cases/sjmc/gif/brix.gif')"
             class="case_gif"
             alt="Ultra-Compact Multimedia Computer - BRIX."
           >
@@ -303,10 +303,11 @@
             playsinline
           >
             <source
-              :src="getPathToPhoneVideo"
+              :src="getMediaFromS3('/videos/bluetooth-beacons-video.9ca649c.mp4')"
               type="video/mp4"
             >
             Your browser does not support the video tag.
+            <img :src="getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')">
           </video>
         </div>
       </section>
@@ -992,10 +993,6 @@ export default {
       ...getMetadata('sjmc'),
       image: 'https://maddevs.io/sir-john-monash-centre.png',
     })
-  },
-
-  computed: {
-    getPathToPhoneVideo: () => `${process.env.awsUrl}/bluetooth-beacons-video.9ca649c.mp4`,
   },
 
   mounted() {

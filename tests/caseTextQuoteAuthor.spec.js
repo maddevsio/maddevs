@@ -15,6 +15,9 @@ describe('text quote author', () => {
   beforeEach(() => {
     wrapper = mount(TextQuoteAuthor, {
       propsData: props,
+      mocks: {
+        getMediaFromS3: () => 's3 image url',
+      },
       slots: {
         default: 'Main Content',
       },
