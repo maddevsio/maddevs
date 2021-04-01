@@ -467,7 +467,7 @@ exports[`kaf renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon backend-go"
+            class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
           />
            
           <p
@@ -482,7 +482,7 @@ exports[`kaf renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon backend-django"
+            class="case_technologies-item__tech-icon case_technologies-item__backend-django backend-django"
           />
            
           <p
@@ -497,7 +497,7 @@ exports[`kaf renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon backend-postgresql"
+            class="case_technologies-item__tech-icon case_technologies-item__backend-postgresql backend-postgresql"
           />
            
           <p
@@ -512,7 +512,7 @@ exports[`kaf renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon other-nimble"
+            class="case_technologies-item__tech-icon case_technologies-item__other-nimble other-nimble"
           />
            
           <p
@@ -527,7 +527,7 @@ exports[`kaf renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon other-plex"
+            class="case_technologies-item__tech-icon case_technologies-item__other-plex other-plex"
           />
            
           <p
@@ -542,7 +542,7 @@ exports[`kaf renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon frontend-jquery"
+            class="case_technologies-item__tech-icon case_technologies-item__frontend-jquery frontend-jquery"
           />
            
           <p
@@ -557,7 +557,7 @@ exports[`kaf renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon frontend-video-js"
+            class="case_technologies-item__tech-icon case_technologies-item__frontend-video-js frontend-video-js"
           />
            
           <p
@@ -572,7 +572,7 @@ exports[`kaf renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon devops-nginx-txt"
+            class="case_technologies-item__tech-icon case_technologies-item__devops-nginx-txt devops-nginx-txt"
           />
            
           <p
