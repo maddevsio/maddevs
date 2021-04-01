@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardNinjaSushi component should render correctly 1`] = `
+<div>
+  <div
+    class="case_card-content"
+  >
+    <div
+      class="case_card-content_left-column"
+    >
+      <h3
+        class="case_title_h4 m-8_bottom"
+        style="color: rgb(245, 247, 249);"
+      >
+        
+      Mini white label
+    
+      </h3>
+       
+      <p
+        class="case_paragraph case_card-content_paragraph"
+        style="color: rgb(245, 247, 249);"
+      >
+        
+      After business owners submit images and prices, the Namba Food team creates a customised and branded e-commerce
+      website. Updates, support and maintenance are also done by Namba Food.
+    
+      </p>
+       
+      <h3
+        class="case_title_h4 m-8_bottom"
+        style="color: rgb(245, 247, 249);"
+      >
+        
+      Full white label
+    
+      </h3>
+       
+      <p
+        class="case_paragraph"
+        style="color: rgb(245, 247, 249);"
+      >
+        
+      Business partners can use Namba Food’s software and business model, adjusting for their needs, scale and region.
+      Namba Food is responsible for its maintenance and helps with management and marketing.
+    
+      </p>
+    </div>
+     
+    <div
+      class="case_card-content_right-column"
+    >
+      <div
+        class="case_card-content_macbook-frame"
+      />
+       
+      <picture>
+        <source
+          class="case_card-content_image"
+          srcset="[object Object] ,[object Object] 2x"
+          type="image/webp"
+        />
+         
+        <img
+          class="case_card-content_image"
+          src="[object Object]"
+          srcset="[object Object] 2x"
+        />
+      </picture>
+    </div>
+  </div>
+</div>
+`;
