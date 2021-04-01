@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`infrastructure optimisation should render correctly 1`] = `
+exports[`InfrastructureOptimisation should render correctly 1`] = `
 <div>
   <section
     class="infrastructure-optimisation"
@@ -8,11 +8,13 @@ exports[`infrastructure optimisation should render correctly 1`] = `
   >
     <div
       class="container"
+      data-testid="test-container"
     >
       <div
         class="infrastructure-optimisation__content-wrapper"
       >
         <h2
+          c=""
           class="infrastructure-optimisation__main-title"
         >
           
