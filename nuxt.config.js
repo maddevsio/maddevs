@@ -9,6 +9,7 @@ module.exports = {
    ** Server settings
    */
   server: {
+    host: process.env.HOST || '0', // https://debbie.codes/blog/nuxt-configure-server-to-see-site-on-mobile/
     port: process.env.PORT || 3000,
   },
   /*
@@ -163,7 +164,6 @@ module.exports = {
     preview: false,
   },
   env: {
-    awsUrl: process.env.NODE_AWS_URL,
     s3PublicUrl: process.env.NODE_S3_PUBLIC_URL,
     domain: process.env.NODE_DOMAIN,
     emailHR: process.env.NODE_EMAIL_HR,
