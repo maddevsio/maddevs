@@ -1,7 +1,12 @@
 <template>
-  <button id="careers-btn" :class="{ 'is-disabled': disabled }" class="button" @click="handleClick">
+  <button
+    id="careers-btn"
+    :class="{ 'is-disabled': disabled }"
+    class="button"
+    @click="handleClick"
+  >
     <span v-if="loading === true">Waiting...</span>
-    <slot v-else></slot>
+    <slot v-else />
   </button>
 </template>
 

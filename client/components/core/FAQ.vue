@@ -1,19 +1,30 @@
 <template>
-  <section id="faq" class="faq">
+  <section
+    id="faq"
+    class="faq"
+  >
     <div class="container">
       <div class="faq__header">
-        <h1 class="faq__title">Frequently Asked Questions</h1>
-        <div class="faq__image"></div>
+        <h1 class="faq__title">
+          Frequently Asked Questions
+        </h1>
+        <div class="faq__image" />
       </div>
       <div class="faq__content">
-        <h2 id="how-many-people-work-at-your-company?" class="faq__sec-title faq__sec-title-first">
+        <h2
+          id="how-many-people-work-at-your-company?"
+          class="faq__sec-title faq__sec-title-first"
+        >
           How many people work at your company?
         </h2>
         <p class="faq__paragraph">
           <span class="faq__nowrap">Mad Devs</span> currently is a 120+ person strong team of rock stars who are on a
           mission to deliver value to <span class="faq__nowrap">long-term</span> projects.
         </p>
-        <h2 id="what-time-zone-does-your-team-operate-in?" class="faq__sec-title">
+        <h2
+          id="what-time-zone-does-your-team-operate-in?"
+          class="faq__sec-title"
+        >
           What time zone does your team operate in?
         </h2>
         <p class="faq__paragraph">
@@ -25,7 +36,10 @@
           drilled down to every task instance or team member. Daily standups, work logs, and
           <span class="faq__nowrap">all-hands</span> meetings or video calls keep everybody on the same page.
         </p>
-        <h2 id="what-types-of-projects-you-do-not-work-on?" class="faq__sec-title">
+        <h2
+          id="what-types-of-projects-you-do-not-work-on?"
+          class="faq__sec-title"
+        >
           What types of projects you do NOT work on?
         </h2>
         <p class="faq__paragraph">
@@ -33,7 +47,10 @@
           <span class="faq__nowrap">high-quality</span>, scalable systems intended for heavy workloads. We can’t help
           with requests for landing pages and <span class="faq__nowrap">ultra-fast</span> MVPs.
         </p>
-        <h2 id="where-can-i-find-the-project-portfolio-of-your-company?" class="faq__sec-title">
+        <h2
+          id="where-can-i-find-the-project-portfolio-of-your-company?"
+          class="faq__sec-title"
+        >
           Where can I find the project portfolio of your company?
         </h2>
         <p class="faq__paragraph">
@@ -49,19 +66,30 @@
         <p class="faq__paragraph faq__paragraph--italic faq__paragraph-margin">
           We cannot disclose details for ~40% of our customers as we need to comply with the terms of NDAs.
         </p>
-        <h2 id="what-details-do-you-need-from-me-to-discuss-my-project-&-start-work?" class="faq__sec-title">
+        <h2
+          id="what-details-do-you-need-from-me-to-discuss-my-project-&-start-work?"
+          class="faq__sec-title"
+        >
           What details do you need from me to discuss my <span class="faq__nowrap">project & start</span> work?
         </h2>
         <p class="faq__paragraph">
           Simply submit your project idea to us via our contact form. We will contact you to clarify further
           requirements and prepare the project time & cost estimates. For more details, you can get in touch with our
           delivery manager <span class="faq__nowrap">Tamara Mun:</span>
-          <a class="faq__link" href="mailto:tamaramun@maddevs.io">tamaramun@maddevs.io</a>, or schedule a meeting at
-          <a class="faq__link" href="https://calendly.com/tamaramun" target="_blank"
-            ><span class="faq__nowrap">calendly/tamaramun</span></a
-          >
+          <a
+            class="faq__link"
+            href="mailto:tamaramun@maddevs.io"
+          >tamaramun@maddevs.io</a>, or schedule a meeting at
+          <a
+            class="faq__link"
+            href="https://calendly.com/tamaramun"
+            target="_blank"
+          ><span class="faq__nowrap">calendly/tamaramun</span></a>
         </p>
-        <h2 id="how-much-does-software-development-cost?-how-do-you-charge?" class="faq__sec-title">
+        <h2
+          id="how-much-does-software-development-cost?-how-do-you-charge?"
+          class="faq__sec-title"
+        >
           How much does software development cost? How do you charge?
         </h2>
         <p class="faq__paragraph">
@@ -71,26 +99,43 @@
           required level of flexibility as the projects’ scope can be easily corrected on the go. Thus, in the end,
           together we deliver a product that truly solves <span class="faq__nowrap">end-customers’</span> needs.
         </p>
-        <h2 id="how-can-i-control-my-project-budget?" class="faq__sec-title">How can I control my project budget?</h2>
+        <h2
+          id="how-can-i-control-my-project-budget?"
+          class="faq__sec-title"
+        >
+          How can I control my project budget?
+        </h2>
         <p class="faq__paragraph">
           You will have full control over your budget with our detailed monthly invoice. Weekly and daily reports cover
           the team’s contribution to your project in addition to individual performance reports that tell you what each
           of the specialists you hired has accomplished. Thus, with all information in your hands, the right adjustments
           in priorities of cost control factors can be implemented.
         </p>
-        <h2 id="how-do-you-ensure-security-for-confidential-information?-do-you-work-under-nda?" class="faq__sec-title">
+        <h2
+          id="how-do-you-ensure-security-for-confidential-information?-do-you-work-under-nda?"
+          class="faq__sec-title"
+        >
           How do you ensure security for confidential information? Do you work under NDA?
         </h2>
         <p class="faq__paragraph">
           <span class="faq__nowrap">Mad Devs</span> always works under the NDA of our own, however, if you have a
           <span class="faq__nowrap">non-disclosure</span> agreement on your side, we can consider your contract, too.
           Please read more about work under NDA in the corresponding section of our website:
-          <a class="faq__link" href="https://maddevs.io/nda/" target="_blank">https://maddevs.io/nda/</a>
+          <a
+            class="faq__link"
+            href="https://maddevs.io/nda/"
+            target="_blank"
+          >https://maddevs.io/nda/</a>
         </p>
-        <h2 id="how-do-you-mitigate-the-risks-related-to-intellectual-property-ownership?" class="faq__sec-title">
+        <h2
+          id="how-do-you-mitigate-the-risks-related-to-intellectual-property-ownership?"
+          class="faq__sec-title"
+        >
           How do you mitigate the risks related to intellectual property ownership?
         </h2>
-        <p class="faq__paragraph">Intellectual Property is wholly owned by you and your company.</p>
+        <p class="faq__paragraph">
+          Intellectual Property is wholly owned by you and your company.
+        </p>
         <p class="faq__paragraph faq__paragraph-margin">
           After you sign a contract with us, you will become the owner of the repository, the project environment,
           Slack, hosting, and etc. The team only manages this and adjusts the processes in accordance with the
@@ -100,7 +145,10 @@
           You have these accesses from the very beginning of the project, but it is important to remember that according
           to the contract you become a full owner only after paying for all the hours worked by the team.
         </p>
-        <h2 id="what-if-my-question-is-not-answered-on-this-page?" class="faq__sec-title">
+        <h2
+          id="what-if-my-question-is-not-answered-on-this-page?"
+          class="faq__sec-title"
+        >
           What if my question is not answered on this page?
         </h2>
         <p class="faq__paragraph">
@@ -108,26 +156,46 @@
           use:
         </p>
         <ul class="faq__list-wrap faq__paragraph">
-          <li class="faq__list">Live chat</li>
+          <li class="faq__list">
+            Live chat
+          </li>
           <li class="faq__list">
             Direct mail to our Delivery Manager <span class="faq__nowrap">Tamara Mun</span> via
-            <a class="faq__link" href="mailto:tamaramun@maddevs.io">tamaramun@maddevs.io</a>
+            <a
+              class="faq__link"
+              href="mailto:tamaramun@maddevs.io"
+            >tamaramun@maddevs.io</a>
           </li>
-          <li class="faq__list">Contact form</li>
           <li class="faq__list">
-            Phone Call via <a class="faq__link faq__link" href="tel:+442039848555">+44 20 3984 8555</a>
+            Contact form
+          </li>
+          <li class="faq__list">
+            Phone Call via <a
+              class="faq__link faq__link"
+              href="tel:+442039848555"
+            >+44 20 3984 8555</a>
           </li>
           <li class="faq__list">
             Text message via
-            <a href="https://facebook.com/maddevsllc" class="faq__link faq__link" target="_blank">Facebook Messenger</a
-            >, <a href="https://t.me/MadDevs_io" class="faq__link faq__link" target="_blank">Telegram</a>,
-            <a href="https://wa.me/message/KPJAW6J7BF7EK1" class="faq__link faq__link" target="_blank">Whatsapp</a>, or
+            <a
+              href="https://facebook.com/maddevsllc"
+              class="faq__link faq__link"
+              target="_blank"
+            >Facebook Messenger</a>, <a
+              href="https://t.me/MadDevs_io"
+              class="faq__link faq__link"
+              target="_blank"
+            >Telegram</a>,
+            <a
+              href="https://wa.me/message/KPJAW6J7BF7EK1"
+              class="faq__link faq__link"
+              target="_blank"
+            >Whatsapp</a>, or
             <a
               href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
               class="faq__link faq__link"
               target="_blank"
-              >WeChat</a
-            >.
+            >WeChat</a>.
           </li>
         </ul>
       </div>

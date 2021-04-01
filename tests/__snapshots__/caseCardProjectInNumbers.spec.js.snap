@@ -10,7 +10,9 @@ exports[`сard project in numbers renders correctly 1`] = `
     <p
       class="card-content_title"
     >
+      
       7500
+    
     </p>
      
     <p
@@ -31,7 +33,9 @@ exports[`сard project in numbers renders correctly 1`] = `
     <p
       class="card-content_title"
     >
+      
       6000+
+    
     </p>
      
     <p
@@ -53,13 +57,17 @@ exports[`сard project in numbers renders correctly 1`] = `
     <p
       class="card-content_title"
     >
+      
       500
+    
     </p>
      
     <p
       class="case_paragraph card-content_paragraph"
     >
-       viewers per day 
+      
+      viewers per day
+    
     </p>
   </div>
    
@@ -69,13 +77,17 @@ exports[`сard project in numbers renders correctly 1`] = `
     <p
       class="card-content_title"
     >
+      
       280–300
+    
     </p>
      
     <p
       class="case_paragraph card-content_paragraph"
     >
-       concurrent viewers 
+      
+      concurrent viewers
+    
     </p>
   </div>
 </div>

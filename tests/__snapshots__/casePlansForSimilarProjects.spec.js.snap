@@ -17,7 +17,9 @@ exports[`plans for similar projects renders correctly 1`] = `
   <h3
     class="case_title_h3 m-24_bottom media-m-12_bottom"
   >
+    
     Plans for similar projects
+  
   </h3>
    
   <p

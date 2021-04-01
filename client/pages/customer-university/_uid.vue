@@ -46,10 +46,10 @@ export default {
 
       // Query to get Schema.org markup
       if (
-        post.data.schema_org_snippets &&
-        post.data.schema_org_snippets.length &&
-        post.data.schema_org_snippets[0].single_snippet.length &&
-        post.data.schema_org_snippets[0].single_snippet[0].text
+        post.data.schema_org_snippets
+        && post.data.schema_org_snippets.length
+        && post.data.schema_org_snippets[0].single_snippet.length
+        && post.data.schema_org_snippets[0].single_snippet[0].text
       ) {
         jsonLd = post.data.schema_org_snippets[0].single_snippet[0].text
         jsonLd = jsonLd.substring(jsonLd.indexOf('{'), jsonLd.lastIndexOf('}') + 1) // extracting only JSON object from a snippet without extra characters
@@ -97,6 +97,7 @@ export default {
       meta: [
         { name: 'description', content: this.description },
         // Facebook / Open Graph
+        { property: 'og:site_name', content: 'Mad Devs: Software & Mobile App Development Company' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: this.openGraphUrl },
         {
@@ -111,7 +112,7 @@ export default {
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         // Twitter / Twitter Card
-        { property: 'twitter:card', content: 'summary' },
+        { property: 'twitter:card', content: 'summary_large_image' },
         {
           property: 'twitter:text:title',
           content: this.title,
@@ -150,9 +151,8 @@ export default {
   methods: {
     getClusterData() {
       this.$prismic.api.getSingle('cu_master').then(response => {
-        this.cluster =
-          response.data.body.find(cluster => cluster.items.find(post => post.cu_post.id === this.id) !== undefined) ||
-          null
+        this.cluster = response.data.body
+          .find(cluster => cluster.items.find(post => post.cu_post.id === this.id) !== undefined) || null
       })
     },
   },

@@ -2,7 +2,7 @@
 
 exports[`card project milestone renders correctly 1`] = `
 <div
-  class="card background-color-backgroundColor"
+  class="card background-color-background"
 >
   <div
     class="card_lottie"
@@ -122,13 +122,17 @@ exports[`card project milestone renders correctly 1`] = `
     <h4
       class="case_title_h4 card_title"
     >
+      
       2016
+    
     </h4>
      
     <p
       class="case_paragraph card_paragraph"
     >
+      
       description
+    
     </p>
   </div>
 </div>

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UINavigation should render correctly 1`] = `
+<div>
+  <div
+    class="navigation-wrap container navigation-wrap-"
+  >
+    <nav
+      class="navigation-list navigation-list-"
+    >
+      <nuxtlink-stub
+        class="navigation-item"
+        to="url"
+      >
+        
+      title
+    
+      </nuxtlink-stub>
+       
+    </nav>
+  </div>
+</div>
+`;
+
+exports[`UINavigation should render correctly without props 1`] = `
+<div>
+  <div
+    class="navigation-wrap container navigation-wrap-"
+  >
+    <nav
+      class="navigation-list navigation-list-"
+    >
+       
+    </nav>
+  </div>
+</div>
+`;

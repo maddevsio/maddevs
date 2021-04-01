@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import TechnologyStack from '../client/components/Cases/Kaf/TechnologyStack'
+import TechnologyStack from '../client/components/Cases/kaf/TechnologyStack'
 
 describe('technology stack', () => {
   let wrapper

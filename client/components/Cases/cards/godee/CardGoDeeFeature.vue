@@ -1,8 +1,13 @@
 <template>
   <div class="card-content">
-    <div :class="`card-content_${iconName}-icon`" class="card-content_icon"></div>
-    <h4 class="case_title_h4 card-content_title">{{ title }}</h4>
-    <slot></slot>
+    <div
+      :class="`card-content_${iconName}-icon`"
+      class="card-content_icon"
+    />
+    <h4 class="case_title_h4 card-content_title">
+      {{ title }}
+    </h4>
+    <slot />
   </div>
 </template>
 

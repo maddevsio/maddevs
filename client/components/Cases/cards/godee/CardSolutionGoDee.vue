@@ -2,7 +2,9 @@
   <div class="card-content">
     <div class="card-content_card-description">
       <div class="card-content_description-item">
-        <h3 class="case_title_h4 card-content_description-title">Solution: GoDee</h3>
+        <h3 class="case_title_h4 card-content_description-title">
+          Solution: GoDee
+        </h3>
         <TextParagraph class="card-content_paragraph card-content_paragraph-first">
           GoDee’s founders decided to make buses smarter and more user-friendly. They tackled the problem by converting
           traditional buses into a modern service provider offering a convenient and predictable ride that’s just one
@@ -15,18 +17,32 @@
       </div>
     </div>
     <div class="card-content_prices">
-      <h4 class="card-content_prices-title">$65<span>/ month</span></h4>
+      <h4 class="card-content_prices-title">
+        $65<span>/ month</span>
+      </h4>
       <div class="card-content_price-item">
-        <TextParagraph class="card-content_price-heading"> One trip </TextParagraph>
-        <TextParagraph class="card-content_price-number"> $1.29 </TextParagraph>
+        <TextParagraph class="card-content_price-heading">
+          One trip
+        </TextParagraph>
+        <TextParagraph class="card-content_price-number">
+          $1.29
+        </TextParagraph>
       </div>
       <div class="card-content_price-item">
-        <TextParagraph class="card-content_price-heading"> Trips a day </TextParagraph>
-        <TextParagraph class="card-content_price-number"> 2 </TextParagraph>
+        <TextParagraph class="card-content_price-heading">
+          Trips a day
+        </TextParagraph>
+        <TextParagraph class="card-content_price-number">
+          2
+        </TextParagraph>
       </div>
       <div class="card-content_price-item">
-        <TextParagraph class="card-content_price-heading"> Days a month </TextParagraph>
-        <TextParagraph class="card-content_price-number"> ~ 25 </TextParagraph>
+        <TextParagraph class="card-content_price-heading">
+          Days a month
+        </TextParagraph>
+        <TextParagraph class="card-content_price-number">
+          ~ 25
+        </TextParagraph>
       </div>
     </div>
   </div>

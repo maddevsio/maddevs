@@ -1,28 +1,45 @@
 <template>
-  <section id="customer-rates" class="customer-rates">
+  <section
+    id="customer-rates"
+    class="customer-rates"
+  >
     <div class="container">
       <h2 class="customer-rates__main-title">
-        <span>Fantastic</span> <br />
+        <span>Fantastic</span> <br>
         customer&nbsp;&nbsp;&nbsp;<span class="customer-rates__title-icon">rates:</span>
       </h2>
       <div class="customer-rates__top-row row">
-        <div v-for="item in percentages" :key="item.percent" class="col-xl-4 col-md-4">
+        <div
+          v-for="item in percentages"
+          :key="item.percent"
+          class="col-xl-4 col-md-4"
+        >
           <div class="customer-rates__rates-block customer-rates__rates-block-top-row">
-            <p class="customer-rates__number-item customer-rates__number-item-top-row">{{ item.percent }}%</p>
+            <p class="customer-rates__number-item customer-rates__number-item-top-row">
+              {{ item.percent }}%
+            </p>
             <p class="customer-rates__description customer-rates__description-top-row">
               {{ item.description }}
-              <br class="customer-rates__line-break" />
+              <br class="customer-rates__line-break">
               {{ item.descriptionSecond }}
             </p>
           </div>
         </div>
       </div>
       <div class="customer-rates__bottom-row">
-        <h3 class="customer-rates__section-sub-title">Mad Devs' key metrics:</h3>
+        <h3 class="customer-rates__section-sub-title">
+          Mad Devs' key metrics:
+        </h3>
         <div class="row">
-          <div v-for="metrick in keyMetricks" :key="metrick.number" class="col-xl-2 col-lg-4 col-md-4 col-6">
+          <div
+            v-for="metrick in keyMetricks"
+            :key="metrick.number"
+            class="col-xl-2 col-lg-4 col-md-4 col-6"
+          >
             <div class="customer-rates__rates-block customer-rates__rates-block-bottom-row">
-              <p class="customer-rates__number-item customer-rates__number-item-bottom-row">{{ metrick.number }}</p>
+              <p class="customer-rates__number-item customer-rates__number-item-bottom-row">
+                {{ metrick.number }}
+              </p>
               <p class="customer-rates__description customer-rates__description-bottom-row">
                 {{ metrick.description }}
               </p>

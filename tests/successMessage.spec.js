@@ -9,7 +9,7 @@ describe('success message', () => {
     wrapper = mount(ModalSuccess)
   })
 
-  it("is Vue's instance", () => {
+  it('is Vue\'s instance', () => {
     expect(wrapper.exists()).toBeTruthy()
   })
 

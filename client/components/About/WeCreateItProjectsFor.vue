@@ -1,9 +1,13 @@
 <template>
-  <section id="weCreateItProject" class="weCreateItProject">
+  <section
+    id="weCreateItProject"
+    class="weCreateItProject"
+    data-testid="test-weCreateItProject"
+  >
     <div class="container">
       <div class="weCreateItProject__content-wrapper">
         <h2 class="weCreateItProject__main-title">
-          We create <br />
+          We create <br>
           IT projects for:
         </h2>
         <div class="weCreateItProject__projects-type_list row gy-0">
@@ -14,20 +18,24 @@
           >
             <p class="weCreateItProject__paragraph">
               {{ first }}
-              <br />
+              <br>
               {{ second }}
             </p>
           </div>
         </div>
         <ul class="weCreateItProject__flags-list">
-          <li v-for="country in countries" :key="country" class="weCreateItProject__flag-item">
+          <li
+            v-for="country in countries"
+            :key="country"
+            class="weCreateItProject__flag-item"
+          >
             <img
               :data-src="require(`@/assets/img/Home/flags/${country}.svg`)"
               :alt="country"
               width="32"
               height="32"
               class="img_lazy"
-            />
+            >
           </li>
         </ul>
       </div>

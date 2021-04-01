@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`orderedListSlice component is a Vue instance 1`] = `
+<div>
+  <ol
+    class="case-list_numbered"
+  >
+    <div>
+      list introduction
+    </div>
+     
+    <li
+      class="case_list-numbered_item"
+    >
+      
+    list item 1
+  
+    </li>
+    <li
+      class="case_list-numbered_item"
+    >
+      
+    list item 2
+  
+    </li>
+    <li
+      class="case_list-numbered_item"
+    >
+      
+    list item 3
+  
+    </li>
+    <li
+      class="case_list-numbered_item"
+    >
+      
+    list item 4
+  
+    </li>
+    <li
+      class="case_list-numbered_item"
+    >
+      
+    list item 5
+  
+    </li>
+  </ol>
+</div>
+`;

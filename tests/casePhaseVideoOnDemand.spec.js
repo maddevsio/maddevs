@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import PhaseVideoOnDemand from '../client/components/Cases/Kaf/PhaseVideoOnDemand'
+import PhaseVideoOnDemand from '../client/components/Cases/kaf/PhaseVideoOnDemand'
 
 describe('phase video on demand', () => {
   let wrapper

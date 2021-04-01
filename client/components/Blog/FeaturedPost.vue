@@ -1,13 +1,24 @@
 <template>
-  <nuxt-link :to="link" class="featured-post">
+  <nuxt-link
+    :to="link"
+    class="featured-post"
+  >
     <div class="row featured-post__wrapper">
       <div class="col-12 col-lg-6 featured-post__main">
-        <h1 class="featured-post__title">{{ $prismic.asText(post.data.title) }}</h1>
-        <p class="featured-post__paragraph">{{ getFirstParagraph() }}</p>
+        <h1 class="featured-post__title">
+          {{ $prismic.asText(post.data.title) }}
+        </h1>
+        <p class="featured-post__paragraph">
+          {{ getFirstParagraph() }}
+        </p>
         <div class="featured-post__data d-flex justify-content-between">
           <post-author :document="post.data" />
           <div class="featured-post__meta">
-            <post-tag v-if="post.tags.length" :tag="post.tags[0]" theme="dark" />
+            <post-tag
+              v-if="post.tags.length"
+              :tag="post.tags[0]"
+              theme="dark"
+            />
             <span class="created-at">{{ formattedDate }}</span>
           </div>
         </div>
@@ -19,7 +30,7 @@
           :width="post.data.featured_image.dimensions.width"
           :height="post.data.featured_image.dimensions.height"
           class="featured-post__image"
-        />
+        >
       </div>
     </div>
   </nuxt-link>

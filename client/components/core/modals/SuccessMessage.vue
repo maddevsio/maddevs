@@ -1,14 +1,20 @@
 <template>
-  <section id="success-message" class="success-message">
+  <section
+    id="success-message"
+    class="success-message"
+  >
     <div class="success-message__conten-wrapper">
-      <img src="@/assets/img/common/success-message-hand.svg" alt="Hand" />
+      <img
+        src="@/assets/img/common/success-message-hand.svg"
+        alt="Hand"
+      >
       <div class="success-message__text-content">
         <div class="success-message__title">
-          Thanks for your <br />
+          Thanks for your <br>
           interest in Mad Devs
         </div>
         <div class="success-message__info-text">
-          The form has been submitted. <br />
+          The form has been submitted. <br>
           We will contact you as soon as possible.
         </div>
       </div>

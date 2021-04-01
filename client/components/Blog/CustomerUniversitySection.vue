@@ -2,7 +2,7 @@
   <section class="customer-university">
     <div class="container">
       <div class="customer-university__title">
-        Customer<br />
+        Customer<br>
         <span>University</span>
       </div>
       <div class="customer-university__wrapper">
@@ -12,18 +12,29 @@
             :to="`/customer-university/${master.data.featured_cu.uid}/`"
             class="featured-post"
           >
-            <h6 class="featured-post__date">{{ formattedDate }}</h6>
-            <h2 class="featured-post__title">{{ $prismic.asText(featured.title).replace(/^[0-9]*\. /, '') }}</h2>
-            <p class="featured-post__text">{{ getFirstParagraph(featured) }}</p>
+            <h6 class="featured-post__date">
+              {{ formattedDate }}
+            </h6>
+            <h2 class="featured-post__title">
+              {{ $prismic.asText(featured.title).replace(/^[0-9]*\. /, '') }}
+            </h2>
+            <p class="featured-post__text">
+              {{ getFirstParagraph(featured) }}
+            </p>
             <post-author :document="featured" />
             <div class="featured-post__cover-wrapper">
-              <prismic-image :field="featured.featured_image" class="featured-post__cover" />
+              <prismic-image
+                :field="featured.featured_image"
+                class="featured-post__cover"
+              />
             </div>
           </router-link>
         </div>
         <div class="customer-university__list">
           <div class="customer-university__list-wrapper">
-            <h6 class="customer-university__list-title">Series of articles:</h6>
+            <h6 class="customer-university__list-title">
+              Series of articles:
+            </h6>
             <div>
               <router-link
                 v-for="(cluster, i) in clustersToShow"
@@ -32,11 +43,18 @@
                 class="customer-university__list-item single-cluster"
               >
                 <div class="single-cluster__cover-wrapper">
-                  <prismic-image :field="cluster.primary.cover_image" class="single-cluster__cover" />
+                  <prismic-image
+                    :field="cluster.primary.cover_image"
+                    class="single-cluster__cover"
+                  />
                 </div>
                 <div class="single-cluster__data">
-                  <h3 class="single-cluster__title">{{ $prismic.asText(cluster.primary.cluster_name) }}</h3>
-                  <div class="single-cluster__description">{{ $prismic.asText(cluster.primary.description) }}</div>
+                  <h3 class="single-cluster__title">
+                    {{ $prismic.asText(cluster.primary.cluster_name) }}
+                  </h3>
+                  <div class="single-cluster__description">
+                    {{ $prismic.asText(cluster.primary.description) }}
+                  </div>
                 </div>
               </router-link>
             </div>

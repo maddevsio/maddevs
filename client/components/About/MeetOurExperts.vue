@@ -1,7 +1,12 @@
 <template>
-  <section id="meet-our-experts" class="meet-our_experts">
+  <section
+    id="meet-our-experts"
+    class="meet-our_experts"
+  >
     <div class="container">
-      <h3 class="meet-our_experts__main-title">Meet our experts</h3>
+      <h3 class="meet-our_experts__main-title">
+        Meet our experts
+      </h3>
       <div class="meet-our_experts__experts-list row">
         <div
           v-for="expert in experts"
@@ -17,8 +22,12 @@
           />
           <div class="meet-our_experts__expert-bottom_content">
             <div class="meet-our_experts__expert-info">
-              <div class="meet-our_experts__expert-name">{{ expert.name }}</div>
-              <div class="meet-our_experts__expert-position">{{ expert.position }}</div>
+              <div class="meet-our_experts__expert-name">
+                {{ expert.name }}
+              </div>
+              <div class="meet-our_experts__expert-position">
+                {{ expert.position }}
+              </div>
             </div>
           </div>
           <img
@@ -27,8 +36,12 @@
             height="24"
             alt="Linkedin"
             class="meet-our_experts__expert-linkedin-link img_lazy"
+          >
+          <a
+            :href="expert.linkedin"
+            rel="nofollow"
+            target="_blank"
           />
-          <a :href="expert.linkedin" rel="nofollow" target="_blank"></a>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 <template>
   <blockquote class="case_blockquote-author m-auto">
-    <slot></slot>
+    <slot />
     <div class="case_blockquote-author__author-info m-24_top">
       <div class="case_blockquote-author__photo m-auto">
         <Picture
@@ -11,8 +11,12 @@
           :lazy-loading="true"
         />
       </div>
-      <TextParagraph class="case_blockquote-author__name">{{ authorName }}</TextParagraph>
-      <p class="case_blockquote-author__position">{{ authorPosition }}</p>
+      <TextParagraph class="case_blockquote-author__name">
+        {{ authorName }}
+      </TextParagraph>
+      <p class="case_blockquote-author__position">
+        {{ authorPosition }}
+      </p>
     </div>
   </blockquote>
 </template>
