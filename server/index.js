@@ -8,8 +8,6 @@ const { connect } = require('./db')
 // sentry
 const { configureSentry } = require('./sentry')
 
-// lib middlewares
-
 // custom middlewares
 const applyXFrame = require('./middlewares/applyXFrame')
 const redirectToHttps = require('./middlewares/redirectToHttps')
