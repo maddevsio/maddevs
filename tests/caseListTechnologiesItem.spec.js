@@ -1,11 +1,11 @@
 import { mount } from '@vue/test-utils'
 
-import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
+import ListTechnologiesItem from '@/components/Cases/shared/ListTechnologiesItem'
 
 describe('list technologies item', () => {
   let wrapper
   const props = {
-    techName: 'techName',
+    name: 'techName',
     className: 'iconClassName',
   }
 
@@ -32,7 +32,7 @@ describe('list technologies item', () => {
   it('should have correct content in child elements', () => {
     const itemTechName = wrapper.find('.case_technologies-item__tech-name')
     const itemTechIcon = wrapper.find('.case_technologies-item__tech-icon')
-    expect(itemTechName.text()).toEqual('techName')
-    expect(itemTechIcon.classes()).toContain('iconClassName')
+    expect(itemTechName.text()).toEqual(props.name)
+    expect(itemTechIcon.classes()).toContain(props.className)
   })
 })

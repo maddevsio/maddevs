@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import TextParagraph from '@/components/Cases/TextParagraph'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
 
 describe('text paragraph', () => {
   let wrapper

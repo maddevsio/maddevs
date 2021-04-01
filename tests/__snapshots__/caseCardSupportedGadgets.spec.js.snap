@@ -17,10 +17,13 @@ exports[`card supported gadgets renders correctly 1`] = `
   >
     <picture
       class="card-content_picture"
+      file-extension="png"
+      file-name="macbook-pro-card"
+      picture-folder="kaf"
     >
       <source
         class="image"
-        srcset="[object Object] ,[object Object] 2x"
+        srcset="img.jpg ,img.jpg 2x"
         type="image/webp"
       />
        
@@ -29,8 +32,8 @@ exports[`card supported gadgets renders correctly 1`] = `
         class="image"
         height="0"
         loading=""
-        src="[object Object]"
-        srcset="[object Object] 2x"
+        src="img.jpg"
+        srcset="img.jpg 2x"
         width="0"
       />
     </picture>
@@ -39,10 +42,14 @@ exports[`card supported gadgets renders correctly 1`] = `
   <div
     class="card-content_gadget-picture-wrapp-mobile card-content_gadget-picture-wrapp-mobile-macbook-pro"
   >
-    <picture>
+    <picture
+      file-extension="png"
+      file-name="macbook-pro"
+      picture-folder="kaf"
+    >
       <source
         class="image"
-        srcset="[object Object] ,[object Object] 2x"
+        srcset="img.jpg ,img.jpg 2x"
         type="image/webp"
       />
        
@@ -51,8 +58,8 @@ exports[`card supported gadgets renders correctly 1`] = `
         class="image"
         height="0"
         loading=""
-        src="[object Object]"
-        srcset="[object Object] 2x"
+        src="img.jpg"
+        srcset="img.jpg 2x"
         width="0"
       />
     </picture>

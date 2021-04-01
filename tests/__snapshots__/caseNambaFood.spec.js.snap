@@ -8,6 +8,10 @@ exports[`namba food renders correctly 1`] = `
     class="case_header"
     id="case-header"
   >
+    <div
+      class="case_main-video_fallback"
+    />
+     
     <video
       autoplay="autoplay"
       class="case_main-video"
@@ -15,7 +19,7 @@ exports[`namba food renders correctly 1`] = `
       muted="muted"
     >
       <source
-        src="undefined/main.ef19480.mp4"
+        src="s3 image url"
         type="video/mp4"
       />
       
@@ -62,7 +66,7 @@ exports[`namba food renders correctly 1`] = `
         alt=""
         class="case_header-logo case_nambafood-logo"
         height="82"
-        src="[object Object]"
+        src="s3 image url"
         width="259"
       />
     </div>
@@ -71,36 +75,39 @@ exports[`namba food renders correctly 1`] = `
   <section
     class="case_body"
   >
+    <div
+      class="case_animation_block"
+      id="case-first-section"
+    />
+     
     <section
       class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom"
-      id="case-first-section"
     >
       <p
         class="case_paragraph"
       >
         
-        Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing
-        orders and business owners work as a seamless system, ensuring a smooth delivery process for all types of
-        goods.
-      
+    Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing orders
+    and business owners work as a seamless system, ensuring a smooth delivery process for all types of goods.
+  
       </p>
        
       <blockquote
         class="case_blockquote-box m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
       >
         
-        Namba Food is a unique delivery service that combines speed, convenience and simplicity.
-      
+    Namba Food is a unique delivery service that combines speed, convenience and simplicity.
+  
       </blockquote>
        
       <p
         class="case_paragraph"
       >
         
-        Being first is hard. Namba Food’s success story focuses on how they took a global idea and successfully
-        localised and integrated it into the daily lives of Kyrgyzstan's people. Since 2013, the company has been on a
-        mission to bring value to both vendors and customers by conveniently delivering goods at the right time.
-      
+    Being first is hard. Namba Food’s success story focuses on how they took a global idea and successfully localised
+    and integrated it into the daily lives of Kyrgyzstan's people. Since 2013, the company has been on a mission to
+    bring value to both vendors and customers by conveniently delivering goods at the right time.
+  
       </p>
     </section>
      
@@ -111,16 +118,16 @@ exports[`namba food renders correctly 1`] = `
         class="case_title_h2 case_text-align-center m-24_bottom media-m-12_bottom"
       >
         
-        Multi-directional business model
-      
+    Multi-directional business model
+  
       </h2>
        
       <p
         class="case_paragraph m-24_bottom case_text-align-center"
       >
         
-        Namba Food achieves complete synergy by diversifying to multi-directional business models.
-      
+    Namba Food achieves complete synergy by diversifying to multi-directional business models.
+  
       </p>
        
       <div
@@ -181,14 +188,14 @@ exports[`namba food renders correctly 1`] = `
             <picture>
               <source
                 class="case_card-content_image"
-                srcset="[object Object] ,[object Object] 2x"
+                srcset="s3 image url ,s3 image url 2x"
                 type="image/webp"
               />
                
               <img
                 class="case_card-content_image"
-                src="[object Object]"
-                srcset="[object Object] 2x"
+                src="s3 image url"
+                srcset="s3 image url 2x"
               />
             </picture>
           </div>
@@ -204,12 +211,10 @@ exports[`namba food renders correctly 1`] = `
           <div
             class="case_business-models-grid__personal-image"
           >
-            <picture
-              file-name-retina="personal@2x"
-            >
+            <picture>
               <source
                 class="image"
-                srcset="[object Object] ,[object Object] 2x"
+                srcset="s3 image url ,s3 image url 2x"
                 type="image/webp"
               />
                
@@ -218,8 +223,8 @@ exports[`namba food renders correctly 1`] = `
                 class="image"
                 height="0"
                 loading="lazy"
-                src="[object Object]"
-                srcset="[object Object] 2x"
+                src="s3 image url"
+                srcset="s3 image url 2x"
                 width="0"
               />
             </picture>
@@ -308,55 +313,57 @@ exports[`namba food renders correctly 1`] = `
           class="case_title_h4 m-8_bottom"
         >
           
-          Namba Food API
-        
+      Namba Food API
+    
         </h3>
          
         <p
           class="case_paragraph"
         >
           
-          Namba Food API allows businesses to integrate the API into any mobile payment application. As a result,
-          end-users can quickly order goods and services without leaving the app using the app’s own payment system.
-          Such API benefits businesses because end users use the payment method defined by the mobile app. At the
-          moment, Mbank by Commercial Bank Kyrgyzstan and Balance by Beeline, a telecommunication service provider,
-          have successfully integrated Namba Food API into their mobile apps.
-        
+      Namba Food API allows businesses to integrate the API into any mobile payment application. As a result,
+      end-users can quickly order goods and services without leaving the app using the app’s own payment system. Such
+      API benefits businesses because end users use the payment method defined by the mobile app. At the moment, Mbank
+      by Commercial Bank Kyrgyzstan and Balance by Beeline, a telecommunication service provider, have successfully
+      integrated Namba Food API into their mobile apps.
+    
         </p>
       </div>
     </section>
      
-    <section
-      class="container_regular"
-    >
-      <h2
-        class="case_title_h2 m-96_top m-12_bottom media-m-48_top case_text-align-center"
+    <section>
+      <section
+        class="container_regular"
       >
-        
-        High-level system overview
-      
-      </h2>
+        <h2
+          class="case_title_h2 m-96_top m-12_bottom media-m-48_top case_text-align-center"
+        >
+          
+      High-level system overview
+    
+        </h2>
+         
+        <p
+          class="case_paragraph m-48_bottom media-m-24_bottom"
+        >
+          
+      Namba Food is more than a delivery service website. With a partial vertical integration, it covers the entire
+      cycle of ordering goods online. This means that an advanced set of software and hardware was required to
+      maintain flawless work for all stakeholders, including end-users, couriers, team operators, and cafe and store
+      managers.
+    
+        </p>
+      </section>
        
-      <p
-        class="case_paragraph m-48_bottom media-m-24_bottom"
+      <section
+        class="container_full background-color-silver"
       >
-        
-        Namba Food is more than a delivery service website. With a partial vertical integration, it covers the entire
-        cycle of ordering goods online. This means that an advanced set of software and hardware was required to
-        maintain flawless work for all stakeholders, including end-users, couriers, team operators, and cafe and store
-        managers.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_full background-color-silver"
-    >
-      <img
-        alt="Namba Food: Website and Mobile App Infrastructure Scheme."
-        class="case_gif case_high-level-system-overview-gif"
-        src="../../assets/img/Cases/nambafood/gif/high-level-system-overview.gif"
-      />
+        <img
+          alt="Namba Food: Website and Mobile App Infrastructure Scheme."
+          class="case_gif case_high-level-system-overview-gif"
+          src="s3 image url"
+        />
+      </section>
     </section>
      
     <section
@@ -366,17 +373,17 @@ exports[`namba food renders correctly 1`] = `
         class="case_title_h2 case_text-align-center m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
       >
         
-        Typical usage scenarios and user roles
-      
+    Typical usage scenarios and user roles
+  
       </h2>
        
       <p
         class="case_paragraph case_text-align-center m-48_bottom media-m-24_bottom"
       >
         
-        Namba Food involves several user journeys for different roles. Each user journey required different sets of
-        functionalities and user interfaces.
-      
+    Namba Food involves several user journeys for different roles. Each user journey required different sets of
+    functionalities and user interfaces.
+  
       </p>
        
       <div
@@ -415,7 +422,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -424,8 +431,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -437,7 +444,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -446,8 +453,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -488,7 +495,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -497,8 +504,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -510,7 +517,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -519,8 +526,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -559,7 +566,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -568,8 +575,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -581,7 +588,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -590,8 +597,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -632,7 +639,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -641,8 +648,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -654,7 +661,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -663,8 +670,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading=""
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -675,51 +682,53 @@ exports[`namba food renders correctly 1`] = `
       </div>
     </section>
      
-    <section
-      class="container_regular"
-    >
-      <h2
-        class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
+    <section>
+      <section
+        class="container_regular"
       >
-        
-        Web version and mobile applications for end-users
-      
-      </h2>
-       
-      <p
-        class="case_paragraph m-48_bottom media-m-24_bottom"
-      >
-        
-        Namba Food is not a simple catalogue of goods and services, as it aims to seamlessly blend into the modern,
-        busy lifestyle of its customers. Developing a convenient process for ordering products and making it
-        stress-free was key.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_full background-color-silver p-75_top p-75_bottom media-p-16_top media-p-16_bottom"
-    >
-      <div
-        class="case_full-screen-phone-video-wrapper"
-      >
-        <video
-          class="case_full-screen-video"
-          height="100%"
-          id="iphone-silver-video"
-          loop="loop"
-          muted="muted"
-          width="100%"
+        <h2
+          class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
         >
-          <source
-            src="undefined/mobile-applications-for-end-users.faaab2d.mp4"
-            type="video/mp4"
-          />
           
-          Your browser does not support the video tag.
-        
-        </video>
-      </div>
+      Web version and mobile applications for end-users
+    
+        </h2>
+         
+        <p
+          class="case_paragraph m-48_bottom media-m-24_bottom"
+        >
+          
+      Namba Food is not a simple catalogue of goods and services, as it aims to seamlessly blend into the modern, busy
+      lifestyle of its customers. Developing a convenient process for ordering products and making it stress-free was
+      key.
+    
+        </p>
+      </section>
+       
+      <section
+        class="container_full background-color-silver p-75_top p-75_bottom media-p-16_top media-p-16_bottom"
+      >
+        <div
+          class="case_full-screen-phone-video-wrapper"
+        >
+          <video
+            class="case_full-screen-video"
+            height="100%"
+            id="iphone-silver-video"
+            loop="loop"
+            muted="muted"
+            width="100%"
+          >
+            <source
+              src="s3 image url"
+              type="video/mp4"
+            />
+            
+        Your browser does not support the video tag.
+      
+          </video>
+        </div>
+      </section>
     </section>
      
     <section
@@ -729,16 +738,16 @@ exports[`namba food renders correctly 1`] = `
         class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
       >
         
-        Simple ordering process for end-users
-      
+    Simple ordering process for end-users
+  
       </h2>
        
       <p
         class="case_paragraph m-24_bottom"
       >
         
-        Namba Food meticulously studied users' behaviours and collected feedback to find the perfect market fit.
-      
+    Namba Food meticulously studied users' behaviours and collected feedback to find the perfect market fit.
+  
       </p>
        
       <ol
@@ -748,8 +757,8 @@ exports[`namba food renders correctly 1`] = `
           class="case_list-numbered_item"
         >
           
-          Users go to the website and choose cafes and shops (+ orders can be placed via phone).
-        
+      Users go to the website and choose cafes and shops (+ orders can be placed via phone).
+    
         </li>
          
         <li
@@ -762,8 +771,8 @@ exports[`namba food renders correctly 1`] = `
           class="case_list-numbered_item"
         >
           
-          Users receive a call from an operator to confirm the order or can tick the "no calls" checkbox.
-        
+      Users receive a call from an operator to confirm the order or can tick the "no calls" checkbox.
+    
         </li>
          
         <li
@@ -781,36 +790,36 @@ exports[`namba food renders correctly 1`] = `
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
         
-        Customers track order statuses
-      
+    Customers track order statuses
+  
       </h2>
        
       <p
         class="case_paragraph m-24_bottom media-m-12_bottom"
       >
         
-        As Namba Food’s delivery service grew more popular, the load on customer support and its operators increased
-        exponentially.
-      
+    As Namba Food’s delivery service grew more popular, the load on customer support and its operators increased
+    exponentially.
+  
       </p>
        
       <p
         class="case_paragraph m-24_bottom media-m-12_bottom"
       >
         
-        Customer support challenge: The lack of transparent status updates led to the majority of users calling to
-        check the delivery status. Business challenge: A continuously growing number of customer support teams
-        occurred in high operational expenses.
-      
+    Customer support challenge: The lack of transparent status updates led to the majority of users calling to check
+    the delivery status. Business challenge: A continuously growing number of customer support teams occurred in high
+    operational expenses.
+  
       </p>
        
       <p
         class="case_paragraph m-96_bottom media-m-48_bottom"
       >
         
-        Solution: The Mad Devs team has developed a user-friendly status feature that allows customers to easily track
-        progress on both the mobile app and website.
-      
+    Solution: The Mad Devs team has developed a user-friendly status feature that allows customers to easily track
+    progress on both the mobile app and website.
+  
       </p>
     </section>
      
@@ -828,8 +837,8 @@ exports[`namba food renders correctly 1`] = `
             style="color: rgb(255, 255, 255);"
           >
             
-            Android application for couriers
-          
+        Android application for couriers
+      
           </h2>
            
           <p
@@ -837,11 +846,11 @@ exports[`namba food renders correctly 1`] = `
             style="color: rgb(255, 255, 255);"
           >
             
-            The Android app for couriers enables them to receive new orders assigned to them by operators via the
-            control panel. After a courier is assigned to the order, their app receives a push notification and
-            displays the order pick-up location. After getting the notification, the courier picks up the order from a
-            cafe or a shop and heads to the client.
-          
+        The Android app for couriers enables them to receive new orders assigned to them by operators via the control
+        panel. After a courier is assigned to the order, their app receives a push notification and displays the order
+        pick-up location. After getting the notification, the courier picks up the order from a cafe or a shop and
+        heads to the client.
+      
           </p>
         </section>
          
@@ -851,7 +860,7 @@ exports[`namba food renders correctly 1`] = `
           <picture>
             <source
               class="image"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -860,8 +869,8 @@ exports[`namba food renders correctly 1`] = `
               class="image"
               height="0"
               loading=""
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="0"
             />
           </picture>
@@ -873,58 +882,58 @@ exports[`namba food renders correctly 1`] = `
       </div>
     </div>
      
-    <section
-      class="container_regular"
-    >
-      <h2
-        class="case_title_h2"
+    <section>
+      <section
+        class="container_regular"
       >
-        
-        Admin panel automates Namba Food’s scalability
-      
-      </h2>
-       
-      <blockquote
-        class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
-      >
-        
-        The built-in reporting functionality enables managers to have full control over the entire list of business
-        partners.
-      
-      </blockquote>
-       
-      <p
-        class="case_paragraph m-48_bottom"
-      >
-        
-        In the admin panel, managers can configure discounts, set working days and hours for cafes, add new meal
-        offerings and do many other things enabling them to deliver users the best possible experience.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_middle m-72_bottom media-m-48_bottom"
-    >
-      <picture
-        file-name-retina="sjms-analytics@2x"
-      >
-        <source
-          class="image box-shadow"
-          srcset="[object Object] ,[object Object] 2x"
-          type="image/webp"
-        />
+        <h2
+          class="case_title_h2"
+        >
+          
+      Admin panel automates Namba Food’s scalability
+    
+        </h2>
          
-        <img
-          alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
-          class="image box-shadow"
-          height="0"
-          loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
-          width="0"
-        />
-      </picture>
+        <blockquote
+          class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
+        >
+          
+      The built-in reporting functionality enables managers to have full control over the entire list of business
+      partners.
+    
+        </blockquote>
+         
+        <p
+          class="case_paragraph m-48_bottom"
+        >
+          
+      In the admin panel, managers can configure discounts, set working days and hours for cafes, add new meal
+      offerings and do many other things enabling them to deliver users the best possible experience.
+    
+        </p>
+      </section>
+       
+      <section
+        class="container_middle m-72_bottom media-m-48_bottom"
+      >
+        <picture>
+          <source
+            class="image box-shadow"
+            srcset="s3 image url ,s3 image url 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
+            class="image box-shadow"
+            height="0"
+            loading="lazy"
+            src="s3 image url"
+            srcset="s3 image url 2x"
+            width="0"
+          />
+        </picture>
+      </section>
     </section>
      
     <section
@@ -934,46 +943,46 @@ exports[`namba food renders correctly 1`] = `
         class="case_paragraph"
       >
         
-        Integrating new business with 1000+ products takes less than a few hours. The scalability of Namba Food
-        enables its managers to integrate new business partners into a system quickly. Managers prepare an Excel file
-        with structured menu or product data.
-      
+    Integrating new business with 1000+ products takes less than a few hours. The scalability of Namba Food enables
+    its managers to integrate new business partners into a system quickly. Managers prepare an Excel file with
+    structured menu or product data.
+  
       </p>
        
       <blockquote
         class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
       >
         
-        Namba Food automatically categorises data inside the managers' dashboard panel. More than 4000 products can be
-        catalogued in a few clicks.
-      
+    Namba Food automatically categorises data inside the managers' dashboard panel. More than 4000 products can be
+    catalogued in a few clicks.
+  
       </blockquote>
        
       <h3
         class="case_title_h3 m-12_bottom"
       >
         
-        Flexible catalogue management
-      
+    Flexible catalogue management
+  
       </h3>
        
       <p
         class="case_paragraph m-96_bottom media-m-48_bottom"
       >
         
-        Managing partners' content is straightforward, as managers can quickly turn on or off a position inside the
-        catalogue and change pictures and descriptions. Such flexibility enables business owners to meet daily
-        business needs. For example, if a cafe offers a seasonal menu, the items from the summer menu can be
-        temporarily turned off during the rest of the year.
-      
+    Managing partners' content is straightforward, as managers can quickly turn on or off a position inside the
+    catalogue and change pictures and descriptions. Such flexibility enables business owners to meet daily business
+    needs. For example, if a cafe offers a seasonal menu, the items from the summer menu can be temporarily turned off
+    during the rest of the year.
+  
       </p>
        
       <h3
         class="case_title_h3 m-24_bottom"
       >
         
-        Control panel functionality
-      
+    Control panel functionality
+  
       </h3>
        
       <div
@@ -986,31 +995,31 @@ exports[`namba food renders correctly 1`] = `
             class="case_title_h4 m-12_bottom media-m-6_bottom case_control-panel-card-title"
           >
             
-            Namba Food 
+        Namba Food 
             <br />
             
-            managers
-          
+        managers
+      
           </h4>
            
           <p
             class="case_paragraph m-24_bottom media-m-12_bottom"
           >
             
-            The control panel gives managers a high-level overview of Namba Food’s daily, weekly, monthly and yearly
-            performance. Business owners receive automatically generated monthly reports to their email.
-          
+        The control panel gives managers a high-level overview of Namba Food’s daily, weekly, monthly and yearly
+        performance. Business owners receive automatically generated monthly reports to their email.
+      
           </p>
            
           <p
             class="case_paragraph m-8_bottom media-m-12_bottom"
           >
             
-            Detailed reports include information 
+        Detailed reports include information 
             <br />
             
-            such as:
-          
+        such as:
+      
           </p>
            
           <ul
@@ -1043,77 +1052,137 @@ exports[`namba food renders correctly 1`] = `
             class="case_title_h4 m-12_bottom media-m-6_bottom case_control-panel-card-title"
           >
             
-            Namba Food 
+        Namba Food 
             <br />
             
-            operators
-          
+        operators
+      
           </h4>
            
           <p
             class="case_paragraph m-24_bottom media-m-12_bottom"
           >
             
-            The control panel enables operators to manage promo codes and items ordered from a shop or restaurant. The
-            panel makes it easy to get an order status overview, make required corrections and cancel orders if
-            necessary.
-          
+        The control panel enables operators to manage promo codes and items ordered from a shop or restaurant. The
+        panel makes it easy to get an order status overview, make required corrections and cancel orders if necessary.
+      
           </p>
            
           <p
             class="case_paragraph"
           >
             
-            Within the panel, operators interact with clients by confirming orders and ensuring that customers’ notes
-            are communicated during the process.
-          
+        Within the panel, operators interact with clients by confirming orders and ensuring that customers’ notes are
+        communicated during the process.
+      
           </p>
         </div>
       </div>
     </section>
      
-    <section
-      class="container_regular"
-    >
-      <h2
-        class="case_title_h2 m-96_top m-48_bottom media-m-48_top media-m-12_bottom"
+    <section>
+      <section
+        class="container_regular"
       >
-        
-        Swift admin panel — intelligent delivery control
-      
-      </h2>
-    </section>
-     
-    <section
-      class="container_middle"
-    >
-      <div
-        class="slider-content"
+        <h2
+          class="case_title_h2 m-96_top m-48_bottom media-m-48_top media-m-12_bottom"
+        >
+          
+      Swift admin panel — intelligent delivery control
+    
+        </h2>
+      </section>
+       
+      <section
+        class="container_middle"
       >
         <div
-          class="swiper-container thumb-example box-shadow"
+          class="slider-content"
         >
-          <picture>
-            <source
-              class="image"
-              srcset="[object Object] ,[object Object] 2x"
-              type="image/webp"
-            />
+          <div
+            class="swiper-container thumb-example box-shadow"
+          >
+            <picture>
+              <source
+                class="image"
+                srcset="s3 image url ,s3 image url 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Namba Food: Food and Grocery Delivery Service Website Header."
+                class="image"
+                height="0"
+                loading="lazy"
+                src="s3 image url"
+                srcset="s3 image url 2x"
+                width="0"
+              />
+            </picture>
              
-            <img
-              alt="Namba Food: Food and Grocery Delivery Service Website Header."
-              class="image"
-              height="0"
-              loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
-              width="0"
-            />
-          </picture>
+            <div
+              class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
+              style="cursor: grab;"
+            >
+              <div
+                class="swiper-wrapper"
+                style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+              >
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="Namba Food Delivery Control Dashboard."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <span
+                aria-atomic="true"
+                aria-live="assertive"
+                class="swiper-notification"
+              />
+            </div>
+          </div>
+           
+          <!---->
            
           <div
-            class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
-            style="cursor: grab;"
+            class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
           >
             <div
               class="swiper-wrapper"
@@ -1125,7 +1194,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -1134,8 +1203,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -1146,7 +1215,7 @@ exports[`namba food renders correctly 1`] = `
                 <picture>
                   <source
                     class="image"
-                    srcset="[object Object] ,[object Object] 2x"
+                    srcset="s3 image url ,s3 image url 2x"
                     type="image/webp"
                   />
                    
@@ -1155,8 +1224,8 @@ exports[`namba food renders correctly 1`] = `
                     class="image"
                     height="0"
                     loading="lazy"
-                    src="[object Object]"
-                    srcset="[object Object] 2x"
+                    src="s3 image url"
+                    srcset="s3 image url 2x"
                     width="0"
                   />
                 </picture>
@@ -1169,312 +1238,253 @@ exports[`namba food renders correctly 1`] = `
             />
           </div>
         </div>
+      </section>
+       
+      <section
+        class="container_regular"
+      >
+        <p
+          class="case_paragraph m-56_top media-m-24_top"
+        >
+          
+      The Swift microservice-based admin panel receives order information from the control panel and helps the
+      operators to overview and manage the delivery processes. It displays orders by statuses as diagrams.
+    
+        </p>
          
-        <!---->
+        <blockquote
+          class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
+        >
+          
+      The Swift admin panel helps operators to stay in touch with a courier if there is an issue on the way.
+    
+        </blockquote>
          
         <div
-          class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
+          class="case_delivery-control-cards m-72_bottom media-m-48_bottom"
         >
           <div
-            class="swiper-wrapper"
-            style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+            class="background-color-silver case_delivery-control-card"
           >
-            <div
-              class="swiper-slide"
+            <p
+              class="case_paragraph"
             >
-              <picture>
-                <source
-                  class="image"
-                  srcset="[object Object] ,[object Object] 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="[object Object] ,[object Object] 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Namba Food Delivery Control Dashboard."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
+              
+          Track the couriers' locations on a map and provide statuses of all orders and couriers.
+        
+            </p>
           </div>
-          <span
-            aria-atomic="true"
-            aria-live="assertive"
-            class="swiper-notification"
-          />
+           
+          <div
+            class="background-color-silver case_delivery-control-card"
+          >
+            <p
+              class="case_paragraph"
+            >
+               Extract customers’ notes and communicate them to couriers. 
+            </p>
+          </div>
+           
+          <div
+            class="background-color-silver case_delivery-control-card"
+          >
+            <p
+              class="case_paragraph"
+            >
+               Assign orders and prepare reports. 
+            </p>
+          </div>
+           
+          <div
+            class="background-color-silver case_delivery-control-card"
+          >
+            <p
+              class="case_paragraph"
+            >
+               Call curriers using Free SWITCH microservice. 
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <p
-        class="case_paragraph m-56_top media-m-24_top"
-      >
-        
-        The Swift microservice-based admin panel receives order information from the control panel and helps the
-        operators to overview and manage the delivery processes. It displays orders by statuses as diagrams.
-      
-      </p>
-       
-      <blockquote
-        class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
-      >
-        
-        The Swift admin panel helps operators to stay in touch with a courier if there is an issue on the way.
-      
-      </blockquote>
-       
-      <div
-        class="case_delivery-control-cards m-72_bottom media-m-48_bottom"
-      >
-        <div
-          class="background-color-silver case_delivery-control-card"
+         
+        <h3
+          class="case_title_h3 m-12_bottom"
         >
-          <p
-            class="case_paragraph"
+          
+      Intelligent auto-assignment system for courier management
+    
+        </h3>
+         
+        <p
+          class="case_paragraph m-8_bottom"
+        >
+          
+      The intelligent auto-assignment of orders allows operators to assign couriers to orders, taking into
+      consideration the following factors:
+    
+        </p>
+         
+        <ul
+          class="case_list m-78_bottom media-m-48_bottom"
+        >
+          <li
+            class="list-item_dot"
+          >
+            Location of a courier, a cafe/restaurant and the end-user address.
+          </li>
+           
+          <li
+            class="list-item_dot"
           >
             
-            Track the couriers' locations on a map and provide statuses of all orders and couriers.
-          
-          </p>
-        </div>
-         
-        <div
-          class="background-color-silver case_delivery-control-card"
-        >
-          <p
-            class="case_paragraph"
-          >
-             Extract customers’ notes and communicate them to couriers. 
-          </p>
-        </div>
-         
-        <div
-          class="background-color-silver case_delivery-control-card"
-        >
-          <p
-            class="case_paragraph"
-          >
-             Assign orders and prepare reports. 
-          </p>
-        </div>
-         
-        <div
-          class="background-color-silver case_delivery-control-card"
-        >
-          <p
-            class="case_paragraph"
-          >
-             Call curriers using Free SWITCH microservice. 
-          </p>
-        </div>
-      </div>
-       
-      <h3
-        class="case_title_h3 m-12_bottom"
-      >
-        
-        Intelligent auto-assignment system for courier management
+        Courier's number of orders delivered during the current shift and in the last three hours.
       
-      </h3>
-       
-      <p
-        class="case_paragraph m-8_bottom"
-      >
-        
-        The intelligent auto-assignment of orders allows operators to assign couriers to orders, taking into
-        consideration the following factors:
+          </li>
+           
+          <li
+            class="list-item_dot"
+          >
+            
+        End-user location in relation to couriers, who are already carrying the order, and in relation to the next
+        order’s pick-up point with the current order.
       
-      </p>
-       
-      <ul
-        class="case_list m-78_bottom media-m-48_bottom"
-      >
-        <li
-          class="list-item_dot"
-        >
-          Location of a courier, a cafe/restaurant and the end-user address.
-        </li>
+          </li>
+        </ul>
          
-        <li
-          class="list-item_dot"
+        <h3
+          class="case_title_h3 m-12_bottom"
         >
           
-          Courier's number of orders delivered during the current shift and in the last three hours.
-        
-        </li>
+      Auto-assignment system under the hood
+    
+        </h3>
          
-        <li
-          class="list-item_dot"
+        <p
+          class="case_paragraph m-8_bottom"
         >
           
-          End-user location in relation to couriers, who are already carrying the order, and in relation to the next
-          order’s pick-up point with the current order.
-        
-        </li>
-      </ul>
-       
-      <h3
-        class="case_title_h3 m-12_bottom"
-      >
-        
-        Auto-assignment system under the hood
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-8_bottom"
-      >
-        
-        Three open-source solutions work together as a cohesive and smart system to perform auto-assignment of orders.
-        This allows you to select the most suitable courier for each order, which reduces delivery time.
-      
-      </p>
-       
-      <ul
-        class="case_list m-78_bottom media-m-48_bottom"
-      >
-        <li
-          class="list-item_dot"
-        >
-          Ariadna parses open-source map data and inserts them into ElasticSearch.
-        </li>
+      Three open-source solutions work together as a cohesive and smart system to perform auto-assignment of orders.
+      This allows you to select the most suitable courier for each order, which reduces delivery time.
+    
+        </p>
          
-        <li
-          class="list-item_dot"
+        <ul
+          class="case_list m-78_bottom media-m-48_bottom"
         >
-          ElasticSearch stores couriers’ current locations.
-        </li>
+          <li
+            class="list-item_dot"
+          >
+            Ariadna parses open-source map data and inserts them into ElasticSearch.
+          </li>
+           
+          <li
+            class="list-item_dot"
+          >
+            ElasticSearch stores couriers’ current locations.
+          </li>
+           
+          <li
+            class="list-item_dot"
+          >
+            OSMR is a routing engine for the shortest paths and road networks.
+          </li>
+        </ul>
          
-        <li
-          class="list-item_dot"
+        <h3
+          class="case_title_h3 m-12_bottom"
         >
-          OSMR is a routing engine for the shortest paths and road networks.
-        </li>
-      </ul>
-       
-      <h3
-        class="case_title_h3 m-12_bottom"
-      >
-        
-        Geocoder Ariadna on ElasticSearch with OpenStreetMap
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-48_bottom"
-      >
-        <a
-          class="case_link"
-          href="https://github.com/maddevsio/ariadna"
-          target="_blank"
+          
+      Geocoder Ariadna on ElasticSearch with OpenStreetMap
+    
+        </h3>
+         
+        <p
+          class="case_paragraph m-48_bottom"
         >
-          Ariadna
-        </a>
-         is an open-source
-        geocoder based on ElasticSearch with OpenStreetMap, in-house developed. The tool searches for coordinates by
-        synonyms and names of places, looking for crossroads and addresses in a certain radius, and knows how to
-        reverse geocoding and automatically update with new data from drivers.
+          <a
+            class="case_link"
+            href="https://github.com/maddevsio/ariadna"
+            target="_blank"
+          >
+            Ariadna
+          </a>
+           is an open-source
+      geocoder based on ElasticSearch with OpenStreetMap, in-house developed. The tool searches for coordinates by
+      synonyms and names of places, looking for crossroads and addresses in a certain radius, and knows how to reverse
+      geocoding and automatically update with new data from drivers.
+    
+        </p>
+      </section>
+       
+      <section
+        class="container_middle"
+      >
+        <div
+          class="case_map-video-wrapper case_box-shadow"
+        >
+          <video
+            class="case_map-video"
+            height="100%"
+            id="map-video"
+            loop="loop"
+            muted="muted"
+            width="100%"
+          >
+            <source
+              src="s3 image url"
+              type="video/mp4"
+            />
+            
+        Your browser does not support the video tag.
       
-      </p>
+          </video>
+        </div>
+      </section>
     </section>
      
-    <section
-      class="container_middle"
-    >
-      <div
-        class="case_map-video-wrapper case_box-shadow"
+    <section>
+      <section
+        class="container_regular"
       >
-        <video
-          class="case_map-video"
-          height="100%"
-          id="map-video"
-          loop="loop"
-          muted="muted"
-          width="100%"
+        <h3
+          class="case_title_h3 m-96_top m-12_bottom media-m-48_top"
         >
+          
+      Grafana — Docker containers’ monitoring service
+    
+        </h3>
+         
+        <p
+          class="case_paragraph m-48_bottom"
+        >
+          
+      To monitor the stability of Namba Food software, Mad Devs has integrated Grafana. It allows our developers to
+      keep track of services in Docker containers. Grafana shows how the load in the project is balanced, including
+      disk space consumed, memory allocated, swap, load, container uptime and other parameters.
+    
+        </p>
+      </section>
+       
+      <section
+        class="container_middle"
+      >
+        <picture>
           <source
-            src="undefined/map.c41e893.mp4"
-            type="video/mp4"
+            class="image box-shadow"
+            srcset="s3 image url ,s3 image url 2x"
+            type="image/webp"
           />
-          
-          Your browser does not support the video tag.
-        
-        </video>
-      </div>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h3
-        class="case_title_h3 m-96_top m-12_bottom media-m-48_top"
-      >
-        
-        Grafana — Docker containers’ monitoring service
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-48_bottom"
-      >
-        
-        To monitor the stability of Namba Food software, Mad Devs has integrated Grafana. It allows our developers to
-        keep track of services in Docker containers. Grafana shows how the load in the project is balanced, including
-        disk space consumed, memory allocated, swap, load, container uptime and other parameters.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_middle"
-    >
-      <picture
-        file-name-retina="grafana@2x"
-      >
-        <source
-          class="image box-shadow"
-          srcset="[object Object] ,[object Object] 2x"
-          type="image/webp"
-        />
-         
-        <img
-          alt="Namba Food: Software Stability Monitoring with Grafana."
-          class="image box-shadow"
-          height="0"
-          loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
-          width="0"
-        />
-      </picture>
+           
+          <img
+            alt="Namba Food: Software Stability Monitoring with Grafana."
+            class="image box-shadow"
+            height="0"
+            loading="lazy"
+            src="s3 image url"
+            srcset="s3 image url 2x"
+            width="0"
+          />
+        </picture>
+      </section>
     </section>
      
     <section
@@ -1484,17 +1494,17 @@ exports[`namba food renders correctly 1`] = `
         class="case_paragraph m-24_top media-m-48_top"
       >
         
-        Monitoring also helps Mad Devs to prevent service timeouts. When the load grows, we can track spikes, estimate
-        the severity of an issue and quickly resolve it.
-      
+    Monitoring also helps Mad Devs to prevent service timeouts. When the load grows, we can track spikes, estimate the
+    severity of an issue and quickly resolve it.
+  
       </p>
        
       <h3
         class="case_title_h3 m-96_top m-48_bottom media-m-72_top media-m-24_bottom"
       >
         
-        Technologies used for the Namba Food project
-      
+    Technologies used for the Namba Food project
+  
       </h3>
        
       <ul
@@ -1771,121 +1781,128 @@ exports[`namba food renders correctly 1`] = `
           </p>
         </li>
       </ul>
-       
-      <h3
-        class="case_title_h3 m-107_top m-24_bottom media-m-48_top"
-      >
-        
-        Website and mobile app infrastructure scheme
-      
-      </h3>
     </section>
      
-    <section
-      class="container_full background-color-silver"
-    >
-      <img
-        alt="Namba Food: Website and Mobile App Infrastructure Scheme."
-        class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"
-        src="../../assets/img/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif"
-      />
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <p
-        class="case_paragraph m-24_top"
-      >
-        
-        A local hosting provider is used to host the infrastructure. When a system receives a request from the client,
-        it is handled by the Nginx proxy. When the Mad Devs team deploys a new version, we use the Nginx Gen server.
-        The Nginx proxy sends requests to the website, which is in turn connected to the MySQL database, and Redis
-        serves as an in-memory key-value storage.
-      
-      </p>
-       
-      <p
-        class="case_paragraph m-24_top media-m-12_top"
-      >
-        
-        All our services run in Docker containers, which simplifies the process of infrastructure maintenance and
-        monitoring.
-      
-      </p>
-       
-      <h3
-        class="case_title_h3 m-96_top m-12_bottom media-m-48_top"
-      >
-        
-        Pipelines
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-24_bottom"
-      >
-        
-        At Mad Devs, we widely use pipelines. The deployment stage has been automated for the staging server, and
-        deployment on the production server is done manually. The pipeline for the Namba Food system is displayed
-        below.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_full background-color-silver case_pipelines-image-desktop"
-    >
+    <section>
       <section
-        class="container_full case_full-screen-image"
+        class="container_regular"
       >
-        <picture
-          file-name-retina="pipelines@2x"
+        <h3
+          class="text-center case_title_h3 m-107_top m-24_bottom media-m-48_top"
         >
-          <source
-            class="image"
-            srcset="[object Object] ,[object Object] 2x"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Namba Food: Automated Deployment Stage Scheme."
-            class="image"
-            height="0"
-            loading="lazy"
-            src="[object Object]"
-            srcset="[object Object] 2x"
-            width="0"
-          />
-        </picture>
+          
+      Website and mobile app infrastructure scheme
+    
+        </h3>
+      </section>
+       
+      <section
+        class="container_full background-color-silver"
+      >
+        <img
+          alt="Namba Food: Website and Mobile App Infrastructure Scheme."
+          class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"
+          src="s3 image url"
+        />
+      </section>
+       
+      <section
+        class="container_regular"
+      >
+        <p
+          class="case_paragraph m-24_top"
+        >
+          
+      A local hosting provider is used to host the infrastructure. When a system receives a request from the client,
+      it is handled by the Nginx proxy. When the Mad Devs team deploys a new version, we use the Nginx Gen server. The
+      Nginx proxy sends requests to the website, which is in turn connected to the MySQL database, and Redis serves as
+      an in-memory key-value storage.
+    
+        </p>
+         
+        <p
+          class="case_paragraph m-24_top media-m-12_top"
+        >
+          
+      All our services run in Docker containers, which simplifies the process of infrastructure maintenance and
+      monitoring.
+    
+        </p>
       </section>
     </section>
      
-    <section
-      class="container_full case_pipelines-image-mobile"
-    >
+    <section>
       <section
-        class="container_full case_full-screen-image"
+        class="container_regular"
       >
-        <picture
-          file-name-retina="pipelines-mobile@2x"
+        <h3
+          class="case_title_h3 m-96_top m-12_bottom media-m-48_top"
         >
-          <source
-            class="image"
-            srcset="[object Object] ,[object Object] 2x"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Namba Food: Automated Deployment Stage Scheme."
-            class="image"
-            height="0"
-            loading="lazy"
-            src="[object Object]"
-            srcset="[object Object] 2x"
-            width="0"
-          />
-        </picture>
+          
+      Pipelines
+    
+        </h3>
+         
+        <p
+          class="case_paragraph m-24_bottom"
+        >
+          
+      At Mad Devs, we widely use pipelines. The deployment stage has been automated for the staging server, and
+      deployment on the production server is done manually. The pipeline for the Namba Food system is displayed below.
+    
+        </p>
+      </section>
+       
+      <section
+        class="container_full background-color-silver case_pipelines-image-desktop"
+      >
+        <section
+          class="container_full case_full-screen-image"
+        >
+          <picture>
+            <source
+              class="image"
+              srcset="s3 image url ,s3 image url 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Namba Food: Automated Deployment Stage Scheme."
+              class="image"
+              height="0"
+              loading="lazy"
+              src="s3 image url"
+              srcset="s3 image url 2x"
+              width="0"
+            />
+          </picture>
+        </section>
+      </section>
+       
+      <section
+        class="container_full case_pipelines-image-mobile"
+      >
+        <section
+          class="container_full case_full-screen-image"
+        >
+          <picture>
+            <source
+              class="image"
+              srcset="s3 image url ,s3 image url 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Namba Food: Automated Deployment Stage Scheme."
+              class="image"
+              height="0"
+              loading="lazy"
+              src="s3 image url"
+              srcset="s3 image url 2x"
+              width="0"
+            />
+          </picture>
+        </section>
       </section>
     </section>
      
@@ -1896,18 +1913,18 @@ exports[`namba food renders correctly 1`] = `
         class="case_title_h3 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
       >
         
-        Meet the team
-      
+    Meet the team
+  
       </h3>
        
       <p
         class="case_paragraph m-48_bottom media-m-24_bottom"
       >
         
-        There are now three members on the core development team; during the pre-launch phase, a larger team worked on
-        the Namba Food project. Over the course of the project, five full-time employees and two part-timers have
-        worked closely with the customer:
-      
+    There are now three members on the core development team; during the pre-launch phase, a larger team worked on the
+    Namba Food project. Over the course of the project, five full-time employees and two part-timers have worked
+    closely with the customer:
+  
       </p>
        
       <ul
@@ -1915,14 +1932,13 @@ exports[`namba food renders correctly 1`] = `
       >
         <li
           class="case_team-item"
-          file-name-retina="vlad-andreev@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -1931,8 +1947,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -1959,14 +1975,13 @@ exports[`namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="gulbustan-baudunova@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -1975,8 +1990,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2003,14 +2018,13 @@ exports[`namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="tamara-mun@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2019,8 +2033,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2047,14 +2061,13 @@ exports[`namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="aidai-atakulova@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2063,8 +2076,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2091,14 +2104,13 @@ exports[`namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="baurzhan-omuraliev@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2107,8 +2119,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2135,14 +2147,13 @@ exports[`namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="nakylai-taiirova@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2151,8 +2162,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2179,14 +2190,13 @@ exports[`namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="akylbek-djumaliev@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2195,8 +2205,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2223,14 +2233,13 @@ exports[`namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="stanislav-shcherbinin@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2239,8 +2248,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2267,14 +2276,13 @@ exports[`namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="eldar-akkozov@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2283,8 +2291,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2311,14 +2319,13 @@ exports[`namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="altynai-toktomuratova@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2327,8 +2334,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2355,14 +2362,13 @@ exports[`namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="dmitrii-khalezin@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2371,8 +2377,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2399,14 +2405,13 @@ exports[`namba food renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="belek-abylov@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="s3 image url ,s3 image url 2x"
               type="image/webp"
             />
              
@@ -2415,8 +2420,8 @@ exports[`namba food renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="s3 image url"
+              srcset="s3 image url 2x"
               width="50"
             />
           </picture>
@@ -2447,20 +2452,19 @@ exports[`namba food renders correctly 1`] = `
         class="case_title_h4 m-72_top m-12_bottom media-m-41_top"
       >
         
-        Transparent communication
-      
+    Transparent communication
+  
       </h4>
        
       <p
         class="case_paragraph"
       >
         
-        Weekly calls with the customer's business representatives and monthly meetings to see what could be improved
-        from a development/IT viewpoint. Our staff members also work on the Namba Food premises several days a week to
-        keep in touch with the customer's employees. This keeps everyone on the same page. We can collect the most
-        recent business requirements and quickly respond to changes that a highly competitive delivery market may
-        throw at us.
-      
+    Weekly calls with the customer's business representatives and monthly meetings to see what could be improved from
+    a development/IT viewpoint. Our staff members also work on the Namba Food premises several days a week to keep in
+    touch with the customer's employees. This keeps everyone on the same page. We can collect the most recent business
+    requirements and quickly respond to changes that a highly competitive delivery market may throw at us.
+  
       </p>
     </section>
      
@@ -2471,36 +2475,36 @@ exports[`namba food renders correctly 1`] = `
         class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
       >
         
-        Nationwide success and day-to-day improvements
-      
+    Nationwide success and day-to-day improvements
+  
       </h2>
        
       <p
         class="case_paragraph"
       >
         
-        Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s
-        vision and understanding of its target audience, we were able to
-        
+    Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision
+    and understanding of its target audience, we were able to
+    
         <nuxt-link-stub
           class="case_link"
           to="/services#software-development"
         >
           
-          build a product
-        
+      build a product
+    
         </nuxt-link-stub>
-         that truly
-        solves this customer’s problems. The year-over-year growth rate is hugely impressive.
-      
+         that truly solves
+    this customer’s problems. The year-over-year growth rate is hugely impressive.
+  
       </p>
        
       <blockquote
         class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
       >
         
-        As the number of businesses using Namba Food continues to increase,
-        
+    As the number of businesses using Namba Food continues to increase,
+    
         <span
           class="case_blockquote-box_text-modificator"
         >
@@ -2512,9 +2516,8 @@ exports[`namba food renders correctly 1`] = `
         class="case_paragraph m-48_bottom media-m-24_bottom"
       >
         
-        In 2017, Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT
-        forum.
-      
+    In 2017, Namba Food won a prestigious all-country award for the Best Online Service in Kyrgyzstan at a KIT forum.
+  
       </p>
        
       <div
@@ -2749,13 +2752,14 @@ exports[`namba food renders correctly 1`] = `
       </div>
        
       <blockquote
+        alt="Aziza Anarbekova Namba Food Delivery Service Co-Founder."
         class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
       >
         
-        “Thanks to our close collaboration, we saw a notable increase in the return on investment, as the number of
-        orders grew by 53% YoY. The Mad Devs Team always surpasses expectations and stays open to suggestions. The
-        team's competency and dedication enabled the prolonged partnership between our companies.”
-       
+    “Thanks to our close collaboration, we saw a notable increase in the return on investment, as the number of orders
+    grew by 53% YoY. The Mad Devs Team always surpasses expectations and stays open to suggestions. The team's
+    competency and dedication enabled the prolonged partnership between our companies.”
+   
         <div
           class="case_blockquote-author__author-info m-24_top"
         >
@@ -2765,17 +2769,17 @@ exports[`namba food renders correctly 1`] = `
             <picture>
               <source
                 class="image"
-                srcset="[object Object] ,[object Object] 2x"
+                srcset="s3 image url ,s3 image url 2x"
                 type="image/webp"
               />
                
               <img
-                alt="Aziza Anarbekova Namba Food Delivery Service Co-Founder."
+                alt="Aziza Anarbekova"
                 class="image"
                 height="0"
                 loading="lazy"
-                src="[object Object]"
-                srcset="[object Object] 2x"
+                src="s3 image url"
+                srcset="s3 image url 2x"
                 width="0"
               />
             </picture>

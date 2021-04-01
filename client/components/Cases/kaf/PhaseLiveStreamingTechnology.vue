@@ -30,8 +30,8 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import TextQuoteBox from '@/components/Cases/TextQuoteBox'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
 
 export default {
   name: 'PhaseLiveStreamingTechnology',
